@@ -291,18 +291,6 @@ Sponsorship buys no influence over the lists — entries are added on the eviden
 on who paid. Prefer to give time instead? [Contributing](#contributing) is worth as much.
 Full details in **[SUPPORT.md](SUPPORT.md)**.
 
-### Star history
-
-<div align="center">
-<a href="https://www.star-history.com/#irsdl/webhacklist&Date">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=irsdl/webhacklist&type=Date&theme=dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=irsdl/webhacklist&type=Date">
-  <img alt="Star history chart for irsdl/webhacklist" src="https://api.star-history.com/svg?repos=irsdl/webhacklist&type=Date">
-</picture>
-</a>
-</div>
-
 ## Contributing
 
 Pull requests are welcome:
