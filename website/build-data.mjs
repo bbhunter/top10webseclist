@@ -107,7 +107,7 @@ async function main() {
     throw new Error("hosting.json must contain a schema-1 Cloudflare asset limit and fallback map");
   }
   for (const [archivePath, fallbackUrl] of Object.entries(hosting.largePdfFallbacks)) {
-    if (!/^archived-references\/pdf\/[a-z0-9-]+\/[a-z0-9._-]+\.pdf$/i.test(archivePath) || !/^https:\/\/irsdl\.github\.io\/top10webseclist\/archived-references\/pdf\//i.test(fallbackUrl)) {
+    if (!/^archived-references\/pdf\/[a-z0-9-]+\/[a-z0-9._-]+\.pdf$/i.test(archivePath) || !/^https:\/\/irsdl\.github\.io\/webhacklist\/archived-references\/pdf\//i.test(fallbackUrl)) {
       throw new Error(`hosting.json contains an invalid large-PDF fallback: ${archivePath}`);
     }
   }

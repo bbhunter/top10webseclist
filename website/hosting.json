@@ -2,7 +2,7 @@
   "schema": 1,
   "cloudflareMaxAssetBytes": 26214400,
   "largePdfFallbacks": {
-    "archived-references/pdf/2011/bit-squatting-dns-hijacking-without-exploitation.pdf": "https://irsdl.github.io/top10webseclist/archived-references/pdf/2011/bit-squatting-dns-hijacking-without-exploitation.pdf",
-    "archived-references/pdf/2026-ai/one-chain-own-them-all-breaking-ai-infrastructures.pdf": "https://irsdl.github.io/top10webseclist/archived-references/pdf/2026-ai/one-chain-own-them-all-breaking-ai-infrastructures.pdf"
+    "archived-references/pdf/2011/bit-squatting-dns-hijacking-without-exploitation.pdf": "https://irsdl.github.io/webhacklist/archived-references/pdf/2011/bit-squatting-dns-hijacking-without-exploitation.pdf",
+    "archived-references/pdf/2026-ai/one-chain-own-them-all-breaking-ai-infrastructures.pdf": "https://irsdl.github.io/webhacklist/archived-references/pdf/2026-ai/one-chain-own-them-all-breaking-ai-infrastructures.pdf"
   }
 }

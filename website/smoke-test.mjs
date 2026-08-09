@@ -202,7 +202,7 @@ const artifactShareUrl = clientEval(`state.view = "library"; documentShareUrl({ 
 const readerShareUrl = clientEval(`state.view = "signals"; state.readingTheme = "light"; documentShareUrl({ id: "2025-0" }, "reader")`);
 const resultsShareUrl = clientEval(`state.pdfPath = "original-listings/2025-top10.pdf"; documentShareUrl(null, "results")`);
 const repositoryArchiveUrl = clientEval(`archiveUrl("archived-references/md/2025/example.md", "md")`);
-const deployedArchiveUrl = clientEval(`location.href = "https://archive.example/top10webseclist/#museum"; archiveUrl("archived-references/md/2025/example.md", "md")`);
+const deployedArchiveUrl = clientEval(`location.href = "https://archive.example/webhacklist/#museum"; archiveUrl("archived-references/md/2025/example.md", "md")`);
 const terminalPaths = clientEval(`YEAR_FILES = ["2016-17", "2024"]; state.terminalCwd = "/2024"; state.terminalPreviousCwd = "/"; JSON.stringify([resolveTerminalPath(".."), resolveTerminalPath("/"), resolveTerminalPath("../2016"), terminalPathExists("/favourites")])`);
 // Favourites and read state are two independent browser-local lists, and both
 // filter across any combination of years and topics.
@@ -253,7 +253,7 @@ const activeClientSecurityChecks = [
   readerShareUrl === "https://archive.example/website/?reader=2025-0&theme=light#signals/2025-0",
   resultsShareUrl === "https://archive.example/website/?results=2025&theme=light#signals",
   repositoryArchiveUrl === "https://archive.example/archived-references/md/2025/example.md",
-  deployedArchiveUrl === "https://archive.example/top10webseclist/archived-references/md/2025/example.md",
+  deployedArchiveUrl === "https://archive.example/webhacklist/archived-references/md/2025/example.md",
   clientEval(`compileSafeGrep("/xss|csrf/i").regex.test("XSS research")`) === true,
   Boolean(clientEval(`compileSafeGrep("(a+)+$").error`)),
   Boolean(clientEval(`compileSafeGrep("(a|aa)+$").error`)),
@@ -353,8 +353,8 @@ const experienceChecks = [
   stylesSource.includes(".saved-filter-note"),
   savedFilters.favourites === 2 && savedFilters.read === 2 && savedFilters.both === 3,
   savedFilters.twoYears === 3 && savedFilters.oneYear === 1 && savedFilters.yearAndTopic === 2,
-  indexSource.includes('href="https://github.com/irsdl/top10webseclist"'),
-  indexSource.includes('href="https://github.com/irsdl/top10webseclist/blob/master/.claude/skills/webseclist-judge-reference/SKILL.md"'),
+  indexSource.includes('href="https://github.com/irsdl/webhacklist"'),
+  indexSource.includes('href="https://github.com/irsdl/webhacklist/blob/master/.claude/skills/webseclist-judge-reference/SKILL.md"'),
   indexSource.includes('href="https://x.com/irsdl"'),
   indexSource.includes('class="site-footer"'),
   // Support asks: a sponsor entry in both navigations, and a footer block that
@@ -363,7 +363,7 @@ const experienceChecks = [
   indexSource.includes('class="support-actions"'),
   indexSource.includes('class="support-action is-star"') && indexSource.includes("Star it on GitHub"),
   indexSource.includes('class="support-action is-sponsor"'),
-  indexSource.includes('href="https://github.com/irsdl/top10webseclist/blob/master/SUPPORT.md"'),
+  indexSource.includes('href="https://github.com/irsdl/webhacklist/blob/master/SUPPORT.md"'),
   stylesSource.includes(".support-action.is-star") && stylesSource.includes(".support-action.is-sponsor"),
   indexSource.includes("Jeremiah Grossman") && indexSource.includes("created the list and curated 2006–2015"),
   indexSource.includes("James Kettle") && indexSource.includes("PortSwigger") && indexSource.includes("curators since 2016"),
@@ -395,7 +395,7 @@ const deploymentChecks = [
   stylesSource.includes("main:fullscreen .museum-map"),
   progressiveCatalogue.hosting?.cloudflareMaxAssetBytes === 26214400,
   Object.keys(progressiveCatalogue.hosting?.largePdfFallbacks || {}).length >= 1,
-  Object.values(progressiveCatalogue.hosting?.largePdfFallbacks || {}).every((url) => String(url).startsWith("https://irsdl.github.io/top10webseclist/")),
+  Object.values(progressiveCatalogue.hosting?.largePdfFallbacks || {}).every((url) => String(url).startsWith("https://irsdl.github.io/webhacklist/")),
   buildSiteSource.includes('target === "cloudflare" && stat.size > assetLimit'),
   buildSiteSource.includes("fileCount > 20000"),
   buildSiteSource.includes('target === "github"') && buildSiteSource.includes("Object.keys(largeFallbacks)"),

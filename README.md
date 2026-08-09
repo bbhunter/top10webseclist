@@ -5,9 +5,9 @@
 <br><br>
 
 [![Live archive](https://img.shields.io/badge/Browse-webhacklist.com-4ade80?style=for-the-badge&logo=readthedocs&labelColor=0b1120)](https://webhacklist.com)
-[![GitHub stars](https://img.shields.io/github/stars/irsdl/top10webseclist?style=for-the-badge&logo=github&color=4ade80&labelColor=0b1120)](https://github.com/irsdl/top10webseclist/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/irsdl/top10webseclist?style=for-the-badge&logo=github&color=22d3ee&labelColor=0b1120)](https://github.com/irsdl/top10webseclist/fork)
-[![Last commit](https://img.shields.io/github/last-commit/irsdl/top10webseclist?style=for-the-badge&labelColor=0b1120&color=8b5cf6)](https://github.com/irsdl/top10webseclist/commits)
+[![GitHub stars](https://img.shields.io/github/stars/irsdl/webhacklist?style=for-the-badge&logo=github&color=4ade80&labelColor=0b1120)](https://github.com/irsdl/webhacklist/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/irsdl/webhacklist?style=for-the-badge&logo=github&color=22d3ee&labelColor=0b1120)](https://github.com/irsdl/webhacklist/fork)
+[![Last commit](https://img.shields.io/github/last-commit/irsdl/webhacklist?style=for-the-badge&labelColor=0b1120&color=8b5cf6)](https://github.com/irsdl/webhacklist/commits)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-4ade80?style=for-the-badge&labelColor=0b1120)](#contributing)
 [![Sponsor](https://img.shields.io/badge/Sponsor-irsdl-ea4aaa?style=for-the-badge&logo=githubsponsors&labelColor=0b1120)](https://github.com/sponsors/irsdl)
 
@@ -66,7 +66,7 @@ the whole thing in one durable, greppable place:
 ## 🗺️ Where things are
 
 ```text
-top10webseclist/
+webhacklist/
 ├── 2006.md … 2025.md         ← the lists — every nominated technique, one file per year
 ├── <year>-ai.md              ← AI-collected candidates for a year with no vote yet — machine-assembled, unreviewed, kept deliberately separate from the curated lists above
 ├── ai-evaluation/<year>/     ← all AI-reviewed leads, readable scorecards, and append-only judgement history
@@ -278,7 +278,7 @@ total then maps to a verdict: **≥ 70** with a novelty verdict is *core-techniq
 
 Everything here is free and always will be. Two things keep it going:
 
-- **⭐ [Star the repository](https://github.com/irsdl/top10webseclist)** — the free one,
+- **⭐ [Star the repository](https://github.com/irsdl/webhacklist)** — the free one,
   and the one that actually helps. Stars are how researchers find this archive, and every
   one of them puts two decades of preserved research in front of someone who did not know
   it survived.
@@ -294,11 +294,11 @@ Full details in **[SUPPORT.md](SUPPORT.md)**.
 ### Star history
 
 <div align="center">
-<a href="https://www.star-history.com/#irsdl/top10webseclist&Date">
+<a href="https://www.star-history.com/#irsdl/webhacklist&Date">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=irsdl/top10webseclist&type=Date&theme=dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=irsdl/top10webseclist&type=Date">
-  <img alt="Star history chart for irsdl/top10webseclist" src="https://api.star-history.com/svg?repos=irsdl/top10webseclist&type=Date">
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=irsdl/webhacklist&type=Date&theme=dark">
+  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=irsdl/webhacklist&type=Date">
+  <img alt="Star history chart for irsdl/webhacklist" src="https://api.star-history.com/svg?repos=irsdl/webhacklist&type=Date">
 </picture>
 </a>
 </div>

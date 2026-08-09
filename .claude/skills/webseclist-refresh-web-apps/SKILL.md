@@ -56,7 +56,7 @@ The Cloudflare build must stay below 20,000 files and 25 MiB per static asset. G
 The checked-in pipeline has two independent deployments from `master`:
 
 - Cloudflare Pages is the production host for `https://webhacklist.com/`. Its Git integration must use the repository root, the build command `node website/build-data.mjs && node website/build-site.mjs --target cloudflare`, and output directory `dist`.
-- GitHub Pages is the narrow oversized-file origin at `https://irsdl.github.io/top10webseclist/`. Repository **Settings → Pages → Build and deployment** must use **GitHub Actions**; `.github/workflows/pages.yml` stages only a small landing page and the exact fallback files, not a second copy of the full archive.
+- GitHub Pages is the narrow oversized-file origin at `https://irsdl.github.io/webhacklist/`. Repository **Settings → Pages → Build and deployment** must use **GitHub Actions**; `.github/workflows/pages.yml` stages only a small landing page and the exact fallback files, not a second copy of the full archive.
 
 For the one-time dashboard and DNS setup, follow the local launch guide at `.tmp/webhacklist-launch/README.md` when it is present. That directory is intentionally gitignored because it is an operator checklist, not site content. Keep the custom domain only on Cloudflare; do not add a GitHub Pages custom domain or a `CNAME` file. Do not add a blanket **Cache Everything** rule: Pages already applies deployment-aware edge caching, while `website/_headers` gives the catalogue a revalidation policy, immutable collection shards long-lived browser caching, and archive documents bounded caching.
 

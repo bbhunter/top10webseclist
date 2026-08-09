@@ -6,7 +6,7 @@
 year, plus PDF and Markdown copies of the sources before their hosts disappear.**
 
 [![Sponsor](https://img.shields.io/badge/Sponsor-irsdl-ea4aaa?style=for-the-badge&logo=githubsponsors&labelColor=0b1120)](https://github.com/sponsors/irsdl)
-[![Star this repo](https://img.shields.io/github/stars/irsdl/top10webseclist?style=for-the-badge&logo=github&color=4ade80&labelColor=0b1120&label=Star%20this%20repo)](https://github.com/irsdl/top10webseclist)
+[![Star this repo](https://img.shields.io/github/stars/irsdl/webhacklist?style=for-the-badge&logo=github&color=4ade80&labelColor=0b1120&label=Star%20this%20repo)](https://github.com/irsdl/webhacklist)
 
 </div>
 
@@ -17,7 +17,7 @@ year, plus PDF and Markdown copies of the sources before their hosts disappear.*
 If this archive has saved you a search, settled an argument about who did something
 first, or handed you a dead link's rescued copy:
 
-### 👉 **[Star the repository](https://github.com/irsdl/top10webseclist)**
+### 👉 **[Star the repository](https://github.com/irsdl/webhacklist)**
 
 Stars are how researchers find this. Every one of them puts two decades of preserved
 research in front of someone who did not know it survived. It costs nothing and takes
@@ -76,7 +76,7 @@ See [Contributing](README.md#contributing) for the details.
 It is why the record is still here.
 
 [Browse the archive](https://webhacklist.com/) ·
-[GitHub repository](https://github.com/irsdl/top10webseclist) ·
+[GitHub repository](https://github.com/irsdl/webhacklist) ·
 [@irsdl](https://x.com/irsdl)
 
 </div>

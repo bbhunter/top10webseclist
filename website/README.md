@@ -65,7 +65,7 @@ one-day cache with stale revalidation.
 The repository workflow in `.github/workflows/pages.yml` publishes the contents of this
 directory at the Pages site root and stages every archive document used by the generated
 collections plus the annual listing PDFs. Keep this deployment on its default
-`https://irsdl.github.io/top10webseclist/` URL: it is the backup origin for the two PDFs
+`https://irsdl.github.io/webhacklist/` URL: it is the backup origin for the two PDFs
 that exceed Cloudflare's per-file limit.
 
 In repository **Settings → Pages**, select **GitHub Actions** as the source. Add the
