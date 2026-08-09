@@ -1,0 +1,311 @@
+# 2026 candidate scoring
+
+Every candidate collected for [`2026-ai.md`](../../2026-ai.md) was evaluated with the
+[`webseclist-judge-reference`](../../.claude/skills/webseclist-judge-reference/SKILL.md) skill.
+This folder is the record: what was scored, what survived, and why.
+
+- **[judgements.md](judgements.md)** — the per-entry detail: score, verdict, what is
+  genuinely new, what was already known, and the closest prior art with links. This is
+  where the removed entries' links are preserved.
+- **[history.jsonl](history.jsonl)** — the append-only machine-readable audit trail.
+  Its first 160 events are labelled `baseline-import`: they capture the scorecards that
+  existed when history tracking was introduced, without inventing earlier timestamps.
+- The index below is the same data sorted by score.
+
+## Method
+
+Each candidate was read in full, then prior-art searched two ways — by *mechanism* against
+the local `archived-references/` corpus using several phrasings, and against the open web
+for the earliest and the closest work, following citations backward. The six weighted
+categories were then scored and totalled with
+[`score.py`](../../.claude/skills/webseclist-judge-reference/scripts/score.py).
+
+| Category | Weight |
+|---|---:|
+| Original contribution | 25% |
+| Transferability | 20% |
+| Lasting value | 20% |
+| Technical soundness | 15% |
+| Practical usability | 10% |
+| Clarity and reproducibility | 10% |
+
+The scoring rule that shapes these results more than any other: **impact is not research
+value.** A CVSS 10.0 on a famous target can teach nothing new, and an obscure parser quirk
+can introduce a primitive that reshapes a class. What is scored is the *marginal*
+contribution over the closest prior art — so a competent writeup applying a known class to
+a new target lands in the 30s–50s no matter how serious the bug.
+
+## Results
+
+The keep-cut is **60**. It was originally set at 70 and lowered on 8 August 2026
+so the provisional AI-collected file casts a wider net than the curated year lists,
+which keep the stricter ≥ 70 bar. This is a display decision for `2026-ai.md`, not
+the judge's general supporting-reference threshold (≥ 50); candidates below 60
+remain in this evaluation record.
+
+| Band | Count | Outcome |
+|---|---:|---|
+| 70–100 | 19 | 17 kept in `2026-ai.md`; 2 removed as prior-year work (React2Shell, RebirthDay) |
+| 60–69.9 | 30 | Kept in `2026-ai.md` (all in-window) |
+| 50–59.9 | 61 | Removed |
+| Below 50 | 58 | Removed |
+
+168 candidates in total: 153 from the initial collection, plus three whose artifacts were
+published later (**first re-check round**), plus twelve conference decks that published
+their slides during the 8 August conference week (**second re-check round**) — see both
+below. **47 are kept** (17 at ≥ 70 plus 30 in the 60–69.9 band). Two entries score above 70
+but are not kept because they are prior-year work (React2Shell was disclosed December 2025
+and RebirthDay is ACM CCS 2025); they belong to 2025, not 2026, and window beats score.
+
+**A caveat worth reading before trusting the cut.** The judge skill reserves ≥ 70 for "core
+technique" and treats the 60–69.9 band as "supporting reference": genuine but marginal, mostly
+competent applications of a known class to a new target. Those 30 entries are kept here but
+would not meet the curated year lists' ≥ 70 bar. Conversely, the 61 entries in the 50–59.9
+band are not junk either — several sit within a point or two of the cut, and a few carry a
+reviewer note that the full text was unavailable (embargoed USENIX papers, image-only decks)
+which suppressed their clarity and reproducibility scores. Those are the first to re-judge
+when their artifacts publish:
+
+| Score | Entry |
+|---:|---|
+| 59.8 | Almost Impossible Java Deserialization Through Broken Crypto (OpenText) |
+| 59.5 | Avoiding the paradox: native full-read SSRF and one-shot DoS in SvelteKit |
+| 59.2 | HTTP/2 WAF Bypass: A Black-Box Methodology |
+| 59.2 | Claude in Chrome: from alert(1) to full account takeover |
+| 59.1 | Grand Theft Atlas (PleaseFix + Intent Collision) |
+| 59.0 | Security Considerations on Namespace-Based Multi-Tenancy (Istio) |
+| 59.0 | Web Cache Overflow: Exploiting Imprecise Keys |
+| 58.3 | Breaking Multi-Tenancy Over and Over |
+
+## Re-check round
+
+Several Watchlist items were confirmed to exist but had no published artifact when first
+collected. Searching for them again by title turned up three that had since been published,
+and each was judged on the new material:
+
+| Score | Entry | Outcome |
+|---:|---|---|
+| 70.0 | Write Once, Shell Everywhere (Ethiack, published 2026-08-07) | **Added.** Clears the bar on the errno-as-path-oracle methodology and two new file-write destinations; the catalogue around them is coverage. |
+| 66.5 | AutoFail (TU Wien, code artifact released 2026-07-22) | Not added. The USENIX paper is still embargoed, so the argument and related-work positioning could not be read; **re-judge after 2026-08-12**, when it may well clear. |
+| 48.7 | PleaseFix (Zenity Labs, published 2026-08-05) | Not added. The umbrella scores *below* its own constituent posts, which were already judged at 59.1 and 59.2 — aggregating them plus a class name adds little, and the name itself relabels indirect prompt injection. |
+
+Two Watchlist entries turned out not to belong there at all, and were dropped rather than
+deferred: **Remote Server, Local Root. Welcome to MCP.** is 2025 work (its primary artifact
+is a September 2025 blog post and all five CVEs are 2025-numbered; Black Hat Asia 2026 was a
+later presentation of it), and **Writing to Shadow Stacks** is Linux kernel and CPU
+mitigation research — `/proc/self/mem` with `FOLL_FORCE`, `userfaultfd` on the shadow-stack
+VMA, and the `WRSSQ` instruction — with no web, HTTP or browser bearing.
+
+## Second re-check round (8 August 2026)
+
+During the Black Hat USA / DEF CON 34 week the `bh_files` arrays and the media server filled
+in with decks that had been empty at first collection. A focused sweep — the Black Hat US-26
+and Asia-26 schedule JSON, the DEF CON 34 media server, the four DEF CON villages, and the
+week's researcher blogs — surfaced twelve un-judged artifacts (everything the sweep found had
+either already been judged in the initial round, e.g. CRLF-Powered Desync at 67.5 and Cast
+Attack at 64.2, or was one of these twelve). Each was read in full and judged. Under the
+≥ 60 keep-cut, **four** are kept (Cache Me, One Char, CoreBreak, ChatMate); the rest fall
+below 60 or are prior-year:
+
+| Score | Entry | Outcome |
+|---:|---|---|
+| 76.8 | RebirthDay Attack (Nankai / Tsinghua, Black Hat Asia 2026) | **Not added — prior year.** Genuinely strong, but the disclosure is ACM CCS 2025 (Oct 2025, ~50 CVEs, IETF fix draft); the deck states "Based on ACM CCS Research." Belongs to 2025 and is **not** in `2025.md` — flagged to the maintainer for the 2025 missed-nominee review path. |
+| 75.6 | Cache Me, Catch You (Wu et al., Black Hat Asia 2026 / NDSS 2026) | **Added.** Establishes the LLM inference cache layer (prefix-KV, semantic, multimodal) as a distinct attack surface; the prefix-cache non-crypto-hash KV collision and multimodal image-byte collision are primitives absent from concurrent semantic-only work. |
+| 73.8 | One Char to Rule Them All / SHAR (Tsinghua, Black Hat Asia 2026 / S&P 2026) | **Added.** First exhaustive measurement of special-character handling across 31 DNS implementations, isolating a silent-drop primitive that widens the spoofing window; in-scope via DNS cache-poisoning's web-trust impact. Downstream impacts partly re-derive Disablance (CCS 2023). |
+| 70.0 | The CoreBreak Attack (Ingber & Ivgi, Black Hat USA 2026) | **Added — borderline.** Direct tool invocation: the agent-SDK harness (Strands, Google ADK, Vercel AI SDK) runs a tool-call block with no model turn in between, so the infra never verifies a model authorized it — the antithesis of prompt injection, validated by AWS+Google CVEs. Held to exactly 70 by prior art: the IMDS-theft half is by-design, and Anthropic's Mythos "Project Glasswing" had flagged the Vercel direct-invocation instance. Medium confidence. |
+| 67.5 | ChatMate (Rubrik Zero Labs, Black Hat USA 2026) | **Added** (≥ 60). First escape of a *managed* AI-assistant sandbox (Copilot → root on the host node) is a real 0-day, but every primitive is a classic container-escape building block and "Remote Prompt Execution" is impact framing, not a new mechanism — so it lands in the 60–69.9 supporting band, not the ≥ 70 core tier. |
+| 58.3 | Breaking Multi-Tenancy Over and Over (ERNW, Black Hat USA 2026) | Not added. Overlaps the already-judged Istio namespace item (59.0); the marginal material is useful systematization of over-permissive-RBAC / trusted-reference config, no new primitive. |
+| 52.6 | Handle With Care: Azure Automation cross-tenant (Microsoft, Black Hat USA 2026) | Not added — and prior year. CVE-2025-29827, patched server-side 8 May 2025; substring path-check pollution + case-sensitivity router differential on one cloud target. |
+| 52.0 | Pre-auth RCE in Enterprise Java (Novee, Black Hat USA 2026) | Not added. Clean Bonita / OFBiz chains, but every primitive is prior art (Orange Tsai `..;` normalization 2018, FoxGloveSecurity XStream/CommonsCollections 2015). |
+| 51.6 | Bad Vibes — Pwning Coding Agents 70 Times (CyberArk, Black Hat Asia 2026) | Not added. 81+ findings / 18 CVEs across ~20 coding agents, but breadth of known classes (allowlist bypass, path-equivalence, symlink TOCTOU) is coverage, not discovery. |
+| 44.6 | LLM Heist: Hijacking LiteLLM (Rehberger, 2026-08-03) | Not added. Presupposes the attacker already holds the master key; the "routing config is a MITM primitive" residue is a consequence of admin control, below the already-judged LiteLLM auth-bypass/RCE items (55.5, 53.0). |
+| 34.5 | The Stream Is Dead (MadeYouReset, DEF CON 34) | Not added — prior year. CVE-2025-8671, fully disclosed August 2025; the 2026 deck re-presents it. Already in `2025.md`. |
+| 79.0 | Discovering React2Shell (Carapace, Black Hat Asia 2026) | Not added — prior year. CVE-2025-55182, disclosed 3 December 2025; strong on merits but 2025, and already in `2025.md`. |
+
+The four DEF CON 34 village decks still on the Watchlist (Cache Key Injection, This Message
+Was Sent by Microsoft, New Hope for SSRF, ROP for the Web) were re-checked the same day and
+still have no primary artifact published.
+
+## Confidence
+
+Scores are one judgement, not a verdict. Where the primary source could not be read in full
+— an embargoed paper, an image-only deck, a 403 — the entry was scored *Insufficient
+evidence* with low confidence rather than guessed at, and says so in `judgements.md`. Those
+should be revisited rather than treated as settled.
+
+Prior-art searching also degraded partway through: the session's web-search budget ran out
+and later batches fell back to fetching index pages and known sources directly. A failed
+search lowers confidence in a novelty claim; it is not evidence of originality.
+
+## Index
+
+Sorted by score. "kept" entries appear in [`2026-ai.md`](../../2026-ai.md); "removed" entries
+exist only here.
+
+| Score | Verdict | | Entry |
+|---:|---|---|---|
+| 79.3 | Original technique | kept | [Time for ACKrobatics: Abusing TCP Timestamps to Improve Remote Timing Attacks](https://i.blackhat.com/BH-USA-26/Presentations/USA-26-Vanderlinden-Time-for-ACKrobatics.pdf) |
+| 79.0 | Meaningful combination | removed (2025) | [Discovering React2Shell: JavaScript's Long-Awaited Deserialization Flight-mare](https://i.blackhat.com/Asia-26/Presentations/BHAS26-Davidson-Discovering-React2Shell.pdf) — CVE-2025-55182, disclosed Dec 2025; in `2025.md` |
+| 77.0 | Original technique | kept | [CSS: the bomb inside your inbox](https://portswigger.net/research/css-the-bomb-inside-your-inbox) [Whitepaper](https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-WP.pdf) [Slides](https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-Slides.pdf) [Code](https://github.com/portswigger/css-the-bomb-inside-your-inbox) |
+| 76.8 | Meaningful combination | removed (2025) | [RebirthDay Attack: Reviving DNS Cache Poisoning with the Birthday Paradox](<https://i.blackhat.com/Asia-26/Presentations/BHAS26-Qiu-SessionTitle-RebirthDay%20.pdf>) [Paper (CCS 2025)](https://dl.acm.org/doi/10.1145/3719027.3744832) — ACM CCS 2025; not in `2025.md`, flagged for review |
+| 75.6 | Original technique | kept | [Cache Me, Catch You: Exploiting LLM Caching Layers in vLLM, GPTCache & Friends](https://i.blackhat.com/Asia-26/Presentations/BHAS26-Wu-Cache-Me-Catch-You.pdf) [Paper (NDSS 2026)](https://www.ndss-symposium.org/ndss-paper/cache-me-catch-you-cache-related-security-threats-in-llm-serving-frameworks/) [Code](https://github.com/XingTuLab/Cache_Me_Catch_You) |
+| 75.2 | Meaningful extension | kept | [Transformers: Dark Side of the Type — Weaponizing the Conversion Layer](https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf) [Slides](https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-Slides.pdf) |
+| 74.5 | Meaningful extension | kept | [Get Set, Exploit! Unveiling Python Class Pollution In-the-Wild](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Gavin%20Zhong%2C%20Zhengyu%20Liu%2C%20Jianjia%20Yu%20-%20Get%20Set%2C%20Exploit%20Unveiling%20Python%20Class%20Pollution%20In-the-Wild%20-%20P.pdf) |
+| 74.2 | Original technique | kept | [Can AI do novel security research? Meet the HTTP Terminator](https://portswigger.net/research/can-ai-do-novel-security-research) [Whitepaper](https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf) [Tool](https://github.com/portswigger/http-terminator) |
+| 74.0 | Original technique | kept | [No Tools Required: Post-Injection Exploitation Across AI Agent Frameworks](https://i.blackhat.com/BH-USA-26/Presentations/BHUSA26-Porat-No-Tools-Required-REV01.pdf) |
+| 74.0 | Original technique | kept | [One Chain to Own Them All: Breaking AI Infrastructures](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf) |
+| 73.8 | Meaningful combination | kept | [One Char to Rule Them All: DNS Silent Vulnerabilities in Domain Name Resolution](https://i.blackhat.com/Asia-26/Presentations/BHAS26-Miao-One-Char-to-Rule-The.pdf) |
+| 73.0 | Meaningful extension | kept | [Pass-the-Passkey Family of Attacks](https://www.dsinternals.com/en/black-hat-usa-26-pass-the-passkey/) [Whitepaper](https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Grafnetter-Pass-the-Passkey-WP.pdf) [Slides](https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Grafnetter-Pass-the-Passkey-Slides.pdf) |
+| 72.7 | Original technique | kept | [When Agentic Glue Melts: Exploiting Cloudflare Code Mode and Workers](https://research.checkpoint.com/2026/when-agentic-glue-melts/) [Slides](https://i.blackhat.com/BH-USA-26/Presentations/BUHUS26-Porat-When-Agentic-Glue-Melts-REV01.pdf) [PoCs](https://github.com/yardenporat353/WhenAgenticGlueMeltsPOCs) |
+| 71.8 | Meaningful extension | kept | [Angular compromise through dev infra: GitHub Actions cache poisoning as a vulnerability class](https://adnanthekhan.com/posts/angular-compromise-through-dev-infra) [Clinejection](https://adnanthekhan.com/posts/clinejection/) [Copilot or Co-conspirator](https://adnanthekhan.com/posts/copilot-or-co-conspirator/) [Cacheract](https://github.com/AdnaneKhan/Cacheract) |
+| 71.8 | Meaningful extension | kept | [Prompt Injection as Role Confusion (CoT Forgery)](https://role-confusion.github.io/) [Paper](https://arxiv.org/abs/2603.12277) |
+| 71.0 | Meaningful combination | kept | [Sub:jugation — Hijacking Cloud Identities by Recycling Namespaces in Global OIDC Issuers](https://astrix.security/learn/blog/subjugation-hijacking-cloud-identities-by-recycling-namespaces-in-global-oidc-issuers/) [Sleeper squats follow-up](https://labs.boostsecurity.io/articles/sleeper-squats-github-oidc-immutable-subject-claim) |
+| 70.5 | Original technique | kept | [Hack the Source, Of the Source](https://i.blackhat.com/Asia-26/Presentations/BHAS26-Ng-Hack-the-Source-of-the-Source.pdf) [Born Corrupted](https://i.blackhat.com/BH-USA-26/Presentations/US-26-SplitlineNg-BornCorrupted-Thursday.pdf) |
+| 70.0 | Meaningful combination | kept | [Write Once, Shell Everywhere: Turning Arbitrary File Writes into RCE](https://ethiack.com/info-hub/research/write-once-shell-everywhere-arbitrary-file-writes-into-rce) |
+| 70.0 | Meaningful combination | kept | [The CoreBreak Attack: Turning AI Agents into Credentials Exfiltration Vectors](https://i.blackhat.com/BH-USA-26/Presentations/CoreBreak_BlackHat2026_FINAL.pdf) |
+| 69.8 | Meaningful combination | kept | [Poisoning Claude Code: One GitHub Issue to Break the Supply Chain](https://flatt.tech/research/posts/poisoning-claude-code-one-github-issue-to-break-the-supply-chain/) |
+| 69.5 | Original technique | kept | [Two Bypasses for Chrome's Sanitizer API](https://slcyber.io/research-center/two-bypasses-for-chromes-sanitizer-api/) |
+| 69.2 | Meaningful extension | kept | [HashDoS in V8's array-index string hash, and a seeded but invertible permutation as the fix](https://hackerone.com/reports/3511792) [Writeup](https://nodejs.org/en/blog/vulnerability/march-2026-hashdos) |
+| 68.8 | Tooling / methodology | kept | [Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations](https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf) [Slides](https://www.ndss-symposium.org/wp-content/uploads/f0902-drescher-slides.pdf) |
+| 68.8 | Tooling / methodology | kept | [Finding Gadgets Like it's 2026](https://www.atredis.com/blog/2026/3/12/findings-gadgets-like-its-2026) [Tool](https://github.com/atredispartners/llmchainhunter) |
+| 67.8 | Meaningful extension | kept | [Alias Equals Zone? Large-Scale and Stealthy Takeover of Domain Hosting Service via CNAME-Following Cross-Domain Verification](https://www.usenix.org/conference/usenixsecurity26/presentation/li-ruixuan) |
+| 67.5 | Meaningful combination | kept | [CRLF-Powered Desync Attacks: Beheading HTTP Streams](https://portswigger.net/research/crlf-powered-desync-attacks) [Author's post](https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/) [Slides](https://i.blackhat.com/BH-USA-26/Presentations/US-26-Stacey-CRLF-Powered-Desync-Attacks-Wed.pdf) [Scanner](https://github.com/t0xodile/crlf-powered-desync-scanner) |
+| 67.5 | Meaningful combination | kept | [ChatMate: Remote Prompt Execution on AI Assistants through Sandbox Escaping](https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Lahav-ChatMate-Slides.pdf) |
+| 67.2 | Meaningful extension | kept | [Path traversal in signed URLs — present even in the official AWS SDKs](https://blog.flatt.tech/entry/signed_url_path_traversal) |
+| 67.0 | Meaningful extension | kept | [Borrowing Windows Hello Keys for Authentication and Persistence](https://dirkjanm.io/borrowing-windows-hello-keys/) |
+| 66.8 | Meaningful combination | kept | [Remote Command Execution in Google Cloud with Single Directory Deletion](https://flatt.tech/research/posts/remote-command-execution-in-google-cloud-with-single-directory-deletion/) |
+| 66.5 | Meaningful combination | kept | [AutoFail: Breaking Web Boundaries using Android's Autofill Framework](https://github.com/SecPriv/autofail) |
+| 66.0 | Tooling / methodology | kept | [Agentic Browsers and the Same-Origin Policy](https://agent-security.cs.washington.edu/agentic_browsers_sop.html) [PDF](https://www.franziroesner.com/pdf/roesner_kohlbrenner_2026_agentic_sop.pdf) [Code](https://github.com/UWCSESecurityLab/agentic-browser-sop) |
+| 65.6 | Meaningful combination | kept | [Your WAF Blocked Us, That Was The Exploit — Remote Agent Takeover via Cloudflare, Sentry and Claude Zero-Day](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Barak%20Sternberg%2C%20Nevo%20Poran%2C%20Ron%20Bobrov%20-%20Your%20WAF%20Blocked%20Us%2C%20That%20Was%20The%20Exploit%20-%20Remote%20Agent%20Takeover%20via%20Cloudflare%2C%20Sentry%20and%20C.pdf) [Agentjacking](https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/) |
+| 65.5 | Meaningful combination | kept | [Hacking Your Life with AI Can Get You Hacked: How AI Orchestration Platforms Ship RCE by Design](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Peyton%20Kennedy%20-%20Hacking%20Your%20Life%20with%20AI%20Can%20Get%20You%20Hacked%20How%20AI%20Orchestration%20Platforms%20Ship%20RCE%20by%20Design%20-%20V1.pdf) |
+| 65.5 | Meaningful extension | kept | [Stealing GitHub tokens via VS Code webview keyboard event bubbling](https://blog.ammaraskar.com/github-token-stealing/) |
+| 64.8 | Meaningful combination | kept | [One trigram at a time: XSLeak via Universal CSS Injection and DoS in Opera (GX)](<https://zhero-web-sec.github.io/research-and-things/one-trigram-at-a-time-xsleak-via-universal-css-injection-and-dos-in-opera-(gx)>) |
+| 64.8 | Meaningful extension | kept | [Zero Knowledge (About) Encryption: A Comparative Security Analysis of Three Cloud-based Password Managers](https://eprint.iacr.org/2026/058) |
+| 64.2 | Meaningful extension | kept | [Cast Attack: A New Threat Posed by Ghost Bits in Java](https://i.blackhat.com/Asia-26/Presentations/Asia-26-Bai-Cast-Attack-Ghost-Bits-4.23.pdf) |
+| 62.8 | Meaningful extension | kept | [Privacy risks of agentic oversharing on the Web (SPILLAGE)](https://brave.com/blog/agentic-oversharing/) |
+| 62.6 | Meaningful combination | kept | [Codex Discovered a Hidden HTTP/2 Bomb](https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb) |
+| 62.5 | Meaningful combination | kept | [LGTM: Bypassing an LLM Build Gate When Prompt Injection Fails](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails%20-%20LGMT%20v2.pdf) |
+| 62.5 | Meaningful extension | kept | [Parse and Parse: MIME Validation Bypass to XSS via Parser Differential](https://lab.ctbb.show/research/parse-and-parse-mime-validation-bypass-to-xss-via-parser-differential) |
+| 62.2 | Meaningful combination | kept | [FCSC 2026 writeups: Firefox `execCommand` ICU-vs-JS case-folding differential, Gunicorn `HEAd` smuggling, libmagic polyglots](https://web.archive.org/web/20260418230027/https://mizu.re/post/fcsc-2026-writeups) — Kévin Mizu *(live host down; the post's own frontmatter date is a copy-paste error |
+| 62.0 | Meaningful combination | kept | [wp2shell: Pre-Authentication RCE in WordPress Core](https://slcyber.io/research-center/wp2shell-pre-authentication-rce-in-wordpress-core/) [Discovery methodology](https://slcyber.io/research-center/exploit-brokers-pay-500000-for-a-wordpress-rce-i-found-one-with-gpt5-6/) [Escalation to root](https://blog.calif.io/p/the-wordpress-chain-massacre) |
+| 61.5 | Meaningful extension | kept | [Deployment Poisoning: A(nother) Novel Attack Vector for GitHub Actions](https://labs.boostsecurity.io/articles/deployment_poisoning) |
+| 61.2 | Tooling / methodology | kept | [Token Time Bomb: Evaluating JWT Implementations for Vulnerability Discovery](https://www.ndss-symposium.org/wp-content/uploads/2026-f697-paper.pdf) [Slides](https://www.ndss-symposium.org/wp-content/uploads/f0697-yang-slides.pdf) |
+| 60.8 | Meaningful extension | kept | [Smashing the ServiceNow Sandbox – Pre-Authentication RCE](https://slcyber.io/research-center/smashing-the-servicenow-sandbox-pre-authentication-rce/) |
+| 60.5 | Meaningful extension | kept | [Your House Has an FFmpeg Problem](https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem) |
+| 60.5 | Tooling / methodology | kept | [A First Measurement Study on Authentication Security in Real-World Remote MCP Servers](https://arxiv.org/abs/2605.22333) |
+| 59.8 | Meaningful combination | removed | [Almost Impossible Java Deserialization Through Broken Crypto in OpenText Directory Services](https://slcyber.io/research-center/almost-impossible-java-deserialization-through-broken-crypto-in-opentext-directory-services/) |
+| 59.5 | Meaningful extension | removed | [Avoiding the paradox: A native full-read SSRF and one-shot DoS in SvelteKit](https://zhero-web-sec.github.io/research-and-things/avoiding-the-paradox-a-native-full-read-ssrf-and-oneshot-dos-in-sveltekit) |
+| 59.2 | Meaningful combination | removed | [HTTP/2 WAF Bypass: A Black-Box Methodology (h2 framing)](https://lab.ctbb.show/research/h2-WAF-Bypasses) |
+| 59.2 | Useful application | removed | [Claude in Chrome: from alert(1) to full account takeover](https://labs.zenity.io/post/claude-in-chrome-from-alert-to-full-account-takeover) [Technical deep dive](https://labs.zenity.io/post/account-takeover-via-claude-in-chrome-a-technical-deep-dive) |
+| 59.1 | Meaningful combination | removed | [Grand Theft Atlas (PleaseFix + Intent Collision)](https://labs.zenity.io/post/grand-theft-atlas) [PerplexedBrowser](https://labs.zenity.io/p/perplexedbrowser-perplexity-s-agent-browser-can-leak-your-personal-pc-local-files) [Class hub](https://zenity.io/research/pleasefix-vulnerabilities) |
+| 59.1 | Meaningful extension | removed | [Computer-Use and TOCTOU: What You Click Is Not What You Get!](https://embracethered.com/blog/posts/2026/toctou-agent-what-you-click-is-not-what-you-get/) |
+| 59.0 | Meaningful combination | removed | [Cruising for Shells in Flowise](https://www.elttam.com/blog/cruising-for-shells-in-flowise) |
+| 59.0 | Meaningful extension | removed | [Security Considerations on Namespace-Based Multi-Tenancy (Istio VirtualService MITM)](https://istio.io/latest/blog/2026/security-considerations-on-namespace-based-multi-tenancy/) [Weaponized against Kubeflow](https://insinuator.net/2026/05/cve-2026-47237-overly-permissive-istio-permissions-allow-kubeflow-authorization-token-stealing/) |
+| 59.0 | Meaningful extension | removed | [The Memory Heist](https://www.ayush.digital/blog/the-memory-heist) [Independent Tencent Zhuque analysis](https://security.tencent.com/index.php/blog/msg/225) |
+| 59.0 | Meaningful extension | removed | [Web Cache Overflow: Exploiting Imprecise Keys for Cache Degradation and Beyond](https://arxiv.org/abs/2608.04744) |
+| 58.3 | Tooling / methodology | removed | [Breaking Multi-Tenancy Over and Over](https://i.blackhat.com/BH-USA-26/Presentations/US-26-Lehawany-Breaking-Multi-Tenancy-Wed.pdf) — overlaps the 59.0 Istio item |
+| 57.8 | Tooling / methodology | removed | [Bullseye: Detecting Prototype Pollution in NPM Packages with Proof-of-Concept Exploits](https://www.ndss-symposium.org/ndss-paper/bullseye-detecting-prototype-pollution-in-npm-packages-with-proof-of-concept-exploits/) |
+| 57.8 | Tooling / methodology | removed | [The Dot-Dot-Slash That Frameworks Hand You: CSPT Across Every Major Frontend Framework](https://lab.ctbb.show/research/the-dot-dot-slash-that-frameworks-hand-you) [Repo](https://github.com/xssdoctor/cspt_research) |
+| 57.5 | Meaningful extension | removed | [Beyond the Limits of Site Isolation](https://www.youtube.com/watch?v=d3nfJL86jrc) |
+| 57.2 | Meaningful combination | removed | [AgentForger: ChatGPT Cross-Site Agent Forgery](https://labs.zenity.io/post/agentforger-part-1-chatgpt-cross-site-agent-forgery) [Part 2](https://labs.zenity.io/post/agentforger-part-2-the-autonomous-insider) |
+| 56.8 | Meaningful combination | removed | [KindaRails2Shell: how a MATLAB file reads your secrets and pops a shell on Rails](https://ethiack.com/info-hub/research/kindarails2shell-how-a-matlab-file-reads-your-secrets-and-pops-a-shell-on-ruby-on-rails) |
+| 56.8 | Useful application | removed | [GitHub RCE Vulnerability: CVE-2026-3854](https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854) |
+| 56.5 | Meaningful extension | removed | [DOMPurify XSS via `<selectedcontent>` re-clone](https://github.com/cure53/DOMPurify/security/advisories/GHSA-87xg-pxx2-7hvx) |
+| 56.2 | Meaningful combination | removed | [SearchLeak: Parameter-to-Prompt injection in Microsoft Copilot](https://www.varonis.com/blog/searchleak) [Reprompt](https://www.varonis.com/blog/reprompt) [Data Tomb Raider slides](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Dolev%20Taler%2C%20Mark%20Vaitsman%20-%20Data%20Tomb%20Raider%20Raiding%20Modern%20AI%20Vaults%20with%20Legacy%20Flaws%20for%20Treasure%20Stealing%20-%20v1.pdf) |
+| 56.2 | Tooling / methodology | removed | [Breaking the Boundaries: Analyzing QUIC Frame-Packet Interactions With QUIC-Attacker](https://www.usenix.org/conference/usenixsecurity26/presentation/erinola) |
+| 56.0 | Meaningful combination | removed | [Caught in the Octopus Trap: Unauthenticated RCE in Argo CD](https://www.synacktiv.com/en/publications/caught-in-the-octopus-trap-unauthenticated-rce-in-argo-cd-with-codeql) |
+| 56.0 | Useful application | removed | [The sorry state of skill distribution](https://blog.trailofbits.com/2026/06/03/the-sorry-state-of-skill-distribution/) |
+| 55.9 | Meaningful combination | removed | [Zero-Click RCE in Figma Desktop](https://lab.ctbb.show/research/figma-desktop-zero-click-rce/) |
+| 55.7 | Meaningful extension | removed | [ELF in the Pixels: Building Shared Object–Image Polyglots](https://blog.babelo.xyz/posts/elf-in-the-pixels/) |
+| 55.5 | Meaningful combination | removed | [Race Against The Patch: Four Exploit Chains in LiteLLM](https://starlabs.sg/blog/2026/05-race-against-the-patch-the-evolution-of-four-exploit-chains-in-litellm/) |
+| 55.2 | Tooling / methodology | removed | [Living Off The Pipeline: Defensive Research, Weaponized (SmokedMeat / Brisket)](https://labs.boostsecurity.io/articles/introducing-smokedmeat/) |
+| 55.2 | Tooling / methodology | removed | [Scanning the Scanners: Turning Security Vendors Into Supply Chain Weapons](https://i.blackhat.com/BH-USA-26/Presentations/US-26-Karger-Scanning-The-Scanners-Thursday.pdf) |
+| 54.5 | Meaningful combination | removed | [HermeticReader: turning Adobe's 300M-install extension into a WhatsApp takeover](https://guard.io/labs/hermeticreader---the-vulnerability-that-turned-adobe-300m-install-extension-into-a-full-whatsapp-takeover) |
+| 54.5 | Meaningful extension | removed | [Pass the Passkey: A Novel Attack Surface in Passwordless Authentication](https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/) |
+| 54.5 | Meaningful extension | removed | [Re:CACHE — Excessive reflection, type confusion, and 0-click SXSS on Next.js](https://zhero-web-sec.github.io/research-and-things/re-cache-excessive-reflection-type-confusion-and-0-click-sxss-on-nextjs) |
+| 54.2 | Meaningful extension | removed | [H3Act: Automated Measuring Semantic Conversion Anomalies of HTTP/3-to-HTTP/1.1 Translation in CDNs](https://www.usenix.org/conference/usenixsecurity26/presentation/peng-qihang) |
+| 54.2 | Tooling / methodology | removed | [Identifying Logical Vulnerabilities in QUIC Implementations](https://www.ndss-symposium.org/wp-content/uploads/2026-s1777-paper.pdf) |
+| 53.8 | Tooling / methodology | removed | [AI Server-Side Browser Security Whitepaper](https://xlab.tencent.com/cn/2026/02/02/ai-browser-crawler-whitepaper/) |
+| 53.5 | Useful application | removed | [Exploiting Auth0 Defaults in XSS Attacks](https://www.elttam.com/blog/exploiting-auth0-defaults-in-xss-attacks/) |
+| 53.2 | Meaningful combination | removed | [L3akCTF 2026 "Squid": racing `/proc/self/fd` symlinks against Flask `send_file`'s stat/open TOCTOU to read zero-length files](https://jorianwoltjer.com/blog/p/ctf/l3akctf-2026-squid) |
+| 53.0 | Meaningful combination | removed | [SekaiCTF 2026 "Filtered Reality": invalid Signed HTTP Exchange fallback navigation as a redirect and CSP-nonce escape primitive](https://github.com/project-sekai-ctf/sekaictf-2026/blob/main/web/filtered-reality/solution/writeup.md) |
+| 53.0 | Useful application | removed | [OffGuard: Breaking the Most Popular AI Gateway (LiteLLM) from Auth Bypass to Cloud Compromise](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Yaara%20Shriki%20-%20OffGuard%20Breaking%20the%20Most%20Popular%20AI%20Gateway%20from%20Auth%20Bypass%20to%20Cloud%20Compromise.pdf) |
+| 52.9 | Meaningful extension | removed | [Never Trust the Output: Data Pollution in AI Agents and MCP](https://blog.slonser.info/posts/smugglle-ai-ouputs/) |
+| 52.8 | Meaningful extension | removed | [Node.js TLS hostname-normalisation differentials: Unicode dot separators defeat wildcard depth](https://hackerone.com/reports/3688064) [Embedded-NUL authority rebinding](https://hackerone.com/reports/3656716) [Session reuse with a different servername](https://hackerone.com/reports/3649802) [Fix commit with the test vector](https://github.com/nodejs/node/commit/1efb4ff51a) |
+| 52.6 | Useful application | removed (2025) | [Handle With Care: Chaining Azure Automation Flaws for Cross-Tenant Identity Takeover](https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Shavit-Handle-Slides.pdf) — CVE-2025-29827, patched May 2025 |
+| 52.5 | Meaningful combination | removed | [Critical Flaws in Anthropic, Google and OpenAI's Coding Agents: the trust-handoff primitive](https://novee.security/blog/critical-flaws-in-anthropic-google-and-openais-coding-agents/) [Gemini CLI chain](https://novee.security/blog/gemini-cli-cvss-10-rce-novee-security/) |
+| 52.2 | Meaningful extension | removed | [FirefUXSS: universal XSS in Firefox Focus/Klar for iOS](https://github.com/v12-security/pocs/tree/main/firefox) |
+| 52.2 | Meaningful extension | removed | [XSS via i18n translation-template injection in NodeBB](https://www.aikido.dev/blog/eight-high-severity-vulnerabilities-nodebb) |
+| 52.2 | Useful application | removed | [Drupal PostgreSQL SQL Injection: From SELECT-Only to RCE](https://blog.lexfo.fr/drupal-postgresql-sqli-to-rce.html) |
+| 52.0 | Useful application | removed | [Pre-auth RCE in Enterprise Java: When Middleware Becomes the Exploit](https://i.blackhat.com/BH-USA-26/Presentations/Pre-auth_RCE_in_Enterprise_Java_When_Middlewa.pdf) |
+| 51.8 | Meaningful combination | removed | [New Age of Collisions: Pre-Auth Arbitrary File Read as root in cPanel](https://slcyber.io/research-center/new-age-of-collisions-reading-arbitrary-files-pre-auth-as-root-in-cpanel-cve-2026-29205/) |
+| 51.6 | Tooling / methodology | removed | [Attacking and Defending AI Browsers](https://i.blackhat.com/BH-USA-26/Presentations/US-26-Chaikin-Attacking-Defending-AI-Browsers.pdf) [Companion post](https://brave.com/blog/indirect-prompt-injection/) |
+| 51.5 | Meaningful combination | removed | [Finding XSS on Shazzer (literally)](https://jorianwoltjer.com/blog/p/stories/finding-xss-on-shazzer) |
+| 51.0 | Useful application | removed | [Sandcastles, Not Sandboxes: `ctypes.CDLL(None)` reaches Emscripten exports to escape Pyodide into the host JS runtime](https://www.cyera.com/research/sandcastles-not-sandboxes-how-one-architectural-flaw-exposed-seven-products) [Grist precursor](https://www.cyera.com/research/cellbreak-grists-pyodide-sandbox-escape-and-the-data-at-risk-blast-radius) |
+| 50.6 | Meaningful extension | removed | [Apache httpd HTTP/2 Memory Exhaustion (CVE-2025-53020)](https://galbarnahum.com/posts/apache-httpd-cve-2025-53020) |
+| 50.5 | Meaningful extension | removed | [Blind enumeration of unreadable records via a sort oracle in Trello](https://bugcrowd.com/disclosures/0ecb51a3-2064-4f9d-aa19-aa7b6ae21812/blind-enumeration-of-private-card-names-via-sort-oracle-and-id-discovery) |
+| 50.5 | Tooling / methodology | removed | [Golang code review notes II](https://www.elttam.com/blog/golang-code-review-notes-ii) |
+| 50.5 | Useful application | removed | [Fooling AI Agents: Web-Based Indirect Prompt Injection Observed in the Wild](https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/) |
+| 50.5 | Useful application | removed | [Proto6: The Schema Was Not Supposed to Run](https://www.cyera.com/research/proto6-the-schema-was-not-supposed-to-run) |
+| 50.4 | Useful application | removed | [Breaking the Control Plane: Exploiting MCP Servers in AI Workflows](https://troopers.de/downloads/troopers26/TR26_Breaking_the_Control_Plane_F3XCER.pdf) [Video](https://youtu.be/DAbyi6MZR9w) |
+| 50.2 | Useful application | removed | [Trusted Publishing, Untrusted Branch: Inside the Red Hat npm Compromise](https://labs.boostsecurity.io/articles/trusted-publishing-untrusted-branch-red-hat-npm) |
+| 50.0 | Independent rediscovery | removed | [The SQL Server Unicode problem: Best-Fit mapping as a universal filter bypass](https://www.synacktiv.com/en/publications/the-sql-server-unicode-problem-why-your-data-might-not-be-what-you-think-it-is) |
+| 50.0 | Meaningful combination | removed | [Content-Type Override to Stored XSS on public objects](https://blog.voorivex.team/content-type-override-to-stored-xss-on-public-objects) |
+| 50.0 | Meaningful extension | removed | [Hack the Elephant One Bite at a Time: NUL byte SQL Injection in pdo\_firebird](https://swarm.ptsecurity.com/hack-the-elephant-one-bite-at-a-time-nul-byte-sql-injection-in-pdo_firebird-and-null-pointer-dereference-in-pdo-pgsql/) [JPEG memory-safety bugs in PHP](https://swarm.ptsecurity.com/hack-the-elephant-one-bite-at-a-time-jpeg-related-memory-safety-bugs-in-php/) |
+| 50.0 | Useful application | removed | [When Filenames Become Attack Surfaces: Weaponizing NASA's CFITSIO Extended Filename Syntax](https://blog.doyensec.com/2026/05/19/cfitsio-weaponized-filenames.html) |
+| 49.6 | Useful application | removed | [The CSRF-token leak both Claude Code and Codex Security missed (SAML IdP form helpers)](https://gmo-cybersecurity.com/blog/claude-codex-missed-csrf-token-leak/) |
+| 49.5 | Useful application | removed | [Charting your way in: Helm template injection](https://www.synacktiv.com/en/publications/charting-your-way-in-helm-template-injection) |
+| 49.5 | Useful application | removed | [My Road to Black-Box RCE in LLM Products: `postinstall` in AI preview builders, weakest-model-wins guardrail bypass, and DLP evasion by channel choice](https://mp.weixin.qq.com/s/whv4LzJTiJt-i2zHzdG8Eg) |
+| 49.2 | Tooling / methodology | removed | [Gotta Phish 'Em All! Novel Attack Techniques via Persistent Browser-in-the-Middle](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Giacomo%20Lenzini%20-%20Gotta%20Phish%20%27Em%20All%20Novel%20Attack%20Techniques%20via%20Persistent%20Browser-in-the-Middle%20-%20v2.pdf) |
+| 49.0 | Useful application | removed | [BodySnatcher: agentic hijacking in ServiceNow](https://appomni.com/ao-labs/bodysnatcher-agentic-ai-security-vulnerability-in-servicenow/) |
+| 48.8 | Tooling / methodology | removed | [No Socket, No Privs, No Problem: Weaponizing OCI Registries for SSRF, Credential Theft, and Container Escapes](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20David%20Rochester%2C%20Nicholas%20Gould%20-%20No%20Socket%2C%20No%20Privs%2C%20No%20Problem%20Weaponizing%20OCI%20Registries%20for%20SSRF%2C%20Credential%20Theft%2C%20and%20Container%20E.pdf) |
+| 48.8 | Useful application | removed | [Beyond Normalization: The Expanding Unicode Attack Surface](https://i.blackhat.com/BH-USA-26/Presentations/BHUSA26-Barnett-Beyond-Normalization-Slides.pdf) |
+| 48.7 | Useful application | removed | [Pwning Agentic Browsers with PleaseFix](https://zenity.io/research/pleasefix-vulnerabilities) |
+| 48.0 | Meaningful extension | removed | [CVE-2026-21876: bypassing OWASP CRS by overwriting the multipart charset in a later segment](https://habr.com/ru/articles/984632/) |
+| 48.0 | Tooling / methodology | removed | [Beyond the Ceremony: The 2026 Passkey Attack Surface](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Matteo%20Giordano%20-%20Beyond%20the%20Ceremony%20The%202026%20Passkey%20Attack%20Surface%20-%20v2.pdf) |
+| 47.2 | Useful application | removed | [Breaking SameSite=Strict in Chrome](https://lab.ctbb.show/writeups/breaking-samesite-strict-in-chrome) |
+| 47.2 | Useful application | removed | [Keys to the Kingdom: Anonymous SQL Injection in Drupal Core (CVE-2026-9082)](https://slcyber.io/research-center/keys-to-the-kingdom-anonymous-sql-injection-in-drupal-core-cve-2026-9082/) |
+| 46.9 | Useful application | removed | [Hidden security risks in Jupyter notebooks](https://www.sonarsource.com/blog/hidden-security-risks-in-jupyter-notebooks/) |
+| 46.8 | Useful application | removed | [CosmosEscape: Taking Over Every Database in Azure Cosmos DB](https://www.wiz.io/blog/cosmosescape-taking-over-every-database-in-azure-cosmos-db) |
+| 46.5 | Meaningful extension | removed | [CDN Tsunami: Exploiting HTTP/3-HTTP/1.1 Conversion for DoS Attacks](https://arxiv.org/abs/2607.26589) |
+| 45.8 | Independent rediscovery | removed | [Before the first prompt: Code execution paths in trusted coding-agent projects](https://securitylabs.datadoghq.com/articles/coding-agent-project-trust-code-execution-before-first-prompt/) |
+| 45.5 | Useful application | removed | [Jupyter Enterprise Gateway: SSTI and YAML break-out to cluster takeover](https://www.elttam.com/blog/jupyter-enterprise-gateway) |
+| 45.2 | Useful application | removed | [Same-site DOM XSS using cookie injection via the TikTok analytics pixel](https://medium.com/@renwa/site-dom-xss-using-cookie-injection-the-ai-hackers-are-coming-faster-than-you-think-3ef82f2a991d) |
+| 44.8 | Useful application | removed | [Securing the Supply Chain: Cache Vulnerability in RubyGems](https://trufflesecurity.com/blog/rubygems-cache-vulnerability) |
+| 44.5 | Useful application | removed | [HTTP Request Smuggling via `Connection: close<TAB>` in Node.js llhttp](https://hackerone.com/reports/3723248) |
+| 44.2 | Independent rediscovery | removed | [Wrestling with a Python: Escaping Copilot Studio's AI-Guarded Sandbox](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ryan%20Hausknecht%2C%20Simon%20Maxwell-Stewart%20-%20Wrestling%20with%20a%20Python%20Escaping%20Copilot%20Studio%27s%20AI-Guarded%20Sandbox%20-%20DEFCON2026%20embargo.pptx) |
+| 44.2 | Useful application | removed | [UI consent bypass via comma injection in Burp's MCP `addAutoApproveTarget`](https://hackerone.com/reports/3717354) |
+| 44.0 | Tooling / methodology | removed | [Navigating Lax Load Balancers: When an Intersection Gets You Inside](https://blog.doyensec.com/2026/05/25/cloudsectidbits-elbaph-alb.html) |
+| 43.8 | Meaningful extension | removed | [Chaos by Design: The Death of Stochastic Race Conditions in HTTP/3](https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Chatzoglou-Chaos-by-Design-Slides.pdf) [Tool](https://github.com/efchatz/timeorch) |
+| 43.8 | Useful application | removed | [8 Out of 10 Banks in Belgium HATE This One Weird eID RCE](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20James%20Arnott%20-%208%20Out%20of%2010%20Banks%20in%20Belgium%20HATE%20This%20One%20Weird%20eID%20RCE%20-%20MEDIA%20SERVER%20Belgi.pdf) |
+| 43.5 | Meaningful extension | removed | [The Forgotten Bug: How a Node.js Core Design Flaw Enables HTTP Request Splitting](https://r3verii.github.io/cve/2026/02/27/nodejs-toctou.html) |
+| 43.2 | Meaningful combination | removed | [AgenticBlabbering: how AI browsers' verbose reasoning fuels the ultimate scamming machine](https://guard.io/labs/agenticblabbering---how-ai-browsers-verbose-reasoning-fuels-the-ultimate-scamming-machine) |
+| 43.2 | Useful application | removed | [Ghosts of Encryption Past: Salesforce Marketing Cloud / ExactTarget](https://slcyber.io/research-center/ghosts-of-encryption-past-salesforce-exacttarget/) |
+| 43.0 | Useful application | removed | [CargoWise WebTracker — The Keys Were in the Cargo](https://slcyber.io/research-center/cargowise-webtracker-the-keys-were-in-the-cargo/) |
+| 43.0 | Useful application | removed | [Remote-content-blocking and CSS-sanitizer bypasses in Roundcube's washtml via SVG `feImage` and SMIL animation attributes](https://hackerone.com/reports/3486747) |
+| 43.0 | Useful application | removed | [SECCON CTF 14 Finals: Shadow CSS and friends](https://blog.arkark.dev/2026/03/08/seccon-finals/) [Solver writeup](https://nanimokangaeteinai.hateblo.jp/entry/2026/03/02/235931) |
+| 42.8 | Useful application | removed | [FCSC 2026 "Aquarium": escaping the Node.js Permission Model via `data:` URL import and `SIGUSR1` inspector activation](https://worty.fr/post/writeups/fcsc2026/fcsc_aquarium/) |
+| 42.5 | Useful application | removed | [Can a Predicted `window.open` Target Really Be That Impactful?](https://lab.ctbb.show/research/can-a-predicted-window-open-target-really-be-that-impactful) |
+| 41.5 | Independent rediscovery | removed | [Ghost Dependency: version ghosts and name ghosts as supply-chain primitives under agentic coding](https://xlab.tencent.com/cn/2026/02/28/ghost-dependency-agentic-coding-supply-chain-threat/) |
+| 40.5 | Duplicate / already known | removed | [postMessage targetOrigin bypass via IP normalization](https://lab.ctbb.show/research/postmessage-targetorigin-bypass-via-ip-normalization) |
+| 39.2 | Duplicate / already known | removed | [Mini Shai-Hulud Returns: 42 Malicious npm Packages Fake Sigstore Badges](https://www.endorlabs.com/learn/mini-shai-hulud-returns-42-malicious-npm-packages-fake-sigstore-badges-in-antv-ecosystem-attack) |
+| 38.5 | Useful application | removed | [Elasticsearch Painless execution via a pass-through `sort_query` GraphQL argument](https://hackerone.com/reports/3694007) |
+| 38.5 | Useful application | removed | [OAuth Client ID Spoofing: Why Fake Client IDs Are Gaining Traction for Stealthy Enumeration](https://www.proofpoint.com/us/blog/threat-insight/oauth-client-id-spoofing-why-fake-client-ids-are-gaining-traction-stealthy) |
+| 38.2 | Duplicate / already known | removed | [Unauthenticated RCE in Taskcluster via a GraphQL filter reaching sift's `$where`](https://hackerone.com/reports/3782701) |
+| 37.5 | Duplicate / already known | removed | [Domain Decoupling Attack: Exploiting the Validation Gap Between Protective DNS and Shared Edge Routing](https://arxiv.org/abs/2608.00643) |
+| 36.2 | Independent rediscovery | removed | [Install Me Maybe: Turning Claimable VS Code Extension IDs into Supply-Chain Attacks](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Raphael%20Silva%20-%20Install%20Me%20Maybe%20Turning%20Claimable%20VS%20Code%20Extension%20IDs%20into%20Supply-Chain%20Attacks%20-%20v1.pdf) |
+| 35.1 | Independent rediscovery | removed | [Bandwidth amplification with a factor of x783 caused by HTTP/2 → HTTP/1.1 translation in Cloudflare](https://habr.com/ru/articles/1063428/) |
+| 34.8 | Insufficient evidence | removed | [A Billion-User Blast Radius: Owning ChatGPT's Secure Sandbox](https://appsecvillage.com/events/dc-2026/a-billion-user-blast-radius-owning-chatgpt-s-secure-sandbox-1248604) |
+| 34.7 | Duplicate / already known | removed | [Cline Kanban WebSocket Hijack](https://www.oasis.security/blog/cline-kanban-websocket-hijack) [Breaking the Paperclip](https://www.oasis.security/blog/paperclip-agent-vulnerabilities) |
+| 34.0 | Useful application | removed | [Trailing-dot hostname normalisation in curl: IP-literal guard bypass to wildcard SAN match, and multi-dot HSTS bypass](https://hackerone.com/reports/3734921) [Multi-trailing-dot HSTS](https://hackerone.com/reports/3733984) |
+| 33.0 | Duplicate / already known | removed | [DOMPurify mXSS via Re-Contextualization (CVE-2026-0540)](https://fluidattacks.com/advisories/daft) |
+| 32.0 | Duplicate / already known | removed | [BioShocking AI: "Gaming" the AI Browser and Escaping its Guardrails](https://layerxsecurity.com/blog/bioshocking-ai-gaming-the-ai-browser-and-escaping-its-guardrails/) |
+| 32.0 | Duplicate / already known | removed | [Dollar-Quote Bypass: Blind SQLi Against Regex-Sanitized Dynamic PL/pgSQL](https://jrbusiness.github.io/Dollar-Quote-Desync/) |
+| 31.8 | Useful application | removed | [Duplicate chunked `Transfer-Encoding` smuggles a response across reused proxy connections in curl](https://hackerone.com/reports/3795615) [Bare-LF variant](https://hackerone.com/reports/3785919) |
+| 31.2 | Duplicate / already known | removed | [SSRF filter bypass via the RFC 8215 local-use NAT64 prefix `64:ff9b:1::/48`](https://hackerone.com/reports/3634400) |
+| 30.2 | Insufficient evidence | removed | [Nested APP Authentication — Undocumented Risk and Conditional Access Bypass](https://troopers.de/troopers26/talks/ezcteq/) |
+| 30.0 | Insufficient evidence | removed | [Reflections on Disregarding Trust: Weaponizing CDP and MHTML for Header-Agnostic Session Hijacking](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Gregory%20Disney-Leugers%20-%20Reflections%20on%20Disregarding%20Trust%20%28Weaponizing%20CDP%20and%20MHTML%20for%20Header-Agnostic%20Session%20Hijacking%29%20-%201umberhac.pdf) |
+| 26.8 | Duplicate / already known | removed | [curl HTTP/2 server push accepts a non-authoritative `:scheme=https` over cleartext h2c](https://hackerone.com/reports/3630310) [Incomplete fix](https://hackerone.com/reports/3674275) |
+| 22.5 | Insufficient evidence | removed | [ROP for the Web: Smuggling XSS, SQLi and Web Shells Past Every WAF Using Compression Dictionaries](https://appsecvillage.com/events/dc-2026/rop-for-the-web-smuggling-xss-sqli-and-web-shells-past-every-waf-using-compression-dictionaries-1250560) |
+| 15.5 | Insufficient evidence | removed | [The Hidden Cost of Sanitization: How Secure Parsing Can Introduce New XSS Attack Surfaces](https://nullcon.net/talk/the-hidden-cost-of-sanitization-how-secure-parsing-can-introduce-new-xss-attack-surfaces/) [Video](https://www.youtube.com/watch?v=BJCgSLGq308) |
+| 14.8 | Insufficient evidence | removed | [Demystifying the (In)Security of OAuth-based Account Linking in Connector Ecosystems](https://sp2026.ieee-security.org/accepted-papers.html) |

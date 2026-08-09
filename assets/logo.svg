@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="260" viewBox="0 0 840 260" role="img" aria-label="Top 10 Web Hacking Techniques — the complete archive, 2006 to 2025">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1120"/>
+      <stop offset="1" stop-color="#131f3a"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#4ade80"/>
+    </linearGradient>
+    <linearGradient id="neonV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#4ade80"/>
+    </linearGradient>
+    <linearGradient id="shieldFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#182848"/>
+      <stop offset="1" stop-color="#0d1526"/>
+    </linearGradient>
+  </defs>
+
+  <!-- card -->
+  <rect x="1.5" y="1.5" width="837" height="257" rx="22" fill="url(#bg)" stroke="url(#neon)" stroke-opacity="0.55" stroke-width="1.5"/>
+
+  <!-- browser-window dots -->
+  <circle cx="36" cy="34" r="6" fill="#f87171"/>
+  <circle cx="58" cy="34" r="6" fill="#fbbf24"/>
+  <circle cx="80" cy="34" r="6" fill="#4ade80"/>
+  <line x1="2" y1="56" x2="838" y2="56" stroke="#22d3ee" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- faint code glyph -->
+  <text x="812" y="228" font-family="Consolas, 'Courier New', monospace" font-size="150" font-weight="700" fill="#22d3ee" fill-opacity="0.07" text-anchor="end">&lt;/&gt;</text>
+
+  <!-- shield mark -->
+  <g>
+    <path d="M132 68 L194 89 V140 C194 175 169 200 132 214 C95 200 70 175 70 140 V89 Z" fill="url(#shieldFill)" stroke="url(#neonV)" stroke-width="3" stroke-linejoin="round"/>
+    <text x="132" y="165" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="62" font-weight="800" fill="url(#neon)" text-anchor="middle">10</text>
+  </g>
+
+  <!-- wordmark -->
+  <text x="240" y="98" font-family="Consolas, 'Courier New', monospace" font-size="16" fill="#4ade80">~$ webhacks --list --all --since 2006</text>
+  <text x="238" y="150" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="800" fill="#f3f6fc" letter-spacing="1">TOP 10 WEB HACKING</text>
+  <text x="238" y="196" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="800" fill="url(#neon)" letter-spacing="1">TECHNIQUES<tspan font-size="20" font-weight="600" fill="#8ea0c0" dx="14" dy="-2">2006 → 2025</tspan></text>
+  <text x="240" y="230" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#8ea0c0">1,100+ techniques · every nominee, every year · originals preserved as PDF</text>
+</svg>
