@@ -1,14 +1,52 @@
+# Cloudflare Pages APPENDS the headers of every rule that matches a request
+# rather than letting the most specific rule win. A Cache-Control here would
+# therefore be prepended to each per-path value below, and browsers take the
+# first max-age they see, so max-age=0 would silently defeat the immutable and
+# stale-while-revalidate policies. Security headers apply to everything and are
+# safe to repeat; caching is set per path instead.
 /*
   Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self'; frame-src 'self'; frame-ancestors 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; media-src 'none'; worker-src 'none'
   Referrer-Policy: strict-origin-when-cross-origin
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+
+# The app shell and the catalogue index revalidate on every load so a new
+# deployment is picked up immediately. Each path needs its own block: the
+# _headers format has no way to share one block between several paths.
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/app.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/constellation.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/styles.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/brand-mark.svg
+  Cache-Control: public, max-age=0, must-revalidate
+
+/site.webmanifest
+  Cache-Control: public, max-age=0, must-revalidate
+
+/robots.txt
+  Cache-Control: public, max-age=0, must-revalidate
+
+/sitemap.xml
   Cache-Control: public, max-age=0, must-revalidate
 
 /data/catalogue.json
   Cache-Control: public, max-age=0, must-revalidate
 
+# Shards are requested as ?v=<catalogue version>, so a given URL never changes
+# body. A year of immutable caching is safe and skips the revalidation round
+# trip for every collection the visitor has already opened.
 /data/collections/*
   Cache-Control: public, max-age=31536000, immutable
 
