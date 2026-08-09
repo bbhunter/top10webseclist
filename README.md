@@ -4,6 +4,7 @@
 
 <br><br>
 
+[![Live archive](https://img.shields.io/badge/Browse-webhacklist.com-4ade80?style=for-the-badge&logo=readthedocs&labelColor=0b1120)](https://webhacklist.com)
 [![GitHub stars](https://img.shields.io/github/stars/irsdl/top10webseclist?style=for-the-badge&logo=github&color=4ade80&labelColor=0b1120)](https://github.com/irsdl/top10webseclist/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/irsdl/top10webseclist?style=for-the-badge&logo=github&color=22d3ee&labelColor=0b1120)](https://github.com/irsdl/top10webseclist/fork)
 [![Last commit](https://img.shields.io/github/last-commit/irsdl/top10webseclist?style=for-the-badge&labelColor=0b1120&color=8b5cf6)](https://github.com/irsdl/top10webseclist/commits)
@@ -13,6 +14,10 @@
 **The complete archive of the _Top 10 Web Hacking Techniques_ — every nominated technique
 (not just the winners) for every year since 2006, plus PDF snapshots of the original
 announcement posts so the record survives its hosts.**
+
+### 🌐 Read it online at **[webhacklist.com](https://webhacklist.com)**
+
+Search every technique, filter by year, and open any preserved document without leaving the browser.
 
 [Browse by year](#-browse-by-year) ·
 [Where things are](#-where-things-are) ·
@@ -215,13 +220,15 @@ cache lifetime. `website/build-site.mjs` stages only the archive documents refer
 those shards, so adding a year or preserved reference automatically grows the deployed
 site without maintaining a second hand-written index.
 
-`webhacklist.com` is intended to run on Cloudflare Pages using
-`node website/build-data.mjs && node website/build-site.mjs --target cloudflare` with
-`dist` as the output directory. The GitHub Pages workflow publishes the same app at the
-default project URL as a backup. Two PDFs exceed Cloudflare Pages' 25 MiB asset limit;
-their exact paths are declared in `website/hosting.json` and transparently fall back to
-the GitHub deployment. See [website/README.md](website/README.md) for DNS, cache,
-full-screen and mobile deployment details.
+[`webhacklist.com`](https://webhacklist.com) runs on Cloudflare Pages, built with
+`node website/build-data.mjs && node website/build-site.mjs --target cloudflare` and
+`dist` as the output directory. A push to `master` is the only deploy step. The GitHub
+Pages workflow is *not* a second copy of the app: it is a small file origin publishing
+only the preserved PDFs that exceed Cloudflare Pages' 25 MiB per-file asset limit —
+two of them today. Their exact URLs are declared in `website/hosting.json`, and the app
+falls back to them transparently when a document is too large to serve from the primary
+host. See [website/README.md](website/README.md) for DNS, cache, full-screen and mobile
+deployment details.
 
 ## ⚖️ Face the Judge
 
