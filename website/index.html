@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0e15">
+  <meta name="application-name" content="Web Hack List">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; media-src 'none'; worker-src 'none'">
+  <meta name="description" content="Web Hacking Techniques Index is an interactive archive of Top 10 Web Hacking Techniques research, nominations, and clearly marked preliminary collections.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Web Hack List">
+  <meta property="og:title" content="Web Hacking Techniques Index">
+  <meta property="og:description" content="Explore two decades of web hacking research, nominations, preserved articles and annual Top 10 results.">
+  <meta property="og:url" content="https://webhacklist.com/">
+  <title>Web Hacking Techniques Index — Research archive</title>
+  <link rel="canonical" href="https://webhacklist.com/">
+  <link rel="icon" href="brand-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="brand-mark.svg">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to archive</a>
+
+  <div class="boot-screen" id="boot-screen" role="status" aria-live="polite">
+    <div class="boot-mark" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+    <p class="eyebrow">Web Hacking Techniques Index / research archive</p>
+    <h1>Opening the archive</h1>
+    <p id="boot-status">Indexing two decades of web security research…</p>
+  </div>
+
+  <div class="app-shell" id="app-shell" hidden>
+    <aside class="sidebar" id="concept-sidebar" aria-label="Archive experiences">
+      <a class="brand" href="#museum" aria-label="Web Hacking Techniques Index home">
+        <img class="brand-mark" src="brand-mark.svg" alt="">
+        <span class="brand-copy"><strong>WEB HACKING</strong><b>TECHNIQUES INDEX</b><em>Research archive</em></span>
+      </a>
+      <p class="brand-edition"><span>2006—NOW</span> Research record</p>
+
+      <nav class="sidebar-project-links" aria-label="Project links">
+        <a href="https://github.com/irsdl/top10webseclist" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">GH</span> GitHub</a>
+        <a href="https://github.com/irsdl/top10webseclist/blob/master/.claude/skills/webseclist-judge-reference/SKILL.md" target="_blank" rel="noopener noreferrer" title="Use the judging workflow with your own AI"><span aria-hidden="true">AI</span> Judge your research</a>
+        <a href="https://x.com/irsdl" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">X</span> @irsdl</a>
+        <a href="https://github.com/sponsors/irsdl" target="_blank" rel="noopener noreferrer" title="Sponsor the preservation work"><span aria-hidden="true">♥</span> Sponsor</a>
+      </nav>
+
+      <nav class="concept-nav">
+        <p class="nav-label"><span>Ways into the archive</span><b>07</b></p>
+        <button class="nav-item active" data-view="museum" aria-current="page">
+          <span class="nav-index">01</span><span class="nav-copy"><strong>Museum</strong><em>Exhibition rooms</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="nav-item" data-view="library">
+          <span class="nav-index">02</span><span class="nav-copy"><strong>Library</strong><em>Reading stacks</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="nav-item" data-view="signals">
+          <span class="nav-index">03</span><span class="nav-copy"><strong>Signals</strong><em>Trend observatory</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="nav-item" data-view="constellation">
+          <span class="nav-index">04</span><span class="nav-copy"><strong>Constellation</strong><em>Relationship field</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="nav-item" data-view="terminal">
+          <span class="nav-index">05</span><span class="nav-copy"><strong>Hacker Terminal</strong><em>Query console</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="nav-item" data-view="evidence">
+          <span class="nav-index">06</span><span class="nav-copy"><strong>Investigation Board</strong><em>Casework surface</em></span><span class="nav-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="nav-item" data-view="favourites">
+          <span class="nav-index">07</span><span class="nav-copy"><strong>Favourites &amp; Read</strong><em><b id="favourite-count">0</b> saved · <b id="read-count">0</b> read</em></span><span class="nav-arrow" aria-hidden="true">★</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="reading-meter">
+          <div><span>Research trail</span><strong id="reading-progress-label">0 / 0</strong></div>
+          <i aria-hidden="true"><b id="reading-progress-bar"></b></i>
+          <button id="browse-unread" type="button">Resume with an unread record →</button>
+        </div>
+        <div class="collection-pulse"><span></span> Archive held locally</div>
+        <p><strong id="sidebar-count">—</strong> records indexed</p>
+      </div>
+    </aside>
+
+    <section class="workspace">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Open concept menu" aria-controls="concept-sidebar" aria-expanded="false">☰</button>
+        <label class="global-search">
+          <span aria-hidden="true">⌕</span>
+          <input id="global-search" type="search" aria-label="Search the research archive" placeholder="Find a technique, publisher, topic…" autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+        <nav class="project-links" aria-label="Project links">
+          <a href="https://github.com/irsdl/top10webseclist" target="_blank" rel="noopener noreferrer" title="Open the project on GitHub"><span aria-hidden="true">GH</span><b>GitHub</b></a>
+          <a href="https://github.com/irsdl/top10webseclist/blob/master/.claude/skills/webseclist-judge-reference/SKILL.md" target="_blank" rel="noopener noreferrer" title="Use the judging workflow with your own AI"><span aria-hidden="true">AI</span><b>Judge research</b></a>
+          <a href="https://x.com/irsdl" target="_blank" rel="noopener noreferrer" title="Follow @irsdl on X"><span aria-hidden="true">X</span><b>@irsdl</b></a>
+          <a class="sponsor-link" href="https://github.com/sponsors/irsdl" target="_blank" rel="noopener noreferrer" title="Sponsor the preservation work"><span aria-hidden="true">♥</span><b>Sponsor</b></a>
+        </nav>
+        <div class="top-actions">
+          <button class="quiet-button" id="random-artifact"><span aria-hidden="true">↝</span> Draw a thread</button>
+          <button class="quiet-button site-fullscreen" id="site-fullscreen" type="button" hidden aria-pressed="false" title="Fill the screen with the complete website"><span aria-hidden="true">⛶</span> Full screen</button>
+          <button class="sound-button" id="motion-toggle" aria-pressed="false" title="Reduce ambient motion">≈</button>
+        </div>
+      </header>
+
+      <aside class="global-results" id="global-results" aria-label="Archive search results" aria-live="polite" hidden>
+        <header><span id="global-results-label">Search results</span><button id="close-global-results" type="button" aria-label="Close search results">×</button></header>
+        <div id="global-results-list"></div>
+      </aside>
+
+      <main id="main-content" tabindex="-1">
+        <header class="view-intro">
+          <div>
+            <p class="eyebrow" id="view-kicker">Room 01 / exhibition mode</p>
+            <h1 id="view-title">Museum at Night</h1>
+            <p id="view-description">Walk through twenty years of research as rooms, illuminated winners and recovered artifacts.</p>
+          </div>
+          <div class="view-intro-tools">
+            <div class="view-metric" aria-live="polite">
+              <span id="view-count">—</span>
+              <small id="view-count-label">artifacts in this room</small>
+            </div>
+            <button class="view-fullscreen" id="view-fullscreen" type="button" hidden aria-pressed="false" title="Fill the screen with this archive mode"><span aria-hidden="true">⛶</span> Full screen</button>
+          </div>
+        </header>
+
+        <section id="view-root" class="view-root" aria-live="polite"></section>
+      </main>
+
+      <footer class="site-footer" aria-label="Support and credits">
+        <p class="eyebrow">Support</p>
+        <div class="support-block">
+          <p class="support-copy"><strong>This archive is free, and it stays free.</strong> Two decades of web hacking research, preserved before its hosts disappear. If it has been useful to you, a star is how other researchers find it — and sponsorship keeps the hosting, the recaptures and the curation going.</p>
+          <div class="support-actions">
+            <a class="support-action is-star" href="https://github.com/irsdl/top10webseclist" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">★</span><b>Star it on GitHub</b><em>Free, one click, helps the most</em>
+            </a>
+            <a class="support-action is-sponsor" href="https://github.com/sponsors/irsdl" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">♥</span><b>Sponsor the archive</b><em>Hosting, preservation and tooling</em></a>
+            <a class="support-action" href="https://github.com/irsdl/top10webseclist/blob/master/SUPPORT.md" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">→</span><b>Other ways to help</b><em>Fix a dead link, flag a missed technique</em></a>
+          </div>
+        </div>
+
+        <p class="eyebrow">Credits</p>
+        <div class="credit-list">
+          <p><a href="https://twitter.com/jeremiahg" target="_blank" rel="noopener noreferrer">Jeremiah Grossman</a> — created the list and curated 2006–2015.</p>
+          <p><a href="https://twitter.com/albinowax" target="_blank" rel="noopener noreferrer">James Kettle</a> and <a href="https://portswigger.net/research" target="_blank" rel="noopener noreferrer">PortSwigger</a> — curators since 2016.</p>
+          <p>Every researcher behind the 1,100+ techniques collected here.</p>
+          <p>Maintained by <a href="https://github.com/irsdl" target="_blank" rel="noopener noreferrer">Soroush Dalili (@irsdl)</a>.</p>
+        </div>
+      </footer>
+    </section>
+  </div>
+
+  <dialog class="artifact-dialog" id="artifact-dialog" aria-labelledby="artifact-title">
+    <form method="dialog"><button class="dialog-close" aria-label="Close artifact">×</button></form>
+    <div class="artifact-glow" aria-hidden="true"></div>
+    <div class="dialog-body">
+      <p class="eyebrow" id="artifact-eyebrow"></p>
+      <h2 id="artifact-title"></h2>
+      <div class="artifact-badges" id="artifact-badges"></div>
+      <p class="artifact-context" id="artifact-context"></p>
+
+      <dl class="artifact-facts" id="artifact-facts"></dl>
+
+      <div class="artifact-actions" id="artifact-actions"></div>
+      <p class="rights-note">Preserved material remains the work of its original author and publisher. The local copies are presented for research and historical access.</p>
+    </div>
+  </dialog>
+
+  <dialog class="reader-dialog" id="reader-dialog" aria-labelledby="reader-title" data-reading-theme="dark">
+    <header class="reader-bar">
+      <div>
+        <p class="eyebrow" id="reader-kicker">Preserved Markdown</p>
+        <strong id="reader-title">Article reader</strong>
+      </div>
+      <div class="reader-actions" id="reader-actions"></div>
+      <form method="dialog"><button class="reader-close" aria-label="Close reader">×</button></form>
+    </header>
+    <div class="reader-progress" aria-hidden="true"><i id="reader-progress-bar"></i></div>
+    <div class="reader-layout">
+      <aside class="reader-sidebar">
+        <p class="eyebrow">On this page</p>
+        <nav id="reader-toc" aria-label="Article contents"></nav>
+        <p class="reader-safety">Archived article text is untrusted third-party content. It is displayed as data and cannot execute code here.</p>
+      </aside>
+      <section class="reader-scroll" id="reader-scroll">
+        <article class="markdown-body" id="reader-content">
+          <div class="reader-loading"><i></i><p>Opening preserved Markdown…</p></div>
+        </article>
+      </section>
+    </div>
+  </dialog>
+
+  <dialog class="pdf-dialog" id="pdf-dialog" aria-labelledby="pdf-title" aria-describedby="pdf-viewer-note" data-reading-theme="dark">
+    <header class="pdf-bar">
+      <div>
+        <p class="eyebrow" id="pdf-kicker">Preserved PDF</p>
+        <strong id="pdf-title">Document viewer</strong>
+      </div>
+      <div class="pdf-actions">
+        <button class="reading-theme-toggle" id="pdf-theme-toggle" type="button" aria-label="Switch to light reading theme" title="Changes the viewer controls and surround; PDF page colours remain original">☀ Light</button>
+        <button id="pdf-share" type="button" title="Share this exact PDF view">⌁ Share</button>
+        <button id="pdf-read-toggle" type="button">○ Mark as read</button>
+        <button id="pdf-favourite-toggle" type="button" hidden>☆ Add favourite</button>
+        <button id="pdf-open-markdown" type="button" hidden>▤ Markdown</button>
+        <button id="pdf-fit-width" type="button">Fit width</button>
+        <button id="pdf-fit-page" type="button">Fit page</button>
+        <a id="pdf-new-tab" target="_blank" rel="noopener noreferrer">Open tab ↗</a>
+        <a id="pdf-download" download>Download</a>
+      </div>
+      <form method="dialog"><button class="pdf-close" aria-label="Close PDF viewer">×</button></form>
+    </header>
+    <div class="pdf-stage">
+      <div class="pdf-loading" id="pdf-loading" role="status"><i></i><p>Preparing the preserved document…</p></div>
+      <iframe id="pdf-frame" title="Preserved PDF document" referrerpolicy="no-referrer" hidden></iframe>
+      <div class="pdf-fallback" id="pdf-fallback" hidden>
+        <span aria-hidden="true">PDF</span>
+        <h2>Your browser did not embed this document</h2>
+        <p id="pdf-fallback-message">The preserved file is still available using the Open tab or Download controls above.</p>
+      </div>
+    </div>
+    <footer class="pdf-viewer-note" id="pdf-viewer-note"><span>Browser-native viewer</span> Use its internal toolbar for navigation, search and zoom. Viewer theme changes the surround; the PDF keeps its original page colours.</footer>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="constellation.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

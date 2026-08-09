@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "years": [
+    { "id": "2006", "label": "2006", "status": "final", "ranked": true },
+    { "id": "2007", "label": "2007", "status": "final", "ranked": true },
+    { "id": "2008", "label": "2008", "status": "final", "ranked": true },
+    { "id": "2009", "label": "2009", "status": "final", "ranked": true },
+    { "id": "2010", "label": "2010", "status": "final", "ranked": true },
+    { "id": "2011", "label": "2011", "status": "final", "ranked": true },
+    { "id": "2012", "label": "2012", "status": "final", "ranked": true },
+    { "id": "2013", "label": "2013", "status": "final", "ranked": true },
+    { "id": "2014", "label": "2014", "status": "final", "ranked": true },
+    { "id": "2015", "label": "2015", "status": "final", "ranked": true },
+    { "id": "2016-17", "label": "2016–17", "status": "final", "ranked": true },
+    { "id": "2018", "label": "2018", "status": "final", "ranked": true },
+    { "id": "2019", "label": "2019", "status": "final", "ranked": true },
+    { "id": "2020", "label": "2020", "status": "final", "ranked": true },
+    { "id": "2021", "label": "2021", "status": "final", "ranked": true },
+    { "id": "2022", "label": "2022", "status": "final", "ranked": true },
+    { "id": "2023", "label": "2023", "status": "final", "ranked": true },
+    { "id": "2024", "label": "2024", "status": "final", "ranked": true },
+    { "id": "2025", "label": "2025", "status": "final", "ranked": true },
+    {
+      "id": "2026-ai",
+      "label": "2026 AI",
+      "shortLabel": "2026*",
+      "status": "preliminary",
+      "ranked": false,
+      "provenance": "AI-collected",
+      "asOf": "2026-08-08",
+      "contentStart": "<!-- archived-references:start -->",
+      "contentEnd": "<!-- archived-references:end -->",
+      "notice": "AI-collected research leads through 8 August 2026. Unranked, incomplete, not community-vetted, and subject to change."
+    }
+  ]
+}

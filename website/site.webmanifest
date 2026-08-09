@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "Web Hacking Techniques Index",
+  "short_name": "Web Hack List",
+  "description": "Two decades of web hacking research, preserved articles, nominations and annual Top 10 results.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0c0e15",
+  "theme_color": "#0c0e15",
+  "icons": [
+    {
+      "src": "brand-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
