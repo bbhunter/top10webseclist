@@ -1,0 +1,19 @@
+# Python bytecode and test caches from local runs
+__pycache__/
+*.pyc
+.pytest_cache/
+NUL
+dist/
+_site/
+.tmp/
+
+# Workspace copy of the reference content store. The durable store lives at
+# WEBSEC_REFS_STORE; this folder is a convenience copy and is re-derivable.
+tools/references/cache/
+
+# Transient per-session state from local agent runs.
+.claude/scheduled_tasks.lock
+
+# The repo root has no HTML content; anything appearing there is a stray page
+# download from a sweep or capture session and must not be published.
+/*.html

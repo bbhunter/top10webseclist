@@ -1,0 +1,141 @@
+{
+  "_comment": [
+    "Hand-edited policy for the reference archive tool. Generated state lives in",
+    "the archive manifest, never here, so a re-run never conflicts with a human",
+    "decision. A fork changes 'depth' and re-renders offline.",
+    "",
+    "This repository is the 'Top 10 Web Hacking Techniques' reading list. Each",
+    "year is its own Markdown list (2006.md .. 2025.md), and the archive is",
+    "organised the same way: a reference is filed under the year list that cites",
+    "it, in archived-references/md/<year>/ with its PDF in",
+    "archived-references/pdf/<year>/. See tools/references/refslib/collections.py."
+  ],
+  "archive_dir": "archived-references",
+  "layout": {
+    "_comment": [
+      "The two format trees under archive_dir, split so the binary PDFs stay",
+      "out of the Markdown tree: archived-references/md/<year>/<slug>.md and",
+      "archived-references/pdf/<year>/<slug>.pdf. The reports about the archive",
+      "(README.md, needs-work.md, excluded.md, store-gaps.md, manifest.json,",
+      "history.jsonl)",
+      "live at the archive_dir root, beside both trees."
+    ],
+    "md_tree": "md",
+    "pdf_tree": "pdf"
+  },
+  "collections": {
+    "_comment": [
+      "The archive is grouped by the year LIST that cites a reference, derived",
+      "from the citing file name (2016-17.md -> 2016-17). A reference cited by",
+      "more than one year is filed under the first citation. Anything cited only",
+      "outside a year list falls back to 'misc'."
+    ],
+    "pattern": "^(?P<name>\\d{4}(?:-\\d{2}|-ai)?)\\.md$",
+    "fallback": "misc"
+  },
+  "preliminary_documents": {
+    "_comment": [
+      "Tracked YYYY-ai.md files are detected automatically. Only citations",
+      "between these exact markers are harvested; scoring, watchlists and",
+      "dropped candidates remain source notes rather than archive records."
+    ],
+    "pattern": "^\\d{4}-ai\\.md$",
+    "start_marker": "<!-- archived-references:start -->",
+    "end_marker": "<!-- archived-references:end -->"
+  },
+  "curated_documents": [
+    "2006.md", "2007.md", "2008.md", "2009.md", "2010.md", "2011.md",
+    "2012.md", "2013.md", "2014.md", "2015.md", "2016-17.md", "2018.md",
+    "2019.md", "2020.md", "2021.md", "2022.md", "2023.md", "2024.md", "2025.md"
+  ],
+  "required_documents": [
+    "2006.md",
+    "2025.md"
+  ],
+  "skip_paths": {
+    "_comment": [
+      "Tracked paths whose URLs are NOT resources the year lists point at.",
+      "This is a path prefix list, not an exclusion RULE: nothing here is a",
+      "judgement about a URL, only about which files carry the reading list.",
+      "",
+      "README.md is navigation: it links to each year list and to the original",
+      "nomination/results pages, which are the index rather than the techniques.",
+      "archived-references/ is the archive's OWN OUTPUT; harvesting it would treat",
+      "every link inside an archived article as a citation of ours, which is how a",
+      "few hundred references silently become thousands. references-md/ is that",
+      "output tree's PREVIOUS name, kept as a guard so a stale checkout of it is",
+      "never harvested. tools/ and .claude/ are this repository's own tooling,",
+      "not sources the lists cite."
+    ],
+    "prefixes": [
+      ".claude/",
+      "archived-references/",
+      "references-md/",
+      "tools/",
+      "original-listings/",
+      "README.md"
+    ]
+  },
+  "depth": "full",
+  "media_policy": {
+    "_comment": [
+      "Store binaries here. Many entries on these lists are PDFs, slide decks or",
+      "conference papers, and the whole point of the archive is that a technique",
+      "survives its source going offline - so the PDF/paper IS downloaded and",
+      "converted to Markdown like any other document.",
+      "",
+      "Video is the one kind still not mirrored: the useful part of a talk is its",
+      "metadata, description and captions (see the 'transcripts' command), not the",
+      "media file. Images are read at their own URL, not mirrored (link-only).",
+      "",
+      "EXECUTABLES AND ARCHIVES ARE NEVER DOWNLOADED, and that is not a setting:",
+      "the list lives in refslib/kinds.py (EXECUTABLE_SUFFIXES) and acquisition",
+      "refuses the kind before any route runs. A program is not a document - the",
+      "technique lives in the write-up - so fetching one gains nothing and puts an",
+      "executable on the maintainer's disk and in the content store. It covers",
+      "every OS, formats that only look harmless (.chm is a compiled, scriptable",
+      "Windows binary), and archives, whose contents are unknown until unpacked."
+    ],
+    "store_binaries": true,
+    "binary_kinds": [
+      "video",
+      "image"
+    ]
+  },
+  "pdf": {
+    "_comment": [
+      "The 'pdf' command makes a PDF copy of each archived Markdown file, so a",
+      "reference can be read or shared as a self-contained document. It renders",
+      "OUR archived Markdown (offline, no third-party page scripts) to HTML and",
+      "prints it with headless Chromium in the locked-down Docker toolbox.",
+      "No host browser is discovered or used, and the print container has no network.",
+      "PDFs go in the layout.pdf_tree tree, parallel to the Markdown tree.",
+      "",
+      "skip_kinds: kinds never turned into a PDF. A talk is a video, not a page,",
+      "and a source that is ALREADY a PDF is copied rather than re-rendered."
+    ],
+    "skip_kinds": [
+      "video"
+    ]
+  },
+  "ledger": {
+    "_comment": "Optional and read-only. No curation ledger exists for this repo, so every URL is probed. Left here so a future ledger can be pointed at without a schema change.",
+    "path": "",
+    "freshness_days": 30
+  },
+  "host_aliases": {
+    "_comment": [
+      "Only genuine host RENAMES belong here, as \"old.example\": \"new.example\".",
+      "Two hosts publishing the same article are a content-dedup question, not a",
+      "URL identity one. Empty because no host cited by these year lists has been",
+      "renamed; add an entry when one is, so both spellings resolve to one entry."
+    ]
+  },
+  "_locale_stripped_hosts_comment": [
+    "Hosts that serve one document under a locale prefix (/en-us/, /fr-fr/) where",
+    "the prefix is not part of its identity. A flat list of host names - it is",
+    "read straight into a set, so nothing but hostnames may go in it. Empty",
+    "because no host cited by these year lists does this."
+  ],
+  "locale_stripped_hosts": []
+}

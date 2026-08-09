@@ -1,0 +1,8 @@
+# Python bytecode from a local run. capture_pdf.py is imported by the test suite,
+# so this appears as soon as the tests are run.
+__pycache__/
+*.pyc
+
+# Scratch output from trying a capture somewhere other than original-listings/,
+# e.g. `capture_pdf.py run --outdir tools/scratch`.
+scratch/

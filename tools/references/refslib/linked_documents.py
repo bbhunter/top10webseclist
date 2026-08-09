@@ -1,0 +1,95 @@
+"""Find the document a research landing page explicitly points at.
+
+A citation sometimes names the author's publication page rather than the paper
+itself. The page can be only a title and three labelled links -- ``PDF``,
+``Code`` and ``Slides`` -- so ordinary article extraction quite correctly
+rejects it as too short. In that case the labelled PDF is the document; the
+other labelled research artefacts remain useful provenance.
+
+This module is deliberately conservative. It follows only an unambiguous,
+explicitly labelled PDF and never guesses from a nearby CV or an unrelated
+download. Acquisition still validates and converts the fetched bytes.
+"""
+
+import html
+import re
+from html.parser import HTMLParser
+from urllib.parse import urljoin, urlsplit
+
+
+PRIMARY_LABELS = frozenset((
+    "pdf", "paper", "paper pdf", "full paper", "full text", "download",
+    "download paper", "view publication", "read paper", "publication",
+    "preprint", "manuscript",
+))
+SLIDE_MARKERS = ("slide", "slides", "deck", "presentation", "talk")
+CODE_LABELS = frozenset(("code", "source", "source code", "repository", "github"))
+
+
+class LinkedDocuments(object):
+    def __init__(self, primary="", companions=()):
+        self.primary = primary
+        self.companions = list(companions)
+
+
+class _Anchors(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.current = None
+        self.links = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag.lower() == "a":
+            self.current = [dict(attrs).get("href") or "", []]
+
+    def handle_data(self, data):
+        if self.current is not None:
+            self.current[1].append(data)
+
+    def handle_endtag(self, tag):
+        if tag.lower() == "a" and self.current is not None:
+            self.links.append((self.current[0], "".join(self.current[1])))
+            self.current = None
+
+
+def discover(markup, base_url=""):
+    """Return one explicit primary PDF and its labelled companion artefacts.
+
+    A result without ``primary`` means the page did not provide enough evidence
+    to follow anything automatically.
+    """
+    parser = _Anchors()
+    try:
+        parser.feed(markup or "")
+    except Exception:
+        return LinkedDocuments()
+
+    primary = []
+    companions = []
+    seen = set()
+    for href, anchor_text in parser.links:
+        url = urljoin(base_url, html.unescape(href).strip())
+        parts = urlsplit(url)
+        if parts.scheme not in ("http", "https") or not parts.netloc:
+            continue
+        label = _label(anchor_text)
+        lowered_url = url.lower()
+        is_pdf = parts.path.lower().endswith(".pdf")
+        slides = any(marker in label or marker in lowered_url
+                     for marker in SLIDE_MARKERS)
+        github = (parts.hostname or "").lower() in ("github.com", "www.github.com")
+        is_code = label in CODE_LABELS or (github and "code" in label)
+
+        if is_pdf and label in PRIMARY_LABELS and not slides:
+            primary.append(url)
+        if ((is_pdf and (label in PRIMARY_LABELS or slides)) or
+                (github and is_code)) and url not in seen:
+            companions.append(url)
+            seen.add(url)
+
+    choices = list(dict.fromkeys(primary))
+    return LinkedDocuments(choices[0] if len(choices) == 1 else "", companions)
+
+
+def _label(text):
+    return re.sub(r"\s+", " ", html.unescape(text or "")).strip().lower()

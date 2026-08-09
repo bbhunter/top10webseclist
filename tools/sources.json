@@ -1,0 +1,275 @@
+{
+  "_comment": [
+    "Source pages archived to original-listings/ by tools/capture_pdf.py.",
+    "kind=nominees -> the full list of everything nominated that year.",
+    "kind=top10    -> the post announcing the final selected top ten.",
+    "kind=voting / finalists -> supplementary intermediate stages of the process.",
+    "'url' is what we actually render (may be a web.archive.org replay URL);",
+    "'original_url' records the dead original when they differ.",
+    "'expect' strings must appear in the rendered PDF's extracted text, or",
+    "capture_pdf.py flags the file as SUSPECT."
+  ],
+  "entries": [
+    {
+      "year": "2025",
+      "kind": "nominees",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2025-nominations-open",
+      "note": "PortSwigger call for nominations; full nominee list with summaries.",
+      "expect": ["nomination", "2025"]
+    },
+    {
+      "year": "2025",
+      "kind": "top10",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2025",
+      "note": "Final top 10 of 2025, published Feb 2026. #1 Successful Errors.",
+      "expect": ["Successful Errors", "Parser Differentials"]
+    },
+    {
+      "year": "2024",
+      "kind": "nominees",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2024-nominations-open",
+      "note": "Largest nominee list to date (~100+ entries with summaries).",
+      "expect": ["nomination", "2024"]
+    },
+    {
+      "year": "2024",
+      "kind": "top10",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2024",
+      "note": "Final top 10 of 2024. #1 Confusion Attacks (Orange Tsai).",
+      "expect": ["Confusion Attacks"]
+    },
+    {
+      "year": "2023",
+      "kind": "nominees",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2023-nominations-open",
+      "note": "Full nominee list for 2023.",
+      "expect": ["nomination", "2023"]
+    },
+    {
+      "year": "2023",
+      "kind": "top10",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2023",
+      "note": "Final top 10 of 2023. #1 Smashing the state machine.",
+      "expect": ["state machine"]
+    },
+    {
+      "year": "2022",
+      "kind": "nominees",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2022-nominations-open",
+      "note": "Full nominee list for 2022.",
+      "expect": ["nomination", "2022"]
+    },
+    {
+      "year": "2022",
+      "kind": "top10",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2022",
+      "note": "Final top 10 of 2022. #1 Account hijacking using dirty dancing.",
+      "expect": ["dirty dancing"]
+    },
+    {
+      "year": "2021",
+      "kind": "nominees",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2021-nominations-open",
+      "note": "Full nominee list for 2021.",
+      "expect": ["nomination", "2021"]
+    },
+    {
+      "year": "2021",
+      "kind": "top10",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2021",
+      "note": "Final top 10 of 2021. #1 Dependency Confusion.",
+      "expect": ["Dependency Confusion"]
+    },
+    {
+      "year": "2020",
+      "kind": "nominees",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2020-nominations-open",
+      "note": "Full nominee list for 2020 (~54 entries).",
+      "expect": ["nomination", "2020"]
+    },
+    {
+      "year": "2020",
+      "kind": "top10",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2020",
+      "note": "Final top 10 of 2020. #1 H2C Smuggling.",
+      "expect": ["smuggling"]
+    },
+    {
+      "year": "2019",
+      "kind": "nominees",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2019-nominations-open",
+      "note": "Full nominee list for 2019 (~51 entries).",
+      "expect": ["nomination", "2019"]
+    },
+    {
+      "year": "2019",
+      "kind": "top10",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2019",
+      "note": "Final top 10 of 2019. #1 Cached and Confused (web cache deception).",
+      "expect": ["Cached and Confused"]
+    },
+    {
+      "year": "2018",
+      "kind": "nominees",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2018-nominations-open",
+      "note": "Full nominee list for 2018 (59 nominations).",
+      "expect": ["nomination", "2018"]
+    },
+    {
+      "year": "2018",
+      "kind": "top10",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2018",
+      "note": "Final top 10 of 2018. #1 Breaking Parser Logic (Orange Tsai).",
+      "expect": ["Parser Logic"]
+    },
+    {
+      "year": "2016-17",
+      "kind": "nominees",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2017-nominations-open",
+      "note": "PortSwigger revived the series for 2017 and folded 2016 in; this nominations post is the fullest nominee list and invited 2016 research too. No separate 2016 cycle ever ran.",
+      "expect": ["nomination"]
+    },
+    {
+      "year": "2016-17",
+      "kind": "voting",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2017-voting-open",
+      "note": "Supplementary: the curated 36-technique ballot. 2017 is the only year with a public voting-open page (later years used closed polls that no longer render candidates).",
+      "expect": ["vot"]
+    },
+    {
+      "year": "2016-17",
+      "kind": "top10",
+      "url": "https://portswigger.net/research/top-10-web-hacking-techniques-of-2017",
+      "note": "Final top 10 of 2017 (and 2016). #1 A New Era of SSRF (Orange Tsai).",
+      "expect": ["SSRF"]
+    },
+    {
+      "year": "2015",
+      "kind": "nominees-and-top10",
+      "url": "https://web.archive.org/web/20171225140648/https://www.whitehatsec.com/blog/top-10-web-hacking-techniques-of-2015/",
+      "original_url": "https://www.whitehatsec.com/blog/top-10-web-hacking-techniques-of-2015/",
+      "note": "WhiteHat ran 2012-2015 as a single living post updated in place through every phase, so one page holds the complete nominee list, the Final 15, and the Top 10. Snapshot chosen deliberately: the popular 20160409042357 snapshot predates the results and stops at the Final 15. #1 FREAK.",
+      "expect": ["FREAK", "Current List of 2015 Submissions", "Final 15"]
+    },
+    {
+      "year": "2014",
+      "kind": "nominees-and-top10",
+      "url": "https://web.archive.org/web/20160319055228/https://www.whitehatsec.com/blog/top-10-web-hacking-techniques-of-2014/",
+      "original_url": "https://www.whitehatsec.com/blog/top-10-web-hacking-techniques-of-2014/",
+      "note": "Single living post: 46 nominees plus the Final 15 and the Top 10 (added in the '3/19' update). #1 Heartbleed.",
+      "expect": ["Heartbleed", "2014", "Final 15"]
+    },
+    {
+      "year": "2013",
+      "kind": "nominees-and-top10",
+      "url": "https://web.archive.org/web/20160312115418/https://www.whitehatsec.com/blog/top-10-web-hacking-techniques-2013/",
+      "original_url": "https://www.whitehatsec.com/blog/top-10-web-hacking-techniques-2013/",
+      "note": "Single living post: the complete 2013 nominee list plus the Final 15 and the Top 10. #1 Mutation XSS.",
+      "expect": ["Complete 2013 List", "Final 15"]
+    },
+    {
+      "year": "2012",
+      "kind": "nominees-and-top10",
+      "url": "https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/top-ten-web-hacking-techniques-of-2012/",
+      "original_url": "https://www.whitehatsec.com/blog/top-ten-web-hacking-techniques-of-2012/",
+      "note": "Single living post: all 56 nominees plus honourable mentions and the Top 10. Snapshot chosen deliberately: 20121209035519 is nominations-stage only. #1 CRIME.",
+      "expect": ["CRIME", "Complete 2012 List"]
+    },
+    {
+      "year": "2011",
+      "kind": "nominees",
+      "url": "https://web.archive.org/web/20170831160914/https://www.whitehatsec.com/blog/vote-now-top-ten-web-hacking-techniques-of-2011/",
+      "original_url": "https://www.whitehatsec.com/blog/vote-now-top-ten-web-hacking-techniques-of-2011/",
+      "note": "'The Big List' of all 51 nominees for 2011 (the page also grew to include the Final 15 and the Top Ten).",
+      "expect": ["Big List", "2011"]
+    },
+    {
+      "year": "2011",
+      "kind": "top10",
+      "url": "https://web.archive.org/web/20150109120123/https://www.whitehatsec.com/resource/grossmanarchives/12grossmanarchives/022112topten2011.html",
+      "original_url": "https://www.whitehatsec.com/resource/grossmanarchives/12grossmanarchives/022112topten2011.html",
+      "note": "2011 is the one WhiteHat-era year with a distinct results page (Feb 2012). #1 BEAST.",
+      "expect": ["BEAST", "2011"]
+    },
+    {
+      "year": "2010",
+      "kind": "nominees",
+      "url": "https://blog.jeremiahgrossman.com/2010/11/calling-all-security-researchers-submit.html",
+      "original_url": "http://jeremiahgrossman.blogspot.com/2010/11/calling-all-security-researchers-submit.html",
+      "note": "Nov 2010 call for submissions; 69 numbered nominees. (The Jan 2011 'Vote Now' post contains no list.)",
+      "expect": ["2010"]
+    },
+    {
+      "year": "2010",
+      "kind": "finalists",
+      "url": "https://blog.jeremiahgrossman.com/2011/01/final-fifteen-web-hacking-techniques.html",
+      "original_url": "http://jeremiahgrossman.blogspot.com/2011/01/final-fifteen-web-hacking-techniques.html",
+      "note": "Supplementary: the 15 finalists that went to the judging panel. Unique to 2010.",
+      "expect": ["fifteen"]
+    },
+    {
+      "year": "2010",
+      "kind": "top10",
+      "url": "https://blog.jeremiahgrossman.com/2011/01/top-ten-web-hacking-techniques-of-2010.html",
+      "original_url": "http://jeremiahgrossman.blogspot.com/2011/01/top-ten-web-hacking-techniques-of-2010.html",
+      "note": "Final top 10 of 2010 (Jan 2011); also embeds the complete 69-entry list.",
+      "expect": ["2010"]
+    },
+    {
+      "year": "2009",
+      "kind": "nominees",
+      "url": "https://blog.jeremiahgrossman.com/2009/12/attention-security-researchers-submit.html",
+      "original_url": "http://jeremiahgrossman.blogspot.com/2009/12/attention-security-researchers-submit.html",
+      "note": "Dec 2009 call for submissions; master list of ~82 candidates.",
+      "expect": ["2009"]
+    },
+    {
+      "year": "2009",
+      "kind": "top10",
+      "url": "https://blog.jeremiahgrossman.com/2010/01/top-ten-web-hacking-techniques-of-2009.html",
+      "original_url": "http://jeremiahgrossman.blogspot.com/2010/01/top-ten-web-hacking-techniques-of-2009.html",
+      "note": "Final top 10 of 2009 (Jan 2010); also embeds the complete 82-entry list.",
+      "expect": ["2009"]
+    },
+    {
+      "year": "2008",
+      "kind": "nominees",
+      "url": "https://blog.jeremiahgrossman.com/2009/01/calling-all-researchers-send-in-top-web.html",
+      "original_url": "http://jeremiahgrossman.blogspot.com/2009/01/calling-all-researchers-send-in-top-web.html",
+      "note": "Jan 2009 call for researchers; numbered living list of ~70 candidates.",
+      "expect": ["2008"]
+    },
+    {
+      "year": "2008",
+      "kind": "top10",
+      "url": "https://blog.jeremiahgrossman.com/2009/02/top-ten-web-hacking-techniques-of-2008.html",
+      "original_url": "http://jeremiahgrossman.blogspot.com/2009/02/top-ten-web-hacking-techniques-of-2008.html",
+      "note": "Final top 10 of 2008 (Feb 2009); also embeds the complete 70-entry list.",
+      "expect": ["2008"]
+    },
+    {
+      "year": "2007",
+      "kind": "nominees",
+      "url": "https://blog.jeremiahgrossman.com/2008/01/polls-are-open-top-10-web-hacks-of-2007.html",
+      "original_url": "http://jeremiahgrossman.blogspot.com/2008/01/polls-are-open-top-10-web-hacks-of-2007.html",
+      "note": "Jan 2008 'The Polls are Open'; the full 80+ nominee roster.",
+      "expect": ["2007"]
+    },
+    {
+      "year": "2007",
+      "kind": "top10",
+      "url": "https://blog.jeremiahgrossman.com/2008/01/top-ten-web-hacks-of-2007-official.html",
+      "original_url": "http://jeremiahgrossman.blogspot.com/2008/01/top-ten-web-hacks-of-2007-official.html",
+      "note": "Final top 10 of 2007 (Jan 2008); also embeds 'The Big List' of ~80.",
+      "expect": ["2007"]
+    },
+    {
+      "year": "2006",
+      "kind": "nominees-and-top10",
+      "url": "https://blog.jeremiahgrossman.com/2006/12/top-10-web-hacks-of-2006.html",
+      "original_url": "http://jeremiahgrossman.blogspot.com/2006/12/top-10-web-hacks-of-2006.html",
+      "note": "2006 had no separate nominations post: this single Dec 2006 post carries the ranked top 10, honourable mentions, and the full candidate list inline. One file therefore serves both purposes.",
+      "expect": ["2006"]
+    }
+  ]
+}

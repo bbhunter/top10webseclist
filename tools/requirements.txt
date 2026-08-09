@@ -1,0 +1,10 @@
+# Dependencies for tools/capture_pdf.py.
+#
+# The capture itself needs nothing but Python and a Chrome, Chromium or Edge
+# install: the browser is driven over the DevTools Protocol by
+# tools/references/refslib, which speaks WebSocket using only the standard
+# library. pypdf is what reads a finished PDF back, so `verify` can count pages
+# and assert that the expected text is really in there.
+#
+#   pip install -r tools/requirements.txt
+pypdf>=4.0

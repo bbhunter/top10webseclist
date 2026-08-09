@@ -1,0 +1,3 @@
+# Keep CLAUDE.md as the shared repository-instructions source for Claude and
+# Codex. Codex consults this fallback when no AGENTS.md exists at this level.
+project_doc_fallback_filenames = ["CLAUDE.md"]

@@ -1,0 +1,580 @@
+{
+  "_comment": [
+    "Hand-curated recovery policy, one entry per URL. Nothing in this file is",
+    "written by the tool, and no fetched page can add to it: a source that asks",
+    "to be read from somewhere else is content, not configuration.",
+    "",
+    "canonical_sources: a publisher's current index/sitemap the resolver may",
+    "  search before asking an archive. A migration by the author is not a mirror.",
+    "author_copies: material supplied by the author. Import records provenance",
+    "  and a hash; the local path is never stored or published.",
+    "mirror_sources: an independent republication, used only after canonical.",
+    "urls: per-URL pins. 'depth' pins one reference lighter than the repository",
+    "  default; 'snapshot' pins one exact capture; 'canonical' pins the current",
+    "  location for a page whose migration the maintainer verified.",
+    "decisions: per-URL judgement about whether the archive keeps a document at",
+    "  all. Keyed by URL. {outcome: archive|skip, class, reason}. A rule never",
+    "  overwrites one of these, and a skip is not fetched again: the reason is",
+    "  what the next run reads instead. Use it for the two things no rule can",
+    "  safely decide - a page that restates a source already archived, and a",
+    "  tool's usage page with no technique in it.",
+    "  An entry may also carry 'title'. The probe records what the page called",
+    "  itself, so a page that answered with a bot check is archived under the",
+    "  wall's title; stating the real one corrects the heading, the frontmatter",
+    "  and the file name. Only a human can know it, which is why it lives here."
+  ],
+  "canonical_sources": [],
+  "author_copies": [],
+  "mirror_sources": [],
+  "urls": {},
+  "decisions": {
+    "https://aspectsecurity.com/tools/javasnoop": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "JavaSnoop",
+      "reason": "The live domain served a GoDaddy sale page. A near-publication Wayback capture recovered the cited project page; the curated citation title replaces the stale parked-domain heading and file name."
+    },
+    "https://gosecure.net/blog/2023/06/21/aws-waf-clients-left-vulnerable-to-sql-injection-due-to-unorthodox-mssql-design-choice": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "AWS WAF Clients Left Vulnerable to SQL Injection Due to Unorthodox MSSQL Design Choice",
+      "reason": "The live migration served GoSecure's generic managed-services page. A near-publication Wayback capture recovered the article, and this title from the curated citation restores its heading and file name."
+    },
+    "https://i8jesus.com/?p=10": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "HTML/CSS Injections - Primitive Malicious Code",
+      "reason": "The live domain served a HugeDomains sale page. A 2008 Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name."
+    },
+    "https://i8jesus.com/?p=13": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Same Origin Bypassing Using Image Dimensions",
+      "reason": "The live domain served a HugeDomains sale page. A 2008 Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name."
+    },
+    "https://i8jesus.com/?p=37": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Browser Scheme and Slash Quirks",
+      "reason": "The live domain served a HugeDomains sale page. A near-publication Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name."
+    },
+    "https://i8jesus.com/?p=48": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Forget Sidejacking, Clickjacking, and Carjacking: Enter Formjacking",
+      "reason": "The live domain served a HugeDomains sale page. A near-publication Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name."
+    },
+    "https://i8jesus.com/?p=75": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Cross-protocol XSS with non-standard service ports",
+      "reason": "The live domain and one replay served a HugeDomains sale page. An alternate 2009 Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name."
+    },
+    "https://blog.quaji.com/2009/12/out-of-context-information-disclosure.html": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Cross-Site Identification (XSid)",
+      "reason": "The live domain and one replay served a HugeDomains sale page. An alternate 2010 Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name."
+    },
+    "https://doi.org/10.1016/j.cose.2015.07.004": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Man-in-the-Browser-Cache: Persisting HTTPS Attacks via Browser Cache Poisoning",
+      "reason": "Docker Chromium captured only a generic ScienceDirect landing page. The complete publisher PDF was supplied by hand; the curated citation supplies the paper title and replaces the stale landing-page heading and slug."
+    },
+    "https://doi.org/10.1109/SP.2019.00025": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Measuring and Analyzing Search Engine Poisoning of Linguistic Collisions",
+      "reason": "IEEE Xplore served an Unable to Load Page response. The complete publisher PDF was supplied by hand; the curated citation supplies the exact paper title and replaces the faulty wall-derived heading and slug."
+    },
+    "https://doi.org/10.1109/SP.2019.00049": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "PhishFarm: A Scalable Framework for Measuring the Effectiveness of Evasion Techniques against Browser Phishing Blacklists",
+      "reason": "IEEE Xplore served an Unable to Load Page response. Preserve a complete paper or author copy under the exact title from the curated citation rather than filing the publisher wall as the research."
+    },
+    "https://doi.org/10.1109/SP61157.2025.00029": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "RaceDB: Detecting Request Race Vulnerabilities in Database-Backed Web Applications",
+      "reason": "IEEE Xplore served an Unable to Load Page response. The complete publisher PDF was supplied by hand; the curated citation supplies the exact paper title and replaces the faulty wall-derived heading and slug."
+    },
+    "https://ieeexplore.ieee.org/document/8418635/": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Study and Mitigation of Origin Stripping Vulnerabilities in Hybrid-postMessage Enabled Mobile Applications",
+      "reason": "IEEE Xplore served an Unable to Load Page response. Preserve a complete paper or author copy under the exact title from the curated citation rather than filing the publisher wall as the research."
+    },
+    "https://ieeexplore.ieee.org/document/8835223": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Postcards from the Post-HTTP World: Amplification of HTTPS Vulnerabilities in the Web Ecosystem",
+      "reason": "IEEE Xplore served an Unable to Load Page response. Preserve a complete paper or author copy under the exact title from the curated citation rather than filing the publisher wall as the research."
+    },
+    "https://ui-redressing.mniemietz.de/": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "UI Redressing: Attacks and Countermeasures Revisited",
+      "reason": "A publication-era Wayback capture recovered the complete PDF advertised by the cited landing page. The curated citation supplies the paper title because the replay metadata was filed under a browser error-page heading."
+    },
+    "https://diafygi.github.io/webrtc-ips": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "WebRTC IP Address Leaks",
+      "reason": "This citation is intentionally a short live demonstration: it states the STUN-request behavior and displays the discovered local, public, and IPv6 addresses. The separately cited and archived GitHub repository contains the complete annotated implementation."
+    },
+    "https://tinyurl.com/5w6koqj": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Close Encounters of the Third Kind: Client-Side JavaScript Vulnerabilities",
+      "reason": "The short URL now reaches IBM's homepage, but its redirect metadata and a contemporary IBM publication identify the original RAW14252USEN PDF. A dated Wayback capture recovered that complete paper; the curated citation supplies its exact title."
+    },
+    "https://fscked.org/blog/fully-automated-active-https-cookie-hijacking": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Automated HTTPS Cookie Hijacking",
+      "reason": "The live domain served an unrelated Korean casino takeover. A publication-era Wayback capture recovered Mike Perry's cited 2008 disclosure; the recovered article supplies its title and replaces the takeover-derived file name."
+    },
+    "https://publications.cispa.saarland/3164": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "PMForce: Systematically Analyzing PostMessage Handlers at Scale",
+      "reason": "The migrated live URL served the generic CISPA repository browser. A dated Wayback capture recovered the publication record, and the curated citation supplies its exact title and file name."
+    },
+    "https://publications.cispa.saarland/538": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "jÄk: Using Dynamic Analysis to Crawl and Test Modern Web Applications",
+      "reason": "The migrated live URL served the generic CISPA repository browser. A dated Wayback capture recovered the publication record, and the curated citation supplies its exact title and file name."
+    },
+    "https://sectheory.com/file-sharing.htm": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Building Subversive File Sharing With Client Side Applications",
+      "reason": "The live domain redirected to an unrelated casino takeover. A 2008 Wayback capture recovered the article; the curated citation title replaces the stale takeover-derived file name."
+    },
+    "https://sectheory.com/intranet-hacking.htm": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Hacking Intranets Through Web Interfaces",
+      "reason": "The live domain redirected to an unrelated casino takeover. A 2008 Wayback capture recovered the article; the curated citation title replaces the stale takeover-derived file name."
+    },
+    "https://sectheory.com/rfc1918-security-issues.htm": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "RFC1918 Caching Security Issues",
+      "reason": "The live domain redirected to an unrelated casino takeover. A 2009 Wayback capture recovered the article; the curated citation title replaces the stale takeover-derived file name."
+    },
+    "https://blog.mantrainfosec.com/blog/18/prepared-statements-prepared-to-be-vulnerable": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Prepared Statements? Prepared to Be Vulnerable.",
+      "reason": "The page's <title> is the site name 'Mantra Information Security', so the probe filed the article under it; the real headline, by Balazs Bucsay, published 2025-11-19, is stated here so the heading, frontmatter and file name follow the article."
+    },
+    "http://web.archive.org/web/20160507023636/https://www.youtube.com/watch?v=ERJmkLxGRC0": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The demo video is retained in the 2013 list, but the same Black Hat research is archived from the authors' Million Browser Botnet paper at https://media.blackhat.com/us-13/us-13-Grossman-Million-Browser-Botnet.pdf."
+    },
+    "https://mcafee.com/us/resources/white-papers/foundstone/wp-bypassing-captchas.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "reason": "The 2012 list cites this whitepaper as a bare footnote link, so the citation's own text is '1' and the PDF is image-only, leaving no title to read. Taken from the paper's cover page.",
+      "title": "Bypassing CAPTCHAs by Impersonating CAPTCHA Providers"
+    },
+    "https://soroush.me/blog/aspxerrorpath-in-url-technique-in-scanning-a-net-web-application": {
+      "outcome": "archive",
+      "class": "research",
+      "reason": "Verified live on 2026-08-06 as the cited article. Its discussion of custom error handling contains the phrase 'page not found', which is research text rather than evidence that the server returned a not-found page."
+    },
+    "https://www.youtube.com/TheKn0ck#p/a/u/1/r-kgKNspqjQ": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The exploitation video is retained in the 2010 list, but its written disclosure is archived from Rohit Bansal's 25 November 2010 null mailing-list post at https://groups.google.com/g/null-co-in/c/l4-fm9IHtJI."
+    },
+    "https://www.youtube.com/watch?v=-DackF8HsIE": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Session Puzzling demo is retained in the 2011 list, but the full research is archived from Shay Chen's May 2011 whitepaper at https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Session%20Puzzles%20-%20Indirect%20Application%20Attack%20Vectors%20-%20May%202011%20-%20Whitepaper.pdf."
+    },
+    "https://www.youtube.com/watch?v=HeP54b52IeQ": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Session Puzzling demo is retained in the 2011 list, but the full research is archived from Shay Chen's May 2011 whitepaper at https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Session%20Puzzles%20-%20Indirect%20Application%20Attack%20Vectors%20-%20May%202011%20-%20Whitepaper.pdf."
+    },
+    "https://www.youtube.com/watch?v=iTcOooHbgog": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Session Puzzling demo is retained in the 2011 list, but the full research is archived from Shay Chen's May 2011 whitepaper at https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Session%20Puzzles%20-%20Indirect%20Application%20Attack%20Vectors%20-%20May%202011%20-%20Whitepaper.pdf."
+    },
+    "https://www.youtube.com/watch?v=ikIyInm0wAg": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Session Puzzling demo is retained in the 2011 list, but the full research is archived from Shay Chen's May 2011 whitepaper at https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Session%20Puzzles%20-%20Indirect%20Application%20Attack%20Vectors%20-%20May%202011%20-%20Whitepaper.pdf."
+    },
+    "https://www.youtube.com/watch?v=bt0Qh9c59_c": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The HTTPS cache-injection demo is retained in the 2010 list, but the same research is archived from the authors' Bad Memories whitepaper at https://media.blackhat.com/bh-us-10/whitepapers/Bursztein_Gourdin_Rydstedt/BlackHat-USA-2010-Bursztein-Bad-Memories-wp.pdf."
+    },
+    "https://www.youtube.com/watch?v=8GC7lqjJU6s": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The TapJacking demo is retained in the 2010 list, but the same research is archived from the authors' Bad Memories whitepaper at https://media.blackhat.com/bh-us-10/whitepapers/Bursztein_Gourdin_Rydstedt/BlackHat-USA-2010-Bursztein-Bad-Memories-wp.pdf."
+    },
+    "https://www.youtube.com/watch?v=-feE0twnCsw": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The WPA attack demo is retained in the 2010 list, but the same research is archived from the authors' Bad Memories whitepaper at https://media.blackhat.com/bh-us-10/whitepapers/Bursztein_Gourdin_Rydstedt/BlackHat-USA-2010-Bursztein-Bad-Memories-wp.pdf."
+    },
+    "https://www.youtube.com/watch?v=woWECWwrsSk": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Temporal Session Race Conditions video is retained in the 2011 list, but the authors' presentation is archived at https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Temporal%20Session%20Race%20Conditions%20%28TSRC%29%20-%20Sept%202011%20-%20Presentation.pptx."
+    },
+    "https://www.youtube.com/watch?v=3k_eJ1bcCro": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Temporal Session Race Conditions video is retained in the 2011 list, but the authors' presentation is archived at https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Temporal%20Session%20Race%20Conditions%20%28TSRC%29%20-%20Sept%202011%20-%20Presentation.pptx."
+    },
+    "https://web.archive.org/web/20170903113359/https://www.youtube.com/watch?v=RxpMPrqnxC0": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Android clickjacking video is retained in the 2012 list, but the contemporary NCSU article about the same research is archived at https://news.ncsu.edu/2012/07/wms-jiang-clickjack/."
+    },
+    "https://www.youtube.com/watch?v=ouBwRZJHmmo": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The XXE file-upload video is retained in the 2015 list, but its written Black Hat presentation is archived at https://www.blackhat.com/docs/webcast/11192015-exploiting-xml-entity-vulnerabilities-in-file-parsing-functionality.pdf."
+    },
+    "https://www.youtube.com/watch?v=bUcd-yibTCE": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The XSLT attack video is retained in the 2015 list, but the authors' Black Hat whitepaper is archived at https://www.blackhat.com/docs/us-15/materials/us-15-Arnaboldi-Abusing-XSLT-For-Practical-Attacks-wp.pdf."
+    },
+    "https://vimeo.com/ondemand/44conlondon2015/142249673": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The asynchronous-vulnerabilities conference video is retained in the 2015 list, but James Kettle's written research is archived at https://portswigger.net/research/hunting-asynchronous-vulnerabilities."
+    },
+    "https://www.youtube.com/watch?v=yEjPIagrB0M": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The BGP hijacking video is retained in the 2015 list, but the author's Black Hat whitepaper is archived at https://www.blackhat.com/docs/us-15/materials/us-15-Gavrichenkov-Breaking-HTTPS-With-BGP-Hijacking-wp.pdf."
+    },
+    "https://www.youtube.com/watch?v=YBu0ZB9xIgw": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The FileCry video is retained in the 2015 list, but the Black Hat paper and slides are archived from https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE-ie-wp.pdf and https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE.pdf."
+    },
+    "https://www.youtube.com/watch?v=T7_DX9lSjlk": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The server-side template injection video is retained in the 2015 list, but the authors' whitepaper is archived at https://portswigger.net/kb/papers/serversidetemplateinjection.pdf."
+    },
+    "https://www.youtube.com/watch?v=X8Scc2nmSh8": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The entropy-management video is retained in the 2015 list, but the Black Hat whitepaper is archived at https://www.blackhat.com/docs/us-15/materials/us-15-Potter-Understanding-And-Managing-Entropy-Usage-wp.pdf."
+    },
+    "https://www.youtube.com/watch?v=ZfKuOdbQt2c": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The reverse-proxy inconsistency video is retained in the 2019 list, but the conference slides are archived at https://speakerdeck.com/greendog/reverse-proxies-and-inconsistency."
+    },
+    "https://www.youtube.com/watch?v=yghiC_U2RaM": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The padding-oracle demonstration video is retained in the 2010 list, but the complete paper is archived from https://www.usenix.org/events/woot10/tech/full_papers/Rizzo.pdf."
+    },
+    "https://www.youtube.com/watch?v=KirTCSAvt9M": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Web Timing Attacks video is retained in the 2015 list, but the Black Hat whitepaper is archived from https://www.blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing-Attacks-Made-Practical-wp.pdf."
+    },
+    "https://www.youtube.com/watch?v=ekUQIVUzDX4": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Bypass Surgery video is retained in the 2015 list, but Matthew Bryant's copy of the Black Hat slides is archived from https://thehackerblog.com/wp-content/uploads/2015/09/Black_Hat_USA_2015-Bypass_Surgery-6Aug2015.pdf."
+    },
+    "https://www.youtube.com/watch?v=kedmtrIEW1k": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The DOM Flow video is retained in the 2015 list, but Ahamed Nafeez's Black Hat slides are archived from https://www.blackhat.com/docs/us-15/materials/us-15-Nafeez-Dom-Flow-Untangling-The-DOM-For-More-Easy-Juicy-Bugs.pdf."
+    },
+    "https://www.youtube.com/watch?v=7y3K83sOnG8": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Winning the Online Banking War video is retained in the 2015 list, but Sean Park's Black Hat whitepaper is archived from https://www.blackhat.com/docs/us-15/materials/us-15-Park-Winning-The-Online-Banking-War-wp.pdf."
+    },
+    "https://www.youtube.com/watch?v=G539NwvpL3I&list=PLpr-xdpM8wG93dG_L9QKs0W1cD-esQEzU&index=23": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The automated XSS detection video is retained in the 2015 list, but Kenneth Belva's complete AppSec USA presentation is archived from https://www.exploit-db.com/docs/english/38468-new-methods-in-automated-xss-detection.pdf."
+    },
+    "https://www.youtube.com/watch?v=ZW2TVOPAbTE": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The CVE-2011-2461 video is retained in the 2015 list, but the TROOPERS 2015 presentation is archived from https://troopers.de/media/filer_public/a5/a3/a5a3a6bf-de72-44fb-910d-5a94910a277e/troopers_2015_-_the_old_is_new_again_cve-2011-2461_is_back.pdf."
+    },
+    "https://youtu.be/p07acPBi-qw": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Script Gadgets video is retained in the 2016-17 list, but the authors' CCS paper is archived from https://raw.githubusercontent.com/google/security-research-pocs/master/script-gadgets/ccs_gadgets.pdf."
+    },
+    "https://www.youtube.com/watch?v=GePBmsNJw6Y": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The PHP unserialization video is retained in the 2018 list, but Sam Thomas's Black Hat whitepaper is archived from https://i.blackhat.com/us-18/Thu-August-9/us-18-Thomas-Its-A-PHP-Unserialization-Vulnerability-Jim-But-Not-As-We-Know-It-wp.pdf."
+    },
+    "https://www.youtube.com/watch?v=mroq9eHFOIU": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Web Cache Deception video is retained in the 2018 list, but Omer Gil's Black Hat whitepaper is archived from https://www.blackhat.com/docs/us-17/wednesday/us-17-Gil-Web-Cache-Deception-Attack-wp.pdf."
+    },
+    "https://www.youtube.com/watch?v=o-tL9ULF0KI": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Owning the Clout video is retained in the 2019 list, but the speakers' DEF CON presentation is archived from https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentations/DEFCON-27-Ben-Sadeghipour-Owning-the-clout-through-SSRF-and-PDF-generators.pdf."
+    },
+    "https://www.youtube.com/watch?v=1IoythC_pIY": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The SSL VPN exploitation video is retained in the 2019 list, but the HITCON presentation is archived from https://hitcon.org/2019/CMT/slide-files/d1_s0_r0_keynote.pdf."
+    },
+    "https://www.youtube.com/watch?v=ppW_soCb6wM": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Site Isolation video is retained in the 2019 list, but Shusuke Suzuki's presentation is archived from https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer."
+    },
+    "https://www.youtube.com/watch?v=WHn-6xHL7mI": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The SAML cloud-hacking video is retained in the 2022 list, but Felix Wilhelm's Hexacon slides are archived from https://2022.hexacon.fr/slides/Hacking-the-Cloud-With-SAML.pdf."
+    },
+    "https://www.youtube.com/watch?v=Olq6XnZ4Pwo": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The ElectroVolt video is retained in the 2022 list, but the authors' Black Hat slides are archived from https://i.blackhat.com/USA-22/Thursday/US-22-Purani-ElectroVolt-Pwning-Popular-Desktop-Apps.pdf."
+    },
+    "https://www.youtube.com/watch?v=Tfg1B8u1yvE": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The protocol-level query-smuggling video is retained in the 2024 list, but Paul Gerste's DEF CON slides are archived from https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf."
+    },
+    "https://www.youtube.com/watch?v=Sm4G6cAHjWM&feature=youtu.be": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Secret Web Hacking Knowledge video is retained in the 2024 list, but Philippe Dourassov's Insomni'hack slides are archived from https://download.scrt.ch/insomnihack/ins24-slides/Secret_web_hacking_knowledge.pdf."
+    },
+    "https://www.youtube.com/watch?v=M_QPvazEii0": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Messenger bug-hunting video is retained in the 2024 list, but the speakers' EkoParty presentation is archived from https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/."
+    },
+    "https://www.youtube.com/watch?v=ETB2w-f3pM4": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Unicode normalization video is retained in the 2025 list, but Ryan and Isabella Barnett's Black Hat slides are archived from https://i.blackhat.com/BH-USA-25/Presentations/USA-25-Barnett-Lost-In-Translation-Exploiting-Unicode-compressed.pdf."
+    },
+    "https://youtu.be/Dq_KVLXzxH8": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Parser Differentials video is retained in the 2025 list, but Joern Schneeweisz's author-hosted slide deck is archived from https://0day.click/parser-diff-talk-oc25/."
+    },
+    "http://polyboy.net/docs/Talks/2011_Bitingthehandthatservesyou_DIMVA.pdf": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The unavailable talk slides are retained in the 2011 list, but the full DIMVA paper cited immediately beside them is archived from http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf."
+    },
+    "https://web.archive.org/web/20160403035045/https://www.whitehatsec.com/blog/hackerkast-14-bonus-round/": {
+      "outcome": "archive",
+      "class": "research",
+      "reason": "Verified capture of the cited article. Its prose explains the Canadian Beacon JavaScript port-scanning technique using the Beacon and Performance APIs; the linked demo is supplementary, not the page's whole content."
+    },
+    "http://lcamtuf.coredump.cx/cachetime/": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The interactive cache-timing proof of concept is retained in the 2011 list, while Michal Zalewski's complete written explanation is archived from https://lcamtuf.blogspot.com/2011/12/css-visited-may-be-bit-overrated.html."
+    },
+    "http://lcamtuf.dione.cc/ffhostname.html": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The original Firefox proof of concept is retained in the 2007 list, while the full disclosure, vendor discussion, and fix history are archived from Mozilla bug 370445 at https://bugzilla.mozilla.org/show_bug.cgi?id=370445."
+    },
+    "http://p42.us/ie8xss/": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The original demonstration page is retained in the 2010 list, while Eduardo Vela Nava and David Lindsay's complete Black Hat Europe paper is archived from an exact PDF republication at https://www.wokb.cz/Hacking%20technique/Abusing%20Internet%20Explorer%208%27s%20XSS%20Filters.pdf."
+    },
+    "https://michaeldaw.org/md-hacks/backdooring-pdf-files": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Backdooring PDF Files",
+      "reason": "Verified exact 2 January 2007 Wayback capture of David Kierznowski's complete 13 September 2006 article; the archived HTML carries a later domain-sale page title outside the article body, so the citation title is authoritative."
+    },
+    "https://michaeldaw.org/md-hacks/csrf-with-msword": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "CSRF with MS Word",
+      "reason": "Verified exact 1 January 2007 Wayback capture of David Kierznowski's complete 24 November 2006 article; the archived HTML carries a later domain-sale page title outside the article body, so the citation title is authoritative."
+    },
+    "https://michaeldaw.org/news/news-030407": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The PoC page is retained beside the complete ProCheckup disclosure in the 2007 list. Its nearest capture is only a short list of exploit links, so the disclosure is the archival source and the PoC is derivative."
+    },
+    "https://securityvulns.ru/Udocumenthtml": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "This malformed companion URL is retained beside the complete Code Execution via XSS disclosure in the 2008 list. It has no Wayback captures and is not an independently recoverable document."
+    },
+    "https://blog.mazinahmed.net/2015/09/evading-all-web-application-firewalls.html": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The short announcement is retained in the 2015 list, while the complete Evading All Web Application Firewalls XSS Filters paper is archived from https://mazinahmed.net/uploads/Evading%20All%20Web-Application%20Firewalls%20XSS%20Filters.pdf."
+    },
+    "https://medium.com/@da/need-a-last-minute-flight-45af88ec8df3": {
+      "outcome": "archive",
+      "class": "research",
+      "reason": "Verified against the live article and its 2016 capture: the original disclosure is intentionally only three short observations plus two proof screenshots, and the archive contains that complete article rather than a truncated extraction."
+    },
+    "http://www.secforce.co.uk/media/tools/socket_attack.zip": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The socket_attack ZIP is a companion demonstration tool retained in the 2008 list. The same entry's complete Abusing PHP Sockets presentation is archived from http://www.secforce.co.uk/media/presentations/OWASP_Abusing_PHP_sockets.pdf, and the recovered SECForce research page documents both artifacts."
+    },
+    "http://www.webappsec.org/lists/websecurity/archive/2009-04/msghtml": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "This is a malformed companion URL beside the complete URL Spoofing vulnerability disclosure. The valid msg00047.html message is archived from its near-publication 10 June 2009 capture."
+    },
+    "https://www.sensepost.com/blog/html": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "This malformed generic SensePost URL is retained as a footnote beside the complete ActiveX Repurposing disclosure, which is archived from the author-linked Carnal0wnage article."
+    },
+    "https://www.sensepost.com/research/reDuh/SensePost_2008.tgz": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The TGZ is the companion reDuh tool package retained in the 2008 list. The author-hosted reDuh research page is independently cited and archived, so the package is not treated as a missing article."
+    },
+    "http://web.archive.org/web/20160507023636/https://www.hackinparis.com/talk-mario-heiderich": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The conference programme page is retained in the 2013 list, while the complete mXSS Attacks paper by Mario Heiderich and coauthors is archived from the author's Cure53 copy at https://cure53.de/fp170.pdf."
+    },
+    "http://web.archive.org/web/20160507023636/http://contextis.co.uk/research/white-papers/pixel-perfect-timing-attacks-html5/": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The migrated Context landing page is retained in the 2013 list, while Paul Stone's complete 29-page Pixel Perfect Timing Attacks with HTML5 whitepaper is archived from https://gwern.net/doc/cs/js/2013-stone.pdf."
+    },
+    "https://web.archive.org/web/20160403035045/https://github.com/cryptocat/cryptocat/issues/690": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The deleted Cryptocat issue is retained as one example beside the complete Hostile Subdomain Takeover disclosure. The Detectify research article and its second HackerOne example are both archived, so this unavailable example is not treated as a missing article."
+    },
+    "https://www.gnucitizen.org/projects/hscan-redux/": {
+      "outcome": "archive",
+      "class": "research",
+      "reason": "Verified against the near-publication capture: this is the complete, intentionally short disclosure. It explains the browser-history technique, security impact, router-detection use case, and identifies its proof of concept."
+    },
+    "https://kuza55.blogspot.com/2008/07/cookie-path-traversal.html": {
+      "outcome": "archive",
+      "class": "research",
+      "reason": "Verified against the live article: this is the complete, intentionally short disclosure. It states the IIS path-normalization technique, affected browsers, example URL, and security implications."
+    },
+    "https://web.archive.org/web/20170903113359/http://erpscan.com/press-center/blog/ssrf-via-ws-adressing/": {
+      "outcome": "archive",
+      "class": "research",
+      "reason": "Verified against a complete near-publication capture: this intentionally short disclosure explains SSRF through WS-Addressing To and ReplyTo fields, including the protocol impact and example XML."
+    },
+    "http://www.procheckup.com/vulnerability_manager/vulnerabilities/pr08-05": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The short advisory landing page is retained beside ProCheckup's complete 24-page Hacking ZyXEL Gateways whitepaper, recovered from https://web.archive.org/web/20130102183427/http://www.procheckup.com/media/41602/hacking_zyxel_gateways.pdf."
+    },
+    "https://sites.google.com/site/tentacoloviola/": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The author's former Google Sites landing page is retained beside Rosario Valotta's complete Cookiejacking presentation, archived from the official HITBSecConf 2011 conference materials."
+    },
+    "http://web.archive.org/web/20160507023636/https://yoast.com/research/autocompletetype.php": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The form is the proof-of-concept test retained beside Joost de Valk's complete written disclosure, Why you should not use autocomplete, recovered from its 24 October 2013 capture."
+    },
+    "https://blogs.adobe.com/psirt/2008/09/clipboard_attack_update.html": {
+      "outcome": "archive",
+      "class": "research",
+      "reason": "Verified against the publication-era capture: this is Adobe PSIRT's complete, intentionally short vendor security update. It reports the planned clipboard-interaction change and identifies Flash Player 10 as the release containing the mitigation."
+    },
+    "https://jsfiddle.net/gcollazo/UMyEm/embedded/result": {
+      "outcome": "archive",
+      "class": "research",
+      "reason": "Verified from the live JSFiddle source after the containerized browser could not settle the page. This is the complete proof of concept: its embedded HTML explains CSS-only clickjacking and its CSS identifies pointer-events: none as the technique. No separate written paper or disclosure was found.",
+      "title": "CSS-Only Clickjacking"
+    },
+    "https://extraexploit.blogspot.com/2010/10/dollars-javascript-code-yet-another.html": {
+      "outcome": "archive",
+      "class": "research",
+      "reason": "Recovered and verified from the 9 October 2010 capture, close to the 5 October publication date. The capture contains the full deobfuscation walkthrough, code, screenshots, update, and conclusion.",
+      "title": "Dollars JavaScript Code – Yet Another JavaScript Obfuscation Method for CC Frauds"
+    },
+    "https://samuli.hakoniemi.net/how-to-conceal-xss-injection-in-html5": {
+      "outcome": "archive",
+      "class": "research",
+      "reason": "Recovered and verified from the 24 December 2010 publication-era capture. It contains the full disclosure, proof-of-concept URL, history.pushState explanation, affected browser versions, and mitigation discussion.",
+      "title": "How to Conceal XSS Injection in HTML5"
+    },
+    "https://blogs.msdn.com/b/dross/archive/2012/04/26/hyperlink-spoofing-and-the-modern-web.aspx": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The short announcement is retained beside the complete 20-page Hyperlink Spoofing and the Modern Web paper that it links to; the paper is archived from its publication-era capture."
+    },
+    "https://blogs.msdn.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-47-30/5340.Hyperlink-Spoofing-and-the-Modern-Web-_2800_final_2900_.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "reason": "This is the complete 20-page paper linked by David Ross's original Microsoft blog announcement, recovered from its publication-era capture and converted with Dockerized Poppler.",
+      "title": "Hyperlink Spoofing and the Modern Web"
+    },
+    "https://twitter.com/mslavco/status/1019332176846950400": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The deleted nomination tweet is retained beside WordPress's complete security-team write-up at https://make.wordpress.org/security/2017/11/13/the-war-on-sqli-or-what-happened-in-4-8-2-and-4-8-3/. That publication names Slavco, reproduces both reported wpdb::prepare issues and their proof-of-concept code, and explains the 4.8.2 and 4.8.3 fixes. The tweet has no Wayback capture and its public syndication record is a deletion tombstone."
+    },
+    "https://hackerone.com/reports/307670": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The report link is retained beside Keybase's exact public fix at https://github.com/keybase/client/commit/3d30d6e0fc928968827646b7b9676cc298fc47dc. A publication-era Common Crawl record preserves the report description and example with duplicate id parameters; the commit from 23 January 2018 changes the extension to reject duplicate query-string keys. The current report redirects to sign-in and did not expose its document through Docker Chromium."
+    },
+    "https://docs.google.com/presentation/d/1jW0o1YO3FNXlXVkAziM_wSGQqRdLP2kmfoBb6mF1bGY/edit?usp=sharing": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The private 2024 workshop deck is retained beside Ryan and Isabella Barnett's later expanded written treatment at https://webappdefender.blogspot.com/2026/02/lost-in-translation-exploiting-unicode.html. The article preserves the authors' developed research and links their 2025 Black Hat slides; it is identified as a later expansion, not asserted to be a byte-identical copy. Direct export returned HTTP 401 and Docker Chromium did not expose the deck."
+    },
+    "https://web.archive.org/web/20170903113359/https://www.youtube.com/watch?v=ZnsFhGYqI3g": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The OpenAM RCE demonstration video is retained in the 2012 list, but the full No Locked Doors, No Windows Barred OpenAM presentation is cited immediately beside it and archived from its Slideshare capture."
+    },
+    "http://web.archive.org/web/20160507023636/https://www.youtube.com/watch?v=eHSNT8vWLfc": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The AppSec USA 2013 video is retained in the 2013 list, but Timothy D. Morgan's exact conference slide deck, What You Didn't Know About XML External Entities Attacks, is archived from the official OWASP conference site at https://2013.appsecusa.org/2013/wp-content/uploads/2013/12/WhatYouDidntKnowAboutXXEAttacks.pdf."
+    },
+    "https://2013.appsecusa.org/2013/wp-content/uploads/2013/12/WhatYouDidntKnowAboutXXEAttacks.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "reason": "This is Timothy D. Morgan's complete official AppSec USA 2013 slide deck, recovered from the conference site's 22 January 2015 Wayback capture and extracted with Dockerized Poppler.",
+      "title": "What You Didn't Know About XML External Entity Attacks"
+    },
+    "https://fscked.org/talks/ActiveHTTPSCookieStealing.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "365-Day: https Cookie Stealing",
+      "reason": "The fscked.org domain was taken over, so this deck cannot be fetched. The DEF CON 16 media copy was supplied by the maintainer and imported; the citation reads only \"Slides\", so the deck's own title slide names it."
+    }
+  }
+}
