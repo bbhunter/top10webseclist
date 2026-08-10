@@ -18,7 +18,7 @@ Curating the year lists themselves is a separate job. This folder is generated
 by `tools/references/refs.py` from those lists and never edits them.
 
 
-1618 reference(s) archived across 20 year list(s). 1471 carry technique and 147 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
+1619 reference(s) archived across 20 year list(s). 1472 carry technique and 147 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
 
 Three more lists complete the picture: [document-gaps.md](document-gaps.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
 
@@ -106,7 +106,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [US 26 Stacey CRLF Powered Desync Attacks Wed](md/2026-ai/us-26-stacey-crlf-powered-desync-attacks-wed.md) | whitepaper |  |  | research | 1 |
 | [Your WAF Blocked Us, That Was The Exploit — Remote Agent Takeover via Cloudflare, Sentry and Claude Zero-Day](md/2026-ai/your-waf-blocked-us-that-exploit-remote-agent-takeover-cloudflare-sentry-day.md) | whitepaper |  |  | research | 1 |
 
-## 2025 (84)
+## 2025 (85)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -170,6 +170,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Python Dirty Arbitrary File Write to RCE via Writing Shared Object Files Or Overwriting Bytecode Files](md/2025/2025-siunam-s-website-python-dirty-arbitrary-file-write-rce-writing-files.md) | article | siunam's Website | 2025 | research | 1 |
 | [RaceDB: Detecting Request Race Vulnerabilities in Database-Backed Web Applications](md/2025/doi-org-racedb-detecting-request-race-vulnerabilities-database-applications.md) | article | doi.org |  | research | 1 |
 | [React2Shell (CVE-2025-55182)](md/2025/react2shell-com-react2shell-cve-2025-55182.md) | article | react2shell.com |  | research | 1 |
+| [RebirthDay Attack: Reviving DNS Cache Poisoning with the Birthday Paradox](md/2025/rebirthday-attack-reviving-dns-cache-poisoning-birthday-paradox.md) | article |  |  | research | 1 |
 | [ReDisclosure: New technique for exploiting Full-Text Search in MySQL (myBB case study)](md/2025/2025-exploit-azerbaijan-redisclosure-new-technique-exploiting-full-text-study.md) | article | Exploit Azerbaijan | 2025 | research | 1 |
 | [Ruby Array Pack Bleed / nastystereo.com](md/2025/nastystereo-com-ruby-array-pack-bleed-nastystereo-com.md) | article | nastystereo.com |  | research | 1 |
 | [SAML roulette: the hacker always wins](md/2025/2025-portswigger-research-saml-roulette-hacker-always-wins.md) | article | PortSwigger Research | 2025 | research | 1 |

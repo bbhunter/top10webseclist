@@ -110,3 +110,19 @@ method-preserving CSPT work surfaces.
 The Veeam post is recorded here because that is where the writeup falls, but its
 findings all carry 2024 CVEs and were fixed in 2024; it would fail the
 first-publication gate for 2025 regardless of score.
+
+## Coverage gap: ACM CCS 2025
+
+The audit above swept NDSS, IEEE S&P and USENIX Security. **It did not sweep
+ACM CCS**, and until 2026-08-10 `2025.md` carried no CCS paper at all - while
+the 2024 audit did cover CCS and that year's missed list carries four of its
+papers.
+
+RebirthDay was added on 2026-08-10 from that unswept conference: it surfaced
+during a sweep of Black Hat Asia 2026 decks, where it turned out to be a
+re-presentation of CCS '25 work. It qualifies on its own merits, but it is one
+arbitrary paper from a programme nobody has been through.
+
+**CCS 2025 remains unaudited.** A `webseclist-find-missed` pass over that
+programme is the outstanding work; this note exists so the imbalance is visible
+rather than closed over by a single entry.
