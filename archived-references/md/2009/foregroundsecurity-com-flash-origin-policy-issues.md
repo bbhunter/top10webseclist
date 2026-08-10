@@ -234,11 +234,11 @@ The ideal fix should involve Adobe implementing a more sensible origin policy fo
 
 ### **Risk **Management and GRC
 
-[!](http://foregroundsecurity.com/risk-management-and-grc.html)
+[![](http://foregroundsecurity.com/images/stories/4.jpg)](http://foregroundsecurity.com/risk-management-and-grc.html)
 
 ### **Security **Audit and Testing
 
-[!](http://foregroundsecurity.com/security-audit-and-testing.html)
+[![](http://foregroundsecurity.com/images/stories/3.jpg)](http://foregroundsecurity.com/security-audit-and-testing.html)
 
 - [Vulnerability Assessment and Testing](http://foregroundsecurity.com/vulnerability-testing-and-assessment.html)
 - [Voice over IP Assessments](http://foregroundsecurity.com/voice-over-ip-assessments.html)
@@ -251,12 +251,12 @@ The ideal fix should involve Adobe implementing a more sensible origin policy fo
 
 ### **Software **Assurance
 
-[!](http://foregroundsecurity.com/software-assurance.html)
+[![](http://foregroundsecurity.com/images/stories/2.jpg)](http://foregroundsecurity.com/software-assurance.html)
 
 ### **Security **Architecture
 
-[!](http://foregroundsecurity.com/security-architecture.html)
+[![](http://foregroundsecurity.com/images/stories/1.jpg)](http://foregroundsecurity.com/security-architecture.html)
 
 ### **IT **Security Training
 
-[!](http://foregroundsecurity.com/it-security-training.html)
+[![](http://foregroundsecurity.com/images/stories/5.jpg)](http://foregroundsecurity.com/it-security-training.html)

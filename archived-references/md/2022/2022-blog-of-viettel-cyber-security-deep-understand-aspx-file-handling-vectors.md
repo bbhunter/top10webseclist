@@ -66,7 +66,7 @@ page going offline. To read the original, follow the link above.
 
 Each IIS server may be include many websites, each website has Site ID, Physical webroot path, bindings and Root application (and more another applications under child directory):
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-90.png)
 
 *Example website1*
 
@@ -74,7 +74,7 @@ For example, website1 have: Site ID = 2, Physical Path = C:\website1, Bindings =
 
 Each IIS website can have many applications (at least Root application). Each application will have AppPool Name, Virtual Path and Physical Path.
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-91.png)
 
 *Example website1 with admin application*
 
@@ -90,7 +90,7 @@ Each AppPool will have:
 
 - Apppool run as C:\windows\system32\inetsrv\w3wp.exe under identity privilege
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-92.png)
 
 *website1 AppPool*
 
@@ -111,11 +111,11 @@ Aspx file build process only runs when the file is accessed for the first time o
 
 So dll compiled file must be cached at somewhere. The cache algorithm is simple as below:
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-102.png)
 
 And this is the folder to save the cache data:
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-103.png)
 
 The cache data for virtual path /index.aspx is saved in file index.aspx.cdcab7d2.compiled in folder C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\4c305858\252b41dd\
 
@@ -123,7 +123,7 @@ You will see the assembly and type property. The virtual path /index.aspx will b
 
 And now is more information for this data:
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-106.png)
 
 *Some important parts in cache folder*
 
@@ -133,7 +133,7 @@ How I know this information. That's quite simple. I attached w3wp.exe in dnSpy a
 
 Here is the algorithm to calculate "code gen dir" of an application (you need to know the physical path and appid)
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-107.png)
 
 *algorithm to calculate code_gen_dir*
 
@@ -148,7 +148,7 @@ Calculate the combined hash of (machine.config, web.config,…)
 
 If hash is changed (some configs are changed) then delete all file in "code gen dir" (later rebuild everything)
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-108.png)
 
 *hash.web file*
 
@@ -160,7 +160,7 @@ Load all assembly in this file; find and run method with PreApplicationStartMeth
 
 This is for initializing something before apppool running.
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-111.png)
 
 *Init assembly name*
 
@@ -170,13 +170,13 @@ That's is the most important part. The cache key for /index.aspx is cdcab7d2 (w3
 
 Here is the algorithm to generate cache key for a virtual path:
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-112.png)
 
 *Algorithm to calculate cache key*
 
 Some examples:
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-113.png)
 
 Now based on these concepts, we have some possible attack vectors:
 
@@ -189,7 +189,7 @@ Now based on these concepts, we have some possible attack vectors:
 
 Remember the cache file
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-114.png)
 
 Hacker can upload a malicious dll in this folder and change the assembly and type property to hijack the normal function.
 
@@ -228,25 +228,25 @@ I ask myself if a website could attack another one?
 
 This is the permission of folder C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-116.png)
 
 The problem is:
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-117.png)
 
 Pay attention that all ApplicationPoolIdentity belongs to BUILTIN\IIS_IUSERS. So any apppool account could modify or delete content in the cache folder of another account.
 
 Here is the attack I do in some Plesk based shared hosting services:
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-121.png)
 
 I reported this issue to MSRC. And they did not consider this as a vulnerability. They have a guide for this risk.
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-122.png)
 
 And I reported to Plesk, they confirmed this bug and fix it.
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-123.png)
 
 But I think another shared hosting environment could be vulnerable too. I didn't check all of them. I only test for Plesk.
 
@@ -254,7 +254,7 @@ But I think another shared hosting environment could be vulnerable too. I didn't
 
 The idea is cache key duplicate. Remember the cache key generation algorithm. It returns 8 hex characters (4 bytes)
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-113.png)
 
 The maximum unsigned 4 bytes is 4,294,967,295
 
@@ -262,7 +262,7 @@ The number is quite big but it is still easy to have a collision.
 
 Here is some examples:
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2022/07/image-125.png)
 
 If some WAF block you at /admin/index.aspx, you can access at /a583524842/index.aspx
 

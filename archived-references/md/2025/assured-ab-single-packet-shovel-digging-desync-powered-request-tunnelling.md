@@ -139,7 +139,7 @@ I then realized that all of these so-called false positives, were actually a com
 
 HTTP Request Tunnelling has already been covered in excellent detail over at Portswigger's Web Security Academy so I will only cover it briefly here.
 
-First, lets take a look at a HTTP Desync Attack which is the basis for both smuggling and tunnelling. !
+First, lets take a look at a HTTP Desync Attack which is the basis for both smuggling and tunnelling. ![](https://www.assured.se/media/2025/05/http-desync-attacks.webp)
 
 In HTTP/1.1 there are two valid length headers, `Content-Length` and `Transfer-Encoding`. Using header mutations, we are able to hide one of these headers from either the frontend or backend. In this case, the frontend ignores the perfectly valid `Transfer-Encoding` header and uses the `Content-Length` header to determine the size of the body of the request including all data highlighted in red. In contrast however, the backend processes the `Transfer-Encoding` header and therefore assumes that the data `x=y` is the body of the request. The remaining data, highlighted in blue, is treated as a completely separate request. This desynchronisation between the front and backend servers is the basis for all HTTP Request Smuggling and Tunnelling attacks.
 
@@ -147,7 +147,7 @@ The second factor that is required for most HTTP Desync Attacks is the use of ke
 
 When it comes to request tunnelling however, the core difference to keep in mind stems from the chosen architecture for the keep-alive connections between the frontend and backend. Rather than allowing connections from multiple clients to share connections, frontend servers will often opt to open a new keep-alive connection to the backend for each client. This is still very performant, and helpfully resolves many of the critical issues that can stem from smuggling.
 
-!
+![](https://www.assured.se/media/2025/05/front-backend.webp)
 
 The key takeaway here is that clients have no method of interacting with other users' requests. Interestingly, this architecture is sometimes dynamically adopted as a defense mechanism if the frontend detects suspiciously formatted requests.
 
@@ -364,7 +364,7 @@ The single-packet attack represents a huge leap forward in the ability to exploi
 
 By creating a group of HTTP/2 requests in repeater and selecting "Send group in parallel", I could immediately test my theory. To my surprise, it worked instantly, returning a valid tunnelled response ~80% of the time against all of the targets I had cases for.
 
-!
+![](https://www.assured.se/media/2025/05/single-packet-repeater.webp)
 
 ```
 GET / HTTP/2
@@ -513,7 +513,7 @@ Once I had this tool working, I needed something to scan. Fortunately, the world
 
 #### Building a Research Pipeline
 
-!
+![](https://www.assured.se/media/2025/05/research-pipeline.webp)
 
 - Extract all Bug Bounty scopes using [bbscope](https://github.com/sw33tLie/bbscope)
 - Add all scopes to excel and manually review them to make sure they allow for automated scanning
@@ -768,7 +768,7 @@ I reported this bug via MSRC but the impact wasn't deemed critical enough to be 
  ...
  2025-04/2025-05 - Seems to be fixed
 
-!
+![](https://www.assured.se/media/2025/05/msrc-response.webp)
 
 ### Conclusions
 

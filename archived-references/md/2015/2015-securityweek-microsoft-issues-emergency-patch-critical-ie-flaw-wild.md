@@ -91,7 +91,7 @@ Clement Lecigne, a Security Engineer at Google, was credited with reporting the 
 
 This is the second emergency patch issued by Microsoft in recent weeks. In late July, Microsoft [released](https://www.securityweek.com/microsoft-issues-emergency-fix-critical-flaw-affecting-all-versions-windows/) an emergency out-of-band security update to address a critical vulnerability in Windows that could allow a remote attacker to take over a system.
 
- !
+ ![](https://www.securityweek.com/wp-content/uploads/2023/10/AI_Image.jpg)
 
  Written By [Mike Lennon](https://www.securityweek.com/contributors/mike-lennon/)
 
@@ -119,7 +119,7 @@ For more than 15 years, Mike Lennon has been closely monitoring the threat lands
 - [3.8 Million Impacted by Unlimited Technology Systems Data Breach](https://www.securityweek.com/3-8-million-impacted-by-unlimited-technology-systems-data-breach/)
 - [Critical Vulnerabilities Patched With Chrome 151 Update](https://www.securityweek.com/critical-vulnerabilities-patched-with-chrome-151-update/)
 
- !
+ ![](https://www.securityweek.com/wp-content/uploads/2022/04/SecurityWeek-Small-Dark.png)
 
  [
 -  **  ]() [

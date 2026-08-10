@@ -62,7 +62,7 @@ page going offline. To read the original, follow the link above.
 
 Firefox uXSS and CSS XSS - Abdulrahman Al-Qabandi
 
-!
+![](https://leucosite.com/q.png)
 
 # Firefox uXSS and CSS XSS
 

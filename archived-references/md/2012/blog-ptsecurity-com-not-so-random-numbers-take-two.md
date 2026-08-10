@@ -64,7 +64,7 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-[!](http://1.bp.blogspot.com/-yugJZtRbS1Q/UDSI6r4BVCI/AAAAAAAABo4/lKYcFUo8NRc/s1600/1.jpg)
+[![](http://1.bp.blogspot.com/-yugJZtRbS1Q/UDSI6r4BVCI/AAAAAAAABo4/lKYcFUo8NRc/s200/1.jpg)](http://1.bp.blogspot.com/-yugJZtRbS1Q/UDSI6r4BVCI/AAAAAAAABo4/lKYcFUo8NRc/s1600/1.jpg)
 
  George Argyros and Aggelos Kiayias have published recently an awesome research concerning attacks on pseudo random generator in PHP. However, it lacked practical tools implementing this attack. That is why we conducted our own research which led to the creation of a program to perform the bruteforce of PHPSESSID.
  
@@ -114,7 +114,7 @@ page going offline. To read the original, follow the link above.
 
  That is why we created our own [GUI application](http://bit.ly/RCi5CW) for this task.
 
- [!](http://2.bp.blogspot.com/-c_s79UiJSes/UDSIBpubbfI/AAAAAAAABog/RJ1bL2J94Ns/s1600/1en.png)
+ [![](http://2.bp.blogspot.com/-c_s79UiJSes/UDSIBpubbfI/AAAAAAAABog/RJ1bL2J94Ns/s640/1en.png)](http://2.bp.blogspot.com/-c_s79UiJSes/UDSIBpubbfI/AAAAAAAABog/RJ1bL2J94Ns/s1600/1en.png)
 
  The speed is about 16 million hashes per second, seed calculation takes less than an hour on 3.2 GHz Quad Core i5.
 
@@ -130,7 +130,7 @@ page going offline. To read the original, follow the link above.
 ** The seed used for mt_rand is an unsigned integer 2^32. If a random number leaked, it is possible to get the seed using PHP itself and rainbow tables. It takes less than 10 minutes.
  The scripts to generate rainbow tables, search the seed, and ready-made tables are available here: [http://www.gat3way.eu/poc/mtrt/](http://www.gat3way.eu/poc/mtrt/)
 
- [!](http://2.bp.blogspot.com/-MEltG-Dce_Q/UDSIc2BKmYI/AAAAAAAABoo/j4iUIPUP_qs/s1600/2en.png)
+ [![](http://2.bp.blogspot.com/-MEltG-Dce_Q/UDSIc2BKmYI/AAAAAAAABoo/j4iUIPUP_qs/s640/2en.png)](http://2.bp.blogspot.com/-MEltG-Dce_Q/UDSIc2BKmYI/AAAAAAAABoo/j4iUIPUP_qs/s1600/2en.png)
 
  **What to look for in the code?**
 ** All the mt_rand(), rand(), uniqid(), shuffle(), lcg_value(), etc. The only secure function is openssl_random_pseudo_bytes(), but it is rarely used in web applications. The main ways of defense against such attacks are the following:
@@ -139,7 +139,7 @@ page going offline. To read the original, follow the link above.
 - Suhosin patch — does not patch mt_srand, srand. The Suhosin extension should also be installed.
 - /dev/urandom — the securest way.
 
- [!](http://4.bp.blogspot.com/-8nBCuedCdj8/UDSInQrLs0I/AAAAAAAABow/iGfmOuXzWu0/s1600/4.png)
+ [![](http://4.bp.blogspot.com/-8nBCuedCdj8/UDSInQrLs0I/AAAAAAAABow/iGfmOuXzWu0/s640/4.png)](http://4.bp.blogspot.com/-8nBCuedCdj8/UDSInQrLs0I/AAAAAAAABow/iGfmOuXzWu0/s1600/4.png)
 
  *Arseny Reutov*
  *Timur Yunusov*

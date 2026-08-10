@@ -65,7 +65,7 @@ page going offline. To read the original, follow the link above.
 
 # Hostile subdomain takeover using Heroku/Github/Desk + more
 
-!
+![](https://labs.detectify.com/_next/image/?url=https%3A%2F%2Flabsadmin.detectify.com%2Fapp%2Fuploads%2F2023%2F09%2FInk-Detectify-1600x1600-1-300x300-1.png&w=128&q=75)
 
 **Detectify**Oct 21, 2014
 
@@ -106,11 +106,11 @@ In the not so rare case, the attacker can also “inherit” the Domain Owner’
 
 Here’s an example of a DNS entry that could be used for this attack:
 
-[!](https://labsadmin.detectify.com/app/uploads/2023/09/example-dns.png)
+[![](https://labsadmin.detectify.com/app/uploads/2023/09/example-dns.png)](https://labsadmin.detectify.com/app/uploads/2023/09/example-dns.png)
 
 If x.example.com has no service attached to it, the subdomain could be taken over by an attacker. Below are examples of how some of the services will indicate the existence of this vulnerability:
 
-[!](https://labsadmin.detectify.com/app/uploads/2023/09/how-some-of-the-services-will-indicate-the-existence-of-this-vulnerability.png)
+[![](https://labsadmin.detectify.com/app/uploads/2023/09/how-some-of-the-services-will-indicate-the-existence-of-this-vulnerability.png)](https://labsadmin.detectify.com/app/uploads/2023/09/how-some-of-the-services-will-indicate-the-existence-of-this-vulnerability.png)
 
 ### Affected Service Providers and Domain Owners
 
@@ -135,7 +135,7 @@ Our advice is to keep your DNS entries constantly vetted and restricted.
 
 [Twitter ](https://twitter.com/intent/tweet?url=)[LinkedIn ](https://www.linkedin.com/sharing/share-offsite/?url=)
 
-!
+![](https://labs.detectify.com/_next/image/?url=https%3A%2F%2Flabsadmin.detectify.com%2Fapp%2Fuploads%2F2023%2F09%2FInk-Detectify-1600x1600-1-300x300-1.png&w=128&q=75)
 
 **Detectify**
 

@@ -87,7 +87,7 @@ Putting this together, when the victim goes to `https://chat.openai.com/share/%2
 
 Here’s a little sketch I drew to help you all visualize this:
 
-  !
+  ![](https://nokline.github.io/images/ChatGPT_Attack.svg)
 
 So to sum it all up in a sentence, I was able to use a URL encoded path traversal to cache sensitive API endpoints, thanks to a path normalization inconsistency between the CDN and web server.
 

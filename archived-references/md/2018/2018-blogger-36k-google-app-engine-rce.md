@@ -231,13 +231,13 @@ For finding what values can "stubby_method" be, you can set it to "[/ServerStatu
  After discovering this, I reported the new findings to Google and they bumped the priority of the internal ticket and said:
   Please stop exploring this further, as it seems that you could easily break something using these internal APIs.
  Then the issue was CC'd to several employees:
- [!](https://sites.google.com/site/testsitehacking/-36k-google-app-engine-rce/MSG_CCs.png?attredirects=0)
+ [![](https://sites.google.com/site/testsitehacking/_/rsrc/1526777524464/-36k-google-app-engine-rce/MSG_CCs.png)](https://sites.google.com/site/testsitehacking/-36k-google-app-engine-rce/MSG_CCs.png?attredirects=0)
 
  A few days later, the access to non-production GAE APIs and environments was blocked with this error page (With status "429 Too Many Requests").
  You can still see this message in "[staging-appengine.sandbox.googleapis.com](http://staging-appengine.sandbox.googleapis.com/)" and "[test-appengine.sandbox.googleapis.com](http://test-appengine.sandbox.googleapis.com/)".
- [!](https://sites.google.com/site/testsitehacking/-36k-google-app-engine-rce/Sorry.png?attredirects=0)
+ [![](https://sites.google.com/site/testsitehacking/_/rsrc/1526777756126/-36k-google-app-engine-rce/Sorry.png)](https://sites.google.com/site/testsitehacking/-36k-google-app-engine-rce/Sorry.png?attredirects=0)
  And later I got the following message:
- [!](https://sites.google.com/site/testsitehacking/-36k-google-app-engine-rce/Reward.png?attredirects=0)
+ [![](https://sites.google.com/site/testsitehacking/_/rsrc/1526778134578/-36k-google-app-engine-rce/Reward.png)](https://sites.google.com/site/testsitehacking/-36k-google-app-engine-rce/Reward.png?attredirects=0)
  I was rewarded **36,337** dollars!
  I was not aware until then that this was regarded as Remote Code Execution (The highest tier for bugs), it was a very pleasant surprise.
  I asked to one of the Googlers in the reward panel about it, and he told me it is RCE for the way Google works (And suggested reading the [SRE](https://landing.google.com/sre/)) and also that the extra $5k ([Since they pay $31,337 for RCE bugs](https://www.google.com/about/appsecurity/reward-program/index.html#rewards)) was for a lesser bug.

@@ -85,7 +85,7 @@ The [exploit](http://web.archive.org/web/20160510190954/https://github.com/zcutl
 
 Cutlip [mentioned](http://web.archive.org/web/20160510190954/https://twitter.com/zcutlip/status/393752865187328000) on Twitter that the vulnerabilities he found were also discovered independently by another researcher, Craig Young of Tripwire, who also found a [serious flaw in Netgear’s ReadyNAS](http://web.archive.org/web/20160510190954/http://threatpost.com/netgear-readynas-storage-vulnerable-to-serious-command-injection-flaw/102657) product.
 
- !
+ ![](http://web.archive.org/web/20160510190954im_/https://trtpost-wpengine.netdna-ssl.com/wp-content/uploads/avatars/12/1368562026-bpfull-68x68.jpg)
 
 ## About Dennis Fisher
 

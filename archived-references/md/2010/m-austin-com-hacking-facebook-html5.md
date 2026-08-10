@@ -67,7 +67,7 @@ For example HTML5 introduces [HTTP access control](https://developer.mozilla.org
 
 **The Exploit**
 
-[!](http://m-austin.com/blog/wp-content/uploads/2010/07/Screen-shot-2010-07-06-at-5.10.40-PM1.png)
+[![](http://m-austin.com/blog/wp-content/uploads/2010/07/Screen-shot-2010-07-06-at-5.10.40-PM1-300x170.png)](http://m-austin.com/blog/wp-content/uploads/2010/07/Screen-shot-2010-07-06-at-5.10.40-PM1.png)
 
  Lets look at the facebook touch page [touch.facebook.com](http://touch.facebook.com) (iphone web interface). There are a few things you should notice:
 

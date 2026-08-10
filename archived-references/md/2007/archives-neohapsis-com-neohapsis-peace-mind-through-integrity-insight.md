@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 NEOHAPSIS - Peace of Mind Through Integrity and Insight
 
- [!](http://www.neohapsis.com/) [![OSEC](http://archives.neohapsis.com/_images/logo_archives.gif)](http://archives.neohapsis.com/)
+ [![](http://archives.neohapsis.com/_images/neohapsis_logo.gif)](http://www.neohapsis.com/) [![OSEC](http://archives.neohapsis.com/_images/logo_archives.gif)](http://archives.neohapsis.com/)
 
 |
 ** Neohapsis is currently accepting applications for employment. For more information, please visit our website [www.neohapsis.com](http://www.neohapsis.com) or email [hr@neohapsis.com](mailto:hr@neohapsis.com)**  |   |

@@ -63,13 +63,13 @@ page going offline. To read the original, follow the link above.
 
 # Blog
 
- [! *2026 GenAI Code Security Research Report* Jul 28, 2026 ## 2026 GenAI Code Security Report: AI Is Writing More of Your Code but Security Hasn’t Caught Up Read More](https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/)
+ [![](https://www.veracode.com/wp-content/uploads/2026-GenAI-Code-Security-Research-Report.png) *2026 GenAI Code Security Research Report* Jul 28, 2026 ## 2026 GenAI Code Security Report: AI Is Writing More of Your Code but Security Hasn’t Caught Up Read More](https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/)
 
- [! *CISO Executive Briefing Application Risk Management Securing the Enterprise* Jul 22, 2026 ## CISO Executive Briefing: Operational Ransomware and Supply Chain Compromises Escalate as Agentic AI Threats Emerge Read More](https://www.veracode.com/blog/ransomware-supply-chain-agentic-ai-threats/)
+ [![](https://www.veracode.com/wp-content/uploads/CISO-Executive-Briefing-Application-Risk-Management-Securing-the-Enterprise.png) *CISO Executive Briefing Application Risk Management Securing the Enterprise* Jul 22, 2026 ## CISO Executive Briefing: Operational Ransomware and Supply Chain Compromises Escalate as Agentic AI Threats Emerge Read More](https://www.veracode.com/blog/ransomware-supply-chain-agentic-ai-threats/)
 
- [! *The Best Application Security Testing Tool for Software Trust* Jul 21, 2026 ## The Best Application Security Testing Tool Isn’t a Scanning Tool Anymore Read More](https://www.veracode.com/blog/best-application-security-testing-tool-trust/)
+ [![](https://www.veracode.com/wp-content/uploads/The-Best-Application-Security-Testing-Tool-for-Software-Trust.png) *The Best Application Security Testing Tool for Software Trust* Jul 21, 2026 ## The Best Application Security Testing Tool Isn’t a Scanning Tool Anymore Read More](https://www.veracode.com/blog/best-application-security-testing-tool-trust/)
 
- [! *CISO Executive Briefing Application Risk Management Securing the Enterprise* Jul 15, 2026 ## Cyber Risk Intelligence Brief: Supply Chain Trust Erosion and Ransomware Velocity Require Preventive Control Discipline Read More](https://www.veracode.com/blog/cyber-risk-intelligence-july-2026/)
+ [![](https://www.veracode.com/wp-content/uploads/CISO-Executive-Briefing-Application-Risk-Management-Securing-the-Enterprise.png) *CISO Executive Briefing Application Risk Management Securing the Enterprise* Jul 15, 2026 ## Cyber Risk Intelligence Brief: Supply Chain Trust Erosion and Ransomware Velocity Require Preventive Control Discipline Read More](https://www.veracode.com/blog/cyber-risk-intelligence-july-2026/)
 
 Filter Blogs
 
@@ -121,7 +121,7 @@ Keyword
 
  [![CISO Executive Briefing Application Risk Management Securing the Enterprise](https://www.veracode.com/wp-content/uploads/CISO-Executive-Briefing-Application-Risk-Management-Securing-the-Enterprise.png) Jul 8, 2026 CISO Executive Briefing: Supply Chain Front-End Compromises and Sustained Third-Party Risk Elevation Read More](https://www.veracode.com/blog/supply-chain-compromises-from-june-and-july-2026/)
 
-!
+![](https://www.veracode.com/wp-content/uploads/2024/11/gradient-bg-1.svg)
 
 ## Interested in
 Learning More?

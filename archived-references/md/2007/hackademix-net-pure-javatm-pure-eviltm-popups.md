@@ -100,7 +100,7 @@ Many thanks to:
 - Dan Veditz (Mozilla)
 - timeless
 
- !
+ ![](https://secure.gravatar.com/avatar/3793c98028fd9683d80c827f6a1664712f46afdba4e1f44fbd2e8c7128a1d267?s=85&d=monsterid&r=g)
 
 ##  By ma1
 

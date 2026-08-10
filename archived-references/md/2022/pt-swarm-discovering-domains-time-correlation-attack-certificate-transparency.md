@@ -104,7 +104,7 @@ I found quite a lot of information about the threat actors who created this webs
 
 In short, a person or a group of people create malicious websites mimicking legitimate ones. The websites distribute infected software, both commercial and open source. Affected software includes, but is not limited to Burp Suite, Minecraft, Tor Browser, dnSpy, OBS Studio, CPU-Z, Notepad++, MinGW, Cygwin, and XAMPP.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2022/08/3b2a8048-Screenshot-from-2022-08-07-21-15-54-3.png)
 
 *The page that distributed Burp Suite*
 
@@ -114,7 +114,7 @@ I wasn’t willing to put up with the fact that someone trojans cool open source
 
 I sent more than 20 abuse reports, and I was able to shut down a lot of infrastructure of the threat actors:
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2022/08/f164519f-Screenshot-from-2022-08-05-20-40-54-4.png)
 
 *A reply to my tweet indicating what has been additionally done ([see on Twitter](https://twitter.com/_mohemiv/status/1547144915553079296))*
 
@@ -128,7 +128,7 @@ This is where our **time-correlation attack on certificate transparency** comes 
 
 Take a look at one of the certificates to the domain `cpu-z[.]net`, used by the threat actors:
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2022/08/a08ab228-Screenshot-from-2022-08-06-10-31-25-3.png)
 
 *Examining one of the certificates to the domain cpu-z[.]net ([see this page on censys.io](https://search.censys.io/certificates/fb5cf931f78587bbdec9e7d51d14bfe80a0f757ae85b4f5619d7a4bb3943de79))*
 
@@ -136,7 +136,7 @@ This certificate has the validity start field equal to **2022-07-23 13:59:54**.
 
 Now, let’s utilize the *parsed.validity.start* filter to find certificates issued a few seconds later:
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2022/08/9b06388f-Screenshot-from-2022-08-06-10-31-21-1-1.png)
 
 *It’s important to escape the “:” character, otherwise the filter won’t work ([see this page on censys.io](https://search.censys.io/certificates?q=parsed.validity.start%3A+2022-07-23T13%5C%3A59%5C%3A57Z))*
 
@@ -144,7 +144,7 @@ Here it is! We just discovered a domain that wasn’t known before!
 
 Let’s open a website on this domain:
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2022/08/049c721a-Screenshot-from-2022-08-06-17-55-20.png)
 
 *The main page of https://cr4cked[.]games/*
 
@@ -154,7 +154,7 @@ This proves that we discovered a domain managed by the same threat actors, and n
 
 A few pages later a domain `blazefiles[.]net` can be found. This domain was used to distribute infected Adobe products, and now it also shows the Hawk Host page.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2022/08/c0848669-Screenshot-from-2022-08-07-17-58-50.png)
 
 *The threat actors placed links to infected Adobe products on the “Hackers Crowd” telegram channel*
 
@@ -166,7 +166,7 @@ The threat actors hosted their websites by software such as Plesk, cPanel, or Cy
 
 If you try to search for the `cpu-z[.]org` domain in crt.sh, you’d see a bunch of certificates:
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2022/08/7b306685-Screenshot-from-2022-08-07-22-27-08.png)
 
 *Exploring cpu-z[.]org certificates on crt.sh: [https://crt.sh/?q=%25.cpu-z.org](https://crt.sh/?q=%25.cpu-z.org)*
 
@@ -180,13 +180,13 @@ DigiCert services are used by large companies for the automatic issuance of TLS 
 
 The time in the validity field of DigiCert certificates is always set to 00:00:00. The same is true for some other CAs, for example, ZeroSSL.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2022/08/23494b05-Screenshot-from-2022-08-08-13-18-16.png)
 
 *An example of a DigiCert certificate*
 
 But if we look at crt.sh, we can see that crt.sh IDs of certificates owned by the same company may be placed quite close to each other:
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2022/08/be985025-Screenshot-from-2022-08-08-13-18-16.png)
 
 *Exploring certificates of Twitter, a company that has one of the biggest bug bounty programs*
 
@@ -194,7 +194,7 @@ Therefore, when a CA doesn’t include the exact issuing time to certificates, t
 
 Additionally, you may find two types of certificates in the logs: precertificates and leaf certificates. If you have access to the leaf certificate, you can take a look at the signed certificate timestamp (SCT) filed in it:
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2022/08/22cacc7c-Screenshot-from-2022-08-08-13-18-16.png)
 
 *An example of getting timestamp from a leaf certificate*
 

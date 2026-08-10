@@ -62,7 +62,7 @@ page going offline. To read the original, follow the link above.
 
  **Summary:** Strangely [tdesktop 1.3.14](https://github.com/telegramdesktop/tdesktop) and [Telegram for windows](https://www.microsoft.com/en-in/p/telegram-messenger/9wzdncrdzhs0) (3.3.0.0 WP8.1) leaks end user private and public IP address while making calls. This bug was awarded €2000 by [Telegram security](https://telegram.org/faq#q-why-should-i-trust-you) team. (Sweeet..)
 
-| [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiP2Qf1QISS3qHc4WabVfkWIoO3CnlVqRwxzMipzGhu_tZIK6ffKoMkyE1qAFUfgd1uIYLDgqsj2SAwfOMM9JpX9azfAKMg2NBkgUVkSbXotYwS2eC6VaBM0nUuzACFkyby_JcTw3jmTOI/s1600/tl_card_synchronize.gif) |  |
+| [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiP2Qf1QISS3qHc4WabVfkWIoO3CnlVqRwxzMipzGhu_tZIK6ffKoMkyE1qAFUfgd1uIYLDgqsj2SAwfOMM9JpX9azfAKMg2NBkgUVkSbXotYwS2eC6VaBM0nUuzACFkyby_JcTw3jmTOI/s200/tl_card_synchronize.gif)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiP2Qf1QISS3qHc4WabVfkWIoO3CnlVqRwxzMipzGhu_tZIK6ffKoMkyE1qAFUfgd1uIYLDgqsj2SAwfOMM9JpX9azfAKMg2NBkgUVkSbXotYwS2eC6VaBM0nUuzACFkyby_JcTw3jmTOI/s1600/tl_card_synchronize.gif) |  |
 | Img Src: https://telegram.org/img/tl_card_synchronize.gif |  |
 
  Telegram is supposedly a secure messaging application, but it forces clients to only use P2P connection while initiating a call, however this setting can also be changed from "Settings **>** Privacy and security **>** Calls **>** peer-to-peer" to other available options. The tdesktop and telegram for windows breaks this trust by leaking public/private IP address of end user and there was no such option available yet for setting "P2P **>** nobody" in tdesktop and telegram for windows.
@@ -77,7 +77,7 @@ page going offline. To read the original, follow the link above.
 
  3. You will notice the end user IP address is leaking.
 
- !
+ ![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiivOBVEiZ8FuqH0pItzO5S1PBXVOperIrYJBUEDjNaGILljKx5Qw3waqyWpiI2qqnDZgiJL6C7GirhQmThIzAU1j748GffrzF2sd18aFzkrQpZ9fACMExCVdJaTjEhiF78VPS8BAHvwUI/s640/Telegram.png)
 
 Other scenario:**
 
@@ -87,11 +87,11 @@ Other scenario:**
  3. Let user B initiate the call to user A
  4. While user A access log will have public/private IP address of user B.
 
- [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCEN_jtPcQl12EjaqxPRSr5G0wCusoMjjShJxpbFo-zIveXahzsN3EefaC1Fbn2v7yF65RKQydLmj9xVwhXxvjNWsKtRm9YWJ8Prjm78HfHx95zW201lwQApNsLLeidskCGMJBPQrwnhM/s1600/Telegram-1.png)
+ [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCEN_jtPcQl12EjaqxPRSr5G0wCusoMjjShJxpbFo-zIveXahzsN3EefaC1Fbn2v7yF65RKQydLmj9xVwhXxvjNWsKtRm9YWJ8Prjm78HfHx95zW201lwQApNsLLeidskCGMJBPQrwnhM/s400/Telegram-1.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCEN_jtPcQl12EjaqxPRSr5G0wCusoMjjShJxpbFo-zIveXahzsN3EefaC1Fbn2v7yF65RKQydLmj9xVwhXxvjNWsKtRm9YWJ8Prjm78HfHx95zW201lwQApNsLLeidskCGMJBPQrwnhM/s1600/Telegram-1.png)
 
  Not only the [MTProto Mobile Protocol](https://core.telegram.org/mtproto) fails here in covering the IP address, rather such information can also be used for OSINT. This issue was fixed in [1.3.17 beta](https://github.com/telegramdesktop/tdesktop/releases/tag/v1.3.17) and [v1.4.0](https://github.com/telegramdesktop/tdesktop/releases/tag/v1.4.0) which have an option of setting your "P2P to Nobody/My contacts", Later [CVE-2018-17780](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17780) was assign to this vulnerability.
 
- [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvAmODwa_-a5Wmp4DBP_KK83NxzZeGvf63iGy20Epjrtz9QChcQDd9Zj5slxv-Ik2rcJhyC2Zcz7CEJ9mk4HV5jH1G1UdPSA5P_e5gc1oUPF-NbsuJ6uGwSaCUPXva9o4HCHVNj6wgdQc/s1600/Telegram_Bug_Bounty.png)
+ [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvAmODwa_-a5Wmp4DBP_KK83NxzZeGvf63iGy20Epjrtz9QChcQDd9Zj5slxv-Ik2rcJhyC2Zcz7CEJ9mk4HV5jH1G1UdPSA5P_e5gc1oUPF-NbsuJ6uGwSaCUPXva9o4HCHVNj6wgdQc/s320/Telegram_Bug_Bounty.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvAmODwa_-a5Wmp4DBP_KK83NxzZeGvf63iGy20Epjrtz9QChcQDd9Zj5slxv-Ik2rcJhyC2Zcz7CEJ9mk4HV5jH1G1UdPSA5P_e5gc1oUPF-NbsuJ6uGwSaCUPXva9o4HCHVNj6wgdQc/s1600/Telegram_Bug_Bounty.png)
 
  Regards
 

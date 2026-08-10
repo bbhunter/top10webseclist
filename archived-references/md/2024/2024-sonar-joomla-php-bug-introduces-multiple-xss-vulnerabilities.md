@@ -101,7 +101,7 @@ Joomla [version 5.0.3/4.4.3](https://www.joomla.org/announcements/release-news/5
 
 In our continuous effort to help secure open-source projects and improve our Code Quality solution, we regularly scan open-source projects via [SonarQube Cloud](https://sonarcloud.io/) and evaluate the findings. When scanning Joomla, SonarQube Cloud reported an interesting XSS issue:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/8c2f1aca-bded-40d2-8f83-0fa4acfa5a4a/joomla-sc.png)
 
 [View this issue on SonarQube Cloud](https://sonarcloud.io/project/issues?resolved=false&types=VULNERABILITY&id=SonarSourceResearch_joomla-blogpost&open=AY3LbRnWdEw9LdiT4b6d)
 
@@ -129,7 +129,7 @@ some-textalert(1)
 
 The `cleanTags` method performs this sanitization by determining the position of any opening tags (`<`) and then removing all data following until and including the corresponding closing tag (`>`):
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/ce451afc-0a08-4ac9-8203-f9e46be1cd46/joomla-01.png)
 
 The characters **before** an opening tag (e.g., `some-text` in the example above) are extracted by determining the offset of the opening tag (`$tagOpenStart`) via [`StringHelper::strpos`](https://github.com/joomla-framework/string/blob/3.x-dev/src/StringHelper.php#L147) and then using [`StringHelper::substr`](https://github.com/joomla-framework/string/blob/3.x-dev/src/StringHelper.php#L189) to extract it:
 
@@ -145,11 +145,11 @@ while ($tagOpenStart !== false) {
 
 For the example string `some-text<script>alert(1)</script>`, the first call to `StringHelper::substr` returns the string `some-text`, which is appended to the `$preTag` variable:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/f804fb61-7e68-4323-8881-524fc4910a13/joomla-02.png)
 
 On the second iteration, the string `alert(1)` is added:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/7f86bc5f-ccec-4a1c-8a5a-3db33892f834/joomla-03.png)
 
 The `$preTag` variable used to collect all sanitized substrings is later returned as the final result:
 
@@ -165,7 +165,7 @@ The `StringHelper::strpos` and `StringHelper::substr` methods are just wrappers 
 
 When determining if this sanitization is safe, we noticed that both PHP functions, `mb_strpos,` and `mb_substr`, handle invalid UTF-8 sequences differently. When `mb_strpos` encounters a [UTF-8 leading byte](https://en.wikipedia.org/wiki/UTF-8#Encoding), it tries to parse the following continuation bytes until the full byte sequence is read. If an invalid byte is encountered, all previously read bytes are considered one character, and the parsing is started over again at the invalid byte:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/efa546f8-bbb7-41e9-9f1b-a6c7a45ef668/joomla-04.png)
 
 Thus, the following call to `mb_strpos` returns the index `4`:
 
@@ -179,7 +179,7 @@ This index is the position of the opening angle bracket `<` (`3c`) character wit
 
 `mb_substr`, on the other hand, skips over continuation bytes when encountering a leading byte:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/0316a339-0fd8-473f-907a-2eae37bd7ce0/joomla-05.png)
 
 This means that for `mb_substr,` the first four bytes are considered one character and the opening angle bracket `<` (`3c`) character has the index `2`. Thus, the following call to `mb_substr` returns `"\xf0\x9fAAA<B"` when using the index returned by `mb_strpos` :
 
@@ -191,7 +191,7 @@ mb_substr("\xf0\x9fAAA<BB", 0, 4); // "\xf0\x9fAAA<B"
 
 Because of this inconsistency between both functions, Joomla’s sanitization extracts not only the text before an opening angle bracket but also the opening angle bracket itself and the following character when encountering this invalid UTF-8 byte sequence:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/e8a4e56e-2bb7-4e37-8edb-010dc20a8e25/joomla-06.png)
 
 An attacker can insert multiple invalid UTF-8 sequences, which effectively offset the index returned by `StringHelper::strpos` way beyond the opening angle bracket and thus include arbitrary HTML tags in the sanitized output. This completely bypasses the sanitization applied by Joomla. Since this issue affects Joomla’s core filter functionality, which is used all over the whole code base, this leads to multiple XSS vulnerabilities.
 

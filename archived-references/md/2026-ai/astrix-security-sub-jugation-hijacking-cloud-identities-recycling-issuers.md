@@ -192,7 +192,7 @@ We took all AWS and Azure identities that trust GitHub Action’s provider https
 
 The results were surprising:
 
-  !
+  ![](https://astrix.security/wp-content/uploads/2026/05/image-6-1024x368.png)
 
 - In AWS, 14% of discovered namespaces were not registered and available to be taken.
 - In Azure, the percentage jumps to **24%**!
@@ -223,11 +223,11 @@ Unfortunately, people don’t always follow best practices. To show how often, w
 
 The most important data point, however, is that over 13% of those workflows had cleartext identifiers for the cloud identities they used!
 
-  !
+  ![](https://astrix.security/wp-content/uploads/2026/05/image-2-1024x210.png)
 
 The breakdown per platform is as follows:
 
-  !
+  ![](https://astrix.security/wp-content/uploads/2026/05/image-9-1024x296.png)
 
 - A total of 1789 workflows using GCP Workload Identity Federation. Out of which 514 had a cleartext Workload Identity Provider and Service Account
 - A total of 4794 workflows using Azure Federated Identities. Out of which 45 had a cleartext Application Registration details. It seems that the vast majority of Azure workflows developers use variables
@@ -241,7 +241,7 @@ The results were mindblowing. We found that there are about 300 new OIDC-based w
 
 Combining this with the 13.38% of workflows which contain a cleartext cloud identity identifier, we find that on average, **every month 8 phantom cloud identities are up for grabs, completely based on publicly available data.**
 
-  !
+  ![](https://astrix.security/wp-content/uploads/2026/05/image-8-1024x491.png)
 
 ## Consequences of the Findings
 
@@ -258,7 +258,7 @@ Expanding on the last point of sub:jugation’s consequences listed above, we on
 
 So, we went out searching for sub:jugation in other providers, and found Gitlab CI and HCP Terraform Runs suffer from the same issue! Below is a summary of our findings:
 
-  !
+  ![](https://astrix.security/wp-content/uploads/2026/05/image-10-1024x415.png)
 
 ## Disclosure
 

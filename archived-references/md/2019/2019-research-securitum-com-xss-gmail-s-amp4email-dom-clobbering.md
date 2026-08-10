@@ -80,19 +80,19 @@ The feature raises some obvious security questions; the most important one proba
 
 AMP4Email has a [strong validator](https://github.com/ampproject/amphtml/blob/master/validator/validator-main.protoascii) which, in a nutshell, is a strong whitelist of tags and attributes that are allowed in dynamic mails. You can play around with it on [https://amp.gmail.dev/playground/](https://amp.gmail.dev/playground/), in which you can also send a dynamic email to yourself to see how it works!
 
-!
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/11/image-1.png)
 
 *Fig 1. AMP4Email playground*
 
 If you try to add any HTML element or attribute that is not explicitly allowed by the validator, you’ll receive an error.
 
-!
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/11/image-2.png)
 
 *Fig 2. AMP Validator disallows arbitrary script tags*
 
 When playing around with AMP4Email and trying various ways to bypass it, I noticed that `id` attribute is not disallowed in tags (Fig 3).
 
-!
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/11/image-3.png)
 
 *Fig 3. Attribute `id` is not disallowed*
 
@@ -263,7 +263,7 @@ There’s an interesting solution to this problem, though, that works in WebKit-
 
 So what we’re going to get when accessing `window.test1`? I’d intuitively expect getting the first element with that id (this is what happens when you try to call `document.getElementById('#test1')`. In Chromium, however, we actually get an `HTMLCollection`!
 
-!
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/11/image-6.png)
 
 *Fig 4. `window.test1` points to `HTMLCollection`*
 
@@ -287,7 +287,7 @@ What is particularly interesting here (and that can be spotted in fig. 4) is tha
 
 And we can access the second anchor element via `window.test1.test2`.
 
-!
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/11/image-5.png)
 
 *Fig 5. We can make `window.test1.test2` defined*
 
@@ -311,13 +311,13 @@ Let’s now go back to AMP4Email to see how DOM Clobbering could be exploited in
 
 I’ve already mentioned that AMP4Email could be vulnerable to DOM Clobbering by adding my own `id` attributes to elements. To find some exploitable condition, I decided to have a look at properties of `window` (Fig 6). The ones that immediately caught attention were beginning with `AMP`.
 
-!
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/11/image-7.png)
 
 *Fig 6. Properties of `window` global object*
 
 At this point, it turned out that AMP4Email actually employs some protection against DOM Clobbering because it strictly forbids certain values for `id` attribute, for instance: `AMP` (Fig 7.).
 
-!
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/11/image-8.png)
 
 *Fig 7. `AMP` is an invalid value for `id` in AMP4Email*
 
@@ -325,7 +325,7 @@ The same restriction didn’t happen with `AMP_MODE`, though. So I prepared a co
 
 … and then I noticed a very interesting error in the console (Fig 8).
 
-!
+![](https://research.securitum.com/wp-content/uploads/sites/2/2019/11/image-9.png)
 
 *Fig 8. 404 on loading certain JS file*
 

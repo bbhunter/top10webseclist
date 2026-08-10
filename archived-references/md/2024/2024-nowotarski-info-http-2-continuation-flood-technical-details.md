@@ -77,9 +77,9 @@ In October 2023 I learned about HTTP/2 Rapid Reset attack, dubbed [“the larges
 
 The main difference between HTTP/1.1 and HTTP/2 is that the latter is a binary protocol and client and server exchange *frames* instead of text lines. There are many frame types, including some control frames that do not transmit data but rather allow configuration of an HTTP/2 session (like `SETTINGS` or `WINDOW_UPDATE`). To make this vulnerability easy to understand I need to present two frames: `HEADERS` frame and `CONTINUATION` frame. For those who would like to catch up, the best way to learn it is by reading [RFC9113](https://datatracker.ietf.org/doc/html/rfc9113).
 
- !
+ ![](https://nowotarski.info/continuation_frames_light.svg)
 
- !
+ ![](https://nowotarski.info/continuation_frames_dark.svg)
 
 `HEADERS` frames allow sending HTTP headers of, both, request and response. The headers are stored in field block fragments and are encoded using `HPACK`, an encoding algorithm that allows the compression of header data. It is using static and dynamic tables of commonly used headers and Huffman encoding for the rest of the headers. Like other frames, this one can have some flags set, along them:
 
@@ -100,9 +100,9 @@ To sum it up, if headers exceed a single frame allowed size they are split in a 
 - …
 - `CONTINUATION` (`END_HEADERS` **set**),
 
- !
+ ![](https://nowotarski.info/continuation_good_light.svg)
 
- !
+ ![](https://nowotarski.info/continuation_good_dark.svg)
 
 After the last frame, either `DATA` frame is sent (contains request data) or HTTP/2 stream ends.
 
@@ -110,9 +110,9 @@ After the last frame, either `DATA` frame is sent (contains request data) or HTT
 
 What if a client starts a new HTTP/2 stream and sends `HEADERS` and `CONTINUATION` frames but `END_HEADERS` flag is **never** set? This would create an infinite stream of headers that HTTP/2 server would need to parse and store in memory.
 
- !
+ ![](https://nowotarski.info/continuation_bad_light.svg)
 
- !
+ ![](https://nowotarski.info/continuation_bad_dark.svg)
 
 In HTTP/1.1 world, servers are protected from infinite headers by two mechanisms:
 

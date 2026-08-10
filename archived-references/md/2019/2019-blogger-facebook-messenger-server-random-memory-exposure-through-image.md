@@ -275,33 +275,33 @@ f.close()
 
  I started to test Facebook Messenger for Android with my generated GIFs (I had variations with different sizes, header fields), but nothing happened... Until I opened Messenger web page on my laptop and saw this weird image:
 
-| [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmHESC5SJuUmZAQk8l2Vy8tzUxETbNwPQf5jDvxUWiHZgzez6CP2YA7yF6UTNYBgoaRTLriv-W3BVIH0moEmH7OSPcxagQ8AlsJ4ZAz5ArfTQGsu857kghyoZCHEwnDo77JxZs-yOgsbGN/s1600/28277544_199756737442330_145618297780436992_n.gif) |  |
+| [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmHESC5SJuUmZAQk8l2Vy8tzUxETbNwPQf5jDvxUWiHZgzez6CP2YA7yF6UTNYBgoaRTLriv-W3BVIH0moEmH7OSPcxagQ8AlsJ4ZAz5ArfTQGsu857kghyoZCHEwnDo77JxZs-yOgsbGN/s400/28277544_199756737442330_145618297780436992_n.gif)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmHESC5SJuUmZAQk8l2Vy8tzUxETbNwPQf5jDvxUWiHZgzez6CP2YA7yF6UTNYBgoaRTLriv-W3BVIH0moEmH7OSPcxagQ8AlsJ4ZAz5ArfTQGsu857kghyoZCHEwnDo77JxZs-yOgsbGN/s1600/28277544_199756737442330_145618297780436992_n.gif) |  |
 | It was very small, increased size |  |
 
  Wait, but our GIF does't have any content, what image I have back from Facebook?
 
  I had changed GIF size and saw this white noise image, hm, looks also weird:
 
-| [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbscZi05yyQ399ux59B4mA6zEkBZOh5ANdVPXbgxdv48EcFboRQdP34SrkEd9ctxl15No3-a_2VgCKFvDIW8G1nkkzu6QizitWL5pICakVeajuSQhCgxpZqgKysXRw3MuAzSmRGFdAeg8j/s1600/fb_1.jpg) |  |
+| [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbscZi05yyQ399ux59B4mA6zEkBZOh5ANdVPXbgxdv48EcFboRQdP34SrkEd9ctxl15No3-a_2VgCKFvDIW8G1nkkzu6QizitWL5pICakVeajuSQhCgxpZqgKysXRw3MuAzSmRGFdAeg8j/s400/fb_1.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbscZi05yyQ399ux59B4mA6zEkBZOh5ANdVPXbgxdv48EcFboRQdP34SrkEd9ctxl15No3-a_2VgCKFvDIW8G1nkkzu6QizitWL5pICakVeajuSQhCgxpZqgKysXRw3MuAzSmRGFdAeg8j/s1600/fb_1.jpg) |  |
 | No TV signal |  |
 
  Really strange. I've uploaded the same binary again and saw:
 
-| [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi5UIK37AFvaArvwt7r6kJv7lwG2-YL9PBr7s4Hg4mZzFq2COVfzWz7g96WGrRQT4O89-DPjf01nGGI82dkvdS2fGxssoU8OHlwCj_ZDLRVplteq4hDowurGXe3rlz3fBFh2Fdr9pj8PwY/s1600/fb_2.jpg) |  |
+| [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi5UIK37AFvaArvwt7r6kJv7lwG2-YL9PBr7s4Hg4mZzFq2COVfzWz7g96WGrRQT4O89-DPjf01nGGI82dkvdS2fGxssoU8OHlwCj_ZDLRVplteq4hDowurGXe3rlz3fBFh2Fdr9pj8PwY/s400/fb_2.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi5UIK37AFvaArvwt7r6kJv7lwG2-YL9PBr7s4Hg4mZzFq2COVfzWz7g96WGrRQT4O89-DPjf01nGGI82dkvdS2fGxssoU8OHlwCj_ZDLRVplteq4hDowurGXe3rlz3fBFh2Fdr9pj8PwY/s1600/fb_2.jpg) |  |
 | Embedded TV screen in Messenger |  |
 
  Image a bit changed. But I uploaded the same GIF in both cases.
 
  After playing with GIF screen/image sizes:
 
-| [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQBhu4t7BPyH9tAeLTIDOT_k-zh897MZZjdB3L0n2UG1E4XZ9-QFutryX0QeSeQoew_J84cinE93cfl-gwsgf0PvW0XTp5isaUcB1FGkgVd5BlAahrw4t4qLMlPFYm-KbCHs9TlOo4VUk0/s1600/fb_3.jpg) |  |
+| [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQBhu4t7BPyH9tAeLTIDOT_k-zh897MZZjdB3L0n2UG1E4XZ9-QFutryX0QeSeQoew_J84cinE93cfl-gwsgf0PvW0XTp5isaUcB1FGkgVd5BlAahrw4t4qLMlPFYm-KbCHs9TlOo4VUk0/s400/fb_3.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQBhu4t7BPyH9tAeLTIDOT_k-zh897MZZjdB3L0n2UG1E4XZ9-QFutryX0QeSeQoew_J84cinE93cfl-gwsgf0PvW0XTp5isaUcB1FGkgVd5BlAahrw4t4qLMlPFYm-KbCHs9TlOo4VUk0/s1600/fb_3.jpg) |  |
 | Full screen picture |  |
 
  This reminds me situation when you tried to read image from file and used width instead of height.
 
  Finally I caught this output:
 
-| [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQgSZuJVSJgQ7_-wgJleZanmSCSTA6YlipL3ja1AGt52sw8cBbqJx_FX_xbCNSfKZwI65Dmc04kFUuZaLn1qgJIW4-AMTWsllA-qtnojkh-YfTqgudpHIqo7aQfJOBYu2CEqzVhirMyumW/s1600/fb_4.jpg) |  |
+| [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQgSZuJVSJgQ7_-wgJleZanmSCSTA6YlipL3ja1AGt52sw8cBbqJx_FX_xbCNSfKZwI65Dmc04kFUuZaLn1qgJIW4-AMTWsllA-qtnojkh-YfTqgudpHIqo7aQfJOBYu2CEqzVhirMyumW/s400/fb_4.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQgSZuJVSJgQ7_-wgJleZanmSCSTA6YlipL3ja1AGt52sw8cBbqJx_FX_xbCNSfKZwI65Dmc04kFUuZaLn1qgJIW4-AMTWsllA-qtnojkh-YfTqgudpHIqo7aQfJOBYu2CEqzVhirMyumW/s1600/fb_4.jpg) |  |
 | Semi stable TV signal in Messenger caught |  |
 
  And I realized that I'm getting some previous buffer for GIF image, because my image does't have content body.

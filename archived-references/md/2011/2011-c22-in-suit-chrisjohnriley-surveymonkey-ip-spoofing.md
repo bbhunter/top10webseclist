@@ -77,7 +77,7 @@ It’s amazing the things you find when you’re not really looking for them!
 
 A few weeks back I was finalizing some of the survey results for my #BSidesLondon talk when I noticed something interesting, if a little strange. When somebody fills out a survey on the [Surveymonkey ](http://www.surveymonkey.com)website, they record a number of pieces of meta data along with the survey answers. Things like data, time, link used to access the survey, and the IP Address of the personal completing the survey. This final piece of data was the one that really caught my attention, especially when I started seeing a number of [RFC1918 ](http://www.faqs.org/rfcs/rfc1918.html)addresses in with the mix. That’s a bit weird… why, and more interestingly, how are they getting these local addresses.
 
-[!](https://c22blog.wordpress.com/wp-content/uploads/2011/04/survey.png)
+[![](https://c22blog.wordpress.com/wp-content/uploads/2011/04/survey.png?w=300&h=151)](https://c22blog.wordpress.com/wp-content/uploads/2011/04/survey.png)
 
 A lot of thoughts went through my mind… client-side java checking for local address maybe… something like decloak. Still, that wouldn’t account for the fact that only occasional responses had the private address, when others had the public address (about 5-6 in the 100 responses I looked at).
 
@@ -94,17 +94,17 @@ X-Real-IP: 127.0.0.2
 ...
 ```
 
-[!](https://c22blog.wordpress.com/wp-content/uploads/2011/04/surveymonkey_127-0-0-11.png)
+[![](https://c22blog.wordpress.com/wp-content/uploads/2011/04/surveymonkey_127-0-0-11.png?w=630)](https://c22blog.wordpress.com/wp-content/uploads/2011/04/surveymonkey_127-0-0-11.png)
 
 Well that’s a bit of fun… I can set RFC1918 addresses… how totally fun, and at the same time useless as well. So taking this one step further, I thought, What would be possible with this. I can spoof the IP address of a person filling out a survey. Well, maybe I could specify a public IP address other than my own in this header too. If they’re not checking the string, maybe I can spoof a survey response from somebody who didn’t fill it out. Not really BIG impact, but if I fill out an anti-government survey from a Whitehouse IP address, I’m sure it’ll cause a bit of a stur. So, lets see if I can fill out this survey from China… after all, if the IP says China, it must be them right 😉
 
-[!](https://c22blog.wordpress.com/wp-content/uploads/2011/04/surveymonkey_china.png)OMG… China are all up in my survey, APTing me! (1.2.2.2 is one of the [IP ranges assigned to China](https://www.countryipblocks.net/e_country_data/CN_range.txt)). Still aside from framing nation states for filling in nasty comments on your surveys, what else can you do with this?
+[![](https://c22blog.wordpress.com/wp-content/uploads/2011/04/surveymonkey_china.png?w=630)](https://c22blog.wordpress.com/wp-content/uploads/2011/04/surveymonkey_china.png)OMG… China are all up in my survey, APTing me! (1.2.2.2 is one of the [IP ranges assigned to China](https://www.countryipblocks.net/e_country_data/CN_range.txt)). Still aside from framing nation states for filling in nasty comments on your surveys, what else can you do with this?
 
 I’m so glad you asked. Well, just because the X-Forwarded-For header is meant for transporting IP addresses of the client, doesn’t mean that’s what we’re going to put in there!
 
 The IP address is returned to the owner of the survey, and as such, is only viewable by authenticated users. I’m sure there are also places where this IP address are returned to administrators, support staff, etc… but that’s not something I was able to check. So, how about we put in something other than an IP address. Something simple to prove the point… some kind of alert box maybe.
 
-!
+![](https://c22blog.wordpress.com/wp-content/uploads/2011/04/surveymonkey_insertmsg1.png?w=630)
 
 Well, no. Not because it’s filtered though. In the case of the Surveymonkey, the returned data is filtered to 20 characters. Anything longer is stripped. So anything flashy is pretty much out of question. Actually, almost anything interesting is out of scope, unless you happen to own a domain name that’s 5 characters long (in total). Sadly, I only own a domain that’s 6 characters (c22.cc) which is a pity.
 
@@ -120,7 +120,7 @@ User-Agent: Mozilla/5.0
 ...
 ```
 
-[!](https://c22blog.wordpress.com/wp-content/uploads/2011/04/surveymonkey_iframe.png)
+[![](https://c22blog.wordpress.com/wp-content/uploads/2011/04/surveymonkey_iframe.png?w=630)](https://c22blog.wordpress.com/wp-content/uploads/2011/04/surveymonkey_iframe.png)
 
 I contacted Surveymonkey with the information discovered and they’ve begun looking into correcting the issue. The question that really interests me is, how many other sites are using the same system and trusting user provided headers. This is something that webapp testers “should” be testing for. Still, there are lots of things that testers “should” be doing!
 

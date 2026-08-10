@@ -96,7 +96,7 @@ This is of course irrelevant, unless you can actually change the settings automa
 
 Today, Opera released a new version, 9.62, with [a fix for a vulnerability](https://web.archive.org/web/20090403024932/http://www.opera.com/docs/changelogs/windows/962/) in a different local resource - the “History Search” page (opera:historysearch). The problem was that Opera did not sanitize specific parameters correctly, and an arbitrary script could be injected to this page. An attacker could then execute a script that will create an iframe which will open the opera:config local resource. And then, it will call a script within the opera:config page, which will change the settings and execute arbitrary code on the user’s machine as explained previously.
 
-[!](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/content/binary/operaconfig.png)
+[![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/content/binary/operaconfig.png)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/content/binary/operaconfig.png)
 
 The vulnerability in the “History Search” page [was found](https://web.archive.org/web/20090403024932/http://seclists.org/fulldisclosure/2008/Oct/0401.html) by Stefano Di Paola, during [our discussion](https://web.archive.org/web/20090403024932/http://seclists.org/fulldisclosure/2008/Oct/0415.html) on the full-disclosure mailing about an older vulnerability in the “History Page” that was found by Roberto Suggi and [was fixed by Opera](https://web.archive.org/web/20090403024932/http://www.opera.com/docs/changelogs/windows/961/) in version 9.61. I’ve created proof-of-concept codes which demonstrate the vulnerabilities. Both can be found on [milw0rm.com](https://web.archive.org/web/20090403024932/http://www.milw0rm.com/).
 
@@ -139,7 +139,7 @@ Nevertheless, my recommendation for Opera users is still [to upgrade to the late
 |   |
 
 | RSS Feeds |  |
-| [!](https://web.archive.org/web/20090403024932/http://feeds.feedburner.com/AvivRaffOnnet)[!](https://web.archive.org/web/20090403024932/http://feeds.feedburner.com/upcoming0days) |  |
+| [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/rss.jpg)](https://web.archive.org/web/20090403024932/http://feeds.feedburner.com/AvivRaffOnnet)[![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/rss0day.jpg)](https://web.archive.org/web/20090403024932/http://feeds.feedburner.com/upcoming0days) |  |
 
   |   |   |
 
@@ -154,14 +154,14 @@ Nevertheless, my recommendation for Opera users is still [to upgrade to the late
 | Blogroll |  |
 |
 
-|  [!](https://web.archive.org/web/20090403024932/http://arbel.net/blog/Rss.aspx)[ælij arbel](https://web.archive.org/web/20090403024932/http://arbel.net/blog/) |   |
-|  [!](https://web.archive.org/web/20090403024932/http://www.avidardik.com/feed/)[Avi Dardik](https://web.archive.org/web/20090403024932/http://www.avidardik.com/) |   |
-|  [!](https://web.archive.org/web/20090403024932/http://saguiitay.spaces.live.com/feed.rss)[Itay Sagui](https://web.archive.org/web/20090403024932/http://saguiitay.spaces.live.com/) |   |
-|  [!](https://web.archive.org/web/20090403024932/http://metasploit.blogspot.com/atom.xml)[Metasploit](https://web.archive.org/web/20090403024932/http://metasploit.blogspot.com/) |   |
-|  [!](https://web.archive.org/web/20090403024932/http://berendjanwever.blogspot.com/feeds/posts/default)[SkyLined](https://web.archive.org/web/20090403024932/http://berendjanwever.blogspot.com/) |   |
-|  [!](https://web.archive.org/web/20090403024932/http://www.theog.org/index.php/feed/)[The Og](https://web.archive.org/web/20090403024932/http://www.theog.org/) |   |
-|  [!](https://web.archive.org/web/20090403024932/http://www.youtube.com/watch?v=fALXpXWLH8Q)[אבי שמחי - חתונה עם גיטרה חשמלית](https://web.archive.org/web/20090403024932/http://www.youtube.com/watch?v=fALXpXWLH8Q) |   |
-|  [!](https://web.archive.org/web/20090403024932/http://www.ayacook.co.il/contact.html)[איה צור - קייטרינג גורמה](https://web.archive.org/web/20090403024932/http://www.ayacook.co.il/index.html) |   |
+|  [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20090403024932/http://arbel.net/blog/Rss.aspx)[ælij arbel](https://web.archive.org/web/20090403024932/http://arbel.net/blog/) |   |
+|  [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20090403024932/http://www.avidardik.com/feed/)[Avi Dardik](https://web.archive.org/web/20090403024932/http://www.avidardik.com/) |   |
+|  [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20090403024932/http://saguiitay.spaces.live.com/feed.rss)[Itay Sagui](https://web.archive.org/web/20090403024932/http://saguiitay.spaces.live.com/) |   |
+|  [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20090403024932/http://metasploit.blogspot.com/atom.xml)[Metasploit](https://web.archive.org/web/20090403024932/http://metasploit.blogspot.com/) |   |
+|  [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20090403024932/http://berendjanwever.blogspot.com/feeds/posts/default)[SkyLined](https://web.archive.org/web/20090403024932/http://berendjanwever.blogspot.com/) |   |
+|  [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20090403024932/http://www.theog.org/index.php/feed/)[The Og](https://web.archive.org/web/20090403024932/http://www.theog.org/) |   |
+|  [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20090403024932/http://www.youtube.com/watch?v=fALXpXWLH8Q)[אבי שמחי - חתונה עם גיטרה חשמלית](https://web.archive.org/web/20090403024932/http://www.youtube.com/watch?v=fALXpXWLH8Q) |   |
+|  [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20090403024932/http://www.ayacook.co.il/contact.html)[איה צור - קייטרינג גורמה](https://web.archive.org/web/20090403024932/http://www.ayacook.co.il/index.html) |   |
 
  |  |
 

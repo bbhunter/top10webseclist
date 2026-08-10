@@ -158,7 +158,14 @@ _FENCED = re.compile(r"^```.*?^```", re.MULTILINE | re.DOTALL)
 # empty anchor: a reader can neither see it nor use it, and the archive carries
 # 3,980 of them across 592 files - Medium's clap, bookmark and audio buttons,
 # every one a sign-in URL. Removing them loses a target nobody could ever reach.
-_TEXTLESS_LINK = re.compile(r"\[[ \t]*\]\(\s*https?://[^)\s]*(?:\s+\"[^\"]*\")?\)")
+#
+# `(?<!!)` IS LOAD-BEARING AND WAS MISSING. `![](figure.png)` is an image with no
+# alt text, and its `[](...)` tail matches this pattern exactly: without the
+# guard the rule deleted the image and left the `!` behind. It removed 2,847
+# figures from 431 documents before anybody looked at a PDF - including all 25
+# diagrams from the Sonar charset article, whose preserved copies were still
+# sitting in the store with nothing left to point at them.
+_TEXTLESS_LINK = re.compile(r"(?<!!)\[[ \t]*\]\(\s*https?://[^)\s]*(?:\s+\"[^\"]*\")?\)")
 
 # AN ANCHOR THAT WRAPPED BLOCK CONTENT converts with its brackets on lines of
 # their own, and Markdown has no such link: the reader sees a literal `[`, then

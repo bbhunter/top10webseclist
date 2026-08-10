@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 sla.ckers.org web application security forum :: Full Disclosure :: Widespread XSS for Google Search Appliance
 
- [!](http://www.webappsec.org/)
+ [![](http://ha.ckers.org/images/nto_banner.jpg)](http://www.webappsec.org/)
  Paid Advertising
 
 [SLA.CKERS.ORG](http://sla.ckers.org/)

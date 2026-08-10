@@ -86,7 +86,7 @@ setTimeout("document.getElementById('me').submit(); fillAutoComp();",2);
 
 <* iframe name="my_iframe"><* /iframe>
 
-[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDmJWUaoFKbEcbp4fW9a3vV3rvXMnQ3BCro7FYkT8YJDw_2Tq5ZfNY7AgX8VtPSI6lqJjgWYu9ykuqlLNYaN7bKN7RX9jdeybGYoDzOuQdNxzCKOcR0Ya2VJi-noyaWLZaLSP27g/s1600/firefox_autofill.png)
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDmJWUaoFKbEcbp4fW9a3vV3rvXMnQ3BCro7FYkT8YJDw_2Tq5ZfNY7AgX8VtPSI6lqJjgWYu9ykuqlLNYaN7bKN7RX9jdeybGYoDzOuQdNxzCKOcR0Ya2VJi-noyaWLZaLSP27g/s400/firefox_autofill.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDmJWUaoFKbEcbp4fW9a3vV3rvXMnQ3BCro7FYkT8YJDw_2Tq5ZfNY7AgX8VtPSI6lqJjgWYu9ykuqlLNYaN7bKN7RX9jdeybGYoDzOuQdNxzCKOcR0Ya2VJi-noyaWLZaLSP27g/s1600/firefox_autofill.png)
 Here’s where it gets a little bit more interesting. Firefox saves 200 characters of auto-complete data per entry and allows 100 text fields per form. While this might add up, th amount of data is no where near enough to fill up a hard drive before a user leaves the page. However, [Mozilla is working on a fix](https://bugzilla.mozilla.org/show_bug.cgi?id=578879) just the same. What you can do though is annoy a users by littering well-known auto-complete entries, like "email," with loads of surrounding crap data. If one were so inclined, you could also make it look like someone searched for something, or has an alias, that they didn’t type by spoofing auto-complete data. You get the idea.
 
 I attempted the same technique on Safari and Chrome. While it technically works, success was mitigated. In Safari, auto-complete data is site specific. Chrome restricts the number of auto-complete entries. Internet Explorer, no success.

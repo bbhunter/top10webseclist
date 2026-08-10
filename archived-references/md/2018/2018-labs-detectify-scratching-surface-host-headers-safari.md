@@ -158,7 +158,7 @@ With that said, they handled the report very well and wanted me to emphasize tha
 
 When using special characters in the subdomain we were greeted by a seemingly standard error that is actually vulnerable to XSS.
 
-[!](https://labsadmin.detectify.com/app/uploads/2018/04/host_header_404.png)
+[![](https://labsadmin.detectify.com/app/uploads/2018/04/host_header_404.png)](https://labsadmin.detectify.com/app/uploads/2018/04/host_header_404.png)
 
 However, I never took this any longer than HTML injection. All the payloads got stuck in the XSS auditor, which is no good for a Safari-only vulnerability.
 

@@ -69,8 +69,8 @@ page going offline. To read the original, follow the link above.
  *Who can you trust?*
 
 |  Speakers |   |
-|   [ ! ](https://fahrplan.events.ccc.de/congress/2006/Fahrplan/speakers/1155.en.html)  |   [Stefano Di Paola](https://fahrplan.events.ccc.de/congress/2006/Fahrplan/speakers/1155.en.html)  |   |
-|   [ ! ](https://fahrplan.events.ccc.de/congress/2006/Fahrplan/speakers/1152.en.html)  |   [Giorgio Fedon](https://fahrplan.events.ccc.de/congress/2006/Fahrplan/speakers/1152.en.html)  |   |
+|   [ ![](https://fahrplan.events.ccc.de/congress/2006/Fahrplan/images/speaker-1155-32x32.jpg) ](https://fahrplan.events.ccc.de/congress/2006/Fahrplan/speakers/1155.en.html)  |   [Stefano Di Paola](https://fahrplan.events.ccc.de/congress/2006/Fahrplan/speakers/1155.en.html)  |   |
+|   [ ![](https://fahrplan.events.ccc.de/congress/2006/Fahrplan/images/speaker-1152-32x32.jpg) ](https://fahrplan.events.ccc.de/congress/2006/Fahrplan/speakers/1152.en.html)  |   [Giorgio Fedon](https://fahrplan.events.ccc.de/congress/2006/Fahrplan/speakers/1152.en.html)  |   |
 
 |  Schedule |   |
 |  Day |  3 |   |
@@ -91,7 +91,7 @@ page going offline. To read the original, follow the link above.
 
 Next generation vulnerabilities in 2.0 Web Applications
 
- !
+ ![](https://fahrplan.events.ccc.de/congress/2006/Fahrplan/images/event-1602-128x128.png)
 
 Ajax and the new dynamic extensions leverage new threats that lead to innovative attack scenarios against web applications.
 

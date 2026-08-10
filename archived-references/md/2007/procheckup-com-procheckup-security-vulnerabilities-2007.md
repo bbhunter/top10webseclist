@@ -67,11 +67,11 @@ ProCheckUp - Security Vulnerabilities 2007
 
 |
 
-|  [!](http://www.procheckup.com/Home.php) |
+|  [![](http://www.procheckup.com/images/logo_procheckup.gif)](http://www.procheckup.com/Home.php) |
 
 |   |   |   |
-|  !! |   |   |  ! |   |
-|   ! |   |
+|  ![](http://www.procheckup.com/images/strapLine.gif)![](http://www.procheckup.com/images/Search_form_title.gif) |   |   |  ![](http://www.procheckup.com/images/spacer.gif) |   |
+|   ![](http://www.procheckup.com/images/spacer.gif) |   |
 
   |   |
 
@@ -79,21 +79,21 @@ ProCheckUp - Security Vulnerabilities 2007
 |   ![Vulnerabilities 2007 Banner](http://www.procheckup.com/images/Banner_Vulnerabilities.jpg)     |   |
 
  |   |
-|  ! |  ! |  ! |   |
-|  ! |  ! |  Monday 8 September 2008 |   |
-|  ! |  ! |  ! |   |
+|  ![](http://www.procheckup.com/images/spacer.gif) |  ![](http://www.procheckup.com/images/spacer.gif) |  ![](http://www.procheckup.com/images/spacer.gif) |   |
+|  ![](http://www.procheckup.com/images/telephoneNumberBig.gif) |  ![](http://www.procheckup.com/images/spacer.gif) |  Monday 8 September 2008 |   |
+|  ![](http://www.procheckup.com/images/spacer.gif) |  ![](http://www.procheckup.com/images/spacer.gif) |  ![](http://www.procheckup.com/images/spacer.gif) |   |
 |
 
-|  ! |   |
-|  [!](mailto:info@procheckup.com) |   |
-|  ! |   |
+|  ![](http://www.procheckup.com/images/home_Pro_address.gif) |   |
+|  [![](http://www.procheckup.com/images/home_Pro_address_email.gif)](mailto:info@procheckup.com) |   |
+|  ![](http://www.procheckup.com/images/home_Pro_address_phone.gif) |   |
 
  |
 
-|  ! |
+|  ![](http://www.procheckup.com/images/spacer.gif) |
 
-|  ! |   |
-|  ! |   |
+|  ![](http://www.procheckup.com/images/Title_vulner2007.gif) |   |
+|  ![](http://www.procheckup.com/images/spacer.gif) |   |
 |
 
  PR07-03: Microsoft ASP.NET request filtering can be bypassed allowing XSS and HTML injection attacks
@@ -192,11 +192,11 @@ Any other use of this information is prohibited. Procheckup is not liable for an
  |   |
 |
 
-!
+![](http://www.procheckup.com/images/spacer.gif)
 
  |   |
 
-  |  ! |   |
+  |  ![](http://www.procheckup.com/images/spacer.gif) |   |
 
  |
 
@@ -207,13 +207,13 @@ Any other use of this information is prohibited. Procheckup is not liable for an
   |   |
 |   |
 
-|  ! |   |
+|  ![](http://www.procheckup.com/images/spacer.gif) |   |
 |   |  [Site Map ](http://www.procheckup.com/Site-Map.php) |   |
-|  ! |  [Privacy Policy](http://www.procheckup.com/Privacy.php) |   |
-|  ! |   |
-|  ! |  [Terms and Conditions](http://www.procheckup.com/Terms.php) |   |
+|  ![](http://www.procheckup.com/images/spacer.gif) |  [Privacy Policy](http://www.procheckup.com/Privacy.php) |   |
+|  ![](http://www.procheckup.com/images/spacer.gif) |   |
+|  ![](http://www.procheckup.com/images/spacer.gif) |  [Terms and Conditions](http://www.procheckup.com/Terms.php) |   |
 
  |   |
-|  ! |  ! |  ! |   |
-|  ! |   |
+|  ![](http://www.procheckup.com/images/footer_corner_botLeft.gif) |  ![](http://www.procheckup.com/images/spacer.gif) |  ![](http://www.procheckup.com/images/footer_corner_botRight.gif) |   |
+|  ![](http://www.procheckup.com/images/spacer.gif) |   |
 |  © ProCheckUp Ltd 2008 |   |

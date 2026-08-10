@@ -99,7 +99,7 @@ So has her foray into hacking sold her on following her dad’s path?
 
 “For now I think it’s a one and done type thing because it’s such a frustrating process. In some ways I feel like I got lucky to find that,” she said.
 
- !
+ ![](http://web.archive.org/web/20160608162853im_/https://trtpost-wpengine.netdna-ssl.com/wp-content/uploads/avatars/12/1368562026-bpfull-68x68.jpg)
 
 ## About Dennis Fisher
 

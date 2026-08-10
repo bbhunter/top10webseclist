@@ -103,7 +103,7 @@ Don’t worry if you don’t get it, it’s confusing and frankly not that relev
 
 And this seemed to do the trick. We were greeted with about 40 alerts, because the nonce was reflected insecurely in about 40 scripts on the page.
 
-  !
+  ![](https://nokline.github.io/images/zoom_alert.png)
 
 Because Zoom takes their security seriously, there was a CSP policy on almost every page, meaning almost *every* page was vulnerable to this cookie XSS. Not only that, but since most zoom subdomains are actually clones of the main `zoom.us` domain, we actually had a cookie XSS on almost every page and on almost *every* subdomain on zoom. Quite a lot of “potential energy” here, however nothing actually exploitable yet.
 
@@ -157,7 +157,7 @@ location=`https://zoom.us/webinar/register`
 
 Here is a visual of how this XSS chain works, before we start exploiting it with OAuth Dirty Dancing and Browser Permission Hijacking. It’s quite detailed, so you can zoom in if you hover your mouse over the image.
 
-  !
+  ![](https://nokline.github.io/images/zoom_xss_graphic.png)
 
 ## Session Takeover by OAuth Dirty Dancing
 
@@ -240,7 +240,7 @@ https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=co
 
 This resulted in an error: *Nonce required for response_type id_token.*
 
-  !
+  ![](https://nokline.github.io/images/auth_error.png)
 
 Easy to fix, just add a nonce parameter to the URL with any value :)
 
@@ -253,9 +253,9 @@ Clicking on the Google account which we want to sign in with redirects us back t
 
 (On a side note, we can remove this step from the OAuth flow, which will make the exploit way smoother as no further user interaction will be needed then)
 
-  !
+  ![](https://nokline.github.io/images/burp.png)
 
-  !
+  ![](https://nokline.github.io/images/link_hover.png)
 
 As you remember the `response_type` parameter value was set to code but we modified it, this made the OAuth Provider send the authorization code in the hash fragment instead of the query parameter. The code is validated on the server side, and as the hash fragment part isn’t sent to the server, the code will not be consumed.
 
@@ -263,7 +263,7 @@ This creates an opportunity for an attacker to somehow steal this unused code, w
 
 In a normal OAuth flow, this a long process for Zoom. You can see in the below screenshot three subsequent requests are sent to get the final session cookie from the authorization code.
 
-  !
+  ![](https://nokline.github.io/images/history.png)
 
 It took a long time to figure out how to convert the code to a session cookie. We quickly thought what possibly could be done with that and OAuth Dirty Dance came in our mind. We didn’t spend time confirming all the steps that are needed for getting a session cookie as we were more focused on finding an XSS in a subdomain to do the cookie tossing.
 
@@ -344,11 +344,11 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
 The exploit’s client-side code is related to creating the relationship between XSS window and the authorization code window.
 
-  !
+  ![](https://nokline.github.io/images/source.png)
 
 Which looks like this
 
-  !
+  ![](https://nokline.github.io/images/exploit_ui.png)
 
 The form input field next to the `Submit` button contains the XSS payload which we are going to execute. The textarea field next to the `Start Exploit` link contains the required cookies for converting the authorization code to a session cookie. (These are sent to the attacker controlled domain and are only shown the webpage to make the triage process easier. In a real world scenerio, the victim will not see this and the form will submit automatically)
 
@@ -382,7 +382,7 @@ This payload is executed in the context of `redacted.zoom.us` in winA
 
 It sets the cookie `_zm_csp_script_nonce` for the domain `.zoom.us` with an XSS payload in it. We also added the path attribute for the cookie so that in case there exists a cookie already with the same name, our cookie will be prioritized due to the path attribute being more specific. After setting the XSS cookie we are redirecting the user to `https://zoom.us/webinar/register` endpoint which eventually reflects the malicious cookie set by us (any other endpoint can also be used here).
 
-  !
+  ![](https://nokline.github.io/images/cookies.png)
 
 Due to the redirect, winA is now on `http://zoom.us/webinar/register` instead of `http://redacted.zoom.us`.
 
@@ -416,17 +416,17 @@ window.opener.document.location
 
 ```
 
-  !
+  ![](https://nokline.github.io/images/popup.png)
 
 To retrieve the session cookie via this leaked authorization code, all the attacker needs to do is set the cookies which were there in the Set-Cookie header at the time of generating OAuth URL.
 
-  !
+  ![](https://nokline.github.io/images/all_cookies.png)
 
 After setting the cookies, just open the leaked URL which has the code and state in it. The attacker can retrieve this URL from its logs, and will successfully log in to the victim’s account.
 
 Here is a graphic we drew to help you visualize the OAuth Dirty Dancing attack flow:
 
-  !
+  ![](https://nokline.github.io/images/zoom_ato.png)
 
 After reporting this vulnerability, we were surprised to see that the Zoom team initially rated our exploit a “medium” severity. There seemed to be a misunderstanding on what they considered to be an “Account Takeover”, which they defined as completely resetting the user’s password and locking them out. Our exploit leaked the victim’s session in order to log into their account, without the ability to change the password. This is the reason we are using “Session Takeover” instead of “Account Takeover”, so we can be consistent with Zoom’s [VISS](https://viss.zoom.com) definition. While this was a bit disappointing considering the amount of work we put into this, we decided to accept this as a challenge and increase the impact.
 
@@ -448,7 +448,7 @@ Since we have a persistent exploit, we don’t need any more user interaction af
 
 First, we needed to find the feature which allows us to join or start a meeting. We found the “Join from Your Browser” link when launching a new meeting.
 
-  !
+  ![](https://nokline.github.io/images/web_zoom.png)
 
 Clicking on it redirected us to `app.zoom.us`. This is where the browser will ask you to accept permissions to use the camera and microphone if this is your first time using the web interface. If you already accepted these permissions in the past, it won’t ask you again. So this attack vector will only work for users who have used the web interface of Zoom at least once. To make this work, we need to execute javascript on `app.zoom.us`, and luckily for us, `app.zoom.us` is actually an exact clone of `zoom.us`, meaning our exploit chain works for this origin too.
 
@@ -481,7 +481,7 @@ navigator.mediaDevices.getUserMedia({ video: true })
 
 Obviously this isn’t malicious as it is, but now you can use webRTC and websockets to send the webcam’s video stream to a C2 server to spy on the user without having them accept any permissions.
 
-  !
+  ![](https://nokline.github.io/images/enable_camera_js.png)
 
 When looking for XSS, always take the context into consideration. Some webpages are more trusted and privileged than other web pages, whether it’s CORS, X-Frames or Browser permissions. So next time you find an XSS, do yourself a favor and enumerate browser permissions, because you might have struck gold.
 

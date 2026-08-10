@@ -67,13 +67,13 @@ I made a web challenge `pure-leak` for ASIS CTF Quals 2025 as a guest author.
 
 Congrats to `MEOW MEOW MEOW MEOW MEOW` and `Water Paddler` for solving it! 🎉
 
-!
+![](https://blog.arkark.dev/assets/images/top-01-45e96fcb73f791965f0accb6df9683a1.png)
 
 Despite its simplicity, the solution relies on several neat HTML/CSS tricks. Below I'll outline the key ideas and how they fit together.
 
 This is a fairly simple XS-Leaks challenge (but, "simple" doesn't mean "easy").
 
-!
+![](https://blog.arkark.dev/assets/images/overview-01-9afaeba6c111607ab52ad5db88d142f6.png)
 
 The server-side code is written in PHP:
 
@@ -244,9 +244,9 @@ As a related note, the traditional attack called **Relative Path Overwrite (RPO)
 
 Now, look at `index.php`. It emits `<!DOCTYPE html>` at the beginning, so the page is in **no-quirks mode**, not **quirks mode**, and the MIME-check relaxation doesn't apply.
 
-!
+![](https://blog.arkark.dev/assets/images/step1-01-ffa0df9c76891f3a28e200d938cb408e.png)
 
-!
+![](https://blog.arkark.dev/assets/images/step1-02-0b9e2915e55131c49d1b7179e5a715de.png)
 
 `document.compatMode === "CSS1Compat"` means the page is in no-quirks mode. So, CSS loading appears impossible... Really?
 
@@ -266,9 +266,9 @@ http://localhost:3000/?a&a&a&a&a&a&a&a&a&a&a&...<1001 parameters>...
 
 ```
 
-!
+![](https://blog.arkark.dev/assets/images/step1-03-d418f17f51cf4b457052e565cec5a80d.png)
 
-!
+![](https://blog.arkark.dev/assets/images/step1-04-40fb13d978ef5cbd336460a54c631114.png)
 
 `document.compatMode === "BackCompat"` means the page is in quirks mode.
 
@@ -294,13 +294,13 @@ location = `http://localhost:3000?content=${
 
 The answer is no. Before the HTML injection point, the page contains `/*`, so the payload lands inside a CSS comment. Because using `*` is disallowed by validation, we can't close the comment.
 
-!
+![](https://blog.arkark.dev/assets/images/step2-01-f0f7d1159a6f7848bebd6e39808e3b04.png)
 
 We need an endpoint where we control raw text without landing inside a comment.
 
 Conveniently, PHP's built-in 404 page includes the requested URL in the response body. We can leverage it for CSS injection.
 
-!
+![](https://blog.arkark.dev/assets/images/step2-02-1611236f0df9827de35020838f4e1cbd.png)
 
 In fact, the CSS injection works at `/not-found.txt?{}body{background:limegreen}`:
 
@@ -320,7 +320,7 @@ location = `http://localhost:3000?content=${
 
 ```
 
-!
+![](https://blog.arkark.dev/assets/images/step2-03-4073fdec82ec43d35a2e860e41f9ab5b.png)
 
 A classic CSS exfiltration payload looks like:
 
@@ -373,11 +373,11 @@ location = `http://localhost:3000?content=${
 
 ```
 
-Rendered HTML: !
+Rendered HTML: ![](https://blog.arkark.dev/assets/images/step3-01-653ebe7c6b6e0aca59686725b1478181.png)
 
-Match (`pattern=".+TOKEN_012.+"`): !
+Match (`pattern=".+TOKEN_012.+"`): ![](https://blog.arkark.dev/assets/images/step3-02-3039ac775af5b4f268ae1dc0ac9f6e55.png)
 
-Miss (`pattern=".+TOKEN_01a.+"`): !
+Miss (`pattern=".+TOKEN_01a.+"`): ![](https://blog.arkark.dev/assets/images/step3-03-ff0894cbf78547fd12952b714b14a393.png)
 
 We still need to address Issue 2 (we can't use `url(...)` due to `default-src 'self'`).
 
@@ -389,11 +389,11 @@ As an important fact, `<embed>` (or `<object>`) increments `window.length` unles
 
 No style applied → `window.length === 1`:
 
-!
+![](https://blog.arkark.dev/assets/images/step4-01-6638f63cd9bb18ec7e7af56e1b41d362.png)
 
 CSS with `display:none` applied → `window.length === 0`:
 
-!
+![](https://blog.arkark.dev/assets/images/step4-02-4a636742d8441017a34fb5f703d4b3d8.png)
 
 This yields a **stable** and **fast** oracle without any external requests:
 

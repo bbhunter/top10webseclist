@@ -91,7 +91,7 @@ A curious search on Shodan revealed [880,000+ websites](https://www.shodan.io/se
 
 A home computer on a 100Mbps connection can render a vulnerable server inaccessible within seconds. Against Apache httpd and Envoy, a single client can consume and hold 32GB of server memory in roughly 20 seconds.
 
-[!](https://substackcdn.com/image/fetch/$s_!b5uX!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5ca91bca-3d08-428c-aed2-64a4b18bdd63_1920x1080.gif)
+[![](https://substackcdn.com/image/fetch/$s_!b5uX!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5ca91bca-3d08-428c-aed2-64a4b18bdd63_1920x1080.gif)](https://substackcdn.com/image/fetch/$s_!b5uX!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5ca91bca-3d08-428c-aed2-64a4b18bdd63_1920x1080.gif)
 
 *Clockwise from top-left: Apache httpd, Envoy, nginx, Microsoft IIS. (2× playback)*
 

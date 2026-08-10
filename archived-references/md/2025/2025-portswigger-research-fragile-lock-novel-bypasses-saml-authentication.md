@@ -123,7 +123,7 @@ The recent increase in SAML vulnerabilities shows that secure authentication can
 
 ### Service Provider-initiated SAML Flow
 
-!
+![](https://portswigger.net/cms/images/54/9d/57d1-article-service-provider-initiated-flow.png)
 
 The Service Provider-Initiated (SP-Initiated) SAML flow is the most common way users authenticate through SAML. It starts when a user tries to access a protected resource on the service provider’s website. Since the user is not yet authenticated, the service provider generates a SAML authentication request and redirects the user to the Identity Provider (IdP) for verification.
 
@@ -139,7 +139,7 @@ Juraj Somorovsky, in his research "[On Breaking SAML: Be Whoever You Want to Be]
 
 ### Complete authentication bypass
 
-!
+![](https://portswigger.net/cms/images/cc/b4/adc4-article-methodology.png)
 
 So we take a different approach. Instead of trying to steal or reuse a signed Assertion, we simply reuse any other XML document signed with the IdP’s private key.
 

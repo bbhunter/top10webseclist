@@ -100,7 +100,7 @@ The following is a step-by-step explanation of how this vulnerability is used fo
 
 In this situation, the `Referer` header is never checked because the response comes from the cache. Therefore, the attacker gains access to cached private information.
 
-!
+![](https://cdn.acunetix.com/wp_content/uploads/2019/04/sop-bypass.png)
 
 ## Similar Vulnerabilities
 

@@ -115,7 +115,7 @@ Resources
 
 ### Featured
 
-!
+![](https://framerusercontent.com/images/depLwh3mDdtWeMNZ6PgLgpIVw.png?width=1424&height=718)
 
 #### Threat Intelligence
 
@@ -127,11 +127,11 @@ Aug. 3, 2026 | Many malicious links and websites are finding their ways into the
 
  [read post](https://www.netcraft.com/blog/threat-actors-are-finding-their-way-into-your-ai-summaries)
 
-!
+![](https://framerusercontent.com/images/a0sbqe3GhE9YYH32znoQlaSTY8.svg?width=1780&height=979)
 
 ## All Blogs
 
-!
+![](https://framerusercontent.com/images/usKcB4L64mznkoGsMnIwmB1N6aM.svg?width=25&height=27)
 
 Search
 
@@ -151,23 +151,23 @@ Netcraft Signal
 
 Netcraft Updates
 
- [! #### Threat Intelligence Threat Actors are Finding Their Way into Your AI Summaries Aug. 3, 2026 | Many malicious links and websites are finding their ways into the "AI overviews" in popular search engines when users look for financial institutions. By Ginny Spicer](https://www.netcraft.com/blog/threat-actors-are-finding-their-way-into-your-ai-summaries)
+ [![](https://framerusercontent.com/images/depLwh3mDdtWeMNZ6PgLgpIVw.png?width=1424&height=718) #### Threat Intelligence Threat Actors are Finding Their Way into Your AI Summaries Aug. 3, 2026 | Many malicious links and websites are finding their ways into the "AI overviews" in popular search engines when users look for financial institutions. By Ginny Spicer](https://www.netcraft.com/blog/threat-actors-are-finding-their-way-into-your-ai-summaries)
 
- [! #### Netcraft Signal How Attackers Use Telegram and WhatsApp to Scale Credential Theft July 30, 2026 | Rather than distributing static files through underground forums, operators use messaging platforms to recruit affiliates, deliver updates, and support campaigns in real time. By Emily L. Phelps](https://www.netcraft.com/blog/how-attackers-use-telegram-and-whatsapp-credential-theft)
+ [![](https://framerusercontent.com/images/IIm2xycKgsZJRcsBPtlJUpWzcfM.png?width=1424&height=718) #### Netcraft Signal How Attackers Use Telegram and WhatsApp to Scale Credential Theft July 30, 2026 | Rather than distributing static files through underground forums, operators use messaging platforms to recruit affiliates, deliver updates, and support campaigns in real time. By Emily L. Phelps](https://www.netcraft.com/blog/how-attackers-use-telegram-and-whatsapp-credential-theft)
 
- [! #### Netcraft Signal How the Rise of AI ‘Vibe Coding’ Introduced a New Phishing Shortcut for Cybercriminals July 28, 2026 | The same features that make vibe coding appealing to legitimate builders are exactly what also makes it appealing to fraudsters. By Jon Munshaw](https://www.netcraft.com/blog/rise-of-ai-vibe-coding-and-new-cyber-threats)
+ [![](https://framerusercontent.com/images/O3qWmdrwSy8QW7kjzmfe2aiXFg.png?width=1424&height=718) #### Netcraft Signal How the Rise of AI ‘Vibe Coding’ Introduced a New Phishing Shortcut for Cybercriminals July 28, 2026 | The same features that make vibe coding appealing to legitimate builders are exactly what also makes it appealing to fraudsters. By Jon Munshaw](https://www.netcraft.com/blog/rise-of-ai-vibe-coding-and-new-cyber-threats)
 
- [! #### Web Server Survey July 2026 Web Server Survey In the July 2026 survey we received responses from 1,494,915,628 sites across 305,348,459 domains and 14,772,048 web-facing computers. This reflects an increase of 5.5 million sites, 1.2 million domains, and 118,277 web-facing computers. OpenResty experienced the largest gain of 39.5 million sites (+49.1%) this month, and now accounts fo...](https://www.netcraft.com/blog/july-2026-web-server-survey)
+ [![](https://framerusercontent.com/images/LQqFPHWrCL4sgaTFktJsxi1A.png?width=1424&height=718) #### Web Server Survey July 2026 Web Server Survey In the July 2026 survey we received responses from 1,494,915,628 sites across 305,348,459 domains and 14,772,048 web-facing computers. This reflects an increase of 5.5 million sites, 1.2 million domains, and 118,277 web-facing computers. OpenResty experienced the largest gain of 39.5 million sites (+49.1%) this month, and now accounts fo...](https://www.netcraft.com/blog/july-2026-web-server-survey)
 
- [! #### Netcraft Signal Australia's SPF Has No "Reasonable Steps" Checklist. Build Your Own. July 22, 2026 | Australia's Scams Prevention Framework requires banks to take reasonable steps to prevent scams. Learn what the new obligations mean and how to prepare. By Billy Johns-Teni](https://www.netcraft.com/blog/australia-spf-has-no-reasonable-steps-checklist)
+ [![](https://framerusercontent.com/images/S5WturRpXTliVcjbTjo8cBgtfj0.png?width=1424&height=718) #### Netcraft Signal Australia's SPF Has No "Reasonable Steps" Checklist. Build Your Own. July 22, 2026 | Australia's Scams Prevention Framework requires banks to take reasonable steps to prevent scams. Learn what the new obligations mean and how to prepare. By Billy Johns-Teni](https://www.netcraft.com/blog/australia-spf-has-no-reasonable-steps-checklist)
 
- [! #### Threat Intelligence From Fake W-8BEN Forms to Crypto Deposits: Scammers Exploit SpaceX IPO Hype July 15, 2026 | Scammers are setting up fake web pages offering access to the record-breaking IPO. By Ivan Khamenka](https://www.netcraft.com/blog/fake-tax-forms-spacex-ipo-offer)
+ [![](https://framerusercontent.com/images/I4s39WvUARfPeSoFaPx3rP78.png?width=1424&height=718) #### Threat Intelligence From Fake W-8BEN Forms to Crypto Deposits: Scammers Exploit SpaceX IPO Hype July 15, 2026 | Scammers are setting up fake web pages offering access to the record-breaking IPO. By Ivan Khamenka](https://www.netcraft.com/blog/fake-tax-forms-spacex-ipo-offer)
 
  [![A screenshot displaying Netcraft's newly updated dashboard with a cleaner user experience.](https://framerusercontent.com/images/jB3qjxwvFZ6u8i742uQy6LuJmcA.png?width=879&height=533) #### Netcraft Updates The Outcomes Were Always There. Now the Experience is, Too. July 13, 2026 | Introducing the new user interface in Netcraft's dashboard By Marcus Chandler](https://www.netcraft.com/blog/netcraft-launches-new-ui-dashboard)
 
  [![Why brand protection monitoring struggles as attack surfaces sprawl](https://framerusercontent.com/images/YVd3XBxPQDn1uuGPh21cuPbySYA.png?width=1424&height=718) #### Netcraft Signal Why Brand Protection Monitoring Struggles as Attack Surfaces Sprawl July 7, 2026 | Brand protection breaks down when monitoring is fragmented. Learn how attack surface sprawl creates risk, and why cross-channel coverage is essential. By Emily L. Phelps](https://www.netcraft.com/blog/brand-protection-monitoring)
 
- [! #### Threat Intelligence Branded Gambling Campaigns: How Scammers Are Exploiting Trusted Brand Names to Drive Casino Traffic July 2, 2026 | Learn how scammers use fake gambling ads, app store pages, and PWAs to impersonate trusted brands and drive users to online casinos. By Gina Chow](https://www.netcraft.com/blog/branded-gambling-campaigns-how-scammers-are-exploiting-trusted-brands)
+ [![](https://framerusercontent.com/images/tvtKIDQOw0E6EIWSDc0nCYO8s.png?width=1424&height=718) #### Threat Intelligence Branded Gambling Campaigns: How Scammers Are Exploiting Trusted Brand Names to Drive Casino Traffic July 2, 2026 | Learn how scammers use fake gambling ads, app store pages, and PWAs to impersonate trusted brands and drive users to online casinos. By Gina Chow](https://www.netcraft.com/blog/branded-gambling-campaigns-how-scammers-are-exploiting-trusted-brands)
 
  [![An illustration of banks and computer users with the text "What Australia's new Scams Prevention Framework means for banks"](https://framerusercontent.com/images/R4KTvMYlf4NgrIEFPNgeMOiUM.png?width=1424&height=718) #### Netcraft Signal Australia's Scams Prevention Framework: What the New Obligations Mean for Banks June 30, 2026 | The future tense is over. Here's what changed, what's settled, what's still coming, and why "reasonable steps" can't live in a policy PDF. By Billy Johns-Teni](https://www.netcraft.com/blog/australia-scams-prevention-framework-what-the-new-obligations-mean-for-banks)
 
@@ -175,7 +175,7 @@ Load more
 
 ## All Blogs
 
-!
+![](https://framerusercontent.com/images/usKcB4L64mznkoGsMnIwmB1N6aM.svg?width=25&height=27)
 
 Search
 
@@ -195,23 +195,23 @@ Netcraft Signal
 
 Netcraft Updates
 
- [! #### Threat Intelligence Threat Actors are Finding Their Way into Your AI Summaries Aug. 3, 2026 | Many malicious links and websites are finding their ways into the "AI overviews" in popular search engines when users look for financial institutions. By Ginny Spicer](https://www.netcraft.com/blog/threat-actors-are-finding-their-way-into-your-ai-summaries)
+ [![](https://framerusercontent.com/images/depLwh3mDdtWeMNZ6PgLgpIVw.png?width=1424&height=718) #### Threat Intelligence Threat Actors are Finding Their Way into Your AI Summaries Aug. 3, 2026 | Many malicious links and websites are finding their ways into the "AI overviews" in popular search engines when users look for financial institutions. By Ginny Spicer](https://www.netcraft.com/blog/threat-actors-are-finding-their-way-into-your-ai-summaries)
 
- [! #### Netcraft Signal How Attackers Use Telegram and WhatsApp to Scale Credential Theft July 30, 2026 | Rather than distributing static files through underground forums, operators use messaging platforms to recruit affiliates, deliver updates, and support campaigns in real time. By Emily L. Phelps](https://www.netcraft.com/blog/how-attackers-use-telegram-and-whatsapp-credential-theft)
+ [![](https://framerusercontent.com/images/IIm2xycKgsZJRcsBPtlJUpWzcfM.png?width=1424&height=718) #### Netcraft Signal How Attackers Use Telegram and WhatsApp to Scale Credential Theft July 30, 2026 | Rather than distributing static files through underground forums, operators use messaging platforms to recruit affiliates, deliver updates, and support campaigns in real time. By Emily L. Phelps](https://www.netcraft.com/blog/how-attackers-use-telegram-and-whatsapp-credential-theft)
 
- [! #### Netcraft Signal How the Rise of AI ‘Vibe Coding’ Introduced a New Phishing Shortcut for Cybercriminals July 28, 2026 | The same features that make vibe coding appealing to legitimate builders are exactly what also makes it appealing to fraudsters. By Jon Munshaw](https://www.netcraft.com/blog/rise-of-ai-vibe-coding-and-new-cyber-threats)
+ [![](https://framerusercontent.com/images/O3qWmdrwSy8QW7kjzmfe2aiXFg.png?width=1424&height=718) #### Netcraft Signal How the Rise of AI ‘Vibe Coding’ Introduced a New Phishing Shortcut for Cybercriminals July 28, 2026 | The same features that make vibe coding appealing to legitimate builders are exactly what also makes it appealing to fraudsters. By Jon Munshaw](https://www.netcraft.com/blog/rise-of-ai-vibe-coding-and-new-cyber-threats)
 
- [! #### Web Server Survey July 2026 Web Server Survey In the July 2026 survey we received responses from 1,494,915,628 sites across 305,348,459 domains and 14,772,048 web-facing computers. This reflects an increase of 5.5 million sites, 1.2 million domains, and 118,277 web-facing computers. OpenResty experienced the largest gain of 39.5 million sites (+49.1%) this month, and now accounts fo...](https://www.netcraft.com/blog/july-2026-web-server-survey)
+ [![](https://framerusercontent.com/images/LQqFPHWrCL4sgaTFktJsxi1A.png?width=1424&height=718) #### Web Server Survey July 2026 Web Server Survey In the July 2026 survey we received responses from 1,494,915,628 sites across 305,348,459 domains and 14,772,048 web-facing computers. This reflects an increase of 5.5 million sites, 1.2 million domains, and 118,277 web-facing computers. OpenResty experienced the largest gain of 39.5 million sites (+49.1%) this month, and now accounts fo...](https://www.netcraft.com/blog/july-2026-web-server-survey)
 
- [! #### Netcraft Signal Australia's SPF Has No "Reasonable Steps" Checklist. Build Your Own. July 22, 2026 | Australia's Scams Prevention Framework requires banks to take reasonable steps to prevent scams. Learn what the new obligations mean and how to prepare. By Billy Johns-Teni](https://www.netcraft.com/blog/australia-spf-has-no-reasonable-steps-checklist)
+ [![](https://framerusercontent.com/images/S5WturRpXTliVcjbTjo8cBgtfj0.png?width=1424&height=718) #### Netcraft Signal Australia's SPF Has No "Reasonable Steps" Checklist. Build Your Own. July 22, 2026 | Australia's Scams Prevention Framework requires banks to take reasonable steps to prevent scams. Learn what the new obligations mean and how to prepare. By Billy Johns-Teni](https://www.netcraft.com/blog/australia-spf-has-no-reasonable-steps-checklist)
 
- [! #### Threat Intelligence From Fake W-8BEN Forms to Crypto Deposits: Scammers Exploit SpaceX IPO Hype July 15, 2026 | Scammers are setting up fake web pages offering access to the record-breaking IPO. By Ivan Khamenka](https://www.netcraft.com/blog/fake-tax-forms-spacex-ipo-offer)
+ [![](https://framerusercontent.com/images/I4s39WvUARfPeSoFaPx3rP78.png?width=1424&height=718) #### Threat Intelligence From Fake W-8BEN Forms to Crypto Deposits: Scammers Exploit SpaceX IPO Hype July 15, 2026 | Scammers are setting up fake web pages offering access to the record-breaking IPO. By Ivan Khamenka](https://www.netcraft.com/blog/fake-tax-forms-spacex-ipo-offer)
 
  [![A screenshot displaying Netcraft's newly updated dashboard with a cleaner user experience.](https://framerusercontent.com/images/jB3qjxwvFZ6u8i742uQy6LuJmcA.png?width=879&height=533) #### Netcraft Updates The Outcomes Were Always There. Now the Experience is, Too. July 13, 2026 | Introducing the new user interface in Netcraft's dashboard By Marcus Chandler](https://www.netcraft.com/blog/netcraft-launches-new-ui-dashboard)
 
  [![Why brand protection monitoring struggles as attack surfaces sprawl](https://framerusercontent.com/images/YVd3XBxPQDn1uuGPh21cuPbySYA.png?width=1424&height=718) #### Netcraft Signal Why Brand Protection Monitoring Struggles as Attack Surfaces Sprawl July 7, 2026 | Brand protection breaks down when monitoring is fragmented. Learn how attack surface sprawl creates risk, and why cross-channel coverage is essential. By Emily L. Phelps](https://www.netcraft.com/blog/brand-protection-monitoring)
 
- [! #### Threat Intelligence Branded Gambling Campaigns: How Scammers Are Exploiting Trusted Brand Names to Drive Casino Traffic July 2, 2026 | Learn how scammers use fake gambling ads, app store pages, and PWAs to impersonate trusted brands and drive users to online casinos. By Gina Chow](https://www.netcraft.com/blog/branded-gambling-campaigns-how-scammers-are-exploiting-trusted-brands)
+ [![](https://framerusercontent.com/images/tvtKIDQOw0E6EIWSDc0nCYO8s.png?width=1424&height=718) #### Threat Intelligence Branded Gambling Campaigns: How Scammers Are Exploiting Trusted Brand Names to Drive Casino Traffic July 2, 2026 | Learn how scammers use fake gambling ads, app store pages, and PWAs to impersonate trusted brands and drive users to online casinos. By Gina Chow](https://www.netcraft.com/blog/branded-gambling-campaigns-how-scammers-are-exploiting-trusted-brands)
 
  [![An illustration of banks and computer users with the text "What Australia's new Scams Prevention Framework means for banks"](https://framerusercontent.com/images/R4KTvMYlf4NgrIEFPNgeMOiUM.png?width=1424&height=718) #### Netcraft Signal Australia's Scams Prevention Framework: What the New Obligations Mean for Banks June 30, 2026 | The future tense is over. Here's what changed, what's settled, what's still coming, and why "reasonable steps" can't live in a policy PDF. By Billy Johns-Teni](https://www.netcraft.com/blog/australia-scams-prevention-framework-what-the-new-obligations-mean-for-banks)
 
@@ -219,7 +219,7 @@ Load more
 
 ## All Blogs
 
-!
+![](https://framerusercontent.com/images/usKcB4L64mznkoGsMnIwmB1N6aM.svg?width=25&height=27)
 
 Search
 
@@ -239,23 +239,23 @@ Netcraft Signal
 
 Netcraft Updates
 
- [! #### Threat Intelligence Threat Actors are Finding Their Way into Your AI Summaries Aug. 3, 2026 | Many malicious links and websites are finding their ways into the "AI overviews" in popular search engines when users look for financial institutions. By Ginny Spicer](https://www.netcraft.com/blog/threat-actors-are-finding-their-way-into-your-ai-summaries)
+ [![](https://framerusercontent.com/images/depLwh3mDdtWeMNZ6PgLgpIVw.png?width=1424&height=718) #### Threat Intelligence Threat Actors are Finding Their Way into Your AI Summaries Aug. 3, 2026 | Many malicious links and websites are finding their ways into the "AI overviews" in popular search engines when users look for financial institutions. By Ginny Spicer](https://www.netcraft.com/blog/threat-actors-are-finding-their-way-into-your-ai-summaries)
 
- [! #### Netcraft Signal How Attackers Use Telegram and WhatsApp to Scale Credential Theft July 30, 2026 | Rather than distributing static files through underground forums, operators use messaging platforms to recruit affiliates, deliver updates, and support campaigns in real time. By Emily L. Phelps](https://www.netcraft.com/blog/how-attackers-use-telegram-and-whatsapp-credential-theft)
+ [![](https://framerusercontent.com/images/IIm2xycKgsZJRcsBPtlJUpWzcfM.png?width=1424&height=718) #### Netcraft Signal How Attackers Use Telegram and WhatsApp to Scale Credential Theft July 30, 2026 | Rather than distributing static files through underground forums, operators use messaging platforms to recruit affiliates, deliver updates, and support campaigns in real time. By Emily L. Phelps](https://www.netcraft.com/blog/how-attackers-use-telegram-and-whatsapp-credential-theft)
 
- [! #### Netcraft Signal How the Rise of AI ‘Vibe Coding’ Introduced a New Phishing Shortcut for Cybercriminals July 28, 2026 | The same features that make vibe coding appealing to legitimate builders are exactly what also makes it appealing to fraudsters. By Jon Munshaw](https://www.netcraft.com/blog/rise-of-ai-vibe-coding-and-new-cyber-threats)
+ [![](https://framerusercontent.com/images/O3qWmdrwSy8QW7kjzmfe2aiXFg.png?width=1424&height=718) #### Netcraft Signal How the Rise of AI ‘Vibe Coding’ Introduced a New Phishing Shortcut for Cybercriminals July 28, 2026 | The same features that make vibe coding appealing to legitimate builders are exactly what also makes it appealing to fraudsters. By Jon Munshaw](https://www.netcraft.com/blog/rise-of-ai-vibe-coding-and-new-cyber-threats)
 
- [! #### Web Server Survey July 2026 Web Server Survey In the July 2026 survey we received responses from 1,494,915,628 sites across 305,348,459 domains and 14,772,048 web-facing computers. This reflects an increase of 5.5 million sites, 1.2 million domains, and 118,277 web-facing computers. OpenResty experienced the largest gain of 39.5 million sites (+49.1%) this month, and now accounts fo...](https://www.netcraft.com/blog/july-2026-web-server-survey)
+ [![](https://framerusercontent.com/images/LQqFPHWrCL4sgaTFktJsxi1A.png?width=1424&height=718) #### Web Server Survey July 2026 Web Server Survey In the July 2026 survey we received responses from 1,494,915,628 sites across 305,348,459 domains and 14,772,048 web-facing computers. This reflects an increase of 5.5 million sites, 1.2 million domains, and 118,277 web-facing computers. OpenResty experienced the largest gain of 39.5 million sites (+49.1%) this month, and now accounts fo...](https://www.netcraft.com/blog/july-2026-web-server-survey)
 
- [! #### Netcraft Signal Australia's SPF Has No "Reasonable Steps" Checklist. Build Your Own. July 22, 2026 | Australia's Scams Prevention Framework requires banks to take reasonable steps to prevent scams. Learn what the new obligations mean and how to prepare. By Billy Johns-Teni](https://www.netcraft.com/blog/australia-spf-has-no-reasonable-steps-checklist)
+ [![](https://framerusercontent.com/images/S5WturRpXTliVcjbTjo8cBgtfj0.png?width=1424&height=718) #### Netcraft Signal Australia's SPF Has No "Reasonable Steps" Checklist. Build Your Own. July 22, 2026 | Australia's Scams Prevention Framework requires banks to take reasonable steps to prevent scams. Learn what the new obligations mean and how to prepare. By Billy Johns-Teni](https://www.netcraft.com/blog/australia-spf-has-no-reasonable-steps-checklist)
 
- [! #### Threat Intelligence From Fake W-8BEN Forms to Crypto Deposits: Scammers Exploit SpaceX IPO Hype July 15, 2026 | Scammers are setting up fake web pages offering access to the record-breaking IPO. By Ivan Khamenka](https://www.netcraft.com/blog/fake-tax-forms-spacex-ipo-offer)
+ [![](https://framerusercontent.com/images/I4s39WvUARfPeSoFaPx3rP78.png?width=1424&height=718) #### Threat Intelligence From Fake W-8BEN Forms to Crypto Deposits: Scammers Exploit SpaceX IPO Hype July 15, 2026 | Scammers are setting up fake web pages offering access to the record-breaking IPO. By Ivan Khamenka](https://www.netcraft.com/blog/fake-tax-forms-spacex-ipo-offer)
 
  [![A screenshot displaying Netcraft's newly updated dashboard with a cleaner user experience.](https://framerusercontent.com/images/jB3qjxwvFZ6u8i742uQy6LuJmcA.png?width=879&height=533) #### Netcraft Updates The Outcomes Were Always There. Now the Experience is, Too. July 13, 2026 | Introducing the new user interface in Netcraft's dashboard By Marcus Chandler](https://www.netcraft.com/blog/netcraft-launches-new-ui-dashboard)
 
  [![Why brand protection monitoring struggles as attack surfaces sprawl](https://framerusercontent.com/images/YVd3XBxPQDn1uuGPh21cuPbySYA.png?width=1424&height=718) #### Netcraft Signal Why Brand Protection Monitoring Struggles as Attack Surfaces Sprawl July 7, 2026 | Brand protection breaks down when monitoring is fragmented. Learn how attack surface sprawl creates risk, and why cross-channel coverage is essential. By Emily L. Phelps](https://www.netcraft.com/blog/brand-protection-monitoring)
 
- [! #### Threat Intelligence Branded Gambling Campaigns: How Scammers Are Exploiting Trusted Brand Names to Drive Casino Traffic July 2, 2026 | Learn how scammers use fake gambling ads, app store pages, and PWAs to impersonate trusted brands and drive users to online casinos. By Gina Chow](https://www.netcraft.com/blog/branded-gambling-campaigns-how-scammers-are-exploiting-trusted-brands)
+ [![](https://framerusercontent.com/images/tvtKIDQOw0E6EIWSDc0nCYO8s.png?width=1424&height=718) #### Threat Intelligence Branded Gambling Campaigns: How Scammers Are Exploiting Trusted Brand Names to Drive Casino Traffic July 2, 2026 | Learn how scammers use fake gambling ads, app store pages, and PWAs to impersonate trusted brands and drive users to online casinos. By Gina Chow](https://www.netcraft.com/blog/branded-gambling-campaigns-how-scammers-are-exploiting-trusted-brands)
 
  [![An illustration of banks and computer users with the text "What Australia's new Scams Prevention Framework means for banks"](https://framerusercontent.com/images/R4KTvMYlf4NgrIEFPNgeMOiUM.png?width=1424&height=718) #### Netcraft Signal Australia's Scams Prevention Framework: What the New Obligations Mean for Banks June 30, 2026 | The future tense is over. Here's what changed, what's settled, what's still coming, and why "reasonable steps" can't live in a policy PDF. By Billy Johns-Teni](https://www.netcraft.com/blog/australia-scams-prevention-framework-what-the-new-obligations-mean-for-banks)
 
@@ -263,7 +263,7 @@ Load more
 
 ## All Blogs
 
-!
+![](https://framerusercontent.com/images/usKcB4L64mznkoGsMnIwmB1N6aM.svg?width=25&height=27)
 
 Search
 
@@ -283,23 +283,23 @@ Netcraft Signal
 
 Netcraft Updates
 
- [! #### Threat Intelligence Threat Actors are Finding Their Way into Your AI Summaries Aug. 3, 2026 | Many malicious links and websites are finding their ways into the "AI overviews" in popular search engines when users look for financial institutions. By Ginny Spicer](https://www.netcraft.com/blog/threat-actors-are-finding-their-way-into-your-ai-summaries)
+ [![](https://framerusercontent.com/images/depLwh3mDdtWeMNZ6PgLgpIVw.png?width=1424&height=718) #### Threat Intelligence Threat Actors are Finding Their Way into Your AI Summaries Aug. 3, 2026 | Many malicious links and websites are finding their ways into the "AI overviews" in popular search engines when users look for financial institutions. By Ginny Spicer](https://www.netcraft.com/blog/threat-actors-are-finding-their-way-into-your-ai-summaries)
 
- [! #### Netcraft Signal How Attackers Use Telegram and WhatsApp to Scale Credential Theft July 30, 2026 | Rather than distributing static files through underground forums, operators use messaging platforms to recruit affiliates, deliver updates, and support campaigns in real time. By Emily L. Phelps](https://www.netcraft.com/blog/how-attackers-use-telegram-and-whatsapp-credential-theft)
+ [![](https://framerusercontent.com/images/IIm2xycKgsZJRcsBPtlJUpWzcfM.png?width=1424&height=718) #### Netcraft Signal How Attackers Use Telegram and WhatsApp to Scale Credential Theft July 30, 2026 | Rather than distributing static files through underground forums, operators use messaging platforms to recruit affiliates, deliver updates, and support campaigns in real time. By Emily L. Phelps](https://www.netcraft.com/blog/how-attackers-use-telegram-and-whatsapp-credential-theft)
 
- [! #### Netcraft Signal How the Rise of AI ‘Vibe Coding’ Introduced a New Phishing Shortcut for Cybercriminals July 28, 2026 | The same features that make vibe coding appealing to legitimate builders are exactly what also makes it appealing to fraudsters. By Jon Munshaw](https://www.netcraft.com/blog/rise-of-ai-vibe-coding-and-new-cyber-threats)
+ [![](https://framerusercontent.com/images/O3qWmdrwSy8QW7kjzmfe2aiXFg.png?width=1424&height=718) #### Netcraft Signal How the Rise of AI ‘Vibe Coding’ Introduced a New Phishing Shortcut for Cybercriminals July 28, 2026 | The same features that make vibe coding appealing to legitimate builders are exactly what also makes it appealing to fraudsters. By Jon Munshaw](https://www.netcraft.com/blog/rise-of-ai-vibe-coding-and-new-cyber-threats)
 
- [! #### Web Server Survey July 2026 Web Server Survey In the July 2026 survey we received responses from 1,494,915,628 sites across 305,348,459 domains and 14,772,048 web-facing computers. This reflects an increase of 5.5 million sites, 1.2 million domains, and 118,277 web-facing computers. OpenResty experienced the largest gain of 39.5 million sites (+49.1%) this month, and now accounts fo...](https://www.netcraft.com/blog/july-2026-web-server-survey)
+ [![](https://framerusercontent.com/images/LQqFPHWrCL4sgaTFktJsxi1A.png?width=1424&height=718) #### Web Server Survey July 2026 Web Server Survey In the July 2026 survey we received responses from 1,494,915,628 sites across 305,348,459 domains and 14,772,048 web-facing computers. This reflects an increase of 5.5 million sites, 1.2 million domains, and 118,277 web-facing computers. OpenResty experienced the largest gain of 39.5 million sites (+49.1%) this month, and now accounts fo...](https://www.netcraft.com/blog/july-2026-web-server-survey)
 
- [! #### Netcraft Signal Australia's SPF Has No "Reasonable Steps" Checklist. Build Your Own. July 22, 2026 | Australia's Scams Prevention Framework requires banks to take reasonable steps to prevent scams. Learn what the new obligations mean and how to prepare. By Billy Johns-Teni](https://www.netcraft.com/blog/australia-spf-has-no-reasonable-steps-checklist)
+ [![](https://framerusercontent.com/images/S5WturRpXTliVcjbTjo8cBgtfj0.png?width=1424&height=718) #### Netcraft Signal Australia's SPF Has No "Reasonable Steps" Checklist. Build Your Own. July 22, 2026 | Australia's Scams Prevention Framework requires banks to take reasonable steps to prevent scams. Learn what the new obligations mean and how to prepare. By Billy Johns-Teni](https://www.netcraft.com/blog/australia-spf-has-no-reasonable-steps-checklist)
 
- [! #### Threat Intelligence From Fake W-8BEN Forms to Crypto Deposits: Scammers Exploit SpaceX IPO Hype July 15, 2026 | Scammers are setting up fake web pages offering access to the record-breaking IPO. By Ivan Khamenka](https://www.netcraft.com/blog/fake-tax-forms-spacex-ipo-offer)
+ [![](https://framerusercontent.com/images/I4s39WvUARfPeSoFaPx3rP78.png?width=1424&height=718) #### Threat Intelligence From Fake W-8BEN Forms to Crypto Deposits: Scammers Exploit SpaceX IPO Hype July 15, 2026 | Scammers are setting up fake web pages offering access to the record-breaking IPO. By Ivan Khamenka](https://www.netcraft.com/blog/fake-tax-forms-spacex-ipo-offer)
 
  [![A screenshot displaying Netcraft's newly updated dashboard with a cleaner user experience.](https://framerusercontent.com/images/jB3qjxwvFZ6u8i742uQy6LuJmcA.png?width=879&height=533) #### Netcraft Updates The Outcomes Were Always There. Now the Experience is, Too. July 13, 2026 | Introducing the new user interface in Netcraft's dashboard By Marcus Chandler](https://www.netcraft.com/blog/netcraft-launches-new-ui-dashboard)
 
  [![Why brand protection monitoring struggles as attack surfaces sprawl](https://framerusercontent.com/images/YVd3XBxPQDn1uuGPh21cuPbySYA.png?width=1424&height=718) #### Netcraft Signal Why Brand Protection Monitoring Struggles as Attack Surfaces Sprawl July 7, 2026 | Brand protection breaks down when monitoring is fragmented. Learn how attack surface sprawl creates risk, and why cross-channel coverage is essential. By Emily L. Phelps](https://www.netcraft.com/blog/brand-protection-monitoring)
 
- [! #### Threat Intelligence Branded Gambling Campaigns: How Scammers Are Exploiting Trusted Brand Names to Drive Casino Traffic July 2, 2026 | Learn how scammers use fake gambling ads, app store pages, and PWAs to impersonate trusted brands and drive users to online casinos. By Gina Chow](https://www.netcraft.com/blog/branded-gambling-campaigns-how-scammers-are-exploiting-trusted-brands)
+ [![](https://framerusercontent.com/images/tvtKIDQOw0E6EIWSDc0nCYO8s.png?width=1424&height=718) #### Threat Intelligence Branded Gambling Campaigns: How Scammers Are Exploiting Trusted Brand Names to Drive Casino Traffic July 2, 2026 | Learn how scammers use fake gambling ads, app store pages, and PWAs to impersonate trusted brands and drive users to online casinos. By Gina Chow](https://www.netcraft.com/blog/branded-gambling-campaigns-how-scammers-are-exploiting-trusted-brands)
 
  [![An illustration of banks and computer users with the text "What Australia's new Scams Prevention Framework means for banks"](https://framerusercontent.com/images/R4KTvMYlf4NgrIEFPNgeMOiUM.png?width=1424&height=718) #### Netcraft Signal Australia's Scams Prevention Framework: What the New Obligations Mean for Banks June 30, 2026 | The future tense is over. Here's what changed, what's settled, what's still coming, and why "reasonable steps" can't live in a policy PDF. By Billy Johns-Teni](https://www.netcraft.com/blog/australia-scams-prevention-framework-what-the-new-obligations-mean-for-banks)
 

@@ -99,7 +99,7 @@ dveditz
  |   [Details](https://bugzilla.mozilla.org/attachment.cgi?id=288623&action=edit) | [Diff](https://bugzilla.mozilla.org/attachment.cgi?id=288623&action=diff) | [Splinter Review](https://bugzilla.mozilla.org/page.cgi?id=splinter.html&ignore=&bug=369814&attachment=288623)  |  |
 |
 
- [ ! this is jar file - add !/tar1.html to open ](https://bugzilla.mozilla.org/attachment.cgi?id=288634)
+ [ ![](https://bugzilla.mozilla.org/extensions/BugModal/web/image.png) this is jar file - add !/tar1.html to open ](https://bugzilla.mozilla.org/attachment.cgi?id=288634)
 
  18 years ago
 
@@ -110,7 +110,7 @@ dveditz
   |   |   [Details](https://bugzilla.mozilla.org/attachment.cgi?id=288634&action=edit)  |  |
 |
 
- [ ! this is jar file - add !/mid.html ](https://bugzilla.mozilla.org/attachment.cgi?id=288662)
+ [ ![](https://bugzilla.mozilla.org/extensions/BugModal/web/image.png) this is jar file - add !/mid.html ](https://bugzilla.mozilla.org/attachment.cgi?id=288662)
 
  18 years ago
 
@@ -295,7 +295,7 @@ URL: jar:http://www.squarefree.com/bug3698...
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/d2dc9227eafcd0ec5ba3712ee4f19b75?d=mm&size=64)
 
   |
 
@@ -324,7 +324,7 @@ Flags: blocking1.8.0.11?
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/3301a62f3707d6bcef9542d316fb587f?d=mm&size=64)
 
   |
 
@@ -343,7 +343,7 @@ Flags: blocking1.9? → blocking1.9+
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/3301a62f3707d6bcef9542d316fb587f?d=mm&size=64)
 
   |
 
@@ -362,7 +362,7 @@ Whiteboard: [sg:moderate] XSS against sites that allow uploads of files such as 
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/da6b54ad3fdb36ba7656df9adfe65d12?d=mm&size=64)
 
   |
 
@@ -391,7 +391,7 @@ Whiteboard: [sg:moderate] XSS against sites that allow uploads of files such as 
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/da6b54ad3fdb36ba7656df9adfe65d12?d=mm&size=64)
 
   |
 
@@ -410,7 +410,7 @@ Keywords: [arch](https://bugzilla.mozilla.org/buglist.cgi?keywords=arch&resoluti
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/08de945228403cb0598d5906e2407a7d?d=mm&size=64)
 
   |
 
@@ -439,7 +439,7 @@ Flags: blocking1.8.0.12+
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/da6b54ad3fdb36ba7656df9adfe65d12?d=mm&size=64)
 
   |
 
@@ -460,7 +460,7 @@ Target Milestone: mozilla1.9alpha6 → mozilla1.9beta1
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/da6b54ad3fdb36ba7656df9adfe65d12?d=mm&size=64)
 
   |
 
@@ -479,7 +479,7 @@ Flags: blocking1.8.1.5+ → blocking1.8.1.6+
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/d26a0ca7ae1134e0e1dbdddf82e28929?d=mm&size=64)
 
   |
 
@@ -498,7 +498,7 @@ Assignee: dveditz → jwalden+bmo
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/da6b54ad3fdb36ba7656df9adfe65d12?d=mm&size=64)
 
   |
 
@@ -517,7 +517,7 @@ Flags: blocking1.8.0.13+ → blocking1.8.0.14+
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/da6b54ad3fdb36ba7656df9adfe65d12?d=mm&size=64)
 
   |
 
@@ -542,7 +542,7 @@ Group: security
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/440d092ddf3e2c8e0c8c18eb12b36a0d?d=mm&size=64)
 
   |
 
@@ -563,7 +563,7 @@ Assignee: jwalden+bmo → dcamp
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/da6b54ad3fdb36ba7656df9adfe65d12?d=mm&size=64)
 
   |
 
@@ -588,7 +588,7 @@ Flags: blocking1.8.1.11+ → blocking1.8.1.10+
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/086ecffaf8ddbcd18bcc73f6d9aea898?d=mm&size=64)
 
   |
 
@@ -617,7 +617,7 @@ Flags: blocking1.8.1.11+ → blocking1.8.1.10+
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/da6b54ad3fdb36ba7656df9adfe65d12?d=mm&size=64)
 
   |
 
@@ -646,7 +646,7 @@ Depends on: [jarxss2](https://bugzilla.mozilla.org/show_bug.cgi?id=403331)
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/086ecffaf8ddbcd18bcc73f6d9aea898?d=mm&size=64)
 
   |
 
@@ -671,7 +671,7 @@ Depends on: [jarxss2](https://bugzilla.mozilla.org/show_bug.cgi?id=403331)
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/da6b54ad3fdb36ba7656df9adfe65d12?d=mm&size=64)
 
   |
 
@@ -690,7 +690,7 @@ Depends on: [jarxss2](https://bugzilla.mozilla.org/show_bug.cgi?id=403331)
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/da6b54ad3fdb36ba7656df9adfe65d12?d=mm&size=64)
 
   |
 
@@ -711,7 +711,7 @@ Depends on: [jarxss2](https://bugzilla.mozilla.org/show_bug.cgi?id=403331)
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/50586ec6155feeff07c0c494909c399b?d=mm&size=64)
 
   |
 
@@ -740,7 +740,7 @@ Blocks: [403552](https://bugzilla.mozilla.org/show_bug.cgi?id=403552)
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/da6b54ad3fdb36ba7656df9adfe65d12?d=mm&size=64)
 
   |
 
@@ -823,7 +823,7 @@ Whiteboard: [sg:high] XSS against sites that allow uploads of files such as imag
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/da6b54ad3fdb36ba7656df9adfe65d12?d=mm&size=64)
 
   |
 
@@ -868,7 +868,7 @@ Whiteboard: [sg:high] [need 1.8 patch] XSS against sites that allow uploads of f
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/086ecffaf8ddbcd18bcc73f6d9aea898?d=mm&size=64)
 
   |
 
@@ -895,7 +895,7 @@ Whiteboard: [sg:high] [need 1.8 patch] XSS against sites that allow uploads of f
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/086ecffaf8ddbcd18bcc73f6d9aea898?d=mm&size=64)
 
   |
 
@@ -922,7 +922,7 @@ Resolution: --- → FIXED
 
 |
 
-!
+![](https://bugzilla.mozilla.org/extensions/Gravatar/web/default.jpg)
 
   |
 
@@ -941,7 +941,7 @@ Depends on: [405676](https://bugzilla.mozilla.org/show_bug.cgi?id=405676)
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/08de945228403cb0598d5906e2407a7d?d=mm&size=64)
 
   |
 
@@ -966,7 +966,7 @@ Flags: blocking1.8.0.14+
 
 |
 
-!
+![](https://bugzilla.mozilla.org/extensions/Gravatar/web/default.jpg)
 
   |
 
@@ -985,7 +985,7 @@ Depends on: [407303](https://bugzilla.mozilla.org/show_bug.cgi?id=407303)
 
 |
 
-!
+![](https://bugzilla.mozilla.org/extensions/Gravatar/web/default.jpg)
 
   |
 
@@ -1010,7 +1010,7 @@ Flags: blocking1.8.0.15? → blocking1.8.0.15+
 
 |
 
-!
+![](https://bugzilla.mozilla.org/extensions/Gravatar/web/default.jpg)
 
   |
 
@@ -1035,7 +1035,7 @@ Keywords: [dev-doc-needed](https://bugzilla.mozilla.org/buglist.cgi?keywords=dev
 
 |
 
-!
+![](https://secure.gravatar.com/avatar/2efb6d76c228cbd10284f1bf1ed9310a?d=mm&size=64)
 
   |
 

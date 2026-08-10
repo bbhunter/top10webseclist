@@ -262,7 +262,7 @@ Froala is a What-You-See-Is-What-You-Get (WYSIWYG) HTML text editor and JavaScri
 
 This payload is functionally the same as the TinyMCE XSS discussed in Test Case 1 of this blog post with one caveat. Entering the MathML namespace to cause parsing confusion (in Froala's instance, restricting a comment within `iframe` elements) was not enough to confuse the Froala parser. However, Froala's parser did not understand `MathMLnamespace` tags and would drop the tags but continue parsing the remaining content. The result was the HTML parser creating nodes with the payload restricted to text data, as shown in the tree below:
 
-!
+![](https://assets.bishopfox.com/prod-1437/Images/channels/blog/Content/XSS-2-tree-1.png)
 
 However, since Froala's parser omitted the <math> element, it would still incorrectly view the img element payload as a non-dangerous comment. When the JavaScript payload was processed by the final-stage HTML parser and placed into the DOM, it would do so as follows:
 
@@ -290,7 +290,7 @@ Even when input is lexically analyzed, XSS may still be possible by exploiting c
 - [**Bishop Fox – TinyMCE v5.2.1 Advisory**](https://bishopfox.com/blog/tinymce-version-5-2-1-advisory)
 - **Mozilla – Content Security Policy - **[https://developer.mozilla.org/...](https://developer.mozilla.org/...)
 
- !
+ ![](https://bishopfox.com/static/assets/images/backgrounds/lander-header-bg-black-lines.svg)
 
 Subscribe to our blog
 

@@ -72,7 +72,7 @@ The Wayback Machine - https://web.archive.org/web/20141220045918/http://www.trip
 
 # Verizon Wireless Customer Portal Exposed Text Message History
 
-[!](https://web.archive.org/web/20141220045918/http://www.tripwire.com/state-of-security/contributors/previous-contributers/)
+[![](https://web.archive.org/web/20141220045918im_/http://www.tripwire.com/state-of-security/latest-security-news/verizon-wirelesss-customer-portal-exposed-text-messages/)](https://web.archive.org/web/20141220045918/http://www.tripwire.com/state-of-security/contributors/previous-contributers/)
 
 [Previous Contributors](https://web.archive.org/web/20141220045918/http://www.tripwire.com/state-of-security/contributors/previous-contributers/)
 Oct 21, 2013 | [Latest Security News](https://web.archive.org/web/20141220045918/http://www.tripwire.com/state-of-security/topics/latest-security-news/)

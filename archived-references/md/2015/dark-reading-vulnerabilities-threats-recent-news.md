@@ -109,7 +109,7 @@ by[Elizabeth Montalbano](https://www.darkreading.com/author/elizabeth-montalbano
 
 by[Robert Lemos ,](https://www.darkreading.com/author/robert-lemos)Contributing Writer
 
-[!](https://www.darkreading.com/vulnerabilities-threats/the-elephant-in-enterprise-security)
+[![](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt2219144e7eba6dfa/6a7245658489c1814ddc282c/DR_PP2_James_Maude_Article_5.png?width=300&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/vulnerabilities-threats/the-elephant-in-enterprise-security)
 
 [The Elephant in Enterprise Security](https://www.darkreading.com/vulnerabilities-threats/the-elephant-in-enterprise-security)
 
@@ -117,7 +117,7 @@ by[Robert Lemos ,](https://www.darkreading.com/author/robert-lemos)Contributing 
 
 by[James Maude ,](https://www.darkreading.com/author/james-maude)Field CTO
 
-[!](https://www.darkreading.com/vulnerabilities-threats/400-research-ideas-later-here-s-where-identity-security-is-headed)
+[![](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt7b3c4cd54ee28b30/6a7244fc17db9a07a539767b/Phantom_Labs_DR_Article_4.png?width=300&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/vulnerabilities-threats/400-research-ideas-later-here-s-where-identity-security-is-headed)
 
 [400 Research Ideas Later, Here's Where Identity Security Is Headed](https://www.darkreading.com/vulnerabilities-threats/400-research-ideas-later-here-s-where-identity-security-is-headed)
 
@@ -125,7 +125,7 @@ by[James Maude ,](https://www.darkreading.com/author/james-maude)Field CTO
 
 by[David van Heerden ,](https://www.darkreading.com/author/david-van-heerden)[Phantom Labs](https://www.darkreading.com/author/phantom-labs)
 
-[!](https://www.darkreading.com/vulnerabilities-threats/the-real-ai-agent-attack-surface-toolsets-containers-and-privilege)
+[![](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltbc9febce0015266e/6a6defeb10fdd10dfef45ca0/mohamed-nohassi--0xmiyqmk8g-unsplash_processed.jpg?width=300&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/vulnerabilities-threats/the-real-ai-agent-attack-surface-toolsets-containers-and-privilege)
 
 [The Real AI Agent Attack Surface: Toolsets, Containers, and Privilege](https://www.darkreading.com/vulnerabilities-threats/the-real-ai-agent-attack-surface-toolsets-containers-and-privilege)
 

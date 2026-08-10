@@ -169,7 +169,7 @@ by[Alexander Culafi ,](https://www.darkreading.com/author/alexander-culafi)Senio
 
 by[Rob Wright ,](https://www.darkreading.com/author/robert-wright)Senior News Director
 
-[!](https://www.darkreading.com/cloud-security/why-virtual-patching-and-multi-layer-defense-are-critical-in-the-age-of-frontier-ai)
+[![](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt511616e8cc67c988/6a62100651710357dfa9f6ea/Feature_Image.jpg?width=300&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/cloud-security/why-virtual-patching-and-multi-layer-defense-are-critical-in-the-age-of-frontier-ai)
 
 [Why Virtual Patching and Multi-Layer Defense are Critical in the Age of Frontier AI](https://www.darkreading.com/cloud-security/why-virtual-patching-and-multi-layer-defense-are-critical-in-the-age-of-frontier-ai)
 
@@ -201,7 +201,7 @@ by[Jeffrey Schwartz ,](https://www.darkreading.com/author/jeffrey-schwartz)Contr
 
 by[Alexander Culafi ,](https://www.darkreading.com/author/alexander-culafi)Senior News Writer
 
-[!](https://www.darkreading.com/endpoint-security/agentic-ai-challenges-progress-in-confidential-computing)
+[![](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt9e62e39ece6ef685/656a984ef3b292040a878813/confidentialai-everything_possible-alamy.jpg?width=300&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/endpoint-security/agentic-ai-challenges-progress-in-confidential-computing)
 
 [Endpoint Security](https://www.darkreading.com/endpoint-security)
 
@@ -241,7 +241,7 @@ by[Alexander Culafi ,](https://www.darkreading.com/author/alexander-culafi)Senio
 
 by[Alexander Culafi ,](https://www.darkreading.com/author/alexander-culafi)Senior News Writer
 
-[!](https://www.darkreading.com/cloud-security/google-bets-agentic-defense-strategy-outpace-attackers)
+[![](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltce1b28d3805840ac/69b32c68d73e49322916d5a6/cloud-lightning-Athapet_Piruksa-shutterstock.jpg?width=300&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/cloud-security/google-bets-agentic-defense-strategy-outpace-attackers)
 
 [Сloud Security](https://www.darkreading.com/cloud-security)
 

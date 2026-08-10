@@ -122,12 +122,12 @@ Overview
 
 - Here is the logged information received by the attacker:
 
-[!](http://2.bp.blogspot.com/_awELUHKNApk/Szdu3yCtPdI/AAAAAAAAAgY/pXZlhgTWmjQ/s1600-h/bebo_log.JPG)
+[![](http://2.bp.blogspot.com/_awELUHKNApk/Szdu3yCtPdI/AAAAAAAAAgY/pXZlhgTWmjQ/s640/bebo_log.JPG)](http://2.bp.blogspot.com/_awELUHKNApk/Szdu3yCtPdI/AAAAAAAAAgY/pXZlhgTWmjQ/s1600-h/bebo_log.JPG)
 
 Note the victim's Bebo id given twice in *fb_sig_profile_id,* and in* fb_sig_user. *
 - The publicly available information Bebo gives out for this user ID can be fetched through its API, but for the sake of clarity, the following screen shot is the public profile for this user.
 
-[!](http://1.bp.blogspot.com/_awELUHKNApk/SzdwkhephZI/AAAAAAAAAgg/r7zAyIMiu1Q/s1600-h/bebo_profile.jPG)
+[![](http://1.bp.blogspot.com/_awELUHKNApk/SzdwkhephZI/AAAAAAAAAgg/r7zAyIMiu1Q/s400/bebo_profile.jPG)](http://1.bp.blogspot.com/_awELUHKNApk/SzdwkhephZI/AAAAAAAAAgg/r7zAyIMiu1Q/s1600-h/bebo_profile.jPG)
 
 The profile picture and full name are given even though the user's privacy settings are intact.
 
@@ -139,7 +139,7 @@ The profile picture and full name are given even though the user's privacy setti
 
  Orkut has implemented a feature called [Recent Visitors](http://www.google.com/support/orkut/bin/answer.py?hl=en&answer=11845) turned on by default, that shows an Orkut user the last 10 people to have viewed his profile, with a link to their profile.
 
-[!](http://1.bp.blogspot.com/_awELUHKNApk/Szd1ukzNjbI/AAAAAAAAAgo/nL-3H3_3O-k/s1600-h/orkut_ss1.JPG)
+[![](http://1.bp.blogspot.com/_awELUHKNApk/Szd1ukzNjbI/AAAAAAAAAgo/nL-3H3_3O-k/s400/orkut_ss1.JPG)](http://1.bp.blogspot.com/_awELUHKNApk/Szd1ukzNjbI/AAAAAAAAAgo/nL-3H3_3O-k/s1600-h/orkut_ss1.JPG)
 
  In order to use this feature to launch the described attack, the attacker sends the unsuspecting victim to his Orkut profile page using, for example, a hidden iframe (if it's his own site). Note that an image link can be used as before although the image will break.
  Orkut does the rest by providing the attacker with the names and profiles of the victims.
@@ -151,7 +151,7 @@ The profile picture and full name are given even though the user's privacy setti
  Orkut, abiding by the OpenSocial specifications seems to keep from providing any information about the user of an application before it is approved. However, creating an application page with the [Signed Request](http://wiki.opensocial.org/index.php?title=Introduction_To_Signed_Requests) feature, has the effect of adding the OpenSocial ID of the viewing user to the request made to the application server.
  The following screen shot is the request made by Orkut to the application server when the victim is forced to "view" the attackers application.
 
-[!](http://1.bp.blogspot.com/_awELUHKNApk/Szd6nDE_ahI/AAAAAAAAAgw/mqaIjGiNLuo/s1600-h/orkut_ss2.JPG)
+[![](http://1.bp.blogspot.com/_awELUHKNApk/Szd6nDE_ahI/AAAAAAAAAgw/mqaIjGiNLuo/s640/orkut_ss2.JPG)](http://1.bp.blogspot.com/_awELUHKNApk/Szd6nDE_ahI/AAAAAAAAAgw/mqaIjGiNLuo/s1600-h/orkut_ss2.JPG)
 
  Note on the bottom, the proper response of the server to the application's request for personal information about the viewer: It is denied on grounds of permission, rightfully so, as the application has not yet been approved by the user.
  However, note the added *opensocial_viewer_id** ***parameter. It is part of the parameters added when a signed request is performed. This parameter is, as its name suggests, the unique id number of the victim.

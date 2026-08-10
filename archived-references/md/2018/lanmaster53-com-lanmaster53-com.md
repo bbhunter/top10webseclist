@@ -62,12 +62,12 @@ page going offline. To read the original, follow the link above.
 
 lanmaster53.com
 
-- [!](https://www.lanmaster53.com/)
-- [!](https://bitbucket.org/lanmaster53)
-- [!](https://github.com/lanmaster53)
-- [!](https://twitter.com/lanmaster53)
-- [!](https://www.linkedin.com/in/lanmaster53)
-- [!](https://www.youtube.com/user/lanmaster53)
+- [![](https://www.gravatar.com/avatar/0a6d9b1ad59ad436bf9d9d16b2a7133e.png?s=128)](https://www.lanmaster53.com/)
+- [![](https://www.lanmaster53.com/static/images/meta/bitbucket.png)](https://bitbucket.org/lanmaster53)
+- [![](https://www.lanmaster53.com/static/images/meta/github.png)](https://github.com/lanmaster53)
+- [![](https://www.lanmaster53.com/static/images/meta/twitter.png)](https://twitter.com/lanmaster53)
+- [![](https://www.lanmaster53.com/static/images/meta/linkedin.png)](https://www.linkedin.com/in/lanmaster53)
+- [![](https://www.lanmaster53.com/static/images/meta/youtube.png)](https://www.youtube.com/user/lanmaster53)
 
 ## Report Spam. Get Owned.
 
@@ -87,7 +87,7 @@ Um... yeah! I immediately thought of how great a CSRF-via-email attack vector th
 
 An attacker crafts a spam message with an embedded "unsubscribe" link containing the CSRF attack payload like so:
 
-[!](https://www.lanmaster53.com/static/images/posts/2018-03-15-report-spam-get-owned/spam-unsubscribe.png)
+[![](https://www.lanmaster53.com/static/images/posts/2018-03-15-report-spam-get-owned/spam-unsubscribe.png)](https://www.lanmaster53.com/static/images/posts/2018-03-15-report-spam-get-owned/spam-unsubscribe.png)
 
 The attacker then sends the email to their victims. In the process of reporting suspicious links and unsubscribing from future messages, because it's the "safe" thing the victims were trained to do, Google clicks the link for the victims, and the CSRF attack payload is triggered from the victim's browser.
 

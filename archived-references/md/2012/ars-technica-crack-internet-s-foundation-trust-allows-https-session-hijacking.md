@@ -116,7 +116,7 @@ Rizzo and Duong are [scheduled to demonstrate CRIME](http://www.ekoparty.org/201
 
 [Expand full story](http://arstechnica.com/security/2012/09/crime-hijacks-https-sessions/)
 
- [!](http://arstechnica.com/author/dan-goodin)
+ [![](http://cdn.arstechnica.net/wp-content/uploads/authors/Dan-Goodin-sq.jpg)](http://arstechnica.com/author/dan-goodin)
 
 [Dan Goodin](http://arstechnica.com/author/dan-goodin) / Dan is the IT Security Editor at Ars Technica, which he joined in 2012 after working for The Register, the Associated Press, Bloomberg News, and other publications.
 

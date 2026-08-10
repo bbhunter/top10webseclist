@@ -63,13 +63,13 @@ page going offline. To read the original, follow the link above.
 
 ### [Zero Knowledge (About) Encryption: A Comparative Security Analysis of Three Cloud-based Password Managers](https://eprint.iacr.org/2026/058.pdf)
 
-Matteo Scarlata[!](https://orcid.org/0009-0000-6285-6259), ETH Zurich
+Matteo Scarlata[![](https://eprint.iacr.org/img/orcid.svg)](https://orcid.org/0009-0000-6285-6259), ETH Zurich
 
-Giovanni Torrisi[!](https://orcid.org/0009-0007-5889-339X), Universita della Svizzera Italiana
+Giovanni Torrisi[![](https://eprint.iacr.org/img/orcid.svg)](https://orcid.org/0009-0007-5889-339X), Universita della Svizzera Italiana
 
-Matilda Backendal[!](https://orcid.org/0000-0002-8677-8301), Universita della Svizzera Italiana
+Matilda Backendal[![](https://eprint.iacr.org/img/orcid.svg)](https://orcid.org/0000-0002-8677-8301), Universita della Svizzera Italiana
 
-Kenneth G. Paterson[!](https://orcid.org/0000-0002-5145-4489), ETH Zurich
+Kenneth G. Paterson[![](https://eprint.iacr.org/img/orcid.svg)](https://orcid.org/0000-0002-5145-4489), ETH Zurich
 
 ##### Abstract
 
@@ -79,13 +79,13 @@ Zero Knowledge Encryption is a term widely used by vendors of cloud-based passwo
 
 ##### Metadata
 
-   Available format(s)   [ !PDF](https://eprint.iacr.org/2026/058.pdf)  Category [Attacks and cryptanalysis](https://eprint.iacr.org/search?category=ATTACKS) Publication info Published elsewhere. Minor revision. USENIX SECURITY 2026 Contact author(s)  matteo scarlata @ inf ethz ch
+   Available format(s)   [ ![](https://eprint.iacr.org/img/file-pdf.svg)PDF](https://eprint.iacr.org/2026/058.pdf)  Category [Attacks and cryptanalysis](https://eprint.iacr.org/search?category=ATTACKS) Publication info Published elsewhere. Minor revision. USENIX SECURITY 2026 Contact author(s)  matteo scarlata @ inf ethz ch
 giovanni torrisi @ usi ch
 matilda backendal @ usi ch
 kenny paterson @ inf ethz ch   History 2026-02-16: last of 3 revisions 2026-01-14: received [See all versions](https://eprint.iacr.org/archive/versions/2026/058) Short URL [https://ia.cr/2026/058](https://ia.cr/2026/058) License [ ![Creative Commons Attribution-NonCommercial-NoDerivs](https://eprint.iacr.org/img/license/CC_BY_NC_ND.svg)
  CC BY-NC-ND ](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
-**BibTeX**  !Copy to clipboard
+**BibTeX**  ![](https://eprint.iacr.org/img/copy-outline.svg)Copy to clipboard
 
 ```
 

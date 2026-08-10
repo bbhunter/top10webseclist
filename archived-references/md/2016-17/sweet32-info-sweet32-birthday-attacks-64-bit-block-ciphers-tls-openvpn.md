@@ -96,7 +96,7 @@ Karthikeyan Bhargavan, Gaëtan Leurent
 
 ## Exploiting Block Cipher Collisions
 
- !
+ ![](https://sweet32.info/CBC.svg)
 
 * The CBC mode *
 
@@ -172,7 +172,7 @@ Authorization: Basic dGVzdDoxMjPCow=
 
  Once a user has entered his login information once, the browser will typically cache this information and use it on all subsequent requests to the server. Notably, even if a different website creates a cross-domain request to the authenticated server, the BasicAuth credentials will be automatically sent by the browser. BasicAuth credentials contain the user's password and are hence security-critical. One should only use this authentication mechanism over HTTPS but a number of corporate websites use BasicAuth over HTTP, under the assumption that their users can only access the website over a VPN or some other secure connection.
 
- !
+ ![](https://sweet32.info/Attack.svg)
 
 * The Beastly attacker *
 

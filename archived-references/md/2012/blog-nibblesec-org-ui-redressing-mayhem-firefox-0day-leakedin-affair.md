@@ -78,7 +78,7 @@ In the past weeks I worked on [UI Redressing](https://web.archive.org/web/201710
 
  The extraction method is extremely simple: instead of performing a drag&drop action of sensitive data, from a framed vulnerable web page to the framing one (attacker-controlled), the victim is tricked to visit a malicious html page that includes *two* iframes: the vulnerable page - where the sensitive content resides - and *another* attacker's page that is used to drop the extracted content (Figure 1). Firefox is not able to block this kind of attack because no check on cross-domain drag&drop between iframes is performed. As mentioned before, the method was tested against Mozilla Firefox version 17.0.1 - the latest stable release at the time of writing. The iframe-to-iframe technique was also tested against Google Chrome but the browser has been proved robust to the proposed attack.
 
-| [!](https://web.archive.org/web/20171005091933/http://2.bp.blogspot.com/-nT9207f_bn8/UMxgCXnvpdI/AAAAAAAAAEo/oYwBmyKb5hw/s1600/dnd.png) |  |
+| [![](https://web.archive.org/web/20171005091933im_/https://lh3.ggpht.com/-nT9207f_bn8/UMxgCXnvpdI/AAAAAAAAAEo/oYwBmyKb5hw/s640/dnd.png)](https://web.archive.org/web/20171005091933/http://2.bp.blogspot.com/-nT9207f_bn8/UMxgCXnvpdI/AAAAAAAAAEo/oYwBmyKb5hw/s1600/dnd.png) |  |
 | Figure 1 - iframe-to-iframe d&d extraction method. |  |
 
  The iframe-to-iframe method re-introduces the possibility to abuse the Firefox drag&drop mechanism to perform a cross-domain data extraction. Let me now introduce an high-profile vulnerability and attack that targets the **LinkedIn** application implementing the proposed method.
@@ -87,14 +87,14 @@ In the past weeks I worked on [UI Redressing](https://web.archive.org/web/201710
 
  LinkedIn implements a *stateless* anti-[CSRF](https://web.archive.org/web/20171005091933/https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29) mechanism that associates tokens to the HTTP requests that result in a change of the remote application state, such as the update of a user's profile information (e.g. job title or the login e-mail address). A stateless anti-CSRF method is generally based on a secret token, delivered as a cookie parameter, and a token which is included in every state-changing HTTP request: the remote web application considers as *genuine* exclusively the HTTP requests that have the same token value for both the cookie and HTTP parameter. Otherwise, a request is considered untrusted and it is not computed. The LinkedIn's anti-CSRF mechanism involves a cookie parameter called **JSESSIONID** and an HTTP parameter named **csrfToken** in order to store the secret tokens (Figure 2). A stateless mechanism can be easily bypassed with well known web hacking techniques.
 
-| [!](https://web.archive.org/web/20171005091933/http://4.bp.blogspot.com/-HyklPh-8Png/UMuamv5iw5I/AAAAAAAAAD4/YUeYb8fQlYc/s1600/AJAX0.png) |  |
+| [![](https://web.archive.org/web/20171005091933im_/https://lh3.ggpht.com/-HyklPh-8Png/UMuamv5iw5I/AAAAAAAAAD4/YUeYb8fQlYc/s320/AJAX0.png)](https://web.archive.org/web/20171005091933/http://4.bp.blogspot.com/-HyklPh-8Png/UMuamv5iw5I/AAAAAAAAAD4/YUeYb8fQlYc/s1600/AJAX0.png) |  |
 | Figure 2 - anti-CSRF tokens. |  |
 
  For example, the attacker could abuse a [Cross-Site Scripting](https://web.archive.org/web/20171005091933/https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29) issue on both www.linkedin.com or any LinkedIn's subdomains to *poison* the cookie parameter JSESSIONID and bypass the mechanism — this attack is also known as [Cookie Tossing](https://web.archive.org/web/20171005091933/http://media.blackhat.com/bh-ad-11/Lundeen/bh-ad-11-Lundeen-New_Ways_Hack_WebApp-WP.pdf). During my security research I found a vulnerable LinkedIn's page that includes the anti-CSRF token within the HTML code, despite not being protected by the X-Frame-Options header. Under these circumstances, the iframe-to-iframe method can be used to attack authenticated LinkedIn users and steal their secret token in order to perform different kind of malicious actions on the victim's profile. The following URL refers to the LinkedIn vulnerable web resource as detailed in Figure 3:
 
 - **http://www.linkedin.com/companies?trk=hb_tab_compy **
 
-| [!](https://web.archive.org/web/20171005091933/http://3.bp.blogspot.com/-Xsl6UWhcP7g/UMuJLKvbnNI/AAAAAAAAADQ/zurEa_UHQPA/s1600/ajax.png) |  |
+| [![](https://web.archive.org/web/20171005091933im_/https://lh3.ggpht.com/-Xsl6UWhcP7g/UMuJLKvbnNI/AAAAAAAAADQ/zurEa_UHQPA/s400/ajax.png)](https://web.archive.org/web/20171005091933/http://3.bp.blogspot.com/-Xsl6UWhcP7g/UMuJLKvbnNI/AAAAAAAAADQ/zurEa_UHQPA/s1600/ajax.png) |  |
 | Figure 3 - Vulnerable LinkedIn web resource. |  |
 
  The vulnerability can be easily abused to craft a UI Redressing exploit that triggers the victim to drag&drop the anti-CSRF token. The token can then be abused to edit any information on the victim's profile and even to *reset the account password*. In order to demonstrate the effectiveness of the attack I developed a fully working Proof of Concept exploit that adds the attacker's e-mail as a trusted address to the victim's profile and verifies the e-mail itself. At that point, the attacker can easily reset the victim's password using LinkedIn password reset mechanism.
@@ -109,7 +109,7 @@ In the past weeks I worked on [UI Redressing](https://web.archive.org/web/201710
 
  The attacker can now reset the victim's account password abusing the password reset functionality, where he will type the e-mail address previously added to the targeted profile. Figure 4 highlights the different HTTP requests exchanged between the attacked web browser, the attacker's servers and the LinkedIn web application, in order to achieve the password resetting.
 
-| [!](https://web.archive.org/web/20171005091933/http://4.bp.blogspot.com/-6RYbJ-7yJF0/UMuzPqV62oI/AAAAAAAAAEY/7xuNNV-ZeIQ/s1600/1.png) |  |
+| [![](https://web.archive.org/web/20171005091933im_/https://lh3.ggpht.com/-6RYbJ-7yJF0/UMuzPqV62oI/AAAAAAAAAEY/7xuNNV-ZeIQ/s640/1.png)](https://web.archive.org/web/20171005091933/http://4.bp.blogspot.com/-6RYbJ-7yJF0/UMuzPqV62oI/AAAAAAAAAEY/7xuNNV-ZeIQ/s1600/1.png) |  |
 | Figure 4 - Sequence diagram detailing the attack. |  |
 
  A working PoC has been developed and can be downloaded [here](https://web.archive.org/web/20171005091933/https://github.com/daath1/nibblesec/tree/master/ui_redressing_mayhem/linkedin). The following is a video of the attack:

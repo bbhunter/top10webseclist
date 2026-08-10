@@ -67,7 +67,7 @@ A chain of HTTP servers used by a web application can often be modelled as consi
 - A "front-end" server which directly handles requests from users. These servers typically handle caching and load balancing, or act as web application firewalls (WAFs).
 - A "back-end" server which the front-end server forwards requests to. This is where the application's server-side code runs.
 
-!.jpg)
+![](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/61dd9339d05701fd000b35ea_image001%20(1).jpg)
 
 This model is often a simplification of reality. There may be multiple front-end and back-end servers, and front-end and back-end servers are often themselves chains of multiple servers. However, this model is sufficient to understand and develop the attacks presented in this article, as well as most of the recent research into attacking chains of servers.
 
@@ -335,7 +335,7 @@ The interesting behaviour appeared when including a mutated "Host" header alongs
 
 API gateway was returning the response from the API specified in the mutated "Host" header. This is in contrast to the behaviour of most web servers, which will not view the mutated "Host" header as a "Host" header and instead take the host from the regular "Host" header. This becomes interesting when such a server is acting as a cache in front of API gateway, as it will cache the result of the above request as though it was a request for "victim.i.long.lat", even though the response is from the "attacker.i.long.lat" API.
 
-!.jpg)
+![](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/61dd9339d05701b03f0b35eb_image002%20(1).jpg)
 
 To demonstrate this, I setup [CloudFront](https://aws.amazon.com/cloudfront/) in front of API Gateway with the "AllViewer" request policy, which causes all headers to be forwarded. Sending the above request, and then requesting "https://victim.i.long.lat/a" shows that the response from the attacker's API has been stored in the cache for the victim's API:
 
@@ -371,13 +371,13 @@ This cache poisoning is rather easy to exploit as an attacker can setup their ow
 
 At Black Hat USA 2020 Amit Klein presented a request smuggling based on 2 "Content-Length" headers ("CL.CL" request smuggling). The bug could be triggered when [Squid ](http://www.squid-cache.org/)was used as a reverse proxy in front of the [Abyss web server](https://aprelium.com/abyssws/) using the following requests sent in the same connection:
 
-!
+![](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/61dd9339d0570111670b35ee_Image%201.JPG)
 
 The first request, shown in green, contains two "Content-Length" headers – 1 mutated and the other unmutated. Squid will only parse the unmutated header, and will take the length of the first request's body to be 33 bytes, which is shown in blue. Squid then takes the second request to be the one shown in red – a "GET" request to "/doesntexist".
 
 Abyss on the other hand will parse both the mutated and unmutated "Content-Length" headers, and takes the values of 0 bytes from the mutated header. It therefore thinks that the second request is the one which starts in blue – a "GET" request to "/a.html".
 
-!.jpg)
+![](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/61dd9339d057011c950b35ed_image003%20(1).jpg)
 
 The total effect of this is that Abyss responds with the content for "/a.html", and Squid caches this response for the path "/doesntexist", giving cache poisoning.
 

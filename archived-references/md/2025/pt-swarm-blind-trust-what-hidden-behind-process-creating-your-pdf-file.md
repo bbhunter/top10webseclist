@@ -74,7 +74,7 @@ In this article, we present a threat model for an HTML-to-PDF library, walk thro
 
 To demonstrate a Files or Directories Accessible to External Parties vulnerability, we used a neural network to generate a scan of a passport from a fictitious country. This file simulates sensitive personal data (PII), which security professionals most often encounter during information security audits. For the demonstration, the file will be placed at the following path: `/tmp/user_files/user_1/private_image.png`.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/011ccf03-image-2025-8-5_15-43-3.png)
 
 *Figure 1.Private user image*
 
@@ -99,7 +99,7 @@ PDF generation is most likely performed by a third‑party library, and there ar
 
 To identify the signature of the library that generated a PDF file, you can inspect the document properties. The library is TCPDF (version 6.10.1), a popular PHP library.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/eee318b6-image-2025-12-8_11-47-45-1.png)
 
 Identifying the library and its version is essential for information security professionals and bug hunters. Once you have the signature, check for previously discovered and publicly known vulnerabilities, as well as possible misconfigurations and intentional behaviors.
 
@@ -107,7 +107,7 @@ Identifying the library and its version is essential for information security pr
 
 ### Description
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/c64c388a-image-2025-6-8_16-50-6-1.png)
 
 The [tecnickcom/tcpdf](https://github.com/tecnickcom/TCPDF) library is a PHP library for generating PDF documents and barcodes and is currently in support only mode. A new version of this library is under development—[tecnickcom/tc-lib-pdf](https://github.com/tecnickcom/tc-lib-pdf).
 
@@ -237,7 +237,7 @@ First SVG payload decoded from Base64
 
 We then call the vulnerable server to trigger PDF generation based on the payload in the `$payload` variable. If successful, the browser displays a PDF file with arbitrary private user images retrieved via path traversal.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/95041820-image-2025-8-5_15-47-40-1.jpg)
 
 *Figure 2. Unauthorized retrieval of an arbitrary user’s private images*
 
@@ -367,7 +367,7 @@ First SVG payload decoded from Base64
 
 We call the vulnerable server to trigger PDF generation based on the payload in the `$payload` variable. If successful, the browser displays a PDF file with two arbitrary private user images retrieved via path traversal.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/95041820-image-2025-8-5_15-47-40-1.jpg)
 
 *Figure 3. Unauthorized retrieval of an arbitrary user’s private images*
 
@@ -498,7 +498,7 @@ Double encoding of a specific character sequence
 
 We then call the vulnerable server to trigger PDF generation based on the payload in the `$payload` variable. If successful, the browser displays a PDF file with two arbitrary private user images retrieved via path traversal.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/0e353aa1-image-2025-8-5_15-55-42-1.jpg)
 
 *Figure 4. Unauthorized retrieval of an arbitrary user’s private image*
 
@@ -663,7 +663,7 @@ During deserialization of the transferred string, a TCPDF instance will be creat
 
 When we addressed the web application script, we received a 500 Internal Server Error. Let’s check the target system for the file `/tmp/do_not_delete_this_file.txt`. The file was successfully deleted, which indicates successful exploitation of the vulnerability.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/c2e5f75e-image-2025-8-11_11-3-1-1.png)
 
 *Figure 5. Execution of request with a serialized string of a TCPDF instance*
 
@@ -779,7 +779,7 @@ Serving HTTP on 0.0.0.0 port 8080 (http://0.0.0.0:8080/) ...
 
 The attacker accesses the web application script that generates the PDF file. The web application running on the same server on port 8080 receives five loopback requests at the local address 127.0.0.1.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/bc5cffa5-image-2025-8-8_16-39-8.png)
 
 *Figure 6. Server-side requests to internal addresses*
 
@@ -787,13 +787,13 @@ The attacker accesses the web application script that generates the PDF file. Th
 
 We reported the problem to the vendor. However, the library developer replied that this vulnerability is not valid or is out of scope for the library.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/6fa6c1b1-image-2025-10-1_15-57-43-1.png)
 
 ## The spipu/html2pdf library
 
 ### Description
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/5ea91e95-image-2025-6-15_21-56-36-1.png)
 
 The [spipu/html2pdf](https://github.com/spipu/html2pdf) library is an HTML to PDF converter written in PHP and compatible with PHP 7.2–8.4. It allows conversion of valid HTML file into PDF to generate invoices, documentation, and so on.
 
@@ -952,7 +952,7 @@ The generated archive is placed on the target server. This can happen in various
 
 Let’s also look at the contents of the generated Phar archive with the xxd binary utility, which creates a hexadecimal representation of the file.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/395beaa0-image-2025-8-7_13-17-29-1.png)
 
 *Phar archive uploaded on the target server at /tmp/user_files/user_1/archive.png*
 
@@ -992,7 +992,7 @@ The request returns a successfully generated PDF file.
 
 Let’s check the target system for the file `/tmp/do_not_delete_this_file.txt`. The file was successfully deleted, which indicates successful exploitation of the vulnerability.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/fa8a0011-image-2025-8-11_11-9-1-1.png)
 
 *Figure 7. Generating a PDF file while exploiting unsafe Phar deserialization*
 
@@ -1130,7 +1130,7 @@ Serving HTTP on 0.0.0.0 port 8080 (http://0.0.0.0:8080/) ...
 
 The attacker accesses the web application script that generates the PDF file. The web application running on the same server on port 8080 receives a single loopback request with local address 127.0.0.1 when attempting to obtain the cascading style sheets.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/1590363e-image-2025-8-8_16-36-23-1.png)
 
 *Figure 8. Demonstration of server-side request execution*
 
@@ -1225,7 +1225,7 @@ Serving HTTP on 0.0.0.0 port 8080 (http://0.0.0.0:8080/) ...
 
 The attacker accesses the web application script that generates the PDF file. The web application running on the same server on port 8080 will receive one loopback request at the local address 127.0.0.1 when attempting to obtain the size of the requested image.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/90238370-image-2025-8-8_17-5-47-1.png)
 
 *Figure 9. Demonstration of server-side request execution*
 
@@ -1310,7 +1310,7 @@ Web application source code
 
 As a result, the server returned a 500 Internal Server Error, but it successfully performed a server-side request.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/c4b6d92b-image-2025-8-11_8-57-7-1.png)
 
 *Figure 10. Demonstration of server-side request execution*
 
@@ -1324,7 +1324,7 @@ The vendor added an auxiliary option to prevent Server-Side Request Forgery. Her
 
 We will attach a screenshot of the final solution after all the issues we found in this library are fixed—and it is a good final solution! However, when analyzing the first version of this fix, we realized the story was not over yet.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/662f3bbf-image-2025-10-1_16-22-41-1.png)
 
 *Figure 11. The developer of the spipu/html2pdf library warns that the library does not control loaded resources*
 
@@ -1552,7 +1552,7 @@ $html2pdf->output();
 
 When testing on a local HTTP server, it is visible that the request to http://127.0.0.1:8080 is indeed sent before the custom check triggers.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/236881a1-image-2025-8-14_12-0-34.png)
 
 *Figure 12. Demonstration of server-side request execution*
 
@@ -1689,7 +1689,7 @@ $html2pdf->output();
 
 On the server side, where the local HTTP server is running, we see six incoming loopback requests.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/a2d87733-image-2025-8-14_12-1-35.png)
 
 *Figure 13. Demonstration of server-side request execution*
 
@@ -1701,7 +1701,7 @@ This vulnerability was fixed ([https://github.com/spipu/html2pdf/commit/ff07b14d
 
 ### Description
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/33f75f2c-image-2025-6-8_16-49-11-1.png)
 
 The [parallax/jsPDF](https://www.npmjs.com/package/jspdf) library enables client-side and server-side PDF file generation with JavaScript.
 
@@ -1731,7 +1731,7 @@ $ npm install jspdf@3.0.0
 
 When analyzing [the vulnerability fix](https://github.com/parallax/jsPDF/commit/d8bb3b39efcd129994f7a3b01b632164144ec43e), we saw that the regular expression was updated but is still applied to strings that may originate from external untrusted input.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/467d985d-image-2025-6-16_12-7-39-1.png)
 
 *Figure 14. Fix for CVE-2021-23353*
 
@@ -1773,7 +1773,7 @@ Call to doc.addImage took 39037.757161 milliseconds
 
 With the application running, let’s look at system load. We find that one CPU core began to be used at 100%.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/46e7fad2-image-2025-8-11_13-5-20-1.png)
 
 *Figure 15. 100% CPU core use*
 
@@ -1900,7 +1900,7 @@ When we ran the source code, the application became extremely slow to respond. I
 
 With the application running, let’s look at system load. We find that one CPU core began to be used at 100%.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/35d2499f-image-2025-8-11_15-55-34-1.png)
 
 *Figure 16. 100% CPU core usage*
 
@@ -1912,7 +1912,7 @@ The vendor [fixed this vulnerability](https://github.com/parallax/jsPDF/commit/4
 
 ### Description
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/04c79ed8-image-2025-6-19_20-48-30.png)
 
 The [mpdf/mpdf](https://github.com/mpdf/mpdf) library is a PHP library that generates PDF files from HTML. It requires PHP ≥ 5.6 and is based on FPDF and HTML2FPDF with a number of improvements.
 
@@ -1925,7 +1925,7 @@ During our audit of mpdf/mpdf, we found that HTML markup can be used to:
 
 The library vendor classifies this as intentional behavior, not a vulnerability ([https://mpdf.github.io/#using-user-input-in-htmlcss-code](https://mpdf.github.io/#using-user-input-in-htmlcss-code)).
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/5d781251-image-2025-8-14_12-8-9.png)
 
 **Figure 17. Vendor response concerning mpdf/mpdf**
 
@@ -1961,7 +1961,7 @@ $mpdf->Output();
 
 Demonstration of server‑side request execution and embedding an arbitrary image into the generated PDF.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/6dab83c2-image-2025-8-14_12-15-54.png)
 
 *Figure 18. Demonstration of server side request execution and embedding an arbitrary image into the generated PDF*
 
@@ -1985,7 +1985,7 @@ $mpdf->Output();
 
 Demonstration of server‑side request execution and embedding an arbitrary image into the generated PDF.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/42fe83a1-image-2025-8-14_12-19-26.png)
 
 *Figure 19. Demonstration of server side request execution and embedding an arbitrary image into the generated PDF*
 
@@ -2027,7 +2027,7 @@ $mpdf->Output();
 
 The private user image was successfully embedded as a background in the generated PDF file, and a server-side request was successfully executed.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/18f56380-image-2025-8-14_12-30-0.png)
 
 *Figure 20. Demonstration of server side request execution and embedding an arbitrary image into the generated PDF*
 
@@ -2055,7 +2055,7 @@ $mpdf->Output();
 
 Private user images were successfully embedded into the generated PDF file.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/2c5260e6-image-2025-8-14_13-1-13.png)
 
 *Figure 21. Demonstration of embedding an arbitrary image into the generated PDF file*
 
@@ -2086,7 +2086,7 @@ $mpdf->Output();
 
 After downloading the generated PDF, we can extract the file using the pdfdetach application.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/b2562faa-image-2025-8-13_15-35-44.png)
 
 *Figure 22. Demonstration of reading the embeded /etc/passwd file when generating a PDF*
 
@@ -2113,7 +2113,7 @@ $mpdf->Output();
 
 As a result, the watermark in the generated PDF file became an arbitrary image.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/74918497-image-2025-8-14_13-7-27.png)
 
 *Figure 23. Demonstration of embedding an arbitrary image into the generated PDF file*
 
@@ -2121,7 +2121,7 @@ As a result, the watermark in the generated PDF file became an arbitrary image.
 
 ### Description
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/5e075d03-202732.png)
 
 [KnpLabs/snappy](https://github.com/KnpLabs/snappy) is a PHP library for generating thumbnails, snapshots, or PDFs from a URL or an HTML page.
 
@@ -2148,7 +2148,7 @@ $ sudo dpkg -i ./wkhtmltox_0.12.6.1-3.jammy_amd64.deb
 
 Both KnpLabs/snappy and wkhtmltopdf vendors [warn](https://wkhtmltopdf.org/status.html#recommendations) that any user-supplied HTML data must be sanitized.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/89dfc8ec-image-2025-7-22_16-25-54-1.png)
 
 *Figure 24. Snappy vendor’s response*
 
@@ -2188,7 +2188,7 @@ echo $pdfContent;
 
 Example of successfully obtaining and viewing a server response in the generated PDF with the help of the iframe tag:
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/a4a6defb-image-2025-10-2_13-25-13-1.png)
 
 *Figure 25. Demonstration of server-side request execution*
 
@@ -2229,7 +2229,7 @@ echo $pdfContent;
 
 Demonstration of embedding an arbitrary image into the generated PDF file.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/8a350e7a-image-2025-8-14_13-10-35.png)
 
 *Figure 26. Demonstration of embedding an arbitrary image into the generated PDF file*
 
@@ -2237,7 +2237,7 @@ Demonstration of embedding an arbitrary image into the generated PDF file.
 
 ### Description
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/c1b2d513-image-2025-6-20_20-51-10.png)
 
 The [dompdf/dompdf](https://github.com/dompdf/dompdf) library is an open-source PHP library that converts HTML to PDF. It is a style-driven renderer: it downloads and reads external stylesheets, inline style tags, and the style attributes of individual HTML elements. It also supports most presentational HTML attributes.
 
@@ -2508,7 +2508,7 @@ $dompdf->stream("test_php.pdf", ["Attachment" => false]);
 
 Let’s read the `/tmp/rce` file to verify that the id command was executed.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/d4c9776b-image-2025-8-14_13-31-30.png)
 
 #### Misconfiguration 2. Server-Side Request Forgery (Blind SSRF) via the img tag and the src attribute
 
@@ -2542,7 +2542,7 @@ $dompdf->stream("test_ssrf.pdf", ["Attachment" => false]);
 
 Demonstration of server-side request execution.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/0a273b3c-image-2025-8-14_13-32-51.png)
 
 *Figure 27. Demonstration of server-side request execution*
 
@@ -2576,7 +2576,7 @@ $dompdf->stream("test_lfr.pdf", ["Attachment" => false]);
 
 Demonstration of embedding an arbitrary image into the generated PDF file.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/5035a9bd-image-2025-8-14_13-34-36.png)
 
 *Figure 28. Demonstration of embedding an arbitrary image into the generated PDF file*
 
@@ -2584,7 +2584,7 @@ Demonstration of embedding an arbitrary image into the generated PDF file.
 
 ### Description
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/8d0554c6-image-2025-6-30_11-7-3-1.png)
 
 [LibrePDF/OpenPDF](https://github.com/LibrePDF/OpenPDF) is a free, open-source Java library for creating and editing PDFs, licensed under LGPL and MPL. OpenPDF is a fork of iText.
 
@@ -2641,7 +2641,7 @@ public class App {
 
 Note that OpenPDF does not support all HTML features, which can complicate page layout.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/8c661f27-image-2025-8-14_21-1-7.png)
 
 *Figure 29. Demonstration of server side request execution and embedding an arbitrary image into the generated PDF*
 
@@ -2700,7 +2700,7 @@ public class App {
 
 Demonstration of server‑side request execution and embedding arbitrary images into the generated PDF.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/2d3579bf-image-2025-8-14_21-46-1.png)
 
 *Figure 30. Demonstration of server side request execution and embedding arbitrary images into the generated PDF*
 
@@ -2712,7 +2712,7 @@ Sometimes you may not know the absolute or relative paths to private images. One
 
 In the figure below, we see images in the `/usr/share/apache2` and `/usr/share/doc` folders. As a proof of concept, you can prepare a list of potential image paths and include them all in the HTML markup passed to the library for PDF rendering.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2025/12/1cccb974-image-2025-7-21_13-52-6-1.png)
 
 ## Conclusion
 

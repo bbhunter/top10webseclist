@@ -68,7 +68,7 @@ Report
 
 **Summary by Node.js**
 
-[!](https://hackerone.com/nodejs)
+[![](https://profile-photos.hackerone-user-content.com/variants/000/022/984/e600648ace4a8553247bce967d461a030aa81d49_original.png/b8e19a7691128fca51630d7f5b14644b91b3b45324f6fd488e36244d744fe35b)](https://hackerone.com/nodejs)
 
 A flaw in V8's string hashing mechanism causes integer-like strings to be hashed to their numeric value, making hash collisions trivially predictable. By crafting a request that causes many such collisions in V8's internal string table, an attacker can significantly degrade performance of the Node.js process.
 

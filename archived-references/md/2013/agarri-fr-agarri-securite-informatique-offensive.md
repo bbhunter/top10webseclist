@@ -159,7 +159,7 @@ $ echo  'BAcIMTIzNDU2NzgECAgIAwMAAAAEAwAAAAAGAAAAcGFyYW1zCIIEAAAAc3RlcAQDAQAAAAi
 
 I launched a "Character frobber" attack using the Intruder tool from Burp Suite, in order to slightly corrupt this interesting parameter. The result was more than interesting:
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.fr/docs/frobber.png)
 
 So the target is using Perl and v2.7 of the Storable format. A quick online search revealed that [Storable](http://web.archive.org/web/20160425033628/http://perldoc.perl.org/Storable.html) is a Perl module used for data serialization. A big [security warning](http://web.archive.org/web/20160425033628/http://perldoc.perl.org/Storable.html#SECURITY-WARNING) in the official documentation states the following:
 
@@ -302,7 +302,7 @@ CentOS release 5.11 (Final)
 
 Or, if you prefer a Burp Suite screenshot:
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.fr/docs/thaw-pwned.png)
 
 PWNED! Feel free to play with the following files: the vulnerable programm [victim](http://web.archive.org/web/20160425033628/http://www.agarri.fr/docs/victim) and the exploit itself [PoC_thaw_perl58.pl](http://web.archive.org/web/20160425033628/http://www.agarri.fr/docs/PoC_thaw_perl58.pl). Please keep in mind that the exploitation path will be different on Perl > 5.8
 
@@ -1051,7 +1051,7 @@ Well, port TCP/8983 is open? That's the default port used by Solr. And Solr is [
 
 ```
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.com/docs/solr-props.png)
 
 After downloading a version of Solr similar to the version used by the target, I began to look for vulnerabilities. Even if I could leak a lot of information (about the Solr instances, about the underlying OS, about the content of stored documents), I would love to gain a shell. And given that the Solr interface is accessed through a XXE vulnerability, I can only use GET requests (no POST, no PUT).
 
@@ -1065,7 +1065,7 @@ When reading the documentation, I saw that Solr uses XSLT. And you know how much
 
 ```
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.com/docs/solr-rss.png)
 
 There is however no interesting (I mean exploitable) XSLT stylesheets in the "conf/xslt" directory. Maybe that's a job for our old friend "../" ;-) On some Linux systems, file "/usr/share/ant/etc/ant-update.xsl" is present. This file comes from the "ant-optional" package, itself recommended when installing the "ant" package. And most importantly, this stylesheet applies a "near-identity transform" which allows us to read the raw Solr response:
 
@@ -1077,7 +1077,7 @@ There is however no interesting (I mean exploitable) XSLT stylesheets in the "co
 
 ```
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.com/docs/solr-ant.png)
 
 Fine! We are getting closer to our objective, because execution of arbitrary XSLT code in a non-hardened Java application usually means ... execution of arbitrary Java code!
 
@@ -1110,7 +1110,7 @@ The related DOCTYPE:
 
 And the output, stating that [Apache Xalan-J](http://web.archive.org/web/20160425033628/http://xml.apache.org/xalan-j/) is used:
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.com/docs/solr-recon.png)
 
 Last check: is it really possible to execute arbitrary Java code? Let's upload a basic PoC, just calling java.util.Date:new():
 
@@ -1141,7 +1141,7 @@ The related DOCTYPE:
 
 And the output, showing that executing arbitrary Java code is possible!
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.com/docs/solr-date.png)
 
 It would now be easy to execute a Java Meterpreter from XSLT using [Java Payload](http://web.archive.org/web/20160425033628/http://schierlm.users.sourceforge.net/JavaPayload/). But without any direct inbound or outbound port, this wouldn't be really useful :-( However, port TCP/1521 is closed on the Solr server but reachable from the Java server. Why not develop/upload/execute some code binding TCP/1521, reachable via the XXE vulnerability and somewhat emulating a shell?
 
@@ -1212,7 +1212,7 @@ Now, we can execute arbitrary shell commands or Python code on the Solr server, 
 
 ```
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.com/docs/solr-uname.png)
 
 ```
 
@@ -1222,7 +1222,7 @@ Now, we can execute arbitrary shell commands or Python code on the Solr server, 
 
 ```
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.com/docs/solr-passwd.png)
 
 ```
 
@@ -1232,7 +1232,7 @@ Now, we can execute arbitrary shell commands or Python code on the Solr server, 
 
 ```
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.com/docs/solr-python.png)
 
 Of course, I reported the Solr vulnerabilities (the XSLT one and a few others) to the Apache security team, who forwarded them to the Lucene team. Part of their risk analysis was that *"you cannot use the vulnerabilities without access to the server's filesystem to place malicious files there"*. At that time, I was OK with their statement. But if you find another XXE in Solr itself (cf [SOLR-3895](http://web.archive.org/web/20160425033628/https://issues.apache.org/jira/browse/SOLR-3895) and [SOLR-4881](http://web.archive.org/web/20160425033628/https://issues.apache.org/jira/browse/SOLR-4881)) and have a way to access your own documents via HTTP from the Solr server, then the novel file upload trick using "jar:" (by [@ecbftw](http://web.archive.org/web/20160425033628/https://twitter.com/ecbftw)) could definitely help.
 
@@ -1258,9 +1258,9 @@ First things first, a network-listening proxy is needed. This is trivial to conf
  - check "Disable web interface at http://burp" and "Suppress Burp error messages"
  - add an empty "SSL Pass Through" entry in order to not break any SSL session
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.com/docs/burp-disable_artefacts.png)
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.com/docs/burp-passthrough.png)
 
 Now, redirect Web traffic to your Burp listener, for example using SpiderLabs [Responder](http://web.archive.org/web/20160425033628/https://github.com/SpiderLabs/Responder). Please note that Responder is designed to serve a "wpad.dat" file only if the "WPAD proxy" option is set. In order to use Burp Suite as the WPAD proxy, delete line 897 where *ServeWPADOrNot(WPAD_On_Off)* is checked and use the following command-line:
 
@@ -1272,9 +1272,9 @@ sudo python ./Responder.py -i YOUR_IP -s On -w Off -D Off -L Off -F Off -q Off -
 
 Clients (browsers, RSS readers, updaters, anti virus, ...) configured for WPAD will start using your proxy (listening on TCP/3141) for HTTP and HTTPS. Of course, given we configured a global "SSL Pass Through" entry, only HTTP will be visible. Keep this setting unless you're OK with displaying tons of scary messages to SSL users. By the way, if you wonder what "configured for WPAD" means, it's just a simple check box you probably already met:
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.com/docs/wpad-ie.png)
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.com/docs/wpad-ff.png)
 
 HTTP traffic is now visible in "Proxy / History" and "Target / Site map". An attacker can now conduct passive attacks (like obtaining credentials or cookies) using the "Search" and "Analyze target" features available in "Engagements tools" (Control-A + right-click in "Site map"). A few active attacks are also available by default in Burp Suite, like "SSL Stripping" and redirecting to a malicious server. But there's a lot more tricks we may want to play: modifying links to executables on trusted sites, inserting invisible images stored on a SMB share in order to capture hashes, adding some [BeEF](http://web.archive.org/web/20160425033628/http://www.beefproject.com/) JavaScript code or inserting an iframe pointing to a Metasploit [autopwn](http://web.archive.org/web/20160425033628/https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/server/browser_autopwn.rb) page.
 
@@ -1292,13 +1292,13 @@ There's four ways to define what is an already infected client:
 
 The extension will print its configuration and detailed information in its own window. Additionally, infected pages are tagged and colorized, as visible in "Proxy / History". In the next screenshots, the victim (IP 192.168.2.63) is browsing http://www.laposte.net/ (a French webmail) and an invisible image pointing to a SMB server (IP 192.168.2.66) is inserted just before the </body> tag.
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.com/docs/burp-injector1.png)
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.com/docs/burp-injector2.png)
 
 By default, the prank mode is activated. In this mode, a src attribute pointing to a "funny" picture is added at the beginning of each <img> tag. This is harmless but very noisy. So, be sure to review and modify the configuration before MITM'ing real clients ;-) As an example, here's the default page of the French Ebay website, when browsed with prank mode activated:
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.com/docs/burp-prank.png)
 
 If you want more information, the code is [here](http://web.archive.org/web/20160425033628/http://www.agarri.fr/docs/HTTPInjector.py) and a copy of my slides (in French, but there's plenty of pictures) is [here](http://web.archive.org/web/20160425033628/http://www.agarri.fr/docs/asfws2013-gregoire-burp-v1.3.pdf). Enjoy!
 
@@ -1522,7 +1522,7 @@ And we get this ASan crash:
 
 The following picture is a screenshot of a [DDD](http://web.archive.org/web/20160425033628/http://www.gnu.org/software/ddd/) debugging session:
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.com/docs/ddd_64636261.png)
 
 Gaining control EIP is trivial. The location of the fake "a" object is taken from the XML document and a function pointer is called just after:
 
@@ -2063,7 +2063,7 @@ The following one displays some basic information about the feed and its entries
 
 Here's a screenshot of the output (using the US-CERT feed):
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.fr/docs/exec_reader.png)
 
 OK, everything is now in order. Let's try to execute some more interesting XSLT code, for example in order to identify the underlying XSLT engine:
 
@@ -2083,11 +2083,11 @@ OK, everything is now in order. Let's try to execute some more interesting XSLT 
 
 The output under PHP5:
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.fr/docs/exec_php.png)
 
 The output under Tomcat+Xalan-J:
 
- !
+ ![](http://web.archive.org/web/20160425033628im_/http://www.agarri.fr/docs/exec_xalan.png)
 
 Now, some basic high-level code displaying the current date. For this, we need to use the right namespace. For PHP, it's "http://php.net/xsl" and for Xalan-J, it's "http://xml.apache.org/xalan/java/java.*".
 

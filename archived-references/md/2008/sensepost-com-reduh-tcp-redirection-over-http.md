@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 reDuh - TCP Redirection over HTTP
 
-#   !
+#   ![](https://www.sensepost.com/research/reDuh/newmast.gif)
  reDuh: Re-inventing TCP like its 1973!
 
  Have you registered? Register (free,instant) for full access click [ here](http://www.sensepost.com/research_register.html)
@@ -98,13 +98,13 @@ b) Glenn wishes to make an RDP connection to the server term-serv.victim.com (vi
 
 c) The firewall permits HTTP traffic to the webserver but denies everything else
 
- !
+ ![](https://www.sensepost.com/research/reDuh/net.png)
 
 i) Glenn uploads reDuh.jsp to **http://ubuntoo.victim.com/uploads/reDuh.jsp**
 
 ii) Glenn runs reDuhClient on his machine and points it to the page: **$ java reDuhClient ubuntoo.victim.com 80 /uploads/reDuh.jsp**
 
- !
+ ![](https://www.sensepost.com/research/reDuh/ready2.png)
 
 iii) Glenn administers reDuhClient by connecting to its management port (1010 by default)
 
@@ -121,7 +121,7 @@ Un-needed Technical Details:
 
 v)Now Glenn launches his RDP client, and aims it at localhost:1234
 
- !
+ ![](https://www.sensepost.com/research/reDuh/go.png)
 
 reDuhClient and reDuh.jsp will happily shunt TCP until they are killed..
 

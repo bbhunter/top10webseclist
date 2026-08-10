@@ -81,7 +81,7 @@ Director of Research
 
 -
 
-!
+![](https://portswigger.net/cms/images/52/c5/60a7-article-browser-powered_desync_attacks_article.jpg)
 
 The recent rise of [HTTP Request Smuggling](https://portswigger.net/web-security/request-smuggling) has seen a flood of critical findings enabling near-complete compromise of numerous major websites. However, the threat has been confined to attacker-accessible systems with a reverse proxy front-end... until now.
 
@@ -274,7 +274,7 @@ Content-Length: 162...`
 
 HTTP pipelining is also visible in Burp Repeater, where it's commonly mistaken for genuine request smuggling:
 
-!
+![](https://portswigger.net/cms/images/58/3f/3976-article-screenshot_2022-08-16_at_15.29.56.png)
 
 You can test this for yourself in Turbo Intruder by increasing the requestsPerConnection setting from 1 - just be prepared for false positives.
 
@@ -362,7 +362,7 @@ Content-Type: image/x-icon`
 
 I confirmed this vulnerability by creating a simple proof of concept (PoC) that [stored](https://portswigger.net/web-security/request-smuggling/exploiting#capturing-other-users-requests) random live users' complete requests, including authentication tokens, in my shopping list:
 
-!
+![](https://portswigger.net/cms/images/9b/8b/ed86-article-amazon.png)
 
 After I reported this to Amazon, I realised that I'd made a terrible mistake and missed out on a much cooler potential exploit. The attack request was so vanilla that I could have made anyone's web browser issue it using fetch(). By using the HEAD technique on Amazon to create an [XSS](https://portswigger.net/web-security/cross-site-scripting) gadget and execute JavaScript in victim's browsers, I could have made each infected victim re-launch the attack themselves, spreading it to numerous others. This would have released a desync worm - a self-replicating attack which exploits victims to infect others with no user-interaction, rapidly exploiting every active user on Amazon.
 
@@ -376,13 +376,13 @@ The ability for a browser to cause a desync enables a whole new class of threat 
 
 A CSD attack starts with the victim visiting the attacker's website, which then makes their browser send two cross-domain requests to the vulnerable website. The first request is crafted to desync the browser's connection and make the second request trigger a harmful response, typically giving the attacker control of the victim's account:
 
-!
+![](https://portswigger.net/cms/images/b8/a5/459d-article-csd-fixed.png)
 
 ### Methodology
 
 When trying to detect and exploit client-side desync vulnerabilities you can reuse many concepts from server-side desync attacks. The primary difference is that the entire exploit sequence occurs in your victim's web browser, an environment significantly more complex and uncontrolled than a dedicated hacking tool. This creates some new challenges, which caused me quite a lot of pain while researching this technique. To spare you, I've taken the lessons learned and developed the following methodology. At a high level, it may look familiar:
 
-!
+![](https://portswigger.net/cms/images/f5/f0/0ac4-article-csd-methodology.png)
 
 #### Detect
 
@@ -461,7 +461,7 @@ I've set the fetch mode 'no-cors' to ensure Chrome displays the connection ID in
 
  When you execute this, you should see two requests in the Network tab with the same connection ID, and the second one should trigger a 404:
 
-!
+![](https://portswigger.net/cms/images/fe/7c/26c1-article-devtools.png)
 
 If this works as expected, congratulations - you've found yourself a client-side desync!
 
@@ -739,7 +739,7 @@ When processing a partial request that matches a synth rule, Varnish will time o
 
 To trigger a pause-based desync on a vulnerable front-end, start by sending your headers, promising a body, and then just wait. Eventually you'll receive a response and when you finally send your request body, it'll be interpreted as a new request:
 
-!
+![](https://portswigger.net/cms/images/71/05/55dd-article-intro.png)
 
 #### Apache
 
@@ -753,7 +753,7 @@ If you spot a server that's vulnerable to a pause-based desync, you've got two o
 
 If the vulnerable server is running on the back-end, you may be able to trigger a server-side desync. For this to work, you need a front-end that will stream requests to the back-end. In particular, it needs to forward along HTTP headers without buffering the entire request body. This is what the resulting exploit flow will look like:
 
-!
+![](https://portswigger.net/cms/images/91/e7/3b33-article-basic.png)
 
 There's one small catch here. The front-end won't read in the timeout response and pass it along to us until it's seen us send a complete request. As a result, we need to send our headers, pause for a while then continue unprompted with the rest of the attack sequence. I'm not aware of any security testing tools that support partially delaying a request like this, so I've implemented support into Turbo Intruder. The queue interface now has three new arguments:
 
@@ -763,11 +763,11 @@ There's one small catch here. The front-end won't read in the timeout response a
 
 So, which front-ends actually have this request-streaming behaviour? One well-known front-end is Amazon's Application Load Balancer (ALB), but there's an extra snag. If ALB receives a response to a partial request, it will refuse to reuse the connection.
 
-!
+![](https://portswigger.net/cms/images/3a/08/0ffd-article-badlytimed.png)
 
 Fortunately, there's an inherent race condition in this mechanism. You can exploit Varnish behind ALB by delaying the second half of the request just enough that it arrives on the front-end at the same moment the back-end times out.
 
-!
+![](https://portswigger.net/cms/images/35/d1/4f8c-article-welltimed.png)
 
 #### Matching timeouts
 
@@ -785,7 +785,7 @@ However, there's one approach that can definitely delay a browser request - an a
 
 The attack flow is very similar to a regular client-side desync attack. The user visits an attacker-controlled page, which issues a series of cross-domain requests to the target application. The first HTTP request is deliberately padded to be so large that the operating system splits it into multiple TCP packets, enabling an active MITM to delay the final packet, triggering a pause-based desync. Due to the padding, the attacker can identify which packet to pause simply based on the size.
 
-!
+![](https://portswigger.net/cms/images/20/35/2bac-article-mitm.png)
 
 I was able to successfully perform this attack against a standalone Apache-based website with the default configuration and a single redirect rule:
 

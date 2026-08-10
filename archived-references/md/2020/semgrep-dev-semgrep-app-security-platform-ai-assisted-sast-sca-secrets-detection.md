@@ -68,7 +68,7 @@ Code Security
 
  [ Book a demo ](https://semgrep.dev/contact/demo) [ Try for free ](https://semgrep.dev/signup)
 
- !
+ ![](https://semgrep.dev/assets/home-hero-2602.svg)
 
  Loved by leading engineering teams
 
@@ -86,7 +86,7 @@ Code Security
 
  ![Trail of Bits Logo](https://semgrep.dev/assets/logos/tob-logo.svg)
 
- !
+ ![](https://semgrep.dev/assets/logos/vanta-logo-18hg3.svg)
 
  ![Why Semgrep Illustration](https://semgrep.dev/assets/illustrations/why-semgrep.svg)
 
@@ -114,7 +114,7 @@ AppSec teams triage 80% fewer false positives across SAST and SCA. Backlogs shri
 
 AI learns your code context to eliminate false positives and prioritize reachable vulnerabilities – validated by 95% of security reviewers across 6M+ findings.
 
- [ !
+ [ ![](https://semgrep.dev/assets/card_icon-code.svg)
 
 ### Semgrep Code (SAST)
 
@@ -122,7 +122,7 @@ Find and fix real vulnerabilities.
 
 Multimodal AI detection combines static analysis and AI reasoning to uncover OWASP risks, business logic flaws, and IDORs that traditional scanners miss.
 
- Learn about Code ](https://semgrep.dev/products/semgrep-code) [ !
+ Learn about Code ](https://semgrep.dev/products/semgrep-code) [ ![](https://semgrep.dev/assets/card_icon-supply_chain.svg)
 
 ### Semgrep Supply Chain (SCA)
 
@@ -130,7 +130,7 @@ Safely fix only what’s exploitable.
 
 Reachability analysis flags the dependencies that actually matter, reducing false positives in high and critical severity findings by up to 98%.
 
- Learn about Supply Chain ](https://semgrep.dev/products/semgrep-supply-chain-old) [ !
+ Learn about Supply Chain ](https://semgrep.dev/products/semgrep-supply-chain-old) [ ![](https://semgrep.dev/assets/card_icon-secrets.svg)
 
 ### Semgrep Secrets Scanning
 
@@ -155,7 +155,7 @@ Semantic analysis, entropy analysis, and validation detect hardcoded secrets and
 
  [ Learn More ](https://semgrep.dev/products/integrations)
 
- !
+ ![](https://semgrep.dev/assets/integrations.svg)
 
 #### For Developers
 

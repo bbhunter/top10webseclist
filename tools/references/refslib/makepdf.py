@@ -90,8 +90,24 @@ _OL = re.compile(r"^(\s*)\d+[.)]\s+(.*)$")
 _TABLE_SEP = re.compile(r"^\s*\|?\s*:?-{2,}:?\s*(\|\s*:?-{2,}:?\s*)+\|?\s*$")
 _BLOCKQUOTE = re.compile(r"^\s*>\s?(.*)$")
 
-# See the comment at the heading branch below.
+# A HEADING THE LENGTH OF AN ARTICLE IS NOT A HEADING; the reader applies the
+# same cap in `website/app.js`. Measured over 13,865 archived headings the median
+# is 24 characters and the 99th percentile is 206, so anything past this is a
+# paragraph that lost its line break upstream - 30 lines across 13 documents.
 MAX_HEADING_CHARS = 300
+
+
+def _is_heading(line):
+    """The heading match, or None when the line is too long to be one.
+
+    ONE FUNCTION, because two places need the same answer: the main loop, which
+    decides what to emit, and `_is_block_start`, which decides where a paragraph
+    ends. When only the loop was capped they disagreed and the converter looped
+    for ever on the first document it met.
+    """
+    if len(line) > MAX_HEADING_CHARS:
+        return None
+    return _ATX.match(line)
 
 # Inline constructs. Order matters: code spans are pulled out first and masked so
 # nothing inside them is treated as markup.
@@ -204,11 +220,7 @@ def markdown_to_html_body(md_text, image_source=None):
             index += 1
             continue
 
-        # A heading the length of an article is not a heading; see the reader's
-        # own cap in `website/app.js`. Measured over 13,865 archived headings the
-        # 99th percentile is 206 characters, so anything past 300 is a paragraph
-        # that lost its line break upstream.
-        heading = _ATX.match(line) if len(line) <= MAX_HEADING_CHARS else None
+        heading = _is_heading(line)
         if heading:
             level = len(heading.group(1))
             out.append("<h%d>%s</h%d>" % (level, _inline(heading.group(2), image_source), level))
@@ -252,15 +264,34 @@ def markdown_to_html_body(md_text, image_source=None):
         # Paragraph: gather until a blank line or a block starter.
         para = []
         while index < total and lines[index].strip() and not _is_block_start(lines, index):
-            para.append(lines[index].strip())
+            para.append(_demoted(lines[index]).strip())
             index += 1
         out.append("<p>%s</p>" % _inline(" ".join(para), image_source))
     return "\n".join(out)
 
 
+def _demoted(line):
+    """A line whose `#` markers are no longer doing anything, without them.
+
+    Only an over-long heading reaches the paragraph branch, and printing
+    `## ` in front of the prose is worse than printing the prose.
+    """
+    if len(line) > MAX_HEADING_CHARS and _ATX.match(line):
+        return re.sub(r"^#{1,6}\s*", "", line)
+    return line
+
+
 def _is_block_start(lines, index):
+    """Whether this line opens a block, as the MAIN LOOP would treat it.
+
+    THE TWO MUST AGREE OR THE CONVERTER SPINS. This is the paragraph gatherer's
+    stop condition, so a line that looks like a block start here and is consumed
+    by no branch there advances `index` nowhere: the heading cap was added to the
+    loop and not to this test, and the first document with a 323-character
+    heading hung the whole PDF run with no output and no error.
+    """
     line = lines[index]
-    if _FENCE.match(line) or _ATX.match(line) or _HR.match(line) \
+    if _is_heading(line) or _FENCE.match(line) or _HR.match(line) \
             or _UL.match(line) or _OL.match(line) or _BLOCKQUOTE.match(line):
         return True
     return "|" in line and index + 1 < len(lines) and _TABLE_SEP.match(lines[index + 1])

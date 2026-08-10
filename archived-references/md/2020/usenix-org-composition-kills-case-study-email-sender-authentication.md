@@ -90,7 +90,7 @@ BibTeX
 
 ![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Chen Paper (Prepublication) PDF](https://www.usenix.org/system/files/sec20fall_chen-jianjun_prepub_0.pdf)
 
-!
+![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-unlocked.png)
 
 [View the slides](https://www.usenix.org/system/files/sec20_slides_chen-jianjun.pdf)
 

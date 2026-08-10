@@ -81,7 +81,7 @@ Director of Research
 
 -
 
-!
+![](https://portswigger.net/cms/images/f3/d4/607f-article-state-machine_article.png)
 
 For too long, web race condition attacks have focused on a tiny handful of scenarios. Their true potential has been masked thanks to tricky workflows, missing tooling, and simple network jitter hiding all but the most trivial, obvious examples.
 
@@ -156,13 +156,13 @@ The true potential of race conditions can be summed up in a single sentence. Eve
 
 In my head, the state machine for the user's role looked like this:
 
-!
+![](https://portswigger.net/cms/images/53/8c/286a-article-blackhat_diagrams-01.png)
 
 I attempted to elevate privileges by forcibly browsing directly from the role selection page to an application without selecting a role, but this didn't work and so I concluded that it was secure.
 
 However, this state machine had a mistake. I had incorrectly assumed that the GET /role request didn't change the application state. In actual fact, the application was initialising every session with administrator privileges, then overwriting them as soon as the browser fetched the role selection page. Here's an accurate state machine:
 
-!
+![](https://portswigger.net/cms/images/a2/67/43dd-article-blackhat_diagrams-02.png)
 
 By refusing to follow the redirect to /role and skipping straight to an application, anyone could gain super-admin privileges.
 
@@ -170,7 +170,7 @@ I only discovered this through extreme luck, and it took me hours of retrospecti
 
 My primary mistake was the assumption that the GET request wouldn't change the application state. However, there's a second assumption that's even more common - that "requests are atomic". If we ditch this assumption too, we realize this pattern could occur in the span of a single login request:
 
-!
+![](https://portswigger.net/cms/images/2d/23/4445-article-blackhat_diagrams-03.png)
 
 This scenario captures the essence of 'with race conditions, everything is multi-step'. Every HTTP request may transition an application through multiple fleeting, hidden states, which I'll refer to as 'sub-states'. If you time it right, you can abuse these sub-states for unintended transitions, break business logic, and achieve high-impact exploits. Let's get started.
 
@@ -180,11 +180,11 @@ A sub-state is a short-lived state that an application transitions through while
 
 To discover a sub-state, you need an initial HTTP request to trigger a transition through the sub-state, and a second request that interacts with the same resource during the race window. For example, to discover the vulnerability mentioned earlier you would send a request to log in, and a second request that attempted to access the admin panel. Vulnerabilities with small race windows have historically been extremely difficult to discover thanks to network jitter. Jitter erratically delays the arrival of TCP packets, making it tricky to get multiple requests to arrive close together, even when using techniques like last-byte sync:
 
-!
+![](https://portswigger.net/cms/images/f9/1e/4365-article-blackhat_diagrams-07.png)
 
 In search of a solution, I've developed the 'single-packet attack'. Using this technique, you can make 20-30 requests arrive at the server simultaneously - regardless of network jitter:
 
-!
+![](https://portswigger.net/cms/images/b6/d6/9239-article-blackhat_diagrams-08.png)
 
 I implemented the single-packet attack in the open-source Burp Suite extension [Turbo Intruder](https://github.com/PortSwigger/turbo-intruder). To benchmark it, I repeatedly sent a batch of 20 requests 17,000km from Melbourne to Dublin, and measured the gap between the start-of-execution timestamp of the first and last request in each batch. I've published the benchmark scripts in [the examples folder](https://github.com/PortSwigger/turbo-intruder/blob/master/resources/examples/) so you can try them for yourself if you like.
 
@@ -202,7 +202,7 @@ Let's take a look under the hood.
 
 The single-packet attack was inspired by the 2020 USENIX presentation [Timeless Timing Attacks](https://www.usenix.org/conference/usenixsecurity20/presentation/van-goethem). In that presentation, they place two entire HTTP/2 requests into a single TCP packet, then look at the response order to compare the server-side processing time of the two requests:
 
-!
+![](https://portswigger.net/cms/images/05/e7/9c53-article-blackhat_diagrams-13.png)
 
 This is a novel possibility with HTTP/2 because it allows HTTP requests to be sent over a single connection concurrently, whereas in HTTP/1.1 they have to be sequential.
 
@@ -210,7 +210,7 @@ The use of a single TCP packet completely eliminates the effect of network jitte
 
 I spotted an opportunity to adapt a trick from the HTTP/1.1 'last-byte sync' technique. Since servers only process a request once they regard it as complete, maybe by withholding a tiny fragment from each request we could pre-send the bulk of the data, then 'complete' 20-30 requests with a single TCP packet:
 
-!
+![](https://portswigger.net/cms/images/af/9a/d56c-article-blackhat_diagrams-14.png)
 
 After a few weeks of experimenting, I'd built an implementation that worked on all tested HTTP/2 servers.
 
@@ -251,7 +251,7 @@ Now that we've established 'everything is multi-step', and developed a technique
 
 Over months of testing, I've developed the following black-box methodology to help. I recommend using this approach even if you have source-code access; in my experience it's extremely challenging to identify race conditions through pure code analysis.
 
-!
+![](https://portswigger.net/cms/images/2f/d3/9618-article-blackhat_diagrams-06.png)
 
 #### Predict potential collisions
 
@@ -277,7 +277,7 @@ Operations that edit existing data (such as changing an account's primary email 
 
 Most endpoints operate on a specific record, which is looked up using a 'key', such as a username, password reset token, or filename. For a successful attack, we need two operations that use the same key. For example, picture two plausible password reset implementations:
 
-!
+![](https://portswigger.net/cms/images/2e/8d/494e-article-collision.png)
 
 In the first implementation, the user's password reset token is stored in the users table in the database, and the supplied userid acts as the key. If an attacker uses two requests to trigger a reset for two different userids at the same time, two different database records will be altered so there's no potential for a collision. By identifying the key, you've identified that this attack is probably not worth attempting.
 
@@ -335,29 +335,29 @@ Classic multi-step exploits can provide inspiration for race condition attacks. 
 
 There's a [documented](https://soroush.secproject.com/downloadable/common-security-issues-in-financially-orientated-web-applications.pdf) race condition variation of this attack that can occur when the payment and order confirmation are performed by a single request.
 
-!
+![](https://portswigger.net/cms/images/df/1e/1b65-article-basket.png)
 
 On Gitlab, emails are important. The ability to 'verify' an email address you don't own would let you gain administrator access to other projects by hijacking pending invitations. Furthermore, since Gitlab acts as an [OpenID](https://portswigger.net/web-security/oauth/openid) IDP, it could also be abused to hijack accounts on third-party websites that naively trust Gitlab's email verification.
 
 The basket attack might not sound relevant to exploiting Gitlab, but I realized that when visualized, Gitlab's email verification flow looks awfully similar:
 
-!
+![](https://portswigger.net/cms/images/31/9a/abcf-article-blackhat_diagrams-05.png)
 
 Perhaps by verifying an email address and changing it at the same time, I could trick Gitlab into incorrectly marking the wrong address as verified?
 
 When I attempted this attack, I noticed that the confirmation operation was executing before the email-change every time. This suggested that the email-change endpoint was doing more processing than the email-confirmation endpoint before it hit the vulnerable sub-state, so sending the two requests in sync was missing the race window:
 
-!
+![](https://portswigger.net/cms/images/bb/ea/3162-article-multiendpoint.png)
 
 Delaying the confirmation request by 90ms fixed the issue, and achieved a 50/50 spread between the email-change landing first, and the email-confirmation landing first.
 
 Note that adding a client-side delay means you can't use the single-packet attack, so on high-jitter targets it won't work reliably regardless of what delay you set:
 
-!
+![](https://portswigger.net/cms/images/8e/3d/2eb6-article-client-sidedelay.png)
 
 If you encounter this problem, you may be able to solve it by abusing a common security feature. Webservers often have 'leaky bucket' rate-limits which delay processing of requests if they're sent too quickly. You can abuse this by sending a large number of dummy requests to trigger the rate-limit and cause a server-side delay, making the single-packet attack viable even when delayed execution is required:
 
-!
+![](https://portswigger.net/cms/images/68/3c/1592-article-delay.png)
 
 Back on Gitlab, lining the race window up revealed two clues - the email confirmation request intermittently triggered a 500 Internal Server Error, and sometimes the confirmation token was sent to the wrong address! Unfortunately, the misdirected code was only valid for confirming the already-confirmed address, making it useless.
 
@@ -421,7 +421,7 @@ I discovered one of these while probing for code-misrouting races on a major web
 
 It looked similar to the Devise vulnerability until I realized that the two conflicting email-change requests could be sent with a 20-minute delay between them. Deferred race conditions like this one are inherently difficult to identify, as they'll never trigger immediate clues like different responses. Instead, detection is reliant on second-order clues such as changed application behavior or inconsistent emails at a later date. Since the collisions aren't dependent on synchronized requests, clues may appear without any deliberate testing. Over time I've begun to regard spotting anomalies as the single most important skill for finding race conditions.
 
-!
+![](https://portswigger.net/cms/images/dc/81/d8bd-article-blackhat_diagrams-15.png)
 
 I reported this finding, and the initial fix attempt made the misrouted token invalid most of the time, but not always. A different company's initial fix for their vulnerability was also incomplete, suggesting race condition patches definitely deserve scrutiny.
 

@@ -68,49 +68,49 @@ No locked doors, no windows barred: hacking OpenAM infrastructure
 
 The Wayback Machine - https://web.archive.org/web/20150110195738/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11
 
- !
+ ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
  ** ![No locked doors, no windows barred: hacking OpenAM infrastructure](https://web.archive.org/web/20150110195738im_/http://image.slidesharecdn.com/2012-11-zeronights-hacking-openam-121119063312-phpapp01/95/no-locked-doors-no-windows-barred-hacking-openam-infrastructure-11-638.jpg?cb=1353328644)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
- ** !
+ ** ![](https://web.archive.org/web/20150110195738im_/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11)
 
  Upcoming SlideShare
 

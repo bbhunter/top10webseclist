@@ -80,18 +80,18 @@ In the previous post, a new cross-domain extraction method - affecting the lates
 
  During my security research on UI Redressing attacks I found multiple PayPal subdomains (e.g. **https://b.stats.paypal.com**) affected by the Apache disclosure bug as detailed in Figure 1 and Figure 2.
 
-| [!](http://4.bp.blogspot.com/-UX7AXFvyOAw/UM0VW0KNetI/AAAAAAAAAFA/F6G9tYYpnHs/s1600/resp.png) |  |
+| [![](http://4.bp.blogspot.com/-UX7AXFvyOAw/UM0VW0KNetI/AAAAAAAAAFA/F6G9tYYpnHs/s640/resp.png)](http://4.bp.blogspot.com/-UX7AXFvyOAw/UM0VW0KNetI/AAAAAAAAAFA/F6G9tYYpnHs/s1600/resp.png) |  |
 | Figure 1 - HTTP request with the overlong cookie. |  |
 
-| [!](http://1.bp.blogspot.com/-GR6r3FjU_X8/UM0VVcZ2DRI/AAAAAAAAAE4/aPydP9Sii60/s1600/req.png) |  |
+| [![](http://1.bp.blogspot.com/-GR6r3FjU_X8/UM0VVcZ2DRI/AAAAAAAAAE4/aPydP9Sii60/s640/req.png)](http://1.bp.blogspot.com/-GR6r3FjU_X8/UM0VVcZ2DRI/AAAAAAAAAE4/aPydP9Sii60/s1600/req.png) |  |
 | Figure 2 - Apache error message with the disclosure of the malformed Cookie header. |  |
 
  Despite in the first instance the bug could appear as useless, I found that the PayPal application - www.paypal.com - delivers the session cookies defining the domain to **.paypal.com** (Figure 3 and Figure 4).
 
-| [!](http://3.bp.blogspot.com/-dsEPElSXMEg/UNDgfKqBkwI/AAAAAAAAAGI/3X3dlsZkBUM/s1600/sess_1.png) |  |
+| [![](http://3.bp.blogspot.com/-dsEPElSXMEg/UNDgfKqBkwI/AAAAAAAAAGI/3X3dlsZkBUM/s640/sess_1.png)](http://3.bp.blogspot.com/-dsEPElSXMEg/UNDgfKqBkwI/AAAAAAAAAGI/3X3dlsZkBUM/s1600/sess_1.png) |  |
 | Figure 3 - Post-authentication cookies delivery. |  |
 
-| [!](http://1.bp.blogspot.com/-bO49I3nAMX8/UNDgpy1wEyI/AAAAAAAAAGQ/ZoUJUptfedk/s1600/sess_2.png) |  |
+| [![](http://1.bp.blogspot.com/-bO49I3nAMX8/UNDgpy1wEyI/AAAAAAAAAGQ/ZoUJUptfedk/s640/sess_2.png)](http://1.bp.blogspot.com/-bO49I3nAMX8/UNDgpy1wEyI/AAAAAAAAAGQ/ZoUJUptfedk/s1600/sess_2.png) |  |
 | Figure 4 - Cookies delivered to the personal.paypal.com subdomain. |  |
 
  The highlighted security issues could be abused to attack authenticated PayPal users, implementing the mentioned UI Redressing attacks combined with the cookie disclosure bug. But.. I had a problem: I had **no** XSS vulnerability on any PayPal web application - not that there're not! I was able to circumnavigate the limitation identifying another vulnerability on a different PayPal subdomain, that allowed me to define a *monster cookie* with a single HTTP request. As first, please note the following URL:
@@ -100,10 +100,10 @@ In the previous post, a new cross-domain extraction method - affecting the lates
 
  As detailed in Figure 5, the navigation of the above URL involves the setting of the cookie named **navcmd **and then** **a bit of *client-side black magic* defines two new cookie fields named **s_sess** and **s_pers** (Figure 6) that complete the desiderated malformed HTTP request.
 
-| [!](http://4.bp.blogspot.com/-F_KMDWywmt0/UNDpSV6sSaI/AAAAAAAAAGg/wFCDDBBku1A/s1600/monster_1.png) |  |
+| [![](http://4.bp.blogspot.com/-F_KMDWywmt0/UNDpSV6sSaI/AAAAAAAAAGg/wFCDDBBku1A/s640/monster_1.png)](http://4.bp.blogspot.com/-F_KMDWywmt0/UNDpSV6sSaI/AAAAAAAAAGg/wFCDDBBku1A/s1600/monster_1.png) |  |
 | Figure 5 - Cookie defined with attacker-controlled input. |  |
 
-| [!](http://4.bp.blogspot.com/-d2aNzoxHeBY/UNDr2TK8JOI/AAAAAAAAAGw/64DnokPaPLw/s1600/monster_2.png) |  |
+| [![](http://4.bp.blogspot.com/-d2aNzoxHeBY/UNDr2TK8JOI/AAAAAAAAAGw/64DnokPaPLw/s640/monster_2.png)](http://4.bp.blogspot.com/-d2aNzoxHeBY/UNDr2TK8JOI/AAAAAAAAAGw/64DnokPaPLw/s1600/monster_2.png) |  |
 | Figure 6 - Final monster cookie. |  |
 
 ###  7350PayPwn
@@ -115,7 +115,7 @@ In the previous post, a new cross-domain extraction method - affecting the lates
 - The malicious page allows the victim to play the d&d game with the extraction of the secret session cookies.
 
 |
- [!](http://4.bp.blogspot.com/-JR4tHH-6l3o/UNDslFyxqOI/AAAAAAAAAG8/euEk11tnemI/s1600/pop_under.png) |  |
+ [![](http://4.bp.blogspot.com/-JR4tHH-6l3o/UNDslFyxqOI/AAAAAAAAAG8/euEk11tnemI/s640/pop_under.png)](http://4.bp.blogspot.com/-JR4tHH-6l3o/UNDslFyxqOI/AAAAAAAAAG8/euEk11tnemI/s1600/pop_under.png) |  |
 | Figure 7 - Pop-under page with the navigation of the monster cookie's generation URL. |  |
 
  The attacker now holds the cookies that can be used to perform a Session Hijacking attack against the victim's PayPal account. A working Proof of Concept has been developed and can be download [here](https://github.com/daath1/nibblesec/tree/master/ui_redressing_mayhem/paypal). The following is a video that illustrates the described attack:

@@ -87,7 +87,7 @@ If you are familiar with OAuth or OpenID Connect, you already know the *redirect
 
 The *popup flow* eliminates the need to reload the SP website by executing the SSO flow in a popup window as follows:
 
-[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRYlwe9SyJ-_w3MaRl0EMF1eyJKnfGNs-6N8kZLaCH79el4VyH-wBuaaI66ETy_WFsl56PYlR2dXK6F6WPjf364flTwyxyW-LLqvj2kxT0g8VpRs_oMFiyIYl5xrVSuOD8TQ9aw5ZPdMGK/s2977/4_popup_flow.png)
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRYlwe9SyJ-_w3MaRl0EMF1eyJKnfGNs-6N8kZLaCH79el4VyH-wBuaaI66ETy_WFsl56PYlR2dXK6F6WPjf364flTwyxyW-LLqvj2kxT0g8VpRs_oMFiyIYl5xrVSuOD8TQ9aw5ZPdMGK/w640-h227/4_popup_flow.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRYlwe9SyJ-_w3MaRl0EMF1eyJKnfGNs-6N8kZLaCH79el4VyH-wBuaaI66ETy_WFsl56PYlR2dXK6F6WPjf364flTwyxyW-LLqvj2kxT0g8VpRs_oMFiyIYl5xrVSuOD8TQ9aw5ZPdMGK/s2977/4_popup_flow.png)
 
 If the sign-in button on the SP website is clicked, the Authentication Request is opened in a new popup window. After the user submits its credentials and grants the consent, the IdP redirects the popup to the `redirect_uri`. From the IdP's perspective, a normal redirect flow is executed. Thus, the IdP does not need not implement any changes to support the popup flow. The SP receives the `code` at its Redirection Endpoint, redeems the `code`, authenticates the user, and finally returns JavaScript that sends an authentication token back to the primary window with postMessage. For instance, the response from the Redirection Endpoint sends the `access_token` (or `id_token` or any other application-specific token) from the popup window back to the primary window as follows:
 
@@ -197,7 +197,7 @@ The websites [cbsnews.com](http://cbsnews.com), [cnet.com](http://cnet.com), and
 
 In the following, we demonstrate the attack applied on [cnet.com](http://cnet.com):
 
-[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMXIhXl__JgnzB6AxEGdy9bRPoGkXkh1Z4-BF60BYfK-rfnmu6DIYnlPi03B49GGG5hls1X1mCSG-Nw0XNPRya1vSL4Ic0cCYC0genEMm5aZGtFImB-t9dyKg_1AFGMh_0LFIHC_AHHc-9/s1339/4_cbsinteractive.png)
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMXIhXl__JgnzB6AxEGdy9bRPoGkXkh1Z4-BF60BYfK-rfnmu6DIYnlPi03B49GGG5hls1X1mCSG-Nw0XNPRya1vSL4Ic0cCYC0genEMm5aZGtFImB-t9dyKg_1AFGMh_0LFIHC_AHHc-9/w640-h234/4_cbsinteractive.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMXIhXl__JgnzB6AxEGdy9bRPoGkXkh1Z4-BF60BYfK-rfnmu6DIYnlPi03B49GGG5hls1X1mCSG-Nw0XNPRya1vSL4Ic0cCYC0genEMm5aZGtFImB-t9dyKg_1AFGMh_0LFIHC_AHHc-9/s1339/4_cbsinteractive.png)
 
 The SSO flow on [cnet.com](http://cnet.com) involves a popup window and an iframe on the primary window. The iframe loads the [easyXDM library](https://github.com/oyvindkinsey/easyXDM), which is (insecurely) used as a proxy between the popup window and the primary window.
 
@@ -238,7 +238,7 @@ We discovered a vulnerability in the postMessage configuration that led to an ac
 
 We demonstrate the attack applied on [www.independent.co.uk](http://www.independent.co.uk) as follows:
 
-[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5X0WUkMMHeNuUtOTtb3i9dIfK4wUuvmSdoQdXEfVP_YDcAOPz7Xt5NOtX7B0xUaOtCbmhWOUEYU3g7bol0qwZCWKw9R3LJix-xjfMujNQz_dRYFGPmvLGwqWHlwjf5LA7ip75qhmA_2Y6/s1192/4_sap.png)
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5X0WUkMMHeNuUtOTtb3i9dIfK4wUuvmSdoQdXEfVP_YDcAOPz7Xt5NOtX7B0xUaOtCbmhWOUEYU3g7bol0qwZCWKw9R3LJix-xjfMujNQz_dRYFGPmvLGwqWHlwjf5LA7ip75qhmA_2Y6/w640-h290/4_sap.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5X0WUkMMHeNuUtOTtb3i9dIfK4wUuvmSdoQdXEfVP_YDcAOPz7Xt5NOtX7B0xUaOtCbmhWOUEYU3g7bol0qwZCWKw9R3LJix-xjfMujNQz_dRYFGPmvLGwqWHlwjf5LA7ip75qhmA_2Y6/s1192/4_sap.png)
 
 The SSO flow is started from the SP website by opening the Authentication RequestSAP in a new popup window. This request defines the public IdP (Google) and the domain of the SP website that will finally receive the tokens from the SAP IdP. This domain is not validated correctly: It rejects trivial manipulations (i.e., `domain=https://attacker.com` or `domain=https://www.independent.co.uk.attacker.com`) but fails to detect the `user:pwd@host.com` Basic Authentication URI component.
 

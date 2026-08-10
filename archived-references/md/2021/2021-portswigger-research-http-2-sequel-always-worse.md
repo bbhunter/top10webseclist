@@ -81,7 +81,7 @@ Director of Research
 
 -
 
-!
+![](https://portswigger.net/cms/images/c4/07/3461-article-http2-pub-article.jpg)
 
 HTTP/2 is easily mistaken for a transport-layer protocol that can be swapped in with zero security implications for the website behind it. In this paper, I'll introduce multiple new classes of HTTP/2-exclusive threats caused by both implementation flaws and RFC imperfections.
 
@@ -155,7 +155,7 @@ In HTTP/2, those headers are redundant because each message body is composed of 
 
 HTTP/2 downgrading is when a front-end server speaks HTTP/2 with clients, but rewrites requests into HTTP/1.1 before forwarding them on to the back-end server. This protocol translation enables a range of attacks, including [HTTP request smuggling](https://portswigger.net/web-security/request-smuggling):
 
-!
+![](https://portswigger.net/cms/images/9c/c1/4c32-article-http2-desync.png)
 
 Classic request smuggling vulnerabilities mostly occur because the front-end and back-end disagree about whether to derive a request's length from its Content-Length (CL), or Transfer-Encoding (TE) header. Depending on which way around this desynchronization happens, the vulnerability is classified as CL.TE or TE.CL.
 
@@ -423,7 +423,7 @@ Some other front-ends enforce a one-to-one relationship between connections from
 
 When a front-end opts to never reuse connections to the back-end, life gets really quite challenging. It's impossible to send a request that directly affects a subsequent request:
 
-!
+![](https://portswigger.net/cms/images/3c/4e/03cb-article-tunnel.png)
 
 This leaves one exploit primitive to work with: request tunnelling. This primitive can also arise from alternate means like [H2C smuggling](https://labs.bishopfox.com/tech-blog/h2c-smuggling-request-smuggling-via-http/2-cleartext-h2c), but this section will be focused on desync-powered tunnelling.
 

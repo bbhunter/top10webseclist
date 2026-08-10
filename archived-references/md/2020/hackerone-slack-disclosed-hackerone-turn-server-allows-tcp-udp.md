@@ -68,7 +68,7 @@ Report
 
 **Summary by sandrogauci**
 
-[!](https://hackerone.com/sandrogauci)
+[![](https://profile-photos.hackerone-user-content.com/variants/h1r9ltrlx7r5drucw3cbori5g2mx/72249f83db42955adfcb43c5cad84162ec49002aa21a79c3606f682c8e48f4e6)](https://hackerone.com/sandrogauci)
 
 TURN server allowed proxying of TCP connections and UDP packets to internal Slack network and meta-data services on AWS.
 
@@ -351,7 +351,7 @@ May 21, 2018, 4:18pm UTC
 
 Thank you for the confirmation and for your patience! We will resolve and reward shortly!
 
-[!](https://hackerone.com/slack)
+[![](https://profile-photos.hackerone-user-content.com/variants/000/000/069/683fee312381bc46cadc7ea1950abc87944d12c3_original.png/89f037b490baf3dcca1b84283f4c85141b64c213252a9c79b56c62bf903ab542)](https://hackerone.com/slack)
 
 [Slack](https://hackerone.com/slack)
 

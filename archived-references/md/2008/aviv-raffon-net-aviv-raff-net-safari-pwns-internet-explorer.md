@@ -136,7 +136,7 @@ So, if you decide to keep using Safari for Windows, you should follow the steps 
 |   |
 
 | RSS Feeds |  |
-| [!](https://web.archive.org/web/20081014003640/http://feeds.feedburner.com/AvivRaffOnnet)[!](https://web.archive.org/web/20081014003640/http://feeds.feedburner.com/upcoming0days) |  |
+| [![](https://web.archive.org/web/20081014003640im_/http://aviv.raffon.net/images/rss.jpg)](https://web.archive.org/web/20081014003640/http://feeds.feedburner.com/AvivRaffOnnet)[![](https://web.archive.org/web/20081014003640im_/http://aviv.raffon.net/images/rss0day.jpg)](https://web.archive.org/web/20081014003640/http://feeds.feedburner.com/upcoming0days) |  |
 
   |   |   |
 
@@ -151,14 +151,14 @@ So, if you decide to keep using Safari for Windows, you should follow the steps 
 | Blogroll |  |
 |
 
-|  [!](https://web.archive.org/web/20081014003640/http://arbel.net/blog/Rss.aspx)[ælij arbel](https://web.archive.org/web/20081014003640/http://arbel.net/blog/) |   |
-|  [!](https://web.archive.org/web/20081014003640/http://www.avidardik.com/feed/)[Avi Dardik](https://web.archive.org/web/20081014003640/http://www.avidardik.com/) |   |
-|  [!](https://web.archive.org/web/20081014003640/http://browserfun.blogspot.com/rss.xml)[Browser Fun](https://web.archive.org/web/20081014003640/http://browserfun.blogspot.com/) |   |
-|  [!](https://web.archive.org/web/20081014003640/http://blog.info-pull.com/index.php/feed/)[Info Pull](https://web.archive.org/web/20081014003640/http://blog.info-pull.com/) |   |
-|  [!](https://web.archive.org/web/20081014003640/http://saguiitay.spaces.live.com/feed.rss)[Itay Sagui](https://web.archive.org/web/20081014003640/http://saguiitay.spaces.live.com/) |   |
-|  [!](https://web.archive.org/web/20081014003640/http://metasploit.blogspot.com/atom.xml)[Metasploit](https://web.archive.org/web/20081014003640/http://metasploit.blogspot.com/) |   |
-|  [!](https://web.archive.org/web/20081014003640/http://berendjanwever.blogspot.com/feeds/posts/default)[SkyLined](https://web.archive.org/web/20081014003640/http://berendjanwever.blogspot.com/) |   |
-|  [!](https://web.archive.org/web/20081014003640/http://www.theog.org/index.php/feed/)[The Og](https://web.archive.org/web/20081014003640/http://www.theog.org/) |   |
+|  [![](https://web.archive.org/web/20081014003640im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20081014003640/http://arbel.net/blog/Rss.aspx)[ælij arbel](https://web.archive.org/web/20081014003640/http://arbel.net/blog/) |   |
+|  [![](https://web.archive.org/web/20081014003640im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20081014003640/http://www.avidardik.com/feed/)[Avi Dardik](https://web.archive.org/web/20081014003640/http://www.avidardik.com/) |   |
+|  [![](https://web.archive.org/web/20081014003640im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20081014003640/http://browserfun.blogspot.com/rss.xml)[Browser Fun](https://web.archive.org/web/20081014003640/http://browserfun.blogspot.com/) |   |
+|  [![](https://web.archive.org/web/20081014003640im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20081014003640/http://blog.info-pull.com/index.php/feed/)[Info Pull](https://web.archive.org/web/20081014003640/http://blog.info-pull.com/) |   |
+|  [![](https://web.archive.org/web/20081014003640im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20081014003640/http://saguiitay.spaces.live.com/feed.rss)[Itay Sagui](https://web.archive.org/web/20081014003640/http://saguiitay.spaces.live.com/) |   |
+|  [![](https://web.archive.org/web/20081014003640im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20081014003640/http://metasploit.blogspot.com/atom.xml)[Metasploit](https://web.archive.org/web/20081014003640/http://metasploit.blogspot.com/) |   |
+|  [![](https://web.archive.org/web/20081014003640im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20081014003640/http://berendjanwever.blogspot.com/feeds/posts/default)[SkyLined](https://web.archive.org/web/20081014003640/http://berendjanwever.blogspot.com/) |   |
+|  [![](https://web.archive.org/web/20081014003640im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20081014003640/http://www.theog.org/index.php/feed/)[The Og](https://web.archive.org/web/20081014003640/http://www.theog.org/) |   |
 
  |  |
 

@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 One of the cooler features of the Opera Browser is ***My Flow***, which is basically a shared space between your computer and your phone, allowing you to share links, images, and videos with yourself. To connect, you just scan a QR code, and then you can send things between devices.
 
-!
+![](https://www-static-blogs.operacdn.com/security/wp-content/uploads/sites/6/2021/09/1525218633095-d6c9feef-075c-4e81-9701-22a296592e53-image.png)
 
 Using the developer tools in Opera, I found that the My Flow interface is loaded from the domain *web.flow.opera.com*, which is just a normal HTML page, and which allows me to view its code and components.
 
@@ -90,7 +90,7 @@ parser.innerHTML = '<img src=x >`
 
 With all of this in mind, I created a small proof-of-concept XSS. To show how easy it was to cause the XSS, I created a webpage which, once you began dragging an image, would redirect to the web.flow.opera.com page after a couple seconds. This meant that a user would only need to begin dragging an image, and then simply let go of the mouse, for the XSS to happen.
 
-!
+![](https://www-static-blogs.operacdn.com/security/wp-content/uploads/sites/6/2021/09/ezgif-1-9b114c3d83bb-1.gif)
 
 However, I wanted to show a greater impact, so I began looking at what the Opera Touch Background extension actually did. As it turns out, it has higher privileges and access to native functions, such as ***opr.operaTouchPrivate***, which is a collection of functions developed for use with the My Flow application. Looking at the available functions, two cases caught my eye: ***SEND_FILE*** and ***OPEN_FILE***.
 
@@ -119,7 +119,7 @@ Thanks for reading!
 
 Bounty: $8,000 USD.
 
- [ !
+ [ ![](https://secure.gravatar.com/avatar/1bc5da9caf0d55cabcd2a1b02829c7e38d344f0eb5a29824736d5da7a2f71adb?s=120&d=mm&r=g)
 
 # Opera Team
 

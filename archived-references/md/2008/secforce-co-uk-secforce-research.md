@@ -64,17 +64,17 @@ page going offline. To read the original, follow the link above.
 SECFORCE :: Research
 
 |  [![SECFORCE](http://www.secforce.co.uk/pics/secforce.gif)](http://www.secforce.co.uk/index.html) |   |   |   |   |   |   |
-|  ! |  ! |  ! |  ! |  ! |  ! |  ! |  ! |   |
+|  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |   |
 |   |   |
 
-|  [![HOME](http://www.secforce.co.uk/pics/mhome1.gif)](http://www.secforce.co.uk/) |  ! |  [![COMPANY](http://www.secforce.co.uk/pics/mcompany1.gif)](http://www.secforce.co.uk/company/) |  ! |  [![SERVICES](http://www.secforce.co.uk/pics/mservices1.gif)](http://www.secforce.co.uk/services/) |  ! |  [![RESEARCH](http://www.secforce.co.uk/pics/mresearch2.gif)](http://www.secforce.co.uk/research/) |  ! |  [![BLOG](http://www.secforce.co.uk/pics/mblog1.gif)](http://www.secforce.co.uk/blog/) |  ! |  [![NEWS & EVENTS](http://www.secforce.co.uk/pics/mnews1.gif)](http://www.secforce.co.uk/news/) |  ! |  [![PRESS OFFICE](http://www.secforce.co.uk/pics/mpress1.gif)](http://www.secforce.co.uk/press/) |  ! |  [![CONTACT](http://www.secforce.co.uk/pics/mcontact1.gif)](http://www.secforce.co.uk/contact/index.php) |   |
+|  [![HOME](http://www.secforce.co.uk/pics/mhome1.gif)](http://www.secforce.co.uk/) |  ![](http://www.secforce.co.uk/pics/mdots.gif) |  [![COMPANY](http://www.secforce.co.uk/pics/mcompany1.gif)](http://www.secforce.co.uk/company/) |  ![](http://www.secforce.co.uk/pics/mdots.gif) |  [![SERVICES](http://www.secforce.co.uk/pics/mservices1.gif)](http://www.secforce.co.uk/services/) |  ![](http://www.secforce.co.uk/pics/mdots.gif) |  [![RESEARCH](http://www.secforce.co.uk/pics/mresearch2.gif)](http://www.secforce.co.uk/research/) |  ![](http://www.secforce.co.uk/pics/mdots.gif) |  [![BLOG](http://www.secforce.co.uk/pics/mblog1.gif)](http://www.secforce.co.uk/blog/) |  ![](http://www.secforce.co.uk/pics/mdots.gif) |  [![NEWS & EVENTS](http://www.secforce.co.uk/pics/mnews1.gif)](http://www.secforce.co.uk/news/) |  ![](http://www.secforce.co.uk/pics/mdots.gif) |  [![PRESS OFFICE](http://www.secforce.co.uk/pics/mpress1.gif)](http://www.secforce.co.uk/press/) |  ![](http://www.secforce.co.uk/pics/mdots.gif) |  [![CONTACT](http://www.secforce.co.uk/pics/mcontact1.gif)](http://www.secforce.co.uk/contact/index.php) |   |
 
  |   |   |
-|  ! |  ! |  ! |  ! |  ! |  ! |  ! |  ! |   |
+|  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |   |
 |   |   |  ![Tools](http://www.secforce.co.uk/pics/tittools.gif) |   |   |
-|  ! |  ! |  ! |  ! |  ! |  ! |  ! |  ! |   |
+|  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |   |
 |   |   |  [Home](http://www.secforce.co.uk/) : [Research](http://www.secforce.co.uk/research/) : [Tools](http://www.secforce.co.uk/research/tools.html) : PHP Socket Hijacking Demo |   |   |
-|  ! |  ! |   |
+|  ![](http://www.secforce.co.uk/pics/nada.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |   |
 |   |
 |   |   |
 
@@ -83,7 +83,7 @@ SECFORCE :: Research
 [Get the Flash Player](http://www.macromedia.com/go/getflashplayer) to see this player.
 
   |   |
-|  ! |
+|  ![](http://www.secforce.co.uk/pics/icolockblack.gif) |
 
 **PHP Socket Hijacking Demo**
 
@@ -96,12 +96,19 @@ This demo demonstrates a number of attacks abusing PHP socket functionality. The
  |   |
 
 |  [![RESEARCH](http://www.secforce.co.uk/pics/tlatresearch.gif)](http://www.secforce.co.uk/media/demos/index.html) |   |
-|  ! |   |
-|  ! |   |
-|  ! |   |
+|  ![](http://www.secforce.co.uk/pics/separador.gif) |   |
+|  ![](http://www.secforce.co.uk/images/img21.jpg) |   |
+|  ![](http://www.secforce.co.uk/pics/separador.gif) |   |
 |  [Presentations](http://www.secforce.co.uk/research/presentations.html) |   |
-|  ! |   |
+|  ![](http://www.secforce.co.uk/pics/separador.gif) |   |
 |  Tools |   |
-|  ! |   |
+|  ![](http://www.secforce.co.uk/pics/separador.gif) |   |
 |  [Advisories](http://www.secforce.co.uk/research/advisories.html) |   |
-|  ! |   |
+|  ![](http://www.secforce.co.uk/pics/separador.gif) |   |
+
+ |   |   |
+|  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |  ![](http://www.secforce.co.uk/pics/separador.gif) |   |
+|   |   |  Copyright (c) 2008 SECFORCE Ltd
+ All Rights Reserved |  ![](http://www.secforce.co.uk/pics/icohome.gif) |  10 Horsley Court, 4 Candle Street
+ E1 4RX London |  ![](http://www.secforce.co.uk/pics/icocontact.gif) |  +44 (0) 845 056 8694
+![](http://www.secforce.co.uk/pics/nada.gif) [![](http://www.secforce.co.uk/pics/email.jpg)](http://www.secforce.co.uk/contact/index.php) |   |   |

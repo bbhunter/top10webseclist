@@ -97,7 +97,7 @@ Step 4. View all the notes at the same time. The target server is observed to ha
 **Initial Response:** Bug was denied as they misinterpreted the bug would only cause a 404 request and is not capable of causing high impact.
 
 After exchanging few emails I was asked to prove if the impact would be high. I fired up a target VM on the cloud and using only browsers from three laptops I was able to achieve 400+ Mbps outbound traffic for 2-3 hours.
- !
+ ![](https://web.archive.org/web/20160406153520im_/http://chr13.com/wp-content/uploads/2014/04/fb1.png)
  Number of Facebook Servers: **127**
 
 Of course, the impact could be more than 400 Mbps as I was only using browser for this test and was limited by the number of browser thread per domain that would fetch the images. I created a proof-of-concept script that could cause even greater impact and sent the script along with the graph to Facebook.
@@ -121,7 +121,7 @@ I also see a couple of other problems with this type of abuse:
 
 Although a sustained 400 Mbps could be dangerous, I wanted to test this one last time to see if it can indeed have a larger impact.
  Getting rid of the browser and using the poc script I was able to get ~900 Mbps outbound traffic.
- !
+ ![](https://web.archive.org/web/20160406153520im_/http://chr13.com/wp-content/uploads/2014/04/fb2.png)
 
 I was using an ordinary 13 MB PDF file which was fetched by Facebook **180,000+** times, number of Facebook servers involved was **112**.
 

@@ -104,7 +104,7 @@ Now, time to talk about the bug I found!
 
  In July, I was poking around in `chrome://file-manager`, ChromeOS's file manager, when I saw an interesting URL in `localStorage`:
 
- !
+ ![](https://derineryilmaz.com/blog/cve-2023-4369/localStorage.png)
 
  Abesntmindedly, I tried to open the URL in my browser, and, surprisingly, it showed my downloads folder. Apparently, every downloaded file can be opened in this way. As it turns out, the two following URLs have exactly the same content:
 
@@ -116,7 +116,7 @@ Now, time to talk about the bug I found!
 
  I was almost certain that it wouldn't work. Either the CSP would block it, or it would just display as a text file, or it wouldn't be hosted on the Chrome domain. But, to my surprise:
 
- !
+ ![](https://derineryilmaz.com/blog/cve-2023-4369/alert.png)
 
  Wow, it worked! I knew instantly that this had to be a massive bug. It seemed that this page didn't have any CSP, and the origin appeared to be `chrome://file-manager`. So I opened up the devtools console and started to check what would work and what wouldn't.
 
@@ -124,7 +124,7 @@ Now, time to talk about the bug I found!
 
  The second thing I noticed was that I was able to read the source code of other Chrome pages. For example, I could fetch `chrome://prefs-internals` using `XMLHttpRequest` to get some sensitive info about the device:
 
- !
+ ![](https://derineryilmaz.com/blog/cve-2023-4369/xhr.png)
 
  I was also able to use `XMLHttpRequest` to read downloaded files with relative paths like `./file.html`.
 
@@ -136,7 +136,7 @@ Now, time to talk about the bug I found!
 
  This is actually a ChromeOS user hash; each user has a unique one. And for this exploit to work, the malicious extension would have to be able to figure out what it was. Luckily, a number of functions in the `chrome.downloads` extension API return the full path of the file, including the user hash.
 
- !
+ ![](https://derineryilmaz.com/blog/cve-2023-4369/userHash.png)
 
 So I started building the exploit:
 
@@ -160,7 +160,7 @@ So I started building the exploit:
 
  These URLs both have the origin of `chrome://file-manager`, so in theory there should be no problem with one accessing the other. The only thing that throws a wrench in those plans is the fact that the File Manager opens as an app. When we try to open it with `window.open()` from the `filesystem:` tab, the browser closes the newly created tab and instead loads the page in an app-like window, leaving us with a dangling reference to a nonexistent page:
 
- !
+ ![](https://derineryilmaz.com/blog/cve-2023-4369/windowOpen.png)
 
  `chrome://` pages can't be embedded in any way, so that isn't an option. Trying to redirect a tab using JS doesn't work either. That's why I initially thought it would be impossible to get a reference to the `chrome.fileManagerPrivate` API.
 
@@ -198,7 +198,7 @@ So I started building the exploit:
 
  Three days later, I found something else in the File Manager source code:
 
- !
+ ![](https://derineryilmaz.com/blog/cve-2023-4369/imageLoader.png)
 
  Woah, what? A `filesystem:` URL on a built-in Chrome extension? And after a bit of poking around, I managed to open the following URL:
 
@@ -245,7 +245,7 @@ And here's the video for the Image Loader one:
 
  In case you were wondering, `/external` is not controlled by the website at all. Rather, it's a ChromeOS-only folder identical to the user's `MyFiles` path. This obscure feature only exists [on the File Manager and Image Loader origins.](https://source.chromium.org/chromium/chromium/src/+/main:chrome/browser/ash/fileapi/file_system_backend.cc;drc=9d2024940f3a7e31f54ec58bf8a43c75bdc34d27;l=247)
 
- !
+ ![](https://derineryilmaz.com/blog/cve-2023-4369/source.png)
 
  Which means... oh, of course. ChromeOS still uses an outdated and obsolete JavaScript API to power its primary File Manager app. Classic.
 
@@ -253,7 +253,7 @@ And here's the video for the Image Loader one:
 
  And this is, under the hood, how the File Manager app works on ChromeOS. Whenever you create a file, the app uses the undocumented `webkitResolveLocalFileSystemURL()` function--which is, fun fact, the longest-named global function in Chrome--to get a `FileSystemEntry` object from a URL like the following:
 
- !
+ ![](https://derineryilmaz.com/blog/cve-2023-4369/resolve.png)
 
  Then it uses pure Javascript to [create a writer](https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFileEntry/createWriter) on the directory and write a blank `Blob` into a new file. In fact, `fileSystemPrivate` doesn't actually have any functions that directly write to files: it only returns entry objects which have to be handled with JS.
 
@@ -265,7 +265,7 @@ And here's the video for the Image Loader one:
 
  Before this change, `blob:chrome://` and `filesystem:chrome://` URLs would not be considered "real" Chrome URLs; they would have no access to `chrome.send()` or `Mojo`, and they couldn't get a window reference to a page with those permissions. Indeed, when I tried the `window.open()` part of the exploit on earlier versions of ChromeOS, the browser crashed both pages.
 
- !
+ ![](https://derineryilmaz.com/blog/cve-2023-4369/crash.png)
 
  But with the new code, this URL case was never handled.
 

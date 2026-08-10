@@ -157,7 +157,7 @@ Until Mozilla fixes this vulnerability, I recommend not to provide username and 
 
 |   |
 
-| [!](https://web.archive.org/web/20080106144155/http://savejourneyman.funurl.com/) |  |
+| [![](https://web.archive.org/web/20080106144155im_/http://www.raffon.net/images/savejourneyman.jpg)](https://web.archive.org/web/20080106144155/http://savejourneyman.funurl.com/) |  |
 
   |   |   |
 
@@ -172,13 +172,13 @@ Until Mozilla fixes this vulnerability, I recommend not to provide username and 
 | Blogroll |  |
 |
 
-|  [!](https://web.archive.org/web/20080106144155/http://arbel.net/blog/Rss.aspx)[ælij arbel](https://web.archive.org/web/20080106144155/http://arbel.net/blog/) |   |
-|  [!](https://web.archive.org/web/20080106144155/http://www.avidardik.com/feed/)[Avi Dardik](https://web.archive.org/web/20080106144155/http://www.avidardik.com/) |   |
-|  [!](https://web.archive.org/web/20080106144155/http://browserfun.blogspot.com/rss.xml)[Browser Fun](https://web.archive.org/web/20080106144155/http://browserfun.blogspot.com/) |   |
-|  [!](https://web.archive.org/web/20080106144155/http://blog.info-pull.com/index.php/feed/)[Info Pull](https://web.archive.org/web/20080106144155/http://blog.info-pull.com/) |   |
-|  [!](https://web.archive.org/web/20080106144155/http://saguiitay.spaces.live.com/feed.rss)[Itay Sagui](https://web.archive.org/web/20080106144155/http://saguiitay.spaces.live.com/) |   |
-|  [!](https://web.archive.org/web/20080106144155/http://metasploit.blogspot.com/atom.xml)[Metasploit](https://web.archive.org/web/20080106144155/http://metasploit.blogspot.com/) |   |
-|  [!](https://web.archive.org/web/20080106144155/http://berendjanwever.blogspot.com/feeds/posts/default)[SkyLined](https://web.archive.org/web/20080106144155/http://berendjanwever.blogspot.com/) |   |
+|  [![](https://web.archive.org/web/20080106144155im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20080106144155/http://arbel.net/blog/Rss.aspx)[ælij arbel](https://web.archive.org/web/20080106144155/http://arbel.net/blog/) |   |
+|  [![](https://web.archive.org/web/20080106144155im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20080106144155/http://www.avidardik.com/feed/)[Avi Dardik](https://web.archive.org/web/20080106144155/http://www.avidardik.com/) |   |
+|  [![](https://web.archive.org/web/20080106144155im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20080106144155/http://browserfun.blogspot.com/rss.xml)[Browser Fun](https://web.archive.org/web/20080106144155/http://browserfun.blogspot.com/) |   |
+|  [![](https://web.archive.org/web/20080106144155im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20080106144155/http://blog.info-pull.com/index.php/feed/)[Info Pull](https://web.archive.org/web/20080106144155/http://blog.info-pull.com/) |   |
+|  [![](https://web.archive.org/web/20080106144155im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20080106144155/http://saguiitay.spaces.live.com/feed.rss)[Itay Sagui](https://web.archive.org/web/20080106144155/http://saguiitay.spaces.live.com/) |   |
+|  [![](https://web.archive.org/web/20080106144155im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20080106144155/http://metasploit.blogspot.com/atom.xml)[Metasploit](https://web.archive.org/web/20080106144155/http://metasploit.blogspot.com/) |   |
+|  [![](https://web.archive.org/web/20080106144155im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20080106144155/http://berendjanwever.blogspot.com/feeds/posts/default)[SkyLined](https://web.archive.org/web/20080106144155/http://berendjanwever.blogspot.com/) |   |
 
  |  |
 

@@ -60,13 +60,13 @@ page going offline. To read the original, follow the link above.
 
 Securitum. Leading european penetration testing company
 
- !
+ ![](https://static.shuffle.dev/uploads/files/a6/a6f2940854c19714ee211d1b0f6281ba8f8e7687/image-185.png)
 
 Pentest Chronicles
 
 # Crashing servers with digits: floating-point numbers DoS vulnerabilities
 
- !
+ ![](https://static.shuffle.dev/uploads/files/2a/2a36acf12f2a0335c799aaa616af312467de082e/insights.png)
 
 # Martin Matyja
 
@@ -79,17 +79,17 @@ Pentest Chronicles
 
  Let’s consider an example. During the security tests, one of the HTTP requests to the application included a parameter in JSON format representing a floating-point number. It's important to note that a potential vulnerability could involve any data type, such as an integer or even a string variable, however, for this example, a large floating-point number was injected.
 
-!
+![](https://www.securitum.com/images/20240510-obraz1.png)
 
  The rest of the JSON data format is not needed, so it was removed for the query clarity.
 
  A large number of digits were added in yellow above, creating a floating-point number in the process. Many digits can be quickly created using the example command: seq -s "" 1300000 | tr -d 'eE+i.', generating approximately 7.89 million digits.
  The application took about 40 seconds to process this enormous floating-point number, after which it returned information about the successful request. Below is information from Burp Suite software about the response time for the request:
-! It's not always necessary to send a massive number of digits after the decimal point. We can also use e-notation, which conveys to the application a large number of digits after the decimal point without needing to include them all in the query content.
+![](https://www.securitum.com/images/20240510-obraz2.png) It's not always necessary to send a massive number of digits after the decimal point. We can also use e-notation, which conveys to the application a large number of digits after the decimal point without needing to include them all in the query content.
 
  Here’s another example, from Exploit Database: https://www.exploit-db.com/exploits/35304.
 
-!
+![](https://www.securitum.com/images/20240510-obraz3.png)
 
  Instead of providing the entire structure of a floating-point number, e-notation allows us to specify how many digits should be after the decimal point. This example illustrates an alternative way to introduce a malicious number into the application and disrupt software continuity.
 
@@ -108,7 +108,7 @@ Pentest Chronicles
 
 # Next Pentest Chronicles
 
- !
+ ![](https://www.securitum.com/images/ilustration-pentest-chronicles-article.png)
 
 ### When Usernames Become Passwords: A Real-World Case Study of Weak Password Practices
 
@@ -120,7 +120,7 @@ In today's world, ensuring the security of our accounts is more crucial than eve
 
  [READ pentest chronicle](https://www.securitum.com/when_usernames_become_passwords_a_real-world_case_study_of_weak_password_practices.html)
 
- !
+ ![](https://www.securitum.com/images/ilustration-pentest-chronicles3.png)
 
 ### SOCMINT – or rather OSINT of social media
 
@@ -132,7 +132,7 @@ In today's world, ensuring the security of our accounts is more crucial than eve
 
  [READ pentest chronicle](https://www.securitum.com/socmint__or_rather_osint_of_social_media.html)
 
- !
+ ![](https://www.securitum.com/images/ilustration-pentest-chronicles2.png)
 
 ### PyScript – or rather Python in your browser + what can be done with it?
 
@@ -144,16 +144,16 @@ In today's world, ensuring the security of our accounts is more crucial than eve
 
  [READ pentest chronicle](https://www.securitum.com/pyscript__or_rather_python_in_your_browser__what_can_be_done_with_it.html)
 
- !
+ ![](https://www.securitum.com/images/contact.png)
 
 ## Any questions?
 
 #  Happy to get a call or email
 and help!
 
- [CONTACT US](https://www.securitum.com/contact.html) !
+ [CONTACT US](https://www.securitum.com/contact.html) ![](https://static.shuffle.dev/uploads/files/a6/a6f2940854c19714ee211d1b0f6281ba8f8e7687/Arrow-61.png)
 
- !
+ ![](https://static.shuffle.dev/uploads/files/a6/a6f2940854c19714ee211d1b0f6281ba8f8e7687/Logo-Securitum.png)
 
  
 

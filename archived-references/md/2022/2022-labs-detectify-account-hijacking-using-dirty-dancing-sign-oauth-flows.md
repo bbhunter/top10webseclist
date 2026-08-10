@@ -68,7 +68,7 @@ page going offline. To read the original, follow the link above.
 
 # Account hijacking using “dirty dancing” in sign-in OAuth-flows
 
-!
+![](https://labs.detectify.com/_next/image/?url=https%3A%2F%2Flabsadmin.detectify.com%2Fapp%2Fuploads%2F2015%2F06%2FFrans_speaker_photo.png&w=128&q=75)
 
 **Frans Rosén**Jul 06, 2022
 
@@ -104,7 +104,7 @@ To give you a short explanation of why it is interesting to try to leak these OA
 
 A lot of websites allow you to “sign in with [insert name of massive online platform]”:
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/sign-in1.png)[!](https://labsadmin.detectify.com/app/uploads/2022/07/sign-in2.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/sign-in1.png)](https://labsadmin.detectify.com/app/uploads/2022/07/sign-in1.png)[![](https://labsadmin.detectify.com/app/uploads/2022/07/sign-in2.png)](https://labsadmin.detectify.com/app/uploads/2022/07/sign-in2.png)
 
 These third-party services you use for authorization could be through Google, Apple, Facebook, Twitter, Slack, or any other provider. They all use OAuth to issue some form of code or token to verify the identity of the user to a website. This allows you to sign in using one of these third-party services without providing any login credentials to the website you want to sign in to. We’ll refer throughout the post to the sign-in flow of a website using a third-party service provider as an “OAuth-dance.”
 
@@ -187,7 +187,7 @@ I think it’s a good practice to remind readers of these posts that when you re
 
 I tried documenting my investigation through chat messages to [@avlidienbrunn](https://twitter.com/avlidienbrunn), but it was mostly an attempt to inspire myself to keep going:
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/chat1.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/chat1.png)](https://labsadmin.detectify.com/app/uploads/2022/07/chat1.png)
 
 >
 
@@ -375,7 +375,7 @@ The plan was to focus on number one, two, and 3.1 since those had the parameters
 
 Now it was time to actually start looking at ways to leak the information. I still had no actual real vulnerabilities found, and I did not even know if this was worth the time at this point.
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/chat4-1.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/chat4-1.png)](https://labsadmin.detectify.com/app/uploads/2022/07/chat4-1.png)
 
 >
 
@@ -391,7 +391,7 @@ Once again, this is where most of the time was spent, but I think some of these 
 
 Ok, I’ll stop complaining now. Let’s go!
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/chat3-1.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/chat3-1.png)](https://labsadmin.detectify.com/app/uploads/2022/07/chat3-1.png)
 
 >
 
@@ -405,15 +405,15 @@ I will categorize the different methods of leaking the URL as different gadgets 
 
 ### Gadget 1: Weak or no origin-check postMessage-listeners that leaks URL
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget-1-1536x873-1.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget-1-1536x873-1.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget-1-1536x873-1.png)
 
 This was the expected one. One example was an analytics-SDK for a popular site that was loaded on websites:
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget1-example1.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget1-example1.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget1-example1.png)
 
 This SDK exposed a postMessage-listener which sent the following message when the message-type matched:
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget1-example2.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget1-example2.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget1-example2.png)
 
 Sending a message to it from a different origin:
 
@@ -425,7 +425,7 @@ openedwindow.postMessage('{"type":"sdk-load-embed"}','*');
 
 A response message would show up in the window that sent the message containing the `location.href` of the website:
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget1-example3.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget1-example3.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget1-example3.png)
 
 The flow that could be used in an attack depended on how codes and tokens were used for the sign-in flow, but the idea was:
 
@@ -440,13 +440,13 @@ The flow that could be used in an attack depended on how codes and tokens were u
 
 ### Gadget 2: XSS on sandbox/third-party domain that gets the URL
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget-2-1536x873-1.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget-2-1536x873-1.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget-2-1536x873-1.png)
 
 #### Gadget 2: example 1, stealing window.name from a sandbox iframe
 
 I reported the first chain found in the wild using this gadget on May 12:
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget2-example1.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget2-example1.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget2-example1.png)
 
 Coincidentally, two days later, on the 14th of May, [Youssef Sammouda](https://twitter.com/samm0uda) published a great blog post explaining his method to [takeover Facebook Accounts which uses Gmail](https://ysamm.com/?p=763). This blog post describes a similar flow that I identified. However, the bug is not about breaking the OAuth-dance, but leaking the URL the victim ends up on by using an iframe:d sandbox domain that also allows arbitrary javascript to be loaded. The reason the sandbox gets access to the sensitive data in the URL is that it is appended to the sandbox URL when the iframe is loaded.
 
@@ -461,7 +461,7 @@ i.srcdoc = '<script>console.log("my name is: " + window.name)</script>';
 document.body.appendChild(i)
 ```
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget2-example2.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget2-example2.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget2-example2.png)
 
 The domain loaded in the iframe also had a simple XSS:
 
@@ -600,7 +600,7 @@ window.addEventListener('message', function (e) {
 
 ### Gadget 3: Using APIs to fetch URL out-of-bounds
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/Gadget-3-1536x873-1.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/Gadget-3-1536x873-1.png)](https://labsadmin.detectify.com/app/uploads/2022/07/Gadget-3-1536x873-1.png)
 
 This gadget turned out to be the most fun. There’s something satisfying about sending the victim somewhere and then picking up sensitive data from a different location.
 
@@ -628,7 +628,7 @@ The main window could also fetch this content:
 tracking.postMessage('{"type": "get", "key": "key-to-save"}', '*');
 ```
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example1.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example1.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example1.png)
 
 When the iframe was loaded on initialization, a key was saved for the last location of the user using `location.href`:
 
@@ -707,7 +707,7 @@ window.addEventListener('message', function (e) {
 target="_blank">Click here to hijack token</a>';
 ```
 
-- The victim would click the link, go through the OAuth-dance, and end up on the non-happy path loading the tracking-script and the storage-iframe. The storage iframe gets an update of `last-url`. The `window.storage`-event would trigger in the iframe of the malicious page since the localStorage was updated, and the malicious page that was now getting updates whenever the storage changed would get a postMessage with the current URL of the victim:[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example2.png)
+- The victim would click the link, go through the OAuth-dance, and end up on the non-happy path loading the tracking-script and the storage-iframe. The storage iframe gets an update of `last-url`. The `window.storage`-event would trigger in the iframe of the malicious page since the localStorage was updated, and the malicious page that was now getting updates whenever the storage changed would get a postMessage with the current URL of the victim:[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example2.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example2.png)
 
 #### Gadget 3: example 2, customer mix-up in CDN – DIY storage-SVG without origin check
 
@@ -738,7 +738,7 @@ The interesting part was that, if you then used the customer-specific subdomain 
 https://cdn.customer12345.analytics.example.com/img/customer94342/tiger.svg
 ```
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example4.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example4.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example4.png)
 
 This meant that the customer with ID #94342 could render SVG-files in customer #12345’s storage.
 
@@ -753,15 +753,15 @@ I uploaded a SVG-file with a simple XSS-payload:
 </svg>
 ```
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example3.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example3.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example3.png)
 
 Not great. The CDN added a `Content-Security-Policy: default-src 'self'`-header to everything under `img/`. You could also see the server header mentioned S3 – disclosing that the content was uploaded to an S3-bucket:
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example5.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example5.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example5.png)
 
 One interesting quirk with S3 is that directories are not really directories in S3; the path before the key is called a “prefix”. This means that S3 doesn’t care if `/` are url-encoded or not, it will still serve the content if you url-encode every slash in the URL. If I changed `img/` to `img%2f` in the URL would still resolve the image. However, in that case the CSP-header was removed and the XSS triggered:
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example6.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example6.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example6.png)
 
 I could then upload an SVG that would create the same form of storage-handler and postMessage-listener like the regular `storage.html`, but an empty `allowList`. That allowed me to do the same kind of attack even on websites that had properly defined the allowed origins that could talk to the storage.
 
@@ -784,7 +784,7 @@ src="https://cdn.customer12345.analytics.example.com/img%2fcustomer94342/listene
 
 Since no website would be able to patch this themselves, I sent a report to the analytics provider in charge of the CDN instead:
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example7.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example7.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example7.png)
 
 The whole idea about looking at misconfiguration bugs on the third-party was mainly to confirm that there are multiple ways to achieve the leaking of the tokens and since the third-party had a bug bounty, this was just a different receiver for the same kind of bug, the difference being that the impact was for all of the customers of the analytics service instead. In this case, the customer of the third-party actually had the ability to properly configure the tool to not make it leak data to the attacker. However, since the sensitive data was still sent to the third-party it was interesting to see if there was somehow a way to completely bypass the customer’s proper configuration of the tool.
 
@@ -955,15 +955,15 @@ This flow might seem unlikely and it needs two clicks: one to create one opener-
 
 The OAuth-provider sends the token down to the legit origin:
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget4-example1.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget4-example1.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget4-example1.png)
 
 And the legit origin has the postMessage-proxy to its opener:
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget4-example2.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget4-example2.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget4-example2.png)
 
 Which causes the attacker to get the token:
 
-[!](https://labsadmin.detectify.com/app/uploads/2022/07/gadget4-example3.png)
+[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget4-example3.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget4-example3.png)
 
 ## Conclusion
 
@@ -1011,7 +1011,7 @@ Frans Rosén
 
 [Twitter ](https://twitter.com/intent/tweet?url=)[LinkedIn ](https://www.linkedin.com/sharing/share-offsite/?url=)
 
-!
+![](https://labs.detectify.com/_next/image/?url=https%3A%2F%2Flabsadmin.detectify.com%2Fapp%2Fuploads%2F2015%2F06%2FFrans_speaker_photo.png&w=128&q=75)
 
 **Frans Rosén**
 

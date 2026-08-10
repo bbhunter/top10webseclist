@@ -98,7 +98,7 @@ I described **a new attack technique** with multiple attack variants and tested 
 
 A **single click anywhere** on a attacker controlled website could **allow attackers to steal users' data** (credit card details, personal data, login credentials including TOTP). The new technique is general and can be applied to other types of extensions.
 
- !
+ ![](https://marektoth.com/images/dombased-image1.png)
 
 Table of contents:
 
@@ -175,7 +175,7 @@ The most common intrusive elements requiring user action:
 
 ##### 2 clicks if verification fails, 4 or more clicks if captcha needs to be solved
 
- !
+ ![](https://marektoth.com/images/instagram.gif)
 
 **1-3 clicks** from the user **are commonly required** before accessing content.
 
@@ -253,7 +253,7 @@ Password managers have autofill functionality that can be of 2 types:
 
 automatic autofil manual autofill
 
- ! !
+ ![](https://marektoth.com/images/dom-automaticautofill.gif) ![](https://marektoth.com/images/dom-manualautofill.gif)
 
 My research focuses on clickjacking, so click is required and **I focused only on manual autofill (selecting from a dropdown menu/UI autofill menu)**.
 
@@ -309,8 +309,8 @@ Although this isn't a new technique and information has been available for sever
 
 In December 2023, I reported this clickjacking vulnerability in the NordPass password manager. Due to incorrect web_accessible_resources definition, it was possible to load the entire password manager UI in an iframe.
 
- !
- !
+ ![](https://marektoth.com/images/nordpass-manifest.png)
+ ![](https://marektoth.com/images/nordpass-iframe.png)
 
 **With 4 clicks, it was possible to share all items from the password manager** to an attacker's account. The result was that the attacker gained access to all stored passwords, credit cards, and personal data without the user's knowledge.
 
@@ -364,11 +364,11 @@ Additional protection requires implementing *X-Frame-Options: DENY* headers or *
 
 A new clickjacking technique where **a malicious script manipulates UI elements that browser extensions inject into the DOM**.
 
- !
+ ![](https://marektoth.com/images/DOMelement.png)
 
 The principle is that a browser extension injects elements into the DOM, which an attacker can then make invisible using javascript.
 
- !
+ ![](https://marektoth.com/images/protonui.png)
 
 To change visibility is used opacity:0 to various elements or overlay UI components.
 
@@ -385,7 +385,7 @@ In my case, focusing on password managers, the manual autofill feature was used 
  → data will be filled into the newly created form (2.)
  → attacker gets data from the form values
 
- !
+ ![](https://marektoth.com/images/steps.gif)
 
 **Types & Subtypes:**
 
@@ -429,7 +429,7 @@ document.querySelector("protonpass-root").style.opacity = 0.5;
 
 ```
 
- !
+ ![](https://marektoth.com/images/dom-protonopacity.png)
 
 ### Child Element
 
@@ -451,7 +451,7 @@ x.shadowRoot.querySelector("iframe").style.cssText += "opacity: 0 !important;";
 
 ```
 
- !
+ ![](https://marektoth.com/images/dom-protonopacity2.png)
 
 ## Parent Element
 
@@ -464,7 +464,7 @@ The user sets opacity:0 for **<body>** element, which makes the extension UI tra
 After this setting, the <body> will be invisible, so the user sets a background-image on the **<html>** element.
  **The background image used is a screenshot of the website** (can be used image or svg).
 
- !
+ ![](https://marektoth.com/images/dom-body.png)
 
 ```js
 document.body.style.opacity = 0;
@@ -543,7 +543,7 @@ In this type, the **user does not change the opacity but overlays the UI**.
 
 The user creates elements around the extension UI with only a few pixels remaining visible (small clickable area).
 
- !
+ ![](https://marektoth.com/images/partialoverlay.gif)
 
 The goal is that injected elements must be last in the DOM with maximum z-index value. Extension elements in many cases also have the maximum z-index value - the last element in the DOM will be 'on top'.
 
@@ -681,7 +681,7 @@ document.addEventListener('mousemove', function (event) {
 
 The table below shows **the status of whether password managers were vulnerable** to DOM-based Extension Clickjacking. All password managers were **in the default configuration**.
 
- !
+ ![](https://marektoth.com/images/dombased-vulnerable2.png)
 
 Current vulnerability status is in section Password Managers: Vulnerable & Fixed Versions.
 
@@ -711,7 +711,7 @@ An attacker can use their own website with javascript exploit and can exfiltrate
 
 **⚠️ This data is not domain-specific = ****can be autofilled on any website ⚠️**
 
- !
+ ![](https://marektoth.com/images/dombased-card.png)
 
 *Keeper was not exploitable for these data on attacker's website
 
@@ -728,7 +728,7 @@ Same example but with opacity:0.5 - RoboForm UI more visible
 
  **ProtonPass** is marked as "Not supported" because it doesn't have autofill for credit cards, only copy/paste can be used. However, **autofill functionality was planned** ([roadmap for spring 2025](https://proton.me/blog/pass-roadmap-spring-2025)).
 
- **1Password** is marked as "not vulnerable" (✅) for Credit Card because user has to click on "OK" in dialog. **But there was a problem with the dialog text ⚠️**. !
+ **1Password** is marked as "not vulnerable" (✅) for Credit Card because user has to click on "OK" in dialog. **But there was a problem with the dialog text ⚠️**. ![](https://marektoth.com/images/1password-ok.png)
 
 Only when filling credit card details was a generic consent dialog displayed for filling a "1Password item". After confirmation, the credit card was filled in. This dialog only appeared for credit cards, and users could be confused about what data was actually being filled.
 
@@ -758,7 +758,7 @@ Password managers allow not only storing credentials, but also storing TOTP (Tim
  The attacker can **only steal credentials for the vulnerable domain**.
 But on the other hand, there is a huge advantage for the attackers. **⚠️ All password managers fill** credentials not only into the same domain where the credentials were stored, but also **into all subdomains or parent domain in default configuration** ⚠️.
 
- !
+ ![](https://marektoth.com/images/1password-autofill.png)
 
 |  **Credentials Saved** |  **Autofilled (manual autofill)** |   |
 |  example.com |  subdomain.example.com |   |
@@ -773,7 +773,7 @@ If a user has stored credentials for Google account, they will have them saved f
 
 So the attacker isn't limited to a small scope, he can find vulnerabilities anywhere on: *.example.com/*
 
- !
+ ![](https://marektoth.com/images/dombased-login2.png)
 
 *automatic autofill enabled by default (0-click autofill)
 
@@ -803,21 +803,21 @@ The impact is identical to finding a security vulnerability, as an attacker can 
 
 Every user logs into the admin panel via https://accounts.shopify.com
 
- !
+ ![](https://marektoth.com/images/shopify-login.png)
 
 → The user has credentials saved for **accounts.shopify.com** in their password manager (autofill for *.shopify.com, see autofill for all subdomains)
 
 After logging in, the user is redirected to their administration panel (https://admin.shopify.com/store/), where they can manage their e-shop content (e-shop HTML pages) or upload various files.
 
- !
+ ![](https://marektoth.com/images/shopify-upload1.png)
 
 These files can contain custom JavaScript and everything is stored on Shopify CDN.
 
- SVG with custom JS code on cdn.shopify.com !
+ SVG with custom JS code on cdn.shopify.com ![](https://marektoth.com/images/shopify-xss.png)
 
 Confirmation that anything can be stored on Shopify CDN - “Shopify allows merchants to upload any file they want on our content delivery network. Being able to upload a file is not a vulnerability, this is the intended functionality.” (https://hackerone.com/shopify/policy_scopes)
 
- !
+ ![](https://marektoth.com/images/shopify-hackerone.png)
 
 Executing custom JavaScript on cdn.shopify.com normally cannot achieve any impact. Data cannot be obtained from the administration panel because it is a different subdomain - it is not possible to send a request to the admin and receive a response (data cannot be obtained due to the request from a different subdomain **cdn**.shopify.com → **admin**.shopify.com).
 
@@ -845,7 +845,7 @@ Besides login credentials, another impact can be:
 
  Even passkey dialogs can be made invisible
 
- ! !
+ ![](https://marektoth.cz/images/passkeys-dashlane.png) ![](https://marektoth.cz/images/passkeys-nordpass.png)
 
 In some cases, it was possible to exploit passkey authentication using DOM-based extension clickjacking. One method of exploitation was "Signed Assertion Hijacking".
 
@@ -853,11 +853,11 @@ When creating a challenge, it is recommended that a session is also created on t
 
 This is how the basic passkeys login flow looks like:
 
- !
+ ![](https://marektoth.com/images/passkeys-OK.png)
 
 If the server doesn't create a session along with the challenge, it's possible to exploit the entire authentication flow. This results in "signed assertion hijacking," where the attacker steals the signed assertion request and because nothing is required (no session), the attacker can use it to complete the login.
 
- !
+ ![](https://marektoth.com/images/dombased-passkeysnotok.png)
 
 **How does the attacker get this request?** This can be done either by using XSS to intercept HTTP communication and forwarding the request to attacker server. Or by using XSS to modification the same passkey script but change the endpoint for the signed assertion. Again, they would send this request to their own server. This request is always one-time use, so XSS must be used to prevent the victim from sending it to the auth server.
 
@@ -875,11 +875,11 @@ One example is the [Hanko](https://www.hanko.io/) solution, used for the PoC dem
 
 The screenshot shows that the "signed assertion" request doesn't contain session data.
 
- !
+ ![](https://marektoth.com/images/hanko-request.png)
 
 Upon intercepting this request, an attacker can replay it to receive a "200 OK" response with a newly session (auth token).
 
- !
+ ![](https://marektoth.com/images/hanko-request2.png)
 
 **How does the entire attack work?**
 
@@ -891,7 +891,7 @@ Upon intercepting this request, an attacker can replay it to receive a "200 OK" 
 - The attacker sends the signed assertion from their server to the auth server
 → because no session was required, signed assertion request wasn't used and the request contained a valid signed challenge, the entire request was valid and the attacker is logged in as victim (with newly created session)
 
- ! **PoC Video:**
+ ![](https://marektoth.com/images/passkey-gif.gif) **PoC Video:**
 
 In the following video, the victim uses ProtonPass and then makes a single click (accept cookies). The attacker gets "signed assertion" request and was able to send it to the server.
 
@@ -1157,7 +1157,7 @@ Credit Card - credit card number, expiration date, security code
 
 All vulnerabilities were reported in April 2025 with a notice that public disclosure will be in August 2025. Vendors that haven't fixed the vulnerabilities had over 120 days to fix them.
 
- !
+ ![](https://marektoth.com/images/dombased-fixed2.png)
 
 *automatic autofill enabled by default (0-click autofill)
 
@@ -1198,7 +1198,7 @@ See more in Credit Card section
  Do you think that stealing a payment card or personal data with a single click is a high severity issue?
  Bitwarden sees this vulnerability slightly differently. Maybe it could be reason why it was not fixed even after more than 4 months.
 
- !
+ ![](https://marektoth.com/images/bitwarden-reporting.png)
 
 **✅ Dashlane**
  **Fixed:** v6.2531.1 (1.8.2025)
@@ -1305,7 +1305,7 @@ The vulnerabilities affected not only Chromium-based browsers but also extension
 
 The values are always calculated at the time of reporting, or if the vulnerability is not fixed, the data are from the past few weeks.
 
- !
+ ![](https://marektoth.com/images/dombased-risk.png)
 
 The result is that **tens of millions of users could be at risk** (~40 million active installations).
 
@@ -1317,7 +1317,7 @@ By default, it is enabled with a **very short time in 1Password (10 min) or Enpa
 
 For example, iCloud Passwords uses the auto-lock functionality, but it has absolutely **no effect on autofill**. The clickjacking technique **works even if iCloud Passwords is locked or if Lockdown Mode is enabled**.
 
- !
+ ![](https://marektoth.com/images/icloudpassword.gif)
 
 Another limitation is the auto-lock/auto-logout functionality based on browser restart. **In general, it is necessary to have the password manager unlocked for successful attack**.
 
@@ -1373,13 +1373,13 @@ Chromium-based browsers:
 
 With this setting, the browser extension will not access the site. The user can temporarily grant access by clicking the extension icon next to the address bar.
 
- !
+ ![](https://marektoth.com/images/autofillsetting.gif)
 
 Added 26.8.2025:
  **Disabling manual autofill (UI injected into the DOM = autofill suggestion) – Using only "autofill" via the extension icon (see bellow)**
  - Not all password managers have this option. Examples of supported ones include Bitwarden or 1Password. When using this option, it **is always necessary to disable autofill suggestion** injected into the DOM.
 
- !
+ ![](https://marektoth.com/images/bitwarden-autofill.png)
 
 **Some users use keyboard shortcuts** to autofill data — **you are still at risk** if you have the default settings
  - All password managers in the research insert an autofill UI into webpages by default. A single click can still expose your stored credentials. For this reason, **you should disable the autofill UI** (autofill suggestion) in your password manager.

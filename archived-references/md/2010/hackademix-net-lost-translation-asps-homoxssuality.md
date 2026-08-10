@@ -230,7 +230,7 @@ Of course, it may also be used to bypass [Web Application Firewalls (WAFs)](http
 
 So, how many WAFs out there can actually resist when **HomoXSSuality** calls?
 
- !
+ ![](https://secure.gravatar.com/avatar/3793c98028fd9683d80c827f6a1664712f46afdba4e1f44fbd2e8c7128a1d267?s=85&d=monsterid&r=g)
 
 ##  By ma1
 

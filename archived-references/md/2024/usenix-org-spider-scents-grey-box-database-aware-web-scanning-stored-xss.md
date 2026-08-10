@@ -91,12 +91,12 @@ BibTeX
 
 ![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Olsson Paper (Prepublication) PDF](https://www.usenix.org/system/files/sec24summer-prepub-286-olsson.pdf)
 
-!
+![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-unlocked.png)
 
 [View the slides](https://www.usenix.org/system/files/usenixsecurity24_slides-olsson.pdf)
 
-!
+![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_available_125_update.png)
 
-!
+![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_functional_125.png)
 
 ## Presentation Video

@@ -5,7 +5,7 @@ resource: "https://matanber.com/blog/4-char-csti"
 tags: [article, webseclist-reference, en, matanber-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T09:24:22+00:00"
+  at: "2026-08-10T10:44:50+00:00"
 status: stable
 stale_after: 2027-08-10
 sources:
@@ -34,7 +34,7 @@ publisher_english: ""
 raw_sha256: a558b2c84f615fbf3be7c5ed325c21d432299af494fb33e32df0a618c536c395
 retrieved_from: "https://matanber.com/blog/4-char-csti"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T09:24:22+00:00"
+retrieved_utc: "2026-08-10T10:44:50+00:00"
 slug: 2024-matanber-com-bidding-like-billionaire-stealing-nfts-4-char-cstis
 snapshot: ""
 title_english: ""

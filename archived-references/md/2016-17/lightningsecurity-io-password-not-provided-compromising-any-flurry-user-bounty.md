@@ -72,13 +72,13 @@ The first step to testing an application, of course, is to create an account. Fl
 
 I chose to create my account with my Yahoo account, and followed the steps to do so. In the final step to create the account, I immediately noticed something suspicious. *Very suspicious.* Let's see if you can spot it:
 
- !
+ ![](https://lightningsecurity.io/blog/images/post2-screenshot1.png)
 
 Did you catch it? The value of the password is being explicitly set to the string "not-provided". This couldn’t possibly actually be the user’s password, right?
 
 Let’s find out. If we create a new user by email, the same password parameter is being used. So unless there’s a specific blacklist for "not-provided", then that could very well be the password for every user created with a Yahoo account. Logging in using "not-provided" as my password:
 
- !
+ ![](https://lightningsecurity.io/blog/images/post2-screenshot2.png)
 
 To my surprise, it worked. This allowed for an attacker to log in to any Flurry account connected to Yahoo by entering their email and the password "not-provided". After testing with another brand new account, I promptly reported this to Yahoo, where they quickly triaged it as critical.
 

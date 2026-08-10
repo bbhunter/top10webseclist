@@ -63,11 +63,7 @@ page going offline. To read the original, follow the link above.
 
 (somewhat) breaking the same-origin policy by undermining dns-pinning
 
-|  ![
-
-It's a shampoo world anyway
-
-](http://shampoo.antville.org) |   |
+|  ![](https://shampoo.antville.org/static/img/pixel.gif)[It's a shampoo world anyway](http://shampoo.antville.org) |   |
 
 |   |
 
@@ -125,35 +121,35 @@ The attack only woks, if the attacked server does not check the http host proper
 
 [1] DNS Attack Scenario, [www.cs.princeton.edu](http://www.cs.princeton.edu/sip/news/dns-scenario.html) [2] Josh Soref: DNS: Spoofing and Pinning, [viper.haque.net](http://viper.haque.net/~timeless/blog/11/) [3] Amit Klein: Re: Detecting, Analyzing, and Exploiting Intranet Applications using JavaScript (Posting to the WebAppSec-Mailinglist), [www.webappsec.org](http://www.webappsec.org/lists/websecurity/archive/2006-07/msg00090.html)
 
-  |   |  ! |
+  |   |  ![](https://shampoo.antville.org/static/img/pixel.gif) |
 
  online for 9047 Days
 last updated: 09.04.14, 16:14
 
-!
+![](https://shampoo.antville.org/static/img/pixel.gif)
 
 ![status](https://shampoo.antville.org/static/img/status.gif)
 
-!
+![](https://shampoo.antville.org/static/img/pixel.gif)
 
 Youre not logged in ... [Login](https://shampoo.antville.org/members/login)
 
-!
+![](https://shampoo.antville.org/static/img/pixel.gif)
 
 ![menu](https://shampoo.antville.org/static/img/menu.gif)
 
-!
+![](https://shampoo.antville.org/static/img/pixel.gif)
 
 ... [home](https://shampoo.antville.org/)
  ... [topics](https://shampoo.antville.org/tags/)
 
  ... [antville home](https://antville.org/)
 
-!
+![](https://shampoo.antville.org/static/img/pixel.gif)
 
   search
 
-!
+![](https://shampoo.antville.org/static/img/pixel.gif)
 
 | August 2026 |  |
 | So. | Mo. | Di. | Mi. | Do. | Fr. | Sa. |  |
@@ -165,13 +161,13 @@ Youre not logged in ... [Login](https://shampoo.antville.org/members/login)
 | 30 | 31 |  |  |  |  |  |  |
 | [Juni](https://shampoo.antville.org/archive/2009/06/30/) |  |  |  |
 
-!
+![](https://shampoo.antville.org/static/img/pixel.gif)
 
 **about:**
  the shampoo world is
 the personal weblog of [Martin Johns](http://www.informatik.uni-hamburg.de/SVS/personnel/martin/index.php).
 
-!
+![](https://shampoo.antville.org/static/img/pixel.gif)
 
  **click:**
 
@@ -190,13 +186,13 @@ the personal weblog of [Martin Johns](http://www.informatik.uni-hamburg.de/SVS/p
  [IT Conversations](http://www.itconversations.com/)
  [The Podcast about nothing](http://www.jimmyjett.com/wordpress)
 
-!
+![](https://shampoo.antville.org/static/img/pixel.gif)
 
 ![recent](https://shampoo.antville.org/static/img/recent.gif)
 
-!
+![](https://shampoo.antville.org/static/img/pixel.gif)
 
-!
+![](https://shampoo.antville.org/static/img/pixel.gif)
 
  [![xml version of this page](https://shampoo.antville.org/static/xmlbutton.gif)](http://polyboy.net/shampooworld/index.xml)
 
@@ -204,7 +200,7 @@ the personal weblog of [Martin Johns](http://www.informatik.uni-hamburg.de/SVS/p
 powered by
 [![Helma Object Publisher](https://shampoo.antville.org/static/img/hop.gif)](http://helma.org)
 
- [!](http://www.certifyr.com/compliance.cfm?website=http://shampoo.antville.org&checksum=2&refer)
+ [![](http://www.certifyr.com/web20button.gif)](http://www.certifyr.com/compliance.cfm?website=http://shampoo.antville.org&checksum=2&refer)
 
   |   |
 

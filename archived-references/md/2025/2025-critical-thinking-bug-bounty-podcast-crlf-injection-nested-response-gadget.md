@@ -78,11 +78,11 @@ default-src 'none'; script-src 'self';
 
 In the following example web application, it allows users to view static files and able to control the `Content-Type` of the file using GET parameter `type`. The value of parameter `type` is not validated or sanitized, which is vulnerable to CRLF injection:
 
-!
+![](https://lab.ctbb.show/research/articles/ArticleNo0005/image1.png)
 
-!
+![](https://lab.ctbb.show/research/articles/ArticleNo0005/image2.png)
 
-!
+![](https://lab.ctbb.show/research/articles/ArticleNo0005/image3.png)
 
 >
 
@@ -97,7 +97,7 @@ Inline script:
 
 ```
 
-!
+![](https://lab.ctbb.show/research/articles/ArticleNo0005/image4.png)
 
 Load external script:
 
@@ -106,7 +106,7 @@ Load external script:
 
 ```
 
-!
+![](https://lab.ctbb.show/research/articles/ArticleNo0005/image5.png)
 
 If we try to use the response splitting as a CSP gadget (Nested response splitting), we’ll get invalid JavaScript syntax because of the original response body data:
 
@@ -122,7 +122,7 @@ Injected response body data:
 
 ```
 
-!
+![](https://lab.ctbb.show/research/articles/ArticleNo0005/image6.png)
 
 Fortunately, we can truncate the invalid syntax with different tricks!
 
@@ -145,9 +145,9 @@ alert(origin)
 
 ```
 
-!
+![](https://lab.ctbb.show/research/articles/ArticleNo0005/image7.png)
 
-!
+![](https://lab.ctbb.show/research/articles/ArticleNo0005/image8.png)
 
 If response header `Content-Length` is in above of injection point and its value can be controlled, (Appendix 2), we can just change its value to the length of our JavaScript payload:
 

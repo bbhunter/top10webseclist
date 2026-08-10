@@ -120,13 +120,13 @@ dbf.setAttribute(XMLConstants.FEATURE_SECURE_PROCESSING, true);
 
 The Java 7/8 documentation reference says:
 
-[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaNhW4UHssOtJTIclruxjqVDDfn1eNHVUYtuUUedviOy8h65kxANfawmAySKiSs4SwASB1en9N7Ktc3pr1dMw98Hm4AlWUE7V-4sTgeRfHJVZKC1V3cJ5FsjoWsbRWW33zcfeSnst-CFg/)
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaNhW4UHssOtJTIclruxjqVDDfn1eNHVUYtuUUedviOy8h65kxANfawmAySKiSs4SwASB1en9N7Ktc3pr1dMw98Hm4AlWUE7V-4sTgeRfHJVZKC1V3cJ5FsjoWsbRWW33zcfeSnst-CFg/w640-h307/image.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaNhW4UHssOtJTIclruxjqVDDfn1eNHVUYtuUUedviOy8h65kxANfawmAySKiSs4SwASB1en9N7Ktc3pr1dMw98Hm4AlWUE7V-4sTgeRfHJVZKC1V3cJ5FsjoWsbRWW33zcfeSnst-CFg/)
 
 But this configuration does not prevent XXE or SSRF and, honestly, I couldn't find any difference using this setting during my tests. Maybe the objective is only to prevent against DoS (as mentioned in the documentation).
 
 Then we have:
 
-[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiR2TgZSGpSFeYrwu9pn3HK4qTyvUQ_WiXi3ssi-jvOjiLQLXFAOmm465DciU-oncx6-glsWHGRdYS21-SHxQqk1x1WJIQubV_Etg2n7lhB0aZPTnCnWTZR-XX5C8pwqz8lfDkJInHZ-Lk/)
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiR2TgZSGpSFeYrwu9pn3HK4qTyvUQ_WiXi3ssi-jvOjiLQLXFAOmm465DciU-oncx6-glsWHGRdYS21-SHxQqk1x1WJIQubV_Etg2n7lhB0aZPTnCnWTZR-XX5C8pwqz8lfDkJInHZ-Lk/w640-h274/image.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiR2TgZSGpSFeYrwu9pn3HK4qTyvUQ_WiXi3ssi-jvOjiLQLXFAOmm465DciU-oncx6-glsWHGRdYS21-SHxQqk1x1WJIQubV_Etg2n7lhB0aZPTnCnWTZR-XX5C8pwqz8lfDkJInHZ-Lk/)
 
 This feature could bring some confusion and a false sense of security to developers, as it doesn't provide any protection against XXE or SSRF through "Public" entities.
 
@@ -180,7 +180,7 @@ By digging a little bit deeper on the JDK protocol handlers, last year I discove
 
 Analyzing the method openconnection() from **sun.net.www.protocol.file.handler** class, it is possible to make an FTP request if the URL is not null nor “” nor “~” or not equal to “localhost” (1). Therefore, with simply an IP address we can enter in this section of the code and it is easy to see that it is creating a URL instance using “ftp” (2). No port is passed as parameter and the handler uses the default port for FTP, port 21. Then the openConnection() method from the URL class is called to perform the connection via FTP (3).
 
-[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg35R0w52xlZIqbw8qLo4V3q5nUM2kSohewShEqhdLDmLpjxqgspMPMkC5mH7K2fcG7l4a9UZdnru_jepwMKzSFYl4h7jcHTalYe6Bnla2-6QGBYmxQ4RbnY2qREloJOFYmzpNdjYkx75U/)
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg35R0w52xlZIqbw8qLo4V3q5nUM2kSohewShEqhdLDmLpjxqgspMPMkC5mH7K2fcG7l4a9UZdnru_jepwMKzSFYl4h7jcHTalYe6Bnla2-6QGBYmxQ4RbnY2qREloJOFYmzpNdjYkx75U/w640-h240/Misconfigurations+Blog+Pg+5.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg35R0w52xlZIqbw8qLo4V3q5nUM2kSohewShEqhdLDmLpjxqgspMPMkC5mH7K2fcG7l4a9UZdnru_jepwMKzSFYl4h7jcHTalYe6Bnla2-6QGBYmxQ4RbnY2qREloJOFYmzpNdjYkx75U/)
 
 Therefore, this configuration does not mitigate a Blind XXE, as we can still use the FTP via file protocol.
 
@@ -228,7 +228,7 @@ The steps are the following:
 
  4.Profit!
 
-[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg66QxWQpLmTy9yDm9qdtIKt84G9Q32YKeZ1HRzpU30dlg-Ly0VGbx9XBoFE8AWnrPLmgDWebBEC3-1qWYqKvX0c0QYNhYFlEkRIIhVyltSEqy1BRlLkiocNK3LYraHDYO3bNJ5SUpmppw/)
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg66QxWQpLmTy9yDm9qdtIKt84G9Q32YKeZ1HRzpU30dlg-Ly0VGbx9XBoFE8AWnrPLmgDWebBEC3-1qWYqKvX0c0QYNhYFlEkRIIhVyltSEqy1BRlLkiocNK3LYraHDYO3bNJ5SUpmppw/w640-h408/image.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg66QxWQpLmTy9yDm9qdtIKt84G9Q32YKeZ1HRzpU30dlg-Ly0VGbx9XBoFE8AWnrPLmgDWebBEC3-1qWYqKvX0c0QYNhYFlEkRIIhVyltSEqy1BRlLkiocNK3LYraHDYO3bNJ5SUpmppw/)
 
 If you want to test it, you can use the _/jaxp/InlineSchemaValidator.java_ sample provided by
 

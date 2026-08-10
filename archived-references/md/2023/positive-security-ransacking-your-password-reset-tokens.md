@@ -85,7 +85,7 @@ Ransacking your password reset tokens | Positive Security
 # Exploiting Ransack
 The popular Ransack Ruby library provides a very powerful feature set around object-based database searching in Rails applications. One of its main appeals is the ease with which it can be utilized to implement public facing search functionality on a website. As is often the case when using a very powerful and complex tool for a rather simple use case, this can lead to problems.
 
-!
+![](https://cdn.prod.website-files.com/5f6498c074436c349716e747/63c075a2482ce1c64d9cc8ac_01_ransack_documentation.png)
 
 *Official Ransack documentation suggests processing query parameters from unrestricted user input. The warning was [added to the documentation on 2022-11-03](https://github.com/activerecord-hackery/ransack/commit/4d234c89ca69f6aa7b5a992a4e69e3f658302362), possibly in reaction to [our suggestion in an open GitHub issue](https://github.com/activerecord-hackery/ransack/issues/1273#issuecomment-1298273454)*
 
@@ -189,7 +189,7 @@ The following is a real world example of a full compromise of an application via
 In our [search for potentially vulnerable Rails applications in the Common Crawl dataset (see section below)](#common-crawl) we came across the following URL pointing to a site with fairly high popularity according to our data: `https://www.fablabs.io/labs?q%5Bcountry_code_eq%5D=US`.
 Closer inspection quickly revealed that the endpoint constituted an unrestricted entry point to `Ransack` queries for finding Fablabs (makerspaces that are part of the "Fablab Network").
 
-!
+![](https://cdn.prod.website-files.com/5f6498c074436c349716e747/63c075fd3fe8bd8bb373350f_03_fablabs.io_labs_search.png)
 
 *Vulnerable fablabs.io lab search page*
 
@@ -233,7 +233,7 @@ As friendly security researchers we (repeatedly) left a short message in their s
 The account recovery page happily let us choose a new password for our victim's account, and we were able to log in as superadmin.
 We used this to promote one of our personal accounts to superadmin and took some screenshots to showcase the extent of sensitive data we could have stolen and how we could have manipulated any crucial information published on the website.
 
-!
+![](https://cdn.prod.website-files.com/5f6498c074436c349716e747/63c91dc43c566565b96db693_05_fablabs.io_user_list.png)
 
 *fablabs.io admin interface: phone numbers, email addresses and password hashes of ~60000 users can be downloaded here*
 
@@ -362,4 +362,4 @@ We reported vulnerabilities based on this issue in the following projects:
 
 ##### Follow us on Mastodon ([@positive_sec](https://infosec.exchange/@positive_sec)) to keep up to date with our posts.
 
-!!
+![](https://cdn.prod.website-files.com/5f6498c074436c50c016e745/5f6498c074436c6cbd16e799_top.png)![](https://cdn.prod.website-files.com/5f6498c074436c50c016e745/5f6498c074436c36af16e7a5_bottom.png)

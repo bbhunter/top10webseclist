@@ -90,10 +90,10 @@ BibTeX
 
 ![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Laperdrix Paper (Prepublication) PDF](https://www.usenix.org/system/files/sec21fall-laperdrix.pdf)
 
-!
+![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-unlocked.png)
 
 [View the slides](https://www.usenix.org/system/files/sec21_slides_laperdrix.pdf)
 
-!
+![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_passed_125.png)
 
 ## Presentation Video

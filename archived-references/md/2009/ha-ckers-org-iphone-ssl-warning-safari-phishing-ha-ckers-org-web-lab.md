@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 iPhone SSL Warning and Safari Phishing ha.ckers.org web application security lab
 
-[!](http://ha.ckers.org/blog/20071014/web-application-scanning-depth-statistics/)
+[![](http://ha.ckers.org/images/nto_top.jpg)](http://ha.ckers.org/blog/20071014/web-application-scanning-depth-statistics/)
  Paid Advertising
  [![web application security lab](http://ha.ckers.org/images/84844372/rsnake/hackers.jpg)](http://ha.ckers.org/)
 
@@ -71,11 +71,11 @@ iPhone SSL Warning and Safari Phishing ha.ckers.org web application security lab
 
 As some of you may have noticed, there’s a lot more going on in the SSL world and a lot more to come thanks to guys like Mike Zusman, Alex Sotirov Moxie Marlinspike and so on… Papers forthcoming, but in the mean time I thought I’d point out a pretty nasty UI issue with the iPhone, since it’s been something I’ve been meaning to post about for a while. Given the rise in mobile computing as a legitimate way to do business, I think this kind of thing is going to become more important. If an attacker can gain MITM access through a public wifi that the iPhone is using, they can intercept a page that the user normally uses and trusts somewhat, but doesn’t necessary trust with any sensitive data (like a blog or forum that they frequently visit for instance).
 
-!
+![](http://ha.ckers.org/images/iphone-ssl-warning.jpg)
 
 What you’re seeing is a 1×1 pixel iframe (doesn’t need to be visible, but it’s good for testing purposes) to https://www.bofa.com/ which uses an invalid certificate. Don’t ask me why one of the largest banks on earth can’t get their certs in order - that’s just the way it is. Anyway, let’s pretend instead of it being incredible sloppiness, it’s actually a MITM. The user is presented with a popup that in no way explains to them what the cert they are accepting is for. So their first instinct would be to accept it, because they aren’t going to be putting any sensitive information into the page anyway. The problem is that the cert stays with the browser session - so it will continue to work, when the user does eventually surf to their bank or whatever SSL page you’ve MITM’d.
 
-!
+![](http://ha.ckers.org/images/safari-ssl-warning.png)
 
 Compare that to the desktop version of Safari, where it at least tells you that it’s related to www.bofa.com. Still not the greatest visual cue but it’s something. Incidentally, during this testing I messed around with some of the old tricks and found out that that Safari still suffers from the old URL obfuscation tricks of ages past. Eg: [http://www.bofa.com@ha.ckers.org/](http://www.bofa.com@ha.ckers.org/). *sigh*
 

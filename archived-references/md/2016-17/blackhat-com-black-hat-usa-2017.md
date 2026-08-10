@@ -322,7 +322,7 @@ This talk will explore how we can adapt to better confront the obstacles we face
 
 In this presentation, one vulnerability in CSFB (Circuit Switched Fallback) in 4G LTE network is introduced. In the CSFB procedure, we found the authentication step is missing. The result is that an attacker can hijack the victim's communication. We named this attack as 'Ghost Telephonist.' Several exploitations can be made based on this vulnerability. When the call or SMS is not encrypted, or weakly encrypted, the attacker can get the content of the victim's call and SMS. The attacker can also initiate a call/SMS by impersonating the victim. Furthermore, Telephonist Attack can obtain the victim's phone number and then use the phone number to make advanced attack, e.g. breaking Internet online accounts. The victim will not sense being attacked since no 4G or 2G fake base station is used and no cell re-selection. These attacks can randomly choose victims or target a given victim. We verified these attacks with our own phones in operators' network in a small controllable scale. The experiments proved the vulnerability really exists. Finally, the countermeasures are proposed and now we are collaborating with operators and terminal manufactures to fix this vulnerability.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Yuwei-Ghost-Telephonist-Link-Hijack-Exploitations-In-4G-LTE-CS-Fallback.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Yuwei-Ghost-Telephonist-Link-Hijack-Exploitations-In-4G-LTE-CS-Fallback.pdf)
 
 ### Presented By
 
@@ -346,7 +346,7 @@ A number of talks in the last few years have addressed various topics in the gen
 
  We will close out talk by discussing existing security measures proposed by the building automation industry as well as their adoption problems found in this field.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Brandstetter-insecurity-In-Building-Automation-How-To-Create-Dark-Buildings-With-Light-Speed.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Brandstetter-insecurity-In-Building-Automation-How-To-Create-Dark-Buildings-With-Light-Speed-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Brandstetter-insecurity-In-Building-Automation-How-To-Create-Dark-Buildings-With-Light-Speed.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Brandstetter-insecurity-In-Building-Automation-How-To-Create-Dark-Buildings-With-Light-Speed-wp.pdf)
 
 ### Presented By
 
@@ -364,7 +364,7 @@ Being a very fundamental problem that exists in built-in libraries, sophisticate
 
 Understanding the basics of this technique, the audience won't be surprised to know that more than 20 vulnerabilities have been found in famous programming languages and web applications aforementioned via this technique.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf)
 
 ### Presented By
 
@@ -390,7 +390,7 @@ For years, the cybersecurity industry has struggled with how to measure the cybe
 
 Wind farms are becoming a leading source for renewable energy. The increased reliance on wind energy makes wind farm control systems attractive targets for attackers. This talk explains how wind farm control networks work and how they can be attacked in order to negatively influence wind farm operations (e.g., wind turbine hijacking). Specifically, implementations of the IEC 61400-25 family of communications protocols are investigated (i.e., OPC XML-DA). This research is based on an empirical study of a variety of U.S. based wind farms conducted over a two year period. We explain how these security assessments reveal that wind farm vendor design and implementation flaws have left wind turbine programmable automation controllers and OPC servers vulnerable to attack. Additionally, proof-of-concept attack tools are developed in order to exploit wind farm control network design and implementation vulnerabilities.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Staggs-Adventures-In-Attacking-Wind-Farm-Control-Networks.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Staggs-Adventures-In-Attacking-Wind-Farm-Control-Networks.pdf)
 
 ### Presented By
 
@@ -409,7 +409,7 @@ Our research has identified several models of Android mobile devices that contai
 
  In September 2016, Adups claimed on its web site to have a world-wide presence with over 700 million active users, and a market share exceeding 70% across over 150 countries and regions with offices in Shanghai, Shenzhen, Beijing, Tokyo, New Delhi, and Miami. The Adups web site also stated that it produces firmware that is integrated in more than 400 leading mobile operators, semiconductor vendors, and device manufacturers spanning from wearable and mobile devices to cars and televisions.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Johnson-All-Your-SMS-&-Contacts-Belong-To-Adups-&-Others.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Johnson-All-Your-SMS-&-Contacts-Belong-To-Adups-&-Others-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Johnson-All-Your-SMS-&-Contacts-Belong-To-Adups-&-Others.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Johnson-All-Your-SMS-&-Contacts-Belong-To-Adups-&-Others-wp.pdf)
 
 ### Presented By
 
@@ -427,7 +427,7 @@ Active Directory (AD) object discretionary access control lists (DACLs) are an u
 
  This talk will cover Active Directory DACLs in depth, our "misconfiguration taxonomy," and enumeration/analysis with BloodHound's newly released feature set. We will cover the abuse of AD DACL misconfigurations for the purpose of domain rights elevation, including common misconfigurations encountered in the wild. We will then cover methods to design AD DACL backdoors, including ways to evade current detections, and will conclude with defensive mitigation/detection techniques for everything described.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Robbins-An-ACE-Up-The-Sleeve-Designing-Active-Directory-DACL-Backdoors-2018.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Robbins-An-ACE-Up-The-Sleeve-Designing-Active-Directory-DACL-Backdoors-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Robbins-An-ACE-Up-The-Sleeve-Designing-Active-Directory-DACL-Backdoors-2018.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Robbins-An-ACE-Up-The-Sleeve-Designing-Active-Directory-DACL-Backdoors-wp.pdf)
 
 ### Presented By
 
@@ -447,7 +447,7 @@ Electricity is of paramount importance in our everyday lives. Our dependence on 
 
  The talk includes a live demo showcasing exploitation of the vulnerability on a feeder management relay and how this vulnerability can have significant impact on a nation. We will discuss mitigation strategies, including the specific firmware update that addresses this vulnerability, and provide our thoughts on what the next steps in securing the power infrastructure should be. Tune in for more.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Keliris-And-Then-The-Script-Kiddie-Said-Let-There-Be-No-Light-Are-Cyberattacks-On-The-Power-Grid-Limited-To-Nation-State-Actors-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Keliris-And-Then-The-Script-Kiddie-Said-Let-There-Be-No-Light-Are-Cyberattacks-On-The-Power-Grid-Limited-To-Nation-State-Actors-wp.pdf)
 
 ### Presented By
 
@@ -463,7 +463,7 @@ Ever wondered if your new shiny AES hardware-encrypted USB device really encrypt
 
  In this talk, we will present our methodology to assess "secure" USB devices both from the software and the hardware perspectives. We will demonstrate how this methodology works in practice via a set of case-studies. We will demonstrate some of the practical attacks we found during our audit so you will learn what type of vulnerability to look for and how to exploit them. Armed with this knowledge and our tools, you will be able to evaluate the security of the USB device of your choice.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Picod-Attacking-Encrypted-USB-Keys-The-Hard(ware)-Way.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Picod-Attacking-Encrypted-USB-Keys-The-Hard(ware)-Way.pdf)
 
 ### Presented By
 
@@ -479,7 +479,7 @@ Network protocols are based on open standards. However, the Internet runs mostly
 
 In this work, we present a method that leverages a formal black-box method to unearth deviations of protocol implementations in closed-source network devices with no need to access the binary or source code of the device. Our method finds such deviations in a fully automatic manner while leveraging a model-based testing approach. We applied the method to several routers to check their routing protocols' implementations (specifically OSPF) using the tool we found logical vulnerabilities in routers by Cisco and Quagga. The vulnerabilities affect in total dozens of models of routers. This is a joint work with Adi Sosnovich and Orna Grumberg.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Nakibly-Automated-Detection-of-Vulnerabilities-in-Black-Box-Routers.pdf) [! ](https://blackhat.com/us-17/us-17-Nakibly-Automated-Detection-of-Vulnerabilities-in-Black-Box-Routers-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Nakibly-Automated-Detection-of-Vulnerabilities-in-Black-Box-Routers.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/us-17/us-17-Nakibly-Automated-Detection-of-Vulnerabilities-in-Black-Box-Routers-wp.pdf)
 
 ### Presented By
 
@@ -499,7 +499,7 @@ We present a new and efficient approach to systematic testing of cryptographic s
 
  We ran CDF on high-profile, widely used crypto software components. CDF discovered issues in a number of libraries including Go's crypto package, OpenSSL, and mbedTLS.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Aumasson-Automated-Testing-Of-Crypto-Software-Using-Differential-Fuzzing.pdf) [! ](https://github.com/kudelskisecurity/cdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Aumasson-Automated-Testing-Of-Crypto-Software-Using-Differential-Fuzzing.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_source-code.png) ](https://github.com/kudelskisecurity/cdf)
 
 ### Presented By
 
@@ -517,7 +517,7 @@ AVPASS is a tool for leaking the detection model of Android antivirus (AV) progr
 
  AVPASS will be demonstrated, showing that it modifies real world malware precisely, and allows them to bypass all AVs following the leaked model. AVPASS will be released with every tool that we have built, including the original source code and the related test data, to enable researchers to replicate the research on their own.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Jung-AVPASS-Leaking-And-Bypassing-Anitvirus-Detection-Model-Automatically.pdf) [! ](https://github.com/sslab-gatech/avpass)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Jung-AVPASS-Leaking-And-Bypassing-Anitvirus-Detection-Model-Automatically.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_source-code.png) ](https://github.com/sslab-gatech/avpass)
 
 ### Presented By
 
@@ -545,7 +545,7 @@ For UEFI firmware, the barbarians are at the gate -- and the gate is open. On th
 
 In this presentation, I'll explain UEFI security from the competing perspectives of attacker and defender. I'll cover topics including how hardware vendors have left SMM and SPI flash memory wide open to rootkits; how UEFI rootkits work, how technologies such as Intel Boot Guard and BIOS Guard (and the separate Authenticated Code Module CPU) aim to kill them; and weaknesses in these protective technologies. There are few public details; most of this information has been extracted by reverse engineering.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Matrosov-Betraying-The-BIOS-Where-The-Guardians-Of-The-BIOS-Are-Failing.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Matrosov-Betraying-The-BIOS-Where-The-Guardians-Of-The-BIOS-Are-Failing.pdf)
 
 ### Presented By
 
@@ -565,7 +565,7 @@ We all groan when we hear it's "time for some game theory," but traditional game
 
  Finally, I'll present new insights from my own research, examining how defenders and attackers play the infosec game specifically, and bridging from theory to practice, to see how the lessons from behavioral game theory can be tangibly incorporated into defenders' strategic decision making processes. I'll conclude the session by outlining the practical steps for improving threat modelling, countering offensive moves, and deciding which products to use, so that defenders can start gaining the high ground in the infosec game.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Shortridge-Big-Game-Theory-Hunting-The-Peculiarities-Of-Human-Behavior-In-The-Infosec-Game.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Shortridge-Big-Game-Theory-Hunting-The-Peculiarities-Of-Human-Behavior-In-The-Infosec-Game.pdf)
 
 ### Presented By
 
@@ -581,7 +581,7 @@ In this research, we've explored attack surface of hypervisors and TrustZone mon
 
  We will explore attack vectors which could allow malicious operating system (EL1) level to escalate privileges to hypervisor (EL2) level and potentially install virtualization rootkit in the hypervisor. We will also explore attack vectors through SMC and other low level interfaces, interactions between TrustZone and hypervisor (EL2) privilege levels. To help with further low level ARM security research, we will release ARM support for CHIPSEC framework and new modules to test issues in ARM based hypervisors and TrustZone implementations, including SMC fuzzer.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Bazhaniuk-BluePill-For-Your-Phone.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Bazhaniuk-BluePill-For-Your-Phone.pdf)
 
 ### Presented By
 
@@ -597,7 +597,7 @@ In kernel-mode, buffer overflows and similar memory corruption issues in the int
 
  This presentation will introduce another subtle class of kernel vulnerabilities – disclosure of uninitialized stack and heap memory to user-mode applications. Since information leaks of this kind leave hardly any footprint, they are rarely noticed and reported to system vendors. However, we have found that it is still a prevalent problem in current kernels (especially Windows), and can be abused to defeat certain exploit mitigations or steal sensitive data residing in ring-0. In order to address this matter, we have developed a new Bochspwn-style instrumentation based on rudimentary kernel memory taint tracking, which we then used to discover 30 memory disclosure issues in Windows alone. In this talk, we will discuss the kernel design problems behind the bugs, the design of our tool, and the exploitation process of some of the most interesting findings.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Jurczyk-Bochspwn-Reloaded-Detecting-Kernel-Memory-Disclosure-With-X86-Emulation-And-Taint-Tracking.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Jurczyk-Bochspwn-Reloaded-Detecting-Kernel-Memory-Disclosure-With-X86-Emulation-And-Taint-Tracking.pdf)
 
 ### Presented By
 
@@ -615,7 +615,7 @@ Machine learning offers opportunities to improve malware detection because of it
 
  We conclude with key defender takeaways. Teaching the machine learning detector about its blind spots is a simple and powerful idea. However, correct implementation is as much art as it is science. Finally, we caution attendees that without an adversarially-minded approach, machine learning offers early successes, but can quickly become a porous defense in the face of sophisticated adversaries.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Anderson-Bot-Vs-Bot-Evading-Machine-Learning-Malware-Detection.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Anderson-Bot-Vs-Bot-Evading-Machine-Learning-Malware-Detection-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Anderson-Bot-Vs-Bot-Evading-Machine-Learning-Malware-Detection.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Anderson-Bot-Vs-Bot-Evading-Machine-Learning-Malware-Detection-wp.pdf)
 
 ### Presented By
 
@@ -641,7 +641,7 @@ Breaking electronic locks looks so fun in the movies – get your "tech wizard" 
 
  Why can't real life be like this? This talk will look at a few consumer grade electronic locks, and aims to break them like you'd see in the movies (roughly). Along the way it features a detailed tear-down of the electronics on these locks & discuss vulnerabilities a hardware hacker can exploit to bypass them.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-OFlynn-Breaking-Electronic-Locks.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-OFlynn-Breaking-Electronic-Locks.pdf)
 
 ### Presented By
 
@@ -659,7 +659,7 @@ Industrial robots are complex cyber-physical systems used for manufacturing, and
 
  We will cover in-depth technical aspects (e.g., reverse engineering and vulnerability details, and attack PoCs), alongside a broader discussion on the security posture of industrial routers and robots: Why these devices are attractive for attackers? What could they achieve? Are they hard to compromise? How can their security be improved?
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Quarta-Breaking-The-Laws-Of-Robotics-Attacking-Industrial-Robots.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Quarta-Breaking-The-Laws-Of-Robotics-Attacking-Industrial-Robots-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Quarta-Breaking-The-Laws-Of-Robotics-Attacking-Industrial-Robots.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Quarta-Breaking-The-Laws-Of-Robotics-Attacking-Industrial-Robots-wp.pdf)
 
 ### Presented By
 
@@ -673,7 +673,7 @@ Industrial robots are complex cyber-physical systems used for manufacturing, and
 
 A processor is not a trusted black box for running code; on the contrary, modern x86 chips are packed full of secret instructions and hardware bugs. In this talk, we'll demonstrate how page fault analysis and some creative processor fuzzing can be used to exhaustively search the x86 instruction set and uncover the secrets buried in your chipset. We'll disclose new x86 hardware glitches, previously unknown machine instructions, ubiquitous software bugs, and flaws in enterprise hypervisors. Best of all, we'll release our sandsifter toolset, so that you can audit - and break - your own processor.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Domas-Breaking-The-x86-ISA.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Domas-Breaking-The-x86-Instruction-Set-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Domas-Breaking-The-x86-ISA.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Domas-Breaking-The-x86-Instruction-Set-wp.pdf)
 
 ### Presented By
 
@@ -695,7 +695,7 @@ Remote exploits that compromise Android and iOS devices without user interaction
 
  Finally, we'll tell the story of how we found the bug and exploited it to achieve full code execution - and how we went on to leverage our control of the Wi-Fi chip in order to run code in the main application processor.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Artenstein-Broadpwn-Remotely-Compromising-Android-And-iOS-Via-A-Bug-In-Broadcoms-Wifi-Chipsets.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Artenstein-Broadpwn-Remotely-Compromising-Android-And-iOS-Via-A-Bug-In-Broadcoms-Wifi-Chipsets-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Artenstein-Broadpwn-Remotely-Compromising-Android-And-iOS-Via-A-Bug-In-Broadcoms-Wifi-Chipsets.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Artenstein-Broadpwn-Remotely-Compromising-Android-And-iOS-Via-A-Bug-In-Broadcoms-Wifi-Chipsets-wp.pdf)
 
 ### Presented By
 
@@ -711,7 +711,7 @@ How often does someone find your secret bugs? The Vulnerability Equities Process
 
  Suddenly in 2017, two studies which addressed this question were released within days of each other with different findings. Join us for a discussion with the lead authors and several luminaries in the security space as we pick apart the key findings from these reports and their implications for the policy community.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Herr-Bug-Collisions-Meet-Government-Vulnerability-Disclosure.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Ablon-Bug-Collisions-Meet-Government-Vulnerability-Disclosure-Zero-Days-Thousands-Of-Nights-RAND.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Herr-Bug-Collisions-Meet-Government-Vulnerability-Disclosure.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Ablon-Bug-Collisions-Meet-Government-Vulnerability-Disclosure-Zero-Days-Thousands-Of-Nights-RAND.pdf)
 
 ### Presented By
 
@@ -749,7 +749,7 @@ The Commission brings together stakeholders from the international security and 
 
 While both the SYSTEM_ALERT_WINDOW and the BIND_ACCESSIBILITY_SERVICE Android permissions have been abused individually (e.g., in UI redressing attacks, accessibility attacks), previous attacks based on these permissions failed to completely control the UI feedback loop and thus either rely on vanishing side-channels to time the appearance of overlay UI, cannot respond properly to user input, or make the attacks literally visible. In this work, we demonstrate how combining the capabilities of these permissions leads to complete control of the UI feedback loop and creates devastating and stealthy attacks. In particular, we demonstrate how an app with these two permissions can launch a variety of stealthy, powerful attacks, ranging from stealing user's login credentials and security PIN, to the silent installation of a God-like app with all permissions enabled. To make things even worse, we note that when installing an app targeting a recent Android SDK, the list of its required permissions is not shown to the user and that these attacks can be carried out without needing to lure the user to knowingly enable any permission, thus leaving him completely unsuspecting. In fact, we found that the SYSTEM_ALERT_WINDOW permission is automatically granted for apps installed from the Play Store and, even though the BIND_ACCESSIBILITY_SERVICE is not automatically granted, our experiment shows that it is very easy to lure users to unknowingly grant that permission by abusing capabilities from the SYSTEM_ALERT_WINDOW permission. We also found that it is straightforward to get a proof-of-concept app requiring both permissions accepted on the official store. We evaluated the practicality of these attacks by performing a user study: none of the 20 human subjects that took part of the experiment even suspected they had been attacked. We conclude with a number of observations and best-practices that Google and developers can adopt to secure the Android GUI.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Fratantonio-Cloak-And-Dagger-From-Two-Permissions-To-Complete-Control-Of-The-UI-Feedback-Loop.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Fratantonio-Cloak-And-Dagger-From-Two-Permissions-To-Complete-Control-Of-The-UI-Feedback-Loop-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Fratantonio-Cloak-And-Dagger-From-Two-Permissions-To-Complete-Control-Of-The-UI-Feedback-Loop.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Fratantonio-Cloak-And-Dagger-From-Two-Permissions-To-Complete-Control-Of-The-UI-Feedback-Loop-wp.pdf)
 
 ### Presented By
 
@@ -775,7 +775,7 @@ Modern websites are browsed through a lens of transparent systems built to enhan
 
  Finally, to further drag these systems out into the light, I'll release Collaborator Everywhere - an open source Burp Suite extension which augments your web traffic with a selection of the best techniques to harvest leads from cooperative websites.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Kettle-Cracking-The-Lens-Exploiting-HTTPs-Hidden-Attack-Surface.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Kettle-Cracking-The-Lens-Exploiting-HTTPs-Hidden-Attack-Surface-wp.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Kettle-Cracking-The-Lens-Exploiting-HTTPs-Hidden-Attack-Surface-tool.zip)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Kettle-Cracking-The-Lens-Exploiting-HTTPs-Hidden-Attack-Surface.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Kettle-Cracking-The-Lens-Exploiting-HTTPs-Hidden-Attack-Surface-wp.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_source-code.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Kettle-Cracking-The-Lens-Exploiting-HTTPs-Hidden-Attack-Surface-tool.zip)
 
 ### Presented By
 
@@ -795,7 +795,7 @@ The security industry faces a tough and growing problem: many of the fundamental
 
  This talk will present the technical architecture of the game environment for technical attendees interested in building their own. Our talk will present business value to the game for non-technical attendees interested in promoting their organizational capability, building brand awareness, or creating a customer-oriented training service. And, we will show screenshots, videos and detailed diagrams giving all attendees a close view of how the game is built and delivered.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Nichols-Cyber-Wargaming-Lessons-Learned-In-Influencing-Stakeholders-Inside-And-Outside-Your-Organization.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Nichols-Cyber-Wargaming-Lessons-Learned-In-Influencing-Stakeholders-Inside-And-Outside-Your-Organization-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Nichols-Cyber-Wargaming-Lessons-Learned-In-Influencing-Stakeholders-Inside-And-Outside-Your-Organization.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Nichols-Cyber-Wargaming-Lessons-Learned-In-Influencing-Stakeholders-Inside-And-Outside-Your-Organization-wp.pdf)
 
 ### Presented By
 
@@ -825,7 +825,7 @@ After KeenLab successfully worked out several rooting solutions on many old Sams
 
 In this talk I will describe how I used an exploit chain to defeat the new Samsung KNOX with zero privilege (exploit chain can be executed by any untrusted application), including KASLR bypassing, DFI bypassing, SELinux fully bypassing and privilege escalation. All details of vulnerabilities and mitigation bypassing techniques will be given during the presentation.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Shen-Defeating-Samsung-KNOX-With-Zero-Privilege.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Shen-Defeating-Samsung-KNOX-With-Zero-Privilege-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Shen-Defeating-Samsung-KNOX-With-Zero-Privilege.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Shen-Defeating-Samsung-KNOX-With-Zero-Privilege-wp.pdf)
 
 ### Presented By
 
@@ -841,7 +841,7 @@ You've joined a startup building the next big enterprise unicorn. The product is
 
  Next, defenses in key points of the delivery architecture will be explored, from the SaaS platform to CDNs to browsers. Now for the money - what does it take to convince customers to serve your code? It's a big leap of faith for customers to trust you and your arbitrary javascript on their site. The deeper their pockets are, the higher they set the bar for you throughout your architecture. What do they expect in your SDL? Finally, how do you sell this in your organization? Going beyond SDL best practices, strategies for building a product & engineering culture of protecting javascript delivery will be shared.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Randolph-Delivering-Javascript-to-World-Plus-Dog.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Randolph-Delivering-Javascript-to-World-Plus-Dog-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Randolph-Delivering-Javascript-to-World-Plus-Dog.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Randolph-Delivering-Javascript-to-World-Plus-Dog-wp.pdf)
 
 ### Presented By
 
@@ -875,7 +875,7 @@ Every year thousands of organizations are compromised by targeted attacks. In ma
 
  The presentation will disclose several exploits that could allow remote execution or remote information disclosure on computers running these well-known C&C components. It should serve as a warning to those actors who utilize such toolsets. That is to say, such actors live in glass houses and should stop throwing stones.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Grange-Digital-Vengeance-Exploiting-The-Most-Notorious-C&C-Toolkits.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Grange-Digital-Vengeance-Exploiting-The-Most-Notorious-C&C-Toolkits-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Grange-Digital-Vengeance-Exploiting-The-Most-Notorious-C&C-Toolkits.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Grange-Digital-Vengeance-Exploiting-The-Most-Notorious-C&C-Toolkits-wp.pdf)
 
 ### Presented By
 
@@ -893,7 +893,7 @@ Cross-Site Scripting is a constant problem of the Web platform. Over the years m
 
  In this talk, we will demonstrate that these gadgets are present in almost all modern JavaScript libraries, APIs and applications. We will present several case studies and real-world examples that demonstrate that many mitigation techniques are not suited for modern applications. As a result, we argue that the Web should start focusing more on preventive mechanisms instead of mitigations.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Lekies-Dont-Trust-The-DOM-Bypassing-XSS-Mitigations-Via-Script-Gadgets.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Lekies-Dont-Trust-The-DOM-Bypassing-XSS-Mitigations-Via-Script-Gadgets.pdf)
 
 ### Presented By
 
@@ -911,7 +911,7 @@ Despite all predictions, native Desktop apps are back. After years porting stand
 
  As part of our study of Electron security, we have mapped the overall attack surface and derived a comprehensive checklist of anti-patterns. A new tool (electronegativity) to facilitate testing of Electron-based apps will be released.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Carettoni-Electronegativity-A-Study-Of-Electron-Security.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Carettoni-Electronegativity-A-Study-Of-Electron-Security-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Carettoni-Electronegativity-A-Study-Of-Electron-Security.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Carettoni-Electronegativity-A-Study-Of-Electron-Security-wp.pdf)
 
 ### Presented By
 
@@ -931,7 +931,7 @@ Enterprises often require that their IT teams have no access to data kept inside
 
  In this session, we will provide real world examples of VMWare networks that are exposed to this security design flaw. We will demonstrate the ease at which an attacker can move from configuring a virtual machine to running commands with root permissions inside the guest machine. We will also showcase a tool that will allow you to test which users are capable of taking over guest machines.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Ziv-Escalating-Insider-Threats-Using-Vmware's-Api.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Ziv-Escalating-Insider-Threats-Using-Vmware's-Api.pdf)
 
 ### Presented By
 
@@ -949,7 +949,7 @@ Microsoft Advanced Threat Analytics (ATA) is a defense platform which reads info
 
  The talk will be full of live demonstrations.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Mittal-Evading-MicrosoftATA-for-ActiveDirectory-Domination.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Mittal-Evading-MicrosoftATA-for-ActiveDirectory-Domination.pdf)
 
 ### Presented By
 
@@ -969,7 +969,7 @@ Until now, electronic communication was considered a single avenue for deliverin
 
  By the end of this talk the audience will recognize that security and safety zoning should expand all the way into the physical process (to consider interaction of equipment via the physical process).
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Krotofil-Evil-Bubbles-Or-How-To-Deliver-Attack-Payload-Via-The-Physics-Of-The-Process.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Krotofil-Evil-Bubbles-Or-How-To-Deliver-Attack-Payload-Via-The-Physics-Of-The-Process.pdf)
 
 ### Presented By
 
@@ -989,7 +989,7 @@ Hardware hacking is about to understand the inner working mechanism of hardware.
 
  We will present a new method to allow provisioning port identification and manipulation by using connection matrix. With this, it is possible to construct arbitrary analog-alike connection in array form to implement all pattern of interconnect between bus interfacing chip and the target. Hence, once the appropriate provisioning port has been figured out, in the meantime, it is ready to be used for debugging or firmware dumping purposes. Besides, it is also an ideal assistive toolset for unknown signal analysis, side channel analysis (SCA), and fault injection (FI).
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Chui-Evilsploit-A-Universal-Hardware-Hacking-Toolkit.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Chui-Evilsploit-A-Universal-Hardware-Hacking-Toolkit-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Chui-Evilsploit-A-Universal-Hardware-Hacking-Toolkit.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Chui-Evilsploit-A-Universal-Hardware-Hacking-Toolkit-wp.pdf)
 
 ### Presented By
 
@@ -1007,7 +1007,7 @@ The modern model of vulnerability mitigation includes robust sandboxing and user
 
  This lecture will discuss methods for applying evolutionary coverage guided fuzzing to kernel system calls, IOCTLS, and other low level interfaces. First, to understand what makes an effective guided kernel fuzzer, we will discuss the tools available for open source drivers and kernels such as trinity and syzkaller which have found hundreds of vulnerabilities in the Linux kernel. Next we will look at using system emulators like QEMU for instrumenting kernel interfaces with code coverage to gain an understanding of the performance and limitations of this approach. Finally we will leverage our own custom driver to enable hardware branch tracing with Intel Processor Trace as a new method for evolutionary fuzzing against unmodified kernel binaries on Linux and Windows. The driver enabling this approach on Windows is authored by the presenter and available to the security community as opensource. This will be the first public lecture showing how to use highly performant modern hardware tracing engines to enable closed source kernel vulnerability research using coverage guided fuzzing.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Johnson-Evolutionary-Kernel-Fuzzing)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Johnson-Evolutionary-Kernel-Fuzzing)
 
 ### Presented By
 
@@ -1037,7 +1037,7 @@ The idea of a paperless office has been dreamed of for more than three decades. 
 
  On top of our systematic analysis we reveal novel insights that enable attacks from the Internet by using advanced cross-site printing techniques, combined with printer CORS spoofing. Finally, we show how to apply our attacks to systems beyond typical printers like Google Cloud Print or document processing websites.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Mueller-Exploiting-Network-Printers.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Mueller-Exploiting-Network-Printers.pdf)
 
 ### Presented By
 
@@ -1065,7 +1065,7 @@ Meet Chrysaor, one of the most sophisticated and elusive mobile spyware products
 
 This talk will recount how we pursued Chrysaor using a combination of on-device and cloud based security services. In particular, we will detail the methodology and techniques that allowed us to detect this malware that affect only dozens of devices out of the billions of security reports we get from Safetynet. We will also discuss how we used our installation graph engine to determine attribution.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Ruthven-Fighting-Targeted-Malware-In-The-Mobile-Ecosystem.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Ruthven-Fighting-Targeted-Malware-In-The-Mobile-Ecosystem.pdf)
 
 ### Presented By
 
@@ -1091,7 +1091,7 @@ For years and years, network pen-testers have owned companies and networks with 
 
 In recent years, we witnessed the rise of firmware-related vulnerabilities, likely a direct result of increasing adoption of exploit mitigations in major/widespread operating systems - including for mobile phones. Pairing that with the recent (and not so recent) leaks of government offensive capabilities abusing supply chains and using physical possession to persist on compromised systems, it is clear that firmware is the new black in security. This research looks into BIOS/UEFI platform firmware, trying to help making sense of the threat. We present a threat model, discuss new mitigations that could have prevented the issues and offer a categorization of bug classes that hopefully will help focusing investments in protecting systems (and finding new vulnerabilities). Our data set comprises of 90+ security vulnerabilities handled by Intel Product Security Incident Response Team (PSIRT) in the past 3 years and the analysis was manually performed, using white-box and counting with feedback from various BIOS developers within the company (and security researchers externally that reported some of the issues - most of the issues were found by internal teams, but PSIRT is involved since they were found to also affect released products).
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Branco-Firmware-Is-The-New-Black-Analyzing-Past-Three-Years-Of-BIOS-UEFI-Security-Vulnerabilities.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Branco-Firmware-Is-The-New-Black-Analyzing-Past-Three-Years-Of-BIOS-UEFI-Security-Vulnerabilities.pdf)
 
 ### Presented By
 
@@ -1107,7 +1107,7 @@ Software-defined Networking (SDN) is a new networking paradigm which aims for in
 
  In this work, we present FlowFuzz a fuzzing framework for SDN-enabled software and hardware switches. In particular we focus on the OpenFlow protocol which is currently the de facto standard communication protocol between SDN-enabled switches and the central controlling instance. Whereas the framework utilizes the output of conventional tools such as AddressSanitizer for investigating software switches, it also evaluates data obtained from side channels, i.e., processing times and power consumption to identify unique code execution paths within hardware switches to optimize the fuzzing process. Furthermore, we use our framework implementation to perform a first evaluation of the OpenVSwitch and a total of four SDN-enabled hardware switches. We conclude by presenting our findings and outline future extensions of the fuzzing framework.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Gray-FlowFuzz-A-Framework-For-Fuzzing-OpenFlow-Enabled-Software-And-Hardware-Switches.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Gray-FlowFuzz-A-Framework-For-Fuzzing-OpenFlow-Enabled-Software-And-Hardware-Switches.pdf)
 
 ### Presented By
 
@@ -1123,7 +1123,7 @@ In this work we analyzed two recent trends. The first trend is the growing threa
 
 The second trend is modern operating systems started adopting stronger software defenses based on virtualization technology. Windows 10 introduced Virtualization Based Security (VBS) to provide hypervisor-based isolated execution environment to critical OS components and to protect sensitive data such as domain credentials. Previously, we discovered multiple ways adversaries could leverage firmware in attacks against hypervisors. We also demonstrated the first proof-of-concept attack on Windows 10 VBS exposing domain credentials protected by Credential Guard technology. We will apply this knowledge to analyze the security of modern hypervisor based OS defenses from the perspective of firmware and hardware attacks. We will detail firmware assisted attack vectors which can be used to compromise Windows 10 VBS. We will also describe changes done by platform vendors and Windows to improve mitigation against these attacks.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Bulygin-Fractured-Backbone-Breaking-Modern-OS-Defenses-With-Firmware-Attacks.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Bulygin-Fractured-Backbone-Breaking-Modern-OS-Defenses-With-Firmware-Attacks.pdf)
 
 ### Presented By
 
@@ -1141,7 +1141,7 @@ In today's world of connected cars, security is of vital importance. The securit
 
  Our presentation will be in three parts: our research, Tesla's response, and the follow-up. We will, for the first time, share the details of the whole attack chain on the Tesla, and then reveal the implementation of Tesla's OTA and Code Signing features. Furthermore, we'll explore the new mitigation on Tesla and share our thoughts on them.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Nie-Free-Fall-Hacking-Tesla-From-Wireless-To-CAN-Bus.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Nie-Free-Fall-Hacking-Tesla-From-Wireless-To-CAN-Bus-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Nie-Free-Fall-Hacking-Tesla-From-Wireless-To-CAN-Bus.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Nie-Free-Fall-Hacking-Tesla-From-Wireless-To-CAN-Bus-wp.pdf)
 
 ### Presented By
 
@@ -1157,7 +1157,7 @@ In today's world of connected cars, security is of vital importance. The securit
 
  We will demonstrate that RCE is also possible in these libraries and present details about the ones that are vulnerable to RCE by default. We will also discuss common configurations that make other libraries vulnerable. In addition to focusing on JSON format, we will generalize the attack techniques to other serialization formats. In particular, we will pay close attention to several serialization formats in .NET. These formats have also been known to be vulnerable since 2012 but the lack of known RCE gadgets led some software vendors to not take this issue seriously. We hope this talk will change this. With the intention of bringing the due attention to this vulnerability class in .NET, we will review the known vulnerable formats, present other formats which we found to be vulnerable, and conclude with presenting several gadgets from system libraries that may be used to achieve RCE in a stable way: no memory corruption -- just simple process invocation. Finally, we will provide recommendations on how to determine if your code is vulnerable, provide remediation advice, and discuss alternative approaches.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-Json-Attacks.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-Json-Attacks.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf)
 
 ### Presented By
 
@@ -1177,7 +1177,7 @@ Recently, several popular Chrome extensions were found to be vulnerable to XSS. 
 
 In this talk, I will show how such a flaw leads to full and permanent control over the victim's browser, turning the extension into zombie. Additionally, shedding more light on the 2016 attacks on Wix and Facebook described in the beginning, I will demonstrate how an attacker can use similar techniques to distribute her malicious payload efficiently on to new victims, through popular social platforms - creating the web's most powerful botnet ever.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Cohen-Game-Of-Chromes-Owning-The-Web-With-Zombie-Chrome-Extensions-wp.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Cohen-Game-Of-Chromes-Owning-The-Web-With-Zombie-Chrome-Extensions-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Cohen-Game-Of-Chromes-Owning-The-Web-With-Zombie-Chrome-Extensions-wp.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Cohen-Game-Of-Chromes-Owning-The-Web-With-Zombie-Chrome-Extensions-wp.pdf)
 
 ### Presented By
 
@@ -1197,7 +1197,7 @@ As processing power and deep learning techniques have improved, deep learning ha
 
  Deep learning uses a massive amount of unseen complex features to predict results, which enables them to fit beautifully to datasets. But it also means that if the training and testing data is even slightly biased with respect to the real-world test case data, some of those unseen complex features will end up damaging accuracy instead of bolstering it. Even with great labels and a lot of data, if the data we use to train our deep learning models doesn't mimic the data it will eventually be tested on in the wild, our models are likely to miss out on a lot.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Sanders-Garbage-In-Garbage-Out-How-Purportedly-Great-ML-Models-Can-Be-Screwed-Up-By-Bad-Data.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Sanders-Garbage-In-Garbage-Out-How-Purportedly-Great-ML-Models-Can-Be-Screwed-Up-By-Bad-Data-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Sanders-Garbage-In-Garbage-Out-How-Purportedly-Great-ML-Models-Can-Be-Screwed-Up-By-Bad-Data.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Sanders-Garbage-In-Garbage-Out-How-Purportedly-Great-ML-Models-Can-Be-Screwed-Up-By-Bad-Data-wp.pdf)
 
 ### Presented By
 
@@ -1213,7 +1213,7 @@ USA, 1979: The Three Mile Island Nuclear Generating Station suffered a core melt
 
  The purpose of this talk is to provide a comprehensive description of the technical details and approach used to discover multiple vulnerabilities that affect widely deployed radiation monitoring devices, involving software and firmware reverse engineering, RF analysis, and hardware hacking.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Santamarta-Go-Nuclear-Breaking Radition-Monitoring-Devices.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Santamarta-Go-Nuclear-Breaking Radition-Monitoring-Devices-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Santamarta-Go-Nuclear-Breaking Radition-Monitoring-Devices.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Santamarta-Go-Nuclear-Breaking Radition-Monitoring-Devices-wp.pdf)
 
 ### Presented By
 
@@ -1227,7 +1227,7 @@ USA, 1979: The Three Mile Island Nuclear Generating Station suffered a core melt
 
 Are nightmares of data breaches and targeted attacks keeping your CISO up at night? You know you should be hunting for these threats, but where do you start? Told in the style of the popular children's story spoof, this soothing bedtime tale will lead Li'l Threat Hunters through the first five hunts they should do to find bad guys and, ultimately, help their CISOs "Go the F*#k to Sleep."
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Bianco-Go-To-Hunt-Then-Sleep.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Bianco-Go-To-Hunt-Then-Sleep.pdf)
 
 ### Presented By
 
@@ -1243,7 +1243,7 @@ Dumping firmware from hardware, utilizing a non-eMMC flash storage device, can b
 
  In this presentation, we will be showing attendees how to identify eMMC flash storage chips, how to reverse engineer the in circuit pinouts, and how to dump or modify the data within. We will be showcasing the tips and tricks to properly reverse engineer hardware containing eMMC flash storage (without bricking) along with a clear explanation of the process from identification to programming. The presentation will then finish with a demonstration of the process along with a number of free SD to eMMC breakouts for attendees.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Etemadieh-Hacking-Hardware-With-A-$10-SD-Card-Reader.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Etemadieh-Hacking-Hardware-With-A-$10-SD-Card-Reader-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Etemadieh-Hacking-Hardware-With-A-$10-SD-Card-Reader.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Etemadieh-Hacking-Hardware-With-A-$10-SD-Card-Reader-wp.pdf)
 
 ### Presented By
 
@@ -1257,7 +1257,7 @@ Dumping firmware from hardware, utilizing a non-eMMC flash storage device, can b
 
 Serverless technology is getting increasingly ubiquitous in the enterprise and startup communities. As micro-services multiply and single purpose services grow, how do you audit and defend serverless runtimes? The advantages of serverless runtimes are clear: increased agility, ease of use, and ephemerality (i.e., not managing a fleet of "pet" servers). There is a trade off for that convenience though - reduced transparency. In this talk, we will deep dive into both public data and information unearthed by our research to give you the full story on serverless, how it works, and attack chains in the serverless cloud(s) Azure, AWS, and a few other sandboxes. Who will be the victor in the great sandbox showdown?
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Krug-Hacking-Severless-Runtimes.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Krug-Hacking-Severless-Runtimes-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Krug-Hacking-Severless-Runtimes.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Krug-Hacking-Severless-Runtimes-wp.pdf)
 
 ### Presented By
 
@@ -1273,7 +1273,7 @@ Information security is ever evolving, and Android's security posture is no diff
 
  In this talk, we will discuss Android's attack surface reduction history, and how that fits into the broader Android security story. We will go into detail on the specific technical strategies used to achieve the attack surface reduction, and explore specific bugs which were made unreachable as a result of the hardening over the last several years. And we will examine the overall result of the hardening, and areas for improvement.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Kralevich-Honey-I-Shrunk-The-Attack-Surface-Adventures-In-Android-Security-Hardening.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Kralevich-Honey-I-Shrunk-The-Attack-Surface-Adventures-In-Android-Security-Hardening.pdf)
 
 ### Presented By
 
@@ -1336,7 +1336,7 @@ Many companies consider phishing inevitable: the best we can do is run training 
 
  In this talk we'll cover the psychology of phishing, then walk through a series of real-world attacks conducted against a Bay Area tech company - including conversion rates for each attack, and ways in which existing protections were bypassed. We'll cover recent technological advancements in this area, then combine these with our case studies to provide evidence-based techniques on how to prevent, not just mitigate, credential phishing.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Burnett-Ichthyology-Phishing-As-A-Science.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Burnett-Ichthyology-Phishing-As-A-Science-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Burnett-Ichthyology-Phishing-As-A-Science.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Burnett-Ichthyology-Phishing-As-A-Science-wp.pdf)
 
 ### Presented By
 
@@ -1352,7 +1352,7 @@ The cyber attack on Ukraine's power grid on December 17th, 2016 was the second t
 
 This talk will walk through the Ukraine 2015 and Ukraine 2016 events with a central focus on the malware, technical analysis of it, and the impact to grid operations. There have only been three other pieces of ICS tailored malware publicly revealed before (Stuxnet, Havex, and BlackEnergy2) making this malware of particular interest in the community. The fact that it could be re-purposed immediately to target grids around Europe and with simple modifications target grids in the United States marks a hallmark event. Defense is doable and our grid operators are actively defending our infrastructure. But learning from such a significant threat is vital to making sure our defensible systems stay defended.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Lee-Industroyer-Crashoverride-Zero-Things-Cool-About-A-Threat-Group-Targeting-The-Power-Grid.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Lee-Industroyer-Crashoverride-Zero-Things-Cool-About-A-Threat-Group-Targeting-The-Power-Grid.pdf)
 
 ### Presented By
 
@@ -1373,7 +1373,7 @@ As Enterprises rush to adopt Office365 for increased business agility and cost r
  • Exfiltrate data at high speed
  • Bypass AV, DLP, Sandboxes, and NGFW along the way.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Dods-Infecting-The-Enterprise-Abusing-Office365-Powershell-For-Covert-C2.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Dods-Infecting-The-Enterprise-Abusing-Office365-Powershell-For-Covert-C2.pdf)
 
 ### Presented By
 
@@ -1387,7 +1387,7 @@ As Enterprises rush to adopt Office365 for increased business agility and cost r
 
 Vulnerabilities have never been so marketable. There are many ways for security researchers to monetize their efforts: bug bounties, private markets, and of course work for hire. MedSec introduced us to a new way to monetize vulnerabilities by influencing market makers. What does the future hold for this approach? Are there other ways to fix the dysfunctional market around product security. With a fireside chat, Chris Wysopal will ask Justine Bone about the MedSec and Muddy Waters collaboration and how we can learn from this as we look to the future.
 
- [! [! ](https://blackhat.com/docs/us-17/thursday/us-17-Nakibly-Automated-Detection-of-Vulnerabilities-in-Black-Box-Routers-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Nakibly-Automated-Detection-of-Vulnerabilities-in-Black-Box-Routers-wp.pdf)
 
  ](https://blackhat.com/docs/us-17/thursday/us-17-Nakibly-Automated-Detection-of-Vulnerabilities-in-Black-Box-Routers.pdf)
 
@@ -1405,7 +1405,7 @@ Every modern computer system based on Intel architecture has Intel Management En
 
  Here, Intel Active Management Technology (AMT) fits perfectly – it is based on Intel ME and means for a remote administration of computer system. So… during this talk we will discuss methods of remote pwning of almost every Intel based system, manufactured since 2010 or later.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Evdokimov-Intel-AMT-Stealth-Breakthrough.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Evdokimov-Intel-AMT-Stealth-Breakthrough-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Evdokimov-Intel-AMT-Stealth-Breakthrough.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Evdokimov-Intel-AMT-Stealth-Breakthrough-wp.pdf)
 
 ### Presented By
 
@@ -1429,7 +1429,7 @@ This talk will also discuss the details about Remote Attestation mechanism:
 - How the EPID's zero-knowledge proof of knowledge works, what anonymity guarantees it provides, and can it be replaced with other simpler schemes where platform anonymity is not a concern.
 - What key-exchanges take place between Intel Attestation Service, Software Vendor's own service, Intel Provided Platform Enclaves (e.g., launch enclave, etc.), and the enclave itself.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Swami-SGX-Remote-Attestation-Is-Not-Sufficient-wp.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Swami-SGX-Remote-Attestation-Is-Not-Sufficient-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Swami-SGX-Remote-Attestation-Is-Not-Sufficient-wp.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Swami-SGX-Remote-Attestation-Is-Not-Sufficient-wp.pdf)
 
 ### Presented By
 
@@ -1443,7 +1443,7 @@ This talk will also discuss the details about Remote Attestation mechanism:
 
 iCloud Keychain employs end-to-end encryption to synchronise secrets across devices enrolled in iCloud. We discovered a critical cryptographic implementation flaw which would have allowed sophisticated attackers with privileged access to iCloud communications to man-in-the-middle iCloud Keychain Sync and gain plaintext access to iCloud Keychain secrets.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Radocea-Intercepting-iCloud-Keychain.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Radocea-Intercepting-iCloud-Keychain.pdf)
 
 ### Presented By
 
@@ -1459,7 +1459,7 @@ In recent years, the emerging Internet-of-Things (IoT) has led to rising concern
 
 Due to the heterogeneity of IoT devices, manually crafting the low-interaction honeypot is not affordable; on the other hand, we cannot purchase all of the physical IoT devices to build high-interaction honeypot. This dilemma forced us to seek an innovative way to build honeypot for IoT devices. We propose an automatic way to learn the behavioral knowledge of IoT devices and build "intelligent-interaction" honeypot. We also leverage multiple machine learning techniques to improve the quality and quantity.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Luo-Iotcandyjar-Towards-An-Intelligent-Interaction-Honeypot-For-IoT-Devices.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Luo-Iotcandyjar-Towards-An-Intelligent-Interaction-Honeypot-For-IoT-Devices-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Luo-Iotcandyjar-Towards-An-Intelligent-Interaction-Honeypot-For-IoT-Devices.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Luo-Iotcandyjar-Towards-An-Intelligent-Interaction-Honeypot-For-IoT-Devices-wp.pdf)
 
 ### Presented By
 
@@ -1475,7 +1475,7 @@ The abundance of memory corruption and disclosure vulnerabilities in kernel code
 
  In this talk, we present kR^X: a kernel hardening scheme that prevents kernel code reuse attacks. kR^X achieves this by coupling code diversification with the enforcement of a "read XOR execute" (R^X) memory safety policy. We demonstrate how to achieve this without employing a hypervisor or a super-privileged component, but rather with a self-hardening approach implemented mostly as a set of GCC plugins. We discuss multiple ways to prevent return address leaks that might allow attackers to infer the internal code layout, using encryption and deception techniques. Finally, we explore how to utilize hardware support, such as MPX on modern Intel CPUs to optimize performance.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Pomonis-KR^X- Comprehensive- Kernel-Protection-Against-Just-In-Time-Code-Reuse.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Pomonis-KR^X- Comprehensive- Kernel-Protection-Against-Just-In-Time-Code-Reuse.pdf)
 
 ### Presented By
 
@@ -1493,7 +1493,7 @@ One thing is true, signatures are dead. Today's malware is created with obfuscat
 
 We will discuss key considerations used in our decision-making process. Testing malware for our company was important, but it was not our only testing criteria. We looked at the ease of installation on the agent, use of their UI, SaaS, on-prem, hybrid, reporting, performance of agent using different system resources, how much the agent replied on their cloud intelligence compared to on-box performance, powershell scenarios, and a variety of other factors. Companies additionally need to take into consideration the cost of any potential new infrastructure, cost per seat, professional services, one off costs, 1, 2, 3 year terms and other factors. Ultimately, we want to extend our resources to help others in the industry and discuss key differences between the solutions that were evaluated.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Giuliano-Lies-And-Damn-Lies-Getting-Past-The-Hype-Of-Endpoint-Security-Solutions.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Giuliano-Lies-And-Damn-Lies-Getting-Past-The-Hype-Of-Endpoint-Security-Solutions.pdf)
 
 ### Presented By
 
@@ -1515,7 +1515,7 @@ SQLite is widely used as embedded database software for local/client storage in 
 
  Many programming languages have a support of SQLite API bindings such as PHP, Lua and Java. Memory corruption bugs of SQLite may also affect security features of these programming languages. We will show SQLite exploitation in PHP SQLite extension to bypass PHP security restrictions, as an example.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Feng-Many-Birds-One-Stone-Exploiting-A-Single-SQLite-Vulnerability-Across-Multiple-Software.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Feng-Many-Birds-One-Stone-Exploiting-A-Single-SQLite-Vulnerability-Across-Multiple-Software.pdf)
 
 ### Presented By
 
@@ -1535,7 +1535,7 @@ Autonomic systems are smart systems which do not need any human management or in
 
 In this talk, we will have a quick overview on Cisco's Autonomic Network Architecture, then I will reverse-engineer the proprietary protocol through its multiple phases. Finally, multiple vulnerabilities will be presented, one of which allows to crash systems remotely by knowing their IPv6 address.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Eissa-Network-Automation-Isn't-Your-Safe-Haven-Protocol-Analysis-And-Vulnerabilities-Of-Autonomic-Network.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Eissa-Network-Automation-Isn't-Your-Safe-Haven-Protocol-Analysis-And-Vulnerabilities-Of-Autonomic-Network.pdf)
 
 ### Presented By
 
@@ -1551,7 +1551,7 @@ The 3G and 4G devices deployed worldwide are vulnerable to IMSI catcher aka Stin
 
  In particular, we uncover a new flaw in the widely deployed cryptographic protocol in 3G and 4G cellular networks. We discuss different methods to exploit this flaw using low-cost setup. Further, we present several attacks to demonstrate their impact on end-users carrying 3G and 4G devices. Lastly, we discuss countermeasures to address these privacy issues.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Borgaonkar-New-Adventures-In-Spying-3G-And-4G-Users-Locate-Track-And-Monitor.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Borgaonkar-New-Adventures-In-Spying-3G-And-4G-Users-Locate-Track-And-Monitor.pdf)
 
 ### Presented By
 
@@ -1587,7 +1587,7 @@ Creating a custom command and control (C&C) server for someone else's malware ha
 
  While some of this talk is FruitFly and/or macOS specific, conceptually it should broadly apply to analyzing other malware, even on other operating systems :).
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Wardle-Offensive-Malware-Analysis-Dissecting-OSXFruitFly-Via-A-Custom-C&C-Server.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Wardle-Offensive-Malware-Analysis-Dissecting-OSXFruitFly-Via-A-Custom-C&C-Server.pdf)
 
 ### Presented By
 
@@ -1605,7 +1605,7 @@ JavaCard is a subset of Java that allows applets to run securely on smartcards a
 
  In this session, we present the OpenCrypto library that enables programmers to utilize all the capabilities of JavaCards (e.g., the cryptographic coprocessor) without being bound to a specific vendor. The library realizes classes for: 1) mutable Integers, 2) Elliptic Curve Points and 3) EC Curves. Currently, these classes are either not supported at all (even though they may be listed in the JC specification, e.g., Integers), or are available only through vendor-specific APIs (e.g., ECPoint). To overcome the vendor barriers, we use a combination of low-level byte manipulation tricks and mathematical properties to reconstruct low-level arithmetic operations (e.g., integer multiplication, ECPoint Addition) from high-level crypto methods (e.g., RSA encryption). Our final library supports all the methods found in the proprietary APIs, performs almost as fast, and eliminates vendor-specific dependencies from the ecosystem.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Mavroudis-Opencrypto-Unchaining-The-JavaCard-Ecosystem.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Mavroudis-Opencrypto-Unchaining-The-JavaCard-Ecosystem.pdf)
 
 ### Presented By
 
@@ -1619,7 +1619,7 @@ JavaCard is a subset of Java that allows applets to run securely on smartcards a
 
 Introducing a new paradigm for integrating developers with offensive and defensive teams to enhance SDLC. Utilizing Red, Blue, and now Yellow (Development) Teams in a structured way to provide knowledge sharing, strengthening of defenses, coverage, and response, and ultimately the development of a high level of security maturity over time. This new concept of "Red + Yellow == Orange && Blue + Yellow == Green" focuses on the role of Developers as a critical piece of security assurance activities when combined with Offensive and Defensive Teams. Orange Teams add value when they have been integrated into SDLC by creating a cycle of perpetual offensive testing and threat modeling to make software more secure over time through a high level of dedicated interaction. Green teams add value when they help ensure software is capable of providing good DFIR information. This talk will evaluate how different Team combinations can lead to more secure software.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Wright-Orange-Is-The-New-Purple.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Wright-Orange-Is-The-New-Purple-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Wright-Orange-Is-The-New-Purple.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Wright-Orange-Is-The-New-Purple-wp.pdf)
 
 ### Presented By
 
@@ -1638,7 +1638,7 @@ Power law distributions are fascinating artifacts of natural processes, applicat
 What makes Power Laws both fascinating and interesting is that they have an inbuilt "resistance" to attempts to tamper or subvert the data analysis. Given the low computational cost associated with Power law processing and the foolproof security inherent to the methods, Power law distributions make perfect tools for cyber defense, especially in the areas of DoS and intrusion detection.
 In this talk, we will introduce and discuss the significance and power of power law distributions, how they relate to computers, and how this can be used to develop new anomaly detection systems.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Prandl-PEIMA-Harnessing-Power-Laws-To-Detect-Malicious-Activities-From-Denial-Of-Service-To-Intrusion-Detection-Traffic-Analysis-And-Beyond.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Prandl-PEIMA-Harnessing-Power-Laws-To-Detect-Malicious-Activities-From-Denial-Of-Service-To-Intrusion-Detection-Traffic-Analysis-And-Beyond-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Prandl-PEIMA-Harnessing-Power-Laws-To-Detect-Malicious-Activities-From-Denial-Of-Service-To-Intrusion-Detection-Traffic-Analysis-And-Beyond.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Prandl-PEIMA-Harnessing-Power-Laws-To-Detect-Malicious-Activities-From-Denial-Of-Service-To-Intrusion-Detection-Traffic-Analysis-And-Beyond-wp.pdf)
 
 ### Presented By
 
@@ -1658,7 +1658,7 @@ The standard approach for web application security over the last decade and beyo
 - Obtain visibility to enable, rather than hinder, development and DevOps teams ability to iterate quickly
 - Measure maturity of your organizations security efforts in a non-theoretical way
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Lackey-Practical Tips-for-Defending-Web-Applications-in-the-Age-of-DevOps.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Lackey-Practical Tips-for-Defending-Web-Applications-in-the-Age-of-DevOps.pdf)
 
 ### Presented By
 
@@ -1672,7 +1672,7 @@ This presentation represents a capstone to previous years' work by the author on
 
  In this work, Wesley presents a comprehensive set of recommendations that can be used to build secure penetration testing operations. This includes technical recommendations, policies, procedures, and guidance on how to communicate and work with client organizations about the risks and mitigations. The goal is to develop testing capabilities that are more professionally sound, and that protect client organizations and pentesting infrastructure, while avoiding a negative impact on the speed, agility, and creativity that good testers are able to apply to engagements with current practices.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-McGrew-Protecting-Pentests-Recommendations-For-Performing-More-Secure-Tests.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-McGrew-Protecting-Pentests-Recommendations-For-Performing-More-Secure-Tests-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-McGrew-Protecting-Pentests-Recommendations-For-Performing-More-Secure-Tests.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-McGrew-Protecting-Pentests-Recommendations-For-Performing-More-Secure-Tests-wp.pdf)
 
 ### Presented By
 
@@ -1690,7 +1690,7 @@ They say an image is worth a thousand words, and surely that means it's worth sp
 
  Specifically, the problem is as follows: visual assets can inadvertently leak valuable information which should be kept private. The target may either not realize that the particular information is being leaked, or may realize that it is being leaked but may not consider the fact that the leaked information should be kept private in the first place. Our presentation will explore the myriad ways that images may be mined for said information, and in turn, offer counter-forensic techniques of preventing said data leakage by focusing on obfuscation, removal, and altercation of the leaked information.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Mazurov-Brown-Protecting-Visual-Assets-Digital-Image-Counter-Forensics.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Mazurov-Brown-Protecting-Visual-Assets-Digital-Image-Counter-Forensics.pdf)
 
 ### Presented By
 
@@ -1752,7 +1752,7 @@ This talk will be beneficial to a wide audience including threat intelligence an
 
 User studies are critical to understanding how users perceive and interact with security and privacy software and features. While it is important that users be able to configure and use security tools when they are not at risk, it is even more important that the tools continue to protect users during an attack. Conducting user studies in the presence of (simulated) risk is complicated. We would like to observe how users behave when they are actually at risk, but at the same time we cannot harm user study participants or subject them to increased risk. Often the risky situations we are interested in occur relatively infrequently in the real world, and thus can be difficult to observe in the wild. Researchers use a variety of strategies to overcome these challenges and place participants in situations where they will believe their security or privacy is at risk, without subjecting them to increases in actual harm. In some studies, researchers recruit participants to perform real tasks not directly related to security so that they can observe how participants respond to simulated security-related prompts or cues that occur while users are focused on primary tasks. In other studies, researchers create a hypothetical scenario and try to get participants sufficiently engaged in it that they will be motivated to avoid simulated harm. Sometimes researchers have the opportunity to observe real, rather than simulated attacks, although these opportunities are usually difficult to come by. Researchers can monitor real world user behavior over long periods of time (in public or with permission of participants) and observe how users respond to risks that occur naturally, without researcher intervention. In this talk, I will motivate the importance of security user studies and talk about a number of different user study approaches we have used at the CyLab Usable Privacy and Security Lab at Carnegie Mellon University.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Cranor-Real-Users-Simulated-Attacks.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Cranor-Real-Users-Simulated-Attacks.pdf)
 
 ### Presented By
 
@@ -1766,7 +1766,7 @@ User studies are critical to understanding how users perceive and interact with 
 
 As the previous Director of Security at companies like Linksys, Belkin, and Wink, I learned hard lessons about the pitfalls of PKI. This was especially true on IoT devices, where the responsibility was on consumers or site managers to update & fix devices when security issues arose. I've experienced expired keys that killed device connections, private keys being accidentally dropped on consumer devices, and breaches that required replacing all keys on devices, servers, and user applications. This led me to create oneID, now called Neustar TDI, which is an open source framework that replaces PKI with one that has real-time revocation, key rotation, key reset/replacement, and individual identities for every device, server, service, and user. It starts with the premise that every server, service, network, device, and user will be compromised at some point, so we should start our security model with that assumption and build protection to limit that as much as possible. It specifically does not trust anything by default and trust continually has to be proven, rather than trusting and checking for revocation. It puts the SOC or NOC in control rather than the users or site managers.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Knopf-Redesigning-PKI-To-Solve-Revocation-Expiration-And-Rotation-Problems.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Knopf-Redesigning-PKI-To-Solve-Revocation-Expiration-And-Rotation-Problems-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Knopf-Redesigning-PKI-To-Solve-Revocation-Expiration-And-Rotation-Problems.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Knopf-Redesigning-PKI-To-Solve-Revocation-Expiration-And-Rotation-Problems-wp.pdf)
 
 ### Presented By
 
@@ -1790,7 +1790,7 @@ Attackers, administrators and many legitimate products rely on PowerShell for th
 
  Approaches for evading these detection techniques will be discussed and demonstrated. Revoke-Obfuscation has been used in numerous Mandiant investigations to successfully identify obfuscated and non-obfuscated malicious PowerShell scripts and commands. It also detects all obfuscation techniques in Invoke-Obfuscation, including two new techniques being released with this presentation.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Bohannon-Revoke-Obfuscation-PowerShell-Obfuscation-Detection-And Evasion-Using-Science.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Bohannon-Revoke-Obfuscation-PowerShell-Obfuscation-Detection-And Evasion-Using-Science-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Bohannon-Revoke-Obfuscation-PowerShell-Obfuscation-Detection-And Evasion-Using-Science.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Bohannon-Revoke-Obfuscation-PowerShell-Obfuscation-Detection-And Evasion-Using-Science-wp.pdf)
 
 ### Presented By
 
@@ -1808,7 +1808,7 @@ Debuggers can play a valuable role in dynamic malware analysis, but these tools 
 
  To address this need, we present rVMI, a system that combines VMI and Rekall (a powerful memory forensics framework) to provide a platform for scriptable and interactive malware analysis. rVMI operates from the hypervisor on a live system with the ability to start, resume, and trap events at will. With this complete control over the target environment, an analyst can debug any number of processes or the kernel with the same level of ease in a manner that is completely invisible to the target. Analysis can be conducted from an interactive shell or through scripts. In either case the analyst has access to the entire arsenal that Rekall provides, which allows her to enumerate processes, inspect kernel data structures, access process address spaces, etc. As rVMI exports a python interface it can easily be extended with any external tool that supports python.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Pfoh-rVMI-A-New-Paradigm-For-Full-System-Analysis.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Pfoh-rVMI-A-New-Paradigm-For-Full-System-Analysis.pdf)
 
 ### Presented By
 
@@ -1830,7 +1830,7 @@ Preventive and reactive security measures can only partially mitigate the damage
 
  Last, we will demo how effective ShieldFS is against samples from state of the art ransomware families, showing that it is able to detect the malicious activity at runtime and transparently recover all the original files.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Continella-ShieldFS-The-Last-Word-In-Ransomware-Resilient-Filesystems.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Continella-ShieldFS-The-Last-Word-In-Ransomware-Resilient-Filesystems-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Continella-ShieldFS-The-Last-Word-In-Ransomware-Resilient-Filesystems.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Continella-ShieldFS-The-Last-Word-In-Ransomware-Resilient-Filesystems-wp.pdf)
 
 ### Presented By
 
@@ -1846,7 +1846,7 @@ It is well-known that acoustic emanations of computer keyboards represent a seri
 
  In this talk, we will present S&T and show that two very popular VoIP software (Skype and Google Hangouts) convey enough audio information to reconstruct the victim's input from keystroke noise. We will present the architecture of S&T, which we release as a tool to the community, to solicit contributions and to raise awareness on such underlooked side channels.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Lain-Skype-&-Type-Keystroke-Leakage-Over-VoIP.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Lain-Skype-&-Type-Keystroke-Leakage-Over-VoIP.pdf)
 
 ### Presented By
 
@@ -1866,7 +1866,7 @@ When it comes to marketing tactics, security products are no different than any 
 
  But marketers of security products are subject to the same truth-in-advertising laws as all other advertisers. In this talk, we will discuss the Federal Trade Commission's (FTC) longstanding authority to protect consumers from unfair and deceptive practices. We will focus on how deceptive claims and advertising are violations of the FTC Act, and offer guidance on what security companies should do to avoid making deceptive claims. We also offer questions researchers and security professionals can ask to challenge claims companies make.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Alva-So-You-Want-To-Market-Your-Security-Product.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Alva-So-You-Want-To-Market-Your-Security-Product.pdf)
 
 ### Presented By
 
@@ -1884,7 +1884,7 @@ MEMS sensors, such as accelerometers and gyroscopes, play non-substitutive roles
 
  "Shooting" a self-balancing vehicle, we show that it would lose balance as soon as we "pull the trigger." In a realistic circumstance, the user would probably fall and even get injured while riding speedily. We also attack a commercial product of DJI, induced change of its flight state, which could ultimately lead to a crash. These attacks can exclusively deprive users of their control. Moreover, in the cases of the VR device and the self-balancing vehicle, users may get physically injured! We also introduce several countermeasures, on both hardware and software to mitigate the vulnerability. Last but not least, through all these attacks, we call for the attention of related companies to prevent further exploitations.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Wang-Sonic-Gun-To-Smart-Devices-Your-Devices-Lose-Control-Under-Ultrasound-Or-Sound.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Wang-Sonic-Gun-To-Smart-Devices-Your-Devices-Lose-Control-Under-Ultrasound-Or-Sound.pdf)
 
 ### Presented By
 
@@ -1898,7 +1898,7 @@ MEMS sensors, such as accelerometers and gyroscopes, play non-substitutive roles
 
 A rise in data analytics and machine learning has left the typical pentesters behind in the dust. This talk covers the required tools for consolidating, analyzing and visualizing the dark tools that are used by every red team. This can all be done at scale keeping up with even the most bleeding edge continues integration and deployments environments. We'll release the required framework for getting the data where it needs to be, the technical add-ons to ensure this data is ingested in usable formats, and dashboards for Splunk to leverage this data for mass pawnage of your target!
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Bates-Splunking-Dark-Tools-A-Pentesters-Guide-To-Pwnage-Visualization.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Bates-Splunking-Dark-Tools-A-Pentesters-Guide-To-Pwnage-Visualization.pdf)
 
 ### Presented By
 
@@ -1918,7 +1918,7 @@ In this talk, we will discuss the current status, possible solutions, and outlin
 
 The adoption of such signaling firewall could help to reduce the exposure for both active and passive attacks on a larger scale. We will present the capabilities of this solution including the encryption of signaling, report the attacks to central threat intelligence and forward the attackers to honeypot. So what about to find where these SS7 attacks are coming and to start protecting the networks?
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Kacer-SS7-Attacker-Heaven-Turns-Into-Riot-How-To-Make-Nation-State-And-Intelligence-Attackers-Lives-Much-Harder-On-Mobile-Networks.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Kacer-SS7-Attacker-Heaven-Turns-Into-Riot-How-To-Make-Nation-State-And-Intelligence-Attackers-Lives-Much-Harder-On-Mobile-Networks-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Kacer-SS7-Attacker-Heaven-Turns-Into-Riot-How-To-Make-Nation-State-And-Intelligence-Attackers-Lives-Much-Harder-On-Mobile-Networks.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Kacer-SS7-Attacker-Heaven-Turns-Into-Riot-How-To-Make-Nation-State-And-Intelligence-Attackers-Lives-Much-Harder-On-Mobile-Networks-wp.pdf)
 
 ### Presented By
 
@@ -1936,7 +1936,7 @@ Physical DMA attacks on devices and the ability to read and modify memory conten
 
  We will focus on how we reverse engineered the memory controller and DIMM circuitry to inject our signals in the victim system's memory bus while the system was in S3 sleep state, the JEDEC standard DDR4 commands our memory controller issued to perform each operation, the timing constraints, mapping between physical addresses to DDR4 addresses, and finally the design of our PCB and FPGA.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Trikalinou-Taking-DMA-Attacks-To-The-Next-Level-How-To-Do-Arbitrary-Memory-Reads-Writes-In-A-Live-And-Unmodified-System-Using-A-Rogue-Memory-Controller.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Trikalinou-Taking-DMA-Attacks-To-The-Next-Level-How-To-Do-Arbitrary-Memory-Reads-Writes-In-A-Live-And-Unmodified-System-Using-A-Rogue-Memory-Controller.pdf)
 
 ### Presented By
 
@@ -1956,7 +1956,7 @@ During a test, we found an open port on a server. After some digging, we realise
 
  We have created our own small tool for testing endpoints, and we have discovered that many times, protocol data is written into SQL databases, so we will also look at SQL and server attacks through this protocol. That was then, over a year ago. How does it look today? Is it getting worse? What new 'fun' devices have we found since then, and what was the worlds response to our findings?
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Lundgren-Taking-Over-The-World-Through-Mqtt-Aftermath.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Lundgren-Taking-Over-The-World-Through-Mqtt-Aftermath.pdf)
 
 ### Presented By
 
@@ -1974,7 +1974,7 @@ Since the release of Windows 10, and especially in the Anniversary Edition relea
 
  A stable and precise kernel exploit has to be able to overcome KASLR, most often using kernel driver leaks. Although Microsoft has mitigated all publicly known leak sources, I will disclose two previously unknown KASLR bypasses in Windows 10 Creators Update. Obtaining kernel-mode code execution on Windows has become more difficult with the hardening of SMEP and the randomization of Page Table entries. I will show how a generic de-randomization of the Page Table entries can be performed through dynamic reverse engineering. This technique does not depend on the underlying hardware and can also be applied to virtual machines. Additionally, I will present an entirely different method which makes the usage of Page Table entries obsolete. This method allocates an arbitrary size piece of executable kernel pool memory and transfers code execution to it through hijacked system calls. It is important to note that this method will work even when VBS blocks the misuse of Page Table entries. Overall, this presentation gives a complete overhaul of Windows kernel exploitation, exposing multiple generic methods which can be leveraged by future kernel driver vulnerabilities.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Schenk-Taking-Windows-10-Kernel-Exploitation-To-The-Next-Level–Leveraging-Write-What-Where-Vulnerabilities-In-Creators-Update.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Schenk-Taking-Windows-10-Kernel-Exploitation-To-The-Next-Level–Leveraging-Write-What-Where-Vulnerabilities-In-Creators-Update-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Schenk-Taking-Windows-10-Kernel-Exploitation-To-The-Next-Level–Leveraging-Write-What-Where-Vulnerabilities-In-Creators-Update.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Schenk-Taking-Windows-10-Kernel-Exploitation-To-The-Next-Level–Leveraging-Write-What-Where-Vulnerabilities-In-Creators-Update-wp.pdf)
 
 ### Presented By
 
@@ -1998,7 +1998,7 @@ Botnets and C&C servers are taking over the internet and are a major threat to a
 
  A series of live demonstrations of this attack will be performed during the presentation to show the attack in action. The primary way of preventing this attack is to monitor regular changes to Active Directory standard user attributes that are not typically changed on a regular basis, and by rearchitecting security zones to use different Active Directory Forests. This is a clear violation of the way that Active Directory is typically used; however, due to the overwhelming insecure architecture implementations of Active Directory, and the difficulty of changing Active Directory architectures, this new attack technique will be effective for many years to come.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Miller-The-Active-Directory-Botnet.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Miller-The-Active-Directory-Botnet.pdf)
 
 ### Presented By
 
@@ -2016,7 +2016,7 @@ Everyone loves cloud-AV. It incorporates up-to-date intelligence from multiple g
 
  In this presentation, we describe and demonstrate a novel technique for exfiltrating data from highly secure enterprises whose endpoints have no direct Internet connection, or whose endpoints' connection to the Internet is restricted to hosts used by their legitimately installed software. Assuming the endpoint has a cloud-enhanced antivirus product installed, we show that if the anti-virus product employs an Internet-connected sandbox in its cloud, it in fact facilitates such exfiltration. We release the tool we developed to implement the exfiltration technique, and we provide real-world results from several prominent AV products. We also provide data and insights on those AV in-the-cloud sandboxes. Finally, we address the issues of how to further enhance the attack, and how can cloud-based AV vendors mitigate it.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Kotler-The-Adventures-Of-Av-And-The-Leaky-Sandbox.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Kotler-The-Adventures-Of-Av-And-The-Leaky-Sandbox-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Kotler-The-Adventures-Of-Av-And-The-Leaky-Sandbox.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Kotler-The-Adventures-Of-Av-And-The-Leaky-Sandbox-wp.pdf)
 
 ### Presented By
 
@@ -2032,7 +2032,7 @@ How many times you heard people stating "its best practice"? How many times you 
 
  This presentation introduces solid approaches to cope with these challenges by scaling out the application security team's capabilities, putting the right security tools in place, and following newly introduced thumb rules to build a successful application security program. As result of this talk, you will be armed with the practical execution approach for securing a massive scale of products.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Valtman-The-Art-Of-Securing-100-Products.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Valtman-The-Art-Of-Securing-100-Products.pdf)
 
 ### Presented By
 
@@ -2064,7 +2064,7 @@ Come hear about how the FBI worked jointly with other agencies, international or
 
 It's the 20th Black Hat, and it's been a wild ride from 1997 to 2017. So, what will happen over the NEXT 20 years? Let's ask Mikko. In this talk he will outlane the changing landscape of computer security and what are likely to be the most important upcoming developments. By understanding attackers and their motives, we can best protect our computers. And in the future, there's much more to protect than just computers.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Hypponen-The-Epocholypse-2038-Whats-In-Store-For-The-Next-20-Years.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Hypponen-The-Epocholypse-2038-Whats-In-Store-For-The-Next-20-Years.pdf)
 
 ### Presented By
 
@@ -2078,7 +2078,7 @@ It's the 20th Black Hat, and it's been a wild ride from 1997 to 2017. So, what w
 
 When people ask about wireless payments (PayPass, ApplePay, SamsungPay, etc), everyone certainly claims that ApplePay is one of the most secure systems. The separate microprocessor for payments (Secure Enclave), absence of card data storing/transmitting in plaintext during payments look like an ideal defense. However, the devil is in the details! We'll present a specially developed opensource utilities which demonstrates how hackers can reconnect your card to their iPhone or make fraudulent payments directly on the victim's phone, even without a jailbreak.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Yunusov-The-Future-Of-Applepwn-How-To-Save-Your-Money.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Yunusov-The-Future-Of-Applepwn-How-To-Save-Your-Money.pdf)
 
 ### Presented By
 
@@ -2098,7 +2098,7 @@ Consequently, it will have grave repercussions on the defensive side. As always 
 
 In this talk, we will describe these recent advancements in the field of automated Lateral, followed by a demo and the release of 'GoFetch', a new open-source lateral movement automation tool. We will conclude with a discussion on the implications of Lateral Movement industrialization on both attackers and defenders.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Beery-The-Industrial-Revolution-Of-Lateral-Movement.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Beery-The-Industrial-Revolution-Of-Lateral-Movement.pdf)
 
 ### Presented By
 
@@ -2112,7 +2112,7 @@ In this talk, we will describe these recent advancements in the field of automat
 
 Web standards are ever-evolving and determine what browsers can do. But new features can also lead to new vulnerabilities as they exercise existing functionality in new and unexpected ways. This talk discusses some of the more interesting and unusual features of JavaScript, and how they lead to bugs in a variety of software, including Adobe Flash, Chrome, Microsoft Edge and Safari. Recommended for browser researchers, developers and anyone who's ever tried to implement a standard.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Silvanovich-The-Origin-Of-Array-Symbol-Species.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Silvanovich-The-Origin-Of-Array-Symbol-Species.pdf)
 
 ### Presented By
 
@@ -2152,7 +2152,7 @@ Several popular attack tools and techniques remain effective in the real world, 
 
  This talk is intended for both defensive and offensive security. Attackers or penetration testers who rely blindly on their toolkits leave themselves vulnerable not only to detection, but also exploitation. Conversely, network administrators can manipulate their own network traffic to detect and complicate several common attacks. Security professionals can use the software written during the course of this research on cheap lightweight (even embedded or virtual) hardware to protect themselves against real world attack scenarios. We hope to inspire others to take this approach and develop more affordable yet effective security solutions. We also hope to demonstrate how penetration testers who rely on mysterious tools without learning how they work endanger themselves.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Ventura-Theyre-Coming-For-Your-Tools-Exploiting-Design-Flaws-For-Active-Intrusion-Prevention.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Ventura-Theyre-Coming-For-Your-Tools-Exploiting-Design-Flaws-For-Active-Intrusion-Prevention-wp.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Vanhoef-WiFuzz-Detecting-And-Exploiting-Logical-Flaws-In-The-Wi-Fi-Cryptographic-Handshake-tools.zip)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Ventura-Theyre-Coming-For-Your-Tools-Exploiting-Design-Flaws-For-Active-Intrusion-Prevention.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Ventura-Theyre-Coming-For-Your-Tools-Exploiting-Design-Flaws-For-Active-Intrusion-Prevention-wp.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_source-code.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Vanhoef-WiFuzz-Detecting-And-Exploiting-Logical-Flaws-In-The-Wi-Fi-Cryptographic-Handshake-tools.zip)
 
 ### Presented By
 
@@ -2168,7 +2168,7 @@ A niche term just two years ago, ransomware has rapidly risen to fame in the las
 
  In this talk, we demonstrate a method to track the ransomware ecosystem at scale, from distribution sites to the cash-out points. By processing 100k+ samples, we shed light on the economics and infrastructure of the largest families, and we provide insight on their revenue and conversion rates. With a deep dive in the two largest groups, we show the details of their operation. Finally, we uncover the cash-out points, tracking how the money exits the bitcoin network, enabling the authorities to pick up the money trail using conventional financial tracing means.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Invernizzi-Tracking-Ransomware-End-To-End.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Invernizzi-Tracking-Ransomware-End-To-End.pdf)
 
 ### Presented By
 
@@ -2182,7 +2182,7 @@ A niche term just two years ago, ransomware has rapidly risen to fame in the las
 
 Web Cache Deception attack is a new web attack vector that puts various technologies and frameworks at risk. By manipulating behaviors of web servers and caching mechanisms, anonymous attackers can expose sensitive information of authenticated application users, and in certain cases to even take control over their accounts. The attack is amazingly simple to identify and exploit. During this talk, the audience will be introduced to an in-depth analysis of the anatomy, prerequisites and mitigation of the attack. The talk will proceed with the behaviors of different web servers and caching mechanisms, and will be capped off with examples of vulnerable websites and a live demo.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Gil-Web-Cache-Deception-Attack.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Gil-Web-Cache-Deception-Attack-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Gil-Web-Cache-Deception-Attack.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Gil-Web-Cache-Deception-Attack-wp.pdf)
 
 ### Presented By
 
@@ -2204,7 +2204,7 @@ With over 5 billion pulls from the Docker Hub, Docker is proving to be the most 
 
  We will end the talk with practical methods of mitigation against such attacks. We will also revisit the industry stance on DNS-Rebinding protections and how they don't mitigate attacks from the local area network.
 
- [! ](https://blackhat.com/docs/us-17/thursday/us-17-Cherny-Well-That-Escalated-Quickly-How-Abusing-The-Docker-API-Led-To-Remote-Code-Execution-Same-Origin-Bypass-And-Persistence.pdf) [! ](https://blackhat.com/docs/us-17/thursday/us-17-Cherny-Well-That-Escalated-Quickly-How-Abusing-The-Docker-API-Led-To-Remote-Code-Execution-Same-Origin-Bypass-And-Persistence_wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Cherny-Well-That-Escalated-Quickly-How-Abusing-The-Docker-API-Led-To-Remote-Code-Execution-Same-Origin-Bypass-And-Persistence.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/thursday/us-17-Cherny-Well-That-Escalated-Quickly-How-Abusing-The-Docker-API-Led-To-Remote-Code-Execution-Same-Origin-Bypass-And-Persistence_wp.pdf)
 
 ### Presented By
 
@@ -2218,7 +2218,7 @@ With over 5 billion pulls from the Docker Hub, Docker is proving to be the most 
 
 Security is hard, but security education may be harder. Few academic institutions have the skills or resources to dedicate solely to security education. Rather, most security programs in higher education have grown out of or have been welded on to other technology programs. The resulting fractured educational ecosystem has created a disparity in the skill sets of graduating students and has made it challenging to develop standards to ensure consistency across educational programs. This talk will take a look at how security curricula have traditionally been developed and continued to be shaped by a variety of forces. We will examine some of the proposed solutions for accrediting programs and analyze their strengths and weaknesses. Subsequently, we will try to determine which type of student each model is designed to produce and provide our own recommendations about how to standardize security education.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Sanders-What-Theyre-Teaching-Kids-These-Days-Comparing-Security-Curricula-And-Accreditations-To-Industry-Needs.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Sanders-What-Theyre-Teaching-Kids-These-Days-Comparing-Security-Curricula-And-Accreditations-To-Industry-Needs.pdf)
 
 ### Presented By
 
@@ -2236,7 +2236,7 @@ Most organisations want to monitor wireless devices within their environment, bu
 
  We have developed open source tools to monitor the RF spectrum at a high level and then drill down to individual signals, supporting both reverse engineering and signals intelligence. By automatically combining the results with OSINT data from regulatory bodies around the world, we are able to build up a picture of devices transmitting in an environment.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Ossmann-Whats-On-The-Wireless-Automating-RF-Signal-Identification.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Ossmann-Whats-On-The-Wireless-Automating-RF-Signal-Identification-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Ossmann-Whats-On-The-Wireless-Automating-RF-Signal-Identification.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Ossmann-Whats-On-The-Wireless-Automating-RF-Signal-Identification-wp.pdf)
 
 ### Presented By
 
@@ -2250,7 +2250,7 @@ Most organisations want to monitor wireless devices within their environment, bu
 
 The Internet of Things (IoT) is all around us, making our lives more convenient. We've seen IoT devices being taken over to conduct DDoS attacks. We've heard about connected refrigerators being used to SPAM users and baby monitors being used to scream obscenities at innocent infants, but could an IoT device be re-purposed to physically attack an unsuspecting user? Let's find out.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Rios-When-IoT-Attacks-Understanding-The-Safety-Risks-Associated-With-Connected-Devices.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Rios-When-IoT-Attacks-Understanding-The-Safety-Risks-Associated-With-Connected-Devices-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Rios-When-IoT-Attacks-Understanding-The-Safety-Risks-Associated-With-Connected-Devices.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Rios-When-IoT-Attacks-Understanding-The-Safety-Risks-Associated-With-Connected-Devices-wp.pdf)
 
 ### Presented By
 
@@ -2270,7 +2270,7 @@ The law affords unique protections to communications between a lawyer and client
 
  In this talk, we will examine the legal landscape for cybersecurity professionals seeking to safeguard a clients' sensitive client data. We will cover issues including contract formation, risk allocation, and other legal issues that arise during formation of services contracts. We will pivot to legal regimes for handling PII, cross-border data transfers, IP rights, and export-control issues. And because security professionals are not static beings, we will also examine border crossings, including authority of TSA/Customs to search and seize devices that might hold client data. While examining these issues, where possible, we will discuss potential technological solutions to legal problems.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Osborn-White-Hat-Privilege-The-Legal-Landscape-For-A-Cybersecurity-Professional-Seeking-To-Safeguard-Sensitive-Client-Data.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Osborn-White-Hat-Privilege-The-Legal-Landscape-For-A-Cybersecurity-Professional-Seeking-To-Safeguard-Sensitive-Client-Data.pdf)
 
 ### Presented By
 
@@ -2304,7 +2304,7 @@ In this talk we show how to detect and abuse logical flaws in implementations of
 
 We tested 12 Wi-Fi access points, and found irregularities in all of them. These consist of authentication bypasses, fingerprinting techniques, downgrade attacks, denial-of-service (DoS) attacks, and so on. Most prominently, we discovered two critical vulnerabilities in OpenBSD. The first can be abused as a DoS against the AP, and the second can be exploited to perform a man-in-the-middle attack against WPA1 and WPA2 clients. We also discovered downgrade attacks against MediaTek and Broadcom that force usage of TKIP and RC4. Additionally, we discovered a targeted DoS against Windows 7. We also found other irregularities in Airohive, Apple, Cisco, Hostapd, and Windows 10.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Vanhoeft-WiFuzz-Detecting-And-Exploiting_Logical-Flaws-In-The-Wi-Fi-Cryptographic-Handshake.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Vanhoeft-WiFuzz-Detecting-And-Exploiting_Logical-Flaws-In-The-Wi-Fi-Cryptographic-Handshake-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Vanhoeft-WiFuzz-Detecting-And-Exploiting_Logical-Flaws-In-The-Wi-Fi-Cryptographic-Handshake.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Vanhoeft-WiFuzz-Detecting-And-Exploiting_Logical-Flaws-In-The-Wi-Fi-Cryptographic-Handshake-wp.pdf)
 
 ### Presented By
 
@@ -2322,7 +2322,7 @@ In this world of technology where communication through email plays an important
 
  In this talk, we shall provide a demo on how an attacker's machine learning model can train itself with the help of the information provided to it as a feed to execute a successful attack. After data collection, features extraction and selection is performed. Tools to perform complex data analysis are readily available. By applying regression algorithms to predict values or by using clustering algorithms to expose structure in data sets, the attacker can systematically plan for the next phase. After implementation of the algorithms, the attacker can train the machine to predict the output and check the working of the model. Thus, in the final phase the attacker instructs the machine to launch an attack by skillfully crafting emails with spoofed header fields. These emails are able to bypass the anti-spam filter as they highly resemble legit emails. We expect these methods to be used like "Target Accession as a Service" in 2017. We will also talk about mitigation steps that can be achieved with the help of machine learning.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Singh-Wire-Me-Through-Machine-Learning.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Singh-Wire-Me-Through-Machine-Learning.pdf)
 
 ### Presented By
 
@@ -2338,7 +2338,7 @@ You are performing a pentest. You just owned the first domain controller. That w
 
 We will present a new approach, allowing you to circumvent these limitations and to exploit this situation in order to deliver updates. Thus, you will be able to control the targeted network from the very WSUS server you own. By extension, this approach may serve as a basis for an air gap attack for disconnected networks. Our talk will describe vulnerable architectures to this approach and also make some in-context demonstration of the attack with new public tooling. Finally, as nothing is inescapable, we will also explain how you can protect your update architecture.
 
- [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Coltel-WSUSpendu-Use-WSUS-To-Hang-Its-Clients.pdf) [! ](https://blackhat.com/docs/us-17/wednesday/us-17-Coltel-WSUSpendu-Use-WSUS-To-Hang-Its-Clients-wp.pdf)
+ [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Coltel-WSUSpendu-Use-WSUS-To-Hang-Its-Clients.pdf) [![](https://blackhat.com/images/page-graphics-usa-17/icon_whitepaper.png) ](https://blackhat.com/docs/us-17/wednesday/us-17-Coltel-WSUSpendu-Use-WSUS-To-Hang-Its-Clients-wp.pdf)
 
 ### Presented By
 

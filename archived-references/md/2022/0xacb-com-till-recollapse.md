@@ -117,7 +117,7 @@ You can find more information on normalization if you are unfamiliar with it her
 
 Regex is usually reused from StackOverflow, Github, or other sources. Developers typically don’t test them properly and sometimes paste different regular expressions across backend endpoints. For instance, the aforementioned regex `"^\S+@\S+\.\S+$"` doesn’t work well for proper email validation:
 
-!
+![](https://0xacb.com/files/posts/recollapse/1.png)
 
 regex101.com
 
@@ -218,7 +218,7 @@ Ruby
 
 Testing the same regex and input pairs on different libraries without setting multiline regex flags, leads to different behaviors:
 
-!
+![](https://0xacb.com/files/posts/recollapse/2.png)
 
 Comparison table
 
@@ -250,15 +250,15 @@ We can’t redirect to an attacker-controlled URL at first glance. Trying a bunc
 
 - Typically vowels `ª` > `a`
 
-!
+![](https://0xacb.com/files/posts/recollapse/3.png)
 
-!
+![](https://0xacb.com/files/posts/recollapse/4.png)
 
-!
+![](https://0xacb.com/files/posts/recollapse/5.png)
 
 2) Fuzz positions with all possible bytes `%00` to `%ff`. Here you can see more examples:
 
-!
+![](https://0xacb.com/files/posts/recollapse/6.png)
 
 3) Analyze the results: sort by response codes or response length.
 

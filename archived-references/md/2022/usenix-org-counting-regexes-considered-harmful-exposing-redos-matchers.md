@@ -89,7 +89,7 @@ BibTeX
 
 ![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Turoňová Paper (Prepublication) PDF](https://www.usenix.org/system/files/sec22fall_turonova.pdf)
 
-!
+![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-unlocked.png)
 
 [View the slides](https://www.usenix.org/system/files/sec22_slides-turonova.pdf)
 

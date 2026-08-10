@@ -76,7 +76,7 @@ A Tool for Impersonating CAPTCHA Providers
 
  Python
 
- ! Fetching latest commit…
+ ![](https://web.archive.org/web/20180611034231im_/https://assets-cdn.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif) Fetching latest commit…
 
  Cannot retrieve the latest commit at this time.
 

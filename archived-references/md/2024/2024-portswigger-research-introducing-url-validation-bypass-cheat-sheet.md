@@ -81,7 +81,7 @@ Researcher
 
 -
 
-!URL validation bypasses are the root cause of numerous vulnerabilities including many instances of [SSRF](https://portswigger.net/web-security/ssrf), [CORS misconfiguration](https://portswigger.net/web-security/cors), and [open redirection](https://portswigger.net/web-security/dom-based/open-redirection). These work by using ambiguous URLs to trigger URL parsing discrepancies and bypass validation. However, many of these techniques are poorly documented and overlooked as a result.
+![](https://portswigger.net/cms/images/ba/2f/b01a-article-087ffac4-bf9f-4653-8947-b5e52b536f4e.png)URL validation bypasses are the root cause of numerous vulnerabilities including many instances of [SSRF](https://portswigger.net/web-security/ssrf), [CORS misconfiguration](https://portswigger.net/web-security/cors), and [open redirection](https://portswigger.net/web-security/dom-based/open-redirection). These work by using ambiguous URLs to trigger URL parsing discrepancies and bypass validation. However, many of these techniques are poorly documented and overlooked as a result.
 
  To address this, we wanted to create a cheat sheet that consolidates all known payloads, saving you the time and effort of searching and gathering information from across the Internet. Today, we're excited to introduce a new tool designed to solve this problem: [the URL Validation Bypass Cheat Sheet](https://portswigger.net/web-security/ssrf/url-validation-bypass-cheat-sheet).
 

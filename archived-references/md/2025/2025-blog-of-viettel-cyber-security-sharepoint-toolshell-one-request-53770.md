@@ -75,7 +75,7 @@ This exploit contain two vulnerabilities:
 
 Although it requires only one request, the exploit chain includes multiple bypasses chained together to reach code execution.
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2025/07/iceberg-1.jpg)
 
 ## Affected version
 
@@ -393,7 +393,7 @@ private void CreateWebPart(bool clearConnections)
 
 We can now craft arbitrary controls without any authentication. At this point, it feels like I’ve crossed the narrow river and get lost at sea.
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2025/07/lostatsea.jpg)
 
 There are thousands of classes in the `SafeControls` list, but the number of known CVEs from web controls is not even 1%. That’s a great effort from Microsoft to balance between functionality and security.
 
@@ -830,11 +830,11 @@ runat="server">
 
 We can create `CompressedDataTable` by create `SerializationInfo` that contain `XmlSchema` and `XmlDiffGram` I provided before.
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2025/07/image.png)
 
 Chaining things together, an **unauthenticated attacker** is able to achieve remote code execution (RCE) on the target SharePoint server **with only one request.**
 
-!
+![](https://blog.viettelcybersecurity.com/content/images/2025/07/yay.gif)
 
 *yayyyy*
 

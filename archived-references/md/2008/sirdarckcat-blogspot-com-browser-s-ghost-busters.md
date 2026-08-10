@@ -62,7 +62,7 @@ Due to the news that there are a few [ghost busters](http://hackademix.net/2008/
 
 I'm talking about Manuel Caballero's talk [A Resident in My Domain](http://technet.microsoft.com/en-us/security/cc405107.aspx#EHD):
 
-[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-aKneueABf93nG0OYv385yA-jG-55W_k-8Pxux9EgZCly7pHxlx8zV9r5a7YUEVYzhoLa4j58c7PYfSBkidl_xNEeqczDNMRseBS7mkHXeIkPNG96uHuT7hGeEOWp2wbhpMfI3g/s1600-h/ghosts-exist.JPG)
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-aKneueABf93nG0OYv385yA-jG-55W_k-8Pxux9EgZCly7pHxlx8zV9r5a7YUEVYzhoLa4j58c7PYfSBkidl_xNEeqczDNMRseBS7mkHXeIkPNG96uHuT7hGeEOWp2wbhpMfI3g/s320/ghosts-exist.JPG)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-aKneueABf93nG0OYv385yA-jG-55W_k-8Pxux9EgZCly7pHxlx8zV9r5a7YUEVYzhoLa4j58c7PYfSBkidl_xNEeqczDNMRseBS7mkHXeIkPNG96uHuT7hGeEOWp2wbhpMfI3g/s1600-h/ghosts-exist.JPG)
 From [one of the pictures](http://content.zdnet.com/2347-12691_22-200400-200433.html?seq=32) it tells us that there's some relation to iframes.. and also from [the description of the talk](http://technet.microsoft.com/en-us/security/cc405107.aspx#EHD) it tells us that it is able to capture non-domain-privileged DOM attributes and methods ( if we could steal cookies, then the description would be a lot more apocalyptic ).. and well, we also know it is cross-domain..
 
 - So, the first "fact" is that using the iframes on any website, you can capture top.location's and keystrokes (this is well known).
@@ -115,7 +115,7 @@ Anyway, none of the mentioned method work for windows gotten from window.opener 
 
 What do you say? is this the [proton pack](http://en.wikipedia.org/wiki/Proton_pack) we were looking for?
 
-[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwCk7DgztxVOjSh3B_8lGRAbTo6UViGwbr8HB_NvRQxwMo6ccJT1ILyZNTky91qIdUUCT3eRuwhj3GxqKskAB8MKCZkf-gAfOV9atla8sfD1MjZKeILkrpVEZrKIN_XG0QcN7vNQ/s1600-h/proton-pack.JPG)
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwCk7DgztxVOjSh3B_8lGRAbTo6UViGwbr8HB_NvRQxwMo6ccJT1ILyZNTky91qIdUUCT3eRuwhj3GxqKskAB8MKCZkf-gAfOV9atla8sfD1MjZKeILkrpVEZrKIN_XG0QcN7vNQ/s320/proton-pack.JPG)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwCk7DgztxVOjSh3B_8lGRAbTo6UViGwbr8HB_NvRQxwMo6ccJT1ILyZNTky91qIdUUCT3eRuwhj3GxqKskAB8MKCZkf-gAfOV9atla8sfD1MjZKeILkrpVEZrKIN_XG0QcN7vNQ/s1600-h/proton-pack.JPG)
 For obvious reasons I wont disclose a IHE (Interactive Hacking Environment) as Caballero apparently has one, but I think this may be the bug, or some similar bug to the one he presented.
 
 Greetings!!

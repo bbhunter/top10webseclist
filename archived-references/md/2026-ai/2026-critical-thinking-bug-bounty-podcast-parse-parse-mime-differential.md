@@ -134,9 +134,9 @@ According to [the research from BlackFan](https://github.com/BlackFan/content-ty
 - [Library `email.message` method `get_content_type`](https://docs.python.org/3/library/email.message.html#email.message.EmailMessage.get_content_type) parsed it as `application/json`
 - Browser (Chromium-based and Firefox) parsed it as `text/html`
 
-!
+![](https://lab.ctbb.show/research/articles/ArticleNo0014/image1.png)
 
-!
+![](https://lab.ctbb.show/research/articles/ArticleNo0014/image2.png)
 
 But why can a single comma character cause that parsing difference?
 

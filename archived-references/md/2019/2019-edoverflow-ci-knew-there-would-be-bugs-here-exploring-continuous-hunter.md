@@ -117,7 +117,7 @@ javascript:window.location="https://travis-ci.org"+window.location.pathname;
 
 ```
 
-!
+![](https://user-images.githubusercontent.com/18099289/56799313-fd51a180-6818-11e9-9518-4b06e81de2e9.png)
 
 *The bookmarklet would redirect from the GitHub page to Travis CI.*
 
@@ -196,7 +196,7 @@ Of course one should not restrict themselves solely to variables set using the `
 
 We encourage readers to create a list of all variables with the `[secure]` keyword and then search using those variable names in all projects. This will help you find unsecured instances of sensitive data using common variable naming conventions. Karim Rahal gathered `[secure]` variables from 5,302,677 build logs, the 50 most common of which can be seen below.
 
-!
+![](https://user-images.githubusercontent.com/18099289/56803383-c4b6c580-6822-11e9-9807-6ee57563024c.png)
 
 *Full list can be found here: https://gist.githubusercontent.com/EdOverflow/8bd2faad513626c413b8fc6e9d955669/raw/06a0ef0fd83920d513c65767aae258ecf8382bdf/gistfile1.txt*
 

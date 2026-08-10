@@ -77,7 +77,7 @@ The identified issues used during this research were inspired by the whitepaper 
 
 I originally reported a number of deserialisation issues within the resource files (`.resx` and `.resources`) to Microsoft in January 2018. In July 2018 [6], Microsoft issued multiple patches (CVE-2018-8172, CVE-2018-8172, and CVE-2018-8300) for a number of products such as SharePoint and Visual Studio that were previously handling resource files unsafely [7].
 
-!
+![](https://www.nccgroup.trust/globalassets/newsroom/uk/blog/images/2018/08/video-visualstudio.gif)
 
 Since the July 2018 patch, `.resx` and `.resources` files that have the Mark of the Web (MOTW) [8] cannot be opened directly in Visual Studio. The `resgen.exe` tool [9] also shows an error when MOTW is in place while the `winres.exe` tool [10] shows a warning message at all times. It should be noted that resource files that are extracted from compressed files or downloaded by browsers other than IE or Edge might not have the MOTW and should be handled with care.
 

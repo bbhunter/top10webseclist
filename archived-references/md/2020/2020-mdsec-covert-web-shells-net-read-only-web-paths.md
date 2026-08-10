@@ -167,7 +167,7 @@ If it is absolutely vital to not create any files on the filesystem, the first s
 
 This post was written by [Soroush Dalili](https://twitter.com/irsdl).
 
- !
+ ![](https://secure.gravatar.com/avatar/9cb7b62409a4b5ef00769dca4ba852fc49229c9729d600fc2637daf77068c31c?s=96&d=wp_user_avatar&r=g)
 
  written by
 

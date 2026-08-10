@@ -242,7 +242,7 @@ hire a non-infosec person to upload pictures everywhere
 take immediate profit instead of endless debugging
 Automation Outsourcing](https://image.slidesharecdn.com/zeronightsx-210825120020/85/HotPics-2021-15-320.jpg)
 
-!
+![](https://image.slidesharecdn.com/zeronightsx-210825120020/85/HotPics-2021-16-320.jpg)
 
 ![BB Story 1: AirBNB
 ...

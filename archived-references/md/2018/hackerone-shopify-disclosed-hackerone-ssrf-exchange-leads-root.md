@@ -68,7 +68,7 @@ Report
 
 **Summary by Shopify**
 
-[!](https://hackerone.com/shopify)
+[![](https://profile-photos.hackerone-user-content.com/variants/fjjiC5585s8WoDGHv2M5okbJ/72249f83db42955adfcb43c5cad84162ec49002aa21a79c3606f682c8e48f4e6)](https://hackerone.com/shopify)
 
 Shopify infrastructure is isolated into subsets of infrastructure. [@0xacb](https://hackerone.com/0xacb) reported it was possible to gain root access to any container in one particular subset by exploiting a server side request forgery bug in the screenshotting functionality of Shopify Exchange. Within an hour of receiving the report, we disabled the vulnerable service, began auditing applications in all subsets and remediating across all our infrastructure. The vulnerable subset did not include Shopify core.
 
@@ -229,7 +229,7 @@ April 23, 2018, 12:21am UTC
 
 Thanks for your report [@0xacb](https://hackerone.com/0xacb), our engineering team is investigating and we will let you know when we have an update.
 
-[!](https://hackerone.com/shopify)
+[![](https://profile-photos.hackerone-user-content.com/variants/fjjiC5585s8WoDGHv2M5okbJ/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/shopify)
 
 [Shopify](https://hackerone.com/shopify)
 
@@ -313,7 +313,7 @@ May 23, 2018, 8:28pm UTC
 
 Sounds great, [@shopify-peteryaworski](https://hackerone.com/shopify-peteryaworski)! It was really a pleasure to work with you :)
 
-[!](https://hackerone.com/shopify)
+[![](https://profile-photos.hackerone-user-content.com/variants/fjjiC5585s8WoDGHv2M5okbJ/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/shopify)
 
 [Shopify](https://hackerone.com/shopify)
 
@@ -349,7 +349,7 @@ This report has been disclosed.
 
 May 23, 2018, 9:09pm UTC
 
-[!](https://hackerone.com/shopify)
+[![](https://profile-photos.hackerone-user-content.com/variants/fjjiC5585s8WoDGHv2M5okbJ/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/shopify)
 
 [Shopify](https://hackerone.com/shopify)
 

@@ -173,7 +173,7 @@ Going to `https://public.icrowd.apple.com/` I could see the containers being use
 
 It then made a request to fetch the current version of the iCrowd+ application, to show the version on the start page:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/icrowd-button.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/icrowd-button.png)](https://labsadmin.detectify.com/app/uploads/2021/09/icrowd-button.png)
 
 I could also see in the requests made by the websites that it was querying the records of the database, and that the record type was called `Updates`:
 
@@ -209,19 +209,19 @@ https://cdn.apple-cloudkit.com/cloudkit-catalog/?container=iCloud.com.apple.phon
 
 Looking at the records of the Public scope, I could see the data the website was fetching to use the `version`-data for the button:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/cloudkit-icrowd.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/cloudkit-icrowd.png)](https://labsadmin.detectify.com/app/uploads/2021/09/cloudkit-icrowd.png)
 
 I then tried to add my own record to the same zone:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/adding-record.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/adding-record.png)](https://labsadmin.detectify.com/app/uploads/2021/09/adding-record.png)
 
 Which gave me a response:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/record-added.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/record-added.png)](https://labsadmin.detectify.com/app/uploads/2021/09/record-added.png)
 
 When I now accessed the same website again at: `https://public.icrowd.apple.com/`, this is what I saw:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/icrowd-modified.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/icrowd-modified.png)](https://labsadmin.detectify.com/app/uploads/2021/09/icrowd-modified.png)
 
 I then realized that I could modify the data of the website, made a report to Apple on the 17th of February and deleted my record quickly again.
 
@@ -247,9 +247,9 @@ X-MMe-Client-Info: <iPad5,4> <iPhone OS;14.2;18B92> <com.apple.newscore/6.1 (com
 
 Using the CloudKit API through `gateway.icloud.com` was tricky though. All communication was made through protobuf. There is an awesome project called [InflatableDonkey](https://github.com/horrorho/InflatableDonkey) that tries to reverse engineer the iCloud backup process from iOS 9. Since that project was only focusing on fetching data, a lot of methods in the Protobuf was not fully reversed, so I had to bruteforce a bit to try to find the methods needed also for modifications, and since Protobuf is binary, I didn’t really need the proper names, since each property in the protobuf is enumerable due to how the format is designed:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/inflatable-donkey.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/inflatable-donkey.png)](https://labsadmin.detectify.com/app/uploads/2021/09/inflatable-donkey.png)
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/cloudkit-proto.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/cloudkit-proto.png)](https://labsadmin.detectify.com/app/uploads/2021/09/cloudkit-proto.png)
 
 I spent way too much time on this, almost two days straight, but as soon as I found methods I could use, modification of records in the Public scope still needed authorization for my user, and I was never able to figure out how to generate a `X-CloudKit-AuthToken` for the proper scope, since I was mainly interested in the Private scope.
 
@@ -421,7 +421,7 @@ The response said:
 
 I reloaded the channel in Apple News:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/apple-news-error.jpg)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/apple-news-error.jpg)](https://labsadmin.detectify.com/app/uploads/2021/09/apple-news-error.jpg)
 
 **This confirmed to me that I could delete any channel or article**, including stock entries, in the container `com.apple.news.public` being used for the Stock and Apple News iOS-apps. This worked due to the fact that I could make authenticated calls to CloudKit from the API being used for the Notes-app on `www.icloud.com` and due to a misconfiguration of the records added in the `com.apple.news.public`-container.
 
@@ -451,7 +451,7 @@ As mentioned above, there is a Shared scope in a CloudKit container. When you de
 
 **However, Apple Shortcuts links works a bit differently.** When you share a shortcut, a record with the record type `SharedShortcut` will be created in the Public scope. The Record name being used will then be formed as a GUID: `EA15DF64-62FD-4733-A115-452A6D1D6AAF`, the record name will then be formatted to a lowercase string without hyphens and end up as: `https://www.icloud.com/shortcuts/ea15df6462fd4733a115452a6d1d6aaf` which will be the URL you would share publicly.
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/icloud-shortcuts.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/icloud-shortcuts.png)](https://labsadmin.detectify.com/app/uploads/2021/09/icloud-shortcuts.png)
 
 Accessing this URL would then make a call to: `https://www.icloud.com/shortcuts/api/records/ea15df6462fd4733a115452a6d1d6aaf` which would return the data from CloudKit:
 
@@ -485,7 +485,7 @@ Accessing this URL would then make a call to: `https://www.icloud.com/shortcuts/
 
 This made me excited since I could already see a few attack scenarios. If I could modify other users’ shortcuts, that would be really bad. Also the same kind of issue as on Apple News, being able to delete someone else’s shortcut, would also not be great. The Public scope also contained the Shortcuts Gallery that was showing up in the app itself:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/shortcuts-gallery.jpg)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/shortcuts-gallery.jpg)](https://labsadmin.detectify.com/app/uploads/2021/09/shortcuts-gallery.jpg)
 
 So if that content could be modified that would be quite critical.
 
@@ -565,7 +565,7 @@ This gave me:
 
 Perfect! This was now my way to talk with the Shortcuts database, the CloudKit connection from the Developer portal for CloudKit allowed me to properly authenticate to the `com.apple.shortcut`-container. I could now start checking the permissions for the public records. The simplest way to do this was to add a Burp replace rule to replace my own container in any request data, `iCloud.com.mycontainer.test`, with the Shortcuts container `com.apple.shortcuts`:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/burp-replace.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/burp-replace.png)](https://labsadmin.detectify.com/app/uploads/2021/09/burp-replace.png)
 
 When writing stories of how bugs were found, it’s extremely hard to communicate how much time things take, how many attempts were needed to figure things out. And often, the explanation on what actually worked seems really obvious when presented afterwards.
 
@@ -597,7 +597,7 @@ Zones were the last thing I tested. As I mentioned earlier, each scope has zones
 
 However, if I made the call to `com.apple.shortcuts` to list all zones, I could see that they had indeed more zones in the Public scope than just the default one:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/shortcuts-zones.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/shortcuts-zones.png)](https://labsadmin.detectify.com/app/uploads/2021/09/shortcuts-zones.png)
 
 I could also add new zones:
 
@@ -643,7 +643,7 @@ but I could not see anything bad with it. I could delete my own zones, but that 
 
 The documentation for zones was limited:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/cloudkit-docs.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/cloudkit-docs.png)](https://labsadmin.detectify.com/app/uploads/2021/09/cloudkit-docs.png)
 
 There were no other calls than `create` or `delete`. I could create a zone, but was there really any impact to this? I wasn’t sure.
 
@@ -768,23 +768,23 @@ Good, it wasn’t really deleted. I realized that I’ve tested it all and I sta
 
 **Suddenly one my shared shortcuts gave a 404:**
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/shortcuts-404.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/shortcuts-404.png)](https://labsadmin.detectify.com/app/uploads/2021/09/shortcuts-404.png)
 
 But I just shared it? I quit the Shortcuts app and started it again:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/shortcuts-gallery-broken.jpg)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/shortcuts-gallery-broken.jpg)](https://labsadmin.detectify.com/app/uploads/2021/09/shortcuts-gallery-broken.jpg)
 
 Shit.
 
 I went to one of the websites sharing a bunch of shortcuts and used my phone to test one:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/shortcuts-404-2.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/shortcuts-404-2.png)](https://labsadmin.detectify.com/app/uploads/2021/09/shortcuts-404-2.png)
 
 **All of them were gone.** I know realized that the deletion ***did*** somehow work, but that the `_defaultZone` never disappeared. When I tried sharing a new shortcut it also did not work, at least not to begin with, most likely due to the record types also being deleted.
 
 At `23 Mar 2021 20:44:00 GMT` I wrote the following email to Apple Security:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/initial-email.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/initial-email.png)](https://labsadmin.detectify.com/app/uploads/2021/09/initial-email.png)
 
 I explained the situation and confirmed I understood the severity. I also explained the steps I took to avoid causing any service interruptions, since I knew that was against the Apple Security Bounty policy. I explained that creation of zones was indeed possible, but that I did not know if that confirmed that I could also delete zones.
 
@@ -794,7 +794,7 @@ I decided to use the case of “I am able to create a zone” as an indicator th
 
 Apart from `com.apple.shortcuts`, the list consisted of 30 more containers with the same issue. I still wasn’t sure if creating a new zone in the public scope did actually prove the ability to delete the default zone, but that’s the closest I got to verifying the issue. Also, the other containers might not have been using the public scope at all and I never confirmed the bug on the other scopes.
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/additional-containers.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/additional-containers.png)](https://labsadmin.detectify.com/app/uploads/2021/09/additional-containers.png)
 
 Apple’s first response came early the morning after:
 
@@ -804,9 +804,9 @@ Apple’s first response came early the morning after:
 
 I acknowledged the email and started to see on Twitter that this was in fact affecting a lot of people:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/affected1.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/affected1.png)](https://labsadmin.detectify.com/app/uploads/2021/09/affected1.png)
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/affected4.png) [!](https://labsadmin.detectify.com/app/uploads/2021/09/affected3.png) [!](https://labsadmin.detectify.com/app/uploads/2021/09/affected5.png) [!](https://labsadmin.detectify.com/app/uploads/2021/09/affected2.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/affected4.png)](https://labsadmin.detectify.com/app/uploads/2021/09/affected4.png) [![](https://labsadmin.detectify.com/app/uploads/2021/09/affected3.png)](https://labsadmin.detectify.com/app/uploads/2021/09/affected3.png) [![](https://labsadmin.detectify.com/app/uploads/2021/09/affected5.png)](https://labsadmin.detectify.com/app/uploads/2021/09/affected5.png) [![](https://labsadmin.detectify.com/app/uploads/2021/09/affected2.png)](https://labsadmin.detectify.com/app/uploads/2021/09/affected2.png)
 
 There were also some suspicions that this was indeed a move by Apple due to a [podcast discussion about using the API to fetch Shortcuts data](https://twitter.com/mralexhay/status/1374716988396863489).
 
@@ -814,27 +814,27 @@ A [podcast called “Connected” had a discussion on the issue and tried to exp
 
 One individual was actually 100% correct identifying the minute of my accidental deletion call:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/spot-on.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/spot-on.png)](https://labsadmin.detectify.com/app/uploads/2021/09/spot-on.png)
 
 ### Apple’s response
 
 Apple was quite silent after the first request to me to stop testing. They did go public and explain to people that the issue was going to be solved:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/press-statement.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/press-statement.png)](https://labsadmin.detectify.com/app/uploads/2021/09/press-statement.png)
 
 It took a few days for all data to recover. One other individual shared my assumption on why that was:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/spot-on2.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/spot-on2.png)](https://labsadmin.detectify.com/app/uploads/2021/09/spot-on2.png)
 
 On April 1st Apple gave the following reply:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/apple-response2.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/apple-response2.png)](https://labsadmin.detectify.com/app/uploads/2021/09/apple-response2.png)
 
 During the hold out period, I followed up their email again clarifying the steps I took to prevent any service interruption, and tried to explain how limited I was to confirm if the deletion call had worked or not. I also asked them if the creation of a zone was a good indicator of the bug.
 
 I got back another response clarifying that creation of a zone was indeed a valid non-destructive way to confirm invalid security controls:
 
-[!](https://labsadmin.detectify.com/app/uploads/2021/09/apple-response3.png)
+[![](https://labsadmin.detectify.com/app/uploads/2021/09/apple-response3.png)](https://labsadmin.detectify.com/app/uploads/2021/09/apple-response3.png)
 
 I then confirmed that I could not do any of the zone modifications anymore. CloudKit Developer portal was later moved to use the API on `api.apple-cloudkit.com` instead.
 

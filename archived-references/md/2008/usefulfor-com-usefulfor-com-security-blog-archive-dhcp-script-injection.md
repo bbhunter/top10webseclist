@@ -110,7 +110,7 @@ Device providing an administrative web interface with a DHCP management function
 
 4. The malicious script hosted in the attacker’s web server is used to perform a CSRF attack against the affected administrative interface. This script causes the administrator’s browser to make a POST request to the command execution functionality (exec.php) and executes the desired command.
 
-[!](http://usefulfor.com/security/files/2008/08/dhcp-diagram.jpg)
+[![](http://usefulfor.com/security/files/2008/08/dhcp-diagram.jpg)](http://usefulfor.com/security/files/2008/08/dhcp-diagram.jpg)
 
 **Tool:** DHCP Script Injection [[1]](http://www.mwrinfosecurity.com/publications/dhcpattack.tar)
  ****

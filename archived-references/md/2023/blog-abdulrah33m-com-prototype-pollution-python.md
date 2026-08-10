@@ -72,7 +72,7 @@ Prototype Pollution is one of the vulnerabilities that are language-specific as 
 
 As a Python fanboy (yes, I admit it), I believe that you can build anything in Python, even vulnerabilities (as if Prototype Pollution in JavaScript were not complicated enough!).
 
-!
+![](https://blog.abdulrah33m.com/wp-content/uploads/2022/12/736kcx.jpg)
 
 ## > No Prototypes, No Issue
 
@@ -105,7 +105,7 @@ There are also other special attributes in every object in Python, such as `__cl
 
 In Python, we don’t have Prototypes but we have **special attributes**.
 
-!
+![](https://blog.abdulrah33m.com/wp-content/uploads/2022/12/74qgjh.jpg)
 
 In Python it’s possible to update objects of mutable types to define or overwrite their attributes and methods at runtime. Let’s see it in action.
 

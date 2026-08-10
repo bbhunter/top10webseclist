@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 ha.ckers.org web application security lab - Archive » Paper on Hacking Intranets Using Websites (Not Web Browsers)
 
-[!](http://www.webappsec.org/)
+[![](http://ha.ckers.org/images/nto_banner.jpg)](http://www.webappsec.org/)
  Paid Advertising
  [![web application security lab](http://ha.ckers.org/images/84844372/rsnake/hackers.jpg)](http://ha.ckers.org/)
 

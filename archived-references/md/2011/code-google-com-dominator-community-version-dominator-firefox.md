@@ -80,7 +80,7 @@ Before downloading anything be sure to read the [instructions](http://code.googl
 
 The [DOMinator Project](http://blog.mindedsecurity.com/2011/05/dominator-project.html) is sponsored by:
 
-[!](http://www.mindedsecurity.com)
+[![](http://www.mindedsecurity.com/images/logo.png)](http://www.mindedsecurity.com)
 
 # Project Information
 

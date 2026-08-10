@@ -92,35 +92,35 @@ Reference: [https://aws.amazon.com/blogs/mobile/building-fine-grained-authorizat
 
 During a recent pentest, we stumbled upon a login page. It had no other authentication related functionality exposed such as forgot password or sign up page.
 
-!On further investigation, we found that the application was using AWS Cognito for authentication and authorization using the JavaScript SDK. JavaScript SDKs on the client exposed data such as App Client ID, User Pool ID, Identity Pool ID, and region information, through a JavaScript config file. JavaScript SDK for AWS Cognito requires this information to access the Cognito User Pool and verify the users.
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/login.png)On further investigation, we found that the application was using AWS Cognito for authentication and authorization using the JavaScript SDK. JavaScript SDKs on the client exposed data such as App Client ID, User Pool ID, Identity Pool ID, and region information, through a JavaScript config file. JavaScript SDK for AWS Cognito requires this information to access the Cognito User Pool and verify the users.
 
 Amazon Cognito has authenticated and unauthenticated mode to generate AWS temporary credentials for users. Unauthenticated access rights can be obtained by anyone using a specific API call. So we tried to gain access to AWS credentials by using unauthenticated identities, but the access to unauthenticated identities was disabled.
 
-!An interesting case study in the area of exposing AWS services to unauthenticated identities is listed here: [https://andresriancho.com/wp-content/uploads/2019/06/whitepaper-internet-scale-analysis-of-aws-cognito-security.pdf](https://andresriancho.com/wp-content/uploads/2019/06/whitepaper-internet-scale-analysis-of-aws-cognito-security.pdf).
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/Unautidentity-GetID-1.png)An interesting case study in the area of exposing AWS services to unauthenticated identities is listed here: [https://andresriancho.com/wp-content/uploads/2019/06/whitepaper-internet-scale-analysis-of-aws-cognito-security.pdf](https://andresriancho.com/wp-content/uploads/2019/06/whitepaper-internet-scale-analysis-of-aws-cognito-security.pdf).
 
 Moving forward, we focused on identifying the features available to us. We identified that the application exposed some functionalities unintentionally via AWS Cognito misconfiguration. Using the AppClientId, we created a user in Amazon Cognito user pool. The confirmation email was sent to the specified email along with the confirmation code.
 
-!We determined that the user account can be confirmed from the token received on the registered email by using the ConfirmSignUp API.
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/3.-Signup-1.png)We determined that the user account can be confirmed from the token received on the registered email by using the ConfirmSignUp API.
 
-!Now, when we logged into the application with the newly registered account, the app responded with an error, “user is not part of any groups". So, the app allowed access based on the group privileges granted within the application.
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/4.Sign-up-confirmation.png)Now, when we logged into the application with the newly registered account, the app responded with an error, “user is not part of any groups". So, the app allowed access based on the group privileges granted within the application.
 
 We realised that, the application essentially validated a newly created user and returned access tokens but did not allow the user to access any page as the user was not part of any groups that had access to the application.
 
-!Now that we had authenticated access and ID token. These values could be used to generate temporary AWS credentials for authenticated identities.
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/login-error-1.png)Now that we had authenticated access and ID token. These values could be used to generate temporary AWS credentials for authenticated identities.
 
-!Now we can use AWS Command Line Interface(CLI) to interact with the AWS services:
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/GetCredentialsForIdentity-1.png)Now we can use AWS Command Line Interface(CLI) to interact with the AWS services:
 
-!Using the “aws sts get-caller-identity” command, it was identified that the token was working fine.
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/CLI.png)Using the “aws sts get-caller-identity” command, it was identified that the token was working fine.
 
-!By leveraging our [Cloud service enumeration scripts](https://notsosecure.com/cloud-services-enumeration-aws-azure-and-gcp) it was observed that the AWS token had full permissions for the AWS Lambda functions. This allowed us to explore the AWS Lambda configuration of the client. We began with viewing the list of Lambda functions:
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/get-caller-identity-2.png)By leveraging our [Cloud service enumeration scripts](https://notsosecure.com/cloud-services-enumeration-aws-azure-and-gcp) it was observed that the AWS token had full permissions for the AWS Lambda functions. This allowed us to explore the AWS Lambda configuration of the client. We began with viewing the list of Lambda functions:
 
 ##### aws lambda list-functions
 
-!We discovered that one of the Lambda function (RotateAccessKeys-CIS) had overly permissive IAM policies.
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/list-functions-2.png)We discovered that one of the Lambda function (RotateAccessKeys-CIS) had overly permissive IAM policies.
 
 ##### aws iam list-attached-role-policies --role-name IAM-CIS
 
-!We decided to modify the Lambda function code (RotateAccessKeys-CIS) such that it worked as required but additionally executed a command that allowed reading of AWS credentials from Environment variables.
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/IAM-CIS.png)We decided to modify the Lambda function code (RotateAccessKeys-CIS) such that it worked as required but additionally executed a command that allowed reading of AWS credentials from Environment variables.
 
 Let’s see how we modified the said function.
 
@@ -128,19 +128,19 @@ We downloaded the Lambda function code from the code location as highlighted
 
 ##### aws lambda get-function --function-name RotateAccessKeys-CIS --query 'Code.Location'
 
-!The ‘lambda_handler’ function in the downloaded code was modified to print environment variables.
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/code.location.png)The ‘lambda_handler’ function in the downloaded code was modified to print environment variables.
 
-!Further, we created a ZIP file that contained the modified code so that it now executed the modified Lambda function once the package was uploaded and invoked.
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/lambda-code.png)Further, we created a ZIP file that contained the modified code so that it now executed the modified Lambda function once the package was uploaded and invoked.
 
-!The Lambda function ‘RotateAccessKeys-CIS’ was now updated.
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/zip-code.png)The Lambda function ‘RotateAccessKeys-CIS’ was now updated.
 
 ##### aws lambda update-function-code --function-name RotateAccessKeys-CIS --zip-file fileb:///root//lambda_function.zip
 
-!Once the Lambda function code was updated as intended, we invoked it using the below mentioned command. This command invoked the function and printed the Log on the screen that contained AWS temporary credentials.
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/upload-lambda-function-1.png)Once the Lambda function code was updated as intended, we invoked it using the below mentioned command. This command invoked the function and printed the Log on the screen that contained AWS temporary credentials.
 
 ##### aws lambda invoke --function-name RotateAccessKeys-CIS out --log-type Tail --query 'LogResult' --output text | base64 -d
 
-!We repeated the same steps and identified a set of temporary credentials which were highly permissive with full IAM Access.
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/invoke-lambda-1.png)We repeated the same steps and identified a set of temporary credentials which were highly permissive with full IAM Access.
 
 Next, we configured our AWS CLI using the new AWS credentials to create a new user ‘nirahua’ and attached the AWS managed policy named AdministratorAccess to the user using the following commands.
 
@@ -150,9 +150,9 @@ Next, we configured our AWS CLI using the new AWS credentials to create a new us
 
 ##### aws iam attach-user-policy --policy-arn arn:aws:iam::aws:policy/AdministratorAccess --user-name nirahua
 
-!And as you can see, we successfully logged in as an administrator via AWS console with the newly created user.
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/create-user-1.png)And as you can see, we successfully logged in as an administrator via AWS console with the newly created user.
 
-!
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2020/02/aws-admin-login.png)
 
 ##### Recommendations
 

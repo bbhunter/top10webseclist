@@ -65,7 +65,7 @@ _The source's own words. An English translation of this document is archived bes
 
 jjencode - Encode any JavaScript program using only symbols
 
-# jjencode demo !!
+# jjencode demo ![](https://b.st-hatena.com/images/entry-button/button-only.gif)![](https://utf-8.jp/favicon/twitter-icon.png)
 
 ## Be aware
 

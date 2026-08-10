@@ -64,16 +64,16 @@ Same Origin Policy (SOP) dictates cross domain calls and allows establishment of
 
  Here is a script which will do CSRF on cross domain.
 
- [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz3TN8yuFde7RQrjYSkrvujyFDON9HRWEr0H2brbSBFR3Kz_uT6P8nVgiZehRBITlk6ju8811_v267CHxjHCKPFa8raU4F_b6hPoTBPZaaDnTDiDF2RaSO7aXUXNQHoUL63jFe/s1600/fig0-code.jpg)
+ [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz3TN8yuFde7RQrjYSkrvujyFDON9HRWEr0H2brbSBFR3Kz_uT6P8nVgiZehRBITlk6ju8811_v267CHxjHCKPFa8raU4F_b6hPoTBPZaaDnTDiDF2RaSO7aXUXNQHoUL63jFe/s400/fig0-code.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz3TN8yuFde7RQrjYSkrvujyFDON9HRWEr0H2brbSBFR3Kz_uT6P8nVgiZehRBITlk6ju8811_v267CHxjHCKPFa8raU4F_b6hPoTBPZaaDnTDiDF2RaSO7aXUXNQHoUL63jFe/s1600/fig0-code.jpg)
 
  Here, we have *“Content-Type”* as *“text-plain” *and no new extra header added so CORS will not initiate OPTIONS to check rules on the server side and directly make POST request. At the same time we have kept credential to “true” so cookie will replay.
 
  On the wire we can see following request.
 
- [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyxysB9VCyhxLHwR4dReCqmns6Un8h6JeNmJHmq3y2ilehJbtez-A76x3nb-DG7QCV-7XcOpds5k1YDeVEajgetOj8FO6ij5bAn6FAA6TW3DR1M5eoI0Vq0kcqQ20RJZ61XMnC/s1600/fig1-request.jpg)
+ [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyxysB9VCyhxLHwR4dReCqmns6Un8h6JeNmJHmq3y2ilehJbtez-A76x3nb-DG7QCV-7XcOpds5k1YDeVEajgetOj8FO6ij5bAn6FAA6TW3DR1M5eoI0Vq0kcqQ20RJZ61XMnC/s400/fig1-request.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyxysB9VCyhxLHwR4dReCqmns6Un8h6JeNmJHmq3y2ilehJbtez-A76x3nb-DG7QCV-7XcOpds5k1YDeVEajgetOj8FO6ij5bAn6FAA6TW3DR1M5eoI0Vq0kcqQ20RJZ61XMnC/s1600/fig1-request.jpg)
 
  As you can see cookie is replayed and JSON POST has been initiated. We get following response back from application.
 
- [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBwpFSGLfjQ6JXTHrEg4r_OvNrsEKPtxpU-8Rg2o00MVMmB5Yt1J4rw_zncRAZih7jxxqa7UlRKmMB9Y7MdNQbZOh-NU2OqcLmM6bawAo6dMKDkzx7TG6nHLI1YIj-_UNRS5wg/s1600/fig2-response.jpg)
+ [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBwpFSGLfjQ6JXTHrEg4r_OvNrsEKPtxpU-8Rg2o00MVMmB5Yt1J4rw_zncRAZih7jxxqa7UlRKmMB9Y7MdNQbZOh-NU2OqcLmM6bawAo6dMKDkzx7TG6nHLI1YIj-_UNRS5wg/s400/fig2-response.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBwpFSGLfjQ6JXTHrEg4r_OvNrsEKPtxpU-8Rg2o00MVMmB5Yt1J4rw_zncRAZih7jxxqa7UlRKmMB9Y7MdNQbZOh-NU2OqcLmM6bawAo6dMKDkzx7TG6nHLI1YIj-_UNRS5wg/s1600/fig2-response.jpg)
 
  Application processed the request and sent JSON back. It is clear case of CSRF. This can be applied to other streams as well.

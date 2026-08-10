@@ -68,7 +68,7 @@ Report
 
 **Summary by ngalog**
 
-[!](https://hackerone.com/ngalog)
+[![](https://profile-photos.hackerone-user-content.com/variants/000/074/607/68068f139c99d98e3e8baf0a51f219c29ade1769_original.png/b8e19a7691128fca51630d7f5b14644b91b3b45324f6fd488e36244d744fe35b)](https://hackerone.com/ngalog)
 
 Another way to exploit host header poisoning
 
@@ -222,7 +222,7 @@ February 22, 2018, 12:39am UTC
 
 Thanks mate :-)
 
-[!](https://hackerone.com/x)
+[![](https://profile-photos.hackerone-user-content.com/variants/ikx4ept298unt534kpz4am2bd4zs/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/x)
 
 [X / xAI](https://hackerone.com/x)
 

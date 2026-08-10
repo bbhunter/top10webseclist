@@ -87,7 +87,7 @@ by[Madeleine Streets](https://www.informationweek.com/author/madeleine-streets)
 
 by[Madeleine Streets](https://www.informationweek.com/author/madeleine-streets)
 
-[!](https://www.informationweek.com/responsible-ai/the-week-of-july-20-24-what-happened-what-matters-what-s-next)[Responsible AI](https://www.informationweek.com/machine-learning-ai/responsible-ai)
+[![](https://eu-images.contentstack.com/v3/assets/blt69509c9116440be8/bltf691e1dea1c1fed8/6a63a7671da8dc7c35259a39/GettyImages-1755800777.jpg?width=1400&auto=webp&quality=80&disable=upscale)](https://www.informationweek.com/responsible-ai/the-week-of-july-20-24-what-happened-what-matters-what-s-next)[Responsible AI](https://www.informationweek.com/machine-learning-ai/responsible-ai)
 
 [The Week of July 20–24: What Happened, What Matters, What's Next](https://www.informationweek.com/responsible-ai/the-week-of-july-20-24-what-happened-what-matters-what-s-next)[The Week of July 20–24: What Happened, What Matters, What's Next](https://www.informationweek.com/responsible-ai/the-week-of-july-20-24-what-happened-what-matters-what-s-next)
 

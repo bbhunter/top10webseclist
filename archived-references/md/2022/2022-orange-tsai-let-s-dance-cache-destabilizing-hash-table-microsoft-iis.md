@@ -240,7 +240,7 @@ To make this bug more practical, we proposed several ways to win the lottery, su
 
 We have also proved this attack works naturally on Microsoft Exchange Server. By leveraging the default activated `Exchange Active Monitoring` service, we can enter `HealthMailbox`‘s mailbox without passwords! This authentication-less account hijacking is useful for further exploitations such as phishing or chaining another post-auth RCE together!
 
-!
+![](http://blog.orange.tw/posts/2022-08-lets-dance-in-the-cache-destabilizing-hash-table-on-microsoft-iis/e094d7f42a2fd662-02.png)
 
 # Timeline
 

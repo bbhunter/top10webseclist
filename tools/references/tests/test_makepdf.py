@@ -54,5 +54,37 @@ class TestLinkTargets(unittest.TestCase):
         self.assertIn("javascript:alert(document.domain)", body)
 
 
+class TestOverLongHeadings(unittest.TestCase):
+    """A heading the length of an article is printed as a paragraph. The cap has
+    to be applied in BOTH places that ask the question, or the converter spins:
+    `_is_block_start` kept matching the line as a heading while the main loop
+    refused it, so nothing consumed the line and `index` never advanced."""
+
+    LONG = "## " + ("a very long run of words that lost its line break " * 8)
+
+    def test_the_converter_terminates(self):
+        self.assertGreater(len(self.LONG), makepdf.MAX_HEADING_CHARS)
+        body = makepdf.markdown_to_html_body("Intro.\n\n%s\n\nAfter.\n" % self.LONG)
+        self.assertIn("After.", body)
+
+    def test_it_is_printed_as_a_paragraph(self):
+        body = makepdf.markdown_to_html_body(self.LONG + "\n")
+        self.assertNotIn("<h2>", body)
+        self.assertIn("<p>", body)
+
+    def test_an_ordinary_heading_is_still_a_heading(self):
+        body = makepdf.markdown_to_html_body("## A Brief Intro to CSPT\n")
+        self.assertIn("<h2>A Brief Intro to CSPT</h2>", body)
+
+    def test_the_two_answers_never_disagree(self):
+        """The property that failing broke: a line the loop will not treat as a
+        heading must not end a paragraph as though it were one."""
+        for line in ("# short", self.LONG, "#### also short"):
+            self.assertEqual(bool(makepdf._is_heading(line)),
+                             bool(makepdf._is_block_start([line], 0)
+                                  and not makepdf._FENCE.match(line)
+                                  and not makepdf._UL.match(line)))
+
+
 if __name__ == "__main__":
     unittest.main()

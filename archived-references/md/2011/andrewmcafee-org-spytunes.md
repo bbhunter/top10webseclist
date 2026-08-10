@@ -71,19 +71,19 @@ She’s right. I’ve been doing some poking around, and have found that it’s 
 
 Smiley would assemble a nefarious playlist of music — the tracks he wants to determine if I own. He then starts the iTunes gifting process (I believe the maximum size for gift playlists is 100 tracks):
 
- !
+ ![](http://andrewmcafee.org/wp-content/uploads/2011/02/Screen-shot-2011-02-17-at-4.31.46-PM.png)
 
 After assembling a playlist, this is the first step in the gifting / snooping process.
 
 Smiley clicks ‘Gift’ and is presented with the standard iTunes screen for gifting content. He fills in the requested fields:
 
- !
+ ![](http://andrewmcafee.org/wp-content/uploads/2011/02/Screen-shot-2011-02-17-at-4.43.59-PM-650x458.png)
 
 The snooper George Smiley tells iTunes to gift me his nefarious playlist
 
 After Smiley clicks ‘Continue,’ iTunes performs a number of checks in the background. One of them is to see if the intended recipient (me, in this case) already has in his library any of the music on the playlist. This is done with good intentions — to keep users from gifting music that the recipient already has — but the implementation of this feature opens up privacy concerns: if the check reveals duplicates, iTunes tells the gifter about one of them. The application presents this information to Smiley in red ink, before he has to sign in to his account, present credit card information, or take any other steps:
 
- !
+ ![](http://andrewmcafee.org/wp-content/uploads/2011/02/Screen-shot-2011-02-17-at-4.59.52-PM.png)
 
 iTunes tells Smiley about one of the songs in my library
 
@@ -91,13 +91,13 @@ If he wants to explore the contents of my music library more, he deletes this so
 
 Smiley’s technique also works for video…:
 
- !
+ ![](http://andrewmcafee.org/wp-content/uploads/2011/02/Screen-shot-2011-02-16-at-9.08.21-PM.png)
 
 Smiley learns about video I've purchased from iTunes
 
 and iPhone / iPad apps that cost money:
 
- !
+ ![](http://andrewmcafee.org/wp-content/uploads/2011/02/Screen-shot-2011-02-16-at-9.05.47-PM.png)
 
 Smiley learns about one app on my iPad
 

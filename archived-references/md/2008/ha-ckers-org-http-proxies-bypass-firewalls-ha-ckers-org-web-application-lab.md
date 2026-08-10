@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 ha.ckers.org web application security lab - Archive » HTTP Proxies Bypass Firewalls
 
-[!](http://ha.ckers.org/blog/20071014/web-application-scanning-depth-statistics/)
+[![](http://ha.ckers.org/images/nto_banner.jpg)](http://ha.ckers.org/blog/20071014/web-application-scanning-depth-statistics/)
  Paid Advertising
  [![web application security lab](http://ha.ckers.org/images/84844372/rsnake/hackers.jpg)](http://ha.ckers.org/)
 
@@ -73,7 +73,7 @@ This may seem painfully obvious to some people, but I looked around and couldn�
 
 I ran into an open proxy after that and started poking around with it. The obvious way to look for it was to type in “GET http://www.yahoo.com/ HTTP/1.0″ and see if it shows you Yahoo’s homepage. But then it occurred to me that this could be used for Intranet hacking as well. The open proxy doesn’t have to point out to the web. It can, in fact, be pointed inward, to internal addresses. Here’s a diagram of what I’m talking about:
 
-[!](http://ha.ckers.org/images/proxy-hacking.png)
+[![](http://ha.ckers.org/images/proxy-hacking.png)](http://ha.ckers.org/images/proxy-hacking.png)
 Click to enlarge
 
 The first scenario is what most bad guys use proxies for. They connect back out to the Internet, to hide their real IP addresses. The second scenario, however, would allow them to use that same proxy server to hack other machines on the same network, including the firewall itself. The funny part is that there are tons of machines out on the Internet who have already been compromised, and the bad guys have intentionally placed proxies on these machines for other nefarious purposes. But it can also be used for internal reconnaissance, or worse. And yes, I have found this in the wild. By quickly enumerating the most likely places within [RFC1918](http://www.ietf.org/rfc/rfc1918.txt), it’s fairly easy to spot where the majority of devices are in most networks (note that [this kind of internal scanning will become more difficult with IPv6](http://www.sectheory.com/ipv4-to-ipv6.htm)).

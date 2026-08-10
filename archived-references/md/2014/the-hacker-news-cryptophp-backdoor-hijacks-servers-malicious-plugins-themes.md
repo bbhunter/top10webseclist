@@ -71,7 +71,7 @@ page going offline. To read the original, follow the link above.
 
  ** Monday, November 24, 2014 **    Swati Khandelwal  
 
- [!](https://web.archive.org/web/20160402192125/http://3.bp.blogspot.com/-2KcrYMz6DL8/VHMPENA01zI/AAAAAAAAAiY/j9wk_c5DB80/s728/CryptoPHP-backdoor-compressed.jpg)
+ [![](https://web.archive.org/web/20160402192125im_/http://3.bp.blogspot.com/-2KcrYMz6DL8/VHMPENA01zI/AAAAAAAAAiY/j9wk_c5DB80/s728/CryptoPHP-backdoor-compressed.jpg)](https://web.archive.org/web/20160402192125/http://3.bp.blogspot.com/-2KcrYMz6DL8/VHMPENA01zI/AAAAAAAAAiY/j9wk_c5DB80/s728/CryptoPHP-backdoor-compressed.jpg)
 
  Security researchers have discovered thousands of *backdoored plugins and themes* for the popular content management systems (CMS) that could be used by attackers to compromise web servers on a large scale.
 

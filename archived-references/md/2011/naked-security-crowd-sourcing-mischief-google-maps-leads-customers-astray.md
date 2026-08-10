@@ -129,7 +129,7 @@ Tags: [Google](http://nakedsecurity.sophos.com/tag/google/), [Google Maps](http:
 
   
 
- !
+ ![](http://0.gravatar.com/avatar/607892ea3a6693d2c75fbe9bf3ca0fc1?s=60&d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&r=G)
 
 ## About the author
 

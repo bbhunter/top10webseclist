@@ -60,7 +60,7 @@ page going offline. To read the original, follow the link above.
 
 ha.ckers.org web application security lab - Archive » DNS Pinning Just Got Worse
 
-[!](http://www.whitehatsec.com/home/TradeUp/TradeUp.html)
+[![](http://ha.ckers.org/images/whitehat_728x90_final2.gif)](http://www.whitehatsec.com/home/TradeUp/TradeUp.html)
  [![web application security lab](http://ha.ckers.org/images/84844372/rsnake/hackers.jpg)](http://ha.ckers.org/)
 
 ## [DNS Pinning Just Got Worse](http://ha.ckers.org/blog/20060908/dns-pinning-just-got-worse/)

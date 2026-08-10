@@ -234,13 +234,13 @@ Thanks
 
 ## Lists
 
-[! ! ! ## Leadership upgrades 7 stories40 saves](https://scottlamb.blog/list/leadership-upgrades-8aa4a81ac7b0?source=read_next_recirc-----3872d6052a0d--------------------------------)
+[![](https://miro.medium.com/v2/da:true/resize:fill:96:96/1*WXkNxhY-NWAKUCrar7OuXw.gif) ![](https://miro.medium.com/v2/resize:fill:96:96/1*BwaaH5LcchLzfiBSiB6Sgg.jpeg) ![](https://miro.medium.com/v2/resize:fill:96:96/0*rIqzrBhtkoQHvno8.png) ## Leadership upgrades 7 stories40 saves](https://scottlamb.blog/list/leadership-upgrades-8aa4a81ac7b0?source=read_next_recirc-----3872d6052a0d--------------------------------)
 
-[! ! ! ## Stories to Help You Grow as a Designer 11 stories370 saves](https://medium.com/@MediumStaff/list/stories-to-help-you-grow-as-a-designer-8f80d5c0fafb?source=read_next_recirc-----3872d6052a0d--------------------------------)
+[![](https://miro.medium.com/v2/resize:fill:96:96/1*zjeiISlLLbvNqfvg8LoZ7w.png) ![](https://miro.medium.com/v2/resize:fill:96:96/1*4OSuVPNP-0-Ze8iUSsmY4A.png) ![](https://miro.medium.com/v2/resize:fill:96:96/1*ACJL3IBZmO1Tw-huBtsu0Q.jpeg) ## Stories to Help You Grow as a Designer 11 stories370 saves](https://medium.com/@MediumStaff/list/stories-to-help-you-grow-as-a-designer-8f80d5c0fafb?source=read_next_recirc-----3872d6052a0d--------------------------------)
 
-[! ! ! ## Tech & Tools 15 stories87 saves](https://medium.com/@wearedelicious/list/tech-tools-541154dfb3ae?source=read_next_recirc-----3872d6052a0d--------------------------------)
+[![](https://miro.medium.com/v2/resize:fill:96:96/1*x0FBZgsae1ElzECF0gNKgg.jpeg) ![](https://miro.medium.com/v2/resize:fill:96:96/1*BniKIhT3c54sIEuPtzRQKw.jpeg) ![](https://miro.medium.com/v2/resize:fill:96:96/1*bL9myrpD7GbEuDkvVe8pyA.png) ## Tech & Tools 15 stories87 saves](https://medium.com/@wearedelicious/list/tech-tools-541154dfb3ae?source=read_next_recirc-----3872d6052a0d--------------------------------)
 
-[! ! ! ## Stories to Help You Level-Up at Work 19 stories291 saves](https://medium.com/@MediumStaff/list/stories-to-help-you-levelup-at-work-faca18b0622f?source=read_next_recirc-----3872d6052a0d--------------------------------)
+[![](https://miro.medium.com/v2/resize:fill:96:96/1*4zC5ohNcmVDb1NXmzCvmNA.jpeg) ![](https://miro.medium.com/v2/resize:fill:96:96/1*0dul7hn9LeV7U2XLVPvYYw.jpeg) ![](https://miro.medium.com/v2/resize:fill:96:96/1*oO7uwYs0NMWV7B4mUCuoIw.png) ## Stories to Help You Level-Up at Work 19 stories291 saves](https://medium.com/@MediumStaff/list/stories-to-help-you-levelup-at-work-faca18b0622f?source=read_next_recirc-----3872d6052a0d--------------------------------)
 
 [![Hyperlink Injection Earned Me $200 within 10 minutes](https://miro.medium.com/v2/resize:fit:1358/1*1Q1uhrCIO7HIUNf4Lpis5g.jpeg)](https://amjadali110.medium.com/hyperlink-injection-726d8151b216?source=read_next_recirc-----3872d6052a0d----0---------------------8b9e35d7_2d02_496f_ac5d_ad4dd8745549-------)
 

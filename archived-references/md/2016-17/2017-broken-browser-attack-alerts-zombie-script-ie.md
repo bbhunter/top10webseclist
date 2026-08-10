@@ -70,7 +70,7 @@ In our previous post we found a way to [UXSS (bypass the SOP policy) using the h
 
 Have you noted recently that all browsers have a feature to block perpetual alerts? As soon as you execute a second alert it comes with a check-box to disable the following ones, just like this:
 
- [!](https://www.brokenbrowser.com/wp-content/uploads/2017/02/01_alert_with_checkbox.png) This gives us (bad programmers) the chance to exit never ending alert-loops, but more important, it allows the user to defend himself against malicious pages that literally block the interface with fake messages. Users have now the chance to block all the following alerts by checking that box, but with the ActiveX window object we can continue throwing infinite alerts with no way to escape them.
+ [![](http://www.brokenbrowser.com/wp-content/uploads/2017/02/01_alert_with_checkbox.png)](https://www.brokenbrowser.com/wp-content/uploads/2017/02/01_alert_with_checkbox.png) This gives us (bad programmers) the chance to exit never ending alert-loops, but more important, it allows the user to defend himself against malicious pages that literally block the interface with fake messages. Users have now the chance to block all the following alerts by checking that box, but with the ActiveX window object we can continue throwing infinite alerts with no way to escape them.
 
 If you haven’t read the previous post about the [UXSS using htmlFile/ActiveXObject](https://www.brokenbrowser.com/uxss-ie-htmlfile/), please do it now. It’s important to understand why we are using specific members of this htmlFile/ActiveX (like how to get its window object). Anyway, let’s use the alert method from the ActiveXObject which completely bypasses the preference of the user of “no more alerts please!”. We can throw infinite ones but for this demo we will do it with just three.
 
@@ -106,7 +106,7 @@ win.alert("3rd alert, and still no way out!");
 
  |   |
 
- [!](https://www.brokenbrowser.com/wp-content/uploads/2017/02/02_alert_without_checkbox.png)
+ [![](http://www.brokenbrowser.com/wp-content/uploads/2017/02/02_alert_without_checkbox.png)](https://www.brokenbrowser.com/wp-content/uploads/2017/02/02_alert_without_checkbox.png)
 
 Honestly, I’m not impressed at all. Yeah yeah, unlimited alerts but it’s no big deal considering that other security researchers are [bypassing DEP / CFG](http://xlab.tencent.com/en/2015/12/09/bypass-dep-and-cfg-using-jit-compiler-in-chakra-engine/) and [re-enabling the God Mode](http://gsec.hitb.org/sg2016/sessions/look-mom-i-dont-use-shellcode-a-browser-exploitation-case-study-for-internet-explorer-11/). Let’s try something better. We will throw a few alerts but all visible at once, filling the entire screen with thousands them! No worries, in this PoC we will use just ten!
 
@@ -146,7 +146,7 @@ for (var i = 0; i < 10; i++)
 
  |   |
 
- [!](https://www.brokenbrowser.com/wp-content/uploads/2017/02/03_alert_ad_infinitum.png)
+ [![](http://www.brokenbrowser.com/wp-content/uploads/2017/02/03_alert_ad_infinitum.png)](https://www.brokenbrowser.com/wp-content/uploads/2017/02/03_alert_ad_infinitum.png)
 
 ### [ [See the PoC Live on IE11](https://www.cracking.com.ar/demos/zombiealert/) ]
 
@@ -213,7 +213,7 @@ window.open("","_self"); // "Does nothing", but this line is crucial.
 
  That’s it! Now the user can type anything in the address-bar, click on links or navigate as much as she wants, but our script will always be with her until the tab is closed. And by the way, everything here can be done straight from inside an iframe on a different domain, and still work (without bypassing SOP, of course).
 
- [!](https://www.brokenbrowser.com/wp-content/uploads/2017/02/04_zombie_script-2.png)
+ [![](http://www.brokenbrowser.com/wp-content/uploads/2017/02/04_zombie_script-2.png)](https://www.brokenbrowser.com/wp-content/uploads/2017/02/04_zombie_script-2.png)
 
 ### [ [See the PoC Live on IE11](https://www.cracking.com.ar/demos/zombiealert/) ]
 

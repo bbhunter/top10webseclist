@@ -88,7 +88,7 @@ This time, when we looked into Home Assistant, we were interested in hunting for
 
 This research bore fruit as we were able to discover an interesting command injection vulnerability in `ffmpeg` and managed to exploit it using a novel technique to take over Home Assistant. We reported it to the developers, and it was patched in version [2026.6.2](https://github.com/home-assistant/core/releases/tag/2026.6.2#:~:text=Only%20allow%20specific%20protocols%20with%20ffmpeg%20in%20Wyoming%20satellite%20announce). Even though this issue was remediated, our submission was closed as N/A:
 
-!
+![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/6a6981e50b76860d045cc408_submission_response.png)
 
 Nonetheless, we have published an advisory [here](https://github.com/elttam/publications/blob/master/writeups/ffmpeg-arbitrary-file-read-advisory.md).
 
@@ -175,7 +175,7 @@ concat:subfile,,start,4617501,end,4617505,,:/bin/go2rtc|subfile,,start,1264,end,
 
 Here is a diagram that helps put it into perspective:
 
-!
+![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/6a605a19afff24b41e920b01_ffmpeg_concat_stack_braced.png)
 
 Besides the technical constraints, there were other constraints that needed to be satisfied during actual exploitation. These were:
 
@@ -188,7 +188,7 @@ Obtaining this token allows an attacker to abuse the supervisor APIs to achieve 
 
 The diagram below illustrates the trust boundary and the attack chain, with `(?)` marking the constraints:
 
-!
+![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/6a605a47cf41f8691e0424b0_home_assistant_attack_chain.png)
 
 ## Exploit in Action
 

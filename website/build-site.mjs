@@ -13,6 +13,11 @@ const APP_DIR = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.dirname(APP_DIR);
 const STATIC_FILES = [
   ".nojekyll",
+  // Cloudflare Pages serves index.html for any unmatched path when no 404 page
+  // is present, and this app resolves its assets relatively - so a mistyped
+  // path rendered an unstyled shell whose script could not parse. Staged for
+  // the Cloudflare target only; the GitHub origin writes its own index.
+  "404.html",
   "_headers",
   "app.js",
   "brand-mark.svg",

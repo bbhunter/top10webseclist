@@ -68,13 +68,13 @@ page going offline. To read the original, follow the link above.
 
  July 17, 2024 | By [Guest Post](https://www.bugcrowd.com/blog/?a__author=26)
 
- !
+ ![](https://www.bugcrowd.com/wp-content/uploads/2024/07/2305048_LevelUp-Unveiling_Opt1_071624.png)
 
 This blog post is a written collaborative effort by Paolo Arnolfo (@sw33tLie), a hacking enthusiast passionate about server-side vulnerabilities; Guillermo Gregorio (@bsysop), a dad superhero and skilled hacker; and █████ (@_medusa_1_), a stealthy genius. Working together, they are bringing you insights into a novel class of HTTP Request Smuggling vulnerabilities and their latest findings.
 
 A while ago, we were discussing with a friend the security benefits of hosting an entire infrastructure on the cloud. His company had just transitioned from self-hosted to fully cloud-based, and he was enthusiastic.
 
-!
+![](https://live-bug-crowd.pantheonsite.io/wp-content/uploads/2024/07/B1-300x171.png)
 
 While this blog post is not meant to argue against cloud hosting, funny enough, on that same day, our team hacked a bug bounty target using a novel HTTP Request Smuggling vector, part of a new smuggling class.
 
@@ -88,7 +88,7 @@ We achieved critical impact for virtually every vulnerable host that we manually
 
 One thing we know for sure is that HTTP Request Smuggling is still everywhere and massively under-researched. This has been suggested multiple times on X by various security researchers, such as[ James Kettle](https://x.com/albinowax/status/1722643559944245354):
 
-!
+![](https://live-bug-crowd.pantheonsite.io/wp-content/uploads/2024/07/B2-300x224.png)
 
 Finding new attack vectors can be an exciting journey. It often relies on creativity, study, and luck.
 
@@ -142,7 +142,7 @@ After numerous attempts, we identified a TE.0 smuggling on the main API of one o
 
 By sending this request multiple times using `null payloads` in Burp Suite Intruder, we were effectively redirecting live users to our own collaborator server. Conveniently, this also had the side-effect of sending us the users’ session token. This means we were able to perform a mass 0-click account takeover:
 
-!
+![](https://live-bug-crowd.pantheonsite.io/wp-content/uploads/2024/07/B3-300x121.png)
 
 ## **A wider discovery**
 
@@ -150,7 +150,7 @@ Later, we scanned more broadly for this new smuggling payload and received thous
 
 We noticed that all the vulnerable targets appeared to be hosted on Google Cloud. Some had the classic `Via: 1.1 google` response header, while others were protected by Google IAP (Identity-Aware Proxy) authentication and returned the `Invalid IAP credentials: empty token` message when accessed without a valid session token:
 
-!
+![](https://live-bug-crowd.pantheonsite.io/wp-content/uploads/2024/07/B4-300x128.png)
 
 It took us some time to figure out which component was vulnerable. Thanks to the investigation via an affected company, we discovered the issue was within Google Cloud’s Load Balancer.
 
@@ -174,7 +174,7 @@ Google IAP operates in alignment with Zero Trust principles by:
 
 This means that before a user can access a protected application, they must first pass through IAP, which checks their credentials and permissions.
 
-!
+![](https://live-bug-crowd.pantheonsite.io/wp-content/uploads/2024/07/B5-300x206.png)
 
 Ref.:[ https://cloud.google.com/iap/docs/concepts-overview#app-engine](https://cloud.google.com/iap/docs/concepts-overview#app-engine)
 

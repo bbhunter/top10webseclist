@@ -67,7 +67,7 @@ Salt Labs
 
 October 24, 2023
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/68154675c8fd52cf04d62775_AviadCarmel.avif)
 
 Security Researcher
 
@@ -107,7 +107,7 @@ Before we take our deep dive into this specific vulnerability, let’s review th
 
 Assume you are John, and you want to connect to Randomsite.com using your Facebook account. What happens when you click on “Login with Facebook”?
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104a744c0245409e06599c_646ce626ecfd5a664568bb0b_6400a42bdd101731edd18d10_2.png)
 
 ### In steps 2–3
 
@@ -151,7 +151,7 @@ As you saw in steps 6 and 7, when the server **receives** a token, it makes an A
 
 Let’s read the documentation of Facebook:
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca48e5adcbad56c6a69_65314f943d2d465919e807f9_Image%25201a.png)
 
 In other words, the first thing you need to do as a developer, before making an API request to Facebook to receive the identity, is to verify the access token. Otherwise, your implementation is not secure.
 
@@ -163,13 +163,13 @@ I will demonstrate the result on a website that doesn’t verify the access toke
 
 ### Lack of token verification on Vidio
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca68e5adcbad56c6a97_65314fa2d781d480a1ee92af_Vidio.png)
 
 Vidio is an online video streaming platform with 100M monthly active users. It offers a diverse range of content, including movies, TV shows, live sports, and original productions. It serves as a popular destination for users to watch, upload, and share videos across various genres and interests. The platform provides both free and premium subscription-based content, enabling users to access a wide array of entertainment options.
 
 It's OAuth flow is almost identical to the *Randomsite* example that anchors the “Background on OAuth” section.
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca68e5adcbad56c6a91_65314fcc5986cf4de4a64859_2.png)
 
 Note that when an application or website registers itself in *developers.facebook.com*, Facebook assigns it a new unique random App ID. In this way, Facebook knows which app makes the request. In the case of Vidio, the App ID is 92356.
 
@@ -193,7 +193,7 @@ The attacker publishes YourTimePlanner.com as a legitimate website — for examp
 
 Let’s assume thousands of people connect to YourTimePlanner.com:
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca68e5adcbad56c6a94_65314fd4d781d480a1eee32a_3.png)
 
 The attacker has thousands of access tokens that represent real users and were generated for TimePlanner.com (App ID 328..).
 
@@ -203,7 +203,7 @@ Let’s take an example access token: token_of_Dan_for_TimePlanner:
 
 Using Facebook token debugger, you can see all the information about the access token:
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca68e5adcbad56c6ac8_65314fe292fbe35e87c5e58e_4.png)
 
 This token represents Dan Bro (moreisless3dan@gmail.com) and was generated to TimePlanner (App ID 3287341734837076).
 
@@ -211,11 +211,11 @@ What will happen if the attacker inserts this token to the vulnerable website Vi
 
 The API reached by `/api/facebook/auth` in Vidio.com is responsible for receiving an access token from the user and returning Vidio.com credentials. The attacker sends to this API the access token `token_of_Dan_for_TimePlanner`:
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca68e5adcbad56c6aec_65314fed6ef97eaa79fe5a33_5.png)
 
 It worked!!! Since Dan has an account on Vidio.com, the attacker sends an access token that represents Dan from YourTimePlanner.com into Vidio.com and completely takes over Dan’s account on Vidio.com.
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca48e5adcbad56c6a6c_65314ff3d7a7ead1b99bb271_6.png)
 
 This screen shows that the attacker is connected as Dan to the Vidio mobile app. To be clear on what happened: Dan (our victim) just connected to a “legitimate” website YourTimePlanner.com using Facebook,, and an attacker was able to take over his account on another website, Vidio.com, without any user interaction. The attacker has full control on that account.
 
@@ -225,7 +225,7 @@ When we found this vulnerability, Vidio fixed it immediately and added Salt Secu
 
 [https://www.vidio.com/pages/vidio-bug-bounty-program](https://www.vidio.com/pages/vidio-bug-bounty-program)
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca68e5adcbad56c6ab3_65314ffe7ca56c6176ee5d7f_7.png)
 
 I really appreciate companies that offer bug bounty programs or Hall of Fame lists like Vidio. It shows these companies take security very seriously. It's important to recognize that security vulnerabilities can arise in any type of website, including well-secured ones such as Vidio. It’s the response that matters, so thanks again to Vidio for taking this secure approach.
 
@@ -233,7 +233,7 @@ According to Vidio, the vulnerability pertained mainly to the Facebook OAuth imp
 
 ### Lack of token verification on Bukalapak.com via Facebook login
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca48e5adcbad56c6a6f_6531506cab8a9f470f738f65_bukalapak-primary-logo%25402x.png)
 
 Bukalapak is one of the largest and most prominent eCommerce platforms in Indonesia with 150 million users. It serves as a comprehensive marketplace for various products and services, connecting millions of buyers and sellers. The platform offers secure payments, logistical support, and buyer protection. With its significant presence in the Indonesian market, Bukalapak has contributed to the growth of online retail in the country.
 
@@ -241,21 +241,21 @@ Account takeover on eCommerce platform like Bukalapak poses a threat to the secu
 
 The login flow of bukalapak.com is very similar to vidio.com:
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca68e5adcbad56c6abf_65315006d9029c9ee6911020_8.png)
 
 The endpoint “/fb_login” in *accounts.bukalapak.com* receives an access token as one of the parameters and returns the credentials of the user in Bukalapak.
 
 Bukalapak doesn’t verify the access token, and therefore, by inserting a token from another website — `token_of_Dan_for_TimePlanner` (like before, we assume Dan has an active account on Bukalapak) — I could get the credentials of Dan in bukalapak.com and completely take over his account:
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca68e5adcbad56c6af2_6531500db3b0875541a6012f_9.png)
 
 And also a technical image using Burp:
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca68e5adcbad56c6aef_65315017ab8a9f470f73114c_10.png)
 
 (In the image above, the attacker received the credentials of Dan in Bukalapak)
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca68e5adcbad56c6ab9_6531501e6ce94729b78de7e5_11.png)
 
 This screen shows that the attacker is connected as Dan to Bukalapak.com. Just to be clear — Dan (our victim) just connected to YourTimePlanner.com, and an attacker takes over his account on two popular websites — Vidio and Bukalapak.
 
@@ -271,7 +271,7 @@ Bukalapak provided us this commentary:
 
 Grammarly.com is an AI-powered writing tool that helps users improve their writing by offering grammar, punctuation, and spelling checks as well as style suggestions and vocabulary enhancements.
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca48e5adcbad56c6a72_65315c0b388ec2dcdb344c4c_Grammarly.png)
 
 They boast 30 million daily users. Users can use the Grammarly Extension/App or the company’s web editor directly which is available at Grammarly.com. Unlike the Extension/App which doesn’t store data, the web editor at Grammarly.com stores the data directly within Grammarly's account, which means an account takeover would give an attacker access to the victim’s stored documents. I myself am using Grammarly’s web editor for help as I've been writing this blog and writing emails, messages and documents in general.
 
@@ -285,13 +285,13 @@ The technical details:
 
 Let’s see how OAuth works in Grammarly:
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca68e5adcbad56c6ac5_6532ce402c77da9095ccff88_Screenshot%25202023-10-20%2520at%252013.59.36.png)
 
 - The user clicks on “Sign in with Facebook” and the following URL is opened: `https://www.facebook.com/v9.0/dialog/oauth?client_id=`**`945246385586366`**`&redirect_uri=https://www.grammarly.com%2Fsocial%2Fredirect&response_type=code&state=[random]&scope=email&auth_type= Note that the client_id/app_id is 945246385586366`.
 - Facebook redirects the user to Grammarly with a secret code: `https://www.grammarly.com/social/redirect?code=[code]`
 - Grammarly sends this code to `https://auth.grammarly.com` using a post request.
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca68e5adcbad56c6abc_653150312fb5f29869a9c1c2_12.png)
 
 - `https://auth.grammarly.com` authenticates the user based on that code and returns the user credentials at Grammarly.com. (In the back end, Grammarly should exchange the code for an access token.)
 
@@ -320,15 +320,15 @@ And then I tried a brute force of other terms, including:
 
 The winner turned out to be access_token:
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca68e5adcbad56c6ab6_6531503a5fefe29d416c0325_13.png)
 
 I changed “code” to “access_token,” inserted the token of Dan from Timeplanner, and got the credentials of Dan in Grammarly.com. And like with the other sites, the Grammarly implementation did not perform token verification. So, I achieved full account takeover.
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca68e5adcbad56c6ac2_65315042f44b064bbacc4507_14.png)
 
 With full control of Dan’s account, we can see all his private documents:
 
-!
+![](https://cdn.prod.website-files.com/6334717ca56db62653270dc5/67104ca68e5adcbad56c6ae9_6531504871b8826c22e0c5bd_15.png)
 
 ## Summary
 

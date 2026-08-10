@@ -92,7 +92,7 @@ Inspired by a [good friend](https://x.com/chudyPB) who abused a jailed file writ
 
 The two extensions that stood out to me was `.zip` and `.xml`. Tomcat loves to process `xml` files, let’s try this first. After studying the `tomcat9.exe` process for a bit, I noticed that it attempts to load a non-existent file: `application.xml`.
 
-!
+![](https://srcincite.io/assets/images/remote-code-execution-with-spring-properties/loading-properties.png)
 
 When I placed an invalid `xml` file in the directory I saw a stack-trace where it was trying to load the file using the class `ConfigFileApplicationListener`. According to this [blog post](https://juejin.cn/post/6972564484720328718) the Listener attempts to load application configuration files from the following extensions in the following order:
 
@@ -279,7 +279,7 @@ and the corresponding log-back file which may look familiar to some:
 
 The stars were aligned here, we found a way to restart the server remotely using one of the exposed REST API’s and of course `ELProcessor` was included in the class path. The result:
 
-!
+![](https://srcincite.io/assets/images/remote-code-execution-with-spring-properties/rce.png)
 
 ## Concluding thoughts
 

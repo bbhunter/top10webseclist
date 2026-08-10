@@ -83,11 +83,11 @@ reveal.js
 
 Ingress
 
- !
+ ![](https://0day.click/parser-diff-talk-oc25/img/kc.png)
 
 Backend
 
- !
+ ![](https://0day.click/parser-diff-talk-oc25/img/be.png)
 
  Exploit: ``` GET /api/resource HTTP/1.1 Host: api.example.com Authorization: Bearer $alg_none_fake_admin_JWT Authorization: Bearer $legit_JWT Content-Type: application/json Accept: application/json ```
 
@@ -95,11 +95,11 @@ Backend
 
 ### I had no idea
 
-  ! |  ! |   |
+  ![](https://0day.click/parser-diff-talk-oc25/img/wrong.png) |  ![](https://0day.click/parser-diff-talk-oc25/img/lol.png) |   |
 
 ### I had an idea
 
- !
+ ![](https://0day.click/parser-diff-talk-oc25/img/monster.png)
 
  ### Revealing ✨magic.yaml✨ ```yaml lang: Python !!binary bGFuZw==: Go !binary bGFuZw: Ruby ```
 

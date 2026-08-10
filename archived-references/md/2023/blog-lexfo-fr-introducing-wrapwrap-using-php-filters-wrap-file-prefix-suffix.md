@@ -151,7 +151,7 @@ Well, turns out you can actually use an oracle, which makes use of the limited P
 
 Unsatisfied with the current state of the art, we started working on a solution: a way to add, in addition to an **arbitrary prefix**, an **arbitrary suffix** to any resource. This yielded a new tool, [wrapwrap](https://github.com/lexfo/wrapwrap), available on our Github.
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/output.png)
 
 ```
 php> echo file_get_contents('php://filter/.../resource=/etc/passwd');
@@ -169,7 +169,7 @@ Let's first understand the previous state of research, that is how you can add a
 
 @loknop [explained it very well in his gist](https://gist.github.com/loknop/b27422d355ea1fd0d90d6dbc1e278d4d):
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/rough-idea.png)
 
 For instance, `convert.iconv.863.UTF-16|convert.iconv.ISO6937.UTF16LE|convert.base64-decode|convert.base64-encode` will add a `K` to your B64:
 
@@ -247,45 +247,45 @@ First, we take some arbitrary file and convert it to base64.
 
 Second, we pad the base64 payload such that its size is a multiple of 3 (It is not hard to convert a payload of any size to a valid size by using techniques which are not described in the article). For the sake of simplicity, we will say that the base64 is `ABC`.
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/algorithm-0.png)
 
 Then, we create 3 NULL bytes in between each character by converting the payload from `ASCII` to `UCS-4`, which is a 4-byte character set.
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/algorithm-1.png)
 
 We base64-encode the payload. Since its size is divisible by 3, the result's size is divisible by 4.
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/algorithm-2.png)
 
 The base64 of `XYZ` is `WFla`. Using digit-chains, we add `a`, `l`, `F`, `W` to the payload. Each time we add such a letter, and because the payload is 4-aligned, the last digit gets removed.
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/algorithm-3.png)
 
 We end up having added 4 digits at the beginning of the payload, and removed 4 at the end.
 
 We then decode:
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/algorithm-4.png)
 
 and finally, swap quartets using the `UCS-4` to `UCS-4LE` conversion:
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/algorithm-5.png)
 
 This isn't much, but we managed to move `XYZ` (albeit in the reverse order) after the first digit, `A`. If we were to base64-decode and encode the result (which removes bytes that are not base64 digits), we'd have: `AZYXBC`. If we keep an eye on the three NULL bytes that start on the right of `A` during each step of the algorithm, we can see that they are now on the right of `B`: they have "moved" forward 4 squares. So if we repeat the algorithm, this time with 3 NULL bytes (`AAAA` in base64):
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/algorithm-6.png)
 
 The `XYZ` part has moved forward again, and the other base64 digits have not moved.
 
 If we push three NULL bytes again, we get:
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/algorithm-7.png)
 
 The `YXZ` string has moved forward 3 times, passing `A`, `B` and `C`, and, without altering the order of the other digits. By repeating this operation as many times as we need, we can **push** the `XYZ` value **to the end of the payload**.
 
 We can finally simply base64-decode, then base64-encode, to get rid of NULL bytes:
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/algorithm-8.png)
 
 And we get what we wanted: `ABCZXY`.
 
@@ -334,19 +334,19 @@ This is kept
 
 So, instead of precisely computing the size of the file we are dumping, we can push a `<LF>0<LF>` triplet along:
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/algorithm-9.png)
 
 Add a proper chunk header at the beginning:
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/algorithm-9a.png)
 
 Then call the `dechunk` filter:
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/algorithm-10.png)
 
 And finally, base64-decode then encode to get rid of NULL bytes:
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/algorithm-11.png)
 
 We can now *trim* a resource to an arbitrary size, and add a triplet in between each letter of its contents.
 
@@ -370,17 +370,17 @@ As an example, say a file contains `HELLO!`. The base64 of this is `SEVMTE8h`, a
 
 The first two quartets look like:
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/algorithm-12.png)
 
 If we insert a triplet *T1T2T3* in front of the 5th letter *T*, and another *U1U2U3* in front of the 6th letter *V*, we get:
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/algorithm-13.png)
 
 As we can see, the decoded part for the first quartet does not change (`U0VW` decodes to `SEV`), but then the next quatuor decodes into two bytes of our choosing (encoded with *T1*, *T2*, and the first *4* bytes of *T3*), and a third byte which is not ASCII (because the two least significant bits of *T3* are set). The information that was contained into `T` is "discarded". Same happens with *U1U2U3* and `V`.
 
 Therefore, each triplet inserted in the second base64 allows us to **encode 2 digits** and **get rid of 1 digit** of the first base64, solving our problem. As an example, say we want to suffix `SEV` by `ABCD`. The first triplet encodes `AB` using `QUL`. The second encodes `CD` as `Q0T`.
 
-!
+![](https://blog.lexfo.fr/images/wrapwrap-php-filters-suffix/algorithm-14.png)
 
 We get: `U0VWQULTQ0TV`, which decodes to `SEVAB�CD�`. If we base64-decode and encode, we get `SEVABCD`.
 

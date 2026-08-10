@@ -88,7 +88,7 @@ BibTeX
 
 ![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Khodayari Paper (Prepublication) PDF](https://www.usenix.org/system/files/sec21fall-khodayari.pdf)
 
-!
+![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-unlocked.png)
 
 [View the slides](https://www.usenix.org/system/files/sec21_slides_khodayari.pdf)
 

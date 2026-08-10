@@ -60,13 +60,13 @@ page going offline. To read the original, follow the link above.
 
 Securitum. Leading european penetration testing company
 
- !
+ ![](https://static.shuffle.dev/uploads/files/a6/a6f2940854c19714ee211d1b0f6281ba8f8e7687/image-185.png)
 
 Insights
 
 #  Prototype pollution – and bypassing client-side HTML sanitizers
 
- !
+ ![](https://www.securitum.com/images/Ilustration-Insights.png)
 
 # Michał Bentkowski
 
@@ -89,15 +89,15 @@ This object has two properties: `prop1` and `prop2`. But these are not the only 
 
 In DevTools, we can easily check a list of properties of `Object.prototype`:
 
-!
+![](https://static.shuffle.dev/uploads/files/92/92d7f906dd2f9f8949d2417e1a2746837d59ab18/imagez-1024x351.png)
 
 We can also find out what object is a prototype of a given object, by checking its `__proto__` member or by calling `Object.getPrototypeOf`:
 
-!
+![](https://static.shuffle.dev/uploads/files/92/92d7f906dd2f9f8949d2417e1a2746837d59ab18/image-1z.png)
 
 Similarly, we can set the prototype of the object using `__proto__` or `Object.setPrototypeOf`:
 
-!
+![](https://static.shuffle.dev/uploads/files/92/92d7f906dd2f9f8949d2417e1a2746837d59ab18/image-2z.png)
 
 In a nutshell, when we try to access a property of an object, JS engine first checks if the object itself contains the property. If it does, then it is returned. Otherwise, JS checks if the prototype has the property. If it doesn't, JS checks the prototype of the prototype... and so on, until the prototype is `null`. It's called the [prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain).
 
@@ -163,7 +163,7 @@ The basic flow of recursive merge is:
 
 In the real world, if user has any control of objects being merged, then usually one of the objects come from the output of `JSON.parse`. And `JSON.parse` is a little bit special because it treats `__proto__` as a "normal" property, i.e. without its special meaning of being a prototype accessor. Consider the following example:
 
-!
+![](https://static.shuffle.dev/uploads/files/92/92d7f906dd2f9f8949d2417e1a2746837d59ab18/imagez-3-1024x219.png)
 
 In the example, `obj1` was created using the curly bracket notation of JS, while `obj2` is created with `JSON.parse`. Both objects have only one property defined, called `__proto__`. However, accessing `obj1.__proto__` returns `Object.prototype` (so `__proto__` is the special property that returns the prototype), while `obj2.__proto__` contains the value given in the JSON, namely: `123`. This proves that `__proto__` property is treated differently in `JSON.parse` than in ordinary JavaScript.
 
@@ -257,7 +257,7 @@ In the next chapters I'll give a short overview of all the sanitizers, and show 
 
 The invocation of sanitize-html is simple:
 
-!
+![](https://static.shuffle.dev/uploads/files/92/92d7f906dd2f9f8949d2417e1a2746837d59ab18/imagez-4-1024x68.png)
 
 Optionally, you can pass second parameter to `sanitizeHtml` with options. But if you don't, then default options are used:
 
@@ -326,13 +326,13 @@ Object.prototype['*'] = ['onload']
 
 Then `onload` will be a valid attribute to any tag, which is proven below:
 
-!
+![](https://static.shuffle.dev/uploads/files/92/92d7f906dd2f9f8949d2417e1a2746837d59ab18/imagez-5-1024x137.png)
 
 **xss**
 
 Invocation of the next library, [xss](https://github.com/leizongmin/js-xss/), looks quite similar:
 
-!
+![](https://static.shuffle.dev/uploads/files/92/92d7f906dd2f9f8949d2417e1a2746837d59ab18/imagez-6-1024x87.png)
 
 It also can optionally accept a second parameter, called `options`. And the way it is processed is the most prototype-pollution-friendly pattern you could spot in JS code:
 
@@ -358,13 +358,13 @@ All these properties in form `options.propertyName` can be polluted. The obvious
 
 So the idea is to define my own whitelist, accepting `img` tag with `onerror` and `src` attributes:
 
-!
+![](https://static.shuffle.dev/uploads/files/92/92d7f906dd2f9f8949d2417e1a2746837d59ab18/imagezz-7.png)
 
 **dompurify**
 
 Similarly to previous sanitizers, basic usage of DOMPurify is quite simple:
 
-!
+![](https://static.shuffle.dev/uploads/files/92/92d7f906dd2f9f8949d2417e1a2746837d59ab18/imagez-z8.png)
 
 DOMPurify also accepts a second parameter with configuration. Here also comes a pattern that make it vulnerable to prototype pollution:
 
@@ -378,7 +378,7 @@ In JavaScript `in` operator traverses the prototype chain. Hence `'ALLOWED_ATTR'
 
 DOMPurify by default allows `<img>` tag, so the exploit requires only polluting `ALLOWED_ATTR` with `onerror` and `src`.
 
-!
+![](https://static.shuffle.dev/uploads/files/92/92d7f906dd2f9f8949d2417e1a2746837d59ab18/imagez-z9.png)
 
 Interestingly, Cure53 released [a new version of DOMPurify](https://github.com/cure53/DOMPurify/commit/082b2044f553d3ac4ab9414c97eddc2259bf922f) that attempts to protect against this very attack. If you think you can bypass the fix, have a look at an [updated version of my challenge](https://securitymb.github.io/xss/4/?).
 
@@ -422,7 +422,7 @@ The code below proves the bypass:
                         </script>
 ```
 
-!
+![](https://static.shuffle.dev/uploads/files/92/92d7f906dd2f9f8949d2417e1a2746837d59ab18/image-zz11-1024x286.png)
 
 **Identifying prototype pollution gadgets**
 
@@ -500,7 +500,7 @@ I created a tool to do the instrumentation that I'm also [sharing on GitHub](htt
 
 Thanks to this method I could spot two more instances of abusing prototype pollution to bypass sanitizers. Let's see what was being logged when I run DOMPurify:
 
-!
+![](https://static.shuffle.dev/uploads/files/92/92d7f906dd2f9f8949d2417e1a2746837d59ab18/indexzz-html.png)
 
 That's something I missed in the first place. Let's take a look at the line where `documentMode` is being accessed:
 
@@ -529,11 +529,11 @@ The downside is that the prototype needs to be polluted before DOMPurify is even
 
 Let's now have a look at Closure. First of all, it is now very easy to see that Closure attempts to check whether attributes are in an allow-list:
 
-!
+![](https://static.shuffle.dev/uploads/files/92/92d7f906dd2f9f8949d2417e1a2746837d59ab18/localhost-4200zz.png)
 
 Second of all, I noticed an interestingly looking property:
 
-!
+![](https://static.shuffle.dev/uploads/files/92/92d7f906dd2f9f8949d2417e1a2746837d59ab18/localhost-4200-1zz.png)
 
 Closure loads lots of JS files with dependencies. `CLOSURE_BASE_PATH` defines the path. So we can pollute the property to load our own JS from any path. The sanitizer doesn't even need to be called!
 
@@ -560,7 +560,7 @@ As a final note, if you ever find a prototype pollution in Google Search, then y
 
 # Other Insights
 
- !
+ ![](https://www.securitum.com/images/ilustration-pentest-chronicles-article.png)
 
 ### Helping secure DOMPurify
 
@@ -572,7 +572,7 @@ Within last year I shared a a few writeups of my bypasses of HTML sanitizers, in
 
  [READ pentest chronicle](https://www.securitum.com/helping_secure_dompurify.html)
 
- !
+ ![](https://www.securitum.com/images/ilustration-pentest-chronicles3.png)
 
 ### Pyscript - or rather Python in your browser + what can be done with it
 
@@ -584,7 +584,7 @@ A few days ago, the Anaconda project announced the PyScript framework, which all
 
  [READ pentest chronicle](https://www.securitum.com/pyscript__or_rather_python_in_your_browser__what_can_be_done_with_it.html)
 
- !
+ ![](https://www.securitum.com/images/ilustration-pentest-chronicles2.png)
 
 ### Art of bug bounty a way from JS file analysis to XSS
 
@@ -596,16 +596,16 @@ Summary: During my research on other bug bounty program I've found Cross-Site Sc
 
  [READ pentest chronicle](https://www.securitum.com/art-of-bug-bounty-a-way-from-js-file-analysis-to-xss.html)
 
- !
+ ![](https://www.securitum.com/images/contact.png)
 
 ## Any questions?
 
 #  Happy to get a call or email
 and help!
 
- [CONTACT US](https://www.securitum.com/contact.html) !
+ [CONTACT US](https://www.securitum.com/contact.html) ![](https://static.shuffle.dev/uploads/files/a6/a6f2940854c19714ee211d1b0f6281ba8f8e7687/Arrow-61.png)
 
- !
+ ![](https://static.shuffle.dev/uploads/files/a6/a6f2940854c19714ee211d1b0f6281ba8f8e7687/Logo-Securitum.png)
 
  
 

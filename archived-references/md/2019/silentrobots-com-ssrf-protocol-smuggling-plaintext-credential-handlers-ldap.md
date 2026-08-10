@@ -165,7 +165,7 @@ connect to [::ffff:127.0.0.1]:9000 from localhost:39250 ([::ffff:127.0.0.1]:3925
 
 Imagine the case where the user can control the server and the port. This is very common in LDAP configuration settings. For example, there are many web applications that support LDAP configuration as a feature. Some common examples are embedded devices (e.g. webcam, routers), Multi-Function Printers, multi-tenancy environments, and enterprise appliances and applications.
 
-!
+![](https://www.silentrobots.com/images/LDAP_Printer_Injection.png)
 
 # Putting It All Together
 

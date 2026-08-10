@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 Circumventing DNS Pinning for XSS ha.ckers.org web application security lab
 
-[!](http://ha.ckers.org/blog/20071014/web-application-scanning-depth-statistics/)
+[![](http://ha.ckers.org/images/nto_banner.jpg)](http://ha.ckers.org/blog/20071014/web-application-scanning-depth-statistics/)
  Paid Advertising
  [![web application security lab](http://ha.ckers.org/images/84844372/rsnake/hackers.jpg)](http://ha.ckers.org/)
 

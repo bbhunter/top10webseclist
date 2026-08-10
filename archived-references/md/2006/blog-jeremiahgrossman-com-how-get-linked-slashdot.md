@@ -86,7 +86,7 @@ Snipping off "op=PreviewStory" makes the link last longer. If you want to shorte
 Voila.
 
 Preview Page Screenshot:
-[!](https://photos1.blogger.com/blogger/4263/1222/1600/how_to_get_linked_from_slashdot.png)
+[![](https://photos1.blogger.com/blogger/4263/1222/320/how_to_get_linked_from_slashdot.png)](https://photos1.blogger.com/blogger/4263/1222/1600/how_to_get_linked_from_slashdot.png)
 
 Some answered questions
 

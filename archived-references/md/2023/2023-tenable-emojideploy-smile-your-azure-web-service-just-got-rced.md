@@ -157,7 +157,7 @@ The SCM panel requires Azure Active Directory (AAD) authentication. If the user 
 
 Due to these authentication mechanisms, users can not access other users' SCM panels.
 
-!
+![](https://www.tenable.com/sites/default/files/inline/images/image3_1.png)
 
 *Image source: Tenable, 2023*
 
@@ -169,7 +169,7 @@ First, when investigating the SCM panel, the cookies’ attributes configuration
 
 The Same-Site attribute is a browser security feature introduced in 2016; its default value is set to "Lax". The purpose of the Same-Site attribute is to protect against cross-origin information leakage/attacks, e.g. cross-site request forgery (CSRF). According to the [request for comments (RFC)](https://en.wikipedia.org/wiki/Request_for_Comments), the "None" value in the Same-Site attribute provides no protection against cross-origin attacks.
 
-!
+![](https://www.tenable.com/sites/default/files/inline/images/image5_0.png)
 
 *Image source: Tenable, 2023*
 
@@ -182,7 +182,7 @@ https://<my-webapp>.scm.azurewebsites.net.
 
 Sending https://test.com raised an Unauthorized 401 response:
 
-!
+![](https://www.tenable.com/sites/default/files/inline/images/image1_3.png)
 
 *Image source: Tenable, 2023*
 

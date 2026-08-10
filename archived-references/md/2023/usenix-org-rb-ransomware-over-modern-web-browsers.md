@@ -68,7 +68,7 @@ File System Access (FSA) API enables web applications to interact with files on 
 
 USENIX is committed to Open Access to the research presented at our events. Papers and proceedings are freely available to everyone once the event begins. Any video, audio, and/or slides that are posted after the event are also free and open to everyone. [Support USENIX](https://www.usenix.org/annual-fund) and our commitment to Open Access.
 
-!
+![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-locked.png)
 
 BibTeX
 
@@ -89,7 +89,7 @@ BibTeX
 
 ![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Oz PDF](https://www.usenix.org/system/files/usenixsecurity23-oz.pdf)
 
-!
+![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-unlocked.png)
 
 [View the slides](https://www.usenix.org/system/files/sec23_slides_oz.pdf)
 

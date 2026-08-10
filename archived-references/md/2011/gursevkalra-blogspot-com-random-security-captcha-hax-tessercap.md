@@ -82,7 +82,7 @@ This blog post was voted as 8th best in [Top 10 Web Hacking Techniques of 2011](
 
  An example TesserCap image preprocessing and run on Wikipedia (Wikimedia’s Fancy CAPTCHA) is shown below:
 
- [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpj6vnjbvGiBSxoYeHWxndVfrmcRRDxY0cG3AHciMszEn_gE1Y8BmfzYWDyx2kZ_oiGmMl2XJegx3mwsQxY7KDnTpG20E9e0yI7pUrPd4WtzeSjp6qSwYVUw8w3Y_aKsMcrcvfXQPZlSA/s1600/p1.png)
+ [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpj6vnjbvGiBSxoYeHWxndVfrmcRRDxY0cG3AHciMszEn_gE1Y8BmfzYWDyx2kZ_oiGmMl2XJegx3mwsQxY7KDnTpG20E9e0yI7pUrPd4WtzeSjp6qSwYVUw8w3Y_aKsMcrcvfXQPZlSA/s320/p1.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpj6vnjbvGiBSxoYeHWxndVfrmcRRDxY0cG3AHciMszEn_gE1Y8BmfzYWDyx2kZ_oiGmMl2XJegx3mwsQxY7KDnTpG20E9e0yI7pUrPd4WtzeSjp6qSwYVUw8w3Y_aKsMcrcvfXQPZlSA/s1600/p1.png)
 
 #  Downloads
 
@@ -119,20 +119,20 @@ This blog post was voted as 8th best in [Top 10 Web Hacking Techniques of 2011](
 
 ##  Wikipedia
 
- [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgazLc-ZHQx6cIieFTw1ZPqAeXY68tlBx-olwcdUBzxSiYKEIUUEjcgfGyZrDaFD5ZHZ6PUOy1Trh2LQCHjv1n-lRFMTDR1VMClo10EVC2kpgNbYR7FE_ubS5R410ZuViKD64-t35vQwC8/s1600/p2.png)
+ [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgazLc-ZHQx6cIieFTw1ZPqAeXY68tlBx-olwcdUBzxSiYKEIUUEjcgfGyZrDaFD5ZHZ6PUOy1Trh2LQCHjv1n-lRFMTDR1VMClo10EVC2kpgNbYR7FE_ubS5R410ZuViKD64-t35vQwC8/s320/p2.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgazLc-ZHQx6cIieFTw1ZPqAeXY68tlBx-olwcdUBzxSiYKEIUUEjcgfGyZrDaFD5ZHZ6PUOy1Trh2LQCHjv1n-lRFMTDR1VMClo10EVC2kpgNbYR7FE_ubS5R410ZuViKD64-t35vQwC8/s1600/p2.png)
 
 ##  OpenCaptcha Preprocessing
 
- [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQpFzMXPnZ-S0xmQ_qODT5-H1uHILGUglLs_cSkx-2MZZ-Khq77hM-ozhpC3ZI5rdpvSzjLi_Zvi2-xFRWbrqqCJZlt0XzIZbEeHMMDIOI95FyC8FI1Z61uisZLoplQ-cwECDBuq06RK8/s1600/p3.png)
+ [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQpFzMXPnZ-S0xmQ_qODT5-H1uHILGUglLs_cSkx-2MZZ-Khq77hM-ozhpC3ZI5rdpvSzjLi_Zvi2-xFRWbrqqCJZlt0XzIZbEeHMMDIOI95FyC8FI1Z61uisZLoplQ-cwECDBuq06RK8/s320/p3.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQpFzMXPnZ-S0xmQ_qODT5-H1uHILGUglLs_cSkx-2MZZ-Khq77hM-ozhpC3ZI5rdpvSzjLi_Zvi2-xFRWbrqqCJZlt0XzIZbEeHMMDIOI95FyC8FI1Z61uisZLoplQ-cwECDBuq06RK8/s1600/p3.png)
 
 ##  OpenCaptcha Sample Run
 
- [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinXf1EekU6o-UlgGzCRAexQBLjRZSnU61elvfIpuIdzwwxApI6KJ0Ndty2jjKwsuYbS17bcd9HzLgXzoXaChHr2DXM6CuXoLm-vc1fK_SHMhktUd0P6sH7UEd2KpW-IXpEi9eIc-eAvrk/s1600/p4.png)
+ [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinXf1EekU6o-UlgGzCRAexQBLjRZSnU61elvfIpuIdzwwxApI6KJ0Ndty2jjKwsuYbS17bcd9HzLgXzoXaChHr2DXM6CuXoLm-vc1fK_SHMhktUd0P6sH7UEd2KpW-IXpEi9eIc-eAvrk/s320/p4.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinXf1EekU6o-UlgGzCRAexQBLjRZSnU61elvfIpuIdzwwxApI6KJ0Ndty2jjKwsuYbS17bcd9HzLgXzoXaChHr2DXM6CuXoLm-vc1fK_SHMhktUd0P6sH7UEd2KpW-IXpEi9eIc-eAvrk/s1600/p4.png)
 
 ##  Reddit
 
- [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnyru4oi0Xk67ieHrKuyQFndqAQ2tjQjKTh2a8QkWydlKbEOL4gsGJPq7w4GEuSGoqj6yA031WNouap7-7ipiNJoOhynkackJy1HHip7YZ8Fl8c2C5pMF_NKy7IcOWbJ-ZST3a0iNwAEU/s1600/p5.png)
+ [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnyru4oi0Xk67ieHrKuyQFndqAQ2tjQjKTh2a8QkWydlKbEOL4gsGJPq7w4GEuSGoqj6yA031WNouap7-7ipiNJoOhynkackJy1HHip7YZ8Fl8c2C5pMF_NKy7IcOWbJ-ZST3a0iNwAEU/s320/p5.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnyru4oi0Xk67ieHrKuyQFndqAQ2tjQjKTh2a8QkWydlKbEOL4gsGJPq7w4GEuSGoqj6yA031WNouap7-7ipiNJoOhynkackJy1HHip7YZ8Fl8c2C5pMF_NKy7IcOWbJ-ZST3a0iNwAEU/s1600/p5.png)
 
 ##  eBay
 
- [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPBfJCFQybuQzVHMQLvi8l5jQSPOy-IcQ3ArXj62nN9x1wfS3flziJKu5dkwJNpkyd5SNipbIukh8285EK7hcDDRat6EEpZkUpSmvME9YSEuF_HhpD-qzCguI_mPAysyJ4M80nVljgGl8/s1600/p6.png)
+ [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPBfJCFQybuQzVHMQLvi8l5jQSPOy-IcQ3ArXj62nN9x1wfS3flziJKu5dkwJNpkyd5SNipbIukh8285EK7hcDDRat6EEpZkUpSmvME9YSEuF_HhpD-qzCguI_mPAysyJ4M80nVljgGl8/s320/p6.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPBfJCFQybuQzVHMQLvi8l5jQSPOy-IcQ3ArXj62nN9x1wfS3flziJKu5dkwJNpkyd5SNipbIukh8285EK7hcDDRat6EEpZkUpSmvME9YSEuF_HhpD-qzCguI_mPAysyJ4M80nVljgGl8/s1600/p6.png)

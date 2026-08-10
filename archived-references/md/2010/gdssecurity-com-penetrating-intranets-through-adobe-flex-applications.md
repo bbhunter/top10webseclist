@@ -65,7 +65,7 @@ Penetrating Intranets through Adobe Flex Applications - Gotham Digital Science
 
 [About](https://www.levelblue.com/g/a.php)|[Careers](https://www.levelblue.com/g/ca.php)|[Press](https://www.levelblue.com/g/pr.php)|[News](https://www.levelblue.com/g/ne.php)|[Case Studies](https://www.levelblue.com/g/cs.php)|[Tools](https://www.levelblue.com/l/t.php)|[Blog](https://www.levelblue.com/l/b/)
 
-[!](https://www.levelblue.com/)
+[![](https://www.levelblue.com/images/gds_logo_2.png)](https://www.levelblue.com/)
 
   Mar   17   2010
 

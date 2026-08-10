@@ -294,7 +294,7 @@ This allowed us to create Gitpod workspaces from any repositories to which the v
 
 The sequence diagram below can be used to visualize the complete flow for the above Cookie Tossing attack against GitPod.
 
-!
+![](https://res.cloudinary.com/snyk/image/upload/f_auto,w_2560,q_auto/v1732628085/Screenshot_2024-11-26_at_8.34.18_AM.png)
 
 This issue was reported to GitPod on June 26th 2024 which was promptly fixed on July 1st 2024 [in this PR](https://github.com/gitpod-io/gitpod/pull/19973) by leveraging the __Host__ cookie prefix. The vulnerability was issued as CVE-2024-21583.
 

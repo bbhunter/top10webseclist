@@ -2654,6 +2654,12 @@ function inlineMarkdown(value) {
   return output;
 }
 
+function demotedHeading(line) {
+  return line.length > 300 && /^#{1,6}\s+/.test(line)
+    ? line.replace(/^#{1,6}\s*/, "")
+    : line;
+}
+
 function markdownDocument(markdown) {
   let body = String(markdown).replace(/^\uFEFF/, "");
   if (body.startsWith("---\n") || body.startsWith("---\r\n")) {
@@ -2752,7 +2758,11 @@ function markdownDocument(markdown) {
       continue;
     }
     if (!line.trim()) flushParagraph();
-    else paragraph.push(line.trim());
+    // An over-long heading reaches here instead of the heading branch above, and
+    // printing its `##` markers in front of the prose is worse than the prose.
+    // Conditional on it BEING one: `#nofilter` in a sentence is not a heading and
+    // must keep its hash.
+    else paragraph.push(demotedHeading(line).trim());
   }
   flushParagraph();
   return { html: html.join("\n"), headings };

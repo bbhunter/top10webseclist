@@ -100,7 +100,7 @@ The issue was addressed by implementing a validation check to ensure that the `x
 
 Despite the previous fix, the problem is far from resolved and the worst is yet to come. Inspection of the URL construction process shows that two other standard headers are still employed without validation: `x-forwarded-proto` for the protocol and `x-forwarded-port` concatenated with the `host` :
 
-!
+![](https://zhero-web-sec.github.io/images/astro-midd-2.png)
 
 The `x-forwarded-proto` header is of primary interest because it is consumed **at the start** of the *template* string. By injecting our payload at the protocol level during URL assembly, **we can effectively rewrite the entire URL**, including `scheme`, `host`, `port`, and `path`, and relocate the original hostname and path into the query component, thereby avoiding influence on routing logic.
 
@@ -139,11 +139,11 @@ Let’s start by reviving [some good memories](https://zhero-web-sec.github.io/r
 
 We will base our middleware on the developers’ source of truth, the [official Astro documentation](https://docs.astro.build/en/guides/authentication/) and use the following snippet to protect our `/admin` route:
 
-!
+![](https://zhero-web-sec.github.io/images/astro-midd-3.png)
 
 Unsurprisingly, when we try to access `/admin` *unauthenticated* we are redirected:
 
-!
+![](https://zhero-web-sec.github.io/images/astro-midd-4.png)
 
 Trying to use x-forwarded-[proto/port] with a classic payload by spoofing the path will not work, since once the middleware is reached, the request has already been created, and access to the `url` or `pathname` property will already contain the final path taken into account by the router.
 
@@ -151,7 +151,7 @@ Trying to use x-forwarded-[proto/port] with a classic payload by spoofing the pa
 
 However, since `x-forwarded-proto` seeds the scheme for `new URL(...)`, it effectively grants control over the whole WHATWG URL instance (protocol/host/port/path/query), enabling parser manipulation and exploration of router-accepted edge cases, leading, after some research, to the following interesting payload:
 
-!
+![](https://zhero-web-sec.github.io/images/astro-midd-5.png)
 
 Before explaining why this payload is relevant to our exploit, let’s take a detour to understand what happened at the parser level, based on the [WHATWG URL standard specification](https://url.spec.whatwg.org/#scheme-state) which operates like a state machine, updating its internal state based on the characters/inputs observed :
 
@@ -177,11 +177,11 @@ Otherwise, set state to path state, and decrease pointer by 1.
 
 However, in the example below, we see that the same payload, using the `http` scheme, appears to use `admin` as the host and automatically adding `/` as a pathname, which may seem, at first glance, to contradict what we observed earlier :
 
-!
+![](https://zhero-web-sec.github.io/images/astro-midd-6.png)
 
 The reason is that `http` is recognized as a **special scheme** :
 
-!
+![](https://zhero-web-sec.github.io/images/astro-midd-7.png)
 
 which affects how the URL is parsed: the process switches to what the specification refers to as `the special authority slashes state`:
 
@@ -234,7 +234,7 @@ export function prependForwardSlash(path: string) {
 
 ```
 
-!
+![](https://zhero-web-sec.github.io/images/astro-midd-15.png)
 
 Our pathname was initially `admin` when it reached the middleware layer, but became `/admin` once it reached the router layer. By adding the following payload to our request, a pleasant surprise awaits us:
 
@@ -243,7 +243,7 @@ x-forwarded-proto: x:admin?
 
 ```
 
-! *secret secret secret*
+![](https://zhero-web-sec.github.io/images/astro-midd-8.png) *secret secret secret*
 
 We were able to bypass the check because, as you will have understood, `"admin" != "/admin"`. The question mark `?` marks the start of the query string and absorbs the current path. As a result, `${req.url}`, whatever its value, is interpreted as part of the query and no longer influences the routing logic when creating the URL.
 
@@ -255,7 +255,7 @@ As the request URL is built from untrusted input via the `x-forwarded-protocol` 
 
 Example code from [Astro’s SSR app template](https://github.com/withastro/astro/tree/main/examples/ssr) is vulnerable: it reuses the request’s origin and concatenates it to the API endpoint, `${origin}` being equal to the protocol+host+port provided as the value of the `x-forwarded-proto` header :
 
-!
+![](https://zhero-web-sec.github.io/images/astro-midd-9.png)
 
 The exploitability of the SSRF will obviously depend on the target application and how the call is made.
 
@@ -263,7 +263,7 @@ The exploitability of the SSRF will obviously depend on the target application a
 
 The exploitability of the following depends on the presence of a CDN and therefore corresponds to a cache-poisoning scenario. If the value of `Astro.url` is used to construct links within the page, an attacker can achieve stored XSS by manipulating the `x-forwarded-proto` header. Consider the following page using `Astro.url` to create its link :
 
-!
+![](https://zhero-web-sec.github.io/images/astro-midd-10.png)
 
 We need to craft a payload that allows the router to reach the correct path, namely `/links`, while also having valid JavaScript so that the payload executes, satisfying both worlds:
 
@@ -285,7 +285,7 @@ x-forwarded-proto: javascript:/links#/;alert('Long live Algeria')//
 - `alert('Long live Algeria')` -> arbitrary JS code
 - `//` -> marks the opening of comments so that anything that follows is not executed by JS, thus avoiding syntax errors
 
-!
+![](https://zhero-web-sec.github.io/images/astro-midd-11.png)
 
 It is, of course, also possible to inject any link and/or path, depending on how the application constructs its links. If a CDN is present and its caching policy permits, the poisoned response may be cached and served to all users, resulting, in the worst case, in a stored XSS.
 
@@ -308,7 +308,7 @@ X-Forwarded-Port: /nope?
 
 ```
 
-!
+![](https://zhero-web-sec.github.io/images/astro-midd-12.png)
 
 ## WAF bypass
 
@@ -320,7 +320,7 @@ As mentioned earlier, a security advisory was published last month regarding the
 
 Let’s get specific, as explained earlier, the fix uses a common whitelist system for allowed domains:
 
-!
+![](https://zhero-web-sec.github.io/images/astro-midd-13.png)
 
 By sending `x-forwarded-host` with an **empty value**, the `forwardedHostname` variable is assigned an empty string. Then, during [the subsequent check](https://github.com/withastro/astro/blob/7a5f28006e9b1f6ad77c7884991ba551ca9ff35b/packages/astro/src/core/app/node.ts#L107), the condition fails because `forwardedHostname` returns `false`, its value being **an empty string** :
 
@@ -341,7 +341,7 @@ It should be noted that what precedes the host is already set to `http(s)://` si
 
 From there, the following request on the example SSR application (*the same as before, from the Astro repo*) yields an “SSRF”:
 
-!
+![](https://zhero-web-sec.github.io/images/astro-midd-14.png)
 
 Empty `x-forwarded-host` to force the host value to an empty string, and specify the target host in the path so that it is set as the host by the parser. The URL therefore becomes, based on the example above: `http://www.attacker-host.net/`. The value is then concatenated with the API endpoints used by the application: `api/cart` and `api/products`.
 

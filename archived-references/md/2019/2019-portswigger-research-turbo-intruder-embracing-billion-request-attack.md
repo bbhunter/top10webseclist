@@ -119,11 +119,11 @@ Install Turbo Intruder into Burp Suite using the BApp Store under the Extender t
 
 To use it, simply highlight the area you want to inject over, then right click and 'Send to Turbo Intruder':
 
-!
+![](https://portswigger.net/cms/images/a4/15/75f7-article-launchturbo.png)
 
 This will open a window containing your request and a Python snippet looking something like this:
 
-!
+![](https://portswigger.net/cms/images/e7/23/211d-article-turbo-default.png)
 
 You can customise this code depending on what you want to achieve with your attack.
 
@@ -244,7 +244,7 @@ To learn about other advanced features available in Turbo Intruder, check out th
 
 You can customise some editor settings like line-numbers and font size via the settings menu:
 
-!
+![](https://portswigger.net/cms/images/87/cb/7dbb-article-turbosettings.png)
 
 #### Final note
 

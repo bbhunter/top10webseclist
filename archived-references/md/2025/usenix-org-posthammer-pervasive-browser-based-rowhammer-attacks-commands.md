@@ -97,14 +97,14 @@ BibTeX
 
 ![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [de Ridder (Prepublication) PDF](https://www.usenix.org/system/files/conference/usenixsecurity25/sec25cycle1-prepub-849-de-ridder.pdf)
 
-!
+![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-unlocked.png)
 
 [View the slides](https://www.usenix.org/system/files/sec25_slides_de-ridder.pdf)
 
-!
+![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_available_125_update.png)
 
-!
+![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_functional_125.png)
 
-!
+![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_reproduced_125.png)
 
 ## Presentation Video

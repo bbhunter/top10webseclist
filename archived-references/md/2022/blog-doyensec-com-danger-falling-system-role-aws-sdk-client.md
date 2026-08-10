@@ -222,7 +222,7 @@ if err != nil {
 
 The error handling was setting `aws_config.credentials = nil` and trying again to list the objects in the bucket.
 
- ! *Looking at `aws_config.credentials = nil`*
+ ![](https://blog.doyensec.com/public/images/cloudsectidbit-fry.png) *Looking at `aws_config.credentials = nil`*
 
 Under those circumstances, the credentials provider chain will be used and eventually the instance’s IAM role will be assumed. In our case, the automatically retrieved credentials had full access to internal S3 buckets.
 
@@ -230,7 +230,7 @@ Under those circumstances, the credentials provider chain will be used and event
 
 If internal S3 bucket names are exposed to the end-user by the platform (e.g., via network traffic), the user can use them as input for the “import from S3” functionality and inspect their content directly in the UI.
 
- ! *Reading internal bucket names list extracted from Burp Suite history*
+ ![](https://blog.doyensec.com/public/images/cloudsectidbit-spongebob.jpeg) *Reading internal bucket names list extracted from Burp Suite history*
 
 In fact, it is not uncommon to see internal bucket names in an application’s traffic as they are often used for internal data processing. In conclusion, providing internal bucket names resulted in them being fetched from the import functionality and added to the platform user’s data.
 

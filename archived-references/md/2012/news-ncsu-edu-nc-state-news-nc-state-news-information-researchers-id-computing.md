@@ -99,7 +99,7 @@ Release Date: 11.28.2012
 
 Researchers from North Carolina State University and the University of Oregon have found a way to exploit cloud-based Web browsers, using them to perform large-scale computing tasks anonymously. The finding has potential ramifications for the security of “cloud browser” services.
 
-!
+![](http://v3prod.news.ncsu.edu/wp/wp-content/uploads/2012/11/Enck-275.jpg)
 
 William Enck
 

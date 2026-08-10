@@ -124,7 +124,7 @@ Whether it’s hidden vulnerabilities or patterns you might miss, we help you st
 
 [Talk to an expert](https://www.bastionsecurity.co.nz/contact-us)
 
-[!
+[![](https://cdn.prod.website-files.com/630c43d9a3e23b31da70b63e/684b50b7966ce215e342b8bf_training-01.svg)
 
 Employee Cyber Training & Awareness
 
@@ -132,7 +132,7 @@ Your people are your first line of defence. Our cyber training builds awareness 
 
 ](https://www.bastionsecurity.co.nz/solutions/employee-cyber-training-awareness)
 
-[!
+[![](https://cdn.prod.website-files.com/630c43d9a3e23b31da70b63e/684b50c2ea7f26dc07ffc3c5_advisory-01.svg)
 
 Advisory
 

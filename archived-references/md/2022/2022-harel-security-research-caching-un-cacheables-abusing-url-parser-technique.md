@@ -61,7 +61,7 @@ page going offline. To read the original, follow the link above.
 
 #### Here is how I was able to poison the cache of thousands of pages in Glassdoor with reflected & stored XSS
 
-  !
+  ![](https://nokline.github.io/images/thumbnail.png)
 
 ## Introduction
 

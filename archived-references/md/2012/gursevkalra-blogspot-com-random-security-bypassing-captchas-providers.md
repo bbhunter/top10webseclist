@@ -70,7 +70,7 @@ CAPTCHA service providers validate millions of CAPTCHAs each day and protect tho
 
  If you decompile the .NET Plugin, you'll be able to pull out reCAPTCHA's verification URL, which demonstrates the absense of HTTPS:
 
- [!](https://web.archive.org/web/20170418233059/http://2.bp.blogspot.com/-vUzGvj_ZTgU/UGu_Z0jJ0MI/AAAAAAAAAyA/FKAguYjIo0Y/s1600/recaptcha-dotnet.png)
+ [![](https://web.archive.org/web/20170418233059im_/http://2.bp.blogspot.com/-vUzGvj_ZTgU/UGu_Z0jJ0MI/AAAAAAAAAyA/FKAguYjIo0Y/s400/recaptcha-dotnet.png)](https://web.archive.org/web/20170418233059/http://2.bp.blogspot.com/-vUzGvj_ZTgU/UGu_Z0jJ0MI/AAAAAAAAAyA/FKAguYjIo0Y/s1600/recaptcha-dotnet.png)
 
  In the current scenario, two types of attacks can be launched against vulnerable CAPTCHA implementations. These attacks are based on the assumption that an attacker is able to intercept the CAPTCHA validation traffic between target website and the CAPTCHA provider.
 
@@ -86,7 +86,7 @@ CAPTCHA service providers validate millions of CAPTCHAs each day and protect tho
 
  The following image describes what I call the "CAPTCHA Clipping Attack". Notice that steps 5 and 6 in blue would be the normal operation of events. We'll go into the attack in a little more detail below.
 
- [!](https://web.archive.org/web/20170418233059/http://2.bp.blogspot.com/-3ZaUYwaicTM/UGu_ghI4uaI/AAAAAAAAAyI/F_9TrgjxV1A/s1600/captcha-clipping-attack.png)
+ [![](https://web.archive.org/web/20170418233059im_/http://2.bp.blogspot.com/-3ZaUYwaicTM/UGu_ghI4uaI/AAAAAAAAAyI/F_9TrgjxV1A/s400/captcha-clipping-attack.png)](https://web.archive.org/web/20170418233059/http://2.bp.blogspot.com/-3ZaUYwaicTM/UGu_ghI4uaI/AAAAAAAAAyI/F_9TrgjxV1A/s1600/captcha-clipping-attack.png)
 
  Since the website’s application server acts as a client to CAPTCHA provider during steps 5 and 6 (in blue) and the application server often neglects to validate the CAPTCHA provider’s identity and the session integrity checks, an attacker may be able to impersonate the CAPTCHA provider and undermine the anti-automation protection (steps 5 and 6 in red). CAPTCHA validation responses are mostly Boolean (true or false, success or failure, pass or fail, 0 or 1). The response format and its contents are also publicly available as part of CAPTCHA provider’s API documentation. This allows an attacker to easily construct the finite set of possible responses, impersonate the CAPTCHA provider, and perform malicious CAPTCHA validation for the application servers.
 
@@ -106,7 +106,7 @@ CAPTCHA service providers validate millions of CAPTCHAs each day and protect tho
 - Logs POST requests that match any supported CAPTCHA provider to capture private and public keys. Unmatched requests are forwarded as is.
 - clipcaptcha supports five operational modes. These are “monitor”, “stealth”, “avalanche”, “denial of service” and “random”.
 
- [!](https://web.archive.org/web/20170418233059/http://3.bp.blogspot.com/-1i3S5-DHhBQ/UGu_omEvTWI/AAAAAAAAAyQ/9ZMWUOJcY7s/s1600/clipcaptcha-help.png)
+ [![](https://web.archive.org/web/20170418233059im_/http://3.bp.blogspot.com/-1i3S5-DHhBQ/UGu_omEvTWI/AAAAAAAAAyQ/9ZMWUOJcY7s/s320/clipcaptcha-help.png)](https://web.archive.org/web/20170418233059/http://3.bp.blogspot.com/-1i3S5-DHhBQ/UGu_omEvTWI/AAAAAAAAAyQ/9ZMWUOJcY7s/s1600/clipcaptcha-help.png)
 
  Download
  clipcaptcha can be downloaded [here](https://web.archive.org/web/20170418233059/https://github.com/OpenSecurityResearch/clipcaptcha)

@@ -373,7 +373,7 @@ The first step is pointing the Fastly CDN profile to your server's IP as its ori
 
 Since the subdomain poisoning patterns are predictable, we can leverage some client side code to generate a list of random subdomains that will lead to poisoned responses. While we do not know which subdomain will eventually point to Fastly, we can simply load up an image from all of the random subdomains until we win, leveraging event handlers to notify us about the successful poison.
 
-!
+![](https://cdn.prod.website-files.com/64233a8baf1eba1d72a641d4/66ebff3ec8f20d5eda55b481_66ebfd91494e26d94f405bc6_fastly-poison.png)
 
 Show Fastly Proof-of-Concept Code
 
@@ -387,7 +387,7 @@ Eric let us know that he had spent over 100 hours on this issue from a research 
 
 This proof-of-concept relies on the fact that one of the IPs within the pool of IPs returned through the poisoning will be running a vulnerable version of cPanel, leading to XSS. It will iterate through generated subdomains until the XSS fires.
 
-!
+![](https://cdn.prod.website-files.com/64233a8baf1eba1d72a641d4/66ebff3ec8f20d5eda55b474_66ebfe03e1a5d89a81f841c3_cpanel-poison.png)
 
 We have simplified Eric's proof-of-concept and our version can be found below:
 

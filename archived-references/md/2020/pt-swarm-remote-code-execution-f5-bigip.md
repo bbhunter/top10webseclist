@@ -69,13 +69,13 @@ The CVE-2020-5902 vulnerability has been assigned a CVSS score of 10, the highes
 
 Let’s deploy a Big-IP appliance on our virtual machine, and get access to its command line interface:
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/image5.png)
 
 *The cmdline interface for the F5 Big-IP appliance*
 
 The first thing to do when starting any research on any appliance is to examine all of the open ports and the applications, which are listening on them. This provides a way to discover all of the possible entry points to the system. An excellent command for that purpose is netstat:
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/image8.png)
 
 *Discovering open ports on the appliance*
 
@@ -122,7 +122,7 @@ ProxyPassMatch ^/waui/(.*)$ ajp://localhost:8009/waui/$1 retry=5
 
 It configures the main Apache server to pass some requests to the Apache Tomcat server on the local 8009/tcp port [via the AJP protocol](https://en.wikipedia.org/wiki/Apache_JServ_Protocol), if request URLs match one of the specified regexps.
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/image10.png)
 
 *Discovering the application listening on port 8009/tcp*
 
@@ -130,7 +130,7 @@ When you see two or more servers chained together, such as an Apache HTTP Server
 
 In the case of an Apache HTTP Server and an Apache Tomcat the research suggests to test the `/..;/` sequence of symbols:
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/image3.png)
 
 *A slide from Orange Tsai’s presentation*
 
@@ -150,7 +150,7 @@ To check if this technique works, let’s obtain a path to one of the hidden Tom
 
 The path `/tiles/tmui/em_filter.jsp` should not be matched by regexps in the proxy_ajp.conf file, so let’s test it:
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/image9.png)
 
 *Testing Orange Tsai’s technique*
 
@@ -183,7 +183,7 @@ The path /hsqldb/ caught my attention. The abbreviation HSQLDB stands for [Hyper
 
 Let’s check that we can use our technique to access this path:
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/image1.png)
 
 *Testing the authorization bypass technique to access the HSQLDB endpoint*
 
@@ -193,7 +193,7 @@ On the official HSQLDB website [there is a guide about connecting to the databas
 
 Let’s use a tried and true technique called “Google Search” to find the default usernames and passwords for the HSQLDB:
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/image4.png)
 
 *Obtaining the default credentials for the HSQLDB*
 
@@ -222,7 +222,7 @@ public class Main {
 }
 ```
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/image2.png)
 
 *The execution of this Java code*
 
@@ -297,7 +297,7 @@ public class Main {
 
 And after adding one of the reverse shell commands for bash to this code we can obtain RCE on our F5 Big-IP appliance:
 
-!
+![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/image6-1.png)
 
 *Obtaining access to our F5 Big-IP appliance via the discovered vulnerability chain*
 

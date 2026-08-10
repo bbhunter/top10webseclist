@@ -334,7 +334,7 @@ The character set of salt is `[a-zA-Z0-9]`, meaning that a maximum of 62 charact
 
 The following figure shows the absolute frequency of each character from the salt charset `[a-zA-z0-9]` for the first position `(0)` of 382 generated salts. For this experiment run, we required 382 generated salts to meet the minimum requirement for an attack, requiring more salts than on average. However, we see that some characters appear more frequently than others which causes multiple occurrences of the same characters. For this reason, we need our primitive unsorted users again, as in the example mentioned above.
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/6c5081e0-8e15-41e6-a277-3ca1f623c623/body-bfdf5998-fb9c-4d11-8f12-92ad98185736_django_blog_salt.png)
 
 As mentioned above, we are lucky that every password hash always starts by default with `pbkdf2_sha256`. If we now sort all users by the first characters of the password hash, a `p` is returned for each user, and here is our "unsorted" primitive again! The algorithm to extract all hashes (Salt + base64_encode(HASH)) is the same as described in the minimal example above.
 

@@ -66,9 +66,9 @@ page going offline. To read the original, follow the link above.
 
 New Hack Abuses Cloud-Based Browsers - Dark Reading
 
- !
+ ![](http://switch.atdmt.com/action/msnus_techweb_darkreading_101008)
 
-|  ! |       |  [!]() |   |
+|  ![](http://img.lightreading.com/darkreading/dr2006_searchlabel.gif) |       |  [![](http://img.lightreading.com/darkreading/dr2006_searcharrow.gif)]() |   |
 
 #  New Hack Abuses Cloud-Based Browsers
 
@@ -107,7 +107,7 @@ New Hack Abuses Cloud-Based Browsers - Dark Reading
 
   
 
- [!Subscribe to RSS](http://www.darkreading.com/rss/index.html)
+ [![](http://twimgs.com/techweb/xml.gif)Subscribe to RSS](http://www.darkreading.com/rss/index.html)
 
   [» Write To Editor](http://www.darkreading.com/index/writetous)
  [» Reprint This Article](http://www.wrightsreprints.com/reprints/?magid=2202)
@@ -124,7 +124,7 @@ New Hack Abuses Cloud-Based Browsers - Dark Reading
 [![report](http://twimgs.com/darkreading/cloudsecurity/research-2012-public-cloud-staffing-survey_73800.gif)](http://www.darkreading.com/CloudSecurity/util/10079/download.html?cid=) [Public Cloud Management Talent Shortage](http://www.darkreading.com/CloudSecurity/util/10079/download.html?cid=)
  Cloud services enable IT to streamline systems and application management functions and redirect resources to business-focused projects. But the public cloud isn't "set it and forget it." Time and attention must be dedicated to identity management, performance monitoring, tracking service-level agreements, etc. CIOs however are finding it challenging to hire people who are familiar with IT fundamentals but who also have relevant business and soft skills.
 
- ! !
+ ![](http://twimgs.com/infoweek/security/darkreading/backgrounds/TC_greybox_top_left.gif) ![](http://twimgs.com/infoweek/security/darkreading/backgrounds/TC_greybox_top_right.gif)
 
 ## Related Content
 
@@ -143,7 +143,7 @@ New Hack Abuses Cloud-Based Browsers - Dark Reading
  [Providing Security for Software Systems in the Cloud](http://www.darkreading.com/CloudSecurity/util/10092/download.html?cid=)
  This paper details risks to software deployed in the cloud. Some risks impact security in much the same way wherever and however the software is hosted, but many old risks take on new importance when software makes the jump to the cloud. In this paper, we discuss notable concerns in all of these areas and describe an approach for assessing a software system's readiness to be deployed in the cloud.
 
- ! !
+ ![](http://twimgs.com/infoweek/security/darkreading/backgrounds/TC_greybox_bottom_left.gif) ![](http://twimgs.com/infoweek/security/darkreading/backgrounds/TC_greybox_bottom_right.gif)
 
 ## Cloud Security Newsfeed
 
@@ -169,7 +169,7 @@ New Hack Abuses Cloud-Based Browsers - Dark Reading
 
 [More >>](http://www.darkreading.com/whitepaper/cloud_security/more.html?cid=SBX_dr_fture_wp_default_cloud_security&itc=SBX_dr_fture_wp_default_cloud_security)
 
-!
+![](http://twimgs.com/informationweek/smartbox/images/smartbox.PNG)
 
 -  [ Hard Truths about Cloud Differences ](http://www.informationweek.com/gogreen/022813mr?cid=SBX_dr_fture_Analytics_default_cloud_security&itc=SBX_dr_fture_Analytics_default_cloud_security)
 -  [ Take the InformationWeek 2013 Database Technology Survey ](http://informationweek.2013stateofdatabase.sgizmo.com/s3/?iwid=sb&cid=SBX_dr_fture_Analytics_default_cloud_security&itc=SBX_dr_fture_Analytics_default_cloud_security)
@@ -179,7 +179,7 @@ New Hack Abuses Cloud-Based Browsers - Dark Reading
 
 [More >>](http://www.darkreading.com/analytics/cloud_security/more.html?cid=SBX_dr_fture_Analytics_default_cloud_security&itc=SBX_dr_fture_Analytics_default_cloud_security)
 
-!
+![](http://twimgs.com/informationweek/smartbox/images/smartbox.PNG)
 
 -  [ Advanced Threats ](http://www.darkreading.com/tech-center/8/Advanced_Threats.html)
 -  [ Application Security ](http://www.darkreading.com/tech-center/15/Application_Security.html)

@@ -65,7 +65,7 @@ Automated Padding Oracle Attacks with PadBuster - Gotham Digital Science
 
 [About](http://www.gdssecurity.com/g/a.php)|[Careers](http://www.gdssecurity.com/g/ca.php)|[Press](http://www.gdssecurity.com/g/pr.php)|[News](http://www.gdssecurity.com/g/ne.php)|[Case Studies](http://www.gdssecurity.com/g/cs.php)|[Tools](http://www.gdssecurity.com/l/t.php)|[Blog](http://www.gdssecurity.com/l/b/)
 
-[!](http://www.gdssecurity.com/)
+[![](http://www.gdssecurity.com/images/gds_logo_2.png)](http://www.gdssecurity.com/)
 
   Sep   14   2010
 
@@ -83,7 +83,7 @@ Before we discuss using PadBuster, let’s briefly discuss the fundamentals of a
 
 While several padding schemes exist, one of the most common padding schemes is described in the PKCS#5 standard. With PCKS#5 padding, the final block of plaintext is padded with N bytes (depending on the length of the last plaintext block) of value N. This is best illustrated through the examples below, which show words of varying length (FIG, BANANA, AVOCADO, PLANTAIN, PASSIONFRUIT) and how they would be padded using PKCS#5 padding (the examples below use 8-byte blocks).
 
-[!](http://www.gdssecurity.com/l/po_fig1.png)
+[![](http://www.gdssecurity.com/l/po_fig1_sm.png)](http://www.gdssecurity.com/l/po_fig1.png)
  *Click to Enlarge*
 
 Note that at least one padding byte is ALWAYS appended to the end of a string, so a 7-byte value (like AVOCADO) would be padded with 0×01 to fill the block, while an 8-byte value (like PLANTAIN) would have a full block of padding added to it. The value of the padding byte also indicates the number of bytes, so logically final value(s) at the end of the last block of ciphertext must either:
@@ -118,15 +118,15 @@ http://sampleapp/home.jsp?UID=7B216A634951170FF851D6CC68FC9537858795A28ED4AAC6
 
 At this point, an attacker would not have any idea what the underlying plaintext is, but for the sake of this example, we already know the plaintext value, the padded plaintext value, and the encrypted value (see diagram below). As we mentioned previously, the initialization vector is pre-pended to the ciphertext, so the first block of 8 bytes is just that.
 
-!
+![](http://www.gdssecurity.com/l/po_fig2_sm.png)
 
 As for the block size, an attacker would see that the length of the encrypted ciphertext is 24 bytes. Since this number is evenly divisible by 8 and not divisible by 16, one can conclude that you are dealing with a block size of 8 bytes. Now, for reference take a look at what happens internally when this value is encrypted and decrypted. We see the process byte-for-byte in the diagram as this information will be helpful later on when discussing the exploit. Also note that the circled plus sign represents the XOR function.
 
 **Encryption Diagram (Click to Enlarge):**
- [!](http://www.gdssecurity.com/l/po_fig3.png)
+ [![](http://www.gdssecurity.com/l/po_fig3_sm.png)](http://www.gdssecurity.com/l/po_fig3.png)
 
 **Decryption Diagram (Click to Enlarge):**
- [!](http://www.gdssecurity.com/l/po_fig4.png)
+ [![](http://www.gdssecurity.com/l/po_fig4_sm.png)](http://www.gdssecurity.com/l/po_fig4.png)
 
 It is also worthwhile to point out that the last block (Block 2 of 2), when decrypted, ends in a proper padding sequence as expected. If this were not the case, the cryptographic provider would throw an invalid padding exception.
 
@@ -144,7 +144,7 @@ Response:  500 - Internal Server Error
 
 A 500 error response makes sense given that this value is not likely to result in anything valid when decrypted. The diagram below shows a closer look at what happens underneath the covers when the application attempts to decrypt this value. You should note that since we are only dealing with a single block of ciphertext (Block 1 of 1), the block MUST end with valid padding in order to avoid an invalid padding exception.
 
-!
+![](http://www.gdssecurity.com/l/po_fig5_sm.png)
 
 As shown above, the exception is thrown because the block does not end with a valid padding sequence once decrypted. Now, let’s take a look at what happens when we send the exact same value but with the last byte of the initialization vector incremented by one.
 
@@ -158,7 +158,7 @@ Response: 500 - Internal Server Error
 
 Like before, we also get a 500 exception. This is due to the fact that, like before, the value does not end in a valid padding sequence when decrypted. The difference however, is that if we take a closer look at what happens underneath the covers we will see that the final byte value is different than before (0x3C rather than 0x3D).
 
-!
+![](http://www.gdssecurity.com/l/po_fig6_sm.png)
 
 If we repeatedly issue the same request and increment just the last byte in the IV each time (up to FF) we will inevitably hit a value that produces a valid padding sequence for a single byte of padding (0×01). Only one value (out of the possible 256 different bytes) will produce the correct padding byte of 0×01. When you hit this value, you should end up with a different response than the other 255 requests.
 
@@ -172,7 +172,7 @@ Response: 200 OK
 
 Let’s take a look at the same diagram to see what happens this time.
 
-!
+![](http://www.gdssecurity.com/l/po_fig7_sm.png)
 
 Given this is the case, we can now deduce the intermediary value byte at this position since we know that when XORed with 0x3C, it produces 0×01.
 
@@ -184,15 +184,15 @@ Taking this one step further, now that we know the intermediary byte value we ca
 
 Now that we’ve decrypted the 8th byte of the sample block, it’s time to move onto the 7th byte. In order to crack the 8th byte of the sample, we brute forced an IV byte that would produce a last decrypted byte value of 0×01 (valid padding). In order to crack the 7th byte, we need to do the same thing, but this time both the 7th and 8th byte must equal 0×02 (again, valid padding). Since we already know that the last intermediary value byte is 0x3D, we can update the 8th IV byte to 0x3F (which will produce 0×02) and then focus on brute forcing the 7th byte (starting with 0×00 and working our way up through 0xFF).
 
-!
+![](http://www.gdssecurity.com/l/po_fig8_sm.png)
 
 Once again, we continue to generate padding exceptions until we hit the only value which produces a 7th decrypted byte value of 0×02 (valid padding), which in this case is 0×24.
 
-!
+![](http://www.gdssecurity.com/l/po_fig9_sm.png)
 
 Using this technique, we can work our way backwards through the entire block until every byte of the intermediary value is cracked, essentially giving us access to the decrypted value (albeit one byte at a time). The final byte is cracked using an IV that produces an entire block of just padding (0×08) as shown below.
 
-!
+![](http://www.gdssecurity.com/l/po_fig10_sm.png)
 
 **The Decryption Exploit with PadBuster**
 
@@ -217,13 +217,13 @@ padBuster.pl http://sampleapp/home.jsp?UID=7B216A634951170FF851D6CC68FC953785879
 
 Notice that we never told PadBuster how to recognize a padding error. While there is a command line option (-error) to specify the padding error message, by default PadBuster will analyze the entire first cycle (0-256) of test responses and prompt the user to choose which response pattern matches the padding exception. Typically the padding exception occurs on all but one of the initial test requests, so in most cases there will only be two response patterns to choose from as shown below (and PadBuster will suggest which one to use).
 
-!
+![](http://www.gdssecurity.com/l/po_pb1_sm.png)
 
 The initial output from PadBuster is shown in the screenshot above. You’ll see that PadBuster re-issues the original request and shows the generated response information before starting its testing. This is useful for authenticated applications to ensure that the authentication cookies provided to PadBuster are working correctly.
 
 Once a response pattern is selected, PadBuster will automatically cycle through each block and brute force each corresponding plaintext byte which will take, at most, 256 requests per byte. After each block, PadBuster will also display the obtained intermediary byte values along with the calculated plaintext. The intermediary values can be useful when performing arbitrary encryption exploits as we will show in the next section.
 
-!
+![](http://www.gdssecurity.com/l/po_pb2_sm.png)
 
 **Encrypting Arbitrary Values**
 
@@ -231,11 +231,11 @@ We’ve just seen how a padding oracle and PadBuster can be used to decrypt the 
 
 You have probably noticed that once we are able to deduce the intermediary value for a given ciphertext block, we can manipulate the IV value in order to have complete control over the value that the ciphertext is decrypted to. So in the previous example of the first ciphertext block that we brute forced, if you want the block to decrypt to a value of "TEST" you can calculate the required IV needed to produce this value by XORing the desired plaintext against the intermediary value. So the string "TEST" (padded with four 0×04 bytes, of course) would be XORed against the intermediary value to produce the needed IV of 0x6D, 0×36, 0×70, 0×76, 0×03, 0x6E, 0×22, 0×39.
 
-!
+![](http://www.gdssecurity.com/l/po_fig11_sm.png)
 
 This works great for a single block, but what if we want to generate an arbitrary value that is more than one block long? Let’s look at a real example to make it easier to follow. This time we will generate the encrypted string "ENCRYPT TEST" instead of just "TEST". The first step is to break the sample into blocks and add the necessary padding as shown below:
 
-!
+![](http://www.gdssecurity.com/l/po_fig12_sm.png)
 
 When constructing more than a single block, we actually start with the last block and move backwards to generate a valid ciphertext. In this example, the last block is the same before, so we already know that the following IV and ciphertext will produce the string "TEST".
 
@@ -268,7 +268,7 @@ padBuster.pl http://sampleapp/home.jsp?UID=7B216A634951170FF851D6CC68FC953785879
 
 The output from PadBuster is shown in the screenshot below:
 
-!
+![](http://www.gdssecurity.com/l/po_pb3_sm.png)
 
 You’ll notice that just like before, PadBuster will first ask you to choose the correct padding error response signature. This step can be skipped if you manually specify the padding error message using the -error option. Also notice that PadBuster performed a brute force of both full ciphertext blocks, because we didn’t specify a starting ciphertext block and associated intermediary value to use. If we had provided these values to PadBuster, the first block would have been calculated instantly and only the second block would require brute force as shown below.
 
@@ -278,7 +278,7 @@ padBuster.pl http://sampleapp/home.jsp?UID=7B216A634951170FF851D6CC68FC953785879
 -ciphertext F851D6CC68FC9537 -intermediary 39732322076A263D
 ```
 
-!
+![](http://www.gdssecurity.com/l/po_pb4_sm.png)
 
 As you can see, the first block (Block 2) was calculated before prompting for the response signature since this block was calculated using just the data provided with the -ciphertext and -intermediary options. If you are wondering where these two values came from, remember that PadBuster prints these two values to the screen at the conclusion of each round of block processing.
 

@@ -1557,36 +1557,48 @@ def command_papers(args):
     # Flash Parameter Injection advisory, named by its own 2008 article and
     # served by a host that has been gone for years. The maintainer has a copy;
     # without this the only route would be a fetch that can never succeed.
-    if args.from_file:
+    if args.from_file or args.from_url:
         targets = [(key, entry) for key, entry in manifest.data["urls"].items()
                    if args.only and args.only.lower() in key.lower()]
         if len(targets) != 1:
             print("Name exactly one reference with --only (matched %d)." % len(targets))
             return 2
         key, entry = targets[0]
-        body = Path(args.from_file).read_bytes()
+        # `--from-url` NAMES A PAPER THE PAGE DOES NOT LINK. A GitHub research
+        # repository carries `Successful Errors.pdf` beside its README and links
+        # only other people's papers from it, so no rule reading the page can
+        # find it - but the URL is real, fetchable and worth recording.
+        if args.from_url:
+            response = fetcher.get(args.from_url, max_bytes=64 * 1024 * 1024)
+            body = response.body or b""
+            provenance, origin = "fetched", args.from_url
+        else:
+            body = Path(args.from_file).read_bytes()
+            slug = entry.get("slug") or key
+            md_path = archive_dir / collections_module.md_relpath(entry, config, slug)
+            origin = linked_documents.paper_link(
+                md_path.read_text(encoding="utf-8") if md_path.exists() else "",
+                (entry.get("spellings") or [key])[0])
+            provenance = "manual-import"
         if not makepdf.is_pdf_bytes(body):
-            print("That file is not a PDF.")
+            print("That is not a PDF (%d bytes)." % len(body))
             return 2
         slug = entry.get("slug") or key
-        md_path = archive_dir / collections_module.md_relpath(entry, config, slug)
-        named = linked_documents.paper_link(
-            md_path.read_text(encoding="utf-8") if md_path.exists() else "",
-            (entry.get("spellings") or [key])[0])
         entry["paper"] = {
-            "url": named,
+            "url": origin,
             "sha256": store.put(body),
             "bytes": len(body),
             "retrieved_utc": manifest_module.utc_now(),
-            "provenance": "manual-import",
+            "provenance": provenance,
         }
         manifest.record(key, "paper", result="stored", file="", bytes=len(body),
-                        reason="supplied by hand: %s" % (named or "url not recorded"))
+                        reason="%s: %s" % (provenance, origin or "url not recorded"))
         manifest.save()
-        print("  stored   %-52s %8d bytes  (by hand)" % (slug[:52], len(body)))
-        if not named:
+        print("  stored   %-52s %8d bytes  (%s)" % (slug[:52], len(body), provenance))
+        if not origin:
             print("\nThe article does not name a PDF of its own, so nothing records"
-                  "\nwhere this file came from. Check it is the right document.")
+                  "\nwhere this file came from. Check it is the right document, or"
+                  "\npass --from-url so the record says where it came from.")
         print("\nRun `refs.py pdf --stale --force` to publish it.")
         return 0
 
@@ -2878,6 +2890,10 @@ def build_parser():
                                help="a PDF obtained by hand, for the one reference "
                                     "named by --only; its path is never written "
                                     "into tracked output")
+    papers_parser.add_argument("--from-url", default="",
+                               help="fetch the paper from this URL for the one "
+                                    "reference named by --only, when the page does "
+                                    "not link its own PDF (network)")
     papers_parser.add_argument("--gap", type=float, default=1.0,
                                help="seconds to wait between requests to one host")
     papers_parser.add_argument("--timeout", type=int, default=60)

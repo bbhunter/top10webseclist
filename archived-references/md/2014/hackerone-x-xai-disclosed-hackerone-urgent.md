@@ -166,7 +166,7 @@ Great, thank you for a confirming. A bounty amount will be awarded at the end of
 
 Thanks again!
 
-[!](https://hackerone.com/x)
+[![](https://profile-photos.hackerone-user-content.com/variants/ikx4ept298unt534kpz4am2bd4zs/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/x)
 
 [X / xAI](https://hackerone.com/x)
 

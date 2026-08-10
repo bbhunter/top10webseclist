@@ -82,7 +82,7 @@ Before we dive-in into examples, let’s analyze the flow, which at first glance
 - If any dangerous path is being detected, program stops execution (ZIP will not be extracted – because the risk of Zip Slip occurred).
 - If no paths were marked as dangerous, Mechanism B extracts the ZIP archive.
 
-!
+![](https://blog.isec.pl/content/images/2025/08/chart.png)
 
 It’s clearly visible that Mechanism B depends on Mechanism A and they still operate on the same data. The problem here, however, is that Mechanism A and Mechanism B may have a discrepancy in how they see those data.
 
@@ -100,7 +100,7 @@ I’ll left creating a schizophrenic ZIP with path traversal – as the exercise
 
 To follow along – we can download an example schizophrenic ZIP provided by the [Yet another ZIP trick](https://hackarcana.com/article/yet-another-zip-trick?ref=blog.isec.pl) article and slightly modify it with `hexedit` command. We’ll take an easy way out and alter the files’ paths, so that one path is a valid filename (`VALIDVALIDVALID.txt`), while the other contains directory traversal path (`../../../../../tmp/ZIPSLIPPWN`). Let’s call this file `hidden_zipslip.zip`.
 
-!
+![](https://blog.isec.pl/content/images/2025/08/hidden_zipslip.jpeg)
 
 # Why it works?
 
@@ -330,7 +330,7 @@ In our malicious archive, the first entry points to the valid file path, while t
 
 This time, the first entry should point to the path traversal filename, while the second one should be a valid path. As previously – we will utilize the `hexedit` tool to create another schizophrenic ZIP: `hidden_zipslip_2.zip`:
 
-!
+![](https://blog.isec.pl/content/images/2025/08/hidden_zipslip_2.jpeg)
 
 Our PoC works now:
 

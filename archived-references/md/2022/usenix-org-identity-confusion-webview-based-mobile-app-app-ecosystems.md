@@ -74,7 +74,7 @@ In this paper, we perform the first systematic study of identity confusion in re
 
 USENIX is committed to Open Access to the research presented at our events. Papers and proceedings are freely available to everyone once the event begins. Any video, audio, and/or slides that are posted after the event are also free and open to everyone. [Support USENIX](https://www.usenix.org/annual-fund) and our commitment to Open Access.
 
-!
+![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-locked.png)
 
 BibTeX
 
@@ -95,7 +95,7 @@ BibTeX
 
 ![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Zhang PDF](https://www.usenix.org/system/files/sec22-zhang-lei.pdf)
 
-!
+![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-unlocked.png)
 
 [View the slides](https://www.usenix.org/system/files/sec22_slides-zhang_lei.pdf)
 

@@ -64,7 +64,7 @@ page going offline. To read the original, follow the link above.
 
 The "Forgot password?" feature and how DNS vulnerabilities may allow the takeover of user accounts.
 
-!
+![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2021_07/sec-consult-h_pwd_dns_image_1_en.png)
 
 **TL;DR**
 
@@ -101,7 +101,7 @@ So, if an attacker can manipulate the DNS name resolution of a web application, 
 
 Dan Kaminsky already presented this [attack vector](https://www.blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf) in 2008 at the Black Hat conference [1]. The following analysis of 146 web applications, which was conducted during Timo Longin's diploma thesis "DNS vulnerabilities in web applications" [14], shows that the attack vector is **still relevant today**.
 
-!
+![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2021_07/sec-consult-c_pwd_dns_image_3_en.png)
 
 * Figure 2: DNS traffic between web application, DNS resolver and ADNS of the "analysis.example" domain [14] *
 
@@ -113,7 +113,7 @@ By registering 146 users! Multiple times!
 
 When a user registers on a web application, the web application most commonly sends an e-mail to verify the e-mail address. Take the e-mail address is "test@analysis.example". In order for an e-mail to be sent, the e-mail domain of said e-mail address must first be resolved to an IP address. So, for "analysis.example", the IP address of the e-mail server must be determined. After a few DNS queries, this results in a DNS query with the type "MX" being sent to the authoritative name server (ADNS) of "analysis.example" (see figure 2).
 
-!
+![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2021_07/sec-consult-c_pwd_dns_image_4_en.png)
 
 * Figure 3: DNS traffic flowing through the DNS proxy [14] *
 
@@ -213,7 +213,7 @@ The length of this DNS response exceeds the Maximum Transmission Unit (MTU) and 
 
 **Attack requirement - Source Port Randomization:** Another example is requirements of a [Kaminsky attack](https://www.blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf) [1]. One of the requirements is that DNS requests have a low entropy and thus DNS responses are easy to guess. This low entropy results from the fact that source ports are not randomly assigned. We can check this requirement by analyzing log files of the DNS proxy. Scatter plots are particularly well suited for this purpose (see figure 4).
 
-!
+![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2021_07/sec-consult-c_pwd_dns_scatterplot_random.png)
 
 * Figure 4: Scatter plot of randomly distributed UDP source ports *
 
@@ -232,7 +232,7 @@ Now the time has come! Nothing holds us back from analyzing the DNS name resolut
 
 The test procedure looks like this (see figure 5).
 
-!
+![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2021_07/sec-consult-c_pwd_dns_image_5_en.png)
 
 * Figure 5: Test procedure for checking web applications for DNS vulnerabilities [14] *
 
@@ -270,7 +270,7 @@ No usage/enforcement of DNS security features (DNSSEC, DNS cookies, etc.)
 
 It is possible to trigger a large number of DNS queries to a "victim" domain (for example, "gmail.com")
 
-!
+![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2021_07/sec-consult-c_pwd_dns_scatterplot_static.PNG)
 
 * Figure 6: Web application with static source port distribution [14] *
 
@@ -280,7 +280,7 @@ Every second DNS request uses source port 30200, other DNS requests use incremen
 
 The second web application (a news station) with guessable source ports has the following scatter plot (see figure 7).
 
-!
+![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2021_07/sec-consult-c_pwd_dns_scatterplot_incremental.png)
 
 * Figure 7: Web application with incremental source port distribution [14] *
 

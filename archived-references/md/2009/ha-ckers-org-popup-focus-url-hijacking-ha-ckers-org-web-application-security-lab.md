@@ -72,12 +72,12 @@ Popup & Focus URL Hijacking ha.ckers.org web application security lab
 
 I apologize ahead of time for whomever first sent me this - it’s been so long now that I have long since lost the original email. But at some point a few years ago someone sent me a small snippet of JavaScript that could cause a page to be replaced by another page in such a way that if you looked at the URL bar, it didn’t matter because after you looked at it - a few seconds later - it would be replaced by the evil site. Well, today I spent a few minutes toying around with other potential uses for that same code. Let’s pretend I wanted an unsuspecting user to download my malicious Firefox add-on. I might create [something like this demo](http://ha.ckers.org/weird/ffpopup.html) which claims to be requesting that you download NoScript from Mozilla’s site. When the page loads, a setTimeout fires a few seconds later resulting in the following popup:
 
-[!](http://ha.ckers.org/images/ffpopup.png)
+[![](http://ha.ckers.org/images/ffpopup.png)](http://ha.ckers.org/images/ffpopup.png)
 Click to Enlarge
 
 You will notice that it quite clearly says that it is being downloaded from ha.ckers.org, but the vast majority of users won’t understand what that means, since, of course, they are quite clearly on the EV cert protected addons.mozilla.org. Also, presumably an attacker would normally pick something like addons.mozilla.org.xyx.com instead of ha.ckers.org. Worse yet, it blocks the user from downloading the legitimate file until they take action on what my malicious website is prompting them to do. Here’s the equivalent but less useful example in Internet Explorer:
 
-[!](http://ha.ckers.org/images/ffpopup2.png)
+[![](http://ha.ckers.org/images/ffpopup2.png)](http://ha.ckers.org/images/ffpopup2.png)
 Click to Enlarge
 
 Unlike Firefox, IE doesn’t even say where the file is being downloaded from so it’s even a more confusing user experience. Not that this is a particularly good example since .xpi files are meaningless in Internet Explorer, but you get the point. Either way, this is kinda a nasty user experience, and is extremely likely to result in user compromise if the malicious site is creative enough in how it presents the user to download the latest version of whatever software addon or plugin the attacker is trying to spoof (think about Adobe Flash upgrades, Java upgrades and so on). Could be nasty.

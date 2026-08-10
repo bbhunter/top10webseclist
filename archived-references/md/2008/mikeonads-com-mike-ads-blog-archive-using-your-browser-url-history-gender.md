@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 Mike On Ads » Blog Archive » Using your browser URL history to estimate gender
 
- !
+ ![](http://id.adnxs.com/id?partner_id=1&cipher=&iv=)
 
  -1.4
 

@@ -70,7 +70,7 @@ This paper addresses the drawbacks of relying on manually curated lists of sinks
 
 USENIX is committed to Open Access to the research presented at our events. Papers and proceedings are freely available to everyone once the event begins. Any video, audio, and/or slides that are posted after the event are also free and open to everyone. [Support USENIX](https://www.usenix.org/annual-fund) and our commitment to Open Access.
 
-!
+![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-locked.png)
 
 BibTeX
 
@@ -93,12 +93,12 @@ BibTeX
 
 ![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Jahanshahi Appendix PDF](https://www.usenix.org/system/files/usenixsecurity24-appendix-jahanshahi.pdf)
 
-!
+![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-unlocked.png)
 
 [View the slides](https://www.usenix.org/system/files/usenixsecurity24_slides-jahanshahi.pdf)
 
-!
+![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_available_125_update.png)
 
-!
+![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_functional_125.png)
 
 ## Presentation Video

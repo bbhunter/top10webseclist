@@ -76,7 +76,7 @@ page going offline. To read the original, follow the link above.
 
 - Do long press on any locations and relieve.
 - You should see the usual Flash context menu like:
-- Touch "Global Settings". [!](https://web.archive.org/web/20171009145341/http://3.bp.blogspot.com/-zCWUFKljCZQ/UEqvAlpw0DI/AAAAAAAAAIY/UbbDodrbvPA/s1600/flash-context.png)
+- Touch "Global Settings". [![](https://web.archive.org/web/20171009145341im_/http://3.bp.blogspot.com/-zCWUFKljCZQ/UEqvAlpw0DI/AAAAAAAAAIY/UbbDodrbvPA/s320/flash-context.png)](https://web.archive.org/web/20171009145341/http://3.bp.blogspot.com/-zCWUFKljCZQ/UEqvAlpw0DI/AAAAAAAAAIY/UbbDodrbvPA/s1600/flash-context.png)
 - A web browser window will pop up and redirect to the Adobe URL, [http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager.html](https://web.archive.org/web/20171009145341/http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager.html) .
 - At this point in time, you have jumped out of the Touch Screen kiosk. You should be able to see the Window start menu and all that.
 - You should be able to imagine next steps on how to compromise this box.

@@ -76,17 +76,17 @@ Even worse, the private encryption key accompanying the Superfish-signed Transpo
 
 The adware and its effect on Web encryption has been discussed since at least September in Lenovo customer forum threads such as those [here](https://forums.lenovo.com/t5/Lenovo-P-Y-and-Z-series/Lenovo-Pre-instaling-adware-spam-Superfish-powerd-by/td-p/1726839) and [here](https://forums.lenovo.com/t5/Security-Malware/Potentially-Unwanted-Program-Superfish-VisualDiscovery/m-p/1860408/highlight/true#M1697). In the latter post, dated January 21, a user showed a root certificate titled Superfish was installed:
 
- [ ! ](https://cdn.arstechnica.net/wp-content/uploads/2015/02/superfish-root-certificate.png)
+ [ ![](https://cdn.arstechnica.net/wp-content/uploads/2015/02/superfish-root-certificate.png) ](https://cdn.arstechnica.net/wp-content/uploads/2015/02/superfish-root-certificate.png)
 
 He then went on to show how the certificate tampered with the HTTPS connection to a banking website, behavior that allowed Superfish to collect all data unencrypted.
 
- !
+ ![](https://cdn.arstechnica.net/wp-content/uploads/2015/02/misrepresented-cert.png)
 
 Surprisingly, the behavior largely escaped the notice of security and privacy advocates, until now. On Wednesday evening, following several [lengthy Twitter discussions about the overlooked behavior](https://twitter.com/search?q=%23superfish%20lenovo&src=tyah), security researcher Chris Palmer bought a Lenovo Yoga 2 Pro for $600 at a San Francisco Bay Area Best Buy store. He quickly confirmed that the model was pre-installed with the Superfish software and self-signed key.
 
 When Palmer visited [https://www.bankofamerica.com/](https://www.bankofamerica.com/), he found that the certificate presented to his browser wasn’t signed by certificate authority VeriSign as one would expect, but rather by Superfish.
 
- !
+ ![](https://cdn.arstechnica.net/wp-content/uploads/2015/02/fake-bofa-certificate.jpg)
 
   Credit: [ Chris Palmer ](https://twitter.com/fugueish/status/568253665095450625)
 

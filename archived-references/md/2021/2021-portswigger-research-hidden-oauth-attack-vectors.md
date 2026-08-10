@@ -81,7 +81,7 @@ Researcher
 
 -
 
- !
+ ![](https://portswigger.net/cms/images/a0/8d/e349-article-hidden-oauth-attack_article.jpg)
 
 ## Intro
 

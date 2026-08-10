@@ -94,7 +94,7 @@ In this blog post I want to talk about a cool type of attacks ([XSLeaks](https:/
 
  Again, fortunately Facebook actually doesn't issue search queries on messages and requires the user to "confirm" the search query :-).
 
- [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRAlWVmwRMPOpJzJhIGWJyETxZNfT18FXHyLwwa75fzUlRZZmh-6-UK1gfhkZYaHr59uS-VYEn9xK_kFQ0dKef3q8TWhSVeK5JD031_riC39VNmmPYIs2DEj5p-tFyOie_hE-oWQ/s1600/Screenshot+2019-03-17+at+23.49.10.png)
+ [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRAlWVmwRMPOpJzJhIGWJyETxZNfT18FXHyLwwa75fzUlRZZmh-6-UK1gfhkZYaHr59uS-VYEn9xK_kFQ0dKef3q8TWhSVeK5JD031_riC39VNmmPYIs2DEj5p-tFyOie_hE-oWQ/s320/Screenshot+2019-03-17+at+23.49.10.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRAlWVmwRMPOpJzJhIGWJyETxZNfT18FXHyLwwa75fzUlRZZmh-6-UK1gfhkZYaHr59uS-VYEn9xK_kFQ0dKef3q8TWhSVeK5JD031_riC39VNmmPYIs2DEj5p-tFyOie_hE-oWQ/s1600/Screenshot+2019-03-17+at+23.49.10.png)
 
  As you can see, some websites have deployed protection against Cross-Site Leaks in the past year, some more effective than others, and I think that this is one of those few attacks that only large websites try to protect against, but most of the internet is still vulnerable to.
 
@@ -109,7 +109,7 @@ In this blog post I want to talk about a cool type of attacks ([XSLeaks](https:/
 
  Here's a nicer explanation of the attack (with a happy cloud and everything):
 
- [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0l8o_sqw1Dc4cLvwdO5yenBA2M_ddqZrfDd54FTe2aywM0AEoW4mqaiZk9SSvbgMlF_qbzU2aJL2viLeYY46sd9J4etvtsVhLCXXBgRuI4ppvnqhTUT4CD60pQNapEOW6tSrW1g/s1600/Untitled+drawing+%25283%2529.png)
+ [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0l8o_sqw1Dc4cLvwdO5yenBA2M_ddqZrfDd54FTe2aywM0AEoW4mqaiZk9SSvbgMlF_qbzU2aJL2viLeYY46sd9J4etvtsVhLCXXBgRuI4ppvnqhTUT4CD60pQNapEOW6tSrW1g/s640/Untitled+drawing+%25283%2529.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0l8o_sqw1Dc4cLvwdO5yenBA2M_ddqZrfDd54FTe2aywM0AEoW4mqaiZk9SSvbgMlF_qbzU2aJL2viLeYY46sd9J4etvtsVhLCXXBgRuI4ppvnqhTUT4CD60pQNapEOW6tSrW1g/s1600/Untitled+drawing+%25283%2529.png)
 
  Depending on who you are, you might either be excited about this, depressed, angry, or ambivalent, here are some suggestions on how to deal with this:
 

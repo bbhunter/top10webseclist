@@ -63,24 +63,24 @@ page going offline. To read the original, follow the link above.
 
 J U M P E R Z . N E T - Anti-DNS Pinning ( DNS Rebinding ) + Socket in FLASH
 
- [!](http://www.jumperz.net/ja.html)
+ [![](http://www.jumperz.net/images/japan.gif)](http://www.jumperz.net/ja.html)
 
-|  ! |
+|  ![](http://www.jumperz.net/images/spacer.gif) |
 
-|  [!](http://www.jumperz.net/index.php) |   |
-|  ! |  ! |   |
-|   ** [ ![Tools](http://www.jumperz.net/images/corner/0.gif) ](http://www.jumperz.net/index.php?i=1&a=0) ! [ ![Exploits](http://www.jumperz.net/images/corner/1.gif) ](http://www.jumperz.net/index.php?i=1&a=1) ! [ ![Advisories](http://www.jumperz.net/images/corner/2.gif) ](http://www.jumperz.net/index.php?i=1&a=2) ! [ ![Articles](http://www.jumperz.net/images/corner/3.gif) ](http://www.jumperz.net/index.php?i=1&a=3) ! [![Home](http://www.jumperz.net/images/corner/home.gif)](http://www.jumperz.net/index.php) **  |  ! |   |
-|  ! |  ! |   |
-|  ! |  ! |   |
+|  [![](http://www.jumperz.net/images/title.gif)](http://www.jumperz.net/index.php) |   |
+|  ![](http://www.jumperz.net/images/black.gif) |  ![](http://www.jumperz.net/images/shadow_ru.gif) |   |
+|   ** [ ![Tools](http://www.jumperz.net/images/corner/0.gif) ](http://www.jumperz.net/index.php?i=1&a=0) ![](http://www.jumperz.net/images/corner/line2.gif) [ ![Exploits](http://www.jumperz.net/images/corner/1.gif) ](http://www.jumperz.net/index.php?i=1&a=1) ![](http://www.jumperz.net/images/corner/line2.gif) [ ![Advisories](http://www.jumperz.net/images/corner/2.gif) ](http://www.jumperz.net/index.php?i=1&a=2) ![](http://www.jumperz.net/images/corner/line2.gif) [ ![Articles](http://www.jumperz.net/images/corner/3.gif) ](http://www.jumperz.net/index.php?i=1&a=3) ![](http://www.jumperz.net/images/corner/line2.gif) [![Home](http://www.jumperz.net/images/corner/home.gif)](http://www.jumperz.net/index.php) **  |  ![](http://www.jumperz.net/images/spacer.gif) |   |
+|  ![](http://www.jumperz.net/images/black.gif) |  ![](http://www.jumperz.net/images/spacer.gif) |   |
+|  ![](http://www.jumperz.net/images/shadow_ll.gif) |  ![](http://www.jumperz.net/images/shadow_rl.gif) |   |
 
   |   |
 
-|  ! |
+|  ![](http://www.jumperz.net/images/spacer.gif) |
 
 |    [ Articles ](http://www.jumperz.net/index.php?i=1&a=3) ->  **Anti-DNS Pinning ( DNS Rebinding ) + Socket in FLASH**
 
  **Socket in FLASH**
- !
+ ![](http://www.jumperz.net/images/black.gif)
 
  With [Anti-DNS Pinning](http://shampoo.antville.org/stories/1451301/) ( or DNS Rebinding, more correctly in this case ), we can break the same-origin policy.
  Not only JavaScript, but also FLASH and Java Applet are affected.
@@ -104,7 +104,7 @@ J U M P E R Z . N E T - Anti-DNS Pinning ( DNS Rebinding ) + Socket in FLASH
  **You can see the [DEMO](http://www.jumperz.net/index.php?i=2&a=1&b=8).
 
  **Java Applet**
- !
+ ![](http://www.jumperz.net/images/black.gif)
 
  Java Applet is relatively secure because the Java VM "pins" DNS by default.
  Sun's engineers know DNS Spoofing attack.
@@ -120,13 +120,13 @@ J U M P E R Z . N E T - Anti-DNS Pinning ( DNS Rebinding ) + Socket in FLASH
  But in some situations( [LiveConnect](http://shampoo.antville.org/stories/1566124/) or Using browser with proxy enabled ), Java Applet is vulnerable to the Anti-DNS Pinning attack as well.
 
  **Who is wrong?**
- !
+ ![](http://www.jumperz.net/images/black.gif)
 
  IMHO, this is a vulnerability of DNS protocol itself.
  But I think that if the browser raises an alert box when IP address of the host has changed ( Especially, from a grobal IP address to a private IP address ), that will be some help.
 
  **Countermeasures**
- !
+ ![](http://www.jumperz.net/images/black.gif)
 
  - Disable FLASH Player ( and Java VM ) on the browser.
  - Restrict browser access to only port 80 and 443 using a personal firewall.
@@ -134,7 +134,7 @@ J U M P E R Z . N E T - Anti-DNS Pinning ( DNS Rebinding ) + Socket in FLASH
  - Patch your FLASH binary file ( Flash9.ocx or NPSWF32.dll ). Replace all "Socket" to "S0cket" using hex editor.
 
  **Links**
- !
+ ![](http://www.jumperz.net/images/black.gif)
 
  [SLA.CKERS](http://sla.ckers.org/forum/read.php?6,4511)
  [Online Demonstration ( FLASH )](http://www.jumperz.net/index.php?i=2&a=1&b=8)
@@ -150,8 +150,8 @@ J U M P E R Z . N E T - Anti-DNS Pinning ( DNS Rebinding ) + Socket in FLASH
 
    |   |
 
-  |   !
- !
+  |   ![](http://www.jumperz.net/images/spacer.gif)
+ ![](http://www.jumperz.net/images/spacer.gif)
 
 |
 
@@ -162,8 +162,8 @@ J U M P E R Z . N E T - Anti-DNS Pinning ( DNS Rebinding ) + Socket in FLASH
 
   |  |
 
- !
- !
+ ![](http://www.jumperz.net/images/spacer.gif)
+ ![](http://www.jumperz.net/images/spacer.gif)
 
 |
 
@@ -172,15 +172,15 @@ J U M P E R Z . N E T - Anti-DNS Pinning ( DNS Rebinding ) + Socket in FLASH
 
   |  |
 
- !
+ ![](http://www.jumperz.net/images/spacer.gif)
 
 |
 
-|  ! |   |
+|  ![](http://www.jumperz.net/images/boy2.jpg) |   |
 
   |  |
 
- !
+ ![](http://www.jumperz.net/images/spacer.gif)
 
 |
 
@@ -191,12 +191,12 @@ J U M P E R Z . N E T - Anti-DNS Pinning ( DNS Rebinding ) + Socket in FLASH
 
   |  |
 
-  |   !  |   |
+  |   ![](http://www.jumperz.net/images/spacer.gif)  |   |
 
 |   |
 
-|  ! |  ! |   |
-|  ! |  ! |   |
+|  ![](http://www.jumperz.net/images/spacer.gif) |  ![](http://www.jumperz.net/images/shadow_ru.gif) |   |
+|  ![](http://www.jumperz.net/images/shadow_ll.gif) |  ![](http://www.jumperz.net/images/shadow_rl.gif) |   |
 |   **  Copyright© 1998-2009 JUMPERZ.NET All Rights Reserved.  **  |   |
 
   |   |

@@ -218,7 +218,7 @@ So, how does using AI inside your workflow actually work? Classic prompt injecti
 The goal is to confuse the model into thinking that the data it’s meant to be analysing is actually a prompt. This is, in essence. the same pathway as being able to prompt inject into a GitHub action.
 Imagine you are sending a prompt to an LLM, and within that prompt, you are including the commit message. If that commit message is a malicious prompt, then you may be able to get the model to send back altered data. Then, if that response from the LLM is used directly inside commands to tools within the CI/CD pipeline, there is the potential to manipulate those tools to provide you with sensitive information.
 
-!
+![](https://cdn.prod.website-files.com/642adcaf364024654c71df23/6931a2aa434caa2186f8019e_Group%202147256147-min.png)
 
 ### Prompt Injection into AI Agents
 
@@ -385,7 +385,7 @@ Vulnerabilities & Threats
 
 Mini Shai-Hulud malware was injected into keyv and eight related npm packages on August 4, 2026 after an attacker compromised the maintainer's GitHub account
 
-!
+![](https://cdn.prod.website-files.com/642adcaf364024552e71df01/6836b17027f911d14ce42ba7_arrow%20right.svg)
 
 Malware
 
@@ -397,7 +397,7 @@ Vulnerabilities & Threats
 
 Anthropic disclosed an agent that pushed real malware to PyPI. We think we found the package, and every mistake in it points back to the AI.
 
-!
+![](https://cdn.prod.website-files.com/642adcaf364024552e71df01/6836b17027f911d14ce42ba7_arrow%20right.svg)
 
 AI
 
@@ -413,7 +413,7 @@ Vulnerabilities & Threats
 
 Eight high-severity NodeBB vulnerabilities, found by our AI Pentest in six hours. Full technical breakdown of the XSS chains, auth bypasses, and post hijacking.
 
-!
+![](https://cdn.prod.website-files.com/642adcaf364024552e71df01/6836b17027f911d14ce42ba7_arrow%20right.svg)
 
 AI Penetration Testing
 
@@ -424,4 +424,4 @@ Vulnerabilities
 Secure your code, cloud, and runtime in one central system.
 Find and fix vulnerabilities fast automatically.
 
-!!
+![](https://cdn.prod.website-files.com/642adcaf364024552e71df01/6825fdbd77201ff82b42eaac_5977b7d4849e2b1950c49c60ef18cfc3_visual-cta-dashboard.png)![](https://cdn.prod.website-files.com/642adcaf364024552e71df01/6825d8f68e45d9a5bf7a4beb_b1dbddf2b778530e6f5ace222c099514_random-cta-background.avif)

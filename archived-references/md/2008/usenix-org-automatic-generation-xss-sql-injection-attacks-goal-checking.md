@@ -259,7 +259,7 @@ The vulnerability specification is translated by the PQL compiler into a set of 
 
 ---
 
- !
+ ![](https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/basesys.png)
 
 | Figure 4: QED architecture. User-supplied information is on the left. |  |
 

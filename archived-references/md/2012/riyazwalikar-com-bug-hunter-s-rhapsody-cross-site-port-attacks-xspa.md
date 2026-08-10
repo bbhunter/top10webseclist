@@ -81,7 +81,7 @@ This is the first of a 3 part series of blog posts that explain Cross Site Port 
 
 The following screengrab shows gravatar.com providing this functionality:
 
- [!](http://3.bp.blogspot.com/-NopLSb6w_0w/UJpE-eh4_1I/AAAAAAAAAio/28ndTV3SOvU/s1600/gravatar.PNG)
+ [![](http://3.bp.blogspot.com/-NopLSb6w_0w/UJpE-eh4_1I/AAAAAAAAAio/28ndTV3SOvU/s640/gravatar.PNG)](http://3.bp.blogspot.com/-NopLSb6w_0w/UJpE-eh4_1I/AAAAAAAAAio/28ndTV3SOvU/s1600/gravatar.PNG)
 
  XSPA allows attackers to abuse available functionality in most web applications to port scan intranet and external Internet facing servers, fingerprint internal (non-Internet exposed) network aware services, perform banner grabbing, identify web application frameworks, exploit vulnerable programs, run code on reachable machines, exploit web application vulnerabilities listening on internal networks, read local files using the file protocol and much more. XSPA has been discovered with Facebook, where it was possible to port scan any Internet facing server using Facebook’s IP addresses. Consecutively, XSPA was also discovered in several other prominent web applications on the Internet, including Google, Apigee, StatMyWeb, Mozilla.org, Face.com, Pinterest, Yahoo, Adobe Omniture and several others. We will take a look at the vulnerabilities that were present in the above mentioned web applications that could be used to launch attacks and perform port scans on remote servers and intranet devices using predefined functionality.
 

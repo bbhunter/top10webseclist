@@ -70,7 +70,7 @@ By checking all target websites on the most popular bug bounty platforms, I've e
 
 One of the information-gathering technique used by attackers is based on the extraction of valuable insights from error or debug messages inadvertently exposed by target web applications. Imagine a scenario where a database throw an error, or a server-side script like PHP or ASP accidentally reveals a full path or a snippet of its inner workings. These unintentional leaks, often overlooked, can provide valuable information for an attacker, collecting information for more significant vulnerabilities to be exploited.
 
-!
+![](https://blog.sicuranext.com/content/images/2024/02/php_error.png)
 
 *Example of a PHP error*
 
@@ -78,7 +78,7 @@ Also, showing SQL error messages in a web application can be a security problem 
 
 As you might know, by understanding the database schema, an attacker can craft more effective SQL injection attacks, which can lead to unauthorized data access, data loss, or even complete system compromise.
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-23.png)
 
 For that reason, **many Web Application Firewalls implement rules and response validation methods to prevent the leakage of sensitive information**, such as SQL errors or errors related to scripting languages. The same happens, for example, to prevent Web Shell response body.
 
@@ -92,7 +92,7 @@ Once I read a statement attributed to **Ivan Ristić** that went something like,
 
 Let's say you are trying to prevent the leakage of credit card numbers on your e-commerce site. To do this, you create a WAF rule that checks for four groups of digits separated by a `-` in the response body, using a regex like `[0-9]+\-[0-9]+\-[0-9]+\-[0-9]+`.
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-21.png)
 
 *An example of Regular Expression matching CC numbers*
 
@@ -124,7 +124,7 @@ The OWASP Core Rule Set is a set of generic attack detection rules for use with 
 
 Like many other WAF rule sets, the OWASP Core Rule Set includes some rules that inspect the response body, which you can find [here](https://github.com/coreruleset/coreruleset/tree/main/rules?ref=blog.sicuranext.com).
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image.png)
 
 All those rule sets pose problems in terms of **RFDoS**, but the most problematic one is the `RESPONSE-951-DATA-LEAKAGES-SQL.conf` configuration file/rule set.
 
@@ -136,13 +136,13 @@ Another example is a SQL error leakage rule that uses a regular expression to ma
 
 # ORA-1234
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-12.png)
 
 As you can see, this rule runs at phase 4, which includes the response body, and blocks the response if the regex matches the `RESPONSE_BODY` variable.
 
 Another really simple string is `dynamic sql error`
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-13.png)
 
 Imagine how easy could be to trigger those rules, just by sending `ORA-1234` inside a comment, or used as username or e-mail address.
 
@@ -156,26 +156,26 @@ While I was completing this article, the OWASP Core Rule Set team committed a ch
 
 Comodo distributes a series of OutgoingFilter rule sets that also include prevention of SQL error leakages.
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-11.png)
 
 *from Comodo [https://waf.comodo.com/user/cwaf_revisions](https://waf.comodo.com/user/cwaf_revisions?ref=blog.sicuranext.com)*
 
 As you can imagine, inside the `17_Outgoing_FilterSQL.conf` file we can found our magic string ORA-1234:
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-8.png)
 
 But also other really simple string like `Dynamic SQL Error` or `JET Database Engine` or `Access Database Engine`
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-9.png)
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-10.png)
 
 ### Atomicorp Free ModSecurity Rules
 
 Atomicorp offers a free-to-use set of ModSecurity rules that you can download by registering on their portal. One of these rules aims to prevent the leakage of the rules or configurations themselves by **blocking any response body that includes the string:**
  `---ASL-CONFIG-FILE---`. So, in an attempt to prevent a self-configuration leakage, they inadvertently allow anyone to shut down a website by reflecting user input made up solely of A-Z characters and `-`.
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-3.png)
 
 *From the latest Atomicorp modsec-202405080003.tar.bz2*
 
@@ -256,13 +256,13 @@ Let test it.
 
 In the following test, I'm attempting to exploit a SQL Injection using the query string parameter 'a', but an error occurs and **the WAF blocks the response body to prevent the error from being leaked**:
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-5.png)
 
 Typically, MySQL errors display a message like: "**You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'foo bar' at line xyz**".
 
 Knowing that the WAF rule likely matches the initial part of this message, `You have an error in your SQL syntax`, I can avoid triggering the WAF by "cutting off" the beginning of the response. I do this by sending a byte range HTTP request from 90 to 140. For example:
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-6.png)
 
 So, as you can see, bypassing any response body filter becomes quite easy using the Range request header. **This applies not only to SQL error leakage but also to rules designed to prevent web shell or backdoor responses in the response body**.
 
@@ -270,7 +270,7 @@ So, as you can see, bypassing any response body filter becomes quite easy using 
 
 The OWASP Core Rule Set includes a set of rules aimed at preventing "Web Shells" or, in other words, backdoors. These rules attempt to match the HTML body of the most common online backdoors by, for example, triggering on the title tag of the page.
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-15.png)
 
 One of the most common objections I've encountered when explaining the RFDoS problem goes something like this: "*Okay, RFDoS could be a problem, but preventing backdoors or PHP shells from being sent to an attacker is more important and worth the risk of RFDoS.*"
 
@@ -278,11 +278,11 @@ Initially, this seemed like a valid point. However, I then remembered the Byte R
 
 **I'm going to simulate a web shell**, with a title tag that matches one of the Web Shells rules, and include a leak of the WordPress config file (which often contains the username and password for the MySQL database) that will trigger the PHP code leakage rule.
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-16.png)
 
 If I attempt to access the content of the web shell, the WAF will block my request because of one of the rules mentioned above.
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-17.png)
 
 ModSecurity logs:
 
@@ -295,15 +295,15 @@ ModSecurity: Warning. Matched phrase "<title>=[ 1n73ct10n privat shell ]=</title
 
 To bypass the response filter, I can omit the first part of the response that contains the title tag by skipping the first 60 bytes:
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-18.png)
 
 But when I try to extend the response to include the wp-config file content, the WAF block me again due to PHP leakage rule:
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-19.png)
 
 Fortunately, I can use a [Multipart Range](https://developer.mozilla.org/en-US/docs/Web/HTTP/Range_requests?ref=blog.sicuranext.com#multipart_ranges) to request multiple portions of the same response body, which will be served to me as a multipart response. For example:
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-20.png)
 
 As you can see, I was able to bypass two OWASP Core Rule Set response body rules simply because the HTTP protocol allows me to do so.
 
@@ -349,7 +349,7 @@ Even in the [Core Rule Set Documentation](https://coreruleset.org/docs/deploymen
 
 In this post we'll see how prevalent this RFDoS is across many websites, and one of the main reasons is **Plesk**. Many of the targets I checked in order to trigger this problem, send a Plesk error page along with a 403 Forbidden response. As detailed in [this documentation](https://docs.plesk.com/en-US/obsidian/administrator-guide/server-administration/web-application-firewall-modsecurity.73383/?ref=blog.sicuranext.com), it’s very easy for a Plesk user to enable ModSecurity and the OWASP Core Rule Set (which they refer to simply as OWASP Rule... **shame on you, Plesk**), but **it's nearly impossible for a user to choose whether or not to enable the Core Rule Set response rules**.
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-14.png)
 
 *Plesk 403 Response HTML*
 
@@ -379,7 +379,7 @@ It's hard to determine the exact extent of this issue across the internet. As pa
 
 As you might know, **WordPress reflects the user input** from the `s` parameter in the query string back to the response body, as seen in URLs like `/?s=foobar`.
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-1.png)
 
 So, basically for each target I'm going to run 2 HTTP request:
 
@@ -463,7 +463,7 @@ Please keep in mind that all these numbers refer **only to WordPress websites**,
 
 Obviously, if any of the mentioned providers want to know where we found RFDoS issues with their customers, they can contact us, and we are willing to share this information with them.
 
-!
+![](https://blog.sicuranext.com/content/images/2024/05/image-22.png)
 
 ## The Credit Card Number Problem
 

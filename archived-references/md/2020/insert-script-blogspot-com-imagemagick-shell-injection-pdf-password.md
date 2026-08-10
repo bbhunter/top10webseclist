@@ -342,7 +342,7 @@ Although MSF is a XML based structure, the MSF coder does not deploy a real XML 
 
 PoC file in action:
 
-[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBa5NP93z_9wrtwqCw1JyqzXN7Bk54Dmxpr1ZHHDkr9R8P8V35wsdt5IQEYnp0Ued7Asj7bEjlurIZ9WHpPTl7PS96TWi322OSkmITYbjTLKIJBVJ7JzuXpQAA5CYD4QuIU68iElFQZGGb/s2048/demo2.gif)
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBa5NP93z_9wrtwqCw1JyqzXN7Bk54Dmxpr1ZHHDkr9R8P8V35wsdt5IQEYnp0Ued7Asj7bEjlurIZ9WHpPTl7PS96TWi322OSkmITYbjTLKIJBVJ7JzuXpQAA5CYD4QuIU68iElFQZGGb/w658-h345/demo2.gif)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBa5NP93z_9wrtwqCw1JyqzXN7Bk54Dmxpr1ZHHDkr9R8P8V35wsdt5IQEYnp0Ued7Asj7bEjlurIZ9WHpPTl7PS96TWi322OSkmITYbjTLKIJBVJ7JzuXpQAA5CYD4QuIU68iElFQZGGb/s2048/demo2.gif)
 
 The PoC is still not perfect as I have to assume the filename does not get changed as the file has to be able to reference itself. But I decided thats good enough for now.
 

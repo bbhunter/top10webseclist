@@ -90,7 +90,7 @@ The researcher found that his scanning program wasn't the only unauthorized code
 
 The changes didn't survive reboots, however, allowing Aidra to resume control of the embedded devices once they were restarted. The scanning program was programmed to install itself on uninfected devices, so it's possible it may have repeatedly disrupted the malicious bot software only to be foiled each time a device was rebooted.
 
-[!](http://web.archive.org/web/20160507162422/http://cdn.arstechnica.net/wp-content/uploads/2013/03/clientmap_16to9_1600x900.jpg)
+[![](http://web.archive.org/web/20160507162422im_/http://cdn.arstechnica.net/wp-content/uploads/2013/03/clientmap_16to9_1600x900-640x360.jpg)](http://web.archive.org/web/20160507162422/http://cdn.arstechnica.net/wp-content/uploads/2013/03/clientmap_16to9_1600x900.jpg)
 
 [Enlarge](http://web.archive.org/web/20160507162422/http://cdn.arstechnica.net/wp-content/uploads/2013/03/clientmap_16to9_1600x900.jpg) / Carna Botnet's 420,000-client distribution, March to December 2012.
 

@@ -118,7 +118,7 @@ This payload tries to exploit the Shellshock vulnerability to make the targeted 
 
 Many common vulnerability classes can be identified by delivering an exploit that triggers a callback, making it possible to find these vulnerabilities without relying on any application output. Burp Suite uses the Burp Collaborator server as a receiver for these external interactions:
 
-!
+![](https://portswigger.net/cms/images/migration/blog/enter-burp-collaborator.png)
 
 DNS is the ideal protocol for triggering callbacks, as it's rarely filtered outbound on networks and also underpins many other network protocols.
 

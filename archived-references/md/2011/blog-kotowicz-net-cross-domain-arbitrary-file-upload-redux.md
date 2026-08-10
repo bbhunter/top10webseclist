@@ -76,7 +76,7 @@ xhr.withCredentials = "true";
 
 Luckily for attackers (and unfortunately for the Web), POST request with MIME type multipart/form-data and credentials are still in the 'simple' bucket. So the exact CSRF CORS File Upload attack works like this:
 
-| [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3wamDph6ilngp6_ibH8TQ93Z3iwEjSfGnWsHna-SNKWw68n7Yey4JCOaVulu0PR4kt26yOMiDDT-P04Cuqb_s8irQsxj9cIydLGm2nmM9J7_txHcw-Nc1hmiMNsR-SxrLlY0y9M3RqLI/s1600/3-3-11-Grimms-Lost-Fairy-Tales-Little-Red-Ridding-Hood-1.jpg) |  |
+| [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3wamDph6ilngp6_ibH8TQ93Z3iwEjSfGnWsHna-SNKWw68n7Yey4JCOaVulu0PR4kt26yOMiDDT-P04Cuqb_s8irQsxj9cIydLGm2nmM9J7_txHcw-Nc1hmiMNsR-SxrLlY0y9M3RqLI/s1600/3-3-11-Grimms-Lost-Fairy-Tales-Little-Red-Ridding-Hood-1.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3wamDph6ilngp6_ibH8TQ93Z3iwEjSfGnWsHna-SNKWw68n7Yey4JCOaVulu0PR4kt26yOMiDDT-P04Cuqb_s8irQsxj9cIydLGm2nmM9J7_txHcw-Nc1hmiMNsR-SxrLlY0y9M3RqLI/s1600/3-3-11-Grimms-Lost-Fairy-Tales-Little-Red-Ridding-Hood-1.jpg) |  |
 | "Take those cookies to your grandma", said The Browser |  |
 
 - Victim logs in to victim.whatever.com website

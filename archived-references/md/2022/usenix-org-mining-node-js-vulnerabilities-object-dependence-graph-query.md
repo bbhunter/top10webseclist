@@ -95,10 +95,10 @@ BibTeX
 
 ![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Li Paper (Prepublication) PDF](https://www.usenix.org/system/files/sec22summer_li-song.pdf)
 
-!
+![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_available_125_update.png)
 
-!
+![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_functional_125.png)
 
-!
+![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_reproduced_125.png)
 
 ## Presentation Video

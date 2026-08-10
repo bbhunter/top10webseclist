@@ -212,7 +212,7 @@ Copy to clipboard
 
 The following image visualizes the data structure that the event handler expects:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/27a0f0d6-33a5-4401-9668-a1127d7e4316/01_data_structures.png)
 
 This is a very promising situation for attackers: They can write any data to the pipe, and there is a quick path to the invocation of a function pointer. In fact, we were not the only and first researchers to notice this. On August 8, HackerOne disclosed [this great report](https://hackerone.com/reports/2260337) from [Seunghyun Lee](https://x.com/0x10n), in which he describes a different scenario in which he was able to leverage the open file descriptor from within a Node.js program to bypass any module- and process-based permission – basically a sandbox escape.
 
@@ -233,7 +233,7 @@ Assuming that attackers can only write files, all of this needs to be achieved w
 
 The buffer of the event handler is quite huge, which allows attackers to easily write both data structures to the pipe. However, there is a hurdle: the address of the data structures is unknown since all data written to the pipe is stored on the stack:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/597a95e3-fa32-4e79-b804-83dc97d643fb/02_data_stack.png)
 
 Thus, attackers wouldn't be able to make the `handle` pointer reference the fake `uv_signal_s` data structure. This leads to the question: Is there even any data that attackers could reference?
 
@@ -253,7 +253,7 @@ user@host:~$ checksec /opt/node-v22.9.0-linux-x64/bin/node
 
 The reasons for this are apparently [performance considerations,](https://github.com/nodejs/node/issues/33425) as the indirect addressing of PIE adds a small overhead. For attackers, this means that they could reference data in a Node.js segment since this address is known:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/ce8e0191-a030-4f9e-bda6-d9871c13898d/03_data_node.png)
 
 The next question is: How could attackers store a fake `uv_signal_s` data structure in a Node.js segment? Searching for ways to make Node.js store attacker-controlled data at a static location (e.g. data read from an HTTP request) would be one approach, but this seemed to be quite challenging.
 
@@ -261,7 +261,7 @@ An easier approach is to just use what is already available. By examining the No
 
 The attackers’ dream data structure would look similar to this:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/909a3886-b6ff-4f75-af69-6c27c6f8a22a/04_data_dream.png)
 
 This data structure begins with a command string (`"touch /tmp/pwned"`) followed by the address of `system` at the correct offset to overlap with the `signal_cb` function pointer. Attackers would only need to make the `signum` value match the fake `uv_signal_s` data structure so that the callback function is invoked, which effectively calls `system("touch /tmp/pwned")`.
 
@@ -271,15 +271,15 @@ This approach requires the address of `system` to be present in a Node.js segmen
 
 The beginning of every ROP chain is the search for useful ROP gadgets. A tool that searches for ROP gadgets usually parses the ELF file on disk and then determines all executable sections. The `.text` section is usually the biggest executable section since it stores the instructions of the program itself:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/5f88fbca-f990-4cc2-8981-0a903b10e354/05_rop_tool.png)
 
 Now the tool iterates over the bytes in this section and looks for a `ret` instruction, for example, since this is a suitable last instruction for a ROP gadget. The tool then goes from the byte that represents the `ret` instruction back again – byte by byte – to determine all possibly useful ROP gadgets:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/f618d002-2525-40fa-b98c-0f3cc03cbcdb/rop.gif)
 
 In this case, however, this is not what attackers need. Instead of a ROP gadget, they need an address that references a fake `uv_signal_s` data structure, which references a ROP gadget via its `signal_cb` function pointer. So, there is one indirection: the ROP gadget (address of a sequence of instructions) needs to be stored in the referenced data itself:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/24c73034-6d63-4c90-b449-5377858806c4/06_fake_signal.png)
 
 In order to identify suitable data structures like this, attackers need to search through the Node.js image similar to a classical ROP gadget finder tool. The difference, though, is that attackers are not only interested in executable sections like the `.text` section. The memory where the fake data structure resides does not have to be executable. Attackers need a pointer to a gadget. Thus, they can consider all segments that are at least readable. Also, this search can be done in-memory instead of only parsing the ELF file on disk. This way, attackers can also find data structures that were only created during runtime in the `.bss` section, for example. This may lead to false positives or environment-specific structures but increases their chance of getting useful findings, which can be verified manually.
 
@@ -300,15 +300,15 @@ for addr, len in nodejs_segments:
 
 The Python script iterates over all Node.js memory regions and interprets 8 bytes at a time as a pointer, which it tries to reference. If the address is mapped and references memory in an executable segment, it determines if the byte sequence stored at this address is a useful ROP gadget:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/473641d2-0144-45d3-b061-ee7e9b5819d0/tool.gif)
 
 This is what the Python script looks like in action:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/e9ba4413-3c3f-4f68-9e54-e1bb6527a06b/data-struct-tool.gif)
 
 All potentially useful ROP gadgets are outputted and can now be used as the first initial ROP gadget that is executed when the callback function is invoked. Since all data written to the pipe is stored on the stack, it is sufficient to find a suitable pivoting gadget for this first gadget. Once attackers have pivoted the stack pointer to controlled data, a classical ROP chain can be used:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/69bdae6a-bf95-49de-9eca-3f8410641b81/07_expl_overview.png)
 
 One caveat remains when using this technique to exploit an arbitrary file vulnerability. Usually, the function used to write the file (`fs.writeFile` in this case) is limited to valid UTF-8 data. Accordingly all data written to the pipe must be valid UTF-8.
 
@@ -338,23 +338,23 @@ Copy to clipboard
 
 This is how the related data structure looks like in memory:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/f050dd39-82df-4998-b88a-5447bf870518/08_data_gadget.png)
 
 The base address of this fake data structure (`0x4354c41`) is valid UTF-8, so the `handle` pointer in the `uv__signal_msg_t` data structure can be correctly populated. However, there is another UTF-8-related problem. This time with the `signum` value:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/e63604c4-526e-442c-b853-9b3971be0898/09_utf8_fail.png)
 
 The last byte of the signum value is `0xf0`, which is not valid UTF-8. If an attacker tries to write this byte via the File Write vulnerability, it is replaced with a replacement character and the `signum` value check fails. If we enter `0xf0` in our [UTF-8 visualizer](https://sonarsource.github.io/utf8-visualizer/#), we can see that this byte introduces a 4-byte UTF-8 sequence:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/74f41a67-0cd8-4193-a5b2-a473275748c4/utf8.png)
 
 Accordingly, a UTF-8 parser expects 3 continuation bytes following this byte. Since the `uv__signal_msg_t` data structure contains an 8-byte pointer and a 4-byte integer, the compiler adds 4 additional padding bytes to align the structure to 16 bytes. These bytes can be used to add 3 continuation bytes and thus craft a valid UTF-8 sequence:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/76bb3568-6d02-4011-bdbc-9b7ae3adc6d2/floppy.gif)
 
 The above floppy disc, for example, is a valid 4-byte UTF-8 sequence that begins with `0xf0`. By adding these continuation bytes, attackers can fulfill the requirements of the whole payload being valid UTF-8 and make both `signum` values match:
 
-!
+![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/9503e41f-112a-43fa-89cf-06cdb468c7e4/10_utf8_success.png)
 
 With this last hurdle out of the way, attackers are able to gain remote code execution.
 

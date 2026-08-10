@@ -85,7 +85,7 @@ Although this vulnerability is very situational and can be challenging to exploi
 
 ## Attack Overview
 
- !
+ ![](https://alpaca-attack.com/media/img/alpaca-overview.png)
 
 The image shows three possible ways for an attacker to use cross-protocol attacks against webservers, exploiting vulnerable FTP and Email servers: In the Upload Attack, the attacker exfiltrates authentication cookies or other private data. In the Download Attack, the attacker executes a stored XSS attack. In the Reflection Attack, the attacker executes a reflected XSS in the context of the victim website.
 

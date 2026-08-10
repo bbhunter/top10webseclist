@@ -68,7 +68,7 @@ In this write-up, I want to share a cool way in which I was able to bypass firew
 
 The story starts when Burp Suite pointed out that a file upload endpoint was parsing the embedded XML in some image file formats, which it was able to determine because the embedded external entities triggered a DNS request to the Burp Collaborator.
 
-!
+![](https://honoki.net/wp-content/uploads/2020/03/afbeelding-2.png)
 
 *The generated report by the excellent UploadScanner extension for Burp Suite.*
 
@@ -137,7 +137,7 @@ In other words, the following happens:
 
 As a result, lo and behold, the string `testtesttest` is appended with the rest of the URL, and shows up in the external DNS lookup towards our Burp Collaborator:
 
-!
+![](https://honoki.net/wp-content/uploads/2020/03/afbeelding-3.png)
 
 At this point, I started looking for some internally accessible information that could be leaked as part of a domain name (i.e. strings without newlines, consisting only of alphanumerics, dots, and dashes) and was lucky to find a web service that returned the simple string “*none*“:
 
@@ -222,7 +222,7 @@ By poisoning the back-end’s HTTP layer and quickly following this by sending a
 
 This concatenated the value read from `http://127.0.0.1/api/secret`and issued a request to `http://ext.company.com/exfiltrate-via-smuggling-<token>`, which we could successfully poison. The result was beautiful:
 
-!
+![](https://honoki.net/wp-content/uploads/2020/03/afbeelding.png)
 
 *The exfiltrated data was available in my profile description as a result of the successful request smuggling attack. *
 

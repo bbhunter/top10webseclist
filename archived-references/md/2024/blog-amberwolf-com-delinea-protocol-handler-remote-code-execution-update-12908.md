@@ -96,13 +96,13 @@ A remote attacker may be able to convince a user to visit a malicious web-page, 
 
 The Delinea Secret Server Protocol Handler software registers a custom URI handler with a scheme of sslauncher://
 
- !
+ ![](https://blog.amberwolf.com/blog/2024/december/cve-2024-12908-delinea-protocol-handler---remote-code-execution-via-update-process/images/cef58cd0-ea1b-4f3e-95db-94f02a83daac_hue36e19527b4d57c5a6823eced869857b_8145_1252x95_resize_q100_h2_lanczos_3.webp)
 
 *image*
 
 The screenshot below shows the handler being invoked via Edge:
 
- !
+ ![](https://blog.amberwolf.com/blog/2024/december/cve-2024-12908-delinea-protocol-handler---remote-code-execution-via-update-process/images/48bd8f1f-7191-4c50-a315-7aed08fd6808_hue559a907d5ebcdb8b48dd3a0912bba9e_60335_766x235_resize_q100_h2_lanczos_3.webp)
 
 *image*
 
@@ -252,7 +252,7 @@ This can be satisfied by obtaining a valid TLS certificate for a web server. Fol
 
 Failing to match one of the previously approved domains results in a prompt similar to the image below. We’ll come back to bypassing this check later on.
 
- !
+ ![](https://blog.amberwolf.com/blog/2024/december/cve-2024-12908-delinea-protocol-handler---remote-code-execution-via-update-process/images/12d887e4-2a5d-458f-b11b-d99497c7eb23_hu587f7194401fd753dea6bfca2ef668ea_24410_410x259_resize_q100_h2_lanczos_3.webp)
 
 *image*
 
@@ -585,7 +585,7 @@ The ssurl string object is first converted to a Uri object before the domain is 
 
 A small test harness was used to run the whole unicode range of characters through the GetSecretServerUrlBase() function to determine any discrepancies between the input character and the result of the toLower() call. The following two characters appeared to be provide a useful substitution.
 
- !
+ ![](https://blog.amberwolf.com/blog/2024/december/cve-2024-12908-delinea-protocol-handler---remote-code-execution-via-update-process/images/8915108d-d03a-4d87-a8a0-5cf6c762b37f_hu3c586f65a2f8c2a3c9bf1e2b5c466175_2874_249x47_resize_q100_h2_lanczos_3.webp)
 
 *image*
 

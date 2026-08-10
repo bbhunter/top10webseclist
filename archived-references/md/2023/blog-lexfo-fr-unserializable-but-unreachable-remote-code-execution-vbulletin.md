@@ -291,11 +291,11 @@ a:2:{i:0;O:27:"googlelogin_vendor_autoload":0:{}i:1;O:32:"Monolog\Handler\Syslog
 
 To exploit, we generate the [payload with PHPGGC](https://github.com/ambionics/phpggc/blob/master/gadgetchains/vBulletin/RCE/1/chain.php):
 
-!
+![](https://blog.lexfo.fr/images/vbulletin-unserializable-but-unreachable/phpggc.png)
 
 and run one request:
 
-!
+![](https://blog.lexfo.fr/images/vbulletin-unserializable-but-unreachable/exploit.png)
 
 We got pre-auth code execution.
 

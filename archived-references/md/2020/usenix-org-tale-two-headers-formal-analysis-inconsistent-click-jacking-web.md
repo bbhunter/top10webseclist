@@ -88,10 +88,10 @@ BibTeX
 
 ![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Calzavara Paper (Prepublication) PDF](https://www.usenix.org/system/files/sec20fall_calzavara_prepub.pdf)
 
-!
+![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-unlocked.png)
 
 [View the slides](https://www.usenix.org/system/files/sec20_slides_calzavara.pdf)
 
-!
+![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_passed_125.png)
 
 ## Presentation Video

@@ -114,7 +114,7 @@ You commit code to your fork
 
 You delete your fork
 
-!
+![](https://framerusercontent.com/images/msknWhH1EkTt7PchLIRCt3npCI.png?width=2723&height=1646)
 
 Is the code you committed to the fork still accessible? It shouldn’t be, right? You deleted it.
 
@@ -144,7 +144,7 @@ Hard-code an API key into an example file.
 
 Delete the fork.
 
-!
+![](https://framerusercontent.com/images/CIeHAgW971XDzRy61aiZjY8fBqE.png?width=2394&height=1102)
 
 **But this gets worse, it works in reverse too: **
 
@@ -168,7 +168,7 @@ You commit data after they fork it (and they never sync their fork with your upd
 
 You delete the entire repo.
 
-!
+![](https://framerusercontent.com/images/A7rA45DJNYSMUEPCF6tj4wilVC0.png?width=2647&height=1590)
 
 Is the code you committed after they forked your repo still accessible?
 
@@ -176,7 +176,7 @@ Yep.
 
 GitHub stores repositories and forks in a [repository network](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-permissions-and-visibility-of-forks#about-visibility-of-forks) , with the original “upstream” repository acting as the root node. [When a public “upstream” repository that has been forked is “deleted”, GitHub reassigns the root node role to one of the downstream forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/what-happens-to-forks-when-a-repository-is-deleted-or-changes-visibility#deleting-a-public-repository) . However, all of the commits from the “upstream” repository still exist and are accessible via any fork.
 
-!
+![](https://framerusercontent.com/images/jCEeyZLP33ugahiS5Oc3N9ms.png?width=3686&height=2324)
 
 In the video below, we create a repo, fork it and then show how data not synced with the fork can still be accessed by the fork after the original repo is deleted.
 
@@ -204,7 +204,7 @@ You create a private, internal version of that repo (via forking) and commit add
 
 You make your “upstream” repository public and keep your fork private.
 
-!
+![](https://framerusercontent.com/images/xImmfuPpiSy9ttCvAMC5G46bGSk.png?width=2481&height=1590)
 
 Are your private features and related code (from step 2) viewable by the public?
 
@@ -212,7 +212,7 @@ Yes. Any code committed between the time you created an internal fork of your to
 
 Any commits made to your private fork *after* you make the “upstream” repository public are not viewable. That’s because changing the visibility of a private “upstream” repository results in two repository networks - one for the private version, and one for the public version.
 
-!
+![](https://framerusercontent.com/images/zOeORJBOu7eK4cx0y2qdgtXNW4.png?width=3921&height=2000)
 
 In the video below, we demonstrate how organizations open-source new tools while maintaining private internal forks, and then show how someone could access commit data from the private internal version via the public one.
 
@@ -226,11 +226,11 @@ Destructive actions in GitHub’s repository network (like the 3 scenarios menti
 
 Commit hashes are SHA-1 values.
 
-!
+![](https://framerusercontent.com/images/EoVCvCLjHvZJCuMrrZ0ZwQd3W8M.png?width=2322&height=602)
 
 If a user knows the SHA-1 commit hash of a particular commit they want to see, they can directly navigate to that commit at the endpoint: https://github.com`/<user/org>/<repo>/commit/<commit_hash>`. They’ll see a yellow banner explaining that “[t]his commit does not belong to any branch of this repository, and may belong to a fork outside of the repository.”
 
-!
+![](https://framerusercontent.com/images/B0wRJU4mjHvmKdy7mpZ3Z3wRV8.png?width=2324&height=1410)
 
 **Where do you get these hash values?**
 
@@ -238,13 +238,13 @@ Commit hashes can be brute forced through GitHub’s UI, particularly because th
 
 For example, consider this commit in TruffleHog’s repository:
 
-!
+![](https://framerusercontent.com/images/yPbRdgv9LoasW1BXLK09dZNMSXs.png?width=2320&height=1098)
 
 To access this commit, users typically visit the URL containing the full SHA-1 commit hash: [https://github.com/trufflesecurity/trufflehog/commit/07f01e8337c1073d2c45bb12d688170fcd44c637](https://github.com/trufflesecurity/trufflehog/commit/07f01e8337c1073d2c45bb12d688170fcd44c637)
 
 But users don’t need to know the entire 32 character SHA-1 value, they only need to correctly guess the Short SHA-1 value, which in this case is `07f01e`.
 
-!
+![](https://framerusercontent.com/images/jji5JQSyL5Bh0OJtpMQDB65DE.png?width=2326&height=1324)
 
  [https://github.com/trufflesecurity/trufflehog/commit/07f01e](https://github.com/trufflesecurity/trufflehog/commit/07f01e)
 
@@ -254,13 +254,13 @@ But what’s more interesting; GitHub exposes a public events API endpoint. You 
 
 We recently submitted our findings to GitHub via their VDP program. This was their response:
 
-!
+![](https://framerusercontent.com/images/G9xGKRx7gPHauxianQClKVxPE.png?width=1874&height=314)
 
 After reviewing the documentation, it’s clear as day that GitHub designed repositories to work like this.
 
-!
+![](https://framerusercontent.com/images/eE6IuZrodHY2R0pBWcGHKPNxI.png?width=2312&height=1270)
 
-!
+![](https://framerusercontent.com/images/UpywoiGAzxzDtqcMAzLxKeW6dwQ.png?width=2318&height=612)
 
  [https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/what-happens-to-forks-when-a-repository-is-deleted-or-changes-visibility](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/what-happens-to-forks-when-a-repository-is-deleted-or-changes-visibility)
 
@@ -300,13 +300,13 @@ Finally, while our research focused on GitHub, it’s important to note that som
 
 Thoughts, research findings, reports, and more from Truffle Security Co.
 
- [! Jun 1, 2026 ###### Scanning 7.6 Petabytes of HuggingFace Training Data for Secrets](https://trufflesecurity.com/blog/scanning-7-6-petabytes-of-ai-training-data-for-secrets) [! Jul 22, 2026 ###### Securing the Supply Chain: Cache Vulnerability in RubyGems](https://trufflesecurity.com/blog/rubygems-cache-vulnerability) [! Jul 17, 2026 ###### Preventing a Supply Chain Attack: A Leaked Docker Token in a Public CI Artifact](https://trufflesecurity.com/blog/dockerhub-pat-gitlab-ci-artifact)
+ [![](https://framerusercontent.com/images/QzYGhNgh0IQIDoXeiClgcslk6c.svg?width=1200&height=630) Jun 1, 2026 ###### Scanning 7.6 Petabytes of HuggingFace Training Data for Secrets](https://trufflesecurity.com/blog/scanning-7-6-petabytes-of-ai-training-data-for-secrets) [![](https://framerusercontent.com/images/jAHwvuKgQIuawkDc3kjR21oPJU.png?width=1200&height=600) Jul 22, 2026 ###### Securing the Supply Chain: Cache Vulnerability in RubyGems](https://trufflesecurity.com/blog/rubygems-cache-vulnerability) [![](https://framerusercontent.com/images/jMkNv1OCCb4egGDi9ufYjdro.png?width=1200&height=600) Jul 17, 2026 ###### Preventing a Supply Chain Attack: A Leaked Docker Token in a Public CI Artifact](https://trufflesecurity.com/blog/dockerhub-pat-gitlab-ci-artifact)
 
 #  [T](https://trufflesecurity.com/blog) he Dig
 
 Thoughts, research findings, reports, and more from Truffle Security Co.
 
- [! Jun 1, 2026 ###### Scanning 7.6 Petabytes of HuggingFace Training Data for Secrets](https://trufflesecurity.com/blog/scanning-7-6-petabytes-of-ai-training-data-for-secrets) [! Jul 22, 2026 ###### Securing the Supply Chain: Cache Vulnerability in RubyGems](https://trufflesecurity.com/blog/rubygems-cache-vulnerability)
+ [![](https://framerusercontent.com/images/QzYGhNgh0IQIDoXeiClgcslk6c.svg?width=1200&height=630) Jun 1, 2026 ###### Scanning 7.6 Petabytes of HuggingFace Training Data for Secrets](https://trufflesecurity.com/blog/scanning-7-6-petabytes-of-ai-training-data-for-secrets) [![](https://framerusercontent.com/images/jAHwvuKgQIuawkDc3kjR21oPJU.png?width=1200&height=600) Jul 22, 2026 ###### Securing the Supply Chain: Cache Vulnerability in RubyGems](https://trufflesecurity.com/blog/rubygems-cache-vulnerability)
 
 STAY STRONG
 

@@ -140,7 +140,7 @@ Please note you can find a summary and FAQ aimed at a broader audience at [http1
 
 HTTP/1.1 has a fatal, highly-exploitable flaw - the boundaries between individual HTTP requests are very weak. Requests are simply concatenated on the underlying TCP/TLS socket with no delimiters, and there are multiple ways to specify their length. This means attackers can create extreme ambiguity about where one request ends and the next request starts. Major websites often use reverse proxies, which funnel requests from different users down a shared connection pool to the back-end server. This means that an attacker who finds the tiniest parser discrepancy in the server chain can cause a desync, apply a malicious prefix to other users' requests, and usually achieve complete site takeover:
 
-!
+![](https://portswigger.net/cms/images/79/c4/0434-article-desync-concept.png)
 
 As HTTP/1.1 is an ancient, lenient, text-based protocol with thousands of implementations, finding parser discrepancies is not hard. When I first discovered this threat in 2019, it felt like you could hack anything. For example, I showed it could be exploited to [compromise PayPal's login page](https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn#paypal), twice. Since then, we have also published a [free online course on request smuggling](https://portswigger.net/web-security/request-smuggling) and multiple [further research papers](https://portswigger.net/research/request-smuggling). If you get lost in any technical details later on, it may be useful to refer back to these.
 
@@ -186,7 +186,7 @@ I agreed to investigate and noticed something else strange - the attack was bloc
 
 By ignoring the fact his attack was being blocked by a cache, Wannes had discovered a HTTP/1.1 desync internal to Cloudflare's infrastructure:
 
-!
+![](https://portswigger.net/cms/images/6c/34/a872-article-cloudflare.png)
 
 This finding exposed over 24,000,000 websites to complete site takeover! It embodies the desync endgame - the classic methodology doesn't work, but the systems built on HTTP/1 are so complex and critical that you can make one mistake and end up with control over 24 million websites.
 
@@ -228,7 +228,7 @@ Back in 2021, Daniel Thacher presented [Practical HTTP Header Smuggling](https:/
 
 This tool proved highly effective, and I'm pleased to release it in the open-source Burp Suite extension [HTTP Request Smuggler v3.0](https://github.com/PortSwigger/http-request-smuggler/). Here's a high-level overview of the three key elements used for analysis, and the possible outcomes:
 
-!
+![](https://portswigger.net/cms/images/61/19/f4a9-article-reqsmuggler.png)
 
 ### Understanding V-H and H-V discrepancies
 
@@ -405,11 +405,11 @@ This is complex for both clients and servers, and significantly worse for revers
 
 The first explicit clue that the Expect header is something special was that it broke the HTTP client in my Turbo Intruder tool, at a critical point where any bug could lead to a desync. Fixing the client massively increased the code complexity. Here's the code to read the response off the wire before:
 
-!
+![](https://portswigger.net/cms/images/f1/3d/9cf6-article-code-before.png)
 
 And after:
 
-!
+![](https://portswigger.net/cms/images/71/91/ac0e-article-code-after.png)
 
 Expect breaks servers too. On one site, Expect made the server forget that HEAD responses don't have a body and try to read too much data from the back-end socket, causing an upstream deadlock:
 

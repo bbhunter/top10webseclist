@@ -73,7 +73,7 @@ tags: [Writeup](https://web.archive.org/web/20260418230027/https://mizu.re/tag/W
 
 # FCSC 2026 Writeups
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/fcsc-logo.png)
 
 - Keywords
 - 10 Fast Fishers ⭐
@@ -146,7 +146,7 @@ Sources: [here](https://web.archive.org/web/20260418230027/https://mizu.re/artic
 
 The challenge was a fishing-themed version inspired by [10fastfingers.com](https://web.archive.org/web/20260418230027/https://10fastfingers.com/typing-test/french):
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/10-fast-finger/challenge-website.png)
 
 fig. 1: Challenge website.
 
@@ -459,7 +459,7 @@ echo 'http://mizu.re:8001/ctf-solutions/fcsc-2026/10-fast-fishers-6578e4cd66bce4
 
 fig. 15: Sending the solution URL to the bot.
 
-   !
+   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/10-fast-finger/solve.png)
 
 fig. 16: Flag.
 
@@ -479,7 +479,7 @@ Sources: [here](https://web.archive.org/web/20260418230027/https://mizu.re/artic
 
 This challenge website was a sea fish & crustaceans blog :D
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/deep-blue/challenge-website.png)
 
 fig. 17: Challenge website.
 
@@ -540,7 +540,7 @@ export class Article {
 
 fig. 19: Source of /src/app/article/article.ts.
 
-   !
+   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/deep-blue/cspt.png)
 
 fig. 20: Client-Side Path Traversal.
 
@@ -548,7 +548,7 @@ fig. 20: Client-Side Path Traversal.
 
 Unfortunately, trying to traverse more than 1 directory triggers a 400.
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/deep-blue/400-deep-cspt.png)
 
 fig. 21: 400 when traversing more than one directory.
 
@@ -568,13 +568,13 @@ location / {
 
 fig. 22: Source of /src/nginx/default.conf.
 
-   !
+   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/deep-blue/apache-400.png)
 
 fig. 23: Apache 400 response.
 
 One well-known trick to overcome this issue is to traverse with .\x09./. This works because the client-side JavaScript URL parser removes \x09, \x0a and \x0d in most places of a URL.
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/deep-blue/09-0a-0d-cspt.png)
 
 fig. 24: CSPT bypass with .\x09./.
 
@@ -631,7 +631,7 @@ Thanks to this, the CSPT works the following way:
 
 URL: [https://deep-blue.fcsc.fr/article;a%2Fa%2Fa%2Fa%2Fa%2Fa%2F=/..%2F..%2F..%2F..%2F..%2FCSPT](https://web.archive.org/web/20260418230027/https://deep-blue.fcsc.fr/article;a%2Fa%2Fa%2Fa%2Fa%2Fa%2F=/..%2F..%2F..%2F..%2F..%2FCSPT)
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/deep-blue/matrix-params-cspt.png)
 
 fig. 27: CSPT via Angular matrix params.
 
@@ -721,7 +721,7 @@ How is it possible to have a valid JSON upload with that restriction?
 
 This is where we need to find a [mime_content_type](https://web.archive.org/web/20260418230027/https://www.php.net/manual/en/function.mime-content-type.php) image/ JSON polyglot!
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/deep-blue/mime-content-type.png)
 
 fig. 30: PHP mime_content_type documentation ([ref](https://web.archive.org/web/20260418230027/https://www.php.net/manual/en/function.mime-content-type.php)).
 
@@ -743,13 +743,13 @@ At this point, there are several ways to solve it. The solution I came up with w
 
 After digging into the magic mime file, I came up with the image/x-quicktime image mime:
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/deep-blue/x-quicktime.png)
 
 fig. 31: image/x-quicktime libmagic definition.
 
 The only problem is that application/json is above in the resolution order, giving it the resolution priority.
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/deep-blue/json-x-quicktime.png)
 
 fig. 32: application/json taking priority over image/x-quicktime.
 
@@ -759,17 +759,17 @@ So it's a dead end?
 
 Nop! As documented, libmagic has a MAGIC_PARAM_ENCODING_MAX default size set to 1048576!
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/deep-blue/libmagic-1.png)
 
 fig. 33: MAGIC_PARAM_ENCODING_MAX default size.
 
-   !
+   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/deep-blue/libmagic-2.png)
 
 fig. 34: libmagic encoding scan limit.
 
 Thanks to this, we can put a lot of chars before closing the JSON to hide it from libmagic!
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/deep-blue/valid-json-x-quicktime.png)
 
 fig. 35: Valid application/json / image/x-quicktime polyglot.
 
@@ -823,7 +823,7 @@ while "FCSC{" not in line:
 
 fig. 36: Solution script.
 
-   !
+   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/deep-blue/flag.png)
 
 fig. 37: Flag.
 
@@ -851,7 +851,7 @@ This challenge was the hardest client-side challenge of the year.
 
 The challenge is an application with a custom fish creator where you can basically choose which body, eyes, fins, tail, etc. you want your fish to have.
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/splash-studio/challenge-website.png)
 
 fig. 38: Challenge website.
 
@@ -969,7 +969,7 @@ fig. 42: Source of /src/app/src/public/app.js.
 
 fig. 43: DOM Clobbering payload.
 
-   !
+   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/splash-studio/invalid-clobbering.png)
 
 fig. 44: Invalid DOM Clobbering due to URL encoding.
 
@@ -979,7 +979,7 @@ Why isn't it working?
 
 It's because the JSON.parse function will call window.bubbleConfig.toString() which, without a scheme, is computed based on the current page URL.
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/splash-studio/invalid-clobbering-toString.png)
 
 fig. 45: .toString() behavior on an anchor element.
 
@@ -991,7 +991,7 @@ There are still some tricks that allow avoiding URL encoding, like using cid:, b
 
 fig. 46: DOM Clobbering with the cid: scheme.
 
-   !
+   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/splash-studio/clobbering-without-url-encoding.png)
 
 fig. 47: Clobbering without URL encoding, but invalid JSON.
 
@@ -1001,7 +1001,7 @@ With that context, how could this even be possible?
 
 In the [HTML Standard](https://web.archive.org/web/20260418230027/https://html.spec.whatwg.org/), this is how the HTMLHyperlinkElementUtils.href getter is described:
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/splash-studio/HTMLHyperlinkElementUtils.href.png)
 
 fig. 48: HTMLHyperlinkElementUtils.href getter ([source](https://web.archive.org/web/20260418230027/https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-href)).
 
@@ -1009,17 +1009,17 @@ As you can see, in step 4, if the **url** is **null**, it returns the **href con
 
 To understand how to trigger such a flow, we need to examine the URL parsing algorithm applied in step 1 "Reinitialize URL", and identify a configuration that causes it to return null.
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/splash-studio/reinitialise-url.png)
 
 fig. 49: Reinitialize URL algorithm ([source](https://web.archive.org/web/20260418230027/https://html.spec.whatwg.org/multipage/links.html#reinitialise-url)).
 
-   !
+   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/splash-studio/href-without-scheme.png)
 
 fig. 50: No-scheme URL parser state ([source](https://web.archive.org/web/20260418230027/https://url.spec.whatwg.org/#no-scheme-state)).
 
 In short, if the base URL of the current location has an opaque path, the raw .href attribute value is returned by .toString().
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/splash-studio/opaque-path.png)
 
 fig. 51: Opaque path definition ([source](https://web.archive.org/web/20260418230027/https://url.spec.whatwg.org/#url-opaque-path)).
 
@@ -1032,7 +1032,7 @@ This might not be quite clear at first, but it means the following payload would
 
 fig. 52: Working DOM Clobbering payload.
 
-   !
+   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/splash-studio/valid-clobbering.png)
 
 fig. 53: Valid DOM Clobbering.
 
@@ -1063,7 +1063,7 @@ Not really :)
 
 In the challenge configuration, DOMPurify is used to sanitize a custom DOM Tree created from a user's JSON input. While it is not well known, DOMPurify is absolutely not suited for such usage. I've already documented a potential bypass of that kind in one of my articles:
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/splash-studio/dangerous-dompurify-usage.png)
 
 fig. 55: DOMPurify JSON-to-HTML misconfiguration ([source](https://web.archive.org/web/20260418230027/https://mizu.re/post/exploring-the-dompurify-library-hunting-for-misconfigurations#json-to-html-libraries)).
 
@@ -1121,7 +1121,7 @@ document.body.innerHTML = elem.outerHTML;
 
 fig. 59: document.createElement parsing quirk.
 
-   !
+   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/splash-studio/document.createElement-quirks.png)
 
 fig. 60: Raw-text rendering of an invalid node name.
 
@@ -1165,7 +1165,7 @@ document.createElementNS("http://www.w3.org/2000/svg", "a").nodeName;
 
 fig. 62: HTML vs SVG nodeName casing.
 
-   !
+   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/splash-studio/nodeName-case-inconsistency.png)
 
 fig. 63: HTML vs SVG nodeName casing.
 
@@ -1210,7 +1210,7 @@ for (let i = 0xFF; i <= 0xFFFF; i++) {
 
 fig. 65: Fuzzer for Unicode chars collapsing to a single [a-z] after .toLowerCase().
 
-   !
+   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/splash-studio/toLowerCase.png)
 
 fig. 66: Fuzzer output.
 
@@ -1229,7 +1229,7 @@ echo http://splash-studio:8000/?fish={%22body%22:0,%22eyes%22:0,%22fins%22:1,%22
 
 fig. 67: Solution command.
 
-   !
+   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/splash-studio/flag.png)
 
 fig. 68: Flag.
 
@@ -1253,7 +1253,7 @@ Sources: [here](https://web.archive.org/web/20260418230027/https://mizu.re/artic
 
 For this challenge, the application was a very basic fake corporate dashboard.
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/bubulle-corp/challenge-website.png)
 
 fig. 69: Challenge website.
 
@@ -1291,7 +1291,7 @@ HttpProtocolOptions Unsafe
 </VirtualHost>
 ```
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/bubulle-corp/challenge-website.png)
 
 fig. 70: Source of /src/internal-proxy/apache.conf.
 
@@ -1371,7 +1371,7 @@ On /settings, only the root's direct children are sanitized, while on /icon it r
 
 Updating a user's settings with this value is enough to get the flag.
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/bubulle-corp/flag-1.png)
 
 fig. 72: Flag.
 
@@ -1455,7 +1455,7 @@ The only problem for request smuggling exploitation is that the apache [ProxyPas
 
 First of all, it's important to understand what HttpProtocolOptions Unsafe means for apache.
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/bubulle-corp/HttpProtocolOptions.png)
 
 fig. 77: HttpProtocolOptions documentation.
 
@@ -1567,7 +1567,7 @@ Now that we know exactly how HttpProtocolOptions Unsafe works, we need to find g
 
 Something really important is that gunicorn version 22.0 (the one right after the challenge version) fixes a lot of HTTP parsing issues:
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/bubulle-corp/gunicorn-fixes.png)
 
 fig. 84: Gunicorn 22.0.0 release notes ([source](https://web.archive.org/web/20260418230027/https://github.com/benoitc/gunicorn/releases/tag/22.0.0)).
 
@@ -1585,13 +1585,13 @@ METHOD_BADCHAR_RE = re.compile("[a-z#]")
 
 fig. 85: METH_RE regex before / after the fix.
 
-   !
+   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/bubulle-corp/regex-update.png)
 
 fig. 86: METH_RE diff between 21.2.0 and 22.0.0 ([source](https://web.archive.org/web/20260418230027/https://github.com/benoitc/gunicorn/compare/21.2.0...22.0.0#diff-7e884e24484c7ac02a634681dfd68ba4d1830cdf0204768b2fabbf84dd0adcd3L25)).
 
 - Request header names and values aren't stripped anymore.
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/bubulle-corp/header-name-strip.png)
 
 fig. 87: Header name/value stripping diff ([source](https://web.archive.org/web/20260418230027/https://github.com/benoitc/gunicorn/compare/21.2.0...22.0.0#diff-7e884e24484c7ac02a634681dfd68ba4d1830cdf0204768b2fabbf84dd0adcd3L96)).
 
@@ -1608,7 +1608,7 @@ for i in range(256):
 
 fig. 88: Fuzzer for bytes stripped by Python's .strip().
 
-   !
+   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/bubulle-corp/python-strip.png)
 
 fig. 89: Python .strip() whitespace bytes.
 
@@ -1642,13 +1642,13 @@ But how would we bypass this restriction?
 
 This is where the METH*RE = re.compile(r"[A-Z0-9$-*.]{{3,20}}") regex comes to the rescue. To understand why, we need to check the HEAD request definition in the [RFC 7231](https://web.archive.org/web/20260418230027/https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.2).
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/bubulle-corp/rfc-7231.png)
 
 fig. 92: HEAD method definition ([source](https://web.archive.org/web/20260418230027/https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.2)).
 
 As you can see, "**The HEAD method is identical to GET except that the server MUST NOT send a message body in the response**". This is really important because it's why most HTTP servers respond with a Content-Length but without a body!
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/bubulle-corp/head-request.png)
 
 fig. 93: HEAD response with a Content-Length but no body.
 
@@ -1656,7 +1656,7 @@ Applied to a reverse proxy, it knows it **MUST NOT** use the Content-Length resp
 
 If we go back to METH*RE = re.compile(r"[A-Z0-9$-*.]{{3,20}}"), this regex has a big problem: it only requires the first 3 chars of the method to be uppercase!
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/bubulle-corp/method-regex.png)
 
 fig. 94: METH_RE regex matching only the first 3 chars as uppercase.
 
@@ -1713,7 +1713,7 @@ What does that mean?
 
 I think an example is better than a code explanation for this one:
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/bubulle-corp/script-name.png)
 
 fig. 98: SCRIPT_NAME routing behavior.
 
@@ -1721,7 +1721,7 @@ As you can see, it can be used to specify a prefix which is stripped before reso
 
 - A request with a path which doesn't start with the SCRIPT_NAME value triggers a 500 with a Content-Length: 141.
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/bubulle-corp/invalid-script-name.png)
 
 fig. 99: 500 response when the path doesn't match SCRIPT_NAME.
 
@@ -1729,7 +1729,7 @@ fig. 99: 500 response when the path doesn't match SCRIPT_NAME.
 
 - If the request path === SCRIPT_NAME it triggers a 308 with a Content-Length: 233! 🔥
 
-  !
+  ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/bubulle-corp/308-script-name.png)
 
 fig. 100: 308 response when the request path equals SCRIPT_NAME.
 
@@ -1762,6 +1762,6 @@ Host: localhost
 
 fig. 101: Final solution payload.
 
-   !
+   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/bubulle-corp/flag-2.png)
 
 fig. 102: Flag.

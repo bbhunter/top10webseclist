@@ -387,7 +387,7 @@ $
 
  Okay, but I passed on this message to skype team on twitter, and they looked into this!
 
- [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgtGhbl1cCgmDaFvzv0cba9RgaznXMKhQTK9OXBSv_nOuMBsmsQGtvkuEJIwyh_NK9ST0Xl4k7IFsALp2NscYcLZEK1jxWxn4HoEJxwrtSC1zK4N1XFQhY8j17bbO4cdnOpAhARllSQBI/s1600/skype.png)
+ [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgtGhbl1cCgmDaFvzv0cba9RgaznXMKhQTK9OXBSv_nOuMBsmsQGtvkuEJIwyh_NK9ST0Xl4k7IFsALp2NscYcLZEK1jxWxn4HoEJxwrtSC1zK4N1XFQhY8j17bbO4cdnOpAhARllSQBI/s400/skype.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgtGhbl1cCgmDaFvzv0cba9RgaznXMKhQTK9OXBSv_nOuMBsmsQGtvkuEJIwyh_NK9ST0Xl4k7IFsALp2NscYcLZEK1jxWxn4HoEJxwrtSC1zK4N1XFQhY8j17bbO4cdnOpAhARllSQBI/s1600/skype.png)
 
  At last, this was patched on Skype version 8.29.0.41 on Linux.
 

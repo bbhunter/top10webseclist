@@ -77,7 +77,7 @@ Opossum allows attackers to break the integrity of secure TLS channels by inject
 
  The Opossum attack exploits issues in the authentication mechanism of TLS (identified in the [ALPACA attack](https://alpaca-attack.com/)) to desynchronize a client and a server, even if all current [ALPACA](https://alpaca-attack.com/) countermeasures are in place. To do this, Opossum attacks small differences on the application layer between implicit TLS (where TLS is established immediately) and opportunistic TLS (where connections start in plaintext and upgrade to TLS). If a server supports both methods for a given protocol, when a client attempts to connect using one method, an attacker can redirect the connection to use the other method, creating a mismatch in protocol expectations between client and server.
 
- !
+ ![](https://opossum-attack.com/media/img/opossum-attack-overview.png)
 
 * Figure 1: Opossum attack on HTTPS *
 

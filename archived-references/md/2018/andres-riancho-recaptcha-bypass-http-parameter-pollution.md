@@ -70,7 +70,7 @@ reCAPTCHA is a Google service that allows web application developers to add a [C
 
 When the web application wants to challenge the user, Google provides an image set and uses JavaScript code to show them in the browser as follows:
 
-!
+![](https://andresriancho.com/wp-content/uploads/2018/04/orange.png)
 
 The user solves the CAPTCHA and clicks “Verify”, which will trigger an HTTP request to the web application. This HTTP request will look like:
 

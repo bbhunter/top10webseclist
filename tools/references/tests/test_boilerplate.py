@@ -247,6 +247,24 @@ class TestPublisherLinkFurniture(unittest.TestCase):
         self.assertIn("More.", text)
         self.assertIn("textless-link", removed)
 
+    def test_an_image_with_no_alt_text_is_not_a_textless_link(self):
+        """`![](figure.png)` ends in exactly the shape the textless-link rule
+        matches. Without a `(?<!!)` guard it deleted the image and left the `!`:
+        3,531 figures across 509 documents, while their preserved copies sat in
+        the store with nothing left pointing at them."""
+        source = "Before.\n\n![](https://cdn.test/encode.png)\n\nAfter.\n"
+        text, removed = boilerplate.tidy_links(source)
+        self.assertEqual(text, source)
+        self.assertEqual(removed, [])
+
+    def test_an_image_with_alt_text_is_also_untouched(self):
+        source = "![a diagram](https://cdn.test/decode.png)\n"
+        self.assertEqual(boilerplate.tidy_links(source)[0], source)
+
+    def test_a_linked_image_with_no_alt_text_survives_whole(self):
+        source = "[![](https://cdn.test/logo.png)](https://vendor.test/)\n"
+        self.assertEqual(boilerplate.tidy_links(source)[0], source)
+
     def test_a_button_wearing_a_links_clothes_goes(self):
         text, removed = boilerplate.tidy_links(
             "[\n\nListen\n\n](https://medium.test/m/signin?dimension=post_audio_button)\n")

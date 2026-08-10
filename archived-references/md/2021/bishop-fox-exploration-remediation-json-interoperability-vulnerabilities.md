@@ -912,7 +912,7 @@ Finally, when designing protocols or standards, restricting behavior to determin
 - json5 0.3.0
 - serde-hjson 0.9.1
 
- !
+ ![](https://bishopfox.com/static/assets/images/backgrounds/lander-header-bg-black-lines.svg)
 
 Subscribe to our blog
 
