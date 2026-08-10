@@ -187,6 +187,9 @@ let investigationCardInfo = new Map();
 let pdfLoadTimer = null;
 let pdfVerifyToken = 0;
 let readerRequestToken = 0;
+// Where the reader was in the result list when they opened a document from it.
+let globalResultsScroll = 0;
+let searchResumable = false;
 
 function yearRecordFor(year) {
   return YEAR_RECORDS.find((record) => record.id === year) || { id: year, label: year, status: "final", ranked: true };
@@ -740,7 +743,7 @@ function wireShell() {
   $("#global-results-list").addEventListener("click", (event) => {
     const target = event.target.closest("[data-artifact]");
     if (!target) return;
-    closeGlobalSearch();
+    hideGlobalResults();
     openArtifact(target.dataset.artifact);
   });
 
@@ -830,6 +833,10 @@ function wireShell() {
     readerRequestToken++;
     state.readerItem = null;
     if (!$("#pdf-dialog").open) clearDocumentUrl();
+  });
+
+  ["#artifact-dialog", "#reader-dialog", "#pdf-dialog"].forEach((id) => {
+    $(id).addEventListener("close", () => requestAnimationFrame(restoreGlobalSearch));
   });
 
   $("#pdf-frame").addEventListener("load", () => {
@@ -1171,8 +1178,35 @@ function updateGlobalSearch() {
 
 function closeGlobalSearch() {
   state.query = "";
+  searchResumable = false;
   $("#global-search").value = "";
   $("#global-results").hidden = true;
+}
+
+// Opening a record from a search is not the end of the search. The list is put
+// away rather than thrown away, so closing the document returns the reader to
+// the results they came from - same words, same place in the list - instead of
+// an empty box they have to type into again.
+function hideGlobalResults() {
+  const panel = $("#global-results");
+  if (panel.hidden) return;
+  globalResultsScroll = $("#global-results-list").scrollTop;
+  searchResumable = Boolean(state.query);
+  panel.hidden = true;
+}
+
+function documentDialogOpen() {
+  return ["#artifact-dialog", "#reader-dialog", "#pdf-dialog"].some((id) => $(id).open);
+}
+
+// Called a frame after a document dialog closes, because moving between the
+// record, the reader and the PDF viewer closes one dialog before opening the
+// next - and mid-move is not a closed document.
+function restoreGlobalSearch() {
+  if (!searchResumable || !state.query || documentDialogOpen()) return;
+  searchResumable = false;
+  updateGlobalSearch();
+  $("#global-results-list").scrollTop = globalResultsScroll;
 }
 
 function setMetric(count, label) {
