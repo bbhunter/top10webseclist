@@ -63,11 +63,7 @@ page going offline. To read the original, follow the link above.
 
 Bypass firewalls with of-CORs and typo-squatting ◆ Truffle Security Co.
 
- [
-
-AI agents leak secrets faster than you can fix them - schedule a demo with us at Black Hat 2026, Booth 5727
-
-](https://trufflesecurity.com/events/blackhat2026-trufflesecurity)
+ [AI agents leak secrets faster than you can fix them - schedule a demo with us at Black Hat 2026, Booth 5727](https://trufflesecurity.com/events/blackhat2026-trufflesecurity)
 
 TRUFFLEHOG
 
@@ -79,17 +75,9 @@ RESOURCES
 
  [LOG IN](https://trufflehog.org/)
 
- [
+ [Contact Us](https://trufflesecurity.com/contact)
 
-Contact Us
-
-](https://trufflesecurity.com/contact)
-
- [
-
-AI agents leak secrets faster than you can fix them - schedule a demo with us at Black Hat 2026, Booth 5727
-
-](https://trufflesecurity.com/events/blackhat2026-trufflesecurity)
+ [AI agents leak secrets faster than you can fix them - schedule a demo with us at Black Hat 2026, Booth 5727](https://trufflesecurity.com/events/blackhat2026-trufflesecurity)
 
 Chris Grayson
 
@@ -111,21 +99,21 @@ Check out this example of [hacking Tesla](https://bugcrowd.com/disclosures/0e3f3
 
 Usually internal networks are out of scope for bug bounties due to the strict rules against lateral movement and social engineering but we devised a method to attack these internal apps directly without the use of either. Internal apps also often [contain secrets in their javascript](https://trufflesecurity.com/blog/trufflehog-the-chrome-extension/) . We’re aware we’re walking very close to the line, but we don’t believe it’s been crossed.
 
-![](https://framerusercontent.com/images/gYHG5d1YSkFAuc12d3wQaCRyw.png?width=1094&height=816)
+!
 
 Feeling antsy and just want to get your hands on some code?? Understandable. [The code can be found under the Truffle Security GitHub organization](https://github.com/trufflesecurity/of-cors) . Happy hacking.
 
-![](https://framerusercontent.com/images/1hyT3PwHoiDEg6RkAMyfNd3kWyQ.png?width=1580&height=962)
+!
 
 ##### A QUICK CORS PRIMER
 
 The same origin policy (SOP) is a foundational element of modern browser security. Without it all of the websites you visit in your browser could access data from one another (we’d be pulling data from your beanie baby fan site page right now if we could).
 
-![](https://framerusercontent.com/images/ERYeHirPsfcyUyu4qOVyHH82zN8.png?width=1600&height=270)
+!
 
 The SOP, while super important, is a bit more rigid than modern web developers might like. [Time](https://dev.to/benregenspan/the-state-of-jsonp-and-jsonp-vulnerabilities-in-2021-52ep) and [time again](https://medium.com/@chiragrai3666/exploiting-postmessage-e2b01349c205) there have been clever ways to try to get around the SOP, often to [disastrous effect](https://blog.miki.it/2014/7/8/abusing-jsonp-with-rosetta-flash/) . CORS is an officially supported security standard that tries to address this demand, enabling developers to “opt in” to explicit SOP carve-outs on the web sites they create.
 
-![](https://framerusercontent.com/images/yuNqB9N7MQ6AvjPNCmWgCLPoKI.png?width=1600&height=465)
+!
 
 CORS can be configured in two different ways. The first is to specify an origin that can read responses. In this case, logged in users can have their user data accessed. The second is to use a **wildcard, **which will not send login session information and is usually assumed to be safe for that reason. That’s often true for externally facing websites but can go horrendously wrong for internal facing web apps that don’t use authentication.
 
@@ -152,7 +140,7 @@ You’ll find such an example of an incomplete view of wildcard CORS on websites
 
 Take a look at a couple Tweets we found that are born out of a lack of understanding of this threat. Note both posters have over 10,000 followers:
 
-![](https://framerusercontent.com/images/62Kgjyi8atQmwfjWKnZKnmiU8o.png?width=1238&height=488)
+!
 
 To this lack of clarity, we say “thank you” for our recent bug bounty victory.
 
@@ -210,7 +198,7 @@ Bug bounty rules can vary wildly from one organization to the next, but a common
 
 Human error and bad typing to the rescue! We decided to go the route of purchasing [typo-squat](https://www.kaspersky.com/resource-center/definitions/what-is-typosquatting) domains that were very similar to the internal domains used by the organizations we targeted. You’ll need to do a little reconnaissance to learn what internal second level domains your target company uses. You can often find this in old commits in Github repos, android builds, and sometimes even StackOverflow questions. An example of an internal Uber domain found via GitHub is shown below:
 
-![](https://framerusercontent.com/images/jFNK3vhdAvfjyLcEPMNqSTtrk2Y.png?width=1040&height=642)
+!
 
 Next you’ll need to purchase a common typo of this internal second level domain. We recommend the off-by-one copy paste error that occurs when you drop the first or last character (ex: *orpinternal.com* for a company that owns the domain *corpinternal.com*).
 
@@ -252,15 +240,15 @@ While there were a handful of bug bounty targets that we went after, our engagem
 
 We set up of-CORS with the typo-squat domain of eslamotors.com and configured it to probe for CORS misconfigurations across approximately 150 subdomains of teslamotors.com. We only had to wait a few days before we got a hit:
 
-![](https://framerusercontent.com/images/IGhwrdCH9NnwOS9G8Z4pB9sMk.png?width=1600&height=744)
+!
 
 Eureka! They found it. When this unfortunate victim requested the page from of-CORS we registered a service worker that probed all of the configured subdomains. Of those 150 domains that were tested *12* of them were configured to allow cross-origin access with CORS. The affected domains are shown below in the of-CORS UI:
 
-![](https://framerusercontent.com/images/YQuxaVKB8ol5Hv8l9kjwypj80P4.png?width=1600&height=711)
+!
 
 Because of-CORS saves the HTML content that is returned from sites with CORS misconfigurations we also had the ability to review the pages for all of the affected sites. The HTML content for location.teslamotors.com is shown below:
 
-![](https://framerusercontent.com/images/U0ubD8yj5Q8UMRkU1mfmafoK3I.png?width=1260&height=883)
+!
 
 We reported our findings through Tesla’s bug bounty [program on BugCrowd](https://bugcrowd.com/disclosures/0e3f3821-1d26-466b-8599-7cc2f206f4d9/several-internal-applications-have-open-cors-allowing-external-folks-to-access-the-content) and the issue was quickly escalated, accepted, resolved, and paid out (a testament to the maturity of Tesla’s bug bounty program generally and security teams specifically).
 
@@ -279,21 +267,21 @@ Check out this example of [hacking Tesla](https://bugcrowd.com/disclosures/0e3f3
 
 Usually internal networks are out of scope for bug bounties due to the strict rules against lateral movement and social engineering but we devised a method to attack these internal apps directly without the use of either. Internal apps also often [contain secrets in their javascript](https://trufflesecurity.com/blog/trufflehog-the-chrome-extension/) . We’re aware we’re walking very close to the line, but we don’t believe it’s been crossed.
 
-![](https://framerusercontent.com/images/gYHG5d1YSkFAuc12d3wQaCRyw.png?width=1094&height=816)
+!
 
 Feeling antsy and just want to get your hands on some code?? Understandable. [The code can be found under the Truffle Security GitHub organization](https://github.com/trufflesecurity/of-cors) . Happy hacking.
 
-![](https://framerusercontent.com/images/1hyT3PwHoiDEg6RkAMyfNd3kWyQ.png?width=1580&height=962)
+!
 
 ##### A QUICK CORS PRIMER
 
 The same origin policy (SOP) is a foundational element of modern browser security. Without it all of the websites you visit in your browser could access data from one another (we’d be pulling data from your beanie baby fan site page right now if we could).
 
-![](https://framerusercontent.com/images/ERYeHirPsfcyUyu4qOVyHH82zN8.png?width=1600&height=270)
+!
 
 The SOP, while super important, is a bit more rigid than modern web developers might like. [Time](https://dev.to/benregenspan/the-state-of-jsonp-and-jsonp-vulnerabilities-in-2021-52ep) and [time again](https://medium.com/@chiragrai3666/exploiting-postmessage-e2b01349c205) there have been clever ways to try to get around the SOP, often to [disastrous effect](https://blog.miki.it/2014/7/8/abusing-jsonp-with-rosetta-flash/) . CORS is an officially supported security standard that tries to address this demand, enabling developers to “opt in” to explicit SOP carve-outs on the web sites they create.
 
-![](https://framerusercontent.com/images/yuNqB9N7MQ6AvjPNCmWgCLPoKI.png?width=1600&height=465)
+!
 
 CORS can be configured in two different ways. The first is to specify an origin that can read responses. In this case, logged in users can have their user data accessed. The second is to use a **wildcard, **which will not send login session information and is usually assumed to be safe for that reason. That’s often true for externally facing websites but can go horrendously wrong for internal facing web apps that don’t use authentication.
 
@@ -320,7 +308,7 @@ You’ll find such an example of an incomplete view of wildcard CORS on websites
 
 Take a look at a couple Tweets we found that are born out of a lack of understanding of this threat. Note both posters have over 10,000 followers:
 
-![](https://framerusercontent.com/images/62Kgjyi8atQmwfjWKnZKnmiU8o.png?width=1238&height=488)
+!
 
 To this lack of clarity, we say “thank you” for our recent bug bounty victory.
 
@@ -378,7 +366,7 @@ Bug bounty rules can vary wildly from one organization to the next, but a common
 
 Human error and bad typing to the rescue! We decided to go the route of purchasing [typo-squat](https://www.kaspersky.com/resource-center/definitions/what-is-typosquatting) domains that were very similar to the internal domains used by the organizations we targeted. You’ll need to do a little reconnaissance to learn what internal second level domains your target company uses. You can often find this in old commits in Github repos, android builds, and sometimes even StackOverflow questions. An example of an internal Uber domain found via GitHub is shown below:
 
-![](https://framerusercontent.com/images/jFNK3vhdAvfjyLcEPMNqSTtrk2Y.png?width=1040&height=642)
+!
 
 Next you’ll need to purchase a common typo of this internal second level domain. We recommend the off-by-one copy paste error that occurs when you drop the first or last character (ex: *orpinternal.com* for a company that owns the domain *corpinternal.com*).
 
@@ -420,15 +408,15 @@ While there were a handful of bug bounty targets that we went after, our engagem
 
 We set up of-CORS with the typo-squat domain of eslamotors.com and configured it to probe for CORS misconfigurations across approximately 150 subdomains of teslamotors.com. We only had to wait a few days before we got a hit:
 
-![](https://framerusercontent.com/images/IGhwrdCH9NnwOS9G8Z4pB9sMk.png?width=1600&height=744)
+!
 
 Eureka! They found it. When this unfortunate victim requested the page from of-CORS we registered a service worker that probed all of the configured subdomains. Of those 150 domains that were tested *12* of them were configured to allow cross-origin access with CORS. The affected domains are shown below in the of-CORS UI:
 
-![](https://framerusercontent.com/images/YQuxaVKB8ol5Hv8l9kjwypj80P4.png?width=1600&height=711)
+!
 
 Because of-CORS saves the HTML content that is returned from sites with CORS misconfigurations we also had the ability to review the pages for all of the affected sites. The HTML content for location.teslamotors.com is shown below:
 
-![](https://framerusercontent.com/images/U0ubD8yj5Q8UMRkU1mfmafoK3I.png?width=1260&height=883)
+!
 
 We reported our findings through Tesla’s bug bounty [program on BugCrowd](https://bugcrowd.com/disclosures/0e3f3821-1d26-466b-8599-7cc2f206f4d9/several-internal-applications-have-open-cors-allowing-external-folks-to-access-the-content) and the issue was quickly escalated, accepted, resolved, and paid out (a testament to the maturity of Tesla’s bug bounty program generally and security teams specifically).
 
@@ -445,53 +433,13 @@ A cheekier version of this story is told in our [recent video on the topic](http
 
 Thoughts, research findings, reports, and more from Truffle Security Co.
 
- [
-
-![](https://framerusercontent.com/images/QzYGhNgh0IQIDoXeiClgcslk6c.svg?width=1200&height=630)
-
-Jun 1, 2026
-
-###### Scanning 7.6 Petabytes of HuggingFace Training Data for Secrets
-
-](https://trufflesecurity.com/blog/scanning-7-6-petabytes-of-ai-training-data-for-secrets) [
-
-![](https://framerusercontent.com/images/jAHwvuKgQIuawkDc3kjR21oPJU.png?width=1200&height=600)
-
-Jul 22, 2026
-
-###### Securing the Supply Chain: Cache Vulnerability in RubyGems
-
-](https://trufflesecurity.com/blog/rubygems-cache-vulnerability) [
-
-![](https://framerusercontent.com/images/jMkNv1OCCb4egGDi9ufYjdro.png?width=1200&height=600)
-
-Jul 17, 2026
-
-###### Preventing a Supply Chain Attack: A Leaked Docker Token in a Public CI Artifact
-
-](https://trufflesecurity.com/blog/dockerhub-pat-gitlab-ci-artifact)
+ [! Jun 1, 2026 ###### Scanning 7.6 Petabytes of HuggingFace Training Data for Secrets](https://trufflesecurity.com/blog/scanning-7-6-petabytes-of-ai-training-data-for-secrets) [! Jul 22, 2026 ###### Securing the Supply Chain: Cache Vulnerability in RubyGems](https://trufflesecurity.com/blog/rubygems-cache-vulnerability) [! Jul 17, 2026 ###### Preventing a Supply Chain Attack: A Leaked Docker Token in a Public CI Artifact](https://trufflesecurity.com/blog/dockerhub-pat-gitlab-ci-artifact)
 
 #  [T](https://trufflesecurity.com/blog) he Dig
 
 Thoughts, research findings, reports, and more from Truffle Security Co.
 
- [
-
-![](https://framerusercontent.com/images/QzYGhNgh0IQIDoXeiClgcslk6c.svg?width=1200&height=630)
-
-Jun 1, 2026
-
-###### Scanning 7.6 Petabytes of HuggingFace Training Data for Secrets
-
-](https://trufflesecurity.com/blog/scanning-7-6-petabytes-of-ai-training-data-for-secrets) [
-
-![](https://framerusercontent.com/images/jAHwvuKgQIuawkDc3kjR21oPJU.png?width=1200&height=600)
-
-Jul 22, 2026
-
-###### Securing the Supply Chain: Cache Vulnerability in RubyGems
-
-](https://trufflesecurity.com/blog/rubygems-cache-vulnerability)
+ [! Jun 1, 2026 ###### Scanning 7.6 Petabytes of HuggingFace Training Data for Secrets](https://trufflesecurity.com/blog/scanning-7-6-petabytes-of-ai-training-data-for-secrets) [! Jul 22, 2026 ###### Securing the Supply Chain: Cache Vulnerability in RubyGems](https://trufflesecurity.com/blog/rubygems-cache-vulnerability)
 
 STAY STRONG
 
@@ -563,15 +511,7 @@ DOING IT THE RIGHT WAY
 
  [SINCE 2021](https://trufflesecurity.com/partners)
 
- [
-
-#trufflehog-community
-
-](https://join.slack.com/t/trufflehog-community/shared_invite/zt-pw2qbi43-Aa86hkiimstfdKH9UCpPzQ) [
-
-#Secret Scanning
-
-](https://discord.gg/8Hzbrnkr7E)
+ [#trufflehog-community](https://join.slack.com/t/trufflehog-community/shared_invite/zt-pw2qbi43-Aa86hkiimstfdKH9UCpPzQ) [#Secret Scanning](https://discord.gg/8Hzbrnkr7E)
 
 © 2026 Truffle Security Co.
 
@@ -587,15 +527,7 @@ STAY STRONG
 
 DIG DEEP
 
- [
-
-#trufflehog-community
-
-](https://join.slack.com/t/trufflehog-community/shared_invite/zt-pw2qbi43-Aa86hkiimstfdKH9UCpPzQ) [
-
-#Secret Scanning
-
-](https://discord.gg/8Hzbrnkr7E)
+ [#trufflehog-community](https://join.slack.com/t/trufflehog-community/shared_invite/zt-pw2qbi43-Aa86hkiimstfdKH9UCpPzQ) [#Secret Scanning](https://discord.gg/8Hzbrnkr7E)
 
 © 2026 Truffle Security Co.
 

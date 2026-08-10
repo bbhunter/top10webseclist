@@ -612,9 +612,9 @@ def command_acquire(args):
                        == "stored" or (entry.get("health") or {}).get("snapshot"))
                    and entry.get("raw_sha256")
                    and store.has(entry["raw_sha256"])]
-    if args.needs_work:
+    if args.document_gaps:
         entries = [(key, entry) for key, entry in entries
-                   if indexer_module.needs_work(entry)
+                   if indexer_module.document_gaps(entry)
                    and (args.faulty_captures or not
                         (entry.get("content_gap") or "").startswith("faulty capture:"))]
     entries = _entries_after(entries, args.after)
@@ -1181,14 +1181,14 @@ def command_wayback(args):
             return False
         if args.faulty_captures:
             return (entry.get("content_gap") or "").startswith("faulty capture:")
-        # A store gap is not a needs-work row any more, so it needs its own
+        # A store gap is not a document-gaps row any more, so it needs its own
         # selector here: the document is published but the bytes behind it are
         # gone, and a snapshot is the route when the source no longer answers.
         if args.missing_store:
             return bool(indexer_module.lost_bytes(entry, store))
         if args.force:
             return True
-        return indexer_module.needs_work(entry)
+        return indexer_module.document_gaps(entry)
 
     targets = [(key, entry) for key, entry in manifest.data["urls"].items()
                if wanted(key, entry)]
@@ -2221,17 +2221,17 @@ def command_index(args):
     (archive_dir / "README.md").write_text(text, encoding="utf-8", newline="\n")
     print("Wrote %s (%d bytes)." % (paths.rel(archive_dir / "README.md", root), len(text)))
 
-    unresolved = indexer.build_unresolved(manifest, store=Store(paths.store_root()))
-    (archive_dir / "needs-work.md").write_text(unresolved, encoding="utf-8", newline="\n")
+    unresolved = indexer.build_document_gaps(manifest, store=Store(paths.store_root()))
+    (archive_dir / "document-gaps.md").write_text(unresolved, encoding="utf-8", newline="\n")
     print("Wrote %s - the list to read when something needs fetching another way."
-          % paths.rel(archive_dir / "needs-work.md", root))
+          % paths.rel(archive_dir / "document-gaps.md", root))
 
     excluded = indexer.build_excluded(manifest)
     (archive_dir / "excluded.md").write_text(excluded, encoding="utf-8", newline="\n")
     print("Wrote %s - what the archive keeps no document for, and why."
           % paths.rel(archive_dir / "excluded.md", root))
 
-    # Kept apart from needs-work.md on purpose. These references ARE archived;
+    # Kept apart from document-gaps.md on purpose. These references ARE archived;
     # only the evidence behind their published files is gone, and listing them
     # as unfetched work buried the ones that genuinely have no document.
     gaps = indexer.build_store_gaps(manifest, store=Store(paths.store_root()))
@@ -2510,7 +2510,7 @@ def command_import(args):
         print("An unmatched group is REPORTED rather than guessed at: a wrong match")
         print("would file a document under the wrong citation. Rename the file after")
         print("the reference's URL or title and re-run.")
-    print("Run 'refs.py index' to refresh README.md and needs-work.md.")
+    print("Run 'refs.py index' to refresh README.md and document-gaps.md.")
     return 0
 
 
@@ -2720,8 +2720,8 @@ def build_parser():
     acquire_parser.add_argument("--wayback-capture", action="store_true",
                                 help="process only rows whose latest Wayback step stored "
                                      "raw capture bytes")
-    acquire_parser.add_argument("--needs-work", action="store_true",
-                                help="process exactly the rows in generated needs-work.md")
+    acquire_parser.add_argument("--document-gaps", action="store_true",
+                                help="process exactly the rows in generated document-gaps.md")
     acquire_parser.add_argument(
         "--linked-document-url", default="",
         help="for exactly one --only match, preserve this explicit full-document "

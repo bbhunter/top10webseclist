@@ -71,7 +71,7 @@ Posted on Jun 13, 2025
 
 Many security researchers are familiar with the frustrating experience of discovering an XSS vulnerability that requires complex actions within an account, effectively making it only reproducible on the attacker’s account and thus losing its practical value. Many bug bounty hunters have likely received responses like this from triage teams:
 
-![](https://blog.slonser.info/posts/make-self-xss-great-again/1.png)
+!
 
 The purpose of this article is to demonstrate that what is commonly perceived as `Stored Self-XSS` can actually be transformed into a regular `Stored XSS` using modern browser capabilities.
 
@@ -96,7 +96,7 @@ In practice, this means that if we open an HTML page with this content:
 
 ```
 
-We will see that the first iframe won’t have the victim’s session, while the second one will: ![](https://blog.slonser.info/posts/make-self-xss-great-again/2.png)
+We will see that the first iframe won’t have the victim’s session, while the second one will: !
 
 However, this functionality is poorly documented, and the phrase `those contexts don't have access to the data associated with their origins` can be misleading.
 
@@ -130,15 +130,15 @@ alert(window.top[1].document.cookie);
 
 ```
 
-It will gain access to the original cookies of the page: ![](https://blog.slonser.info/posts/make-self-xss-great-again/3.png)
+It will gain access to the original cookies of the page: !
 
 # SELF-XSS + CSRF on Login
 
-Let’s say you’ve found a Stored SELF-XSS. One real example from my experience looked like this: ![](https://blog.slonser.info/posts/make-self-xss-great-again/4.png)
+Let’s say you’ve found a Stored SELF-XSS. One real example from my experience looked like this: !
 
 The home page displayed a message `Welcome, username!`, where the username wasn’t sanitized, allowing for any XSS payload to be inserted. This is a classic example of Self-XSS.
 
-After this, it’s worth examining the `/login` form. If it lacks CSRF protection, you can do the following: ![](https://blog.slonser.info/posts/make-self-xss-great-again/9.png)
+After this, it’s worth examining the `/login` form. If it lacks CSRF protection, you can do the following: !
 
 - Create a classic CSRF login form:
 
@@ -168,7 +168,7 @@ After this, it’s worth examining the `/login` form. If it lacks CSRF protectio
 
 - (Optional) Redirect the user in the credentialless iframe to a URL that triggers the SELF-XSS, which will then execute the desired actions (session theft/ATO) within `window.top[1]`. Here, it’s useful to note that all credentialless frames within one document share the same context. If you already have `<iframe src=//example.com credentialless>` on the page that has set cookies and localStorage, adding `<iframe src=//example.com/path1 credentialless>` will have access to the same storage data as the first credentialless frame.
 
-In our case, it would look something like this: ![](https://blog.slonser.info/posts/make-self-xss-great-again/8.png)
+In our case, it would look something like this: !
 
 As we can see, we successfully got both cookie values (attacker’s and victim’s). To execute actions within the frame with the victim’s credentials, simply call `window.top[1].eval('your code')`
 
@@ -239,11 +239,11 @@ While I’m not an expert in such techniques, it might look something like this:
 
 -
 
-The user visits the attacker’s site and requests access ![](https://blog.slonser.info/posts/make-self-xss-great-again/6.png)
+The user visits the attacker’s site and requests access !
 
 -
 
-The user receives an email with content like this: ![](https://blog.slonser.info/posts/make-self-xss-great-again/7.png)
+The user receives an email with content like this: !
 
 -
 
@@ -261,7 +261,7 @@ Actually, another new API that became available in spring 2025 can help us here 
 
 The fetchLater() API provides an interface to request a deferred fetch that can be sent after a specified period of time, or when the page is closed or navigated away from.
 
-In simple terms, this means we can now send requests after some time, even if the tab is already closed. This opens up the possibility to send a request with the actual cookies at the time of sending, even if they have changed. When might this be useful? This can be useful when we have a Self-XSS and we can elevate our privileges / perform ATO through a series of requests. It looks like this: ![](https://blog.slonser.info/posts/make-self-xss-great-again/10.png)
+In simple terms, this means we can now send requests after some time, even if the tab is already closed. This opens up the possibility to send a request with the actual cookies at the time of sending, even if they have changed. When might this be useful? This can be useful when we have a Self-XSS and we can elevate our privileges / perform ATO through a series of requests. It looks like this: !
 
 - Open the page with csrf-login - `window.open('https://victim.domain/csrf')`
 - From the window where you triggered the Self-XSS, register several fetchLater requests for different time intervals

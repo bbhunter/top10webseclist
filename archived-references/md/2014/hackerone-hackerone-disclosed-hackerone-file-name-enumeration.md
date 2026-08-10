@@ -68,11 +68,7 @@ Report
 
 Timeline
 
-[
-
-![nahamsec](https://profile-photos.hackerone-user-content.com/variants/fbbne6p2au4kay4h5dr63g12wtd0/72249f83db42955adfcb43c5cad84162ec49002aa21a79c3606f682c8e48f4e6)
-
-](https://hackerone.com/nahamsec)
+[![nahamsec](https://profile-photos.hackerone-user-content.com/variants/fbbne6p2au4kay4h5dr63g12wtd0/72249f83db42955adfcb43c5cad84162ec49002aa21a79c3606f682c8e48f4e6)](https://hackerone.com/nahamsec)
 
 [nahamsec](https://hackerone.com/nahamsec)
 
@@ -92,11 +88,7 @@ Let me know if you need more info from my end.
 
 Thanks, Ben
 
-[
-
-![Michiel Prins](https://profile-photos.hackerone-user-content.com/variants/000/000/007/439427fb81f710e5e16246ede1828613d46bb79e_original.png/89f037b490baf3dcca1b84283f4c85141b64c213252a9c79b56c62bf903ab542)
-
-](https://hackerone.com/michiel)
+[![Michiel Prins](https://profile-photos.hackerone-user-content.com/variants/000/000/007/439427fb81f710e5e16246ede1828613d46bb79e_original.png/89f037b490baf3dcca1b84283f4c85141b64c213252a9c79b56c62bf903ab542)](https://hackerone.com/michiel)
 
 [michiel](https://hackerone.com/michiel)
 
@@ -108,11 +100,7 @@ November 4, 2014, 9:01pm UTC
 
 Hi [@nahemsec](https://hackerone.com/nahemsec) - thanks for this report. I can confirm that your proof of concept works and we have started an investigation into what is causing this problem.
 
-[
-
-![Remon Oldenbeuving](https://profile-photos.hackerone-user-content.com/variants/000/000/031/bad304b45f09b089c121de18c65d91d226f0aeea_original.jpg/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/rso)
+[![Remon Oldenbeuving](https://profile-photos.hackerone-user-content.com/variants/000/000/031/bad304b45f09b089c121de18c65d91d226f0aeea_original.jpg/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/rso)
 
 [rso](https://hackerone.com/rso)
 
@@ -128,11 +116,7 @@ Again, thanks for taking the time to report this, I feel like we messed up by no
 
 Cheers,
 
-[
-
-![Ben Sadeghipour](https://profile-photos.hackerone-user-content.com/variants/fbbne6p2au4kay4h5dr63g12wtd0/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/nahamsec)
+[![Ben Sadeghipour](https://profile-photos.hackerone-user-content.com/variants/fbbne6p2au4kay4h5dr63g12wtd0/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/nahamsec)
 
 [nahamsec](https://hackerone.com/nahamsec)
 
@@ -142,11 +126,7 @@ November 6, 2014, 12:31am UTC
 
 Awesome. Thanks for the update guys.
 
-[
-
-![Remon Oldenbeuving](https://profile-photos.hackerone-user-content.com/variants/000/000/031/bad304b45f09b089c121de18c65d91d226f0aeea_original.jpg/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/rso)
+[![Remon Oldenbeuving](https://profile-photos.hackerone-user-content.com/variants/000/000/031/bad304b45f09b089c121de18c65d91d226f0aeea_original.jpg/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/rso)
 
 [rso](https://hackerone.com/rso)
 
@@ -156,11 +136,7 @@ November 14, 2014, 12:38am UTC
 
 Time for another update: The Rails team has been working on a fix for this issue. We've already received a proposed fix and are now waiting for another Rails release.
 
-[
-
-![Ben Sadeghipour](https://profile-photos.hackerone-user-content.com/variants/fbbne6p2au4kay4h5dr63g12wtd0/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/nahamsec)
+[![Ben Sadeghipour](https://profile-photos.hackerone-user-content.com/variants/fbbne6p2au4kay4h5dr63g12wtd0/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/nahamsec)
 
 [nahamsec](https://hackerone.com/nahamsec)
 
@@ -176,11 +152,7 @@ changed the status to ****Triaged**.
 
 November 17, 2014, 8:24pm UTC
 
-[
-
-![Ben Sadeghipour](https://profile-photos.hackerone-user-content.com/variants/fbbne6p2au4kay4h5dr63g12wtd0/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/nahamsec)
+[![Ben Sadeghipour](https://profile-photos.hackerone-user-content.com/variants/fbbne6p2au4kay4h5dr63g12wtd0/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/nahamsec)
 
 [nahamsec](https://hackerone.com/nahamsec)
 
@@ -192,11 +164,7 @@ Seems like Rails has released the fix :)
 
 I have been getting a few emails from other vendors stating they have patched it. It is fixed on HackerOne now!
 
-[
-
-![Remon Oldenbeuving](https://profile-photos.hackerone-user-content.com/variants/000/000/031/bad304b45f09b089c121de18c65d91d226f0aeea_original.jpg/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/rso)
+[![Remon Oldenbeuving](https://profile-photos.hackerone-user-content.com/variants/000/000/031/bad304b45f09b089c121de18c65d91d226f0aeea_original.jpg/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/rso)
 
 [rso](https://hackerone.com/rso)
 
@@ -208,11 +176,7 @@ You're right, we've deployed this Rails release this morning!
 
 Thanks again for taking the time to report this bug to us.
 
-[
-
-![Ben Sadeghipour](https://profile-photos.hackerone-user-content.com/variants/fbbne6p2au4kay4h5dr63g12wtd0/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/nahamsec)
+[![Ben Sadeghipour](https://profile-photos.hackerone-user-content.com/variants/fbbne6p2au4kay4h5dr63g12wtd0/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/nahamsec)
 
 [nahamsec](https://hackerone.com/nahamsec)
 
@@ -228,11 +192,7 @@ rewarded [nahamsec](https://hackerone.com/nahamsec) with a bounty.
 
 November 17, 2014, 10:22pm UTC
 
-[
-
-![Remon Oldenbeuving](https://profile-photos.hackerone-user-content.com/variants/000/000/031/bad304b45f09b089c121de18c65d91d226f0aeea_original.jpg/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/rso)
+[![Remon Oldenbeuving](https://profile-photos.hackerone-user-content.com/variants/000/000/031/bad304b45f09b089c121de18c65d91d226f0aeea_original.jpg/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/rso)
 
 [rso](https://hackerone.com/rso)
 
@@ -244,11 +204,7 @@ Unfortunately I was recognised in the credits of the [security advisory](https:/
 
 I'm requesting public disclosure so that people can actually see that you are the one that deserves most of the praise here!
 
-[
-
-![Ben Sadeghipour](https://profile-photos.hackerone-user-content.com/variants/fbbne6p2au4kay4h5dr63g12wtd0/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/nahamsec)
+[![Ben Sadeghipour](https://profile-photos.hackerone-user-content.com/variants/fbbne6p2au4kay4h5dr63g12wtd0/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/nahamsec)
 
 [nahamsec](https://hackerone.com/nahamsec)
 
@@ -260,11 +216,7 @@ Awe dang! I thought they already knew about this issue and that's why I didn't r
 
 Howerver, I appreciate the bounty.
 
-[
-
-![Ben Sadeghipour](https://profile-photos.hackerone-user-content.com/variants/fbbne6p2au4kay4h5dr63g12wtd0/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/nahamsec)
+[![Ben Sadeghipour](https://profile-photos.hackerone-user-content.com/variants/fbbne6p2au4kay4h5dr63g12wtd0/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/nahamsec)
 
 [nahamsec](https://hackerone.com/nahamsec)
 

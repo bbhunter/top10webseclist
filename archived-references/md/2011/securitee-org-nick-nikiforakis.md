@@ -65,7 +65,7 @@ page going offline. To read the original, follow the link above.
 
 Nick Nikiforakis
 
- ![](https://www.securitee.org/img/lab-members/nick_new_small.jpg)
+ !
 
 ## Nick Nikiforakis
 
@@ -193,13 +193,13 @@ My students and I work on all sorts of practical, hands-on security and privacy.
 
 2026
 
-- ![](https://www.securitee.org/img/new.gif)[ Nephology: Characterizing the Security of Base Images across Cloud Providers](https://www.securitee.org/files/nephology_icics2026.pdf)
+- ![ Nephology: Characterizing the Security of Base Images across Cloud Providers](https://www.securitee.org/files/nephology_icics2026.pdf)
  *Narong Chaiwut and Nick Nikiforakis*
 Proceedings of the International Conference on Information and Communications Security (ICICS), 2026
 
  Citation
 
-- ![](https://www.securitee.org/img/new.gif)[ New Trains, Same Rails: Fingerprinting Cryptocurrency Software via Network Requests](https://www.securitee.org/files/newtrainsweb3_ifipnetworking2026.pdf)
+- ![ New Trains, Same Rails: Fingerprinting Cryptocurrency Software via Network Requests](https://www.securitee.org/files/newtrainsweb3_ifipnetworking2026.pdf)
  *Muhammad Muzammil, Oleksii Starov, Zane Ma, and Nick Nikiforakis*
 Proceedings of the IFIP Networking Conference, 2026
 
@@ -207,7 +207,7 @@ Proceedings of the IFIP Networking Conference, 2026
 
  [Paper Artifacts](https://pragseclab.github.io/DNS-Web3/)
 
-- ![](https://www.securitee.org/img/new.gif)[ Infrastructure as Compromise: Abusing Residual Trust in Infrastructure as Code Tools](https://www.securitee.org/files/iac_integrity_codaspy2026.pdf)
+- ![ Infrastructure as Compromise: Abusing Residual Trust in Infrastructure as Code Tools](https://www.securitee.org/files/iac_integrity_codaspy2026.pdf)
  *Ruining Yang, Narong Chaiwut, and Nick Nikiforakis*
 Proceedings of the ACM Conference on Data and Application Security and Privacy (CODASPY), 2026
 

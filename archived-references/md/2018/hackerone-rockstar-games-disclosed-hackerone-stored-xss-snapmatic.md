@@ -68,11 +68,7 @@ Report
 
 **Summary by Rockstar Games**
 
-[
-
-![](https://profile-photos.hackerone-user-content.com/variants/000/002/143/db40b290ac0adcde231da85c33a668f610e6f4df_original.png/b8e19a7691128fca51630d7f5b14644b91b3b45324f6fd488e36244d744fe35b)
-
-](https://hackerone.com/rockstargames)
+[!](https://hackerone.com/rockstargames)
 
 **Summary provided by the Researcher, [@europa](https://hackerone.com/europa) .**
 
@@ -139,11 +135,7 @@ Ad maiora!
 
 **Summary by europa**
 
-[
-
-![](https://profile-photos.hackerone-user-content.com/variants/yLAfkbEdjS5TTkov1RViumZ4/72249f83db42955adfcb43c5cad84162ec49002aa21a79c3606f682c8e48f4e6)
-
-](https://hackerone.com/europa)
+[!](https://hackerone.com/europa)
 
 I requested the disclosure of what I hope is the final report regarding stored cross-site-scripting vulnerabilities on the Rockstar Games SocialClub, to also allow me to summarize the research that went into the other 5 reports. Have fun!
 
@@ -206,11 +198,7 @@ Ad maiora!
 
 Timeline
 
-[
-
-![europa](https://profile-photos.hackerone-user-content.com/variants/yLAfkbEdjS5TTkov1RViumZ4/72249f83db42955adfcb43c5cad84162ec49002aa21a79c3606f682c8e48f4e6)
-
-](https://hackerone.com/europa)
+[![europa](https://profile-photos.hackerone-user-content.com/variants/yLAfkbEdjS5TTkov1RViumZ4/72249f83db42955adfcb43c5cad84162ec49002aa21a79c3606f682c8e48f4e6)](https://hackerone.com/europa)
 
 [europa](https://hackerone.com/europa)
 

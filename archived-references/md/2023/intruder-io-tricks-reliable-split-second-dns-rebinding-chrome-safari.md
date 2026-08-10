@@ -72,7 +72,7 @@ To speed up exploits, in 2010 Craig Heffner [presented](https://www.youtube.com/
 
 The attack will only work if the browser attempts to communicate with the public server first and loads the attacker's malicious page. The attacker's web server then starts blocking traffic from the victim's browser, causing the browser to fall back to sending all future requests to the target server. In this case, JavaScript in the attacker's page will be able to send requests to the target IP address under the same origin.
 
-![](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/656ef9f5ad62e8b7c799895b_7t_agx3oKkMAatQ7KRe2yjtDkapPZNlS-cn9pcqoCdCYWS245BxRWu50eGY2j-V-rgn3Nm-6-srx9MeqNPOOcuRiZZaNlGe81f3Ah3OjJX_rBiwPr-_66_XNCBZfVw5g1fVk_uaUAKlOOS3Hd6M8GPs.avif)
+!
 
 This technique does bypass the caching problem as the browser only has to perform one DNS lookup, though during my testing all the major browsers would consistently attempt to communicate to private IP addresses before public ones, meaning these techniques didn’t work. While I don't believe this behaviour is intended as a protection against DNS rebinding (I even got confirmation of this from one of the Chrome developers when informing them of my findings), it is effective at stopping this technique.
 
@@ -86,7 +86,7 @@ The interesting behaviour which allows for fast DNS rebinding in Safari occurs w
 
 This means that if the first DNS response is for a public IP address, and the delayed DNS response is for a private IP address, Safari will send the first requests to the public IP address until the delayed DNS response is received, at which point it will start sending requests to the private IP address.
 
-![](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/656efa8d5a4073db0042558d_SwKhlXyrBhRcE7_Jr-nzYS5BvW22EftGK3JnOR5bRWB4k6SeuEg-aRhRbQ6koyoCiXFIj0cMjPw3P6byy8TxLaUP_PnvPdI-v_Aqexo2unKZTKgdPCcxj_-Q52IeCxsEXktI-MCrpSgMEUkQ7T3HtYk.avif)
+!
 
 This provides a simple method for achieving DNS rebinding in Safari using a custom DNS server which handles queries for **.r.intrud.es*:
 
@@ -115,7 +115,7 @@ Chrome will prioritise loading pages on the local network over pages on the inte
 
 The key part here is that Chrome will prioritise a public IPv6 address over a private IPv4 address. Further, when Chrome knows multiple IP addresses for a domain, it will try a different IP address as soon as the server at one resets the connection.
 
-![](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/656efa8dd44e3f1b22c2d234_OhJOu5UgU-O2KfTTtlOxv2F3gQ2pMEsTiTFvwy43yCx1fbTccvYyDfITnNnOEwiEpJFdaObjNwUJ5wLGUc7_ezv3tHvIqjvTdt0vnPolq9wvrMZg7voG-HeGdsLnq3Rv96wvxW7sdPNbv_Njbek5_xc.avif)
+!
 
 This gives a plan for fast DNS rebinding against Chrome:
 
@@ -143,7 +143,7 @@ We can repeat the exploit through to step 4 above, where the public web server h
 
 The page in the iFrame is also under the same origin as the top page, which allows the top page to fully control the DOM of the framed page. This includes injecting scripts which make fetch requests into the framed page. These scripts can be used to access the target web server and exfiltrate data just as they would be able to from the top page if PNA wasn't implemented at all.
 
-![](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/656efa8d4b415f19ef581a3d_nEEXVEUe0aAtb0uCCybo32Gn1BBE4mferHk-57Qfv0naRGY8Brv58cq7teXot7gdOwJXtrF0blJCmGQKsMibJJARLS7s3is4CvCAlcusRafDLiSnM0fT3eKSiFrrQUYJLl4i3370uEhVWPBRccBkqnQ.avif)
+!
 
 So, putting this all together we end up with a complete plan:
 
@@ -170,25 +170,9 @@ DNS rebinding can be a useful weapon in your arsenal for attacking web applicati
 
 ## Other research articles
 
-[
+[![From enterprise chatbots to gooner caves: exposed AI infrastructure is rampant](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/69c65f5be3fdb1d002c176a3_%5Bblog%5D%20From%20Enterprise%20ChatBots%20To%20Gooner%20Caves%2C%20Scanning%20The%20Internet%20For%20Exposed%20LLM%20Infra.avif) ### From enterprise chatbots to gooner caves: exposed AI infrastructure is rampant We scanned 1 million AI services and found widespread misconfigurations, exposed credentials, and unauthenticated APIs. AI infrastructure security is falling dangerously behind.](https://www.intruder.io/research/from-enterprise-chatbots-to-gooner-caves-exposed-ai-infrastructure-is-rampant)
 
-![From enterprise chatbots to gooner caves: exposed AI infrastructure is rampant](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/69c65f5be3fdb1d002c176a3_%5Bblog%5D%20From%20Enterprise%20ChatBots%20To%20Gooner%20Caves%2C%20Scanning%20The%20Internet%20For%20Exposed%20LLM%20Infra.avif)
-
-### From enterprise chatbots to gooner caves: exposed AI infrastructure is rampant
-
-We scanned 1 million AI services and found widespread misconfigurations, exposed credentials, and unauthenticated APIs. AI infrastructure security is falling dangerously behind.
-
-](https://www.intruder.io/research/from-enterprise-chatbots-to-gooner-caves-exposed-ai-infrastructure-is-rampant)
-
-[
-
-![A 0-day vending machine: No Mythos necessary](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/6a2ac91aa5ef310abe055947_0%20Day%20Vending%20Machine_blog%20header.jpg)
-
-### A 0-day vending machine: No Mythos necessary
-
-This post details how we are using LLMs to find novel vulnerabilities using code scanning frameworks alongside pre-Mythos models.
-
-](https://www.intruder.io/research/a-0-day-vending-machine-no-mythos-necessary)
+[![A 0-day vending machine: No Mythos necessary](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/6a2ac91aa5ef310abe055947_0%20Day%20Vending%20Machine_blog%20header.jpg) ### A 0-day vending machine: No Mythos necessary This post details how we are using LLMs to find novel vulnerabilities using code scanning frameworks alongside pre-Mythos models.](https://www.intruder.io/research/a-0-day-vending-machine-no-mythos-necessary)
 
 [
 

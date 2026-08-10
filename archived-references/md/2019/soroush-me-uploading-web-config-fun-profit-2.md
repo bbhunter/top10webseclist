@@ -1246,13 +1246,7 @@ This entry was posted in [Security Posts](https://soroush.me/blog/category/secur
 
 Creation date: August 16, 2019
 
-[
-
- Previous
-
-File Upload Attack using XAMLX Files
-
-](https://soroush.me/blog/file-upload-attack-using-xamlx-files)[
+[Previous File Upload Attack using XAMLX Files](https://soroush.me/blog/file-upload-attack-using-xamlx-files)[
 
 Next
 

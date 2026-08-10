@@ -156,7 +156,7 @@ Browser vendors are fully aware of this attack scenario. As a prevention method,
 
 I’ve created a simple website called “[Copy & Paste Playground](https://cdn.sekurak.pl/copy-paste/playground.html)” to simplify the process of looking for sanitization bugs in browsers.
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/06/image-15-1024x506.png)
+!
 
 *Fig 1. Copy & Paste playground*
 
@@ -231,7 +231,7 @@ This is expected as the resulting HTML is the same as the HTML copied to the cli
 
  |   |
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/06/image-16-1024x491.png)
+!
 
 *Surprising behavior after pasting in the middle of the text*
 
@@ -263,7 +263,7 @@ Test1 <a>Test2</a>
 
 is parsed into the following DOM tree:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/06/image-1-1024x151.png)
+!
 
 The conclusion is that content inside the `<style>` is treated as text. However, if `<style>` element becomes a descendent of `<math>` element, parsing changes drastically. The following code
 
@@ -297,7 +297,7 @@ The conclusion is that content inside the `<style>` is treated as text. However,
 
 is parsed to:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/06/image-2-1024x390.png)
+!
 
 In this case, the `<style>` element can have child elements. This difference may lead to Cross-Site Scripting in certain cases (an example being [my DOMPurify bypass](https://research.securitum.com/dompurify-bypass-using-mxss/)).
 
@@ -315,13 +315,13 @@ a<math>b<xss style=display:block>TEST
 
  |   |
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/06/image-5-1024x335.png)
+!
 
 (Side-note: all elements have a text node because Chromium tends to omit HTML elements completely after pasting if they have no text)
 
 Then I pasted it in the middle of a rich editor containing only a text node with content: `"1234"`. The DOM tree after pasting was:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/06/image-6-1024x323.png)
+!
 
 Note that the `"TEST"` string which initially was inside the `<xss>` element (and, by extension, the `<math>` element) is placed outside of `<math>` after mutation.
 
@@ -795,7 +795,7 @@ As an example of TinyMCE sanitization, consider the following HTML snippet to be
 
 TinyMCE parses it to the following DOM tree:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/06/image-9.png)
+!
 
 Then it decides that `<b>` element should be replaced with `<strong>` and the comment should be left intact. The DOM tree is then serialized into:
 
@@ -829,7 +829,7 @@ a<!-- x --!> <img src onerror=alert(1)> -->b
 
 is parsed into the following tree by TinyMCE:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/06/image-10.png)
+!
 
 Since the editor assumes the tree is harmless, it is serialized back to the same form:
 
@@ -847,7 +847,7 @@ a<!-- x --!> <img src onerror=alert(1)> -->b
 
 And it is assigned to the `outerHTML`. After the assignment, it’s the browser’s turn to parse the HTML and it does it differently:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/06/image-11.png)
+!
 
 Since the `<img>` element appears in the document, the XSS will fire.
 
@@ -1004,7 +1004,7 @@ The question that remains is: how can we make Closure throws an exception? I fou
 
 Then Closure will throw a `Not an HTMLElement` exception:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/06/image-14-1024x443.png)
+!
 
 This appears to be a bug in Closure (and actually makes it easy to identify if a given website uses it) but Google didn’t fix it. I have created a Closure playground at [https://jsbin.com/mahinanuru/edit?html,output](https://jsbin.com/mahinanuru/edit?html,output) if you wish to tinker with it by yourself. The bug is triggered whenever you have an element with `style` attribute inside `<math>` element.
 

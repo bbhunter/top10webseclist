@@ -86,11 +86,7 @@ CVE-2019-13704
 
  [ See All by Jun Kokatsu ](https://speakerdeck.com/shhnjk)
 
- [
-
- Operating Operator
-
- ](https://speakerdeck.com/shhnjk/operating-operator)
+ [Operating Operator](https://speakerdeck.com/shhnjk/operating-operator)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -98,11 +94,7 @@ CVE-2019-13704
 
   1.4k
 
- [
-
- Piloting Edge Copilot
-
- ](https://speakerdeck.com/shhnjk/piloting-edge-copilot)
+ [Piloting Edge Copilot](https://speakerdeck.com/shhnjk/piloting-edge-copilot)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -110,11 +102,7 @@ CVE-2019-13704
 
   1.4k
 
- [
-
- Same-Origin Cross-Context Scripting
-
- ](https://speakerdeck.com/shhnjk/same-origin-cross-context-scripting)
+ [Same-Origin Cross-Context Scripting](https://speakerdeck.com/shhnjk/same-origin-cross-context-scripting)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -122,11 +110,7 @@ CVE-2019-13704
 
   1.1k
 
- [
-
- Site Isolationの話
-
- ](https://speakerdeck.com/shhnjk/site-isolationfalsehua)
+ [Site Isolationの話](https://speakerdeck.com/shhnjk/site-isolationfalsehua)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -134,11 +118,7 @@ CVE-2019-13704
 
   2.1k
 
- [
-
- ブラウザセキュリティ機能は バイパスされる為にある
-
- ](https://speakerdeck.com/shhnjk/burauzasekiyuriteiji-neng-ha-baipasusareruwei-niaru)
+ [ブラウザセキュリティ機能は バイパスされる為にある](https://speakerdeck.com/shhnjk/burauzasekiyuriteiji-neng-ha-baipasusareruwei-niaru)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -146,11 +126,7 @@ CVE-2019-13704
 
   4.1k
 
- [
-
- Logically Bypassing Browser Security Boundaries
-
- ](https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries)
+ [Logically Bypassing Browser Security Boundaries](https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -162,11 +138,7 @@ CVE-2019-13704
 
  [ See All in Research ](https://speakerdeck.com/c/research)
 
- [
-
- 2025年度秋葉原ウォーカブルプロジェクト調査報告 「アキバらしいウォーカブル」とは何か
-
- ](https://speakerdeck.com/izumiyama_lab/2025nian-du-diao-cha-bao-gao-akibarasiiuokaburu-tohahe-ka)
+ [2025年度秋葉原ウォーカブルプロジェクト調査報告 「アキバらしいウォーカブル」とは何か](https://speakerdeck.com/izumiyama_lab/2025nian-du-diao-cha-bao-gao-akibarasiiuokaburu-tohahe-ka)
 
  [ ![Avatar for 日本大学 都市計画研究室（泉山ゼミ）](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Njk0MzYwLCJwdXIiOiJibG9iX2lkIn19--1be62bf94d04e81397e5c1baa71e453b19f54102/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/%E3%83%AD%E3%82%B4%E5%AE%8C%E6%88%90%E7%89%88%EF%BC%BF%E8%83%8C%E6%99%AF%E9%80%8F%E6%98%8E.png) izumiyama_lab ](https://speakerdeck.com/izumiyama_lab)
 
@@ -174,11 +146,7 @@ CVE-2019-13704
 
   150
 
- [
-
- 第64回CV・PRML勉強会 論文紹介：Linguistic Priors for Visual Decoupling: Towards Symmetric Vision-Brain Alignment
-
- ](https://speakerdeck.com/sokikatayama/di-64hui-cvprmlmian-qiang-hui-lun-wen-shao-jie-linguistic-priors-for-visual-decoupling-towards-symmetric-vision-brain-alignment)
+ [第64回CV・PRML勉強会 論文紹介：Linguistic Priors for Visual Decoupling: Towards Symmetric Vision-Brain Alignment](https://speakerdeck.com/sokikatayama/di-64hui-cvprmlmian-qiang-hui-lun-wen-shao-jie-linguistic-priors-for-visual-decoupling-towards-symmetric-vision-brain-alignment)
 
  [ ![Avatar for Soki Katayama](https://secure.gravatar.com/avatar/f07c5912a741767d06c412ed6d52b531?s=24) sokikatayama ](https://speakerdeck.com/sokikatayama)
 
@@ -186,11 +154,7 @@ CVE-2019-13704
 
   150
 
- [
-
- 重要だけど測れていないもの：高齢者ケアの見えない課題
-
- ](https://speakerdeck.com/theoriatec2024/zhong-yao-dakedoce-reteinaimono-gao-ling-zhe-keanojian-enaike-ti)
+ [重要だけど測れていないもの：高齢者ケアの見えない課題](https://speakerdeck.com/theoriatec2024/zhong-yao-dakedoce-reteinaimono-gao-ling-zhe-keanojian-enaike-ti)
 
  [ ![Avatar for テオリア・テクノロジーズ](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTg0MDQyLCJwdXIiOiJibG9iX2lkIn19--a11cf3c988ed80f1908eb2616f1acf54295d2e73/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/Theoria_T_blue.png) theoriatec2024 ](https://speakerdeck.com/theoriatec2024)
 
@@ -198,11 +162,7 @@ CVE-2019-13704
 
   450
 
- [
-
- NLP colloquium: AI Safety Survey
-
- ](https://speakerdeck.com/kanekomasahiro/ai-safety-survey)
+ [NLP colloquium: AI Safety Survey](https://speakerdeck.com/kanekomasahiro/ai-safety-survey)
 
  [ ![Avatar for Masahiro Kaneko](https://secure.gravatar.com/avatar/afbdd43f474e8885660d8fcc3b15ed34?s=24) kanekomasahiro ](https://speakerdeck.com/kanekomasahiro)
 
@@ -210,11 +170,7 @@ CVE-2019-13704
 
   910
 
- [
-
- 長時間動画QAにおけるマルチエージェント推論 ・SVAgent: Storyline-Guided Long Video Understanding via Cross-Modal Multi-Agent Collaboration
-
- ](https://speakerdeck.com/murakawatakuya/chang-shi-jian-dong-hua-qaniokerumarutiezientotui-lun-svagent-storyline-guided-long-video-understanding-via-cross-modal-multi-agent-collaboration)
+ [長時間動画QAにおけるマルチエージェント推論 ・SVAgent: Storyline-Guided Long Video Understanding via Cross-Modal Multi-Agent Collaboration](https://speakerdeck.com/murakawatakuya/chang-shi-jian-dong-hua-qaniokerumarutiezientotui-lun-svagent-storyline-guided-long-video-understanding-via-cross-modal-multi-agent-collaboration)
 
  [ ![Avatar for 村川卓也](https://secure.gravatar.com/avatar/634504d55b176ea989d9ac6232312970?s=24) murakawatakuya ](https://speakerdeck.com/murakawatakuya)
 
@@ -222,11 +178,7 @@ CVE-2019-13704
 
   180
 
- [
-
- 議論 学術ムーブメントを成功させるために何が必要なのだろうか
-
- ](https://speakerdeck.com/rmaruy/yi-lun-xue-shu-mubumentowocheng-gong-saserutamenihe-gabi-yao-nanodarouka)
+ [議論 学術ムーブメントを成功させるために何が必要なのだろうか](https://speakerdeck.com/rmaruy/yi-lun-xue-shu-mubumentowocheng-gong-saserutamenihe-gabi-yao-nanodarouka)
 
  [ ![Avatar for Ryuichi Maruyama](https://secure.gravatar.com/avatar/497f72d54db7bf48274d010f9ac5dcd3?s=24) rmaruy ](https://speakerdeck.com/rmaruy)
 
@@ -246,11 +198,7 @@ CVE-2019-13704
 
   440
 
- [
-
- SLAMはどこまで解決されたのか？
-
- ](https://speakerdeck.com/tomonom/robomech26-workshop-print)
+ [SLAMはどこまで解決されたのか？](https://speakerdeck.com/tomonom/robomech26-workshop-print)
 
  [ ![Avatar for tomonom](https://secure.gravatar.com/avatar/947ce5e3ac228a5c921065d048b4706c?s=24) tomonom ](https://speakerdeck.com/tomonom)
 
@@ -258,11 +206,7 @@ CVE-2019-13704
 
   1k
 
- [
-
- さくらインターネット研究所テックトーク2026春、研究開発Gr.25年度成果26年度方針
-
- ](https://speakerdeck.com/kikuzo/sakuraintanetutoyan-jiu-suo-tetukutoku2026chun-yan-jiu-kai-fa-gr-dot-25nian-du-cheng-guo-26nian-du-fang-zhen)
+ [さくらインターネット研究所テックトーク2026春、研究開発Gr.25年度成果26年度方針](https://speakerdeck.com/kikuzo/sakuraintanetutoyan-jiu-suo-tetukutoku2026chun-yan-jiu-kai-fa-gr-dot-25nian-du-cheng-guo-26nian-du-fang-zhen)
 
  [ ![Avatar for KIKUCHI Shunsuke](https://secure.gravatar.com/avatar/fccb5974b63d64636a7c90faf3bab51f?s=24) kikuzo ](https://speakerdeck.com/kikuzo)
 
@@ -270,11 +214,7 @@ CVE-2019-13704
 
   170
 
- [
-
- 全国町字単位空き家率推定データver1.0データ仕様
-
- ](https://speakerdeck.com/microbaseinc/quan-guo-ting-zi-dan-wei-kong-kijia-lu-tui-ding-detaver1-dot-0detashi-yang)
+ [全国町字単位空き家率推定データver1.0データ仕様](https://speakerdeck.com/microbaseinc/quan-guo-ting-zi-dan-wei-kong-kijia-lu-tui-ding-detaver1-dot-0detashi-yang)
 
  [ ![Avatar for microbase](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzcyNDc5LCJwdXIiOiJibG9iX2lkIn19--7849ed14af29d12cda6ff9e27e86cdafc7d0bd7a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/logo_mb_microbase_logo_short.png) microbaseinc ](https://speakerdeck.com/microbaseinc)
 
@@ -294,11 +234,7 @@ CVE-2019-13704
 
   630
 
- [
-
- Google Cloud Next 2026 DM Recap Agentic Data Cloudを添えて / Google Cloud Next 2026 DM Recap
-
- ](https://speakerdeck.com/nnaka2992/google-cloud-next-2026-dm-recap)
+ [Google Cloud Next 2026 DM Recap Agentic Data Cloudを添えて / Google Cloud Next 2026 DM Recap](https://speakerdeck.com/nnaka2992/google-cloud-next-2026-dm-recap)
 
  [ ![Avatar for nnaka2992](https://secure.gravatar.com/avatar/5a979f182ec9a03fdc8099ae064e71eb?s=24) nnaka2992 ](https://speakerdeck.com/nnaka2992)
 
@@ -310,11 +246,7 @@ CVE-2019-13704
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [
-
- Lightning talk: Run Django tests with GitHub Actions
-
- ](https://speakerdeck.com/sabderemane/lightning-talk-run-django-tests-with-github-actions)
+ [Lightning talk: Run Django tests with GitHub Actions](https://speakerdeck.com/sabderemane/lightning-talk-run-django-tests-with-github-actions)
 
  [ ![Avatar for Sarah Abderemane](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTgxMzQ0LCJwdXIiOiJibG9iX2lkIn19--9d4ddecde5a2489c498d88f943c8a059cb79173d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/sarah.jpg) sabderemane ](https://speakerdeck.com/sabderemane)
 
@@ -322,11 +254,7 @@ CVE-2019-13704
 
   230
 
- [
-
- Are puppies a ranking factor?
-
- ](https://speakerdeck.com/jonoalderson/are-puppies-a-ranking-factor)
+ [Are puppies a ranking factor?](https://speakerdeck.com/jonoalderson/are-puppies-a-ranking-factor)
 
  [ ![Avatar for Jono Alderson](https://secure.gravatar.com/avatar/beed0f5ca54ae221655b9f30a1f6fe66?s=24) jonoalderson ](https://speakerdeck.com/jonoalderson)
 
@@ -334,11 +262,7 @@ CVE-2019-13704
 
   3.8k
 
- [
-
- Gemini Prompt Engineering: Practical Techniques for Tangible AI Outcomes
-
- ](https://speakerdeck.com/mfonobong/gemini-prompt-engineering-practical-techniques-for-tangible-ai-outcomes)
+ [Gemini Prompt Engineering: Practical Techniques for Tangible AI Outcomes](https://speakerdeck.com/mfonobong/gemini-prompt-engineering-practical-techniques-for-tangible-ai-outcomes)
 
  [ ![Avatar for Mfonobong Umondia](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjIyMzkxLCJwdXIiOiJibG9iX2lkIn19--5cbe193d6e7c50710eb8ab78626ee4057e42cffd/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/YTProfile%20picture.png) mfonobong ](https://speakerdeck.com/mfonobong)
 
@@ -346,11 +270,7 @@ CVE-2019-13704
 
   480
 
- [
-
- It's Worth the Effort
-
- ](https://speakerdeck.com/3n/its-worth-the-effort)
+ [It's Worth the Effort](https://speakerdeck.com/3n/its-worth-the-effort)
 
  [ ![Avatar for 3n](https://secure.gravatar.com/avatar/ba530e786553390f3fb271848485681c?s=24) 3n ](https://speakerdeck.com/3n)
 
@@ -358,11 +278,7 @@ CVE-2019-13704
 
   29k
 
- [
-
- SEO for Brand Visibility & Recognition
-
- ](https://speakerdeck.com/aleyda/seo-for-brand-visibility-and-recognition)
+ [SEO for Brand Visibility & Recognition](https://speakerdeck.com/aleyda/seo-for-brand-visibility-and-recognition)
 
  [ ![Avatar for Aleyda Solis](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6OTIyMDAsInB1ciI6ImJsb2JfaWQifX0=--f7ae7c6a9c16b0bb4461d98502be71c2c1b38eaf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/aleyda-solis.jpg) aleyda ](https://speakerdeck.com/aleyda)
 
@@ -370,11 +286,7 @@ CVE-2019-13704
 
   4.7k
 
- [
-
- Designing for Timeless Needs
-
- ](https://speakerdeck.com/cassininazir/designing-for-timeless-needs-a72bb8c4-c96b-47cc-8598-36af0340e28e)
+ [Designing for Timeless Needs](https://speakerdeck.com/cassininazir/designing-for-timeless-needs-a72bb8c4-c96b-47cc-8598-36af0340e28e)
 
  [ ![Avatar for Cassini Nazir](https://secure.gravatar.com/avatar/4631d364d59bd9d045acf046a0ce1cfe?s=24) cassininazir ](https://speakerdeck.com/cassininazir)
 
@@ -382,11 +294,7 @@ CVE-2019-13704
 
   430
 
- [
-
- Done Done
-
- ](https://speakerdeck.com/chrislema/done-done)
+ [Done Done](https://speakerdeck.com/chrislema/done-done)
 
  [ ![Avatar for chrislema](https://secure.gravatar.com/avatar/282d599b414022eba5096510f675b6e2?s=24) chrislema ](https://speakerdeck.com/chrislema)
 
@@ -394,11 +302,7 @@ CVE-2019-13704
 
   16k
 
- [
-
- Stewardship and Sustainability of Urban and Community Forests
-
- ](https://speakerdeck.com/pwiseman/stewardship-and-sustainability-of-urban-and-community-forests)
+ [Stewardship and Sustainability of Urban and Community Forests](https://speakerdeck.com/pwiseman/stewardship-and-sustainability-of-urban-and-community-forests)
 
  [ ![Avatar for Eric Wiseman](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTcwNTAsInB1ciI6ImJsb2JfaWQifX0=--940abaec4feb0fb14cd0ee39c705c922981c563f/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/Headshot%20October%202022.jpg) pwiseman ](https://speakerdeck.com/pwiseman)
 
@@ -418,11 +322,7 @@ CVE-2019-13704
 
   1.2k
 
- [
-
- Google's AI Overviews - The New Search
-
- ](https://speakerdeck.com/badams/googles-ai-overviews-the-new-search)
+ [Google's AI Overviews - The New Search](https://speakerdeck.com/badams/googles-ai-overviews-the-new-search)
 
  [ ![Avatar for Barry Adams](https://secure.gravatar.com/avatar/00de107acb085244c96dbfe6da2b1560?s=24) badams ](https://speakerdeck.com/badams)
 
@@ -430,11 +330,7 @@ CVE-2019-13704
 
   1.1k
 
- [
-
- Templates, Plugins, & Blocks: Oh My! Creating the theme that thinks of everything
-
- ](https://speakerdeck.com/marktimemedia/templates-plugins-and-blocks-oh-my-creating-the-theme-that-thinks-of-everything)
+ [Templates, Plugins, & Blocks: Oh My! Creating the theme that thinks of everything](https://speakerdeck.com/marktimemedia/templates-plugins-and-blocks-oh-my-creating-the-theme-that-thinks-of-everything)
 
  [ ![Avatar for Michelle Schulp Hunt](https://secure.gravatar.com/avatar/e195ae45320d9202eaa01c9f1d31a416?s=24) marktimemedia ](https://speakerdeck.com/marktimemedia)
 
@@ -442,11 +338,7 @@ CVE-2019-13704
 
   2.8k
 
- [
-
- Learning to Love Humans: Emotional Interface Design
-
- ](https://speakerdeck.com/aarron/learning-to-love-humans-emotional-interface-design)
+ [Learning to Love Humans: Emotional Interface Design](https://speakerdeck.com/aarron/learning-to-love-humans-emotional-interface-design)
 
  [ ![Avatar for Aarron Walter](https://secure.gravatar.com/avatar/5f50f94346fbcb23706f0707169317a4?s=24) aarron ](https://speakerdeck.com/aarron)
 

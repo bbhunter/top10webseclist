@@ -68,7 +68,7 @@ It is an important and little-known property of web browsers that one document c
 
  Here's an example of how this looks in Chrome; the fake `flash11_updater.exe` download supposedly served from `adobe.com` is, in reality, supplied by the attacker:
 
- ![](https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_vDUinEc6uwG3OHwfi9Dk3CN-AnkrmAxZSQb87ZAQdobW93cnP5Wr-QZ1F03zvVpOMGUb6q5U2C2qh78Bkn8iFCalMySJXqo36tjQlz=s0-d)
+ !
 
  All the top three browsers are currently vulnerable to this attack; some provide weak cues about the origin of the download, but in all cases, the prompt is attached to the wrong window - and the indicators seem completely inadequate.
 

@@ -89,13 +89,7 @@ This entry was posted in [Security Posts](https://soroush.me/blog/category/secur
 
 Creation date: December 19, 2018
 
-[
-
- Previous
-
-Feel honoured to be there again after 8 years: Top 10 Web Hacking Techniques of 2017
-
-](https://soroush.me/blog/feel-honoured-to-be-there-again-after-8-years-top-10-web-hacking-techniques-of-2017)[
+[Previous Feel honoured to be there again after 8 years: Top 10 Web Hacking Techniques of 2017](https://soroush.me/blog/feel-honoured-to-be-there-again-after-8-years-top-10-web-hacking-techniques-of-2017)[
 
 Next
 

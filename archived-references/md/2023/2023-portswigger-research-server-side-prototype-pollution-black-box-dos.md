@@ -555,5 +555,3 @@ I've proven that safe black-box detection of prototype pollution is possible by 
  [ black-box ](https://portswigger.net/research/black-box) [ server-side prototype pollution ](https://portswigger.net/research/server-side-prototype-pollution) [ scanning ](https://portswigger.net/research/scanning)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

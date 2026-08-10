@@ -82,6 +82,4 @@ Stay up-to-date with the latest Sonar content. Subscribe now to receive the late
 
 Choosing to proceed means that you agree to the storing and processing of your personal data as described in SonarSource’s [Cookie Policy](https://www.sonarsource.com/company/cookie-policy/). You can opt out of SonarSource communications at anytime.
 
-Sign up
-
 Sonar respects your privacy. Choosing to proceed means that you agree to the SonarSource’s [Privacy Policy](https://www.sonarsource.com/company/privacy/).

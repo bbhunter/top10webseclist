@@ -179,12 +179,10 @@ a.target = iframe.name;
  next();
  }
  };
-`[](http://portswigger-labs.net/portscan)
+`
 
-I combined all the techniques above into one tool which I wrote in lovely asynchronous JavaScript. You can find the tool here: [](http://portswigger-labs.net/portscan)
+I combined all the techniques above into one tool which I wrote in lovely asynchronous JavaScript. You can find the tool here: 
 
 [Port scanner proof of concept](http://portswigger-labs.net/portscan)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

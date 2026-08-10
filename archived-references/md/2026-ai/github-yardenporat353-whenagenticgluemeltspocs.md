@@ -91,7 +91,6 @@ _Blob `ec9f6fe26d90`, 2155 bytes, at commit `34acae89a9e5`._
 
 # workerd Memory-Corruption PoCs 
 
-
 Proof-of-concepts for five vulnerabilities in
 **[workerd](https://github.com/cloudflare/workerd)**, the runtime behind Cloudflare Workers and Code Mode, found and reported by Check Point Research. 
 Author: Yarden Porat ([@yarpo](https://github.com/yardenporat353)). 
@@ -122,6 +121,3 @@ complying with all applicable laws; Check Point Software Technologies Ltd. accep
 any misuse or damage. Provided "as is", without warranty of any kind.
 
 ## License
-
-Copyright (c) 2026 Check Point Software Technologies Ltd. All rights reserved. See
-[`LICENSE`](LICENSE).

@@ -157,5 +157,3 @@ So, those are a few ideas for non-JavaScript malicious code. If you have anythin
 - [ha.ckers.org](http://ha.ckers.org/)
 - [jeremiah](http://jeremiahgrossman.blogspot.com/)
 - [tssci](http://tssci-security.com)
-
-## Spotlight

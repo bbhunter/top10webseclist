@@ -95,12 +95,12 @@ BibTeX
 
 ![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Statement from the USENIX Security '23 Program Committee](https://www.usenix.org/system/files/sec23winter-prepub-226-kirchner_statement.pdf)
 
-![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-unlocked.png)
+!
 
 [View the slides](https://www.usenix.org/system/files/usenixsecurity24_slides-kirchner.pdf)
 
-![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_available_125_update.png)
+!
 
-![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_functional_125.png)
+!
 
 ## Presentation Video

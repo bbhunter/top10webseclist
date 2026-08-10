@@ -138,13 +138,7 @@ This entry was posted in [Security Posts](https://soroush.me/blog/category/secur
 
 Creation date: June 20, 2012
 
-[
-
- Previous
-
-Microsoft IIS tilde character “~” Vulnerability/Feature – Short File/Folder Name Disclosure
-
-](https://soroush.me/blog/microsoft-iis-tilde-character-vulnerabilityfeature-short-filefolder-name-disclosure)[
+[Previous Microsoft IIS tilde character “~” Vulnerability/Feature – Short File/Folder Name Disclosure](https://soroush.me/blog/microsoft-iis-tilde-character-vulnerabilityfeature-short-filefolder-name-disclosure)[
 
 Next
 

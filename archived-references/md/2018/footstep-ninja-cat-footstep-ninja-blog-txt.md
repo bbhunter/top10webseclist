@@ -134,11 +134,3 @@ Oct 25, 2016 – Report Triaged
 Oct 25, 2016 – Fixed!
 
 Oct 26, 2016 – Bounty awarded
-
-Share on [
-
-](https://facebook.com/sharer/sharer.php?u=https%3a%2f%2ffootstep.ninja%2fposts%2fpassword-reset%2f)[
-
-](https://twitter.com/intent/tweet/?text=I%20just%20read%20"Tale%20of%20a%20Misconfiguration%20in%20Password%20Reset"&url=https%3a%2f%2ffootstep.ninja%2fposts%2fpassword-reset%2f)[
-
-](mailto:?subject=I%20just%20read%20"Tale%20of%20a%20Misconfiguration%20in%20Password%20Reset"&body=https%3a%2f%2ffootstep.ninja%2fposts%2fpassword-reset%2f)[

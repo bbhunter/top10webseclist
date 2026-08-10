@@ -343,7 +343,7 @@ Now I have all the building blocks needed to prepare a working exploit. Here’s
 
 I’ve created a [testbed](https://github.com/securitum/research/blob/master/r2020_firefox-css-data-exfil/testbed.html) in which the goal is to steal the `csrftoken` via data exfiltration. You can access it directly [here](https://htmlpreview.github.io/?https://github.com/securitum/research/blob/master/r2020_firefox-css-data-exfil/testbed.html).
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/02/image-1024x531.png)
+!
 
 *Testbed screenshot*
 

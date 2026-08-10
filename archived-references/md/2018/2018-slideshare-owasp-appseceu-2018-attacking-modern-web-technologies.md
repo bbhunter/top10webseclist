@@ -282,7 +282,7 @@ AppCache demo
 Attacking Modern Web Technologies
 Frans Rosén @fransrosen](https://image.slidesharecdn.com/appsec-modern-copy-180705172001/85/OWASP-AppSecEU-2018-Attacking-Modern-Web-Technologies-17-320.jpg)
 
-![](https://image.slidesharecdn.com/appsec-modern-copy-180705172001/85/OWASP-AppSecEU-2018-Attacking-Modern-Web-Technologies-18-320.jpg)
+!
 
 ![Author name her
 AppCache on Dropbox

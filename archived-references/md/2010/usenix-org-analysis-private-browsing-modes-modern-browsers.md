@@ -93,8 +93,6 @@ BibTeX
 
 #### Presentation Video
 
-[](https://c59951.ssl.cf2.rackcdn.com/sec10/aggarwal.mp4)
-
 ### Links
 
 Paper:

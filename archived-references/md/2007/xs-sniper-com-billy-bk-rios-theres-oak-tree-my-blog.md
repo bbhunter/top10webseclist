@@ -67,7 +67,7 @@ Tuesday, January 8th, 2008
 
 ### [There’s an OAK TREE in my blog!?!?!](http://xs-sniper.com/blog/2008/01/08/theres-an-oak-tree-in-my-blog/)
 
-[](http://xs-sniper.com/blog/wp-content/uploads/2007/12/blog-settings.jpg)[](http://xs-sniper.com/blog/wp-content/uploads/2007/12/oak-tree-docid.jpg)A while back I came across another interesting issue that allowed me to steal an arbitrary Google Doc (assuming I knew the DocID). This issue has already been fixed by Google, but the details are pretty interesting so I thought I would share! Now, before I get into the gory details, I’d like to mention two things about Google:
+A while back I came across another interesting issue that allowed me to steal an arbitrary Google Doc (assuming I knew the DocID). This issue has already been fixed by Google, but the details are pretty interesting so I thought I would share! Now, before I get into the gory details, I’d like to mention two things about Google:
 
 - I know some people have had issues with [*Google’s Security Team* ](http://googleonlinesecurity.blogspot.com/)(GST), but I’ve always had pleasant experiences with them. GST moves with LIGHTING speed and they are usually great about keeping in me apprised of the status of various issues I’ve reported to them.
 

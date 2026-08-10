@@ -94,19 +94,19 @@ So for each of them, I made script separately and one script for dumping the con
 
 1 / 4
 
- ![](https://spyclub.tech/images/photos/tool2.3.png)
+ !
 
 2 / 4
 
- ![](https://spyclub.tech/images/photos/tool2.5.png)
+ !
 
 3 / 4
 
- ![](https://spyclub.tech/images/photos/tool2.6.png)
+ !
 
 4 / 4
 
- ![](https://spyclub.tech/images/photos/tool2.7.png)
+ !
 
 ❮
 ❯
@@ -119,11 +119,11 @@ So tool will ask you the location of crontab(differs as OS changes) of the victi
 
 1 / 2
 
- ![](https://spyclub.tech/images/photos/tool2.4.png)
+ !
 
 2 / 2
 
- ![](https://spyclub.tech/images/photos/tool2.8.png)
+ !
 
 ❮
 ❯

@@ -119,11 +119,11 @@ Install Turbo Intruder into Burp Suite using the BApp Store under the Extender t
 
 To use it, simply highlight the area you want to inject over, then right click and 'Send to Turbo Intruder':
 
-![](https://portswigger.net/cms/images/a4/15/75f7-article-launchturbo.png)
+!
 
 This will open a window containing your request and a Python snippet looking something like this:
 
-![](https://portswigger.net/cms/images/e7/23/211d-article-turbo-default.png)
+!
 
 You can customise this code depending on what you want to achieve with your attack.
 
@@ -197,7 +197,7 @@ instead, process them line by line:
 
 The default script uses a streaming attack style, which is great for minimising memory usage but not ideal for finding race conditions. To find a race condition you'll want to ensure all your requests hit the target in as small a window as possible, which can be achieved using the purpose-built 'gate' system demonstrated in [race.py](https://github.com/PortSwigger/turbo-intruder/tree/master/resources/examples/race.py).
 
-For a real life example of using Turbo Intruder to find a race condition, check out [](https://www.pentagrid.ch/en/blog/password-reset-code-brute-force-vulnerability-in-AWS-Cognito/)[Password reset code brute-force vulnerability in AWS Cognito](https://www.pentagrid.ch/en/blog/password-reset-code-brute-force-vulnerability-in-AWS-Cognito/).
+For a real life example of using Turbo Intruder to find a race condition, check out [Password reset code brute-force vulnerability in AWS Cognito](https://www.pentagrid.ch/en/blog/password-reset-code-brute-force-vulnerability-in-AWS-Cognito/).
 
 #### Built-in wordlists
 
@@ -244,7 +244,7 @@ To learn about other advanced features available in Turbo Intruder, check out th
 
 You can customise some editor settings like line-numbers and font size via the settings menu:
 
-![](https://portswigger.net/cms/images/87/cb/7dbb-article-turbosettings.png)
+!
 
 #### Final note
 
@@ -255,5 +255,3 @@ Good luck, have fun, and try not to take anything down.
  [ research tools ](https://portswigger.net/research/research-tools) [ race condition ](https://portswigger.net/research/race-condition) [ turbo intruder ](https://portswigger.net/research/turbo-intruder) [ Presentations ](https://portswigger.net/research/presentations)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

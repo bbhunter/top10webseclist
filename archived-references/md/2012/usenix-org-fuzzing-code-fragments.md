@@ -101,8 +101,6 @@ BibTeX
 
 #### Presentation Video
 
-[](https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/sec12/holler.mp4)
-
 #### Presentation Audio
 
     [MP3 Download](https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/sec12/holler.mp3) [OGG Download](https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/sec12/holler.ogg)

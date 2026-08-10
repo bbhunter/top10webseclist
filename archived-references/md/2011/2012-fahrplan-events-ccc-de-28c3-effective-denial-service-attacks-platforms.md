@@ -72,8 +72,8 @@ page going offline. To read the original, follow the link above.
  *Behind Enemy Lines*
 
 |  Speakers |   |
-|   [ ![](https://fahrplan.events.ccc.de/congress/2011/Fahrplan/images/person-2014-32x32.png) ](https://fahrplan.events.ccc.de/congress/2011/Fahrplan/speakers/2014.en.html)  |   [Alexander ‘alech’ Klink](https://fahrplan.events.ccc.de/congress/2011/Fahrplan/speakers/2014.en.html)  |   |
-|   [ ![](https://fahrplan.events.ccc.de/congress/2011/Fahrplan/images/person-2022-32x32.png) ](https://fahrplan.events.ccc.de/congress/2011/Fahrplan/speakers/2022.en.html)  |   [Julian | zeri](https://fahrplan.events.ccc.de/congress/2011/Fahrplan/speakers/2022.en.html)  |   |
+|   [ ! ](https://fahrplan.events.ccc.de/congress/2011/Fahrplan/speakers/2014.en.html)  |   [Alexander ‘alech’ Klink](https://fahrplan.events.ccc.de/congress/2011/Fahrplan/speakers/2014.en.html)  |   |
+|   [ ! ](https://fahrplan.events.ccc.de/congress/2011/Fahrplan/speakers/2022.en.html)  |   [Julian | zeri](https://fahrplan.events.ccc.de/congress/2011/Fahrplan/speakers/2022.en.html)  |   |
 
 |  Schedule |   |
 |  Day |  Day 2 - 2011-12-28 |   |
@@ -94,7 +94,7 @@ page going offline. To read the original, follow the link above.
 
 We are the 99% (CPU usage)
 
- ![](https://fahrplan.events.ccc.de/congress/2011/Fahrplan/images/event-4680-128x128.png)
+ !
 
 This talk will show how a common flaw in the implementation of most of the popular web programming languages and platforms (including PHP, ASP.NET, Java, etc.) can be (ab)used to force web application servers to use 99% of CPU for several minutes to hours for a single HTTP request.
 

@@ -159,7 +159,8 @@ And the accompanying SVG font:
 " horiz-adv-x="0" d="M1 0z"/>
       <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
       <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
-      <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
+      <glyph glyph-name="u0" unicode="
+" horiz-adv-x="0" d="M1 0z"/>
       <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
       <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
       <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
@@ -615,7 +616,7 @@ Exfiltrating 2400 characters in 7 minutes. Reason that it gets slower as it goes
 
 This is the CSP that allowed the exfiltration to happen:
 
-![](https://adragos.ro/assets/images/posts/20250421150321.webp)
+!
 
 As you can see, no @import was allowed but the static version of fontleak was able to do the job.
 

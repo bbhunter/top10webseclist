@@ -126,11 +126,11 @@ _The source's own words. An English translation of this document is archived bes
 
  The registration controller looks like that:
 
- [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7VNhF2zouXCH7SEDNRRGSnCL3jwPI-mSbGMZR1amM7ov3UPpY1ONPz4LjMAjJN9Qbe7iBfa1Z9diSk5qDdb1TXtlOboXcpBa0fWesDS7g2GXZE_rtePvvLPlF1e5_5k1Zv1dVbaSzHaLa/s640/1.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7VNhF2zouXCH7SEDNRRGSnCL3jwPI-mSbGMZR1amM7ov3UPpY1ONPz4LjMAjJN9Qbe7iBfa1Z9diSk5qDdb1TXtlOboXcpBa0fWesDS7g2GXZE_rtePvvLPlF1e5_5k1Zv1dVbaSzHaLa/s1600/1.png)
+ [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7VNhF2zouXCH7SEDNRRGSnCL3jwPI-mSbGMZR1amM7ov3UPpY1ONPz4LjMAjJN9Qbe7iBfa1Z9diSk5qDdb1TXtlOboXcpBa0fWesDS7g2GXZE_rtePvvLPlF1e5_5k1Zv1dVbaSzHaLa/s1600/1.png)
 
  As we can see, the controller gets User object from a user request, validates it, and if the object is validated, the controller puts it in "DB".
 
- [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghDsRR5TW-LQZBMf9Saa38UGSLWBlLlmxlOj1TO5Uq3fLja_VNRpde3vRGEeCrIlooqOKwE2IZTfoaROnsEoVu83XVVCF52VFWQtW9elO1p_KfDMChkY5xDB7sIzC5VPJdJt6RhyphenhyphenxE1TsK/s640/2.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghDsRR5TW-LQZBMf9Saa38UGSLWBlLlmxlOj1TO5Uq3fLja_VNRpde3vRGEeCrIlooqOKwE2IZTfoaROnsEoVu83XVVCF52VFWQtW9elO1p_KfDMChkY5xDB7sIzC5VPJdJt6RhyphenhyphenxE1TsK/s1600/2.png)
+ [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghDsRR5TW-LQZBMf9Saa38UGSLWBlLlmxlOj1TO5Uq3fLja_VNRpde3vRGEeCrIlooqOKwE2IZTfoaROnsEoVu83XVVCF52VFWQtW9elO1p_KfDMChkY5xDB7sIzC5VPJdJt6RhyphenhyphenxE1TsK/s1600/2.png)
 
  The validating process is very strict. Because of whitelisting, we can use only figures or symbols, but we need to put special symbols in the user object! How? There is no way for the registration controller.
 
@@ -148,7 +148,7 @@ _The source's own words. An English translation of this document is archived bes
 
  So, there is no way to change the user object too.
 
- [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsVZCeZZ7ikO-mpeQN_PwVpYGdeAHb_SIr9Mk-uzyL7sv68J6jRLZS1tUwIh9CI56q0w8Ih0q5yvFESNrlAXQvReA6h9VsjDDlHJl6Qlw_skQKsWiR5G6yfyURgsd3CSkjSgqEfZsXNuLS/s640/3.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsVZCeZZ7ikO-mpeQN_PwVpYGdeAHb_SIr9Mk-uzyL7sv68J6jRLZS1tUwIh9CI56q0w8Ih0q5yvFESNrlAXQvReA6h9VsjDDlHJl6Qlw_skQKsWiR5G6yfyURgsd3CSkjSgqEfZsXNuLS/s1600/3.png)
+ [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsVZCeZZ7ikO-mpeQN_PwVpYGdeAHb_SIr9Mk-uzyL7sv68J6jRLZS1tUwIh9CI56q0w8Ih0q5yvFESNrlAXQvReA6h9VsjDDlHJl6Qlw_skQKsWiR5G6yfyURgsd3CSkjSgqEfZsXNuLS/s1600/3.png)
 
   What about the home method?
 
@@ -184,11 +184,11 @@ _The source's own words. An English translation of this document is archived bes
 
  2) the resetHandler method receives the HTTP request. It gets a user object from the db using the username from the request. Then it puts the user object in the Model, and it automatically puts the object into a session (@SessionAttribute("user") for the controller). Then it redirects to next part of "wizard".
 
- [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9Pk21rrY6okI9ztzx2O8smYhCNkSXj1-9oh21ZBLCktjxztPjnr7tgr-aDlYRIfNzOYTjziHmnq33WZZZo43FEI1MHambKriCxZKK86Yz0nydjv4MOrIu0eVngs2ox4jdxF3pGYToCRXY/s640/4.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9Pk21rrY6okI9ztzx2O8smYhCNkSXj1-9oh21ZBLCktjxztPjnr7tgr-aDlYRIfNzOYTjziHmnq33WZZZo43FEI1MHambKriCxZKK86Yz0nydjv4MOrIu0eVngs2ox4jdxF3pGYToCRXY/s1600/4.png)
+ [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9Pk21rrY6okI9ztzx2O8smYhCNkSXj1-9oh21ZBLCktjxztPjnr7tgr-aDlYRIfNzOYTjziHmnq33WZZZo43FEI1MHambKriCxZKK86Yz0nydjv4MOrIu0eVngs2ox4jdxF3pGYToCRXY/s1600/4.png)
 
  3) The user is redirected to the resetViewQuestionHandler method. Actually, the method takes the user object from the session (yeah-yeah, using @ModelAttribute). It requires that object because the method has to get a custom user security question and show it in a view (however, that hasn't been implemented :)
 
- [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3l74gOd7a1bk8iy-_rLQOEoZ6wsyFbAqwVLQXFR6Mz9xbAOTd4fJIkuaOAuHpow9TpdKBj1icL6AXajDEX0l9u9anM6yFIsm6-DcsGGXJrhoyGR-pdY1o0HQ-L2Zh7IB660JIR69lD0cq/s640/5.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3l74gOd7a1bk8iy-_rLQOEoZ6wsyFbAqwVLQXFR6Mz9xbAOTd4fJIkuaOAuHpow9TpdKBj1icL6AXajDEX0l9u9anM6yFIsm6-DcsGGXJrhoyGR-pdY1o0HQ-L2Zh7IB660JIR69lD0cq/s1600/5.png)
+ [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3l74gOd7a1bk8iy-_rLQOEoZ6wsyFbAqwVLQXFR6Mz9xbAOTd4fJIkuaOAuHpow9TpdKBj1icL6AXajDEX0l9u9anM6yFIsm6-DcsGGXJrhoyGR-pdY1o0HQ-L2Zh7IB660JIR69lD0cq/s1600/5.png)
 
  4) When the user sends an answer for the question, the resetQuestionHandler method handles it. The method gets the answer from "answerReset" param and compares with the value in answer field from the user object. If answers match, the method generates a new secure password and shows it to the user.
 
@@ -202,7 +202,7 @@ _The source's own words. An English translation of this document is archived bes
 
  b) We can add "answer=any_value" on the last step too (resetQuestionHandler) and get the same results. Actually, we can change a whole object if we would like.
 
- [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFQx42ALpgmb2u3AnBRXsVct2mgfcIsWhmMS1avgefNpy-0vASOyAkCfYyvp84OpE6l_QA2nYdxyhOyDTSrpHwCrex0QkKnz1rInCsRgGsYtV_AYK2tbmxQq-GqLZAbrExVb7krClJ55K2/s640/6.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFQx42ALpgmb2u3AnBRXsVct2mgfcIsWhmMS1avgefNpy-0vASOyAkCfYyvp84OpE6l_QA2nYdxyhOyDTSrpHwCrex0QkKnz1rInCsRgGsYtV_AYK2tbmxQq-GqLZAbrExVb7krClJ55K2/s1600/6.png)
+ [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFQx42ALpgmb2u3AnBRXsVct2mgfcIsWhmMS1avgefNpy-0vASOyAkCfYyvp84OpE6l_QA2nYdxyhOyDTSrpHwCrex0QkKnz1rInCsRgGsYtV_AYK2tbmxQq-GqLZAbrExVb7krClJ55K2/s1600/6.png)
 
 ###  Session Puzzling
 

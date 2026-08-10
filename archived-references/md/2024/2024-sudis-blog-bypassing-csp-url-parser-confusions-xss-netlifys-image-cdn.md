@@ -119,7 +119,7 @@ As earlier I told some providers don’t do any check on this whether the reques
 
 So you can even do thing like this, here I am requesting the Index page, the response for the requested url is fetched server side (some weird thing can here happen too, maybe ssrf if the config allows making request to any url )
 
-![](https://cdn-images-1.medium.com/max/1024/1*YBZB8Yv-rD4KsDS5AzvBVw.png)
+!
 
 In case of [https://app.netlify.com](https://app.netlify.com) , the following CDN domain was in the whitelist [https://d33wubrfki0l68.cloudfront.net](https://d33wubrfki0l68.cloudfront.net). They use this CDN to host all the user uploaded contents such as profile picture,etc
 
@@ -168,13 +168,13 @@ Content-Type: image/png
 
 As you can see we recieved a successful response, with url which has the .html extension. Now let’s check the Content-Type of the response ..
 
-![](https://cdn-images-1.medium.com/max/1000/0*HJQdly5yptzZvM07)
+!
 
 And voilla we now have a working xss in the CDN domain, I thought now it would easy to get xss in the /.netlify/images?url= endpoint
 
 But we hit a bummer!! Even though the Content-Type is text/html and the response body contains the xss payload it won’t trigger and is pretty useless due to the ***CSP ***being used.
 
-![](https://cdn-images-1.medium.com/max/1000/0*Hq_tR9iBzjXHEWfp)
+!
 
 ```
 Content-Security-Policy: script-src 'none'
@@ -218,7 +218,7 @@ Nice the theory really works, I was able to make it return a different CSP but w
 
 Then I tried some url encoding stuff /.netlify%2fimages and this worked perfectly fine I was able to get **xss**
 
-![](https://cdn-images-1.medium.com/max/1024/0*kXcUxk99-yPy0vvB)
+!
 
 Used a simple poc as this to leak the authorization code from the Github Oauth flow
 
@@ -232,7 +232,7 @@ setInterval(function() {
 
 I could use this url with the access_tokento login to victim’s account as the access_token in the query param is basically their main session cookie.
 
-![](https://cdn-images-1.medium.com/max/1024/0*6oJjIZ_sMGYgNYHU)
+!
 
 They tried fixing it but soon enough I found another bypass, by just adding a / before the path I was able to bypass the CSP:
 
@@ -248,7 +248,7 @@ The url is pointing to an old uploaded html file, Netlify fixed the issue by dis
 
 I hope you liked the writeup, next time you had to deal with a strict csp maybe try playing with the path and see if you can make the server return a relaxed csp or something which might be easier to bypass than the original one and you can get lucky like me :)
 
-![](https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=755a27065fd9)
+!
 
 ---
 

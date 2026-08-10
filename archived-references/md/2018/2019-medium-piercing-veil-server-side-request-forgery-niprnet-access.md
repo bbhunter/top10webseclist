@@ -77,37 +77,9 @@ Hacking
 
 # Piercing the Veil: Server Side Request Forgery to NIPRNet access
 
-[
-
-![Alyssa Herrera](https://miro.medium.com/v2/resize:fill:64:64/2*gQgCqqNCmtYHbz9IsB1wRA.jpeg)
-
-](https://medium.com/@alyssa.o.herrera?source=post_page---byline--c358fd5e249a---------------------------------------)
+[![Alyssa Herrera](https://miro.medium.com/v2/resize:fill:64:64/2*gQgCqqNCmtYHbz9IsB1wRA.jpeg)](https://medium.com/@alyssa.o.herrera?source=post_page---byline--c358fd5e249a---------------------------------------)
 
 [Alyssa Herrera](https://medium.com/@alyssa.o.herrera?source=post_page---byline--c358fd5e249a---------------------------------------)
-
-7 min readApr 9, 2018
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fbugbountywriteup%2Fc358fd5e249a&operation=register&redirect=https%3A%2F%2Finfosecwriteups.com%2Fpiercing-the-veil-server-side-request-forgery-to-niprnet-access-c358fd5e249a&user=Alyssa+Herrera&userId=1855bdb0d898&source=---header_actions--c358fd5e249a---------------------clap_footer------------------)
-
---
-
-5
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2Fc358fd5e249a&operation=register&redirect=https%3A%2F%2Finfosecwriteups.com%2Fpiercing-the-veil-server-side-request-forgery-to-niprnet-access-c358fd5e249a&user=Alyssa+Herrera&userId=1855bdb0d898&source=---header_actions--c358fd5e249a---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fc358fd5e249a&operation=register&redirect=https%3A%2F%2Finfosecwriteups.com%2Fpiercing-the-veil-server-side-request-forgery-to-niprnet-access-c358fd5e249a&source=---header_actions--c358fd5e249a---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3Dc358fd5e249a&operation=register&redirect=https%3A%2F%2Finfosecwriteups.com%2Fpiercing-the-veil-server-side-request-forgery-to-niprnet-access-c358fd5e249a&source=---header_actions--c358fd5e249a---------------------post_audio_button------------------)
-
-Share
 
 During my reconnaissance of military websites as part of the Department of Defense’s vulnerability disclosure, I noticed two particular websites were using Jira, a popular issue tracking web application. I initially wrote these websites off as there wasn’t any exploits that I was aware of at the time.
 

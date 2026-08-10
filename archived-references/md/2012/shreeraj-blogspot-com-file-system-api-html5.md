@@ -68,11 +68,11 @@ HTML5 has come up with several APIs and one of them is File System API ([http://
 
  For example, if an application has created a token file on the file system using the API. We can see files by following URI on chrome.
 
- [![](https://web.archive.org/web/20190110045801im_/http://3.bp.blogspot.com/-Vd8mUM6M7zk/UCduvzvLqLI/AAAAAAAAAPI/f-jmp0N8zd4/s400/filesys1.jpg)](https://web.archive.org/web/20190110045801/http://3.bp.blogspot.com/-Vd8mUM6M7zk/UCduvzvLqLI/AAAAAAAAAPI/f-jmp0N8zd4/s1600/filesys1.jpg)
+ [!](https://web.archive.org/web/20190110045801/http://3.bp.blogspot.com/-Vd8mUM6M7zk/UCduvzvLqLI/AAAAAAAAAPI/f-jmp0N8zd4/s1600/filesys1.jpg)
 
  In above figure we can see files are being created in the browser. Now assuming XSS is found, it is easy to exploit by hooking into the file system and extracting the content. Following code can be part of the access routine.
 
- [![](https://web.archive.org/web/20190110045801im_/http://3.bp.blogspot.com/-IlAmiZCE-LY/UCdvMb0xs1I/AAAAAAAAAPQ/mDTP89vCNBY/s400/filesys2.jpg)](https://web.archive.org/web/20190110045801/http://3.bp.blogspot.com/-IlAmiZCE-LY/UCdvMb0xs1I/AAAAAAAAAPQ/mDTP89vCNBY/s1600/filesys2.jpg)[
+ [!](https://web.archive.org/web/20190110045801/http://3.bp.blogspot.com/-IlAmiZCE-LY/UCdvMb0xs1I/AAAAAAAAAPQ/mDTP89vCNBY/s1600/filesys2.jpg)[
 ](https://web.archive.org/web/20190110045801/http://3.bp.blogspot.com/-IlAmiZCE-LY/UCdvMb0xs1I/AAAAAAAAAPQ/mDTP89vCNBY/s1600/filesys2.jpg)[
 ](https://web.archive.org/web/20190110045801/http://3.bp.blogspot.com/-IlAmiZCE-LY/UCdvMb0xs1I/AAAAAAAAAPQ/mDTP89vCNBY/s1600/filesys2.jpg)[
 ](https://web.archive.org/web/20190110045801/http://3.bp.blogspot.com/-IlAmiZCE-LY/UCdvMb0xs1I/AAAAAAAAAPQ/mDTP89vCNBY/s1600/filesys2.jpg)[

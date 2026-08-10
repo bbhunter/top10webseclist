@@ -110,11 +110,11 @@ Content-Type: text/html; {% mark yellow %}charset=utf-8{% mark %}
 
 The `charset` attribute tells the browser that UTF-8 was used to encode the HTTP response body. A character encoding like UTF-8 defines a **mapping between characters and bytes**. When a web server serves an HTML document, it maps the characters of the document to the corresponding bytes and transmits these in the HTTP response body. This process turns characters into bytes (*encode*):
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/03789676-77cd-427e-90d8-d4451da66a27/encode.png)
+!
 
 When the browser receives these bytes in the HTTP response body, it can translate them back to the characters of the HTML document. This process turns bytes into characters (*decode*):
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/6fe42fba-f2a0-4d0a-a461-aaf690ddcae3/decode.png)
+!
 
 UTF-8 is only one of **many character encodings** that a modern browser must support according to the [HTML spec](https://html.spec.whatwg.org/#character-encodings). There are plenty of others like `UTF-16`, `ISO-8859-xx`, `windows-125x`, `GBK`, `Big5`, etc. It is essential that the browser knows which of those encodings the server used or it **cannot properly decode** the bytes in the HTTP response body.
 
@@ -134,7 +134,7 @@ In summary, there are three common ways that a browser uses to **determine the c
 
 The Byte-Order Mark is generally very uncommon and the `charset` attribute is not always present in a `Content-Type` header or might be invalid. Also - especially for partial HTML responses - there is usually no `<meta>` tag that indicates a character encoding. In these cases, the browser does not have any information about what character set to use:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/a1479d94-8cd4-4a1d-ae56-ff9617ae6725/missing_charset.png)
+!
 
 Have you ever seen this error message? Probably not, because **it does not exist**.
 
@@ -148,11 +148,11 @@ At this point, we are familiar with the different mechanisms a browser may use t
 
 The purpose of character encoding is to translate characters into a computer-processable byte sequence. These bytes can be transmitted over a network and decoded back to characters by the receiver. This way, the **exact same characters** that the sender intended to transmit are restored:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/8e95f56e-cce8-4e6b-b6b6-ec6fd5f9648b/encode-decode-ok.png)
+!
 
 This only works fine, when the sender and receiver agree upon the character encoding they use. If there is a **mismatch** between the character encoding used for encoding and decoding, the receiver may *see* different characters:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/1b7f0442-bc33-4a34-94ab-494792bd0bd9/encode-decode-not-ok.png)
+!
 
 Such a mismatch between the character encoding used for encoding and decoding is what we refer to as *Encoding Differential* here.
 
@@ -178,7 +178,7 @@ ISO-2022-JP is a Japanese character encoding defined in [RFC 1468](https://www.r
 
 For example, if a byte sequence contains the bytes `0x1b`, `0x28`, `0x42`, these bytes are not decoded to a character but instead indicate that all following bytes should be decoded using ASCII. In total, there are four different escape sequences that can be used to switch between the character sets ASCII, JIS X 0201 1976, JIS X 0208 1978 and JIS X 0208 1983:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/7b209ce6-241c-4340-a6e6-7c097c6b9c5d/iso-2022-jp.png)
+!
 
 This feature of ISO-2022-JP not only provides great flexibility but can also break fundamental assumptions. And there is another catch: at the time of writing, **Chrome (Blink) and Firefox (Gecko) auto-detect this encoding. **A single occurrence of one of these escape sequences is usually enough to convince the auto-detection algorithm that the HTTP response body is encoded with ISO-2022-JP.
 
@@ -188,41 +188,41 @@ The following sections explain two different exploitation techniques that attack
 
 The scenario for this technique is that **user-controlled data** is placed **in a JavaScript string**:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/7b29a332-aebf-4789-b64a-9171ea0f6f38/iso-2022-jp-teq1-01.png)
+!
 
 Let’s imagine a website that accepts two query parameters called `search` and `lang`. The first parameter is reflected in a plaintext context and the second parameter (`lang`) is inserted into a JavaScript string:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/539746f8-646a-4ed5-8a85-b2e73a724284/iso-2022-jp-teq1-02.png)
+!
 
 HTML special characters in the `search` parameter are HTML-encoded, and the `lang` parameter is properly sanitized by escaping double quotes (`"`) and backslashes (`\`). Thus, it is not possible to break out of the string context and inject JavaScript code:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/d0604dfd-fa98-46a7-b0cc-e6675d40744e/iso-2022-jp-teq1-03.png)
+!
 
 The default mode for ISO-2022-JP is ASCII. This means that all bytes of the received HTTP response body are decoded with ASCII and the resulting HTML document looks like what we would expect:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/f439bfb5-f73d-4ef5-b217-62d0f9f027ea/iso-2022-jp-teq1-04.png)
+!
 
 Now, let’s assume an attacker inserts the escape sequence to switch to the JIS X 0201 1976 charset in the `search` parameter (`0x1b`, `0x28`, `0x4a`):
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/f2440d8e-b63f-4c61-9664-9cb6632f0049/iso-2022-jp-teq1-05.png)
+!
 
 The browser now decodes all bytes following this escape sequence with JIS X 0201 1976:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/0652ec9c-2f13-4196-9258-13450dd0dae6/iso-2022-jp-teq1-06.png)
+!
 
 As we can see, this still results in the same characters as before, since JIS X 0201 1976 is *mainly* ASCII-compatible. However, if we closely inspect [its code table](https://en.wikipedia.org/wiki/JIS_X_0201#Codepage_layout), we can notice that there are two exceptions (highlighted in yellow):
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/05df20d0-2049-4f37-8414-7f956f34d5df/jisx-0201-codetable.png)
+!
 
 The byte `0x5c` is mapped to the yen character (`¥`) and the byte `0x7e` to the overline character (`‾`). This is different from ASCII, where `0x5c` is mapped to the backslash character (`\`) and `0x7e` to the tilde character (`~`).
 
 This means that when the web server tries to escape a double quote in the `lang` parameter with a backslash, the browser does not *see* a backslash anymore, but instead a yen sign:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/5afd4276-5177-4545-841d-7cdd3a9dc31c/iso-2022-jp-teq1-07.png)
+!
 
 Accordingly, the inserted double quote actually designates the end of the string and allows an attacker to inject arbitrary JavaScript code:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/bba1d004-96c5-4d59-a7a2-abf407e53184/iso-2022-jp-teq1-08.png)
+!
 
 Although this technique is quite powerful, it is limited to bypassing sanitization in a JavaScript context since a backslash character does not have special meaning in HTML. The next section explains a more advanced technique that can be applied in a pure HTML context.
 
@@ -230,11 +230,11 @@ Although this technique is quite powerful, it is limited to bypassing sanitizati
 
 The scenario for this second technique is that an attacker can control values in **two different HTML contexts**. A common use case would be a website that supports markdown. For example, let’s consider the following markdown text:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/fb805311-69de-4451-a242-741b2fda8228/iso-2022-jp-teq2-01.png)
+!
 
 The resulting HTML code looks like this:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/9466dd63-fe60-421e-9c5e-b069116cf47b/iso-2022-jp-teq2-02.png)
+!
 
 Essential for this technique is that an attacker can control values in two different HTML contexts. In this case, these are:
 
@@ -243,35 +243,35 @@ Essential for this technique is that an attacker can control values in two diffe
 
 By default, ISO-2022-JP is in ASCII mode and the browser *sees* the HTML document as expected:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/9d4c1bda-1e1e-4f10-be3d-1ac4ef7adaa7/iso-2022-jp-teq2-03.png)
+!
 
 Now, let’s assume an attacker inserts the escape sequence to switch the charset to JIS X 0208 1978 in the first image description:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/d64afc3a-7339-466a-ab2d-49e9c9f3fae1/iso-2022-jp-teq2-04.png)
+!
 
 This makes the browser decode all bytes following with JIS X 0208 1978. This charset uses a fixed amount of 2 bytes per character and is not ASCII-compatible. This effectively breaks the HTML document:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/c6f350f6-d3c5-4e1c-abbb-b6f5bbfd01eb/iso-2022-jp-teq2-05.png)
+!
 
 However, a second escape sequence can be inserted in the plaintext context between both images to switch the charset back to ASCII:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/63b0ca03-7816-472f-b096-c28a53a68703/iso-2022-jp-teq2-06.png)
+!
 
 This way, all the following bytes are decoded using ASCII again:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/3836339d-258a-48af-8d95-e4ee95e880ec/iso-2022-jp-teq2-07.png)
+!
 
 When inspecting the HTML syntax, though, we can notice that something changed. The beginning of the second `img` tag is now part of the `alt` attribute value:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/12f5839b-8242-4437-a569-b470641b5bb0/iso-2022-jp-teq2-08.png)
+!
 
 The reason for this is that the 4 bytes in between both escape sequences were decoded using JIS X 0208 1978. This also **consumed the closing double-quote** of the attribute value:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/2c3d6366-c6bd-45dc-a782-e1a7c1df3ca1/iso-2022-jp-teq2-09.png)
+!
 
 At this point, the `src` attribute value of the second image is not an attribute value anymore. Thus, an attacker can replace this value with a JavaScript error handler:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/93dfbed8-51c1-42c6-a24e-1490e151b683/iso-2022-jp-teq2-10.png)
+!
 
 This, again, allows an attacker to inject arbitrary JavaScript code.
 
@@ -296,7 +296,5 @@ Stay up-to-date with the latest Sonar content. Subscribe now to receive the late
  Email
 
 Choosing to proceed means that you agree to the storing and processing of your personal data as described in SonarSource’s [Cookie Policy](https://www.sonarsource.com/company/cookie-policy/). You can opt out of SonarSource communications at anytime.
-
-Sign up
 
 Sonar respects your privacy. Choosing to proceed means that you agree to the SonarSource’s [Privacy Policy](https://www.sonarsource.com/company/privacy/).

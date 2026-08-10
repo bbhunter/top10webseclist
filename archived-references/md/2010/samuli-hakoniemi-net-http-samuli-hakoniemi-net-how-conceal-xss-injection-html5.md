@@ -73,7 +73,7 @@ The Wayback Machine - https://web.archive.org/web/20101224204903/http://samuli.h
 
  23rd of Dec, 2010»Samuli Hakoniemi, in [Web Development](https://web.archive.org/web/20101224204903/http://samuli.hakoniemi.net/category/webdev/)
 
-![](https://web.archive.org/web/20101224204903im_/http://samuli.hakoniemi.net/wp-content/images/pushstate/pushState.png)
+!
 
 I was playing around with *window.history* object. In general, it’s quite limited and can be considered rather useless. However, HTML5 brings some new methods to History object in order to make it more powerful.
 

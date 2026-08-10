@@ -84,7 +84,7 @@ Microsoft resolved the issue behind-the-scenes with a narrow fix in December 202
 
 Figure 1 shows an abbreviated Azure B2C OAuth Authorization code flow (with PKCE) . The OAuth flow itself and redemption of a token matches the standard flow, but the generation of a refresh_token deviates from convention.
 
-![](https://www.praetorian.com/wp-content/uploads/2024/06/AzureB2C1.png)
+!
 
 *Figure 1: Abbreviated OAuth flow meets expectations, but refresh token generation does not.*
 

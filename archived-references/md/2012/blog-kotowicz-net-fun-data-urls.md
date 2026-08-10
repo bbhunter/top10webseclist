@@ -79,7 +79,7 @@ data:text/html;base64,PHNjcmlwdD5hbGVydChvcGVuZXIuZG9jdW1lbnQuYm9keS5pbm5lckhUTU
 
  Chrome will block the access to originating page, so that attacker has limited options:
 
- [![](https://web.archive.org/web/20170913133339im_/http://1.bp.blogspot.com/-fbutbh5g5Z8/T37nmEmgWqI/AAAAAAAAFO4/66anW8VMql4/s1600/screenshot_01.png)](https://web.archive.org/web/20170913133339/http://1.bp.blogspot.com/-fbutbh5g5Z8/T37nmEmgWqI/AAAAAAAAFO4/66anW8VMql4/s1600/screenshot_01.png)
+ [!](https://web.archive.org/web/20170913133339/http://1.bp.blogspot.com/-fbutbh5g5Z8/T37nmEmgWqI/AAAAAAAAFO4/66anW8VMql4/s1600/screenshot_01.png)
 
  But what if particular XSS filter knows about data: URIs and tries to reject them? We bypass, of course :) I've been fuzzing data: URIs syntax recently and I just thought you might find below examples interesting:
 

@@ -65,17 +65,17 @@ extern blog SensePost;
 
 |
 
-|  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-header_r1_c1.gif) |  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-header_r1_c5.gif) |  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-header_r1_c7.gif) |  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-header_r1_c11.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
+|  ! |  ! |  ! |  ! |  ! |  ! |  ! |  ! |  ! |  ! |  ! |  ! |  ! |   |
+|  ! |  ! |  ! |  ! |  ! |   |
 
   |   |
 |
 
-|  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-content_r1_c1.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-content_r2_c1.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![Header](https://www.sensepost.com/imagessketch/Sketch-Blog-content_r3_c1.gif) |  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-content_r3_c6.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-content_r5_c1.gif) |
+|  ! |  ! |   |
+|  ! |  ! |   |
+|  ![Header](https://www.sensepost.com/imagessketch/Sketch-Blog-content_r3_c1.gif) |  ! |  ! |   |
+|  ! |   |
+|  ! |
 
 ### Fri, 10 Aug 2007
 
@@ -105,28 +105,28 @@ Check out the paper / slides* and send us feedback...
 
 (*Sadly in pdf, the slides do not play our embedded hampster .mp4.. so when u get to slide 40 please surf to [http://youtube.com/watch?v=a1Y73sPHKxw](http://youtube.com/watch?v=a1Y73sPHKxw) )
 
-  |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
+  |  ! |   |
+|  ! |   |
+|  ! |   |
+|  ! |   |
+|  ! |   |
+|  ! |   |
+|  ! |   |
+|  ! |  ! |  ! |  ! |  ! |  ! |  ! |  ! |   |
 
   |
 
-|  [![Blog](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r1_c1.gif)](https://www.sensepost.com/blog/) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  [![Video](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r4_c1.gif)](https://www.sensepost.com/videos/) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  [![Research](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r6_c1.gif)](https://www.sensepost.com/research/) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  [![QotW](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r7_c1.gif)](https://www.sensepost.com/qow/) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r8_c1.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r9_c1.gif) |   |   |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![Categories](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r10_c1.gif) |  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r10_c5.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r11_c1.gif) |   [.ac.za (1)](https://www.sensepost.com/blog/?find=.ac.za)
+|  [![Blog](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r1_c1.gif)](https://www.sensepost.com/blog/) |  ! |   |
+|  ! |   |
+|  ! |   |
+|  [![Video](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r4_c1.gif)](https://www.sensepost.com/videos/) |  ! |   |
+|  ! |   |
+|  [![Research](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r6_c1.gif)](https://www.sensepost.com/research/) |  ! |   |
+|  [![QotW](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r7_c1.gif)](https://www.sensepost.com/qow/) |  ! |   |
+|  ! |  ! |   |
+|  ! |   |   |  ! |   |
+|  ![Categories](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r10_c1.gif) |  ! |  ! |   |
+|  ! |   [.ac.za (1)](https://www.sensepost.com/blog/?find=.ac.za)
  [.za (2)](https://www.sensepost.com/blog/?find=.za)
  [about:us (38)](https://www.sensepost.com/blog/?find=about:us)
  [analysis (4)](https://www.sensepost.com/blog/?find=analysis)
@@ -218,9 +218,9 @@ Check out the paper / slides* and send us feedback...
  [writing-advice (1)](https://www.sensepost.com/blog/?find=writing-advice)
  [zaprize (2)](https://www.sensepost.com/blog/?find=zaprize)
  [zen-hacking (6)](https://www.sensepost.com/blog/?find=zen-hacking)
-  |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![Archives](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_archives.gif) |  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r10_c5.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r11_c1.gif) |   [May 2012 (5)](https://www.sensepost.com/blog/?find=&year=2012&month=5)
+  |  ! |   |
+|  ![Archives](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_archives.gif) |  ! |  ! |   |
+|  ! |   [May 2012 (5)](https://www.sensepost.com/blog/?find=&year=2012&month=5)
  [April 2012 (1)](https://www.sensepost.com/blog/?find=&year=2012&month=4)
  [March 2012 (3)](https://www.sensepost.com/blog/?find=&year=2012&month=3)
  [Feburary 2012 (1)](https://www.sensepost.com/blog/?find=&year=2012&month=2)
@@ -283,23 +283,23 @@ Check out the paper / slides* and send us feedback...
  [August 2005 (1)](https://www.sensepost.com/blog/?find=&year=2005&month=8)
  [June 2005 (1)](https://www.sensepost.com/blog/?find=&year=2005&month=6)
  [May 2005 (2)](https://www.sensepost.com/blog/?find=&year=2005&month=5)
-  |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![Blogroll](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_blogroll.gif) |  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r10_c5.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r11_c1.gif) |   [JYeti](http://spyeti.blogspot.com/)
+  |  ! |   |
+|  ![Blogroll](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_blogroll.gif) |  ! |  ! |   |
+|  ! |   [JYeti](http://spyeti.blogspot.com/)
  [Dominic](http://singe.za.net/)
- [Junaid](http://packet-broker.co.za/blog/)  |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![Archives](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_feed.gif) |  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r10_c5.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_r11_c1.gif) |
+ [Junaid](http://packet-broker.co.za/blog/)  |  ! |   |
+|  ![Archives](https://www.sensepost.com/imagessketch/Sketch-Blog-menu_feed.gif) |  ! |  ! |   |
+|  ! |
 
 [rss](https://www.sensepost.com/blog/index.rss) [![Videos RSS Feed](https://www.sensepost.com/images/rss.gif)](https://www.sensepost.com/blog/index.rss)
 
-  |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
+  |  ! |   |
+|  ! |  ! |  ! |  ! |  ! |  ! |   |
 
   |   |
 |
 
-|  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
-|  [![Top of Page](https://www.sensepost.com/imagessketch/Sketch-Blog-footer_r1_c1.gif)]() |  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-footer_r1_c3.gif) |  ![Legal stuff](https://www.sensepost.com/imagessketch/Sketch-Blog-footer_r1_c4.gif) |  ![](https://www.sensepost.com/imagessketch/Sketch-Blog-footer_r1_c10.gif) |  ![](https://www.sensepost.com/imagessketch/spacer.gif) |   |
+|  ! |  ! |  ! |  ! |  ! |  ! |  ! |  ! |  ! |  ! |  ! |  ! |  ! |   |
+|  [![Top of Page](https://www.sensepost.com/imagessketch/Sketch-Blog-footer_r1_c1.gif)]() |  ! |  ![Legal stuff](https://www.sensepost.com/imagessketch/Sketch-Blog-footer_r1_c4.gif) |  ! |  ! |   |
 
   |   |

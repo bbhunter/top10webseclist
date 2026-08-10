@@ -81,11 +81,11 @@ page going offline. To read the original, follow the link above.
 
  Popular photo-album platform [Gallery](http://galleryproject.org/) uses a common approach to forgotten password functionality. When a user requests a password reset it generates a ([now](http://gallery.svn.sourceforge.net/viewvc/gallery/branches/BRANCH_2_3/gallery2/modules/core/UserRecoverPassword.inc?r1=18194&r2=20996&pathrev=20996)) random key:
 
- [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwYxWsbbApyvBpZ1uy-wOlX_cA7xG9eE0CbsMm4K5ieQJSFuHG0r8LA0p10cVtmuacEwTkgbMaJXn1jlsvI_hggibDjpuzHtZFMlqAVaUkjxNBZDitn8PERYs162l-TdQ0EMuSNEpOn6Lj/s1600/gallery_genToken.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwYxWsbbApyvBpZ1uy-wOlX_cA7xG9eE0CbsMm4K5ieQJSFuHG0r8LA0p10cVtmuacEwTkgbMaJXn1jlsvI_hggibDjpuzHtZFMlqAVaUkjxNBZDitn8PERYs162l-TdQ0EMuSNEpOn6Lj/s1600/gallery_genToken.png)
+ [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwYxWsbbApyvBpZ1uy-wOlX_cA7xG9eE0CbsMm4K5ieQJSFuHG0r8LA0p10cVtmuacEwTkgbMaJXn1jlsvI_hggibDjpuzHtZFMlqAVaUkjxNBZDitn8PERYs162l-TdQ0EMuSNEpOn6Lj/s1600/gallery_genToken.png)
 
  Places it in a link to the site:
 
- [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoaFcgVxjqCcm-55a04uQ9Z1vbjg-3moEloES67KGodCxVb6jlfCRJj_lEsG-Qkh7g6eNb2rwnb2t8ps5_HzGmZVzJcqYEE8oGne31BbGmyrYMJFeiUOVR-H8kDhAi_03FVM7KJoyz8ews/s1600/gallery_url.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoaFcgVxjqCcm-55a04uQ9Z1vbjg-3moEloES67KGodCxVb6jlfCRJj_lEsG-Qkh7g6eNb2rwnb2t8ps5_HzGmZVzJcqYEE8oGne31BbGmyrYMJFeiUOVR-H8kDhAi_03FVM7KJoyz8ews/s1600/gallery_url.png)
+ [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoaFcgVxjqCcm-55a04uQ9Z1vbjg-3moEloES67KGodCxVb6jlfCRJj_lEsG-Qkh7g6eNb2rwnb2t8ps5_HzGmZVzJcqYEE8oGne31BbGmyrYMJFeiUOVR-H8kDhAi_03FVM7KJoyz8ews/s1600/gallery_url.png)
 
  and emails to the address on record for that user. [[Full code](https://github.com/gallery/gallery3/blob/d45a73777935c86fc5131955831833d7465b5e9d/modules/user/controllers/password.php)] When the user visits the link, the presence of the key proves that they can read content sent to the email address, and thus must be the rightful owner of the account.
 
@@ -96,7 +96,7 @@ page going offline. To read the original, follow the link above.
  > ...
 > csrf=1e8d5c9bceb16667b1b330cc5fd48663&name=admin
 
- [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2JVvynQfGmRZugtu-IBQ2h1hBw8Q_77pDO_MVAlNICVkU3YyuzD0fVTBm4fNghPUPiDyOj0KFaZFjf07k3XHGRsIJ65z-IP6QVRMPg3-115KprNX09hzK7deXhkzO0tpUKzqxQ4F8JOkY/s640/gallery_email.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2JVvynQfGmRZugtu-IBQ2h1hBw8Q_77pDO_MVAlNICVkU3YyuzD0fVTBm4fNghPUPiDyOj0KFaZFjf07k3XHGRsIJ65z-IP6QVRMPg3-115KprNX09hzK7deXhkzO0tpUKzqxQ4F8JOkY/s1600/gallery_email.png) This technique also worked on Django, Piwik and Joomla, and still works on a few other major applications, frameworks and libraries that I can't name due to an unfortunate series of mistakes on my part.
+ [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2JVvynQfGmRZugtu-IBQ2h1hBw8Q_77pDO_MVAlNICVkU3YyuzD0fVTBm4fNghPUPiDyOj0KFaZFjf07k3XHGRsIJ65z-IP6QVRMPg3-115KprNX09hzK7deXhkzO0tpUKzqxQ4F8JOkY/s1600/gallery_email.png) This technique also worked on Django, Piwik and Joomla, and still works on a few other major applications, frameworks and libraries that I can't name due to an unfortunate series of mistakes on my part.
 
  Of course, this attack will fail unless the target clicks the poisoned link in the unexpected password reset email. There are some techniques for encouraging this click but I'll leave those to your imagination.
 

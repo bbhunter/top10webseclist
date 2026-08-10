@@ -116,13 +116,7 @@ This entry was posted in [Security Posts](https://soroush.me/blog/category/secur
 
 Creation date: December 31, 2011
 
-[
-
- Previous
-
-Sometimes no Ninja skill is required to receive money from security bug bounty programs!
-
-](https://soroush.me/blog/sometimes-no-ninja-skill-is-required-to-receive-money-from-security-bug-bounty-programs)[
+[Previous Sometimes no Ninja skill is required to receive money from security bug bounty programs!](https://soroush.me/blog/sometimes-no-ninja-skill-is-required-to-receive-money-from-security-bug-bounty-programs)[
 
 Next
 

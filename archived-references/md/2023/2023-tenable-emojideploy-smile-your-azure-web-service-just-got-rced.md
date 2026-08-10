@@ -70,7 +70,7 @@ page going offline. To read the original, follow the link above.
 
  By [Liv Matan](https://www.tenable.com/profile/liv-matan)
 
- [   ](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.tenable.com%2Fblog%2FEmoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced&title=EmojiDeploy%3A%20Smile%21%20Your%20Azure%20web%20service%20just%20got%20RCE%E2%80%99d%20._.) [   ](https://www.reddit.com/submit?url=https%3A%2F%2Fwww.tenable.com%2Fblog%2FEmoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced&title=EmojiDeploy%3A%20Smile%21%20Your%20Azure%20web%20service%20just%20got%20RCE%E2%80%99d%20._.) [   ](https://twitter.com/intent/tweet?urlhttps%3A%2F%2Fwww.tenable.com%2Fblog%2FEmoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced&text=EmojiDeploy%3A%20Smile%21%20Your%20Azure%20web%20service%20just%20got%20RCE%E2%80%99d%20._.)    Subscribe  
+       Subscribe  
 
  ![Tenable Cloud Security](https://www.tenable.com/sites/default/files/images/articles/Blog-Cloud_Banners_5_5.png)
 
@@ -157,7 +157,7 @@ The SCM panel requires Azure Active Directory (AAD) authentication. If the user 
 
 Due to these authentication mechanisms, users can not access other users' SCM panels.
 
-![](https://www.tenable.com/sites/default/files/inline/images/image3_1.png)
+!
 
 *Image source: Tenable, 2023*
 
@@ -169,7 +169,7 @@ First, when investigating the SCM panel, the cookies’ attributes configuration
 
 The Same-Site attribute is a browser security feature introduced in 2016; its default value is set to "Lax". The purpose of the Same-Site attribute is to protect against cross-origin information leakage/attacks, e.g. cross-site request forgery (CSRF). According to the [request for comments (RFC)](https://en.wikipedia.org/wiki/Request_for_Comments), the "None" value in the Same-Site attribute provides no protection against cross-origin attacks.
 
-![](https://www.tenable.com/sites/default/files/inline/images/image5_0.png)
+!
 
 *Image source: Tenable, 2023*
 
@@ -182,7 +182,7 @@ https://<my-webapp>.scm.azurewebsites.net.
 
 Sending https://test.com raised an Unauthorized 401 response:
 
-![](https://www.tenable.com/sites/default/files/inline/images/image1_3.png)
+!
 
 *Image source: Tenable, 2023*
 

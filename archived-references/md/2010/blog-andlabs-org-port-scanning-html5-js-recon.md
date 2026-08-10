@@ -64,7 +64,7 @@ Both the APIs have the 'readyState' property that indicates the status of the co
 
 I tried to do some calibration of the time duration for the different port states and the data is below. These numbers only hold good when the target is in the internal network. If you are scanning a target on the internet then the network latency should be taken in to account.
 
-[![](http://andlabs.org/img/jsrecon_port_status.jpg)](http://andlabs.org/img/jsrecon_port_status.jpg)
+[!](http://andlabs.org/img/jsrecon_port_status.jpg)
 
 Since this is not a socket-level but an application-level scan the success also depends on the nature of the application running on the target ports. When a request is sent to certain type of applications they read the request and remain silent keeping the socket open, probably expecting more input or input in the format they expect. If the target is running such a application then its status cannot be determined.
 

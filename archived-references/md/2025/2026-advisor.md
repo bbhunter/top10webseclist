@@ -133,7 +133,7 @@ If SIEM is the system that raises the alarm, SOAR is the one that pulls the leve
 
 The diagram below reflects my high-level understanding of the technical architecture. The SOAR components run as Docker containers, configured with a bridged network interface, sitting alongside long-standing host-level services.
 
-![](https://mehmetince.net/wp-content/uploads/2025/12/logpoint-design-overview-1024x683.jpg)
+!
 
 *Logpoint architecture*
 
@@ -147,7 +147,7 @@ The end goal is simple: pre-authenticated remote code execution. Over two decade
 
 The following diagram is what I’ve understood during the research. Due to the default `iptables` Rules: We can only access ports 80 and 443, which are enabled by default.
 
-![](https://mehmetince.net/wp-content/uploads/2025/12/logpoint-data-flow-networking-overview-e1766738750366-1024x513.jpg)
+!
 
 This means there are two `Nginx` instances to focus on. To determine what is reachable from the outside *(ATTACKER HTTP Request in the diagram)*, I go straight to their configurations.
 
@@ -386,7 +386,7 @@ But before following the white rabbit and decompiling Java microservices, I paus
 
 That moment is hard to ignore. No authentication trickery, no bypass logic yet. Just a simple path rewrite, quietly turning an internal endpoint into something exposed to the outside world.
 
-![](https://mehmetince.net/wp-content/uploads/2025/12/logpoint-accessing-internal-api-1024x470.jpg)
+!
 
 ## One Cookie, Many Hops: Mapping the SOAR Authentication Pipeline
 
@@ -637,7 +637,7 @@ Burp Suite
 
 To prove that we can hit all the way there. I’ve changed our cookie value to something that doensn’t exist. Therefore, we will be able to avoid internal caching of this service and reach all the way to the `fetchUserInfoByCookie()`
 
-![](https://mehmetince.net/wp-content/uploads/2025/12/logpoint-cookie-validation-1024x310.jpg)
+!
 
 Expected return error, but the shocking moment for me was actually on my terminal. I look for the `secbi/login-service` container logs and seen this message.
 
@@ -1176,7 +1176,7 @@ The only missing piece is a valid `uuid` for the first parameter, which turns ou
 
 ## Recap of the chaining of 4 bugs
 
-![](https://mehmetince.net/wp-content/uploads/2025/12/attack-chain-first-half-1024x687.jpeg)
+!
 
 Now there is only one thing left to do. Find a code execution bug in the Python backend. And, as it turns out, that opens up yet another rabbit hole waiting to be explored.
 
@@ -1266,7 +1266,7 @@ The real question is whether validation catches it this time, or whether I get l
 
 The following UI screenshot shows how to create an alert rule, and unfortunately, we didn’t get lucky twice in a row. Condition value is validated, and it expects me to send an integer. Therefore, there is no way that I can actually implant my payload into the rule!
 
-![](https://mehmetince.net/wp-content/uploads/2025/12/logpoint-alert-create-1024x335.jpg)
+!
 
 That is the moment I realize I have tunnel vision. I am already deep down the rabbit hole, pushing in one direction for too long. It feels like the right time to step back, stop forcing it, and look for danger elsewhere.
 
@@ -1413,7 +1413,7 @@ I record my exploit on action
 
 What begins as a routing issue at the edge propagates through internal services, authentication logic, and finally reaches the Python backend, static AES key, and Code Eval bug, resulting in remote code execution. The diagram below shows the complete flow.
 
-![](https://mehmetince.net/wp-content/uploads/2025/12/logpoint-exploit-chain-1-1024x801.png)
+!
 
 ## Public Disclosure Timeline
 

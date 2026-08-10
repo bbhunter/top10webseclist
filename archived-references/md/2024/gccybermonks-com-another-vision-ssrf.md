@@ -65,7 +65,7 @@ page going offline. To read the original, follow the link above.
 
 by [@phor3nsic_br](https://twitter.com/phor3nsic_br)
 
-![](https://gccybermonks.com/assets/ssrfvision/20220601162352.png)
+!
 
 ## Summary
 
@@ -133,13 +133,13 @@ Ok, Ok, Ok…
 
 We cannot obtain or reuse cookies through a XSS, but we can steal these cookies through a SSRF!
 
-![](https://media.giphy.com/media/fvkWXwmv7V9zfTd9z6/giphy.gif)
+!
 
 The request carries cookies, and they can be obtained through logs from the server that’s monitoring the requests.
 
 The attacker must determine that the SSRF directs requests to its server and then makes its content available through the vulnerable domain. By sending the server URL to the victim, the victim somehow accesses the URL. Soon attacker will get the session cookie through your logs!
 
-![](https://gccybermonks.com/assets/ssrfvision/20220601_154844.png)
+!
 
 Simple and a little weird, right? To make it easier, we’ll follow with an example lab.
 
@@ -147,19 +147,19 @@ Simple and a little weird, right? To make it easier, we’ll follow with an exam
 
 When accessing the app.localhost.io we receive a cookie with the HttpOnly flag and `domain=.localhost.io` :
 
-![](https://gccybermonks.com/assets/ssrfvision/20220601164657.png)
+!
 
 If we try to get that cookie through a XSS, we won’t even see it due to HttpOnly:
 
-![](https://gccybermonks.com/assets/ssrfvision/20220601164922.png)
+!
 
 However, if we use a SSRF described above, our cookies are sent to the destination server.
 
-![](https://gccybermonks.com/assets/ssrfvision/20220601165050.png)
+!
 
 If we redirect the request to our server, we can view the requests and get the victim’s cookies:
 
-![](https://gccybermonks.com/assets/ssrfvision/20220601165541.png)
+!
 
 ## Conclusion
 

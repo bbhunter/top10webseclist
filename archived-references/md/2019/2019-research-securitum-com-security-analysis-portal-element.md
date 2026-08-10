@@ -81,7 +81,7 @@ First things first, what even is *<portal>* and why do we need it? Basically, it
 - The embedded content actually works as if it was a top-level browsing context. This means that within the portal *top === window* is equal to *true*, even though it is an embedded page. The only way to find out if the page is rendered within a portal is to check if the global variable *portalHost* is not equal to null nor undefined.
 - (This is the main feature of portals): The portal element can be promoted to top level context by calling a *<portal>.activate()* method. The content is not re-rendered, it just “jumps” from portal to the top frame. Have a look at the gif below. After executing *portal.activate()*, its content is not re-rendered but immediately becomes a top frame. This is a unique feature offered by *<portal>*.
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2019/07/image3.gif)
+!
 
 An example HTML using portal:
 
@@ -117,7 +117,7 @@ Another interesting side effect of being able to open arbitrary URI in portal an
 
 Interestingly, when you open *data:* URI in portal and then activate it… you have data URL in the top frame!
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2019/07/image6.gif)
+!
 
 This is also fixed in Chrome. Since you cannot open non-HTTP(s) URL-s in portal, you cannot also navigate to data URL.
 
@@ -146,7 +146,7 @@ Clickjacking is not the only risk associated with embedding content. The other r
 
 Suppose you go to some website and see a CAPTCHA like below:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2019/07/d1.png)
+!
 
 It probably looks a little bit suspicious, but that could be fixed with splitting the code across a few CAPTCHAs. So what is the code actually? Well, there is a portal that points to [https://account.shodan.io/](https://account.shodan.io/) and displays the API key for Shodan.
 
@@ -167,13 +167,13 @@ XSSearch (Cross Site Search) and XSLeaks (Cross Site Leaks) are two new, hot top
 
 **Timing attacks** are very easy with *<portal>* since it fires the *onload* event after the embedded content is loaded. So the attack is as simple as taking the time before loading portal and then subtracting it in *onload *event. Not respecting X-Frame-Options makes the attack even more valuable.
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2019/07/d2.png)
+!
 
 [Check the code here. ](https://github.com/securitum/research/blob/master/r2019_security-analysis-of-portal-element/xsleaks.html)
 
 **Detecting XSS auditor **is also easy – the only thing that is needed is to count how many times onload event fired. If the auditor is configured to work in a block mode, then the onload event is fired twice. Otherwise, the event is fired only once. I prepared [a simple code to check it](https://github.com/securitum/research/blob/master/r2019_security-analysis-of-portal-element/xsleaks.html) and you can see it in action below:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2019/07/d3.png)
+!
 
 As of Chrome 78 the XSS Auditor side-channel no longer works since [it was removed from Chrome.](https://www.chromium.org/developers/design-documents/xss-auditor)
 
@@ -196,7 +196,7 @@ Below is shown an example of a port scan on my server in which:
 
 And here’s the output from the port scanning function:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2019/07/d4.png)
+!
 
 You can find the source of the port scanner in the repo: [https://github.com/securitum/research/blob/master/r2019_security-analysis-of-portal-element/port-scan.html](https://github.com/securitum/research/blob/master/r2019_security-analysis-of-portal-element/port-scan.html)
 
@@ -226,7 +226,7 @@ But I was wrong! It appears that both *frame-src* and *child-src* are taken into
 
 And here’s the error:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2019/07/d5.png)
+!
 
 Despite the error message, it has nothing to do with extensions.
 
@@ -244,7 +244,7 @@ I have set up a simple example to check it. I have a page that set three cookies
 
 I then check both *<iframe>* and *<portal>* to see if those cookies are being sent. As you can see in the screenshot below, all three cookies are being sent to portal, while only *NO_SAMESITE* is being sent to iframe.
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2019/07/d6.png)
+!
 
 As of Chrome 78, the behaviour slightly changed: now the SAMESITE_STRICT cookie is not being sent to portal. The NO_SAMESITE cookies is not being sent to iframe while it still is for portal.
 
@@ -252,7 +252,7 @@ As of Chrome 78, the behaviour slightly changed: now the SAMESITE_STRICT cookie 
 
 In Chrome, when you visit a page that downloads a file, it gets immediately downloaded: you can see it in the bar that shows in the bottom area of the window. If a page tries to be malicious and download multiple files at once, Chrome asks for an explicit permission, as seen in the screenshot:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2019/07/d7.png)
+!
 
 When you open a page inside *<portal>* that downloads a file then the file gets immediately downloaded too. However, the protection against downloading multiple files no longer works. You can just refresh the portal as many times as you want and Chrome happily downloads files unlimited number of times.
 

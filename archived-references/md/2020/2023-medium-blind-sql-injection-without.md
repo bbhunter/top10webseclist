@@ -79,35 +79,11 @@ Ctf Writeup
 
 ## Alternative ways to retrieve table names in MySQL — without information_schema.
 
-[
-
-![terjanq](https://miro.medium.com/v2/resize:fill:64:64/1*5t2zsHKSKPB_AMJbt0V6WA.png)
-
-](https://terjanq.medium.com/?source=post_page---byline--1e14ba1d4952---------------------------------------)
+[![terjanq](https://miro.medium.com/v2/resize:fill:64:64/1*5t2zsHKSKPB_AMJbt0V6WA.png)](https://terjanq.medium.com/?source=post_page---byline--1e14ba1d4952---------------------------------------)
 
 [terjanq](https://terjanq.medium.com/?source=post_page---byline--1e14ba1d4952---------------------------------------)
 
-5 min readJan 7, 2020
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F1e14ba1d4952&operation=register&redirect=https%3A%2F%2Fterjanq.medium.com%2Fblind-sql-injection-without-an-in-1e14ba1d4952&user=terjanq&userId=d404867d06bd&source=---header_actions--1e14ba1d4952---------------------clap_footer------------------)
-
 --
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F1e14ba1d4952&operation=register&redirect=https%3A%2F%2Fterjanq.medium.com%2Fblind-sql-injection-without-an-in-1e14ba1d4952&user=terjanq&userId=d404867d06bd&source=---header_actions--1e14ba1d4952---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F1e14ba1d4952&operation=register&redirect=https%3A%2F%2Fterjanq.medium.com%2Fblind-sql-injection-without-an-in-1e14ba1d4952&source=---header_actions--1e14ba1d4952---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D1e14ba1d4952&operation=register&redirect=https%3A%2F%2Fterjanq.medium.com%2Fblind-sql-injection-without-an-in-1e14ba1d4952&source=---header_actions--1e14ba1d4952---------------------post_audio_button------------------)
-
-Share
 
 As for the sake of exercising, I looked up a few web challenges on TetCTF and noticed an interesting one — ”Secure System”. When solving the challenge, I explored many SQL Injection techniques that you will probably not find in any tutorials. Enjoy reading!
 

@@ -291,11 +291,11 @@ a:2:{i:0;O:27:"googlelogin_vendor_autoload":0:{}i:1;O:32:"Monolog\Handler\Syslog
 
 To exploit, we generate the [payload with PHPGGC](https://github.com/ambionics/phpggc/blob/master/gadgetchains/vBulletin/RCE/1/chain.php):
 
-![](https://blog.lexfo.fr/images/vbulletin-unserializable-but-unreachable/phpggc.png)
+!
 
 and run one request:
 
-![](https://blog.lexfo.fr/images/vbulletin-unserializable-but-unreachable/exploit.png)
+!
 
 We got pre-auth code execution.
 
@@ -304,5 +304,3 @@ We got pre-auth code execution.
 We successfully converted a *0-day pre-authentication `unserialize()`* on vBulletin to *a remote code execution* vulnerability, despite the heavy mitigations put in place by the application.
 
 A generalisation of the technique could allow, for instance, to convert file write gadget chains into direct remote code execution; this might get implemented in [PHPGGC](https://github.com/ambionics/phpggc) at a later date.
-
-# We're hiring!

@@ -90,11 +90,11 @@ In terms of parsing and serializing HTML as well as operations on the DOM tree, 
 
 Let’s see that on a simple example. Assume that our initial markup is `A<img src=1 >. In the first step it is parsed into the following tree:`
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/10/image-1-1024x104.png)
+!
 
 Then, DOMPurify sanitizes it, leaving the following DOM tree:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/10/image-2-1024x107.png)
+!
 
 Then it is serialized to:
 
@@ -112,7 +112,7 @@ A<img src="1">B
 
 And this is what `DOMPurify.sanitize` returns. Then the markup is parsed again by the browser on assignment to innerHTML:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/10/image-3-1024x107.png)
+!
 
 The DOM tree is identical to the one that DOMPurify worked on, and it is then appended to the document.
 
@@ -128,7 +128,7 @@ The important take-away is that serialize-parse roundtrip is not guaranteed to r
 
 One of these cases is related to the FORM element. It is quite special element in the HTML because it cannot be nested in itself. The specification is explicit that[ it cannot have any descendant that is also a FORM](https://html.spec.whatwg.org/#the-form-element):
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/10/image-4-1024x279.png)
+!
 
 This can be confirmed in any browser, with the following markup:
 
@@ -158,7 +158,7 @@ INSIDE_FORM2
 
 Which would yield the following DOM tree:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/10/image-5-1024x80.png)
+!
 
 The second `form` is completely omitted in the DOM tree just as it wasn’t ever there.
 
@@ -178,7 +178,7 @@ Now comes the interesting part. If we keep reading the HTML specification, it ac
 
 It yields the following DOM tree, which contains a nested form element:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/10/image-6-1024x141.png)
+!
 
 This is not a bug in any particular browser; it results directly from the HTML spec, and is described in the algorithm of parsing HTML. Here’s the general idea:
 
@@ -217,7 +217,7 @@ Now, if we try to serialize the resulting DOM tree, we’ll get the following ma
 
 Note that this markup no longer has any mis-nested tags. And when the markup is parsed again, the following DOM tree is created:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/10/image-7-1024x101.png)
+!
 
 So this is a proof that serialize-reparse roundtrip is not guaranteed to return the original DOM tree. And even more interestingly, this is basically **a spec-compliant mutation**.
 
@@ -253,7 +253,7 @@ Consider the following markup:
 
 It is parsed into the following DOM tree
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/10/image-8-1024x206.png)
+!
 
 **Note:** from now on, all elements in the DOM tree in this blogpost will contain a namespace. So `html style` means that it is a `<style>` element in HTML namespace, while `svg style` means that it is a `<style>` element in SVG namespace.
 
@@ -285,7 +285,7 @@ Consider the following example:
 
 It is parsed into the following DOM tree:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/10/image-9-1024x138.png)
+!
 
 Note how the `style` element that is a direct child of `math` is in MathML namespace, while the `style` element in `mtext` is in HTML namespace. And this is because `mtext` is **MathML text integration points** and makes the parser switch namespaces.
 
@@ -331,7 +331,7 @@ Let’s check that with the following markup:
 
  |   |
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2020/10/image-10-1024x168.png)
+!
 
 Notice that `mglyph` that is a direct child of `mtext` is in MathML namespace, while the one that is a child of `html a` element is in HTML namespace.
 

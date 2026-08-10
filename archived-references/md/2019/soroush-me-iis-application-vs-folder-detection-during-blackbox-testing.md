@@ -133,13 +133,7 @@ This entry was posted in [Security Posts](https://soroush.me/blog/category/secur
 
 Creation date: July 10, 2019
 
-[
-
- Previous
-
-Uploading web.config for Fun and Profit 2
-
-](https://soroush.me/blog/uploading-web-config-for-fun-and-profit-2)[
+[Previous Uploading web.config for Fun and Profit 2](https://soroush.me/blog/uploading-web-config-for-fun-and-profit-2)[
 
 Next
 

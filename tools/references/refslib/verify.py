@@ -28,14 +28,14 @@ PATH_FIELDS = ("cited_by", "file", "files", "material_paths")
 # Pages ABOUT the archive, not archived references. They carry no third-party
 # content, so requiring an attribution block on them is nonsense - and no
 # manifest entry claims them, so without this they would be swept as orphans.
-# `curation-notes.md` and `needs-review.md` are hand-maintained rather than
+# `curation-notes.md` and `review-gaps.md` are hand-maintained rather than
 # generated: one records decisions about the year lists, the other records what a
 # sweep changed without being able to judge the result. Both are exactly the kind
 # of thing a run must never overwrite or delete - and `acquire --prune-files`
-# would have deleted `needs-review.md` as an orphan the moment it was written.
-GENERATED_PAGES = ("readme.md", "index.md", "needs-work.md", "unresolved.md",
+# would have deleted `review-gaps.md` as an orphan the moment it was written.
+GENERATED_PAGES = ("readme.md", "index.md", "document-gaps.md", "unresolved.md",
                    "excluded.md", "store-gaps.md", "log.md", "curation-notes.md",
-                   "needs-review.md")
+                   "review-gaps.md")
 
 
 class Finding(object):

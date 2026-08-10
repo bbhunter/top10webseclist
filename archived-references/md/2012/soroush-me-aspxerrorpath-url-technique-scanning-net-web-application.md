@@ -108,13 +108,7 @@ This entry was posted in [Security Posts](https://soroush.me/blog/category/secur
 
 Creation date: June 12, 2012
 
-[
-
- Previous
-
-Browsers Anti-XSS methods in ASP (classic) have been defeated!
-
-](https://soroush.me/blog/browsers-anti-xss-methods-in-asp-classic-have-been-defeated)[
+[Previous Browsers Anti-XSS methods in ASP (classic) have been defeated!](https://soroush.me/blog/browsers-anti-xss-methods-in-asp-classic-have-been-defeated)[
 
 Next
 

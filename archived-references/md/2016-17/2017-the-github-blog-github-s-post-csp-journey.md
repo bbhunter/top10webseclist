@@ -68,9 +68,9 @@ page going offline. To read the original, follow the link above.
  | 24 minutes
 
 -   Share:
--  [ ](https://x.com/share?text=GitHub%26%238217%3Bs%20post-CSP%20journey&url=https%3A%2F%2Fgithub.blog%2Fengineering%2Fplatform-security%2Fgithubs-post-csp-journey%2F)
--  [ ](https://www.facebook.com/sharer/sharer.php?t=GitHub%26%238217%3Bs%20post-CSP%20journey&u=https%3A%2F%2Fgithub.blog%2Fengineering%2Fplatform-security%2Fgithubs-post-csp-journey%2F)
--  [ ](https://www.linkedin.com/shareArticle?title=GitHub%26%238217%3Bs%20post-CSP%20journey&url=https%3A%2F%2Fgithub.blog%2Fengineering%2Fplatform-security%2Fgithubs-post-csp-journey%2F)
+-  
+-  
+-  
 
 Last year we shared some details on [GitHub’s CSP journey](https://githubengineering.com/githubs-csp-journey/). A journey was a good way to describe it, as our usage of [Content Security Policy](https://en.wikipedia.org/wiki/Content_Security_Policy) (CSP) significantly changed from our initial release nearly [four years ago](https://github.com/blog/1477-content-security-policy) to where we ended up last year. It wasn’t until then that we felt our policy was relatively stable and, while we were not foolish enough to call it “done,” we found the policy was refined enough to focus on protections beyond what CSP offered.
 

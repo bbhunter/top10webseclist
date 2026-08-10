@@ -90,15 +90,7 @@ In a dangling DNS record (Dare), the resources pointed to by the DNS record are 
 
  ![Thumbnail Image](https://scholarworks.wm.edu/server/api/core/bitstreams/74614f72-f551-4a2f-adba-b5fd6662ae57/content)
 
-[
-
- all_your_DNS.pdf
-
-**Show more
-
-Adobe PDF ,  646.75 KB
-
- ](https://scholarworks.wm.edu/bitstreams/f7fa7e74-40e1-4656-9fab-27730bd492ee/download)
+[all_your_DNS.pdf **Show more Adobe PDF , 646.75 KB](https://scholarworks.wm.edu/bitstreams/f7fa7e74-40e1-4656-9fab-27730bd492ee/download)
 
 Physics
 

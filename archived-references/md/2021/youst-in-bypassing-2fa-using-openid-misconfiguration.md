@@ -62,7 +62,7 @@ Two factor authentication is rapidly becoming a norm in all authentication syste
 
 The target was a company with over 50 worldwide brands, with a lot of them using the company's OpenID system for authentication. The company's main website was in this case, the Identity Provider and each brand / website that relied on it, had to implement it and configure the OpenID flow. When testing a website that was recently added to the program's scope, I noticed that unlike others, this one was enforcing two factor authentication through Google Authenticator. Looking at the requests sent in the background, I noticed that when clicking the login button a request simillar to this one is sent:
 
-![](https://youst.in/images/req.png)
+!
 
 The first thing that stood out was the `acr_values` parameter. I haven't encountered it before when looking at OpenID flows, so I thought it was some custom configuration that would lead to an easy 2FA bypass. The first and obvious idea was to try removing the `otp` value and only keeping the `password` value. While I was correctly redirected to the Identity Provider's login page, upon logging in with correct credentials, I was always facing a 401 if the `otp` value was removed.
 
@@ -84,6 +84,6 @@ Therefore, OpenID configurations relying on AMR should make sure to only accept 
 
 Reading the above had me thinking that there might be some other available acr values I could test. The second section of the rfc lists 22 defined authentication methods, so I decided to test a few. Shortly after, upon switching the `acr_values` value from `otp+password` to `sms+password` and entering the credentials, I was greeted with the following image:
 
-![](https://youst.in/images/sms.png)
+!
 
 This was looking promising, so I used a one time SMS verification service and followed through the proccess. Upon adding the phone number and confirming ownership, I succesfully skipped the Google Authenticator window and was also logged in. I reported the issue and it was triaged and paid as High severity. The team let me know that this was caused because the client website had both OTP and SMS enabled, even though there was no UI for enabling sms as a two factor authentication method. This is a clear case on how easy it is to misconfigure the AMR protocol and introduce unwanted security vulnerabilities.

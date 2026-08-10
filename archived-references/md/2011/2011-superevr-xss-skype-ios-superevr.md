@@ -79,9 +79,9 @@ To further demonstrate the issue, I have recorded a video of this scenario. Plea
 
 http://www.youtube.com/watch?v=Ou_Iir2SklI
 
-[![](http://static.squarespace.com/static/5160a493e4b0715db61d76d1/52f53256e4b0961336bf3d82/52f53258e4b0961336bf3d8d/1316287575000/IMG_0207.png?format=original)](http://static.squarespace.com/static/5160a493e4b0715db61d76d1/52f53256e4b0961336bf3d82/52f53258e4b0961336bf3d8d/1316287575000/IMG_0207.png?format=original)
+[!](http://static.squarespace.com/static/5160a493e4b0715db61d76d1/52f53256e4b0961336bf3d82/52f53258e4b0961336bf3d8d/1316287575000/IMG_0207.png?format=original)
 
-[![](http://static.squarespace.com/static/5160a493e4b0715db61d76d1/52f53256e4b0961336bf3d82/52f53259e4b0961336bf3d94/1316287577000/IMG_0212.png?format=original)](http://static.squarespace.com/static/5160a493e4b0715db61d76d1/52f53256e4b0961336bf3d82/52f53259e4b0961336bf3d94/1316287577000/IMG_0212.png?format=original)
+[!](http://static.squarespace.com/static/5160a493e4b0715db61d76d1/52f53256e4b0961336bf3d82/52f53259e4b0961336bf3d94/1316287577000/IMG_0212.png?format=original)
 
 `
 `

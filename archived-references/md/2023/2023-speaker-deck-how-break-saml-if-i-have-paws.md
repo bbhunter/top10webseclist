@@ -80,11 +80,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
  [ See All by GreenDog ](https://speakerdeck.com/greendog)
 
- [
-
- Weird proxies/2 and a bit of magic
-
- ](https://speakerdeck.com/greendog/2-and-a-bit-of-magic)
+ [Weird proxies/2 and a bit of magic](https://speakerdeck.com/greendog/2-and-a-bit-of-magic)
 
  [ ![Avatar for GreenDog](https://secure.gravatar.com/avatar/0eb5ff24722856be0e9c4f66faf363be?s=24) greendog ](https://speakerdeck.com/greendog)
 
@@ -92,11 +88,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   10k
 
- [
-
- Reverse proxies & Inconsistency
-
- ](https://speakerdeck.com/greendog/reverse-proxies-and-inconsistency)
+ [Reverse proxies & Inconsistency](https://speakerdeck.com/greendog/reverse-proxies-and-inconsistency)
 
  [ ![Avatar for GreenDog](https://secure.gravatar.com/avatar/0eb5ff24722856be0e9c4f66faf363be?s=24) greendog ](https://speakerdeck.com/greendog)
 
@@ -104,11 +96,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   5.9k
 
- [
-
- MITM Attacks on HTTPS: Another Perspective
-
- ](https://speakerdeck.com/greendog/mitm-attacks-on-https-another-perspective)
+ [MITM Attacks on HTTPS: Another Perspective](https://speakerdeck.com/greendog/mitm-attacks-on-https-another-perspective)
 
  [ ![Avatar for GreenDog](https://secure.gravatar.com/avatar/0eb5ff24722856be0e9c4f66faf363be?s=24) greendog ](https://speakerdeck.com/greendog)
 
@@ -116,11 +104,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   890
 
- [
-
- Deserialization vulnerabilities
-
- ](https://speakerdeck.com/greendog/deserialization-vulnerabilities)
+ [Deserialization vulnerabilities](https://speakerdeck.com/greendog/deserialization-vulnerabilities)
 
  [ ![Avatar for GreenDog](https://secure.gravatar.com/avatar/0eb5ff24722856be0e9c4f66faf363be?s=24) greendog ](https://speakerdeck.com/greendog)
 
@@ -132,11 +116,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
  [ See All in Education ](https://speakerdeck.com/c/education)
 
- [
-
- BITCOIN : Les fondamentaux !
-
- ](https://speakerdeck.com/rlifchitz/bitcoin-les-fondamentaux)
+ [BITCOIN : Les fondamentaux !](https://speakerdeck.com/rlifchitz/bitcoin-les-fondamentaux)
 
  [ ![Avatar for Renaud Lifchitz](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzA5OCwicHVyIjoiYmxvYl9pZCJ9fQ==--b74a45353caf5ced96d70571ff5dcec9e0b0873a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/rli2.jpg) rlifchitz ](https://speakerdeck.com/rlifchitz)
 
@@ -144,11 +124,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   210
 
- [
-
- Geografía y Fútbol: Chattanooga Geografía del Búnker de La Roja.
-
- ](https://speakerdeck.com/juanmartin2026/geografia-y-futbol-chattanooga-geografia-del-bunker-de-la-roja)
+ [Geografía y Fútbol: Chattanooga Geografía del Búnker de La Roja.](https://speakerdeck.com/juanmartin2026/geografia-y-futbol-chattanooga-geografia-del-bunker-de-la-roja)
 
  [ ![Avatar for Juan Martín Martín](https://secure.gravatar.com/avatar/aaa9f9a0417047ebd306d8c320bca026?s=24) juanmartin2026 ](https://speakerdeck.com/juanmartin2026)
 
@@ -156,11 +132,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   12k
 
- [
-
- Portable & Reproducible Research Environments in the Age of AI Agents
-
- ](https://speakerdeck.com/denkiwakame/portable-and-reproducible-research-environments-in-the-age-of-ai-agents)
+ [Portable & Reproducible Research Environments in the Age of AI Agents](https://speakerdeck.com/denkiwakame/portable-and-reproducible-research-environments-in-the-age-of-ai-agents)
 
  [ ![Avatar for Mai Nishimura](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzMxMzYsInB1ciI6ImJsb2JfaWQifX0=--0dc50ec1a520151b6b25e925c71fef076c7d2874/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/nishimura.png) denkiwakame ](https://speakerdeck.com/denkiwakame)
 
@@ -168,11 +140,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   590
 
- [
-
- 生成AI時代のエンジニア育成について考えてみた
-
- ](https://speakerdeck.com/akasan/sheng-cheng-aishi-dai-noensiniayu-cheng-nituitekao-etemita)
+ [生成AI時代のエンジニア育成について考えてみた](https://speakerdeck.com/akasan/sheng-cheng-aishi-dai-noensiniayu-cheng-nituitekao-etemita)
 
  [ ![Avatar for Daisuke Akagawa (Akasan)](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjYyOTE3LCJwdXIiOiJibG9iX2lkIn19--a14f101fbe7cab90dc18a007bac4fbfb8b8f2dfd/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/me-southpark.png) akasan ](https://speakerdeck.com/akasan)
 
@@ -180,11 +148,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   200
 
- [
-
- 生成AI時代の情報発信
-
- ](https://speakerdeck.com/molmolken/sharing-in-the-age-of-generative-ai)
+ [生成AI時代の情報発信](https://speakerdeck.com/molmolken/sharing-in-the-age-of-generative-ai)
 
  [ ![Avatar for molmolken](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTY4MjcwLCJwdXIiOiJibG9iX2lkIn19--bd421a1e7a3d79d271af91e6cdaf0c1a2b7a4ae3/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/O6MHMuiV_400x400.jpeg) molmolken ](https://speakerdeck.com/molmolken)
 
@@ -192,11 +156,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   160
 
- [
-
- The Strengthening Institutions Program
-
- ](https://speakerdeck.com/territorium/the-strengthening-institutions-program)
+ [The Strengthening Institutions Program](https://speakerdeck.com/territorium/the-strengthening-institutions-program)
 
  [ ![Avatar for Territorium](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzU5NDA1LCJwdXIiOiJibG9iX2lkIn19--b688b04f07826ce9485d35751bdbee288743617d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/Territorium-White-stacked-TM.jpg) territorium ](https://speakerdeck.com/territorium)
 
@@ -206,11 +166,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   120
 
- [
-
- 2026年度春学期 統計学 第13回 不確かな測定の不確かさを測る ― 不偏分散とt分布 (2026. 6. 25)
-
- ](https://speakerdeck.com/akiraasano/2026nian-du-chun-xue-qi-tong-ji-xue-di-13hui-bu-que-kanace-ding-nobu-que-kasawoce-ru-bu-pian-fen-san-totfen-bu-2026-6-25)
+ [2026年度春学期 統計学 第13回 不確かな測定の不確かさを測る ― 不偏分散とt分布 (2026. 6. 25)](https://speakerdeck.com/akiraasano/2026nian-du-chun-xue-qi-tong-ji-xue-di-13hui-bu-que-kanace-ding-nobu-que-kasawoce-ru-bu-pian-fen-san-totfen-bu-2026-6-25)
 
  [ ![Avatar for Akira Asano](https://secure.gravatar.com/avatar/25552537c45d1bfe170b12b47963fd73?s=24) akiraasano ](https://speakerdeck.com/akiraasano)
 
@@ -220,11 +176,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   150
 
- [
-
- 焦燥を平穏に変えるエンジニアのための哲学
-
- ](https://speakerdeck.com/ichimichi/jiao-zao-woping-wen-nibian-eruenzinianotamenozhe-xue)
+ [焦燥を平穏に変えるエンジニアのための哲学](https://speakerdeck.com/ichimichi/jiao-zao-woping-wen-nibian-eruenzinianotamenozhe-xue)
 
  [ ![Avatar for nakamichi](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTExODYsInB1ciI6ImJsb2JfaWQifX0=--39e39c750b738ab6051c449f2658335056625d3c/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/AGyC3lNh_400x400.png) ichimichi ](https://speakerdeck.com/ichimichi)
 
@@ -232,11 +184,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   6.4k
 
- [
-
- 0506
-
- ](https://speakerdeck.com/cbtlibrary/0506)
+ [0506](https://speakerdeck.com/cbtlibrary/0506)
 
  [ ![Avatar for cbtlibrary](https://secure.gravatar.com/avatar/8c6c4d64f6fd9e19226ef0b210433fd3?s=24) cbtlibrary ](https://speakerdeck.com/cbtlibrary)
 
@@ -244,11 +192,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   240
 
- [
-
- Tableau Public入門ハンズオン｜Titanicデータで学ぶViz作成とMakeover
-
- ](https://speakerdeck.com/hayashi_ds017/tableau-publicru-men-hanzuon-titanicdetadexue-buvizzuo-cheng-tomakeover)
+ [Tableau Public入門ハンズオン｜Titanicデータで学ぶViz作成とMakeover](https://speakerdeck.com/hayashi_ds017/tableau-publicru-men-hanzuon-titanicdetadexue-buvizzuo-cheng-tomakeover)
 
  [ ![Avatar for H.Hayashi](https://secure.gravatar.com/avatar/bb671435534e5481cdd5bb140a82344b?s=24) hayashi_ds017 ](https://speakerdeck.com/hayashi_ds017)
 
@@ -268,11 +212,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   240
 
- [
-
- 良書紹介08_ 頭のいい子がやっているすごいグラフの読み方
-
- ](https://speakerdeck.com/bunnchinn3/liang-shu-shao-jie-08-tou-noiizi-gayatuteirusugoigurahunodu-mifang)
+ [良書紹介08_ 頭のいい子がやっているすごいグラフの読み方](https://speakerdeck.com/bunnchinn3/liang-shu-shao-jie-08-tou-noiizi-gayatuteirusugoigurahunodu-mifang)
 
  [ ![Avatar for ぶんちん](https://secure.gravatar.com/avatar/d9fc599b660729bcd11b2ecdd41586b9?s=24) bunnchinn3 ](https://speakerdeck.com/bunnchinn3)
 
@@ -284,11 +224,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [
-
- Sharpening the Axe: The Primacy of Toolmaking
-
- ](https://speakerdeck.com/bcantrill/sharpening-the-axe-the-primacy-of-toolmaking)
+ [Sharpening the Axe: The Primacy of Toolmaking](https://speakerdeck.com/bcantrill/sharpening-the-axe-the-primacy-of-toolmaking)
 
  [ ![Avatar for Bryan Cantrill](https://secure.gravatar.com/avatar/a4ce661c8ef1d02eef322193edcd7380?s=24) bcantrill ](https://speakerdeck.com/bcantrill)
 
@@ -296,11 +232,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   2.9k
 
- [
-
- sira's awesome portfolio website redesign presentation
-
- ](https://speakerdeck.com/elsirapls/siras-awesome-portfolio-website-redesign-presentation)
+ [sira's awesome portfolio website redesign presentation](https://speakerdeck.com/elsirapls/siras-awesome-portfolio-website-redesign-presentation)
 
  [ ![Avatar for ElsiraPls](https://secure.gravatar.com/avatar/56c84e8d01c873962f3ddd937c6a8f5a?s=24) elsirapls ](https://speakerdeck.com/elsirapls)
 
@@ -308,11 +240,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   320
 
- [
-
- Are puppies a ranking factor?
-
- ](https://speakerdeck.com/jonoalderson/are-puppies-a-ranking-factor)
+ [Are puppies a ranking factor?](https://speakerdeck.com/jonoalderson/are-puppies-a-ranking-factor)
 
  [ ![Avatar for Jono Alderson](https://secure.gravatar.com/avatar/beed0f5ca54ae221655b9f30a1f6fe66?s=24) jonoalderson ](https://speakerdeck.com/jonoalderson)
 
@@ -320,11 +248,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   3.8k
 
- [
-
- Jess Joyce - The Pitfalls of Following Frameworks
-
- ](https://speakerdeck.com/techseoconnect/jess-joyce-the-pitfalls-of-following-frameworks)
+ [Jess Joyce - The Pitfalls of Following Frameworks](https://speakerdeck.com/techseoconnect/jess-joyce-the-pitfalls-of-following-frameworks)
 
  [ ![Avatar for Tech SEO Connect](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2NjU4LCJwdXIiOiJibG9iX2lkIn19--14f297c27d2190051dc109b5d472cf0297dd6c3e/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/40575_logo_social%20media%20profile%204.png) techseoconnect ](https://speakerdeck.com/techseoconnect)
 
@@ -334,11 +258,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   330
 
- [
-
- The Myth of the Modular Monolith - Day 2 Keynote - Rails World 2024
-
- ](https://speakerdeck.com/eileencodes/the-myth-of-the-modular-monolith-day-2-keynote-rails-world-2024)
+ [The Myth of the Modular Monolith - Day 2 Keynote - Rails World 2024](https://speakerdeck.com/eileencodes/the-myth-of-the-modular-monolith-day-2-keynote-rails-world-2024)
 
  [ ![Avatar for Eileen M. Uchitelle](https://secure.gravatar.com/avatar/c44e1f7e22c3f23cff7bc130871047ef?s=24) eileencodes ](https://speakerdeck.com/eileencodes)
 
@@ -346,11 +266,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   3.6k
 
- [
-
- HDC tutorial
-
- ](https://speakerdeck.com/michielstock/hdc-tutorial)
+ [HDC tutorial](https://speakerdeck.com/michielstock/hdc-tutorial)
 
  [ ![Avatar for Michiel Stock](https://secure.gravatar.com/avatar/4888c8378accd22acc2998ddf1414e7f?s=24) michielstock ](https://speakerdeck.com/michielstock)
 
@@ -358,11 +274,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   780
 
- [
-
- Lessons Learnt from Crawling 1000+ Websites
-
- ](https://speakerdeck.com/charlesmeaden/lessons-learnt-from-crawling-1000-plus-websites)
+ [Lessons Learnt from Crawling 1000+ Websites](https://speakerdeck.com/charlesmeaden/lessons-learnt-from-crawling-1000-plus-websites)
 
  [ ![Avatar for Charles Meaden](https://secure.gravatar.com/avatar/ce0e73fa718d3c8e32bf992761c1968e?s=24) charlesmeaden ](https://speakerdeck.com/charlesmeaden)
 
@@ -372,11 +284,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   1.5k
 
- [
-
- Everyday Curiosity
-
- ](https://speakerdeck.com/cassininazir/everyday-curiosity)
+ [Everyday Curiosity](https://speakerdeck.com/cassininazir/everyday-curiosity)
 
  [ ![Avatar for Cassini Nazir](https://secure.gravatar.com/avatar/4631d364d59bd9d045acf046a0ce1cfe?s=24) cassininazir ](https://speakerdeck.com/cassininazir)
 
@@ -384,11 +292,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   270
 
- [
-
- Building a Scalable Design System with Sketch
-
- ](https://speakerdeck.com/lauravandoore/building-a-scalable-design-system-with-sketch)
+ [Building a Scalable Design System with Sketch](https://speakerdeck.com/lauravandoore/building-a-scalable-design-system-with-sketch)
 
  [ ![Avatar for Laura Van Doore](https://secure.gravatar.com/avatar/1177e050db6bafe62885362edf6e3537?s=24) lauravandoore ](https://speakerdeck.com/lauravandoore)
 
@@ -396,11 +300,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   34k
 
- [
-
- Making the Leap to Tech Lead
-
- ](https://speakerdeck.com/cromwellryan/making-the-leap-to-tech-lead)
+ [Making the Leap to Tech Lead](https://speakerdeck.com/cromwellryan/making-the-leap-to-tech-lead)
 
  [ ![Avatar for Ryan Cromwell](https://secure.gravatar.com/avatar/32de0bd2ba869609d26fd052a4622778?s=24) cromwellryan ](https://speakerdeck.com/cromwellryan)
 
@@ -408,11 +308,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   10k
 
- [
-
- How STYLIGHT went responsive
-
- ](https://speakerdeck.com/nonsquared/how-stylight-went-responsive)
+ [How STYLIGHT went responsive](https://speakerdeck.com/nonsquared/how-stylight-went-responsive)
 
  [ ![Avatar for nonsquared](https://secure.gravatar.com/avatar/f716e5f737fcfb03f2cf8d1a184f1dbe?s=24) nonsquared ](https://speakerdeck.com/nonsquared)
 
@@ -420,11 +316,7 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   6.2k
 
- [
-
- Why You Should Never Use an ORM
-
- ](https://speakerdeck.com/jnunemaker/why-you-should-never-use-an-orm)
+ [Why You Should Never Use an ORM](https://speakerdeck.com/jnunemaker/why-you-should-never-use-an-orm)
 
  [ ![Avatar for John Nunemaker](https://secure.gravatar.com/avatar/e13c31390e0369fcd5972292ce0e7b92?s=24) jnunemaker ](https://speakerdeck.com/jnunemaker)
 

@@ -20,7 +20,7 @@ by `tools/references/refs.py` from those lists and never edits them.
 
 1615 reference(s) archived across 20 year list(s). 1461 carry technique and 154 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
 
-Three more lists complete the picture: [needs-work.md](needs-work.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
+Three more lists complete the picture: [document-gaps.md](document-gaps.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
 
 ## 2026-ai (77)
 

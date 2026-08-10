@@ -104,11 +104,11 @@ foreach ($_GET['names'] as $name) {
 
  This is the form I was attacking:
 
- [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3UTqX4PUMw7TDUBp3u6sY-oQ30A6KArldT2rQlzGI3e-eIGsn6SPouPijrUlA4qv6X4oh0UxHaOdCpnz28uy-0ZvN-Jje1pHKHW-Z8Svo4CJV6BQPE5hfCiIFa8PNfCwM6s0abipxoD4/s320/bootcamp1.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3UTqX4PUMw7TDUBp3u6sY-oQ30A6KArldT2rQlzGI3e-eIGsn6SPouPijrUlA4qv6X4oh0UxHaOdCpnz28uy-0ZvN-Jje1pHKHW-Z8Svo4CJV6BQPE5hfCiIFa8PNfCwM6s0abipxoD4/s1600/bootcamp1.png)
+ [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3UTqX4PUMw7TDUBp3u6sY-oQ30A6KArldT2rQlzGI3e-eIGsn6SPouPijrUlA4qv6X4oh0UxHaOdCpnz28uy-0ZvN-Jje1pHKHW-Z8Svo4CJV6BQPE5hfCiIFa8PNfCwM6s0abipxoD4/s1600/bootcamp1.png)
 
  It's an advanced search form with results being displayed in a table below like this:
 
- [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTr3edLI_xgP9v658xRFvPmF54Kp2Os6mh970q5srN8QNrtYKUlIqwcWMBQ8zqJrDbnYWLIbjHvuxMAPQTpuHPbNHPwtM2Yn7QGGaqeRIQJZU7G5lHbR1kcgl6GvDs4mK8Zfn1y1Awrv4/s320/bootcamp2.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTr3edLI_xgP9v658xRFvPmF54Kp2Os6mh970q5srN8QNrtYKUlIqwcWMBQ8zqJrDbnYWLIbjHvuxMAPQTpuHPbNHPwtM2Yn7QGGaqeRIQJZU7G5lHbR1kcgl6GvDs4mK8Zfn1y1Awrv4/s1600/bootcamp2.png)
+ [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTr3edLI_xgP9v658xRFvPmF54Kp2Os6mh970q5srN8QNrtYKUlIqwcWMBQ8zqJrDbnYWLIbjHvuxMAPQTpuHPbNHPwtM2Yn7QGGaqeRIQJZU7G5lHbR1kcgl6GvDs4mK8Zfn1y1Awrv4/s1600/bootcamp2.png)
 
  Setting up the intercepting proxy (I used [OWASP ZAP](http://code.google.com/p/zaproxy/)) will quickly show that these POST parameters are being sent:
 

@@ -60,13 +60,13 @@ page going offline. To read the original, follow the link above.
 
 Securitum. Leading european penetration testing company
 
- ![](https://static.shuffle.dev/uploads/files/a6/a6f2940854c19714ee211d1b0f6281ba8f8e7687/image-185.png)
+ !
 
 Pentest Chronicles
 
 # Few steps on how to take over a whole application.
 
- ![](https://static.shuffle.dev/uploads/files/2a/2a36acf12f2a0335c799aaa616af312467de082e/insights.png)
+ !
 
 # Sebastian Jeż
 
@@ -99,7 +99,7 @@ Pentest Chronicles
 
 # Next Pentest Chronicles
 
- ![](https://www.securitum.com/images/ilustration-pentest-chronicles-article.png)
+ !
 
 ### When Usernames Become Passwords: A Real-World Case Study of Weak Password Practices
 
@@ -109,13 +109,9 @@ Pentest Chronicles
 
 In today's world, ensuring the security of our accounts is more crucial than ever. Just as keys protect the doors to our homes, passwords serve as the first line of defense for our data and assets. It's easy to assume that technical individuals, such as developers and IT professionals, always use strong, unique passwords to keep ...
 
- [
+ [READ pentest chronicle](https://www.securitum.com/when_usernames_become_passwords_a_real-world_case_study_of_weak_password_practices.html)
 
-READ pentest chronicle
-
-](https://www.securitum.com/when_usernames_become_passwords_a_real-world_case_study_of_weak_password_practices.html)
-
- ![](https://www.securitum.com/images/ilustration-pentest-chronicles3.png)
+ !
 
 ### SOCMINT – or rather OSINT of social media
 
@@ -125,13 +121,9 @@ READ pentest chronicle
 
  SOCMINT is the process of gathering and analyzing the information collected from various social networks, channels and communication groups in order to track down an object, gather as much partial data as possible, and potentially to understand its operation. All this in order to analyze the collected information and to achieve that goal by making …
 
- [
+ [READ pentest chronicle](https://www.securitum.com/socmint__or_rather_osint_of_social_media.html)
 
-READ pentest chronicle
-
-](https://www.securitum.com/socmint__or_rather_osint_of_social_media.html)
-
- ![](https://www.securitum.com/images/ilustration-pentest-chronicles2.png)
+ !
 
 ### PyScript – or rather Python in your browser + what can be done with it?
 
@@ -141,67 +133,43 @@ READ pentest chronicle
 
  PyScript – or rather Python in your browser + what can be done with it? A few days ago, the Anaconda project announced the PyScript framework, which allows Python code to be executed directly in the browser. Additionally, it also covers its integration with HTML and JS code. An execution of the Python code in …
 
- [
+ [READ pentest chronicle](https://www.securitum.com/pyscript__or_rather_python_in_your_browser__what_can_be_done_with_it.html)
 
-READ pentest chronicle
-
-](https://www.securitum.com/pyscript__or_rather_python_in_your_browser__what_can_be_done_with_it.html)
-
- ![](https://www.securitum.com/images/contact.png)
+ !
 
 ## Any questions?
 
 #  Happy to get a call or email
 and help!
 
- [CONTACT US](https://www.securitum.com/contact.html) ![](https://static.shuffle.dev/uploads/files/a6/a6f2940854c19714ee211d1b0f6281ba8f8e7687/Arrow-61.png)
+ [CONTACT US](https://www.securitum.com/contact.html) !
 
- ![](https://static.shuffle.dev/uploads/files/a6/a6f2940854c19714ee211d1b0f6281ba8f8e7687/Logo-Securitum.png)
+ !
 
- [ ](https://www.facebook.com/profile.php?id=100092748256559)
+ 
 
- [ ](https://www.linkedin.com/company/securitum/)
+ 
 
- [ ](https://twitter.com/securitum_com)
+ 
 
- [ ](https://www.youtube.com/@SekurakTV/videos)
+ 
 
- [
+ [### Services](https://www.securitum.com/services.html)
 
-### Services
+ [### Pricing](https://www.securitum.com/pricing.html)
 
-](https://www.securitum.com/services.html)
+ [### Resources](https://www.securitum.com/resources.html)
 
- [
+ [### Company](https://www.securitum.com/about-us.html)
 
-### Pricing
+ [### Partnership](https://www.securitum.com/partnership.html)
 
-](https://www.securitum.com/pricing.html)
+ 
 
- [
+ 
 
-### Resources
+ 
 
-](https://www.securitum.com/resources.html)
-
- [
-
-### Company
-
-](https://www.securitum.com/about-us.html)
-
- [
-
-### Partnership
-
-](https://www.securitum.com/partnership.html)
-
- [ ](https://www.facebook.com/profile.php?id=100092748256559)
-
- [ ](https://www.linkedin.com/company/securitum/)
-
- [ ](https://twitter.com/securitum_com)
-
- [ ](https://www.youtube.com/@SekurakTV/videos)
+ 
 
  [ Terms and conditions ](https://www.securitum.com/terms-and-conditions.html)

@@ -66,43 +66,13 @@ page going offline. To read the original, follow the link above.
 
 # Exploring the World of ESI Injection
 
-[
-
-![Sudhanshu Rajbhar](https://miro.medium.com/v2/resize:fill:88:88/2*IwNAX8FaOfAcFwqXw4t0Cg.jpeg)
-
-](https://sudhanshur705.medium.com/?source=post_page-----b86234e66f91--------------------------------)[
-
-![InfoSec Write-ups](https://miro.medium.com/v2/resize:fill:48:48/1*SWJxYWGZzgmBP1D0Qg_3zQ.png)
-
-](https://infosecwriteups.com/?source=post_page-----b86234e66f91--------------------------------)
+[![Sudhanshu Rajbhar](https://miro.medium.com/v2/resize:fill:88:88/2*IwNAX8FaOfAcFwqXw4t0Cg.jpeg)](https://sudhanshur705.medium.com/?source=post_page-----b86234e66f91--------------------------------)[![InfoSec Write-ups](https://miro.medium.com/v2/resize:fill:48:48/1*SWJxYWGZzgmBP1D0Qg_3zQ.png)](https://infosecwriteups.com/?source=post_page-----b86234e66f91--------------------------------)
 
 [Sudhanshu Rajbhar](https://sudhanshur705.medium.com/?source=post_page-----b86234e66f91--------------------------------)
 
-[Follow](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fuser%2F738ac78f7fe8&operation=register&redirect=https%3A%2F%2Finfosecwriteups.com%2Fexploring-the-world-of-esi-injection-b86234e66f91&user=Sudhanshu+Rajbhar&userId=738ac78f7fe8&source=post_page-738ac78f7fe8----b86234e66f91---------------------post_header-----------)
-
 Published in
 
-[
-
-InfoSec Write-ups
-
-](https://infosecwriteups.com/?source=post_page-----b86234e66f91--------------------------------)
-
-15 min readDec 29, 2022
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fbugbountywriteup%2Fb86234e66f91&operation=register&redirect=https%3A%2F%2Finfosecwriteups.com%2Fexploring-the-world-of-esi-injection-b86234e66f91&user=Sudhanshu+Rajbhar&userId=738ac78f7fe8&source=-----b86234e66f91---------------------clap_footer-----------)
-
---
-
-3
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fb86234e66f91&operation=register&redirect=https%3A%2F%2Finfosecwriteups.com%2Fexploring-the-world-of-esi-injection-b86234e66f91&source=-----b86234e66f91---------------------bookmark_footer-----------)
-
-Listen
-
-Share
+[InfoSec Write-ups](https://infosecwriteups.com/?source=post_page-----b86234e66f91--------------------------------)
 
 Heyyy Everyoneee,
 
@@ -110,25 +80,9 @@ In this writeup I will be sharing my findings related to ESI (***Edge Side Inclu
 
 If you aren’t aware / haven’t already heard about ***Edge Side Include Injection, ***I strongly recommend reading the below articles first , as Gosecure has already done a great job at explaining it and also you can checkout Alex Birsan tweet below to find out how to look for them last but not the least you can also you can watch the DEFCON talk:
 
-[
+[## Beyond XSS: Edge Side Include Injection - GoSecure ### Update: A new blog post has been published as a follow up to this article : ESI Part 2: Abusing specific… www.gosecure.net](https://www.gosecure.net/blog/2018/04/03/beyond-xss-edge-side-include-injection/?source=post_page-----b86234e66f91--------------------------------)
 
-## Beyond XSS: Edge Side Include Injection - GoSecure
-
-### Update: A new blog post has been published as a follow up to this article : ESI Part 2: Abusing specific…
-
-www.gosecure.net
-
-](https://www.gosecure.net/blog/2018/04/03/beyond-xss-edge-side-include-injection/?source=post_page-----b86234e66f91--------------------------------)
-
-[
-
-## ESI Injection Part 2: Abusing specific implementations - GoSecure
-
-### This post is a follow up with items discovered after the first ESI publication. Those discoveries are attack vectors…
-
-www.gosecure.net
-
-](https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations/?source=post_page-----b86234e66f91--------------------------------)
+[## ESI Injection Part 2: Abusing specific implementations - GoSecure ### This post is a follow up with items discovered after the first ESI publication. Those discoveries are attack vectors… www.gosecure.net](https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations/?source=post_page-----b86234e66f91--------------------------------)
 
 ## The Story Begins
 
@@ -186,15 +140,7 @@ Another interesting thing was that the application session cookies were marked a
 
 Well I even asked him how he came up with the idea of using the variables inside ESI comment, he told me he just read the docs
 
-[
-
-## Edge Side Includes (ESI) Language Tags
-
-### This chapter describes the Edge Side Includes (ESI) tags provided for content assembly of dynamic fragments. This…
-
-docs.oracle.com
-
-](https://docs.oracle.com/cd/B14099_19/caching.1012/b14046/esi.htm?source=post_page-----b86234e66f91--------------------------------#i654520)
+[## Edge Side Includes (ESI) Language Tags ### This chapter describes the Edge Side Includes (ESI) tags provided for content assembly of dynamic fragments. This… docs.oracle.com](https://docs.oracle.com/cd/B14099_19/caching.1012/b14046/esi.htm?source=post_page-----b86234e66f91--------------------------------#i654520)
 
 A full blown account takeover POC was provided in the report , the issue got *triaged *and was rewarded with a* high severity* rating (thanks to the 2x multplier):
 

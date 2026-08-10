@@ -60,13 +60,13 @@ page going offline. To read the original, follow the link above.
 
 Securitum. Leading european penetration testing company
 
- ![](https://www.securitum.com/images/image-185.png)
+ !
 
 Pentest Chronicles
 
 #  SOQL Injection – How to Exfiltrate Sensitive Data in Real-World Pentests
 
- ![](https://www.securitum.com/images/ilustration-pentest-chronicles-article.png)
+ !
 
 # Adam Borczyk
 
@@ -79,21 +79,21 @@ Pentest Chronicles
 
  **A Real-World Example** To better understand how this vulnerability can be exploited, consider the scenario that took place during the audit:
  1) First, the following request was spotted within application traffic:
- ![](https://www.securitum.com/images/Zrzut-ekranu-2024-10-18-112649.png) There are two interesting properties of this request. One is the presence of a plain SOQL query:
- ![](https://www.securitum.com/images/Zrzut-ekranu-2024-10-18-112711.png) The other detail that caught my attention is that destPath parameter takes a relative URL as its value, with the SOQL query:
- ![](https://www.securitum.com/images/Zrzut-ekranu-2024-10-18-112724.png) In response the server returns details of the given object:
- ![](https://www.securitum.com/images/Zrzut-ekranu-2024-10-18-112743.png) Interestingly, an attempt to query the API directly (not through the destPath param), i.e. through an URL like $HOSTNAME/services/data/v61.0/query?q= returns 401 Unauthorized error. This is a REST API endpoint that should not be available to regular users and is disabled in organization’s settings, yet one can reach it through the request above.
+ ! There are two interesting properties of this request. One is the presence of a plain SOQL query:
+ ! The other detail that caught my attention is that destPath parameter takes a relative URL as its value, with the SOQL query:
+ ! In response the server returns details of the given object:
+ ! Interestingly, an attempt to query the API directly (not through the destPath param), i.e. through an URL like $HOSTNAME/services/data/v61.0/query?q= returns 401 Unauthorized error. This is a REST API endpoint that should not be available to regular users and is disabled in organization’s settings, yet one can reach it through the request above.
  But that’s just one table (object) from the database. How do we extract more data?
  2) One of the standard Salesforce API actions is:
- ![](https://www.securitum.com/images/Zrzut-ekranu-2024-10-18-112757.png)
+ !
  This is triggered on the /aura endpoint during regular web app usage, revealing custom object names used by the application. Throughout my browsing I’ve gathered a number of such requests and responses, each containing objects’ names. How do we extract them all from Burp now? Well, you can try Burp’s Search menu and parse that, or you can just:
- ![](https://www.securitum.com/images/Zrzut-ekranu-2024-10-18-112811.png)
+ !
  Note that the regex looks for strings that end with __c – this is characteristic for custom Salesforce entities. This way more than 3000 names were obtained:
- ![](https://www.securitum.com/images/Zrzut-ekranu-2024-10-18-112823.png)
+ !
  These were one more time passed to the Aura’s getObjectInfo endpoint through Burp Intruder in order to enumerate even more names – some names were only revealed within attributes of complete objects.
 
  2) Once object names were identified, the following HTTP request was sent to the vulnerable endpoint:
- ![](https://www.securitum.com/images/Zrzut-ekranu-2024-10-18-112838.png)
+ !
  This response includes all of the information about the object, such as the ID, creation dates, and all the other business-specific details. If an attacker had continued querying different objects or fields, they could have gradually extracted a significant amount of confidential information.
  **How to protect your application?** First, it’s important to restrict access to the query functionality. Only authorized users, such as administrators, should have the ability to execute SOQL queries. Regular users should never be allowed to run full queries on their own, as this could open the door to perform malicious actions.
 
@@ -107,7 +107,7 @@ Pentest Chronicles
 
 # Next Pentest Chronicles
 
- ![](https://www.securitum.com/images/ilustration-pentest-chronicles-article.png)
+ !
 
 ### When Usernames Become Passwords: A Real-World Case Study of Weak Password Practices
 
@@ -117,13 +117,9 @@ Pentest Chronicles
 
 In today's world, ensuring the security of our accounts is more crucial than ever. Just as keys protect the doors to our homes, passwords serve as the first line of defense for our data and assets. It's easy to assume that technical individuals, such as developers and IT professionals, always use strong, unique passwords to keep ...
 
- [
+ [READ pentest chronicle](https://www.securitum.com/when_usernames_become_passwords_a_real-world_case_study_of_weak_password_practices.html)
 
-READ pentest chronicle
-
-](https://www.securitum.com/when_usernames_become_passwords_a_real-world_case_study_of_weak_password_practices.html)
-
- ![](https://www.securitum.com/images/ilustration-pentest-chronicles3.png)
+ !
 
 ### SOCMINT – or rather OSINT of social media
 
@@ -133,13 +129,9 @@ READ pentest chronicle
 
  SOCMINT is the process of gathering and analyzing the information collected from various social networks, channels and communication groups in order to track down an object, gather as much partial data as possible, and potentially to understand its operation. All this in order to analyze the collected information and to achieve that goal by making …
 
- [
+ [READ pentest chronicle](https://www.securitum.com/socmint__or_rather_osint_of_social_media.html)
 
-READ pentest chronicle
-
-](https://www.securitum.com/socmint__or_rather_osint_of_social_media.html)
-
- ![](https://www.securitum.com/images/ilustration-pentest-chronicles2.png)
+ !
 
 ### PyScript – or rather Python in your browser + what can be done with it?
 
@@ -149,67 +141,43 @@ READ pentest chronicle
 
  PyScript – or rather Python in your browser + what can be done with it? A few days ago, the Anaconda project announced the PyScript framework, which allows Python code to be executed directly in the browser. Additionally, it also covers its integration with HTML and JS code. An execution of the Python code in …
 
- [
+ [READ pentest chronicle](https://www.securitum.com/pyscript__or_rather_python_in_your_browser__what_can_be_done_with_it.html)
 
-READ pentest chronicle
-
-](https://www.securitum.com/pyscript__or_rather_python_in_your_browser__what_can_be_done_with_it.html)
-
- ![](https://www.securitum.com/images/contact.png)
+ !
 
 ## Any questions?
 
 #  Happy to get a call or email
 and help!
 
- [CONTACT US](https://www.securitum.com/contact.html) ![](https://www.securitum.com/images/Arrow-61.png)
+ [CONTACT US](https://www.securitum.com/contact.html) !
 
- ![](https://www.securitum.com/images/Logo-Securitum.png)
+ !
 
- [ ](https://www.facebook.com/profile.php?id=100092748256559)
+ 
 
- [ ](https://www.linkedin.com/company/securitum/)
+ 
 
- [ ](https://twitter.com/securitum_com)
+ 
 
- [ ](https://www.youtube.com/@SekurakTV/videos)
+ 
 
- [
+ [### Services](https://www.securitum.com/services.html)
 
-### Services
+ [### Pricing](https://www.securitum.com/pricing.html)
 
- ](https://www.securitum.com/services.html)
+ [### Resources](https://www.securitum.com/resources.html)
 
- [
+ [### Company](https://www.securitum.com/about-us.html)
 
-### Pricing
+ [### Partnership](https://www.securitum.com/partnership.html)
 
- ](https://www.securitum.com/pricing.html)
+ 
 
- [
+ 
 
-### Resources
+ 
 
- ](https://www.securitum.com/resources.html)
-
- [
-
-### Company
-
- ](https://www.securitum.com/about-us.html)
-
- [
-
-### Partnership
-
- ](https://www.securitum.com/partnership.html)
-
- [ ](https://www.facebook.com/profile.php?id=100092748256559)
-
- [ ](https://www.linkedin.com/company/securitum/)
-
- [ ](https://twitter.com/securitum_com)
-
- [ ](https://www.youtube.com/@SekurakTV/videos)
+ 
 
  [ Terms and conditions ](https://www.securitum.com/terms-and-conditions.html)

@@ -76,7 +76,7 @@ When server sends back response there are several headers included. One of them 
  `
  As you can see it is super easy example which just takes one parameter. It could be used as playground for xss vulnerabilities, right? Not really! There is first line which says server should return Content-Type header with value “text/plain”. Lets check whether we can inject some harmless HTML.
 
-![](https://web.archive.org/web/20180808171731im_/https://jankopecky.net/wp-content/uploads/2017/04/article_textplain.png)
+!
 
 As expected, we can inject whatever we want, but browser will not render/execute it. Reason is obvious, response is of a type text/plain.
 
@@ -93,7 +93,7 @@ I found out if you open .eml file IE will perform mime sniffing and if HTML/JS i
 
 You can save content of this file on your web server and access it with IE (please mind two new lines at the end of the file!). You will see it is rendered properly. BTW pay attention to “[Content-Transfer-Encoding: quoted-printable](https://web.archive.org/web/20180808171731/https://en.wikipedia.org/wiki/Quoted-printable)” – to make it short it is similar to URL encoding except it uses equal sign instead of percentage.
 
-![](https://web.archive.org/web/20180808171731im_/https://jankopecky.net/wp-content/uploads/2017/04/article_textplain2.png)
+!
 
 Does not work for you? Haha that is because wrong Content-Type 😉 Correct Content-Type for .eml is “message/rfc822”. You can use following .htaccess file:
 
@@ -102,7 +102,7 @@ Does not work for you? Haha that is because wrong Content-Type 😉 Correct Cont
 
 Screenshot below shows testeml_1.eml returned with correct Content-Type.
 
-![](https://web.archive.org/web/20180808171731im_/https://jankopecky.net/wp-content/uploads/2017/04/article_textplain3.png)
+!
 
 **Finally give us the bug!**
 
@@ -125,7 +125,7 @@ This is how the final file looks like:
 
 And this is the result of accessing it in IE:
 
-![](https://web.archive.org/web/20180808171731im_/https://jankopecky.net/wp-content/uploads/2017/04/article_textplain4.png)
+!
 
 You see? Exploitation is sucessful! Although we are framing file with content-type “text/plain” we force IE to perform mime sniffing (that is why <HTML> should be presented in the request/response) and render our payload.
 

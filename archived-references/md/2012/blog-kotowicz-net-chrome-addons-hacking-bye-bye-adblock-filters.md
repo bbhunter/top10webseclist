@@ -64,7 +64,7 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-[![](https://web.archive.org/web/20171001104006im_/http://2.bp.blogspot.com/-OYUwK93L-6o/T3MNsBLxtgI/AAAAAAAAFKI/49w70ahzRjc/s1600/icon128.png)](https://web.archive.org/web/20171001104006/http://2.bp.blogspot.com/-OYUwK93L-6o/T3MNsBLxtgI/AAAAAAAAFKI/49w70ahzRjc/s1600/icon128.png)
+[!](https://web.archive.org/web/20171001104006/http://2.bp.blogspot.com/-OYUwK93L-6o/T3MNsBLxtgI/AAAAAAAAFKI/49w70ahzRjc/s1600/icon128.png)
 
  Continuing the Chrome extension hacking (see [part 1](https://web.archive.org/web/20171001104006/http://blog.kotowicz.net/2012/02/intro-to-chrome-addons-hacking.html) and [2](https://web.archive.org/web/20171001104006/http://blog.kotowicz.net/2012/02/chrome-addons-hacking-want-xss-on.html)), this time I'd like to draw you attention to the oh-so-popular [AdBlock](https://web.archive.org/web/20171001104006/https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom) extension. It has **over a million users**, is being actively maintained and is a piece of a great software (heck, even I use it!). However - due to how Chrome extensions work in general it is still **relatively easy to bypass** it and display some ads. Let me describe two distinct vulnerabilities I've discovered. They are both exploitable in the newest 2.5.22 version.
 

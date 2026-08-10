@@ -71,7 +71,7 @@ Jeremiah Grossman: My TV interview with ABC News (AU)
 
 All part of job. :)
 
-Here is a [](http://video.google.com/videoplay?docid=-3991413321998606355)shortened version of the 45min show. Enjoy.
+Here is a shortened version of the 45min show. Enjoy.
 
   [Newer Post](https://blog.jeremiahgrossman.com/2006/01/wasc-releases-web-application-firewall.html)   [Older Post](https://blog.jeremiahgrossman.com/2006/01/back-from-2005-06-maui-vacation.html)  [Home](https://blog.jeremiahgrossman.com/)
 

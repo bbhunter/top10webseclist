@@ -6,12 +6,12 @@ is `python tools/references/refs.py <command>`, run with `WEBSEC_REFS_STORE`
 set and one command at a time, exactly as the skill's pipeline section says.
 
 - **Drive batch repair from generated state.** After specific browser,
-  Wayback and manual recoveries, `acquire --needs-work` processes the remaining
+  Wayback and manual recoveries, `acquire --document-gaps` processes the remaining
   generated queue without reopening the complete corpus. Use
   `--faulty-captures` only for rows whose `content_gap` records a bad capture,
   and `--missing-store` for the separate `store-gaps.md` list - references whose
   documents are published but whose stored bytes are gone. Those two lists never
-  overlap: `needs-work.md` is only what could not be archived at all.
+  overlap: `document-gaps.md` is only what could not be archived at all.
 
 - **Reconcile split durable stores by hash.** If old and active stores both
   exist, audit every manifest hash against both. Copy a missing object only
@@ -98,11 +98,11 @@ set and one command at a time, exactly as the skill's pipeline section says.
   ```
 
   This retains the video in the year list but removes its metadata-only archive
-  file and its transcript request from `needs-work.md`. Do not add the decision
+  file and its transcript request from `document-gaps.md`. Do not add the decision
   until the candidate has been verified as the same authors' research from the
   same period.
 
-  Run `refs.py index --prune-files` after each resolved batch. `needs-work.md`
+  Run `refs.py index --prune-files` after each resolved batch. `document-gaps.md`
   is generated state and should shrink as the work proceeds, not only at the
   end of a long recovery session.
 
@@ -206,7 +206,7 @@ set and one command at a time, exactly as the skill's pipeline section says.
   `kinds.from_url` unwraps the replay first. A kind already in the manifest is
   not recomputed, so re-run `check --only <substring> --force` after any change
   to that rule. After indexing, audit every YouTube, `youtu.be`, Vimeo and
-  archived-video URL in `needs-work.md`: it must say `Kind: video`, never
+  archived-video URL in `document-gaps.md`: it must say `Kind: video`, never
   `Kind: article` merely because the outer host is Wayback.
 
 - **A GitHub page is read through the API, not the page.** Advisories, blob files

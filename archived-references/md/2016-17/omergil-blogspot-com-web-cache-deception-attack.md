@@ -87,13 +87,13 @@ What happens if we access [http://www.example.com/home.php/non-existent.css](htt
 
 Oh.
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj5Hy8KgPIMyPDAr_xzypLMPEjbSDoCJ_WRvBSs-PAtyiYJYYqIyKteg68vZ1M65YjauF9zlMXlifGiv7p2LOAKCzAaqXShrFAzyn48FFvDP3zORL9mQOCiEQe4mgHXKOfMpguDexZTzI/s320/Dr_Evil.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj5Hy8KgPIMyPDAr_xzypLMPEjbSDoCJ_WRvBSs-PAtyiYJYYqIyKteg68vZ1M65YjauF9zlMXlifGiv7p2LOAKCzAaqXShrFAzyn48FFvDP3zORL9mQOCiEQe4mgHXKOfMpguDexZTzI/s1600/Dr_Evil.jpg)
+[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj5Hy8KgPIMyPDAr_xzypLMPEjbSDoCJ_WRvBSs-PAtyiYJYYqIyKteg68vZ1M65YjauF9zlMXlifGiv7p2LOAKCzAaqXShrFAzyn48FFvDP3zORL9mQOCiEQe4mgHXKOfMpguDexZTzI/s1600/Dr_Evil.jpg)
 
 ## Taking advantage of it
 
 An attacker who lures a logged-on user to access [http://www.example.com/home.php/logo.png](http://www.example.com/home.php/logo.png) will cause this page – containing the user's personal content – to be cached and thus publicly-accessible. It could get even worse, if the body of the response contains (for some reason) the session identifier, security answers or CSRF tokens. All the attacker has to do now is to access this page on his own and expose this data.
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2umBTn2Uaz7gzStpmn6K05I6jg8DxI-pgtAxOrQXP8ZUtBvX5fRjafNsx1fzVc4ljGz7qRZqCq3-OLiwnirZBSRFi2aciqDdtTeR4jJZ5KDcHud9ooG4a09xx3EHM7lbzYHpL-Pg2Nes/s640/Web_Cache_Manipulation.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2umBTn2Uaz7gzStpmn6K05I6jg8DxI-pgtAxOrQXP8ZUtBvX5fRjafNsx1fzVc4ljGz7qRZqCq3-OLiwnirZBSRFi2aciqDdtTeR4jJZ5KDcHud9ooG4a09xx3EHM7lbzYHpL-Pg2Nes/s1600/Web_Cache_Manipulation.png)
+[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2umBTn2Uaz7gzStpmn6K05I6jg8DxI-pgtAxOrQXP8ZUtBvX5fRjafNsx1fzVc4ljGz7qRZqCq3-OLiwnirZBSRFi2aciqDdtTeR4jJZ5KDcHud9ooG4a09xx3EHM7lbzYHpL-Pg2Nes/s1600/Web_Cache_Manipulation.png)
 
 ## An anecdote
 

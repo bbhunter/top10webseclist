@@ -81,7 +81,7 @@ Researcher
 
 -
 
-![](https://portswigger.net/cms/images/f4/49/e20e-article-article.png)
+!
 
 **I discovered how to use CSS to steal attribute data without selectors and stylesheet imports! This means you can now exploit CSS injection via style attributes! Learn how below:**
 
@@ -121,5 +121,3 @@ Here is the code used in the video:
  [ CSS ](https://portswigger.net/research/css) [ CSS injection ](https://portswigger.net/research/css-injection) [ Exfiltration ](https://portswigger.net/research/exfiltration)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

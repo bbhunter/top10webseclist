@@ -135,7 +135,7 @@ All the ORM Leak attacks discussed in our [plORMbing your Django ORM blog articl
 
 However, earlier this year we decided to see how quickly we could discover an ORM Leak vulnerability in a large open-source project, and we came across this code snippet in [Harbor](https://github.com/goharbor/harbor) in under 20 minutes.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28aac3d2592af06b37628_69b9896e543298a60368e704_harbor-sourcegraph.avif)
+!
 
 ### Harbor CVE-2025-30086 - Initial Vulnerability
 
@@ -207,7 +207,7 @@ func setFilters(ctx context.Context, qs orm.QuerySeter, query *q.Query, meta *me
 
 For example, the `q` URL parameter for `GET /api/v2.0/users?q=email=~elttam.com` would be parsed as the `email__icontains` filter expression for the Beego ORM, returning all users whose email addresses contain `elttam.com`. However, there were no protections to prevent users from filtering on sensitive attributes such as `password` or `salt`.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28aac3d2592af06b37624_69b874da6ff3790e9c10922b_harbor-0.gif)
+!
 
 Oddly, Harbor did not use the relational features of the ORM and instead relied on custom SQL for applying table joins in specific cases. This inadvertently reduced the exploitability of the ORM Leak vulnerability, as we could not use relational filtering techniques on endpoints accessible to low‑privileged or unauthenticated users. Exploitation required sufficient permissions to list other users.
 
@@ -275,7 +275,7 @@ We did, however, notice an interesting quirk in how the Beego ORM parses non-rel
 
 In practice, this means the filter expression `email__password__startswith` is equivalent to `password__startswith` when using the Beego ORM, which conveniently bypasses Harbor’s deny-list patch.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28aac3d2592af06b37621_69b874da6ff3790e9c109227_harbor-1.gif)
+!
 
 ### Harbor CVE-2025-30086 - Bypassing Filter Expression Limitations
 
@@ -346,7 +346,7 @@ func setFilters(ctx context.Context, qs orm.QuerySeter, query *q.Query, meta *me
 
 Using this, Harbor’s second patch was bypassed by leveraging the *fuzzy match* value format with the `email__password` filter expression. However, the case sensitivity of the `salt` field was lost due to the use of the `__icontains` Beego operator.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28aac3d2592af06b3761e_69b874da6ff3790e9c10921b_harbor-2.gif)
+!
 
 ### Harbor CVE-2025-30086 - The Final Patch
 
@@ -439,11 +439,11 @@ Ignoring the insecure [non-constant time comparison](https://portswigger.net/res
 
 In this case the `resetToken` value in the JSON request can be manipulated into an **object** that injects a Prisma operator. In the following example, this bypasses the reset token validation by injecting the **`not`** condition, which is conceptually similar to [NoSQL injection](https://portswigger.net/web-security/nosql-injection).
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28aac3d2592af06b37613_69b9896e543298a60368e701_prisma-auth-bypass0.avif)
+!
 
 Another useful operator for bypassing authentication checks in Prisma is `contains`, particularly when you want to avoid compromising the first user in the users table.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28aac3d2592af06b37610_69b9896e543298a60368e6fb_prisma-auth-bypass1.avif)
+!
 
 JSON request bodies are not the only way to coerce user input into an object type in ExpressJS (one of the most common frameworks we see used with Prisma).
 
@@ -600,7 +600,7 @@ modelBuilder.EntitySet<Article>('Articles');
 
 The EDM can then be retrieved from the `/$metadata` endpoint. In our example application, the **`User` model was automatically included in the EDM due to its association with the `Article` model, even though it was not explicitly added**.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28aac3d2592af06b3762e_69b9896e543298a60368e707_odata-edm.avif)
+!
 
 This is a common issue with OData APIs, where sensitive fields can be inadvertently included in the EDM and potentially exposed via an OData query endpoint using the `$expand` option.
 
@@ -640,7 +640,7 @@ namespace ODataLeakDemo.Controllers
 
 *Using the `$expand` option to leak the `CreatedBy` association.*
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28aac3d2592af06b37616_69b9896e543298a60368e6fe_odata-expand.avif)
+!
 
 The [best practice for sensitive fields is to exclude the field from the EDM using the `IgnoreDataMember` annotation](https://learn.microsoft.com/en-us/odata/webapi/odata-security#edm-security).However, this is a deny list approach that could result in the developer not adding the `IgnoreDataMember` annotation for a sensitive field or the developer not being aware of the `IgnoreDataMember` annotation, which is what we observed during an engagement.
 
@@ -667,7 +667,7 @@ The first protection was easily bypassed, as we could still write OData filter e
 
 To work around this, we used [logical operators](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html#sec_LogicalOperators) that were not disabled to perform comparisons based on the **database collation** (discussed in the next section) between a sensitive field and a string we controlled, allowing us to leak the full value.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28aac3d2592af06b3762b_69b874da6ff3790e9c109221_odata-leak-logical.gif)
+!
 
 ### Key Takeaways
 
@@ -726,7 +726,7 @@ SortedString
 
 *Using the `SQL_Latin1_General_CP1_CI_AS` sorted string in a logical operator ORM Leaks attack.*
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28aac3d2592af06b3761b_69b874da6ff3790e9c10921e_odata-logical-password.gif)
+!
 
 Below is a list of SQL collations, along with example queries for sorting characters and their corresponding outputs, to help readers determine character ordering for some of the most popular databases and collations:
 
@@ -1079,221 +1079,77 @@ While SQL injection was once one of the most prevalent vulnerability classes, it
 
 We look forward to seeing further research into ORM Leak vulnerabilities and, of course, more cinematic proof-of-concept demonstrations of sensitive data being exfiltrated.
 
-[
+[Cruising for Shells in Flowise](https://www.elttam.com/blog/cruising-for-shells-in-flowise)
 
-Cruising for Shells in Flowise
+[Your House Has an FFmpeg Problem](https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem)
 
-](https://www.elttam.com/blog/cruising-for-shells-in-flowise)
+[Exploiting Auth0 Defaults in XSS Attacks](https://www.elttam.com/blog/exploiting-auth0-defaults-in-xss-attacks)
 
-[
+[Jupyter Enterprise Gateway](https://www.elttam.com/blog/jupyter-enterprise-gateway)
 
-Your House Has an FFmpeg Problem
+[Golang code review notes II](https://www.elttam.com/blog/golang-code-review-notes-ii)
 
-](https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem)
+[ORM Leaking More Than You Joined For](https://www.elttam.com/blog/leaking-more-than-you-joined-for)
 
-[
+[Gotchas in Email Parsing - Lessons From Jakarta Mail](https://www.elttam.com/blog/jakarta-mail-primitives)
 
-Exploiting Auth0 Defaults in XSS Attacks
+[New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails](https://www.elttam.com/blog/rails-sqlite-gadget-rce)
 
-](https://www.elttam.com/blog/exploiting-auth0-defaults-in-xss-attacks)
+[A Monocle on Chronicles](https://www.elttam.com/blog/monocle-on-chronicles)
 
-[
+[DUCTF 2024 ESPecially Secure Boot Writeup](https://www.elttam.com/blog/ductf24-especially-secure-boot)
 
-Jupyter Enterprise Gateway
+[plORMbing your Prisma ORM with Time-based Attacks](https://www.elttam.com/blog/plorming-your-primsa-orm)
 
-](https://www.elttam.com/blog/jupyter-enterprise-gateway)
+[plORMbing your Django ORM](https://www.elttam.com/blog/plormbing-your-django-orm)
 
-[
+[Keeping up with the Pwnses](https://www.elttam.com/blog/talkback-intro)
 
-Golang code review notes II
+[Exploring the STSAFE-A110](https://www.elttam.com/blog/stsafe-a110)
 
-](https://www.elttam.com/blog/golang-code-review-notes-ii)
+[RE of LR3](https://www.elttam.com/blog/re-of-lr3)
 
-[
+[Abusing Amazon VPC CNI plugin for Kubernetes](https://www.elttam.com/blog/amazon-vpc-cni)
 
-ORM Leaking More Than You Joined For
+[PwnAssistant - Controlling /home's via a Home Assistant RCE](https://www.elttam.com/blog/pwnassistant)
 
-](https://www.elttam.com/blog/leaking-more-than-you-joined-for)
+[Cracking the Odd Case of Randomness in Java](https://www.elttam.com/blog/cracking-randomness-in-java)
 
-[
+[Golang code review notes](https://www.elttam.com/blog/golang-codereview)
 
-Gotchas in Email Parsing - Lessons From Jakarta Mail
+[ESP-IDF setup guide](https://www.elttam.com/blog/esp-idf-setup-guide)
 
-](https://www.elttam.com/blog/jakarta-mail-primitives)
+[Tuya IoT and EZ Mode Pairing](https://www.elttam.com/blog/ez-mode-pairing)
 
-[
+[Attacks on GCM with Repeated Nonces](https://www.elttam.com/blog/key-recovery-attacks-on-gcm)
 
-New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails
+[Simple Bugs With Complex Exploits](https://www.elttam.com/blog/simple-bugs-with-complex-exploits)
 
-](https://www.elttam.com/blog/rails-sqlite-gadget-rce)
+[Lua SUID Shells](https://www.elttam.com/blog/lua-suid-shells)
 
-[
+[Hacking with Environment Variables](https://www.elttam.com/blog/env)
 
-A Monocle on Chronicles
+[Are you winning if you're pinning?](https://www.elttam.com/blog/certpinning)
 
-](https://www.elttam.com/blog/monocle-on-chronicles)
+[Ruby 2.x Universal RCE Deserialization Gadget Chain](https://www.elttam.com/blog/ruby-deserialization)
 
-[
+[Fuze Multi-Card Technology Security Review](https://www.elttam.com/blog/fuzereview)
 
-DUCTF 2024 ESPecially Secure Boot Writeup
+[Remote LD_PRELOAD Exploitation](https://www.elttam.com/blog/goahead)
 
-](https://www.elttam.com/blog/ductf24-especially-secure-boot)
+[Building Hardened Docker Images from Scratch with Kubler](https://www.elttam.com/blog/kubler)
 
-[
+[Intro to SDR and RF Signal Analysis](https://www.elttam.com/blog/intro-sdr-and-rf-analysis)
 
-plORMbing your Prisma ORM with Time-based Attacks
+[Playing with canaries](https://www.elttam.com/blog/playing-with-canaries)
 
-](https://www.elttam.com/blog/plorming-your-primsa-orm)
+[EFF secure messaging scorecard review](https://www.elttam.com/blog/a-review-of-the-eff-secure-messaging-scorecard-pt2)
 
-[
+[Vuln research on the WAG54G home router](https://www.elttam.com/blog/vuln-research-on-the-wag54g-home-router)
 
-plORMbing your Django ORM
+[A review of the EFF secure messaging scorecard...](https://www.elttam.com/blog/a-review-of-the-eff-secure-messaging-scorecard-pt1)
 
-](https://www.elttam.com/blog/plormbing-your-django-orm)
-
-[
-
-Keeping up with the Pwnses
-
-](https://www.elttam.com/blog/talkback-intro)
-
-[
-
-Exploring the STSAFE-A110
-
-](https://www.elttam.com/blog/stsafe-a110)
-
-[
-
-RE of LR3
-
-](https://www.elttam.com/blog/re-of-lr3)
-
-[
-
-Abusing Amazon VPC CNI plugin for Kubernetes
-
-](https://www.elttam.com/blog/amazon-vpc-cni)
-
-[
-
-PwnAssistant - Controlling /home's via a Home Assistant RCE
-
-](https://www.elttam.com/blog/pwnassistant)
-
-[
-
-Cracking the Odd Case of Randomness in Java
-
-](https://www.elttam.com/blog/cracking-randomness-in-java)
-
-[
-
-Golang code review notes
-
-](https://www.elttam.com/blog/golang-codereview)
-
-[
-
-ESP-IDF setup guide
-
-](https://www.elttam.com/blog/esp-idf-setup-guide)
-
-[
-
-Tuya IoT and EZ Mode Pairing
-
-](https://www.elttam.com/blog/ez-mode-pairing)
-
-[
-
-Attacks on GCM with Repeated Nonces
-
-](https://www.elttam.com/blog/key-recovery-attacks-on-gcm)
-
-[
-
-Simple Bugs With Complex Exploits
-
-](https://www.elttam.com/blog/simple-bugs-with-complex-exploits)
-
-[
-
-Lua SUID Shells
-
-](https://www.elttam.com/blog/lua-suid-shells)
-
-[
-
-Hacking with Environment Variables
-
-](https://www.elttam.com/blog/env)
-
-[
-
-Are you winning if you're pinning?
-
-](https://www.elttam.com/blog/certpinning)
-
-[
-
-Ruby 2.x Universal RCE Deserialization Gadget Chain
-
-](https://www.elttam.com/blog/ruby-deserialization)
-
-[
-
-Fuze Multi-Card Technology Security Review
-
-](https://www.elttam.com/blog/fuzereview)
-
-[
-
-Remote LD_PRELOAD Exploitation
-
-](https://www.elttam.com/blog/goahead)
-
-[
-
-Building Hardened Docker Images from Scratch with Kubler
-
-](https://www.elttam.com/blog/kubler)
-
-[
-
-Intro to SDR and RF Signal Analysis
-
-](https://www.elttam.com/blog/intro-sdr-and-rf-analysis)
-
-[
-
-Playing with canaries
-
-](https://www.elttam.com/blog/playing-with-canaries)
-
-[
-
-EFF secure messaging scorecard review
-
-](https://www.elttam.com/blog/a-review-of-the-eff-secure-messaging-scorecard-pt2)
-
-[
-
-Vuln research on the WAG54G home router
-
-](https://www.elttam.com/blog/vuln-research-on-the-wag54g-home-router)
-
-[
-
-A review of the EFF secure messaging scorecard...
-
-](https://www.elttam.com/blog/a-review-of-the-eff-secure-messaging-scorecard-pt1)
-
-[
-
-Gaining console access to the WAG54G home router
-
-](https://www.elttam.com/blog/gaining-console-access-to-the-wag54g-home-router)
+[Gaining console access to the WAG54G home router](https://www.elttam.com/blog/gaining-console-access-to-the-wag54g-home-router)
 
 [
 

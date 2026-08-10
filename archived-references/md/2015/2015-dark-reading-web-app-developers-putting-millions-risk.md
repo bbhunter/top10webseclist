@@ -68,8 +68,6 @@ page going offline. To read the original, follow the link above.
 
 June 4, 2015
 
-4 Min Read
-
 ![Dark Reading logo in a gray background | Dark Reading](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltc94608acf452fd67/655cf371ab171e040a838b2a/329050_DR23_Graphics_Website_V5_Default_Image_v1.png?width=1280&auto=webp&quality=80&disable=upscale)
 
 A troubling failure by many web application developers to properly secure how their apps connect to mobile backend-as-a-service systems like Facebook’s Parse and Amazon’s AWS could be leaving sensitive information on millions of Internet users vulnerable to compromise.
@@ -106,11 +104,7 @@ Meanwhile, developers themselves should follow the security documentation provid
 
 [![Jai Vijayan](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt1a674355ce57f27b/64f14f228727730c7f926217/Jai-Vijayan.jpeg?width=400&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/author/jai-vijayan)
 
-[
-
-Jai Vijayan
-
-](https://www.darkreading.com/author/jai-vijayan)
+[Jai Vijayan](https://www.darkreading.com/author/jai-vijayan)
 
 Contributing Writer
 

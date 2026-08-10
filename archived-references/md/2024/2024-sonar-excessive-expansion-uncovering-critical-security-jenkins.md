@@ -98,7 +98,7 @@ In this section of the blog, we will explore our findings taking a deeper dive i
 
 Jenkins provides multiple ways of authorization, the unsafe *“anyone can do anything”*, the “*legacy”* permissions, and “*logged-in users can do anything”*. The latter authorization method allows the option for anonymous read access and gives read permission to anyone, which is also the case in the *legacy* mode.
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/f98e4284-d45d-4708-88c3-be85efa76b45/Anonymous_example.png)
+!
 
 On top of that, there is also the not recommended option to *“Allow users to sign up”,* which makes everyone at least read-only capable.
 
@@ -176,7 +176,7 @@ private String[] expandAtFiles(String args[]) throws CmdLineException {
 
 The function checks if the argument starts with the @ character, and if so, it reads the file in the path after the @ and expands a new argument for each line.
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/9bbe4ad4-49bc-46c9-aea2-7677372913fe/ExpandAtFile_graph.png)
+!
 
 This means that if an attacker can control an argument, they can expand it to an arbitrary number of ones from an arbitrary file on the Jenkins instance.
 
@@ -296,7 +296,5 @@ Stay up-to-date with the latest Sonar content. Subscribe now to receive the late
  Email
 
 Choosing to proceed means that you agree to the storing and processing of your personal data as described in SonarSource’s [Cookie Policy](https://www.sonarsource.com/company/cookie-policy/). You can opt out of SonarSource communications at anytime.
-
-Sign up
 
 Sonar respects your privacy. Choosing to proceed means that you agree to the SonarSource’s [Privacy Policy](https://www.sonarsource.com/company/privacy/).

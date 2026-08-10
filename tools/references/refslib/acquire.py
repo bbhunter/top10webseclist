@@ -331,8 +331,9 @@ def acquire(key, entry, store, fetcher, config, taken_slugs=(), refetch=False,
     # Dead link syntax goes AFTER the edge trim: a trailing navigation panel is
     # recognised by its `](url)` fragments, and clearing them first would leave
     # the panel behind as prose.
+    trimmed, tidied = boilerplate.tidy_links(trimmed)
     trimmed, dead = boilerplate.drop_dead_links(trimmed)
-    furniture = sorted(set(furniture) | set(dead))
+    furniture = sorted(set(furniture) | set(tidied) | set(dead))
     body = sanitise.sanitise_text(trimmed)
     facts = meta.read(markup, final_url)
     title = facts["title"] or _title_from(chosen.markdown) or url
@@ -800,8 +801,9 @@ def _html_document(key, url, entry, kind, raw, raw_sha, retrieved_kind, final_ur
     # Dead link syntax goes AFTER the edge trim: a trailing navigation panel is
     # recognised by its `](url)` fragments, and clearing them first would leave
     # the panel behind as prose.
+    trimmed, tidied = boilerplate.tidy_links(trimmed)
     trimmed, dead = boilerplate.drop_dead_links(trimmed)
-    furniture = sorted(set(furniture) | set(dead))
+    furniture = sorted(set(furniture) | set(tidied) | set(dead))
     body = sanitise.sanitise_text(trimmed)
     content_sha = store.put_text(body.text)
     facts = meta.read(markup, final_url)

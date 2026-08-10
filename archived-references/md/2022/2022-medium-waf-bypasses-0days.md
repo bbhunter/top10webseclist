@@ -70,37 +70,9 @@ Hacking
 
 ## based on findings from a live hacking event
 
-[
-
-![terjanq](https://miro.medium.com/v2/resize:fill:64:64/1*5t2zsHKSKPB_AMJbt0V6WA.png)
-
-](https://terjanq.medium.com/?source=post_page---byline--d4ef1f212ec---------------------------------------)
+[![terjanq](https://miro.medium.com/v2/resize:fill:64:64/1*5t2zsHKSKPB_AMJbt0V6WA.png)](https://terjanq.medium.com/?source=post_page---byline--d4ef1f212ec---------------------------------------)
 
 [terjanq](https://terjanq.medium.com/?source=post_page---byline--d4ef1f212ec---------------------------------------)
-
-4 min readSep 23, 2022
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2Fd4ef1f212ec&operation=register&redirect=https%3A%2F%2Fterjanq.medium.com%2Fwaf-bypasses-via-0days-d4ef1f212ec&user=terjanq&userId=d404867d06bd&source=---header_actions--d4ef1f212ec---------------------clap_footer------------------)
-
---
-
-1
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2Fd4ef1f212ec&operation=register&redirect=https%3A%2F%2Fterjanq.medium.com%2Fwaf-bypasses-via-0days-d4ef1f212ec&user=terjanq&userId=d404867d06bd&source=---header_actions--d4ef1f212ec---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fd4ef1f212ec&operation=register&redirect=https%3A%2F%2Fterjanq.medium.com%2Fwaf-bypasses-via-0days-d4ef1f212ec&source=---header_actions--d4ef1f212ec---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3Dd4ef1f212ec&operation=register&redirect=https%3A%2F%2Fterjanq.medium.com%2Fwaf-bypasses-via-0days-d4ef1f212ec&source=---header_actions--d4ef1f212ec---------------------post_audio_button------------------)
-
-Share
 
 In May, I participated in [1337up0522](https://twitter.com/hashtag/1337up0522) from Intigriti which was about hacking OWASP ModSecurity Core Rule Set (CRS). I’ve got 13 findings accepted including 3 exceptional, 2 critical, and 8 high severity vulnerabilities.
 

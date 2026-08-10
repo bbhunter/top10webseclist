@@ -272,7 +272,7 @@ Or similarly:
 
 It is always good to get something back:
 
-![](https://www.mdsec.co.uk/wp-content/uploads/2020/03/collab.png)
+!
 
 ## Conclusions and Future Work
 

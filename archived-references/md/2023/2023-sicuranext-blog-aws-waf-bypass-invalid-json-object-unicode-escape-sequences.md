@@ -140,23 +140,23 @@ In JavaScript, the `JSON.parse()` function is used to parse JSON data. When conf
 
 In many cases, AWS WAF rules are created with the default behavior on the invalid JSON handler. By taking advantage of the default settings, an attacker can bypass a rule by **sending the same JSON parameter key name twice**, each time including different values, one harmless and one containing an attack payload.
 
-![](https://blog.sicuranext.com/content/images/2023/07/image.png)
+!
 
 let's try creating a rule that checks if the string "etc/passwd" is inside any value of the JSON request body.
 
-![](https://blog.sicuranext.com/content/images/2023/07/image-1.png)
+!
 
 so, basically here we’re saying “*if any value of the JSON request body contains the string etc/passwd then block the request with a 403 status code*“.
 
 Now, sending a request with a JSON body that contains a RCE or LFI targeting the etc/passwd file, will results in a block:
 
-![](https://blog.sicuranext.com/content/images/2023/07/image-2.png)
+!
 
 *request blocked by AWS WAF*
 
 Given we selected the default behavior on invalid JSON body handler, we can bypass this block just by sending two “cmd” keys:
 
-![](https://blog.sicuranext.com/content/images/2023/07/image-3.png)
+!
 
 *rule bypass*
 
@@ -170,37 +170,37 @@ To address this vulnerability using virtual patching, **a WAF can be configured 
 
 **Doing so with AWS WAF is a bit tricky**. You need to have 2 statements: the first one checks if the “id” parameter length is greater than 0, and the second statement checks if the value of the “id” parameter contains only characters from 0 to 9.
 
-![](https://blog.sicuranext.com/content/images/2023/07/image-4.png)
+!
 
-![](https://blog.sicuranext.com/content/images/2023/07/image-5.png)
+!
 
 In this first statement we’re saying: *“if a request JSON contains the key ‘id’ and the size of the value of this key is greater than 0 then do something…”*. Also, as you can see in the screenshot above, we must specify the JSON key to inspect using a JSON Pointer. For example: given this JSON `{"foo": {"bar":{"id":1}}}` to inspect only the “id” value we should configure the following JSON Pointer `/foo/bar/id`.
 
 Now, the second statement:
 
-![](https://blog.sicuranext.com/content/images/2023/07/image-6.png)
+!
 
-![](https://blog.sicuranext.com/content/images/2023/07/image-7.png)
+!
 
 In this statement we’re saying: *“if the JSON parameter ‘id’ value does not contains only numeric characters, then block the request with a 403 status code”*.
 
 This rule seems works well, as you can see here:
 
-![](https://blog.sicuranext.com/content/images/2023/07/image-8.png)
+!
 
 And if I try to inject SQL syntax in the value:
 
-![](https://blog.sicuranext.com/content/images/2023/07/image-9.png)
+!
 
 *request blocked by AWS WAF*
 
 AWS WAF, in its current implementation, **does not decode escape sequences inside JSON keys** when matching a given JSON Pointer of a rule. This behavior can be exploited to bypass rules that specifically target the value of a parameter, such as the “id” parameter. By replacing any character of the key with a Unicode escape sequence, an attacker can effectively evade the rule and potentially pass malicious content undetected.
 
-![](https://blog.sicuranext.com/content/images/2023/07/image-10.png)
+!
 
 So, in our example I can easily bypass my rule by replacing the “i” character of the “id” JSON key with the unicode escape sequence `\u0069`:
 
-![](https://blog.sicuranext.com/content/images/2023/07/image-11.png)
+!
 
 *rule bypass*
 
@@ -210,23 +210,23 @@ ModSecurity is a powerful open-source web application firewall (WAF) module that
 
 In this case, ModSecurity is able to decode Unicode escape sequences within JSON keys before matching any rules. Let do an example rule and check if it works as expected.
 
-![](https://blog.sicuranext.com/content/images/2023/07/image-16.png)
+!
 
 *a ModSecurity WAF Rule*
 
 In the rule above we’re configuring ModSecurity to check if the parameter “id” doesn’t contains only numeric characters in its value. If this is true, then block the request with a 403 response status code.
 
-![](https://blog.sicuranext.com/content/images/2023/07/image-17.png)
+!
 
 *ModSecurity Rule with notes*
 
-![](https://blog.sicuranext.com/content/images/2023/07/image-13.png)
+!
 
 *request blocked by ModSecurity Rule*
 
 Even if I try to replace some characters with an unicode escape sequence (as done before), ModSecurity blocks my request:
 
-![](https://blog.sicuranext.com/content/images/2023/07/image-14.png)
+!
 
 *can't bypass ModSecurity Rule*
 
@@ -244,7 +244,7 @@ Based on my experience, when it comes to virtual patching, ModSecurity offers a 
 
 Within AWS WAF, there is a managed rule group called Core rule set (CRS), which **may cause some confusion due to its similarity to the well-known OWASP Core Rule Set (CRS) project**. However, it’s important to note that the AWS WAF Core Rule Set is distinct from the OWASP CRS in terms of its scope and number of rules.
 
-![](https://blog.sicuranext.com/content/images/2023/07/image-15.png)
+!
 
 The AWS WAF “Core rule set” comprises a modest collection of 22 rules specifically designed to address common security threats and vulnerabilities. While this rule set provides a basic level of protection, it is significantly smaller in scale compared to the extensive OWASP CRS, which consists of more than 500 rules grouped into over 10 categories of attacks.
 
@@ -252,29 +252,9 @@ You can find more information about the OWASP Core Rule Set project at the websi
 
 ## ¹ Other AWS WAF Bypass Techniques
 
-[
+[AWS WAF Clients Left Vulnerable to SQL Injection Due to Unorthodox MSSQL Design Choice - GoSecure While doing research on Microsoft SQL (MSSQL) Server, GoSecure ethical hackers found an unorthodox design choice that ultimately led to a WAF bypass. !GoSecureMarc Olivier Bergeron !](https://www.gosecure.net/blog/2023/06/21/aws-waf-clients-left-vulnerable-to-sql-injection-due-to-unorthodox-mssql-design-choice/?ref=blog.sicuranext.com)
 
-AWS WAF Clients Left Vulnerable to SQL Injection Due to Unorthodox MSSQL Design Choice - GoSecure
-
-While doing research on Microsoft SQL (MSSQL) Server, GoSecure ethical hackers found an unorthodox design choice that ultimately led to a WAF bypass.
-
-![](https://www.gosecure.net/wp-content/uploads/2019/10/cropped-favicon-270x270.png)GoSecureMarc Olivier Bergeron
-
-![](https://www.gosecure.net/wp-content/uploads/1-sql-server.png)
-
-](https://www.gosecure.net/blog/2023/06/21/aws-waf-clients-left-vulnerable-to-sql-injection-due-to-unorthodox-mssql-design-choice/?ref=blog.sicuranext.com)
-
-[
-
-Bypassing the AWS WAF protection with an 8KB bullet — Kloudle Website
-
-The AWS WAF and Shield service can be used to protect web applications against a lot of different types of attacks. However, it has a limitation on the size of the packet that it can inspect that could result in attackers being able to bypass its protection features.
-
-![](https://kloudle.com/apple-touch-icon.png)Akash Mahajan - Founder CEO Kloudle
-
-![](https://uploads-ssl.webflow.com/610cc7a5a58576a806711235/61fd02026e3eb5846fff5515_Option2%20(1).png)
-
-](https://kloudle.com/blog/the-infamous-8kb-aws-waf-request-body-inspection-limitation/?ref=blog.sicuranext.com)
+[Bypassing the AWS WAF protection with an 8KB bullet — Kloudle Website The AWS WAF and Shield service can be used to protect web applications against a lot of different types of attacks. However, it has a limitation on the size of the packet that it can inspect that could result in attackers being able to bypass its protection features. !Akash Mahajan - Founder CEO Kloudle !.png)](https://kloudle.com/blog/the-infamous-8kb-aws-waf-request-body-inspection-limitation/?ref=blog.sicuranext.com)
 
 ## Follow Andrea Menin:
 

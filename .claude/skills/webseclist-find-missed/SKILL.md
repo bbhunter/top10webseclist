@@ -247,7 +247,7 @@ If a sweep turns up a **faulty capture** in the reference archive (a file the
 manifest advertises but the tree lacks, a capture of the wrong page, a junk
 render), file it per the repository rule: set `content_gap` on the entry in
 `archived-references/manifest.json` and re-run `python tools/references/refs.py index`.
-Do not edit `archived-references/needs-work.md` by hand.
+Do not edit `archived-references/document-gaps.md` by hand.
 
 ## What this skill does not do
 

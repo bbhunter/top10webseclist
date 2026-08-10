@@ -40,12 +40,12 @@ class RecoverySelectorTests(unittest.TestCase):
         self.assertTrue(parser.parse_args(["acquire", "--missing-store"]).missing_store)
         self.assertTrue(parser.parse_args(["acquire", "--browser-dom"]).browser_dom)
         acquired = parser.parse_args(
-            ["acquire", "--faulty-captures", "--wayback-capture", "--needs-work",
+            ["acquire", "--faulty-captures", "--wayback-capture", "--document-gaps",
              "--linked-document-url", "https://authors.example/paper.pdf",
              "--also-at", "https://authors.example/code"])
         self.assertTrue(acquired.faulty_captures)
         self.assertTrue(acquired.wayback_capture)
-        self.assertTrue(acquired.needs_work)
+        self.assertTrue(acquired.document_gaps)
         self.assertEqual("https://authors.example/paper.pdf",
                          acquired.linked_document_url)
         self.assertEqual(["https://authors.example/code"], acquired.also_at)

@@ -81,5 +81,3 @@ In Chrome, go to your Settings, click Advanced, then make sure the top box here 
 [![Genesis theme framework](https://web.archive.org/web/20131024113504im_/http://cdn.yoast.com/wp-content/themes/yoast-v4/images/genesis-logo.png)](https://web.archive.org/web/20131024113504/http://yoast.com/out/studiopress/)The [Genesis Framework](https://web.archive.org/web/20131024113504/http://yoast.com/out/studiopress/) empowers you to quickly and easily build incredible websites with WordPress. Whether you're a novice or advanced developer, Genesis provides you with the secure and search-engine-optimized foundation that takes WordPress to places you never thought it could go.
 
 Read our [Genesis review](https://web.archive.org/web/20131024113504/http://yoast.com/review/genesis/) or [get Genesis now!](https://web.archive.org/web/20131024113504/http://yoast.com/out/studiopress/)
-
-### 8 Responses

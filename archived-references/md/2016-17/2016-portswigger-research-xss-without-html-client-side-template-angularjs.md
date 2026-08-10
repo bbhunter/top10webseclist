@@ -516,5 +516,3 @@ Please visit the [web academy AngularJS lab](https://portswigger.net/web-securit
  [ Cross Site Scripting ](https://portswigger.net/research/cross-site-scripting) [ JavaScript ](https://portswigger.net/research/javascript) [ Template Injection ](https://portswigger.net/research/template-injection) [ angularjs ](https://portswigger.net/research/angularjs) [ sandbox ](https://portswigger.net/research/sandbox) [ Gareth Favourites ](https://portswigger.net/research/gareth-heyes)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

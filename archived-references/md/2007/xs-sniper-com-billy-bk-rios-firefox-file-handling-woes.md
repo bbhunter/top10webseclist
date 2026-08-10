@@ -67,7 +67,7 @@ Saturday, September 1st, 2007
 
 ### [Firefox File Handling Woes](http://xs-sniper.com/blog/2007/09/01/firefox-file-handling-woes/)
 
-[](http://xs-sniper.com/blog/wp-content/uploads/2007/09/file-handling.jpg)It seems recent [***URI remote command execution bugs*** ](http://xs-sniper.com/blog/remote-command-exec-firefox-2005/)in Firefox have long been forgotten. Mozilla put out a patch in a lighting fast manner, probably spurring on bravado like the [***“10 Fucking Days!”*** ](http://ha.ckers.org/blog/20070803/mozilla-says-ten-fucking-days/)claim overheard at Black hat USA. Let’s take a closer look at the vulnerability, starting with an interesting piece of the description provided in ***[MFSA2007-27](http://www.mozilla.org/security/announce/2007/mfsa2007-27.html)***:
+It seems recent [***URI remote command execution bugs*** ](http://xs-sniper.com/blog/remote-command-exec-firefox-2005/)in Firefox have long been forgotten. Mozilla put out a patch in a lighting fast manner, probably spurring on bravado like the [***“10 Fucking Days!”*** ](http://ha.ckers.org/blog/20070803/mozilla-says-ten-fucking-days/)claim overheard at Black hat USA. Let’s take a closer look at the vulnerability, starting with an interesting piece of the description provided in ***[MFSA2007-27](http://www.mozilla.org/security/announce/2007/mfsa2007-27.html)***:
 
 >
 
@@ -77,7 +77,7 @@ Saturday, September 1st, 2007
 
  We contacted Mozilla a while ago about the issue and they are working on it. We’re going to refrain from giving out the exact details of how this particular issue is executed (based mainly on the efforts and conversations we’ve had with Jesse Ruderman), but we’ll include a screenshot of a payload in action. In the screenshot below, we use the mailto URI, which passes the URI to the Windows File Handler, which calls the appropriate program (in this case Windows Scripting Host), which in turn calls our attacker controlled file. We’ve purposely pointed the Windows Scripting Host to a file that doesn’t exist as the error message allows the user to see that WSH is using the URI passed from Firefox.
 
-[](http://xs-sniper.com/blog/wp-content/uploads/2007/09/file-handling-issues.jpg)[](http://xs-sniper.com/blog/wp-content/uploads/2007/09/file-handling.jpg)![uh-oh](http://xs-sniper.com/blog/wp-content/uploads/2007/09/file-handling.jpg)[](http://xs-sniper.com/blog/wp-content/uploads/2007/09/windows-scripting-host.jpg)
+![uh-oh](http://xs-sniper.com/blog/wp-content/uploads/2007/09/file-handling.jpg)
 
 Posted by xssniper | Filed in [Security](http://xs-sniper.com/blog/category/security/)
 

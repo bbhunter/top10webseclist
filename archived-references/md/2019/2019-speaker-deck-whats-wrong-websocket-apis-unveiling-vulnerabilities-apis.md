@@ -78,11 +78,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
  [ See All by Mikhail Egorov ](https://speakerdeck.com/0ang3el)
 
- [
-
- A Hacker's perspective on AEM applications security
-
- ](https://speakerdeck.com/0ang3el/a-hackers-perspective-on-aem-applications-security)
+ [A Hacker's perspective on AEM applications security](https://speakerdeck.com/0ang3el/a-hackers-perspective-on-aem-applications-security)
 
  [ ![Avatar for Mikhail Egorov](https://secure.gravatar.com/avatar/0e97d20ff87bf33851da8cadb86affa9?s=24) 0ang3el ](https://speakerdeck.com/0ang3el)
 
@@ -90,11 +86,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   4.1k
 
- [
-
- Securing AEM webapps by hacking them
-
- ](https://speakerdeck.com/0ang3el/securing-aem-webapps-by-hacking-them)
+ [Securing AEM webapps by hacking them](https://speakerdeck.com/0ang3el/securing-aem-webapps-by-hacking-them)
 
  [ ![Avatar for Mikhail Egorov](https://secure.gravatar.com/avatar/0e97d20ff87bf33851da8cadb86affa9?s=24) 0ang3el ](https://speakerdeck.com/0ang3el)
 
@@ -102,11 +94,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   1.7k
 
- [
-
- AEM hacker approaching Adobe Experience Manager webapps in bug bounty programs
-
- ](https://speakerdeck.com/0ang3el/aem-hacker-approaching-adobe-experience-manager-webapps-in-bug-bounty-programs)
+ [AEM hacker approaching Adobe Experience Manager webapps in bug bounty programs](https://speakerdeck.com/0ang3el/aem-hacker-approaching-adobe-experience-manager-webapps-in-bug-bounty-programs)
 
  [ ![Avatar for Mikhail Egorov](https://secure.gravatar.com/avatar/0e97d20ff87bf33851da8cadb86affa9?s=24) 0ang3el ](https://speakerdeck.com/0ang3el)
 
@@ -114,11 +102,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   12k
 
- [
-
- Hunting for security bugs in AEM webapps
-
- ](https://speakerdeck.com/0ang3el/hunting-for-security-bugs-in-aem-webapps)
+ [Hunting for security bugs in AEM webapps](https://speakerdeck.com/0ang3el/hunting-for-security-bugs-in-aem-webapps)
 
  [ ![Avatar for Mikhail Egorov](https://secure.gravatar.com/avatar/0e97d20ff87bf33851da8cadb86affa9?s=24) 0ang3el ](https://speakerdeck.com/0ang3el)
 
@@ -126,11 +110,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   37k
 
- [
-
- Neat tricks to bypass CSRF-protection
-
- ](https://speakerdeck.com/0ang3el/neat-tricks-to-bypass-csrf-protection)
+ [Neat tricks to bypass CSRF-protection](https://speakerdeck.com/0ang3el/neat-tricks-to-bypass-csrf-protection)
 
  [ ![Avatar for Mikhail Egorov](https://secure.gravatar.com/avatar/0e97d20ff87bf33851da8cadb86affa9?s=24) 0ang3el ](https://speakerdeck.com/0ang3el)
 
@@ -138,11 +118,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   2.1k
 
- [
-
- CSRF-уязвимости все еще актуальны: как атакующие обходят CSRF-защиту в вашем веб-приложении
-
- ](https://speakerdeck.com/0ang3el/csrf-uiazvimosti-vsie-ieshchie-aktual-ny-kak-atakuiushchiie-obkhodiat-csrf-zashchitu-v-vashiem-vieb-prilozhienii)
+ [CSRF-уязвимости все еще актуальны: как атакующие обходят CSRF-защиту в вашем веб-приложении](https://speakerdeck.com/0ang3el/csrf-uiazvimosti-vsie-ieshchie-aktual-ny-kak-atakuiushchiie-obkhodiat-csrf-zashchitu-v-vashiem-vieb-prilozhienii)
 
  [ ![Avatar for Mikhail Egorov](https://secure.gravatar.com/avatar/0e97d20ff87bf33851da8cadb86affa9?s=24) 0ang3el ](https://speakerdeck.com/0ang3el)
 
@@ -154,11 +130,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
  [ See All in Programming ](https://speakerdeck.com/c/programming)
 
- [
-
- Foundation Models frameworkで画像分析
-
- ](https://speakerdeck.com/ryodeveloper/foundation-models-image-analysis)
+ [Foundation Models frameworkで画像分析](https://speakerdeck.com/ryodeveloper/foundation-models-image-analysis)
 
  [ ![Avatar for リョウ](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDMyNTk0LCJwdXIiOiJibG9iX2lkIn19--806658d7bd2e85f6ff20f7169e291c4ed8ca9d4a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/RyoDeveloper.png) ryodeveloper ](https://speakerdeck.com/ryodeveloper)
 
@@ -166,11 +138,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   570
 
- [
-
- PHP Application における Kubernetes 内 gRPC 通信
-
- ](https://speakerdeck.com/ganchiku/php-application-niokeru-kubernetes-nei-grpc-tong-xin)
+ [PHP Application における Kubernetes 内 gRPC 通信](https://speakerdeck.com/ganchiku/php-application-niokeru-kubernetes-nei-grpc-tong-xin)
 
  [ ![Avatar for Shin Ohno](https://secure.gravatar.com/avatar/9d9d328f9eaf5c5c32df35cdfbf549ac?s=24) ganchiku ](https://speakerdeck.com/ganchiku)
 
@@ -178,11 +146,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   580
 
- [
-
- Built Our Own Background Agent at LayerX
-
- ](https://speakerdeck.com/layerx/built-our-own-background-agent-at-layerx-number-aidevex-findy)
+ [Built Our Own Background Agent at LayerX](https://speakerdeck.com/layerx/built-our-own-background-agent-at-layerx-number-aidevex-findy)
 
  [ ![Avatar for LayerX](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDI1NzEsInB1ciI6ImJsb2JfaWQifX0=--1279d35afed8acdecd4f8bf29a0512e0c5b8aa19/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/icon.png) layerx ](https://speakerdeck.com/layerx)
 
@@ -192,11 +156,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   4.9k
 
- [
-
- Go言語とトイモデルで学ぶTransformerの気持ち / fukuokago23-transformer
-
- ](https://speakerdeck.com/monochromegane/fukuokago23-transformer)
+ [Go言語とトイモデルで学ぶTransformerの気持ち / fukuokago23-transformer](https://speakerdeck.com/monochromegane/fukuokago23-transformer)
 
  [ ![Avatar for monochromegane](https://secure.gravatar.com/avatar/cd3d2cb2dadf5488935fe0ddaea7938a?s=24) monochromegane ](https://speakerdeck.com/monochromegane)
 
@@ -204,11 +164,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   160
 
- [
-
- Welcome to the "Parametricity" 🏙️ − Generic だけど Specific な世界 −
-
- ](https://speakerdeck.com/guvalif/welcome-to-the-parametricity)
+ [Welcome to the "Parametricity" 🏙️ − Generic だけど Specific な世界 −](https://speakerdeck.com/guvalif/welcome-to-the-parametricity)
 
  [ ![Avatar for TAKASE Kazuyuki](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTc4NzE3LCJwdXIiOiJibG9iX2lkIn19--7b7109219815a8815b650ec5121cc3e9a88eac54/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/profile-guvalif-voxel-500x500.png) guvalif ](https://speakerdeck.com/guvalif)
 
@@ -218,11 +174,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   200
 
- [
-
- Apache Hive: Toward a Cloud Native Lakehouse
-
- ](https://speakerdeck.com/okumin/toward-a-cloud-native-lakehouse-english-version)
+ [Apache Hive: Toward a Cloud Native Lakehouse](https://speakerdeck.com/okumin/toward-a-cloud-native-lakehouse-english-version)
 
  [ ![Avatar for okumin](https://secure.gravatar.com/avatar/b2c98a18ec9268bdeff1696873995cd8?s=24) okumin ](https://speakerdeck.com/okumin)
 
@@ -230,11 +182,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   180
 
- [
-
- AWS CDK を「作」ってみた 〜フルスクラッチで見えた CDK の裏側〜 / aws-cdk-from-scratch
-
- ](https://speakerdeck.com/gotok365/aws-cdk-from-scratch)
+ [AWS CDK を「作」ってみた 〜フルスクラッチで見えた CDK の裏側〜 / aws-cdk-from-scratch](https://speakerdeck.com/gotok365/aws-cdk-from-scratch)
 
  [ ![Avatar for k.goto](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzU0NzgsInB1ciI6ImJsb2JfaWQifX0=--1305fec534f79b1ff0cd046e127fc126cdd6c0d3/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/3A2C3113-89AE-44CA-A913-8B9FE98E17B1.jpeg) gotok365 ](https://speakerdeck.com/gotok365)
 
@@ -242,11 +190,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   2.8k
 
- [
-
- React本体のコードリーディング
-
- ](https://speakerdeck.com/high_g_engineer/reactben-ti-nokotoriteinku)
+ [React本体のコードリーディング](https://speakerdeck.com/high_g_engineer/reactben-ti-nokotoriteinku)
 
  [ ![Avatar for high-g](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDkwMjkwLCJwdXIiOiJibG9iX2lkIn19--d377d096416c07913860846ab9b699b161b6581d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/fIfGdy87_400x400.jpg) high_g_engineer ](https://speakerdeck.com/high_g_engineer)
 
@@ -254,11 +198,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   140
 
- [
-
- FDEが実現するAI駆動経営の現在地
-
- ](https://speakerdeck.com/gonta/ai-driven-management-enabled-by-fde)
+ [FDEが実現するAI駆動経営の現在地](https://speakerdeck.com/gonta/ai-driven-management-enabled-by-fde)
 
  [ ![Avatar for ryuta sakamoto](https://secure.gravatar.com/avatar/c48e5a207bf56f0a2c0430eba2338325?s=24) gonta ](https://speakerdeck.com/gonta)
 
@@ -266,11 +206,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   260
 
- [
-
- yield再入門 #phpcon
-
- ](https://speakerdeck.com/o0h/phpcon-2026)
+ [yield再入門 #phpcon](https://speakerdeck.com/o0h/phpcon-2026)
 
  [ ![Avatar for hideki kinjyo](https://secure.gravatar.com/avatar/c90bac78c0fb61105cfd8239767f903d?s=24) o0h ](https://speakerdeck.com/o0h)
 
@@ -280,11 +216,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   950
 
- [
-
- 2年かけて Deno に DOMMatrix を実装した話 / How I implemented DOMMatrix in Deno over two years
-
- ](https://speakerdeck.com/petamoriken/how-i-implemented-dommatrix-in-deno-over-two-years)
+ [2年かけて Deno に DOMMatrix を実装した話 / How I implemented DOMMatrix in Deno over two years](https://speakerdeck.com/petamoriken/how-i-implemented-dommatrix-in-deno-over-two-years)
 
  [ ![Avatar for petamoriken / 森建](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTMyMzUxLCJwdXIiOiJibG9iX2lkIn19--7e8ea5a0fddf246c4417decb1ee0a0770d865df9/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/moriken_circle.png) petamoriken ](https://speakerdeck.com/petamoriken)
 
@@ -292,11 +224,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   200
 
- [
-
- 【SRE NEXT 2026 Lunch Session】一人目専任SREの立ち上げを加速する ― AIと進めたオンボーディングで2分を0.04秒にした話
-
- ](https://speakerdeck.com/pkshadeck/sre-next-2026-lunch-session-ren-mu-zhuan-ren-srenoli-tishang-kewojia-su-suru-aitojin-metaonhoteinkute2fen-wo0-dot-04miao-nisitahua)
+ [【SRE NEXT 2026 Lunch Session】一人目専任SREの立ち上げを加速する ― AIと進めたオンボーディングで2分を0.04秒にした話](https://speakerdeck.com/pkshadeck/sre-next-2026-lunch-session-ren-mu-zhuan-ren-srenoli-tishang-kewojia-su-suru-aitojin-metaonhoteinkute2fen-wo0-dot-04miao-nisitahua)
 
  [ ![Avatar for PKSHA Technology（パークシャテクノロジー）](https://secure.gravatar.com/avatar/03020c2b2466b17753b90cd1feefe86c?s=24) pkshadeck ](https://speakerdeck.com/pkshadeck)
 
@@ -310,11 +238,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [
-
- Conquering PDFs: document understanding beyond plain text
-
- ](https://speakerdeck.com/inesmontani/conquering-pdfs-document-understanding-beyond-plain-text)
+ [Conquering PDFs: document understanding beyond plain text](https://speakerdeck.com/inesmontani/conquering-pdfs-document-understanding-beyond-plain-text)
 
  [ ![Avatar for Ines Montani](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjkwMDgsInB1ciI6ImJsb2JfaWQifX0=--32562a32b00d456c251338e2bbab3b3a7c1775bf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/profile_ines.jpg) inesmontani ](https://speakerdeck.com/inesmontani)
 
@@ -324,11 +248,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   2.9k
 
- [
-
- Hiding What from Whom? A Critical Review of the History of Programming languages for Music
-
- ](https://speakerdeck.com/tomoyanonymous/hiding-what-from-whom-a-critical-review-of-the-history-of-programming-languages-for-music)
+ [Hiding What from Whom? A Critical Review of the History of Programming languages for Music](https://speakerdeck.com/tomoyanonymous/hiding-what-from-whom-a-critical-review-of-the-history-of-programming-languages-for-music)
 
  [ ![Avatar for Tomoya Matsuura](https://secure.gravatar.com/avatar/24b82e535177c6be997ca4ec43d8df6b?s=24) tomoyanonymous ](https://speakerdeck.com/tomoyanonymous)
 
@@ -336,11 +256,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   1.1k
 
- [
-
- jQuery: Nuts, Bolts and Bling
-
- ](https://speakerdeck.com/dougneiner/jquery-nuts-bolts-and-bling)
+ [jQuery: Nuts, Bolts and Bling](https://speakerdeck.com/dougneiner/jquery-nuts-bolts-and-bling)
 
  [ ![Avatar for Doug Neiner](https://secure.gravatar.com/avatar/9cde37f47e4a800ea081ea42de8d749a?s=24) dougneiner ](https://speakerdeck.com/dougneiner)
 
@@ -348,11 +264,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   8.5k
 
- [
-
- Speed Design
-
- ](https://speakerdeck.com/sergeychernyshev/speed-design)
+ [Speed Design](https://speakerdeck.com/sergeychernyshev/speed-design)
 
  [ ![Avatar for Sergey Chernyshev](https://secure.gravatar.com/avatar/1e2ff8ee6ac0e790883b1cdc420f158d?s=24) sergeychernyshev ](https://speakerdeck.com/sergeychernyshev)
 
@@ -360,11 +272,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   2k
 
- [
-
- We Analyzed 250 Million AI Search Results: Here's What I Found
-
- ](https://speakerdeck.com/joshbly/we-analyzed-250-million-ai-search-results-heres-what-i-found)
+ [We Analyzed 250 Million AI Search Results: Here's What I Found](https://speakerdeck.com/joshbly/we-analyzed-250-million-ai-search-results-heres-what-i-found)
 
  [ ![Avatar for Josh Blyskal](https://secure.gravatar.com/avatar/466d1e24bc0d3058fb53bc890043c3e7?s=24) joshbly ](https://speakerdeck.com/joshbly)
 
@@ -372,11 +280,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   1.7k
 
- [
-
- Keith and Marios Guide to Fast Websites
-
- ](https://speakerdeck.com/keithpitt/keith-and-marios-guide-to-fast-websites)
+ [Keith and Marios Guide to Fast Websites](https://speakerdeck.com/keithpitt/keith-and-marios-guide-to-fast-websites)
 
  [ ![Avatar for Keith Pitt](https://secure.gravatar.com/avatar/e14f55d3f939977cecbf51b64ff6f861?s=24) keithpitt ](https://speakerdeck.com/keithpitt)
 
@@ -384,11 +288,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   23k
 
- [
-
- Lessons Learnt from Crawling 1000+ Websites
-
- ](https://speakerdeck.com/charlesmeaden/lessons-learnt-from-crawling-1000-plus-websites)
+ [Lessons Learnt from Crawling 1000+ Websites](https://speakerdeck.com/charlesmeaden/lessons-learnt-from-crawling-1000-plus-websites)
 
  [ ![Avatar for Charles Meaden](https://secure.gravatar.com/avatar/ce0e73fa718d3c8e32bf992761c1968e?s=24) charlesmeaden ](https://speakerdeck.com/charlesmeaden)
 
@@ -398,11 +298,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   1.5k
 
- [
-
- Paper Plane
-
- ](https://speakerdeck.com/katiecoart/paper-plane)
+ [Paper Plane](https://speakerdeck.com/katiecoart/paper-plane)
 
  [ ![Avatar for Katie Cordina Lindsey](https://secure.gravatar.com/avatar/92f506fce3a633eabc7d2018eb13739f?s=24) katiecoart ](https://speakerdeck.com/katiecoart)
 
@@ -412,11 +308,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   52k
 
- [
-
- Bootstrapping a Software Product
-
- ](https://speakerdeck.com/garrettdimon/bootstrapping-a-software-product)
+ [Bootstrapping a Software Product](https://speakerdeck.com/garrettdimon/bootstrapping-a-software-product)
 
  [ ![Avatar for Garrett Dimon](https://secure.gravatar.com/avatar/a9179349dd2bdc67f377719f56d85656?s=24) garrettdimon ](https://speakerdeck.com/garrettdimon)
 
@@ -426,11 +318,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   120k
 
- [
-
- Reality Check: Gamification 10 Years Later
-
- ](https://speakerdeck.com/codingconduct/reality-check-gamification-10-years-later)
+ [Reality Check: Gamification 10 Years Later](https://speakerdeck.com/codingconduct/reality-check-gamification-10-years-later)
 
  [ ![Avatar for Sebastian Deterding](https://secure.gravatar.com/avatar/9f5f8d89c1c298beb2e5d3b1e41941e2?s=24) codingconduct ](https://speakerdeck.com/codingconduct)
 
@@ -438,11 +326,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   2.2k
 
- [
-
- Efficient Content Optimization with Google Search Console & Apps Script
-
- ](https://speakerdeck.com/katarinadahlin/wtsfest-berlin-25)
+ [Efficient Content Optimization with Google Search Console & Apps Script](https://speakerdeck.com/katarinadahlin/wtsfest-berlin-25)
 
  [ ![Avatar for Katarina Dahlin](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjAwNTg5LCJwdXIiOiJibG9iX2lkIn19--24cb98b2197cd4cdeb5e3ae1f94b4c1a162cd1bf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/Avainsana-analyysi%20thumbnails.png) katarinadahlin ](https://speakerdeck.com/katarinadahlin)
 
@@ -452,11 +336,7 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   770
 
- [
-
- Technical Leadership for Architectural Decision Making
-
- ](https://speakerdeck.com/baasie/technical-leadership-for-architectural-decision-making)
+ [Technical Leadership for Architectural Decision Making](https://speakerdeck.com/baasie/technical-leadership-for-architectural-decision-making)
 
  [ ![Avatar for Kenny Baas-Schwegler](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjUwMDA5LCJwdXIiOiJibG9iX2lkIn19--11a66eb48413d60f9ccb6c1e12df4a3d45b184fe/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/kenny_small_round.jpg) baasie ](https://speakerdeck.com/baasie)
 

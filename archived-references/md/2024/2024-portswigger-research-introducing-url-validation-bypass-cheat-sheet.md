@@ -81,7 +81,7 @@ Researcher
 
 -
 
-![](https://portswigger.net/cms/images/ba/2f/b01a-article-087ffac4-bf9f-4653-8947-b5e52b536f4e.png)URL validation bypasses are the root cause of numerous vulnerabilities including many instances of [SSRF](https://portswigger.net/web-security/ssrf), [CORS misconfiguration](https://portswigger.net/web-security/cors), and [open redirection](https://portswigger.net/web-security/dom-based/open-redirection). These work by using ambiguous URLs to trigger URL parsing discrepancies and bypass validation. However, many of these techniques are poorly documented and overlooked as a result.
+!URL validation bypasses are the root cause of numerous vulnerabilities including many instances of [SSRF](https://portswigger.net/web-security/ssrf), [CORS misconfiguration](https://portswigger.net/web-security/cors), and [open redirection](https://portswigger.net/web-security/dom-based/open-redirection). These work by using ambiguous URLs to trigger URL parsing discrepancies and bypass validation. However, many of these techniques are poorly documented and overlooked as a result.
 
  To address this, we wanted to create a cheat sheet that consolidates all known payloads, saving you the time and effort of searching and gathering information from across the Internet. Today, we're excited to introduce a new tool designed to solve this problem: [the URL Validation Bypass Cheat Sheet](https://portswigger.net/web-security/ssrf/url-validation-bypass-cheat-sheet).
 
@@ -147,12 +147,10 @@ These techniques can be used to bypass Web Application Firewalls (WAFs).
 
  This cheat sheet wouldn't be possible without the web security community who share their research. Big thanks to: [Gareth Heyes](https://x.com/garethheyes), [James Kettle](https://x.com/albinowax), [Jann Horn](https://infosec.exchange/@jann), [Liv Matan](https://x.com/terminatorLM), [Takeshi Terada](https://github.com/t-tera), [Orange Tsai](https://x.com/orange_8361), [Nicolas Grégoire](https://x.com/Agarri_FR).
 
- We published all payloads at our GitHub account[ ](https://github.com/PortSwigger/url-cheatsheet-data)[https://github.com/PortSwigger/url-cheatsheet-data](https://github.com/PortSwigger/url-cheatsheet-data), so you can contribute to this cheat sheet by creating a [new issue](https://github.com/PortSwigger/url-cheatsheet-data/issues) or updating the JSON files and submitting a [pull request](https://github.com/PortSwigger/url-cheatsheet-data/pulls).
+ We published all payloads at our GitHub account[https://github.com/PortSwigger/url-cheatsheet-data](https://github.com/PortSwigger/url-cheatsheet-data), so you can contribute to this cheat sheet by creating a [new issue](https://github.com/PortSwigger/url-cheatsheet-data/issues) or updating the JSON files and submitting a [pull request](https://github.com/PortSwigger/url-cheatsheet-data/pulls).
 
  We look forward to your interesting discoveries using our new [URL validation bypass cheat sheet](https://portswigger.net/web-security/ssrf/url-validation-bypass-cheat-sheet)!
 
  [ SSRF ](https://portswigger.net/research/ssrf) [ CORS ](https://portswigger.net/research/cors) [ Zakhar Favourites ](https://portswigger.net/research/zakhar-fedotkin)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

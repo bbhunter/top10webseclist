@@ -87,19 +87,13 @@ Download this advisory from: [http://soroush.secproject.com/downloadable/IIS5.1_
  – If a checking is only based on the directory name, it can be bypassed by using this method.
 
 Download this advisory from: [http://soroush.secproject.com/downloadable/IIS5.1_Authentication_Bypass.pdf](http://soroush.secproject.com/downloadable/IIS5.1_Authentication_Bypass.pdf)
- or: [http://0me.me/demo/IIS/IIS5.1_Authentication_Bypass.pdf](http://0me.me/demo/IIS/IIS5.1_Authentication_Bypass.pdf)[](http://0me.me/demo/IIS/IIS5.1_Authentication_Bypass.pdf)
+ or: [http://0me.me/demo/IIS/IIS5.1_Authentication_Bypass.pdf](http://0me.me/demo/IIS/IIS5.1_Authentication_Bypass.pdf)
 
 This entry was posted in [Security Posts](https://soroush.me/blog/category/securityposts)
 
 Creation date: July 1, 2010
 
-[
-
- Previous
-
-New update – July 2010
-
-](https://soroush.me/blog/new-update-july-2010)[
+[Previous New update – July 2010](https://soroush.me/blog/new-update-july-2010)[
 
 Next
 

@@ -106,7 +106,7 @@ Why did Exchange Server become a hot topic? From my point of view, the whole Pro
 
 You all know what happened next, Volexity found that an APT group was leveraging the same SSRF ([CVE-2021-26855](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-26855)) to access users’ emails in early January 2021 and reported to Microsoft. Microsoft also released the urgent patches in March. From the [public information](https://youtu.be/rB255D-wnw0?t=999) released afterwards, we found that even though they used the same SSRF, the APT group was exploiting it in a very different way from us. We completed the ProxyLogon attack chain through [CVE-2021-27065](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-27065), while the APT group used EWS and two unknown vulnerabilities in their attack. This has convinced us that there is a bug collision on the SSRF vulnerability.
 
-![](https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/7e8c21379878e30d-02.png)
+!
 
 *Image from [Microsoft Blog](https://www.microsoft.com/security/blog/2021/03/25/analyzing-attacks-taking-advantage-of-the-exchange-server-vulnerabilities/)*
 
@@ -130,13 +130,13 @@ The most interesting one is [CVE-2018-8581](https://www.zerodayinitiative.com/bl
 
 The most surprising one is [CVE-2020-0688](https://www.zerodayinitiative.com/blog/2020/2/24/cve-2020-0688-remote-code-execution-on-microsoft-exchange-server-through-fixed-cryptographic-keys) , which was also disclosed by someone working with ZDI. The root cause of this bug is due to a hard-coded cryptographic key in Microsoft Exchange. With this hard-coded key, an attacker with low privilege can take over the whole Exchange Server. And as you can see, even in 2020, a silly, hard-coded cryptographic key could still be found in an essential software like Exchange. This indicated that Exchange is lacking security reviews, which also inspired me to dig more into the Exchange security.
 
-![](https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/d5b300df5f12a9d2-03.gif)
+!
 
 # Where is the new attack surface
 
 Exchange is a very sophisticated application. Since 2000, Exchange has released a new version every 3 years. Whenever Exchange releases a new version, the architecture changes a lot and becomes different. The changes of architecture and iterations make it difficult to upgrade an Exchange Server. In order to ensure the compatibility between the new architecture and old ones, several design debts were incurred to Exchange Server and led to the new attack surface we found.
 
-![](https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/1ad777cc74d67c2c-04.png)
+!
 
 Where did we focus at Microsoft Exchange? We focused on the Client Access Service, CAS. CAS is a fundamental component of Exchange. Back to the version 2000/2003, CAS was an independent Frontend Server in charge of all the Frontend web rendering logics. After several renaming, integrating, and version differences, CAS has been downgraded to a service under the Mailbox Role. The [official documentation from Microsoft](https://docs.microsoft.com/en-us/exchange/architecture/architecture?view=exchserver-2019) indicates that:
 
@@ -150,21 +150,21 @@ From the narrative you could realize the importance of CAS, and you could imagin
 
 CAS is the fundamental component in charge of accepting all the connections from the client side, no matter if it’s HTTP, POP3, IMAP or SMTP, and proxies the connections to the corresponding Backend Service. As a Web Security researcher, I focused on the Web implementation of CAS.
 
-![](https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/1e724de07cf0e217-05.png)
+!
 
 The CAS web is built on Microsoft IIS. As you can see, there are two websites inside the IIS. The “Default Website” is the Frontend we mentioned before, and the “Exchange Backend” is where the business logic is. After looking into the configuration carefully, we notice that the Frontend is binding with ports 80 and 443, and the Backend is listening on ports 81 and 444. All the ports are binding with `0.0.0.0`, which means anyone could access the Frontend and Backend of Exchange directly. Wouldn’t it be dangerous? Please keep this question in mind and we will answer that later.
 
-![](https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/9493ce131add5a0b-06.png)
+!
 
 Exchange implements the logic of Frontend and Backend via IIS module. There are several modules in Frontend and Backend to complete different tasks, such as the filter, validation, and logging. The Frontend must contain a Proxy Module. The Proxy Module picks up the HTTP request from the client side and adds some internal settings, then forwards the request to the Backend. As for the Backend, all the applications include the Rehydration Module, which is in charge of parsing Frontend requests, populating the client information back, and continuing to process the business logic. Later we will be elaborating how Proxy Module and Rehydration Module work.
 
-![](https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/1223ec870a2992e1-07.png)
+!
 
 ## Frontend Proxy Module
 
 Proxy Module chooses a handler based on the current `ApplicationPath` to process the HTTP request from the client side. For instance, visiting `/EWS` will use `EwsProxyRequestHandler`, as for `/OWA` will trigger `OwaProxyRequestHandler`. All the handlers in Exchange inherit the class from `ProxyRequestHandler` and implement its core logic, such as how to deal with the HTTP request from the user, which URL from Backend to proxy to, and how to synchronize the information with the Backend. The class is also the most centric part of the whole Proxy Module, we will separate `ProxyRequestHandler` into 3 sections:
 
-![](https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/f87597a24014a226-08.png)
+!
 
 ### Frontend Request Section
 
@@ -212,7 +212,7 @@ In the last stage of Request, Proxy Module will call the method `AddProtocolSpec
 
 For instance, If I log into Outlook Web Access (OWA) with the name Orange, the `X-CommonAccessToken` that Frontend proxy to Backend will be:
 
-![](https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/c061652bcf8aaa44-09.png)
+!
 
 ### Frontend Proxy Section
 
@@ -346,7 +346,7 @@ internal static string GenerateKerberosAuthHeader(string host, int traceContext,
 
 Therefore, a Client request proxied to the Backend will be added with several HTTP Headers for internal use. The two most essential Headers are `X-CommonAccessToken`, which indicates the mail users’ log in identity, and Kerberos Ticket, which represents legal access from the Frontend.
 
-![](https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/3178d2f1fc318557-10.png)
+!
 
 ### Frontend Response Section
 
@@ -600,7 +600,7 @@ Though we can only control the `Host` part of the URL, but hang on, isn’t [man
 
 https://[foo]@example.com:443/path#]:444/owa/auth/x.js
 
-![](https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/445487485f433399-11.png)
+!
 
 So far we have a super SSRF that can control almost all the HTTP requests and get all the replies. The most impressive thing is that the Frontend of Exchange will generate a Kerberos Ticket for us, which means even when we are attacking a protected and domain-joined HTTP service, we can still hack with the authentication of Exchange Machine Account.
 
@@ -612,7 +612,7 @@ Thanks to the super SSRF allowing us to access the Backend without restriction. 
 
 Because we leverage the Frontend handler of static resources to access the ECExchange Control Panel (ECP) Backend, the header `msExchLogonMailbox` , which is a special HTTP header in the ECP Backend, will not be blocked by the Frontend. By leveraging this minor inconsistency, we can specify ourselves as the SYSTEM user and generate a valid ECP session with the internal API.
 
-![](https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/5c44e4e6ea1b8733-12.png)
+!
 
 With the inconsistency between the Frontend and Backend, we can access all the functions on ECP by Header forgery and internal Backend API abuse. Next, we have to find an RCE bug on the ECP interface to chain them together. The ECP wraps the Exchange PowerShell commands as an abstract interface by `/ecp/DDI/DDIService.svc`. The `DDIService` defines several PowerShell executing pipelines by XAML so that it can be accessed by Web. While verifying the DDI implementation, we found the tag of WriteFileActivity did not check the file path properly and led to an arbitrary-file-write.
 
@@ -665,7 +665,7 @@ public override RunResult Run(DataRow input, DataTable dataTable, DataObjectStor
 
 There are several paths to trigger the vulnerability of arbitrary-file-write. Here we use `ResetOABVirtualDirectory.xaml` as an example and write the result of `Set-OABVirtualDirectory` to the webroot to be our Webshell.
 
-![](https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/c9fc1df20dc4344b-13.png)
+!
 
 Now we have a working pre-auth RCE exploit chain. An unauthenticated attacker can execute arbitrary commands on Microsoft Exchange Server through an exposed 443 port. Here is an [demonstration video](https://www.youtube.com/watch?v=SvjGMo9aMwE):
 

@@ -90,11 +90,7 @@ CVE-2018-18345
 
  [ See All by Jun Kokatsu ](https://speakerdeck.com/shhnjk)
 
- [
-
- Operating Operator
-
- ](https://speakerdeck.com/shhnjk/operating-operator)
+ [Operating Operator](https://speakerdeck.com/shhnjk/operating-operator)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -102,11 +98,7 @@ CVE-2018-18345
 
   1.4k
 
- [
-
- Piloting Edge Copilot
-
- ](https://speakerdeck.com/shhnjk/piloting-edge-copilot)
+ [Piloting Edge Copilot](https://speakerdeck.com/shhnjk/piloting-edge-copilot)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -114,11 +106,7 @@ CVE-2018-18345
 
   1.4k
 
- [
-
- Same-Origin Cross-Context Scripting
-
- ](https://speakerdeck.com/shhnjk/same-origin-cross-context-scripting)
+ [Same-Origin Cross-Context Scripting](https://speakerdeck.com/shhnjk/same-origin-cross-context-scripting)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -126,11 +114,7 @@ CVE-2018-18345
 
   1.1k
 
- [
-
- The world of Site Isolation and compromised renderer
-
- ](https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer)
+ [The world of Site Isolation and compromised renderer](https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -138,11 +122,7 @@ CVE-2018-18345
 
   3.1k
 
- [
-
- Site Isolationの話
-
- ](https://speakerdeck.com/shhnjk/site-isolationfalsehua)
+ [Site Isolationの話](https://speakerdeck.com/shhnjk/site-isolationfalsehua)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -150,11 +130,7 @@ CVE-2018-18345
 
   2.1k
 
- [
-
- ブラウザセキュリティ機能は バイパスされる為にある
-
- ](https://speakerdeck.com/shhnjk/burauzasekiyuriteiji-neng-ha-baipasusareruwei-niaru)
+ [ブラウザセキュリティ機能は バイパスされる為にある](https://speakerdeck.com/shhnjk/burauzasekiyuriteiji-neng-ha-baipasusareruwei-niaru)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -166,11 +142,7 @@ CVE-2018-18345
 
  [ See All in Research ](https://speakerdeck.com/c/research)
 
- [
-
- 計算情報学研究室（数理情報学第７研究室）2026
-
- ](https://speakerdeck.com/tomohirokoana/ji-suan-qing-bao-xue-yan-jiu-shi-shu-li-qing-bao-xue-di-7yan-jiu-shi-2026)
+ [計算情報学研究室（数理情報学第７研究室）2026](https://speakerdeck.com/tomohirokoana/ji-suan-qing-bao-xue-yan-jiu-shi-shu-li-qing-bao-xue-di-7yan-jiu-shi-2026)
 
  [ ![Avatar for Tomohiro](https://secure.gravatar.com/avatar/8b4c5638428027a69909080636e6e713?s=24) tomohirokoana ](https://speakerdeck.com/tomohirokoana)
 
@@ -178,11 +150,7 @@ CVE-2018-18345
 
   720
 
- [
-
- MM-OVSeg: Multimodal Optical–SAR Fusion for Open-Vocabulary Segmentation in Remote Sensing
-
- ](https://speakerdeck.com/satai/mm-ovseg-multimodal-optical-sar-fusion-for-open-vocabulary-segmentation-in-remote-sensing)
+ [MM-OVSeg: Multimodal Optical–SAR Fusion for Open-Vocabulary Segmentation in Remote Sensing](https://speakerdeck.com/satai/mm-ovseg-multimodal-optical-sar-fusion-for-open-vocabulary-segmentation-in-remote-sensing)
 
  [ ![Avatar for SatAI.challenge](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2MDUwLCJwdXIiOiJibG9iX2lkIn19--b6d6ea071912ace3f41814c723917566e73c75f5/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/image%20(2).png) satai ](https://speakerdeck.com/satai)
 
@@ -190,11 +158,7 @@ CVE-2018-18345
 
   110
 
- [
-
- 【ローカルAI LT大会】SSE: Stable Static Embedding ー速度低下を伴わず 静的埋め込みモデルの潜在能力を引き出す Dynamic Tanh手法の提案
-
- ](https://speakerdeck.com/rikkabotan7/rokaruai-ltda-hui-sse-stable-static-embedding-su-du-di-xia-woban-wazu-jing-de-mai-meip-mimoderunoqian-zai-neng-li-woyin-kichu-su-dynamic-tanhshou-fa-noti-an)
+ [【ローカルAI LT大会】SSE: Stable Static Embedding ー速度低下を伴わず 静的埋め込みモデルの潜在能力を引き出す Dynamic Tanh手法の提案](https://speakerdeck.com/rikkabotan7/rokaruai-ltda-hui-sse-stable-static-embedding-su-du-di-xia-woban-wazu-jing-de-mai-meip-mimoderunoqian-zai-neng-li-woyin-kichu-su-dynamic-tanhshou-fa-noti-an)
 
  [ ![Avatar for Rikka Botan](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDE1Njc3LCJwdXIiOiJibG9iX2lkIn19--9d963851d3691454692f40cb0fea7b2d932e503b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/IMG_5580.jpeg) rikkabotan7 ](https://speakerdeck.com/rikkabotan7)
 
@@ -202,11 +166,7 @@ CVE-2018-18345
 
   110
 
- [
-
- 東京大学工学部計数工学科、計数工学特別講義の説明資料
-
- ](https://speakerdeck.com/kikuzo/dong-jing-da-xue-gong-xue-bu-ji-shu-gong-xue-ke-ji-shu-gong-xue-te-bie-jiang-yi-noshuo-ming-zi-liao)
+ [東京大学工学部計数工学科、計数工学特別講義の説明資料](https://speakerdeck.com/kikuzo/dong-jing-da-xue-gong-xue-bu-ji-shu-gong-xue-ke-ji-shu-gong-xue-te-bie-jiang-yi-noshuo-ming-zi-liao)
 
  [ ![Avatar for KIKUCHI Shunsuke](https://secure.gravatar.com/avatar/fccb5974b63d64636a7c90faf3bab51f?s=24) kikuzo ](https://speakerdeck.com/kikuzo)
 
@@ -214,11 +174,7 @@ CVE-2018-18345
 
   590
 
- [
-
- COMETAを用いたデータ民主化運動の歴史
-
- ](https://speakerdeck.com/sazimai/cometawoyong-itadetamin-zhu-hua-yun-dong-noli-shi)
+ [COMETAを用いたデータ民主化運動の歴史](https://speakerdeck.com/sazimai/cometawoyong-itadetamin-zhu-hua-yun-dong-noli-shi)
 
  [ ![Avatar for Kazuya Mori](https://secure.gravatar.com/avatar/001871406e497111ee3d7f9d2112c0f2?s=24) sazimai ](https://speakerdeck.com/sazimai)
 
@@ -226,11 +182,7 @@ CVE-2018-18345
 
   190
 
- [
-
- SAKURAONE:An Open Ethernet-based AI HPC System And Its Observed Workload Dynamicsin a Single-Tenant LLM Development Environment
-
- ](https://speakerdeck.com/yuukit/sakuraone-an-open-ethernet-based-ai-hpc-system-and-its-observed-workload-dynamics-in-a-single-tenant-llm-development-environment)
+ [SAKURAONE:An Open Ethernet-based AI HPC System And Its Observed Workload Dynamicsin a Single-Tenant LLM Development Environment](https://speakerdeck.com/yuukit/sakuraone-an-open-ethernet-based-ai-hpc-system-and-its-observed-workload-dynamics-in-a-single-tenant-llm-development-environment)
 
  [ ![Avatar for Yuuki Tsubouchi (yuuk1)](https://secure.gravatar.com/avatar/a658ec7f1badf73819dfa501165016c1?s=24) yuukit ](https://speakerdeck.com/yuukit)
 
@@ -238,11 +190,7 @@ CVE-2018-18345
 
   500
 
- [
-
- Visual SLAM未来予測 / Future Prediction in Visual SLAM
-
- ](https://speakerdeck.com/koide3/future-prediction-in-visual-slam)
+ [Visual SLAM未来予測 / Future Prediction in Visual SLAM](https://speakerdeck.com/koide3/future-prediction-in-visual-slam)
 
  [ ![Avatar for koide3](https://secure.gravatar.com/avatar/e19725a18fcb76076c0b3149222e66ff?s=24) koide3 ](https://speakerdeck.com/koide3)
 
@@ -250,11 +198,7 @@ CVE-2018-18345
 
   830
 
- [
-
- PHTalks Bengaluru - SSRF When All Else Fails
-
- ](https://speakerdeck.com/dk999/phtalks-bengaluru-ssrf-when-all-else-fails)
+ [PHTalks Bengaluru - SSRF When All Else Fails](https://speakerdeck.com/dk999/phtalks-bengaluru-ssrf-when-all-else-fails)
 
  [ ![Avatar for Debangshu Kundu](https://secure.gravatar.com/avatar/473fb6954ff02000870fda9db9d3e8cb?s=24) dk999 ](https://speakerdeck.com/dk999)
 
@@ -262,11 +206,7 @@ CVE-2018-18345
 
   940
 
- [
-
- Language and AI
-
- ](https://speakerdeck.com/ayaniwa/language-and-ai)
+ [Language and AI](https://speakerdeck.com/ayaniwa/language-and-ai)
 
  [ ![Avatar for Ayana Niwa](https://secure.gravatar.com/avatar/7d5c4656c947d0905dfbc5e39f233857?s=24) ayaniwa ](https://speakerdeck.com/ayaniwa)
 
@@ -274,11 +214,7 @@ CVE-2018-18345
 
   190
 
- [
-
- AIエージェント時代のLLM-jpモデルのあるべき姿
-
- ](https://speakerdeck.com/k141303/aiezientoshi-dai-nollm-jpmoderunoarubekizi)
+ [AIエージェント時代のLLM-jpモデルのあるべき姿](https://speakerdeck.com/k141303/aiezientoshi-dai-nollm-jpmoderunoarubekizi)
 
  [ ![Avatar for Kouta Nakayama](https://secure.gravatar.com/avatar/8236376240946d9c4868e3473d155600?s=24) k141303 ](https://speakerdeck.com/k141303)
 
@@ -286,11 +222,7 @@ CVE-2018-18345
 
   550
 
- [
-
- Geometric calculations on probability manifolds from reciprocal relations in Master equations
-
- ](https://speakerdeck.com/lwc2017/geometric-calculations-on-probability-manifolds-from-reciprocal-relations-in-master-equations)
+ [Geometric calculations on probability manifolds from reciprocal relations in Master equations](https://speakerdeck.com/lwc2017/geometric-calculations-on-probability-manifolds-from-reciprocal-relations-in-master-equations)
 
  [ ![Avatar for Wuchen Li](https://secure.gravatar.com/avatar/7a507f364fce7547f94b9a5b4a072c87?s=24) lwc2017 ](https://speakerdeck.com/lwc2017)
 
@@ -298,11 +230,7 @@ CVE-2018-18345
 
   110
 
- [
-
- 第64回CV・PRML勉強会 論文紹介：Linguistic Priors for Visual Decoupling: Towards Symmetric Vision-Brain Alignment
-
- ](https://speakerdeck.com/sokikatayama/di-64hui-cvprmlmian-qiang-hui-lun-wen-shao-jie-linguistic-priors-for-visual-decoupling-towards-symmetric-vision-brain-alignment)
+ [第64回CV・PRML勉強会 論文紹介：Linguistic Priors for Visual Decoupling: Towards Symmetric Vision-Brain Alignment](https://speakerdeck.com/sokikatayama/di-64hui-cvprmlmian-qiang-hui-lun-wen-shao-jie-linguistic-priors-for-visual-decoupling-towards-symmetric-vision-brain-alignment)
 
  [ ![Avatar for Soki Katayama](https://secure.gravatar.com/avatar/f07c5912a741767d06c412ed6d52b531?s=24) sokikatayama ](https://speakerdeck.com/sokikatayama)
 
@@ -314,11 +242,7 @@ CVE-2018-18345
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [
-
- Ruling the World: When Life Gets Gamed
-
- ](https://speakerdeck.com/codingconduct/ruling-the-world-when-life-gets-gamed)
+ [Ruling the World: When Life Gets Gamed](https://speakerdeck.com/codingconduct/ruling-the-world-when-life-gets-gamed)
 
  [ ![Avatar for Sebastian Deterding](https://secure.gravatar.com/avatar/9f5f8d89c1c298beb2e5d3b1e41941e2?s=24) codingconduct ](https://speakerdeck.com/codingconduct)
 
@@ -326,11 +250,7 @@ CVE-2018-18345
 
   290
 
- [
-
- Become a Pro
-
- ](https://speakerdeck.com/speakerdeck/become-a-pro)
+ [Become a Pro](https://speakerdeck.com/speakerdeck/become-a-pro)
 
  [ ![Avatar for Speaker Deck](https://secure.gravatar.com/avatar/828ace851b606e1206900f26459f55ad?s=24) speakerdeck ](https://speakerdeck.com/speakerdeck)
 
@@ -340,11 +260,7 @@ CVE-2018-18345
 
   6.1k
 
- [
-
- The agentic SEO stack - context over prompts
-
- ](https://speakerdeck.com/schlessera/the-agentic-seo-stack-context-over-prompts)
+ [The agentic SEO stack - context over prompts](https://speakerdeck.com/schlessera/the-agentic-seo-stack-context-over-prompts)
 
  [ ![Avatar for schlessera](https://secure.gravatar.com/avatar/a686099e5d041a8825ef01d71513c2db?s=24) schlessera ](https://speakerdeck.com/schlessera)
 
@@ -352,11 +268,7 @@ CVE-2018-18345
 
   860
 
- [
-
- GraphQLの誤解/rethinking-graphql
-
- ](https://speakerdeck.com/sonatard/rethinking-graphql)
+ [GraphQLの誤解/rethinking-graphql](https://speakerdeck.com/sonatard/rethinking-graphql)
 
  [ ![Avatar for sonatard](https://secure.gravatar.com/avatar/3cb4e761dbdb7aebd1ffd85f752e1e3e?s=24) sonatard ](https://speakerdeck.com/sonatard)
 
@@ -364,11 +276,7 @@ CVE-2018-18345
 
   12k
 
- [
-
- Rails Girls Zürich Keynote
-
- ](https://speakerdeck.com/gr2m/rails-girls-zurich-keynote)
+ [Rails Girls Zürich Keynote](https://speakerdeck.com/gr2m/rails-girls-zurich-keynote)
 
  [ ![Avatar for Gregor Martynus](https://secure.gravatar.com/avatar/24fc194843a71f10949be18d5a692682?s=24) gr2m ](https://speakerdeck.com/gr2m)
 
@@ -376,11 +284,7 @@ CVE-2018-18345
 
   14k
 
- [
-
- Test your architecture with Archunit
-
- ](https://speakerdeck.com/thirion/test-your-architecture-with-archunit)
+ [Test your architecture with Archunit](https://speakerdeck.com/thirion/test-your-architecture-with-archunit)
 
  [ ![Avatar for Yoan](https://secure.gravatar.com/avatar/9489b8d6f2dbdc3e7d26b8702143b86e?s=24) thirion ](https://speakerdeck.com/thirion)
 
@@ -388,11 +292,7 @@ CVE-2018-18345
 
   2.3k
 
- [
-
- From Legacy to Launchpad: Building Startup-Ready Communities
-
- ](https://speakerdeck.com/dugsong/from-legacy-to-launchpad-building-startup-ready-communities)
+ [From Legacy to Launchpad: Building Startup-Ready Communities](https://speakerdeck.com/dugsong/from-legacy-to-launchpad-building-startup-ready-communities)
 
  [ ![Avatar for Dug Song](https://secure.gravatar.com/avatar/d66a8b626a8a6e702319d52d8cc7c4e6?s=24) dugsong ](https://speakerdeck.com/dugsong)
 
@@ -400,11 +300,7 @@ CVE-2018-18345
 
   290
 
- [
-
- ラッコキーワード サービス紹介資料
-
- ](https://speakerdeck.com/rakko/introduction)
+ [ラッコキーワード サービス紹介資料](https://speakerdeck.com/rakko/introduction)
 
  [ ![Avatar for ラッコ株式会社](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjAwMTgyLCJwdXIiOiJibG9iX2lkIn19--1a675f702fe37e192521a48d72064c54472362d5/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/logo.rakkoinc_600x600.png) rakko ](https://speakerdeck.com/rakko)
 
@@ -412,11 +308,7 @@ CVE-2018-18345
 
   4.2M
 
- [
-
- How to Build an AI Search Optimization Roadmap - Criteria and Steps to Take #SEOIRL
-
- ](https://speakerdeck.com/aleyda/how-to-build-an-ai-search-optimization-roadmap-criteria-and-steps-to-take-number-seoirl)
+ [How to Build an AI Search Optimization Roadmap - Criteria and Steps to Take #SEOIRL](https://speakerdeck.com/aleyda/how-to-build-an-ai-search-optimization-roadmap-criteria-and-steps-to-take-number-seoirl)
 
  [ ![Avatar for Aleyda Solis](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6OTIyMDAsInB1ciI6ImJsb2JfaWQifX0=--f7ae7c6a9c16b0bb4461d98502be71c2c1b38eaf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/aleyda-solis.jpg) aleyda ](https://speakerdeck.com/aleyda)
 
@@ -424,11 +316,7 @@ CVE-2018-18345
 
   2.1k
 
- [
-
- Exploring the Power of Turbo Streams & Action Cable | RailsConf2023
-
- ](https://speakerdeck.com/kevinliebholz/exploring-the-power-of-turbo-streams-and-action-cable)
+ [Exploring the Power of Turbo Streams & Action Cable | RailsConf2023](https://speakerdeck.com/kevinliebholz/exploring-the-power-of-turbo-streams-and-action-cable)
 
  [ ![Avatar for Kevin Liebholz](https://secure.gravatar.com/avatar/7cac149f4967f1b063974d6a186251ab?s=24) kevinliebholz ](https://speakerdeck.com/kevinliebholz)
 
@@ -436,11 +324,7 @@ CVE-2018-18345
 
   6.5k
 
- [
-
- A Tale of Four Properties
-
- ](https://speakerdeck.com/chriscoyier/a-tale-of-four-properties)
+ [A Tale of Four Properties](https://speakerdeck.com/chriscoyier/a-tale-of-four-properties)
 
  [ ![Avatar for Chris Coyier](https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=24) chriscoyier ](https://speakerdeck.com/chriscoyier)
 
@@ -448,11 +332,7 @@ CVE-2018-18345
 
   24k
 
- [
-
- First, design no harm
-
- ](https://speakerdeck.com/axbom/first-design-no-harm)
+ [First, design no harm](https://speakerdeck.com/axbom/first-design-no-harm)
 
  [ ![Avatar for Per Axbom](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzA4MTcsInB1ciI6ImJsb2JfaWQifX0=--3b22ae95c7f24edaeb9c2d37fdb67f05b7db6128/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/axbom-ind08b.jpg) axbom ](https://speakerdeck.com/axbom)
 

@@ -278,5 +278,3 @@ You can get a demo of our exfiltrator using PortSwigger labs. Note you can only 
  [ CSS ](https://portswigger.net/research/css) [ CSS injection ](https://portswigger.net/research/css-injection) [ Exfiltration ](https://portswigger.net/research/exfiltration) [ Gareth Favourites ](https://portswigger.net/research/gareth-heyes)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

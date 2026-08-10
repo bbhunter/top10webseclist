@@ -231,5 +231,3 @@ To prevent this type of attack, ensure that the same library is used for both pa
  [ XML ](https://portswigger.net/research/xml) [ SAML ](https://portswigger.net/research/saml) [ Authorization ](https://portswigger.net/research/authorization)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

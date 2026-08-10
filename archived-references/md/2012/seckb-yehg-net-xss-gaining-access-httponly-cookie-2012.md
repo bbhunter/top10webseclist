@@ -75,21 +75,21 @@ page going offline. To read the original, follow the link above.
 
  Soon after the popularity of XST, the TRACE method has been disabled by most web servers. Later, browsers' implementation of XMLHttpRequest also blocked "TRACE" method (i.e. *xmlhttp.open('TRACE', url, true)*]. Later, [a flawed implementation in Firefox's ](https://web.archive.org/web/20170925041004/https://bugzilla.mozilla.org/show_bug.cgi?id=380418)[XMLHttpRequest](https://web.archive.org/web/20170925041004/https://bugzilla.mozilla.org/show_bug.cgi?id=380418) which can be used to access set-cookie response header was fixed.
 
- [![](https://web.archive.org/web/20170925041004im_/https://1.bp.blogspot.com/-l624SmclEUk/T70idQzlU2I/AAAAAAAAAGQ/sDf3dZYPN3Q/s1600/xmlhttp-trace-ie.png)](https://web.archive.org/web/20170925041004/http://1.bp.blogspot.com/-l624SmclEUk/T70idQzlU2I/AAAAAAAAAGQ/sDf3dZYPN3Q/s1600/xmlhttp-trace-ie.png)
+ [!](https://web.archive.org/web/20170925041004/http://1.bp.blogspot.com/-l624SmclEUk/T70idQzlU2I/AAAAAAAAAGQ/sDf3dZYPN3Q/s1600/xmlhttp-trace-ie.png)
 
  *JS Debugger pointing out "TRACE" method as invalid arugment*
 
- [![](https://web.archive.org/web/20170925041004im_/https://3.bp.blogspot.com/-khMONiDIXPY/T70icmGFvII/AAAAAAAAAGE/mgtEbj5xtYU/s1600/xmlhttp-trace-ff.png)](https://web.archive.org/web/20170925041004/http://3.bp.blogspot.com/-khMONiDIXPY/T70icmGFvII/AAAAAAAAAGE/mgtEbj5xtYU/s1600/xmlhttp-trace-ff.png)
+ [!](https://web.archive.org/web/20170925041004/http://3.bp.blogspot.com/-khMONiDIXPY/T70icmGFvII/AAAAAAAAAGE/mgtEbj5xtYU/s1600/xmlhttp-trace-ff.png)
 
  *JS Debugger pointing out "TRACE" method as illegal value*
 
  A Sla.ckers.org forum member, LeverOne, [posted ways ](https://web.archive.org/web/20170925041004/http://sla.ckers.org/forum/read.php?2,33037#msg-33417)to access HttpOnly cookie through the use of Java API and applet. I reproduced his techniques. When the first method was tried, the Java Runtime did not allow the HTTP TRACE method any more. It threw an error message, "*uncaught exception: java.security.AccessControlException: access denied ("java.net.NetPermission" "allowHttpTrace")*". When the second one was tried, the Java API, getRequestProperty("Cookie"), return "null" value. It seemed that we cannot read the browser cookie storage from Java applet though it can connect to the requested URL with browser cookie.
 
- [![](https://web.archive.org/web/20170925041004im_/https://1.bp.blogspot.com/-0k0iQeLk62A/T70iZ4ByZnI/AAAAAAAAAFs/1EHECxoGgZQ/s1600/java-trace.png)](https://web.archive.org/web/20170925041004/http://1.bp.blogspot.com/-0k0iQeLk62A/T70iZ4ByZnI/AAAAAAAAAFs/1EHECxoGgZQ/s1600/java-trace.png)
+ [!](https://web.archive.org/web/20170925041004/http://1.bp.blogspot.com/-0k0iQeLk62A/T70iZ4ByZnI/AAAAAAAAAFs/1EHECxoGgZQ/s1600/java-trace.png)
 
  * Java permission exception for "TRACE" method being as HTTP Request*
 
- [![](https://web.archive.org/web/20170925041004im_/https://4.bp.blogspot.com/-5Pg3t5FXG9Q/T70iZNqdacI/AAAAAAAAAFo/NsRVlb-LlcQ/s640/java-getproperty.png)](https://web.archive.org/web/20170925041004/http://4.bp.blogspot.com/-5Pg3t5FXG9Q/T70iZNqdacI/AAAAAAAAAFo/NsRVlb-LlcQ/s1600/java-getproperty.png)
+ [!](https://web.archive.org/web/20170925041004/http://4.bp.blogspot.com/-5Pg3t5FXG9Q/T70iZNqdacI/AAAAAAAAAFo/NsRVlb-LlcQ/s1600/java-getproperty.png)
 
  *Cookie value shown as null from Java Applet*
 
@@ -103,7 +103,7 @@ page going offline. To read the original, follow the link above.
 
  When I looked at Microsoft Silverlight, it seems that [security considerations](https://web.archive.org/web/20170925041004/http://msdn.microsoft.com/en-us/library/dd920295(v=vs.95).aspx) were taken into account in its design in HttpRequest and HttpResponse handling. Silverlight separates the Http handling by Browser-based and Client-based. I can gain access to the set-cookie response header only if I use the latter one. Even so, this is applicable only for the set-cookie response header that does not have "HttpOnly" attribute. In addition, the Client-based cookie storage is isolated from the browser-based one.
 
- [![](https://web.archive.org/web/20170925041004im_/https://4.bp.blogspot.com/-3N-0xV68HDo/T70lEqUmJeI/AAAAAAAAAGc/__6GGyoRIxU/s1600/silverlight-get-cookie.png)](https://web.archive.org/web/20170925041004/http://4.bp.blogspot.com/-3N-0xV68HDo/T70lEqUmJeI/AAAAAAAAAGc/__6GGyoRIxU/s1600/silverlight-get-cookie.png)
+ [!](https://web.archive.org/web/20170925041004/http://4.bp.blogspot.com/-3N-0xV68HDo/T70lEqUmJeI/AAAAAAAAAGc/__6GGyoRIxU/s1600/silverlight-get-cookie.png)
 
  * Silverlight application can read set-cookie response header without HttpOnly flag*
 
@@ -118,7 +118,7 @@ page going offline. To read the original, follow the link above.
 
  Flash Lite is supposed to be able to run on mobile devices' browsers. But I have short of Flash-Lite compatible devices at this moment. Anyone who has one can check [this test page](https://web.archive.org/web/20170925041004/http://attacker.in/httponly/). The code is as simple as that:
 
- [![](https://web.archive.org/web/20170925041004im_/https://3.bp.blogspot.com/-_XMYapGElUs/T-YjdrvwrzI/AAAAAAAAAIA/lrXY_LpcSC8/s1600/as3a.png)](https://web.archive.org/web/20170925041004/http://3.bp.blogspot.com/-_XMYapGElUs/T-YjdrvwrzI/AAAAAAAAAIA/lrXY_LpcSC8/s1600/as3a.png)
+ [!](https://web.archive.org/web/20170925041004/http://3.bp.blogspot.com/-_XMYapGElUs/T-YjdrvwrzI/AAAAAAAAAIA/lrXY_LpcSC8/s1600/as3a.png)
 
  *ActionScript: Reading Response Header via the "httpResponseStatus" Event Listener*
 
@@ -336,7 +336,7 @@ page going offline. To read the original, follow the link above.
 
  To my surprise, [it works](https://web.archive.org/web/20170925041004/http://attacker.in/xss/index.php?vuln=%3Cscript%3Evar+ck%3D+%22%22%3Bfunction+getc%28s%29{ck+%3D+s%3Balert%28%22XSS+HttpOnly-Cookie+Stealer%3A\n\n%22+%2B+ck%29%3B}%3C%2Fscript%3E%3Capplet+code%3DHO.class+archive%3DHO.jar+width%3D0+height%3D0%3E%3Cparam+name%3Du+value%3Dhttp%3A%2F%2Fattacker.in%2Fxss%2Fcookie.php%3E%3C%2Fapplet%3E)!
 
- [![](https://web.archive.org/web/20170925041004im_/https://3.bp.blogspot.com/-DZ93WIpipK4/T8GbDeeky1I/AAAAAAAAAGw/JJAgBPrabDs/s1600/java-getHeaderField.png)](https://web.archive.org/web/20170925041004/http://3.bp.blogspot.com/-DZ93WIpipK4/T8GbDeeky1I/AAAAAAAAAGw/JJAgBPrabDs/s1600/java-getHeaderField.png)
+ [!](https://web.archive.org/web/20170925041004/http://3.bp.blogspot.com/-DZ93WIpipK4/T8GbDeeky1I/AAAAAAAAAGw/JJAgBPrabDs/s1600/java-getHeaderField.png)
 
 * *
 * * XSS Test: Getting HttpOnly Cookie through the Java Applet*

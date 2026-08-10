@@ -91,14 +91,14 @@ BibTeX
 
 ![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Gierlings Paper (Prepublication) PDF](https://www.usenix.org/system/files/sec23summer_464-gierlings-prepub.pdf)
 
-![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-unlocked.png)
+!
 
 [View the slides](https://www.usenix.org/system/files/sec23_slides_gierlings.pdf)
 
-![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_available_125_update.png)
+!
 
-![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_functional_125.png)
+!
 
-![](https://www.usenix.org/sites/default/files/usenix_artifact_evaluation_reproduced_125.png)
+!
 
 ## Presentation Video

@@ -590,5 +590,3 @@ PortSwigger Research
  [ CSS ](https://portswigger.net/research/css) [ CSS injection ](https://portswigger.net/research/css-injection) [ Email Security ](https://portswigger.net/research/email-security) [ Gareth Favourites ](https://portswigger.net/research/gareth-heyes) [ Black Hat ](https://portswigger.net/research/black-hat)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

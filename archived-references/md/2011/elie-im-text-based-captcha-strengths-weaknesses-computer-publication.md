@@ -69,7 +69,7 @@ Text-based captcha strengths and weaknesses | Computer and Communications Securi
 
    ![Text-based captcha strengths and weaknesses](https://elie.net/_astro/text-based-captcha-strengths-and-weaknesses.Bdocfb-A_ACwew.jpg)    ![Text-based captcha strengths and weaknesses](https://elie.net/_astro/text-based-captcha-strengths-and-weaknesses.Bdocfb-A_ACwew.jpg)
 
- [ ](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Felie.net%2F%2Fpublication%2Ftext-based-captcha-strengths-and-weaknesses) [ ](https://x.com/intent/tweet/?text=Text-based%20captcha%20strengths%20and%20weaknesses&url=https%3A%2F%2Felie.net%2F%2Fpublication%2Ftext-based-captcha-strengths-and-weaknesses&via=elie) [ ](https://linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Felie.net%2F%2Fpublication%2Ftext-based-captcha-strengths-and-weaknesses) [ ](https://wa.me/?text=https%3A%2F%2Felie.net%2F%2Fpublication%2Ftext-based-captcha-strengths-and-weaknesses) [ ](http://www.reddit.com/submit?url=https%3A%2F%2Felie.net%2F%2Fpublication%2Ftext-based-captcha-strengths-and-weaknesses&title=Text-based%20captcha%20strengths%20and%20weaknesses) [ ](mailto:?subject=Text-based%20captcha%20strengths%20and%20weaknesses&body=https%3A%2F%2Felie.net%2F%2Fpublication%2Ftext-based-captcha-strengths-and-weaknesses) [ ](https://feeds.feedburner.com/inftoint)
+      [ ](mailto:?subject=Text-based%20captcha%20strengths%20and%20weaknesses&body=https%3A%2F%2Felie.net%2F%2Fpublication%2Ftext-based-captcha-strengths-and-weaknesses) 
 
  Subscribe
 
@@ -79,15 +79,7 @@ Text-based captcha strengths and weaknesses | Computer and Communications Securi
 #  Text-based captcha strengths and weaknesses
 
  Available Media
-|  Available Media |   [
-
-Publication (Pdf)
-
- ](https://cdn.elie.net/static/files/text-based-captcha-strengths-and-weaknesses/text-based-captcha-strengths-and-weaknesses-paper.pdf) [
-
-Slides (pdf)
-
- ](https://cdn.elie.net/static/files/text-based-captcha-strengths-and-weaknesses/text-based-captcha-strengths-and-weaknesses-slides.pdf)  |   |
+|  Available Media |   [Publication (Pdf)](https://cdn.elie.net/static/files/text-based-captcha-strengths-and-weaknesses/text-based-captcha-strengths-and-weaknesses-paper.pdf) [Slides (pdf)](https://cdn.elie.net/static/files/text-based-captcha-strengths-and-weaknesses/text-based-captcha-strengths-and-weaknesses-slides.pdf)  |   |
 |  Conference |   Computer and Communications Security (CCS) - 2011 |   |
 |   Authors  |    Elie Bursztein ,   Matthieu Martin ,   John C. Mitchell   show more   |   |
 |  Citation |   Bibtex   |   |
@@ -105,31 +97,7 @@ We carry out a systematic study of existing visual CAPTCHAs based on distorted c
 
 ---
 
- [
-
-   ![The failure of noise-based non-continuous audio captchas](https://elie.net/_astro/the-failure-of-noise-based-non-continuous-audio-captchas.-P7qlEeD_1Dutf2.jpg)
-
- web security
-
-###  The failure of noise-based non-continuous audio captchas
-
- publications
-
- S&P 2011
-
- ](https://elie.net/publication/the-failure-of-noise-based-non-continuous-audio-captchas)[
-
-   ![The end is nigh: generic solving of text-based captchas](https://elie.net/_astro/the-end-is-nigh-generic-solving-of-text-based-captchas.C-Gi8zpP_Z1tyQte.jpg)
-
- web security
-
-###  The end is nigh: generic solving of text-based captchas
-
- publications
-
- WOOT 2014
-
- ](https://elie.net/publication/the-end-is-nigh-generic-solving-of-text-based-captchas)[
+ [![The failure of noise-based non-continuous audio captchas](https://elie.net/_astro/the-failure-of-noise-based-non-continuous-audio-captchas.-P7qlEeD_1Dutf2.jpg) web security ### The failure of noise-based non-continuous audio captchas publications S&P 2011](https://elie.net/publication/the-failure-of-noise-based-non-continuous-audio-captchas)[![The end is nigh: generic solving of text-based captchas](https://elie.net/_astro/the-end-is-nigh-generic-solving-of-text-based-captchas.C-Gi8zpP_Z1tyQte.jpg) web security ### The end is nigh: generic solving of text-based captchas publications WOOT 2014](https://elie.net/publication/the-end-is-nigh-generic-solving-of-text-based-captchas)[
 
    ![Decaptcha breaking 75% of ebay audio captchas](https://elie.net/_astro/decaptcha-breaking-75-percents-of-ebay-audio-captchas.BuC2V5re_ZPrTKG.jpg)
 

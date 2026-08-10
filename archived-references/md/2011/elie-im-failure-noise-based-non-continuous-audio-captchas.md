@@ -69,7 +69,7 @@ The failure of noise-based non-continuous audio captchas | Security and Privacy 
 
    ![The failure of noise-based non-continuous audio captchas](https://elie.net/_astro/the-failure-of-noise-based-non-continuous-audio-captchas.-P7qlEeD_1Dutf2.jpg)    ![The failure of noise-based non-continuous audio captchas](https://elie.net/_astro/the-failure-of-noise-based-non-continuous-audio-captchas.-P7qlEeD_1Dutf2.jpg)
 
- [ ](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Felie.net%2F%2Fpublication%2Fthe-failure-of-noise-based-non-continuous-audio-captchas) [ ](https://x.com/intent/tweet/?text=The%20failure%20of%20noise-based%20non-continuous%20audio%20captchas&url=https%3A%2F%2Felie.net%2F%2Fpublication%2Fthe-failure-of-noise-based-non-continuous-audio-captchas&via=elie) [ ](https://linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Felie.net%2F%2Fpublication%2Fthe-failure-of-noise-based-non-continuous-audio-captchas) [ ](https://wa.me/?text=https%3A%2F%2Felie.net%2F%2Fpublication%2Fthe-failure-of-noise-based-non-continuous-audio-captchas) [ ](http://www.reddit.com/submit?url=https%3A%2F%2Felie.net%2F%2Fpublication%2Fthe-failure-of-noise-based-non-continuous-audio-captchas&title=The%20failure%20of%20noise-based%20non-continuous%20audio%20captchas) [ ](mailto:?subject=The%20failure%20of%20noise-based%20non-continuous%20audio%20captchas&body=https%3A%2F%2Felie.net%2F%2Fpublication%2Fthe-failure-of-noise-based-non-continuous-audio-captchas) [ ](https://feeds.feedburner.com/inftoint)
+      [ ](mailto:?subject=The%20failure%20of%20noise-based%20non-continuous%20audio%20captchas&body=https%3A%2F%2Felie.net%2F%2Fpublication%2Fthe-failure-of-noise-based-non-continuous-audio-captchas) 
 
  Subscribe
 
@@ -79,15 +79,7 @@ The failure of noise-based non-continuous audio captchas | Security and Privacy 
 #  The failure of noise-based non-continuous audio captchas
 
  Available Media
-|  Available Media |   [
-
-Publication (Pdf)
-
- ](https://cdn.elie.net/static/files/the-failure-of-noise-based-non-continuous-audio-captchas/the-failure-of-noise-based-non-continuous-audio-captchas-paper.pdf) [
-
-Slides (pdf)
-
- ](https://cdn.elie.net/static/files/the-failure-of-noise-based-non-continuous-audio-captchas/the-failure-of-noise-based-non-continuous-audio-captchas-slides.pdf)  |   |
+|  Available Media |   [Publication (Pdf)](https://cdn.elie.net/static/files/the-failure-of-noise-based-non-continuous-audio-captchas/the-failure-of-noise-based-non-continuous-audio-captchas-paper.pdf) [Slides (pdf)](https://cdn.elie.net/static/files/the-failure-of-noise-based-non-continuous-audio-captchas/the-failure-of-noise-based-non-continuous-audio-captchas-slides.pdf)  |   |
 |  Conference |   Security and Privacy (S&P) - 2011 |   |
 |   Authors  |    Elie Bursztein ,   Romain Bauxis ,   Hristo Paskov ,   Daniele Perito ,   Celine Fabry ,   John C. Mitchell   show more   |   |
 |  Citation |   Bibtex   |   |
@@ -103,31 +95,7 @@ Many websites use tests intended to distinguish humans from automated processes 
 
 ---
 
- [
-
-   ![Autonomous Timeline Analysis and Threat Hunting](https://elie.net/_astro/timeline-analysis-in-timesketch-with-sec-gemini.-TCvivxp_arIVp.jpg)
-
- ai
-
-###  Autonomous Timeline Analysis and Threat Hunting
-
- talks
-
- DEF CON 33 2025
-
- ](https://elie.net/talk/timeline-analysis-in-timesketch-with-sec-gemini)[
-
-   ![FACADE High-Precision Insider Threat Detection Using Contrastive Learning](https://elie.net/_astro/facade-high-precision-insider-threat-detection-using-contrastive-learning.BLsA5hAM_12RNiI.jpg)
-
- ai
-
-###  FACADE High-Precision Insider Threat Detection Using Contrastive Learning
-
- talks
-
- BH25 2025
-
- ](https://elie.net/talk/facade-high-precision-insider-threat-detection-using-contrastive-learning)[
+ [![Autonomous Timeline Analysis and Threat Hunting](https://elie.net/_astro/timeline-analysis-in-timesketch-with-sec-gemini.-TCvivxp_arIVp.jpg) ai ### Autonomous Timeline Analysis and Threat Hunting talks DEF CON 33 2025](https://elie.net/talk/timeline-analysis-in-timesketch-with-sec-gemini)[![FACADE High-Precision Insider Threat Detection Using Contrastive Learning](https://elie.net/_astro/facade-high-precision-insider-threat-detection-using-contrastive-learning.BLsA5hAM_12RNiI.jpg) ai ### FACADE High-Precision Insider Threat Detection Using Contrastive Learning talks BH25 2025](https://elie.net/talk/facade-high-precision-insider-threat-detection-using-contrastive-learning)[
 
    ![Autonomous Timeline Analysis and Threat Hunting](https://elie.net/_astro/autonomous-timeline-analysis-and-threat-hunting-an-ai-agent-for-timesketch.CTolPM6Q_Z1FrJ2E.jpg)
 

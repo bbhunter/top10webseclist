@@ -65,7 +65,7 @@ class TestKindFromUrl(unittest.TestCase):
 class TestAWaybackReplayIsNotItsOwnKind(unittest.TestCase):
     """The replay carries the ARCHIVE's host, so every host rule read the
     wrapper: YouTube talks cited as replays were filed as `article`, which sent
-    a video into the browser ladder and onto the needs-work list as though a
+    a video into the browser ladder and onto the document-gaps list as though a
     write-up were missing."""
 
     def test_a_captured_video_is_still_a_video(self):

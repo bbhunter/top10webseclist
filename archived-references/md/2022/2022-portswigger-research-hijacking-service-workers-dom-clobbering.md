@@ -208,5 +208,3 @@ To find these types of vulnerabilities yourself you can use the latest release o
  [ service workers ](https://portswigger.net/research/service-workers) [ XSS ](https://portswigger.net/research/cross-site-scripting-research) [ DOM Clobbering ](https://portswigger.net/research/dom-clobbering)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

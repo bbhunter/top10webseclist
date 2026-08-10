@@ -78,7 +78,7 @@ WOT services allow users to create tokens and place them on their personal pages
 
 On the web a lot of profile-based applications allow redistribution of content by sharing someone else’s entry on your personal timeline – on Twitter users can *retweet* content and on GitHub people can *fork* projects. Since some WOT services use a public entry or post to verify the user’s identity, I asked myself whether it would be possible to claim ownership of someone else’s account by having them share a token that was posted onto an attacker’s timeline. One particular service stood out for me, GitHub, where WOT applications such as Keybase require users to place the verification token into a GitHub gist file. The interesting behaviour that I noticed with GitHub is that when a user forks a gist, the gist is not only displayed on the user’s timeline, it replaces the original author’s username with the sharer’s username.
 
-![](https://user-images.githubusercontent.com/18099289/36165627-1901716e-10e8-11e8-9def-a3349954851a.png)
+!
 
 *A forked GitHub gist — the original author is EdOverflow and the gist was forked by bayotop.*
 
@@ -94,7 +94,7 @@ An example attack using this technique against Keybase could have unfolded as fo
 
 As a result, the attacker’s Keybase account states that they own the victim’s account. To make matters worse, Keybase has a [browser extension](https://keybase.io/docs/extension) that allows users to browse to certain applications (e.g. GitHub, Twitter, Hacker News, etc.) and message the user on Keybase via the profile page – the extension adds a little messaging window on the user’s profile. Messages are sent to the account on Keybase that has verified ownership of the account. This means the extension will trick the user into thinking they are messaging the intended recipient, but all messages land in the attacker’s inbox since they control the victim’s username.
 
-![](https://user-images.githubusercontent.com/18099289/36165628-1921e5ac-10e8-11e8-9fc5-e3ac95e98d1e.png)
+!
 
 *Hijacked GitHub username (@jackds1986) viewed in the Keybase browser extension. All messages are sent to a user called "totallynotjackds" on Keybase.*
 
@@ -104,7 +104,7 @@ As a result, the attacker’s Keybase account states that they own the victim’
 
 Some WoT services require placing the verification token in a specific filename. Keybase, for example, as mentioned in the previous section, require GitHub verification tokens to be placed in GitHub gists called *keybase.md*. On web assets, Keybase require the file to be named `keybase.txt` and either placed under the top-level directory or the `.well-known` path. The reason behind the `.well-known` proposal in [RFC5785](https://tools.ietf.org/html/rfc5785), is to prevent filename collisions and clogging up the root directory. The former is particularly interesting when it comes to WOT services since if an attacker can control the filename on a website, they could potentially claim ownership of the domain. One such case happened with liberapay.com and Keybase. Liberapay, an open-source donation platform, did not restrict username’s containing dots in them; therefore one could create usernames containing file extensions. This became apparent to me when I set up a profile page for the security.txt project ([https://liberapay.com/security.txt](https://liberapay.com/security.txt)). I created a user called `keybase.txt` and embedded the Keybase verification snippet in the profile’s description. This allowed me to claim ownership of liberapay.com. Keybase did not verify the content type of the keybase.txt file and did not even ensure that the token is not embedded into a page.
 
-![](https://user-images.githubusercontent.com/18099289/35120564-d26274aa-fc98-11e7-884f-b972fdc44efe.png)
+!
 
 *Claiming ownership of liberapay.com by creating a user called keybase.txt and embedding the verification snippet into the profile's description.*
 
@@ -112,7 +112,7 @@ Some WoT services require placing the verification token in a specific filename.
 
 After claiming ownership of liberapay`.com` I noticed that liberapay`.org` redirects to liberapay`.com`. This next attack consisted of using a verification token generated for liberapay`.org` embedded on liberapay`.com` to claim ownership of liberapay`.org`. Keybase’s scraper would blindly follow the redirect and not validate the final endpoint to make sure it matches the target host. Keybase would request liberapay`.org/keybase.txt` which redirects to liberapay`.com/keybase.txt` where a valid `keybase.txt` file is located.
 
-![](https://user-images.githubusercontent.com/18099289/36167048-659b30b0-10ec-11e8-8dbb-14b97337020a.png)
+!
 
 *Claiming ownership of liberapay.org via liberapay.com's keybase.txt file.*
 

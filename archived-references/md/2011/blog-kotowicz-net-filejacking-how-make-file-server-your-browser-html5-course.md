@@ -68,7 +68,7 @@ How can a website access user's files? Traditionally, user has to **upload the f
 
  Lately, [File API](http://www.w3.org/TR/FileAPI/) allowed Javascript to access the file once it is **chosen** by the user (i.e. before uploading it). Apart from delivering better file uploading experience, it might also be used maliciously [to steal your files in XSS attack](http://blog.kotowicz.net/2010/12/xss-track-now-steals-your-uploaded.html). Also, with clever styling you can hide input type=file control so that the user is unaware that he's going to upload the file. But still - the only leaked file is the one user chose using 'Open File' dialog.
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPVmUdchD6_pboakZijI2C3try8jTqt807rd2mq6XJQvzvAB8VghdJ7Cgq5TKn1Dy0sD782MC5yPbo5i2-i0bc2D6I4uuSM72jwLN00iflT3M8J2I4VneW_VLpXwiYHZ7MajrxlpGrjVk/s200/WinFormsOpenFileDialog.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPVmUdchD6_pboakZijI2C3try8jTqt807rd2mq6XJQvzvAB8VghdJ7Cgq5TKn1Dy0sD782MC5yPbo5i2-i0bc2D6I4uuSM72jwLN00iflT3M8J2I4VneW_VLpXwiYHZ7MajrxlpGrjVk/s1600/WinFormsOpenFileDialog.jpg)
+[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPVmUdchD6_pboakZijI2C3try8jTqt807rd2mq6XJQvzvAB8VghdJ7Cgq5TKn1Dy0sD782MC5yPbo5i2-i0bc2D6I4uuSM72jwLN00iflT3M8J2I4VneW_VLpXwiYHZ7MajrxlpGrjVk/s1600/WinFormsOpenFileDialog.jpg)
 
 Users are aware of what file uploading is and are reluctant to choose Downloaded Files/nothing here/move along/boring family photos/1/b00bs.jpg when working inside a browser, so it's not a big deal, right?
 

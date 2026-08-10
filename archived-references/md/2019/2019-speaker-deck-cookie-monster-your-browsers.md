@@ -78,11 +78,7 @@ A talk about cookies I presented in HITCON 2019
 
  [ See All by filedescriptor ](https://speakerdeck.com/filedescriptor)
 
- [
-
- Exploiting the unexploitable with lesser known browser tricks
-
- ](https://speakerdeck.com/filedescriptor/exploiting-the-unexploitable-with-lesser-known-browser-tricks)
+ [Exploiting the unexploitable with lesser known browser tricks](https://speakerdeck.com/filedescriptor/exploiting-the-unexploitable-with-lesser-known-browser-tricks)
 
  [ ![Avatar for filedescriptor](https://secure.gravatar.com/avatar/9b9863647e5085306b795717b03a430c?s=24) filedescriptor ](https://speakerdeck.com/filedescriptor)
 
@@ -90,11 +86,7 @@ A talk about cookies I presented in HITCON 2019
 
   24k
 
- [
-
- Killing 🐦with 🐛🐛
-
- ](https://speakerdeck.com/filedescriptor/killing-with)
+ [Killing 🐦with 🐛🐛](https://speakerdeck.com/filedescriptor/killing-with)
 
  [ ![Avatar for filedescriptor](https://secure.gravatar.com/avatar/9b9863647e5085306b795717b03a430c?s=24) filedescriptor ](https://speakerdeck.com/filedescriptor)
 
@@ -106,11 +98,7 @@ A talk about cookies I presented in HITCON 2019
 
  [ See All in Technology ](https://speakerdeck.com/c/technology)
 
- [
-
- もう一度考える SRE チームの作り方・育て方 / Rethinking SRE #1: Building and Growing SRE Teams
-
- ](https://speakerdeck.com/rrreeeyyy/rethinking-sre-number-1-building-and-growing-sre-teams)
+ [もう一度考える SRE チームの作り方・育て方 / Rethinking SRE #1: Building and Growing SRE Teams](https://speakerdeck.com/rrreeeyyy/rethinking-sre-number-1-building-and-growing-sre-teams)
 
  [ ![Avatar for rrreeeyyy](https://secure.gravatar.com/avatar/28e154e6e0351c70091997d2f574295a?s=24) rrreeeyyy ](https://speakerdeck.com/rrreeeyyy)
 
@@ -118,11 +106,7 @@ A talk about cookies I presented in HITCON 2019
 
   1k
 
- [
-
- 【CEDEC2026】グラフィックスエンジニアのためのニューラルシェーディング入門
-
- ](https://speakerdeck.com/cygames/cygames_202607_cedec2026_03)
+ [【CEDEC2026】グラフィックスエンジニアのためのニューラルシェーディング入門](https://speakerdeck.com/cygames/cygames_202607_cedec2026_03)
 
  [ ![Avatar for Cygames, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzQyMzEyLCJwdXIiOiJibG9iX2lkIn19--79c11d4c6a736302463ad65244e1053a62bdbfa4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/SpeakerDeck_%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.png) cygames ](https://speakerdeck.com/cygames)
 
@@ -132,11 +116,7 @@ A talk about cookies I presented in HITCON 2019
 
   110
 
- [
-
- AI駆動開発は個人技からチーム戦へ：組織でAIを使いこなすための実践設計
-
- ](https://speakerdeck.com/moongift/aiqu-dong-kai-fa-hage-ren-ji-karatimuzhan-he-zu-zhi-teaiwoshi-ikonasutamenoshi-jian-she-ji)
+ [AI駆動開発は個人技からチーム戦へ：組織でAIを使いこなすための実践設計](https://speakerdeck.com/moongift/aiqu-dong-kai-fa-hage-ren-ji-karatimuzhan-he-zu-zhi-teaiwoshi-ikonasutamenoshi-jian-she-ji)
 
  [ ![Avatar for Atsushi Nakatsugawa](https://secure.gravatar.com/avatar/4cafe6a1c6287d64d7252279eeeffa94?s=24) moongift ](https://speakerdeck.com/moongift)
 
@@ -146,11 +126,7 @@ A talk about cookies I presented in HITCON 2019
 
   460
 
- [
-
- 【CEDEC2026】『Relink』を拡張せよ - 『GRANBLUE FANTASY: Relink - Endless Ragnarok』の開発速度と品質を守るCI運用
-
- ](https://speakerdeck.com/cygames/cygames_202607_cedec2026_09)
+ [【CEDEC2026】『Relink』を拡張せよ - 『GRANBLUE FANTASY: Relink - Endless Ragnarok』の開発速度と品質を守るCI運用](https://speakerdeck.com/cygames/cygames_202607_cedec2026_09)
 
  [ ![Avatar for Cygames, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzQyMzEyLCJwdXIiOiJibG9iX2lkIn19--79c11d4c6a736302463ad65244e1053a62bdbfa4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/SpeakerDeck_%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.png) cygames ](https://speakerdeck.com/cygames)
 
@@ -160,11 +136,7 @@ A talk about cookies I presented in HITCON 2019
 
   130
 
- [
-
- Software Supply Chain Attackからクラウド環境を守るためにできること
-
- ](https://speakerdeck.com/lhazy/software-supply-chain-attackkarakuraudohuan-jing-woshou-rutamenidekirukoto)
+ [Software Supply Chain Attackからクラウド環境を守るためにできること](https://speakerdeck.com/lhazy/software-supply-chain-attackkarakuraudohuan-jing-woshou-rutamenidekirukoto)
 
  [ ![Avatar for LHazy](https://secure.gravatar.com/avatar/0557e811080457658b1632e6cce220f5?s=24) lhazy ](https://speakerdeck.com/lhazy)
 
@@ -172,11 +144,7 @@ A talk about cookies I presented in HITCON 2019
 
   180
 
- [
-
- 老害フォレンジッカーはAI羊の夢を見るか？
-
- ](https://speakerdeck.com/tadmaddad/lao-hai-huorenzitukahaaiyang-nomeng-wojian-ruka)
+ [老害フォレンジッカーはAI羊の夢を見るか？](https://speakerdeck.com/tadmaddad/lao-hai-huorenzitukahaaiyang-nomeng-wojian-ruka)
 
  [ ![Avatar for tadmaddad](https://secure.gravatar.com/avatar/78103cb135249dbab1d818e5b6c3e4f2?s=24) tadmaddad ](https://speakerdeck.com/tadmaddad)
 
@@ -184,11 +152,7 @@ A talk about cookies I presented in HITCON 2019
 
   200
 
- [
-
- クラウドセキュリティ入門 ～安全なクラウド利用のための基礎知識～
-
- ](https://speakerdeck.com/lhazy/kuraudosekiyuriteiru-men-an-quan-nakuraudoli-yong-notamenoji-chu-zhi-shi)
+ [クラウドセキュリティ入門 ～安全なクラウド利用のための基礎知識～](https://speakerdeck.com/lhazy/kuraudosekiyuriteiru-men-an-quan-nakuraudoli-yong-notamenoji-chu-zhi-shi)
 
  [ ![Avatar for LHazy](https://secure.gravatar.com/avatar/0557e811080457658b1632e6cce220f5?s=24) lhazy ](https://speakerdeck.com/lhazy)
 
@@ -196,11 +160,7 @@ A talk about cookies I presented in HITCON 2019
 
   7.9k
 
- [
-
- 【CEDEC2026】専門性の高いデフォルメチームが挑んだ人材育成戦略 〜Cygames Academiaの企画から実施まで〜
-
- ](https://speakerdeck.com/cygames/cygames_202607_cedec2026_02)
+ [【CEDEC2026】専門性の高いデフォルメチームが挑んだ人材育成戦略 〜Cygames Academiaの企画から実施まで〜](https://speakerdeck.com/cygames/cygames_202607_cedec2026_02)
 
  [ ![Avatar for Cygames, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzQyMzEyLCJwdXIiOiJibG9iX2lkIn19--79c11d4c6a736302463ad65244e1053a62bdbfa4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/SpeakerDeck_%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.png) cygames ](https://speakerdeck.com/cygames)
 
@@ -210,11 +170,7 @@ A talk about cookies I presented in HITCON 2019
 
   500
 
- [
-
- OSPN.JPバージョンアップ作業進捗のご報告 / 20260801-osc26kyoto
-
- ](https://speakerdeck.com/akkiesoft/20260801-osc26kyoto)
+ [OSPN.JPバージョンアップ作業進捗のご報告 / 20260801-osc26kyoto](https://speakerdeck.com/akkiesoft/20260801-osc26kyoto)
 
  [ ![Avatar for Akira Ouchi](https://secure.gravatar.com/avatar/74476e142a767a018d68c5e72e34ee2f?s=24) akkiesoft ](https://speakerdeck.com/akkiesoft)
 
@@ -222,11 +178,7 @@ A talk about cookies I presented in HITCON 2019
 
   310
 
- [
-
- 社内の7割が使うデータ基盤を、 データチーム2人で回すためにやったこと
-
- ](https://speakerdeck.com/koh_yoshi/she-nei-no7ge-gashi-udetaji-pan-wo-detatimu2ren-dehui-sutameniyatutakoto)
+ [社内の7割が使うデータ基盤を、 データチーム2人で回すためにやったこと](https://speakerdeck.com/koh_yoshi/she-nei-no7ge-gashi-udetaji-pan-wo-detatimu2ren-dehui-sutameniyatutakoto)
 
  [ ![Avatar for KOH](https://secure.gravatar.com/avatar/ac644aedf968d4425aafa9849b62d52d?s=24) koh_yoshi ](https://speakerdeck.com/koh_yoshi)
 
@@ -234,11 +186,7 @@ A talk about cookies I presented in HITCON 2019
 
   570
 
- [
-
- TypeScript入門 2026
-
- ](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_shizukuishi)
+ [TypeScript入門 2026](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_shizukuishi)
 
  [ ![Avatar for Recruit](https://secure.gravatar.com/avatar/85da685d91fda190e2e3162d0de248a4?s=24) recruitengineers ](https://speakerdeck.com/recruitengineers)
 
@@ -248,11 +196,7 @@ A talk about cookies I presented in HITCON 2019
 
   400
 
- [
-
- 攻撃と防御で学ぶAI時代のプロダクトセキュリティ演習
-
- ](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_yamada_nakanishi)
+ [攻撃と防御で学ぶAI時代のプロダクトセキュリティ演習](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_yamada_nakanishi)
 
  [ ![Avatar for Recruit](https://secure.gravatar.com/avatar/85da685d91fda190e2e3162d0de248a4?s=24) recruitengineers ](https://speakerdeck.com/recruitengineers)
 
@@ -266,11 +210,7 @@ A talk about cookies I presented in HITCON 2019
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [
-
- Claude Code どこまでも/ Claude Code Everywhere
-
- ](https://speakerdeck.com/nwiizo/claude-everywhere)
+ [Claude Code どこまでも/ Claude Code Everywhere](https://speakerdeck.com/nwiizo/claude-everywhere)
 
  [ ![Avatar for nwiizo](https://secure.gravatar.com/avatar/6ed12627fec46a135f1bce5d56f3568e?s=24) nwiizo ](https://speakerdeck.com/nwiizo)
 
@@ -278,11 +218,7 @@ A talk about cookies I presented in HITCON 2019
 
   57k
 
- [
-
- The SEO identity crisis: Don't let AI make you average
-
- ](https://speakerdeck.com/varn/the-seo-identity-crisis-dont-let-ai-make-you-average)
+ [The SEO identity crisis: Don't let AI make you average](https://speakerdeck.com/varn/the-seo-identity-crisis-dont-let-ai-make-you-average)
 
  [ ![Avatar for Varn](https://secure.gravatar.com/avatar/174e0046d13ef40458b3eda48b20da6f?s=24) varn ](https://speakerdeck.com/varn)
 
@@ -290,11 +226,7 @@ A talk about cookies I presented in HITCON 2019
 
   530
 
- [
-
- Tips & Tricks on How to Get Your First Job In Tech
-
- ](https://speakerdeck.com/honzajavorek/tips-and-tricks-on-how-to-get-your-first-job-in-tech)
+ [Tips & Tricks on How to Get Your First Job In Tech](https://speakerdeck.com/honzajavorek/tips-and-tricks-on-how-to-get-your-first-job-in-tech)
 
  [ ![Avatar for Honza Javorek](https://secure.gravatar.com/avatar/7b2e4bf7ecca28e530e1c421f0676c0b?s=24) honzajavorek ](https://speakerdeck.com/honzajavorek)
 
@@ -302,11 +234,7 @@ A talk about cookies I presented in HITCON 2019
 
   670
 
- [
-
- Exploring the Power of Turbo Streams & Action Cable | RailsConf2023
-
- ](https://speakerdeck.com/kevinliebholz/exploring-the-power-of-turbo-streams-and-action-cable)
+ [Exploring the Power of Turbo Streams & Action Cable | RailsConf2023](https://speakerdeck.com/kevinliebholz/exploring-the-power-of-turbo-streams-and-action-cable)
 
  [ ![Avatar for Kevin Liebholz](https://secure.gravatar.com/avatar/7cac149f4967f1b063974d6a186251ab?s=24) kevinliebholz ](https://speakerdeck.com/kevinliebholz)
 
@@ -314,11 +242,7 @@ A talk about cookies I presented in HITCON 2019
 
   6.5k
 
- [
-
- I Don’t Have Time: Getting Over the Fear to Launch Your Podcast
-
- ](https://speakerdeck.com/jcasabona/i-dont-have-time-getting-over-the-fear-to-launch-your-podcast)
+ [I Don’t Have Time: Getting Over the Fear to Launch Your Podcast](https://speakerdeck.com/jcasabona/i-dont-have-time-getting-over-the-fear-to-launch-your-podcast)
 
  [ ![Avatar for Joe Casabona](https://secure.gravatar.com/avatar/b3ace07412a5178ea778e7eec161fc0a?s=24) jcasabona ](https://speakerdeck.com/jcasabona)
 
@@ -326,11 +250,7 @@ A talk about cookies I presented in HITCON 2019
 
   2.8k
 
- [
-
- Easily Structure & Communicate Ideas using Wireframe
-
- ](https://speakerdeck.com/afnizarnur/easily-structure-and-communicate-ideas-using-wireframe)
+ [Easily Structure & Communicate Ideas using Wireframe](https://speakerdeck.com/afnizarnur/easily-structure-and-communicate-ideas-using-wireframe)
 
  [ ![Avatar for Afnizar Nur Ghifari](https://secure.gravatar.com/avatar/0c6fd6a08d0f898159cda7cafcacf07f?s=24) afnizarnur ](https://speakerdeck.com/afnizarnur)
 
@@ -338,11 +258,7 @@ A talk about cookies I presented in HITCON 2019
 
   17k
 
- [
-
- Designing for Timeless Needs
-
- ](https://speakerdeck.com/cassininazir/designing-for-timeless-needs-a72bb8c4-c96b-47cc-8598-36af0340e28e)
+ [Designing for Timeless Needs](https://speakerdeck.com/cassininazir/designing-for-timeless-needs-a72bb8c4-c96b-47cc-8598-36af0340e28e)
 
  [ ![Avatar for Cassini Nazir](https://secure.gravatar.com/avatar/4631d364d59bd9d045acf046a0ce1cfe?s=24) cassininazir ](https://speakerdeck.com/cassininazir)
 
@@ -350,11 +266,7 @@ A talk about cookies I presented in HITCON 2019
 
   430
 
- [
-
- Building Applications with DynamoDB
-
- ](https://speakerdeck.com/mza/building-applications-with-dynamodb)
+ [Building Applications with DynamoDB](https://speakerdeck.com/mza/building-applications-with-dynamodb)
 
  [ ![Avatar for Matt Wood](https://secure.gravatar.com/avatar/39488f9d172ab92fd352f2cd7b73258d?s=24) mza ](https://speakerdeck.com/mza)
 
@@ -362,11 +274,7 @@ A talk about cookies I presented in HITCON 2019
 
   7.2k
 
- [
-
- We Analyzed 250 Million AI Search Results: Here's What I Found
-
- ](https://speakerdeck.com/joshbly/we-analyzed-250-million-ai-search-results-heres-what-i-found)
+ [We Analyzed 250 Million AI Search Results: Here's What I Found](https://speakerdeck.com/joshbly/we-analyzed-250-million-ai-search-results-heres-what-i-found)
 
  [ ![Avatar for Josh Blyskal](https://secure.gravatar.com/avatar/466d1e24bc0d3058fb53bc890043c3e7?s=24) joshbly ](https://speakerdeck.com/joshbly)
 
@@ -374,11 +282,7 @@ A talk about cookies I presented in HITCON 2019
 
   1.7k
 
- [
-
- The Power of CSS Pseudo Elements
-
- ](https://speakerdeck.com/geoffreycrofte/the-power-of-css-pseudo-elements)
+ [The Power of CSS Pseudo Elements](https://speakerdeck.com/geoffreycrofte/the-power-of-css-pseudo-elements)
 
  [ ![Avatar for Geoffrey Crofte](https://secure.gravatar.com/avatar/5b6a2bd86ef643786a381a212e0ef2f1?s=24) geoffreycrofte ](https://speakerdeck.com/geoffreycrofte)
 
@@ -386,11 +290,7 @@ A talk about cookies I presented in HITCON 2019
 
   6.5k
 
- [
-
- Odyssey Design
-
- ](https://speakerdeck.com/rkendrick25/odyssey-design)
+ [Odyssey Design](https://speakerdeck.com/rkendrick25/odyssey-design)
 
  [ ![Avatar for Ryan Kendrick](https://secure.gravatar.com/avatar/83e53d75b8e98c1d1cfe4680c60bf74b?s=24) rkendrick25 ](https://speakerdeck.com/rkendrick25)
 
@@ -400,11 +300,7 @@ A talk about cookies I presented in HITCON 2019
 
   750
 
- [
-
- Agile Leadership in an Agile Organization
-
- ](https://speakerdeck.com/kimpetersen/agile-leadership-in-an-agile-organization)
+ [Agile Leadership in an Agile Organization](https://speakerdeck.com/kimpetersen/agile-leadership-in-an-agile-organization)
 
  [ ![Avatar for Dr. Kim W Petersen](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTExNTk5LCJwdXIiOiJibG9iX2lkIn19--c839f1398dd16406fd4e226a0a615c938c7e32fd/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/Screenshot%20Kim-reduced.jpg) kimpetersen ](https://speakerdeck.com/kimpetersen)
 

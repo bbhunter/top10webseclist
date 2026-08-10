@@ -64,37 +64,9 @@ page going offline. To read the original, follow the link above.
 
 # Arc Browser UXSS, Local File Read, Arbitrary File Creation and Path Traversal to RCE
 
-[
-
-![Renwa](https://miro.medium.com/v2/resize:fill:64:64/1*r_V5EoylIXZ2Ot6ShbuRtA.png)
-
-](https://medium.com/@renwa?source=post_page---byline--b439f2a299d1---------------------------------------)
+[![Renwa](https://miro.medium.com/v2/resize:fill:64:64/1*r_V5EoylIXZ2Ot6ShbuRtA.png)](https://medium.com/@renwa?source=post_page---byline--b439f2a299d1---------------------------------------)
 
 [Renwa](https://medium.com/@renwa?source=post_page---byline--b439f2a299d1---------------------------------------)
-
-6 min readNov 13, 2024
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2Fb439f2a299d1&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Farc-browser-uxss-local-file-read-arbitrary-file-creation-and-path-traversal-to-rce-b439f2a299d1&user=Renwa&userId=3f8ae70e3957&source=---header_actions--b439f2a299d1---------------------clap_footer------------------)
-
---
-
-1
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2Fb439f2a299d1&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Farc-browser-uxss-local-file-read-arbitrary-file-creation-and-path-traversal-to-rce-b439f2a299d1&user=Renwa&userId=3f8ae70e3957&source=---header_actions--b439f2a299d1---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fb439f2a299d1&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Farc-browser-uxss-local-file-read-arbitrary-file-creation-and-path-traversal-to-rce-b439f2a299d1&source=---header_actions--b439f2a299d1---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3Db439f2a299d1&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Farc-browser-uxss-local-file-read-arbitrary-file-creation-and-path-traversal-to-rce-b439f2a299d1&source=---header_actions--b439f2a299d1---------------------post_audio_button------------------)
-
-Share
 
 After announcing the [bug bounty program](https://arc.net/security) I downloaded the browser and started looking for vulnerabilities, using my reverse engineering skills I looked at the browser binary
 

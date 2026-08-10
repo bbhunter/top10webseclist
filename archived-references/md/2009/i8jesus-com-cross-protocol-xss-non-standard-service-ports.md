@@ -245,5 +245,3 @@ Yes, all of what I’ve said applies to other services as well. IE doesn’t blo
 - [ha.ckers.org](http://ha.ckers.org/)
 - [jeremiah](http://jeremiahgrossman.blogspot.com/)
 - [tssci](http://tssci-security.com)
-
-## Spotlight

@@ -70,37 +70,9 @@ Java
 
 # Write-up for a Path Traversal on Gravitee.io
 
-[
-
-![Maxime Escourbiac](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*_38gqUeePp4VHuQR)
-
-](https://medium.com/@maxime.escourbiac?source=post_page---byline--8835941be69f---------------------------------------)
+[![Maxime Escourbiac](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*_38gqUeePp4VHuQR)](https://medium.com/@maxime.escourbiac?source=post_page---byline--8835941be69f---------------------------------------)
 
 [Maxime Escourbiac](https://medium.com/@maxime.escourbiac?source=post_page---byline--8835941be69f---------------------------------------)
-
-3 min readDec 9, 2019
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F8835941be69f&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40maxime.escourbiac%2Fwrite-up-of-path-traversal-on-gravitee-io-8835941be69f&user=Maxime+Escourbiac&userId=f260bd556dca&source=---header_actions--8835941be69f---------------------clap_footer------------------)
-
---
-
-2
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F8835941be69f&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40maxime.escourbiac%2Fwrite-up-of-path-traversal-on-gravitee-io-8835941be69f&user=Maxime+Escourbiac&userId=f260bd556dca&source=---header_actions--8835941be69f---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F8835941be69f&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40maxime.escourbiac%2Fwrite-up-of-path-traversal-on-gravitee-io-8835941be69f&source=---header_actions--8835941be69f---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D8835941be69f&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40maxime.escourbiac%2Fwrite-up-of-path-traversal-on-gravitee-io-8835941be69f&source=---header_actions--8835941be69f---------------------post_audio_button------------------)
-
-Share
 
 This article will present an uncommon vulnerability discovered by the Michelin CERT team on Gravitee.io.
 

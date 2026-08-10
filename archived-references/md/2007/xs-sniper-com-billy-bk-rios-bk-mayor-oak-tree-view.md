@@ -71,8 +71,6 @@ I’m excited about ***[Google Docs](http://docs.google.com)***…. although the
 
  So I made my way to docs.google.com to see what the hype is all about. I found the link for “***[Watch a Video](http://www.youtube.com/watch?v=eRqUE6IHTEA)***” on the login page. I like Google’s videos and this one did not disappoint. About half way through the video (1:60), I saw something that made me put my beer down… a link to a Google Document.
 
-[](http://xs-sniper.com/blog/wp-content/uploads/2007/09/youtube-vid.jpg)
-
 [![Link to Google Doc](http://xs-sniper.com/blog/wp-content/uploads/2007/09/link-to-google-doc.jpg)](http://xs-sniper.com/blog/wp-content/uploads/2007/09/link-to-google-doc.jpg)
 
 Being the curious sort, I entered the ***[link](http://docs.google.com/Doc?id=dgkcctbn_50d5nhbc&invite=d5xj2f8)*** into my browser address bar. I was surprised to see the following document:
@@ -80,8 +78,6 @@ Being the curious sort, I entered the ***[link](http://docs.google.com/Doc?id=dg
 [![Oak Tree View](http://xs-sniper.com/blog/wp-content/uploads/2007/09/oaktree-view.thumbnail.jpg)](http://xs-sniper.com/blog/wp-content/uploads/2007/09/oaktree-view.jpg)
 
 Now, being able to view someone else’s document is pretty bad… but this is a demo… maybe they WANT everyone to see this document… that’s understandable. So what happened next REALLY surprised me… I clicked on the “Edit this page” link, entered my creds… and lo and behold… I had full rights to edit/modify the Oak Tree View newsletter!
-
-[](http://xs-sniper.com/blog/wp-content/uploads/2007/09/edit-document.jpg)
 
 [![Full Edit Rights](http://xs-sniper.com/blog/wp-content/uploads/2007/09/edit-email-masked.thumbnail.jpg)](http://xs-sniper.com/blog/wp-content/uploads/2007/09/edit-email-masked.jpg)
 

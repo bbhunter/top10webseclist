@@ -98,7 +98,7 @@ About a year ago, [Marcus Niemietz](https://web.archive.org/web/20171017190804/h
 
 ```
 
-| [![](https://web.archive.org/web/20171017190804im_/http://4.bp.blogspot.com/-aZtMFqlSfqE/TxbFdJhaH_I/AAAAAAAAE6E/J2Q849B6E1g/s400/cursorjacking.jpg)](https://web.archive.org/web/20171017190804/http://4.bp.blogspot.com/-aZtMFqlSfqE/TxbFdJhaH_I/AAAAAAAAE6E/J2Q849B6E1g/s1600/cursorjacking.jpg) |  |
+| [!](https://web.archive.org/web/20171017190804/http://4.bp.blogspot.com/-aZtMFqlSfqE/TxbFdJhaH_I/AAAAAAAAE6E/J2Q849B6E1g/s1600/cursorjacking.jpg) |  |
 | The one on the left is real, right is fake. The idea is to distract you from noticing the left one. |  |
 
 ##  Demo

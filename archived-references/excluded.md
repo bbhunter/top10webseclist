@@ -10,7 +10,7 @@ Three causes, and they are not the same:
 
 - **broken capture** - what came back was not the document: a browser error
   page, a bot wall, a consent gate, a not-found page. This is FIXABLE, so it is
-  also on [needs-work.md](needs-work.md).
+  also on [document-gaps.md](document-gaps.md).
 - **out of scope** - the URL is cited only by this repository's own tooling, so
   it was never a research citation.
 - **maintainer decision** - the page adds nothing over a source already

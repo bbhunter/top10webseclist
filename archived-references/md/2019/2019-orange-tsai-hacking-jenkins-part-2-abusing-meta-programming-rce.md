@@ -374,7 +374,7 @@ Cool, it works! However, while reproducing this on the remote Jenkins, it shows:
 
 unable to resolve class org.jenkinsci.plugins.workflow.libs.Library
 
-![](https://blog.orange.tw/posts/2019-02-abusing-meta-programming-for-unauthenticated-rce/222fd717701e01f1-02.png)
+!
 
 What the hell!!! What’s wrong with that?
 

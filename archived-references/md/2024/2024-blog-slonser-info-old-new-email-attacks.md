@@ -191,7 +191,7 @@ sendMessage(to_string);
 
 ```
 
-You will see that the input is validated and newline characters are removed: ![](https://blog.slonser.info/posts/email-attacks/1.jpg)
+You will see that the input is validated and newline characters are removed: !
 
 But `[]`…:
 
@@ -201,7 +201,7 @@ sendMessage(to_string);
 
 ```
 
-Output: ![](https://blog.slonser.info/posts/email-attacks/2.jpg)
+Output: !
 
 This means we have the opportunity to insert CRLF in the address. Therefore, let’s try to use SMTP injection.
 
@@ -220,7 +220,7 @@ QUIT
 
 ```
 
-And you will see output: ![](https://blog.slonser.info/posts/email-attacks/3.jpg)
+And you will see output: !
 
 This means we can insert external SMTP commands, reset the current SMTP session using the RSET command, and send arbitrary emails from the service.
 
@@ -272,7 +272,7 @@ Gmail allows inserting `<something>` before the actual email address, which lead
 
 ```
 
-In Outlook, you will see [spoofed@gmail.com](mailto:spoofed@gmail.com): ![](https://blog.slonser.info/posts/email-attacks/gmail_outlook.jpg)
+In Outlook, you will see [spoofed@gmail.com](mailto:spoofed@gmail.com): !
 
 ## Grouping Nightmare
 
@@ -294,7 +294,7 @@ Let’s use this in outlook.
 
 ```
 
-![](https://blog.slonser.info/posts/email-attacks/outlook_gmail.jpg)
+!
 
 ### Gmail -> Outlook (part 2)
 
@@ -305,7 +305,7 @@ Slonser <spoofed@gmail.com>:<slonser.bugbounty@gmail.com>
 
 ```
 
-You will see sender: ![](https://blog.slonser.info/posts/email-attacks/gmail_outlook2.jpg)
+You will see sender: !
 
 ### Gmail -> …
 

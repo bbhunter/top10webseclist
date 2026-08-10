@@ -88,7 +88,7 @@ This time, when we looked into Home Assistant, we were interested in hunting for
 
 This research bore fruit as we were able to discover an interesting command injection vulnerability in `ffmpeg` and managed to exploit it using a novel technique to take over Home Assistant. We reported it to the developers, and it was patched in version [2026.6.2](https://github.com/home-assistant/core/releases/tag/2026.6.2#:~:text=Only%20allow%20specific%20protocols%20with%20ffmpeg%20in%20Wyoming%20satellite%20announce). Even though this issue was remediated, our submission was closed as N/A:
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/6a6981e50b76860d045cc408_submission_response.png)
+!
 
 Nonetheless, we have published an advisory [here](https://github.com/elttam/publications/blob/master/writeups/ffmpeg-arbitrary-file-read-advisory.md).
 
@@ -175,7 +175,7 @@ concat:subfile,,start,4617501,end,4617505,,:/bin/go2rtc|subfile,,start,1264,end,
 
 Here is a diagram that helps put it into perspective:
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/6a605a19afff24b41e920b01_ffmpeg_concat_stack_braced.png)
+!
 
 Besides the technical constraints, there were other constraints that needed to be satisfied during actual exploitation. These were:
 
@@ -188,7 +188,7 @@ Obtaining this token allows an attacker to abuse the supervisor APIs to achieve 
 
 The diagram below illustrates the trust boundary and the attack chain, with `(?)` marking the constraints:
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/6a605a47cf41f8691e0424b0_home_assistant_attack_chain.png)
+!
 
 ## Exploit in Action
 
@@ -290,221 +290,77 @@ Even though this vulnerability is no longer exploitable through the method outli
 
 In the age where OSS such as `ffmpeg` gets scrutinised for RCEs in its parsing logic, it is also worth looking into real-world applications that integrate OSS via dangerous usage patterns. We believe that the case study presented today is definitely applicable to many other applications out there.
 
-[
+[Cruising for Shells in Flowise](https://www.elttam.com/blog/cruising-for-shells-in-flowise)
 
-Cruising for Shells in Flowise
+[Your House Has an FFmpeg Problem](https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem)
 
-](https://www.elttam.com/blog/cruising-for-shells-in-flowise)
+[Exploiting Auth0 Defaults in XSS Attacks](https://www.elttam.com/blog/exploiting-auth0-defaults-in-xss-attacks)
 
-[
+[Jupyter Enterprise Gateway](https://www.elttam.com/blog/jupyter-enterprise-gateway)
 
-Your House Has an FFmpeg Problem
+[Golang code review notes II](https://www.elttam.com/blog/golang-code-review-notes-ii)
 
-](https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem)
+[ORM Leaking More Than You Joined For](https://www.elttam.com/blog/leaking-more-than-you-joined-for)
 
-[
+[Gotchas in Email Parsing - Lessons From Jakarta Mail](https://www.elttam.com/blog/jakarta-mail-primitives)
 
-Exploiting Auth0 Defaults in XSS Attacks
+[New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails](https://www.elttam.com/blog/rails-sqlite-gadget-rce)
 
-](https://www.elttam.com/blog/exploiting-auth0-defaults-in-xss-attacks)
+[A Monocle on Chronicles](https://www.elttam.com/blog/monocle-on-chronicles)
 
-[
+[DUCTF 2024 ESPecially Secure Boot Writeup](https://www.elttam.com/blog/ductf24-especially-secure-boot)
 
-Jupyter Enterprise Gateway
+[plORMbing your Prisma ORM with Time-based Attacks](https://www.elttam.com/blog/plorming-your-primsa-orm)
 
-](https://www.elttam.com/blog/jupyter-enterprise-gateway)
+[plORMbing your Django ORM](https://www.elttam.com/blog/plormbing-your-django-orm)
 
-[
+[Keeping up with the Pwnses](https://www.elttam.com/blog/talkback-intro)
 
-Golang code review notes II
+[Exploring the STSAFE-A110](https://www.elttam.com/blog/stsafe-a110)
 
-](https://www.elttam.com/blog/golang-code-review-notes-ii)
+[RE of LR3](https://www.elttam.com/blog/re-of-lr3)
 
-[
+[Abusing Amazon VPC CNI plugin for Kubernetes](https://www.elttam.com/blog/amazon-vpc-cni)
 
-ORM Leaking More Than You Joined For
+[PwnAssistant - Controlling /home's via a Home Assistant RCE](https://www.elttam.com/blog/pwnassistant)
 
-](https://www.elttam.com/blog/leaking-more-than-you-joined-for)
+[Cracking the Odd Case of Randomness in Java](https://www.elttam.com/blog/cracking-randomness-in-java)
 
-[
+[Golang code review notes](https://www.elttam.com/blog/golang-codereview)
 
-Gotchas in Email Parsing - Lessons From Jakarta Mail
+[ESP-IDF setup guide](https://www.elttam.com/blog/esp-idf-setup-guide)
 
-](https://www.elttam.com/blog/jakarta-mail-primitives)
+[Tuya IoT and EZ Mode Pairing](https://www.elttam.com/blog/ez-mode-pairing)
 
-[
+[Attacks on GCM with Repeated Nonces](https://www.elttam.com/blog/key-recovery-attacks-on-gcm)
 
-New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails
+[Simple Bugs With Complex Exploits](https://www.elttam.com/blog/simple-bugs-with-complex-exploits)
 
-](https://www.elttam.com/blog/rails-sqlite-gadget-rce)
+[Lua SUID Shells](https://www.elttam.com/blog/lua-suid-shells)
 
-[
+[Hacking with Environment Variables](https://www.elttam.com/blog/env)
 
-A Monocle on Chronicles
+[Are you winning if you're pinning?](https://www.elttam.com/blog/certpinning)
 
-](https://www.elttam.com/blog/monocle-on-chronicles)
+[Ruby 2.x Universal RCE Deserialization Gadget Chain](https://www.elttam.com/blog/ruby-deserialization)
 
-[
+[Fuze Multi-Card Technology Security Review](https://www.elttam.com/blog/fuzereview)
 
-DUCTF 2024 ESPecially Secure Boot Writeup
+[Remote LD_PRELOAD Exploitation](https://www.elttam.com/blog/goahead)
 
-](https://www.elttam.com/blog/ductf24-especially-secure-boot)
+[Building Hardened Docker Images from Scratch with Kubler](https://www.elttam.com/blog/kubler)
 
-[
+[Intro to SDR and RF Signal Analysis](https://www.elttam.com/blog/intro-sdr-and-rf-analysis)
 
-plORMbing your Prisma ORM with Time-based Attacks
+[Playing with canaries](https://www.elttam.com/blog/playing-with-canaries)
 
-](https://www.elttam.com/blog/plorming-your-primsa-orm)
+[EFF secure messaging scorecard review](https://www.elttam.com/blog/a-review-of-the-eff-secure-messaging-scorecard-pt2)
 
-[
+[Vuln research on the WAG54G home router](https://www.elttam.com/blog/vuln-research-on-the-wag54g-home-router)
 
-plORMbing your Django ORM
+[A review of the EFF secure messaging scorecard...](https://www.elttam.com/blog/a-review-of-the-eff-secure-messaging-scorecard-pt1)
 
-](https://www.elttam.com/blog/plormbing-your-django-orm)
-
-[
-
-Keeping up with the Pwnses
-
-](https://www.elttam.com/blog/talkback-intro)
-
-[
-
-Exploring the STSAFE-A110
-
-](https://www.elttam.com/blog/stsafe-a110)
-
-[
-
-RE of LR3
-
-](https://www.elttam.com/blog/re-of-lr3)
-
-[
-
-Abusing Amazon VPC CNI plugin for Kubernetes
-
-](https://www.elttam.com/blog/amazon-vpc-cni)
-
-[
-
-PwnAssistant - Controlling /home's via a Home Assistant RCE
-
-](https://www.elttam.com/blog/pwnassistant)
-
-[
-
-Cracking the Odd Case of Randomness in Java
-
-](https://www.elttam.com/blog/cracking-randomness-in-java)
-
-[
-
-Golang code review notes
-
-](https://www.elttam.com/blog/golang-codereview)
-
-[
-
-ESP-IDF setup guide
-
-](https://www.elttam.com/blog/esp-idf-setup-guide)
-
-[
-
-Tuya IoT and EZ Mode Pairing
-
-](https://www.elttam.com/blog/ez-mode-pairing)
-
-[
-
-Attacks on GCM with Repeated Nonces
-
-](https://www.elttam.com/blog/key-recovery-attacks-on-gcm)
-
-[
-
-Simple Bugs With Complex Exploits
-
-](https://www.elttam.com/blog/simple-bugs-with-complex-exploits)
-
-[
-
-Lua SUID Shells
-
-](https://www.elttam.com/blog/lua-suid-shells)
-
-[
-
-Hacking with Environment Variables
-
-](https://www.elttam.com/blog/env)
-
-[
-
-Are you winning if you're pinning?
-
-](https://www.elttam.com/blog/certpinning)
-
-[
-
-Ruby 2.x Universal RCE Deserialization Gadget Chain
-
-](https://www.elttam.com/blog/ruby-deserialization)
-
-[
-
-Fuze Multi-Card Technology Security Review
-
-](https://www.elttam.com/blog/fuzereview)
-
-[
-
-Remote LD_PRELOAD Exploitation
-
-](https://www.elttam.com/blog/goahead)
-
-[
-
-Building Hardened Docker Images from Scratch with Kubler
-
-](https://www.elttam.com/blog/kubler)
-
-[
-
-Intro to SDR and RF Signal Analysis
-
-](https://www.elttam.com/blog/intro-sdr-and-rf-analysis)
-
-[
-
-Playing with canaries
-
-](https://www.elttam.com/blog/playing-with-canaries)
-
-[
-
-EFF secure messaging scorecard review
-
-](https://www.elttam.com/blog/a-review-of-the-eff-secure-messaging-scorecard-pt2)
-
-[
-
-Vuln research on the WAG54G home router
-
-](https://www.elttam.com/blog/vuln-research-on-the-wag54g-home-router)
-
-[
-
-A review of the EFF secure messaging scorecard...
-
-](https://www.elttam.com/blog/a-review-of-the-eff-secure-messaging-scorecard-pt1)
-
-[
-
-Gaining console access to the WAG54G home router
-
-](https://www.elttam.com/blog/gaining-console-access-to-the-wag54g-home-router)
+[Gaining console access to the WAG54G home router](https://www.elttam.com/blog/gaining-console-access-to-the-wag54g-home-router)
 
 [
 

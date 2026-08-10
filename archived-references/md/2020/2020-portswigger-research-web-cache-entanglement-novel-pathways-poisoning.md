@@ -81,7 +81,7 @@ Director of Research
 
 -
 
- ![](https://portswigger.net/cms/images/7d/05/a25f-article-entanglement-article_article_copy_6.jpg)
+ !
 
 Caches are woven into websites throughout the net, discreetly juggling data between users, and yet they are rarely scrutinized in any depth. In this paper, I'll show you how to remotely probe through the inner workings of caches to find subtle inconsistencies, and combine these with gadgets to build majestic exploit chains.
 
@@ -102,7 +102,7 @@ Cookie: language=en;
 
 Request components that aren't included in the cache key are known as "unkeyed" components. If an unkeyed component can be used to make an application serve a harmful response, then it may be possible to manipulate the cache into saving this, and serving it to other users:
 
-![](https://portswigger.net/cms/images/71/c5/a59c-article-cachepoisoning.svg)
+!
 
 ### Beyond Prior Research
 
@@ -114,7 +114,7 @@ In this paper I'll target the two request components that are almost always incl
 
  To reliably identify this class of cache poisoning vulnerabilities, we'll apply the following methodology:
 
-![](https://portswigger.net/cms/images/f8/ba/1abc-article-methodology.png)
+!
 
 ### Select a Cache Oracle
 
@@ -675,5 +675,3 @@ The only realistic way to achieve resilience against this attack is to acknowled
  [ web cache poisoning ](https://portswigger.net/research/web-cache-poisoning) [ James Favourites ](https://portswigger.net/research/james-kettle) [ Presentations ](https://portswigger.net/research/presentations) [ Black Hat ](https://portswigger.net/research/black-hat)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

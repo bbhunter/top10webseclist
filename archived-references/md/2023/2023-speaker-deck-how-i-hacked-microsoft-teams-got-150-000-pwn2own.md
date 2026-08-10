@@ -79,11 +79,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
  [ See All by Masato Kinugawa ](https://speakerdeck.com/masatokinugawa)
 
- [
-
- Shadow DOMとセキュリティ - 光と影の境界を探る / Shibuya.XSS techtalk #13
-
- ](https://speakerdeck.com/masatokinugawa/shibuya-dot-xss-techtalk-number-13)
+ [Shadow DOMとセキュリティ - 光と影の境界を探る / Shibuya.XSS techtalk #13](https://speakerdeck.com/masatokinugawa/shibuya-dot-xss-techtalk-number-13)
 
  [ ![Avatar for Masato Kinugawa](https://secure.gravatar.com/avatar/1a5bce24526a7d6f1ab89678df2d673c?s=24) masatokinugawa ](https://speakerdeck.com/masatokinugawa)
 
@@ -91,11 +87,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   890
 
- [
-
- Shadow DOM & Security - Exploring the boundary between light and shadow
-
- ](https://speakerdeck.com/masatokinugawa/shadow-dom-and-security-exploring-the-boundary-between-light-and-shadow)
+ [Shadow DOM & Security - Exploring the boundary between light and shadow](https://speakerdeck.com/masatokinugawa/shadow-dom-and-security-exploring-the-boundary-between-light-and-shadow)
 
  [ ![Avatar for Masato Kinugawa](https://secure.gravatar.com/avatar/1a5bce24526a7d6f1ab89678df2d673c?s=24) masatokinugawa ](https://speakerdeck.com/masatokinugawa)
 
@@ -103,11 +95,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   2.2k
 
- [
-
- ブラウザのレガシー・独自機能を愛でる-Firefoxの脆弱性4選- / Browser Crash Club #1
-
- ](https://speakerdeck.com/masatokinugawa/browser-crash-club-number-1)
+ [ブラウザのレガシー・独自機能を愛でる-Firefoxの脆弱性4選- / Browser Crash Club #1](https://speakerdeck.com/masatokinugawa/browser-crash-club-number-1)
 
  [ ![Avatar for Masato Kinugawa](https://secure.gravatar.com/avatar/1a5bce24526a7d6f1ab89678df2d673c?s=24) masatokinugawa ](https://speakerdeck.com/masatokinugawa)
 
@@ -115,11 +103,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   1.2k
 
- [
-
- 注目したいクライアントサイドの脆弱性2選/ Security.Tokyo #3
-
- ](https://speakerdeck.com/masatokinugawa/security-dot-tokyo-number-3)
+ [注目したいクライアントサイドの脆弱性2選/ Security.Tokyo #3](https://speakerdeck.com/masatokinugawa/security-dot-tokyo-number-3)
 
  [ ![Avatar for Masato Kinugawa](https://secure.gravatar.com/avatar/1a5bce24526a7d6f1ab89678df2d673c?s=24) masatokinugawa ](https://speakerdeck.com/masatokinugawa)
 
@@ -127,11 +111,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   4.4k
 
- [
-
- バグハンティングのすゝめ / P3NFEST
-
- ](https://speakerdeck.com/masatokinugawa/p3nfest)
+ [バグハンティングのすゝめ / P3NFEST](https://speakerdeck.com/masatokinugawa/p3nfest)
 
  [ ![Avatar for Masato Kinugawa](https://secure.gravatar.com/avatar/1a5bce24526a7d6f1ab89678df2d673c?s=24) masatokinugawa ](https://speakerdeck.com/masatokinugawa)
 
@@ -139,11 +119,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   2.7k
 
- [
-
- Pwn2OwnでMicrosoft Teamsをハッキングして2000万円を獲得した方法/ Shibuya.XSS techtalk #12
-
- ](https://speakerdeck.com/masatokinugawa/shibuya-dot-xss-techtalk-number-12)
+ [Pwn2OwnでMicrosoft Teamsをハッキングして2000万円を獲得した方法/ Shibuya.XSS techtalk #12](https://speakerdeck.com/masatokinugawa/shibuya-dot-xss-techtalk-number-12)
 
  [ ![Avatar for Masato Kinugawa](https://secure.gravatar.com/avatar/1a5bce24526a7d6f1ab89678df2d673c?s=24) masatokinugawa ](https://speakerdeck.com/masatokinugawa)
 
@@ -151,11 +127,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   21k
 
- [
-
- JSでDoSる/ Shibuya.XSS techtalk #11
-
- ](https://speakerdeck.com/masatokinugawa/shibuya-dot-xss-techtalk-number-11)
+ [JSでDoSる/ Shibuya.XSS techtalk #11](https://speakerdeck.com/masatokinugawa/shibuya-dot-xss-techtalk-number-11)
 
  [ ![Avatar for Masato Kinugawa](https://secure.gravatar.com/avatar/1a5bce24526a7d6f1ab89678df2d673c?s=24) masatokinugawa ](https://speakerdeck.com/masatokinugawa)
 
@@ -163,11 +135,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   7.2k
 
- [
-
- Electron: Abusing the lack of context isolation - CureCon(en)
-
- ](https://speakerdeck.com/masatokinugawa/electron-abusing-the-lack-of-context-isolation-curecon-en)
+ [Electron: Abusing the lack of context isolation - CureCon(en)](https://speakerdeck.com/masatokinugawa/electron-abusing-the-lack-of-context-isolation-curecon-en)
 
  [ ![Avatar for Masato Kinugawa](https://secure.gravatar.com/avatar/1a5bce24526a7d6f1ab89678df2d673c?s=24) masatokinugawa ](https://speakerdeck.com/masatokinugawa)
 
@@ -175,11 +143,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   110k
 
- [
-
- Electron: Context Isolationの欠如を利用した任意コード実行 / Electron: Abusing the lack of context isolation - CureCon(ja)
-
- ](https://speakerdeck.com/masatokinugawa/electron-abusing-the-lack-of-context-isolation-curecon-ja)
+ [Electron: Context Isolationの欠如を利用した任意コード実行 / Electron: Abusing the lack of context isolation - CureCon(ja)](https://speakerdeck.com/masatokinugawa/electron-abusing-the-lack-of-context-isolation-curecon-ja)
 
  [ ![Avatar for Masato Kinugawa](https://secure.gravatar.com/avatar/1a5bce24526a7d6f1ab89678df2d673c?s=24) masatokinugawa ](https://speakerdeck.com/masatokinugawa)
 
@@ -191,11 +155,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
  [ See All in Technology ](https://speakerdeck.com/c/technology)
 
- [
-
- 【CEDEC2026】『ウマ娘 プリティーダービー』 英語版のキャラクターの方言や口調をローカライズするための創造的アプローチ
-
- ](https://speakerdeck.com/cygames/cygames_202607_cedec2026_05)
+ [【CEDEC2026】『ウマ娘 プリティーダービー』 英語版のキャラクターの方言や口調をローカライズするための創造的アプローチ](https://speakerdeck.com/cygames/cygames_202607_cedec2026_05)
 
  [ ![Avatar for Cygames, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzQyMzEyLCJwdXIiOiJibG9iX2lkIn19--79c11d4c6a736302463ad65244e1053a62bdbfa4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/SpeakerDeck_%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.png) cygames ](https://speakerdeck.com/cygames)
 
@@ -205,11 +165,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   180
 
- [
-
- 【Google Cloud Next Tokyo'26】Gemini Enterprise と Oracle AI Database で実現する、業務データ活用を実現する AI エージェント実装
-
- ](https://speakerdeck.com/shisyu_gaku/google-cloud-next-tokyo26-gemini-enterprise-to-oracle-ai-database-deshi-xian-suru-ye-wu-detahuo-yong-woshi-xian-suru-ai-ezientoshi-zhuang)
+ [【Google Cloud Next Tokyo'26】Gemini Enterprise と Oracle AI Database で実現する、業務データ活用を実現する AI エージェント実装](https://speakerdeck.com/shisyu_gaku/google-cloud-next-tokyo26-gemini-enterprise-to-oracle-ai-database-deshi-xian-suru-ye-wu-detahuo-yong-woshi-xian-suru-ai-ezientoshi-zhuang)
 
  [ ![Avatar for KoheiOgawa](https://secure.gravatar.com/avatar/0fa6038e477031fcca028bab0efe07e3?s=24) shisyu_gaku ](https://speakerdeck.com/shisyu_gaku)
 
@@ -217,11 +173,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   210
 
- [
-
- 攻撃と防御で学ぶAI時代のプロダクトセキュリティ演習
-
- ](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_yamada_nakanishi)
+ [攻撃と防御で学ぶAI時代のプロダクトセキュリティ演習](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_yamada_nakanishi)
 
  [ ![Avatar for Recruit](https://secure.gravatar.com/avatar/85da685d91fda190e2e3162d0de248a4?s=24) recruitengineers ](https://speakerdeck.com/recruitengineers)
 
@@ -231,11 +183,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   470
 
- [
-
- 【CEDEC2026】次世代デジタルカードゲームのサーバー設計と運用 〜『Shadowverse: Worlds Beyond』の舞台裏～
-
- ](https://speakerdeck.com/cygames/cygames_202607_cedec2026_06)
+ [【CEDEC2026】次世代デジタルカードゲームのサーバー設計と運用 〜『Shadowverse: Worlds Beyond』の舞台裏～](https://speakerdeck.com/cygames/cygames_202607_cedec2026_06)
 
  [ ![Avatar for Cygames, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzQyMzEyLCJwdXIiOiJibG9iX2lkIn19--79c11d4c6a736302463ad65244e1053a62bdbfa4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/SpeakerDeck_%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.png) cygames ](https://speakerdeck.com/cygames)
 
@@ -245,11 +193,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   930
 
- [
-
- AIが自社のTableauを操作する世界へ：Tableau MCP超入門
-
- ](https://speakerdeck.com/tbtykk/aigazi-she-notableauwocao-zuo-surushi-jie-he-tableau-mcpchao-ru-men)
+ [AIが自社のTableauを操作する世界へ：Tableau MCP超入門](https://speakerdeck.com/tbtykk/aigazi-she-notableauwocao-zuo-surushi-jie-he-tableau-mcpchao-ru-men)
 
  [ ![Avatar for Yukako Tabata](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzkyNDE5LCJwdXIiOiJibG9iX2lkIn19--78d72626096f0b1fdf02a1dd5cb0e47e41307538/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/me_ai.png) tbtykk ](https://speakerdeck.com/tbtykk)
 
@@ -257,11 +201,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   110
 
- [
-
- 組織にどうSREを根付かせるか？〜IVRyの場合〜
-
- ](https://speakerdeck.com/abnoumaru/zu-zhi-nidousrewogen-fu-kaseruka-ivrynochang-he)
+ [組織にどうSREを根付かせるか？〜IVRyの場合〜](https://speakerdeck.com/abnoumaru/zu-zhi-nidousrewogen-fu-kaseruka-ivrynochang-he)
 
  [ ![Avatar for abnoumaru](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTM4MDc4LCJwdXIiOiJibG9iX2lkIn19--78140abd8f30bccf9edf393c13f6a525ce6deba4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/abnoumaru.jpg) abnoumaru ](https://speakerdeck.com/abnoumaru)
 
@@ -269,11 +209,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   330
 
- [
-
- AI ネイティブな組織に Gemini Enterprise Agent Platform がなぜ必要なのか
-
- ](https://speakerdeck.com/asei/ai-neiteibunazu-zhi-ni-gemini-enterprise-agent-platform-ganazebi-yao-nanoka)
+ [AI ネイティブな組織に Gemini Enterprise Agent Platform がなぜ必要なのか](https://speakerdeck.com/asei/ai-neiteibunazu-zhi-ni-gemini-enterprise-agent-platform-ganazebi-yao-nanoka)
 
  [ ![Avatar for Asei Sugiyama](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTExMzEsInB1ciI6ImJsb2JfaWQifX0=--6ab0da6f609ebde4bd7f2e4864304699cc2b6203/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/icon.jpeg) asei ](https://speakerdeck.com/asei)
 
@@ -281,11 +217,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   180
 
- [
-
- Webアクセシビリティ入門 2026
-
- ](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_web_shizukuishi)
+ [Webアクセシビリティ入門 2026](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_web_shizukuishi)
 
  [ ![Avatar for Recruit](https://secure.gravatar.com/avatar/85da685d91fda190e2e3162d0de248a4?s=24) recruitengineers ](https://speakerdeck.com/recruitengineers)
 
@@ -295,11 +227,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   350
 
- [
-
- サイバー捜査員研修（後半）
-
- ](https://speakerdeck.com/nomizone/training-session-for-cyber-investigators-part-2)
+ [サイバー捜査員研修（後半）](https://speakerdeck.com/nomizone/training-session-for-cyber-investigators-part-2)
 
  [ ![Avatar for Nomizo Nomizo](https://secure.gravatar.com/avatar/cfa476ea86b3f372d114ab5eca50425b?s=24) nomizone ](https://speakerdeck.com/nomizone)
 
@@ -307,11 +235,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   760
 
- [
-
- JavaScript 研修 (2026)
-
- ](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_mizutari)
+ [JavaScript 研修 (2026)](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_mizutari)
 
  [ ![Avatar for Recruit](https://secure.gravatar.com/avatar/85da685d91fda190e2e3162d0de248a4?s=24) recruitengineers ](https://speakerdeck.com/recruitengineers)
 
@@ -321,11 +245,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   360
 
- [
-
- 【CEDEC2026】グラフィックスエンジニアのためのニューラルシェーディング入門
-
- ](https://speakerdeck.com/cygames/cygames_202607_cedec2026_03)
+ [【CEDEC2026】グラフィックスエンジニアのためのニューラルシェーディング入門](https://speakerdeck.com/cygames/cygames_202607_cedec2026_03)
 
  [ ![Avatar for Cygames, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzQyMzEyLCJwdXIiOiJibG9iX2lkIn19--79c11d4c6a736302463ad65244e1053a62bdbfa4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/SpeakerDeck_%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.png) cygames ](https://speakerdeck.com/cygames)
 
@@ -335,11 +255,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   110
 
- [
-
- ラジオの科学
-
- ](https://speakerdeck.com/frievea/radio-explained)
+ [ラジオの科学](https://speakerdeck.com/frievea/radio-explained)
 
  [ ![Avatar for Frieve-A](https://secure.gravatar.com/avatar/98372e0220a3447bc5d8df1e7ba61ca5?s=24) frievea ](https://speakerdeck.com/frievea)
 
@@ -351,11 +267,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [
-
- Optimizing for Happiness
-
- ](https://speakerdeck.com/mojombo/optimizing-for-happiness)
+ [Optimizing for Happiness](https://speakerdeck.com/mojombo/optimizing-for-happiness)
 
  [ ![Avatar for Tom Preston-Werner](https://secure.gravatar.com/avatar/25c7c18223fb42a4c6ae1c8db6f50f9b?s=24) mojombo ](https://speakerdeck.com/mojombo)
 
@@ -363,11 +275,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   71k
 
- [
-
- The Invisible Side of Design
-
- ](https://speakerdeck.com/smashingmag/the-invisible-side-of-design)
+ [The Invisible Side of Design](https://speakerdeck.com/smashingmag/the-invisible-side-of-design)
 
  [ ![Avatar for Vitaly Friedman](https://secure.gravatar.com/avatar/b3d6434763caa0ef5dc4b792662c49f7?s=24) smashingmag ](https://speakerdeck.com/smashingmag)
 
@@ -375,11 +283,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   52k
 
- [
-
- Into the Great Unknown - MozCon
-
- ](https://speakerdeck.com/thekraken/into-the-great-unknown-mozcon)
+ [Into the Great Unknown - MozCon](https://speakerdeck.com/thekraken/into-the-great-unknown-mozcon)
 
  [ ![Avatar for Noah Learner](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2MTAyLCJwdXIiOiJibG9iX2lkIn19--00ef9d097f9c3f99abcc76113c2bb9648f33a0e8/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/noah.jpeg) thekraken ](https://speakerdeck.com/thekraken)
 
@@ -387,11 +291,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   2.7k
 
- [
-
- Evolving SEO for Evolving Search Engines
-
- ](https://speakerdeck.com/ryanjones/evolving-seo-for-evolving-search-engines)
+ [Evolving SEO for Evolving Search Engines](https://speakerdeck.com/ryanjones/evolving-seo-for-evolving-search-engines)
 
  [ ![Avatar for Ryan Jones](https://secure.gravatar.com/avatar/2bf27e1a5632db8aba77510c78aaa9a2?s=24) ryanjones ](https://speakerdeck.com/ryanjones)
 
@@ -399,11 +299,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   250
 
- [
-
- Automating Front-end Workflow
-
- ](https://speakerdeck.com/addyosmani/automating-front-end-workflow)
+ [Automating Front-end Workflow](https://speakerdeck.com/addyosmani/automating-front-end-workflow)
 
  [ ![Avatar for Addy Osmani](https://secure.gravatar.com/avatar/96270e4c3e5e9806cf7245475c00b275?s=24) addyosmani ](https://speakerdeck.com/addyosmani)
 
@@ -411,11 +307,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   210k
 
- [
-
- Introduction to Domain-Driven Design and Collaborative software design
-
- ](https://speakerdeck.com/baasie/introduction-to-domain-driven-design-and-collaborative-software-design)
+ [Introduction to Domain-Driven Design and Collaborative software design](https://speakerdeck.com/baasie/introduction-to-domain-driven-design-and-collaborative-software-design)
 
  [ ![Avatar for Kenny Baas-Schwegler](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjUwMDA5LCJwdXIiOiJibG9iX2lkIn19--11a66eb48413d60f9ccb6c1e12df4a3d45b184fe/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/kenny_small_round.jpg) baasie ](https://speakerdeck.com/baasie)
 
@@ -423,11 +315,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   920
 
- [
-
- Keith and Marios Guide to Fast Websites
-
- ](https://speakerdeck.com/keithpitt/keith-and-marios-guide-to-fast-websites)
+ [Keith and Marios Guide to Fast Websites](https://speakerdeck.com/keithpitt/keith-and-marios-guide-to-fast-websites)
 
  [ ![Avatar for Keith Pitt](https://secure.gravatar.com/avatar/e14f55d3f939977cecbf51b64ff6f861?s=24) keithpitt ](https://speakerdeck.com/keithpitt)
 
@@ -435,11 +323,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   23k
 
- [
-
- The World Runs on Bad Software
-
- ](https://speakerdeck.com/bkeepers/the-world-runs-on-bad-software)
+ [The World Runs on Bad Software](https://speakerdeck.com/bkeepers/the-world-runs-on-bad-software)
 
  [ ![Avatar for Brandon Keepers](https://secure.gravatar.com/avatar/20bfe76b3d6105641f879fe45cfc9272?s=24) bkeepers ](https://speakerdeck.com/bkeepers)
 
@@ -449,11 +333,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   12k
 
- [
-
- How to Talk to Developers About Accessibility
-
- ](https://speakerdeck.com/jct/how-to-talk-to-developers-about-accessibility)
+ [How to Talk to Developers About Accessibility](https://speakerdeck.com/jct/how-to-talk-to-developers-about-accessibility)
 
  [ ![Avatar for Jason CranfordTeague](https://secure.gravatar.com/avatar/1c109204af0708f6ad89ad81a8f35ce9?s=24) jct ](https://speakerdeck.com/jct)
 
@@ -461,11 +341,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   480
 
- [
-
- How to build an LLM SEO readiness audit: a practical framework
-
- ](https://speakerdeck.com/nmsamuel/how-to-build-an-llm-seo-readiness-audit-a-practical-framework)
+ [How to build an LLM SEO readiness audit: a practical framework](https://speakerdeck.com/nmsamuel/how-to-build-an-llm-seo-readiness-audit-a-practical-framework)
 
  [ ![Avatar for Nick Samuel](https://secure.gravatar.com/avatar/b8ae5f207a0dc0e5518184aaada82d09?s=24) nmsamuel ](https://speakerdeck.com/nmsamuel)
 
@@ -473,11 +349,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   830
 
- [
-
- Imperfection Machines: The Place of Print at Facebook
-
- ](https://speakerdeck.com/scottboms/imperfection-machines-the-place-of-print-at-facebook)
+ [Imperfection Machines: The Place of Print at Facebook](https://speakerdeck.com/scottboms/imperfection-machines-the-place-of-print-at-facebook)
 
  [ ![Avatar for Scott Boms](https://secure.gravatar.com/avatar/7c8469ee8c9e594c65c59b919626c08d?s=24) scottboms ](https://speakerdeck.com/scottboms)
 
@@ -485,11 +357,7 @@ English version of my presentation at Shibuya.XSS techtalk #12.
 
   14k
 
- [
-
- XXLCSS - How to scale CSS and keep your sanity
-
- ](https://speakerdeck.com/sugarenia/xxlcss-how-to-scale-css-and-keep-your-sanity)
+ [XXLCSS - How to scale CSS and keep your sanity](https://speakerdeck.com/sugarenia/xxlcss-how-to-scale-css-and-keep-your-sanity)
 
  [ ![Avatar for Zaharenia Atzitzikaki](https://secure.gravatar.com/avatar/1b8ad785acdd1ce1c99914b1c2a4e10e?s=24) sugarenia ](https://speakerdeck.com/sugarenia)
 

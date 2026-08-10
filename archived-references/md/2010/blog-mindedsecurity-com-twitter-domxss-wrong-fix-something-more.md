@@ -91,7 +91,7 @@ http://twitter.com/#!javascript:alert(document.domain);
 
 as shown in the following screenshot:
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlFUp5lML7D67CTl5NhdtuyGK1wypojgVqpQWC30_s5OfkRVoYoWLbT14VIUHAYiEfz72SHQguMq57wu13ZXWsbWeuP6EtE1ewgDMKcINaua1x46cbLMeQO2_DywViWEMSvfD_9AaBTFGK/s400/TwitterXss1.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlFUp5lML7D67CTl5NhdtuyGK1wypojgVqpQWC30_s5OfkRVoYoWLbT14VIUHAYiEfz72SHQguMq57wu13ZXWsbWeuP6EtE1ewgDMKcINaua1x46cbLMeQO2_DywViWEMSvfD_9AaBTFGK/s1600/TwitterXss1.jpg)
+[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlFUp5lML7D67CTl5NhdtuyGK1wypojgVqpQWC30_s5OfkRVoYoWLbT14VIUHAYiEfz72SHQguMq57wu13ZXWsbWeuP6EtE1ewgDMKcINaua1x46cbLMeQO2_DywViWEMSvfD_9AaBTFGK/s1600/TwitterXss1.jpg)
 Very simple and effective.
 After spotting the issue, I sent an email to twitter warning them about it but not without apologizing for finding it in the middle of worm spreading.
 

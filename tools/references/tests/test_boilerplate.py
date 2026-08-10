@@ -161,5 +161,155 @@ class TestDeadLinks(unittest.TestCase):
         self.assertGreater(len(text), 2000)
 
 
+class TestSalesPanel(unittest.TestCase):
+    """Removing furniture one block at a time cannot clear a sales panel: the
+    sweep stops at the first block no rule matches, and a panel is mostly
+    ordinary sentences. Six Searchlight Cyber write-ups ended with seven blocks
+    of them."""
+
+    PANEL = ("\n\n#### in this article\n\n"
+             "## Book your demo: Identify cyber threats earlier\n\n"
+             "Searchlight Cyber is used by security professionals to surface "
+             "criminal activity.\n\n"
+             "**Enhance your security** with automated dark web monitoring\n\n"
+             "**Continuously monitor for threats**, including ransomware groups\n\n"
+             "**Prevent costly cyber incidents** and meet compliance requirements\n\n"
+             "## Fill in the form to get you demo\n")
+
+    def test_the_whole_panel_goes_from_its_heading(self):
+        text, removed = boilerplate.trim(ARTICLE + self.PANEL)
+        for phrase in ("Book your demo", "Enhance your security",
+                       "Fill in the form", "in this article"):
+            self.assertNotIn(phrase, text)
+        self.assertIn("smuggled prefix", text)
+        self.assertIn("sales-panel", removed)
+
+    def test_a_panel_is_never_taken_across_a_code_block(self):
+        """A listing below the heading means it is not a sales panel."""
+        text, _removed = boilerplate.trim(
+            ARTICLE + "\n\n## Get your demo\n\n```\nGET / HTTP/1.1\n```\n")
+        self.assertIn("GET / HTTP/1.1", text)
+
+    def test_a_panel_may_not_take_most_of_the_document(self):
+        text, _removed = boilerplate.trim("# T\n\n## Book your demo\n\n" + "x " * 20)
+        self.assertIn("Book your demo", text)
+
+
+class TestTrailingEmptySections(unittest.TestCase):
+    """A heading with nothing under it, from a MEASURED vocabulary. "Any bare
+    heading" would have taken `## evercookie, by samy kamkar, 2010/09/20` - the
+    document's own title - and `# # # End Advisory # # #`."""
+
+    def test_a_furniture_heading_left_empty_goes(self):
+        text, removed = boilerplate.trim(ARTICLE + "\n\n## Related Research\n")
+        self.assertNotIn("Related Research", text)
+        self.assertIn("empty-section", removed)
+
+    def test_the_documents_own_title_is_not_furniture(self):
+        title = "## evercookie, by [samy kamkar](mailto:code@sa.my), 2010/09/20"
+        text, _removed = boilerplate.trim(ARTICLE + "\n\n" + title + "\n")
+        self.assertIn("evercookie", text)
+
+    def test_an_advisorys_own_last_line_is_not_furniture(self):
+        text, _removed = boilerplate.trim(ARTICLE + "\n\n# # # End Advisory # # #\n")
+        self.assertIn("End Advisory", text)
+
+    def test_a_missing_presentation_video_still_says_so(self):
+        """Its body was an iframe that sanitisation removes by design, so the
+        heading is the only trace that a recording exists."""
+        text, _removed = boilerplate.trim(ARTICLE + "\n\n## Presentation Video\n")
+        self.assertIn("Presentation Video", text)
+
+    def test_a_bare_heading_at_the_head_is_never_touched(self):
+        text, _removed = boilerplate.trim("## Related Research\n\n" + ARTICLE)
+        self.assertIn("Related Research", text)
+
+
+class TestPublisherLinkFurniture(unittest.TestCase):
+    """Every archived Medium article opened with its byline avatar rendered as a
+    literal `[`, the picture, and then the whole profile URL as text - because an
+    anchor wrapping BLOCK content is not a Markdown link. 975 of those, and 3,980
+    invisible sign-in buttons."""
+
+    def test_a_block_anchor_becomes_a_link_on_one_line(self):
+        text, removed = boilerplate.tidy_links(
+            "[\n\n![Author](https://cdn.test/a.png)\n\n](https://author.test/profile)\n")
+        self.assertEqual(
+            text.strip(),
+            "[![Author](https://cdn.test/a.png)](https://author.test/profile)")
+        self.assertIn("block-anchor", removed)
+
+    def test_an_anchor_with_nothing_to_click_goes(self):
+        text, removed = boilerplate.tidy_links(
+            "Body.\n\n[ ](https://medium.test/m/signin?operation=register)\n\nMore.\n")
+        self.assertNotIn("signin", text)
+        self.assertIn("Body.", text)
+        self.assertIn("More.", text)
+        self.assertIn("textless-link", removed)
+
+    def test_a_button_wearing_a_links_clothes_goes(self):
+        text, removed = boilerplate.tidy_links(
+            "[\n\nListen\n\n](https://medium.test/m/signin?dimension=post_audio_button)\n")
+        self.assertNotIn("Listen", text)
+        self.assertIn("social-button-link", removed)
+
+    def test_a_real_link_that_happens_to_say_share_survives(self):
+        """The label alone is not evidence; the target has to admit it too."""
+        source = "Read [Share](https://research.test/sharing-sessions) for the detail.\n"
+        text, _removed = boilerplate.tidy_links(source)
+        self.assertEqual(text, source)
+
+    def test_an_ordinary_inline_link_is_untouched(self):
+        source = "See [the paper](https://example.test/p.pdf) for proof.\n"
+        self.assertEqual(boilerplate.tidy_links(source)[0], source)
+
+    def test_it_is_idempotent(self):
+        once, _ = boilerplate.tidy_links(
+            "[\n\n![A](https://cdn.test/a.png)\n\n](https://a.test/p)\n")
+        twice, removed = boilerplate.tidy_links(once)
+        self.assertEqual(once, twice)
+        self.assertEqual(removed, [])
+
+    def test_a_fenced_example_is_never_rewritten(self):
+        source = "Payload:\n\n```\n[ ](https://x.test/signin)\n```\n\nDone.\n"
+        self.assertEqual(boilerplate.tidy_links(source)[0], source)
+
+
+class TestJunkLines(unittest.TestCase):
+    """Lines that describe the website's behaviour rather than the document."""
+
+    def test_the_reading_time_and_social_words_go(self):
+        text, removed = boilerplate.drop_junk_lines(
+            "# Title\n\nFollow\n\n9 min readFeb 21, 2022\n\nListen\n\nShare\n\n# TL;DR\n")
+        for word in ("Follow", "Listen", "Share", "min read"):
+            self.assertNotIn(word, text)
+        self.assertIn("# TL;DR", text)
+        self.assertIn("social-button", removed)
+        self.assertIn("reading-time", removed)
+
+    def test_a_clap_counter_goes_only_as_a_pair(self):
+        text, removed = boilerplate.drop_junk_lines("a\n\n--\n\n3\n\nb\n")
+        self.assertNotIn("--", text)
+        self.assertIn("clap-counter", removed)
+
+    def test_a_lone_sql_comment_line_is_not_a_clap_counter(self):
+        """A line containing only `--` is a comment payload in this corpus."""
+        source = "The payload ends with\n\n--\n\nand the rest is ignored.\n"
+        text, removed = boilerplate.drop_junk_lines(source)
+        self.assertEqual(text, source)
+        self.assertEqual(removed, [])
+
+    def test_a_payload_inside_a_fence_survives_all_of_it(self):
+        source = "x\n\n```sql\nSELECT 1\n--\n\n7\nShare\n```\n\ny\n"
+        text, removed = boilerplate.drop_junk_lines(source)
+        self.assertIn("SELECT 1", text)
+        self.assertIn("Share", text)
+        self.assertEqual(removed, [])
+
+    def test_prose_that_merely_contains_the_word_is_untouched(self):
+        source = "Follow the redirect and share the session cookie.\n"
+        self.assertEqual(boilerplate.drop_junk_lines(source)[0], source)
+
+
 if __name__ == "__main__":
     unittest.main()

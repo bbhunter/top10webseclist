@@ -73,37 +73,9 @@ Networking
 
 # Worldwide Server-side Cache Poisoning on All Akamai Edge Nodes ($50K+ Bounty Earned)
 
-[
-
-![Jacopo Tediosi](https://miro.medium.com/v2/resize:fill:64:64/1*1bl-7PjgNCTrhTbri4v20A.jpeg)
-
-](https://medium.com/@jacopotediosi?source=post_page---byline--f97d80f3922b---------------------------------------)
+[![Jacopo Tediosi](https://miro.medium.com/v2/resize:fill:64:64/1*1bl-7PjgNCTrhTbri4v20A.jpeg)](https://medium.com/@jacopotediosi?source=post_page---byline--f97d80f3922b---------------------------------------)
 
 [Jacopo Tediosi](https://medium.com/@jacopotediosi?source=post_page---byline--f97d80f3922b---------------------------------------)
-
-8 min readSep 29, 2022
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2Ff97d80f3922b&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40jacopotediosi%2Fworldwide-server-side-cache-poisoning-on-all-akamai-edge-nodes-50k-bounty-earned-f97d80f3922b&user=Jacopo+Tediosi&userId=33f0c8757e6f&source=---header_actions--f97d80f3922b---------------------clap_footer------------------)
-
---
-
-8
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2Ff97d80f3922b&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40jacopotediosi%2Fworldwide-server-side-cache-poisoning-on-all-akamai-edge-nodes-50k-bounty-earned-f97d80f3922b&user=Jacopo+Tediosi&userId=33f0c8757e6f&source=---header_actions--f97d80f3922b---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Ff97d80f3922b&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40jacopotediosi%2Fworldwide-server-side-cache-poisoning-on-all-akamai-edge-nodes-50k-bounty-earned-f97d80f3922b&source=---header_actions--f97d80f3922b---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3Df97d80f3922b&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40jacopotediosi%2Fworldwide-server-side-cache-poisoning-on-all-akamai-edge-nodes-50k-bounty-earned-f97d80f3922b&source=---header_actions--f97d80f3922b---------------------post_audio_button------------------)
-
-Share
 
 ## Introduction And Context
 

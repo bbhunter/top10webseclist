@@ -80,15 +80,15 @@ Basically all file upload SDK, plugins, library, etc... comes with tools and fun
 
 **File Extension Check:** Verify that the file has an allowed extension (For example: `.jpg`, `.png`, `.gif`). This helps restrict uploads to specific file types and prevent unwanted files from being accepted. A common technique, is to upload something like `backdoor.php` instead of a `my_profile_picture.png` file in order to make the webserver to proxy_pass the content of the file to fastcgi or similar.
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-32.png)
+!
 
 **MIME Type Verification:** Examine the Content-Type header in the file upload request to ensure it matches the expected MIME type for the file extension. For example, an image file should have a MIME type like `image/jpeg` or `image/png`. Here I'm talking about the part's Content-Type header and not the Content-Type header of the request that should always be `multipart/form-data`:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-3.png)
+!
 
 **Magic Bytes Inspection:** Analyze the file's magic bytes (something like a signature bytes at the beginning of the file) to confirm its actual format, regardless of the extension or MIME type provided.
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-4.png)
+!
 
 *From Wikipedia [https://en.wikipedia.org/wiki/List_of_file_signatures](https://en.wikipedia.org/wiki/List_of_file_signatures?ref=blog.sicuranext.com)*
 
@@ -217,7 +217,7 @@ Imagine a WAF that inspects POST requests for SQL injection patterns in paramete
 
 Attackers can sometimes deceive validation mechanisms by embedding URL-encoded syntax within multipart messages:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-42.png)
+!
 
 The validation component, which might expect URL-encoded data, interprets the parameter values one way, while the backend application processes the multipart data differently. As a result, the validator might see a benign value, whereas the application receives a malicious payload.
 
@@ -232,7 +232,7 @@ In a `multipart/form-data` request, each part includes a `Content-Disposition` h
 - **Validator's Perspective:** The validation component may parse the `Content-Disposition` header and extract the **first** `name` parameter it encounters. It then applies validation rules based on this parameter name.
 - **Application's Perspective:** The target application might parse the same header but extract the **last** `name` parameter instead, or it might concatenate them differently. As a result, it processes the input under a different parameter name than the one the validator checked.
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-43.png)
+!
 
 *An example of duplicated name parameter*
 
@@ -283,7 +283,7 @@ A possible validation bypass can be found in how multipart parsers handle the se
 
 Consider a scenario where an application uses a WAF (or something like) to validate input fields before proxying the request to a backend application written in PHP. If the multipart data deviates slightly from the expected format, the parser might not parse it properly and could skip the validation process altogether. Meanwhile, PHP's parser it isn't so pedantic and successfully parse the "malformed" data.
 
-![](https://blog.sicuranext.com/content/images/2024/09/image-2.png)
+!
 
 *Filter bypass removing a `\r` from the requence between headers and body*
 
@@ -318,23 +318,15 @@ PHP applications accept "truncated" multipart message.
 
 As I wrote before, each part of the multipart message is separated by a boundary string and the message is terminated with `--<boundary string>--`. However, if an attacker removes the closing boundary string, many applications may accept it anyway:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-44.png)
+!
 
 *PHP allow part without ending boundary*
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-46.png)
+!
 
 Also reported here by a PHP user:
 
-[
-
-PHP :: Bug #81987 :: Incomplete Multipart/form-data but is passed to PHP
-
-![](https://bugs.php.net/images/favicon.ico)Bugs
-
-![](https://bugs.php.net/images/logo.png)
-
-](https://bugs.php.net/bug.php?id=81987&ref=blog.sicuranext.com)
+[PHP :: Bug #81987 :: Incomplete Multipart/form-data but is passed to PHP !Bugs !](https://bugs.php.net/bug.php?id=81987&ref=blog.sicuranext.com)
 
 ## Bypass #5: `filename*=utf-8''` in request
 
@@ -346,7 +338,7 @@ RFC 6266 updated the RFC 2616 that defines the `Content-Disposition` **response*
 
 Basically, the `filename*` parameter **allows** filenames to include **special characters** and specify an encoding. This is particularly useful for filenames containing characters from non-English languages or special symbols that aren't represented in standard ASCII encoding.
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-47.png)
+!
 
 For example, consider a file named `Fabrizio_Deandré.pdf`, which includes the common accented character `é` in Italian. To ensure that the filename is correctly interpreted by servers and applications, you can use the `filename*` parameter with UTF-8 encoding and percent-encoding for special characters:
 
@@ -380,11 +372,11 @@ As you can see, the rule doesn't perform a URL decode of the values in FILES (th
 
 The problem here is that, by reading RFC 6266, **it isn't really clear whether the `filename*` parameter is permitted only in a response multipart or can also be used in a request**. The fact that many languages (PHP, for example) don't support it in requests makes me think that this parameter can be used only in a response body, but again... this is just my assumption.
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-45.png)
+!
 
 *Node.js + Busboy*
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-54.png)
+!
 
 *Python3 Flask application*
 
@@ -410,17 +402,7 @@ Zend Engine v4.3.12, Copyright (c) Zend Technologies
 
 Since I can't try it for free (😭), I can only assume that OpenResty Edge WAF uses the OpenResty Multipart Parser created by the OpenResty project owner Yichun "agentzh" Zhang that you can find here:
 
-[
-
-GitHub - agentzh/lua-resty-multipart-parser: Simple multipart data parser for OpenResty/Lua
-
-Simple multipart data parser for OpenResty/Lua. Contribute to agentzh/lua-resty-multipart-parser development by creating an account on GitHub.
-
-![](https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg)GitHubagentzh
-
-![](https://opengraph.githubassets.com/2b2558ca83381dcdabb3c4abc00c635c7c3ad3479c9eba47168a75a995f4c3d5/agentzh/lua-resty-multipart-parser)
-
-](https://github.com/agentzh/lua-resty-multipart-parser?ref=blog.sicuranext.com)
+[GitHub - agentzh/lua-resty-multipart-parser: Simple multipart data parser for OpenResty/Lua Simple multipart data parser for OpenResty/Lua. Contribute to agentzh/lua-resty-multipart-parser development by creating an account on GitHub. !GitHubagentzh !](https://github.com/agentzh/lua-resty-multipart-parser?ref=blog.sicuranext.com)
 
 So, to test it, I wrote a Lua file upload validator using the `lua-resty-multipart-parser`, where I check if the uploaded file has a valid extension. If not, the validator blocks the request with a 403 Forbidden:
 
@@ -474,31 +456,31 @@ Now, imagine a scenario where the Lua code above is deployed as a Web Applicatio
 
 ### Duplicated filename parameter
 
-![](https://blog.sicuranext.com/content/images/2024/09/image-4.png)
+!
 
 *Filename extension .php not allowed, correctly blocked by Lua filter*
 
-![](https://blog.sicuranext.com/content/images/2024/09/image-3.png)
+!
 
 *bypass: different parser behavior on duplicated filename parameter*
 
 ### Breaking CRLF sequence
 
-![](https://blog.sicuranext.com/content/images/2024/09/image-1.png)
+!
 
 *correct sequence \r\n\r\n between headers and body*
 
-![](https://blog.sicuranext.com/content/images/2024/09/image-2.png)
+!
 
 *Filter bypass removing a `\r` from the requence between headers and body*
 
 ### Removing doublequotes on filename parameter
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-1.png)
+!
 
 *blocked upload of a PHP filename*
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-2.png)
+!
 
 *bypass by removing double quote in filename parameter*
 
@@ -523,11 +505,11 @@ In this case, a WAF usually try to validate the `filename=` parameter and see an
 
 Let's do a test:
 
-![](https://blog.sicuranext.com/content/images/2024/09/image-5.png)
+!
 
 *Attempt to upload a js file to Nodejs backend blocked by filter or WAF*
 
-![](https://blog.sicuranext.com/content/images/2024/09/image-6.png)
+!
 
 *add a second filename*= parameter to bypass the filter or WAF*
 
@@ -597,73 +579,73 @@ if __name__ == '__main__':
 
 As for Node.js + Busboy, Flask allows using `filename*=`* *syntax in request, so a possible bypass could be sending a filename parameter with a `filename*=` parameter:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-50.png)
+!
 
 *Bypass using filename*= syntax*
 
 By sending duplicate `Content-Disposition` header of filename parameters, Flask behaves differently:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-51.png)
+!
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-52.png)
+!
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-53.png)
+!
 
 ## Bypass FortiWeb WAF
 
 FortiWeb is a WAF developed by Fortinet, designed to protect web applications from threats like SQL Injection, XSS, and other common attacks. It provides advanced features such as machine learning-based anomaly detection, bot mitigation, and integration with threat intelligence services. To explore its capabilities and try his multipart parser, I activated the free trial available on the AWS Marketplace:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-31.png)
+!
 
 I've configured the WAF with a "Web Protection Profile" of "Inline Extended Protection" that should be the highest and more sensible level of protection.
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-29.png)
+!
 
 For example, let's try with a simple multipart request in which we send a Remote Code Execution payload in the `user_name` parameter.
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-23.png)
+!
 
 *allowed request*
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-24.png)
+!
 
 *request blocked because RCE payload*
 
 As we discussed in bypass technique #3, nearly all parsers (correctly) expect the `\r\n` sequence to separate headers from the body within a part or to separate the boundary start from the headers. Disrupting this sequence typically causes the parser to fail when parsing the multipart body. Since PHP allows poorly formatted multipart bodies, such as missing `\r\n` sequences or unterminated messages without the ending boundary, in this case we can bypass it by breaking the `\r\n` sequence anywere:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-25.png)
+!
 
 *bypass removing \r from the CRLF sequence*
 
 or by removing the ending boundary string:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-27.png)
+!
 
 *PHP allows unfinished multipart message*
 
 we can append our payload without being blocked by FortiWeb:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-28.png)
+!
 
 Regarding file uploads, we can easily bypass FortiWeb by duplicating the `Content-Disposition` header, causing FortiWeb to analyze the second one while PHP parses the first one:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-30.png)
+!
 
 If we have FortiWeb in front of a Node.js application that uses Busboy (or a Python/Flask application) to parse multipart messages, we can easily bypass it by using technique #5 and the `filename*=` parameter to upload a file with a disallowed extension:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-20.png)
+!
 
 *Allowed file upload of a PNG file*
 
 Trying to upload something like `backdoor.exe`:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-21.png)
+!
 
 *Blocked file upload of backdoor.exe*
 
 To bypass it, we can simply add the `filename=` parameter, causing FortiWeb to analyze the `filename=` parameter while Busboy uses the `filename*=` one.
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-22.png)
+!
 
 *FortWeb file upload filename bypass when the target use busboy*
 
@@ -673,27 +655,27 @@ Barracuda Networks was founded in 2003, initially gaining attention with its ema
 
 Thanks to the free trial of Barracuda WAF on the AWS Marketplace, I was able to try it with the following configuration:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-33.png)
+!
 
 Let's try to upload a PHP file:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-37.png)
+!
 
 *request blocked by Barracuda WAF*
 
 As you can see, Barracuda WAF blocked my attempt. Below is the audit log of the blocked request, where we can see the WAF rule details: "Forbidden File Extension":
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-35.png)
+!
 
 *log of the blocked request*
 
 Even in this case, we can bypass it by sending a duplicated `Content-Disposition` header. Since Barracuda WAF analyzes the last one and PHP parses the first one, we can bypass the rule this way:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-36.png)
+!
 
 If we have Barracuda WAF in front of a Node.js application that uses Busboy to parse multipart messages, we can easily bypass it by using technique #5 and the `filename*=` parameter to upload a file with a disallowed extension:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-38.png)
+!
 
 ## Bypass HAProxy ACL
 
@@ -755,15 +737,15 @@ This ACL check if the username is admin and the source IP address is 1.2.3.4.
 
 The **`http-request deny`** rule blocks the request if all three conditions are met: the request contains a "username" parameter, the username is "admin," and the client IP is **not** "1.2.3.4." If these conditions are true, the request is denied, effectively preventing untrusted IPs from accessing the admin login.
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-9.png)
+!
 
 As you can see from the screenshot above, I can send a request with `username=foo` without being blocked by HAProxy. However, when I try to send `username=admin`, it blocks me, as shown in the screenshot below. This happens because, obviously, I'm not connecting from the IP address 1.2.3.4:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-10.png)
+!
 
 Now, since HAProxy doesn't have a `multipart/form-data` parser (which is crazy, considering it parses `x-www-form-urlencoded`), the easiest way to bypass this ACL is to simply convert the request to multipart. This works because the ACL is quite basic, but we'll do an example with a more challenging one to bypass:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-11.png)
+!
 
 *bypass req.body_param doesn't find any `username=admin` in body*
 
@@ -792,19 +774,19 @@ The **`http-request deny`** rule blocks the request if the "email" parameter exi
 
 Let's try to send a SQL Injection payload inside the email parameter:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-12.png)
+!
 
 As you can see from the screenshot above, my request is being blocked by the HAProxy ACL because the value of the email parameter doesn't match the configured regular expression. **In this case, it's not possible to bypass this ACL by converting it to a multipart/form-data request** as we did before, because the regular expression still won't match the correct format of the email parameter value. For example:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-15.png)
+!
 
 The request is blocked because `req.body_param()` fails to parse the key=value format separated by `&`, resulting in an empty or null value. To bypass this, it's possible to craft our payload in a way that tricks the `req.body_param()` function into successfully parsing a string like `email=foo@bar` by embedding it in an SQL injection payload as a comment. For example:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-16.png)
+!
 
 **Bonus bypass**: Since PHP, in the case of duplicate parameters, takes the last one, a simpler bypass technique is to send two `email` parameters, placing the malicious payload in the second one:
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-17.png)
+!
 
 ## Bypass AWS WAF, Lambda
 
@@ -818,9 +800,9 @@ AWS WAF Bypass: invalid JSON object and unicode escape sequences
 
 In recent times, the security community has been witnessing an increasing number of reports from researchers highlighting various bypass techniques targeting AWS Web Application Firewall¹. These bypasses have brought to light not only the absence of certain critical features but also the reliance on default configurations commonly used with both
 
-![](https://blog.sicuranext.com/content/images/size/w256h256/2023/08/favicon.png)Sicuranext BlogAndrea Menin
+!Sicuranext BlogAndrea Menin
 
-![](https://blog.sicuranext.com/content/images/2023/07/Screenshot-from-2023-07-26-15-39-48.png)
+!
 
 ](https://blog.sicuranext.com/aws-waf-bypass/)
 
@@ -832,11 +814,11 @@ After that, ModSecurity fixed a lot of bug on its multipart parser... **maybe to
 
 Paradoxically, the situation with ModSecurity's multipart parser is even more concerning, because **we all know it's widely used by users who lack the ability to understand the issue and to define their own rules**. As I said, often the multipart format validation rules are disabled, leaving the protected web application completely exposed.
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-48.png)
+!
 
 *allowed request*
 
-![](https://blog.sicuranext.com/content/images/2024/10/image-49.png)
+!
 
 *Blocked request by ModSecurity engine*
 

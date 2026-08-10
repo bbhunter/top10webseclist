@@ -64,7 +64,7 @@ page going offline. To read the original, follow the link above.
 
 STAR Labs | Blog | You Talking To Me?
 
-![](https://starlabs.sg/img/logo-white.png)
+!
 
 # Blog
 

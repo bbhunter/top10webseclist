@@ -72,8 +72,8 @@ A 5 step process, making use of Slashdot's PreviewStory feature, to create URL's
 3) Click "PreviewStory".
 
 4) Copy the Preview Page URL.
-* Should look something like...[](http://slashdot.org/submit.pl?reskey=drB7oIuT5zrHsfhHtr7S&name=He+who&email=&subj=How+to+get+linked+from+Slashdot&primaryskid=0&tid=133&story=Shiny+new+Slashdot+link+to+my+blog%2C+%3Ca+href%3D%22http%3A%2F%2Fjeremiahgrossman.blogspot.com%2F%22%3EJeremiah+Grossman%3C%2Fa%3E.&sub_type=html&op=PreviewStory)
-[](http://slashdot.org/submit.pl?reskey=drB7oIuT5zrHsfhHtr7S&name=He+who&email=&subj=How+to+get+linked+from+Slashdot&primaryskid=0&tid=133&story=Shiny+new+Slashdot+link+to+my+blog%2C+%3Ca+href%3D%22http%3A%2F%2Fjeremiahgrossman.blogspot.com%2F%22%3EJeremiah+Grossman%3C%2Fa%3E.)http://slashdot.org/submit.pl?reskey=drB7oIuT5zrHsfhHtr7S&name=He+who&email=&
+* Should look something like...
+http://slashdot.org/submit.pl?reskey=drB7oIuT5zrHsfhHtr7S&name=He+who&email=&
 subj=How+to+get+linked+from+Slashdot&primaryskid=0&tid=133&story=Shiny+new+
 Slashdot+link+to+my+blog%2C+%3Ca+href%3D%22http%3A%2F%2Fjeremiahgrossman.
 blogspot.com%2F%22%3EJeremiah+Grossman%3C%2Fa%3E.
@@ -86,7 +86,7 @@ Snipping off "op=PreviewStory" makes the link last longer. If you want to shorte
 Voila.
 
 Preview Page Screenshot:
-[![](https://photos1.blogger.com/blogger/4263/1222/320/how_to_get_linked_from_slashdot.png)](https://photos1.blogger.com/blogger/4263/1222/1600/how_to_get_linked_from_slashdot.png)
+[!](https://photos1.blogger.com/blogger/4263/1222/1600/how_to_get_linked_from_slashdot.png)
 
 Some answered questions
 

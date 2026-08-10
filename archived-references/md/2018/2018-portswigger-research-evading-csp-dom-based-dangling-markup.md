@@ -143,5 +143,3 @@ Visit our Web Security Academy to [learn more about cross-site scripting (XSS)](
  [ csp ](https://portswigger.net/research/csp) [ dangling markup ](https://portswigger.net/research/dangling-markup)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

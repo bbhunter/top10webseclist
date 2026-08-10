@@ -81,7 +81,7 @@ Researcher
 
 -
 
- ![](https://portswigger.net/cms/images/a0/8d/e349-article-hidden-oauth-attack_article.jpg)
+ !
 
 ## Intro
 
@@ -338,5 +338,3 @@ String sfilter = MessageFormat.format(FILTER_PATTERN_ORG, (Object[]) objs);
 [ActiveScan++ v1.0.22](https://github.com/PortSwigger/active-scan-plus-plus/commit/9432e0a09c3bf728b9e9b5534da9e2064f9c2847) now detects the presense of OpenId and OAuth configuration endpoints and can help you to discover them. We also have them in the "Interesting files and directories" list in Burp Intruder.
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

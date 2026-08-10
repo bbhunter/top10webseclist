@@ -70,7 +70,7 @@ This is a story about 5 Low-Severity bugs I pulled together to create a simple b
 
  [More detailed/alternative explanation](https://web.archive.org/web/20160624013337/http://www.reddit.com/r/netsec/comments/1xa5xh/how_i_hacked_github_again/cf9qjcl).
 
- [![](https://web.archive.org/web/20160624013337im_/http://2.bp.blogspot.com/-s7CGeISQaL4/UvIwkq3c-oI/AAAAAAAADjo/t4jteR-KnlU/s280/Screen+Shot+2014-02-05+at+6.50.54+PM.png)](https://web.archive.org/web/20160624013337/http://2.bp.blogspot.com/-s7CGeISQaL4/UvIwkq3c-oI/AAAAAAAADjo/t4jteR-KnlU/s1600/Screen+Shot+2014-02-05+at+6.50.54+PM.png)
+ [!](https://web.archive.org/web/20160624013337/http://2.bp.blogspot.com/-s7CGeISQaL4/UvIwkq3c-oI/AAAAAAAADjo/t4jteR-KnlU/s1600/Screen+Shot+2014-02-05+at+6.50.54+PM.png)
 
  A few days ago Github launched a [Bounty program](https://web.archive.org/web/20160624013337/https://bounty.github.com/) which was a good motivator for me to play with [Github OAuth](https://web.archive.org/web/20160624013337/https://developer.github.com/v3/oauth/).
 
@@ -97,7 +97,7 @@ This is a story about 5 Low-Severity bugs I pulled together to create a simple b
 
  It's a serious issue and **can be used to compromise "Login with Github"** functionality on all websites relying on it. I opened [Applications page](https://web.archive.org/web/20160624013337/https://github.com/settings/applications) to see what websites I should check. This section got my attention:
 
- [![](https://web.archive.org/web/20160624013337im_/http://1.bp.blogspot.com/-gE_08afwQ9Q/UvT8D4aAUFI/AAAAAAAADj4/FqP0p3S3R8I/s280/Screen+Shot+2014-02-05+at+5.56.08+PM.png)](https://web.archive.org/web/20160624013337/http://1.bp.blogspot.com/-gE_08afwQ9Q/UvT8D4aAUFI/AAAAAAAADj4/FqP0p3S3R8I/s1600/Screen+Shot+2014-02-05+at+5.56.08+PM.png)
+ [!](https://web.archive.org/web/20160624013337/http://1.bp.blogspot.com/-gE_08afwQ9Q/UvT8D4aAUFI/AAAAAAAADj4/FqP0p3S3R8I/s1600/Screen+Shot+2014-02-05+at+5.56.08+PM.png)
 
  Gist, Education, Pages and Speakerdeck are official pre-approved OAuth clients. I couldn't find client_id of Pages/Education, Speakerdeck was out of Bounty scope (I found account hijacking there and was offered $100). Let's find a Referer-leaking page on Gist then.
 
@@ -118,7 +118,7 @@ This is a story about 5 Low-Severity bugs I pulled together to create a simple b
 
  Then user agent leaks CODE sending request to our <img>:
 
- [![](https://web.archive.org/web/20160624013337im_/http://3.bp.blogspot.com/-CnQQ9kjPoVs/UvT_O0m5uqI/AAAAAAAADkE/_Rl_EYv4ACQ/s280/Screen+Shot+2014-02-05+at+5.15.39+PM.png)](https://web.archive.org/web/20160624013337/http://3.bp.blogspot.com/-CnQQ9kjPoVs/UvT_O0m5uqI/AAAAAAAADkE/_Rl_EYv4ACQ/s1600/Screen+Shot+2014-02-05+at+5.15.39+PM.png)
+ [!](https://web.archive.org/web/20160624013337/http://3.bp.blogspot.com/-CnQQ9kjPoVs/UvT_O0m5uqI/AAAAAAAADkE/_Rl_EYv4ACQ/s1600/Screen+Shot+2014-02-05+at+5.15.39+PM.png)
 
  As soon as we get victim's CODE we can hit https://gist.github.com/auth/github/callback?code=CODE and voila, we are logged into the victim's account and we have access to private gists.
 
@@ -126,11 +126,11 @@ This is a story about 5 Low-Severity bugs I pulled together to create a simple b
 
  I was wondering how Gist persists the user session and decoded _gist_session cookie (which is regular Rails Base64 encoded cookie):
 
- [![](https://web.archive.org/web/20160624013337im_/http://3.bp.blogspot.com/-fstbnCZEdbI/UvT_6S4K4JI/AAAAAAAADkM/F8MKjIOFU5k/s280/Screen+Shot+2014-02-05+at+5.59.16+PM.png)](https://web.archive.org/web/20160624013337/http://3.bp.blogspot.com/-fstbnCZEdbI/UvT_6S4K4JI/AAAAAAAADkM/F8MKjIOFU5k/s1600/Screen+Shot+2014-02-05+at+5.59.16+PM.png)
+ [!](https://web.archive.org/web/20160624013337/http://3.bp.blogspot.com/-fstbnCZEdbI/UvT_6S4K4JI/AAAAAAAADkM/F8MKjIOFU5k/s1600/Screen+Shot+2014-02-05+at+5.59.16+PM.png)
 
  Oh my, another OAuth anti-pattern! Clients should never reveal actual access_token to the user agent. Now we can use this github_token to perform API calls on behalf of the victim's account, without the Gist website. I tried to access private repos:
 
- [![](https://web.archive.org/web/20160624013337im_/http://4.bp.blogspot.com/-Rs3U2vkjT1I/UvUAS8OrTdI/AAAAAAAADkU/ePe042QKiw4/s280/Screen+Shot+2014-02-05+at+6.00.45+PM.png)](https://web.archive.org/web/20160624013337/http://4.bp.blogspot.com/-Rs3U2vkjT1I/UvUAS8OrTdI/AAAAAAAADkU/ePe042QKiw4/s1600/Screen+Shot+2014-02-05+at+6.00.45+PM.png)
+ [!](https://web.archive.org/web/20160624013337/http://4.bp.blogspot.com/-Rs3U2vkjT1I/UvUAS8OrTdI/AAAAAAAADkU/ePe042QKiw4/s1600/Screen+Shot+2014-02-05+at+6.00.45+PM.png)
 
  Damn it, the token's scope is just "gists", apparently...
 
@@ -148,7 +148,7 @@ This is a story about 5 Low-Severity bugs I pulled together to create a simple b
 
 ####  Bounty
 
- [![](https://web.archive.org/web/20160624013337im_/http://2.bp.blogspot.com/-xqPTMgxhYmY/UvUCrsc9C8I/AAAAAAAADkg/Fe6N4AFxMWE/s280/Screen+Shot+2014-02-07+at+10.58.16+PM.png)](https://web.archive.org/web/20160624013337/http://2.bp.blogspot.com/-xqPTMgxhYmY/UvUCrsc9C8I/AAAAAAAADkg/Fe6N4AFxMWE/s1600/Screen+Shot+2014-02-07+at+10.58.16+PM.png)
+ [!](https://web.archive.org/web/20160624013337/http://2.bp.blogspot.com/-xqPTMgxhYmY/UvUCrsc9C8I/AAAAAAAADkg/Fe6N4AFxMWE/s1600/Screen+Shot+2014-02-07+at+10.58.16+PM.png)
 
  $4000 reward is pretty good. Interestingly, it would be even cheaper for them to buy 4-5 hours of my consulting services at $400/hr which would have cost them $1600 instead. Crowdsourced-security is also an important thing to have. It's better to use them both :)
 

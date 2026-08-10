@@ -70,37 +70,9 @@ JavaScript
 
 # The Underrated Bugs, Clickjacking, CSS Injection, Drag-Drop XSS, Cookie Bomb, Login+Logout CSRF…
 
-[
-
-![Renwa](https://miro.medium.com/v2/resize:fill:64:64/1*r_V5EoylIXZ2Ot6ShbuRtA.png)
-
-](https://medium.com/@renwa?source=post_page---byline--84307a98fffa---------------------------------------)
+[![Renwa](https://miro.medium.com/v2/resize:fill:64:64/1*r_V5EoylIXZ2Ot6ShbuRtA.png)](https://medium.com/@renwa?source=post_page---byline--84307a98fffa---------------------------------------)
 
 [Renwa](https://medium.com/@renwa?source=post_page---byline--84307a98fffa---------------------------------------)
-
-8 min readMay 10, 2022
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F84307a98fffa&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Fthe-underrated-bugs-clickjacking-css-injection-drag-drop-xss-cookie-bomb-login-logout-csrf-84307a98fffa&user=Renwa&userId=3f8ae70e3957&source=---header_actions--84307a98fffa---------------------clap_footer------------------)
-
---
-
-2
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F84307a98fffa&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Fthe-underrated-bugs-clickjacking-css-injection-drag-drop-xss-cookie-bomb-login-logout-csrf-84307a98fffa&user=Renwa&userId=3f8ae70e3957&source=---header_actions--84307a98fffa---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F84307a98fffa&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Fthe-underrated-bugs-clickjacking-css-injection-drag-drop-xss-cookie-bomb-login-logout-csrf-84307a98fffa&source=---header_actions--84307a98fffa---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D84307a98fffa&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Fthe-underrated-bugs-clickjacking-css-injection-drag-drop-xss-cookie-bomb-login-logout-csrf-84307a98fffa&source=---header_actions--84307a98fffa---------------------post_audio_button------------------)
-
-Share
 
 *credit: WebSec Academy*
 

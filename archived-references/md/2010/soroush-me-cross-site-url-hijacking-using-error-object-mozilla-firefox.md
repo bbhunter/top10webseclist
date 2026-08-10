@@ -74,13 +74,7 @@ This entry was posted in [Security Posts](https://soroush.me/blog/category/secur
 
 Creation date: May 27, 2010
 
-[
-
- Previous
-
-Opera Browser – Scroll Information Leakage
-
-](https://soroush.me/blog/opera-browser-scroll-information-leakage)[
+[Previous Opera Browser – Scroll Information Leakage](https://soroush.me/blog/opera-browser-scroll-information-leakage)[
 
 Next
 

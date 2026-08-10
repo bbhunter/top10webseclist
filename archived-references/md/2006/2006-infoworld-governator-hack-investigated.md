@@ -101,132 +101,28 @@ Mike Barton started out in online slinging HTML for CNET.com in the late 1990s a
 
 ## More from this author
 
-- [
-
-### Apple HTML source reveals ‘iPhone Extreme’
-
-Oct 2, 2007 1 min
-
-](https://www.infoworld.com/article/2321786/apple-html-source-reveals-iphone-extreme.html)
-- [
-
-### Coming up: DEMOfall 07 live blogging
-
-Sep 24, 2007 1 min
-
-](https://www.infoworld.com/article/2319482/coming-up-demofall-07-live-blogging.html)
-- [
-
-### Woz, Jobs gain Lego fame
-
-Sep 4, 2007 1 min
-
-](https://www.infoworld.com/article/2319356/woz-jobs-gain-lego-fame.html)
-- [
-
-### Cell phones bring bees to knees?
-
-Jul 27, 2007 1 min
-
-](https://www.infoworld.com/article/2318738/cell-phones-bring-bees-to-knees.html)
-- [
-
-### Apple: 270K iPhones in two days
-
-Jul 25, 2007 2 mins
-
-](https://www.infoworld.com/article/2319196/apple-270k-iphones-in-two-days.html)
-- [
-
-### SunRocket quick-fix: Forward calls
-
-Jul 24, 2007 4 mins
-
-](https://www.infoworld.com/article/2318958/sunrocket-quick-fix-forward-calls.html)
-- [
-
-### Google argues for right to comment on Microsoft case
-
-Jul 4, 2007 3 mins
-
-](https://www.infoworld.com/article/2318653/google-argues-for-right-to-comment-on-microsoft-case-2.html)
-- [
-
-### iPhone: Finger-lickin’ good?
-
-Jun 28, 2007 2 mins
-
-](https://www.infoworld.com/article/2318620/iphone-finger-lickin-good.html)
+- [### Apple HTML source reveals ‘iPhone Extreme’ Oct 2, 2007 1 min](https://www.infoworld.com/article/2321786/apple-html-source-reveals-iphone-extreme.html)
+- [### Coming up: DEMOfall 07 live blogging Sep 24, 2007 1 min](https://www.infoworld.com/article/2319482/coming-up-demofall-07-live-blogging.html)
+- [### Woz, Jobs gain Lego fame Sep 4, 2007 1 min](https://www.infoworld.com/article/2319356/woz-jobs-gain-lego-fame.html)
+- [### Cell phones bring bees to knees? Jul 27, 2007 1 min](https://www.infoworld.com/article/2318738/cell-phones-bring-bees-to-knees.html)
+- [### Apple: 270K iPhones in two days Jul 25, 2007 2 mins](https://www.infoworld.com/article/2319196/apple-270k-iphones-in-two-days.html)
+- [### SunRocket quick-fix: Forward calls Jul 24, 2007 4 mins](https://www.infoworld.com/article/2318958/sunrocket-quick-fix-forward-calls.html)
+- [### Google argues for right to comment on Microsoft case Jul 4, 2007 3 mins](https://www.infoworld.com/article/2318653/google-argues-for-right-to-comment-on-microsoft-case-2.html)
+- [### iPhone: Finger-lickin’ good? Jun 28, 2007 2 mins](https://www.infoworld.com/article/2318620/iphone-finger-lickin-good.html)
 
 ## Show me more
 
 PopularArticlesVideos
 
-[
+[### Rust preps improved borrow checker for stabilization By Paul Krill Aug 7, 20262 mins Programming LanguagesRustSoftware Development ![Image](https://www.infoworld.com/wp-content/uploads/2026/08/4206875-0-28221200-1786157830-shutterstock_1079249879.jpg?quality=50&strip=all&w=376)](https://www.infoworld.com/article/4206875/rust-preps-improved-borrow-checker-for-stabilization.html)
 
-### Rust preps improved borrow checker for stabilization
+[### What we lose when every engineer can do everything By Mayada Gonimah Aug 7, 20267 mins DeveloperEngineerRoles ![Image](https://www.infoworld.com/wp-content/uploads/2026/08/4206404-0-81965700-1786125505-shutterstock_1277815804.jpg?quality=50&strip=all&w=375)](https://www.infoworld.com/article/4206404/what-we-lose-when-every-engineer-can-do-everything.html)
 
-By Paul Krill
+[### Moonshot’s Kimi AI model has also escaped from a test environment By Maxwell Cooter Aug 7, 20262 mins Artificial IntelligenceSecurity ![Image](https://www.infoworld.com/wp-content/uploads/2026/08/4206787-0-72458200-1786114400-shutterstock_2295737281-100963189-orig.jpg?quality=50&strip=all&w=375)](https://www.infoworld.com/article/4206787/moonshots-kimi-ai-model-has-also-escaped-from-a-test-environment-2.html)
 
-Aug 7, 20262 mins
+[### AI trends that need more attention Aug 4, 20265 mins Python ![Image](https://www.infoworld.com/wp-content/uploads/2026/08/4205130-0-81560300-1785861578-youtube-thumbnail-kUGzdL2OpyQ.jpg?quality=50&strip=all&w=444)](https://www.infoworld.com/video/4205130/ai-trends-that-need-more-attention.html)
 
-Programming LanguagesRustSoftware Development
-
-![Image](https://www.infoworld.com/wp-content/uploads/2026/08/4206875-0-28221200-1786157830-shutterstock_1079249879.jpg?quality=50&strip=all&w=376)
-
- ](https://www.infoworld.com/article/4206875/rust-preps-improved-borrow-checker-for-stabilization.html)
-
-[
-
-### What we lose when every engineer can do everything
-
-By Mayada Gonimah
-
-Aug 7, 20267 mins
-
-DeveloperEngineerRoles
-
-![Image](https://www.infoworld.com/wp-content/uploads/2026/08/4206404-0-81965700-1786125505-shutterstock_1277815804.jpg?quality=50&strip=all&w=375)
-
- ](https://www.infoworld.com/article/4206404/what-we-lose-when-every-engineer-can-do-everything.html)
-
-[
-
-### Moonshot’s Kimi AI model has also escaped from a test environment
-
-By Maxwell Cooter
-
-Aug 7, 20262 mins
-
-Artificial IntelligenceSecurity
-
-![Image](https://www.infoworld.com/wp-content/uploads/2026/08/4206787-0-72458200-1786114400-shutterstock_2295737281-100963189-orig.jpg?quality=50&strip=all&w=375)
-
- ](https://www.infoworld.com/article/4206787/moonshots-kimi-ai-model-has-also-escaped-from-a-test-environment-2.html)
-
-[
-
-### AI trends that need more attention
-
-Aug 4, 20265 mins
-
-Python
-
-![Image](https://www.infoworld.com/wp-content/uploads/2026/08/4205130-0-81560300-1785861578-youtube-thumbnail-kUGzdL2OpyQ.jpg?quality=50&strip=all&w=444)
-
- ](https://www.infoworld.com/video/4205130/ai-trends-that-need-more-attention.html)
-
-[
-
-### Who's leaving GitHub and why
-
-Jul 29, 20267 mins
-
-Python
-
-![Image](https://www.infoworld.com/wp-content/uploads/2026/07/4202965-0-61481400-1785343003-youtube-thumbnail-TkT-To8u2Eo.jpg?quality=50&strip=all&w=444)
-
- ](https://www.infoworld.com/video/4202965/whos-leaving-github-and-why.html)
+[### Who's leaving GitHub and why Jul 29, 20267 mins Python ![Image](https://www.infoworld.com/wp-content/uploads/2026/07/4202965-0-61481400-1785343003-youtube-thumbnail-TkT-To8u2Eo.jpg?quality=50&strip=all&w=444)](https://www.infoworld.com/video/4202965/whos-leaving-github-and-why.html)
 
 [
 

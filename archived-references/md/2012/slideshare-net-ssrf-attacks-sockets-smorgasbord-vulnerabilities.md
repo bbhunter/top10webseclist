@@ -268,9 +268,9 @@ No embeds
 
  ****
 
- [   ](https://web.archive.org/web/20161108114039/http://www.slideshare.net/signup?login_source=slideview.popup.flags&from=flagss&from_source=http%3A%2F%2Fwww.slideshare.net%2Fd0znpp%2Fssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities)
+ 
 
- [](https://web.archive.org/web/20161108114039/http://www.linkedin.com/legal/copyright-policy)
+ 
 
 No notes for slide
 

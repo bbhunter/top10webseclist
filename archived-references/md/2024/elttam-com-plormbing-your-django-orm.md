@@ -274,7 +274,7 @@ class Article(models.Model):
 
 To help understand how all of these different models are related to each other, I created the following diagram that shows the relations. The `User` model is highlighted in pink since it is builtin model for the Django framework.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab386b7948b108ecc94_69b98986947782073459457b_UML-example-app-simplified.avif)
+!
 
 Now if the developer wants to allow users to search either by the Author’s username, category, or the title of an article they could write the following code.
 
@@ -387,17 +387,17 @@ Let’s go over an example of leaking out the password for a user with the usern
 
 *POST request filtering users that have the username `karen` and passwords that started with `a` that returned the expected empty list*
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab386b7948b108ecc9c_69b989859477820734594550_django-basic0.avif)
+!
 
 When we filter if the **password started with the character `p`** a non-empty list would be returned since it matched the start of the password prefix.This is known as a **filter oracle**, since the change in response length indicated the matching of a character to a value we wanted to leak.
 
 *POST request filtering users that have the username `karen` and passwords that started with `p` that returned a non-empty list that indicated the password started with `p`*
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab386b7948b108ecc8e_69b98986947782073459455f_django-basic1.avif)
+!
 
 The process can be repeated with the next character in the `password` until we see that response change again when we filtered by `pb`.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab486b7948b108eccc9_69b98986947782073459458a_django-basic2.avif)
+!
 
 Once we have confirmed that we can leak out the user’s password character by character by exploiting this ORM Leak vulnerability, we can write up a PoC script that makes a really cool exploit GIF.
 
@@ -454,7 +454,7 @@ if __name__ == '__main__':
     main()
 ```
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab386b7948b108ecc7e_69b989869477820734594565_django-basic.gif)
+!
 
 This example establishes a clear definition for the conditions of an ORM Leak vulnerability.
 
@@ -499,23 +499,23 @@ What makes things *spicy* here is that the Django ORM supports relational filter
 
 Let’s take another look at the diagram that showed the relationships between the models and plan a relational filtering attack.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab386b7948b108ecc94_69b98986947782073459457b_UML-example-app-simplified.avif)
+!
 
 We are filtering for objects on the **`Article`** model so that is our **entrypoint**. We also have a one-to-one mapping to the `Author` model via the **`created_by`** field in the `Article` model. The `Author` model also has a one-to-one mapping to the Django `User` model by the **`user`** field that has a very *juicy* **`password`** field that we would like to extract. We now have a possible attack path to the **`password`** of the user that created an `Article` as highlighted below.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab386b7948b108ecc8b_69b98986947782073459457e_UML-example-app-simplified-highlight1.avif)
+!
 
 Converting this into our **relational filtering attack** payload for the Django ORM, our payload would be **`created_by__user__password`** in order to filter by the password hash of a user that created an Article using either the **`contains`**, **`startswith`** or **`regex`** Django ORM operators.
 
 Let’s confirm this, first we check that an empty response is when returned when we try to filter by a substring that would not be in a password hash (e.g. `DEFINITELY_NOT_IN_PASSWORD`).
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab386b7948b108ecc7b_69b989869477820734594577_django-e0.avif)
+!
 
 An empty list is returned as expected, but next we need to check if we can filter by a value that would likely be in the password, such as `pbkdf2_sha256` (the password hash prefix).
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab486b7948b108eccb2_69b989869477820734594571_django-e1.avif)
+!
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab486b7948b108ecd0d_69b9898794778207345945a0_gorilla-stare.gif)
+!
 
 *Heck yea*, now it is time just to write a PoC and start dumping that user’s password hash.
 
@@ -583,9 +583,9 @@ if __name__ == '__main__':
     main()
 ```
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab386b7948b108ecca5_69b989869477820734594562_django-poc1.gif)
+!
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab486b7948b108ecced_69b98987947782073459459d_noice.gif)
+!
 
 We do have one *slight problem*. The current relational filtering payload (`created_by__user__password`) is filtering on one-to-one mappings by filtering `Article` objects and is currently restricted to the users that have created an `Article`. However, there will be scenarios where want dump sensitive data for different users that weren’t directly linked to our entrypoint.
 
@@ -593,7 +593,7 @@ We do have one *slight problem*. The current relational filtering payload (`crea
 
 So let’s revisit that relationship diagram again.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab486b7948b108eccbe_69b989869477820734594584_UML-example-app-simplified-m2m.avif)
+!
 
 Notice that the `Author` model has a **many-to-many** relationship with the `Department` model? We can exploit this many-to-many relationship filter by user accounts that share the same `Department` as a user that has made an `Article`. Now our relational filtering chain becomes **`created_by__departments__employees__user`**.
 
@@ -702,11 +702,11 @@ if __name__ == '__main__':
     main()
 ```
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab486b7948b108eccf1_69b989869477820734594587_django-leak-for-zoomers.gif)
+!
 
 *Nooice*
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab486b7948b108eccdf_69b98987947782073459459a_more-noice.gif)
+!
 
 Now let’s say a whole bunch of employees got hired that are listed below along with the departments that they are a member, with the user `karen` still being the only user that has published an article.
 
@@ -719,7 +719,7 @@ Now let’s say a whole bunch of employees got hired that are listed below along
 
 The following diagram visualises the relational mappings between the `User` and `Department` objects starting from published `Article` objects in this scenario.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab486b7948b108eccc1_69b989869477820734594581_User-Dep-Relationships-Django.avif)
+!
 
 With our current payload (`created_by__departments__employees__user`) we would only be filtering the users that share a department with any other user that had published an article, which would only be able to dump karen and jeff-the-manager’s password hashes.
 
@@ -829,7 +829,7 @@ if __name__ == '__main__':
     main()
 ```
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab386b7948b108ecc9f_69b989869477820734594574_django-leak-for-zoomers2.gif)
+!
 
 Exploiting the many-to-many relationship between the `Author` and `Department` models in our relational filtering payload allowed us leak far more than just abusing a one-to-one relationship. This might not always be the case, for example if a many-to-many relationship was not defined or the target user we want to leak did not have a shared entity with any other users.
 
@@ -960,7 +960,7 @@ class PermissionsMixin(models.Model):
 
 So let’s extend our relational diagram and include Django’s builtin models highlighted in hot pink.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab486b7948b108eccbb_69b989879477820734594597_UML-example-app-full.avif)
+!
 
 We could then filter by users that shared the same **`Group`** (**`created_by__user__groups__user__password`**) or by users that have been assigned the same **`Permission`** (**`created_by__user__user_permissions__user__password`**).
 
@@ -1068,7 +1068,7 @@ if __name__ == '__main__':
     main()
 ```
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab386b7948b108ecca2_69b98986947782073459456e_django-leak-perms.gif)
+!
 
 ### Using Many-to-Many Relationships to Bypass Filter Restrictions
 
@@ -1213,7 +1213,7 @@ if __name__ == '__main__':
     main()
 ```
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab386b7948b108ecc91_69b989859477820734594554_django-leak-lawnmower.gif)
+!
 
 ## Error-based Leaking via ReDoS Payloads
 
@@ -1389,11 +1389,11 @@ if __name__ == '__main__':
     main()
 ```
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab586b7948b108ecd64_69b9898894778207345945a5_django-e6.gif)
+!
 
 *Very noice noice noice*
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab586b7948b108ecd5f_69b9898894778207345945aa_more-more-more-more-noice.gif)
+!
 
 **Some caveats about error-based leaking**
 
@@ -1413,221 +1413,77 @@ We also went into extensive detail about how **relational filtering attacks** ca
 
 Stay tuned for the next article in this series, where we demonstrate the exploitation of a different ORM with a *new attack methods* that was not discussed in this article.
 
-[
+[Cruising for Shells in Flowise](https://www.elttam.com/blog/cruising-for-shells-in-flowise)
 
-Cruising for Shells in Flowise
+[Your House Has an FFmpeg Problem](https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem)
 
-](https://www.elttam.com/blog/cruising-for-shells-in-flowise)
+[Exploiting Auth0 Defaults in XSS Attacks](https://www.elttam.com/blog/exploiting-auth0-defaults-in-xss-attacks)
 
-[
+[Jupyter Enterprise Gateway](https://www.elttam.com/blog/jupyter-enterprise-gateway)
 
-Your House Has an FFmpeg Problem
+[Golang code review notes II](https://www.elttam.com/blog/golang-code-review-notes-ii)
 
-](https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem)
+[ORM Leaking More Than You Joined For](https://www.elttam.com/blog/leaking-more-than-you-joined-for)
 
-[
+[Gotchas in Email Parsing - Lessons From Jakarta Mail](https://www.elttam.com/blog/jakarta-mail-primitives)
 
-Exploiting Auth0 Defaults in XSS Attacks
+[New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails](https://www.elttam.com/blog/rails-sqlite-gadget-rce)
 
-](https://www.elttam.com/blog/exploiting-auth0-defaults-in-xss-attacks)
+[A Monocle on Chronicles](https://www.elttam.com/blog/monocle-on-chronicles)
 
-[
+[DUCTF 2024 ESPecially Secure Boot Writeup](https://www.elttam.com/blog/ductf24-especially-secure-boot)
 
-Jupyter Enterprise Gateway
+[plORMbing your Prisma ORM with Time-based Attacks](https://www.elttam.com/blog/plorming-your-primsa-orm)
 
-](https://www.elttam.com/blog/jupyter-enterprise-gateway)
+[plORMbing your Django ORM](https://www.elttam.com/blog/plormbing-your-django-orm)
 
-[
+[Keeping up with the Pwnses](https://www.elttam.com/blog/talkback-intro)
 
-Golang code review notes II
+[Exploring the STSAFE-A110](https://www.elttam.com/blog/stsafe-a110)
 
-](https://www.elttam.com/blog/golang-code-review-notes-ii)
+[RE of LR3](https://www.elttam.com/blog/re-of-lr3)
 
-[
+[Abusing Amazon VPC CNI plugin for Kubernetes](https://www.elttam.com/blog/amazon-vpc-cni)
 
-ORM Leaking More Than You Joined For
+[PwnAssistant - Controlling /home's via a Home Assistant RCE](https://www.elttam.com/blog/pwnassistant)
 
-](https://www.elttam.com/blog/leaking-more-than-you-joined-for)
+[Cracking the Odd Case of Randomness in Java](https://www.elttam.com/blog/cracking-randomness-in-java)
 
-[
+[Golang code review notes](https://www.elttam.com/blog/golang-codereview)
 
-Gotchas in Email Parsing - Lessons From Jakarta Mail
+[ESP-IDF setup guide](https://www.elttam.com/blog/esp-idf-setup-guide)
 
-](https://www.elttam.com/blog/jakarta-mail-primitives)
+[Tuya IoT and EZ Mode Pairing](https://www.elttam.com/blog/ez-mode-pairing)
 
-[
+[Attacks on GCM with Repeated Nonces](https://www.elttam.com/blog/key-recovery-attacks-on-gcm)
 
-New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails
+[Simple Bugs With Complex Exploits](https://www.elttam.com/blog/simple-bugs-with-complex-exploits)
 
-](https://www.elttam.com/blog/rails-sqlite-gadget-rce)
+[Lua SUID Shells](https://www.elttam.com/blog/lua-suid-shells)
 
-[
+[Hacking with Environment Variables](https://www.elttam.com/blog/env)
 
-A Monocle on Chronicles
+[Are you winning if you're pinning?](https://www.elttam.com/blog/certpinning)
 
-](https://www.elttam.com/blog/monocle-on-chronicles)
+[Ruby 2.x Universal RCE Deserialization Gadget Chain](https://www.elttam.com/blog/ruby-deserialization)
 
-[
+[Fuze Multi-Card Technology Security Review](https://www.elttam.com/blog/fuzereview)
 
-DUCTF 2024 ESPecially Secure Boot Writeup
+[Remote LD_PRELOAD Exploitation](https://www.elttam.com/blog/goahead)
 
-](https://www.elttam.com/blog/ductf24-especially-secure-boot)
+[Building Hardened Docker Images from Scratch with Kubler](https://www.elttam.com/blog/kubler)
 
-[
+[Intro to SDR and RF Signal Analysis](https://www.elttam.com/blog/intro-sdr-and-rf-analysis)
 
-plORMbing your Prisma ORM with Time-based Attacks
+[Playing with canaries](https://www.elttam.com/blog/playing-with-canaries)
 
-](https://www.elttam.com/blog/plorming-your-primsa-orm)
+[EFF secure messaging scorecard review](https://www.elttam.com/blog/a-review-of-the-eff-secure-messaging-scorecard-pt2)
 
-[
+[Vuln research on the WAG54G home router](https://www.elttam.com/blog/vuln-research-on-the-wag54g-home-router)
 
-plORMbing your Django ORM
+[A review of the EFF secure messaging scorecard...](https://www.elttam.com/blog/a-review-of-the-eff-secure-messaging-scorecard-pt1)
 
-](https://www.elttam.com/blog/plormbing-your-django-orm)
-
-[
-
-Keeping up with the Pwnses
-
-](https://www.elttam.com/blog/talkback-intro)
-
-[
-
-Exploring the STSAFE-A110
-
-](https://www.elttam.com/blog/stsafe-a110)
-
-[
-
-RE of LR3
-
-](https://www.elttam.com/blog/re-of-lr3)
-
-[
-
-Abusing Amazon VPC CNI plugin for Kubernetes
-
-](https://www.elttam.com/blog/amazon-vpc-cni)
-
-[
-
-PwnAssistant - Controlling /home's via a Home Assistant RCE
-
-](https://www.elttam.com/blog/pwnassistant)
-
-[
-
-Cracking the Odd Case of Randomness in Java
-
-](https://www.elttam.com/blog/cracking-randomness-in-java)
-
-[
-
-Golang code review notes
-
-](https://www.elttam.com/blog/golang-codereview)
-
-[
-
-ESP-IDF setup guide
-
-](https://www.elttam.com/blog/esp-idf-setup-guide)
-
-[
-
-Tuya IoT and EZ Mode Pairing
-
-](https://www.elttam.com/blog/ez-mode-pairing)
-
-[
-
-Attacks on GCM with Repeated Nonces
-
-](https://www.elttam.com/blog/key-recovery-attacks-on-gcm)
-
-[
-
-Simple Bugs With Complex Exploits
-
-](https://www.elttam.com/blog/simple-bugs-with-complex-exploits)
-
-[
-
-Lua SUID Shells
-
-](https://www.elttam.com/blog/lua-suid-shells)
-
-[
-
-Hacking with Environment Variables
-
-](https://www.elttam.com/blog/env)
-
-[
-
-Are you winning if you're pinning?
-
-](https://www.elttam.com/blog/certpinning)
-
-[
-
-Ruby 2.x Universal RCE Deserialization Gadget Chain
-
-](https://www.elttam.com/blog/ruby-deserialization)
-
-[
-
-Fuze Multi-Card Technology Security Review
-
-](https://www.elttam.com/blog/fuzereview)
-
-[
-
-Remote LD_PRELOAD Exploitation
-
-](https://www.elttam.com/blog/goahead)
-
-[
-
-Building Hardened Docker Images from Scratch with Kubler
-
-](https://www.elttam.com/blog/kubler)
-
-[
-
-Intro to SDR and RF Signal Analysis
-
-](https://www.elttam.com/blog/intro-sdr-and-rf-analysis)
-
-[
-
-Playing with canaries
-
-](https://www.elttam.com/blog/playing-with-canaries)
-
-[
-
-EFF secure messaging scorecard review
-
-](https://www.elttam.com/blog/a-review-of-the-eff-secure-messaging-scorecard-pt2)
-
-[
-
-Vuln research on the WAG54G home router
-
-](https://www.elttam.com/blog/vuln-research-on-the-wag54g-home-router)
-
-[
-
-A review of the EFF secure messaging scorecard...
-
-](https://www.elttam.com/blog/a-review-of-the-eff-secure-messaging-scorecard-pt1)
-
-[
-
-Gaining console access to the WAG54G home router
-
-](https://www.elttam.com/blog/gaining-console-access-to-the-wag54g-home-router)
+[Gaining console access to the WAG54G home router](https://www.elttam.com/blog/gaining-console-access-to-the-wag54g-home-router)
 
 [
 

@@ -79,11 +79,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
  [ See All by GreenDog ](https://speakerdeck.com/greendog)
 
- [
-
- How to break SAML if I have paws?
-
- ](https://speakerdeck.com/greendog/how-to-break-saml-if-i-have-paws)
+ [How to break SAML if I have paws?](https://speakerdeck.com/greendog/how-to-break-saml-if-i-have-paws)
 
  [ ![Avatar for GreenDog](https://secure.gravatar.com/avatar/0eb5ff24722856be0e9c4f66faf363be?s=24) greendog ](https://speakerdeck.com/greendog)
 
@@ -91,11 +87,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   3k
 
- [
-
- Weird proxies/2 and a bit of magic
-
- ](https://speakerdeck.com/greendog/2-and-a-bit-of-magic)
+ [Weird proxies/2 and a bit of magic](https://speakerdeck.com/greendog/2-and-a-bit-of-magic)
 
  [ ![Avatar for GreenDog](https://secure.gravatar.com/avatar/0eb5ff24722856be0e9c4f66faf363be?s=24) greendog ](https://speakerdeck.com/greendog)
 
@@ -103,11 +95,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   10k
 
- [
-
- MITM Attacks on HTTPS: Another Perspective
-
- ](https://speakerdeck.com/greendog/mitm-attacks-on-https-another-perspective)
+ [MITM Attacks on HTTPS: Another Perspective](https://speakerdeck.com/greendog/mitm-attacks-on-https-another-perspective)
 
  [ ![Avatar for GreenDog](https://secure.gravatar.com/avatar/0eb5ff24722856be0e9c4f66faf363be?s=24) greendog ](https://speakerdeck.com/greendog)
 
@@ -115,11 +103,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   890
 
- [
-
- Deserialization vulnerabilities
-
- ](https://speakerdeck.com/greendog/deserialization-vulnerabilities)
+ [Deserialization vulnerabilities](https://speakerdeck.com/greendog/deserialization-vulnerabilities)
 
  [ ![Avatar for GreenDog](https://secure.gravatar.com/avatar/0eb5ff24722856be0e9c4f66faf363be?s=24) greendog ](https://speakerdeck.com/greendog)
 
@@ -131,11 +115,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
  [ See All in Technology ](https://speakerdeck.com/c/technology)
 
- [
-
- Digitization部 紹介資料
-
- ](https://speakerdeck.com/sansan33/digitization)
+ [Digitization部 紹介資料](https://speakerdeck.com/sansan33/digitization)
 
  [ ![Avatar for Sansan, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTM5NzYsInB1ciI6ImJsb2JfaWQifX0=--742b6b79e99ff01edb063160edba4f5a13693ead/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/icon512.jpg) sansan33 ](https://speakerdeck.com/sansan33)
 
@@ -145,11 +125,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   7.7k
 
- [
-
- 『三匹の子ぶた』から学ぶネットワークセキュリティの昔と今 / Network Security: Then and Now Through the Lens of The Three Little Pigs
-
- ](https://speakerdeck.com/nttcom/network-security-then-and-now-through-the-lens-of-the-three-little-pigs)
+ [『三匹の子ぶた』から学ぶネットワークセキュリティの昔と今 / Network Security: Then and Now Through the Lens of The Three Little Pigs](https://speakerdeck.com/nttcom/network-security-then-and-now-through-the-lens-of-the-three-little-pigs)
 
  [ ![Avatar for NTT docomo Business](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzEzOTQ5LCJwdXIiOiJibG9iX2lkIn19--8ea44ee690f9ac74fa426435b6c9c2dd0828ba56/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/eyecatch.png) nttcom ](https://speakerdeck.com/nttcom)
 
@@ -157,11 +133,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   1.7k
 
- [
-
- つくって納得、つかって実感！ 大規模言語モデルことはじめ ver2.0
-
- ](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_kiryu)
+ [つくって納得、つかって実感！ 大規模言語モデルことはじめ ver2.0](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_kiryu)
 
  [ ![Avatar for Recruit](https://secure.gravatar.com/avatar/85da685d91fda190e2e3162d0de248a4?s=24) recruitengineers ](https://speakerdeck.com/recruitengineers)
 
@@ -171,11 +143,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   930
 
- [
-
- トヨタ⽣産⽅式(TPS)⼊⾨
-
- ](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_sone)
+ [トヨタ⽣産⽅式(TPS)⼊⾨](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_sone)
 
  [ ![Avatar for Recruit](https://secure.gravatar.com/avatar/85da685d91fda190e2e3162d0de248a4?s=24) recruitengineers ](https://speakerdeck.com/recruitengineers)
 
@@ -185,11 +153,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   530
 
- [
-
- ラジオの科学
-
- ](https://speakerdeck.com/frievea/radio-explained)
+ [ラジオの科学](https://speakerdeck.com/frievea/radio-explained)
 
  [ ![Avatar for Frieve-A](https://secure.gravatar.com/avatar/98372e0220a3447bc5d8df1e7ba61ca5?s=24) frievea ](https://speakerdeck.com/frievea)
 
@@ -197,11 +161,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   250
 
- [
-
- 第3回しろおびセキュリティスポンサーセッション
-
- ](https://speakerdeck.com/log0417/di-3hui-siroobisekiyuriteisuponsasetusiyon)
+ [第3回しろおびセキュリティスポンサーセッション](https://speakerdeck.com/log0417/di-3hui-siroobisekiyuriteisuponsasetusiyon)
 
  [ ![Avatar for ogiogi](https://secure.gravatar.com/avatar/e764911839e52595bb96ef7dd7e205ce?s=24) log0417 ](https://speakerdeck.com/log0417)
 
@@ -209,11 +169,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   150
 
- [
-
- AI ネイティブな組織に Gemini Enterprise Agent Platform がなぜ必要なのか
-
- ](https://speakerdeck.com/asei/ai-neiteibunazu-zhi-ni-gemini-enterprise-agent-platform-ganazebi-yao-nanoka)
+ [AI ネイティブな組織に Gemini Enterprise Agent Platform がなぜ必要なのか](https://speakerdeck.com/asei/ai-neiteibunazu-zhi-ni-gemini-enterprise-agent-platform-ganazebi-yao-nanoka)
 
  [ ![Avatar for Asei Sugiyama](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTExMzEsInB1ciI6ImJsb2JfaWQifX0=--6ab0da6f609ebde4bd7f2e4864304699cc2b6203/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/icon.jpeg) asei ](https://speakerdeck.com/asei)
 
@@ -221,11 +177,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   180
 
- [
-
- Sansan Engineering Unit 紹介資料
-
- ](https://speakerdeck.com/sansan33/sansan-engineer)
+ [Sansan Engineering Unit 紹介資料](https://speakerdeck.com/sansan33/sansan-engineer)
 
  [ ![Avatar for Sansan, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTM5NzYsInB1ciI6ImJsb2JfaWQifX0=--742b6b79e99ff01edb063160edba4f5a13693ead/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/icon512.jpg) sansan33 ](https://speakerdeck.com/sansan33)
 
@@ -235,11 +187,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   4.9k
 
- [
-
- 20260801_スクフェス大阪
-
- ](https://speakerdeck.com/kgnkhkr/20260801-sukuhuesuda-ban)
+ [20260801_スクフェス大阪](https://speakerdeck.com/kgnkhkr/20260801-sukuhuesuda-ban)
 
  [ ![Avatar for hikari](https://secure.gravatar.com/avatar/fcef1ad1e9cf1bf9a18e0eae6d936718?s=24) kgnkhkr ](https://speakerdeck.com/kgnkhkr)
 
@@ -247,11 +195,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   1.2k
 
- [
-
- グローバル基準のSREは、運用現場でどう機能したか：成熟度アセスメントの実践 ／ SRE NEXT 2026
-
- ](https://speakerdeck.com/sorawatanabe/sre-next-2026-maturity-assessment)
+ [グローバル基準のSREは、運用現場でどう機能したか：成熟度アセスメントの実践 ／ SRE NEXT 2026](https://speakerdeck.com/sorawatanabe/sre-next-2026-maturity-assessment)
 
  [ ![Avatar for sorawatanabe](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Nzk2MzIxLCJwdXIiOiJibG9iX2lkIn19--da69af7a91c32dabf462738087e1138976d6d3d5/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/%E5%86%99%E7%9C%9F%202026-06-12%208%2007%2005.jpg) sorawatanabe ](https://speakerdeck.com/sorawatanabe)
 
@@ -259,11 +203,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   110
 
- [
-
- モバイルアプリ開発概論2026
-
- ](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_kokubo)
+ [モバイルアプリ開発概論2026](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_kokubo)
 
  [ ![Avatar for Recruit](https://secure.gravatar.com/avatar/85da685d91fda190e2e3162d0de248a4?s=24) recruitengineers ](https://speakerdeck.com/recruitengineers)
 
@@ -273,11 +213,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   400
 
- [
-
- ブラウザ研修 2026
-
- ](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_furukawa)
+ [ブラウザ研修 2026](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_furukawa)
 
  [ ![Avatar for Recruit](https://secure.gravatar.com/avatar/85da685d91fda190e2e3162d0de248a4?s=24) recruitengineers ](https://speakerdeck.com/recruitengineers)
 
@@ -291,11 +227,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [
-
- Into the Great Unknown - MozCon
-
- ](https://speakerdeck.com/thekraken/into-the-great-unknown-mozcon)
+ [Into the Great Unknown - MozCon](https://speakerdeck.com/thekraken/into-the-great-unknown-mozcon)
 
  [ ![Avatar for Noah Learner](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2MTAyLCJwdXIiOiJibG9iX2lkIn19--00ef9d097f9c3f99abcc76113c2bb9648f33a0e8/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/noah.jpeg) thekraken ](https://speakerdeck.com/thekraken)
 
@@ -303,11 +235,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   2.7k
 
- [
-
- We Are The Robots
-
- ](https://speakerdeck.com/honzajavorek/we-are-the-robots)
+ [We Are The Robots](https://speakerdeck.com/honzajavorek/we-are-the-robots)
 
  [ ![Avatar for Honza Javorek](https://secure.gravatar.com/avatar/7b2e4bf7ecca28e530e1c421f0676c0b?s=24) honzajavorek ](https://speakerdeck.com/honzajavorek)
 
@@ -315,11 +243,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   290
 
- [
-
- A better future with KSS
-
- ](https://speakerdeck.com/kneath/a-better-future-with-kss)
+ [A better future with KSS](https://speakerdeck.com/kneath/a-better-future-with-kss)
 
  [ ![Avatar for Kyle Neath](https://secure.gravatar.com/avatar/5f2da528927a2ec9ba4fec2069cbc958?s=24) kneath ](https://speakerdeck.com/kneath)
 
@@ -327,11 +251,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   18k
 
- [
-
- The Curse of the Amulet
-
- ](https://speakerdeck.com/leimatthew05/the-curse-of-the-amulet)
+ [The Curse of the Amulet](https://speakerdeck.com/leimatthew05/the-curse-of-the-amulet)
 
  [ ![Avatar for Matthew Lei](https://secure.gravatar.com/avatar/989a44ce1f1d3e5f5f1245f67e8b30a7?s=24) leimatthew05 ](https://speakerdeck.com/leimatthew05)
 
@@ -339,11 +259,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   14k
 
- [
-
- Rails Girls Zürich Keynote
-
- ](https://speakerdeck.com/gr2m/rails-girls-zurich-keynote)
+ [Rails Girls Zürich Keynote](https://speakerdeck.com/gr2m/rails-girls-zurich-keynote)
 
  [ ![Avatar for Gregor Martynus](https://secure.gravatar.com/avatar/24fc194843a71f10949be18d5a692682?s=24) gr2m ](https://speakerdeck.com/gr2m)
 
@@ -351,11 +267,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   14k
 
- [
-
- Building Adaptive Systems
-
- ](https://speakerdeck.com/keathley/building-adaptive-systems)
+ [Building Adaptive Systems](https://speakerdeck.com/keathley/building-adaptive-systems)
 
  [ ![Avatar for Chris Keathley](https://secure.gravatar.com/avatar/06f8b41980eb4c577fa40c41d5030c19?s=24) keathley ](https://speakerdeck.com/keathley)
 
@@ -363,11 +275,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   3.2k
 
- [
-
- SEO for Brand Visibility & Recognition
-
- ](https://speakerdeck.com/aleyda/seo-for-brand-visibility-and-recognition)
+ [SEO for Brand Visibility & Recognition](https://speakerdeck.com/aleyda/seo-for-brand-visibility-and-recognition)
 
  [ ![Avatar for Aleyda Solis](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6OTIyMDAsInB1ciI6ImJsb2JfaWQifX0=--f7ae7c6a9c16b0bb4461d98502be71c2c1b38eaf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/aleyda-solis.jpg) aleyda ](https://speakerdeck.com/aleyda)
 
@@ -375,11 +283,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   4.7k
 
- [
-
- How to build an LLM SEO readiness audit: a practical framework
-
- ](https://speakerdeck.com/nmsamuel/how-to-build-an-llm-seo-readiness-audit-a-practical-framework)
+ [How to build an LLM SEO readiness audit: a practical framework](https://speakerdeck.com/nmsamuel/how-to-build-an-llm-seo-readiness-audit-a-practical-framework)
 
  [ ![Avatar for Nick Samuel](https://secure.gravatar.com/avatar/b8ae5f207a0dc0e5518184aaada82d09?s=24) nmsamuel ](https://speakerdeck.com/nmsamuel)
 
@@ -387,11 +291,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   830
 
- [
-
- XXLCSS - How to scale CSS and keep your sanity
-
- ](https://speakerdeck.com/sugarenia/xxlcss-how-to-scale-css-and-keep-your-sanity)
+ [XXLCSS - How to scale CSS and keep your sanity](https://speakerdeck.com/sugarenia/xxlcss-how-to-scale-css-and-keep-your-sanity)
 
  [ ![Avatar for Zaharenia Atzitzikaki](https://secure.gravatar.com/avatar/1b8ad785acdd1ce1c99914b1c2a4e10e?s=24) sugarenia ](https://speakerdeck.com/sugarenia)
 
@@ -399,11 +299,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   1.3M
 
- [
-
- The Spectacular Lies of Maps
-
- ](https://speakerdeck.com/axbom/the-spectacular-lies-of-maps)
+ [The Spectacular Lies of Maps](https://speakerdeck.com/axbom/the-spectacular-lies-of-maps)
 
  [ ![Avatar for Per Axbom](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzA4MTcsInB1ciI6ImJsb2JfaWQifX0=--3b22ae95c7f24edaeb9c2d37fdb67f05b7db6128/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/axbom-ind08b.jpg) axbom ](https://speakerdeck.com/axbom)
 
@@ -413,11 +309,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   890
 
- [
-
- Claude Code どこまでも/ Claude Code Everywhere
-
- ](https://speakerdeck.com/nwiizo/claude-everywhere)
+ [Claude Code どこまでも/ Claude Code Everywhere](https://speakerdeck.com/nwiizo/claude-everywhere)
 
  [ ![Avatar for nwiizo](https://secure.gravatar.com/avatar/6ed12627fec46a135f1bce5d56f3568e?s=24) nwiizo ](https://speakerdeck.com/nwiizo)
 
@@ -425,11 +317,7 @@ Modern websites are growing more complex with different reverse proxies and bala
 
   57k
 
- [
-
- Discover your Explorer Soul
-
- ](https://speakerdeck.com/emna__ayadi/discover-your-explorer-soul)
+ [Discover your Explorer Soul](https://speakerdeck.com/emna__ayadi/discover-your-explorer-soul)
 
  [ ![Avatar for Emna](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzI5LCJwdXIiOiJibG9iX2lkIn19--c59e14bd8fc81f3e291b47c9b3de17d20d6d955b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/emna__ayadi.jpg) emna__ayadi ](https://speakerdeck.com/emna__ayadi)
 

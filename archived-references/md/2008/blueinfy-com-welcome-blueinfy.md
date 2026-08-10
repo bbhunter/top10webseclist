@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 Welcome To Blueinfy
 
-![](https://blueinfy.com/images/loader-shape.svg)
+!
 
 ### About Us
 
@@ -73,13 +73,13 @@ Welcome To Blueinfy
 
 Years of Work Experience
 
- ![](https://blueinfy.com/images/about-us.svg)
+ !
 
 ### About Us
 
 With human intelligence driven reviews, zero false positives, and years of expertise, we assess millions of code lines and thousands of applications annually.
 
- ![](https://blueinfy.com/images/leadership.svg)
+ !
 
 ### Leadership & Team
 
@@ -193,7 +193,7 @@ Human intelligence drives our testing, ensuring context and logic surpass what a
 
 We act as developers’ trusted partner with quick responses, clear documentation, risk insights, and periodic management reporting.
 
- ![](https://blueinfy.com/images/technology.svg)
+ !
 
 ### Meaningful Reporting
 
@@ -209,7 +209,7 @@ From initial risk assessments to ongoing protection with client specific tailor-
 
 ## Combining Research Excellence with Proprietary Technologies to deliver highest quality Security Services.
 
- ![](https://blueinfy.com/images/tools-technogies.svg)
+ !
 
  ![](https://blueinfy.com/images/TECHNOLOGIES ICON.svg)
 

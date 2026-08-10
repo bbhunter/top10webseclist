@@ -60,31 +60,13 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-[
-
-Back to Info Hub
-
-](https://ethiack.com/info-hub)
+[Back to Info Hub](https://ethiack.com/info-hub)
 
 # Write Once, Shell Everywhere: Turning Arbitrary File Writes into RCE
 
-[
-
-](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fethiack.com%2Finfo-hub%2Fresearch%2Fwrite-once-shell-everywhere-arbitrary-file-writes-into-rce)
-
 Link copied!
 
-[
-
-![Bruno Mendes - Head of Hacking at Ethiack](https://ethiack.com/_ipx/f_webp&s_3400x3316/https://cdn.sanity.io/images/ah5kp358/production/6d4e6dd7eefbecc365586ebda4e2d7e068153946-1050x1024.jpg)
-
-Bruno Mendes
-
-Head of HackingEthiack
-
-August 7, 2026
-
-](https://ethiack.com/info-hub?filter=bruno-mendes)
+[![Bruno Mendes - Head of Hacking at Ethiack](https://ethiack.com/_ipx/f_webp&s_3400x3316/https://cdn.sanity.io/images/ah5kp358/production/6d4e6dd7eefbecc365586ebda4e2d7e068153946-1050x1024.jpg) Bruno Mendes Head of HackingEthiack August 7, 2026](https://ethiack.com/info-hub?filter=bruno-mendes)
 
 ![Image](https://ethiack.com/_ipx/f_webp&s_3400x1798/https://cdn.sanity.io/images/ah5kp358/production/b5dfc09c384a48babca6f8de463860670cbe0404-1515x801.png)
 
@@ -1328,11 +1310,7 @@ Hope you enjoyed it, see you next time space cowboy!
 
 ## before attackers do.
 
-[
-
-Try Ethiack
-
- ](https://portal.ethiack.com/signup)
+[Try Ethiack](https://portal.ethiack.com/signup)
 
 30-day free trial. No commitment.
 

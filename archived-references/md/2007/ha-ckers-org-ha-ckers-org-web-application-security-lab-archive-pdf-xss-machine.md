@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 ha.ckers.org web application security lab - Archive » PDF XSS Can Compromise Your Machine
 
-[![](http://ha.ckers.org/images/whitehat_728x90_final2.gif)](http://www.whitehatsec.com/home/TradeUp/TradeUp.html)
+[!](http://www.whitehatsec.com/home/TradeUp/TradeUp.html)
  [![web application security lab](http://ha.ckers.org/images/84844372/rsnake/hackers.jpg)](http://ha.ckers.org/)
 
 ## [PDF XSS Can Compromise Your Machine](http://ha.ckers.org/blog/20070103/pdf-xss-can-compromise-your-machine/)

@@ -73,35 +73,11 @@ Sd Wan
 
 # SD-PWN Part 2 — Citrix SD-WAN Center — Another Network Takeover
 
-[
-
-![Ariel Tempelhof](https://miro.medium.com/v2/resize:fill:64:64/0*a1pLZg02u-07o1Tu.jpg)
-
-](https://medium.com/@arieltm?source=post_page---byline--a9c950a1a27c---------------------------------------)
+[![Ariel Tempelhof](https://miro.medium.com/v2/resize:fill:64:64/0*a1pLZg02u-07o1Tu.jpg)](https://medium.com/@arieltm?source=post_page---byline--a9c950a1a27c---------------------------------------)
 
 [Ariel Tempelhof](https://medium.com/@arieltm?source=post_page---byline--a9c950a1a27c---------------------------------------)
 
-4 min readNov 15, 2020
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Frealmodelabs%2Fa9c950a1a27c&operation=register&redirect=https%3A%2F%2Fmedium.com%2Frealmodelabs%2Fsd-pwn-part-2-citrix-sd-wan-center-another-network-takeover-a9c950a1a27c&user=Ariel+Tempelhof&userId=ec4107f72fa6&source=---header_actions--a9c950a1a27c---------------------clap_footer------------------)
-
 --
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2Fa9c950a1a27c&operation=register&redirect=https%3A%2F%2Fmedium.com%2Frealmodelabs%2Fsd-pwn-part-2-citrix-sd-wan-center-another-network-takeover-a9c950a1a27c&user=Ariel+Tempelhof&userId=ec4107f72fa6&source=---header_actions--a9c950a1a27c---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fa9c950a1a27c&operation=register&redirect=https%3A%2F%2Fmedium.com%2Frealmodelabs%2Fsd-pwn-part-2-citrix-sd-wan-center-another-network-takeover-a9c950a1a27c&source=---header_actions--a9c950a1a27c---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3Da9c950a1a27c&operation=register&redirect=https%3A%2F%2Fmedium.com%2Frealmodelabs%2Fsd-pwn-part-2-citrix-sd-wan-center-another-network-takeover-a9c950a1a27c&source=---header_actions--a9c950a1a27c---------------------post_audio_button------------------)
-
-Share
 
 Everyone knows that Citrix takes security seriously. This is the story of how we gained remote code execution in the Citrix SD-WAN platform.
 
@@ -219,15 +195,7 @@ Will run the shell command `ping -c 5 192.168.1.1`.
 
 Combining the `Collector` authentication bypass and the `stop_ping` shell injection will result in a pre-authenticated remote code execution. Here is an exploitation script:
 
-[
-
-## RealmodeLabs/SD-PWN
-
-### RCE Scripts for various SD-WAN Vendors. Contribute to RealmodeLabs/SD-PWN development by creating an account on GitHub.
-
-github.com
-
-](https://github.com/RealmodeLabs/SD-PWN/blob/master/citrix_sdwan_center_rce.py?source=post_page-----a9c950a1a27c---------------------------------------)
+[## RealmodeLabs/SD-PWN ### RCE Scripts for various SD-WAN Vendors. Contribute to RealmodeLabs/SD-PWN development by creating an account on GitHub. github.com](https://github.com/RealmodeLabs/SD-PWN/blob/master/citrix_sdwan_center_rce.py?source=post_page-----a9c950a1a27c---------------------------------------)
 
 ## Closing Remarks
 

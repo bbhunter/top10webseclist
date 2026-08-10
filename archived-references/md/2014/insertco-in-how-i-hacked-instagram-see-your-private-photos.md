@@ -96,7 +96,7 @@ After the reconnaissance of the whole site I realized that unlike the mobile app
 
 The following pictures show which are the differences I’m referring to.
 
- [![](https://web.archive.org/web/20160322204622im_/http://insertco.in/images/android_instagram.png)](https://web.archive.org/web/20160322204622/https://insertco.in/images/android_instagram.png) [![](https://web.archive.org/web/20160322204622im_/http://insertco.in/images/web_instagram.png)](https://web.archive.org/web/20160322204622/https://insertco.in/images/web_instagram.png)
+ [!](https://web.archive.org/web/20160322204622/https://insertco.in/images/android_instagram.png) [!](https://web.archive.org/web/20160322204622/https://insertco.in/images/web_instagram.png)
 
 ### HOW DID IT WORK?
 

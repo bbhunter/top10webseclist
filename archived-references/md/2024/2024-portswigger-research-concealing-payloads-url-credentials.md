@@ -136,5 +136,3 @@ The ability to conceal payloads through credentials, manipulate the username and
 [Back to all articles](https://portswigger.net/research/articles)
 
  `
-
-## Related Research

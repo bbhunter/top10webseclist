@@ -272,5 +272,3 @@ As you’d expect, coordinating vulnerability disclosure across four different p
 - NCSC-FI and DVV for helping coordinate the xmldom issue downstream
 
 …and everyone else involved who we forgot to mention explicitly!
-
-## Read More Community Articles

@@ -93,7 +93,7 @@ Threatpost | The first stop for security news
 
 -
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2021/05/12145806/VaccineCard-64x64.jpg)](https://threatpost.com/telegram-forged-covid-19-vaccine-cards/166093/)
+ [ !](https://threatpost.com/telegram-forged-covid-19-vaccine-cards/166093/)
 
 ## [Telegram Fraudsters Ramp Up Forged COVID-19 Vaccine Card Sales](https://threatpost.com/telegram-forged-covid-19-vaccine-cards/166093/)
 
@@ -117,7 +117,7 @@ Threatpost | The first stop for security news
 
 -
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2018/12/21144357/Encryption-2018-year-in-review2-64x64.jpg)](https://threatpost.com/encryption-under-full-frontal-nuclear-assault-by-u-s-bills/157748/)
+ [ !](https://threatpost.com/encryption-under-full-frontal-nuclear-assault-by-u-s-bills/157748/)
 
 ## [Encryption Under ‘Full-Frontal Nuclear Assault’ By U.S. Bills](https://threatpost.com/encryption-under-full-frontal-nuclear-assault-by-u-s-bills/157748/)
 
@@ -125,25 +125,25 @@ Threatpost | The first stop for security news
 
 -
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2022/01/10111423/cyberattacks-64x64.jpeg)](https://threatpost.com/cyber-spike-attacks-high-log4j/177481/)
+ [ !](https://threatpost.com/cyber-spike-attacks-high-log4j/177481/)
 
 ## [Cyber-Spike: Orgs Suffer 925 Attacks per Week, an All-Time High](https://threatpost.com/cyber-spike-attacks-high-log4j/177481/)
 
 -
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2021/12/22133338/ransomware-victory-64x64.jpg)](https://threatpost.com/pysa-top-ransomware-november/177242/)
+ [ !](https://threatpost.com/pysa-top-ransomware-november/177242/)
 
 ## [PYSA Emerges as Top Ransomware Actor in November](https://threatpost.com/pysa-top-ransomware-november/177242/)
 
 -
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2021/04/22151137/ransomware4-64x64.png)](https://threatpost.com/encrypted-fileless-malware-growth/175306/)
+ [ !](https://threatpost.com/encrypted-fileless-malware-growth/175306/)
 
 ## [Encrypted & Fileless Malware Sees Big Growth](https://threatpost.com/encrypted-fileless-malware-growth/175306/)
 
 -
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2021/09/30125346/ghost-64x64.jpeg)](https://threatpost.com/proxy-phantom-fraud-ecommerce-accounts/175241/)
+ [ !](https://threatpost.com/proxy-phantom-fraud-ecommerce-accounts/175241/)
 
 ## [Innovative Proxy Phantom ATO Fraud Ring Haunts eCommerce Accounts](https://threatpost.com/proxy-phantom-fraud-ecommerce-accounts/175241/)
 
@@ -155,7 +155,7 @@ Threatpost | The first stop for security news
 
 ### [PodcastsView all ](https://threatpost.com/category/podcasts/)
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2022/02/16174623/squabbling-couple-540x270.jpeg)](https://threatpost.com/microsite/threatpost-podcasts-going-beyond-the-headlines/)
+ [ !](https://threatpost.com/microsite/threatpost-podcasts-going-beyond-the-headlines/)
 
 [Microsite](https://threatpost.com/microsite/threatpost-podcasts-going-beyond-the-headlines/)
 
@@ -163,7 +163,7 @@ Threatpost | The first stop for security news
 
 A collection of in-depth discussions on the cybersecurity topics that matter most.
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2015/10/07002326/shutterstock_176043593-540x270.jpg)
+ [ !
 
 ](https://threatpost.com/wikileaks-alleges-years-of-cia-d-link-and-linksys-router-hacking-via-cherry-blossom-program/126339/)
 
@@ -171,43 +171,43 @@ A collection of in-depth discussions on the cybersecurity topics that matter mos
 
 The latest dump from Wikileaks alleges the CIA installed custom router firmware on unsuspecting targets in order to spy on internet activity.
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2014/09/07014513/bash_worm-540x270.jpg)](https://threatpost.com/bash-exploit-reported-first-round-of-patches-incomplete/108550/)
+ [ !](https://threatpost.com/bash-exploit-reported-first-round-of-patches-incomplete/108550/)
 
 ## [Bash Exploit Reported, First Round of Patches Incomplete](https://threatpost.com/bash-exploit-reported-first-round-of-patches-incomplete/108550/)
 
 Reports of the first in-the-wild exploits targeting the Bash vulnerability have surfaced, as have complaints the first patches for the bug are incomplete.
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2009/04/07051244/rsaconf-540x270.jpg)](https://threatpost.com/threatpost-news-briefs-february-21-2014/104418/)
+ [ !](https://threatpost.com/threatpost-news-briefs-february-21-2014/104418/)
 
 ## [Threatpost News Wrap, February 21, 2014](https://threatpost.com/threatpost-news-briefs-february-21-2014/104418/)
 
 Dennis Fisher and Mike Mimoso preview next week’s RSA conference, discuss the sessions they’re looking forward to covering and what the fallout from the NSA controversy will be during the week.
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2014/02/07023859/Screen-Shot-2014-02-05-at-2.54.00-PM-540x270.png)](https://threatpost.com/jeremiah-grossman-on-his-new-role-as-ceo-of-whitehat-security/104085/)
+ [ !](https://threatpost.com/jeremiah-grossman-on-his-new-role-as-ceo-of-whitehat-security/104085/)
 
 ## [Jeremiah Grossman on His New Role as CEO of WhiteHat Security](https://threatpost.com/jeremiah-grossman-on-his-new-role-as-ceo-of-whitehat-security/104085/)
 
 Dennis Fisher talks with Jeremiah Grossman, the new interim CEO of WhiteHat Security, about taking on the new role, how things have changed since he was CEO 10 years ago and what the biggest challenges will be.
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2014/01/07024119/SCADA_Surveillance-540x270.jpg)](https://threatpost.com/threatpost-news-wrap-january-24-2014/103859/)
+ [ !](https://threatpost.com/threatpost-news-wrap-january-24-2014/103859/)
 
 ## [Threatpost News Wrap, January 24, 2014](https://threatpost.com/threatpost-news-wrap-january-24-2014/103859/)
 
 Dennis Fisher and Mike Mimoso talk about the big security stories of the last couple of weeks, including the developments in the Target data breach, the president’s speech on NSA surveillance reforms and SCADA security woes.
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2013/12/07024817/target_breach-540x270.jpg)](https://threatpost.com/rich-mogull-on-the-target-data-breach/103584/)
+ [ !](https://threatpost.com/rich-mogull-on-the-target-data-breach/103584/)
 
 ## [Rich Mogull on the Target Data Breach](https://threatpost.com/rich-mogull-on-the-target-data-breach/103584/)
 
 Dennis Fisher talks with Rich Mogull of Securosis about the Target data breach, how the attack may have worked, why these breaches are still so common and what can be done to improve the situation.
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2014/01/07024331/target-540x270.jpg)](https://threatpost.com/threatpost-news-wrap-january-10-2014/103601/)
+ [ !](https://threatpost.com/threatpost-news-wrap-january-10-2014/103601/)
 
 ## [Threatpost News Wrap, January 10, 2014](https://threatpost.com/threatpost-news-wrap-january-10-2014/103601/)
 
 Dennis Fisher and Mike Mimoso discuss the news of the weird in the security industry since the holidays, including the latest revelations about the Target data breach and the decision by some speakers to boycott the RSA Conference because of the NSA revelations.
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2014/01/07024536/2013_in_review-540x270.jpg)](https://threatpost.com/2013-the-security-year-in-review/103401/)
+ [ !](https://threatpost.com/2013-the-security-year-in-review/103401/)
 
 ## [2013: The Security Year in Review](https://threatpost.com/2013-the-security-year-in-review/103401/)
 
@@ -215,7 +215,7 @@ Dennis Fisher and Mike Mimoso talk about the year that was in the security indus
 
 ### [VideosView all ](https://threatpost.com/category/videos/)
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2020/07/22170321/oilrig-540x270.jpeg)](https://threatpost.com/lyceum-apt-tunisian-firms/175579/)
+ [ !](https://threatpost.com/lyceum-apt-tunisian-firms/175579/)
 
 ## [Lyceum APT Returns, This Time Targeting Tunisian Firms](https://threatpost.com/lyceum-apt-tunisian-firms/175579/)
 
@@ -269,7 +269,7 @@ From ransomware attacks that crippled hospitals, to espionage attacks targeting 
 
 Bugcrowd Founder Casey Ellis talks about COVID-19’s impact on bug bounty hunters, bug bounty program adoption and more.
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2018/10/24152937/Magento_Ecomerce-540x270.jpg)](https://threatpost.com/experts-weigh-in-ecommerce-security/160630/)
+ [ !](https://threatpost.com/experts-weigh-in-ecommerce-security/160630/)
 
 ## [Experts Weigh in on E-Commerce Security Amid Snowballing Threats](https://threatpost.com/experts-weigh-in-ecommerce-security/160630/)
 
@@ -283,7 +283,7 @@ Ahead of the November U.S. elections, cybercriminals are stepping up their offen
 
 ### [SlideshowView all ](https://threatpost.com/category/slideshow/)
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2019/12/30144352/2020_digital-540x270.png)
+ [ !
 
 ](https://threatpost.com/2020-cybersecurity-trends-to-watch/151459/)
 
@@ -291,7 +291,7 @@ Ahead of the November U.S. elections, cybercriminals are stepping up their offen
 
 Mobile becomes a prime phishing attack vector, hackers will increasingly employ machine learning in attacks and cloud will increasingly be seen as fertile ground for compromise.
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2019/12/23174757/Mobile-threats-2019-540x270.jpg)
+ [ !
 
 ](https://threatpost.com/top-mobile-security-stories-2019/151420/)
 
@@ -307,7 +307,7 @@ Cybercrime increasingly went mobile in 2019, with everything from Apple iPhone j
 
 2019 was a tumultuous year for Facebook as it continued to grapple with privacy fallout after Cambridge Analytica, as well as dealing with a slew of security challenges.
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2019/12/24125044/malware-2019_700-x-420-540x270.jpg)](https://threatpost.com/biggest-malware-threats-of-2019/151423/)
+ [ !](https://threatpost.com/biggest-malware-threats-of-2019/151423/)
 
 ## [Biggest Malware Threats of 2019](https://threatpost.com/biggest-malware-threats-of-2019/151423/)
 
@@ -329,7 +329,7 @@ From more widescale, powerful distributed denial of service (DDoS) attacks, to p
 
 Here are 10 top malware trends to watch for in the New Year.
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2018/12/19183445/Hacker-year-in-review-20182-540x270.jpg)
+ [ !
 
 ](https://threatpost.com/top-2018-security-and-privacy-stories/140312/)
 
@@ -337,7 +337,7 @@ Here are 10 top malware trends to watch for in the New Year.
 
 The top cybersecurity and privacy trends that biggest impact in 2018.
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2018/12/21120506/intro-540x270.png)
+ [ !
 
 ](https://threatpost.com/2019-the-year-ahead-in-cybersecurity/140272/)
 
@@ -345,7 +345,7 @@ The top cybersecurity and privacy trends that biggest impact in 2018.
 
 What are the top cyber trends to watch out for in 2019? Here’s what we’re hearing.
 
- [ ![](https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2015/02/07005821/data-540x270.jpg)
+ [ !
 
 ](https://threatpost.com/2018-biggest-breaches/140346/)
 

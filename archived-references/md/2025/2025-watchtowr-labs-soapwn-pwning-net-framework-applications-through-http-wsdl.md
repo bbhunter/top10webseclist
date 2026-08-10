@@ -83,7 +83,7 @@ Given the wide usage of .NET and the limitations of hours in a day, the list of 
 
 While today’s blog is designed to provide readers with an overview of our research and its outcomes, further depth can be found inside the [whitepaper linked here](https://watchtowr.com/wp-content/uploads/SOAPwnwatchtowr_soappwn-research-whitepaper_10-12-2025.pdf?ref=labs.watchtowr.com).
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-22.png)
+!
 
 To get us all in the right mood - let us show you weaponization of this research against Barracuda Service Center RMM (fixed in hotfix 2025.1.1), now assigned CVE-2025-34392 - preauthenticated, no less.
 
@@ -265,7 +265,7 @@ The .NET Framework HTTP client proxies can be steered into using file system han
 
 Because SOAP requests use the POST method, `SoapHttpClientProtocol` will happily write the SOAP request body directly into the file.
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-1.png)
+!
 
 Wait, what? Why does a SOAP proxy need to be able to “send” SOAP requests to a local file?
 
@@ -325,7 +325,7 @@ The proxy then writes the file and embeds the attacker-controlled C# code, which
 
 Bingo?
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-3.png)
+!
 
 When `SoapHttpClientProtocol` is pointed at a `file` URL, the application usually throws an error such as:
 
@@ -389,7 +389,7 @@ There were so many red flags that it was difficult to list them all:
 
 We began reviewing the code in detail and the simplified flow looked like this:
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-23.png)
+!
 
 To summarize the flow:
 
@@ -488,7 +488,7 @@ In short, generating C# code from a WSDL file is normal and fully supported. Thi
 
 We also asked Claude for its take, because everyone enjoys a bit of vibecoding. Its first suggestion was exactly the same: use `ServiceDescriptionImporter` and generate the proxy automatically.
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-5.png)
+!
 
 All of this is important. It shows that WSDL based proxy generation is a normal and encouraged pattern in .NET Framework applications. That means the invalid cast issue is likely reachable in many different codebases that import WSDL files.
 
@@ -505,11 +505,11 @@ Exploitation through WSDL import is far more powerful than directly abusing `Soa
 - By choosing the SOAP method names, we control the XML tag names in the resulting request.
 - If the application allows us to influence the method arguments, as in the Barracuda example, we also control the values inside those tags.
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-6.png)
+!
 
 Essentially, the proxy class can generate a SOAP body that looks conceptually like the following:
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-7.png)
+!
 
 You can see that we have significant control over most of the XML.
 
@@ -554,13 +554,13 @@ There is still a path forward. We noticed that there is one part of the WSDL tha
 
 Consider the following fragment of WSDL:
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-8.png)
+!
 
 You can see that the namespace defined in our WSDL is a valid URL, and the query string allows us to smuggle several special characters.
 
 When the SOAP method is executed, the generated SOAP request body will include that namespace exactly as provided:
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-9.png)
+!
 
 The namespace is included directly in the SOAP body. That alone is enough to do things such as:
 
@@ -571,7 +571,7 @@ There are likely other ways to use this technique, but these two were sufficient
 
 For example, the following illustrates a valid RCE achieved through a CSHTML upload in Ivanti Endpoint Manager:
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-12.png)
+!
 
 The only real limitation is that we cannot use the double quote character `"`. This is not a problem for payloads such as CSHTML, where a `string` can be constructed from an array of `char`.
 
@@ -583,13 +583,13 @@ To summarize, WSDL imports create a very powerful exploitation path for the inva
 
 In practice, the exploitation follows two steps. First, the attacker provides a malicious WSDL file, and the application generates an HTTP client proxy from it using `ServiceDescriptionImporter`.
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-24.png)
+!
 
 The second step is to trigger execution of the generated SOAP method. This is usually straightforward, because the application is importing the WSDL for a reason and will eventually call the method. The exact trigger depends on the codebase and the intended functionality.
 
 A typical example of this second step might look like the following:
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-25.png)
+!
 
 In many cases, this vulnerability can lead to remote code execution through the upload of a webshell or a valid PowerShell script.
 
@@ -615,7 +615,7 @@ First, we want to show a few real vulnerabilities in selected products.
 
 We meandered through life at this point, and decided to look at a selection of randomly-selected solutions for the appearance of `ServiceDescriptionImporter`.
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-14.png)
+!
 
 ## Exploitation - Barracuda Service Center RMM RCE (CVE-2025-34392)
 
@@ -681,7 +681,7 @@ The malicious WSDL sets the proxy URL to `file:///Program Files (x86)/Level Plat
 
 This forces the generated `SoapHttpClientProtocol` instance to write the SOAP body into that path, which results in a valid webshell being dropped.
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-15.png)
+!
 
 You can have a look at the extended demo, with the debugger attached. It presents important parts of the code flow and show the entire exploitation process.
 
@@ -697,7 +697,7 @@ Umbraco CMS is one of the most popular and widely trusted .NET based CMS platfor
 
 We found that an authenticated user with permission to edit Umbraco Forms can exploit the invalid cast vulnerability to achieve post-authentication RCE. These forms rely on something called a “data source,” and the way these sources are defined immediately triggered our spider senses.
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-16.png)
+!
 
 Within the above provided functionality, very helpfully we can define a data source of type `Webservice`.
 
@@ -747,15 +747,15 @@ In our example, we created:
 
 The result is the following generated SOAP proxy class:
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-17.png)
+!
 
 You can then trigger the form and watch the generated SOAP method execute in the debugger:
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-18.png)
+!
 
 And finally, you can enjoy your freshly dropped malicious CSHTML file.
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-19.png)
+!
 
      0:00
 
@@ -769,7 +769,7 @@ We can now look at Microsoft’s final response.
 
 What do you think, dear reader? You have two choices:
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-20.png)
+!
 
 It does not take a genius to predict Microsoft’s final response:
 
@@ -795,7 +795,7 @@ Sigh.
 
 But as always, there is no vulnerability that cannot be “fixed” with documentation updates and warnings. Our research can be summarized by this commit in the `dotnet` repository:
 
-![](https://storage.ghost.io/c/a0/dc/a0dcbbe4-0ae7-4d7e-90f7-ebbc3a0f5a84/content/images/2025/12/image-21.png)
+!
 
 As a result, Microsoft has not fixed any of the reported vulnerabilities. Slow clap.
 

@@ -87,7 +87,7 @@ Having found a XSS vulnerability, we basically run a script on a vulnerable page
 
  What would survive reloading the document in a window? Another window - or en embedding frame. If you have a website that is rendered in <iframe>, clicking the links reloads the iframe, but doesn't touch the embedding content. For example, clicking a facebook "like" button on a website only changes the button to "unlike", because it's embedded in an iframe with src=http://www.facebook.com/whatever.
 
-| [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi_5TofO2jeFODext6XTWPB1tJnyCM92jizHQaEYCUp3qs7ACMi8YywuQTaUQsmRZJQ5nZKMcCTJZ5ESR-OBRwaSzehLE6QhoUie7aydGi0ixVZiMOct9W_xQ60kUxHXMUKndNCU6bCbs/s320/facebook-like-iframe.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi_5TofO2jeFODext6XTWPB1tJnyCM92jizHQaEYCUp3qs7ACMi8YywuQTaUQsmRZJQ5nZKMcCTJZ5ESR-OBRwaSzehLE6QhoUie7aydGi0ixVZiMOct9W_xQ60kUxHXMUKndNCU6bCbs/s1600/facebook-like-iframe.png) |  |
+| [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi_5TofO2jeFODext6XTWPB1tJnyCM92jizHQaEYCUp3qs7ACMi8YywuQTaUQsmRZJQ5nZKMcCTJZ5ESR-OBRwaSzehLE6QhoUie7aydGi0ixVZiMOct9W_xQ60kUxHXMUKndNCU6bCbs/s1600/facebook-like-iframe.png) |  |
 | Iframe used by Facebook |  |
 
 So if XSS payload could create an iframe with URL of *any* page from a vulnerable website (more on that later) and entice a user to click in the iframe instead of in our vulnerable page, the injected script would be still active, as his actions would reload the iframe content* only* (unless the website is [frame busting](http://en.wikipedia.org/wiki/Framekiller), but there are [ways around that](http://www.owasp.org/images/0/0e/OWASP_AppSec_Research_2010_Busting_Frame_Busting_by_Rydstedt.pdf)).
@@ -127,7 +127,7 @@ $('<iframe>')
 
 The whole setup looks like in the diagram below:
 
-| [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy6okcSTxL6Hvdka9LQlNobo1kZlvIvRiPDKMde7Tds_co6JrI1P0XRAepdcWCbEmfui0etmJg8HoviZYx8uJXegqJkiJJ_AlIu-Cc-KC4QBI0AFmgmnsmNAZy6nN48MB7dFyeErJBvLk/s320/text12364-2.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy6okcSTxL6Hvdka9LQlNobo1kZlvIvRiPDKMde7Tds_co6JrI1P0XRAepdcWCbEmfui0etmJg8HoviZYx8uJXegqJkiJJ_AlIu-Cc-KC4QBI0AFmgmnsmNAZy6nN48MB7dFyeErJBvLk/s1600/text12364-2.png) |  |
+| [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy6okcSTxL6Hvdka9LQlNobo1kZlvIvRiPDKMde7Tds_co6JrI1P0XRAepdcWCbEmfui0etmJg8HoviZYx8uJXegqJkiJJ_AlIu-Cc-KC4QBI0AFmgmnsmNAZy6nN48MB7dFyeErJBvLk/s1600/text12364-2.png) |  |
 | XSS-Track - Step 1: iframe creation |  |
 
  For the user it looks as if he's browsing the website, but he's browsing our target iframe instead, and the injected script safely runs in a "parent" window. Our payload survives.
@@ -226,7 +226,7 @@ function log(what) {
 
 The full setup works like this:
 
-| [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4HUh7aHV8Fn3kOpbPBJJ957BdXg3KNZwSf5BODGw9UeprQnPK9IDkbEmUqbsnqthEWc4nzX0XR3_rFNqF02my5XceJuc-fDf0wMVc4zh6NJQA0IiiQ2Cxxx2OTbloJtDOZoZQrF9t7Pc/s320/text12364.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4HUh7aHV8Fn3kOpbPBJJ957BdXg3KNZwSf5BODGw9UeprQnPK9IDkbEmUqbsnqthEWc4nzX0XR3_rFNqF02my5XceJuc-fDf0wMVc4zh6NJQA0IiiQ2Cxxx2OTbloJtDOZoZQrF9t7Pc/s1600/text12364.png) |  |
+| [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4HUh7aHV8Fn3kOpbPBJJ957BdXg3KNZwSf5BODGw9UeprQnPK9IDkbEmUqbsnqthEWc4nzX0XR3_rFNqF02my5XceJuc-fDf0wMVc4zh6NJQA0IiiQ2Cxxx2OTbloJtDOZoZQrF9t7Pc/s1600/text12364.png) |  |
 | XSS-track - Complete set up  |  |
 
 ## Weak points

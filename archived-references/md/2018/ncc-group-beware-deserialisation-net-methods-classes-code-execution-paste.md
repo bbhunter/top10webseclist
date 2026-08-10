@@ -120,7 +120,7 @@ The following applications were found to be vulnerable that can be used as examp
 
 The following GIF video file shows a proof of concept:
 
-![](https://www.nccgroup.trust/globalassets/our-research/uk/images/clipboard.gif)
+!
 
 ### Recommendation
 

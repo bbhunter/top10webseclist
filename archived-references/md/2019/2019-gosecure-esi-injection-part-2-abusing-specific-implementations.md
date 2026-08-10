@@ -133,7 +133,7 @@ Here is an example of a malicious payload which will create a virtual page `atta
 
 From an attacker's perspective, this feature can be used to pollute existing resources such as JavaScript to hide a malicious backdoor. It could be used to host malicious pages or binaries.
 
-![](https://www.gosecure.net/wp-content/uploads/02_victim.png)
+!
 A perspective of the victim seeing the poison page or resource
 
 This attack vector was initially found after reading the documentation, [Oracle Application Server Web Cache: Administrator's Guide](https://docs.oracle.com/cd/B14099_19/caching.1012/b14046.pdf).
@@ -146,7 +146,7 @@ If you are no longer using ESI, you can stop returning the header, "Surrogate-Co
 
 ## **2. RCE Through XSLT**
 
-![](https://www.gosecure.net/wp-content/uploads/esigate-e1544649531706.png)Some vendors implemented the possibility to include XML content that is transformed using XML Stylesheet Language Transformations. Only one occurrence was found vulnerable. It was found by, [Benoit Coté-Jodoin, using Find Security Bugs](https://www.gosecure.net/2018/09/06/large-scale-vulnerability-scanning-with-jenkins/). We are presenting the exploit scenario affecting [ESIGate version lower than 5.3](http://www.esigate.org/).
+!Some vendors implemented the possibility to include XML content that is transformed using XML Stylesheet Language Transformations. Only one occurrence was found vulnerable. It was found by, [Benoit Coté-Jodoin, using Find Security Bugs](https://www.gosecure.net/2018/09/06/large-scale-vulnerability-scanning-with-jenkins/). We are presenting the exploit scenario affecting [ESIGate version lower than 5.3](http://www.esigate.org/).
 
 ### Triggering the XSLT Processing
 
@@ -197,7 +197,7 @@ For more information about the vulnerability, you can consult, [Find Security Bu
 
 ## **3. Header Injection and Limited SSRF (CVE-2019-2438)**
 
-![](https://www.gosecure.net/wp-content/uploads/Oracle_Fusion_Middleware_11g_Web.jpg)When we started this research, the main vulnerability class targeted was Server Side Request Forgery (SSRF), in short, the capability to request web pages from another domain or IP. We focus on the URL parameter from the `esi:include` tag. The host from the URL was either ignored or verified against a whitelist. This leads us to focus on other features, such as the ESI variables ([see the previous blog](https://www.gosecure.net/2018/04/03/beyond-xss-edge-side-include-injection/)).
+!When we started this research, the main vulnerability class targeted was Server Side Request Forgery (SSRF), in short, the capability to request web pages from another domain or IP. We focus on the URL parameter from the `esi:include` tag. The host from the URL was either ignored or verified against a whitelist. This leads us to focus on other features, such as the ESI variables ([see the previous blog](https://www.gosecure.net/2018/04/03/beyond-xss-edge-side-include-injection/)).
 
 There is one scenario which leads us to an SSRF. This scenario involves injecting an unexpected Host header for a `esi:include` statement.
 

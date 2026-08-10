@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 I’ve been using Ubuntu Server Edition for several years now as my pentesting toolbox platform. A few months ago, I also migrated my workstation to Ubuntu Desktop Edition. Recently, I also migrated my personal laptop to Ubuntu Desktop. I guess I’m officially an Ubuntu fan. W00t!
 
-[![](http://farm1.static.flickr.com/41/103018041_74a7149703.jpg?v=0)](http://flickr.com/photos/alfhild/103018041/)
+[!](http://flickr.com/photos/alfhild/103018041/)
 
 I’m not going to discuss the Ubuntu security model in detail, but in short, one of the highlights is that by default logged-in users run processes with restricted privileges. Whenever a command needs to be run with root privileges, the user issues a `sudo` command. This is quite safe, as it means that privileged tasks only take place when specified individually. Of course, the user can fully bypass this security model with a simple `sudo /bin/bash` but one is not supposed to do this.
 

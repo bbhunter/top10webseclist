@@ -65,7 +65,7 @@ SIFT - Information Security Services
 
  
 
-|   [![](http://www.sift.com.au/images/hd_logo.gif)](http://www.sift.com.au/index.asp) |
+|   [!](http://www.sift.com.au/index.asp) |
 
 # Quick Search
 
@@ -86,11 +86,11 @@ Enter word or key phrases
 
 # Information For:
 
-![](http://www.sift.com.au/images/esalogo.gif) SIFT is an "Australian Government Endorsed Supplier" of information security and information risk management services.
+! SIFT is an "Australian Government Endorsed Supplier" of information security and information risk management services.
 
    |
 
-|   [![](http://www.sift.com.au/images/ico_print.gif)]()
+|   [!]()
 
 # Publications
 
@@ -100,7 +100,7 @@ Enter word or key phrases
 
 Several workarounds exist and have been detailed in this paper and the technique does not offer the ability to perform advanced fingerprinting or analysis of the underlying operating system of hosts. However, this technique demonstrates the danger that inadequately configured XML parsers can pose to an organisation and highlights the inability of traditional network security devices to handle application-level threats.
 
-[![](http://www.sift.com.au/images/icon_download.gif)](http://www.sift.com.au/assets/downloads/SIFT-XML-Port-Scanning-v1-00.pdf)
+[!](http://www.sift.com.au/assets/downloads/SIFT-XML-Port-Scanning-v1-00.pdf)
 
  Top
 

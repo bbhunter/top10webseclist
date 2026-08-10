@@ -137,7 +137,7 @@ endobj
  To be able to use it, you already need to be in a trusted code execution. It sounds unrealistic to pass all these requirements,
  but one specific predefined function helped a lot. See yourself:
 
- [![](https://web.archive.org/web/20160424012742im_/http://1.bp.blogspot.com/-3eCsX3B--z0/VIwafTDo3UI/AAAAAAAAABo/EBY1FA3IcgI/s1600/js_pr_1.png)](https://web.archive.org/web/20160424012742/http://1.bp.blogspot.com/-3eCsX3B--z0/VIwafTDo3UI/AAAAAAAAABo/EBY1FA3IcgI/s1600/js_pr_1.png)
+ [!](https://web.archive.org/web/20160424012742/http://1.bp.blogspot.com/-3eCsX3B--z0/VIwafTDo3UI/AAAAAAAAABo/EBY1FA3IcgI/s1600/js_pr_1.png)
 
  The only use of this function is to iterace over an object and mark all properties, which are functions, as a trustpropagator function.
  Lets say, this wasn't the best idea ;)
@@ -145,13 +145,13 @@ endobj
  Now we need to get a trusted function to call our marked function. If you are familiar with Javascript you know that this is not that difficult to achieve.
  Lets have a look at the following pre defined function:
 
- [![](https://web.archive.org/web/20160424012742im_/http://3.bp.blogspot.com/-XuJI0rpjx1I/VIwbIjFbC6I/AAAAAAAAABw/kRm9jkOQf0Y/s1600/js_pr_2.png)](https://web.archive.org/web/20160424012742/http://3.bp.blogspot.com/-XuJI0rpjx1I/VIwbIjFbC6I/AAAAAAAAABw/kRm9jkOQf0Y/s1600/js_pr_2.png)
+ [!](https://web.archive.org/web/20160424012742/http://3.bp.blogspot.com/-XuJI0rpjx1I/VIwbIjFbC6I/AAAAAAAAABw/kRm9jkOQf0Y/s1600/js_pr_2.png)
 
  We can influence doc.path.match and let it point to our trustedproperty function.
  As soon as it gets called, we are in privileged Javascript mode, so we can read local files as an example.
  The PoC reads a local file from C:\test.txt:
 
- [![](https://web.archive.org/web/20160424012742im_/http://1.bp.blogspot.com/-z0WyfCELiq0/VIwcB3IPK3I/AAAAAAAAAB8/QWd5QpIis_Q/s1600/js_pr_3.png)](https://web.archive.org/web/20160424012742/http://1.bp.blogspot.com/-z0WyfCELiq0/VIwcB3IPK3I/AAAAAAAAAB8/QWd5QpIis_Q/s1600/js_pr_3.png)
+ [!](https://web.archive.org/web/20160424012742/http://1.bp.blogspot.com/-z0WyfCELiq0/VIwcB3IPK3I/AAAAAAAAAB8/QWd5QpIis_Q/s1600/js_pr_3.png)
 
  [PoC](https://web.archive.org/web/20160424012742/https://dl.dropboxusercontent.com/u/13018058/poc/js.pdf)
  Fix: It seems like Adobe disabled/protects app.trustPropagatorFunction, because it triggers a security exception now.
@@ -168,7 +168,7 @@ endobj
  I created a simple xml file, which references an url from the same domain and parsed it with loadXML.
  It worked:
 
- [![](https://web.archive.org/web/20160424012742im_/http://4.bp.blogspot.com/-is4Q5hSZk-Y/VIwdzdAckWI/AAAAAAAAACI/OAzBs9Q-T50/s1600/xxe.png)](https://web.archive.org/web/20160424012742/http://4.bp.blogspot.com/-is4Q5hSZk-Y/VIwdzdAckWI/AAAAAAAAACI/OAzBs9Q-T50/s1600/xxe.png)
+ [!](https://web.archive.org/web/20160424012742/http://4.bp.blogspot.com/-is4Q5hSZk-Y/VIwdzdAckWI/AAAAAAAAACI/OAzBs9Q-T50/s1600/xxe.png)
 
  [PoC](https://web.archive.org/web/20160424012742/https://dl.dropboxusercontent.com/u/13018058/poc/xxe.pdf)
 

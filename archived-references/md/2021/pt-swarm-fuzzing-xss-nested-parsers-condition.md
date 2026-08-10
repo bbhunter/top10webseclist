@@ -77,7 +77,7 @@ Parsers are applications that find a substring in a text. When parsing messages,
 
 ## Well known parsers in messages
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2021/12/1.png)
+!
 
 ### HTML as message markup
 
@@ -176,7 +176,7 @@ Vulnerability when a parser converts user input to HTML, sanitizes HTML characte
 
 ## Parsers with nested conditions’
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2021/12/2.png)
+!
 
 Nested condition is when one payload is processed by two different parsers, which, with some manipulations, allows us to inject arbitrary JavaScript into the page. These vulnerabilities are very easy to overlook both by developers and hackers.
 
@@ -200,7 +200,7 @@ $message = returnCLickable(htmlspecialchars($_REQUEST['msg']));
 
 User input passed as a sanitized text to the argument of function `returnClickable` that finds urls and emails and returns HTML code for clickable elements.
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2021/12/3.png)
+!
 
 Looks safe at first, but if you try to send a string that contains an email inside the URL, the parser will return broken HTML code, and your user input migrates from an HTML attribute value to an HTML attribute name.
 
@@ -280,7 +280,7 @@ You can use this method on desktop/mobile apps when you can’t see HTTP traffic
 
 Expected results: chunks of HTML code (`">`, `" >`, `"/>`) become visible.
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2021/12/4.png)
+!
 
 ### Method 2 – regular expressions
 
@@ -288,11 +288,11 @@ This method can be used when you apply fully automated fuzzing.
 
 For example, we use a regex that searches for an opening HTML tag character `<` inside of an HTML attribute:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2021/12/5.png)
+!
 
 We applied this fuzzing technique against the vBulletin board using BurpSuite Intruder. We sorted the resulting table by the seventh column that contains the true/false condition of the used regex. At the bottom of the screenshot, you can see the HTML source of the successful test case, with the substring found and highlighted by our regex rule:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2021/12/6.png)
+!
 
 ## Discovered vulnerabilities
 
@@ -436,7 +436,7 @@ img alt="<img >" src="src" />
 
 Based on our findings, we can say that one of the best options for sanitization that could protect even the parsers with the nesting conditions is the complete encoding of the user input to HTML entities:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2021/12/7.png)
+!
 
 For example, let us look at the Phorum CMS that has already been patched.
 
@@ -446,10 +446,10 @@ In the last version of this CMS, one of the BBcodes encodes all user input to HT
 my e-mail: [email]qwe@qwe.com[/email]
 ```
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2021/12/8.png)
+!
 
 *Message HTML source*
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2021/12/9.png)
+!
 
 *Rendered message*

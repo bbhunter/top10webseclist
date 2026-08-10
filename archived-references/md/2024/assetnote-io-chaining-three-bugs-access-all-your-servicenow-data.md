@@ -148,7 +148,7 @@ The most common type of request will filter through to a UI Page. UI pages run f
 
 If I save this as a UI page named `test` and visit `/test.do?sysparm_foo=abc`, I will see the following:
 
-![](https://cdn.prod.website-files.com/64233a8baf1eba1d72a641d4/66b3be03c4b7998464b613e9_668f2e882cf1af9e553d141d_img1.png)
+!
 
 From this simple example, we can see a few things:
 
@@ -173,7 +173,7 @@ This is because the UI rendering works in two phases. The pipeline is roughly as
 - ServiceNow will first render the template only looking at the tags `g:` and `j:` and ignoring `g2:` and `j2:`. It will use `${}` as the expression delimiter. This is known as phase one in their documentation. Any user-supplied values will be interpolated into the template.
 - ServiceNow will then **evaluate the template again**, this time using `g2:` and `j2:` and `$[]` as the template delimiter. This is known as phase two.
 
-![](https://cdn.prod.website-files.com/64233a8baf1eba1d72a641d4/66b3be03c4b7998464b613f1_668f1a8ca617788b04600841_img2.png)
+!
 
 This double evaluation structure means that **any content injection in the first phase risks leading to template injection**. Fundamentally, this design can be risky as it may not be immediately obvious which sinks can lead to template injection.
 
@@ -208,7 +208,7 @@ In this case, `jelly.jvar_page_title` is similar to `${jvar_page_title}` .So far
 
 So, without much thought, we tried visiting `<code>/login.do?jvar_page_title=<b>aaa</b></code>`.` `To our surprise, the page title was actually injected! This does not seem intended at all.
 
-![](https://cdn.prod.website-files.com/64233a8baf1eba1d72a641d4/66b3be03c4b7998464b613dd_668f1a9302ead63b18853f75_img3.png)
+!
 
 There is one problem. To exploit the template injection, we will probably need to write XML tags. However, ServiceNow runs its HTML sanitizer `SNC.GlideHTMLSanitizer.sanitizeWithConfig` over the page title. It would be really great if we could bypass or ignore this somehow. For that, it's time to dig into the ServiceNow sources.
 
@@ -398,7 +398,7 @@ Finally, we use this payload:
 
 And we get code execution!
 
-![](https://cdn.prod.website-files.com/64233a8baf1eba1d72a641d4/66b3be03c4b7998464b613d9_668f6d0f3b1fbe1cc8e30ab8_image%2520(2).png)
+!.png)
 
 ### Bug 3: Filesystem Filter Bypass
 
@@ -536,7 +536,7 @@ The rest of the payload is simply a matter of reading the ServiceNow docs. We se
 
 Replacing our earlier payload with this, we dump the full database credentials of the instance:
 
-![](https://cdn.prod.website-files.com/64233a8baf1eba1d72a641d4/66b3be03c4b7998464b613e5_668f1a9ac0c8b99b148f260b_img4.png)
+!
 
 ### Bonus - Going for Full Compromise
 
@@ -550,7 +550,7 @@ p.create("*");
 
 This will run the command once on every MID server configured. Using Burp Suite we can verify we can access anything:
 
-![](https://cdn.prod.website-files.com/64233a8baf1eba1d72a641d4/66b3be03c4b7998464b613e1_668f1aa0f2d662ab8395af14_img5.png)
+!
 
 In the case that no MID server is configured, we can instead access the user DB of the instance with the following commands:
 
@@ -564,7 +564,7 @@ gs.addErrorMessage(s);
 
 This accesses the password hashes of every user on the instance:
 
-![](https://cdn.prod.website-files.com/64233a8baf1eba1d72a641d4/66b3be03c4b7998464b613ed_668f1aa8447281de042f3a35_img6.png)
+!
 
 (As a side note, it appears the only 'real' accounts are `admin` and `aes.creator` - the other accounts in this table seem to have dummy data in their password hash field, likely due to being sample data within a ServiceNow dev instance).
 
@@ -600,72 +600,16 @@ Subscribe to our newsletter and stay updated on the newest research, security ad
 
 ### More Like This
 
-[
+[Security Research ### Doing the Due Diligence: Analyzing the Next.js Middleware Bypass (CVE-2025-29927) Read on ASN Blog](https://www.assetnote.io/resources/research/doing-the-due-diligence-analyzing-the-next-js-middleware-bypass-cve-2025-29927)
 
-Security Research
+[Security Research ### How an obscure PHP footgun led to RCE in Craft CMS Read on ASN Blog](https://www.assetnote.io/resources/research/how-an-obscure-php-footgun-led-to-rce-in-craft-cms)
 
-### Doing the Due Diligence: Analyzing the Next.js Middleware Bypass (CVE-2025-29927)
+[Security Research ### Citrix Denial of Service: Analysis of CVE-2024-8534 Read on ASN Blog](https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534)
 
-Read on ASN Blog
+[Security Research ### Nginx/Apache Path Confusion to Auth Bypass in PAN-OS (CVE-2025-0108) Read on ASN Blog](https://www.assetnote.io/resources/research/nginx-apache-path-confusion-to-auth-bypass-in-pan-os)
 
-](https://www.assetnote.io/resources/research/doing-the-due-diligence-analyzing-the-next-js-middleware-bypass-cve-2025-29927)
+[Security Research ### Leveraging An Order of Operations Bug to Achieve RCE in Sitecore 8.x - 10.x Read on ASN Blog](https://www.assetnote.io/resources/research/leveraging-an-order-of-operations-bug-to-achieve-rce-in-sitecore-8-x---10-x)
 
-[
+[Security Research ### Insecurity through Censorship: Vulnerabilities Caused by The Great Firewall Read on ASN Blog](https://www.assetnote.io/resources/research/insecurity-through-censorship-vulnerabilities-caused-by-the-great-firewall)
 
-Security Research
-
-### How an obscure PHP footgun led to RCE in Craft CMS
-
-Read on ASN Blog
-
-](https://www.assetnote.io/resources/research/how-an-obscure-php-footgun-led-to-rce-in-craft-cms)
-
-[
-
-Security Research
-
-### Citrix Denial of Service: Analysis of CVE-2024-8534
-
-Read on ASN Blog
-
-](https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534)
-
-[
-
-Security Research
-
-### Nginx/Apache Path Confusion to Auth Bypass in PAN-OS (CVE-2025-0108)
-
-Read on ASN Blog
-
-](https://www.assetnote.io/resources/research/nginx-apache-path-confusion-to-auth-bypass-in-pan-os)
-
-[
-
-Security Research
-
-### Leveraging An Order of Operations Bug to Achieve RCE in Sitecore 8.x - 10.x
-
-Read on ASN Blog
-
-](https://www.assetnote.io/resources/research/leveraging-an-order-of-operations-bug-to-achieve-rce-in-sitecore-8-x---10-x)
-
-[
-
-Security Research
-
-### Insecurity through Censorship: Vulnerabilities Caused by The Great Firewall
-
-Read on ASN Blog
-
-](https://www.assetnote.io/resources/research/insecurity-through-censorship-vulnerabilities-caused-by-the-great-firewall)
-
-[
-
-Back to All
-
-](https://www.assetnote.io/resources/research)
-
-### Ready to get started?
-
-Get on a call with our team and learn how Assetnote can change the way you secure your attack surface. We'll set you up with a trial instance so you can see the impact for yourself.
+[Back to All](https://www.assetnote.io/resources/research)

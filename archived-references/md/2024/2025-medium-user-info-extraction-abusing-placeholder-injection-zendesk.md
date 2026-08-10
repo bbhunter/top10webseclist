@@ -73,37 +73,9 @@ Security Research
 
 # User info extraction abusing placeholder injection in Zendesk
 
-[
-
-![Rikesh Baniya](https://miro.medium.com/v2/resize:fill:64:64/1*swRIl7mj3o-4wRDQhRh2Hw.jpeg)
-
-](https://rikeshbaniya.medium.com/?source=post_page---byline--61bcf9c5dc06---------------------------------------)
+[![Rikesh Baniya](https://miro.medium.com/v2/resize:fill:64:64/1*swRIl7mj3o-4wRDQhRh2Hw.jpeg)](https://rikeshbaniya.medium.com/?source=post_page---byline--61bcf9c5dc06---------------------------------------)
 
 [Rikesh Baniya](https://rikeshbaniya.medium.com/?source=post_page---byline--61bcf9c5dc06---------------------------------------)
-
-6 min readOct 31, 2024
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F61bcf9c5dc06&operation=register&redirect=https%3A%2F%2Frikeshbaniya.medium.com%2Ftale-of-zendesk-0-day-and-a-potential-25k-bounty-61bcf9c5dc06&user=Rikesh+Baniya&userId=bf54d9b08fca&source=---header_actions--61bcf9c5dc06---------------------clap_footer------------------)
-
---
-
-2
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F61bcf9c5dc06&operation=register&redirect=https%3A%2F%2Frikeshbaniya.medium.com%2Ftale-of-zendesk-0-day-and-a-potential-25k-bounty-61bcf9c5dc06&user=Rikesh+Baniya&userId=bf54d9b08fca&source=---header_actions--61bcf9c5dc06---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F61bcf9c5dc06&operation=register&redirect=https%3A%2F%2Frikeshbaniya.medium.com%2Ftale-of-zendesk-0-day-and-a-potential-25k-bounty-61bcf9c5dc06&source=---header_actions--61bcf9c5dc06---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D61bcf9c5dc06&operation=register&redirect=https%3A%2F%2Frikeshbaniya.medium.com%2Ftale-of-zendesk-0-day-and-a-potential-25k-bounty-61bcf9c5dc06&source=---header_actions--61bcf9c5dc06---------------------post_audio_button------------------)
-
-Share
 
 In this blog, I will share how I found template injection affecting Zendesk customers with default configuration.
 

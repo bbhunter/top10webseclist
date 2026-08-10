@@ -65,7 +65,7 @@ This is a post about an old vulnerability that I finally found the time to blog 
 
  OpenNebula offers a broad variety of interfaces to control a cloud. This post focuses on Sunstone, OpenNebula's web interface (see Figure 1).
 
-| [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjafVzQK-ZpaeTIcWhFwc8uqEzMPzjJ3WZnHMOmIUF99nigQVN6YrImgQ2-YkQIQiMwDB67sh2s1xjqhe_PUuJaeKwSAB2Olwm7BxxLl2qPTXDpxK-mpsXh73jEK8m5ymKRDYDWeNhu0e-3/s1600/ONECloudView.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjafVzQK-ZpaeTIcWhFwc8uqEzMPzjJ3WZnHMOmIUF99nigQVN6YrImgQ2-YkQIQiMwDB67sh2s1xjqhe_PUuJaeKwSAB2Olwm7BxxLl2qPTXDpxK-mpsXh73jEK8m5ymKRDYDWeNhu0e-3/s1600/ONECloudView.jpg) |  |
+| [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjafVzQK-ZpaeTIcWhFwc8uqEzMPzjJ3WZnHMOmIUF99nigQVN6YrImgQ2-YkQIQiMwDB67sh2s1xjqhe_PUuJaeKwSAB2Olwm7BxxLl2qPTXDpxK-mpsXh73jEK8m5ymKRDYDWeNhu0e-3/s1600/ONECloudView.jpg) |  |
 | Figure 1: OpenNebula's Sunstone Interface displaying a VM's control interface |  |
 
  Before OpenNebula 4.6.2, Sunstone had no [Cross-Site Request Forgery (CSRF)](https://www.owasp.org/index.php/CSRF) protection. This is a severe problem. Consider an attacker who lures a victim into clicking on a malicious link while being logged in at a private cloud. This enables the attacker to send arbitrary requests to the private cloud through the victims browser. However, we could find other bugs in OpenNebula that allowed us to perform much more sophisticated attacks.

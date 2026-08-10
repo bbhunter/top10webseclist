@@ -66,9 +66,6 @@ New Methods in Automated XSS Detection
         Kenneth F. Belva, CISSP, CEH
               xssWarrior.com
 
-
-
-
    All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   1
                                      xssWarrior.com
           Contents & Deck Content
@@ -82,8 +79,6 @@ New Methods in Automated XSS Detection
 ●   Slide Deck 3: xssWarrior & XSS: A Basic Introduction
     – Non-Technical Introduction with screenshots of product
       showing this is not just theory / vaporware
-
-
 
           All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   2
                                             xssWarrior.com
@@ -135,28 +130,18 @@ Mr. Belva frequently presents at information security conferences around the US 
           Slide Deck 1
 Methods and Techniques Overview
 
-
-
-
 All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   5
                                   xssWarrior.com
 New Methods in Automated XSS Detection
       & Dynamic Exploit Creation
 
-
         Kenneth F. Belva, CISSP, CEH
               xssWarrior.com
-
-
-
 
    All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   6
                                      xssWarrior.com
  Overview of Methods and Techniques
 Presented at OWASP AppSecUSA 2015
-
-
-
 
   All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   7
                                     xssWarrior.com
@@ -175,15 +160,10 @@ Presented at OWASP AppSecUSA 2015
               Part 1:
 The Current Automated Methodology
 
-
-
-
 All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   9
                                   xssWarrior.com
 Most Popular XSS Detection Methodology:
  The Exploit String Includes the Payload/Token
-
-
 
           <script>alert(12345)</script>
 
@@ -193,33 +173,22 @@ Hoping for a Callback or Event to Fire for
 
               Inefficient and Inaccurate
 
-
    All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   10
                                      xssWarrior.com
 One Major Problem is Transformations
 
-
 &quot;script&quot;alert12345&quot;/script&quot;
-
 
  Most Popular XSS Detection Methods Cannot
     Account for Different Exploit Situations
-
-
-
 
       All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   11
                                         xssWarrior.com
               Part 2:
     The New Testing Methodology
 
-
-
            Applies to All XSS:
 Reflected, ReflectedStored, Stored, DOM
-
-
-
 
    All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   12
                                      xssWarrior.com
@@ -247,7 +216,6 @@ We assign a unique slug value to each field and load it into the application
  Step 2: Parse source where slug found to get
 MINUMUM characters needed for each context
 
-
                    <img src="12345" >some text</img>
 
  "> is needed for Case 1 Exploit and None Needed for Case 2 Exploit
@@ -257,9 +225,6 @@ MINUMUM characters needed for each context
 
                                   Case 2:
                 <img src="[exploit.js]">some text</img>
-
-
-
 
        All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   14
                                          xssWarrior.com
@@ -276,7 +241,6 @@ Use Sandwich Method to Determine Potential Vulnerability and
                              As these unique strings are searchable
            we will know if they come out the other side for our cases built in Step 1
 
-
                               http://website?parm=12345"12345
                               http://website?parm=12345<12345
 
@@ -287,9 +251,6 @@ Use Sandwich Method to Determine Potential Vulnerability and
                             Not Vulnerable (in modern browsers):
                        <img src="12345&quot;12345" >some text</img>
                                <a href="a">12345&lt;12345</a>
-
-
-
 
        All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   15
                                          xssWarrior.com
@@ -303,7 +264,6 @@ Step 4: If potential vulnerability exists check
 
                                       Exploit 2:
                         <img src="EvilJS.js" >some text</img>
-
 
                       Potential Exploits & Special Characters:
                            http://website/EvilJS.js --> :/.
@@ -346,7 +306,6 @@ When Submitted The Character Should be tested with and without URL encoding sinc
                       browser do not encode before submission
                            12345%2212345 → 12345”12345
 
-
             All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   17
                                               xssWarrior.com
  Step 6: Build Exploit with Proper Syntax and Test
@@ -370,14 +329,9 @@ When Submitted The Character Should be tested with and without URL encoding sinc
 Since we can parse the HTML/JavaScript/DOM (syntax) and know what gets through the filter
                        we can build complex dynamic XSS exploits
 
-
-
-
              All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.     18
                                                xssWarrior.com
                         Additional Notes
-
-
 
 All Other String Combinations are Searchable.
        For Example, Anti-XSS Libraries:
@@ -385,16 +339,10 @@ All Other String Combinations are Searchable.
                        12345<script12345
                       12345<script>12345
 
-
-
-
      All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   19
                                        xssWarrior.com
                   Part 3:
 Additional Automated XSS Exploit Techniques
-
-
-
 
      All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   20
                                        xssWarrior.com
@@ -414,8 +362,6 @@ If data is assigned a variable by definition the code has executed
 
            (Call backs and event triggers are still valid too)
 
-
-
       All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   21
                                         xssWarrior.com
     Item 2: Privilege Escalation Testing
@@ -430,7 +376,6 @@ Authenticate as Higher Level user and Scan for Slugs
 
 Once Mapped from Lower to Higher User Test using
                Above Methods
-
 
       All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   22
                                         xssWarrior.com
@@ -451,23 +396,14 @@ Once Mapped from Lower to Higher User Test using
      –   https://appsecusa2015.sched.org/event/b3bf7e553d06f523704697068f0adedc
      –   https://www.youtube.com/playlist?list=PLpr-xdpM8wG93dG_L9QKs0W1cD-esQEzU
 
-
-
-
                    All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   23
                                                      xssWarrior.com
     Thank You Much For Your Time
-
-
-
 
 All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   24
                                   xssWarrior.com
           Slide Deck 2
 OWASP AppSecUSA 2015 Presentation
-
-
-
 
   All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   25
                                     xssWarrior.com
@@ -475,9 +411,6 @@ OWASP AppSecUSA 2015 Presentation
           Dynamic XSS Testing without Using Static Payloads
     Kenneth F. Belva, CISSP
     2015
-
-
-
 
 http://xssWarrior.com
 All Material and Methods Contained Here
@@ -492,19 +425,15 @@ Patent Pending. All Rights Reserved
                                 Part 1: The State of Automated XSS
                                           Discovery Today
 
-
                                          Current Known &                    Issues with Payloads:
                On Payloads: Static /
                                         Popular Automated                         Syntax and
                 Signature Analysis
                                         XSS Testing Methods                    Transformations
 
-
-
                                                                               The Trace and then
                 The Payload “Slam”      The Tracing Payload
                                                                                Payload Replace
-
 
 http://xssWarrior.com                            All Material and Methods Contained Here Patent Pending. All Rights Reserved
          Table of Contents (pt2)
@@ -535,9 +464,6 @@ http://xssWarrior.com                         All Material and Methods Contained
       Dynamic Analysis of XSS
        Vulnerabilities: The Practice
 
-
-
-
                            Spidering for Slugs and XSS
                            HTTP Methods: GET / POST / HEADER /
                             COOKIES
@@ -545,26 +471,18 @@ http://xssWarrior.com                         All Material and Methods Contained
                            A Simple Stored XSS Detection Example
                            A brief word on DOM-Based XSS
 
-
 http://xssWarrior.com                       All Material and Methods Contained Here Patent Pending. All Rights Reserved
          Table of Contents (pt4)
 
       Part 3: New Methods - Dynamic
        XSS Exploitation
 
-
-
-
 http://xssWarrior.com                  All Material and Methods Contained Here Patent Pending. All Rights Reserved
                         Introduction / Background
-
-
-
 
 http://xssWarrior.com                All Material and Methods Contained Here Patent Pending. All Rights Reserved
          What this presentation is
          & what it is not…
-
 
      This presentation is a starter introduction to a new way of doing Dynamic XSS vulnerability detection
 
@@ -591,9 +509,6 @@ http://xssWarrior.com                                                     All Ma
 
            Discovering the Dynamic XSS
             Methodologies
-
-
-
 
                        When the
                         current                           Valentines Day
@@ -623,23 +538,16 @@ http://xssWarrior.com                                                     All Ma
                      not found by                               it?
                      the scanners
 
-
-
-
 http://xssWarrior.com                                                       All Material and Methods Contained Here Patent Pending. All Rights Reserved
                                   Part 1:
                          The State of Automated
 
                            XSS Discovery Today
 
-
-
-
 http://xssWarrior.com               All Material and Methods Contained Here Patent Pending. All Rights Reserved
           On Payloads
 
            Static / Signature Analysis
-
 
                                                       Problem: The big issue is
    Almost all automated                                that one needs a high           Problem: If it doesn't fit
@@ -649,23 +557,18 @@ http://xssWarrior.com               All Material and Methods Contained Here Pate
    payload methodology                                   satisfy every single                isn't found
                                                                variation
 
-
                                                               Satisfying all                  This is the XSS              Please note I am a
                                 Sample exploits             variations is not               equivalent to anti­            big fan of OWASP
                                                                 possible                     virus signatures              and their projects.
-
-
 
                                                             Cannot handle
                                      Syntax               complex or unique
                                                               XSS issues
 
-
                                Sometimes these
                                strings contain an
                               identifier or tracer
                                      value
-
 
                                    Sometimes
                                     callback /
@@ -675,43 +578,25 @@ http://xssWarrior.com                                                 All Materi
          OWASP Xenotix XSS
          Payloads
 
-
-
-
 http://xssWarrior.com        All Material and Methods Contained Here Patent Pending. All Rights Reserved
          Sample Xenotix Payload
          Variations
-
-
-
 
 http://xssWarrior.com         All Material and Methods Contained Here Patent Pending. All Rights Reserved
          Other Tool Payloads
          (XSSer)
 
-
-
-
 http://xssWarrior.com          All Material and Methods Contained Here Patent Pending. All Rights Reserved
          Other Tool Payloads
          (W3af)
-
-
-
 
 http://xssWarrior.com          All Material and Methods Contained Here Patent Pending. All Rights Reserved
          Current Know & Popular
 
            Automated XSS Testing Methods
 
-
-
-
                                           When searching out “in the wild” for XSS detection, all
                                             methods found used payloads to some degree
-
-
-
 
                                       Generally speaking there are only three distinct methods
                                       •The rest appear to be a variation of the three
@@ -720,20 +605,14 @@ http://xssWarrior.com          All Material and Methods Contained Here Patent Pe
                                        into the front for syntax
                                       •Clearly some of these methods will yield better results
 
-
                                       When we examine the methods we will look at
                                       •The underlying ideas behind the method
                                       •The logic
                                       •The elements / components of the payload
                                       •How it all fits together in order to test for XSS
 
-
-
 http://xssWarrior.com                            All Material and Methods Contained Here Patent Pending. All Rights Reserved
           The Payload “Slam”
-
-
-
 
           Underlying Idea:
             Assign the variable's data value with a known payload
@@ -744,12 +623,8 @@ http://xssWarrior.com                            All Material and Methods Contai
           http://vulnsite.com?param=DATAVALUE
           http://vulnsite.com?param=payload (signature)
 
-
-
 http://xssWarrior.com                All Material and Methods Contained Here Patent Pending. All Rights Reserved
          The Tracing Payload
-
-
 
          Underlying Ideas:
             Put a tracer value in a known payload so the payload can be
@@ -769,8 +644,6 @@ http://xssWarrior.com                     All Material and Methods Contained Her
           The Trace and then
           Payload Replace
 
-
-
          Underlying Idea:
            Similar to the “Slam” but puts a tracevalue into the logic
            Assign the variable's data value with a tracevalue to
@@ -787,14 +660,11 @@ http://xssWarrior.com                 All Material and Methods Contained Here Pa
 
               Syntax and Transformations
 
-
-
                                                                    We need to be able to                  Payloads will often fail
                                                                  account for when data is                  because they cannot
     Often times a filter will:   Complex Script Tag Syntax
                                                                    transformed: example,                   account for filtering
                                                                  from %27 to ' or \x27 to '                     variations
-
 
             Eliminate
                                       It needs to fit the
@@ -809,17 +679,11 @@ http://xssWarrior.com                 All Material and Methods Contained Here Pa
          contains a “bad”
             character
 
-
-
-
 http://xssWarrior.com                                        All Material and Methods Contained Here Patent Pending. All Rights Reserved
                             Part 2: New Methods
 
                  Dynamic Analysis of XSS Vulnerabilities:
                          The Theory & Practice
-
-
-
 
 http://xssWarrior.com                All Material and Methods Contained Here Patent Pending. All Rights Reserved
          The Change of Focus
@@ -856,21 +720,14 @@ http://xssWarrior.com                                                       All 
           Assignment, Tracing, Tracking &
            Syntax Parsing
 
-
-
-
 http://xssWarrior.com                        All Material and Methods Contained Here Patent Pending. All Rights Reserved
           Application Component
 
            Review: Filters, DB, Memory,
             Source & DOM
 
-
-
-
 http://xssWarrior.com                      All Material and Methods Contained Here Patent Pending. All Rights Reserved
           The Sandwich Method
-
 
     Remember:
           can advantageously be automated
@@ -895,8 +752,6 @@ http://xssWarrior.com                      All Material and Methods Contained He
 http://xssWarrior.com                               All Material and Methods Contained Here Patent Pending. All Rights Reserved
           The New Automated Dynamic
           XSS Detection Logic
-
-
 
           Underlying Ideas:
                 The goal is to determine the characters needed to complete the syntax needed for XSS
@@ -930,9 +785,6 @@ http://xssWarrior.com                                              All Material 
            Brute-Force, Special Strings,
             Various Encodings & more
 
-
-
-
           (In reality: no spaces in the examples below)
           6ea261c8 <script 6ea261c8
           6ea261c8 <script> 6ea261c8
@@ -947,9 +799,6 @@ http://xssWarrior.com                       All Material and Methods Contained H
 
       A Real-life Pen Test Example
 
-
-
-
          Case 1:
             <                did not work
             %3c       did not work
@@ -959,16 +808,12 @@ http://xssWarrior.com                       All Material and Methods Contained H
             '          did not work (it was filtered)
             java'script did work: turned into → javascript
 
-
          And we can test for these cases because we are testing for characters and
           strings without using payloads!
-
 
 http://xssWarrior.com                        All Material and Methods Contained Here Patent Pending. All Rights Reserved
          The Questions of Accuarcy
          And Efficiency
-
-
 
     For most fields we only need to check the characters that make up the syntax (and any encoding variations
     we choose to run)
@@ -990,13 +835,8 @@ http://xssWarrior.com                        All Material and Methods Contained 
 
     We can analyze more complex issues
 
-
-
 http://xssWarrior.com                                                       All Material and Methods Contained Here Patent Pending. All Rights Reserved
          Browser Considerations
-
-
-
 
        Once we know the characters that
        pass through the application, we                                                    This means we can test for XSS
@@ -1008,15 +848,11 @@ http://xssWarrior.com                                                       All 
         make it through but something                                                          IE10 or FireFox 35, etc.
                    like < will not
 
-
-
-
 http://xssWarrior.com                                         All Material and Methods Contained Here Patent Pending. All Rights Reserved
           Goodbye Payloads
 
           XSS is about Characters, Slugs,
            Parsing & Filtering
-
 
                              Key Takeaways!
                              • Figure out how the application works via character
@@ -1036,26 +872,18 @@ http://xssWarrior.com                                         All Material and M
                                characters and strings in other circumstances even
                                if we cannot parse the source: Flash, ActiveX, etc.
 
-
-
-
 http://xssWarrior.com                                   All Material and Methods Contained Here Patent Pending. All Rights Reserved
                         Part 2: New Methods
 
                Dynamic Analysis of XSS Vulnerabilities:
                            The Practice
 
-
-
-
 http://xssWarrior.com              All Material and Methods Contained Here Patent Pending. All Rights Reserved
          “Spidering” for slugs and
          XSS
 
-
            In reality any number of methods can be used to get URLs (especially for “AJAX URLs”)– for ease of
            discussion we will stick with spidering
-
 
            Whatever method is used, when spidering the application the components search for slugs
             •If they are immediately found after the page submission we have a Reflected XSS
@@ -1063,12 +891,9 @@ http://xssWarrior.com              All Material and Methods Contained Here Paten
             •If they are found after the session is cleared and a new one is formed we have Stored XSS
             •We find our slugs referenced in the immediate page in the client memory (DOM­based)
 
-
            If these slugs are found, they are recorded and associated with the location they were inputted
 
-
            The goal is to find places to input but also find where slugs are outputted
-
 
            We map the input to output of the slugs: this may be a 1 to Many relationship, especially when
            dealing with Stored XSS (think a name field)
@@ -1083,9 +908,6 @@ http://xssWarrior.com                                                           
          Testing Application
          Methods & Synataxes
 
-
-
-
                   We can use the
                   sandwich and                    The application can
                   detection methods               also test for
@@ -1096,17 +918,12 @@ http://xssWarrior.com                                                           
                   • GET / POST / HEADER             Etc.
                     / COOKIES
 
-
 http://xssWarrior.com                     All Material and Methods Contained Here Patent Pending. All Rights Reserved
          A bried word on
          DOM-Based XSS
 
-
-
                             We can search through
                             the DOM for the slug
-
-
 
                                We can then search
                            through the DOM for the
@@ -1115,14 +932,9 @@ http://xssWarrior.com                     All Material and Methods Contained Her
                            can be represented / not
                             filtered or transformed
 
-
-
                            We can determine what
                             strings / exploits can be
                            represented in the DOM
-
-
-
 
                            We can then used various
                              validation methods –
@@ -1134,14 +946,9 @@ http://xssWarrior.com                  All Material and Methods Contained Here P
 
           A Brief Method for Dynamic XSS Exploitation
 
-
-
-
 http://xssWarrior.com            All Material and Methods Contained Here Patent Pending. All Rights Reserved
          Issues with Current Static
          XSS Exploit Payloads
-
-
 
             The issue is that the payload is the exploit
                It is not customized for the context / syntax
@@ -1155,14 +962,9 @@ http://xssWarrior.com            All Material and Methods Contained Here Patent 
              accounting for transformations of characters through the filter
                (see pen testing example earlier %%3c)
 
-
-
-
 http://xssWarrior.com                       All Material and Methods Contained Here Patent Pending. All Rights Reserved
           Method to Determine and
           Create Custom XSS Exploit (pt1)
-
-
 
          Recall our testing logic:
 
@@ -1187,9 +989,6 @@ http://xssWarrior.com                            All Material and Methods Contai
           Method to Determine and
           Create Custom XSS Exploit (pt2)
 
-
-
-
          A Simple Dynamic Custom XSS Exploit Method
 
          Step 1: Find Slug in HTML
@@ -1213,8 +1012,6 @@ http://xssWarrior.com                             All Material and Methods Conta
           Writing the Dynamic
           Exploit
 
-
-
          We can make it more complex depending on the
           different exploits for the context: – html tag / text or
           attribute / script / etc.
@@ -1227,18 +1024,11 @@ http://xssWarrior.com                             All Material and Methods Conta
           filtering mechanisms in place in the application
                < will not make it through but %% does
 
-
 http://xssWarrior.com                               All Material and Methods Contained Here Patent Pending. All Rights Reserved
                         Q&A
 
-
-
-
 http://xssWarrior.com    All Material and Methods Contained Here Patent Pending. All Rights Reserved
          Ken`s Contact Information
-
-
-
 
        Email:           contact@xssWarrior.com
        Product:         http://xssWarrior.com
@@ -1250,7 +1040,6 @@ http://xssWarrior.com    All Material and Methods Contained Here Patent Pending.
                          Stop by and say, 'Hi'!
 http://xssWarrior.com                All Material and Methods Contained Here Patent Pending. All Rights Reserved
           Bio of Kenneth F.Belva
-
 
 Kenneth F. Belva is the Publisher and Editor-in-Chief of bloginfosec.com. He is current develops xssWarrior, currently the only scanner
 than can automate testing for Stored XSS, for commercial use at xssWarrior.com. In addition, he is an independent penetration tester and
@@ -1279,24 +1068,16 @@ Using Information Security” with Sam Dekay of The Bank of New York. of securit
 Mr. Belva frequently presents at information security conferences around the US as well as globally. He writes on day-to-day information
 security experiences in a non-essay format at SecurityMaverick.com when time permits and can be followed on twitter @infosecmaverick
 
-
 http://xssWarrior.com                                                  All Material and Methods Contained Here Patent Pending. All Rights Reserved
              Slide Deck 3
 xssWarrior & XSS: A Basic Introduction
-
-
-
 
  All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   26
                                    xssWarrior.com
                   xssWarrior & XSS:
                   A Basic Introduction
 
-
      Kenneth F. Belva, CISSP, CEH
-
-
-
 
 All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   27
                                   xssWarrior.com
@@ -1310,7 +1091,6 @@ All Material and Methods Contained Here Patent Pending Globally. All Rights Rese
 ●   Who Am I?
 ●   Contact Information
 
-
           All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   28
                                             xssWarrior.com
             What are some of the the
@@ -1322,7 +1102,6 @@ All Material and Methods Contained Here Patent Pending Globally. All Rights Rese
 ●   Redirect users to a fake / malicious website
     under attacker's control
 
-
         All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   29
                                           xssWarrior.com
                     How is it different?
@@ -1333,7 +1112,6 @@ All Material and Methods Contained Here Patent Pending Globally. All Rights Rese
 ●   The scanner excels at a notorious difficult XSS issue: Stored XSS
     – Up to now most scanners cannot test for this accurately due to the limitations of
       the current techniques
-
 
     The Benefits:
 ●   With the new automated process, the application lowers the total cost to
@@ -1364,31 +1142,19 @@ All Material and Methods Contained Here Patent Pending Globally. All Rights Rese
 
     – CVE-2015-2043 – MyConnection Server 8.2b
 
-
-
-
                 All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   31
                                                   xssWarrior.com
 All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   32
                                   xssWarrior.com
                Graphical Interface
 
-
-
-
 All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   33
                                   xssWarrior.com
                   Results Part 1
 
-
-
-
 All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   34
                                   xssWarrior.com
                   Results Part 2
-
-
-
 
 All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   35
                                   xssWarrior.com
@@ -1399,9 +1165,6 @@ All Material and Methods Contained Here Patent Pending Globally. All Rights Rese
     holes before bad guys do (defense)
 ●   Find XSS holes in adversaries websites before
     they do (offense)
-
-
-
 
          All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   36
                                            xssWarrior.com
@@ -1415,7 +1178,3 @@ All Material and Methods Contained Here Patent Pending Globally. All Rights Rese
     member of NYC chapter of ISSA
 ●   Presented at NYC chapters of OWASP, ISSA, ISC2
     and ASIS
-
-
-          All Material and Methods Contained Here Patent Pending Globally. All Rights Reserved.   37
-                                            xssWarrior.com

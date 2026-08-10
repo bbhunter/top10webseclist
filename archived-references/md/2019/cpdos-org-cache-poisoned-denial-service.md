@@ -96,7 +96,7 @@ Legitimate users trying to obtain the target resource with subsequent requests..
 
 ...will get the cached error page instead of the original content.
 
-![](https://cpdos.org/img/CPDoS.png)
+!
 
 With CPDoS, a malicious client can block any web resource that is distributed via Content Distribution Networks (CDNs) or hosted on proxy caches. Note, that **a single crafted request** is sufficient to restrain all subsequent requests from accessing the targeted content.
 
@@ -157,7 +157,7 @@ The video demonstrates the HHO CPDoS attack with an example web application host
 
 The HTTP Meta Character (HMC) CPDoS attack works similar to the HHO CPDoS attack. Instead of sending an oversized header, this attack tries to bypass a cache with a request header containing a harmful meta character. Meta characters can be, e.g., control characters such as line break/carriage return (`\n`), line feed (`\r`) or bell (`\a`).
 
-![](https://cpdos.org/img/HMC.png)
+!
 
 An unaware cache forwards such a request to the origin server without blocking the message or sanitizing the meta characters. The origin server, however, may classify such a request as malicious as it contains harmful meta characters. As a consequence, the origin server returns an error message which is stored and reused by the cache.
 
@@ -195,11 +195,11 @@ The video below demonstrates an HMO attack on a web application. Here, the attac
 
 # Impact
 
-The map below shows the impact of CPDoS attacks on CDNs. Once the error page is injected, the CDN distributes it to many other edge cache server locations around the world. The map illustrates how far the error page is distributed to several edge locations within the CDN. The ![](https://cpdos.org/img/red-pin.png) icons show the affected locations displaying the error page. Fortunately, not all edge servers are infected by this attack which is shown by the ![](https://cpdos.org/img/green-pin.png) icons. This icon denotes the locations where clients receive the genuine page. The ![](https://cpdos.org/img/blue-pin.png) icon shows the location of the origin server and the ![](https://cpdos.org/img/attacker.png) icon displays the attacker’s locations.
+The map below shows the impact of CPDoS attacks on CDNs. Once the error page is injected, the CDN distributes it to many other edge cache server locations around the world. The map illustrates how far the error page is distributed to several edge locations within the CDN. The ! icons show the affected locations displaying the error page. Fortunately, not all edge servers are infected by this attack which is shown by the ! icons. This icon denotes the locations where clients receive the genuine page. The ! icon shows the location of the origin server and the ! icon displays the attacker’s locations.
 
-The first figure shows the affected regions in Europe and some parts of Asia when sending a CPDoS attack from Frankfurt, Germany to a victim origin server in Cologne, Germany. The second one illustrates the poisoned regions in the USA when executing a CPDoS attack from Northern Virginia, USA to the same victim origin server in Cologne, Germany. ![](https://cpdos.org/img/affected_regions_europe_cut.png)
+The first figure shows the affected regions in Europe and some parts of Asia when sending a CPDoS attack from Frankfurt, Germany to a victim origin server in Cologne, Germany. The second one illustrates the poisoned regions in the USA when executing a CPDoS attack from Northern Virginia, USA to the same victim origin server in Cologne, Germany. !
 
-![](https://cpdos.org/img/affected_regions_usa_cut.png)
+!
 
 This analysis has been conducted with [TurboBytes Pulse](https://pulse.turbobytes.com/) and [the speed testing tool of KeyCDN](https://tools.keycdn.com/speed). Both services provide a testing environment covering a lot of test agents scattered around the world.
 
@@ -433,13 +433,13 @@ Verizon Digital Media
 
 ### Hoai Viet Nguyen
 
-[](mailto:viet.nguyen@th-koeln.de) [](https://das.th-koeln.de)
+[](mailto:viet.nguyen@th-koeln.de) 
 
  ![...](https://cpdos.org/img/luigi.jpg)
 
 ### Luigi Lo Iacono
 
-[](mailto:luigi.lo_iacono@th-koeln.de) [](https://das.th-koeln.de)
+[](mailto:luigi.lo_iacono@th-koeln.de) 
 
 # Legal Disclosure
 

@@ -117,7 +117,7 @@ click.onclick = () => {
 
 So, in a case where a popup blocking bypass is triggered, something similar to the demonstration below will happen:
 
-## ![](https://i.imgur.com/WUWWSLv.gif)
+## !
 
 ## Popunder
 
@@ -166,7 +166,7 @@ Some techniques [have already been published](https://research.securitum.com/the
 
 This case was previously presented by [@renwax23](https://twitter.com/RenwaX23), however, it uses scrolling for the payload saved in the dataTransfer’s `setData` to be inserted in the vulnerable field at the end of the page. [https://renwax23.github.io/X/xschal1j.html](https://renwax23.github.io/X/xschal1j.html).
 
-![](https://i.imgur.com/4Aockql.gif)
+!
 
 ---
 
@@ -224,7 +224,7 @@ setInterval(()=>{
 
 ```
 
-![](https://i.imgur.com/mhJjNE6.gif)
+!
 
 ---
 
@@ -270,7 +270,7 @@ document.addEventListener("dragstart",(event)=>{
 
 ```
 
-![](https://i.imgur.com/i656ZpY.gif)
+!
 
 In the example above, the attacker’s page in the example above, the attacker’s page is from a different domain than the victim’s iframe. Such as an attacker and a host from which it would have functionality that reads content automatically, it does not necessarily need to read content automatically, however, but it isn’t a requirement as it is possible to do the same attack using two events (an ondrag and a click). However, I opted into showing the attack this way as it is more interesting.
 
@@ -328,7 +328,7 @@ The filter is very basic, it just removes some keywords and some tags, so `<<scr
 
 `<<script>iframe src=javajavascriptscript:alert(document.domain)>`
 
-![](https://i.imgur.com/RAq0zdY.gif)
+!
 
 ## Bypass XFO (Application Context)
 
@@ -466,7 +466,7 @@ In some cases, the popunder can be very useful for when the vulnerable page is v
 
 ```
 
-## ![](https://i.imgur.com/GhfQDnk.gif)
+## !
 
 During the process of discovering this bug, the real intention was not even to find a `popup blocking` bypass, but I ended up finding one, along with that, I came across the lack of such reports. In this section, I will explain about a `popup blocking` bypass that I found about 7 months ago. This bypass depends on a user click. In browsers we can have two types of clicks:
 
@@ -606,7 +606,7 @@ Each simple_case `[0-9].html` file basically has a part of the payload that was 
 
 ```
 
-![](https://i.imgur.com/aUk1aS9.gif)
+!
 
 ### Pretty version
 

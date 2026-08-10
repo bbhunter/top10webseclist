@@ -65,7 +65,7 @@ Here is another great post from [LanMaSteR 53](http://lanmaster53.com/).
 
  Everyone knows what XSS is, right? Good, I'll spare you the definition. A common use for XSS is stealing cookies to hijack sessions and gain access to restricted web content. Cookie stealing is typically done by forcing a target's browser to issue some sort of GET request to a server controlled by the attacker which accepts the target's cookie as a parameter and processes it in some way. In most cases, when a cookie stealing XSS attack is successful, it generates a visual clue which can tip off the target. While it is too late at this point, stealth has been compromised, and could be the difference between the user keeping the session active, or clicking 'log out' and rendering your stolen cookie invalid.
 
- ![](http://media.ebaumsworld.com/mediaFiles/picture/480397/80523504.jpg)
+ !
 
  Good ole' fashion cookie stealin'
 

@@ -197,7 +197,7 @@ func main() {
 
 Directly sending requests to the proxy for the / endpoint succeeded and the /flag endpoint failed, as expected:
 
-![](https://labs.bishopfox.com/hubfs/image-png.png)
+!
 
 This behavior is shown in the diagram below:
 
@@ -205,7 +205,7 @@ This behavior is shown in the diagram below:
 
 Now using my custom client, [h2cSmuggler](https://github.com/BishopFox/h2csmuggler), to initiate an upgrade over TLS, we are able to successfully access the restricted endpoint (-x specifies the proxy):
 
-![](https://labs.bishopfox.com/hubfs/image-png-1.png)
+!
 
 This behavior is shown in the diagram below:
 

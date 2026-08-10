@@ -105,5 +105,3 @@ Happy nowruz!
 - [ha.ckers.org](http://ha.ckers.org/)
 - [jeremiah](http://jeremiahgrossman.blogspot.com/)
 - [tssci](http://tssci-security.com)
-
-## Spotlight

@@ -88,7 +88,7 @@ I’ve just learned that [some months ago](http://ha.ckers.org/blog/20070406/iph
 - [Cross-Browser Proxy Unmasking Demo in Java](http://www.frostjedi.com/terra/scripts/ip_unmasker.php?mode=utf16)
 - [Gecko-only Proxy Unmasking Demo in JavaScript+Java (LiveConnect)](http://ha.ckers.org/weird/tor.cgi)
 
- ![](https://secure.gravatar.com/avatar/3793c98028fd9683d80c827f6a1664712f46afdba4e1f44fbd2e8c7128a1d267?s=85&d=monsterid&r=g)
+ !
 
 ##  By ma1
 

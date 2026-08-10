@@ -72,8 +72,6 @@ December 3, 2012, 10:17PM
 
 -
 
-Share
-
 by [Anne Saita](http://threatpost.com/author/Anne Saita)
 
 A Romanian bug hunter has discovered a "blended threat" targeting Yahoo's Developer Network Web site that allows unauthorized access to Yahoo users' emails and private profile data.

@@ -116,11 +116,11 @@ It also has the side-effect of stopping cookie-based CSWSH. A malicious site can
 
 Total Cookie Protection can be disabled in Firefox’s Browser Privacy settings, by selecting the “Custom” mode for “Enhanced Tracking Protection”, then unchecking the Cookies setting or changing to the old default “Cross-site tracking cookies”.
 
-![](https://i0.wp.com/blog.includesecurity.com/wp-content/uploads/2025/03/etp.jpeg?resize=976%2C864&ssl=1)
+!
 
 Note that Google has been announcing the blocking of third party cookies in Chrome by default for years but have kept delaying for various reasons. The latest target was [early 2025](https://cookieinformation.com/resources/blog/end-of-third-party-cookie/), but they [changed plans in July 2024](https://privacysandbox.com/intl/en_us/news/privacy-sandbox-update/). It’s straightforward to configure in the “Privacy and security” settings, though, and this setting is enabled by default within Incognito Mode. Some distributions, notably Chromium on Debian Linux, have the default set to “Block third-party cookies”.
 
-![](https://i0.wp.com/blog.includesecurity.com/wp-content/uploads/2025/03/thirdpartycookies.jpeg?resize=1024%2C437&ssl=1)
+!
 
 #### Case Study B
 
@@ -142,7 +142,7 @@ The [Private Network Access specification](https://wicg.github.io/private-networ
 
 Within the Private Network Access specification, IP address spaces are divided into three types: public, private, and local. A request (even a GET request) that is made from a more public to a more private address space triggers a preflight OPTIONS request that has the Access-Control-Request-Private-Network: true header attached by Chrome, and must receive a corresponding Access-Control-Allow-Private-Network: true header in the response for the main request to be sent.
 
-![](https://i0.wp.com/blog.includesecurity.com/wp-content/uploads/2025/03/privateaccess.jpeg?resize=1024%2C470&ssl=1)
+!
 
 However, I found that CSWSH attacks against private IPs are not affected by Private Network Access. In my testing, attempts to send CSRF attacks against localhost addresses failed in Chrome, but there was no problem with opening WebSockets to more private IPs. On further thought this makes sense, and is [called out in the specification](https://wicg.github.io/private-network-access/#integration-websockets), since Private Network Access uses CORS preflight requests as the protection method, and WebSockets do not follow SOP and thus do not use preflight requests.
 
@@ -152,7 +152,7 @@ To verify all the points made above, I made a small demo app, the source code is
 
 A small NodeJS Express server sets a SameSite=None cookie when visiting the / route. The server also exposes a POST / route, and a WebSocket handler, both of which log cookies if they are seen in the request.
 
-![](https://i0.wp.com/blog.includesecurity.com/wp-content/uploads/2025/04/image.png?resize=985%2C166&ssl=1)
+!
 
 The WebSocket server and the demo page were then hosted on separate HTTPS domains, and requests were tried on different browsers to verify if different types of CSRF and CSWSH attacks were successful. The /reflected endpoint was added to elicit the error specific to attempting a CSRF against a private IP with Private Network Access, otherwise a generic CORS error is displayed in DevTools.
 

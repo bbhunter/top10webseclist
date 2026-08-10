@@ -66,7 +66,7 @@ In today’s web, websites are often built with large bundles of Javascript deri
 
 A Cache poisoning vulnerability arises when the cache is tricked by an attacker into serving an altered response to every other user requesting the resource. This is what a cache poisoning denial of service attack would look like:
 
-![](https://github.com/iustin24/Cache-Key-Normalization-Denial-of-Service/blob/master/diagram.png?raw=true)
+!
 
 ### Background
 
@@ -84,7 +84,7 @@ Use [Param Miner](https://github.com/PortSwigger/param-miner) in order to brutef
 
 It didn't take me too long to find Cache Poisoning DoS on `assets.redacted.com`, the subdomain hosting every js & css file used on one of the private programs. The vulnerability was caused by Fastify’s `Accept-Version` header, which allows the client to describe which version of a resource to send back. I was able to abuse the feature like so:
 
-![](https://iustin24.github.io/images/cc.png)
+!
 
 Since the Accept-version header is not included in the cache key, any user requesting the js file will recieve the cached 404 response. This was rewarded 2000$ and to my surprise, because fastify had no option to disable the `Accept-Version` header, it was also asigned [CVE-2020-7764](https://snyk.io/vuln/SNYK-JS-FINDMYWAY-1038269).
 
@@ -98,7 +98,7 @@ According to [RFC 4343](https://tools.ietf.org/html/rfc4343), FQDN (Fully qualif
 
 When pairing the two behaviors, I was able to achieve the following DoS attack on a host using a customly configured Varnish as a caching solution.
 
-![](https://iustin24.github.io/images/2.png)
+!
 
 Notice the capitalized host header value, causing a 404 error, which will then be cached by Varnish using the normalized value of the host header in the cache key. This report was fixed quite quickly, and I recieved a 800$ bounty.
 
@@ -110,13 +110,13 @@ Besides host headers, parameters and paths could also be lower-cased before bein
 
 While identifying subdomains using caches, I found a particular subdomain hosting images used to construct maps. Requesting an image would look something like this:
 
-![](https://iustin24.github.io/images/3.png)
+!
 
 Just like before, Param Miner was not able to find any hidden headers, so I decided to take a deeper look. As far as I could tell, the last three numbers in the path were ranges meant to tell the server what part of the map it should return. I played around with those for a good amount of time, but I was not getting anywhere.
 
 Initially, I thought `1.0.5`, was just the version, so I didn't give it much attention, but to my surprise, when I tried `1.0.4`, I noticed I got a cache HIT. Naturally, I thought some other APIs might be using an older version, so I tested `1.0.0`, which also returned a cache HIT. It didn't take me too long to realize that whatever directory I was replacing `1.0.5` with was returning `200 OK` and an `X-Cache Hit` repsonse header. I came up with the follwoing DoS POC:
 
-![](https://iustin24.github.io/images/4.png)
+!
 
 Yet again, while trying to increase the cache-hit ratio, developers did not take in consideration potential DoS attacks, which allowed me to inject `%2e%2e`(URL encoded `..`) and redirect requests to `/map/4/77/16.png`, which did not exist on the server, therefore leading to the 404. This was triaged, and the team is working on a fix.
 

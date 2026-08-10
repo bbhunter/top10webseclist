@@ -72,35 +72,11 @@ Spoofing
 
 # You Are Not Where You Think You Are, Opera Browsers Address Bar Spoofing Vulnerabilities
 
-[
-
-![Renwa](https://miro.medium.com/v2/resize:fill:64:64/1*r_V5EoylIXZ2Ot6ShbuRtA.png)
-
-](https://medium.com/@renwa?source=post_page---byline--aa36ad8321d8---------------------------------------)
+[![Renwa](https://miro.medium.com/v2/resize:fill:64:64/1*r_V5EoylIXZ2Ot6ShbuRtA.png)](https://medium.com/@renwa?source=post_page---byline--aa36ad8321d8---------------------------------------)
 
 [Renwa](https://medium.com/@renwa?source=post_page---byline--aa36ad8321d8---------------------------------------)
 
-14 min readOct 24, 2023
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2Faa36ad8321d8&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Fyou-are-not-where-you-think-you-are-opera-browsers-address-bar-spoofing-vulnerabilities-aa36ad8321d8&user=Renwa&userId=3f8ae70e3957&source=---header_actions--aa36ad8321d8---------------------clap_footer------------------)
-
 --
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2Faa36ad8321d8&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Fyou-are-not-where-you-think-you-are-opera-browsers-address-bar-spoofing-vulnerabilities-aa36ad8321d8&user=Renwa&userId=3f8ae70e3957&source=---header_actions--aa36ad8321d8---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Faa36ad8321d8&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Fyou-are-not-where-you-think-you-are-opera-browsers-address-bar-spoofing-vulnerabilities-aa36ad8321d8&source=---header_actions--aa36ad8321d8---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3Daa36ad8321d8&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Fyou-are-not-where-you-think-you-are-opera-browsers-address-bar-spoofing-vulnerabilities-aa36ad8321d8&source=---header_actions--aa36ad8321d8---------------------post_audio_button------------------)
-
-Share
 
 In addition to the same-origin policy, memory management, and cookie handling, the address bar is also a crucial component of web browsers from a security standpoint. It serves as a straightforward means to determine your location on the web and assess the trustworthiness of the source. With this in mind, over the past year, I have dedicated my efforts to exploring various methods of address bar spoofing within web browsers. Opera was my chosen target for this investigation, during which I identified multiple vulnerabilities across different browsers and employing various techniques. All the vulnerabilities I’ve included in this article were reported and patched by Opera in good timely manner with paid bounties.
 

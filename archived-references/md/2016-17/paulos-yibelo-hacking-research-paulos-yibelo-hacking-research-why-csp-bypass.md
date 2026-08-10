@@ -87,7 +87,7 @@ Few months back, I came across an oauth xss accompanied by a nice CSP bypass in 
 
  **POC**
 
- [ ](https://hackerone.com/redirect?signature=949b24b43fc4635ddd6f3413db2686e7228f8f60&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DZUXk7CUmaaE%26feature%3Dyoutu.be)
+ 
 
  After some digging I noticed ssl.google-analytics.com, www.google.com and even graph.facebook.com host JSONP endpoints -- which I wrote to twitter over email -- but will not be fixed anytime soon because it may break the sites usage and call to these sites and performance.
 

@@ -65,7 +65,7 @@ In this post, Opera’s Security Team has invited Bug Bounty Hunter [Renwa](http
 
 I like testing the security of browsers. So when I found out that Opera offers bounties for finding vulnerabilities in its browser, I started looking. This post outlines one of the vulnerabilities I found: the potential for a webpage to retrieve screenshots of local files from users.
 
-![](https://www-static-blogs.operacdn.com/security/wp-content/uploads/sites/6/2021/08/Screen20Shot202021-07-2720at2012.51.5120AM.png)
+!
 
 *A pin on my Opera Pinboard.*
 
@@ -85,7 +85,7 @@ My idea was that, if I could add a pin to opera:pinboards that link to a javascr
 
 After many more tries, I eventually came up with the payload ***javascript:’@opera.com/’;alert(1)***, which, upon clicking within my pinboard, caused a popup. However, there was a small problem: the tag within the pinboard interface used the attribute ***target=_blank***, which meant that any link clicked on the page would open in a new window, and wouldn’t execute javascript within the page. Luckily, there’s a small trick for that: if you **Command (Ctrl) + Click** or **Middle-Click** the link, the code runs successfully.
 
-![](https://www-static-blogs.operacdn.com/security/wp-content/uploads/sites/6/2021/08/Screen20Shot202021-07-2720at201.04.1320AM-1-edited.jpg)
+!
 
 With simple XSS on the opera:pinboards page, I wanted to show a greater impact than just simply causing a popup when clicking on a link — because who cares about that?
 
@@ -106,7 +106,7 @@ Thanks For Reading!
 
 Bounty: $4,000 USD.
 
- [ ![](https://secure.gravatar.com/avatar/1bc5da9caf0d55cabcd2a1b02829c7e38d344f0eb5a29824736d5da7a2f71adb?s=120&d=mm&r=g)
+ [ !
 
 # Opera Team
 

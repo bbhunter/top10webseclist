@@ -73,37 +73,9 @@ Security
 
 # How I found a $5,000 Google Maps XSS (by fiddling with Protobuf)
 
-[
-
-![Marin Moulinier](https://miro.medium.com/v2/resize:fill:64:64/1*dmbNkD5D-u45r44go_cf0g.png)
-
-](https://medium.com/@marin_m?source=post_page---byline--963ee0d9caff---------------------------------------)
+[![Marin Moulinier](https://miro.medium.com/v2/resize:fill:64:64/1*dmbNkD5D-u45r44go_cf0g.png)](https://medium.com/@marin_m?source=post_page---byline--963ee0d9caff---------------------------------------)
 
 [Marin Moulinier](https://medium.com/@marin_m?source=post_page---byline--963ee0d9caff---------------------------------------)
-
-16 min readMar 9, 2017
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F963ee0d9caff&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40marin_m%2Fhow-i-found-a-5-000-google-maps-xss-by-fiddling-with-protobuf-963ee0d9caff&user=Marin+Moulinier&userId=3904fde6445&source=---header_actions--963ee0d9caff---------------------clap_footer------------------)
-
---
-
-12
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F963ee0d9caff&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40marin_m%2Fhow-i-found-a-5-000-google-maps-xss-by-fiddling-with-protobuf-963ee0d9caff&user=Marin+Moulinier&userId=3904fde6445&source=---header_actions--963ee0d9caff---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F963ee0d9caff&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40marin_m%2Fhow-i-found-a-5-000-google-maps-xss-by-fiddling-with-protobuf-963ee0d9caff&source=---header_actions--963ee0d9caff---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D963ee0d9caff&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40marin_m%2Fhow-i-found-a-5-000-google-maps-xss-by-fiddling-with-protobuf-963ee0d9caff&source=---header_actions--963ee0d9caff---------------------post_audio_button------------------)
-
-Share
 
 A few months ago, I used Google Maps. Or maybe Google Street View, I love Street View, it’s like a retrofuturistic way to teleport. Routinely, I looked at the address bar. Since sometime in 2014, parameters are not the mere query string they used to be. Instead, it’s a weird mash of alphanumeric characters separated by exclamation points.
 

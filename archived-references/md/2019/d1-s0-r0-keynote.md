@@ -132,9 +132,6 @@ Response from Palo Alto PSIRT
 High severity CVE statistics
   159
 
-
-
-
          50
 
                  26
@@ -194,44 +191,29 @@ Encrypted virtual images
 The booting process
          BIOS
 
-
          LILO
-
 
         Kernel
 
-
      /sbin/init
-
-
-
 
    ?????????????????
 The booting process
          BIOS
 
-
          LILO
-
 
         Kernel
 
-
      /sbin/init
-
-
-
 
    ?????????????????
 Find the vital point
            BIOS
 
-
            LILO
 
-
           Kernel
-
 
        /sbin/init
                            Memory Forensics
@@ -240,12 +222,9 @@ Find the vital point
 In-memory patch
           BIOS
 
-
           LILO
 
-
          Kernel
-
 
       /sbin/init
                           Memory Patch
@@ -254,17 +233,11 @@ In-memory patch
 Once we press the Enter…
            BIOS
 
-
            LILO
-
 
           Kernel
 
-
        /sbin/init
-
-
-
 
    ///////////////bin/sh
 Digging at a correct place
@@ -344,7 +317,6 @@ problems
 
    • Dispatched to backend PHP engine and access privileged pages
 
-
 https://sslvpn/public/images/x/front_x/../../../../some.php
             Case studies
 Pre-auth remote code execution on Fortigate SSL VPN
@@ -389,7 +361,6 @@ snprintf(s, 0x40, "/migadmin/lang/%s.json", lang);
   snprintf(s, 0x40, "/migadmin/lang/%s.json", lang);
 /migadmin/lang//../../../..//////////////////////////////bin/sh.json
 
-
                                     0x40
 An SSL VPN mystery
    Appears in many products …
@@ -402,9 +373,6 @@ Excessively detailed session file
   • Plaintext password
 WebVPN
 WebVPN – HTTP/HTTPS
-
-
-
 
 https://sslvpn:4433/proxy/72ebc8b8/https/devco.re/
 WebVPN – HTTP/HTTPS
@@ -460,13 +428,11 @@ Mess up connections
      • One overflow request
                                              Overflow request
 
-
                                              Normal request
 Exploit between connections
 
                                     Connection 3
                Connection 1
-
 
                          Connection 2
 
@@ -478,12 +444,9 @@ LOW                                                HIGH
 Original SSL structure
                                                 ssl_accept()
 
-
                                    *handshake
           version   method    …                     …
                                       _func
-
-
 
 LOW                                                       HIGH
 
@@ -493,12 +456,9 @@ LOW                                                       HIGH
 Trigger JavaScript Parsing
                                                        ssl_accept()
 
-
                                           *handshake
                  version   method    …                     …
       Allocate                               _func
-
-
 
 LOW                                                              HIGH
         JS
@@ -508,7 +468,6 @@ LOW                                                              HIGH
  HEAP MEMORY
    Overflow SSL structure
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA       ssl_accept()
-
 
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
                         *handshake
@@ -540,7 +499,6 @@ From SEGFAULT to RCE
                                       _func
               AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
-
 LOW                                                  HIGH
       AAAAAAAAAAAAAAAAAAAAAAAAAA
                              SSL     SSL    SSL
@@ -550,12 +508,9 @@ LOW                                                  HIGH
 Forge SSL structure
                                                  system()
 
-
                                     *handshake
           version    method    …                   …
                                        _func
-
-
 
 LOW                                                     HIGH
 
@@ -660,7 +615,6 @@ Failed argument injection :(
    • /data/runtime/tmp/tt/*.thtml.ttc
    • No way to generate a polyglot file in both Perl and PCAP format
 
-
        >_     /usr/sbin/tcpdump –help
 
         Usage: tcpdump [-aAdDeflLnNOpqRStuUvxX] [-c count] [-C file_size]
@@ -701,10 +655,7 @@ Think out of the box
 Perl 101
              Code
 
-
-
 tcpdump: print 123#: No such file or directory
-
 
 GOTO label                  Comment
 /usr/sbin/tcpdump -d
@@ -722,7 +673,6 @@ GOTO label                  Comment
      >/dev/null
      2>&1             STDERR(2) > /data/runtime/tmp/tt/setcookie.thtml.ttc
 
-
                     tcpdump: $x="ls",system$x#: No such file...
     /usr/sbin/tcpdump -d
      -r'$x="ls",system$x#'
@@ -731,7 +681,6 @@ GOTO label                  Comment
      >/dev/null
      2>&1             STDERR(2) > /data/runtime/tmp/tt/setcookie.thtml.ttc
 
-
                     tcpdump: $x="ls",system$x#: No such file...
     /usr/sbin/tcpdump -d
      -r'$x="ls",system$x#'
@@ -739,7 +688,6 @@ GOTO label                  Comment
 3    <
      >/dev/null
      2>&1             STDERR(2) > /data/runtime/tmp/tt/setcookie.thtml.ttc
-
 
                     tcpdump: $x="ls",system$x#: No such file...
 /usr/sbin/tcpdump -d
@@ -810,12 +758,3 @@ Compromise all connected VPN clients
       Demo
 https://youtu.be/v7JUMb70ON4
 Recommendations
-
-• Client certificate authentication
-• Multi factors authentication
-• Enable full log audit (Be sure to send to out-bound server)
-• Subscribe to the vendor's security advisory and keep system
- updated!
-Thanks!
- @orange_8361      @mehqq_
- orange@devco.re   meh@devco.re

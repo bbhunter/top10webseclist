@@ -604,7 +604,7 @@ class TestASlideHostPageIsTheDocument(unittest.TestCase):
     SlideShare and SpeakerDeck publish the whole deck's text on the page. Three
     decks here extracted to 28,762, 30,914 and 31,482 characters while being
     recorded as "we only have a page about it", which put them in records/ and
-    on the needs-work list."""
+    on the document-gaps list."""
 
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()

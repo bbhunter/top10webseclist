@@ -58,7 +58,7 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhb5HWFdYR0O0q5uj7BsLSNVnlo6_z6GuhZoaAlOIiTAkmG6kDFj-0IzkyhVJawN0TAwopjMzdNGi5NeSfhk1ukJAI-N9xf65EM_1d6h9j2hx_cbLcp7gHjaE1GtR4bAeSxBCnCjQ/s320/google-chrome-logo.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhb5HWFdYR0O0q5uj7BsLSNVnlo6_z6GuhZoaAlOIiTAkmG6kDFj-0IzkyhVJawN0TAwopjMzdNGi5NeSfhk1ukJAI-N9xf65EM_1d6h9j2hx_cbLcp7gHjaE1GtR4bAeSxBCnCjQ/s1600-h/google-chrome-logo.jpg)
+[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhb5HWFdYR0O0q5uj7BsLSNVnlo6_z6GuhZoaAlOIiTAkmG6kDFj-0IzkyhVJawN0TAwopjMzdNGi5NeSfhk1ukJAI-N9xf65EM_1d6h9j2hx_cbLcp7gHjaE1GtR4bAeSxBCnCjQ/s1600-h/google-chrome-logo.jpg)
 
 Google Chrome (including customized webkit)has shown unethical behavior in implementing an embedded object with CLSID parameter. The design bug is presented in the execution of the object element directly in the context of browser. The bug proliferates when a CLSID of certain object is passed and specific URL is allowed to execute as parameter value in it. Before jumping into all aspect of this unexpected and chaotic behavior , let's have a brief look at the W3 specification
 
@@ -121,7 +121,7 @@ On the second part code execution without the CLSID is generic , in no way it is
 
 The overall picture of this kind of issue with respect to other browsers is presented below
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9S5jPs6tKBUKxXrxbA5NR565SKJJKL2V6JT_9cdEqDmacuQ_qUsBc6fJthT9Lmp2V8ztliRlKfLSSLFmfNos1Vd1v5XytKQHyhDXqglDIlAZg34OBQfJ_0XghuUxwv5pTmRhY6Q/s320/browser_check.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9S5jPs6tKBUKxXrxbA5NR565SKJJKL2V6JT_9cdEqDmacuQ_qUsBc6fJthT9Lmp2V8ztliRlKfLSSLFmfNos1Vd1v5XytKQHyhDXqglDIlAZg34OBQfJ_0XghuUxwv5pTmRhY6Q/s1600-h/browser_check.jpg)
+[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9S5jPs6tKBUKxXrxbA5NR565SKJJKL2V6JT_9cdEqDmacuQ_qUsBc6fJthT9Lmp2V8ztliRlKfLSSLFmfNos1Vd1v5XytKQHyhDXqglDIlAZg34OBQfJ_0XghuUxwv5pTmRhY6Q/s1600-h/browser_check.jpg)
 
 This represents the overall scenario. The payload can be used to execute XSS attacks stringently. the best probable solution is not to allow code when executed with CLSID as presented in this talk.
 

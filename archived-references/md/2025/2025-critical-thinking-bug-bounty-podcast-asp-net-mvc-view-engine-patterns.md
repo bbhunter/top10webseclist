@@ -667,7 +667,7 @@ In our scenario, we had the `/NoteEntry/UpdateNote` endpoint, which allowed stor
 
 We identified a POST endpoint at `/NotesReport/StartCreateReport` that accepts a FileName parameter — for example, `FileName=C:/inetpub/wwwroot/NotesReport.cshtml`. This endpoint generates a report based on stored notes (supporting filtering, so we can isolate just our note). Below is a ProcMon capture taken during a request (prior to placing `NotesReport.cshtml` on disk), showing the moment the controller returns View() and the view engine begins resolving the view path.
 
-![](https://lab.ctbb.show/research/articles/ArticleNo0007/image.png)
+!
 
 To validate the ASP.NET MVC view resolution behavior, we observed the actual file system activity (via ProcMon) while the controller—located in the MVC area—executed return View(). Despite the controller residing in an Area named MVC, the Razor View Engine followed its standard search pattern across multiple conventions and extensions
 

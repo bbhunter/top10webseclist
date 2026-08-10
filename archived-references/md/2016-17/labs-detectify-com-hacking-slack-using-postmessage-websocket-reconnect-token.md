@@ -71,7 +71,7 @@ Using `window.addEventListener('message', func)` and `window.postMessage()` to p
 
 Last week I was cruising around on Slack, using the version in the browser. In Chrome, there’s a really neat way of watching if any object has any listeners. You can find it below `Event Listeners` in the `Elements`-tab:
 
-![](http://detectify-labs.s3.amazonaws.com/slack-postmessage/event-listener.png)
+!
 
 I noticed this was indeed the case for Slack, they were passing messages to a listener on the `window`-object.
 
@@ -115,7 +115,7 @@ Now, looking through all events I could send, I noticed they had done a good job
 
 A boring PoC could have been: “I can shut down your call to someone, if you open my malicious page first and then call them”.
 
-![](http://detectify-labs.s3.amazonaws.com/slack-postmessage/nope.jpg)
+!
 
 While digging deeper, I also noticed that there were a lot of references to calls being made:
 
@@ -130,7 +130,7 @@ if (event.data.message_type != TS.utility.calls.messages_to_call_window_types.ms
 
 This made it clear that a big chunk of this functionality was due to the actual call-functionality in Slack:
 
-![](http://detectify-labs.s3.amazonaws.com/slack-postmessage/call-jobert.png)
+!
 
 This function, when being used, resides in another window but communication actually had to be made with the main Slack-window, this was a big reason why they had implemented `postMessage`.
 
@@ -146,14 +146,14 @@ https://slack.com/call/me
 
 it would route you to `/call/` (which weirdly enough breaks if you reload the page) on your current instance.
 
-![](http://detectify-labs.s3.amazonaws.com/slack-postmessage/slack-call-me.png)
+!
 
 I now had:
 
 - a redirect to the user’s current Slack-instance.
 - a page using the other end of the `postMessage`-dance, which we should be able to find something fun to play with in the list of events.
 - a URL that would work for any Slack-user.
-- a non-working page, BUT(!) it was using a `postMessage`-listener.![](http://detectify-labs.s3.amazonaws.com/slack-postmessage/call-listener.png)
+- a non-working page, BUT(!) it was using a `postMessage`-listener.!
 
 This was everything I needed.
 
@@ -161,11 +161,11 @@ This was everything I needed.
 
 Now, looking through the events that were possible to send, there was one which stood out to me:
 
-![](http://detectify-labs.s3.amazonaws.com/slack-postmessage/msg_ms.png)
+!
 
 Using the breakpoint mode in Chrome, we traverse down this function. Inside it, there was another chunk of message-handlers:
 
-![](http://detectify-labs.s3.amazonaws.com/slack-postmessage/msg-handlers.png)
+!
 
 So what this meant was due to the non-verification of origins, I was able to control messages being parsed by the main application. I was also able to control messages being sent to the call-window, and one of the events in this window, had another chunk of functions exposed to cross-domain control if I used the event:
 
@@ -194,7 +194,7 @@ TS.ms.setReconnectUrl(url)
 
 What it does is basically switch the WebSocket-URL being used for Slack. Now, the initialization of WebSockets are being done with a GET-event using a bunch of parameters. One of the params is called `token` and contains a `xoxs`-token which has full and complete access to your Slack-account.
 
-![](http://detectify-labs.s3.amazonaws.com/slack-postmessage/websocket.png)
+!
 
 So I started a local WebSocket myself. I used [Ratchet](http://socketo.me/) which was easy to set up. I didn’t really need a complete socket, only something that would respond properly to the init-request. I modified the `onOpen`-request to look like this:
 

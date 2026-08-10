@@ -84,7 +84,7 @@ Director of Research
 
 -
 
-![](https://portswigger.net/cms/images/f4/b3/753498a08488-article-request-smuggling-article.png)
+!
 
 ## Abstract
 
@@ -432,7 +432,7 @@ Host: trello.com
 
 As soon as the victim's request arrived, it would end up saved on my profile, exposing all their headers and cookies:
 
-![](https://portswigger.net/cms/images/47/95/0e81e9aa9e5b-article-trello.png)
+!
 
 The only major 'gotcha' with this technique is that you'll lose any data that occurs after an '&', which makes it hard to steal the body from form-encoded POST requests. I spent a while trying to work around this limitation by using alternative request encodings and ultimately gave up, but I still suspect it's possible somehow.
 
@@ -630,15 +630,15 @@ Location: http://skeletonscribe.net?, c.paypal.com/webstatic/ `
 
 However, there was a problem - PayPal's login page used [Content Security Policy](https://portswigger.net/web-security/cross-site-scripting/content-security-policy) with a script-src that killed my redirect.
 
-![](https://portswigger.net/cms/images/e1/5c/43ccf8d84ffc-article-paypal-01.svg)
+!
 
 This initially looked like a triumph of defence in depth. However, I noticed that the login page loads a sub-page on c.paypal.com in a dynamically generated iframe. This sub-page didn't use CSP, and also imported our poisoned JS file. This gave us full control over the iframe's contents, but we still couldn't read the user's PayPal password from the parent page thanks to the Same Origin Policy.
 
-![](https://portswigger.net/cms/images/1e/65/8e618cf695b8-article-paypal-02.svg)
+!
 
 My colleague Gareth Heyes then discovered a page at paypal.com/us/gifts that didn't use CSP, and also imported our poisoned JS file. By using our JS to redirect the c.paypal.com iframe to that URL (and triggering our JS import for the third time) we could finally access the parent and steal plaintext PayPal passwords from everyone who logged in using Safari or IE.
 
-![](https://portswigger.net/cms/images/13/0e/7fcaae230c37-article-paypal-03.svg)
+!
 
 PayPal speedily resolved this vulnerability by configuring Akamai to reject requests that contained a Transfer-Encoding: chunked header, and awarded a $18,900 bounty.
 
@@ -680,5 +680,3 @@ You may also be interested in the followup posts [HTTP Desync Attacks: what happ
  [ James Favourites ](https://portswigger.net/research/james-kettle) [ Request Smuggling ](https://portswigger.net/research/request-smuggling) [ Presentations ](https://portswigger.net/research/presentations) [ Black Hat ](https://portswigger.net/research/black-hat)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

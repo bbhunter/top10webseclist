@@ -67,7 +67,7 @@ page going offline. To read the original, follow the link above.
 
  With social engineering attacker tricks user into selecting (usually invisible) page source and dragging it to attackers' controlled textarea. A simple demo is [here](http://kotowicz.net/content-extraction/):
 
-| [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4-Gz5sAfhvIEoEZi0WTQYnp_Sg2nkxi2CRzji-fBOpNApnXvQ5hhfL1eugicwmgG3fxaiW_5P7qEK3rT5WpksDtnDif01u2CiOwhNAyak2sAubOGPLkOr2dM3MVgCj6z6RWGkNIVXL10/s320/content-extraction.jpg)](http://kotowicz.net/content-extraction/) |  |
+| [!](http://kotowicz.net/content-extraction/) |  |
 | Drag & drop other page source (cross-domain) |  |
 
  Once attacker gets the page source dropped into his textarea, he may begin to extract contents (like session IDs, user names, anti csrf tokens etc.) and launch further attacks.
@@ -94,7 +94,7 @@ page going offline. To read the original, follow the link above.
 
  Well, I don't like typing. So everytime I'm forced to repeat my e-mail address in a form, I just copypaste it. I decided to go that way. What if we display longish captcha-like 'security code' for a user to retype? 16 characters or more? Some of them will skip this step altogether, some will retype, but **most will select the text and copy/paste**.
 
- [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJk3XPcqZooGwNj7LvrI-yydaD2YLJNmlAJEyOcj-kKmzYt705XwzS1QKw_xlSFcOqsvvFO_GLEIyeopR63nlWnMnTkIMR3HDUY7scGkjtfCXX6pZxs3J6DnVLewaWg2V6wsC7csWabfQ/s320/fake-captcha1.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJk3XPcqZooGwNj7LvrI-yydaD2YLJNmlAJEyOcj-kKmzYt705XwzS1QKw_xlSFcOqsvvFO_GLEIyeopR63nlWnMnTkIMR3HDUY7scGkjtfCXX6pZxs3J6DnVLewaWg2V6wsC7csWabfQ/s1600/fake-captcha1.png)
+ [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJk3XPcqZooGwNj7LvrI-yydaD2YLJNmlAJEyOcj-kKmzYt705XwzS1QKw_xlSFcOqsvvFO_GLEIyeopR63nlWnMnTkIMR3HDUY7scGkjtfCXX6pZxs3J6DnVLewaWg2V6wsC7csWabfQ/s1600/fake-captcha1.png)
 
 ##  How do you select?
 
@@ -106,7 +106,7 @@ page going offline. To read the original, follow the link above.
 
  Because the security code input field is just precisely positioned part of the view-source:d victim page. And by tripple clicking user selects the whole line from the page source!
 
- [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6DCEazsOVXCROvrxQ4owRwHJwE5sggitlNXX9_C2UIUt3tlqQd7H1V8m1-lclD6vYGMUAirAwuC5HZClF_FfbzJMpAtYBPrpj2peRrilqWYVODbspIq-gD0FJq3Bk8xsoeYDsBVeNtOs/s320/fake-captcha2.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6DCEazsOVXCROvrxQ4owRwHJwE5sggitlNXX9_C2UIUt3tlqQd7H1V8m1-lclD6vYGMUAirAwuC5HZClF_FfbzJMpAtYBPrpj2peRrilqWYVODbspIq-gD0FJq3Bk8xsoeYDsBVeNtOs/s1600/fake-captcha2.png)
+ [!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6DCEazsOVXCROvrxQ4owRwHJwE5sggitlNXX9_C2UIUt3tlqQd7H1V8m1-lclD6vYGMUAirAwuC5HZClF_FfbzJMpAtYBPrpj2peRrilqWYVODbspIq-gD0FJq3Bk8xsoeYDsBVeNtOs/s1600/fake-captcha2.png)
 
 ##  Demo
 

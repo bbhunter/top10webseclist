@@ -175,7 +175,7 @@ Unfortunately, the quoted strings technique does not work with PHP and Ruby. To 
 
 We've implemented the best of these techniques in [Param Miner](https://portswigger.net/bappstore/17d2949a985c4b7ca092728dba871943) for you:
 
-![](https://portswigger.net/cms/images/22/25/09a8-article-python.png)![](https://portswigger.net/cms/images/2a/90/d0c2-article-springs.png)
+!!
 
 ## Preventing vulnerabilities
 
@@ -198,5 +198,3 @@ If you're curious about invalid characters in cookie headers,I recommend April K
  [ Cookies ](https://portswigger.net/research/cookies) [ WAF ](https://portswigger.net/research/waf) [ SQL Injection ](https://portswigger.net/research/sql-injection) [ XSS ](https://portswigger.net/research/cross-site-scripting-research) [ Zakhar Favourites ](https://portswigger.net/research/zakhar-fedotkin) [ cookie chaos ](https://portswigger.net/research/cookie-chaos)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

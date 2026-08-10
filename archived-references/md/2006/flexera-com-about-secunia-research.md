@@ -133,45 +133,13 @@ Informing IT, Transforming IT
 
 ## Industry insights to help keep you informed
 
- [
+ [Webinar ### How to see the software risks others miss Most teams are tracking vulnerabilities—but critical risks still go unseen. Learn how to close the visibility gap and prioritize what matters most.](https://www.flexera.com/resources/webinars/SVM-WBNR-See-Software-Risks-Others-Miss)
 
-Webinar
+ [Webinar ### From alert to action: Improve vulnerability management Learn how to gain actionable insights to manage vulnerabilities, understand threats and speed up remediation with Flexera’s SVR and SVM.](https://www.flexera.com/resources/webinars/SVM-WBNR-From-Alert-to-Action)
 
-### How to see the software risks others miss
+ [Webinar ### Stay ahead of cyber threats: Flexera's latest vulnerability insights Join us for this session where we'll explore the latest findings from the Flexera Monthly Vulnerability Insights Report.](https://www.flexera.com/resources/webinars/SVM-WBNR-Vulnerability-Insights-Roundtable)
 
-Most teams are tracking vulnerabilities—but critical risks still go unseen. Learn how to close the visibility gap and prioritize what matters most.
-
- ](https://www.flexera.com/resources/webinars/SVM-WBNR-See-Software-Risks-Others-Miss)
-
- [
-
-Webinar
-
-### From alert to action: Improve vulnerability management
-
-Learn how to gain actionable insights to manage vulnerabilities, understand threats and speed up remediation with Flexera’s SVR and SVM.
-
- ](https://www.flexera.com/resources/webinars/SVM-WBNR-From-Alert-to-Action)
-
- [
-
-Webinar
-
-### Stay ahead of cyber threats: Flexera's latest vulnerability insights
-
-Join us for this session where we'll explore the latest findings from the Flexera Monthly Vulnerability Insights Report.
-
- ](https://www.flexera.com/resources/webinars/SVM-WBNR-Vulnerability-Insights-Roundtable)
-
- [
-
-Report
-
-### Flexera Annual Software Vulnerability and Threat Intelligence Report
-
-Discover key cybersecurity trends in the 2024 Flexera Software Vulnerability and Threat Intelligence Report. Get insights on vulnerabilities, zero-days, and vendor risk to strengthen your security strategy.
-
- ](https://info.flexera.com/SVM-REPORT-Annual-Vulnerability-Review)
+ [Report ### Flexera Annual Software Vulnerability and Threat Intelligence Report Discover key cybersecurity trends in the 2024 Flexera Software Vulnerability and Threat Intelligence Report. Get insights on vulnerabilities, zero-days, and vendor risk to strengthen your security strategy.](https://info.flexera.com/SVM-REPORT-Annual-Vulnerability-Review)
 
  
 
@@ -181,14 +149,6 @@ Video
 
 Stop reacting. Gain control. Stay secure. Build a more effective risk mitigation process leveraging Secunia Research vulnerability intelligence and the largest repository of third-party patch data in the industry.
 
- [
-
-Trial
-
-### Software Vulnerability Manager Assessment free trial
-
-Get access to the complete set of modules of Software Vulnerability Manager: Research, Assessment and Patching
-
- ](https://info.flexera.com/SVM-EVAL-Software-Vulnerability-Manager)
+ [Trial ### Software Vulnerability Manager Assessment free trial Get access to the complete set of modules of Software Vulnerability Manager: Research, Assessment and Patching](https://info.flexera.com/SVM-EVAL-Software-Vulnerability-Manager)
 
  [View all resources](https://www.flexera.com/resources?category%5Bsoftware-vulnerability-management%5D=software-vulnerability-management)

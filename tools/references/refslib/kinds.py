@@ -89,7 +89,7 @@ def from_url(url):
     A WAYBACK REPLAY IS NOT ITS OWN KIND. `web.archive.org/web/<ts>/<url>` has
     the archive's host, so every rule below read the wrapper rather than the
     page: five YouTube talks and a PDF cited as replays were filed as `article`,
-    which sent a video into the browser ladder and put it on the needs-work list
+    which sent a video into the browser ladder and put it on the document-gaps list
     as though a write-up were missing. The kind belongs to what was CAPTURED.
     """
     from . import wayback

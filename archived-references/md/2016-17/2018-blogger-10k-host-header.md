@@ -68,7 +68,7 @@ page going offline. To read the original, follow the link above.
  On July 11th, 2017, I was bored, so I tried to find some bug at Google.
  I tried a lot of things in many Google services, one of those things was changing the Host header in requests to the [App Engine](https://cloud.google.com/appengine) server (*.appspot.com) in order to get access to some internal App Engine apps (*.googleplex.com) that usually require going through the [MOMA login page](https://login.corp.google.com/) (Which acts as a proxy called "ÜberProxy"). I used Burp because it was easier to change the Host header quickly and to see the result.
 
- [![](https://sites.google.com/site/testsitehacking/_/rsrc/1501957723924/10k-host-header/Screenshot%20from%202017-08-05%2015-28-09.png?height=216&width=400)](https://sites.google.com/site/testsitehacking/10k-host-header/Screenshot%20from%202017-08-05%2015-28-09.png?attredirects=0)
+ [!](https://sites.google.com/site/testsitehacking/10k-host-header/Screenshot%20from%202017-08-05%2015-28-09.png?attredirects=0)
  **Something like this**
 
  Most of my attempts failed, either because the server returned a 404 Not Found, or because it had some security measure such as checking that I used a Googler account ("username@google.com") instead of a normal Google account.
@@ -98,10 +98,10 @@ Summary: Google confidential page accessible from the outside by requesting it t
  likely_out_of_scope
 
 Just a few hours after my report, the security team went through my report and confirmed it was valid.
-[![](https://sites.google.com/site/testsitehacking/_/rsrc/1501959719834/10k-host-header/Screenshot%20from%202017-08-05%2016-00-02.png)](https://sites.google.com/site/testsitehacking/10k-host-header/Screenshot%20from%202017-08-05%2016-00-02.png?attredirects=0)
+[!](https://sites.google.com/site/testsitehacking/10k-host-header/Screenshot%20from%202017-08-05%2016-00-02.png?attredirects=0)
  I thought to myself "Cool, this is probably a small thing that isn't worth a dime, the website probably had some technical stuff about Google servers and nothing really important".
  I don't know what did the website contain (Edit from the future: Googlers told me YAQS is like an internal Stack Overflow), but some weeks later I got an email right after getting out of school that said my report was worth much more than a dime...
- [![](https://sites.google.com/site/testsitehacking/_/rsrc/1501960621887/10k-host-header/Screenshot%20from%202017-08-05%2016-12-37.png)](https://sites.google.com/site/testsitehacking/10k-host-header/Screenshot%20from%202017-08-05%2016-12-37.png?attredirects=0)
+ [!](https://sites.google.com/site/testsitehacking/10k-host-header/Screenshot%20from%202017-08-05%2016-12-37.png?attredirects=0)
  So... I got $10,000 US dollars just for changing the Host header!!!**
 
 The bug has been fixed now, and, according to Google, the large reward was because they found a few variants that would have allowed an attacker access sensitive data.

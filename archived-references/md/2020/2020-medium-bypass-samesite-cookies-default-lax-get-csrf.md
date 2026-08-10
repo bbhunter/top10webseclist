@@ -70,37 +70,9 @@ Browsers
 
 # Bypass SameSite Cookies Default to Lax and get CSRF
 
-[
-
-![Renwa](https://miro.medium.com/v2/resize:fill:64:64/1*r_V5EoylIXZ2Ot6ShbuRtA.png)
-
-](https://medium.com/@renwa?source=post_page---byline--343ba09b9f2b---------------------------------------)
+[![Renwa](https://miro.medium.com/v2/resize:fill:64:64/1*r_V5EoylIXZ2Ot6ShbuRtA.png)](https://medium.com/@renwa?source=post_page---byline--343ba09b9f2b---------------------------------------)
 
 [Renwa](https://medium.com/@renwa?source=post_page---byline--343ba09b9f2b---------------------------------------)
-
-5 min readJan 8, 2020
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F343ba09b9f2b&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Fbypass-samesite-cookies-default-to-lax-and-get-csrf-343ba09b9f2b&user=Renwa&userId=3f8ae70e3957&source=---header_actions--343ba09b9f2b---------------------clap_footer------------------)
-
---
-
-1
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F343ba09b9f2b&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Fbypass-samesite-cookies-default-to-lax-and-get-csrf-343ba09b9f2b&user=Renwa&userId=3f8ae70e3957&source=---header_actions--343ba09b9f2b---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F343ba09b9f2b&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Fbypass-samesite-cookies-default-to-lax-and-get-csrf-343ba09b9f2b&source=---header_actions--343ba09b9f2b---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D343ba09b9f2b&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Fbypass-samesite-cookies-default-to-lax-and-get-csrf-343ba09b9f2b&source=---header_actions--343ba09b9f2b---------------------post_audio_button------------------)
-
-Share
 
 *SameSite cookies, source:web.dev*
 

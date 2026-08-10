@@ -95,7 +95,7 @@ So, why did we choose MobileIron as our target? According to their official webs
 
 From [past vulnerabilities](https://www.cvedetails.com/vulnerability-list/vendor_id-13968/Mobileiron.html), we learned there aren’t too many researchers diving into MobileIron. Perhaps the attack vector is still unknown. But we suspect the main reason is that the firmware is too hard to obtain. When researching an appliance, turning a pure BlackBox testing into GrayBox, or WhiteBox testing is vital. We spent lots of time searching for all kinds of information on the Internet, and ended up with an RPM package. This RPM file is supposed to be the developer’s testing package. The file is just sitting on a listable WebRoot and indexed by Google Search.
 
-![](https://blog.orange.tw/posts/2020-09-how-i-hacked-facebook-again-mobileiron-mdm-rce/4ff73b5b915fbaba-02.png)
+!
 
 Anyway, we got a file to research. The released date of the file is in early 2018. It seems a little bit old but still better than nothing!
 
@@ -111,7 +111,7 @@ After a painful time solving the dependency hell, we set the testing package up 
 
 All opened ports are TLS-encrypted. Apache is in the front of the web part and proxies all connections to backend, a Tomcat with Spring MVC inside.
 
-![](https://blog.orange.tw/posts/2020-09-how-i-hacked-facebook-again-mobileiron-mdm-rce/1570d931acc59d91-03.png)
+!
 
 Due to the Spring MVC, it’s hard to find traditional vulnerabilities like SQL Injection or XSS from a single view. Therefore, examining the logic and architecture is our goal this time!
 
@@ -175,7 +175,7 @@ In our environment, we could only trigger the Spring AOP gadget chain and get a 
 
 Once we have a JNDI Injection, the rest parts of exploitations are easy! We can just leverage [Alvaro Muñoz](https://twitter.com/pwntester) and [Oleksandr Mirosh](https://twitter.com/olekmirosh)‘s work, [A Journey From JNDI/LDAP to Remote Code Execution Dream Land](https://www.blackhat.com/us-16/briefings.html#a-journey-from-jndi-ldap-manipulation-to-remote-code-execution-dream-land), from Black Hat USA 2016 to get the code execution… Is that true?
 
-![](https://blog.orange.tw/posts/2020-09-how-i-hacked-facebook-again-mobileiron-mdm-rce/91bc5be83c2c1329-04.png)
+!
 
 Since [Alvaro Muñoz](https://twitter.com/pwntester) and [Oleksandr Mirosh](https://twitter.com/olekmirosh) introduced this on Black Hat, we could say that this technique helps countless security researchers and brings Java deserialization vulnerability into a new era. However, Java finally mitigated the last JNDI/LDAP puzzle in [October 2018](https://www.oracle.com/java/technologies/javase/8u181-relnotes.html). After that, all java version higher than 8u181, 7u191, and 6u201 can no longer get code execution through JNDI remote URL-Class loading. Therefore, if we exploit the Hessian deserialization on the latest MobileIron, we must face this problem!
 
@@ -197,15 +197,15 @@ Now we have a perfect RCE by chaining JNDI Injection, Tomcat `BeanFactory` and `
 
 Aforementioned, we knew the Facebook uses MobileIron since 2016. Although the server’s index responses 403 Forbidden now, the Web Service is still accessible!
 
-![](https://blog.orange.tw/posts/2020-09-how-i-hacked-facebook-again-mobileiron-mdm-rce/82227c67db9e076c-05.png)
+!
 
 Everything is ready and wait for our exploit! However, several days before our scheduled attack, we realized that there is a critical problem in our exploit. From [our last time popping shell on Facebook](https://devco.re/blog/2016/04/21/how-I-hacked-facebook-and-found-someones-backdoor-script-eng-ver/), we noticed it blocks outbound connections due to security concerns. The outbound connection is vital for JNDI Injection because the idea is to make victims connecting to a malicious server to do further exploitations. But now, we can’t even make an outbound connection, not to mention others.
 
-![](https://blog.orange.tw/posts/2020-09-how-i-hacked-facebook-again-mobileiron-mdm-rce/d63da265360e3020-01.png)
+!
 
 So far, all attack surfaces on JNDI Injection have been closed, we have no choice but to return to Hessian deserialization. But due to the lack of available gadgets, we must discover a new one by ourselves!
 
-![](https://blog.orange.tw/posts/2020-09-how-i-hacked-facebook-again-mobileiron-mdm-rce/b3f1f2c97a1fc264-07.png)
+!
 
 Before discovering a new gadget, we have to understand the existing gadgets’ root cause properly. After re-reading Moritz Bechler’s [paper](https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf), a certain word interested me:
 
@@ -261,7 +261,7 @@ We have done all the research on March and sent the advisory to MobileIron at 4/
 
 After the patch has been released, we start monitoring the Internet to track the overall fixing progress. Here we check the `Last-Modified` header on static files so that the result is just for your information. (Unknown stands for the server closed both 443 and 8443 ports)
 
-![](https://blog.orange.tw/posts/2020-09-how-i-hacked-facebook-again-mobileiron-mdm-rce/14fac262ffbb4707-08.png)
+!
 
 At the same time, we keep our attentions on Facebook as well. With 15 days no-patch confirm, we finally popped a shell and report to their Bug Bounty program at 7/2!
 

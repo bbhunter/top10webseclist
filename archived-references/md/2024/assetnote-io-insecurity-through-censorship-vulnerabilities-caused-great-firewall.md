@@ -373,7 +373,7 @@ The first step is pointing the Fastly CDN profile to your server's IP as its ori
 
 Since the subdomain poisoning patterns are predictable, we can leverage some client side code to generate a list of random subdomains that will lead to poisoned responses. While we do not know which subdomain will eventually point to Fastly, we can simply load up an image from all of the random subdomains until we win, leveraging event handlers to notify us about the successful poison.
 
-![](https://cdn.prod.website-files.com/64233a8baf1eba1d72a641d4/66ebff3ec8f20d5eda55b481_66ebfd91494e26d94f405bc6_fastly-poison.png)
+!
 
 Show Fastly Proof-of-Concept Code
 
@@ -387,7 +387,7 @@ Eric let us know that he had spent over 100 hours on this issue from a research 
 
 This proof-of-concept relies on the fact that one of the IPs within the pool of IPs returned through the poisoning will be running a vulnerable version of cPanel, leading to XSS. It will iterate through generated subdomains until the XSS fires.
 
-![](https://cdn.prod.website-files.com/64233a8baf1eba1d72a641d4/66ebff3ec8f20d5eda55b474_66ebfe03e1a5d89a81f841c3_cpanel-poison.png)
+!
 
 We have simplified Eric's proof-of-concept and our version can be found below:
 
@@ -485,72 +485,16 @@ Subscribe to our newsletter and stay updated on the newest research, security ad
 
 ### More Like This
 
-[
+[Security Research ### Doing the Due Diligence: Analyzing the Next.js Middleware Bypass (CVE-2025-29927) Read on ASN Blog](https://www.assetnote.io/resources/research/doing-the-due-diligence-analyzing-the-next-js-middleware-bypass-cve-2025-29927)
 
-Security Research
+[Security Research ### How an obscure PHP footgun led to RCE in Craft CMS Read on ASN Blog](https://www.assetnote.io/resources/research/how-an-obscure-php-footgun-led-to-rce-in-craft-cms)
 
-### Doing the Due Diligence: Analyzing the Next.js Middleware Bypass (CVE-2025-29927)
+[Security Research ### Citrix Denial of Service: Analysis of CVE-2024-8534 Read on ASN Blog](https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534)
 
-Read on ASN Blog
+[Security Research ### Nginx/Apache Path Confusion to Auth Bypass in PAN-OS (CVE-2025-0108) Read on ASN Blog](https://www.assetnote.io/resources/research/nginx-apache-path-confusion-to-auth-bypass-in-pan-os)
 
-](https://www.assetnote.io/resources/research/doing-the-due-diligence-analyzing-the-next-js-middleware-bypass-cve-2025-29927)
+[Security Research ### Leveraging An Order of Operations Bug to Achieve RCE in Sitecore 8.x - 10.x Read on ASN Blog](https://www.assetnote.io/resources/research/leveraging-an-order-of-operations-bug-to-achieve-rce-in-sitecore-8-x---10-x)
 
-[
+[Security Research ### Chaining Three Bugs to Access All Your ServiceNow Data Read on ASN Blog](https://www.assetnote.io/resources/research/chaining-three-bugs-to-access-all-your-servicenow-data)
 
-Security Research
-
-### How an obscure PHP footgun led to RCE in Craft CMS
-
-Read on ASN Blog
-
-](https://www.assetnote.io/resources/research/how-an-obscure-php-footgun-led-to-rce-in-craft-cms)
-
-[
-
-Security Research
-
-### Citrix Denial of Service: Analysis of CVE-2024-8534
-
-Read on ASN Blog
-
-](https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534)
-
-[
-
-Security Research
-
-### Nginx/Apache Path Confusion to Auth Bypass in PAN-OS (CVE-2025-0108)
-
-Read on ASN Blog
-
-](https://www.assetnote.io/resources/research/nginx-apache-path-confusion-to-auth-bypass-in-pan-os)
-
-[
-
-Security Research
-
-### Leveraging An Order of Operations Bug to Achieve RCE in Sitecore 8.x - 10.x
-
-Read on ASN Blog
-
-](https://www.assetnote.io/resources/research/leveraging-an-order-of-operations-bug-to-achieve-rce-in-sitecore-8-x---10-x)
-
-[
-
-Security Research
-
-### Chaining Three Bugs to Access All Your ServiceNow Data
-
-Read on ASN Blog
-
-](https://www.assetnote.io/resources/research/chaining-three-bugs-to-access-all-your-servicenow-data)
-
-[
-
-Back to All
-
-](https://www.assetnote.io/resources/research)
-
-### Ready to get started?
-
-Get on a call with our team and learn how Assetnote can change the way you secure your attack surface. We'll set you up with a trial instance so you can see the impact for yourself.
+[Back to All](https://www.assetnote.io/resources/research)

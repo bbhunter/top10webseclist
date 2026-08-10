@@ -387,13 +387,7 @@ This entry was posted in [Security Posts](https://soroush.me/blog/category/secur
 
 Creation date: August 8, 2023
 
-[
-
- Previous
-
-MongoDB NoSQL Injection with Aggregation Pipelines
-
-](https://soroush.me/blog/mongodb-nosql-injection-with-aggregation-pipelines)[
+[Previous MongoDB NoSQL Injection with Aggregation Pipelines](https://soroush.me/blog/mongodb-nosql-injection-with-aggregation-pipelines)[
 
 Next
 

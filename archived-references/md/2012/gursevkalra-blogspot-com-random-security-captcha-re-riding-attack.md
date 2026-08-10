@@ -88,7 +88,7 @@ This attack was voted at #8 in [Top Ten Web Hacking Techniques of 2012](https://
 
  8. If verification is successful, client is sent to next logical step in the registration process. If not, client is redirected to the register page (step 1 above).
 
-| [![](https://web.archive.org/web/20171105034455im_/http://3.bp.blogspot.com/-bTlQlwSG5E4/T1G_Sv8aATI/AAAAAAAAAw4/obRW8EU74q8/s400/sample-captcha-implementation.png)](https://web.archive.org/web/20171105034455/http://3.bp.blogspot.com/-bTlQlwSG5E4/T1G_Sv8aATI/AAAAAAAAAw4/obRW8EU74q8/s1600/sample-captcha-implementation.png) |  |
+| [!](https://web.archive.org/web/20171105034455/http://3.bp.blogspot.com/-bTlQlwSG5E4/T1G_Sv8aATI/AAAAAAAAAw4/obRW8EU74q8/s1600/sample-captcha-implementation.png) |  |
 |
 
  Figure 1: Image shows an example Register page that supports CAPTCHA

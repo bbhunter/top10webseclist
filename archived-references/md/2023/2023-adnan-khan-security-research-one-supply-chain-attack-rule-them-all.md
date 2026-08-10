@@ -70,7 +70,7 @@ What would an attacker need to target in order to carry out this attack? Cloud i
 
 ### GitHub Actions Runners
 
-![](https://adnanthekhan.com/_astro/images/image-14.Dtwmyaaz_Zdh5GS.webp)
+!
 
 Let’s jump to the largest CI/CD service on the market: **GitHub Actions**. GitHub Actions’ primary draw is that it is free for public repositories. It’s hard for open-source software projects to choose another provider when their compute is provided free of charge. Beyond that, it is easy to use and tightly integrated into GitHub. For anyone used to wrestling with their own custom Jenkins pipeline configuration, GitHub Actions is a blessing.
 
@@ -78,7 +78,7 @@ Let’s jump to the largest CI/CD service on the market: **GitHub Actions**. Git
 
 GitHub Actions builds run on two types of build runners. One type is GitHub’s [hosted runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners), for which GitHub offers Windows, OS X and Linux images. The images for these runners are updated at a weekly cadence by GitHub’s runner images team, and the source code is public at [https://github.com/actions/runner-images](https://github.com/actions/runner-images). The vast majority of workflows on GitHub run on hosted runners. If you’ve configured an Actions workflow, you might recognize ‘ubuntu-latest’, ‘macos-latest’ , or ‘windows-latest’.
 
-![](https://adnanthekhan.com/_astro/images/image-7.CKYIvCfT_Z2cV4ga.webp)
+!
 
 The second class is self-hosted runners. These are build agents hosted by end users running the Actions runner agent on their own infrastructure. As one would expect, securing and protecting the runners is the responsibility of end users, not GitHub. For this reason, GitHub recommends against using self-hosted runners on public repositories. This advice is not followed by some fairly large organizations, many of whom who had non-ephemeral self-hosted runners attached to public repositories with default groups and workflow approval settings.
 
@@ -86,7 +86,7 @@ From a period of time between February 2023 and July 25th, 2023, one such reposi
 
 For my discovery and report I was awarded a $20,000 bug-bounty through [GitHub’s HackerOne](https://hackerone.com/github) program.
 
-![](https://adnanthekhan.com/_astro/images/personal_blog_teaser.CeBmVN8v_AlEXY.webp)
+!
 
 ## Self-Hosted Runners
 
@@ -121,7 +121,7 @@ If you set up a self-hosted runner using the default steps - meaning you follow 
 
 You may ask: How can someone determine if a runner attached to a public repository is non-ephemeral? There isn’t a 100% clear way to determine this for *all* workflows, but there is one heuristic that is *nearly* always accurate. If the workflow contains the [‘actions/checkout’](https://github.com/actions/checkout) GitHub action, then the run logs will contain a `Cleaning the repository` message. If this message is present, then it means that the runner is non-ephemeral, or the working directory of the runner is shared between builds - this is very rare. In either case, this is of interest.
 
-![](https://adnanthekhan.com/_astro/images/non_ephemeral_confirmed-1.DwgUMa8E_ZJSDPB.webp)If it cleans - it’s non-ephemeral
+!If it cleans - it’s non-ephemeral
 
 Additionally, the runner name and machine names from the log will also provide hints. If a runner name is repeated, then it is likely to be non-ephemeral. Ephemeral runners will typically have runner names with randomized strings as part of the name.
 
@@ -131,11 +131,11 @@ When a workflow executes from a fork pull request the GitHub Actions service use
 
 By changing a workflow file within their fork, and *then* creating a Pull Request anyone with a GitHub account can run arbitrary code on a self-hosted runner. The only roadblock here is GitHub’s [workflow approval setting](https://docs.github.com/en/actions/managing-workflow-runs/approving-workflow-runs-from-public-forks) or [workflow restrictions](https://github.blog/changelog/2022-03-21-github-actions-restrict-self-hosted-runner-groups-to-specific-workflows/). The latter is a newer feature and hard to configure. By default, workflows from fork PRs will only run without approval if the user is a previous contributor. From an attacker’s perspective, this means that they only need to fix a typo or make a small code change in order to become a contributor. For [actions/runner-images](https://github.com/actions/runner-images), this was a single character change.
 
-![](https://adnanthekhan.com/_astro/images/wp-blog-approval-2.DmkwJ3Wh_ZWweAv.webp)Just a minor typo fix.
+!Just a minor typo fix.
 
 In order to protect the privacy of GitHub employees and contractors I’ve redacted their handles and pictures. I want to be extremely clear that approving and merging this PR was in no way a failure on their part.
 
-![](https://adnanthekhan.com/_astro/images/wp-blog-approval-1.BDTzGDL7_1HPfFw.webp)Pull request with Typo Fix
+!Pull request with Typo Fix
 
 Once the pull request was merged, my account was a contributor, note the ‘Contributor’ badge that now shows up in the box. This meant that my account could execute workflows on **pull_request** without approval, as long as the repository had the default approval setting, which it did at the time.
 
@@ -149,7 +149,7 @@ In order to explain how I planned the attack, we need to look at the actions/run
 
 The repository contained several CI workflows that used self-hosted runners to build Windows and MacOS runner images. Below is a workflow run from a build that ran on one of the non-ephemeral self-hosted runners attached to the repository. Note the write permissions associated with the `GITHUB_TOKEN`!
 
-![](https://adnanthekhan.com/_astro/images/attachment-runner_name_and_group.hZ7Vh1xQ_2uKABD.webp)
+!
 
 Ubuntu and Windows builds used runners with the label `azure-builds`, and MacOS builds ran on runners with the label `macos-vmware`.
 
@@ -192,7 +192,7 @@ I would also be able to obtain the `GITHUB_TOKEN` from the `.git/config` file of
 
 My first step was to obtain persistence on the self-hosted runner. From my perspective, I did not know where these runners lived, what kind of egress controls they might have had, or EDR/firewall on the host. To ensure I would successfully obtain persistence, I used a payload install something I knew would be able to connect out to C2. That payload was - surprise - another self-hosted GitHub Actions runner agent!
 
-![](https://adnanthekhan.com/_astro/images/image-11.C3wKEkWs_2nsa4K.webp)
+!
 
 I modified the `linter.yml` workflow to instead run a script after checking out the repository.
 
@@ -256,27 +256,27 @@ At this point, my payload was ready. The final step was to create PRs at a time 
 
 With my payload ready, I created a pull request from my fork. The pull request triggered workflow runs in the repository, and the linter workflow was picked up by the self-hosted runners. I had to do a bit of “on the fly debugging” as is common when you try a novel technique for the first time, but the outcome thankfully was the same.
 
-![](https://adnanthekhan.com/_astro/images/pr_changes.CGcaDKNd_10DJR6.webp)Clicking that ‘Draft pull request’ button felt like it took an eternity.![](https://adnanthekhan.com/_astro/images/workflows_present.DVuMoCVB_ZE2WQt.webp)
+!Clicking that ‘Draft pull request’ button felt like it took an eternity.!
 
 My CI test runs were now present in the run logs, and my C2 repository now had **6** self-hosted runners connecting from GitHub’s network and/or cloud environment. I also forced push the commit in my fork to close the PR.
 
-![](https://adnanthekhan.com/_astro/images/pr_closed.Nf2z5VnG_Z2mHpI.webp)
+!
 
 At this point definitely wanted the build logs gone as soon as possible! And that is where the scheduled runs came into play.
 
-![](https://adnanthekhan.com/_astro/images/attachment-shelled_runners.DDjZ_i-8_RWsOs.webp)
+!
 
 Within my C2 repository, I configured a simple workflow that ran commands on the self-hosted runners.
 
-![](https://adnanthekhan.com/_astro/images/shell_output.DPKAUcLN_27vAlO.webp)
+!
 
 Since I now had what was essentially a web shell on the runners, I used it to capture the `runner-images` `.git/config` from within the runner’s working directory while a scheduled build was running. I simply Base64 encoded it and printed it to the run log.
 
-![](https://adnanthekhan.com/_astro/images/gh_token_steal-1.WP5VBJBB_Z15emBf.webp)Good ol’ CyberChef
+!Good ol’ CyberChef
 
 I decoded the AUTHORIZATION header to capture the `ghs_` token. This was the `GITHUB_TOKEN` from the scheduled workflow with write access, and it would be valid for the entire duration of the scheduled build.
 
-![](https://adnanthekhan.com/_astro/images/access_token_decode.DsliFxDz_UecAk.webp)
+!
 
 My first task was to get rid of the run logs from my pull request. I used the GitHub API along with the token to delete the run logs for each of the workflows my PR triggered.
 
@@ -289,15 +289,15 @@ curl -L \
   https://api.github.com/repos/actions/runner-images/actions/runs/5627447333
 ```
 
-![](https://adnanthekhan.com/_astro/images/workflows_gone-1.Cm0bvLWj_ibGfo.webp)It’s like it never happened
+!It’s like it never happened
 
 And just like that, the most obvious evidence of this attack was gone. GitHub did not detect the implantation, and I was now living within their network. Now, everything wasn’t perfect; however. Operator error happens. On the Linux runner, due to a silly bug in my implantation script I had accidentally installed the C2 runner in the checked out repository directory instead of the home directory.
 
-![](https://adnanthekhan.com/_astro/images/watch_build_dir.qQNeUso3_25YFtX.webp)
+!
 
 I had a shell for a short while, but this meant that when the scheduled build ran, it also killed my runner when it cleaned the repository.
 
-![](https://adnanthekhan.com/_astro/images/runner_delete_oops.C4y6KV6s_19zzzM.webp)RIP Runner
+!RIP Runner
 
 I could have easily re-implanted the machine, but what I had access to from the MacOS runner was more than enough at this point to prove impact for my disclosure.
 
@@ -305,13 +305,13 @@ I could have easily re-implanted the machine, but what I had access to from the 
 
 Now that I had persistence, I focused on gathering proof of secret compromise to include in my report. I used the web-shell to print and encode the contents of the previously mentioned scripts containing the vCenter credentials.
 
-![](https://adnanthekhan.com/_astro/images/mac_secrets.Ct-ZURqF_Z1cy7xt.webp)
+!
 
 As much as I wanted to, I did not to set up a SOCKS tunnel and try to log in to the vCenter instance and peek behind the curtain. I had enough evidence for a Critical report and I did not want to compromise any more sensitive information. I did verify I could reach its web interface with curl, so had I created a tunnel I would have been able to sign in.
 
 In total, I lived on the `ubuntu-unstable-o` runner for 5 days. Once GitHub triaged the report and I saw initial mitigations rolling into the repo I removed the runners from my C2 repository, and before that I ran one final command as a memento.
 
-![](https://adnanthekhan.com/_astro/images/final_persistence_log.BZ1tUDLR_gsFGp.webp)
+!
 
 ## How bad could it have been?
 
@@ -381,7 +381,7 @@ jobs:
 
 Astute observers might note that *this* workflow would have also allowed me to steal the **PRAPPROVAL_SECRET** via a shell injection attack. The PAT belongs to a GitHub employee with write access to the repository. I determined this by observing current runs of the workflow: [https://github.com/actions/runner-images/actions/workflows/merge_pull_request.yml](https://github.com/actions/runner-images/actions/workflows/merge_pull_request.yml). The PRs are merged quickly after an approval by the employee.
 
-![](https://adnanthekhan.com/_astro/images/post-exp-1.pIuGwJMf_mpM5q.webp)
+!
 
 If you cross reference the workflow logs with other PRs, you can conclude that:
 
@@ -391,7 +391,7 @@ If you cross reference the workflow logs with other PRs, you can conclude that:
 
 - It would be possible to use the `GITHUB_TOKEN` to commit changes to these open PRs, as the workflow itself is making a merge commit and pushing it with a specific “bot account”.
 
-![](https://adnanthekhan.com/_astro/images/image-10.tClUoSBl_Smt3M.webp)
+!
 
 And there you have it, a clear path an attacker could have taken to tamper with the runner images code used for all GitHub and Azure Pipelines hosted runners. A skilled attacker could drop a payload that checked if the image was processing a workflow for a high-value target organization and only then run a second stage to perform a poisoned pipeline execution attack within GitHub’s build environment. The scariest part is that victims would have had absolutely no idea of this until an APT was already backdooring their builds and using their CI/CD secrets.
 
@@ -415,7 +415,7 @@ _PROJECT }} `
 
 If you dig deep into the PR comments for [https://github.com/actions/runner-images/pull/7182](https://github.com/actions/runner-images/pull/7182), which introduced GitHub CI to the repository, you can see what some of these values would have been.
 
-![](https://adnanthekhan.com/_astro/images/internal-1.DYDu9O55_Z2f2Mwj.webp)
+!
 
 ### maccloud Access
 
@@ -436,7 +436,7 @@ If I had set up a reverse tunnel, I would have been able to use the vCenter admi
 
 The easiest way to mitigate this class of vulnerability is to change the default setting of **‘Require approval for first-time contributors’** to **‘Require approval for all outside collaborators’**. It is a no-brainer for any public repository that uses self-hosted runners to ensure that they are using the restrictive setting.
 
-![](https://adnanthekhan.com/_astro/images/default-approval-bad.yfhf_ED4_Z1TU4lo.webp)Default fork pull request approval setting
+!Default fork pull request approval setting
 
 An attacker can still try to conduct this attack by tricking a maintainer into clicking the approve button, but that has a much lower chance of success and would require creativity on part of the attacker in order to hide their injection payload among a much larger legitimate PR.
 
@@ -461,13 +461,13 @@ I can’t finish this blog post without mentioning the core discovery engine we 
 
 The tool also had public repository enumeration as a “nice to have” feature.
 
-![](https://adnanthekhan.com/_astro/images/image-3.9mB3fIv3_29SIJh.webp)
+!
 
 Since then I’ve continued development of the tool and added features along the way to improve its speed, efficiency, attack capabilities. In its current state Gato is a full featured GitHub Actions pipeline enumeration and attack toolkit. Most of the vulnerable repositories we conducted operations against we discovered through Gato.
 
 Check out an example of how easily Gato can discover self-hosted runners on Microsoft’s public repositories with just two commands.
 
-![](https://adnanthekhan.com/_astro/images/image-6.D_nTcPCB_Z14u73v.webp)![](https://adnanthekhan.com/_astro/images/image-9.BQOQ6UXC_VywBR.webp)
+!!
 
 Head to the [repository](https://github.com/praetorian-inc/gato) and give Gato a spin for yourself, you might be shocked at what you find!
 

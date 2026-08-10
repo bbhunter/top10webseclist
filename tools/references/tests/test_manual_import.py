@@ -73,7 +73,7 @@ class TestGroupingKeepsTwoDocumentsApart(unittest.TestCase):
     """Measured: five files from two different DEF CON 31 PDFs collapsed into
     one group, because `whitepaper` was treated as a word carrying no signal. The
     paper and the deck were joined into a single archive file and the deck stayed
-    on the needs-work list, still listed as never acquired."""
+    on the document-gaps list, still listed as never acquired."""
 
     def test_the_paper_and_the_deck_of_one_talk_are_different_groups(self):
         self.assertNotEqual(manual_import.group_key(PAPER_FILES),

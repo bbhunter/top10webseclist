@@ -78,7 +78,7 @@ In: Research in Attacks, Intrusions, and Defenses - 18th International Symposium
 
 |  [![[img]](https://publications.cispa.saarland/538/2.hassmallThumbnailVersion/jAEk_raid2015.pdf)](https://publications.cispa.saarland/538/2/jAEk_raid2015.pdf)
 
-| ![](https://publications.cispa.saarland/538/2.haspreviewThumbnailVersion/jAEk_raid2015.pdf)
+| !
 
 Preview
 

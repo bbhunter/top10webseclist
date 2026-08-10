@@ -131,7 +131,7 @@ A malicious SSID combined together with the use of JavaScript comment tags (/* *
 
 4. The malicious script hosted in the attacker’s web server is used to perform a CSRF attack against the affected administrative interface. This script causes the administrator’s browser to make a POST request to the wireless encryption functionality (apply.cgi) and disables the device’s wireless encryption.
 
-[![](http://usefulfor.com/security/files/2008/08/ssid-diagram.jpg)](http://usefulfor.com/security/files/2008/08/ssid-diagram.jpg)
+[!](http://usefulfor.com/security/files/2008/08/ssid-diagram.jpg)
 
 **Tool:** SSID Script Injection [[1]](http://www.mwrinfosecurity.com/publications/ssidattack.tar)
 

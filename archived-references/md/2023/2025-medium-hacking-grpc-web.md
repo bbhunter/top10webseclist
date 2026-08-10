@@ -68,35 +68,15 @@ page going offline. To read the original, follow the link above.
 
 ## Manipulating gRPC Web Payloads and Finding Hidden Services
 
-[
-
-![Amin Nasiri](https://miro.medium.com/v2/da:true/resize:fill:88:88/0*-RbIMKWHgAc0UNE1)
-
-](https://medium.com/@nxenon?source=post_page-----a54053757a45--------------------------------)[
-
-![InfoSec Write-ups](https://miro.medium.com/v2/resize:fill:48:48/1*SWJxYWGZzgmBP1D0Qg_3zQ.png)
-
-](https://infosecwriteups.com/?source=post_page-----a54053757a45--------------------------------)
+[![Amin Nasiri](https://miro.medium.com/v2/da:true/resize:fill:88:88/0*-RbIMKWHgAc0UNE1)](https://medium.com/@nxenon?source=post_page-----a54053757a45--------------------------------)[![InfoSec Write-ups](https://miro.medium.com/v2/resize:fill:48:48/1*SWJxYWGZzgmBP1D0Qg_3zQ.png)](https://infosecwriteups.com/?source=post_page-----a54053757a45--------------------------------)
 
 [Amin Nasiri](https://medium.com/@nxenon?source=post_page-----a54053757a45--------------------------------)
 
-[Follow](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fuser%2F6bd064f6a47f&operation=register&redirect=https%3A%2F%2Finfosecwriteups.com%2Fhacking-into-grpc-web-a54053757a45&user=Amin+Nasiri&userId=6bd064f6a47f&source=post_page-6bd064f6a47f----a54053757a45---------------------post_header-----------)
-
 Published in
 
-[
-
-InfoSec Write-ups
-
-](https://infosecwriteups.com/?source=post_page-----a54053757a45--------------------------------)
-
-6 min readSep 18, 2023
+[InfoSec Write-ups](https://infosecwriteups.com/?source=post_page-----a54053757a45--------------------------------)
 
 --
-
-Listen
-
-Share
 
 # How Did It Start?
 

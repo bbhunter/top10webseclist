@@ -80,7 +80,7 @@ It appears that the world of Flash & Flex web application security is still in i
 
  [Follow @AppSecInsider](https://twitter.com/AppSecInsider)
 
- [ ![](http://www-01.ibm.com/software/tivoli/products/SWI00/RationalAppScan_140x65.jpg)](http://www.ibm.com/developerworks/downloads/r/appscan/)
+ [ !](http://www.ibm.com/developerworks/downloads/r/appscan/)
  Try IBM Security AppScan software at no charge.
 
 -  [Download the free trial](http://www.ibm.com/developerworks/downloads/r/appscan/)

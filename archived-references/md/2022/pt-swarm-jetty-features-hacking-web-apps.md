@@ -75,7 +75,7 @@ Jetty’s default port is 8080. This web server is easy to identify if its respo
 
 Of all the servers on the screenshot below, only Jetty responded to `/;"` with 200.
 
-[![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/bc61f626-1.png)](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/bc61f626-1.png)
+[!](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/bc61f626-1.png)
 
 *Different responses to the same request*
 
@@ -96,13 +96,13 @@ Jetty has an interesting feature that in some cases discloses a list of all avai
 
 Let’s imagine that a server does not have a root application, and two contexts are registered to serve pages for the test.local domain (virtual host) and 192.168.88.129 IP.
 
-[![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/a388fb9e-2.png)](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/a388fb9e-2.png)
+[!](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/a388fb9e-2.png)
 
 *The context configuration file of the web application*
 
 The application works correctly if opened via a browser. However, if we send a GET request to / with a random value in the Host header, the response will contain a list of all applications, including the admin panel, and their context paths.
 
-[![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/e2ecc38e-3.png)](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/e2ecc38e-3.png)
+[!](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/e2ecc38e-3.png)
 
 *Context paths disclosure*
 
@@ -131,7 +131,7 @@ Note: to enable JSP file processing in Jetty, the jsp module must be enabled.
 
 As I mentioned earlier, Jetty may have a root application that processes requests to the server root. Therefore, the easiest way to achieve RCE is to upload a JSP web shell to `$JETTY_BASE/webapps/root/` and then access it via HTTP.
 
-[![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/7966e3aa-4.png)](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/7966e3aa-4.png)
+[!](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/7966e3aa-4.png)
 
 *JSP web shell in the root app*
 
@@ -143,13 +143,13 @@ A JSP shell can also be uploaded to `$JETTY_BASE/work/` which is normally used a
 
 If we somehow manage to find out what temporary directory has been created, we can try to upload a JSP shell via: `$JETTY_BASE/work/"jetty-"+host+"-"+port+"-"+resourceBase+"-_"+context+"-"+virtualhost+"-"/webapps/`.
 
-[![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/dfe4e8af-5.png)](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/dfe4e8af-5.png)
+[!](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/dfe4e8af-5.png)
 
 *Creation of a temporary directory*
 
 Next we open the URL with the required context in our browser and we have RCE.
 
-[![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/16f3c624-6.png)](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/16f3c624-6.png)
+[!](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/16f3c624-6.png)
 
 *JSP web shell in the web app temporary directory*
 
@@ -171,7 +171,7 @@ This means we have two file types that can give us RCE if we upload them to the 
 
 If we are able to upload a WAR archive to `$JETTY_BASE/webapps/`, we will be able to execute arbitrary code on the server. To create a malicious archive, all we need to do is to place a JSP file with our malicious content in the root of a folder and pack it as a ZIP file with the .war extension.
 
-[![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/6c14c30f-7.png)](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/6c14c30f-7.png)
+[!](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/6c14c30f-7.png)
 
 *RCE through .war file upload*
 
@@ -201,7 +201,7 @@ We can achieve RCE with the following XML file, whose code will be executed imme
 </Configure>
 ```
 
-[![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/c6482300-8.png)](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/c6482300-8.png)
+[!](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/c6482300-8.png)
 
 *RCE through XML context file upload*
 
@@ -215,20 +215,20 @@ We can achieve XSS on a Jetty server with standard configuration by uploading no
 The results are in the table below.
 
 | Extension | Payload | Browser |  |
-| .htm | HTML | ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/8f48559e-icons8-chrome-24.png) ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/e8018665-icons8-firefox-24.png) |  |
-| .mathml | XML | ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/e8018665-icons8-firefox-24.png) |  |
-| .rdf | XML | ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/e8018665-icons8-firefox-24.png) |  |
-| .svgz | XML | ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/8f48559e-icons8-chrome-24.png) ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/e8018665-icons8-firefox-24.png) |  |
-| .xht | XML | ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/8f48559e-icons8-chrome-24.png) ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/e8018665-icons8-firefox-24.png) |  |
-| .xhtml | XML | ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/8f48559e-icons8-chrome-24.png) ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/e8018665-icons8-firefox-24.png) |  |
-| .xml | XML | ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/8f48559e-icons8-chrome-24.png) ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/e8018665-icons8-firefox-24.png) |  |
-| .xsd | XML | ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/8f48559e-icons8-chrome-24.png) ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/e8018665-icons8-firefox-24.png) |  |
-| .xsl | XML | ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/8f48559e-icons8-chrome-24.png) ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/e8018665-icons8-firefox-24.png) |  |
-| .[randomSymbols] | HTML | ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/8f48559e-icons8-chrome-24.png) ![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/e8018665-icons8-firefox-24.png) |  |
+| .htm | HTML | ! ! |  |
+| .mathml | XML | ! |  |
+| .rdf | XML | ! |  |
+| .svgz | XML | ! ! |  |
+| .xht | XML | ! ! |  |
+| .xhtml | XML | ! ! |  |
+| .xml | XML | ! ! |  |
+| .xsd | XML | ! ! |  |
+| .xsl | XML | ! ! |  |
+| .[randomSymbols] | HTML | ! ! |  |
 
 If a file extension is not in this [list](https://github.com/eclipse/jetty.project/blob/jetty-10.0.x/jetty-http/src/main/resources/org/eclipse/jetty/http/mime.properties), the Jetty server will respond without the Content-type header, and the browser will try to define the content MIME type by itself, which will lead to XSS. The `<script>alert('PTSWARM')</script>` payload can be used for exploitation.
 
-[![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/664af141-9.png)](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/664af141-9.png)
+[!](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/664af141-9.png)
 
 *An XSS attack using files with different extension*
 
@@ -253,7 +253,7 @@ location / {
 
 If this rule is configured only on the proxy, we can send an HTTP request to /adminURL;random/ and obtain access to the protected resource on the server.
 
-[![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/39f8e51f-10.png)](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/39f8e51f-10.png)
+[!](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/39f8e51f-10.png)
 
 *Bypassing the rule with the “;” character*
 
@@ -282,7 +282,7 @@ The application receives the `filename `parameter from a user request, opens a f
 
 In this case, we can take advantage of the way the `request.getParameter()` method processes parameters. The `getParameter()` function works differently on different servers. When `getParameter()` is called in an application on Jetty, it will look for values both in the GET and POST parameters. If we send a POST request with `Content-Type: multipart/form-data`, Jetty will use a separate parser to process the request. If the POST parameters include the _сharset_ field, the multipart parser will process all the parameters using the specified encoding. This allows us to disguise our payload using character encoding that renders forbidden symbols in ways that are unrecognizable to the WAF. It is very unlikely that a WAF will parse the values of all the parameters in different encodings, so we have a good chance of bypassing it in this way.
 
-[![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/947dd8e5-11.png)](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/947dd8e5-11.png)
+[!](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/947dd8e5-11.png)
 
 *Using the ibm037 charset to encode a parameter value*
 
@@ -294,13 +294,13 @@ There are two more interesting things regarding request parsing in Jetty server.
 
 1. While parsing the boundary in a multipart request, the parser stops when it reaches `;` in the boundary string. As a result, everything that follows `;` will be ignored.
 
-[![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/ec1dff1a-12.png)](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/ec1dff1a-12.png)
+[!](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/ec1dff1a-12.png)
 
 *Boundary parsing by Jetty server*
 
 2. Backslashes are stripped when extracting parameter names from multipart requests, i.e. \[any_symbol] is transformed into [any_symbol]. This may help attackers to bypass a WAF, for example in an XSS attack.
 
-[![](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/88ca811f-13.png)](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/88ca811f-13.png)
+[!](https://swarm.ptsecurity.com/wp-content/uploads/2022/09/88ca811f-13.png)
 
 *Jetty server ignores “\” character in the parameter name when parsing the multipart request*
 

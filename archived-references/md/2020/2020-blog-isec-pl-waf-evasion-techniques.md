@@ -80,7 +80,7 @@ As the application prints back the parameter with no additional characters encod
 
 But, obviously, the most common payload: `<script>alert(1)</script>` is blocked by WAF:
 
-![](https://blog.isec.pl/content/images/2020/12/waf_2020-12-02-11-37-12.png)
+!
 
 What should we do next?
 
@@ -160,7 +160,7 @@ Payload:
 
 and execute an XSS!
 
-![](https://blog.isec.pl/content/images/2020/12/waf_2020-12-02-14-11-19.png)
+!
 
 ## Reading the docs!
 
@@ -225,7 +225,7 @@ As we see, no matter how complicated the syntax on the right-hand side is, parse
 `http://waf.isec.pl/?param=%27xor%22aaa%22%20or%20%272%27=%272`
  Payload: ``‘xor”aaa” or ‘2’=’2``
 
-![](https://blog.isec.pl/content/images/2020/12/waf2020-12-02-15-35-58.png)
+!
 
 It turns out that we are able to trick the parser again.
  We checked the right-hand side, we did the same with the left one, and now it’s time to find out what’s going on in the middle of our payload :)
@@ -234,7 +234,7 @@ Since WAF detects any expression like `1=1` or `x()>y()`, let’s put ‘1’ th
  `http://waf.isec.pl/?param='or%201%20%23`
  Payload: ``‘or 1 #``
 
-![](https://blog.isec.pl/content/images/2020/12/waf_2020-12-03-12-48-28-1.png)
+!
 
 # Abuse HTTP for WAF evasion and profit
 
@@ -336,7 +336,7 @@ What’s the size of the payload here?
 
 WAF detects malicious payload and blocks the request.
 
-![](https://blog.isec.pl/content/images/2020/12/waf2020-12-03-14-16-51.png)
+!
 
 And now the invalid one (a string much longer than 0x2b):
 
@@ -356,7 +356,7 @@ param=123
 
 It turns out that WAF refused to process a malformed part of the request while **the server actually processed it**. And the SQL-Injection occurred:
 
-![](https://blog.isec.pl/content/images/2020/12/waf2020-12-03-14-17-10.png)
+!
 
 The malformed chunk was ignored by WAF. Even though it contains the straightforward `UNION SELECT` payload, it was not detected by WAF as it simply didn’t process (thus didn’t detect) a malformed part of HTTP request.
 
@@ -368,10 +368,8 @@ The article describes some different approaches to bypass Imperva WAF solution. 
 -  [Bypass](https://blog.isec.pl/tag/bypass/)
 -  [Vulnerability](https://blog.isec.pl/tag/vulnerability/)
 
- [
-
- ](https://blog.isec.pl/author/ph/)
+ 
 
 ####  [Paweł Hałdrzyński](https://blog.isec.pl/author/ph/)
 
--  [ ](https://twitter.com/@phaldrzynski)
+-  

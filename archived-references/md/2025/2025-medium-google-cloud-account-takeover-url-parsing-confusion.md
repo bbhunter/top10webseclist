@@ -71,37 +71,9 @@ Bug Bounty Writeup
 
 # Google Cloud Account Takeover via URL Parsing Confusion
 
-[
-
-![Mohamed Benchikh](https://miro.medium.com/v2/resize:fill:64:64/1*NypWWmjvr3Sihk0ehe3mBg.jpeg)
-
-](https://weirdmachine.medium.com/?source=post_page---byline--c5e47389b7c7---------------------------------------)
+[![Mohamed Benchikh](https://miro.medium.com/v2/resize:fill:64:64/1*NypWWmjvr3Sihk0ehe3mBg.jpeg)](https://weirdmachine.medium.com/?source=post_page---byline--c5e47389b7c7---------------------------------------)
 
 [Mohamed Benchikh](https://weirdmachine.medium.com/?source=post_page---byline--c5e47389b7c7---------------------------------------)
-
-9 min readApr 28, 2025
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fbugbountywriteup%2Fc5e47389b7c7&operation=register&redirect=https%3A%2F%2Finfosecwriteups.com%2Fgoogle-cloud-account-takeover-via-url-parsing-confusion-c5e47389b7c7&user=Mohamed+Benchikh&userId=1ece3e57b0e2&source=---header_actions--c5e47389b7c7---------------------clap_footer------------------)
-
---
-
-6
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2Fc5e47389b7c7&operation=register&redirect=https%3A%2F%2Finfosecwriteups.com%2Fgoogle-cloud-account-takeover-via-url-parsing-confusion-c5e47389b7c7&user=Mohamed+Benchikh&userId=1ece3e57b0e2&source=---header_actions--c5e47389b7c7---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fc5e47389b7c7&operation=register&redirect=https%3A%2F%2Finfosecwriteups.com%2Fgoogle-cloud-account-takeover-via-url-parsing-confusion-c5e47389b7c7&source=---header_actions--c5e47389b7c7---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3Dc5e47389b7c7&operation=register&redirect=https%3A%2F%2Finfosecwriteups.com%2Fgoogle-cloud-account-takeover-via-url-parsing-confusion-c5e47389b7c7&source=---header_actions--c5e47389b7c7---------------------post_audio_button------------------)
-
-Share
 
 ## **TL;DR**
 

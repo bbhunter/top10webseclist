@@ -68,8 +68,6 @@ Blog Logo
 
   read
 
- 
-
 This post details an example of chaining three relatively trivial vulnerabilities to achieve remote code execution on a Bug Bounty target. These vulnerabilities alone would have likely been of low severity, but when used together they were scored and rewarded together as a High Priority (P1) issue.
 
 This vulnerability was originally reported to `$provider` on the 24th of April, rewarded as a valid finding on the 27th of April, and patched by the 1st of May. Not only was the communication with both the Bugcrowd ASE and `$provider` fantastic, a patch was rolled out not long after initial triage and the vulnerability confirmed resolved.
@@ -216,5 +214,3 @@ Blog Logo
 ---
 
 Published 29 May 2017
-
-##### Supported by

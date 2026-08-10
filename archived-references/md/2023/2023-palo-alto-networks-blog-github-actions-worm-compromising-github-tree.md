@@ -316,5 +316,3 @@ The CI/CD attack surface has changed considerably in recent years, making it cha
 And if you’re now thinking about [Prisma Cloud](https://www.paloaltonetworks.com/prisma/cloud/ci-cd-security), take it for a free [30-day test drive](https://www.paloaltonetworks.com/prisma/request-a-prisma-cloud-trial) and discover the advantage.
 
 ---
-
-## Related Blogs

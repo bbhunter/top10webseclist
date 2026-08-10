@@ -83,7 +83,7 @@ While testing this around in the wild on websites like Coinbase and Yahoo, I fou
 
 To pull off the attack, the attacker will prepare a website that will open the attacker’s malicious OAuth authorization prompt URL in a new window when the target user holds Enter/Space keys or another gesture that causes affirmation (like a mouse click).
 
-![](https://lh7-us.googleusercontent.com/DCion4slGPTz97LVqDg_ulFp4hXCNlx1J6WtRlvKLkMieOpJfsA3Fq0xFQf11HHcKfZbhcnVY0f11nSo2RCnad72qIlsJPZnhFY5ZeaRTJcsteK2Ay7M0aliUL2EjDVQitlTh88oR6r5E-rIYdI-xs8)
+!
 
 The opened window preferably stays as a very small window in the corner of the screen or hidden using pop-under tricks so the victim doesn’t realize they have interacted with a different site. Here is an (ultra simplified) example:
 
@@ -122,15 +122,15 @@ Vector 2: The Sandwich Technique
 
 An attacker website creates a sandwich-like scenario by opening two windows in sequence. The attacker's website occupies the top window, while the target website, with sensitive fragment in URL, sits in the middle.
 
-![](https://lh7-us.googleusercontent.com/ix3EKSj6-eXz2MlU-V0w7RJp-rlSikp36XIkvipEehPAazkw-z5r488sNr6zmtE4vJMtQZYK_jecChZWHRm_2B2x1oH292Yp5WJhrURvPUh4KORsfVM_kXHbD2WXJZQ_DEB0N5QPjx6k43GxOg_D9fQ)
+!
 
 Below you will find the code to perform this attack
 1: index.html
 
-![](https://lh7-us.googleusercontent.com/KtuMsGaZdlZCLvoGaszd05f3vF3eOOenG8EE5VScrur9AwMGu9-6nyEp926OKLRVnWjub091jjRrOtM0xPcjF9a0Nf3FG0fQQf0fclRpdM8RHJ_WOw5m4UpqiYRHi7D5A8kZAMJVA9cbCKyZDnbwY1A)
+!
 
 2: click.html
-![](https://lh7-us.googleusercontent.com/Q2xPYflPu6iHEOcIOO1DsgNllL5Ig6ruSNuc5GfSe8U96ayr_iAlkgV1A8blgj5GeUgSdIezCTFjTU873KnhF_IfJqF_i9qUSdofdS30dsAc4r6dPgCO0pVB54RNxigI4tKLV9RnfjXznuCFkTGWvNk)
+!
 
 **Attack Improvement ideas for key press vector: **
 
@@ -146,7 +146,7 @@ Forced Caching: In instances where forced caching is possible across origins (or
 
 Safari Window Tricks: Browsers like Safari and Opera, when opened with a new window of 1x1 width and height, do not display the URL bar or title of a window. This can be paired with prompts like "Allow cookies"/"Allow Javascript" on the attacker's website to convince the victim that they haven't interacted with a different origin. In scenarios with slower prompts, this window may appear for less than 1 seconds, creating uncertainty of what might've happened, especially if the victim hasn't interacted with OAuth before.
 
-![](https://lh7-us.googleusercontent.com/H2YSie5TqS8kMKalzNQCXkQJYBvv-T20mwHpkZCI_rG90Y8wJcAdnDlS_N3xiKhm5EPqXg935ReO9Qli-vdEBtC5vzWjSD2DyYrfSqh13bOpoI3vXl3MJYYArVv34zZl31YwGPY6mdJiLWPJhpbaoYA)
+!
 
 Attack Limitations:
 

@@ -78,7 +78,7 @@ April 29, 2025 | by siunam
 - Not Importing Modules Dynamically??
 - Conclusion
 
-![](https://raw.githubusercontent.com/siunam321/CTF-Writeups/main/Research/python-dirty-arbitrary-file-write-to-rce-via-writing-shared-object-files-or-overwriting-bytecode-files/images/ogimage.png)
+!
 
 ## Overview
 
@@ -129,13 +129,13 @@ But how do the bytecode files being generated?
 
 When your Python code is importing a module **for [the first time](https://peps.python.org/pep-3147/#case-1-the-first-import)**, let's say `foo`, it'll look for file `foo.py`. If `foo.py` is found, it'll then try to look for the compiled bytecode file at `__pycache__/foo.<magic>.pyc`, where `<magic>` is the magic tag to differentiate the Python version it was compiled for. If the bytecode file is not found, Python will compile and write the bytecode file. Here's the [flow chart](https://peps.python.org/pep-3147/#flow-chart) for this explanation:
 
-![](https://raw.githubusercontent.com/siunam321/CTF-Writeups/main/Research/python-dirty-arbitrary-file-write-to-rce-via-writing-shared-object-files-or-overwriting-bytecode-files/images/Pasted%20image%2020250416005826.png)
+!
 
 Now, what if we **overwrite the compiled bytecode file**?
 
 But before that, we have to understand the structure of Python bytecode. More specifically, the **16 bytes header**. Based on [Python bytecode analysis (1)](https://nowave.it/python-bytecode-analysis-1.html) blog post from nowave, we can see that the bytecode header's structure is like this:
 
-![](https://raw.githubusercontent.com/siunam321/CTF-Writeups/main/Research/python-dirty-arbitrary-file-write-to-rce-via-writing-shared-object-files-or-overwriting-bytecode-files/images/Pasted%20image%2020250415210812.png)
+!
 
 - Bytes 0 to 3: **Magic number**. As I mentioned before, the magic number is to differentiate the Python version it was compiled for. Note that the previously mentioned magic **tag** is for the bytecode filename, the magic **number** is for the bytecode file's signature.
 - Bytes 4 to 7: Bit field. This field is usually useless, it should only contain 4 null bytes.
@@ -625,7 +625,7 @@ If we run the PoC script, we can see that the application did imported our `.so`
 
 ```
 
-![](https://raw.githubusercontent.com/siunam321/CTF-Writeups/main/Research/python-dirty-arbitrary-file-write-to-rce-via-writing-shared-object-files-or-overwriting-bytecode-files/images/Pasted%20image%2020250428164315.png)
+!
 
 ## Not Importing Modules Dynamically??
 
@@ -793,7 +793,7 @@ if __name__ == '__main__':
 
 ```
 
-![](https://raw.githubusercontent.com/siunam321/CTF-Writeups/main/Research/python-dirty-arbitrary-file-write-to-rce-via-writing-shared-object-files-or-overwriting-bytecode-files/images/Pasted%20image%2020250428173954.png)
+!
 
 Server:
 

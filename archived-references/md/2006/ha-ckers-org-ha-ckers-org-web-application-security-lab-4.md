@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 ha.ckers.org web application security lab - Archive » Google Hacks On Your Behalf
 
-[![](http://ha.ckers.org/images/whitehat_728x90_final2.gif)](http://www.whitehatsec.com/home/TradeUp/TradeUp.html) [![web application security lab](http://ha.ckers.org/images/84844372/rsnake/hackers.jpg)](http://ha.ckers.org/)
+[!](http://www.whitehatsec.com/home/TradeUp/TradeUp.html) [![web application security lab](http://ha.ckers.org/images/84844372/rsnake/hackers.jpg)](http://ha.ckers.org/)
 
 ## [Google Hacks On Your Behalf](http://ha.ckers.org/blog/20061123/google-hacks-on-your-behalf/)
 

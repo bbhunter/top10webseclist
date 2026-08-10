@@ -77,8 +77,8 @@ do not.
 **A store gap is not a needs-work row.** Those references ARE archived - their
 Markdown and PDF are published and readable - and only the evidence behind the
 files is gone. Listing them as unfetched work put 1,011 fully archived
-references on `needs-work.md` and buried the two that genuinely had no document.
-Keep the two reports apart: `needs-work.md` answers *could we not get the
+references on `document-gaps.md` and buried the two that genuinely had no document.
+Keep the two reports apart: `document-gaps.md` answers *could we not get the
 document*, `store-gaps.md` answers *can we still show what the document was made
 from*.
 
@@ -265,12 +265,12 @@ working any reference the ordinary HTTP route does not deliver cleanly:
 Two rules from that playbook bind every session that touches the archive, so
 they stay here:
 
-- **A faulty capture goes on `needs-work.md` the moment it is found.** Whenever
+- **A faulty capture goes on `document-gaps.md` the moment it is found.** Whenever
   a capture is discovered to be faulty - the manifest advertises a Markdown or
   PDF that is not in the tree, the file holds the wrong page (a parked or
   taken-over domain, a consent wall, a homepage or the site's chrome instead of
   the article), or the bytes behind a file are gone - record it before the
-  session ends so it is listed for recapture. `needs-work.md` is GENERATED
+  session ends so it is listed for recapture. `document-gaps.md` is GENERATED
   state: never edit it by hand, and never leave the finding as a session note
   or an app-side workaround. The record is the manifest: set the entry's
   `content_gap` to `faulty capture: <what is wrong>; <remedy> (reported
@@ -381,7 +381,7 @@ not fetched again.
 ```text
 archived-references/
   README.md            the index, grouped by year (the only discovery route)
-  needs-work.md        ONLY what could not be archived, with reasons and remedies
+  document-gaps.md        ONLY what could not be archived, with reasons and remedies
   store-gaps.md        archived references whose stored bytes went missing
   excluded.md          everything kept with NO document, and why
   manifest.json        the record of record
@@ -394,7 +394,7 @@ archived-references/
 ### Always rebuild the work queue after archiving
 
 **No archive run is finished until `index` has run after the final archive
-mutation.** `needs-work.md`, `README.md`, `excluded.md` and `store-gaps.md` are
+mutation.** `document-gaps.md`, `README.md`, `excluded.md` and `store-gaps.md` are
 generated views of the final manifest *and the active content store*. Running
 `index` without `WEBSEC_REFS_STORE` set reads the empty fallback cache and
 reports the whole archive as store gaps. An index made halfway
@@ -409,17 +409,17 @@ WEBSEC_REFS_STORE=<durable-store> python tools/references/refs.py index
 python tools/references/refs.py verify
 ```
 
-`needs-work.md` is the fetch queue and nothing else: a reference belongs there
+`document-gaps.md` is the fetch queue and nothing else: a reference belongs there
 only while the archive could not get its document - a failed acquisition, a stub
 or metadata-only capture, or a filed faulty capture. Anything with a good
 published document stays off it, whatever else is wrong with the record.
 
 Use `index --prune-files` when a recovery changed a slug, replaced a faulty
 capture, refiled a collection or otherwise left generated files that the final
-manifest no longer claims. Never edit `needs-work.md` by hand. If `verify` or a
+manifest no longer claims. Never edit `document-gaps.md` by hand. If `verify` or a
 final review discovers a fault and you correct `content_gap` or any other
 manifest field, the correction is another archive mutation: run `index` again
-so `needs-work.md` contains the actual remaining work before handing off.
+so `document-gaps.md` contains the actual remaining work before handing off.
 
 ## Translation is a stage of the pipeline, not an afterthought
 
@@ -532,7 +532,7 @@ python tools/references/refs.py verify
 git status --short
 ```
 The final `index` is mandatory even if one ran earlier in the session; it is
-what makes `needs-work.md` the handoff for the next archive run. `verify` must
+what makes `document-gaps.md` the handoff for the next archive run. `verify` must
 be clean. `git status` must show no *unexpected* change to a year
 list. A source-recovery task may deliberately add a verified paper, advisory or
 fix beside a video/PoC; review that hand edit separately and ensure the archive

@@ -73,37 +73,9 @@ Security
 
 # Attacks via a New OAuth flow, Authorization Code Injection, and Whether HttpOnly, PKCE, and BFF Can Help
 
-[
-
-![Andrey Kuznetsov](https://miro.medium.com/v2/resize:fill:64:64/1*LROVdflH8m5k19HWqJhXHA.png)
-
-](https://medium.com/@anador?source=post_page---byline--3db1624b4fa7---------------------------------------)
+[![Andrey Kuznetsov](https://miro.medium.com/v2/resize:fill:64:64/1*LROVdflH8m5k19HWqJhXHA.png)](https://medium.com/@anador?source=post_page---byline--3db1624b4fa7---------------------------------------)
 
 [Andrey Kuznetsov](https://medium.com/@anador?source=post_page---byline--3db1624b4fa7---------------------------------------)
-
-34 min readApr 10, 2025
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F3db1624b4fa7&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40anador%2Fattacks-via-a-new-oauth-flow-authorization-code-injection-and-whether-httponly-pkce-and-bff-3db1624b4fa7&user=Andrey+Kuznetsov&userId=31a73c164cd4&source=---header_actions--3db1624b4fa7---------------------clap_footer------------------)
-
---
-
-1
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F3db1624b4fa7&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40anador%2Fattacks-via-a-new-oauth-flow-authorization-code-injection-and-whether-httponly-pkce-and-bff-3db1624b4fa7&user=Andrey+Kuznetsov&userId=31a73c164cd4&source=---header_actions--3db1624b4fa7---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F3db1624b4fa7&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40anador%2Fattacks-via-a-new-oauth-flow-authorization-code-injection-and-whether-httponly-pkce-and-bff-3db1624b4fa7&source=---header_actions--3db1624b4fa7---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D3db1624b4fa7&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40anador%2Fattacks-via-a-new-oauth-flow-authorization-code-injection-and-whether-httponly-pkce-and-bff-3db1624b4fa7&source=---header_actions--3db1624b4fa7---------------------post_audio_button------------------)
-
-Share
 
 In this article, we’ll take a close look at an interesting attack vector targeting applications that use OAuth/OIDC. We’ll explore the required preconditions for this attack — and see that they might not be as unrealistic as they seem at first glance.
 

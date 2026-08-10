@@ -65,61 +65,33 @@ page going offline. To read the original, follow the link above.
 
 [![Patches in blue denim jeans](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt51cfa43c126c431d/6a75005453cbbc62a56894c9/patches-in-denim-nnattalli-shutterstock.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/application-security/ai-generated-patches-fail-half-time)
 
-[
-
-### AI-Generated Patches Fail Half the Time
-
-](https://www.darkreading.com/application-security/ai-generated-patches-fail-half-time)
+[### AI-Generated Patches Fail Half the Time](https://www.darkreading.com/application-security/ai-generated-patches-fail-half-time)
 
 Aug 7, 2026
 
 [![Suit and tie has a burned-out match instead of a head](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt9bd4cb621eab153c/6a6ce7295c6370055b106be4/burnout-Moor_Studio-_Getty-1445628897.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/cybersecurity-operations/fix-for-ciso-fatigue)
 
-[
-
-### Is There Really a Fix for CISO Fatigue?
-
-](https://www.darkreading.com/cybersecurity-operations/fix-for-ciso-fatigue)
+[### Is There Really a Fix for CISO Fatigue?](https://www.darkreading.com/cybersecurity-operations/fix-for-ciso-fatigue)
 
 Aug 3, 2026
 
 [![Two athletes compete during a USA Fencing event](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt66a2e6a794ec3f06/6a6b70a2c08842d09cba7462/USA_Fencing-Jumio_Bala_Kumar.png?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/identity-access-management-security/usa-fencing-hidden-identity-challenge-amateur-sports)
 
-[
-
-### USA Fencing Lunges Into the Hidden Identity Challenge in Amateur Sports
-
-](https://www.darkreading.com/identity-access-management-security/usa-fencing-hidden-identity-challenge-amateur-sports)
+[### USA Fencing Lunges Into the Hidden Identity Challenge in Amateur Sports](https://www.darkreading.com/identity-access-management-security/usa-fencing-hidden-identity-challenge-amateur-sports)
 
 Jul 31, 2026
 
 [![The ChatGPT, Claude, and Gemini AI apps in a row on an iPhone screen.](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd055540c06ee3acd/6a6ada64165f081ff8010b6c/claude1800_Kenneth_Cheung_GettyImages-2270277028.jpg?width=100&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/cybersecurity-operations/claude-mythos-hype-vs-reality)
 
-[
-
-### Claude Mythos — Hype vs. Reality: What Security Teams Need to Know
-
-](https://www.darkreading.com/cybersecurity-operations/claude-mythos-hype-vs-reality)
+[### Claude Mythos — Hype vs. Reality: What Security Teams Need to Know](https://www.darkreading.com/cybersecurity-operations/claude-mythos-hype-vs-reality)
 
 Jul 30, 2026
 
 [More CISO Articles](https://www.darkreading.com/keyword/ciso-corner)
 
-[
+[![The bars on a jail cell window, pried open](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt8e864537fec413db/6a74f1f43413ca898c4c0341/Jailbreak-tiero-Getty.jpg?width=1400&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/cyberattacks-data-breaches/meta-ai-escapes-lab-hacking-joyride)[Cyberattacks & Data Breaches](https://www.darkreading.com/cyberattacks-data-breaches)
 
-![The bars on a jail cell window, pried open](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt8e864537fec413db/6a74f1f43413ca898c4c0341/Jailbreak-tiero-Getty.jpg?width=1400&auto=webp&quality=80&disable=upscale)
-
-](https://www.darkreading.com/cyberattacks-data-breaches/meta-ai-escapes-lab-hacking-joyride)[Cyberattacks & Data Breaches](https://www.darkreading.com/cyberattacks-data-breaches)
-
-[
-
-## Déjà Vu? Meta's AI Escapes Testing Lab in Hacking Joyride
-
-](https://www.darkreading.com/cyberattacks-data-breaches/meta-ai-escapes-lab-hacking-joyride)[
-
-## Déjà Vu? Meta's AI Escapes Testing Lab in Hacking Joyride
-
-](https://www.darkreading.com/cyberattacks-data-breaches/meta-ai-escapes-lab-hacking-joyride)
+[## Déjà Vu? Meta's AI Escapes Testing Lab in Hacking Joyride](https://www.darkreading.com/cyberattacks-data-breaches/meta-ai-escapes-lab-hacking-joyride)[## Déjà Vu? Meta's AI Escapes Testing Lab in Hacking Joyride](https://www.darkreading.com/cyberattacks-data-breaches/meta-ai-escapes-lab-hacking-joyride)
 
 In the span of three weeks, OpenAI, Anthropic, and Meta have all disclosed AI agent sandbox escape events affecting real organizations.
 
@@ -161,11 +133,7 @@ The cybersecurity industry of 2006 barely resembled today's billion-dollar behem
 
 Latest News
 
-[
-
-![Patches in blue denim jeans](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt51cfa43c126c431d/6a75005453cbbc62a56894c9/patches-in-denim-nnattalli-shutterstock.jpg?width=300&auto=webp&quality=80&disable=upscale)
-
-](https://www.darkreading.com/application-security/ai-generated-patches-fail-half-time)
+[![Patches in blue denim jeans](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt51cfa43c126c431d/6a75005453cbbc62a56894c9/patches-in-denim-nnattalli-shutterstock.jpg?width=300&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/application-security/ai-generated-patches-fail-half-time)
 
 [Application Security](https://www.darkreading.com/application-security)
 
@@ -173,31 +141,19 @@ Latest News
 
 [AI-Generated Patches Fail Half the Time](https://www.darkreading.com/application-security/ai-generated-patches-fail-half-time)
 
-[](https://www.darkreading.com/author/robert-lemos)
-
 by[Robert Lemos ,](https://www.darkreading.com/author/robert-lemos)Contributing Writer
 
-[
-
-![Hands over a virtual keyboard with keys spelling "Cybercrime" lit up.](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt773d06d488d0bafb/67ae0378f9958cc7415de40e/Cybercrime_(1800)_wsf_AL_Alamy.jpg?width=300&auto=webp&quality=80&disable=upscale)
-
-](https://www.darkreading.com/cyberattacks-data-breaches/coordination-gap-attackers-outpacing-law-enforcement)
+[![Hands over a virtual keyboard with keys spelling "Cybercrime" lit up.](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt773d06d488d0bafb/67ae0378f9958cc7415de40e/Cybercrime_(1800)_wsf_AL_Alamy.jpg?width=300&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/cyberattacks-data-breaches/coordination-gap-attackers-outpacing-law-enforcement)
 
 [Cyberattacks & Data Breaches](https://www.darkreading.com/cyberattacks-data-breaches)
 
 [The Coordination Gap: How Attackers Are Outpacing Law Enforcement](https://www.darkreading.com/cyberattacks-data-breaches/coordination-gap-attackers-outpacing-law-enforcement)
 
 [The Coordination Gap: How Attackers Are Outpacing Law Enforcement](https://www.darkreading.com/cyberattacks-data-breaches/coordination-gap-attackers-outpacing-law-enforcement)
-
-[](https://www.darkreading.com/author/arielle-waldman)
 
 by[Arielle Waldman ,](https://www.darkreading.com/author/arielle-waldman)Features Writer
 
-[
-
-![The bars on a jail cell window, pried open](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt8e864537fec413db/6a74f1f43413ca898c4c0341/Jailbreak-tiero-Getty.jpg?width=300&auto=webp&quality=80&disable=upscale)
-
-](https://www.darkreading.com/cyberattacks-data-breaches/meta-ai-escapes-lab-hacking-joyride)
+[![The bars on a jail cell window, pried open](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt8e864537fec413db/6a74f1f43413ca898c4c0341/Jailbreak-tiero-Getty.jpg?width=300&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/cyberattacks-data-breaches/meta-ai-escapes-lab-hacking-joyride)
 
 [Cyberattacks & Data Breaches](https://www.darkreading.com/cyberattacks-data-breaches)
 
@@ -205,15 +161,9 @@ by[Arielle Waldman ,](https://www.darkreading.com/author/arielle-waldman)Feature
 
 [Déjà Vu? Meta's AI Escapes Testing Lab in Hacking Joyride](https://www.darkreading.com/cyberattacks-data-breaches/meta-ai-escapes-lab-hacking-joyride)
 
-[](https://www.darkreading.com/author/nate-nelson)
-
 by[Nate Nelson ,](https://www.darkreading.com/author/nate-nelson)Contributing Writer
 
-[
-
-![A sandbox filled with toys.](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltf9a01e6b265bc8c2/6a74e71b469e8f1b3353e662/sandbox-diczman-GettyImages-2237058218.jpg?width=300&auto=webp&quality=80&disable=upscale)
-
-](https://www.darkreading.com/cloud-security/researcher-claims-control-chatgpt-secure-sandbox)
+[![A sandbox filled with toys.](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltf9a01e6b265bc8c2/6a74e71b469e8f1b3353e662/sandbox-diczman-GettyImages-2237058218.jpg?width=300&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/cloud-security/researcher-claims-control-chatgpt-secure-sandbox)
 
 [Сloud Security](https://www.darkreading.com/cloud-security)
 
@@ -221,15 +171,9 @@ by[Nate Nelson ,](https://www.darkreading.com/author/nate-nelson)Contributing Wr
 
 [Researcher Claims Control of ChatGPT Secure Sandbox](https://www.darkreading.com/cloud-security/researcher-claims-control-chatgpt-secure-sandbox)
 
-[](https://www.darkreading.com/author/alexander-culafi)
-
 by[Alexander Culafi ,](https://www.darkreading.com/author/alexander-culafi)Senior News Writer
 
-[
-
-![An image of a globe with a keyboard mouse with the words "Online Fraud"](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt6d5bbb76a9a7ed2b/6a73baa39adea75f0c6c4181/fraud-RapidEye-Getty-155132055.jpg?width=300&auto=webp&quality=80&disable=upscale)
-
-](https://www.darkreading.com/threat-intelligence/ai-global-crime-syndicates-fraud-nirvana)
+[![An image of a globe with a keyboard mouse with the words "Online Fraud"](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt6d5bbb76a9a7ed2b/6a73baa39adea75f0c6c4181/fraud-RapidEye-Getty-155132055.jpg?width=300&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/threat-intelligence/ai-global-crime-syndicates-fraud-nirvana)
 
 [Threat Intelligence](https://www.darkreading.com/threat-intelligence)
 
@@ -237,15 +181,9 @@ by[Alexander Culafi ,](https://www.darkreading.com/author/alexander-culafi)Senio
 
 [AI Sends Global Crime Syndicates Into Fraud Nirvana](https://www.darkreading.com/threat-intelligence/ai-global-crime-syndicates-fraud-nirvana)
 
-[](https://www.darkreading.com/author/tara-seals)
-
 by[Tara Seals ,](https://www.darkreading.com/author/tara-seals)Managing Editor, News
 
-[
-
-![A close-up picture of hands on a laptop keyboard with an AI browser search overlay](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt63af621e575150fc/6a735a66494066273df9c027/aibrowsers-SaksitSangtong-Getty-2259378669.jpg?width=300&auto=webp&quality=80&disable=upscale)
-
-](https://www.darkreading.com/cyber-risk/ai-browsers-zero-click-agent-hijacking)
+[![A close-up picture of hands on a laptop keyboard with an AI browser search overlay](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt63af621e575150fc/6a735a66494066273df9c027/aibrowsers-SaksitSangtong-Getty-2259378669.jpg?width=300&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/cyber-risk/ai-browsers-zero-click-agent-hijacking)
 
 [Cyber Risk](https://www.darkreading.com/cyber-risk)
 
@@ -253,15 +191,9 @@ by[Tara Seals ,](https://www.darkreading.com/author/tara-seals)Managing Editor, 
 
 [AI Browsers Vulnerable to 'PleaseFix' Zero-Click Agent Hijacking](https://www.darkreading.com/cyber-risk/ai-browsers-zero-click-agent-hijacking)
 
-[](https://www.darkreading.com/author/jai-vijayan)
-
 by[Jai Vijayan ,](https://www.darkreading.com/author/jai-vijayan)Contributing Writer
 
-[
-
-![A robot using a magnifying glass to look at a URL, representing an AI agent scanning a webpage in an AI browser](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt7e0cf3695ec46a69/6a73b8d82ab3843852e5758c/robot_browsing-sorbetto-Getty-2150544898.jpg?width=300&auto=webp&quality=80&disable=upscale)
-
-](https://www.darkreading.com/application-security/no-perfect-fix-ai-browser-prompt-injection-flaws)
+[![A robot using a magnifying glass to look at a URL, representing an AI agent scanning a webpage in an AI browser](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt7e0cf3695ec46a69/6a73b8d82ab3843852e5758c/robot_browsing-sorbetto-Getty-2150544898.jpg?width=300&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/application-security/no-perfect-fix-ai-browser-prompt-injection-flaws)
 
 [Application Security](https://www.darkreading.com/application-security)
 
@@ -269,15 +201,9 @@ by[Jai Vijayan ,](https://www.darkreading.com/author/jai-vijayan)Contributing Wr
 
 [No Perfect Fix for AI Browser Prompt Injection Flaws](https://www.darkreading.com/application-security/no-perfect-fix-ai-browser-prompt-injection-flaws)
 
-[](https://www.darkreading.com/author/alexander-culafi)
-
 by[Alexander Culafi ,](https://www.darkreading.com/author/alexander-culafi)Senior News Writer
 
-[
-
-![Close up of a push "Send Message" button on a Web page.](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blteab809ef662786f0/6a72695ca3f8037e14ce6b0b/email1800_alubalish_GettyImages-184320446.jpg?width=300&auto=webp&quality=80&disable=upscale)
-
-](https://www.darkreading.com/cyberattacks-data-breaches/css-hidden-threat-lurking-inbox)
+[![Close up of a push "Send Message" button on a Web page.](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blteab809ef662786f0/6a72695ca3f8037e14ce6b0b/email1800_alubalish_GettyImages-184320446.jpg?width=300&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/cyberattacks-data-breaches/css-hidden-threat-lurking-inbox)
 
 [Cyberattacks & Data Breaches](https://www.darkreading.com/cyberattacks-data-breaches)
 
@@ -285,15 +211,9 @@ by[Alexander Culafi ,](https://www.darkreading.com/author/alexander-culafi)Senio
 
 [CSS: The Hidden Threat Lurking in Your Inbox](https://www.darkreading.com/cyberattacks-data-breaches/css-hidden-threat-lurking-inbox)
 
-[](https://www.darkreading.com/author/kristinabeek)
-
 by[Kristina Beek ,](https://www.darkreading.com/author/kristinabeek)Associate Editor
 
-[
-
-![A router](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt2fe24d92049f2e32/6a7377e7b9c69a38aff6fae8/Router-Yevhenii_Orlov-Getty.jpg?width=300&auto=webp&quality=80&disable=upscale)
-
-](https://www.darkreading.com/endpoint-security/15-tp-link-bugs-risks-zero-trust-provisioning)
+[![A router](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt2fe24d92049f2e32/6a7377e7b9c69a38aff6fae8/Router-Yevhenii_Orlov-Getty.jpg?width=300&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/endpoint-security/15-tp-link-bugs-risks-zero-trust-provisioning)
 
 [Endpoint Security](https://www.darkreading.com/endpoint-security)
 
@@ -301,15 +221,9 @@ by[Kristina Beek ,](https://www.darkreading.com/author/kristinabeek)Associate Ed
 
 [15 TP-Link Bugs Expose Risks in Zero-Trust Provisioning](https://www.darkreading.com/endpoint-security/15-tp-link-bugs-risks-zero-trust-provisioning)
 
-[](https://www.darkreading.com/author/nate-nelson)
-
 by[Nate Nelson ,](https://www.darkreading.com/author/nate-nelson)Contributing Writer
 
-[
-
-![Profiles of faces stacked in a collage facing a drawing of a profile of a face with a target in the center](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt9abdeefc15f542ea/6a7355e3a1a11b1319173fcc/AI_agent_concept_Brain_light_Alamy.png?width=300&auto=webp&quality=80&disable=upscale)
-
-](https://www.darkreading.com/vulnerabilities-threats/flaws-google-apk-python-agent-to-agent-attack)
+[![Profiles of faces stacked in a collage facing a drawing of a profile of a face with a target in the center](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt9abdeefc15f542ea/6a7355e3a1a11b1319173fcc/AI_agent_concept_Brain_light_Alamy.png?width=300&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/vulnerabilities-threats/flaws-google-apk-python-agent-to-agent-attack)
 
 [Vulnerabilities & Threats](https://www.darkreading.com/vulnerabilities-threats)
 
@@ -317,15 +231,11 @@ by[Nate Nelson ,](https://www.darkreading.com/author/nate-nelson)Contributing Wr
 
 [Flaws in Google APK for Python Unlock Agent-to-Agent Attack](https://www.darkreading.com/vulnerabilities-threats/flaws-google-apk-python-agent-to-agent-attack)
 
-[](https://www.darkreading.com/author/elizabeth-montalbano)
-
 by[Elizabeth Montalbano ,](https://www.darkreading.com/author/elizabeth-montalbano)Contributing Writer
 
 [More News](https://www.darkreading.com/latest-news)
 
 Latest Commentary
-
-[](https://www.darkreading.com/author/dirk-schrader)
 
 [Dirk Schrader](https://www.darkreading.com/author/dirk-schrader)
 
@@ -335,8 +245,6 @@ Resident CISO (EMEA) & VP of Security Research, Netwrix
 
 [Is There Really a Fix for CISO Fatigue?](https://www.darkreading.com/cybersecurity-operations/fix-for-ciso-fatigue)
 
-[](https://www.darkreading.com/author/rajeev-mohindra)
-
 [Rajeev Mohindra](https://www.darkreading.com/author/rajeev-mohindra)
 
 Independent Researcher
@@ -344,8 +252,6 @@ Independent Researcher
 [Cyber Risk](https://www.darkreading.com/cyber-risk)
 
 [The Morning After We Pull a Root of Trust, Nobody Owns It](https://www.darkreading.com/cyber-risk/morning-after-we-pull-root-of-trust-nobody-owns-it)
-
-[](https://www.darkreading.com/author/kelly-jackson-higgins)
 
 [Kelly Jackson Higgins](https://www.darkreading.com/author/kelly-jackson-higgins)
 
@@ -355,8 +261,6 @@ Editor-in-Chief
 
 [Cybersecurity, Then & Now: A Visual Look at 20 Years of Change](https://www.darkreading.com/cyber-risk/cybersecurity-then-now)
 
-[](https://www.darkreading.com/author/burak-oktenli)
-
 [Burak Oktenli](https://www.darkreading.com/author/burak-oktenli)
 
 Independent Security Researcher
@@ -365,15 +269,11 @@ Independent Security Researcher
 
 [Adversaries Don't Need a Zero-Day — They Read Your Rulebook](https://www.darkreading.com/threat-intelligence/adversaries-do-not-need-zero-day-they-read-your-rulebook)
 
-[](https://www.darkreading.com/author/olga-polishchuk)
-
 [Olga Polishchuk](https://www.darkreading.com/author/olga-polishchuk)
 
 [Cyber Risk](https://www.darkreading.com/cyber-risk)
 
 [Cybersecurity Keeps Events 'Uneventful'](https://www.darkreading.com/cyber-risk/cybersecurity-keeps-events-uneventful)
-
-[](https://www.darkreading.com/author/r-justin-martin)
 
 [R. Justin Martin](https://www.darkreading.com/author/r-justin-martin)
 
@@ -415,122 +315,46 @@ Breaking cybersecurity news, news analysis, commentary, and other content from a
 
 [Go to DR Global](https://www.darkreading.com/program/dr-global)
 
-[
-
-![Futuristic imagining of applications, images, against a robotic head.](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt2accddb923775c58/671132bb4affe7c99f505cd4/AI(1800)_Blackboard_Alamy.jpg?width=1400&auto=webp&quality=80&disable=upscale)
-
-](https://www.darkreading.com/cyber-risk/five-steps-to-take-control-of-your-hybrid-infrastructure)
+[![Futuristic imagining of applications, images, against a robotic head.](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt2accddb923775c58/671132bb4affe7c99f505cd4/AI(1800)_Blackboard_Alamy.jpg?width=1400&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/cyber-risk/five-steps-to-take-control-of-your-hybrid-infrastructure)
 
 [Five Steps to Take Control of Your Hybrid Infrastructure](https://www.darkreading.com/cyber-risk/five-steps-to-take-control-of-your-hybrid-infrastructure)[Five Steps to Take Control of Your Hybrid Infrastructure](https://www.darkreading.com/cyber-risk/five-steps-to-take-control-of-your-hybrid-infrastructure)
 
 by[Kyle Wickert](https://www.darkreading.com/author/kyle-wickert)
 
-[
-
-![Futuristic imagining of applications, images, against a robotic head.](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt2accddb923775c58/671132bb4affe7c99f505cd4/AI(1800)_Blackboard_Alamy.jpg?width=1400&auto=webp&quality=80&disable=upscale)
-
-](https://www.darkreading.com/cyber-risk/zero-trust-is-the-big-idea-2026-is-the-year-it-got-small-and-specific)
+[![Futuristic imagining of applications, images, against a robotic head.](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt2accddb923775c58/671132bb4affe7c99f505cd4/AI(1800)_Blackboard_Alamy.jpg?width=1400&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/cyber-risk/zero-trust-is-the-big-idea-2026-is-the-year-it-got-small-and-specific)
 
 [Zero Trust Is the Big Idea. 2026 Is the Year It Got Small and Specific.](https://www.darkreading.com/cyber-risk/zero-trust-is-the-big-idea-2026-is-the-year-it-got-small-and-specific)[Zero Trust Is the Big Idea. 2026 Is the Year It Got Small and Specific.](https://www.darkreading.com/cyber-risk/zero-trust-is-the-big-idea-2026-is-the-year-it-got-small-and-specific)
 
 by[Kyle Wickert](https://www.darkreading.com/author/kyle-wickert)
 
-[
-
-![PR Logo](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=1400&auto=webp&quality=80&disable=upscale)
-
-](https://www.darkreading.com/cybersecurity-operations/dark-reading-celebrates-20-years-as-a-leading-authority-on-cybersecurity-highlighting-the-people-events-ideas-and-technologies-shaping-the-modern-risk-landscape)[Cybersecurity Operations](https://www.darkreading.com/cybersecurity-operations)
+[![PR Logo](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=1400&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/cybersecurity-operations/dark-reading-celebrates-20-years-as-a-leading-authority-on-cybersecurity-highlighting-the-people-events-ideas-and-technologies-shaping-the-modern-risk-landscape)[Cybersecurity Operations](https://www.darkreading.com/cybersecurity-operations)
 
 [Dark Reading Celebrates 20 Years as a Leading Authority on Cybersecurity, Highlighting the People, Events, Ideas, and Technologies Shaping the Modern Risk Landscape](https://www.darkreading.com/cybersecurity-operations/dark-reading-celebrates-20-years-as-a-leading-authority-on-cybersecurity-highlighting-the-people-events-ideas-and-technologies-shaping-the-modern-risk-landscape)[Dark Reading Celebrates 20 Years as a Leading Authority on Cybersecurity, Highlighting the People, Events, Ideas, and Technologies Shaping the Modern Risk Landscape](https://www.darkreading.com/cybersecurity-operations/dark-reading-celebrates-20-years-as-a-leading-authority-on-cybersecurity-highlighting-the-people-events-ideas-and-technologies-shaping-the-modern-risk-landscape)
 
-[
-
-![PR Logo](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=1400&auto=webp&quality=80&disable=upscale)
-
-](https://www.darkreading.com/threat-intelligence/finra-launches-financial-intelligence-fusion-center)[Threat Intelligence](https://www.darkreading.com/threat-intelligence)
+[![PR Logo](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=1400&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/threat-intelligence/finra-launches-financial-intelligence-fusion-center)[Threat Intelligence](https://www.darkreading.com/threat-intelligence)
 
 [FINRA Launches Financial Intelligence Fusion Center to Combat Cybersecurity and Fraud Threats](https://www.darkreading.com/threat-intelligence/finra-launches-financial-intelligence-fusion-center)[FINRA Launches Financial Intelligence Fusion Center to Combat Cybersecurity and Fraud Threats](https://www.darkreading.com/threat-intelligence/finra-launches-financial-intelligence-fusion-center)
 
-- [
-
-The State of Cloud Security: The Latest Challenges
-
-](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_sysf19&ch=mod)
-- [
-
-How Organizations Are Managing Incident Response
-
-](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_forq296&ch=mod)
-- [
-
-How Enterprises Are Developing Secure Applications
-
-](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_defa10666&ch=mod)
-- [
-
-Inside RSAC 2026: security leaders reveal the risks redefining your defense strategy
-
-](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_darl22&ch=mod)
-- [
-
-Essential News & Insights from Black Hat USA 2025
-
-](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_darl25&ch=mod)
+- [The State of Cloud Security: The Latest Challenges](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_sysf19&ch=mod)
+- [How Organizations Are Managing Incident Response](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_forq296&ch=mod)
+- [How Enterprises Are Developing Secure Applications](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_defa10666&ch=mod)
+- [Inside RSAC 2026: security leaders reveal the risks redefining your defense strategy](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_darl22&ch=mod)
+- [Essential News & Insights from Black Hat USA 2025](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_darl25&ch=mod)
 
 [Access More Research](https://www.darkreading.com/resources?page=1&types=Report&types=Research+Report)
 
-- [
-
-Stopping AI Enabled Attackers at Machine Speed: A Buyer's Guide to Modern MDR
-
-](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_arcf48&ch=mod)
-- [
-
-The Arctic Wolf Essential Guide To The Agentic SOC
-
-](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_arcf52&ch=mod)
-- [
-
-AI & Cybersecurity Trends Report
-
-](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_arcf50&ch=mod)
-- [
-
-Securing AI at Scale: Operationalizing the AI Security Fabric with Snyk
-
-](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_snyk217&ch=mod)
-- [
-
-Agentic AI for cloud security: A checklist for increasing cloud security efficiency with AI
-
-](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_sysf20&ch=mod)
+- [Stopping AI Enabled Attackers at Machine Speed: A Buyer's Guide to Modern MDR](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_arcf48&ch=mod)
+- [The Arctic Wolf Essential Guide To The Agentic SOC](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_arcf52&ch=mod)
+- [AI & Cybersecurity Trends Report](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_arcf50&ch=mod)
+- [Securing AI at Scale: Operationalizing the AI Security Fabric with Snyk](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_snyk217&ch=mod)
+- [Agentic AI for cloud security: A checklist for increasing cloud security efficiency with AI](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_sysf20&ch=mod)
 
 [Explore More White Papers](https://www.darkreading.com/resources?types=Whitepaper)
 
-- [
-
-Building a Secure AI Strategy for the Enterprise
-
-](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_defa11472&ch=mod)
-- [
-
-Is your AppSec program Mythos Ready?
-
-](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_blag48&ch=mod)
-- [
-
-Experts Explain How to Develop a Framework for Cyber-Fraud Fusion
-
-](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_defa11407&ch=mod)
-- [
-
-Prevention at Machine Speed: Hunting Beyond Known Detections
-
-](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_elat56&ch=mod)
-- [
-
-0-Day to 10x Discovery: Security at the Speed of Mythos
-
-](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_harn10&ch=mod)
+- [Building a Secure AI Strategy for the Enterprise](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_defa11472&ch=mod)
+- [Is your AppSec program Mythos Ready?](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_blag48&ch=mod)
+- [Experts Explain How to Develop a Framework for Cyber-Fraud Fusion](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_defa11407&ch=mod)
+- [Prevention at Machine Speed: Hunting Beyond Known Detections](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_elat56&ch=mod)
+- [0-Day to 10x Discovery: Security at the Speed of Mythos](https://dr-resources.darkreading.com/c/pubRD.mpl?qf=w_harn10&ch=mod)
 
 [More Webinars](https://www.darkreading.com/resources?types=Webinar)

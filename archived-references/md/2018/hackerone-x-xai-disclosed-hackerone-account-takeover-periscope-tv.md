@@ -68,11 +68,7 @@ Report
 
 **Summary by ngalog**
 
-[
-
-![](https://profile-photos.hackerone-user-content.com/variants/000/074/607/68068f139c99d98e3e8baf0a51f219c29ade1769_original.png/b8e19a7691128fca51630d7f5b14644b91b3b45324f6fd488e36244d744fe35b)
-
-](https://hackerone.com/ngalog)
+[!](https://hackerone.com/ngalog)
 
 Another way to exploit host header poisoning
 
@@ -80,11 +76,7 @@ Another way to exploit host header poisoning
 
 Timeline
 
-[
-
-![ngalog](https://profile-photos.hackerone-user-content.com/variants/000/074/607/68068f139c99d98e3e8baf0a51f219c29ade1769_original.png/b8e19a7691128fca51630d7f5b14644b91b3b45324f6fd488e36244d744fe35b)
-
-](https://hackerone.com/ngalog)
+[![ngalog](https://profile-photos.hackerone-user-content.com/variants/000/074/607/68068f139c99d98e3e8baf0a51f219c29ade1769_original.png/b8e19a7691128fca51630d7f5b14644b91b3b45324f6fd488e36244d744fe35b)](https://hackerone.com/ngalog)
 
 [ngalog](https://hackerone.com/ngalog)
 
@@ -128,11 +120,7 @@ Vimeo: [https://vimeo.com/256356501](https://vimeo.com/256356501) password: █�
 
 Account Takeover for periscope.tv
 
-[
-
-![Michael Watts](https://hackerone.com/assets/avatars/default-14ffa99f59cd01423c64904352cc130ffcb6a802eadfd11777a54485749e60f2.png)
-
-](https://hackerone.com/bugtriage-michael)
+[![Michael Watts](https://hackerone.com/assets/avatars/default-14ffa99f59cd01423c64904352cc130ffcb6a802eadfd11777a54485749e60f2.png)](https://hackerone.com/bugtriage-michael)
 
 [bugtriage-michael](https://hackerone.com/bugtriage-michael)
 
@@ -158,11 +146,7 @@ However, at this point the attacker's Twitter account is not linked to a Perisco
 
 Thank you for thinking of Twitter security.
 
-[
-
-![Ron Chan](https://profile-photos.hackerone-user-content.com/variants/000/074/607/68068f139c99d98e3e8baf0a51f219c29ade1769_original.png/89f037b490baf3dcca1b84283f4c85141b64c213252a9c79b56c62bf903ab542)
-
-](https://hackerone.com/ngalog)
+[![Ron Chan](https://profile-photos.hackerone-user-content.com/variants/000/074/607/68068f139c99d98e3e8baf0a51f219c29ade1769_original.png/89f037b490baf3dcca1b84283f4c85141b64c213252a9c79b56c62bf903ab542)](https://hackerone.com/ngalog)
 
 [ngalog](https://hackerone.com/ngalog)
 
@@ -182,11 +166,7 @@ I made a video to show I confirmed takeover is possible.
 
 [https://vimeo.com/256700396](https://vimeo.com/256700396) password: `████████`
 
-[
-
-![Michael Watts](https://hackerone.com/assets/avatars/default-14ffa99f59cd01423c64904352cc130ffcb6a802eadfd11777a54485749e60f2.png)
-
-](https://hackerone.com/bugtriage-michael)
+[![Michael Watts](https://hackerone.com/assets/avatars/default-14ffa99f59cd01423c64904352cc130ffcb6a802eadfd11777a54485749e60f2.png)](https://hackerone.com/bugtriage-michael)
 
 [bugtriage-michael](https://hackerone.com/bugtriage-michael)
 
@@ -200,11 +180,7 @@ We have reproduced the behavior you describe. We're looking into this, and we'll
 
 Thank you for thinking of Twitter security.
 
-[
-
-![Ron Chan](https://profile-photos.hackerone-user-content.com/variants/000/074/607/68068f139c99d98e3e8baf0a51f219c29ade1769_original.png/89f037b490baf3dcca1b84283f4c85141b64c213252a9c79b56c62bf903ab542)
-
-](https://hackerone.com/ngalog)
+[![Ron Chan](https://profile-photos.hackerone-user-content.com/variants/000/074/607/68068f139c99d98e3e8baf0a51f219c29ade1769_original.png/89f037b490baf3dcca1b84283f4c85141b64c213252a9c79b56c62bf903ab542)](https://hackerone.com/ngalog)
 
 [ngalog](https://hackerone.com/ngalog)
 
@@ -214,11 +190,7 @@ February 21, 2018, 11:30pm UTC
 
 Thanks!
 
-[
-
-![aa](https://profile-photos.hackerone-user-content.com/variants/000/166/486/bcf774a6460ff9e33545235af9344be33732008d_original.png/89f037b490baf3dcca1b84283f4c85141b64c213252a9c79b56c62bf903ab542)
-
-](https://hackerone.com/aarun)
+[![aa](https://profile-photos.hackerone-user-content.com/variants/000/166/486/bcf774a6460ff9e33545235af9344be33732008d_original.png/89f037b490baf3dcca1b84283f4c85141b64c213252a9c79b56c62bf903ab542)](https://hackerone.com/aarun)
 
 [aarun](https://hackerone.com/aarun)
 
@@ -230,11 +202,7 @@ Thank you for your report. We believe it may be a valid security issue and will 
 
 Thank you for helping keep Twitter secure!
 
-[
-
-![Ron Chan](https://profile-photos.hackerone-user-content.com/variants/000/074/607/68068f139c99d98e3e8baf0a51f219c29ade1769_original.png/89f037b490baf3dcca1b84283f4c85141b64c213252a9c79b56c62bf903ab542)
-
-](https://hackerone.com/ngalog)
+[![Ron Chan](https://profile-photos.hackerone-user-content.com/variants/000/074/607/68068f139c99d98e3e8baf0a51f219c29ade1769_original.png/89f037b490baf3dcca1b84283f4c85141b64c213252a9c79b56c62bf903ab542)](https://hackerone.com/ngalog)
 
 [ngalog](https://hackerone.com/ngalog)
 
@@ -244,11 +212,7 @@ February 22, 2018, 12:25am UTC
 
 nice pro pic, you make me want to change mine lol
 
-[
-
-![aa](https://profile-photos.hackerone-user-content.com/variants/000/166/486/bcf774a6460ff9e33545235af9344be33732008d_original.png/89f037b490baf3dcca1b84283f4c85141b64c213252a9c79b56c62bf903ab542)
-
-](https://hackerone.com/aarun)
+[![aa](https://profile-photos.hackerone-user-content.com/variants/000/166/486/bcf774a6460ff9e33545235af9344be33732008d_original.png/89f037b490baf3dcca1b84283f4c85141b64c213252a9c79b56c62bf903ab542)](https://hackerone.com/aarun)
 
 [aarun](https://hackerone.com/aarun)
 
@@ -258,11 +222,7 @@ February 22, 2018, 12:39am UTC
 
 Thanks mate :-)
 
-[
-
-![](https://profile-photos.hackerone-user-content.com/variants/ikx4ept298unt534kpz4am2bd4zs/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/x)
+[!](https://hackerone.com/x)
 
 [X / xAI](https://hackerone.com/x)
 
@@ -272,11 +232,7 @@ February 23, 2018, 8:40pm UTC
 
 Thanks again. As mentioned we’ll keep you updated as we investigate further. As a reminder, please remember to keep the details of this report private until we have fully investigated and addressed the issue.
 
-[
-
-![Andrew Sorensen](https://hackerone.com/assets/avatars/default-14ffa99f59cd01423c64904352cc130ffcb6a802eadfd11777a54485749e60f2.png)
-
-](https://hackerone.com/andrewsorensen)
+[![Andrew Sorensen](https://hackerone.com/assets/avatars/default-14ffa99f59cd01423c64904352cc130ffcb6a802eadfd11777a54485749e60f2.png)](https://hackerone.com/andrewsorensen)
 
 [andrewsorensen](https://hackerone.com/andrewsorensen)
 
@@ -288,11 +244,7 @@ We've deployed a fix that should address the issue. Can you please confirm?
 
 Thanks for thinking of Twitter security!
 
-[
-
-![Ron Chan](https://profile-photos.hackerone-user-content.com/variants/000/074/607/68068f139c99d98e3e8baf0a51f219c29ade1769_original.png/89f037b490baf3dcca1b84283f4c85141b64c213252a9c79b56c62bf903ab542)
-
-](https://hackerone.com/ngalog)
+[![Ron Chan](https://profile-photos.hackerone-user-content.com/variants/000/074/607/68068f139c99d98e3e8baf0a51f219c29ade1769_original.png/89f037b490baf3dcca1b84283f4c85141b64c213252a9c79b56c62bf903ab542)](https://hackerone.com/ngalog)
 
 [ngalog](https://hackerone.com/ngalog)
 
@@ -302,11 +254,7 @@ February 27, 2018, 8:58am UTC
 
 Unless someone beat the regex, I think the fix is good
 
-[
-
-![Andrew Sorensen](https://hackerone.com/assets/avatars/default-14ffa99f59cd01423c64904352cc130ffcb6a802eadfd11777a54485749e60f2.png)
-
-](https://hackerone.com/andrewsorensen)
+[![Andrew Sorensen](https://hackerone.com/assets/avatars/default-14ffa99f59cd01423c64904352cc130ffcb6a802eadfd11777a54485749e60f2.png)](https://hackerone.com/andrewsorensen)
 
 [andrewsorensen](https://hackerone.com/andrewsorensen)
 

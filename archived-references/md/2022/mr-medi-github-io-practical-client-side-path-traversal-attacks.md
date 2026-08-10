@@ -300,21 +300,9 @@ This post is not intended to explain what CSS Injection stands for or how to use
 
 # See more from me:
 
- [
+ [## Contact me Reach out to me if you have any questions, ideas, or if you'd like to work together on a project.](https://mr-medi.github.io/about)
 
-## Contact me
-
-Reach out to me if you have any questions, ideas, or if you'd like to work together on a project.
-
- ](https://mr-medi.github.io/about)
-
- [
-
-## How Cross-Site Frame Counting Exposes Private Repositories on GitHub
-
-Unveiling the Hidden Risks: How Cross-Site Frame Counting Exposes Private Repositories on GitHub
-
- ](https://mr-medi.github.io/research/2023/07/31/exploring-cross-site-frame-counting-attacks.html)
+ [## How Cross-Site Frame Counting Exposes Private Repositories on GitHub Unveiling the Hidden Risks: How Cross-Site Frame Counting Exposes Private Repositories on GitHub](https://mr-medi.github.io/research/2023/07/31/exploring-cross-site-frame-counting-attacks.html)
 
  [
 

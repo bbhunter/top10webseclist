@@ -114,7 +114,7 @@ You can explore connection coalescing for yourself by using the Timing graph und
 
 `fetch('//sub1.hackxor.net/', {mode: 'no-cors', credentials: 'include'}).then(()=>{ fetch('//sub2.hackxor.net/', {mode: 'no-cors', credentials: 'include'}) })`
 
-![](https://portswigger.net/cms/images/d7/ca/b7cf-article-screenshot_2022-10-17_at_15.17.28.png)
+!
 
 I haven't invested the time required to explore this threat in depth or scan for it in the wild as I believe it's currently rare for two reasons. Firstly, first-request routing is relatively uncommon and HTTP/2's implementation complexity means there's only a small pool of unique HTTP/2 servers relative to HTTP/1.1. Secondly, connection coalescing means HTTP/2 servers performing first-request routing may intermittently break for genuine visitors, so the owners may end up fixing the vulnerability without attacker encouragement.
 
@@ -127,5 +127,3 @@ To avoid these risks before they become a reality, ensure your reverse proxies d
 These new threats continue the ongoing trend of web infrastructure descending into a heavily intertwined mess where a weakness in any individual site has numerous non-obvious knock-on effects on the security of the overall system. It'll be interesting to see how these risks play out in practice.
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

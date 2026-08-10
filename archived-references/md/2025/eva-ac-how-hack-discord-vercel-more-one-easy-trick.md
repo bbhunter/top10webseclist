@@ -126,7 +126,7 @@ try {
 
 and, after running it, this is what i got:
 
-![](https://eva.ac/files/img/posts/mintlify/next-env.png)
+!
 
 **shit. this is bad, we have full access.**
 
@@ -174,7 +174,7 @@ which, the svg on my repository having this content:
 
 and when i went to the url, i got this:
 
-![](https://eva.ac/files/img/posts/mintlify/discord-alert.png)
+!
 
 **well, fuck.**
 
@@ -190,7 +190,7 @@ some other companies that i could do full exploitation on are twitter, vercel an
 
 a few hours after i started looking into this, i got an unexpected, sort of out of nowhere message from a friend, [hackermon](https://gist.github.com/hackermondev/5e2cdc32849405fff6b46957747a2d28), who had found the targeted xss independently aswell
 
-![](https://eva.ac/files/img/posts/mintlify/hackermon-message.png)
+!
 
 we started looking into this together, alongside [mdl](https://heartbreak.ing/), who was also looking into it with hackermon
 
@@ -233,7 +233,7 @@ https://discord.com/_mintlify/static/discord/images/create-team-owned-app.png%2F
 
 and i was met with the beautiful alert page again
 
-![](https://eva.ac/files/img/posts/mintlify/discord-alert.png)
+!
 
 always remember to encode your paths properly!
 
@@ -277,6 +277,6 @@ the patches for the vulnerabilties were:
 
 make sure to check out [hackermon](https://gist.github.com/hackermondev/5e2cdc32849405fff6b46957747a2d28) and [mdl](https://heartbreak.ing/)'s reports for more details on other vulnerabilties, and the possible exploitation that couldve happened.
 
-![](https://eva.ac/files/img/posts/mintlify/cve-card.png)
+!
 
 *card by [marshift](https://marsh.zone)*

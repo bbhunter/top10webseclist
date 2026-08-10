@@ -66,7 +66,7 @@ pdf html com www http https blog article
 # their citations is the word `whitepaper` at the end of one file name. Treating
 # that word as noise merged five files from two different DEF CON 31 PDFs into
 # one group: the paper and the deck were joined into a single archive file and
-# the deck stayed on the needs-work list. These words decide, they never blur.
+# the deck stayed on the document-gaps list. These words decide, they never blur.
 KIND_WORDS = {"whitepaper": "paper", "wp": "paper", "paper": "paper",
               "slides": "slides", "slide": "slides", "deck": "slides"}
 

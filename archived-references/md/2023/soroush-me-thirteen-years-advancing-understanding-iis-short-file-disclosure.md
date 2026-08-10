@@ -212,13 +212,7 @@ This entry was posted in [Security Posts](https://soroush.me/blog/category/secur
 
 Creation date: July 31, 2023
 
-[
-
- Previous
-
-Anchor Tag XSS Exploitation in Firefox with Target=”_blank”
-
-](https://soroush.me/blog/anchor-tag-xss-exploitation-in-firefox-with-target-blank)[
+[Previous Anchor Tag XSS Exploitation in Firefox with Target=”_blank”](https://soroush.me/blog/anchor-tag-xss-exploitation-in-firefox-with-target-blank)[
 
 Next
 

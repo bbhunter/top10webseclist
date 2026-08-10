@@ -336,4 +336,4 @@ If you have any other useful tricks I forgot to list here please leave a comment
 
 Design a site like this with WordPress.com
 
-[Get started](https://wordpress.com/start/?ref=marketing_bar)[](https://wordpress.com/start/?ref=marketing_bar)
+[Get started](https://wordpress.com/start/?ref=marketing_bar)

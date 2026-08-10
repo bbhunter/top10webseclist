@@ -125,7 +125,7 @@ With this insecure configuration, we can exploit the SSRF vulnerability simply b
 
 In general, according to [RFC 6066](https://www.rfc-editor.org/rfc/rfc6066#page-6), IP addresses should *not* be used in SNI values, but in practice, we can still use them. What’s more, we can even send arbitrary symbols in this field, including null bytes, which can be useful for exploitation. As you can see below, the server name can be changed to an arbitrary string. Though for this specific Nginx configuration, unfortunately, I did not find a way to change the backend port:
 
-![](https://cdn.prod.website-files.com/68a4552adf4a460ade53ca38/694567a787440d32d42d0b04_68d681449566cc8675ba548d_image-23-1024x159.webp)
+!
 
 Another class of vulnerable configurations is similar to typical HTTP reverse proxy misconfigurations and involves mistakes in the regular expression (regex). In this example, traffic is forwarded to the backend if the name provided via SNI matches the regex:
 
@@ -164,5 +164,3 @@ Prove vulnerabilities, remediate faster with Invicti
 ## Experience the future of AppSec
 
 [
-
-Get a Demo

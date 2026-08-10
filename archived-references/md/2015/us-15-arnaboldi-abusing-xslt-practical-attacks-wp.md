@@ -62,16 +62,10 @@ page going offline. To read the original, follow the link above.
 
 WHITE PAPER
 
-
-
-
 Abusing XSLT for Practical Attacks
 White Paper
 Fernando Arnaboldi
 IOActive Senior Security Consultant
-
-
-
 
 Abstract
      Over the years, XML has been a rich target for attackers due to flaws in its design as well as
@@ -88,39 +82,32 @@ Abstract
      This document includes proof-of-concept attacks demonstrating XSLT potential to affect
      production systems, along with recommendations for safe development.
 
-
-
-
                                                                    © 2015 IOActive, Inc. All Rights Reserved
 Contents
 
 Abstract ......................................................................................................................... 1	
-  
+
 Introduction ................................................................................................................... 3	
-  
+
   Processors ............................................................................................................................. 3	
-  
+
   Gathering information about your target ................................................................................. 4	
-  
+
   Obtaining the current path ...................................................................................................... 6	
-  
+
 Loss of Precision with Large Integers ........................................................................... 8	
-  
+
 Loss of Precision with Real Numbers ......................................................................... 12	
-  
+
 Insecure Random Numbers ........................................................................................ 15	
-  
+
      Pseudorandom values are not secure .............................................................................. 15	
-  
+
      No initialization vector (IV) ................................................................................................ 16	
-  
+
 Same-Origin Policy Bypass......................................................................................... 18	
-  
+
 Information Disclosure (and File Reading) through Errors .......................................... 21	
-  
-
-
-
 
                                                                         © 2015 IOActive, Inc. All Rights Reserved. [2]
 Introduction
@@ -134,8 +121,6 @@ is the most widely deployed version being used.
 There is a certain set of flaws that can put in risk the integrity and confidentiality of user information.
 Some of these flaws are analyzed on this paper along with recommendations to mitigate these
 problems.
-
-
 
 Processors
 The XSLT processors analyzed for this research are the following:
@@ -159,9 +144,6 @@ The XSLT processors analyzed for this research are the following:
                        • Firefox v38.0.5
                        • Internet Explorer
                        • Opera v30.0
-
-
-
 
                                                         © 2015 IOActive, Inc. All Rights Reserved. [3]
 Gathering information about your target
@@ -218,9 +200,6 @@ document.createTextNode(output); document.getElementById("output").appendChild(t
 
                           Figure 2: Stylesheet associated to get information
 
-
-
-
                                                     © 2015 IOActive, Inc. All Rights Reserved. [4]
 By using the previous XML and XSLT it is possible to obtain the XSLT and JavaScript properties (in
 case it is supported). The following table shows the two most significant values of the software tested:
@@ -230,97 +209,85 @@ who the vendor is and if it supports JavaScript
                 xsl:version	
      xsl:vendor	
                            JavaScript	
-  
+
                          xalan-­‐c	
                      1	
           Apache	
   Software	
   Foundation	
          no	
-  
+
                          xalan-­‐j	
                      1	
           Apache	
   Software	
   Foundation	
          no	
-  
+
                          saxon	
                          2	
           Saxonica	
                                  no	
-  
+
             server	
-  
-
-
-
 
                          xsltproc	
                       1	
           libxslt	
                                   no	
-  
+
                          php	
                            1	
           libxslt	
                                   no	
-  
+
                          python	
                         1	
           libxslt	
                                   no	
-  
+
                          perl	
                           1	
           libxslt	
                                   no	
-  
+
                          ruby	
                           1	
           libxslt	
                                   no	
-  
+
                          safari	
                         1	
           libxslt	
                                  yes	
-  
+
                          opera	
                          1	
           libxslt	
                                  yes	
-  
+
             client	
-  
-
-
-
 
                          chrome	
                         1	
           libxslt	
                                  yes	
-  
+
                          firefox	
                        1	
           Transformiix	
                             yes	
-  
+
                          internet	
   explorer	
           1	
           Microsoft	
                                yes	
-  
-                                       Table 1: summarize table of information disclosure
 
+                                       Table 1: summarize table of information disclosure
 
 All processors tested exposed some internal information: either the XSLT properties or the XSLT
 properties plus the JavaScript properties.
-
-
-
 
                                                                            © 2015 IOActive, Inc. All Rights Reserved. [5]
 Obtaining the current path
@@ -361,63 +328,55 @@ document:
 
          Figure 4: XSLT using unparsed-entity-uri() to disclose the path of path-disclosure.xsl
 
-
-
-
                                                      © 2015 IOActive, Inc. All Rights Reserved. [6]
                                              processor	
                 path	
   disclosure	
-  
+
                                              xalan-­‐c	
                          no	
-  
+
                                              xalan-­‐j	
                          yes	
-  
+
                                              saxon	
                              yes	
-  
-
-
-
 
                                 server	
-  
+
                                              xsltproc	
                           no	
-  
+
                                              php	
                                yes	
-  
+
                                              python	
                             no	
-  
+
                                              perl	
                               no	
-  
+
                                              ruby	
                               no	
-  
+
                                              safari	
                             yes	
-  
+
                                 client	
-  
+
                                              opera	
                              yes	
-  
+
                                              chrome	
                             yes	
-  
+
                                              firefox	
                            no	
-  
-                                	
+
            internet	
   explorer	
               yes	
-  
+
                    Table 2: path disclosure on processors using unparsed-entity-uri()
 
 All the web browsers except Firefox will expose the path of their files. When it comes to server side
@@ -426,9 +385,6 @@ may use the same library, they do not necessarily share the same type of behavio
 
 Once that some initial information has been gathered about our targets, we can jump to the different
 techniques used to exploit their flaws.
-
-
-
 
                                                                    © 2015 IOActive, Inc. All Rights Reserved. [7]
 Loss of Precision with Large Integers
@@ -481,19 +437,12 @@ and its representation formatted with commas separating the thousands.
 
 This is the output when parsing the information using web browsers:
 
-
-
-
                                                        © 2015 IOActive, Inc. All Rights Reserved. [8]
                              Figure 7: web browser showing incorrect values
-
 
 Notice the error introduced by format-number() on libxslt browsers (Safari, Opera, and Chrome on
 the left). Errors will be different depending on whether or not scientific notation is used. There were no
 errors for Firefox and Internet Explorer (on the right)
-
-
-
 
                                                        © 2015 IOActive, Inc. All Rights Reserved. [9]
                        Figure 8: server side processors showing incorrect values
@@ -508,9 +457,6 @@ Saxon shows the correct output at the bottom right.
                                           saxon                ok
                                  server
 
-
-
-
                                           xsltproc             errors
                                           php                  errors
                                           python               errors
@@ -520,15 +466,9 @@ Saxon shows the correct output at the bottom right.
                                           opera                errors
                                  client
 
-
-
-
                                           chrome               errors
                                           firefox              ok
                                           internet explorer    ok
-
-
-
 
                                                       © 2015 IOActive, Inc. All Rights Reserved. [10]
                                     Table 3: loss of precision with large integers
@@ -537,13 +477,8 @@ Recom m endation
                                                                                                      1
 Use an XSLT processor capable of high-precision integer arithmetic to avoid incorrect calculations .
 
-
-
-
 1
     CWE-682: Incorrect Calculation (http://cwe.mitre.org/data/definitions/682.html)
-
-
 
                                                             © 2015 IOActive, Inc. All Rights Reserved. [11]
 Loss of Precision with Real Numbers
@@ -575,18 +510,11 @@ An XSLT v1.0 associated document will report the sum of the previous values:
 The result should be the expected value 2000.41. However, certain processors may not be able to
 calculate this correctly.
 
-
-
-
                                                   © 2015 IOActive, Inc. All Rights Reserved. [12]
 Libxslt based web browsers are able to calculate this. However, Firefox and Internet Explorer are not
 able to obtain the correct result. A similar situation happens with server side processors:
 
-
-
-
                             Figure 11: Output using server side processors
-
 
 Xalan-C, Xalan-J, Saxon are not able to perform this operation as expected. Libxslt got the calculation
 right.
@@ -597,9 +525,6 @@ right.
                                            saxon                errors
                                   server
 
-
-
-
                                            xsltproc             ok
                                            php                  ok
                                            python               ok
@@ -609,21 +534,12 @@ right.
                                            opera                ok
                                   client
 
-
-
-
                                            chrome               ok
                                            firefox              errors
                                            internet explorer    errors
 
-
-
-
                                                        © 2015 IOActive, Inc. All Rights Reserved. [13]
                                  Table 3: loss of precision with large integers
-
-
-
 
 Recom m endation
                                                                                      2
@@ -633,15 +549,10 @@ integers. Another possibility is to use an XSLT v2.0 processor with the function
                  3
 loss of precision .
 
-
-
-
 2
     CWE-682: Incorrect Calculation (http://cwe.mitre.org/data/definitions/682.html)
 3
     XML Schema Part 2: Datatypes Second Edition (http://www.w3.org/TR/xmlschema-2/#decimal)
-
-
 
                                                        © 2015 IOActive, Inc. All Rights Reserved. [14]
 Insecure Random Numbers
@@ -657,9 +568,6 @@ as the Math:random() function is not used for security-sensitive applications.
    1. Xalan-C uses srand() from C++. The man page for srand() defines the functions as a "bad
       random number generator". Here is the random function for Xalan-C:
 
-
-
-
  Figure 12: Xalan-C random function in xalan-c-1.11/c/src/xalanc/XalanEXSLT/XalanEXSLTMath.cpp
 
    2. Xalan-J and Saxon use java.lang.Math.random() from Java. The Java documentation
@@ -667,13 +575,7 @@ as the Math:random() function is not used for security-sensitive applications.
       generator for use by security-sensitive applications”. Following are the random() functions
       from Xalan-J and Saxon.
 
-
-
-
     Figure 13: Xalan-J random function in xalan-j_2_7_2/src/org/apache/xalan/lib/ExsltMath.java
-
-
-
 
                                                   © 2015 IOActive, Inc. All Rights Reserved. [15]
      Figure 14: Saxon random function in saxon9-6-0-6source/net/sf/saxon/option/exslt/Math.java
@@ -699,12 +601,7 @@ xmlns:math="http://exslt.org/math" extension-element-prefixes="math">
 
 This is an example set of two outputs using the latest version of xsltproc:
 
-
-
-
                              Figure 16: Random output using the same IV
-
-
 
                                                    © 2015 IOActive, Inc. All Rights Reserved. [16]
 Notice how the xsltproc output remains the same execution after execution. This is a result of the fact
@@ -723,16 +620,11 @@ are required every time the XSLT is being processed, remember to define a differ
                5
 using libxslt .
 
-
-
-
 4
   CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator
 (http://cwe.mitre.org/data/definitions/338.html)
 5
   CWE-329: Not Using a Random IV with CBC Mode (http://cwe.mitre.org/data/definitions/329.html)
-
-
 
                                                       © 2015 IOActive, Inc. All Rights Reserved. [17]
 Same- Origin Policy Bypass
@@ -784,14 +676,9 @@ xmlns="http://www.w3.org/1999/xhtml">
  24        <body>
  25          <h1>IOActive - XOSS (Cross Origin Site Scripting)</h1>
 
-
-
-
 6
   CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
 (http://cwe.mitre.org/data/definitions/79.html )
-
-
 
                                                         © 2015 IOActive, Inc. All Rights Reserved. [18]
 26         <br/>
@@ -857,8 +744,6 @@ xmlns="http://www.w3.org/1999/xhtml">
 86         </td>
 87        </tr>
 
-
-
                                                © 2015 IOActive, Inc. All Rights Reserved. [19]
  88     </xsl:if>
  89     <xsl:apply-templates/>
@@ -876,9 +761,6 @@ The following steps will read cross-origin information from www.bing.com:
    1)       Log in www.bing.com (if you already have a valid cookie, this step is not required)
    2)       Open cross-origin.xhtml
 
-
-
-
                                 Figure 18: Reading Information from Bing
 
 The previous code outputs three text areas:
@@ -888,12 +770,8 @@ The previous code outputs three text areas:
            http://www.bing.com/account/general when using the user's cookie
        • Accessing private information from: the name of the user logged in bing.com
 
-
 Recom m endation
 Do not allow violations to the same-origin policy.
-
-
-
 
                                                      © 2015 IOActive, Inc. All Rights Reserved. [20]
 Information Disclosure (and File Reading) through
@@ -931,16 +809,10 @@ to the document() function and it will attempt to output its content using the v
 </xsl:stylesheet>
                                Figure 20: Style Sheet using document()
 
-
-
-
                                                    © 2015 IOActive, Inc. All Rights Reserved. [21]
 The previous style sheet will try to access the file /etc/passwd using the document() function.
 Since this file is not an XML document, it should not be possible. But the good thing is that it will output
 an unexpected error message. This is the output produced by xsltproc:
-
-
-
 
                       Figure 21: Error Message Containing First Line of “etc/passwd”
 
@@ -951,9 +823,6 @@ when using import() or include().
 
 The following example, shows Ruby (using the Nokogiri library) exposing information when using
 import():
-
-
-
 
 If an attacker is only able to read one single line of a file, the following files may be interesting to read:
      • /etc/passwd: root linux password
@@ -972,9 +841,6 @@ are below the directory where the XSLT is.
                               saxon              no              no            no
                      server
 
-
-
-
                               xsltproc           yes             yes           yes
                               php                yes             yes           yes
                               python             no              no            no
@@ -983,12 +849,8 @@ are below the directory where the XSLT is.
                               safari             no              no            no
                      client
 
-
-
-
                               opera              no              no            no
                               chrome             no              no            no
-
 
                                                        © 2015 IOActive, Inc. All Rights Reserved. [22]
                          firefox              no              no          yes
@@ -999,14 +861,10 @@ Recom m endation
 
 Do not disclose information about files when presenting error messages, it is not required.
 
-
-
-
                                                      © 2015 IOActive, Inc. All Rights Reserved. [23]
 About Fernando Arnaboldi
 
 Fernando Arnaboldi is a senior security consultant at IOActive specialized in code reviews and penetration tests.
-
 
 About IOActive
 IOActive is a comprehensive, high-end information security services firm with a long and established pedigree in
@@ -1017,8 +875,3 @@ their most critical and sensitive security issues. Founded in 1998, IOActive is 
 global operations through the Americas, EMEA and Asia Pac regions. Visit www.ioactive.com for more information.
 Read the IOActive Labs Research Blog: http://blog.ioactive.com. Follow IOActive on Twitter:
 http://twitter.com/ioactive.
-
-
-
-
-                                                          © 2015 IOActive, Inc. All Rights Reserved. [24]

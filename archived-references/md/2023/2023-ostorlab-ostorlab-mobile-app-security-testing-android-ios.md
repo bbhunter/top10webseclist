@@ -63,11 +63,7 @@ page going offline. To read the original, follow the link above.
 
 Author
 
- [
-
-Mohamed Benchikh
-
- ](https://blog.ostorlab.co/author/mohamed-benchikh.html)
+ [Mohamed Benchikh](https://blog.ostorlab.co/author/mohamed-benchikh.html)
 
  `Tue 17 October 2023`
 

@@ -65,37 +65,9 @@ Security
 
 # Abusing autoresponders and email bounces
 
-[
-
-![Inti De Ceukelaire](https://miro.medium.com/v2/resize:fill:64:64/1*ovE2dAh28EY5f-50MVvV7A.jpeg)
-
-](https://medium.com/@intideceukelaire?source=post_page---byline--9b1995eb53c2---------------------------------------)
+[![Inti De Ceukelaire](https://miro.medium.com/v2/resize:fill:64:64/1*ovE2dAh28EY5f-50MVvV7A.jpeg)](https://medium.com/@intideceukelaire?source=post_page---byline--9b1995eb53c2---------------------------------------)
 
 [Inti De Ceukelaire](https://medium.com/@intideceukelaire?source=post_page---byline--9b1995eb53c2---------------------------------------)
-
-6 min readFeb 21, 2019
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fintigriti%2F9b1995eb53c2&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fintigriti%2Fabusing-autoresponders-and-email-bounces-9b1995eb53c2&user=Inti+De+Ceukelaire&userId=f9e27197ffb5&source=---header_actions--9b1995eb53c2---------------------clap_footer------------------)
-
---
-
-5
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F9b1995eb53c2&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fintigriti%2Fabusing-autoresponders-and-email-bounces-9b1995eb53c2&user=Inti+De+Ceukelaire&userId=f9e27197ffb5&source=---header_actions--9b1995eb53c2---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F9b1995eb53c2&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fintigriti%2Fabusing-autoresponders-and-email-bounces-9b1995eb53c2&source=---header_actions--9b1995eb53c2---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D9b1995eb53c2&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fintigriti%2Fabusing-autoresponders-and-email-bounces-9b1995eb53c2&source=---header_actions--9b1995eb53c2---------------------post_audio_button------------------)
-
-Share
 
 Being a bug bounty hunter, I face a lot of competition. Lots of companies are willing to issue rewards for vulnerabilities in their systems, but only if they haven’t been reported by someone else. If you want to beat the odds of finding duplicates, you better look for bugs in places others don’t.
 

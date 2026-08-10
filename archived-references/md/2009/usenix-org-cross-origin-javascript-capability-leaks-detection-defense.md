@@ -70,7 +70,7 @@ Adam Barth, Joel Weinberger, and Dawn Song,*University of California, Berkeley*
 
 USENIX is committed to Open Access to the research presented at our events. Papers and proceedings are freely available to everyone once the event begins. Any video, audio, and/or slides that are posted after the event are also free and open to everyone. [Support USENIX](https://www.usenix.org/annual-fund) and our commitment to Open Access.
 
-![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-locked.png)
+!
 
 BibTeX
 
@@ -87,8 +87,6 @@ BibTeX
 [Download](https://www.usenix.org/biblio/export/bibtex/182757)
 
 #### Presentation Video
-
-[](https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/sec09/barth.mp4)
 
 #### Presentation Audio
 

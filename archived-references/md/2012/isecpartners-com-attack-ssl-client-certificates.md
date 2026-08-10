@@ -65,8 +65,6 @@ An Attack on SSL Client Certificates | iSEC Partners
 
 The Wayback Machine - https://web.archive.org/web/20130921173625/https://isecpartners.com/blog/2012/december/an-attack-on-ssl-client-certificates.aspx
 
- Skip to content
-
 # An Attack on SSL Client Certificates
 
 Monday December 3, 2012

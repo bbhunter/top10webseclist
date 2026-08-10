@@ -81,7 +81,7 @@ Director of Research
 
 -
 
-![](https://portswigger.net/cms/images/0e/f6/e2dd-article-making_http_header_injection_blog-article_copy.jpg)
+!
 
 HTTP header injection is often under-estimated and misclassified as a moderate severity flaw equivalent to [XSS](https://portswigger.net/web-security/cross-site-scripting) or worse, Open Redirection. In this post, I'll share a simple technique I used to take a header injection vulnerability, make it critical, and earn a $12,500 bounty.
 
@@ -166,5 +166,3 @@ I hope these techniques are useful for you, we'd [love to hear](https://twitter.
  [ Request Smuggling ](https://portswigger.net/research/request-smuggling)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

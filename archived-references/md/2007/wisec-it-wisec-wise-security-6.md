@@ -64,7 +64,7 @@ Wisec - The WIse SECurity
 
 |
 
-![](http://www.wisec.it/images/logow.jpg)
+!
 
 The ***WI***se ***SEC***urity
 

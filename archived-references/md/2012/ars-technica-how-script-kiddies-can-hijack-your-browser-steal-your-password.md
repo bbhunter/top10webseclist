@@ -100,6 +100,6 @@ Given the frequency of posts purporting to contain passwords, credit card number
 
 "This is has been possible for quite some time," said Jeremiah Grossman, CTO of Web security firm WhiteHat Security. He went on to say it would be easy for even security-savvy people to fall for such a scheme. "I couldn't tell you with any certainty I haven't."
 
- [](https://web.archive.org/web/20161118020720/http://arstechnica.com/author/dan-goodin)
+ 
 
  [Dan Goodin](https://web.archive.org/web/20161118020720/http://arstechnica.com/author/dan-goodin) Dan is the Security Editor at Ars Technica, which he joined in 2012 after working for The Register, the Associated Press, Bloomberg News, and other publications.

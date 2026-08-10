@@ -69,7 +69,7 @@ ha.ckers.org web application security lab - Archive » Google Indexes XSS
 
 Today [Ghozt on the XSS forums](http://sla.ckers.org/forum/read.php?3,44,page=10) found a rather interesting link while searching google. He’s found proof that Google will in fact index XSS. The link that Ghozt found was actually not a working XSS exploit, but that’s irrelevant. In this case, if it had worked, Google would have indexed it and shown a working exploit. This is the first time I’ve seen 100% proof that Google will index cross site scripting attacks. Cool!
 
-[![](http://ha.ckers.org/images/googleXSSindexed.png)](http://ha.ckers.org/images/googleXSSindexed.png)
+[!](http://ha.ckers.org/images/googleXSSindexed.png)
 Click to enlarge
 
 We all thought it probably was true, but until now I hadn’t seen any verifiable proof of such. Sure enough this was indexed from a blog post by [Nitesh Dhanjani, here](http://dhanjani.com/archives/2005/11/) and [here](http://www.oreillynet.com/onlamp/blog/2005/11/digg_vulnerable_to_xss.html). So perhaps there is some ranking associated with the potential importance of such a link, and therefor Google will only index an XSS if it is coming from a trusted host (raising the importance of persistant XSS on trusted domains - like [.edu TLDs as Jamie was talking about](http://www.seoegghead.com/blog/seo/xss-html-injection-are-frighteningly-trivial-to-find-at-harvardedu-p116.html)). Either way, it’s pretty exciting to see a theory turn into proof.

@@ -82,7 +82,7 @@ You may have noticed that the `Connection` header itself is listed above as a de
 
 The following graphic shows how abusing hop-by-hop headers may create issues, if the backend is expecting `X-Important-Header` and incorporates its presence in a logical decision:
 
-[![](https://nathandavison.com/user/pages/01.blog/abusing-http-hop-by-hop-request-headers/hbh-theory-diagram.PNG)](https://nathandavison.com/user/pages/01.blog/abusing-http-hop-by-hop-request-headers/hbh-theory-diagram.PNG)
+[!](https://nathandavison.com/user/pages/01.blog/abusing-http-hop-by-hop-request-headers/hbh-theory-diagram.PNG)
 
 I will be covering some examples of abusing hop-by-hop headers causing affects in web applications that I have encountered below as well as some ideas on where impact could be found, but the potential outcomes are going to be very specific to the application and infrastructure being targeted, and the header(s) being targeted and what they mean to the backend.
 

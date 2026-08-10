@@ -115,15 +115,15 @@ If you want to test this at home, you can download the [302_server](https://www.
 
 ## Contacts
 
-![](https://www.gremwell.com/themes/gremwell/images/contact1.png)
+!
 
 +32 (0) 2 215 53 58
 
-![](https://www.gremwell.com/themes/gremwell/images/contact3.png)
+!
 
 [info@gremwell.com](mailto:info@gremwell.com)
 
-![](https://www.gremwell.com/themes/gremwell/images/contact2.png)
+!
 
 Gremwell BVBA
  Sint-Katherinastraat 24

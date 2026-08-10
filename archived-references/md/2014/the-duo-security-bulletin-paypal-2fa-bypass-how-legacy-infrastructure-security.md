@@ -70,7 +70,7 @@ The Wayback Machine - https://web.archive.org/web/20150110194832/https://www.duo
 
 # The PayPal 2FA Bypass: How Legacy Infrastructure Impacts Modern Security
 
--  [ ![](https://web.archive.org/web/20150110194832im_/https://www.duosecurity.com/static/images/team/jono_1.jpg) Jon Oberheide ](https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/author/jono)
+-  [ ! Jon Oberheide ](https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/author/jono)
 
 #### Jun 26, 2014
 
@@ -82,7 +82,7 @@ Dan is a tech-savvy guy (founder of [EverydayCarry.com](https://web.archive.org/
 
 Dan observed that after he logged in to his [2FA-protected](https://web.archive.org/web/20150110194832/https://www.paypal.com/securitykey) PayPal account using the iOS mobile app, he would be automatically logged out since the mobile app does not yet support 2FA login. However, Dan noticed that if he enabled his iPhone’s “Airplane mode” at the right moment, the app would fail to log him out and he would have normal, full access to his PayPal account without ever completing two-factor authentication.
 
-![](https://web.archive.org/web/20150110194832im_/https://www.duosecurity.com/static/images/blog/paypal2_image00.jpg)
+!
 
 If you’re a security d00d, that should pop red flags, ring alarm bells, and raise your mental [DHS hacker advisory level](https://web.archive.org/web/20150110194832/http://www.wired.com/images_blogs/threatlevel/2011/01/threat_colors_01.jpg) from ELEVATED to HIGH.
 
@@ -100,7 +100,7 @@ If you have enabled two-factor on your PayPal account, congratulations on naviga
 
 The bad news: you’ve unknowingly been living dangerously, since the weakness we identified in PayPal’s authentication process allows a complete bypass of the two-factor mechanism. In addition, many users of two-factor may feel more confident about their account security and thereby lower their guard when it comes to selecting or protecting their password, putting them at greater risk.
 
-![](https://web.archive.org/web/20150110194832im_/https://www.duosecurity.com/static/images/blog/paypal2_image02.jpg)
+!
 
 Does that mean you should avoid enabling two-factor across the web? No way! While implementation flaws may limit the efficacy in some specific cases like this one, properly implemented 2FA is one of the most effective technologies to secure your accounts, so [apply liberally](https://web.archive.org/web/20150110194832/http://twofactorauth.org/)!
 
@@ -110,7 +110,7 @@ When dissecting the PayPal vulnerability, it quickly becomes clear that the root
 
 This is particularly challenging for a company at the scale of PayPal that has an extensive ecosystem of merchant partners, payment APIs, and checkout SDKs to integrate into thousands of third-party applications and services. Making significant changes in authentication flow, the one security control that gates all vital access and privilege, is an enormously arduous and fragile task.
 
-![](https://web.archive.org/web/20150110194832im_/https://www.duosecurity.com/static/images/blog/paypal2_image01.jpg)
+!
 
 Unsurprisingly, this is not the first time we’ve observed legacy infrastructure have a major impact on the security of two-factor authentication. In fact, about a year ago, we published a similar break in Google’s two-factor authentication service, that resulted from a mechanism called “Application Specific Passwords” that was designed to maintain compatibility with legacy authentication interfaces: [Bypassing Google’s Two-Factor Authentication](https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/bypassing-googles-two-factor-authentication).
 
@@ -136,7 +136,7 @@ In other words, we have a lot more great research going on at [Duo Labs](https:/
 
  [** @jonoberheide](https://web.archive.org/web/20150110194832/http://twitter.com/jonoberheide)
 
-#### [ ![](https://web.archive.org/web/20150110194832im_/https://www.duosecurity.com/static/images/team/jono_1.jpg) Jon Oberheide](https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/author/jono)
+#### [ ! Jon Oberheide](https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/author/jono)
  Co-Founder and CTO
 
 Jon is the co-founder and CTO of Duo Security, responsible for leading product vision and the Duo Labs advanced research team. Before starting Duo, Jon was a self-loathing academic, completing his PhD at the University of Michigan in the realm of cloud security. In a prior life, Jon enjoyed offensive security research and generally hacking the planet. Jon was recently named to Forbes "30 under 30" list for his mobile security hijinks.

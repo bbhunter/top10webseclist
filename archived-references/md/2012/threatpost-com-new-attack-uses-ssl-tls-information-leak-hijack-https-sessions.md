@@ -72,8 +72,6 @@ September 5, 2012, 1:27PM
 
 -
 
-Share
-
 by [Dennis Fisher](http://threatpost.com/author/Dennis Fisher)
 
  [Follow @DennisF](https://twitter.com/DennisF)

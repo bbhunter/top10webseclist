@@ -74,11 +74,11 @@ page going offline. To read the original, follow the link above.
 
 On Delta, you can change the URL of your boarding pass and get someone else’s boarding pass.
 
-![](https://web.archive.org/web/20160404093923im_/https://cdn-images-1.medium.com/max/800/1*aVmS77bSAfoyVl-XmnJu3w.png)
+!
 
 Even if they’re on a different airline.
 
-![](https://web.archive.org/web/20160404093923im_/https://cdn-images-1.medium.com/max/800/1*CCRM6UuuEEqIg9u48QwxdQ.png)
+!
 
 You can check in as them and change their seat.
 

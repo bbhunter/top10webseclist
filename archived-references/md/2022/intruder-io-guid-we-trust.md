@@ -164,25 +164,9 @@ I haven't come across a scenario where this approach is required, but if you fin
 
 ## Other research articles
 
-[
+[![Shadow IT Isn’t Invisible - It’s Expanding Your Attack Surface. Here’s Proof](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/68a5f1dcbfefcd9580f0c30c_Shadow%20IT%20blog%20header.jpg) ### Shadow IT Isn’t Invisible - It’s Expanding Your Attack Surface. Here’s Proof Intruder’s security team used CT log queries to find millions of exposed hosts - then found a wide range of Shadow IT exposures attackers can exploit. See real-world Shadow IT risks and what they mean for your attack surface.](https://www.intruder.io/research/shadow-it-risks)
 
-![Shadow IT Isn’t Invisible - It’s Expanding Your Attack Surface. Here’s Proof](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/68a5f1dcbfefcd9580f0c30c_Shadow%20IT%20blog%20header.jpg)
-
-### Shadow IT Isn’t Invisible - It’s Expanding Your Attack Surface. Here’s Proof
-
-Intruder’s security team used CT log queries to find millions of exposed hosts - then found a wide range of Shadow IT exposures attackers can exploit. See real-world Shadow IT risks and what they mean for your attack surface.
-
-](https://www.intruder.io/research/shadow-it-risks)
-
-[
-
-![Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/61dd9339d05701c9830b35ef_smugglers.avif)
-
-### Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond
-
-Modern web applications typically rely on chains of multiple servers, which forward HTTP requests to one another. The attack surface created by this forwarding is increasingly receiving more attention, including the recent popularisation of cache poisoning...
-
-](https://www.intruder.io/research/practical-http-header-smuggling)
+[![Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/61dd9339d05701c9830b35ef_smugglers.avif) ### Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond Modern web applications typically rely on chains of multiple servers, which forward HTTP requests to one another. The attack surface created by this forwarding is increasingly receiving more attention, including the recent popularisation of cache poisoning...](https://www.intruder.io/research/practical-http-header-smuggling)
 
 [
 

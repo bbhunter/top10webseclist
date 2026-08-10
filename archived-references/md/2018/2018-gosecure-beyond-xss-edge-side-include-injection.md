@@ -82,7 +82,7 @@ One common use case for ESI is serving a largely static page with dynamic pieces
 
 The image below can be used to illustrate a typical use case of ESI, where a weather website would cache the content of a city’s weather page. Dynamic data would then be replaced by their respective ESI tags pointing to an API endpoint URL.
 
-[![](https://gosecure.net/wp-content/uploads/2018/03/website-esi-1.png)](https://gosecure.net/wp-content/uploads/2018/03/website-esi-1.png)
+[!](https://gosecure.net/wp-content/uploads/2018/03/website-esi-1.png)
 
 Demonstration of a web page constructed through ESI
 
@@ -154,7 +154,7 @@ For example, this payload could be used to perform an SSRF on the HTTP proxy:
 
 If you get an HTTP callback, then the surrogate server is vulnerable to ESI injections. As discussed below, ESI implementations differ. Some ESI-capable servers will not allow includes from hosts that are not whitelisted, meaning you could only perform SSRF towards one server. This is discussed in the section *Implementation Variations *below. Here is a diagram detailing how an attacker can leverage ESI to perform SSRF:
 
-[![](https://gosecure.net/wp-content/uploads/2018/03/Drawing1.png)](https://gosecure.net/wp-content/uploads/2018/03/Drawing1.png)
+[!](https://gosecure.net/wp-content/uploads/2018/03/Drawing1.png)
 
 Typical ESI injection leading to SSRF
 
@@ -178,7 +178,7 @@ The `<esi:assign>` operand stores an arbitrary value in a server-side ESI variab
 
 |  <s**cript**>alert(/Chrome%20XSS%20filter%20bypass/);</s**cript**> |   |
 
-[![](https://gosecure.net/wp-content/uploads/2018/03/2018-03-08-140706_1402x808_screenshot-1024x590.png)](https://gosecure.net/wp-content/uploads/2018/03/2018-03-08-140706_1402x808_screenshot.png)
+[!](https://gosecure.net/wp-content/uploads/2018/03/2018-03-08-140706_1402x808_screenshot.png)
 
 Some ESI implementations do not support ESI vars and would thus invalidate this technique. When includes are available, and it is possible to point them to an external domain, one could simply include an external page containing the XSS payload. The following example depicts a typical SSRF-to-XSS attack using ESI includes.
 
@@ -322,7 +322,7 @@ The Varnish implementation of ESI is quite solid in terms of security. The ESI i
 
 An interesting caveat when performing ESI through Varnish is that by default, the engine will only parse ESI if the first non-nil character of the HTTP response is *less-than* `<`. This check is to make sure that responses that do not contain XML-like content are not processed by the ESI engine. Without this mechanism, the engine would have to process every request to parse for ESI tags, even binary data such as images. This performance mechanism can be disabled to allow developers to use ESI includes in JSON or even CSS. Many guides online and forum posts will recommend disabling this feature in order to activate ESI in JSON blobs. When the `ESI_DISABLE_XML_CHECK` flag is specified, ESI tags are interpreted in any HTTP transaction served through the surrogate. This way, an attacker could add ESI tags to otherwise benign transactions, such as JSON API responses or images, and the surrogate will interpret the ESI tags in the binary data. Here is a proof of concept of an image with a ESI payload appended in the middle:
 
-[![](https://gosecure.net/wp-content/uploads/2018/03/2018-03-09-154521_1387x1217_screenshot-1024x830.png)](https://gosecure.net/wp-content/uploads/2018/03/2018-03-09-154521_1387x1217_screenshot.png)
+[!](https://gosecure.net/wp-content/uploads/2018/03/2018-03-09-154521_1387x1217_screenshot.png)
 
 ESI tags processed in binary data in Varnish Cache
 
@@ -511,7 +511,7 @@ We have not conducted tests on any other vendors than the aforementioned; this i
 
 ## How to Detect ESI
 
-[![](https://gosecure.net/wp-content/uploads/2018/03/2018-03-07-191257_473x588_scrot-241x300.png)](https://gosecure.net/wp-content/uploads/2018/03/2018-03-07-191257_473x588_scrot.png)Some surrogates will require ESI handling to be signaled in the *Surrogate-Control* HTTP header, allowing an easy detection. This header is used to indicate to upstream servers that [ESI tags could be present in the response](https://docs.oracle.com/cd/B14099_19/caching.1012/b14046/esi.htm#i642458), and they should be parsed as such. If you observe an HTTP header response like the following:`Surrogate-Control: content="ESI/1.0”`, you are probably dealing with an ESI-enabled infrastructure.
+[!](https://gosecure.net/wp-content/uploads/2018/03/2018-03-07-191257_473x588_scrot.png)Some surrogates will require ESI handling to be signaled in the *Surrogate-Control* HTTP header, allowing an easy detection. This header is used to indicate to upstream servers that [ESI tags could be present in the response](https://docs.oracle.com/cd/B14099_19/caching.1012/b14046/esi.htm#i642458), and they should be parsed as such. If you observe an HTTP header response like the following:`Surrogate-Control: content="ESI/1.0”`, you are probably dealing with an ESI-enabled infrastructure.
 
 However, most proxies and load balancers will remove this header from upstream before sending it down to the client. Some proxies also do not require any *Surrogate-Control* headers. Therefore, this is not a definitive way of identifying ESI use. Given the wide variety of feature selection in ESI implementations, no unique test can be performed to test for ESI injection. One would have to test various payloads and observe the side effects to properly identify ESI injectable endpoints. For example, ESI includes can be used to perform an SSRF to a server the attacker controls, but some implementations will require the host to be preemptively whitelisted.
 

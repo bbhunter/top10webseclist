@@ -198,7 +198,8 @@ As HTML-encoding comes in handy we may use extra behavior: some characters are a
 
 ```html
 <svg><animate xlink:href=#xss attributeName=href  values="
- javascript:alert(1)" /><a id=xss><text x=20 y=20>XSS</text></a>
+
+ javascript:alert(1)" /><a id=xss><text x=20 y=20>XSS</text></a>
 ```
 
 Even more quirky observation suggests that those values don’t need to be HTML-encoded at all (as payload contains non-printable characters, it was base64-encoded for better readability):
@@ -216,10 +217,8 @@ In this article, we discovered that SVG specification conceals a lots of potenti
 -  [WAF](https://blog.isec.pl/tag/waf/)
 -  [JavaScript](https://blog.isec.pl/tag/javascript/)
 
- [
-
- ](https://blog.isec.pl/author/ph/)
+ 
 
 ####  [Paweł Hałdrzyński](https://blog.isec.pl/author/ph/)
 
--  [ ](https://twitter.com/@phaldrzynski)
+-  

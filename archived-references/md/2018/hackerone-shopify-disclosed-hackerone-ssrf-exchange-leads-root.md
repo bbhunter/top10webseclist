@@ -68,11 +68,7 @@ Report
 
 **Summary by Shopify**
 
-[
-
-![](https://profile-photos.hackerone-user-content.com/variants/fjjiC5585s8WoDGHv2M5okbJ/72249f83db42955adfcb43c5cad84162ec49002aa21a79c3606f682c8e48f4e6)
-
-](https://hackerone.com/shopify)
+[!](https://hackerone.com/shopify)
 
 Shopify infrastructure is isolated into subsets of infrastructure. [@0xacb](https://hackerone.com/0xacb) reported it was possible to gain root access to any container in one particular subset by exploiting a server side request forgery bug in the screenshotting functionality of Shopify Exchange. Within an hour of receiving the report, we disabled the vulnerable service, began auditing applications in all subsets and remediating across all our infrastructure. The vulnerable subset did not include Shopify core.
 
@@ -80,11 +76,7 @@ After auditing all services, we fixed the bug by deploying a metadata concealmen
 
 Timeline
 
-[
-
-![0xacb](https://profile-photos.hackerone-user-content.com/variants/xp2q2maxwvxvnsi2kx9ag0egzuvc/72249f83db42955adfcb43c5cad84162ec49002aa21a79c3606f682c8e48f4e6)
-
-](https://hackerone.com/0xacb)
+[![0xacb](https://profile-photos.hackerone-user-content.com/variants/xp2q2maxwvxvnsi2kx9ag0egzuvc/72249f83db42955adfcb43c5cad84162ec49002aa21a79c3606f682c8e48f4e6)](https://hackerone.com/0xacb)
 
 [0xacb](https://hackerone.com/0xacb)
 
@@ -227,11 +219,7 @@ The hacker selected the **Server-Side Request Forgery (SSRF)** weakness. This vu
 
 **Security Impact** RCE
 
-[
-
-![Peter Yaworski](https://profile-photos.hackerone-user-content.com/variants/000/175/526/7ba4844078e290c91c4c46a345b4f9e7666f3ed4_original.jpg/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/shopify-peteryaworski)
+[![Peter Yaworski](https://profile-photos.hackerone-user-content.com/variants/000/175/526/7ba4844078e290c91c4c46a345b4f9e7666f3ed4_original.jpg/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/shopify-peteryaworski)
 
 [shopify-peteryaworski](https://hackerone.com/shopify-peteryaworski)
 
@@ -241,11 +229,7 @@ April 23, 2018, 12:21am UTC
 
 Thanks for your report [@0xacb](https://hackerone.com/0xacb), our engineering team is investigating and we will let you know when we have an update.
 
-[
-
-![](https://profile-photos.hackerone-user-content.com/variants/fjjiC5585s8WoDGHv2M5okbJ/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/shopify)
+[!](https://hackerone.com/shopify)
 
 [Shopify](https://hackerone.com/shopify)
 
@@ -255,11 +239,7 @@ April 23, 2018, 1:08pm UTC
 
 We've disabled the vulnerable service last night, thank you again for reporting this. As per our program rules, I'm paying this initial amount on triage, with the rest once the issue has been closed.
 
-[
-
-![André Baptista](https://profile-photos.hackerone-user-content.com/variants/xp2q2maxwvxvnsi2kx9ag0egzuvc/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/0xacb)
+[![André Baptista](https://profile-photos.hackerone-user-content.com/variants/xp2q2maxwvxvnsi2kx9ag0egzuvc/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/0xacb)
 
 [0xacb](https://hackerone.com/0xacb)
 
@@ -271,11 +251,7 @@ Thank you for the initial reward :)
 
 I forgot to mention, but I stopped exploring this when I achieved RCE. I'm not sure if I would be able to access other clusters on the project network (10.0.0.0)
 
-[
-
-![Peter Yaworski](https://profile-photos.hackerone-user-content.com/variants/000/175/526/7ba4844078e290c91c4c46a345b4f9e7666f3ed4_original.jpg/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/shopify-peteryaworski)
+[![Peter Yaworski](https://profile-photos.hackerone-user-content.com/variants/000/175/526/7ba4844078e290c91c4c46a345b4f9e7666f3ed4_original.jpg/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/shopify-peteryaworski)
 
 [shopify-peteryaworski](https://hackerone.com/shopify-peteryaworski)
 
@@ -285,11 +261,7 @@ April 27, 2018, 5:25pm UTC
 
 Hi [@0xacb](https://hackerone.com/0xacb), thanks again for this report and the level of detail you provided, it was extremely helpful. I just wanted to provide a quick update. As you know, we immediately patched on the weekend. We are continuing to implement network changes to prevent the behaviour again should another SSRF vulnerability be discovered in the future. Given the sensitivity around this, we're taking our time to ensure proper mitigations. We're hoping to be able to resolve it soon but will keep you up to date on the progress.
 
-[
-
-![André Baptista](https://profile-photos.hackerone-user-content.com/variants/xp2q2maxwvxvnsi2kx9ag0egzuvc/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/0xacb)
+[![André Baptista](https://profile-photos.hackerone-user-content.com/variants/xp2q2maxwvxvnsi2kx9ag0egzuvc/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/0xacb)
 
 [0xacb](https://hackerone.com/0xacb)
 
@@ -299,11 +271,7 @@ April 27, 2018, 7:56pm UTC
 
 Thanks for the update, Peter!
 
-[
-
-![André Baptista](https://profile-photos.hackerone-user-content.com/variants/xp2q2maxwvxvnsi2kx9ag0egzuvc/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/0xacb)
+[![André Baptista](https://profile-photos.hackerone-user-content.com/variants/xp2q2maxwvxvnsi2kx9ag0egzuvc/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/0xacb)
 
 [0xacb](https://hackerone.com/0xacb)
 
@@ -313,11 +281,7 @@ May 17, 2018, 3:02pm UTC
 
 Hello [@shopify-peteryaworski](https://hackerone.com/shopify-peteryaworski), Any updates on the progress? Thank you!
 
-[
-
-![Peter Yaworski](https://profile-photos.hackerone-user-content.com/variants/000/175/526/7ba4844078e290c91c4c46a345b4f9e7666f3ed4_original.jpg/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/shopify-peteryaworski)
+[![Peter Yaworski](https://profile-photos.hackerone-user-content.com/variants/000/175/526/7ba4844078e290c91c4c46a345b4f9e7666f3ed4_original.jpg/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/shopify-peteryaworski)
 
 [shopify-peteryaworski](https://hackerone.com/shopify-peteryaworski)
 
@@ -327,11 +291,7 @@ May 18, 2018, 12:35pm UTC
 
 Hi [@0xacb](https://hackerone.com/0xacb), sorry, we don't have an update. We will let you know when we do.
 
-[
-
-![Peter Yaworski](https://profile-photos.hackerone-user-content.com/variants/000/175/526/7ba4844078e290c91c4c46a345b4f9e7666f3ed4_original.jpg/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/shopify-peteryaworski)
+[![Peter Yaworski](https://profile-photos.hackerone-user-content.com/variants/000/175/526/7ba4844078e290c91c4c46a345b4f9e7666f3ed4_original.jpg/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/shopify-peteryaworski)
 
 [shopify-peteryaworski](https://hackerone.com/shopify-peteryaworski)
 
@@ -343,11 +303,7 @@ Thanks again for your report [@0xacb](https://hackerone.com/0xacb) and your pati
 
 On that note, this was a great find [@0xacb](https://hackerone.com/0xacb)! Thank you for taking the time to improve the security of Shopify. We greatly appreciate it. We hope to see more reports from you and for others to use this report as an great learning opportunity.
 
-[
-
-![André Baptista](https://profile-photos.hackerone-user-content.com/variants/xp2q2maxwvxvnsi2kx9ag0egzuvc/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/0xacb)
+[![André Baptista](https://profile-photos.hackerone-user-content.com/variants/xp2q2maxwvxvnsi2kx9ag0egzuvc/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/0xacb)
 
 [0xacb](https://hackerone.com/0xacb)
 
@@ -357,11 +313,7 @@ May 23, 2018, 8:28pm UTC
 
 Sounds great, [@shopify-peteryaworski](https://hackerone.com/shopify-peteryaworski)! It was really a pleasure to work with you :)
 
-[
-
-![](https://profile-photos.hackerone-user-content.com/variants/fjjiC5585s8WoDGHv2M5okbJ/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/shopify)
+[!](https://hackerone.com/shopify)
 
 [Shopify](https://hackerone.com/shopify)
 
@@ -377,11 +329,7 @@ requested to disclose this report.
 
 May 23, 2018, 8:59pm UTC
 
-[
-
-![André Baptista](https://profile-photos.hackerone-user-content.com/variants/xp2q2maxwvxvnsi2kx9ag0egzuvc/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/0xacb)
+[![André Baptista](https://profile-photos.hackerone-user-content.com/variants/xp2q2maxwvxvnsi2kx9ag0egzuvc/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/0xacb)
 
 [0xacb](https://hackerone.com/0xacb)
 
@@ -401,11 +349,7 @@ This report has been disclosed.
 
 May 23, 2018, 9:09pm UTC
 
-[
-
-![](https://profile-photos.hackerone-user-content.com/variants/fjjiC5585s8WoDGHv2M5okbJ/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/shopify)
+[!](https://hackerone.com/shopify)
 
 [Shopify](https://hackerone.com/shopify)
 
@@ -415,11 +359,7 @@ May 23, 2018, 9:35pm UTC
 
 We'd also like to award you with some hacker-exclusive Shopify swag
 
-[
-
-![André Baptista](https://profile-photos.hackerone-user-content.com/variants/xp2q2maxwvxvnsi2kx9ag0egzuvc/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)
-
-](https://hackerone.com/0xacb)
+[![André Baptista](https://profile-photos.hackerone-user-content.com/variants/xp2q2maxwvxvnsi2kx9ag0egzuvc/1d3351b56b27c9bb56ce22821a57514a7210186a77aefb760cd2113272723c1f)](https://hackerone.com/0xacb)
 
 [0xacb](https://hackerone.com/0xacb)
 

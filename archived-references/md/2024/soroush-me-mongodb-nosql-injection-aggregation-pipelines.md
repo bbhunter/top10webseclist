@@ -606,13 +606,7 @@ This entry was posted in [Normal Posts](https://soroush.me/blog/category/normalp
 
 Creation date: June 24, 2024
 
-[
-
- Previous
-
-Incorrect solution to disable script execution by .htaccess
-
-](https://soroush.me/blog/incorrect-solution-to-disable-script-execution-by-htaccess)[
+[Previous Incorrect solution to disable script execution by .htaccess](https://soroush.me/blog/incorrect-solution-to-disable-script-execution-by-htaccess)[
 
 Next
 

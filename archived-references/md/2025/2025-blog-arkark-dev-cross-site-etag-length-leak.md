@@ -67,7 +67,7 @@ I recently discovered a new client-side attack technique that leaks the **length
 - Author: [me](https://x.com/arkark_)
 - Source: [https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202512_SECCON_CTF_14_Quals/web/impossible-leak](https://github.com/arkark/my-ctf-challenges/tree/main/challenges/202512_SECCON_CTF_14_Quals/web/impossible-leak)
 
-![](https://blog.arkark.dev/assets/images/top-01-88ad38ec51170f9636f6b153c97459c8.png)
+!
 
 This technique is likely applicable beyond this specific challenge. We can use it as an unintended solution in other XS-Leak challenges. In fact, I first came up with it as an unintended approach during an earlier CTF and later refined it into a standalone technique.
 
@@ -204,9 +204,9 @@ Endpoints:
 
 - Vulnerable to CSRF.
 
-Notes page: ![](https://blog.arkark.dev/assets/images/overview-01-3398073ae67f5e4ff8bfe07e14c7b2b1.png)
+Notes page: !
 
-Search results for `SECCON{r`: ![](https://blog.arkark.dev/assets/images/overview-02-5357bf85641327839ce6d79a60061db4.png)
+Search results for `SECCON{r`: !
 
 The goal is to leak the bot's note (the flag):
 
@@ -425,7 +425,7 @@ Keep-Alive: timeout=5
 
 ```
 
-![](https://blog.arkark.dev/assets/images/etag-length-02-81a869a0ab3bda433fe0f5673a8a3ccd.png)
+!
 
 Miss (`?query=SECCON{x`):
 
@@ -451,7 +451,7 @@ Keep-Alive: timeout=5
 
 ```
 
-![](https://blog.arkark.dev/assets/images/etag-length-03-d9fab2704e1eb468f241f13722e91c18.png)
+!
 
 - Hit: `ETag: W/"1028-7DssyPmtuJFW+hsMczlljuIGJC8"`
 
@@ -495,7 +495,7 @@ uint64_t max_http_header_size = 16 * 1024;
 
 ```
 
-![](https://blog.arkark.dev/assets/images/431status-01-f8de8697d3994381f8f2cc693790c74d.png)
+!
 
 By padding the URL so that the total header size is right at the threshold, the extra 1 byte in `If-None-Match` can be the difference between:
 
@@ -507,14 +507,14 @@ If the URL is `"http://web:3000?query=SECCON{r&" + "X".repeat(15834)` (hit case)
 - 1st access: `200 OK`
 - 2nd access: `431 Request Header Fields Too Large`
 
-![](https://blog.arkark.dev/assets/images/431status-02-f8b4040246f6684df214af45722a3c00.png)
+!
 
 If the URL is `"http://web:3000?query=SECCON{x&" + "X".repeat(15834)` (miss case):
 
 - 1st access: `200 OK`
 - 2nd access: `200 OK`
 
-![](https://blog.arkark.dev/assets/images/431status-03-a4b9190992bdf2aa80eabcdc821f2fbd.png)
+!
 
 Now we need to detect whether or not a 431 error occurs on cross-site pages.
 
@@ -607,13 +607,13 @@ A minimal demo looks like this:
 
 ```
 
-![](https://blog.arkark.dev/assets/images/history-length-01-8c98492067a09fb6250d0a607266bb2f.png)
+!
 
 The following diagrams illustrate the concept.
 
-When searching for `SECCON{r` (flag note **hit**): ![](https://blog.arkark.dev/assets/images/history-length-02-2f013e8ec308a815cee729972add5a19.png)
+When searching for `SECCON{r` (flag note **hit**): !
 
-When searching for `SECCON{x` (flag note **miss**): ![](https://blog.arkark.dev/assets/images/history-length-03-5bc4899206c37d852f800e82258e05ce.png)
+When searching for `SECCON{x` (flag note **miss**): !
 
 The final exploit combines:
 

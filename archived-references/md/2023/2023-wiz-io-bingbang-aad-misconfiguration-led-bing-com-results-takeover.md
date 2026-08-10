@@ -281,19 +281,7 @@ Tags
 
 ## Continue reading
 
-[
-
-](https://www.wiz.io/blog/lessons-learned-when-building-security-operations-at-hyperspeed)
-
-[
-
-### Partnering and prioritization: Lessons learned when building security operations at hyperspeed
-
-](https://www.wiz.io/blog/lessons-learned-when-building-security-operations-at-hyperspeed)
-
-[
-
-](https://www.wiz.io/authors/wiz-team)
+[### Partnering and prioritization: Lessons learned when building security operations at hyperspeed](https://www.wiz.io/blog/lessons-learned-when-building-security-operations-at-hyperspeed)
 
 [Wiz Team](https://www.wiz.io/authors/wiz-team)
 
@@ -301,19 +289,7 @@ March 29, 2023
 
 CISOs share their experiences ensuring security in fast-growth environments.
 
-[
-
-](https://www.wiz.io/blog/everything-you-love-about-wiz-now-deployed-in-a-new-canadian-data-center)
-
-[
-
-### Everything you ❤ about Wiz, now deployed in a new Canadian data center
-
-](https://www.wiz.io/blog/everything-you-love-about-wiz-now-deployed-in-a-new-canadian-data-center)
-
-[
-
-](https://www.wiz.io/authors/raaz-herzberg)
+[### Everything you ❤ about Wiz, now deployed in a new Canadian data center](https://www.wiz.io/blog/everything-you-love-about-wiz-now-deployed-in-a-new-canadian-data-center)
 
 [Raaz Herzberg](https://www.wiz.io/authors/raaz-herzberg)
 
@@ -321,23 +297,7 @@ March 23, 2023
 
 Wiz launches a new Canadian data center and adds support for CSE Information Technology Security Guidance (ITSG) 33 framework helping organizations simplify cloud security and compliance.
 
-[
-
-](https://www.wiz.io/blog/detect-critical-application-misconfiguration-risks)
-
-[
-
-### Detect critical application misconfiguration risks
-
-](https://www.wiz.io/blog/detect-critical-application-misconfiguration-risks)
-
-[
-
-](https://www.wiz.io/authors/shaked-rotlevi)[
-
-](https://www.wiz.io/authors/daniel-klein)[
-
-](https://www.wiz.io/authors/amitaico)
+[### Detect critical application misconfiguration risks](https://www.wiz.io/blog/detect-critical-application-misconfiguration-risks)
 
 [Shaked Rotlevi](https://www.wiz.io/authors/shaked-rotlevi), [Daniel Klein](https://www.wiz.io/authors/daniel-klein), [Amitai Cohen](https://www.wiz.io/authors/amitaico)
 
@@ -360,5 +320,3 @@ Adam FletcherChief Security Officer
 > "We know that if Wiz identifies something as critical, it actually is."
 
 Greg PoniatowskiHead of Threat and Vulnerability Management
-
-[Get a demo ](https://www.wiz.io/demo)

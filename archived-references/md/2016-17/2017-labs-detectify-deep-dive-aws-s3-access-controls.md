@@ -68,7 +68,7 @@ page going offline. To read the original, follow the link above.
 
 # A deep dive into AWS S3 access controls – taking full control over your assets
 
-![](https://labs.detectify.com/_next/image/?url=https%3A%2F%2Flabsadmin.detectify.com%2Fapp%2Fuploads%2F2015%2F06%2FFrans_speaker_photo.png&w=128&q=75)
+!
 
 **Frans Rosén**Jul 13, 2017
 
@@ -117,7 +117,7 @@ Identifying a bucket depends on the setup and also how the bucket is being reach
 Some methods to identify S3-buckets are:
 
 - Look at the HTTP-response for a `Server`-header which says `AmazonS3`.
-- Look at a random URL that doesn’t exist and see if it gives you a S3-404, either with “Static Website enabled” or not, containing `Access Denied` or `NoSuchKey`:[![](https://labsadmin.detectify.com/app/uploads/2017/07/access123.png)](https://labsadmin.detectify.com/app/uploads/2017/07/access123.png)
+- Look at a random URL that doesn’t exist and see if it gives you a S3-404, either with “Static Website enabled” or not, containing `Access Denied` or `NoSuchKey`:[!](https://labsadmin.detectify.com/app/uploads/2017/07/access123.png)
 - The DNS-entry of the domain might reveal the bucket-name directly if the host points directly to S3.
 - Try accessing the root-URL. If index-listing is enabled (public READ on the Bucket ACL) you will be able to see the bucket-name defined in `<Name>`-element.
 
@@ -171,8 +171,8 @@ This gives the ability to read the content. If this ACP is set on a bucket, the 
 With the following ACL setup inside AWS S3:
 
 |  Bucket-ACL:
- [![](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing.png)](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing.png) |  Object-ACL:
- [![](https://labsadmin.detectify.com/app/uploads/2017/07/policy-read.png)](https://labsadmin.detectify.com/app/uploads/2017/07/policy-read.png) |   |
+ [!](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing.png) |  Object-ACL:
+ [!](https://labsadmin.detectify.com/app/uploads/2017/07/policy-read.png) |   |
 
 We can still read the specific object:
 
@@ -197,8 +197,8 @@ This permission gives the ability to read the access control list of the bucket 
 `READ_ACP` will still work on specific objects inside a bucket, even if Object Access `READ_ACP` is not set on the complete bucket.
 
 |  Bucket-ACL:
- [![](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing-6.png)](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing-6.png) |  Object-ACL:
- [![](https://labsadmin.detectify.com/app/uploads/2017/07/policy-read-acp.png)](https://labsadmin.detectify.com/app/uploads/2017/07/policy-read-acp.png) |   |
+ [!](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing-6.png) |  Object-ACL:
+ [!](https://labsadmin.detectify.com/app/uploads/2017/07/policy-read-acp.png) |   |
 
 ```
 $ aws s3api get-object-acl --bucket test-bucket --key read-acp.txt
@@ -217,8 +217,8 @@ This permission gives the ability to write content. If the bucket has this enabl
 `WRITE` will not work on specific objects inside a bucket, if Object Access `WRITE` is not set on the complete bucket:
 
 |  Bucket-ACL:
- [![](https://labsadmin.detectify.com/app/uploads/2017/07/policy-write-1.png)](https://labsadmin.detectify.com/app/uploads/2017/07/policy-write-1.png) |  Object-ACL:
- [![](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing-7.png)](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing-7.png) |   |
+ [!](https://labsadmin.detectify.com/app/uploads/2017/07/policy-write-1.png) |  Object-ACL:
+ [!](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing-7.png) |   |
 
 ```
 $ aws s3api put-object --bucket test-bucket --key write.txt --body write.txt
@@ -229,8 +229,8 @@ An error occurred (AccessDenied) when calling the PutObject operation: Access De
 However, if `WRITE` is set on the bucket, all objects will obey and will not be able to decide individually if they should be writable or not:
 
 |  Bucket-ACL:
- ![](https://detectify-labs.s3.amazonaws.com/s3-acl/policy-write.png) |  Object-ACL:
- ![](https://detectify-labs.s3.amazonaws.com/s3-acl/policy-nothing.png) |   |
+ ! |  Object-ACL:
+ ! |   |
 
 ```
 $ aws s3api put-object --bucket test-bucket --key write.txt --body write.txt
@@ -268,7 +268,7 @@ success
 
 The initial owner of the bucket will now see this:
 
-[![](https://labsadmin.detectify.com/app/uploads/2017/07/s3-no-access.png)](https://labsadmin.detectify.com/app/uploads/2017/07/s3-no-access.png)
+[!](https://labsadmin.detectify.com/app/uploads/2017/07/s3-no-access.png)
  (Being the owner, they will still be able to modify the policy of the bucket, but this is a weird case anyway.)
 
 We can now control everything:
@@ -295,8 +295,8 @@ $ aws s3api put-object --bucket test-bucket --key write-acp.txt --body write-acp
 A very interesting thing is that `WRITE_ACP` will actually still work on specific objects inside a bucket even if Object Access `WRITE_ACP` is not set on the complete bucket:
 
 |  Bucket-ACL:
- [![](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing-8.png)](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing-8.png) |  Object-ACL:
- [![](https://labsadmin.detectify.com/app/uploads/2017/07/policy-write-acp.png)](https://labsadmin.detectify.com/app/uploads/2017/07/policy-write-acp.png) |   |
+ [!](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing-8.png) |  Object-ACL:
+ [!](https://labsadmin.detectify.com/app/uploads/2017/07/policy-write-acp.png) |   |
 
 ```
 $ aws s3api put-object-acl --bucket test-bucket --key write-acp.txt --grant-write-acp uri=http://acs.amazonaws.com/groups/global/AuthenticatedUsers && echo "success"
@@ -306,8 +306,8 @@ success
 Also, the opposite of `WRITE` applies here, having `WRITE_ACP` on the bucket, doesn’t mean you directly have `WRITE_ACP` on an object:
 
 |  Bucket-ACL:
- [![](https://labsadmin.detectify.com/app/uploads/2017/07/policy-write-acp-1.png)](https://labsadmin.detectify.com/app/uploads/2017/07/policy-write-acp-1.png) |  Object-ACL:
- [![](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing-9.png)](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing-9.png) |   |
+ [!](https://labsadmin.detectify.com/app/uploads/2017/07/policy-write-acp-1.png) |  Object-ACL:
+ [!](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing-9.png) |   |
 
 ```
 $ aws s3api put-object-acl --bucket test-bucket --key write-acp.txt --grant-full-control emailaddress=frans@example.com
@@ -348,8 +348,8 @@ success
 ```
 
 |  Bucket-ACL:
- [![](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing-10.png)](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing-10.png) |  Object-ACL:
- [![](https://labsadmin.detectify.com/app/uploads/2017/07/policy-all-1.png)](https://labsadmin.detectify.com/app/uploads/2017/07/policy-all-1.png) |   |
+ [!](https://labsadmin.detectify.com/app/uploads/2017/07/policy-nothing-10.png) |  Object-ACL:
+ [!](https://labsadmin.detectify.com/app/uploads/2017/07/policy-all-1.png) |   |
 
 This will still give you:
 
@@ -519,7 +519,7 @@ log_requests(url);
 
 Which will give us all assets on the page which we then can use to figure out if they are served from S3 or not:
 
-[![](https://labsadmin.detectify.com/app/uploads/2017/07/log-requests.png)](https://labsadmin.detectify.com/app/uploads/2017/07/log-requests.png)
+[!](https://labsadmin.detectify.com/app/uploads/2017/07/log-requests.png)
 
 #### You should test for:
 
@@ -564,7 +564,7 @@ During this research we were able to confirm we could control assets on high pro
 - Audio and video streaming providers
 - Health tracking
 
-[![](https://labsadmin.detectify.com/app/uploads/2017/07/reports.png)](https://labsadmin.detectify.com/app/uploads/2017/07/reports.png)
+[!](https://labsadmin.detectify.com/app/uploads/2017/07/reports.png)
 
 We identified vulnerable assets placed on the login pages of some companies.
 
@@ -588,7 +588,7 @@ It’s clear after this research that this problem is widespread and hard to ide
 
 An interesting detail when manually uploading files to S3 using Cyberduck, changing the access control on a file looks like this:
 
-[![](https://labsadmin.detectify.com/app/uploads/2017/07/cyberduck.png)](https://labsadmin.detectify.com/app/uploads/2017/07/cyberduck.png)
+[!](https://labsadmin.detectify.com/app/uploads/2017/07/cyberduck.png)
 
 Pretty easy to accidentally pick the wrong one there.
 
@@ -607,7 +607,7 @@ Until next time.
 
 [Twitter ](https://twitter.com/intent/tweet?url=)[LinkedIn ](https://www.linkedin.com/sharing/share-offsite/?url=)
 
-![](https://labs.detectify.com/_next/image/?url=https%3A%2F%2Flabsadmin.detectify.com%2Fapp%2Fuploads%2F2015%2F06%2FFrans_speaker_photo.png&w=128&q=75)
+!
 
 **Frans Rosén**
 

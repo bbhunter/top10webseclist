@@ -69,9 +69,6 @@ UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF
                                                                                       yasonm[at]ph[dot]ibm[dot]com
                                                                                                        @MarkYason
 
-
-
-
 ABSTRACT
 EdgeHTML is the new rendering engine that will power the next generation web browser (codenamed Spartan) to
 be introduced in Windows 10. Because EdgeHTML will be widely deployed - from Windows 10 mobile devices to
@@ -83,15 +80,11 @@ forking process, and more importantly, identify new features and added internal 
 to its attack surface. Finally, I'll discuss the exploit mitigations in place, how they help against certain classes of
 vulnerabilities, and discuss known bypass techniques that are still applicable.
 
-
-
-
                                                                                              © 2015 IBM Corporation
 
 [v2]
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                                                                                             |2
 NEW EDGEHTML RENDERING ENGINE > CONTENTS
-
 
 CONTENTS
 Contents ........................................................................................................................................................................2
@@ -117,13 +110,9 @@ Contents .......................................................................
 5.     Conclusion ...........................................................................................................................................................23
 6.     Bibliography .........................................................................................................................................................24
 
-
-
-
                                                                                                                      IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                                      |3
 NEW EDGEHTML RENDERING ENGINE > INTRODUCTION
-
 
 1. INTRODUCTION
 EdgeHTML [1, 2] is the new rendering engine that will be introduced in Microsoft’s new Edge browser (previously
@@ -152,13 +141,9 @@ contributes to making the exploitation of EdgeHTML vulnerabilities difficult or 
 All information in this paper is based on Microsoft Edge running on 64-bit Windows 10 build 10240 (edgehtml.dll
 version 11.0.10240.16384).
 
-
-
-
                                                                                 IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                                  |4
 NEW EDGEHTML RENDERING ENGINE > OVERVIEW
-
 
 2. OVERVIEW
 Before diving deep into the details of EdgeHTML’s attack surface and applied exploit mitigations, this section will
@@ -193,15 +178,9 @@ mechanism. EdgeHTML and its dependencies are compiled with stack buffer security
 introduced Control Flow Guard (CFG). Finally, additional exploit mitigations such as Virtual Table Guard (VTGuard)
 and the new Memory GC (MemGC) are specifically applied to EdgeHTML.
 
-
-
-
                                                                              IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                            |5
 NEW EDGEHTML RENDERING ENGINE > OVERVIEW
-
-
-
 
                                                                             IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                            |6
@@ -214,9 +193,6 @@ correspond to a program feature, one method I tried was, using IDAPython, enumer
 and then extract the namespace part of the function/variable names. Duplicates are removed and the resulting
 namespace list is sorted. Then finally, the namespace list of MSHTML and EdgeHTML are diffed using the diff(1)
 utility:
-
-
-
 
 One example diff output which suggests a change in the support for WMF and EMF images (discussed in 3.3) are
 the following missing classes in EdgeHTML:
@@ -236,7 +212,6 @@ DOM object types that are exposed via the DOM API (discussed in 3.5):
 
 Finally, another interesting diff output suggests that some code had been ported from the Blink rendering engine
 [4, 5] (before most of the namespace were renamed from “WebCore” to “blink”):
-
 
                                                                             IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                                     |7
@@ -260,13 +235,9 @@ deleted namespace; therefore, the results need to be further verified. Additiona
 symbols for the binaries are available. Binary diffing [7] is another option for identifying differences between two
 binaries down to the changes at the function level.
 
-
-
-
                                                                                 IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                                  |8
 NEW EDGEHTML RENDERING ENGINE > ATTACK SURFACE
-
 
 3. ATTACK SURFACE
 In this section, I’ll enumerate the different types of untrusted input processed by EdgeHTML and the code in
@@ -280,7 +251,6 @@ based markup pre-parsing works, breakpoints in the CXmlPre methods can be set vi
 
 If EdgeHTML relies on a library for processing a particular input type, the library and the specific interface used by
 EdgeHTML is also listed.
-
 
 3.1. MARKUP/STYLE PARSING
 One of the primary tasks performed by a rendering engine is processing markups and styles. For HTML and CSS,
@@ -314,8 +284,6 @@ VML is still available by default even on IE11/MSHTML.
 
 The markup/style processor of rendering engines, especially the CSS and HTML parsers are expected to be updated
 overtime as there will be new web standards that will require new HTML tags, HTML attributes, CSS properties,
-
-
 
                                                                              IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                             |9
@@ -367,9 +335,6 @@ process audio/video content is Media Foundation (MF) [17]:
  MP3                          CMediaElement                 MF (IMFMediaEngine)
  WAV                          CMediaElement                 MF (IMFMediaEngine)
 
-
-
-
                                                                             IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                             |10
 NEW EDGEHTML RENDERING ENGINE > ATTACK SURFACE
@@ -420,9 +385,6 @@ The rendering engine will also create core DOM objects such as the DOM ‘docume
 code can also dynamically instantiate new DOM objects. The DOM API provides a way to manipulate these DOM
 objects.
 
-
-
-
                                                                             IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                           |11
 NEW EDGEHTML RENDERING ENGINE > ATTACK SURFACE
@@ -430,16 +392,10 @@ NEW EDGEHTML RENDERING ENGINE > ATTACK SURFACE
 When DOM object properties are set/retrieved or when DOM object methods are invoked via a script,
 corresponding code in the rendering engine is executed:
 
-
-
-
 Because code in the rendering engine that are executed via the DOM API can change the state of the DOM tree,
 DOM objects and other internal rendering engine objects, unexpected input, unexpected state change or an
 incorrect internal state when a DOM API is called can result into memory corruption vulnerabilities such as use-
 after-frees [26] (example below), heap overflows [27], invalid pointer access [28], etc.
-
-
-
 
 Using the diffing method described in section 2.2, we can identify the new DOM object types in EdgeHTML by
 looking at the changes under CFastDOM namespace:
@@ -461,7 +417,6 @@ looking at the changes under CFastDOM namespace:
         +CFastDOM::CCryptoKey
         +CFastDOM::CCryptoKeyPair
         +CFastDOM::CCSS
-
 
                                                                             IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                           |12
@@ -542,9 +497,6 @@ via the DOM API.
 In terms of enumerating DOM object properties and methods, JavaScript’s for…in statement can be used. The
 example below uses the new XSLTProcessor DOM object type:
 
-
-
-
 By diffing the results of the object property enumeration, one can find out the property changes in already-existing
 DOM object types. Below is a property diff output snippet for the DOM “document” object:
 
@@ -560,7 +512,6 @@ DOM object types. Below is a property diff output snippet for the DOM “documen
 Same with new DOM object types, new DOM object properties/methods represent new code or code paths in
 EdgeHTML that are exposed and reachable via the DOM API.
 
-
                                                                             IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                              |14
 NEW EDGEHTML RENDERING ENGINE > ATTACK SURFACE
@@ -568,14 +519,8 @@ NEW EDGEHTML RENDERING ENGINE > ATTACK SURFACE
 Lastly, another way to identify a DOM object’s properties and methods is by performing a query in IDA’s Names
 window:
 
-
-
-
 By following one of the listed functions in the Names window, one can find out the actual EdgeHTML class that
 represents the DOM object type:
-
-
-
 
 As new features are added to the Edge browser [29], new DOM objects types will likely be introduced or new
 properties/methods will be added to already-existing DOM objects in order to expose the new features to
@@ -636,13 +581,9 @@ By identifying how these libraries are used by EdgeHTML, we can further recogniz
 have an additional understanding on how they are used by the rendering engine and how attackers might be able
 to remotely reach code in these libraries via malicious inputs.
 
-
-
-
                                                                             IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                            |16
 NEW EDGEHTML RENDERING ENGINE > EXPLOIT MITIGATIONS
-
 
 4. EXPLOIT MITIGATIONS
 Now that we have an understanding of EdgeHTML’s attack surface, let’s now take a look at the exploit mitigations
@@ -660,15 +601,9 @@ In Windows 10 x64, the Edge content process (MicrosoftEdgeCP.exe) that hosts the
 (%System32%\edgehtml.dll) is by default running 64-bit, with ASLR (HEASLR, ForceASLR) and DEP enabled, and is
 sandboxed using AppContainer:
 
-
-
-
 The content process mitigations in Edge are the same as the content process mitigations in Immersive IE on
 Windows 8 and different from the content process mitigations in IE11 on Windows 10, Windows 8 (Desktop IE)
 and Windows 7.
-
-
-
 
                                                                             IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                                  |17
@@ -711,15 +646,9 @@ function returns to make sure that the return address and saved x64 registers we
 overflow. This mitigation also performs variable reordering so that a copy of the parameters and local variables are
 located before the buffers to prevent them from being corrupted in the event of a buffer overflow:
 
-
-
-
                                                                                IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                                |18
 NEW EDGEHTML RENDERING ENGINE > EXPLOIT MITIGATIONS
-
-
-
 
 This mitigation had been thoroughly discussed in various papers [52, 53] and is continually being updated [42] for
 improved coverage. One limitation of this mitigation is that it does not cover cases where an attacker has control
@@ -731,9 +660,6 @@ A recently introduced exploit mitigation that is applied to EdgeHTML and its dep
 (CFG) [55, 56]. When CFG is enabled, the compiler will add checks in the code to ensure that the destination of
 indirect calls is valid. This exploit mitigation attempts to detect and prevent abnormal control flow which can occur
 if an exploit is trying to redirect execution to ROP gadgets in select executable code addresses.
-
-
-
 
 Internals of this exploit mitigation are well-researched and published in a various papers/presentations [57, 58].
 One published bypass technique [31] against CFG is by taking advantage of Flash JIT-generated code, which due to
@@ -748,13 +674,9 @@ VTGuard was first introduced in IE10 and its purpose is to detect an invalid vir
 an exploit is trying to control execution flow via a controlled C++ object in memory. It adds an ASLR-randomized
 value (__vtguard) in the virtual function table which is then checked before performing a virtual function call:
 
-
                                                                              IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                                 |19
 NEW EDGEHTML RENDERING ENGINE > EXPLOIT MITIGATIONS
-
-
-
 
 A shortcoming of this mitigation is that it is applied only to select EdgeHTML classes and it can be trivially bypassed
 if the address of __vtguard is leaked via memory content disclosure.
@@ -784,9 +706,6 @@ Where %DwordValue% can be any of the following:
  1             Memory Protector is enabled
  0             MemGC and Memory Protector are disabled
 
-
-
-
                                                                               IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                            |20
 NEW EDGEHTML RENDERING ENGINE > EXPLOIT MITIGATIONS
@@ -800,9 +719,6 @@ The allocation scheme used by MemGC involves committing chunks of memory called 
 VirtualAlloc() and then dividing these Segments into 4096-byte Pages. A group of these Pages are then treated as a
 Block which is in turn used in the allocation of similarly-sized objects:
 
-
-
-
 EdgeHTML/MSHTML DOM objects and a large number of internal rendering engine objects are managed by
 MemGC. And since MemGC already uses a separate managed heap, the Isolated Heap is unused if MemGC is
 enabled.
@@ -814,9 +730,6 @@ which in turn calls chakra!MemProtectHeapRootAlloc(). Chakra!MemProtectHeapRootA
 chunk from a Block in the appropriate bucket, and then flag the chunk as a “root”. “Root” in garbage collection
 parlance means that the object/chunk is directly referenced by the program and therefore should not be garbage
 collected. Root objects/chunks are also used by the garbage collector when scanning for chunk references.
-
-
-
 
                                                                             IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                             |21
@@ -866,9 +779,6 @@ recently introduced Control Flow Guard required the development of new exploitat
 MemGC, like its predecessor, will further decrease the number of exploitable use-after-free vulnerabilities in
 EdgeHTML.
 
-
-
-
                                                                             IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                              |22
 NEW EDGEHTML RENDERING ENGINE > EXPLOIT MITIGATIONS
@@ -878,13 +788,9 @@ vulnerabilities in EdgeHTML, and more investment in developing reliable exploits
 will continually find novel ways to bypass these mitigations and we could expect that these exploit mitigations will
 evolve over time.
 
-
-
-
                                                                             IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                            |23
 NEW EDGEHTML RENDERING ENGINE > CONCLUSION
-
 
 5. CONCLUSION
 It is inevitable that the attack surface of EdgeHTML (and other browser rendering engines) will continue to expand
@@ -912,13 +818,9 @@ as they are libraries/features that are remotely-reachable and widely-used:
 
 Finally, I hope that this paper helped you understand the security aspect of the EdgeHTML rendering engine.
 
-
-
-
                                                                             IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                              |24
 NEW EDGEHTML RENDERING ENGINE > BIBLIOGRAPHY
-
 
 6. BIBLIOGRAPHY
 
@@ -964,8 +866,6 @@ NEW EDGEHTML RENDERING ENGINE > BIBLIOGRAPHY
 
 [14] MITRE, "CVE-2005-4560," [Online]. Available: http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-
      2005-4560.
-
-
 
                                                                             IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                                  |25
@@ -1018,8 +918,6 @@ NEW EDGEHTML RENDERING ENGINE > BIBLIOGRAPHY
 
 [29] Microsoft, "Internet Explorer Web Platform Status and Roadmap - status.modern.IE," [Online]. Available:
 
-
-
                                                                                   IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                              |26
 NEW EDGEHTML RENDERING ENGINE > BIBLIOGRAPHY
@@ -1070,8 +968,6 @@ NEW EDGEHTML RENDERING ENGINE > BIBLIOGRAPHY
      ations.pdf.
 
 [42] K. Johnson and M. Miller, "Exploit Mitigation Improvements in Windows 8," [Online]. Available:
-
-
 
                                                                              IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                             |27
@@ -1124,8 +1020,6 @@ NEW EDGEHTML RENDERING ENGINE > BIBLIOGRAPHY
      http://blogs.msdn.com/b/vcblog/archive/2014/12/08/visual-studio-2015-preview-work-in-progress-security-
      feature.aspx.
 
-
-
                                                                             IBM Security | ©2015 IBM Corporation
 UNDERSTANDING THE ATTACK SURFACE AND ATTACK RESILIENCE OF PROJECT SPARTAN’S (EDGE)                               |28
 NEW EDGEHTML RENDERING ENGINE > BIBLIOGRAPHY
@@ -1157,8 +1051,3 @@ NEW EDGEHTML RENDERING ENGINE > BIBLIOGRAPHY
 
 [63] I.       Fratric,       "Dude,        where’s      my        heap?,"                  [Online].       Available:
      http://googleprojectzero.blogspot.com/2015/06/dude-wheres-my-heap.html.
-
-
-
-
-                                                                            IBM Security | ©2015 IBM Corporation

@@ -492,15 +492,15 @@ Excluding SES, which was covered [in our last article](https://osec.io/blog/meta
 
 ###  [Introducing rCTF v2](https://osec.io/blog/rctf-v2)
 
- We’re releasing rCTF v2, an open-source platform for hosting cybersecurity capture-the-flag competitions.     ![](https://osec.io/_astro/avatar.bUCHtgRj_1hV026.webp) ![](https://osec.io/_astro/avatar.si06Dpr__TikIE.webp) ![](https://osec.io/_astro/avatar.B-0iHZ_F_Z25INzk.webp)  Arsenii, Jason T., Stepan  Jul 14, 2026
+ We’re releasing rCTF v2, an open-source platform for hosting cybersecurity capture-the-flag competitions.     ! ! !  Arsenii, Jason T., Stepan  Jul 14, 2026
 
 ###  [Announcing the Save CTFs Fund](https://osec.io/blog/save-ctfs-fund)
 
- OtterSec is committing $100,000 to keep CTFs competitive in the age of AI. We break down why Jeopardy scoring is breaking down, what better formats might look like, and how to apply for sponsorship.     ![](https://osec.io/_astro/avatar.CkKEOL9r_Z1sL2S6.webp)  Michael Debono  Jul 7, 2026
+ OtterSec is committing $100,000 to keep CTFs competitive in the age of AI. We break down why Jeopardy scoring is breaking down, what better formats might look like, and how to apply for sponsorship.     !  Michael Debono  Jul 7, 2026
 
 ###  [Auto reverse-engineering the Hyperliquid risk engine, with some agentic help](https://osec.io/blog/hyperliquid-risk-engine)
 
- Perps allow traders to leverage beyond their collateral, until the market turns abruptly and losses are clawed back. We auto-reverse engineer Hyperliquid’s risk engine to show how it ranks and deleverages winning users under the solvency–fairness–revenue trilemma.     ![](https://osec.io/_astro/avatar.FiKLou5J_Czbcr.webp)  Renato Marziano  Jun 22, 2026
+ Perps allow traders to leverage beyond their collateral, until the market turns abruptly and losses are clawed back. We auto-reverse engineer Hyperliquid’s risk engine to show how it ranks and deleverages winning users under the solvency–fairness–revenue trilemma.     !  Renato Marziano  Jun 22, 2026
 
 ## Subscribe to the blog
 

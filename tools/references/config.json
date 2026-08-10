@@ -16,7 +16,7 @@
       "The two format trees under archive_dir, split so the binary PDFs stay",
       "out of the Markdown tree: archived-references/md/<year>/<slug>.md and",
       "archived-references/pdf/<year>/<slug>.pdf. The reports about the archive",
-      "(README.md, needs-work.md, excluded.md, store-gaps.md, manifest.json,",
+      "(README.md, document-gaps.md, excluded.md, store-gaps.md, manifest.json,",
       "history.jsonl)",
       "live at the archive_dir root, beside both trees."
     ],

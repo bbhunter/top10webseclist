@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 Hacker Protection from SQL Injection SPI Dynamics
 
-|  [![](http://www.spidynamics.com/assets/images/header3.jpg)](http://www.spidynamics.com/news/HP_SPI.html) |   |
+|  [!](http://www.spidynamics.com/news/HP_SPI.html) |   |
 |                 |
 
 #  Security Brief: MySpace Quicktime Worm

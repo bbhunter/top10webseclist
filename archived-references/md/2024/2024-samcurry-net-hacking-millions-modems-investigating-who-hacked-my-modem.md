@@ -138,7 +138,7 @@ The only real option left was that my modem had been hacked, but who was the att
 
 To kick off an investigation, I sent the IP address to some friends who worked for threat intelligence companies. They sent me a link to the VirusTotal listing for the IP address which detailed all of the domains which resolved to the IP address over the past few years.
 
-![](https://samcurry.net/_next/image?url=https%3A%2F%2Fi.imgur.com%2FrN9k23w.png&w=3840&q=75)
+!
 
 Out of the last 5 domains that were tied to the IP address, 3 were phishing websites, and 2 were what appeared to be mail servers. The following domains all at one point in time resolved to the DigitalOcean IP address:
 
@@ -159,11 +159,11 @@ After visiting the real ISG Latam website, we learned that they are based out of
 
 Now this was odd. The IP address, just one year prior, was being used to host phishing infrastructure that targeted a South American cybersecurity company. Assuming that they have been in control of this IP address for 3 years, it would mean that they have used it for at least 2 different phishing campaigns and what appeared to be a C&C server for router malware?
 
-![](https://samcurry.net/_next/image?url=https%3A%2F%2Fi.imgur.com%2FpUxs47C.png&w=3840&q=75)
+!
 
 Through URLscan, I learned that the `isglatam.online` and `isglatam.tk` websites were hosting generic BeEF phishing sites that can historically be seen [here](https://urlscan.io/result/52459337-0f2d-4b26-859f-4a6f4eafa6dd#transactions).
 
-![](https://samcurry.net/_next/image?url=https%3A%2F%2Fi.imgur.com%2FWjapByA.png&w=3840&q=75)
+!
 
 The signature of the attacker was super interesting, because they were doing a lot of different malicious activities from the same box and apparently had not gotten suspended in over 3 years. It was really hard to piece together their intent with the Adidas, ISG Latam, and modem hacking thing all coming from the same IP address. There was a chance that the IP had rotated between different owners over the years, but it didn't seem likely as the gaps in between everything were long and it was unlikely that it was immediately reassigned to another malicious party.
 
@@ -173,7 +173,7 @@ Realizing that the infected device was still running, I walked over, unplugged i
 
 The modem that I had been using was the Cox Panoramic Wifi gateway. After learning that it was likely compromised, I went to the local Cox store to show them my device and ask for a new one.
 
-![](https://samcurry.net/_next/image?url=https%3A%2F%2Fi.imgur.com%2FcWsUSw3.png&w=3840&q=75)
+!
 
 The one issue with this request was that in order for me to receive a new modem, I had to hand over the old one. Sadly, it wasn't actually my property — I was only *renting* it from the ISP. I explained to the employee how I wanted to keep and reverse engineer the device. Their eyes shot up a little bit. They were much less enthusiastic about giving it back to me.
 
@@ -208,7 +208,7 @@ Every single domain that was registered by the discovered IP address used the sa
 
 Due to the mass-number of domains and algorithmic structure of the registered address, this appeared to be a domain generation algorithm used by malware operators to rotate the resolving address for the C&C server for the purpose of obfuscation. There was a good chance that the IP address replaying my traffic was a C&C server, and the two domains which I thought were mail servers were actually algorithmically generated pointers to the C&C server.
 
-![](https://samcurry.net/_next/image?url=https%3A%2F%2Fi.imgur.com%2Fjn9s1Fl.jpeg&w=3840&q=75)
+!
 
 Something disappointing was that all of these domains were historical; the last one seen was registered on March 17, 2023. None of the hosts resolved to anything anymore, and we couldn’t seem to identify anything similar being registered to the same IP address.
 
@@ -222,7 +222,7 @@ After getting back home, a close friend had asked if I’d be able to help him m
 
 The ability of support agents to control devices really interested me, especially since they could update pretty much anything on the device. This extensive access was facilitated by a protocol known as TR-069, implemented in 2004, which allowed ISPs to manage devices within their own network via port 7547. This protocol had already been the subject of a few great DEF CON talks and wasn’t externally exposed, so I wasn’t super interested in bug hunting the protocol itself. What I was interested in, however, were the tools that the support agent was using to manage the device.
 
-![](https://samcurry.net/_next/image?url=https%3A%2F%2Fi.imgur.com%2F272GG8M.jpeg&w=3840&q=75)
+!
 
 To theorycraft a little bit, if I were a hacker who wanted to compromise my modem I'd likely target whatever infrastructure powered the support tools that the agents were using. There was probably some internal website for device management that support agents used, backed by an API that could execute arbitrary commands and change/view administrative settings of customer devices. If I could find some way to access this functionality, it might shed light on how I might have been originally hacked and patch out at least one method for someone to compromise my modem.
 
@@ -230,7 +230,7 @@ To theorycraft a little bit, if I were a hacker who wanted to compromise my mode
 
 The first thing that I decided to look at was the Cox Business portal. This app had a ton of interesting functionality to remotely manage devices, set firewall rules, and monitor network traffic.
 
-![](https://samcurry.net/_next/image?url=https%3A%2F%2Fi.imgur.com%2Fq6bmDy5.png&w=3840&q=75)
+!
 
 Without actually having a Cox business account myself, I opened the login page for the portal and grabbed a copy of the `main.36624ed36fb0ff5b.js` file that powered the core functionality of the app. After beautifying it, I parsed out all of the routes and scrolled through them:
 
@@ -365,7 +365,7 @@ Shame, no easy actuators. I then checked for accessible API documentation:
 
 We had a hit! There was a swagger landing page at `/api/cbma/profile/swagger-ui/index.html`. I loaded the page expecting to see API routes, however...
 
-![](https://samcurry.net/_next/image?url=https%3A%2F%2Fi.imgur.com%2FJEAdxo3.png&w=3840&q=75)
+!
 
 Totally empty. Something was causing the page not to load. I checked the network traffic and there seemed to be in an infinite redirect loop when attempting to load any static resource:
 
@@ -414,7 +414,7 @@ window.onload = function() { window.ui = SwaggerUIBundle({ url: "https://petstor
 
 By appending the `%2f` to the `.js` extension, we could load the JS files. I wrote a rule to append `%2f` to all static resources using Burp’s match-and-replace then reloaded the page.
 
-![](https://samcurry.net/_next/image?url=https%3A%2F%2Fi.imgur.com%2Fm332NDr.png&w=3840&q=75)
+!
 
 Perfect, the swagger routes had loaded. I used the same trick to load all the swagger docs on all of the other API endpoints. In total, there were about 700 different API calls with each API having the following number of calls:
 
@@ -762,11 +762,11 @@ decryptWithSaltandPadding(D) {
 
 Both of these functions took in variables which only existed at runtime, so the easiest way to actually call these functions would be to find somewhere it was called within the actual UI. After searching for a little while, I’d realized that the 4-digit PIN that I set when registering my account was encrypted using the same function!
 
-![](https://samcurry.net/_next/image?url=https%3A%2F%2Fi.imgur.com%2FUvElxtP.png&w=3840&q=75)
+!
 
 I set a breakpoint at exactly where the `encryptWithSaltAndPadding` function was called, then hit enter.
 
-![](https://samcurry.net/_next/image?url=https%3A%2F%2Fi.imgur.com%2Fjan36pE.png&w=3840&q=75)
+!
 
 Now that I had a breakpoint set and I was in the correct context for the function I could simply paste the function into my console and run whatever I wanted. To validate that it worked, I copied the encrypted value of the PIN code that was sent in the POST request and passed it to the decrypt function.
 
@@ -856,7 +856,7 @@ Did it work? It had only given me a blank 200 OK response. I tried re-sending th
 
 About 5 minutes later, my network rebooted. The SSID name had been updated to “Curry”. I could write and read from anyone's device using this exploit.
 
-![](https://samcurry.net/_next/image?url=https%3A%2F%2Fi.imgur.com%2FAQLhEU7.png&w=3840&q=75)
+!
 
 This demonstrated that the API calls to update the device configuration worked. This meant that an attacker could've accessed this API to overwrite configuration settings, access the router, and execute commands on the device. At this point, we had a similar set of permissions as the ISP tech support and could've used this access to exploit any of the millions of Cox devices that were accessible through these APIs.
 

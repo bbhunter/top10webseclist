@@ -455,5 +455,3 @@ Adobe has [released a patch](https://helpx.adobe.com/security/products/acrobat/a
  [ PDF ](https://portswigger.net/research/pdf) [ XSS ](https://portswigger.net/research/cross-site-scripting-research) [ PDFs ](https://portswigger.net/research/pdfs) [ Presentations ](https://portswigger.net/research/presentations)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

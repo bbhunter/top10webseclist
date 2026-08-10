@@ -183,19 +183,19 @@ In order to make the application read a user-uploaded resource via the Django te
 
 The URL-decoding of the Django test client also introduces a significant difference from the filesystem path handling when the content is written to disk. The following URL is a valid reference to a user-uploaded resource for the Django test client:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/536f0169-6aa2-4cee-ad80-b91d4ce2a229/pretalx-01.png)
+!
 
 When the retrieved contents are written to disk, though, the path is **not** URL-decoded. This means that the following file is written:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/e42a6861-0dd5-45d4-a17e-ad645922cc25/pretalx-02.png)
+!
 
 In conjunction with the path traversal, this can be leveraged to write the user-controlled resource to an arbitrary file. The following URL is still a valid reference to the user-uploaded resource for the Django test client:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/ca5de244-7a34-45c3-8b86-566309e3b197/pretalx-03.png)
+!
 
 When the path is processed to write the file to disk, things look a little different:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/38bca44a-6ef8-4fbe-80af-c5872dcf4870/pretalx-04.png)
+!
 
 Thus, the user-controlled content is written to `/tmp` in a file called `%2e%2e%2fmedia%2ftest-event%2fsubmissions%2fXXX%2fresources%2fupload.txt`.
 

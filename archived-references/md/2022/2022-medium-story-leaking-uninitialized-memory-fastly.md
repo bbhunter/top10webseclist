@@ -74,35 +74,11 @@ Fastly
 
 # A story of leaking uninitialized memory from Fastly
 
-[
-
-![Emil Lerner](https://miro.medium.com/v2/resize:fill:64:64/1*7is_e6XJI8EvaGSTa9GuHg.jpeg)
-
-](https://medium.com/@emil.lerner?source=post_page---byline--83327bcbee1f---------------------------------------)
+[![Emil Lerner](https://miro.medium.com/v2/resize:fill:64:64/1*7is_e6XJI8EvaGSTa9GuHg.jpeg)](https://medium.com/@emil.lerner?source=post_page---byline--83327bcbee1f---------------------------------------)
 
 [Emil Lerner](https://medium.com/@emil.lerner?source=post_page---byline--83327bcbee1f---------------------------------------)
 
-12 min readJan 31, 2022
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F83327bcbee1f&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40emil.lerner%2Fleaking-uninitialized-memory-from-fastly-83327bcbee1f&user=Emil+Lerner&userId=95b46eb7ae40&source=---header_actions--83327bcbee1f---------------------clap_footer------------------)
-
 --
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F83327bcbee1f&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40emil.lerner%2Fleaking-uninitialized-memory-from-fastly-83327bcbee1f&user=Emil+Lerner&userId=95b46eb7ae40&source=---header_actions--83327bcbee1f---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F83327bcbee1f&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40emil.lerner%2Fleaking-uninitialized-memory-from-fastly-83327bcbee1f&source=---header_actions--83327bcbee1f---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D83327bcbee1f&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40emil.lerner%2Fleaking-uninitialized-memory-from-fastly-83327bcbee1f&source=---header_actions--83327bcbee1f---------------------post_audio_button------------------)
-
-Share
 
 This post will go through a QUIC (HTTP/3) implementation bug in the H2O webserver. The bug is pretty interesting as it affected [Fastly](https://fastly.com/) in a way that it allowed stealing random requests and responses from uninitialized memory of its’ nodes, somewhat similar to [CloudBleed](https://en.wikipedia.org/wiki/Cloudbleed) (but unlike CloudBleed, this vulnerability required a specific actions from an attacker).
 

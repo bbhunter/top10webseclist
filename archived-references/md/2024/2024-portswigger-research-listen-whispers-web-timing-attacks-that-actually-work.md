@@ -138,7 +138,7 @@ This reputation might be why we've ignored a huge opportunity.
 
 My first foray into researching timing attacks yielded results firmly in the 'theoretical' bucket. For my second attempt, I started by looking back over attacks that I'd successfully applied in the wild, alongside others that I'd read about:
 
-![](https://portswigger.net/cms/images/96/ed/d893-article-timing-divide-1.png)
+!
 
  From the top, these are examples of:
 
@@ -150,7 +150,7 @@ My first foray into researching timing attacks yielded results firmly in the 'th
 
 In the hunt for novel techniques that work in the wild, I focused on the divide between the two categories, which is massive:
 
-![](https://portswigger.net/cms/images/43/b0/0a09-article-timing-divide-2.png)
+!
 
  Timing attack research is often focused on a single target, but this constrains its real-world value. I wanted techniques that could be applied to arbitrary live targets. To ensure my new attack concepts met this standard, I validated them on a test bed of 30,000 live websites. Based on [bbscope](https://github.com/sw33tLie/bbscope) and Rapid7's [Project Sonar](https://opendata.rapid7.com/sonar.fdns_v2/) DNS database, the test platform was a 20 GB Burp Suite project file containing every known website with a bug bounty program.
 
@@ -172,7 +172,7 @@ I started this research by attempting a timing-based exploit on password resets.
 
 Under the hood, string comparisons typically compare one character at a time until they either finish the string or encounter a non-matching character pair. This means that the more characters match, the longer the comparison takes:
 
-![](https://portswigger.net/cms/images/ce/b9/3ece-article-string-comparison.png)
+!
 
 In this illustration, we're using two HTTP requests to ask the question 'Does the database contain a password reset token starting with d7e?' The server is taking one second to compare each character, so by comparing the response times an attacker can tell that the token starts with 'd7e' rather than 'd7f.
 
@@ -182,7 +182,7 @@ Unfortunately, the actual time to compare each character is somewhere in the rea
 
 The success of every timing attack comes down to two competing variables - signal and noise. Signal refers to the size of the timing difference you want to detect, and noise refers to everything else that affects the response timing. If the signal is too quiet relative to the background noise, you won't hear it:
 
-![](https://portswigger.net/cms/images/c7/b5/d824-article-equation.png)
+!
 
 For an attack that actually works, you need to maximize the signal and minimize the noise. The rest of this section is focused on how to do this.
 
@@ -190,7 +190,7 @@ Note that this equation does not include 'number of measurements'. You can attem
 
  You can split noise into two parts - network noise (jitter), and server noise (internal jitter):
 
-![](https://portswigger.net/cms/images/21/36/0d64-article-latency.png)
+!
 
  Network jitter is the *variation* in latency - the time taken for a packet to get to a target system and back again. It's the classic nemesis of remote timing attacks. When someone sees a timing attack demonstrated against a local system and says 'That'll never work on a remote system', they're basically saying that network jitter is going to make the attack impossible. Five years ago, this might have been true.
 
@@ -198,7 +198,7 @@ Note that this equation does not include 'number of measurements'. You can attem
 
 In 2020, [Timeless Timing Attacks](https://usenix.org/conference/usenixsecurity20/presentation/van-goethem) showed that you could fully eliminate network jitter from measurements using HTTP/2. You could place two HTTP/2 requests into a single TCP packet, ensuring they arrive at the server simultaneously. Then you could look at the order the responses arrive in, inferring which took longer to process on the server:
 
-![](https://portswigger.net/cms/images/d9/b0/f254-article-single-packet-latency.png)
+!
 
 This single discovery eliminated the biggest source of noise and shifted the boundaries of what's detectable. There's just one small catch.
 
@@ -206,7 +206,7 @@ This single discovery eliminated the biggest source of noise and shifted the bou
 
 At the HTTP/2 layer, the two requests are completely concurrent, but the underlying TLS data is a stream so one request is still 'first' i.e. one will be fully decrypted before the other. If you try this technique out, you'll notice that websites show a significant bias towards answering the first request first. This bias probably stems from multiple factors, including the time it takes to decrypt the second request and resource availability. Unfortunately, this can mask the delay that you're trying to detect:
 
-![](https://portswigger.net/cms/images/55/d3/0a01-article-decryption-delay.png)
+!
 
 The authors noticed this problem and tackled it by adding dummy parameters to slow down parsing of the first request, in an attempt to resynchronise execution.
 
@@ -220,11 +220,11 @@ Lab environments are known for having less noise than real targets, but there's 
 
  It works by sending the bulk of the requests in an initial few packets, then completing the requests and triggering execution with a tiny final packet. In this diagram, the final critical packet is outlined in black:
 
-![](https://portswigger.net/cms/images/4f/2f/dde4-article-single-packet-attack-old.png)
+!
 
 Unfortunately, this introduces a different catch - some servers start to process HTTP requests as soon as they've got the headers, without waiting for the body. To fix that, we need to persuade our OS network stack to coalesce the header frames into a single packet so that regardless of which stage the server starts processing at, both requests get processed at the same time:
 
-![](https://portswigger.net/cms/images/b0/81/bd6a-article-single-packet-attack-new.png)
+!
 
 You might be wondering why I opted to split the requests into just two critical packets, instead of one packet per HTTP header. That would indeed be ideal, but unfortunately the HTTP/2 RFC forbids interleaving header frames from separate requests so it's unlikely to work.
 
@@ -310,7 +310,7 @@ Conveniently, if you place a domain inside a spoofed header, vulnerable servers 
 
 The first response comes back quickly because it doesn't trigger a DNS lookup. The second response triggers a DNS lookup for xyz.example.com, so it's slower, and the third response arrives faster because the DNS response has been cached:
 
-![](https://portswigger.net/cms/images/a1/d0/a28a-article-dns-caching.png)
+!
 
 We'll revisit DNS caching later. In total, scanning for IP address spoofing revealed:
 
@@ -334,7 +334,7 @@ Here's a clue - in your login history, the website specified the login IP addres
 
  I think this system was passing the spoofed IP address into a library, which validated the format before passing it to a third-party Geolookup service. Supplying an invalid IP address like 'x.psres.net' caused an exception and stopped the slow IP-lookup from happening:
 
-![](https://portswigger.net/cms/images/b3/bc/ce0f-article-invalid-ip.png)
+!
 
 So, we've gained a new technique for parameter discovery, proved timing attacks can work at scale in the wild, and also spotted something significant: inputs that trigger errors can short-cut large code paths and result in significantly faster responses. In other words, timing attacks are exceptionally good at detecting exceptions
 
@@ -421,7 +421,7 @@ The single biggest breakthrough in this research was when I realized I could use
 
 If the target was vulnerable, I would see my request arriving on my site at burpcollaborator.net, forwarded by the vulnerable reverse proxy.
 
-![](https://portswigger.net/cms/images/fe/e9/f6da-article-collaborator-smaller.png)
+!
 
 After that I would send internal IPs and hostnames to plunder their internal network. This yielded some spectacular findings, including accidentally hacking a system that my ISP put in place to MITM their customers.
 
@@ -479,7 +479,7 @@ Guessing hostnames directly in the Host header is often referred to as 'vhost br
 
 The simplest exploit is where you can see the target from outside but can't directly access it.
 
-![](https://portswigger.net/cms/images/39/da/b2b6-article-firewall-bypass.png)
+!
 
  On one company, sonarqube.redacted.com resolved to a public IP address, but attempting to access it triggered a connection reset from a firewall. My probes had identified app.redacted.com as a reverse proxy and, using that, I was able to route around the firewall and access the internal SonarQube instance.
 
@@ -491,7 +491,7 @@ The simplest exploit is where you can see the target from outside but can't dire
 
 There's a common variation where the internal system doesn't have a convenient public DNS record to let you know it exists:
 
-![](https://portswigger.net/cms/images/fc/d9/ed2c-article-no-hostname.png)
+!
 
 There are a huge number of pre-prod, staging, and development servers exposed to anyone applying this technique. If you get lucky, they'll have debugging enabled or test credentials configured, making them soft targets. These systems may even have real target data, or reused keys from production.
 
@@ -503,15 +503,15 @@ Some targets are publicly accessible, but sit behind front-end servers that enfo
 
 Reverse proxies provide a compelling alternative - go around the barrier:
 
-![](https://portswigger.net/cms/images/a2/07/2d37-article-rule-bypass.png)
+!
 
 On one target, using an alternative route via a reverse proxy turned this:
 
-![](https://portswigger.net/cms/images/d1/10/f318-article-forbidden.png)
+!
 
 Into this:
 
-![](https://portswigger.net/cms/images/97/13/24b7-article-unforbidden.png)
+!
 
 #### Front-end impersonation attacks
 
@@ -521,7 +521,7 @@ Front-end systems often add HTTP headers onto requests before forwarding them to
 
 If an attacker attempts to spoof these headers, the front-end will typically overwrite them. This header overwriting behavior is the single brittle line of defense against front-end impersonation attacks.
 
-![](https://portswigger.net/cms/images/c7/8b/a600-article-impersonation.png)
+!
 
 The easiest way to bypass this defense is to simply talk directly with the back-end, but this is usually impossible due to network firewalls. Another approach is [HTTP request tunneling](https://portswigger.net/web-security/request-smuggling/advanced/request-tunnelling), which I used to [completely compromise New Relic's core internal API](https://portswigger.net/research/http2#guessing) using a header called "Service-Gateway-Is-Newrelic-Admin". You can also try [obfuscating headers](https://www.intruder.io/research/practical-http-header-smuggling) to smuggle them past the front-end.
 
@@ -586,5 +586,3 @@ With the single-packet attack, web timing attacks have become 'local', portable,
  [ Black Hat ](https://portswigger.net/research/black-hat) [ SSRF ](https://portswigger.net/research/ssrf) [ Timing attacks ](https://portswigger.net/research/timing-attacks) [ timing ](https://portswigger.net/research/timing)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

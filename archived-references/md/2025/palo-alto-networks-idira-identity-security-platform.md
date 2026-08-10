@@ -255,11 +255,7 @@ Deploying Idira to centralize secrets and control vault sprawl.
 
 ---
 
-[
-
-2025 Gartner® Magic Quadrant™ for Privileged Access Management
-
-](https://www.paloaltonetworks.com/idira/2025-magic-quadrant-report-for-pam)
+[2025 Gartner® Magic Quadrant™ for Privileged Access Management](https://www.paloaltonetworks.com/idira/2025-magic-quadrant-report-for-pam)
 
 The Forrester Wave™ Privileged Identity Management Solutions, Q3 2025
 
@@ -289,53 +285,17 @@ Continue **
 
 ##  Stay ahead of evolving threats with the latest resources
 
-[
+[Nikesh Arora: IMPACT Keynote Accelerating the Agentic Era: Introducing Idira](https://www.youtube.com/watch?v=FXbcO1XQfPQ)
 
-Nikesh Arora: IMPACT Keynote
+[Blog Idira: Our Journey to Democratize Privilege Controls](https://www.paloaltonetworks.com/blog/2026/05/idira-journey-democratize-privilege-controls/)
 
-Accelerating the Agentic Era: Introducing Idira
+[Customer Story Maximus implements PAM as a service to create an efficient and strategic rollout](https://www.paloaltonetworks.com/customers/maximus)
 
-](https://www.youtube.com/watch?v=FXbcO1XQfPQ)
+[Infographic When AI Acts Alone, You Need to Maintain Control](https://www.paloaltonetworks.com/resources/infographics/when-ai-acts-alone-you-need-identity-to-maintain-control)
 
-[
+[Whitepaper Securing Agentic AI: Identity as the Emerging Foundation for Defense](https://www.paloaltonetworks.com/idira/idira-the-roadmap-to-securing-agentic-ai)
 
-Blog
-
-Idira: Our Journey to Democratize Privilege Controls
-
-](https://www.paloaltonetworks.com/blog/2026/05/idira-journey-democratize-privilege-controls/)
-
-[
-
-Customer Story
-
-Maximus implements PAM as a service to create an efficient and strategic rollout
-
-](https://www.paloaltonetworks.com/customers/maximus)
-
-[
-
-Infographic
-
-When AI Acts Alone, You Need to Maintain Control
-
-](https://www.paloaltonetworks.com/resources/infographics/when-ai-acts-alone-you-need-identity-to-maintain-control)
-
-[
-
-Whitepaper
-
-Securing Agentic AI: Identity as the Emerging Foundation for Defense
-
-](https://www.paloaltonetworks.com/idira/idira-the-roadmap-to-securing-agentic-ai)
-
-[
-
-Buyer’s Guide
-
-The Executive Guide to Identity Security Platforms
-
-](https://www.paloaltonetworks.com/idira/identity-security-guide)
+[Buyer’s Guide The Executive Guide to Identity Security Platforms](https://www.paloaltonetworks.com/idira/identity-security-guide)
 
 FAQ
 

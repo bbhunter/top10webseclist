@@ -72,7 +72,7 @@ page going offline. To read the original, follow the link above.
 
 ### “Your telemetry is now an RCE vector”
 
-  ![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-15.png)
+  !
 
 # **Executive**** ****Summary**
 
@@ -101,7 +101,7 @@ The danger lies in this implicit trust. When an AI agent queries Sentry for unre
 
 **AI coding agents cannot tell the difference between the data they read and an instruction to act. **Plant a command somewhere an agent will read it – even somewhere no human would ever look for one, like an error log – and the agent may simply execute it. This is a limitation of the models themselves, not a misconfiguration that can be patched away.
 
-  ![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-11.png)
+  !
 
 *Figure 1 – The Agentjacking chain. Every step is authorized, which is why no security control sees it.*
 
@@ -137,7 +137,7 @@ Their AI agents were quietly running our test code, none of them aware anything 
 
 It didn’t stop at one giant. The companies we reached ranged from that quarter-trillion-dollar enterprise all the way down to solo developers working alone – across finance, healthcare, government, education and critical infrastructure, in more than 30 countries. Even one cloud security company was among them.
 
-  ![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-9.jpeg)
+  !
 
 *Figure 2 – Confirmed and exposed organizations span six continents. Each marker is a distinct organization reached in the campaign.*
 
@@ -183,7 +183,7 @@ Prompt injection, as most people picture it, happens in the chat box – in fron
 
 A Cursor agent (Warp terminal) executed the payload and beaconed back. The capture shows the network-interface block and the Sentry ingest path that delivered our payload.
 
-![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-3.jpeg)
+!
 
 *Network interface address and the project identifier are redacted.
 
@@ -191,7 +191,7 @@ A Cursor agent (Warp terminal) executed the payload and beaconed back. The captu
 
 Proof that agents running inside WSL (Ubuntu 20.04) on managed Windows machines were reached. The Windows logon server and the SSH agent socket were present in the environment.
 
-  ![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-4.jpeg)
+  !
 
 *Logon server and Windows username redacted. The SSH agent socket path is shown – it is not itself a secret, but its presence means **the agent could reach the developer’s SSH identity.**
 
@@ -199,7 +199,7 @@ Proof that agents running inside WSL (Ubuntu 20.04) on managed Windows machines 
 
 This is the one that shows reach. A live **AWS secret access key** was present in the agent’s own environment. We have blacked out the value and kept only the label — proof it was there, with nothing exposed. The same machine ran several Claude Code agent instances and held identifiers for connected downstream agents.
 
-  ![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-5.jpeg)
+  !
 
 *labels and agent version strings kept. “Connected to other agents” here means the blast radius extends beyond this host – the environment held credentials to other agents and services – not that one agent infected another.
 
@@ -207,7 +207,7 @@ This is the one that shows reach. A live **AWS secret access key** was present i
 
 An OpenAI Codex agent running in a CI pipeline (CircleCI) on an EC2 container — note CODEX_SANDBOX_NETWORK_DISABLED. Even a sandboxed, network-restricted CI agent was reached.
 
-  ![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-6.jpeg)
+  !
 
 *EC2 internal hostname and container names redacted. The AWS region is not sensitive and is left visible.
 
@@ -215,15 +215,15 @@ An OpenAI Codex agent running in a CI pipeline (CircleCI) on an EC2 container �
 
 Proof that agents embedded as IDE extensions, not just standalone CLIs, fell for it too — here the OpenAI ChatGPT/Codex VS Code extension on macOS.
 
-  ![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-7.jpeg)
+  !
 
 **E6 – AI Agents Accessible to Internal Network (Behind VPNs):**
 
 Every value below is redacted at the pixel level. No real credential, identity, or host appears here.
 
-  ![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-12.png)
+  !
 
-  ![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-13.png)
+  !
 
 *The agent transmitted metadata, demonstrating that live cloud and cluster credentials are within reach.*
 
@@ -252,7 +252,7 @@ confirmed existing: Cloud infra tokens, git tokens, etc. |  |
 
 The payload is just text appended inside a bug report, formatted to look exactly like a legitimate “suggested fix.” Because it mirrors the format of the real tool output the agent already handles in this flow, the agent can’t separate the instruction from the data. There’s no exotic encoding – it reads like a normal “here’s how to fix it” resolution.
 
-  ![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-14.png)
+  !
 
 *Our crafted report – formatted to look like an ordinary resolution. The agent is easily “phished”.*
 
@@ -282,7 +282,7 @@ The risk is not limited to Sentry. Any MCP tool integration that returns externa
 
 Disclosed to **Sentry** on June 3, 2026 as soon as the chain was confirmed. Sentry’s leadership responded the **same day** – acknowledging the issue but declining to fix it at the root, calling it **“technically not defensible”** and noting that model vendors run middleware against it. During the research period, Sentry activated a global content filter blocking a specific payload string – detecting the activity without addressing the cause.
 
-  ![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-8.png)
+  !
 
 Tenet’s view: if the platform owner considers this class of attack “not technically defensible” at the source, the only place left to stop it is at the agent’s runtime – in the moment it decides to act.
 

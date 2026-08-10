@@ -79,11 +79,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
  [ See All by icchy ](https://speakerdeck.com/icchy)
 
- [
-
- React Hooksに潜む罠
-
- ](https://speakerdeck.com/icchy/react-hooks-pitfalls)
+ [React Hooksに潜む罠](https://speakerdeck.com/icchy/react-hooks-pitfalls)
 
  [ ![Avatar for icchy](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTY4MTUsInB1ciI6ImJsb2JfaWQifX0=--1bed4ac42ef8d9bbc01fa3fa9de48ce15635648e/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/tonkatsu.jpg) icchy ](https://speakerdeck.com/icchy)
 
@@ -91,11 +87,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   3.6k
 
- [
-
- アンチウイルスをオラクルとした Windows Defenderに対する 新しい攻撃手法
-
- ](https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windows-defendernidui-suru-xin-siigong-ji-shou-fa)
+ [アンチウイルスをオラクルとした Windows Defenderに対する 新しい攻撃手法](https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windows-defendernidui-suru-xin-siigong-ji-shou-fa)
 
  [ ![Avatar for icchy](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTY4MTUsInB1ciI6ImJsb2JfaWQifX0=--1bed4ac42ef8d9bbc01fa3fa9de48ce15635648e/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/tonkatsu.jpg) icchy ](https://speakerdeck.com/icchy)
 
@@ -103,11 +95,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   640
 
- [
-
- WCTF2019: Gyotaku The Flag
-
- ](https://speakerdeck.com/icchy/wctf2019-gyotaku-the-flag)
+ [WCTF2019: Gyotaku The Flag](https://speakerdeck.com/icchy/wctf2019-gyotaku-the-flag)
 
  [ ![Avatar for icchy](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTY4MTUsInB1ciI6ImJsb2JfaWQifX0=--1bed4ac42ef8d9bbc01fa3fa9de48ce15635648e/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/tonkatsu.jpg) icchy ](https://speakerdeck.com/icchy)
 
@@ -119,11 +107,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
  [ See All in Research ](https://speakerdeck.com/c/research)
 
- [
-
- Fukui Shibiten 39 - AI Art
-
- ](https://speakerdeck.com/butchi/fukui-shibiten-39-ai-art)
+ [Fukui Shibiten 39 - AI Art](https://speakerdeck.com/butchi/fukui-shibiten-39-ai-art)
 
  [ ![Avatar for IWABUCHI Yu(u)ki butchi](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTcwMjYsInB1ciI6ImJsb2JfaWQifX0=--095b7a754ff32159e37778110a816d339cbcce26/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/us-ig-i.png) butchi ](https://speakerdeck.com/butchi)
 
@@ -131,11 +115,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   170
 
- [
-
- 敵対生成プロンプト同時探索による内省型プロンプト最適化
-
- ](https://speakerdeck.com/kinoue_smarthr/di-dui-sheng-cheng-puronputotong-shi-tan-suo-niyorunei-sheng-xing-puronputozui-shi-hua)
+ [敵対生成プロンプト同時探索による内省型プロンプト最適化](https://speakerdeck.com/kinoue_smarthr/di-dui-sheng-cheng-puronputotong-shi-tan-suo-niyorunei-sheng-xing-puronputozui-shi-hua)
 
  [ ![Avatar for Kotaro Inoue](https://secure.gravatar.com/avatar/35965fa5fb070df50bdbeb10aa78a08a?s=24) kinoue_smarthr ](https://speakerdeck.com/kinoue_smarthr)
 
@@ -143,11 +123,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   350
 
- [
-
- Visual SLAM未来予測 / Future Prediction in Visual SLAM
-
- ](https://speakerdeck.com/koide3/future-prediction-in-visual-slam)
+ [Visual SLAM未来予測 / Future Prediction in Visual SLAM](https://speakerdeck.com/koide3/future-prediction-in-visual-slam)
 
  [ ![Avatar for koide3](https://secure.gravatar.com/avatar/e19725a18fcb76076c0b3149222e66ff?s=24) koide3 ](https://speakerdeck.com/koide3)
 
@@ -155,11 +131,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   830
 
- [
-
- Google Cloud Next 2026 DM Recap Agentic Data Cloudを添えて / Google Cloud Next 2026 DM Recap
-
- ](https://speakerdeck.com/nnaka2992/google-cloud-next-2026-dm-recap)
+ [Google Cloud Next 2026 DM Recap Agentic Data Cloudを添えて / Google Cloud Next 2026 DM Recap](https://speakerdeck.com/nnaka2992/google-cloud-next-2026-dm-recap)
 
  [ ![Avatar for nnaka2992](https://secure.gravatar.com/avatar/5a979f182ec9a03fdc8099ae064e71eb?s=24) nnaka2992 ](https://speakerdeck.com/nnaka2992)
 
@@ -167,11 +139,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   100
 
- [
-
- 重要だけど測れていないもの：高齢者ケアの見えない課題
-
- ](https://speakerdeck.com/theoriatec2024/zhong-yao-dakedoce-reteinaimono-gao-ling-zhe-keanojian-enaike-ti)
+ [重要だけど測れていないもの：高齢者ケアの見えない課題](https://speakerdeck.com/theoriatec2024/zhong-yao-dakedoce-reteinaimono-gao-ling-zhe-keanojian-enaike-ti)
 
  [ ![Avatar for テオリア・テクノロジーズ](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTg0MDQyLCJwdXIiOiJibG9iX2lkIn19--a11cf3c988ed80f1908eb2616f1acf54295d2e73/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/Theoria_T_blue.png) theoriatec2024 ](https://speakerdeck.com/theoriatec2024)
 
@@ -179,11 +147,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   450
 
- [
-
- 2025年度秋葉原ウォーカブルプロジェクト調査報告 「アキバらしいウォーカブル」とは何か
-
- ](https://speakerdeck.com/izumiyama_lab/2025nian-du-diao-cha-bao-gao-akibarasiiuokaburu-tohahe-ka)
+ [2025年度秋葉原ウォーカブルプロジェクト調査報告 「アキバらしいウォーカブル」とは何か](https://speakerdeck.com/izumiyama_lab/2025nian-du-diao-cha-bao-gao-akibarasiiuokaburu-tohahe-ka)
 
  [ ![Avatar for 日本大学 都市計画研究室（泉山ゼミ）](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Njk0MzYwLCJwdXIiOiJibG9iX2lkIn19--1be62bf94d04e81397e5c1baa71e453b19f54102/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/%E3%83%AD%E3%82%B4%E5%AE%8C%E6%88%90%E7%89%88%EF%BC%BF%E8%83%8C%E6%99%AF%E9%80%8F%E6%98%8E.png) izumiyama_lab ](https://speakerdeck.com/izumiyama_lab)
 
@@ -203,11 +167,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   630
 
- [
-
- 第64回CV・PRML勉強会 論文紹介：Linguistic Priors for Visual Decoupling: Towards Symmetric Vision-Brain Alignment
-
- ](https://speakerdeck.com/sokikatayama/di-64hui-cvprmlmian-qiang-hui-lun-wen-shao-jie-linguistic-priors-for-visual-decoupling-towards-symmetric-vision-brain-alignment)
+ [第64回CV・PRML勉強会 論文紹介：Linguistic Priors for Visual Decoupling: Towards Symmetric Vision-Brain Alignment](https://speakerdeck.com/sokikatayama/di-64hui-cvprmlmian-qiang-hui-lun-wen-shao-jie-linguistic-priors-for-visual-decoupling-towards-symmetric-vision-brain-alignment)
 
  [ ![Avatar for Soki Katayama](https://secure.gravatar.com/avatar/f07c5912a741767d06c412ed6d52b531?s=24) sokikatayama ](https://speakerdeck.com/sokikatayama)
 
@@ -215,11 +175,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   150
 
- [
-
- kintone リサーチ副部/UXリサーチャー 業務紹介
-
- ](https://speakerdeck.com/cybozuinsideout/kintone-researcher)
+ [kintone リサーチ副部/UXリサーチャー 業務紹介](https://speakerdeck.com/cybozuinsideout/kintone-researcher)
 
  [ ![Avatar for Cybozu](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTE1MzQsInB1ciI6ImJsb2JfaWQifX0=--27e7f85415c65b868b4c1afa18dbb922c9361d8b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/ILMxngMD_400x400.png) cybozuinsideout ](https://speakerdeck.com/cybozuinsideout)
 
@@ -229,11 +185,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   130
 
- [
-
- LA-Bench 2025：実験指示から実行可能手順を生成するためのデータセット/LA-Bench 2025: A Dataset for Generating Executable Experimental Procedures from Experimental Instructions
-
- ](https://speakerdeck.com/stktu/la-bench-2025-a-dataset-for-generating-executable-experimental-procedures-from-experimental-instructions)
+ [LA-Bench 2025：実験指示から実行可能手順を生成するためのデータセット/LA-Bench 2025: A Dataset for Generating Executable Experimental Procedures from Experimental Instructions](https://speakerdeck.com/stktu/la-bench-2025-a-dataset-for-generating-executable-experimental-procedures-from-experimental-instructions)
 
  [ ![Avatar for Shota Kato](https://secure.gravatar.com/avatar/d60dc42bf3b7ad6628b0e67527f441b6?s=24) stktu ](https://speakerdeck.com/stktu)
 
@@ -241,11 +193,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   110
 
- [
-
- 第12回人と環境にやさしい交通をめざす全国大会／熊本都市圏「車1割削減、渋滞半減、公共交通2倍」をめざして
-
- ](https://speakerdeck.com/trafficbrain/20260315-hito-to-kankyo-ni-yasashii)
+ [第12回人と環境にやさしい交通をめざす全国大会／熊本都市圏「車1割削減、渋滞半減、公共交通2倍」をめざして](https://speakerdeck.com/trafficbrain/20260315-hito-to-kankyo-ni-yasashii)
 
  [ ![Avatar for Traffic Brain](https://secure.gravatar.com/avatar/e8f618bf29b36a046d01e235071b2ac3?s=24) trafficbrain ](https://speakerdeck.com/trafficbrain)
 
@@ -253,11 +201,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   140
 
- [
-
- Scalable dynamic origin-destination demand estimation enhanced by high-resolution satellite imagery data
-
- ](https://speakerdeck.com/satai/scalable-dynamic-origin-destination-demand-estimation-enhanced-by-high-resolution-satellite-imagery-data)
+ [Scalable dynamic origin-destination demand estimation enhanced by high-resolution satellite imagery data](https://speakerdeck.com/satai/scalable-dynamic-origin-destination-demand-estimation-enhanced-by-high-resolution-satellite-imagery-data)
 
  [ ![Avatar for SatAI.challenge](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2MDUwLCJwdXIiOiJibG9iX2lkIn19--b6d6ea071912ace3f41814c723917566e73c75f5/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/image%20(2).png) satai ](https://speakerdeck.com/satai)
 
@@ -269,11 +213,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [
-
- Lessons Learnt from Crawling 1000+ Websites
-
- ](https://speakerdeck.com/charlesmeaden/lessons-learnt-from-crawling-1000-plus-websites)
+ [Lessons Learnt from Crawling 1000+ Websites](https://speakerdeck.com/charlesmeaden/lessons-learnt-from-crawling-1000-plus-websites)
 
  [ ![Avatar for Charles Meaden](https://secure.gravatar.com/avatar/ce0e73fa718d3c8e32bf992761c1968e?s=24) charlesmeaden ](https://speakerdeck.com/charlesmeaden)
 
@@ -283,11 +223,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   1.5k
 
- [
-
- The SEO Collaboration Effect
-
- ](https://speakerdeck.com/kristinabergwall1/the-seo-collaboration-effect)
+ [The SEO Collaboration Effect](https://speakerdeck.com/kristinabergwall1/the-seo-collaboration-effect)
 
  [ ![Avatar for Kristina Bergwall](https://secure.gravatar.com/avatar/ebbb8b31502fbaac10ecc9c5bca51501?s=24) kristinabergwall1 ](https://speakerdeck.com/kristinabergwall1)
 
@@ -295,11 +231,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   510
 
- [
-
- A better future with KSS
-
- ](https://speakerdeck.com/kneath/a-better-future-with-kss)
+ [A better future with KSS](https://speakerdeck.com/kneath/a-better-future-with-kss)
 
  [ ![Avatar for Kyle Neath](https://secure.gravatar.com/avatar/5f2da528927a2ec9ba4fec2069cbc958?s=24) kneath ](https://speakerdeck.com/kneath)
 
@@ -307,11 +239,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   18k
 
- [
-
- HDC tutorial
-
- ](https://speakerdeck.com/michielstock/hdc-tutorial)
+ [HDC tutorial](https://speakerdeck.com/michielstock/hdc-tutorial)
 
  [ ![Avatar for Michiel Stock](https://secure.gravatar.com/avatar/4888c8378accd22acc2998ddf1414e7f?s=24) michielstock ](https://speakerdeck.com/michielstock)
 
@@ -319,11 +247,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   780
 
- [
-
- The B2B funnel & how to create a winning content strategy
-
- ](https://speakerdeck.com/katarinadahlin/the-b2b-funnel-and-how-to-create-a-winning-content-strategy)
+ [The B2B funnel & how to create a winning content strategy](https://speakerdeck.com/katarinadahlin/the-b2b-funnel-and-how-to-create-a-winning-content-strategy)
 
  [ ![Avatar for Katarina Dahlin](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjAwNTg5LCJwdXIiOiJibG9iX2lkIn19--24cb98b2197cd4cdeb5e3ae1f94b4c1a162cd1bf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/Avainsana-analyysi%20thumbnails.png) katarinadahlin ](https://speakerdeck.com/katarinadahlin)
 
@@ -333,11 +257,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   460
 
- [
-
- Mind Mapping
-
- ](https://speakerdeck.com/helmedeiros/mind-mapping)
+ [Mind Mapping](https://speakerdeck.com/helmedeiros/mind-mapping)
 
  [ ![Avatar for Hélio Medeiros](https://secure.gravatar.com/avatar/b870070e35cb43df68fceaee71755106?s=24) helmedeiros ](https://speakerdeck.com/helmedeiros)
 
@@ -347,11 +267,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   300
 
- [
-
- Building AI with AI
-
- ](https://speakerdeck.com/inesmontani/building-ai-with-ai)
+ [Building AI with AI](https://speakerdeck.com/inesmontani/building-ai-with-ai)
 
  [ ![Avatar for Ines Montani](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjkwMDgsInB1ciI6ImJsb2JfaWQifX0=--32562a32b00d456c251338e2bbab3b3a7c1775bf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/profile_ines.jpg) inesmontani ](https://speakerdeck.com/inesmontani)
 
@@ -361,11 +277,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   1.1k
 
- [
-
- 職位にかかわらず全員がリーダーシップを発揮するチーム作り / Building a team where everyone can demonstrate leadership regardless of position
-
- ](https://speakerdeck.com/madoxten/building-a-team-where-everyone-can-demonstrate-leadership-regardless-of-position)
+ [職位にかかわらず全員がリーダーシップを発揮するチーム作り / Building a team where everyone can demonstrate leadership regardless of position](https://speakerdeck.com/madoxten/building-a-team-where-everyone-can-demonstrate-leadership-regardless-of-position)
 
  [ ![Avatar for MADOX](https://secure.gravatar.com/avatar/c17f3305cb0231227adae066aa770c51?s=24) madoxten ](https://speakerdeck.com/madoxten)
 
@@ -373,11 +285,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   56k
 
- [
-
- Kristin Tynski - Automating Marketing Tasks With AI
-
- ](https://speakerdeck.com/techseoconnect/kristin-tynski-automating-marketing-tasks-with-ai)
+ [Kristin Tynski - Automating Marketing Tasks With AI](https://speakerdeck.com/techseoconnect/kristin-tynski-automating-marketing-tasks-with-ai)
 
  [ ![Avatar for Tech SEO Connect](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2NjU4LCJwdXIiOiJibG9iX2lkIn19--14f297c27d2190051dc109b5d472cf0297dd6c3e/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/40575_logo_social%20media%20profile%204.png) techseoconnect ](https://speakerdeck.com/techseoconnect)
 
@@ -387,11 +295,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   440
 
- [
-
- Practical Orchestrator
-
- ](https://speakerdeck.com/shlominoach/practical-orchestrator)
+ [Practical Orchestrator](https://speakerdeck.com/shlominoach/practical-orchestrator)
 
  [ ![Avatar for Shlomi Noach](https://secure.gravatar.com/avatar/168ccec72eee0530b818d44f3fedaacf?s=24) shlominoach ](https://speakerdeck.com/shlominoach)
 
@@ -399,11 +303,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   12k
 
- [
-
- Building a A Zero-Code AI SEO Workflow
-
- ](https://speakerdeck.com/portentint/building-a-a-zero-code-ai-seo-workflow)
+ [Building a A Zero-Code AI SEO Workflow](https://speakerdeck.com/portentint/building-a-a-zero-code-ai-seo-workflow)
 
  [ ![Avatar for Ian Lurie](https://secure.gravatar.com/avatar/96251c01a6e587b796d043b064fe5224?s=24) portentint ](https://speakerdeck.com/portentint)
 
@@ -413,11 +313,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   650
 
- [
-
- Discover your Explorer Soul
-
- ](https://speakerdeck.com/emna__ayadi/discover-your-explorer-soul)
+ [Discover your Explorer Soul](https://speakerdeck.com/emna__ayadi/discover-your-explorer-soul)
 
  [ ![Avatar for Emna](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzI5LCJwdXIiOiJibG9iX2lkIn19--c59e14bd8fc81f3e291b47c9b3de17d20d6d955b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/emna__ayadi.jpg) emna__ayadi ](https://speakerdeck.com/emna__ayadi)
 

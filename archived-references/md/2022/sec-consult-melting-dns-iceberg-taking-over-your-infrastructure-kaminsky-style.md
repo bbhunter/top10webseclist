@@ -64,7 +64,7 @@ page going offline. To read the original, follow the link above.
 
 Hidden DNS resolvers and how to compromise your infrastructure
 
-![](https://sec-consult.com/fileadmin/_processed_/0/8/csm_sec-consult-h-iceberg_d410848abc.jpg)
+!
 
 *By analyzing closed DNS resolvers on the Internet, we found numerous ISPs and hosting providers that are vulnerable to trivial [Kaminsky attacks](https://www.blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf). This allows an attacker to manipulate the DNS name resolution of thousands of systems. As a consequence, e-mail redirections, account takeovers and even the compromise of entire systems may be possible. Closed DNS resolvers all across the world are affected.*
 
@@ -80,13 +80,13 @@ The Q&A section at the bottom of this article covers these and many more questio
 
 In our blog post [“Forgot password? Taking over user accounts Kaminsky style”](https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/) we showed how an attacker can take over user accounts of a web application by manipulating the DNS name resolution. Furthermore, we went into detail on how to find vulnerabilities in DNS setups of web applications and the fact that such vulnerabilities exist, even today. **However**, we didn’t tackle the core problem!
 
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2022_10/sec-consult-c-iceberg-kaminsky-dns-fig1.jpg)
+!
 
 * Figure 1: Open and closed resolvers *
 
 In general, if a system wants to resolve a name via DNS, a DNS resolver is used. A popular example for a DNS resolver is Google’s 8.8.8.8 resolver (as shown in figure 1). This resolver is **public/open** and can therefore be used by anyone on the Internet. Contrary to public/open resolvers, there are **closed **resolvers. Such resolvers reside in internal networks or are only accessible by a select group of systems. Closed resolvers may, for example, be provided to servers of a hosting provider, customers of an ISP or clients of a company. It is generally not expected that anyone on the Internet can access closed resolvers.
 
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2022_10/sec-consult-c-iceberg-kaminsky-dns-fig2.jpg)
+!
 
 * Figure 2: The DNS resolver iceberg *
 
@@ -96,7 +96,7 @@ Or metaphorically speaking: **What is hiding beneath the DNS resolver iceberg?**
 
 That’s what we’re going to find out!
 
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2022_10/sec-consult-c-iceberg-kaminsky-dns-fig3.jpg)
+!
 
 * Figure 3: Accessing closed resolvers with a spoofed source IP address *
 
@@ -110,13 +110,13 @@ However, not every company exposes a web application, let alone has registration
 
 Though, this would not allow us to test resolvers in internal networks. That’s why we chose another, even easier, method. SPF, DKIM and DMARC are mechanisms for e-mail spam protection that utilize the DNS. Now, we can "exploit" these mechanisms to analyze closed resolvers. "But, how do we do that?", one might ask.
 
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2022_10/sec-consult-c-iceberg-adns-fig4.gif)
+!
 
 ## Exploiting Spam Protection
 
 When sending an e-mail, the receiving e-mail server checks if the sender is allowed to send e-mails for the specified domain to prevent spam. For example, if we’re sending an e-mail as "test@**gmail.com**", the e-mail server will most likely send DNS queries for SPF, DKIM and DMARC information for "**gmail.com**". This means, that the resolver must contact the authoritative nameserver (ADNS) of **gmail.com** (as outlined in figure 4).
 
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2022_10/sec-consult-c-iceberg-kaminsky-dns-fig5.jpg)
+!
 
 * Figure 5: Closed resolver querying the analysis ADNS for SPF, DKIM and DMARC info *
 
@@ -124,7 +124,7 @@ Figure 4: Closed resolver querying the ADNS of "gmail.com" for SPF, DKIM and DMA
 
 Now, if we’re specifying our own analysis domain in the e-mail address (eg., **test@0100001337.analysis.example**), we can get the resolver to communicate with our own analysis ADNS for the "analysis.example" domain. This allows us to analyze the DNS name resolution of a potentially closed resolver. As always, a picture is worth more than a thousand words (see figure 5).
 
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2022_10/sec-consult-c-iceberg-kaminsky-dns-fig6.jpg)
+!
 
 * Figure 6: Analysis process for closed resolvers *
 
@@ -156,7 +156,7 @@ Furthermore, to also trigger DNS queries for DKIM records, we add a DKIM signatu
 
 Now, we can send this e-mail to a number of somewhat important domains and hope for the best/worst!
 
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2022_10/sec-consult-c-iceberg-kaminsky-dns-fig7.jpg)
+!
 
 * Figure 7: Scatterplot of UDP source ports used by a closed resolver *
 
@@ -164,11 +164,11 @@ Now, we can send this e-mail to a number of somewhat important domains and hope 
 
 After going through the data of the first hundred domains the results were… underwhelming. However, just as we thought that we’re not going to find anything interesting, we found a domain with the following scatter plot of UDP source ports (see figure 7). To some people this might just look like some dots on a white canvas, but for us these dots meant a lot more. This is because these dots visualize the random distribution of source ports of a DNS resolver. However, as we can see, these source ports are not distributed randomly, but statically. So, what does that mean exactly?
 
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2022_10/sec-consult-c-iceberg-kaminsky-dns-fig8.jpg)
+!
 
 * Figure 8: Off-path attacking a DNS resolver *
 
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2022_10/sec-consult-c-iceberg-kaminsky-dns-fig9.jpg)
+!
 
 * Figure 9: Very simplified Kaminsky attack *
 
@@ -178,7 +178,7 @@ In 2008, Dan Kaminsky showed the world how important the random distribution of 
 
 However, nowadays it’s not quite that simple. An attacker must also guess the correct random 16-bit DNS ID and the correct random 16-bit UDP source port of the legitimate response. Combined that’s 32 random bits that amount to roughly 4 billion different combinations. Have fun guessing that! But back in 2008, only a few DNS resolvers actually used random source ports, making guessing roughly 65 000 times easier! This eventually led to Dan Kaminsky discovering the [Kaminsky attack](https://www.blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf), which allows to manipulate caches of DNS resolvers with arbitrary DNS records, as displayed in figure 9.
 
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2022_10/sec-consult-c-iceberg-kaminsky-dns-fig10.jpg)
+!
 
 * Figure 10: Getting from an external resolver IP to other vulnerable domains 1/2 *
 
@@ -188,7 +188,7 @@ Finding a static UDP source port distribution is great (at least for us), but we
 
 By checking the autonomous system number (ASN) of the IP address of the resolver, we discovered that the IP belongs to a hosting provider. Furthermore, by doing a reverse DNS lookup, we saw that the IP address is also associated with the name "**dns3.victim.example**". This sounds a lot like the name of an ADNS! Using a passive DNS database, we then revealed hundreds of domains hosted on this ADNS. Sending e-mails to these domains then allowed us to analyze their DNS name resolution. That way, 306 more domains were identified to be using static source ports for DNS queries (see figure 10).
 
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2022_10/sec-consult-c-iceberg-kaminsky-dns-fig11.jpg)
+!
 
 * Figure 11: Getting from an external resolver IP to other vulnerable domains 2/2 *
 
@@ -196,7 +196,7 @@ Bingo! But there is still more!
 
 In some cases, the external IP address of the resolver is linked to a domain name like "**id3451.mailprovider.example**". This is a big indicator that the domain is using an external e-mail provider! By searching for the MX records of the originally identified vulnerable domain in a passive DNS database, we can find thousands of other domains that use the same MX records/e-mail servers. Testing these domains for static source ports in their DNS name resolution leads to hundreds of more vulnerable domains (as outlined in figure 11).
 
-![](https://sec-consult.com/fileadmin/_processed_/f/7/csm_sec-consult-c-iceberg-kaminsky-dns-fig12_8e24df77c5.jpg)
+!
 
 * Figure 12: Heatmap of affected domains by IP address *
 
@@ -217,7 +217,7 @@ nz      gov     se      br      pa      pt      ru      li      ky      ms      
 
 The heatmap of affected domains shows, that vulnerable servers are spread mainly across the northern hemisphere (see figure 12).
 
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2022_10/sec-consult-c-iceberg-kaminsky-dns-fig13.jpg)
+!
 
 * Figure 13: The closed resolver iceberg *
 
@@ -227,7 +227,7 @@ Due to only having analyzed roughly 7000 domains, this is still probably only th
 
 So, now we can manipulate the DNS name resolution of thousands of domains via Kaminsky attacks. But, where’s the problem?
 
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2022_10/sec-consult-c-iceberg-kaminsky-dns-fig14.jpg)
+!
 
 * Figure 14: Taking over user accounts Kaminsky style *
 
@@ -239,19 +239,19 @@ This is especially delicate when thinking about administrative interfaces (e.g.,
 
 Furthermore, it might be possible to manipulate SPF, DKIM and DMARC information, essentially allowing all kinds of e-mail spoofing (see figure 17). Also, by manipulating the DNS name resolution of a server, most network connections that depend on a DNS name resolution can be redirected, intercepted and maybe even manipulated. Dan Kaminsky gave a good overview of [possible DNS attack vectors](https://www.blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf) back in 2008!
 
-![](https://sec-consult.com/fileadmin/_processed_/8/5/csm_sec-consult-c-iceberg-kaminsky-dns-fig15_cda99807fe.jpg)
+!
 
 * Figure 15: WordPress login exposing "Forgot password?" functionality *
 
-![](https://sec-consult.com/fileadmin/_processed_/7/4/csm_sec-consult-c-iceberg-kaminsky-dns-fig16_b3a36f7d31.jpg)
+!
 
 * Figure 16: Control panel login exposing "Forgot password?" functionality *
 
-![](https://sec-consult.com/fileadmin/_processed_/4/4/csm_sec-consult-c-iceberg-kaminsky-dns-fig17_036c414bf2.jpg)
+!
 
 * Figure 17: Redirecting SPF lookups to the attacker *
 
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2022_10/sec-consult-c-iceberg-kaminsky-attack-anim-fig18.gif)
+!
 
 ## Proof of Concept
 

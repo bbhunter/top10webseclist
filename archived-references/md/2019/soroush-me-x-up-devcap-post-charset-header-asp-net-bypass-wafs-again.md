@@ -163,13 +163,7 @@ This entry was posted in [Security Posts](https://soroush.me/blog/category/secur
 
 Creation date: May 4, 2019
 
-[
-
- Previous
-
-Danger of Stealing Auto Generated .NET Machine Keys
-
-](https://soroush.me/blog/danger-of-stealing-auto-generated-net-machine-keys)[
+[Previous Danger of Stealing Auto Generated .NET Machine Keys](https://soroush.me/blog/danger-of-stealing-auto-generated-net-machine-keys)[
 
 Next
 

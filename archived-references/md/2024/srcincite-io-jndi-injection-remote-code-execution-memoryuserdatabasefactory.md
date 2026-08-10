@@ -374,7 +374,7 @@ new InitialContext().lookup("rmi://127.0.0.1:1099/Rce");
 
 ```
 
-![](https://srcincite.io/assets/images/jndi-injection-rce-via-path-manipulation-in-memoryuserdatabasefactory/rce.png)
+!
 
 ## Conclusion
 

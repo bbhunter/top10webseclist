@@ -110,6 +110,21 @@ PAPER_PHRASE = re.compile(
     r"\b(?:white ?paper|printable|print/download|pdf version|version of this"
     r"|as a pdf|read the paper|the paper|full paper"
     r"|download (?:the )?(?:paper|pdf))\b", re.IGNORECASE)
+
+# A LABEL THAT IS NOTHING BUT THE WORD. The phrases above are tuned for a
+# sentence - "you can also get this paper as a print/download friendly PDF" -
+# and so they missed a link whose entire label is `Paper`, which is how every
+# NDSS, USENIX and IEEE abstract page offers the real thing. The Cascading Spy
+# Sheets citation was published as our render of a 4,197-character abstract while
+# the paper sat one link away.
+#
+# Safe only because the target must be a PDF on the SAME SITE as the page: a
+# bare `Paper` pointing somewhere else is a citation of somebody else's work,
+# which is what most of the 215 same-site-only matches turned out to be.
+PAPER_LABEL = frozenset((
+    "paper", "pdf", "full paper", "paper (pdf)", "read paper", "preprint",
+    "download paper", "download pdf", "download the paper", "view paper",
+))
 _MARKDOWN_LINK = re.compile(r"\[([^\]\n]{0,80})\]\((https?://[^)\s]+\.pdf)\)",
                             re.IGNORECASE)
 _WAYBACK = re.compile(r"^https?://web\.archive\.org/web/[^/]+/(https?://.*)$",
@@ -129,7 +144,7 @@ def paper_link(markdown, source_url=""):
     for label, url in _MARKDOWN_LINK.findall(markdown or ""):
         if _site(url) != home:
             continue
-        if PAPER_PHRASE.search(label):
+        if PAPER_PHRASE.search(label) or _label(label) in PAPER_LABEL:
             return _unwrap(url)
     return ""
 

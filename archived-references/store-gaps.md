@@ -8,9 +8,11 @@ evidence behind those files: the content store no longer holds an object the
 manifest names, so the archive can show the document but can no longer show what
 it was made from.
 
-That is why this is not [needs-work.md](needs-work.md). Nothing here needs
-fetching before a reader can read it, and listing it as unfetched work buried
-the references that genuinely have no document.
+That is why this is not [document-gaps.md](document-gaps.md), which lists the
+references with no document at all. Nothing here needs fetching before a reader
+can read it, and listing it as unfetched work buried the references that
+genuinely have no document. [review-gaps.md](review-gaps.md) is the third: a
+document that is here, and that nobody has judged.
 
 The usual cause is a scanner: the corpus is exploit research, and an antivirus
 engine reads a write-up as the thing it describes. Exclude the store directory

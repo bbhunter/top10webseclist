@@ -70,37 +70,9 @@ Google Maps Api
 
 # Unauthorized Google Maps API Key Usage Cases, and Why You Need to Care
 
-[
-
-![Ozgur Alp](https://miro.medium.com/v2/resize:fill:64:64/1*xYDyc5B543QI9kxf9dGUjg.jpeg)
-
-](https://ozguralp.medium.com/?source=post_page---byline--1ccb28bf21e---------------------------------------)
+[![Ozgur Alp](https://miro.medium.com/v2/resize:fill:64:64/1*xYDyc5B543QI9kxf9dGUjg.jpeg)](https://ozguralp.medium.com/?source=post_page---byline--1ccb28bf21e---------------------------------------)
 
 [Ozgur Alp](https://ozguralp.medium.com/?source=post_page---byline--1ccb28bf21e---------------------------------------)
-
-5 min readJan 20, 2020
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F1ccb28bf21e&operation=register&redirect=https%3A%2F%2Fozguralp.medium.com%2Funauthorized-google-maps-api-key-usage-cases-and-why-you-need-to-care-1ccb28bf21e&user=Ozgur+Alp&userId=d836b28cb997&source=---header_actions--1ccb28bf21e---------------------clap_footer------------------)
-
---
-
-5
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F1ccb28bf21e&operation=register&redirect=https%3A%2F%2Fozguralp.medium.com%2Funauthorized-google-maps-api-key-usage-cases-and-why-you-need-to-care-1ccb28bf21e&user=Ozgur+Alp&userId=d836b28cb997&source=---header_actions--1ccb28bf21e---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F1ccb28bf21e&operation=register&redirect=https%3A%2F%2Fozguralp.medium.com%2Funauthorized-google-maps-api-key-usage-cases-and-why-you-need-to-care-1ccb28bf21e&source=---header_actions--1ccb28bf21e---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D1ccb28bf21e&operation=register&redirect=https%3A%2F%2Fozguralp.medium.com%2Funauthorized-google-maps-api-key-usage-cases-and-why-you-need-to-care-1ccb28bf21e&source=---header_actions--1ccb28bf21e---------------------post_audio_button------------------)
-
-Share
 
 **Note from 2022: ***Please note that most of the bug bounty platforms marking this vulnerability type as informational/low impact. So please make sure that the platform or program is accepting this kind of issues before reporting.*
 

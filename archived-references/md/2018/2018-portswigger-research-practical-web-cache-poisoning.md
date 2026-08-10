@@ -84,7 +84,7 @@ Director of Research
 
 -
 
- ![](https://portswigger.net/cms/images/21/ed/0358ad020c37-article-cache-poisoning-article.png)
+ !
 
 ## Abstract
 
@@ -102,7 +102,7 @@ You can also [watch my presentation](https://www.youtube.com/watch?v=j2RrmNxJZ5c
 
  To grasp cache poisoning, we'll need to take a quick look at the fundamentals of caching. Web caches sit between the user and the application server, where they save and serve copies of certain responses. In the diagram below, we can see three users fetching the same resource one after the other:
 
-![](https://portswigger.net/cms/images/d8/e5/22a1637dd763-article-cache.svg)
+!
 
  Caching is intended to speed up page loads by reducing latency, and also reduce load on the application server. Some companies host their own cache using software like Varnish, and others opt to rely on a Content Delivery Network (CDN) like Cloudflare, with caches scattered across geographical locations. Also, some popular web applications and frameworks like Drupal have a built-in cache.
 
@@ -146,7 +146,7 @@ This causes a healthy number of accidental breakages, but the fun really starts 
 
  The objective of web cache poisoning is to send a request that causes a harmful response that gets saved in the cache and served to other users.
 
-![](https://portswigger.net/cms/images/99/13/6505c296bdf4-article-cachepoisoningattack.svg)
+!
 
 In this paper, we're going to poison caches using unkeyed inputs like HTTP headers. This isn't the only way of poisoning caches - you can also use HTTP Response Splitting and [Request Smuggling](https://portswigger.net/blog/http-desync-attacks-request-smuggling-reborn) - but it is the most reliable. Please note that web caches also enable a different type of attack called [Web Cache Deception](https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html) which should not be confused with cache poisoning.
 
@@ -154,7 +154,7 @@ In this paper, we're going to poison caches using unkeyed inputs like HTTP heade
 
 We'll use the following methodology to find cache poisoning vulnerabilities:
 
-![](https://portswigger.net/cms/images/ec/b8/0d97faa475af-article-methodology-full-landscape.svg)
+!
 
 Rather than attempt to explain this in depth upfront, I'll give a quick overview then demonstrate it being applied to real websites.
 
@@ -393,7 +393,7 @@ Location: http://noshandnibble.blog/`
 
  By registering my own ghost.org account and setting up a custom domain, I could redirect requests sent to blog.cloudflare.com to my own site (now expired): wafproxy.net. This meant I could hijack resource loads like images:
 
-![](https://portswigger.net/cms/images/38/8b/c60d1ff4bc9d-article-cloudflareimage.png)
+!
 
 The next logical step of redirecting a JavaScript load to gain full control over blog.cloudflare.com was thwarted by a quirk – if you look closely at the redirect, you'll see it uses HTTP whereas the blog is loaded over HTTPS. This means that browsers' mixed-content protections kick in and block script/stylesheet redirections.
 
@@ -477,11 +477,11 @@ This finally got the response cached, although it later turned out that I could 
 
 In spite of the response being cached, the 'Share' result still remained unpoisoned; Facebook evidently wasn't hitting the particular Cloudflare cache that I'd poisoned. To identify which cache I needed to poison, I took advantage of a helpful debugging feature present on all Cloudflare sites - /cdn-cgi/trace:
 
-![](https://portswigger.net/cms/images/c8/7c/6846e4bc6c75-article-cloudfacebooktrace2.jpg.png)
+!
 
 Here, the colo=AMS line shows that Facebook has accessed wafproxy.net through a cache in Amsterdam. The target website was accessed via Atlanta, so I rented a $2/month VPS there and attempted the poisoning again:
 
-![](https://portswigger.net/cms/images/cb/6e/483a36392ba0-article-atlanta.png)
+!
 
 After this, anyone who attempted to share various pages on their site would end up sharing content of my choice. Here's a heavily redacted video of the attack:
 
@@ -508,11 +508,11 @@ Please log in`
 
 If an application uses a cache, these headers can be abused to confuse it into serving up incorrect pages. For example, this request has a cache key of /education?x=y but retrieves content from /gambling?x=y:
 
-![](https://portswigger.net/cms/images/7b/46/0dc96adf39de-article-cache-busting-1.svg)
+!
 
 The end result is that after sending this request, anyone who tries to access the Unity for education page gets a surprise:
 
-![](https://portswigger.net/cms/images/36/ff/73c660a4bcf4-article-unitymaybe.png)
+!
 
 The ability to swap around pages is more amusing than serious, but perhaps it has a place in a bigger exploit chain.
 
@@ -520,7 +520,7 @@ The ability to swap around pages is more amusing than serious, but perhaps it ha
 
 Drupal is often used with third party caches like Varnish, but it also contains an internal cache which is enabled by default. This cache is aware of the X-Original-URL header and includes it in its cache key, but makes the mistake of also including the query string from this header:
 
-![](https://portswigger.net/cms/images/6c/c2/0148b0dd31eb-article-cache-busting-2.svg)
+!
 
 While the previous attack let us replace a path with another path, this one lets us override the query string:
 
@@ -641,5 +641,3 @@ Also, we have released a collection of free, interactive labs so you can [try ou
 [Back to all articles](https://portswigger.net/research/articles)
 
  `
-
-## Related Research

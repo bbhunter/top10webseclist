@@ -72,7 +72,7 @@ A quite common use case in web applications is that users are allowed to enter s
 
 This is where HTML sanitizers/purifies come into play. Their main goal is to take untrusted input, sanitize it and produce safe HTML (HTML with all dangerous tags stripped).
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2019/09/Untitled-Diagram-1.png)
+!
 
 *Idea of HTML Sanitizers*
 
@@ -119,7 +119,7 @@ element.innerHTML = '<u>Some <i>HTML'
 
 the right part of the assignment gets automatically parsed and inserted into DOM tree as children of `element`. The thing about `innerHTML`, though, is that browser can *mutate* the string we wanted to insert. For instance, if I try to read the `element.innerHTML` from above, I’ll get the following result:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-2.png)
+!
 
 *Writing and reading from innerHTML*
 
@@ -145,7 +145,7 @@ At first sight, assigning `innerHTML` to itself shouldn’t matter. But the thin
 
 So the DOMPurify bypass could happen because I found a new vector of mXSS in current version of Chrome (77). Let’s start with an example:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-3.png)
+!
 
 *Trying to put <p> within <svg>*
 
@@ -153,13 +153,13 @@ I’m assigning an `<svg>` tag with `<p>` apparently being its child. However, a
 
 But let’s see what happens when I try to put a closing `</p>` tag in the SVG:
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-4.png)
+!
 
 *Trying to put </p> in <svg>*
 
 In a perhaps surprising turn of events, the `<p>` element is now a child of `<svg>`. Furthermore, as you can see at the bottom, Chrome automatically added the opening `<p>` tag. Which means that if I try to assign `innerHTML` to itself, it will mutate!
 
-![](https://research.securitum.com/wp-content/uploads/sites/2/2019/09/image-5.png)
+!
 
 *mXSS in Chrome*
 

@@ -85,7 +85,7 @@ Despite that success, Atia said that the attacker behind the DDoS has replaced t
 
 That attack Incapsula uncovered shares some characteristics with some research that [Jeremiah Grossman and Matt Johansen of WhiteHat Security](https://web.archive.org/web/20160425113158/https://threatpost.com/buy-an-ad-own-a-browser-botnet/101550) presented at Black Hat last year. In their example, an attacker could inject malicious Javascript into ads that are distributed via an ad network and force the user’s browsers to perform an operation, whether it’s launching a DDoS attack on a target server or something else.
 
- ![](https://web.archive.org/web/20160425113158im_/https://trtpost-wpengine.netdna-ssl.com/wp-content/uploads/avatars/12/1368562026-bpfull-68x68.jpg)
+ !
 
 ## About Dennis Fisher
 

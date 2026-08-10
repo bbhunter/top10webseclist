@@ -74,8 +74,6 @@ In my security research I often come across weird quirks and behaviours that are
 
 Slideshow
 
-Share
-
 L
 
 1
@@ -163,8 +161,6 @@ Let’s try chaining our previous path-traversed **/signin** redirect to the new
 
 Slideshow
 
-Share
-
 L
 
  Untitled presentation
@@ -173,8 +169,6 @@ L
 
 Slideshow
 
-Share
-
 L
 
  Untitled presentation
@@ -182,8 +176,6 @@ L
  FileEditViewInsertFormatSlideArrangeToolsExtensionsHelp
 
 Slideshow
-
-Share
 
 L
 
@@ -206,10 +198,6 @@ docs.google.com/file/d/0ALK4w9WgXcQUUk9PVA/edit
 Root
 
 Open with
-
-Share
-
-Share
 
 L
 
@@ -250,11 +238,7 @@ hi pls give access kthxbye
 
 Secret Folder
 
- [
-
-Manage sharing
-
-](https://docs.google.com/file/d/1sHy3aQXsIlnOCj-mBFxQ0ZXm4TzjjfFL/edit?usp=sharing_esp&userstoinvite=lyra.horse@gmail.com&sharingaction=manageaccess&role=writer&ts=66e724ba)
+ [Manage sharing](https://docs.google.com/file/d/1sHy3aQXsIlnOCj-mBFxQ0ZXm4TzjjfFL/edit?usp=sharing_esp&userstoinvite=lyra.horse@gmail.com&sharingaction=manageaccess&role=writer&ts=66e724ba)
 
 The button in that e-mail links to [https://drive.google.com/drive/folders/{ID}?usp=sharing_esp&userstoinvite=lyra.horse@gmail.com&sharingaction=manageaccess&role=writer&ts=66e724ba](https://drive.google.com/drive/folders/%7bID%7d?usp=sharing_esp&userstoinvite=lyra.horse@gmail.com&sharingaction=manageaccess&role=writer&ts=66e724ba) , which when opened, pops up the Share dialog with a notification of the request. Of course, that’s a Drive link, not a Docs one, but I tried copying all of the query parameters over to our Docs link and that seemed to do the trick!
 

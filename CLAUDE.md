@@ -5,7 +5,7 @@
   archived reference that needs recapturing (a file the manifest advertises but
   the tree lacks, a capture of the wrong page such as a parked domain, consent
   wall or homepage, a junk render), it MUST end up listed in
-  `archived-references/needs-work.md`. That file is generated — never edit it
+  `archived-references/document-gaps.md`. That file is generated — never edit it
   by hand. Record the fault instead: set `content_gap` on the entry in
   `archived-references/manifest.json` to
   `faulty capture: <what is wrong>; <remedy> (reported <date>)`, then run
@@ -15,12 +15,24 @@
   session, leave the manifest record in place and state in the final report
   that `refs.py index` still has to be run.
 
-  `needs-work.md` lists ONLY references the archive could not get a document
-  for. A reference whose Markdown and PDF are published is archived, even when
-  the content store no longer holds the bytes behind them; `index` files that
-  fault on `archived-references/store-gaps.md` instead. Never put one on the
-  other list — 1,011 fully archived references once buried the two that had no
-  document at all.
+  **Three gap reports, and putting a reference on the wrong one hides it.** Each
+  answers a different question, so check which before you write anything:
+
+  | Report | The document | What is missing |
+  |---|---|---|
+  | `document-gaps.md` | not archived | the document itself — generated |
+  | `review-gaps.md` | archived | a judgement that it came out right — by hand |
+  | `store-gaps.md` | archived | the source bytes it was made from — generated |
+
+  So `document-gaps.md` lists ONLY references the archive could not get a
+  document for. A reference whose Markdown and PDF are published is archived,
+  even when the content store no longer holds the bytes behind them: `index`
+  files that fault on `store-gaps.md`. And a document that is present but
+  unverified is neither — it belongs on `review-gaps.md`, which is written by
+  hand and is the one of the three a run must never overwrite or delete.
+
+  Never put a reference on the wrong list — 1,011 fully archived references once
+  buried the two that had no document at all.
 
 - The year lists (`2006.md` … `2025.md`) are curated by hand; the archive
   tooling never writes them. `website/data/catalogue.json` and

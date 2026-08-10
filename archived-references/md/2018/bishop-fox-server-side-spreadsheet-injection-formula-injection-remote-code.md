@@ -63,10 +63,6 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-Share
-
- [   ](https://www.facebook.com/share.php?u=https://bishopfox.com/blog/server-side-spreadsheet-injections&utm_medium=social&utm_source=facebook) [   ](https://twitter.com/intent/tweet?url=https://bishopfox.com/blog/server-side-spreadsheet-injections&utm_medium=social&utm_source=twitter&source=tweetbutton&text=) [   ](http://www.linkedin.com/shareArticle?mini=true&url=https://bishopfox.com/blog/server-side-spreadsheet-injections&utm_medium=social&utm_source=linkedin) [   ](https://bishopfox.com/feeds/technology.rss)
-
 Over the past year, I came across two server-side attack vectors based on CSV injection (explained well [here](https://www.contextis.com/blog/comma-separated-vulnerabilities)). The first case shows an instance of data exfiltration via Google Sheets Injection, while the second case demonstrates a path from formula injection to remote code execution.
 
 ## Case #1 Google Sheets Injection
@@ -170,7 +166,7 @@ After all the portions of the application were written to disk, the final DDE co
 
 These vulnerabilities show the emerging class of client-side vulnerabilities that are manifesting as server-side vulnerabilities. As we continue to rely on SaaS, and delegate tasks such as Office document file conversion away from the desktop environment, we can expect to see more client-side vulnerabilities emerge in server-side attack surface.
 
- ![](https://bishopfox.com/static/assets/images/backgrounds/lander-header-bg-black-lines.svg)
+ !
 
 Subscribe to our blog
 

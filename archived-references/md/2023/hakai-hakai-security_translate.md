@@ -63,50 +63,9 @@ _Machine translation of [`hakai-hakai-security.md`](hakai-hakai-security.md), wh
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
+[### LDAP - Understand It to Attack It ! Written by ** maxin**](https://hakaisecurity.io/ldap-entender-para-atacar/insights-blog/)
 
-[
-
-### LDAP - Understand It to Attack It
-
-![](https://hakaisecurity.io/wp-content/uploads/2025/08/profile-picture-gpt-small-150x150.jpg)
-
-Written by ** maxin**
-
-](https://hakaisecurity.io/ldap-entender-para-atacar/insights-blog/)
-
-[
-
-### Beerus Framework – A New Mobile Framework Emerges
-
-![](https://hakaisecurity.io/wp-content/uploads/2026/07/karane-inda-karane-inda-blush-150x150.png) ![](https://hakaisecurity.io/wp-content/uploads/2025/08/FotoPerfilDaniboy-150x150.png)
-
-Written by ** Tricta, Daniel Franca Lima**
-
-](https://hakaisecurity.io/beerus-framework-um-novo-framework-mobile-surge/insights-blog/) [
-
-### Defend Your Home: Threat Modeling in the Real World – Part 2 of 3
-
-![](https://hakaisecurity.io/wp-content/uploads/2025/01/Captura-de-tela-2025-01-30-090134-150x150.png) ![](https://hakaisecurity.io/wp-content/uploads/2026/04/img-150x150.jpeg)
-
-Written by ** Lucas William, Thiago Bispo**
-
-](https://hakaisecurity.io/defenda-sua-casa-modelagem-de-ameacas-no-mundo-real-parte-2-de-3/insights-blog/) [
-
-### AI and Voice Deepfakes: How Did We Create One?
-
-![](https://hakaisecurity.io/wp-content/uploads/2024/10/SABO-150x150.jpg)
-
-Written by ** Matheus**
-
-](https://hakaisecurity.io/ia-e-deepfakes-de-voz-como-criamos-um/insights-blog/) [
-
-### Save Money by Brushing Your Teeth - Unraveling Threat Modeling - Part 1 of 3.
-
-![](https://hakaisecurity.io/wp-content/uploads/2025/01/Captura-de-tela-2025-01-30-090134-150x150.png) ![](https://hakaisecurity.io/wp-content/uploads/2026/04/img-150x150.jpeg)
-
-Written by ** Lucas William, Thiago Bispo**
-
-](https://hakaisecurity.io/economize-dinheiro-escovando-os-dentes-desvendando-a-modelagem-de-ameacas-parte-1-de-3/insights-blog/)
+[### Beerus Framework – A New Mobile Framework Emerges ! ! Written by ** Tricta, Daniel Franca Lima**](https://hakaisecurity.io/beerus-framework-um-novo-framework-mobile-surge/insights-blog/) [### Defend Your Home: Threat Modeling in the Real World – Part 2 of 3 ! ! Written by ** Lucas William, Thiago Bispo**](https://hakaisecurity.io/defenda-sua-casa-modelagem-de-ameacas-no-mundo-real-parte-2-de-3/insights-blog/) [### AI and Voice Deepfakes: How Did We Create One? ! Written by ** Matheus**](https://hakaisecurity.io/ia-e-deepfakes-de-voz-como-criamos-um/insights-blog/) [### Save Money by Brushing Your Teeth - Unraveling Threat Modeling - Part 1 of 3. ! ! Written by ** Lucas William, Thiago Bispo**](https://hakaisecurity.io/economize-dinheiro-escovando-os-dentes-desvendando-a-modelagem-de-ameacas-parte-1-de-3/insights-blog/)
 
 [Discover the Hakai Insights blog](https://hakaisecurity.io/insights-blog)
 

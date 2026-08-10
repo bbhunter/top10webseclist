@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 During external penetration testing, I often see MS Exchange on the perimeter:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-12-35-13.png)
+!
 
 *Examples of MS Exchange web interfaces*
 
@@ -111,7 +111,7 @@ The specified in the *<EMailAddress>* tag email needs to be a primary email of a
 
 If the specified email has been accepted, you will get a big response containing a dynamically constructed XML. Examine the response, but don’t miss the four following items:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-01-09-20-7-1.png)
+!
 
 *An example of the Autodiscover service’s output*
 
@@ -123,13 +123,13 @@ In the <*OABUrl*> tag you will find a path to a directory with Offline Address B
 
 Using the <*OABUrl*> path, you can get an Address List of all Exchange users. To do so, request the *<OABUrl>/oab.xml* page from the server and list OAB files:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-12-47-11-1.png)
+!
 
 *Getting access to Offline Address Books*
 
 The Global Address List (GAL) is an Address Book that includes every mail-enabled object in the organization. Download its OAB file from the same directory, unpack it [via the oabextract tool from libmspack library](https://www.cabextract.org.uk/libmspack/), and run one of the OAB extraction tools or just a *strings* command to get access to user data:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-12-53-30.png)
+!
 
 *An example of extracting data via Offline Address Books*
 
@@ -154,7 +154,7 @@ Don’t confuse Exchange Autodiscover with Lync Autodiscover; they are two compl
 
 Ruler is a tool for connecting to Exchange via *MAPI over HTTP* or *RPC over HTTP v2* protocols and insert special-crafted records to a user mailbox to abuse the user’s Microsoft Outlook functions and make it execute arbitrary commands or code.
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-12-54-28.png)
+!
 
 *An example of Ruler usage*
 
@@ -181,7 +181,7 @@ Link to a tool: [https://github.com/sensepost/ruler](https://github.com/sensepos
 
 PEAS is a lesser-known alternative to Ruler. It’s a tool for connecting to Exchange via ActiveSync protocol and get access to any SMB server in the internal network:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-12-55-09.png)
+!
 
 *An example of PEAS usage*
 
@@ -193,7 +193,7 @@ Note #1
 
 It’s a good idea to modify PEAS hard-coded identifiers. Exchange stores identifiers of all ActiveSync clients, and Blue Teams can easily request them via an LDAP request. These records can be accessible via any user with at least Organization Management privileges:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-12-56-18.png)
+!
 
 *Getting a list of accounts that have used PEAS via LDAP using *(msExchDeviceID=123456)* filter*
 
@@ -215,11 +215,11 @@ Note #2
 
 The ActiveSync service supports http/https URLs for connecting to Windows SharePoint Services (WSS). This feature can be abused by performing a blind SSRF attack, and you will have an option to authenticate to the target with any credentials via NTLM:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-12-59-00.png)
+!
 
 *Forcing Exchange to make a WSS connection to http://SHP01/test/test/test with CONTOSO\sharepoint-setup account*
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-12-59-00-1.png)
+!
 
 *An example of a WSS connection: [activesync_wss_sample.pcap](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/activesync_wss_sample.pcap)*
 
@@ -249,7 +249,7 @@ In 2018, the ZDI Research Team discovered that Exchange authenticates to the spe
 
 [Impersonating Users on Microsoft Exchange](https://www.thezdi.com/blog/2018/12/19/an-insincere-form-of-flattery-impersonating-users-on-microsoft-exchange)
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-01-49.png)
+!
 
 *Forcing Exchange to make a connection to http://attacker.com/test/test/test*
 
@@ -292,13 +292,13 @@ Let’s run Ruler and see how it communicates via RPC over HTTP v2:
 
 **Connection #1**
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-11-29.png)
+!
 
 *Traffic dump of Ruler #1 connection*
 
 ****Parallel Connection** #2**
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-11-29-1.png)
+!
 
 *Traffic dump of Ruler #2 connection*
 
@@ -312,7 +312,7 @@ The endpoint */rpc/rpcproxy.dll* actually is not a part of Exchange. It’s a pa
 
 The Exchange RPC Server is on port 6001 in our case:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-34-33.png)
+!
 
 *An example of a pure ncacn_http endpoint*
 
@@ -320,7 +320,7 @@ We will refer to such ports as **ncacn_http** services/endpoints. According to t
 
 RPC IN and OUT channels operate independently, and they can potentially pass through different RPC Proxies, and the RPC Server can be on a different host as well:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/MS-Exchange_scheme_1_v.03-2-3.jpg)
+!
 
 The RPC Server, i.e., the ncacn_http endpoint orchestrates IN and OUT channels, and packs or unpacks MSRPC packets into or from them.
 
@@ -330,19 +330,19 @@ Both RPC Proxies and RPC Servers control the amount of traffic passing through t
 
 In the RPC over HTTP v2 traffic dump, you can see that Ruler obtained the RPC Server name from the Autodiscover service and put it into the URL:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-35-50.png)
+!
 
 *Traffic dump of Ruler’s RPC over HTTP v2 connection*
 
 Interestingly, according to the MS-RPCH specification, this URL should contain a hostname or an IP; and such “GUID hostnames” cannot be used:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-37-02.png)
+!
 
 *An excerpt from the MS-RPCH specification: [2.2.2 URI Encoding](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-rpch/0b7aecea-cd35-436d-9b4b-ae1e1fd5174f)*
 
 The article by Microsoft [RPC over HTTP Security](https://docs.microsoft.com/en-us/windows/win32/rpc/rpc-over-http-security) also mentions nothing about this format, but it shows the registry key where RPC Proxies contain allowed values for this URL: `HKLM\Software\Microsoft\Rpc\RpcProxy`.
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-08-15-17-00-11.png)
+!
 
 *An example of a content of HKLM\Software\Microsoft\Rpc\RpcProxy key *
 
@@ -350,7 +350,7 @@ It was discovered that each RPC Proxy has a default ACL that accepts connections
 
 Since RPC Proxies support NTLM authentication, we can always get theirs NetBIOS names via NTLMSSP:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-41-48.png)
+!
 
 *An example of getting target NetBIOS name via NTLMSSP using nmap*
 
@@ -358,11 +358,11 @@ So now we likely have a technique for connecting to RPC Proxies without usage of
 
 Based on the code available in Impacket, I’ve developed RPC over HTTP v2 protocol implementation, rpcmap.py utility, and slightly modified rpcdump.py to verify our ideas and pave the way for future steps:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-42-54.png)
+!
 
 *Running rpcmap.py for Exchange 2019. The previous version of this tool was contributed to Impacket in May 2020.*
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-43-37.png)
+!
 
 *Traffic dump of RPC IN Channel of rpcmap.py*
 
@@ -497,13 +497,13 @@ MS-OXNSPI is one of the protocols that Outlook uses to access Address Books. MS-
 
 MS-OXNSPI contains 21 operations to access Address Books. It appears to be an OAB with search and dynamic queries:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-15-20-21.png)
+!
 
 *Contents of [the MS-OXNSPI specification](https://docs.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-oxnspi/63662a26-c8fc-4493-a41a-fbcbb7e43136)*
 
 The important thing for working with MS-OXNSPI is understanding what Legacy DN is. In the specification you will see terms “DN” and “DNs” that seem to refer to Active Directory:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-45-07-1.png)
+!
 
 *An excerpt from the MS-OXNSPI specification: [3.1.4.1.13 NspiDNToMId](https://docs.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-oxnspi/a4e056f0-7d05-4e6d-8acb-65751e83a071)*
 
@@ -528,7 +528,7 @@ Let’s see how it’s done in practice.
 
 I’ve developed the implementation of MS-OXNSPI protocol, but before we use it, let’s request our sample object via LDAP:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-48-08.png)
+!
 
 *Connecting to Active Directory via LDAP and getting information about a sample user*
 
@@ -536,7 +536,7 @@ As expected, the distinguishedName field contains the object’s Active Director
 
 To request information about this user via MS-OXNSPI, we will use its Legacy DN as a DN, as it represents a DN in our imaginary X.500 space:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-48-53.png)
+!
 
 *Connecting to Exchange via MS-OXNSPI and performing the NspiDNToMId operation*
 
@@ -546,7 +546,7 @@ Also note we have used “Administrator” account and it worked despite the fac
 
 Let’s request all the object properties via the obtained temporary identifier:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-49-34.png)
+!
 
 *Requesting the sample object information via MS-OXNSPI*
 
@@ -558,7 +558,7 @@ As the documentation describes operations to get all members of any Address Book
 
 One of the key terms in MS-OXNSPI is Minimal Entry ID (MId). MIDs are 4-byte integers that act like temporary identifiers during a single MS-OXNSPI session:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-50-14.png)
+!
 
 *An excerpt from the MS-OXNSPI specification: [2.2.9.1 MinimalEntryID](https://docs.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-oxnspi/902ede0d-bb0a-46f0-bf68-03a6ed08d4e8)*
 
@@ -566,7 +566,7 @@ The documentation does not disclose the algorithm used for MIDs creation.
 
 To explore how MIDs are formed, we will call NspiGetSpecialTable operation and obtain a list of existing Address Books:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-50-55.png)
+!
 
 *The demonstration of usage of NspiGetSpecialTable operation*
 
@@ -588,7 +588,7 @@ Take a look into the PidTagEntryId field in the shown output. It contains new fo
 
 If you will try to request objects using this format, you will discover you can get any Active Directory object by its objectGUID:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-55-04.png)
+!
 
 *Getting access to a service account’s data by its objectGUID*
 
@@ -604,17 +604,17 @@ So, we need very little to obtain whole Active Directory data: we must either ge
 
 I redrawn the previously used schematic to show how MS-OXNSPI works from the server perspective:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/MS-Exchange_scheme_1_v.03-3-1.jpg)
+!
 
 Exchange does not match or sort the data itself; it’s acting like a proxy. Most of the work happens on Domain Controllers. Exchange uses LDAP and MS-NSPI protocols to connect to DCs to access the Active Directory database.
 
 MS-NSPI is the MSRPC protocol that is almost fully compliant with MS-OXNSPI:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-58-54.png)
+!
 
 *Contents of [the MS-OXNSPI specification](https://docs.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-oxnspi/63662a26-c8fc-4493-a41a-fbcbb7e43136)*
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-13-58-54-1.png)
+!
 
 *Contents of [the MS-NSPI specification](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-nspi/6dd0a3ea-b4d4-4a73-a857-add03a89a543)*
 
@@ -630,13 +630,13 @@ So, MS-NSPI is the third network protocol after LDAP and MS-DRSR (MS-DRSR is als
 
 Let’s connect to a Domain Controller via MS-NSPI using our code developed for MS-OXNSPI:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-14-01-20.png)
+!
 
 *Determining MS-NSPI endpoint on a DC and connecting to it*
 
 And let’s call NspiGetSpecialTable, the operation we previously used for obtaining a list of existing Address Books, directly on a DC:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-14-02-13.png)
+!
 
 *Calling NspiGetSpecialTable on a Domain Controller*
 
@@ -665,7 +665,7 @@ It’s clear Domain Controllers MIDs and Exchange MIDs are not intersecting. It�
 
 This is one of the ways how Exchange devolves data matching operations to Domain Controllers. An example of an operation that clearly shows this can be NspiUpdateStat:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-15-16-29.png)
+!
 
 *Calling the NspiUpdateStat operation via MS Exchange*
 
@@ -681,35 +681,35 @@ If you are wondering if we can look up all DNTs from zero to a large number as M
 
 The exchanger.py utility was developed to conduct all described movements:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-15-23-20.png)
+!
 
 *Displaying supported attacks in exchanger.py*
 
 The *list-tables* attack lists Address Books and can count entities in every one of them:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-15-24-36.png)
+!
 
 *Example usage of the list-tables attack*
 
 The *dump-tables* attack can dump any specified Address Book by its name or GUID. It supports requesting all the properties, or one of the predefined set of fields. It’s capable of getting any number of rows via one request:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-15-25-21.png)
+!
 
 *The help of the dump-tables attack*
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-15-26-43.png)
+!
 
 *Example usage of the dump-tables attack*
 
 The *guid-known* attack returns Active Directory objects by their GUIDs. It’s capable of looking up GUIDs from a specified file.
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-15-27-39.png)
+!
 
 *Example usage of the guid-known attack*
 
 The *dnt-lookup* option dumps all Active Directory records via requesting DNTs. It requests multiple DNTs at one time to speed up the attack and reduce traffic:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-15-28-28.png)
+!
 
 *Example usage of the dnt-lookup attack*
 
@@ -734,7 +734,7 @@ The tool doesn’t support usage of the Autodiscover service, since during many 
 
 When Basic is forced or Microsoft TMG is covering the Exchange, the tool will not be able to get the RPC Server name from NTLMSSP, or this name will not work. If this happens, manually request the RPC Server name via Autodiscover or find it in HTTP headers, in sources of OWA login form, or in mail headers of emails from the server and set it in *-rpc-hostname* flag:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-23-15-29-22.png)
+!
 
 *Examples of setting -rpc-hostname flag*
 

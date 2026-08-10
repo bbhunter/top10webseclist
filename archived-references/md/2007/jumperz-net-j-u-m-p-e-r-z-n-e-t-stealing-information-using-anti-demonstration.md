@@ -63,19 +63,19 @@ page going offline. To read the original, follow the link above.
 
 J U M P E R Z . N E T - Stealing Information Using Anti-DNS Pinning ( DNS Rebinding ) : Online Demonstration
 
- [![](http://www.jumperz.net/images/japan.gif)](http://www.jumperz.net/ja.html)
+ [!](http://www.jumperz.net/ja.html)
 
-|  ![](http://www.jumperz.net/images/spacer.gif) |
+|  ! |
 
-|  [![](http://www.jumperz.net/images/title.gif)](http://www.jumperz.net/index.php) |   |
-|  ![](http://www.jumperz.net/images/black.gif) |  ![](http://www.jumperz.net/images/shadow_ru.gif) |   |
-|   ** [ ![Tools](http://www.jumperz.net/images/corner/0.gif) ](http://www.jumperz.net/index.php?i=1&a=0) ![](http://www.jumperz.net/images/corner/line2.gif) [ ![Exploits](http://www.jumperz.net/images/corner/1.gif) ](http://www.jumperz.net/index.php?i=1&a=1) ![](http://www.jumperz.net/images/corner/line2.gif) [ ![Advisories](http://www.jumperz.net/images/corner/2.gif) ](http://www.jumperz.net/index.php?i=1&a=2) ![](http://www.jumperz.net/images/corner/line2.gif) [ ![Articles](http://www.jumperz.net/images/corner/3.gif) ](http://www.jumperz.net/index.php?i=1&a=3) ![](http://www.jumperz.net/images/corner/line2.gif) [![Home](http://www.jumperz.net/images/corner/home.gif)](http://www.jumperz.net/index.php) **  |  ![](http://www.jumperz.net/images/spacer.gif) |   |
-|  ![](http://www.jumperz.net/images/black.gif) |  ![](http://www.jumperz.net/images/spacer.gif) |   |
-|  ![](http://www.jumperz.net/images/shadow_ll.gif) |  ![](http://www.jumperz.net/images/shadow_rl.gif) |   |
+|  [!](http://www.jumperz.net/index.php) |   |
+|  ! |  ! |   |
+|   ** [ ![Tools](http://www.jumperz.net/images/corner/0.gif) ](http://www.jumperz.net/index.php?i=1&a=0) ! [ ![Exploits](http://www.jumperz.net/images/corner/1.gif) ](http://www.jumperz.net/index.php?i=1&a=1) ! [ ![Advisories](http://www.jumperz.net/images/corner/2.gif) ](http://www.jumperz.net/index.php?i=1&a=2) ! [ ![Articles](http://www.jumperz.net/images/corner/3.gif) ](http://www.jumperz.net/index.php?i=1&a=3) ! [![Home](http://www.jumperz.net/images/corner/home.gif)](http://www.jumperz.net/index.php) **  |  ! |   |
+|  ! |  ! |   |
+|  ! |  ! |   |
 
   |   |
 
-|  ![](http://www.jumperz.net/images/spacer.gif) |
+|  ! |
 
 |    [ Exploits ](http://www.jumperz.net/index.php?i=1&a=1) ->  **Stealing Information Using Anti-DNS Pinning ( DNS Rebinding ) : Online Demonstration**
 
@@ -85,7 +85,7 @@ J U M P E R Z . N E T - Stealing Information Using Anti-DNS Pinning ( DNS Rebind
  http:///
 
  **Browsers tested**
- ![](http://www.jumperz.net/images/black.gif)
+ !
 
  IE7.0 on WindowsXP/SP2  Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322)
  IE6.0 on WindowsXP/SP2
@@ -97,15 +97,15 @@ J U M P E R Z . N E T - Stealing Information Using Anti-DNS Pinning ( DNS Rebind
  Opera 9.0.2 on Windows2000/SP4
 
  **Links**
- ![](http://www.jumperz.net/images/black.gif)
+ !
 
  [It's a shampoo world anyway](http://shampoo.antville.org/stories/1451301/)
  [ha.ckers.org](http://ha.ckers.org/blog/20060908/dns-pinning-just-got-worse/)
 
    |   |
 
-  |   ![](http://www.jumperz.net/images/spacer.gif)
- ![](http://www.jumperz.net/images/spacer.gif)
+  |   !
+ !
 
 |
 
@@ -116,8 +116,8 @@ J U M P E R Z . N E T - Stealing Information Using Anti-DNS Pinning ( DNS Rebind
 
   |  |
 
- ![](http://www.jumperz.net/images/spacer.gif)
- ![](http://www.jumperz.net/images/spacer.gif)
+ !
+ !
 
 |
 
@@ -126,15 +126,15 @@ J U M P E R Z . N E T - Stealing Information Using Anti-DNS Pinning ( DNS Rebind
 
   |  |
 
- ![](http://www.jumperz.net/images/spacer.gif)
+ !
 
 |
 
-|  ![](http://www.jumperz.net/images/boy2.jpg) |   |
+|  ! |   |
 
   |  |
 
- ![](http://www.jumperz.net/images/spacer.gif)
+ !
 
 |
 
@@ -146,12 +146,12 @@ J U M P E R Z . N E T - Stealing Information Using Anti-DNS Pinning ( DNS Rebind
 
   |  |
 
-  |   ![](http://www.jumperz.net/images/spacer.gif)  |   |
+  |   !  |   |
 
 |   |
 
-|  ![](http://www.jumperz.net/images/spacer.gif) |  ![](http://www.jumperz.net/images/shadow_ru.gif) |   |
-|  ![](http://www.jumperz.net/images/shadow_ll.gif) |  ![](http://www.jumperz.net/images/shadow_rl.gif) |   |
+|  ! |  ! |   |
+|  ! |  ! |   |
 |   **  Copyright© 1998-2012 JUMPERZ.NET All Rights Reserved.  **  |   |
 
   |   |

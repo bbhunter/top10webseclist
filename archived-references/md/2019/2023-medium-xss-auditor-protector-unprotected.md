@@ -79,37 +79,9 @@ X Xss Protection
 
 ## and the deceiver of protected.
 
-[
-
-![terjanq](https://miro.medium.com/v2/resize:fill:64:64/1*5t2zsHKSKPB_AMJbt0V6WA.png)
-
-](https://terjanq.medium.com/?source=post_page---byline--f900a5e15b7b---------------------------------------)
+[![terjanq](https://miro.medium.com/v2/resize:fill:64:64/1*5t2zsHKSKPB_AMJbt0V6WA.png)](https://terjanq.medium.com/?source=post_page---byline--f900a5e15b7b---------------------------------------)
 
 [terjanq](https://terjanq.medium.com/?source=post_page---byline--f900a5e15b7b---------------------------------------)
-
-4 min readApr 25, 2019
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2Ff900a5e15b7b&operation=register&redirect=https%3A%2F%2Fterjanq.medium.com%2Fxss-auditor-the-protector-of-unprotected-f900a5e15b7b&user=terjanq&userId=d404867d06bd&source=---header_actions--f900a5e15b7b---------------------clap_footer------------------)
-
---
-
-2
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2Ff900a5e15b7b&operation=register&redirect=https%3A%2F%2Fterjanq.medium.com%2Fxss-auditor-the-protector-of-unprotected-f900a5e15b7b&user=terjanq&userId=d404867d06bd&source=---header_actions--f900a5e15b7b---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Ff900a5e15b7b&operation=register&redirect=https%3A%2F%2Fterjanq.medium.com%2Fxss-auditor-the-protector-of-unprotected-f900a5e15b7b&source=---header_actions--f900a5e15b7b---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3Df900a5e15b7b&operation=register&redirect=https%3A%2F%2Fterjanq.medium.com%2Fxss-auditor-the-protector-of-unprotected-f900a5e15b7b&source=---header_actions--f900a5e15b7b---------------------post_audio_button------------------)
-
-Share
 
 ## Quick introduction:
 

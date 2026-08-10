@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 To protect against the [HTML Form Protocol Attack](http://www.remote.org/jochen/sec/hfpa/index.html), which would allow the browser to send arbitrary data to most TCP ports, Mozilla [restricted](http://www.mozilla.org/projects/netlib/PortBanning.html) connections to several dozen ports. For example, click on [http://jeremiahgrossman.blogspot.com:22/](http://jeremiahgrossman.blogspot.com:22/) See the screen shot:
 
-[![](https://photos1.blogger.com/x/blogger2/1912/1679/320/43351/mozilla_port_blocking.png)](https://photos1.blogger.com/x/blogger2/1912/1679/1600/757330/mozilla_port_blocking.png)
+[!](https://photos1.blogger.com/x/blogger2/1912/1679/1600/757330/mozilla_port_blocking.png)
 
 I think it was [RSnake](http://ha.ckers.org/) who found this first, but the blocking mechanism seems to be only applied to the http protocol handler. Odd. Using the ftp protocol handler, we can bypass the block like so: [ftp://jeremiahgrossman.blogspot.com:22/](ftp://jeremiahgrossman.blogspot.com:22/) If the port is up, it'll connect, if not, timeout.
 

@@ -139,13 +139,13 @@ This is exactly what happened in the case of Proton Mail. The sanitizer first se
 
 Attackers could abuse this parser differential with the following payload:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/256079e9-1948-4296-9d2e-542590e7f65e/proton-html-after-sanitizer.png)
+!
 
 The sanitizer will correctly recognize the SVG context and parse the content of the `<style>` element as an `<a>` element. The byte sequence `</style>` is hidden inside the `alt` tag of the `<a>` element and does not close the `<style>` element. Since the `<img>` tag is also hidden inside the attribute, the sanitizer does not remove the `onerror` event handler.
 
 When renaming the `<svg>` element to `<proton-svg>`, the parsing result looks like this:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/2ee92b2f-4f87-4d91-93c9-f5cf8aed4b48/proton-html-after-modification.png)
+!
 
 Since the `<proton-svg>` element belongs to the HTML context, as explained earlier, the parsing rules for the `<style>` element changed. Its content is now parsed as raw text and the very first occurrence of the byte sequence `</style>` terminates the element. This causes the `<img>` element to appear, which in turn executes the `onerror` handler during rendering. The sanitizer is bypassed!
 
@@ -155,7 +155,7 @@ Fortunately, this does not directly allow attackers to execute arbitrary JavaScr
 
 The next protection is an `<iframe>` element with a `sandbox` attribute. After sanitizing an email's HTML, the result is not directly inserted into the DOM of the Proton Mail page itself but into the DOM of an iframe. This has the first effect that things like CSS styles in the email don't have an effect on Proton Mail's UI. This makes the content of the iframe (marked in red) isolated from the rest of the page:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/8f3067e8-e528-41bb-b551-d35de19d7830/Proton%20Mail_%20Iframe.png)
+!
 
 Another benefit is the ability to restrict what the page inside the iframe can do by providing an allowlist in the `sandbox` attribute. In the case of Proton Mail, the iframe sandbox has the following directives:
 
@@ -169,7 +169,7 @@ However, Proton Mail adds a fourth directive when opened in the Safari browser. 
 
 For all other browsers, the attacker has to convince the victim to click on a link that opens in a new tab, therefore escaping the sandbox and being able to access the opener's parent frame:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/16e01076-c9fc-401c-84bf-45220c610d92/Proton%20Mail_%20Iframe%20Sandbox%20Bypass.png)
+!
 
 ### Third Line of Defense: Content Security Policy
 
@@ -213,7 +213,7 @@ To do this, we have to split the value we want to leak into smaller chunks that 
 
 Here's an example of how a blob URL would be split into its overlapping, 3-character chunks:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/6b6ee711-b752-4d79-99cd-e91325503c23/Proton%20Mail_%20Chunked%20Blob%20URL.png)
+!
 
 This way, the attacker server will know all the different chunks that the UUID consists of, but not their order. To reconstruct the correct UUID, the server has to stitch it back together by starting with one chunk and finding an overlapping one.
 
@@ -223,7 +223,7 @@ The curious reader might wonder why we chose 3-character chunks in favor of othe
 
 If we made each chunk only 2 characters, we would reduce the CSS size but drastically increase the chance that a chunk has multiple possible successors because the overlap between chunks is only 1 character. Going for longer chunks would reduce this possibility, but the amount of CSS selectors would grow exponentially. The following graphic shows the trade-off between CSS size and collision probability on logarithmic scales:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/3c630af8-13c5-432d-84ba-c38143d33b4c/chart.png)
+!
 
 Now that we have a strategy to leak the blob URL, we need to implement it in CSS. This is where we encounter a problem: we cannot set multiple background images for the element we want to leak an attribute of because they would override each other.
 
@@ -269,7 +269,7 @@ The final selector is the one that includes all of these CSS variables in a big 
 
 All of the CSS variables that are not set are being treated as their fallback value `none`, so the browser will not request anything. This is what the leak looks like in the browser's network tab:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/348a700f-5020-4037-8695-14a5c824cffe/proton-leak-hd.gif)
+!
 
 After the attacker server receives the chunks, it reconstructs the blob URL and sends a second email to the victim. This time, the email contains a `<script>` tag that uses the blob URL as its `src`, as well as a link that opens the blob URL in a new tab. The script tag will be enough for victims using Safari, as no iframe sandbox bypass is needed. Other victims will have to click on the link, which will open the link in a new tab and therefore bypass the iframe sandbox due to the `allow-popups-to-escape-sandbox` directive.
 
@@ -335,7 +335,5 @@ Stay up-to-date with the latest Sonar content. Subscribe now to receive the late
  Email
 
 Choosing to proceed means that you agree to the storing and processing of your personal data as described in SonarSource’s [Cookie Policy](https://www.sonarsource.com/company/cookie-policy/). You can opt out of SonarSource communications at anytime.
-
-Sign up
 
 Sonar respects your privacy. Choosing to proceed means that you agree to the SonarSource’s [Privacy Policy](https://www.sonarsource.com/company/privacy/).

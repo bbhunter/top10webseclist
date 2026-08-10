@@ -497,7 +497,7 @@ Team82 disclosed its findings to five of the leading WAF vendors, all of which h
 
 This is a dangerous bypass, especially as more organizations continue to migrate more business and functionality to the cloud. IoT and OT processes that are monitored and managed from the cloud may also be impacted by this issue, and organizations should ensure they’re running updated versions of security tools in order to block these bypass attempts.
 
- ![](https://claroty.com/build/assets/team82-newsletter-bg-BlXIsUMi.jpg)
+ !
 
  Stay in the know Get the Team82 Newsletter
 

@@ -65,7 +65,7 @@ ha.ckers.org web application security lab - Archive » Turn Any Page Into A Grea
 
 The Wayback Machine - https://web.archive.org/web/20071124032809/http://ha.ckers.org:80/blog/20070506/turn-any-page-into-a-greasemonkey-popup/
 
-[![](https://web.archive.org/web/20071124032809im_/http://ha.ckers.org/images/nto_banner.jpg)](https://web.archive.org/web/20071124032809/http://www.webappsec.org/)
+[!](https://web.archive.org/web/20071124032809/http://www.webappsec.org/)
  Paid Advertising
  [![web application security lab](https://web.archive.org/web/20071124032809im_/http://ha.ckers.org/images/84844372/rsnake/hackers.jpg)](https://web.archive.org/web/20071124032809/http://ha.ckers.org/)
 

@@ -66,31 +66,9 @@ page going offline. To read the original, follow the link above.
 
 # Finding an unseen SQL Injection by bypassing escape functions in mysqljs/mysql
 
-[
-
-![Flatt Security Inc.](https://miro.medium.com/v2/resize:fill:64:64/1*Z0fxHngDdlFrMJQlA4GESw.png)
-
-](https://flattsecurity.medium.com/?source=post_page---byline--90b27f6542b4---------------------------------------)
+[![Flatt Security Inc.](https://miro.medium.com/v2/resize:fill:64:64/1*Z0fxHngDdlFrMJQlA4GESw.png)](https://flattsecurity.medium.com/?source=post_page---byline--90b27f6542b4---------------------------------------)
 
 [Flatt Security Inc.](https://flattsecurity.medium.com/?source=post_page---byline--90b27f6542b4---------------------------------------)
-
-Follow
-
-9 min readFeb 21, 2022
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F90b27f6542b4&operation=register&redirect=https%3A%2F%2Fflattsecurity.medium.com%2Ffinding-an-unseen-sql-injection-by-bypassing-escape-functions-in-mysqljs-mysql-90b27f6542b4&user=Flatt+Security+Inc.&userId=b10b5c7f48a&source=---header_actions--90b27f6542b4---------------------clap_footer------------------)
-
---
-
-3
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F90b27f6542b4&operation=register&redirect=https%3A%2F%2Fflattsecurity.medium.com%2Ffinding-an-unseen-sql-injection-by-bypassing-escape-functions-in-mysqljs-mysql-90b27f6542b4&source=---header_actions--90b27f6542b4---------------------bookmark_footer------------------)
-
-Listen
-
-Share
 
 # TL;DR
 

@@ -346,5 +346,3 @@ When not doing security research in browsers, you can probably find Luan Herrera
  [ XSS ](https://portswigger.net/research/cross-site-scripting-research) [ Research ](https://portswigger.net/research/research) [ JavaScript ](https://portswigger.net/research/javascript)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

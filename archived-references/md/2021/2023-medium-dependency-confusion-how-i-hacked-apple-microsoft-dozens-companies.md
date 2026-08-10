@@ -76,37 +76,9 @@ NPM
 
 ## The Story of a Novel Supply Chain Attack
 
-[
-
-![Alex Birsan](https://miro.medium.com/v2/resize:fill:64:64/1*PhdCP1Qd18iuuzmA_MjVxA.png)
-
-](https://medium.com/@alex.birsan?source=post_page---byline--4a5d60fec610---------------------------------------)
+[![Alex Birsan](https://miro.medium.com/v2/resize:fill:64:64/1*PhdCP1Qd18iuuzmA_MjVxA.png)](https://medium.com/@alex.birsan?source=post_page---byline--4a5d60fec610---------------------------------------)
 
 [Alex Birsan](https://medium.com/@alex.birsan?source=post_page---byline--4a5d60fec610---------------------------------------)
-
-11 min readFeb 9, 2021
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F4a5d60fec610&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40alex.birsan%2Fdependency-confusion-4a5d60fec610&user=Alex+Birsan&userId=7fa68cbc850e&source=---header_actions--4a5d60fec610---------------------clap_footer------------------)
-
---
-
-57
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F4a5d60fec610&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40alex.birsan%2Fdependency-confusion-4a5d60fec610&user=Alex+Birsan&userId=7fa68cbc850e&source=---header_actions--4a5d60fec610---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F4a5d60fec610&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40alex.birsan%2Fdependency-confusion-4a5d60fec610&source=---header_actions--4a5d60fec610---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D4a5d60fec610&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40alex.birsan%2Fdependency-confusion-4a5d60fec610&source=---header_actions--4a5d60fec610---------------------post_audio_button------------------)
-
-Share
 
 Ever since I started learning how to code, I have been fascinated by the level of trust we put in a simple command like this one:
 

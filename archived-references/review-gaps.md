@@ -1,15 +1,31 @@
-<!-- WRITTEN BY HAND on 2026-08-10. Unlike needs-work.md and store-gaps.md,
+<!-- WRITTEN BY HAND on 2026-08-10. Unlike document-gaps.md and store-gaps.md,
      nothing generates this file: it records what one archive session changed
      without being able to judge the result. Delete a pack when it has been
      reviewed, and delete the file when they all have. -->
 
-# References that were changed but not reviewed
+# References that are archived but unjudged
 
-**Nothing here is known to be wrong.** This is the other list: the work a sweep
-could verify MECHANICALLY but not judge. A rule that removed 6,132 dead links
-can prove none remain; it cannot tell you the prose reads correctly. A converter
-that embedded 2,712 figures can prove each one decoded; it cannot tell you the
-right picture landed in the right place.
+**Nothing here is known to be wrong, and nothing here is missing.** Every
+reference below HAS its document. What it does not have is anybody's judgement
+that the document came out right - the work a sweep could verify MECHANICALLY but
+not judge. A rule that removed 6,132 dead links can prove none remain; it cannot
+tell you the prose reads correctly. A converter that embedded 2,712 figures can
+prove each one decoded; it cannot tell you the right picture landed in the right
+place.
+
+Its two sibling reports answer different questions, and confusing them is what
+prompted this table:
+
+| Report | The document | What is missing |
+|---|---|---|
+| [document-gaps.md](document-gaps.md) | not archived | the document itself |
+| review-gaps.md | archived | a judgement that it came out right |
+| [store-gaps.md](store-gaps.md) | archived | the source bytes it was made from |
+
+So: a fully broken or missing reference belongs on `document-gaps.md`. If you
+find one while working a pack here, file it there - by setting `content_gap` on
+its manifest entry and re-running `refs.py index` - rather than describing it in
+this file.
 
 The distinction matters because a mechanical pass reports success loudly. Every
 count below came back clean, and every count below is also a place where a
@@ -17,24 +33,24 @@ confident number stands in for something nobody looked at.
 
 Packed by the SHAPE of the review each one needs, with one real sample apiece.
 Reviewing a pack means opening the sample, deciding whether the class is sound,
-and then either spot-checking further or clearing the pack. Reviewing 1,326
+and then either spot-checking further or clearing the pack. Reviewing 1,283
 documents one at a time is not the intent and never will be affordable.
 
 ## Written by
 
 `refs.py acquire`, `papers`, `images`, `pdf`, `translate` and a Markdown sweep,
 run 2026-08-09 to 2026-08-10. The faults they were fixing are described in the
-commits `5c0a8ae` and `c5d55d8`.
+commits `5c0a8ae`, `c5d55d8` and `4034057`, and in the one that adds this line.
 
 ---
 
-## 1. Rendered PDFs, reprinted whole — 1,326 documents
+## 1. Rendered PDFs, reprinted whole — 1,283 documents
 
 Every PDF the archive renders was reprinted, because the converter changed:
 link targets are now escaped once rather than twice, `javascript:` and `data:`
 targets print as text, and preserved figures are embedded.
 
-Two were opened and checked page by page. The other 1,324 were not.
+Four were opened and checked page by page. The other 1,279 were not.
 
 - **Check:** the document is complete, figures sit where the prose refers to
   them, code blocks did not reflow into paragraphs, links resolve.
@@ -90,23 +106,53 @@ left behind.
   by losing its brackets.
 - **Sample:** `md/2024/2024-zhero-web-security-next-js-cache-poisoning-quest-black-hole.md`
 
-## 6. Publisher furniture still in the body — 42 documents
+## 6. Publisher furniture still in the body — none left
 
-Related but separate: the sweep removed dead LINK SYNTAX, not site chrome. 39
-documents still carry Medium's "Follow / Listen / N min read" run and 3 carry a
-navigation menu. `boilerplate.trim` works inward from the edges and cannot reach
-furniture sitting in the article's flow.
+Mostly fixed since this file was written. 649 files were swept of 444,124
+characters of link furniture: 3,980 invisible sign-in buttons, 975 byline
+anchors that rendered as a literal `[` and a bare URL because an anchor wrapping
+block content is not a Markdown link, Medium's reading-time and
+Follow/Listen/Share lines, and its clap counter.
 
-- **Check:** whether these are worth a rule, or whether a rule would cost more
-  articles than it saves. The trim's own history says the second, twice.
-- **Sample:** `md/2016-17/2017-medium-how-i-found-5-000-google-maps-xss-fiddling-protobuf.md`
+A later pass closed the rest: a call-to-action HEADING now ends a document, so a
+vendor's seven-block sales panel goes whole instead of losing only the one block
+a rule happened to match, and a trailing heading from a measured furniture
+vocabulary goes with it. 89 files, 19,942 more characters.
 
-## 7. Adopted publisher papers — 18 references
+Nothing in the corpus now carries two or more chrome lines. The pack is kept so
+the next reader knows it was looked at rather than missed.
+
+- **Check:** nothing outstanding. A vendor's "About <product>" closing section
+  survives deliberately - over 400 characters, so the furniture rules refuse it,
+  which is the guard that stops a long block being mistaken for an advert.
+- **Sample:** `md/2025/2025-searchlight-cyber-novel-sql-injection-technique-pdo-prepared-statements.md`
+
+## 6b. A stray `[` on its own line — 48 documents
+
+The residue of the same sweep, and deliberately left alone. Of the 48, only
+about 7 are an anchor wrapped around a card or an image that the collapse rule
+could not reach; the rest are a `[` that OPENS DATA - a JSON array quoted in a
+slide, a set-builder expression in a paper - where the line is the research.
+
+No regex told those apart reliably, and this corpus punishes the attempt: the
+same `[` begins a link and a JSON array.
+
+- **Check:** by eye, one at a time, or not at all.
+- **Sample (an anchor):** `md/2006/2006-infoworld-governator-hack-investigated.md`
+- **Sample (data, leave it):** `md/2008/json-hijacking-utf-7.md`
+
+## 7. Adopted publisher papers — 61 references
 
 Where an article named a PDF of itself, that PDF is now the published document
 instead of our text render. The match required the link to be same-site AND its
-label to claim the document ("printable whitepaper", "print/download friendly").
-Each was checked to be a valid PDF. None was read.
+label to claim the document ("printable whitepaper", "print/download friendly",
+or a label that is nothing but "Paper"). Each was checked to be a valid PDF. Two
+were read; the rest were not.
+
+43 of them are conference abstract pages - 37 from NDSS alone - which were
+published as our render of a ~4,000-character abstract while the paper sat one
+link away. Those are the ones where the archived Markdown and the archived PDF
+now differ MOST: the abstract is what the page said, the PDF is the research.
 
 - **Check:** the paper is the same research as the article, not a different
   paper by the same publisher. A whitepaper is often a REWRITE of the blog post,

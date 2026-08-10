@@ -97,8 +97,6 @@ BibTeX
 
 #### Presentation Video
 
-[](https://c59951.ssl.cf2.rackcdn.com/sec11/sun.mp4)
-
 #### Presentation Audio
 
     [MP3 Download](https://c59951.ssl.cf2.rackcdn.com/sec11/sun.mp3) [OGG Download](https://c59951.ssl.cf2.rackcdn.com/sec11/sun.ogg)

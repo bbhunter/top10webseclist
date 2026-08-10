@@ -172,7 +172,7 @@ public static function cliOption(string $name, bool $unset = false): string|floa
 
 This function does not check at all that we are actually in the CLI, meaning we can set these options via the query string! As a quick check, passing a query string like `?--configPath=/aaa` will force Craft CMS to look for a config file in an inaccessible location - on a vulnerable website it will look like this:
 
-![](https://cdn.prod.website-files.com/64233a8baf1eba1d72a641d4/676259284ca5826f59643603_676256e0eaeb2463b22c54b0_screenshot1.png)
+!
 
 ### Exploiting the bug
 
@@ -192,7 +192,7 @@ The next option is to do something with the `configPath` or the `templatesPath`.
 
 According to the PHP docs, `file_exists` is not supported for the http wrapper (it comes under `stat()`), so this check will always fail.
 
-![](https://cdn.prod.website-files.com/64233a8baf1eba1d72a641d4/676259284ca5826f5964360a_676257592d955558463b4fb4_screenshot2.png)
+!
 
 If you follow current popular PHP exploitation trends, you might wonder if we can use some `php://filter` trick, but this also doesn't work for the same reason; the `php` wrapper does not support `stat()` and so the `file_exists` check will always fail before anything is loaded.
 
@@ -202,7 +202,7 @@ So far, the current blocker to using a wrapper has been that none of the ones we
 - `phar://` also supports `stat()`, but we can't easily smuggle a valid PHAR file onto the filesystem;
 - `ftp://` does indeed support some file system calls, including `file_exists`; interesting...
 
-![](https://cdn.prod.website-files.com/64233a8baf1eba1d72a641d4/676259284ca5826f5964360d_676257b8e03609fc1bb95543_screenshot3.png)
+!
 
 We can't use the FTP wrapper to include a config file, since that ultimately called `include` and FTP wrappers are blocked by the `allow_url_include` security feature. But we can use it to include a template, which is just read via a simple `file_get_contents` call.
 
@@ -271,7 +271,7 @@ This is however, of course, not really a serious barrier to exploitation via tem
 
 Since `call_user_func` is used as the sort function, it will be invoked to compare `'system'` and `'id'`, executing `call_user_func('system', 'id')`. This will then call `system('id')`, without directly passing the system function to the filter. Editing the file on our FTP host to contain this payload, we observe we have achieved remote code execution!
 
-![](https://cdn.prod.website-files.com/64233a8baf1eba1d72a641d4/676259284ca5826f59643600_676258b7a8af01fd04c6fdf2_screenshot4.png)
+!
 
 ### Conclusion
 
@@ -301,72 +301,16 @@ Subscribe to our newsletter and stay updated on the newest research, security ad
 
 ### More Like This
 
-[
+[Security Research ### Doing the Due Diligence: Analyzing the Next.js Middleware Bypass (CVE-2025-29927) Read on ASN Blog](https://www.assetnote.io/resources/research/doing-the-due-diligence-analyzing-the-next-js-middleware-bypass-cve-2025-29927)
 
-Security Research
+[Security Research ### Citrix Denial of Service: Analysis of CVE-2024-8534 Read on ASN Blog](https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534)
 
-### Doing the Due Diligence: Analyzing the Next.js Middleware Bypass (CVE-2025-29927)
+[Security Research ### Nginx/Apache Path Confusion to Auth Bypass in PAN-OS (CVE-2025-0108) Read on ASN Blog](https://www.assetnote.io/resources/research/nginx-apache-path-confusion-to-auth-bypass-in-pan-os)
 
-Read on ASN Blog
+[Security Research ### Leveraging An Order of Operations Bug to Achieve RCE in Sitecore 8.x - 10.x Read on ASN Blog](https://www.assetnote.io/resources/research/leveraging-an-order-of-operations-bug-to-achieve-rce-in-sitecore-8-x---10-x)
 
-](https://www.assetnote.io/resources/research/doing-the-due-diligence-analyzing-the-next-js-middleware-bypass-cve-2025-29927)
+[Security Research ### Insecurity through Censorship: Vulnerabilities Caused by The Great Firewall Read on ASN Blog](https://www.assetnote.io/resources/research/insecurity-through-censorship-vulnerabilities-caused-by-the-great-firewall)
 
-[
+[Security Research ### Chaining Three Bugs to Access All Your ServiceNow Data Read on ASN Blog](https://www.assetnote.io/resources/research/chaining-three-bugs-to-access-all-your-servicenow-data)
 
-Security Research
-
-### Citrix Denial of Service: Analysis of CVE-2024-8534
-
-Read on ASN Blog
-
-](https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534)
-
-[
-
-Security Research
-
-### Nginx/Apache Path Confusion to Auth Bypass in PAN-OS (CVE-2025-0108)
-
-Read on ASN Blog
-
-](https://www.assetnote.io/resources/research/nginx-apache-path-confusion-to-auth-bypass-in-pan-os)
-
-[
-
-Security Research
-
-### Leveraging An Order of Operations Bug to Achieve RCE in Sitecore 8.x - 10.x
-
-Read on ASN Blog
-
-](https://www.assetnote.io/resources/research/leveraging-an-order-of-operations-bug-to-achieve-rce-in-sitecore-8-x---10-x)
-
-[
-
-Security Research
-
-### Insecurity through Censorship: Vulnerabilities Caused by The Great Firewall
-
-Read on ASN Blog
-
-](https://www.assetnote.io/resources/research/insecurity-through-censorship-vulnerabilities-caused-by-the-great-firewall)
-
-[
-
-Security Research
-
-### Chaining Three Bugs to Access All Your ServiceNow Data
-
-Read on ASN Blog
-
-](https://www.assetnote.io/resources/research/chaining-three-bugs-to-access-all-your-servicenow-data)
-
-[
-
-Back to All
-
-](https://www.assetnote.io/resources/research)
-
-### Ready to get started?
-
-Get on a call with our team and learn how Assetnote can change the way you secure your attack surface. We'll set you up with a trial instance so you can see the impact for yourself.
+[Back to All](https://www.assetnote.io/resources/research)

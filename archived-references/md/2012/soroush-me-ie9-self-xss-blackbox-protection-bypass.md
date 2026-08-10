@@ -102,13 +102,7 @@ This entry was posted in [Security Posts](https://soroush.me/blog/category/secur
 
 Creation date: August 14, 2012
 
-[
-
- Previous
-
-Don’t trust a string based on TryParse or IsNumeric result! (.Net/VBScript)
-
-](https://soroush.me/blog/dont-trust-a-string-based-on-tryparse-or-isnumeric-result-netvbscript)[
+[Previous Don’t trust a string based on TryParse or IsNumeric result! (.Net/VBScript)](https://soroush.me/blog/dont-trust-a-string-based-on-tryparse-or-isnumeric-result-netvbscript)[
 
 Next
 

@@ -78,11 +78,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
  [ See All by Mikhail Egorov ](https://speakerdeck.com/0ang3el)
 
- [
-
- A Hacker's perspective on AEM applications security
-
- ](https://speakerdeck.com/0ang3el/a-hackers-perspective-on-aem-applications-security)
+ [A Hacker's perspective on AEM applications security](https://speakerdeck.com/0ang3el/a-hackers-perspective-on-aem-applications-security)
 
  [ ![Avatar for Mikhail Egorov](https://secure.gravatar.com/avatar/0e97d20ff87bf33851da8cadb86affa9?s=24) 0ang3el ](https://speakerdeck.com/0ang3el)
 
@@ -90,11 +86,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   4.1k
 
- [
-
- What’s wrong with WebSocket APIs? Unveiling vulnerabilities in WebSocket APIs.
-
- ](https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unveiling-vulnerabilities-in-websocket-apis)
+ [What’s wrong with WebSocket APIs? Unveiling vulnerabilities in WebSocket APIs.](https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unveiling-vulnerabilities-in-websocket-apis)
 
  [ ![Avatar for Mikhail Egorov](https://secure.gravatar.com/avatar/0e97d20ff87bf33851da8cadb86affa9?s=24) 0ang3el ](https://speakerdeck.com/0ang3el)
 
@@ -102,11 +94,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   8.4k
 
- [
-
- Securing AEM webapps by hacking them
-
- ](https://speakerdeck.com/0ang3el/securing-aem-webapps-by-hacking-them)
+ [Securing AEM webapps by hacking them](https://speakerdeck.com/0ang3el/securing-aem-webapps-by-hacking-them)
 
  [ ![Avatar for Mikhail Egorov](https://secure.gravatar.com/avatar/0e97d20ff87bf33851da8cadb86affa9?s=24) 0ang3el ](https://speakerdeck.com/0ang3el)
 
@@ -114,11 +102,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   1.7k
 
- [
-
- AEM hacker approaching Adobe Experience Manager webapps in bug bounty programs
-
- ](https://speakerdeck.com/0ang3el/aem-hacker-approaching-adobe-experience-manager-webapps-in-bug-bounty-programs)
+ [AEM hacker approaching Adobe Experience Manager webapps in bug bounty programs](https://speakerdeck.com/0ang3el/aem-hacker-approaching-adobe-experience-manager-webapps-in-bug-bounty-programs)
 
  [ ![Avatar for Mikhail Egorov](https://secure.gravatar.com/avatar/0e97d20ff87bf33851da8cadb86affa9?s=24) 0ang3el ](https://speakerdeck.com/0ang3el)
 
@@ -126,11 +110,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   12k
 
- [
-
- Neat tricks to bypass CSRF-protection
-
- ](https://speakerdeck.com/0ang3el/neat-tricks-to-bypass-csrf-protection)
+ [Neat tricks to bypass CSRF-protection](https://speakerdeck.com/0ang3el/neat-tricks-to-bypass-csrf-protection)
 
  [ ![Avatar for Mikhail Egorov](https://secure.gravatar.com/avatar/0e97d20ff87bf33851da8cadb86affa9?s=24) 0ang3el ](https://speakerdeck.com/0ang3el)
 
@@ -138,11 +118,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   2.1k
 
- [
-
- CSRF-уязвимости все еще актуальны: как атакующие обходят CSRF-защиту в вашем веб-приложении
-
- ](https://speakerdeck.com/0ang3el/csrf-uiazvimosti-vsie-ieshchie-aktual-ny-kak-atakuiushchiie-obkhodiat-csrf-zashchitu-v-vashiem-vieb-prilozhienii)
+ [CSRF-уязвимости все еще актуальны: как атакующие обходят CSRF-защиту в вашем веб-приложении](https://speakerdeck.com/0ang3el/csrf-uiazvimosti-vsie-ieshchie-aktual-ny-kak-atakuiushchiie-obkhodiat-csrf-zashchitu-v-vashiem-vieb-prilozhienii)
 
  [ ![Avatar for Mikhail Egorov](https://secure.gravatar.com/avatar/0e97d20ff87bf33851da8cadb86affa9?s=24) 0ang3el ](https://speakerdeck.com/0ang3el)
 
@@ -154,11 +130,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
  [ See All in Programming ](https://speakerdeck.com/c/programming)
 
- [
-
- テーブルをDELETEした
-
- ](https://speakerdeck.com/yuzneri/teburuwodeletesita)
+ [テーブルをDELETEした](https://speakerdeck.com/yuzneri/teburuwodeletesita)
 
  [ ![Avatar for yuzneri](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTk5Mjk4LCJwdXIiOiJibG9iX2lkIn19--ceb7e5047d49436a51a2b172915a24dc106f8589/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/SDicon.png) yuzneri ](https://speakerdeck.com/yuzneri)
 
@@ -166,11 +138,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   130
 
- [
-
- 変わらないものが、変わるものを決める — 意図駆動開発 × イベントソーシング × イミュータブル | What Doesn't Change Decides What Can — IDD × Event Sourcing × Immutability
-
- ](https://speakerdeck.com/tomohisa/what-doesnt-change-decides-what-can-idd-x-event-sourcing-x-immutability)
+ [変わらないものが、変わるものを決める — 意図駆動開発 × イベントソーシング × イミュータブル | What Doesn't Change Decides What Can — IDD × Event Sourcing × Immutability](https://speakerdeck.com/tomohisa/what-doesnt-change-decides-what-can-idd-x-event-sourcing-x-immutability)
 
  [ ![Avatar for Tomohisa Takaoka](https://secure.gravatar.com/avatar/ebc957907873393a6750a5915d7146c7?s=24) tomohisa ](https://speakerdeck.com/tomohisa)
 
@@ -178,11 +146,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   1.3k
 
- [
-
- The Past, Present, and Future of Enterprise Java
-
- ](https://speakerdeck.com/ivargrimstad/the-past-present-and-future-of-enterprise-java-22f7b22d-38b7-4a7d-9616-3e9efcdac277)
+ [The Past, Present, and Future of Enterprise Java](https://speakerdeck.com/ivargrimstad/the-past-present-and-future-of-enterprise-java-22f7b22d-38b7-4a7d-9616-3e9efcdac277)
 
  [ ![Avatar for ivargrimstad](https://secure.gravatar.com/avatar/b489790e1a844284d7cd1fa2cd6e021f?s=24) ivargrimstad ](https://speakerdeck.com/ivargrimstad)
 
@@ -190,11 +154,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   530
 
- [
-
- 型も通る、synthも通る、それでも危ない 〜AIのCDKの権限とコストを機械で検証する〜 / It Passes Type Checks, It Passes Synth Checks, but It’s Still Risky — Automatically Verifying Permissions and Costs in AI’s CDK —
-
- ](https://speakerdeck.com/seike460/it-passes-type-checks-it-passes-synth-checks-but-its-still-risky-automatically-verifying-permissions-and-costs-in-ais-cdk)
+ [型も通る、synthも通る、それでも危ない 〜AIのCDKの権限とコストを機械で検証する〜 / It Passes Type Checks, It Passes Synth Checks, but It’s Still Risky — Automatically Verifying Permissions and Costs in AI’s CDK —](https://speakerdeck.com/seike460/it-passes-type-checks-it-passes-synth-checks-but-its-still-risky-automatically-verifying-permissions-and-costs-in-ais-cdk)
 
  [ ![Avatar for shiro seike](https://secure.gravatar.com/avatar/e7151ab8219e76672f7a7691dd2c88e6?s=24) seike460 ](https://speakerdeck.com/seike460)
 
@@ -204,11 +164,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   530
 
- [
-
- FDEが実現するAI駆動経営の現在地
-
- ](https://speakerdeck.com/gonta/ai-driven-management-enabled-by-fde)
+ [FDEが実現するAI駆動経営の現在地](https://speakerdeck.com/gonta/ai-driven-management-enabled-by-fde)
 
  [ ![Avatar for ryuta sakamoto](https://secure.gravatar.com/avatar/c48e5a207bf56f0a2c0430eba2338325?s=24) gonta ](https://speakerdeck.com/gonta)
 
@@ -216,11 +172,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   260
 
- [
-
- Claude Code全社展開のためにやったことn選～プラグイン302個・コミッター271人を支えるために～
-
- ](https://speakerdeck.com/kenchan/claude-codequan-she-zhan-kai-notameniyatutakotonxuan-puraguin302ge-komituta271ren-wozhi-erutameni)
+ [Claude Code全社展開のためにやったことn選～プラグイン302個・コミッター271人を支えるために～](https://speakerdeck.com/kenchan/claude-codequan-she-zhan-kai-notameniyatutakotonxuan-puraguin302ge-komituta271ren-wozhi-erutameni)
 
  [ ![Avatar for Kenichi Takahashi](https://secure.gravatar.com/avatar/676954675cda206b7baae939a82a8ef4?s=24) kenchan ](https://speakerdeck.com/kenchan)
 
@@ -228,11 +180,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   1.3k
 
- [
-
- ITヒヤリハットを整理してみた ～ライフサイクルと原因から考える再発防止策～
-
- ](https://speakerdeck.com/koukimiura/ithiyarihatutowozheng-li-sitemita-raihusaikurutoyuan-yin-karakao-eruzai-fa-fang-zhi-ce)
+ [ITヒヤリハットを整理してみた ～ライフサイクルと原因から考える再発防止策～](https://speakerdeck.com/koukimiura/ithiyarihatutowozheng-li-sitemita-raihusaikurutoyuan-yin-karakao-eruzai-fa-fang-zhi-ce)
 
  [ ![Avatar for kouki.miura](https://secure.gravatar.com/avatar/74f0617db83af526b2c8824ec4fd1815?s=24) koukimiura ](https://speakerdeck.com/koukimiura)
 
@@ -240,11 +188,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   140
 
- [
-
- 『コードを書く以外の』エンジニアリング〜課金基盤移行プロジェクト推進のためのTips4選
-
- ](https://speakerdeck.com/yuriko1211/engineering-beyond-coding)
+ [『コードを書く以外の』エンジニアリング〜課金基盤移行プロジェクト推進のためのTips4選](https://speakerdeck.com/yuriko1211/engineering-beyond-coding)
 
  [ ![Avatar for yuriko](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTUxMjAwLCJwdXIiOiJibG9iX2lkIn19--e203d34ae2839e2a9cbdfc51e2074da2f64bef4b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/easy-peasy_Vl1rmd0lki%20(1).png) yuriko1211 ](https://speakerdeck.com/yuriko1211)
 
@@ -252,11 +196,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   580
 
- [
-
- <title><a id="</title>君はこのHTMLをパースできるか"></a></title> #雑LT_study
-
- ](https://speakerdeck.com/pizzacat83/can-you-parse-this-html)
+ [<title><a id="</title>君はこのHTMLをパースできるか"></a></title> #雑LT_study](https://speakerdeck.com/pizzacat83/can-you-parse-this-html)
 
  [ ![Avatar for pizzacat83](https://secure.gravatar.com/avatar/c9d604342d0f1730491af85983cb3bfe?s=24) pizzacat83 ](https://speakerdeck.com/pizzacat83)
 
@@ -264,11 +204,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   140
 
- [
-
- 「寝てても仕事が進む」Claude Codeで組む第二の脳
-
- ](https://speakerdeck.com/tomoyafujita2016/qin-tetemoshi-shi-gajin-mu-claude-codedezu-mudi-er-nonoy)
+ [「寝てても仕事が進む」Claude Codeで組む第二の脳](https://speakerdeck.com/tomoyafujita2016/qin-tetemoshi-shi-gajin-mu-claude-codedezu-mudi-er-nonoy)
 
  [ ![Avatar for t-fujita24](https://secure.gravatar.com/avatar/45de2732616d84d5ada6e5631ec9fc95?s=24) tomoyafujita2016 ](https://speakerdeck.com/tomoyafujita2016)
 
@@ -276,11 +212,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   300
 
- [
-
- 進化を続けるGo toolsの現在地 / The Current State of Ever-Evolving Go Tools
-
- ](https://speakerdeck.com/hond0413/the-current-state-of-ever-evolving-go-tools)
+ [進化を続けるGo toolsの現在地 / The Current State of Ever-Evolving Go Tools](https://speakerdeck.com/hond0413/the-current-state-of-ever-evolving-go-tools)
 
  [ ![Avatar for hond](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDUyMzMzLCJwdXIiOiJibG9iX2lkIn19--184b86d7c4c82bd7da7742aadeb18361d76dcd5a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/IMG_7092%20(1)%20(2)%20(1).png) hond0413 ](https://speakerdeck.com/hond0413)
 
@@ -288,11 +220,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   120
 
- [
-
- 琵琶湖の水は止められてもNet--HTTPのリトライは止められない / You might be able to stop the water flow of Lake Biwa but you can't stop Net::HTTP retries
-
- ](https://speakerdeck.com/luccafort/you-might-be-able-to-stop-the-water-flow-of-lake-biwa-but-you-cant-stop-net-http-retries)
+ [琵琶湖の水は止められてもNet--HTTPのリトライは止められない / You might be able to stop the water flow of Lake Biwa but you can't stop Net::HTTP retries](https://speakerdeck.com/luccafort/you-might-be-able-to-stop-the-water-flow-of-lake-biwa-but-you-cant-stop-net-http-retries)
 
  [ ![Avatar for luccafort](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzM0NzYzLCJwdXIiOiJibG9iX2lkIn19--bba9e4bb1f36172b8ddd875db8283d273044d07a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/2023-logo-compressed.png) luccafort ](https://speakerdeck.com/luccafort)
 
@@ -306,11 +234,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [
-
- The World Runs on Bad Software
-
- ](https://speakerdeck.com/bkeepers/the-world-runs-on-bad-software)
+ [The World Runs on Bad Software](https://speakerdeck.com/bkeepers/the-world-runs-on-bad-software)
 
  [ ![Avatar for Brandon Keepers](https://secure.gravatar.com/avatar/20bfe76b3d6105641f879fe45cfc9272?s=24) bkeepers ](https://speakerdeck.com/bkeepers)
 
@@ -320,11 +244,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   12k
 
- [
-
- End of SEO as We Know It (SMX Advanced Version)
-
- ](https://speakerdeck.com/ipullrank/end-of-seo-as-we-know-it-smx-advanced-version)
+ [End of SEO as We Know It (SMX Advanced Version)](https://speakerdeck.com/ipullrank/end-of-seo-as-we-know-it-smx-advanced-version)
 
  [ ![Avatar for Michael King](https://secure.gravatar.com/avatar/8ee617e63a584154c68810118d32ba2a?s=24) ipullrank ](https://speakerdeck.com/ipullrank)
 
@@ -332,11 +252,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   4.3k
 
- [
-
- Leveraging LLMs for student feedback in introductory data science courses - posit::conf(2025)
-
- ](https://speakerdeck.com/minecr/leveraging-llms-for-student-feedback-in-introductory-data-science-courses-posit-conf-2025)
+ [Leveraging LLMs for student feedback in introductory data science courses - posit::conf(2025)](https://speakerdeck.com/minecr/leveraging-llms-for-student-feedback-in-introductory-data-science-courses-posit-conf-2025)
 
  [ ![Avatar for Mine Cetinkaya-Rundel](https://secure.gravatar.com/avatar/81689b093f75cf3f383e581ca57188df?s=24) minecr ](https://speakerdeck.com/minecr)
 
@@ -344,11 +260,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   330
 
- [
-
- How to Grow Your eCommerce with AI & Automation
-
- ](https://speakerdeck.com/katarinadahlin/how-to-grow-your-ecommerce-with-ai-and-automation)
+ [How to Grow Your eCommerce with AI & Automation](https://speakerdeck.com/katarinadahlin/how-to-grow-your-ecommerce-with-ai-and-automation)
 
  [ ![Avatar for Katarina Dahlin](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjAwNTg5LCJwdXIiOiJibG9iX2lkIn19--24cb98b2197cd4cdeb5e3ae1f94b4c1a162cd1bf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/Avainsana-analyysi%20thumbnails.png) katarinadahlin ](https://speakerdeck.com/katarinadahlin)
 
@@ -358,11 +270,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   230
 
- [
-
- Discover your Explorer Soul
-
- ](https://speakerdeck.com/emna__ayadi/discover-your-explorer-soul)
+ [Discover your Explorer Soul](https://speakerdeck.com/emna__ayadi/discover-your-explorer-soul)
 
  [ ![Avatar for Emna](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzI5LCJwdXIiOiJibG9iX2lkIn19--c59e14bd8fc81f3e291b47c9b3de17d20d6d955b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/emna__ayadi.jpg) emna__ayadi ](https://speakerdeck.com/emna__ayadi)
 
@@ -370,11 +278,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   1.2k
 
- [
-
- Become a Pro
-
- ](https://speakerdeck.com/speakerdeck/become-a-pro)
+ [Become a Pro](https://speakerdeck.com/speakerdeck/become-a-pro)
 
  [ ![Avatar for Speaker Deck](https://secure.gravatar.com/avatar/828ace851b606e1206900f26459f55ad?s=24) speakerdeck ](https://speakerdeck.com/speakerdeck)
 
@@ -384,11 +288,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   6.1k
 
- [
-
- Jess Joyce - The Pitfalls of Following Frameworks
-
- ](https://speakerdeck.com/techseoconnect/jess-joyce-the-pitfalls-of-following-frameworks)
+ [Jess Joyce - The Pitfalls of Following Frameworks](https://speakerdeck.com/techseoconnect/jess-joyce-the-pitfalls-of-following-frameworks)
 
  [ ![Avatar for Tech SEO Connect](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2NjU4LCJwdXIiOiJibG9iX2lkIn19--14f297c27d2190051dc109b5d472cf0297dd6c3e/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/40575_logo_social%20media%20profile%204.png) techseoconnect ](https://speakerdeck.com/techseoconnect)
 
@@ -398,11 +298,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   330
 
- [
-
- VelocityConf: Rendering Performance Case Studies
-
- ](https://speakerdeck.com/addyosmani/velocityconf-rendering-performance-case-studies)
+ [VelocityConf: Rendering Performance Case Studies](https://speakerdeck.com/addyosmani/velocityconf-rendering-performance-case-studies)
 
  [ ![Avatar for Addy Osmani](https://secure.gravatar.com/avatar/96270e4c3e5e9806cf7245475c00b275?s=24) addyosmani ](https://speakerdeck.com/addyosmani)
 
@@ -410,11 +306,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   25k
 
- [
-
- The Spectacular Lies of Maps
-
- ](https://speakerdeck.com/axbom/the-spectacular-lies-of-maps)
+ [The Spectacular Lies of Maps](https://speakerdeck.com/axbom/the-spectacular-lies-of-maps)
 
  [ ![Avatar for Per Axbom](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzA4MTcsInB1ciI6ImJsb2JfaWQifX0=--3b22ae95c7f24edaeb9c2d37fdb67f05b7db6128/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/axbom-ind08b.jpg) axbom ](https://speakerdeck.com/axbom)
 
@@ -424,11 +316,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   890
 
- [
-
- We Analyzed 250 Million AI Search Results: Here's What I Found
-
- ](https://speakerdeck.com/joshbly/we-analyzed-250-million-ai-search-results-heres-what-i-found)
+ [We Analyzed 250 Million AI Search Results: Here's What I Found](https://speakerdeck.com/joshbly/we-analyzed-250-million-ai-search-results-heres-what-i-found)
 
  [ ![Avatar for Josh Blyskal](https://secure.gravatar.com/avatar/466d1e24bc0d3058fb53bc890043c3e7?s=24) joshbly ](https://speakerdeck.com/joshbly)
 
@@ -436,11 +324,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   1.7k
 
- [
-
- Refactoring Trust on Your Teams (GOTO; Chicago 2020)
-
- ](https://speakerdeck.com/rmw/refactoring-trust-on-your-teams-goto-chicago-2020)
+ [Refactoring Trust on Your Teams (GOTO; Chicago 2020)](https://speakerdeck.com/rmw/refactoring-trust-on-your-teams-goto-chicago-2020)
 
  [ ![Avatar for Rebecca Miller-Webster](https://secure.gravatar.com/avatar/a9a491b0fcbe0fbce3d64063a37add99?s=24) rmw ](https://speakerdeck.com/rmw)
 
@@ -448,11 +332,7 @@ Presented on Hacktivity 2018 conference - [https://www.hacktivity.com/bug-huntin
 
   3.7k
 
- [
-
- Rails Girls Zürich Keynote
-
- ](https://speakerdeck.com/gr2m/rails-girls-zurich-keynote)
+ [Rails Girls Zürich Keynote](https://speakerdeck.com/gr2m/rails-girls-zurich-keynote)
 
  [ ![Avatar for Gregor Martynus](https://secure.gravatar.com/avatar/24fc194843a71f10949be18d5a692682?s=24) gr2m ](https://speakerdeck.com/gr2m)
 

@@ -74,7 +74,7 @@ Because the Internet can be flaky and regularly has minor outages – sometimes 
 
 De-cloaking begins with a few of your robots doing regular polling to make sure your service remains online. This polling is essential for performing tests. When you do discover an outage on the Internet, you should immediately have your robots ­ from Tor nodes around the world ­ attempt to contact the server in question. If just a few of the bots are blocked, it’s likely that they are either just transiting the “broken” network or that the bot is itself on this “broken” network.
 
-[![](http://web.archive.org/web/20160521212845im_/https://www.whitehatsec.com/wp-content/uploads/picture_1.jpg)
+[!
 
 Detecting a broken link that doesn’t give away the origin (click to enlarge).
 
@@ -82,7 +82,7 @@ Detecting a broken link that doesn’t give away the origin (click to enlarge).
 
 However, if none of your bots can reach the service in question, there’s a good chance that you’ve found the part of the Internet that’s currently broken. One caveat is that if all of the [Introducer nodes](http://web.archive.org/web/20160521212845/https://www.torproject.org/docs/hidden-services.html.en) lie beyond the path of the disruption it may give a false positive, but this is unlikely unless the outage is extremely close to where the polling robots are, or the outage is extremely large. So false positives are a real possibility, although not enough of a deterrent to make this attack un-viable.
 
-[![](http://web.archive.org/web/20160521212845im_/https://www.whitehatsec.com/wp-content/uploads/picture_2.jpg)
+[!
 
 Detecting an outage that does give away the origin (click to enlarge).
 

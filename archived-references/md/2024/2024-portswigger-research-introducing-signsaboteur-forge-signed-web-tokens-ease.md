@@ -191,5 +191,3 @@ You can try the extension in action on a self hosted lab available at Github [re
  [ session tokens ](https://portswigger.net/research/session-tokens) [ research tools ](https://portswigger.net/research/research-tools) [ Zakhar Favourites ](https://portswigger.net/research/zakhar-fedotkin)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

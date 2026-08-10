@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 Stealing Search Engine Queries with JavaScript
 
-|  [![](http://www.spidynamics.com/assets/images/header3.jpg)](http://www.spidynamics.com/news/HP_SPI.html) |   |
+|  [!](http://www.spidynamics.com/news/HP_SPI.html) |   |
 |                 |
 
 # Stealing Search Engine Queries with JavaScript

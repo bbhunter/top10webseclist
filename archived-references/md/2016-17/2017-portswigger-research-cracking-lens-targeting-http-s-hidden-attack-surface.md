@@ -112,13 +112,13 @@ I started out by using a simple Burp match/replace rule to inject a hard-coded p
 
 To help efficiently triage pingbacks I wrote Collaborator Everywhere, a simple Burp extension that injects payloads containing unique identifiers into all proxied traffic, and uses these to automatically correlate pingbacks with the corresponding attacks. For example, the following screenshot shows Collaborator Everywhere has identified that Netflix has visited the URL specified in the Referer header four hours after my visit to their site, and is pretending to be an iPhone running on an x86 CPU:
 
-![](https://portswigger.net/cms/images/migration/blog/netflixhttp.png)
+!
 
 ### Scaling up
 
 Collaborator Everywhere is highly effective for focused, manually driven audits and roughly half the vulnerabilities disclosed in this paper were found using it. However, during this research I noticed that a particular vulnerability on a Yahoo server only had a 30% chance of being found on any given scan. The root cause was that Yahoo was using DNS round-robin load balancing to route inbound requests through one of three different frontend servers, and only one of these servers was vulnerable. Quirks like this matter little to a typical security audit focused on the backend application, but they can derail exploits aimed at subverting load balancers. To ensure no vulnerable servers escape detection, it's necessary to systematically identify and direct payloads at every piece of the target's infrastructure.
 
-![](https://portswigger.net/cms/images/migration/blog/pipeline.png)
+!
 
 To do this, I initially used the Burp Collaborator client in conjunction with a hacked up version of [Masscan](https://github.com/robertdavidgraham/masscan), but ultimately replaced Masscan with [ZMap/ZGrab](https://github.com/zmap/zgrab) as ZGrab supports HTTP/1.1 and HTTPS. To correlate pingbacks with targets, I simply prefixed each payload with the target hostname so a vulnerability in example.com would result in a DNS lookup to example.com.collaboratorid.burpcollaborator.net. Target domains and IP addresses were obtained by manually building a list of legally testable domains from public and private bug bounty programs, and mapping this against [Rapid7's Project Sonar Forward DNS database](https://scans.io/study/sonar.fdns_v2). This technique identified a few million IP addresses, of which roughly 50,000 were listening on port 80/443. I initially tried using reverse DNS records too, but this revealed a number of servers pretending to belong to Google's infrastructure that probably wouldn't be too happy about being subjected to a surprise security audit.
 
@@ -128,7 +128,7 @@ To do this, I initially used the Burp Collaborator client in conjunction with a 
 
 Reverse proxies are entrusted with relaying incoming requests to the appropriate internal server. They typically sit in a privileged network position, directly receiving requests from the internet but having access to a company's DMZ, if not its entire internal network. With a suitable payload, some reverse proxies can be manipulated into misrouting requests to a destination of the attacker's choice. This effectively makes them a gateway enabling unfettered access to the target's internal network - an extra-powerful variant of [Server-Side Request Forgery](https://portswigger.net/web-security/ssrf). Here's a simple diagram showing the attack:
 
-![](https://portswigger.net/cms/images/migration/blog/misroute.png)
+!
 
 Note that such attacks typically involve highly malformed requests which may [break tools such as ZAP](https://github.com/zaproxy/zaproxy/issues/1318), and inadvertently exploit intermediate gateways belonging to your company or ISP. For tooling I'd recommend using Burp Suite (naturally), mitmproxy, and Ncat/OpenSSL.
 
@@ -227,7 +227,7 @@ Using the SET command, I could have made wide-ranging configuration changes to Y
 
 While trying out the invalid host technique, I noticed pingbacks arriving from a small pool of IP addresses for payloads sent to completely unrelated companies, including cloud.mail.ru. I initially assumed that these companies must collectively be using the same cloud WAF solution, and noted that I could trick them into misrouting my request to their internal administration interface. Something wasn't quite right, though; the reverse DNS for this IP pool resolved to bn-proxyXX.ealing.ukcore.bt.net - BT being British Telecom, my company's ISP. Getting a pingback from Kent, UK for a payload sent to Russia is hardly expected behavior. I decided to investigate this using Burp Repeater, and noticed that the responses were coming back in 50ms, which is suspiciously fast for a request that's supposedly going from England to Russia, then to the collaborator server in a datacenter in Ireland, then back to England via Russia. A TCP traceroute to port 80 revealed the truth:
 
-![](https://portswigger.net/cms/images/migration/blog/croppedtrace.png)
+!
 
 Attempts to establish a TCP connection with cloud.mail.ru were being terminated by my own ISP. Note that traffic sent to TCP port 443 (HTTPS) is left untampered with. This suggests that the entity doing the tampering doesn't control the TLS certificate for mail.ru, implying that the interception may be being performed without mail.ru's authorization or knowledge. I could replicate this behavior both in the office and at home, which raised the entertaining possibility that GHCQ had decided to single me out for some clumsy deep packet inspection, and I'd accidentally exploited their system. I was able to rule out this possibility by confirming that some of my less suspicious friends could replicate the same behavior, but that left the question of precisely what this system was for.
 
@@ -394,7 +394,7 @@ Although applications typically filter the URL input, many libraries transparent
 
 Some clients were doing far more than simply downloading pages - they were actually rendering them and in some cases executing JavaScript within. This exposes an attack surface too expansive to map manually, so my colleague Gareth Heyes created a tool called 'Rendering Engine Hackability Probe' designed to thoroughly fingerprint the client's capabilities. As well as identifying common mishaps in custom browsers (like neglecting to enforce the Same Origin Policy) it flags unusual JavaScript properties.
 
-![](https://portswigger.net/cms/images/migration/blog/parity.png)
+!
 
 As we can see here, it has detected the unrecognized JavaScript properties 'parity' and 'System', which have been injected by the Parity browser to let websites initiate Ethereum transactions. Unrecognized parameters can range from mildly interesting to extremely useful. The 'parity' property can be used to get the users' wallet's public key, which is effectively a global unique identifier and also discloses their balance. JXBrowser let developers insert a JavaScript/Java bridge, and last year we discovered it was possible to exploit this to [escape the renderer](https://portswigger.net/blog/rce-in-jxbrowser-javascript-java-bridge) and achieve arbitrary code execution. Ill-configured JavaScript-enabled clients may also connect to file:/// URLs, which can enable local file theft via malicious HTML stored in environment variables and displayed in /proc/self/environ - a sort of cross-protocol blind XSS vulnerability. As well as visually displaying results, every capability also triggers a server-side request so it's just as useful if you can't see the render output. The basic tests have been designed to work even on sensible clients that don't execute JavaScript.
 
@@ -426,7 +426,7 @@ Connection: close`
 
 The following diagram shows the attack sequence:
 
-![](https://portswigger.net/cms/images/migration/blog/cache.png)
+!
 
 Note that the use of XSS to inject an absolute URL means this attack works even if the application rejects requests that contain an unrecognized host header. To aid understanding of this attack I've built a replica of the vulnerable system so that you can [try exploiting it yourself](http://hackxor.net/mission?id=4).
 
@@ -441,5 +441,3 @@ For a different angle on exploiting reverse proxies and server chains, check out
  [ James Favourites ](https://portswigger.net/research/james-kettle) [ SSRF ](https://portswigger.net/research/ssrf) [ Presentations ](https://portswigger.net/research/presentations) [ OAST ](https://portswigger.net/research/oast) [ Black Hat ](https://portswigger.net/research/black-hat)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

@@ -97,7 +97,7 @@ Cgisecurity.com: Web security News - 10/04/06 More fun with CSS history
 
   Hosting generously provided by
 
- ![](http://www.cgisecurity.com/images/bvtelnet80.png)
+ !
 
   Pick Your Language   Choose Spanish English French German Italian
 

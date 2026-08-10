@@ -71,37 +71,9 @@ Cybersecurity
 
 ## TL;DR
 
-[
-
-![Omar Elshopky (3l5h0pky)](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*J0f3vqlkGVufdqiM)
-
-](https://medium.com/@omarelshopky?source=post_page---byline--44df0e2bef9d---------------------------------------)
+[![Omar Elshopky (3l5h0pky)](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*J0f3vqlkGVufdqiM)](https://medium.com/@omarelshopky?source=post_page---byline--44df0e2bef9d---------------------------------------)
 
 [Omar Elshopky (3l5h0pky)](https://medium.com/@omarelshopky?source=post_page---byline--44df0e2bef9d---------------------------------------)
-
-7 min readDec 8, 2025
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F44df0e2bef9d&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40omarelshopky%2Ftemenos-ofs-field-injection-revealing-a-hidden-financial-attack-vector-44df0e2bef9d&user=Omar+Elshopky+%283l5h0pky%29&userId=a5a7500fbf34&source=---header_actions--44df0e2bef9d---------------------clap_footer------------------)
-
---
-
-5
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F44df0e2bef9d&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40omarelshopky%2Ftemenos-ofs-field-injection-revealing-a-hidden-financial-attack-vector-44df0e2bef9d&user=Omar+Elshopky+%283l5h0pky%29&userId=a5a7500fbf34&source=---header_actions--44df0e2bef9d---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F44df0e2bef9d&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40omarelshopky%2Ftemenos-ofs-field-injection-revealing-a-hidden-financial-attack-vector-44df0e2bef9d&source=---header_actions--44df0e2bef9d---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D44df0e2bef9d&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40omarelshopky%2Ftemenos-ofs-field-injection-revealing-a-hidden-financial-attack-vector-44df0e2bef9d&source=---header_actions--44df0e2bef9d---------------------post_audio_button------------------)
-
-Share
 
 During a pentest of an API integrated with Temenos using OFS, I uncovered a previously undocumented attack vector that I call **OFS Field Injection**. Improperly sanitized user input was inserted directly into OFS request strings, enabling the creation of poisoned transactions and theft of funds with minimal trace. The post explains how OFS works, how this attack vector emerges, and why proper input validation is critical for secure Temenos integrations.
 

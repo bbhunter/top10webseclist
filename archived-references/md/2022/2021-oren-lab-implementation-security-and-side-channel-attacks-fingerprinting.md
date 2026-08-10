@@ -131,6 +131,6 @@ Reddit [1](https://www.reddit.com/r/nvidia/comments/sgqc2l/bleeping_computer_res
 
 ## Download links
 
--  [![](https://orenlab.cis.bgu.ac.il/p/pdf.svg) Draft version](https://orenlab.cis.bgu.ac.il/p/DrawnApart.pdf)
--  [![](https://orenlab.cis.bgu.ac.il/p/pdf.svg) Official version](https://dx.doi.org/10.14722/ndss.2022.24093)
--  [![](https://orenlab.cis.bgu.ac.il/p/cogwheel.svg) Artifact Repository](https://github.com/drawnapart/drawnapart)
+-  [! Draft version](https://orenlab.cis.bgu.ac.il/p/DrawnApart.pdf)
+-  [! Official version](https://dx.doi.org/10.14722/ndss.2022.24093)
+-  [! Artifact Repository](https://github.com/drawnapart/drawnapart)

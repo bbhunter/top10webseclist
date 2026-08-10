@@ -151,7 +151,7 @@ There are some references:
 
 - [http://en.wikipedia.org/wiki/Cross-site_request_forgery](http://en.wikipedia.org/wiki/Cross-site_request_forgery)
 
-posted by [Digger # 12:36 AM](http://4diggers.blogspot.com/2006/06/how-to-defeat-digg.html)[2 comments](http://www.blogger.com/comment.g?blogID=29302060&postID=114958086806980648) [](http://www.blogger.com/post-edit.g?blogID=29302060&postID=114958086806980648&quickEdit=true)
+posted by [Digger # 12:36 AM](http://4diggers.blogspot.com/2006/06/how-to-defeat-digg.html)[2 comments](http://www.blogger.com/comment.g?blogID=29302060&postID=114958086806980648) 
 
 ## Archives
 

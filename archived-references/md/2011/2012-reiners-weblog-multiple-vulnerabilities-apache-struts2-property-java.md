@@ -287,4 +287,4 @@ All Struts users should update to Struts 2.3.1.1.
 
 Design a site like this with WordPress.com
 
-[Get started](https://wordpress.com/start/?ref=marketing_bar)[](https://wordpress.com/start/?ref=marketing_bar)
+[Get started](https://wordpress.com/start/?ref=marketing_bar)

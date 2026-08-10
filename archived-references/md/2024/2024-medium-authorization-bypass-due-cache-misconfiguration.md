@@ -73,37 +73,9 @@ Bug Bounty Writeup
 
 # Authorization bypass due to cache misconfiguration
 
-[
-
-![Rikesh Baniya](https://miro.medium.com/v2/resize:fill:64:64/1*swRIl7mj3o-4wRDQhRh2Hw.jpeg)
-
-](https://rikeshbaniya.medium.com/?source=post_page---byline--fde8b2332d2d---------------------------------------)
+[![Rikesh Baniya](https://miro.medium.com/v2/resize:fill:64:64/1*swRIl7mj3o-4wRDQhRh2Hw.jpeg)](https://rikeshbaniya.medium.com/?source=post_page---byline--fde8b2332d2d---------------------------------------)
 
 [Rikesh Baniya](https://rikeshbaniya.medium.com/?source=post_page---byline--fde8b2332d2d---------------------------------------)
-
-4 min readAug 21, 2024
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2Ffde8b2332d2d&operation=register&redirect=https%3A%2F%2Frikeshbaniya.medium.com%2Fauthorization-bypass-due-to-cache-misconfiguration-fde8b2332d2d&user=Rikesh+Baniya&userId=bf54d9b08fca&source=---header_actions--fde8b2332d2d---------------------clap_footer------------------)
-
---
-
-21
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2Ffde8b2332d2d&operation=register&redirect=https%3A%2F%2Frikeshbaniya.medium.com%2Fauthorization-bypass-due-to-cache-misconfiguration-fde8b2332d2d&user=Rikesh+Baniya&userId=bf54d9b08fca&source=---header_actions--fde8b2332d2d---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Ffde8b2332d2d&operation=register&redirect=https%3A%2F%2Frikeshbaniya.medium.com%2Fauthorization-bypass-due-to-cache-misconfiguration-fde8b2332d2d&source=---header_actions--fde8b2332d2d---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3Dfde8b2332d2d&operation=register&redirect=https%3A%2F%2Frikeshbaniya.medium.com%2Fauthorization-bypass-due-to-cache-misconfiguration-fde8b2332d2d&source=---header_actions--fde8b2332d2d---------------------post_audio_button------------------)
-
-Share
 
 This writeup is about one of my favorite findings as it was a very unexpected issue.
 

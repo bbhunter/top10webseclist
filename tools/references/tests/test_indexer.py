@@ -63,7 +63,7 @@ def archived(**over):
 
 
 class TestNeedsWorkIsOnlyWhatCouldNotBeArchived(unittest.TestCase):
-    """`needs-work.md` answers ONE question: could the archive not get the
+    """`document-gaps.md` answers ONE question: could the archive not get the
     document? Lost store bytes were listed there too, and 1,011 fully archived
     references - every one of them with its Markdown and PDF published - buried
     the handful that genuinely have no document. Those belong on
@@ -71,24 +71,24 @@ class TestNeedsWorkIsOnlyWhatCouldNotBeArchived(unittest.TestCase):
 
     def test_an_archived_reference_whose_bytes_are_gone_is_not_work(self):
         manifest = FakeManifest({"https://x.test/a": archived()})
-        text = indexer.build_unresolved(manifest, store=FakeStore())
+        text = indexer.build_document_gaps(manifest, store=FakeStore())
         self.assertIn("Nothing unresolved", text)
-        self.assertFalse(indexer.needs_work(archived()))
+        self.assertFalse(indexer.document_gaps(archived()))
 
     def test_a_reference_with_no_document_is_still_listed(self):
         entry = archived(steps={"acquire": {"result": "failed",
                                             "reason": "the fetch returned 403"}})
-        text = indexer.build_unresolved(FakeManifest({"https://x.test/a": entry}),
+        text = indexer.build_document_gaps(FakeManifest({"https://x.test/a": entry}),
                                         store=FakeStore({"raw1", "text1"}))
         self.assertIn("https://x.test/a", text)
         self.assertNotIn("Nothing unresolved", text)
 
-    def test_needs_work_selector_matches_the_generated_queue(self):
-        self.assertTrue(indexer.needs_work(archived(content_gap="transcript missing")))
+    def test_document_gaps_selector_matches_the_generated_queue(self):
+        self.assertTrue(indexer.document_gaps(archived(content_gap="transcript missing")))
 
     def test_an_excluded_reference_stays_excluded_whatever_the_store_holds(self):
         entry = archived(decision={"outcome": "skip", "class": "derivative"})
-        text = indexer.build_unresolved(FakeManifest({"https://x.test/a": entry}),
+        text = indexer.build_document_gaps(FakeManifest({"https://x.test/a": entry}),
                                         store=FakeStore())
         self.assertIn("Nothing unresolved", text)
 
@@ -96,10 +96,10 @@ class TestNeedsWorkIsOnlyWhatCouldNotBeArchived(unittest.TestCase):
         """"Already have the bytes" promises an offline re-run. A recorded hash
         whose object is gone would fail the moment that re-run was tried."""
         entry = archived(content_gap="the converted text is the consent wall")
-        held = indexer.build_unresolved(FakeManifest({"https://x.test/a": entry}),
+        held = indexer.build_document_gaps(FakeManifest({"https://x.test/a": entry}),
                                         store=FakeStore({"raw1", "text1"}))
         self.assertNotIn("(no bytes stored)", held)
-        gone = indexer.build_unresolved(FakeManifest({"https://x.test/a": entry}),
+        gone = indexer.build_document_gaps(FakeManifest({"https://x.test/a": entry}),
                                         store=FakeStore())
         self.assertIn("(no bytes stored)", gone)
 
@@ -183,7 +183,7 @@ class TestStoreGaps(unittest.TestCase):
         text = indexer.build_store_gaps(FakeManifest({"https://x.test/a": archived()}),
                                         store=FakeStore())
         self.assertIn("IS archived", text)
-        self.assertIn("needs-work.md", text)
+        self.assertIn("document-gaps.md", text)
 
 
 if __name__ == "__main__":

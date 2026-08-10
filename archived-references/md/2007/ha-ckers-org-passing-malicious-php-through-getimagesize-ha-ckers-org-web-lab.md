@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 ha.ckers.org web application security lab - Archive » Passing Malicious PHP Through getimagesize()
 
-[![](http://ha.ckers.org/images/nto_banner.jpg)](http://www.webappsec.org/)
+[!](http://www.webappsec.org/)
  [![web application security lab](http://ha.ckers.org/images/84844372/rsnake/hackers.jpg)](http://ha.ckers.org/)
 
 ## [Passing Malicious PHP Through getimagesize()](http://ha.ckers.org/blog/20070604/passing-malicious-php-through-getimagesize/)

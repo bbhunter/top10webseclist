@@ -1037,5 +1037,3 @@ On a more research-oriented note, buried amongst the high-impact case studies yo
  [ Request Smuggling ](https://portswigger.net/research/request-smuggling) [ tom favourites ](https://portswigger.net/research/tom-favourites) [ Black Hat ](https://portswigger.net/research/black-hat)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

@@ -85,7 +85,7 @@ Because GitHub pages are hosted on the separate `github.io` domain, the `github.
 
 At the time of the report, GitHub’s private page authentication flow was:
 
-![](https://robertchen.cc/imgs/blog/gh-xss/auth-flow.jpg)
+!
 
 More verbosely:
 
@@ -153,7 +153,7 @@ It turns out, appending a null byte causes the integer parsing to end. In other 
 
 We get an XSS!
 
-![](https://robertchen.cc/imgs/blog/gh-xss/xss.jpg)
+!
 
 Note that the response gets rejected if there is a null byte in the header. Thus, the null byte has to come at the beginning of the body (which means we can’t perform a header injection attack).
 
@@ -167,7 +167,7 @@ The first observation is that sibling private pages in the same organization can
 
 We have an easy nonce bypass if we can somehow bypass the `__Host-` prefix protections… Simply set a fake nonce in a sibling page which will be passed down. Luckily, this prefix isn’t enforced on all browsers…
 
-![](https://robertchen.cc/imgs/blog/gh-xss/prefixes.jpg)
+!
 
 Well… not *all*. Looks like only IE would be vulnerable to such a bypass. We’ll have to do better.
 

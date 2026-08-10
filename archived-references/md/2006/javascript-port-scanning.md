@@ -61,9 +61,6 @@ page going offline. To read the original, follow the link above.
 
 1
 
-
-
-
 Hacking Intranet Websites
 from the Outside
 "JavaScript malware just got a lot more dangerous"
@@ -72,9 +69,6 @@ from the Outside
  08.03.2006
  Jeremiah Grossman (Founder and CTO)
  T.C. Niedzialkowski (Sr. Security Engineer)
-
-
-
 
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                 2
@@ -116,9 +110,6 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
 
   Assumptions of Intranet Security
 
-
-
-
   WRONG!
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                 5
@@ -129,16 +120,12 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
    development machines, web mail, wikis, IP
    phones, web cams, host management, etc etc.
 
-
-
-
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                                              6
 
   Intranet users have access
   To access intranet websites, control a user
   (or the browser) which is on the inside.
-
 
                                  FTP
                                                          Intranet
@@ -162,7 +149,6 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
 
   Hacking the Intranet
 
-
                             JavaScript
                              Malware
                     Gets behind the firewall to attack
@@ -177,9 +163,6 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                 8
 
-
-
-
                 The following examples DO NOT use
                 any well-known or un-patched web
                 browser vulnerabilities. The code
@@ -191,9 +174,6 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                 is developed for Firefox 1.5, but the
                 techniques should also apply to
                 Internet Explorer.
-
-
-
 
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                 9
@@ -212,8 +192,6 @@ public area of a website. (persistent XSS)
 the website to echo JavaScript Malware. (non-
 persistent XSS)
 
-
-
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                 10
 
@@ -221,23 +199,14 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
             JavaScript can make links and has
                   access to CSS APIs
 
-
-
-
                                       See the difference?
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                 11
-
-
-
 
    Cycle
    through the
    most popular
    websites
-
-
-
 
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                 12
@@ -251,14 +220,12 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
    Lars Kindermann
    http://reglos.de/myaddress/
 
-
    Send internal IP address where JavaScript can
    access it
 
    <APPLET CODE="MyAddress.class">
    <PARAM NAME="URL" VALUE="demo.html?IP=">
    </APPLET>
-
 
   If we can get the internal subnet great, if not,
       we can still guess for port scanning...
@@ -274,16 +241,10 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
   If a web server is listening on 192.168.1.100, HTML will be returned causing the JS
   interpreter to error.
 
-
-
-
                                                                 CAPTURE THE ERROR!
 
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                 14
-
-
-
 
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                                 15
@@ -310,17 +271,11 @@ Technically, CSS and JavaScript pages can be used for fingerprinting as well.
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                 16
 
-
-
-
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                 17
 
   DSL Wireless/Router Hacking
   Login, if not already authenticated
-
-
-
 
   Factory defaults are handy!
    http://admin:password@192.168.1.1/
@@ -328,9 +283,6 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                                         18
 
   Change the password
-
-
-
 
                                    /password.cgi?
  POST to GET                       sysOldPasswd=password&sysNewPasswd=newpass&sysConfirmP
@@ -341,21 +293,14 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
 
   DMZ Hacking
 
-
-
-
                                     /security.cgi?
   POST to GET                       dod=dod&dmz_enable=dmz_enable&dmzip1=192&dmzip2=168&d
                                     mzip3=1&dmzip4=9&wan_mtu=1500&apply=Apply&wan_way=1500
-
 
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                       20
 
   Network Printer Hacking
-
-
-
 
     POST to GET
      /hp/device/set_config_deviceInfo.html?DeviceDescription=0WNED!
@@ -365,9 +310,6 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
 
   Network Printer Hacking
    Auto-Fire Printer Test Pages
-
-
-
 
    POST to GET                        /hp/device/info_specialPages.html?Demo=Print
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
@@ -389,9 +331,6 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
 
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                 23
-
-
-
 
     Anybody can be a
       victim on any
@@ -423,9 +362,6 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
 
   Exploited on popular websites
 
-
-
-
  Exploitation Leads to website defacement, session hi-
   jacking, user impersonation, worms, phishing scams,
               browser trojans, and more...
@@ -445,8 +381,6 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
   Wikipedia
   http://en.wikipedia.org/wiki/Cross-site_request_forgery
 
-
-
   No statistics, but the general consensus is
   just about every piece of sensitive website
   functionality is vulnerable.
@@ -462,9 +396,6 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
   will automatically digg
   the story
   http://ha.ckers.org/blog/20060615/a-story-that-diggs-itself/
-
-
-
 
   Compromising your GMail
   contact list
@@ -488,7 +419,6 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
    infected causing exponential growth.
     http://namb.la/popular/tech.html
 
-
   Yahoo Mail (JS-Yamanner)
   ‣User receives a email w/ an attachment
    embedded with JavaScript malware.
@@ -504,13 +434,9 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
 
   Solutions
 
-
           How to protect
             yourself
                                                Or at least try
-
-
-
 
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                 30
@@ -540,15 +466,12 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
     your browser location bar.
    ‣no web browser has a clear security                         Text
 
-
-
     advantage, but we prefer Firefox. For
     additional security, install browser add-ons
     such as NoScript (Firefox extension) or the
     Netcraft Toolbar.
    ‣When in doubt, disable JavaScript, Java, and
     Active X prior to your visit.
-
 
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                        32
@@ -561,7 +484,6 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
    pages which contained untrusted content which they had
    filtered. If the filtering failed, the content restrictions  Text
 
-
    may still prevent malicious script from executing or doing
    damage.
    Gervase Markham
@@ -570,7 +492,6 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
    ‣Mozilla (Firefox) developers, please
     implement httpOnly. It's been around for
     years!
-
 
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                                          33
@@ -602,8 +523,6 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
 
   ‣When absolutely nothing can go wrong with                    Text
 
-
-
    your website, consider a web application
    firewall (WAF). Defense-in-Depth
    (mod_security, URL Scan, SecureIIS).
@@ -612,14 +531,10 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
    longer out of reach. Patch and change
    default password.
 
-
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                 35
 
   Recommended Reading
-
-
-
 
 Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                                                                  36
@@ -636,7 +551,3 @@ Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.
                 For more information about WhiteHat Security,
                 please call 408.492.1817 or visit our website,
                              www.whitehatsec.com
-
-
-
-Copyright © 2006 WhiteHat Security, inc. All Rights Reserved.

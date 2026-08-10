@@ -73,37 +73,9 @@ Programming
 
 # How I hacked hundreds of companies through their helpdesk
 
-[
-
-![Inti De Ceukelaire](https://miro.medium.com/v2/resize:fill:64:64/1*ovE2dAh28EY5f-50MVvV7A.jpeg)
-
-](https://medium.com/@intideceukelaire?source=post_page---byline--b7680ddc2d4c---------------------------------------)
+[![Inti De Ceukelaire](https://miro.medium.com/v2/resize:fill:64:64/1*ovE2dAh28EY5f-50MVvV7A.jpeg)](https://medium.com/@intideceukelaire?source=post_page---byline--b7680ddc2d4c---------------------------------------)
 
 [Inti De Ceukelaire](https://medium.com/@intideceukelaire?source=post_page---byline--b7680ddc2d4c---------------------------------------)
-
-10 min readSep 10, 2017
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fintigriti%2Fb7680ddc2d4c&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fintigriti%2Fhow-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c&user=Inti+De+Ceukelaire&userId=f9e27197ffb5&source=---header_actions--b7680ddc2d4c---------------------clap_footer------------------)
-
---
-
-43
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2Fb7680ddc2d4c&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fintigriti%2Fhow-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c&user=Inti+De+Ceukelaire&userId=f9e27197ffb5&source=---header_actions--b7680ddc2d4c---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fb7680ddc2d4c&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fintigriti%2Fhow-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c&source=---header_actions--b7680ddc2d4c---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3Db7680ddc2d4c&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fintigriti%2Fhow-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c&source=---header_actions--b7680ddc2d4c---------------------post_audio_button------------------)
-
-Share
 
 **UPDATE**: The Next Web wrote a story about my findings: [https://thenextweb.com/security/2017/09/21/ticket-trick-see-hackers-gain-unauthorized-access-slack-teams-exploiting-issue-trackers/](https://thenextweb.com/security/2017/09/21/ticket-trick-see-hackers-gain-unauthorized-access-slack-teams-exploiting-issue-trackers/)
 

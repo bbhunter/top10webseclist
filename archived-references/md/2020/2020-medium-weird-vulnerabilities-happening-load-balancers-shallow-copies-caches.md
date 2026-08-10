@@ -74,35 +74,11 @@ Information Security
 
 # Weird Vulnerabilities Happening on Load Balancers, Shallow Copies and Caches
 
-[
-
-![Ozgur Alp](https://miro.medium.com/v2/resize:fill:64:64/1*xYDyc5B543QI9kxf9dGUjg.jpeg)
-
-](https://medium.com/@ozguralp?source=post_page---byline--9194d4f72322---------------------------------------)
+[![Ozgur Alp](https://miro.medium.com/v2/resize:fill:64:64/1*xYDyc5B543QI9kxf9dGUjg.jpeg)](https://medium.com/@ozguralp?source=post_page---byline--9194d4f72322---------------------------------------)
 
 [Ozgur Alp](https://medium.com/@ozguralp?source=post_page---byline--9194d4f72322---------------------------------------)
 
-6 min readFeb 11, 2020
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fdataseries%2F9194d4f72322&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fdataseries%2Fweird-vulnerabilities-happening-on-load-balancers-shallow-copies-and-caches-9194d4f72322&user=Ozgur+Alp&userId=d836b28cb997&source=---header_actions--9194d4f72322---------------------clap_footer------------------)
-
 --
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F9194d4f72322&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fdataseries%2Fweird-vulnerabilities-happening-on-load-balancers-shallow-copies-and-caches-9194d4f72322&user=Ozgur+Alp&userId=d836b28cb997&source=---header_actions--9194d4f72322---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F9194d4f72322&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fdataseries%2Fweird-vulnerabilities-happening-on-load-balancers-shallow-copies-and-caches-9194d4f72322&source=---header_actions--9194d4f72322---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D9194d4f72322&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fdataseries%2Fweird-vulnerabilities-happening-on-load-balancers-shallow-copies-and-caches-9194d4f72322&source=---header_actions--9194d4f72322---------------------post_audio_button------------------)
-
-Share
 
 When looking for security vulnerabilities on a web application - either for bug hunting or a penetration test project -, I always check 2 things at last when I was clearing my testing up on a target:
 

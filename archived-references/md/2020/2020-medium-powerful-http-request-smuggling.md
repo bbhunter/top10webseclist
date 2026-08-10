@@ -66,37 +66,9 @@ page going offline. To read the original, follow the link above.
 
 # The Powerful HTTP Request Smuggling 💪
 
-[
-
-![Ricardo Iramar dos Santos](https://miro.medium.com/v2/resize:fill:64:64/1*Bc9537mxHr1Xk4As_Umdpg.jpeg)
-
-](https://ricardoiramar.medium.com/?source=post_page---byline--af208fafa142---------------------------------------)
+[![Ricardo Iramar dos Santos](https://miro.medium.com/v2/resize:fill:64:64/1*Bc9537mxHr1Xk4As_Umdpg.jpeg)](https://ricardoiramar.medium.com/?source=post_page---byline--af208fafa142---------------------------------------)
 
 [Ricardo Iramar dos Santos](https://ricardoiramar.medium.com/?source=post_page---byline--af208fafa142---------------------------------------)
-
-13 min readOct 1, 2020
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2Faf208fafa142&operation=register&redirect=https%3A%2F%2Fricardoiramar.medium.com%2Fthe-powerful-http-request-smuggling-af208fafa142&user=Ricardo+Iramar+dos+Santos&userId=a02e90168666&source=---header_actions--af208fafa142---------------------clap_footer------------------)
-
---
-
-3
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2Faf208fafa142&operation=register&redirect=https%3A%2F%2Fricardoiramar.medium.com%2Fthe-powerful-http-request-smuggling-af208fafa142&user=Ricardo+Iramar+dos+Santos&userId=a02e90168666&source=---header_actions--af208fafa142---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Faf208fafa142&operation=register&redirect=https%3A%2F%2Fricardoiramar.medium.com%2Fthe-powerful-http-request-smuggling-af208fafa142&source=---header_actions--af208fafa142---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3Daf208fafa142&operation=register&redirect=https%3A%2F%2Fricardoiramar.medium.com%2Fthe-powerful-http-request-smuggling-af208fafa142&source=---header_actions--af208fafa142---------------------post_audio_button------------------)
-
-Share
 
 TL;DR: This is how I was able to exploit a HTTP Request Smuggling in some Mobile Device Management (MDM) servers and send any MDM command to any device enrolled on them for a private bug bounty program.
 

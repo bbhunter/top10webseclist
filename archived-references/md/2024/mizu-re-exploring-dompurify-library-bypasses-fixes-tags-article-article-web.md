@@ -139,7 +139,7 @@ func main() {
 
 As an example of how internally a client-side HTML sanitizer works, here is a simplified version of the DOMPurify's workflow, as it is the subject of this article :)
 
-  ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/dompurify.png)
+  !
 
 **Fig. 2**: Simplified DOMPurify execution flow.
 
@@ -162,13 +162,13 @@ How could a client-side sanitizer be bypassed if it has the same parser as the b
 
 That's a good point, and it is mostly due to the way HTML works. The first reason, as well explained in the specification, is that parsing an HTML string twice can lead to different outputs each time.
 
-  ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/html-spec-parsing.png)
+  !
 
 **Fig. 3**: HTML Specification - Serialising html fragments ([ref](https://html.spec.whatwg.org/#serialising-html-fragments)).
 
 A "well-known" example used by [@SecurityMB](https://x.com/SecurityMB) to bypass [DOMPurify < 2.0.17](https://research.securitum.com/mutation-xss-via-mathml-mutation-dompurify-2-0-17-bypass/) is related to the <form> child restriction, which blocks it from having another nested <form>:
 
-  ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/html-spec-form.png)
+  !
 
 **Fig. 4**: HTML Specification - The form element ([ref](https://html.spec.whatwg.org/#the-form-element)).
 
@@ -238,7 +238,7 @@ Now that we have all the necessary information to understand the upcoming sectio
 
 The story begins on April 26, 2024, when [@cure53berlin](https://x.com/cure53berlin) posted about a full DOMPurify bypass in versions <= 3.1.0, discovered by [@IcesFont](https://x.com/IcesFont).
 
-  ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/twitter-cure53-310.png)
+  !
 
 **Fig. 9**: Tweet announcing the DOMPurify <= 3.1.0 bypass ([ref](https://x.com/cure53berlin/status/1783819608127840678)).
 
@@ -252,7 +252,7 @@ With that said, we can dive into how [@IcesFont](https://x.com/IcesFont) bypasse
 
 When parsing an HTML tree, there are many factors to consider. One aspect that might not immediately come to mind is **how deep a DOM tree can be**? Interestingly, the HTML specification does not provide explicit guidelines on how this should be handled.
 
-  ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/flattening.png)
+  !
 
 **Fig. 10**: HTML Specification - Tree construction ([ref](https://html.spec.whatwg.org/#tree-construction)).
 
@@ -298,13 +298,13 @@ Being able to return "invalid" HTML out of a sanitizer is a **strong** mutation 
 
 The last piece requires a deep understanding of how HTML parse states are handled. For this bypass, we are going to focus on two concepts: [HTML insertion modes](https://html.spec.whatwg.org/#the-insertion-mode) and the [stack of open elements](https://html.spec.whatwg.org/#the-stack-of-open-elements). As explained in the HTML specification, [HTML insertion modes](https://html.spec.whatwg.org/#the-insertion-mode) aim to define how tokens are processed while parsing an HTML string.
 
-  ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/html-spec-insertion-modes.png)
+  !
 
 **Fig. 16**: HTML Specification - The insertion mode ([ref](https://html.spec.whatwg.org/#the-insertion-mode))
 
 For instance, based on the [in caption insertion mode](https://html.spec.whatwg.org/#parsing-main-incaption) definition, if the parser finds a <caption> start tag, it needs to **pop elements** from the **stack of open elements** until a <caption> element has been popped out.
 
-  ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/html-spec-in-caption.png)
+  !
 
 **Fig. 17**: HTML Specification - Parsing main incaption ([ref](https://html.spec.whatwg.org/#parsing-main-incaption)).
 
@@ -314,11 +314,11 @@ What is the stack of open elements?
 
 Essentially, it's a LIFO (Last In First Out) stack of HTML elements. This stack grows as the HTML parser processes the provided string.
 
-  ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/html-spec-stack-of-open-elements.png)
+  !
 
 **Fig. 18**: HTML Specification - The stack of open elements ([ref](https://html.spec.whatwg.org/#the-stack-of-open-elements)).
 
-   ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/stack-of-open-elements-example.png)
+   !
 
 **Fig. 19**: Example of stack of open elements for a caption element.
 
@@ -332,7 +332,7 @@ What makes it even more interesting is that, even if this is HTML namespace spec
 
 Finally, to generate this situation using node flattening, [@IcesFont](https://x.com/IcesFont) used the fact that the in caption insertion mode falls back to the in body insertion mode, which "resets" the parent in table insertion mode.
 
-  ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/html-spec-in-body.png)
+  !
 
 **Fig. 22**: HTML Specification - Parsing main incaption ([ref](https://html.spec.whatwg.org/#parsing-main-incaption)).
 
@@ -348,7 +348,7 @@ If we bring everything that has been explained in this section together, it is p
 
 *Unfortunately, Firefox does not mutate when a <table> is present at the same level as the second <caption> tag, making Firefox not vulnerable to this mutation. However, [@kinugawamasato](https://x.com/kinugawamasato) discovered another mutation using deep nesting, which works on Firefox, Chromium, and Safari (we won't cover that one here).*
 
-  [![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/dompurify-3.1.0-bypass.png)](https://yeswehack.github.io/Dom-Explorer/dom-explorer/frame/?input=editable&titleBar=readonly&readonly=true&pipe[titleBar]=true&pipe[settings]=true&pipe[render]=true&pipe[skip]=true/#eyJpbnB1dCI6IjxkaXYqNTA2PlxuPHRhYmxlPlxuICA8Y2FwdGlvbj5cbiAgICA8c3ZnPlxuICAgICAgPHRpdGxlPlxuICAgICAgICA8dGFibGU+PGNhcHRpb24+PC9jYXB0aW9uPjwvdGFibGU+XG4gICAgICA8L3RpdGxlPlxuICAgICAgPHN0eWxlPjxhIGlkPVwiPC9zdHlsZT48aW1nIHNyYz14IG9uZXJyb3I9YWxlcnQoKT5cIj48L2E+PC9zdHlsZT5cbiAgICA8L3N2Zz5cbiAgPC9jYXB0aW9uPlxuPC90YWJsZT4iLCJwaXBlbGluZXMiOlt7ImlkIjoiMGFkcXN1YWoiLCJuYW1lIjoiRG9tIFRyZWUiLCJwaXBlcyI6W3sibmFtZSI6IkRvbVB1cmlmeSIsImlkIjoiZXJsNXR6ZXMiLCJoaWRlIjp0cnVlLCJza2lwIjpmYWxzZSwib3B0cyI6eyJ2ZXJzaW9uIjoiMy4xLjAiLCJvcHRpb25zIjoie30ifX0seyJuYW1lIjoiRG9tUGFyc2VyIiwiaWQiOiJiNTRyd2RiNSIsImhpZGUiOmZhbHNlLCJza2lwIjpmYWxzZSwib3B0cyI6eyJ0eXBlIjoidGV4dC9odG1sIiwic2VsZWN0b3IiOiJib2R5Iiwib3V0cHV0IjoiaW5uZXJIVE1MIiwiYWRkRG9jdHlwZSI6dHJ1ZX19XX1dfQ==)
+  [!](https://yeswehack.github.io/Dom-Explorer/dom-explorer/frame/?input=editable&titleBar=readonly&readonly=true&pipe[titleBar]=true&pipe[settings]=true&pipe[render]=true&pipe[skip]=true/#eyJpbnB1dCI6IjxkaXYqNTA2PlxuPHRhYmxlPlxuICA8Y2FwdGlvbj5cbiAgICA8c3ZnPlxuICAgICAgPHRpdGxlPlxuICAgICAgICA8dGFibGU+PGNhcHRpb24+PC9jYXB0aW9uPjwvdGFibGU+XG4gICAgICA8L3RpdGxlPlxuICAgICAgPHN0eWxlPjxhIGlkPVwiPC9zdHlsZT48aW1nIHNyYz14IG9uZXJyb3I9YWxlcnQoKT5cIj48L2E+PC9zdHlsZT5cbiAgICA8L3N2Zz5cbiAgPC9jYXB0aW9uPlxuPC90YWJsZT4iLCJwaXBlbGluZXMiOlt7ImlkIjoiMGFkcXN1YWoiLCJuYW1lIjoiRG9tIFRyZWUiLCJwaXBlcyI6W3sibmFtZSI6IkRvbVB1cmlmeSIsImlkIjoiZXJsNXR6ZXMiLCJoaWRlIjp0cnVlLCJza2lwIjpmYWxzZSwib3B0cyI6eyJ2ZXJzaW9uIjoiMy4xLjAiLCJvcHRpb25zIjoie30ifX0seyJuYW1lIjoiRG9tUGFyc2VyIiwiaWQiOiJiNTRyd2RiNSIsImhpZGUiOmZhbHNlLCJza2lwIjpmYWxzZSwib3B0cyI6eyJ0eXBlIjoidGV4dC9odG1sIiwic2VsZWN0b3IiOiJib2R5Iiwib3V0cHV0IjoiaW5uZXJIVE1MIiwiYWRkRG9jdHlwZSI6dHJ1ZX19XX1dfQ==)
 
 **Fig. 25**: DOMPurify <= 3.1.0 bypass found by [@IcesFont](https://x.com/IcesFont).
 
@@ -358,7 +358,7 @@ If we bring everything that has been explained in this section together, it is p
 
 This issue has been fixed by [@cure53berlin](https://x.com/cure53berlin) with the help of [@IcesFont](https://x.com/IcesFont) using a custom depth counter to limit the maximum nested depth to 255. Why not use a browser API to get the current depth of a node? Because there is no such API :(
 
-  ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/dompurify-3.1.1-fix.png)
+  !
 
 **Fig. 26**: GitHub diff between DOMPurify versions 3.1.1 and 3.1.0 ([ref](https://github.com/cure53/DOMPurify/compare/3.1.0...3.1.1)).
 
@@ -366,7 +366,7 @@ This issue has been fixed by [@cure53berlin](https://x.com/cure53berlin) with th
 
 Additionally, to make sure that the __depth attribute doesn't get clobbered using <form><input id="__depth">, the _isClobbered function has been updated to enforce it to be an integer.
 
-  ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/dompurify-3.1.1-fix-2.png)
+  !
 
 **Fig. 27**: DOMPurify's 3.1.1 [_isClobbered](https://github.com/cure53/DOMPurify/blob/7a0a984a8aea7341ce084f72cda806e2395b336b/src/purify.js#L937) function.
 
@@ -394,7 +394,7 @@ Using this bug twice in a row is required for the fix, as 255 * 2 = 510, which d
 
 *For the same reason as the previous bypass, this one isn't working in Firefox.*
 
-  [![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/dompurify-3.1.1-bypass.png)](https://yeswehack.github.io/Dom-Explorer/dom-explorer/#eyJpbnB1dCI6IjxkaXYqMjAwPlxuPGZvcm0+PGlucHV0IG5hbWU9XCJwYXJlbnROb2RlXCI+XG48ZGl2KjIwMD5cbjxmb3JtPjwvZm9ybT48Zm9ybT48aW5wdXQgbmFtZT1cInBhcmVudE5vZGVcIj5cbjxkaXYqMTA1PlxuPHRhYmxlPlxuICA8Y2FwdGlvbj5cbiAgICA8c3ZnPlxuICAgICAgPGRlc2M+XG4gICAgICAgIDx0YWJsZT48Y2FwdGlvbj48L2NhcHRpb24+PC90YWJsZT5cbiAgICAgIDwvZGVzYz5cbiAgICAgIDxzdHlsZT48YSB0aXRsZT1cIjwvc3ZnPjwvc3R5bGU+PGltZyBzcmMgb25lcnJvcj1hbGVydCgxKT5cIj48L2E+PC9zdHlsZT5cbiAgICAgIDwvc3ZnPlxuICA8L2NhcHRpb24+XG48L3RhYmxlPiIsInBpcGVsaW5lcyI6W3siaWQiOiIwYWRxc3VhaiIsIm5hbWUiOiJEb20gVHJlZSIsInBpcGVzIjpbeyJuYW1lIjoiRG9tUHVyaWZ5IiwiaWQiOiJlcmw1dHplcyIsImhpZGUiOnRydWUsInNraXAiOmZhbHNlLCJvcHRzIjp7InZlcnNpb24iOiIzLjEuMSIsIm9wdGlvbnMiOiJ7fSJ9fSx7Im5hbWUiOiJEb21QYXJzZXIiLCJpZCI6ImI1NHJ3ZGI1IiwiaGlkZSI6ZmFsc2UsInNraXAiOmZhbHNlLCJvcHRzIjp7InR5cGUiOiJ0ZXh0L2h0bWwiLCJzZWxlY3RvciI6ImJvZHkiLCJvdXRwdXQiOiJpbm5lckhUTUwiLCJhZGREb2N0eXBlIjp0cnVlfX1dfV19)
+  [!](https://yeswehack.github.io/Dom-Explorer/dom-explorer/#eyJpbnB1dCI6IjxkaXYqMjAwPlxuPGZvcm0+PGlucHV0IG5hbWU9XCJwYXJlbnROb2RlXCI+XG48ZGl2KjIwMD5cbjxmb3JtPjwvZm9ybT48Zm9ybT48aW5wdXQgbmFtZT1cInBhcmVudE5vZGVcIj5cbjxkaXYqMTA1PlxuPHRhYmxlPlxuICA8Y2FwdGlvbj5cbiAgICA8c3ZnPlxuICAgICAgPGRlc2M+XG4gICAgICAgIDx0YWJsZT48Y2FwdGlvbj48L2NhcHRpb24+PC90YWJsZT5cbiAgICAgIDwvZGVzYz5cbiAgICAgIDxzdHlsZT48YSB0aXRsZT1cIjwvc3ZnPjwvc3R5bGU+PGltZyBzcmMgb25lcnJvcj1hbGVydCgxKT5cIj48L2E+PC9zdHlsZT5cbiAgICAgIDwvc3ZnPlxuICA8L2NhcHRpb24+XG48L3RhYmxlPiIsInBpcGVsaW5lcyI6W3siaWQiOiIwYWRxc3VhaiIsIm5hbWUiOiJEb20gVHJlZSIsInBpcGVzIjpbeyJuYW1lIjoiRG9tUHVyaWZ5IiwiaWQiOiJlcmw1dHplcyIsImhpZGUiOnRydWUsInNraXAiOmZhbHNlLCJvcHRzIjp7InZlcnNpb24iOiIzLjEuMSIsIm9wdGlvbnMiOiJ7fSJ9fSx7Im5hbWUiOiJEb21QYXJzZXIiLCJpZCI6ImI1NHJ3ZGI1IiwiaGlkZSI6ZmFsc2UsInNraXAiOmZhbHNlLCJvcHRzIjp7InR5cGUiOiJ0ZXh0L2h0bWwiLCJzZWxlY3RvciI6ImJvZHkiLCJvdXRwdXQiOiJpbm5lckhUTUwiLCJhZGREb2N0eXBlIjp0cnVlfX1dfV19)
 
 **Fig. 29**: DOMPurify <= 3.1.1 bypass.
 
@@ -404,13 +404,13 @@ Using this bug twice in a row is required for the fix, as 255 * 2 = 510, which d
 
 The fix in this version was much stricter than the previous one, not only because of my report but also because [@hash_kitten](https://x.com/hash_kitten) found another full bypass involving only [HTML insertion modes](https://html.spec.whatwg.org/#the-insertion-mode) and the [stack of open elements](https://html.spec.whatwg.org/#the-stack-of-open-elements). We aren't going to cover this bypass in this article, but it motivated [@cure53berlin](https://x.com/cure53berlin) to block every [HTML integration point](https://html.spec.whatwg.org/#html-integration-point), preventing any switch from the SVG to HTML namespace.
 
-  ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/dompurify-3.1.2-fix.png)
+  !
 
 **Fig. 30**: GitHub diff between DOMPurify versions 3.1.2 and 3.1.1 ([ref](https://github.com/cure53/DOMPurify/compare/3.1.1...3.1.2)).
 
 Additionally, to make sure no DOM Clobbering issues were left, the [getParentNode](https://github.com/cure53/DOMPurify/blob/5b2e3171e403535656270e3aa1842ff030f136e4/src/purify.js#L120) method was used, which resolves the value using the property getter itself.
 
-  ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/dompurify-3.1.2-fix-2.png)
+  !
 
 **Fig. 31**: GitHub diff between DOMPurify versions 3.1.2 and 3.1.1 ([ref](https://github.com/cure53/DOMPurify/compare/3.1.1...3.1.2)).
 
@@ -418,7 +418,7 @@ Additionally, to make sure no DOM Clobbering issues were left, the [getParentNod
 
 This time, the DOM Clobbering issue was inherent to the sanitization order used by DOMPurify. If we refer back to the previous sanitization flow graph, DOM Clobbering checks occur within the [_sanitizeElement](https://github.com/cure53/DOMPurify/blob/5b2e3171e403535656270e3aa1842ff030f136e4/src/purify.js#L994) function.
 
-  ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/dompurify.png)
+  !
 
 **Fig. 32**: Simplified DOMPurify execution flow.
 
@@ -554,7 +554,7 @@ Essentially, the tags between two <button> elements determine where the stack of
 
 I tried to figure out where in the specification this behavior was described, and it seems to be related to this:
 
-  ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/html-spec-stack-of-open-elements-2.png)
+  !
 
 **Fig. 43**: HTML Specification - Has an element in the specific scope ([ref](https://html.spec.whatwg.org/#has-an-element-in-the-specific-scope))
 
@@ -599,7 +599,7 @@ If we bring everything that has been explained in this section together, it is p
 
 *Unfortunately, for an unknown reason, second-order DOM clobbering isn't working on Firefox in the context of DOMPurify sanitization, making Firefox not vulnerable again...*
 
-  [![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/dompurify-3.1.2-bypass.png)](https://yeswehack.github.io/Dom-Explorer/dom-explorer/frame/?input=editable&titleBar=readonly&readonly=true&pipe[titleBar]=true&pipe[settings]=true&pipe[render]=true&pipe[skip]=true/#eyJpbnB1dCI6Ijxmb3JtIGlkPVwieCBcIj5cbjxyKjUwND5cbjxhPlxuICA8c3ZnPlxuICAgIDxpbWFnZT5cbiAgICAgIDxhPlxuICAgICAgICA8ZGVzYz5cbiAgICAgICAgICA8c3ZnPlxuICAgICAgICAgICAgPGltYWdlPjwvaW1hZ2U+XG4gICAgICAgICAgPC9zdmc+XG4gICAgICAgIDwvZGVzYz5cbiAgICAgIDwvYT5cbiAgICA8L2ltYWdlPlxuICAgIDxzdHlsZT48YSBpZD1cIjwvc3R5bGU+PGltZyBzcmM9eCBvbmVycm9yPWFsZXJ0KDEpPlwiPjwvYT48L3N0eWxlPlxuICA8L3N2Zz5cbjwvYT5cbjwvZm9ybT5cbjxpbnB1dCBmb3JtPVwieFwiIG5hbWU9XCJfX2RlcHRoXCI+IiwicGlwZWxpbmVzIjpbeyJpZCI6IjAyMmQ4cHpuIiwibmFtZSI6IkRvbSBUcmVlIiwicGlwZXMiOlt7Im5hbWUiOiJEb21QdXJpZnkiLCJpZCI6Inlld2Y2ZXRyIiwiaGlkZSI6dHJ1ZSwic2tpcCI6ZmFsc2UsIm9wdHMiOnsidmVyc2lvbiI6IjMuMS4yIiwib3B0aW9ucyI6Int9In19LHsibmFtZSI6IkRvbVBhcnNlciIsImlkIjoiOXByM2xzbGUiLCJoaWRlIjpmYWxzZSwic2tpcCI6ZmFsc2UsIm9wdHMiOnsidHlwZSI6InRleHQvaHRtbCIsInNlbGVjdG9yIjoiYm9keSIsIm91dHB1dCI6ImlubmVySFRNTCIsImFkZERvY3R5cGUiOnRydWV9fV19XX0=)
+  [!](https://yeswehack.github.io/Dom-Explorer/dom-explorer/frame/?input=editable&titleBar=readonly&readonly=true&pipe[titleBar]=true&pipe[settings]=true&pipe[render]=true&pipe[skip]=true/#eyJpbnB1dCI6Ijxmb3JtIGlkPVwieCBcIj5cbjxyKjUwND5cbjxhPlxuICA8c3ZnPlxuICAgIDxpbWFnZT5cbiAgICAgIDxhPlxuICAgICAgICA8ZGVzYz5cbiAgICAgICAgICA8c3ZnPlxuICAgICAgICAgICAgPGltYWdlPjwvaW1hZ2U+XG4gICAgICAgICAgPC9zdmc+XG4gICAgICAgIDwvZGVzYz5cbiAgICAgIDwvYT5cbiAgICA8L2ltYWdlPlxuICAgIDxzdHlsZT48YSBpZD1cIjwvc3R5bGU+PGltZyBzcmM9eCBvbmVycm9yPWFsZXJ0KDEpPlwiPjwvYT48L3N0eWxlPlxuICA8L3N2Zz5cbjwvYT5cbjwvZm9ybT5cbjxpbnB1dCBmb3JtPVwieFwiIG5hbWU9XCJfX2RlcHRoXCI+IiwicGlwZWxpbmVzIjpbeyJpZCI6IjAyMmQ4cHpuIiwibmFtZSI6IkRvbSBUcmVlIiwicGlwZXMiOlt7Im5hbWUiOiJEb21QdXJpZnkiLCJpZCI6Inlld2Y2ZXRyIiwiaGlkZSI6dHJ1ZSwic2tpcCI6ZmFsc2UsIm9wdHMiOnsidmVyc2lvbiI6IjMuMS4yIiwib3B0aW9ucyI6Int9In19LHsibmFtZSI6IkRvbVBhcnNlciIsImlkIjoiOXByM2xzbGUiLCJoaWRlIjpmYWxzZSwic2tpcCI6ZmFsc2UsIm9wdHMiOnsidHlwZSI6InRleHQvaHRtbCIsInNlbGVjdG9yIjoiYm9keSIsIm91dHB1dCI6ImlubmVySFRNTCIsImFkZERvY3R5cGUiOnRydWV9fV19XX0=)
 
 **Fig. 47**: DOMPurify <= 3.1.2 bypass.
 
@@ -637,11 +637,11 @@ The first one is related to how nested form parsing reacts if a <table>, <marque
 
 On Firefox, chaining it with the nested <form> mutation, this is enough to trigger a triple parsing mutation bug that bumps up an element. However, this is not the case on Chromium and Safari. I thought this might be related to HTML quirks mode, but I was wrong, and I have no idea where this parsing difference comes from. ¯\_(ツ)_/¯
 
-  [![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/firefox-triple-form-table-reordering-parsing.png)](https://yeswehack.github.io/Dom-Explorer/dom-explorer/frame/?input=editable&titleBar=readonly&readonly=true&pipe[titleBar]=true&pipe[settings]=true&pipe[render]=true&pipe[skip]=true/#eyJpbnB1dCI6Ijxmb3JtPjx0YWJsZT48L2Zvcm0+PGZvcm0+PC90YWJsZT48L2Zvcm0+PGRpdj48L2Rpdj4iLCJwaXBlbGluZXMiOlt7ImlkIjoibHRjNndrY3QiLCJuYW1lIjoiRG9tIFRyZWUiLCJwaXBlcyI6W3sibmFtZSI6IkRvbVBhcnNlciIsImlkIjoiN2wwNjZ6cXgiLCJoaWRlIjpmYWxzZSwic2tpcCI6ZmFsc2UsIm9wdHMiOnsidHlwZSI6InRleHQvaHRtbCIsInNlbGVjdG9yIjoiYm9keSIsIm91dHB1dCI6ImlubmVySFRNTCIsImFkZERvY3R5cGUiOnRydWV9fV19XX0=)
+  [!](https://yeswehack.github.io/Dom-Explorer/dom-explorer/frame/?input=editable&titleBar=readonly&readonly=true&pipe[titleBar]=true&pipe[settings]=true&pipe[render]=true&pipe[skip]=true/#eyJpbnB1dCI6Ijxmb3JtPjx0YWJsZT48L2Zvcm0+PGZvcm0+PC90YWJsZT48L2Zvcm0+PGRpdj48L2Rpdj4iLCJwaXBlbGluZXMiOlt7ImlkIjoibHRjNndrY3QiLCJuYW1lIjoiRG9tIFRyZWUiLCJwaXBlcyI6W3sibmFtZSI6IkRvbVBhcnNlciIsImlkIjoiN2wwNjZ6cXgiLCJoaWRlIjpmYWxzZSwic2tpcCI6ZmFsc2UsIm9wdHMiOnsidHlwZSI6InRleHQvaHRtbCIsInNlbGVjdG9yIjoiYm9keSIsIm91dHB1dCI6ImlubmVySFRNTCIsImFkZERvY3R5cGUiOnRydWV9fV19XX0=)
 
 **Fig. 50**: Firefox <form> / <table> reordering (triple HTML parsing).
 
-   [![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/chromium-triple-form-table-reordering-parsing.png)](https://yeswehack.github.io/Dom-Explorer/dom-explorer/frame/?input=editable&titleBar=readonly&readonly=true&pipe[titleBar]=true&pipe[settings]=true&pipe[render]=true&pipe[skip]=true/#eyJpbnB1dCI6Ijxmb3JtPjx0YWJsZT48L2Zvcm0+PGZvcm0+PC90YWJsZT48L2Zvcm0+PGRpdj48L2Rpdj4iLCJwaXBlbGluZXMiOlt7ImlkIjoibHRjNndrY3QiLCJuYW1lIjoiRG9tIFRyZWUiLCJwaXBlcyI6W3sibmFtZSI6IkRvbVBhcnNlciIsImlkIjoiN2wwNjZ6cXgiLCJoaWRlIjpmYWxzZSwic2tpcCI6ZmFsc2UsIm9wdHMiOnsidHlwZSI6InRleHQvaHRtbCIsInNlbGVjdG9yIjoiYm9keSIsIm91dHB1dCI6ImlubmVySFRNTCIsImFkZERvY3R5cGUiOnRydWV9fV19XX0=)
+   [!](https://yeswehack.github.io/Dom-Explorer/dom-explorer/frame/?input=editable&titleBar=readonly&readonly=true&pipe[titleBar]=true&pipe[settings]=true&pipe[render]=true&pipe[skip]=true/#eyJpbnB1dCI6Ijxmb3JtPjx0YWJsZT48L2Zvcm0+PGZvcm0+PC90YWJsZT48L2Zvcm0+PGRpdj48L2Rpdj4iLCJwaXBlbGluZXMiOlt7ImlkIjoibHRjNndrY3QiLCJuYW1lIjoiRG9tIFRyZWUiLCJwaXBlcyI6W3sibmFtZSI6IkRvbVBhcnNlciIsImlkIjoiN2wwNjZ6cXgiLCJoaWRlIjpmYWxzZSwic2tpcCI6ZmFsc2UsIm9wdHMiOnsidHlwZSI6InRleHQvaHRtbCIsInNlbGVjdG9yIjoiYm9keSIsIm91dHB1dCI6ImlubmVySFRNTCIsImFkZERvY3R5cGUiOnRydWV9fV19XX0=)
 
 **Fig. 51**: Chromium <form> / <table> reordering (triple HTML parsing).
 
@@ -725,7 +725,7 @@ Oh, and this works perfectly on outdated [mermaid.js](https://github.com/mermaid
 
 Because of the triple HTML parsing bypass, [@cure53berlin](https://x.com/cure53berlin) decided to fix the problem at its root cause: HTML attributes. Since all the recent DOMPurify bypasses involve namespace confusion attacks using HTML attributes to smuggle an HTML comment, they decided to remove any attribute containing this pattern. Thanks to this mitigation, even an n-time HTML parsing mutation will be detected and sanitized from the first parsing by DOMPurify.
 
- ![](https://mizu.re/articles/articles/vuln06_dompurify/article01/./images/dompurify-3.1.3-fix.png)
+ !
 
 **Fig. 58**: Fig. 30: GitHub diff between DOMPurify versions 3.1.3 and 3.1.2 ([ref](https://github.com/cure53/DOMPurify/compare/3.1.2...3.1.3)).
 

@@ -285,7 +285,7 @@ public class CitiesServlet extends HttpServlet {
 }
 ```
 
-![](https://hackcompute.com/content/images/2023/05/image.png)
+!
 
 We were able to chain the XXE vulnerability with this local file disclosure vulnerability to obtain any file on the local system.
 
@@ -321,13 +321,13 @@ We got in touch with Vince, and he thankfully put us in touch with the relevant 
 
 Speaking with Vince (the administrator of the .ai zone) over WhatsApp, we confirmed that compromising this server would give us full control over any .ai domain:
 
-![](https://hackcompute.com/content/images/2023/05/image-4.png)
+!
 
 The impact unfortunately does not stop there, in the process of reading files from various registry servers running CoCCA, we discovered a file called [`upload-files-box-com.sh`](https://registry.nic.shia/cities?country=/../../../../../../../../root/upload-files-box-com.sh&ref=hackcompute.com).
 
 As the filename suggests, this script was responsible for taking a full database backup and uploading them to a central box.com account. We validated that these credentials were valid and led to the ability to compromise almost every major ccTLD that was running the CoCCA application:
 
-![](https://hackcompute.com/content/images/2023/05/image-1.png)
+!
 
 *Oh no....*
 
@@ -364,7 +364,7 @@ We spent a significant amount of time on Google's registry software and discover
 
 Another registry software that could be a great research target is [Fred](https://fred.nic.cz/documentation/html/Architecture/Deployment.html?ref=hackcompute.com#web-node), which is managed by the team at nic.cz. It is being used by a lot of different registries, and any pre-authentication vulnerability in this could be critical to the domain infrastructure for the following ccTLDs:
 
-![](https://hackcompute.com/content/images/2023/05/image-2.png)
+!
 
 ```txt
 ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀

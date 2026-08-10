@@ -76,37 +76,9 @@ Web
 
 # Reusing Cookies
 
-[
-
-![Ricardo Iramar dos Santos](https://miro.medium.com/v2/resize:fill:64:64/1*Bc9537mxHr1Xk4As_Umdpg.jpeg)
-
-](https://ricardoiramar.medium.com/?source=post_page---byline--23ed4691122b---------------------------------------)
+[![Ricardo Iramar dos Santos](https://miro.medium.com/v2/resize:fill:64:64/1*Bc9537mxHr1Xk4As_Umdpg.jpeg)](https://ricardoiramar.medium.com/?source=post_page---byline--23ed4691122b---------------------------------------)
 
 [Ricardo Iramar dos Santos](https://ricardoiramar.medium.com/?source=post_page---byline--23ed4691122b---------------------------------------)
-
-16 min readDec 7, 2019
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F23ed4691122b&operation=register&redirect=https%3A%2F%2Fricardoiramar.medium.com%2Freusing-cookies-23ed4691122b&user=Ricardo+Iramar+dos+Santos&userId=a02e90168666&source=---header_actions--23ed4691122b---------------------clap_footer------------------)
-
---
-
-1
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F23ed4691122b&operation=register&redirect=https%3A%2F%2Fricardoiramar.medium.com%2Freusing-cookies-23ed4691122b&user=Ricardo+Iramar+dos+Santos&userId=a02e90168666&source=---header_actions--23ed4691122b---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F23ed4691122b&operation=register&redirect=https%3A%2F%2Fricardoiramar.medium.com%2Freusing-cookies-23ed4691122b&source=---header_actions--23ed4691122b---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D23ed4691122b&operation=register&redirect=https%3A%2F%2Fricardoiramar.medium.com%2Freusing-cookies-23ed4691122b&source=---header_actions--23ed4691122b---------------------post_audio_button------------------)
-
-Share
 
 TL;DR: This is a story how I accidentally found a common vulnerability across similar web applications just by reusing cookies on different subdomains from the same web application.
 

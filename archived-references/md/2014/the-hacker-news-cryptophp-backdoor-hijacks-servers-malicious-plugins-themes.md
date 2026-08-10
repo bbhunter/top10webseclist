@@ -71,7 +71,7 @@ page going offline. To read the original, follow the link above.
 
  ** Monday, November 24, 2014 **    Swati Khandelwal  
 
- [![](https://web.archive.org/web/20160402192125im_/http://3.bp.blogspot.com/-2KcrYMz6DL8/VHMPENA01zI/AAAAAAAAAiY/j9wk_c5DB80/s728/CryptoPHP-backdoor-compressed.jpg)](https://web.archive.org/web/20160402192125/http://3.bp.blogspot.com/-2KcrYMz6DL8/VHMPENA01zI/AAAAAAAAAiY/j9wk_c5DB80/s728/CryptoPHP-backdoor-compressed.jpg)
+ [!](https://web.archive.org/web/20160402192125/http://3.bp.blogspot.com/-2KcrYMz6DL8/VHMPENA01zI/AAAAAAAAAiY/j9wk_c5DB80/s728/CryptoPHP-backdoor-compressed.jpg)
 
  Security researchers have discovered thousands of *backdoored plugins and themes* for the popular content management systems (CMS) that could be used by attackers to compromise web servers on a large scale.
 
@@ -111,39 +111,7 @@ About the Author:
 
 Swati Khandelwal is Senior Technical Writer and Security Analyst at The Hacker News. She is a Technology Enthusiast with a keen eye on the Cyberspace and other tech related developments.
 
-** [
-
-## Backdoor
-
-](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/Backdoor), [
-
-## cms hacking
-
-](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/cms%20hacking), [
-
-## CryptoPHP backdoor
-
-](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/CryptoPHP%20backdoor), [
-
-## drupal hacked
-
-](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/drupal%20hacked), [
-
-## hacking news
-
-](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/hacking%20news), [
-
-## Joomla hacked
-
-](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/Joomla%20hacked), [
-
-## SEO
-
-](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/SEO), [
-
-## Wordpress plugin vulnerability
-
-](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/Wordpress%20plugin%20vulnerability)
+** [## Backdoor](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/Backdoor), [## cms hacking](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/cms%20hacking), [## CryptoPHP backdoor](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/CryptoPHP%20backdoor), [## drupal hacked](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/drupal%20hacked), [## hacking news](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/hacking%20news), [## Joomla hacked](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/Joomla%20hacked), [## SEO](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/SEO), [## Wordpress plugin vulnerability](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/Wordpress%20plugin%20vulnerability)
 
 ** Subscribe for our daily digest of top articles and be the first to know Trending Stories.
 

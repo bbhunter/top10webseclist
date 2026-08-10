@@ -123,13 +123,13 @@ This function marks the beginning of the previously quoted emails in an email th
 
 However, the insertion of an element leads to a case of mutation-based Cross-Site Scripting (mXSS). Let's look at the following payload:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/ccba5abf-a08c-4047-80d3-f1bda719e3a6/Screenshot%202023-09-12%20at%2019.20.39.png)
+!
 
 This payload passes the sanitization just fine because the `<img>` tag with the event handler is hidden in an attribute value. The content of the `<style>` element is parsed as HTML instead of raw text here because it is located within an `<svg>` element, so the SVG parsing rules apply.
 
 After that, the `injectShowPreviousContainer` function inserts the `<div>` tag, resulting in the following HTML tree:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/1b8e7e65-2273-4516-a9ba-cb56ca91d7a9/Screenshot%202023-09-12%20at%2019.21.44.png)
+!
 
 If we consult the [HTML specification](https://html.spec.whatwg.org/multipage/parsing.html#parsing-main-inforeign), we can see that `<div>` elements are not valid children of `<svg>` elements. Since this was an explicit modification of the DOM, no error is thrown, and the element stays at the position it was inserted.
 
@@ -178,7 +178,7 @@ During the re-parsing, the browser will try to correct any errors in the HTML. I
 
 In the case of Skiff, this mutation of the input leads to the following HTML being inserted into the page:
 
-![](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/497f00dc-1152-4485-983f-5c6e6a2f27ba/Screenshot%202023-09-12%20at%2019.23.43.png)
+!
 
 We can observe that the `<div>` element was moved outside the `<svg>` element, which is plausible since it was not a valid child.
 
@@ -270,7 +270,5 @@ Stay up-to-date with the latest Sonar content. Subscribe now to receive the late
  Email
 
 Choosing to proceed means that you agree to the storing and processing of your personal data as described in SonarSource’s [Cookie Policy](https://www.sonarsource.com/company/cookie-policy/). You can opt out of SonarSource communications at anytime.
-
-Sign up
 
 Sonar respects your privacy. Choosing to proceed means that you agree to the SonarSource’s [Privacy Policy](https://www.sonarsource.com/company/privacy/).

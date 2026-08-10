@@ -49,8 +49,19 @@ MAX_SHARE = 0.25
 # Each entry is (label, pattern). The label is what gets recorded, so a reader
 # of the manifest can see WHICH rule fired rather than just "something went".
 FURNITURE = (
+    # `book a demo` was not enough: six Searchlight Cyber write-ups end with a
+    # seven-block sales panel headed "Book your demo" and closed by "Fill in the
+    # form to get you demo", and the tail sweep stopped dead on the last block
+    # because no rule matched it. The determiner is what varied, so it is no
+    # longer spelled out.
+    #
+    # `fill in the form` is safe HERE and would not be safe as a `JUNK_LINES`
+    # rule: an article about CSRF says "fill in the form and submit it" in its
+    # prose, and furniture rules only ever see a short block at a document's
+    # edge.
     ("call-to-action", r"\bready to (?:engage|get started)\b|\bget in touch\b"
-                       r"|\bcontact us\b|\bbook a demo\b|\brequest a demo\b"
+                       r"|\bcontact us\b|\b(?:book|request|get|schedule)"
+                       r"\s+(?:a|your|the)\s+demo\b|\bfill in the form\b"
                        r"|\btalk to (?:us|an expert)\b|\bstart your free trial\b"),
     ("copyright", r"\bcopyright\s*(?:\(c\)|©)?\s*(?:19|20)\d\d\b"
                   r"|\ball rights reserved\b|©\s*(?:19|20)\d\d"),
@@ -87,10 +98,30 @@ FURNITURE = (
 
 # Lines that are junk WHEREVER they appear, because they describe the website's
 # behaviour rather than the document. Kept to exact, unambiguous wordings.
+#
+# THE WHOLE LINE, AND NOTHING BUT THESE WORDS. Every one below was checked
+# against the files it fires on: `Share` is Threatpost's share widget and
+# Medium's footer, `Listen` is Medium's audio button, `Follow` its subscribe
+# link. A research sentence about following a redirect or sharing a session is
+# never a line consisting of that one word.
+#
+# `--` and a bare number - Medium's clap counter - are deliberately ABSENT. This
+# corpus is SQL injection research, where a line containing only `--` is a
+# comment payload, and a lone digit is a step or a byte count. Two stray short
+# lines are worth far less than one corrupted payload.
 JUNK_LINES = (
     ("image-caption-hint", r"^\s*press enter or click to view image in full size\s*$"),
     ("skip-link", r"^\s*skip to (?:main )?content\s*$"),
+    ("reading-time", r"^\s*\d+\s*min read.*$"),
+    ("social-button", r"^\s*(?:Follow|Listen|Share|Sign in|Sign up)\s*$"),
 )
+
+# MEDIUM'S CLAP COUNTER, which is a `--` line and a number on its own. Neither
+# half can be removed alone: a line containing only `--` is a comment payload in
+# an SQL injection write-up and a lone digit is a step number, so only the PAIR
+# is recognisable as the widget. Measured: this exact two-line shape occurs 31
+# times in the corpus and all 31 are Medium articles.
+CLAP_COUNTER = ("clap-counter", r"\n\n--\n\n\d{1,5}(?=\n\n)")
 
 _FURNITURE = [(label, re.compile(pattern, re.IGNORECASE | re.MULTILINE))
               for label, pattern in FURNITURE]
@@ -121,6 +152,118 @@ _DEAD_LINK = re.compile(r"\[([^\[\]\n]*)\]\(\s*\)")
 _DEAD_BLOCK_ANCHOR = re.compile(
     r"(?<!!)\[[ \t]*\n((?:(?!\]\()[^\[\]]){0,400}?)\n[ \t]*\]\(\s*\)")
 _FENCED = re.compile(r"^```.*?^```", re.MULTILINE | re.DOTALL)
+
+
+# A LINK WITH NOWHERE VISIBLE TO CLICK. `[](url)` and `[ ](url)` render as an
+# empty anchor: a reader can neither see it nor use it, and the archive carries
+# 3,980 of them across 592 files - Medium's clap, bookmark and audio buttons,
+# every one a sign-in URL. Removing them loses a target nobody could ever reach.
+_TEXTLESS_LINK = re.compile(r"\[[ \t]*\]\(\s*https?://[^)\s]*(?:\s+\"[^\"]*\")?\)")
+
+# AN ANCHOR THAT WRAPPED BLOCK CONTENT converts with its brackets on lines of
+# their own, and Markdown has no such link: the reader sees a literal `[`, then
+# the content, then the whole URL as text. That is the byline avatar at the top
+# of every archived Medium article. 975 of them across 116 files.
+#
+# Collapsed rather than dropped: `[![Author](avatar.png)](profile)` on one line
+# is a valid linked image and loses nothing. Bounded and tempered exactly as the
+# dead-anchor rule is, so a stray bracket cannot swallow an article.
+# The inner content may be an IMAGE, which is the whole point: the byline anchor
+# wraps the author's avatar, so a pattern that forbids brackets outright cannot
+# see the one shape this rule exists for. An image is admitted whole; anything
+# else must be bracket-free, so bracket soup still cannot run away.
+_ANCHOR_BODY = r"(?:(?!\]\()(?:!\[[^\]\n]*\]\([^)\s]*\)|[^\[\]])){0,400}?"
+_BLOCK_ANCHOR = re.compile(
+    r"(?<!!)\[[ \t]*\n(%s)\n[ \t]*\]"
+    r"\(\s*(https?://[^)\s]*)(?:\s+\"[^\"]*\")?\)" % _ANCHOR_BODY)
+
+# A BUTTON WEARING A LINK'S CLOTHES. Once a block anchor is collapsed, Medium's
+# audio button is `[Listen](https://medium.com/m/signin?...)`. The label alone is
+# not enough to judge it - a link legitimately labelled "Share" could point at
+# research - so the TARGET has to admit to being a site action too.
+_BUTTON_WORDS = r"Follow|Listen|Share|Sign in|Sign up|Clap|Bookmark|Subscribe"
+_BUTTON_TARGET = r"signin|signup|sign-in|sign-up|subscribe|clap|bookmark|source=post_page"
+_BUTTON_LINK = re.compile(
+    r"\[[ \t]*(?:%s)[ \t]*\]\(\s*[^)\s]*(?:%s)[^)\s]*(?:\s+\"[^\"]*\")?\)"
+    % (_BUTTON_WORDS, _BUTTON_TARGET), re.IGNORECASE)
+
+
+def tidy_links(markdown):
+    """(text, [labels]) with a publisher's link furniture reduced to what reads.
+
+    Three shapes, in this order because each exposes the next: a text-less
+    anchor is removed, a block anchor is collapsed onto one line so it is a link
+    at all, and a collapsed anchor that turns out to be a site button goes with
+    the rest of the chrome.
+
+    Fenced code is untouched, for the reason `drop_dead_links` gives.
+    """
+    text = (markdown or "").replace("\x00", "")
+    removed = []
+    held = []
+
+    def hold(match):
+        held.append(match.group(0))
+        return "\x00%d\x00" % (len(held) - 1)
+
+    body = _FENCED.sub(hold, text)
+
+    before = body
+    body = _TEXTLESS_LINK.sub("", body)
+    if body != before:
+        removed.append("textless-link")
+
+    before = body
+    def collapse(match):
+        inner = re.sub(r"\s+", " ", match.group(1)).strip()
+        if not inner:
+            return ""
+        return "[%s](%s)" % (inner, match.group(2))
+    body = _BLOCK_ANCHOR.sub(collapse, body)
+    if body != before:
+        removed.append("block-anchor")
+
+    before = body
+    body = _BUTTON_LINK.sub("", body)
+    if body != before:
+        removed.append("social-button-link")
+
+    if removed:
+        body = re.sub(r"[ \t]*\n{3,}", "\n\n", body)
+    text = re.sub(r"\x00(\d+)\x00", lambda match: held[int(match.group(1))], body)
+    return text, sorted(set(removed))
+
+
+def drop_junk_lines(markdown):
+    """(text, [labels]) with the website's own instructions to the reader gone.
+
+    OUTSIDE FENCED CODE. `trim` used to apply these to the whole document, which
+    would have deleted a `--` line or a "skip to content" string out of a quoted
+    payload. No file in the corpus was affected; the guard is here because the
+    rules above now include wordings short enough to appear inside one.
+    """
+    text = markdown or ""
+    removed = []
+    held = []
+
+    def hold(match):
+        held.append(match.group(0))
+        return "\x00%d\x00" % (len(held) - 1)
+
+    body = _FENCED.sub(hold, text.replace("\x00", ""))
+    for label, pattern in _JUNK:
+        cleaned = pattern.sub("", body)
+        if cleaned != body:
+            removed.append(label)
+            body = cleaned
+    cleaned = re.sub(CLAP_COUNTER[1], "", body)
+    if cleaned != body:
+        removed.append(CLAP_COUNTER[0])
+        body = cleaned
+    if removed:
+        body = re.sub(r"[ \t]*\n{3,}", "\n\n", body)
+    text = re.sub(r"\x00(\d+)\x00", lambda match: held[int(match.group(1))], body)
+    return text, sorted(set(removed))
 
 
 def drop_dead_links(markdown):
@@ -197,28 +340,92 @@ def _is_decoration(line):
                for char in stripped)
 
 
-def trim(markdown):
-    """(text, [labels]) with the publisher's furniture removed from the edges."""
-    text = markdown or ""
-    removed = []
+# A HEADING THAT SELLS SOMETHING ENDS THE DOCUMENT. Removing furniture one block
+# at a time cannot clear a sales panel, because the sweep stops at the first
+# block no rule matches and a panel is mostly ordinary sentences: six Searchlight
+# Cyber write-ups end with seven blocks of "Enhance your security", "Continuously
+# monitor for threats", "Prevent costly cyber incidents", and only the first and
+# last of those read as furniture.
+#
+# The panel's HEADING is the honest boundary. No research write-up resumes after
+# "Book your demo", so everything from such a heading to the end goes together.
+# Guarded the same way every other trim is: never across a fenced block, and
+# never more than MAX_SHARE of the document.
+SALES_HEADING = re.compile(
+    r"^#{1,6}\s+.{0,120}?(?:book|request|schedule|get)\s+(?:a|your|the)\s+demo"
+    r"|^#{1,6}\s+.{0,120}?(?:fill in the form|talk to (?:us|an expert)"
+    r"|start your free trial|ready to get started)",
+    re.IGNORECASE | re.MULTILINE)
 
-    for label, pattern in _JUNK:
-        cleaned = pattern.sub("", text)
-        if cleaned != text:
-            removed.append(label)
-            text = cleaned
+
+def cut_at_sales_heading(markdown):
+    """(text, [labels]) with a trailing sales panel removed from its heading."""
+    text = markdown or ""
+    best = None
+    for match in SALES_HEADING.finditer(text):
+        tail = text[match.start():]
+        if FENCE.search(tail):
+            continue                      # a listing below it: not a panel
+        if len(tail) > len(text) * MAX_SHARE:
+            continue                      # too much of the document to be furniture
+        best = match.start()
+        break                             # the earliest qualifying heading wins
+    if best is None:
+        return text, []
+    return text[:best].rstrip() + "\n", ["sales-panel"]
+
+
+# Tail-only, because at the HEAD a lone heading is the document's title.
+#
+# A VOCABULARY, NOT "ANY BARE HEADING". Removing every heading left with nothing
+# under it read well until it was measured: across the corpus it would have taken
+# `## evercookie, by samy kamkar, 2010/09/20` - the document's own title, reached
+# after a chain of bare headings above it was eaten first - and
+# `# # # End Advisory # # #`, which is the advisory's own last line. Each word
+# below was counted in that same pass.
+#
+# `## Presentation Video` is deliberately ABSENT, and it is the most common of
+# them all at 51 files. Its body was an `<iframe>` that sanitisation removes by
+# design, so the heading is the archive's only remaining trace that a recording
+# of the talk exists. A heading with nothing under it is not pretty; silently
+# dropping the evidence of a missing document is worse.
+TAIL_FURNITURE = (
+    ("empty-section", r"\A#{1,6}\s+(?:in this article|spotlight|related (?:research"
+                      r"|blogs|posts|articles)|read more[^\n]*|we'?re hiring!?"
+                      r"|ready for more\??|comments:?|\d+ responses|leave a reply"
+                      r"|trackbacks and pingbacks:?|subscribe(?: for updates)?"
+                      r"|supported by)\s*\Z"),
+)
+_TAIL_FURNITURE = [(label, re.compile(pattern, re.IGNORECASE | re.MULTILINE))
+                   for label, pattern in TAIL_FURNITURE]
+
+
+def trim(markdown, ends=("tail", "head")):
+    """(text, [labels]) with the publisher's furniture removed from the edges.
+
+    `ends` exists for repairing an ALREADY PUBLISHED file, where the head is the
+    archive's own attribution block rather than the publisher's. Nothing in
+    FURNITURE matches that block today, and a caller sweeping published files
+    should not have to rely on it staying that way.
+    """
+    text, removed = drop_junk_lines(markdown or "")
+    # BEFORE the block sweep, because the panel this removes is precisely what
+    # stops that sweep.
+    if "tail" in ends:
+        text, cut = cut_at_sales_heading(text)
+        removed.extend(cut)
 
     blocks = re.split(r"\n\s*\n", text)
     budget = max(len(text) * MAX_SHARE, 0)
 
     taken = 0
     # The tail first, then the head. Both stop at the first real block.
-    for end in ("tail", "head"):
+    for end in ends:
         for _ in range(MAX_BLOCKS_PER_EDGE):
             if len(blocks) < 2:
                 break
             index = len(blocks) - 1 if end == "tail" else 0
-            label = _furniture(blocks[index])
+            label = _furniture(blocks[index], tail=(end == "tail"))
             if not label:
                 break
             if taken + len(blocks[index]) > budget:
@@ -231,7 +438,7 @@ def trim(markdown):
     return text, sorted(set(removed))
 
 
-def _furniture(block):
+def _furniture(block, tail=False):
     """The label of the rule this block matches, or "" when it is content."""
     body = (block or "").strip()
     if not body or len(body) > MAX_FURNITURE_CHARS:
@@ -241,4 +448,8 @@ def _furniture(block):
     for label, pattern in _FURNITURE:
         if pattern.search(body):
             return label
+    if tail:
+        for label, pattern in _TAIL_FURNITURE:
+            if pattern.search(body):
+                return label
     return ""

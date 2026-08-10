@@ -99,17 +99,3 @@ Note that both these solutions may have an impact on legitimate use of the site 
 ### About Searchlight Cyber
 
 Customers of Searchlight Cyber’s ASM solution, [Assetnote](https://slcyber.io/products/attack-surface-management-tool/), are always first to receive checks for the novel vulnerabilities we discover – often weeks or months before public disclosure. Our Security Research Team continues to dig beyond public PoCs to deliver high-signal detections to our platform. [Learn more](https://slcyber.io/products/attack-surface-management-tool/).
-
-#### in this article
-
-## Book your demo: Identify cyber threats earlier– before they impact your business
-
-Searchlight Cyber is used by security professionals and leading investigators to surface criminal activity and protect businesses. Book your demo to find out how Searchlight can:
-
-**Enhance your security** with advanced automated dark web monitoring and investigation tools
-
-**Continuously monitor for threats**, including ransomware groups targeting your organization
-
-**Prevent costly cyber incidents** and meet cybersecurity compliance requirements and regulations
-
-## Fill in the form to get you demo

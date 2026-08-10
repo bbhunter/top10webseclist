@@ -76,7 +76,7 @@ Since I’ve had some spare time during my internship on school, I started testi
  From the recon I had done, I knew the server was an IIS server. I usually test this by browsing to /<>.
  Since ASP.NET has the XSS filter on by default, it returned the following:
 
-![](https://i2.wp.com/poc-server.com/blog/wp-content/uploads/2018/05/Untitled.png?resize=300%2C129&ssl=1)
+!
  `
  Server Error in '/' Application.
  A potentially dangerous Request.Path value was detected from the client (<).

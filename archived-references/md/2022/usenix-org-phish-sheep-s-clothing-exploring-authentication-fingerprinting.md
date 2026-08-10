@@ -91,7 +91,7 @@ BibTeX
 
 ![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Lin Paper (Prepublication) PDF](https://www.usenix.org/system/files/sec22fall_lin-xu.pdf)
 
-![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-unlocked.png)
+!
 
 [View the slides](https://www.usenix.org/system/files/sec22_slides-lin_xu.pdf)
 

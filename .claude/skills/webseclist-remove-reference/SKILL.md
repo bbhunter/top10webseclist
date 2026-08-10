@@ -74,7 +74,7 @@ python tools/references/refs.py verify
   URL twice had silently uncited its second article.)
 - `index --prune-files` deletes the orphaned files in BOTH trees - the
   Markdown, the PDF, any translation pair - and regenerates `README.md`,
-  `needs-work.md`, `excluded.md` and `store-gaps.md` without them.
+  `document-gaps.md`, `excluded.md` and `store-gaps.md` without them.
 - `verify` must end `0 failure(s)`. Expect the `unreferenced store objects`
   WARNING to grow by the removed entry's objects - that is correct (below).
 
@@ -106,7 +106,7 @@ archive-references skill uses for companion videos.
   the job" by deleting them by hand.
 - **`history.jsonl`.** Append-only journal. The removal is recorded on top of
   the acquisition history, never by rewriting it.
-- **Generated reports by hand.** `README.md`, `needs-work.md`, `excluded.md`
+- **Generated reports by hand.** `README.md`, `document-gaps.md`, `excluded.md`
   and `store-gaps.md` are rewritten by `index`; hand edits are overwritten and
   forbidden.
 

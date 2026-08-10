@@ -63,13 +63,13 @@ page going offline. To read the original, follow the link above.
 
 Aspect Security - JavaSnoop
 
- ![javasnoop](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_logo.gif)![](https://www.aspectsecurity.com/images/javasnoop.png)
+ ![javasnoop](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_logo.gif)!
  *A tool that lets you intercept methods, alter data and otherwise test the security of Java applications on your computer*
 
-[![](https://www.aspectsecurity.com/tools/javasnoop/download.png)
+[!
 Download](http://code.google.com/p/javasnoop/downloads/list)
 
-[![](https://www.aspectsecurity.com/tools/javasnoop/faq.png)
+[!
 FAQ](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_faq.html)
 
 Normally, without access to the original source code, testing the security of a Java client is unpredictable at best and unrealistic at worst. With access the original source, you can run a simple Java program and attach a debugger to it remotely, stepping through code and changing variables where needed. Doing the same with an applet is a little bit more difficult.
@@ -82,17 +82,17 @@ JavaSnoop attempts to solve this problem by allowing you attach to an existing p
 
 Screenshots
 
- [![](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_main_gui_empty_thumbnail.png)](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_main_gui_empty.png) [![](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_main_gui_attached_thumbnail.png)](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_main_gui_attached.png) [![](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_hook_options_console_thumbnail.png)](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_hook_options_console.png) [![](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_tamper_decompile_thumbnail.png)](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_tamper_decompile.png)
+ [!](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_main_gui_empty.png) [!](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_main_gui_attached.png) [!](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_hook_options_console.png) [!](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_tamper_decompile.png)
 
 Videos
 
-[![](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_welcome.png)](http://www.youtube.com/watch?v=Tx4iF0fw2xs) [![](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_gettingstarted.png)](http://www.youtube.com/watch?v=UOz5uyjtt4k) [![](https://www.aspectsecurity.com/tools/javasnoop/javasnoop_jad.png)](http://www.youtube.com/watch?v=bBZaN59w-lU)
+[!](http://www.youtube.com/watch?v=Tx4iF0fw2xs) [!](http://www.youtube.com/watch?v=UOz5uyjtt4k) [!](http://www.youtube.com/watch?v=bBZaN59w-lU)
 
 Want to find out more about the security of your rich client applications?
 
 Contact us for more information about our [verification services](https://www.aspectsecurity.com/verification.html).
 
-![](https://www.aspectsecurity.com/images/spacer.gif)
+!
 
  Name
 

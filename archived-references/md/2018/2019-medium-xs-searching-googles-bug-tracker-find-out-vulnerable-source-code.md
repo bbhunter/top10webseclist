@@ -66,37 +66,9 @@ page going offline. To read the original, follow the link above.
 
 ## Or how side-channel timing attacks aren’t that impractical
 
-[
-
-![Luan Herrera](https://miro.medium.com/v2/resize:fill:64:64/0*wnMUtdBetW02ADSu.)
-
-](https://medium.com/@luanherrera?source=post_page---byline--50d8135b7549---------------------------------------)
+[![Luan Herrera](https://miro.medium.com/v2/resize:fill:64:64/0*wnMUtdBetW02ADSu.)](https://medium.com/@luanherrera?source=post_page---byline--50d8135b7549---------------------------------------)
 
 [Luan Herrera](https://medium.com/@luanherrera?source=post_page---byline--50d8135b7549---------------------------------------)
-
-6 min readNov 19, 2018
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F50d8135b7549&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40luanherrera%2Fxs-searching-googles-bug-tracker-to-find-out-vulnerable-source-code-50d8135b7549&user=Luan+Herrera&userId=304733625ad6&source=---header_actions--50d8135b7549---------------------clap_footer------------------)
-
---
-
-1
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F50d8135b7549&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40luanherrera%2Fxs-searching-googles-bug-tracker-to-find-out-vulnerable-source-code-50d8135b7549&user=Luan+Herrera&userId=304733625ad6&source=---header_actions--50d8135b7549---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F50d8135b7549&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40luanherrera%2Fxs-searching-googles-bug-tracker-to-find-out-vulnerable-source-code-50d8135b7549&source=---header_actions--50d8135b7549---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D50d8135b7549&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40luanherrera%2Fxs-searching-googles-bug-tracker-to-find-out-vulnerable-source-code-50d8135b7549&source=---header_actions--50d8135b7549---------------------post_audio_button------------------)
-
-Share
 
 Monorail is an open-source issue tracker used by many “Chromium-orbiting” projects, including Monorail itself. Other projects include Angle, PDFium, Gerrit, V8, and the Alliance for Open Media. It is also used by Project Zero, Google’s 0-day bug-finding team.
 

@@ -71,9 +71,9 @@ page going offline. To read the original, follow the link above.
  | 15 minutes
 
 -   Share:
--  [ ](https://x.com/share?text=mTLS%3A%20When%20certificate%20authentication%20is%20done%20wrong&url=https%3A%2F%2Fgithub.blog%2Fsecurity%2Fvulnerability-research%2Fmtls-when-certificate-authentication-is-done-wrong%2F)
--  [ ](https://www.facebook.com/sharer/sharer.php?t=mTLS%3A%20When%20certificate%20authentication%20is%20done%20wrong&u=https%3A%2F%2Fgithub.blog%2Fsecurity%2Fvulnerability-research%2Fmtls-when-certificate-authentication-is-done-wrong%2F)
--  [ ](https://www.linkedin.com/shareArticle?title=mTLS%3A%20When%20certificate%20authentication%20is%20done%20wrong&url=https%3A%2F%2Fgithub.blog%2Fsecurity%2Fvulnerability-research%2Fmtls-when-certificate-authentication-is-done-wrong%2F)
+-  
+-  
+-  
 
 Although [X.509](https://en.wikipedia.org/wiki/X.509) certificates have been here for a while, they have become more popular for client authentication in zero-trust networks in recent years. Mutual TLS, or authentication based on X.509 certificates in general, brings advantages compared to passwords or tokens, but you get increased complexity in return.
 

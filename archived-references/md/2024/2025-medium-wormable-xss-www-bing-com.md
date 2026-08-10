@@ -69,35 +69,11 @@ Vulnerability
 
 # Wormable XSS www.bing.com
 
-[
-
-![pedbap](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*6LdK3bPFTIeNJQTN)
-
-](https://medium.com/@pedbap?source=post_page---byline--7d7cb52e7a12---------------------------------------)
+[![pedbap](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*6LdK3bPFTIeNJQTN)](https://medium.com/@pedbap?source=post_page---byline--7d7cb52e7a12---------------------------------------)
 
 [pedbap](https://medium.com/@pedbap?source=post_page---byline--7d7cb52e7a12---------------------------------------)
 
-5 min readNov 10, 2024
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F7d7cb52e7a12&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40pedbap%2Fwormable-xss-www-bing-com-7d7cb52e7a12&user=pedbap&userId=8389e117d119&source=---header_actions--7d7cb52e7a12---------------------clap_footer------------------)
-
 --
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F7d7cb52e7a12&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40pedbap%2Fwormable-xss-www-bing-com-7d7cb52e7a12&user=pedbap&userId=8389e117d119&source=---header_actions--7d7cb52e7a12---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F7d7cb52e7a12&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40pedbap%2Fwormable-xss-www-bing-com-7d7cb52e7a12&source=---header_actions--7d7cb52e7a12---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D7d7cb52e7a12&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40pedbap%2Fwormable-xss-www-bing-com-7d7cb52e7a12&source=---header_actions--7d7cb52e7a12---------------------post_audio_button------------------)
-
-Share
 
 ## **Research Plan**
 

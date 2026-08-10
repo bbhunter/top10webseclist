@@ -91,7 +91,7 @@ Before we dig into the vulnerabilities, let’s have a look at the product itsel
 
 When we think about a solution that can perform management tasks in the Active Directory, we know that this product probably operates using some AD account. When you configure this product, you need to provide valid credentials for the AD account with appropriate permissions to conduct management tasks. This is well documented by SolarWinds.
 
- ![](https://images.squarespace-cdn.com/content/v1/5894c269e4fcb5e65a1ed623/2f9432a9-bbb2-4426-bb42-c977e5eb9431/Picture1.png)
+ !
 
 *Figure 1 - Part of ARM AD account-related documentation (*[*source*](https://documentation.solarwinds.com/en/success_center/arm/content/system_requirements/arm_2022-4_system_requirements.htm)*) *
 
@@ -159,13 +159,13 @@ This path won’t work though, due to some internal path processing, which is ou
 
 In my PoC, I’m running the exploit as presented in the following screenshot.
 
- ![](https://images.squarespace-cdn.com/content/v1/5894c269e4fcb5e65a1ed623/7487bea6-8550-4b8b-941f-8cc05f5876bc/Picture2.png)
+ !
 
 *Figure 2 - Running CVE-2024-23474 exploit to remove file remotely*
 
 After a while, we will reach the `File.Delete` method with the path provided to the exploit.
 
- ![](https://images.squarespace-cdn.com/content/v1/5894c269e4fcb5e65a1ed623/e7af195a-e9ba-49c2-9662-f2f27ee942ad/Picture3.png)
+ !
 
 *Figure 3 - Debugging of CVE-2024-23474*
 
@@ -203,5 +203,3 @@ You can follow me at [@chudypb](https://twitter.com/chudyPB) and follow the team
 Add your voice to the work that pushes attackers back.
 
  [
-
-#### RESEARCHERS

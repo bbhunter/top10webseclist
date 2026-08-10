@@ -260,7 +260,7 @@ Alt-Svc: h3=":443"; ma=93600
 
 ```
 
-The following Wireshark screenshot illustrates the full process, using a plaintext HTTP/1 request inside the tunnel for clarity: ![](https://blog.flomb.net/posts/http2connect/wireshark1.png)
+The following Wireshark screenshot illustrates the full process, using a plaintext HTTP/1 request inside the tunnel for clarity: !
 
 - The flow begins with the client preface, which Wireshark labels `Magic`.
 - We see the initial `SETTINGS` frames from the client and server, followed by `SETTINGS` frames with the `ACK` flag set, confirming receipt.
@@ -285,7 +285,7 @@ As observed with Envoy and Apache httpd, a failed connection will typically resu
 - A `DATA` frame from the proxy itself containing an error message.
 - A `RST_STREAM` frame with an error like `CONNECT_ERROR`(Envoy) or `NO_ERROR` (Apache). This is the most reliable indicator of failure.
 
-![](https://blog.flomb.net/posts/http2connect/wireshark2.png)
+!
 
 By tracking the responses for each stream ID, we can map out open ports on an internal network, all multiplexed over a single HTTP/2 connection. This technique may also bypass network security monitoring that isn’t equipped to inspect multiplexed HTTP/2 traffic.
 

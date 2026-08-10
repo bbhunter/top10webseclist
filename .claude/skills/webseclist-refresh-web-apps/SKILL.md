@@ -30,7 +30,7 @@ Keep the production static archive synchronized without confusing an AI-collecte
 
 ## Refresh the archive
 
-If finalized or preliminary citations, their collection status, or preserved copies changed, use `webseclist-archive-references` first and complete its durable-store workflow. That workflow owns reference acquisition, promotion/pruning, Markdown/PDF preservation, manifest updates, validation queues, and `needs-work.md` generation.
+If finalized or preliminary citations, their collection status, or preserved copies changed, use `webseclist-archive-references` first and complete its durable-store workflow. That workflow owns reference acquisition, promotion/pruning, Markdown/PDF preservation, manifest updates, validation queues, and `document-gaps.md` generation.
 
 Then run the bundled refresh command from the repository root:
 

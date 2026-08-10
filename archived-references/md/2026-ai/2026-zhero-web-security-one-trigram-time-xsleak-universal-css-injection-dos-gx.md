@@ -113,7 +113,7 @@ The answer is yes. The browser crashes and restarts, resulting in the complete l
 
 Simply visiting a link pointing directly to a `.crx` file, or a website embedding it via an `iframe` as described earlier, is sufficient to trigger a browser crash:
 
-![](https://zhero-web-sec.github.io/images/opera-leaks-1.gif)
+!
 
 The denial-of-service issue described above affects both Opera and Opera GX. Although Opera does not support GX Mods, the vulnerability is not specific to mods. Any file with a `.crx` extension triggers the extension installation pipeline, regardless of its actual content. As a result, simply visiting a link that downloads a `.crx` file in Incognito mode is sufficient to cause the browser to crash.
 
@@ -121,7 +121,7 @@ The denial-of-service issue described above affects both Opera and Opera GX. Alt
 
 Although we had initially skimmed the documentation to understand what could be achieved with GX Mods and gather some inspiration, we had not yet fully realized their capabilities. It was only after experimenting with the feature that everything clicked: a mod’s CSS can be applied to every page and tab. In practice, this means that attacker-controlled CSS is applied across arbitrary webpages visited by the user, giving it access to a far broader browser context than a conventional CSS injection vulnerability:
 
-![](https://zhero-web-sec.github.io/images/opera-leaks-2.png) **{background:#ab0000!important;}*
+! **{background:#ab0000!important;}*
 
 Although CSS injection can be a powerful primitive for data exfiltration when XSS is not possible, its impact is often limited because it is confined to the page in which the injection occurs. Here, things are different: we have an entire browser at our disposal.
 
@@ -340,7 +340,7 @@ html {
 
 After packaging the stylesheet into a `.crx` and installing it as a GX Mod, the first test was not successful. A few requests were issued before the page eventually crashed completely, which was hardly surprising given the number of variables referenced from a single CSS property:
 
-![](https://zhero-web-sec.github.io/images/opera-leaks-3.png) *Page crash due to excessive lack of elegance*
+! *Page crash due to excessive lack of elegance*
 
 Unlike the quadrigram experiment, the CSS stylesheet was successfully processed, and a few requests were issued before the page eventually crashed. This was an encouraging sign: a few adjustments were needed to reduce the load until every request could be issued reliably.
 
@@ -429,7 +429,7 @@ The algorithm takes as input a log file containing the HTTP requests received on
 
 Starting from `start`, the algorithm looks at each available trigram and checks whether its first two characters match the last two characters of the current prefix. If they do, the prefix is extended by one character (the third character of the trigram), and the process continues recursively. A path is considered valid when the current prefix terminates with `end`.
 
-![](https://zhero-web-sec.github.io/images/opera-leaks-4.png)
+!
 
 All valid paths are recorded as candidates and printed at the end, sorted by length.
 
@@ -468,17 +468,17 @@ This is a reasonable compromise: in most cases, the first reconstruction with `e
 
 With this model, an address like `anergie.ner@gmail.com` containing `ner` twice, where one of the two trigrams is at the end, can still be successfully retrieved.
 
-![](https://zhero-web-sec.github.io/images/opera-leaks-6.png)
+!
 
 With `end_budget=1`, the solver uses `ner` immediately after `ane` to build `aner`, which already ends with the expected suffix and is therefore accepted as a valid reconstruction, even though several middle trigrams remain unused. When the algorithm later detects that those unused trigrams do not belong to `@gmail.com`, it retries with a higher `end_budget`, allowing `ner` to be consumed a second time and making it possible to continue the path all the way to `anergie.ner@gmail.com`:
 
-![](https://zhero-web-sec.github.io/images/opera-leaks-5.png)
+!
 
 ## 0-Click XSLeak via Universal CSS Injection
 
 When the victim visits a website embedding an `iframe` whose source points to the malicious `.crx`, the GX Mod is installed within a few seconds. However, as mentioned earlier, a notification bar appears below the address bar informing the user that the mod has been added. This notification includes a `Remove` button, allowing the mod to be uninstalled without opening the GX Mods interface:
 
-![](https://zhero-web-sec.github.io/images/opera-leaks-7.png)
+!
 
 From an attacker’s perspective, this is rather inconvenient, as it would require hoping that the victim does not remove the mod and that it remains installed until they eventually visit the target page chosen for data exfiltration.
 
@@ -486,7 +486,7 @@ Fortunately for the attacker, since the mod is installed within seconds after th
 
 In other words, by the time the user reaches the attacker’s website, it is already too late. The mod has already been installed, the browser is immediately redirected to the target page, and the data exfiltration takes place before there is any opportunity to remove it.
 
-![](https://zhero-web-sec.github.io/images/opera-leaks-8.gif)
+!
 
 To summarize the attack:
 

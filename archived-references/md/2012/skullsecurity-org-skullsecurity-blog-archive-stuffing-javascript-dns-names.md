@@ -114,35 +114,35 @@ So, without further ado, here are some screenshots of the sites. I anonymized th
 ### Site 1
 
 The form:
- ![](http://www.skullsecurity.org/blogdata/dnsxss-site1-1.png)
+ !
 
 The result:
- ![](http://www.skullsecurity.org/blogdata/dnsxss-site1-2.png)
+ !
 
 The source:
- ![](http://www.skullsecurity.org/blogdata/dnsxss-site1-3.png)
+ !
 
 ### Site 2
 
 The form:
- ![](http://www.skullsecurity.org/blogdata/dnsxss-site2-1.png)
+ !
 
 The result:
- ![](http://www.skullsecurity.org/blogdata/dnsxss-site2-2.png)
+ !
 
 The source:
- ![](http://www.skullsecurity.org/blogdata/dnsxss-site2-3.png)
+ !
 
 ### Site 3
 
 The form:
- ![](http://www.skullsecurity.org/blogdata/dnsxss-site3-1.png)
+ !
 
 The result:
- ![](http://www.skullsecurity.org/blogdata/dnsxss-site3-2.png)
+ !
 
 The source:
- ![](http://www.skullsecurity.org/blogdata/dnsxss-site3-3.png)
+ !
 
 ### So there we go...
 

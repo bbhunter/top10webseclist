@@ -64,37 +64,9 @@ page going offline. To read the original, follow the link above.
 
 # Client Side Path Traversal (CSPT) Bug Bounty Reports and Techniques
 
-[
-
-![Renwa](https://miro.medium.com/v2/resize:fill:64:64/1*r_V5EoylIXZ2Ot6ShbuRtA.png)
-
-](https://medium.com/@renwa?source=post_page---byline--8ee6cd2e7ca1---------------------------------------)
+[![Renwa](https://miro.medium.com/v2/resize:fill:64:64/1*r_V5EoylIXZ2Ot6ShbuRtA.png)](https://medium.com/@renwa?source=post_page---byline--8ee6cd2e7ca1---------------------------------------)
 
 [Renwa](https://medium.com/@renwa?source=post_page---byline--8ee6cd2e7ca1---------------------------------------)
-
-14 min readJan 24, 2025
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F8ee6cd2e7ca1&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Fclient-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1&user=Renwa&userId=3f8ae70e3957&source=---header_actions--8ee6cd2e7ca1---------------------clap_footer------------------)
-
---
-
-4
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F8ee6cd2e7ca1&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Fclient-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1&user=Renwa&userId=3f8ae70e3957&source=---header_actions--8ee6cd2e7ca1---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F8ee6cd2e7ca1&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Fclient-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1&source=---header_actions--8ee6cd2e7ca1---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3D8ee6cd2e7ca1&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40renwa%2Fclient-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1&source=---header_actions--8ee6cd2e7ca1---------------------post_audio_button------------------)
-
-Share
 
 Over the past year, CSPT bugs have gained significant attention, with numerous blogs and disclosed reports highlighting their impact. Inspired by this trend, I decided to share some of my bug bounty findings on the topic from previous years, hoping they will provide valuable insights to readers.
 

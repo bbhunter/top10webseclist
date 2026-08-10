@@ -73,29 +73,11 @@ Query
 
 # [Quick note] How to build CodeQL DB with closed-source project(.NET Assembly)
 
-[
-
-![Jang](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*ugkB3SOe8u8N-FzR)
-
-](https://testbnull.medium.com/?source=post_page---byline--237b829b6778---------------------------------------)
+[![Jang](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*ugkB3SOe8u8N-FzR)](https://testbnull.medium.com/?source=post_page---byline--237b829b6778---------------------------------------)
 
 [Jang](https://testbnull.medium.com/?source=post_page---byline--237b829b6778---------------------------------------)
 
-9 min readOct 8, 2024
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2F237b829b6778&operation=register&redirect=https%3A%2F%2Ftestbnull.medium.com%2Fquick-note-how-to-build-codeql-db-with-closed-source-project-net-assembly-237b829b6778&user=Jang&userId=6ac51190917c&source=---header_actions--237b829b6778---------------------clap_footer------------------)
-
 --
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2F237b829b6778&operation=register&redirect=https%3A%2F%2Ftestbnull.medium.com%2Fquick-note-how-to-build-codeql-db-with-closed-source-project-net-assembly-237b829b6778&user=Jang&userId=6ac51190917c&source=---header_actions--237b829b6778---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F237b829b6778&operation=register&redirect=https%3A%2F%2Ftestbnull.medium.com%2Fquick-note-how-to-build-codeql-db-with-closed-source-project-net-assembly-237b829b6778&source=---header_actions--237b829b6778---------------------bookmark_footer------------------)
-
-Share
 
 *Disclaimer: Bài chia sẻ chỉ phục vụ cho mục đích học tập, … mang tính chất cá nhân. Không liên quan tới bất cứ tổ chức cơ quan nào, bla bla … Tác giả không chịu trách nhiệm với bất kỳ hành vi nào của người đọc.*
 

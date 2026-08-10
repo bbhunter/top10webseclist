@@ -78,7 +78,7 @@ A talk by **Ashar Javed**
 
 ## graph is big
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113181/1billionpeople.JPG)
+ !
 [http://theweek.com/article/index/239514/4-things-we-learned-from-facebooks-confounding-earnings-report](http://theweek.com/article/index/239514/4-things-we-learned-from-facebooks-confounding-earnings-report)
 
 ## WHO AM I?
@@ -99,26 +99,26 @@ A talk by **Ashar Javed**
 
 ## some of You will wish For this feature ...
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/110897/passwordresetnotavailable.JPG)
+ !
 
 ## a short story
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/89898/tweet.JPG)
+ !
 [https://twitter.com/dimitribest/status/230677638358900736](https://twitter.com/dimitribest/status/230677638358900736)
 
 ## a paste**@**pastebin
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/89899/pastebin.JPG)
+ !
 [http://pastebin.com/ajaYnLYc](http://pastebin.com/ajaYnLYc)
 
 ## who to blame?
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/89910/curiosity.JPG)
+ !
 [http://cher-homespun.blogspot.de/2011/07/curiosity-killed-cat-but-satisfaction.html](http://cher-homespun.blogspot.de/2011/07/curiosity-killed-cat-but-satisfaction.html)
 
 ## After testing 3 to 4 random accounts from the pastebin's paste I found
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/89906/sawthis.JPG)
+ !
 
 ## AN Innocent question ...
 
@@ -140,7 +140,7 @@ You have an **email address** but **FORGOT YOUR PASSWORD**
 
 Go To [https://www.facebook.com/](https://www.facebook.com/)
 
-[![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/89967/1.JPG)](https://www.facebook.com/)
+[!](https://www.facebook.com/)
 
 Click "**Forgot Your Password?**"
 
@@ -148,7 +148,7 @@ Click "**Forgot Your Password?**"
 
 Enter Your **Email**, Phone, Username or Full Name
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/89969/2.JPG)
+ !
 Provide email address and click on "Search" button!
 
 [https://www.facebook.com/login/identify?ctx=recover](https://www.facebook.com/login/identify?ctx=recover)
@@ -157,38 +157,38 @@ Provide email address and click on "Search" button!
 
 Choose your "**Password Reset Method**" & click "**Continue**"
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90122/reset.JPG)
+ !
 
 ## Step (4) a
 
 Received password secret code via email
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90129/codeviaemail.JPG)
+ !
 
 ## step (4) B
 
 Entry-Point for the **SECRET CODE RECEIVED**:
 
-![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90131/codeentypoint.JPG)
+!
 Enter code that you have received in email & click "Continue"
 
 ## Step (5)
 
 Set "**New Password**"
 
-![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90136/newpasswordentrypoint.JPG)
+!
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113545/passwordpolicy.JPG)
+ !
 
 ## step (6)
 
 Welcome to Facebook, MSc. Ashar
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90148/welcome.JPG)
+ !
 
 ## Informative email from Facebook
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90183/informative_email.JPG)
+ !
 
 ## what if you lost or forgot both
 
@@ -210,14 +210,14 @@ Welcome to Facebook, MSc. Ashar
 
 BUT ...
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91604/sa.JPG)
+ !
 [http://www.cl.cam.ac.uk/~rja14/Papers/socialauthentication.pdf](http://www.cl.cam.ac.uk/~rja14/Papers/socialauthentication.pdf)
 
 ## trusted friends feature
 
 Introduced in October 2011 ([https://www.facebook.com/notes/facebook-security/national-cybersecurity-awareness-month-updates/10150335022240766](https://www.facebook.com/notes/facebook-security/national-cybersecurity-awareness-month-updates/10150335022240766))
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90210/callyourfriends.JPG)
+ !
 
 ## trusted friends
 
@@ -233,44 +233,44 @@ Introduced in October 2011 ([https://www.facebook.com/notes/facebook-security/na
 
 ## guardian angels
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90328/GA.JPG)
+ !
 [http://sophosnews.files.wordpress.com/2011/10/facebook-security-infographic.pdf](http://sophosnews.files.wordpress.com/2011/10/facebook-security-infographic.pdf)
 
 ## how trusted friends feature works?
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113185/TFstartingpoint.JPG)
+ !
 
 ## list # 1
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113190/l1.JPG)
+ !
 
 ## list # 2
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113191/l2.JPG)
+ !
 
 ## list # 3
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113192/l3.JPG)
+ !
 
 ## review friends
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113196/fahadhasnow2fakeaccountsxxxxxyyyy.JPG)
+ !
 
 ## enter codes & gain access to your account
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113570/fahadhasnow2fakeaccountsxxxxxyyyycodeonisabele.JPG)
+ !
 
 ## Screen-shot of fake profile
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113198/notificationslookslike.JPG)
+ !
 
 ## 4 digit code
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113199/fahadhasnow2fakeaccountsNEEDSHELP.JPG)
+ !
 
 ## Another informative email to legitimate user from facebook
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113209/iL.JPG)
+ !
 
 ## 600,000+ compromised account logins every day on Facebook, official figures reveal ([http://goo.gl/fNP27Q](http://goo.gl/fNP27Q))
 
@@ -278,17 +278,17 @@ by
 
 [https://twitter.com/gcluley ](https://twitter.com/gcluley)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91497/gc.JPG)
+ !
 
 ## @gcluley noted in his post
 
 ## [http://goo.gl/fNP27Q](http://goo.gl/fNP27Q)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91502/gc11.JPG)
+ !
 
 ## question you might thinking ...
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90246/whereistheproblem.JPG)
+ !
 
 ## threat model
 
@@ -296,12 +296,12 @@ Attacker is on victim's friends' list & can create new email address(es) that ar
 
 ## email address must be new for every target
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91476/howcanwereachyouOLD.JPG)
-![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91544/howcanwereachyouOLD111111.JPG)
+ !
+!
 
 ## facebook friend vs real life friend
 
-![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90259/50percentfake.JPG)
+!
 
 [http://blogs.mcafee.com/consumer/fake-friends](http://blogs.mcafee.com/consumer/fake-friends)
 
@@ -321,7 +321,7 @@ DO YOU THINK ALL 342 ARE REAL LIFE FRIENDS ALSO OR JUST FACEBOOK FRIENDS OR WHAT
 
 ## summarize everything about facebook & real life friends
 
-![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91003/fbturnout.JPG)
+!
 
 [http://www.lolroflmao.com/2012/02/24/he-had-over-2000-friends-on-facebook-i-thought-it-would-have-more-people-here/](http://www.lolroflmao.com/2012/02/24/he-had-over-2000-friends-on-facebook-i-thought-it-would-have-more-people-here/)
 
@@ -337,14 +337,14 @@ https://www.facebook.com/ashar.javed
 
 Repeat the "**Forgot Your Password**" process as mentioned before until **STEP (3)** i.e.,
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90301/reset.JPG)
+ !
 "No longer have access to these?"
 
 ## no longer have access to these?
 
 *sometimes* opens the following dialog box (old & new version) :)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113392/howcanweREACHYOUCOMBINEOLDANDNEW.JPG)
+ !
 
 HOW AWESOME THEY ARE? :-)
 
@@ -367,7 +367,7 @@ Is it even possible?
 
 ## create new email address and enter in the previous dialog box & here you have:
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90306/securityquestionplusTFoption.JPG)
+ !
 
 ## Question
 
@@ -403,7 +403,7 @@ lsd=AVo8FV8K&profileChooserItems={"**511543064**":1}&checkableitems[]=**51154306
 
 **511543064** is my Facebook numeric ID.
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113200/l1.JPG)
+ !
 
 ## how to get the facebook's user iD?
 
@@ -411,13 +411,13 @@ Facebook's user numeric ID is not public information most of the time and it is 
 
 ## answer: graph api explorer by facebook
 
-![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90312/api.JPG)
+!
 
 https://developers.facebook.com/tools/explorer/?method=GET&path=VICTIM-USERNAME?fields=id,name
 
 ## evil idea
 
-![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90294/reviewfriendsallashar.JPG)
+!
 
 URL looks like:
 https://www.facebook.com/guardian/confirm.php?guardians[0]=511543064&guardians[1]=511543064&guardians[2]=511543064&**cuid**=
@@ -428,11 +428,11 @@ https://www.facebook.com/guardian/confirm.php?guardians[0]=511543064&guardians[1
 
 Facebook correctly says:
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91002/link_expired.JPG)
+ !
 
 ## interesting message from facebook
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90322/forsecurityreasonsAJ.JPG)
+ !
 
 ## what does it mean?
 
@@ -440,9 +440,9 @@ I think it means that if an attacker select himself or any particular account 3 
 
 ## url manipulation's result! i.e., facebook's email with no friends' names
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113201/email_without_friends_name.PNG)
+ !
 
-![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113202/combiningtheattack.JPG)
+!
 
 ## Chain Trusted Friends Attack (CTFA)
 
@@ -450,21 +450,21 @@ In CTFA, attacker can make a chain of compromised accounts and with the help of 
 
 ## facebook's default & fixed security questions set
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90563/FBSECQQQQ.JPG)
+ !
 
 ## facebook's security questions screen-shot!
 
-![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90768/secQuestionset.JPG)
+!
 
 ## excerPts from "mind reader" video
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90751/yourentirelifeisonline.JPG)
-![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90752/itmightbeusedagainstyou.JPG)
+ !
+!
 [https://www.youtube.com/watch?v=F7pYHN9iC9I](https://www.youtube.com/watch?v=F7pYHN9iC9I)
 
 ## how to get the answers of these questions?
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90564/boblord.JPG)
+ !
 
 ## according to "me"
 
@@ -480,7 +480,7 @@ Following ways work like charm:
 
 ## another bad security practice
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90753/caniupdate.JPG)
+ !
 [https://www.facebook.com/help/163063243756483](https://www.facebook.com/help/163063243756483)
 
 Question: **What happens if a user realize after answering/setting the question that he has chosen a weak answer?**
@@ -489,24 +489,24 @@ Remark: In case of compromised accounts, if attacker has proceeded via answering
 
 ## Inconsistency in security questions' User interface
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90570/hammad_bwo_sec_q.PNG)
-![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90571/mother_born_Q_ss.PNG)
+ !
+!
 
 ## what is your reaction if you have to give an answer to a security question(s) that is not even a part of Facebook's default security questions' list?
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113403/secQuestionset.JPG)
+ !
 
 ## my reaction :-)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90577/surprise.JPG)
+ !
 
 ## security question # 1
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90578/girlkissq.png)
+ !
 
 ## security question # 2
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90580/nameofpetSQ.JPG)
+ !
 
 ## how can a legitimate user give an answer to a security question that he has never set?
 
@@ -528,12 +528,12 @@ In 69 cases, Facebook allows us to PROVIDE a NEW EMAIL ADDRESS and once provided
 
 ## 181 cases we got ...
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90584/trytogetaccesstoemail.JPG)
+ !
 If as an attacker, we click on "I Cannot Access My Email"
 
 ## 181 cases (No email access ... we are sorry)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90583/trytogetaccesstoemail-wearesorry.JPG)
+ !
 [https://www.facebook.com/recover/extended/ineligible](https://www.facebook.com/recover/extended/ineligible)
 
 ## in 69 cases
@@ -548,7 +548,7 @@ OR
 
 Choice among above two options
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90585/hammad_bwo_sec_q.PNG)
+ !
 
 ## 11 out of 69 accounts compromised
 
@@ -568,29 +568,29 @@ ENOUGH FOR POC! # of compromised accounts can be easily raised to 20-25 but requ
 
 ## at the same time denial-of-service (DOS) victim
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90587/codeentypoint.JPG)
+ !
 What if attacker will enter 20-30 times wrong secret code? Attacker doesn't have access to victim's email box in order to get the valid 6 digit code but he has the above dialog box in front of him ...
 
 ## here you go:
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90588/toomanycodestried.JPG)
+ !
 "Try again later" will be nasty experience for the victim!
 
 We call this "**Password Reset DoS**"
 
 ## identify account another way
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90756/identifyaccountinotherway.JPG)
+ !
 In this way, attacker can force victim to use email address or phone and if victim has lost his email address ....
 
 ## worst thing
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90757/passwordnotreset.png)
-![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113551/t-passwordnotreset_ykhan.JPG)
+ !
+!
 
 ## my friend's reaction on worst thing
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90758/adilback.png)
+ !
 
 ## another type of DoS on Facebook
 
@@ -598,13 +598,13 @@ In this way, attacker can force victim to use email address or phone and if vict
 
 If an attacker has started the password recovery using **TF** and at the same time victim tries to use this feature ... he will receive the following message from Facebook
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90625/accountrecoverystarted.png)
+ !
 
 ## facebook's security measures & how legitimate users react & their bypasses
 
 ## this is how common users use facebook...
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90793/selfxss.JPG)
+ !
 
 ## 1) Security Alert via Email or Mobile SMS
 
@@ -612,18 +612,18 @@ As soon as attacker starts an account recovery via "**password reset**" function
 
 ## users' reaction on this email or sms
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90627/scam.png)
-![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90629/scam1.png)
-![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90631/haseebcomment.png)
+ !
+!
+!
 
 ## users' reaction on this email or sms
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90647/umarniazifbstatus.png)
+ !
 
 ## 2) Temporarily Locked
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90665/zalocked.png)
-![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113438/tLOCKED.JPG)
+ !
+!
 In order to recognize device, Facebook uses **OS, IP Address, Browser & Estimated Location** etc.
 
 What happens if attacker clicks on "**Continue**" button?
@@ -632,11 +632,11 @@ What happens if attacker clicks on "**Continue**" button?
 
 ## (1)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90675/someonemayaccessedyouracccount.JPG)
+ !
 
 ## (2)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90676/pleaseconfirmyouridentity.JPG)
+ !
 
 Click "**Continue**" after selecting one of the option but remember who is doing selection?
 
@@ -644,49 +644,49 @@ An ATTACKER
 
 ## (3)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90678/samequestionpresented.JPG)
+ !
 
 ## (4)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90680/uniquepassword.JPG)
+ !
 
 ## (5)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113203/reviewemailaddress.JPG)
+ !
 
 ## (6)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90682/areyousurethisemailissecure.JPG)
+ !
 
 ## (7)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90683/reviewrecentchanges.JPG)
+ !
 
 ## (8)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90684/accountunlocked.JPG)
+ !
 
 ## another interesting aspect in case if legitimate user will be able to regain access to his account
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90689/interestingaspect.JPG)
+ !
 
 ## remember (5th step) i.e.,
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113205/reviewemailaddress.JPG)
+ !
 
 ## snapshot of attacker's email box
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90701/inbox.JPG)
+ !
 
 ## recognizeD devices
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90667/recognize_devices.JPG)
+ !
 
 ## 3) 24 Hour Locked-out Period
 
 As an attacker this is the biggest hurdle to cross ...
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90716/hurdle.JPG)
+ !
 
 ## disavow process
 
@@ -698,35 +698,35 @@ Majority of the users, as shown in users' reaction consider Facebook's informati
 
 ## for a moment forgot disavow
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90761/congratulations.JPG)
+ !
 
 ## 24 hour locked out period starts like that ...
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90942/23_hours.PNG)
+ !
 
 ## 24 hour locked out period ...
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90943/5_hours_and_10_min.PNG)
+ !
 
 ## 24 hour locked out period ...
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90944/1_hour_left.PNG)
+ !
 
 ## 24 hour locked out period ...
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90945/4_minute_umair.PNG)
+ !
 
 ## game over for victim...
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90946/gameover.JPG)
+ !
 
 ## here we go...
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90947/compromise_umair_2.PNG)
+ !
 
 ## Another email from facebook and leaked email address of the victim
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113530/accountlockedoutperiodover.JPG)
+ !
 
 ## Ethical Considerations
 
@@ -734,7 +734,7 @@ First Reported to Facebook on 19-08-2012
 
 On 23-08-2012, I got the following answer from Facebook Security Team:
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90966/FBEMAIL.JPG)
+ !
 
 ## two questions came to my mind after reading the email...
 
@@ -744,15 +744,15 @@ On 23-08-2012, I got the following answer from Facebook Security Team:
 
 ## on 24-08-2012
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90977/FBEMAIL1.JPG)
+ !
 
 ## but i have waited until the complete empirical study & again sent the technical report/research paper on 27-06-2013
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90989/FBEMAIL2.JPG)
+ !
 
 ## answer from security team on 09-09-2013
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90995/FBEMAIL3.JPG)
+ !
 
 ## sorry facebook :-(
 
@@ -765,64 +765,64 @@ The results would look like FAKE.
 Our approach is similar to a recently published academic paper in Second International Workshop on Privacy and Security in Online Social Media
 Co-located with WWW 2013 ([http://precog.iiitd.edu.in/events/psosm2013/9psosm3s-parwani.pdf](http://precog.iiitd.edu.in/events/psosm2013/9psosm3s-parwani.pdf))
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90998/howtohackintofacebookwithoutbeinghacker.JPG)
+ !
 
 ## finally
 
 All compromised accounts are up, running and under the control of their legitimate users!
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91000/ethical.JPG)
+ !
 
 ## yet another observation i.e., masked email address and phone #
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91010/maskedemailaddress.JPG)
+ !
 
 ## whEre is masking? email address exposed
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91013/nomasking.JPG)
+ !
 
 ## after 5-10 minutes masking affect appears
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91014/makingapply.JPG)
+ !
 
 ## what about other 49 social networks' password reset functionality?
 
 ## twitter (https://twitter.com/?lang=en)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91041/twitter.JPG)
+ !
 200 million active users (Feb 2013) + Alexa Rank #11
 ([http://en.wikipedia.org/wiki/Twitter](http://en.wikipedia.org/wiki/Twitter))
 
 ## anybody can send anybody a password reset request with the help of twitter's username which is public information :-(
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91042/twitterFP.JPG)
+ !
 
 ## just for fun ...
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113428/johnwilandertweets.JPG)
+ !
 
 ## i reported this to twitter security team & this is what they think about it
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91043/janida.JPG)![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91044/janida111.JPG)
+ !!
 
 ## but now twitter has ...
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91048/twittersnp.JPG)
+ !
 
 ## Mat Honan's story
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91049/mat.JPG)
+ !
 [http://www.wired.com/gadgetlab/2012/08/apple-amazon-mat-honan-hacking/all/](http://www.wired.com/gadgetlab/2012/08/apple-amazon-mat-honan-hacking/all/)
 
 ## support teams
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91050/supportteams.JPG)
+ !
 
 ## support team's job
 
 To help customers ...
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91051/jobs.JPG)
+ !
 
 ## can also be used to compromise accounts :-)
 
@@ -842,79 +842,79 @@ jim@mediaob.de
 
 ## Academia ([http://www.academia.edu/](http://www.academia.edu/))
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91061/academia.JPG)
+ !
 
 ## our email to academia
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91096/academiaemail.JPG)
+ !
 
 ## initial response from academia
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91097/academiaemailresponse.JPG)
+ !
 
 ## final response of academia support team
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91066/aca.png)
+ !
 
 ## FreizeitFreunde (A german-specific social networking site) ([http://www.freizeitfreunde.de/](http://www.freizeitfreunde.de/))
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91100/ff.JPG)
+ !
 
 ## our email to them ...
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91101/ff11.JPG)
+ !
 
 ## FreizeitFreunde's support team response
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91104/ff22.JPG)
+ !
 
 ## lokalisten (a german social networking site )([http://www.lokalisten.de/](http://www.lokalisten.de/))
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91108/lokalisten.JPG)
+ !
 
 ## initial response on our ticket
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91111/lokalistenemail.JPG)
+ !
 
 ## our response without ""date of birth""
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91112/lokaemailresponse.JPG)
+ !
 
 ## lokalisten's support team final response
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91113/lokafinalesponse.JPG)
+ !
 
 ## meetup ([http://www.meetup.com/find/](http://www.meetup.com/find/))
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91149/meetups.JPG)
+ !
 
 ## support team blocks account :)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91152/meetupemail.JPG)
+ !
 
 ## getglue (social networks for tv fans) [http://getglue.com/feed](http://getglue.com/feed)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91155/getgluemainpage.JPG)
+ !
 
 ## our email to their support team
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91156/getglue.JPG)
+ !
 
 ## getglue's support team response
 
 They set the new password for us i.e., "temp" :)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91165/gggggg.JPG)
+ !
 
 ## Delicious ([https://delicious.com/](https://delicious.com/))
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91158/delicious.JPG)
+ !
 
 ## Delicious's support team response
 
 They have switched the email address from victims' to an attacker controlled email address and have sent password reset link to the attacker's email address.
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91163/deliciousreply.JPG)
+ !
 
 ## facebook as sso
 
@@ -939,11 +939,11 @@ Out of 50 surveyed social networks, we found
 
 ## havoc examples
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91561/teen.JPG)
+ !
 
 [http://goo.gl/2FVTz8](http://goo.gl/2FVTz8)
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91562/divorce.JPG)
+ !
 [http://goo.gl/uuO7Kq](http://goo.gl/uuO7Kq)
 
 ## Guidelines for users
@@ -959,30 +959,30 @@ Out of 50 surveyed social networks, we found
 -  Facebook should raise the bar as far as communication with the researchers or bug submitters is concerned.
 - For Facebook: Please don't send TOO MANY EMAILS because users start believing that these are spam emails.
 
-- Joe wrote in his post ([http://goo.gl/Wf6QMZ](http://goo.gl/Wf6QMZ)):![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91462/joe.JPG)
+- Joe wrote in his post ([http://goo.gl/Wf6QMZ](http://goo.gl/Wf6QMZ)):!
 - In case of **TFA**, Facebook failed in "CORRECTLY IDENTIFYING and REALIZATION OF AN INFORMATION FLOW PROBLEM"
 
 ## for facebook
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113561/checkpoint.JPG)
+ !
 
 ## I hope now facebook security team's reaction
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91571/nowegotit.JPG)
+ !
 
 ## demo
 
 ## YET Another observation
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/119961/ammara-asharneedshelpNEWDIALOGBOX.JPG)
+ !
 
 ## reveal my trusted contacts reveals
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/119963/ammara-asharneedshelpNEWDIALOGBOX_FUN.JPG)
+ !
 
 ## thanks!
 
- ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91176/thanks.JPG)
+ !
 
 #### trusted friend attack:
 

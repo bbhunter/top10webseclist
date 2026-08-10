@@ -71,7 +71,7 @@ tags: [Writeup](https://mizu.re/tag/Writeup) [ASIS_QUALS_2025](https://mizu.re/t
 
 # Under the Beamer (revenge)
 
- ![](https://mizu.re/articles/writeups/ASIS_QUALS_2025/under-the-beamer/./images/asis.png)
+ !
 
 ---
 

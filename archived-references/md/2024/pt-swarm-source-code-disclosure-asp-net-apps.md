@@ -69,11 +69,11 @@ Here are the details. If you just see an IIS or .NET app, this is for you.
 
 During an external penetration test, I found a web application. It consisted of two pages on different ports:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2024/03/90eda7f7-app-4.png)
+!
 
 Here is a Burp screenshot with relevant HTTP headers:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2024/02/e77f69ca-http-headers.png)
+!
 
 *HTTP headers of the 8444/tcp application*
 
@@ -81,7 +81,7 @@ It looked like my application was written in C# on the ASP.NET platform, was fun
 
 Knowing this was enough to bypass the 403 error:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2024/03/cce2213a-403-bypass.png)
+!
 
 *The content of the “/login.aspx” page after bypassing the WAF (via a cookieless session)*
 
@@ -125,7 +125,7 @@ I was playing with my websites once every two or three days. It all came to noth
 
 However, one day, this happened:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2024/03/c8ea633f-poc.png)
+!
 
 In just one second, the DLL had appeared on my computer! It wasn’t corrupt, and there was a Remote Code Execution discovered inside!
 
@@ -162,7 +162,7 @@ http://Y.Y.Y.Y/(S(x))/b/(S(x))in/Navigator.dll - 200
 
 However, by applying IIS-ShortName-Scanner, you can not only check the existence of the “/bin” directory, but also discover its content:
 
-![](https://swarm.ptsecurity.com/wp-content/uploads/2024/02/0f273b4c-IIS-ShortName-Scanner.png)
+!
 
 *Executing java -jar ./iis_shortname_scanner.jar 20 8 'https://X.X.X.X/bin::$INDEX_ALLOCATION/'*
 

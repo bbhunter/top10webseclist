@@ -141,7 +141,7 @@ When using either of these functions (whether for SSG or SSR), Next.js employs s
 
 The response is a JSON object named `pageProps` containing the transmitted data:
 
-![](https://zhero-web-sec.github.io/images/p1.png) *Result of the previous snippet in which we pass the user-agent of the request*
+! *Result of the previous snippet in which we pass the user-agent of the request*
 
 ## Internal URL parameter and pageProps
 
@@ -151,7 +151,7 @@ In my previous research, I noticed that some internal “components” of the fr
 
 As I revisited the Next.js source code, I focused specifically on its internal operations, with the goal of finding ways to influence its behavior, just to see where it might lead. I came across this particularly interesting [piece of code](https://github.com/vercel/next.js/blob/de47568e894e9c0b41312acfa916491142c03756/packages/next/src/server/base-server.ts#L2004):
 
-![](https://zhero-web-sec.github.io/images/p2.png) *server/base-server.ts*
+! *server/base-server.ts*
 
 The name of the constant as well as the comments clearly indicate its purpose: its value is a boolean that determines **whether or not the request is a data request** (*as previously defined*). For the request to be classified as such:
 
@@ -160,7 +160,7 @@ The name of the constant as well as the comments clearly indicate its purpose: i
 
 Thus, by sending a request to an endpoint that uses `getServerSideProps` and appending the `__nextDataReq` URL parameter, the server should return the expected JSON object instead of the HTML page, the constant being defined to `true`:
 
-![](https://zhero-web-sec.github.io/images/p3.png)
+!
 
 And this was indeed the case. It may seem trivial and uninteresting at first glance, but not for someone who is used to exploiting poorly configured caches.
 
@@ -186,7 +186,7 @@ Since **this header is automatically added by browsers**, “normal” users **w
 
 I was able to win quite a few nice bounties via this vector, the severity being consistently `high` due to the heavily impacted availability.
 
-![](https://zhero-web-sec.github.io/images/p4.png)
+!
 
 ## CVE-2024-46982: The stale elixir
 
@@ -194,7 +194,7 @@ I was able to win quite a few nice bounties via this vector, the severity being 
 
 It all starts with this particularly [interesting conditional statement](https://github.com/vercel/next.js/blob/979fedb8d42b9e42f515e9e5451b5b3c96b97d53/packages/next/src/server/base-server.ts#L1991), which, when it returns `true` considers the request to be an `SSG` (Server Static Generation, as seen previously):
 
-![](https://zhero-web-sec.github.io/images/p5.png) *server/base-server.ts*
+! *server/base-server.ts*
 
 Since the data transmitted via `getServerSideProps` is **dynamic**, it is -*initially*[1]- not intended to be cached. This differs from SSG requests, which handle **static data**. Therefore, it’s no surprise how the framework manages `Cache-Control`:
 
@@ -215,7 +215,7 @@ req.headers['x-now-route-matches']
 
 It would therefore be sufficient for the header to be present in the request to achieve our goal. While the likelihood of it being stripped from an external request is high, the test is surprisingly positive:
 
-![](https://zhero-web-sec.github.io/images/p6.png) *it feels good*
+! *it feels good*
 
 The `/poc` endpoint here uses the `getServerSideProps` function, so a **request containing SSR data**, which, as a reminder, contains **dynamic** data and is therefore supposed -*as mentioned above*- to have the following `cache-control` :
 
@@ -252,13 +252,13 @@ By combining in the request:
 
 It is possible to cache the JSON object `pageProps` on the target endpoint **altering the content of any SSR page**;
 
-Normal request to the `/poc` endpoint: ![](https://zhero-web-sec.github.io/images/p7.png)
+Normal request to the `/poc` endpoint: !
 
-Request to the `/poc` endpoint by adding the `__nextDataReq` parameter: ![](https://zhero-web-sec.github.io/images/p8.png)
+Request to the `/poc` endpoint by adding the `__nextDataReq` parameter: !
 
-Request to the `/poc` endpoint by adding the `__nextDataReq` parameter and the `x-now-route-matches` header: ![](https://zhero-web-sec.github.io/images/p9.png)
+Request to the `/poc` endpoint by adding the `__nextDataReq` parameter and the `x-now-route-matches` header: !
 
-And now when I access the `/poc` endpoint without adding any URL parameter or anything: ![](https://zhero-web-sec.github.io/images/p10.png) *boo-*
+And now when I access the `/poc` endpoint without adding any URL parameter or anything: ! *boo-*
 
 **The cache is poisoned**, and the “JSON” object is served instead of the page content. We get a nice DoS that greatly impacts `availability`, but it doesn’t stop there.
 
@@ -286,7 +286,7 @@ x-now-route-matches: 1
 
 ```
 
-Once the malicious request is sent, a nice surprise awaits us by accessing `/poc` directly via the browser: ![](https://zhero-web-sec.github.io/images/p11.png) *Stored XSS on Next.js*
+Once the malicious request is sent, a nice surprise awaits us by accessing `/poc` directly via the browser: ! *Stored XSS on Next.js*
 
 The payload is now cached and will be triggered, without any interaction, every time a user visits the impacted page/endpoint. The repercussions of such a vulnerability are catastrophic, and can allow a malicious actor to extract personal data from users and/or perform mass account takeovers depending on other factors as is the case for classic XSS attacks.
 
@@ -314,11 +314,11 @@ Note: *The* `buildId` *is returned by Next.js on pages within the script tags co
 
 Sending a request to the **data fetch route** by adding the `x-now-route-matches` header leads to poisoning the target page endpoint (`/poc`):
 
-![](https://zhero-web-sec.github.io/images/p12.png)
+!
 
 Response served by the poisoned cache when accessing `/poc`:
 
-![](https://zhero-web-sec.github.io/images/p13.png)
+!
 
 The result being exactly the same as with the use of the internal parameter, as the request is a **data request** in both cases.
 
@@ -365,7 +365,7 @@ Fortunately, the Vercel team responded quickly, implementing a fix and issuing a
 
 On my side, I was able to send many reports relating to these vulnerabilities, whose severity is between `High` and `Critical` depending on the possibility or not to chain the CP to a SXSS. All sectors were affected, some of which were extremely sensitive platforms: money transfer, cryptocurrency, e-commerce… Most of them have resulted in nice rewards, including several 5-digit bounties.
 
-![](https://zhero-web-sec.github.io/images/p15.png) *some wins*
+! *some wins*
 
 [?] **Check out how I bypassed the fix for this vulnerability by chaining a race condition with cache poisoning (potentially leading to SXSS) here**:
 

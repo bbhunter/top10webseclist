@@ -80,49 +80,9 @@ The day Apple announced its new Liquid Glass redesign was pretty chaotic. You co
 
 Drowning in the flurry of posts, a thought came to mind - how hard would it be to re-create this effect? Could I do this, on the web, without resorting to canvas and shaders? I got to work, and about an hour later I had [a pretty accurate CSS/SVG recreation of the effect](https://codepen.io/rebane2001/details/OPVQXMv)1.
 
- [
+ [EMERGENCY! Girls Rituals](https://visualdisturbances.bandcamp.com/album/emergency-2) [This Won't Be The Last Time acloudyskye](https://acloudyskye.bandcamp.com/album/this-wont-be-the-last-time) [SOUND BANDIT FUCKING LIVES Sound Bandit](https://soundbandit.bandcamp.com/album/sound-bandit-fucking-lives) [Love & Ponystep Vylet Pony](https://vyletpony.bandcamp.com/album/love-ponystep) [I Love My Computer Ninajirachi](https://ninajirachi.bandcamp.com/album/i-love-my-computer)
 
-EMERGENCY!
-
-Girls Rituals
-
-](https://visualdisturbances.bandcamp.com/album/emergency-2) [
-
-This Won't Be The Last Time
-
-acloudyskye
-
-](https://acloudyskye.bandcamp.com/album/this-wont-be-the-last-time) [
-
-SOUND BANDIT FUCKING LIVES
-
-Sound Bandit
-
-](https://soundbandit.bandcamp.com/album/sound-bandit-fucking-lives) [
-
-Love & Ponystep
-
-Vylet Pony
-
-](https://vyletpony.bandcamp.com/album/love-ponystep) [
-
-I Love My Computer
-
-Ninajirachi
-
-](https://ninajirachi.bandcamp.com/album/i-love-my-computer)
-
- [
-
-](https://blacksquares.bandcamp.com/album/3) [
-
-](https://glassbeach.bandcamp.com/album/the-first-glass-beach-album) [
-
-](https://underscores.bandcamp.com/album/wallsocket-directors-cut) [
-
-](https://patriciataxxon.bandcamp.com/album/bicycle) [
-
-](https://kraejiyaeji.bandcamp.com/album/ep-1-2)
+     
 
 EMERGENCY!
 

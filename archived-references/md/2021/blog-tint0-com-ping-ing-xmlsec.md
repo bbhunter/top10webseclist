@@ -160,7 +160,7 @@ Taking into account the size and complexity of the product it's impressive how s
 
 After the patches were out, we wanted to monitor the Internet and keep track of their patching progress. The trick used here is to check for the Last-Modified header of a static file on the target (idea courtesy of Orange). While it theoretically makes sense considering a typical product update process, it's still not a guaranteed probe so there most likely will be false positives (actual patched status larger than shown).
 
-![](https://blogger.googleusercontent.com/img/a/AVvXsEhI3fcWnORQ9SHH5hWG-IN9cZjPG-bHooGgmBkPx_xZxpPU7a7GaTaxl5_S5vKooc1Bqq3bkVrrnbMgyxRauYyV5ilM2DyzKcUHtIlyE0bayHg7h-TOj8rA9xspyU58WN2qf7TM_BghtI51dXGnEzZqFBfW1M7rHTLf0RmlnCsgNFOknfp4R0Tu11eDqg=s670)
+!
 
 ### Conclusion
 

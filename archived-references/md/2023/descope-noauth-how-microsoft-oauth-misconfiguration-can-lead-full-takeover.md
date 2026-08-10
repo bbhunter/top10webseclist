@@ -66,11 +66,7 @@ page going offline. To read the original, follow the link above.
 
 ![Omer Cohen headshot](https://www.descope.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fxqb1f63q68s1%2F3WzVqPxQCyi6rgzAlv3kwI%2Fe03df468cf49e8c29f98bab864dca79f%2FOmer_Cohen_headshot.jpg&w=3840&q=75)
 
-[
-
-Omer Cohen
-
-](https://www.descope.com/blog/author/omer-cohen)
+[Omer Cohen](https://www.descope.com/blog/author/omer-cohen)
 
 Chief Security Officer
 

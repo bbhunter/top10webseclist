@@ -76,35 +76,11 @@ Burpsuite
 
 # How I Accessed 1,800 Company Livestreams and Uncovered a New Web Exploit Class: RRE
 
-[
-
-![Farzan Karimi](https://miro.medium.com/v2/resize:fill:64:64/1*qgKEd4Nno4hS-r6HuabyzA.jpeg)
-
-](https://jumpycastle.dev/?source=post_page---byline--f74b7ef996e7---------------------------------------)
+[![Farzan Karimi](https://miro.medium.com/v2/resize:fill:64:64/1*qgKEd4Nno4hS-r6HuabyzA.jpeg)](https://jumpycastle.dev/?source=post_page---byline--f74b7ef996e7---------------------------------------)
 
 [Farzan Karimi](https://jumpycastle.dev/?source=post_page---byline--f74b7ef996e7---------------------------------------)
 
-6 min readNov 6, 2025
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2Ff74b7ef996e7&operation=register&redirect=https%3A%2F%2Fjumpycastle.dev%2Fhow-i-accessed-1-800-company-livestreams-and-uncovered-a-new-web-exploit-class-rre-f74b7ef996e7&user=Farzan+Karimi&userId=a880dcebc132&source=---header_actions--f74b7ef996e7---------------------clap_footer------------------)
-
 --
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2Ff74b7ef996e7&operation=register&redirect=https%3A%2F%2Fjumpycastle.dev%2Fhow-i-accessed-1-800-company-livestreams-and-uncovered-a-new-web-exploit-class-rre-f74b7ef996e7&user=Farzan+Karimi&userId=a880dcebc132&source=---header_actions--f74b7ef996e7---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Ff74b7ef996e7&operation=register&redirect=https%3A%2F%2Fjumpycastle.dev%2Fhow-i-accessed-1-800-company-livestreams-and-uncovered-a-new-web-exploit-class-rre-f74b7ef996e7&source=---header_actions--f74b7ef996e7---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3Df74b7ef996e7&operation=register&redirect=https%3A%2F%2Fjumpycastle.dev%2Fhow-i-accessed-1-800-company-livestreams-and-uncovered-a-new-web-exploit-class-rre-f74b7ef996e7&source=---header_actions--f74b7ef996e7---------------------post_audio_button------------------)
-
-Share
 
 *Capture from an Internal company all-hands*
 

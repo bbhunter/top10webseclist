@@ -67,7 +67,7 @@ Research, News, and Perspectives | Trend Micro (US)
 
 # Research, News, and Perspectives
 
- [ ![](https://www.trendmicro.com/content/dam/trendmicro/global/en/research/thumbnails/laptop-hands.jpg) ![](https://www.trendmicro.com/content/dam/trendmicro/global/en/research/thumbnails/laptop-hands.jpg)  ](https://www.trendmicro.com/en_us/research/26/g/open-secure-ai-alliance.html)
+ [ ! !  ](https://www.trendmicro.com/en_us/research/26/g/open-secure-ai-alliance.html)
 
  Artificial Intelligence (AI)
 
@@ -83,7 +83,7 @@ Save to Folio
 
 Save to Folio
 
- [ ![](https://trendmicro.scene7.com/is/image/trendmicro/image-976x533_1_WC:Medium?qlt=80) ![](https://trendmicro.scene7.com/is/image/trendmicro/image-976x533_1_WC:Large?qlt=80)  ](https://www.trendmicro.com/en_us/research/26/g/tracking-fake-sites-in-the-2026-world-cup-scam-wave.html)
+ [ ! !  ](https://www.trendmicro.com/en_us/research/26/g/tracking-fake-sites-in-the-2026-world-cup-scam-wave.html)
 
  Cyber Threats
 
@@ -99,7 +99,7 @@ Save to Folio
 
 Save to Folio
 
- [ ![](https://trendmicro.scene7.com/is/image/trendmicro/autonomous-ransomware-thumbnail:Large?qlt=80) ![](https://trendmicro.scene7.com/is/image/trendmicro/autonomous-ransomware-thumbnail:Large?qlt=80)  ](https://www.trendmicro.com/en_us/research/26/g/autonomous-ransomware.html)
+ [ ! !  ](https://www.trendmicro.com/en_us/research/26/g/autonomous-ransomware.html)
 
  Cyber Threats
 
@@ -115,7 +115,7 @@ Save to Folio
 
 Save to Folio
 
- [ ![](https://trendmicro.scene7.com/is/image/trendmicro/tech-support-scams:Medium?qlt=80) ![](https://trendmicro.scene7.com/is/image/trendmicro/tech-support-scams:Large?qlt=80)  ](https://www.trendmicro.com/en_us/research/26/g/tech-support-scams-targeting-japan.html)
+ [ ! !  ](https://www.trendmicro.com/en_us/research/26/g/tech-support-scams-targeting-japan.html)
 
  Cyber Crime
 
@@ -131,7 +131,7 @@ Save to Folio
 
 Save to Folio
 
- [ ![](https://trendmicro.scene7.com/is/image/trendmicro/openai-huggingface:Medium?qlt=80) ![](https://trendmicro.scene7.com/is/image/trendmicro/openai-huggingface:Large?qlt=80)  ](https://www.trendmicro.com/en_us/research/26/g/inside-the-openai-hugging-face-incident.html)
+ [ ! !  ](https://www.trendmicro.com/en_us/research/26/g/inside-the-openai-hugging-face-incident.html)
 
  Artificial Intelligence (AI)
 
@@ -147,7 +147,7 @@ Save to Folio
 
 Save to Folio
 
- [ ![](https://trendmicro.scene7.com/is/image/trendmicro/plc-exploitation-thumbnail:Medium?qlt=80) ![](https://trendmicro.scene7.com/is/image/trendmicro/plc-exploitation-thumbnail:Large?qlt=80)  ](https://www.trendmicro.com/en_us/research/26/g/plc-exploitation.html)
+ [ ! !  ](https://www.trendmicro.com/en_us/research/26/g/plc-exploitation.html)
 
  Cyber Threats
 
@@ -163,7 +163,7 @@ Save to Folio
 
 Save to Folio
 
- [ ![](https://trendmicro.scene7.com/is/image/trendmicro/olympus-blade-banner-thumb:Medium?qlt=80) ![](https://trendmicro.scene7.com/is/image/trendmicro/olympus-blade-banner-thumb:Large?qlt=80)  ](https://www.trendmicro.com/en_us/research/26/g/kratos-takedown.html)
+ [ ! !  ](https://www.trendmicro.com/en_us/research/26/g/kratos-takedown.html)
 
  Cyber Crime
 
@@ -179,7 +179,7 @@ Save to Folio
 
 Save to Folio
 
- [ ![](https://trendmicro.scene7.com/is/image/trendmicro/dc-phishing:Large?qlt=80) ![](https://trendmicro.scene7.com/is/image/trendmicro/dc-phishing:Large?qlt=80)  ](https://www.trendmicro.com/en_us/research/26/g/device-code-phishing.html)
+ [ ! !  ](https://www.trendmicro.com/en_us/research/26/g/device-code-phishing.html)
 
  Phishing
 
@@ -195,7 +195,7 @@ Save to Folio
 
 Save to Folio
 
- [ ![](https://trendmicro.scene7.com/is/image/trendmicro/Vulnpocalypse-Thumb:Large?qlt=80) ![](https://trendmicro.scene7.com/is/image/trendmicro/Vulnpocalypse-Thumb:Large?qlt=80)  ](https://www.trendmicro.com/en_us/research/26/g/making-sense-of-the-vulnpocalypse.html)
+ [ ! !  ](https://www.trendmicro.com/en_us/research/26/g/making-sense-of-the-vulnpocalypse.html)
 
  Exploits & Vulnerabilities
 
@@ -211,7 +211,7 @@ Save to Folio
 
 Save to Folio
 
- [ ![](https://trendmicro.scene7.com/is/image/trendmicro/patriotbait-thumb:Large?qlt=80) ![](https://trendmicro.scene7.com/is/image/trendmicro/patriotbait-thumb:Large?qlt=80)  ](https://www.trendmicro.com/en_us/research/26/g/actor-behind-patriot-bait-used-ai-to-deploy-c2-botnet.html)
+ [ ! !  ](https://www.trendmicro.com/en_us/research/26/g/actor-behind-patriot-bait-used-ai-to-deploy-c2-botnet.html)
 
  Artificial Intelligence (AI)
 

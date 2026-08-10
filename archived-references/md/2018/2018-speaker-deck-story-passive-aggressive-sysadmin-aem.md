@@ -90,11 +90,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
  [ See All by Frans Rosén ](https://speakerdeck.com/fransrosen)
 
- [
-
- X-Correlation Injections (or How to break server-side contexts)
-
- ](https://speakerdeck.com/fransrosen/x-correlation-injections-or-how-to-break-server-side-contexts)
+ [X-Correlation Injections (or How to break server-side contexts)](https://speakerdeck.com/fransrosen/x-correlation-injections-or-how-to-break-server-side-contexts)
 
  [ ![Avatar for Frans Rosén](https://secure.gravatar.com/avatar/131516ede9827a73ead43f7dd114358e?s=24) fransrosen ](https://speakerdeck.com/fransrosen)
 
@@ -102,11 +98,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   2.2k
 
- [
-
- Story of a RCE on Apple through hot jar swapping
-
- ](https://speakerdeck.com/fransrosen/story-of-a-rce-on-apple-through-hot-jar-swapping)
+ [Story of a RCE on Apple through hot jar swapping](https://speakerdeck.com/fransrosen/story-of-a-rce-on-apple-through-hot-jar-swapping)
 
  [ ![Avatar for Frans Rosén](https://secure.gravatar.com/avatar/131516ede9827a73ead43f7dd114358e?s=24) fransrosen ](https://speakerdeck.com/fransrosen)
 
@@ -114,11 +106,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   1.4k
 
- [
-
- Account hijacking using "dirty dancing" in sign-in OAuth-flows
-
- ](https://speakerdeck.com/fransrosen/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows)
+ [Account hijacking using "dirty dancing" in sign-in OAuth-flows](https://speakerdeck.com/fransrosen/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows)
 
  [ ![Avatar for Frans Rosén](https://secure.gravatar.com/avatar/131516ede9827a73ead43f7dd114358e?s=24) fransrosen ](https://speakerdeck.com/fransrosen)
 
@@ -126,11 +114,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   480
 
- [
-
- A methodology using fuzzing and info disclosure
-
- ](https://speakerdeck.com/fransrosen/a-methodology-using-fuzzing-and-info-disclosure)
+ [A methodology using fuzzing and info disclosure](https://speakerdeck.com/fransrosen/a-methodology-using-fuzzing-and-info-disclosure)
 
  [ ![Avatar for Frans Rosén](https://secure.gravatar.com/avatar/131516ede9827a73ead43f7dd114358e?s=24) fransrosen ](https://speakerdeck.com/fransrosen)
 
@@ -138,11 +122,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   580
 
- [
-
- Live Hacking like a MVH – A walkthrough on methodology and strategies to win big
-
- ](https://speakerdeck.com/fransrosen/live-hacking-like-a-mvh-a-walkthrough-on-methodology-and-strategies-to-win-big)
+ [Live Hacking like a MVH – A walkthrough on methodology and strategies to win big](https://speakerdeck.com/fransrosen/live-hacking-like-a-mvh-a-walkthrough-on-methodology-and-strategies-to-win-big)
 
  [ ![Avatar for Frans Rosén](https://secure.gravatar.com/avatar/131516ede9827a73ead43f7dd114358e?s=24) fransrosen ](https://speakerdeck.com/fransrosen)
 
@@ -150,11 +130,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   9.8k
 
- [
-
- Web based format injection, dumping memory like it's 99 (or "Please help")
-
- ](https://speakerdeck.com/fransrosen/web-based-format-injection-dumping-memory-like-its-99-or-please-help)
+ [Web based format injection, dumping memory like it's 99 (or "Please help")](https://speakerdeck.com/fransrosen/web-based-format-injection-dumping-memory-like-its-99-or-please-help)
 
  [ ![Avatar for Frans Rosén](https://secure.gravatar.com/avatar/131516ede9827a73ead43f7dd114358e?s=24) fransrosen ](https://speakerdeck.com/fransrosen)
 
@@ -162,11 +138,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   230
 
- [
-
- OWASP AppSecEU 2018 – Attacking "Modern" Web Technologies
-
- ](https://speakerdeck.com/fransrosen/owasp-appseceu-2018-attacking-modern-web-technologies)
+ [OWASP AppSecEU 2018 – Attacking "Modern" Web Technologies](https://speakerdeck.com/fransrosen/owasp-appseceu-2018-attacking-modern-web-technologies)
 
  [ ![Avatar for Frans Rosén](https://secure.gravatar.com/avatar/131516ede9827a73ead43f7dd114358e?s=24) fransrosen ](https://speakerdeck.com/fransrosen)
 
@@ -178,11 +150,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
  [ See All in Technology ](https://speakerdeck.com/c/technology)
 
- [
-
- 『三匹の子ぶた』から学ぶネットワークセキュリティの昔と今 / Network Security: Then and Now Through the Lens of The Three Little Pigs
-
- ](https://speakerdeck.com/nttcom/network-security-then-and-now-through-the-lens-of-the-three-little-pigs)
+ [『三匹の子ぶた』から学ぶネットワークセキュリティの昔と今 / Network Security: Then and Now Through the Lens of The Three Little Pigs](https://speakerdeck.com/nttcom/network-security-then-and-now-through-the-lens-of-the-three-little-pigs)
 
  [ ![Avatar for NTT docomo Business](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzEzOTQ5LCJwdXIiOiJibG9iX2lkIn19--8ea44ee690f9ac74fa426435b6c9c2dd0828ba56/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/eyecatch.png) nttcom ](https://speakerdeck.com/nttcom)
 
@@ -190,11 +158,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   1.7k
 
- [
-
- GitHub CopilotのFinOps- AI CreditのObservabilityと価値を生むためのエージェント設計
-
- ](https://speakerdeck.com/yuriemori/github-copilotnofinops)
+ [GitHub CopilotのFinOps- AI CreditのObservabilityと価値を生むためのエージェント設計](https://speakerdeck.com/yuriemori/github-copilotnofinops)
 
  [ ![Avatar for yuriemori](https://secure.gravatar.com/avatar/3b70ed3891a6e4b03b0693d584363145?s=24) yuriemori ](https://speakerdeck.com/yuriemori)
 
@@ -202,11 +166,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   130
 
- [
-
- 20260807_第6回_関東kaggler会LT_claw系bot xangiと始める、"寂しくない" kaggle
-
- ](https://speakerdeck.com/sugupoko/20260807-di-6hui-guan-dong-kagglerhui-lt-clawxi-bot-xangitoshi-meru-ji-sikunai-kaggle)
+ [20260807_第6回_関東kaggler会LT_claw系bot xangiと始める、"寂しくない" kaggle](https://speakerdeck.com/sugupoko/20260807-di-6hui-guan-dong-kagglerhui-lt-clawxi-bot-xangitoshi-meru-ji-sikunai-kaggle)
 
  [ ![Avatar for suguuuuuすぐー](https://secure.gravatar.com/avatar/098ad1a4d636cf045b49a763ad106a78?s=24) sugupoko ](https://speakerdeck.com/sugupoko)
 
@@ -214,11 +174,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   160
 
- [
-
- ボトムアップ文化が強い組織で セキュリティをどう根付かせていくかの現在進行形の話 / Making Security Stick in a Bottom-Up Organization
-
- ](https://speakerdeck.com/yamaguchitk333/making-security-stick-in-a-bottom-up-organization)
+ [ボトムアップ文化が強い組織で セキュリティをどう根付かせていくかの現在進行形の話 / Making Security Stick in a Bottom-Up Organization](https://speakerdeck.com/yamaguchitk333/making-security-stick-in-a-bottom-up-organization)
 
  [ ![Avatar for Takashi Yamaguchi](https://secure.gravatar.com/avatar/0b3ec1f25761465bdd516c2125f9f4fb?s=24) yamaguchitk333 ](https://speakerdeck.com/yamaguchitk333)
 
@@ -226,11 +182,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   170
 
- [
-
- ガバメントクラウドでのランサムウェア対策
-
- ](https://speakerdeck.com/techniczna/gabamentokuraudodenoransamuueadui-ce)
+ [ガバメントクラウドでのランサムウェア対策](https://speakerdeck.com/techniczna/gabamentokuraudodenoransamuueadui-ce)
 
  [ ![Avatar for 高橋広和](https://secure.gravatar.com/avatar/ab634b4efc9bb872caffde415e7b33fe?s=24) techniczna ](https://speakerdeck.com/techniczna)
 
@@ -238,11 +190,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   870
 
- [
-
- 【CEDEC2026】グラフィックスエンジニアのためのニューラルシェーディング入門
-
- ](https://speakerdeck.com/cygames/cygames_202607_cedec2026_03)
+ [【CEDEC2026】グラフィックスエンジニアのためのニューラルシェーディング入門](https://speakerdeck.com/cygames/cygames_202607_cedec2026_03)
 
  [ ![Avatar for Cygames, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzQyMzEyLCJwdXIiOiJibG9iX2lkIn19--79c11d4c6a736302463ad65244e1053a62bdbfa4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/SpeakerDeck_%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.png) cygames ](https://speakerdeck.com/cygames)
 
@@ -252,11 +200,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   110
 
- [
-
- Sansan Engineering Unit 紹介資料
-
- ](https://speakerdeck.com/sansan33/sansan-engineer)
+ [Sansan Engineering Unit 紹介資料](https://speakerdeck.com/sansan33/sansan-engineer)
 
  [ ![Avatar for Sansan, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTM5NzYsInB1ciI6ImJsb2JfaWQifX0=--742b6b79e99ff01edb063160edba4f5a13693ead/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/icon512.jpg) sansan33 ](https://speakerdeck.com/sansan33)
 
@@ -266,11 +210,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   4.9k
 
- [
-
- 【CEDEC2026】ゲームシナリオライターを支援するAIツール開発の実践 ― 設計とプロンプトの工夫 ―
-
- ](https://speakerdeck.com/cygames/cygames_202607_cedec2026_01)
+ [【CEDEC2026】ゲームシナリオライターを支援するAIツール開発の実践 ― 設計とプロンプトの工夫 ―](https://speakerdeck.com/cygames/cygames_202607_cedec2026_01)
 
  [ ![Avatar for Cygames, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzQyMzEyLCJwdXIiOiJibG9iX2lkIn19--79c11d4c6a736302463ad65244e1053a62bdbfa4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/SpeakerDeck_%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.png) cygames ](https://speakerdeck.com/cygames)
 
@@ -280,11 +220,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   740
 
- [
-
- Redmine 7.0 新機能・機能強化解説（OSC2026京都ダイジェスト版）
-
- ](https://speakerdeck.com/vividtone/redmine-7-dot-0-new-features-digest-edition)
+ [Redmine 7.0 新機能・機能強化解説（OSC2026京都ダイジェスト版）](https://speakerdeck.com/vividtone/redmine-7-dot-0-new-features-digest-edition)
 
  [ ![Avatar for MAEDA Go](https://secure.gravatar.com/avatar/3c80fe933f2d692f6a950d500f6377b7?s=24) vividtone ](https://speakerdeck.com/vividtone)
 
@@ -292,11 +228,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   190
 
- [
-
- 取引先から届く 「セキュリティチェックシート」の読み解き方
-
- ](https://speakerdeck.com/kamadamakoto/qu-yin-xian-karajie-ku-sekiyuriteitietukusito-nodu-mijie-kifang)
+ [取引先から届く 「セキュリティチェックシート」の読み解き方](https://speakerdeck.com/kamadamakoto/qu-yin-xian-karajie-ku-sekiyuriteitietukusito-nodu-mijie-kifang)
 
  [ ![Avatar for かーでぃ](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTI1MjA4LCJwdXIiOiJibG9iX2lkIn19--731a43f82409bf57d9629a9650dfe67d9c146b63/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/kadi_san_face.png) kamadamakoto ](https://speakerdeck.com/kamadamakoto)
 
@@ -304,11 +236,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   120
 
- [
-
- JavaScript 研修 (2026)
-
- ](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_mizutari)
+ [JavaScript 研修 (2026)](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_mizutari)
 
  [ ![Avatar for Recruit](https://secure.gravatar.com/avatar/85da685d91fda190e2e3162d0de248a4?s=24) recruitengineers ](https://speakerdeck.com/recruitengineers)
 
@@ -318,11 +246,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   360
 
- [
-
- 修正PRを食べてレビュースキルが賢くなる：Claude Codeによる自己改善サイクル
-
- ](https://speakerdeck.com/yuyaumetsu/xiu-zheng-prwoshi-heterehiyusukirukaxian-kunaru-claude-codeniyoruzi-ji-gai-shan-saikuru)
+ [修正PRを食べてレビュースキルが賢くなる：Claude Codeによる自己改善サイクル](https://speakerdeck.com/yuyaumetsu/xiu-zheng-prwoshi-heterehiyusukirukaxian-kunaru-claude-codeniyoruzi-ji-gai-shan-saikuru)
 
  [ ![Avatar for um(うめ)](https://secure.gravatar.com/avatar/e41291b62f0df495e59d30a4f5f34af7?s=24) yuyaumetsu ](https://speakerdeck.com/yuyaumetsu)
 
@@ -334,11 +258,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [
-
- Writing Fast Ruby
-
- ](https://speakerdeck.com/sferik/writing-fast-ruby)
+ [Writing Fast Ruby](https://speakerdeck.com/sferik/writing-fast-ruby)
 
  [ ![Avatar for Erik Berlin](https://secure.gravatar.com/avatar/1f74b13f1e5c6c69cb5d7fbaabb1e2cb?s=24) sferik ](https://speakerdeck.com/sferik)
 
@@ -358,11 +278,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   980
 
- [
-
- Learning to Love Humans: Emotional Interface Design
-
- ](https://speakerdeck.com/aarron/learning-to-love-humans-emotional-interface-design)
+ [Learning to Love Humans: Emotional Interface Design](https://speakerdeck.com/aarron/learning-to-love-humans-emotional-interface-design)
 
  [ ![Avatar for Aarron Walter](https://secure.gravatar.com/avatar/5f50f94346fbcb23706f0707169317a4?s=24) aarron ](https://speakerdeck.com/aarron)
 
@@ -370,11 +286,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   41k
 
- [
-
- We Are The Robots
-
- ](https://speakerdeck.com/honzajavorek/we-are-the-robots)
+ [We Are The Robots](https://speakerdeck.com/honzajavorek/we-are-the-robots)
 
  [ ![Avatar for Honza Javorek](https://secure.gravatar.com/avatar/7b2e4bf7ecca28e530e1c421f0676c0b?s=24) honzajavorek ](https://speakerdeck.com/honzajavorek)
 
@@ -382,11 +294,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   290
 
- [
-
- Paper Plane
-
- ](https://speakerdeck.com/katiecoart/paper-plane)
+ [Paper Plane](https://speakerdeck.com/katiecoart/paper-plane)
 
  [ ![Avatar for Katie Cordina Lindsey](https://secure.gravatar.com/avatar/92f506fce3a633eabc7d2018eb13739f?s=24) katiecoart ](https://speakerdeck.com/katiecoart)
 
@@ -396,11 +304,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   52k
 
- [
-
- Avoiding the “Bad Training, Faster” Trap in the Age of AI
-
- ](https://speakerdeck.com/tmiket/avoiding-the-bad-training-faster-trap-in-the-age-of-ai)
+ [Avoiding the “Bad Training, Faster” Trap in the Age of AI](https://speakerdeck.com/tmiket/avoiding-the-bad-training-faster-trap-in-the-age-of-ai)
 
  [ ![Avatar for Mike Taylor](https://secure.gravatar.com/avatar/74e48f0d01a7fec7c579a8d370698b26?s=24) tmiket ](https://speakerdeck.com/tmiket)
 
@@ -408,11 +312,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   200
 
- [
-
- Statistics for Hackers
-
- ](https://speakerdeck.com/jakevdp/statistics-for-hackers)
+ [Statistics for Hackers](https://speakerdeck.com/jakevdp/statistics-for-hackers)
 
  [ ![Avatar for Jake VanderPlas](https://secure.gravatar.com/avatar/56c4053438af8e8b90d6f53cbb7573be?s=24) jakevdp ](https://speakerdeck.com/jakevdp)
 
@@ -420,11 +320,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   230k
 
- [
-
- Leo the Paperboy
-
- ](https://speakerdeck.com/mayatellez/leo-the-paperboy)
+ [Leo the Paperboy](https://speakerdeck.com/mayatellez/leo-the-paperboy)
 
  [ ![Avatar for Maya Tellez](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDk3MjY4LCJwdXIiOiJibG9iX2lkIn19--21276829fd99d3b7ee825b410b5a5f44ec149e0d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/lala.png) mayatellez ](https://speakerdeck.com/mayatellez)
 
@@ -432,11 +328,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   2.1k
 
- [
-
- Speed Design
-
- ](https://speakerdeck.com/sergeychernyshev/speed-design)
+ [Speed Design](https://speakerdeck.com/sergeychernyshev/speed-design)
 
  [ ![Avatar for Sergey Chernyshev](https://secure.gravatar.com/avatar/1e2ff8ee6ac0e790883b1cdc420f158d?s=24) sergeychernyshev ](https://speakerdeck.com/sergeychernyshev)
 
@@ -444,11 +336,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   2k
 
- [
-
- Bridging the Design Gap: How Collaborative Modelling removes blockers to flow between stakeholders and teams @FastFlow conf
-
- ](https://speakerdeck.com/baasie/bridging-the-design-gap-how-collaborative-modelling-removes-blockers-to-flow-between-stakeholders-and-teams-at-fastflow-conf)
+ [Bridging the Design Gap: How Collaborative Modelling removes blockers to flow between stakeholders and teams @FastFlow conf](https://speakerdeck.com/baasie/bridging-the-design-gap-how-collaborative-modelling-removes-blockers-to-flow-between-stakeholders-and-teams-at-fastflow-conf)
 
  [ ![Avatar for Kenny Baas-Schwegler](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjUwMDA5LCJwdXIiOiJibG9iX2lkIn19--11a66eb48413d60f9ccb6c1e12df4a3d45b184fe/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/kenny_small_round.jpg) baasie ](https://speakerdeck.com/baasie)
 
@@ -456,11 +344,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   630
 
- [
-
- Efficient Content Optimization with Google Search Console & Apps Script
-
- ](https://speakerdeck.com/katarinadahlin/wtsfest-berlin-25)
+ [Efficient Content Optimization with Google Search Console & Apps Script](https://speakerdeck.com/katarinadahlin/wtsfest-berlin-25)
 
  [ ![Avatar for Katarina Dahlin](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjAwNTg5LCJwdXIiOiJibG9iX2lkIn19--24cb98b2197cd4cdeb5e3ae1f94b4c1a162cd1bf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/Avainsana-analyysi%20thumbnails.png) katarinadahlin ](https://speakerdeck.com/katarinadahlin)
 
@@ -470,11 +354,7 @@ Frans was recently featured as #2 on Hackread’s list of 10 Famous Bug Bounty H
 
   770
 
- [
-
- Jess Joyce - The Pitfalls of Following Frameworks
-
- ](https://speakerdeck.com/techseoconnect/jess-joyce-the-pitfalls-of-following-frameworks)
+ [Jess Joyce - The Pitfalls of Following Frameworks](https://speakerdeck.com/techseoconnect/jess-joyce-the-pitfalls-of-following-frameworks)
 
  [ ![Avatar for Tech SEO Connect](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2NjU4LCJwdXIiOiJibG9iX2lkIn19--14f297c27d2190051dc109b5d472cf0297dd6c3e/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/40575_logo_social%20media%20profile%204.png) techseoconnect ](https://speakerdeck.com/techseoconnect)
 

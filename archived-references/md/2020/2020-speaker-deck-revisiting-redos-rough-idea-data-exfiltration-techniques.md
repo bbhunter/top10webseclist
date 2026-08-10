@@ -82,11 +82,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
  [ See All by Takashi Yoneuchi ](https://speakerdeck.com/lmt_swallow)
 
- [
-
- プロダクトセキュリティの「共通言語」を作る ― 技術教育と Policy as Code を例に / "Language" for Product Security
-
- ](https://speakerdeck.com/lmt_swallow/language-for-product-security)
+ [プロダクトセキュリティの「共通言語」を作る ― 技術教育と Policy as Code を例に / "Language" for Product Security](https://speakerdeck.com/lmt_swallow/language-for-product-security)
 
  [ ![Avatar for Takashi Yoneuchi](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDc5MzgsInB1ciI6ImJsb2JfaWQifX0=--1a377240e4ba2d24c9d77a3b952bd14536007771/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/avatar.twitter.jpeg) lmt_swallow ](https://speakerdeck.com/lmt_swallow)
 
@@ -94,11 +90,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   960
 
- [
-
- SREを以てセキュリティエンジニアリングを制す / SRE, Security Engineering, and You
-
- ](https://speakerdeck.com/lmt_swallow/sre-security-engineering-and-you)
+ [SREを以てセキュリティエンジニアリングを制す / SRE, Security Engineering, and You](https://speakerdeck.com/lmt_swallow/sre-security-engineering-and-you)
 
  [ ![Avatar for Takashi Yoneuchi](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDc5MzgsInB1ciI6ImJsb2JfaWQifX0=--1a377240e4ba2d24c9d77a3b952bd14536007771/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/avatar.twitter.jpeg) lmt_swallow ](https://speakerdeck.com/lmt_swallow)
 
@@ -106,11 +98,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   3.6k
 
- [
-
- Eliminating ReDoS with Ruby 3.2
-
- ](https://speakerdeck.com/lmt_swallow/eliminating-redos-with-ruby-3-dot-2)
+ [Eliminating ReDoS with Ruby 3.2](https://speakerdeck.com/lmt_swallow/eliminating-redos-with-ruby-3-dot-2)
 
  [ ![Avatar for Takashi Yoneuchi](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDc5MzgsInB1ciI6ImJsb2JfaWQifX0=--1a377240e4ba2d24c9d77a3b952bd14536007771/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/avatar.twitter.jpeg) lmt_swallow ](https://speakerdeck.com/lmt_swallow)
 
@@ -118,11 +106,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   390
 
- [
-
- ソフトウェアサプライチェーンのこれから / Securing Software Supply Chain
-
- ](https://speakerdeck.com/lmt_swallow/securing-software-supply-chain)
+ [ソフトウェアサプライチェーンのこれから / Securing Software Supply Chain](https://speakerdeck.com/lmt_swallow/securing-software-supply-chain)
 
  [ ![Avatar for Takashi Yoneuchi](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDc5MzgsInB1ciI6ImJsb2JfaWQifX0=--1a377240e4ba2d24c9d77a3b952bd14536007771/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/avatar.twitter.jpeg) lmt_swallow ](https://speakerdeck.com/lmt_swallow)
 
@@ -130,11 +114,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   360
 
- [
-
- AWSのセキュリティ管理をPolicy as Codeで加速する ― 最高のCSPM体験を目指して / Unleashing Policy as Code on AWS CSPM
-
- ](https://speakerdeck.com/lmt_swallow/unleashing-policy-as-code-on-aws-cspm)
+ [AWSのセキュリティ管理をPolicy as Codeで加速する ― 最高のCSPM体験を目指して / Unleashing Policy as Code on AWS CSPM](https://speakerdeck.com/lmt_swallow/unleashing-policy-as-code-on-aws-cspm)
 
  [ ![Avatar for Takashi Yoneuchi](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDc5MzgsInB1ciI6ImJsb2JfaWQifX0=--1a377240e4ba2d24c9d77a3b952bd14536007771/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/avatar.twitter.jpeg) lmt_swallow ](https://speakerdeck.com/lmt_swallow)
 
@@ -142,11 +122,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   2.6k
 
- [
-
- 実践 SpiceDB - クライドネイティブ時代をサバイブできるパーミッション管理の実装を目指して / Practical SpiceDB
-
- ](https://speakerdeck.com/lmt_swallow/practical-spicedb)
+ [実践 SpiceDB - クライドネイティブ時代をサバイブできるパーミッション管理の実装を目指して / Practical SpiceDB](https://speakerdeck.com/lmt_swallow/practical-spicedb)
 
  [ ![Avatar for Takashi Yoneuchi](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDc5MzgsInB1ciI6ImJsb2JfaWQifX0=--1a377240e4ba2d24c9d77a3b952bd14536007771/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/avatar.twitter.jpeg) lmt_swallow ](https://speakerdeck.com/lmt_swallow)
 
@@ -154,11 +130,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   2.2k
 
- [
-
- Developer-First Security という考え方 / Introduction to Developer-First Security
-
- ](https://speakerdeck.com/lmt_swallow/introduction-to-developer-first-security)
+ [Developer-First Security という考え方 / Introduction to Developer-First Security](https://speakerdeck.com/lmt_swallow/introduction-to-developer-first-security)
 
  [ ![Avatar for Takashi Yoneuchi](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDc5MzgsInB1ciI6ImJsb2JfaWQifX0=--1a377240e4ba2d24c9d77a3b952bd14536007771/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/avatar.twitter.jpeg) lmt_swallow ](https://speakerdeck.com/lmt_swallow)
 
@@ -166,11 +138,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   10k
 
- [
-
- ちいさな Web ブラウザを作ってみよう（オンライン講義版） / Build Your Own Web Browser
-
- ](https://speakerdeck.com/lmt_swallow/build-your-own-web-browser)
+ [ちいさな Web ブラウザを作ってみよう（オンライン講義版） / Build Your Own Web Browser](https://speakerdeck.com/lmt_swallow/build-your-own-web-browser)
 
  [ ![Avatar for Takashi Yoneuchi](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDc5MzgsInB1ciI6ImJsb2JfaWQifX0=--1a377240e4ba2d24c9d77a3b952bd14536007771/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/avatar.twitter.jpeg) lmt_swallow ](https://speakerdeck.com/lmt_swallow)
 
@@ -178,11 +146,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   12k
 
- [
-
- Go をセキュアに書き進めるための 「ガードレール」を整備しよう / Let's Build Security Guardrails For Your Go Programs!
-
- ](https://speakerdeck.com/lmt_swallow/lets-build-security-guardrails-for-your-go-programs)
+ [Go をセキュアに書き進めるための 「ガードレール」を整備しよう / Let's Build Security Guardrails For Your Go Programs!](https://speakerdeck.com/lmt_swallow/lets-build-security-guardrails-for-your-go-programs)
 
  [ ![Avatar for Takashi Yoneuchi](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDc5MzgsInB1ciI6ImJsb2JfaWQifX0=--1a377240e4ba2d24c9d77a3b952bd14536007771/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/avatar.twitter.jpeg) lmt_swallow ](https://speakerdeck.com/lmt_swallow)
 
@@ -194,11 +158,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
  [ See All in Research ](https://speakerdeck.com/c/research)
 
- [
-
- 計算情報学研究室（数理情報学第７研究室）2026
-
- ](https://speakerdeck.com/tomohirokoana/ji-suan-qing-bao-xue-yan-jiu-shi-shu-li-qing-bao-xue-di-7yan-jiu-shi-2026)
+ [計算情報学研究室（数理情報学第７研究室）2026](https://speakerdeck.com/tomohirokoana/ji-suan-qing-bao-xue-yan-jiu-shi-shu-li-qing-bao-xue-di-7yan-jiu-shi-2026)
 
  [ ![Avatar for Tomohiro](https://secure.gravatar.com/avatar/8b4c5638428027a69909080636e6e713?s=24) tomohirokoana ](https://speakerdeck.com/tomohirokoana)
 
@@ -206,11 +166,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   720
 
- [
-
- Model Discovery and Graph Simulation: A Lightweight Gateway to Chaos Engineering
-
- ](https://speakerdeck.com/anatolykr/model-discovery-and-graph-simulation-a-lightweight-gateway-to-chaos-engineering)
+ [Model Discovery and Graph Simulation: A Lightweight Gateway to Chaos Engineering](https://speakerdeck.com/anatolykr/model-discovery-and-graph-simulation-a-lightweight-gateway-to-chaos-engineering)
 
  [ ![Avatar for Anatoly A. Krasnovsky](https://secure.gravatar.com/avatar/0fe2ebd798c1d182539e7959d9946935?s=24) anatolykr ](https://speakerdeck.com/anatolykr)
 
@@ -218,11 +174,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   250
 
- [
-
- PHTalks Bengaluru - SSRF When All Else Fails
-
- ](https://speakerdeck.com/dk999/phtalks-bengaluru-ssrf-when-all-else-fails)
+ [PHTalks Bengaluru - SSRF When All Else Fails](https://speakerdeck.com/dk999/phtalks-bengaluru-ssrf-when-all-else-fails)
 
  [ ![Avatar for Debangshu Kundu](https://secure.gravatar.com/avatar/473fb6954ff02000870fda9db9d3e8cb?s=24) dk999 ](https://speakerdeck.com/dk999)
 
@@ -230,11 +182,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   940
 
- [
-
- Research Engineerという仕事 / Research Engineering: Bridging Research and Business
-
- ](https://speakerdeck.com/chck/research-engineering-bridging-research-and-business)
+ [Research Engineerという仕事 / Research Engineering: Bridging Research and Business](https://speakerdeck.com/chck/research-engineering-bridging-research-and-business)
 
  [ ![Avatar for chck](https://secure.gravatar.com/avatar/e9f31c8aafdc4ddb8def5f697563914e?s=24) chck ](https://speakerdeck.com/chck)
 
@@ -242,11 +190,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   250
 
- [
-
- GLIM とMegaParticles：正規分布近似の限界とタイトカップリング＆パーティクルフィルタの進展 / GLIM and MegaParticles : Progress of the distribution representation in SLAM
-
- ](https://speakerdeck.com/koide3/glim-and-megaparticles-progress-of-the-distribution-representation-in-slam)
+ [GLIM とMegaParticles：正規分布近似の限界とタイトカップリング＆パーティクルフィルタの進展 / GLIM and MegaParticles : Progress of the distribution representation in SLAM](https://speakerdeck.com/koide3/glim-and-megaparticles-progress-of-the-distribution-representation-in-slam)
 
  [ ![Avatar for koide3](https://secure.gravatar.com/avatar/e19725a18fcb76076c0b3149222e66ff?s=24) koide3 ](https://speakerdeck.com/koide3)
 
@@ -254,11 +198,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   680
 
- [
-
- 研究室単位での自律的 IPv6接続性確立に向けたAS共同運用モデルの提案と実証
-
- ](https://speakerdeck.com/reokashiwa/as_dojo_ipv6)
+ [研究室単位での自律的 IPv6接続性確立に向けたAS共同運用モデルの提案と実証](https://speakerdeck.com/reokashiwa/as_dojo_ipv6)
 
  [ ![Avatar for Hiroki (REO) Kashiwazaki](https://secure.gravatar.com/avatar/12fa60dd3429d904ad811a96702d0765?s=24) reokashiwa ](https://speakerdeck.com/reokashiwa)
 
@@ -268,11 +208,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   190
 
- [
-
- SAKURAONE:An Open Ethernet-based AI HPC System And Its Observed Workload Dynamicsin a Single-Tenant LLM Development Environment
-
- ](https://speakerdeck.com/yuukit/sakuraone-an-open-ethernet-based-ai-hpc-system-and-its-observed-workload-dynamics-in-a-single-tenant-llm-development-environment)
+ [SAKURAONE:An Open Ethernet-based AI HPC System And Its Observed Workload Dynamicsin a Single-Tenant LLM Development Environment](https://speakerdeck.com/yuukit/sakuraone-an-open-ethernet-based-ai-hpc-system-and-its-observed-workload-dynamics-in-a-single-tenant-llm-development-environment)
 
  [ ![Avatar for Yuuki Tsubouchi (yuuk1)](https://secure.gravatar.com/avatar/a658ec7f1badf73819dfa501165016c1?s=24) yuukit ](https://speakerdeck.com/yuukit)
 
@@ -280,11 +216,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   500
 
- [
-
- 全国町字単位空き家率推定データver1.0データ仕様
-
- ](https://speakerdeck.com/microbaseinc/quan-guo-ting-zi-dan-wei-kong-kijia-lu-tui-ding-detaver1-dot-0detashi-yang)
+ [全国町字単位空き家率推定データver1.0データ仕様](https://speakerdeck.com/microbaseinc/quan-guo-ting-zi-dan-wei-kong-kijia-lu-tui-ding-detaver1-dot-0detashi-yang)
 
  [ ![Avatar for microbase](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzcyNDc5LCJwdXIiOiJibG9iX2lkIn19--7849ed14af29d12cda6ff9e27e86cdafc7d0bd7a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/logo_mb_microbase_logo_short.png) microbaseinc ](https://speakerdeck.com/microbaseinc)
 
@@ -304,11 +236,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   220
 
- [
-
- 議論 学術ムーブメントを成功させるために何が必要なのだろうか
-
- ](https://speakerdeck.com/rmaruy/yi-lun-xue-shu-mubumentowocheng-gong-saserutamenihe-gabi-yao-nanodarouka)
+ [議論 学術ムーブメントを成功させるために何が必要なのだろうか](https://speakerdeck.com/rmaruy/yi-lun-xue-shu-mubumentowocheng-gong-saserutamenihe-gabi-yao-nanodarouka)
 
  [ ![Avatar for Ryuichi Maruyama](https://secure.gravatar.com/avatar/497f72d54db7bf48274d010f9ac5dcd3?s=24) rmaruy ](https://speakerdeck.com/rmaruy)
 
@@ -316,11 +244,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   110
 
- [
-
- SLAMはどこまで解決されたのか？
-
- ](https://speakerdeck.com/tomonom/robomech26-workshop-print)
+ [SLAMはどこまで解決されたのか？](https://speakerdeck.com/tomonom/robomech26-workshop-print)
 
  [ ![Avatar for tomonom](https://secure.gravatar.com/avatar/947ce5e3ac228a5c921065d048b4706c?s=24) tomonom ](https://speakerdeck.com/tomonom)
 
@@ -328,11 +252,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   1k
 
- [
-
- Scalable dynamic origin-destination demand estimation enhanced by high-resolution satellite imagery data
-
- ](https://speakerdeck.com/satai/scalable-dynamic-origin-destination-demand-estimation-enhanced-by-high-resolution-satellite-imagery-data)
+ [Scalable dynamic origin-destination demand estimation enhanced by high-resolution satellite imagery data](https://speakerdeck.com/satai/scalable-dynamic-origin-destination-demand-estimation-enhanced-by-high-resolution-satellite-imagery-data)
 
  [ ![Avatar for SatAI.challenge](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2MDUwLCJwdXIiOiJibG9iX2lkIn19--b6d6ea071912ace3f41814c723917566e73c75f5/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/image%20(2).png) satai ](https://speakerdeck.com/satai)
 
@@ -344,11 +264,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [
-
- The AI Search Optimization Roadmap by Aleyda Solis
-
- ](https://speakerdeck.com/aleyda/the-ai-search-optimization-roadmap-by-aleyda-solis)
+ [The AI Search Optimization Roadmap by Aleyda Solis](https://speakerdeck.com/aleyda/the-ai-search-optimization-roadmap-by-aleyda-solis)
 
  [ ![Avatar for Aleyda Solis](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6OTIyMDAsInB1ciI6ImJsb2JfaWQifX0=--f7ae7c6a9c16b0bb4461d98502be71c2c1b38eaf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/aleyda-solis.jpg) aleyda ](https://speakerdeck.com/aleyda)
 
@@ -356,11 +272,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   6k
 
- [
-
- Digital Projects Gone Horribly Wrong (And the UX Pros Who Still Save the Day) - Dean Schuster
-
- ](https://speakerdeck.com/uxyall/digital-projects-gone-horribly-wrong-and-the-ux-pros-who-still-save-the-day-dean-schuster)
+ [Digital Projects Gone Horribly Wrong (And the UX Pros Who Still Save the Day) - Dean Schuster](https://speakerdeck.com/uxyall/digital-projects-gone-horribly-wrong-and-the-ux-pros-who-still-save-the-day-dean-schuster)
 
  [ ![Avatar for UX Y'all](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTk3NTksInB1ciI6ImJsb2JfaWQifX0=--5fe8c23b57cf841408c2f2b9ce98cbc1684cf410/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/Social%20Avatar%204.jpg) uxyall ](https://speakerdeck.com/uxyall)
 
@@ -368,11 +280,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   2.2k
 
- [
-
- Put a Button on it: Removing Barriers to Going Fast.
-
- ](https://speakerdeck.com/kastner/put-a-button-on-it-removing-barriers-to-going-fast)
+ [Put a Button on it: Removing Barriers to Going Fast.](https://speakerdeck.com/kastner/put-a-button-on-it-removing-barriers-to-going-fast)
 
  [ ![Avatar for kastner](https://secure.gravatar.com/avatar/bfd6b681ec6e8c9bef82ff0521c364f7?s=24) kastner ](https://speakerdeck.com/kastner)
 
@@ -380,11 +288,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   4.5k
 
- [
-
- Optimising Largest Contentful Paint
-
- ](https://speakerdeck.com/csswizardry/optimising-largest-contentful-paint)
+ [Optimising Largest Contentful Paint](https://speakerdeck.com/csswizardry/optimising-largest-contentful-paint)
 
  [ ![Avatar for Harry Roberts](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjkxMzksInB1ciI6ImJsb2JfaWQifX0=--8e101a64c4b4cc0fe17b319fa4fb35624590c38b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/labin-square.jpg) csswizardry ](https://speakerdeck.com/csswizardry)
 
@@ -392,11 +296,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   3.9k
 
- [
-
- Dealing with People You Can't Stand - Big Design 2015
-
- ](https://speakerdeck.com/cassininazir/dealing-with-people-you-cant-stand-big-design-2015)
+ [Dealing with People You Can't Stand - Big Design 2015](https://speakerdeck.com/cassininazir/dealing-with-people-you-cant-stand-big-design-2015)
 
  [ ![Avatar for Cassini Nazir](https://secure.gravatar.com/avatar/4631d364d59bd9d045acf046a0ce1cfe?s=24) cassininazir ](https://speakerdeck.com/cassininazir)
 
@@ -404,11 +304,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   27k
 
- [
-
- コードの90%をAIが書く世界で何が待っているのか / What awaits us in a world where 90% of the code is written by AI
-
- ](https://speakerdeck.com/rkaga/what-awaits-us-in-a-world-where-90-percent-of-the-code-is-written-by-ai)
+ [コードの90%をAIが書く世界で何が待っているのか / What awaits us in a world where 90% of the code is written by AI](https://speakerdeck.com/rkaga/what-awaits-us-in-a-world-where-90-percent-of-the-code-is-written-by-ai)
 
  [ ![Avatar for r-kagaya](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTk0MjI4LCJwdXIiOiJibG9iX2lkIn19--1d94fa4c6a5eceb2447fdd6c94e46df3dbd85301/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/69yLDu7R_400x400.jpg) rkaga ](https://speakerdeck.com/rkaga)
 
@@ -416,11 +312,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   45k
 
- [
-
- The MySQL Ecosystem @ GitHub 2015
-
- ](https://speakerdeck.com/samlambert/the-mysql-ecosystem-at-github-2015)
+ [The MySQL Ecosystem @ GitHub 2015](https://speakerdeck.com/samlambert/the-mysql-ecosystem-at-github-2015)
 
  [ ![Avatar for Sam Lambert](https://secure.gravatar.com/avatar/be9caeb9d4ef9944d151af909063ed6e?s=24) samlambert ](https://speakerdeck.com/samlambert)
 
@@ -428,11 +320,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   13k
 
- [
-
- From π to Pie charts
-
- ](https://speakerdeck.com/rasagy/from-p-to-pie-charts)
+ [From π to Pie charts](https://speakerdeck.com/rasagy/from-p-to-pie-charts)
 
  [ ![Avatar for Rasagy Sharma](https://secure.gravatar.com/avatar/fb35b29dfdf70000bb09777b531db5dc?s=24) rasagy ](https://speakerdeck.com/rasagy)
 
@@ -440,11 +328,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   250
 
- [
-
- How to Align SEO within the Product Triangle To Get Buy-In & Support - #RIMC
-
- ](https://speakerdeck.com/aleyda/how-to-align-seo-within-the-product-triangle-to-get-buy-in-and-support-number-rimc)
+ [How to Align SEO within the Product Triangle To Get Buy-In & Support - #RIMC](https://speakerdeck.com/aleyda/how-to-align-seo-within-the-product-triangle-to-get-buy-in-and-support-number-rimc)
 
  [ ![Avatar for Aleyda Solis](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6OTIyMDAsInB1ciI6ImJsb2JfaWQifX0=--f7ae7c6a9c16b0bb4461d98502be71c2c1b38eaf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/aleyda-solis.jpg) aleyda ](https://speakerdeck.com/aleyda)
 
@@ -452,11 +336,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   1.8k
 
- [
-
- Producing Creativity
-
- ](https://speakerdeck.com/orderedlist/producing-creativity)
+ [Producing Creativity](https://speakerdeck.com/orderedlist/producing-creativity)
 
  [ ![Avatar for Steve Smith](https://secure.gravatar.com/avatar/ae14cc4491ac334f9cd23f9f93b4305e?s=24) orderedlist ](https://speakerdeck.com/orderedlist)
 
@@ -466,11 +346,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   40k
 
- [
-
- Bioeconomy Workshop: Dr. Julius Ecuru, Opportunities for a Bioeconomy in West Africa
-
- ](https://speakerdeck.com/akademiya2063/bioeconomy-workshop-dr-julius-ecuru-opportunities-for-a-bioeconomy-in-west-africa)
+ [Bioeconomy Workshop: Dr. Julius Ecuru, Opportunities for a Bioeconomy in West Africa](https://speakerdeck.com/akademiya2063/bioeconomy-workshop-dr-julius-ecuru-opportunities-for-a-bioeconomy-in-west-africa)
 
  [ ![Avatar for AKADEMIYA2063](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Njk1ODQsInB1ciI6ImJsb2JfaWQifX0=--d64b39778db0158d5065902ffb01064cd8d9cc5c/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/AKADEMIYA2063%20Logo%20Plain.png) akademiya2063 ](https://speakerdeck.com/akademiya2063)
 
@@ -480,11 +356,7 @@ about me: [https://shift-js.info](https://shift-js.info)
 
   190
 
- [
-
- Impact Scores and Hybrid Strategies: The future of link building
-
- ](https://speakerdeck.com/tamaranovitovic/impact-scores-and-hybrid-strategies-the-future-of-link-building)
+ [Impact Scores and Hybrid Strategies: The future of link building](https://speakerdeck.com/tamaranovitovic/impact-scores-and-hybrid-strategies-the-future-of-link-building)
 
  [ ![Avatar for Tamara Novitovic](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6OTg5NzUsInB1ciI6ImJsb2JfaWQifX0=--09b4a33635d5c681f1a5ae8b8f1c77092ef781bb/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/shared_image-removebg-preview.png) tamaranovitovic ](https://speakerdeck.com/tamaranovitovic)
 

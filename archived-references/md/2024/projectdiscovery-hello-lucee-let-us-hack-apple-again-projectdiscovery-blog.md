@@ -73,23 +73,9 @@ page going offline. To read the original, follow the link above.
 
 #### Authors
 
-[
-
-![Harsh Jaiswal](https://projectdiscovery.io/_next/image?url=https%3A%2F%2Fstorage.ghost.io%2Fc%2F70%2Ff3%2F70f3700b-f26d-40f9-990d-eef899cce263%2Fcontent%2Fimages%2F2023%2F08%2F1585309233118.jpeg&w=96&q=75)
-
-###### Harsh Jaiswal
-
-](https://projectdiscovery.io/blog/author/harsh/1)[
-
-![Rahul Maini](https://projectdiscovery.io/_next/image?url=https%3A%2F%2Fstorage.ghost.io%2Fc%2F70%2Ff3%2F70f3700b-f26d-40f9-990d-eef899cce263%2Fcontent%2Fimages%2F2023%2F11%2FTKTMQH41W-U04DH0WJJLX-eec5b4b57170-512.jpeg&w=96&q=75)
-
-###### Rahul Maini
-
-](https://projectdiscovery.io/blog/author/rahul/1)
+[![Harsh Jaiswal](https://projectdiscovery.io/_next/image?url=https%3A%2F%2Fstorage.ghost.io%2Fc%2F70%2Ff3%2F70f3700b-f26d-40f9-990d-eef899cce263%2Fcontent%2Fimages%2F2023%2F08%2F1585309233118.jpeg&w=96&q=75) ###### Harsh Jaiswal](https://projectdiscovery.io/blog/author/harsh/1)[![Rahul Maini](https://projectdiscovery.io/_next/image?url=https%3A%2F%2Fstorage.ghost.io%2Fc%2F70%2Ff3%2F70f3700b-f26d-40f9-990d-eef899cce263%2Fcontent%2Fimages%2F2023%2F11%2FTKTMQH41W-U04DH0WJJLX-eec5b4b57170-512.jpeg&w=96&q=75) ###### Rahul Maini](https://projectdiscovery.io/blog/author/rahul/1)
 
 #### Share
-
-[ ](https://x.com/intent/post?url=)[ ](https://www.linkedin.com/shareArticle?mini=true&url=)
 
 Last year we conducted an [in-depth analysis of multiple vulnerabilities within Adobe ColdFusion](https://projectdiscovery.io/blog/adobe-coldfusion-rce/), we derived valuable insights, one of which revolved around CFM and CFC handling, parsing and execution. We wondered if there are any other CFML Servers. Does this ring a bell? Allow us to introduce [Lucee](https://github.com/lucee/Lucee). We've previously compromised Lucee's Admin panel, showcasing a [pre-auth Remote Code Execution (RCE) on multiple Apple servers](https://httpvoid.com/Apple-RCE.md) that utilized Lucee as its underlying server.
 
@@ -197,11 +183,11 @@ java
 5}
 ```
 
-![](https://projectdiscovery.io/_next/image?url=https%3A%2F%2Fstorage.ghost.io%2Fc%2F70%2Ff3%2F70f3700b-f26d-40f9-990d-eef899cce263%2Fcontent%2Fimages%2F2024%2F01%2Fimage-1.png&w=3840&q=75)
+!
 
 Surprisingly, we discovered that Lucee's critical update server utilizes a REST endpoint - [https://update.lucee.org/rest/update/provider/echoGet](https://update.lucee.org/rest/update/provider/echoGet). This server is pivotal in managing all update requests originating from various Lucee installations.
 
-![](https://projectdiscovery.io/_next/image?url=https%3A%2F%2Fstorage.ghost.io%2Fc%2F70%2Ff3%2F70f3700b-f26d-40f9-990d-eef899cce263%2Fcontent%2Fimages%2F2024%2F01%2Fimage-2.png&w=3840&q=75)
+!
 
 At the time of finding, this server was vulnerable to our exploit which could have allowed an attacker to compromise the update server, opening the door to a supply chain attack. Acknowledging the severity of the situation, Lucee's maintainers promptly implemented a hotfix to secure their update server, subsequently releasing an updated version of Lucee with the necessary fixes - [CVE-2023-38693](https://dev.lucee.org/t/lucee-critical-security-alert-august-15th-2023-cve-2023-38693/12893).
 
@@ -264,7 +250,7 @@ Java
 
 Upon invoking sessionInvalidate() or sessionRotate(), we successfully accessed ClientCookie.getInstance(), constructing the cookie name as `CF_CLIENT_LUCEE`.
 
-![](https://projectdiscovery.io/_next/image?url=https%3A%2F%2Fstorage.ghost.io%2Fc%2F70%2Ff3%2F70f3700b-f26d-40f9-990d-eef899cce263%2Fcontent%2Fimages%2F2024%2F01%2Fimage-3.png&w=3840&q=75)
+!
 
 This implies that any application utilizing sessionInvalidate() or sessionRotate() could potentially expose a Remote Code Execution (RCE) vulnerability via the CF_CLIENT_LUCEE cookie. Where, "Lucee" represents the application context name, which might vary depending on the deployed application.
 
@@ -291,7 +277,7 @@ Feeling a tinge of disappointment, we redirected our focus to the `PageContext.s
 
 Regardless here's a PoC for the same:
 
-![](https://projectdiscovery.io/_next/image?url=https%3A%2F%2Fstorage.ghost.io%2Fc%2F70%2Ff3%2F70f3700b-f26d-40f9-990d-eef899cce263%2Fcontent%2Fimages%2F2024%2F01%2Fimage-4.png&w=3840&q=75)
+!
 
 ### Attempt 3 - Variable Interpreter, Functions and Mura CMS
 
@@ -362,11 +348,11 @@ The `param` struct is populated from both the`url` and `form` structs, which sto
 
 And finally: We perform our code execution on Apple!
 
-![](https://projectdiscovery.io/_next/image?url=https%3A%2F%2Fstorage.ghost.io%2Fc%2F70%2Ff3%2F70f3700b-f26d-40f9-990d-eef899cce263%2Fcontent%2Fimages%2F2024%2F01%2Fimage-10.png&w=3840&q=75)
+!
 
 These findings were reported to both Apple and the Lucee team. Apple fixed the report within 48 hours while Lucie's team notified us that they are aware of this nature and have already implemented a fix by adding an optional setting within the Admin panel:
 
-![](https://projectdiscovery.io/_next/image?url=https%3A%2F%2Fstorage.ghost.io%2Fc%2F70%2Ff3%2F70f3700b-f26d-40f9-990d-eef899cce263%2Fcontent%2Fimages%2F2024%2F02%2Fimage.png&w=3840&q=75)
+!
 
 ### Vulnerability Detection
 
@@ -410,21 +396,11 @@ yaml
 
 First and foremost, make sure you're using the latest stable release of Lucee. Then apply the below settings within the Lucee admin panel to disable evaluation of these functions:
 
-![](https://projectdiscovery.io/_next/image?url=https%3A%2F%2Fstorage.ghost.io%2Fc%2F70%2Ff3%2F70f3700b-f26d-40f9-990d-eef899cce263%2Fcontent%2Fimages%2F2024%2F02%2FScreenshot-2024-01-29-at-14.45.00.png&w=3840&q=75)
+!
 
 They also implemented a fix for the cookies that were being parsed as CFML expressions.
 
-[
-
-limit cookie parsing and add additional env var alias for limit eval… · lucee/Lucee@bd3d2d2
-
-…uation
-
-![](https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg)GitHublucee
-
-![](https://opengraph.githubassets.com/d651165762eac6445f3a5d08ad4b92ea0dbbd5ec834de2eae1411dccf93fc5a5/lucee/Lucee/commit/bd3d2d25625f190a7a3518adcb2bfc7496aff42c)
-
-](https://github.com/lucee/Lucee/commit/bd3d2d25625f190a7a3518adcb2bfc7496aff42c)
+[limit cookie parsing and add additional env var alias for limit eval… · lucee/Lucee@bd3d2d2 …uation !GitHublucee !](https://github.com/lucee/Lucee/commit/bd3d2d25625f190a7a3518adcb2bfc7496aff42c)
 
 ## Conclusion
 

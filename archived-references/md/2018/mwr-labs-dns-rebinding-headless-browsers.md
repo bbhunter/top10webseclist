@@ -73,7 +73,7 @@ This article describes the use of HTTP Referer headers to execute DNS rebinding 
 
 ### Introduction
 
-While DNS rebinding was first described nearly two decades ago, it has recently gained a second youth with the proliferation of insecure IoT devices and a series of highly publicized vulnerabilities. The release of a couple of frameworks, such as MWR's [*dref*](https://github.com/mwrlabs/dref) or Brannon Dorsey's [](https://github.com/brannondorsey/dns-rebind-toolkit#dns-rebind-toolkit)[*DNS Rebind Toolkit*](https://github.com/brannondorsey/dns-rebind-toolkit), has also lowered the barrier to entry to conducting this somewhat convoluted attack.
+While DNS rebinding was first described nearly two decades ago, it has recently gained a second youth with the proliferation of insecure IoT devices and a series of highly publicized vulnerabilities. The release of a couple of frameworks, such as MWR's [*dref*](https://github.com/mwrlabs/dref) or Brannon Dorsey's [*DNS Rebind Toolkit*](https://github.com/brannondorsey/dns-rebind-toolkit), has also lowered the barrier to entry to conducting this somewhat convoluted attack.
 
 Yet despite all this, DNS rebinding attacks have remained mostly theoretical. In practical terms, an attacker must coerce a victim into browsing a website under his control and remaining there for some length of time. When this is achievable - typically through a phishing or watering hole attack - attackers tend to rely on more battle-tested payloads.
 

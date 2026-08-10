@@ -79,7 +79,7 @@ Some Follow Up
 
 # Manipulating FTP Clients Using The PASV Command
 
-![](http://bindshell.net/papers/ftppasv/FTP.png)Author: [mark@bindshell.net](mailto:mark@bindshell.net)
+!Author: [mark@bindshell.net](mailto:mark@bindshell.net)
  Published: 4th March 2007
  Version: 1.0
 

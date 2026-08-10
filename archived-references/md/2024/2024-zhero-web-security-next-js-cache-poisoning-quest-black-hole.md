@@ -76,17 +76,17 @@ This article will focus on cache-poisoning. If you are unfamiliar with this vuln
 
 I quickly discovered an interesting behavior **related to the Next.js middleware**. When prefetching data for SSR (server-side rendering) pages, adding the `x-middleware-prefetch` header results in an empty JSON object `{}` as a response. If a CDN or caching system is present, this empty response can potentially be cached —depending on the cache rules configuration— rendering the targeted page **impractical and its content inaccessible**.
 
-![](https://zhero-web-sec.github.io/images/next-cache-1.png)
+!
 
 The primary condition for reproducibility/exploitation is the presence of a caching system. Without it, the response would not be cached, and the behavior resulting from adding the header would be harmless.
 
 I won’t delve into the technical details of the `getServerSideProps` and `getStaticProps` functions here, but they are used to retrieve server-side data and generate static pages, respectively. Since [version 13.4.20-canary.13](https://github.com/advisories/GHSA-c59h-r6p8-q9wc), Next.js has added **cache-control** to SSR responses to prevent them from being cached.
 
-![](https://zhero-web-sec.github.io/images/next-cache-2.png)
+!
 
 Excited by the idea of having discovered a fresh zero-day vulnerability, I quickly realized that this vulnerability already had a [CVE assigned](https://nvd.nist.gov/vuln/detail/CVE-2023-46298) (**CVE-2023-46298**). However, since the proof of concept (POC) had not yet been shared, I was still able to exploit this vulnerability on a large scale. Several dozen bug bounty programs were affected, resulting in numerous bounties, which was highly motivating and encouraged me to continue my research.
 
-![](https://zhero-web-sec.github.io/images/next-cache-3.png) *flex info: non-exhaustive list*
+! *flex info: non-exhaustive list*
 
 ### Impact and severity
 
@@ -108,7 +108,7 @@ To put it simply, this feature allows you to render React components directly on
 
 During my research on Next.js applications, I often encountered requests retrieving the RSC payload. Initially, nothing about this aroused my curiosity. The header responsible for this behavior —`Rsc: 1`— was added to the cache-key via the `Vary` response header, **theoretically** preventing cache-poisoning.
 
-![](https://zhero-web-sec.github.io/images/next-cache-4.png)
+!
 
 By inspecting my HTTP history on my proxy, I noticed that the requests fetching the RSC payload included a **URL parameter** that was systematically added: `_rsc=randomValue`.
 
@@ -122,7 +122,7 @@ Going to close this issue as the Vary header is provided so this is a CDN config
 
 So it was clear, **the framework was cache-poisoning itself and the addition of the URL parameter was to prevent this behavior**. After examining the commit history, I noticed that the [semblance of a “fix” was pushed](https://github.com/vercel/next.js/commit/aa3e043bbf02f973d850b8ae69d364fd9d8583ab) on June 12, 2023, 2 months after timneutkens’s response on the github ticket.
 
-![](https://zhero-web-sec.github.io/images/next-cache-8.png) ![](https://zhero-web-sec.github.io/images/next-cache-7.png)
+! !
 
 Quick reminder about the function of the `vary` response header from the [Mozilla documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Vary):
 
@@ -150,23 +150,23 @@ If you configure your origin to include any other values in the Vary header, Clo
 
 - At **Akamai** there is a behavior called **Remove Vary Header** allowing, as its name suggests, to remove the `vary` header. Akamai edge servers don’t cache responses that include the `Vary` header, even if the content is cacheable by definition but there are “exceptions” ([from official documentation](https://techdocs.akamai.com/property-mgr/docs/rm-vary-header)) :
 
-![](https://zhero-web-sec.github.io/images/next-cache-5.png)
+!
 
 The default behavior of the “**Adaptive Media Delivery**”, “**Download Delivery**” and “**Object Delivery**” products is therefore to remove the `vary` response header.
 
 ### So, is this exploitable?
 
-![](https://zhero-web-sec.github.io/images/next-cache-6.png)
+!
 
 We discussed earlier the self-cache-poisoning issue caused by the framework, prompting Next.js developers to implement a “fix”: **adding a URL parameter during fetch operations to act as a cache-buster and prevent accidental caching of the RSC payload**. However, this measure does not prevent attackers from exploiting the vulnerability by sending a request with the `Rsc` header without using a cache-buster, which mimics typical cache-poisoning attacks. Whether this attack succeeds naturally depends on **the CDN and its cache-rules**.
 
 In theory it was exploitable, I had to be able to confirm all that with a real target, and after some research I got my first hit:
 
-![](https://zhero-web-sec.github.io/images/next-cache-9.png)
+!
 
 The cache was **poisoned** and the main/root page returned the react component server instead of the initial content, resulting in a **bounty of $2000**. From there and as always, pattern extractions, template creation and mass scan of my database containing my bug bounty assets then sending reports to vulnerable programs, here are some of them:
 
-![](https://zhero-web-sec.github.io/images/next-cache-10.png) *flex info: non-exhaustive list*
+! *flex info: non-exhaustive list*
 
 ### Impact and severity
 
@@ -189,15 +189,15 @@ After taking a short break from my research, I decided to dive back in. I had th
 
 A little further into my review, I stumbled upon a piece of code that immediately piqued my curiosity:
 
-![](https://zhero-web-sec.github.io/images/next-cache-11.png)
+!
 
 So, under certain conditions - *which we will see later* - it is possible to **overwrite the status code** via the value of the `x-invoke-status` header directly provided in the request (`req.header[]`) and **invoke/return the error page** ([source](https://github.com/vercel/next.js/blob/f412c5e72a068d3667e0005f33a9ac7802634b61/packages/next/src/server/base-server.ts#L961%5D)). Very interesting, I keep digging and I see that `x-invoke-status` is an **“internal” header**, so they are normally [stripped when they come from the client](https://github.com/vercel/next.js/blob/f412c5e72a068d3667e0005f33a9ac7802634b61/packages/next/src/shared/lib/constants.ts#L18):
 
-![](https://zhero-web-sec.github.io/images/next-cache-12.png)
+!
 
 A small local test was obviously necessary to verify if this was indeed the case, or at least to explore the possibility under certain conditions. Initially, I tried with the default configuration and included `x-invoke-status: 888` as a header, and on my first try:
 
-![](https://zhero-web-sec.github.io/images/next-cache-13.png) ![](https://zhero-web-sec.github.io/images/next-cache-14.png)
+! !
 
 At this point, I have no doubts about the exploitability of this vector for cache-poisoning. By specifying the HTTP status code `200`, it allows compliance with most caching rules (*which typically do not initially allow caching of error codes*). This enables caching the contents of the error page, which can then be served as a response instead of the main page.
 
@@ -267,13 +267,13 @@ if (typeof req.headers['x-invoke-error'] === 'string') {
 
 ```
 
-![](https://zhero-web-sec.github.io/images/next-cache-15.png)
+!
 
 ### Real-world exploitation
 
 With the vulnerability confirmed locally, I swiftly moved to validate it on real targets, bug bounty programs. Once again, I promptly achieved my first successful exploit, which was followed by many others, one of them resulting in a **bounty of $3000**.
 
-![](https://zhero-web-sec.github.io/images/next-cache-19.png) ![](https://zhero-web-sec.github.io/images/next-cache-20.png)
+! !
 
 ### Impact and severity
 
@@ -289,7 +289,7 @@ Then comes the time for the response, I won’t go into certain confidential det
 
 What was my surprise to see that their response was preceded a few hours earlier by a [beautiful commit](https://github.com/vercel/next.js/commit/61ee393fb4cdf10e8b3dd1eca54c31360a73c559), implementing a fix for my discovery:
 
-![](https://zhero-web-sec.github.io/images/next-cache-18.png) ![](https://zhero-web-sec.github.io/images/next-cache-17.png)
+! !
 
 **Why doesn’t this make sense?**
 

@@ -162,7 +162,7 @@ $deserialized = [System.Management.Automation.PSSerializer]::Deserialize($serial
 $deserialized | Get-Member
 ```
 
-![](https://www.truesec.com/wp-content/uploads/2024/09/image-9.png)
+!
 
 The `$deserialized` object is of the type `Deserialized.System.Exception`. This is not the same as `System.Exception`. Classes with the *Deserialized* prefix are sometimes called ***property bags*** and you can think of them as a dictionary type. The property bag contains the public properties of the original object. Methods of the original class are not available through a property bag.
 
@@ -174,7 +174,7 @@ $deserialized = [System.Management.Automation.PSSerializer]::Deserialize($serial
 $deserialized | Get-Member
 ```
 
-![](https://www.truesec.com/wp-content/uploads/2024/09/image-10.png)
+!
 
 ### USER-DEFINED TYPES
 
@@ -220,11 +220,11 @@ In this section we will start looking into what could go wrong during the CLIXML
 
 `ScriptBlock `(using the tag `<SBK>`) is a known primitive type. This type is special because even if it is technically a known primitive type (that should be rehydrated) it is not rehydrated to ScriptBlock but instead to String. There have been multiple issues created around this in the PowerShell GitHub repo and the PowerShell developers have stated that this is by design, due to security reasons.
 
-![](https://www.truesec.com/wp-content/uploads/2024/08/image.png)
+!
 
 *[https://github.com/PowerShell/PowerShell/issues/4218#issuecomment-314851921](https://github.com/PowerShell/PowerShell/issues/4218#issuecomment-314851921)*
 
-![](https://www.truesec.com/wp-content/uploads/2024/09/image-3.png)
+!
 
 *[https://github.com/PowerShell/PowerShell/issues/11698#issuecomment-801476936](https://github.com/PowerShell/PowerShell/issues/11698#issuecomment-801476936)*
 
@@ -238,7 +238,7 @@ Remember that there are some default types that are rehydrated? There are three 
 
 We find that if a ScriptBlock is contained within a `Breakpoint`, then it will actually rehydrate. Here’s the source code for the `CommandBreakpoint `rehydration, notice the call to `RehydrateScriptBlock`:
 
-![](https://www.truesec.com/wp-content/uploads/2024/09/image-4.png)
+!
 
 *[https://github.com/PowerShell/PowerShell/blob/master/src/System.Management.Automation/engine/serialization.cs#L7041](https://github.com/PowerShell/PowerShell/blob/master/src/System.Management.Automation/engine/serialization.cs#L7041)*
 
@@ -325,7 +325,7 @@ Get-CimInstance -ClassName Win32_PingStatus -Filter "Address='127.0.0.1' and tim
 
 We then open up `payload.xml` and change the `Address `property to a domain of our choosing.
 
-![](https://www.truesec.com/wp-content/uploads/2024/08/image-3.png)
+!
 
 *CLIXML payload file, with manipulated Address property*
 
@@ -335,7 +335,7 @@ We fire up Wireshark to observe the network traffic and then we deserialize the 
 import-clixml .\payload.xml
 ```
 
-![](https://www.truesec.com/wp-content/uploads/2024/09/image-2.png)
+!
 
 *Network traffic showing that the domain name lookup was triggered*
 
@@ -397,7 +397,7 @@ $deserialized = Import-CliXml .\payload.xml
 $deserialized | export-csv .\test.csv
 ```
 
-![](https://www.truesec.com/wp-content/uploads/2024/09/image-1.png)
+!
 
 *SMB server showing a captured hash*
 
@@ -405,11 +405,11 @@ $deserialized | export-csv .\test.csv
 
 Now let’s look at the `Microsoft.Win32.RegistryKey` type. It defines an interesting ViewDefinition in its `format.xml `file. We see when printed as a list (the default output format), it will perform a `[Get-ItemProperty](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-itemproperty?view=powershell-7.4)` call with the member `PSPath `as its LiteralPath argument.
 
-![](https://www.truesec.com/wp-content/uploads/2024/09/image-7.png)
+!
 
 Like we already learned, we can control the value of properties. Thus, we can set `PSPath `to any value we desire. To create the a payload template, we serialize the result of a `Get-Item` <regpath> call, then we change the property to point to our malicious SMB server.
 
-![](https://www.truesec.com/wp-content/uploads/2024/09/image-8.png)
+!
 
 Now, this is more fun, because the type is available by default and the property is accessed by default. All that’s the victim need to do to trigger the gadget is:
 
@@ -419,7 +419,7 @@ import-clixml payload.xml
 
 … and ta-da!
 
-![](https://www.truesec.com/wp-content/uploads/2024/09/image-1.png)
+!
 
 *SMB server showing a captured hash*
 
@@ -469,7 +469,7 @@ PSFramework module implements user-defined types with a custom converter. If we 
 
 Looking at `SerializationTypeConverter.cs`, we see that the type converter is essentially a wrapper on BinaryFormatter. This is one of the formatters analyzed by Munoz et al and it is known to be vulnerable to [arbitrary code execution](https://learn.microsoft.com/en-us/dotnet/standard/serialization/binaryformatter-security-guide).
 
-![](https://www.truesec.com/wp-content/uploads/2024/09/image-5.png)
+!
 
 *[https://github.com/PowershellFrameworkCollective/psframework/](https://github.com/PowershellFrameworkCollective/psframework/)*
 
@@ -532,19 +532,19 @@ We implement this attack by compiling a custom PowerShell, based on the open sou
 
 As a proof-of-concept we return a string (using the `<S>` tags).
 
-![](https://www.truesec.com/wp-content/uploads/2024/08/image-7.png)
+!
 
 *Custom stream writer added to fragmentor.cs*
 
 Now, to make PowerShell Remoting server use our custom PowerShell, we need to build `pwrshplugin.dll` and update the `microsoft.powershell`* *plugin for WSMan, and make it to point to our custom PowerShell version.
 
-![](https://www.truesec.com/wp-content/uploads/2024/08/image-5.png)
+!
 
 *Microsoft.PowerShell plugin pointing to our custom PowerShell *
 
 Finally, we try it out by running an example command over PSRP against the compromised server. We see that not only is our string returned, but the client has deserialized our arbitrary data (the `<S>` tags are gone).
 
-![](https://www.truesec.com/wp-content/uploads/2024/08/image-6.png)
+!
 
 *Exploit was triggered on client when using PowerShell Remoting against the compromised server*
 
@@ -591,7 +591,7 @@ The C2 connection seen in the video was established using a custom-built reverse
 | 2024-09-13 | Alex | Presented at SEC-T. |  |
 | 2024-09-14 | Alex | Published blog post. |  |
 
-![](https://www.truesec.com/wp-content/uploads/2024/09/image.png)
+!
 
 *Response from MSRC saying they have fixed the issue.*
 
@@ -682,25 +682,25 @@ $result
 </ScriptBlock>
 ```
 
- [ ![](https://www.truesec.com/wp-content/uploads/2026/08/data-dump-2-1-960x540.png)](https://www.truesec.com/hub/blog/false-cve-in-overwhelmed-verification-system)
+ [ !](https://www.truesec.com/hub/blog/false-cve-in-overwhelmed-verification-system)
 
  Cybersecurity, Threat Intelligence
 
 ###  [ False CVE in Overwhelmed Verification System ](https://www.truesec.com/hub/blog/false-cve-in-overwhelmed-verification-system)
 
- [ ![](https://www.truesec.com/wp-content/uploads/2026/08/corridor-960x540.jpg)](https://www.truesec.com/hub/blog/llmjacking-is-a-new-cyber-threat)
+ [ !](https://www.truesec.com/hub/blog/llmjacking-is-a-new-cyber-threat)
 
  Cybersecurity, Threat Intelligence
 
 ###  [ LLMjacking Is a New Cyber Threat ](https://www.truesec.com/hub/blog/llmjacking-is-a-new-cyber-threat)
 
- [ ![](https://www.truesec.com/wp-content/uploads/2026/07/a-minimalistic-futuristic-scene-represen_iPZP_e8sTSmG09a8esEuew_xA9UM_b5RvGJOLXaXj3Rew-960x540.png)](https://www.truesec.com/hub/blog/rogue-ai-agent-allegedly-hack-hugging-face)
+ [ !](https://www.truesec.com/hub/blog/rogue-ai-agent-allegedly-hack-hugging-face)
 
  AI, Cybersecurity
 
 ###  [ Rogue AI Agent Allegedly Hack Hugging Face ](https://www.truesec.com/hub/blog/rogue-ai-agent-allegedly-hack-hugging-face)
 
- [ ![](https://www.truesec.com/wp-content/uploads/2026/07/bild2.png)](https://www.truesec.com/hub/blog/microsoft-sharepoint-server-vulnerabilities-actively-exploited)
+ [ !](https://www.truesec.com/hub/blog/microsoft-sharepoint-server-vulnerabilities-actively-exploited)
 
  Threat Intelligence
 

@@ -71,37 +71,9 @@ PHP
 
 # CRLF Injection Into PHP’s cURL Options
 
-[
-
-![TomNomNom](https://miro.medium.com/v2/resize:fill:64:64/1*nqMDheMI3anu0ydbDZU2qw.jpeg)
-
-](https://medium.com/@tomnomnom?source=post_page---byline--e2e0d7cfe545---------------------------------------)
+[![TomNomNom](https://miro.medium.com/v2/resize:fill:64:64/1*nqMDheMI3anu0ydbDZU2qw.jpeg)](https://medium.com/@tomnomnom?source=post_page---byline--e2e0d7cfe545---------------------------------------)
 
 [TomNomNom](https://medium.com/@tomnomnom?source=post_page---byline--e2e0d7cfe545---------------------------------------)
-
-7 min readAug 1, 2018
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fp%2Fe2e0d7cfe545&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40tomnomnom%2Fcrlf-injection-into-phps-curl-options-e2e0d7cfe545&user=TomNomNom&userId=6dadd1681332&source=---header_actions--e2e0d7cfe545---------------------clap_footer------------------)
-
---
-
-1
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Frepost%2Fp%2Fe2e0d7cfe545&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40tomnomnom%2Fcrlf-injection-into-phps-curl-options-e2e0d7cfe545&user=TomNomNom&userId=6dadd1681332&source=---header_actions--e2e0d7cfe545---------------------repost_header------------------)
-
-[ ](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fe2e0d7cfe545&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40tomnomnom%2Fcrlf-injection-into-phps-curl-options-e2e0d7cfe545&source=---header_actions--e2e0d7cfe545---------------------bookmark_footer------------------)
-
-[
-
-Listen
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3De2e0d7cfe545&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40tomnomnom%2Fcrlf-injection-into-phps-curl-options-e2e0d7cfe545&source=---header_actions--e2e0d7cfe545---------------------post_audio_button------------------)
-
-Share
 
 This is a post about injecting carriage return and line feed characters into a internal API call. I wrote this up a year ago as [a Gist on GitHub](https://gist.github.com/tomnomnom/6727d7d3fabf5a4ab20703121a9090da), but that’s not really the best platform for blog posts, is it? I’ve added more detail here so it’s not just a straight copy and paste.
 

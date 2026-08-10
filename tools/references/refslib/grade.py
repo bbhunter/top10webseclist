@@ -50,7 +50,7 @@ RECORD = "records"
 FOLDERS = (RESEARCH, RECORD)
 
 # Reasons a reference is kept with no file at all. `broken-capture` is the one
-# that is FIXABLE, so it stays on the needs-work list rather than being retired.
+# that is FIXABLE, so it stays on the document-gaps list rather than being retired.
 BROKEN = "broken-capture"
 OUT_OF_SCOPE = "out-of-scope"
 DERIVATIVE = "derivative"

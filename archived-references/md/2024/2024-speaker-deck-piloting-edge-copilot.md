@@ -78,11 +78,7 @@ Code Blue 2024 presentation
 
  [ See All by Jun Kokatsu ](https://speakerdeck.com/shhnjk)
 
- [
-
- Operating Operator
-
- ](https://speakerdeck.com/shhnjk/operating-operator)
+ [Operating Operator](https://speakerdeck.com/shhnjk/operating-operator)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -90,11 +86,7 @@ Code Blue 2024 presentation
 
   1.4k
 
- [
-
- Same-Origin Cross-Context Scripting
-
- ](https://speakerdeck.com/shhnjk/same-origin-cross-context-scripting)
+ [Same-Origin Cross-Context Scripting](https://speakerdeck.com/shhnjk/same-origin-cross-context-scripting)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -102,11 +94,7 @@ Code Blue 2024 presentation
 
   1.1k
 
- [
-
- The world of Site Isolation and compromised renderer
-
- ](https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer)
+ [The world of Site Isolation and compromised renderer](https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -114,11 +102,7 @@ Code Blue 2024 presentation
 
   3.1k
 
- [
-
- Site Isolationの話
-
- ](https://speakerdeck.com/shhnjk/site-isolationfalsehua)
+ [Site Isolationの話](https://speakerdeck.com/shhnjk/site-isolationfalsehua)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -126,11 +110,7 @@ Code Blue 2024 presentation
 
   2.1k
 
- [
-
- ブラウザセキュリティ機能は バイパスされる為にある
-
- ](https://speakerdeck.com/shhnjk/burauzasekiyuriteiji-neng-ha-baipasusareruwei-niaru)
+ [ブラウザセキュリティ機能は バイパスされる為にある](https://speakerdeck.com/shhnjk/burauzasekiyuriteiji-neng-ha-baipasusareruwei-niaru)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -138,11 +118,7 @@ Code Blue 2024 presentation
 
   4.1k
 
- [
-
- Logically Bypassing Browser Security Boundaries
-
- ](https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries)
+ [Logically Bypassing Browser Security Boundaries](https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries)
 
  [ ![Avatar for Jun Kokatsu](https://secure.gravatar.com/avatar/a1dbf5def4b5ddfd93a268b649c043bc?s=24) shhnjk ](https://speakerdeck.com/shhnjk)
 
@@ -154,11 +130,7 @@ Code Blue 2024 presentation
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [
-
- More Than Pixels: Becoming A User Experience Designer
-
- ](https://speakerdeck.com/marktimemedia/more-than-pixels-becoming-a-user-experience-designer)
+ [More Than Pixels: Becoming A User Experience Designer](https://speakerdeck.com/marktimemedia/more-than-pixels-becoming-a-user-experience-designer)
 
  [ ![Avatar for Michelle Schulp Hunt](https://secure.gravatar.com/avatar/e195ae45320d9202eaa01c9f1d31a416?s=24) marktimemedia ](https://speakerdeck.com/marktimemedia)
 
@@ -166,11 +138,7 @@ Code Blue 2024 presentation
 
   480
 
- [
-
- So, you think you're a good person
-
- ](https://speakerdeck.com/axbom/so-you-think-youre-a-good-person)
+ [So, you think you're a good person](https://speakerdeck.com/axbom/so-you-think-youre-a-good-person)
 
  [ ![Avatar for Per Axbom](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzA4MTcsInB1ciI6ImJsb2JfaWQifX0=--3b22ae95c7f24edaeb9c2d37fdb67f05b7db6128/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/axbom-ind08b.jpg) axbom ](https://speakerdeck.com/axbom)
 
@@ -180,11 +148,7 @@ Code Blue 2024 presentation
 
   2.1k
 
- [
-
- Noah Learner - AI + Me: how we built a GSC Bulk Export data pipeline
-
- ](https://speakerdeck.com/techseoconnect/noah-learner-ai-plus-me-how-we-built-a-gsc-bulk-export-data-pipeline)
+ [Noah Learner - AI + Me: how we built a GSC Bulk Export data pipeline](https://speakerdeck.com/techseoconnect/noah-learner-ai-plus-me-how-we-built-a-gsc-bulk-export-data-pipeline)
 
  [ ![Avatar for Tech SEO Connect](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2NjU4LCJwdXIiOiJibG9iX2lkIn19--14f297c27d2190051dc109b5d472cf0297dd6c3e/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/40575_logo_social%20media%20profile%204.png) techseoconnect ](https://speakerdeck.com/techseoconnect)
 
@@ -206,11 +170,7 @@ Code Blue 2024 presentation
 
   3.5k
 
- [
-
- How to Build an AI Search Optimization Roadmap - Criteria and Steps to Take #SEOIRL
-
- ](https://speakerdeck.com/aleyda/how-to-build-an-ai-search-optimization-roadmap-criteria-and-steps-to-take-number-seoirl)
+ [How to Build an AI Search Optimization Roadmap - Criteria and Steps to Take #SEOIRL](https://speakerdeck.com/aleyda/how-to-build-an-ai-search-optimization-roadmap-criteria-and-steps-to-take-number-seoirl)
 
  [ ![Avatar for Aleyda Solis](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6OTIyMDAsInB1ciI6ImJsb2JfaWQifX0=--f7ae7c6a9c16b0bb4461d98502be71c2c1b38eaf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/aleyda-solis.jpg) aleyda ](https://speakerdeck.com/aleyda)
 
@@ -218,11 +178,7 @@ Code Blue 2024 presentation
 
   2.1k
 
- [
-
- svc-hook: hooking system calls on ARM64 by binary rewriting
-
- ](https://speakerdeck.com/retrage/svc-hook-hooking-system-calls-on-arm64-by-binary-rewriting)
+ [svc-hook: hooking system calls on ARM64 by binary rewriting](https://speakerdeck.com/retrage/svc-hook-hooking-system-calls-on-arm64-by-binary-rewriting)
 
  [ ![Avatar for Akira Moroo](https://secure.gravatar.com/avatar/8dc3958dc2480bd681e4b5c197817047?s=24) retrage ](https://speakerdeck.com/retrage)
 
@@ -230,11 +186,7 @@ Code Blue 2024 presentation
 
   440
 
- [
-
- Product Roadmaps are Hard
-
- ](https://speakerdeck.com/iamctodd/product-roadmaps-are-hard)
+ [Product Roadmaps are Hard](https://speakerdeck.com/iamctodd/product-roadmaps-are-hard)
 
  [ ![Avatar for C. Todd Lombardo](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTE0Mjc1LCJwdXIiOiJibG9iX2lkIn19--823467477d34234bad5179a70e99e082ba41d0ea/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/c-todd-lombardo-color-bg.jpg) iamctodd ](https://speakerdeck.com/iamctodd)
 
@@ -242,11 +194,7 @@ Code Blue 2024 presentation
 
   12k
 
- [
-
- The Mindset for Success: Future Career Progression
-
- ](https://speakerdeck.com/greggifford/the-mindset-for-success-future-career-progression)
+ [The Mindset for Success: Future Career Progression](https://speakerdeck.com/greggifford/the-mindset-for-success-future-career-progression)
 
  [ ![Avatar for Greg Gifford](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTMwMDYzLCJwdXIiOiJibG9iX2lkIn19--7de629ffe581dc2932935617a9cf5ab294a9528b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/greg-2021-upload-size.jpg) greggifford ](https://speakerdeck.com/greggifford)
 
@@ -256,11 +204,7 @@ Code Blue 2024 presentation
 
   440
 
- [
-
- How People are Using Generative and Agentic AI to Supercharge Their Products, Projects, Services and Value Streams Today
-
- ](https://speakerdeck.com/helenjbeal/how-people-are-using-generative-and-agentic-ai-to-supercharge-their-products-projects-services-and-value-streams-today)
+ [How People are Using Generative and Agentic AI to Supercharge Their Products, Projects, Services and Value Streams Today](https://speakerdeck.com/helenjbeal/how-people-are-using-generative-and-agentic-ai-to-supercharge-their-products-projects-services-and-value-streams-today)
 
  [ ![Avatar for Helen Beal](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDc4NzcyLCJwdXIiOiJibG9iX2lkIn19--63c34c899ae9696f1fd5abddc34acfa182481f9d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/Helen%20Beal%20(white%20jacket).png) helenjbeal ](https://speakerdeck.com/helenjbeal)
 
@@ -268,11 +212,7 @@ Code Blue 2024 presentation
 
   260
 
- [
-
- The Invisible Side of Design
-
- ](https://speakerdeck.com/smashingmag/the-invisible-side-of-design)
+ [The Invisible Side of Design](https://speakerdeck.com/smashingmag/the-invisible-side-of-design)
 
  [ ![Avatar for Vitaly Friedman](https://secure.gravatar.com/avatar/b3d6434763caa0ef5dc4b792662c49f7?s=24) smashingmag ](https://speakerdeck.com/smashingmag)
 
@@ -280,11 +220,7 @@ Code Blue 2024 presentation
 
   52k
 
- [
-
- Creating an realtime collaboration tool: Agile Flush - .NET Oxford
-
- ](https://speakerdeck.com/marcduiker/creating-an-realtime-collaboration-tool-agile-flush-net-oxford)
+ [Creating an realtime collaboration tool: Agile Flush - .NET Oxford](https://speakerdeck.com/marcduiker/creating-an-realtime-collaboration-tool-agile-flush-net-oxford)
 
  [ ![Avatar for Marc Duiker](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjkzMzQsInB1ciI6ImJsb2JfaWQifX0=--d45cd73c324ef3fb7dc9cd9dfa4af5247a051abb/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/MarcDuiker%20dapr_yellow_bg_720px.png) marcduiker ](https://speakerdeck.com/marcduiker)
 
@@ -292,11 +228,7 @@ Code Blue 2024 presentation
 
   2.5k
 
- [
-
- Claude Code どこまでも/ Claude Code Everywhere
-
- ](https://speakerdeck.com/nwiizo/claude-everywhere)
+ [Claude Code どこまでも/ Claude Code Everywhere](https://speakerdeck.com/nwiizo/claude-everywhere)
 
  [ ![Avatar for nwiizo](https://secure.gravatar.com/avatar/6ed12627fec46a135f1bce5d56f3568e?s=24) nwiizo ](https://speakerdeck.com/nwiizo)
 

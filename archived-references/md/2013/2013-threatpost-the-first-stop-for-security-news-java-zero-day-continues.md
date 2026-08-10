@@ -83,7 +83,7 @@ FireEye notified Oracle about the bug before publication and is urging users to 
 
 It’s been a turbulent couple of months for Java as an absolute torrent of zero-day vulnerabilities has researchers seriously considering [disabling Oracle’s nearly ubiquitous platform altogether](http://web.archive.org/web/20160415221419/https://threatpost.com/its-time-abandon-java-012113/).
 
- ![](http://web.archive.org/web/20160415221419im_/https://trtpost-wpengine.netdna-ssl.com/wp-content/uploads/avatars/42/1373469462-bpfull-68x68.jpg)
+ !
 
 ## About Brian Donohue
 

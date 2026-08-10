@@ -212,5 +212,3 @@ We would like to thank researcher Abdelhamid Naceri for his great work in develo
 Add your voice to the work that pushes attackers back.
 
  [
-
-#### RESEARCHERS

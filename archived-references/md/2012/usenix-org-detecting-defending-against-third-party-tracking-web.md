@@ -101,8 +101,6 @@ BibTeX
 
 #### Presentation Video
 
-[](https://c59951.ssl.cf2.rackcdn.com/nsdi12/roesner.mp4)
-
 #### Presentation Audio
 
     [MP3 Download](https://c59951.ssl.cf2.rackcdn.com/nsdi12/roesner.mp3) [OGG Download](https://c59951.ssl.cf2.rackcdn.com/nsdi12/roesner.ogg)

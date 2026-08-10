@@ -115,8 +115,6 @@ As attackers, let us begin with the assumption we have a Subscriber user. It is 
 
 Let’s observe an excerpt from the ‘*map_meta_cap()*’ code to examine how capabilities are mapped into actual privileges.
 
-[](http://blog.checkpoint.com/wp-content/uploads/2015/08/wp1.png)
-
 As we can see, the ‘*edit_post/edit_page*’ capability check validates the post by checking if the post ID we’ve entered exist (highlighted). The interesting part is what happens when it’s not – the check does not set any capabilities into *$caps* and the array is returned empty. Since there are no capabilities set, the function acts as if we don’t need any and returns true.
 
 That means that in theory, we can bypass capability checks with an invalid post ID. To exploit that, we would need code that is calling this check and does not validate the post ID prior to the call. Unfortunately there aren’t many cases where this is true. One important location, though, is the function ‘*edit_post()*’.
@@ -127,13 +125,9 @@ Although ‘*edit_post()*’ does not validate our post ID, ‘*wp_update_post()
 
 Let’s have a look at the interesting bits from that code:
 
-[](http://blog.checkpoint.com/wp-content/uploads/2015/08/wp2.png)
-
 As can be seen, apart from the post type that is set by the exiting post, we can control any value inside *‘$post_data’*. That means that (although not visible in the pasted code) we can attempt to update posts’ metadata or change taxonomies, which would significantly expand our attack surface.
 
 In order for that to happen we first need to reach that function. There are several places that call it, but those places either check other capabilities or check that the post we’re trying to edit exists. That leaves us with only one option to use – the *‘post.php’* admin page which uses the following code:
-
-[](http://blog.checkpoint.com/wp-content/uploads/2015/08/wp3.png)
 
 Initially, this code seems perfect for us – no capabilities check, no post ID validation, just what we need. However, another problem surfaces with the *‘check_admin_referer()’* function call. This function checks for a specific CSRF token that has been given to us by the system. This token uses the server’s randomly generated hash and current time, which apparently cannot be guessed or altered by an attacker.
 
@@ -143,7 +137,7 @@ We are trying to bypass the capabilities check, meaning we are using a post ID t
 
 Now that we can use the *‘add-post’* token string, we just need to find accessible code that will generate that token. Although this task seems simple, our lack of capabilities significantly limits access to other actions. Again, all we need was one such location, which was indeed found in the function *‘wp_dashboard_quick_press()’.* This code, among other actions, generates a valid admin token.
 
-The call for this function is found, no less, when a user with no capabilities tries to save a new draft. This can be seen at the following code:[](http://blog.checkpoint.com/wp-content/uploads/2015/08/wp4.png)
+The call for this function is found, no less, when a user with no capabilities tries to save a new draft. This can be seen at the following code:
 
 As evident above, if a user does not supply a correct token, or is lacking the *‘edit_posts’* capability, the function is triggered and we receive a valid *‘add-post’* admin token.
 
@@ -151,13 +145,11 @@ With this token we can now freely get processed in the *‘edit_post’* functio
 
 At this point we can create and add non-protected metadata to non-existing posts, create and select taxonomies and several other minor things. Although this sounds great, it is still far from our attacker’s objective – we want to actually be able to edit a real post so we can access code previously protected by the *‘edit_post’* capability check.
 
-Let us re-examine the capability check code:[](http://blog.checkpoint.com/wp-content/uploads/2015/08/wp5.png)
+Let us re-examine the capability check code:
 
 Note the highlighted code – if the user is the post’s author, and the post is currently marked as trash, no capabilities are needed. This marks a clear path towards editing privileges. But how can we become both a post author and set its status to *‘trash’*?
 
 The first problem is easy – in order to become a post’s author all we have to do is create one. For this to happen all we need to do is call *‘wp_dashboard_quick_press()’*, just like we did when we created our token. Besides creating the admin token, the function also checks if an auto-draft was previously created for the current user. If no draft is detected, the function calls the *‘get_default_post_to_edit()’*, which contains the following code:
-
-[](http://blog.checkpoint.com/wp-content/uploads/2015/08/wp6.png)
 
 As can be seen, the code retrieves the post title, content, and excerpt from the request parameters, and then, if instructed, creates the post in the DB. The call for *‘wp_insert_post()’* does not include a post author, so the system assumes the author should be the current user. Although the *‘$create_in_db’* variable is set to be false as default, in our case *‘wp_dashboard_quick_press()’* assigns it the value *‘true’* and thus creates the auto-draft in the DB.
 
@@ -171,7 +163,7 @@ When we enter *‘edit_post()’* we will use the ID of the next post to be crea
 
 The question remains, how can we send 2 different requests (edit post followed by post creation), in such a careful timing so that this tactic will work. Obviously, we must delay the script execution.
 
-Let’s look at the *‘edit_post()’* code again:[](http://blog.checkpoint.com/wp-content/uploads/2015/08/wp7.png)
+Let’s look at the *‘edit_post()’* code again:
 
 We can see that the variable *‘$terms’*, controlled by us, is converted into an array by splitting it using a comma (‘,’) in case it is a string. Afterwards, the code loops through that array, treating every element as a taxonomy name, and tries to fetch it from the DB using a *‘SELECT’* statement.
 
@@ -192,7 +184,5 @@ Combining all of these bypasses together, we use a chain of around a dozen diffe
 **POC**
 
 Admin token retrieval / post creation
-
-[](http://blog.checkpoint.com/wp-content/uploads/2015/08/wp8.png)
 
 Race Condition

@@ -409,17 +409,3 @@ There is much more you can do by attacking the parser, but I’ve outlined some 
 ## About Assetnote
 
 Searchlight Cyber’s ASM solution, [Assetnote](https://slcyber.io/dark-web-security-products/attack-surface-management-tool/), provides industry-leading attack surface management and adversarial exposure validation solutions, helping organizations identify and remediate security vulnerabilities before they can be exploited. Customers receive security alerts and recommended mitigations simultaneously with any disclosures made to third-party vendors. Visit our [attack surface management page](https://slcyber.io/dark-web-security-products/attack-surface-management-tool/) to learn more about our platform and [the research we do](https://slcyber.io/dark-web-security-products/attack-surface-management-tool/security-research/).
-
-#### in this article
-
-## Book your demo: Identify cyber threats earlier– before they impact your business
-
-Searchlight Cyber is used by security professionals and leading investigators to surface criminal activity and protect businesses. Book your demo to find out how Searchlight can:
-
-**Enhance your security** with advanced automated dark web monitoring and investigation tools
-
-**Continuously monitor for threats**, including ransomware groups targeting your organization
-
-**Prevent costly cyber incidents** and meet cybersecurity compliance requirements and regulations
-
-## Fill in the form to get you demo

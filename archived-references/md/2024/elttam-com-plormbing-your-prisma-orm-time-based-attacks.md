@@ -431,7 +431,7 @@ if __name__ == '__main__':
     main()
 ```
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab143b96493b39e9f71_69b9898c5640c2dc90ad9490_prisma0.gif)
+!
 
 ### Exploiting Many-to-Many Relationships
 
@@ -461,7 +461,7 @@ Below is an example of how the `User`, `Department` and published `Article` reco
 | mike-the-admin | **Managers** and **Admins** | **False** |  |
 | root | **Admins** | **False** |  |
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab143b96493b39e9f7a_69b9898c5640c2dc90ad948a_User-Dep-Relationships-Prisma.avif)
+!
 
 Since all the `User` records are linked to together, all the user records could be filtered using the following payload that **loops back** on the many-to-many relationship.
 
@@ -603,7 +603,7 @@ if __name__ == '__main__':
     main()
 ```
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab043b96493b39e9f54_69b9898c5640c2dc90ad9482_prisma1.gif)
+!
 
 In addition, to bypass the `published = true` restriction to leak unpublished articles you could loop back on the many-to-many relationship between the `Category` and `Article` models, as demonstrated below.
 
@@ -710,7 +710,7 @@ if __name__ == '__main__':
     main()
 ```
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab143b96493b39e9f6e_69b9898c5640c2dc90ad9493_prisma2.gif)
+!
 
 Now that’s done, let’s get into something more interesting.
 
@@ -824,7 +824,7 @@ To define when the null hypothesis should be rejected, a confidence interval of 
 
 Using 1,000 trials for each type of test resulted in the following histogram, which visually showed that the two distributions were similar.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab143b96493b39e9fd3_69b9898d5640c2dc90ad94ba_op-contains-histogram.svg)
+!
 
 This similarity was confirmed by calculating the p-value, where $p_{X,Y} = 0.588$ and $p_{X,Y} > \alpha$, which meant that the null hypothesis was not rejected. Therefore, the simple `contains` format was a suitable candidate for a time-based attack.
 
@@ -857,7 +857,7 @@ Let’s say the sample of tests for the `in` operator is $Z$ with a correspondin
 
 Using 1,000 trials for each type of operator on my local machine we get the following histogram that clearly showed that the `contains` operator payload caused a more significant time-delay with a $p_{Z,X} = 1.0$.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab243b96493b39e9fe0_69b9898d5640c2dc90ad94b4_op-compare-histogram.svg)
+!
 
 The final test that was conducted was to confirm if the `contains` operator could cause a statistically significant delay in comparison to a control sample ($C$) that did not contain any payloads with a corresponding mean of $\mu_X$. This hypothesis test is defined below:
 
@@ -866,7 +866,7 @@ The final test that was conducted was to confirm if the `contains` operator coul
 
 Plotting the histogram of these two samples showed that contains operator payload caused a significant time delay that was confirmed with $p_{X,C} = 0 < \alpha = 0.05$, which meant that $H_0$ was rejected!
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab243b96493b39e9fdb_69b9898d5640c2dc90ad94ae_op-contains-control-histogram.svg)
+!
 
 However, with 100 rows being queried with only 1,000 contain operations there was only a difference of 104.6 ms, which could become problematic when trying to exploit a time-based ORM Leak vulnerability from a remote source with more network noise.This time delay could be increased to ~200-400 ms by increasing the number of contains conditions in the payload until the request size limit was reached ([100 KB for Express](http://expressjs.com/en/resources/middleware/body-parser.html)), but it is still a small time difference that could become challenging to detect from a remote source.
 
@@ -926,7 +926,7 @@ Many-to-many with 1 loop back payload example
 
 The only problem though was testing the m2m loop back caused my computer to crash because it exhausted all my resources over time…
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab043b96493b39e9f58_69b9898c5640c2dc90ad9485_deepfrying-my-comp.avif)
+!
 
 It does confirm that any ORM Leak in Prisma (and potentially Django) that had a m2m relationship could be exploited to **DoS the database server**. But, the following section will explain why the m2m payload was not suitable for a time-based attack.
 
@@ -1108,7 +1108,7 @@ Web timing attacks can be challenging to discern from network noise, where chang
 
 A good approach for discerning timing differences is by doing **concurrent pairwise comparisons**, since [network noise is somewhat dependent on the time of day](https://www.blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing-Attacks-Made-Practical-wp.pdf). This was observed during testing against a remote target with a latency of 20-60 ms, where the following graph shows that similar fluctuations occurred at the same time when comparing a successful leak or miss query.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab243b96493b39e9ffc_69b9898d5640c2dc90ad94df_time-network-fluctuations.svg)
+!
 
 Being scientific again, let $H$ be the sample of tests that match the start of a field that should be leaked and $M$ be the sample that did not match, where both samples had 1,000 trials. If pairwise comparison was a suitable method to discern timing differences attacking a remote target, then the following null hypothesis should be rejected.
 
@@ -1117,7 +1117,7 @@ Being scientific again, let $H$ be the sample of tests that match the start of a
 
 Plotting the histogram, we can see that there was a difference of ~400 ms between the two means where $p_{H,M} = 1.58\times 10^{-56} < \alpha = 0.05$. This meant that the **null hypothesis was rejected** and the **concurrent pairwise comparison was a suitable method for a time-based attack**.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab143b96493b39e9fc8_69b9898c5640c2dc90ad94a5_time-histogram.svg)
+!
 
 This single pairwise comparison test did take over 8 minutes to complete. However, dropping the number of trials to 100 took less than a minute to complete with a corresponding $p_{H,M} = 1.35\times10^{-6} < \alpha$, which is still statistically significant.
 
@@ -1125,7 +1125,7 @@ This single pairwise comparison test did take over 8 minutes to complete. Howeve
 
 Putting everything together, I wrote a tool called [**`plormber`**](https://github.com/elttam/plormber) that exploits time-based ORM Leak vulnerabilities by doing a pairwise comparison tournament with every character being searched. The winning characters with a statistically significant mean time were then moved into the next bracket until there was one (or none) statistically significant character left. This tournament process is visualised in the diagram below showing how the first character for `449013cd6f0cf6d1` could be leaked.
 
-![](https://cdn.prod.website-files.com/6971f0e051b588235e8acf7b/69c28ab143b96493b39e9f6b_69b9898c5640c2dc90ad948d_tourne-example.avif)
+!
 
 This process can be error-prone, so [`plormber`](https://github.com/elttam/plormber) tries to detect false detections and redo the exploitation run. The current implementation of [`plormber`](https://github.com/elttam/plormber) is not perfect, but it is suitable as a working proof-of-concept for exploiting time-based ORM Leak vulnerabilities.
 
@@ -1157,221 +1157,77 @@ And as always…
 
 If you’re needing a security assessment and have an application that leverages ORM’s, don’t hesitate to [contact us](https://www.elttam.com/#contact).
 
-[
+[Cruising for Shells in Flowise](https://www.elttam.com/blog/cruising-for-shells-in-flowise)
 
-Cruising for Shells in Flowise
+[Your House Has an FFmpeg Problem](https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem)
 
-](https://www.elttam.com/blog/cruising-for-shells-in-flowise)
+[Exploiting Auth0 Defaults in XSS Attacks](https://www.elttam.com/blog/exploiting-auth0-defaults-in-xss-attacks)
 
-[
+[Jupyter Enterprise Gateway](https://www.elttam.com/blog/jupyter-enterprise-gateway)
 
-Your House Has an FFmpeg Problem
+[Golang code review notes II](https://www.elttam.com/blog/golang-code-review-notes-ii)
 
-](https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem)
+[ORM Leaking More Than You Joined For](https://www.elttam.com/blog/leaking-more-than-you-joined-for)
 
-[
+[Gotchas in Email Parsing - Lessons From Jakarta Mail](https://www.elttam.com/blog/jakarta-mail-primitives)
 
-Exploiting Auth0 Defaults in XSS Attacks
+[New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails](https://www.elttam.com/blog/rails-sqlite-gadget-rce)
 
-](https://www.elttam.com/blog/exploiting-auth0-defaults-in-xss-attacks)
+[A Monocle on Chronicles](https://www.elttam.com/blog/monocle-on-chronicles)
 
-[
+[DUCTF 2024 ESPecially Secure Boot Writeup](https://www.elttam.com/blog/ductf24-especially-secure-boot)
 
-Jupyter Enterprise Gateway
+[plORMbing your Prisma ORM with Time-based Attacks](https://www.elttam.com/blog/plorming-your-primsa-orm)
 
-](https://www.elttam.com/blog/jupyter-enterprise-gateway)
+[plORMbing your Django ORM](https://www.elttam.com/blog/plormbing-your-django-orm)
 
-[
+[Keeping up with the Pwnses](https://www.elttam.com/blog/talkback-intro)
 
-Golang code review notes II
+[Exploring the STSAFE-A110](https://www.elttam.com/blog/stsafe-a110)
 
-](https://www.elttam.com/blog/golang-code-review-notes-ii)
+[RE of LR3](https://www.elttam.com/blog/re-of-lr3)
 
-[
+[Abusing Amazon VPC CNI plugin for Kubernetes](https://www.elttam.com/blog/amazon-vpc-cni)
 
-ORM Leaking More Than You Joined For
+[PwnAssistant - Controlling /home's via a Home Assistant RCE](https://www.elttam.com/blog/pwnassistant)
 
-](https://www.elttam.com/blog/leaking-more-than-you-joined-for)
+[Cracking the Odd Case of Randomness in Java](https://www.elttam.com/blog/cracking-randomness-in-java)
 
-[
+[Golang code review notes](https://www.elttam.com/blog/golang-codereview)
 
-Gotchas in Email Parsing - Lessons From Jakarta Mail
+[ESP-IDF setup guide](https://www.elttam.com/blog/esp-idf-setup-guide)
 
-](https://www.elttam.com/blog/jakarta-mail-primitives)
+[Tuya IoT and EZ Mode Pairing](https://www.elttam.com/blog/ez-mode-pairing)
 
-[
+[Attacks on GCM with Repeated Nonces](https://www.elttam.com/blog/key-recovery-attacks-on-gcm)
 
-New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails
+[Simple Bugs With Complex Exploits](https://www.elttam.com/blog/simple-bugs-with-complex-exploits)
 
-](https://www.elttam.com/blog/rails-sqlite-gadget-rce)
+[Lua SUID Shells](https://www.elttam.com/blog/lua-suid-shells)
 
-[
+[Hacking with Environment Variables](https://www.elttam.com/blog/env)
 
-A Monocle on Chronicles
+[Are you winning if you're pinning?](https://www.elttam.com/blog/certpinning)
 
-](https://www.elttam.com/blog/monocle-on-chronicles)
+[Ruby 2.x Universal RCE Deserialization Gadget Chain](https://www.elttam.com/blog/ruby-deserialization)
 
-[
+[Fuze Multi-Card Technology Security Review](https://www.elttam.com/blog/fuzereview)
 
-DUCTF 2024 ESPecially Secure Boot Writeup
+[Remote LD_PRELOAD Exploitation](https://www.elttam.com/blog/goahead)
 
-](https://www.elttam.com/blog/ductf24-especially-secure-boot)
+[Building Hardened Docker Images from Scratch with Kubler](https://www.elttam.com/blog/kubler)
 
-[
+[Intro to SDR and RF Signal Analysis](https://www.elttam.com/blog/intro-sdr-and-rf-analysis)
 
-plORMbing your Prisma ORM with Time-based Attacks
+[Playing with canaries](https://www.elttam.com/blog/playing-with-canaries)
 
-](https://www.elttam.com/blog/plorming-your-primsa-orm)
+[EFF secure messaging scorecard review](https://www.elttam.com/blog/a-review-of-the-eff-secure-messaging-scorecard-pt2)
 
-[
+[Vuln research on the WAG54G home router](https://www.elttam.com/blog/vuln-research-on-the-wag54g-home-router)
 
-plORMbing your Django ORM
+[A review of the EFF secure messaging scorecard...](https://www.elttam.com/blog/a-review-of-the-eff-secure-messaging-scorecard-pt1)
 
-](https://www.elttam.com/blog/plormbing-your-django-orm)
-
-[
-
-Keeping up with the Pwnses
-
-](https://www.elttam.com/blog/talkback-intro)
-
-[
-
-Exploring the STSAFE-A110
-
-](https://www.elttam.com/blog/stsafe-a110)
-
-[
-
-RE of LR3
-
-](https://www.elttam.com/blog/re-of-lr3)
-
-[
-
-Abusing Amazon VPC CNI plugin for Kubernetes
-
-](https://www.elttam.com/blog/amazon-vpc-cni)
-
-[
-
-PwnAssistant - Controlling /home's via a Home Assistant RCE
-
-](https://www.elttam.com/blog/pwnassistant)
-
-[
-
-Cracking the Odd Case of Randomness in Java
-
-](https://www.elttam.com/blog/cracking-randomness-in-java)
-
-[
-
-Golang code review notes
-
-](https://www.elttam.com/blog/golang-codereview)
-
-[
-
-ESP-IDF setup guide
-
-](https://www.elttam.com/blog/esp-idf-setup-guide)
-
-[
-
-Tuya IoT and EZ Mode Pairing
-
-](https://www.elttam.com/blog/ez-mode-pairing)
-
-[
-
-Attacks on GCM with Repeated Nonces
-
-](https://www.elttam.com/blog/key-recovery-attacks-on-gcm)
-
-[
-
-Simple Bugs With Complex Exploits
-
-](https://www.elttam.com/blog/simple-bugs-with-complex-exploits)
-
-[
-
-Lua SUID Shells
-
-](https://www.elttam.com/blog/lua-suid-shells)
-
-[
-
-Hacking with Environment Variables
-
-](https://www.elttam.com/blog/env)
-
-[
-
-Are you winning if you're pinning?
-
-](https://www.elttam.com/blog/certpinning)
-
-[
-
-Ruby 2.x Universal RCE Deserialization Gadget Chain
-
-](https://www.elttam.com/blog/ruby-deserialization)
-
-[
-
-Fuze Multi-Card Technology Security Review
-
-](https://www.elttam.com/blog/fuzereview)
-
-[
-
-Remote LD_PRELOAD Exploitation
-
-](https://www.elttam.com/blog/goahead)
-
-[
-
-Building Hardened Docker Images from Scratch with Kubler
-
-](https://www.elttam.com/blog/kubler)
-
-[
-
-Intro to SDR and RF Signal Analysis
-
-](https://www.elttam.com/blog/intro-sdr-and-rf-analysis)
-
-[
-
-Playing with canaries
-
-](https://www.elttam.com/blog/playing-with-canaries)
-
-[
-
-EFF secure messaging scorecard review
-
-](https://www.elttam.com/blog/a-review-of-the-eff-secure-messaging-scorecard-pt2)
-
-[
-
-Vuln research on the WAG54G home router
-
-](https://www.elttam.com/blog/vuln-research-on-the-wag54g-home-router)
-
-[
-
-A review of the EFF secure messaging scorecard...
-
-](https://www.elttam.com/blog/a-review-of-the-eff-secure-messaging-scorecard-pt1)
-
-[
-
-Gaining console access to the WAG54G home router
-
-](https://www.elttam.com/blog/gaining-console-access-to-the-wag54g-home-router)
+[Gaining console access to the WAG54G home router](https://www.elttam.com/blog/gaining-console-access-to-the-wag54g-home-router)
 
 [
 

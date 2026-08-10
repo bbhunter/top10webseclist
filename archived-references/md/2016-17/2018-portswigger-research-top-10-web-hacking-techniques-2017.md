@@ -153,5 +153,3 @@ Here are the nominations so far. We're making offline archives of them all as we
 - [Advanced Flash Vulnerabilities](https://opnsec.com/category/flash/)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

@@ -707,5 +707,3 @@ PortSwigger Research
  [ Black Hat ](https://portswigger.net/research/black-hat) [ Request Smuggling ](https://portswigger.net/research/request-smuggling) [ AI ](https://portswigger.net/research/ai)
 
 [Back to all articles](https://portswigger.net/research/articles)
-
-## Related Research

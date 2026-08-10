@@ -58,7 +58,7 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCBNB3lwKCGYh2QJzjDXjEmXGw_nlKTKUrzYtFHocxn52Lm_iuSqP7jDbN6aHCKbZtPddyjmaYGYS5Fe35XncDRxp2hVEgzKQhw88yeW7qj6m50ZFDIFFreR-ROqdrLgW1Uc0LKQ/s400/MacWorld2K8-badge.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCBNB3lwKCGYh2QJzjDXjEmXGw_nlKTKUrzYtFHocxn52Lm_iuSqP7jDbN6aHCKbZtPddyjmaYGYS5Fe35XncDRxp2hVEgzKQhw88yeW7qj6m50ZFDIFFreR-ROqdrLgW1Uc0LKQ/s1600-h/MacWorld2K8-badge.jpg)
+[!](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCBNB3lwKCGYh2QJzjDXjEmXGw_nlKTKUrzYtFHocxn52Lm_iuSqP7jDbN6aHCKbZtPddyjmaYGYS5Fe35XncDRxp2hVEgzKQhw88yeW7qj6m50ZFDIFFreR-ROqdrLgW1Uc0LKQ/s1600-h/MacWorld2K8-badge.jpg)
 Last year at this time I [disclosed an issue with the IDG/MacWorld Expo registration](http://grutztopia.jingojango.net/2007/01/your-free-macworld-expo-platinum-pass_11.html) that allowed people Free Platinum Passes (valued at $1,695). I communicated this issue with IDG the week of MacWorld and they removed all the codes, fixed the site, and said thanks. Questions were asked on how to write better code and I gave them a few tips (don't trust user input, don't give your secret codes to everyone, encryption is not one-way, etc). Did they listen?
 
 Nope.
@@ -85,7 +85,7 @@ Like last year IDG is passing a long list of MD5 hashes to the client browser an
 
 Obtaining the codes -- Same as last year:
 
-Step 1. Navigate to the [main registration page](http://www.macworldexpo.com/registration/)[](http://www.macworldexpo.com/registration/)
+Step 1. Navigate to the [main registration page](http://www.macworldexpo.com/registration/)
 Step 2. Submit your initial data and view the source of the main registration page, search for "Priority Code"
 Step 3. See the JavaScript "onchange" function? It's calling "check_password()"
 Step 4. Search for "check_password()" and you'll find the list of valid codes in MD5
