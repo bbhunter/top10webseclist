@@ -32,7 +32,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 `raw_sha256` offline - re-import it rather than re-crawling.
 
 
-260 archived reference(s) name 306 store object(s) that are no longer held: 50 browser_dom_sha256, 24 content_sha256, 5 landing_sha256, 227 raw_sha256.
+258 archived reference(s) name 303 store object(s) that are no longer held: 49 browser_dom_sha256, 23 content_sha256, 5 landing_sha256, 226 raw_sha256.
 
 | Reference | Kind | Missing | Cited at |
 |---|---|---|---|
@@ -96,7 +96,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <http://yifan.lu/2011/12/10/kindle-touch-5-0-jailbreakroot-and-ssh/> | article | `raw_sha256`, `browser_dom_sha256` | `2011.md:24` |
 | <https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization> | article | `raw_sha256`, `browser_dom_sha256` | `2024.md:43` |
 | <https://amolnaik4.blogspot.com/2011/03/exploitation-of-self-only-cross-site.html> | article | `raw_sha256`, `browser_dom_sha256` | `2011.md:49` |
-| <https://bahruz.me/papers/ccs2021treqs.pdf> | whitepaper | `content_sha256` | `2021.md:24` |
 | <https://bahruz.me/publications/11844.pdf> | whitepaper | `content_sha256` | `2022.md:22` |
 | <https://blog.bentkowski.info/2018/07/vulnerability-in-hangouts-chat-aka-how.html> | article | `raw_sha256`, `browser_dom_sha256` | `2018.md:59` |
 | <https://blog.cm2.pw/exploiting-post-based-xssi/> | article | `raw_sha256` | `2020.md:33` |
@@ -197,7 +196,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://web.archive.org/web/20160403035045/http://threatpost.com/tweetdeck-taken-down-in-wake-of-xss-attacks> | article | `raw_sha256` | `2014.md:18` |
 | <https://web.archive.org/web/20160403035045/http://www.slideshare.net/dnkolegov/wh102014> | slides | `raw_sha256` | `2014.md:14` |
 | <https://web.archive.org/web/20160403035045/http://www.vupen.com/blog/20140520.Advanced_Exploitation_Firefox_UaF_Pwn2Own_2014.php> | article | `raw_sha256` | `2014.md:22` |
-| <https://web.archive.org/web/20160403035045/http://yasserali.com/hacking-paypal-accounts-with-one-click/> | article | `raw_sha256`, `browser_dom_sha256` | `2014.md:10` |
 | <https://web.archive.org/web/20160403035045/https://securehomes.esat.kuleuven.be/~gacar/persistent/the_web_never_forgets.pdf> | whitepaper | `content_sha256` | `2014.md:23` |
 | <https://web.archive.org/web/20160403035045/https://www.whitehatsec.com/blog/hackerkast-13-bonus-round/> | article | `raw_sha256` | `2014.md:51` |
 | <https://web.archive.org/web/20160403035045/https://www.whitehatsec.com/blog/hackerkast-14-bonus-round/> | article | `raw_sha256` | `2014.md:52` |

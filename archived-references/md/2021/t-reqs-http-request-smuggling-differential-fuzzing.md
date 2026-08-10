@@ -5,9 +5,9 @@ resource: "https://bahruz.me/papers/ccs2021treqs.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:07:55+00:00"
+  at: "2026-08-10T19:07:00+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://bahruz.me/papers/ccs2021treqs.pdf"
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: 093372154d479b74abe1046f447e8db0c1fcd2861f0c5bf56da352e0b80ca745
 retrieved_from: "https://bahruz.me/papers/ccs2021treqs.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:07:55+00:00"
+retrieved_utc: "2026-08-10T19:07:00+00:00"
 slug: t-reqs-http-request-smuggling-differential-fuzzing
 snapshot: 20220525035027
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://bahruz.me/papers/ccs2021treqs.pdf>
-- Preserved from: https://bahruz.me/papers/ccs2021treqs.pdf (stored) on 2026-08-09
+- Preserved from: https://bahruz.me/papers/ccs2021treqs.pdf (stored) on 2026-08-10
 - Capture timestamp: 20220525035027
 - Licence: unknown
 
