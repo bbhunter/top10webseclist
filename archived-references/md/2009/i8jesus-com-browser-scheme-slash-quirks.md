@@ -5,22 +5,22 @@ resource: "http://i8jesus.com/?p=37"
 tags: [article, webseclist-reference, i8jesus-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T11:35:35+00:00"
+  at: "2026-08-10T20:42:58+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://i8jesus.com/?p=37"
     title: Browser Scheme and Slash Quirks
   - id: capture
-    resource: "https://web.archive.org/web/20091223020337/http://i8jesus.com/?p=37"
+    resource: "https://web.archive.org/web/20100716121753/http://i8jesus.com/?p=37"
 also_at: []
 authors: []
 canonical_url: ""
 cited_by:
   - "2009.md:57"
 commit: ""
-content_sha256: e61ae18b268d973278c347cac0b70a7bbc5286a5dc3af8b07b525186c161b597
+content_sha256: aff8bea8e0de05363eff3c9a28617e11a696fc68f572f392e6c88b056859f1cd
 depth: full
 depth_reason: default
 kind: article
@@ -30,12 +30,12 @@ original_url: "http://i8jesus.com/?p=37"
 published: ""
 publisher: i8jesus.com
 publisher_english: ""
-raw_sha256: 61c9d92dcc47458008a3275e8e355e7ce83d6f7cb66187015a165284c80ad65e
+raw_sha256: e30bf324425561cb8c525f30439598fc9670fb2a2e1bd8353b8d2766d2568e2a
 retrieved_from: "http://i8jesus.com/?p=37"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T11:35:35+00:00"
+retrieved_utc: "2026-08-10T20:42:58+00:00"
 slug: i8jesus-com-browser-scheme-slash-quirks
-snapshot: 20091223020337
+snapshot: 20100716121753
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -47,8 +47,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://i8jesus.com/?p=37>
-- Preserved from: http://i8jesus.com/?p=37 (stored) on 2026-08-09
-- Capture timestamp: 20091223020337
+- Preserved from: http://i8jesus.com/?p=37 (stored) on 2026-08-10
+- Capture timestamp: 20100716121753
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -85,16 +85,16 @@ Happy nowruz!
 
 ## recent posts
 
+- [AntiSamy 1.4.1 (finally) released!](http://i8jesus.com/?p=112)
 - [Interesting JForum vulnerabilties and the ESAPI WAF](http://i8jesus.com/?p=102)
 - [ESAPI Web Application Firewall released!](http://i8jesus.com/?p=96)
-- [My Projects](http://i8jesus.com/?page_id=93)
+- [Projects](http://i8jesus.com/?page_id=93)
 - [Cross-protocol XSS with non-standard service ports](http://i8jesus.com/?p=75)
 - [Slightly improving the “Veiled” darknet](http://i8jesus.com/?p=72)
 - [Content-Disposition is not a security mechanism](http://i8jesus.com/?p=64)
 - [Two SiteMinder Flaws and Painful Disclosure](http://i8jesus.com/?p=55)
 - [Forget sidejacking, clickjacking, and carjacking: enter “Formjacking”](http://i8jesus.com/?p=48)
 - [Browser scheme/slash quirks](http://i8jesus.com/?p=37)
-- [OWASP AntiSamy 1.3 out](http://i8jesus.com/?p=34)
 
 ## Showroom
 

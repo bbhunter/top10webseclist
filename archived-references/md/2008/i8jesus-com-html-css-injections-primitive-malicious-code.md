@@ -2,40 +2,40 @@
 type: Article
 title: HTML/CSS Injections - Primitive Malicious Code
 resource: "http://i8jesus.com/?p=10"
-tags: [article, webseclist-reference, i8jesus-com]
+tags: [article, webseclist-reference, en-US, i8jesus-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:53+00:00"
+  at: "2026-08-10T20:42:57+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://i8jesus.com/?p=10"
     title: HTML/CSS Injections - Primitive Malicious Code
   - id: capture
-    resource: "https://web.archive.org/web/20080129211644/http://i8jesus.com/?p=10"
+    resource: "https://web.archive.org/web/20110823213126/http://i8jesus.com/?p=10"
 also_at: []
 authors: []
 canonical_url: ""
 cited_by:
   - "2008.md:38"
 commit: ""
-content_sha256: d687a6fb560fc54807c6e70d85d91b05c6725009ca704720cf90c467b73f252b
+content_sha256: cccfe801b839023ddb62fdff48387c9e6ad7cc7bbb117ba62d772aae8e73128a
 depth: full
 depth_reason: default
 kind: article
-language: ""
+language: en-US
 licence: unknown
 original_url: "http://i8jesus.com/?p=10"
 published: ""
 publisher: i8jesus.com
 publisher_english: ""
-raw_sha256: edde647107e6d3980cb77c5eefd3b6166cf3fb9f15bcaab7da5dc058f55a9d6c
+raw_sha256: 4771d51a5b87d9192a7dabb9b9354f6c3db768ac44147a0bcc7f70be35122b52
 retrieved_from: "http://i8jesus.com/?p=10"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:53+00:00"
+retrieved_utc: "2026-08-10T20:42:57+00:00"
 slug: i8jesus-com-html-css-injections-primitive-malicious-code
-snapshot: 20080129211644
+snapshot: 20110823213126
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -47,8 +47,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://i8jesus.com/?p=10>
-- Preserved from: http://i8jesus.com/?p=10 (stored) on 2026-08-09
-- Capture timestamp: 20080129211644
+- Preserved from: http://i8jesus.com/?p=10 (stored) on 2026-08-10
+- Capture timestamp: 20110823213126
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -61,11 +61,9 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-HTML/CSS Injections - Primitive Malicious Code (or, What’s the worst that could happen?) « omg.wtf.bbq.
+HTML/CSS Injections – Primitive Malicious Code (or, What’s the worst that could happen?) - omg.wtf.bbq.
 
-##  [HTML/CSS Injections - Primitive Malicious Code (or, What’s the worst that could happen?)](http://i8jesus.com/?p=10)
-
- 5 Jan, 2008 [security](http://i8jesus.com/?cat=1), [webappsec](http://i8jesus.com/?cat=3)
+Skip to posts
 
 One of the things I highlighted in my [paper](http://owaspantisamy.googlecode.com/files/Arshan%20Dabirsiaghi%20-%20Towards%20Malicious%20Code%20Detection%20and%20Removal.PDF) on [AntiSamy](http://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) was the fact that JavaScript is often the only thing we think of when we hear the term “malicious code” in terms of webappsec. Let’s suppose that’s false for a second. The question then becomes: If MySpace can strip out all your JavaScript, what can you do maliciously when only providing pure HTML/CSS (besides invoking JavaScript from intrinsic events, CSS image-lookups, [hilarious 3rd-party stupidity](http://www.websense.com/securitylabs/alerts/alert.php?AlertID=719), etc.)? Also, we’re ignoring all the obvious meta-iframe-redirect-to-malware type stuff.
 
@@ -79,7 +77,7 @@ These are pretty old hat too. The idea here is you provide some CSS in the part 
 
 **2. <div> hijacking**
 
-So, if you’re interested in this stuff, you’re probably a hacker. I can surmise then, that’s you’re lazy and have criminal inclinations. Am I projecting? Hope not. Assuming you are - well, why create an absolutely positioned *<div>* when you can just steal the existing one? Let’s say that MySpace has this code at the top of their page:
+So, if you’re interested in this stuff, you’re probably a hacker. I can surmise then, that’s you’re lazy and have criminal inclinations. Am I projecting? Hope not. Assuming you are – well, why create an absolutely positioned *<div>* when you can just steal the existing one? Let’s say that MySpace has this code at the top of their page:
 
 `<div id="main_logo"> <img src="/main_logo.gif" mce_src="/main_logo.gif"> </div>`
 
@@ -102,7 +100,7 @@ Guess what comes up where the main logo appears? Well, don’t take my word for 
  }
  </style>`
 
-Ugh, this turns out to be pretty problematic when you think it through. So, if we want to allow users to create their own *<div>* tags, we have to allow them to specify *id* values so they don’t have to write annoying inline CSS for everything. On the other hand - if we allow users to specify the *id* attribute, they could use it to hijack our legitimate *<div>* areas.
+Ugh, this turns out to be pretty problematic when you think it through. So, if we want to allow users to create their own *<div>* tags, we have to allow them to specify *id* values so they don’t have to write annoying inline CSS for everything. On the other hand – if we allow users to specify the *id* attribute, they could use it to hijack our legitimate *<div>* areas.
 
 What a pickle. AntiSamy “solves” this problem by allowing the application to specify “protected” *id* values. So, you can setup a list of specific *id *values that are protected or you can specify a pattern, like “myspace_*”. So, if the user tries to specify an *id* that begins with “myspace_”, they’ll get an error. This means your developers have to be aware of the naming convention and be on board with its purpose.
 
@@ -124,7 +122,7 @@ Couple of things about this attack:
 
 - It’s pure HTML. Awesome.
 - Like a remote script/CSS include, the application has no idea what malicious code the victim was tricked into executing. Double awesome. The [code is in the cloud](http://www.gnucitizen.org/blog/the-next-line-of-defence-web20-you-must-read-this), baby.
-- It’s an original vector. RSnake has this similar-looking vector on his cheat sheet: <BASE href=”javascript:alert(’XSS’);//”>. This is a localized JavaScript call because browsers were too dumb to realize this URL doesn’t make any sense (and this doesn’t even work anymore).
+- It’s an original vector. RSnake has this similar-looking vector on his cheat sheet: <BASE href=”javascript:alert(‘XSS’);//”>. This is a localized JavaScript call because browsers were too dumb to realize this URL doesn’t make any sense (and this doesn’t even work anymore).
 - Browsers can’t patch it!
 - IE7 has decided [it won’t honor <base> tags it finds outside of the *<head>* element](http://blogs.msdn.com/ie/archive/2005/08/29/457667.aspx), so IE7 is probably not a concern for this vector because it’s unlikely that untrusted users will be injecting into a page’s *<head*> element. Making a dirty joke about this bullet is left as an exercise to the reader.
 
@@ -133,27 +131,3 @@ Legally, I’m not allowed to write this section without reminding you that [som
 ---
 
 So, those are a few ideas for non-JavaScript malicious code. If you have anything to add, plz feel free to do so!
-
- [Comment RSS](http://i8jesus.com/?feed=rss2&p=10) · [TrackBack URI](http://i8jesus.com/wp-trackback.php?p=10)
-
-## recent posts
-
-- [Same Origin Bypassing Using Image Dimensions](http://i8jesus.com/?p=13)
-- [HTML/CSS Injections - Primitive Malicious Code (or, What’s the worst that could happen?)](http://i8jesus.com/?p=10)
-- [Java Null Byte Injections](http://i8jesus.com/?p=9)
-- [XSS Attack Discovery and the Blackbox Browser Testing Paradigm](http://i8jesus.com/?p=8)
-- [Creating a “Security” Log Level in Log4j - And The Reality of IP Usefulness](http://i8jesus.com/?p=7)
-- [A Very Arshan Christmas Party 2007](http://i8jesus.com/?p=6)
-- [About Arshan](http://i8jesus.com/?page_id=5)
-- [OWASP AntiSamy 1.0 Released!](http://i8jesus.com/?p=4)
-- [So, I have a blog now.](http://i8jesus.com/?p=3)
-
-## Showroom
-
-- [OWASP](http://www.owasp.org)
-- [Aspect Security](http://www.aspectsecurity.com)
-- [Bugtraq](http://www.securityfocus.com/archive/1)
-- [gnucitizen](http://gnucitizen.org/)
-- [ha.ckers.org](http://ha.ckers.org/)
-- [jeremiah](http://jeremiahgrossman.blogspot.com/)
-- [tssci](http://tssci-security.com)

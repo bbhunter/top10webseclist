@@ -32,7 +32,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 `raw_sha256` offline - re-import it rather than re-crawling.
 
 
-258 archived reference(s) name 303 store object(s) that are no longer held: 49 browser_dom_sha256, 23 content_sha256, 5 landing_sha256, 226 raw_sha256.
+253 archived reference(s) name 298 store object(s) that are no longer held: 49 browser_dom_sha256, 23 content_sha256, 5 landing_sha256, 221 raw_sha256.
 
 | Reference | Kind | Missing | Cited at |
 |---|---|---|---|
@@ -61,11 +61,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <http://ha.ckers.org/blog/20100621/side-channel-attacks-in-ssl/> | article | `raw_sha256` | `2010.md:29` |
 | <http://ha.ckers.org/blog/20100820/quick-proxy-detection/> | article | `raw_sha256` | `2010.md:26` |
 | <http://ha.ckers.org/blog/20100822/using-cookies-for-selective-dos-and-state-detection/> | article | `raw_sha256` | `2010.md:25` |
-| <http://i8jesus.com/?p=10> | article | `raw_sha256` | `2008.md:38` |
-| <http://i8jesus.com/?p=13> | article | `raw_sha256` | `2008.md:34` |
-| <http://i8jesus.com/?p=37> | article | `raw_sha256` | `2009.md:57` |
-| <http://i8jesus.com/?p=48> | article | `raw_sha256` | `2009.md:59` |
-| <http://i8jesus.com/?p=75> | article | `raw_sha256` | `2009.md:58` |
 | <http://krebsonsecurity.com/2015/05/st-louis-federal-reserve-suffers-dns-breach/> | article | `raw_sha256`, `browser_dom_sha256` | `2015.md:25` |
 | <http://ui-redressing.mniemietz.de/> | article | `content_sha256` | `2010.md:76` |
 | <http://web.archive.org/web/20160507023636/http://averagesecurityguy.info/2013/11/08/finding-weak-rails-security-tokens/> | article | `raw_sha256` | `2013.md:34` |
