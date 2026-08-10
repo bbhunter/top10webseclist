@@ -415,6 +415,24 @@ class TestMalformedPublishedFiles(unittest.TestCase):
     def test_an_occasional_entity_is_not_a_finding(self):
         self.assertEqual(verify.malformed(self.page("a &amp; b " + "prose " * 200)), [])
 
+    def test_an_escaped_payload_among_literal_markup_is_the_research(self):
+        """Feed injection works by putting `&lt;script&gt;` INSIDE an XML
+        element, so a paper about it quotes escaped payloads on purpose.
+        Unescaping those would rewrite the technique. A conversion that escaped
+        a document's markup by mistake escapes ALL of it: the RSS paper carries
+        34 escaped brackets against 325 literal ones."""
+        feed = ("<rss version=\"2.0\"> <channel> <title> "
+                "&lt;script&gt;alert('t')&lt;/script&gt; </title> "
+                "<link>http://example.test/</link> <description> "
+                "&lt;script&gt;alert('d')&lt;/script&gt; </description> "
+                "</channel> </rss> " + "<item> <title>t</title> </item> " * 40)
+        found = verify.malformed(self.page(feed))
+        self.assertEqual([f for f in found if "entities" in f[1]], [])
+
+    def test_a_document_whose_whole_markup_was_escaped_is_still_a_warning(self):
+        found = verify.malformed(self.page("&lt;div&gt;&lt;p&gt;text&lt;/p&gt;&lt;/div&gt; " * 8))
+        self.assertTrue(any("entities" in what for _level, what, _d in found))
+
     def test_an_unclosed_code_fence_is_a_warning(self):
         found = verify.malformed(self.page("```csharp\nvar x = 1;\n"))
         self.assertTrue(any("code fence" in what for _level, what, _d in found))

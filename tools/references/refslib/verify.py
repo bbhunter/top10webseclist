@@ -302,12 +302,26 @@ def malformed(text):
         found.append(("fail", "published file is mostly replacement characters",
                       "%d of %d characters" % (replacements, len(document))))
 
-    entities = len(ENTITY.findall(FENCED_BLOCK.sub("", document)))
-    if entities > 20:
-        # `&lt;`/`&gt;` written into the archive verbatim, so a reader sees the
-        # markup instead of the code being quoted.
+    # `&lt;`/`&gt;` written into the archive verbatim, so a reader sees the
+    # markup instead of the code being quoted.
+    #
+    # MEASURED AS A SHARE, because an escaped payload can be the research
+    # itself. Feed injection works by putting `&lt;script&gt;` INSIDE an XML
+    # element, so a paper about it quotes escaped payloads on purpose - and
+    # unescaping those would rewrite the technique, which is the one thing this
+    # archive must never do. A conversion that escaped a document's markup by
+    # mistake escapes ALL of it; the RSS paper carries 34 escaped brackets
+    # against 325 literal ones, and it is the only file in the corpus over the
+    # count threshold at all.
+    unfenced = FENCED_BLOCK.sub("", document)
+    entities = len(ENTITY.findall(unfenced))
+    escaped_angles = len(re.findall(r"&(?:lt|gt);", unfenced))
+    literal_angles = len(re.findall(r"[<>]", unfenced))
+    escaped_share = escaped_angles / max(escaped_angles + literal_angles, 1)
+    if entities > 20 and escaped_share >= 0.5:
         found.append(("warn", "published file carries unescaped HTML entities",
-                      "%d" % entities))
+                      "%d entities, %.0f%% of its angle brackets"
+                      % (entities, escaped_share * 100)))
 
     # A fence ALONE ON ITS LINE. An inline ```span``` is not a block, and
     # counting it made two correct files look unbalanced.

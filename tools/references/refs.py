@@ -1645,13 +1645,14 @@ def _pdf_is_stale(entry, config, archive_dir):
     """Whether this reference's published PDF no longer reflects its inputs.
 
     A full `pdf --force` reprints 1,344 documents through a browser to fix the
-    handful that changed. Three things make a PDF out of date, and each is
+    handful that changed. Four things make a PDF out of date, and each is
     something a preceding command recorded:
 
     * the Markdown it was printed from has been rewritten since;
     * `papers` has since fetched the publisher's own PDF of the article, which
       outranks anything we could print;
-    * `images` has since preserved figures that are not in it.
+    * `images` has since preserved figures that are not in it;
+    * `translate` has since written an English file that has never been printed.
     """
     steps = entry.get("steps") or {}
     slug = entry.get("slug") or ""
@@ -1661,6 +1662,18 @@ def _pdf_is_stale(entry, config, archive_dir):
         return True
     if (entry.get("paper") or {}).get("sha256") and printed.get("source") != "linked-paper":
         return True
+    # THE TRANSLATION IS PRINTED IN A PASS OF ITS OWN, and it is reached only for
+    # a reference this selector keeps. Checked BEFORE the source test: a Japanese
+    # slide deck's own PDF is copied verbatim and can never be stale, and
+    # skipping it here left its brand-new English file unprinted.
+    translated_md = archive_dir / collections_module.translated_md_relpath(
+        entry, config, slug)
+    if translated_md.exists():
+        translated_pdf = archive_dir / collections_module.translated_pdf_relpath(
+            entry, config, slug)
+        if not translated_pdf.exists() or (translated_pdf.stat().st_mtime
+                                           < translated_md.stat().st_mtime):
+            return True
     if printed.get("source") != "markdown":
         return False
     # A converter fix changes what the document should look like without

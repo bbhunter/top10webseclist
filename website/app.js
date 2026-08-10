@@ -161,6 +161,7 @@ const state = {
   pdfItem: null,
   pdfPath: "",
   pdfKind: "pdf",
+  pdfVersion: "",
   pdfOriginal: false,
   pdfVerified: false,
   pdfViewMode: "page-width"
@@ -243,7 +244,24 @@ function safeArchivePath(value, kind) {
   return expected.test(value) ? value : "";
 }
 
-function archiveUrl(path, kind) {
+// A REDEPLOYED DOCUMENT NEEDS A NEW URL, or nobody sees it. Preserved documents
+// are served `max-age=86400, stale-while-revalidate=604800`, which is right for
+// files that almost never change - and means that when one DOES change, the edge
+// keeps serving the old bytes for a day and revalidates lazily for a week. A
+// reprint that replaced a text render with the publisher's own paper was invisible
+// on the live site while the app around it had already updated, because the shell
+// revalidates on every load and the documents do not.
+//
+// So the version travels in the URL, exactly as the collection shards already do.
+// PER DOCUMENT rather than one token for the whole archive: the token is the
+// moment that file was written, so adding one reference does not invalidate 1,500
+// unchanged documents, and a 27 MiB PDF is re-fetched only when it is reprinted.
+function versionToken(value) {
+  const digits = String(value || "").replace(/\D/g, "");
+  return digits ? digits.slice(0, 14) : "";
+}
+
+function archiveUrl(path, kind, version = "") {
   const safePath = safeArchivePath(path, kind);
   if (!safePath) return "";
   const pageDirectory = new URL(".", location.href);
@@ -254,7 +272,10 @@ function archiveUrl(path, kind) {
   const archiveRoot = /\/website\/$/i.test(pageDirectory.pathname)
     ? new URL("../", pageDirectory)
     : pageDirectory;
-  return new URL(safePath, archiveRoot).href;
+  const url = new URL(safePath, archiveRoot);
+  const token = versionToken(version);
+  if (token) url.search = `v=${token}`;
+  return url.href;
 }
 
 function documentShareUrl(item, format = "artifact") {
@@ -364,11 +385,20 @@ function archivePathsFor(record) {
   const sourcePdf = noPdf ? "" : usable(record.steps?.pdf?.file || "", "pdf");
   const englishMd = usable(record.steps?.render?.translation_file || "", "md");
   const englishPdf = noPdf ? "" : usable(record.steps?.["pdf-translation"]?.file || "", "pdf");
+  // The moment each file was written, so the URL changes exactly when the file
+  // does. `render` writes the Markdown and its translation together, so both
+  // share its timestamp; the two PDFs are printed in separate passes.
+  const renderedAt = record.steps?.render?.utc || "";
+  const printedAt = record.steps?.pdf?.utc || "";
+  const translatedAt = record.steps?.["pdf-translation"]?.utc || "";
   return {
     mdPath: englishMd || sourceMd,
     pdfPath: englishPdf || sourcePdf,
+    mdVersion: renderedAt,
+    pdfVersion: englishPdf ? translatedAt : printedAt,
     originalMdPath: englishMd ? sourceMd : "",
     originalPdfPath: englishPdf ? sourcePdf : "",
+    originalPdfVersion: englishPdf ? printedAt : "",
     translated: Boolean(englishMd || englishPdf)
   };
 }
@@ -440,6 +470,10 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
     const pdfPath = pdfLink.pdfPath || "";
     const originalMdPath = documentLink.originalMdPath || "";
     const originalPdfPath = pdfLink.originalPdfPath || "";
+    // Read off the SAME link as the path each one versions.
+    const mdVersion = documentLink.mdVersion || "";
+    const pdfVersion = pdfLink.pdfVersion || "";
+    const originalPdfVersion = pdfLink.originalPdfVersion || "";
 
     items.push({
       id: `${year}-${position++}`,
@@ -486,13 +520,17 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
       archiveStatus: mdPath && pdfPath ? "preserved" : mdPath || pdfPath ? "partial" : record?.health?.status === "ok" ? "live" : "missing",
       mdPath,
       pdfPath,
+      ...(mdVersion ? { mdVersion } : {}),
+      ...(pdfVersion ? { pdfVersion } : {}),
       // The Markdown hotlinks the publisher's images, because publishing 4,500
       // of them would double this repository. Where the archive holds its own
       // re-encoded copies they are printed into the PDF, so a picture the
       // reader cannot load has somewhere to send them. Emitted only where true,
       // for the same payload reason as the translation keys.
       ...(pdfLink.record?.steps?.images?.result === "stored" ? { figuresInPdf: true } : {}),
-      ...(originalMdPath || originalPdfPath ? { originalMdPath, originalPdfPath, translated: true } : {}),
+      ...(originalMdPath || originalPdfPath
+        ? { originalMdPath, originalPdfPath, originalPdfVersion, translated: true }
+        : {}),
       archived: Boolean(mdPath || pdfPath),
       citedBy: record?.cited_by || [`${year}.md:${lineIndex + 1}`],
       readKey: lookupKey,
@@ -796,7 +834,7 @@ function wireShell() {
 
   $("#pdf-frame").addEventListener("load", () => {
     if (!state.pdfPath) return;
-    const expectedUrl = archiveUrl(state.pdfPath, state.pdfKind);
+    const expectedUrl = archiveUrl(state.pdfPath, state.pdfKind, state.pdfVersion);
     if (!expectedUrl || !$("#pdf-frame").src.startsWith(expectedUrl)) return;
     clearTimeout(pdfLoadTimer);
     $("#pdf-loading").hidden = true;
@@ -2376,7 +2414,7 @@ async function verifyPdf(mode, url, path) {
 
 function setPdfView(mode) {
   if (!state.pdfPath || !["page-width", "page-fit"].includes(mode)) return;
-  const url = archiveUrl(state.pdfPath, state.pdfKind);
+  const url = archiveUrl(state.pdfPath, state.pdfKind, state.pdfVersion);
   if (!url) return showPdfFallback();
   state.pdfViewMode = mode;
   const frame = $("#pdf-frame");
@@ -2398,7 +2436,10 @@ function setPdfView(mode) {
 function openPdfViewer(item, options = {}) {
   const kind = options.kind === "listingPdf" ? "listingPdf" : "pdf";
   const path = safeArchivePath(options.path || item?.pdfPath, kind);
-  const url = archiveUrl(path, kind);
+  // An annual results PDF is not a preserved reference and carries no token.
+  const version = kind === "listingPdf" ? ""
+    : options.original ? (item?.originalPdfVersion || "") : (item?.pdfVersion || "");
+  const url = archiveUrl(path, kind, version);
   if (!path || !url) {
     toast("This PDF path is unavailable or did not pass validation");
     return;
@@ -2407,6 +2448,9 @@ function openPdfViewer(item, options = {}) {
   state.pdfItem = item || null;
   state.pdfPath = path;
   state.pdfKind = kind;
+  // The token belongs to the path, so it is held beside it: the verify probe,
+  // the frame and the download link must all ask for the same URL.
+  state.pdfVersion = options.original ? (item?.originalPdfVersion || "") : (item?.pdfVersion || "");
   state.pdfVerified = false;
   const title = options.title || item?.title || "Preserved PDF";
   $("#pdf-title").textContent = title;
@@ -2493,7 +2537,8 @@ async function togglePdfLinks(force) {
 
   const list = $("#pdf-links-list");
   const item = state.pdfItem;
-  const markdownUrl = archiveUrl(state.pdfOriginal ? item?.originalMdPath : item?.mdPath, "md");
+  const markdownUrl = archiveUrl(state.pdfOriginal ? item?.originalMdPath : item?.mdPath, "md",
+                                 item?.mdVersion);
   if (!markdownUrl) {
     list.innerHTML = `<p>No preserved text accompanies this document, so its links could not be listed.</p>`;
     return;
@@ -2520,6 +2565,7 @@ function clearPdfViewer() {
   pdfLoadTimer = null;
   state.pdfItem = null;
   state.pdfPath = "";
+  state.pdfVersion = "";
   state.pdfVerified = false;
   if (!$("#reader-dialog").open) clearDocumentUrl();
   const frame = $("#pdf-frame");
@@ -2705,7 +2751,7 @@ async function openReader(item, options = {}) {
   const showOriginal = Boolean(options.original && item?.originalMdPath);
   const readerPath = showOriginal ? item.originalMdPath : item?.mdPath;
   if (!readerPath) return;
-  const markdownUrl = archiveUrl(readerPath, "md");
+  const markdownUrl = archiveUrl(readerPath, "md", item?.mdVersion);
   if (!markdownUrl) return toast("This Markdown path did not pass validation");
   const requestToken = ++readerRequestToken;
   const originalUrl = safeExternalUrl(item.originalUrl);

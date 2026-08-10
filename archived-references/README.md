@@ -211,7 +211,7 @@ Three more lists complete the picture: [needs-work.md](needs-work.md) is everyth
 | [1 bug, $50,000+ in bounties, how Zendesk intentionally left a backdoor in hundreds of Fortune 500 companies](md/2024/gist-1-bug-50-000-bounties-how-zendesk-intentionally-left-backdoor-companies.md) | article | Gist |  | research | 1 |
 | [[EN] Multi-sandwich attack with MongoDB Object ID or the scenario for real-time monitoring of web application invitations: a new use case for the sandwich attack](md/2024/aeth-cc-en-multi-sandwich-attack-mongodb-object-id-scenario-real-time-attack.md) | article | aeth.cc |  | research | 1 |
 | [[EN] Unsecure time-based secret and Sandwich Attack - Analysis of my research and release of the “Reset Tolkien” tool](md/2024/aeth-cc-en-unsecure-time-based-secret-sandwich-attack-analysis-my-research-tool.md) | article | aeth.cc |  | research | 1 |
-| [[Quick note] How to build CodeQL DB with closed-source project(.NET Assembly)](md/2024/2024-medium-quick-note-how-build-codeql-db-closed-source-project-net-assembly.md) | article | Medium | 2024 | research | 1 |
+| [[Quick note] How to build CodeQL DB with closed-source project(.NET Assembly)](md/2024/2024-medium-quick-note-how-build-codeql-db-closed-source-project-net-assembly.md) · [English](md/2024/2024-medium-quick-note-how-build-codeql-db-closed-source-project-net-assembly_translate.md) | article | Medium | 2024 | research | 1 |
 | [A Flushing Attack on the DNS Cache](md/2024/usenix-org-flushing-attack-dns-cache.md) | article | usenix.org |  | research | 1 |
 | [A Race to the Bottom - Database Transactions Undermining Your AppSec](md/2024/blog-doyensec-com-race-bottom-database-transactions-undermining-your-appsec.md) | article | blog.doyensec.com |  | research | 1 |
 | [Another vision for SSRF](md/2024/gccybermonks-com-another-vision-ssrf.md) | article | gccybermonks.com |  | research | 1 |
@@ -430,7 +430,7 @@ Three more lists complete the picture: [needs-work.md](needs-work.md) is everyth
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
 | [CVE-2022-22947: SpEL Casting and Evil Beans](md/2022/wya-pl-cve-2022-22947-spel-casting-evil-beans.md) | advisory | wya.pl |  | research | 1 |
-| [A Magic Way of XSS in HTTP/2](md/2022/tttang-com-magic-way-xss-http-2.md) | article | tttang.com |  | research | 1 |
+| [A Magic Way of XSS in HTTP/2](md/2022/tttang-com-magic-way-xss-http-2.md) · [English](md/2022/tttang-com-magic-way-xss-http-2_translate.md) | article | tttang.com |  | research | 1 |
 | [A story of leaking uninitialized memory from Fastly](md/2022/2022-medium-story-leaking-uninitialized-memory-fastly.md) | article | Medium | 2022 | research | 1 |
 | [Account hijacking using "dirty dancing" in sign-in OAuth-flows](md/2022/2022-labs-detectify-account-hijacking-using-dirty-dancing-sign-oauth-flows.md) | article | Labs Detectify | 2022 | research | 1 |
 | [Apache Pinot SQLi and RCE Cheat Sheet](md/2022/blog-doyensec-com-apache-pinot-sqli-rce-cheat-sheet.md) | article | blog.doyensec.com |  | research | 1 |
@@ -1266,7 +1266,7 @@ Three more lists complete the picture: [needs-work.md](needs-work.md) is everyth
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
-| [48Bits Blog » Blog Archive » IIS6/ASP & file upload for fun and profit](md/2010/blog-48bits-com-48bits-blog-blog-archive-iis6-asp-file-upload-fun-profit.md) | article | blog.48bits.com |  | research | 1 |
+| [48Bits Blog » Blog Archive » IIS6/ASP & file upload for fun and profit](md/2010/blog-48bits-com-48bits-blog-blog-archive-iis6-asp-file-upload-fun-profit.md) · [English](md/2010/blog-48bits-com-48bits-blog-blog-archive-iis6-asp-file-upload-fun-profit_translate.md) | article | blog.48bits.com |  | research | 1 |
 | [A New Type of Phishing Attack](md/2010/2022-azarask-new-type-phishing-attack.md) | article | AzarAsk | 2022 | research | 1 |
 | [A Twitter DomXss, a wrong fix and something more](md/2010/blog-mindedsecurity-com-twitter-domxss-wrong-fix-something-more.md) | article | blog.mindedsecurity.com |  | research | 1 |
 | [An Analysis of Private Browsing Modes in Modern Browsers](md/2010/usenix-org-analysis-private-browsing-modes-modern-browsers.md) | article | usenix.org |  | records | 1 |
@@ -1533,7 +1533,7 @@ Three more lists complete the picture: [needs-work.md](needs-work.md) is everyth
 | [Óâåäîìëåíèå î áåçîïàñíîñòè: New vulnerabilities in CapCC for WordPress](md/2008/3proxy-ru-security-nnov-ru-securityvulns-ru-redirects-3.md) · [English](md/2008/3proxy-ru-security-nnov-ru-securityvulns-ru-redirects-3_translate.md) | article | securityvulns.ru |  | research | 1 |
 | [Обхід багатопрохідних фільтрів - Websecurity](md/2008/websecurity-com-ua-websecurity.md) · [English](md/2008/websecurity-com-ua-websecurity_translate.md) | article | websecurity.com.ua |  | research | 1 |
 | [Пекло редиректорів (Redirectors’ hell) - Websecurity](md/2008/websecurity-com-ua-redirectors-hell-websecurity.md) · [English](md/2008/websecurity-com-ua-redirectors-hell-websecurity_translate.md) | article | websecurity.com.ua |  | records | 1 |
-| [JSON Hijacking with UTF-7](md/2008/json-hijacking-utf-7.md) | slides |  |  | research | 1 |
+| [JSON Hijacking with UTF-7](md/2008/json-hijacking-utf-7.md) · [English](md/2008/json-hijacking-utf-7_translate.md) | slides |  |  | research | 1 |
 | [365-Day: https Cookie Stealing](md/2008/365-day-https-cookie-stealing.md) | whitepaper |  |  | research | 1 |
 | [Abusing HTML 5 Structured Client-side Storage](md/2008/abusing-html-5-structured-client-side-storage.md) | whitepaper |  |  | research | 1 |
 | [Abusing PHP Sockets](md/2008/abusing-php-sockets.md) | whitepaper |  |  | research | 1 |
