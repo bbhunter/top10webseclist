@@ -94,3 +94,34 @@ This pass did not manufacture a 60–69 recovery: every qualifying result remain
 above 70 after novelty penalties, while prior-year and same-mechanism candidates
 failed independent gates regardless of score. The audit did not run the reference
 archiver or refresh either Web application.
+
+## Single-publisher sweep — `blog.voorivex.team` (10 August 2026)
+
+A later, separate pass from the audit above: rather than sweeping a year, it swept
+one publisher across all years. Every post on `blog.voorivex.team` was enumerated
+from the site's sitemap so pagination could not hide any. Two are already in
+[`2024.md`](../../2024.md) — *OAuth Non-Happy Path to ATO* (#8 in the Top 10) and
+*Android Exploit to RCE* — and four more fall in the 2024 window. **Nothing was
+added:** the three technique writeups scored below the 60 gate and the fourth is
+not a technique writeup at all. Scorecards are in [judgements.md](judgements.md).
+
+| Score | Verdict | List decision | Candidate |
+|---:|---|---|---|
+| 49.6 | Useful application or case study | below gate | [Account Takeover due to DNS Rebinding](https://blog.voorivex.team/account-takeover-due-to-dns-rebinding) |
+| 46.3 | Useful application or case study | below gate | [A Weird CSP Bypass led to $3.5k Bounty](https://blog.voorivex.team/a-weird-csp-bypass-led-to-35k-bounty) |
+| 44.2 | Useful application or case study | below gate | [Drilling the redirect_uri in OAuth](https://blog.voorivex.team/drilling-the-redirecturi-in-oauth) |
+
+Two of the three warrant a note beyond the score. The CSP bypass is an instance of
+*Bypassing CSP with policy injection* (Gareth Heyes, 2019), which is already listed
+in [`2019.md`](../../2019.md) at 83.8 and archived — the semicolon injection and the
+first-occurrence-wins rule are that entry's contribution, not this one's. And the
+DNS-rebinding post does not describe DNS rebinding: the mechanism is a
+verified-once domain allowlist that is never re-checked at use, which is the
+dangling-DNS and subdomain-takeover lineage. Recorded so a later sweep does not
+re-chase either under the wrong name.
+
+### Screened lead
+
+| Candidate | Outcome | Screening evidence |
+|---|---|---|
+| [$20,300 Bounties from a 200 Hour Hacking Challenge](https://blog.voorivex.team/20300-bounties-from-a-200-hour-hacking-challenge) | not a technique candidate | A bug-bounty experience narrative by Mohammad Zaheri. The findings it lists (Swagger exposure, time-based SQLi, IDOR via method switching, stored XSS with a Google JSONP CSP gadget, exposed config) are each standard classes reported as a tally with no technique developed; there is no candidate contribution to score. |

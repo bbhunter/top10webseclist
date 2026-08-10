@@ -81,3 +81,30 @@ The prior missed section contained *Silent Spring* at 81.7. Its technical
 judgement remains strong, but arXiv records the complete work on 22 July 2022.
 The 2023 USENIX appearance cannot move its first-publication year, so this audit
 removes it from `2023.md` while retaining the full scorecard and history event.
+
+## Single-publisher sweep — `blog.voorivex.team` (10 August 2026)
+
+A later, separate pass from the audit above: rather than sweeping a year, it swept
+one publisher across all years. Every post on `blog.voorivex.team` was enumerated
+from the site's sitemap so pagination could not hide any. Five fall in the 2023
+window — the blog's earliest year. **Nothing was added.** Two are technique
+writeups and were scored; the other three are bug-bounty narratives and a career
+guide with no candidate contribution to judge. Scorecards are in
+[judgements.md](judgements.md).
+
+| Score | Verdict | List decision | Candidate |
+|---:|---|---|---|
+| 47.4 | Meaningful combination or adaptation | below gate | [Hijacking OAuth Code via Reverse Proxy for Account Takeover](https://blog.voorivex.team/hijacking-oauth-code-via-reverse-proxy-for-account-takeover) |
+| 32.9 | Useful application or case study | below gate | [Uncovering a Command Injection, $2400 Bounty](https://blog.voorivex.team/uncovering-a-command-injection-2400-bounty) |
+
+### Screened leads
+
+| Candidate | Outcome | Screening evidence |
+|---|---|---|
+| [$7000 Bounty on a Single Web Application](https://blog.voorivex.team/7000-bounty-on-a-single-web-application) | not a technique candidate | Bug-bounty narrative by Amir Abbas (ImAyrix). Nine findings across standard classes (reflected and stored XSS, IDOR, upload content-type bypass) presented as a tally; the stated lesson is a recon strategy, not a technique. |
+| [$9240 Bounty in 30 days Hunt Challenge](https://blog.voorivex.team/9240-bounty-in-30-days-hunt-challenge) | not a technique candidate | Bug-bounty narrative by Omid Rezaei. Twelve findings on one program (CORS, cache deception, CSV injection, 2FA bypasses) reported as outcomes; the article is about the hunt, not about a mechanism. |
+| [Bug Bounty Roadmap from Scratch](https://blog.voorivex.team/bug-bounty-roadmap-from-scratch) | out of scope | A five-tier learning roadmap by Yashar Shahinzadeh that curates external resources. No security technique is described, so there is nothing for the rubric to measure. |
+
+The three screened posts are listed rather than silently dropped so a later sweep
+does not re-fetch and re-read them. They are excluded for having no candidate
+contribution, which is a scope judgement rather than a low score.

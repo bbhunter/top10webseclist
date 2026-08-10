@@ -148,6 +148,16 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
+## 71.2 — [We Need to Talk About CSRF Again](https://blog.voorivex.team/we-need-to-talk-about-csrf-again) — Amirmohammad Safari, Voorivex
+
+**KEPT** · Meaningful extension · confidence Medium
+
+**What is new.** A fourth CORS-safelisted content type that the Fetch standard does not list: Chromium safelists `message/ad-auction-trusted-signals-request` for the Protected Audience API behind `kProtectedAudienceCorsSafelistKVv2Signals`, enabled by default, so a cross-origin POST carrying it took no preflight in every Chromium browser. That defeats the whole content-type-allowlist/blocklist family of CSRF defences rather than one implementation of it, demonstrated against Express and Apollo Server and then amplified into an XS-Leak: Apollo automatic persisted queries prime 36 hash-addressed queries, GraphQL aliases inflate a hit to tens of kilobytes, and `performance.getEntriesByName()` reads the fast/slow split back character by character. Chromium has since replaced the default-on flag with a per-request `TrustedParams` bool.
+
+**What was already known.** The safelist-of-three and its CSRF consequence are textbook, the FastAPI half (an absent `Content-Type` parsed as JSON) is credited by the author to an earlier write-up, and timing XS-Leaks are long established. The load-bearing claim is that the browser's real safelist is wider than the specified one, which no earlier public source I could find had noted; a failed search is not proof of first discovery, hence Medium confidence and the separate attribution of the Chromium fix.
+
+---
+
 ## 71.0 — [Sub:jugation — Hijacking Cloud Identities by Recycling Namespaces in Global OIDC Issuers](https://astrix.security/learn/blog/subjugation-hijacking-cloud-identities-by-recycling-namespaces-in-global-oidc-issuers/) [Sleeper squats follow-up](https://labs.boostsecurity.io/articles/sleeper-squats-github-oidc-immutable-subject-claim) — Tal Skverer, Astrix
 
 **KEPT** · Meaningful combination · confidence Medium
@@ -309,6 +319,16 @@ about marginal novelty and not about whether the writeup is worth reading.
 **What is new.** Relocating the boundary to the per-browser DOM-to-ViewStructure translation, evidenced by an asymmetry only a multi-browser method could find: the embedder-harvests-credentials direction reproduces in Firefox and nowhere else. Plus a modern web-isolation corpus (sandboxed and COEP credentialless iframes, object and embed), a silent no-permission Cross-Context Account Oracle that enumerates which services a victim holds accounts on, and the first quantification of exposure at 59 percent of the top million embeddable.
 
 **What was already known.** More than the abstract implies. ACSAC 2021 already published that Android autofill does not prevent cross-origin iframe fill, with a 14-manager table, but held the browser constant so it could not see the translation divergence. CCS 2018 established gameable app-to-domain trust, and AutoSpill (CODASPY 2023) covered origin confusion for web content inside native view structures. Two of the three headline outcomes are broadenings rather than discoveries.
+
+---
+
+## 66.3 — [JavaScript Functions Overload Confusion](https://blog.voorivex.team/javascript-functions-overload-confusion) — Yashar Shahinzadeh, Voorivex
+
+**KEPT** · Tooling / methodology · confidence Medium
+
+**What is new.** The census, not the trick. Walking 2,228 Blink IDL files to ask which overloaded operations resolve on argument *type* and then reach a sink or a security decision: 112 operations are genuinely overloaded, about 30 reach a sink, only 4 type forks gate a security decision, 2 fork on argument count, and about 22 Trusted Types sinks fork on genuine-object-versus-string inside C++ — so a value that is a string to the check and an object to the sink walks past enforcement. That map of where validator and sink can disagree on one value did not exist publicly.
+
+**What was already known.** The primitive itself: structured clone preserves an array's named own properties while the array stringifies to its single element, so one value satisfies two type expectations. That is documented community postMessage-exploitation material, and the specific case came from a challenge by joaxcar that the author solved before generalising. `setTimeout` compiling non-callables and `document.write` forking on `TrustedHTML` are specified behaviour. Scored down for soundness and reproducibility: the enumeration is author-reported as LLM-assisted and no tool, repo or full table is published, so the census cannot be independently re-run from the post.
 
 ---
 
@@ -512,6 +532,16 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
+## 59.3 — [The Usual Suspect: Type Confusion in Twelve Bytes](https://blog.voorivex.team/usual-suspect-type-confusion-in-twelve-bytes) — HamidSj, Voorivex
+
+**REMOVED** · Meaningful extension · confidence Medium
+
+**What is new.** A reusable observation about magic-byte sniffers rather than about one library: ISO-BMFF detection in `file-type` matches `ftyp` at offset 4 and the brand at offset 8 but never validates the 4-byte box-size field at offset 0, so any format sniffed by a suffix of its header hands the attacker free control of the bytes *before* the magic — exactly where a comment opener has to go. `/*` there and `*/` after the brand yields a file that is a valid HEIC to the validator and valid JavaScript, HTML, CSS or JSON to the consumer.
+
+**What was already known.** Polyglot uploads and comment-wrapped image headers are old (GIF89a= as a JS assignment is the canonical example), detection-versus-consumption gaps are the standard framing, and the author positions the work as the same pattern they previously described for libmagic. One library, one version, and served-by-extension is the precondition doing most of the work; the score lands just under the keep-cut on marginal novelty, not on quality.
+
+---
+
 ## 59.2 — [HTTP/2 WAF Bypass: A Black-Box Methodology (h2 framing)](https://lab.ctbb.show/research/h2-WAF-Bypasses) — Diyan Apostolov
 
 **REMOVED** · Meaningful combination · confidence Medium
@@ -609,6 +639,16 @@ about marginal novelty and not about whether the writeup is worth reading.
 **What is new.** A per-framework map of URL-decoding pipelines across eight frameworks with concrete new gadgets, including a React Router case-sensitive double-decode and a Next.js page-vs-route-handler split, plus published labs.
 
 **What was already known.** CSPT itself, its exploitation to CSRF and XSS, and the decode-level reasoning were established by Doyensec CSPT2CSRF (2024) and Berson WAF decode-level work; this systematises an established primitive.
+
+---
+
+## 57.7 — [Three 0-Day Vulnerabilities in Adminer](https://blog.voorivex.team/three-0-day-vulnerabilities-in-adminer) — Yashar Shahinzadeh & Amirmohammad Safari, Voorivex
+
+**REMOVED** · Useful application · confidence High
+
+**What is new.** Three concrete primitives against a database client, of which two transfer past the product. A malicious MySQL server controls the version banner, and Adminer's `~^(\d\.?\d).*~s` extraction returns the raw string when the match fails — landing attacker text inside a `<script>` that already carries a valid CSP nonce, so the policy signs the payload. That "the server you connect to is untrusted input" pattern applies to any DB-admin UI. `VACUUM INTO` also survives a blocklist that only knows `ATTACH`, a useful note on blocklists chasing named statements instead of capabilities.
+
+**What was already known.** ODBC DSN injection through unsanitised connection strings, and `TraceFile`/`TraceOn` as the write primitive, are established MSSQL tradecraft. `VACUUM INTO` as a file-write has been documented since at least the 2020 osquery discussion and sits in PayloadsAllTheThings. Rogue-MySQL-server attacks on Adminer are a line the same team already contributed to (the file-read that became CVE-2021-43008). Good vulnerability research, low class novelty.
 
 ---
 
@@ -732,6 +772,16 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
+## 55.3 — [Shaking the MCP Tree: a security deep dive](https://blog.voorivex.team/shaking-the-mcp-tree) — Amirmohammad Safari, Voorivex
+
+**REMOVED** · Useful application · confidence Medium
+
+**What is new.** An early field survey of what unprotected RFC 7591 Dynamic Client Registration actually buys an attacker on real MCP deployments: self-registering a client with a `javascript:` redirect URI to reach a client-side redirect handler, `redirect_uri` reflected into a consent-screen script, an encoded-`../` path-normalisation escape chained with an OAuth open-redirect gadget for SSRF, and authenticating straight to MCP endpoints that assume only an assistant will ever call them.
+
+**What was already known.** The author says so directly — "the attack techniques I'm about to show you aren't brand new" — and credits PortSwigger's OAuth work as the base. Open DCR abuse, `javascript:` redirect URIs, consent-screen reflection and normalisation bypasses are each long established; what changes is the deployment surface, and 2026 already carries several MCP entries that go further into mechanism.
+
+---
+
 ## 55.2 — [Living Off The Pipeline: Defensive Research, Weaponized (SmokedMeat / Brisket)](https://labs.boostsecurity.io/articles/introducing-smokedmeat/) — François Proulx, Boost Security Labs
 
 **REMOVED** · Tooling / methodology · confidence Medium
@@ -749,6 +799,16 @@ about marginal novelty and not about whether the writeup is worth reading.
 **What is new.** The empirical adversarial sweep of 20 hosted scanners with five confirmed boundary failures, a five-boundary model with an evidence bar separating a backend path firing from real worker impact, and a released regression corpus plus a deliberately-vulnerable scanner.
 
 **What was already known.** All the primitives it fires are known: build files executing during analysis and symlink escape to the process environment. Vendor credentials in the worker is a consequence, not a discovery.
+
+---
+
+## 54.9 — [When Two Parsers Disagree: Exploiting Query String Differentials for XSS](https://blog.voorivex.team/when-two-parsers-disagree-exploiting-query-string-differentials-for-xss) — Amirmohammad Safari, Voorivex
+
+**REMOVED** · Useful application · confidence Medium
+
+**What is new.** Two specific disagreements between Express's `qs` and the browser's `URLSearchParams`, packaged as a 20-line reproducible challenge: `qs` splits on `]=` in preference to a plain `=`, so the two parsers disagree about where the key ends; and `qs` strips bracket notation while honouring a 1000-parameter default limit that `URLSearchParams` does not, so a payload parked past the limit is invisible to the validator and visible to the page. The framing — server validates, client executes, `redirect_uri` as the realistic sink — is the useful part.
+
+**What was already known.** Parser-differential exploitation is a deep line: HTTP Parameter Pollution (2009, in archive), the year-2025 syntax-confusion work already in `2025.md`, and `qs`'s bracket-notation quirks are documented in its own issue tracker and advisories. No prior work is cited in the post. A well-built teaching artifact rather than a new primitive.
 
 ---
 
@@ -912,6 +972,16 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
+## 52.1 — [uXSS on Samsung Browser (CVE-2025-58485 · SVE-2025-1879)](https://blog.voorivex.team/uxss-on-samsung-browser-cve-2025-58485-sve-2025-1879) — Omid Rezaei & Yashar Shahinzadeh, Voorivex
+
+**REMOVED** · Useful application · confidence High
+
+**What is new.** The concrete asymmetry: `BixbySBrowserLauncherActivity` validates the incoming intent, `SBrowserMainActivity` is exported and does not, so an intent carrying `extra_access_url=javascript:…` reaches the currently loaded page and executes in its origin. The transferable habit is the one the authors name — read `AndroidManifest.xml` for exported components and check whether the guard sits on the entry point an attacker actually has to use, rather than intercepting traffic.
+
+**What was already known.** Universal XSS through an exported Android activity that accepts a `javascript:` URL is a well-trodden class with a long CVE trail across mobile browsers, and "validation on one entry point, none on the sibling" is the standard shape of it. First public disclosure is February 2026 (reported September 2025, patched January 2026), so it is judged as 2026 work despite the 2025 CVE year. Large blast radius, which the rubric deliberately does not reward.
+
+---
+
 ## 51.8 — [New Age of Collisions: Pre-Auth Arbitrary File Read as root in cPanel](https://slcyber.io/research-center/new-age-of-collisions-reading-arbitrary-files-pre-auth-as-root-in-cpanel-cve-2026-29205/) — Shah, Kues, Grobshäuser
 
 **REMOVED** · Meaningful combination · confidence Medium
@@ -1019,6 +1089,16 @@ about marginal novelty and not about whether the writeup is worth reading.
 **What is new.** One addition beyond incident forensics: that the same throwaway branches carried developer-endpoint persistence via editor and agent hook files that survives package unpublishing.
 
 **What was already known.** That trusted publishing binds to org, repo and workflow filename but not the git ref, and that a dedicated environment is the opt-in fix, is documented in the registry's own security model since 2023; this is one of four analyses of the same event published the same day.
+
+---
+
+## 50.1 — [Story of Abusing a Fully Secured redirect_uri in an OAuth Flow](https://blog.voorivex.team/story-of-abusing-a-fully-secured-redirect-uri-in-an-oauth-flow) — Yashar Shahinzadeh, Voorivex
+
+**REMOVED** · Useful application · confidence Medium
+
+**What is new.** A clean worked example of decode-count asymmetry surviving genuinely strict validation: the validator decodes once and sees `a.com%23@www.company.com`, reading the allow-listed host as the authority, while the redirect path decodes again so the browser sees a real `#` and treats `a.com` as the destination with the authorization code in the fragment. The reusable rule is to count decodes on each side rather than to test the validator in isolation.
+
+**What was already known.** Double-encoding past a validator, and `@` userinfo confusion between a checker and a parser, are foundational URL-confusion material — Orange Tsai's URL-parser work and the long lineage of `redirect_uri` bypasses already in the lists. One target, no tool, and the primitive is unchanged.
 
 ---
 
@@ -1252,6 +1332,16 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
+## 44.5 — [My First RCE by Reverse Engineering an EXE File With the Help of AI](https://blog.voorivex.team/first-rce-via-reverse-engineering-with-ai) — Yashar Shahinzadeh, Voorivex
+
+**REMOVED** · Useful application · confidence High
+
+**What is new.** Little, and the post says so. A vendor's Windows service listens on `ws://127.0.0.1:3100`, never checks `Origin`, and exposes a `{RUN:'DRIVE', URL:…}` method that falls back to launching `explorer.exe` with attacker-supplied arguments, so any web page reaches command execution. The only durable observation is the eight-year persistence of the anti-pattern.
+
+**What was already known.** The author names the prior art himself: Tavis Ormandy's 2018 Electrum finding is the same shape, and cross-site WebSocket hijacking against unauthenticated localhost services has been a standing class since. The AI-assisted reverse-engineering framing is methodology colour, not a contribution to it.
+
+---
+
 ## 44.5 — [HTTP Request Smuggling via `Connection: close<TAB>` in Node.js llhttp](https://hackerone.com/reports/3723248) — nadav0077
 
 **REMOVED** · Useful application · confidence High
@@ -1389,6 +1479,16 @@ about marginal novelty and not about whether the writeup is worth reading.
 **What is new.** A practical assembly detail: the hijacking iframe must be same-origin with the opener, satisfied by framing a static JS path that ships no frame-ancestors.
 
 **What was already known.** The entire primitive, pre-registering a named browsing context so window.open resolves into the attacker frame, was filed against the HTML spec in 2016 and demonstrated as frame hijacking in 2008.
+
+---
+
+## 42.0 — [Two cPanel Zero Day Vulnerabilities](https://blog.voorivex.team/two-cpanel-zero-day-vulnerabilities) — Yashar Shahinzadeh & Amirmohammad Safari, Voorivex
+
+**REMOVED** · Useful application · confidence High
+
+**What is new.** Two pre-auth XSS bugs in the Mailman fork shipped by default with cPanel & WHM: `MixpanelAnalytics.py` reflects `mpidentity` into an inline script through `json.dumps()`, which escapes quotes but not `/`, so `</script>` closes the block; and `admindb.py` renders the held-message `From:` header without `Utils.websafe()`, so a moderation queue stores the payload for an administrator to trigger.
+
+**What was already known.** Both are textbook. That JSON serialisation is not HTML-context escaping, and that `</script>` therefore escapes an inline script, is decade-old guidance repeated in every XSS reference; a single unescaped field beside correctly escaped siblings is the most common stored-XSS shape there is. Real bugs on a widely deployed product, no transferable primitive.
 
 ---
 

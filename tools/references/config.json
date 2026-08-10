@@ -65,15 +65,30 @@
       "few hundred references silently become thousands. references-md/ is that",
       "output tree's PREVIOUS name, kept as a guard so a stale checkout of it is",
       "never harvested. tools/ and .claude/ are this repository's own tooling,",
-      "not sources the lists cite."
+      "not sources the lists cite.",
+      "",
+      "ai-evaluation/ is the JUDGEMENT record, not a reading list. Most of the",
+      "links in it belong to candidates that were scored and REJECTED, and the",
+      "judgement files are themselves where those links are preserved. Harvesting",
+      "the folder adds every rejected candidate to the manifest as an unarchived",
+      "citation, which then fills document-gaps.md with work nobody asked for: a",
+      "single sync added 318 such URLs against 1,678 real ones.",
+      "",
+      "website/ is the browsing app - its sitemap.xml, robots.txt, index.html and",
+      "generated data/*.json carry the site's OWN addresses (webhacklist.com, the",
+      "GitHub Pages mirror, sitemaps.org's schema) and its footer links. SUPPORT.md",
+      "is a support document like README.md, and its sponsor link is not research."
     ],
     "prefixes": [
       ".claude/",
+      "ai-evaluation/",
       "archived-references/",
       "references-md/",
       "tools/",
       "original-listings/",
-      "README.md"
+      "website/",
+      "README.md",
+      "SUPPORT.md"
     ]
   },
   "depth": "full",

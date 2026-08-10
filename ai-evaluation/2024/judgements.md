@@ -812,3 +812,192 @@ contribution is unified framework-aware detection and mutation beyond JWT.
 
 Tooling or methodology contribution. It clears 60 on breadth and usability,
 while the low originality score explicitly avoids claiming new token attacks.
+
+## 49.6 — [Account Takeover due to DNS Rebinding](https://blog.voorivex.team/account-takeover-due-to-dns-rebinding) — Yashar Shahinzadeh, Voorivex
+
+**REMOVED** · Useful application or case study · confidence High
+
+### Candidate
+
+Published 17 September 2024. Judged in the 10 August 2026 single-publisher sweep
+of `blog.voorivex.team`; not part of the original 2024 nomination round.
+
+### Core contribution
+
+Hashnode lets a user attach a custom domain by CNAME and then treats that domain
+as a trusted destination for a cross-domain login handoff: `/authenticate` checks
+the `next` URL against the set of verified domains and, on a match, hands over a
+GUID that the destination exchanges for a session JWT. The attacker verifies a
+domain they own, then repoints its DNS at their own server. The allowlist still
+holds the name, so the check still passes, but the bearer now goes somewhere else.
+The durable observation is that domain ownership is verified once and trusted
+indefinitely — the allowlist stores a name, while the security property depended
+on where that name resolved at verification time.
+
+### Prior art
+
+The mechanism is not classic DNS rebinding (which targets a single client's
+resolver cache within one session to reach an internal address); it is a stale
+verification record, the same shape as subdomain takeover and dangling-DNS work
+that runs from 2014 onward, and it is closer to the "verify once, trust forever"
+failure than to Roesner-style rebinding. Custom-domain trust in multi-tenant SaaS
+had been examined before this post. The author does not claim to have invented the
+technique.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 38 | 25% | 9.50 | A known stale-verification failure located in one product; the post's own "DNS rebinding" label overstates the novelty. |
+| Transferability | 50 | 20% | 10.00 | The re-verify-before-trusting rule applies to any custom-domain SaaS handoff. |
+| Lasting value | 42 | 20% | 8.40 | A good example to cite, not a line of research. |
+| Technical soundness | 66 | 15% | 9.90 | The flow and the exploit steps are documented; the timing dependence on cache and database refresh is acknowledged rather than measured. |
+| Practical usability | 52 | 10% | 5.20 | Testable wherever custom domains grant trust. |
+| Clarity and reproducibility | 66 | 10% | 6.60 | Clear walkthrough of the authentication flow. |
+
+**Final score: 49.6/100.** Archive decision: do not include.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the post's description of the
+  `/authenticate` flow and its stated preconditions.
+- **Independent prior-art check:** searched by precondition (a verified-once domain
+  allowlist that is not re-checked at use) rather than by "DNS rebinding", which
+  places it in the dangling-DNS and subdomain-takeover lineage rather than the
+  rebinding one.
+- **Strongest challenge to the result:** the label is wrong, which would justify a
+  lower Original score still.
+- **Benefit-of-doubt check:** the underlying finding is real and the token handoff
+  design is a genuinely instructive failure, independent of what it is called.
+- **Changes after reverification:** None to the score; the verdict records the
+  mislabelling explicitly so a later reader is not sent looking for rebinding.
+
+### Verdict
+
+Useful application or case study. Below the 60 gate for the 2024 list.
+
+- **Archive decision:** Do not include
+- **Confidence:** High
+- **Evidence gaps:** None material.
+
+## 46.3 — [A Weird CSP Bypass led to $3.5k Bounty](https://blog.voorivex.team/a-weird-csp-bypass-led-to-35k-bounty) — Omid Rezaei & Yashar Shahinzadeh, Voorivex
+
+**REMOVED** · Useful application or case study · confidence High
+
+### Candidate
+
+Published 23 October 2024. Judged in the 10 August 2026 single-publisher sweep.
+
+### Core contribution
+
+A chain on a free-hosting platform: stored XSS on a user subdomain, a main-site
+API that trusts `*.freehost-target.com` in its CORS policy, and a CSP delivered by
+meta tag with user input appended to it. Injecting a semicolon adds a second
+`connect-src`; because duplicate directives resolve to the first occurrence, the
+attacker arranges which host lands in which position and reaches the endpoint the
+policy was meant to protect.
+
+### Prior art
+
+Directly covered by Gareth Heyes's *Bypassing CSP with policy injection*
+(PortSwigger, 2019) — already in [`2019.md`](../../2019.md) at 83.8 and in the
+archive — which established injecting directives into a policy built from user
+input and exploiting the first-occurrence rule. GitHub's `secure_headers` advisory
+(GHSA-xq52-rv6w-397c) documents the same semicolon-injection failure in a library.
+Neither the CORS-trusts-all-subdomains half nor the stored XSS is new.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 32 | 25% | 8.00 | Policy injection with first-occurrence-wins was published five years earlier and is already listed. |
+| Transferability | 45 | 20% | 9.00 | Applies wherever a policy is concatenated from user input, which the prior work already established. |
+| Lasting value | 38 | 20% | 7.60 | Reinforces a known lesson. |
+| Technical soundness | 68 | 15% | 10.20 | The directive-ordering behaviour is described correctly and the chain holds together. |
+| Practical usability | 50 | 10% | 5.00 | Usable, but the general recipe was already available. |
+| Clarity and reproducibility | 65 | 10% | 6.50 | Payload and reasoning are shown. |
+
+**Final score: 46.3/100.** Archive decision: do not include.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the post and the archived copy of the 2019
+  PortSwigger policy-injection research.
+- **Independent prior-art check:** searched by mechanism (semicolon into a
+  concatenated policy, duplicate directive resolution) rather than by target, which
+  surfaced both the 2019 research and the `secure_headers` advisory.
+- **Strongest challenge to the result:** the meta-tag delivery and the specific
+  ordering manipulation are a slightly different instance than the header case.
+- **Benefit-of-doubt check:** an instance is not a contribution when the general
+  rule is published, listed and archived; a different delivery channel does not
+  change the primitive.
+- **Changes after reverification:** None.
+
+### Verdict
+
+Useful application or case study. Below the 60 gate for the 2024 list; the
+technique itself belongs to the 2019 entry.
+
+- **Archive decision:** Do not include
+- **Confidence:** High
+- **Evidence gaps:** None material.
+
+## 44.2 — [Drilling the redirect_uri in OAuth](https://blog.voorivex.team/drilling-the-redirecturi-in-oauth) — Yashar Shahinzadeh, Voorivex
+
+**REMOVED** · Useful application or case study · confidence High
+
+### Candidate
+
+Published 11 October 2024. Judged in the 10 August 2026 single-publisher sweep.
+
+### Core contribution
+
+A macOS application wraps Apple's OAuth in a custom flow with an extra hop, and
+parks a second `redirect_uri` inside the `state` parameter — which is then never
+validated on return. Changing that embedded value redirects the user after
+authentication; an `@`-in-userinfo trick defeats the weak URL check that guards
+it. The observation worth keeping is that `state` is treated as opaque by the
+provider, so anything an application stores there is attacker-controlled unless
+the application itself validates it.
+
+### Prior art
+
+`redirect_uri` manipulation and `@` host confusion are foundational OAuth
+material, and the post cites Nir Goldshlager's Facebook OAuth work from around
+2014. Custom flows that stash data in `state` and forget to validate it are a
+recurring finding across the bug bounty literature.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 28 | 25% | 7.00 | Known OAuth failure modes found in one custom implementation. |
+| Transferability | 45 | 20% | 9.00 | The "state is not a safe place to store a URL" rule generalises. |
+| Lasting value | 35 | 20% | 7.00 | Restates established guidance. |
+| Technical soundness | 65 | 15% | 9.75 | The flow is described clearly and the bypass is plausible as written. |
+| Practical usability | 50 | 10% | 5.00 | A useful thing to check on any non-standard OAuth flow. |
+| Clarity and reproducibility | 65 | 10% | 6.50 | Readable, target anonymised. |
+
+**Final score: 44.2/100.** Archive decision: do not include.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the post and its own citation of the prior
+  Facebook OAuth work.
+- **Independent prior-art check:** searched by the precondition (application data
+  stored in `state`, unvalidated on return) rather than by `redirect_uri`, finding
+  the pattern repeatedly documented.
+- **Strongest challenge to the result:** none needed; the author frames it as
+  analysis of behaviour outside the standard rather than as new theory.
+- **Benefit-of-doubt check:** the writeup is honest about what it is and the
+  `state`-as-storage warning is worth repeating.
+- **Changes after reverification:** None.
+
+### Verdict
+
+Useful application or case study. Below the 60 gate for the 2024 list.
+
+- **Archive decision:** Do not include
+- **Confidence:** High
+- **Evidence gaps:** The target is anonymised, so the specific validator behaviour
+  cannot be independently confirmed.

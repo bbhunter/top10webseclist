@@ -1372,6 +1372,21 @@ function yearPills(selected) {
   return YEAR_RECORDS.map((record) => `<button class="year-pill ${record.id === selected ? "active" : ""} ${record.status === "preliminary" ? "preliminary" : ""}" data-year="${h(record.id)}" aria-pressed="${record.id === selected}" title="${h(record.status === "preliminary" ? "Preliminary, unranked, and subject to change" : `Finalized ${record.label} archive`)}"><span>${h(record.label)}</span>${record.status === "preliminary" ? `<small>PRELIM</small>` : ""}</button>`).join("");
 }
 
+// A card's colour is its research topic and nothing else — the same topic named
+// in the card's own header. Listing only the topics the room holds keeps the key
+// short and makes it describe the cards actually in front of the reader.
+function topicKey(items) {
+  const present = TOPICS
+    .map((topic) => ({ ...topic, count: items.filter((item) => item.topic === topic.name).length }))
+    .filter((topic) => topic.count);
+  if (!present.length) return "";
+  return `
+    <div class="topic-key" role="group" aria-label="What the card colours mean">
+      <p>Card colour = research topic</p>
+      <ul>${present.map((topic) => `<li style="--topic-color:${h(topic.color)}"><i aria-hidden="true"></i>${h(topic.name)} <b>${topic.count}</b></li>`).join("")}</ul>
+    </div>`;
+}
+
 function renderMuseum() {
   const items = itemsForYear(state.year);
   const preliminary = isPreliminaryYear(state.year);
@@ -1387,6 +1402,7 @@ function renderMuseum() {
         <div class="room-number">${h(yearLabel(state.year))}</div>
         <p>${preliminary ? `${items.length} ${h(yearRecordFor(state.year).provenance || "preliminary")} leads · no ranking · subject to change` : `${winners.length} winning exhibits · ${nominees.length} nominated works`} · ${items.filter((item) => item.archived).length} preserved locally</p>
       </div>
+      ${topicKey(items)}
 
       ${preliminary ? "" : `<div class="section-head"><div><p class="eyebrow">The central gallery</p><h2>Top 10 illuminated exhibits</h2></div><p>Selected by community vote and panel</p></div>
       <div class="winner-plinths">${winners.map((item) => artifactCard(item)).join("") || empty("No ranked exhibits recorded for this room.")}</div>`}

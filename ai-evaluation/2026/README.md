@@ -45,17 +45,19 @@ remain in this evaluation record.
 
 | Band | Count | Outcome |
 |---|---:|---|
-| 70–100 | 19 | 17 kept in `2026-ai.md`; 2 removed as prior-year work (React2Shell, RebirthDay) |
-| 60–69.9 | 30 | Kept in `2026-ai.md` (all in-window) |
-| 50–59.9 | 61 | Removed |
-| Below 50 | 58 | Removed |
+| 70–100 | 20 | 18 kept in `2026-ai.md`; 2 removed as prior-year work (React2Shell, RebirthDay) |
+| 60–69.9 | 31 | Kept in `2026-ai.md` (all in-window) |
+| 50–59.9 | 67 | Removed |
+| Below 50 | 60 | Removed |
 
-168 candidates in total: 153 from the initial collection, plus three whose artifacts were
+178 candidates in total: 153 from the initial collection, plus three whose artifacts were
 published later (**first re-check round**), plus twelve conference decks that published
-their slides during the 8 August conference week (**second re-check round**) — see both
-below. **47 are kept** (17 at ≥ 70 plus 30 in the 60–69.9 band). Two entries score above 70
-but are not kept because they are prior-year work (React2Shell was disclosed December 2025
-and RebirthDay is ACM CCS 2025); they belong to 2025, not 2026, and window beats score.
+their slides during the 8 August conference week (**second re-check round**), plus ten from
+the 10 August single-publisher sweep of `blog.voorivex.team` (**third re-check round**) —
+see all three below. **49 are kept** (18 at ≥ 70 plus 31 in the 60–69.9 band). Two entries
+score above 70 but are not kept because they are prior-year work (React2Shell was disclosed
+December 2025 and RebirthDay is ACM CCS 2025); they belong to 2025, not 2026, and window
+beats score.
 
 **A caveat worth reading before trusting the cut.** The judge skill reserves ≥ 70 for "core
 technique" and treats the 60–69.9 band as "supporting reference": genuine but marginal, mostly
@@ -126,6 +128,28 @@ The four DEF CON 34 village decks still on the Watchlist (Cache Key Injection, T
 Was Sent by Microsoft, New Hope for SSRF, ROP for the Web) were re-checked the same day and
 still have no primary artifact published.
 
+## Third re-check round — single-publisher sweep (10 August 2026)
+
+A sweep of one publisher rather than one venue: every post on `blog.voorivex.team`, taken
+from its sitemap so pagination could not hide any, checked against the year lists and this
+folder. Twenty-eight posts exist; two are already in [`2024.md`](../../2024.md) and one
+(Content-Type Override, 50.0) was judged in the initial round, leaving **ten** in the 2026
+window. Each was read in full and judged; **two** clear the ≥ 60 keep-cut. The six posts
+from 2023–2025 went to their own years' folders.
+
+| Score | Entry | Outcome |
+|---:|---|---|
+| 71.2 | We Need to Talk About CSRF Again | **Added.** Chromium safelists a fourth content type the Fetch standard does not list, so a cross-origin POST carrying it took no preflight — defeating the content-type-check family of CSRF defences generally, then amplified into a GraphQL-APQ XS-Leak. Since patched. Medium confidence on first discovery: no earlier public source found, which is not proof. |
+| 66.3 | JavaScript Functions Overload Confusion | **Added** (≥ 60). The census is the contribution — 2,228 Blink IDL files walked to find which type-resolved overloads reach a sink, landing on ~30 sinks, 4 security-decision forks and ~22 Trusted Types sinks that fork on type. The underlying array/structured-clone primitive is community-known and the challenge was joaxcar's; scored down for an LLM-assisted enumeration with no published artifact. |
+| 59.3 | The Usual Suspect: Type Confusion in Twelve Bytes | Not added — just under. The reusable half is that `file-type` never validates the ISO-BMFF box-size field, so a sniffer keyed on a suffix of the header hands over free bytes *before* the magic. Polyglot uploads and comment-wrapped headers are old. |
+| 57.7 | Three 0-Day Vulnerabilities in Adminer | Not added. Real pre-auth RCE and a CSP-nonce-signed XSS from a rogue MySQL version banner, but ODBC `TraceFile` writes, `VACUUM INTO` file writes and rogue-DB-server attacks are all established. |
+| 55.3 | Shaking the MCP Tree | Not added. Early field survey of open Dynamic Client Registration on MCP servers; the author states the techniques are not new, and 2026 already carries MCP entries that go further into mechanism. |
+| 54.9 | When Two Parsers Disagree | Not added. A neat 20-line reproducible `qs`-versus-`URLSearchParams` challenge, but parser differentials run from HPP (2009) through the syntax-confusion entry already in `2025.md`. |
+| 52.1 | uXSS on Samsung Browser (CVE-2025-58485) | Not added. Guarded launcher activity beside an unguarded exported sibling that accepts `javascript:` — a long-standing Android browser class. Judged as 2026: first public disclosure Feb 2026, though reported Sept 2025. |
+| 50.1 | Story of Abusing a Fully Secured redirect_uri | Not added. Clean worked example of decode-count asymmetry (`%2523%40`) past strict validation; the primitive is foundational URL-confusion material. |
+| 44.5 | My First RCE by Reverse Engineering an EXE With AI | Not added. Cross-site WebSocket hijacking of an unauthenticated localhost service; the author cites Ormandy's 2018 Electrum finding as the same shape. |
+| 42.0 | Two cPanel Zero Day Vulnerabilities | Not added. `json.dumps()` not escaping `/` so `</script>` breaks out, plus one unescaped `From:` header — textbook XSS on a widely deployed product. |
+
 ## Confidence
 
 Scores are one judgement, not a verdict. Where the primary source could not be read in full
@@ -159,6 +183,7 @@ exist only here.
 | 72.7 | Original technique | kept | [When Agentic Glue Melts: Exploiting Cloudflare Code Mode and Workers](https://research.checkpoint.com/2026/when-agentic-glue-melts/) [Slides](https://i.blackhat.com/BH-USA-26/Presentations/BUHUS26-Porat-When-Agentic-Glue-Melts-REV01.pdf) [PoCs](https://github.com/yardenporat353/WhenAgenticGlueMeltsPOCs) |
 | 71.8 | Meaningful extension | kept | [Angular compromise through dev infra: GitHub Actions cache poisoning as a vulnerability class](https://adnanthekhan.com/posts/angular-compromise-through-dev-infra) [Clinejection](https://adnanthekhan.com/posts/clinejection/) [Copilot or Co-conspirator](https://adnanthekhan.com/posts/copilot-or-co-conspirator/) [Cacheract](https://github.com/AdnaneKhan/Cacheract) |
 | 71.8 | Meaningful extension | kept | [Prompt Injection as Role Confusion (CoT Forgery)](https://role-confusion.github.io/) [Paper](https://arxiv.org/abs/2603.12277) |
+| 71.2 | Meaningful extension | kept | [We Need to Talk About CSRF Again](https://blog.voorivex.team/we-need-to-talk-about-csrf-again) |
 | 71.0 | Meaningful combination | kept | [Sub:jugation — Hijacking Cloud Identities by Recycling Namespaces in Global OIDC Issuers](https://astrix.security/learn/blog/subjugation-hijacking-cloud-identities-by-recycling-namespaces-in-global-oidc-issuers/) [Sleeper squats follow-up](https://labs.boostsecurity.io/articles/sleeper-squats-github-oidc-immutable-subject-claim) |
 | 70.5 | Original technique | kept | [Hack the Source, Of the Source](https://i.blackhat.com/Asia-26/Presentations/BHAS26-Ng-Hack-the-Source-of-the-Source.pdf) [Born Corrupted](https://i.blackhat.com/BH-USA-26/Presentations/US-26-SplitlineNg-BornCorrupted-Thursday.pdf) |
 | 70.0 | Meaningful combination | kept | [Write Once, Shell Everywhere: Turning Arbitrary File Writes into RCE](https://ethiack.com/info-hub/research/write-once-shell-everywhere-arbitrary-file-writes-into-rce) |
@@ -175,6 +200,7 @@ exist only here.
 | 67.0 | Meaningful extension | kept | [Borrowing Windows Hello Keys for Authentication and Persistence](https://dirkjanm.io/borrowing-windows-hello-keys/) |
 | 66.8 | Meaningful combination | kept | [Remote Command Execution in Google Cloud with Single Directory Deletion](https://flatt.tech/research/posts/remote-command-execution-in-google-cloud-with-single-directory-deletion/) |
 | 66.5 | Meaningful combination | kept | [AutoFail: Breaking Web Boundaries using Android's Autofill Framework](https://github.com/SecPriv/autofail) |
+| 66.3 | Tooling / methodology | kept | [JavaScript Functions Overload Confusion](https://blog.voorivex.team/javascript-functions-overload-confusion) |
 | 66.0 | Tooling / methodology | kept | [Agentic Browsers and the Same-Origin Policy](https://agent-security.cs.washington.edu/agentic_browsers_sop.html) [PDF](https://www.franziroesner.com/pdf/roesner_kohlbrenner_2026_agentic_sop.pdf) [Code](https://github.com/UWCSESecurityLab/agentic-browser-sop) |
 | 65.6 | Meaningful combination | kept | [Your WAF Blocked Us, That Was The Exploit — Remote Agent Takeover via Cloudflare, Sentry and Claude Zero-Day](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Barak%20Sternberg%2C%20Nevo%20Poran%2C%20Ron%20Bobrov%20-%20Your%20WAF%20Blocked%20Us%2C%20That%20Was%20The%20Exploit%20-%20Remote%20Agent%20Takeover%20via%20Cloudflare%2C%20Sentry%20and%20C.pdf) [Agentjacking](https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/) |
 | 65.5 | Meaningful combination | kept | [Hacking Your Life with AI Can Get You Hacked: How AI Orchestration Platforms Ship RCE by Design](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Peyton%20Kennedy%20-%20Hacking%20Your%20Life%20with%20AI%20Can%20Get%20You%20Hacked%20How%20AI%20Orchestration%20Platforms%20Ship%20RCE%20by%20Design%20-%20V1.pdf) |
@@ -195,6 +221,7 @@ exist only here.
 | 60.5 | Tooling / methodology | kept | [A First Measurement Study on Authentication Security in Real-World Remote MCP Servers](https://arxiv.org/abs/2605.22333) |
 | 59.8 | Meaningful combination | removed | [Almost Impossible Java Deserialization Through Broken Crypto in OpenText Directory Services](https://slcyber.io/research-center/almost-impossible-java-deserialization-through-broken-crypto-in-opentext-directory-services/) |
 | 59.5 | Meaningful extension | removed | [Avoiding the paradox: A native full-read SSRF and one-shot DoS in SvelteKit](https://zhero-web-sec.github.io/research-and-things/avoiding-the-paradox-a-native-full-read-ssrf-and-oneshot-dos-in-sveltekit) |
+| 59.3 | Meaningful extension | removed | [The Usual Suspect: Type Confusion in Twelve Bytes](https://blog.voorivex.team/usual-suspect-type-confusion-in-twelve-bytes) |
 | 59.2 | Meaningful combination | removed | [HTTP/2 WAF Bypass: A Black-Box Methodology (h2 framing)](https://lab.ctbb.show/research/h2-WAF-Bypasses) |
 | 59.2 | Useful application | removed | [Claude in Chrome: from alert(1) to full account takeover](https://labs.zenity.io/post/claude-in-chrome-from-alert-to-full-account-takeover) [Technical deep dive](https://labs.zenity.io/post/account-takeover-via-claude-in-chrome-a-technical-deep-dive) |
 | 59.1 | Meaningful combination | removed | [Grand Theft Atlas (PleaseFix + Intent Collision)](https://labs.zenity.io/post/grand-theft-atlas) [PerplexedBrowser](https://labs.zenity.io/p/perplexedbrowser-perplexity-s-agent-browser-can-leak-your-personal-pc-local-files) [Class hub](https://zenity.io/research/pleasefix-vulnerabilities) |
@@ -206,6 +233,7 @@ exist only here.
 | 58.3 | Tooling / methodology | removed | [Breaking Multi-Tenancy Over and Over](https://i.blackhat.com/BH-USA-26/Presentations/US-26-Lehawany-Breaking-Multi-Tenancy-Wed.pdf) — overlaps the 59.0 Istio item |
 | 57.8 | Tooling / methodology | removed | [Bullseye: Detecting Prototype Pollution in NPM Packages with Proof-of-Concept Exploits](https://www.ndss-symposium.org/ndss-paper/bullseye-detecting-prototype-pollution-in-npm-packages-with-proof-of-concept-exploits/) |
 | 57.8 | Tooling / methodology | removed | [The Dot-Dot-Slash That Frameworks Hand You: CSPT Across Every Major Frontend Framework](https://lab.ctbb.show/research/the-dot-dot-slash-that-frameworks-hand-you) [Repo](https://github.com/xssdoctor/cspt_research) |
+| 57.7 | Useful application | removed | [Three 0-Day Vulnerabilities in Adminer](https://blog.voorivex.team/three-0-day-vulnerabilities-in-adminer) |
 | 57.5 | Meaningful extension | removed | [Beyond the Limits of Site Isolation](https://www.youtube.com/watch?v=d3nfJL86jrc) |
 | 57.2 | Meaningful combination | removed | [AgentForger: ChatGPT Cross-Site Agent Forgery](https://labs.zenity.io/post/agentforger-part-1-chatgpt-cross-site-agent-forgery) [Part 2](https://labs.zenity.io/post/agentforger-part-2-the-autonomous-insider) |
 | 56.8 | Meaningful combination | removed | [KindaRails2Shell: how a MATLAB file reads your secrets and pops a shell on Rails](https://ethiack.com/info-hub/research/kindarails2shell-how-a-matlab-file-reads-your-secrets-and-pops-a-shell-on-ruby-on-rails) |
@@ -218,8 +246,10 @@ exist only here.
 | 55.9 | Meaningful combination | removed | [Zero-Click RCE in Figma Desktop](https://lab.ctbb.show/research/figma-desktop-zero-click-rce/) |
 | 55.7 | Meaningful extension | removed | [ELF in the Pixels: Building Shared Object–Image Polyglots](https://blog.babelo.xyz/posts/elf-in-the-pixels/) |
 | 55.5 | Meaningful combination | removed | [Race Against The Patch: Four Exploit Chains in LiteLLM](https://starlabs.sg/blog/2026/05-race-against-the-patch-the-evolution-of-four-exploit-chains-in-litellm/) |
+| 55.3 | Useful application | removed | [Shaking the MCP Tree: a security deep dive](https://blog.voorivex.team/shaking-the-mcp-tree) |
 | 55.2 | Tooling / methodology | removed | [Living Off The Pipeline: Defensive Research, Weaponized (SmokedMeat / Brisket)](https://labs.boostsecurity.io/articles/introducing-smokedmeat/) |
 | 55.2 | Tooling / methodology | removed | [Scanning the Scanners: Turning Security Vendors Into Supply Chain Weapons](https://i.blackhat.com/BH-USA-26/Presentations/US-26-Karger-Scanning-The-Scanners-Thursday.pdf) |
+| 54.9 | Useful application | removed | [When Two Parsers Disagree: Exploiting Query String Differentials for XSS](https://blog.voorivex.team/when-two-parsers-disagree-exploiting-query-string-differentials-for-xss) |
 | 54.5 | Meaningful combination | removed | [HermeticReader: turning Adobe's 300M-install extension into a WhatsApp takeover](https://guard.io/labs/hermeticreader---the-vulnerability-that-turned-adobe-300m-install-extension-into-a-full-whatsapp-takeover) |
 | 54.5 | Meaningful extension | removed | [Pass the Passkey: A Novel Attack Surface in Passwordless Authentication](https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/) |
 | 54.5 | Meaningful extension | removed | [Re:CACHE — Excessive reflection, type confusion, and 0-click SXSS on Next.js](https://zhero-web-sec.github.io/research-and-things/re-cache-excessive-reflection-type-confusion-and-0-click-sxss-on-nextjs) |
@@ -237,6 +267,7 @@ exist only here.
 | 52.2 | Meaningful extension | removed | [FirefUXSS: universal XSS in Firefox Focus/Klar for iOS](https://github.com/v12-security/pocs/tree/main/firefox) |
 | 52.2 | Meaningful extension | removed | [XSS via i18n translation-template injection in NodeBB](https://www.aikido.dev/blog/eight-high-severity-vulnerabilities-nodebb) |
 | 52.2 | Useful application | removed | [Drupal PostgreSQL SQL Injection: From SELECT-Only to RCE](https://blog.lexfo.fr/drupal-postgresql-sqli-to-rce.html) |
+| 52.1 | Useful application | removed | [uXSS on Samsung Browser (CVE-2025-58485 · SVE-2025-1879)](https://blog.voorivex.team/uxss-on-samsung-browser-cve-2025-58485-sve-2025-1879) |
 | 52.0 | Useful application | removed | [Pre-auth RCE in Enterprise Java: When Middleware Becomes the Exploit](https://i.blackhat.com/BH-USA-26/Presentations/Pre-auth_RCE_in_Enterprise_Java_When_Middlewa.pdf) |
 | 51.8 | Meaningful combination | removed | [New Age of Collisions: Pre-Auth Arbitrary File Read as root in cPanel](https://slcyber.io/research-center/new-age-of-collisions-reading-arbitrary-files-pre-auth-as-root-in-cpanel-cve-2026-29205/) |
 | 51.6 | Tooling / methodology | removed | [Attacking and Defending AI Browsers](https://i.blackhat.com/BH-USA-26/Presentations/US-26-Chaikin-Attacking-Defending-AI-Browsers.pdf) [Companion post](https://brave.com/blog/indirect-prompt-injection/) |
@@ -249,6 +280,7 @@ exist only here.
 | 50.5 | Useful application | removed | [Proto6: The Schema Was Not Supposed to Run](https://www.cyera.com/research/proto6-the-schema-was-not-supposed-to-run) |
 | 50.4 | Useful application | removed | [Breaking the Control Plane: Exploiting MCP Servers in AI Workflows](https://troopers.de/downloads/troopers26/TR26_Breaking_the_Control_Plane_F3XCER.pdf) [Video](https://youtu.be/DAbyi6MZR9w) |
 | 50.2 | Useful application | removed | [Trusted Publishing, Untrusted Branch: Inside the Red Hat npm Compromise](https://labs.boostsecurity.io/articles/trusted-publishing-untrusted-branch-red-hat-npm) |
+| 50.1 | Useful application | removed | [Story of Abusing a Fully Secured redirect_uri in an OAuth Flow](https://blog.voorivex.team/story-of-abusing-a-fully-secured-redirect-uri-in-an-oauth-flow) |
 | 50.0 | Independent rediscovery | removed | [The SQL Server Unicode problem: Best-Fit mapping as a universal filter bypass](https://www.synacktiv.com/en/publications/the-sql-server-unicode-problem-why-your-data-might-not-be-what-you-think-it-is) |
 | 50.0 | Meaningful combination | removed | [Content-Type Override to Stored XSS on public objects](https://blog.voorivex.team/content-type-override-to-stored-xss-on-public-objects) |
 | 50.0 | Meaningful extension | removed | [Hack the Elephant One Bite at a Time: NUL byte SQL Injection in pdo\_firebird](https://swarm.ptsecurity.com/hack-the-elephant-one-bite-at-a-time-nul-byte-sql-injection-in-pdo_firebird-and-null-pointer-dereference-in-pdo-pgsql/) [JPEG memory-safety bugs in PHP](https://swarm.ptsecurity.com/hack-the-elephant-one-bite-at-a-time-jpeg-related-memory-safety-bugs-in-php/) |
@@ -273,6 +305,7 @@ exist only here.
 | 45.2 | Useful application | removed | [Same-site DOM XSS using cookie injection via the TikTok analytics pixel](https://medium.com/@renwa/site-dom-xss-using-cookie-injection-the-ai-hackers-are-coming-faster-than-you-think-3ef82f2a991d) |
 | 44.8 | Useful application | removed | [Securing the Supply Chain: Cache Vulnerability in RubyGems](https://trufflesecurity.com/blog/rubygems-cache-vulnerability) |
 | 44.5 | Useful application | removed | [HTTP Request Smuggling via `Connection: close<TAB>` in Node.js llhttp](https://hackerone.com/reports/3723248) |
+| 44.5 | Useful application | removed | [My First RCE by Reverse Engineering an EXE File With the Help of AI](https://blog.voorivex.team/first-rce-via-reverse-engineering-with-ai) |
 | 44.2 | Independent rediscovery | removed | [Wrestling with a Python: Escaping Copilot Studio's AI-Guarded Sandbox](https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ryan%20Hausknecht%2C%20Simon%20Maxwell-Stewart%20-%20Wrestling%20with%20a%20Python%20Escaping%20Copilot%20Studio%27s%20AI-Guarded%20Sandbox%20-%20DEFCON2026%20embargo.pptx) |
 | 44.2 | Useful application | removed | [UI consent bypass via comma injection in Burp's MCP `addAutoApproveTarget`](https://hackerone.com/reports/3717354) |
 | 44.0 | Tooling / methodology | removed | [Navigating Lax Load Balancers: When an Intersection Gets You Inside](https://blog.doyensec.com/2026/05/25/cloudsectidbits-elbaph-alb.html) |
@@ -286,6 +319,7 @@ exist only here.
 | 43.0 | Useful application | removed | [SECCON CTF 14 Finals: Shadow CSS and friends](https://blog.arkark.dev/2026/03/08/seccon-finals/) [Solver writeup](https://nanimokangaeteinai.hateblo.jp/entry/2026/03/02/235931) |
 | 42.8 | Useful application | removed | [FCSC 2026 "Aquarium": escaping the Node.js Permission Model via `data:` URL import and `SIGUSR1` inspector activation](https://worty.fr/post/writeups/fcsc2026/fcsc_aquarium/) |
 | 42.5 | Useful application | removed | [Can a Predicted `window.open` Target Really Be That Impactful?](https://lab.ctbb.show/research/can-a-predicted-window-open-target-really-be-that-impactful) |
+| 42.0 | Useful application | removed | [Two cPanel Zero Day Vulnerabilities](https://blog.voorivex.team/two-cpanel-zero-day-vulnerabilities) |
 | 41.5 | Independent rediscovery | removed | [Ghost Dependency: version ghosts and name ghosts as supply-chain primitives under agentic coding](https://xlab.tencent.com/cn/2026/02/28/ghost-dependency-agentic-coding-supply-chain-threat/) |
 | 40.5 | Duplicate / already known | removed | [postMessage targetOrigin bypass via IP normalization](https://lab.ctbb.show/research/postmessage-targetorigin-bypass-via-ip-normalization) |
 | 39.2 | Duplicate / already known | removed | [Mini Shai-Hulud Returns: 42 Malicious npm Packages Fake Sigstore Badges](https://www.endorlabs.com/learn/mini-shai-hulud-returns-42-malicious-npm-packages-fake-sigstore-badges-in-antv-ecosystem-attack) |

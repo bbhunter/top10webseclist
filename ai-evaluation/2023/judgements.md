@@ -668,3 +668,122 @@ architecture that removes the recurring confused-deputy pattern by construction.
 
 Tooling or methodology contribution. It replaces fragile extension coding rules
 with a privilege boundary enforced by architecture.
+
+## 47.4 — [Hijacking OAuth Code via Reverse Proxy for Account Takeover](https://blog.voorivex.team/hijacking-oauth-code-via-reverse-proxy-for-account-takeover) — Omid Rezaei, Voorivex
+
+**REMOVED** · Meaningful combination or adaptation · confidence Medium
+
+### Candidate
+
+Published 17 November 2023. Judged in the 10 August 2026 single-publisher sweep of
+`blog.voorivex.team`; not part of the original 2023 nomination round.
+
+### Core contribution
+
+The application validates `state` with a regex that is strict about the prefix but
+tolerant of anything appended, so path segments can be added to it. Those segments
+traverse into an internal `/imageProxy` endpoint, which will fetch an arbitrary
+URL, and the OAuth authorization code rides the resulting request out to the
+attacker. The reusable shape is that a strict-looking validator which permits
+appending turns any same-origin fetching endpoint into an exfiltration channel for
+whatever the flow carries.
+
+### Prior art
+
+Every constituent is established: `state` and `redirect_uri` manipulation in OAuth,
+path traversal past a prefix check, and reverse proxies or image proxies as SSRF
+and exfiltration gadgets. The dirty-dancing family of OAuth redirect-chain attacks
+(2022, in archive) covers moving an authorization code to an attacker-observable
+location. No prior work is cited in the post for this combination.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 34 | 25% | 8.50 | A combination of three well-known primitives on one target. |
+| Transferability | 48 | 20% | 9.60 | The prefix-validator-plus-fetching-endpoint pattern recurs across applications. |
+| Lasting value | 40 | 20% | 8.00 | Useful as an example rather than as a technique. |
+| Technical soundness | 66 | 15% | 9.90 | The chain is coherent; the target is anonymised so the regex behaviour rests on the author's account. |
+| Practical usability | 50 | 10% | 5.00 | Worth testing wherever a validated parameter allows appending. |
+| Clarity and reproducibility | 64 | 10% | 6.40 | Readable; no reproducible artifact. |
+
+**Final score: 47.4/100.** Archive decision: do not include.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the post's description of the validator and
+  the proxy endpoint.
+- **Independent prior-art check:** searched by outcome (authorization code delivered
+  to an attacker via a same-origin fetching endpoint) rather than by "reverse proxy",
+  which lands in the established OAuth redirect-chain literature.
+- **Strongest challenge to the result:** the combination is genuinely a chain rather
+  than a single known bug, which argues for a slightly higher Original score.
+- **Benefit-of-doubt check:** credited as a combination rather than an application
+  for exactly that reason; it still sits well below the gate because each link and
+  the overall goal were already documented.
+- **Changes after reverification:** None. Confidence held at Medium because the
+  target is anonymised and the validator behaviour cannot be checked independently.
+
+### Verdict
+
+Meaningful combination or adaptation. Below the 60 gate for the 2023 list.
+
+- **Archive decision:** Do not include
+- **Confidence:** Medium
+- **Evidence gaps:** Anonymised target; the regex and proxy behaviour are author
+  claims that cannot be verified.
+
+## 32.9 — [Uncovering a Command Injection, $2400 Bounty](https://blog.voorivex.team/uncovering-a-command-injection-2400-bounty) — Omid Rezaei, Voorivex
+
+**REMOVED** · Useful application or case study · confidence High
+
+### Candidate
+
+Published 14 October 2023. Judged in the 10 August 2026 single-publisher sweep.
+
+### Core contribution
+
+An ASN-driven reconnaissance chain — whois to `mapcidr` to `httpx`, then directory
+fuzzing — reaches an exposed admin panel behind default credentials, where a
+`changelogo.php` upload passes its filename into a shell. A filename of
+`test || sleep 30 ||.gif` satisfies the extension check and executes, confirmed by
+the delay.
+
+### Prior art
+
+Shell metacharacters in a filename reaching a command interpreter is one of the
+oldest documented injection patterns, and time-based confirmation via `sleep` is
+standard practice. The reconnaissance methodology is conventional and tool-driven.
+The post cites tools rather than research and makes no novelty claim.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 15 | 25% | 3.75 | Textbook command injection found by conventional recon. |
+| Transferability | 30 | 20% | 6.00 | Nothing beyond the standard practice it demonstrates. |
+| Lasting value | 20 | 20% | 4.00 | No durable contribution. |
+| Technical soundness | 62 | 15% | 9.30 | The finding is confirmed by observable timing and is plainly correct. |
+| Practical usability | 38 | 10% | 3.80 | Reinforces a familiar workflow. |
+| Clarity and reproducibility | 60 | 10% | 6.00 | Clear account of the steps taken. |
+
+**Final score: 32.9/100.** Archive decision: do not include.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the post.
+- **Independent prior-art check:** searched by sink (filename concatenated into a
+  shell command during upload handling), which is documented across decades of
+  injection literature.
+- **Strongest challenge to the result:** none; no novelty is claimed.
+- **Benefit-of-doubt check:** competent bug hunting and a clear writeup — neither is
+  what this rubric measures.
+- **Changes after reverification:** None.
+
+### Verdict
+
+Useful application or case study.
+
+- **Archive decision:** Do not include
+- **Confidence:** High
+- **Evidence gaps:** None material.

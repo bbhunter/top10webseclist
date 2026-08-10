@@ -622,6 +622,14 @@
   .room-marquee p:last-child { margin-top: 24px; color: #8e9aaf; font: .65rem var(--mono); }
   .museum-map .section-head h2 { color: #f3f6ff; }
   .museum-map .section-head p { color: #566379; }
+  /* Every card carries a topic colour on its top edge; without this key that
+     colour is decoration. Only the topics the room actually holds are listed. */
+  .topic-key { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 0 0 20px; padding: 11px 14px; background: rgba(9,15,26,.72); border: 1px solid rgba(120,153,255,.15); border-radius: 10px; }
+  .topic-key > p { flex: 0 0 auto; color: var(--faint); font: .56rem var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+  .topic-key ul { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+  .topic-key li { display: flex; align-items: center; gap: 6px; padding: 4px 9px; color: #c8d2e6; background: color-mix(in srgb, var(--topic-color) 7%, transparent); border: 1px solid color-mix(in srgb, var(--topic-color) 26%, transparent); border-radius: 20px; font: .56rem var(--mono); }
+  .topic-key li i { width: 7px; height: 7px; background: var(--topic-color); border-radius: 50%; box-shadow: 0 0 8px color-mix(in srgb, var(--topic-color) 55%, transparent); }
+  .topic-key li b { color: var(--topic-color); font-weight: 700; }
   /* The two base re-skins use :where() so they stay at single-class specificity
      and the shared preliminary and favourite border cues still win; the state
      rules below are deliberately specific enough to beat their shared originals. */

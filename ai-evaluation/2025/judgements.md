@@ -514,3 +514,405 @@ broker is the distinct extension.
 
 Meaningful extension. Shared platform mediation turns familiar OAuth identity
 confusion into universal attacks across otherwise unrelated integrated apps.
+
+## 61.1 — [Cloudflare Image Proxy as a CSPT Gadget: A Cross-Origin CSPT Exploit](https://blog.voorivex.team/cloudflare-image-proxy-as-a-cspt-gadget-a-cross-origin-cspt-exploit) — Amirmohammad Safari, Voorivex
+
+**KEPT** · Meaningful extension · confidence Medium
+
+### Candidate
+
+Published 19 October 2025 on the Voorivex team blog; not in the original 2025
+nomination round and absent from the exclusion set. Found in the 10 August 2026
+single-publisher sweep of `blog.voorivex.team`.
+
+### Core contribution
+
+Client-Side Path Traversal is normally reasoned about as a same-origin primitive:
+the injected `../` rewrites the path of a request the page was already going to
+make, so the request stays on the origin. This chains it with a redirect gadget
+that returns 307 or 308, which preserve method and body, so the rewritten request
+lands on a *different* origin still carrying its verb and payload. That converts
+CSPT2CSRF from a same-origin write into a cross-origin one wherever the target
+accepts cookie-borne credentials and permissive CORS. The gadget named is
+Cloudflare's Image Transformation endpoint, which redirects to an arbitrary path
+on another subdomain and is therefore available on a large share of the web
+rather than only on a bespoke target. The accompanying constraint is precise and
+reusable: browsers strip `Authorization` across a cross-origin redirect, so the
+technique reaches cookie-authenticated targets and not bearer-token ones.
+
+### Prior art
+
+Doyensec's CSPT2CSRF (July 2024, in archive) established turning CSPT into a
+state-changing request and framed the sink as same-origin. Renwa's CSPT roundup
+(January 2025, in archive and cited in `2025.md`) already chains open redirects
+with CSPT — but for *response* control, spoofing a JSON body to reach XSS, which
+is the read direction. Matan Ber's encoding-levels work (2024, in archive) and
+Nadir's account-takeover writeup (2023, in archive) cover reach and exploitation
+depth rather than origin crossing. That 307/308 preserve method and body is
+specified behaviour and long used in SSRF and CORS work.
+
+### Candidate's distinct contribution
+
+The method-and-body-preserving variant of redirect chaining, which changes what
+CSPT can do rather than what it can read, plus the identification of a ubiquitous
+third-party 307 gadget and the `Authorization`-header limit. This is a composition
+of known parts; the score reflects that it is a real capability change on a narrow
+base, not a new primitive.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 52 | 25% | 13.00 | Redirect chaining with CSPT was published nine months earlier; the method-preserving cross-origin variant is the increment. |
+| Transferability | 65 | 20% | 13.00 | The gadget is third-party and widely deployed, so the pattern applies well beyond the reported target. |
+| Lasting value | 56 | 20% | 11.20 | Likely to persist as a checklist item — "can this CSPT leave the origin?" — rather than to seed a research line. |
+| Technical soundness | 70 | 15% | 10.50 | Mechanism, preconditions and the Authorization-header limit are stated correctly and consistently. |
+| Practical usability | 68 | 10% | 6.80 | Directly actionable against real applications with no tooling required. |
+| Clarity and reproducibility | 66 | 10% | 6.60 | Clear writeup, single target, no released playground or PoC repository. |
+
+**Final score: 61.1/100.** Archive decision: include as a supporting reference.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the post itself, and the archived copies of
+  Doyensec's CSPT2CSRF, Renwa's CSPT roundup and Matan Ber's encoding-levels post.
+- **Independent prior-art check:** searched by outcome ("cross-origin CSPT", "307
+  gadget preserves body") rather than by name, and re-read Renwa's roundup for
+  redirect usage. It uses open redirects throughout — but to control the *response*,
+  never to move a state-changing request to another origin.
+- **Strongest challenge to the result:** redirect-gadget chaining with CSPT was
+  already in `2025.md` via Renwa, nine months earlier. If one treats "chain a
+  redirect onto a CSPT" as the unit of contribution, this is a duplicate.
+- **Benefit-of-doubt check:** read the other way, read and write are different
+  capabilities: Renwa's chain spoofs data the page consumes, this one performs an
+  authenticated write against an origin the page never intended to contact. The
+  status-code choice is load-bearing, not incidental.
+- **Changes after reverification:** Original contribution cut from 58 to 52 and the
+  total from 64.8 to 61.1 after finding the Renwa overlap, and confidence set to
+  Medium. It stays above the 60 gate, but marginally — a re-judge is reasonable if
+  earlier method-preserving CSPT work surfaces.
+
+### Verdict
+
+Meaningful extension. What is new is that CSPT's blast radius is not bounded by the
+origin when a method-preserving redirect is available, together with a named gadget
+that makes the precondition common rather than exotic. What was already known is
+CSPT itself, CSPT2CSRF, redirect chaining for response control, and 307/308
+semantics.
+
+- **Archive decision:** Include as a supporting reference
+- **Confidence:** Medium
+- **Evidence gaps:** No public record establishes whether anyone had previously
+  documented CSPT crossing origins by 307; a negative search result is not proof.
+
+## 54.2 — [CSS Data Exfiltration to Steal OAuth Token](https://blog.voorivex.team/css-data-exfiltration-to-steal-oauth-token) — Amirmohammad Safari & Yashar Shahinzadeh, Voorivex
+
+**REMOVED** · Meaningful combination or adaptation · confidence High
+
+### Candidate
+
+Published 15 February 2025. Judged in the 10 August 2026 single-publisher sweep.
+
+### Core contribution
+
+A chain: DOMPurify's default configuration permits `<style>`, so HTML injection
+that cannot reach script can still reach CSS; sequential import chaining leaks the
+page character by character; and an OAuth flow that accepts an attacker-supplied
+`redirect_uri` puts the token in a URL that a third-party ads script reflects into
+a `src` attribute where the selectors can see it. The one piece of genuine
+mechanism is a specificity fix: later-loaded import rounds lose to earlier rules,
+so the authors nest `:is(div)` selectors in successive rounds to keep priority and
+sustain multi-round extraction.
+
+### Prior art
+
+Dense, and the authors credit it themselves: Gareth Heyes on CSS exfiltration and
+blind CSS exfiltration (2023, in archive), d0nut's sequential import chaining,
+Securitum's single-injection-point Firefox work (2020, in archive), and Frans
+Rosén's dirty-dancing OAuth (2022, in archive). Reflecting query parameters into a
+`src` attribute is a known sink pattern.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 42 | 25% | 10.50 | Every component is cited prior art; the `:is()` specificity workaround is a small genuine addition. |
+| Transferability | 55 | 20% | 11.00 | The specificity fix helps any multi-round import chain; the rest depends on a specific ads script and OAuth misconfiguration. |
+| Lasting value | 48 | 20% | 9.60 | A useful worked chain, unlikely to redirect later research. |
+| Technical soundness | 70 | 15% | 10.50 | The obstacle is diagnosed correctly and the fix is explained. |
+| Practical usability | 58 | 10% | 5.80 | Reusable where the same preconditions line up. |
+| Clarity and reproducibility | 68 | 10% | 6.80 | Clear narrative with payloads; no released tooling. |
+
+**Final score: 54.2/100.** Archive decision: include as a supporting reference; below the 2025 list gate.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the post, plus archived copies of the
+  PortSwigger blind CSS exfiltration and Securitum posts.
+- **Independent prior-art check:** searched by mechanism for CSS import chaining and
+  specificity handling rather than by the OAuth outcome; found the chaining lineage
+  well established and no earlier statement of the specificity problem in these terms.
+- **Strongest challenge to the result:** the authors state plainly that this combines
+  existing techniques, which argues for a lower Original score still.
+- **Benefit-of-doubt check:** the specificity obstacle is real and would stop a
+  reimplementation, so documenting it has value beyond the case study.
+- **Changes after reverification:** None. The score is a fair reading of a
+  well-executed chain built almost entirely from cited prior art.
+
+### Verdict
+
+Meaningful combination or adaptation. Below the 60 gate for the 2025 list.
+
+- **Archive decision:** Include as a supporting reference
+- **Confidence:** High
+- **Evidence gaps:** None material.
+
+## 53.0 — [DOM XSS to Account Takeover: not-so-dirty dancing in a GIS SDK](https://blog.voorivex.team/not-so-dirty-dancing-in-gis-sdk) — HamidSj, Voorivex
+
+**REMOVED** · Useful application or case study · confidence High
+
+### Candidate
+
+Published 7 December 2025. Judged in the 10 August 2026 single-publisher sweep.
+
+### Core contribution
+
+Two layered controls create the gap that defeats them: a WAF blocks `javascript:`
+and a replace function strips characters, so interleaving dots
+(`ja.va.sc.ri.pt.:`) satisfies neither filter's assumptions. The XSS then drives
+the Google Identity Services SDK with `auto_select: true` and a hooked
+`window.open` injecting `prompt=none` and `authuser=0`, so authentication
+completes with no user interaction; stealing the non-`HttpOnly` browser-identity
+cookie alongside the JWT defeats the 2FA exemption that trusts that cookie.
+
+### Prior art
+
+The author credits Omid Rezaei's `prompt=none` OAuth work (2024, in `2024.md`).
+Silent re-authentication via `prompt=none` is specified OIDC behaviour that has
+been abused since the dirty-dancing lineage (2022, in archive). Filter-stripping
+bypasses that exploit a sanitiser's own rewriting are long established. The
+transferable observation — that a "remember this device" cookie readable by script
+is a second factor in name only — is real but not new.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 45 | 25% | 11.25 | Applies the team's own prior `prompt=none` technique to a specific SDK's auto-select feature. |
+| Transferability | 50 | 20% | 10.00 | The GIS auto-select angle applies wherever that SDK is embedded; the filter bypass is target-specific. |
+| Lasting value | 45 | 20% | 9.00 | Useful case study; unlikely to seed further work. |
+| Technical soundness | 70 | 15% | 10.50 | The chain is coherent and each step is evidenced. |
+| Practical usability | 55 | 10% | 5.50 | Reusable against other GIS integrations with the same settings. |
+| Clarity and reproducibility | 68 | 10% | 6.80 | Well told, with the payloads shown. |
+
+**Final score: 53.0/100.** Archive decision: include as a supporting reference; below the 2025 list gate.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the post and the cited 2024 OAuth entry
+  already listed in `2024.md`.
+- **Independent prior-art check:** searched by the silent-authentication mechanism
+  (`prompt=none`, `auto_select`) rather than by the XSS, confirming it as
+  specified behaviour with an established abuse history.
+- **Strongest challenge to the result:** the chain leans on the same team's earlier
+  published technique, so the marginal contribution is the SDK-specific packaging.
+- **Benefit-of-doubt check:** the script-readable device cookie as a 2FA bypass is a
+  design lesson that generalises past this target.
+- **Changes after reverification:** None.
+
+### Verdict
+
+Useful application or case study. Below the 60 gate for the 2025 list.
+
+- **Archive decision:** Include as a supporting reference
+- **Confidence:** High
+- **Evidence gaps:** None material.
+
+## 50.6 — [Puny-Code, 0-Click Account Takeover](https://blog.voorivex.team/puny-code-0-click-account-takeover) — Yashar Shahinzadeh & Amirmohammad Safari, Voorivex
+
+**REMOVED** · Independent rediscovery · confidence High
+
+### Candidate
+
+Published 1 June 2025, presented at NahamCon 2025. Judged in the 10 August 2026
+single-publisher sweep.
+
+### Core contribution
+
+A lookup-versus-delivery split: MySQL's default collation treats certain Unicode
+characters as equal to their ASCII counterparts, so a puny-coded variant of a
+victim's address matches the victim's row, while SMTP treats the same string as a
+distinct mailbox and delivers the reset token to the attacker. The reusable rule is
+that a password reset must send to the address the *database* holds, never to the
+one the request supplied. The authors extend the same idea to OAuth provider email
+callbacks and redirect URLs.
+
+### Prior art
+
+Substantial and acknowledged — the authors write that it "had been discovered
+before us; we just put it into action." ReCollapse (2022, in archive) is the
+canonical statement of normalisation producing a value that still matches;
+HostSplit's Unicode-normalisation anti-patterns (2019, in archive) and Gareth
+Heyes's Splitting the Email Atom (2024, in archive) cover email parser divergence
+in depth. Unicode-collation account confusion has been reported publicly since the
+late 2010s.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 34 | 25% | 8.50 | Self-described as prior discovery applied at scale rather than a new finding. |
+| Transferability | 55 | 20% | 11.00 | The lookup-versus-delivery rule applies to any stack with a collating store and a byte-exact mailer. |
+| Lasting value | 45 | 20% | 9.00 | A durable testing habit, already documented elsewhere. |
+| Technical soundness | 66 | 15% | 9.90 | Mechanism correct; the breadth claim rests on unverifiable bounty reports. |
+| Practical usability | 60 | 10% | 6.00 | Immediately testable on any reset flow. |
+| Clarity and reproducibility | 62 | 10% | 6.20 | Clear, though specific collations and payloads are lightly covered. |
+
+**Final score: 50.6/100.** Archive decision: include as a supporting reference; below the 2025 list gate.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the post, plus archived ReCollapse and
+  HostSplit references for the normalisation lineage.
+- **Independent prior-art check:** searched by precondition (collation equality in
+  the store, byte-exact delivery in the mailer) rather than by "punycode", which
+  surfaces the same class under normalisation and homograph names going back years.
+- **Strongest challenge to the result:** the authors concede prior discovery, which
+  makes *Duplicate* arguable; the score is kept above 50 because the demonstrated
+  extension to OAuth email callbacks is more than a restatement.
+- **Benefit-of-doubt check:** independent arrival is credited, and breadth of
+  affected programs is real evidence that the class was under-tested.
+- **Changes after reverification:** None. Verdict set to Independent rediscovery
+  rather than Duplicate on the strength of the OAuth-callback extension.
+
+### Verdict
+
+Independent rediscovery. Below the 60 gate for the 2025 list.
+
+- **Archive decision:** Include as a supporting reference
+- **Confidence:** High
+- **Evidence gaps:** No first-publication date is offered for the earlier discovery
+  the authors refer to.
+
+## 50.5 — [Stealing oAuth Token via Referrer Policy Override](https://blog.voorivex.team/leaking-oauth-token-via-referrer-leakage) — Omid Rezaei, Voorivex
+
+**REMOVED** · Meaningful combination or adaptation · confidence High
+
+### Candidate
+
+Published 6 May 2025. Judged in the 10 August 2026 single-publisher sweep.
+
+### Core contribution
+
+Chrome applies the referrer policy carried by a `Link` header to sub-resource
+preload requests, so a page that can only inject an `<img>` — everything else
+sanitised away — can still force `unsafe-url` and leak a full referrer containing
+an OAuth authorization code to an attacker endpoint. Combined with a
+`redirect_uri` that lands the victim on the injectable path, that is account
+takeover from a markup-only injection.
+
+### Prior art
+
+The browser behaviour is not the author's: the post credits `@slonser_`'s
+disclosure of Chrome's `Link`-header handling (May 2025) and calls it a Chrome
+0-day rather than claiming it. Referrer leakage of OAuth codes and the
+dirty-dancing family of redirect-chain attacks are established (2022, in archive).
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 36 | 25% | 9.00 | The load-bearing browser primitive is explicitly credited to another researcher. |
+| Transferability | 52 | 20% | 10.40 | The combination applies wherever limited HTML injection meets a redirect-controlled flow. |
+| Lasting value | 44 | 20% | 8.80 | Tied to a browser behaviour that was expected to be fixed. |
+| Technical soundness | 68 | 15% | 10.20 | The chain is coherent and the browser dependency stated. |
+| Practical usability | 55 | 10% | 5.50 | Usable while the behaviour persists. |
+| Clarity and reproducibility | 66 | 10% | 6.60 | Clear, with the attribution made explicit. |
+
+**Final score: 50.5/100.** Archive decision: include as a supporting reference; below the 2025 list gate.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the post and its attribution link.
+- **Independent prior-art check:** searched by the observable outcome (full referrer
+  from a preload despite a restrictive policy) rather than by `Link` header, which
+  confirms the primitive belongs to the credited disclosure.
+- **Strongest challenge to the result:** with the primitive credited elsewhere, the
+  contribution is the OAuth application, which is a familiar shape.
+- **Benefit-of-doubt check:** turning an `<img>`-only injection into token theft is a
+  real escalation and the attribution is handled honestly.
+- **Changes after reverification:** None. Attribution recorded separately, per the
+  rule that first publication and application are credited apart.
+
+### Verdict
+
+Meaningful combination or adaptation. Below the 60 gate for the 2025 list; the
+browser primitive is credited to `@slonser_`.
+
+- **Archive decision:** Include as a supporting reference
+- **Confidence:** High
+- **Evidence gaps:** None material.
+
+## 45.0 — [Hacking Veeam: Several CVEs and $30k Bounties](https://blog.voorivex.team/hacking-veeam-several-cves-and-30k-bounties) — Yashar Shahinzadeh, Voorivex
+
+**REMOVED** · Useful application or case study · confidence High
+
+### Candidate
+
+Published 9 August 2025, but every finding carries a 2024 CVE
+(CVE-2024-29849, -42024, -29850, -29853, -29852) and was fixed in 2024, so the
+research window is 2024 and only the writeup is 2025. Judged in the 10 August 2026
+single-publisher sweep and recorded here because that is where the writeup falls.
+
+### Core contribution
+
+Five findings in Veeam products reached by decompiling .NET assemblies: a SAML
+validation branch that hands out a session cookie for an arbitrary username, a
+deserialization allowlist bypassed by keeping a valid `assemblyName` while
+changing `typeName`, an NTLM relay enabled by missing Extended Protection, a DLL
+path built from user-controlled arguments, and a set of missing authorization
+checks. The one broadly reusable note is the allowlist bypass shape: a check that
+validates one half of a type reference while the other half decides what is
+constructed.
+
+### Prior art
+
+Each class is long established — SAML validation bypasses, .NET deserialization
+allowlist bypasses via partial type matching, NTLM relay (the post cites Compass
+Security's writeup and impacket), path traversal into DLL loading, and IDORs. The
+work is competent enterprise vulnerability research rather than a contribution to
+web technique.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 30 | 25% | 7.50 | Known classes located in one product; the type-name allowlist bypass is the only reusable twist. |
+| Transferability | 42 | 20% | 8.40 | The allowlist-bypass shape generalises; the rest is product-specific. |
+| Lasting value | 35 | 20% | 7.00 | Unlikely to influence later research. |
+| Technical soundness | 72 | 15% | 10.80 | Decompiled evidence, CVEs and vendor fixes support each finding. |
+| Practical usability | 48 | 10% | 4.80 | Useful to .NET auditors, little beyond. |
+| Clarity and reproducibility | 65 | 10% | 6.50 | Clear per-bug walkthroughs with code excerpts. |
+
+**Final score: 45.0/100.** Archive decision: do not include.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the post and the CVE identifiers it cites.
+- **Independent prior-art check:** searched by the deserialization allowlist-bypass
+  mechanism rather than by product, confirming partial-type-match bypasses as an
+  established .NET technique.
+- **Strongest challenge to the result:** five CVEs and $30,000 argue for impact — but
+  impact is explicitly not scored, and none of the five introduce a primitive.
+- **Benefit-of-doubt check:** the "web skills transfer to thick-client appsec"
+  methodology point is genuine and honestly made.
+- **Changes after reverification:** None. Also flagged: the findings belong to the
+  2024 disclosure window, so this would not be a 2025 candidate at any score.
+
+### Verdict
+
+Useful application or case study.
+
+- **Archive decision:** Do not include
+- **Confidence:** High
+- **Evidence gaps:** None material.

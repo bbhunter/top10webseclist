@@ -79,3 +79,34 @@ All fresh additions scored above 70, but this audit applies the repository's
 current **60-or-above** historical gate. The wording in `2025.md` was corrected
 accordingly. This pass did not run the reference archiver or refresh either Web
 application.
+
+## Single-publisher sweep — `blog.voorivex.team` (10 August 2026)
+
+A later, separate pass from the audit above: rather than sweeping a year, it swept
+one publisher across all years. Every post on `blog.voorivex.team` was enumerated
+from the site's sitemap so pagination could not hide any — 28 posts, of which two
+are already in [`2024.md`](../../2024.md) and one was judged in the 2026 round.
+Six fall in the 2025 window and were read in full and judged; scorecards are in
+[judgements.md](judgements.md).
+
+| Score | Verdict | List decision | Candidate |
+|---:|---|---|---|
+| 61.1 | Meaningful extension | add | [Cloudflare Image Proxy as a CSPT Gadget](https://blog.voorivex.team/cloudflare-image-proxy-as-a-cspt-gadget-a-cross-origin-cspt-exploit) |
+| 54.2 | Meaningful combination or adaptation | below gate | [CSS Data Exfiltration to Steal OAuth Token](https://blog.voorivex.team/css-data-exfiltration-to-steal-oauth-token) |
+| 53.0 | Useful application or case study | below gate | [DOM XSS to Account Takeover: not-so-dirty dancing in a GIS SDK](https://blog.voorivex.team/not-so-dirty-dancing-in-gis-sdk) |
+| 50.6 | Independent rediscovery | below gate | [Puny-Code, 0-Click Account Takeover](https://blog.voorivex.team/puny-code-0-click-account-takeover) |
+| 50.5 | Meaningful combination or adaptation | below gate | [Stealing oAuth Token via Referrer Policy Override](https://blog.voorivex.team/leaking-oauth-token-via-referrer-leakage) |
+| 45.0 | Useful application or case study | below gate; wrong year | [Hacking Veeam: Several CVEs and $30k Bounties](https://blog.voorivex.team/hacking-veeam-several-cves-and-30k-bounties) |
+
+The single addition is the first entry this repository has added to a curated year
+list in the 60–69.9 band, and it is marginal within that band: the load-bearing
+question was whether it duplicates the Renwa CSPT roundup already cited in
+`2025.md`. It does not — Renwa chains open redirects to control a *response*, this
+chains a method-preserving 307 to move a state-changing *request* to another
+origin — but the overlap cost it six points on reverification and the confidence
+is Medium. It is a reasonable candidate for re-judging if earlier
+method-preserving CSPT work surfaces.
+
+The Veeam post is recorded here because that is where the writeup falls, but its
+findings all carry 2024 CVEs and were fixed in 2024; it would fail the
+first-publication gate for 2025 regardless of score.
