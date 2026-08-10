@@ -107,7 +107,7 @@ def sanitise(data, max_side=MAX_SIDE, quality=QUALITY):
     try:
         with Image.open(io.BytesIO(data)) as opened:
             opened.load()                                 # decode now, inside the guard
-            frame = opened.convert("RGB")
+            frame = _flatten(opened)
     except Exception as error:                            # a bomb, a truncation, a fake
         raise Unusable("%s: %s" % (type(error).__name__, str(error)[:80]))
 
@@ -132,6 +132,27 @@ def sanitise(data, max_side=MAX_SIDE, quality=QUALITY):
     clean.save(buffer, format=FORMAT, quality=quality, optimize=True,
                progressive=False)
     return buffer.getvalue(), clean.size[0], clean.size[1]
+
+
+def _flatten(opened):
+    """An RGB frame with any transparency composited onto WHITE.
+
+    `convert("RGB")` composites onto BLACK, which is the wrong page colour and
+    was the wrong answer: a diagram drawn as dark strokes on a transparent
+    background - which is how most tools export one - came out as black on black
+    and the reader could see nothing at all. The archive prints onto white paper,
+    so white is what "no pixel here" means.
+    """
+    from PIL import Image
+
+    transparent = (opened.mode in ("RGBA", "LA", "PA")
+                   or (opened.mode == "P" and "transparency" in opened.info))
+    if not transparent:
+        return opened.convert("RGB")
+    rgba = opened.convert("RGBA")
+    canvas = Image.new("RGB", rgba.size, (255, 255, 255))
+    canvas.paste(rgba, mask=rgba.getchannel("A"))
+    return canvas
 
 
 def _resample():

@@ -30,7 +30,14 @@ import re
 # 1: the original converter.
 # 2: link targets escaped once instead of twice; `javascript:` and `data:`
 #    targets printed as text; preserved figures embedded; figures kept whole
-#    across page breaks.
+#    across page breaks; a heading over MAX_HEADING_CHARS printed as a paragraph.
+#
+# THE HEADING CAP DID NOT EARN A VERSION OF ITS OWN, and the reasoning is worth
+# keeping: a bump reprints all 1,283 rendered documents, every PDF comes out
+# byte-different because the printer stamps it, and that is ~300MB of history to
+# change 30 lines across 13 documents. Those 13 were reprinted by name instead.
+# Bump the version for a change that alters output BROADLY; name the documents
+# when it alters output for a handful.
 RENDERER = 2
 
 # A print stylesheet, inlined so the document owes nothing to the network. A4
@@ -82,6 +89,9 @@ _UL = re.compile(r"^(\s*)[-*+]\s+(.*)$")
 _OL = re.compile(r"^(\s*)\d+[.)]\s+(.*)$")
 _TABLE_SEP = re.compile(r"^\s*\|?\s*:?-{2,}:?\s*(\|\s*:?-{2,}:?\s*)+\|?\s*$")
 _BLOCKQUOTE = re.compile(r"^\s*>\s?(.*)$")
+
+# See the comment at the heading branch below.
+MAX_HEADING_CHARS = 300
 
 # Inline constructs. Order matters: code spans are pulled out first and masked so
 # nothing inside them is treated as markup.
@@ -194,7 +204,11 @@ def markdown_to_html_body(md_text, image_source=None):
             index += 1
             continue
 
-        heading = _ATX.match(line)
+        # A heading the length of an article is not a heading; see the reader's
+        # own cap in `website/app.js`. Measured over 13,865 archived headings the
+        # 99th percentile is 206 characters, so anything past 300 is a paragraph
+        # that lost its line break upstream.
+        heading = _ATX.match(line) if len(line) <= MAX_HEADING_CHARS else None
         if heading:
             level = len(heading.group(1))
             out.append("<h%d>%s</h%d>" % (level, _inline(heading.group(2), image_source), level))

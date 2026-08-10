@@ -2659,7 +2659,15 @@ function markdownDocument(markdown) {
       html.push(`<pre><code${language ? ` class="language-${h(language)}"` : ""}>${h(code.join("\n"))}</code></pre>`);
       continue;
     }
-    const heading = line.match(/^(#{1,4})\s+(.+)$/);
+    // A HEADING THE LENGTH OF AN ARTICLE IS NOT A HEADING. Some sources put a
+    // whole slide's transcript inside an `<h2>`, and one blog leaves its article
+    // in a hidden element as Markdown source whose newlines HTML collapses: the
+    // reader then renders thousands of words as one wall of display type.
+    // Measured over 13,865 archived headings, the median is 24 characters and the
+    // 99th percentile is 206, so nothing above 300 is a title anybody wrote - it
+    // is 30 lines across 13 documents, every one of them a flattened paragraph.
+    // The ARCHIVE keeps what the source said; only the rendering is capped.
+    const heading = line.length <= 300 ? line.match(/^(#{1,4})\s+(.+)$/) : null;
     if (heading) {
       flushParagraph();
       const level = heading[1].length;

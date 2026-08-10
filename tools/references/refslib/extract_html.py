@@ -322,12 +322,41 @@ def to_markdown(node, base_url=""):
     return text.strip() + "\n"
 
 
+# WHAT MAKES A TEXT NODE MARKDOWN RATHER THAN PROSE. Block markers at the start
+# of a line, more than one of them, in a node that has line structure at all.
+# Deliberately strict: a single `#` or `-` at a line start is a sentence that
+# happened to wrap, and treating that as Markdown would put paragraph breaks
+# through ordinary articles.
+_MARKDOWN_BLOCK = re.compile(r"^(?:#{1,6} |```|[-*+] |\d+\. |> )", re.MULTILINE)
+_MIN_MARKDOWN_MARKERS = 3
+
+
+def _is_markdown_source(text):
+    body = text or ""
+    if "\n" not in body:
+        return False
+    return len(_MARKDOWN_BLOCK.findall(body)) >= _MIN_MARKDOWN_MARKERS
+
+
 def _render(node, out, base_url, stack):
     tag = node.tag
 
     if tag == "#text":
         if "pre" in stack:
             out.append(node.text)
+        elif _is_markdown_source(node.text):
+            # A TEXT NODE THAT IS ALREADY A MARKDOWN DOCUMENT. matanber.com
+            # renders its article with JavaScript and leaves the article's own
+            # Markdown SOURCE in a hidden element, which is then the only copy a
+            # fetch can see. Collapsing its newlines the way HTML requires turned
+            # a whole 18,847-character write-up into one line beginning `# `, so
+            # the reader rendered the entire article as a single heading.
+            #
+            # Only the line structure is kept, and only when the text carries
+            # Markdown block markers of its own: an ordinary paragraph whose
+            # source happens to be soft-wrapped has none, and still collapses.
+            text = re.sub(r"[ \t]+", " ", node.text)
+            out.append(re.sub(r"\n{3,}", "\n\n", text))
         else:
             out.append(re.sub(r"\s+", " ", node.text))
         return
