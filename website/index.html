@@ -203,11 +203,13 @@
         <strong id="pdf-title">Document viewer</strong>
       </div>
       <div class="pdf-actions">
+        <!-- First on the bar, as the PDF button is in the Markdown reader: one
+             place on the toolbar always switches between the two views. -->
+        <button id="pdf-open-markdown" type="button" hidden>▤ Markdown</button>
         <button class="reading-theme-toggle" id="pdf-theme-toggle" type="button" aria-label="Switch to light reading theme" title="Changes the viewer controls and surround; PDF page colours remain original">☀ Light</button>
         <button id="pdf-share" type="button" title="Share this exact PDF view">⌁ Share</button>
         <button id="pdf-read-toggle" type="button">○ Mark as read</button>
         <button id="pdf-favourite-toggle" type="button" hidden>☆ Add favourite</button>
-        <button id="pdf-open-markdown" type="button" hidden>▤ Markdown</button>
         <button id="pdf-links-toggle" type="button" aria-expanded="false" title="Links inside a PDF are handled by the browser's own viewer and cannot open a new tab; these can" hidden>⚯ Links</button>
         <button id="pdf-fit-width" type="button">Fit width</button>
         <button id="pdf-fit-page" type="button">Fit page</button>

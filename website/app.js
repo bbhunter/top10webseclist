@@ -2777,13 +2777,16 @@ async function openReader(item, options = {}) {
   $("#reader-content").innerHTML = `<div class="reader-loading"><i></i><p>Opening preserved Markdown…</p></div>`;
   $("#reader-toc").innerHTML = "";
   $("#reader-progress-bar").style.width = "0";
+  // The switch to the other view of the same document leads, and sits in the
+  // same first position in the PDF viewer, so one place on the toolbar always
+  // moves between Markdown and PDF.
   $("#reader-actions").innerHTML = `
+    ${item.pdfPath ? `<button id="reader-open-pdf" type="button">▧ PDF</button>` : ""}
     <button class="reading-theme-toggle" id="reader-theme-toggle" type="button" aria-label="Switch to light reading theme">☀ Light</button>
     <button id="reader-share" type="button" title="Share this exact Markdown view">⌁ Share</button>
     <button id="reader-read-toggle" type="button" aria-pressed="${item.read}">${item.read ? "✓ Read" : "○ Mark as read"}</button>
     <button id="reader-favourite-toggle" type="button" aria-pressed="${item.favourite}">${item.favourite ? "★ Favourite" : "☆ Add favourite"}</button>
     <a href="${h(markdownUrl)}" target="_blank" rel="noopener noreferrer">Raw MD</a>
-    ${item.pdfPath ? `<button id="reader-open-pdf" type="button">▧ PDF</button>` : ""}
     ${item.originalMdPath ? `<button id="reader-language-toggle" type="button">${showOriginal ? "⇄ English" : `⇄ ${h(item.language ? item.language.toUpperCase() : "Original language")}`}</button>` : ""}
     ${originalUrl ? `<a href="${h(originalUrl)}" target="_blank" rel="noopener noreferrer">Original ↗</a>` : `<span class="disabled">Original blocked</span>`}`;
   $("#reader-theme-toggle").addEventListener("click", toggleReadingTheme);
