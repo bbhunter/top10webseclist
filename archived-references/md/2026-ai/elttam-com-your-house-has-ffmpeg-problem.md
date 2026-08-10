@@ -5,9 +5,9 @@ resource: "https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem"
 tags: [article, webseclist-reference, en, elttam-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:18+00:00"
+  at: "2026-08-10T15:09:25+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:82"
+  - "2026-ai.md:60"
 commit: ""
-content_sha256: 563dfdcb9720242d3c527dc1a87cf1e4ab854c4206286dadea8040aec7141c9a
+content_sha256: 23f00095c4d1e8734b57032ae194a5cb48ecce38488cf2c612777054b592b6d2
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 6dc306d37d5be97d2ff00ab29028396712da8fa0aef23f78974e0a27a90fc535
 retrieved_from: "https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:18+00:00"
+retrieved_utc: "2026-08-10T15:09:25+00:00"
 slug: elttam-com-your-house-has-ffmpeg-problem
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem>
-- Preserved from: https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem (live) on 2026-08-08
+- Preserved from: https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

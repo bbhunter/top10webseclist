@@ -5,9 +5,9 @@ resource: "https://fahrplan.events.ccc.de/congress/2006/Fahrplan/events/1602.en.
 tags: [article, webseclist-reference, fahrplan-events-ccc-de]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:49:02+00:00"
+  at: "2026-08-10T15:09:54+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://fahrplan.events.ccc.de/congress/2006/Fahrplan/events/1602.en.html"
@@ -17,7 +17,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2006.md:89"
+  - "2006.md:84"
 commit: ""
 content_sha256: 894f184e10b49ef497f3605e01dbf38daa5d6e4f53da81083595cf4dfaa9ef16
 depth: full
@@ -32,7 +32,7 @@ publisher_english: ""
 raw_sha256: ccd243ed190524d1f1a63a560f817dc0c36a7d9d447041ce9b42ade831518399
 retrieved_from: "https://fahrplan.events.ccc.de/congress/2006/Fahrplan/events/1602.en.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:49:02+00:00"
+retrieved_utc: "2026-08-10T15:09:54+00:00"
 slug: 2007-fahrplan-events-ccc-de-23c3-subverting-ajax
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2007-01-30
 - Original: <https://fahrplan.events.ccc.de/congress/2006/Fahrplan/events/1602.en.html>
-- Preserved from: https://fahrplan.events.ccc.de/congress/2006/Fahrplan/events/1602.en.html (live) on 2026-08-08
+- Preserved from: https://fahrplan.events.ccc.de/congress/2006/Fahrplan/events/1602.en.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://av.tib.eu/media/62200"
 tags: [article, webseclist-reference, en, av-tib-eu]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:01:44+00:00"
+  at: "2026-08-10T15:02:43+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://av.tib.eu/media/62200"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2022.md:36"
 commit: ""
-content_sha256: a2db1ec910f3973c833b4e12b3c0dd317a7b8a0a34949e6a48406c95c0746630
+content_sha256: 0a881ee00ff228f583396b82c7605f440cba3072a325cf35d23678adf68688a2
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://av.tib.eu/media/62200"
 published: ""
 publisher: av.tib.eu
 publisher_english: ""
-raw_sha256: 56254a6ce185c0057b2d01e0db4ccf2522e73d15bffac909d329f8b049d743e0
+raw_sha256: d2e7a6e7c44c07b17e86ccaeb09f6755fb8d0128780d208feaa08cb85e61e593
 retrieved_from: "https://av.tib.eu/media/62200"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:01:44+00:00"
+retrieved_utc: "2026-08-10T15:02:43+00:00"
 slug: av-tib-eu-csrf-resurrections
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://av.tib.eu/media/62200>
-- Preserved from: https://av.tib.eu/media/62200 (live) on 2026-08-09
+- Preserved from: https://av.tib.eu/media/62200 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -157,4 +157,3 @@ You are free to use, adapt and copy, distribute and transmit the work or content
   |  |
 
  |  |
-

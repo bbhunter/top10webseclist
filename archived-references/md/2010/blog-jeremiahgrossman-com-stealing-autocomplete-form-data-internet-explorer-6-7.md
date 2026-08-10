@@ -5,9 +5,9 @@ resource: "https://jeremiahgrossman.blogspot.com/2010/07/stealing-autocomplete-f
 tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:31:31+00:00"
+  at: "2026-08-10T15:30:14+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2010/07/stealing-autocomplete-form-data-in.html"
@@ -30,10 +30,10 @@ original_url: "https://jeremiahgrossman.blogspot.com/2010/07/stealing-autocomple
 published: ""
 publisher: blog.jeremiahgrossman.com
 publisher_english: ""
-raw_sha256: af8bf4aa86f37edc5c029734961c91b5ab8d636c71bb2e482dca2d85577a857e
+raw_sha256: a16f9bdcdf558bc3cf4cc005507ccddaba3a77f26e5d227f2dfab9924f785f3b
 retrieved_from: "https://blog.jeremiahgrossman.com/2010/07/stealing-autocomplete-form-data-in.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:31:31+00:00"
+retrieved_utc: "2026-08-10T15:30:14+00:00"
 slug: blog-jeremiahgrossman-com-stealing-autocomplete-form-data-internet-explorer-6-7
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2010/07/stealing-autocomplete-form-data-in.html>
 - Current location: <https://blog.jeremiahgrossman.com/2010/07/stealing-autocomplete-form-data-in.html>
-- Preserved from: https://blog.jeremiahgrossman.com/2010/07/stealing-autocomplete-form-data-in.html (live) on 2026-08-09
+- Preserved from: https://blog.jeremiahgrossman.com/2010/07/stealing-autocomplete-form-data-in.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

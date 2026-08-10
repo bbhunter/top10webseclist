@@ -5,9 +5,9 @@ resource: "https://www.praetorian.com/blog/refresh-compromising-f5-big-ip-with-r
 tags: [article, webseclist-reference, en, praetorian]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:48+00:00"
+  at: "2026-08-10T15:37:03+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.praetorian.com/blog/refresh-compromising-f5-big-ip-with-request-smuggling-cve-2023-46747/"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:64"
 commit: ""
-content_sha256: 3d1ecb3822ada172007e4562aab0ecef50e57092a7686716b4fb08852bd0d4f2
+content_sha256: cbeb0a278db0eb0aa78814a2b9a242a0cea055989f7f65b1a45ad480a3858da7
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://www.praetorian.com/blog/refresh-compromising-f5-big-ip-wi
 published: 2023-10-26
 publisher: Praetorian
 publisher_english: ""
-raw_sha256: 4be97dc13ffd084bebe257e9ad5359d532db3f55eb7e0c6d5d44e6d0fabbd211
+raw_sha256: 908921593fbed69057234e877ba4a5365b190d60de7b8d07cb35519436248487
 retrieved_from: "https://www.praetorian.com/blog/refresh-compromising-f5-big-ip-with-request-smuggling-cve-2023-46747/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:48+00:00"
+retrieved_utc: "2026-08-10T15:37:03+00:00"
 slug: 2023-praetorian-refresh-compromising-f5-big-ip-request-smuggling
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2023-10-26
 - Original: <https://www.praetorian.com/blog/refresh-compromising-f5-big-ip-with-request-smuggling-cve-2023-46747/>
-- Preserved from: https://www.praetorian.com/blog/refresh-compromising-f5-big-ip-with-request-smuggling-cve-2023-46747/ (live) on 2026-08-09
+- Preserved from: https://www.praetorian.com/blog/refresh-compromising-f5-big-ip-with-request-smuggling-cve-2023-46747/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -509,7 +509,7 @@ While the issue we highlighted in the F5 TMUI portal was a critical risk issue a
 
 ## Disclosure Timeline
 
-October 4th, 2023 – Initial email to F5 sent (to [[email protected]](https://www.praetorian.com/cdn-cgi/l/email-protection#dfb9eaacb6adab9fb9eaf1bcb0b2)).
+October 4th, 2023 – Initial email to F5 sent (to [[email protected]](https://www.praetorian.com/cdn-cgi/l/email-protection#8aecbff9e3f8fecaecbfa4e9e5e7)).
 
 October 5th, 2023 – Vulnerability report provided to the F5 SIRT team.
 

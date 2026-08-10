@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity25/presentation/anlik
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:10+00:00"
+  at: "2026-08-10T16:05:36+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity25/presentation/anliker"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2025.md:99"
+  - "2025.md:94"
 commit: ""
 content_sha256: 7c8fe01f3a1b9e22a45630bf56e616ee7b58cdbd083d6b5d02a005e2e6264f24
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity25/presentation/a
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 769cf040ecc580471245179c0a927b298658f07b7ab88f30dd7e00ed0e9f7246
+raw_sha256: eaebe19c4a6c8e12dc3c33e22eb1c590f8df6329da2157b988ef764be8cd8d54
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity25/presentation/anliker"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:10+00:00"
+retrieved_utc: "2026-08-10T16:05:36+00:00"
 slug: usenix-org-phishing-attacks-against-password-manager-browser-extensions
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity25/presentation/anliker>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity25/presentation/anliker (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity25/presentation/anliker (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

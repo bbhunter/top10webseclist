@@ -5,9 +5,9 @@ resource: "http://shampoo.antville.org/stories/1451301/"
 tags: [article, webseclist-reference, en, shampoo-antville-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:30+00:00"
+  at: "2026-08-10T15:58:55+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://shampoo.antville.org/stories/1451301/"
@@ -20,7 +20,7 @@ canonical_url: "https://shampoo.antville.org/stories/1451301/"
 cited_by:
   - "2006.md:7"
 commit: ""
-content_sha256: d87640c38b42d4d31699c65867726371809fba41ee1f4ac2cd6524a5ce55e1d0
+content_sha256: 4df0afc5033adfc920f124f21c5665a26d510b37eacac1eee9382e2c8fc696c1
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "http://shampoo.antville.org/stories/1451301/"
 published: ""
 publisher: shampoo.antville.org
 publisher_english: ""
-raw_sha256: f87264d49902ef8fafd2220b627b783762b3878b373542dd210614f775f9d71a
+raw_sha256: 89b248be0a644e54210639518bbab80c15a21e0f406cc1d63d616667720b9d67
 retrieved_from: "https://shampoo.antville.org/stories/1451301/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:30+00:00"
+retrieved_utc: "2026-08-10T15:58:55+00:00"
 slug: shampoo-antville-org-somewhat-breaking-same-origin-policy-undermining-pinning
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://shampoo.antville.org/stories/1451301/>
 - Current location: <https://shampoo.antville.org/stories/1451301/>
-- Preserved from: https://shampoo.antville.org/stories/1451301/ (live) on 2026-08-09
+- Preserved from: https://shampoo.antville.org/stories/1451301/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -123,7 +123,7 @@ The attack only woks, if the attacked server does not check the http host proper
 
   |   |  ![](https://shampoo.antville.org/static/img/pixel.gif) |
 
- online for 9047 Days
+ online for 9048 Days
 last updated: 09.04.14, 16:14
 
 ![](https://shampoo.antville.org/static/img/pixel.gif)

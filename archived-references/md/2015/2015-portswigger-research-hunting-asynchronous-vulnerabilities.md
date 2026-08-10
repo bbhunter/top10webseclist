@@ -5,9 +5,9 @@ resource: "http://blog.portswigger.net/2015/09/hunting-asynchronous-vulnerabilit
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:06:31+00:00"
+  at: "2026-08-10T15:05:56+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.portswigger.net/2015/09/hunting-asynchronous-vulnerabilities.html"
@@ -21,7 +21,7 @@ canonical_url: "https://portswigger.net/research/hunting-asynchronous-vulnerabil
 cited_by:
   - "2015.md:46"
 commit: ""
-content_sha256: 9b5474af8b2f74ddb3b8a52e534ed63f4b3e2c0c1abb107d2e26d71f81d0fe51
+content_sha256: faeaed25e39421121cc868741877a301b2e6c58710ee24c747686ec2e19d62e6
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "http://blog.portswigger.net/2015/09/hunting-asynchronous-vulnerab
 published: 2015-09-15
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 2bccd3d4a915b7d16ca006de61a5f0eed8a0ca9803cc9ff87f48a36a6ce4154f
+raw_sha256: 25351ce0aa79b72d07ac51c3e7133390fea598606d264f789b40802c3bbf5f81
 retrieved_from: "https://portswigger.net/research/hunting-asynchronous-vulnerabilities"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:06:31+00:00"
+retrieved_utc: "2026-08-10T15:05:56+00:00"
 slug: 2015-portswigger-research-hunting-asynchronous-vulnerabilities
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 - Published: 2015-09-15
 - Original: <http://blog.portswigger.net/2015/09/hunting-asynchronous-vulnerabilities.html>
 - Current location: <https://portswigger.net/research/hunting-asynchronous-vulnerabilities>
-- Preserved from: https://portswigger.net/research/hunting-asynchronous-vulnerabilities (live) on 2026-08-09
+- Preserved from: https://portswigger.net/research/hunting-asynchronous-vulnerabilities (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

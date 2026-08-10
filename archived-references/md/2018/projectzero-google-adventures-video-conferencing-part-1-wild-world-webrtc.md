@@ -5,9 +5,9 @@ resource: "https://projectzero.google/2018/12/adventures-in-video-conferencing-p
 tags: [article, webseclist-reference, en, projectzero-google]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:55+00:00"
+  at: "2026-08-10T15:57:01+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://projectzero.google/2018/12/adventures-in-video-conferencing-part-1.html"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2018.md:86"
+  - "2018.md:82"
 commit: ""
-content_sha256: be26415aa0fcd417b30b610915bef69921aea92969a709688ec9374859dd567b
+content_sha256: 953697984a50367b1c03c6c6c25210a371b44592e1eb0679565b727c32a6fcaa
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://projectzero.google/2018/12/adventures-in-video-conferenci
 published: ""
 publisher: projectzero.google
 publisher_english: ""
-raw_sha256: 280f49dfb3fb0026543d6756cbe0560eca9b8188b80feb4dfbd02a10495bf9a9
+raw_sha256: 0b120efbbe1b3bc104330e2ea0e6e071508d94a8ee4af185af38601c33cb19be
 retrieved_from: "https://projectzero.google/2018/12/adventures-in-video-conferencing-part-1.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:55+00:00"
+retrieved_utc: "2026-08-10T15:57:01+00:00"
 slug: projectzero-google-adventures-video-conferencing-part-1-wild-world-webrtc
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://projectzero.google/2018/12/adventures-in-video-conferencing-part-1.html>
-- Preserved from: https://projectzero.google/2018/12/adventures-in-video-conferencing-part-1.html (live) on 2026-08-08
+- Preserved from: https://projectzero.google/2018/12/adventures-in-video-conferencing-part-1.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://payatu.com/blog/nikhil-mittal/firefox-ios-qr-code-reader-xss-
 tags: [article, webseclist-reference, en, payatu]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:37:48+00:00"
+  at: "2026-08-10T15:35:55+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://payatu.com/blog/nikhil-mittal/firefox-ios-qr-code-reader-xss-(cve-2019-17003"
@@ -23,7 +23,7 @@ canonical_url: "https://payatu.com/blog/get-pwned-by-scanning-firefox-qr-code-re
 cited_by:
   - "2019.md:46"
 commit: ""
-content_sha256: 4dd088bc0ee71ac9287df855dc1bd5a16e403cb84bf1b58ebfc67958003847a6
+content_sha256: 8ad15adde64f7a079d46692726abdb0dd1e34017b451db055b9768656c66d164
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: e5ed86c1b43df10ba4800bda247adc28041dbfb48364478c3ae511798f6078f6
 retrieved_from: "https://payatu.com/blog/get-pwned-by-scanning-firefox-qr-code-reader/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:37:48+00:00"
+retrieved_utc: "2026-08-10T15:35:55+00:00"
 slug: 2019-payatu-get-pwned-scanning-firefox-qr-code-reader
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: 2019-12-10
 - Original: <https://payatu.com/blog/nikhil-mittal/firefox-ios-qr-code-reader-xss-(cve-2019-17003>
 - Current location: <https://payatu.com/blog/get-pwned-by-scanning-firefox-qr-code-reader/>
-- Preserved from: https://payatu.com/blog/get-pwned-by-scanning-firefox-qr-code-reader/ (live) on 2026-08-09
+- Preserved from: https://payatu.com/blog/get-pwned-by-scanning-firefox-qr-code-reader/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -67,8 +67,6 @@ page going offline. To read the original, follow the link above.
 One of the most common ways to navigate to a website or URLs is by typing website address in the browser address bar
 
 Table of Contents
-
-  
 
 But this might be frustrating if you have to type a complex web address that includes some kind of tokens.
 

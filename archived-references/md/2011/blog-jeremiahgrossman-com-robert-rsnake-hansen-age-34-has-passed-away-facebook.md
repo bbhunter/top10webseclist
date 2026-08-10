@@ -5,9 +5,9 @@ resource: "https://jeremiahgrossman.blogspot.com/2011/03/robert-rsnake-hansen-ag
 tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:31:34+00:00"
+  at: "2026-08-10T15:30:18+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2011/03/robert-rsnake-hansen-age-34-has-passed.html"
@@ -30,10 +30,10 @@ original_url: "https://jeremiahgrossman.blogspot.com/2011/03/robert-rsnake-hanse
 published: ""
 publisher: blog.jeremiahgrossman.com
 publisher_english: ""
-raw_sha256: a002f1e42036bc7aa73a8bbe14c814ff52ae12177cb54b82296df1ec227862d0
+raw_sha256: 42675c9f36624874e8f473bab2f1ad069c08de387cea6fb4d9ab18567a5638ec
 retrieved_from: "https://blog.jeremiahgrossman.com/2011/03/robert-rsnake-hansen-age-34-has-passed.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:31:34+00:00"
+retrieved_utc: "2026-08-10T15:30:18+00:00"
 slug: blog-jeremiahgrossman-com-robert-rsnake-hansen-age-34-has-passed-away-facebook
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2011/03/robert-rsnake-hansen-age-34-has-passed.html>
 - Current location: <https://blog.jeremiahgrossman.com/2011/03/robert-rsnake-hansen-age-34-has-passed.html>
-- Preserved from: https://blog.jeremiahgrossman.com/2011/03/robert-rsnake-hansen-age-34-has-passed.html (live) on 2026-08-09
+- Preserved from: https://blog.jeremiahgrossman.com/2011/03/robert-rsnake-hansen-age-34-has-passed.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

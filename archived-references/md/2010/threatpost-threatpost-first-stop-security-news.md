@@ -5,9 +5,9 @@ resource: "https://threatpost.com/en_us/blogs/padding-oracle-crypto-attack-affec
 tags: [article, webseclist-reference, en, threatpost]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:46:42+00:00"
+  at: "2026-08-10T16:02:50+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://threatpost.com/en_us/blogs/padding-oracle-crypto-attack-affects-millions-aspnet-apps-091310"
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: 4ca417f7b2eaadf5978a88252c7144e2d2fec2ec5f4a6e06907e040353b80327
 retrieved_from: "https://threatpost.com"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:46:42+00:00"
+retrieved_utc: "2026-08-10T16:02:50+00:00"
 slug: threatpost-threatpost-first-stop-security-news
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://threatpost.com/en_us/blogs/padding-oracle-crypto-attack-affects-millions-aspnet-apps-091310>
 - Current location: <https://threatpost.com>
-- Preserved from: https://threatpost.com (live) on 2026-08-09
+- Preserved from: https://threatpost.com (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

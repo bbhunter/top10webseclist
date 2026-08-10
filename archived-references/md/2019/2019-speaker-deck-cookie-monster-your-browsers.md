@@ -5,9 +5,9 @@ resource: "https://speakerdeck.com/filedescriptor/the-cookie-monster-in-your-bro
 tags: [slides, webseclist-reference, en, speaker-deck]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:06+00:00"
+  at: "2026-08-10T16:00:42+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://speakerdeck.com/filedescriptor/the-cookie-monster-in-your-browsers"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:43"
 commit: ""
-content_sha256: 23990e177712332b7bc000e6f9d4684fa60337c97d79b527f0db7e842eb68c0e
+content_sha256: 6ec04cb106fe13560d7bfafb8735789e53138151a688ce2c6620e4940b13e721
 depth: full
 depth_reason: default
 kind: slides
@@ -32,10 +32,10 @@ original_url: "https://speakerdeck.com/filedescriptor/the-cookie-monster-in-your
 published: 2019-08-23
 publisher: Speaker Deck
 publisher_english: ""
-raw_sha256: 9801a208b017b6c52b77dce70372e5f0c6aaf7192bf3bea8f0a6f13a87e547d8
+raw_sha256: fc0d4fba7421d131a5a9aaf176b85aae35ef9f551a0e5ff3ebb96461da1762d0
 retrieved_from: "https://speakerdeck.com/filedescriptor/the-cookie-monster-in-your-browsers"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:06+00:00"
+retrieved_utc: "2026-08-10T16:00:42+00:00"
 slug: 2019-speaker-deck-cookie-monster-your-browsers
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2019-08-23
 - Original: <https://speakerdeck.com/filedescriptor/the-cookie-monster-in-your-browsers>
-- Preserved from: https://speakerdeck.com/filedescriptor/the-cookie-monster-in-your-browsers (live) on 2026-08-09
+- Preserved from: https://speakerdeck.com/filedescriptor/the-cookie-monster-in-your-browsers (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -98,51 +98,47 @@ A talk about cookies I presented in HITCON 2019
 
  [ See All in Technology ](https://speakerdeck.com/c/technology)
 
- [もう一度考える SRE チームの作り方・育て方 / Rethinking SRE #1: Building and Growing SRE Teams](https://speakerdeck.com/rrreeeyyy/rethinking-sre-number-1-building-and-growing-sre-teams)
+ [ラジオの科学](https://speakerdeck.com/frievea/radio-explained)
 
- [ ![Avatar for rrreeeyyy](https://secure.gravatar.com/avatar/28e154e6e0351c70091997d2f574295a?s=24) rrreeeyyy ](https://speakerdeck.com/rrreeeyyy)
-
- 6
-
-  1k
-
- [【CEDEC2026】グラフィックスエンジニアのためのニューラルシェーディング入門](https://speakerdeck.com/cygames/cygames_202607_cedec2026_03)
-
- [ ![Avatar for Cygames, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzQyMzEyLCJwdXIiOiJibG9iX2lkIn19--79c11d4c6a736302463ad65244e1053a62bdbfa4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/SpeakerDeck_%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.png) cygames ](https://speakerdeck.com/cygames)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+ [ ![Avatar for Frieve-A](https://secure.gravatar.com/avatar/98372e0220a3447bc5d8df1e7ba61ca5?s=24) frievea ](https://speakerdeck.com/frievea)
 
  0
 
-  110
+  280
 
- [AI駆動開発は個人技からチーム戦へ：組織でAIを使いこなすための実践設計](https://speakerdeck.com/moongift/aiqu-dong-kai-fa-hage-ren-ji-karatimuzhan-he-zu-zhi-teaiwoshi-ikonasutamenoshi-jian-she-ji)
+ [Invisible to AI? Making TYPO3 Sites Quotable by AI Search Systems](https://speakerdeck.com/wolfgangwagner/invisible-to-ai-making-typo3-sites-quotable-by-ai-search-systems)
 
- [ ![Avatar for Atsushi Nakatsugawa](https://secure.gravatar.com/avatar/4cafe6a1c6287d64d7252279eeeffa94?s=24) moongift ](https://speakerdeck.com/moongift)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+ [ ![Avatar for Wolfgang Wagner](https://secure.gravatar.com/avatar/34c94e77472995f4cdceb840583295ef?s=24) wolfgangwagner ](https://speakerdeck.com/wolfgangwagner)
 
  0
 
-  460
+  160
 
- [【CEDEC2026】『Relink』を拡張せよ - 『GRANBLUE FANTASY: Relink - Endless Ragnarok』の開発速度と品質を守るCI運用](https://speakerdeck.com/cygames/cygames_202607_cedec2026_09)
+ [AIエージェントを前提としたプラットフォーム エンジニアリング：GKEで作るAgent-Ready Golden Path](https://speakerdeck.com/legalontechnologies/agent-ready-golden-path-with-gke)
 
- [ ![Avatar for Cygames, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzQyMzEyLCJwdXIiOiJibG9iX2lkIn19--79c11d4c6a736302463ad65244e1053a62bdbfa4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/SpeakerDeck_%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.png) cygames ](https://speakerdeck.com/cygames)
+ [ ![Avatar for LegalOn Technologies, Inc](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTE2MzkzLCJwdXIiOiJibG9iX2lkIn19--a9ffa7e96adca6112561e58e779d993e59dc3e11/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/on_whiteback_forCircle.jpg) legalontechnologies ](https://speakerdeck.com/legalontechnologies)
 
  [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
-
- 0
-
-  130
-
- [Software Supply Chain Attackからクラウド環境を守るためにできること](https://speakerdeck.com/lhazy/software-supply-chain-attackkarakuraudohuan-jing-woshou-rutamenidekirukoto)
-
- [ ![Avatar for LHazy](https://secure.gravatar.com/avatar/0557e811080457658b1632e6cce220f5?s=24) lhazy ](https://speakerdeck.com/lhazy)
 
  2
 
-  180
+  210
+
+ [SO-101×VLAによる3色キューブのピック＆プレース](https://speakerdeck.com/abeja/so-101xvla-niyoru-3-iro-kyubu-no-pikku)
+
+ [ ![Avatar for ABEJA](https://secure.gravatar.com/avatar/ade0cb4143c001fef8ca5aa320c2eb1d?s=24) abeja ](https://speakerdeck.com/abeja)
+
+ 0
+
+  120
+
+ [ガバメントクラウドでのランサムウェア対策](https://speakerdeck.com/techniczna/gabamentokuraudodenoransamuueadui-ce)
+
+ [ ![Avatar for 高橋広和](https://secure.gravatar.com/avatar/ab634b4efc9bb872caffde415e7b33fe?s=24) techniczna ](https://speakerdeck.com/techniczna)
+
+ 2
+
+  960
 
  [老害フォレンジッカーはAI羊の夢を見るか？](https://speakerdeck.com/tadmaddad/lao-hai-huorenzitukahaaiyang-nomeng-wojian-ruka)
 
@@ -150,165 +146,171 @@ A talk about cookies I presented in HITCON 2019
 
  0
 
-  200
+  290
 
- [クラウドセキュリティ入門 ～安全なクラウド利用のための基礎知識～](https://speakerdeck.com/lhazy/kuraudosekiyuriteiru-men-an-quan-nakuraudoli-yong-notamenoji-chu-zhi-shi)
+ [Bill One 開発エンジニア 紹介資料](https://speakerdeck.com/sansan33/billone-engineer)
 
- [ ![Avatar for LHazy](https://secure.gravatar.com/avatar/0557e811080457658b1632e6cce220f5?s=24) lhazy ](https://speakerdeck.com/lhazy)
-
- 10
-
-  7.9k
-
- [【CEDEC2026】専門性の高いデフォルメチームが挑んだ人材育成戦略 〜Cygames Academiaの企画から実施まで〜](https://speakerdeck.com/cygames/cygames_202607_cedec2026_02)
-
- [ ![Avatar for Cygames, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzQyMzEyLCJwdXIiOiJibG9iX2lkIn19--79c11d4c6a736302463ad65244e1053a62bdbfa4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/SpeakerDeck_%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.png) cygames ](https://speakerdeck.com/cygames)
+ [ ![Avatar for Sansan, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTM5NzYsInB1ciI6ImJsb2JfaWQifX0=--742b6b79e99ff01edb063160edba4f5a13693ead/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/icon512.jpg) sansan33 ](https://speakerdeck.com/sansan33)
 
  [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
+ 7
+
+  19k
+
+ [20分でわかるセキュアAPI](https://speakerdeck.com/nwiizo/20fen-dewakarusekiyuaapi)
+
+ [ ![Avatar for nwiizo](https://secure.gravatar.com/avatar/6ed12627fec46a135f1bce5d56f3568e?s=24) nwiizo ](https://speakerdeck.com/nwiizo)
+
  0
 
-  500
+  180
 
- [OSPN.JPバージョンアップ作業進捗のご報告 / 20260801-osc26kyoto](https://speakerdeck.com/akkiesoft/20260801-osc26kyoto)
+ [認知負荷をGemini で溶かす — GKE 基盤「Orbit」における AI エージェントの実践](https://speakerdeck.com/sansantech/260731)
 
- [ ![Avatar for Akira Ouchi](https://secure.gravatar.com/avatar/74476e142a767a018d68c5e72e34ee2f?s=24) akkiesoft ](https://speakerdeck.com/akkiesoft)
+ [ ![Avatar for SansanTech](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTQyMCwicHVyIjoiYmxvYl9pZCJ9fQ==--688da104aaf03ce13c8194bda634b039c1aa4b80/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/icon_engnr_dev_256.png) sansantech ](https://speakerdeck.com/sansantech)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+
+ 1
+
+  270
+
+ [サイバー捜査員研修（前半）](https://speakerdeck.com/nomizone/training-session-for-cyber-investigators-part-1)
+
+ [ ![Avatar for Nomizo Nomizo](https://secure.gravatar.com/avatar/cfa476ea86b3f372d114ab5eca50425b?s=24) nomizone ](https://speakerdeck.com/nomizone)
+
+ 1
+
+  1.9k
+
+ [ボトムアップ文化が強い組織で セキュリティをどう根付かせていくかの現在進行形の話 / Making Security Stick in a Bottom-Up Organization](https://speakerdeck.com/yamaguchitk333/making-security-stick-in-a-bottom-up-organization)
+
+ [ ![Avatar for Takashi Yamaguchi](https://secure.gravatar.com/avatar/0b3ec1f25761465bdd516c2125f9f4fb?s=24) yamaguchitk333 ](https://speakerdeck.com/yamaguchitk333)
 
  0
 
-  310
+  200
 
- [社内の7割が使うデータ基盤を、 データチーム2人で回すためにやったこと](https://speakerdeck.com/koh_yoshi/she-nei-no7ge-gashi-udetaji-pan-wo-detatimu2ren-dehui-sutameniyatutakoto)
+ [研究開発部の紹介 / Sansan R&D Profile](https://speakerdeck.com/sansan33/sansan-r-and-d-profile)
 
- [ ![Avatar for KOH](https://secure.gravatar.com/avatar/ac644aedf968d4425aafa9849b62d52d?s=24) koh_yoshi ](https://speakerdeck.com/koh_yoshi)
+ [ ![Avatar for Sansan, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTM5NzYsInB1ciI6ImJsb2JfaWQifX0=--742b6b79e99ff01edb063160edba4f5a13693ead/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/icon512.jpg) sansan33 ](https://speakerdeck.com/sansan33)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
  4
 
-  570
-
- [TypeScript入門 2026](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_shizukuishi)
-
- [ ![Avatar for Recruit](https://secure.gravatar.com/avatar/85da685d91fda190e2e3162d0de248a4?s=24) recruitengineers ](https://speakerdeck.com/recruitengineers)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
-
- 2
-
-  400
-
- [攻撃と防御で学ぶAI時代のプロダクトセキュリティ演習](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_yamada_nakanishi)
-
- [ ![Avatar for Recruit](https://secure.gravatar.com/avatar/85da685d91fda190e2e3162d0de248a4?s=24) recruitengineers ](https://speakerdeck.com/recruitengineers)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
-
- 2
-
-  470
+  24k
 
 ## Featured
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [Claude Code どこまでも/ Claude Code Everywhere](https://speakerdeck.com/nwiizo/claude-everywhere)
+ [Evolving SEO for Evolving Search Engines](https://speakerdeck.com/ryanjones/evolving-seo-for-evolving-search-engines)
 
- [ ![Avatar for nwiizo](https://secure.gravatar.com/avatar/6ed12627fec46a135f1bce5d56f3568e?s=24) nwiizo ](https://speakerdeck.com/nwiizo)
-
- 66
-
-  57k
-
- [The SEO identity crisis: Don't let AI make you average](https://speakerdeck.com/varn/the-seo-identity-crisis-dont-let-ai-make-you-average)
-
- [ ![Avatar for Varn](https://secure.gravatar.com/avatar/174e0046d13ef40458b3eda48b20da6f?s=24) varn ](https://speakerdeck.com/varn)
+ [ ![Avatar for Ryan Jones](https://secure.gravatar.com/avatar/2bf27e1a5632db8aba77510c78aaa9a2?s=24) ryanjones ](https://speakerdeck.com/ryanjones)
 
  0
 
-  530
+  250
 
- [Tips & Tricks on How to Get Your First Job In Tech](https://speakerdeck.com/honzajavorek/tips-and-tricks-on-how-to-get-your-first-job-in-tech)
+ [
 
- [ ![Avatar for Honza Javorek](https://secure.gravatar.com/avatar/7b2e4bf7ecca28e530e1c421f0676c0b?s=24) honzajavorek ](https://speakerdeck.com/honzajavorek)
+ How to Create Impact in a Changing Tech Landscape [PerfNow 2023]
 
- 1
+ ](https://speakerdeck.com/tammyeverts/how-to-create-impact-in-a-changing-tech-landscape-perfnow-2023)
 
-  670
+ [ ![Avatar for Tammy Everts](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTE1OTYxLCJwdXIiOiJibG9iX2lkIn19--abc92847293bd4bb711260d06a412d2974cd78fe/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/Tammy.jpg) tammyeverts ](https://speakerdeck.com/tammyeverts)
 
- [Exploring the Power of Turbo Streams & Action Cable | RailsConf2023](https://speakerdeck.com/kevinliebholz/exploring-the-power-of-turbo-streams-and-action-cable)
+ 56
 
- [ ![Avatar for Kevin Liebholz](https://secure.gravatar.com/avatar/7cac149f4967f1b063974d6a186251ab?s=24) kevinliebholz ](https://speakerdeck.com/kevinliebholz)
+  3.4k
 
- 37
+ [B2B Lead Gen: Tactics, Traps & Triumph](https://speakerdeck.com/marketingsoph/b2b-lead-gen-tactics-traps-and-triumph)
 
-  6.5k
+ [ ![Avatar for Sophie Logan](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTYxODkzLCJwdXIiOiJibG9iX2lkIn19--1d3fe266c5e8463dff3691199f106deb72bfcae7/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/Profile%20Photo%20-%20June%202023%20Square.jpg) marketingsoph ](https://speakerdeck.com/marketingsoph)
 
- [I Don’t Have Time: Getting Over the Fear to Launch Your Podcast](https://speakerdeck.com/jcasabona/i-dont-have-time-getting-over-the-fear-to-launch-your-podcast)
+ 0
 
- [ ![Avatar for Joe Casabona](https://secure.gravatar.com/avatar/b3ace07412a5178ea778e7eec161fc0a?s=24) jcasabona ](https://speakerdeck.com/jcasabona)
+  190
 
- 34
+ [Why Our Code Smells](https://speakerdeck.com/bkeepers/why-our-code-smells)
 
-  2.8k
+ [ ![Avatar for Brandon Keepers](https://secure.gravatar.com/avatar/20bfe76b3d6105641f879fe45cfc9272?s=24) bkeepers ](https://speakerdeck.com/bkeepers)
 
- [Easily Structure & Communicate Ideas using Wireframe](https://speakerdeck.com/afnizarnur/easily-structure-and-communicate-ideas-using-wireframe)
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
- [ ![Avatar for Afnizar Nur Ghifari](https://secure.gravatar.com/avatar/0c6fd6a08d0f898159cda7cafcacf07f?s=24) afnizarnur ](https://speakerdeck.com/afnizarnur)
+ 340
 
- 194
+  58k
 
-  17k
+ [16th Malabo Montpellier Forum Presentation](https://speakerdeck.com/akademiya2063/16th-malabo-montpellier-forum-presentation)
 
- [Designing for Timeless Needs](https://speakerdeck.com/cassininazir/designing-for-timeless-needs-a72bb8c4-c96b-47cc-8598-36af0340e28e)
+ [ ![Avatar for AKADEMIYA2063](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Njk1ODQsInB1ciI6ImJsb2JfaWQifX0=--d64b39778db0158d5065902ffb01064cd8d9cc5c/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/AKADEMIYA2063%20Logo%20Plain.png) akademiya2063 ](https://speakerdeck.com/akademiya2063)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+
+ 0
+
+  330
+
+ [Everyday Curiosity](https://speakerdeck.com/cassininazir/everyday-curiosity)
 
  [ ![Avatar for Cassini Nazir](https://secure.gravatar.com/avatar/4631d364d59bd9d045acf046a0ce1cfe?s=24) cassininazir ](https://speakerdeck.com/cassininazir)
 
+ 0
+
+  270
+
+ [Agile that works and the tools we love](https://speakerdeck.com/rasmusluckow/agile-that-works-and-the-tools-we-love)
+
+ [ ![Avatar for Rasmus Luckow-Nielsen](https://secure.gravatar.com/avatar/462dad0dd24c568a32dcdb0ae895ae1b?s=24) rasmusluckow ](https://speakerdeck.com/rasmusluckow)
+
+ 331
+
+  22k
+
+ [We Have a Design System, Now What?](https://speakerdeck.com/morganepeng/we-have-a-design-system-now-what)
+
+ [ ![Avatar for Morgane Peng](https://secure.gravatar.com/avatar/95d9f37115fbb0d13135d0f77132f856?s=24) morganepeng ](https://speakerdeck.com/morganepeng)
+
+ 55
+
+  8.3k
+
+ [Navigating the Design Leadership Dip - Product Design Week Design Leaders+ Conference 2024](https://speakerdeck.com/apolaine/navigating-the-design-leadership-dip-product-design-week-design-leaders-plus-conference-2024)
+
+ [ ![Avatar for Andy Polaine](https://secure.gravatar.com/avatar/0f6ccdd935ce93750fcc527764c7abfc?s=24) apolaine ](https://speakerdeck.com/apolaine)
+
  1
 
-  430
+  390
 
- [Building Applications with DynamoDB](https://speakerdeck.com/mza/building-applications-with-dynamodb)
+ [The Straight Up "How To Draw Better" Workshop](https://speakerdeck.com/denniskardys/the-straight-up-how-to-draw-better-workshop)
 
- [ ![Avatar for Matt Wood](https://secure.gravatar.com/avatar/39488f9d172ab92fd352f2cd7b73258d?s=24) mza ](https://speakerdeck.com/mza)
+ [ ![Avatar for Dennis Kardys](https://secure.gravatar.com/avatar/aff5641764408271f7bc398f2097edd0?s=24) denniskardys ](https://speakerdeck.com/denniskardys)
 
- 96
+ 239
 
-  7.2k
+  140k
 
- [We Analyzed 250 Million AI Search Results: Here's What I Found](https://speakerdeck.com/joshbly/we-analyzed-250-million-ai-search-results-heres-what-i-found)
-
- [ ![Avatar for Josh Blyskal](https://secure.gravatar.com/avatar/466d1e24bc0d3058fb53bc890043c3e7?s=24) joshbly ](https://speakerdeck.com/joshbly)
-
- 1
-
-  1.7k
-
- [The Power of CSS Pseudo Elements](https://speakerdeck.com/geoffreycrofte/the-power-of-css-pseudo-elements)
-
- [ ![Avatar for Geoffrey Crofte](https://secure.gravatar.com/avatar/5b6a2bd86ef643786a381a212e0ef2f1?s=24) geoffreycrofte ](https://speakerdeck.com/geoffreycrofte)
-
- 82
-
-  6.5k
-
- [Odyssey Design](https://speakerdeck.com/rkendrick25/odyssey-design)
+ [Highjacked: Video Game Concept Design](https://speakerdeck.com/rkendrick25/highjacked-video-game-concept-design)
 
  [ ![Avatar for Ryan Kendrick](https://secure.gravatar.com/avatar/83e53d75b8e98c1d1cfe4680c60bf74b?s=24) rkendrick25 ](https://speakerdeck.com/rkendrick25)
 
  [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
- 2
+ 1
 
-  750
+  430
 
- [Agile Leadership in an Agile Organization](https://speakerdeck.com/kimpetersen/agile-leadership-in-an-agile-organization)
+ [Agile Actions for Facilitating Distributed Teams - ADO2019](https://speakerdeck.com/mkilby/agile-actions-for-facilitating-distributed-teams-ado2019)
 
- [ ![Avatar for Dr. Kim W Petersen](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTExNTk5LCJwdXIiOiJibG9iX2lkIn19--c839f1398dd16406fd4e226a0a615c938c7e32fd/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/Screenshot%20Kim-reduced.jpg) kimpetersen ](https://speakerdeck.com/kimpetersen)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+ [ ![Avatar for Mark Kilby](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzQwOTIsInB1ciI6ImJsb2JfaWQifX0=--c7254f030868aa2a77d7c03fbcf140d88b76e238/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/MarkK-Jun2022-vbars-headshot-550x550-removebg.png) mkilby ](https://speakerdeck.com/mkilby)
 
  0
 
-  200
+  240
 
 ## Transcript
 

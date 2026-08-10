@@ -5,9 +5,9 @@ resource: "https://acmccs.github.io/papers/p799-zuoA.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:49:36+00:00"
+  at: "2026-08-10T15:00:55+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://acmccs.github.io/papers/p799-zuoA.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:100"
+  - "2016-17.md:94"
 commit: ""
 content_sha256: 3a5d1eb2406741486021ce77b99239c408bac024906ed74e21c08aff3e2b803c
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: a5304e8816551432a54dbfe6ef0c2eeab6425d09de512996280c26ad37e656aa
 retrieved_from: "https://acmccs.github.io/papers/p799-zuoA.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:49:36+00:00"
+retrieved_utc: "2026-08-10T15:00:55+00:00"
 slug: authscope-towards-automatic-discovery-vulnerable-access-control-online-services
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://acmccs.github.io/papers/p799-zuoA.pdf>
-- Preserved from: https://acmccs.github.io/papers/p799-zuoA.pdf (live) on 2026-08-08
+- Preserved from: https://acmccs.github.io/papers/p799-zuoA.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -100,23 +100,17 @@ USA
 
 --- page 5 ---
 
-2°-9°"@*+:<$9°
-±99±²999°&µ"$9±7	³*+-/$9°°901'#'7672327&#"'4?654'&"&#"5674#"'672BVüTT×Dzh>DjmHX;�oN7Í–QD! VþN%-þÎV%v%ºN><'+³N¹²6+´H6+²?+°+3°/±!é³+°3´+°2°O/°;Ö±Fé°2°F±é°/°F±N+´3 +°3° Ö±é°/±	é±P+±F³@A$9°µ$6BCH$9°N³+,$9°	±-99°3°.9±?H±3;99±!³	$901"&54632"&54632%!".54>3!2'727!".5'727!2>5m>5/%!3ü™%/0$#11+þWªÉ%E%ðþÙP•š^%‡%Xd�P-¸+@
+2°-9°"@*+:<$9°±99±²999°&µ"$9±7	³*+-/$9°°901'#'7672327&#"'4?654'&"&#"5674#"'672BVüTT×Dzh>DjmHX;�oN7Í–QD! VþN%-þÎV%v%ºN><'+³N¹²6+´H6+²?+°+3°/±!é³+°3´+°2°O/°;Ö±Fé°2°F±é°/°F±N+´3 +°3° Ö±é°/±	é±P+±F³@A$9°µ$6BCH$9°N³+,$9°	±-99°3°.9±?H±3;99±!³	$901"&54632"&54632%!".54>3!2'727!".5'727!2>5m>5/%!3ü™%/0$#11+þWªÉ%E%ðþÙP•š^%‡%Xd�P-¸+@
 +25$9±°9±±%099°*³	
 5$9±%°9°5°'9°0±"99±°9012#".546'64>7632#"'6&'.#"3267`_?<B+DÍ®1-278$9±2°49°
-²-999012#".5462654.#"'732632#"'&"'6;`_?<B+C99±°9°
-°-9014"3252632#"'2&! '5437>54&/"=7áRTTRTäX¼Éïä'/?8dþùþö`5?21@5`˜NMúNNsÍ‡ËÌün+'''%-â-$'XþÛRPL²+´+²+°
+²-999012#".5462654.#"'732632#"'&"'6;`_?<B+C99±°9°°-9014"3252632#"'2&! '5437>54&/"=7áRTTRTäX¼Éïä'/?8dþùþö`5?21@5`˜NMúNNsÍ‡ËÌün+'''%-â-$'XþÛRPL²+´+²+°
 /´+° /°Ö´+° Ö±
-é°
-2±!+±µ	$9015673#.".5473jTTR10Ú/4;`J
+é°2±!+±µ	$9015673#.".5473jTTR10Ú/4;`J
 bŽƒTÙL#PZ
-2ý´1#5/u!žo¨/#LPöš	J°/´"+°/´"+°/°Ö´,+°±+´ +±+±°9±±9901324'&#"&547672#"Ñdf=fJ7HD[^@FJ?_o5þð;u;XýðZ�šdX^š®ZL‘åéF°/´ +°/°Ö´+°2°´,+°/±+±±99°´
-$901462"4'7672&#0567‘%6&&6
-'I+@�6&&6%þ¬žB
-mtZ�eR”'þ“!$X²+°/°3´"9+°2°%/°!Ö°#2´,+°2²!
-+³@	+±&+±!²	999±"°9°±$9901"'476532732+&#"567'3d;}œ*$9°±99°
-²99901654#"5654'&#"#'7632#"/?7^-y–7FzT6;�D+3VHojF!6+ž%T3†+5V;%G…!%+Hj8/>V9'ÿ/Å!$K°/°3´"9+°2°%/°!Ö°#2´,+°2²!
+2ý´1#5/u!žo¨/#LPöš	J°/´"+°/´"+°/°Ö´,+°±+´ +±+±°9±±9901324'&#"&547672#"Ñdf=fJ7HD[^@FJ?_o5þð;u;XýðZ�šdX^š®ZL‘åéF°/´ +°/°Ö´+°2°´,+°/±+±±99°´$901462"4'7672&#0567‘%6&&6'I+@�6&&6%þ¬žBmtZ�eR”'þ“!$X²+°/°3´"9+°2°%/°!Ö°#2´,+°2²!
++³@	+±&+±!²	999±"°9°±$9901"'476532732+&#"567'3d;}œ*$9°±99°²99901654#"5654'&#"#'7632#"/?7^-y–7FzT6;�D+3VHojF!6+ž%T3†+5V;%G…!%+Hj8/>V9'ÿ/Å!$K°/°3´"9+°2°%/°!Ö°#2´,+°2²!
 +³@	+±&+±!²	999±"°901"'476532732+&#"567'3d;}œ++
+
 
 --- page 6 ---
 
@@ -187,14 +181,21 @@ mtZ�eR”'þ“!$X²+°/°3´"9+°2°%/°!Ö°#2´,+°2²!
 4
 	
 
+
+
+
+
+
 --- page 7 ---
 
+¶ 
  
  
  
  
  
 
+· 
  
  
 
@@ -1161,6 +1162,7 @@ ED
 50
 100
 150 
+
 
  
 4

@@ -5,9 +5,9 @@ resource: "https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-t
 tags: [article, webseclist-reference, en, adnan-khan-security-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T00:58:49+00:00"
+  at: "2026-08-10T15:01:12+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/"
@@ -32,10 +32,10 @@ original_url: "https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-ru
 published: 2023-12-20
 publisher: Adnan Khan - Security Research
 publisher_english: ""
-raw_sha256: ef6c16f3f49464a26b0493640b21bc254e3d65758256bda403fc7bee15299270
+raw_sha256: 3ffc4601c0fedf43995447447c2370d5b008400f129d7f8a6f081230e154cedb
 retrieved_from: "https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T00:58:49+00:00"
+retrieved_utc: "2026-08-10T15:01:12+00:00"
 slug: 2023-adnan-khan-security-research-one-supply-chain-attack-rule-them-all
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2023-12-20
 - Original: <https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/>
-- Preserved from: https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/ (live) on 2026-08-09
+- Preserved from: https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

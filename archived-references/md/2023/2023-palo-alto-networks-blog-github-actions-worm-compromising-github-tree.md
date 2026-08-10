@@ -5,9 +5,9 @@ resource: "https://www.paloaltonetworks.com/blog/prisma-cloud/github-actions-wor
 tags: [article, webseclist-reference, en, palo-alto-networks-blog]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:37:28+00:00"
+  at: "2026-08-10T15:35:49+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.paloaltonetworks.com/blog/prisma-cloud/github-actions-worm-dependencies/"
@@ -24,7 +24,7 @@ canonical_url: "https://www.paloaltonetworks.com/blog/cloud-security/github-acti
 cited_by:
   - "2023.md:70"
 commit: ""
-content_sha256: 6b44aee17d4df1248db087c5d6a6499328b5c57c8c116b31139356db20caa219
+content_sha256: d4908ada9c0de02933b85a7b554c92c71fd66e0400b657fff191965864d63758
 depth: full
 depth_reason: default
 kind: article
@@ -34,10 +34,10 @@ original_url: "https://www.paloaltonetworks.com/blog/prisma-cloud/github-actions
 published: 2023-09-14
 publisher: Palo Alto Networks Blog
 publisher_english: ""
-raw_sha256: 0b201feb9888160bada1a258cd3109ebc402cdc074800245dd17abbb439c91d7
+raw_sha256: b958b1a701b202cd3cb30f73cc47791d5c594984679fa09edcc0d5d92c35ae8c
 retrieved_from: "https://www.paloaltonetworks.com/blog/cloud-security/github-actions-worm-dependencies/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:37:28+00:00"
+retrieved_utc: "2026-08-10T15:35:49+00:00"
 slug: 2023-palo-alto-networks-blog-github-actions-worm-compromising-github-tree
 snapshot: ""
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: 2023-09-14
 - Original: <https://www.paloaltonetworks.com/blog/prisma-cloud/github-actions-worm-dependencies/>
 - Current location: <https://www.paloaltonetworks.com/blog/cloud-security/github-actions-worm-dependencies/>
-- Preserved from: https://www.paloaltonetworks.com/blog/cloud-security/github-actions-worm-dependencies/ (live) on 2026-08-09
+- Preserved from: https://www.paloaltonetworks.com/blog/cloud-security/github-actions-worm-dependencies/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

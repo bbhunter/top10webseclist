@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity09/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:39+00:00"
+  at: "2026-08-10T16:04:08+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity09/technical-sessions/presentation/cross-origin-javascript-capability-leaks"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2009.md:105"
+  - "2009.md:100"
 commit: ""
-content_sha256: 6e17deeacbb43ae58dac40f0defa35bce0e972e3b3b5b09ce06b177eb98d951a
+content_sha256: efc185a1c9e444ff56040fcf4d97d75b703e569e3de8fc2d05285ef6caadb437
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity09/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: b85b6f03ac969f4082ab985dce9b3ef98a37840799114d27483085e8db139423
+raw_sha256: 5543084b8345427903c00e2760a6aa30229f10f05469cf16082de33553ecccdd
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity09/technical-sessions/presentation/cross-origin-javascript-capability-leaks"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:39+00:00"
+retrieved_utc: "2026-08-10T16:04:08+00:00"
 slug: usenix-org-cross-origin-javascript-capability-leaks-detection-defense
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity09/technical-sessions/presentation/cross-origin-javascript-capability-leaks>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity09/technical-sessions/presentation/cross-origin-javascript-capability-leaks (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity09/technical-sessions/presentation/cross-origin-javascript-capability-leaks (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

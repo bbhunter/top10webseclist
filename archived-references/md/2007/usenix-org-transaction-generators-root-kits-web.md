@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/hotsec-07/transaction-generators-ro
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:33+00:00"
+  at: "2026-08-10T16:04:01+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/hotsec-07/transaction-generators-root-kits-web"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2007.md:110"
+  - "2007.md:105"
 commit: ""
 content_sha256: 068cd622d581ca3187d182c02c36625650fe37ef407c2e1ca94c655f0afa57ce
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/hotsec-07/transaction-generator
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: ff489319aff21437e3d9107df72584d4cece062eb7f54c5d007aa34dfdc856a6
+raw_sha256: becfd332eefcf0b0711fd32472224b62447425d94acf2bb692bf0e36f9cef568
 retrieved_from: "https://www.usenix.org/conference/hotsec-07/transaction-generators-root-kits-web"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:33+00:00"
+retrieved_utc: "2026-08-10T16:04:01+00:00"
 slug: usenix-org-transaction-generators-root-kits-web
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/hotsec-07/transaction-generators-root-kits-web>
-- Preserved from: https://www.usenix.org/conference/hotsec-07/transaction-generators-root-kits-web (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/hotsec-07/transaction-generators-root-kits-web (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

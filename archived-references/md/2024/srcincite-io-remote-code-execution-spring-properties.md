@@ -5,9 +5,9 @@ resource: "https://srcincite.io/blog/2024/11/25/remote-code-execution-with-sprin
 tags: [article, webseclist-reference, en, srcincite-io]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:29+00:00"
+  at: "2026-08-10T16:00:56+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://srcincite.io/blog/2024/11/25/remote-code-execution-with-spring-properties.html"
@@ -28,10 +28,10 @@ original_url: "https://srcincite.io/blog/2024/11/25/remote-code-execution-with-s
 published: ""
 publisher: srcincite.io
 publisher_english: ""
-raw_sha256: a5096e398260c4ab1f71bce627e08b7d1d74bb88ef65e370b9c8fd97d7d1d778
+raw_sha256: b15d8fd9ca02056d9d32f5daf3db089e71a17140182efe464fb1c0bf5b8840bb
 retrieved_from: "https://srcincite.io/blog/2024/11/25/remote-code-execution-with-spring-properties.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:29+00:00"
+retrieved_utc: "2026-08-10T16:00:56+00:00"
 slug: srcincite-io-remote-code-execution-spring-properties
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://srcincite.io/blog/2024/11/25/remote-code-execution-with-spring-properties.html>
-- Preserved from: https://srcincite.io/blog/2024/11/25/remote-code-execution-with-spring-properties.html (live) on 2026-08-09
+- Preserved from: https://srcincite.io/blog/2024/11/25/remote-code-execution-with-spring-properties.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

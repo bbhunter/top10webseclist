@@ -5,9 +5,9 @@ resource: "https://arxiv.org/abs/2103.04952"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:03+00:00"
+  at: "2026-08-10T15:02:32+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://arxiv.org/abs/2103.04952"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2021.md:60"
+  - "2021.md:55"
 commit: ""
-content_sha256: c75b06e0126747940dfe58e9064ebc178f07bacf40ef81e54680634d46ed2055
+content_sha256: d931eb37767ede6389f30301af0da06eef2a01fff6600f0c1279672d3d1d145a
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 064eaab661c9a0fc406ddb5e9d6cfda520d94c03b1e5705f7d50111a33fc5fb2
 retrieved_from: "https://arxiv.org/abs/2103.04952"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:03+00:00"
+retrieved_utc: "2026-08-10T15:02:32+00:00"
 slug: arxiv-org-prime-probe-1-javascript-0-overcoming-browser-based-side-defenses
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/2103.04952>
-- Preserved from: https://arxiv.org/abs/2103.04952 (live) on 2026-08-08
+- Preserved from: https://arxiv.org/abs/2103.04952 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

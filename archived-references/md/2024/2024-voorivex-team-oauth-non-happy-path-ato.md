@@ -5,9 +5,9 @@ resource: "https://blog.voorivex.team/oauth-non-happy-path-to-ato"
 tags: [article, webseclist-reference, en, voorivex-team]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:07:18+00:00"
+  at: "2026-08-10T15:06:39+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blog.voorivex.team/oauth-non-happy-path-to-ato"
@@ -31,10 +31,10 @@ original_url: "https://blog.voorivex.team/oauth-non-happy-path-to-ato"
 published: 2024-11-22
 publisher: Voorivex Team
 publisher_english: ""
-raw_sha256: bc8c6fe752c1c3746d7805b31100a49450a4cb1a1c2cebbfe0fbf1a315a8e0bd
+raw_sha256: e5ffeba7cc0fa017dae4fe25b3a88525caafc8df4156f2743be8de9aa618fd7c
 retrieved_from: "https://blog.voorivex.team/oauth-non-happy-path-to-ato"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:07:18+00:00"
+retrieved_utc: "2026-08-10T15:06:39+00:00"
 slug: 2024-voorivex-team-oauth-non-happy-path-ato
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2024-11-22
 - Original: <https://blog.voorivex.team/oauth-non-happy-path-to-ato>
-- Preserved from: https://blog.voorivex.team/oauth-non-happy-path-to-ato (live) on 2026-08-09
+- Preserved from: https://blog.voorivex.team/oauth-non-happy-path-to-ato (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

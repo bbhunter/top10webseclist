@@ -5,9 +5,9 @@ resource: "https://coeus.ece.gatech.edu/articles/domain-z-ieee.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:51:05+00:00"
+  at: "2026-08-10T15:07:29+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://coeus.ece.gatech.edu/articles/domain-z-ieee.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:89"
+  - "2016-17.md:83"
 commit: ""
 content_sha256: 26844e59c00c643ba13fb72fb6cfe0ff3f2867be29e4ddd852566aaf2318bdb9
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: dc1983fc061919ff3f60e93a4f09d42f44be67e9b2b79796ba8cfe0d4c1868b0
 retrieved_from: "https://coeus.ece.gatech.edu/articles/domain-z-ieee.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:51:05+00:00"
+retrieved_utc: "2026-08-10T15:07:29+00:00"
 slug: domain-z-28-registrations-later
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://coeus.ece.gatech.edu/articles/domain-z-ieee.pdf>
-- Preserved from: https://coeus.ece.gatech.edu/articles/domain-z-ieee.pdf (live) on 2026-08-08
+- Preserved from: https://coeus.ece.gatech.edu/articles/domain-z-ieee.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-comp
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:36:47+00:00"
+  at: "2026-08-10T15:33:47+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/"
     title: "Melting Pot of Origins: Compromising the Intermediary Web Services that Rehost Websites"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2020/02/24140-paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2020.md:77"
+  - "2020.md:72"
 commit: ""
-content_sha256: 62ed257805cb6f96cb43723003f670f56b63b01f9cee14600b5f937bd9ab1ca3
+content_sha256: d023015fcfc61c1adebe4d98e31235849dd7e97b59b8a562f03a1d81f64f20a7
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: c9d2957281aef530e49a40dcf602a4bcfcf24ab35ce1a1adce486f777a67bb14
+raw_sha256: dd81308d0efe6353939cb800ec2d9f062c5bae5bf66d54c65d02f048edd57f2a
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:36:47+00:00"
+retrieved_utc: "2026-08-10T15:33:47+00:00"
 slug: ndss-symposium-melting-pot-origins-compromising-intermediary-web-websites
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/ (live) on 2026-08-09
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2020/02/24140-paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -68,20 +70,20 @@ Intermediary web services such as web proxies, web translators, and web archives
 
 ## View More Papers
 
-### [ Data-Driven Debugging for Functional Side Channels ](https://www.ndss-symposium.org/ndss-paper/data-driven-debugging-for-functional-side-channels/)
+### [ Metamorph: Injecting Inaudible Commands into Over-the-air Voice Controlled Systems ](https://www.ndss-symposium.org/ndss-paper/metamorph-injecting-inaudible-commands-into-over-the-air-voice-controlled-systems/)
 
- Saeid Tizpaz-Niari (University of Colorado Boulder), Pavol Černý (TU Wien), Ashutosh Trivedi (University of Colorado Boulder)
+ Tao Chen (City University of Hong Kong), Longfei Shangguan (Microsoft), Zhenjiang Li (City University of Hong Kong), Kyle Jamieson (Princeton University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/data-driven-debugging-for-functional-side-channels/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/metamorph-injecting-inaudible-commands-into-over-the-air-voice-controlled-systems/)
 
-### [ Broken Metre: Attacking Resource Metering in EVM ](https://www.ndss-symposium.org/ndss-paper/broken-metre-attacking-resource-metering-in-evm/)
+### [ MACAO: A Maliciously-Secure and Client-Efficient Active ORAM Framework ](https://www.ndss-symposium.org/ndss-paper/macao-a-maliciously-secure-and-client-efficient-active-oram-framework/)
 
- Daniel Perez (Imperial College London), Benjamin Livshits (Imperial College London, UCL Centre for Blockchain Technologies, and Brave Software)
+ Thang Hoang (University of South Florida), Jorge Guajardo (Robert Bosch Research and Technology Center), Attila Yavuz (University of South Florida)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/broken-metre-attacking-resource-metering-in-evm/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/macao-a-maliciously-secure-and-client-efficient-active-oram-framework/)
 
-### [ Complex Security Policy? A Longitudinal Analysis of Deployed Content... ](https://www.ndss-symposium.org/ndss-paper/complex-security-policy-a-longitudinal-analysis-of-deployed-content-security-policies/)
+### [ Withdrawing the BGP Re-Routing Curtain: Understanding the Security Impact... ](https://www.ndss-symposium.org/ndss-paper/withdrawing-the-bgp-re-routing-curtain-understanding-the-security-impact-of-bgp-poisoning-through-real-world-measurements/)
 
- Sebastian Roth (CISPA Helmholtz Center for Information Security), Timothy Barron (Stony Brook University), Stefano Calzavara (Università Ca' Foscari Venezia), Nick Nikiforakis (Stony Brook University), Ben Stock (CISPA Helmholtz Center for Information Security)
+ Jared M. Smith (University of Tennessee, Knoxville), Kyle Birkeland (University of Tennessee, Knoxville), Tyler McDaniel (University of Tennessee, Knoxville), Max Schuchard (University of Tennessee, Knoxville)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/complex-security-policy-a-longitudinal-analysis-of-deployed-content-security-policies/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/withdrawing-the-bgp-re-routing-curtain-understanding-the-security-impact-of-bgp-poisoning-through-real-world-measurements/)

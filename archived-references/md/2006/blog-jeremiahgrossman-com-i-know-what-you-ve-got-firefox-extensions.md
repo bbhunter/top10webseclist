@@ -5,9 +5,9 @@ resource: "https://jeremiahgrossman.blogspot.com/2006/08/i-know-what-youve-got-f
 tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:31:06+00:00"
+  at: "2026-08-10T15:29:51+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2006/08/i-know-what-youve-got-firefox.html"
@@ -30,10 +30,10 @@ original_url: "https://jeremiahgrossman.blogspot.com/2006/08/i-know-what-youve-g
 published: ""
 publisher: blog.jeremiahgrossman.com
 publisher_english: ""
-raw_sha256: 7f9f61a6494f3b329fe6d97005106ff9b448d6f00877fcd74d7cb2ee433ea240
+raw_sha256: 0a7c86928e71f4fd852981e048801a9831dafeefdc832061e41766720ab47d8c
 retrieved_from: "https://blog.jeremiahgrossman.com/2006/08/i-know-what-youve-got-firefox.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:31:06+00:00"
+retrieved_utc: "2026-08-10T15:29:51+00:00"
 slug: blog-jeremiahgrossman-com-i-know-what-you-ve-got-firefox-extensions
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2006/08/i-know-what-youve-got-firefox.html>
 - Current location: <https://blog.jeremiahgrossman.com/2006/08/i-know-what-youve-got-firefox.html>
-- Preserved from: https://blog.jeremiahgrossman.com/2006/08/i-know-what-youve-got-firefox.html (live) on 2026-08-09
+- Preserved from: https://blog.jeremiahgrossman.com/2006/08/i-know-what-youve-got-firefox.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

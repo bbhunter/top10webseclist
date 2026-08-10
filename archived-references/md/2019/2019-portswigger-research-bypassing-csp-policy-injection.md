@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/bypassing-csp-with-policy-injection"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:49+00:00"
+  at: "2026-08-10T15:36:29+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/bypassing-csp-with-policy-injection"
@@ -17,9 +17,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2019.md:72"
+  - "2019.md:70"
 commit: ""
-content_sha256: d8e02a3df7ebf5c59eda4cfcebbdb3c6899d5838c695838be5670a924935927e
+content_sha256: 894775a0c890e155ec28599c84dcd744466f02d962ab716538c051e6359f7aaf
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/bypassing-csp-with-policy-inject
 published: 2019-06-05
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: a2955a7cc27b590d0a28b3e3fc5df6ebca94a7c100f6eb37114cb3d0de9b740f
+raw_sha256: 26db70c6b049f98962cd253761f653d6413e024b86bd61662406db0b063b0ada
 retrieved_from: "https://portswigger.net/research/bypassing-csp-with-policy-injection"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:49+00:00"
+retrieved_utc: "2026-08-10T15:36:29+00:00"
 slug: 2019-portswigger-research-bypassing-csp-policy-injection
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2019-06-05
 - Original: <https://portswigger.net/research/bypassing-csp-with-policy-injection>
-- Preserved from: https://portswigger.net/research/bypassing-csp-with-policy-injection (live) on 2026-08-08
+- Preserved from: https://portswigger.net/research/bypassing-csp-with-policy-injection (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/ghase
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:19+00:00"
+  at: "2026-08-10T16:04:45+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/ghasemisharif"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2018.md:85"
+  - "2018.md:81"
 commit: ""
 content_sha256: cbd32ab21a7dcf59f40ef0fa1072645c3e32f857089c26ea2837bf85e3ee7a79
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity18/presentation/g
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: b600d4f8bb68c137b7cf49a126c83fd1fac998ff877852aea19f823cd426dfe2
+raw_sha256: ccbc0e9a9a6993f9bc2e9c0c6875ec98b885fad65ea60544fe945f4bf305fd70
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity18/presentation/ghasemisharif"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:19+00:00"
+retrieved_utc: "2026-08-10T16:04:45+00:00"
 slug: usenix-org-o-single-sign-off-where-art-thou-empirical-analysis-single-sign-web
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity18/presentation/ghasemisharif>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity18/presentation/ghasemisharif (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity18/presentation/ghasemisharif (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

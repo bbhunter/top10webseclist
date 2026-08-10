@@ -5,9 +5,9 @@ resource: "http://blog.mindedsecurity.com/2011/10/autocompleteagain.html"
 tags: [article, webseclist-reference, blog-mindedsecurity-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:06:09+00:00"
+  at: "2026-08-10T15:05:24+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.mindedsecurity.com/2011/10/autocompleteagain.html"
@@ -30,10 +30,10 @@ original_url: "http://blog.mindedsecurity.com/2011/10/autocompleteagain.html"
 published: ""
 publisher: blog.mindedsecurity.com
 publisher_english: ""
-raw_sha256: 528680578699673f6d1a5825733981f3ebbefc88bddc76d23afdcff0894035c1
+raw_sha256: 6c58274347361378004201ca9a2477ed97389dfeb4d16243d8330bb1b8a94d55
 retrieved_from: "https://blog.mindedsecurity.com/2011/10/autocompleteagain.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:06:09+00:00"
+retrieved_utc: "2026-08-10T15:05:24+00:00"
 slug: blog-mindedsecurity-com-autocomplete-again
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://blog.mindedsecurity.com/2011/10/autocompleteagain.html>
 - Current location: <https://blog.mindedsecurity.com/2011/10/autocompleteagain.html>
-- Preserved from: https://blog.mindedsecurity.com/2011/10/autocompleteagain.html (live) on 2026-08-09
+- Preserved from: https://blog.mindedsecurity.com/2011/10/autocompleteagain.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

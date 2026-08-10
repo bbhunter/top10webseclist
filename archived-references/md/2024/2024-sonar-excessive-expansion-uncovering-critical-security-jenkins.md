@@ -5,9 +5,9 @@ resource: "https://www.sonarsource.com/blog/excessive-expansion-uncovering-criti
 tags: [article, webseclist-reference, en, sonar]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:42+00:00"
+  at: "2026-08-10T16:00:32+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.sonarsource.com/blog/excessive-expansion-uncovering-critical-security-vulnerabilities-in-jenkins/"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:66"
 commit: ""
-content_sha256: 4f54d61086e4121474799590f742de40251cad7f97e97ab79cf63b70a9e5463d
+content_sha256: 8c830ad35d11f28e4df5e671c7e65e5115df2976135ce3800f42858a1ccf8887
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://www.sonarsource.com/blog/excessive-expansion-uncovering-c
 published: 2024-01-24
 publisher: Sonar
 publisher_english: ""
-raw_sha256: 755f93361763429fe8cf2f1376b380e0d3d3ce941a4e87476bba9b9cd1be42e0
+raw_sha256: 4f6b0eddb7bb005c764f90e44ea8bdd84ecc284714b3fcd839962c398e2e7511
 retrieved_from: "https://www.sonarsource.com/blog/excessive-expansion-uncovering-critical-security-vulnerabilities-in-jenkins/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:42+00:00"
+retrieved_utc: "2026-08-10T16:00:32+00:00"
 slug: 2024-sonar-excessive-expansion-uncovering-critical-security-jenkins
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2024-01-24
 - Original: <https://www.sonarsource.com/blog/excessive-expansion-uncovering-critical-security-vulnerabilities-in-jenkins/>
-- Preserved from: https://www.sonarsource.com/blog/excessive-expansion-uncovering-critical-security-vulnerabilities-in-jenkins/ (live) on 2026-08-09
+- Preserved from: https://www.sonarsource.com/blog/excessive-expansion-uncovering-critical-security-vulnerabilities-in-jenkins/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -221,7 +221,7 @@ Achieving code execution from arbitrary file read is dependent on the context. S
 - Source code, build artifacts
 - and more…
 
-#### Binary Files Reading Limitations 
+#### Binary Files Reading Limitations
 
 When a file is read, the process's default character encoding is used, which is UTF-8 for most deployments. Because of this, any invalid UTF-8 sequence (statistically almost 50% of all bytes, assuming an equal distribution) would be replaced by the sequence `0xef 0xbf 0xbd` and cause data loss.
 Some other encodings (such as Windows-1252, commonly used by instances running on Windows) would make it more feasible to exfiltrate binary data.

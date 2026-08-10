@@ -5,9 +5,9 @@ resource: "https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:53+00:00"
+  at: "2026-08-10T16:08:12+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2024.md:149"
+  - "2024.md:146"
 commit: ""
 content_sha256: e1d3220699a98e3397c94501721391e8d1aa223fa77942e262b4836c115ea824
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 13a3776c2c310273609c6a93cfbb0954404074c861d06c34b2d01a7a5ebeda27
 retrieved_from: "https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:53+00:00"
+retrieved_utc: "2026-08-10T16:08:12+00:00"
 slug: fuzzcache-optimizing-web-application-fuzzing-through-software-based-data-cache
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf>
-- Preserved from: https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf (live) on 2026-08-08
+- Preserved from: https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -419,6 +419,7 @@ to 20
 8C#
 8C
 ¸
+#
 "8BB) during fuzzing. The results are presentedin Table 4. The cache hit rate in web applications is consistentlyhigh, averaging 87.6% and 84.1% in Black-Widow+FuzzCacheandWebFuzz+FuzzCache, respectively. This indicates that the majorityof data fetch operations can be eciently served by our data caches.Moreover, on the two fuzzers,FuzzCachepresents a similar cachehit rate.Cache size and usage.In contrast to the stringent constraintsimposed by hardware in real-world production environments, oursoftware-based design allows for the use of larger caches. Rigorousmonitoring of cache usage was implemented throughout our ex-periments. Notably, a 100MB of cache storage proved to be morethan adequate.We list the maximum cache usage (peak usage) across runs inTable 4. The results revealed that, across the majority of tested webapplications, the allocated cache storage remained underutilizedeven after a prolonged 24-hour run,e.g., less than 10 MB was used.A notable exception was in WordPress, where a higher demand ofcache size was identied around the 16th hour in one of the veexperimental runs. This anomaly was attributed to the creationof new web contents (e.g., blogs), and subsequent storage of themin the database, thereby eliciting distinct cache behaviors. We canthus conclude that within the context of fuzzing, the cache size hasminimal impact.TTL value.FuzzCacheemploys a cache invalidation strategyto mark the database cache data as invalid, when other programsupdate the corresponding database records. Although we did notobserve any update of the network data in our empirical study,FuzzCachestill provides an optional expiration time for the net-work cache entries to indicate their validness. The expiration timeis congurable by the TTL value and is disabled by default. Weexperimented with a TTL of 5, 10, 15, and 20 minutes to discernthe optimal value. Intriguingly, we observed negligible variance inthe overall code coverage achieved by the fuzzers. Therefore, theTTL value (expiration time) does not aect the fuzzing capability.
 5.6 Black-Box vs. Grey-BoxWe positionFuzzCacheas a generic optimization for both black-box and grey-box web application fuzzing. To understand if theimprovements brought byFuzzCacheto Black-Widow and Web-Fuzz dier statistically, we computed the coverage factors as theratio of code coverage achieved withFuzzCacheenabled againstdisabled (i.e.,'
 ,
@@ -580,8 +581,7 @@ B”¥,LôÑÎ‘`íeÒoE"Qwvý�¡´·¤ûäPûÌôMiÊÍ2óoënkM�Å‘øJ9
 
 --- page 24 ---
 
-Æ½@Ý¸�ºtœ|º9œ³Q7ö‚]0š^=òÃˆñáÓc¹¿ï´}^þ×Õ“Óâoú—‡Ž!ì•.îÈ»±›óØB?¾6D­:’=‡œÛÎðs:ùc;�}áY—ÕIË“~ÓÕW9	Â`×pFo”ôü¤’<½á P-kU2Àb?ì¼ËÅZMîy’•ëª�õÅxE÷Ú�	[°i³ÀÃö­{W¹€ë‰±nŽ=êÙ¦D�wùþV¸RG9½H»Ä¥ù˜!yèÈŽ*cÊ*YŸ5œˆ´P4½Á8ŠZfÐ5æ¬{*"ù×Cö‰ùp†;_Ú‹¾ùB*½ëÿ…QY÷À,Ò›Ç+„"�3Ï×ÊÆu¹oÔÐ”~Ñ1EÞR¤GQfc+-Çð´ºöÕî£ŠA¶ÈßšÛÈDr=>tXîe{Ÿ§ù’`MüÂªãÉÚ½á�”ü|ÿ{ÖÖ›¢yžù{„ý@$Ë<Üû¸OtË{_„`êiZWbz¾~>t»ûöHQ0^óˆaòÅô@œ´Ÿ1huJî3±Oòùqäz�eJQÑg3½™ës=YŒÑÞ u˜2…<m¹dð¡;^ãŠ0_È$Ÿb]ÀåUÊ¤œO­o_1ÃdÐî*âcAÐÙ¶¦á“ë,‹ùtêÃ‰Œ%ÃMÙ1ñ¶M™Ö>P~þœ±3ÂËÉ-Ð<‹ºò|Píµâ—*FSiÄžÙÓöN©‰Š%;‰¥ö#¸ŠHXwÑ°÷ÿº$�ãÜî%Ø“gmå^¢f†¶‰2ŸÇ¦ôN'¶½¶ÁÄšºX�MžEÙZº=•oBo—Dë+~Yo¼·+Êfº*GÔ|%v,wÙa¥½’C×µ1KÇŠ§Pé¬“¨•«qDô_qïO¹ç¼ŸËúF>ŠiôäâÈD`Žj©WŒ×g¼éçéoÞ9µT×càùn*“–Ê‹�†í>ã‘–µ®òwOz	šYì¶-ŽWgÖƒ»É§*P³Ÿ6{e—«Ã°ìKó6’�GíÐÕv3ÍyÞk}‰-3¥”¤LªËV-ð1çLv¤ [§‹¦Î�«…¦Î� íƒÒ9¢åù
-•Çž[¦_·çH}`«°<Énœ lØõÖfÞ„Ü=Ù°CÙ
+Æ½@Ý¸�ºtœ|º9œ³Q7ö‚]0š^=òÃˆñáÓc¹¿ï´}^þ×Õ“Óâoú—‡Ž!ì•.îÈ»±›óØB?¾6D­:’=‡œÛÎðs:ùc;�}áY—ÕIË“~ÓÕW9	Â`×pFo”ôü¤’<½á P-kU2Àb?ì¼ËÅZMîy’•ëª�õÅxE÷Ú�	[°i³ÀÃö­{W¹€ë‰±nŽ=êÙ¦D�wùþV¸RG9½H»Ä¥ù˜!yèÈŽ*cÊ*YŸ5œˆ´P4½Á8ŠZfÐ5æ¬{*"ù×Cö‰ùp†;_Ú‹¾ùB*½ëÿ…QY÷À,Ò›Ç+„"�3Ï×ÊÆu¹oÔÐ”~Ñ1EÞR¤GQfc+-Çð´ºöÕî£ŠA¶ÈßšÛÈDr=>tXîe{Ÿ§ù’`MüÂªãÉÚ½á�”ü|ÿ{ÖÖ›¢yžù{„ý@$Ë<Üû¸OtË{_„`êiZWbz¾~>t»ûöHQ0^óˆaòÅô@œ´Ÿ1huJî3±Oòùqäz�eJQÑg3½™ës=YŒÑÞ u˜2…<m¹dð¡;^ãŠ0_È$Ÿb]ÀåUÊ¤œO­o_1ÃdÐî*âcAÐÙ¶¦á“ë,‹ùtêÃ‰Œ%ÃMÙ1ñ¶M™Ö>P~þœ±3ÂËÉ-Ð<‹ºò|Píµâ—*FSiÄžÙÓöN©‰Š%;‰¥ö#¸ŠHXwÑ°÷ÿº$�ãÜî%Ø“gmå^¢f†¶‰2ŸÇ¦ôN'¶½¶ÁÄšºX�MžEÙZº=•oBo—Dë+~Yo¼·+Êfº*GÔ|%v,wÙa¥½’C×µ1KÇŠ§Pé¬“¨•«qDô_qïO¹ç¼ŸËúF>ŠiôäâÈD`Žj©WŒ×g¼éçéoÞ9µT×càùn*“–Ê‹�†í>ã‘–µ®òwOz	šYì¶-ŽWgÖƒ»É§*P³Ÿ6{e—«Ã°ìKó6’�GíÐÕv3ÍyÞk}‰-3¥”¤LªËV-ð1çLv¤ [§‹¦Î�«…¦Î� íƒÒ9¢åù•Çž[¦_·çH}`«°<Énœ lØõÖfÞ„Ü=Ù°CÙ
 
 --- page 25 ---
 

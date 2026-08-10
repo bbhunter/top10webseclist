@@ -5,9 +5,9 @@ resource: "https://octagon.net/blog/2022/05/29/bypass-csp-using-wordpress-by-abu
 tags: [article, webseclist-reference, en, pwn-ai]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:37:16+00:00"
+  at: "2026-08-10T15:35:44+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://octagon.net/blog/2022/05/29/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution/"
@@ -23,7 +23,7 @@ canonical_url: "https://pwn.ai/blog/bypass-csp-using-wordpress-by-abusing-same-o
 cited_by:
   - "2022.md:53"
 commit: ""
-content_sha256: 5fd9487ff8d590a0a04547e91bf49e646186f8968bc0157c12b88164305a9e3b
+content_sha256: f23875a7b4be035d5e1d56bb682423233618d5a948d7248c1bbf4cb4780c616c
 depth: full
 depth_reason: default
 kind: article
@@ -33,10 +33,10 @@ original_url: "https://octagon.net/blog/2022/05/29/bypass-csp-using-wordpress-by
 published: 2022-05-29
 publisher: PWN.AI
 publisher_english: ""
-raw_sha256: 60015bbd8937c210be2280aa3341f92af6f9981f530db9962b33b6210fca6ce8
+raw_sha256: c9b2165f6f28dc5c99b29d85148ee905c6eb21ff9c42cb80b372ab22254c7cf0
 retrieved_from: "https://pwn.ai/blog/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:37:16+00:00"
+retrieved_utc: "2026-08-10T15:35:44+00:00"
 slug: 2022-pwn-ai-novel-attack-vector-bypass-csp-same-origin-method-execution-zeroday
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: 2022-05-29
 - Original: <https://octagon.net/blog/2022/05/29/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution/>
 - Current location: <https://pwn.ai/blog/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution>
-- Preserved from: https://pwn.ai/blog/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution (live) on 2026-08-09
+- Preserved from: https://pwn.ai/blog/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

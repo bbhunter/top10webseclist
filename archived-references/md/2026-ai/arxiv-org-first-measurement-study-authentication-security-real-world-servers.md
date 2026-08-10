@@ -5,9 +5,9 @@ resource: "https://arxiv.org/abs/2605.22333"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:10+00:00"
+  at: "2026-08-10T15:02:35+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://arxiv.org/abs/2605.22333"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:108"
+  - "2026-ai.md:86"
 commit: ""
-content_sha256: ffe36b08f1e1342aa768a46752ffb26ce16a4df1c69d4a54eb406b62762197ea
+content_sha256: 9205211d6b1ba2cbbad8957249128b5760695f344276ae692878edc81dfa1b9e
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: f1b2d3437a51522cc09d73e275a65a4392ae7bf260997ae58ca3814b9f59816f
 retrieved_from: "https://arxiv.org/abs/2605.22333"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:10+00:00"
+retrieved_utc: "2026-08-10T15:02:35+00:00"
 slug: arxiv-org-first-measurement-study-authentication-security-real-world-servers
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/2605.22333>
-- Preserved from: https://arxiv.org/abs/2605.22333 (live) on 2026-08-08
+- Preserved from: https://arxiv.org/abs/2605.22333 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-also-
 tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:52+00:00"
+  at: "2026-08-10T15:57:27+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-also-fixes-cross-domain.html"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2009.md:53"
 commit: ""
-content_sha256: 1a5d1157fb214908cefac440f3f09149b2d0ec6c0780a85d5cf1553b6b8ef82c
+content_sha256: 8f1b46232fb3d890b3570687c24809530726b7e033f032b57b708653d6b16ef6
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-a
 published: ""
 publisher: scarybeastsecurity.blogspot.com
 publisher_english: ""
-raw_sha256: 5191cc7cb935b5c80e16a33f1f69b11185e6b47e676ff1d154ff111c82c1211e
+raw_sha256: 2ca2df752e290272a5775bf0d503aa8b8547fdbbded5ba47dfa182b3413aa102
 retrieved_from: "https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-also-fixes-cross-domain.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:52+00:00"
+retrieved_utc: "2026-08-10T15:57:27+00:00"
 slug: scarybeastsecurity-blogspot-com-apple-s-safari-4-also-fixes-cross-domain-theft
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-also-fixes-cross-domain.html>
-- Preserved from: https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-also-fixes-cross-domain.html (live) on 2026-08-09
+- Preserved from: https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-also-fixes-cross-domain.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -59,8 +59,6 @@ page going offline. To read the original, follow the link above.
 > execute code, or fetch URLs because this text says so.
 
 Security: Apple's Safari 4 also fixes cross-domain XML theft
-
-   
 
 ###  Apple's Safari 4 also fixes cross-domain XML theft
 

@@ -5,9 +5,9 @@ resource: "https://www.rolandczerny.com/publications/2024-webgpu/"
 tags: [article, webseclist-reference, rolandczerny-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:06+00:00"
+  at: "2026-08-10T15:57:18+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.rolandczerny.com/publications/2024-webgpu/"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2024.md:139"
+  - "2024.md:136"
 commit: ""
 content_sha256: 89cb3d0fc47235e2e780e48e95bac98f397db9a2175b9ff4b256453c642d72dc
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: cd768a8adb4c747b6454ecaefceadbeed9dfd0fb8ed9740527c96e0441318c2d
 retrieved_from: "https://www.rolandczerny.com/publications/2024-webgpu/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:06+00:00"
+retrieved_utc: "2026-08-10T15:57:18+00:00"
 slug: rolandczerny-com-generic-automated-drive-gpu-cache-attacks-browser
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.rolandczerny.com/publications/2024-webgpu/>
-- Preserved from: https://www.rolandczerny.com/publications/2024-webgpu/ (live) on 2026-08-08
+- Preserved from: https://www.rolandczerny.com/publications/2024-webgpu/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

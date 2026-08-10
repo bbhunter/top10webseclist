@@ -1,13 +1,13 @@
 ---
-type: Article
+type: Slides
 title: "SSRF attacks and sockets: smorgasbord of vulnerabilities"
 resource: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
-tags: [article, webseclist-reference, en, slideshare-net]
+tags: [slides, webseclist-reference, en, slideshare-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:09+00:00"
+  at: "2026-08-10T15:59:52+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
@@ -22,20 +22,20 @@ canonical_url: "https://web.archive.org/web/20161108114039/http://www.slideshare
 cited_by:
   - "2012.md:6"
 commit: ""
-content_sha256: a31ca2dda28b5afc2d3acf1e136530c139997659514e0a995d6c20df4cd0036c
+content_sha256: 51037a288514b9113e77a24c30a1c5994a2c828293732f8d8db0ff88bab689af
 depth: full
 depth_reason: default
-kind: article
+kind: slides
 language: en
 licence: unknown
 original_url: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
 published: ""
 publisher: slideshare.net
 publisher_english: ""
-raw_sha256: 515d3bbcd14a28bb256323d4756bf724ea7555d8b96bd1524e0ab3723f85cbdb
+raw_sha256: fa3996b7a4bf40b006a13b464214903cc3014c4cef7cecece283184def4cd623
 retrieved_from: "https://web.archive.org/web/20161108114039/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:09+00:00"
+retrieved_utc: "2026-08-10T15:59:52+00:00"
 slug: slideshare-net-ssrf-attacks-sockets-smorgasbord-vulnerabilities
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities>
 - Current location: <https://web.archive.org/web/20161108114039/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities>
-- Preserved from: https://web.archive.org/web/20161108114039/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20161108114039/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 
@@ -67,8 +67,6 @@ page going offline. To read the original, follow the link above.
 SSRF attacks and sockets: smorgasbord of vulnerabilities
 
 The Wayback Machine - https://web.archive.org/web/20161108114039/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities
-
-  
 
  ![SSRF attacks andsockets: smorgasbord  of vulnerabilities  Vladimir Vorontsov, Alexander Golovko     ONsec: web application...](https://web.archive.org/web/20161108114039im_/http://image.slidesharecdn.com/ssrf-onsec-zn12-121120080849-phpapp02/95/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities-1-638.jpg?cb=1353422771)
 
@@ -180,7 +178,7 @@ The report described server request forgery vulnerabilities (Server Side Request
 
  Published in: [Technology](https://web.archive.org/web/20161108114039/http://www.slideshare.net/featured/category/technology)
 
-     1 Comment     **  34 Likes      ** Statistics     ** Notes 
+     1 Comment     **  34 Likes      ** Statistics     ** Notes
 
 -
 
@@ -222,9 +220,7 @@ The report described server request forgery vulnerabilities (Server Side Request
 
   ](https://web.archive.org/web/20161108114039/http://www.slideshare.net/leejiseong75?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideshow)
 
- [ Show More
-
- ]()
+  Show More
 
 No Downloads
 

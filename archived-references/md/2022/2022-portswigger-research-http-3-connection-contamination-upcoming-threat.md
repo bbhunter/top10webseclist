@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/http-3-connection-contamination"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:52+00:00"
+  at: "2026-08-10T15:36:41+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/http-3-connection-contamination"
@@ -17,9 +17,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2022.md:70"
+  - "2022.md:68"
 commit: ""
-content_sha256: d4d8cf319ebf31292b67a0a4447725e9836cb75bf573f5b03d990b001c374709
+content_sha256: bf479bf505aacefb7f910488b126728e1d964d0da8b860315837aa02f8685920
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/http-3-connection-contamination"
 published: 2022-10-19
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: b7f9c48da9769fcf06d7d781b48a858463af32394e0201b37d300de8ef9a22b1
+raw_sha256: a985a78f98b0dfdb20302bb37c51167a6a48fe2ba419a579d7f34aac14695d00
 retrieved_from: "https://portswigger.net/research/http-3-connection-contamination"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:52+00:00"
+retrieved_utc: "2026-08-10T15:36:41+00:00"
 slug: 2022-portswigger-research-http-3-connection-contamination-upcoming-threat
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2022-10-19
 - Original: <https://portswigger.net/research/http-3-connection-contamination>
-- Preserved from: https://portswigger.net/research/http-3-connection-contamination (live) on 2026-08-08
+- Preserved from: https://portswigger.net/research/http-3-connection-contamination (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

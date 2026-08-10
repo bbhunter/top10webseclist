@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/carnus-exploring-the-privac
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:59+00:00"
+  at: "2026-08-10T15:33:38+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/carnus-exploring-the-privacy-threats-of-browser-extension-fingerprinting/"
     title: "Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2020/02/24383-paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2020.md:79"
+  - "2020.md:74"
 commit: ""
-content_sha256: df4772494d4e1463415544573f91aaa4c00f1e34ac39747ed86a680c804f1ca1
+content_sha256: bfb25730cf05b3f866535c822435ba2485a331c37374aba0cb165d9979e85543
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/carnus-exploring-the-pr
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 0b5adc4f03a736415001c8dd0fa30d2bf2b9fd8a240fd30e74191dc73ca8d692
+raw_sha256: fd9d2f867b42b5e6eda2054f33aeb31e8f557453716539c15783fbd34b175cfe
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/carnus-exploring-the-privacy-threats-of-browser-extension-fingerprinting/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:59+00:00"
+retrieved_utc: "2026-08-10T15:33:38+00:00"
 slug: ndss-symposium-carnus-exploring-privacy-threats-browser-extension-fingerprinting
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/carnus-exploring-the-privacy-threats-of-browser-extension-fingerprinting/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/carnus-exploring-the-privacy-threats-of-browser-extension-fingerprinting/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2020/02/24383-paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/carnus-exploring-the-privacy-threats-of-browser-extension-fingerprinting/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -70,20 +72,20 @@ Subsequently, we aim to explore the true extent of the privacy threat that exten
 
 ## View More Papers
 
-### [ Compliance Cautions: Investigating Security Issues Associated with U.S. Digital-Security... ](https://www.ndss-symposium.org/ndss-paper/compliance-cautions-investigating-security-issues-associated-with-u-s-digital-security-standards/)
+### [ Metamorph: Injecting Inaudible Commands into Over-the-air Voice Controlled Systems ](https://www.ndss-symposium.org/ndss-paper/metamorph-injecting-inaudible-commands-into-over-the-air-voice-controlled-systems/)
 
- Rock Stevens (University of Maryland), Josiah Dykstra (Independent Security Researcher), Wendy Knox Everette (Leviathan Security Group), James Chapman (Independent Security Researcher), Garrett Bladow (Dragos), Alexander Farmer (Independent Security Researcher), Kevin Halliday (University of Maryland), Michelle L. Mazurek (University of Maryland)
+ Tao Chen (City University of Hong Kong), Longfei Shangguan (Microsoft), Zhenjiang Li (City University of Hong Kong), Kyle Jamieson (Princeton University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/compliance-cautions-investigating-security-issues-associated-with-u-s-digital-security-standards/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/metamorph-injecting-inaudible-commands-into-over-the-air-voice-controlled-systems/)
 
-### [ Prevalence and Impact of Low-Entropy Packing Schemes in the... ](https://www.ndss-symposium.org/ndss-paper/prevalence-and-impact-of-low-entropy-packing-schemes-in-the-malware-ecosystem/)
+### [ FUSE: Finding File Upload Bugs via Penetration Testing ](https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/)
 
- Alessandro Mantovani (EURECOM), Simone Aonzo (University of Genoa), Xabier Ugarte-Pedrero (Cisco Systems), Alessio Merlo (University of Genoa), Davide Balzarotti (EURECOM)
+ Taekjin Lee (KAIST, ETRI), Seongil Wi (KAIST), Suyoung Lee (KAIST), Sooel Son (KAIST)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/prevalence-and-impact-of-low-entropy-packing-schemes-in-the-malware-ecosystem/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/)
 
-### [ SPEECHMINER: A Framework for Investigating and Measuring Speculative Execution... ](https://www.ndss-symposium.org/ndss-paper/speechminer-a-framework-for-investigating-and-measuring-speculative-execution-vulnerabilities/)
+### [ NoJITsu: Locking Down JavaScript Engines ](https://www.ndss-symposium.org/ndss-paper/nojitsu-locking-down-javascript-engines/)
 
- Yuan Xiao (The Ohio State University), Yinqian Zhang (The Ohio State University), Radu Teodorescu (The Ohio State University)
+ Taemin Park (University of California, Irvine), Karel Dhondt (imec-DistriNet, KU Leuven), David Gens (University of California, Irvine), Yeoul Na (University of California, Irvine), Stijn Volckaert (imec-DistriNet, KU Leuven), Michael Franz (University of California, Irvine, USA)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/speechminer-a-framework-for-investigating-and-measuring-speculative-execution-vulnerabilities/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/nojitsu-locking-down-javascript-engines/)

@@ -5,9 +5,9 @@ resource: "https://medium.com/@renwa/you-are-not-where-you-think-you-are-opera-b
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:24+00:00"
+  at: "2026-08-10T15:32:21+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@renwa/you-are-not-where-you-think-you-are-opera-browsers-address-bar-spoofing-vulnerabilities-aa36ad8321d8"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:31"
 commit: ""
-content_sha256: de138eb0d24ef7639f6889dbbec59f4870528005924160c2eb35744c0be6be00
+content_sha256: de8df71b30df9061305170b3bf8cff06466db51d4d8007c08c6576dba3ca7e23
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://medium.com/@renwa/you-are-not-where-you-think-you-are-ope
 published: 2023-10-24
 publisher: Medium
 publisher_english: ""
-raw_sha256: 0b3c38c9509b96c08fb0c43a7dbb506831be3f05f7419e72d284773091da52c2
+raw_sha256: 241b0d04b380ff4df9b52021bd30f7be53e59573a808cd268cdfcb032d4a0385
 retrieved_from: "https://medium.com/@renwa/you-are-not-where-you-think-you-are-opera-browsers-address-bar-spoofing-vulnerabilities-aa36ad8321d8"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:24+00:00"
+retrieved_utc: "2026-08-10T15:32:21+00:00"
 slug: 2023-medium-you-not-where-you-think-you-opera-browsers-address-vulnerabilities
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2023-10-24
 - Original: <https://medium.com/@renwa/you-are-not-where-you-think-you-are-opera-browsers-address-bar-spoofing-vulnerabilities-aa36ad8321d8>
-- Preserved from: https://medium.com/@renwa/you-are-not-where-you-think-you-are-opera-browsers-address-bar-spoofing-vulnerabilities-aa36ad8321d8 (live) on 2026-08-09
+- Preserved from: https://medium.com/@renwa/you-are-not-where-you-think-you-are-opera-browsers-address-bar-spoofing-vulnerabilities-aa36ad8321d8 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

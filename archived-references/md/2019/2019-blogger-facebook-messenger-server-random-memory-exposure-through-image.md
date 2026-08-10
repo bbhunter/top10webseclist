@@ -5,9 +5,9 @@ resource: "https://www.vulnano.com/2019/03/facebook-messenger-server-random-memo
 tags: [article, webseclist-reference, en, blogger]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:09+00:00"
+  at: "2026-08-10T16:05:59+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.vulnano.com/2019/03/facebook-messenger-server-random-memory.html"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:21"
 commit: ""
-content_sha256: d48f422618069b2135c05e53419b794c6b9b05aa8d07b58b5361f6504302c873
+content_sha256: 4a0a54c6fa3aa6a7348c6b0b4dd8ad557d27542908b58715731700f2768e5e3e
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://www.vulnano.com/2019/03/facebook-messenger-server-random-
 published: 2019-03-06
 publisher: Blogger
 publisher_english: ""
-raw_sha256: c767adbbc2d4267cda3044b3e978813f0ea798bfe5f7873cdba0ca8ba09c7677
+raw_sha256: aa13dbc3dde3839a7ac1865f585058a271ec976593faf01afe71619e9181a9df
 retrieved_from: "https://www.vulnano.com/2019/03/facebook-messenger-server-random-memory.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:09+00:00"
+retrieved_utc: "2026-08-10T16:05:59+00:00"
 slug: 2019-blogger-facebook-messenger-server-random-memory-exposure-through-image
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2019-03-06
 - Original: <https://www.vulnano.com/2019/03/facebook-messenger-server-random-memory.html>
-- Preserved from: https://www.vulnano.com/2019/03/facebook-messenger-server-random-memory.html (live) on 2026-08-09
+- Preserved from: https://www.vulnano.com/2019/03/facebook-messenger-server-random-memory.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

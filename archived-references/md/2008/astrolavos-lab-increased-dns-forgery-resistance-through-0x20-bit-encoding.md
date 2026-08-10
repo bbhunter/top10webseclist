@@ -5,9 +5,9 @@ resource: "https://coeus.ece.gatech.edu/2008/10/01/DNS_Forgery/"
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T12:51:42+00:00"
+  at: "2026-08-10T15:40:05+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://coeus.ece.gatech.edu/2008/10/01/DNS_Forgery/"
@@ -17,7 +17,7 @@ also_at:
 authors: []
 canonical_url: ""
 cited_by:
-  - "2008.md:95"
+  - "2008.md:90"
 commit: ""
 content_sha256: 954e1d572e8ea9f3d9109969637f15ecdfba37f4cf7848b2a490a85fd40800d3
 depth: full
@@ -32,7 +32,7 @@ publisher_english: ""
 raw_sha256: d448fa0e82f180ba2337b81cdb264ff6f47dd2d1f3d1c3b69271a7a41dc1ec52
 retrieved_from: "https://coeus.ece.gatech.edu/articles/increased_dns_resistance.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T12:51:42+00:00"
+retrieved_utc: "2026-08-10T15:40:05+00:00"
 slug: astrolavos-lab-increased-dns-forgery-resistance-through-0x20-bit-encoding
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://coeus.ece.gatech.edu/2008/10/01/DNS_Forgery/>
 - Also published at: <https://coeus.ece.gatech.edu/articles/increased_dns_resistance.pdf>
-- Preserved from: https://coeus.ece.gatech.edu/articles/increased_dns_resistance.pdf (live) on 2026-08-09
+- Preserved from: https://coeus.ece.gatech.edu/articles/increased_dns_resistance.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

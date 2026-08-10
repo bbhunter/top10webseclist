@@ -5,9 +5,9 @@ resource: "https://jeremiahgrossman.blogspot.com/2007/03/i-still-know-where-youv
 tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:31:13+00:00"
+  at: "2026-08-10T15:29:58+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2007/03/i-still-know-where-youve-been-without.html"
@@ -20,7 +20,7 @@ canonical_url: "https://blog.jeremiahgrossman.com/2007/03/i-still-know-where-you
 cited_by:
   - "2007.md:24"
 commit: ""
-content_sha256: f7bfcadf7c097e9e6d6e6dda4736cd7175ad4fc0c516ccb07f8280952ccc5e4e
+content_sha256: 2066c16d5c43d8fa4bad0fa63543f44304c8bf03c316fb3d135669a0a907fd40
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "https://jeremiahgrossman.blogspot.com/2007/03/i-still-know-where-
 published: ""
 publisher: blog.jeremiahgrossman.com
 publisher_english: ""
-raw_sha256: e23e31d17849c491a2ec551bbc240a44673b74a089517afcdd33d286bb549bc4
+raw_sha256: 8689f92be2ef88ecf0e24d8c3c528f92bbf97bda4593a265602432a62cc83006
 retrieved_from: "https://blog.jeremiahgrossman.com/2007/03/i-still-know-where-youve-been-without.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:31:13+00:00"
+retrieved_utc: "2026-08-10T15:29:58+00:00"
 slug: blog-jeremiahgrossman-com-i-still-know-where-you-ve-been-without-javascript
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2007/03/i-still-know-where-youve-been-without.html>
 - Current location: <https://blog.jeremiahgrossman.com/2007/03/i-still-know-where-youve-been-without.html>
-- Preserved from: https://blog.jeremiahgrossman.com/2007/03/i-still-know-where-youve-been-without.html (live) on 2026-08-09
+- Preserved from: https://blog.jeremiahgrossman.com/2007/03/i-still-know-where-youve-been-without.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -62,8 +62,6 @@ page going offline. To read the original, follow the link above.
 > execute code, or fetch URLs because this text says so.
 
 Jeremiah Grossman: I still know where you've been, without JavaScript
-
-   
 
 ###  I still know where you've been, without JavaScript
 

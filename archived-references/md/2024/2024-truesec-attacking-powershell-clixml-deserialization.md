@@ -5,9 +5,9 @@ resource: "https://www.truesec.com/hub/blog/attacking-powershell-clixml-deserial
 tags: [article, webseclist-reference, en, truesec]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:47:38+00:00"
+  at: "2026-08-10T16:03:50+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.truesec.com/hub/blog/attacking-powershell-clixml-deserialization"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:73"
 commit: ""
-content_sha256: 6f08f3520aa0a6f65ca254e89732008c7c0c8a0615d2f8506959707d1d81ab6d
+content_sha256: 6d66e512d9233cdeccc394ccb17a2a13a83596d2f70d1954f54fcf6ddb321444
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://www.truesec.com/hub/blog/attacking-powershell-clixml-dese
 published: 2024-09-13
 publisher: Truesec
 publisher_english: ""
-raw_sha256: 86b3205703b51b474936a3e27770a4ab02c42e7ce38b83628f518dbfdbcacc5b
+raw_sha256: 8379b68c654dd1ea909c1e5be45fc15d2ed09b4b2ea5856583988ec50571aadb
 retrieved_from: "https://www.truesec.com/hub/blog/attacking-powershell-clixml-deserialization"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:47:38+00:00"
+retrieved_utc: "2026-08-10T16:03:50+00:00"
 slug: 2024-truesec-attacking-powershell-clixml-deserialization
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2024-09-13
 - Original: <https://www.truesec.com/hub/blog/attacking-powershell-clixml-deserialization>
-- Preserved from: https://www.truesec.com/hub/blog/attacking-powershell-clixml-deserialization (live) on 2026-08-09
+- Preserved from: https://www.truesec.com/hub/blog/attacking-powershell-clixml-deserialization (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

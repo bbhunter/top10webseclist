@@ -5,9 +5,9 @@ resource: "https://zhero-web-sec.github.io/research-and-things/one-trigram-at-a-
 tags: [article, webseclist-reference, en-US, zhero-web-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:52:48+00:00"
+  at: "2026-08-10T16:08:13+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://zhero-web-sec.github.io/research-and-things/one-trigram-at-a-time-xsleak-via-universal-css-injection-and-dos-in-opera-(gx)"
@@ -17,9 +17,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:66"
+  - "2026-ai.md:42"
 commit: ""
-content_sha256: 13592cf42b25c350cdef556688f5a0ccb2643abb6c507dc04d59ecc6a18374db
+content_sha256: a1597167dea822e33835ebfc02e72bdb499ecb79c074935a193a9df6a6f07bfc
 depth: full
 depth_reason: default
 kind: article
@@ -32,7 +32,7 @@ publisher_english: ""
 raw_sha256: 119b31677c22c519b00d2dacc509fa9df952cd68a53c20396d9b046182dbd291
 retrieved_from: "https://zhero-web-sec.github.io/research-and-things/one-trigram-at-a-time-xsleak-via-universal-css-injection-and-dos-in-opera-(gx)"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:52:48+00:00"
+retrieved_utc: "2026-08-10T16:08:13+00:00"
 slug: 2026-zhero-web-security-one-trigram-time-xsleak-universal-css-injection-dos-gx
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2026-07-03
 - Original: <https://zhero-web-sec.github.io/research-and-things/one-trigram-at-a-time-xsleak-via-universal-css-injection-and-dos-in-opera-(gx)>
-- Preserved from: https://zhero-web-sec.github.io/research-and-things/one-trigram-at-a-time-xsleak-via-universal-css-injection-and-dos-in-opera-(gx) (live) on 2026-08-08
+- Preserved from: https://zhero-web-sec.github.io/research-and-things/one-trigram-at-a-time-xsleak-via-universal-css-injection-and-dos-in-opera-(gx) (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

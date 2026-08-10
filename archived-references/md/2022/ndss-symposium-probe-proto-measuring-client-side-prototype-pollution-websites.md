@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/auto-draft-207/"
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:57+00:00"
+  at: "2026-08-10T15:33:36+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/auto-draft-207/"
     title: "Probe the Proto: Measuring Client-Side Prototype Pollution Vulnerabilities of One Million Real-world Websites"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2022-308-paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2022.md:73"
+  - "2022.md:71"
 commit: ""
-content_sha256: d7d6987657bcd70c787c52446aceeaabf00fe13ca10f308052d3b3d7ea2f2498
+content_sha256: 2f176b54cb6cecc2bdc12b3cefbd280b211db4da80b125bb7b89536e7bbe02ea
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/auto-draft-207/"
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 56921fad96790e31c658fb46e4b0755dd802397c43a503bd225fd3c94fb64101
+raw_sha256: 923ae5bd9cde1d9298cd4cef864396406052a4b12739d85556caedf09cdab6e6
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/auto-draft-207/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:57+00:00"
+retrieved_utc: "2026-08-10T15:33:36+00:00"
 slug: ndss-symposium-probe-proto-measuring-client-side-prototype-pollution-websites
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/auto-draft-207/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/auto-draft-207/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2022-308-paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/auto-draft-207/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -73,20 +75,20 @@ We implemented a prototype of ProbeTheProto and evaluated it on one million webs
 
 ## View More Papers
 
-### [ Demo: A Simulator for Cooperative and Automated Driving Security ](https://www.ndss-symposium.org/ndss-paper/auto-draft-302/)
+### [ PickMail: A Serious Game for Email Phishing Awareness Training ](https://www.ndss-symposium.org/ndss-paper/auto-draft-283/)
 
- Mohammed Lamine Bouchouia (Telecom Paris - Institut Polytechnique de Paris), Jean-Philippe Monteuuis (Qualcomm), Houda Labiod (Telecom Paris - Institut Polytechnique de Paris), Ons Jelassi, Wafa Ben Jaballah (Thales) and Jonathan Petit (Telecom Paris - Institut Polytechnique de Paris)
+ Gokul CJ (TCS Research, Tata Consultancy Services Ltd., Pune), Vijayanand Banahatti (TCS Research, Tata Consultancy Services Ltd., Pune), Sachin Lodha (TCS Research, Tata Consultancy Services Ltd., Pune)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-302/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-283/)
 
-### [ Testability Tarpits: the Impact of Code Patterns on the... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-206/)
+### [ Detecting CAN Masquerade Attacks with Signal Clustering Similarity ](https://www.ndss-symposium.org/ndss-paper/auto-draft-326/)
 
- Feras Al Kassar (SAP Security Research), Giulia Clerici (SAP Security Research), Luca Compagna (SAP Security Research), Davide Balzarotti (EURECOM), Fabian Yamaguchi (ShiftLeft Inc)
+ Pablo Moriano (Oak Ridge National Laboratory), Robert A. Bridges (Oak Ridge National Laboratory) and Michael D. Iannacone (Oak Ridge National Laboratory)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-206/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-326/)
 
-### [ Kasper: Scanning for Generalized Transient Execution Gadgets in the... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-247/)
+### [ The Evolution of Fuzzing in Finding the Unknowns ](https://www.ndss-symposium.org/ndss-paper/auto-draft-270/)
 
- Brian Johannesmeyer (VU Amsterdam), Jakob Koschel (VU Amsterdam), Kaveh Razavi (ETH Zurich), Herbert Bos (VU Amsterdam), Cristiano Giuffrida (VU Amsterdam)
+ Abhishek Aarya (Google)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-247/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-270/)

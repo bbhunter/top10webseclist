@@ -5,9 +5,9 @@ resource: "https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compro
 tags: [slides, webseclist-reference, en, speaker-deck]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:15+00:00"
+  at: "2026-08-10T16:00:52+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:48"
 commit: ""
-content_sha256: 518fb0b77f797583ac7212f973335fda3a756d92441027c78fbbe2388bd45412
+content_sha256: 1b160394d5cd411743d431d878f81a3e0df3fce2f80a1704c54a1d82c4ca8472
 depth: full
 depth_reason: default
 kind: slides
@@ -32,10 +32,10 @@ original_url: "https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-co
 published: 2019-11-01
 publisher: Speaker Deck
 publisher_english: ""
-raw_sha256: 9e8e607d2ad89cce95d41eb514d73fa84fdb169fc09e4db952b32ed750ce80ea
+raw_sha256: a91c6f09205fe7e9c50810923295dc5d7855f1654ae4dd232bad11ebcb5d197d
 retrieved_from: "https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:15+00:00"
+retrieved_utc: "2026-08-10T16:00:52+00:00"
 slug: 2019-speaker-deck-world-site-isolation-compromised-renderer
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2019-11-01
 - Original: <https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer>
-- Preserved from: https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer (live) on 2026-08-09
+- Preserved from: https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -138,213 +138,209 @@ CVE-2019-13704
 
  [ See All in Research ](https://speakerdeck.com/c/research)
 
- [2025年度秋葉原ウォーカブルプロジェクト調査報告 「アキバらしいウォーカブル」とは何か](https://speakerdeck.com/izumiyama_lab/2025nian-du-diao-cha-bao-gao-akibarasiiuokaburu-tohahe-ka)
+ [某助成金プロジェクト採択に向けて企業研究所のアウトリーチ専任者がやったこと](https://speakerdeck.com/afroscript/mou-zhu-cheng-jin-puroziekutocai-ze-nixiang-keteqi-ye-yan-jiu-suo-noautoritizhuan-ren-zhe-gayatutakoto)
 
- [ ![Avatar for 日本大学 都市計画研究室（泉山ゼミ）](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Njk0MzYwLCJwdXIiOiJibG9iX2lkIn19--1be62bf94d04e81397e5c1baa71e453b19f54102/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/%E3%83%AD%E3%82%B4%E5%AE%8C%E6%88%90%E7%89%88%EF%BC%BF%E8%83%8C%E6%99%AF%E9%80%8F%E6%98%8E.png) izumiyama_lab ](https://speakerdeck.com/izumiyama_lab)
-
- 1
-
-  150
-
- [第64回CV・PRML勉強会 論文紹介：Linguistic Priors for Visual Decoupling: Towards Symmetric Vision-Brain Alignment](https://speakerdeck.com/sokikatayama/di-64hui-cvprmlmian-qiang-hui-lun-wen-shao-jie-linguistic-priors-for-visual-decoupling-towards-symmetric-vision-brain-alignment)
-
- [ ![Avatar for Soki Katayama](https://secure.gravatar.com/avatar/f07c5912a741767d06c412ed6d52b531?s=24) sokikatayama ](https://speakerdeck.com/sokikatayama)
+ [ ![Avatar for afroscript](https://secure.gravatar.com/avatar/e2b467a18ec383cfa0068207e43df7fa?s=24) afroscript ](https://speakerdeck.com/afroscript)
 
  0
 
-  150
+  160
 
- [重要だけど測れていないもの：高齢者ケアの見えない課題](https://speakerdeck.com/theoriatec2024/zhong-yao-dakedoce-reteinaimono-gao-ling-zhe-keanojian-enaike-ti)
+ [Language and AI](https://speakerdeck.com/ayaniwa/language-and-ai)
 
- [ ![Avatar for テオリア・テクノロジーズ](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTg0MDQyLCJwdXIiOiJibG9iX2lkIn19--a11cf3c988ed80f1908eb2616f1acf54295d2e73/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/Theoria_T_blue.png) theoriatec2024 ](https://speakerdeck.com/theoriatec2024)
-
- 0
-
-  450
-
- [NLP colloquium: AI Safety Survey](https://speakerdeck.com/kanekomasahiro/ai-safety-survey)
-
- [ ![Avatar for Masahiro Kaneko](https://secure.gravatar.com/avatar/afbdd43f474e8885660d8fcc3b15ed34?s=24) kanekomasahiro ](https://speakerdeck.com/kanekomasahiro)
+ [ ![Avatar for Ayana Niwa](https://secure.gravatar.com/avatar/7d5c4656c947d0905dfbc5e39f233857?s=24) ayaniwa ](https://speakerdeck.com/ayaniwa)
 
  0
 
-  910
+  190
 
- [長時間動画QAにおけるマルチエージェント推論 ・SVAgent: Storyline-Guided Long Video Understanding via Cross-Modal Multi-Agent Collaboration](https://speakerdeck.com/murakawatakuya/chang-shi-jian-dong-hua-qaniokerumarutiezientotui-lun-svagent-storyline-guided-long-video-understanding-via-cross-modal-multi-agent-collaboration)
+ [Sleuthcon Keynote - How Cybercriminals (ab)use AI](https://speakerdeck.com/fr0gger/sleuthcon-keynote-how-cybercriminals-ab-use-ai)
 
- [ ![Avatar for 村川卓也](https://secure.gravatar.com/avatar/634504d55b176ea989d9ac6232312970?s=24) murakawatakuya ](https://speakerdeck.com/murakawatakuya)
+ [ ![Avatar for Thomas Roccia](https://secure.gravatar.com/avatar/9103dacbfc728d2a583981e7cf854cc4?s=24) fr0gger ](https://speakerdeck.com/fr0gger)
 
- 1
+ 0
 
-  180
+  280
 
- [議論 学術ムーブメントを成功させるために何が必要なのだろうか](https://speakerdeck.com/rmaruy/yi-lun-xue-shu-mubumentowocheng-gong-saserutamenihe-gabi-yao-nanodarouka)
+ [大規模言語モデルは誰を覚えているか / Who Do Large Language Models Memorize?](https://speakerdeck.com/upura/who-do-large-language-models-memorize)
 
- [ ![Avatar for Ryuichi Maruyama](https://secure.gravatar.com/avatar/497f72d54db7bf48274d010f9ac5dcd3?s=24) rmaruy ](https://speakerdeck.com/rmaruy)
+ [ ![Avatar for Shotaro Ishihara](https://secure.gravatar.com/avatar/b1cc148711c6a37a5c922b6e72a4ad52?s=24) upura ](https://speakerdeck.com/upura)
 
  0
 
   110
 
- [
+ [LA-Bench 2025：実験指示から実行可能手順を生成するためのデータセット/LA-Bench 2025: A Dataset for Generating Executable Experimental Procedures from Experimental Instructions](https://speakerdeck.com/stktu/la-bench-2025-a-dataset-for-generating-executable-experimental-procedures-from-experimental-instructions)
 
- [Fishers] DIVER OSINT CTF 2026 特化AIエージェントハーネスで挑戦するOSINT CTF
-
- ](https://speakerdeck.com/analokmaus/fishers-diver-osint-ctf-2026-te-hua-aiezientohanesudetiao-zhan-suruosint-ctf)
-
- [ ![Avatar for Hiroshi Y (RabotniKuma)](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTczNywicHVyIjoiYmxvYl9pZCJ9fQ==--2100b597f52e9dcf1b803a2cb9bdb3fe2c892c3c/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/bear.png) analokmaus ](https://speakerdeck.com/analokmaus)
+ [ ![Avatar for Shota Kato](https://secure.gravatar.com/avatar/d60dc42bf3b7ad6628b0e67527f441b6?s=24) stktu ](https://speakerdeck.com/stktu)
 
  0
 
-  440
+  120
 
- [SLAMはどこまで解決されたのか？](https://speakerdeck.com/tomonom/robomech26-workshop-print)
+ [ScoreMatchingRiesz for Automatic Debiased Machine Learning and Policy Path Estimation with an Application to Japanese Monetary Policy Evaluation](https://speakerdeck.com/masakat0/scorematchingriesz-for-automatic-debiased-machine-learning-and-policy-path-estimation-with-an-application-to-japanese-monetary-policy-evaluation)
 
- [ ![Avatar for tomonom](https://secure.gravatar.com/avatar/947ce5e3ac228a5c921065d048b4706c?s=24) tomonom ](https://speakerdeck.com/tomonom)
-
- 0
-
-  1k
-
- [さくらインターネット研究所テックトーク2026春、研究開発Gr.25年度成果26年度方針](https://speakerdeck.com/kikuzo/sakuraintanetutoyan-jiu-suo-tetukutoku2026chun-yan-jiu-kai-fa-gr-dot-25nian-du-cheng-guo-26nian-du-fang-zhen)
-
- [ ![Avatar for KIKUCHI Shunsuke](https://secure.gravatar.com/avatar/fccb5974b63d64636a7c90faf3bab51f?s=24) kikuzo ](https://speakerdeck.com/kikuzo)
+ [ ![Avatar for MasaKat0](https://secure.gravatar.com/avatar/bb6c3fc8c577710c72d03aeb4fa56bf6?s=24) masakat0 ](https://speakerdeck.com/masakat0)
 
  0
 
-  170
+  310
 
- [全国町字単位空き家率推定データver1.0データ仕様](https://speakerdeck.com/microbaseinc/quan-guo-ting-zi-dan-wei-kong-kijia-lu-tui-ding-detaver1-dot-0detashi-yang)
+ [260624_NLP-colloquium: Hubness](https://speakerdeck.com/de9uch1/260624-nlp-colloquium-hubness)
 
- [ ![Avatar for microbase](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzcyNDc5LCJwdXIiOiJibG9iX2lkIn19--7849ed14af29d12cda6ff9e27e86cdafc7d0bd7a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/logo_mb_microbase_logo_short.png) microbaseinc ](https://speakerdeck.com/microbaseinc)
-
- 0
-
-  170
-
- [
-
- [BlackHatAsia2026] Hidden Telemetry: Uncovering TraceLogging ETW Providers You're Not Using (Yet)
-
- ](https://speakerdeck.com/asuna_jp/blackhatasia2026-hidden-telemetry-uncovering-tracelogging-etw-providers-youre-not-using-yet)
-
- [ ![Avatar for Asuka Nakajima](https://secure.gravatar.com/avatar/0cf832af679c778f7c3dd81a2b4aa340?s=24) asuna_jp ](https://speakerdeck.com/asuna_jp)
+ [ ![Avatar for Hiroyuki Deguchi](https://secure.gravatar.com/avatar/b30b28a835b61eff03d0e09336cb8418?s=24) de9uch1 ](https://speakerdeck.com/de9uch1)
 
  1
 
-  630
+  170
 
- [Google Cloud Next 2026 DM Recap Agentic Data Cloudを添えて / Google Cloud Next 2026 DM Recap](https://speakerdeck.com/nnaka2992/google-cloud-next-2026-dm-recap)
+ [LINEヤフー データサイエンス Meetup「三井物産コモディティ予測チャレンジ」の舞台裏-AlpacaTechパート](https://speakerdeck.com/gamella/lineyahu-detasaiensu-meetup-san-jing-wu-chan-komodeiteiyu-ce-tiyarenzi-nowu-tai-li-alpacatechpato)
 
- [ ![Avatar for nnaka2992](https://secure.gravatar.com/avatar/5a979f182ec9a03fdc8099ae064e71eb?s=24) nnaka2992 ](https://speakerdeck.com/nnaka2992)
+ [ ![Avatar for tomo](https://secure.gravatar.com/avatar/3e8f61263f14a620f21d5f3f89c4b846?s=24) gamella ](https://speakerdeck.com/gamella)
+
+ 1
+
+  620
+
+ [Sequences of Logits Reveal the Low Rank Structure of Language Models](https://speakerdeck.com/sansantech/20260325-1)
+
+ [ ![Avatar for SansanTech](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTQyMCwicHVyIjoiYmxvYl9pZCJ9fQ==--688da104aaf03ce13c8194bda634b039c1aa4b80/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/icon_engnr_dev_256.png) sansantech ](https://speakerdeck.com/sansantech)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+
+ 1
+
+  300
+
+ [データサイエンティストの就労意識～2015 → 2026 一般(個人)会員アンケートより](https://speakerdeck.com/datascientistsociety/person_research2026)
+
+ [ ![Avatar for The Japan DataScientist Society](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTIzNTQwLCJwdXIiOiJibG9iX2lkIn19--e7fb496bc4dbfa06df97780a1177e76d52344cba/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/da-logo%E3%81%AE%E3%81%BF%EF%BC%88%E5%95%86%E6%A8%99%E7%99%BB%E9%8C%B2%E7%94%A8%EF%BC%89.jpg) datascientistsociety ](https://speakerdeck.com/datascientistsociety)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
  0
 
-  100
+  580
+
+ [Anthropic が提案する LLM の内部状態を自然言語で説明可能にした Natural Language Autoencoders / Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations](https://speakerdeck.com/shunk031/natural-language-autoencoders-produce-unsupervised-explanations-of-llm-activations)
+
+ [ ![Avatar for Shunsuke KITADA](https://secure.gravatar.com/avatar/5bea5748e87ba7a12c2f4a8595672366?s=24) shunk031 ](https://speakerdeck.com/shunk031)
+
+ 0
+
+  160
+
+ [AIエージェント時代のLLM-jpモデルのあるべき姿](https://speakerdeck.com/k141303/aiezientoshi-dai-nollm-jpmoderunoarubekizi)
+
+ [ ![Avatar for Kouta Nakayama](https://secure.gravatar.com/avatar/8236376240946d9c4868e3473d155600?s=24) k141303 ](https://speakerdeck.com/k141303)
+
+ 0
+
+  550
 
 ## Featured
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [Lightning talk: Run Django tests with GitHub Actions](https://speakerdeck.com/sabderemane/lightning-talk-run-django-tests-with-github-actions)
+ [Game over? The fight for quality and originality in the time of robots](https://speakerdeck.com/wayneb77/game-over-the-fight-for-quality-and-originality-in-the-time-of-robots)
 
- [ ![Avatar for Sarah Abderemane](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTgxMzQ0LCJwdXIiOiJibG9iX2lkIn19--9d4ddecde5a2489c498d88f943c8a059cb79173d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/sarah.jpg) sabderemane ](https://speakerdeck.com/sabderemane)
-
- 0
-
-  230
-
- [Are puppies a ranking factor?](https://speakerdeck.com/jonoalderson/are-puppies-a-ranking-factor)
-
- [ ![Avatar for Jono Alderson](https://secure.gravatar.com/avatar/beed0f5ca54ae221655b9f30a1f6fe66?s=24) jonoalderson ](https://speakerdeck.com/jonoalderson)
+ [ ![Avatar for Wayne Barker](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTk3NzAsInB1ciI6ImJsb2JfaWQifX0=--c5a71c6f5132c036855cdbb1284df957d9c907da/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/DilBtLhG_400x400.jpg) wayneb77 ](https://speakerdeck.com/wayneb77)
 
  1
 
-  3.8k
+  240
 
- [Gemini Prompt Engineering: Practical Techniques for Tangible AI Outcomes](https://speakerdeck.com/mfonobong/gemini-prompt-engineering-practical-techniques-for-tangible-ai-outcomes)
+ [Site-Speed That Sticks](https://speakerdeck.com/csswizardry/site-speed-that-sticks)
 
- [ ![Avatar for Mfonobong Umondia](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjIyMzkxLCJwdXIiOiJibG9iX2lkIn19--5cbe193d6e7c50710eb8ab78626ee4057e42cffd/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/YTProfile%20picture.png) mfonobong ](https://speakerdeck.com/mfonobong)
+ [ ![Avatar for Harry Roberts](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjkxMzksInB1ciI6ImJsb2JfaWQifX0=--8e101a64c4b4cc0fe17b319fa4fb35624590c38b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/labin-square.jpg) csswizardry ](https://speakerdeck.com/csswizardry)
 
- 2
+ 13
 
-  480
+  1.4k
 
- [It's Worth the Effort](https://speakerdeck.com/3n/its-worth-the-effort)
+ [Making Projects Easy](https://speakerdeck.com/brettharned/making-projects-easy)
 
- [ ![Avatar for 3n](https://secure.gravatar.com/avatar/ba530e786553390f3fb271848485681c?s=24) 3n ](https://speakerdeck.com/3n)
+ [ ![Avatar for Brett Harned](https://secure.gravatar.com/avatar/c4de88ea47538e4594750e3861a341c8?s=24) brettharned ](https://speakerdeck.com/brettharned)
 
- 188
+ 120
 
-  29k
+  6.7k
 
- [SEO for Brand Visibility & Recognition](https://speakerdeck.com/aleyda/seo-for-brand-visibility-and-recognition)
+ [What's in a price? How to price your products and services](https://speakerdeck.com/michaelherold/whats-in-a-price-how-to-price-your-products-and-services)
 
- [ ![Avatar for Aleyda Solis](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6OTIyMDAsInB1ciI6ImJsb2JfaWQifX0=--f7ae7c6a9c16b0bb4461d98502be71c2c1b38eaf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/aleyda-solis.jpg) aleyda ](https://speakerdeck.com/aleyda)
+ [ ![Avatar for Michael Herold](https://secure.gravatar.com/avatar/dad095ea7038f89f760419ce475d5d14?s=24) michaelherold ](https://speakerdeck.com/michaelherold)
+
+ 247
+
+  13k
+
+ [Rebuilding a faster, lazier Slack](https://speakerdeck.com/samanthasiow/rebuilding-a-faster-lazier-slack)
+
+ [ ![Avatar for samanthasiow](https://secure.gravatar.com/avatar/c0b42577cfc2b321be3474618107e933?s=24) samanthasiow ](https://speakerdeck.com/samanthasiow)
+
+ 85
+
+  9.6k
+
+ [Sam Torres - BigQuery for SEOs](https://speakerdeck.com/techseoconnect/sam-torres-bigquery-for-seos)
+
+ [ ![Avatar for Tech SEO Connect](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2NjU4LCJwdXIiOiJibG9iX2lkIn19--14f297c27d2190051dc109b5d472cf0297dd6c3e/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/40575_logo_social%20media%20profile%204.png) techseoconnect ](https://speakerdeck.com/techseoconnect)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
  0
 
-  4.7k
+  460
 
- [Designing for Timeless Needs](https://speakerdeck.com/cassininazir/designing-for-timeless-needs-a72bb8c4-c96b-47cc-8598-36af0340e28e)
+ [Leveraging Curiosity to Care for An Aging Population](https://speakerdeck.com/cassininazir/leveraging-curiosity-to-care-for-an-aging-population)
 
  [ ![Avatar for Cassini Nazir](https://secure.gravatar.com/avatar/4631d364d59bd9d045acf046a0ce1cfe?s=24) cassininazir ](https://speakerdeck.com/cassininazir)
 
  1
 
-  430
+  460
 
- [Done Done](https://speakerdeck.com/chrislema/done-done)
+ [How People are Using Generative and Agentic AI to Supercharge Their Products, Projects, Services and Value Streams Today](https://speakerdeck.com/helenjbeal/how-people-are-using-generative-and-agentic-ai-to-supercharge-their-products-projects-services-and-value-streams-today)
 
- [ ![Avatar for chrislema](https://secure.gravatar.com/avatar/282d599b414022eba5096510f675b6e2?s=24) chrislema ](https://speakerdeck.com/chrislema)
+ [ ![Avatar for Helen Beal](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDc4NzcyLCJwdXIiOiJibG9iX2lkIn19--63c34c899ae9696f1fd5abddc34acfa182481f9d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/Helen%20Beal%20(white%20jacket).png) helenjbeal ](https://speakerdeck.com/helenjbeal)
 
- 186
+ 1
 
-  16k
+  260
 
- [Stewardship and Sustainability of Urban and Community Forests](https://speakerdeck.com/pwiseman/stewardship-and-sustainability-of-urban-and-community-forests)
+ [ReactJS: Keep Simple. Everything can be a component!](https://speakerdeck.com/pedronauck/reactjs-keep-simple-everything-can-be-a-component)
 
- [ ![Avatar for Eric Wiseman](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTcwNTAsInB1ciI6ImJsb2JfaWQifX0=--940abaec4feb0fb14cd0ee39c705c922981c563f/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/Headshot%20October%202022.jpg) pwiseman ](https://speakerdeck.com/pwiseman)
+ [ ![Avatar for Pedro Nauck](https://secure.gravatar.com/avatar/af6a12710770ad9a7cfd08c97efd40d3?s=24) pedronauck ](https://speakerdeck.com/pedronauck)
 
- 0
+ 666
 
-  430
+  130k
 
- [
-
- The Web Performance Landscape in 2024 [PerfNow 2024]
-
- ](https://speakerdeck.com/tammyeverts/the-web-performance-landscape-in-2024-perfnow-2024)
-
- [ ![Avatar for Tammy Everts](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTE1OTYxLCJwdXIiOiJibG9iX2lkIn19--abc92847293bd4bb711260d06a412d2974cd78fe/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/Tammy.jpg) tammyeverts ](https://speakerdeck.com/tammyeverts)
-
- 12
-
-  1.2k
-
- [Google's AI Overviews - The New Search](https://speakerdeck.com/badams/googles-ai-overviews-the-new-search)
-
- [ ![Avatar for Barry Adams](https://secure.gravatar.com/avatar/00de107acb085244c96dbfe6da2b1560?s=24) badams ](https://speakerdeck.com/badams)
-
- 0
-
-  1.1k
-
- [Templates, Plugins, & Blocks: Oh My! Creating the theme that thinks of everything](https://speakerdeck.com/marktimemedia/templates-plugins-and-blocks-oh-my-creating-the-theme-that-thinks-of-everything)
+ [More Than Pixels: Becoming A User Experience Designer](https://speakerdeck.com/marktimemedia/more-than-pixels-becoming-a-user-experience-designer)
 
  [ ![Avatar for Michelle Schulp Hunt](https://secure.gravatar.com/avatar/e195ae45320d9202eaa01c9f1d31a416?s=24) marktimemedia ](https://speakerdeck.com/marktimemedia)
 
- 31
+ 3
 
-  2.8k
+  480
 
- [Learning to Love Humans: Emotional Interface Design](https://speakerdeck.com/aarron/learning-to-love-humans-emotional-interface-design)
+ [Getting science done with accelerated Python computing platforms](https://speakerdeck.com/jacobtomlinson/getting-science-done-with-accelerated-python-computing-platforms)
 
- [ ![Avatar for Aarron Walter](https://secure.gravatar.com/avatar/5f50f94346fbcb23706f0707169317a4?s=24) aarron ](https://speakerdeck.com/aarron)
+ [ ![Avatar for Jacob Tomlinson](https://secure.gravatar.com/avatar/ca3d0556227d66b3c15be1eadf69473b?s=24) jacobtomlinson ](https://speakerdeck.com/jacobtomlinson)
 
- 275
+ 2
 
-  41k
+  400
+
+ [What does AI have to do with Human Rights?](https://speakerdeck.com/axbom/what-does-ai-have-to-do-with-human-rights)
+
+ [ ![Avatar for Per Axbom](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzA4MTcsInB1ciI6ImJsb2JfaWQifX0=--3b22ae95c7f24edaeb9c2d37fdb67f05b7db6128/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/axbom-ind08b.jpg) axbom ](https://speakerdeck.com/axbom)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+
+ 1
+
+  2.3k
 
 ## Transcript
 

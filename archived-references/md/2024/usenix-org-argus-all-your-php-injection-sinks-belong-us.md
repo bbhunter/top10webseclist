@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/jahan
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:03+00:00"
+  at: "2026-08-10T16:05:30+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/jahanshahi"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2024.md:143"
+  - "2024.md:140"
 commit: ""
 content_sha256: b388fc093bad8319c382e512f5c09d46aa75f34b4b0424b4973858a918955ed8
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity24/presentation/j
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: eb9f5670243c270eb90597a3108db0affe68700f30afd45684ec1ff593556158
+raw_sha256: eb4a3a10e154e4195eb0a692c898e968f0fc176fafbe93af87b9e3bbb10e765e
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity24/presentation/jahanshahi"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:03+00:00"
+retrieved_utc: "2026-08-10T16:05:30+00:00"
 slug: usenix-org-argus-all-your-php-injection-sinks-belong-us
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity24/presentation/jahanshahi>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity24/presentation/jahanshahi (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity24/presentation/jahanshahi (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

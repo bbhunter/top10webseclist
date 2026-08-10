@@ -5,9 +5,9 @@ resource: "https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:51:11+00:00"
+  at: "2026-08-10T15:07:47+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2010.md:102"
+  - "2010.md:97"
 commit: ""
 content_sha256: c705a11380a1c760356731c9c9b5abb2dbbc29a1ff20cdc1f7d39120fb2aaef3
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 174b1b725e28ed117a9a301c6e973642bcea61f83a1c78c728d63bb1efb2d555
 retrieved_from: "https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:51:11+00:00"
+retrieved_utc: "2026-08-10T15:07:47+00:00"
 slug: empirical-study-privacy-violating-information-flows-javascript-web-applications
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf>
-- Preserved from: https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf (live) on 2026-08-08
+- Preserved from: https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

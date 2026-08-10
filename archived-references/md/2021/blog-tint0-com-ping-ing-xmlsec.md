@@ -5,9 +5,9 @@ resource: "https://blog.tint0.com/2021/09/pinging-xmlsec.html"
 tags: [article, webseclist-reference, en, blog-tint0-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:07:11+00:00"
+  at: "2026-08-10T15:06:33+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blog.tint0.com/2021/09/pinging-xmlsec.html"
@@ -28,10 +28,10 @@ original_url: "https://blog.tint0.com/2021/09/pinging-xmlsec.html"
 published: ""
 publisher: blog.tint0.com
 publisher_english: ""
-raw_sha256: da359bc87618e45ee6dd920a32adc975d422dddf02515eee81782af075d5d7f1
+raw_sha256: 57766ebcc2ce3e19b221d31337e3146b5b8f4128cc54b460b3740b22b34c0c2e
 retrieved_from: "https://blog.tint0.com/2021/09/pinging-xmlsec.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:07:11+00:00"
+retrieved_utc: "2026-08-10T15:06:33+00:00"
 slug: blog-tint0-com-ping-ing-xmlsec
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://blog.tint0.com/2021/09/pinging-xmlsec.html>
-- Preserved from: https://blog.tint0.com/2021/09/pinging-xmlsec.html (live) on 2026-08-09
+- Preserved from: https://blog.tint0.com/2021/09/pinging-xmlsec.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

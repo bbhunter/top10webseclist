@@ -5,9 +5,9 @@ resource: "http://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.html"
 tags: [article, webseclist-reference, en, blog-andlabs-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:20+00:00"
+  at: "2026-08-10T15:04:03+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.html"
@@ -28,10 +28,10 @@ original_url: "http://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.h
 published: ""
 publisher: blog.andlabs.org
 publisher_english: ""
-raw_sha256: 077477a91caee4fc129ad91a4d40626f682e73cf7425cf3ff643853506996475
+raw_sha256: 4af92accbbf011ad67b4aab11fefdb22c88f4f1841db478493ace9c39a274b97
 retrieved_from: "http://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:20+00:00"
+retrieved_utc: "2026-08-10T15:04:03+00:00"
 slug: blog-andlabs-org-xssing-client-side-dynamic-html-includes-hiding-html-more
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.html>
-- Preserved from: http://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.html (live) on 2026-08-09
+- Preserved from: http://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

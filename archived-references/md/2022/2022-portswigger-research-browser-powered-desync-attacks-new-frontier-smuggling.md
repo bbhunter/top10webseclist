@@ -5,21 +5,22 @@ resource: "https://portswigger.net/research/browser-powered-desync-attacks"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:25+00:00"
+  at: "2026-08-10T15:36:28+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/browser-powered-desync-attacks"
     title: "Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling"
     last_modified: 2022-08-10
-also_at: []
+also_at:
+  - "https://portswigger.net/kb/papers/firuaml/browser-powered-desync-attacks.pdf"
 authors: []
 canonical_url: ""
 cited_by:
   - "2022.md:6"
 commit: ""
-content_sha256: 13d06e799c87bbb3acdddec39a772de8a38c216866474bc930d4f158fe0545a0
+content_sha256: 679f051163828ee986e4804b817cdbd7789be616cff7d1e8eb99d685697acb8c
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +30,10 @@ original_url: "https://portswigger.net/research/browser-powered-desync-attacks"
 published: 2022-08-10
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: f31df51eddb83859cba72ca415102d7e7465f1aa6e54a0e4e14830d61a895bc3
+raw_sha256: 48cea3852d6d909d92a45cb51ef60bb44d9ce3c715c9f9442f682e635e7fb5ed
 retrieved_from: "https://portswigger.net/research/browser-powered-desync-attacks"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:25+00:00"
+retrieved_utc: "2026-08-10T15:36:28+00:00"
 slug: 2022-portswigger-research-browser-powered-desync-attacks-new-frontier-smuggling
 snapshot: ""
 title_english: ""
@@ -46,7 +47,8 @@ translation_of: ""
 
 - Published: 2022-08-10
 - Original: <https://portswigger.net/research/browser-powered-desync-attacks>
-- Preserved from: https://portswigger.net/research/browser-powered-desync-attacks (live) on 2026-08-09
+- Also published at: <https://portswigger.net/kb/papers/firuaml/browser-powered-desync-attacks.pdf>
+- Preserved from: https://portswigger.net/research/browser-powered-desync-attacks (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

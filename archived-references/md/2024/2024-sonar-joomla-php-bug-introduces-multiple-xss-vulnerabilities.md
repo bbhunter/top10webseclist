@@ -5,9 +5,9 @@ resource: "https://www.sonarsource.com/blog/joomla-multiple-xss-vulnerabilities/
 tags: [article, webseclist-reference, en, sonar]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:44+00:00"
+  at: "2026-08-10T16:00:33+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.sonarsource.com/blog/joomla-multiple-xss-vulnerabilities/"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:67"
 commit: ""
-content_sha256: 42493a69d9b102022945fa284e72ab744bf4c1c6d07b576e2ef7da90211149cb
+content_sha256: ca5253ab1e5cbc65961f184cecd3bc4d80c7782b6c6660fad4914f385a64bc75
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://www.sonarsource.com/blog/joomla-multiple-xss-vulnerabilit
 published: 2024-02-20
 publisher: Sonar
 publisher_english: ""
-raw_sha256: 6eeb8cdbd51b47d3ecd22948a6f23f42c6327bfce5355cbbe8308bc9d6b75d23
+raw_sha256: d60fbc86b6b19d924280676e507f02dae779ca63bae0c39ec884e05158f9d452
 retrieved_from: "https://www.sonarsource.com/blog/joomla-multiple-xss-vulnerabilities/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:44+00:00"
+retrieved_utc: "2026-08-10T16:00:33+00:00"
 slug: 2024-sonar-joomla-php-bug-introduces-multiple-xss-vulnerabilities
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2024-02-20
 - Original: <https://www.sonarsource.com/blog/joomla-multiple-xss-vulnerabilities/>
-- Preserved from: https://www.sonarsource.com/blog/joomla-multiple-xss-vulnerabilities/ (live) on 2026-08-09
+- Preserved from: https://www.sonarsource.com/blog/joomla-multiple-xss-vulnerabilities/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://medium.com/@jacopotediosi/worldwide-server-side-cache-poisoni
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:34:55+00:00"
+  at: "2026-08-10T15:32:11+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@jacopotediosi/worldwide-server-side-cache-poisoning-on-all-akamai-edge-nodes-50k-bounty-earned-f97d80f3922b"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2022.md:11"
 commit: ""
-content_sha256: bbfd2a72f62be1d0a54a9ff969a85315d609d93a411b5336d2785ebf9579b80e
+content_sha256: 19f580659d6f8f01b201df140b1be032f5dd93cff31e04e7aa90f2f4f38f5954
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://medium.com/@jacopotediosi/worldwide-server-side-cache-poi
 published: 2023-02-17
 publisher: Medium
 publisher_english: ""
-raw_sha256: 680e6c8e6bd4c0d2e2a52f9272592068d3e37550291c127dfaa3ca27e84c0c5b
+raw_sha256: aaf37b54c2e87e2b7dacc84884ed62cca782ea866676f4927d25759b48574393
 retrieved_from: "https://medium.com/@jacopotediosi/worldwide-server-side-cache-poisoning-on-all-akamai-edge-nodes-50k-bounty-earned-f97d80f3922b"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:34:55+00:00"
+retrieved_utc: "2026-08-10T15:32:11+00:00"
 slug: 2023-medium-worldwide-server-side-cache-poisoning-all-akamai-edge-nodes-earned
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2023-02-17
 - Original: <https://medium.com/@jacopotediosi/worldwide-server-side-cache-poisoning-on-all-akamai-edge-nodes-50k-bounty-earned-f97d80f3922b>
-- Preserved from: https://medium.com/@jacopotediosi/worldwide-server-side-cache-poisoning-on-all-akamai-edge-nodes-50k-bounty-earned-f97d80f3922b (live) on 2026-08-09
+- Preserved from: https://medium.com/@jacopotediosi/worldwide-server-side-cache-poisoning-on-all-akamai-edge-nodes-50k-bounty-earned-f97d80f3922b (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

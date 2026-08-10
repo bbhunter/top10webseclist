@@ -5,9 +5,9 @@ resource: "https://www.levelblue.com/blogs/spiderlabs-blog/reflected-file-downlo
 tags: [article, webseclist-reference, en, trustwave-holdings-inc]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:27+00:00"
+  at: "2026-08-10T15:31:04+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.levelblue.com/blogs/spiderlabs-blog/reflected-file-download-a-new-web-attack-vector"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2014.md:47"
 commit: ""
-content_sha256: 8677fef8a5dce892b1165304e021b72f2858be3e33ecd884a05c182ef8fa1cec
+content_sha256: 002303a0711e8b1ce693b7c41a64f361eeb0ce40c235d9637c72a99210bbd81b
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://www.levelblue.com/blogs/spiderlabs-blog/reflected-file-do
 published: 2014-10-30
 publisher: Trustwave Holdings, Inc.
 publisher_english: ""
-raw_sha256: aadfceaedcd8d54195968d0d88a177ec6856adcf0341a893cfa1ebd239491088
+raw_sha256: aff2d6964f41f3ff62173d7b5cb8e9627b0655ee9a85cfa8e19ad953f2d5eb68
 retrieved_from: "https://www.levelblue.com/blogs/spiderlabs-blog/reflected-file-download-a-new-web-attack-vector"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:27+00:00"
+retrieved_utc: "2026-08-10T15:31:04+00:00"
 slug: 2014-trustwave-holdings-inc-reflected-file-download-new-web-attack-vector
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2014-10-30
 - Original: <https://www.levelblue.com/blogs/spiderlabs-blog/reflected-file-download-a-new-web-attack-vector>
-- Preserved from: https://www.levelblue.com/blogs/spiderlabs-blog/reflected-file-download-a-new-web-attack-vector (live) on 2026-08-09
+- Preserved from: https://www.levelblue.com/blogs/spiderlabs-blog/reflected-file-download-a-new-web-attack-vector (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -140,8 +140,8 @@ LevelBlue secures what's next with intelligence-led security delivering visibili
 
 ## Latest Intelligence
 
+ [  CNCMachineRMS: The Undocumented RAT At the End of a BabaDeda Chain ](https://www.levelblue.com/blogs/spiderlabs-blog/cncmachinerms-the-undocumented-rat-at-the-end-of-a-babadeda-chain)
+
  [  Beyond ‘Fake Updates’: From Application Store-Themed Phishing to Large-Scale Distribution of ScreenConnect ](https://www.levelblue.com/blogs/spiderlabs-blog/beyond-fake-updates-from-application-store-themed-phishing-to-large-scale-distribution-of-screenconnect)
 
  [  Release the RAVEN: Exploiting the Cracks ](https://www.levelblue.com/blogs/spiderlabs-blog/release-the-raven-exploiting-the-cracks)
-
- [  Release the RAVEN: First Contact ](https://www.levelblue.com/blogs/spiderlabs-blog/release-the-raven-first-contact)

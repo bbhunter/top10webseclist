@@ -5,9 +5,9 @@ resource: "https://robotattack.org/"
 tags: [article, webseclist-reference, en, robotattack-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:05+00:00"
+  at: "2026-08-10T15:57:18+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://robotattack.org/"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:115"
+  - "2016-17.md:109"
 commit: ""
-content_sha256: 159178b4b2d232611eec47917d50d9953ea5086f3a19faf456916e2a0b65828a
+content_sha256: 102e6485520d0ebfb44f7c7abb1174f19fe9a477ed7707afb8ad80930e3eedd4
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: d5c085628d880debfb8c047b6cd7630a538eb359185f18ee8232e778964247ef
 retrieved_from: "https://robotattack.org/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:05+00:00"
+retrieved_utc: "2026-08-10T15:57:18+00:00"
 slug: robotattack-org-robot-attack
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://robotattack.org/>
-- Preserved from: https://robotattack.org/ (live) on 2026-08-08
+- Preserved from: https://robotattack.org/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -105,8 +105,6 @@ Some of the most popular webpages on the Internet were affected, including Faceb
 We published a [python tool to scan for vulnerable hosts](https://github.com/robotattackorg/robot-detect). Alternatively you can check a host with the [SSL Labs test](https://www.ssllabs.com/ssltest/).
 
 We will update the following table if we become aware of more affected vendors:
-
- 
 
 | F5 | [BIG-IP SSL vulnerability](https://support.f5.com/csp/article/K21905460) | [CVE-2017-6168](https://nvd.nist.gov/vuln/detail/CVE-2017-6168) |  |
 | Citrix | [TLS Padding Oracle Vulnerability in Citrix NetScaler Application Delivery Controller (ADC) and NetScaler Gateway](https://support.citrix.com/article/CTX230238) | [CVE-2017-17382](https://nvd.nist.gov/vuln/detail/CVE-2017-17382) |  |

@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/evocrawl-exploring-web-appl
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:05+00:00"
+  at: "2026-08-10T15:33:45+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/evocrawl-exploring-web-application-code-and-state-using-evolutionary-search/"
     title: "EvoCrawl: Exploring Web Application Code and State using Evolutionary Search"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2025-366-paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2025.md:93"
+  - "2025.md:88"
 commit: ""
-content_sha256: 5473e9b8484bdddda6272b72b636cf3b9b620a2caa42515286ead8380a1a1939
+content_sha256: 0f8ccb1b772630583efd18039fc35c54e30c211cc253a2c0acbf480d5e32be42
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/evocrawl-exploring-web-
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 47a505c129b0badbaac09c5fc0b56f7663d3db2fb16160e57684ea9ad02753ee
+raw_sha256: 4c88ea43cad82e954283f929c015033078b14f742d799ff5518f802a050344ee
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/evocrawl-exploring-web-application-code-and-state-using-evolutionary-search/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:05+00:00"
+retrieved_utc: "2026-08-10T15:33:45+00:00"
 slug: ndss-symposium-evocrawl-exploring-web-application-code-state-using-search
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/evocrawl-exploring-web-application-code-and-state-using-evolutionary-search/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/evocrawl-exploring-web-application-code-and-state-using-evolutionary-search/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2025-366-paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/evocrawl-exploring-web-application-code-and-state-using-evolutionary-search/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -70,20 +72,20 @@ As more critical services move onto the web, it has become increasingly importan
 
 ## View More Papers
 
-### [ Work-in-Progress: Detecting Browser-in-the-Browser Attacks from Their Behaviors and DOM... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-613/)
+### [ Victim-Centred Abuse Investigations and Defenses for Social Media Platforms ](https://www.ndss-symposium.org/ndss-paper/auto-draft-590/)
 
- Ryusei Ishikawa, Soramichi Akiyama, and Tetsutaro Uehara (Ritsumeikan University)
+ Zaid Hakami (Florida International University and Jazan University), Ashfaq Ali Shafin (Florida International University), Peter J. Clarke (Florida International University), Niki Pissinou (Florida International University), and Bogdan Carbunar (Florida International University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-613/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-590/)
 
-### [ Was This You? Investigating the Design Considerations for Suspicious... ](https://www.ndss-symposium.org/ndss-paper/was-this-you-investigating-the-design-considerations-for-suspicious-login-notifications/)
+### [ ProvGuard: Detecting SDN Control Policy Manipulation via Contextual Semantics... ](https://www.ndss-symposium.org/ndss-paper/provguard-detecting-sdn-control-policy-manipulation-via-contextual-semantics-of-provenance-graphs/)
 
- Sena Sahin (Georgia Institute of Technology), Burak Sahin (Georgia Institute of Technology), Frank Li (Georgia Institute of Technology)
+ Ziwen Liu (Beihang University), Jian Mao (Beihang University; Tianmushan Laboratory; Hangzhou Innovation Institute, Beihang University), Jun Zeng (National University of Singapore), Jiawei Li (Beihang University; National University of Singapore), Qixiao Lin (Beihang University), Jiahao Liu (National University of Singapore), Jianwei Zhuge (Tsinghua University; Zhongguancun Laboratory), Zhenkai Liang (National University of Singapore)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/was-this-you-investigating-the-design-considerations-for-suspicious-login-notifications/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/provguard-detecting-sdn-control-policy-manipulation-via-contextual-semantics-of-provenance-graphs/)
 
-### [ SecuWear: Secure Data Sharing Between Wearable Devices ](https://www.ndss-symposium.org/ndss-paper/auto-draft-556/)
+### [ Privacy-Enhancing Technologies Against Physical-Layer and Link-Layer Device Tracking: Trends,... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-606/)
 
- Sujin Han (KAIST) Diana A. Vasile (Nokia Bell Labs), Fahim Kawsar (Nokia Bell Labs, University of Glasgow), Chulhong Min (Nokia Bell Labs)
+ Apolline Zehner (Universite libre de Bruxelles), Iness Ben Guirat (Universite libre de Bruxelles), Jan Tobias Muhlberg (Universite libre de Bruxelles)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-556/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-606/)

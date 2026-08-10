@@ -5,9 +5,9 @@ resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com
 tags: [article, webseclist-reference, en, whitehat-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:49:08+00:00"
+  at: "2026-08-10T16:07:01+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/"
@@ -32,10 +32,10 @@ original_url: "http://web.archive.org/web/20160507023636/https://www.whitehatsec
 published: ""
 publisher: WhiteHat Security
 publisher_english: ""
-raw_sha256: fcc2bd1390519ba26fe1d57a6b549e0d2340019aacb61a414056713e48e89773
+raw_sha256: 7b4d6a775e30d847ab5fce495b66b5f153040deaa44fe44a106f04d9640d4c5d
 retrieved_from: "http://web.archive.org/web/20160521212845/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:49:08+00:00"
+retrieved_utc: "2026-08-10T16:07:01+00:00"
 slug: whitehat-security-tor-hidden-service-passive-de-cloaking
 snapshot: 20160507023636
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/>
 - Current location: <http://web.archive.org/web/20160521212845/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/>
-- Preserved from: http://web.archive.org/web/20160521212845/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/ (live) on 2026-08-09
+- Preserved from: http://web.archive.org/web/20160521212845/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/ (live) on 2026-08-10
 - Capture timestamp: 20160507023636
 - Licence: unknown
 

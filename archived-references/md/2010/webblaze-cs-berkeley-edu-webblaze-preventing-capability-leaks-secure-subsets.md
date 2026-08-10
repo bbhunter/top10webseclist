@@ -5,9 +5,9 @@ resource: "https://webblaze.cs.berkeley.edu/blancura.html"
 tags: [article, webseclist-reference, webblaze-cs-berkeley-edu]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:39+00:00"
+  at: "2026-08-10T16:06:11+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://webblaze.cs.berkeley.edu/blancura.html"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2010.md:101"
+  - "2010.md:96"
 commit: ""
-content_sha256: c12f33343d26c8909d50d7dfc550339d0b0b304dd87ae3d3b6b309890dcd3e80
+content_sha256: c0f4be98f232952f1eddb11994e813476c9076180532a9234e4a3aa8fb8b36e7
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 856777fda0fdb72b47a49bb20b17f83ca18e9a9df2fa3fab1fff401350efb7e7
 retrieved_from: "https://webblaze.cs.berkeley.edu/blancura.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:39+00:00"
+retrieved_utc: "2026-08-10T16:06:11+00:00"
 slug: webblaze-cs-berkeley-edu-webblaze-preventing-capability-leaks-secure-subsets
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://webblaze.cs.berkeley.edu/blancura.html>
-- Preserved from: https://webblaze.cs.berkeley.edu/blancura.html (live) on 2026-08-08
+- Preserved from: https://webblaze.cs.berkeley.edu/blancura.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -62,7 +62,7 @@ WebBlaze - Preventing Capability leaks in Secure JavaScript Subsets
 
 ## Preventing Capability Leaks in Secure JavaScript Subsets
 
- [ Preventing Capability Leaks in Secure JavaScript Subsets ](https://webblaze.cs.berkeley.edu/papers/finifter-weinberger-barth.pdf) [[BibTex]]()
+ [ Preventing Capability Leaks in Secure JavaScript Subsets ](https://webblaze.cs.berkeley.edu/papers/finifter-weinberger-barth.pdf) [BibTex]
 
  [Matthew Finifter](http://www.cs.berkeley.edu/~finifter/), [Joel Weinberger](http://www.cs.berkeley.edu/~jww/), [Adam Barth](http://www.adambarth.com/)
 

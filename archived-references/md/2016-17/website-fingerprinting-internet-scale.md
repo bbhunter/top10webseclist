@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fin
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:40+00:00"
+  at: "2026-08-10T15:35:09+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:90"
+  - "2016-17.md:84"
 commit: ""
 content_sha256: cfae8cee10916aefc08af82884c1aa6cb873944a6069d422337290bab88d2eff
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 807d9ac047baddcf537d6a0923d4815afc6832a09a4c9c056d683162a260eb3a
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:40+00:00"
+retrieved_utc: "2026-08-10T15:35:09+00:00"
 slug: website-fingerprinting-internet-scale
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf (live) on 2026-08-08
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -77,6 +77,7 @@ Jan Pennekamp
 , Klaus Wehrle
 z
 , and Thomas Engel
+
 
 University of Luxembourg (LU),
 y
@@ -1650,8 +1651,8 @@ TLS recordsTCP packetsRecord 1 *Packet 2Tor cellsPacket 3Packet 1Cell 3Cell 2Cel
 
 --- page 14 ---
 
-Dý†ýMaÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³
-M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+Dý†ýMaÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+·
 
 --- page 15 ---
 
@@ -2182,8 +2183,7 @@ Oäcð¤_é²Uü°!æB•Ù½„Esq2††I3»*«X­˜ä¥C?Óî—çUx¥¬Šœ�
 
 --- page 22 ---
 
-$ê
-Y¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
+$êY¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
 
 --- page 23 ---
 
@@ -2203,8 +2203,7 @@ b
 
 --- page 24 ---
 
-$ê
-Y¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
+$êY¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
 
 --- page 25 ---
 
@@ -2230,8 +2229,7 @@ b
 
 --- page 27 ---
 
-$ê
-Y¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
+$êY¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
 
 --- page 28 ---
 
@@ -2263,8 +2261,7 @@ Oäcð¤_é²Uü°!æB•Ù½„Esq2††I3»*«X­˜ä¥C?Óî—çUx¥¬Šœ�
 
 --- page 31 ---
 
-$ê
-Y¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
+$êY¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
 
 --- page 32 ---
 
@@ -2286,8 +2283,7 @@ b
 
 --- page 33 ---
 
-$ê
-Y¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
+$êY¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
 
 --- page 34 ---
 
@@ -2315,8 +2311,7 @@ b
 
 --- page 36 ---
 
-$ê
-Y¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
+$êY¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
 
 --- page 37 ---
 
@@ -3084,20 +3079,16 @@ dataset
 
 --- page 46 ---
 
-á‰M¿›†¦Rå»þÎ¢£§˜
-ôªTÑ2ºà_çÞ×
+á‰M¿›†¦Rå»þÎ¢£§˜ôªTÑ2ºà_çÞ×
 
 --- page 47 ---
 
-sžN7ÑÝñ³®p…EÏäôCÔVÕ÷¬Öñ^½£¼è.»]¯	N˜^dÄùÏ‘h¢
-ohŸWxUXñŒgfLNþi«A7-ãöh‡"øq¶'COàž� ý‘%xP3
-�˜ÄB>{—z¸g´}È¬>¿:§=-NÑ:º#‰æä7SôFõF"-ß³¿ÓMIÐ�›—>óLëvLþ=æÁRÚõöœgmú@.X–,6E�ñ¢Š»¢›‡ÁÍŒäG9æÈoEû�§Ç;»îƒ_�
+sžN7ÑÝñ³®p…EÏäôCÔVÕ÷¬Öñ^½£¼è.»]¯	N˜^dÄùÏ‘h¢ohŸWxUXñŒgfLNþi«A7-ãöh‡"øq¶'COàž� ý‘%xP3�˜ÄB>{—z¸g´}È¬>¿:§=-NÑ:º#‰æä7SôFõF"-ß³¿ÓMIÐ�›—>óLëvLþ=æÁRÚõöœgmú@.X–,6E�ñ¢Š»¢›‡ÁÍŒäG9æÈoEû�§Ç;»îƒ_�
 
 --- page 48 ---
 
 YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
-½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
+ $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
 
 --- page 49 ---
 

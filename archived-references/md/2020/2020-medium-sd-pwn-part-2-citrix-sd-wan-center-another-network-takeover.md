@@ -5,9 +5,9 @@ resource: "https://medium.com/realmodelabs/sd-pwn-part-2-citrix-sd-wan-center-an
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:47+00:00"
+  at: "2026-08-10T15:32:30+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/realmodelabs/sd-pwn-part-2-citrix-sd-wan-center-another-network-takeover-a9c950a1a27c"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2020.md:28"
 commit: ""
-content_sha256: f96b6794362d86dd90e4a745ef429875894e2e200fda03136f09b32ff4421626
+content_sha256: c80299170a8efb53fad35e88f8c99b4ace35511e6ef8622991292b5d97618a18
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://medium.com/realmodelabs/sd-pwn-part-2-citrix-sd-wan-cente
 published: 2020-11-15
 publisher: Medium
 publisher_english: ""
-raw_sha256: d555583c558ac52a49601b21dc3780cbfa72eaa484a6296cab1d4fd4e7bc9593
+raw_sha256: d7df969814ffd4a0bb545490f00beb83db9b09e80666ffc27c28d23da8260448
 retrieved_from: "https://medium.com/realmodelabs/sd-pwn-part-2-citrix-sd-wan-center-another-network-takeover-a9c950a1a27c"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:47+00:00"
+retrieved_utc: "2026-08-10T15:32:30+00:00"
 slug: 2020-medium-sd-pwn-part-2-citrix-sd-wan-center-another-network-takeover
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2020-11-15
 - Original: <https://medium.com/realmodelabs/sd-pwn-part-2-citrix-sd-wan-center-another-network-takeover-a9c950a1a27c>
-- Preserved from: https://medium.com/realmodelabs/sd-pwn-part-2-citrix-sd-wan-center-another-network-takeover-a9c950a1a27c (live) on 2026-08-09
+- Preserved from: https://medium.com/realmodelabs/sd-pwn-part-2-citrix-sd-wan-center-another-network-takeover-a9c950a1a27c (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity17/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:11+00:00"
+  at: "2026-08-10T16:04:39+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/schwenk"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:109"
+  - "2016-17.md:103"
 commit: ""
 content_sha256: 2d42465b626eedabdda38155f379f15325549e9b3a0038de070cdaec527a3ae0
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity17/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 2ae468b42c72220640c72bb63d1a66c044ecfe5c420e55ef47fc2d7a2793ce46
+raw_sha256: e9a407b95ebe40efae28703ede8896408908135d706353529e965996530c410a
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/schwenk"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:11+00:00"
+retrieved_utc: "2026-08-10T16:04:39+00:00"
 slug: usenix-org-same-origin-policy-evaluation-modern-browsers
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/schwenk>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/schwenk (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/schwenk (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

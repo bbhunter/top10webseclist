@@ -5,9 +5,9 @@ resource: "https://mattermost.com/blog/securing-xml-implementations-across-the-w
 tags: [article, webseclist-reference, en, mattermost-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:45+00:00"
+  at: "2026-08-10T15:31:18+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://mattermost.com/blog/securing-xml-implementations-across-the-web/"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2021.md:40"
 commit: ""
-content_sha256: d8abedb00e8502bc56380d2a504d93c94bd6631d42b2474f77d684275f5756a6
+content_sha256: 3170056664e637d7fee826cc8aaee1757e9a147ed0aaa67dc6f01b835aa27014
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://mattermost.com/blog/securing-xml-implementations-across-t
 published: 2021-07-28
 publisher: Mattermost.com
 publisher_english: ""
-raw_sha256: 1e13f1a1a04f940aef495d176e438f85cf4f90f421d310d437c62f3b5233f0d7
+raw_sha256: 7e95edca6026a2d093d3a1360dc42facb326528d3bae79b3514cdf0c120d2489
 retrieved_from: "https://mattermost.com/blog/securing-xml-implementations-across-the-web/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:45+00:00"
+retrieved_utc: "2026-08-10T15:31:18+00:00"
 slug: 2021-mattermost-com-securing-xml-implementations-across-web
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2021-07-28
 - Original: <https://mattermost.com/blog/securing-xml-implementations-across-the-web/>
-- Preserved from: https://mattermost.com/blog/securing-xml-implementations-across-the-web/ (live) on 2026-08-09
+- Preserved from: https://mattermost.com/blog/securing-xml-implementations-across-the-web/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

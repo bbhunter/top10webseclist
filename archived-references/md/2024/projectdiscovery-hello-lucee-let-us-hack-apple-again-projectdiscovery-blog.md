@@ -5,9 +5,9 @@ resource: "https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-again"
 tags: [article, webseclist-reference, en, projectdiscovery]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:51+00:00"
+  at: "2026-08-10T15:37:04+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-again"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:101"
 commit: ""
-content_sha256: 2513767ed3e205c8d97ae538cea684f4ac32814b184bf1962a13bcddb480e2aa
+content_sha256: 87ec8e7a99a99dd38dd0668126a832e2f59898ad9213be7d2ecbe5395893934d
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-ag
 published: ""
 publisher: ProjectDiscovery
 publisher_english: ""
-raw_sha256: 10c8b851cfb70befca8f5a7a96f64035a1ffd51be814b47108a405d61f123504
+raw_sha256: 71f5d6bad00d5a14c7a0ef5e55bb970ec29af09252deb8127ddd1ec27b6e2f6b
 retrieved_from: "https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-again"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:51+00:00"
+retrieved_utc: "2026-08-10T15:37:04+00:00"
 slug: projectdiscovery-hello-lucee-let-us-hack-apple-again-projectdiscovery-blog
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-again>
-- Preserved from: https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-again (live) on 2026-08-09
+- Preserved from: https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-again (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

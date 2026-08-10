@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/woot12/workshop-program/presentatio
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:17+00:00"
+  at: "2026-08-10T16:05:44+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/woot12/workshop-program/presentation/gilad"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2012.md:83"
+  - "2012.md:77"
 commit: ""
-content_sha256: af97d4733b2a4733c675e61ced2b158feb99499247bf064b1cff091756d4de5a
+content_sha256: 01da4902b27ab739845c42a0fbdc7b7fad0c4c4387fe4b7445ab455f27ac2203
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/woot12/workshop-program/present
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: caf8e22cebec3f96cce7c6b7684e2b1c714849751dcb9c9fa7ed8775f1815573
+raw_sha256: 10745971909915006ad3b684e58ed05749c0995e04f4cbca3091648c38d427c5
 retrieved_from: "https://www.usenix.org/conference/woot12/workshop-program/presentation/gilad"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:17+00:00"
+retrieved_utc: "2026-08-10T16:05:44+00:00"
 slug: usenix-org-off-path-attacking-web
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/woot12/workshop-program/presentation/gilad>
-- Preserved from: https://www.usenix.org/conference/woot12/workshop-program/presentation/gilad (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/woot12/workshop-program/presentation/gilad (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

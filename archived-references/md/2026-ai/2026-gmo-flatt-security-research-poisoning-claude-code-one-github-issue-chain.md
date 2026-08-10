@@ -5,9 +5,9 @@ resource: "https://flatt.tech/research/posts/poisoning-claude-code-one-github-is
 tags: [article, webseclist-reference, en, gmo-flatt-security-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:21+00:00"
+  at: "2026-08-10T15:10:06+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://flatt.tech/research/posts/poisoning-claude-code-one-github-issue-to-break-the-supply-chain/"
@@ -19,9 +19,9 @@ authors:
   - RyotaK
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:101"
+  - "2026-ai.md:79"
 commit: ""
-content_sha256: ac2e5f4eefbdbb249be970d29decbc1f348dc70fd2d08fb87d74806240bf1e36
+content_sha256: ca0b8e616a0d6b882b548303cc8907c2126e0ae1f5c657ef968520bc01068d83
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +34,7 @@ publisher_english: ""
 raw_sha256: 163f6f5c78b7381aaccd1375e6e66f41fa36aab2415992b352f770945bb24aa5
 retrieved_from: "https://flatt.tech/research/posts/poisoning-claude-code-one-github-issue-to-break-the-supply-chain/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:21+00:00"
+retrieved_utc: "2026-08-10T15:10:06+00:00"
 slug: 2026-gmo-flatt-security-research-poisoning-claude-code-one-github-issue-chain
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2026-06-01
 - Original: <https://flatt.tech/research/posts/poisoning-claude-code-one-github-issue-to-break-the-supply-chain/>
-- Preserved from: https://flatt.tech/research/posts/poisoning-claude-code-one-github-issue-to-break-the-supply-chain/ (live) on 2026-08-08
+- Preserved from: https://flatt.tech/research/posts/poisoning-claude-code-one-github-issue-to-break-the-supply-chain/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://www.sonarsource.com/blog/zimbra-mail-stealing-clear-text-cred
 tags: [article, webseclist-reference, en, sonar]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:50+00:00"
+  at: "2026-08-10T16:00:37+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.sonarsource.com/blog/zimbra-mail-stealing-clear-text-credentials-via-memcache-injection/"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2022.md:7"
 commit: ""
-content_sha256: 6d1e35e661f3a83a14b21649e375a032441303a6dacfbcf2f3a9071e6c4ba21d
+content_sha256: 1f02e6fd73eb42a1b21eacd13bfdaf810b52a8fdfbf1d7160d0789be421e56b1
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://www.sonarsource.com/blog/zimbra-mail-stealing-clear-text-
 published: 2022-06-14
 publisher: Sonar
 publisher_english: ""
-raw_sha256: e019879a3dc67a84a50adffd35e647ab1e8c8dd7a3fd9b5a88ececd63d3594e6
+raw_sha256: 71d80e67fdbc6a0cc116ebf104a71e4060c38cbb885b62bfd98f4f067ac68dc8
 retrieved_from: "https://www.sonarsource.com/blog/zimbra-mail-stealing-clear-text-credentials-via-memcache-injection/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:50+00:00"
+retrieved_utc: "2026-08-10T16:00:37+00:00"
 slug: 2022-sonar-zimbra-email-stealing-clear-text-credentials-memcache-injection
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2022-06-14
 - Original: <https://www.sonarsource.com/blog/zimbra-mail-stealing-clear-text-credentials-via-memcache-injection/>
-- Preserved from: https://www.sonarsource.com/blog/zimbra-mail-stealing-clear-text-credentials-via-memcache-injection/ (live) on 2026-08-09
+- Preserved from: https://www.sonarsource.com/blog/zimbra-mail-stealing-clear-text-credentials-via-memcache-injection/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

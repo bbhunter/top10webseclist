@@ -5,9 +5,9 @@ resource: "https://www.ezequiel.tech/p/36k-google-app-engine-rce.html"
 tags: [article, webseclist-reference, en, blogger]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:10:23+00:00"
+  at: "2026-08-10T15:09:49+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ezequiel.tech/p/36k-google-app-engine-rce.html"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2018.md:37"
 commit: ""
-content_sha256: 2d3f2d4c794a5b9d64ee5348f213c9bb3c346cf1acc282ad1affb43f4c5a6bf5
+content_sha256: 18e2458897423ff1a1eae85f92ed7426fd45ffbafb4852cc2d468ba3a0d5aa09
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://www.ezequiel.tech/p/36k-google-app-engine-rce.html"
 published: 2018-12-11
 publisher: Blogger
 publisher_english: ""
-raw_sha256: 9502e4f721c9d55434bba83a6588a7680933c3a4c8177066c7fd4d298aa51664
+raw_sha256: 044e8cb348661dcc5d4767c8556f7c8cb47f2ad1e8662fd4c71b02ccf1be4bb2
 retrieved_from: "https://www.ezequiel.tech/p/36k-google-app-engine-rce.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:10:23+00:00"
+retrieved_utc: "2026-08-10T15:09:49+00:00"
 slug: 2018-blogger-36k-google-app-engine-rce
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2018-12-11
 - Original: <https://www.ezequiel.tech/p/36k-google-app-engine-rce.html>
-- Preserved from: https://www.ezequiel.tech/p/36k-google-app-engine-rce.html (live) on 2026-08-09
+- Preserved from: https://www.ezequiel.tech/p/36k-google-app-engine-rce.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -73,7 +73,6 @@ page going offline. To read the original, follow the link above.
 
  *You can try an example of a few concepts I mention in this [Google App Engine application](http://save-the-expanse.appspot.com/). You can find the source code of that application, the source code of the gRPC C++ client, and every Protocol Buffer definition I got in [this GitHub repository](https://github.com/ezequielpereira/GAE-RCE).*
 
- 
  Some time ago, I noticed every [Google App Engine](https://cloud.google.com/appengine/) (GAE) application replied to every HTTP request with a "X-Cloud-Trace-Context" header, so I assumed any website returning that header is probably running on GAE.
  Thanks to that, I learned "[appengine.google.com](http://appengine.google.com/)" itself runs on GAE, but it can perform some actions that cannot be done anywhere else and common user applications cannot perform, so I tried to discover how was it able to do those actions.
  Obviously, it has to make use of some API, interface or something only available to applications ran by Google itself, but maybe there was a way to access them, and I looked for that.

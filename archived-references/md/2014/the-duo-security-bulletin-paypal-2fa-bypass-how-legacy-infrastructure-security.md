@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/https://www.duosecurity.co
 tags: [article, webseclist-reference, en, the-duo-security-bulletin]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:10:01+00:00"
+  at: "2026-08-10T15:09:20+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security"
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20160403035045/https://www.duosecurit
 published: ""
 publisher: The Duo Security Bulletin
 publisher_english: ""
-raw_sha256: e1c2722a22bfe2f2c2584b16f084209edafae058c3292fc472a0fd7202f3c0f1
+raw_sha256: 0d8fd4a8fe02455e7cac7a1d1335f2e04d530a6c3cbbd20e45c967f443529d3b
 retrieved_from: "https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:10:01+00:00"
+retrieved_utc: "2026-08-10T15:09:20+00:00"
 slug: the-duo-security-bulletin-paypal-2fa-bypass-how-legacy-infrastructure-security
 snapshot: 20160403035045
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security>
 - Current location: <https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security>
-- Preserved from: https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 

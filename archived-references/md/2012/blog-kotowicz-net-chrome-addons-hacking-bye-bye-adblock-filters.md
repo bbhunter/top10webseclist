@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2
 tags: [article, webseclist-reference, blog-kotowicz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:05:23+00:00"
+  at: "2026-08-10T15:04:48+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/03/chrome-addons-hacking-bye-bye-adblock.html"
@@ -22,7 +22,7 @@ canonical_url: "https://web.archive.org/web/20171001104006/http://blog.kotowicz.
 cited_by:
   - "2012.md:7"
 commit: ""
-content_sha256: 8cb048150552b89581866d9fb11c5d65b86a4c5cdc1056b3b3f69c4738ee45e8
+content_sha256: d5f1879aa33ca7437c8a51e529d6dcb7eb5d10ff4b50a514e7ac89411a852bbd
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.n
 published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
-raw_sha256: 21fe0eb881fdafd3c937989d71c936ea15e540d564d35dd0b08e45a925a401cf
+raw_sha256: ef03e6889f4e83b6b0657b56466be2008c145ce62888fa5cbf22b04e06d62e62
 retrieved_from: "https://web.archive.org/web/20171001104006/http://blog.kotowicz.net/2012/03/chrome-addons-hacking-bye-bye-adblock.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:05:23+00:00"
+retrieved_utc: "2026-08-10T15:04:48+00:00"
 slug: blog-kotowicz-net-chrome-addons-hacking-bye-bye-adblock-filters
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/03/chrome-addons-hacking-bye-bye-adblock.html>
 - Current location: <https://web.archive.org/web/20171001104006/http://blog.kotowicz.net/2012/03/chrome-addons-hacking-bye-bye-adblock.html>
-- Preserved from: https://web.archive.org/web/20171001104006/http://blog.kotowicz.net/2012/03/chrome-addons-hacking-bye-bye-adblock.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20171001104006/http://blog.kotowicz.net/2012/03/chrome-addons-hacking-bye-bye-adblock.html (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 
@@ -69,7 +69,6 @@ page going offline. To read the original, follow the link above.
  Continuing the Chrome extension hacking (see [part 1](https://web.archive.org/web/20171001104006/http://blog.kotowicz.net/2012/02/intro-to-chrome-addons-hacking.html) and [2](https://web.archive.org/web/20171001104006/http://blog.kotowicz.net/2012/02/chrome-addons-hacking-want-xss-on.html)), this time I'd like to draw you attention to the oh-so-popular [AdBlock](https://web.archive.org/web/20171001104006/https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom) extension. It has **over a million users**, is being actively maintained and is a piece of a great software (heck, even I use it!). However - due to how Chrome extensions work in general it is still **relatively easy to bypass** it and display some ads. Let me describe two distinct vulnerabilities I've discovered. They are both exploitable in the newest 2.5.22 version.
 
  **tl;dr: **Chrome AdBlock 2.5.22 bypasses, demo [here](https://web.archive.org/web/20171001104006/http://koto.github.com/blog-kotowicz-net-examples/chrome-addons/adblock/bypass.html) and [here](https://web.archive.org/web/20171001104006/http://koto.github.com/blog-kotowicz-net-examples/chrome-addons/adblock/disable.html), but I'd advise you to read on.
- 
 
 ##  Preparation
 

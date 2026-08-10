@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/saml-roulette-the-hacker-always-wins
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:39+00:00"
+  at: "2026-08-10T15:36:53+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/saml-roulette-the-hacker-always-wins"
@@ -17,9 +17,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2025.md:94"
+  - "2025.md:89"
 commit: ""
-content_sha256: bf574c93604c4ce295dde10cb814aef85aa63e633fe3fe2e24d83eecb64bd4c9
+content_sha256: 5972d717af3c64de2283fa672b4be2809123e1eac8192bc3d5c5f6d95747f782
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/saml-roulette-the-hacker-always-
 published: 2025-03-18
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: f455ae86a8beb1be3abbcfb7abe1aef8819ff5a25341fa901ff81d4fc7982228
+raw_sha256: 620336826d09ddfa3b5e7cff1bc3b661c6bc4bef9e2186963f108a36827613fa
 retrieved_from: "https://portswigger.net/research/saml-roulette-the-hacker-always-wins"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:39+00:00"
+retrieved_utc: "2026-08-10T15:36:53+00:00"
 slug: 2025-portswigger-research-saml-roulette-hacker-always-wins
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2025-03-18
 - Original: <https://portswigger.net/research/saml-roulette-the-hacker-always-wins>
-- Preserved from: https://portswigger.net/research/saml-roulette-the-hacker-always-wins (live) on 2026-08-09
+- Preserved from: https://portswigger.net/research/saml-roulette-the-hacker-always-wins (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

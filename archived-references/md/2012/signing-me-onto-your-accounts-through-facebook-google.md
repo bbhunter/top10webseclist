@@ -5,9 +5,9 @@ resource: "https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:52:29+00:00"
+  at: "2026-08-10T15:27:57+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2012.md:76"
+  - "2012.md:70"
 commit: ""
 content_sha256: 977abadd5e489b8915694acf70a98498534b41b11e1bd123d4a6e1a694cdbee7
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: a07d457722bc785b4687b08ba2f2c45922317d5b0e4d09504dc18a5b7465a819
 retrieved_from: "https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:52:29+00:00"
+retrieved_utc: "2026-08-10T15:27:57+00:00"
 slug: signing-me-onto-your-accounts-through-facebook-google
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf (live) on 2026-08-08
+- Preserved from: https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -210,21 +210,14 @@ DOI 10.1109/SP.2012.30
 --- page 9 ---
 
 þý8ZJ²ÄCR6N%GkQÎú;XC&s=gR>*'‚',TzM.TG8
-5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³
-M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+·
 
 --- page 10 ---
 
 ':Ly%#%'2#2'E#E'¥''9?:9&"%&8/78-""--/?¸É@> / /.!.!"988''&h??+ 0`p°Ààð
-¸ú@D S d  2" ""¸Ã¶@A–!kŠ++ö]ô]ý]qä]?<<<?<<<99‡.+‡}Ä‡.+‡}ÄíÀíÀíÀíÀíÀíÀíÀíÀY10]]CX² /]Y]]]]qCX¶/@U	¸ÿô´U	¸ÿô´
-
-U	¸ÿà´U	¸ÿØ@U	
-
-U
-U
-¸ÿþ´U¸ÿì´
-
-U¸ÿÜ´U¸ÿØ@	U
+¸ú@D S d  2" ""¸Ã¶@A–!kŠ++ö]ô]ý]qä]?<<<?<<<99‡.+‡}Ä‡.+‡}ÄíÀíÀíÀíÀíÀíÀíÀíÀY10]]CX² /]Y]]]]qCX¶/@U	¸ÿô´U	¸ÿô´U	¸ÿà´U	¸ÿØ@U	U
+U¸ÿþ´U¸ÿì´U¸ÿÜ´U¸ÿØ@	U
 
 --- page 11 ---
 
@@ -233,13 +226,11 @@ U¸ÿÜ´U¸ÿØ@	U
 --- page 12 ---
 
 %'G&@?0&&¸b@	-,
-8­++<+öq+í+Ä<+À?<íí?9/íí<íþ<‡.++}Ä‡<Ä+ô]<]/zø/äzð/äzø/ä.íõ].íõ]10]+]qr]CX@"
-?"?9+++Y676673#654&&'!726767&&'7!#.#–™.Kz
+8­++<+öq+í+Ä<+À?<íí?9/íí<íþ<‡.++}Ä‡<Ä+ô]<]/zø/äzð/äzø/ä.íõ].íõ]10]+]qr]CX@"?"?9+++Y676673#654&&'!726767&&'7!#.#–™.Kz
 
 --- page 13 ---
 
-÷ì�$KKâö°8’+nïhð÷OåCÝíøŸðŸæ�üš_oÄÿ„ÿ4äÕ�Ï«@.~ýÛgßwlßÇîûãä ö}_6Øj~Ú�.ØÛ„‹O¸FÀ&>Ž¦;ëÜLWëpþºÓËúx5þº’KIçæœm“'HÓâƒöü?øOóGþM/·áÿÂš?òkFÑõE¢÷Ö þ®Í×™
-f›‰c>“¹ð<Tí¯¢nµõY^´�J²/Ú,†î—Fç;S6y�<R�ù~^zŸ–~zþ§Ëÿ”åå¿Ë?Åd‘nû>÷zCÙ¦É$˜ŽæóÓà 6îüØÛü¨˜ûçðŸ$/·âÂš?òi}¿þüÑÿ“VíwÕªÜÿN¶Û¡ôõ¼7FÜæLí2â+í©�òúv>[¨ªÈÀ.ït–ºæºtlËkû�}ª>¬ø7¯Aâ×§m<Q÷xêÉ‡zôK‹_ÃO
+÷ì�$KKâö°8’+nïhð÷OåCÝíøŸðŸæ�üš_oÄÿ„ÿ4äÕ�Ï«@.~ýÛgßwlßÇîûãä ö}_6Øj~Ú�.ØÛ„‹O¸FÀ&>Ž¦;ëÜLWëpþºÓËúx5þº’KIçæœm“'HÓâƒöü?øOóGþM/·áÿÂš?òkFÑõE¢÷Ö þ®Í×™f›‰c>“¹ð<Tí¯¢nµõY^´�J²/Ú,†î—Fç;S6y�<R�ù~^zŸ–~zþ§Ëÿ”åå¿Ë?Åd‘nû>÷zCÙ¦É$˜ŽæóÓà 6îüØÛü¨˜ûçðŸ$/·âÂš?òi}¿þüÑÿ“VíwÕªÜÿN¶Û¡ôõ¼7FÜæLí2â+í©�òúv>[¨ªÈÀ.ït–ºæºtlËkû�}ª>¬ø7¯Aâ×§m<Q÷xêÉ‡zôK‹_ÃO
 
 --- page 14 ---
 

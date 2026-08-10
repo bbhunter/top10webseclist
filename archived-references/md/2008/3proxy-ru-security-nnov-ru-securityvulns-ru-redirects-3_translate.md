@@ -2,12 +2,12 @@
 type: Article
 title: "Óâåäîìëåíèå î áåçîïàñíîñòè: New vulnerabilities in CapCC for WordPress"
 resource: "https://web.archive.org/web/20090212215719/http://securityvulns.ru/Vdocument24.html"
-tags: [article, webseclist-reference, ru, securityvulns-ru]
+tags: [article, webseclist-reference, securityvulns-ru]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:26+00:00"
+  at: "2026-08-10T15:58:51+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20090212215719/http://securityvulns.ru/Vdocument24.html"
@@ -26,16 +26,16 @@ content_sha256: c2b36dfa0f3e920330732e72744662600a03a0d9b99f8dffa37f5ee5e68539c5
 depth: full
 depth_reason: default
 kind: article
-language: ru
+language: ""
 licence: unknown
 original_url: "https://web.archive.org/web/20090212215719/http://securityvulns.ru/Vdocument24.html"
 published: ""
 publisher: securityvulns.ru
 publisher_english: ""
-raw_sha256: 6e15c270a09646b408c0d19dd2c2ff4bc721f22f7b7445cffa7884228c070e90
+raw_sha256: bc9e6aa75f10199faa2466b71900c6e28e9be890e17f5bed23c8a3dcf8f3ee49
 retrieved_from: "https://web.archive.org/web/20090212215719/http://securityvulns.ru/Vdocument24.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:26+00:00"
+retrieved_utc: "2026-08-10T15:58:51+00:00"
 slug: 3proxy-ru-security-nnov-ru-securityvulns-ru-redirects-3_translate
 snapshot: 20090212215719
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: 3proxy-ru-security-nnov-ru-securityvulns-ru-redirects-3.md
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20090212215719/http://securityvulns.ru/Vdocument24.html>
-- Preserved from: https://web.archive.org/web/20090212215719/http://securityvulns.ru/Vdocument24.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20090212215719/http://securityvulns.ru/Vdocument24.html (live) on 2026-08-10
 - Capture timestamp: 20090212215719
 - Licence: unknown
 

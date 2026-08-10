@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity15/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:03+00:00"
+  at: "2026-08-10T16:04:25+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/zheng"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2015.md:63"
+  - "2015.md:59"
 commit: ""
 content_sha256: 96b7c5ea313928d86b7d208a87c0062ccb1f21631b930ed336df2676ac14d029
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity15/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 045d513d0207317d86065a5c96c465f64ec9f1270f21fa5e87d63976d8f3a2fe
+raw_sha256: f3183511dd8912ace3281d474d99e392e2066fbdb7c69ff7faa09b080e9bccb8
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/zheng"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:03+00:00"
+retrieved_utc: "2026-08-10T16:04:25+00:00"
 slug: usenix-org-cookies-lack-integrity-real-world-implications
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/zheng>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/zheng (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/zheng (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

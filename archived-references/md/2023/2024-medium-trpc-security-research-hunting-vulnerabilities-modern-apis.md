@@ -5,9 +5,9 @@ resource: "https://medium.com/@LogicalHunter/trpc-security-research-hunting-for-
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:34:42+00:00"
+  at: "2026-08-10T15:31:55+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@LogicalHunter/trpc-security-research-hunting-for-vulnerabilities-in-modern-apis-b0d38e06fa71"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:72"
 commit: ""
-content_sha256: 9a4d432f441f66c7f0b81e8528b573d84353410b679352e89b8ffa9c2c0862ba
+content_sha256: 4b92191d5ab244dec7e120d80ef7be4347c2ab07b2de28c25ea73961910dfaaa
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://medium.com/@LogicalHunter/trpc-security-research-hunting-
 published: 2024-01-12
 publisher: Medium
 publisher_english: ""
-raw_sha256: d2231682b8ccfb83b609952f4eb1537ba9e1cc5c0754945fa940beaece89f133
+raw_sha256: e69a6ab769d19e370e62ce792bec7f0e3dc022b9d4feee0f2d120d00a2796c7a
 retrieved_from: "https://medium.com/@LogicalHunter/trpc-security-research-hunting-for-vulnerabilities-in-modern-apis-b0d38e06fa71"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:34:42+00:00"
+retrieved_utc: "2026-08-10T15:31:55+00:00"
 slug: 2024-medium-trpc-security-research-hunting-vulnerabilities-modern-apis
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2024-01-12
 - Original: <https://medium.com/@LogicalHunter/trpc-security-research-hunting-for-vulnerabilities-in-modern-apis-b0d38e06fa71>
-- Preserved from: https://medium.com/@LogicalHunter/trpc-security-research-hunting-for-vulnerabilities-in-modern-apis-b0d38e06fa71 (live) on 2026-08-09
+- Preserved from: https://medium.com/@LogicalHunter/trpc-security-research-hunting-for-vulnerabilities-in-modern-apis-b0d38e06fa71 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

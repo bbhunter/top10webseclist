@@ -5,9 +5,9 @@ resource: "https://flatt.tech/research/posts/remote-command-execution-in-google-
 tags: [article, webseclist-reference, en, gmo-flatt-security-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:22+00:00"
+  at: "2026-08-10T15:10:06+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://flatt.tech/research/posts/remote-command-execution-in-google-cloud-with-single-directory-deletion/"
@@ -19,9 +19,9 @@ authors:
   - RyotaK
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:77"
+  - "2026-ai.md:55"
 commit: ""
-content_sha256: a2a001b1dd51b3e61f0f46894f93657a997cdceb577177891e242cd960901a3d
+content_sha256: 8a079893dee730b1596950e8a4e3b2c8f07c2130fed190af92ff2634819beed4
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +34,7 @@ publisher_english: ""
 raw_sha256: 1af7aa460c27a32b8aff9bcd3f628bad664c5754c996f8e26165befa3a64e394
 retrieved_from: "https://flatt.tech/research/posts/remote-command-execution-in-google-cloud-with-single-directory-deletion/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:22+00:00"
+retrieved_utc: "2026-08-10T15:10:06+00:00"
 slug: 2026-gmo-flatt-security-research-remote-command-execution-google-cloud-deletion
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2026-03-23
 - Original: <https://flatt.tech/research/posts/remote-command-execution-in-google-cloud-with-single-directory-deletion/>
-- Preserved from: https://flatt.tech/research/posts/remote-command-execution-in-google-cloud-with-single-directory-deletion/ (live) on 2026-08-08
+- Preserved from: https://flatt.tech/research/posts/remote-command-execution-in-google-cloud-with-single-directory-deletion/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

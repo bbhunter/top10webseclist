@@ -5,9 +5,9 @@ resource: "https://www.paulosyibelo.com/2024/02/cross-window-forgery-web-attack-
 tags: [article, webseclist-reference, en, evil-blog]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:37:34+00:00"
+  at: "2026-08-10T15:35:52+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.paulosyibelo.com/2024/02/cross-window-forgery-web-attack-vector.html?m=1"
@@ -30,10 +30,10 @@ original_url: "https://www.paulosyibelo.com/2024/02/cross-window-forgery-web-att
 published: ""
 publisher: evil.blog
 publisher_english: ""
-raw_sha256: 7f2c94ff8d299cb059f8c4bcc792dc350ec103a1c86db7a2b0cd2966a4a5013e
+raw_sha256: 956c9b6073d604831dcce8d2b2864c6b66b67c481a37fcf97e2fd07f867468f0
 retrieved_from: "https://www.evil.blog/2024/02/cross-window-forgery-web-attack-vector.html?m=1"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:37:34+00:00"
+retrieved_utc: "2026-08-10T15:35:52+00:00"
 slug: evil-blog-cross-window-forgery-new-class-web-attack
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.paulosyibelo.com/2024/02/cross-window-forgery-web-attack-vector.html?m=1>
 - Current location: <https://www.evil.blog/2024/02/cross-window-forgery-web-attack-vector.html?m=1>
-- Preserved from: https://www.evil.blog/2024/02/cross-window-forgery-web-attack-vector.html?m=1 (live) on 2026-08-09
+- Preserved from: https://www.evil.blog/2024/02/cross-window-forgery-web-attack-vector.html?m=1 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

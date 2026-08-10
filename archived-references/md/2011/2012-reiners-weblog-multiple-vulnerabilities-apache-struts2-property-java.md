@@ -5,9 +5,9 @@ resource: "https://websec.wordpress.com/2012/01/04/multiple-vulnerabilities-in-a
 tags: [article, webseclist-reference, en, reiners-weblog]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:23+00:00"
+  at: "2026-08-10T16:06:13+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://websec.wordpress.com/2012/01/04/multiple-vulnerabilities-in-apache-struts2-and-property-oriented-programming-with-java/"
@@ -19,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2011.md:6"
 commit: ""
-content_sha256: 8bb0c16d039406754ab10675eb8959234ab3db451d90d3b141f1d62a46d6ba5b
+content_sha256: a6b519f7f4f9e4287aec85f901e3fef8c3035278afa32ccc3521ab36b22b8680
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://websec.wordpress.com/2012/01/04/multiple-vulnerabilities-
 published: 2012-01-04
 publisher: "Reiners' Weblog"
 publisher_english: ""
-raw_sha256: beb8d79b311a38f532cfe0ba3d0a630269a351ef2e42fadb1e66302683decbb0
+raw_sha256: a2e9ac0a3f974f5beee9adcc97715ac9cf611d7c55a60f758241e38079ead25c
 retrieved_from: "https://websec.wordpress.com/2012/01/04/multiple-vulnerabilities-in-apache-struts2-and-property-oriented-programming-with-java/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:23+00:00"
+retrieved_utc: "2026-08-10T16:06:13+00:00"
 slug: 2012-reiners-weblog-multiple-vulnerabilities-apache-struts2-property-java
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2012-01-04
 - Original: <https://websec.wordpress.com/2012/01/04/multiple-vulnerabilities-in-apache-struts2-and-property-oriented-programming-with-java/>
-- Preserved from: https://websec.wordpress.com/2012/01/04/multiple-vulnerabilities-in-apache-struts2-and-property-oriented-programming-with-java/ (live) on 2026-08-09
+- Preserved from: https://websec.wordpress.com/2012/01/04/multiple-vulnerabilities-in-apache-struts2-and-property-oriented-programming-with-java/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

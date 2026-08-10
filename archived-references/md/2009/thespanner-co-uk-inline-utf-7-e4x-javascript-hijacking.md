@@ -5,9 +5,9 @@ resource: "http://www.thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hi
 tags: [article, webseclist-reference, en, thespanner-co-uk]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:45:54+00:00"
+  at: "2026-08-10T16:01:55+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking/"
@@ -30,10 +30,10 @@ original_url: "http://www.thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascrip
 published: ""
 publisher: thespanner.co.uk
 publisher_english: ""
-raw_sha256: 9b4c51d116611e675243b7be13795ff7c666c035a4888f1f3094fa60439e1e2c
+raw_sha256: 9e35bf541c94580f54def853b7a54d1ae8e80471d63fb72fbe2a75f359d36300
 retrieved_from: "https://thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:45:54+00:00"
+retrieved_utc: "2026-08-10T16:01:55+00:00"
 slug: thespanner-co-uk-inline-utf-7-e4x-javascript-hijacking
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking/>
 - Current location: <https://thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking>
-- Preserved from: https://thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking (live) on 2026-08-09
+- Preserved from: https://thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://codewhitesec.blogspot.com/2022/06/bypassing-dotnet-serializat
 tags: [article, webseclist-reference, codewhitesec-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:08:22+00:00"
+  at: "2026-08-10T15:07:21+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://codewhitesec.blogspot.com/2022/06/bypassing-dotnet-serialization-binders.html"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2022.md:9"
 commit: ""
-content_sha256: 6d6c12839443aa58fb64992e7169a6cfb39a26fa2f901fb9a46cd98fa0a5f506
+content_sha256: 02a4e8be132fcd549df097425963d902d1ac6fceaa17b17ba9d7c309703fe82a
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://codewhitesec.blogspot.com/2022/06/bypassing-dotnet-serial
 published: ""
 publisher: codewhitesec.blogspot.com
 publisher_english: ""
-raw_sha256: 283f5ab800f1a8a2f2e95475d78d96a246d43189ff531b396dfe9b7cf5a562b7
+raw_sha256: 237bd028a13bb7c6afe70c2ba3507a268c44de9557316aff078eb034f9c98615
 retrieved_from: "https://codewhitesec.blogspot.com/2022/06/bypassing-dotnet-serialization-binders.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:08:22+00:00"
+retrieved_utc: "2026-08-10T15:07:21+00:00"
 slug: codewhitesec-blogspot-com-bypassing-net-serialization-binders
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://codewhitesec.blogspot.com/2022/06/bypassing-dotnet-serialization-binders.html>
-- Preserved from: https://codewhitesec.blogspot.com/2022/06/bypassing-dotnet-serialization-binders.html (live) on 2026-08-09
+- Preserved from: https://codewhitesec.blogspot.com/2022/06/bypassing-dotnet-serialization-binders.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -61,8 +61,6 @@ page going offline. To read the original, follow the link above.
 Serialization binders are often used to validate types specified in the serialized data to prevent the deserialization of dangerous types that can have malicious side effects with the runtime serializers such as the `BinaryFormatter`.
 
 In this blog post we'll have a look into cases where this can fail and consequently may allow to bypass validation. We'll also walk though two real-world examples of insecure serialization binders in the DevExpress framework (CVE-2022-28684) and Microsoft Exchange (CVE-2022-23277), that both allow remote code execution.
-
- 
 
 ## Introduction
 

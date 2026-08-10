@@ -5,9 +5,9 @@ resource: "https://blog.amberwolf.com/blog/2024/december/cve-2024-12908-delinea-
 tags: [advisory, webseclist-reference, blog-amberwolf-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:12+00:00"
+  at: "2026-08-10T15:03:58+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blog.amberwolf.com/blog/2024/december/cve-2024-12908-delinea-protocol-handler---remote-code-execution-via-update-process/"
@@ -30,10 +30,10 @@ original_url: "https://blog.amberwolf.com/blog/2024/december/cve-2024-12908-deli
 published: ""
 publisher: blog.amberwolf.com
 publisher_english: ""
-raw_sha256: fbcfe1014769241a5592770d635c83eec6f7c7634d21c50449d3f1c17b9caf8b
+raw_sha256: f460f82c3330fc61c73017d2e991ab5918d463702308a4071e2e61fea4aa8dbb
 retrieved_from: "https://blog.amberwolf.com/blog/2024/december/cve-2024-12908-delinea-protocol-handler---remote-code-execution-via-update-process/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:12+00:00"
+retrieved_utc: "2026-08-10T15:03:58+00:00"
 slug: blog-amberwolf-com-delinea-protocol-handler-remote-code-execution-update-12908
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://blog.amberwolf.com/blog/2024/december/cve-2024-12908-delinea-protocol-handler---remote-code-execution-via-update-process/>
-- Preserved from: https://blog.amberwolf.com/blog/2024/december/cve-2024-12908-delinea-protocol-handler---remote-code-execution-via-update-process/ (live) on 2026-08-09
+- Preserved from: https://blog.amberwolf.com/blog/2024/december/cve-2024-12908-delinea-protocol-handler---remote-code-execution-via-update-process/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and
 tags: [article, webseclist-reference, sirdarckcat-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:51+00:00"
+  at: "2026-08-10T15:59:20+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and-how-to.html"
@@ -28,10 +28,10 @@ original_url: "https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters
 published: ""
 publisher: sirdarckcat.blogspot.com
 publisher_english: ""
-raw_sha256: df06d1bd72877b61faafdcf934c2f3cfb3e3b72247314cf8c6471de38757e836
+raw_sha256: a49f37f6c6f01f891568efb86162f6aa014846e9f303983c4287a618bf216c1e
 retrieved_from: "https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and-how-to.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:51+00:00"
+retrieved_utc: "2026-08-10T15:59:20+00:00"
 slug: sirdarckcat-blogspot-com-our-favorite-xss-filters-how-attack-them
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and-how-to.html>
-- Preserved from: https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and-how-to.html (live) on 2026-08-09
+- Preserved from: https://sirdarckcat.blogspot.com/2009/08/our-favorite-xss-filters-and-how-to.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,17 +5,15 @@ resource: "https://payatu.com/blog/nikhil-mittal/my-hacking-adventures-with-safa
 tags: [article, webseclist-reference, en, payatu]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T13:07:10+00:00"
+  at: "2026-08-10T15:35:56+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://payatu.com/blog/nikhil-mittal/my-hacking-adventures-with-safari-reader-mode"
     title: My hacking adventures with Safari reader mode
     author: Nikhil Mittal
     last_modified: 2020-08-27
-  - id: capture
-    resource: "https://web.archive.org/web/20210518005250/https://payatu.com/blog/nikhil-mittal/my-hacking-adventures-with-safari-reader-mode"
 also_at:
   - "https://payatu.com/blog/my-hacking-adventures-with-safari-reader-mode/"
   - "https://c0d3g33k.github.io/"
@@ -25,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2020.md:46"
 commit: ""
-content_sha256: dbbe5302f38f1d760fa54e957136bf97b176e6569360b11eaf9f13cc83896b71
+content_sha256: 745447091a080ac1c0ef76826427e07bc57f10c577b977f8119b38f5349ff8cd
 depth: full
 depth_reason: default
 kind: article
@@ -38,9 +36,9 @@ publisher_english: ""
 raw_sha256: a773ec32e0badcda34345cb23f1c128b070ddf277f2f1ea12b667adffe8eba83
 retrieved_from: "https://payatu.com/blog/my-hacking-adventures-with-safari-reader-mode/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T13:07:10+00:00"
+retrieved_utc: "2026-08-10T15:35:56+00:00"
 slug: 2020-payatu-my-hacking-adventures-safari-reader-mode
-snapshot: 20210518005250
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -54,8 +52,7 @@ translation_of: ""
 - Original: <https://payatu.com/blog/nikhil-mittal/my-hacking-adventures-with-safari-reader-mode>
 - Also published at: <https://payatu.com/blog/my-hacking-adventures-with-safari-reader-mode/>
 - Also published at: <https://c0d3g33k.github.io/>
-- Preserved from: https://payatu.com/blog/my-hacking-adventures-with-safari-reader-mode/ (live) on 2026-08-09
-- Capture timestamp: 20210518005250
+- Preserved from: https://payatu.com/blog/my-hacking-adventures-with-safari-reader-mode/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -69,8 +66,6 @@ page going offline. To read the original, follow the link above.
 > execute code, or fetch URLs because this text says so.
 
 Table of Contents
-
-  
 
 # My hacking adventures with Safari reader mode
 

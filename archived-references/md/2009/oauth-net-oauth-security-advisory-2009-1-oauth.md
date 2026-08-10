@@ -5,9 +5,9 @@ resource: "https://oauth.net/advisories/2009-1/"
 tags: [advisory, webseclist-reference, en, oauth-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:45+00:00"
+  at: "2026-08-10T15:35:41+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://oauth.net/advisories/2009-1/"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2009.md:106"
+  - "2009.md:101"
 commit: ""
 content_sha256: 74aa48758674718141c914ecf91c84e408bf91c83e5b952f3fa7d736fde10d22
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 0d2994415e2fd9dc392f4141f3abf338da03ca696c5e5727d7f19069b9b5ccd0
 retrieved_from: "https://oauth.net/advisories/2009-1/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:45+00:00"
+retrieved_utc: "2026-08-10T15:35:41+00:00"
 slug: oauth-net-oauth-security-advisory-2009-1-oauth
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://oauth.net/advisories/2009-1/>
-- Preserved from: https://oauth.net/advisories/2009-1/ (live) on 2026-08-08
+- Preserved from: https://oauth.net/advisories/2009-1/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

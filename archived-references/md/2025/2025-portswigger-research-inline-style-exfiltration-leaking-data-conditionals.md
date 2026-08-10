@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/inline-style-exfiltration"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:35+00:00"
+  at: "2026-08-10T15:36:45+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/inline-style-exfiltration"
@@ -19,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2025.md:76"
 commit: ""
-content_sha256: c14ad281bdecf51f75fcd6157626f9dbc9b658e7c40186a74eff95d0c0981e8c
+content_sha256: ea40f237c4a9b03e10396202aa14ab8adfe9b5851913b6ba196260611bc69333
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/inline-style-exfiltration"
 published: 2025-08-26
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 1c3278f4b8450dad2f6b1b689694cdecf23e3415a556fd817c90b91abb0d518c
+raw_sha256: 6acca19ca06736cbc3e3041a360307d7a061f2992a819e8a5a322de02c2264c2
 retrieved_from: "https://portswigger.net/research/inline-style-exfiltration"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:35+00:00"
+retrieved_utc: "2026-08-10T15:36:45+00:00"
 slug: 2025-portswigger-research-inline-style-exfiltration-leaking-data-conditionals
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2025-08-26
 - Original: <https://portswigger.net/research/inline-style-exfiltration>
-- Preserved from: https://portswigger.net/research/inline-style-exfiltration (live) on 2026-08-09
+- Preserved from: https://portswigger.net/research/inline-style-exfiltration (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

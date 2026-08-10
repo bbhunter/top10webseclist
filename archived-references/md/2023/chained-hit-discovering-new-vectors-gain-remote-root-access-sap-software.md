@@ -5,9 +5,9 @@ resource: "https://i.blackhat.com/BH-US-23/Presentations/US-23-Genuer-chained-to
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:10+00:00"
+  at: "2026-08-10T15:27:26+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://i.blackhat.com/BH-US-23/Presentations/US-23-Genuer-chained-to-hit-discovering-new-vectors-to-gain-remote-and-root-access-in-sap-enterprise-software-wp.pdf"
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 958bcf58163f072c6e2b1b1f6554e6fbd3a2ec31b7d9931dbada22c83cdc826c
 retrieved_from: "https://i.blackhat.com/BH-US-23/Presentations/US-23-Genuer-chained-to-hit-discovering-new-vectors-to-gain-remote-and-root-access-in-sap-enterprise-software-wp.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:10+00:00"
+retrieved_utc: "2026-08-10T15:27:26+00:00"
 slug: chained-hit-discovering-new-vectors-gain-remote-root-access-sap-software
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-US-23/Presentations/US-23-Genuer-chained-to-hit-discovering-new-vectors-to-gain-remote-and-root-access-in-sap-enterprise-software-wp.pdf>
-- Preserved from: https://i.blackhat.com/BH-US-23/Presentations/US-23-Genuer-chained-to-hit-discovering-new-vectors-to-gain-remote-and-root-access-in-sap-enterprise-software-wp.pdf (live) on 2026-08-09
+- Preserved from: https://i.blackhat.com/BH-US-23/Presentations/US-23-Genuer-chained-to-hit-discovering-new-vectors-to-gain-remote-and-root-access-in-sap-enterprise-software-wp.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

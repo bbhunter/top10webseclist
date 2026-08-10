@@ -5,9 +5,9 @@ resource: "https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-b
 tags: [slides, webseclist-reference, en, speaker-deck]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:15+00:00"
+  at: "2026-08-10T16:00:50+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2018.md:30"
 commit: ""
-content_sha256: ebb6ee5e5e2ce237a237f666f1f457392d0d65a8b5d1f0400aa5b89f355470c2
+content_sha256: f46ccd869c5691e4434497209ede5d814f57bbc04a77fc8dc6fa3886621b8153
 depth: full
 depth_reason: default
 kind: slides
@@ -32,10 +32,10 @@ original_url: "https://speakerdeck.com/shhnjk/logically-bypassing-browser-securi
 published: 2018-10-28
 publisher: Speaker Deck
 publisher_english: ""
-raw_sha256: 598dc9d225c766ff96d0f355614b5e634e7de3ac817073653c44542bd84981d0
+raw_sha256: 720b133880b541e4c98b13ea2afa01bf0cc219acad197e7d7497b9a4e1b1cfb0
 retrieved_from: "https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:15+00:00"
+retrieved_utc: "2026-08-10T16:00:50+00:00"
 slug: 2018-speaker-deck-logically-bypassing-browser-security-boundaries
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2018-10-28
 - Original: <https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries>
-- Preserved from: https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries (live) on 2026-08-09
+- Preserved from: https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -142,85 +142,83 @@ CVE-2018-18345
 
  [ See All in Research ](https://speakerdeck.com/c/research)
 
- [計算情報学研究室（数理情報学第７研究室）2026](https://speakerdeck.com/tomohirokoana/ji-suan-qing-bao-xue-yan-jiu-shi-shu-li-qing-bao-xue-di-7yan-jiu-shi-2026)
+ [
 
- [ ![Avatar for Tomohiro](https://secure.gravatar.com/avatar/8b4c5638428027a69909080636e6e713?s=24) tomohirokoana ](https://speakerdeck.com/tomohirokoana)
+ [Fishers] DIVER OSINT CTF 2026 特化AIエージェントハーネスで挑戦するOSINT CTF
+
+ ](https://speakerdeck.com/analokmaus/fishers-diver-osint-ctf-2026-te-hua-aiezientohanesudetiao-zhan-suruosint-ctf)
+
+ [ ![Avatar for Hiroshi Y (RabotniKuma)](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTczNywicHVyIjoiYmxvYl9pZCJ9fQ==--2100b597f52e9dcf1b803a2cb9bdb3fe2c892c3c/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/bear.png) analokmaus ](https://speakerdeck.com/analokmaus)
 
  0
 
-  720
+  450
 
- [MM-OVSeg: Multimodal Optical–SAR Fusion for Open-Vocabulary Segmentation in Remote Sensing](https://speakerdeck.com/satai/mm-ovseg-multimodal-optical-sar-fusion-for-open-vocabulary-segmentation-in-remote-sensing)
+ [2025年度秋葉原ウォーカブルプロジェクト調査報告 「アキバらしいウォーカブル」とは何か](https://speakerdeck.com/izumiyama_lab/2025nian-du-diao-cha-bao-gao-akibarasiiuokaburu-tohahe-ka)
+
+ [ ![Avatar for 日本大学 都市計画研究室（泉山ゼミ）](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Njk0MzYwLCJwdXIiOiJibG9iX2lkIn19--1be62bf94d04e81397e5c1baa71e453b19f54102/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/%E3%83%AD%E3%82%B4%E5%AE%8C%E6%88%90%E7%89%88%EF%BC%BF%E8%83%8C%E6%99%AF%E9%80%8F%E6%98%8E.png) izumiyama_lab ](https://speakerdeck.com/izumiyama_lab)
+
+ 1
+
+  160
+
+ [全国町字単位空き家率推定データver1.0データ仕様](https://speakerdeck.com/microbaseinc/quan-guo-ting-zi-dan-wei-kong-kijia-lu-tui-ding-detaver1-dot-0detashi-yang)
+
+ [ ![Avatar for microbase](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzcyNDc5LCJwdXIiOiJibG9iX2lkIn19--7849ed14af29d12cda6ff9e27e86cdafc7d0bd7a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/logo_mb_microbase_logo_short.png) microbaseinc ](https://speakerdeck.com/microbaseinc)
+
+ 0
+
+  170
+
+ [IA for theory](https://speakerdeck.com/gpeyre/ia-for-theory)
+
+ [ ![Avatar for Gabriel Peyré](https://secure.gravatar.com/avatar/8f7426d5d9183245fe9b02d1e972a597?s=24) gpeyre ](https://speakerdeck.com/gpeyre)
+
+ 1
+
+  330
+
+ [National high-resolution cropland classification of Japan with agricultural census information and multi-temporal multi-modality datasets](https://speakerdeck.com/satai/national-high-resolution-cropland-classification-of-japan-with-agricultural-census-information-and-multi-temporal-multi-modality-datasets)
 
  [ ![Avatar for SatAI.challenge](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2MDUwLCJwdXIiOiJibG9iX2lkIn19--b6d6ea071912ace3f41814c723917566e73c75f5/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/image%20(2).png) satai ](https://speakerdeck.com/satai)
 
  3
 
-  110
+  410
 
- [【ローカルAI LT大会】SSE: Stable Static Embedding ー速度低下を伴わず 静的埋め込みモデルの潜在能力を引き出す Dynamic Tanh手法の提案](https://speakerdeck.com/rikkabotan7/rokaruai-ltda-hui-sse-stable-static-embedding-su-du-di-xia-woban-wazu-jing-de-mai-meip-mimoderunoqian-zai-neng-li-woyin-kichu-su-dynamic-tanhshou-fa-noti-an)
+ [Cross-Media Information Spaces and Architectures](https://speakerdeck.com/signer/cross-media-information-spaces-and-architectures)
 
- [ ![Avatar for Rikka Botan](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDE1Njc3LCJwdXIiOiJibG9iX2lkIn19--9d963851d3691454692f40cb0fea7b2d932e503b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/IMG_5580.jpeg) rikkabotan7 ](https://speakerdeck.com/rikkabotan7)
+ [ ![Avatar for Beat Signer](https://secure.gravatar.com/avatar/1135dc242dcff3b90ae46fc586ff4da8?s=24) signer ](https://speakerdeck.com/signer)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+
+ 0
+
+  330
+
+ [AGI4OPT:自然言語から数理最適化を導くエ ージェントスキル Translating Human Intent into Mathematical Optimization](https://speakerdeck.com/mickey_kubo/agi4opt-zi-ran-yan-yu-karashu-li-zui-shi-hua-wodao-kue-zientosukiru-translating-human-intent-into-mathematical-optimization)
+
+ [ ![Avatar for MIKIO KUBO](https://secure.gravatar.com/avatar/39c0e072cc6bae6da7ffea832f402263?s=24) mickey_kubo ](https://speakerdeck.com/mickey_kubo)
+
+ 0
+
+  170
+
+ [NLP colloquium: AI Safety Survey](https://speakerdeck.com/kanekomasahiro/ai-safety-survey)
+
+ [ ![Avatar for Masahiro Kaneko](https://secure.gravatar.com/avatar/afbdd43f474e8885660d8fcc3b15ed34?s=24) kanekomasahiro ](https://speakerdeck.com/kanekomasahiro)
+
+ 0
+
+  910
+
+ [議論 学術ムーブメントを成功させるために何が必要なのだろうか](https://speakerdeck.com/rmaruy/yi-lun-xue-shu-mubumentowocheng-gong-saserutamenihe-gabi-yao-nanodarouka)
+
+ [ ![Avatar for Ryuichi Maruyama](https://secure.gravatar.com/avatar/497f72d54db7bf48274d010f9ac5dcd3?s=24) rmaruy ](https://speakerdeck.com/rmaruy)
 
  0
 
   110
-
- [東京大学工学部計数工学科、計数工学特別講義の説明資料](https://speakerdeck.com/kikuzo/dong-jing-da-xue-gong-xue-bu-ji-shu-gong-xue-ke-ji-shu-gong-xue-te-bie-jiang-yi-noshuo-ming-zi-liao)
-
- [ ![Avatar for KIKUCHI Shunsuke](https://secure.gravatar.com/avatar/fccb5974b63d64636a7c90faf3bab51f?s=24) kikuzo ](https://speakerdeck.com/kikuzo)
-
- 0
-
-  590
-
- [COMETAを用いたデータ民主化運動の歴史](https://speakerdeck.com/sazimai/cometawoyong-itadetamin-zhu-hua-yun-dong-noli-shi)
-
- [ ![Avatar for Kazuya Mori](https://secure.gravatar.com/avatar/001871406e497111ee3d7f9d2112c0f2?s=24) sazimai ](https://speakerdeck.com/sazimai)
-
- 0
-
-  190
-
- [SAKURAONE:An Open Ethernet-based AI HPC System And Its Observed Workload Dynamicsin a Single-Tenant LLM Development Environment](https://speakerdeck.com/yuukit/sakuraone-an-open-ethernet-based-ai-hpc-system-and-its-observed-workload-dynamics-in-a-single-tenant-llm-development-environment)
-
- [ ![Avatar for Yuuki Tsubouchi (yuuk1)](https://secure.gravatar.com/avatar/a658ec7f1badf73819dfa501165016c1?s=24) yuukit ](https://speakerdeck.com/yuukit)
-
- 1
-
-  500
-
- [Visual SLAM未来予測 / Future Prediction in Visual SLAM](https://speakerdeck.com/koide3/future-prediction-in-visual-slam)
-
- [ ![Avatar for koide3](https://secure.gravatar.com/avatar/e19725a18fcb76076c0b3149222e66ff?s=24) koide3 ](https://speakerdeck.com/koide3)
-
- 1
-
-  830
-
- [PHTalks Bengaluru - SSRF When All Else Fails](https://speakerdeck.com/dk999/phtalks-bengaluru-ssrf-when-all-else-fails)
-
- [ ![Avatar for Debangshu Kundu](https://secure.gravatar.com/avatar/473fb6954ff02000870fda9db9d3e8cb?s=24) dk999 ](https://speakerdeck.com/dk999)
-
- 0
-
-  940
-
- [Language and AI](https://speakerdeck.com/ayaniwa/language-and-ai)
-
- [ ![Avatar for Ayana Niwa](https://secure.gravatar.com/avatar/7d5c4656c947d0905dfbc5e39f233857?s=24) ayaniwa ](https://speakerdeck.com/ayaniwa)
-
- 0
-
-  190
-
- [AIエージェント時代のLLM-jpモデルのあるべき姿](https://speakerdeck.com/k141303/aiezientoshi-dai-nollm-jpmoderunoarubekizi)
-
- [ ![Avatar for Kouta Nakayama](https://secure.gravatar.com/avatar/8236376240946d9c4868e3473d155600?s=24) k141303 ](https://speakerdeck.com/k141303)
-
- 0
-
-  550
 
  [Geometric calculations on probability manifolds from reciprocal relations in Master equations](https://speakerdeck.com/lwc2017/geometric-calculations-on-probability-manifolds-from-reciprocal-relations-in-master-equations)
 
@@ -230,83 +228,35 @@ CVE-2018-18345
 
   110
 
- [第64回CV・PRML勉強会 論文紹介：Linguistic Priors for Visual Decoupling: Towards Symmetric Vision-Brain Alignment](https://speakerdeck.com/sokikatayama/di-64hui-cvprmlmian-qiang-hui-lun-wen-shao-jie-linguistic-priors-for-visual-decoupling-towards-symmetric-vision-brain-alignment)
+ [Cross-Media Human-Information Interaction](https://speakerdeck.com/signer/cross-media-human-information-interaction)
 
- [ ![Avatar for Soki Katayama](https://secure.gravatar.com/avatar/f07c5912a741767d06c412ed6d52b531?s=24) sokikatayama ](https://speakerdeck.com/sokikatayama)
+ [ ![Avatar for Beat Signer](https://secure.gravatar.com/avatar/1135dc242dcff3b90ae46fc586ff4da8?s=24) signer ](https://speakerdeck.com/signer)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
  0
 
-  150
+  170
+
+ [2026年版中小企業白書・小規模企業白書の概要](https://speakerdeck.com/ozekinote/2026nian-ban-zhong-xiao-qi-ye-bai-shu-xiao-gui-mo-qi-ye-bai-shu-nogai-yao)
+
+ [ ![Avatar for Takashi Ozeki](https://secure.gravatar.com/avatar/b63d46343fe6537ea376cf1d644954ca?s=24) ozekinote ](https://speakerdeck.com/ozekinote)
+
+ 0
+
+  140
 
 ## Featured
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [Ruling the World: When Life Gets Gamed](https://speakerdeck.com/codingconduct/ruling-the-world-when-life-gets-gamed)
+ [How to build an LLM SEO readiness audit: a practical framework](https://speakerdeck.com/nmsamuel/how-to-build-an-llm-seo-readiness-audit-a-practical-framework)
 
- [ ![Avatar for Sebastian Deterding](https://secure.gravatar.com/avatar/9f5f8d89c1c298beb2e5d3b1e41941e2?s=24) codingconduct ](https://speakerdeck.com/codingconduct)
-
- 0
-
-  290
-
- [Become a Pro](https://speakerdeck.com/speakerdeck/become-a-pro)
-
- [ ![Avatar for Speaker Deck](https://secure.gravatar.com/avatar/828ace851b606e1206900f26459f55ad?s=24) speakerdeck ](https://speakerdeck.com/speakerdeck)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
-
- 31
-
-  6.1k
-
- [The agentic SEO stack - context over prompts](https://speakerdeck.com/schlessera/the-agentic-seo-stack-context-over-prompts)
-
- [ ![Avatar for schlessera](https://secure.gravatar.com/avatar/a686099e5d041a8825ef01d71513c2db?s=24) schlessera ](https://speakerdeck.com/schlessera)
-
- 0
-
-  860
-
- [GraphQLの誤解/rethinking-graphql](https://speakerdeck.com/sonatard/rethinking-graphql)
-
- [ ![Avatar for sonatard](https://secure.gravatar.com/avatar/3cb4e761dbdb7aebd1ffd85f752e1e3e?s=24) sonatard ](https://speakerdeck.com/sonatard)
-
- 75
-
-  12k
-
- [Rails Girls Zürich Keynote](https://speakerdeck.com/gr2m/rails-girls-zurich-keynote)
-
- [ ![Avatar for Gregor Martynus](https://secure.gravatar.com/avatar/24fc194843a71f10949be18d5a692682?s=24) gr2m ](https://speakerdeck.com/gr2m)
-
- 96
-
-  14k
-
- [Test your architecture with Archunit](https://speakerdeck.com/thirion/test-your-architecture-with-archunit)
-
- [ ![Avatar for Yoan](https://secure.gravatar.com/avatar/9489b8d6f2dbdc3e7d26b8702143b86e?s=24) thirion ](https://speakerdeck.com/thirion)
+ [ ![Avatar for Nick Samuel](https://secure.gravatar.com/avatar/b8ae5f207a0dc0e5518184aaada82d09?s=24) nmsamuel ](https://speakerdeck.com/nmsamuel)
 
  1
 
-  2.3k
-
- [From Legacy to Launchpad: Building Startup-Ready Communities](https://speakerdeck.com/dugsong/from-legacy-to-launchpad-building-startup-ready-communities)
-
- [ ![Avatar for Dug Song](https://secure.gravatar.com/avatar/d66a8b626a8a6e702319d52d8cc7c4e6?s=24) dugsong ](https://speakerdeck.com/dugsong)
-
- 0
-
-  290
-
- [ラッコキーワード サービス紹介資料](https://speakerdeck.com/rakko/introduction)
-
- [ ![Avatar for ラッコ株式会社](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjAwMTgyLCJwdXIiOiJibG9iX2lkIn19--1a675f702fe37e192521a48d72064c54472362d5/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/logo.rakkoinc_600x600.png) rakko ](https://speakerdeck.com/rakko)
-
- 1
-
-  4.2M
+  840
 
  [How to Build an AI Search Optimization Roadmap - Criteria and Steps to Take #SEOIRL](https://speakerdeck.com/aleyda/how-to-build-an-ai-search-optimization-roadmap-criteria-and-steps-to-take-number-seoirl)
 
@@ -316,31 +266,89 @@ CVE-2018-18345
 
   2.1k
 
- [Exploring the Power of Turbo Streams & Action Cable | RailsConf2023](https://speakerdeck.com/kevinliebholz/exploring-the-power-of-turbo-streams-and-action-cable)
+ [AI in Enterprises - Java and Open Source to the Rescue](https://speakerdeck.com/ivargrimstad/ai-in-enterprises-java-and-open-source-to-the-rescue)
 
- [ ![Avatar for Kevin Liebholz](https://secure.gravatar.com/avatar/7cac149f4967f1b063974d6a186251ab?s=24) kevinliebholz ](https://speakerdeck.com/kevinliebholz)
+ [ ![Avatar for ivargrimstad](https://secure.gravatar.com/avatar/b489790e1a844284d7cd1fa2cd6e021f?s=24) ivargrimstad ](https://speakerdeck.com/ivargrimstad)
 
- 37
+ 0
 
-  6.5k
+  1.4k
 
- [A Tale of Four Properties](https://speakerdeck.com/chriscoyier/a-tale-of-four-properties)
+ [Become a Pro](https://speakerdeck.com/speakerdeck/become-a-pro)
 
- [ ![Avatar for Chris Coyier](https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=24) chriscoyier ](https://speakerdeck.com/chriscoyier)
-
- 163
-
-  24k
-
- [First, design no harm](https://speakerdeck.com/axbom/first-design-no-harm)
-
- [ ![Avatar for Per Axbom](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzA4MTcsInB1ciI6ImJsb2JfaWQifX0=--3b22ae95c7f24edaeb9c2d37fdb67f05b7db6128/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/axbom-ind08b.jpg) axbom ](https://speakerdeck.com/axbom)
+ [ ![Avatar for Speaker Deck](https://secure.gravatar.com/avatar/828ace851b606e1206900f26459f55ad?s=24) speakerdeck ](https://speakerdeck.com/speakerdeck)
 
  [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
+ 31
+
+  6.2k
+
+ [Winning Ecommerce Organic Search in an AI Era - #searchnstuff2025](https://speakerdeck.com/aleyda/winning-ecommerce-organic-search-in-an-ai-era-number-searchnstuff2025)
+
+ [ ![Avatar for Aleyda Solis](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6OTIyMDAsInB1ciI6ImJsb2JfaWQifX0=--f7ae7c6a9c16b0bb4461d98502be71c2c1b38eaf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/aleyda-solis.jpg) aleyda ](https://speakerdeck.com/aleyda)
+
+ 1
+
+  2.1k
+
+ [Raft: Consensus for Rubyists](https://speakerdeck.com/vanstee/raft-consensus-for-rubyists)
+
+ [ ![Avatar for Patrick Van Stee](https://secure.gravatar.com/avatar/b6a8f005f39d23ffc930508ac9da68b9?s=24) vanstee ](https://speakerdeck.com/vanstee)
+
+ 141
+
+  7.6k
+
+ [Claude Code どこまでも/ Claude Code Everywhere](https://speakerdeck.com/nwiizo/claude-everywhere)
+
+ [ ![Avatar for nwiizo](https://secure.gravatar.com/avatar/6ed12627fec46a135f1bce5d56f3568e?s=24) nwiizo ](https://speakerdeck.com/nwiizo)
+
+ 66
+
+  57k
+
+ [Claude Code のすすめ](https://speakerdeck.com/schroneko/getting-started-with-claude-code)
+
+ [ ![Avatar for schroneko](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTUxNDM0LCJwdXIiOiJibG9iX2lkIn19--5a66980123ed6db0c0e32b13c689f4f340c46de9/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/00039-18159854.png) schroneko ](https://speakerdeck.com/schroneko)
+
+ 67
+
+  230k
+
+ [Ethics towards AI in product and experience design](https://speakerdeck.com/skipperchong/ethics-towards-ai-in-product-and-experience-design)
+
+ [ ![Avatar for Skipper Chong Warson](https://secure.gravatar.com/avatar/766b9746b59e6f09e280cd33cf4ed419?s=24) skipperchong ](https://speakerdeck.com/skipperchong)
+
  2
 
-  1.2k
+  340
+
+ [実際に使うSQLの書き方 徹底解説 / pgcon21j-tutorial](https://speakerdeck.com/soudai/pgcon21j-tutorial)
+
+ [ ![Avatar for soudai sone](https://secure.gravatar.com/avatar/88f4e84b94fe07cddbd9e6479d689192?s=24) soudai ](https://speakerdeck.com/soudai)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+
+ 201
+
+  75k
+
+ [We Are The Robots](https://speakerdeck.com/honzajavorek/we-are-the-robots)
+
+ [ ![Avatar for Honza Javorek](https://secure.gravatar.com/avatar/7b2e4bf7ecca28e530e1c421f0676c0b?s=24) honzajavorek ](https://speakerdeck.com/honzajavorek)
+
+ 0
+
+  290
+
+ [Facilitating Awesome Meetings](https://speakerdeck.com/lara/facilitating-awesome-meetings)
+
+ [ ![Avatar for Lara Hogan](https://secure.gravatar.com/avatar/245cee81a9c424266e5e401d844ea881?s=24) lara ](https://speakerdeck.com/lara)
+
+ 57
+
+  7.1k
 
 ## Transcript
 

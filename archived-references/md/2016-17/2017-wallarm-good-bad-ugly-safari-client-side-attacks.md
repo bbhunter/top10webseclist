@@ -5,9 +5,9 @@ resource: "https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-cl
 tags: [article, webseclist-reference, en, wallarm]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:01+00:00"
+  at: "2026-08-10T15:30:38+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a"
@@ -34,10 +34,10 @@ original_url: "https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-i
 published: 2017-12-14
 publisher: Wallarm
 publisher_english: ""
-raw_sha256: 247c25f03f27d364d939d49cd8ac6f582dd789b6d5783338a618eab3de3cc9f4
+raw_sha256: f6957ebb9e8102049928f8e8cef264519f2e95594313aa41b9db837576d8b6f3
 retrieved_from: "https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:01+00:00"
+retrieved_utc: "2026-08-10T15:30:38+00:00"
 slug: 2017-wallarm-good-bad-ugly-safari-client-side-attacks
 snapshot: ""
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: 2017-12-14
 - Original: <https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a>
 - Current location: <https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a/>
-- Preserved from: https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a/ (live) on 2026-08-09
+- Preserved from: https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

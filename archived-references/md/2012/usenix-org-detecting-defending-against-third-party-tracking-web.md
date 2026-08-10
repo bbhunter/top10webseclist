@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/nsdi12/technical-sessions/presentat
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:37+00:00"
+  at: "2026-08-10T16:04:04+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/roesner"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2012.md:84"
+  - "2012.md:78"
 commit: ""
-content_sha256: 39c1b8311873704ae817fc4d82d16b4636ca93b99978337a86c43a38e2e02a67
+content_sha256: 3dfe738954db871c1539b0d9bf42b46f8914985156d16e3af68dee9d9d812d13
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/nsdi12/technical-sessions/prese
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: e705cefa4d429786611891787df90398c2c2a3b2a770624fc71954128a23869b
+raw_sha256: adba13dd3e8e6d400fe3365ae105dd19c39a7ef1bdea096335af6f036a05d527
 retrieved_from: "https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/roesner"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:37+00:00"
+retrieved_utc: "2026-08-10T16:04:04+00:00"
 slug: usenix-org-detecting-defending-against-third-party-tracking-web
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/roesner>
-- Preserved from: https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/roesner (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/roesner (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

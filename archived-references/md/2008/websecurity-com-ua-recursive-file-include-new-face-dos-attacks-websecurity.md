@@ -5,9 +5,9 @@ resource: "http://websecurity.com.ua/2047/"
 tags: [article, webseclist-reference, websecurity-com-ua]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:24+00:00"
+  at: "2026-08-10T16:06:13+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://websecurity.com.ua/2047/"
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 6f2482a7f10b6bdd64e17a5f221b667bfe453430cbfa1c1c7ad626db0e738a0c
 retrieved_from: "http://websecurity.com.ua/2047/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:24+00:00"
+retrieved_utc: "2026-08-10T16:06:13+00:00"
 slug: websecurity-com-ua-recursive-file-include-new-face-dos-attacks-websecurity
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://websecurity.com.ua/2047/>
-- Preserved from: http://websecurity.com.ua/2047/ (live) on 2026-08-09
+- Preserved from: http://websecurity.com.ua/2047/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

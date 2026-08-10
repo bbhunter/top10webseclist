@@ -5,9 +5,9 @@ resource: "https://seclab.stanford.edu/websec/frames/"
 tags: [article, webseclist-reference, seclab-stanford-edu]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:08+00:00"
+  at: "2026-08-10T15:58:15+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://seclab.stanford.edu/websec/frames/"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2007.md:105"
+  - "2007.md:100"
 commit: ""
-content_sha256: a92842e1146a1f7719f0f85c9575c46d7ab192f219fa442e39680677333012fc
+content_sha256: bb2c7dbaf3ec9cb379355a1db648cca62894374bde3e933c971a839386c36f7c
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 04972a6d0e2d79263434cf17a7c0670653c2112feea481c0a780408c7c172ea0
 retrieved_from: "https://seclab.stanford.edu/websec/frames/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:08+00:00"
+retrieved_utc: "2026-08-10T15:58:15+00:00"
 slug: seclab-stanford-edu-frame-hijacking
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://seclab.stanford.edu/websec/frames/>
-- Preserved from: https://seclab.stanford.edu/websec/frames/ (live) on 2026-08-08
+- Preserved from: https://seclab.stanford.edu/websec/frames/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -68,7 +68,7 @@ Frame Hijacking
 
 |   [![pdf](https://crypto.stanford.edu/images/icons/pdf.png)](https://seclab.stanford.edu/websec/frames/post-message.pdf)  |
 
- [Securing Frame Communication in Browsers](https://seclab.stanford.edu/websec/frames/post-message.pdf) [[BIBTEX]]()
+ [Securing Frame Communication in Browsers](https://seclab.stanford.edu/websec/frames/post-message.pdf) [BIBTEX]
 
  [Adam Barth](http://www.adambarth.com/), [Collin Jackson](http://www.collinjackson.com/), and [John C. Mitchell](http://theory.stanford.edu/people/jcm/)
 

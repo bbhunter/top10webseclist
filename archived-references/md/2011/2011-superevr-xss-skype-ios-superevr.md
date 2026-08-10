@@ -5,9 +5,9 @@ resource: "https://superevr.com/blog/2011/xss-in-skype-for-ios/"
 tags: [article, webseclist-reference, en-US, superevr]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:38+00:00"
+  at: "2026-08-10T16:00:59+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://superevr.com/blog/2011/xss-in-skype-for-ios/"
@@ -31,10 +31,10 @@ original_url: "https://superevr.com/blog/2011/xss-in-skype-for-ios/"
 published: 2011-09-19
 publisher: Superevr
 publisher_english: ""
-raw_sha256: 4d51df2c62fc96cefb5d383e1cc9309e82415616eb119a096e2c877199a7808b
+raw_sha256: e5d9da06cb398d4f9a49910e9db9f1c56b56c9e525d12cb66dad94cc18a873b7
 retrieved_from: "https://superevr.com/blog/2011/xss-in-skype-for-ios/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:38+00:00"
+retrieved_utc: "2026-08-10T16:00:59+00:00"
 slug: 2011-superevr-xss-skype-ios-superevr
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2011-09-19
 - Original: <https://superevr.com/blog/2011/xss-in-skype-for-ios/>
-- Preserved from: https://superevr.com/blog/2011/xss-in-skype-for-ios/ (live) on 2026-08-09
+- Preserved from: https://superevr.com/blog/2011/xss-in-skype-for-ios/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

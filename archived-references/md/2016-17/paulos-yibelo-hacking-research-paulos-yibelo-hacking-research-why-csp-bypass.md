@@ -5,9 +5,9 @@ resource: "http://www.paulosyibelo.com/2017/05/twitter-xss-csp-bypass.html"
 tags: [article, webseclist-reference, en, paulos-yibelo-hacking-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:37:33+00:00"
+  at: "2026-08-10T15:35:52+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.paulosyibelo.com/2017/05/twitter-xss-csp-bypass.html"
@@ -22,7 +22,7 @@ canonical_url: "https://www.evil.blog/2017/05/twitter-xss-csp-bypass.html"
 cited_by:
   - "2016-17.md:39"
 commit: ""
-content_sha256: 4572e9f8583edb69c01bdc486ba2d5f1588765111f999c4687aece398fbb4e1a
+content_sha256: e43db92948b0114b1d6d4c2a3ddb74916090f7eabffdbf6ce73895a0a84f7514
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "http://www.paulosyibelo.com/2017/05/twitter-xss-csp-bypass.html"
 published: ""
 publisher: Paulos Yibelo - Hacking Research
 publisher_english: ""
-raw_sha256: 0ebf9ee2e3a13c5b12b3c843eb6c706065ef43c8e4b1c169daced3fea8646a08
+raw_sha256: 62e3d8b6dc63f8e2819c07ce25bf33af232d8f670070956192aed68603b8a124
 retrieved_from: "https://www.evil.blog/2017/05/twitter-xss-csp-bypass.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:37:33+00:00"
+retrieved_utc: "2026-08-10T15:35:52+00:00"
 slug: paulos-yibelo-hacking-research-paulos-yibelo-hacking-research-why-csp-bypass
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.paulosyibelo.com/2017/05/twitter-xss-csp-bypass.html>
 - Current location: <https://www.evil.blog/2017/05/twitter-xss-csp-bypass.html>
-- Preserved from: https://www.evil.blog/2017/05/twitter-xss-csp-bypass.html (live) on 2026-08-09
+- Preserved from: https://www.evil.blog/2017/05/twitter-xss-csp-bypass.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

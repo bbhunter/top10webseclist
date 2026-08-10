@@ -5,9 +5,9 @@ resource: "https://portswigger.net/blog/http-desync-attacks-request-smuggling-re
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:21+00:00"
+  at: "2026-08-10T15:36:22+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/blog/http-desync-attacks-request-smuggling-reborn"
@@ -15,13 +15,14 @@ sources:
     last_modified: 2019-08-07
   - id: canonical
     resource: "https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn"
-also_at: []
+also_at:
+  - "https://portswigger.net/kb/papers/z7ow0oy8/http-desync-attacks.pdf"
 authors: []
 canonical_url: "https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn"
 cited_by:
   - "2019.md:20"
 commit: ""
-content_sha256: a4148e17def216cd8f0256d7688c199b35ba00a2171fc345929df85008b26862
+content_sha256: 8d690b05f2e89468cafd05f0443a31d13acef39383e5302a638d49f63e913d50
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +32,10 @@ original_url: "https://portswigger.net/blog/http-desync-attacks-request-smugglin
 published: 2019-08-07
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 7f5b4175328c52bbea027a59d4af0223d75def44b6316221df35ca45e3d88ada
+raw_sha256: 32cccc05bbbf5ae694f90bff866f1fff166fb3e22dfa30ed925eaa0b50ed10e2
 retrieved_from: "https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:21+00:00"
+retrieved_utc: "2026-08-10T15:36:22+00:00"
 slug: 2019-portswigger-research-http-desync-attacks-request-smuggling-reborn
 snapshot: ""
 title_english: ""
@@ -49,7 +50,8 @@ translation_of: ""
 - Published: 2019-08-07
 - Original: <https://portswigger.net/blog/http-desync-attacks-request-smuggling-reborn>
 - Current location: <https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn>
-- Preserved from: https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn (live) on 2026-08-09
+- Also published at: <https://portswigger.net/kb/papers/z7ow0oy8/http-desync-attacks.pdf>
+- Preserved from: https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

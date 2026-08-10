@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenix-security-11/presentation/fas
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:37+00:00"
+  at: "2026-08-10T16:04:06+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenix-security-11/presentation/fast-and-precise-sanitizer-analysis-bek"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2011.md:73"
+  - "2011.md:68"
 commit: ""
 content_sha256: 6cbf7d2e87fe2b8d0a1de82908cdc541bac853c8ef2fd44aa43d4328cb15c5ab
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenix-security-11/presentation
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 325bf1719af309fe931ad9deca1ef9f8e219385c9925a800c2bdf3602d5cca9b
+raw_sha256: 5385f68b5c422338ff18a74ee792fea74cc99255591a94eaafdf6dbea8bb75a1
 retrieved_from: "https://www.usenix.org/conference/usenix-security-11/presentation/fast-and-precise-sanitizer-analysis-bek"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:37+00:00"
+retrieved_utc: "2026-08-10T16:04:06+00:00"
 slug: usenix-org-fast-precise-sanitizer-analysis-bek
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenix-security-11/presentation/fast-and-precise-sanitizer-analysis-bek>
-- Preserved from: https://www.usenix.org/conference/usenix-security-11/presentation/fast-and-precise-sanitizer-analysis-bek (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenix-security-11/presentation/fast-and-precise-sanitizer-analysis-bek (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

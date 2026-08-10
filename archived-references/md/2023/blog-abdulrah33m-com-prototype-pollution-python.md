@@ -5,9 +5,9 @@ resource: "https://blog.abdulrah33m.com/prototype-pollution-in-python/"
 tags: [article, webseclist-reference, en-US, blog-abdulrah33m-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:11+00:00"
+  at: "2026-08-10T15:03:57+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blog.abdulrah33m.com/prototype-pollution-in-python/"
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: abd08b402e3243a9d61464727a54f3ee7ac89df2c1ea689fc707cf814f7232ec
 retrieved_from: "https://blog.abdulrah33m.com/prototype-pollution-in-python/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:11+00:00"
+retrieved_utc: "2026-08-10T15:03:57+00:00"
 slug: blog-abdulrah33m-com-prototype-pollution-python
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://blog.abdulrah33m.com/prototype-pollution-in-python/>
-- Preserved from: https://blog.abdulrah33m.com/prototype-pollution-in-python/ (live) on 2026-08-09
+- Preserved from: https://blog.abdulrah33m.com/prototype-pollution-in-python/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

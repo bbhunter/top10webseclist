@@ -5,9 +5,9 @@ resource: "https://i.blackhat.com/BH-USA-26/Presentations/US-26-Stacey-CRLF-Powe
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:50:59+00:00"
+  at: "2026-08-10T15:27:39+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://i.blackhat.com/BH-USA-26/Presentations/US-26-Stacey-CRLF-Powered-Desync-Attacks-Wed.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:57"
+  - "2026-ai.md:33"
 commit: ""
 content_sha256: c07ce79d7956f5cb2ccc493a33c3f3c22885ba030cf1d078399873227d5ad135
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 67b82f72047daa6fb30138d432e747ce62909d7afe94b6ebe1449e4f75cb099d
 retrieved_from: "https://i.blackhat.com/BH-USA-26/Presentations/US-26-Stacey-CRLF-Powered-Desync-Attacks-Wed.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:50:59+00:00"
+retrieved_utc: "2026-08-10T15:27:39+00:00"
 slug: us-26-stacey-crlf-powered-desync-attacks-wed
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-USA-26/Presentations/US-26-Stacey-CRLF-Powered-Desync-Attacks-Wed.pdf>
-- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/US-26-Stacey-CRLF-Powered-Desync-Attacks-Wed.pdf (live) on 2026-08-08
+- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/US-26-Stacey-CRLF-Powered-Desync-Attacks-Wed.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

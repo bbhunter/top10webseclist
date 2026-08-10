@@ -5,9 +5,9 @@ resource: "http://www.thespanner.co.uk/2009/01/07/i-know-what-your-friends-did-l
 tags: [article, webseclist-reference, en, thespanner-co-uk]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:45:49+00:00"
+  at: "2026-08-10T16:01:47+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/01/07/i-know-what-your-friends-did-last-summer/"
@@ -30,10 +30,10 @@ original_url: "http://www.thespanner.co.uk/2009/01/07/i-know-what-your-friends-d
 published: ""
 publisher: thespanner.co.uk
 publisher_english: ""
-raw_sha256: 9b6aeda7466a89ac5ff610dd8cba5a849388326eba667faa5df7e0951109d48d
+raw_sha256: 6cf97dece06fbd320b7bcff9e9a4c9b7692bfaeb24716aa900379e1a993c0c1b
 retrieved_from: "https://thespanner.co.uk/2009/01/07/i-know-what-your-friends-did-last-summer"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:45:49+00:00"
+retrieved_utc: "2026-08-10T16:01:47+00:00"
 slug: thespanner-co-uk-i-know-what-your-friends-did-last-summer
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/01/07/i-know-what-your-friends-did-last-summer/>
 - Current location: <https://thespanner.co.uk/2009/01/07/i-know-what-your-friends-did-last-summer>
-- Preserved from: https://thespanner.co.uk/2009/01/07/i-know-what-your-friends-did-last-summer (live) on 2026-08-09
+- Preserved from: https://thespanner.co.uk/2009/01/07/i-know-what-your-friends-did-last-summer (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

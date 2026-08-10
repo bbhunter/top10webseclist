@@ -5,9 +5,9 @@ resource: "https://pastebin.com/f7ac1cced"
 tags: [article, webseclist-reference, en, pastebin]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:37:30+00:00"
+  at: "2026-08-10T15:35:50+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://pastebin.com/f7ac1cced"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2009.md:83"
 commit: ""
-content_sha256: d024f297beb7c80389d067fae01cb7b120aee405ed8b2e18aa16d90057ddd085
+content_sha256: b27a5860d4802fb40903c846c8dc16feee7002d8079d21f285db699f502626cf
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://pastebin.com/f7ac1cced"
 published: ""
 publisher: Pastebin
 publisher_english: ""
-raw_sha256: dd1485ea6fb2828b05c90b6840e06b2669c90119c1d2f7e748754a41085581ad
+raw_sha256: ddc30bacf9dd6817928a5ba3b6b5994b68cbab8871b327345d210461b8a3aadf
 retrieved_from: "https://pastebin.com/f7ac1cced"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:37:30+00:00"
+retrieved_utc: "2026-08-10T15:35:50+00:00"
 slug: pastebin-mario-pastebin-com
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://pastebin.com/f7ac1cced>
-- Preserved from: https://pastebin.com/f7ac1cced (live) on 2026-08-09
+- Preserved from: https://pastebin.com/f7ac1cced (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -70,7 +70,7 @@ mario - Pastebin.com
 
  Dec 30th, 2009
 
- 3,104
+ 3,109
 
  0
 

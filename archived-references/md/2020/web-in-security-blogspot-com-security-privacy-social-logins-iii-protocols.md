@@ -5,9 +5,9 @@ resource: "https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-
 tags: [article, webseclist-reference, en, web-in-security-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:20+00:00"
+  at: "2026-08-10T16:06:08+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part3.html"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2020.md:59"
 commit: ""
-content_sha256: 697208098970966f3c62c97810c6fc029f720ac8a963648d0633e4fc883a352a
+content_sha256: d6d650ff0f3ac0056d7388cabed705853ca31f4f6e53a60497486acfefbd6ef5
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://web-in-security.blogspot.com/2021/02/security-and-privacy
 published: ""
 publisher: web-in-security.blogspot.com
 publisher_english: ""
-raw_sha256: 1db5043823dc97b0df1714b30f98a4cde43de60587f69481a05c7bd7fdcd262a
+raw_sha256: 0e2797a76003797ad944217819c0e3d744f0bdb2384dd36cef659e51bc219a99
 retrieved_from: "https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part3.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:20+00:00"
+retrieved_utc: "2026-08-10T16:06:08+00:00"
 slug: web-in-security-blogspot-com-security-privacy-social-logins-iii-protocols
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part3.html>
-- Preserved from: https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part3.html (live) on 2026-08-09
+- Preserved from: https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part3.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

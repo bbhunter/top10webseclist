@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/zaher
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:50+00:00"
+  at: "2026-08-10T16:05:15+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/zaheri"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2022.md:65"
+  - "2022.md:63"
 commit: ""
 content_sha256: ddc95acf6042b68e6cf1c6d672075a6c465657c529c95d53b8a6810b1805d4dc
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity22/presentation/z
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: f20e56e005993bc813db70aace2ccba5d5de7cb4cc832bc9e6e77128a6d8ca8b
+raw_sha256: 32990cd2f0b01e2a78af1852a06352d214a1c1a9e8c69acf4a5e76b49ff79671
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity22/presentation/zaheri"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:50+00:00"
+retrieved_utc: "2026-08-10T16:05:15+00:00"
 slug: usenix-org-targeted-deanonymization-cache-side-channel-attacks-defenses
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity22/presentation/zaheri>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/zaheri (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/zaheri (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

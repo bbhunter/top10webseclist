@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/http://heartbleed.com/"
 tags: [article, webseclist-reference, en, heartbleed-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:29:54+00:00"
+  at: "2026-08-10T15:27:12+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://heartbleed.com/"
@@ -34,10 +34,10 @@ original_url: "https://web.archive.org/web/20160403035045/http://heartbleed.com/
 published: ""
 publisher: heartbleed.com
 publisher_english: ""
-raw_sha256: 3d6e78f887ae399eb4be1a2ab749ef186946c54d102c1ea6784e2e00af9eeb30
+raw_sha256: 4eb0834390e4640589c92b83b8283b80def911c95175d2e14e9dc4abae92126d
 retrieved_from: "https://web.archive.org/web/20160402164038/http://heartbleed.com/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:29:54+00:00"
+retrieved_utc: "2026-08-10T15:27:12+00:00"
 slug: heartbleed-com-heartbleed-bug
 snapshot: 20160403035045
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/http://heartbleed.com/>
 - Current location: <https://web.archive.org/web/20160402164038/http://heartbleed.com/>
-- Preserved from: https://web.archive.org/web/20160402164038/http://heartbleed.com/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160402164038/http://heartbleed.com/ (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 

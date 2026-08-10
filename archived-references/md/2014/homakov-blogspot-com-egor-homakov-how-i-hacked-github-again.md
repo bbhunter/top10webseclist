@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/http://homakov.blogspot.co
 tags: [article, webseclist-reference, homakov-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:29:57+00:00"
+  at: "2026-08-10T15:27:16+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://homakov.blogspot.com/2014/02/how-i-hacked-github-again.html?m=1"
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20160403035045/http://homakov.blogspo
 published: ""
 publisher: homakov.blogspot.com
 publisher_english: ""
-raw_sha256: 7b74f484e212a0ee1169f8f78e643480cecb9ef770eb29b338d86fa3d50db052
+raw_sha256: d1365dccbf76f47bd9789c53e3db49801db4a7f1a9a22f38b3cc44e7cb657992
 retrieved_from: "https://web.archive.org/web/20160624013337/http://homakov.blogspot.com/2014/02/how-i-hacked-github-again.html?m=1"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:29:57+00:00"
+retrieved_utc: "2026-08-10T15:27:16+00:00"
 slug: homakov-blogspot-com-egor-homakov-how-i-hacked-github-again
 snapshot: 20160403035045
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/http://homakov.blogspot.com/2014/02/how-i-hacked-github-again.html?m=1>
 - Current location: <https://web.archive.org/web/20160624013337/http://homakov.blogspot.com/2014/02/how-i-hacked-github-again.html?m=1>
-- Preserved from: https://web.archive.org/web/20160624013337/http://homakov.blogspot.com/2014/02/how-i-hacked-github-again.html?m=1 (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160624013337/http://homakov.blogspot.com/2014/02/how-i-hacked-github-again.html?m=1 (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 

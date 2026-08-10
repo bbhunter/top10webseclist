@@ -5,9 +5,9 @@ resource: "http://blog.kotowicz.net/2011/01/xss-track-as-html5-websockets-traffi
 tags: [article, webseclist-reference, blog-kotowicz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:04:44+00:00"
+  at: "2026-08-10T15:04:27+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.kotowicz.net/2011/01/xss-track-as-html5-websockets-traffic.html"
@@ -28,10 +28,10 @@ original_url: "http://blog.kotowicz.net/2011/01/xss-track-as-html5-websockets-tr
 published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
-raw_sha256: 08939b92a8786d6bf0401c68a352685ba198cad9dc32b7d081528e74253b4a97
+raw_sha256: 8d525885387301a5097d71d8e54e668b1e9cc0be34ec22e48cab30ba2fcc660e
 retrieved_from: "http://blog.kotowicz.net/2011/01/xss-track-as-html5-websockets-traffic.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:04:44+00:00"
+retrieved_utc: "2026-08-10T15:04:27+00:00"
 slug: blog-kotowicz-net-xss-track-as-html5-websockets-traffic-sniffer
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.kotowicz.net/2011/01/xss-track-as-html5-websockets-traffic.html>
-- Preserved from: http://blog.kotowicz.net/2011/01/xss-track-as-html5-websockets-traffic.html (live) on 2026-08-09
+- Preserved from: http://blog.kotowicz.net/2011/01/xss-track-as-html5-websockets-traffic.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

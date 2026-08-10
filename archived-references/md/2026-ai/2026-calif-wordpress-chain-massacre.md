@@ -5,9 +5,9 @@ resource: "https://blog.calif.io/p/the-wordpress-chain-massacre"
 tags: [article, webseclist-reference, en, calif]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:13+00:00"
+  at: "2026-08-10T15:04:11+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blog.calif.io/p/the-wordpress-chain-massacre"
@@ -19,9 +19,9 @@ authors:
   - Calif
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:80"
+  - "2026-ai.md:58"
 commit: ""
-content_sha256: 987436bb5217b5d477ea18f2517f1cc655b55d0cf629de1b9ffb51407e776fb4
+content_sha256: 99fb21c959bb2299c6ef63a94a5007298250e0f478d04ab97a1c9c5fb513a3f9
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://blog.calif.io/p/the-wordpress-chain-massacre"
 published: 2026-08-05
 publisher: Calif
 publisher_english: ""
-raw_sha256: f08a30c6a9498b8c09902763dc1bc11032e600a3cc28c04f9674b1183e3e6fcd
+raw_sha256: ba2da88213d73749f66657111650f6ebac13dc1f6efa4acc687024660fa2c3c7
 retrieved_from: "https://blog.calif.io/p/the-wordpress-chain-massacre"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:13+00:00"
+retrieved_utc: "2026-08-10T15:04:11+00:00"
 slug: 2026-calif-wordpress-chain-massacre
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2026-08-05
 - Original: <https://blog.calif.io/p/the-wordpress-chain-massacre>
-- Preserved from: https://blog.calif.io/p/the-wordpress-chain-massacre (live) on 2026-08-08
+- Preserved from: https://blog.calif.io/p/the-wordpress-chain-massacre (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

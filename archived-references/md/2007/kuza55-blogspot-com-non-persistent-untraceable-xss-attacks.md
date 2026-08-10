@@ -5,9 +5,9 @@ resource: "https://kuza55.blogspot.com/2007/03/non-persistent-untraceable-xss-at
 tags: [article, webseclist-reference, kuza55-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:32:54+00:00"
+  at: "2026-08-10T15:30:31+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://kuza55.blogspot.com/2007/03/non-persistent-untraceable-xss-attacks.html"
@@ -28,10 +28,10 @@ original_url: "https://kuza55.blogspot.com/2007/03/non-persistent-untraceable-xs
 published: ""
 publisher: kuza55.blogspot.com
 publisher_english: ""
-raw_sha256: 9d92be7a34cf9699fb140c1169c4ef7bc14e09420bfbdd7b751bb1921d307cfc
+raw_sha256: 1f4f1bcbba8029b80fd7ab3288b43c8412c3312ad1db4815d58b50c54ee46003
 retrieved_from: "https://kuza55.blogspot.com/2007/03/non-persistent-untraceable-xss-attacks.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:32:54+00:00"
+retrieved_utc: "2026-08-10T15:30:31+00:00"
 slug: kuza55-blogspot-com-non-persistent-untraceable-xss-attacks
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://kuza55.blogspot.com/2007/03/non-persistent-untraceable-xss-attacks.html>
-- Preserved from: https://kuza55.blogspot.com/2007/03/non-persistent-untraceable-xss-attacks.html (live) on 2026-08-09
+- Preserved from: https://kuza55.blogspot.com/2007/03/non-persistent-untraceable-xss-attacks.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

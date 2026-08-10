@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/staic
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:20+00:00"
+  at: "2026-08-10T16:04:46+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/staicu"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2018.md:91"
+  - "2018.md:87"
 commit: ""
 content_sha256: 7e22258a9eedf780d46d5bf4163d9e3b9ade36e68a025d85e02d7b623d04a573
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity18/presentation/s
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 25b828477b9871dd13992893861fe1da48c26fe5ecd079c2c615dfd5d730ce03
+raw_sha256: c0c62a134f047a1ea05bb3852875c71541821a51f056d9ba8d00a223dcf6d939
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity18/presentation/staicu"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:20+00:00"
+retrieved_utc: "2026-08-10T16:04:46+00:00"
 slug: usenix-org-freezing-web-study-redos-vulnerabilities-javascript-based-web-servers
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity18/presentation/staicu>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity18/presentation/staicu (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity18/presentation/staicu (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

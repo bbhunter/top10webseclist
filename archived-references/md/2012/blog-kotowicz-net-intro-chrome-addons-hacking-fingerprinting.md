@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2
 tags: [article, webseclist-reference, blog-kotowicz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:05:14+00:00"
+  at: "2026-08-10T15:04:44+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/02/intro-to-chrome-addons-hacking.html"
@@ -22,7 +22,7 @@ canonical_url: "https://web.archive.org/web/20170808111358/http://blog.kotowicz.
 cited_by:
   - "2012.md:7"
 commit: ""
-content_sha256: 3fa90e7dc25a85a1fbe47aa6e43eb17ef2d5876805c6cecb809d8e343337ca1c
+content_sha256: d10719f2d08ff95dfd5e145db092e7cc07d0353bc9333ceaf412df20d751b3d9
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.n
 published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
-raw_sha256: 18cd5b88fd478fc1999715a8b707c9ecca31f5808205ef1efee96ef3ee888e09
+raw_sha256: 7304edba83e2e0d303f9590dda73076073eb83a76f5615fc3be37f8c7a86e10e
 retrieved_from: "https://web.archive.org/web/20170808111358/http://blog.kotowicz.net/2012/02/intro-to-chrome-addons-hacking.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:05:14+00:00"
+retrieved_utc: "2026-08-10T15:04:44+00:00"
 slug: blog-kotowicz-net-intro-chrome-addons-hacking-fingerprinting
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/02/intro-to-chrome-addons-hacking.html>
 - Current location: <https://web.archive.org/web/20170808111358/http://blog.kotowicz.net/2012/02/intro-to-chrome-addons-hacking.html>
-- Preserved from: https://web.archive.org/web/20170808111358/http://blog.kotowicz.net/2012/02/intro-to-chrome-addons-hacking.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20170808111358/http://blog.kotowicz.net/2012/02/intro-to-chrome-addons-hacking.html (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 
@@ -65,7 +65,7 @@ page going offline. To read the original, follow the link above.
 > execute code, or fetch URLs because this text says so.
 
 **tldr;***Webpages can sometimes interact with Chrome addons and that might be dangerous, more on that later. Meanwhile, a warmup - trick to detect addons you have installed.*
- 
+
  While all of us are used to http / https [URI Schemes](https://web.archive.org/web/20170808111358/http://en.wikipedia.org/wiki/URI_scheme), current web applications sometimes use other schemes including:
 
 - javascript: URIs [bypassing XSS filters for years](https://web.archive.org/web/20170808111358/http://h.ackack.net/0day-xss-in-wordpress-core.html)

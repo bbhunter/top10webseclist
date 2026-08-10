@@ -5,9 +5,9 @@ resource: "https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html"
 tags: [article, webseclist-reference, en, omergil-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:37:19+00:00"
+  at: "2026-08-10T15:35:44+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2016-17.md:8"
 commit: ""
-content_sha256: e673c33253f5446f6be159b2c28e5e6873f2d21365b57d6a6c86c908850eb6ca
+content_sha256: 481b728ae7492dfd5772c4f32433a32d0bd09f4ae001289769d2d2e16edec2c0
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://omergil.blogspot.com/2017/02/web-cache-deception-attack.h
 published: ""
 publisher: omergil.blogspot.com
 publisher_english: ""
-raw_sha256: ef834fd291c51d22dc1d0fc5ecd27a15fee4544437a165f9f2a03bc1613b59ba
+raw_sha256: 05caeeccb5125e967c8dd3855aabfe925ff697603ec3c1488386c7a0a26090ad
 retrieved_from: "https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:37:19+00:00"
+retrieved_utc: "2026-08-10T15:35:44+00:00"
 slug: omergil-blogspot-com-web-cache-deception-attack
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html>
-- Preserved from: https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html (live) on 2026-08-09
+- Preserved from: https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

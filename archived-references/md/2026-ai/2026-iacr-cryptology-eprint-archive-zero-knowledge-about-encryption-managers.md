@@ -5,9 +5,9 @@ resource: "https://eprint.iacr.org/2026/058"
 tags: [article, webseclist-reference, en, iacr-cryptology-eprint-archive]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:19+00:00"
+  at: "2026-08-10T15:09:26+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://eprint.iacr.org/2026/058"
@@ -17,7 +17,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:90"
+  - "2026-ai.md:68"
 commit: ""
 content_sha256: 31dd67accee6cc8236087f7f2913ae0310296c559a936399d311a0ef175be863
 depth: full
@@ -32,7 +32,7 @@ publisher_english: ""
 raw_sha256: 00038d8844b4541062dd9dfc6a3dd7ecff2279b7158fe174be9993649363f673
 retrieved_from: "https://eprint.iacr.org/2026/058"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:19+00:00"
+retrieved_utc: "2026-08-10T15:09:26+00:00"
 slug: 2026-iacr-cryptology-eprint-archive-zero-knowledge-about-encryption-managers
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2026-01-14
 - Original: <https://eprint.iacr.org/2026/058>
-- Preserved from: https://eprint.iacr.org/2026/058 (live) on 2026-08-08
+- Preserved from: https://eprint.iacr.org/2026/058 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

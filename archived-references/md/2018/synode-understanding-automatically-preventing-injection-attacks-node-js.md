@@ -5,9 +5,9 @@ resource: "https://www.software-lab.org/publications/ndss2018.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:17+00:00"
+  at: "2026-08-10T16:00:27+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.software-lab.org/publications/ndss2018.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2018.md:79"
+  - "2018.md:75"
 commit: ""
 content_sha256: ec0adccbcb7904b01ad1d93daa3244dc60e83f17113399682ee626672f5a3bae
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 18c9d25601814e42ecc3a97fd15c0f8f5817184e46b06f58b50c98297fce92cd
 retrieved_from: "https://www.software-lab.org/publications/ndss2018.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:17+00:00"
+retrieved_utc: "2026-08-10T16:00:27+00:00"
 slug: synode-understanding-automatically-preventing-injection-attacks-node-js
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.software-lab.org/publications/ndss2018.pdf>
-- Preserved from: https://www.software-lab.org/publications/ndss2018.pdf (live) on 2026-08-08
+- Preserved from: https://www.software-lab.org/publications/ndss2018.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

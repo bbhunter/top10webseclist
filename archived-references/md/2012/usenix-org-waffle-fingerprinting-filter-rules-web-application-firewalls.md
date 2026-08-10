@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/woot12/workshop-program/presentatio
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:18+00:00"
+  at: "2026-08-10T16:05:45+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/woot12/workshop-program/presentation/schmitt"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2012.md:88"
+  - "2012.md:82"
 commit: ""
-content_sha256: a27ba9a7dd589d4976f1e1c2505113ae7e86ea0240c450229c435b46a537cfbc
+content_sha256: e618fa94493e6918409ca73594288719277a9f0250f35a71fe7447bff0519692
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/woot12/workshop-program/present
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 52dee186de75e3a0bfd781b3077669f11480752cedd512c4be319c6b391805a9
+raw_sha256: a8ae5e426c08c8b2512829672cc85d6ff17c2e019489e2c89f959aefc6f75e0d
 retrieved_from: "https://www.usenix.org/conference/woot12/workshop-program/presentation/schmitt"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:18+00:00"
+retrieved_utc: "2026-08-10T16:05:45+00:00"
 slug: usenix-org-waffle-fingerprinting-filter-rules-web-application-firewalls
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/woot12/workshop-program/presentation/schmitt>
-- Preserved from: https://www.usenix.org/conference/woot12/workshop-program/presentation/schmitt (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/woot12/workshop-program/presentation/schmitt (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

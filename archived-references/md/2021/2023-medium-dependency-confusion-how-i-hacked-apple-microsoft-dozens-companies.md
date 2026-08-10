@@ -5,9 +5,9 @@ resource: "https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610"
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:34:43+00:00"
+  at: "2026-08-10T15:31:56+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2021.md:5"
 commit: ""
-content_sha256: 3f2c0f05d0ff8ba3134b992fb7a974f7bdb377bd1cdcab316d043c7ce7feb61d
+content_sha256: 96bce6b987ed127889d257d3be6b97e53232ed8f254b1e2aaea5bcc3785a7598
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610
 published: 2023-09-29
 publisher: Medium
 publisher_english: ""
-raw_sha256: 3dec3cf73edb49e04470730f55d34a7f4d4f57b0fbb1f20422f9026bfd4088a9
+raw_sha256: 967b5d7dd0ff6323e927871d42f3a079482942ba7f9583c325ed5e1b29fffa54
 retrieved_from: "https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:34:43+00:00"
+retrieved_utc: "2026-08-10T15:31:56+00:00"
 slug: 2023-medium-dependency-confusion-how-i-hacked-apple-microsoft-dozens-companies
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2023-09-29
 - Original: <https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610>
-- Preserved from: https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610 (live) on 2026-08-09
+- Preserved from: https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

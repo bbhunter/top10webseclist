@@ -5,9 +5,9 @@ resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transfor
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:48:42+00:00"
+  at: "2026-08-10T15:27:32+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-Slides.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:71"
+  - "2026-ai.md:49"
 commit: ""
 content_sha256: 603a1dbf08c3c32f54fe0c7c4928d9c5abdbcff589ab48fae0987eed3ed7205f
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 3fc686b68cc0805758a640155dce4db3da93b16ca16cbe8e0218df418eed5cf1
 retrieved_from: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-Slides.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:48:42+00:00"
+retrieved_utc: "2026-08-10T15:27:32+00:00"
 slug: bhus26-mirosh-transformers-dark-side-slides
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-Slides.pdf>
-- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-Slides.pdf (live) on 2026-08-08
+- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-Slides.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

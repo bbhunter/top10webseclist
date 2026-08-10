@@ -5,9 +5,9 @@ resource: "https://www.descope.com/blog/post/noauth"
 tags: [article, webseclist-reference, en, descope]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:09:11+00:00"
+  at: "2026-08-10T15:08:48+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.descope.com/blog/post/noauth"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:51"
 commit: ""
-content_sha256: e41605e6e5bb6ffa00c0b1cb0939cc6682c4c183cf976fe9316638f9bce1c056
+content_sha256: bbd9e02ba641741c87c9c9e986642d6c5f666abce56a421302e1c31928032c77
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.descope.com/blog/post/noauth"
 published: ""
 publisher: Descope
 publisher_english: ""
-raw_sha256: a0fc5440132a6419b0b5dac571916c74d7bdf49868639719b2b425dbe6ea4d0f
+raw_sha256: 6fbb34017ab7683747c96f49e0aaeb42bf93d0e08825389d37cf6b389bc270ae
 retrieved_from: "https://www.descope.com/blog/post/noauth"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:09:11+00:00"
+retrieved_utc: "2026-08-10T15:08:48+00:00"
 slug: descope-noauth-how-microsoft-oauth-misconfiguration-can-lead-full-takeover
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.descope.com/blog/post/noauth>
-- Preserved from: https://www.descope.com/blog/post/noauth (live) on 2026-08-09
+- Preserved from: https://www.descope.com/blog/post/noauth (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

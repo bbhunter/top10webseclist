@@ -5,9 +5,9 @@ resource: "http://web.archive.org/web/20160507023636/https://superevr.com/blog/2
 tags: [article, webseclist-reference, en-US, superevr]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:59+00:00"
+  at: "2026-08-10T16:01:14+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/https://superevr.com/blog/2013/dont-use-linksys-routers/"
@@ -32,10 +32,10 @@ original_url: "http://web.archive.org/web/20160507023636/https://superevr.com/bl
 published: ""
 publisher: Superevr
 publisher_english: ""
-raw_sha256: 39f3e291f3c885feac42bba1f151dbcac6d22652aad5d568df2158a064485fdb
+raw_sha256: 3b22387c45c2acd2fc3ab83b58ae49594d6dfe6245aadc5e4216d6b75eadc49f
 retrieved_from: "http://web.archive.org/web/20150328011721/https://superevr.com/blog/2013/dont-use-linksys-routers/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:59+00:00"
+retrieved_utc: "2026-08-10T16:01:14+00:00"
 slug: superevr-don-t-use-linksys-routers
 snapshot: 20160507023636
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/https://superevr.com/blog/2013/dont-use-linksys-routers/>
 - Current location: <http://web.archive.org/web/20150328011721/https://superevr.com/blog/2013/dont-use-linksys-routers/>
-- Preserved from: http://web.archive.org/web/20150328011721/https://superevr.com/blog/2013/dont-use-linksys-routers/ (live) on 2026-08-09
+- Preserved from: http://web.archive.org/web/20150328011721/https://superevr.com/blog/2013/dont-use-linksys-routers/ (live) on 2026-08-10
 - Capture timestamp: 20160507023636
 - Licence: unknown
 

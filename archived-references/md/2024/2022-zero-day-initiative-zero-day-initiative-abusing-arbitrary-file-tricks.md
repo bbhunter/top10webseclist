@@ -5,9 +5,9 @@ resource: "https://www.zerodayinitiative.com/blog/2022/3/16/abusing-arbitrary-fi
 tags: [advisory, webseclist-reference, en, zero-day-initiative]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:51:17+00:00"
+  at: "2026-08-10T16:08:04+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.zerodayinitiative.com/blog/2022/3/16/abusing-arbitrary-file-deletes-to-escalate-privilege-and-other-great-tricks"
@@ -31,10 +31,10 @@ original_url: "https://www.zerodayinitiative.com/blog/2022/3/16/abusing-arbitrar
 published: 2022-03-17
 publisher: Zero Day Initiative
 publisher_english: ""
-raw_sha256: de404e0b87e7c8b1c7b290050f6a808c95fdb2999e9a91cd11486d8afe099471
+raw_sha256: 738e2a910d520108b79ac3916f788db7e619bf5d2c7964129580f920e39ffca8
 retrieved_from: "https://www.zerodayinitiative.com/blog/2022/3/16/abusing-arbitrary-file-deletes-to-escalate-privilege-and-other-great-tricks"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:51:17+00:00"
+retrieved_utc: "2026-08-10T16:08:04+00:00"
 slug: 2022-zero-day-initiative-zero-day-initiative-abusing-arbitrary-file-tricks
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2022-03-17
 - Original: <https://www.zerodayinitiative.com/blog/2022/3/16/abusing-arbitrary-file-deletes-to-escalate-privilege-and-other-great-tricks>
-- Preserved from: https://www.zerodayinitiative.com/blog/2022/3/16/abusing-arbitrary-file-deletes-to-escalate-privilege-and-other-great-tricks (live) on 2026-08-09
+- Preserved from: https://www.zerodayinitiative.com/blog/2022/3/16/abusing-arbitrary-file-deletes-to-escalate-privilege-and-other-great-tricks (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -212,3 +212,5 @@ We would like to thank researcher Abdelhamid Naceri for his great work in develo
 Add your voice to the work that pushes attackers back.
 
  [
+
+#### RESEARCHERS

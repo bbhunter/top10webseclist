@@ -5,20 +5,22 @@ resource: "https://www.ndss-symposium.org/ndss-paper/quicforge-client-side-reque
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:09+00:00"
+  at: "2026-08-10T15:33:54+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/quicforge-client-side-request-forgery-in-quic/"
     title: "QUICforge: Client-side Request Forgery in QUIC"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2023-72-paper.pdf"
+  - "https://www.ndss-symposium.org/wp-content/uploads/2024/09/2023-72-slides.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2023.md:98"
+  - "2023.md:93"
 commit: ""
-content_sha256: aeeed71dbc7e7ee9b258deaa27423726cfdab9b3c9e6c0dae6f3ea78a94a687d
+content_sha256: 6f2e46d964a1d81d858c39deca3387ae2571558a15db0be20b29144a310fe07b
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +30,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/quicforge-client-side-r
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: c6e6ed27c732e1f0d9beef3a675f731c2e17845096d1031639394417fd2a4864
+raw_sha256: 5824cc3cd68537c5b71462c3917c559217d6d42da20df79e85880b445e6c2793
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/quicforge-client-side-request-forgery-in-quic/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:09+00:00"
+retrieved_utc: "2026-08-10T15:33:54+00:00"
 slug: ndss-symposium-quicforge-client-side-request-forgery-quic
 snapshot: ""
 title_english: ""
@@ -45,7 +47,9 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/quicforge-client-side-request-forgery-in-quic/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/quicforge-client-side-request-forgery-in-quic/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2023-72-paper.pdf>
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2024/09/2023-72-slides.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/quicforge-client-side-request-forgery-in-quic/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -70,20 +74,20 @@ The QUIC protocol is gaining more and more traction through its recent standardi
 
 ## View More Papers
 
-### [ Cyber Threat Intelligence for SOC Analysts ](https://www.ndss-symposium.org/ndss-paper/auto-draft-402/)
+### [ Evaluating Wireless Attacks Against CCS Electric Vehicle Charging ](https://www.ndss-symposium.org/ndss-paper/auto-draft-341/)
 
- Nidhi Rastogi, Md Tanvirul Alam (Rochester Institute of Technology)
+ Sebastian Köhler (University of Oxford)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-402/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-341/)
 
-### [ Why do Internet Devices Remain Vulnerable? A Survey with... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-421/)
+### [ User Attitudes Towards Controls for Ad Interests Estimated On-device... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-347/)
 
- Tamara Bondar, Hala Assal, AbdelRahman Abdou (Carleton University)
+ Florian Lachner, Minzhe Yuan Chen Cheng, Theodore Olsauskas-Warren (Google)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-421/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-347/)
 
-### [ BEAGLE: Forensics of Deep Learning Backdoor Attack for Better... ](https://www.ndss-symposium.org/ndss-paper/beagle-forensics-of-deep-learning-backdoor-attack-for-better-defense/)
+### [ Fusion: Efficient and Secure Inference Resilient to Malicious Servers ](https://www.ndss-symposium.org/ndss-paper/fusion-efficient-and-secure-inference-resilient-to-malicious-servers/)
 
- Siyuan Cheng (Purdue University), Guanhong Tao (Purdue University), Yingqi Liu (Purdue University), Shengwei An (Purdue University), Xiangzhe Xu (Purdue University), Shiwei Feng (Purdue University), Guangyu Shen (Purdue University), Kaiyuan Zhang (Purdue University), Qiuling Xu (Purdue University), Shiqing Ma (Rutgers University), Xiangyu Zhang (Purdue University)
+ Caiqin Dong (Jinan University), Jian Weng (Jinan University), Jia-Nan Liu (Jinan University), Yue Zhang (Jinan University), Yao Tong (Guangzhou Fongwell Data Limited Company), Anjia Yang (Jinan University), Yudan Cheng (Jinan University), Shun Hu (Jinan University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/beagle-forensics-of-deep-learning-backdoor-attack-for-better-defense/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/fusion-efficient-and-secure-inference-resilient-to-malicious-servers/)

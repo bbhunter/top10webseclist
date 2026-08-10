@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:52+00:00"
+  at: "2026-08-10T16:04:17+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/li_zhiwei"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2014.md:83"
+  - "2014.md:78"
 commit: ""
-content_sha256: 76e2163eab2a95e64fa06b5e73c36f8e91f828181b9cd9ca01d12d4b2ccae076
+content_sha256: 6430f2854a316b7be7591593c0371f109c7382dc9db914c7c05dfe56b18b295a
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity14/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: bc1319e4d60229a08ad5a3dc8651625735a685326b525ce4c641e7f8d0e29167
+raw_sha256: d7f367182504e36f5cf031bed278b79a511d28209e4a4431705af57daa55e9d5
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/li_zhiwei"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:52+00:00"
+retrieved_utc: "2026-08-10T16:04:17+00:00"
 slug: usenix-org-emperors-new-password-manager-security-analysis-web-based-managers
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/li_zhiwei>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/li_zhiwei (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/li_zhiwei (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

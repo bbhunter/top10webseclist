@@ -5,9 +5,9 @@ resource: "http://blog.portswigger.net/2015/08/server-side-template-injection.ht
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:06:29+00:00"
+  at: "2026-08-10T15:05:54+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.portswigger.net/2015/08/server-side-template-injection.html"
@@ -15,13 +15,14 @@ sources:
     last_modified: 2015-08-05
   - id: canonical
     resource: "https://portswigger.net/research/server-side-template-injection"
-also_at: []
+also_at:
+  - "https://portswigger.net/knowledgebase/papers/serversidetemplateinjection.pdf"
 authors: []
 canonical_url: "https://portswigger.net/research/server-side-template-injection"
 cited_by:
   - "2015.md:45"
 commit: ""
-content_sha256: b202b2f6238b2842c42a5fed4eb8a621681ca677835aa18016fce8c60fafc2b3
+content_sha256: 2eab8e2db5b9e1188c2cf83f0a6efdc762635bca86801185e4e37ab9de863f40
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +32,10 @@ original_url: "http://blog.portswigger.net/2015/08/server-side-template-injectio
 published: 2015-08-05
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: dd1ed733cafc828c0aa0a16b3eded0580ede95eec7eaaf191a10387244574b63
+raw_sha256: 3c775d872edd386cf909cb27c9b4a95c4ffc665a9ce52fbdcede71398bb9549c
 retrieved_from: "https://portswigger.net/research/server-side-template-injection"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:06:29+00:00"
+retrieved_utc: "2026-08-10T15:05:54+00:00"
 slug: 2015-portswigger-research-server-side-template-injection
 snapshot: ""
 title_english: ""
@@ -49,7 +50,8 @@ translation_of: ""
 - Published: 2015-08-05
 - Original: <http://blog.portswigger.net/2015/08/server-side-template-injection.html>
 - Current location: <https://portswigger.net/research/server-side-template-injection>
-- Preserved from: https://portswigger.net/research/server-side-template-injection (live) on 2026-08-09
+- Also published at: <https://portswigger.net/knowledgebase/papers/serversidetemplateinjection.pdf>
+- Preserved from: https://portswigger.net/research/server-side-template-injection (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

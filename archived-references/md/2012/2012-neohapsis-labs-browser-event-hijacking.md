@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://labs.neohapsis.com/
 tags: [article, webseclist-reference, en, neohapsis-labs]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:20+00:00"
+  at: "2026-08-10T15:30:59+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://labs.neohapsis.com/2012/11/14/browser-event-hijacking/"
@@ -35,10 +35,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://labs.neohapsis.
 published: 2012-11-14
 publisher: Neohapsis Labs
 publisher_english: ""
-raw_sha256: 0d765ef7080a2e995f79d5ef1b60e2e89a74b8c5640caaff2979fbf509046aa9
+raw_sha256: 92559854775e697becc194a0b69c77f476259727ac06e868bff0e5828b39cc13
 retrieved_from: "https://web.archive.org/web/20160406180845/http://labs.neohapsis.com/2012/11/14/browser-event-hijacking/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:20+00:00"
+retrieved_utc: "2026-08-10T15:30:59+00:00"
 slug: 2012-neohapsis-labs-browser-event-hijacking
 snapshot: 20170903113359
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 - Published: 2012-11-14
 - Original: <https://web.archive.org/web/20170903113359/http://labs.neohapsis.com/2012/11/14/browser-event-hijacking/>
 - Current location: <https://web.archive.org/web/20160406180845/http://labs.neohapsis.com/2012/11/14/browser-event-hijacking/>
-- Preserved from: https://web.archive.org/web/20160406180845/http://labs.neohapsis.com/2012/11/14/browser-event-hijacking/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160406180845/http://labs.neohapsis.com/2012/11/14/browser-event-hijacking/ (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

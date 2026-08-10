@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://securitymusings.com
 tags: [article, webseclist-reference, en, security-musings]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:21+00:00"
+  at: "2026-08-10T15:58:44+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website"
@@ -35,10 +35,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://securitymusings
 published: 2012-02-01
 publisher: Security Musings
 publisher_english: ""
-raw_sha256: acd9d42b608706c3e62cffd87ca7f8dec5b7155fa177ec1ff2d301e4a0f20aa7
+raw_sha256: 5f85266fd57dba63788a5ff5c07501748808b942300644256d03927d2736d3af
 retrieved_from: "https://web.archive.org/web/20170611133815/http://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:21+00:00"
+retrieved_utc: "2026-08-10T15:58:44+00:00"
 slug: 2012-security-musings-how-platform-using-html5-can-affect-security-your-website
 snapshot: 20170903113359
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 - Published: 2012-02-01
 - Original: <https://web.archive.org/web/20170903113359/http://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website>
 - Current location: <https://web.archive.org/web/20170611133815/http://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website>
-- Preserved from: https://web.archive.org/web/20170611133815/http://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20170611133815/http://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

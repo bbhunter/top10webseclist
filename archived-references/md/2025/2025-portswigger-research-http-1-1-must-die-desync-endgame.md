@@ -5,21 +5,22 @@ resource: "https://portswigger.net/research/http1-must-die"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:32+00:00"
+  at: "2026-08-10T15:36:42+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/http1-must-die"
     title: "HTTP/1.1 must die: the desync endgame"
     last_modified: 2025-08-06
-also_at: []
+also_at:
+  - "https://portswigger.net/kb/papers/dzmxreq/http1-must-die.pdf"
 authors: []
 canonical_url: ""
 cited_by:
   - "2025.md:20"
 commit: ""
-content_sha256: 57bb27afb89b032872e33664942e739490e0358eab5e766ee92263ab0326045c
+content_sha256: 0d1b8df1730c2443acc20d64e298a0a589eed4c5521b04b98f4715d39ca03fa8
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +30,10 @@ original_url: "https://portswigger.net/research/http1-must-die"
 published: 2025-08-06
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 1f31c3bfd19b69b1c6700f4c5f630df21a191dd91edb9d953d81302d265523c1
+raw_sha256: 4f38a2986a0fc3a16b71d3c9f7a1a11d70a25018762688e28e27ff00425c8346
 retrieved_from: "https://portswigger.net/research/http1-must-die"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:32+00:00"
+retrieved_utc: "2026-08-10T15:36:42+00:00"
 slug: 2025-portswigger-research-http-1-1-must-die-desync-endgame
 snapshot: ""
 title_english: ""
@@ -46,7 +47,8 @@ translation_of: ""
 
 - Published: 2025-08-06
 - Original: <https://portswigger.net/research/http1-must-die>
-- Preserved from: https://portswigger.net/research/http1-must-die (live) on 2026-08-09
+- Also published at: <https://portswigger.net/kb/papers/dzmxreq/http1-must-die.pdf>
+- Preserved from: https://portswigger.net/research/http1-must-die (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

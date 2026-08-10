@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/https://superevr.com/blog/
 tags: [article, webseclist-reference, en-US, superevr]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:55+00:00"
+  at: "2026-08-10T16:01:09+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/https://superevr.com/blog/2012/top-level-universal-xss/"
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/https://superevr.com/b
 published: ""
 publisher: Superevr
 publisher_english: ""
-raw_sha256: e30551bb2e55c557557db6efe02a61a7059168be7303885851daf22c470c00f1
+raw_sha256: f4380dde581bc7aac5db8b02dada13f1b8ab9d757c237fa18580a5f288e04a97
 retrieved_from: "https://web.archive.org/web/20170715021134/https://superevr.com/blog/2012/top-level-universal-xss"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:55+00:00"
+retrieved_utc: "2026-08-10T16:01:09+00:00"
 slug: superevr-top-level-universal-xss
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/https://superevr.com/blog/2012/top-level-universal-xss/>
 - Current location: <https://web.archive.org/web/20170715021134/https://superevr.com/blog/2012/top-level-universal-xss>
-- Preserved from: https://web.archive.org/web/20170715021134/https://superevr.com/blog/2012/top-level-universal-xss (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20170715021134/https://superevr.com/blog/2012/top-level-universal-xss (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

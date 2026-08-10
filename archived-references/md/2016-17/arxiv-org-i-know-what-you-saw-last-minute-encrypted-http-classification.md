@@ -5,9 +5,9 @@ resource: "https://arxiv.org/abs/1602.00490"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:00+00:00"
+  at: "2026-08-10T15:02:28+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://arxiv.org/abs/1602.00490"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:92"
+  - "2016-17.md:86"
 commit: ""
-content_sha256: 27cfa9022dfcc6c7e475989d0fa8c56849d5ce262f7dd87f6c75d6f4c26fc9c9
+content_sha256: b3aa9ca7bcfe520fb120467708e541c0f94e80ddf20bf1b6b4e245a794f14663
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: d4af6754771c48abeac53fbaaf3d3ebf84259a3ac3aaacd302786891bfbfee1f
 retrieved_from: "https://arxiv.org/abs/1602.00490"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:00+00:00"
+retrieved_utc: "2026-08-10T15:02:28+00:00"
 slug: arxiv-org-i-know-what-you-saw-last-minute-encrypted-http-classification
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/1602.00490>
-- Preserved from: https://arxiv.org/abs/1602.00490 (live) on 2026-08-08
+- Preserved from: https://arxiv.org/abs/1602.00490 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

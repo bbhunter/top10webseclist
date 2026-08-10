@@ -5,9 +5,9 @@ resource: "https://zeroknock.blogspot.com/2009/12/google-translate-google-user-c
 tags: [article, webseclist-reference, zeroknock-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:51:23+00:00"
+  at: "2026-08-10T16:08:09+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://zeroknock.blogspot.com/2009/12/google-translate-google-user-content.html"
@@ -28,10 +28,10 @@ original_url: "https://zeroknock.blogspot.com/2009/12/google-translate-google-us
 published: ""
 publisher: zeroknock.blogspot.com
 publisher_english: ""
-raw_sha256: e3b9c6dc71936326a9b91aec78500b90ac2fd8fc2df9fac66c8ccf722af149ab
+raw_sha256: 925c1da1813f08fc60a4055701beafa9feef0b12ff95384c2479850a454ab0b3
 retrieved_from: "https://zeroknock.blogspot.com/2009/12/google-translate-google-user-content.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:51:23+00:00"
+retrieved_utc: "2026-08-10T16:08:09+00:00"
 slug: zeroknock-blogspot-com-google-translate-google-user-content-file-stringency
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://zeroknock.blogspot.com/2009/12/google-translate-google-user-content.html>
-- Preserved from: https://zeroknock.blogspot.com/2009/12/google-translate-google-user-content.html (live) on 2026-08-09
+- Preserved from: https://zeroknock.blogspot.com/2009/12/google-translate-google-user-content.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

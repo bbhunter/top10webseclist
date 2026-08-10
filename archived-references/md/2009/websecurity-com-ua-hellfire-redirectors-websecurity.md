@@ -5,9 +5,9 @@ resource: "http://websecurity.com.ua/2854/"
 tags: [article, webseclist-reference, websecurity-com-ua]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:28+00:00"
+  at: "2026-08-10T16:06:18+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://websecurity.com.ua/2854/"
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 151083109f055c8f4ac7ac5577b04a0afb7c5791e6d5aa6545eea6d7483d443a
 retrieved_from: "http://websecurity.com.ua/2854/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:28+00:00"
+retrieved_utc: "2026-08-10T16:06:18+00:00"
 slug: websecurity-com-ua-hellfire-redirectors-websecurity
 snapshot: ""
 title_english: Hellfire for Redirectors (Hellfire for redirectors) - Websecurity
@@ -46,7 +46,7 @@ translation_of: ""
 - Title in English: Hellfire for Redirectors (Hellfire for redirectors) - Websecurity
 - Published: date not stated
 - Original: <http://websecurity.com.ua/2854/>
-- Preserved from: http://websecurity.com.ua/2854/ (live) on 2026-08-09
+- Preserved from: http://websecurity.com.ua/2854/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

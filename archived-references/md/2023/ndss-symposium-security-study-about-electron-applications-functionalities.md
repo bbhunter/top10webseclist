@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/a-security-study-about-elec
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:56+00:00"
+  at: "2026-08-10T15:33:34+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/a-security-study-about-electron-applications-and-a-programming-methodology-to-tame-dom-functionalities/"
     title: A Security Study about Electron Applications and a Programming Methodology to Tame DOM Functionalities
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2023-305-paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2023.md:101"
+  - "2023.md:96"
 commit: ""
-content_sha256: 7c1f79d25192f7448b73636f06ff8bb45cff46f49a7f34727eab0d75937875a3
+content_sha256: 5eeee2b5522f42a99987d589c4c7983021efd4fd5fe96c04e7c7c7372bf67c7b
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/a-security-study-about-
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: d7e1512ec7683a60f7bc0288b7669e48382d5d4553b0d28cd172450f3c2531c1
+raw_sha256: 8f5e87c4004c662288ac254fb26e7b4797e70eadee3848325814c79b0b4ad130
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/a-security-study-about-electron-applications-and-a-programming-methodology-to-tame-dom-functionalities/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:56+00:00"
+retrieved_utc: "2026-08-10T15:33:34+00:00"
 slug: ndss-symposium-security-study-about-electron-applications-functionalities
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/a-security-study-about-electron-applications-and-a-programming-methodology-to-tame-dom-functionalities/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/a-security-study-about-electron-applications-and-a-programming-methodology-to-tame-dom-functionalities/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2023-305-paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/a-security-study-about-electron-applications-and-a-programming-methodology-to-tame-dom-functionalities/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -68,20 +70,20 @@ The Electron platform represents a paradigm to develop modern desktop apps using
 
 ## View More Papers
 
-### [ The Power of Bamboo: On the Post-Compromise Security for... ](https://www.ndss-symposium.org/ndss-paper/the-power-of-bamboo-on-the-post-compromise-security-for-searchable-symmetric-encryption/)
+### [ Brokenwire: Wireless Disruption of CCS Electric Vehicle Charging ](https://www.ndss-symposium.org/ndss-paper/brokenwire-wireless-disruption-of-ccs-electric-vehicle-charging/)
 
- Tianyang Chen (Huazhong University of Science and Technology), Peng Xu (Huazhong University of Science and Technology), Stjepan Picek (Radboud University), Bo Luo (The University of Kansas), Willy Susilo (University of Wollongong), Hai Jin (Huazhong University of Science and Technology), Kaitai Liang (TU Delft)
+ Sebastian Köhler (University of Oxford), Richard Baker (University of Oxford), Martin Strohmeier (armasuisse Science + Technology), Ivan Martinovic (University of Oxford)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/the-power-of-bamboo-on-the-post-compromise-security-for-searchable-symmetric-encryption/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/brokenwire-wireless-disruption-of-ccs-electric-vehicle-charging/)
 
-### [ Evaluations of Cyberattacks on Cooperative Control of Connected and... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-386/)
+### [ Accountable Javascript Code Delivery ](https://www.ndss-symposium.org/ndss-paper/accountable-javascript-code-delivery/)
 
- H M Sabbir Ahmad (Boston University), Ehsan Sabouni (Boston University), Wei Xiao (Massachusetts Institute of Technology), Christos G. Cassandras (Boston University), Wenchao Li (Boston University)
+ Ilkan Esiyok (CISPA Helmholtz Center for Information Security), Pascal Berrang (University of Birmingham & Nimiq), Katriel Cohn-Gordon (Meta), Robert Künnemann (CISPA Helmholtz Center for Information Security)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-386/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/accountable-javascript-code-delivery/)
 
-### [ Detecting Unknown Encrypted Malicious Traffic in Real Time via... ](https://www.ndss-symposium.org/ndss-paper/detecting-unknown-encrypted-malicious-traffic-in-real-time-via-flow-interaction-graph-analysis/)
+### [ Automatic Retrieval of Privacy Factors from IoMT Policies: ML... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-350/)
 
- Chuanpu Fu (Tsinghua University), Qi Li (Tsinghua University), Ke Xu (Tsinghua University)
+ Nyteisha Bookert, Mohd Anwar (North Carolina Agricultural and Technical State University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/detecting-unknown-encrypted-malicious-traffic-in-real-time-via-flow-interaction-graph-analysis/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-350/)

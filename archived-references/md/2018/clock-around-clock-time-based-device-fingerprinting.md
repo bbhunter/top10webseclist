@@ -5,9 +5,9 @@ resource: "https://www.eurecom.edu/publication/5664/download/sec-publi-5664.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:18+00:00"
+  at: "2026-08-10T15:09:42+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.eurecom.edu/publication/5664/download/sec-publi-5664.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2018.md:82"
+  - "2018.md:78"
 commit: ""
 content_sha256: a0d010a50cd7a53b1e7efbacc66931515e3bb1d459b1f9825a0447754f36f72f
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 43ddf04d8a15a90f69cd9b57b6b7e42458a573c356e43048fe8042f62de29c4c
 retrieved_from: "https://www.eurecom.edu/publication/5664/download/sec-publi-5664.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T10:08:18+00:00"
+retrieved_utc: "2026-08-10T15:09:42+00:00"
 slug: clock-around-clock-time-based-device-fingerprinting
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.eurecom.edu/publication/5664/download/sec-publi-5664.pdf>
-- Preserved from: https://www.eurecom.edu/publication/5664/download/sec-publi-5664.pdf (live) on 2026-08-09
+- Preserved from: https://www.eurecom.edu/publication/5664/download/sec-publi-5664.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -121,15 +121,10 @@ clocks use oscillators based on quartz crystals, and small variationsin those cr
 
 --- page 11 ---
 
-n'Z
-ðNîg¥ÚHªä%
-Ö:é½ òJðX&!çß½ù á�^†~ YèŒ`/ÛhOÅ£ºxÁ0’”¶Öbªhëäžoè>T:RZúÇsæ Q¿@ÈÒW‡
-Å¤ia�M_ÀÏ
-”ÄgÆå`VÃ@alƒ
-…®c‚«²`è&W£u‹¯¦šø[PúÿZŸÑÎ½ó¦„Ø¦yx�OkÄ²Âä$¬{-PÊâ¢œÅØ"ÉT!YÍUcµ|<wèpAóç…ÕÛõ¤+_]óätQÏüèFug°’ÓN½{Gáq¨A�N;ÃPÌhâaúÔbC­X�áŒ-®À–"Œù%]ˆ‚*ÝË©¯Xs>·3Ž9fP/û™¥�î|bÑíŽÂ@´D½}
+n'ZðNîg¥ÚHªä%Ö:é½ òJðX&!çß½ù á�^†~ YèŒ`/ÛhOÅ£ºxÁ0’”¶Öbªhëäžoè>T:RZúÇsæ Q¿@ÈÒW‡
+Å¤ia�M_ÀÏ”ÄgÆå`VÃ@alƒ…®c‚«²`è&W£u‹¯¦šø[PúÿZŸÑÎ½ó¦„Ø¦yx�OkÄ²Âä$¬{-PÊâ¢œÅØ"ÉT!YÍUcµ|<wèpAóç…ÕÛõ¤+_]óätQÏüèFug°’ÓN½{Gáq¨A�N;ÃPÌhâaúÔbC­X�áŒ-®À–"Œù%]ˆ‚*ÝË©¯Xs>·3Ž9fP/û™¥�î|bÑíŽÂ@´D½}
 
-üDúÁŸ“:’VK_Q"|D�¯*N²É5±äfâÜØÄã<áñê¯†¶†”õ=7dì J š‹ÚŸÇŠj¿¸	iÝF;ÞÁ*½‰ûe+ë^o¡ÒdoMÌ«®H|û0�ôåŒ^…ö`uÓ¾hO4 á#PÅ‹1Rsc¹> ªTÉ¡÷˜ýÐÇ�5ØÎú>¯ØvÊæ°î÷îÙ
-rëÿ&ó¹]Îß0ÃõäÁ•®·¦=ÙpÕ"Ê¤UópÌ°MjÞ¢[	xL¬ÐÛ‚³[Èþzöœè	qº7s?IéÍ	®hS#Š£ŒŠ|Ö|÷è2Ï›°c¨Ž«eÌfñ
+üDúÁŸ“:’VK_Q"|D�¯*N²É5±äfâÜØÄã<áñê¯†¶†”õ=7dì J š‹ÚŸÇŠj¿¸	iÝF;ÞÁ*½‰ûe+ë^o¡ÒdoMÌ«®H|û0�ôåŒ^…ö`uÓ¾hO4 á#PÅ‹1Rsc¹> ªTÉ¡÷˜ýÐÇ�5ØÎú>¯ØvÊæ°î÷îÙrëÿ&ó¹]Îß0ÃõäÁ•®·¦=ÙpÕ"Ê¤UópÌ°MjÞ¢[	xL¬ÐÛ‚³[Èþzöœè	qº7s?IéÍ	®hS#Š£ŒŠ|Ö|÷è2Ï›°c¨Ž«eÌfñ
 ÌdáÄ¶2iNüÆ?V
 
 --- page 12 ---
@@ -394,6 +389,7 @@ n
 m
 )2
 num
+_
 coindences
  
 0
@@ -405,6 +401,7 @@ f p
 3
 f p
 1
+_
 mode
  
 f loat
@@ -423,6 +420,7 @@ n
 do6
 f p
 1
+_
 mode
 [
 i
@@ -482,6 +480,7 @@ do14
 if
 f p
 1
+_
 mode
 [
 i
@@ -495,9 +494,11 @@ j
 ]
 then15
 num
+_
 coindences
  
 num
+_
 coindences
 +
 1
@@ -533,6 +534,7 @@ end
 24
 return
 num
+_
 coincidences
 ;
 Input:
@@ -780,8 +782,7 @@ that generates keys for encryption.
 
 --- page 20 ---
 
-|ÇoîÍ„ŒiFéJK»‚nA«é¤Ä×BM·M.~»Õ8x¯
->çU½YXý62æp1å$]©P§-GœHÖxðJÐãÜ™=ÅÐÆ-‡¦
+|ÇoîÍ„ŒiFéJK»‚nA«é¤Ä×BM·M.~»Õ8x¯>çU½YXý62æp1å$]©P§-GœHÖxðJÐãÜ™=ÅÐÆ-‡¦
 
 --- page 21 ---
 

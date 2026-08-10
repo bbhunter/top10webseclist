@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/berna
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:58+00:00"
+  at: "2026-08-10T16:05:24+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/bernardo"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2024.md:140"
+  - "2024.md:137"
 commit: ""
 content_sha256: 7128f73d5e8a93db1e946aacd33655528a3d486ced8edaf7c0097a23b3939098
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity24/presentation/b
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 00992953be3b1abbb403670b2bc1144ed3572c0933d5236ef4ee86116b6caf4c
+raw_sha256: 03a4b18df092f035c4bb7083e7b82f79524bf1abb734873fd189fe6c59a67c33
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity24/presentation/bernardo"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:58+00:00"
+retrieved_utc: "2026-08-10T16:05:24+00:00"
 slug: usenix-org-web-platform-threats-automated-detection-web-security-issues-wpt
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity24/presentation/bernardo>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity24/presentation/bernardo (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity24/presentation/bernardo (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://grepular.com/Abusing_HTTP_Status_Codes_to_Expose_Private_Info
 tags: [article, webseclist-reference, en, grepular-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:14:13+00:00"
+  at: "2026-08-10T15:10:39+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://grepular.com/Abusing_HTTP_Status_Codes_to_Expose_Private_Information"
@@ -34,7 +34,7 @@ publisher_english: ""
 raw_sha256: 74dcf3d91cb3a78760b6017430615bfae4fdddbcd0dd20ae8f464151e9e57b18
 retrieved_from: "https://www.grepular.com/Abusing_HTTP_Status_Codes_to_Expose_Private_Information"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:14:13+00:00"
+retrieved_utc: "2026-08-10T15:10:39+00:00"
 slug: 2011-grepular-com-abusing-http-status-codes-expose-private-information
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 - Published: 2011-01-21
 - Original: <https://grepular.com/Abusing_HTTP_Status_Codes_to_Expose_Private_Information>
 - Current location: <https://www.grepular.com/Abusing_HTTP_Status_Codes_to_Expose_Private_Information>
-- Preserved from: https://www.grepular.com/Abusing_HTTP_Status_Codes_to_Expose_Private_Information (live) on 2026-08-09
+- Preserved from: https://www.grepular.com/Abusing_HTTP_Status_Codes_to_Expose_Private_Information (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

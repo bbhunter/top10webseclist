@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/redefining-impossible-xss-without-ar
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:38+00:00"
+  at: "2026-08-10T15:36:52+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/redefining-impossible-xss-without-arbitrary-javascript"
@@ -19,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2020.md:23"
 commit: ""
-content_sha256: 6a74bdb495d669746aa517cc8cf8f516eee0bfaab70c81ae71e626d6e650d888
+content_sha256: 7048dc98c50d7a552db86bc3b240ebaf722a456eeace77cdc51f25f760da53a0
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/redefining-impossible-xss-withou
 published: 2020-09-23
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: ec8af3fadaed0aa264544baa3ace17afc848a6d4505c0a4c357e8e1455fc69cb
+raw_sha256: 4fc683b52c7a60b7c6abd7a26f84f9d12e445318576bb870cc4daa5014259243
 retrieved_from: "https://portswigger.net/research/redefining-impossible-xss-without-arbitrary-javascript"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:38+00:00"
+retrieved_utc: "2026-08-10T15:36:52+00:00"
 slug: 2020-portswigger-research-redefining-impossible-xss-without-arbitrary-javascript
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2020-09-23
 - Original: <https://portswigger.net/research/redefining-impossible-xss-without-arbitrary-javascript>
-- Preserved from: https://portswigger.net/research/redefining-impossible-xss-without-arbitrary-javascript (live) on 2026-08-09
+- Preserved from: https://portswigger.net/research/redefining-impossible-xss-without-arbitrary-javascript (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

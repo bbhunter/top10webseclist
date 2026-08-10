@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:52:28+00:00"
+  at: "2026-08-10T15:35:17+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:64"
+  - "2026-ai.md:40"
 commit: ""
 content_sha256: 5ab503c7695100220eda8839b55293d15e8fb582f0daafc2334f1c2d9920c310
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: dd3b0033dc24361354c29fc8c092245f77dff113f92764490b1033d290679e36
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:52:28+00:00"
+retrieved_utc: "2026-08-10T15:35:17+00:00"
 slug: your-sites-truly-isolated-automatically-detecting-logic-bugs-implementations
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf (live) on 2026-08-08
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -186,9 +186,7 @@ wfbªEtöÎ]Ç‚'P¤
 
 --- page 4 ---
 
-8í�ÄZÎ–“QlH‹åœbáûý+²o‹¤ƒÕíÕŠÑ»ìc«ìñ7öýÎ™– Ø­S‡?*é¨UZîù•lÇN žÌ™ZÝ¾TÛdì"ò ½­µjæ8]ZæóJPø½ÏîU¿S¿
-w?pÉ¿øZÚ=‚ü4
-$�RX�Ð¶ý?_àB�¹[�F-‡Y|ñ@ÔŽÀh�¶§v™•bß¬XI«Âw¹Ê%¢l:ºÍâ„Ÿt8„˜Ï"WžqâñÇ†®-›½&
+8í�ÄZÎ–“QlH‹åœbáûý+²o‹¤ƒÕíÕŠÑ»ìc«ìñ7öýÎ™– Ø­S‡?*é¨UZîù•lÇN žÌ™ZÝ¾TÛdì"ò ½­µjæ8]ZæóJPø½ÏîU¿S¿w?pÉ¿øZÚ=‚ü4$�RX�Ð¶ý?_àB�¹[�F-‡Y|ñ@ÔŽÀh�¶§v™•bß¬XI«Âw¹Ê%¢l:ºÍâ„Ÿt8„˜Ï"WžqâñÇ†®-›½&
 
 --- page 5 ---
 
@@ -313,6 +311,7 @@ https://example.com
 would comprise all sub-
 domains like
 https://
+*
 .example.com
 . The granularity
 of a site is coarser than that of an origin because it ignores
@@ -764,8 +763,7 @@ requirements to trigger SI bypass vulnerabilities.
 --- page 13 ---
 
 YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
-½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
+ $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
 
 --- page 14 ---
 
@@ -774,6 +772,7 @@ GeneratorBrowser
 Instrumentation
 SI Violation Sink
 Web ServersIPC fuzzer
+#
 $
 https://www.example.com
 ?
@@ -1534,9 +1533,13 @@ P
 O
 C'
 SID Class LeakSan ProcessSanCVE-2018-16074 3
+# 
 CVE-2019-5773 1
+ #
 #40093844 2
+ #
 CVE-2024-1671 3
+ #
 CVE-2022-3044 1
 # #from a specic storage (e.g., the clipboard), we seed this
 storage with the magic string. Next, we execute the PoC and
@@ -2262,8 +2265,10 @@ CVE-2022-0291 Hidden bug report for storage
 ? ?
 Œ
 #827853 Compromise renderer can inject HTTP headers 1
+#
 Œ
 #1770227 Compromised renderer can forge notications 1
+#
 ?
 #40060671 Compromised renderer can spoof PortContext and claim to be WorkerContext of arbitrary extension 1
 H#
@@ -2271,14 +2276,17 @@ H#
 CVE-2021-38010
 URLLoader
 leaked to ServiceWorker, compromised renderer can read the response of redirected cross-origin requests 1
+#
 ?
 CVE-2021-30507 Compromised renderer can spoof
 X-Chrome-offline
 header to read arbitrary le 1
+#
 ?
 CVE-2021-21222 TOCTOU bug in
 GeneratedCodeCache
 : compromised renderer can change value after the hash computation 2
+#
 ?
 CVE-2021-21175
 X-Frame-Options
@@ -2322,6 +2330,7 @@ CVE-2019-13682 Spoong origin in protocol handler registration leads to SI bypass
 CVE-2019-5865 CORS bypass: compromised renderer can set
 Host
 header during redirect 1
+#
 ?
 CVE-2019-5862 Compromised renderer can spoof
 document_url_
@@ -2376,6 +2385,7 @@ Site Isolation
 : bug is in scope of our work;
 H#
 : in scope but requires extensions as fuzzer input;
+#
 : out of scope; ?: unknown
 1: Checks missing; 2: Checks bypassed; 3: Origin confusion
 16
@@ -2554,8 +2564,7 @@ Fig. 9. Example input produced by the generator
 
 --- page 29 ---
 
->.Ö¨â¸
-=@z2«r¼Îºjß,“ö§âÝñ–ý.bÌŒÕÊHd|8_µðE"”»ª´þ2Š1x=lxØûQ••?gƒƒùÅLï%1<×¿Õ°cÄ—}¡üŸá¿‹±íj‚5ëZ‰‹©¥Þ‹/m
+>.Ö¨â¸=@z2«r¼Îºjß,“ö§âÝñ–ý.bÌŒÕÊHd|8_µðE"”»ª´þ2Š1x=lxØûQ••?gƒƒùÅLï%1<×¿Õ°cÄ—}¡üŸá¿‹±íj‚5ëZ‰‹©¥Þ‹/m
 
 --- page 30 ---
 
@@ -2624,5 +2633,4 @@ None
 
 --- page 32 ---
 
-±”üï�©Ò6«IÇÈñuEníjŽá+�Ñ±E³„“ÏgÅ$p*ŽV­V·á�íÕçw MÝ‰øô/Â`³ú¸rMãúwÞ_à:…&¶§n<ëPÅ*uÇ='ÚÉtò°û¬:9žÌg^j
-õ„òýµxîÊ*ÿï�nbgêö¿-;²1ŽÍ8£VÎ­—f
+±”üï�©Ò6«IÇÈñuEníjŽá+�Ñ±E³„“ÏgÅ$p*ŽV­V·á�íÕçw MÝ‰øô/Â`³ú¸rMãúwÞ_à:…&¶§n<ëPÅ*uÇ='ÚÉtò°û¬:9žÌg^jõ„òýµxîÊ*ÿï�nbgêö¿-;²1ŽÍ8£VÎ­—f

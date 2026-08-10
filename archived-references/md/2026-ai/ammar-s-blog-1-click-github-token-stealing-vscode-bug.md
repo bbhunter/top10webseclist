@@ -5,9 +5,9 @@ resource: "https://blog.ammaraskar.com/github-token-stealing/"
 tags: [article, webseclist-reference, en, ammar-s-blog]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:12+00:00"
+  at: "2026-08-10T15:03:58+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blog.ammaraskar.com/github-token-stealing/"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:65"
+  - "2026-ai.md:41"
 commit: ""
-content_sha256: f9d01c856687af9ffc9f9b49607b63f2e08424220487a7bdb5b58782de2fc0fb
+content_sha256: ff03c89709fed2ae795f3b1f9e33f02ff5572212b33d591d1e83db780afa4ac2
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://blog.ammaraskar.com/github-token-stealing/"
 published: ""
 publisher: "Ammar's Blog"
 publisher_english: ""
-raw_sha256: ea0369420a6e7e61ce23327e1e2e64abfd0bc065499e69a311a18dd0f66c6e1c
+raw_sha256: 96f76d5d149ffd7d000ba03d0bda39bb130f70aedf7c6f3573bdcc797140ed60
 retrieved_from: "https://blog.ammaraskar.com/github-token-stealing/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:12+00:00"
+retrieved_utc: "2026-08-10T15:03:58+00:00"
 slug: ammar-s-blog-1-click-github-token-stealing-vscode-bug
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://blog.ammaraskar.com/github-token-stealing/>
-- Preserved from: https://blog.ammaraskar.com/github-token-stealing/ (live) on 2026-08-08
+- Preserved from: https://blog.ammaraskar.com/github-token-stealing/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

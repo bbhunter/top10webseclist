@@ -5,9 +5,9 @@ resource: "https://www.dsinternals.com/en/black-hat-usa-26-pass-the-passkey/"
 tags: [article, webseclist-reference, en, dsinternals]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:17+00:00"
+  at: "2026-08-10T15:09:13+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.dsinternals.com/en/black-hat-usa-26-pass-the-passkey/"
@@ -20,7 +20,7 @@ authors:
   - @MGrafnetter
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:86"
+  - "2026-ai.md:64"
 commit: ""
 content_sha256: 6a0c1e246c3fddf91b60c7bc7a9ea0c12f75b5bf5c1b7dfff510a3957df92a82
 depth: full
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: 5135340c578b088213e58c9314868fbf613c514c1319078a73c53833f08d51c7
 retrieved_from: "https://www.dsinternals.com/en/black-hat-usa-26-pass-the-passkey/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:17+00:00"
+retrieved_utc: "2026-08-10T15:09:13+00:00"
 slug: 2026-dsinternals-upcoming-talk-pass-passkey-family-attacks-black-hat-usa-26
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2026-06-05
 - Original: <https://www.dsinternals.com/en/black-hat-usa-26-pass-the-passkey/>
-- Preserved from: https://www.dsinternals.com/en/black-hat-usa-26-pass-the-passkey/ (live) on 2026-08-08
+- Preserved from: https://www.dsinternals.com/en/black-hat-usa-26-pass-the-passkey/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

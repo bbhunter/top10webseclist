@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/navigating-murky-waters-aut
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:06+00:00"
+  at: "2026-08-10T15:33:48+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/navigating-murky-waters-automated-browser-feature-testing-for-uncovering-tracking-vectors/"
     title: "Navigating Murky Waters: Automated Browser Feature Testing for Uncovering Tracking Vectors"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_f72_paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2023.md:96"
+  - "2023.md:91"
 commit: ""
-content_sha256: 8f1df61b44abc9a0c3927ee47c83a44df18750b3cd51fa58611b06e0c9533ccc
+content_sha256: 38c04803a64deb772de6e6410acac70da0e54ac3816559aff8bd9a63a59c1641
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/navigating-murky-waters
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: db240143c4b218f09b45049828f816dd1e7ac8a604bf2f20ee4875d769a3de6b
+raw_sha256: b0a42de0a34b4a085c4d3ddd4a35b1e60b53986585c8d7275e7876e80ac88ba9
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/navigating-murky-waters-automated-browser-feature-testing-for-uncovering-tracking-vectors/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:06+00:00"
+retrieved_utc: "2026-08-10T15:33:48+00:00"
 slug: ndss-symposium-navigating-murky-waters-automated-browser-feature-vectors
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/navigating-murky-waters-automated-browser-feature-testing-for-uncovering-tracking-vectors/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/navigating-murky-waters-automated-browser-feature-testing-for-uncovering-tracking-vectors/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_f72_paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/navigating-murky-waters-automated-browser-feature-testing-for-uncovering-tracking-vectors/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -71,20 +73,20 @@ Modern web browsers constitute complex application platforms with a wide range o
 
 ## View More Papers
 
-### [ Trellis: Robust and Scalable Metadata-private Anonymous Broadcast ](https://www.ndss-symposium.org/ndss-paper/trellis-robust-and-scalable-metadata-private-anonymous-broadcast/)
+### [ Double and Nothing: Understanding and Detecting Cryptocurrency Giveaway Scams ](https://www.ndss-symposium.org/ndss-paper/double-and-nothing-understanding-and-detecting-cryptocurrency-giveaway-scams/)
 
- Simon Langowski (Massachusetts Institute of Technology), Sacha Servan-Schreiber (Massachusetts Institute of Technology), Srinivas Devadas (Massachusetts Institute of Technology)
+ Xigao Li (Stony Brook University), Anurag Yepuri (Stony Brook University), Nick Nikiforakis (Stony Brook University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/trellis-robust-and-scalable-metadata-private-anonymous-broadcast/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/double-and-nothing-understanding-and-detecting-cryptocurrency-giveaway-scams/)
 
-### [ Can You Tell Me the Time? Security Implications of... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-422/)
+### [ DARWIN: Survival of the Fittest Fuzzing Mutators ](https://www.ndss-symposium.org/ndss-paper/darwin-survival-of-the-fittest-fuzzing-mutators/)
 
- Vik Vanderlinden, Wouter Joosen, Mathy Vanhoef (imec-DistriNet, KU Leuven)
+ Patrick Jauernig (Technical University of Darmstadt), Domagoj Jakobovic (University of Zagreb, Croatia), Stjepan Picek (Radboud University and TU Delft), Emmanuel Stapf (Technical University of Darmstadt), Ahmad-Reza Sadeghi (Technical University of Darmstadt)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-422/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/darwin-survival-of-the-fittest-fuzzing-mutators/)
 
-### [ PPA: Preference Profiling Attack Against Federated Learning ](https://www.ndss-symposium.org/ndss-paper/ppa-preference-profiling-attack-against-federated-learning/)
+### [ Evaluating Wireless Attacks Against CCS Electric Vehicle Charging ](https://www.ndss-symposium.org/ndss-paper/auto-draft-341/)
 
- Chunyi Zhou (Nanjing University of Science and Technology), Yansong Gao (Nanjing University of Science and Technology), Anmin Fu (Nanjing University of Science and Technology), Kai Chen (Chinese Academy of Science), Zhiyang Dai (Nanjing University of Science and Technology), Zhi Zhang (CSIRO's Data61), Minhui Xue (CSIRO's Data61), Yuqing Zhang (University of Chinese Academy of Science)
+ Sebastian Köhler (University of Oxford)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/ppa-preference-profiling-attack-against-federated-learning/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-341/)

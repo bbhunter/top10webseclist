@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity17/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:13+00:00"
+  at: "2026-08-10T16:04:41+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/vila"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:95"
+  - "2016-17.md:89"
 commit: ""
 content_sha256: 60771acd5ce9f6cc9d986ed85c6786c7b675f7d01a4255f4941ed9c9c6750f2e
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity17/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 792ce544297b78976d565cf827c506a7aaef446ddbb324462d7e1ae9edb80652
+raw_sha256: 9667af011080f073392217f223844f3a6b4c60112c1b55c2a59fcddbacd57ff4
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/vila"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:13+00:00"
+retrieved_utc: "2026-08-10T16:04:41+00:00"
 slug: usenix-org-loophole-timing-attacks-shared-event-loops-chrome
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/vila>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/vila (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/vila (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/cdn-judo-breaking-the-cdn-d
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:01+00:00"
+  at: "2026-08-10T15:33:40+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/cdn-judo-breaking-the-cdn-dos-protection-with-itself/"
     title: "CDN Judo: Breaking the CDN DoS Protection with Itself"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2020/02/24411-paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2020.md:80"
+  - "2020.md:75"
 commit: ""
-content_sha256: 771b69b5d0645d021177758f7fb3c71e25b83c09c8ab1d9c6733c6eb3e2007ce
+content_sha256: a0bb4dcae8343a0243bac7d816e5e876f6bec286063082792568535a851990cb
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/cdn-judo-breaking-the-c
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 36465721e32f66adc2bc42c4d365878f5411331caff9342aa6ac0159b1836a22
+raw_sha256: f2bd099c92ddc76e6be3225bacdd79919510a94f52d2adbad8ae45b9fcc2a84e
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/cdn-judo-breaking-the-cdn-dos-protection-with-itself/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:01+00:00"
+retrieved_utc: "2026-08-10T15:33:40+00:00"
 slug: ndss-symposium-cdn-judo-breaking-cdn-dos-protection-itself
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/cdn-judo-breaking-the-cdn-dos-protection-with-itself/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/cdn-judo-breaking-the-cdn-dos-protection-with-itself/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2020/02/24411-paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/cdn-judo-breaking-the-cdn-dos-protection-with-itself/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -75,20 +77,20 @@ In this work, we examine the CDN's request-forwarding behaviors across six well-
 
 ## View More Papers
 
-### [ The Attack of the Clones Against Proof-of-Authority ](https://www.ndss-symposium.org/ndss-paper/the-attack-of-the-clones-against-proof-of-authority/)
+### [ OcuLock: Exploring Human Visual System for Authentication in Virtual... ](https://www.ndss-symposium.org/ndss-paper/oculock-exploring-human-visual-system-for-authentication-in-virtual-reality-head-mounted-display/)
 
- Parinya Ekparinya (University of Sydney), Vincent Gramoli (University of Sydney and CSIRO-Data61), Guillaume Jourjon (CSIRO-Data61)
+ Shiqing Luo (Georgia State University), Anh Nguyen (Georgia State University), Chen Song (San Diego State University), Feng Lin (Zhejiang University), Wenyao Xu (SUNY Buffalo), Zhisheng Yan (Georgia State University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/the-attack-of-the-clones-against-proof-of-authority/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/oculock-exploring-human-visual-system-for-authentication-in-virtual-reality-head-mounted-display/)
 
-### [ Cross-Origin State Inference (COSI) Attacks: Leaking Web Site States... ](https://www.ndss-symposium.org/ndss-paper/cross-origin-state-inference-cosi-attacks-leaking-web-site-states-through-xs-leaks/)
+### [ µRAI: Securing Embedded Systems with Return Address Integrity ](https://www.ndss-symposium.org/ndss-paper/murai-securing-embedded-systems-with-return-address-integrity/)
 
- Avinash Sudhodanan (IMDEA Software Institute), Soheil Khodayari (CISPA Helmholtz Center for Information Security), Juan Caballero (IMDEA Software Institute)
+ Naif Saleh Almakhdhub (Purdue University and King Saud University), Abraham A. Clements (Sandia National Laboratories), Saurabh Bagchi (Purdue University), Mathias Payer (EPFL)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/cross-origin-state-inference-cosi-attacks-leaking-web-site-states-through-xs-leaks/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/murai-securing-embedded-systems-with-return-address-integrity/)
 
-### [ HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing ](https://www.ndss-symposium.org/ndss-paper/hotfuzz-discovering-algorithmic-denial-of-service-vulnerabilities-through-guided-micro-fuzzing/)
+### [ DeepBinDiff: Learning Program-Wide Code Representations for Binary Diffing ](https://www.ndss-symposium.org/ndss-paper/deepbindiff-learning-program-wide-code-representations-for-binary-diffing/)
 
- William Blair (Boston University), Andrea Mambretti (Northeastern University), Sajjad Arshad (Northeastern University), Michael Weissbacher (Northeastern University), William Robertson (Northeastern University), Engin Kirda (Northeastern University), Manuel Egele (Boston University)
+ Yue Duan (Cornell University), Xuezixiang Li (UC Riverside), Jinghan Wang (UC Riverside), Heng Yin (UC Riverside)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/hotfuzz-discovering-algorithmic-denial-of-service-vulnerabilities-through-guided-micro-fuzzing/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/deepbindiff-learning-program-wide-code-representations-for-binary-diffing/)

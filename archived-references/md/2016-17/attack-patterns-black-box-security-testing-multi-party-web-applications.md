@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/attack-patt
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:28+00:00"
+  at: "2026-08-10T15:35:01+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/attack-patterns-black-box-security-testing-multi-party-web-applications.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:73"
+  - "2016-17.md:67"
 commit: ""
 content_sha256: 215cf86de4b2f43d89fc8242db891144bafd96d77b45ca57dc8f4f5f947713c6
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: c2477b42d29f1dfe866035f51b61eb949123022a8fa0298087a0fc9091522ae6
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/attack-patterns-black-box-security-testing-multi-party-web-applications.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:28+00:00"
+retrieved_utc: "2026-08-10T15:35:01+00:00"
 slug: attack-patterns-black-box-security-testing-multi-party-web-applications
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/attack-patterns-black-box-security-testing-multi-party-web-applications.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/attack-patterns-black-box-security-testing-multi-party-web-applications.pdf (live) on 2026-08-08
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/attack-patterns-black-box-security-testing-multi-party-web-applications.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

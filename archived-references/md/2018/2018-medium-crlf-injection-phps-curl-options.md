@@ -5,9 +5,9 @@ resource: "https://medium.com/@tomnomnom/crlf-injection-into-phps-curl-options-e
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:39+00:00"
+  at: "2026-08-10T15:32:27+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@tomnomnom/crlf-injection-into-phps-curl-options-e2e0d7cfe545"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2018.md:47"
 commit: ""
-content_sha256: 9729426a85846c442eef6a8a218a529c4170aefc0733a90e7beae072a728b37e
+content_sha256: 6b8c6671a23ecd773f04711a0c0c3397abef25266b8a7cdda6ae951d07a69d16
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://medium.com/@tomnomnom/crlf-injection-into-phps-curl-optio
 published: 2018-08-01
 publisher: Medium
 publisher_english: ""
-raw_sha256: aa06900f44ea2354f1a056855ec4e419b04de9fdbeb51cfd77dfb65eb35c92d5
+raw_sha256: 26d63e5c6722fe40cb1f7f87aa8ae30bc3cdc3aaf4b3b06e86efd92b561d0a63
 retrieved_from: "https://medium.com/@tomnomnom/crlf-injection-into-phps-curl-options-e2e0d7cfe545"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:39+00:00"
+retrieved_utc: "2026-08-10T15:32:27+00:00"
 slug: 2018-medium-crlf-injection-phps-curl-options
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2018-08-01
 - Original: <https://medium.com/@tomnomnom/crlf-injection-into-phps-curl-options-e2e0d7cfe545>
-- Preserved from: https://medium.com/@tomnomnom/crlf-injection-into-phps-curl-options-e2e0d7cfe545 (live) on 2026-08-09
+- Preserved from: https://medium.com/@tomnomnom/crlf-injection-into-phps-curl-options-e2e0d7cfe545 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

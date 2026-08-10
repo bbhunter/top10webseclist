@@ -5,9 +5,9 @@ resource: "https://www.slideshare.net/neexemil/hotpics-2021"
 tags: [slides, webseclist-reference, slideshare]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:28+00:00"
+  at: "2026-08-10T16:00:21+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.slideshare.net/neexemil/hotpics-2021"
@@ -33,10 +33,10 @@ original_url: "https://www.slideshare.net/neexemil/hotpics-2021"
 published: 2021-08-25
 publisher: Slideshare
 publisher_english: ""
-raw_sha256: c6141698c4292586428331d6af331d70bf386d2ab5145e37686c533a47d1a368
+raw_sha256: 771cbb470b3398cc777c78aa986c3b400a99a9adc77c0b8bae38482207aa486f
 retrieved_from: "https://www.slideshare.net/slideshow/hotpics-2021/250047486"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:28+00:00"
+retrieved_utc: "2026-08-10T16:00:21+00:00"
 slug: 2021-slideshare-hotpics-2021
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: 2021-08-25
 - Original: <https://www.slideshare.net/neexemil/hotpics-2021>
 - Current location: <https://www.slideshare.net/slideshow/hotpics-2021/250047486>
-- Preserved from: https://www.slideshare.net/slideshow/hotpics-2021/250047486 (live) on 2026-08-09
+- Preserved from: https://www.slideshare.net/slideshow/hotpics-2021/250047486 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,18 +5,20 @@ resource: "https://www.ndss-symposium.org/ndss2011/automated-discovery-of-parame
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:14+00:00"
+  at: "2026-08-10T15:34:03+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2011/automated-discovery-of-parameter-pollution-vulnerabilities-in-web-applications/"
     title: Automated Discovery of Parameter Pollution Vulnerabilities in Web Applications
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/Bald.pdf"
+  - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/bald2.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2011.md:80"
+  - "2011.md:75"
 commit: ""
 content_sha256: 32ed456c1434e6e8d290c9fe1a155ae8b170eda281907eca6ef5e0447c6f90ca
 depth: full
@@ -28,10 +30,10 @@ original_url: "https://www.ndss-symposium.org/ndss2011/automated-discovery-of-pa
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: f1d36a868ad1185970b8796a1e3a8eab0c15d494aeb4be5c2f5419bbbbcb0b32
+raw_sha256: 2d03a76f8a986cb62da0331324637a08d9eb8674bef61eac2fd92c66d6b61c62
 retrieved_from: "https://www.ndss-symposium.org/ndss2011/automated-discovery-of-parameter-pollution-vulnerabilities-in-web-applications/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:14+00:00"
+retrieved_utc: "2026-08-10T15:34:03+00:00"
 slug: ndss-symposium-automated-discovery-parameter-pollution-applications
 snapshot: ""
 title_english: ""
@@ -45,7 +47,9 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2011/automated-discovery-of-parameter-pollution-vulnerabilities-in-web-applications/>
-- Preserved from: https://www.ndss-symposium.org/ndss2011/automated-discovery-of-parameter-pollution-vulnerabilities-in-web-applications/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/Bald.pdf>
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/bald2.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss2011/automated-discovery-of-parameter-pollution-vulnerabilities-in-web-applications/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

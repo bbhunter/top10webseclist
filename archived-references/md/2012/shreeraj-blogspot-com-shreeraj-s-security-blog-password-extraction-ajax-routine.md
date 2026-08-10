@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://shreeraj.blogspot.c
 tags: [article, webseclist-reference, shreeraj-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:38+00:00"
+  at: "2026-08-10T15:59:08+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://shreeraj.blogspot.com/2012/01/password-extraction-from-ajaxdomhtml5.html"
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://shreeraj.blogsp
 published: ""
 publisher: shreeraj.blogspot.com
 publisher_english: ""
-raw_sha256: c1a9c56802ea5753b9a93b662ae18b871b3c62d134ed4a636c7689798b4f9c19
+raw_sha256: d4787c9d29b9428f7a3f78ab24b85c447dca59964f2332b16c7cba0712c84193
 retrieved_from: "https://web.archive.org/web/20150110195718/http://shreeraj.blogspot.com/2012/01/password-extraction-from-ajaxdomhtml5.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:38+00:00"
+retrieved_utc: "2026-08-10T15:59:08+00:00"
 slug: shreeraj-blogspot-com-shreeraj-s-security-blog-password-extraction-ajax-routine
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://shreeraj.blogspot.com/2012/01/password-extraction-from-ajaxdomhtml5.html>
 - Current location: <https://web.archive.org/web/20150110195718/http://shreeraj.blogspot.com/2012/01/password-extraction-from-ajaxdomhtml5.html>
-- Preserved from: https://web.archive.org/web/20150110195718/http://shreeraj.blogspot.com/2012/01/password-extraction-from-ajaxdomhtml5.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20150110195718/http://shreeraj.blogspot.com/2012/01/password-extraction-from-ajaxdomhtml5.html (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

@@ -5,15 +5,17 @@ resource: "https://web.archive.org/web/20160403035045/https://www.whitehatsec.co
 tags: [article, webseclist-reference, en, whitehat-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:39+00:00"
+  at: "2026-08-10T16:06:30+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/https://www.whitehatsec.com/blog/hackerkast-14-bonus-round/"
     title: "#HackerKast 14 Bonus Round: Canadian Beacon - JavaScript Beacon and Performance APIs"
   - id: canonical
     resource: "https://web.archive.org/web/20160809005444/https://www.whitehatsec.com/blog/hackerkast-14-bonus-round/"
+  - id: capture
+    resource: "https://web.archive.org/web/20160403035045/https://www.whitehatsec.com/blog/hackerkast-14-bonus-round/"
 also_at: []
 authors: []
 canonical_url: "https://web.archive.org/web/20160809005444/https://www.whitehatsec.com/blog/hackerkast-14-bonus-round/"
@@ -30,12 +32,12 @@ original_url: "https://web.archive.org/web/20160403035045/https://www.whitehatse
 published: ""
 publisher: WhiteHat Security
 publisher_english: ""
-raw_sha256: cff8f283f6f0bfce2c7f579abb0a644f942b7468fdd2ab6acc128b2e66de0ab0
+raw_sha256: 4c1ed265a9bf7aa1c8ac2ec5a8645f6835c7a3f5d68a88ecfb2cb18847d860cf
 retrieved_from: "https://web.archive.org/web/20160809005444/https://www.whitehatsec.com/blog/hackerkast-14-bonus-round/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:39+00:00"
+retrieved_utc: "2026-08-10T16:06:30+00:00"
 slug: whitehat-security-hackerkast-14-bonus-round-canadian-beacon-javascript-apis
-snapshot: ""
+snapshot: 20160403035045
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -48,7 +50,8 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/https://www.whitehatsec.com/blog/hackerkast-14-bonus-round/>
 - Current location: <https://web.archive.org/web/20160809005444/https://www.whitehatsec.com/blog/hackerkast-14-bonus-round/>
-- Preserved from: https://web.archive.org/web/20160809005444/https://www.whitehatsec.com/blog/hackerkast-14-bonus-round/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160809005444/https://www.whitehatsec.com/blog/hackerkast-14-bonus-round/ (live) on 2026-08-10
+- Capture timestamp: 20160403035045
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

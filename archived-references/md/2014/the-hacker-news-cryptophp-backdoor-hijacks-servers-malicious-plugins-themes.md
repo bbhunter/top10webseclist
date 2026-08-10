@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/http://thehackernews.com/2
 tags: [article, webseclist-reference, en, the-hacker-news]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:45:38+00:00"
+  at: "2026-08-10T16:01:29+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://thehackernews.com/2014/11/cryptophp-backdoored-cms-plugins-themes.html"
@@ -25,7 +25,7 @@ canonical_url: "https://web.archive.org/web/20160402192125/http://thehackernews.
 cited_by:
   - "2014.md:44"
 commit: ""
-content_sha256: 498eca7e7107562f5c2f0a2d2d2abfac823887b4c0d74be33673676b2ea9d938
+content_sha256: 9c2d4d784897df6c8982e033d98ecb586fa072e641e48a11efbc8a59a186585f
 depth: full
 depth_reason: default
 kind: article
@@ -35,10 +35,10 @@ original_url: "https://web.archive.org/web/20160403035045/http://thehackernews.c
 published: ""
 publisher: The Hacker News
 publisher_english: ""
-raw_sha256: e3f4995f0f1291691447c9cc37feaa5d1cd5ad46cbe2c17554e264b1e4be6b6c
+raw_sha256: c645e5416517dfb30ca8a3eb5d8eb60fd855faf0ea6e9e23c8c44d6f1fb455d7
 retrieved_from: "https://web.archive.org/web/20160402192125/http://thehackernews.com/2014/11/cryptophp-backdoored-cms-plugins-themes.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:45:38+00:00"
+retrieved_utc: "2026-08-10T16:01:29+00:00"
 slug: the-hacker-news-cryptophp-backdoor-hijacks-servers-malicious-plugins-themes
 snapshot: 20160403035045
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/http://thehackernews.com/2014/11/cryptophp-backdoored-cms-plugins-themes.html>
 - Current location: <https://web.archive.org/web/20160402192125/http://thehackernews.com/2014/11/cryptophp-backdoored-cms-plugins-themes.html>
-- Preserved from: https://web.archive.org/web/20160402192125/http://thehackernews.com/2014/11/cryptophp-backdoored-cms-plugins-themes.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160402192125/http://thehackernews.com/2014/11/cryptophp-backdoored-cms-plugins-themes.html (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 
@@ -69,7 +69,7 @@ page going offline. To read the original, follow the link above.
 
 #  [CryptoPHP Backdoor Hijacks Servers with Malicious Plugins & Themes](https://web.archive.org/web/20160402192125/http://thehackernews.com/2014/11/cryptophp-backdoored-cms-plugins-themes.html)
 
- ** Monday, November 24, 2014 **    Swati Khandelwal  
+ ** Monday, November 24, 2014 **    Swati Khandelwal
 
  [![](https://web.archive.org/web/20160402192125im_/http://3.bp.blogspot.com/-2KcrYMz6DL8/VHMPENA01zI/AAAAAAAAAiY/j9wk_c5DB80/s728/CryptoPHP-backdoor-compressed.jpg)](https://web.archive.org/web/20160402192125/http://3.bp.blogspot.com/-2KcrYMz6DL8/VHMPENA01zI/AAAAAAAAAiY/j9wk_c5DB80/s728/CryptoPHP-backdoor-compressed.jpg)
 
@@ -101,11 +101,7 @@ page going offline. To read the original, follow the link above.
 
 About the Author:
 
-[
-
 ![Swati - Hacking News](https://web.archive.org/web/20160402192125im_/http://4.bp.blogspot.com/-RpxfB--2ufo/Vbs_4_4UbKI/AAAAAAAAjxI/PtWp2H_ktZI/s1600/swati.png)
-
-]()
 
  [Swati Khandelwal](https://web.archive.org/web/20160402192125/https://twitter.com/Swati_THN)
 

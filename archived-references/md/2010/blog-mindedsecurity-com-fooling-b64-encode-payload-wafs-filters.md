@@ -5,9 +5,9 @@ resource: "http://blog.mindedsecurity.com/2010/04/fooling-b64encodepayload-on-wa
 tags: [article, webseclist-reference, blog-mindedsecurity-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:05:55+00:00"
+  at: "2026-08-10T15:05:11+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.mindedsecurity.com/2010/04/fooling-b64encodepayload-on-wafs-and.html"
@@ -30,10 +30,10 @@ original_url: "http://blog.mindedsecurity.com/2010/04/fooling-b64encodepayload-o
 published: ""
 publisher: blog.mindedsecurity.com
 publisher_english: ""
-raw_sha256: c66f0e4dcbcfa0574763974ed8ecbbeebe3331247bf1b34317582222ec982716
+raw_sha256: 8417b2126fb21862e412b67d843a30f7b7a17b484f2dd0a7daf84e9e07a34b50
 retrieved_from: "https://blog.mindedsecurity.com/2010/04/fooling-b64encodepayload-on-wafs-and.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:05:55+00:00"
+retrieved_utc: "2026-08-10T15:05:11+00:00"
 slug: blog-mindedsecurity-com-fooling-b64-encode-payload-wafs-filters
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://blog.mindedsecurity.com/2010/04/fooling-b64encodepayload-on-wafs-and.html>
 - Current location: <https://blog.mindedsecurity.com/2010/04/fooling-b64encodepayload-on-wafs-and.html>
-- Preserved from: https://blog.mindedsecurity.com/2010/04/fooling-b64encodepayload-on-wafs-and.html (live) on 2026-08-09
+- Preserved from: https://blog.mindedsecurity.com/2010/04/fooling-b64encodepayload-on-wafs-and.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

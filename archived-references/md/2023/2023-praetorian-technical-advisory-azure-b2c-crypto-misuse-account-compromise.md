@@ -5,9 +5,9 @@ resource: "https://www.praetorian.com/blog/azure-b2c-crypto-misuse-and-account-c
 tags: [article, webseclist-reference, en, praetorian]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:50+00:00"
+  at: "2026-08-10T15:37:02+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.praetorian.com/blog/azure-b2c-crypto-misuse-and-account-compromise/"
@@ -32,10 +32,10 @@ original_url: "https://www.praetorian.com/blog/azure-b2c-crypto-misuse-and-accou
 published: 2023-02-15
 publisher: Praetorian
 publisher_english: ""
-raw_sha256: 30191a437213a9e8c74b484bbe06f35c4f8d244eb836a7f22846267c2d8d559e
+raw_sha256: 3806f0e5fed223eb9aab9b5921c3135fa8d0f555da78ebef56e175b8c7d74202
 retrieved_from: "https://www.praetorian.com/blog/azure-b2c-crypto-misuse-and-account-compromise/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:50+00:00"
+retrieved_utc: "2026-08-10T15:37:02+00:00"
 slug: 2023-praetorian-technical-advisory-azure-b2c-crypto-misuse-account-compromise
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2023-02-15
 - Original: <https://www.praetorian.com/blog/azure-b2c-crypto-misuse-and-account-compromise/>
-- Preserved from: https://www.praetorian.com/blog/azure-b2c-crypto-misuse-and-account-compromise/ (live) on 2026-08-09
+- Preserved from: https://www.praetorian.com/blog/azure-b2c-crypto-misuse-and-account-compromise/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

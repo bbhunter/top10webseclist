@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/to-err-is-human-characteriz
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:12+00:00"
+  at: "2026-08-10T15:33:57+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/to-err-is-human-characterizing-the-threat-of-unintended-urls-in-social-media/"
     title: "To Err.Is Human: Characterizing the Threat of Unintended URLs in Social Media"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/ndss2021_3A-4_24322_paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2021.md:71"
+  - "2021.md:66"
 commit: ""
-content_sha256: 5c3b150d92676e6668cf21457c2f9e668f39c0a434ef74d903c010a6b366ec64
+content_sha256: 08dfd1aca7b984a44f42f6e9c90adada94fdfdf18c2363a581c0ca6255280320
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/to-err-is-human-charact
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 810f0f66c669f692c7f921af6d92ec284b819146d0892cc9f9c3bbf06291c005
+raw_sha256: b1ac1c004538e82e4849adf1b819a6952e71a3fac6332ae847dd8942795a6864
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/to-err-is-human-characterizing-the-threat-of-unintended-urls-in-social-media/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:12+00:00"
+retrieved_utc: "2026-08-10T15:33:57+00:00"
 slug: ndss-symposium-err-human-characterizing-threat-unintended-urls-social-media
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/to-err-is-human-characterizing-the-threat-of-unintended-urls-in-social-media/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/to-err-is-human-characterizing-the-threat-of-unintended-urls-in-social-media/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/ndss2021_3A-4_24322_paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/to-err-is-human-characterizing-the-threat-of-unintended-urls-in-social-media/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -70,20 +72,20 @@ In this paper, we show that the techniques used by such services to recognize UR
 
 ## View More Papers
 
-### [ Keynote: Armor for the back half of the camel:... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-131/)
+### [ The Nuts and Bolts of Building FlowLens ](https://www.ndss-symposium.org/ndss-paper/auto-draft-135/)
 
- Daniel Kahn Gillmor (ACLU)
+ Diogo Barradas (Instituto Superior Técnico, Universidade de Lisboa)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-131/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-135/)
 
-### [ PFirewall: Semantics-Aware Customizable Data Flow Control for Smart Home... ](https://www.ndss-symposium.org/ndss-paper/pfirewall-semantics-aware-customizable-data-flow-control-for-smart-home-privacy-protection/)
+### [ Taking a Closer Look at the Alexa Skill Ecosystem ](https://www.ndss-symposium.org/ndss-paper/auto-draft-133/)
 
- Haotian Chi (Temple University), Qiang Zeng (University of South Carolina), Xiaojiang Du (Temple University), Lannan Luo (University of South Carolina)
+ Christopher Lentzsch (Ruhr-Universität Bochum), Anupam Das (North Carolina State University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/pfirewall-semantics-aware-customizable-data-flow-control-for-smart-home-privacy-protection/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-133/)
 
-### [ Data Poisoning Attacks to Deep Learning Based Recommender Systems ](https://www.ndss-symposium.org/ndss-paper/data-poisoning-attacks-to-deep-learning-based-recommender-systems/)
+### [ NetPlier: Probabilistic Network Protocol Reverse Engineering from Message Traces ](https://www.ndss-symposium.org/ndss-paper/netplier-probabilistic-network-protocol-reverse-engineering-from-message-traces/)
 
- Hai Huang (Tsinghua University), Jiaming Mu (Tsinghua University), Neil Zhenqiang Gong (Duke University), Qi Li (Tsinghua University), Bin Liu (West Virginia University), Mingwei Xu (Tsinghua University)
+ Yapeng Ye (Purdue University), Zhuo Zhang (Purdue University), Fei Wang (Purdue University), Xiangyu Zhang (Purdue University), Dongyan Xu (Purdue University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/data-poisoning-attacks-to-deep-learning-based-recommender-systems/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/netplier-probabilistic-network-protocol-reverse-engineering-from-message-traces/)

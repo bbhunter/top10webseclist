@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/li-so
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:39+00:00"
+  at: "2026-08-10T16:05:06+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/li-song"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2022.md:77"
+  - "2022.md:75"
 commit: ""
 content_sha256: b596bc5507f919602b38a8caeeedf7b5818b6a656467797dd0e401c560d55522
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity22/presentation/l
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 0eff43c4a6816d3366ac2dd47af9d0cc1eb0c8a4295865d86b84f6f1027fcbad
+raw_sha256: 63d1ef1733197bca8b3a5b3af1508ba153c4a9169fa015f992664c1ebfbcd588
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity22/presentation/li-song"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:39+00:00"
+retrieved_utc: "2026-08-10T16:05:06+00:00"
 slug: usenix-org-mining-node-js-vulnerabilities-object-dependence-graph-query
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity22/presentation/li-song>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/li-song (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/li-song (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://www.sonarsource.com/blog/encoding-differentials-why-charset-m
 tags: [article, webseclist-reference, en, sonar]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:40+00:00"
+  at: "2026-08-10T16:00:31+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.sonarsource.com/blog/encoding-differentials-why-charset-matters/"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:33"
 commit: ""
-content_sha256: 33bcf9a61eb84528c950736e0001eef48310897b59fe8d14f5e005733bd9f47d
+content_sha256: 9138abe4b773485c7f82dc856ed2822b73aa3d49f9e01056d119b72365bc245d
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://www.sonarsource.com/blog/encoding-differentials-why-chars
 published: 2024-07-15
 publisher: Sonar
 publisher_english: ""
-raw_sha256: 075092e3dcf4cc59f7331a0c90089c181d32eaf7979c1ad5e979953859316899
+raw_sha256: e10a6733e8816cef51554499637fe36a493f6acc5c2218d6be35d8ecd537c717
 retrieved_from: "https://www.sonarsource.com/blog/encoding-differentials-why-charset-matters/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:40+00:00"
+retrieved_utc: "2026-08-10T16:00:31+00:00"
 slug: 2024-sonar-encoding-differentials-why-charset-matters
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2024-07-15
 - Original: <https://www.sonarsource.com/blog/encoding-differentials-why-charset-matters/>
-- Preserved from: https://www.sonarsource.com/blog/encoding-differentials-why-charset-matters/ (live) on 2026-08-09
+- Preserved from: https://www.sonarsource.com/blog/encoding-differentials-why-charset-matters/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

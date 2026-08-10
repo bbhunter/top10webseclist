@@ -5,9 +5,9 @@ resource: "https://medium.com/intigriti/abusing-autoresponders-and-email-bounces
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:42+00:00"
+  at: "2026-08-10T15:32:29+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/intigriti/abusing-autoresponders-and-email-bounces-9b1995eb53c2"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:30"
 commit: ""
-content_sha256: 10889edfe6736d585686b7c6600bc8af047c850a1222f6e68fe1095831c3a778
+content_sha256: 2926f33eeecdafe8c0c01f03d0f029d838a853592ed5976bda7cdc5bd8f74237
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://medium.com/intigriti/abusing-autoresponders-and-email-bou
 published: 2019-02-21
 publisher: Medium
 publisher_english: ""
-raw_sha256: 7a5a4a45f3bdeef62ebc7ff3768a57e9c882a38abbe5fef9d9297b5b9cb7f478
+raw_sha256: 6dfdc87dcf678dc97ce723498a563df4c4a34363b925837376e3edf7a1aca067
 retrieved_from: "https://medium.com/intigriti/abusing-autoresponders-and-email-bounces-9b1995eb53c2"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:42+00:00"
+retrieved_utc: "2026-08-10T15:32:29+00:00"
 slug: 2019-medium-abusing-autoresponders-email-bounces
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2019-02-21
 - Original: <https://medium.com/intigriti/abusing-autoresponders-and-email-bounces-9b1995eb53c2>
-- Preserved from: https://medium.com/intigriti/abusing-autoresponders-and-email-bounces-9b1995eb53c2 (live) on 2026-08-09
+- Preserved from: https://medium.com/intigriti/abusing-autoresponders-and-email-bounces-9b1995eb53c2 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

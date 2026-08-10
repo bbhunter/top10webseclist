@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/processing-dangerous-paths-
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:08+00:00"
+  at: "2026-08-10T15:33:50+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/processing-dangerous-paths-on-security-and-privacy-of-the-portable-document-format/"
     title: Processing Dangerous Paths – On Security and Privacy of the Portable Document Format
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/ndss2021_1B-2_23109_paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2021.md:65"
+  - "2021.md:60"
 commit: ""
-content_sha256: aa20e9cf98a2e8faddcaa31ccde4aa43c5054c760aa633cb86c5162ab3eeecdb
+content_sha256: b1371d59354a37de1fb0f1cf65c0c6f06be579e028dabf5fbcb6e66af92bb6b7
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/processing-dangerous-pa
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: baa693b521a058cf28dc1a6b7d0e508b311fd83451d78acf74e5cfa366960c30
+raw_sha256: cf882add5febe0a81f25026343f3d6a431a510d1e36827a4004aa91799f3640e
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/processing-dangerous-paths-on-security-and-privacy-of-the-portable-document-format/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:08+00:00"
+retrieved_utc: "2026-08-10T15:33:50+00:00"
 slug: ndss-symposium-processing-dangerous-paths-security-privacy-portable-format
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/processing-dangerous-paths-on-security-and-privacy-of-the-portable-document-format/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/processing-dangerous-paths-on-security-and-privacy-of-the-portable-document-format/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/ndss2021_1B-2_23109_paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/processing-dangerous-paths-on-security-and-privacy-of-the-portable-document-format/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -68,20 +70,20 @@ PDF is the de-facto standard for document exchange. It is common to open PDF fil
 
 ## View More Papers
 
-### [ CV-Inspector: Towards Automating Detection of Adblock Circumvention ](https://www.ndss-symposium.org/ndss-paper/cv-inspector-towards-automating-detection-of-adblock-circumvention/)
+### [ FlowLens: Enabling Efficient Flow Classification for ML-based Network Security... ](https://www.ndss-symposium.org/ndss-paper/flowlens-enabling-efficient-flow-classification-for-ml-based-network-security-applications/)
 
- Hieu Le (University of California, Irvine), Athina Markopoulou (University of California, Irvine), Zubair Shafiq (University of California, Davis)
+ Diogo Barradas (INESC-ID, Instituto Superior Técnico, Universidade de Lisboa), Nuno Santos (INESC-ID, Instituto Superior Técnico, Universidade de Lisboa), Luis Rodrigues (INESC-ID, Instituto Superior Técnico, Universidade de Lisboa), Salvatore Signorello (LASIGE, Faculdade de Ciências, Universidade de Lisboa), Fernando M. V. Ramos (INESC-ID, Instituto Superior Técnico, Universidade de Lisboa), André Madeira (INESC-ID, Instituto Superior Técnico, Universidade de…
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/cv-inspector-towards-automating-detection-of-adblock-circumvention/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/flowlens-enabling-efficient-flow-classification-for-ml-based-network-security-applications/)
 
-### [ SerialDetector: Principled and Practical Exploration of Object Injection Vulnerabilities... ](https://www.ndss-symposium.org/ndss-paper/serialdetector-principled-and-practical-exploration-of-object-injection-vulnerabilities-for-the-web/)
+### [ OblivSketch: Oblivious Network Measurement as a Cloud Service ](https://www.ndss-symposium.org/ndss-paper/oblivsketch-oblivious-network-measurement-as-a-cloud-service/)
 
- Mikhail Shcherbakov (KTH Royal Institute of Technology), Musard Balliu (KTH Royal Institute of Technology)
+ Shangqi Lai (Monash University), Xingliang Yuan (Monash University), Joseph K. Liu (Monash University), Xun Yi (RMIT University), Qi Li (Tsinghua University), Dongxi Liu (Data61, CSIRO), Surya Nepal (Data61, CSIRO)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/serialdetector-principled-and-practical-exploration-of-object-injection-vulnerabilities-for-the-web/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/oblivsketch-oblivious-network-measurement-as-a-cloud-service/)
 
-### [ Understanding and Detecting International Revenue Share Fraud ](https://www.ndss-symposium.org/ndss-paper/understanding-and-detecting-international-revenue-share-fraud/)
+### [ V2X Security: Status and Open Challenges ](https://www.ndss-symposium.org/ndss-paper/auto-draft-170/)
 
- Merve Sahin (SAP Security Research), Aurélien Francillon (EURECOM)
+ Jonathan Petit (Director Of Engineering at Qualcomm Technologies) Dr. Jonathan Petit is Director of Engineering at Qualcomm Technologies, Inc., where he leads research in security of connected and automated vehicles (CAV). His team works on designing security solutions, but also develops tools for automotive penetration testing and builds prototypes. His recent work on misbehavior protection…
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/understanding-and-detecting-international-revenue-share-fraud/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-170/)

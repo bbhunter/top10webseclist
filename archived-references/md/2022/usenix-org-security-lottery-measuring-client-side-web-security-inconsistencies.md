@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/roth"
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:42+00:00"
+  at: "2026-08-10T16:05:08+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/roth"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2022.md:82"
+  - "2022.md:80"
 commit: ""
 content_sha256: 98419a7be769502db86e62b52e20057b046ff5fbb5e82e63dc0963f7af73e59b
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity22/presentation/r
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: fb3b01daa02b29233e3350aed4f8eee71db19bf9bae08c82f75a87dc0957163b
+raw_sha256: 547412350875db47561fe1f2ef9ff5b071474f72da84085df91a5e5edc80e665
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity22/presentation/roth"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:42+00:00"
+retrieved_utc: "2026-08-10T16:05:08+00:00"
 slug: usenix-org-security-lottery-measuring-client-side-web-security-inconsistencies
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity22/presentation/roth>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/roth (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/roth (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://medium.com/@renwa/the-underrated-bugs-clickjacking-css-inject
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:21+00:00"
+  at: "2026-08-10T15:32:20+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@renwa/the-underrated-bugs-clickjacking-css-injection-drag-drop-xss-cookie-bomb-login-logout-csrf-84307a98fffa"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2022.md:30"
 commit: ""
-content_sha256: b14cd9a6ee83f83ce3ec3699678df17604f1fe93447f0b2b6843a4cc87a6cd59
+content_sha256: be6ad0fcb95773c53e3b60dc08468de6d78357c73928ed0b2e04825aa3b93f2a
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://medium.com/@renwa/the-underrated-bugs-clickjacking-css-in
 published: 2022-05-10
 publisher: Medium
 publisher_english: ""
-raw_sha256: 94a7f673f61bdee8c1be196087ec8e7299a189ae071336d364f913913c833f08
+raw_sha256: 70a626b8f807e688513e36e89f4454e0dd5d1155564da61c43864856f4ece139
 retrieved_from: "https://medium.com/@renwa/the-underrated-bugs-clickjacking-css-injection-drag-drop-xss-cookie-bomb-login-logout-csrf-84307a98fffa"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:21+00:00"
+retrieved_utc: "2026-08-10T15:32:20+00:00"
 slug: 2022-medium-underrated-bugs-clickjacking-css-injection-drag-drop-xss-csrf
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2022-05-10
 - Original: <https://medium.com/@renwa/the-underrated-bugs-clickjacking-css-injection-drag-drop-xss-cookie-bomb-login-logout-csrf-84307a98fffa>
-- Preserved from: https://medium.com/@renwa/the-underrated-bugs-clickjacking-css-injection-drag-drop-xss-cookie-bomb-login-logout-csrf-84307a98fffa (live) on 2026-08-09
+- Preserved from: https://medium.com/@renwa/the-underrated-bugs-clickjacking-css-injection-drag-drop-xss-cookie-bomb-login-logout-csrf-84307a98fffa (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

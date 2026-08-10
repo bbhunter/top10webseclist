@@ -5,9 +5,9 @@ resource: "https://lcamtuf.blogspot.com/2012/05/yes-you-can-have-fun-with-downlo
 tags: [article, webseclist-reference, lcamtuf-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:24+00:00"
+  at: "2026-08-10T15:31:03+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://lcamtuf.blogspot.com/2012/05/yes-you-can-have-fun-with-downloads.html"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2012.md:43"
 commit: ""
-content_sha256: 609ec87f8ef0c33ae2d99a331a1a1d94d32c4eb38598085e71edaf97b5918171
+content_sha256: 831da4ed6860754b7dedebefa4465f6fcbc4c2ff6c9c363822d41e251af971da
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://lcamtuf.blogspot.com/2012/05/yes-you-can-have-fun-with-do
 published: ""
 publisher: lcamtuf.blogspot.com
 publisher_english: ""
-raw_sha256: e8d884251fc7132c79ca414a8076844a61693746c75cf243bfe929d738f08bcb
+raw_sha256: 20fc47996164c5ad82f7c85e07599662597ae855eeb59c46bbbd78e07171f257
 retrieved_from: "https://lcamtuf.blogspot.com/2012/05/yes-you-can-have-fun-with-downloads.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:24+00:00"
+retrieved_utc: "2026-08-10T15:31:03+00:00"
 slug: lcamtuf-blogspot-com-yes-you-can-have-fun-downloads
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://lcamtuf.blogspot.com/2012/05/yes-you-can-have-fun-with-downloads.html>
-- Preserved from: https://lcamtuf.blogspot.com/2012/05/yes-you-can-have-fun-with-downloads.html (live) on 2026-08-09
+- Preserved from: https://lcamtuf.blogspot.com/2012/05/yes-you-can-have-fun-with-downloads.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -68,7 +68,7 @@ It is an important and little-known property of web browsers that one document c
 
  Here's an example of how this looks in Chrome; the fake `flash11_updater.exe` download supposedly served from `adobe.com` is, in reality, supplied by the attacker:
 
- ![](https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_vDUinEc6uwG3OHwfi9Dk3CN-AnkrmAxZSQb87ZAQdobW93cnP5Wr-QZ1F03zvVpOMGUb6q5U2C2qh78Bkn8iFCalMySJXqo36tjQlz=s0-d)
+ ![](https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_tILCRLHLLSNvfbocNhU6CKDrVgC50EuJ-8Q7hODVhVkM4QhbkgYI1JuW8E53MQrpNSVy6ieONQ1L_N_EXNUkQWLa2D4LJDgdLWzacQ=s0-d)
 
  All the top three browsers are currently vulnerable to this attack; some provide weak cues about the origin of the download, but in all cases, the prompt is attached to the wrong window - and the indicators seem completely inadequate.
 

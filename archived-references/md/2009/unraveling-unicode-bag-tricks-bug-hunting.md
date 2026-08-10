@@ -5,9 +5,9 @@ resource: "https://www.blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:51+00:00"
+  at: "2026-08-10T15:03:44+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf"
@@ -18,7 +18,7 @@ also_at: []
 authors: []
 canonical_url: "https://blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf"
 cited_by:
-  - "2009.md:111"
+  - "2009.md:106"
 commit: ""
 content_sha256: d6a56432e73b6ac7f4731f303f3f98a6d9eed1e65b3f189fd124ee6a49ef11eb
 depth: full
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: 2f3bff97dddf9e9c32ad3725de43b7022fd694e8bd5ef8e48549832083d90151
 retrieved_from: "https://blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:51+00:00"
+retrieved_utc: "2026-08-10T15:03:44+00:00"
 slug: unraveling-unicode-bag-tricks-bug-hunting
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf>
 - Current location: <https://blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf>
-- Preserved from: https://blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf (live) on 2026-08-08
+- Preserved from: https://blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -66,18 +66,27 @@ A Bag of Tricks for Bug Hunting
          Black Hat USA
                July 2009
 
+
               Chris Weber
             www.lookout.net
        chris@casabasecurity.com
              Casaba Security
 Can you tell the difference?
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 How about now?
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 The Transformers
 When good input turns bad
+
+
 
 <scrİpt>
     becomes
@@ -85,6 +94,7 @@ When good input turns bad
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
                             Agenda
+
 
 Black Hat USA - July 2009    www.casabasecurity.com   © 2009 Chris Weber
 Unicode Transformations
@@ -97,6 +107,8 @@ Agenda
        – Find Unicode issues in Web-testing
        – Visual Spoofing Detection
 
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Unicode Transformations
 Agenda
@@ -105,6 +117,9 @@ Agenda
 • Root Causes
 • Attack Vectors
 • Tools
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Unicode Crash Course
@@ -116,9 +131,15 @@ The Unicode Attack Surface
        • Programming languages
        • Operating Systems
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Unicode Crash Course
 Unthink it
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Unicode Crash Course
@@ -144,6 +165,9 @@ Code pages and charsets
                ISO-8859-1
                EBCDIC 037
 
+
+
+
 Black Hat USA - July 2009     www.casabasecurity.com   © 2009 Chris Weber
 Unicode Crash Course
 Ad Infinitum
@@ -151,6 +175,9 @@ Ad Infinitum
 • Unicode can represent them all
 • ASCII range is preserved
        – U+0000 to U+007F are mapped to ASCII
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Unicode Crash Course
@@ -161,25 +188,45 @@ Code points
 
                             U+0000 to U+10FFFF
 
+
+
+
 Black Hat USA - July 2009          www.casabasecurity.com   © 2009 Chris Weber
 Unicode Crash Course
 Code Points
+
+
+
 
                             A = U+0041
 
 Every character has a unique number
 
+
+
 Black Hat USA - July 2009        www.casabasecurity.com   © 2009 Chris Weber
 Unicode Crash Course
+
+
+
 
                                    A
                                  U+0041
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Unicode Crash Course
 
+
+
+
                                      ſ
                                 U+017F
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Unicode Crash Course
@@ -202,6 +249,7 @@ Encodings and Escape sequences
 
 U+FF21 FULLWIDTH LATIN CAPITAL LETTER A
 
+
                             %EF%BC%A1
                               &#xFF21;
                               &#65313;
@@ -216,6 +264,9 @@ Agenda
 • Attack Vectors
 • Tools
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Unicode Transformations
 Agenda
@@ -224,6 +275,9 @@ Agenda
 • Root Causes
 • Attack Vectors
 • Tools
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Unicode Transformations
@@ -244,6 +298,7 @@ Overview
        – Charset mismatches
 • Tools
 
+
 Black Hat USA - July 2009            www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
 Visual Spoofing
@@ -253,6 +308,7 @@ Visual Spoofing
 
 AΑАᐱᗅᗋᗩᴀᴬ⍲Ａ
 
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Attack Vectors
 IDN homograph attacks
@@ -261,11 +317,17 @@ Some browsers allow .COM IDN’s
   based on script family
        – (Latin has a big family)
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Attack Vectors
 IDN homograph attacks
 
 Safari
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Attack Vectors
@@ -273,14 +335,20 @@ IDN homograph attacks
 
 Opera
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Attack Vectors
 IDN homograph attacks
+
 
           www.google.com is not www.gooɡle.com
 
                              Latin                             Latin
                             U+0069                            U+0261
+
+
 
     gɡ
 Black Hat USA - July 2009            www.casabasecurity.com            © 2009 Chris Weber
@@ -296,10 +364,13 @@ ICANN guidelines v2.0                                Deny-all default seems to
                                                      script choices, there’s
                                                      plenty to choose from.
 
+
+
                                                      Great for domain labels,
                                                      but sub domain labels still
                                                      open to punctuation and
                                                      syntax spoofing.
+
 
 Black Hat USA - July 2009   www.casabasecurity.com                         © 2009 Chris Weber
 Attack Vectors
@@ -312,15 +383,21 @@ Visual spoofing Vectors
 • Manipulating Combining Marks
 • Bidi and syntax spoofing
 
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Attack Vectors
 Non-Unicode homograph attacks
        rn can look like m in certain fonts
 
+
           www.mullets.com is not www.rnullets.com
 
                              Latin                                Latin
                             U+006D                            U+0073 U+006E
+
+
+
 
 Black Hat USA - July 2009            www.casabasecurity.com                   © 2009 Chris Weber
 Attack Vectors
@@ -330,6 +407,9 @@ Non-Unicode homograph attacks
           1 and l
           5 and S
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Attack Vectors
 Non-Unicode homograph attacks
@@ -338,6 +418,9 @@ Classic long URL’s
 http://login.facebook.intvitation.videomessageid-
    h048892r39.sessionnfbid.com/home.htm?/disbursements/
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Attack Vectors
 Single-script and The Confusables
@@ -345,11 +428,14 @@ Single-script and The Confusables
 www.ɑpple.com
               // All Latin using Latin small letter Alpha ‘ɑ’
 
+
 www.faϲebook.com
            // Mixed Latin/Greek with lunate sigma symbol ‘c’
 
+
 www.аЬс.com
            // All Cyrillic ‘abc’
+
 
 Black Hat USA - July 2009         www.casabasecurity.com        © 2009 Chris Weber
 Attack Vectors
@@ -357,29 +443,44 @@ IDN homograph attacks
 
 Browsers whitelist .ORG
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Attack Vectors
 IDN homograph attacks
 
 Others don’t necessarily but…
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Attack Vectors
 IDN homograph attacks
+
 
           www.mozilla.org is not www.mozílla.org
 
                              Latin                       Latin
                             U+0069                      U+00ED
 
+
+
+
 Black Hat USA - July 2009      www.casabasecurity.com            © 2009 Chris Weber
 Attack Vectors
 IDN Syntax Spoofing with / lookalikes
+
+
+
 
           http://www.google.com／path／file?.nottrusted.org
 
                                                      FULLWIDTH SOLIDUS
                                                           U+FF0F
+
+
 
               (This case doesn’t work anymore)
 
@@ -387,10 +488,15 @@ Black Hat USA - July 2009   www.casabasecurity.com                   © 2009 Chr
 Attack Vectors
 IDN Syntax Spoofing with / lookalikes
 
+
+
+
         http://www.google.com/path/file.nottrusted.org
 
                                                      SOLIDUS
                                                      U+002F
+
+
 
               (Normalized to a / U+002F)
 
@@ -398,10 +504,16 @@ Black Hat USA - July 2009   www.casabasecurity.com             © 2009 Chris Web
 Attack Vectors
 IDN Syntax Spoofing with / lookalikes
 
+
+
+
           http://www.google.comﾉpathﾉfile.nottrusted.org
+
+
 
                                                Katakana No
                                                  U+FF89
+
 
               (However punctuation not required…)
 
@@ -409,9 +521,15 @@ Black Hat USA - July 2009    www.casabasecurity.com          © 2009 Chris Weber
 Attack Vectors
 The Invisibles
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Attack Vectors
 Visual Spoofing with Bidi Explicit Directional Overrides
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
@@ -426,6 +544,7 @@ Impact: Filter evasion, Enable code execution
        When ′ becomes '
               U+2032 PRIME
 
+
 Black Hat USA - July 2009    www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
 Guidance for Best-Fit mappings
@@ -435,6 +554,9 @@ Guidance for Best-Fit mappings
 • Set WC_NO_BEST_FIT_CHARS flag with
      WideCharToMultiByte()
 • Use Unicode end-to-end
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Case Study: Social Networking
@@ -448,6 +570,8 @@ Best-fit mappings
          mappings to leverage cross-site scripting
        – Root Cause: best-fit mappings
 
+
+
 Black Hat USA - July 2009   www.casabasecurity.com       © 2009 Chris Weber
 Case Study: Social Networking
 Best-fit mappings
@@ -457,6 +581,9 @@ Best-fit mappings
          -[U+ff4d]oz-binding()
     would best-fit map!
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
 Normalization
@@ -464,13 +591,23 @@ Normalization
 Normalizing strings after validation is dangerous
 Impact: Filter evasion, Enable code execution
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
 Normalization
 
+
+
+
                             İ becomes I + ̇
 
+
               U+0130              U+0049                  U+0307
+
+
+
 
 Black Hat USA - July 2009        www.casabasecurity.com            © 2009 Chris Weber
 Root Causes
@@ -482,7 +619,10 @@ But are there dangerous characters?
 
                             ﹤ becomes <
 
+
                   U+FE64                                 U+003C
+
+
 
 Black Hat USA - July 2009       www.casabasecurity.com            © 2009 Chris Weber
 Root Causes
@@ -490,9 +630,15 @@ Normalization
 
                             ﹤ becomes <
 
+
                   U+FE64                                 U+003C
 
+
+
+
 toNFKC(“﹤script>”) = “<script>”
+
+
 
 Black Hat USA - July 2009       www.casabasecurity.com            © 2009 Chris Weber
 Root Causes
@@ -500,6 +646,9 @@ Guidance for Normalization
 
 Normalize strings before validation
 NFKC first defense against Visual spoofing
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
@@ -512,6 +661,8 @@ Application gets                              %C0%A7
 OS/Framework sees                             %27
 Database gets                                 '
 
+
+
 Black Hat USA - July 2009   www.casabasecurity.com     © 2009 Chris Weber
 Root Causes
 Guidance for Non-shortest form UTF-8
@@ -521,14 +672,22 @@ Guidance for Non-shortest form UTF-8
        – Interpretation of non-shortest form for BMP
 • Validate UTF-8 encoding (throw on error)
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Attack Vectors
 Directory traversal
 
+
 How many ways can you say                        ../
+
 
 Black Hat USA - July 2009   www.casabasecurity.com     © 2009 Chris Weber
 Attack Vectors
+
+
+
 
                                      ../
 
@@ -544,6 +703,7 @@ Handling the Unexpected
        – U+FEFF is the BOM
 • Impact: Filter evasion, Enable code execution
 
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
 Handling the Unexpected: Over-consumption
@@ -554,15 +714,24 @@ Over-consuming ill-formed byte sequences
        <41 C2 3E 41>             becomes
        <41 41>
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
 Handling the Unexpected: Over-consumption
 
+
+
        <img src="#[0xC2]"> "onerror="alert(1)"<br />
+
 
        becomes
 
        <img src="#>" onerror="alert(1)"<br />
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
@@ -571,17 +740,28 @@ Handling the Unexpected: Character-substitution
 Correcting insecurely rather than failing
        – Substituting a ‘.’ or a ‘/’ would be bad
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
 Handling the Unexpected: Character-deletion
 
 “deletion of noncharacters” (UTR-36)
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
 Handling the Unexpected: Character-deletion
 
+
+
      <scr[U+FEFF]ipt> becomes <script>
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
@@ -592,6 +772,9 @@ Solutions for Handling the Unexpected
 • Use U+FFFD instead
        – A common alternative is ‘?’, which can be safe
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Attack Vectors
 Filter evasion
@@ -600,6 +783,9 @@ Filter evasion
 • Exploit delivery techniques
        – E.g. Cross-site scripting (buffer overflow of the
          Web)
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Case Study: Apple and Mozilla
@@ -616,11 +802,18 @@ Can be nastier:
 
      <a h[U+FEFF]ref=“java[U+FEFF]script:al[U+FEFF]ert(„XSS‟)>
 
+
+
 Black Hat USA - July 2009     www.casabasecurity.com         © 2009 Chris Weber
 A Closer Look: The BOM
 
+
+
                              BOM
                              U+FEFF
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
@@ -631,19 +824,34 @@ Casing
 • Casing can multiply the buffer sizes needed
 • Impact: Filter evasion, Enable code execution
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
 Casing
 
+
                             toLower(“İ”) == “i”
 
+
+
               toLower(“scrİpt”) == “script”
+
+
+
 
 Black Hat USA - July 2009         www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
 Casing
 
+
+
+
               len(x) != len(toLower(x))
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
@@ -653,6 +861,9 @@ Guidance for Casing
 • Leverage existing frameworks and API’s
        – ICU, .Net
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
 Buffer Overflows
@@ -661,6 +872,9 @@ Buffer Overflows
   vs. bytes)
 • Improper width calculations
 • Impact: Enable code execution
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
@@ -673,6 +887,9 @@ Buffer Overflows
                                16, 32         1                 A U+0041
             Upper              8, 16, 32 3                      ΐ   U+0390
            Source: Unicode Technical Report #36
+
+
+
 
 Black Hat USA - July 2009              www.casabasecurity.com                © 2009 Chris Weber
 Root Causes
@@ -692,6 +909,7 @@ Normalization- maximum expansion factors
                                    16, 32           18X
            Source: Unicode Technical Report #36
 
+
 Black Hat USA - July 2009              www.casabasecurity.com            © 2009 Chris Weber
 Root Causes
 Guidance for Buffer Overflows
@@ -700,6 +918,9 @@ Guidance for Buffer Overflows
 • Secure coding
 • Leverage existing frameworks and API’s
        – ICU, .Net
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
@@ -710,6 +931,9 @@ Controlling Syntax
 • Quotation marks
 • Impact: Filter evasion, Enable code execution
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Attacks and Exploits
 Controlling syntax
@@ -717,6 +941,9 @@ Controlling syntax
 • Manipulate HTML parsers and javascript
   interpreters
 • Control protocols
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Case Study: Opera
@@ -729,16 +956,29 @@ Case Study: Opera
        – Root Cause: Interpreting “white space”
        – A problem with HTML 4.0 spec?
 
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Case Study: Opera
+
+
 
      <a href=#[U+180E]onclick=alert()>
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Case Study: Opera
 
+
+
+
                                  MVS
                                 U+180E
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
@@ -746,6 +986,9 @@ Guidance for Controlling Syntax
 
 • Question specifications
 • Be careful…
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
@@ -774,6 +1017,9 @@ Charset Transformations
 • Impact: Filter evasion, Enable code execution,
   Data-loss
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
 Guidance for Charset Transformations
@@ -783,6 +1029,9 @@ Guidance for Charset Transformations
 • Beware the PUA mappings
 • Transform, case, and normalize prior to
   validation and redisplay
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
@@ -794,16 +1043,27 @@ Charset Mismatches
 • Attackers manipulate behavior
 • Impact: Filter evasion, Enable code execution
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Root Causes
 Charset Mismatches
 
+
+
               Content-Type: charset=ISO-8859-1
+
 
                                                                   Attacker-controlled input
 
+
+
                             <meta http-equiv="Content-Type" content="text/html;
                                             charset=shift_jis"/>
+
+
+
 
 Black Hat USA - July 2009                www.casabasecurity.com               © 2009 Chris Weber
 Root Causes
@@ -812,14 +1072,8 @@ Guidance for Charset Mismatches
 • Force UTF-8
 • Error if uncertain
 
-Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
-Unicode Transformations
-Agenda
 
-• Unicode crash course
-• Root Causes
-• Attack Vectors
-• Tools
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Unicode Transformations
@@ -829,6 +1083,21 @@ Agenda
 • Root Causes
 • Attack Vectors
 • Tools
+
+
+
+
+Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
+Unicode Transformations
+Agenda
+
+• Unicode crash course
+• Root Causes
+• Attack Vectors
+• Tools
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Tools
@@ -836,8 +1105,12 @@ Tools
 • Watcher
        – Passive Web-app security testing and auditing
 
+
 • Unibomber
        – XSS autopwn testing tool
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Tools
@@ -856,11 +1129,20 @@ Watcher – Some of the Passive Checks Included
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Tools
 
+
+
+
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Tools
 Watcher - Web-app Security Testing and Auditing
 
+
+
+
 http://websecuritytool.codeplex.com
+
+
+
 
 Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
 Tools
@@ -872,3 +1154,14 @@ Unibomber– runtime XSS testing tool
        – < > ‘ “, etc.
 • Detect transformations and encoding
   hotspots
+
+
+
+Black Hat USA - July 2009   www.casabasecurity.com   © 2009 Chris Weber
+                        Thank you!
+     Casaba Security
+www.casabasecurity.com
+Chris Weber
+Blog: www.lookout.net
+Email: chris@casabasecurity.com
+LinkedIn: http://www.linkedin.com/in/chrisweber

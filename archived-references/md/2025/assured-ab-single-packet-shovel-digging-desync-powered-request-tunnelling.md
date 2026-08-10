@@ -5,9 +5,9 @@ resource: "https://www.assured.se/posts/the-single-packet-shovel-desync-powered-
 tags: [article, webseclist-reference, en, assured-ab]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:01:43+00:00"
+  at: "2026-08-10T15:02:39+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.assured.se/posts/the-single-packet-shovel-desync-powered-request-tunnelling"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2025.md:57"
 commit: ""
-content_sha256: d6ed7b169301e3f5224af26c782ef94abb80a830f4de3335334bdd759c069fe1
+content_sha256: 04eba3d20b2efa0c7e954e4d813a4ea137b0473e4b06bebc0783e99a97bcde42
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://www.assured.se/posts/the-single-packet-shovel-desync-powe
 published: ""
 publisher: Assured AB
 publisher_english: ""
-raw_sha256: 40ed6425aa43918035ef5c29e07435fcfd0261a9fabf2102f3b54624cba20cd3
+raw_sha256: 3091141db1bf2c25ee7fbaff8cd93b2a0694e8887bce1d3111cf1556049758a9
 retrieved_from: "https://www.assured.se/posts/the-single-packet-shovel-desync-powered-request-tunnelling"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:01:43+00:00"
+retrieved_utc: "2026-08-10T15:02:39+00:00"
 slug: assured-ab-single-packet-shovel-digging-desync-powered-request-tunnelling
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.assured.se/posts/the-single-packet-shovel-desync-powered-request-tunnelling>
-- Preserved from: https://www.assured.se/posts/the-single-packet-shovel-desync-powered-request-tunnelling (live) on 2026-08-09
+- Preserved from: https://www.assured.se/posts/the-single-packet-shovel-desync-powered-request-tunnelling (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

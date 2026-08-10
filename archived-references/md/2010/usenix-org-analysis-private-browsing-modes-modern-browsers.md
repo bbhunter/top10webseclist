@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity10/analysis-private-b
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:41+00:00"
+  at: "2026-08-10T16:04:09+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity10/analysis-private-browsing-modes-modern-browsers"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2010.md:99"
+  - "2010.md:94"
 commit: ""
-content_sha256: c2fc17886ed931d562eba93a37ae4fe6c524dbf8fd739755b3bc717bba46b104
+content_sha256: 567f725f9e655fa5d802a7ecb63e9a3bb08f639d38b8456e1df823c56c1bb6b2
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity10/analysis-priva
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: e0fd94c2b465fe0b717b8494469512fc56bd852f5002de1d6a3684ea498bcb49
+raw_sha256: d3cf7a0b6223706402f0a630ab1c6ffe51c8057e49a409a349b7a65052508a4e
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity10/analysis-private-browsing-modes-modern-browsers"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:41+00:00"
+retrieved_utc: "2026-08-10T16:04:09+00:00"
 slug: usenix-org-analysis-private-browsing-modes-modern-browsers
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity10/analysis-private-browsing-modes-modern-browsers>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity10/analysis-private-browsing-modes-modern-browsers (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity10/analysis-private-browsing-modes-modern-browsers (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

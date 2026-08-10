@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity21/presentation/laper
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:31+00:00"
+  at: "2026-08-10T16:04:59+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity21/presentation/laperdrix"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2021.md:68"
+  - "2021.md:63"
 commit: ""
 content_sha256: c77be7362224f1517f1a46e059371819a97c4dd0b5725794545fc16646fa3b42
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity21/presentation/l
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 622294eab0829f5c1c03013fdd7a65deede209f0de6283b1d87a446fa751fbd1
+raw_sha256: f3c78b712cea1b74a2c85e14790cae49eb36508512a918bfa1bd446e60c4bc0d
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity21/presentation/laperdrix"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:31+00:00"
+retrieved_utc: "2026-08-10T16:04:59+00:00"
 slug: usenix-org-fingerprinting-style-detecting-browser-extensions-injected-sheets
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity21/presentation/laperdrix>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity21/presentation/laperdrix (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity21/presentation/laperdrix (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

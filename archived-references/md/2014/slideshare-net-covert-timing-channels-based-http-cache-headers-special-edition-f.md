@@ -1,13 +1,13 @@
 ---
-type: Article
+type: Slides
 title: Covert Timing Channels based on HTTP Cache Headers (Special Edition f…
 resource: "https://web.archive.org/web/20160403035045/http://www.slideshare.net/dnkolegov/wh102014"
-tags: [article, webseclist-reference, en, slideshare-net]
+tags: [slides, webseclist-reference, en, slideshare-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:14+00:00"
-status: deprecated
-stale_after: 2027-08-09
+  at: "2026-08-10T15:59:57+00:00"
+status: stable
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://www.slideshare.net/dnkolegov/wh102014"
@@ -22,20 +22,20 @@ canonical_url: "https://web.archive.org/web/20160322224608/http://www.slideshare
 cited_by:
   - "2014.md:14"
 commit: ""
-content_sha256: 41f4b3249d7b7a6404a75dbfe45a2f6c94bf34ba6e6b594c058ba3b53edd7ae6
+content_sha256: c098315a809228279a3bb8f7b4b72345b4075b17981ea83553ff0c94e12eebb6
 depth: full
 depth_reason: default
-kind: article
+kind: slides
 language: en
 licence: unknown
 original_url: "https://web.archive.org/web/20160403035045/http://www.slideshare.net/dnkolegov/wh102014"
 published: ""
 publisher: slideshare.net
 publisher_english: ""
-raw_sha256: 95263eefc2d10f046a72cdb55e120223f934d06c6d8a3f656adbd81b3417e39c
+raw_sha256: cc8dfd174fdac30bc41ff9c93dfb0c8caf9d3afb4d08338c73ad03d8dfce70c0
 retrieved_from: "https://web.archive.org/web/20160322224608/http://www.slideshare.net/dnkolegov/wh102014"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:14+00:00"
+retrieved_utc: "2026-08-10T15:59:57+00:00"
 slug: slideshare-net-covert-timing-channels-based-http-cache-headers-special-edition-f
 snapshot: 20160403035045
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/http://www.slideshare.net/dnkolegov/wh102014>
 - Current location: <https://web.archive.org/web/20160322224608/http://www.slideshare.net/dnkolegov/wh102014>
-- Preserved from: https://web.archive.org/web/20160322224608/http://www.slideshare.net/dnkolegov/wh102014 (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160322224608/http://www.slideshare.net/dnkolegov/wh102014 (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 
@@ -67,8 +67,6 @@ page going offline. To read the original, follow the link above.
 Covert Timing Channels based on HTTP Cache Headers (Special Edition f…
 
 The Wayback Machine - https://web.archive.org/web/20160322224608/http://www.slideshare.net/dnkolegov/wh102014
-
-  
 
  ![COVERT TIMING CHANNELS
 BASED ON HTTP CACHE
@@ -448,7 +446,7 @@ Loading in …5
 
  Published in: [Internet](https://web.archive.org/web/20160322224608/http://www.slideshare.net/featured/category/internet)
 
-     0 Comments     **  2 Likes      ** Statistics     ** Notes 
+     0 Comments     **  2 Likes      ** Statistics     ** Notes
 
 -
 
@@ -562,5 +560,16 @@ No notes for slide
 -  [ 46. ](https://web.archive.org/web/20160322224608/http://image.slidesharecdn.com/wh102014-150113033142-conversion-gate02/95/covert-timing-channels-based-on-http-cache-headers-special-edition-for-top-10-web-hacking-techniques-of-2014-46-638.jpg?cb=1427237720) ETag-based timing channel in BeEF 46 ETag Tunnel in BeEF consists s of classic two parts • extension on Ruby, that implements server side logic via couple of web pages mounted to BeEF webserver • module on JavaScript, that is responsible for receiving information from C&C BeEF server at zombie Sources • https://github.com/beefproject/beef/tree/master/modules/i pec/etag_client • https://github.com/beefproject/beef/tree/master/extension s/etag
 -  [ 47. ](https://web.archive.org/web/20160322224608/http://image.slidesharecdn.com/wh102014-150113033142-conversion-gate02/95/covert-timing-channels-based-on-http-cache-headers-special-edition-for-top-10-web-hacking-techniques-of-2014-47-638.jpg?cb=1427237720) Implementation of ETag-based covert channel in browser (client on JavaScript) 47 Experiment 7 Network Average ping Average HTTP ping 256 bit 1024 bit Local host 0.045 ms 0.6 ms 10.11 bit/s 9.9 bit/s Local network 18 ms 19.8 ms 10.3 bit/s 9.78 bit/s Internet 176 ms 360.9 ms 5.09 bit/s 4.97 bit/s
 -  [ 48. ](https://web.archive.org/web/20160322224608/http://image.slidesharecdn.com/wh102014-150113033142-conversion-gate02/95/covert-timing-channels-based-on-http-cache-headers-special-edition-for-top-10-web-hacking-techniques-of-2014-48-638.jpg?cb=1427237720) 48 Proof of Concept http://youtu.be/W2qWA7XUzGQ https://github.com/beefproject/beef
--  [ 49. ](https://web.archive.org/web/20160322224608/http://image.slidesharecdn.com/wh102014-150113033142-conversion-gate02/95/covert-timing-channels-based-on-http-cache-headers-special-edition-for-top-10-web-hacking-techniques-of-2014-49-638.jpg?cb=1427237720) Bibliography 49 1. Johnson D., Yuan Bo; Lutz P., Brown E. Covert channels in the HTTP network protocol: Channel characterization and detecting man-in-the- middle attacks. URL: https://ritdml.rit.edu/handle/1850/14797 2. Kenton Born. «Browser-based covert data exfiltration». URL: http://arxiv.org/ftp/arxiv/papers/1004/1004.4357.pdf 3. W. Alcorn, C. Frichot, M. Orru. «The Browser Hacker’s Handbook». URL: http://eu.wiley.com/WileyCDA/WileyTitle/productCd- 1118662091.html
+-  [ 49. ](https://web.archive.org/web/20160322224608/http://image.slidesharecdn.com/wh102014-150113033142-conversion-gate02/95/covert-timing-channels-based-on-http-cache-headers-special-edition-for-top-10-web-hacking-techniques-of-2014-49-638.jpg?cb=1427237720)
+Bibliography
+49
+1. Johnson D., Yuan Bo; Lutz P., Brown E. Covert channels in the HTTP
+network protocol: Channel characterization and detecting man-in-the-
+middle attacks. URL: https://ritdml.rit.edu/handle/1850/14797
+2. Kenton Born. «Browser-based covert data exfiltration». URL:
+http://arxiv.org/ftp/arxiv/papers/1004/1004.4357.pdf
+3. W. Alcorn, C. Frichot, M. Orru. «The Browser Hacker’s Handbook».
+URL: http://eu.wiley.com/WileyCDA/WileyTitle/productCd-
+1118662091.html
+
 -  [ 50. ](https://web.archive.org/web/20160322224608/http://image.slidesharecdn.com/wh102014-150113033142-conversion-gate02/95/covert-timing-channels-based-on-http-cache-headers-special-edition-for-top-10-web-hacking-techniques-of-2014-50-638.jpg?cb=1427237720) 50 Denis Kolegov dnkolegov@gmail.com @dnkolegov Oleg Broslavsky ovbroslavsky@gmail.com @yalegko Nikita Oleksov neoleksov@gmail.com @neoleksov

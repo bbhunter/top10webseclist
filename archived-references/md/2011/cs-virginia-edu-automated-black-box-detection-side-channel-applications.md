@@ -5,18 +5,19 @@ resource: "https://www.cs.virginia.edu/~evans/pubs/ccs2011/"
 tags: [article, webseclist-reference, cs-virginia-edu]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:51:36+00:00"
+  at: "2026-08-10T15:08:10+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.cs.virginia.edu/~evans/pubs/ccs2011/"
     title: Automated Black-Box Detection of Side-Channel Vulnerabilities in Web Applications
-also_at: []
+also_at:
+  - "https://www.cs.virginia.edu/~evans/pubs/ccs2011/sca-packaged.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2011.md:85"
+  - "2011.md:80"
 commit: ""
 content_sha256: 076f1091e7cb097fe74f9a0598163380f1fbb7159914c27658bc48266f53f047
 depth: full
@@ -31,7 +32,7 @@ publisher_english: ""
 raw_sha256: 05814296481a71e948e026c7235b9102a8a24ef1f8be6d0d5066be106e45da81
 retrieved_from: "https://www.cs.virginia.edu/~evans/pubs/ccs2011/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:51:36+00:00"
+retrieved_utc: "2026-08-10T15:08:10+00:00"
 slug: cs-virginia-edu-automated-black-box-detection-side-channel-applications
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.cs.virginia.edu/~evans/pubs/ccs2011/>
-- Preserved from: https://www.cs.virginia.edu/~evans/pubs/ccs2011/ (live) on 2026-08-08
+- Also published at: <https://www.cs.virginia.edu/~evans/pubs/ccs2011/sca-packaged.pdf>
+- Preserved from: https://www.cs.virginia.edu/~evans/pubs/ccs2011/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

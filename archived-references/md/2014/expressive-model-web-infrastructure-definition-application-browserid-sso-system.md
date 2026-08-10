@@ -5,9 +5,9 @@ resource: "https://www.ieee-security.org/TC/SP2014/papers/AnExpressiveModelforth
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:52:34+00:00"
+  at: "2026-08-10T15:28:03+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2014/papers/AnExpressiveModelfortheWebInfrastructure_c_DefinitionandApplicationtotheBrowserIDSSOSystem.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2014.md:73"
+  - "2014.md:68"
 commit: ""
 content_sha256: e10fcbc550ad86a629792d58e5d1cdfb62dc1a23605d7fab748c1fca96b84db8
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 4a366b6a540cd4ba29516521dd40957b66cf7abba75db9929f478dcc87a6ca79
 retrieved_from: "https://www.ieee-security.org/TC/SP2014/papers/AnExpressiveModelfortheWebInfrastructure_c_DefinitionandApplicationtotheBrowserIDSSOSystem.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:52:34+00:00"
+retrieved_utc: "2026-08-10T15:28:03+00:00"
 slug: expressive-model-web-infrastructure-definition-application-browserid-sso-system
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2014/papers/AnExpressiveModelfortheWebInfrastructure_c_DefinitionandApplicationtotheBrowserIDSSOSystem.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2014/papers/AnExpressiveModelfortheWebInfrastructure_c_DefinitionandApplicationtotheBrowserIDSSOSystem.pdf (live) on 2026-08-08
+- Preserved from: https://www.ieee-security.org/TC/SP2014/papers/AnExpressiveModelfortheWebInfrastructure_c_DefinitionandApplicationtotheBrowserIDSSOSystem.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

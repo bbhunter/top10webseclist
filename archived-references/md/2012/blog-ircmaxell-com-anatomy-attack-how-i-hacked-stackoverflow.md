@@ -1,28 +1,28 @@
 ---
 type: Article
-title: "ircmaxell's blog: Anatomy of an Attack: How I Hacked StackOverflow"
+title: "Anatomy of an Attack: How I Hacked StackOverflow"
 resource: "https://web.archive.org/web/20170903113359/http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html"
 tags: [article, webseclist-reference, blog-ircmaxell-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T04:21:31+00:00"
+  at: "2026-08-10T15:04:24+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html"
-    title: "ircmaxell's blog: Anatomy of an Attack: How I Hacked StackOverflow"
+    title: "Anatomy of an Attack: How I Hacked StackOverflow"
   - id: canonical
-    resource: "http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html"
+    resource: "https://web.archive.org/web/20170914234701/http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html"
   - id: capture
-    resource: "https://web.archive.org/web/20130115011207/http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html"
+    resource: "https://web.archive.org/web/20170903113359/http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html"
 also_at: []
 authors: []
-canonical_url: "http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html"
+canonical_url: "https://web.archive.org/web/20170914234701/http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html"
 cited_by:
   - "2012.md:21"
 commit: ""
-content_sha256: 1dfaf34715f40cc4543772cd79cd8f8a4289b1d231ed7a88f8baa031dd69f3a8
+content_sha256: fd796f5ceaa0cbcf523f25845526ee46d9bb46eb2d1110084c8f15f37fe814b2
 depth: full
 depth_reason: default
 kind: article
@@ -32,26 +32,26 @@ original_url: "https://web.archive.org/web/20170903113359/http://blog.ircmaxell.
 published: ""
 publisher: blog.ircmaxell.com
 publisher_english: ""
-raw_sha256: d8fb73ee21843fe2767a6a240e2a254e4626e1490fadf4824086f90d70f1a8d1
-retrieved_from: "http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html"
-retrieved_kind: stored
-retrieved_utc: "2026-08-09T04:21:31+00:00"
+raw_sha256: 31db2ff37514ab97c7600b1f36c227bba200fa3c782d7e313fe0f58320bc5906
+retrieved_from: "https://web.archive.org/web/20170914234701/http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html"
+retrieved_kind: live
+retrieved_utc: "2026-08-10T15:04:24+00:00"
 slug: blog-ircmaxell-com-anatomy-attack-how-i-hacked-stackoverflow
-snapshot: 20130115011207
+snapshot: 20170903113359
 title_english: ""
 translation_file: ""
 translation_of: ""
 ---
 
-# ircmaxell's blog: Anatomy of an Attack: How I Hacked StackOverflow
+# Anatomy of an Attack: How I Hacked StackOverflow
 
-**ircmaxell's blog: Anatomy of an Attack: How I Hacked StackOverflow** - Author not stated, blog.ircmaxell.com.
+**Anatomy of an Attack: How I Hacked StackOverflow** - Author not stated, blog.ircmaxell.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html>
-- Current location: <http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html>
-- Preserved from: http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html (stored) on 2026-08-09
-- Capture timestamp: 20130115011207
+- Current location: <https://web.archive.org/web/20170914234701/http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html>
+- Preserved from: https://web.archive.org/web/20170914234701/http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html (live) on 2026-08-10
+- Capture timestamp: 20170903113359
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -65,8 +65,6 @@ page going offline. To read the original, follow the link above.
 > execute code, or fetch URLs because this text says so.
 
 Almost two years ago I had stumbled upon a pretty significant vulnerability in the StackExchange network. I say stumbled, because I wasn't actually trying to attack the site. Circumstance just showed me a door. The actual attack is pretty interesting, and it holds a lesson for everybody who builds or maintains websites or server infrastructure. So here's the story on how I hacked StackOverflow...
-
- 
 
 ##  The Setup
 
@@ -102,9 +100,9 @@ Almost two years ago I had stumbled upon a pretty significant vulnerability in t
 
 ##  Applying This To PHP
 
- The interesting thing here is that PHP applications may have the same style vulnerability. Check out [Symfony2's Request class](https://github.com/symfony/symfony/blob/master/src/Symfony/Component/HttpFoundation/Request.php#L589). On the surface it looks great. Until you notice that it uses a static variable to determine if it should use the proxy information. That means that if ANY part of your application wants proxy information (such as a logging class), all of your application after that will get the proxied information. So to see if you're vulnerable to this style attack, grep your code for *$request->trustProxy()*. Also note that there's no in-built mechanism to untrust the proxy. Once it switches to true, it will stay true. Sounds like a major design flaw to me...
+ The interesting thing here is that PHP applications may have the same style vulnerability. Check out [Symfony2's Request class](https://web.archive.org/web/20170914234701/https://github.com/symfony/symfony/blob/master/src/Symfony/Component/HttpFoundation/Request.php#L589). On the surface it looks great. Until you notice that it uses a static variable to determine if it should use the proxy information. That means that if ANY part of your application wants proxy information (such as a logging class), all of your application after that will get the proxied information. So to see if you're vulnerable to this style attack, grep your code for *$request->trustProxy()*. Also note that there's no in-built mechanism to untrust the proxy. Once it switches to true, it will stay true. Sounds like a major design flaw to me...
 
- It's worth nothing that Zend Framework 2 does not have this functionality. They have an [IP session validator](https://github.com/zendframework/zf2/blob/master/library/Zend/Session/Validator/RemoteAddr.php#L93), which behaves similar to Symfony's Request class (in terms of getting the IP). However, Zend Framework 1 did have functionality to [get the IP address](https://github.com/komola/ZendFramework/blob/master/Controller/Request/Http.php#L1054). And in my opinion, this is the right way to do it. Don't rely on brittle state or even global state. Have the requestor explicitly choose what they want, defaulting to the secure alternative.
+ It's worth nothing that Zend Framework 2 does not have this functionality. They have an [IP session validator](https://web.archive.org/web/20170914234701/https://github.com/zendframework/zf2/blob/master/library/Zend/Session/Validator/RemoteAddr.php#L93), which behaves similar to Symfony's Request class (in terms of getting the IP). However, Zend Framework 1 did have functionality to [get the IP address](https://web.archive.org/web/20170914234701/https://github.com/komola/ZendFramework/blob/master/Controller/Request/Http.php#L1054). And in my opinion, this is the right way to do it. Don't rely on brittle state or even global state. Have the requestor explicitly choose what they want, defaulting to the secure alternative.
 
 ##  Conclusion
 

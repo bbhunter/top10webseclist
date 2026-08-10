@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/woot18/workshop-program"
 tags: [article, webseclist-reference, en, usenix]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:27+00:00"
+  at: "2026-08-10T16:05:52+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/woot18/workshop-program"
@@ -17,7 +17,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2018.md:93"
+  - "2018.md:89"
 commit: ""
 content_sha256: d87e15e24ca412986e68b1e01b83184431afc1d25faebb5f3107a2d6afe8ca63
 depth: full
@@ -29,10 +29,10 @@ original_url: "https://www.usenix.org/conference/woot18/workshop-program"
 published: 2018-07-02
 publisher: USENIX
 publisher_english: ""
-raw_sha256: e19373334ae6bf96f2a9a95de197a482ca088c0d7bfc06a7cb91e1547c4ed76b
+raw_sha256: 6b7ca57535ccacf7063abda0cac066a29d67a44a95dca3137bac90696947d41c
 retrieved_from: "https://www.usenix.org/conference/woot18/workshop-program"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:27+00:00"
+retrieved_utc: "2026-08-10T16:05:52+00:00"
 slug: 2018-usenix-woot-18-workshop-program
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2018-07-02
 - Original: <https://www.usenix.org/conference/woot18/workshop-program>
-- Preserved from: https://www.usenix.org/conference/woot18/workshop-program (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/woot18/workshop-program (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

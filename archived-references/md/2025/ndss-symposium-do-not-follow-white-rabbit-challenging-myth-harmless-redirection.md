@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/do-not-follow-the-white-rab
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:04+00:00"
+  at: "2026-08-10T15:33:44+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/do-not-follow-the-white-rabbit-challenging-the-myth-of-harmless-open-redirection/"
     title: "Do (Not) Follow the White Rabbit: Challenging the Myth of Harmless Open Redirection"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2025-523-paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2025.md:98"
+  - "2025.md:93"
 commit: ""
-content_sha256: 4e0066abb6c99b43ec92e2853a435609087732aff492c31c889b34d2b93aacd3
+content_sha256: 89b47e48e514722934763d54233981496de81a6f828bdbb9087adf23121cd251
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/do-not-follow-the-white
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 6cf8b01564758cf8e27ca5bc14fe313612e0504c5a3434e32fbd1255ebcdeb52
+raw_sha256: e862c101fbd5ab6431ec3c4bb7179261bbe30f68f9bd8d4541eb0ddbf697c087
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/do-not-follow-the-white-rabbit-challenging-the-myth-of-harmless-open-redirection/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:04+00:00"
+retrieved_utc: "2026-08-10T15:33:44+00:00"
 slug: ndss-symposium-do-not-follow-white-rabbit-challenging-myth-harmless-redirection
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/do-not-follow-the-white-rabbit-challenging-the-myth-of-harmless-open-redirection/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/do-not-follow-the-white-rabbit-challenging-the-myth-of-harmless-open-redirection/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2025-523-paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/do-not-follow-the-white-rabbit-challenging-the-myth-of-harmless-open-redirection/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -70,20 +72,20 @@ Open redirects are one of the oldest threats to web applications, allowing attac
 
 ## View More Papers
 
-### [ Lend Me Your Beam: Privacy Implications of Plaintext Beamforming... ](https://www.ndss-symposium.org/ndss-paper/lend-me-your-beam-privacy-implications-of-plaintext-beamforming-feedback-in-wifi/)
+### [ SafeSplit: A Novel Defense Against Client-Side Backdoor Attacks in... ](https://www.ndss-symposium.org/ndss-paper/safesplit-a-novel-defense-against-client-side-backdoor-attacks-in-split-learning/)
 
- Rui Xiao (Zhejiang University), Xiankai Chen (Zhejiang University), Yinghui He (Nanyang Technological University), Jun Han (KAIST), Jinsong Han (Zhejiang University)
+ Phillip Rieger (Technical University of Darmstadt), Alessandro Pegoraro (Technical University of Darmstadt), Kavita Kumari (Technical University of Darmstadt), Tigist Abera (Technical University of Darmstadt), Jonathan Knauer (Technical University of Darmstadt), Ahmad-Reza Sadeghi (Technical University of Darmstadt)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/lend-me-your-beam-privacy-implications-of-plaintext-beamforming-feedback-in-wifi/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/safesplit-a-novel-defense-against-client-side-backdoor-attacks-in-split-learning/)
 
-### [ SHAFT: Secure, Handy, Accurate and Fast Transformer Inference ](https://www.ndss-symposium.org/ndss-paper/shaft-secure-handy-accurate-and-fast-transformer-inference/)
+### [ Optimizing Trust-Centric Authentication in Matter-enabled IoT Devices with PUF... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-559/)
 
- Andes Y. L. Kei (Chinese University of Hong Kong), Sherman S. M. Chow (Chinese University of Hong Kong)
+ Chandranshu Gupta, Gaurav Varshney (IIT Jammu)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/shaft-secure-handy-accurate-and-fast-transformer-inference/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-559/)
 
-### [ Careful About What App Promotion Ads Recommend! Detecting and... ](https://www.ndss-symposium.org/ndss-paper/careful-about-what-app-promotion-ads-recommend-detecting-and-explaining-malware-promotion-via-app-promotion-graph/)
+### [ L-HAWK: A Controllable Physical Adversarial Patch Against a Long-Distance... ](https://www.ndss-symposium.org/ndss-paper/l-hawk-a-controllable-physical-adversarial-patch-against-a-long-distance-target/)
 
- Shang Ma (University of Notre Dame), Chaoran Chen (University of Notre Dame), Shao Yang (Case Western Reserve University), Shifu Hou (University of Notre Dame), Toby Jia-Jun Li (University of Notre Dame), Xusheng Xiao (Arizona State University), Tao Xie (Peking University), Yanfang Ye (University of Notre Dame)
+ Taifeng Liu (Xidian University), Yang Liu (Xidian University), Zhuo Ma (Xidian University), Tong Yang (Peking University), Xinjing Liu (Xidian University), Teng Li (Xidian University), Jianfeng Ma (Xidian University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/careful-about-what-app-promotion-ads-recommend-detecting-and-explaining-malware-promotion-via-app-promotion-graph/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/l-hawk-a-controllable-physical-adversarial-patch-against-a-long-distance-target/)

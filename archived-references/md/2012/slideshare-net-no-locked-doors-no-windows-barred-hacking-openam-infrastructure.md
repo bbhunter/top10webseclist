@@ -1,13 +1,13 @@
 ---
-type: Article
+type: Slides
 title: "No locked doors, no windows barred: hacking OpenAM infrastructure"
 resource: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11"
-tags: [article, webseclist-reference, en, slideshare-net]
+tags: [slides, webseclist-reference, en, slideshare-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:42:57+00:00"
+  at: "2026-08-10T15:59:44+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11"
@@ -22,20 +22,20 @@ canonical_url: "https://web.archive.org/web/20150110195738/http://www.slideshare
 cited_by:
   - "2012.md:53"
 commit: ""
-content_sha256: 60e1a143eebbb28310bf169253e2d4b0a84b0db1e1df81eec8cf4e4630fcbd4e
+content_sha256: 0bec9962615a0c21135d82183231def2bf80d97d98f994dd4643f93b16014e30
 depth: full
 depth_reason: default
-kind: article
+kind: slides
 language: en
 licence: unknown
 original_url: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11"
 published: ""
 publisher: slideshare.net
 publisher_english: ""
-raw_sha256: e185dbafc2419ef9773409210984f4d6c0b9c1bfb339a37d99fbe3927ea81b03
+raw_sha256: eaee2db1490d40e311a51f2046e6845834e9a531d551b26c0e41d37b1895730d
 retrieved_from: "https://web.archive.org/web/20150110195738/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:42:57+00:00"
+retrieved_utc: "2026-08-10T15:59:44+00:00"
 slug: slideshare-net-no-locked-doors-no-windows-barred-hacking-openam-infrastructure
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11>
 - Current location: <https://web.archive.org/web/20150110195738/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11>
-- Preserved from: https://web.archive.org/web/20150110195738/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11 (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20150110195738/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11 (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

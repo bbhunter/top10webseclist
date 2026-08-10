@@ -5,9 +5,9 @@ resource: "https://www.wiz.io/blog/azure-active-directory-bing-misconfiguration"
 tags: [article, webseclist-reference, en-us, wiz-io]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:49:15+00:00"
+  at: "2026-08-10T16:07:09+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.wiz.io/blog/azure-active-directory-bing-misconfiguration"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:39"
 commit: ""
-content_sha256: 6870ace51d89ac0528e8172cc972be51187b4bbb184824cb0c8bf11f064e3358
+content_sha256: 4ab742c47273f43c77605a9ad7324f9474d7a790d38f6f008599c5ae3c9bfbf4
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://www.wiz.io/blog/azure-active-directory-bing-misconfigurat
 published: 2023-03-29
 publisher: wiz.io
 publisher_english: ""
-raw_sha256: 17de28a1bf64da6adf56f90010b0ae5e2b955a6181493f5dc87fed63f010126e
+raw_sha256: 634dae376cdc05f7be22d7777ef061f6ef1005cbe5db7651c864f6195bcadc2d
 retrieved_from: "https://www.wiz.io/blog/azure-active-directory-bing-misconfiguration"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:49:15+00:00"
+retrieved_utc: "2026-08-10T16:07:09+00:00"
 slug: 2023-wiz-io-bingbang-aad-misconfiguration-led-bing-com-results-takeover
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2023-03-29
 - Original: <https://www.wiz.io/blog/azure-active-directory-bing-misconfiguration>
-- Preserved from: https://www.wiz.io/blog/azure-active-directory-bing-misconfiguration (live) on 2026-08-09
+- Preserved from: https://www.wiz.io/blog/azure-active-directory-bing-misconfiguration (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

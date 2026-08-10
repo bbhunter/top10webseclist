@@ -5,9 +5,9 @@ resource: "https://www.sonarsource.com/blog/pretalx-vulnerabilities-how-to-get-a
 tags: [article, webseclist-reference, en, sonar]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:45+00:00"
+  at: "2026-08-10T16:00:34+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.sonarsource.com/blog/pretalx-vulnerabilities-how-to-get-accepted-at-every-conference/"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:25"
 commit: ""
-content_sha256: dd3e5b9ad7a4615dda61163051bbcb6f05c1c288d3a79a6888afdf478004d14a
+content_sha256: de73b5f818aa65fd4d28d72c9ff0a031455ae67752c2b86dd0f20eb3a771e193
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://www.sonarsource.com/blog/pretalx-vulnerabilities-how-to-g
 published: 2023-04-12
 publisher: Sonar
 publisher_english: ""
-raw_sha256: 027540242a712985861fffa4c169b201ac1fafbd6c84f574ed7d448c7f9fb6cf
+raw_sha256: c727d7d9ccd46017d726ae62aa6390e01e29dcb888b89e9ba69cd1b7017cf584
 retrieved_from: "https://www.sonarsource.com/blog/pretalx-vulnerabilities-how-to-get-accepted-at-every-conference/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:45+00:00"
+retrieved_utc: "2026-08-10T16:00:34+00:00"
 slug: 2023-sonar-pretalx-vulnerabilities-how-get-accepted-every-conference
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2023-04-12
 - Original: <https://www.sonarsource.com/blog/pretalx-vulnerabilities-how-to-get-accepted-at-every-conference/>
-- Preserved from: https://www.sonarsource.com/blog/pretalx-vulnerabilities-how-to-get-accepted-at-every-conference/ (live) on 2026-08-09
+- Preserved from: https://www.sonarsource.com/blog/pretalx-vulnerabilities-how-to-get-accepted-at-every-conference/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

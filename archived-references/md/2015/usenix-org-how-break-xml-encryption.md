@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/woot15/workshop-program/presentatio
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:22+00:00"
+  at: "2026-08-10T16:05:48+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/woot15/workshop-program/presentation/kupser"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2015.md:77"
+  - "2015.md:73"
 commit: ""
 content_sha256: 3a28d62ba302f305cf0a5fbff95843fe4e1a158e390eeadd20aca8b915d08a91
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/woot15/workshop-program/present
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 46b966531517414747bea9b7b98be2f965cf239f2011193a88ab9f8d79a73f26
+raw_sha256: fc96ac567664a315d4a19844e079d75037ee55fcadc818c704e98197d3d62871
 retrieved_from: "https://www.usenix.org/conference/woot15/workshop-program/presentation/kupser"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:22+00:00"
+retrieved_utc: "2026-08-10T16:05:48+00:00"
 slug: usenix-org-how-break-xml-encryption
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/woot15/workshop-program/presentation/kupser>
-- Preserved from: https://www.usenix.org/conference/woot15/workshop-program/presentation/kupser (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/woot15/workshop-program/presentation/kupser (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

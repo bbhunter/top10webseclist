@@ -5,9 +5,9 @@ resource: "https://medium.com/@emil.lerner/leaking-uninitialized-memory-from-fas
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:34:54+00:00"
+  at: "2026-08-10T15:32:10+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@emil.lerner/leaking-uninitialized-memory-from-fastly-83327bcbee1f"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2022.md:25"
 commit: ""
-content_sha256: ef1dd37f010b2a79162441e59226a1d06f782945954f94d20687cbf59809eeb9
+content_sha256: aa641ef6b361ffcf71ce58c63498722683ea853daad33b7e1d6cd1c77a2175e7
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://medium.com/@emil.lerner/leaking-uninitialized-memory-from
 published: 2022-01-31
 publisher: Medium
 publisher_english: ""
-raw_sha256: e124429eba31dba6495e3ab97d3e716685554adaebee2d8f21991318a62de213
+raw_sha256: c72c36d2b1ff2fb36939663d6df3f5c052b879cfcd97d1b4787009ccdd896342
 retrieved_from: "https://medium.com/@emil.lerner/leaking-uninitialized-memory-from-fastly-83327bcbee1f"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:34:54+00:00"
+retrieved_utc: "2026-08-10T15:32:10+00:00"
 slug: 2022-medium-story-leaking-uninitialized-memory-fastly
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2022-01-31
 - Original: <https://medium.com/@emil.lerner/leaking-uninitialized-memory-from-fastly-83327bcbee1f>
-- Preserved from: https://medium.com/@emil.lerner/leaking-uninitialized-memory-from-fastly-83327bcbee1f (live) on 2026-08-09
+- Preserved from: https://medium.com/@emil.lerner/leaking-uninitialized-memory-from-fastly-83327bcbee1f (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

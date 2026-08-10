@@ -5,9 +5,9 @@ resource: "https://lcamtuf.blogspot.com/2011/12/css-visited-may-be-bit-overrated
 tags: [article, webseclist-reference, lcamtuf-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:23+00:00"
+  at: "2026-08-10T15:31:01+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://lcamtuf.blogspot.com/2011/12/css-visited-may-be-bit-overrated.html"
@@ -28,10 +28,10 @@ original_url: "https://lcamtuf.blogspot.com/2011/12/css-visited-may-be-bit-overr
 published: ""
 publisher: lcamtuf.blogspot.com
 publisher_english: ""
-raw_sha256: d974b8e6d8f11340cac1f662ed65b15dedd87c4931846b0188237f85f4ed18f7
+raw_sha256: 3054f5f68746c207433520fa1f9f6c8cd6de4f4e0f1c41abb08ae82edf5cf4d8
 retrieved_from: "https://lcamtuf.blogspot.com/2011/12/css-visited-may-be-bit-overrated.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:23+00:00"
+retrieved_utc: "2026-08-10T15:31:01+00:00"
 slug: lcamtuf-blogspot-com-css-visited-may-be-bit-overrated
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://lcamtuf.blogspot.com/2011/12/css-visited-may-be-bit-overrated.html>
-- Preserved from: https://lcamtuf.blogspot.com/2011/12/css-visited-may-be-bit-overrated.html (live) on 2026-08-09
+- Preserved from: https://lcamtuf.blogspot.com/2011/12/css-visited-may-be-bit-overrated.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

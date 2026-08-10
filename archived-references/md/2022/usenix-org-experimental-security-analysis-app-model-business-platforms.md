@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/chen-
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:34+00:00"
+  at: "2026-08-10T16:05:01+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/chen-yunang-experimental"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2022.md:81"
+  - "2022.md:79"
 commit: ""
 content_sha256: ebb6400d944c6ea8fffcfd0b1d349c1848b7d296776f4a1eb55fd7855245a432
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity22/presentation/c
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 2b1521d5d0ac362bc03498067eec4e5a02efc0bb209c94fafa178bc42d4edc0a
+raw_sha256: d3944024fe6c199fdd12889822e590c2d85861aa2ff3e718d67e2a72497e2518
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity22/presentation/chen-yunang-experimental"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:34+00:00"
+retrieved_utc: "2026-08-10T16:05:01+00:00"
 slug: usenix-org-experimental-security-analysis-app-model-business-platforms
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity22/presentation/chen-yunang-experimental>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/chen-yunang-experimental (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/chen-yunang-experimental (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

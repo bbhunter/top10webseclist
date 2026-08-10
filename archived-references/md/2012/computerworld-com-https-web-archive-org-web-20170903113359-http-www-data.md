@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20130329114320/http://www.computerworld.c
 tags: [article, webseclist-reference, computerworld]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:08:37+00:00"
+  at: "2026-08-10T15:07:42+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20130329114320/http://www.computerworld.com/s/article/9234282/Attackers_can_abuse_Yahoo_developer_feature_to_steal_user_emails_other_data"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2012.md:18"
 commit: ""
-content_sha256: 1265749c0937c992521712022ae8868329a3f4dff9feac6436a710395c1c5696
+content_sha256: b98ddae5026ced998edb752dc88c2140d3b291d810e7d9596e941469dc460005
 depth: full
 depth_reason: default
 kind: article
@@ -33,10 +33,10 @@ original_url: "https://web.archive.org/web/20130329114320/http://www.computerwor
 published: 2012-12-03
 publisher: Computerworld
 publisher_english: ""
-raw_sha256: 88433b45275ada3a4ac0e4c4530c5b666bdbed20e3846fd3de71b779fc1b18dc
+raw_sha256: dc31e4027d01bd8116cd862ac12291b5f62dbbf46cf5814d9432f30ed7bf8d68
 retrieved_from: "https://web.archive.org/web/20130329114320/http://www.computerworld.com/s/article/9234282/Attackers_can_abuse_Yahoo_developer_feature_to_steal_user_emails_other_data"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:08:37+00:00"
+retrieved_utc: "2026-08-10T15:07:42+00:00"
 slug: computerworld-com-https-web-archive-org-web-20170903113359-http-www-data
 snapshot: 20130329114320
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: 2012-12-03
 - Original: <https://web.archive.org/web/20130329114320/http://www.computerworld.com/s/article/9234282/Attackers_can_abuse_Yahoo_developer_feature_to_steal_user_emails_other_data>
-- Preserved from: https://web.archive.org/web/20130329114320/http://www.computerworld.com/s/article/9234282/Attackers_can_abuse_Yahoo_developer_feature_to_steal_user_emails_other_data (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20130329114320/http://www.computerworld.com/s/article/9234282/Attackers_can_abuse_Yahoo_developer_feature_to_steal_user_emails_other_data (live) on 2026-08-10
 - Capture timestamp: 20130329114320
 - Licence: unknown
 
@@ -127,8 +127,6 @@ WHITE PAPER
 Small and midsize businesses are moving to the cloud to host their communications capabilities. Learn how enterprise-quality phone benefits, online management, conferencing, auto attendant, and ease of use are built into a system that is half the cost of a PBX.
 
 [Read now.](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/show/200014207/00623430077818CTWPRJ0UHXTC9/?email=%%emailaddr%%)
-
- 
 
    [ Malware Deep Dive Report ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/33199/detail) If malware were biological, the world would be in the grip of the worst pandemic in history. [ Malware B-Z: Inside the Threat From Blackhole to ZeroAccess ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/32145/detail) Learn how two of the most commonly used and technically capable pieces of crimeware are used by bad guys to compromise your security... [ Dell Active Infrastructure ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/35501/detail) Dell Active Infrastructure is a makeup of modular and automated converged infrastructure solutions combing servers, storage, networking and infrastructure management into an integrated... [ Microsoft SQL Server Database Consolidation ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/35496/detail) Dell's data-center-in-a-box solution, featuring the M1000e chassis, maybe the right choice for SMB customers looking to consolidate SQL Server databases in a virtualized... [ Oracle Cloud KnowledgeVault ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/35482/detail) The Oracle Cloud offers a broad portfolio of software as a service applications, platform as a service and social capabilities-- all on a... [All Malware and Vulnerabilities White Papers](https://web.archive.org/web/20130329114320/http://www.computerworld.com/s/whitepapers/topic/85/Malware+and+Vulnerabilities/1)
 

@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/adob
 tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:46:32+00:00"
+  at: "2026-08-10T16:02:35+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/adobe-patches-air-pwn2own-vulnerability-in-flash/105359"
@@ -35,10 +35,10 @@ original_url: "https://web.archive.org/web/20160403035045/http://threatpost.com/
 published: 2014-04-09
 publisher: Threatpost | The first stop for security news
 publisher_english: ""
-raw_sha256: 5493cd99b06d897a090ba6e8ee21c038d010f46e840c2792ab8c816b683400bf
+raw_sha256: 7094b3786ff86434ff6b82f1d16a507a49efde111acd9c583225e03d114df689
 retrieved_from: "https://web.archive.org/web/20160530221049/https://threatpost.com/adobe-patches-air-pwn2own-vulnerability-in-flash/105359/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:46:32+00:00"
+retrieved_utc: "2026-08-10T16:02:35+00:00"
 slug: 2014-threatpost-the-first-stop-for-security-news-adobe-patches-air-flash
 snapshot: 20160403035045
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 - Published: 2014-04-09
 - Original: <https://web.archive.org/web/20160403035045/http://threatpost.com/adobe-patches-air-pwn2own-vulnerability-in-flash/105359>
 - Current location: <https://web.archive.org/web/20160530221049/https://threatpost.com/adobe-patches-air-pwn2own-vulnerability-in-flash/105359/>
-- Preserved from: https://web.archive.org/web/20160530221049/https://threatpost.com/adobe-patches-air-pwn2own-vulnerability-in-flash/105359/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160530221049/https://threatpost.com/adobe-patches-air-pwn2own-vulnerability-in-flash/105359/ (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 

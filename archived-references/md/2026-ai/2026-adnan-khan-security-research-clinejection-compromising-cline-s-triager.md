@@ -5,9 +5,9 @@ resource: "https://adnanthekhan.com/posts/clinejection/"
 tags: [article, webseclist-reference, en, adnan-khan-security-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:07+00:00"
+  at: "2026-08-10T15:01:15+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://adnanthekhan.com/posts/clinejection/"
@@ -20,9 +20,9 @@ authors:
   - adnanthekhan
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:112"
+  - "2026-ai.md:90"
 commit: ""
-content_sha256: e33dee723d56f2c277daa75f94eb8c60c61319491431ae10379f3f8b5e637b32
+content_sha256: ddc5aa5add582494ae16f0409c856d6e33f269b255c07323292ba5aecda732bf
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://adnanthekhan.com/posts/clinejection/"
 published: 2026-02-09
 publisher: Adnan Khan - Security Research
 publisher_english: ""
-raw_sha256: a8344ff50b7e52fd5b89996bfbd9663f6e7c213c8e402d75fc2648089a51b34b
+raw_sha256: a169c49e45ea2e1b5e1557d2d2c531097413b80597407d1a081ab716b0ee35d2
 retrieved_from: "https://adnanthekhan.com/posts/clinejection/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:07+00:00"
+retrieved_utc: "2026-08-10T15:01:15+00:00"
 slug: 2026-adnan-khan-security-research-clinejection-compromising-cline-s-triager
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2026-02-09
 - Original: <https://adnanthekhan.com/posts/clinejection/>
-- Preserved from: https://adnanthekhan.com/posts/clinejection/ (live) on 2026-08-08
+- Preserved from: https://adnanthekhan.com/posts/clinejection/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

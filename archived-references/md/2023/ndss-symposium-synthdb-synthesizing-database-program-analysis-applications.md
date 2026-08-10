@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/synthdb-synthesizing-databa
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:10+00:00"
+  at: "2026-08-10T15:33:55+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/synthdb-synthesizing-database-via-program-analysis-for-security-testing-of-web-applications/"
     title: "SynthDB: Synthesizing Database via Program Analysis for Security Testing of Web Applications"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2023-632-paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2023.md:94"
+  - "2023.md:89"
 commit: ""
-content_sha256: b6f6cc95191e7f81c2486805ba5de93b8a9904ef22861dc3572f48356e0e3121
+content_sha256: 6797e474a009f2ce4a52ef424e653e1cd8dd62f240cca146495c99fc1638ef0d
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/synthdb-synthesizing-da
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 15b0c71246a0719fa29cff16607234d19cede30cb4d27b74d14962fa270b4202
+raw_sha256: c5d99b17d2bcaadd074909a67f660bdd43264fc4c0426bbb93eb30bed3e72c6e
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/synthdb-synthesizing-database-via-program-analysis-for-security-testing-of-web-applications/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:10+00:00"
+retrieved_utc: "2026-08-10T15:33:55+00:00"
 slug: ndss-symposium-synthdb-synthesizing-database-program-analysis-applications
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/synthdb-synthesizing-database-via-program-analysis-for-security-testing-of-web-applications/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/synthdb-synthesizing-database-via-program-analysis-for-security-testing-of-web-applications/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2023-632-paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/synthdb-synthesizing-database-via-program-analysis-for-security-testing-of-web-applications/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -72,20 +74,20 @@ In this paper, we present SYNTHDB, a program analysis-based database generation 
 
 ## View More Papers
 
+### [ Towards More Effective Responsible Disclosure for Vulnerability Research ](https://www.ndss-symposium.org/ndss-paper/auto-draft-425/)
+
+ Weiheng Bai and Qiushi Wu (University of Minnesota)
+
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-425/)
+
 ### [ OBSan: An Out-Of-Bound Sanitizer to Harden DNN Executables ](https://www.ndss-symposium.org/ndss-paper/obsan-an-out-of-bound-sanitizer-to-harden-dnn-executables/)
 
  Yanzuo Chen (The Hong Kong University of Science and Technology), Yuanyuan Yuan (The Hong Kong University of Science and Technology), Shuai Wang (The Hong Kong University of Science and Technology)
 
  [Read More](https://www.ndss-symposium.org/ndss-paper/obsan-an-out-of-bound-sanitizer-to-harden-dnn-executables/)
 
-### [ Are some prices more equal than others? Evaluating store-based... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-419/)
+### [ How Much Can We Trust Large Language Models? ](https://www.ndss-symposium.org/ndss-paper/auto-draft-495/)
 
- Hugo Jonker (Open University Netherlands), Stefan Karsch (TH Koln), Benjamin Krumnow (TH Koln), Godfried Meesters (Open University Netherlands)
+ Fatemeh Mireshghallah
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-419/)
-
-### [ Evaluations of Cyberattacks on Cooperative Control of Connected and... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-386/)
-
- H M Sabbir Ahmad (Boston University), Ehsan Sabouni (Boston University), Wei Xiao (Massachusetts Institute of Technology), Christos G. Cassandras (Boston University), Wenchao Li (Boston University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-386/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-495/)

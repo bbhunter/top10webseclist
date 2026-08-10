@@ -5,9 +5,9 @@ resource: "https://www.slideshare.net/neexemil/http-request-smuggling-via-higher
 tags: [slides, webseclist-reference, slideshare]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:31+00:00"
+  at: "2026-08-10T16:00:24+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.slideshare.net/neexemil/http-request-smuggling-via-higher-http-versions"
@@ -33,10 +33,10 @@ original_url: "https://www.slideshare.net/neexemil/http-request-smuggling-via-hi
 published: 2021-05-21
 publisher: Slideshare
 publisher_english: ""
-raw_sha256: 0f7dfc600e7c455aee08e041aa1b741dd7fe67c12de84845f73d4abe003749f5
+raw_sha256: a10bd488f00d07ddbdff88a623cfb0e0edef193f08a2613183830135f1b92827
 retrieved_from: "https://www.slideshare.net/slideshow/http-request-smuggling-via-higher-http-versions/248407775"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:31+00:00"
+retrieved_utc: "2026-08-10T16:00:24+00:00"
 slug: 2021-slideshare-http-request-smuggling-higher-http-versions
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: 2021-05-21
 - Original: <https://www.slideshare.net/neexemil/http-request-smuggling-via-higher-http-versions>
 - Current location: <https://www.slideshare.net/slideshow/http-request-smuggling-via-higher-http-versions/248407775>
-- Preserved from: https://www.slideshare.net/slideshow/http-request-smuggling-via-higher-http-versions/248407775 (live) on 2026-08-09
+- Preserved from: https://www.slideshare.net/slideshow/http-request-smuggling-via-higher-http-versions/248407775 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

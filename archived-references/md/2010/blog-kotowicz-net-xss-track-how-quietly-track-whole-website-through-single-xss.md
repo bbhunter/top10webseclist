@@ -5,9 +5,9 @@ resource: "http://blog.kotowicz.net/2010/11/xss-track-how-to-quietly-track-whole
 tags: [article, webseclist-reference, blog-kotowicz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:04:39+00:00"
+  at: "2026-08-10T15:04:25+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.kotowicz.net/2010/11/xss-track-how-to-quietly-track-whole.html"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2010.md:52"
 commit: ""
-content_sha256: 8cbfeb81ce615a1d14445345b345fff5fe78ded211dc3b9834809d642fd4fde1
+content_sha256: e64a7e17ccda166670423f421ed437f0c6fef2a6da93fd4ceca4826348481324
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "http://blog.kotowicz.net/2010/11/xss-track-how-to-quietly-track-w
 published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
-raw_sha256: 90cb564a586448fa1dcfdae47d61d69f73f034be22717df40476f113835ff8a3
+raw_sha256: 2f0b1e7ef7482bdc8ef3a6a075838911f69cd5adb414851cd89d766fec460750
 retrieved_from: "http://blog.kotowicz.net/2010/11/xss-track-how-to-quietly-track-whole.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:04:39+00:00"
+retrieved_utc: "2026-08-10T15:04:25+00:00"
 slug: blog-kotowicz-net-xss-track-how-quietly-track-whole-website-through-single-xss
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.kotowicz.net/2010/11/xss-track-how-to-quietly-track-whole.html>
-- Preserved from: http://blog.kotowicz.net/2010/11/xss-track-how-to-quietly-track-whole.html (live) on 2026-08-09
+- Preserved from: http://blog.kotowicz.net/2010/11/xss-track-how-to-quietly-track-whole.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -75,7 +75,6 @@ However, what to do if we found a vulnerability on *one *page, and all the inter
 
 All of this is possible **with a single injected script - **think **XSS-injected Google Analytics**! With just one XSS vulnerability on any page an attacker gets information about all browsing actions of unsuspecting user. Demo inside!
  ****
- 
 
 ## Disclaimer
 

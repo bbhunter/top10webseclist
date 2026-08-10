@@ -5,9 +5,9 @@ resource: "http://blog.kotowicz.net/2011/04/how-to-upload-arbitrary-file-content
 tags: [article, webseclist-reference, blog-kotowicz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:04:46+00:00"
+  at: "2026-08-10T15:04:30+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.kotowicz.net/2011/04/how-to-upload-arbitrary-file-contents.html"
@@ -19,7 +19,7 @@ cited_by:
   - "2011.md:33"
   - "2012.md:37"
 commit: ""
-content_sha256: 3e742d11eb0f29fe5e9165ca451fb6e54eeca5d3c35597dc08f7ad270fe42b44
+content_sha256: e8694d8ee23139a002b24f81d386beee682bb6c03f64826d337776500c9e576c
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "http://blog.kotowicz.net/2011/04/how-to-upload-arbitrary-file-con
 published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
-raw_sha256: 8b58e54df83c637de7b9f1aca6f54c223cfb48bddcdabb21cafe6aabbb71a255
+raw_sha256: 3b690338f59fcdac0504b8b61360e33d474b3ba9b9b55db3076954f8aa9da773
 retrieved_from: "http://blog.kotowicz.net/2011/04/how-to-upload-arbitrary-file-contents.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:04:46+00:00"
+retrieved_utc: "2026-08-10T15:04:30+00:00"
 slug: blog-kotowicz-net-how-upload-arbitrary-file-contents-cross-domain
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.kotowicz.net/2011/04/how-to-upload-arbitrary-file-contents.html>
-- Preserved from: http://blog.kotowicz.net/2011/04/how-to-upload-arbitrary-file-contents.html (live) on 2026-08-09
+- Preserved from: http://blog.kotowicz.net/2011/04/how-to-upload-arbitrary-file-contents.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

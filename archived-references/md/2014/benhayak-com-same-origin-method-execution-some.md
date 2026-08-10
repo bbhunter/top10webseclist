@@ -5,9 +5,9 @@ resource: "http://www.benhayak.com/2015/06/same-origin-method-execution-some.htm
 tags: [article, webseclist-reference, benhayak-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:02:28+00:00"
+  at: "2026-08-10T15:03:02+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.benhayak.com/2015/06/same-origin-method-execution-some.html"
@@ -18,9 +18,9 @@ authors:
   - Ben Hayak
 canonical_url: ""
 cited_by:
-  - "2014.md:81"
+  - "2014.md:76"
 commit: ""
-content_sha256: c3a934f55947ff27933b647a7a9b5da17b04c60edd3d2dffe3d84b42cf32d538
+content_sha256: ad21bfc01cee2b7bee03cbcdd21cf1e4ae818eac2d2be3250a9b05acbc7655e9
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "http://www.benhayak.com/2015/06/same-origin-method-execution-some
 published: ""
 publisher: benhayak.com
 publisher_english: ""
-raw_sha256: b92babd9872267e4f8d4b4ac3cff1c873d1fad7321b1c1cac930654adb5dd619
+raw_sha256: a6af6d80b35ce2a38ac5f28a1e85e65dc852015de158411fe3a0a2df6324975e
 retrieved_from: "http://www.benhayak.com/2015/06/same-origin-method-execution-some.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:02:28+00:00"
+retrieved_utc: "2026-08-10T15:03:02+00:00"
 slug: benhayak-com-same-origin-method-execution-some
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://www.benhayak.com/2015/06/same-origin-method-execution-some.html>
-- Preserved from: http://www.benhayak.com/2015/06/same-origin-method-execution-some.html (live) on 2026-08-09
+- Preserved from: http://www.benhayak.com/2015/06/same-origin-method-execution-some.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

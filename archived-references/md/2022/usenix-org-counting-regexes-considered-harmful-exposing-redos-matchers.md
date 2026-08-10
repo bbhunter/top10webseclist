@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/turon
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:46+00:00"
+  at: "2026-08-10T16:05:12+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/turonova"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2022.md:76"
+  - "2022.md:74"
 commit: ""
 content_sha256: a6e24e8b11aad4b20412d6bb2932984d56982e9772e30b2030aaa8a1a076cf3e
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity22/presentation/t
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 954a8d11a697572eb8a5ef5de2300c89fb8e26661ee00dfe1b77e46d9a04de9e
+raw_sha256: ca31bbccc643a1f82ae961f0d96f6c20b58aa19cfe23bc4bb21afc5789e4380d
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity22/presentation/turonova"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:46+00:00"
+retrieved_utc: "2026-08-10T16:05:12+00:00"
 slug: usenix-org-counting-regexes-considered-harmful-exposing-redos-matchers
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity22/presentation/turonova>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/turonova (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/turonova (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

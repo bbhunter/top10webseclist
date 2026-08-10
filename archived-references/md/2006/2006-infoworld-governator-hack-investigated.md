@@ -5,9 +5,9 @@ resource: "https://www.infoworld.com/article/2322705/governator-hack-investigate
 tags: [article, webseclist-reference, en, infoworld]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:37+00:00"
+  at: "2026-08-10T15:29:06+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.infoworld.com/article/2322705/governator-hack-investigated.html"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2006.md:60"
 commit: ""
-content_sha256: 041ae69d64866bfc629cdd6d4cc390cb1b7579dd4ae3b6264e51d989e1e6c7d1
+content_sha256: 7d03377b1872353ab2f95c2030c14e3683700aa23cbaee44047173e0d085eeb0
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://www.infoworld.com/article/2322705/governator-hack-investi
 published: 2006-09-11
 publisher: InfoWorld
 publisher_english: ""
-raw_sha256: 46ae431a20309dc9061ffc27d57116cadf2347b6825d5e6936328c50387730b3
+raw_sha256: 0a4995caa7b562cdf0dcb2f67bda351b8a52a93949b3e50b5f1b3936fd1747d6
 retrieved_from: "https://www.infoworld.com/article/2322705/governator-hack-investigated.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:37+00:00"
+retrieved_utc: "2026-08-10T15:29:06+00:00"
 slug: 2006-infoworld-governator-hack-investigated
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2006-09-11
 - Original: <https://www.infoworld.com/article/2322705/governator-hack-investigated.html>
-- Preserved from: https://www.infoworld.com/article/2322705/governator-hack-investigated.html (live) on 2026-08-09
+- Preserved from: https://www.infoworld.com/article/2322705/governator-hack-investigated.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -114,11 +114,11 @@ Mike Barton started out in online slinging HTML for CNET.com in the late 1990s a
 
 PopularArticlesVideos
 
-[### Rust preps improved borrow checker for stabilization By Paul Krill Aug 7, 20262 mins Programming LanguagesRustSoftware Development ![Image](https://www.infoworld.com/wp-content/uploads/2026/08/4206875-0-28221200-1786157830-shutterstock_1079249879.jpg?quality=50&strip=all&w=376)](https://www.infoworld.com/article/4206875/rust-preps-improved-borrow-checker-for-stabilization.html)
+[### A brief guide to AI-powered software development environments By Martin Heller Aug 10, 202618 mins Development ToolsGenerative AIIntegrated Development Environments ![Image](https://www.infoworld.com/wp-content/uploads/2026/08/4206868-0-58190400-1786352642-shutterstock_2287651327.jpg?quality=50&strip=all&w=444)](https://www.infoworld.com/article/4206868/a-brief-guide-to-ai-powered-software-development-environments.html)
 
-[### What we lose when every engineer can do everything By Mayada Gonimah Aug 7, 20267 mins DeveloperEngineerRoles ![Image](https://www.infoworld.com/wp-content/uploads/2026/08/4206404-0-81965700-1786125505-shutterstock_1277815804.jpg?quality=50&strip=all&w=375)](https://www.infoworld.com/article/4206404/what-we-lose-when-every-engineer-can-do-everything.html)
+[### Why observability doesn’t explain what happened By Sanjay Gidwani Aug 10, 20268 mins Application SecurityDevSecOpsDevops ![Image](https://www.infoworld.com/wp-content/uploads/2026/08/4206352-0-18196200-1786352563-shutterstock_2441844605.jpg?quality=50&strip=all&w=381)](https://www.infoworld.com/article/4206352/why-observability-doesnt-explain-what-happened.html)
 
-[### Moonshot’s Kimi AI model has also escaped from a test environment By Maxwell Cooter Aug 7, 20262 mins Artificial IntelligenceSecurity ![Image](https://www.infoworld.com/wp-content/uploads/2026/08/4206787-0-72458200-1786114400-shutterstock_2295737281-100963189-orig.jpg?quality=50&strip=all&w=375)](https://www.infoworld.com/article/4206787/moonshots-kimi-ai-model-has-also-escaped-from-a-test-environment-2.html)
+[### Enterprise AI lessons learned from autonomous mobility By Sudeep George Aug 10, 20268 mins Artificial IntelligenceData ManagementGenerative AI ![Image](https://www.infoworld.com/wp-content/uploads/2026/08/4206325-0-30052200-1786352503-shutterstock_2410614519.jpg?quality=50&strip=all&w=375)](https://www.infoworld.com/article/4206325/enterprise-ai-lessons-learned-from-autonomous-mobility.html)
 
 [### AI trends that need more attention Aug 4, 20265 mins Python ![Image](https://www.infoworld.com/wp-content/uploads/2026/08/4205130-0-81560300-1785861578-youtube-thumbnail-kUGzdL2OpyQ.jpg?quality=50&strip=all&w=444)](https://www.infoworld.com/video/4205130/ai-trends-that-need-more-attention.html)
 

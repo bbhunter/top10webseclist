@@ -5,9 +5,9 @@ resource: "http://web.archive.org/web/20160507023636/http://arstechnica.com/secu
 tags: [article, webseclist-reference, en-us, ars-technica]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:01:31+00:00"
+  at: "2026-08-10T15:02:18+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://arstechnica.com/security/2013/03/guerilla-researcher-created-epic-botnet-to-scan-billions-of-ip-addresses/"
@@ -24,7 +24,7 @@ canonical_url: "http://web.archive.org/web/20160507162422/http://arstechnica.com
 cited_by:
   - "2013.md:37"
 commit: ""
-content_sha256: 25804f286fab3ba1e7463f7d28d203b20b0a5bf8c57f28efba89fd9fb25d6a5b
+content_sha256: f71388b9fb67cbcc7467494fd8fe2d50506c696b8a02f9ffac50da685f5b5475
 depth: full
 depth_reason: default
 kind: article
@@ -34,10 +34,10 @@ original_url: "http://web.archive.org/web/20160507023636/http://arstechnica.com/
 published: ""
 publisher: Ars Technica
 publisher_english: ""
-raw_sha256: c535b0b60dd1334e9b9a5cd4785f2182f29b3a58855689f43a2f24376455d390
+raw_sha256: 98322b93269ab48c83f9d6b276c414fe8fac338dfee0817b3f765cb7a454b256
 retrieved_from: "http://web.archive.org/web/20160507162422/http://arstechnica.com/security/2013/03/guerilla-researcher-created-epic-botnet-to-scan-billions-of-ip-addresses"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:01:31+00:00"
+retrieved_utc: "2026-08-10T15:02:18+00:00"
 slug: ars-technica-guerilla-researcher-created-epic-botnet-scan-billions-ip-addresses
 snapshot: 20160507023636
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://arstechnica.com/security/2013/03/guerilla-researcher-created-epic-botnet-to-scan-billions-of-ip-addresses/>
 - Current location: <http://web.archive.org/web/20160507162422/http://arstechnica.com/security/2013/03/guerilla-researcher-created-epic-botnet-to-scan-billions-of-ip-addresses>
-- Preserved from: http://web.archive.org/web/20160507162422/http://arstechnica.com/security/2013/03/guerilla-researcher-created-epic-botnet-to-scan-billions-of-ip-addresses (live) on 2026-08-09
+- Preserved from: http://web.archive.org/web/20160507162422/http://arstechnica.com/security/2013/03/guerilla-researcher-created-epic-botnet-to-scan-billions-of-ip-addresses (live) on 2026-08-10
 - Capture timestamp: 20160507023636
 - Licence: unknown
 

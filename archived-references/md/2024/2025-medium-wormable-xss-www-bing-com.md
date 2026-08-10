@@ -5,9 +5,9 @@ resource: "https://medium.com/@pedbap/wormable-xss-www-bing-com-7d7cb52e7a12"
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:09+00:00"
+  at: "2026-08-10T15:32:16+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@pedbap/wormable-xss-www-bing-com-7d7cb52e7a12"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:56"
 commit: ""
-content_sha256: e39a5420027ac7a38527da29d685be37b80561824cb586d36b86e9f4261bc836
+content_sha256: 89a4c8ec1f31846493e8cab299b169b1583a95a78bbcf518d7c8306797aa88c3
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://medium.com/@pedbap/wormable-xss-www-bing-com-7d7cb52e7a12
 published: 2025-02-22
 publisher: Medium
 publisher_english: ""
-raw_sha256: cbb329f14896313e46274ae79415bd0b153e8ac5c95356497b0558f41794bccb
+raw_sha256: 6f304289e5e39e40bc05e553a4996ce253615def117302e133aa446edb659ddc
 retrieved_from: "https://medium.com/@pedbap/wormable-xss-www-bing-com-7d7cb52e7a12"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:09+00:00"
+retrieved_utc: "2026-08-10T15:32:16+00:00"
 slug: 2025-medium-wormable-xss-www-bing-com
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2025-02-22
 - Original: <https://medium.com/@pedbap/wormable-xss-www-bing-com-7d7cb52e7a12>
-- Preserved from: https://medium.com/@pedbap/wormable-xss-www-bing-com-7d7cb52e7a12 (live) on 2026-08-09
+- Preserved from: https://medium.com/@pedbap/wormable-xss-www-bing-com-7d7cb52e7a12 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

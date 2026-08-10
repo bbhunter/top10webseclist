@@ -5,9 +5,9 @@ resource: "https://www.microsoft.com/en-us/research/publication/pretty-bad-proxy
 tags: [article, webseclist-reference, en, microsoft-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:41+00:00"
+  at: "2026-08-10T15:32:37+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.microsoft.com/en-us/research/publication/pretty-bad-proxy-an-overlooked-adversary-in-browsers-https-deployments/"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2009.md:104"
+  - "2009.md:99"
 commit: ""
 content_sha256: c9cc93609f6f3c4b58ab443c2d4184dbbf99be3eb6c25a744ff7b7d6f4e5fd37
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.microsoft.com/en-us/research/publication/pretty-bad-p
 published: ""
 publisher: Microsoft Research
 publisher_english: ""
-raw_sha256: 0364f788d10e7117ae2ae94711bb54e8ce3d0d44475a36916b38ffaf7c9d723f
+raw_sha256: e24a3fad62f509e25b8f3ca1470a9cb835fd590caeda36b1de6c00e92a6fd15f
 retrieved_from: "https://www.microsoft.com/en-us/research/publication/pretty-bad-proxy-an-overlooked-adversary-in-browsers-https-deployments/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:41+00:00"
+retrieved_utc: "2026-08-10T15:32:37+00:00"
 slug: microsoft-research-pretty-bad-proxy-overlooked-adversary-browsers-deployments
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.microsoft.com/en-us/research/publication/pretty-bad-proxy-an-overlooked-adversary-in-browsers-https-deployments/>
-- Preserved from: https://www.microsoft.com/en-us/research/publication/pretty-bad-proxy-an-overlooked-adversary-in-browsers-https-deployments/ (live) on 2026-08-08
+- Preserved from: https://www.microsoft.com/en-us/research/publication/pretty-bad-proxy-an-overlooked-adversary-in-browsers-https-deployments/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

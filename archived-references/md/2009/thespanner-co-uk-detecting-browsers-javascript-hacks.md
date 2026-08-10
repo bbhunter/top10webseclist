@@ -5,9 +5,9 @@ resource: "http://www.thespanner.co.uk/2009/01/29/detecting-browsers-javascript-
 tags: [article, webseclist-reference, en, thespanner-co-uk]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:45:53+00:00"
+  at: "2026-08-10T16:01:52+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/01/29/detecting-browsers-javascript-hacks/"
@@ -30,10 +30,10 @@ original_url: "http://www.thespanner.co.uk/2009/01/29/detecting-browsers-javascr
 published: ""
 publisher: thespanner.co.uk
 publisher_english: ""
-raw_sha256: bc808c6d1da80a733a52e45fd81fd081c0ee93342570802abf022c099fa38302
+raw_sha256: de89b2fb261cdea5c0a90512b0b287961012efd664b09c38b03f165eda2d8809
 retrieved_from: "https://thespanner.co.uk/2009/01/29/detecting-browsers-javascript-hacks"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:45:53+00:00"
+retrieved_utc: "2026-08-10T16:01:52+00:00"
 slug: thespanner-co-uk-detecting-browsers-javascript-hacks
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/01/29/detecting-browsers-javascript-hacks/>
 - Current location: <https://thespanner.co.uk/2009/01/29/detecting-browsers-javascript-hacks>
-- Preserved from: https://thespanner.co.uk/2009/01/29/detecting-browsers-javascript-hacks (live) on 2026-08-09
+- Preserved from: https://thespanner.co.uk/2009/01/29/detecting-browsers-javascript-hacks (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

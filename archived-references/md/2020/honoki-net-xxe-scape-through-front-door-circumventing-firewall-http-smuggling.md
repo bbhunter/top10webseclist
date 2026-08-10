@@ -5,9 +5,9 @@ resource: "https://honoki.net/2020/03/18/xxe-scape-through-the-front-door-circum
 tags: [article, webseclist-reference, en-US, honoki-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:02+00:00"
+  at: "2026-08-10T15:27:23+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://honoki.net/2020/03/18/xxe-scape-through-the-front-door-circumventing-the-firewall-with-http-request-smuggling/"
@@ -28,10 +28,10 @@ original_url: "https://honoki.net/2020/03/18/xxe-scape-through-the-front-door-ci
 published: ""
 publisher: honoki.net
 publisher_english: ""
-raw_sha256: 57dedbc2b0a303df3c7ba53d8a18c2701d1bb1589125f0259442e965488fc27e
+raw_sha256: 23c7fed5a92b41608568ebe7ddb23086790023eff05a01ef4ab5ca5d868a8c5c
 retrieved_from: "https://honoki.net/2020/03/18/xxe-scape-through-the-front-door-circumventing-the-firewall-with-http-request-smuggling/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:02+00:00"
+retrieved_utc: "2026-08-10T15:27:23+00:00"
 slug: honoki-net-xxe-scape-through-front-door-circumventing-firewall-http-smuggling
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://honoki.net/2020/03/18/xxe-scape-through-the-front-door-circumventing-the-firewall-with-http-request-smuggling/>
-- Preserved from: https://honoki.net/2020/03/18/xxe-scape-through-the-front-door-circumventing-the-firewall-with-http-request-smuggling/ (live) on 2026-08-09
+- Preserved from: https://honoki.net/2020/03/18/xxe-scape-through-the-front-door-circumventing-the-firewall-with-http-request-smuggling/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

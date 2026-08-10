@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/kim"
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:37+00:00"
+  at: "2026-08-10T16:05:03+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/kim"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2022.md:63"
+  - "2022.md:61"
 commit: ""
 content_sha256: c8a593a9c505d72f38c1b7eddfdeabcfd01c14e5e2b8225bc4acf8f1822d18d2
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity22/presentation/k
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: df5cc7cbdbb99c385d884101c2c8b06ca3cfc74d12c4bfd13ddc65173443579e
+raw_sha256: d9b003bfbd1938e69aa1888e453ab23312e50bc981bb117c171d22293921215e
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity22/presentation/kim"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:37+00:00"
+retrieved_utc: "2026-08-10T16:05:03+00:00"
 slug: usenix-org-fuzzorigin-detecting-uxss-vulnerabilities-browsers-through-fuzzing
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity22/presentation/kim>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/kim (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/kim (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

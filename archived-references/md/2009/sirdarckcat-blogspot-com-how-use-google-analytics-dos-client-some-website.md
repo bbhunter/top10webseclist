@@ -5,9 +5,9 @@ resource: "https://sirdarckcat.blogspot.com/2009/04/how-to-use-google-analytics-
 tags: [article, webseclist-reference, sirdarckcat-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:50+00:00"
+  at: "2026-08-10T15:59:20+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://sirdarckcat.blogspot.com/2009/04/how-to-use-google-analytics-to-dos.html"
@@ -28,10 +28,10 @@ original_url: "https://sirdarckcat.blogspot.com/2009/04/how-to-use-google-analyt
 published: ""
 publisher: sirdarckcat.blogspot.com
 publisher_english: ""
-raw_sha256: 9b61f71c80cba552d3cb28c9e40c8bac84a6a250ae575abcb8acb2e3b52184ef
+raw_sha256: d46faded279e9934e13aacf0e1bf51e3fb9f497c9b0350167a254d6bad2911a3
 retrieved_from: "https://sirdarckcat.blogspot.com/2009/04/how-to-use-google-analytics-to-dos.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:50+00:00"
+retrieved_utc: "2026-08-10T15:59:20+00:00"
 slug: sirdarckcat-blogspot-com-how-use-google-analytics-dos-client-some-website
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://sirdarckcat.blogspot.com/2009/04/how-to-use-google-analytics-to-dos.html>
-- Preserved from: https://sirdarckcat.blogspot.com/2009/04/how-to-use-google-analytics-to-dos.html (live) on 2026-08-09
+- Preserved from: https://sirdarckcat.blogspot.com/2009/04/how-to-use-google-analytics-to-dos.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

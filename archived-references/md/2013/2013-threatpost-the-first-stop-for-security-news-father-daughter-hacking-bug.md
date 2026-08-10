@@ -5,9 +5,9 @@ resource: "http://web.archive.org/web/20160507023636/http://threatpost.com/fathe
 tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:46:48+00:00"
+  at: "2026-08-10T16:02:59+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://threatpost.com/father-daughter-hacking-team-finds-valuable-facebook-bug/102877"
@@ -35,10 +35,10 @@ original_url: "http://web.archive.org/web/20160507023636/http://threatpost.com/f
 published: 2013-11-08
 publisher: Threatpost | The first stop for security news
 publisher_english: ""
-raw_sha256: 8554b7d1f1a12b8a3a4c18af8f7dbce698ab9b9fc5ba4f37849482aa076b8872
+raw_sha256: 1c86baa70c7d25610af062c791f1326be2275ce22fbd5fdc580a2d8d15c4312b
 retrieved_from: "http://web.archive.org/web/20160608162853/https://threatpost.com/father-daughter-hacking-team-finds-valuable-facebook-bug/102877/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:46:48+00:00"
+retrieved_utc: "2026-08-10T16:02:59+00:00"
 slug: 2013-threatpost-the-first-stop-for-security-news-father-daughter-hacking-bug
 snapshot: 20160507023636
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 - Published: 2013-11-08
 - Original: <http://web.archive.org/web/20160507023636/http://threatpost.com/father-daughter-hacking-team-finds-valuable-facebook-bug/102877>
 - Current location: <http://web.archive.org/web/20160608162853/https://threatpost.com/father-daughter-hacking-team-finds-valuable-facebook-bug/102877/>
-- Preserved from: http://web.archive.org/web/20160608162853/https://threatpost.com/father-daughter-hacking-team-finds-valuable-facebook-bug/102877/ (live) on 2026-08-09
+- Preserved from: http://web.archive.org/web/20160608162853/https://threatpost.com/father-daughter-hacking-team-finds-valuable-facebook-bug/102877/ (live) on 2026-08-10
 - Capture timestamp: 20160507023636
 - Licence: unknown
 

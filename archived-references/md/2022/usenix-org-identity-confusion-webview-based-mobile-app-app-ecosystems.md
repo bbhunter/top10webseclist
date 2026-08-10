@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/zhang
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:51+00:00"
+  at: "2026-08-10T16:05:16+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-lei"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2022.md:69"
+  - "2022.md:67"
 commit: ""
 content_sha256: 735634766f68e27e18c62444a9fd1f34e78929fa1c36064f19f27e565726b27a
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity22/presentation/z
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 47fa9ba219f81a95e817b78509a41bfbc2e50688b109d037d6086540d5e4834d
+raw_sha256: 14020336021f74859ffd58d32edfc224d4e1561b75948c7bcb0bc5bc469d2fa2
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-lei"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:51+00:00"
+retrieved_utc: "2026-08-10T16:05:16+00:00"
 slug: usenix-org-identity-confusion-webview-based-mobile-app-app-ecosystems
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-lei>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-lei (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-lei (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

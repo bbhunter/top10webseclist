@@ -5,9 +5,9 @@ resource: "https://websec.wordpress.com/2010/12/04/sqli-filter-evasion-cheat-she
 tags: [article, webseclist-reference, en, reiners-weblog]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:22+00:00"
+  at: "2026-08-10T16:06:12+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://websec.wordpress.com/2010/12/04/sqli-filter-evasion-cheat-sheet-mysql/"
@@ -19,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2010.md:74"
 commit: ""
-content_sha256: 6b4577c659537d43bf4f340f146f095d0d6b8121408e3c1192ae508416c7fbf0
+content_sha256: cf174c8766f2b18edfee7a8793f0863656f08a0f8682f115101d94bfbc7e5900
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://websec.wordpress.com/2010/12/04/sqli-filter-evasion-cheat
 published: 2010-12-04
 publisher: "Reiners' Weblog"
 publisher_english: ""
-raw_sha256: 4507757e427ba6a51e0bb7c28377a120cd6ac310a46dae124e6433918a38be95
+raw_sha256: 79cf20e46002bdc0d7cfd99e5687339fd3ae1864c5edd8c0a345147e6266b6ee
 retrieved_from: "https://websec.wordpress.com/2010/12/04/sqli-filter-evasion-cheat-sheet-mysql/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:22+00:00"
+retrieved_utc: "2026-08-10T16:06:12+00:00"
 slug: 2010-reiners-weblog-sqli-filter-evasion-cheat-sheet-mysql
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2010-12-04
 - Original: <https://websec.wordpress.com/2010/12/04/sqli-filter-evasion-cheat-sheet-mysql/>
-- Preserved from: https://websec.wordpress.com/2010/12/04/sqli-filter-evasion-cheat-sheet-mysql/ (live) on 2026-08-09
+- Preserved from: https://websec.wordpress.com/2010/12/04/sqli-filter-evasion-cheat-sheet-mysql/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

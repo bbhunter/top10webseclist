@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/woot15/workshop-program/presentatio
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:23+00:00"
+  at: "2026-08-10T16:05:49+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/woot15/workshop-program/presentation/pellegrino"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2015.md:84"
+  - "2015.md:80"
 commit: ""
 content_sha256: f0d008f7f69dc99f64b37a8bc65d403818c748ca0275bf17fcf3adba0fa18daa
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/woot15/workshop-program/present
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 808f4f06cbdca78870c80fc4a2bc21d548022290a2e597e632509e16852f98e4
+raw_sha256: 9662412327fa60d2651953b1a78ee3ef34509ef08c0d0a1c3cfd200303a50d45
 retrieved_from: "https://www.usenix.org/conference/woot15/workshop-program/presentation/pellegrino"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:23+00:00"
+retrieved_utc: "2026-08-10T16:05:49+00:00"
 slug: usenix-org-cashing-out-great-cannon-browser-based-ddos-attacks-economics
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/woot15/workshop-program/presentation/pellegrino>
-- Preserved from: https://www.usenix.org/conference/woot15/workshop-program/presentation/pellegrino (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/woot15/workshop-program/presentation/pellegrino (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity15/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:01+00:00"
+  at: "2026-08-10T16:04:24+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/vanhoef"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2015.md:67"
+  - "2015.md:63"
 commit: ""
 content_sha256: 180031a6662f147e57f484db4d1663c6f08da7b2a1e9f6606289753de99a23f6
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity15/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 3d4b5bbc363e59134baa2f16d66e5f485357fdb1ebdb1cc92065335d48f8ef65
+raw_sha256: 182055e3d90fbb9efb7ff01538e9ce4be972b709cb59961077b74437244641d1
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/vanhoef"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:01+00:00"
+retrieved_utc: "2026-08-10T16:04:24+00:00"
 slug: usenix-org-all-your-biases-belong-us-breaking-rc4-wpa-tkip-tls
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/vanhoef>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/vanhoef (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/vanhoef (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

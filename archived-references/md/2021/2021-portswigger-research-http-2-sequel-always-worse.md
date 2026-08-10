@@ -5,21 +5,22 @@ resource: "https://portswigger.net/research/http2"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:34+00:00"
+  at: "2026-08-10T15:36:43+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/http2"
     title: "HTTP/2: The Sequel is Always Worse"
     last_modified: 2021-08-05
-also_at: []
+also_at:
+  - "https://portswigger.net/kb/papers/rfekn2Uv/HTTP2whitepaper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
   - "2021.md:6"
 commit: ""
-content_sha256: 1787dd157c810040aa75cfe219a62e57f79f0e8612c921209e1f0f71ab045af4
+content_sha256: 6cb11b90007bd1004594e76f585b4ef5487576d3fd55de5859a254f91ecbfd88
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +30,10 @@ original_url: "https://portswigger.net/research/http2"
 published: 2021-08-05
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: a6d29e87361a2bbca5803c36d174a5a6b8b18399d4582cd5c50964665a648185
+raw_sha256: b36821d93e613ccc57c9b9a59f9bac9739301fe4a072f9d907cb9f2b3cdc6df8
 retrieved_from: "https://portswigger.net/research/http2"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:34+00:00"
+retrieved_utc: "2026-08-10T15:36:43+00:00"
 slug: 2021-portswigger-research-http-2-sequel-always-worse
 snapshot: ""
 title_english: ""
@@ -46,7 +47,8 @@ translation_of: ""
 
 - Published: 2021-08-05
 - Original: <https://portswigger.net/research/http2>
-- Preserved from: https://portswigger.net/research/http2 (live) on 2026-08-09
+- Also published at: <https://portswigger.net/kb/papers/rfekn2Uv/HTTP2whitepaper.pdf>
+- Preserved from: https://portswigger.net/research/http2 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

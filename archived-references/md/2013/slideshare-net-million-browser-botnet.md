@@ -1,13 +1,13 @@
 ---
-type: Article
+type: Slides
 title: Million Browser Botnet
 resource: "http://web.archive.org/web/20160507023636/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet"
-tags: [article, webseclist-reference, en, slideshare-net]
+tags: [slides, webseclist-reference, en, slideshare-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:24+00:00"
+  at: "2026-08-10T16:00:18+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet"
@@ -22,20 +22,20 @@ canonical_url: "http://web.archive.org/web/20150719211459/http://www.slideshare.
 cited_by:
   - "2013.md:20"
 commit: ""
-content_sha256: cfb3324085fa47950a6e2e068a39906ac761ab08cf1b2633d83e43c77e3256ba
+content_sha256: 3eab207e6c29656dab214ccdbf0dd1943c2c7a315e0ed299e6341e09b9a26f68
 depth: full
 depth_reason: default
-kind: article
+kind: slides
 language: en
 licence: unknown
 original_url: "http://web.archive.org/web/20160507023636/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet"
 published: ""
 publisher: slideshare.net
 publisher_english: ""
-raw_sha256: 5e9c421bbdd8e500c0ce948e5b7a0104d0bce5ba44df5c40eba321d4c1e7d78e
+raw_sha256: 65d24fd71bde3b25764a07f6faa05f220edd43a36678388ebafb14891524f0d3
 retrieved_from: "http://web.archive.org/web/20150719211459/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:24+00:00"
+retrieved_utc: "2026-08-10T16:00:18+00:00"
 slug: slideshare-net-million-browser-botnet
 snapshot: 20160507023636
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet>
 - Current location: <http://web.archive.org/web/20150719211459/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet>
-- Preserved from: http://web.archive.org/web/20150719211459/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet (live) on 2026-08-09
+- Preserved from: http://web.archive.org/web/20150719211459/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet (live) on 2026-08-10
 - Capture timestamp: 20160507023636
 - Licence: unknown
 
@@ -274,7 +274,7 @@ Before leveraging advertising networks, the reason this attack scenario didn’t
 
  Published in: [Technology](http://web.archive.org/web/20150719211459/http://www.slideshare.net/featured/category/technology)
 
-     0 Comments     **  4 Likes      ** Statistics     ** Notes 
+     0 Comments     **  4 Likes      ** Statistics     ** Notes
 
 -
 
@@ -369,9 +369,4 @@ No notes for slide
 -  [ 7. ](http://web.archive.org/web/20150719211459/http://image.slidesharecdn.com/millionbrowserbotnet-130805142154-phpapp02/95/million-browser-botnet-7-638.jpg?cb=1375712657) Evil CSRF (Javascript not necessarily required) Force a browser to hack ANY other website, upload / download illegal content, search for embarrassing or incriminating terms, initiate bank wire transfers, post offensive messages, vote Edward Snowden as Times Person of the Year. <img src="http://server/cart?id=‘ UNION ALL SELECT user, pass,…”> <img src="http://torrent/D1C16AB1E2330AF3C4BE06AC43ABCE1CBD78C.torrent”> <img src="http://www.google.com/search?q=Justin+Bieber+fan+club”> <img src="http://att/search?uuid=10009”><img src="http://att/search?uuid=10010”> <img src="http://server/vote?id=4”> Spoofing Google search history with CSRF http://jeremiahgrossman.blogspot.com/2010/12/spoofing-google-search-history-with.html
 -  [ 8. ](http://web.archive.org/web/20150719211459/http://image.slidesharecdn.com/millionbrowserbotnet-130805142154-phpapp02/95/million-browser-botnet-8-638.jpg?cb=1375712657) Login-Detection <img src=”http://site/img.png” /> <script src=”http://site/javascript.js” I Know What Websites You Are Logged-In To http://blog.whitehatsec.com/i-know-what-websites-you-are-logged-in-to-login-detection-via-csrf/ A least 6 different techniques
 -  [ 9. ](http://web.archive.org/web/20150719211459/http://image.slidesharecdn.com/millionbrowserbotnet-130805142154-phpapp02/95/million-browser-botnet-9-638.jpg?cb=1375712657) Deanonymize via mouse-click (clickjack) I Know Your Name, and Probably a Whole Lot More http://blog.whitehatsec.com/i-know-your-name-and-probably-a-whole-lot-more-deanonymization-via-likejacking-followjacking-etc/
--  [ 11. ](http://web.archive.org/web/20150719211459/http://image.slidesharecdn.com/millionbrowserbotnet-130805142154-phpapp02/95/million-browser-botnet-10-638.jpg?cb=1375712657) Auto-XSS <iframe src=“http://server/q=…<inject XSS payload>”></iframe> § Steal Cookies / Session Hijacking § Steal “saved” passwords. § Etc.
--  [ 13. ](http://web.archive.org/web/20150719211459/http://image.slidesharecdn.com/millionbrowserbotnet-130805142154-phpapp02/95/million-browser-botnet-12-638.jpg?cb=1375712657) [Distributed] Brute-Force Hash Cracking “During our tests it has been possible to observe password guessing rates of 100,000 MD5 hashes/second in JavaScript.” - Lavakumar Kuppan
--  [ 14. ](http://web.archive.org/web/20150719211459/http://image.slidesharecdn.com/millionbrowserbotnet-130805142154-phpapp02/95/million-browser-botnet-14-638.jpg?cb=1375712657) md5-password-cracker.js by Feross Aboukhadijeh http://feross.org/hacks/md5-password-cracker.js/ Ravan http://www.andlabs.org/tools/ravan/ravan.html
--  [ 15. ](http://web.archive.org/web/20150719211459/http://image.slidesharecdn.com/millionbrowserbotnet-130805142154-phpapp02/95/million-browser-botnet-15-638.jpg?cb=1375712657) Application-Level DDoS “A browser can send a surprisingly large number of GET requests to a remote website using COR from WebWorkers. During tests it was found that around 10,000 requests/minute can be sent from a single browser.” - Lavakumar Kuppan Attacking with HTML5 https://media.blackhat.com/bh-ad-10/Kuppan/Blackhat-AD-2010-Kuppan-Attacking-with-HTML5-wp.pdf § Does not hold open [a lot of] TCP connections, just fires a lot HTTP request synchronously.
--  [ 16. ](http://web.archive.org/web/20150719211459/http://image.slidesharecdn.com/millionbrowserbotnet-130805142154-phpapp02/95/million-browser-botnet-16-638.jpg?cb=1375712657) Connection-Limits (6-per hostname) http://www.browserscope.org/
 -

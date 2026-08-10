@@ -5,9 +5,9 @@ resource: "https://github.blog/2023-08-17-mtls-when-certificate-authentication-i
 tags: [article, webseclist-reference, en, the-github-blog]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:12:22+00:00"
+  at: "2026-08-10T15:10:19+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://github.blog/2023-08-17-mtls-when-certificate-authentication-is-done-wrong/"
@@ -23,7 +23,7 @@ canonical_url: "https://github.blog/security/vulnerability-research/mtls-when-ce
 cited_by:
   - "2023.md:19"
 commit: ""
-content_sha256: d866dbf8c119ce9976a316b695aa192f373a3026f76a6552ed363571ad76388b
+content_sha256: f90075ddc8eec8c9e8c85825687bea6d22385624e0e15fce5ecd14e06c96c392
 depth: full
 depth_reason: default
 kind: article
@@ -33,10 +33,10 @@ original_url: "https://github.blog/2023-08-17-mtls-when-certificate-authenticati
 published: 2023-08-17
 publisher: The GitHub Blog
 publisher_english: ""
-raw_sha256: e593813c5132afd9cf28de4395b134e4fdbf8789da76c3925210b07867d64fe2
+raw_sha256: 30f657fa647e4c79da815d81f5449e553cad2ba0346dc77cc8cacf3012b02453
 retrieved_from: "https://github.blog/security/vulnerability-research/mtls-when-certificate-authentication-is-done-wrong/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:12:22+00:00"
+retrieved_utc: "2026-08-10T15:10:19+00:00"
 slug: 2023-the-github-blog-mtls-when-certificate-authentication-done-wrong
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: 2023-08-17
 - Original: <https://github.blog/2023-08-17-mtls-when-certificate-authentication-is-done-wrong/>
 - Current location: <https://github.blog/security/vulnerability-research/mtls-when-certificate-authentication-is-done-wrong/>
-- Preserved from: https://github.blog/security/vulnerability-research/mtls-when-certificate-authentication-is-done-wrong/ (live) on 2026-08-09
+- Preserved from: https://github.blog/security/vulnerability-research/mtls-when-certificate-authentication-is-done-wrong/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

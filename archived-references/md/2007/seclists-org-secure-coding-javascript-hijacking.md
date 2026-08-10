@@ -5,9 +5,9 @@ resource: "https://seclists.org/securecoding/2007/q2/0"
 tags: [article, webseclist-reference, en, seclists-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:10+00:00"
+  at: "2026-08-10T15:58:16+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://seclists.org/securecoding/2007/q2/0"
@@ -18,7 +18,7 @@ authors:
   - Brian Chess
 canonical_url: ""
 cited_by:
-  - "2007.md:106"
+  - "2007.md:101"
 commit: ""
 content_sha256: 737c2e80190c73a75beb09b4597713c35e2c08bfa1e8eb60e2907734ec7507e3
 depth: full
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: 40cf2c286dc8567802f0cbcb33c965f768d12de85f2aa12c501dec7cf284f271
 retrieved_from: "https://seclists.org/securecoding/2007/q2/0"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:10+00:00"
+retrieved_utc: "2026-08-10T15:58:16+00:00"
 slug: seclists-org-secure-coding-javascript-hijacking
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://seclists.org/securecoding/2007/q2/0>
-- Preserved from: https://seclists.org/securecoding/2007/q2/0 (live) on 2026-08-08
+- Preserved from: https://seclists.org/securecoding/2007/q2/0 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

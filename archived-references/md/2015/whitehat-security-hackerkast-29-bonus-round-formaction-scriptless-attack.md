@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20171225140648/https://www.whitehatsec.co
 tags: [article, webseclist-reference, en, whitehat-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:43+00:00"
+  at: "2026-08-10T16:06:35+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20171225140648/https://www.whitehatsec.com/blog/hackerkast-29-bonus-round-formaction-scriptless-attack/"
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20171225140648/https://www.whitehatse
 published: ""
 publisher: WhiteHat Security
 publisher_english: ""
-raw_sha256: db1cc7437c2b03a444bbfdabaea4702912c1e1fefb91efd84eaa947383488bde
+raw_sha256: e63674c86bf89f631a993830621bf36a4b592743f99922886747527cec3f97af
 retrieved_from: "https://web.archive.org/web/20160604165619/https://www.whitehatsec.com/blog/hackerkast-29-bonus-round-formaction-scriptless-attack/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:43+00:00"
+retrieved_utc: "2026-08-10T16:06:35+00:00"
 slug: whitehat-security-hackerkast-29-bonus-round-formaction-scriptless-attack
 snapshot: 20171225140648
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20171225140648/https://www.whitehatsec.com/blog/hackerkast-29-bonus-round-formaction-scriptless-attack/>
 - Current location: <https://web.archive.org/web/20160604165619/https://www.whitehatsec.com/blog/hackerkast-29-bonus-round-formaction-scriptless-attack/>
-- Preserved from: https://web.archive.org/web/20160604165619/https://www.whitehatsec.com/blog/hackerkast-29-bonus-round-formaction-scriptless-attack/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160604165619/https://www.whitehatsec.com/blog/hackerkast-29-bonus-round-formaction-scriptless-attack/ (live) on 2026-08-10
 - Capture timestamp: 20171225140648
 - Licence: unknown
 

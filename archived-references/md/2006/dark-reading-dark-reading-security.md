@@ -5,9 +5,9 @@ resource: "http://www.darkreading.com/document.asp?doc_id=104313&f_src=darkreadi
 tags: [article, webseclist-reference, en, dark-reading]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:08:57+00:00"
+  at: "2026-08-10T15:08:37+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.darkreading.com/document.asp?doc_id=104313&f_src=darkreading_section_296"
@@ -20,7 +20,7 @@ canonical_url: "https://www.darkreading.com/"
 cited_by:
   - "2006.md:57"
 commit: ""
-content_sha256: 55a56ca35967b7e773431cd86d275fa147083af76ceadf061e617a5e04d59eaa
+content_sha256: eb897adc20e38104db594bdb55c5c261cf238e787023f89ae622afbda677473f
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "http://www.darkreading.com/document.asp?doc_id=104313&f_src=darkr
 published: ""
 publisher: Dark Reading
 publisher_english: ""
-raw_sha256: 79e5b7bdfc3ebeda3183359411a3355fe24abde633145f156572b875a7491b27
+raw_sha256: abe70661dfa40b60d74d8fa58547214fa667558c5851319511cf2a7f72ccabb6
 retrieved_from: "https://www.darkreading.com/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:08:57+00:00"
+retrieved_utc: "2026-08-10T15:08:37+00:00"
 slug: dark-reading-dark-reading-security
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.darkreading.com/document.asp?doc_id=104313&f_src=darkreading_section_296>
 - Current location: <https://www.darkreading.com/>
-- Preserved from: https://www.darkreading.com/ (live) on 2026-08-09
+- Preserved from: https://www.darkreading.com/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

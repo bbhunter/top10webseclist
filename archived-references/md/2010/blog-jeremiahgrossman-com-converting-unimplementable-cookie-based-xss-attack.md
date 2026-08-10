@@ -5,9 +5,9 @@ resource: "https://jeremiahgrossman.blogspot.com/2010/02/converting-unimplementa
 tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:31:24+00:00"
+  at: "2026-08-10T15:30:08+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2010/02/converting-unimplementable-cookie-based.html"
@@ -30,10 +30,10 @@ original_url: "https://jeremiahgrossman.blogspot.com/2010/02/converting-unimplem
 published: ""
 publisher: blog.jeremiahgrossman.com
 publisher_english: ""
-raw_sha256: 3bab7b744c1d0057c4b3ffee0f9e441de0da18d6923024edc2edae8f7e85b1c9
+raw_sha256: 9a81c58e9133b712171c3525ecd64cf046809909a3edbea24dffc8ef3c67f6ba
 retrieved_from: "https://blog.jeremiahgrossman.com/2010/02/converting-unimplementable-cookie-based.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:31:24+00:00"
+retrieved_utc: "2026-08-10T15:30:08+00:00"
 slug: blog-jeremiahgrossman-com-converting-unimplementable-cookie-based-xss-attack
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2010/02/converting-unimplementable-cookie-based.html>
 - Current location: <https://blog.jeremiahgrossman.com/2010/02/converting-unimplementable-cookie-based.html>
-- Preserved from: https://blog.jeremiahgrossman.com/2010/02/converting-unimplementable-cookie-based.html (live) on 2026-08-09
+- Preserved from: https://blog.jeremiahgrossman.com/2010/02/converting-unimplementable-cookie-based.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

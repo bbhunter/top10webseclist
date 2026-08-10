@@ -5,9 +5,9 @@ resource: "https://srcincite.io/blog/2024/07/21/jndi-injection-rce-via-path-mani
 tags: [article, webseclist-reference, en, srcincite-io]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:28+00:00"
+  at: "2026-08-10T16:00:56+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://srcincite.io/blog/2024/07/21/jndi-injection-rce-via-path-manipulation-in-memoryuserdatabasefactory.html"
@@ -28,10 +28,10 @@ original_url: "https://srcincite.io/blog/2024/07/21/jndi-injection-rce-via-path-
 published: ""
 publisher: srcincite.io
 publisher_english: ""
-raw_sha256: e54ef30131ae3514af1ff028f05d622dc50f00d5058915274f7916367dd88b2e
+raw_sha256: fd813360523e716b660de40b0d73bc3cc04c212990f17a6551c5c07a3622a92d
 retrieved_from: "https://srcincite.io/blog/2024/07/21/jndi-injection-rce-via-path-manipulation-in-memoryuserdatabasefactory.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:28+00:00"
+retrieved_utc: "2026-08-10T16:00:56+00:00"
 slug: srcincite-io-jndi-injection-remote-code-execution-memoryuserdatabasefactory
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://srcincite.io/blog/2024/07/21/jndi-injection-rce-via-path-manipulation-in-memoryuserdatabasefactory.html>
-- Preserved from: https://srcincite.io/blog/2024/07/21/jndi-injection-rce-via-path-manipulation-in-memoryuserdatabasefactory.html (live) on 2026-08-09
+- Preserved from: https://srcincite.io/blog/2024/07/21/jndi-injection-rce-via-path-manipulation-in-memoryuserdatabasefactory.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

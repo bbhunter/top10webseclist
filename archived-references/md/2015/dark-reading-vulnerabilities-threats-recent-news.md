@@ -5,9 +5,9 @@ resource: "http://www.darkreading.com/scope-of-freak-flaw-widens-as-microsoft-sa
 tags: [article, webseclist-reference, en, dark-reading]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:08:59+00:00"
+  at: "2026-08-10T15:08:41+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.darkreading.com/scope-of-freak-flaw-widens-as-microsoft-says-windows-affected-too/d/d-id/1319380"
@@ -20,7 +20,7 @@ canonical_url: "https://www.darkreading.com/vulnerabilities-threats"
 cited_by:
   - "2015.md:26"
 commit: ""
-content_sha256: 945040241b9cd00acc6bdcf6931ea6a442923d952f2c2e8d31d315bfbb1e7495
+content_sha256: 916ad852fdfa3fea7ec86e930e30d8a87a1bcc5b96dca0e932078046bdd8d6d1
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "http://www.darkreading.com/scope-of-freak-flaw-widens-as-microsof
 published: ""
 publisher: Dark Reading
 publisher_english: ""
-raw_sha256: 3de3fcadcec77a4562d51271fd54876bfd46a74e6dbd6596cc29589edf15893f
+raw_sha256: fbaebe233d2581a0854deb2c4a6f363fe688449ddfa00704c54f02ab3a0303d2
 retrieved_from: "https://www.darkreading.com/vulnerabilities-threats"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:08:59+00:00"
+retrieved_utc: "2026-08-10T15:08:41+00:00"
 slug: dark-reading-vulnerabilities-threats-recent-news
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.darkreading.com/scope-of-freak-flaw-widens-as-microsoft-says-windows-affected-too/d/d-id/1319380>
 - Current location: <https://www.darkreading.com/vulnerabilities-threats>
-- Preserved from: https://www.darkreading.com/vulnerabilities-threats (live) on 2026-08-09
+- Preserved from: https://www.darkreading.com/vulnerabilities-threats (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

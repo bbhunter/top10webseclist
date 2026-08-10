@@ -5,9 +5,9 @@ resource: "http://web.archive.org/web/20160507023636/http://threatpost.com/java-
 tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:46:54+00:00"
+  at: "2026-08-10T16:03:03+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://threatpost.com/java-zero-day-procession-continues-030113/77575"
@@ -35,10 +35,10 @@ original_url: "http://web.archive.org/web/20160507023636/http://threatpost.com/j
 published: 2013-03-01
 publisher: Threatpost | The first stop for security news
 publisher_english: ""
-raw_sha256: 4810ddb950906d5ddb76aa912f05cb64b23be0d13baf8253892f13bd73c45cc3
+raw_sha256: 64456503169706b627c3bb0b814fe7de5f3bfea0d291997dfdc5dd28b9d84dbc
 retrieved_from: "http://web.archive.org/web/20160415221419/https://threatpost.com/java-zero-day-procession-continues-030113/77575/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:46:54+00:00"
+retrieved_utc: "2026-08-10T16:03:03+00:00"
 slug: 2013-threatpost-the-first-stop-for-security-news-java-zero-day-continues
 snapshot: 20160507023636
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 - Published: 2013-03-01
 - Original: <http://web.archive.org/web/20160507023636/http://threatpost.com/java-zero-day-procession-continues-030113/77575>
 - Current location: <http://web.archive.org/web/20160415221419/https://threatpost.com/java-zero-day-procession-continues-030113/77575/>
-- Preserved from: http://web.archive.org/web/20160415221419/https://threatpost.com/java-zero-day-procession-continues-030113/77575/ (live) on 2026-08-09
+- Preserved from: http://web.archive.org/web/20160415221419/https://threatpost.com/java-zero-day-procession-continues-030113/77575/ (live) on 2026-08-10
 - Capture timestamp: 20160507023636
 - Licence: unknown
 

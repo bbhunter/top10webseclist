@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://arstechnica.com/sec
 tags: [article, webseclist-reference, en-us, ars-technica]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:01:28+00:00"
+  at: "2026-08-10T15:02:14+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://arstechnica.com/security/2012/12/how-script-kiddies-can-hijack-your-browser-to-steal-your-password/"
@@ -24,7 +24,7 @@ canonical_url: "https://web.archive.org/web/20161118020720/http://arstechnica.co
 cited_by:
   - "2012.md:20"
 commit: ""
-content_sha256: b739ae5fc4f831ccd734c05fa3f436377dc5ab598b57c520fc50d9517d4e4c4a
+content_sha256: b69e198b7cf5e5a1294e8906a7405bb254383b52baf7d4d8a9fd6b5c05443d70
 depth: full
 depth_reason: default
 kind: article
@@ -34,10 +34,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://arstechnica.com
 published: ""
 publisher: Ars Technica
 publisher_english: ""
-raw_sha256: 2cea1cea49399fe8804cdb1e2ab2682f7a912fb01c1032ea2f155ca64b327841
+raw_sha256: b2dd0e4acc5249549f4a3707fe19e1f134e2dbf486b290253a99070b2fb5b7c2
 retrieved_from: "https://web.archive.org/web/20161118020720/http://arstechnica.com/security/2012/12/how-script-kiddies-can-hijack-your-browser-to-steal-your-password/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:01:28+00:00"
+retrieved_utc: "2026-08-10T15:02:14+00:00"
 slug: ars-technica-how-script-kiddies-can-hijack-your-browser-steal-your-password
 snapshot: 20170903113359
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://arstechnica.com/security/2012/12/how-script-kiddies-can-hijack-your-browser-to-steal-your-password/>
 - Current location: <https://web.archive.org/web/20161118020720/http://arstechnica.com/security/2012/12/how-script-kiddies-can-hijack-your-browser-to-steal-your-password/>
-- Preserved from: https://web.archive.org/web/20161118020720/http://arstechnica.com/security/2012/12/how-script-kiddies-can-hijack-your-browser-to-steal-your-password/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20161118020720/http://arstechnica.com/security/2012/12/how-script-kiddies-can-hijack-your-browser-to-steal-your-password/ (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

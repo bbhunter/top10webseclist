@@ -5,9 +5,9 @@ resource: "http://blog.kotowicz.net/2011/05/cross-domain-arbitrary-file-upload.h
 tags: [article, webseclist-reference, blog-kotowicz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:04:49+00:00"
+  at: "2026-08-10T15:04:31+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.kotowicz.net/2011/05/cross-domain-arbitrary-file-upload.html"
@@ -28,10 +28,10 @@ original_url: "http://blog.kotowicz.net/2011/05/cross-domain-arbitrary-file-uplo
 published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
-raw_sha256: def4e0dac2e762d6c6a1822351d0c8442301d09f1359757c8bb9f42499bc75a5
+raw_sha256: edef88e230c58f0542da49230508189131874dd089c028b8e10378e1f293d3bd
 retrieved_from: "http://blog.kotowicz.net/2011/05/cross-domain-arbitrary-file-upload.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:04:49+00:00"
+retrieved_utc: "2026-08-10T15:04:31+00:00"
 slug: blog-kotowicz-net-cross-domain-arbitrary-file-upload-redux
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.kotowicz.net/2011/05/cross-domain-arbitrary-file-upload.html>
-- Preserved from: http://blog.kotowicz.net/2011/05/cross-domain-arbitrary-file-upload.html (live) on 2026-08-09
+- Preserved from: http://blog.kotowicz.net/2011/05/cross-domain-arbitrary-file-upload.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

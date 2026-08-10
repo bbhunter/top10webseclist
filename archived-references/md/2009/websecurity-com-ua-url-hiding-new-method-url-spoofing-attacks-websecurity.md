@@ -5,9 +5,9 @@ resource: "http://websecurity.com.ua/3383/"
 tags: [article, webseclist-reference, websecurity-com-ua]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:29+00:00"
+  at: "2026-08-10T16:06:20+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://websecurity.com.ua/3383/"
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 9fafc7d911ffd674d083fc0797b57ceb45dbc46d7beeff9bd57eb6082fffdf5c
 retrieved_from: "http://websecurity.com.ua/3383/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:29+00:00"
+retrieved_utc: "2026-08-10T16:06:20+00:00"
 slug: websecurity-com-ua-url-hiding-new-method-url-spoofing-attacks-websecurity
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://websecurity.com.ua/3383/>
-- Preserved from: http://websecurity.com.ua/3383/ (live) on 2026-08-09
+- Preserved from: http://websecurity.com.ua/3383/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

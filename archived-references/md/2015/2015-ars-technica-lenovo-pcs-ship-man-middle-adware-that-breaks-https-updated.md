@@ -5,9 +5,9 @@ resource: "http://arstechnica.com/security/2015/02/lenovo-pcs-ship-with-man-in-t
 tags: [article, webseclist-reference, en, ars-technica]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:01:32+00:00"
+  at: "2026-08-10T15:02:21+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://arstechnica.com/security/2015/02/lenovo-pcs-ship-with-man-in-the-middle-adware-that-breaks-https-connections/"
@@ -23,7 +23,7 @@ canonical_url: "https://arstechnica.com/information-technology/2015/02/lenovo-pc
 cited_by:
   - "2015.md:21"
 commit: ""
-content_sha256: 173b127a52dd7891e10e054707454bfb810e0909b6dc4ddf66979d59fc9209ae
+content_sha256: c5acd7a9e1e8668d456c278ee61b26f09bff08db766af09c3f01552ac4b462a6
 depth: full
 depth_reason: default
 kind: article
@@ -33,10 +33,10 @@ original_url: "http://arstechnica.com/security/2015/02/lenovo-pcs-ship-with-man-
 published: 2015-02-19
 publisher: Ars Technica
 publisher_english: ""
-raw_sha256: 0e7274056df4cd20237526696d059af38ade4ca4ba44729d780ce21ffe938c36
+raw_sha256: c93f8322acbe7238386b98fba5f885fe68f3944454eda628365bb748ab361380
 retrieved_from: "https://arstechnica.com/information-technology/2015/02/lenovo-pcs-ship-with-man-in-the-middle-adware-that-breaks-https-connections/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:01:32+00:00"
+retrieved_utc: "2026-08-10T15:02:21+00:00"
 slug: 2015-ars-technica-lenovo-pcs-ship-man-middle-adware-that-breaks-https-updated
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: 2015-02-19
 - Original: <http://arstechnica.com/security/2015/02/lenovo-pcs-ship-with-man-in-the-middle-adware-that-breaks-https-connections/>
 - Current location: <https://arstechnica.com/information-technology/2015/02/lenovo-pcs-ship-with-man-in-the-middle-adware-that-breaks-https-connections/>
-- Preserved from: https://arstechnica.com/information-technology/2015/02/lenovo-pcs-ship-with-man-in-the-middle-adware-that-breaks-https-connections/ (live) on 2026-08-09
+- Preserved from: https://arstechnica.com/information-technology/2015/02/lenovo-pcs-ship-with-man-in-the-middle-adware-that-breaks-https-connections/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -128,17 +128,17 @@ Superfish presumably installs the root certificates so it can inject ads into en
 
  Dan Goodin is Senior Security Editor at Ars Technica, where he oversees coverage of malware, computer espionage, botnets, hardware hacking, encryption, and passwords. In his spare time, he enjoys gardening, cooking, and following the independent music scene. Dan is based in San Francisco. Follow him at [here](https://infosec.exchange/@dangoodin) on Mastodon and [here](https://bsky.app/profile/dangoodin.bsky.social) on Bluesky. Contact him on Signal at DanArs.82.
 
--  [ ![Listing image for first story in Most Read: Flesh-eating screwworms feast on humans in Mexico; human cases top 500](https://cdn.arstechnica.net/wp-content/uploads/2016/11/CSIRO_ScienceImage_115_The_Tip_of_a_Screw_Worm_Fly_Larvae-500x425.jpg) ](https://arstechnica.com/health/2026/08/flesh-eating-screwworms-feast-on-humans-in-mexico-human-cases-top-500/)
+-  [ ![Listing image for first story in Most Read: Mount Toba eruption doesn't seem like it could nearly kill our species](https://cdn.arstechnica.net/wp-content/uploads/2026/08/image-1-500x500.jpeg) ](https://arstechnica.com/science/2026/08/mount-toba-eruption-doesnt-seem-like-it-could-nearly-kill-our-species/)
 
-  1. [Flesh-eating screwworms feast on humans in Mexico; human cases top 500](https://arstechnica.com/health/2026/08/flesh-eating-screwworms-feast-on-humans-in-mexico-human-cases-top-500/)
-
--
-
-  2. [Report: White House drafting executive order linking vaccines and autism](https://arstechnica.com/health/2026/08/report-white-house-drafting-executive-order-linking-vaccines-and-autism/)
+  1. [Mount Toba eruption doesn't seem like it could nearly kill our species](https://arstechnica.com/science/2026/08/mount-toba-eruption-doesnt-seem-like-it-could-nearly-kill-our-species/)
 
 -
 
-  3. [Volkswagen plans to win America back with a pickup, report says](https://arstechnica.com/cars/2026/08/volkswagen-plans-to-win-america-back-with-a-pickup-report-says/)
+  2. [Flesh-eating screwworms feast on humans in Mexico; human cases top 500](https://arstechnica.com/health/2026/08/flesh-eating-screwworms-feast-on-humans-in-mexico-human-cases-top-500/)
+
+-
+
+  3. [The first self-driving vehicle on Mars has proven to be a smashing success](https://arstechnica.com/space/2026/08/the-first-self-driving-vehicle-on-mars-has-proven-to-be-a-smashing-success/)
 
 -
 
@@ -146,6 +146,6 @@ Superfish presumably installs the root certificates so it can inject ads into en
 
 -
 
-  5. [The first self-driving vehicle on Mars has proven to be a smashing success](https://arstechnica.com/space/2026/08/the-first-self-driving-vehicle-on-mars-has-proven-to-be-a-smashing-success/)
+  5. [Remembering the pre-Google web, when search was an experiment](https://arstechnica.com/gadgets/2026/08/remembering-the-pre-google-web-when-search-was-an-experiment/)
 
   Customize

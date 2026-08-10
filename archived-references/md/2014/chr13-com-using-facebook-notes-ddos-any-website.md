@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/http://chr13.com/2014/04/2
 tags: [article, webseclist-reference, en-US, chr13-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:08:17+00:00"
+  at: "2026-08-10T15:07:15+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://chr13.com/2014/04/20/using-facebook-notes-to-ddos-any-website/"
@@ -22,7 +22,7 @@ canonical_url: "https://web.archive.org/web/20160406153520/http://chr13.com/2014
 cited_by:
   - "2014.md:13"
 commit: ""
-content_sha256: 5eb3fdf62850b3186a7e1ccb70b5bc9b5ff24f4ce896835d2c30afdb151cd20d
+content_sha256: 9c75c82bb088d9389ef874146ec6496014ea81c49efe352040b0554fdc54f09d
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20160403035045/http://chr13.com/2014/
 published: ""
 publisher: chr13.com
 publisher_english: ""
-raw_sha256: f7ef5aef19e3fbe77d95f9d977615bec270350a336d7c0c2fbcaa100d300bb0e
+raw_sha256: f9367a42684003df84d1b3d2a3289b4b7086a0010e4f2b80b01e114a81144dbe
 retrieved_from: "https://web.archive.org/web/20160406153520/http://chr13.com/2014/04/20/using-facebook-notes-to-ddos-any-website"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:08:17+00:00"
+retrieved_utc: "2026-08-10T15:07:15+00:00"
 slug: chr13-com-using-facebook-notes-ddos-any-website
 snapshot: 20160403035045
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/http://chr13.com/2014/04/20/using-facebook-notes-to-ddos-any-website/>
 - Current location: <https://web.archive.org/web/20160406153520/http://chr13.com/2014/04/20/using-facebook-notes-to-ddos-any-website>
-- Preserved from: https://web.archive.org/web/20160406153520/http://chr13.com/2014/04/20/using-facebook-notes-to-ddos-any-website (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160406153520/http://chr13.com/2014/04/20/using-facebook-notes-to-ddos-any-website (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 

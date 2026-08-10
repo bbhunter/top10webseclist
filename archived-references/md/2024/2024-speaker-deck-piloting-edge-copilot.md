@@ -5,9 +5,9 @@ resource: "https://speakerdeck.com/shhnjk/piloting-edge-copilot"
 tags: [slides, webseclist-reference, en, speaker-deck]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:16+00:00"
+  at: "2026-08-10T16:00:51+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://speakerdeck.com/shhnjk/piloting-edge-copilot"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:59"
 commit: ""
-content_sha256: a43edbf11874d8c7e8fb29c0a93a5f9baf6604b6c81b34d11ac1a22a7a7db850
+content_sha256: 8e1d128d2bd72d4488b5d1218e2f40ca82ab5aa7843a674df3f557cf427a273c
 depth: full
 depth_reason: default
 kind: slides
@@ -32,10 +32,10 @@ original_url: "https://speakerdeck.com/shhnjk/piloting-edge-copilot"
 published: 2024-11-14
 publisher: Speaker Deck
 publisher_english: ""
-raw_sha256: 59c99cefdb3c335c53aa4136e6e8fbef393bdd5548304d962a4ab21ea444ca84
+raw_sha256: b98d2eb183d5fdc229e429cb14c1ca78bf25764d447591c04320e534130b2de7
 retrieved_from: "https://speakerdeck.com/shhnjk/piloting-edge-copilot"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:16+00:00"
+retrieved_utc: "2026-08-10T16:00:51+00:00"
 slug: 2024-speaker-deck-piloting-edge-copilot
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2024-11-14
 - Original: <https://speakerdeck.com/shhnjk/piloting-edge-copilot>
-- Preserved from: https://speakerdeck.com/shhnjk/piloting-edge-copilot (live) on 2026-08-09
+- Preserved from: https://speakerdeck.com/shhnjk/piloting-edge-copilot (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -130,111 +130,109 @@ Code Blue 2024 presentation
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [More Than Pixels: Becoming A User Experience Designer](https://speakerdeck.com/marktimemedia/more-than-pixels-becoming-a-user-experience-designer)
+ [Rails Girls Zürich Keynote](https://speakerdeck.com/gr2m/rails-girls-zurich-keynote)
 
- [ ![Avatar for Michelle Schulp Hunt](https://secure.gravatar.com/avatar/e195ae45320d9202eaa01c9f1d31a416?s=24) marktimemedia ](https://speakerdeck.com/marktimemedia)
+ [ ![Avatar for Gregor Martynus](https://secure.gravatar.com/avatar/24fc194843a71f10949be18d5a692682?s=24) gr2m ](https://speakerdeck.com/gr2m)
 
- 3
+ 96
 
-  480
+  14k
 
- [So, you think you're a good person](https://speakerdeck.com/axbom/so-you-think-youre-a-good-person)
+ [Lightning Talk: Beautiful Slides for Beginners](https://speakerdeck.com/inesmontani/lightning-talk-beautiful-slides-for-beginners)
+
+ [ ![Avatar for Ines Montani](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjkwMDgsInB1ciI6ImJsb2JfaWQifX0=--32562a32b00d456c251338e2bbab3b3a7c1775bf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/profile_ines.jpg) inesmontani ](https://speakerdeck.com/inesmontani)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+
+ 2
+
+  630
+
+ [State of Search Keynote: SEO is Dead Long Live SEO](https://speakerdeck.com/ryanjones/seo-is-dead-long-live-seo-updated-state-of-search-keynote)
+
+ [ ![Avatar for Ryan Jones](https://secure.gravatar.com/avatar/2bf27e1a5632db8aba77510c78aaa9a2?s=24) ryanjones ](https://speakerdeck.com/ryanjones)
+
+ 0
+
+  240
+
+ [The MySQL Ecosystem @ GitHub 2015](https://speakerdeck.com/samlambert/the-mysql-ecosystem-at-github-2015)
+
+ [ ![Avatar for Sam Lambert](https://secure.gravatar.com/avatar/be9caeb9d4ef9944d151af909063ed6e?s=24) samlambert ](https://speakerdeck.com/samlambert)
+
+ 251
+
+  13k
+
+ [Designing for humans not robots](https://speakerdeck.com/tammielis/designing-for-humans-not-robots)
+
+ [ ![Avatar for Tammie Lister](https://secure.gravatar.com/avatar/d36d2c1821af9249b69ff7f5ed60529b?s=24) tammielis ](https://speakerdeck.com/tammielis)
+
+ 254
+
+  26k
+
+ [ラッコキーワード サービス紹介資料](https://speakerdeck.com/rakko/introduction)
+
+ [ ![Avatar for ラッコ株式会社](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjAwMTgyLCJwdXIiOiJibG9iX2lkIn19--1a675f702fe37e192521a48d72064c54472362d5/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/logo.rakkoinc_600x600.png) rakko ](https://speakerdeck.com/rakko)
+
+ 1
+
+  4.3M
+
+ [What’s in a name? Adding method to the madness](https://speakerdeck.com/productmarketing/whats-in-a-name-adding-method-to-the-madness)
+
+ [ ![Avatar for The Alliance](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTcwNTk2LCJwdXIiOiJibG9iX2lkIn19--614bd0edfef6354b038bc03f4d0b16e169b025f9/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/ALLIANCE%20ICON%20LOGO%20-%20PRIMARY_Padding.png) productmarketing ](https://speakerdeck.com/productmarketing)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+
+ 24
+
+  4.1k
+
+ [コードの90%をAIが書く世界で何が待っているのか / What awaits us in a world where 90% of the code is written by AI](https://speakerdeck.com/rkaga/what-awaits-us-in-a-world-where-90-percent-of-the-code-is-written-by-ai)
+
+ [ ![Avatar for r-kagaya](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTk0MjI4LCJwdXIiOiJibG9iX2lkIn19--1d94fa4c6a5eceb2447fdd6c94e46df3dbd85301/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/69yLDu7R_400x400.jpg) rkaga ](https://speakerdeck.com/rkaga)
+
+ 63
+
+  45k
+
+ [Documentation Writing (for coders)](https://speakerdeck.com/carmenintech/documentation-writing-for-coders)
+
+ [ ![Avatar for Carmen Chung](https://secure.gravatar.com/avatar/61857dafbd287b3027c4dcea9008ad3c?s=24) carmenintech ](https://speakerdeck.com/carmenintech)
+
+ 77
+
+  5.4k
+
+ [The Spectacular Lies of Maps](https://speakerdeck.com/axbom/the-spectacular-lies-of-maps)
 
  [ ![Avatar for Per Axbom](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzA4MTcsInB1ciI6ImJsb2JfaWQifX0=--3b22ae95c7f24edaeb9c2d37fdb67f05b7db6128/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/axbom-ind08b.jpg) axbom ](https://speakerdeck.com/axbom)
 
  [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
- 2
+ 1
 
-  2.1k
+  890
 
- [Noah Learner - AI + Me: how we built a GSC Bulk Export data pipeline](https://speakerdeck.com/techseoconnect/noah-learner-ai-plus-me-how-we-built-a-gsc-bulk-export-data-pipeline)
+ [Bootstrapping a Software Product](https://speakerdeck.com/garrettdimon/bootstrapping-a-software-product)
 
- [ ![Avatar for Tech SEO Connect](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2NjU4LCJwdXIiOiJibG9iX2lkIn19--14f297c27d2190051dc109b5d472cf0297dd6c3e/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/40575_logo_social%20media%20profile%204.png) techseoconnect ](https://speakerdeck.com/techseoconnect)
+ [ ![Avatar for Garrett Dimon](https://secure.gravatar.com/avatar/a9179349dd2bdc67f377719f56d85656?s=24) garrettdimon ](https://speakerdeck.com/garrettdimon)
 
  [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
- 0
+ 307
 
-  350
+  120k
 
- [
+ [The Success of Rails: Ensuring Growth for the Next 100 Years](https://speakerdeck.com/eileencodes/the-success-of-rails-ensuring-growth-for-the-next-100-years)
 
- The Psychology of Web Performance [Beyond Tellerrand 2023]
+ [ ![Avatar for Eileen M. Uchitelle](https://secure.gravatar.com/avatar/c44e1f7e22c3f23cff7bc130871047ef?s=24) eileencodes ](https://speakerdeck.com/eileencodes)
 
- ](https://speakerdeck.com/tammyeverts/the-psychology-of-web-performance-beyond-tellerrand-2023)
+ 47
 
- [ ![Avatar for Tammy Everts](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTE1OTYxLCJwdXIiOiJibG9iX2lkIn19--abc92847293bd4bb711260d06a412d2974cd78fe/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/Tammy.jpg) tammyeverts ](https://speakerdeck.com/tammyeverts)
-
- 49
-
-  3.5k
-
- [How to Build an AI Search Optimization Roadmap - Criteria and Steps to Take #SEOIRL](https://speakerdeck.com/aleyda/how-to-build-an-ai-search-optimization-roadmap-criteria-and-steps-to-take-number-seoirl)
-
- [ ![Avatar for Aleyda Solis](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6OTIyMDAsInB1ciI6ImJsb2JfaWQifX0=--f7ae7c6a9c16b0bb4461d98502be71c2c1b38eaf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/aleyda-solis.jpg) aleyda ](https://speakerdeck.com/aleyda)
-
- 1
-
-  2.1k
-
- [svc-hook: hooking system calls on ARM64 by binary rewriting](https://speakerdeck.com/retrage/svc-hook-hooking-system-calls-on-arm64-by-binary-rewriting)
-
- [ ![Avatar for Akira Moroo](https://secure.gravatar.com/avatar/8dc3958dc2480bd681e4b5c197817047?s=24) retrage ](https://speakerdeck.com/retrage)
-
- 2
-
-  440
-
- [Product Roadmaps are Hard](https://speakerdeck.com/iamctodd/product-roadmaps-are-hard)
-
- [ ![Avatar for C. Todd Lombardo](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTE0Mjc1LCJwdXIiOiJibG9iX2lkIn19--823467477d34234bad5179a70e99e082ba41d0ea/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/c-todd-lombardo-color-bg.jpg) iamctodd ](https://speakerdeck.com/iamctodd)
-
- 55
-
-  12k
-
- [The Mindset for Success: Future Career Progression](https://speakerdeck.com/greggifford/the-mindset-for-success-future-career-progression)
-
- [ ![Avatar for Greg Gifford](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTMwMDYzLCJwdXIiOiJibG9iX2lkIn19--7de629ffe581dc2932935617a9cf5ab294a9528b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/greg-2021-upload-size.jpg) greggifford ](https://speakerdeck.com/greggifford)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
-
- 0
-
-  440
-
- [How People are Using Generative and Agentic AI to Supercharge Their Products, Projects, Services and Value Streams Today](https://speakerdeck.com/helenjbeal/how-people-are-using-generative-and-agentic-ai-to-supercharge-their-products-projects-services-and-value-streams-today)
-
- [ ![Avatar for Helen Beal](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDc4NzcyLCJwdXIiOiJibG9iX2lkIn19--63c34c899ae9696f1fd5abddc34acfa182481f9d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/Helen%20Beal%20(white%20jacket).png) helenjbeal ](https://speakerdeck.com/helenjbeal)
-
- 1
-
-  260
-
- [The Invisible Side of Design](https://speakerdeck.com/smashingmag/the-invisible-side-of-design)
-
- [ ![Avatar for Vitaly Friedman](https://secure.gravatar.com/avatar/b3d6434763caa0ef5dc4b792662c49f7?s=24) smashingmag ](https://speakerdeck.com/smashingmag)
-
- 301
-
-  52k
-
- [Creating an realtime collaboration tool: Agile Flush - .NET Oxford](https://speakerdeck.com/marcduiker/creating-an-realtime-collaboration-tool-agile-flush-net-oxford)
-
- [ ![Avatar for Marc Duiker](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjkzMzQsInB1ciI6ImJsb2JfaWQifX0=--d45cd73c324ef3fb7dc9cd9dfa4af5247a051abb/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/MarcDuiker%20dapr_yellow_bg_720px.png) marcduiker ](https://speakerdeck.com/marcduiker)
-
- 35
-
-  2.5k
-
- [Claude Code どこまでも/ Claude Code Everywhere](https://speakerdeck.com/nwiizo/claude-everywhere)
-
- [ ![Avatar for nwiizo](https://secure.gravatar.com/avatar/6ed12627fec46a135f1bce5d56f3568e?s=24) nwiizo ](https://speakerdeck.com/nwiizo)
-
- 66
-
-  57k
+  8.3k
 
 ## Transcript
 

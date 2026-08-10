@@ -5,9 +5,9 @@ resource: "http://www.thespanner.co.uk/2007/09/27/google-adsense-csrf-hole/"
 tags: [article, webseclist-reference, en, thespanner-co-uk]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:45:41+00:00"
+  at: "2026-08-10T16:01:33+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2007/09/27/google-adsense-csrf-hole/"
@@ -30,10 +30,10 @@ original_url: "http://www.thespanner.co.uk/2007/09/27/google-adsense-csrf-hole/"
 published: ""
 publisher: thespanner.co.uk
 publisher_english: ""
-raw_sha256: d28d7f6897cd3348acbf9cf79d930dd94a3c60a8e7b089afa80b59fe7e7b3b06
+raw_sha256: 090e631eaa8c730eaab3fcc0964821192d26d088d18b18182aa8f5812167aa8d
 retrieved_from: "https://thespanner.co.uk/2007/09/27/google-adsense-csrf-hole"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:45:41+00:00"
+retrieved_utc: "2026-08-10T16:01:33+00:00"
 slug: thespanner-co-uk-google-adsense-csrf-hole
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2007/09/27/google-adsense-csrf-hole/>
 - Current location: <https://thespanner.co.uk/2007/09/27/google-adsense-csrf-hole>
-- Preserved from: https://thespanner.co.uk/2007/09/27/google-adsense-csrf-hole (live) on 2026-08-09
+- Preserved from: https://thespanner.co.uk/2007/09/27/google-adsense-csrf-hole (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/leet-10/dns-prefetching-and-its-pri
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:34+00:00"
+  at: "2026-08-10T16:04:02+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/leet-10/dns-prefetching-and-its-privacy-implications-when-good-things-go-bad"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2010.md:106"
+  - "2010.md:101"
 commit: ""
 content_sha256: d7c93c53d8941a44bd003eea9d558f10bd68e3948efab78ac3594c2e232dcbd6
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/leet-10/dns-prefetching-and-its
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: eeed6a7d746dd7ae21164d23b80474add45a7d1ded05f4b41a677a3baedae028
+raw_sha256: fc5d47239a1c70876662f0ba009c4e9adcb428b4bcdc29965f920068ebb8fa50
 retrieved_from: "https://www.usenix.org/conference/leet-10/dns-prefetching-and-its-privacy-implications-when-good-things-go-bad"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:34+00:00"
+retrieved_utc: "2026-08-10T16:04:02+00:00"
 slug: usenix-org-dns-prefetching-its-privacy-implications-when-good-things-go-bad
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/leet-10/dns-prefetching-and-its-privacy-implications-when-good-things-go-bad>
-- Preserved from: https://www.usenix.org/conference/leet-10/dns-prefetching-and-its-privacy-implications-when-good-things-go-bad (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/leet-10/dns-prefetching-and-its-privacy-implications-when-good-things-go-bad (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

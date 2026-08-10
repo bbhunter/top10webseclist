@@ -5,9 +5,9 @@ resource: "https://blog.s1r1us.ninja/research/PP"
 tags: [article, webseclist-reference, en-US, blog-s1r1us-ninja]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:06:44+00:00"
+  at: "2026-08-10T15:06:11+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blog.s1r1us.ninja/research/PP"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2021.md:8"
 commit: ""
-content_sha256: f0ec738d0e87941ecc5c156ee822e4eab8ad69143903e75b58d2eda1eef27b4b
+content_sha256: 2e8de8e7161cfe67ca716dbbfe53c962508d886a7f0aacfc273f8d408f29d3e1
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://blog.s1r1us.ninja/research/PP"
 published: ""
 publisher: blog.s1r1us.ninja
 publisher_english: ""
-raw_sha256: bf7f135bc532a8af0043902cf01edd7e46142e131dd0a2349a2be56cbf1aa0c3
+raw_sha256: 4ec0378ef741da97c6d21ed4fe7d4fa59829cfef33e3a41469529594fd731ff3
 retrieved_from: "https://blog.s1r1us.ninja/research/PP"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:06:44+00:00"
+retrieved_utc: "2026-08-10T15:06:11+00:00"
 slug: blog-s1r1us-ninja-s1r1us-prototype-pollution
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://blog.s1r1us.ninja/research/PP>
-- Preserved from: https://blog.s1r1us.ninja/research/PP (live) on 2026-08-09
+- Preserved from: https://blog.s1r1us.ninja/research/PP (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -70,7 +70,7 @@ Introduction
 
 Prototype pollution is an interesting vulnerability, either it is server-side or client-side. Based on the application logic, prototype pollution leads to other vulnerabilities. For instance, [posix](https://twitter.com/po6ix) introduced an interesting [technique](https://blog.p6.is/AST-Injection/) to achieve RCE in the template engines, [Michał Bentkowski](http://twitter.com/securitymb) showed [bypassing](https://research.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers/) client-side HTML sanitizers and [William Bowling](https://twitter.com/wcbowling)'s found a Reflected [XSS](https://hackerone.com/reports/986386) on HackerOne using prototype pollution. From RCE to SQL, any vulnerability is possible with the prototype pollution in the javascript application.
 
-![I've got a nice art(inspired by portswigger research :xD)](https://lh3.googleusercontent.com/sitesv/AG8ngQWGjQrHy59pC_48A6O20Ctn-qf37j7q26t28xKS9o7Nl6D4Hn0ROI4Hcwjbgon3hwrbcsm9caakflGk8riYblwpOsYFrkrzXrmzURVIZCFhzmNC3sMH0NBRPmtc8A1zyzP6wvlJ4PpVkKEpufSlm8oJ-X-l0QW-8b88CgdfGnFv-bXz9fB3hxvL14T1gmiMoMQRCeKCdlA4nE_i9yk8MMbCzhrFi9E8h12wswv1Ixw=w1280)
+![I've got a nice art(inspired by portswigger research :xD)](https://lh3.googleusercontent.com/sitesv/AG8ngQU5RACSjMtBKdRQxDbdJknFwJqpXvbQ8CMFzIAlwSS16Rvt9c8Tled8--UFV0l3ejJBRvMLNgrxVWmOYPSa42vwCYaXbQQ1UZmS4lyj2BKlNKT0qyQYcQxL1hr-_n_fydUo4lfeES9NaLY-2HogxsCK5y6QO1Tl_YwAJYryX17noG-CxjULQJYwubNmIVZTeMolSKQPNwOSd0uwuxL5TtPQpr5KvuxEwyBwBJUoKlA=w1280)
 
 In this research, our goal was simple which is to scan all the vulnerability disclosure programs for prototype pollution and find script gadgets to achieve XSS. This technical write-up will touch the tools we created, challenges we faced, and case studies during the whole process.
 
@@ -152,7 +152,7 @@ If you don't want to know the methodology, feel free to skip to the case studies
 
 Methodology
 
-![](https://lh3.googleusercontent.com/sitesv/AG8ngQXWA3ChlF73KUJFWf5CmBFxwtTYB6OPO5R1LqIZJw2tz8uOXnZUV_fWJeeqCi5WkHightqmiidEQygp_cqPhiLWcHfyqmDnwJoxzbR9iF-vS0DZzMRbH2kn658wAPr5ftKkpLWyVgefPaxzwjMwHUpsCCt-0Zin6ibcyfvbmcbCD_xmwAi7xYVF3Q6Z9OGNPBuBenO7u8c7A7rO-rOpxxN3x9s5OJkb1ErDErh5opU=w1280)
+![](https://lh3.googleusercontent.com/sitesv/AG8ngQXfzubXREuueF7I9NM6I3sxucNpxKekFJFudpF_5jbBH3wcW78NiC9PUED3K130KtZGrzgVnr-Qy6O9vPxlJtkFrtr8FMRL0SSTdgKUem5o1x7xVDYnKD94EvssIwWSrjUAmwetggtOHl83CVAWugThhQdVEpqTJxCagGkN3cz429b62QfR2ATPRu042hSqdR7pC5e781pJ-sLcvTG8XijvASEHa_YbfbqNaN01mfA=w1280)
 
 Detection
 
@@ -164,7 +164,7 @@ In the first case, we want to check if an application is parsing query/hash para
 
 Let's assume the web applications use [canjs-deparam](https://www.npmjs.com/package/can-deparam) library to parse the query parameter. As you can see in the code below, it creates an empty Object and adds key-value pair. Obviously, this leads to prototype pollution if we requested the requested URL is [https://victim.com/#a=b&__proto__[admin]=1](https://victim.com/#__proto__[polluted]=1).
 
-![](https://lh3.googleusercontent.com/sitesv/AG8ngQUgOMxSwafMgMYilS-EjxREaZjfTZQg7KwdjXhWQd-Mm4hv8YzsDtFcBjrtqNWlPzaGw4kaL_nsT-EeZS_CSp8cN5BFqLigNUIZh7NTEEExL1roO8VErQ1fKfIHPA65Q0ls1gyQUXOdLtJ_YTZBkhfoq9dt_1iuegskg_edKb0EEtir5YSLW3DoO3_DJi3TmIVg8SODWsPjgU-g1AvlA0nt4_MoVWl1Z8CDo2Zx=w1280)
+![](https://lh3.googleusercontent.com/sitesv/AG8ngQXD2Owb9RRV7_vGxo_vWY7Jaikjo7wZPVUp0LFOsoLmVIticDTACB8j8h_kEY5u1kvL6PbsvcaQYQsoUiEvbMcyK90rd6T0_KJSHJ3lADTVomnE-1syPX-brhkjlGhu6tHuVr-P-iCUonoZdr0avdrBTZWZdJxsDMguRSnPGIru0bBMLBI3C9pDfwRhVUeEkyTrJ5S8WntQM2T4rTK4jdpzXf69O_7tl4ddAbpF=w1280)
 
 Proof-of-Concept for the canjs-deparam query parsing
 
@@ -206,7 +206,7 @@ Blocking the JS resource request in Firefox
 
 There is a nice option called Block URL in Firefox developer tools network activity, so to find the js resource which is responsible for prototype pollution we block the URL and check if the polluted property is undefined. If it is undefined, we confirm the blocked resource is responsible for pollution.
 
-![](https://lh3.googleusercontent.com/sitesv/AG8ngQU7ueFn7YZ0v5a889v77u9lvcmR7V8peUxnYnXIqm54Ewik_16oqmeugUEgklIn9YUftSNWzWxTendsPHO5xKHKgje6yOD6bQGmAjrranV0tBhwDazf9kOHBRMY8VP0D3C6ofSctCt60ppr1aKyviYecOd5JylSPfqmp6LSVDgi2eG8Z0MbZcUU3cPXcdIZ8GrDirq7oUqzccRWwKi7Hs7A8fpsBAoErXtaHycvZKo=w1280)
+![](https://lh3.googleusercontent.com/sitesv/AG8ngQU43BfdvXUXt2Jo-Aw39q4rDfHYyRdquZcnonVSdauf8ALnXLZoY1pE_5n5l4DtP9jCaEBS9X1m5oJqJ0pdASkZPpRPg0KFnotVeqjbrWf36Ftzggile-y-odG1YwBXPykItQ1P5r2ES-rXjc_SujnhJ8-8vZRkPMg72q7EJgkdOjk028UVM46lnfcm6U1zooyOOdWCZo2Ic5Y2Fxn-fgpQBTVUroJjllGNgOkgunM=w1280)
 
 Debugger Breakpoint on setter
 
@@ -230,7 +230,7 @@ return tmp = val;
 
  };
 
-![](https://lh3.googleusercontent.com/sitesv/AG8ngQXPkbAz4_MQC2DQjUXx64zUHlwi7ztYyWmnhYku4MoOK307lxMh-thFtYHBOPOpJr3mOLSy59wFml9YA5q86rr7tW2UzlFhRBNOeXJsJ8So6hIWdApg70dGaPffJmxFTUT-auXroqKf9EpjhKJ-siuklh5DLD_jzr3jJKa6VWKK7XpAdGIykgPUp939l8lTpcGZYIQj-7iPIZ8agxbdsayY3ZQFBstezspvjzauhyk=w1280)
+![](https://lh3.googleusercontent.com/sitesv/AG8ngQVfXOgYX3pWK5PqPOz8Ga5b0ZkbzcO1IcKGYTOnnN9R4gywichrTq4_0Wa6xI12zk6lh-h7iGrO4NVJSUhAEODuKQHmiMuGVLZqMOsfp1qz8xeHMpUJFZTA3FiM2uvss67vR7g_4lrGiW3fWM7HB740WDYwvG2O_EJ7yqSZ7f0TjrSyzUnSXTocl6xT3MAn5nZUKaB98EAUIQ1aFsuySyh0gfGjh6cXzPm9CL_k0fA=w1280)
 
 Finding Script Gadgets
 
@@ -344,9 +344,9 @@ Let's see an example.
 
 If you visit [https://msrkp.github.io/](https://msrkp.github.io/) with the addon installed, you can notice an innerHTML sink in jQuery. Here wrapMap[tag] is undefined which means we can pollute "li" property of wrapMap with an array and the 1st or 2nd element will be injected into the page.
 
-![](https://lh3.googleusercontent.com/sitesv/AG8ngQUCnexn1yH2ihgYtxCi3UXJBkoRWFth8If8whuqXMCOPcoN91MPB1NQ96YgoLHxyI-jzZD8bSsvI2cJ6wAEDZ7aWMhu3uKu34DGwpWOV8SxWK8PGEhZeUIvbRedL4Q3xQuNolJkidXNZcDhTwk_TBjGhGPiklkT1wCCBujKhVd-NcWRbilRPL4ymJWJjBKJi7EoSk3jVw5MgPY6Z76Q69yl5gbP-NTv870V2n3lm6M=w1280)
+![](https://lh3.googleusercontent.com/sitesv/AG8ngQX-TfvEnZTysk8UpIosXTHa7ZV6QUVL3_Q-SzVngnke_LRZarI8zFs3IJYKDdN7TDHg_JnTmWiK26pM4XqevBrGi2JOq_e-U6kfLXpr14t04wvjH-Pr1HMweh0eYV0SGAFVgUevSnFLVQQrUblH8xpfXUUyCsUO1jn9hveNwidaThzLTZOdhw1mbZzBidSeufKqDcFQ88uORrDwiBINPaCj7l6kfFKWa_7QesoEykE=w1280)
 
-![](https://lh3.googleusercontent.com/sitesv/AG8ngQVytRnWSBOsgvbz5HoeXa9aD5uYl7E0_NBvuTMaNrZ9F9x_q_aVOviTfgrG8tIpj4sj_G8j5Is2250hHLNipWoWs7YjNsBiVe2yfiF8RwfKW8s4_bm1QscF2VHZvsstynKfIIcILkdnOfzjpNWdxWo09EgHvclvMIaOa22udUivzVRCdYIRSQAAelR4njAKobDLKnUrf70f84KIZdkHoyraHR5c-T-zj0vSoqoB=w1280)
+![](https://lh3.googleusercontent.com/sitesv/AG8ngQVXfK6lrUVc-3-R3oEi0M1gnX9QyD_a5IeAB_OotGUcpFnJ8aLIg_f75crJMLmkf6Df4SUbdn8fTPa3XJLYmfdNb0id_qDtoGBaFi3CwooxmosMxZmjD4RQ1XsFMpnb_LqQBC5lgqkJ8dgoGx3lv1pEE5x1IqBJeTz4Q24R-mXN5JxSmhnNbNgpb3xBC7gMKj6h-YCvlVQFnGMHBbySGx_Nslly-w1MeaCtHAze=w1280)
 
 polluting "li" property leads to XSS
 
@@ -368,7 +368,7 @@ To do this, a rule base was built that can detect vulnerable libraries in passiv
 
 The same functionality has been added to the chrome extension, it searches js resources with patterns mentioned in the database that leads to pollution. [https://github.com/msrkp/PPScan](https://github.com/msrkp/PPScan).
 
-![](https://lh3.googleusercontent.com/sitesv/AG8ngQXKmU8uDsx6hxNZm89IyQZhapt1_m3RDfnO2DK1DP7Ez-IX62XIrtrjgezimea59sIxzx7vD7lfOKCdodfOVoZxz9cYelkKJmcA5NyqbzRlrPQAjS6MammWG-kP6ZEW7mLoz0wC3PZFG4qRoLEvhePSM_XhOJdBCqo91XvsqRLnR2wyGCwCpPlPPwpZ9W37MYykU-4zfONQ5zKrnU2R1h40o3juQbJgfjWs1KycJqE=w1280)
+![](https://lh3.googleusercontent.com/sitesv/AG8ngQUlrIUIK5NCsHLDOH28L0G8XEw-0GDYy9qm_wHDnAI174CIsZAL5cQ0Xx_8Nho03V43TH97LwMEqTb4BiybOJwVGDvf20HWTAq6AFPcrmgWY7Omnw5JTDu9ugi8pkNnwoYO22wkbXHmkvJebBbjA4fYUepK5sVcbTMDQBhU1y0bqh_QivqeIyz6UDEgEK7UFWjnkz-PIL2XvfPfy3WBTQ76mRXq-tBcilEnl1KKeWU=w1280)
 
 passive search logging jQuery query-object vulnerable library in a web application.
 
@@ -384,9 +384,9 @@ This is one of my favorite bugs, One evening I am working on my favorite bug bou
 
 I've passively scanned all the interesting applications and downloaded the JS files in a folder. Then, I created a CodeQL database and wrote a query with the help of queries available at [https://github.com/github/codeql](https://github.com/github/codeql), but the problem I faced is that I have to write a query for every library's(basic deparam query I wrote can be found [here](https://github.com/github/securitylab/discussions/209)) vulnerable code pattern which is not feasible. So I started a discussion [here](https://github.com/github/securitylab/discussions/209) asking for help, @asgerf from GHSecurity Lab came up with a general query which RemoteFlowSource or location.{hash,search} as Source and insecure property assignment as Sink. The downside of this query is that there should be a call to parser [function](https://github.com/github/securitylab/discussions/209#discussioncomment-145109). Anyway, I ran these queries on the JS database I created and hoping to find vulnerable merge calls or location parsers.
 
-![](https://lh3.googleusercontent.com/sitesv/AG8ngQViY5wLxe9kRXbZc7IXGl7U-0Xyhql7XqeCBqASnxyVZ_2joR3P7QXvBnhJd390J1TUODcQfqdYs_AxONuiisJFXAz98z-AxwmU8e2zXTwIjWd4txYk3auvZ_izym1cZtgzqhi2xNphT3F80RsfdnjZGPa0G7htx-op9IBTO1H-0NH2WRkwJB2AGiskIeVWbeuPDE5Qsyvvf_o0fZxSyP7uPABofBb-j6Uz6AYe6R0=w1280)
+![](https://lh3.googleusercontent.com/sitesv/AG8ngQVBc9Ksqt2FJl1FW5pcjBy87P39byKoI0lshXSYoEwXrPeUH-soIDl9m7tlQ3UHUeHwix9DsHyBYR8dlN5gAfd49A977T3W5lYLL2mTYgvgvBnHPtyVp2kDh1Ha_svIjWHmqfXksI7kFNnA0hUPpp0Vj4DyGqLNMXREJnGMJK7nxLfXIGDZVFz1Q06wsVyO4bzQ1wqjL13VYOXW6lSmQKYMxB-vd7aMmlr7-ZbV0Ug=w1280)
 
-![](https://lh3.googleusercontent.com/sitesv/AG8ngQW8yXRBHQRf9LbW4lL3Qk-wKTM6qU-YdPRtk_m3LfBaxej1dSAQI6OLliGUR_RU2lllDYx8nP3QuKJv1vqQwihYTs7_cfLXB9KJMu8eCib8V20BqDXrCbXEW7Msf-J-11UaXzQlc-_V6AaRxbpH2zpGd-dTgp849s3NQnxoU-QESrfVc4eskWGe-QSwjvXlsCZOybPLTHCbaCq-a339A6LrCiOUsvpX6szKR_CnuVU=w1280)
+![](https://lh3.googleusercontent.com/sitesv/AG8ngQXn2ixMwF8NhRspFtli_9xwnkwjx1Z_hyEld5dhwr7z0Obmu35dgZblAwQS6ef6AnxnHSj5ux1kIacAYbmnQ2UCfgx9LysR2rqGyCWtOwejVzaYLu9H2IAZSxU1EN-fyVm2tM6vdsWykQBEgGjt9eL1Y2T22nmhXi3rgYKkKTfYqDGA7cY5vX0MZqIoH9i-lhgo0y1prZULt7ZAJ3g_nU8jFLS_zYiLtY_tRcegkMI=w1280)
 
 To my surprise, it showed a result where a vulnerable merge exists in the downloaded javascript files, and immediately I shared it in the discord. Then terjanq and I started working to exploit it. As pollution does not exist in location parsing, we have to find out which functionality pollutes the prototype.
 
@@ -568,7 +568,7 @@ Nikita Stupin found a cool bypass to the fix using the following payload
 
 Elegant bypass isn't it?
 
-![](https://lh3.googleusercontent.com/sitesv/AG8ngQXIKlOk-USjHOa5JXYGhzz0WAkCXwyjmOIq76QOa090Grb8L5K8ZxfW-FP8u0c8E_xWXsp1iBxmnfIUVrZDp3GLIiWY-OtW4XWQwsQxGbaMG-ZR4o859Hd8WZPCVZLJtMiiOLv0v0Tpc_fKSvYNb7fWJuFBOZ5Z7fr9f4kTyxlszgCbX0mfq4qVELK9w0Q_1kM0va1MFmON7qQPVDe3veLkQgXclbg3hXVzbUen7Y0=w1280)
+![](https://lh3.googleusercontent.com/sitesv/AG8ngQV5F_Hlqg-xhc-9phl3AXfY8WbvI69LUlkS1W5xVsc6YiozvVQ5rx_BccOe9t2w_7UcNntN6YD_Oml0Rr2LncinGrLEoDqsBXefipcyoDKPV8s8HHy85kuOzNhHOYJAlywxo1-sLzcpDyQJsR3XaYqMw_gDt6ZPK_hFREFFNbWzv98psi_PBMRf4nV7LHtPVpfoP0rz7ehErdTQTd7cxW5F9JZ-6XB0QjDh4zye5mQ=w1280)
 
 They fixed the bypass by changing the lowercase to uppercase if the __proto_, constructor, prototype exists in the key.
 

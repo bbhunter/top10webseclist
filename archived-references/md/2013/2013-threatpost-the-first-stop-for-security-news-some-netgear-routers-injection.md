@@ -5,9 +5,9 @@ resource: "http://web.archive.org/web/20160507023636/http://threatpost.com/some-
 tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:47:26+00:00"
+  at: "2026-08-10T16:03:30+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://threatpost.com/some-netgear-routers-open-to-remote-authentication-bypass-command-injection/102689"
@@ -35,10 +35,10 @@ original_url: "http://web.archive.org/web/20160507023636/http://threatpost.com/s
 published: 2013-10-25
 publisher: Threatpost | The first stop for security news
 publisher_english: ""
-raw_sha256: c8a313432e804805d93e80eafdc23d63de762e91d443ac055bfdba437dc0cf9f
+raw_sha256: 11d45c8c8bbecec6ff7cacf62d5433b9b72069179e822076003bb8a3fbc17193
 retrieved_from: "http://web.archive.org/web/20160510190954/https://threatpost.com/some-netgear-routers-open-to-remote-authentication-bypass-command-injection/102689/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:47:26+00:00"
+retrieved_utc: "2026-08-10T16:03:30+00:00"
 slug: 2013-threatpost-the-first-stop-for-security-news-some-netgear-routers-injection
 snapshot: 20160507023636
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 - Published: 2013-10-25
 - Original: <http://web.archive.org/web/20160507023636/http://threatpost.com/some-netgear-routers-open-to-remote-authentication-bypass-command-injection/102689>
 - Current location: <http://web.archive.org/web/20160510190954/https://threatpost.com/some-netgear-routers-open-to-remote-authentication-bypass-command-injection/102689/>
-- Preserved from: http://web.archive.org/web/20160510190954/https://threatpost.com/some-netgear-routers-open-to-remote-authentication-bypass-command-injection/102689/ (live) on 2026-08-09
+- Preserved from: http://web.archive.org/web/20160510190954/https://threatpost.com/some-netgear-routers-open-to-remote-authentication-bypass-command-injection/102689/ (live) on 2026-08-10
 - Capture timestamp: 20160507023636
 - Licence: unknown
 

@@ -5,9 +5,9 @@ resource: "http://www.thespanner.co.uk/2008/12/01/location-based-xss-attacks/"
 tags: [article, webseclist-reference, en, thespanner-co-uk]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:45:46+00:00"
+  at: "2026-08-10T16:01:41+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2008/12/01/location-based-xss-attacks/"
@@ -30,10 +30,10 @@ original_url: "http://www.thespanner.co.uk/2008/12/01/location-based-xss-attacks
 published: ""
 publisher: thespanner.co.uk
 publisher_english: ""
-raw_sha256: 714021ee852ec50321799a0a9afc5a3234bcf57febc3d7801979368e381e9f0e
+raw_sha256: fc3be47ff3d217bf63ce5d3eba23a15e91aab12285af9d53aa867b6912540f05
 retrieved_from: "https://thespanner.co.uk/2008/12/01/location-based-xss-attacks"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:45:46+00:00"
+retrieved_utc: "2026-08-10T16:01:41+00:00"
 slug: thespanner-co-uk-location-based-xss-attacks
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2008/12/01/location-based-xss-attacks/>
 - Current location: <https://thespanner.co.uk/2008/12/01/location-based-xss-attacks>
-- Preserved from: https://thespanner.co.uk/2008/12/01/location-based-xss-attacks (live) on 2026-08-09
+- Preserved from: https://thespanner.co.uk/2008/12/01/location-based-xss-attacks (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

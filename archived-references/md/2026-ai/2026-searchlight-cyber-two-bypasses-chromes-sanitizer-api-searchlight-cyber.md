@@ -5,9 +5,9 @@ resource: "https://slcyber.io/research-center/two-bypasses-for-chromes-sanitizer
 tags: [article, webseclist-reference, en, searchlight-cyber]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:52:45+00:00"
+  at: "2026-08-10T15:59:30+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://slcyber.io/research-center/two-bypasses-for-chromes-sanitizer-api/"
@@ -20,9 +20,9 @@ authors:
   - @searchlightsec
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:63"
+  - "2026-ai.md:39"
 commit: ""
-content_sha256: 2a3dbbee3a436753faa083f58802f59b4e5323f64bade71d6482a3763d4537fe
+content_sha256: 92ecf35ef81a512d59dd87bf731a3580b336b016b31c27232ff45395dac746d7
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://slcyber.io/research-center/two-bypasses-for-chromes-sanit
 published: 2026-05-22
 publisher: Searchlight Cyber
 publisher_english: ""
-raw_sha256: e820ed8ac9b5fe73c504a2026b0afcdc43a121ae99a344898c2cbe40d642e9d1
+raw_sha256: e17a8c327cd6cafc89cb29c923b4ad9126ebdab9de63bfcd88205f8d820f28e1
 retrieved_from: "https://slcyber.io/research-center/two-bypasses-for-chromes-sanitizer-api/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:52:45+00:00"
+retrieved_utc: "2026-08-10T15:59:30+00:00"
 slug: 2026-searchlight-cyber-two-bypasses-chromes-sanitizer-api-searchlight-cyber
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2026-05-22
 - Original: <https://slcyber.io/research-center/two-bypasses-for-chromes-sanitizer-api/>
-- Preserved from: https://slcyber.io/research-center/two-bypasses-for-chromes-sanitizer-api/ (live) on 2026-08-08
+- Preserved from: https://slcyber.io/research-center/two-bypasses-for-chromes-sanitizer-api/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

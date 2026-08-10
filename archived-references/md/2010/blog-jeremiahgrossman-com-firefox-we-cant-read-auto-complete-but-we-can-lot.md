@@ -5,9 +5,9 @@ resource: "https://jeremiahgrossman.blogspot.com/2010/07/in-firefox-we-cant-read
 tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:31:28+00:00"
+  at: "2026-08-10T15:30:11+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2010/07/in-firefox-we-cant-read-auto-complete.html"
@@ -30,10 +30,10 @@ original_url: "https://jeremiahgrossman.blogspot.com/2010/07/in-firefox-we-cant-
 published: ""
 publisher: blog.jeremiahgrossman.com
 publisher_english: ""
-raw_sha256: 5c9ceb8ddb08c18571475df2ca867560969ac1a473a7fdcbc7b8356cb212e8ed
+raw_sha256: ba349fc209ddcaba20b1e54cbc1adee37cb45a9122c0d0ecc6b74c87f9cc57a1
 retrieved_from: "https://blog.jeremiahgrossman.com/2010/07/in-firefox-we-cant-read-auto-complete.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:31:28+00:00"
+retrieved_utc: "2026-08-10T15:30:11+00:00"
 slug: blog-jeremiahgrossman-com-firefox-we-cant-read-auto-complete-but-we-can-lot
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2010/07/in-firefox-we-cant-read-auto-complete.html>
 - Current location: <https://blog.jeremiahgrossman.com/2010/07/in-firefox-we-cant-read-auto-complete.html>
-- Preserved from: https://blog.jeremiahgrossman.com/2010/07/in-firefox-we-cant-read-auto-complete.html (live) on 2026-08-09
+- Preserved from: https://blog.jeremiahgrossman.com/2010/07/in-firefox-we-cant-read-auto-complete.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

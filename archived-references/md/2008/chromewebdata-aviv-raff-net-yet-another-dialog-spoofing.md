@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20080106144155/http://aviv.raffon.net/200
 tags: [article, webseclist-reference, aviv-raffon-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:01:50+00:00"
+  at: "2026-08-10T15:02:48+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20080106144155/http://aviv.raffon.net/2008/01/02/YetAnotherDialogSpoofingFirefoxBasicAuthentication.aspx"
@@ -20,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2008.md:57"
 commit: ""
-content_sha256: 73021883eb03cbffe8d55a8e10b868cf97692c43b766ef691f1c617ab5cec8f5
+content_sha256: c10c8a8cffe9f45bda839b31cfd4c187b7f93129424e3335e92e8ac6ccd0bc99
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "https://web.archive.org/web/20080106144155/http://aviv.raffon.net
 published: ""
 publisher: aviv.raffon.net
 publisher_english: ""
-raw_sha256: c52b28caf67f146de7b0854d17b1fd41b4e4788a825849b4b96590e2a2d79939
+raw_sha256: 536ca2ff5b3def9ce5f0a3bead1626ffdc6543cb29a10c90b0f8e6fde985b025
 retrieved_from: "https://web.archive.org/web/20080106144155/http://aviv.raffon.net/2008/01/02/YetAnotherDialogSpoofingFirefoxBasicAuthentication.aspx"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:01:50+00:00"
+retrieved_utc: "2026-08-10T15:02:48+00:00"
 slug: chromewebdata-aviv-raff-net-yet-another-dialog-spoofing
 snapshot: 20080106144155
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20080106144155/http://aviv.raffon.net/2008/01/02/YetAnotherDialogSpoofingFirefoxBasicAuthentication.aspx>
-- Preserved from: https://web.archive.org/web/20080106144155/http://aviv.raffon.net/2008/01/02/YetAnotherDialogSpoofingFirefoxBasicAuthentication.aspx (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20080106144155/http://aviv.raffon.net/2008/01/02/YetAnotherDialogSpoofingFirefoxBasicAuthentication.aspx (live) on 2026-08-10
 - Capture timestamp: 20080106144155
 - Licence: unknown
 
@@ -135,8 +135,6 @@ Until Mozilla fixes this vulnerability, I recommend not to provide username and 
   |   |   |
 
  |  |
-
- 
 
   |   |
 |    |

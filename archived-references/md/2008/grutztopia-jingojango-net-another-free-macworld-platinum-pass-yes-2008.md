@@ -5,9 +5,9 @@ resource: "http://grutztopia.jingojango.net/2008/01/another-free-macworld-platin
 tags: [article, webseclist-reference, en-US, grutztopia-jingojango-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:14:16+00:00"
+  at: "2026-08-10T15:10:43+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://grutztopia.jingojango.net/2008/01/another-free-macworld-platinum-pass-yes.html"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2008.md:25"
 commit: ""
-content_sha256: 1bc7e15048266b326379a5898e71d48f86874fac62b63c3dc474f56d36a16c05
+content_sha256: 0172226bfe0e60f428723a76236c02a498ae4bdf23edd7beac962446399ea751
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "http://grutztopia.jingojango.net/2008/01/another-free-macworld-pl
 published: ""
 publisher: grutztopia.jingojango.net
 publisher_english: ""
-raw_sha256: e7a34cc87e0a184c000d239b1508c0b1e6a405a5067b786c193bad86e468825c
+raw_sha256: 910661d8ec76ae29a68e73ec9f7d17d19a5e94beb37c1235f06009908d287f0a
 retrieved_from: "http://grutztopia.jingojango.net/2008/01/another-free-macworld-platinum-pass-yes.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:14:16+00:00"
+retrieved_utc: "2026-08-10T15:10:43+00:00"
 slug: grutztopia-jingojango-net-another-free-macworld-platinum-pass-yes-2008
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://grutztopia.jingojango.net/2008/01/another-free-macworld-platinum-pass-yes.html>
-- Preserved from: http://grutztopia.jingojango.net/2008/01/another-free-macworld-platinum-pass-yes.html (live) on 2026-08-09
+- Preserved from: http://grutztopia.jingojango.net/2008/01/another-free-macworld-platinum-pass-yes.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://scarybeastsecurity.blogspot.com/2009/05/more-plausible-e4x-at
 tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:52+00:00"
+  at: "2026-08-10T15:57:26+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://scarybeastsecurity.blogspot.com/2009/05/more-plausible-e4x-attack.html"
@@ -28,10 +28,10 @@ original_url: "https://scarybeastsecurity.blogspot.com/2009/05/more-plausible-e4
 published: ""
 publisher: scarybeastsecurity.blogspot.com
 publisher_english: ""
-raw_sha256: 3112191cc8a4ed2c28ebda8a39e7effe33029a862701e157032927817e9b2682
+raw_sha256: 09e4cf12d6d0597ccbe6635cee5f4bb7a32efd83772e3f77e5cf044e662d24f3
 retrieved_from: "https://scarybeastsecurity.blogspot.com/2009/05/more-plausible-e4x-attack.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:52+00:00"
+retrieved_utc: "2026-08-10T15:57:26+00:00"
 slug: scarybeastsecurity-blogspot-com-more-plausible-e4x-attack
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://scarybeastsecurity.blogspot.com/2009/05/more-plausible-e4x-attack.html>
-- Preserved from: https://scarybeastsecurity.blogspot.com/2009/05/more-plausible-e4x-attack.html (live) on 2026-08-09
+- Preserved from: https://scarybeastsecurity.blogspot.com/2009/05/more-plausible-e4x-attack.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

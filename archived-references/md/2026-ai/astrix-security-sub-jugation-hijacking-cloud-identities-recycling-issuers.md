@@ -5,9 +5,9 @@ resource: "https://astrix.security/learn/blog/subjugation-hijacking-cloud-identi
 tags: [article, webseclist-reference, en, astrix-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:11+00:00"
+  at: "2026-08-10T15:02:40+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://astrix.security/learn/blog/subjugation-hijacking-cloud-identities-by-recycling-namespaces-in-global-oidc-issuers/"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:87"
+  - "2026-ai.md:65"
 commit: ""
 content_sha256: 77d92a2eb3a54d6f3993ea974f9bfef5de3bd08eb5712bfc4ced730c1a039f68
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://astrix.security/learn/blog/subjugation-hijacking-cloud-id
 published: ""
 publisher: Astrix Security
 publisher_english: ""
-raw_sha256: 8d4403b470018966ac74e52cbcd3986199af6fc6b7fd8e3b3453240b152d3c05
+raw_sha256: 3fc4560c5f27c75b9d1694fc01acb0d1e41619f8fe0203a1585281ee297966dc
 retrieved_from: "https://astrix.security/learn/blog/subjugation-hijacking-cloud-identities-by-recycling-namespaces-in-global-oidc-issuers/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:11+00:00"
+retrieved_utc: "2026-08-10T15:02:40+00:00"
 slug: astrix-security-sub-jugation-hijacking-cloud-identities-recycling-issuers
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://astrix.security/learn/blog/subjugation-hijacking-cloud-identities-by-recycling-namespaces-in-global-oidc-issuers/>
-- Preserved from: https://astrix.security/learn/blog/subjugation-hijacking-cloud-identities-by-recycling-namespaces-in-global-oidc-issuers/ (live) on 2026-08-08
+- Preserved from: https://astrix.security/learn/blog/subjugation-hijacking-cloud-identities-by-recycling-namespaces-in-global-oidc-issuers/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md"
 tags: [article, webseclist-reference, en, valentino-s-issue-tracker]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:08:01+00:00"
+  at: "2026-08-10T15:07:03+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md"
@@ -15,13 +15,14 @@ sources:
     last_modified: 2025-11-10
   - id: canonical
     resource: "https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/"
-also_at: []
+also_at:
+  - "https://buganizer.cc/Hacking-Gemini-A-Multi-Layered-Approach.pdf"
 authors: []
 canonical_url: "https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/"
 cited_by:
   - "2025.md:52"
 commit: ""
-content_sha256: 14bbb6946ec0244584bc0cd4a3df84bf3862eb21af86dded3fc29c673e2c7d43
+content_sha256: 2347a5a6e875061edbc170e64bc368990c5de2923d5e2440077cd249e92e56e7
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +32,10 @@ original_url: "https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md"
 published: 2025-11-10
 publisher: Valentino’s issue tracker
 publisher_english: ""
-raw_sha256: 4e325666b9efd0f0fa75fed503df594dc5369d29edf52fcb4dc9119be592f957
+raw_sha256: c7d2adc6114e5c9c2081556c784438913093f0675a5f7449cb3acca149b4c44d
 retrieved_from: "https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:08:01+00:00"
+retrieved_utc: "2026-08-10T15:07:03+00:00"
 slug: 2025-valentinos-issue-tracker-hacking-gemini-multi-layered-approach
 snapshot: ""
 title_english: ""
@@ -49,7 +50,8 @@ translation_of: ""
 - Published: 2025-11-10
 - Original: <https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md>
 - Current location: <https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/>
-- Preserved from: https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/ (live) on 2026-08-09
+- Also published at: <https://buganizer.cc/Hacking-Gemini-A-Multi-Layered-Approach.pdf>
+- Preserved from: https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -203,3 +205,18 @@ After arriving home, I re-checked it was possible to leak Workspace data, and re
 ### Bypassing URI prefix
 
 After trying the prompt a few times to ensure it was reliable, I noticed that sometimes Gemini would linkify and prefix the specified subdomain (e.g., `x.x.x.x.bc.googleusercontent.com`) with `https://www.google.com/search?q=`. Therefore, to improve the exploit reliability, I included the `userinfo` part to bypass the URI parser that was performing that process. Therefore, the exploit involved even more layers!
+
+In the end, the exploit worked successfully bypassing the existing layered protections, and via indirect prompt injection, it was possible to leak arbitrary Workspace data such as Gmail emails, Calendar events, Drive files, and other data retrieved via Gemini extensions.
+
+### Timeline
+
+- Apr 30, 2025 07:31PM: Issue reported
+- May 5, 2025 01:28PM: Google can’t reproduce due to behavior in Colab
+- May 6, 2025 11:43AM: Sent variant PoC which bypasses the behavior in Colab
+- May 20, 2025 10:57AM: Google Vulnerability Reward Program panel has decided to issue a reward of $20000.00 for your report. Congratulations!
+
+### Conclusion
+
+Most delivery methods could work (imported PDF files, emails, etc), and even poisoned training data or embeddings could enable indirect prompt injection. Because IDP (indirect prompt injection) is an unsolved, non-deterministic problem, reports treated the exfil vector as the real issue: it can affect any user who lets Gemini interact with untrusted or poisoned data. Fixing the exfil vector is more tractable (it can have a consistent, deterministic technical fix) while mitigating IDP remains an open challenge.
+
+As AI architectures become more complex and integrated, new attack surfaces emerge. It’s reminiscent of the early XSS era -but now you don’t necessarily need JS-, because even something that might seem simple, like Markdown, can be an exfil vector.

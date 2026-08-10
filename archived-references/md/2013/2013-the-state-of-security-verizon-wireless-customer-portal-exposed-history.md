@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20141220045918/http://www.tripwire.com/st
 tags: [article, webseclist-reference, en, the-state-of-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:47:37+00:00"
+  at: "2026-08-10T16:03:44+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20141220045918/http://www.tripwire.com/state-of-security/latest-security-news/verizon-wirelesss-customer-portal-exposed-text-messages/"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2013.md:32"
 commit: ""
-content_sha256: 7582372ac53eddd538a189d46f3711b46ab6c46e299ff237cdd4d6b1432557da
+content_sha256: 45b31fa0e6547dc5a616455974d6e02f65e63930d14aeea724cba1b02158b34f
 depth: full
 depth_reason: default
 kind: article
@@ -33,10 +33,10 @@ original_url: "https://web.archive.org/web/20141220045918/http://www.tripwire.co
 published: 2013-10-21
 publisher: The State of Security
 publisher_english: ""
-raw_sha256: 921791a34ade01dcab9375649807100d1f1201c67bde97f37f99caf8ba5dbc88
+raw_sha256: 64a89fd926dd51b348c3bfa4eb04ba1f07e043941e6b7058434c3ebe39ecd266
 retrieved_from: "https://web.archive.org/web/20141220045918/http://www.tripwire.com/state-of-security/latest-security-news/verizon-wirelesss-customer-portal-exposed-text-messages/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:47:37+00:00"
+retrieved_utc: "2026-08-10T16:03:44+00:00"
 slug: 2013-the-state-of-security-verizon-wireless-customer-portal-exposed-history
 snapshot: 20141220045918
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: 2013-10-21
 - Original: <https://web.archive.org/web/20141220045918/http://www.tripwire.com/state-of-security/latest-security-news/verizon-wirelesss-customer-portal-exposed-text-messages/>
-- Preserved from: https://web.archive.org/web/20141220045918/http://www.tripwire.com/state-of-security/latest-security-news/verizon-wirelesss-customer-portal-exposed-text-messages/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20141220045918/http://www.tripwire.com/state-of-security/latest-security-news/verizon-wirelesss-customer-portal-exposed-text-messages/ (live) on 2026-08-10
 - Capture timestamp: 20141220045918
 - Licence: unknown
 

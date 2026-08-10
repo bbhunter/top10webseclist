@@ -5,9 +5,9 @@ resource: "https://claroty.com/team82/research/js-on-security-off-abusing-json-b
 tags: [article, webseclist-reference, en, claroty]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:08:19+00:00"
+  at: "2026-08-10T15:07:15+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://claroty.com/team82/research/js-on-security-off-abusing-json-based-sql-to-bypass-waf"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2022.md:23"
 commit: ""
-content_sha256: 847c9dda171f2854c827132d9c9af76a397d7fa99f427c6afa981df26470fb74
+content_sha256: 96c5788332d39cce87eda1082ffedf398ee5039c25cfd2d013103856fd7dd71c
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +34,7 @@ publisher_english: ""
 raw_sha256: 015019553546efeb6ad537b18009ea141c345ac2b703457c7d005705f576c036
 retrieved_from: "https://claroty.com/team82/research/js-on-security-off-abusing-json-based-sql-to-bypass-waf"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:08:19+00:00"
+retrieved_utc: "2026-08-10T15:07:15+00:00"
 slug: 2022-claroty-js-security-off-abusing-json-based-sql-bypass-waf
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2022-12-08
 - Original: <https://claroty.com/team82/research/js-on-security-off-abusing-json-based-sql-to-bypass-waf>
-- Preserved from: https://claroty.com/team82/research/js-on-security-off-abusing-json-based-sql-to-bypass-waf (live) on 2026-08-09
+- Preserved from: https://claroty.com/team82/research/js-on-security-off-abusing-json-based-sql-to-bypass-waf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

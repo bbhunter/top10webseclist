@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/gierl
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:53+00:00"
+  at: "2026-08-10T16:05:17+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/gierlings"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2023.md:89"
+  - "2023.md:84"
 commit: ""
 content_sha256: 9755f5709900b0cc0b8b2a64066c582ec7f9d49bcb3354d0539aafbf39602120
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity23/presentation/g
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 29632ce94f29963e8b4ad9abb36ac303bbb830c0f0d1285f012efc1800c27f89
+raw_sha256: c6b07808e0f48c232b9db224aab21555b033b0683bf894c20dc01cdaf242024a
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity23/presentation/gierlings"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:53+00:00"
+retrieved_utc: "2026-08-10T16:05:17+00:00"
 slug: usenix-org-isolated-exhausted-attacking-operating-systems-site-isolation-browser
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity23/presentation/gierlings>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity23/presentation/gierlings (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity23/presentation/gierlings (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

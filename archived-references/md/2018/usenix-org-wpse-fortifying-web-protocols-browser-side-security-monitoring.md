@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/calza
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:16+00:00"
+  at: "2026-08-10T16:04:43+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/calzavara"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2018.md:81"
+  - "2018.md:77"
 commit: ""
 content_sha256: 838762e841de1f8005419e582ce7129d8242ba529d9ce4faac67c82dd84ee644
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity18/presentation/c
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 49cd6d64bb7b1d7d7a502f88c925969577a026ca9ac5deedbb73df4fd5dbd49f
+raw_sha256: fadfc3630f5c3c20fd27ea4c7426d1ee2c8eab8ee091439d3af4f3927cf577f1
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity18/presentation/calzavara"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:16+00:00"
+retrieved_utc: "2026-08-10T16:04:43+00:00"
 slug: usenix-org-wpse-fortifying-web-protocols-browser-side-security-monitoring
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity18/presentation/calzavara>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity18/presentation/calzavara (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity18/presentation/calzavara (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

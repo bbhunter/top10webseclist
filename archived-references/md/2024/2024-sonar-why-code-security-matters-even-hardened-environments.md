@@ -5,9 +5,9 @@ resource: "https://www.sonarsource.com/blog/why-code-security-matters-even-in-ha
 tags: [article, webseclist-reference, en, sonar]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:50+00:00"
+  at: "2026-08-10T16:00:36+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.sonarsource.com/blog/why-code-security-matters-even-in-hardened-environments/"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:25"
 commit: ""
-content_sha256: 9f3e10f6be57c4d8f6c5ac945266f0890b2088ef399e58295f4dc5a6caa98699
+content_sha256: 9b5394384a7bfaec56e1a9fd277bf85d23d022b3660243a676e4330c7685b9ff
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://www.sonarsource.com/blog/why-code-security-matters-even-i
 published: 2024-10-08
 publisher: Sonar
 publisher_english: ""
-raw_sha256: c37c91cbb81880c2ca0d7bf5d38a7f7404b362520b5815dc719b2fc23aefae88
+raw_sha256: 76b2338373477132120748042722a01b2b27e6443422326643bf5bf3253da353
 retrieved_from: "https://www.sonarsource.com/blog/why-code-security-matters-even-in-hardened-environments/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:50+00:00"
+retrieved_utc: "2026-08-10T16:00:36+00:00"
 slug: 2024-sonar-why-code-security-matters-even-hardened-environments
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2024-10-08
 - Original: <https://www.sonarsource.com/blog/why-code-security-matters-even-in-hardened-environments/>
-- Preserved from: https://www.sonarsource.com/blog/why-code-security-matters-even-in-hardened-environments/ (live) on 2026-08-09
+- Preserved from: https://www.sonarsource.com/blog/why-code-security-matters-even-in-hardened-environments/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

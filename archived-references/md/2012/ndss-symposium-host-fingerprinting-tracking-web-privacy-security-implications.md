@@ -5,18 +5,19 @@ resource: "https://www.ndss-symposium.org/ndss2012/ndss-2012-programme/host-fing
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:15+00:00"
+  at: "2026-08-10T15:34:04+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2012/ndss-2012-programme/host-fingerprinting-and-tracking-web-privacy-and-security-implications/"
     title: "Host Fingerprinting and Tracking on the Web: Privacy and Security Implications"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/11_3.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2012.md:92"
+  - "2012.md:86"
 commit: ""
 content_sha256: f06bd9d8c9334e51badbf110ed588cc6447590b0b0377ef91eec5dd09b63f584
 depth: full
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss2012/ndss-2012-programme/host-
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 47e3009899f63d9248aa0efb6befcec768b676b0c88cdc97892182a507d2c1de
+raw_sha256: 9fbd2417dc2252b93f37945fa268b5adac9c7ec88cd462b3f11e32573a10ac95
 retrieved_from: "https://www.ndss-symposium.org/ndss2012/ndss-2012-programme/host-fingerprinting-and-tracking-web-privacy-and-security-implications/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:15+00:00"
+retrieved_utc: "2026-08-10T15:34:04+00:00"
 slug: ndss-symposium-host-fingerprinting-tracking-web-privacy-security-implications
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2012/ndss-2012-programme/host-fingerprinting-and-tracking-web-privacy-and-security-implications/>
-- Preserved from: https://www.ndss-symposium.org/ndss2012/ndss-2012-programme/host-fingerprinting-and-tracking-web-privacy-and-security-implications/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/11_3.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss2012/ndss-2012-programme/host-fingerprinting-and-tracking-web-privacy-and-security-implications/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

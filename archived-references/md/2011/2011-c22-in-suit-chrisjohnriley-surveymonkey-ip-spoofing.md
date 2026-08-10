@@ -5,9 +5,9 @@ resource: "http://blog.c22.cc/2011/04/22/surveymonkey-ip-spoofing/"
 tags: [article, webseclist-reference, en, c-in-s-u-it-chrisjohnriley]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:35+00:00"
+  at: "2026-08-10T15:04:09+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.c22.cc/2011/04/22/surveymonkey-ip-spoofing/"
@@ -30,11 +30,11 @@ licence: unknown
 original_url: "http://blog.c22.cc/2011/04/22/surveymonkey-ip-spoofing/"
 published: 2011-04-22
 publisher: Cатсн²² (in)sесuяitу / ChrisJohnRiley
-publisher_english: Catch²² (in)security / ChrisJohnRiley
-raw_sha256: e1f64fbef4f8692f9b993a3e8750392d488cf77b15d93cba92306ff18cbf44ac
+publisher_english: ""
+raw_sha256: 812fd27454b34f50a379607353258977fe7f5f621449bd9eeb753c1fb6aa85bf
 retrieved_from: "https://c22blog.wordpress.com/2011/04/22/surveymonkey-ip-spoofing/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:35+00:00"
+retrieved_utc: "2026-08-10T15:04:09+00:00"
 slug: 2011-c22-in-suit-chrisjohnriley-surveymonkey-ip-spoofing
 snapshot: ""
 title_english: ""
@@ -46,11 +46,10 @@ translation_of: ""
 
 **SurveyMonkey: IP Spoofing** - Author not stated, Cатсн²² (in)sесuяitу / ChrisJohnRiley.
 
-- Publisher in English: Catch²² (in)security / ChrisJohnRiley
 - Published: 2011-04-22
 - Original: <http://blog.c22.cc/2011/04/22/surveymonkey-ip-spoofing/>
 - Current location: <https://c22blog.wordpress.com/2011/04/22/surveymonkey-ip-spoofing/>
-- Preserved from: https://c22blog.wordpress.com/2011/04/22/surveymonkey-ip-spoofing/ (live) on 2026-08-09
+- Preserved from: https://c22blog.wordpress.com/2011/04/22/surveymonkey-ip-spoofing/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

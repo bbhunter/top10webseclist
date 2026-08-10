@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity25/presentation/hebro
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:13+00:00"
+  at: "2026-08-10T16:05:39+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2025.md:89"
+  - "2025.md:84"
 commit: ""
 content_sha256: 2de99564c0d33c22b037346c36a84dfa79d7df56fcf669159877d9865df35309
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity25/presentation/h
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 57f70efc75fd8e65324fed374d4c469692a76b76ca93278cb229ef52159276c8
+raw_sha256: a9cbe9dee5d0621258f70072992bc6959dca374484a4d339be694c8ceae1cd3d
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:13+00:00"
+retrieved_utc: "2026-08-10T16:05:39+00:00"
 slug: usenix-org-stek-sharing-not-caring-bypassing-tls-authentication-web-tickets
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://brave.com/blog/agentic-oversharing/"
 tags: [article, webseclist-reference, en, brave]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:16+00:00"
+  at: "2026-08-10T15:06:59+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://brave.com/blog/agentic-oversharing/"
@@ -20,9 +20,9 @@ authors:
   - Brave Software
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:106"
+  - "2026-ai.md:84"
 commit: ""
-content_sha256: 883a62b5e4a3c6612ae776527e53f8889da1edc844ec55e1f1b88f47febab44d
+content_sha256: 3a4070d0c3bf838bc631aabca35b741480d3415709aad5a518daa2822a80e3b8
 depth: full
 depth_reason: default
 kind: article
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: cdc7e48f9b9b7d1c28132c21db49d0577a017e369da931997ebcd8f76ce6b80a
 retrieved_from: "https://brave.com/blog/agentic-oversharing/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:16+00:00"
+retrieved_utc: "2026-08-10T15:06:59+00:00"
 slug: 2026-brave-privacy-risks-agentic-oversharing-web
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2026-03-05
 - Original: <https://brave.com/blog/agentic-oversharing/>
-- Preserved from: https://brave.com/blog/agentic-oversharing/ (live) on 2026-08-08
+- Preserved from: https://brave.com/blog/agentic-oversharing/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -88,11 +88,7 @@ Users therefore hold an implicit privacy expectation: that their personal inform
 
 For example, in the video below (from our evaluation of commercial agents 09/2025) we observe that Perplexity Comet copies user conversation histories directly into third-party search interfaces, resulting in the disclosure of sensitive personal information the user had no intention of sharing.
 
- [
-
  ![YouTube logo](https://brave.com/static-assets/images/vimeo-logo.svg)
-
- ]()
 
 This raises a fundamental question: *How effectively do web agents preserve and respect user privacy expectations when acting on users’ behalf across live websites?*
 

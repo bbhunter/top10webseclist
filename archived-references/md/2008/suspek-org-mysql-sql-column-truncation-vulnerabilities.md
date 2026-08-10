@@ -5,9 +5,9 @@ resource: "http://www.suspekt.org/2008/08/18/mysql-and-sql-column-truncation-vul
 tags: [article, webseclist-reference, en-US, suspek-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:45:15+00:00"
+  at: "2026-08-10T16:01:18+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.suspekt.org/2008/08/18/mysql-and-sql-column-truncation-vulnerabilities/"
@@ -30,10 +30,10 @@ original_url: "http://www.suspekt.org/2008/08/18/mysql-and-sql-column-truncation
 published: ""
 publisher: suspek.org
 publisher_english: ""
-raw_sha256: e7125cd5e1deb21a54265337da0820b4493f65fc75bf6525a38e0026297a3676
+raw_sha256: 828ad0e64b39f212fe87586cfd7c877ea94d4783363743970773859f2ca8d59f
 retrieved_from: "https://www.suspek.org/mysql-and-sql-column-truncation-vulnerabilities/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:45:15+00:00"
+retrieved_utc: "2026-08-10T16:01:18+00:00"
 slug: suspek-org-mysql-sql-column-truncation-vulnerabilities
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.suspekt.org/2008/08/18/mysql-and-sql-column-truncation-vulnerabilities/>
 - Current location: <https://www.suspek.org/mysql-and-sql-column-truncation-vulnerabilities/>
-- Preserved from: https://www.suspek.org/mysql-and-sql-column-truncation-vulnerabilities/ (live) on 2026-08-09
+- Preserved from: https://www.suspek.org/mysql-and-sql-column-truncation-vulnerabilities/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

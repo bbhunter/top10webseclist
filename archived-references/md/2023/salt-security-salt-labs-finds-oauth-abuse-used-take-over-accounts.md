@@ -5,9 +5,9 @@ resource: "https://salt.security/blog/oh-auth-abusing-oauth-to-take-over-million
 tags: [article, webseclist-reference, en, salt-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:36+00:00"
+  at: "2026-08-10T15:57:19+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://salt.security/blog/oh-auth-abusing-oauth-to-take-over-millions-of-accounts"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:50"
 commit: ""
-content_sha256: 7f33d482a2b776a29c63bea10218e08e270b4d294c5e0e958a2e8fc0d8926566
+content_sha256: 786ebf2e56af91317937d63ba753fce997c9c6466ee24cc969e551efd3f9f9d3
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://salt.security/blog/oh-auth-abusing-oauth-to-take-over-mil
 published: ""
 publisher: Salt Security
 publisher_english: ""
-raw_sha256: 6acbbccb01390c56703bdcd4dbeff351fd9af997540884652f23a7bafd81cb64
+raw_sha256: e9c4f37193fa21a895e8c1aee4642274bf09c49305498ad4375c2865e5267a41
 retrieved_from: "https://salt.security/blog/oh-auth-abusing-oauth-to-take-over-millions-of-accounts"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:36+00:00"
+retrieved_utc: "2026-08-10T15:57:19+00:00"
 slug: salt-security-salt-labs-finds-oauth-abuse-used-take-over-accounts
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://salt.security/blog/oh-auth-abusing-oauth-to-take-over-millions-of-accounts>
-- Preserved from: https://salt.security/blog/oh-auth-abusing-oauth-to-take-over-millions-of-accounts (live) on 2026-08-09
+- Preserved from: https://salt.security/blog/oh-auth-abusing-oauth-to-take-over-millions-of-accounts (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

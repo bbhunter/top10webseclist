@@ -5,9 +5,9 @@ resource: "https://adnanthekhan.com/posts/angular-compromise-through-dev-infra"
 tags: [article, webseclist-reference, en, adnan-khan-security-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:07+00:00"
+  at: "2026-08-10T15:01:14+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://adnanthekhan.com/posts/angular-compromise-through-dev-infra"
@@ -22,7 +22,7 @@ authors:
   - adnanthekhan
 canonical_url: "https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/"
 cited_by:
-  - "2026-ai.md:112"
+  - "2026-ai.md:90"
 commit: ""
 content_sha256: baa6056753d6a3f96f14936489ed71b276cd48004b2767cfc7ecbfa28424f32a
 depth: full
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: 9faf96df274ced106c1302e0abd39df93b1012b2fb36edc3c4f16062b179f54e
 retrieved_from: "https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:07+00:00"
+retrieved_utc: "2026-08-10T15:01:14+00:00"
 slug: 2026-adnan-khan-security-research-turning-almost-nothing-supply-chain-poisoning
 snapshot: ""
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: 2026-03-03
 - Original: <https://adnanthekhan.com/posts/angular-compromise-through-dev-infra>
 - Current location: <https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/>
-- Preserved from: https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/ (live) on 2026-08-08
+- Preserved from: https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

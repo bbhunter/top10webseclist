@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/kirch
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:47:56+00:00"
+  at: "2026-08-10T16:05:32+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/kirchner"
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity24/presentation/k
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: b44505f1e0fe1fc4f5489a54b4ada635086bb26a650a2e7800de0a42a6aad809
+raw_sha256: 4bf5877fbe7e4ff138e4a5a5507bb2ab19aa0d07a42e48db6bd3f74e13197756
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity24/presentation/kirchner"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:47:56+00:00"
+retrieved_utc: "2026-08-10T16:05:32+00:00"
 slug: usenix-org-dancer-dark-synthesizing-evaluating-polyglots-blind-cross-scripting
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity24/presentation/kirchner>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity24/presentation/kirchner (live) on 2026-08-09
+- Preserved from: https://www.usenix.org/conference/usenixsecurity24/presentation/kirchner (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

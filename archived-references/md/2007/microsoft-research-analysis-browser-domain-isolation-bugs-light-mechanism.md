@@ -5,9 +5,9 @@ resource: "https://www.microsoft.com/en-us/research/?p=153771"
 tags: [article, webseclist-reference, en, microsoft-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:47+00:00"
+  at: "2026-08-10T15:32:45+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.microsoft.com/en-us/research/?p=153771"
@@ -18,7 +18,7 @@ also_at: []
 authors: []
 canonical_url: "https://www.microsoft.com/en-us/research/publication/an-analysis-of-browser-domain-isolation-bugs-and-a-light-weight-transparent-defense-mechanism/"
 cited_by:
-  - "2007.md:109"
+  - "2007.md:104"
 commit: ""
 content_sha256: 2bc967a348f91f0ec2d0bddd86ce5f880288f68536e69dd60204f5fea0989ecb
 depth: full
@@ -30,10 +30,10 @@ original_url: "https://www.microsoft.com/en-us/research/?p=153771"
 published: ""
 publisher: Microsoft Research
 publisher_english: ""
-raw_sha256: 13e22f36414d67c9391114b4ea220952b73a851bd2e4d3a155a90ccc6d2bf30e
+raw_sha256: 9c6bfedd5dd4394e8959a713c16ae1320cd331333490df4b95f9f107b3616203
 retrieved_from: "https://www.microsoft.com/en-us/research/publication/an-analysis-of-browser-domain-isolation-bugs-and-a-light-weight-transparent-defense-mechanism/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:47+00:00"
+retrieved_utc: "2026-08-10T15:32:45+00:00"
 slug: microsoft-research-analysis-browser-domain-isolation-bugs-light-mechanism
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.microsoft.com/en-us/research/?p=153771>
 - Current location: <https://www.microsoft.com/en-us/research/publication/an-analysis-of-browser-domain-isolation-bugs-and-a-light-weight-transparent-defense-mechanism/>
-- Preserved from: https://www.microsoft.com/en-us/research/publication/an-analysis-of-browser-domain-isolation-bugs-and-a-light-weight-transparent-defense-mechanism/ (live) on 2026-08-08
+- Preserved from: https://www.microsoft.com/en-us/research/publication/an-analysis-of-browser-domain-isolation-bugs-and-a-light-weight-transparent-defense-mechanism/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

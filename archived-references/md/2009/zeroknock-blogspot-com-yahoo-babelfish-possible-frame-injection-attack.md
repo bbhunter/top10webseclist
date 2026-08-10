@@ -5,9 +5,9 @@ resource: "https://zeroknock.blogspot.com/2009/12/yahoo-babelfish-possible-inlin
 tags: [article, webseclist-reference, zeroknock-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:51:24+00:00"
+  at: "2026-08-10T16:08:10+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://zeroknock.blogspot.com/2009/12/yahoo-babelfish-possible-inline-iframe.html"
@@ -28,10 +28,10 @@ original_url: "https://zeroknock.blogspot.com/2009/12/yahoo-babelfish-possible-i
 published: ""
 publisher: zeroknock.blogspot.com
 publisher_english: ""
-raw_sha256: 6e4e4e8488b227f34812be867a24c03f780cc968c1a0c5bc43566cef6e92ebd8
+raw_sha256: 894e72a621de3acd0fdffa1e47fe8fd6152acbc165820da77c1cfe3261050c7a
 retrieved_from: "https://zeroknock.blogspot.com/2009/12/yahoo-babelfish-possible-inline-iframe.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:51:24+00:00"
+retrieved_utc: "2026-08-10T16:08:10+00:00"
 slug: zeroknock-blogspot-com-yahoo-babelfish-possible-frame-injection-attack
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://zeroknock.blogspot.com/2009/12/yahoo-babelfish-possible-inline-iframe.html>
-- Preserved from: https://zeroknock.blogspot.com/2009/12/yahoo-babelfish-possible-inline-iframe.html (live) on 2026-08-09
+- Preserved from: https://zeroknock.blogspot.com/2009/12/yahoo-babelfish-possible-inline-iframe.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

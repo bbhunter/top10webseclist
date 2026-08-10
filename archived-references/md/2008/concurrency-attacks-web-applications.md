@@ -5,9 +5,9 @@ resource: "https://www.blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:37+00:00"
+  at: "2026-08-10T15:03:28+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf"
@@ -18,7 +18,7 @@ also_at: []
 authors: []
 canonical_url: "https://blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf"
 cited_by:
-  - "2008.md:94"
+  - "2008.md:89"
 commit: ""
 content_sha256: 51fb31b57e54a8e2fd0e496c8b91a9222040e334d055b58edb3dd02d9db7959b
 depth: full
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: bb999671819bc955e5b50a7e67039c9bb62e91492d9356e64ba4d9148c9dc06f
 retrieved_from: "https://blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:37+00:00"
+retrieved_utc: "2026-08-10T15:03:28+00:00"
 slug: concurrency-attacks-web-applications
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf>
 - Current location: <https://blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf>
-- Preserved from: https://blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf (live) on 2026-08-08
+- Preserved from: https://blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://speakerdeck.com/greendog/how-to-break-saml-if-i-have-paws"
 tags: [slides, webseclist-reference, en, speaker-deck]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:10+00:00"
+  at: "2026-08-10T16:00:45+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://speakerdeck.com/greendog/how-to-break-saml-if-i-have-paws"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:43"
 commit: ""
-content_sha256: be6c556b02c3528b0117cf95be08447fa6859e0c4fbaa97cc2db9929ba172b45
+content_sha256: 995799a7cf3383cfac1c38cc13a742e7fb2e2d69754f4ba9217e272708a91f91
 depth: full
 depth_reason: default
 kind: slides
@@ -32,10 +32,10 @@ original_url: "https://speakerdeck.com/greendog/how-to-break-saml-if-i-have-paws
 published: 2023-09-21
 publisher: Speaker Deck
 publisher_english: ""
-raw_sha256: 5d4372d9e5dc16aa1f6d3f9ba47ce8906d9dabbc1cfbab8feceafa170eb44eed
+raw_sha256: 3b63e5e4f7396658aa8bcc191ec805b9f8620ef4eaa0f5728b3a20679a3e2f36
 retrieved_from: "https://speakerdeck.com/greendog/how-to-break-saml-if-i-have-paws"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:10+00:00"
+retrieved_utc: "2026-08-10T16:00:45+00:00"
 slug: 2023-speaker-deck-how-break-saml-if-i-have-paws
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2023-09-21
 - Original: <https://speakerdeck.com/greendog/how-to-break-saml-if-i-have-paws>
-- Preserved from: https://speakerdeck.com/greendog/how-to-break-saml-if-i-have-paws (live) on 2026-08-09
+- Preserved from: https://speakerdeck.com/greendog/how-to-break-saml-if-i-have-paws (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -116,102 +116,6 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
  [ See All in Education ](https://speakerdeck.com/c/education)
 
- [BITCOIN : Les fondamentaux !](https://speakerdeck.com/rlifchitz/bitcoin-les-fondamentaux)
-
- [ ![Avatar for Renaud Lifchitz](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzA5OCwicHVyIjoiYmxvYl9pZCJ9fQ==--b74a45353caf5ced96d70571ff5dcec9e0b0873a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/rli2.jpg) rlifchitz ](https://speakerdeck.com/rlifchitz)
-
- 0
-
-  210
-
- [Geografía y Fútbol: Chattanooga Geografía del Búnker de La Roja.](https://speakerdeck.com/juanmartin2026/geografia-y-futbol-chattanooga-geografia-del-bunker-de-la-roja)
-
- [ ![Avatar for Juan Martín Martín](https://secure.gravatar.com/avatar/aaa9f9a0417047ebd306d8c320bca026?s=24) juanmartin2026 ](https://speakerdeck.com/juanmartin2026)
-
- 1
-
-  12k
-
- [Portable & Reproducible Research Environments in the Age of AI Agents](https://speakerdeck.com/denkiwakame/portable-and-reproducible-research-environments-in-the-age-of-ai-agents)
-
- [ ![Avatar for Mai Nishimura](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzMxMzYsInB1ciI6ImJsb2JfaWQifX0=--0dc50ec1a520151b6b25e925c71fef076c7d2874/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/nishimura.png) denkiwakame ](https://speakerdeck.com/denkiwakame)
-
- 0
-
-  590
-
- [生成AI時代のエンジニア育成について考えてみた](https://speakerdeck.com/akasan/sheng-cheng-aishi-dai-noensiniayu-cheng-nituitekao-etemita)
-
- [ ![Avatar for Daisuke Akagawa (Akasan)](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjYyOTE3LCJwdXIiOiJibG9iX2lkIn19--a14f101fbe7cab90dc18a007bac4fbfb8b8f2dfd/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/me-southpark.png) akasan ](https://speakerdeck.com/akasan)
-
- 0
-
-  200
-
- [生成AI時代の情報発信](https://speakerdeck.com/molmolken/sharing-in-the-age-of-generative-ai)
-
- [ ![Avatar for molmolken](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTY4MjcwLCJwdXIiOiJibG9iX2lkIn19--bd421a1e7a3d79d271af91e6cdaf0c1a2b7a4ae3/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/O6MHMuiV_400x400.jpeg) molmolken ](https://speakerdeck.com/molmolken)
-
- 0
-
-  160
-
- [The Strengthening Institutions Program](https://speakerdeck.com/territorium/the-strengthening-institutions-program)
-
- [ ![Avatar for Territorium](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzU5NDA1LCJwdXIiOiJibG9iX2lkIn19--b688b04f07826ce9485d35751bdbee288743617d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/Territorium-White-stacked-TM.jpg) territorium ](https://speakerdeck.com/territorium)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
-
- 0
-
-  120
-
- [2026年度春学期 統計学 第13回 不確かな測定の不確かさを測る ― 不偏分散とt分布 (2026. 6. 25)](https://speakerdeck.com/akiraasano/2026nian-du-chun-xue-qi-tong-ji-xue-di-13hui-bu-que-kanace-ding-nobu-que-kasawoce-ru-bu-pian-fen-san-totfen-bu-2026-6-25)
-
- [ ![Avatar for Akira Asano](https://secure.gravatar.com/avatar/25552537c45d1bfe170b12b47963fd73?s=24) akiraasano ](https://speakerdeck.com/akiraasano)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
-
- 1
-
-  150
-
- [焦燥を平穏に変えるエンジニアのための哲学](https://speakerdeck.com/ichimichi/jiao-zao-woping-wen-nibian-eruenzinianotamenozhe-xue)
-
- [ ![Avatar for nakamichi](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTExODYsInB1ciI6ImJsb2JfaWQifX0=--39e39c750b738ab6051c449f2658335056625d3c/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/AGyC3lNh_400x400.png) ichimichi ](https://speakerdeck.com/ichimichi)
-
- 7
-
-  6.4k
-
- [0506](https://speakerdeck.com/cbtlibrary/0506)
-
- [ ![Avatar for cbtlibrary](https://secure.gravatar.com/avatar/8c6c4d64f6fd9e19226ef0b210433fd3?s=24) cbtlibrary ](https://speakerdeck.com/cbtlibrary)
-
- 0
-
-  240
-
- [Tableau Public入門ハンズオン｜Titanicデータで学ぶViz作成とMakeover](https://speakerdeck.com/hayashi_ds017/tableau-publicru-men-hanzuon-titanicdetadexue-buvizzuo-cheng-tomakeover)
-
- [ ![Avatar for H.Hayashi](https://secure.gravatar.com/avatar/bb671435534e5481cdd5bb140a82344b?s=24) hayashi_ds017 ](https://speakerdeck.com/hayashi_ds017)
-
- 0
-
-  100
-
- [
-
- [2026前期火５] 論理学（京都大学文学部 前期 第10回）「論理学の哲学——意味とは何か（Tonkと推論主義）」
-
- ](https://speakerdeck.com/yatabe/2026qian-qi-huo-5-lun-li-xue-jing-du-da-xue-wen-xue-bu-qian-qi-di-10hui-lun-li-xue-nozhe-xue-yi-wei-tohahe-ka-tonktotui-lun-zhu-yi)
-
- [ ![Avatar for Shunsuke Yatabe](https://secure.gravatar.com/avatar/e631690252d8cf471756c107ace2a1e8?s=24) yatabe ](https://speakerdeck.com/yatabe)
-
- 0
-
-  240
-
  [良書紹介08_ 頭のいい子がやっているすごいグラフの読み方](https://speakerdeck.com/bunnchinn3/liang-shu-shao-jie-08-tou-noiizi-gayatuteirusugoigurahunodu-mifang)
 
  [ ![Avatar for ぶんちん](https://secure.gravatar.com/avatar/d9fc599b660729bcd11b2ecdd41586b9?s=24) bunnchinn3 ](https://speakerdeck.com/bunnchinn3)
@@ -220,111 +124,215 @@ In this talk, we will figure out how to break Single Sign On(SSO) based on SAML.
 
   130
 
+ [プロポーザルを書く技術とアンチパターン/proposal-writing-and-antipatterns](https://speakerdeck.com/moriyuya/proposal-writing-and-antipatterns)
+
+ [ ![Avatar for moriyuya](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzQzNSwicHVyIjoiYmxvYl9pZCJ9fQ==--556087070a1b46319030efb93e44e6a905323bd0/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/mori_2019_2_17_%E6%AD%A3%E6%96%B9%E5%BD%A2%E5%8C%96_%E8%83%8C%E6%99%AF%E7%99%BD.png) moriyuya ](https://speakerdeck.com/moriyuya)
+
+ 13
+
+  3.7k
+
+ [
+
+ [2026前期火５] 論理学（京都大学文学部 前期 第14回）「計算は、証明ではない——ハルシネーションを三層ハーモニーで診る」
+
+ ](https://speakerdeck.com/yatabe/2026qian-qi-huo-5-lun-li-xue-jing-du-da-xue-wen-xue-bu-qian-qi-di-14hui-ji-suan-ha-zheng-ming-dehanai-harusinesiyonwosan-ceng-hamonidezhen-ru)
+
+ [ ![Avatar for Shunsuke Yatabe](https://secure.gravatar.com/avatar/e631690252d8cf471756c107ace2a1e8?s=24) yatabe ](https://speakerdeck.com/yatabe)
+
+ 0
+
+  160
+
+ [観察、仮説、実行、検証、計画、提案を一年で3000回トレーニングする方法/3000 Thinking Loops in 365 Days](https://speakerdeck.com/moriyuya/3000-thinking-loops-in-365-days)
+
+ [ ![Avatar for moriyuya](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzQzNSwicHVyIjoiYmxvYl9pZCJ9fQ==--556087070a1b46319030efb93e44e6a905323bd0/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/mori_2019_2_17_%E6%AD%A3%E6%96%B9%E5%BD%A2%E5%8C%96_%E8%83%8C%E6%99%AF%E7%99%BD.png) moriyuya ](https://speakerdeck.com/moriyuya)
+
+ 4
+
+  580
+
+ [チームの鏡になるー自分の癖を知ると、チームのパターンが見えてくる@スクフェス仙台](https://speakerdeck.com/saorimurooka/timunojing-ninaruzi-fen-nopi-wozhi-ruto-timunopatangajian-etekuru-at-sukuhuesuxian-tai)
+
+ [ ![Avatar for saori murooka](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzYyNDIxLCJwdXIiOiJibG9iX2lkIn19--85d3c6d48dd36f79b90f84935c79bd3ba7d2fbc6/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/IMG_20160504_220257.jpg) saorimurooka ](https://speakerdeck.com/saorimurooka)
+
+ 0
+
+  120
+
+ [0526](https://speakerdeck.com/cbtlibrary/0526)
+
+ [ ![Avatar for cbtlibrary](https://secure.gravatar.com/avatar/8c6c4d64f6fd9e19226ef0b210433fd3?s=24) cbtlibrary ](https://speakerdeck.com/cbtlibrary)
+
+ 0
+
+  210
+
+ [2026年度春学期 統計学 第10回 分布の推測とは － 標本調査，度数分布と確率分布 (2026. 6. 4)](https://speakerdeck.com/akiraasano/2026nian-du-chun-xue-qi-tong-ji-xue-di-10hui-fen-bu-notui-ce-toha-biao-ben-diao-cha-du-shu-fen-bu-toque-lu-fen-bu-2026-6-4)
+
+ [ ![Avatar for Akira Asano](https://secure.gravatar.com/avatar/25552537c45d1bfe170b12b47963fd73?s=24) akiraasano ](https://speakerdeck.com/akiraasano)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+
+ 0
+
+  170
+
+ [Visionary Initiative: Future Intelligence — Laying the foundations for the future of science, intelligence, and society | Science Tokyo](https://speakerdeck.com/sciencetokyo/visionary-initiatives-future-intelligence-en)
+
+ [ ![Avatar for Science Tokyo （東京科学大学） /  Science Tokyo (Institute of Science Tokyo)](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTIxNzA0LCJwdXIiOiJibG9iX2lkIn19--be3c8fbc512e60f5a84dadbf0628eba79cf192e4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/400px.jpg) sciencetokyo ](https://speakerdeck.com/sciencetokyo)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+
+ 0
+
+  190
+
+ [
+
+ [2026前期火５] 論理学（京都大学文学部 前期 第4回）「 ならば（→）の導入と証明ネット」
+
+ ](https://speakerdeck.com/yatabe/2026qian-qi-huo-5-lun-li-xue-jing-du-da-xue-wen-xue-bu-qian-qi-di-4hui-naraba-nodao-ru-tozheng-ming-netuto)
+
+ [ ![Avatar for Shunsuke Yatabe](https://secure.gravatar.com/avatar/e631690252d8cf471756c107ace2a1e8?s=24) yatabe ](https://speakerdeck.com/yatabe)
+
+ 0
+
+  530
+
+ [輻射安全管理系統2.0暨輻防e++學園平台說明會](https://speakerdeck.com/aecrp/fu-she-an-quan-guan-li-xi-tong-2-dot-0ji-fu-fang-e-plus-plus-xue-yuan-ping-tai-shuo-ming-hui)
+
+ [ ![Avatar for NUSC](https://secure.gravatar.com/avatar/11513c2180d6656d79e44e07d2afcf50?s=24) aecrp ](https://speakerdeck.com/aecrp)
+
+ 0
+
+  1.9k
+
+ [新しいJavaを学んで・使っていこう！ / osd26do](https://speakerdeck.com/gishi_yama/osd26do)
+
+ [ ![Avatar for Hiroto YAMAKAWA](https://secure.gravatar.com/avatar/8c6c1f0c4c41d0640ade76bd71e9e475?s=24) gishi_yama ](https://speakerdeck.com/gishi_yama)
+
+ 0
+
+  200
+
+ [教育現場から見た Ruby on Rails](https://speakerdeck.com/yasslab/rails-materials-as-a-community-conference-gate)
+
+ [ ![Avatar for YassLab](https://secure.gravatar.com/avatar/58660723de21de826f67924c8498336c?s=24) yasslab ](https://speakerdeck.com/yasslab)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+
+ 0
+
+  230
+
 ## Featured
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [Sharpening the Axe: The Primacy of Toolmaking](https://speakerdeck.com/bcantrill/sharpening-the-axe-the-primacy-of-toolmaking)
+ [
 
- [ ![Avatar for Bryan Cantrill](https://secure.gravatar.com/avatar/a4ce661c8ef1d02eef322193edcd7380?s=24) bcantrill ](https://speakerdeck.com/bcantrill)
+ [RailsConf 2023] Rails as a piece of cake
 
- 46
+ ](https://speakerdeck.com/palkan/railsconf-2023-rails-as-a-piece-of-cake)
 
-  2.9k
+ [ ![Avatar for Vladimir Dementyev](https://secure.gravatar.com/avatar/52cc8a838bf44a589d2572833b2dd1b9?s=24) palkan ](https://speakerdeck.com/palkan)
 
- [sira's awesome portfolio website redesign presentation](https://speakerdeck.com/elsirapls/siras-awesome-portfolio-website-redesign-presentation)
+ 59
 
- [ ![Avatar for ElsiraPls](https://secure.gravatar.com/avatar/56c84e8d01c873962f3ddd937c6a8f5a?s=24) elsirapls ](https://speakerdeck.com/elsirapls)
+  6.9k
+
+ [Context Engineering - Making Every Token Count](https://speakerdeck.com/addyosmani/context-engineering-making-every-token-count)
+
+ [ ![Avatar for Addy Osmani](https://secure.gravatar.com/avatar/96270e4c3e5e9806cf7245475c00b275?s=24) addyosmani ](https://speakerdeck.com/addyosmani)
+
+ 9
+
+  1k
+
+ [Large-scale JavaScript Application Architecture](https://speakerdeck.com/addyosmani/large-scale-javascript-application-architecture)
+
+ [ ![Avatar for Addy Osmani](https://secure.gravatar.com/avatar/96270e4c3e5e9806cf7245475c00b275?s=24) addyosmani ](https://speakerdeck.com/addyosmani)
+
+ 515
+
+  110k
+
+ [Side Projects](https://speakerdeck.com/sachag/side-projects)
+
+ [ ![Avatar for Sacha Greif](https://secure.gravatar.com/avatar/027d1ebf66cc039a0bd3b55eeadbe75d?s=24) sachag ](https://speakerdeck.com/sachag)
+
+ 455
+
+  43k
+
+ [Building Experiences: Design Systems, User Experience, and Full Site Editing](https://speakerdeck.com/marktimemedia/building-experiences-design-systems-user-experience-and-full-site-editing)
+
+ [ ![Avatar for Michelle Schulp Hunt](https://secure.gravatar.com/avatar/e195ae45320d9202eaa01c9f1d31a416?s=24) marktimemedia ](https://speakerdeck.com/marktimemedia)
 
  0
 
-  320
+  570
 
- [Are puppies a ranking factor?](https://speakerdeck.com/jonoalderson/are-puppies-a-ranking-factor)
+ [How to train your dragon (web standard)](https://speakerdeck.com/notwaldorf/how-to-train-your-dragon-web-standard)
 
- [ ![Avatar for Jono Alderson](https://secure.gravatar.com/avatar/beed0f5ca54ae221655b9f30a1f6fe66?s=24) jonoalderson ](https://speakerdeck.com/jonoalderson)
+ [ ![Avatar for Monica Dinculescu](https://secure.gravatar.com/avatar/053e75a5b48b44d6dd0612795dfb326d?s=24) notwaldorf ](https://speakerdeck.com/notwaldorf)
 
- 1
+ 97
 
-  3.8k
+  6.7k
 
- [Jess Joyce - The Pitfalls of Following Frameworks](https://speakerdeck.com/techseoconnect/jess-joyce-the-pitfalls-of-following-frameworks)
+ [Odyssey Design](https://speakerdeck.com/rkendrick25/odyssey-design)
+
+ [ ![Avatar for Ryan Kendrick](https://secure.gravatar.com/avatar/83e53d75b8e98c1d1cfe4680c60bf74b?s=24) rkendrick25 ](https://speakerdeck.com/rkendrick25)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+
+ 2
+
+  750
+
+ [Principles of Awesome APIs and How to Build Them.](https://speakerdeck.com/keavy/principles-of-awesome-apis-and-how-to-build-them)
+
+ [ ![Avatar for Keavy McMinn](https://secure.gravatar.com/avatar/b47b288784fda77a94aeb234ca743c24?s=24) keavy ](https://speakerdeck.com/keavy)
+
+ 128
+
+  18k
+
+ [RailsConf & Balkan Ruby 2019: The Past, Present, and Future of Rails at GitHub](https://speakerdeck.com/eileencodes/railsconf-and-balkan-ruby-2019-the-past-present-and-future-of-rails-at-github)
+
+ [ ![Avatar for Eileen M. Uchitelle](https://secure.gravatar.com/avatar/c44e1f7e22c3f23cff7bc130871047ef?s=24) eileencodes ](https://speakerdeck.com/eileencodes)
+
+ 141
+
+  35k
+
+ [Refactoring Trust on Your Teams (GOTO; Chicago 2020)](https://speakerdeck.com/rmw/refactoring-trust-on-your-teams-goto-chicago-2020)
+
+ [ ![Avatar for Rebecca Miller-Webster](https://secure.gravatar.com/avatar/a9a491b0fcbe0fbce3d64063a37add99?s=24) rmw ](https://speakerdeck.com/rmw)
+
+ 35
+
+  3.7k
+
+ [Keith and Marios Guide to Fast Websites](https://speakerdeck.com/keithpitt/keith-and-marios-guide-to-fast-websites)
+
+ [ ![Avatar for Keith Pitt](https://secure.gravatar.com/avatar/e14f55d3f939977cecbf51b64ff6f861?s=24) keithpitt ](https://speakerdeck.com/keithpitt)
+
+ 413
+
+  23k
+
+ [Noah Learner - AI + Me: how we built a GSC Bulk Export data pipeline](https://speakerdeck.com/techseoconnect/noah-learner-ai-plus-me-how-we-built-a-gsc-bulk-export-data-pipeline)
 
  [ ![Avatar for Tech SEO Connect](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2NjU4LCJwdXIiOiJibG9iX2lkIn19--14f297c27d2190051dc109b5d472cf0297dd6c3e/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/40575_logo_social%20media%20profile%204.png) techseoconnect ](https://speakerdeck.com/techseoconnect)
 
  [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
- 1
-
-  330
-
- [The Myth of the Modular Monolith - Day 2 Keynote - Rails World 2024](https://speakerdeck.com/eileencodes/the-myth-of-the-modular-monolith-day-2-keynote-rails-world-2024)
-
- [ ![Avatar for Eileen M. Uchitelle](https://secure.gravatar.com/avatar/c44e1f7e22c3f23cff7bc130871047ef?s=24) eileencodes ](https://speakerdeck.com/eileencodes)
-
- 28
-
-  3.6k
-
- [HDC tutorial](https://speakerdeck.com/michielstock/hdc-tutorial)
-
- [ ![Avatar for Michiel Stock](https://secure.gravatar.com/avatar/4888c8378accd22acc2998ddf1414e7f?s=24) michielstock ](https://speakerdeck.com/michielstock)
-
- 2
-
-  780
-
- [Lessons Learnt from Crawling 1000+ Websites](https://speakerdeck.com/charlesmeaden/lessons-learnt-from-crawling-1000-plus-websites)
-
- [ ![Avatar for Charles Meaden](https://secure.gravatar.com/avatar/ce0e73fa718d3c8e32bf992761c1968e?s=24) charlesmeaden ](https://speakerdeck.com/charlesmeaden)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
-
- 1
-
-  1.5k
-
- [Everyday Curiosity](https://speakerdeck.com/cassininazir/everyday-curiosity)
-
- [ ![Avatar for Cassini Nazir](https://secure.gravatar.com/avatar/4631d364d59bd9d045acf046a0ce1cfe?s=24) cassininazir ](https://speakerdeck.com/cassininazir)
-
  0
 
-  270
-
- [Building a Scalable Design System with Sketch](https://speakerdeck.com/lauravandoore/building-a-scalable-design-system-with-sketch)
-
- [ ![Avatar for Laura Van Doore](https://secure.gravatar.com/avatar/1177e050db6bafe62885362edf6e3537?s=24) lauravandoore ](https://speakerdeck.com/lauravandoore)
-
- 463
-
-  34k
-
- [Making the Leap to Tech Lead](https://speakerdeck.com/cromwellryan/making-the-leap-to-tech-lead)
-
- [ ![Avatar for Ryan Cromwell](https://secure.gravatar.com/avatar/32de0bd2ba869609d26fd052a4622778?s=24) cromwellryan ](https://speakerdeck.com/cromwellryan)
-
- 135
-
-  10k
-
- [How STYLIGHT went responsive](https://speakerdeck.com/nonsquared/how-stylight-went-responsive)
-
- [ ![Avatar for nonsquared](https://secure.gravatar.com/avatar/f716e5f737fcfb03f2cf8d1a184f1dbe?s=24) nonsquared ](https://speakerdeck.com/nonsquared)
-
- 100
-
-  6.2k
-
- [Why You Should Never Use an ORM](https://speakerdeck.com/jnunemaker/why-you-should-never-use-an-orm)
-
- [ ![Avatar for John Nunemaker](https://secure.gravatar.com/avatar/e13c31390e0369fcd5972292ce0e7b92?s=24) jnunemaker ](https://speakerdeck.com/jnunemaker)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
-
- 61
-
-  9.9k
+  350
 
 ## Transcript
 

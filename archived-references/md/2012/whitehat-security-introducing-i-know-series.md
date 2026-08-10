@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/https://www.whitehatsec.co
 tags: [article, webseclist-reference, en, whitehat-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:53+00:00"
+  at: "2026-08-10T16:06:44+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/introducing-the-i-know-series/"
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/https://www.whitehatse
 published: ""
 publisher: WhiteHat Security
 publisher_english: ""
-raw_sha256: 0114f4db78f10a14069c83d25cd6c8a071a6ef41ae87e32d99eb5c57552bbf88
+raw_sha256: c759c30bc3df704b3bf742e052fb2789e50a78c838739852d05277015e3d6f91
 retrieved_from: "https://web.archive.org/web/20170705194307/https://www.whitehatsec.com/blog/introducing-the-i-know-series/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:53+00:00"
+retrieved_utc: "2026-08-10T16:06:44+00:00"
 slug: whitehat-security-introducing-i-know-series
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/introducing-the-i-know-series/>
 - Current location: <https://web.archive.org/web/20170705194307/https://www.whitehatsec.com/blog/introducing-the-i-know-series/>
-- Preserved from: https://web.archive.org/web/20170705194307/https://www.whitehatsec.com/blog/introducing-the-i-know-series/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20170705194307/https://www.whitehatsec.com/blog/introducing-the-i-know-series/ (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

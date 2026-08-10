@@ -5,9 +5,9 @@ resource: "https://www.tiraniddo.dev/2024/06/working-your-way-around-acl.html"
 tags: [article, webseclist-reference, en-GB, tiraniddo-dev]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:47:33+00:00"
+  at: "2026-08-10T16:03:41+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.tiraniddo.dev/2024/06/working-your-way-around-acl.html"
@@ -28,10 +28,10 @@ original_url: "https://www.tiraniddo.dev/2024/06/working-your-way-around-acl.htm
 published: ""
 publisher: tiraniddo.dev
 publisher_english: ""
-raw_sha256: b4c6cb5d32f726cd8788032bcc465fea4a42fa0ab962f74272d009c5de82a243
+raw_sha256: a15e2a2405ea4facf5aa893e46fb1742778d0ea5b05f9ec0980f95b91047af1d
 retrieved_from: "https://www.tiraniddo.dev/2024/06/working-your-way-around-acl.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:47:33+00:00"
+retrieved_utc: "2026-08-10T16:03:41+00:00"
 slug: tiraniddo-dev-working-your-way-around-acl
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.tiraniddo.dev/2024/06/working-your-way-around-acl.html>
-- Preserved from: https://www.tiraniddo.dev/2024/06/working-your-way-around-acl.html (live) on 2026-08-09
+- Preserved from: https://www.tiraniddo.dev/2024/06/working-your-way-around-acl.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

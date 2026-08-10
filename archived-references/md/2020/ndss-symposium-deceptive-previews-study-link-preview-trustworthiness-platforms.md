@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-study-
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:02+00:00"
+  at: "2026-08-10T15:33:42+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-study-of-the-link-preview-trustworthiness-in-social-platforms/"
     title: "Deceptive Previews: A Study of the Link Preview Trustworthiness in Social Platforms"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2020/02/24252-paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2020.md:84"
+  - "2020.md:79"
 commit: ""
-content_sha256: 781a207fb94d2b6d05ca08a81fe6f8b3ebf79a38c21c888b49752edffc0d3e42
+content_sha256: aa4d63603c65f8256b4d649d1a3570a688bbe3c4b62a28e8420940efc5b95ace
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-st
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 818a97907293de491bdce5f1918fd2bb4f2e37fb86fb076cdf3df49c2cf0efbd
+raw_sha256: f038948e3fef5456f9d0c101eb278f33413b938be8b69c74ba78c6c4e83fbe24
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-study-of-the-link-preview-trustworthiness-in-social-platforms/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:02+00:00"
+retrieved_utc: "2026-08-10T15:33:42+00:00"
 slug: ndss-symposium-deceptive-previews-study-link-preview-trustworthiness-platforms
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-study-of-the-link-preview-trustworthiness-in-social-platforms/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-study-of-the-link-preview-trustworthiness-in-social-platforms/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2020/02/24252-paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-study-of-the-link-preview-trustworthiness-in-social-platforms/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -70,20 +72,20 @@ We designed a set of experiments for 20 social media platforms including social 
 
 ## View More Papers
 
-### [ On Using Application-Layer Middlebox Protocols for Peeking Behind NAT... ](https://www.ndss-symposium.org/ndss-paper/on-using-application-layer-middlebox-protocols-for-peeking-behind-nat-gateways/)
+### [ SurfingAttack: Interactive Hidden Attack on Voice Assistants Using Ultrasonic... ](https://www.ndss-symposium.org/ndss-paper/surfingattack-interactive-hidden-attack-on-voice-assistants-using-ultrasonic-guided-waves/)
 
- Teemu Rytilahti (Ruhr University Bochum), Thorsten Holz (Ruhr University Bochum)
+ Qiben Yan (Michigan State University), Kehai Liu (Chinese Academy of Sciences), Qin Zhou (University of Nebraska-Lincoln), Hanqing Guo (Michigan State University), Ning Zhang (Washington University in St. Louis)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/on-using-application-layer-middlebox-protocols-for-peeking-behind-nat-gateways/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/surfingattack-interactive-hidden-attack-on-voice-assistants-using-ultrasonic-guided-waves/)
 
-### [ IMP4GT: IMPersonation Attacks in 4G NeTworks ](https://www.ndss-symposium.org/ndss-paper/imp4gt-impersonation-attacks-in-4g-networks/)
+### [ Overcoming the “Evil Twins” Attack: Lessons Learned from the... ](https://www.ndss-symposium.org/ndss-paper/6126/)
 
- David Rupprecht (Ruhr University Bochum), Katharina Kohls (Ruhr University Bochum), Thorsten Holz (Ruhr University Bochum), Christina Poepper (NYU Abu Dhabi)
+ Paul Forney, CISSP-ISSAP, CSSLP, CCSP, GREM
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/imp4gt-impersonation-attacks-in-4g-networks/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/6126/)
 
-### [ When Match Fields Do Not Need to Match: Buffered... ](https://www.ndss-symposium.org/ndss-paper/when-match-fields-do-not-need-to-match-buffered-packets-hijacking-in-sdn/)
+### [ µRAI: Securing Embedded Systems with Return Address Integrity ](https://www.ndss-symposium.org/ndss-paper/murai-securing-embedded-systems-with-return-address-integrity/)
 
- Jiahao Cao (Tsinghua University; George Mason University), Renjie Xie (Tsinghua University), Kun Sun (George Mason University), Qi Li (Tsinghua University), Guofei Gu (Texas A&M University), Mingwei Xu (Tsinghua University)
+ Naif Saleh Almakhdhub (Purdue University and King Saud University), Abraham A. Clements (Sandia National Laboratories), Saurabh Bagchi (Purdue University), Mathias Payer (EPFL)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/when-match-fields-do-not-need-to-match-buffered-packets-hijacking-in-sdn/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/murai-securing-embedded-systems-with-return-address-integrity/)

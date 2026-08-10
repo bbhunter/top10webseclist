@@ -5,9 +5,9 @@ resource: "https://lcamtuf.blogspot.com/2010/06/curse-of-inverse-strokejacking.h
 tags: [article, webseclist-reference, lcamtuf-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:22+00:00"
+  at: "2026-08-10T15:31:00+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://lcamtuf.blogspot.com/2010/06/curse-of-inverse-strokejacking.html"
@@ -28,10 +28,10 @@ original_url: "https://lcamtuf.blogspot.com/2010/06/curse-of-inverse-strokejacki
 published: ""
 publisher: lcamtuf.blogspot.com
 publisher_english: ""
-raw_sha256: e0b5b9305d69db5b3caef775acfccaef899f6f9c7ba80f8ce0726ad7c5699607
+raw_sha256: 31415d11c7c5906360e1c39d65e8816286ec22828fac6a07504007b352bed04b
 retrieved_from: "https://lcamtuf.blogspot.com/2010/06/curse-of-inverse-strokejacking.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:22+00:00"
+retrieved_utc: "2026-08-10T15:31:00+00:00"
 slug: lcamtuf-blogspot-com-curse-inverse-strokejacking
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://lcamtuf.blogspot.com/2010/06/curse-of-inverse-strokejacking.html>
-- Preserved from: https://lcamtuf.blogspot.com/2010/06/curse-of-inverse-strokejacking.html (live) on 2026-08-09
+- Preserved from: https://lcamtuf.blogspot.com/2010/06/curse-of-inverse-strokejacking.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

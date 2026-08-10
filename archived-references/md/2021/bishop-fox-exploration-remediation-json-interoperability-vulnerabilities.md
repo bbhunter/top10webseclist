@@ -5,9 +5,9 @@ resource: "https://bishopfox.com/blog/json-interoperability-vulnerabilities"
 tags: [article, webseclist-reference, en, bishop-fox]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:02:32+00:00"
+  at: "2026-08-10T15:03:06+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://bishopfox.com/blog/json-interoperability-vulnerabilities"
@@ -20,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2021.md:11"
 commit: ""
-content_sha256: 97c6351a488d549cc408e379e8389837ef1b6abb448190ebbb826939fb9b397a
+content_sha256: e518923c7b8c4135402ce1929134e2692f13d9d11696c27d6907a3fae9526ab9
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "https://bishopfox.com/blog/json-interoperability-vulnerabilities"
 published: ""
 publisher: Bishop Fox
 publisher_english: ""
-raw_sha256: 5736e063b340e918db85c8f5c56182249c36b414bef242cafd59cf801deac367
+raw_sha256: 611eaa06c83d2ab4b0658635f03ae4bd8e397ce34cbf66f43e6f625cf5270a01
 retrieved_from: "https://bishopfox.com/blog/json-interoperability-vulnerabilities"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:02:32+00:00"
+retrieved_utc: "2026-08-10T15:03:06+00:00"
 slug: bishop-fox-exploration-remediation-json-interoperability-vulnerabilities
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://bishopfox.com/blog/json-interoperability-vulnerabilities>
-- Preserved from: https://bishopfox.com/blog/json-interoperability-vulnerabilities (live) on 2026-08-09
+- Preserved from: https://bishopfox.com/blog/json-interoperability-vulnerabilities (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -830,8 +830,6 @@ Finally, when designing protocols or standards, restricting behavior to determin
 **UPDATE 02/26/21:** Thank you InfoSec Twitter for bringing another awesome resource on JSON parsing quirks to my attention: [http://seriot.ch/parsing_json.php](http://seriot.ch/parsing_json.php) (2018) by Nicolas Seriot ([@nst021](https://twitter.com/nst021)). Be sure to check it out for a deep-dive on JSON parsing. It also includes parser quirks for languages not covered in this article (e.g., Perl, Lua, Swift, and more).
 
 ## Appendix A - Version Numbers
-
- 
 
 - C/C++
 

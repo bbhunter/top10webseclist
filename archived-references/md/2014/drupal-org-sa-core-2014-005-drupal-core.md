@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/https://www.drupal.org/SA-
 tags: [article, webseclist-reference, en, drupal-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:09:53+00:00"
+  at: "2026-08-10T15:09:13+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/https://www.drupal.org/SA-CORE-2014-005"
@@ -22,7 +22,7 @@ canonical_url: "https://web.archive.org/web/20160317195528/https://www.drupal.or
 cited_by:
   - "2014.md:46"
 commit: ""
-content_sha256: 9ebe34eeb6fe79dba3d7f164e5bf2dbe927e12f4cbe1c80d0864fa9cb03ed498
+content_sha256: 12aab273b1f80d685ca966959e88904d42732ad94115d1b422cb7dfbc25b822f
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20160403035045/https://www.drupal.org
 published: ""
 publisher: drupal.org
 publisher_english: ""
-raw_sha256: 32eecd3b1c729012b6e0ece4b9ee58754757425933f8a9519d1c69e555426907
+raw_sha256: e06504d18a441f03e7a92191869b00d019fc82754e2d974bdb1535419db58b71
 retrieved_from: "https://web.archive.org/web/20160317195528/https://www.drupal.org/SA-CORE-2014-005"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:09:53+00:00"
+retrieved_utc: "2026-08-10T15:09:13+00:00"
 slug: drupal-org-sa-core-2014-005-drupal-core
 snapshot: 20160403035045
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/https://www.drupal.org/SA-CORE-2014-005>
 - Current location: <https://web.archive.org/web/20160317195528/https://www.drupal.org/SA-CORE-2014-005>
-- Preserved from: https://web.archive.org/web/20160317195528/https://www.drupal.org/SA-CORE-2014-005 (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160317195528/https://www.drupal.org/SA-CORE-2014-005 (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 

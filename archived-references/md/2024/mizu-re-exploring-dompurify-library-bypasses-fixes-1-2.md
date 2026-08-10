@@ -5,22 +5,20 @@ resource: "https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fix
 tags: [article, webseclist-reference, en, mizu-re]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:36:06+00:00"
+  at: "2026-08-10T15:33:07+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes"
     title: "Exploring the DOMPurify library: Bypasses and Fixes (1/2)"
-  - id: capture
-    resource: "https://web.archive.org/web/20241217192038/https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes"
 also_at: []
 authors: []
 canonical_url: ""
 cited_by:
   - "2024.md:9"
 commit: ""
-content_sha256: 8fc6027f98a6090940bcc9f2bda6c3753a36ce2951caa0135a43874bf9f934c6
+content_sha256: 799614efb2753c773272349f61d247ce17577427601b02de36bb28d34a62ce70
 depth: full
 depth_reason: default
 kind: article
@@ -33,9 +31,9 @@ publisher_english: ""
 raw_sha256: 330bfe4840982344a113610aeef3c30830f623008b384d465775363d1ced534a
 retrieved_from: "https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:36:06+00:00"
+retrieved_utc: "2026-08-10T15:33:07+00:00"
 slug: mizu-re-exploring-dompurify-library-bypasses-fixes-1-2
-snapshot: 20241217192038
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -47,8 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes>
-- Preserved from: https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes (live) on 2026-08-09
-- Capture timestamp: 20241217192038
+- Preserved from: https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -63,7 +60,7 @@ page going offline. To read the original, follow the link above.
 
 Exploring the DOMPurify library: Bypasses and Fixes (1/2) | mizu.re
 
- [ *keyboard_arrow_up* ]()
+  *keyboard_arrow_up*
 
 title: Exploring the DOMPurify library: Bypasses and Fixes (1/2)
 date: Nov 17, 2024
@@ -71,43 +68,43 @@ tags: [Article](https://mizu.re/tag/Article) [Web](https://mizu.re/tag/Web) [mXS
 
 # Exploring the DOMPurify library: Bypasses and Fixes (1/2)
 
-- [📜 Introduction]()
-- [🔍 How does client-side HTML sanitizer works?]()
-- [❓ Why are mutation XSS (mXSS) possible?]()
-- [▶️ DOMPurify 3.1.0 bypass (found by @IceFont 👑)]()
+- 📜 Introduction
+- 🔍 How does client-side HTML sanitizer works?
+- ❓ Why are mutation XSS (mXSS) possible?
+- ▶️ DOMPurify 3.1.0 bypass (found by @IceFont 👑)
 
-- [Node flattening]()
-- [HTML Parsing states]()
-- [Proof Of Concept]()
+- Node flattening
+- HTML Parsing states
+- Proof Of Concept
 
-- [⏩ DOMPurify 3.1.1 bypass]()
+- ⏩ DOMPurify 3.1.1 bypass
 
-- [DOMPurify 3.1.0 fix]()
-- [DOM Clobbering issue]()
-- [Proof Of Concept]()
+- DOMPurify 3.1.0 fix
+- DOM Clobbering issue
+- Proof Of Concept
 
-- [⏭️ DOMPurify 3.1.2 bypass]()
+- ⏭️ DOMPurify 3.1.2 bypass
 
-- [DOMPurify 3.1.1 fix]()
-- [Second-order DOM Clobbering]()
-- ["Elevator" HTML mutation]()
-- [Proof Of Concept]()
+- DOMPurify 3.1.1 fix
+- Second-order DOM Clobbering
+- "Elevator" HTML mutation
+- Proof Of Concept
 
-- [👨👩👧 DOMPurify Triple HTML Parsing bypass (found with @hash_kitten and @ryotkak 🔥)]()
+- 👨👩👧 DOMPurify Triple HTML Parsing bypass (found with @hash_kitten and @ryotkak 🔥)
 
-- [Form reordering and node flattening]()
-- [Proof Of Concept]()
+- Form reordering and node flattening
+- Proof Of Concept
 
-- [➡️ What's next?]()
+- ➡️ What's next?
 
-- [DOMPurify 3.1.2 fix]()
-- [Conclusion]()
+- DOMPurify 3.1.2 fix
+- Conclusion
 
-- [📚 Bibliography]()
+- 📚 Bibliography
 
 ## 📜 Introduction
 
-This article will be part of a two-article series focusin📜 Introductionel free to skip to "[DOMPurify 3.1.0 bypass (found by @IceFont 👑)]()".
+This article will be part of a two-article series focusin📜 Introductionel free to skip to "DOMPurify 3.1.0 bypass (found by @IceFont 👑)".
 
 ## 🔍 How does client-side HTML sanitizer works?
 
@@ -388,7 +385,7 @@ Even if the fix might look great at first glance, a small mistake has been made 
 
 **Fig. 28**: Example of __depth clobbering through the .parentNode property.
 
-Using this bug twice in a row is required for the fix, as 255 * 2 = 510, which doesn't reach the flattening limit. This can be done by using the nested <form> mutation described in the "[Why are mutation XSS (mXSS) possible?"]() section.
+Using this bug twice in a row is required for the fix, as 255 * 2 = 510, which doesn't reach the flattening limit. This can be done by using the nested <form> mutation described in the "Why are mutation XSS (mXSS) possible?" section.
 
 ### Proof Of Concept
 

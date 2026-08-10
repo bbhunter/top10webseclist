@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-cache
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:11+00:00"
+  at: "2026-08-10T15:33:56+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-caches-persistent-tracking-in-modern-browsers/"
     title: "Tales of Favicons and Caches: Persistent Tracking in Modern Browsers"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/ndss2021_1C-5_24202_paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2021.md:61"
+  - "2021.md:56"
 commit: ""
-content_sha256: 83e3415cdfb132d38d5c1021f42809080481d3b14de36973c6f2dff2eff3412f
+content_sha256: eba9075fe5baf30d00d357398ba9ced0f546143f13dc4895c264b521d1581c65
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-c
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 627e9b315f81ea1dced039b50e7327b490d142da38dc343580bfe254e34b4c8f
+raw_sha256: 5cf970f0bf53a895d043b0be1dac3fc971ce9bb4beb8af9f5080320455530126
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-caches-persistent-tracking-in-modern-browsers/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:11+00:00"
+retrieved_utc: "2026-08-10T15:33:56+00:00"
 slug: ndss-symposium-tales-favicons-caches-persistent-tracking-modern-browsers
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-caches-persistent-tracking-in-modern-browsers/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-caches-persistent-tracking-in-modern-browsers/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/ndss2021_1C-5_24202_paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-caches-persistent-tracking-in-modern-browsers/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -68,20 +70,20 @@ The privacy threats of online tracking have garnered considerable attention in r
 
 ## View More Papers
 
-### [ Demo #5: Securing Heavy Vehicle Diagnostics ](https://www.ndss-symposium.org/ndss-paper/auto-draft-105/)
+### [ Location Data and COVID-19 Contact Tracing: How Data Privacy... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-177/)
 
- Jeremy Daily, David Nnaji, and Ben Ettlinger (Colorado State University)
+ Callie Monroe, Faiza Tazi, Sanchari Das (university of Denver)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-105/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-177/)
 
-### [ Data Poisoning Attacks to Deep Learning Based Recommender Systems ](https://www.ndss-symposium.org/ndss-paper/data-poisoning-attacks-to-deep-learning-based-recommender-systems/)
+### [ Panel – Experiment Artifact Sharing: Challenges and Solutions ](https://www.ndss-symposium.org/ndss-paper/auto-draft-138/)
 
- Hai Huang (Tsinghua University), Jiaming Mu (Tsinghua University), Neil Zhenqiang Gong (Duke University), Qi Li (Tsinghua University), Bin Liu (West Virginia University), Mingwei Xu (Tsinghua University)
+ Moderator: Laura Tinnel (SRI International) Panelists: Clémentine Maurice (CNRS, IRIS); Martin Rosso (Eindhoven University of Technology); Eric Eide (U. Utah)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/data-poisoning-attacks-to-deep-learning-based-recommender-systems/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-138/)
 
-### [ Digital Technologies in Pandemic: The Good, the Bad and... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-168/)
+### [ icLibFuzzer: Isolated-context libFuzzer for Improving Fuzzer Comparability ](https://www.ndss-symposium.org/ndss-paper/auto-draft-155/)
 
- Moderator: Ahmad-Reza Sadeghi, TU Darmstadt, Germany Panelists: Mario Guglielmetti, Legal Officer, European Data Protection Supervisor* Jaap-Henk Hoepman, Radbaud University, The Netherlands Alexandra Dmitrienko, University of Würzburg, Germany, Farinaz Koushanfar, UCSD, USA *attending in his personal capacity
+ Yu-Chuan Liang, Hsu-Chun Hsiao (National Taiwan University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-168/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-155/)

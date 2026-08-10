@@ -5,9 +5,9 @@ resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com
 tags: [article, webseclist-reference, en, whitehat-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:49+00:00"
+  at: "2026-08-10T16:06:41+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/internet-explorer-xss-filter"
@@ -32,10 +32,10 @@ original_url: "http://web.archive.org/web/20160507023636/https://www.whitehatsec
 published: ""
 publisher: WhiteHat Security
 publisher_english: ""
-raw_sha256: ab04bda9effcea68058a7688c4780a48e8ba32e12ba4b33def64c7c696cd83d3
+raw_sha256: 2621f944d5dc3aa9787874cbc63d496df557fce04919ff66a79453ec7b67310a
 retrieved_from: "http://web.archive.org/web/20160809013531/https://www.whitehatsec.com/blog/internet-explorer-xss-filter/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:49+00:00"
+retrieved_utc: "2026-08-10T16:06:41+00:00"
 slug: whitehat-security-bypassing-internet-explorer-s-anti-cross-site-scripting-filter
 snapshot: 20160507023636
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/internet-explorer-xss-filter>
 - Current location: <http://web.archive.org/web/20160809013531/https://www.whitehatsec.com/blog/internet-explorer-xss-filter/>
-- Preserved from: http://web.archive.org/web/20160809013531/https://www.whitehatsec.com/blog/internet-explorer-xss-filter/ (live) on 2026-08-09
+- Preserved from: http://web.archive.org/web/20160809013531/https://www.whitehatsec.com/blog/internet-explorer-xss-filter/ (live) on 2026-08-10
 - Capture timestamp: 20160507023636
 - Licence: unknown
 

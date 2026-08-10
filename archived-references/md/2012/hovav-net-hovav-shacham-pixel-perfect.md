@@ -5,18 +5,19 @@ resource: "https://hovav.net/ucsd/papers/ms12.html"
 tags: [article, webseclist-reference, en, hovav-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:52:21+00:00"
+  at: "2026-08-10T15:27:23+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://hovav.net/ucsd/papers/ms12.html"
     title: "Hovav Shacham: Pixel Perfect"
-also_at: []
+also_at:
+  - "https://hovav.net/ucsd/dist/canvas.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2012.md:78"
+  - "2012.md:72"
 commit: ""
 content_sha256: de7ae6dd895f6634c23b272ca8ff3a7451e14c4a58bb0ff1d2e48c80000c711f
 depth: full
@@ -31,7 +32,7 @@ publisher_english: ""
 raw_sha256: d3d81b47515b04c7d6a67880df19d020195b07dcc0bd7ada1c735a780b384c29
 retrieved_from: "https://hovav.net/ucsd/papers/ms12.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:52:21+00:00"
+retrieved_utc: "2026-08-10T15:27:23+00:00"
 slug: hovav-net-hovav-shacham-pixel-perfect
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://hovav.net/ucsd/papers/ms12.html>
-- Preserved from: https://hovav.net/ucsd/papers/ms12.html (live) on 2026-08-08
+- Also published at: <https://hovav.net/ucsd/dist/canvas.pdf>
+- Preserved from: https://hovav.net/ucsd/papers/ms12.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

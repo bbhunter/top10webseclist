@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/concealing-payloads-in-url-credentia
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:49+00:00"
+  at: "2026-08-10T15:36:32+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/concealing-payloads-in-url-credentials"
@@ -17,9 +17,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2024.md:157"
+  - "2024.md:154"
 commit: ""
-content_sha256: 40bd277708a49356d598cbb04e31ad2e70ceeeba4b57fce145b0200f133d6666
+content_sha256: 8367bc267a5cfd184c540f3597300a0347cb0aac36200629705d53720cde4b9c
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/concealing-payloads-in-url-crede
 published: 2024-10-23
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 771e40557e684475cc6269989d7a7021aaa9a5905cdf0e466ee9f0304f2f2b97
+raw_sha256: 1c0a970fbe44260313907f2d55f16823fd157118c4a71bffb3571995cc1beb3a
 retrieved_from: "https://portswigger.net/research/concealing-payloads-in-url-credentials"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:49+00:00"
+retrieved_utc: "2026-08-10T15:36:32+00:00"
 slug: 2024-portswigger-research-concealing-payloads-url-credentials
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2024-10-23
 - Original: <https://portswigger.net/research/concealing-payloads-in-url-credentials>
-- Preserved from: https://portswigger.net/research/concealing-payloads-in-url-credentials (live) on 2026-08-08
+- Preserved from: https://portswigger.net/research/concealing-payloads-in-url-credentials (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

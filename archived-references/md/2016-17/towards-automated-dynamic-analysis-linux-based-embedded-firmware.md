@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-aut
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:35+00:00"
+  at: "2026-08-10T15:35:04+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:74"
+  - "2016-17.md:68"
 commit: ""
 content_sha256: 686f1fdf2ed0c9346f694fb73760cbff0580f63b6eeb4b280c8519d39d941693
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: a88844595fe037215474deb87860cf29ebd3b68d5b832d3b3089b24ef800f888
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:35+00:00"
+retrieved_utc: "2026-08-10T15:35:04+00:00"
 slug: towards-automated-dynamic-analysis-linux-based-embedded-firmware
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf (live) on 2026-08-08
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -71,6 +71,7 @@ y
 , Maverick Woo
 
 , and David Brumley
+
 
 Carnegie Mellon University
 {ddchen, pooh, dbrumley}@cmu.edu
@@ -188,10 +189,14 @@ lesystems instead of specic magic strings.During this process, we identied a num
 C. Emulation
 1)NVRAM:From a cursory inspection, at least 52.6% ofall extracted rmware images (4,992 out of 9,486) access ahardware non-volatile memory (NVRAM) using a shared librarynamedlibnvram.soto persist device-specic congurationparameters. For routers and other networking equipment,this includes settings shown on the web-based congurationinterface, which can include wireless network settings, networkadapter MAC addresses, and access credentials for the webinterface.Since this peripheral is typically abstracted as a key-value store, we developed a custom userspace library thatintercepts calls to NVRAM-related functions, such asconst
 char
+*
 nvram_get(const char
+*
 key)andint
 nvram_set(const char
+*
 key, char
+*
 val), whichare respectively used to get and set parameters from NVRAM.By modifying the system environment passed by the kernelto theinitbinary to include this library viaLD_PRELOAD,we ensure that all userspace processes inherit the sameenvironment, since they are child processes ofinit. Atemporary mountpoint on the lesystem is used as the root ofour key-value store, allowing us to reimplement this interfacein userspace without emulating hardware-specic peripherals.During testing, a common challenge we encountered wasthat our dataset of rmware images was compiled with differentC toolchains, some of which we do not have access to. Asshown in §V-A, this diversity was problematic for our sharedlibrary, since all dynamically-loaded ELF binaries must specifythe path to the dynamic loader for which they were compiled,as well as the lenames of dynamically-loaded dependencies,which were different depending on the system.
 6
 
@@ -199,6 +204,7 @@ val), whichare respectively used to get and set parameters from NVRAM.By modifyi
 
 Initially, we attempted to resolve this problem by compilingour NVRAM implementation statically. However, we soondiscovered that not only did these C runtime libraries useincompatible implementations of built-in C features such asthread-local storage, but they were also not built as position-independent code (PIC) to support static compilation. As aresult, we could neither build our NVRAM library staticallyagainst a single C runtime library, nor could we dynamicallybuild our shared library specically for each rmware image.Fortunately, ELF dynamic loaders for Linux systems supportlazy linking, which allows the resolution of external functionsymbols to be delayed until usage. Typically, the compilerimplements this by placing stub code within the ProcedureLinkage Table (PLT) that initializes the Global Offset Table(GOT) entry for a given imported function when the function
 is called for the rst time.Since the ELF loader uses a global symbol lookup scopeduring resolution [12], we were able to compile our NVRAMlibrary with the-nostdlibcompiler ag, delaying resolutionof external symbols until after thecalling processhad alreadyloaded the system C runtime library. Effectively, this allowedour shared library to appear as a static binary while dynamicallyutilizing functions made available by the calling process,including the standard C runtime library.Another challenge we encountered was the fact that ourNVRAM implementation was not useful without a set of system-specic default values. Unfortunately, these values are normallyembedded within the hardware NVRAM peripheral at thefactory, and having a hardware dependency for our systemwould preclude our goal of performing a large-scale analysis.Simply returningNULLor the empty string was also insufcient,as this would eventually cause the system to crash at startup orenter an erroneous state, e.g., by callingitoa()orstrcpy()on aNULLpointer, or inserting bad arguments to programinvocations such asifconfig. Initially, we attempted tohardcode a set of default NVRAM values into our library, butwe soon discovered that this was infeasible since an averagermware image can reference hundreds of NVRAM keys atstartup.After manually examining rmware images that failed toemulate, we realized that most images embedded a set of defaultNVRAM values into a few common locations, e.g., within a textle named/etc/nvram.default,/etc/nvram.conf,or/var/etc/nvram.default. Others would export asymbolrouter_defaultsorNvramsof typechar
+*
 []within built-in libraries such aslibnvram.soorlibshared.so. We were able to access these symbols bydeclaring them as weak references and checking if they wereinitialized, since we could not utilizelibdl.so(not typicallyloaded by the calling executable) or leave them as regularreferences (external data symbol resolution is not lazy).Unfortunately, our NVRAM emulation implementation doesnot work for all rmware images. This can be due to awide variety of reasons. For example, some images may callNVRAM-related functions that we do not emulate; othersmay expect different semantics from these emulated functionsin terms of parameter passing, return values, or caller/calleememory allocation; some others may implement NVRAM as acustom data structure on a MTD partition, which we currentlycannot initialize to a valid state. We believe failures in NVRAMemulation are likely to be a signicant contributor to the dropin emulation progress between columns two and three of Fig. 2.As an inconvenient truth, improving the emulation successrates or xing network conguration detection for rmwareimages from, e.g., Tomato by Shibby, is a manual process. Itrequires an analyst to manually examine system logs in orderto identify and classify emulation failures based on root cause,then make the changes that are necessary to support theseimages. Oftentimes, this may be a cyclic process, as there canbe multiple causes of emulation failure.
 2)Kernel:As mentioned in §II-B, we do not utilize theextracted kernel, but instead replace it with our own custompre-built kernels for the ARM and MIPS architectures, whichtogether account for 90.8% of our dataset.During the kernel compilation process, we implement ouranalysis within our custom Linux kernel module that is used toaid debugging and emulating the original system environment.By hooking 20 system calls using the kernel dynamic probes(kprobes) framework, we are able to intercept calls thatalter the execution environment. This includes operationssuch as assigning MAC addresses, creating a network bridge,rebooting the system, and executing a program, all of which aremonitored by our framework to properly congure the emulatednetworking environment. This functionality can also be used toprovide automatic conrmation of vulnerabilities, especially inconjunction with predened poison values (e.g.,0xDEADBEEF,0x41414141
 ) that should never appear in system calls.Since some rmware images expect certain lesystemsto be mounted at boot, e.g.,/devor/proc, we use therdinitkernel parameter to run a custom script that initializesthese lesystems beforeinitis executed. Additionally, weload thenandsimkernel module at startup, which emulatesthe memory technology device (MTD) partitions accessedvia/dev/mtdXthat are frequently used on these embeddeddevices.In addition, since our emulation of NVRAM is volatile, weprohibit the guest from rebooting the system and emulate thisbehavior by restarting theinitprocess. This kernel modulealso emulates vendor-specic or device-specic interfaces, suchas custom device nodes,procfsentries, or non-standardIOCTL
@@ -467,5 +473,4 @@ IndexVendorDownloadExtractedArch. IdentiedInitial EmulationNetwork InferredNetwo
 --- page 19 ---
 
 YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
-½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
+ $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u

@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://feross.org/html5-fu
 tags: [article, webseclist-reference, feross-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:10:30+00:00"
+  at: "2026-08-10T15:10:05+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://feross.org/html5-fullscreen-api-attack/"
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://feross.org/html
 published: ""
 publisher: feross.org
 publisher_english: ""
-raw_sha256: d8b386211377ba0abd6fa53acc4fe9b770e10e024a4a0da796d8bcfdc9e4d8e4
+raw_sha256: 5f233c5cbcf405b5b9a17f7443f64ab3adb6ab9c0cea80d64219bbc8ed7d5a5c
 retrieved_from: "https://web.archive.org/web/20170609063046/https://feross.org/html5-fullscreen-api-attack/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:10:30+00:00"
+retrieved_utc: "2026-08-10T15:10:05+00:00"
 slug: feross-org-using-html5-fullscreen-api-phishing-attacks-feross-org
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://feross.org/html5-fullscreen-api-attack/>
 - Current location: <https://web.archive.org/web/20170609063046/https://feross.org/html5-fullscreen-api-attack/>
-- Preserved from: https://web.archive.org/web/20170609063046/https://feross.org/html5-fullscreen-api-attack/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20170609063046/https://feross.org/html5-fullscreen-api-attack/ (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

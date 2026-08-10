@@ -5,9 +5,9 @@ resource: "https://blogs.securiteam.com/index.php/archives/746"
 tags: [article, webseclist-reference, en, fortra-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:07:52+00:00"
+  at: "2026-08-10T15:06:59+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blogs.securiteam.com/index.php/archives/746"
@@ -20,7 +20,7 @@ canonical_url: "https://www.fortra.com/beyond-security"
 cited_by:
   - "2006.md:71"
 commit: ""
-content_sha256: f5c2e2bb189a25d109121a7be213ca61fc98d4c0eccfe2dcea038770f9eebfb8
+content_sha256: 46289db446d1bffda875c064fef4511602ee58db4ff7939c4c68679630757f22
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "https://blogs.securiteam.com/index.php/archives/746"
 published: ""
 publisher: fortra.com
 publisher_english: ""
-raw_sha256: a454af530d0ed0a21c2f61704c10688c33021e734b7be705daf7331c4f92cee7
+raw_sha256: 3f5a71dd1a4c5c946550d144562da97c4e21ea8d9313d8a42159c11bab28fe77
 retrieved_from: "https://www.fortra.com/beyond-security"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:07:52+00:00"
+retrieved_utc: "2026-08-10T15:06:59+00:00"
 slug: fortra-com-beyond-security-products-3
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://blogs.securiteam.com/index.php/archives/746>
 - Current location: <https://www.fortra.com/beyond-security>
-- Preserved from: https://www.fortra.com/beyond-security (live) on 2026-08-09
+- Preserved from: https://www.fortra.com/beyond-security (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

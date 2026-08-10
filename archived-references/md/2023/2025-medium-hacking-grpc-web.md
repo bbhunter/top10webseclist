@@ -5,40 +5,40 @@ resource: "https://infosecwriteups.com/hacking-into-grpc-web-a54053757a45"
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T05:14:43+00:00"
+  at: "2026-08-10T15:29:05+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://infosecwriteups.com/hacking-into-grpc-web-a54053757a45"
     title: Hacking into gRPC-Web
     author: Amin Nasiri
-    last_modified: 2023-09-18
-  - id: capture
-    resource: "https://web.archive.org/web/20240113000047/https://infosecwriteups.com/hacking-into-grpc-web-a54053757a45"
+    last_modified: 2025-02-24
+  - id: canonical
+    resource: "https://infosecwriteups.com/hacking-into-grpc-web-a54053757a45?gi=f05c455d9e39"
 also_at: []
 authors:
   - Amin Nasiri
-canonical_url: ""
+canonical_url: "https://infosecwriteups.com/hacking-into-grpc-web-a54053757a45?gi=f05c455d9e39"
 cited_by:
   - "2023.md:60"
 commit: ""
-content_sha256: 56074e2d6f6d39b1830eb04380958b2dd24c65e8d32d1111d2e33e64697b50ac
+content_sha256: 0fe82c7faed0ff5a585b956f58341630089fe9733db4df0593f88ce46eace456
 depth: full
 depth_reason: default
 kind: article
 language: en
 licence: unknown
 original_url: "https://infosecwriteups.com/hacking-into-grpc-web-a54053757a45"
-published: 2023-09-18
+published: 2025-02-24
 publisher: Medium
 publisher_english: ""
-raw_sha256: 8bf2a18f8fb65c77b985e416d9cd3c11f1bafe3d07858ab161ddba5f5257a459
-retrieved_from: "https://infosecwriteups.com/hacking-into-grpc-web-a54053757a45"
-retrieved_kind: stored
-retrieved_utc: "2026-08-09T05:14:43+00:00"
+raw_sha256: c5386629e5a243fbe37ec26cfc43a49f3eabd0167f70e8c99881e0048e9ffaaa
+retrieved_from: "https://infosecwriteups.com/hacking-into-grpc-web-a54053757a45?gi=f05c455d9e39"
+retrieved_kind: live
+retrieved_utc: "2026-08-10T15:29:05+00:00"
 slug: 2025-medium-hacking-grpc-web
-snapshot: 20240113000047
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -48,10 +48,10 @@ translation_of: ""
 
 **Hacking into gRPC-Web** - Amin Nasiri, Medium.
 
-- Published: 2023-09-18
+- Published: 2025-02-24
 - Original: <https://infosecwriteups.com/hacking-into-grpc-web-a54053757a45>
-- Preserved from: https://infosecwriteups.com/hacking-into-grpc-web-a54053757a45 (stored) on 2026-08-09
-- Capture timestamp: 20240113000047
+- Current location: <https://infosecwriteups.com/hacking-into-grpc-web-a54053757a45?gi=f05c455d9e39>
+- Preserved from: https://infosecwriteups.com/hacking-into-grpc-web-a54053757a45?gi=f05c455d9e39 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -64,27 +64,33 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
+Grpc
+
+Grpc Web
+
+Bug Bounty
+
+Cybersecurity
+
+Bug Bounty Tips
+
 # Hacking into gRPC-Web
 
 ## Manipulating gRPC Web Payloads and Finding Hidden Services
 
-[![Amin Nasiri](https://miro.medium.com/v2/da:true/resize:fill:88:88/0*-RbIMKWHgAc0UNE1)](https://medium.com/@nxenon?source=post_page-----a54053757a45--------------------------------)[![InfoSec Write-ups](https://miro.medium.com/v2/resize:fill:48:48/1*SWJxYWGZzgmBP1D0Qg_3zQ.png)](https://infosecwriteups.com/?source=post_page-----a54053757a45--------------------------------)
+[![Amin Nasiri](https://miro.medium.com/v2/da:true/resize:fill:64:64/0*-RbIMKWHgAc0UNE1)](https://medium.com/@nxenon?source=post_page---byline--a54053757a45---------------------------------------)
 
-[Amin Nasiri](https://medium.com/@nxenon?source=post_page-----a54053757a45--------------------------------)
-
-Published in
-
-[InfoSec Write-ups](https://infosecwriteups.com/?source=post_page-----a54053757a45--------------------------------)
+[Amin Nasiri](https://medium.com/@nxenon?source=post_page---byline--a54053757a45---------------------------------------)
 
 --
 
-# How Did It Start?
+## How Did It Start?
 
 It started when I faced a web application using gRPC-Web and I could not manipulate the requests in Burp Suite. I searched a lot and there was no good or complete resource for pentesting gRPC-Web, then the research began and I could make a tool and a Burp Suite Extension for manipulating payloads. I also found a hidden gRPC-Web parameter SQLi vulnerability in a travel agency company and submitted the report to them. The vulnerability that I found was so low-hanging fruit but maybe other hunters would miss it because there was no comprehensive article about how to manipulate gRPC-Web payloads. I will also release a YouTube video for presenting gRPC-Web Pentesting.
 
 If you are new to gRPC-Web read my other article that describes the basics of this design. [What are gRPC & gRPC-Web?](https://medium.com/@nxenon/what-are-grpc-grpc-web-ecc9c3094c82)
 
-# What Was The Problem? Manipulating The Payloads!
+## What Was The Problem? Manipulating The Payloads!
 
 Here is one example payload after base64 decoding it:
 
@@ -102,7 +108,7 @@ Here is another payload from a real target:
 
 There are some tools to send gRPC or gRPC-Web Requests but there is a problem! You need the .proto file! If you are doing a black-box test, naturally you do not have the .proto file and the only thing you have is the payload and the Webpacked JavaScript files which the browser uses for sending gRPC-Web Requests. In the end, I will show a little about white-box testing with .proto files.
 
-# Explain The Base64 Decoded Payload
+## Explain The Base64 Decoded Payload
 
 After decoding the base64 encoding payload, and piping the output to xxd command, we can see hex data. The 5 first bytes of the payload is the entire message length in hex, in this example is (16¹ * 1 + 16⁰ * 6 = 22) which means the entire payload is 22 bytes long.
 
@@ -110,25 +116,28 @@ After decoding the base64 encoding payload, and piping the output to xxd command
 
 after removing the length prefix we can pipe the payload to [Protoscope](https://github.com/protocolbuffers/protoscope) tool and it outputs a human-readable version of the payload which is editable and is like JSON format but not exactly JSON. The message fields are separated with field numbers and not field names because protocol buffers work with field numbers and field names are specified in the .proto file and stub files.
 
-## Now Let’s Hack The gRPC-Web Easier…
+### Now Let’s Hack The gRPC-Web Easier…
 
-# gRPC Pentest Suite
+## gRPC Pentest Suite
 
 [gRPC Pentest Suite](https://github.com/nxenon/grpc-pentest-suite) has 2 tools + 1 Burp Suite extension for hacking gRPC-Web:
 
-## 1. gRPC Coder
+### 1. gRPC Coder
 
 This tool helps manipulate the payloads, removes the length prefix, and is useful also for examining responses from the server or doing response manipulation. you also need to have the Protoscope tool installed to make the gRPC Pentest Suite Complete and Available.
 
-## The gRPC Coder Burp Extension
+### The gRPC Coder Burp Extension
 
-This extension helps use gRPC Coder tool faster and with just one click for decoding and encoding payloads
+This extension helps use gRPC Coder tool faster and with just one click for decoding and encoding payloads. The available Content-Type:
 
-## 2. gRPC Scan
+- application/grpc-web-text
+- application/grpc-web+proto
+
+### 2. gRPC Scan
 
 This tool scans JavaScript Webpacked gRPC-Web related files and outputs gRPC endpoints, services, methods, messages, fields, and field types. It helps a lot to find hidden parameters or hidden endpoints and also in some situations you can make .proto file with the output of this tool.
 
-# gRPC Coder Usage
+## gRPC Coder Usage
 
 First, you have to pass the payload to the standard input of the [gRPC Coder](https://github.com/nxenon/grpc-pentest-suite/blob/main/grpc-coder.py) with — **decode **flag. Then pass the output of the tool to Protoscope and save the output to a file for editing.
 
@@ -166,7 +175,7 @@ AAAAADoSFkFtaW4gTmFzaXJpIFhlbm9uIEdSUEMYNjoePHNjcmlwdD5hbGVydChvcmlnaW4pPC9zY3Jp
 
 I am sure you found out that this is a time-consuming process and for manipulating every request, you have to spend tons of minutes to do that. That’s why I made the extension.
 
-# gRPC Coder Burp Suite Extension Usage:
+## gRPC Coder Burp Suite Extension Usage:
 
 I have made a video for using this [extension](https://github.com/nxenon/grpc-pentest-suite/blob/main/grpc-coder-burp-extension.py), in the video I exploit a lab sample that has client side XSS protection:
 
@@ -174,7 +183,7 @@ I have made a video for using this [extension](https://github.com/nxenon/grpc-pe
 
 You can easily encode and decode payloads with the extension. See the [gRPC Pentest Suite](https://github.com/nxenon/grpc-pentest-suite) to install the extension in Burp.
 
-# gRPC Scan Usage:
+## gRPC Scan Usage:
 
 When you are working with a web application that is using gRPC-Web, maybe you see a main.js or somethingRandom.js file that has gRPC-Web related files inside itself.
 
@@ -186,6 +195,16 @@ Note: For finding the correct JS file which has gRPC-Web data, you can search on
 *Logger++ Filter for Finding gRPC-Web JavaScript File*
 
 After finding the right JS file, download the file and scan it with gRPC Scan.
+
+## Get Amin Nasiri ’s stories in your inbox
+
+Join Medium for free to get updates from this writer.
+
+Subscribe
+
+Subscribe
+
+Remember me for faster sign in
 
 The example for Hidden-SQLi [gRPC lab](https://github.com/nxenon/grpc-lab) after web packing client.js file is this:
 
@@ -235,7 +254,7 @@ The complete video of exploiting hidden SQLi and XSS is here:
 
 *Hacking into gRPC-Web YouTube video*
 
-# Test with .proto File
+## Test with .proto File
 
 If you have .proto file you can use [grpcui](https://github.com/fullstorydev/grpcui) tool but you have to make .**protoset **file and then use it for sending gRPC-Web requests:
 
@@ -255,6 +274,6 @@ Open the grpcui generated URL and send your desired requests:
 
 *grpcui*
 
-## About Me
+### About Me
 
 I’m Mohammad Amin Nasiri (Xenon), a web application penetration tester with 2+ years of hands-on security assessment and auditing experience, trying to expand my hacking skills with my programming knowledge. Find me on [Github](https://github.com/nxenon), [LinkedIn,](https://www.linkedin.com/in/amin-nasiri54/) and [Twitter](https://twitter.com/0xnxenon).

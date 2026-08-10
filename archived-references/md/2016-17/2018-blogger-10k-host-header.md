@@ -5,9 +5,9 @@ resource: "https://www.ezequiel.tech/p/10k-host-header.html"
 tags: [article, webseclist-reference, en, blogger]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:10:22+00:00"
+  at: "2026-08-10T15:09:48+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ezequiel.tech/p/10k-host-header.html"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2016-17.md:35"
 commit: ""
-content_sha256: f81261509a00dc807473ec7eb9c64f968cedaf6e8d422923c8d48df2f6e61b09
+content_sha256: 09ce06c389cba1faef416299058c87c6d4852b31e34a4aba040d56f286ff8a84
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://www.ezequiel.tech/p/10k-host-header.html"
 published: 2018-12-11
 publisher: Blogger
 publisher_english: ""
-raw_sha256: f636aeb71b07d9e43fce3f7c3aca1e2a446e887a82eb52332aed9ffcbeeb948c
+raw_sha256: d1e21953c5d3b5262ffee246d568f363e44c5d540875a222a420c0bb87ea7086
 retrieved_from: "https://www.ezequiel.tech/p/10k-host-header.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:10:22+00:00"
+retrieved_utc: "2026-08-10T15:09:48+00:00"
 slug: 2018-blogger-10k-host-header
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2018-12-11
 - Original: <https://www.ezequiel.tech/p/10k-host-header.html>
-- Preserved from: https://www.ezequiel.tech/p/10k-host-header.html (live) on 2026-08-09
+- Preserved from: https://www.ezequiel.tech/p/10k-host-header.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20071124032809/http://ha.ckers.org/blog/2
 tags: [article, webseclist-reference, ha-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:24:11+00:00"
+  at: "2026-08-10T15:17:44+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20071124032809/http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/"
@@ -20,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2007.md:63"
 commit: ""
-content_sha256: 669eac327926b40599b284eac4c5b9def58edc90745e1d5dff573276084d1181
+content_sha256: b36ad81c256223b40f3823d0e7808b9a23cdfe1d14eb352e848e61f50def6709
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "https://web.archive.org/web/20071124032809/http://ha.ckers.org/bl
 published: ""
 publisher: ha.ckers.org
 publisher_english: ""
-raw_sha256: 3b735691a0fc0dd62c7603c095f6e71da8d9074fcd94ca5f5cc0c3d643a22890
+raw_sha256: 2d5cfc3ecdcd35a5c4526dc71639ea47a63892174b714b7e5e7ff74a009f1207
 retrieved_from: "https://web.archive.org/web/20071124032809/http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:24:11+00:00"
+retrieved_utc: "2026-08-10T15:17:44+00:00"
 slug: ha-ckers-org-ha-ckers-org-web-application-security-lab-archive-turn-any-popup
 snapshot: 20071124032809
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20071124032809/http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/>
-- Preserved from: https://web.archive.org/web/20071124032809/http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20071124032809/http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/ (live) on 2026-08-10
 - Capture timestamp: 20071124032809
 - Licence: unknown
 

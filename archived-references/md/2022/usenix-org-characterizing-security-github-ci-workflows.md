@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/koish
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:38+00:00"
+  at: "2026-08-10T16:05:05+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/koishybayev"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2022.md:83"
+  - "2022.md:81"
 commit: ""
 content_sha256: a4960bd8143e648991d909e6e7889f2f40279a4cfa4ad2b59140f60bea04c556
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity22/presentation/k
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: cae77a153f3406c293f1b7e3ddef9fb397313ea51c9106ef595f244eaeda0575
+raw_sha256: e46d4bfe49d49818e4d9aa8955cb870b5e9275b84df081a4b6ed6f1dfb262276
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity22/presentation/koishybayev"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:38+00:00"
+retrieved_utc: "2026-08-10T16:05:05+00:00"
 slug: usenix-org-characterizing-security-github-ci-workflows
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity22/presentation/koishybayev>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/koishybayev (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/koishybayev (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

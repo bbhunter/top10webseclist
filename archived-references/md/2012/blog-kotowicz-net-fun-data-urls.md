@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2
 tags: [article, webseclist-reference, blog-kotowicz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:05:29+00:00"
+  at: "2026-08-10T15:04:51+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/04/fun-with-data-urls.html"
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.n
 published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
-raw_sha256: 2da5be5bcb59e72e6e28e0a616ce977a2cba6547963ddc0662b4d6ca71566b50
+raw_sha256: ed539c37b3d3b1771cf0fee74498f7a2d9dbd534fb5d8629a02e12ed7c48e680
 retrieved_from: "https://web.archive.org/web/20170913133339/http://blog.kotowicz.net/2012/04/fun-with-data-urls.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:05:29+00:00"
+retrieved_utc: "2026-08-10T15:04:51+00:00"
 slug: blog-kotowicz-net-fun-data-urls
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/04/fun-with-data-urls.html>
 - Current location: <https://web.archive.org/web/20170913133339/http://blog.kotowicz.net/2012/04/fun-with-data-urls.html>
-- Preserved from: https://web.archive.org/web/20170913133339/http://blog.kotowicz.net/2012/04/fun-with-data-urls.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20170913133339/http://blog.kotowicz.net/2012/04/fun-with-data-urls.html (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

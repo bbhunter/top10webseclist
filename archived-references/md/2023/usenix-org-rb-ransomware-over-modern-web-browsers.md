@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/oz"
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:57+00:00"
+  at: "2026-08-10T16:05:20+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/oz"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2023.md:91"
+  - "2023.md:86"
 commit: ""
 content_sha256: 0db831f964965088cfc9a18d67f12b3a87a62c070788f4daa947bdaf6d921513
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity23/presentation/o
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: fec8d1055fb3db159e2063cf684be030bdc2558788b65639ab64c6a0db7c68dd
+raw_sha256: 54640702e4fc91d25e621522387588d11203978ae135fd25f864461b3d89fd69
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity23/presentation/oz"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:57+00:00"
+retrieved_utc: "2026-08-10T16:05:20+00:00"
 slug: usenix-org-rb-ransomware-over-modern-web-browsers
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity23/presentation/oz>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity23/presentation/oz (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity23/presentation/oz (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

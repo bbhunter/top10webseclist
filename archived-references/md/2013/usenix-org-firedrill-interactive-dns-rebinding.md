@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/woot13/workshop-program/presentatio
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:19+00:00"
+  at: "2026-08-10T16:05:46+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/woot13/workshop-program/presentation/dai"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2013.md:68"
+  - "2013.md:63"
 commit: ""
-content_sha256: a906950245ee9b2dfff6e8ef443c9d9bfbffb6b0e821de62b330980bfadb1c6e
+content_sha256: 6940dd06b6e1c2ab0d4ca7c3a03883ae7392f6233842dcd6ccc15d8bbfd79ad0
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/woot13/workshop-program/present
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 144106d52037a3406f67ef958d75c39c22fa5bcc1742154eb9105a0afc5169fa
+raw_sha256: 8c0dcecdda376388b558c46a05fe8ee92dfdef8bd2cb270cef66002e678c57e0
 retrieved_from: "https://www.usenix.org/conference/woot13/workshop-program/presentation/dai"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:19+00:00"
+retrieved_utc: "2026-08-10T16:05:46+00:00"
 slug: usenix-org-firedrill-interactive-dns-rebinding
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/woot13/workshop-program/presentation/dai>
-- Preserved from: https://www.usenix.org/conference/woot13/workshop-program/presentation/dai (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/woot13/workshop-program/presentation/dai (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

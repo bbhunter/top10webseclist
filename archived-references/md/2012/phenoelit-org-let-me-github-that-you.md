@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://phenoelit.org/blog/
 tags: [article, webseclist-reference, en, phenoelit-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:37:56+00:00"
+  at: "2026-08-10T15:36:03+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://phenoelit.org/blog/archives/2012/12/21/let_me_github_that_for_you/index.html"
@@ -22,7 +22,7 @@ canonical_url: "https://web.archive.org/web/20170829190206/http://www.phenoelit.
 cited_by:
   - "2012.md:60"
 commit: ""
-content_sha256: da8e43050abb170e96f2ce06fce87908c02aa66aee4788ed9c671cc07067875b
+content_sha256: 8f5c81417d992aac73bd8ce54e67cd74ce0a5f0122d983f69af6070a37cbd1a4
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://phenoelit.org/b
 published: ""
 publisher: phenoelit.org
 publisher_english: ""
-raw_sha256: 214098934b38ebbe4acb1709242c2298c72ec959d4fb1bc6cf0e69484deb209a
+raw_sha256: d561e683d12f6acd55f592349d1a8d3dd6481911b00844a72dcb9fdd95c40e8d
 retrieved_from: "https://web.archive.org/web/20170829190206/http://www.phenoelit.org/blog/archives/2012/12/21/let_me_github_that_for_you/index.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:37:56+00:00"
+retrieved_utc: "2026-08-10T15:36:03+00:00"
 slug: phenoelit-org-let-me-github-that-you
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://phenoelit.org/blog/archives/2012/12/21/let_me_github_that_for_you/index.html>
 - Current location: <https://web.archive.org/web/20170829190206/http://www.phenoelit.org/blog/archives/2012/12/21/let_me_github_that_for_you/index.html>
-- Preserved from: https://web.archive.org/web/20170829190206/http://www.phenoelit.org/blog/archives/2012/12/21/let_me_github_that_for_you/index.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20170829190206/http://www.phenoelit.org/blog/archives/2012/12/21/let_me_github_that_for_you/index.html (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

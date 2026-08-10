@@ -5,9 +5,9 @@ resource: "http://web.archive.org/web/20160507023636/http://www.agarri.fr/blog/"
 tags: [article, webseclist-reference, en, agarri-fr]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:00:32+00:00"
+  at: "2026-08-10T15:01:21+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://www.agarri.fr/blog/"
@@ -16,13 +16,14 @@ sources:
     resource: "http://web.archive.org/web/20160425033628/http://www.agarri.fr/blog/"
   - id: capture
     resource: "https://web.archive.org/web/20160507023636/http://www.agarri.fr/blog/"
-also_at: []
+also_at:
+  - "http://www.agarri.fr/docs/ZeroNights_2012-Nicolas_Gregoire-XML_Hacking.pdf"
 authors: []
 canonical_url: "http://web.archive.org/web/20160425033628/http://www.agarri.fr/blog/"
 cited_by:
   - "2013.md:33"
 commit: ""
-content_sha256: 10aca252262f44c35de63608b8ac3a73898c72a32c17a13bc1ec2a2fc3ca5520
+content_sha256: 4ac851cc8b5d7a416750656c0e44d500ef1009243635a444034cbe4d9cb26ede
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +33,10 @@ original_url: "http://web.archive.org/web/20160507023636/http://www.agarri.fr/bl
 published: ""
 publisher: agarri.fr
 publisher_english: ""
-raw_sha256: 40edc8ac6e25d33da5a8727d8d149321a4b87e124fea57db09b864b39811edd7
+raw_sha256: 6e087ec94d154e724db9288e70906687143b722b7e17ff74cb1167ca1e802c18
 retrieved_from: "http://web.archive.org/web/20160425033628/http://www.agarri.fr/blog/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:00:32+00:00"
+retrieved_utc: "2026-08-10T15:01:21+00:00"
 slug: agarri-fr-agarri-securite-informatique-offensive
 snapshot: 20160507023636
 title_english: ""
@@ -50,7 +51,8 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://www.agarri.fr/blog/>
 - Current location: <http://web.archive.org/web/20160425033628/http://www.agarri.fr/blog/>
-- Preserved from: http://web.archive.org/web/20160425033628/http://www.agarri.fr/blog/ (live) on 2026-08-09
+- Also published at: <http://www.agarri.fr/docs/ZeroNights_2012-Nicolas_Gregoire-XML_Hacking.pdf>
+- Preserved from: http://web.archive.org/web/20160425033628/http://www.agarri.fr/blog/ (live) on 2026-08-10
 - Capture timestamp: 20160507023636
 - Licence: unknown
 

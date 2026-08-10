@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://erpscan.com/press-c
 tags: [article, webseclist-reference, en-US, erpscan-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:10:17+00:00"
+  at: "2026-08-10T15:09:39+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/"
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://erpscan.com/pre
 published: ""
 publisher: erpscan.com
 publisher_english: ""
-raw_sha256: c93bcaf0d8e7dd6321b6b0d1125dac35b3a6430ec3276a79792fd31b3fdadac5
+raw_sha256: 15c643e7244fffb875959fe5d267ad48c39c8aeb21f263c8890a80e80263afdc
 retrieved_from: "https://web.archive.org/web/20150110195735/http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:10:17+00:00"
+retrieved_utc: "2026-08-10T15:09:39+00:00"
 slug: erpscan-com-smbrelay-bible-7-ssrf-java-windows-love
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/>
 - Current location: <https://web.archive.org/web/20150110195735/http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/>
-- Preserved from: https://web.archive.org/web/20150110195735/http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20150110195735/http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/ (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

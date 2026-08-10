@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/https://medium.com/@da/nee
 tags: [article, webseclist-reference, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:34:51+00:00"
+  at: "2026-08-10T15:32:10+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/https://medium.com/@da/need-a-last-minute-flight-45af88ec8df3"
@@ -36,10 +36,10 @@ original_url: "https://web.archive.org/web/20160403035045/https://medium.com/@da
 published: 2014-12-16
 publisher: Medium
 publisher_english: ""
-raw_sha256: 98263fa25702d5566667fc7f559ccd5fa1a092f07d6e5740d372f03670594688
+raw_sha256: c669f23c552a1d105dd9b4492e43398760c8e549fa5d2fa742d07aeed4bd5a74
 retrieved_from: "https://web.archive.org/web/20160404093923/https://medium.com/@da/need-a-last-minute-flight-45af88ec8df3"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:34:51+00:00"
+retrieved_utc: "2026-08-10T15:32:10+00:00"
 slug: 2014-medium-need-last-minute-flight
 snapshot: 20160403035045
 title_english: ""
@@ -54,7 +54,7 @@ translation_of: ""
 - Published: 2014-12-16
 - Original: <https://web.archive.org/web/20160403035045/https://medium.com/@da/need-a-last-minute-flight-45af88ec8df3>
 - Current location: <https://web.archive.org/web/20160404093923/https://medium.com/@da/need-a-last-minute-flight-45af88ec8df3>
-- Preserved from: https://web.archive.org/web/20160404093923/https://medium.com/@da/need-a-last-minute-flight-45af88ec8df3 (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160404093923/https://medium.com/@da/need-a-last-minute-flight-45af88ec8df3 (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 

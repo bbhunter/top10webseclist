@@ -5,15 +5,13 @@ resource: "https://gursevkalra.blogspot.com/2011/11/captcha-hax-with-tessercap.h
 tags: [article, webseclist-reference, en, gursevkalra-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:14:17+00:00"
+  at: "2026-08-10T15:10:47+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://gursevkalra.blogspot.com/2011/11/captcha-hax-with-tessercap.html"
     title: CAPTCHA Hax With TesserCap
-  - id: capture
-    resource: "https://web.archive.org/web/20121101144941/https://gursevkalra.blogspot.com/2011/11/captcha-hax-with-tessercap.html"
 also_at: []
 authors: []
 canonical_url: ""
@@ -30,12 +28,12 @@ original_url: "https://gursevkalra.blogspot.com/2011/11/captcha-hax-with-tesserc
 published: ""
 publisher: gursevkalra.blogspot.com
 publisher_english: ""
-raw_sha256: 7d633dc86617006a85a40c436375c884cb774b184028e55cdb965b19e61582f7
+raw_sha256: 0dfdb1b8a6dfaa3b729ed37ed9a07299cf8bf90ba8ba9e8afbb47e6c46ae7694
 retrieved_from: "https://gursevkalra.blogspot.com/2011/11/captcha-hax-with-tessercap.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:14:17+00:00"
+retrieved_utc: "2026-08-10T15:10:47+00:00"
 slug: gursevkalra-blogspot-com-random-security-captcha-hax-tessercap
-snapshot: 20121101144941
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -47,8 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://gursevkalra.blogspot.com/2011/11/captcha-hax-with-tessercap.html>
-- Preserved from: https://gursevkalra.blogspot.com/2011/11/captcha-hax-with-tessercap.html (live) on 2026-08-09
-- Capture timestamp: 20121101144941
+- Preserved from: https://gursevkalra.blogspot.com/2011/11/captcha-hax-with-tessercap.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

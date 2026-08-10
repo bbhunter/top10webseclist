@@ -2,12 +2,12 @@
 type: Article
 title: "Óâåäîìëåíèå î áåçîïàñíîñòè: Code Execution via XSS in Internet Explorer"
 resource: "https://web.archive.org/web/20090207124101/http://securityvulns.ru/Udocument911.html"
-tags: [article, webseclist-reference, ru, securityvulns-ru]
+tags: [article, webseclist-reference, securityvulns-ru]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:23+00:00"
+  at: "2026-08-10T15:58:46+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20090207124101/http://securityvulns.ru/Udocument911.html"
@@ -26,16 +26,16 @@ content_sha256: 60d104b4521981caa84ad1e3447bed97dce51d9a2a974288550a7ecafe369156
 depth: full
 depth_reason: default
 kind: article
-language: ru
+language: ""
 licence: unknown
 original_url: "https://web.archive.org/web/20090207124101/http://securityvulns.ru/Udocument911.html"
 published: ""
 publisher: securityvulns.ru
 publisher_english: ""
-raw_sha256: 8759a2a8f693d78eecc4e62245daf42a332efff3b72a95cf78770b375aa52e1f
+raw_sha256: 093f758e629595dfc1b24471ec6cef4606da94df538632a35eb204d8927e7543
 retrieved_from: "https://web.archive.org/web/20090207124101/http://securityvulns.ru/Udocument911.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:23+00:00"
+retrieved_utc: "2026-08-10T15:58:46+00:00"
 slug: 3proxy-ru-security-nnov-ru-securityvulns-ru-redirects
 snapshot: 20090207124101
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20090207124101/http://securityvulns.ru/Udocument911.html>
-- Preserved from: https://web.archive.org/web/20090207124101/http://securityvulns.ru/Udocument911.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20090207124101/http://securityvulns.ru/Udocument911.html (live) on 2026-08-10
 - Capture timestamp: 20090207124101
 - Licence: unknown
 

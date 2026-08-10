@@ -5,9 +5,9 @@ resource: "https://blog.shoebpatel.com/2021/01/23/The-Secret-Parameter-LFR-and-P
 tags: [article, webseclist-reference, en, captainfreak]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:06:47+00:00"
+  at: "2026-08-10T15:06:12+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blog.shoebpatel.com/2021/01/23/The-Secret-Parameter-LFR-and-Potential-RCE-in-NodeJS-Apps/"
@@ -28,10 +28,10 @@ original_url: "https://blog.shoebpatel.com/2021/01/23/The-Secret-Parameter-LFR-a
 published: ""
 publisher: CaptainFreak
 publisher_english: ""
-raw_sha256: ed1238f8d5bb30000f0a9fac46046413c55a6299e7522311e65b2b0eafad2ce4
+raw_sha256: bf86665863a51907fef0c1e0502ece3595e6d5062609d4e4e3e8931f28b3ad11
 retrieved_from: "https://blog.shoebpatel.com/2021/01/23/The-Secret-Parameter-LFR-and-Potential-RCE-in-NodeJS-Apps/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:06:47+00:00"
+retrieved_utc: "2026-08-10T15:06:12+00:00"
 slug: captainfreak-secret-parameter-lfr-potential-rce-nodejs-apps
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://blog.shoebpatel.com/2021/01/23/The-Secret-Parameter-LFR-and-Potential-RCE-in-NodeJS-Apps/>
-- Preserved from: https://blog.shoebpatel.com/2021/01/23/The-Secret-Parameter-LFR-and-Potential-RCE-in-NodeJS-Apps/ (live) on 2026-08-09
+- Preserved from: https://blog.shoebpatel.com/2021/01/23/The-Secret-Parameter-LFR-and-Potential-RCE-in-NodeJS-Apps/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:51:08+00:00"
+  at: "2026-08-10T15:07:45+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:102"
+  - "2016-17.md:96"
 commit: ""
 content_sha256: 8e327e02a89c62ea9353b3ed2dc420f42cf768a286f182e333b6815024b2236e
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: ad81042304892fe70dccf189ca8c13c14d68054fe1e2effbe0fb6f65cfc575ce
 retrieved_from: "http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:51:08+00:00"
+retrieved_utc: "2026-08-10T15:07:45+00:00"
 slug: hvlearn-automated-black-box-analysis-hostname-verification-ssl-implementations
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf>
-- Preserved from: http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf (live) on 2026-08-08
+- Preserved from: http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -1442,6 +1442,7 @@ alphabet sizes (with Wp-method depth=1 and equivalence query optimization).
 TABLE IV
 HVL
 EARN PERFORMANCE FOR COMMON NAME
+*
 .
 A A A
 .
@@ -1601,6 +1602,7 @@ CPython
 (d) cURL
 (e) Intersection
 Fig. 7. SSL/TLS implementations' DFA and intersection DFA with CN/DNS:
+*
 .a.a
 and alphabet:
 f
@@ -3072,5 +3074,4 @@ n
 --- page 31 ---
 
 YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
-½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
+ $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u

@@ -5,9 +5,9 @@ resource: "http://blog.mindedsecurity.com/2010/10/dns-rebinding-on-java-applets.
 tags: [article, webseclist-reference, blog-mindedsecurity-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:06:02+00:00"
+  at: "2026-08-10T15:05:17+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.mindedsecurity.com/2010/10/dns-rebinding-on-java-applets.html"
@@ -30,10 +30,10 @@ original_url: "http://blog.mindedsecurity.com/2010/10/dns-rebinding-on-java-appl
 published: ""
 publisher: blog.mindedsecurity.com
 publisher_english: ""
-raw_sha256: bc4df5cda4358ead3de16fb0f2baf8ef41a17b1e0c80cb2bdc7c77f798a162b7
+raw_sha256: 83159b2d1f1ed0932e033cbd4939e5fa2c4c17a1435c49dbef2260577e3719a0
 retrieved_from: "https://blog.mindedsecurity.com/2010/10/dns-rebinding-on-java-applets.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:06:02+00:00"
+retrieved_utc: "2026-08-10T15:05:17+00:00"
 slug: blog-mindedsecurity-com-dns-rebinding-java-applets
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://blog.mindedsecurity.com/2010/10/dns-rebinding-on-java-applets.html>
 - Current location: <https://blog.mindedsecurity.com/2010/10/dns-rebinding-on-java-applets.html>
-- Preserved from: https://blog.mindedsecurity.com/2010/10/dns-rebinding-on-java-applets.html (live) on 2026-08-09
+- Preserved from: https://blog.mindedsecurity.com/2010/10/dns-rebinding-on-java-applets.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

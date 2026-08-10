@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity16/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:04+00:00"
+  at: "2026-08-10T16:04:34+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/kohlbrenner"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:71"
+  - "2016-17.md:65"
 commit: ""
 content_sha256: 4f0cb047800621faa5b02384bae72b29b1a78a7aeb42606cc321f0f8b991a643
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity16/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 1136d6b5879f17e9d5b1c32fbc2284ca589b5acd8177384e6f4bacead46adba4
+raw_sha256: f8863e6b33175a0307dd436eae49c558d59e526b7d6f98b501a99972d775735b
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/kohlbrenner"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:04+00:00"
+retrieved_utc: "2026-08-10T16:04:34+00:00"
 slug: usenix-org-trusted-browsers-uncertain-times
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/kohlbrenner>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/kohlbrenner (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/kohlbrenner (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

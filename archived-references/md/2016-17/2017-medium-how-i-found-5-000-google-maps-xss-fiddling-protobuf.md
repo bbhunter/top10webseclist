@@ -5,9 +5,9 @@ resource: "https://medium.com/@marin_m/how-i-found-a-5-000-google-maps-xss-by-fi
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:02+00:00"
+  at: "2026-08-10T15:32:13+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@marin_m/how-i-found-a-5-000-google-maps-xss-by-fiddling-with-protobuf-963ee0d9caff"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2016-17.md:50"
 commit: ""
-content_sha256: d16dc556cee50e112ba8e22027ed1ed7cc9156edce767a123d58ec4897009b6a
+content_sha256: 7dc67fab38a41809c471fdd542e1fb003ac639b4cf73520a9ee023ab8a65b3bc
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://medium.com/@marin_m/how-i-found-a-5-000-google-maps-xss-b
 published: 2017-04-24
 publisher: Medium
 publisher_english: ""
-raw_sha256: 6254584bce3511d8f0c5a7a8b4862be3932bc1a4856901d8a23a62fe76115f29
+raw_sha256: e737b313d6518c0934728c0529647438d836faffb172c316f04b12ec9c9bcc92
 retrieved_from: "https://medium.com/@marin_m/how-i-found-a-5-000-google-maps-xss-by-fiddling-with-protobuf-963ee0d9caff"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:02+00:00"
+retrieved_utc: "2026-08-10T15:32:13+00:00"
 slug: 2017-medium-how-i-found-5-000-google-maps-xss-fiddling-protobuf
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2017-04-24
 - Original: <https://medium.com/@marin_m/how-i-found-a-5-000-google-maps-xss-by-fiddling-with-protobuf-963ee0d9caff>
-- Preserved from: https://medium.com/@marin_m/how-i-found-a-5-000-google-maps-xss-by-fiddling-with-protobuf-963ee0d9caff (live) on 2026-08-09
+- Preserved from: https://medium.com/@marin_m/how-i-found-a-5-000-google-maps-xss-by-fiddling-with-protobuf-963ee0d9caff (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://www.skeletonscribe.net/2013/05/practical-http-host-header-att
 tags: [article, webseclist-reference, en-GB, skeletonscribe-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:57+00:00"
+  at: "2026-08-10T15:59:24+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2013.md:51"
+  - "2013.md:46"
 commit: ""
-content_sha256: 5d94718b478b7a5d64c65281796f2c49eb5ed0fb8d09ffc8fe0aef93ed1c05f5
+content_sha256: c8a1818ec447bb3cc3a0aba3a6026692bb3de13f2688d50e160de39e8007c80d
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.skeletonscribe.net/2013/05/practical-http-host-header
 published: ""
 publisher: skeletonscribe.net
 publisher_english: ""
-raw_sha256: 31466e27400d97838a5f99f9298aa2c36177596bb2be8cadaf8556560491f31f
+raw_sha256: 3ba8232c7c2ce716c4897740eb722fc8fb82eb32a67ca1eeefbc556ebce0eda4
 retrieved_from: "https://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:57+00:00"
+retrieved_utc: "2026-08-10T15:59:24+00:00"
 slug: skeletonscribe-net-practical-http-host-header-attacks
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html>
-- Preserved from: https://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html (live) on 2026-08-09
+- Preserved from: https://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

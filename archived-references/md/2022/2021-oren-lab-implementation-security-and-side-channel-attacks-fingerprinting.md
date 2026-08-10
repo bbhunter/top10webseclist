@@ -5,9 +5,9 @@ resource: "https://orenlab.cis.bgu.ac.il/p/DrawnApart"
 tags: [article, webseclist-reference, en, oren-lab-implementation-security-and-sid]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:46+00:00"
+  at: "2026-08-10T15:35:45+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://orenlab.cis.bgu.ac.il/p/DrawnApart"
@@ -17,7 +17,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2022.md:66"
+  - "2022.md:64"
 commit: ""
 content_sha256: 2bbb9024808712ba2195e282dce8e6ca77817472bdf426394954688864814971
 depth: full
@@ -32,7 +32,7 @@ publisher_english: ""
 raw_sha256: 8067efb9c393a904f9396fcb4d1fa950f57a0495b5625416ce9624bbe484c669
 retrieved_from: "https://orenlab.cis.bgu.ac.il/p/DrawnApart"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:46+00:00"
+retrieved_utc: "2026-08-10T15:35:45+00:00"
 slug: 2021-oren-lab-implementation-security-and-side-channel-attacks-fingerprinting
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2021-12-31
 - Original: <https://orenlab.cis.bgu.ac.il/p/DrawnApart>
-- Preserved from: https://orenlab.cis.bgu.ac.il/p/DrawnApart (live) on 2026-08-08
+- Preserved from: https://orenlab.cis.bgu.ac.il/p/DrawnApart (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

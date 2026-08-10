@@ -5,9 +5,9 @@ resource: "https://www.bishopfox.com/blog/2018/06/server-side-spreadsheet-inject
 tags: [article, webseclist-reference, en, bishop-fox]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:02:30+00:00"
+  at: "2026-08-10T15:03:05+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.bishopfox.com/blog/2018/06/server-side-spreadsheet-injections/"
@@ -22,7 +22,7 @@ canonical_url: "https://bishopfox.com/blog/server-side-spreadsheet-injections/"
 cited_by:
   - "2018.md:43"
 commit: ""
-content_sha256: 3bde3cee1c445a5a45a13c6cc14b680f0a385d569f4656066341c11d344b590c
+content_sha256: 7d52af20ad8b2f4e6047ffe9e8a5a11ca1a267f33f2ca8efe38e405460fa0ac9
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://www.bishopfox.com/blog/2018/06/server-side-spreadsheet-in
 published: ""
 publisher: Bishop Fox
 publisher_english: ""
-raw_sha256: bbf0317b61d78487728c7777e13a6877ae87391e94481d622a49f42182abdf07
+raw_sha256: dae39177a8f5535622376fa62696a8da105367b0a51090f5a5fe9e711449e714
 retrieved_from: "https://bishopfox.com/blog/server-side-spreadsheet-injections/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:02:30+00:00"
+retrieved_utc: "2026-08-10T15:03:05+00:00"
 slug: bishop-fox-server-side-spreadsheet-injection-formula-injection-remote-code
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.bishopfox.com/blog/2018/06/server-side-spreadsheet-injections/>
 - Current location: <https://bishopfox.com/blog/server-side-spreadsheet-injections/>
-- Preserved from: https://bishopfox.com/blog/server-side-spreadsheet-injections/ (live) on 2026-08-09
+- Preserved from: https://bishopfox.com/blog/server-side-spreadsheet-injections/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

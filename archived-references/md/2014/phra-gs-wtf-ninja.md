@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/https://phra.gs/blob/2014-
 tags: [article, webseclist-reference, phra-gs]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:04+00:00"
+  at: "2026-08-10T15:36:10+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/https://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html"
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20160403035045/https://phra.gs/blob/2
 published: ""
 publisher: phra.gs
 publisher_english: ""
-raw_sha256: 2e3c2ee85d630ba8c48833c5e3064ed81e30c3fe0486476b1c87c5f58d37201f
+raw_sha256: eac2a18d8aaf65d30bbe47e2c315e7c2a078a08d73ac4a6374f7d406c8fa892e
 retrieved_from: "https://web.archive.org/web/20160306222527/http://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:04+00:00"
+retrieved_utc: "2026-08-10T15:36:10+00:00"
 slug: phra-gs-wtf-ninja
 snapshot: 20160403035045
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/https://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html>
 - Current location: <https://web.archive.org/web/20160306222527/http://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html>
-- Preserved from: https://web.archive.org/web/20160306222527/http://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160306222527/http://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 

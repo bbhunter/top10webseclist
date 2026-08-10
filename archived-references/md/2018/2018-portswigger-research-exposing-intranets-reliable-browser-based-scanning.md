@@ -5,9 +5,9 @@ resource: "https://portswigger.net/blog/exposing-intranets-with-reliable-browser
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:23+00:00"
+  at: "2026-08-10T15:36:20+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/blog/exposing-intranets-with-reliable-browser-based-port-scanning"
@@ -21,7 +21,7 @@ canonical_url: "https://portswigger.net/research/exposing-intranets-with-reliabl
 cited_by:
   - "2018.md:51"
 commit: ""
-content_sha256: 741743a687724d2177d731b4f81315eb9871ddd5cf284f69b6c58b094db570bf
+content_sha256: 67e44c7b5dbd12f2428dc90ae3efb0889a43b7d4e1d1a4c792fc3ed099313ad5
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://portswigger.net/blog/exposing-intranets-with-reliable-bro
 published: 2018-11-09
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: e32c95832df1e6953829e39f7b34bc7c0f066c68641a76d89b3a0ab8483f4d07
+raw_sha256: 47a7087692d7e875f8f4e7839590abdae5259551d1885277e84fd20644b02790
 retrieved_from: "https://portswigger.net/research/exposing-intranets-with-reliable-browser-based-port-scanning"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:23+00:00"
+retrieved_utc: "2026-08-10T15:36:20+00:00"
 slug: 2018-portswigger-research-exposing-intranets-reliable-browser-based-scanning
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 - Published: 2018-11-09
 - Original: <https://portswigger.net/blog/exposing-intranets-with-reliable-browser-based-port-scanning>
 - Current location: <https://portswigger.net/research/exposing-intranets-with-reliable-browser-based-port-scanning>
-- Preserved from: https://portswigger.net/research/exposing-intranets-with-reliable-browser-based-port-scanning (live) on 2026-08-09
+- Preserved from: https://portswigger.net/research/exposing-intranets-with-reliable-browser-based-port-scanning (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

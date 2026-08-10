@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity25/presentation/de-ri
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:11+00:00"
+  at: "2026-08-10T16:05:37+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity25/presentation/de-ridder"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2025.md:92"
+  - "2025.md:87"
 commit: ""
 content_sha256: 8f615f0dcfd6689bb31002a8398c08c135251a52d837318e26afcf8bd523ee39
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity25/presentation/d
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 1a654543f8e55b77ad888053139e6c55171cf2c7398b052de412af10d014a66d
+raw_sha256: 7e659d7d36182b6abe7a27f34ec76c8fc7ff21d59d984cbb079defe4dd2779d7
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity25/presentation/de-ridder"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:11+00:00"
+retrieved_utc: "2026-08-10T16:05:37+00:00"
 slug: usenix-org-posthammer-pervasive-browser-based-rowhammer-attacks-commands
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity25/presentation/de-ridder>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity25/presentation/de-ridder (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity25/presentation/de-ridder (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://www.microsoft.com/en-us/research/publication/incoherencies-we
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T11:30:53+00:00"
+  at: "2026-08-10T15:56:32+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.microsoft.com/en-us/research/publication/incoherencies-web-browser-access-control-policies/"
@@ -17,7 +17,7 @@ also_at:
 authors: []
 canonical_url: ""
 cited_by:
-  - "2010.md:97"
+  - "2010.md:92"
 commit: ""
 content_sha256: 6a98913d88ba325460bc019b0034c309df7033082071f53b1ccca060bece4a60
 depth: full
@@ -32,7 +32,7 @@ publisher_english: ""
 raw_sha256: a9ab21b845df32e822221b305c72460495798da5ea78df11167a0e633b0513bd
 retrieved_from: "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/incoherencyAndWebAnalyzer.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T11:30:53+00:00"
+retrieved_utc: "2026-08-10T15:56:32+00:00"
 slug: microsoft-research-incoherencies-web-browser-access-control-policies
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.microsoft.com/en-us/research/publication/incoherencies-web-browser-access-control-policies/>
 - Also published at: <https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/incoherencyAndWebAnalyzer.pdf>
-- Preserved from: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/incoherencyAndWebAnalyzer.pdf (live) on 2026-08-09
+- Preserved from: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/incoherencyAndWebAnalyzer.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

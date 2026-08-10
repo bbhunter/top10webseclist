@@ -5,9 +5,9 @@ resource: "http://krebsonsecurity.com/2015/11/security-bug-in-dell-pcs-shipped-s
 tags: [article, webseclist-reference, en-US, krebsonsecurity-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:32:26+00:00"
+  at: "2026-08-10T15:30:29+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://krebsonsecurity.com/2015/11/security-bug-in-dell-pcs-shipped-since-815/#more-33044"
@@ -30,10 +30,10 @@ original_url: "http://krebsonsecurity.com/2015/11/security-bug-in-dell-pcs-shipp
 published: ""
 publisher: krebsonsecurity.com
 publisher_english: ""
-raw_sha256: c733bc5a9f7f18bd22f903ca11a3e8df1f59436f0a4101f6adc4a7b91e744160
+raw_sha256: ab4cce7dda0f498875aa91f4c4bb3fab13404aecf66256eab721ddd9701843e1
 retrieved_from: "https://krebsonsecurity.com/2015/11/security-bug-in-dell-pcs-shipped-since-815/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:32:26+00:00"
+retrieved_utc: "2026-08-10T15:30:29+00:00"
 slug: krebsonsecurity-com-security-bug-dell-pcs-shipped-since-8-15
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://krebsonsecurity.com/2015/11/security-bug-in-dell-pcs-shipped-since-815/#more-33044>
 - Current location: <https://krebsonsecurity.com/2015/11/security-bug-in-dell-pcs-shipped-since-815/>
-- Preserved from: https://krebsonsecurity.com/2015/11/security-bug-in-dell-pcs-shipped-since-815/ (live) on 2026-08-09
+- Preserved from: https://krebsonsecurity.com/2015/11/security-bug-in-dell-pcs-shipped-since-815/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

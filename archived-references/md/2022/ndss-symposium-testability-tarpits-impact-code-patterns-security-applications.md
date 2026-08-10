@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/auto-draft-206/"
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:57+00:00"
+  at: "2026-08-10T15:33:35+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/auto-draft-206/"
     title: "Testability Tarpits: the Impact of Code Patterns on the Security Testing of Web Applications"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2022-150-paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2022.md:80"
+  - "2022.md:78"
 commit: ""
-content_sha256: 3e27ce5fdde1b275c84a65ededeb05b4bd3ef65dbf19a71c913b9a94c562e583
+content_sha256: 3b98031936d2ae7b44b1bb4f904e962dafc8b905302b422562af35a42786e929
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/auto-draft-206/"
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 0ea72786888e491325d9e8079417a5eb784cf79c5c83a8ea30644b2ccff8c867
+raw_sha256: 04514aa4c938d4b81e25184d259d47f8267794f6ebbdb5b1c4b964eaa877015f
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/auto-draft-206/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:57+00:00"
+retrieved_utc: "2026-08-10T15:33:35+00:00"
 slug: ndss-symposium-testability-tarpits-impact-code-patterns-security-applications
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/auto-draft-206/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/auto-draft-206/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2022-150-paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/auto-draft-206/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -70,20 +72,20 @@ Our experiments show that testability tarpits are very common. For instance, an 
 
 ## View More Papers
 
-### [ Demo #8: Identifying Drones Based on Visual Tokens ](https://www.ndss-symposium.org/ndss-paper/auto-draft-316/)
+### [ NSFuzz: Towards Efficient and State-Aware Network Service Fuzzing ](https://www.ndss-symposium.org/ndss-paper/auto-draft-272/)
 
- Ben Nassi (Ben-Gurion University of the Negev), Elad Feldman (Ben-Gurion University of the Negev), Aviel Levy (Ben-Gurion University of the Negev), Yaron Pirutin (Ben-Gurion University of the Negev), Asaf Shabtai (Ben-Gurion University of the Negev), Ryusuke Masuoka (Fujitsu System Integration Laboratories) and Yuval Elovici (Ben-Gurion University of the Negev)
+ Shisong Qin (Tsinghua University), Fan Hu (State Key Laboratory of Mathematical Engineering and Advanced Computing), Bodong Zhao (Tsinghua University), Tingting Yin (Tsinghua University), Chao Zhang (Tsinghua University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-316/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-272/)
 
-### [ Above and Beyond: Organizational Efforts to Complement U.S. Digital... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-263/)
+### [ ROV-MI: Large-Scale, Accurate and Efficient Measurement of ROV Deployment ](https://www.ndss-symposium.org/ndss-paper/auto-draft-183/)
 
- Rock Stevens (University of Maryland), Faris Bugra Kokulu (Arizona State University), Adam Doupé (Arizona State University), Michelle L. Mazurek (University of Maryland)
+ Wenqi Chen (Tsinghua University), Zhiliang Wang (Tsinghua University), Dongqi Han (Tsinghua University), Chenxin Duan (Tsinghua University), Xia Yin (Tsinghua University), Jiahai Yang (Tsinghua University), Xingang Shi (Tsinghua University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-263/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-183/)
 
-### [ Shout-Out for Community Driven Automotive Security ](https://www.ndss-symposium.org/ndss-paper/auto-draft-333/)
+### [ First, Fuzz the Mutants ](https://www.ndss-symposium.org/ndss-paper/auto-draft-268/)
 
- John Heldreth (ASRG)
+ Alex Groce (Northern Arizona Univerisity), Goutamkumar Kalburgi (Northern Arizona Univerisity), Claire Le Goues (Carnegie Mellon University), Kush Jain (Carnegie Mellon University), Rahul Gopinath (Saarland University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-333/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-268/)

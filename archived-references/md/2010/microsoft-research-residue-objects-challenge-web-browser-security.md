@@ -5,9 +5,9 @@ resource: "https://www.microsoft.com/en-us/research/publication/residue-objects-
 tags: [article, webseclist-reference, en, microsoft-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:43+00:00"
+  at: "2026-08-10T15:32:38+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.microsoft.com/en-us/research/publication/residue-objects-a-challenge-to-web-browser-security/"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2010.md:100"
+  - "2010.md:95"
 commit: ""
 content_sha256: 76205dbfea06e46dd69172c49cb93396e43499aec9ac8db19c5649e71df33ea8
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.microsoft.com/en-us/research/publication/residue-obje
 published: ""
 publisher: Microsoft Research
 publisher_english: ""
-raw_sha256: 2e1292860ceb9da6b0f29d6975b2980011c8e05945ee171269a8d6078a634a2b
+raw_sha256: 49011d3292a1c08eadda2a3fb3378901dcbb95d369cae722bd88e67693419914
 retrieved_from: "https://www.microsoft.com/en-us/research/publication/residue-objects-a-challenge-to-web-browser-security/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:43+00:00"
+retrieved_utc: "2026-08-10T15:32:38+00:00"
 slug: microsoft-research-residue-objects-challenge-web-browser-security
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.microsoft.com/en-us/research/publication/residue-objects-a-challenge-to-web-browser-security/>
-- Preserved from: https://www.microsoft.com/en-us/research/publication/residue-objects-a-challenge-to-web-browser-security/ (live) on 2026-08-08
+- Preserved from: https://www.microsoft.com/en-us/research/publication/residue-objects-a-challenge-to-web-browser-security/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

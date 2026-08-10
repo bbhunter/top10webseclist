@@ -5,9 +5,9 @@ resource: "https://www.cs.utexas.edu/~isil/ccs15.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:51:34+00:00"
+  at: "2026-08-10T15:08:09+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.cs.utexas.edu/~isil/ccs15.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2015.md:64"
+  - "2015.md:60"
 commit: ""
 content_sha256: 0da429cc55579922a0d96ffab61d4f852bd6dc288ba0a566d207bc2d255158e6
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 2470f16560a6c462f67752ea3f07b6430225ad16684cfc8280e051332de83bab
 retrieved_from: "https://www.cs.utexas.edu/~isil/ccs15.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:51:34+00:00"
+retrieved_utc: "2026-08-10T15:08:09+00:00"
 slug: ccs15
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.cs.utexas.edu/~isil/ccs15.pdf>
-- Preserved from: https://www.cs.utexas.edu/~isil/ccs15.pdf (live) on 2026-08-08
+- Preserved from: https://www.cs.utexas.edu/~isil/ccs15.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -125,12 +125,10 @@ c
 
 2015 ACM. ISBN 978-1-4503-3832-5/15/10 ...$15.00.
 DOI: http://dx.doi.org/10.1145/2810103.2813680.
-come in two 
-avors.
+come in two avors.
 Network-based DoS attacks
 require an
-attacker to 
-ood a target server with many requests, thereby
+attacker to ood a target server with many requests, thereby
 saturating server resources and rendering the target web ser-
 vice unavailable. In contrast,
 application-level DoS attacks
@@ -571,8 +569,7 @@ K
 . Hence, our rst static analysis deter-
 mines which user inputs can reach which attributes of
 Figure 1: Schematic illustration of our approach.
-Here, squiggly arrows indicate 
-ows between dier-
+Here, squiggly arrows indicate ows between dier-
 ent resources.
 Binop
  2 f
@@ -980,6 +977,7 @@ j
 j
 
 1
+_
 
 2
 Here,
@@ -1604,6 +1602,7 @@ dom(
 (
 v
 )
+_
 
 2
 (
@@ -1831,6 +1830,7 @@ Assign
 0
 =
 
+
 [ f
 v
 g
@@ -1876,6 +1876,7 @@ c
 
 0
 =
+
 
 [ f
 v
@@ -1996,6 +1997,8 @@ Loop
 )
 
 0
+
+
 
 ;
 
@@ -2118,6 +2121,7 @@ OR
 :
 c
 1
+_
 c
 2
 Figure 5: Helper rules for SELECT
@@ -2335,6 +2339,7 @@ b
 is
 b
 1
+_
 b
 2
 . Assuming we have not yet encountered the desired
@@ -2344,6 +2349,7 @@ e
 
 1
 )
+_
 (
 :
 e
@@ -2401,13 +2407,11 @@ We now describe how to use the constraints from Sec-
 tion 5.1 to generate attack vectors. As in Section 4, the
 attack vector generation consists of two phases: In the rst
 phase, the input to the analysis is a (user input, database
-insertion) pair discovered to be a feasible source-sink 
-ow
+insertion) pair discovered to be a feasible source-sink ow
 in the Phase I static analysis of Section 4.1. Similarly, for
 the second phase of attack vector generation, the input is a
 (database selection, loop) pair that is deemed to be a feasi-
-ble source-sink 
-ow according to the Phase 2 static analysis
+ble source-sink ow according to the Phase 2 static analysis
 (Section 4.2).
 The second phase of attack vector generation is simpler
 than the rst phase because we only need to compute a sin-
@@ -2631,6 +2635,7 @@ j
 j
 
 1
+_
 
 2
 j :
@@ -2809,6 +2814,7 @@ b
 =
 b
 1
+_
 b
 2
 
@@ -2819,6 +2825,7 @@ e
 
 1
 )
+_
 (
 :
 e
@@ -3041,8 +3048,7 @@ i
 .
 Since our procedure overapproximates satisability, it is
 possible that the inputs generated using our technique do
-not trigger the desired source-sink 
-ow in reality. How-
+not trigger the desired source-sink ow in reality. How-
 ever, we have not observed this overapproximation to be
 a problem in practice. Specically, the overwhelming ma-
 jority of the set comprehension terms
@@ -3086,8 +3092,7 @@ namely, (1) static taint analysis, (2) symbolic execution en-
 gine, (3) sanitization inference, and (4) an engine for infer-
 ring database schemas. Since we have already described the
 taint analyzer and symbolic execution engine in detail, we
-now brie
-y outline the design of modules (3) and (4).
+now briey outline the design of modules (3) and (4).
 Sanitizer Inference Engine
 .
 To infer sanitizers,
@@ -3223,8 +3228,7 @@ phase of the attack.
 Another interesting aspect of the vulnerabilities is that
 a few tainted database attributes typically lead to several
 security vulnerabilities in the same application. In other
-words, many of the source-sink 
-ows identied by
+words, many of the source-sink ows identied by
 Tor-
 pedo
 's Phase II taint analysis share the same source. For
@@ -3303,8 +3307,7 @@ This database is unlikely to be useful for the review process
 because the conference chair would have to be careful to
 not trigger the high-complexity behavior in the application.
 Alternatively, the conference chair could try to cleanse the
-database. In OpenConf, the program chair might try to 
-ag
+database. In OpenConf, the program chair might try to ag
 for withdrawal all submissions with no uploaded les. This
 natural reaction to the attack unfortunately triggers the sec-
 ond phase of the attack. In general, a careful attacker can
@@ -3602,8 +3605,7 @@ ing model of anomalous trac and can suer from scalability
 problems. Furthermore, they sometimes raise false alarms
 that prevent legitimate users from accessing the applica-
 tion. In general, distinguishing between DoS attacks and
-sudden high-volume user trac (
-ash crowds) is an open
+sudden high-volume user trac (ash crowds) is an open
 problem [13]. A more detailed survey of network-layer DoS
 prevention mechanisms can be found elsewhere [19, 2].
 More importantly, network-based defense measures are
@@ -3677,8 +3679,7 @@ path constraints. Their symbolic execution engine is similar
 to ours, but we must solve the additional problem of relat-
 ing insertions to extractions. In addition, our engine also
 generates the attack vectors.
-Livshits and Lam describe a 
-ow-analysis for detecting
+Livshits and Lam describe a ow-analysis for detecting
 XSS and SQL injection vulnerabilities in Java [18]. Wasser-
 mann and Su use static analysis to identify XSS vulnerabil-
 ities on code using weak sanitization [30]. These approaches
@@ -3797,8 +3798,7 @@ RFC 4732
 death.
 [15] S. Kandula, D. Katabi, M. Jacob, and A. Berger.
 Botz-4-sale: Surviving organized DDoS attacks that
-mimic 
-ash crowds. In
+mimic ash crowds. In
 NSDI
 , 2005.
 [16] A. Kie_zun, P. J. Guo, K. Jayaraman, and M. D. Ernst.
@@ -3872,8 +3872,7 @@ In
 SIGCOMM
 , 2006.
 [29] H. Wang, D. Zhang, and K. Shin. Detecting syn
-
-ooding attacks. In
+ooding attacks. In
 21st Annual Joint Conference of
 the IEEE Computer and Communications Societies
 (INFOCOM)

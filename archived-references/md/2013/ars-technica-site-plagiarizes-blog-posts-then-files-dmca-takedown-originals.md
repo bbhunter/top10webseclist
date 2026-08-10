@@ -5,9 +5,9 @@ resource: "http://web.archive.org/web/20160507023636/http://arstechnica.com/scie
 tags: [article, webseclist-reference, en-us, ars-technica]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:01:19+00:00"
+  at: "2026-08-10T15:02:03+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://arstechnica.com/science/2013/02/site-plagiarizes-blog-posts-then-files-dmca-takedown-on-originals/"
@@ -24,7 +24,7 @@ canonical_url: "http://web.archive.org/web/20160410165447/http://arstechnica.com
 cited_by:
   - "2013.md:22"
 commit: ""
-content_sha256: 0272773c18ceded61fd3e7f4b150dac8f80c780ee64e78664d754d59493d9e65
+content_sha256: f3ece1df26ec26bff1c4c0d6f00e38ca6a7de6b26ce8e65c428f12d9b8e86974
 depth: full
 depth_reason: default
 kind: article
@@ -34,10 +34,10 @@ original_url: "http://web.archive.org/web/20160507023636/http://arstechnica.com/
 published: ""
 publisher: Ars Technica
 publisher_english: ""
-raw_sha256: 82f0eaba319f5a69a8e1ab7b4bd5b4174387b38cc5a9de6fd2934401f2e21a9f
+raw_sha256: f855391b49e22ca0d082d7b5623920f1242e07cdd176b454905e8c2eb9ab3506
 retrieved_from: "http://web.archive.org/web/20160410165447/http://arstechnica.com/science/2013/02/site-plagiarizes-blog-posts-then-files-dmca-takedown-on-originals/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:01:19+00:00"
+retrieved_utc: "2026-08-10T15:02:03+00:00"
 slug: ars-technica-site-plagiarizes-blog-posts-then-files-dmca-takedown-originals
 snapshot: 20160507023636
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://arstechnica.com/science/2013/02/site-plagiarizes-blog-posts-then-files-dmca-takedown-on-originals/>
 - Current location: <http://web.archive.org/web/20160410165447/http://arstechnica.com/science/2013/02/site-plagiarizes-blog-posts-then-files-dmca-takedown-on-originals/>
-- Preserved from: http://web.archive.org/web/20160410165447/http://arstechnica.com/science/2013/02/site-plagiarizes-blog-posts-then-files-dmca-takedown-on-originals/ (live) on 2026-08-09
+- Preserved from: http://web.archive.org/web/20160410165447/http://arstechnica.com/science/2013/02/site-plagiarizes-blog-posts-then-files-dmca-takedown-on-originals/ (live) on 2026-08-10
 - Capture timestamp: 20160507023636
 - Licence: unknown
 

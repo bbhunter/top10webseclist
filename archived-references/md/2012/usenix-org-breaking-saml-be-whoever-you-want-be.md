@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity12/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:45+00:00"
+  at: "2026-08-10T16:04:12+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/somorovsky"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2012.md:79"
+  - "2012.md:73"
 commit: ""
-content_sha256: b4fff040c5d1e9e48fba29ff0e5878800f757607a33038875089ce11de59ad44
+content_sha256: 67e005a0c9a22b8187fbaa505b5af94cbac53064e84c06bab3e8431a147beea2
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity12/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 36ce457912b189858fc0e1fb9aa58777002d27abcd76cd08570ec1dd917fe17e
+raw_sha256: 8783f9959ad25dd914056db8da6d827bf637f5ece86c284a3b4fff09a13a97ab
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/somorovsky"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:45+00:00"
+retrieved_utc: "2026-08-10T16:04:12+00:00"
 slug: usenix-org-breaking-saml-be-whoever-you-want-be
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/somorovsky>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/somorovsky (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/somorovsky (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

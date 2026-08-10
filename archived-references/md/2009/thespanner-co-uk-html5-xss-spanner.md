@@ -5,9 +5,9 @@ resource: "http://www.thespanner.co.uk/2009/03/20/html5-xss/"
 tags: [article, webseclist-reference, en, thespanner-co-uk]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:45:56+00:00"
+  at: "2026-08-10T16:01:58+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/03/20/html5-xss/"
@@ -30,10 +30,10 @@ original_url: "http://www.thespanner.co.uk/2009/03/20/html5-xss/"
 published: ""
 publisher: thespanner.co.uk
 publisher_english: ""
-raw_sha256: 6878cd084dfe6b60d9777b61fe3c0018cadb4ff8a96bca96008159fc9ebf1f4a
+raw_sha256: 02800f52c3e6a91715f1c42454e81ac716d0d8620bc59c3ee6491e0a54cceb38
 retrieved_from: "https://thespanner.co.uk/2009/03/20/html5-xss"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:45:56+00:00"
+retrieved_utc: "2026-08-10T16:01:58+00:00"
 slug: thespanner-co-uk-html5-xss-spanner
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/03/20/html5-xss/>
 - Current location: <https://thespanner.co.uk/2009/03/20/html5-xss>
-- Preserved from: https://thespanner.co.uk/2009/03/20/html5-xss (live) on 2026-08-09
+- Preserved from: https://thespanner.co.uk/2009/03/20/html5-xss (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

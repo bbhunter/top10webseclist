@@ -5,9 +5,9 @@ resource: "https://arxiv.org/abs/1309.1416"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:49:57+00:00"
+  at: "2026-08-10T15:02:22+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://arxiv.org/abs/1309.1416"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2013.md:57"
+  - "2013.md:52"
 commit: ""
-content_sha256: a2ad128d48c0d8638e3b6cc3a338453033d02d9cfc92f526797b6839249145bf
+content_sha256: 8dd5da0cd5164c892cc3d07942f47ef4395a1d1098928ef08de3c2ccc379d2fa
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: ef67dbfdb8e828e58f5d99793e60a8ded5bc99b1e3de47cab2441bbaf527bfd6
 retrieved_from: "https://arxiv.org/abs/1309.1416"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:49:57+00:00"
+retrieved_utc: "2026-08-10T15:02:22+00:00"
 slug: arxiv-org-automated-password-extraction-attack-modern-password-managers
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/1309.1416>
-- Preserved from: https://arxiv.org/abs/1309.1416 (live) on 2026-08-08
+- Preserved from: https://arxiv.org/abs/1309.1416 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

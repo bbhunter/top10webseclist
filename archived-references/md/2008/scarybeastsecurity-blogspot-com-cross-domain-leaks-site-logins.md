@@ -5,9 +5,9 @@ resource: "https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of
 tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:51+00:00"
+  at: "2026-08-10T15:57:25+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html"
@@ -28,10 +28,10 @@ original_url: "https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leak
 published: ""
 publisher: scarybeastsecurity.blogspot.com
 publisher_english: ""
-raw_sha256: f19c5a73b44d45ce36c3629a2ed50c0846077c42d201aa2e075c4cc11d40efd9
+raw_sha256: 910a5b02a7d65f3cdb68f7d5aa6c0353e1c2d9a2ee5a0644f3205f795d32a448
 retrieved_from: "https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:51+00:00"
+retrieved_utc: "2026-08-10T15:57:25+00:00"
 slug: scarybeastsecurity-blogspot-com-cross-domain-leaks-site-logins
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html>
-- Preserved from: https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html (live) on 2026-08-09
+- Preserved from: https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

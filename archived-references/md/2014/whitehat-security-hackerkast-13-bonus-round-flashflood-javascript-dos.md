@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/https://www.whitehatsec.co
 tags: [article, webseclist-reference, en, whitehat-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:36+00:00"
+  at: "2026-08-10T16:06:25+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/https://www.whitehatsec.com/blog/hackerkast-13-bonus-round/"
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20160403035045/https://www.whitehatse
 published: ""
 publisher: WhiteHat Security
 publisher_english: ""
-raw_sha256: 8f6c52a680b59d4be875d436fb9ad47574692a4700d3d71f00549841ca6b2460
+raw_sha256: 67c8ad26fef750702e5d52cbc1745708383ff535a1da7d7a18dbd0663f98218b
 retrieved_from: "https://web.archive.org/web/20160809010756/https://www.whitehatsec.com/blog/hackerkast-13-bonus-round/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:36+00:00"
+retrieved_utc: "2026-08-10T16:06:25+00:00"
 slug: whitehat-security-hackerkast-13-bonus-round-flashflood-javascript-dos
 snapshot: 20160403035045
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/https://www.whitehatsec.com/blog/hackerkast-13-bonus-round/>
 - Current location: <https://web.archive.org/web/20160809010756/https://www.whitehatsec.com/blog/hackerkast-13-bonus-round/>
-- Preserved from: https://web.archive.org/web/20160809010756/https://www.whitehatsec.com/blog/hackerkast-13-bonus-round/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160809010756/https://www.whitehatsec.com/blog/hackerkast-13-bonus-round/ (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 

@@ -5,9 +5,9 @@ resource: "https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-
 tags: [article, webseclist-reference, en, sonar]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:34+00:00"
+  at: "2026-08-10T16:00:28+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/?utm_source=twitter&utm_medium=social&utm_campaign=protonmail&utm_content=security&utm_term=mofu"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:59"
 commit: ""
-content_sha256: 69730533d14414732dedb6174f8523afb0afe53f2f71f3b45f70f2dbe7fc27d4
+content_sha256: 7a41454052efd3496c126f948f748dac4b301d58ddbd619aadb490b9135dc2ca
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails
 published: 2023-09-04
 publisher: Sonar
 publisher_english: ""
-raw_sha256: 07e9ad609ba8a691c497515659f2b0c58294bc8e777c8854277f1b76880dace1
+raw_sha256: 13e30b835b3e7532ea864cc280dbce97802f9084f559aea808b1cc33ec412860
 retrieved_from: "https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/?utm_source=twitter&utm_medium=social&utm_campaign=protonmail&utm_content=security&utm_term=mofu"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:34+00:00"
+retrieved_utc: "2026-08-10T16:00:28+00:00"
 slug: 2023-sonar-code-vulnerabilities-put-proton-mails-risk
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2023-09-04
 - Original: <https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/?utm_source=twitter&utm_medium=social&utm_campaign=protonmail&utm_content=security&utm_term=mofu>
-- Preserved from: https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/?utm_source=twitter&utm_medium=social&utm_campaign=protonmail&utm_content=security&utm_term=mofu (live) on 2026-08-09
+- Preserved from: https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/?utm_source=twitter&utm_medium=social&utm_campaign=protonmail&utm_content=security&utm_term=mofu (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

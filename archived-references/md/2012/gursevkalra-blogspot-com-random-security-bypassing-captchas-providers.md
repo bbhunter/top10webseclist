@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://gursevkalra.blogspo
 tags: [article, webseclist-reference, gursevkalra-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:14:23+00:00"
+  at: "2026-08-10T15:10:56+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html"
@@ -15,7 +15,7 @@ sources:
   - id: canonical
     resource: "https://web.archive.org/web/20170418233059/http://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html"
   - id: capture
-    resource: "https://web.archive.org/web/20121005192228/http://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html"
+    resource: "https://web.archive.org/web/20170903113359/http://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html"
 also_at: []
 authors: []
 canonical_url: "https://web.archive.org/web/20170418233059/http://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html"
@@ -32,12 +32,12 @@ original_url: "https://web.archive.org/web/20170903113359/http://gursevkalra.blo
 published: ""
 publisher: gursevkalra.blogspot.com
 publisher_english: ""
-raw_sha256: 3da396d7817b679e845b7f1dc1cd001bc4e3748651a613b8b0ef463fded02b9a
+raw_sha256: f0a163f6a4718b1bc139033e23ddb4da83c45e45b46cf7b4995193805ae5f62e
 retrieved_from: "https://web.archive.org/web/20170418233059/http://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:14:23+00:00"
+retrieved_utc: "2026-08-10T15:10:56+00:00"
 slug: gursevkalra-blogspot-com-random-security-bypassing-captchas-providers
-snapshot: 20121005192228
+snapshot: 20170903113359
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -50,8 +50,8 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html>
 - Current location: <https://web.archive.org/web/20170418233059/http://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html>
-- Preserved from: https://web.archive.org/web/20170418233059/http://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html (live) on 2026-08-09
-- Capture timestamp: 20121005192228
+- Preserved from: https://web.archive.org/web/20170418233059/http://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html (live) on 2026-08-10
+- Capture timestamp: 20170903113359
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

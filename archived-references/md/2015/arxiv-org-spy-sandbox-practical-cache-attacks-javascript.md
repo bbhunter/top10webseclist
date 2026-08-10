@@ -5,9 +5,9 @@ resource: "https://arxiv.org/abs/1502.07373"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:49:58+00:00"
+  at: "2026-08-10T15:02:24+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://arxiv.org/abs/1502.07373"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2015.md:59"
+  - "2015.md:55"
 commit: ""
-content_sha256: 6df62a4b38c72555215bbda7f594678e4193a51025e6fd00ba6424325df0c2f7
+content_sha256: a66c93dad1b400e2483516b044af8c614997580b2471506eb40624d865424026
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: ecd3d96de8bf6e04653f2ef5bef9e04dbe6a3a31b0a181864391c05c35183990
 retrieved_from: "https://arxiv.org/abs/1502.07373"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:49:58+00:00"
+retrieved_utc: "2026-08-10T15:02:24+00:00"
 slug: arxiv-org-spy-sandbox-practical-cache-attacks-javascript
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/1502.07373>
-- Preserved from: https://arxiv.org/abs/1502.07373 (live) on 2026-08-08
+- Preserved from: https://arxiv.org/abs/1502.07373 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

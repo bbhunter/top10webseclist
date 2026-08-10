@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/birge
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:14+00:00"
+  at: "2026-08-10T16:04:42+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/birge-lee"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2018.md:74"
+  - "2018.md:70"
 commit: ""
 content_sha256: a63bb8becd18c62bc32cb7d20df1af0725d6d70eb8c6370574250038e17e3840
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity18/presentation/b
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: fb6fbc32020da6ca0f515f753b98d9225720afe046c4166b5a7ed9c5bc10354e
+raw_sha256: 11e62dc813ed91e8ca89b223a7ed2412861321250c627e4f08dd043f91e1406e
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity18/presentation/birge-lee"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:14+00:00"
+retrieved_utc: "2026-08-10T16:04:42+00:00"
 slug: usenix-org-bamboozling-certificate-authorities-bgp
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity18/presentation/birge-lee>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity18/presentation/birge-lee (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity18/presentation/birge-lee (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

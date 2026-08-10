@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/css-the-bomb-inside-your-inbox"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:52:41+00:00"
+  at: "2026-08-10T15:36:34+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/css-the-bomb-inside-your-inbox"
@@ -17,9 +17,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:62"
+  - "2026-ai.md:38"
 commit: ""
-content_sha256: 7763e82763e33558ac6b845c0490a9fcae5d84af59b838641d8207906fead35d
+content_sha256: 8f54cd5ee975b9260b116e5ffada821cb88a8c4c7d1e6acb50162e2962542cda
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/css-the-bomb-inside-your-inbox"
 published: 2026-08-06
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 50b13a60403feeed330de5b835612fd070b07fe20129b5aa5c73d671307d3a48
+raw_sha256: b2432d23cbd5b6787024e9c367a310874b2df96020f31b37423f277066c3054f
 retrieved_from: "https://portswigger.net/research/css-the-bomb-inside-your-inbox"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:52:41+00:00"
+retrieved_utc: "2026-08-10T15:36:34+00:00"
 slug: 2026-portswigger-research-css-bomb-inside-your-inbox
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2026-08-06
 - Original: <https://portswigger.net/research/css-the-bomb-inside-your-inbox>
-- Preserved from: https://portswigger.net/research/css-the-bomb-inside-your-inbox (live) on 2026-08-08
+- Preserved from: https://portswigger.net/research/css-the-bomb-inside-your-inbox (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -106,7 +106,7 @@ Researcher
 - Tracking if email is viewed in Gmail
 
 - Combining an image proxy bypass with indirect prompt injection
-- CSS mutation in Fastmail 
+- CSS mutation in Fastmail
 
 - Exploitation with CSS
 

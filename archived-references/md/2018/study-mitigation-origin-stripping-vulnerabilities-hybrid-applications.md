@@ -5,22 +5,20 @@ resource: "https://ieeexplore.ieee.org/document/8418635/"
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T12:40:43+00:00"
+  at: "2026-08-10T15:28:51+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://ieeexplore.ieee.org/document/8418635/"
     title: Study and Mitigation of Origin Stripping Vulnerabilities in Hybrid-postMessage Enabled Mobile Applications
-  - id: capture
-    resource: "https://web.archive.org/web/20190206220748/https://ieeexplore.ieee.org/document/8418635/"
 also_at:
   - "https://par.nsf.gov/servlets/purl/10065081/1000"
   - "https://success.cse.tamu.edu/osv-free/"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2018.md:75"
+  - "2018.md:71"
 commit: ""
 content_sha256: d8bfa67d109993fbb17bef8ba0da2db159abce23dd78d8b8acf3c38ce078ce8e
 depth: full
@@ -35,9 +33,9 @@ publisher_english: ""
 raw_sha256: bddb2f02dbfe76bae26418421b983ff1744e2b185cfa8264bb9d549c1d65166d
 retrieved_from: "https://par.nsf.gov/servlets/purl/10065081/1000"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T12:40:43+00:00"
+retrieved_utc: "2026-08-10T15:28:51+00:00"
 slug: study-mitigation-origin-stripping-vulnerabilities-hybrid-applications
-snapshot: 20190206220748
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -51,8 +49,7 @@ translation_of: ""
 - Original: <https://ieeexplore.ieee.org/document/8418635/>
 - Also published at: <https://par.nsf.gov/servlets/purl/10065081/1000>
 - Also published at: <https://success.cse.tamu.edu/osv-free/>
-- Preserved from: https://par.nsf.gov/servlets/purl/10065081/1000 (live) on 2026-08-09
-- Capture timestamp: 20190206220748
+- Preserved from: https://par.nsf.gov/servlets/purl/10065081/1000 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -126,8 +123,7 @@ and more implementation and evaluation details are availableonline.
 I. I
 NTRODUCTIONCross-origin communication using the HTML5 postMessagefacility [1] has been a popular and often necessary techniqueon the web platform. It relaxes the restrictions enforced by thewell-known same origin policy (SOP) security model [2] byallowing bidirectional messaging between mutually distrustingweb frames or windows. With the increasing amalgamation ofthe web and mobile platforms, postMessage has also found   
 	
-  
-       
+         
  ! "#$ % &'() *
 + ,- ./
 0 123 4
@@ -164,8 +160,7 @@ Security Issue. Unfortunately, while hybrid postMessageprovides easy and conveni
  
 
  
-
- 
+ 
  
 
  
@@ -209,8 +204,7 @@ t u vw xy z{ |}~€ �
 ö÷ øù ú û
 üý þ ÿ
     	
-
- 
+ 
  
   
   !" #$ %&'()*
@@ -287,8 +281,7 @@ security policies to offer access control. However, they arecircumscribed to pre
 
    
 
-	
- 
+	 
  
  !"#$ %&'(
 ) *+,- ./0123
@@ -472,6 +465,7 @@ NativeViolated RuleRule IRule IIRule IRule IISub-Vulnerability TypeV
 3V
 4Table I: Denitions of Four Sub-Types of OSV  	
 
+
  Figure 5: Attacks On
 V
 2The four OSV sub-vulnerabilities disclose more attackpatterns than those discussed in SectionI. For example, consider
@@ -502,6 +496,7 @@ WebView.loadUrl()
 ) from the native frame to the main web frame:
 WebView.loadUrl("javascript:window.postMessage('"+
 content +"', '
+*
 ')").In both cases above,
 “window.postMessage()”
 should be acommunication launcher (message sender). To discover itscorresponding message receiver, its parameter, especially
@@ -593,8 +588,7 @@ window.postMessage()
 
   
 
- 
- 
+  
    
   !"#$ %&' ()*+,-
 ./0 12345678 9:;<
@@ -814,6 +808,7 @@ likely caused. Although there are several solutions proposedto protect JavaScrip
 D. Case Studies1) Facebook React Native:
 Facebook React Native is athird-party development framework that allows developers to
 develop mobile apps purely in JavaScript. It supports severalpopular mobile platforms (like Android and iOS). Thus, theOSV vulnerability impacts all the supported platforms.  	
+
 
  
   
@@ -1045,8 +1040,7 @@ indicates the origin of main web frame;the second origin
 “scriptOrigin”
 provides the origin of theembedded script, where the JavaScript method that sends themessage is located; the third variable ag
 “isProxyInvolved”indicates whether the main web frame is forwarding a message 	
- 
- 
+  
     
 !" # $%&'
 ( )* +,-./

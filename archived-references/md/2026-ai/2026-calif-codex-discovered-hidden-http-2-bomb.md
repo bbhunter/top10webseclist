@@ -5,9 +5,9 @@ resource: "https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb"
 tags: [article, webseclist-reference, en, calif]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:13+00:00"
+  at: "2026-08-10T15:04:10+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb"
@@ -19,9 +19,9 @@ authors:
   - Calif
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:58"
+  - "2026-ai.md:34"
 commit: ""
-content_sha256: 38c6025f8179294e76af39441b186dc17871a746f2b9abb28c47976f374d97ef
+content_sha256: 9fc62711dd04fa2289467d09a3ccf7adb0644f1641b9297fb0ae74a5ee2d8708
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb"
 published: 2026-06-02
 publisher: Calif
 publisher_english: ""
-raw_sha256: 00f539e7e9effc975e16184a62f30e394a4529d06bf1fb8450e31b4d4af1e18c
+raw_sha256: 7ceba3a6ff5de1a33c5bb4a75d10eca47f6bd612a56c06bd29b7fa20e5cbdb49
 retrieved_from: "https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:13+00:00"
+retrieved_utc: "2026-08-10T15:04:10+00:00"
 slug: 2026-calif-codex-discovered-hidden-http-2-bomb
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2026-06-02
 - Original: <https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb>
-- Preserved from: https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb (live) on 2026-08-08
+- Preserved from: https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

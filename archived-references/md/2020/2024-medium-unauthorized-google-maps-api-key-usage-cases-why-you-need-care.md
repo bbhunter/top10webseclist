@@ -5,9 +5,9 @@ resource: "https://ozguralp.medium.com/unauthorized-google-maps-api-key-usage-ca
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:37:26+00:00"
+  at: "2026-08-10T15:35:47+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://ozguralp.medium.com/unauthorized-google-maps-api-key-usage-cases-and-why-you-need-to-care-1ccb28bf21e"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2020.md:55"
 commit: ""
-content_sha256: 31c605f5163afc8259a1e8ce04f96d9fca2d445d4ae713a2bbe3f80c0bc8789c
+content_sha256: 9af5ecc3690570d5c8e46d4f3c9c8459076556344581262875009875e222a123
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://ozguralp.medium.com/unauthorized-google-maps-api-key-usag
 published: 2024-01-21
 publisher: Medium
 publisher_english: ""
-raw_sha256: 367ba85bf7a6bfb8299fb91ff1b7851ec1f1b99f45595b26f1d0e459e391551c
+raw_sha256: c7235d66dbb60dc8d90b9c5db3434c5394c85eb68eabc721cf12641dcb922225
 retrieved_from: "https://ozguralp.medium.com/unauthorized-google-maps-api-key-usage-cases-and-why-you-need-to-care-1ccb28bf21e"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:37:26+00:00"
+retrieved_utc: "2026-08-10T15:35:47+00:00"
 slug: 2024-medium-unauthorized-google-maps-api-key-usage-cases-why-you-need-care
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2024-01-21
 - Original: <https://ozguralp.medium.com/unauthorized-google-maps-api-key-usage-cases-and-why-you-need-to-care-1ccb28bf21e>
-- Preserved from: https://ozguralp.medium.com/unauthorized-google-maps-api-key-usage-cases-and-why-you-need-to-care-1ccb28bf21e (live) on 2026-08-09
+- Preserved from: https://ozguralp.medium.com/unauthorized-google-maps-api-key-usage-cases-and-why-you-need-to-care-1ccb28bf21e (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

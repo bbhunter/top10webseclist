@@ -5,9 +5,9 @@ resource: "http://news.netcraft.com/archives/2006/09/23/hostgator_cpanel_securit
 tags: [article, webseclist-reference, en, netcraft-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:37:04+00:00"
+  at: "2026-08-10T15:35:33+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://news.netcraft.com/archives/2006/09/23/hostgator_cpanel_security_hole_exploited_in_mass_hack.html"
@@ -20,7 +20,7 @@ canonical_url: "https://www.netcraft.com/resources/blog"
 cited_by:
   - "2006.md:62"
 commit: ""
-content_sha256: 4a7b48b839136fc30311a4bb56f6f306bfcc2becae373e4781ddfd5c395a4123
+content_sha256: 7c34597f3c1a3a965cabf1e426a34dd013f7e9797dcec32f77021018ecb672d9
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "http://news.netcraft.com/archives/2006/09/23/hostgator_cpanel_sec
 published: ""
 publisher: netcraft.com
 publisher_english: ""
-raw_sha256: b32f4577d6e194d2604ed1a8073d3adeac70d63ebf549de962f22ca472170cd4
+raw_sha256: a2fb0bcbdd72475144a046b7ab75613e657db4c25ade0473ff37693668e01997
 retrieved_from: "https://www.netcraft.com/resources/blog"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:37:04+00:00"
+retrieved_utc: "2026-08-10T15:35:33+00:00"
 slug: netcraft-com-resources-2
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://news.netcraft.com/archives/2006/09/23/hostgator_cpanel_security_hole_exploited_in_mass_hack.html>
 - Current location: <https://www.netcraft.com/resources/blog>
-- Preserved from: https://www.netcraft.com/resources/blog (live) on 2026-08-09
+- Preserved from: https://www.netcraft.com/resources/blog (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -73,6 +73,8 @@ Resources – Netcraft
 
  [Login](https://services.netcraft.com/)
 
+ 
+
 Platform
 
 Solutions
@@ -87,7 +89,11 @@ Resources
 
  [How Fraud & Digital Risk Leaders Are Responding to Emerging Threats | Register Today →](https://www.netcraft.com/lp/iwg-rewind)
 
+ 
+
  [How Fraud & Digital Risk Leaders Are Responding to Emerging Threats | Register Today →](https://www.netcraft.com/lp/iwg-rewind)
+
+ 
 
  [Careers](https://www.netcraft.com/company/careers)
 
@@ -110,6 +116,8 @@ Resources
  [GET Demo](https://www.netcraft.com/book-a-demo)
 
  [How Fraud & Digital Risk Leaders Are Responding to Emerging Threats | Register Today →](https://www.netcraft.com/lp/iwg-rewind)
+
+ 
 
 # Netcraft Blog
 
@@ -455,147 +463,6 @@ Learn more about Netcraft’s powerful brand protection, external threat intelli
 63 Catherine Place, London, SW1E 6DY, UK
 
 3600 Outlet Pkwy #550 Lehi, UT, USA 84604
-
-Suite 1, Level 2/248 Burwood Road, Hawthorn, VIC 3122
-
-UK | +44 (0) 1225 447500
-
-US | +1 (435) 310-5615
-
-AU | +61 (3) 9887 6777
-
-[[email protected]](https://www.netcraft.com/cdn-cgi/l/email-protection)
-
- [Platform](https://www.netcraft.com/platform)
-
- [*Detection & Takedown*](https://www.netcraft.com/platform/threat-detection-and-takedown)
-
- [Phishing Protection](https://www.netcraft.com/platform/threat-detection-and-takedown/phishing-protection)
-
- [Domain Protection](https://www.netcraft.com/platform/threat-detection-and-takedown/domain-protection)
-
- [Social Media Protection](https://www.netcraft.com/platform/threat-detection-and-takedown/social-media-protection)
-
- [Mobile App Protection](https://www.netcraft.com/platform/threat-detection-and-takedown/mobile-app-protection)
-
- [Deep & Dark Web Monitoring](https://www.netcraft.com/platform/threat-detection-and-takedown/deep-and-dark-web-monitoring)
-
- [Phone Scam Disruption](https://www.netcraft.com/platform/threat-detection-and-takedown/phone-scam-disruption)
-
- [Preemptive Domain Disruption](https://www.netcraft.com/platform/threat-detection-and-takedown/preemptive-domain-disruption)
-
- [*Threat Intelligence*](https://www.netcraft.com/platform/threat-intelligence)
-
- [Reporting & Dashboards](https://www.netcraft.com/platform/threat-intelligence/reporting-and-dashboards)
-
- [Threat Feeds](https://www.netcraft.com/platform/threat-intelligence/cyber-threat-feeds)
-
- [Phishing Kit Analysis](https://www.netcraft.com/platform/threat-intelligence/phishing-kit-analysis)
-
- [Scam Intelligence](https://www.netcraft.com/platform/threat-intelligence/netcraft-scam-intelligence-text-based-scams)
-
- [*Enhanced Detection*](https://www.netcraft.com/platform/detection-enhancements)
-
- [DMARC Visualization](https://www.netcraft.com/platform/detection-enhancements/dmarc-visualizations-and-detection)
-
- [Marked Account Injection](https://www.netcraft.com/platform/detection-enhancements/marked-account-injection-detection)
-
-Solutions
-
-*Use Cases*
-
- [Digital Risk Protection](https://www.netcraft.com/solutions/use-cases/digital-risk-protection)
-
- [Phishing Detection](https://www.netcraft.com/solutions/use-cases/phishing-detection)
-
- [Malware Protection](https://www.netcraft.com/solutions/use-cases/malware)
-
- [Brand Protection](https://www.netcraft.com/solutions/use-cases/brand-protection-and-monitoring)
-
- [Fake Online Stores](https://www.netcraft.com/solutions/use-cases/fake-online-store-protection)
-
- [Executive Impersonation](https://www.netcraft.com/solutions/use-cases/executive-and-employee-impersonation)
-
- [Dark Web Monitoring](https://www.netcraft.com/platform/threat-detection-and-takedown/deep-and-dark-web-monitoring)
-
- [Peer-to-Peer Scams](https://www.netcraft.com/solutions/use-cases/peer-to-peer-text-based-scams)
-
- [Cyber Threat Intelligence](https://www.netcraft.com/platform/threat-intelligence/cyber-threat-feeds)
-
- [Social Media Protection](https://www.netcraft.com/platform/threat-detection-and-takedown/social-media-protection)
-
- [Preemptive Domain Disruption](https://www.netcraft.com/platform/threat-detection-and-takedown/preemptive-domain-disruption)
-
-*Industries*
-
- [Financial Services](https://www.netcraft.com/solutions/industry/financial-services-threat-detection-and-takedown)
-
- [Internet Infrastructure](https://www.netcraft.com/solutions/industry/internet-infrastructure-threat-detection-and-takedown)
-
- [Retail & Ecommerce](https://www.netcraft.com/solutions/industry/retail-ecommerce-threat-detection-and-takedown)
-
- [Media & Entertainment](https://www.netcraft.com/solutions/industry/media-and-entertainment-threat-detection-and-takedown)
-
- [Technology](https://www.netcraft.com/solutions/industry/technology-threat-detection-and-takedown)
-
- [Healthcare](https://www.netcraft.com/solutions/industry/healthcare-threat-detection-and-takedown)
-
- [Public Sector](https://www.netcraft.com/solutions/industry/government-and-public-sector-threat-detection-and-takedown)
-
- [Transit](https://www.netcraft.com/solutions/industry/transit)
-
- [Resources](https://www.netcraft.com/resources)
-
- [Apps & Extensions](https://www.netcraft.com/resources/apps-and-extensions)
-
- [Guides](https://www.netcraft.com/resources/?type=guides)
-
- [Webinars](https://www.netcraft.com/resources?type=webinars)
-
- [Case Studies](https://www.netcraft.com/resources?type=case-studies)
-
- [Blog](https://www.netcraft.com/resources/blog)
-
- [Research Tools](https://www.netcraft.com/resources/research-tools)
-
- [Glossary](https://www.netcraft.com/resources/glossary)
-
- [Threat Map](https://www.netcraft.com/resources/threat-map)
-
- [Why netcraft](https://www.netcraft.com/why-netcraft)
-
-Company
-
- [About Us](https://www.netcraft.com/company/about-us)
-
- [Careers](https://www.netcraft.com/company/careers)
-
- [Partner with Us](https://www.netcraft.com/company/partners)
-
- [Corporate Social Responsibility](https://www.netcraft.com/company/corporate-social-responsibility)
-
- [News](https://www.netcraft.com/company/news)
-
- [Trust Center](https://trust.netcraft.com/)
-
-©2026 Netcraft LTD. All Rights Reserved
-
- [Modern Slavery Statement](https://www.netcraft.com/legal/modern-slavery-statement)
-
- [Terms and Conditions](https://www.netcraft.com/legal/terms-and-conditions)
-
- [Privacy Policy](https://www.netcraft.com/legal/privacy)
-
-## Book a Demo Today
-
-Learn more about Netcraft’s powerful brand protection, external threat intelligence, and digital risk protection platform.
-
- [get demo](https://www.netcraft.com/book-a-demo)
-
-63 Catherine Place, London, SW1E 6DY, UK
-
-3600 Outlet Pkwy #550
-Lehi, UT, USA 84048
 
 Suite 1, Level 2/248 Burwood Road, Hawthorn, VIC 3122
 

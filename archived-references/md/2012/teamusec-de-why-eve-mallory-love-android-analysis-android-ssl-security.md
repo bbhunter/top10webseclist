@@ -5,20 +5,21 @@ resource: "https://teamusec.de/publications/conf-ccs-fahlhmsbf12/"
 tags: [article, webseclist-reference, en, teamusec-de]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:20+00:00"
+  at: "2026-08-10T16:01:19+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://teamusec.de/publications/conf-ccs-fahlhmsbf12/"
     title: "Why eve and mallory love android: an analysis of android SSL (in)security"
     author: Sascha Fahl
-also_at: []
+also_at:
+  - "https://teamusec.de/pdf/conf-ccs-FahlHMSBF12.pdf"
 authors:
   - Sascha Fahl
 canonical_url: ""
 cited_by:
-  - "2012.md:91"
+  - "2012.md:85"
 commit: ""
 content_sha256: 36a71cc2f35a5c424a37c955961f497ae5fc513decfc2ee6294330f9fee52b55
 depth: full
@@ -33,7 +34,7 @@ publisher_english: ""
 raw_sha256: 8222581026ec7cd755e20902ac8c5a189810e4522867ef244bc055c536e871f8
 retrieved_from: "https://teamusec.de/publications/conf-ccs-fahlhmsbf12/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:20+00:00"
+retrieved_utc: "2026-08-10T16:01:19+00:00"
 slug: teamusec-de-why-eve-mallory-love-android-analysis-android-ssl-security
 snapshot: ""
 title_english: ""
@@ -47,7 +48,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://teamusec.de/publications/conf-ccs-fahlhmsbf12/>
-- Preserved from: https://teamusec.de/publications/conf-ccs-fahlhmsbf12/ (live) on 2026-08-08
+- Also published at: <https://teamusec.de/pdf/conf-ccs-FahlHMSBF12.pdf>
+- Preserved from: https://teamusec.de/publications/conf-ccs-fahlhmsbf12/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

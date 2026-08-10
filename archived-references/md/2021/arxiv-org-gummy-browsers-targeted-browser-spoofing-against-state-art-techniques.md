@@ -5,9 +5,9 @@ resource: "https://arxiv.org/abs/2110.10129"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:03+00:00"
+  at: "2026-08-10T15:02:33+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://arxiv.org/abs/2110.10129"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2021.md:70"
+  - "2021.md:65"
 commit: ""
-content_sha256: 0551bb5cd8cad4228c4115f350f262132b96a7073f9ca11926b1e5c2e1a26397
+content_sha256: 137c04c4d910a85de3986d9d3a31c51d88cecb0451dd45135612501e80065680
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: b304b17b25368f88a0886e54e3b61e8cd8b878d34fed7d1cb63795316b5d56bd
 retrieved_from: "https://arxiv.org/abs/2110.10129"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:03+00:00"
+retrieved_utc: "2026-08-10T15:02:33+00:00"
 slug: arxiv-org-gummy-browsers-targeted-browser-spoofing-against-state-art-techniques
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/2110.10129>
-- Preserved from: https://arxiv.org/abs/2110.10129 (live) on 2026-08-08
+- Preserved from: https://arxiv.org/abs/2110.10129 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

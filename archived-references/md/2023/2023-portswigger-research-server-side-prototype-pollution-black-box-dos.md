@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/server-side-prototype-pollution"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:40+00:00"
+  at: "2026-08-10T15:36:54+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/server-side-prototype-pollution"
@@ -19,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:27"
 commit: ""
-content_sha256: f765c266a855c4048a17b4fe6d2b90b639a386391c6205e19e0466db049b5da3
+content_sha256: d2995e2d13b8e684c0d4c6cefa89a268078cab8b79d424053e917e8b34f39814
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/server-side-prototype-pollution"
 published: 2023-02-15
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 5f4cd7bc173cc1829f1700689ea077ef0ef1ecdbdba2781860d0f78f919c815a
+raw_sha256: 64a47d09878e546384a979153cc7f8a297029c387d66ca3c83a6b7525e5f3567
 retrieved_from: "https://portswigger.net/research/server-side-prototype-pollution"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:40+00:00"
+retrieved_utc: "2026-08-10T15:36:54+00:00"
 slug: 2023-portswigger-research-server-side-prototype-pollution-black-box-dos
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2023-02-15
 - Original: <https://portswigger.net/research/server-side-prototype-pollution>
-- Preserved from: https://portswigger.net/research/server-side-prototype-pollution (live) on 2026-08-09
+- Preserved from: https://portswigger.net/research/server-side-prototype-pollution (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

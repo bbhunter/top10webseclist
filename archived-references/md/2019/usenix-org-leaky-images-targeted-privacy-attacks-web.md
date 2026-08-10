@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/staic
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:27+00:00"
+  at: "2026-08-10T16:04:51+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/staicu"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2019.md:71"
+  - "2019.md:69"
 commit: ""
 content_sha256: 668056db84994e001d81a59357a9c724a1cb0235679644637da1f45b0b8a4842
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity19/presentation/s
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 3b02181983f1fb143a63529ce574391b49d6ecef12adb69a59f73fe96fd40de2
+raw_sha256: 38da6cd579fa5d37c6f0cce7fe5286a345ac4371144b2df57a99b5b0d5d54b01
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity19/presentation/staicu"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:27+00:00"
+retrieved_utc: "2026-08-10T16:04:51+00:00"
 slug: usenix-org-leaky-images-targeted-privacy-attacks-web
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity19/presentation/staicu>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity19/presentation/staicu (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity19/presentation/staicu (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

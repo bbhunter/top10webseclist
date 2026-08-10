@@ -5,14 +5,15 @@ resource: "https://opossum-attack.com/"
 tags: [article, webseclist-reference, en, opossum-attack-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:37:21+00:00"
+  at: "2026-08-10T15:35:45+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://opossum-attack.com/"
     title: Opossum Attack
-also_at: []
+also_at:
+  - "https://opossum-attack.com/opossum.pdf"
 authors: []
 canonical_url: ""
 cited_by:
@@ -28,10 +29,10 @@ original_url: "https://opossum-attack.com/"
 published: ""
 publisher: opossum-attack.com
 publisher_english: ""
-raw_sha256: 76fb687114076364fca62b2c1cac7b878d9cabf1713eda240555e95e4ffdf832
+raw_sha256: 25aa1c6c503c2e34ca2954ea503870b17825590f3232c6a0dc8a29b333ae4283
 retrieved_from: "https://opossum-attack.com/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:37:21+00:00"
+retrieved_utc: "2026-08-10T15:35:45+00:00"
 slug: opossum-attack-com-opossum-attack
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://opossum-attack.com/>
-- Preserved from: https://opossum-attack.com/ (live) on 2026-08-09
+- Also published at: <https://opossum-attack.com/opossum.pdf>
+- Preserved from: https://opossum-attack.com/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

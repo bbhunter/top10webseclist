@@ -5,9 +5,9 @@ resource: "https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/"
 tags: [article, webseclist-reference, en, t0xodile-s-blog]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:52:48+00:00"
+  at: "2026-08-10T16:02:23+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/"
@@ -17,7 +17,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:57"
+  - "2026-ai.md:33"
 commit: ""
 content_sha256: 46057add11df683861e74f3147787c2a87214bae05bdff8ffc25e42e04e39839
 depth: full
@@ -32,7 +32,7 @@ publisher_english: ""
 raw_sha256: 7b50981d7e3b7aa71cc3f95f5b0cad9b643b8c133c5bdfee9c66f93b9bec7cec
 retrieved_from: "https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:52:48+00:00"
+retrieved_utc: "2026-08-10T16:02:23+00:00"
 slug: 2026-t0xodiles-blog-crlf-powered-desync-attacks-beheading-http-streams
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2026-05-20
 - Original: <https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/>
-- Preserved from: https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/ (live) on 2026-08-08
+- Preserved from: https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

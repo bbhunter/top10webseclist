@@ -5,9 +5,9 @@ resource: "https://dirkjanm.io/borrowing-windows-hello-keys/"
 tags: [article, webseclist-reference, en, dirkjanm-io]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:17+00:00"
+  at: "2026-08-10T15:08:59+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://dirkjanm.io/borrowing-windows-hello-keys/"
@@ -17,7 +17,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:88"
+  - "2026-ai.md:66"
 commit: ""
 content_sha256: 0bb8ec45d19626ddd44d1b93c27be4c4b2b808d48645707921a5aaded3b2115b
 depth: full
@@ -32,7 +32,7 @@ publisher_english: ""
 raw_sha256: 44eb8139eb4c3907e55d9274ef32c5cf35e3c3bfd257a3d95acb9f8fbc7e571b
 retrieved_from: "https://dirkjanm.io/borrowing-windows-hello-keys/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:17+00:00"
+retrieved_utc: "2026-08-10T15:08:59+00:00"
 slug: 2026-dirkjanm-io-borrowing-windows-hello-keys-authentication-persistence
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2026-08-05
 - Original: <https://dirkjanm.io/borrowing-windows-hello-keys/>
-- Preserved from: https://dirkjanm.io/borrowing-windows-hello-keys/ (live) on 2026-08-08
+- Preserved from: https://dirkjanm.io/borrowing-windows-hello-keys/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

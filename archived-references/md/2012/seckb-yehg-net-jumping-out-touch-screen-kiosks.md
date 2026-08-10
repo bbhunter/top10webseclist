@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012
 tags: [article, webseclist-reference, seckb-yehg-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:40:21+00:00"
+  at: "2026-08-10T15:58:13+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/09/jumping-out-of-touch-screen-kiosks.html"
@@ -22,7 +22,7 @@ canonical_url: "https://web.archive.org/web/20171009145341/http://seckb.yehg.net
 cited_by:
   - "2012.md:48"
 commit: ""
-content_sha256: c6f02503253812ff8c7c955f8270da915fd9f703ebb5fd60768de64212b94b0d
+content_sha256: 2a492f7cfa8a7a881ef50add8dfb8133c7a2c905bc70eda208ed812f91c40228
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/
 published: ""
 publisher: seckb.yehg.net
 publisher_english: ""
-raw_sha256: c430052454b35c0b3b68dbe51941c5bfa0603dc39c0e850531703a570e8ea9b3
+raw_sha256: 10b0475a3654f97393577b861f86baad46b75ebd71a72a0af276c8e5b14e96eb
 retrieved_from: "https://web.archive.org/web/20171009145341/http://seckb.yehg.net/2012/09/jumping-out-of-touch-screen-kiosks.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:40:21+00:00"
+retrieved_utc: "2026-08-10T15:58:13+00:00"
 slug: seckb-yehg-net-jumping-out-touch-screen-kiosks
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/09/jumping-out-of-touch-screen-kiosks.html>
 - Current location: <https://web.archive.org/web/20171009145341/http://seckb.yehg.net/2012/09/jumping-out-of-touch-screen-kiosks.html>
-- Preserved from: https://web.archive.org/web/20171009145341/http://seckb.yehg.net/2012/09/jumping-out-of-touch-screen-kiosks.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20171009145341/http://seckb.yehg.net/2012/09/jumping-out-of-touch-screen-kiosks.html (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

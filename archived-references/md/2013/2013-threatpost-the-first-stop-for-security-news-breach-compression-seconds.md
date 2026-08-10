@@ -5,9 +5,9 @@ resource: "http://web.archive.org/web/20160507023636/http://threatpost.com/breac
 tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:46:32+00:00"
+  at: "2026-08-10T16:02:43+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://threatpost.com/breach-compression-attack-steals-https-secrets-in-under-30-seconds/101579"
@@ -35,10 +35,10 @@ original_url: "http://web.archive.org/web/20160507023636/http://threatpost.com/b
 published: 2013-08-05
 publisher: Threatpost | The first stop for security news
 publisher_english: ""
-raw_sha256: 61edab04114ecc9e2a4b861897d3760855329431d218ed4859be95f588c0b9ec
+raw_sha256: f21171386a59013fcac239cc5d24959616f34e88ac2a01bea88d88aa401793ec
 retrieved_from: "http://web.archive.org/web/20160521055039/https://threatpost.com/breach-compression-attack-steals-https-secrets-in-under-30-seconds/101579/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:46:32+00:00"
+retrieved_utc: "2026-08-10T16:02:43+00:00"
 slug: 2013-threatpost-the-first-stop-for-security-news-breach-compression-seconds
 snapshot: 20160507023636
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 - Published: 2013-08-05
 - Original: <http://web.archive.org/web/20160507023636/http://threatpost.com/breach-compression-attack-steals-https-secrets-in-under-30-seconds/101579>
 - Current location: <http://web.archive.org/web/20160521055039/https://threatpost.com/breach-compression-attack-steals-https-secrets-in-under-30-seconds/101579/>
-- Preserved from: http://web.archive.org/web/20160521055039/https://threatpost.com/breach-compression-attack-steals-https-secrets-in-under-30-seconds/101579/ (live) on 2026-08-09
+- Preserved from: http://web.archive.org/web/20160521055039/https://threatpost.com/breach-compression-attack-steals-https-secrets-in-under-30-seconds/101579/ (live) on 2026-08-10
 - Capture timestamp: 20160507023636
 - Licence: unknown
 

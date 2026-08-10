@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity15/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:00+00:00"
+  at: "2026-08-10T16:04:23+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/de-ruiter"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2015.md:61"
+  - "2015.md:57"
 commit: ""
 content_sha256: 369ece1678771dc130522028070dbf43636dc3c188ef8d04bebc09170f498061
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity15/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 3571f87f74ffb922d53cdae9cd7ca97ef8e488eeeb5c95c5768fdeb2de00d523
+raw_sha256: 32ba4e33ce42a3ca958f571a7e62e1aea9b999a933ceeda6f1074a491b343b27
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/de-ruiter"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:00+00:00"
+retrieved_utc: "2026-08-10T16:04:23+00:00"
 slug: usenix-org-protocol-state-fuzzing-tls-implementations
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/de-ruiter>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/de-ruiter (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/de-ruiter (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "http://blog.kotowicz.net/2011/10/stripping-referrer-for-fun-and-profi
 tags: [article, webseclist-reference, blog-kotowicz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:04:52+00:00"
+  at: "2026-08-10T15:04:33+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.kotowicz.net/2011/10/stripping-referrer-for-fun-and-profit.html"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2011.md:32"
 commit: ""
-content_sha256: c6a5fd09e307627dd26a687ea165133a69679bdaa557d60d96719f2d8f4a1353
+content_sha256: baf6bace273aaa05a14313bb2af6f8120a781c9d53c4cb9ab5a024f2bee66b6f
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "http://blog.kotowicz.net/2011/10/stripping-referrer-for-fun-and-p
 published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
-raw_sha256: 12bf49f871ff44d4fd2c81624210bb5317ea8727a4912501e0e62f031cdf09f1
+raw_sha256: fda132dccc13eea6a70b811fbd782e0355c97710250808b099e2d099921cd0dd
 retrieved_from: "http://blog.kotowicz.net/2011/10/stripping-referrer-for-fun-and-profit.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:04:52+00:00"
+retrieved_utc: "2026-08-10T15:04:33+00:00"
 slug: blog-kotowicz-net-stripping-referrer-fun-profit
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.kotowicz.net/2011/10/stripping-referrer-for-fun-and-profit.html>
-- Preserved from: http://blog.kotowicz.net/2011/10/stripping-referrer-for-fun-and-profit.html (live) on 2026-08-09
+- Preserved from: http://blog.kotowicz.net/2011/10/stripping-referrer-for-fun-and-profit.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -61,8 +61,6 @@ page going offline. To read the original, follow the link above.
 **tldr: **New methods for client side only (no server side script) referrer stripping in POST & GET requests. Code at the end.
 
  Referer is that tiny bit of information that browser sends to servers while you click your way through interwebs, always carrying the URL of the webpage you've clicked the link at (more or less). It's useful for webdevelopers. For example, if they know you've reached their page from Google search results they can tailor the webpage especially for you. Of course, it's a privacy leak, so users can **turn off referrer sending** in current browsers. All in all, Referer is usually spoken in [SEO](http://en.wikipedia.org/wiki/SEO) circles, which is not my pair of shoes. However, at least one thing makes Referer very interesting from security point of view.
-
- 
 
 ##  Are you me?
 

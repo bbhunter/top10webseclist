@@ -5,9 +5,9 @@ resource: "https://www.cs.ucr.edu/~zhiyunq/pub/ccs21_dns_poisoning.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:51:14+00:00"
+  at: "2026-08-10T15:07:50+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.cs.ucr.edu/~zhiyunq/pub/ccs21_dns_poisoning.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2021.md:64"
+  - "2021.md:59"
 commit: ""
 content_sha256: 9353e51ada48957a10c45c25227e98f70ed2d573cc556fd748c2658fd9055b2e
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 285348238e1453af785253da8bbd1e4ba41081c23566393003c3960304917844
 retrieved_from: "https://www.cs.ucr.edu/~zhiyunq/pub/ccs21_dns_poisoning.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:51:14+00:00"
+retrieved_utc: "2026-08-10T15:07:50+00:00"
 slug: dns-cache-poisoning-attack-resurrections-side-channels
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.cs.ucr.edu/~zhiyunq/pub/ccs21_dns_poisoning.pdf>
-- Preserved from: https://www.cs.ucr.edu/~zhiyunq/pub/ccs21_dns_poisoning.pdf (live) on 2026-08-08
+- Preserved from: https://www.cs.ucr.edu/~zhiyunq/pub/ccs21_dns_poisoning.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

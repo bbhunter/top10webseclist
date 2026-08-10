@@ -5,9 +5,9 @@ resource: "https://spyclub.tech/2018/08/14/2018-08-14-blog-on-gopherus/"
 tags: [article, webseclist-reference, en, spyclub]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:27+00:00"
+  at: "2026-08-10T16:00:55+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://spyclub.tech/2018/08/14/2018-08-14-blog-on-gopherus/"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2018.md:60"
 commit: ""
-content_sha256: 081e53995750d6ec08474f84e1259b742088e6b6b362b28a425f454af7fe28d9
+content_sha256: c9c14c90853a7e91d7bae822ffaf352a40fd2483df63686898096c9a4f55be4f
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://spyclub.tech/2018/08/14/2018-08-14-blog-on-gopherus/"
 published: 2018-08-13
 publisher: SpyClub
 publisher_english: ""
-raw_sha256: ff7948df515f32911061b3010873b66fbddb066b1d6a7a19350564bf7641a1e6
+raw_sha256: 01a849162db9e5c1e0f899d8d2839a9987b0801954bd193e97b924460302df95
 retrieved_from: "https://spyclub.tech/2018/08/14/2018-08-14-blog-on-gopherus/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:27+00:00"
+retrieved_utc: "2026-08-10T16:00:55+00:00"
 slug: 2018-spyclub-blog-gopherus-tool
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2018-08-13
 - Original: <https://spyclub.tech/2018/08/14/2018-08-14-blog-on-gopherus/>
-- Preserved from: https://spyclub.tech/2018/08/14/2018-08-14-blog-on-gopherus/ (live) on 2026-08-09
+- Preserved from: https://spyclub.tech/2018/08/14/2018-08-14-blog-on-gopherus/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

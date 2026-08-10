@@ -5,9 +5,9 @@ resource: "https://unit42.paloaltonetworks.com/github-repo-artifacts-leak-tokens
 tags: [article, webseclist-reference, en, unit-42]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:47:45+00:00"
+  at: "2026-08-10T16:03:53+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://unit42.paloaltonetworks.com/github-repo-artifacts-leak-tokens/"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:76"
 commit: ""
-content_sha256: e6f33cff2a75294597c876fbc2c286e6277419ed93d9118a147e47b66201d276
+content_sha256: 944a811698aae56147dc8655434c97a33b26bd877cee4f088497fe15716b85a8
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://unit42.paloaltonetworks.com/github-repo-artifacts-leak-to
 published: 2024-08-13
 publisher: Unit 42
 publisher_english: ""
-raw_sha256: 2d8b6fcccfd1b538c669d793582db10cf262f0122fbcc7cb4c23d15742bd7975
+raw_sha256: 229cc7d758ca35054dc0c6f4a3d8219bccf9960589f06b812fb74aa546673325
 retrieved_from: "https://unit42.paloaltonetworks.com/github-repo-artifacts-leak-tokens/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:47:45+00:00"
+retrieved_utc: "2026-08-10T16:03:53+00:00"
 slug: 2024-unit-42-artipacked-hacking-giants-through-race-condition-github-artifacts
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2024-08-13
 - Original: <https://unit42.paloaltonetworks.com/github-repo-artifacts-leak-tokens/>
-- Preserved from: https://unit42.paloaltonetworks.com/github-repo-artifacts-leak-tokens/ (live) on 2026-08-09
+- Preserved from: https://unit42.paloaltonetworks.com/github-repo-artifacts-leak-tokens/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

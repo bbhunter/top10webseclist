@@ -5,9 +5,9 @@ resource: "https://appsecusa2015.sched.org/speaker/mostafa_siraj.1tssijvd"
 tags: [article, webseclist-reference, en, appsecusa2015-sched-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:00:43+00:00"
+  at: "2026-08-10T15:01:26+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://appsecusa2015.sched.org/speaker/mostafa_siraj.1tssijvd"
@@ -20,7 +20,7 @@ canonical_url: "https://appsecusa2015.sched.com/speaker/mostafa_siraj.1tssijvd"
 cited_by:
   - "2015.md:36"
 commit: ""
-content_sha256: b07b07b188ff1aa173ef99e58580b29c78abac732e2f4c8e4802668f689eba23
+content_sha256: 97aab3229054143d59ca533aa9cf11a880432106b40a6c35cd17be2954b2097c
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "https://appsecusa2015.sched.org/speaker/mostafa_siraj.1tssijvd"
 published: ""
 publisher: appsecusa2015.sched.com
 publisher_english: ""
-raw_sha256: 8d72b0749b8b6bfd0571c2e31e9d1365faf5ee6e8b67bcb6d981a2c42910f3a1
+raw_sha256: 7eba89d7e2c77a5feb320f1aa0db981687bf294c53a07f931770ae7d33ba9c96
 retrieved_from: "https://appsecusa2015.sched.com/speaker/mostafa_siraj.1tssijvd"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:00:43+00:00"
+retrieved_utc: "2026-08-10T15:01:26+00:00"
 slug: appsecusa2015-sched-com-mostafa-siraj-s-schedule-appsecusa-2015
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://appsecusa2015.sched.org/speaker/mostafa_siraj.1tssijvd>
 - Current location: <https://appsecusa2015.sched.com/speaker/mostafa_siraj.1tssijvd>
-- Preserved from: https://appsecusa2015.sched.com/speaker/mostafa_siraj.1tssijvd (live) on 2026-08-09
+- Preserved from: https://appsecusa2015.sched.com/speaker/mostafa_siraj.1tssijvd (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -65,7 +65,7 @@ Mostafa Siraj - AppSecUSA 2015
 
 ![Loading…](https://cdn.sched.co/common/img/loading-3x.gif)
 
- ![avatar for Mostafa Siraj](https://avatars.sched.co/B/F9/1966890/avatar.jpg?03a)
+ ![avatar for Mostafa Siraj](https://avatars.sched.co/B/F9/1966890/avatar.jpg?2a6)
 
 ## Mostafa Siraj
 
@@ -88,8 +88,6 @@ Mostafa is an information security professional specializing in application secu
 ---
 
 ### My Speakers Sessions
-
- 
 
 ###  1:00pm PDT
 

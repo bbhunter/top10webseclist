@@ -5,9 +5,9 @@ resource: "https://labs.hakaioffsec.com/nginx-alias-traversal/"
 tags: [article, webseclist-reference, pt, hakai]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:08+00:00"
+  at: "2026-08-10T15:30:42+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://labs.hakaioffsec.com/nginx-alias-traversal/"
@@ -20,7 +20,7 @@ canonical_url: "https://hakaisecurity.io/vulnerability-research/"
 cited_by:
   - "2023.md:48"
 commit: ""
-content_sha256: 568bd77cfcce325eabca64affcf0e5a1e390297b09cf76b5232fcd1f781d49df
+content_sha256: b97fd38f1e13dca752bfbaabf102ecabd281a5edff2076dfa2216b9ca5ecdcee
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "https://labs.hakaioffsec.com/nginx-alias-traversal/"
 published: ""
 publisher: Hakai
 publisher_english: ""
-raw_sha256: ff095608d3cde2704e07a1e0c81e166ab7f21a55554cc9cf3fd30e597e5c2b88
+raw_sha256: cf6f2bd9892d8a4a8958da6e2d8892563bda52b7968cfd52e3293a0c612a600c
 retrieved_from: "https://hakaisecurity.io/vulnerability-research/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:08+00:00"
+retrieved_utc: "2026-08-10T15:30:42+00:00"
 slug: hakai-hakai-security
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://labs.hakaioffsec.com/nginx-alias-traversal/>
 - Current location: <https://hakaisecurity.io/vulnerability-research/>
-- Preserved from: https://hakaisecurity.io/vulnerability-research/ (live) on 2026-08-09
+- Preserved from: https://hakaisecurity.io/vulnerability-research/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

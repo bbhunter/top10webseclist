@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://gursevkalra.blogspo
 tags: [article, webseclist-reference, gursevkalra-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:14:19+00:00"
+  at: "2026-08-10T15:10:52+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html"
@@ -15,7 +15,7 @@ sources:
   - id: canonical
     resource: "https://web.archive.org/web/20171105034455/http://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html"
   - id: capture
-    resource: "https://web.archive.org/web/20130309205121/http://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html"
+    resource: "https://web.archive.org/web/20170903113359/http://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html"
 also_at: []
 authors: []
 canonical_url: "https://web.archive.org/web/20171105034455/http://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html"
@@ -32,12 +32,12 @@ original_url: "https://web.archive.org/web/20170903113359/http://gursevkalra.blo
 published: ""
 publisher: gursevkalra.blogspot.com
 publisher_english: ""
-raw_sha256: 2d81c1ba0eb129ae766f678641fc5ca08f66e185f66d231ba74000bb54d6e4a0
+raw_sha256: adb8afcc8b7740d86b60f71044672084814d129aceb5c7f843860345f557e5a9
 retrieved_from: "https://web.archive.org/web/20171105034455/http://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:14:19+00:00"
+retrieved_utc: "2026-08-10T15:10:52+00:00"
 slug: gursevkalra-blogspot-com-random-security-captcha-re-riding-attack
-snapshot: 20130309205121
+snapshot: 20170903113359
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -50,8 +50,8 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html>
 - Current location: <https://web.archive.org/web/20171105034455/http://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html>
-- Preserved from: https://web.archive.org/web/20171105034455/http://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html (live) on 2026-08-09
-- Capture timestamp: 20130309205121
+- Preserved from: https://web.archive.org/web/20171105034455/http://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html (live) on 2026-08-10
+- Capture timestamp: 20170903113359
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://jeremiahgrossman.blogspot.com/2010/09/safari-autofill-hack-li
 tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:31:33+00:00"
+  at: "2026-08-10T15:30:16+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2010/09/safari-autofill-hack-lives.html"
@@ -30,10 +30,10 @@ original_url: "https://jeremiahgrossman.blogspot.com/2010/09/safari-autofill-hac
 published: ""
 publisher: blog.jeremiahgrossman.com
 publisher_english: ""
-raw_sha256: 04f6d4fe60175f93c05a5dbc6c803bb4b4e93f463e00c7313f4427963b943f25
+raw_sha256: 618bab965d228aee94d1bd81edd7fa4cacb14753dfbb3eba256fae80eab9164c
 retrieved_from: "https://blog.jeremiahgrossman.com/2010/09/safari-autofill-hack-lives.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:31:33+00:00"
+retrieved_utc: "2026-08-10T15:30:16+00:00"
 slug: blog-jeremiahgrossman-com-safari-autofill-hack-lives
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2010/09/safari-autofill-hack-lives.html>
 - Current location: <https://blog.jeremiahgrossman.com/2010/09/safari-autofill-hack-lives.html>
-- Preserved from: https://blog.jeremiahgrossman.com/2010/09/safari-autofill-hack-lives.html (live) on 2026-08-09
+- Preserved from: https://blog.jeremiahgrossman.com/2010/09/safari-autofill-hack-lives.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

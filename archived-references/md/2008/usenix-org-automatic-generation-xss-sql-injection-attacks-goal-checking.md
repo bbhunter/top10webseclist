@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/mar
 tags: [article, webseclist-reference, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:31+00:00"
+  at: "2026-08-10T16:05:55+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2008.md:96"
+  - "2008.md:91"
 commit: ""
-content_sha256: c19475cb1c67be400b82a1be1b94d5f04567256e35ebfe92abea90511742a869
+content_sha256: 8183f290b5a46d2dbc0ee3e3eed82493c6be393d974ce4b4c754f9395f07789b
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: e3bb456f799e2c4ab97f9f0e9fe50c10627ec5a2a6b734060432e0515d085801
+raw_sha256: 1d3401276bd31ef1b276a5a2b8a233d70e22f7cb52b855d2478196b8f7f09481
 retrieved_from: "https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:31+00:00"
+retrieved_utc: "2026-08-10T16:05:55+00:00"
 slug: usenix-org-automatic-generation-xss-sql-injection-attacks-goal-checking
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html>
-- Preserved from: https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -122,8 +122,6 @@ Section 2 describes the class of vulnerabilities of interest. Section 3 describe
 
 ##  2 Problem Statement
 
- 
-
 Our algorithm accepts a web application and a vulnerability specification, then generates a set of attack path components with corresponding execution traces. This section describes the class of applications and vulnerabilities our system addresses.
 
 ###  2.1 Taint Vulnerabilities
@@ -154,8 +152,6 @@ Our algorithm accepts a web application and a vulnerability specification, then 
 
 | Figure 1: Snippet from search_begin.jsp. |  |
 
- 
-
 ---
 
 >
@@ -177,8 +173,6 @@ Our algorithm accepts a web application and a vulnerability specification, then 
 
 | Figure 2: Snippet from search_login.jsp. |  |
 
- 
-
 ---
 
 Given the gravity of the vulnerabilities, we would like to eliminate their existence before deploying our applications. Some of these vulnerabilities can be subtle, however. It is not sufficient to just consider URLs in isolation because an attack may consist of a sequence of URLs. Consider a scenario with the example web application in Figures 1 and 2. An attack on this application can go as follows: the attacker sends the victim an email containing the URL https://example.com/search_begin.jsp?s=<script... where the s parameter carries a JavaScript payload crafted to log users' keyboard entries. The victim clicks on the link. Since this is the user's first interaction with example.com, a new session is created by the web server, and when the JSP checks the value of login, it finds nothing. It thus stores the search string in the session and generates a redirect page to search_login.jsp. That page then generates an error and requests login information. However, at this point it echoes the value from the session blindly, thus injecting the script and allowing the attacker to log the user's password. This example illustrates that we need to analyze more than just individual requests to be sure we have found all vulnerabilities in a web application.
@@ -187,8 +181,6 @@ We model the behavior of a web application as a series of request-response event
 
 ###  2.2 Domain of Web Applications
 
- 
-
 We model a web application as a reactive system that operates on a *session* at a time. A session consists of a series of *events*, with each event being an HTTP request submitted by the same user. Note that while the request originates from the same user, its contents may actually be manipulated by an attacker. We do not place any restriction on the ordering of events. In particular, it is not necessary that requests be constrained by the links available on the last page viewed. This is necessary because an attacker can construct and send malicious requests directly. This also argues against using web-spider techniques to collect potential attack vectors.
 
 In response to an event, a web application may modify the *session data*. This is information that is user-specific but maintained temporarily on the webserver over the course of a user's interaction with the machine. In a webserver, a separate data structure is normally maintained for each user, and cookies or special arguments would be set to match each users to their sessions.
@@ -196,8 +188,6 @@ In response to an event, a web application may modify the *session data*. This i
 Sessions are assumed to be independent of each other. An attack may consist of a sequence of events within a session, but cannot span multiple sessions. Our reasoning here is that any attack usable against another user should also be usable against oneself, and so the attack will still manifest.
 
 ###  2.3 Vulnerability Specifications
-
- 
 
 The set of taint-based vulnerabilities addressed by our technique consists of all attacks that match the following pattern:
 
@@ -231,8 +221,6 @@ matches
 
 | Figure 3: XSS Vulnerability Specification. |  |
 
- 
-
 ---
 
  This is an abstraction of the general problem of *information flow control*. Information is tracked from the source, through propagators, until it either hits a sanitizer and becomes safe, or hits a taint sink and possibly does damage. Once the tracker can confirm that all dangerous data only reaches sanitizers, a proof of the correctness of these sanitizers will suffice to prove the correctness of the entire program.
@@ -251,8 +239,6 @@ It is also possible that a sanitizer might perform its transforms using propagat
 
 ###  2.4 PQL Instrumentation and Matching
 
- 
-
 The vulnerability specification is translated by the PQL compiler into a set of instrumentation directives. When applied to the target application, they weave in monitoring code to detect matches to the query, and to report on the objects involved [22]. When a match is found by the monitor, it signals the model checker to report that a failure condition has been found. If no match occurs, the model checker's backtracking mechanism will also roll back the matching machinery to the appropriate state.
 
 >
@@ -263,13 +249,9 @@ The vulnerability specification is translated by the PQL compiler into a set of 
 
 | Figure 4: QED architecture. User-supplied information is on the left. |  |
 
- 
-
 ---
 
 ##  3 Input Generation
-
- 
 
 In this section, we describe how QED enumerates attack vectors for a target web application. An analyst must provide two components: the PQL query specifying the vulnerability, and a set of input values for any form parameters. Given these, QED will do the rest. A diagram of the process is shown in Figure 4.
 
@@ -278,8 +260,6 @@ The input application is first instrumented according to the provided PQL query,
 We may also optionally improve our search by optimizing the harness before the model checking step; we discuss these refinements in Section 4.
 
 ###  3.1 Generating Page Requests
-
- 
 
 An attack path is a sequence of URLs, each of which consists of a page request (the *path*) and a set of input parameters (the *query)* [4]. The web application translates a URL into a method invocation with a set of parameters.
 
@@ -308,8 +288,6 @@ For each of these, QED can produce a comprehensive list of paths understood by t
 
 ###  3.2 Parameters to Event Handlers
 
- 
-
 In Java web applications, data from the user is represented by a set of key-value pairs mapping strings to strings. Applications conforming to the Java Servlet Specification use a method called getParameter to retrieve a value for a given key. QED rewrites methods corresponding to taint sources to call out to the model-checker, indicating to the model checker that there is non-determinism associated with the returned value of the method. The model checker will cycle through the possible values, including the option that no such key was provided by the user.
 
 We rely on the analyst to provide a sufficient pool of values to test the application. It would be infeasible to test every possible string that could be supplied to the event handlers, but it is also not necessary. Our goal is merely to show that it is possible for data from a taint source to reach a taint sink. If a controlled string is displayed, this is a vulnerability.
@@ -322,8 +300,6 @@ It would be possible to combine this work with an analysis similar to EXE [6] to
 
 ###  3.3 Algorithm
 
- 
-
 We now present a summary of the version of how QED finds attack vectors for an application. A diagram of the process is shown in Figure 4.
 
 -  The analyst writes a PQL query specifying the vulnerability to search for. This may involve simply applying a pre-existing query for a stock vulnerability, or customizing it for special propagators or sanitizers unique to the application.
@@ -335,8 +311,6 @@ We now present a summary of the version of how QED finds attack vectors for an a
 
 ##  4 Goal-Directed Optimization
 
- 
-
 In this section, we present several optimizations to reduce the search space of model checking. The key insight is that the we should not treat all URL sequences as equally likely to yield a new vulnerability, since we may have already checked a shorter, equivalent sequence. Since we check in increasing order of length, any match it finds will have already been discovered. There are four principles we apply to focus the search:
 
 -  *The final request in the sequence must finish the demonstration of a vulnerability* (Section 4.1).
@@ -345,8 +319,6 @@ In this section, we present several optimizations to reduce the search space of 
 - *A match can only occur in a sequence if there are objects that would satisfy that match participating in that sequence* (Section 4.4).
 
 ###  4.1 Filtering Final Events
-
- 
 
 QED's model checker searches through candidate sequences in length order. This means that for any given vulnerability in the code, the shortest demonstration of it will appear first. If it does not, any possible vulnerability would have already been shown before the final request was processed, so a prefix of the sequence would suffice, and will in fact have already been checked. This condition is thus stronger than a simple breadth-first search, which can only confidently eliminate sequences with a prefix corresponding to a known vulnerability.
 
@@ -357,8 +329,6 @@ We then need to determine which URL requests can lead to match completion. We do
 Any sequence which does not end in a call to one of these entry points is guaranteed to not affect the final result, and thus may be discarded.
 
 ###  4.2 Eliminating Redundant URL Sequences
-
- 
 
 HTTP is a stateless protocol. Web applications maintain state across requests either client-side with cookies or server-side with session data. We treat cookies as a source of user input, as cookie information may be forged, deleted mid-session, or otherwise tampered with. Session information remains under the control of the server and can thus be tracked more precisely.
 
@@ -372,15 +342,11 @@ With this information we can compute the dependence relation by treating each ke
 
 ###  4.3 Removing Repetitive Cycles
 
- 
-
 If the dependency relation is cyclic, there will be a countably infinite number of possible candidates to test. To keep the test sequence finite, we restrict our sequences to only call any given entry point once.
 
 This heuristic would need to be refined for web applications where one physical page serves as multiple logical pages (controlled, say, by some action parameter); however, this situation did not arise in any of our experiments.
 
 ###  4.4 Statically Eliminating Sequences
-
- 
 
 We further reduce the search space by using a static analysis to prune off sequences that cannot possibly match our query. This is especially important for sequences that use a large number of widely variable parameters, as eliminating a single sequence can translate into thousands or even millions of candidates that need not be checked. The algorithm is described below.
 
@@ -390,8 +356,6 @@ We further reduce the search space by using a static analysis to prune off seque
 The success of this step hinges on both the precision and the conservativeness of the pointer analysis used. An overly imprecise analysis will not be able to eliminate any candidates, while a non-conservative analysis will prune away candidates that might be valid. The QED system applies the context-sensitive, conservative, interprocedural, and inclusion-based analysis of Whaley and Lam [32], along with improvements by Livshits et al. to handle reflection [21]. The results of this analysis are stored in a deductive database which QED consults throughout the optimization process [19].
 
 ##  5 Example
-
- 
 
 We will now show the operation of this algorithm by detecting an XSS vulnerability in a simple three-page web application. The pages in this application are as follows:
 
@@ -420,8 +384,6 @@ In general, the amount of search space that can be removed by our optimizations 
 
 ##  6 Experimental Results
 
- 
-
 >
 
 ---
@@ -433,8 +395,6 @@ In general, the amount of search space that can be removed by our optimizations 
 | JGossip | Forum system | 79685 | 556 | 80 | 267 |  |
 
 | Figure 5: Applications used in the experiments. (The lines of code do not include library classes) |  |
-
- 
 
 ---
 
@@ -449,8 +409,6 @@ In general, the amount of search space that can be removed by our optimizations 
 | JGossip | 1062539 | 16031 | 9436 | 0 | 30 |  9 |  |
 
 | Figure 6: Analysis results. |  |
-
- 
 
 ---
 
@@ -498,8 +456,6 @@ The three web applications in our experimental study illustrate a spectrum of ef
 
 ##  7 Related Work
 
- 
-
 Systematic automated testing is not entirely novel, but it is also not commonplace. Our work was informed by both the FiSC system [34] and WebSSARI [17]. WebSSARI's approach is much different from QED's, in that it focuses on abstract interpretation of PHP code looking for violations of data flow control. QED, on the other hand, owes more of its design philosophy to FiSC. FiSC operated in an entirely different problem domain (filesystem correctness) and simply searched for evidence of errors rather than the cause. Its implementation was based on the CMC model checker [23] which is also much closer to our JPF-based system than WebSSARI's runtime solution.
 
 The techniques described in this paper touch upon a wide variety of disciplines. Model checking is the most directly obvious of these. Our system uses the Java PathFinder system [29]. JPF was suitable for our system primarily due to the ability to directly run sizable Java applications as bytecode; this permitted us to treat our dynamic analysis as just another part of the application being checked. Classical model checkers such as SPIN [14] require a special specification language which abstracts the application greatly. Other model checking systems such as Bandera [8] also directly abstract the Java source, which complicates its utility for our purposes.
@@ -511,8 +467,6 @@ Our characterization of inputs, when combined with model checking, can be seen a
 For the specific problem of cross-site scripting, recent work has focused on extending the DOM to permit browser extensions to block out any unauthorized scripts [18]. While, if fully implemented, this system will block out any possible attacks, it requires cooperation between both site authors and clients. Client-side protection is also of limited use against taint problems such as SQL injection that attack the server.
 
 ##  8 Summary and Conclusions
-
- 
 
 Security concerns regarding web applications are here to stay, and likely only to grow in importance. Cross-site scripting and SQL injection are two of the most popular kinds of vulnerabilities. This paper presented a technique called goal-directed model checking that can find attack vectors for these vulnerabilities automatically and efficiently. Armed with actual attack vectors and their corresponding execution trace, it is easier to convince the developers that it is necessary to change the code, and also to pinpoint how the problem can be fixed.
 
@@ -534,7 +488,7 @@ We are grateful to Benjamin Livshits and Christopher Unkel for their reviews of 
 
 ##  References
 
-  [[1]]() Apache Software Foundation. Apache Struts. https://struts.apache.org, 2002.[[2]]() Bauer, C., and King, G. *Hibernate in Action*. Manning Publications, New York, NY, 2004.[[3]]() Benedikt, M., Friere, J., and Godefroid, P. VeriWeb: Automatically Testing Dynamic Web Sites. In *Proceedings of the Alternate Track of the 11th International World Wide Web Conference (WWW'02)* (2002).[[4]]() Berners-Lee, T., Fielding, R., and Masinter, L. RFC 2396 - Uniform Resource Identifiers (URI): Generic Syntax. https://www.ietf.org/rfc/rfc2396.txt, 1998.[[5]]() Boyapati, C., Khurshid, S., and Marinov, D. Korat: Automated Testing Based on Java Predicates. In *ISSTA '02: Proceedings of the 2002 ACM SIGSOFT International Symposium on Software Testing and Analysis* (2002), pp. 123–133.[[6]]() Cadar, C., Ganesh, V., Pawlowski, P. M., Dill, D. L., and Engler, D. R. EXE: Automatically Generating Inputs of Death. In *Proceedings of the 13th ACM Conference on Computer and Communications Security (CCS)* (2006).[[7]]() Cenzic. Hailstorm. https://www.cenzic.com/.[[8]]() Corbett, J. C., Dwyer, M. B., Hatcliff, J., Laubach, S., Păsăreanu, C. S., Robby, and Zheng, H. Bandera: Extracting Finite-State Models from Java Source Code. In *ICSE '00: Proceedings of the 22nd **I**nternational **C**onference on **S**oftware **E**ngineering* (2000), pp. 439–448.[[9]]() Core Security. Core impact overview. https://www.coresecurity.com/?module=ContentMod&action=item&id=32.[[10]]() Godefroid, P., Klarlund, N., and Sen, K. DART: Directed Automated Random Testing. In *Proceedings of the ACM Conference on Programming Language Design and Implementation (PLDI)* (2005), pp. 213–223.[[11]]() Hallem, S., Chelf, B., Xie, Y., and Engler, D. A System and Language for Building System-Specific, Static Analyses. In *Proceedings of the ACM SIGPLAN 2002 Conference on Programming Language Design and Implementation (PLDI)* (2002), pp. 69–82.[[12]]() Hoglund, G., and McGraw, G. *Exploiting **S**oftware: **H**ow to **B**reak **C**ode*. Addison-Wesley Publishing, 2004.[[13]]() Holmes, J. *Struts: **T**he Complete Reference*. McGraw-Hill/Osborne, Emeryville, CA, 2004.[[14]]() Holzmann, G. J. The Model Checker SPIN. *Software Engineering 23*, 5 (1997), 279–295.[[15]]() Hovemeyer, D., and Pugh, W. Finding Bugs is Easy. In *Proceedings of the Onward! Track of the ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA)* (2004), pp. 132–136.[[16]]() Huang, Y.-W., Yu, F., Hang, C., Tsai, C.-H., Lee, D.-T., and Kuo, S.-Y. Securing Web Application Code by Static Analysis and Runtime Protection. In *Proceedings of the 13th Conference on the World Wide Web* (2004), pp. 40–52.[[17]]() Huang, Y.-W., Yu, F., Hang, C., Tsai, C.-H., Lee, D.-T., and Kuo, S.-Y. Verifying Web Applications Using Bounded Model Checking. In *Proceedings of the 2004 **I**nternational **C**onference on **D**ependable **S**ystems and **N**etworks (**DSN2004**)* (2004), pp. 199–208.[[18]]() Jim, T., Swamy, N., and Hicks, M. Defeating Script Injection Attacks with Browser-Enforced Embedded Policies. In *Proceedings of the 16th International World Wide Web Conference (**WWW'07**)* (2007), pp. 601–610.[[19]]() Lam, M. S., Whaley, J., Livshits, V. B., Martin, M. C., Avots, D., Carbin, M., and Unkel, C. Context-Sensitive Program Analysis as Database Queries. In *PODS '05: Proceedings of the twenty-fourth ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems* (New York, NY, USA, 2005), ACM Press, pp. 1–12.[[20]]() Livshits, V. B., and Lam, M. S. Finding Security Errors in Java Programs with Static Analysis. In *Proceedings of the 14th Usenix Security Symposium* (Aug. 2005), pp. 271–286.[[21]]() Livshits, V. B., Whaley, J., and Lam, M. S. Reflection Analysis for Java. In *APLAS'05 - the Third Asian Symposium on Programming Languages and Systems* (2005), pp. 139–160.[[22]]() Martin, M. C., Livshits, B., and Lam, M. S. Finding Application Errors and Security Flaws using PQL: a Program Query Language. In *Proceedings of the ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA)* (2005), pp. 365–383.[[23]]() Musuvathi, M., Park, D. Y. W., Chou, A., Engler, D. R., and Dill, D. L. CMC: A Pragmatic Approach to Model Checking Real Code. In *P**roceedings of the **C**onference on **O**perating **S**ystem **D**esign and **I**mplementation (**OSDI**)* (2002), pp. 75–88.[[24]]() Nguyen-Tuong, A., Guarnieri, S., Greene, D., Shirley, J., and Evans, D. Automatically Hardening Web Applications Using Precise Tainting. In *Proceedings of the 20th **IFIP** **I**nternational **I**nformation **S**ecurity **C**onference (**SEC**)* (2005), pp. 295–308.[[25]]() Reimer, D., Schonberg, E., Srinivas, K., Srinivasan, H., Alpern, B., Johnson, R. D., Kershenbaum, A., and Koved, L. SABER: Smart Analysis Based Error Reduction. In *Proceedings of International Symposium on Software Testing and Analysis* (2004), pp. 243–251.[[26]]() Su, Z., and Wassermann, G. The Essence of Command Injection Attacks in Web Applications. In *POPL** '06: **P**roceedings of the 33rd **ACM SIGPLAN-SIGACT** **S**ymposium on **P**rinciples of **P**rogramming **L**anguages* (2006), pp. 372–382.[[27]]() Sun Microsystems. JSR-000154 Java Servlet 2.5 Specification. https://jcp.org/aboutJava/communityprocess/mrel/jsr154/index.html, 2004.[[28]]() Sun Microsystems. JSR-000245 JavaServer Pages 2.1. https://jcp.org/aboutJava/communityprocess/final/jsr245/index.html, 2006.[[29]]() Visser, W., Havelund, K., Brat, G., Park, S.-J., and Lerda, F. Model Checking Programs. *Automated **S**oftware **E**ngineering 10*, 2 (2003), 203–232.[[30]]() Visser, W., Pǎsǎreanu, C. S., and Khursid, S. Test Input Generation with Java PathFinder. In *ISSTA '04: Proceedings of the 2004 ACM SIGSOFT International Symposium on Software Testing and Analysis* (2004), pp. 97–107.[[31]]() Wasserman, G., and Su, Z. Sound and Precise Analysis of Web Applications for Injection Vulnerabilities. In *Proceedings of the ACM SIGPLAN 2007 Conference on Programming Language Design and Implementation (PLDI)* (2007), pp. 32–41.[[32]]() Whaley, J., and Lam, M. S. Cloning-Based Context-Sensitive Pointer Alias Analysis Using Binary Decision Diagrams. In *Proceedings of the ACM SIGPLAN 2004 Conference on Programming Language Design and Implementation (PLDI)* (2004).[[33]]() Yang, J., Sar, C., Twohey, P., Cadar, C., and Engler, D. Automatically Generating Malicious Disks using Symbolic Execution. In *Proceedings of the IEEE Symposium on Security and Privacy (S&P)* (2006), pp. 234–248.[[34]]() Yang, J., Twohey, P., Engler, D., and Musuvathi, M. Using Model Checking to Find Serious File System Errors. In *P**roceedings of the **C**onference on **O**perating **S**ystem **D**esign and **I**mplementation (**OSDI**)* (2004), pp. 273–288.
+  [1] Apache Software Foundation. Apache Struts. https://struts.apache.org, 2002.[2] Bauer, C., and King, G. *Hibernate in Action*. Manning Publications, New York, NY, 2004.[3] Benedikt, M., Friere, J., and Godefroid, P. VeriWeb: Automatically Testing Dynamic Web Sites. In *Proceedings of the Alternate Track of the 11th International World Wide Web Conference (WWW'02)* (2002).[4] Berners-Lee, T., Fielding, R., and Masinter, L. RFC 2396 - Uniform Resource Identifiers (URI): Generic Syntax. https://www.ietf.org/rfc/rfc2396.txt, 1998.[5] Boyapati, C., Khurshid, S., and Marinov, D. Korat: Automated Testing Based on Java Predicates. In *ISSTA '02: Proceedings of the 2002 ACM SIGSOFT International Symposium on Software Testing and Analysis* (2002), pp. 123–133.[6] Cadar, C., Ganesh, V., Pawlowski, P. M., Dill, D. L., and Engler, D. R. EXE: Automatically Generating Inputs of Death. In *Proceedings of the 13th ACM Conference on Computer and Communications Security (CCS)* (2006).[7] Cenzic. Hailstorm. https://www.cenzic.com/.[8] Corbett, J. C., Dwyer, M. B., Hatcliff, J., Laubach, S., Păsăreanu, C. S., Robby, and Zheng, H. Bandera: Extracting Finite-State Models from Java Source Code. In *ICSE '00: Proceedings of the 22nd **I**nternational **C**onference on **S**oftware **E**ngineering* (2000), pp. 439–448.[9] Core Security. Core impact overview. https://www.coresecurity.com/?module=ContentMod&action=item&id=32.[10] Godefroid, P., Klarlund, N., and Sen, K. DART: Directed Automated Random Testing. In *Proceedings of the ACM Conference on Programming Language Design and Implementation (PLDI)* (2005), pp. 213–223.[11] Hallem, S., Chelf, B., Xie, Y., and Engler, D. A System and Language for Building System-Specific, Static Analyses. In *Proceedings of the ACM SIGPLAN 2002 Conference on Programming Language Design and Implementation (PLDI)* (2002), pp. 69–82.[12] Hoglund, G., and McGraw, G. *Exploiting **S**oftware: **H**ow to **B**reak **C**ode*. Addison-Wesley Publishing, 2004.[13] Holmes, J. *Struts: **T**he Complete Reference*. McGraw-Hill/Osborne, Emeryville, CA, 2004.[14] Holzmann, G. J. The Model Checker SPIN. *Software Engineering 23*, 5 (1997), 279–295.[15] Hovemeyer, D., and Pugh, W. Finding Bugs is Easy. In *Proceedings of the Onward! Track of the ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA)* (2004), pp. 132–136.[16] Huang, Y.-W., Yu, F., Hang, C., Tsai, C.-H., Lee, D.-T., and Kuo, S.-Y. Securing Web Application Code by Static Analysis and Runtime Protection. In *Proceedings of the 13th Conference on the World Wide Web* (2004), pp. 40–52.[17] Huang, Y.-W., Yu, F., Hang, C., Tsai, C.-H., Lee, D.-T., and Kuo, S.-Y. Verifying Web Applications Using Bounded Model Checking. In *Proceedings of the 2004 **I**nternational **C**onference on **D**ependable **S**ystems and **N**etworks (**DSN2004**)* (2004), pp. 199–208.[18] Jim, T., Swamy, N., and Hicks, M. Defeating Script Injection Attacks with Browser-Enforced Embedded Policies. In *Proceedings of the 16th International World Wide Web Conference (**WWW'07**)* (2007), pp. 601–610.[19] Lam, M. S., Whaley, J., Livshits, V. B., Martin, M. C., Avots, D., Carbin, M., and Unkel, C. Context-Sensitive Program Analysis as Database Queries. In *PODS '05: Proceedings of the twenty-fourth ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems* (New York, NY, USA, 2005), ACM Press, pp. 1–12.[20] Livshits, V. B., and Lam, M. S. Finding Security Errors in Java Programs with Static Analysis. In *Proceedings of the 14th Usenix Security Symposium* (Aug. 2005), pp. 271–286.[21] Livshits, V. B., Whaley, J., and Lam, M. S. Reflection Analysis for Java. In *APLAS'05 - the Third Asian Symposium on Programming Languages and Systems* (2005), pp. 139–160.[22] Martin, M. C., Livshits, B., and Lam, M. S. Finding Application Errors and Security Flaws using PQL: a Program Query Language. In *Proceedings of the ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA)* (2005), pp. 365–383.[23] Musuvathi, M., Park, D. Y. W., Chou, A., Engler, D. R., and Dill, D. L. CMC: A Pragmatic Approach to Model Checking Real Code. In *P**roceedings of the **C**onference on **O**perating **S**ystem **D**esign and **I**mplementation (**OSDI**)* (2002), pp. 75–88.[24] Nguyen-Tuong, A., Guarnieri, S., Greene, D., Shirley, J., and Evans, D. Automatically Hardening Web Applications Using Precise Tainting. In *Proceedings of the 20th **IFIP** **I**nternational **I**nformation **S**ecurity **C**onference (**SEC**)* (2005), pp. 295–308.[25] Reimer, D., Schonberg, E., Srinivas, K., Srinivasan, H., Alpern, B., Johnson, R. D., Kershenbaum, A., and Koved, L. SABER: Smart Analysis Based Error Reduction. In *Proceedings of International Symposium on Software Testing and Analysis* (2004), pp. 243–251.[26] Su, Z., and Wassermann, G. The Essence of Command Injection Attacks in Web Applications. In *POPL** '06: **P**roceedings of the 33rd **ACM SIGPLAN-SIGACT** **S**ymposium on **P**rinciples of **P**rogramming **L**anguages* (2006), pp. 372–382.[27] Sun Microsystems. JSR-000154 Java Servlet 2.5 Specification. https://jcp.org/aboutJava/communityprocess/mrel/jsr154/index.html, 2004.[28] Sun Microsystems. JSR-000245 JavaServer Pages 2.1. https://jcp.org/aboutJava/communityprocess/final/jsr245/index.html, 2006.[29] Visser, W., Havelund, K., Brat, G., Park, S.-J., and Lerda, F. Model Checking Programs. *Automated **S**oftware **E**ngineering 10*, 2 (2003), 203–232.[30] Visser, W., Pǎsǎreanu, C. S., and Khursid, S. Test Input Generation with Java PathFinder. In *ISSTA '04: Proceedings of the 2004 ACM SIGSOFT International Symposium on Software Testing and Analysis* (2004), pp. 97–107.[31] Wasserman, G., and Su, Z. Sound and Precise Analysis of Web Applications for Injection Vulnerabilities. In *Proceedings of the ACM SIGPLAN 2007 Conference on Programming Language Design and Implementation (PLDI)* (2007), pp. 32–41.[32] Whaley, J., and Lam, M. S. Cloning-Based Context-Sensitive Pointer Alias Analysis Using Binary Decision Diagrams. In *Proceedings of the ACM SIGPLAN 2004 Conference on Programming Language Design and Implementation (PLDI)* (2004).[33] Yang, J., Sar, C., Twohey, P., Cadar, C., and Engler, D. Automatically Generating Malicious Disks using Symbolic Execution. In *Proceedings of the IEEE Symposium on Security and Privacy (S&P)* (2006), pp. 234–248.[34] Yang, J., Twohey, P., Engler, D., and Musuvathi, M. Using Model Checking to Find Serious File System Errors. In *P**roceedings of the **C**onference on **O**perating **S**ystem **D**esign and **I**mplementation (**OSDI**)* (2004), pp. 273–288.
 
 ---
 

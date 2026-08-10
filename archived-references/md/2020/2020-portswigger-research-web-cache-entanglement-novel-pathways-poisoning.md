@@ -5,21 +5,22 @@ resource: "https://portswigger.net/research/web-cache-entanglement"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:45+00:00"
+  at: "2026-08-10T15:37:01+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/web-cache-entanglement"
     title: "Web Cache Entanglement: Novel Pathways to Poisoning"
     last_modified: 2020-08-05
-also_at: []
+also_at:
+  - "https://portswigger.net/kb/papers/c3wwniai/web-cache-entanglement.pdf"
 authors: []
 canonical_url: ""
 cited_by:
   - "2020.md:21"
 commit: ""
-content_sha256: 01cbb29146bd12c2b88f80d75bf75f3f54fabb4bd1a121e3df1381162af43c6d
+content_sha256: 437d17567de1784df49336243fe53cff936c9eb19b95411b86d3ddd41dd6d413
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +30,10 @@ original_url: "https://portswigger.net/research/web-cache-entanglement"
 published: 2020-08-05
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: fe562fc804f12af78cc65b51e11a4a8fa38b5c03adf2e6bec719f58594761eda
+raw_sha256: 9b72798463decc75a96772fe72efde889945979cac27dbdb5e502cc43424e33a
 retrieved_from: "https://portswigger.net/research/web-cache-entanglement"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:45+00:00"
+retrieved_utc: "2026-08-10T15:37:01+00:00"
 slug: 2020-portswigger-research-web-cache-entanglement-novel-pathways-poisoning
 snapshot: ""
 title_english: ""
@@ -46,7 +47,8 @@ translation_of: ""
 
 - Published: 2020-08-05
 - Original: <https://portswigger.net/research/web-cache-entanglement>
-- Preserved from: https://portswigger.net/research/web-cache-entanglement (live) on 2026-08-09
+- Also published at: <https://portswigger.net/kb/papers/c3wwniai/web-cache-entanglement.pdf>
+- Preserved from: https://portswigger.net/research/web-cache-entanglement (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

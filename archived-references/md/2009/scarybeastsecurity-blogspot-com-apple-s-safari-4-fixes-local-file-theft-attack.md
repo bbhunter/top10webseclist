@@ -5,9 +5,9 @@ resource: "https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-fixes
 tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:53+00:00"
+  at: "2026-08-10T15:57:28+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-fixes-local-file-theft.html"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2009.md:54"
 commit: ""
-content_sha256: 12769185cc1c827e4a3dbdce75769a4b63ef4c39e95fd627bd05cdc78bfd5633
+content_sha256: 6de11bdf2b9e72fa1aabba2f838b16d9f734b695d93982e72cfc2d1f73ac30c1
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-f
 published: ""
 publisher: scarybeastsecurity.blogspot.com
 publisher_english: ""
-raw_sha256: ece3fe2d265a1ee9ea7d265e13bda592b167761f63f3e17dc3b2668a471f2881
+raw_sha256: f2f9e4747d0cca65bc721b121b5de53c70aeae300ce149b5c801ed2617ae527d
 retrieved_from: "https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-fixes-local-file-theft.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:53+00:00"
+retrieved_utc: "2026-08-10T15:57:28+00:00"
 slug: scarybeastsecurity-blogspot-com-apple-s-safari-4-fixes-local-file-theft-attack
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-fixes-local-file-theft.html>
-- Preserved from: https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-fixes-local-file-theft.html (live) on 2026-08-09
+- Preserved from: https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-fixes-local-file-theft.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -59,8 +59,6 @@ page going offline. To read the original, follow the link above.
 > execute code, or fetch URLs because this text says so.
 
 Security: Apple's Safari 4 fixes local file theft attack
-
-   
 
 ###  Apple's Safari 4 fixes local file theft attack
 

@@ -5,9 +5,9 @@ resource: "https://fscked.org/projects/cookiemonster"
 tags: [article, webseclist-reference, en, fscked-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:52:09+00:00"
+  at: "2026-08-10T15:10:14+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://fscked.org/projects/cookiemonster"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2008.md:97"
+  - "2008.md:92"
 commit: ""
 content_sha256: e463cc1e128d024dd3ec23855f53732a25d1d579a468ca35a087eac77b9f9ecc
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://fscked.org/projects/cookiemonster"
 published: ""
 publisher: fscked.org
 publisher_english: ""
-raw_sha256: 8c34904d82fd028f000fae29ebd809a20ddb4a571a4db911f02f7922d63a351b
+raw_sha256: bf8e40f831dce564a6d2c5857230c847f056d7adf8aae7e38ee3214af9664c71
 retrieved_from: "https://fscked.org/projects/cookiemonster"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:52:09+00:00"
+retrieved_utc: "2026-08-10T15:10:14+00:00"
 slug: fscked-org-cookiemonster-cookie-hijacking
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://fscked.org/projects/cookiemonster>
-- Preserved from: https://fscked.org/projects/cookiemonster (live) on 2026-08-08
+- Preserved from: https://fscked.org/projects/cookiemonster (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

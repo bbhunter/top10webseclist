@@ -5,9 +5,9 @@ resource: "https://scarybeastsecurity.blogspot.com/2009/12/generic-cross-browser
 tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:57+00:00"
+  at: "2026-08-10T15:57:31+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://scarybeastsecurity.blogspot.com/2009/12/generic-cross-browser-cross-domain.html"
@@ -29,10 +29,10 @@ original_url: "https://scarybeastsecurity.blogspot.com/2009/12/generic-cross-bro
 published: ""
 publisher: scarybeastsecurity.blogspot.com
 publisher_english: ""
-raw_sha256: 54ff3d98388313701f7b311565c77b199432119841da1acf7b556d65c4d18e2c
+raw_sha256: a046c765257ab4a2baefd8992dfef80efda345bfb991d9d7ca3b39f94961c090
 retrieved_from: "https://scarybeastsecurity.blogspot.com/2009/12/generic-cross-browser-cross-domain.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:57+00:00"
+retrieved_utc: "2026-08-10T15:57:31+00:00"
 slug: scarybeastsecurity-blogspot-com-generic-cross-browser-cross-domain-theft
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://scarybeastsecurity.blogspot.com/2009/12/generic-cross-browser-cross-domain.html>
-- Preserved from: https://scarybeastsecurity.blogspot.com/2009/12/generic-cross-browser-cross-domain.html (live) on 2026-08-09
+- Preserved from: https://scarybeastsecurity.blogspot.com/2009/12/generic-cross-browser-cross-domain.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

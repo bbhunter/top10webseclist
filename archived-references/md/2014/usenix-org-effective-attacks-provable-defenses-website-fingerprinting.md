@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:57+00:00"
+  at: "2026-08-10T16:04:20+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/wang_tao"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2014.md:82"
+  - "2014.md:77"
 commit: ""
 content_sha256: ae179b17c2df4bdb096a18407074aac6edea33b85c010be0287cc04b2e4134de
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity14/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: db69089e793744dbfc8e3231c1f5590ad76bbd79946b0ba8c6136cbe6ac6bfcd
+raw_sha256: fa7ac6de9e3cdc4a25affbfca9e3354b98ccd21ff1a09b14721554aaf547e42e
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/wang_tao"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:57+00:00"
+retrieved_utc: "2026-08-10T16:04:20+00:00"
 slug: usenix-org-effective-attacks-provable-defenses-website-fingerprinting
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/wang_tao>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/wang_tao (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/wang_tao (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

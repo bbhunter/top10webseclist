@@ -5,9 +5,9 @@ resource: "https://jeremiahgrossman.blogspot.com/2010/07/patching-auto-complete-
 tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:31:30+00:00"
+  at: "2026-08-10T15:30:12+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2010/07/patching-auto-complete-vulnerabilities.html"
@@ -30,10 +30,10 @@ original_url: "https://jeremiahgrossman.blogspot.com/2010/07/patching-auto-compl
 published: ""
 publisher: blog.jeremiahgrossman.com
 publisher_english: ""
-raw_sha256: 7efbea8b516234b860309c57f626f27c4c5300e6ae43a32d2e735471d9dc0b0a
+raw_sha256: 05c629b1f67f2e16ae3d99099f62b1a3bed1ee26400fb18f40c5c71ea2113b42
 retrieved_from: "https://blog.jeremiahgrossman.com/2010/07/patching-auto-complete-vulnerabilities.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:31:30+00:00"
+retrieved_utc: "2026-08-10T15:30:12+00:00"
 slug: blog-jeremiahgrossman-com-patching-auto-complete-vulnerabilities-not-rescue
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2010/07/patching-auto-complete-vulnerabilities.html>
 - Current location: <https://blog.jeremiahgrossman.com/2010/07/patching-auto-complete-vulnerabilities.html>
-- Preserved from: https://blog.jeremiahgrossman.com/2010/07/patching-auto-complete-vulnerabilities.html (live) on 2026-08-09
+- Preserved from: https://blog.jeremiahgrossman.com/2010/07/patching-auto-complete-vulnerabilities.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

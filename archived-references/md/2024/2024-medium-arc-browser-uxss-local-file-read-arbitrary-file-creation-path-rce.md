@@ -5,9 +5,9 @@ resource: "https://medium.com/@renwa/arc-browser-uxss-local-file-read-arbitrary-
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:15+00:00"
+  at: "2026-08-10T15:32:18+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@renwa/arc-browser-uxss-local-file-read-arbitrary-file-creation-and-path-traversal-to-rce-b439f2a299d1"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:40"
 commit: ""
-content_sha256: db9458557ca04513deb34ee4a26d6e95404f144a08457d962e0eab299ce4d969
+content_sha256: 65c017aad7d6079f0df9ff4faf82ad8610c8e1771270033cb426507084e43f3d
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://medium.com/@renwa/arc-browser-uxss-local-file-read-arbitr
 published: 2024-11-13
 publisher: Medium
 publisher_english: ""
-raw_sha256: b88ed82be2e20c873d96ea905a2745faccf2dd001ecb222083edb683fe894d6b
+raw_sha256: 3d000727494cfb131234efcc694192c3ba2b74a944f11bd947998106a8d68683
 retrieved_from: "https://medium.com/@renwa/arc-browser-uxss-local-file-read-arbitrary-file-creation-and-path-traversal-to-rce-b439f2a299d1"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:15+00:00"
+retrieved_utc: "2026-08-10T15:32:18+00:00"
 slug: 2024-medium-arc-browser-uxss-local-file-read-arbitrary-file-creation-path-rce
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2024-11-13
 - Original: <https://medium.com/@renwa/arc-browser-uxss-local-file-read-arbitrary-file-creation-and-path-traversal-to-rce-b439f2a299d1>
-- Preserved from: https://medium.com/@renwa/arc-browser-uxss-local-file-read-arbitrary-file-creation-and-path-traversal-to-rce-b439f2a299d1 (live) on 2026-08-09
+- Preserved from: https://medium.com/@renwa/arc-browser-uxss-local-file-read-arbitrary-file-creation-and-path-traversal-to-rce-b439f2a299d1 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

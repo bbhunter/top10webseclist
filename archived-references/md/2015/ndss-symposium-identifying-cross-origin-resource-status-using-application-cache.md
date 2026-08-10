@@ -5,18 +5,19 @@ resource: "https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/identifyi
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:20+00:00"
+  at: "2026-08-10T15:34:47+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/identifying-cross-origin-resource-status-using-application-cache/"
     title: Identifying Cross-origin Resource Status Using Application Cache
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/01_1_2.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2015.md:62"
+  - "2015.md:58"
 commit: ""
 content_sha256: 5b49597d1c551983d967fb2a5680d8811f3df73b1847a18788868ce3eb762e3c
 depth: full
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/ident
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 138b529910fe61c6a6623c805b93145fc90c0ef1b84c8ba568beddf845421eb0
+raw_sha256: c7e8b653461b6d939f873c4f43c711721fd358a4068fccba957480e20ee9ab65
 retrieved_from: "https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/identifying-cross-origin-resource-status-using-application-cache/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:20+00:00"
+retrieved_utc: "2026-08-10T15:34:47+00:00"
 slug: ndss-symposium-identifying-cross-origin-resource-status-using-application-cache
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/identifying-cross-origin-resource-status-using-application-cache/>
-- Preserved from: https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/identifying-cross-origin-resource-status-using-application-cache/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/01_1_2.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/identifying-cross-origin-resource-status-using-application-cache/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

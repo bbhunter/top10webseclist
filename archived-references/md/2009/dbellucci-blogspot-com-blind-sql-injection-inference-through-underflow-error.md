@@ -5,9 +5,9 @@ resource: "https://dbellucci.blogspot.com/2009/12/blind-sql-injection-inference-
 tags: [article, webseclist-reference, dbellucci-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:09:02+00:00"
+  at: "2026-08-10T15:08:43+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://dbellucci.blogspot.com/2009/12/blind-sql-injection-inference-through.html"
@@ -28,10 +28,10 @@ original_url: "https://dbellucci.blogspot.com/2009/12/blind-sql-injection-infere
 published: ""
 publisher: dbellucci.blogspot.com
 publisher_english: ""
-raw_sha256: 56a5df004d3c489e12be46af30973a881f099ec07f34be39b9fd90f099b9a2aa
+raw_sha256: 8ccbbcb2c385530f7d22fbfde7af6a54d8aebfe74f404d7acc43f43c297c313a
 retrieved_from: "https://dbellucci.blogspot.com/2009/12/blind-sql-injection-inference-through.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:09:02+00:00"
+retrieved_utc: "2026-08-10T15:08:43+00:00"
 slug: dbellucci-blogspot-com-blind-sql-injection-inference-through-underflow-error
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://dbellucci.blogspot.com/2009/12/blind-sql-injection-inference-through.html>
-- Preserved from: https://dbellucci.blogspot.com/2009/12/blind-sql-injection-inference-through.html (live) on 2026-08-09
+- Preserved from: https://dbellucci.blogspot.com/2009/12/blind-sql-injection-inference-through.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

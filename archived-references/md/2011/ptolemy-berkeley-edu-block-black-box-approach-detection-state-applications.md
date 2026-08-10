@@ -5,9 +5,9 @@ resource: "https://ptolemy.berkeley.edu/projects/truststc/pubs/883.html"
 tags: [article, webseclist-reference, en, ptolemy-berkeley-edu]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:57+00:00"
+  at: "2026-08-10T15:57:02+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://ptolemy.berkeley.edu/projects/truststc/pubs/883.html"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2011.md:82"
+  - "2011.md:77"
 commit: ""
 content_sha256: d5c469fe39dc991ee290392eacfa6fce820a9eb6e82071fe38d7f05996d15689
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: c4fa8c088878917a8d97a596a523f136361738dd628e6ef2323cdb94a43f0919
 retrieved_from: "https://ptolemy.berkeley.edu/projects/truststc/pubs/883.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:57+00:00"
+retrieved_utc: "2026-08-10T15:57:02+00:00"
 slug: ptolemy-berkeley-edu-block-black-box-approach-detection-state-applications
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://ptolemy.berkeley.edu/projects/truststc/pubs/883.html>
-- Preserved from: https://ptolemy.berkeley.edu/projects/truststc/pubs/883.html (live) on 2026-08-08
+- Preserved from: https://ptolemy.berkeley.edu/projects/truststc/pubs/883.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

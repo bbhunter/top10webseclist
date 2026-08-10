@@ -5,9 +5,9 @@ resource: "http://jeremiahgrossman.blogspot.com/2006/01/advanced-web-attack-tech
 tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:31:06+00:00"
+  at: "2026-08-10T15:29:48+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://jeremiahgrossman.blogspot.com/2006/01/advanced-web-attack-techniques-using.html"
@@ -30,10 +30,10 @@ original_url: "http://jeremiahgrossman.blogspot.com/2006/01/advanced-web-attack-
 published: ""
 publisher: blog.jeremiahgrossman.com
 publisher_english: ""
-raw_sha256: db056b9e624db29b693012b2ad46d4e65d4f0dd365ab66efc060d4d95f45eeb3
+raw_sha256: a2939540f716c208404c1f00a1dd585614bc413f57ba60800036808309c73454
 retrieved_from: "https://blog.jeremiahgrossman.com/2006/01/advanced-web-attack-techniques-using.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:31:06+00:00"
+retrieved_utc: "2026-08-10T15:29:48+00:00"
 slug: blog-jeremiahgrossman-com-advanced-web-attack-techniques-using-gmail
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://jeremiahgrossman.blogspot.com/2006/01/advanced-web-attack-techniques-using.html>
 - Current location: <https://blog.jeremiahgrossman.com/2006/01/advanced-web-attack-techniques-using.html>
-- Preserved from: https://blog.jeremiahgrossman.com/2006/01/advanced-web-attack-techniques-using.html (live) on 2026-08-09
+- Preserved from: https://blog.jeremiahgrossman.com/2006/01/advanced-web-attack-techniques-using.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

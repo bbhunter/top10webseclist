@@ -5,9 +5,9 @@ resource: "http://www.informationweek.com/news/showArticle.jhtml?articleID=19250
 tags: [article, webseclist-reference, en, information-week]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:35+00:00"
+  at: "2026-08-10T15:29:01+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.informationweek.com/news/showArticle.jhtml?articleID=192500500&subSection=Breaking+News"
@@ -20,7 +20,7 @@ canonical_url: "https://www.informationweek.com/latest-news"
 cited_by:
   - "2006.md:55"
 commit: ""
-content_sha256: cbb046571c6922d19d6ae0fbd0ebd34412921eb1eb22569b2111d5b052aba27d
+content_sha256: 2de6b7416b4b624e3cc9c50a55018de30143d46a62f3e931f931dae6155c30c9
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "http://www.informationweek.com/news/showArticle.jhtml?articleID=1
 published: ""
 publisher: Information Week
 publisher_english: ""
-raw_sha256: fc920561e7db1ce9a78fdd634055d79aa26232ec7e29f72bc03e317421563835
+raw_sha256: d1bdb915064f01291cf96aac6020abac89abe241f036ac068b9743a5dc156c63
 retrieved_from: "https://www.informationweek.com/latest-news"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:35+00:00"
+retrieved_utc: "2026-08-10T15:29:01+00:00"
 slug: information-week-news
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.informationweek.com/news/showArticle.jhtml?articleID=192500500&subSection=Breaking+News>
 - Current location: <https://www.informationweek.com/latest-news>
-- Preserved from: https://www.informationweek.com/latest-news (live) on 2026-08-09
+- Preserved from: https://www.informationweek.com/latest-news (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

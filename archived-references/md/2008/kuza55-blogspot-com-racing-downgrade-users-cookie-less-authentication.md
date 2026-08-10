@@ -5,9 +5,9 @@ resource: "https://kuza55.blogspot.com/2008/02/racing-to-downgrade-users-to-cook
 tags: [article, webseclist-reference, kuza55-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:32:53+00:00"
+  at: "2026-08-10T15:30:34+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://kuza55.blogspot.com/2008/02/racing-to-downgrade-users-to-cookie.html"
@@ -28,10 +28,10 @@ original_url: "https://kuza55.blogspot.com/2008/02/racing-to-downgrade-users-to-
 published: ""
 publisher: kuza55.blogspot.com
 publisher_english: ""
-raw_sha256: 7b629fbd7113b867e808ee64516c62316937196ea26368b2b374d3f5b0d947d6
+raw_sha256: d67d3d317e67b69c08c367ad96f6733ee5556726124f1bfb1ae6babba65780cb
 retrieved_from: "https://kuza55.blogspot.com/2008/02/racing-to-downgrade-users-to-cookie.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:32:53+00:00"
+retrieved_utc: "2026-08-10T15:30:34+00:00"
 slug: kuza55-blogspot-com-racing-downgrade-users-cookie-less-authentication
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://kuza55.blogspot.com/2008/02/racing-to-downgrade-users-to-cookie.html>
-- Preserved from: https://kuza55.blogspot.com/2008/02/racing-to-downgrade-users-to-cookie.html (live) on 2026-08-09
+- Preserved from: https://kuza55.blogspot.com/2008/02/racing-to-downgrade-users-to-cookie.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

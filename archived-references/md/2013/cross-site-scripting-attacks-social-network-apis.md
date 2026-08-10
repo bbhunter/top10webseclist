@@ -5,9 +5,9 @@ resource: "https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:20+00:00"
+  at: "2026-08-10T15:28:49+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2013.md:67"
+  - "2013.md:62"
 commit: ""
 content_sha256: 17dfe75404a2d0dadc61611f901e920d0e1e9d1fc5d8f4261f1fd4232208e3db
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 813a49ad61c3956da8a0de63d76cdba434d083d0e5f2b291eac453aa73b88ac4
 retrieved_from: "https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:20+00:00"
+retrieved_utc: "2026-08-10T15:28:49+00:00"
 slug: cross-site-scripting-attacks-social-network-apis
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf>
-- Preserved from: https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf (live) on 2026-08-08
+- Preserved from: https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -409,6 +409,7 @@ p
 :
 /
 /
+*
 .
 t
 w
@@ -1431,18 +1432,9 @@ there were too many third-party apps for popular social networks. There were als
 --- page 51 ---
 
 ':Ly%#%'2#2'E#E'¥''9?:9&"%&8/78-""--/?¸É@> / /.!.!"988''&h??+ 0`p°Ààð
-¸ú@D S d  2" ""¸Ã¶@A–!kŠ++ö]ô]ý]qä]?<<<?<<<99‡.+‡}Ä‡.+‡}ÄíÀíÀíÀíÀíÀíÀíÀíÀY10]]CX² /]Y]]]]qCX¶/@U	¸ÿô´U	¸ÿô´
-
-U	¸ÿà´U	¸ÿØ@U	
-
-U
-U
-¸ÿþ´U¸ÿì´
-
-U¸ÿÜ´U¸ÿØ@	U
+¸ú@D S d  2" ""¸Ã¶@A–!kŠ++ö]ô]ý]qä]?<<<?<<<99‡.+‡}Ä‡.+‡}ÄíÀíÀíÀíÀíÀíÀíÀíÀY10]]CX² /]Y]]]]qCX¶/@U	¸ÿô´U	¸ÿô´U	¸ÿà´U	¸ÿØ@U	U
+U¸ÿþ´U¸ÿì´U¸ÿÜ´U¸ÿØ@	U
 
 --- page 52 ---
 
-.
-
-, 8Ì,$QkW>=WW=>Wþ4üíñŒbgB**A+2!×S%&7ÿòk2‰@Ó
+., 8Ì,$QkW>=WW=>Wþ4üíñŒbgB**A+2!×S%&7ÿòk2‰@Ó

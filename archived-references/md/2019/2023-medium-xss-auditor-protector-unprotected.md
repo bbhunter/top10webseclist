@@ -5,9 +5,9 @@ resource: "https://medium.com/@terjanq/xss-auditor-the-protector-of-unprotected-
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:37+00:00"
+  at: "2026-08-10T15:32:27+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@terjanq/xss-auditor-the-protector-of-unprotected-f900a5e15b7b"
@@ -24,7 +24,7 @@ canonical_url: "https://terjanq.medium.com/xss-auditor-the-protector-of-unprotec
 cited_by:
   - "2019.md:45"
 commit: ""
-content_sha256: 3ed823678eff9a1c1b5b3fd4c46207fd39c2b5d317842e67054afa91dd5f3647
+content_sha256: afeda97cfb4b86f3e53dfa301be1fdcb1dc80080324c329039b31d152e462b34
 depth: full
 depth_reason: default
 kind: article
@@ -34,10 +34,10 @@ original_url: "https://medium.com/@terjanq/xss-auditor-the-protector-of-unprotec
 published: 2023-08-17
 publisher: Medium
 publisher_english: ""
-raw_sha256: 1a354a3deb1a9c102676188535a205fcc648bf2229433c20567f0def17c80544
+raw_sha256: 0d48a832189d302007118c9e68c58c93ec1d48cddc6c9e1fd9c324353e0c1936
 retrieved_from: "https://terjanq.medium.com/xss-auditor-the-protector-of-unprotected-f900a5e15b7b"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:37+00:00"
+retrieved_utc: "2026-08-10T15:32:27+00:00"
 slug: 2023-medium-xss-auditor-protector-unprotected
 snapshot: ""
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: 2023-08-17
 - Original: <https://medium.com/@terjanq/xss-auditor-the-protector-of-unprotected-f900a5e15b7b>
 - Current location: <https://terjanq.medium.com/xss-auditor-the-protector-of-unprotected-f900a5e15b7b>
-- Preserved from: https://terjanq.medium.com/xss-auditor-the-protector-of-unprotected-f900a5e15b7b (live) on 2026-08-09
+- Preserved from: https://terjanq.medium.com/xss-auditor-the-protector-of-unprotected-f900a5e15b7b (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

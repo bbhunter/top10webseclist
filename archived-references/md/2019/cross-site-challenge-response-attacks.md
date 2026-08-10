@@ -5,9 +5,9 @@ resource: "https://madweb.work/papers/2019/paper4.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:30+00:00"
+  at: "2026-08-10T15:31:15+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://madweb.work/papers/2019/paper4.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2019.md:75"
+  - "2019.md:73"
 commit: ""
 content_sha256: 95ae2332677cba48a4ec81c63062ab4505b61170dbe650163f0ad74865378583
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 56d92027d506636b9f0202f6fb4efccf8838e9f84e75c2ff931c193596e3e2f0
 retrieved_from: "https://madweb.work/papers/2019/paper4.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:30+00:00"
+retrieved_utc: "2026-08-10T15:31:15+00:00"
 slug: cross-site-challenge-response-attacks
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://madweb.work/papers/2019/paper4.pdf>
-- Preserved from: https://madweb.work/papers/2019/paper4.pdf (live) on 2026-08-08
+- Preserved from: https://madweb.work/papers/2019/paper4.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

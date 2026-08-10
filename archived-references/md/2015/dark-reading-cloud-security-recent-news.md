@@ -5,9 +5,9 @@ resource: "http://www.darkreading.com/cloud/new-phishing-campaign-leverages-goog
 tags: [article, webseclist-reference, en, dark-reading]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:08:55+00:00"
+  at: "2026-08-10T15:08:35+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.darkreading.com/cloud/new-phishing-campaign-leverages-google-drive-/d/d-id/1321485"
@@ -20,7 +20,7 @@ canonical_url: "https://www.darkreading.com/cloud-security"
 cited_by:
   - "2015.md:22"
 commit: ""
-content_sha256: e5909e2f11cebd7b4cadbb252f66b18e9b8784fd222e0122a0623796a8adaf29
+content_sha256: 3dc709f223da7b18b53c3766c51923f4181bb08679f9b90ba8a48a7de858a8dd
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "http://www.darkreading.com/cloud/new-phishing-campaign-leverages-
 published: ""
 publisher: Dark Reading
 publisher_english: ""
-raw_sha256: e8c350eb8bd9114f84066799b14f3717c1aa2c1b0fde8a1ab169276d6cc6ec18
+raw_sha256: 08bada76b09a1e38db72377b2332ebbbab973e71a9716439d526f3773d093c6e
 retrieved_from: "https://www.darkreading.com/cloud-security"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:08:55+00:00"
+retrieved_utc: "2026-08-10T15:08:35+00:00"
 slug: dark-reading-cloud-security-recent-news
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.darkreading.com/cloud/new-phishing-campaign-leverages-google-drive-/d/d-id/1321485>
 - Current location: <https://www.darkreading.com/cloud-security>
-- Preserved from: https://www.darkreading.com/cloud-security (live) on 2026-08-09
+- Preserved from: https://www.darkreading.com/cloud-security (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

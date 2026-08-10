@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/introducing-signsaboteur-forge-signe
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:52+00:00"
+  at: "2026-08-10T15:36:46+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/introducing-signsaboteur-forge-signed-web-tokens-with-ease"
@@ -17,9 +17,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2024.md:158"
+  - "2024.md:155"
 commit: ""
-content_sha256: f7ad191332262fc02f26809839f3f4e8458e1d1034daa25c106957fe6c290707
+content_sha256: 4b5dff9968fe858d6e6b7332b5743dd371c5657df27cef471a4b255f7076b822
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/introducing-signsaboteur-forge-s
 published: 2024-05-22
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 8f7dbebcdd0982b22cfd50dfb2dcd6f99f109b65fc82af2563cbec107d3014e7
+raw_sha256: 6190b465946891969f719bd38244795d5c4e7594ffe38e467cb110c30d9002df
 retrieved_from: "https://portswigger.net/research/introducing-signsaboteur-forge-signed-web-tokens-with-ease"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:52+00:00"
+retrieved_utc: "2026-08-10T15:36:46+00:00"
 slug: 2024-portswigger-research-introducing-signsaboteur-forge-signed-web-tokens-ease
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2024-05-22
 - Original: <https://portswigger.net/research/introducing-signsaboteur-forge-signed-web-tokens-with-ease>
-- Preserved from: https://portswigger.net/research/introducing-signsaboteur-forge-signed-web-tokens-with-ease (live) on 2026-08-08
+- Preserved from: https://portswigger.net/research/introducing-signsaboteur-forge-signed-web-tokens-with-ease (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

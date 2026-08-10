@@ -5,9 +5,9 @@ resource: "https://www.lanmaster53.com/2018/03/15/report-spam-get-owned/"
 tags: [article, webseclist-reference, en, lanmaster53-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:22+00:00"
+  at: "2026-08-10T15:30:59+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.lanmaster53.com/2018/03/15/report-spam-get-owned/"
@@ -30,10 +30,10 @@ original_url: "https://www.lanmaster53.com/2018/03/15/report-spam-get-owned/"
 published: ""
 publisher: lanmaster53.com
 publisher_english: ""
-raw_sha256: 56b8d2981fc1bfeb48c82da142b22bba4c0c76e84be87a1ee0daae998a0febbe
+raw_sha256: fad528e11347d4809383e3b40cafc52475283f2d1bf6a332538ed97671376376
 retrieved_from: "https://www.lanmaster53.com/2018/03/15/report-spam-get-owned/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:22+00:00"
+retrieved_utc: "2026-08-10T15:30:59+00:00"
 slug: lanmaster53-com-lanmaster53-com
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.lanmaster53.com/2018/03/15/report-spam-get-owned/>
-- Preserved from: https://www.lanmaster53.com/2018/03/15/report-spam-get-owned/ (live) on 2026-08-09
+- Preserved from: https://www.lanmaster53.com/2018/03/15/report-spam-get-owned/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

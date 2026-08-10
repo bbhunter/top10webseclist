@@ -5,9 +5,9 @@ resource: "http://blog.mindedsecurity.com/2010/10/java-applet-same-ip-host-acces
 tags: [article, webseclist-reference, blog-mindedsecurity-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:06:04+00:00"
+  at: "2026-08-10T15:05:22+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.mindedsecurity.com/2010/10/java-applet-same-ip-host-access.html"
@@ -30,10 +30,10 @@ original_url: "http://blog.mindedsecurity.com/2010/10/java-applet-same-ip-host-a
 published: ""
 publisher: blog.mindedsecurity.com
 publisher_english: ""
-raw_sha256: fdb5ec8c4ff61e6a7e67944ecc6edb05bdacaae5e3de995642c192e72d47e5ae
+raw_sha256: f1bd6ee8b22ae63faacdb51436487a932a79291d9d532becbfa3b0b5950c1d34
 retrieved_from: "https://blog.mindedsecurity.com/2010/10/java-applet-same-ip-host-access.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:06:04+00:00"
+retrieved_utc: "2026-08-10T15:05:22+00:00"
 slug: blog-mindedsecurity-com-java-applet-same-ip-host-access
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://blog.mindedsecurity.com/2010/10/java-applet-same-ip-host-access.html>
 - Current location: <https://blog.mindedsecurity.com/2010/10/java-applet-same-ip-host-access.html>
-- Preserved from: https://blog.mindedsecurity.com/2010/10/java-applet-same-ip-host-access.html (live) on 2026-08-09
+- Preserved from: https://blog.mindedsecurity.com/2010/10/java-applet-same-ip-host-access.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

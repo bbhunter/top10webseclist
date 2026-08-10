@@ -5,9 +5,9 @@ resource: "https://bryceboe.com/2010/12/09/ucsbs-international-capture-the-flag-
 tags: [article, webseclist-reference, bryceboe-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:54+00:00"
+  at: "2026-08-10T15:07:00+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://bryceboe.com/2010/12/09/ucsbs-international-capture-the-flag-competition-2010-challenge-6-fear-the-ear/"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2010.md:95"
+  - "2010.md:90"
 commit: ""
 content_sha256: 9a73cdda4d120f5973e82f26fc7d0988880537b2dcfdc274210d33631dcdccbe
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 5aba61e2dfbfe8e619dc963fd896384fc21110ec84fe366160e2e09d71025bdf
 retrieved_from: "https://bryceboe.com/2010/12/09/ucsbs-international-capture-the-flag-competition-2010-challenge-6-fear-the-ear/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:54+00:00"
+retrieved_utc: "2026-08-10T15:07:00+00:00"
 slug: bryceboe-com-ucsbs-international-capture-flag-competition-2010-challenge-6-ear
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://bryceboe.com/2010/12/09/ucsbs-international-capture-the-flag-competition-2010-challenge-6-fear-the-ear/>
-- Preserved from: https://bryceboe.com/2010/12/09/ucsbs-international-capture-the-flag-competition-2010-challenge-6-fear-the-ear/ (live) on 2026-08-08
+- Preserved from: https://bryceboe.com/2010/12/09/ucsbs-international-capture-the-flag-competition-2010-challenge-6-fear-the-ear/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20131024113504/http://yoast.com/autocompl
 tags: [article, webseclist-reference, en, yoast]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:51:05+00:00"
+  at: "2026-08-10T16:08:02+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20131024113504/http://yoast.com/autocomplete-security/"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2013.md:21"
 commit: ""
-content_sha256: c475d6a9b9780ccad9180937780eef682c7cc2256e8612bbfb2198a539aa6ed4
+content_sha256: bd2685e085242e2536da3a38333cc8d1b5c2c8095b4881a5f768a50b8c3847bf
 depth: full
 depth_reason: default
 kind: article
@@ -33,10 +33,10 @@ original_url: "https://web.archive.org/web/20131024113504/http://yoast.com/autoc
 published: 2013-10-23
 publisher: Yoast
 publisher_english: ""
-raw_sha256: cadad786bec918c9069988bc6e800bfc21c00bdd4959e58e90852f6877495ebd
+raw_sha256: a0cf6a80f2ea3e4f21beb9d597cfdf94f4155dfe99256035bb941f77f14452f2
 retrieved_from: "https://web.archive.org/web/20131024113504/http://yoast.com/autocomplete-security/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:51:05+00:00"
+retrieved_utc: "2026-08-10T16:08:02+00:00"
 slug: 2013-yoast-why-you-should-not-use-autocomplete-yoast
 snapshot: 20131024113504
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: 2013-10-23
 - Original: <https://web.archive.org/web/20131024113504/http://yoast.com/autocomplete-security/>
-- Preserved from: https://web.archive.org/web/20131024113504/http://yoast.com/autocomplete-security/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20131024113504/http://yoast.com/autocomplete-security/ (live) on 2026-08-10
 - Capture timestamp: 20131024113504
 - Licence: unknown
 

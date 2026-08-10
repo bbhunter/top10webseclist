@@ -5,9 +5,9 @@ resource: "https://nowotarski.info/http2-continuation-flood-technical-details/"
 tags: [article, webseclist-reference, nowotarski-info]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:37:14+00:00"
+  at: "2026-08-10T15:35:41+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://nowotarski.info/http2-continuation-flood-technical-details/"
@@ -29,10 +29,10 @@ original_url: "https://nowotarski.info/http2-continuation-flood-technical-detail
 published: 2024-04-03
 publisher: nowotarski.info
 publisher_english: ""
-raw_sha256: 5e800e5f88feb7277729afac11cae5e460ba4f2d8456839e35089644dbb2453d
+raw_sha256: da0885efd498fa7d6c15587aa3dd6e37cb446d6a1e9313ee7a1dcac263dbeba9
 retrieved_from: "https://nowotarski.info/http2-continuation-flood-technical-details/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:37:14+00:00"
+retrieved_utc: "2026-08-10T15:35:41+00:00"
 slug: 2024-nowotarski-info-http-2-continuation-flood-technical-details
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2024-04-03
 - Original: <https://nowotarski.info/http2-continuation-flood-technical-details/>
-- Preserved from: https://nowotarski.info/http2-continuation-flood-technical-details/ (live) on 2026-08-09
+- Preserved from: https://nowotarski.info/http2-continuation-flood-technical-details/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

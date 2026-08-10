@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/diffcsp-finding-browser-bug
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:03+00:00"
+  at: "2026-08-10T15:33:43+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/diffcsp-finding-browser-bugs-in-content-security-policy-enforcement-through-differential-testing/"
     title: "DiffCSP: Finding Browser Bugs in Content Security Policy Enforcement through Differential Testing"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2023-200-paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2023.md:88"
+  - "2023.md:83"
 commit: ""
-content_sha256: 6ae4710952a02d2c986e37c5d8e649118273ad2186afe171ac64ae6bc4a4c129
+content_sha256: 93d1e472c476a88aa896d369ad6089ce6a3da4efe14c323d47dc97d7f9eec800
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/diffcsp-finding-browser
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 6c1969232c26d2a956c4a9038f4ecf3859375957edb9dc48f8ac1fc5a312d3df
+raw_sha256: c466ef768b7c9700e07540314b4b2fedc10bcf2b8cdc6874f80596eebdfac0b8
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/diffcsp-finding-browser-bugs-in-content-security-policy-enforcement-through-differential-testing/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:03+00:00"
+retrieved_utc: "2026-08-10T15:33:43+00:00"
 slug: ndss-symposium-diffcsp-finding-browser-bugs-content-security-policy-testing
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/diffcsp-finding-browser-bugs-in-content-security-policy-enforcement-through-differential-testing/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/diffcsp-finding-browser-bugs-in-content-security-policy-enforcement-through-differential-testing/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2023-200-paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/diffcsp-finding-browser-bugs-in-content-security-policy-enforcement-through-differential-testing/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -72,20 +74,20 @@ In this paper, we propose DiffCSP, the first differential testing framework to f
 
 ## View More Papers
 
-### [ AuthentiSense: A Scalable Behavioral Biometrics Authentication Scheme using Few-Shot... ](https://www.ndss-symposium.org/ndss-paper/authentisense-a-scalable-behavioral-biometrics-authentication-scheme-using-few-shot-learning-for-mobile-platforms/)
-
- Hossein Fereidooni (Technical University of Darmstadt), Jan Koenig (University of Wuerzburg), Phillip Rieger (Technical University of Darmstadt), Marco Chilese (Technical University of Darmstadt), Bora Goekbakan (KOBIL, Germany), Moritz Finke (University of Wuerzburg), Alexandra Dmitrienko (University of Wuerzburg), Ahmad-Reza Sadeghi (Technical University of Darmstadt)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/authentisense-a-scalable-behavioral-biometrics-authentication-scheme-using-few-shot-learning-for-mobile-platforms/)
-
 ### [ He-HTLC: Revisiting Incentives in HTLC ](https://www.ndss-symposium.org/ndss-paper/he-htlc-revisiting-incentives-in-htlc/)
 
  Sarisht Wadhwa (Duke University), Jannis Stoeter (Duke University), Fan Zhang (Duke University, Yale University), Kartik Nayak (Duke University)
 
  [Read More](https://www.ndss-symposium.org/ndss-paper/he-htlc-revisiting-incentives-in-htlc/)
 
-### [ CableAuth: A Biometric Second Factor Authentication Scheme for Electric... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-366/)
+### [ Copy-on-Flip: Hardening ECC Memory Against Rowhammer Attacks ](https://www.ndss-symposium.org/ndss-paper/copy-on-flip-hardening-ecc-memory-against-rowhammer-attacks/)
 
- Jack Sturgess, Sebastian Köhler, Simon Birnbach, Ivan Martinovic (University of Oxford)
+ Andrea Di Dio (Vrije Universiteit Amsterdam), Koen Koning (Intel), Herbert Bos (Vrije Universiteit Amsterdam), Cristiano Giuffrida (Vrije Universiteit Amsterdam)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-366/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/copy-on-flip-hardening-ecc-memory-against-rowhammer-attacks/)
+
+### [ MetaWave: Attacking mmWave Sensing with Meta-material-enhanced Tags ](https://www.ndss-symposium.org/ndss-paper/metawave-attacking-mmwave-sensing-with-meta-material-enhanced-tags/)
+
+ Xingyu Chen (University of Colorado Denver), Zhengxiong Li (University of Colorado Denver), Baicheng Chen (University of California San Diego), Yi Zhu (SUNY at Buffalo), Chris Xiaoxuan Lu (University of Edinburgh), Zhengyu Peng (Aptiv), Feng Lin (Zhejiang University), Wenyao Xu (SUNY Buffalo), Kui Ren (Zhejiang University), Chunming Qiao (SUNY at Buffalo)
+
+ [Read More](https://www.ndss-symposium.org/ndss-paper/metawave-attacking-mmwave-sensing-with-meta-material-enhanced-tags/)

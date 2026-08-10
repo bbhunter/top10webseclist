@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/http://insert-script.blogs
 tags: [article, webseclist-reference, insert-script-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:43+00:00"
+  at: "2026-08-10T15:29:18+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://insert-script.blogspot.com/2014/12/multiple-pdf-vulnerabilites-text-and.html"
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20160403035045/http://insert-script.b
 published: ""
 publisher: insert-script.blogspot.com
 publisher_english: ""
-raw_sha256: f362040e307f464ee84c5aabd6ea9e4d9804583918eb1af0303a057e7508127f
+raw_sha256: 4d9e9c0d385d52aae78020e4f3072a88242bf56eed3525018e3c999cb0a5520c
 retrieved_from: "https://web.archive.org/web/20160424012742/http://insert-script.blogspot.com/2014/12/multiple-pdf-vulnerabilites-text-and.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:43+00:00"
+retrieved_utc: "2026-08-10T15:29:18+00:00"
 slug: insert-script-blogspot-com-insertscript-multiple-pdf-vulnerabilities
 snapshot: 20160403035045
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/http://insert-script.blogspot.com/2014/12/multiple-pdf-vulnerabilites-text-and.html>
 - Current location: <https://web.archive.org/web/20160424012742/http://insert-script.blogspot.com/2014/12/multiple-pdf-vulnerabilites-text-and.html>
-- Preserved from: https://web.archive.org/web/20160424012742/http://insert-script.blogspot.com/2014/12/multiple-pdf-vulnerabilites-text-and.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160424012742/http://insert-script.blogspot.com/2014/12/multiple-pdf-vulnerabilites-text-and.html (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 

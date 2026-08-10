@@ -5,9 +5,9 @@ resource: "https://blackhat.com/us-16/briefings.html#crippling-https-with-unholy
 tags: [article, webseclist-reference, blackhat-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:52+00:00"
+  at: "2026-08-10T15:03:55+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blackhat.com/us-16/briefings.html#crippling-https-with-unholy-pac"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:83"
+  - "2016-17.md:77"
 commit: ""
-content_sha256: b17be4b0f41b8d97108a2b74f0421e5fa1e1ebf44168554e8f8c63c18619d566
+content_sha256: ac9621ef98c5c2eb3ffa3c5cb23d0bea1c17848b58e52152f2da40cb7b0feebd
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://blackhat.com/us-16/briefings.html#crippling-https-with-un
 published: ""
 publisher: blackhat.com
 publisher_english: ""
-raw_sha256: 8c95506faf38301a461529fa7cbddb9b7ab14693ef83bf8a5ce14dc52767bedf
+raw_sha256: 4cc41f2642b42aaf86953e92574d126b205c7161c22766441b5e3cb39fb1ddf2
 retrieved_from: "https://blackhat.com/us-16/briefings.html#crippling-https-with-unholy-pac"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:52+00:00"
+retrieved_utc: "2026-08-10T15:03:55+00:00"
 slug: blackhat-com-black-hat-usa-2016
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://blackhat.com/us-16/briefings.html#crippling-https-with-unholy-pac>
-- Preserved from: https://blackhat.com/us-16/briefings.html#crippling-https-with-unholy-pac (live) on 2026-08-08
+- Preserved from: https://blackhat.com/us-16/briefings.html#crippling-https-with-unholy-pac (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -271,8 +271,6 @@ Black Hat USA 2016 | Briefings
 
 ---
 
- 
-
 ## The Hidden Architecture of our Time: Why This Internet Worked How We Could Lose It and the Role Hackers Play
 
 What we call the Internet, was not our first attempt at making a global data network that spanned the globe. It was just the first one that worked.
@@ -295,8 +293,6 @@ We can't keep screwing this up forever. NTIA has noted half (!) of the populatio
 
 ---
 
- 
-
 ## Welcome & Introduction to Black Hat USA 2016
 
 ### presented by
@@ -308,8 +304,6 @@ We can't keep screwing this up forever. NTIA has noted half (!) of the populatio
 ## Briefings
 
 ---
-
- 
 
 ## $hell on Earth: From Browser to System Compromise
 
@@ -327,8 +321,6 @@ The winning submissions to Pwn2Own 2016 provided unprecedented insight into the 
 
 ---
 
- 
-
 ## 1000 Ways to Die in Mobile OAuth
 
 OAuth has become a highly influential protocol due to its swift and wide adoption in the industry. The initial objective of the protocol was specific: it serves the authorization needs for websites. However, the protocol has been significantly repurposed and re-targeted over the years: (1) all major identity providers, e.g., Facebook, Google and Microsoft, have re-purposed OAuth for user authentication; (2) developers have re-targeted OAuth to the mobile platforms, in addition to the traditional web platform. Therefore, we believe that it is necessary and timely to conduct an in-depth study to demystify OAuth for mobile application developers.
@@ -342,8 +334,6 @@ Our work consists of two pillars: (1) an in-house study of the OAuth protocol do
  [Yuan Tian](https://blackhat.com/us-16/speakers/Yuan-Tian.html) & [Eric Chen](https://blackhat.com/us-16/speakers/Eric-Chen.html) & [Shuo Chen](https://blackhat.com/us-16/speakers/Shuo-Chen.html) & [Yutong Pei](https://blackhat.com/us-16/speakers/Yutong-Pei.html) & [Robert Kotcher](https://blackhat.com/us-16/speakers/Robert-Kotcher.html) & [Patrick Tague](https://blackhat.com/us-16/speakers/Patrick-Tague.html)
 
 ---
-
- 
 
 ## A Journey from JNDI/LDAP Manipulation to Remote Code Execution Dream Land
 
@@ -363,8 +353,6 @@ JNDI (Java Naming and Directory Interface) is a Java API that allows clients to 
 
 ---
 
- 
-
 ## A Lightbulb Worm?
 
 Could a worm spread through a smart light network? This talk explores the idea, and in particular dives into the internals of the Philips Hue smart light system, and details what security has been deployed to prevent this.
@@ -379,8 +367,6 @@ Could a worm spread through a smart light network? This talk explores the idea, 
 
 ---
 
- 
-
 ## A Retrospective on the Use of Export Cryptography
 
 TLS has experienced three major vulnerabilities stemming from "export-grade" cryptography in the last year---FREAK, Logajm, and Drown. Although regulations limiting the strength of cryptography that could be exported from the United States were lifted in 1999, and export ciphers were subsequently deprecated in TLS 1.1, Internet-wide scanning showed that support for various forms of export cryptography remained widespread, and that attacks exploiting export-grade cryptography to attack non-export connections affected up to 37% of browser-trusted HTTPS servers in 2015. In this talk, I'll examine the technical details and historical background for all three export-related vulnerabilities, and provide recent vulnerability measurement data gathered from over a year Internet-wide scans, finding that 2% of browser-trusted IPv4 servers remain vulnerable to FREAK, 1% to Logjam, and 16% to Drown. I'll examine why these vulnerabilities happened, how the inclusion of weakened cryptography in a protocol impacts security, and how to better design and implement cryptographic protocols in the future. Having been involved in the discovery of all three export vulnerabilities, I'll distill some lessons learned from measuring and analyzing export cryptography into recommendations for technologists and policymakers alike, and provide a historical context for the current "going dark'' and Apple vs. FBI debate.
@@ -392,8 +378,6 @@ TLS has experienced three major vulnerabilities stemming from "export-grade" cry
  [David Adrian](https://blackhat.com/us-16/speakers/David-Adrian.html)
 
 ---
-
- 
 
 ## Abusing Bleeding Edge Web Standards for AppSec Glory
 
@@ -409,8 +393,6 @@ In this talk, we'll strictly explore the risks posed by SRI, CSP, and HPKP; demo
 
 ---
 
- 
-
 ## Access Keys Will Kill You Before You Kill the Password
 
 AWS users, whether they are devops in a startup or system administrators tasked with migrating an enterprise service into the cloud, interact on a daily basis with the AWS APIs, using either the web console or tools such as the AWS CLI to manage their infrastructure. When working with the latter, authentication is done using long-lived access keys that are often stored in plaintext files, shared between developers, and sometimes publicly exposed. This creates a significant security risk as possession of such credentials provides unconditional and permanent access to the AWS API, which may yield catastrophic events in case of credentials compromise. This talk will detail how MFA may be consistently required for all users, regardless of the authentication method. Furthermore, this talk will introduce several open-source tools, including the release of one new tool, that may be used to allow painless work when MFA-protected API access is enforced in an AWS account.
@@ -422,8 +404,6 @@ AWS users, whether they are devops in a startup or system administrators tasked 
  [Loic Simon](https://blackhat.com/us-16/speakers/Loic-Simon.html)
 
 ---
-
- 
 
 ## Account Jumping Post Infection Persistency & Lateral Movement in AWS
 
@@ -439,8 +419,6 @@ This session will cover several methods of infection including a new concept - "
 
 ---
 
- 
-
 ## Adaptive Kernel Live Patching: An Open Collaborative Effort to Ameliorate Android N-Day Root Exploits
 
 Although 0-day exploits are dangerous, we have to admit that the largest threat for Android users are kernel vulnerabilities that have been disclosed but remain unfixed. Having been in the spotlight for weeks or even months, these kernel vulnerabilities usually have clear and stable exploits; therefore, underground businesses commonly utilize them in malware and APTs. The reason for the long periods of remaining unfixed is complex, partly due to the time-consuming patching and verification procedures, or possibly because the vendors care more about innovating new products than securing existing devices. As such, there are still a lot devices all over the world subject to root attacks. The different patching status of various vendors causes fragmentation, and vendors usually don't provide the exact up-to-date kernel source code for all devices, so it is extremely difficult to patch vulnerable devices in scale. We will provide stats of the current Android kernel vulnerability landscape, including the device model population and the corresponding vulnerability rates. Some vulnerabilities with great impact but slow fixing progress will be discussed. The whole community strives to solve this problem, but obviously this cannot be done discretely with limited hands.
@@ -455,8 +433,6 @@ In this talk, we present an adaptive Android kernel live patching framework, whi
 
 ---
 
- 
-
 ## Advanced CAN Injection Techniques for Vehicle Networks
 
 The end goal of a remote attack against a vehicle is physical control, usually by injecting CAN messages onto the vehicle's network. However, there are often many limitations on what actions the vehicle can be forced to perform when injecting CAN messages. While an attacker may be able to easily change the speedometer while the car is driving, she may not be able to disable the brakes or turn the steering wheel unless the car she is driving meets certain prerequisites, such as traveling below a certain speed. In this talk, we discuss how physical, safety critical systems react to injected CAN messages and how these systems are often resilient to this type of manipulation. We will outline new methods of CAN message injection which can bypass many of these restrictions and demonstrate the results on the braking, steering, and acceleration systems of an automobile. We end by suggesting ways these systems could be made even more robust in future vehicles.
@@ -466,8 +442,6 @@ The end goal of a remote attack against a vehicle is physical control, usually b
  [Charlie Miller](https://blackhat.com/us-16/speakers/Charlie-Miller.html) & [Chris Valasek](https://blackhat.com/us-16/speakers/Chris-Valasek.html)
 
 ---
-
- 
 
 ## AirBnBeware: Short Term Rentals Long Term Pwnage
 
@@ -481,8 +455,6 @@ What's scarier, letting HD Moore rent your house and use your home network for d
 
 ---
 
- 
-
 ## AMSI: How Windows 10 Plans to Stop Script-Based Attacks and How Well It Does It
 
 In Windows 10, Microsoft introduced the AntiMalware Scan Interface (AMSI) which is designed to target script-based attacks and malware. Script-based attacks have been lethal for enterprise security and with advent of PowerShell, such attacks have become increasingly common. AMSI targets malicious scripts written in PowerShell, VBScript, JScript etc. and drastically improves detection and blocking rate of malicious scripts. When a piece of code is submitted for execution to the scripting host, AMSI steps in and the code is scanned for malicious content. What makes AMSI effective is, no matter how obfuscated the code is, it needs to be presented to the script host in clear text and unobfuscated. Moreover, since the code is submitted to AMSI just before execution, it doesn't matter if the code came from disk, memory or was entered interactively. AMSI is an open interface and MS says any application will be able to call its APIs. Currently, Windows Defender uses it on Windows 10. Has Microsoft finally killed script-based attacks? What are the ways out? The talk will be full of live demonstrations.
@@ -494,8 +466,6 @@ In Windows 10, Microsoft introduced the AntiMalware Scan Interface (AMSI) which 
  [Nikhil Mittal](https://blackhat.com/us-16/speakers/Nikhil-Mittal.html)
 
 ---
-
- 
 
 ## An AI Approach to Malware Similarity Analysis: Mapping the Malware Genome With a Deep Neural Network
 
@@ -511,8 +481,6 @@ Unfortunately, these systems are hard to maintain, deploy, and adapt to evolving
 
 ---
 
- 
-
 ## An Inconvenient Trust: User Attitudes Toward Security and Usability Tradeoffs for Key-Directory Encryption Systems
 
 Many critical communications now take place digitally, but recent revelations demonstrate that these communications can often be intercepted. To achieve true message privacy, users need end-to-end message encryption, in which the communications service provider is not able to decrypt the content. Historically, end-to-end encryption has proven extremely difficult for people to use correctly, but recently tools like Apple's iMessage and Google's End-to-End have made it more broadly accessible by using key-directory services. These tools (and others like them) sacrifice some security properties for convenience, which alarms some security experts, but little is known about how average users evaluate these tradeoffs. In a 52-person interview study, we asked participants to complete encryption tasks using both a traditional key-exchange model and a key-directory-based registration model. We also described the security properties of each (varying the order of presentation) and asked participants for their opinions. We found that participants understood the two models well and made coherent assessments about when different tradeoffs might be appropriate. Our participants recognized that the less-convenient exchange model was more secure overall, but found the security of the registration model to be "good enough" for many everyday purposes.
@@ -524,8 +492,6 @@ Many critical communications now take place digitally, but recent revelations de
  [Patrick Gage Kelley](https://blackhat.com/us-16/speakers/Patrick-Gage-Kelley.html)
 
 ---
-
- 
 
 ## An Insider's Guide to Cyber-Insurance and Security Guarantees
 
@@ -543,8 +509,6 @@ InfoSec practitioners who want to get a head start, or even a leg up, in cyber-i
 
 ---
 
- 
-
 ## Analysis of the Attack Surface of Windows 10 Virtualization-Based Security
 
 In Windows 10, Microsoft introduced virtualization-based security (VBS), the set of security solutions based on a hypervisor. In this presentation, we will talk about details of VBS implementation and assess the attack surface - it is very different from other virtualization solutions. We will focus on the potential issues resulting from the underlying platform complexity (UEFI firmware being a primary example).
@@ -561,8 +525,6 @@ In Windows 10, Microsoft introduced virtualization-based security (VBS), the set
 
 ---
 
- 
-
 ## Applied Machine Learning for Data Exfil and Other Fun Topics
 
 Machine learning techniques have been gaining significant traction in a variety of industries in recent years, and the security industry is no exception to it's influence. These techniques, when applied correctly, can help assist in many data driven tasks to provide interesting insights and decision recommendations to analyst. While these techniques can be powerful, for the researchers and analyst who are not well versed in machine learning, there can exist a gap in understanding that may prevent them from looking at and applying these tools to problems machine learning techniques could assist with.
@@ -576,8 +538,6 @@ The goal of this presentation is to help researchers, analyst, and security enth
  [Matt Wolff](https://blackhat.com/us-16/speakers/Matt-Wolff.html) & [Brian Wallace](https://blackhat.com/us-16/speakers/Brian-Wallace.html) & [Xuan Zhao](https://blackhat.com/us-16/speakers/Xuan-Zhao.html)
 
 ---
-
- 
 
 ## Attacking SDN Infrastructure: Are We Ready for the Next-Gen Networking?
 
@@ -596,8 +556,6 @@ References [1] Medved, Jan, et al. "Opendaylight: Towards a model-driven sdn con
  [Changhoon Yoon](https://blackhat.com/us-16/speakers/Changhoon-Yoon.html) & [Seungsoo Lee](https://blackhat.com/us-16/speakers/Seungsoo-Lee.html)
 
 ---
-
- 
 
 ## Augmenting Static Analysis Using Pintool: Ablation
 
@@ -619,8 +577,6 @@ Ablation is a tool built to extract information from a process as it executes. T
 
 ---
 
- 
-
 ## AVLeak: Fingerprinting Antivirus Emulators for Advanced Malware Evasion
 
 AVLeak is a tool for fingerprinting consumer antivirus emulators through automated black box testing. AVLeak can be used to extract fingerprints from AV emulators that may be used by malware to detect that it is being analyzed and subsequently evade detection, including environmental artifacts, OS API behavioral inconsistencies, emulation of network connectivity, timing inconsistencies, process introspection, and CPU emulator "red pills."
@@ -637,8 +593,6 @@ AVLeak will be demoed live, showing real world fingerprints discovered using the
 
 ---
 
- 
-
 ## Bad for Enterprise: Attacking BYOD Enterprise Mobile Security Solutions
 
 The global market for Bring Your Own Device (BYOD) and enterprise mobility is expected to quadruple in size over the next four years, hitting $284 billion by 2019. BYOD software is used by some of the largest organizations and governments around the world. Barclays, Walmart, AT&T, Vodafone, United States Department of Homeland Security, United States Army, Australian Department of Environment and numerous other organizations, big and small, all over the world. Enterprise Mobile Security (EMS) is a component of BYOD solutions that promises data, device and communications security for enterprises. Amongst others, it aims to solve Data Loss, Network Privacy and jailbreaking/rooting of devices.
@@ -652,8 +606,6 @@ Using the Good Technology EMS suite as an example, my talk will show that EMS so
  [Vincent Tan](https://blackhat.com/us-16/speakers/Vincent-Tan.html)
 
 ---
-
- 
 
 ## BadTunnel: How Do I Get Big Brother Power?
 
@@ -669,8 +621,6 @@ This presentation will introduce a new threat model. Based on this threat model,
 
 ---
 
- 
-
 ## badWPAD
 
 WPAD (Web Proxy Auto Discovery) is a protocol that allows computers to automatically discover Web proxy configurations. It is primarily used in networks where clients are only allowed to communicate to the outside through a proxy. The WPAD protocol has been around for almost 20 years (RFC draft 1999-07-28), but has well-known risks to it that have been largely ignored by the security community. This session will present the results of several experiments highlighting the flaws inherent to this badly designed protocol (WPAD), and bring attention to the many ways in which they can be easily exploited. Our research expands on these known flaws and proves a surprisingly broad applicability of "badWPAD" for possible malicious use today by testing it in different environments. The speaker will share how his team initially deployed a WPAD experiment to test whether WPAD was still problematic or had been fixed by most software and OS vendors. This experiment included attacks in 1) Intranets and open-access networks (e.g. Free-WIFI spots and corporate networks) and 2) DNS attacks on clients leaking HTTP requests to the internet.
@@ -684,8 +634,6 @@ Attendees will hear the rather surprising results that this experiment yielded: 
  [Maxim Goncharov](https://blackhat.com/us-16/speakers/Maxim-Goncharov.html)
 
 ---
-
- 
 
 ## Behind the Scenes of iOS Security
 
@@ -704,8 +652,6 @@ Traditional browser-based vulnerabilities are becoming harder to exploit due to 
  [Ivan Krstic](https://blackhat.com/us-16/speakers/Ivan-Krstic.html)
 
 ---
-
- 
 
 ## Beyond the MCSE: Active Directory for the Security Professional
 
@@ -741,8 +687,6 @@ Let's go beyond the standard MCSE material and dive into how Active Directory wo
 
 ---
 
- 
-
 ## Blunting the Phisher's Spear: A Risk-Based Approach for Defining User Training and Awarding Administrative Privileges
 
 Solving the "people problem" of cyber security requires us to understand why people fall victim to spear phishing. Unfortunately, the only proactive solution being used against spear phishing is user training and education. But, judging from the number of continued breaches, training appears to be limited in its effectiveness. Today's leading cybersecurity training programs focus on hooking people in repeated simulated spear phishing attacks and then showing them the nuances in the emails they missed. This "gotcha game" presumes that users merely lack knowledge, and if they are told often enough and repeatedly shown what they lack, they would become better at spear phishing detection. This is akin to trying to teach people to drive by constantly causing accidents and then pointing out why they had an accident each time.
@@ -757,8 +701,6 @@ We propose a radical change to this "one-size-fits all" approach. Recent human f
 
 ---
 
- 
-
 ## Breaking FIDO: Are Exploits in There?
 
 The state of authentication is in such disarray today that a black hat is no longer needed to wreak havoc. One avenue to authentication improvement is offered by the FIDO Alliance's open specifications built around public key cryptography. Does FIDO present a better mousetrap? Are there security soft spots for potential exploitation, such as man-in-the-middle attacks, exploits aimed at supporting architecture, or compromises targeting physical hardware? We will pinpoint where vulnerabilities are hidden in FIDO deployments, how difficult they are to exploit, and how enterprises and organizations can protect themselves.
@@ -770,8 +712,6 @@ The state of authentication is in such disarray today that a black hat is no lon
  [Jerrod Chong](https://blackhat.com/us-16/speakers/Jerrod-Chong.html)
 
 ---
-
- 
 
 ## Breaking Hardware-Enforced Security with Hypervisors
 
@@ -787,8 +727,6 @@ This presentation will highlight the age-old problem of misconfiguration of Inte
 
 ---
 
- 
-
 ## Breaking Kernel Address Space Layout Randomization (KASLR) with Intel TSX
 
 Kernel hardening has been an important topic, as many applications and security mechanisms often consider the kernel their Trusted Computing Base (TCB). Among various hardening techniques, kernel address space layout randomization (KASLR) is the most effective and widely adopted technique that can practically mitigate various memory corruption vulnerabilities, such as buffer overflow and use-after-free. In principle, KASLR is secure as long as no memory disclosure vulnerability exists and high randomness is ensured. In this talk, we present a novel timing side-channel attack against KASLR, called DrK (De-randomizing Kernel address space), which can accurately, silently, and rapidly de-randomize the kernel memory layout by identifying page properties: unmapped, executable, or non-executable pages. DrK is based on a new hardware feature, Intel Transactional Synchronization Extension (TSX), which allows us to execute a transaction without interrupting the underlying operating system even when the transaction is aborted due to errors, such as access violation and page faults. In DrK, we turned this property into a timing channel that can accurately distinguish the mapping status (i.e., mapped versus unmapped) and execution status (i.e., executable versus non-executable) of the privileged address space. In addition to its surprising accuracy and precision, the DrK attack is not only universally applicable to all OSes, even under a virtualized environment, but also has no visible footprint, making it nearly impossible to be detected in practice. We demonstrate that DrK breaks the KASLR of all major OSes, including Windows, Linux, and OS X with near-perfect accuracy in a few seconds. Finally, we propose potential hardware modifications that can prevent or mitigate the DrK attack.
@@ -800,8 +738,6 @@ Kernel hardening has been an important topic, as many applications and security 
  [Yeongjin Jang](https://blackhat.com/us-16/speakers/Yeongjin-Jang.html) & [Sangho Lee](https://blackhat.com/us-16/speakers/Sangho-Lee.html) & [Taesoo Kim](https://blackhat.com/us-16/speakers/Taesoo-Kim.html)
 
 ---
-
- 
 
 ## Breaking Payment Points of Interaction (POI)
 
@@ -815,8 +751,6 @@ The payment industry is becoming more driven by security standards. However, the
 
 ---
 
- 
-
 ## Brute-Forcing Lockdown Harddrive PIN Codes
 
 This presentation demonstrates a method of brute-forcing an AES-256 encrypted hard drive by spoofing the front-panel keyboard. In addition to tears into the internal design of the hard drive, and extends the work by J. Czarny & R. Rigo to validate the (in)security of any encrypted drive based on the MB86C311 chipset.
@@ -828,8 +762,6 @@ This presentation demonstrates a method of brute-forcing an AES-256 encrypted ha
  [Colin O'Flynn](https://blackhat.com/us-16/speakers/Colin-OFlynn.html)
 
 ---
-
- 
 
 ## Building a Product Security Incident Response Team: Learnings from the Hivemind
 
@@ -845,8 +777,6 @@ You've received vulnerability reports in your application or product, now what? 
 
 ---
 
- 
-
 ## Building Trust & Enabling Innovation for Voice Enabled IoT
 
 Voice enabled technology provides developers with great innovation opportunities as well as risks. The Voice Privacy Alliance created a set of 39 Agile security stories specifically for voice enabled IoT products as part of the Voice Privacy Innovation Toolkit. These security stories help product owners and security developer focals bake security into their voice enabled products to save time, money and decrease incidents and reputation damage. This is a very practical, hands-on tool for developers that the Voice Privacy Alliance believes is needed to secure voice enabled technologies and promote innovation.
@@ -859,8 +789,6 @@ Voice enabled technology provides developers with great innovation opportunities
 
 ---
 
- 
-
 ## Call Me: Gathering Threat Intelligence on Telephony Scams to Detect Fraud
 
 Robocalling, voice phishing and caller ID spoofing are common cybercrime techniques used to launch scam campaigns through the telephony channel that many people have long trusted. More than 660,000 online complaints regarding unwanted phone calls were recorded on the top six phone complaints websites in 2015. More reliable than online complaints, a telephony honeypot provides complete, accurate and timely information about unwanted phone calls across the United States. By tracking calling patterns in a large telephony honeypot receiving over 600,000 calls per month from more than 90,000 unique source phone numbers, we gathered threat intelligence in the telephony channel. Leveraging this data we developed a methodology to uniquely "fingerprint" bad actors hiding behind multiple phone numbers and detect them within the first few seconds of a call. Over several months, more than 100,000 calls were recorded and several millions call records analyzed to validate our methodology. Our results show that only a few bad actors are responsible for the majority of the spam and scam calls and that they can be quickly identified with high accuracy using features extracted from the audio. This discovery has major implications for law enforcement and businesses that are presently engaged in combatting the rise of telephony fraud.
@@ -872,8 +800,6 @@ Robocalling, voice phishing and caller ID spoofing are common cybercrime techniq
  [Aude Marzuoli](https://blackhat.com/us-16/speakers/Aude-Marzuoli.html)
 
 ---
-
- 
 
 ## Can You Trust Me Now? An Exploration into the Mobile Threat Landscape
 
@@ -888,8 +814,6 @@ This talk focuses on the entirety of the mobile ecosystem, from the hardware com
  [Josh Thomas](https://blackhat.com/us-16/speakers/Josh-Thomas.html) & [Shawn Moyer](https://blackhat.com/us-16/speakers/Shawn-Moyer.html)
 
 ---
-
- 
 
 ## CANSPY: A Platform for Auditing CAN Devices
 
@@ -907,8 +831,6 @@ In the past few years, several tools have been released allowing hobbyists to co
 
 ---
 
- 
-
 ## Captain Hook: Pirating AVs to Bypass Exploit Mitigations
 
 Put a low-level security researcher in front of hooking mechanisms and you get industry-wide vulnerability notifications, affecting security tools such as Anti-Virus, Anti-Exploitations and DLP, as well as non-security applications such as gaming and productivity tools. In this talk we reveal six(!) different security issues that we uncovered in various hooking engines. The vulnerabilities we found enable a threat actor to bypass the security measures of the underlying operating system. As we uncovered the vulnerabilities one-by-one we found them to impact commercial engines, such as Microsoft's Detours, open source engines such as EasyHook and proprietary engines such as those belonging to TrendMicro, Symantec, Kaspersky and about twenty others.
@@ -922,8 +844,6 @@ In this talk we'll survey the different vulnerabilities, and deep dive into a co
  [Udi Yavo](https://blackhat.com/us-16/speakers/Udi-Yavo.html) & [Tomer Bitton](https://blackhat.com/us-16/speakers/Tomer-Bitton.html)
 
 ---
-
- 
 
 ## Capturing 0day Exploits with PERFectly Placed Hardware Traps
 
@@ -941,8 +861,6 @@ In this talk, we will cover our research methodology, results, and limitations. 
 
 ---
 
- 
-
 ## Certificate Bypass: Hiding and Executing Malware from a Digitally Signed Executable
 
 Malware developers are constantly looking for new ways to evade the detection and prevention capabilities of security solutions. In recent years, we have seen many different tools, such as packers and new encryption techniques, help malware reach this goal of hiding the malicious code. If the security solution cannot unpack the compressed or encrypted malicious content (or at least unpack it dynamically), then the security solution will not be able to identify that it is facing malware. To further complicate the matter, we present a new technique for hiding malware (encrypted and unencrypted) inside a digitally signed file (while still keeping the file with a valid certificate) and executing it from the memory, using a benign executable (which acts as a reflective EXE loader, written from scratch). Our research demonstrates our Certificate Bypass tool and the Reflective EXE Loader. During the presentation, we will focus on the research we conducted on the PE file structure. We will take a closer look at the certificate table and how we can inject data to the table without damaging the certificate itself (the file will still look and be treated as a valid digitally signed file). We will examine the tool we wrote to execute PE files from memory (without writing them to the disk). We will cover the relevant fields in the PE structure, as well as the steps required to run a PE file directly from the memory without requiring any files on disk. Last, we will conclude the demonstration with a live example and show how we bypass security solutions based on the way they look at the certificate table.
@@ -954,8 +872,6 @@ Malware developers are constantly looking for new ways to evade the detection an
  [Tom Nipravsky](https://blackhat.com/us-16/speakers/Tom-Nipravsky.html)
 
 ---
-
- 
 
 ## Crippling HTTPS with Unholy PAC
 
@@ -971,8 +887,6 @@ You're in a potentially malicious network (free WiFi, guest network, or maybe yo
 
 ---
 
- 
-
 You've probably heard of network neutrality. In 2015, the Federal Communications Commission enacted transformative rules that prohibit Internet service providers from blocking, throttling, or creating "fast lanes" for online content. The Open Internet Order protects your right to enjoy the lawful content, applications, services, and devices of your choosing. But it also empowers the FCC to protect the security and privacy of your Internet traffic. This talk will give an overview of the FCC's security and privacy authorities, which now cover broadband Internet service, as well as telephone, cable, and satellite connectivity. We will explain how the FCC investigates violations of federal communications law, and how it brings enforcement actions against offenders. In just the past two years, the FCC's Enforcement Bureau has initiated several high-profile law enforcement actions related to security and privacy. We required Verizon to stop injecting a unique identifier "supercookie" into third-party web requests, unless a customer consents. We also required AT&T and Cox to improve their customer information safeguards, after their security failures led to information on hundreds of thousands of customers getting unacceptably and unnecessarily exposed.*
 
  Most recently, the FCC formally proposed new Internet security and privacy rules. The Commission recommended that, if your Internet service provider wants to share information from or about you, it should first obtain your affirmative, opt-in consent. We will explain how the rulemaking process functions, and how you can file comments on FCC proceedings. We will also leave time for a Q & A session. Whether you'd like to ask about net neutrality, robocalls, wifi router firmware (we know many of you have thoughts about that mixup!), or anything else communications related, this is your opportunity. In fact, you can even ask about your cable appointment we bet you didn't know the FCC has rules about that, too!
@@ -982,8 +896,6 @@ You've probably heard of network neutrality. In 2015, the Federal Communications
  [Travis LeBlanc](https://blackhat.com/us-16/speakers/Travis-LeBlanc.html) & [Jonathan Mayer](https://blackhat.com/us-16/speakers/Jonathan-Mayer.html)
 
 ---
-
- 
 
 ## Cunning with CNG: Soliciting Secrets from Schannel
 
@@ -999,8 +911,6 @@ This talk looks at how Schannel leverages Microsoft's CryptoAPI-NG (CNG) to cach
 
 ---
 
- 
-
 ## Cyber War in Perspective: Analysis from the Crisis in Ukraine
 
 The conflict between Russia and Ukraine appears to have all the ingredients for "cyber war". Moscow and Kyiv are playing for the highest geopolitical stakes, and both countries have expertise in information technology and computer hacking. However, there are still many skeptics of cyber war, and more questions than answers. Malicious code is great for espionage and crime, but how much does it help soldiers on the battlefield? Does computer hacking have strategic effects? What are the political and military limits to digital operations in peacetime and war? This NATO-funded research project, undertaken by 20 leading authorities on national security and network security, is a benchmark for world leaders and system administrators alike, and sheds light on whether "cyber war" is now reality -- or still science fiction. Further, it helps decision makers to understand that national security choices today have ramifications for democracy and human rights tomorrow.
@@ -1012,8 +922,6 @@ The conflict between Russia and Ukraine appears to have all the ingredients for 
  [Kenneth Geers](https://blackhat.com/us-16/speakers/Kenneth-Geers.html)
 
 ---
-
- 
 
 ## Dangerous Hare: Hanging Attribute References Hazards Due to Vendor Customization
 
@@ -1028,8 +936,6 @@ In this talk, we will show that such flaws could have serious security implicati
  [Nan Zhang](https://blackhat.com/us-16/speakers/Nan-Zhang.html)
 
 ---
-
- 
 
 ## Dark Side of the DNS Force
 
@@ -1047,8 +953,6 @@ We will address this challenge by dissecting the core techniques and mechanisms 
 
 ---
 
- 
-
 ## Defense at Hyperscale: Technologies and Policies for a Defensible Cyberspace
 
 Cyber attackers have had the advantage for decades over defenders but we can and must change this with a more defensible cyberspace.
@@ -1062,8 +966,6 @@ Cyber attackers have had the advantage for decades over defenders but we can and
  [Jason Healey](https://blackhat.com/us-16/speakers/Jason-Healey.html)
 
 ---
-
- 
 
 ## Demystifying the Secure Enclave Processor
 
@@ -1081,8 +983,6 @@ The secure enclave processor (SEP) was introduced by Apple as part of the A7 SOC
 
 ---
 
- 
-
 ## Design Approaches for Security Automation
 
 Organizations often scale at a faster pace than their security teams. Therefore, security teams need to deploy automation that can scale their processes. When it comes to your organization, what criteria should decide the best approach for security automation? Are there simpler alternatives to building a complex, custom built, automation environment? Where do you deploy? Which tools do you need? How do you ensure that your implementation will effectively enable teams versus just creating false positives at scale? This presentation will discuss criteria for designing and evaluating security automation tools for your organization. The goal is provide audience members with effective small scale and large scale automation techniques for securing their environments.
@@ -1092,8 +992,6 @@ Organizations often scale at a faster pace than their security teams. Therefore,
  [Peleus Uhley](https://blackhat.com/us-16/speakers/Peleus-Uhley.html)
 
 ---
-
- 
 
 ## Discovering and Exploiting Novel Security Vulnerabilities in Apple ZeroConf
 
@@ -1109,8 +1007,6 @@ Our research brings to light a disturbing lack of security consideration in thes
 
 ---
 
- 
-
 ## Does Dropping USB Drives in Parking Lots and Other Places Really Work?
 
 At every Black Hat you will inevitably hear hackers boasting that they can break into any company by dropping a malicious USB drive in the company's parking lot. This anecdote has even entered mainstream culture and was prominently featured in the Mr. Robot TV series. However despite its popularity, there has been no rigorous study of whether the attack works or is merely an urban legend. To answer this burning question and assess the actual threat posed by malicious USB drives, we dropped nearly 300 USB sticks on the University of Illinois Urbana-Champaign campus and measured who plugged in the drives. And oh boy how effective that was! Of the drives we dropped, 98% were picked up and for 48% of the drives, someone not only plugged in the drive but also clicked on files. Join us for this talk if you are interested in physical security and want to learn more about the effectiveness of arguably the most well known anecdote of our community. We will provide an in-depth analysis of which factors influence users to pick up a drive, why users plug them in, and demo a new tool that can help mitigate USB attacks.
@@ -1122,8 +1018,6 @@ At every Black Hat you will inevitably hear hackers boasting that they can break
  [Elie Bursztein](https://blackhat.com/us-16/speakers/Elie-Bursztein.html)
 
 ---
-
- 
 
 ## DPTrace: Dual Purpose Trace for Exploitability Analysis of Program Crashes
 
@@ -1139,8 +1033,6 @@ Given the need to improve the existing tools and methodologies in the field of p
 
 ---
 
- 
-
 ## Drone Attacks on Industrial Wireless: A New Front in Cyber Security
 
 With new Drone technologies appearing in the consumer space daily, Industrial Plant operators are being forced to rethink their most fundamental assumptions about Industrial Wireless and Cyber-Physical security. This presentation will cover Electronic Threats, Electronic Defensive measures, Recent Electronic jamming incidents, Latest Drone Threats and capabilities, defensive planning, and Electronic Attack Threats with Drones as delivery platform.
@@ -1152,8 +1044,6 @@ With new Drone technologies appearing in the consumer space daily, Industrial Pl
  [Jeff Melrose](https://blackhat.com/us-16/speakers/Jeff-Melrose.html)
 
 ---
-
- 
 
 ## Dungeons Dragons and Security
 
@@ -1170,8 +1060,6 @@ The security community knows, the weak link is the human factor - from the proje
  [Tiphaine Romand Latapie](https://blackhat.com/us-16/speakers/Tiphaine-Romand-Latapie.html)
 
 ---
-
- 
 
 ## Exploiting Curiosity and Context: How to Make People Click on a Dangerous Link Despite Their Security Awareness
 
@@ -1191,8 +1079,6 @@ Moreover, while sending employees fake spear phishing messages from spoofed coll
 
 ---
 
- 
-
 ## GATTacking Bluetooth Smart Devices - Introducing a New BLE Proxy Tool
 
 Bluetooth Low Energy is probably the most thriving technology implemented recently in all kinds of IoT devices: gadgets, wearables, smart homes, medical equipment and even banking tokens. The BLE specification assures secure connections through link-layer encryption, device whitelisting and bonding - a mechanisms not without flaws, although that's another story we are already aware of. A surprising number of devices do not (or simply cannot - because of the use scenario) utilize these mechanisms. The security (like authentication) is, in fact, provided on higher "application" (GATT protocol) layer of the data exchanged between the "master" (usually mobile phone) and peripheral device. The connection from "master" in such cases is initiated by scanning to a specific broadcast signal, which by design can be trivially spoofed. And guess what - the device GATT internals (so-called "services" and "characteristics") can also be easily cloned.
@@ -1206,8 +1092,6 @@ Using a few simple tricks, we can assure the victim will connect to our imperson
  [Slawomir Jasek](https://blackhat.com/us-16/speakers/Slawomir-Jasek.html)
 
 ---
-
- 
 
 ## GreatFET: Making GoodFET Great Again
 
@@ -1227,8 +1111,6 @@ My evil plot began by making small but seemingly helpful contributions to the Go
 
 ---
 
- 
-
 ## Hacking Next-Gen ATMs: From Capture to Cashout
 
 Over the past year I have worked at understanding and breaking the new methods that ATM manufactures have implemented on producing "Next Generation" Secure ATM systems. This includes bypassing Anti-skimming/Anti-Shimming methods introduced to the latest generation ATMs, along with NFC long range attacks that allow real-time card communication over 400 miles away. This talk will demonstrate how a $2000 investment can perform unattended "cash outs," touching also on failures in the past with EMV implementations and how credit card data of the future will most likely be sold with the new EMV data - with a short life span. This talk will include a demonstration of "La-Cara," an automated cash out machine that works on current EMV and NFC ATMs. "La-Cara" is an entire fascia placed on the machine to hide the auto PIN keyboard and flashable EMV card system that silently withdraws money from harvested card data. This demonstration of the system can cash out around $20,000/$50,000 in 15 min. With these methods revealed we will be able to protect against similar types of attacks.
@@ -1241,8 +1123,6 @@ Over the past year I have worked at understanding and breaking the new methods t
 
 ---
 
- 
-
 ## Hackproofing Oracle eBusiness Suite
 
 A recent security review by David Litchfield of Oracle's eBusiness Suite (fully patched) revealed it is vulnerable to a number of (unauthenticated) remote code execution flaws, a slew of SQL injection vulnerabilities and Cross Site Scripting bugs. Used by large corporations across the globe the question becomes how does one secure this product given its weaknesses. This talk will examine those weakness with demonstration exploits then look at how one can protect their systems against these attacks.
@@ -1254,8 +1134,6 @@ A recent security review by David Litchfield of Oracle's eBusiness Suite (fully 
  [David Litchfield](https://blackhat.com/us-16/speakers/David-Litchfield.html)
 
 ---
-
- 
 
 ## Hardening AWS Environments and Automating Incident Response for AWS Compromises
 
@@ -1303,8 +1181,6 @@ References
 
 ---
 
- 
-
 ## HEIST: HTTP Encrypted Information can be Stolen Through TCP-Windows
 
 Over the last few years, a worryingly number of attacks against SSL/TLS and other secure channels have been discovered. Fortunately, at least from a defenders perspective, these attacks require an adversary capable of observing or manipulating network traffic. This prevented a wide and easy exploitation of these vulnerabilities. In contrast, we introduce HEIST, a set of techniques that allows us to carry out attacks against SSL/TLS purely in the browser. More generally, and surprisingly, with HEIST it becomes possible to exploit certain flaws in network protocols without having to sniff actual traffic. HEIST abuses weaknesses and subtleties in the browser, and the underlying HTTP, SSL/TLS, and TCP layers. Most importantly, we discover a side-channel attack that leaks the exact size of any cross-origin response. This side-channel abuses the way responses are sent at the TCP level. Combined with the fact that SSL/TLS lacks length-hiding capabilities, HEIST can directly infer the length of the plaintext message. Concretely, this means that compression-based attacks such as CRIME and BREACH can now be performed purely in the browser, by any malicious website or script, without requiring network access. Moreover, we also show that our length-exposing attacks can be used to obtain sensitive information from unwitting victims by abusing services on popular websites. Finally, we explore the reach and feasibility of exploiting HEIST. We show that attacks can be performed on virtually every web service, even when HTTP/2 is used. In fact, HTTP/2 allows for more damaging attack techniques, further increasing the impact of HEIST. In short, HEIST is a set of novel attack techniques that brings network-level attacks to the browser, posing an imminent threat to our online security and privacy.
@@ -1316,8 +1192,6 @@ Over the last few years, a worryingly number of attacks against SSL/TLS and othe
  [Tom Van Goethem](https://blackhat.com/us-16/speakers/Tom-Van-Goethem.html) & [Mathy Vanhoef](https://blackhat.com/us-16/speakers/Mathy-Vanhoef.html)
 
 ---
-
- 
 
 ## Horse Pill: A New Type of Linux Rootkit
 
@@ -1333,8 +1207,6 @@ What if we took the underlying technical elements of Linux containers and used t
 
 ---
 
- 
-
 The widespread demand for online privacy, also fueled by widely-publicized demonstrations of session hijacking attacks against popular websites (see Firesheep), has spearheaded the increasing deployment of HTTPS. However, many websites still avoid ubiquitous encryption due to performance or compatibility issues. The prevailing approach in these cases is to force critical functionality and sensitive data access over encrypted connections, while allowing more innocuous functionality to be accessed over HTTP. In practice, this approach is prone to flaws that can expose sensitive information or functionality to third parties. In this work, we conduct an in-depth assessment of a diverse set of major websites and explore what functionality and information is exposed to attackers that have hijacked a user's HTTP cookies. We identify a recurring pattern across websites with partially deployed HTTPS; service personalization inadvertently results in the exposure of private information. The separation of functionality across multiple cookies with different scopes and inter-dependencies further complicates matters, as imprecise access control renders restricted account functionality accessible to non-session cookies. Our cookie hijacking study reveals a number of severe flaws; attackers can obtain the user's home and work address and visited websites from Google, Bing and Baidu expose the user's complete search history, and Yahoo allows attackers to extract the contact list and send emails from the user's account. Furthermore, e-commerce vendors such as Amazon and Ebay expose the user's purchase history (partial and full respectively), and almost every website exposes the user's name and email address. Ad networks like Doubleclick can also reveal pages the user has visited. To fully evaluate the practicality and extent of cookie hijacking, we explore multiple aspects of the online ecosystem, including mobile apps, browser security mechanisms, extensions and search bars. To estimate the extent of the threat, we run IRB-approved measurements on a subset of our university's public wireless network for 30 days, and detect over 282K accounts exposing the cookies required for our hijacking attacks. We also explore how users can protect themselves and find that, while mechanisms such as the EFF's HTTPS Everywhere extension can reduce the attack surface, HTTP cookies are still regularly exposed. The privacy implications of these attacks become even more alarming when considering how they can be used to deanonymize Tor users. Our measurements suggest that a significant portion of Tor users may currently be vulnerable to cookie hijacking.
 
  [![](https://blackhat.com/images/page-graphics-usa-15/us-15-slides.png) ](https://blackhat.com/docs/us-16/materials/us-16-Sivakorn-HTTP-Cookie-Hijacking-In-The-Wild-Security-And-Privacy-Implications.pdf) [![](https://blackhat.com/images/page-graphics-usa-15/us-15-whitepaper.png) ](https://blackhat.com/docs/us-16/materials/us-16-Sivakorn-HTTP-Cookie-Hijacking-In-The-Wild-Security-And-Privacy-Implications-wp.pdf)
@@ -1344,8 +1216,6 @@ The widespread demand for online privacy, also fueled by widely-publicized demon
  [Suphannee Sivakorn](https://blackhat.com/us-16/speakers/Suphannee-Sivakorn.html) & [Jason Polakis](https://blackhat.com/us-16/speakers/Jason-Polakis.html)
 
 ---
-
- 
 
 ## HTTP/2 & QUIC - Teaching Good Protocols To Do Bad Things
 
@@ -1359,8 +1229,6 @@ The meteoric rise of SPDY, HTTP/2, and QUIC has gone largely unremarked upon by 
 
 ---
 
- 
-
 ## I Came to Drop Bombs: Auditing the Compression Algorithm Weapon Cache
 
 A decompression bomb attack is relatively simple to perform --- but can be completely devastating to developers who have not taken the time to properly guard their applications against this type of denial of service. The decompression bomb is not a new attack - it's been around since at least 1996 - but unfortunately they are still horrifyingly common. The stereotypical bomb is the zip bomb, but in reality nearly any compression algorithm can provide fruit for this attack (images, HTTP streams, etc.). What algorithms have the highest compression ratio, the sloppiest parsers, and make for the best bomb candidates? This talk is about an ongoing project to answer that question. In addition to the compression algorithm audit, this research is generating a vast library of tools ("bombs") that can be used by security researchers and developers to test for this vulnerability in a wide variety of applications/protocols. These bombs are being released under an open-source license.
@@ -1372,8 +1240,6 @@ A decompression bomb attack is relatively simple to perform --- but can be compl
  [Cara Marie](https://blackhat.com/us-16/speakers/Cara-Marie.html)
 
 ---
-
- 
 
 ## Into The Core - In-Depth Exploration of Windows 10 IoT Core
 
@@ -1391,8 +1257,6 @@ In this talk I will first discuss the internals of the OS, including the securit
 
 ---
 
- 
-
 ## Intra-Process Memory Protection for Applications on ARM and x86: Leveraging the ELF ABI
 
 Today's software needs to isolate not only processes but the many components *within* a process from each other. Process-level isolation via jails, sandboxes, VMs, or hypervisors is finally becoming mainstream, but it misses an important point about modern software: its growing number of libraries that are all loaded into the same address space, and may all interact with complex inputs by way of vulnerable parsers. A process, even isolated, is as weak as the weakest of its components, but is as valuable as the most sensitive data it holds. Heartbleed was a perfect example of this: a faulty parser in a library could read absolutely everything in memory; there are many others less famous but no better. The biggest challenge of making intra-process memory protection practical is that it cannot require major changes to how software is written. A practical granular memory protection scheme must work for the existing C/C++ build chains, nor should it change the ABI. Further, it cannot rely on concepts that aren't already intuitively clear to C/C++ programmers. Many academic proposals for more granular memory access control stopped short of this. They disregard the glue what keeps the development process and runtime together: the ABI.
@@ -1407,8 +1271,6 @@ We demonstrate ELFbac, a system that uses the Linux ELF ABI to express access co
 
 ---
 
- 
-
 ## Investigating DDOS - Architecture Actors and Attribution
 
 DDOS attack usage has been accelerating, in terms of both attack volume and frequency. Such attacks present a major threat to enterprises worldwide. Presenters will discuss a number of novel techniques utilized by law enforcement and the private sector, to measure, study, and attribute attacks originating from sources such as embedded device botnets and booter/stresser services. Presenters will discuss the usage of honeypots to gather historical attack details, as well as best practices for conducting live DDOS attack testing. Representative PCAPs will be shown, dissected, and explain. Finally, presenters will provide examples of where these services are offered for sale, how they are purchased, and the individuals who operate them.
@@ -1418,8 +1280,6 @@ DDOS attack usage has been accelerating, in terms of both attack volume and freq
  [Elliott Peterson](https://blackhat.com/us-16/speakers/Elliott-Peterson.html) & [Andre Correa](https://blackhat.com/us-16/speakers/Andre-Correa.html)
 
 ---
-
- 
 
 ## Iran's Soft-War for Internet Dominance
 
@@ -1434,8 +1294,6 @@ Across the records of hundreds of intrusion attempts of campaigns conducted by a
  [Claudio Guarnieri](https://blackhat.com/us-16/speakers/Claudio-Guarnieri.html) & [Collin Anderson](https://blackhat.com/us-16/speakers/Collin-Anderson.html)
 
 ---
-
- 
 
 ## Keystone Engine: Next Generation Assembler Framework
 
@@ -1464,8 +1322,6 @@ Keystone has a homepage at [http://www.keystone-engine.org](http://www.keystone-
 
 ---
 
- 
-
 ## Language Properties of Phone Scammers: Cyberdefense at the Level of the Human
 
 The prevalence of human interactive components of serious system breaches continues to be a problem for every organization. Humans are the biggest vulnerability in any security system; helping people identify social engineering attempts over the phone will be cheaper and more effective than yet another technological implementation. At minimum it will add an important and necessary layer to defense in depth.
@@ -1479,8 +1335,6 @@ The prevalence of human interactive components of serious system breaches contin
  [Judith Tabron](https://blackhat.com/us-16/speakers/Judith-Tabron.html)
 
 ---
-
- 
 
 ## Measuring Adversary Costs to Exploit Commercial Software: The Government-Bootstrapped Non-Profit C.I.T.L.
 
@@ -1500,8 +1354,6 @@ That recommendation you made to your family members last holiday about which web
 
 ---
 
- 
-
 ## Memory Forensics Using Virtual Machine Introspection for Cloud Computing
 
 The relocation of systems and services into cloud environments is on the rise. Because of this trend users lose direct control over their machines and depend on the offered services from cloud providers. These services are especially in the field of digital forensics very rudimentary. The possibilities for users to analyze their virtual machines with forensic methods are very limited. In the underlying research of this talk a practical approach has been developed that gives the user additional capabilities in the field of forensic investigations. The solution focuses on a memory forensic service offering. To reach this goal, a management solution for cloud environments has been extended with memory forensic services. Self-developed memory forensic services, which are installed on each cloud node and are managed through the cloud management component, are the basis for this solution. Forensic data is gained via virtual machine introspection techniques. Compared to other approaches it is possible to get trustworthy data without influencing the running system. Additionally, a general overview about the underlying technologies is provided and the pros and cons are discussed. The solution approach is discussed in a generic way and practically implemented in a prototype. In this prototype OpenNebula is used for managing the cloud infrastructure in combination with Xen as virtualization component, LibVMI as Virtual Machine Introspection library and Volatility as forensic tool.
@@ -1513,8 +1365,6 @@ The relocation of systems and services into cloud environments is on the rise. B
  [Tobias Zillner](https://blackhat.com/us-16/speakers/Tobias-Zillner.html)
 
 ---
-
- 
 
 ## Next-Generation of Exploit Kit Detection by Building Simulated Obfuscators
 
@@ -1530,8 +1380,6 @@ Our work rebuilds obfuscator for 6 notorious exploit kit families (Angler, Nucle
 
 ---
 
- 
-
 ## Nonce-Disrespecting Adversaries: Practical Forgery Attacks on GCM in TLS
 
 We investigate nonce-reuse issues with the Galois/Counter Mode (GCM) algorithm as used in TLS. Nonce reuse in GCM allows an attacker to recover the authentication key and forge messages as described by Joux. With an Internet-wide scan we identified over 70,000 HTTPS servers that are at risk of nonce reuse. We also identified 184 HTTPS servers repeating nonces directly in a short connection. Affected servers include large corporations, financial institutions, and a credit card company. We implement a proof of concept attack allowing us to violate the authenticity of affected HTTPS connections and inject content.
@@ -1544,8 +1392,6 @@ We investigate nonce-reuse issues with the Galois/Counter Mode (GCM) algorithm a
 
 ---
 
- 
-
 ## O-checker: Detection of Malicious Documents Through Deviation from File Format Specifications
 
 Documents containing executable files are often used in targeted email attacks in Japan. We examine various document formats (Rich Text Format, Compound File Binary and Portable Document Format) for files used in targeted attacks from 2009 to 2012 in Japan. Almost all the examined document files contain executable files that ignore the document file format specifications. Therefore, we focus on deviations from file format specifications and examine stealth techniques for hiding executable files. We classify eight anomalous structures and create a tool named o-checker to detect them. O-checker detects 96.1% of the malicious files used in targeted email attacks in 2013 and 2014. There are far fewer stealth techniques than vulnerabilities of document processors. Additionally, document file formats are more stable than document processors themselves. Accordingly, we assert that o-checker can continue detecting malware with a high detection rate for long periods.
@@ -1557,8 +1403,6 @@ Documents containing executable files are often used in targeted email attacks i
  [Yuhei Otsubo](https://blackhat.com/us-16/speakers/Yuhei-Otsubo.html)
 
 ---
-
- 
 
 ## OSS Security Maturity: Time to Put On Your Big Boy Pants!
 
@@ -1573,8 +1417,6 @@ This presentation looks at the real risk of using OSS and the best way to manage
  [Jake Kouns](https://blackhat.com/us-16/speakers/Jake-Kouns.html) & [Christine Gadsby](https://blackhat.com/us-16/speakers/Christine-Gadsby.html)
 
 ---
-
- 
 
 ## Ouroboros: Tearing Xen Hypervisor with the Snake
 
@@ -1594,8 +1436,6 @@ The Xen Project has been a widely used virtualization platform powering some of 
 
 ---
 
- 
-
 ## Over the Edge: Silently Owning Windows 10's Secure Browser
 
 Memory deduplication, a well-known technique to reduce the memory footprint across virtual machines, is now also a default-on feature inside the Windows 10 operating system. Deduplication maps multiple identical copies of a physical page onto a single shared copy with copy-on-write semantics. As a result, a write to such a shared page triggers a page fault and is thus measurably slower than a write to a normal page.
@@ -1608,8 +1448,6 @@ Memory deduplication, a well-known technique to reduce the memory footprint acro
 
 ---
 
- 
-
 ## Pangu 9 Internals
 
 Pangu 9, the first (and only) untethered jailbreak tool for iOS 9, exploited a sequence of vulnerabilities in the iOS userland to achieve final arbitrary code execution in the kernel and persistent code signing bypass. Although these vulnerabilities were fixed in iOS 9.2, there are no details disclosed. This talk will reveal the internals of Pangu 9. Specifically, this talk will first present a logical error in a system service that is exploitable by any container app through XPC communication to gain arbitrary file read/write as mobile. Next, this talk will explain how Pangu 9 gains arbitrary code execution outside the sandbox through the system debugging feature. This talk will then elaborate a vulnerability in the process of loading the dyld_shared_cache file that enables Pangu 9 to achieve persistent code signing bypass. Finally, this talk will present a vulnerability in the backup-restore process that allows apps signed by a revoked enterprise certificate to execute without the need of the user's explicit approval of the certificate.
@@ -1621,8 +1459,6 @@ Pangu 9, the first (and only) untethered jailbreak tool for iOS 9, exploited a s
  [Tielei Wang](https://blackhat.com/us-16/speakers/Tielei-Wang.html) & [Hao Xu](https://blackhat.com/us-16/speakers/Hao-Xu.html) & [Xiaobo Chen](https://blackhat.com/us-16/speakers/Xiaobo-Chen.html)
 
 ---
-
- 
 
 ## Pay No Attention to That Hacker Behind the Curtain: A Look Inside the Black Hat Network
 
@@ -1638,8 +1474,6 @@ So come see what goes into standing up, and maintaining one of the most hostile 
 
 ---
 
- 
-
 ## PINdemonium: A DBI-Based Generic Unpacker for Windows Executable
 
 Nowadays malware authors employ multiple obfuscation and packing techniques to hinder the process of reverse engineering and bypass the anti-virus (AV) signature based analysis. This is a significant threat for end user's PCs since this voids part of the AV analysis, and it is also a problem for professional reverse engineers that have to invest lot of time in order to unpack and study a single packed malware sample. The problem of unpacking is well studied in literature and several works have been proposed both for enhancing the end user's protection and supporting the malware analysts in their work. Different approaches exist in order to build a generic unpacker: debuggers, kernel modules, hypervisor modules, dynamic binary instrumentation (DBI). In this thesis we explore the possibility to exploit the functionality of a DBI framework since it provides great functionality useful during the analysis process: it allows an instruction level granularity inspection and modification, through high level APIs, which gives the analyst full control of the program being instrumented. Our system can extract and reconstruct the original program from a packed version of it, helping and speeding up the analysis of an obfuscated binary. The packers employ different techniques with various levels of complexity, but all of them must share one common behavior during the run-time unpacking: they have to write new code in memory and eventually execute it. Starting from this we have designed a generic unpacking algorithm that can correctly detect this behaviour and defeat the most popular of packing techniques. Not only the packing strategy can be really different, but the obfuscation can be increased by hiding the function imported by the program which is usually a valuable source of information during the process of reverse engineer. These are known in literature as Import Address Table (IAT) obfuscation techniques. Our tool tries to reconstruct a working PE from its packed version, taking care of modern packing techniques like unpacking on dynamic memory allocated areas and tries to defeat the most used IAT obfuscation techniques.
@@ -1653,8 +1487,6 @@ In order to validate our work we have conducted two experiments. The first one d
  [Sebastiano Mariani](https://blackhat.com/us-16/speakers/Sebastiano-Mariani.html) & [Lorenzo Fontana](https://blackhat.com/us-16/speakers/Lorenzo-Fontana.html)
 
 ---
-
- 
 
 ## PLC-Blaster: A Worm Living Solely in the PLC
 
@@ -1682,8 +1514,6 @@ With the introduction of the S7-1200v4 Siemens introduced again a new protocol. 
 
 ---
 
- 
-
 ## Pwning Your Java Messaging with Deserialization Vulnerabilities
 
 Messaging can be found everywhere. It's used by your favourite Mobile Messenger as well as in your bank's backend system. Message Brokers such as Pivotal's RabbitMQ, IBM's WebSphere MQ and others often form a key component of a modern backend system's architecture. Furthermore, there are various messaging standards in place like AMQP, MQTT, and STOMP. When it comes to the Java World it is rather unknown that Messaging in the Java ecosystem relies heavily on Java's serialization. Recent advances in the exploitation of Java deserialization vulnerabilities can be applied to exploit applications using Java messaging. This talk will show the attack surface of various Java messaging API implementations and their deserialization vulnerabilities. Last but not least, the Java Messaging Exploitation Tool (JMET) will be presented to help you identify and exploit message-consuming systems like a boss.
@@ -1695,8 +1525,6 @@ Messaging can be found everywhere. It's used by your favourite Mobile Messenger 
  [Matthias Kaiser](https://blackhat.com/us-16/speakers/Matthias-Kaiser.html)
 
 ---
-
- 
 
 ## Recover a RSA Private Key from a TLS Session with Perfect Forward Secrecy
 
@@ -1710,8 +1538,6 @@ They always taught us that the only thing that can be pulled out from a SSL/TLS 
 
 ---
 
- 
-
 ## Samsung Pay: Tokenized Numbers Flaws and Issues
 
 Samsung announced many layers of security to its Pay app. Without storing or sharing any type of user's credit card information, Samsung Pay is trying to become one of the most secure approaches offering functionality and simplicity for its customers. This app is a complex mechanism which has some limitations relating security. Using random tokenize numbers and implementing Magnetic Secure Transmission (MST) technology, which do not guarantee that every token generated with Samsung Pay would be applied to make a purchase with the same Samsung device. That means that an attacker could steal a token from a Samsung Pay device and use it without restrictions. Inconvenient but practical is that Samsung's users could utilize the app in airplane mode. This makes it impossible for Samsung Pay to have a full control process of the tokens pile. Even when the tokens have their own restrictions, the tokenization process gets weaker after the app generates the first token relating a specific card. How random is a Spay tokenized number? It is really necessary to understand how the tokens heretically share similarities in the generation process, and how this affect the end users' security. What are the odds to guess the next tokenized number knowing the previous one?
@@ -1723,8 +1549,6 @@ Samsung announced many layers of security to its Pay app. Without storing or sha
  [Salvador Mendoza](https://blackhat.com/us-16/speakers/Salvador-Mendoza.html)
 
 ---
-
- 
 
 ## Secure Penetration Testing Operations: Demonstrated Weaknesses in Learning Material and Tools
 
@@ -1738,8 +1562,6 @@ Following previous presentations on the dangers penetration testers face in usin
 
 ---
 
- 
-
 ## Security Through Design - Making Security Better by Designing for People
 
 In this session we will explore why certain devices, pieces of software or companies lead us to utter frustration while others consistently delight us and put a smile on our face. With these insights in mind, we will explore how we typically create our security processes, teams and solutions. All too often we create something without properly understanding what our colleagues or customers are trying to achieve only to bombard them with awareness training and policies because they "just don't get it" and because "humans are the weakest link." We will look at user-centered design methods and concepts from other disciplines like economy, psychology or marketing that can help us to build security in a truly usable way not just our tools but also the way we setup our teams, the way we communicate and the way we align incentives. Every interaction with security is an opportunity to improve convenience and bring a smile to somebody's face. By understanding the impact of design, we can do a lot to improve corporate productivity and security itself.
@@ -1751,8 +1573,6 @@ In this session we will explore why certain devices, pieces of software or compa
  [Jelle Niemantsverdriet](https://blackhat.com/us-16/speakers/Jelle-Niemantsverdriet.html)
 
 ---
-
- 
 
 ## SGX Secure Enclaves in Practice: Security and Crypto Review
 
@@ -1767,8 +1587,6 @@ This talk is the first public assessment of SGX based on real SGX-enabled hardwa
  [Jean-Philippe Aumasson](https://blackhat.com/us-16/speakers/Jean-Philippe-Aumasson.html) & [Luis Merino](https://blackhat.com/us-16/speakers/Luis-Merino.html)
 
 ---
-
- 
 
 ## Side-Channel Attacks on Everyday Applications
 
@@ -1786,8 +1604,6 @@ In 2013, Yuval Yarom and Katrina Falkner discovered the FLUSH+RELOAD L3 cache si
 
 ---
 
- 
-
 ## Subverting Apple Graphics: Practical Approaches to Remotely Gaining Root
 
 Apple graphics, both the userland and the kernel components, are reachable from most of the sandboxed applications, including browsers, where an attack can be launched first remotely and then escalated to obtain root privileges. On OS X, the userland graphics component is running under the WindowServer process, while the kernel component includes IOKit user clients created by IOAccelerator IOService. Similar components do exist on iOS system as well. It is the counterpart of "Win32k.sys" on Windows. In the past few years, lots of interfaces have been neglected by security researchers because some of them are not explicitly defined in the sandbox profile, yet our research reveals not only that they can be opened from a restrictive sandboxed context, but several of them are not designed to be called, exposing a large attack surface to an adversary. On the other hand, due to its complexity and various factors (such as being mainly closed source), Apple graphics internals are not well documented by neither Apple nor the security community. This leads to large pieces of code not well analyzed, including large pieces of functionality behind hidden interfaces with no necessary check in place even in fundamental components. Furthermore, there are specific exploitation techniques in Apple graphics that enable you complete the full exploit chain from inside the sandbox to gain unrestricted access. We named it "graphic-style" exploitation.
@@ -1803,8 +1619,6 @@ The second part covers the kernel attack surface. We will show vulnerabilities r
  [Liang Chen](https://blackhat.com/us-16/speakers/Liang-Chen.html) & [Qidan He](https://blackhat.com/us-16/speakers/Qidan-He.html) & [Marco Grassi](https://blackhat.com/us-16/speakers/Marco-Grassi.html) & [Yubin Fu](https://blackhat.com/us-16/speakers/Yubin-Fu.html)
 
 ---
-
- 
 
 ## TCP Injection Attacks in the Wild - A Large Scale Study
 
@@ -1822,8 +1636,6 @@ The attacks we discovered are done using out-of-band TCP injection of false pack
 
 ---
 
- 
-
 ## The Art of Defense - How Vulnerabilities Help Shape Security Features and Mitigations in Android
 
 Information security is ever evolving, and Android's security posture is no different. Android users faces threats from a variety of sources, from the mundane to the extraordinary. Lost and stolen devices, malware attacks, rooting vulnerabilities, malicious websites, and nation state attackers are all within the Android threat model, and something the Android Security Team deals with daily. In this talk, we will cover the threats facing Android users, using both specific examples from previous Black Hat conferences and published research, as well as previously unpublished threats. For the threats, we will go into the specific technical controls which contain the vulnerability, as well as newly added Android N security features which defend against future unknown vulnerabilities. Finally, we'll discuss where we could go from here to make Android, and the entire computer industry, safer.
@@ -1835,8 +1647,6 @@ Information security is ever evolving, and Android's security posture is no diff
  [Nick Kralevich](https://blackhat.com/us-16/speakers/Nick-Kralevich.html)
 
 ---
-
- 
 
 ## The Art of Reverse Engineering Flash Exploits
 
@@ -1851,8 +1661,6 @@ With this presentation, I want to deliver two things: 1. The tactics and debuggi
  [Jeong Wook Oh](https://blackhat.com/us-16/speakers/Jeong-Wook-Oh.html)
 
 ---
-
- 
 
 ## The Beast Within - Evading Dynamic Malware Analysis Using Microsoft COM
 
@@ -1870,8 +1678,6 @@ We show how transition-based monitoring can be used to monitor all COM calls at 
 
 ---
 
- 
-
 ## The Linux Kernel Hidden Inside Windows 10
 
 Initially known as "Project Astoria" and delivered in beta builds of Windows 10 Threshold 2 for Mobile, Microsoft implemented a full blown Linux 3.4 kernel in the core of the Windows operating system, including full support for VFS, BSD Sockets, ptrace, and a bonafide ELF loader. After a short cancellation, it's back and improved in Windows 10 Anniversary Update ("Redstone"), under the guise of Bash Shell interoperability. This new kernel and related components can run 100% native, unmodified Linux binaries, meaning that NT can now execute Linux system calls, schedule thread groups, fork processes, and access the VDSO!
@@ -1888,8 +1694,6 @@ Initially known as "Project Astoria" and delivered in beta builds of Windows 10 
 
 ---
 
- 
-
 ## The Remote Malicious Butler Did It!
 
 An Evil Maid attack is a security exploit that targets a computing device that has been left unattended. An evil maid attack is characterized by the attacker's ability to physically access the target multiple times without the owner's knowledge. On BlackHat Europe 2015, Ian Haken in his talk "Bypassing Local Windows Authentication to Defeat Full Disk Encryption" had demonstrated a smart Evil Maid attack which allows the attacker to bypass Bitlocker disk encryption in an enterprise's domain environment. The attacker can do so by connecting the unattended computer into a rogue Domain Controller and abusing a client side authentication vulnerability. As a result, Microsoft had released a patch to fix this vulnerability and mitigate the attack. While being a clever attack, the physical access requirement for the attack seems to be prohibitive and would prevent it from being used on most APT campaigns. As a result, defenders might not correctly prioritize the importance of patching it.
@@ -1904,8 +1708,6 @@ In our talk, we reveal the "Remote Malicious Butler" attack, which shows how att
 
 ---
 
- 
-
 ## The Risk from Power Lines: How to Sniff the G3 and Prime Data and Detect the Interfere Attack
 
 Power line communication (PLC) is a kind of communication technology which uses the power line as the communication media. The PLC technology is divided with 2 sub-field: narrow-band PLC and wide-band PLC. For the narrow-band PLC, there are 2 very import standards: Prime and G3. Both the standards are widely used in AMR and electric monitor system and it lead to the rise of threat in AMR system security and electric safety. This topic will talk about how to get the PLC data stream in a PLC communication system which would use G3 or Prime standard, and will also talk about how to detect attacking in the net. We will focus on how to identify which kind of standard the system using and how to sniff the PLC data in physical level.
@@ -1917,8 +1719,6 @@ Power line communication (PLC) is a kind of communication technology which uses 
  [Lei Ji](https://blackhat.com/us-16/speakers/Lei-Ji.html) & [Yunding Jian](https://blackhat.com/us-16/speakers/Yunding-Jian.html)
 
 ---
-
- 
 
 ## The Tao of Hardware the Te of Implants
 
@@ -1932,8 +1732,6 @@ Embedded, IOT, and ICS devices tend to be things we can pick up, see, and touch.
  [Joe FitzPatrick](https://blackhat.com/us-16/speakers/Joe-FitzPatrick.html)
 
 ---
-
- 
 
 ## The Year in Flash
 
@@ -1949,8 +1747,6 @@ Adobe Flash continues to be a popular target for attackers in the wild. As an in
 
 ---
 
- 
-
 ## Timing Attacks Have Never Been So Practical: Advanced Cross-Site Search Attacks
 
 Cross-site search (XS-search) is a practical timing side-channel attack that allows the extraction of sensitive information from web-services. The attack exploits inflation techniques to efficiently distinguish between search requests that yield results and requests that do not. This work focuses on the response inflation technique that increases the size of the response; as the difference in the sizes of the responses increases, it becomes easier to distinguish between them. We begin with browser-based XS-search attack and demonstrate its use in extracting users' private data from Gmail and Facebook. The browser-based XS-search attack exploits the differences in the sizes of HTTP responses, and works even when significant inflation of the response is impossible. This part also involves algorithmic improvements compared to previous work. When there is no leakage of information via the timing side channel it is possible to use second-order (SO) XS-search, a novel type of attack that allows the attacker to significantly increase the difference in the sizes of the responses by planting maliciously crafted record into the storage. SO XS-search attacks can be used to extract sensitive information such as email content of Gmail and Yahoo! users, and search history of Bing users.
@@ -1962,8 +1758,6 @@ Cross-site search (XS-search) is a practical timing side-channel attack that all
  [Nethanel Gelernter](https://blackhat.com/us-16/speakers/Nethanel-Gelernter.html)
 
 ---
-
- 
 
 ## Towards a Holistic Approach in Building Intelligence to Fight Crimeware
 
@@ -1977,8 +1771,6 @@ The talk describes how to proactively bridge the gap between the actors and netw
 
 ---
 
- 
-
 ## Understanding HL7 2.x Standards Pen Testing and Defending HL7 2.x Messages
 
 Health Level-7 or HL7 refers to a set of international standards for transfer of clinical and administrative data between software applications used by various healthcare providers. Healthcare provider organizations typically have many different computer systems used for everything from billing records to patient tracking. All of these systems should communicate with each other (or "interface") when they receive new information, or when they wish to retrieve information, but not all do so. The Hl7 2.x protocol was designed keeping certain factors in mind. Some of which are: a closed network, no malicious intent by the devices, and running the devices in a completely reliable environment. The number of devices using the HL7 2.x is huge (currently, the HL7 v2.x messaging standard is supported by every major medical information systems vendor in the world). However, a secure implementation standard / guide still needs to be worked on. Over some time I have observed that hospitals and vendors do not fully understand the risks on their infrastructure. Also vendors need to implement some changes over their software and hardware to make their devices more resilient to attacks.
@@ -1990,8 +1782,6 @@ The talk will cover HL7 2.x messages, their significance and the information in 
  [Anirudh Duggal](https://blackhat.com/us-16/speakers/Anirudh-Duggal.html)
 
 ---
-
- 
 
 ## Unleash the Infection Monkey: A Modern Alternative to Pen-Tests
 
@@ -2009,8 +1799,6 @@ In our talk we will show how our Infection Monkey uncovers blind spots and argue
 
 ---
 
- 
-
 ## Using an Expanded Cyber Kill Chain Model to Increase Attack Resiliency
 
 The Cyber Kill Chain model provides a framework for understanding how an adversary breaches the perimeter to gain access to systems on the internal network. However, this model is incomplete and can lead to over-focusing on perimeter security, to the detriment of internal security controls. In this presentation, we'll explore an expanded model including the Internal Kill Chain and the Target Manipulation Kill Chain.
@@ -2024,8 +1812,6 @@ We'll review what actions are taken in each phase, and what's necessary for the 
  [Sean Malone](https://blackhat.com/us-16/speakers/Sean-Malone.html)
 
 ---
-
- 
 
 ## Using EMET to Disable EMET
 
@@ -2041,8 +1827,6 @@ The talk will focus on how easy is it to defeat EMET or any other Agent. How sec
 
 ---
 
- 
-
 ## Using Undocumented CPU Behavior to See into Kernel Mode and Break KASLR in the Process
 
 Typically, hackers focus on software bugs to find vulnerabilities in the trust model of computers. In this talk, however, we'll focus on, how the micro architectural design of computers and how they enable an attacker to breach trust boundaries. Specifically, we'll focus on how an attacker with no special privileges can gain insights into the kernel and how these insights can enable further breaches of security. We will focus on the x86-64 architecture, but round up with comments on how our research touches on ARM processors. Unlike software bugs, micro architectural design issues have applications across operating systems and are independent of easily fixable software bugs. In modern operating systems the security model is enforced by the kernel. The kernel itself runs in a processor supported and protected state often called supervisor or kernel mode. Thus the kernel itself is protected from introspection and attack by hardware. We will present a method that'll allow for fast and reliable introspection into the memory hierarchy in the kernel based on undocumented CPU behavior and show how attackers could make use of this information to mount attacks on the kernel and consequently of the entire security model of modern computers. Making a map of memory and breaking KASLR Modern operating systems use a number of methods to prevent an attacker from running unauthorized code in kernel mode. They range from requiring user-privileges to load drivers, over driver signing to hardware enabled features preventing execution in memory marked as data such as DEP (Data Execution Prevention) or more resonantly SMEP that prevents execution of user allocated code with kernel level privileges. Often used bypasses modify either page tables or use so called code reuse attacks. Either way an attacker needs to know where the code or page tables are located. To further complicate an attack modern operating system is equipped with "Kernel Address Space Randomized Layout" (KASLR) that randomizes the location of important system memory.
@@ -2056,8 +1840,6 @@ We'll present a fast and reliable method to map where the kernel has mapped page
  [Anders Fogh](https://blackhat.com/us-16/speakers/Anders-Fogh.html) & [Daniel Gruss](https://blackhat.com/us-16/speakers/Daniel-Gruss.html)
 
 ---
-
- 
 
 ## Viral Video - Exploiting SSRF in Video Converters
 
@@ -2073,8 +1855,6 @@ Many web applications allow users to upload video - video/image hostings, cloud 
 
 ---
 
- 
-
 ## VOIP WARS: The Phreakers Awaken
 
 Larger organisations are using VoIP within their commercial services and corporate communications and the take up of cloud based Unified Communications (UC) solutions is rising every day. However, response teams and security testers have limited knowledge of VoIP attack surfaces and threats in the wild. Due to this lack of understanding of modern UC security requirements, numerous service providers, larger organisations and subscribers are leaving themselves susceptible to attack. Current threat actors are repurposing this exposed infrastructure for botnets, toll fraud etc.
@@ -2089,8 +1869,6 @@ The talk aims to arm response and security testing teams with knowledge of cutti
 
 ---
 
- 
-
 ## Watching Commodity Malware Get Sold to a Targeted Actor
 
 Detected breaches are often classified by security operation centers and incident response teams as either "targeted" or "untargeted." This quick classification of a breach as "untargeted," and the following de-prioritization for remediation, often misses a re-classification and upgrade process several attack groups have been conducting. As part of this process, assets compromised as part of broad, untargeted "commodity" malware campaigns are re-classified based on the organizational network they're part of to determine their potential value in the market. The higher value ones are upgraded and taken out of the "commodity" campaign to prepare them for a sale, for buyers planning a targeted attack. Organizations overlooking this often miss the opportunity to eliminate the threat prior to its escalation.
@@ -2103,8 +1881,6 @@ This session will cover the analysis of endpoint and network data captured durin
 
 ---
 
- 
-
 Historically, machine learning for information security has prioritized defense: think intrusion detection systems, malware classification and botnet traffic identification. Offense can benefit from data just as well. Social networks, especially Twitter with its access to extensive personal data, bot-friendly API, colloquial syntax and prevalence of shortened links, are the perfect venues for spreading machine-generated malicious content.
 
  We present a recurrent neural network that learns to tweet phishing posts targeting specific users. The model is trained using spear phishing pen-testing data, and in order to make a click-through more likely, it is dynamically seeded with topics extracted from timeline posts of both the target and the users they retweet or follow. We augment the model with clustering to identify high value targets based on their level of social engagement such as their number of followers and retweets, and measure success using click-rates of IP-tracked links. Taken together, these techniques enable the world's first automated end-to-end spear phishing campaign generator for Twitter.
@@ -2116,8 +1892,6 @@ Historically, machine learning for information security has prioritized defense:
  [John Seymour](https://blackhat.com/us-16/speakers/John-Seymour.html) & [Philip Tully](https://blackhat.com/us-16/speakers/Philip-Tully.html)
 
 ---
-
- 
 
 ## Web Application Firewalls: Analysis of Detection Logic
 
@@ -2135,8 +1909,6 @@ More than 15 new bypass vectors will be described, with an indication of over 30
 
 ---
 
- 
-
 ## What's the DFIRence for ICS?
 
 Digital Forensics and Incident Response (DFIR) for IT systems has been around quite a while, but what about Industrial Control Systems (ICS)? This talk will explore the basics of DFIR for embedded devices used in critical infrastructure such as Programmable Logic Controllers (PLCs), Remote Terminal Units (RTUs), and controllers. If these are compromised or even have a misoperation, we will show what files, firmware, memory dumps, physical conditions, and other data can be analyzed in embedded systems to determine the root cause.
@@ -2153,8 +1925,6 @@ Digital Forensics and Incident Response (DFIR) for IT systems has been around qu
 
 ---
 
- 
-
 Targeted malware campaigns against Activists, Lawyers and journalists are becoming extremely commonplace. These attacks range in sophistication from simple spear-phishing campaigns using off the shelf malware, to APT-level attacks employing exploits, large budgets, and increasingly sophisticated techniques. Activists, lawyers and journalists are, for the most part, completely unprepared to deal with cyber-attacks; most of them don't even have a single security professional on staff. In this session Eva
  Galperin and Cooper Quintin of the Electronic Frontier Foundation will discuss the technical and operational details of malware campaigns against activists, journalists, and lawyers around the world, including EFF. They will also present brand new research about a threat actor targeting lawyers and activists in Europe and the Post-Soviet States. With targeted malware campaigns, governments have a powerful tool to suppress and silence dissent. As security professionals we are in a unique position to help in this fight.
 
@@ -2165,8 +1935,6 @@ Targeted malware campaigns against Activists, Lawyers and journalists are becomi
  [Cooper Quintin](https://blackhat.com/us-16/speakers/Cooper-Quintin.html) & [Eva Galperin](https://blackhat.com/us-16/speakers/Eva-Galperin.html)
 
 ---
-
- 
 
 ## When the Cops Come A-Knocking: Handling Technical Assistance Demands from Law Enforcement
 
@@ -2182,8 +1950,6 @@ This talk, given by two Crypto Policy Project attorneys from Stanford Law School
 
 ---
 
- 
-
 ## Windows 10 Mitigation Improvements
 
 Continuous improvements have been made to Windows and other Microsoft products over the past decade that have made it more difficult and costly to exploit software vulnerabilities. The various mitigation technologies that have been created as a result have played a key role in helping to keep people safe online even as the number of vulnerabilities that are found and fixed each year has increased. In this presentation, we'll describe some of the new ways that Microsoft is tackling software security and some of the new mitigation improvements that have been made to Windows 10 as a result. This talk will cover a new data driven approach to software security at Microsoft. This approach involves proactive monitoring and analysis of exploits found in-the-wild to better understand the types of vulnerabilities that are being exploited and exploitation techniques being used. This category of analysis and insight has driven a series of mitigation improvements that has broken widely used exploitation techniques and in some cases virtually eliminated entire classes of vulnerabilities.
@@ -2197,8 +1963,6 @@ In this presentation, we'll share more details on how this analysis is performed
  [Matt Miller](https://blackhat.com/us-16/speakers/Matt-Miller.html) & [David Weston](https://blackhat.com/us-16/speakers/David-Weston.html)
 
 ---
-
- 
 
 ## Windows 10 Segment Heap Internals
 
@@ -2215,8 +1979,6 @@ Introduced in Windows 10, Segment Heap is the native heap used in Windows app (f
  [Mark Vincent Yason](https://blackhat.com/us-16/speakers/Mark-Vincent-Yason.html)
 
 ---
-
- 
 
 ## Xenpwn: Breaking Paravirtualized Devices
 

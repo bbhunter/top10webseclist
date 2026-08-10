@@ -5,9 +5,9 @@ resource: "https://sweet32.info/"
 tags: [article, webseclist-reference, en, sweet32-info]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:20+00:00"
+  at: "2026-08-10T16:01:18+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://sweet32.info/"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:76"
+  - "2016-17.md:70"
 commit: ""
-content_sha256: 317a0f77e2a0b6184a1a13b5bcd0da796921dcde194b952a06344a6db168b2be
+content_sha256: 72de26471d49ffa4e0fe7ae94e791d097066b72cb843fe683571e4440ee48be1
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 436c73d6c107ac354db7a2893c625c446128acf19a9b44718911dca21e757b7b
 retrieved_from: "https://sweet32.info/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:20+00:00"
+retrieved_utc: "2026-08-10T16:01:18+00:00"
 slug: sweet32-info-sweet32-birthday-attacks-64-bit-block-ciphers-tls-openvpn
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://sweet32.info/>
-- Preserved from: https://sweet32.info/ (live) on 2026-08-08
+- Preserved from: https://sweet32.info/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://jeremiahgrossman.blogspot.com/2006/09/how-to-get-linked-from-
 tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:31:10+00:00"
+  at: "2026-08-10T15:29:54+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2006/09/how-to-get-linked-from-slashdot.html"
@@ -20,7 +20,7 @@ canonical_url: "https://blog.jeremiahgrossman.com/2006/09/how-to-get-linked-from
 cited_by:
   - "2006.md:56"
 commit: ""
-content_sha256: ab3f8a76d1e72e44e5f1a7a62cafe58ce1dde66174142d711218efa2965583cc
+content_sha256: 695e3701a55cdd79da2e90d1b02860bfec72234201d205556c1becfa652d8c04
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "https://jeremiahgrossman.blogspot.com/2006/09/how-to-get-linked-f
 published: ""
 publisher: blog.jeremiahgrossman.com
 publisher_english: ""
-raw_sha256: 60607ff0d750abb245ffa2ee8705eee64d655acc3af1a6a216deb549e20dd27c
+raw_sha256: 3c14600b9a436aec37757ab10f4c31050daa57b7dbfe44fee5e03260a4571d78
 retrieved_from: "https://blog.jeremiahgrossman.com/2006/09/how-to-get-linked-from-slashdot.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:31:10+00:00"
+retrieved_utc: "2026-08-10T15:29:54+00:00"
 slug: blog-jeremiahgrossman-com-how-get-linked-slashdot
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2006/09/how-to-get-linked-from-slashdot.html>
 - Current location: <https://blog.jeremiahgrossman.com/2006/09/how-to-get-linked-from-slashdot.html>
-- Preserved from: https://blog.jeremiahgrossman.com/2006/09/how-to-get-linked-from-slashdot.html (live) on 2026-08-09
+- Preserved from: https://blog.jeremiahgrossman.com/2006/09/how-to-get-linked-from-slashdot.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

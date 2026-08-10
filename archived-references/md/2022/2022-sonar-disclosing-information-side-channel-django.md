@@ -5,9 +5,9 @@ resource: "https://www.sonarsource.com/blog/disclosing-information-with-a-side-c
 tags: [article, webseclist-reference, en, sonar]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:38+00:00"
+  at: "2026-08-10T16:00:30+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.sonarsource.com/blog/disclosing-information-with-a-side-channel-in-django/"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2022.md:18"
 commit: ""
-content_sha256: b22cb8be2443d23f5e26d840a5128e831d87ebff1a94f26424e09da83b436bc3
+content_sha256: 030f08359d76d2f4d127a56449b15584d79198f4abb18a9174b797436e7ff177
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://www.sonarsource.com/blog/disclosing-information-with-a-si
 published: 2022-07-26
 publisher: Sonar
 publisher_english: ""
-raw_sha256: cb0542b5ece1e133cc1a13ac160d309074f27ab0c73328c89cad490deed50a27
+raw_sha256: 36d08f23ab85180c1eb3fdc5691869c88363c716509a008aafdb23ad571a05a1
 retrieved_from: "https://www.sonarsource.com/blog/disclosing-information-with-a-side-channel-in-django/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:38+00:00"
+retrieved_utc: "2026-08-10T16:00:30+00:00"
 slug: 2022-sonar-disclosing-information-side-channel-django
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2022-07-26
 - Original: <https://www.sonarsource.com/blog/disclosing-information-with-a-side-channel-in-django/>
-- Preserved from: https://www.sonarsource.com/blog/disclosing-information-with-a-side-channel-in-django/ (live) on 2026-08-09
+- Preserved from: https://www.sonarsource.com/blog/disclosing-information-with-a-side-channel-in-django/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

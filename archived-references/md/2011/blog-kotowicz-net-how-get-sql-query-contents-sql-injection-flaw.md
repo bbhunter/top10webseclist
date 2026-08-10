@@ -5,9 +5,9 @@ resource: "http://blog.kotowicz.net/2011/01/how-to-get-sql-query-contents-from-s
 tags: [article, webseclist-reference, blog-kotowicz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:04:42+00:00"
+  at: "2026-08-10T15:04:26+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.kotowicz.net/2011/01/how-to-get-sql-query-contents-from-sql.html"
@@ -28,10 +28,10 @@ original_url: "http://blog.kotowicz.net/2011/01/how-to-get-sql-query-contents-fr
 published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
-raw_sha256: ec707b4d7c6176b450387e210d17598047bc69453fb65a5028ab92701b09f719
+raw_sha256: e47e41d475ea34be09ebf8033de246815796f885cf9b121fcad89e873f7812f6
 retrieved_from: "http://blog.kotowicz.net/2011/01/how-to-get-sql-query-contents-from-sql.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:04:42+00:00"
+retrieved_utc: "2026-08-10T15:04:26+00:00"
 slug: blog-kotowicz-net-how-get-sql-query-contents-sql-injection-flaw
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.kotowicz.net/2011/01/how-to-get-sql-query-contents-from-sql.html>
-- Preserved from: http://blog.kotowicz.net/2011/01/how-to-get-sql-query-contents-from-sql.html (live) on 2026-08-09
+- Preserved from: http://blog.kotowicz.net/2011/01/how-to-get-sql-query-contents-from-sql.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

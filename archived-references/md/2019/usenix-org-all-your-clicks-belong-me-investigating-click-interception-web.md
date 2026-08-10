@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/zhang
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:30+00:00"
+  at: "2026-08-10T16:04:53+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/zhang"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2019.md:77"
+  - "2019.md:75"
 commit: ""
 content_sha256: 531ffe3f53f4c53970706556264b4eade2e1c896c2d8aaa5a2c633b49f6a7904
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity19/presentation/z
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 2d561daf3450864be0e5d80558c198a84e09c2a1a60034c8d40b2b6c70dc7fdb
+raw_sha256: 4db492a1c68978b2504a842a43f6c8433957a6feaaa7f49efc152d21ff9c2739
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity19/presentation/zhang"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:30+00:00"
+retrieved_utc: "2026-08-10T16:04:53+00:00"
 slug: usenix-org-all-your-clicks-belong-me-investigating-click-interception-web
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity19/presentation/zhang>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity19/presentation/zhang (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity19/presentation/zhang (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

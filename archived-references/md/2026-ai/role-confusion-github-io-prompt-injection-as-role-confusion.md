@@ -5,9 +5,9 @@ resource: "https://role-confusion.github.io/"
 tags: [article, webseclist-reference, en, role-confusion-github-io]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:52:43+00:00"
+  at: "2026-08-10T15:57:19+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://role-confusion.github.io/"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:99"
+  - "2026-ai.md:77"
 commit: ""
 content_sha256: 1b2e5c3f700968806fb719545e129275807ab67a3c16eff4ccf3797381e43692
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 97638aea84572df318048419080ff468496ec68807df90c9943ff7bf3edbae13
 retrieved_from: "https://role-confusion.github.io/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:52:43+00:00"
+retrieved_utc: "2026-08-10T15:57:19+00:00"
 slug: role-confusion-github-io-prompt-injection-as-role-confusion
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://role-confusion.github.io/>
-- Preserved from: https://role-confusion.github.io/ (live) on 2026-08-08
+- Preserved from: https://role-confusion.github.io/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

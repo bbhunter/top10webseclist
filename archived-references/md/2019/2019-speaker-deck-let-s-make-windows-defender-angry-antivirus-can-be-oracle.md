@@ -5,9 +5,9 @@ resource: "https://speakerdeck.com/icchy/lets-make-windows-defender-angry-antivi
 tags: [slides, webseclist-reference, en, speaker-deck]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:12+00:00"
+  at: "2026-08-10T16:00:47+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://speakerdeck.com/icchy/lets-make-windows-defender-angry-antivirus-can-be-an-oracle"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:22"
 commit: ""
-content_sha256: 42f2fcf114a05f6aa311b83436de537d6e0224e89dc97bf6bd7fc8bc3af3c3bc
+content_sha256: c6101159d77572913617ae3ebdd7c81b2b93fc1d909924a6b39e5384cd0a8529
 depth: full
 depth_reason: default
 kind: slides
@@ -32,10 +32,10 @@ original_url: "https://speakerdeck.com/icchy/lets-make-windows-defender-angry-an
 published: 2019-10-29
 publisher: Speaker Deck
 publisher_english: ""
-raw_sha256: 578efa22c2c70a80f775ebd6b60bc4e1cf84574197d192ba6bba1a55e081e973
+raw_sha256: f85a8ed93e22f5be4d1923d50d062dd1fc06dc08ab949263c4987fa829023b80
 retrieved_from: "https://speakerdeck.com/icchy/lets-make-windows-defender-angry-antivirus-can-be-an-oracle"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:12+00:00"
+retrieved_utc: "2026-08-10T16:00:47+00:00"
 slug: 2019-speaker-deck-let-s-make-windows-defender-angry-antivirus-can-be-oracle
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2019-10-29
 - Original: <https://speakerdeck.com/icchy/lets-make-windows-defender-angry-antivirus-can-be-an-oracle>
-- Preserved from: https://speakerdeck.com/icchy/lets-make-windows-defender-angry-antivirus-can-be-an-oracle (live) on 2026-08-09
+- Preserved from: https://speakerdeck.com/icchy/lets-make-windows-defender-angry-antivirus-can-be-an-oracle (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -107,29 +107,61 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
  [ See All in Research ](https://speakerdeck.com/c/research)
 
- [Fukui Shibiten 39 - AI Art](https://speakerdeck.com/butchi/fukui-shibiten-39-ai-art)
+ [大規模言語モデルは誰を覚えているか / Who Do Large Language Models Memorize?](https://speakerdeck.com/upura/who-do-large-language-models-memorize)
 
- [ ![Avatar for IWABUCHI Yu(u)ki butchi](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTcwMjYsInB1ciI6ImJsb2JfaWQifX0=--095b7a754ff32159e37778110a816d339cbcce26/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/us-ig-i.png) butchi ](https://speakerdeck.com/butchi)
-
- 0
-
-  170
-
- [敵対生成プロンプト同時探索による内省型プロンプト最適化](https://speakerdeck.com/kinoue_smarthr/di-dui-sheng-cheng-puronputotong-shi-tan-suo-niyorunei-sheng-xing-puronputozui-shi-hua)
-
- [ ![Avatar for Kotaro Inoue](https://secure.gravatar.com/avatar/35965fa5fb070df50bdbeb10aa78a08a?s=24) kinoue_smarthr ](https://speakerdeck.com/kinoue_smarthr)
+ [ ![Avatar for Shotaro Ishihara](https://secure.gravatar.com/avatar/b1cc148711c6a37a5c922b6e72a4ad52?s=24) upura ](https://speakerdeck.com/upura)
 
  0
 
-  350
+  110
 
- [Visual SLAM未来予測 / Future Prediction in Visual SLAM](https://speakerdeck.com/koide3/future-prediction-in-visual-slam)
+ [2026年版中小企業白書・小規模企業白書の概要](https://speakerdeck.com/ozekinote/2026nian-ban-zhong-xiao-qi-ye-bai-shu-xiao-gui-mo-qi-ye-bai-shu-nogai-yao)
 
- [ ![Avatar for koide3](https://secure.gravatar.com/avatar/e19725a18fcb76076c0b3149222e66ff?s=24) koide3 ](https://speakerdeck.com/koide3)
+ [ ![Avatar for Takashi Ozeki](https://secure.gravatar.com/avatar/b63d46343fe6537ea376cf1d644954ca?s=24) ozekinote ](https://speakerdeck.com/ozekinote)
+
+ 0
+
+  140
+
+ [Model Discovery and Graph Simulation: A Lightweight Gateway to Chaos Engineering](https://speakerdeck.com/anatolykr/model-discovery-and-graph-simulation-a-lightweight-gateway-to-chaos-engineering)
+
+ [ ![Avatar for Anatoly A. Krasnovsky](https://secure.gravatar.com/avatar/0fe2ebd798c1d182539e7959d9946935?s=24) anatolykr ](https://speakerdeck.com/anatolykr)
+
+ 0
+
+  250
+
+ [長時間動画QAにおけるマルチエージェント推論 ・SVAgent: Storyline-Guided Long Video Understanding via Cross-Modal Multi-Agent Collaboration](https://speakerdeck.com/murakawatakuya/chang-shi-jian-dong-hua-qaniokerumarutiezientotui-lun-svagent-storyline-guided-long-video-understanding-via-cross-modal-multi-agent-collaboration)
+
+ [ ![Avatar for 村川卓也](https://secure.gravatar.com/avatar/634504d55b176ea989d9ac6232312970?s=24) murakawatakuya ](https://speakerdeck.com/murakawatakuya)
 
  1
 
-  830
+  180
+
+ [技術は予測を代補する：スティグレールの三次的記憶論と予測処理パラダイムの交差](https://speakerdeck.com/ktanishima/ji-shu-hayu-ce-wodai-bu-suru-suteigurerunosan-ci-de-ji-yi-lun-toyu-ce-chu-li-paradaimunojiao-chai)
+
+ [ ![Avatar for Kanta Tanishima](https://secure.gravatar.com/avatar/4fe3917ab40fee8f996eb1dfd56db954?s=24) ktanishima ](https://speakerdeck.com/ktanishima)
+
+ 0
+
+  120
+
+ [多様なデータを許容し学習し続ける模倣学習 / Advanced Imitation Learning for VLA](https://speakerdeck.com/prinlab/advanced-imitation-learning-for-vla)
+
+ [ ![Avatar for PRIN Lab](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjUxNTgzLCJwdXIiOiJibG9iX2lkIn19--ef2883533e77394cc9857eed1d7c7a93d95b9fa3/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/PRIN%20Lab-logo-black.png) prinlab ](https://speakerdeck.com/prinlab)
+
+ 0
+
+  270
+
+ [某助成金プロジェクト採択に向けて企業研究所のアウトリーチ専任者がやったこと](https://speakerdeck.com/afroscript/mou-zhu-cheng-jin-puroziekutocai-ze-nixiang-keteqi-ye-yan-jiu-suo-noautoritizhuan-ren-zhe-gayatutakoto)
+
+ [ ![Avatar for afroscript](https://secure.gravatar.com/avatar/e2b467a18ec383cfa0068207e43df7fa?s=24) afroscript ](https://speakerdeck.com/afroscript)
+
+ 0
+
+  160
 
  [Google Cloud Next 2026 DM Recap Agentic Data Cloudを添えて / Google Cloud Next 2026 DM Recap](https://speakerdeck.com/nnaka2992/google-cloud-next-2026-dm-recap)
 
@@ -137,7 +169,7 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
  0
 
-  100
+  110
 
  [重要だけど測れていないもの：高齢者ケアの見えない課題](https://speakerdeck.com/theoriatec2024/zhong-yao-dakedoce-reteinaimono-gao-ling-zhe-keanojian-enaike-ti)
 
@@ -147,171 +179,105 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
 
   450
 
- [2025年度秋葉原ウォーカブルプロジェクト調査報告 「アキバらしいウォーカブル」とは何か](https://speakerdeck.com/izumiyama_lab/2025nian-du-diao-cha-bao-gao-akibarasiiuokaburu-tohahe-ka)
-
- [ ![Avatar for 日本大学 都市計画研究室（泉山ゼミ）](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Njk0MzYwLCJwdXIiOiJibG9iX2lkIn19--1be62bf94d04e81397e5c1baa71e453b19f54102/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/%E3%83%AD%E3%82%B4%E5%AE%8C%E6%88%90%E7%89%88%EF%BC%BF%E8%83%8C%E6%99%AF%E9%80%8F%E6%98%8E.png) izumiyama_lab ](https://speakerdeck.com/izumiyama_lab)
-
- 1
-
-  150
-
  [
 
- [BlackHatAsia2026] Hidden Telemetry: Uncovering TraceLogging ETW Providers You're Not Using (Yet)
+ [IR Reading 2026春 論文紹介] LLM-based Listwise Reranking under the Effect of Positional Bias (ECIR 2026) /IR-Reading-2026-Spring
 
- ](https://speakerdeck.com/asuna_jp/blackhatasia2026-hidden-telemetry-uncovering-tracelogging-etw-providers-youre-not-using-yet)
+ ](https://speakerdeck.com/koheishinden/ir-reading-2026-spring)
 
- [ ![Avatar for Asuka Nakajima](https://secure.gravatar.com/avatar/0cf832af679c778f7c3dd81a2b4aa340?s=24) asuna_jp ](https://speakerdeck.com/asuna_jp)
-
- 1
-
-  630
-
- [第64回CV・PRML勉強会 論文紹介：Linguistic Priors for Visual Decoupling: Towards Symmetric Vision-Brain Alignment](https://speakerdeck.com/sokikatayama/di-64hui-cvprmlmian-qiang-hui-lun-wen-shao-jie-linguistic-priors-for-visual-decoupling-towards-symmetric-vision-brain-alignment)
-
- [ ![Avatar for Soki Katayama](https://secure.gravatar.com/avatar/f07c5912a741767d06c412ed6d52b531?s=24) sokikatayama ](https://speakerdeck.com/sokikatayama)
-
- 0
-
-  150
-
- [kintone リサーチ副部/UXリサーチャー 業務紹介](https://speakerdeck.com/cybozuinsideout/kintone-researcher)
-
- [ ![Avatar for Cybozu](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTE1MzQsInB1ciI6ImJsb2JfaWQifX0=--27e7f85415c65b868b4c1afa18dbb922c9361d8b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/ILMxngMD_400x400.png) cybozuinsideout ](https://speakerdeck.com/cybozuinsideout)
+ [ ![Avatar for Kohei Shinden](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzYwMzA0LCJwdXIiOiJibG9iX2lkIn19--27e80e4a7084f7acf896ed44a8edda9838e7354b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/kohei-shinden.jpg) koheishinden ](https://speakerdeck.com/koheishinden)
 
  [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
  0
 
-  130
+  300
 
- [LA-Bench 2025：実験指示から実行可能手順を生成するためのデータセット/LA-Bench 2025: A Dataset for Generating Executable Experimental Procedures from Experimental Instructions](https://speakerdeck.com/stktu/la-bench-2025-a-dataset-for-generating-executable-experimental-procedures-from-experimental-instructions)
+ [LINEヤフー データサイエンス Meetup「三井物産コモディティ予測チャレンジ」の舞台裏-AlpacaTechパート](https://speakerdeck.com/gamella/lineyahu-detasaiensu-meetup-san-jing-wu-chan-komodeiteiyu-ce-tiyarenzi-nowu-tai-li-alpacatechpato)
 
- [ ![Avatar for Shota Kato](https://secure.gravatar.com/avatar/d60dc42bf3b7ad6628b0e67527f441b6?s=24) stktu ](https://speakerdeck.com/stktu)
+ [ ![Avatar for tomo](https://secure.gravatar.com/avatar/3e8f61263f14a620f21d5f3f89c4b846?s=24) gamella ](https://speakerdeck.com/gamella)
 
- 0
+ 1
 
-  110
+  620
 
- [第12回人と環境にやさしい交通をめざす全国大会／熊本都市圏「車1割削減、渋滞半減、公共交通2倍」をめざして](https://speakerdeck.com/trafficbrain/20260315-hito-to-kankyo-ni-yasashii)
+ [医療LLMの現在地〜最新研究から社会実装までを考える〜](https://speakerdeck.com/kento1109/yi-liao-llmnoxian-zai-di)
 
- [ ![Avatar for Traffic Brain](https://secure.gravatar.com/avatar/e8f618bf29b36a046d01e235071b2ac3?s=24) trafficbrain ](https://speakerdeck.com/trafficbrain)
+ [ ![Avatar for kento sugimoto](https://secure.gravatar.com/avatar/5d55a192b7ce62900781862a4003187b?s=24) kento1109 ](https://speakerdeck.com/kento1109)
 
- 0
+ 1
 
-  140
-
- [Scalable dynamic origin-destination demand estimation enhanced by high-resolution satellite imagery data](https://speakerdeck.com/satai/scalable-dynamic-origin-destination-demand-estimation-enhanced-by-high-resolution-satellite-imagery-data)
-
- [ ![Avatar for SatAI.challenge](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2MDUwLCJwdXIiOiJibG9iX2lkIn19--b6d6ea071912ace3f41814c723917566e73c75f5/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/image%20(2).png) satai ](https://speakerdeck.com/satai)
-
- 3
-
-  380
+  1.6k
 
 ## Featured
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [Lessons Learnt from Crawling 1000+ Websites](https://speakerdeck.com/charlesmeaden/lessons-learnt-from-crawling-1000-plus-websites)
+ [Designing Experiences People Love](https://speakerdeck.com/moore/designing-experiences-people-love)
 
- [ ![Avatar for Charles Meaden](https://secure.gravatar.com/avatar/ce0e73fa718d3c8e32bf992761c1968e?s=24) charlesmeaden ](https://speakerdeck.com/charlesmeaden)
+ [ ![Avatar for Jonathan Moore](https://secure.gravatar.com/avatar/1b75d89772b7eea1f6c89fbf362607d9?s=24) moore ](https://speakerdeck.com/moore)
 
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+ 143
 
- 1
+  24k
 
-  1.5k
+ [Neural Spatial Audio Processing for Sound Field Analysis and Control](https://speakerdeck.com/skoyamalab/neural-spatial-audio-processing-for-sound-field-analysis-and-control)
 
- [The SEO Collaboration Effect](https://speakerdeck.com/kristinabergwall1/the-seo-collaboration-effect)
+ [ ![Avatar for NII S. Koyama's Lab](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzA4MTMsInB1ciI6ImJsb2JfaWQifX0=--07f7e99b88c0324a2e249e6e99ce447129c4b8be/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/logo.png) skoyamalab ](https://speakerdeck.com/skoyamalab)
 
- [ ![Avatar for Kristina Bergwall](https://secure.gravatar.com/avatar/ebbb8b31502fbaac10ecc9c5bca51501?s=24) kristinabergwall1 ](https://speakerdeck.com/kristinabergwall1)
+ 0
 
- 1
+  400
 
-  510
+ [The Straight Up "How To Draw Better" Workshop](https://speakerdeck.com/denniskardys/the-straight-up-how-to-draw-better-workshop)
 
- [A better future with KSS](https://speakerdeck.com/kneath/a-better-future-with-kss)
+ [ ![Avatar for Dennis Kardys](https://secure.gravatar.com/avatar/aff5641764408271f7bc398f2097edd0?s=24) denniskardys ](https://speakerdeck.com/denniskardys)
 
- [ ![Avatar for Kyle Neath](https://secure.gravatar.com/avatar/5f2da528927a2ec9ba4fec2069cbc958?s=24) kneath ](https://speakerdeck.com/kneath)
+ 239
 
- 240
+  140k
 
-  18k
+ [Let's Do A Bunch of Simple Stuff to Make Websites Faster](https://speakerdeck.com/chriscoyier/lets-do-a-bunch-of-simple-stuff-to-make-websites-faster)
 
- [HDC tutorial](https://speakerdeck.com/michielstock/hdc-tutorial)
+ [ ![Avatar for Chris Coyier](https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=24) chriscoyier ](https://speakerdeck.com/chriscoyier)
 
- [ ![Avatar for Michiel Stock](https://secure.gravatar.com/avatar/4888c8378accd22acc2998ddf1414e7f?s=24) michielstock ](https://speakerdeck.com/michielstock)
+ 508
 
- 2
+  140k
 
-  780
+ [How People are Using Generative and Agentic AI to Supercharge Their Products, Projects, Services and Value Streams Today](https://speakerdeck.com/helenjbeal/how-people-are-using-generative-and-agentic-ai-to-supercharge-their-products-projects-services-and-value-streams-today)
 
- [The B2B funnel & how to create a winning content strategy](https://speakerdeck.com/katarinadahlin/the-b2b-funnel-and-how-to-create-a-winning-content-strategy)
-
- [ ![Avatar for Katarina Dahlin](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjAwNTg5LCJwdXIiOiJibG9iX2lkIn19--24cb98b2197cd4cdeb5e3ae1f94b4c1a162cd1bf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/Avainsana-analyysi%20thumbnails.png) katarinadahlin ](https://speakerdeck.com/katarinadahlin)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+ [ ![Avatar for Helen Beal](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDc4NzcyLCJwdXIiOiJibG9iX2lkIn19--63c34c899ae9696f1fd5abddc34acfa182481f9d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/Helen%20Beal%20(white%20jacket).png) helenjbeal ](https://speakerdeck.com/helenjbeal)
 
  1
 
-  460
+  260
 
- [Mind Mapping](https://speakerdeck.com/helmedeiros/mind-mapping)
-
- [ ![Avatar for Hélio Medeiros](https://secure.gravatar.com/avatar/b870070e35cb43df68fceaee71755106?s=24) helmedeiros ](https://speakerdeck.com/helmedeiros)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
-
- 1
-
-  300
-
- [Building AI with AI](https://speakerdeck.com/inesmontani/building-ai-with-ai)
-
- [ ![Avatar for Ines Montani](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjkwMDgsInB1ciI6ImJsb2JfaWQifX0=--32562a32b00d456c251338e2bbab3b3a7c1775bf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/profile_ines.jpg) inesmontani ](https://speakerdeck.com/inesmontani)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
-
- 1
-
-  1.1k
-
- [職位にかかわらず全員がリーダーシップを発揮するチーム作り / Building a team where everyone can demonstrate leadership regardless of position](https://speakerdeck.com/madoxten/building-a-team-where-everyone-can-demonstrate-leadership-regardless-of-position)
-
- [ ![Avatar for MADOX](https://secure.gravatar.com/avatar/c17f3305cb0231227adae066aa770c51?s=24) madoxten ](https://speakerdeck.com/madoxten)
-
- 64
-
-  56k
-
- [Kristin Tynski - Automating Marketing Tasks With AI](https://speakerdeck.com/techseoconnect/kristin-tynski-automating-marketing-tasks-with-ai)
+ [Jess Joyce - The Pitfalls of Following Frameworks](https://speakerdeck.com/techseoconnect/jess-joyce-the-pitfalls-of-following-frameworks)
 
  [ ![Avatar for Tech SEO Connect](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2NjU4LCJwdXIiOiJibG9iX2lkIn19--14f297c27d2190051dc109b5d472cf0297dd6c3e/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/40575_logo_social%20media%20profile%204.png) techseoconnect ](https://speakerdeck.com/techseoconnect)
 
  [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
- 0
+ 1
 
-  440
+  330
 
- [Practical Orchestrator](https://speakerdeck.com/shlominoach/practical-orchestrator)
+ [Deep Space Network (abreviated)](https://speakerdeck.com/tonyrice/deep-space-network-abreviated)
 
- [ ![Avatar for Shlomi Noach](https://secure.gravatar.com/avatar/168ccec72eee0530b818d44f3fedaacf?s=24) shlominoach ](https://speakerdeck.com/shlominoach)
-
- 191
-
-  12k
-
- [Building a A Zero-Code AI SEO Workflow](https://speakerdeck.com/portentint/building-a-a-zero-code-ai-seo-workflow)
-
- [ ![Avatar for Ian Lurie](https://secure.gravatar.com/avatar/96251c01a6e587b796d043b064fe5224?s=24) portentint ](https://speakerdeck.com/portentint)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+ [ ![Avatar for Tony Rice](https://secure.gravatar.com/avatar/0f152194360ac15e8a9ce63c5c72288b?s=24) tonyrice ](https://speakerdeck.com/tonyrice)
 
  0
 
-  650
+  250
+
+ [Building Experiences: Design Systems, User Experience, and Full Site Editing](https://speakerdeck.com/marktimemedia/building-experiences-design-systems-user-experience-and-full-site-editing)
+
+ [ ![Avatar for Michelle Schulp Hunt](https://secure.gravatar.com/avatar/e195ae45320d9202eaa01c9f1d31a416?s=24) marktimemedia ](https://speakerdeck.com/marktimemedia)
+
+ 0
+
+  570
 
  [Discover your Explorer Soul](https://speakerdeck.com/emna__ayadi/discover-your-explorer-soul)
 
@@ -320,6 +286,30 @@ Japanese version: [https://speakerdeck.com/icchy/antiuirusuwoorakurutosita-windo
  2
 
   1.2k
+
+ [Designing for humans not robots](https://speakerdeck.com/tammielis/designing-for-humans-not-robots)
+
+ [ ![Avatar for Tammie Lister](https://secure.gravatar.com/avatar/d36d2c1821af9249b69ff7f5ed60529b?s=24) tammielis ](https://speakerdeck.com/tammielis)
+
+ 254
+
+  26k
+
+ [Faster Mobile Websites](https://speakerdeck.com/deanohume/faster-mobile-websites)
+
+ [ ![Avatar for Dean Hume](https://secure.gravatar.com/avatar/c620790ae5bf5b50c245b2e0ef95f338?s=24) deanohume ](https://speakerdeck.com/deanohume)
+
+ 310
+
+  32k
+
+ [Designing for Timeless Needs](https://speakerdeck.com/cassininazir/designing-for-timeless-needs-a72bb8c4-c96b-47cc-8598-36af0340e28e)
+
+ [ ![Avatar for Cassini Nazir](https://secure.gravatar.com/avatar/4631d364d59bd9d045acf046a0ce1cfe?s=24) cassininazir ](https://speakerdeck.com/cassininazir)
+
+ 1
+
+  430
 
 ## Transcript
 

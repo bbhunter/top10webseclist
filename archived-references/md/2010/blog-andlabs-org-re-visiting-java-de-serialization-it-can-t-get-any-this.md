@@ -5,9 +5,9 @@ resource: "http://blog.andlabs.org/2010/09/re-visiting-java-de-serialization-it.
 tags: [article, webseclist-reference, en, blog-andlabs-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:23+00:00"
+  at: "2026-08-10T15:04:04+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.andlabs.org/2010/09/re-visiting-java-de-serialization-it.html"
@@ -28,10 +28,10 @@ original_url: "http://blog.andlabs.org/2010/09/re-visiting-java-de-serialization
 published: ""
 publisher: blog.andlabs.org
 publisher_english: ""
-raw_sha256: 6fc58b6420e5e05eb5e7d98c88e16f7c8539b81782bce92893ec9d78809a751a
+raw_sha256: a8e9a8434cf04946802d59e43cb71c5a07fda186a75cf3ba5626ae4da128aac0
 retrieved_from: "http://blog.andlabs.org/2010/09/re-visiting-java-de-serialization-it.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:23+00:00"
+retrieved_utc: "2026-08-10T15:04:04+00:00"
 slug: blog-andlabs-org-re-visiting-java-de-serialization-it-can-t-get-any-this
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.andlabs.org/2010/09/re-visiting-java-de-serialization-it.html>
-- Preserved from: http://blog.andlabs.org/2010/09/re-visiting-java-de-serialization-it.html (live) on 2026-08-09
+- Preserved from: http://blog.andlabs.org/2010/09/re-visiting-java-de-serialization-it.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

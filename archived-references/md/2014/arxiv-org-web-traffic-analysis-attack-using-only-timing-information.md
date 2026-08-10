@@ -5,9 +5,9 @@ resource: "https://arxiv.org/abs/1410.2087"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:49:58+00:00"
+  at: "2026-08-10T15:02:24+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://arxiv.org/abs/1410.2087"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2014.md:77"
+  - "2014.md:72"
 commit: ""
-content_sha256: 8cf79911066e00b0869487c259eb16b1d47843bd76a6409bfcafdb60acadfbaf
+content_sha256: 942309de492d55bfcb8ff2e0040a7803f176bbf45f06560d5c899aa1eac3b3fd
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: eeb8ec89c13a4363a5426cd3462710539fc5d25520dd9c69766dd7a8cb5701eb
 retrieved_from: "https://arxiv.org/abs/1410.2087"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:49:58+00:00"
+retrieved_utc: "2026-08-10T15:02:24+00:00"
 slug: arxiv-org-web-traffic-analysis-attack-using-only-timing-information
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/1410.2087>
-- Preserved from: https://arxiv.org/abs/1410.2087 (live) on 2026-08-08
+- Preserved from: https://arxiv.org/abs/1410.2087 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

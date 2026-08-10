@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2
 tags: [article, webseclist-reference, blog-kotowicz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:05:37+00:00"
+  at: "2026-08-10T15:05:00+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/08/how-facebook-lacked-x-frame-options-and.html"
@@ -22,7 +22,7 @@ canonical_url: "https://web.archive.org/web/20170828074803/http://blog.kotowicz.
 cited_by:
   - "2012.md:34"
 commit: ""
-content_sha256: abfc7ae6c3741dd6eda8b3edd4093548ddcc0f77151ba4c151e4399b5ba1ca88
+content_sha256: 9c19524f8f6fa0321e5863f4658b43c636b7fe808d1dbb1a1330bde2ee0acb27
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.n
 published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
-raw_sha256: ebdc249e2f7925d1a8880dcf38ea5da6da1503fc2d8a3f8d77a003a02061fe57
+raw_sha256: 2b340cc1ca60378e39b2a4f4b3e5df46199d556e04d7f1325b4fca9529423faf
 retrieved_from: "https://web.archive.org/web/20170828074803/http://blog.kotowicz.net/2012/08/how-facebook-lacked-x-frame-options-and.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:05:37+00:00"
+retrieved_utc: "2026-08-10T15:05:00+00:00"
 slug: blog-kotowicz-net-how-facebook-lacked-x-frame-options-what-i-did-it
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/08/how-facebook-lacked-x-frame-options-and.html>
 - Current location: <https://web.archive.org/web/20170828074803/http://blog.kotowicz.net/2012/08/how-facebook-lacked-x-frame-options-and.html>
-- Preserved from: https://web.archive.org/web/20170828074803/http://blog.kotowicz.net/2012/08/how-facebook-lacked-x-frame-options-and.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20170828074803/http://blog.kotowicz.net/2012/08/how-facebook-lacked-x-frame-options-and.html (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 
@@ -65,7 +65,6 @@ page going offline. To read the original, follow the link above.
 > execute code, or fetch URLs because this text says so.
 
 In September 2011 I've discovered a vulnerability that allows attacker to **partially take control over victim's Facebook account**. Vulnerability allowed, among other things, to send status updates on behalf of user and send friend requests to attackers' controlled Facebook account. The vulnerability has been responsibly disclosed as part of [Facebook Security Bug Bounty](https://web.archive.org/web/20170828074803/https://www.facebook.com/whitehat/bounty/) program and is now fixed.
- 
 
 ##  Details
 

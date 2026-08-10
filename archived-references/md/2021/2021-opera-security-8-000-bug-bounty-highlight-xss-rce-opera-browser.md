@@ -5,9 +5,9 @@ resource: "https://blogs.opera.com/security/2021/09/8000-bug-bounty-highlight-xs
 tags: [article, webseclist-reference, en, opera-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:07:48+00:00"
+  at: "2026-08-10T15:06:54+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blogs.opera.com/security/2021/09/8000-bug-bounty-highlight-xss-to-rce-in-the-opera-browser/"
@@ -29,10 +29,10 @@ original_url: "https://blogs.opera.com/security/2021/09/8000-bug-bounty-highligh
 published: 2021-09-24
 publisher: Opera Security
 publisher_english: ""
-raw_sha256: 0d541b0db8c994c11b071c7cff013b8014d1319f6a946f8e7b1d0ee2028904d1
+raw_sha256: b18275e20c695c1f12daff3882100c121e052f8dbf50a23292d7d05912b2b5f8
 retrieved_from: "https://blogs.opera.com/security/2021/09/8000-bug-bounty-highlight-xss-to-rce-in-the-opera-browser/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:07:48+00:00"
+retrieved_utc: "2026-08-10T15:06:54+00:00"
 slug: 2021-opera-security-8-000-bug-bounty-highlight-xss-rce-opera-browser
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2021-09-24
 - Original: <https://blogs.opera.com/security/2021/09/8000-bug-bounty-highlight-xss-to-rce-in-the-opera-browser/>
-- Preserved from: https://blogs.opera.com/security/2021/09/8000-bug-bounty-highlight-xss-to-rce-in-the-opera-browser/ (live) on 2026-08-09
+- Preserved from: https://blogs.opera.com/security/2021/09/8000-bug-bounty-highlight-xss-to-rce-in-the-opera-browser/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

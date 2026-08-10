@@ -5,9 +5,9 @@ resource: "http://web.archive.org/web/20160507023636/http://maverickblogging.com
 tags: [article, webseclist-reference, en-US, maverickblogging-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:49+00:00"
+  at: "2026-08-10T15:31:24+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://maverickblogging.com/logout-is-broken-by-default-ruby-on-rails-web-applications/"
@@ -32,10 +32,10 @@ original_url: "http://web.archive.org/web/20160507023636/http://maverickblogging
 published: ""
 publisher: maverickblogging.com
 publisher_english: ""
-raw_sha256: 792dc52de9be3ca2da2a5452923115424c5109c8fd1566166645097abbe5335e
+raw_sha256: aa5eeb072ad1f562a6923738dbbdd94bcaf2263e9d0e89eece13e902f66b7fbc
 retrieved_from: "http://web.archive.org/web/20160505105010/http://maverickblogging.com/logout-is-broken-by-default-ruby-on-rails-web-applications/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:49+00:00"
+retrieved_utc: "2026-08-10T15:31:24+00:00"
 slug: maverickblogging-com-maverickblogging-technology-art-g-s-mcnamara
 snapshot: 20160507023636
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://maverickblogging.com/logout-is-broken-by-default-ruby-on-rails-web-applications/>
 - Current location: <http://web.archive.org/web/20160505105010/http://maverickblogging.com/logout-is-broken-by-default-ruby-on-rails-web-applications/>
-- Preserved from: http://web.archive.org/web/20160505105010/http://maverickblogging.com/logout-is-broken-by-default-ruby-on-rails-web-applications/ (live) on 2026-08-09
+- Preserved from: http://web.archive.org/web/20160505105010/http://maverickblogging.com/logout-is-broken-by-default-ruby-on-rails-web-applications/ (live) on 2026-08-10
 - Capture timestamp: 20160507023636
 - Licence: unknown
 

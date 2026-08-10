@@ -5,9 +5,9 @@ resource: "https://thespanner.co.uk/2013/05/16/dom-clobbering"
 tags: [article, webseclist-reference, en, thespanner-co-uk]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:23+00:00"
+  at: "2026-08-10T16:02:19+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://thespanner.co.uk/2013/05/16/dom-clobbering"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2013.md:59"
+  - "2013.md:54"
 commit: ""
 content_sha256: 7c376edad21c82c1c1fca100b315941cbe3595caae1b99e90a40024ca5535fd0
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://thespanner.co.uk/2013/05/16/dom-clobbering"
 published: ""
 publisher: thespanner.co.uk
 publisher_english: ""
-raw_sha256: bb23988dff93d322012a9351a7a0df92a81baa51cf210ce59bcf1771e227a976
+raw_sha256: 6f0dfa0154b15858894237f2911778e86a5a32fa32b81db8789f3b086a44a3f3
 retrieved_from: "https://thespanner.co.uk/2013/05/16/dom-clobbering"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:23+00:00"
+retrieved_utc: "2026-08-10T16:02:19+00:00"
 slug: thespanner-co-uk-dom-clobbering
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://thespanner.co.uk/2013/05/16/dom-clobbering>
-- Preserved from: https://thespanner.co.uk/2013/05/16/dom-clobbering (live) on 2026-08-08
+- Preserved from: https://thespanner.co.uk/2013/05/16/dom-clobbering (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

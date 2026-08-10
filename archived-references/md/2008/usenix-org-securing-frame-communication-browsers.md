@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/bart
 tags: [article, webseclist-reference, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:30+00:00"
+  at: "2026-08-10T16:05:54+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/index.html"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2008.md:91"
+  - "2008.md:86"
 commit: ""
-content_sha256: 461e1128a52ae05735b92c9af5319c3dc96e6343b1a2c99bc141e54e2c23cc4b
+content_sha256: c769d5fd68ef70df29d470824949c00d177bd6c2733c55770bdae444fc2ef395
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 816454f6b65e1e6242cdce432861904bef918e211814e4478cba1e8184ff4b8f
+raw_sha256: 1e839e62de10ac74956014bec590b8bfbd0334d3ff763b15cd602a730d7f3bb4
 retrieved_from: "https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/index.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:30+00:00"
+retrieved_utc: "2026-08-10T16:05:54+00:00"
 slug: usenix-org-securing-frame-communication-browsers
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/index.html>
-- Preserved from: https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/index.html (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/index.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -98,7 +98,6 @@ Securing Frame Communication in Browsers         [![Check out the new USENIX Web
 
  We examine the browser frame as an isolation primitive. Because frames can contain untrusted content, the browser's security policy restricts frame interactions. Many browsers, however, insufficiently restrict the ability of one frame to navigate another frame to a new location. These overly permissive frame navigation policies lead to a variety of attacks, which we demonstrate against the Google AdSense login page and the iGoogle gadget aggregator. To prevent these attacks, we propose tightening the browser's frame navigation policy while maintaining compatibility with existing web content. We have collaborated with browser vendors to deploy this policy in Firefox 3 and Safari 3.1. As the policy is already implemented in Internet Explorer 7, the policy is now deployed in the three most-used browsers.
 
- 
 |  |  Confidentiality |  Authentication |  Network Analogue |   |
 | Fragment identifier channel |   ![$ \checkmark$](https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/img1.png)  |   |  Public Key Encryption |   |
 | `postMessage` channel |   |   ![$ \checkmark$](https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/img1.png)  |  Public Key Signatures |   |
@@ -208,8 +207,6 @@ window.open("https://attacker.com/",
 
  Of the browsers in heavy use today, Internet Explorer 6 and Safari 3 both implement the permissive policy. Internet Explorer 7 and Firefox 2 implement stricter policies (described in subsequent sections). However, Flash Player can be used to circumvent the stricter navigation policy of Internet Explorer 7, effectively reducing the policy to "permissive." Many web sites are vulnerable to this attack, including Google AdSense, which displays its password field inside a frame; see Figure 1.
 
- 
-
  **Figure 1:** Cross-Window Attack: The attacker controls the password field because it is contained within a frame.
 |
 
@@ -239,8 +236,6 @@ This policy prevents the cross-window attack because the web attacker does not c
 - **Advertisements.** Web advertising is a simple form of mashup, combining first-party content, such as news articles or sports statistics, with third-party advertisements. Typically, the publisher (the integrator) delegates a portion of its screen real estate to an advertisement network, such as Google, Yahoo, or Microsoft, in exchange for money. Most advertisements, including Google AdWords, are contained in frames, both to prevent the advertisers (who provide the gadgets) from interfering with the publisher's site and to prevent prevent the publisher from using JavaScript to click on the advertisements.
 
  We refer to aggregators and advertisements as *simple mashups* because these mashups do not involve communication between the gadgets and the integrator. Simple mashups rely on the browser to provide isolation but do not require inter-frame communication.
-
- 
 
  **Figure 2:** Gadget Hijacking Attack. Under the window policy, the attacker gadget can navigate the other gadgets.
 |  ![Image igoogle-before](https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/igoogle-before.png)  |  ![Image igoogle-after](https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/igoogle-after.png)  |   |
@@ -279,8 +274,6 @@ The Internet Explorer 6 team wanted to enable the child policy by default, but s
 
 | IE 6 (default) |  IE 6 (optional) |  IE 7 (default) |  IE 7 (optional) |  Firefox 2 |  Safari 3 |  Opera 9 |   |
 | Permissive |  Child |  Descendant |  Permissive |  Window |  Permissive |  Child |   |
-
- 
 
  |  |
 
@@ -353,8 +346,6 @@ frames[0].location =
 |  ![$\displaystyle A \to B$](https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/img9.png) |  ![$\displaystyle : N_B,$](https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/img14.png) Message![$\displaystyle _1$](https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/img15.png) |    |  |
 
  In this notation, ![$ A$](https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/img16.png) and ![$ B$](https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/img17.png) are frames, ![$ N_A$](https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/img18.png) and ![$ N_B$](https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/img19.png) are fresh nonces (numbers chosen at random during each run of the protocol), and URI![$ _A$](https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/img20.png) is the location of ![$ A$](https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/img16.png) 's frame. Under the network analogy described above, this protocol is analogous to a variant of the classic Needham-Schroeder key-establishment protocol [[29](https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/index.html#needham-schroeder)]. The Needham-Schroeder protocol was designed to establish a shared secret between two parties over an insecure channel. In the Needham-Schroeder protocol, each message is encrypted with the public key of its intended recipient. The Windows Live protocol does not employ encryption because the fragment identifier channel already provides the required confidentiality.
-
- 
 
  **Figure 3:** Lowe Anomaly: This Windows Live Contacts gadget received a message that appeared to come from integrator.com, but in reality the request was made by `attacker.com`.
 |

@@ -5,9 +5,9 @@ resource: "https://portswigger.net/blog/xss-without-html-client-side-template-in
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:23+00:00"
+  at: "2026-08-10T15:36:26+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/blog/xss-without-html-client-side-template-injection-with-angularjs"
@@ -21,7 +21,7 @@ canonical_url: "https://portswigger.net/research/xss-without-html-client-side-te
 cited_by:
   - "2016-17.md:23"
 commit: ""
-content_sha256: ee2a839b25bf77dc5fe91a32da1bc4bb60b5bbac7e955d5a18a6f5ca5d8dac27
+content_sha256: 84fe79012e1df57357f40a24de7d00486b8d155c13a4f2686c007de40e03f277
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://portswigger.net/blog/xss-without-html-client-side-templat
 published: 2016-01-27
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 40421d61638001a395bb2218000d8d8b09c628853ad1fbfffb85cd44a453bfd0
+raw_sha256: 7e5931c521b6582bfdd4f294f016377315a4d9f69833aba0df4f6528bdf1b548
 retrieved_from: "https://portswigger.net/research/xss-without-html-client-side-template-injection-with-angularjs"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:23+00:00"
+retrieved_utc: "2026-08-10T15:36:26+00:00"
 slug: 2016-portswigger-research-xss-without-html-client-side-template-angularjs
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 - Published: 2016-01-27
 - Original: <https://portswigger.net/blog/xss-without-html-client-side-template-injection-with-angularjs>
 - Current location: <https://portswigger.net/research/xss-without-html-client-side-template-injection-with-angularjs>
-- Preserved from: https://portswigger.net/research/xss-without-html-client-side-template-injection-with-angularjs (live) on 2026-08-09
+- Preserved from: https://portswigger.net/research/xss-without-html-client-side-template-injection-with-angularjs (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

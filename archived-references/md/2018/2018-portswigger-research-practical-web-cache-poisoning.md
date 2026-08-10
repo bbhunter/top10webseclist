@@ -5,9 +5,9 @@ resource: "https://portswigger.net/blog/practical-web-cache-poisoning"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:22+00:00"
+  at: "2026-08-10T15:36:24+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/blog/practical-web-cache-poisoning"
@@ -15,13 +15,14 @@ sources:
     last_modified: 2018-08-09
   - id: canonical
     resource: "https://portswigger.net/research/practical-web-cache-poisoning"
-also_at: []
+also_at:
+  - "https://portswigger.net/kb/papers/7q1e9u9a/web-cache-poisoning.pdf"
 authors: []
 canonical_url: "https://portswigger.net/research/practical-web-cache-poisoning"
 cited_by:
   - "2018.md:6"
 commit: ""
-content_sha256: 73d32e635f242ccfd5da1eeeaee258a8c0c013af8b5900b84ef0a19c97ce68de
+content_sha256: 0837563c3977bcbaf285484764d1eb8f6ad949e4c70d6d30a097a9f35170d3ac
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +32,10 @@ original_url: "https://portswigger.net/blog/practical-web-cache-poisoning"
 published: 2018-08-09
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 12079ccd824538e4fb0fe27b3e0cab00c90fe6b56639aabb33517a96eb203775
+raw_sha256: 3d8bf50df5f09f66719c5c34a3b8de3001bb10938ea5f964b780eafd0baa1896
 retrieved_from: "https://portswigger.net/research/practical-web-cache-poisoning"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:22+00:00"
+retrieved_utc: "2026-08-10T15:36:24+00:00"
 slug: 2018-portswigger-research-practical-web-cache-poisoning
 snapshot: ""
 title_english: ""
@@ -49,7 +50,8 @@ translation_of: ""
 - Published: 2018-08-09
 - Original: <https://portswigger.net/blog/practical-web-cache-poisoning>
 - Current location: <https://portswigger.net/research/practical-web-cache-poisoning>
-- Preserved from: https://portswigger.net/research/practical-web-cache-poisoning (live) on 2026-08-09
+- Also published at: <https://portswigger.net/kb/papers/7q1e9u9a/web-cache-poisoning.pdf>
+- Preserved from: https://portswigger.net/research/practical-web-cache-poisoning (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

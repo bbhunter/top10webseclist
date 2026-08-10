@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity16/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:05+00:00"
+  at: "2026-08-10T16:04:27+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/aviram"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:65"
+  - "2016-17.md:59"
 commit: ""
 content_sha256: 8a6a1a9e01d890f7210522504140e31486b8c28f92b0dec44d23db31e86fb9be
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity16/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 6aeb3eb6c70b41ce93aab0c4a57ae60932bb56c602b2cd4af8cbf603ea2edb0e
+raw_sha256: 10af9002f97a02aba94d032ea1ce6e27d4e1301dac7b445d99a490a55a0970d8
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/aviram"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:05+00:00"
+retrieved_utc: "2026-08-10T16:04:27+00:00"
 slug: usenix-org-drown-breaking-tls-using-sslv2
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/aviram>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/aviram (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/aviram (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

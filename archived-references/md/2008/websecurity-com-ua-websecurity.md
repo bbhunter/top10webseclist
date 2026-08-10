@@ -5,9 +5,9 @@ resource: "http://websecurity.com.ua/2115/"
 tags: [article, webseclist-reference, websecurity-com-ua]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:25+00:00"
+  at: "2026-08-10T16:06:14+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://websecurity.com.ua/2115/"
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: ef5fc9ac19cb854122d69990a3527a21a79d923a0aaed079c466eb0537440113
 retrieved_from: "http://websecurity.com.ua/2115/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:25+00:00"
+retrieved_utc: "2026-08-10T16:06:14+00:00"
 slug: websecurity-com-ua-websecurity
 snapshot: ""
 title_english: Bypassing Multi-Pass Filters - Websecurity
@@ -46,7 +46,7 @@ translation_of: ""
 - Title in English: Bypassing Multi-Pass Filters - Websecurity
 - Published: date not stated
 - Original: <http://websecurity.com.ua/2115/>
-- Preserved from: http://websecurity.com.ua/2115/ (live) on 2026-08-09
+- Preserved from: http://websecurity.com.ua/2115/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,18 +5,19 @@ resource: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/fake-co-v
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:22+00:00"
+  at: "2026-08-10T15:34:53+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/fake-co-visitation-injection-attacks-recommender-systems/"
     title: Fake Co-visitation Injection Attacks to Recommender Systems
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/ndss2017_02B-4_Yang_paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:112"
+  - "2016-17.md:106"
 commit: ""
 content_sha256: 4eeb224ac14b6d2754b021bca15d982659d5f97c0bcef42fe675803b8f0ac164
 depth: full
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/fake-
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: d828751b22524050993d6d90f0037c0289bbc96c60cbe6a42266a25fb916444c
+raw_sha256: d1d622c8295c60f631f784179d8b29ad251d373b4097e2817a4c6488811700b6
 retrieved_from: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/fake-co-visitation-injection-attacks-recommender-systems/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:22+00:00"
+retrieved_utc: "2026-08-10T15:34:53+00:00"
 slug: ndss-symposium-fake-co-visitation-injection-attacks-recommender-systems
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/fake-co-visitation-injection-attacks-recommender-systems/>
-- Preserved from: https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/fake-co-visitation-injection-attacks-recommender-systems/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/ndss2017_02B-4_Yang_paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/fake-co-visitation-injection-attacks-recommender-systems/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

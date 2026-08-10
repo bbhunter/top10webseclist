@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/kim-y
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:54+00:00"
+  at: "2026-08-10T16:05:18+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/kim-young-min"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2023.md:102"
+  - "2023.md:97"
 commit: ""
 content_sha256: 5c382338272d253d355eca02135c93ed5bf98cd109c2a42c85ece52db1ec8fec
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity23/presentation/k
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 055a85e0614cf7966cd68abbf48725f27fc6401cb7856a65702e84e525cee8a8
+raw_sha256: 0713320507cf12482750fe02439ed8f3a53c42c210341deb2e08eeb5cec59b1c
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity23/presentation/kim-young-min"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:54+00:00"
+retrieved_utc: "2026-08-10T16:05:18+00:00"
 slug: usenix-org-extending-hand-attackers-browser-privilege-escalation-extensions
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity23/presentation/kim-young-min>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity23/presentation/kim-young-min (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity23/presentation/kim-young-min (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

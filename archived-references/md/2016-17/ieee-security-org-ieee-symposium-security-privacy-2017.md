@@ -5,9 +5,9 @@ resource: "https://www.ieee-security.org/TC/SP2017/program-papers.html#sok-explo
 tags: [article, webseclist-reference, en, ieee-security-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:11+00:00"
+  at: "2026-08-10T15:28:43+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2017/program-papers.html#sok-exploiting-network-printers"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:114"
+  - "2016-17.md:108"
 commit: ""
-content_sha256: f6d1c4c497e0ed471b8722e6a5a7dc7b89533d29150d3a071fe687956576df25
+content_sha256: be217fbeba556751e8dbef3b9363edf7076996a15f76e44e529e58bae301a2d0
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: e3d800b1a5fb62f70e418eea15efacef969ae988e9ac903c4973dd9f36ec032e
 retrieved_from: "https://www.ieee-security.org/TC/SP2017/program-papers.html#sok-exploiting-network-printers"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:11+00:00"
+retrieved_utc: "2026-08-10T15:28:43+00:00"
 slug: ieee-security-org-ieee-symposium-security-privacy-2017
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2017/program-papers.html#sok-exploiting-network-printers>
-- Preserved from: https://www.ieee-security.org/TC/SP2017/program-papers.html#sok-exploiting-network-printers (live) on 2026-08-08
+- Preserved from: https://www.ieee-security.org/TC/SP2017/program-papers.html#sok-exploiting-network-printers (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

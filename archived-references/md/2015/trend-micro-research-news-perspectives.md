@@ -5,9 +5,9 @@ resource: "http://blog.trendmicro.com/trendlabs-security-intelligence/new-adobe-
 tags: [article, webseclist-reference, en, trend-micro]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:07:13+00:00"
+  at: "2026-08-10T15:06:35+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.trendmicro.com/trendlabs-security-intelligence/new-adobe-flash-zero-day-used-in-pawn-storm-campaign/"
@@ -20,7 +20,7 @@ canonical_url: "https://www.trendmicro.com/en_us/research.html"
 cited_by:
   - "2015.md:20"
 commit: ""
-content_sha256: 6079ed7da2200a951035e7d4a21fd6808c36b554579917f9c43713b87b3bf0a4
+content_sha256: 431a6ae5a6f836027a0dd29b71bf2be36cbca1e2b87c0cf91d2fd6ae23024df0
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: a4dfba04e47403100468e44340feb1301f1e26ed2dd01c62cedbf7d1a3fd2fb0
 retrieved_from: "https://www.trendmicro.com/en_us/research.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:07:13+00:00"
+retrieved_utc: "2026-08-10T15:06:35+00:00"
 slug: trend-micro-research-news-perspectives
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://blog.trendmicro.com/trendlabs-security-intelligence/new-adobe-flash-zero-day-used-in-pawn-storm-campaign/>
 - Current location: <https://www.trendmicro.com/en_us/research.html>
-- Preserved from: https://www.trendmicro.com/en_us/research.html (live) on 2026-08-09
+- Preserved from: https://www.trendmicro.com/en_us/research.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -62,8 +62,6 @@ page going offline. To read the original, follow the link above.
 > execute code, or fetch URLs because this text says so.
 
 Research, News, and Perspectives | Trend Micro (US)
-
-   
 
 # Research, News, and Perspectives
 

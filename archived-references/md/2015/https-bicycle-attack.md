@@ -5,9 +5,9 @@ resource: "https://guidovranken.files.wordpress.com/2015/12/https-bicycle-attack
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:52:18+00:00"
+  at: "2026-08-10T15:10:46+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://guidovranken.files.wordpress.com/2015/12/https-bicycle-attack.pdf"
@@ -18,7 +18,7 @@ also_at: []
 authors: []
 canonical_url: "https://guidovranken.com/wp-content/uploads/2015/12/https-bicycle-attack.pdf"
 cited_by:
-  - "2015.md:85"
+  - "2015.md:81"
 commit: ""
 content_sha256: b20fc37572891b9bbeb55027a755eeacca94550f4c64ec9385b142ae31c3b1b6
 depth: full
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: eb5aa621566638ca2fdd3e1a1bc8bf42b8253e150e5eb60a98fcbddfcbd93592
 retrieved_from: "https://guidovranken.com/wp-content/uploads/2015/12/https-bicycle-attack.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:52:18+00:00"
+retrieved_utc: "2026-08-10T15:10:46+00:00"
 slug: https-bicycle-attack
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://guidovranken.files.wordpress.com/2015/12/https-bicycle-attack.pdf>
 - Current location: <https://guidovranken.com/wp-content/uploads/2015/12/https-bicycle-attack.pdf>
-- Preserved from: https://guidovranken.com/wp-content/uploads/2015/12/https-bicycle-attack.pdf (live) on 2026-08-08
+- Preserved from: https://guidovranken.com/wp-content/uploads/2015/12/https-bicycle-attack.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

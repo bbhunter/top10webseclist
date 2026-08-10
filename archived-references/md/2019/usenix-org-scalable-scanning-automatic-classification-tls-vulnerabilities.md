@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/merge
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:24+00:00"
+  at: "2026-08-10T16:04:49+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/merget"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2019.md:79"
+  - "2019.md:77"
 commit: ""
 content_sha256: b422c769f967e98dc97b8ca4a6f0da2e75ed00d5f1dc78d64523ba6c99497782
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity19/presentation/m
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: d0a7213b33f592d520bc7eebb7fa3390dd03aa5021a67a4275c94a3570e7f99b
+raw_sha256: 9a59531da9af4befdbe8caf3fb961e42e6eeec5aabe27d9c26bcfdd1f9c04cc7
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity19/presentation/merget"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:24+00:00"
+retrieved_utc: "2026-08-10T16:04:49+00:00"
 slug: usenix-org-scalable-scanning-automatic-classification-tls-vulnerabilities
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity19/presentation/merget>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity19/presentation/merget (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity19/presentation/merget (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

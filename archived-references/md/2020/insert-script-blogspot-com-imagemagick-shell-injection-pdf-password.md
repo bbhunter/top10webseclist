@@ -5,9 +5,9 @@ resource: "https://insert-script.blogspot.com/2020/11/imagemagick-shell-injectio
 tags: [article, webseclist-reference, insert-script-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:45+00:00"
+  at: "2026-08-10T15:29:21+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://insert-script.blogspot.com/2020/11/imagemagick-shell-injection-via-pdf.html"
@@ -28,10 +28,10 @@ original_url: "https://insert-script.blogspot.com/2020/11/imagemagick-shell-inje
 published: ""
 publisher: insert-script.blogspot.com
 publisher_english: ""
-raw_sha256: b4accc86139ab15bad8973f727f4b02803549a381d7faa693306f040eec33a6a
+raw_sha256: 5364e757775c493b57a8ea61a8f3767cb298f1809afcca386356e5cb662af090
 retrieved_from: "https://insert-script.blogspot.com/2020/11/imagemagick-shell-injection-via-pdf.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:45+00:00"
+retrieved_utc: "2026-08-10T15:29:21+00:00"
 slug: insert-script-blogspot-com-imagemagick-shell-injection-pdf-password
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://insert-script.blogspot.com/2020/11/imagemagick-shell-injection-via-pdf.html>
-- Preserved from: https://insert-script.blogspot.com/2020/11/imagemagick-shell-injection-via-pdf.html (live) on 2026-08-09
+- Preserved from: https://insert-script.blogspot.com/2020/11/imagemagick-shell-injection-via-pdf.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

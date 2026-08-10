@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/https://www.whitehatsec.co
 tags: [article, webseclist-reference, en, whitehat-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:49:12+00:00"
+  at: "2026-08-10T16:07:08+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/x-frame-options-xfo-detection-from-javascript/"
@@ -34,10 +34,10 @@ original_url: "https://web.archive.org/web/20170903113359/https://www.whitehatse
 published: ""
 publisher: WhiteHat Security
 publisher_english: ""
-raw_sha256: 6711cf7c2aa363997177e58647369a9ef306e65e4bedb8a89853151053c53f3e
+raw_sha256: 2f729dfd25d5e00e8d441cf1ea98bb52039f4903e552edabba26d89604b590a5
 retrieved_from: "https://web.archive.org/web/20190820211223/https://www.whitehatsec.com/blog/x-frame-options-xfo-detection-from-javascript/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:49:12+00:00"
+retrieved_utc: "2026-08-10T16:07:08+00:00"
 slug: whitehat-security-x-frame-options-xfo-detection-javascript
 snapshot: 20170903113359
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/x-frame-options-xfo-detection-from-javascript/>
 - Current location: <https://web.archive.org/web/20190820211223/https://www.whitehatsec.com/blog/x-frame-options-xfo-detection-from-javascript/>
-- Preserved from: https://web.archive.org/web/20190820211223/https://www.whitehatsec.com/blog/x-frame-options-xfo-detection-from-javascript/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20190820211223/https://www.whitehatsec.com/blog/x-frame-options-xfo-detection-from-javascript/ (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

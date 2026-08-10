@@ -5,9 +5,9 @@ resource: "https://www.aikido.dev/blog/promptpwnd-github-actions-ai-agents"
 tags: [article, webseclist-reference, en, aikido-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:00:34+00:00"
+  at: "2026-08-10T15:01:23+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.aikido.dev/blog/promptpwnd-github-actions-ai-agents"
@@ -20,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2025.md:47"
 commit: ""
-content_sha256: 910c81d6a97e1d467d664b0995b2b811bc6a5e995076f27c0034b4a344eebe52
+content_sha256: 80b4e5d6e9307ac366c3e0fb27fce1fbe43177b2aab2e9879cac2644decd8c27
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "https://www.aikido.dev/blog/promptpwnd-github-actions-ai-agents"
 published: ""
 publisher: Aikido Security
 publisher_english: ""
-raw_sha256: 7e1ce8ffed43e7a4cc49e8de2cf1cc126f5986f10650128139443d768e057568
+raw_sha256: 990097a2bc384931f2f43953a6291d85c2e407e2c0b3c9b28016a1bd54d1bb2b
 retrieved_from: "https://www.aikido.dev/blog/promptpwnd-github-actions-ai-agents"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:00:34+00:00"
+retrieved_utc: "2026-08-10T15:01:23+00:00"
 slug: aikido-security-prompt-injection-inside-github-actions-new-frontier-attacks
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.aikido.dev/blog/promptpwnd-github-actions-ai-agents>
-- Preserved from: https://www.aikido.dev/blog/promptpwnd-github-actions-ai-agents (live) on 2026-08-09
+- Preserved from: https://www.aikido.dev/blog/promptpwnd-github-actions-ai-agents (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -375,6 +375,7 @@ This is not theoretical. Live proof-of-concept exploits already exist, and sever
 If your project uses AI within GitHub Actions, now is the time to audit and secure your workflows.
 
 Similar Posts
+
 [See all](https://www.aikido.dev/blog)
 
 August 4, 2026

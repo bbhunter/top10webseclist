@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2
 tags: [article, webseclist-reference, blog-kotowicz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:05:37+00:00"
+  at: "2026-08-10T15:05:03+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html"
@@ -22,7 +22,7 @@ canonical_url: "https://web.archive.org/web/20171017093250/http://blog.kotowicz.
 cited_by:
   - "2012.md:7"
 commit: ""
-content_sha256: 6d871a9049fee84ad1597eeb4c35ba9ed34f1003b3f112aaed78004ebbad7181
+content_sha256: 3350ee5de78fb39d1952501418fed127ff3e238435b673ae25e2c2d2fd32830b
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.n
 published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
-raw_sha256: 253c61b4b4a461a91ec4e37fe57ca1c37154c72419a233bec767306f06446ef3
+raw_sha256: 2f8a3776e14546d9a240c69e30e0d18b8deb4d33a2792d6afb3963fcd26e2d11
 retrieved_from: "https://web.archive.org/web/20171017093250/http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:05:37+00:00"
+retrieved_utc: "2026-08-10T15:05:03+00:00"
 slug: blog-kotowicz-net-owning-system-through-chrome-extension
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html>
 - Current location: <https://web.archive.org/web/20171017093250/http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html>
-- Preserved from: https://web.archive.org/web/20171017093250/http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20171017093250/http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 
@@ -71,8 +71,6 @@ page going offline. To read the original, follow the link above.
  But the most interesting vulnerabilities may be hidden in the code of plugins ([NPAPI](https://web.archive.org/web/20171017093250/https://wiki.mozilla.org/NPAPI) .dll, .so files) that are sometimes bundled with extensions. These are binary files that run **outside of Google Chrome sandboxes**. Plugin functions are of course being called from extensions Javascript code. So, through XSS one could exploit e.g. a buffer overflow, use-after-free and, theoretically, hijack OS user account.
 
  The threat isn't theoretical though. I was able to find a chain of vulnerabilities in [cr-gpg](https://web.archive.org/web/20171017093250/http://thinkst.com/tools/cr-gpg/) extension which handles PGP encryption/decryption from within Gmail interface. Funny thing - the exact same vulnerabilities were reported independently by [Gynvael Coldwind](https://web.archive.org/web/20171017093250/http://gynvael.coldwind.pl/?id=487) - great finds, Gynvael! All reported issues below were **present in 0.7.4 **version and **are fixed in >=0.8.2.**
-
- 
 
 ##  DOM XSS when injecting decrypted message content back into gmail interface.
 

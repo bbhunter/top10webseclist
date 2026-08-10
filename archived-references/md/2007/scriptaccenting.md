@@ -5,9 +5,9 @@ resource: "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/S
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:48+00:00"
+  at: "2026-08-10T15:32:43+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ScriptAccenting.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2007.md:109"
+  - "2007.md:104"
 commit: ""
 content_sha256: 1fcc48467c6bdfb11e1c5f4957c6401dda818eb2f1300aef2743ac8b4778c766
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 5a05447eb2defbfc607bb9578545f308e3640e4cf5bbe2988baa802a14a68301
 retrieved_from: "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ScriptAccenting.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:48+00:00"
+retrieved_utc: "2026-08-10T15:32:43+00:00"
 slug: scriptaccenting
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ScriptAccenting.pdf>
-- Preserved from: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ScriptAccenting.pdf (live) on 2026-08-08
+- Preserved from: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ScriptAccenting.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://medium.com/@omarelshopky/temenos-ofs-field-injection-revealin
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:09+00:00"
+  at: "2026-08-10T15:32:15+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@omarelshopky/temenos-ofs-field-injection-revealing-a-hidden-financial-attack-vector-44df0e2bef9d"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2025.md:69"
 commit: ""
-content_sha256: 1777992293a97cea551334b3b5380343547b1e6bd88282a091c587f0c252a390
+content_sha256: 05c346b0d4226b8e1269172ee226d4dad7a3a68ad2da2f15e880be66009ef363
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://medium.com/@omarelshopky/temenos-ofs-field-injection-reve
 published: 2025-12-09
 publisher: Medium
 publisher_english: ""
-raw_sha256: 602d88d475915c031c3c41a14915cf6026460f3aaf0fb582f926a4f1c928112e
+raw_sha256: ada218eaab1fa9771270bb18611f4ab8c47ea6a713b8285083abb325211ce90b
 retrieved_from: "https://medium.com/@omarelshopky/temenos-ofs-field-injection-revealing-a-hidden-financial-attack-vector-44df0e2bef9d"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:09+00:00"
+retrieved_utc: "2026-08-10T15:32:15+00:00"
 slug: 2025-medium-temenos-ofs-string-injection-revealing-hidden-financial-vector
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2025-12-09
 - Original: <https://medium.com/@omarelshopky/temenos-ofs-field-injection-revealing-a-hidden-financial-attack-vector-44df0e2bef9d>
-- Preserved from: https://medium.com/@omarelshopky/temenos-ofs-field-injection-revealing-a-hidden-financial-attack-vector-44df0e2bef9d (live) on 2026-08-09
+- Preserved from: https://medium.com/@omarelshopky/temenos-ofs-field-injection-revealing-a-hidden-financial-attack-vector-44df0e2bef9d (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

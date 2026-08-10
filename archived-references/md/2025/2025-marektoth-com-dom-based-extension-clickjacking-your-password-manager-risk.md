@@ -5,9 +5,9 @@ resource: "https://marektoth.com/blog/dom-based-extension-clickjacking/"
 tags: [article, webseclist-reference, en, marektoth-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:39+00:00"
+  at: "2026-08-10T15:31:18+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://marektoth.com/blog/dom-based-extension-clickjacking/"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2025.md:34"
 commit: ""
-content_sha256: 03093638b9ce8e0295dfd5e630a708f0cfed56aa35f41f7776ebd2a7f54248c4
+content_sha256: 9e2b6e6d1255c5722aaff185006f374a9a13075d45aaa61ac1adf10539628cce
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://marektoth.com/blog/dom-based-extension-clickjacking/"
 published: 2025-08-09
 publisher: marektoth.com
 publisher_english: ""
-raw_sha256: 9eb67c816e2553fd74820c944a2670487df1443fca6dd26d03e6f182ec2da4f2
+raw_sha256: 4e6d68f70808c4d25c3cf17d0d9eebf2b4ec27256b6c2ed4788d8470df639ed4
 retrieved_from: "https://marektoth.com/blog/dom-based-extension-clickjacking/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:39+00:00"
+retrieved_utc: "2026-08-10T15:31:18+00:00"
 slug: 2025-marektoth-com-dom-based-extension-clickjacking-your-password-manager-risk
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2025-08-09
 - Original: <https://marektoth.com/blog/dom-based-extension-clickjacking/>
-- Preserved from: https://marektoth.com/blog/dom-based-extension-clickjacking/ (live) on 2026-08-09
+- Preserved from: https://marektoth.com/blog/dom-based-extension-clickjacking/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

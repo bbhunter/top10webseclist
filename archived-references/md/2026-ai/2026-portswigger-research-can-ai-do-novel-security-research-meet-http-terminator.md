@@ -5,21 +5,22 @@ resource: "https://portswigger.net/research/can-ai-do-novel-security-research"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:52:39+00:00"
+  at: "2026-08-10T15:36:31+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/can-ai-do-novel-security-research"
     title: Can AI do novel security research? Meet the HTTP Terminator
     last_modified: 2026-08-05
-also_at: []
+also_at:
+  - "https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:54"
+  - "2026-ai.md:30"
 commit: ""
-content_sha256: f9e40359f2d6b8d0516718dfa3580882b2db4327201e7812905c2fefe52bbca6
+content_sha256: d809e743913bedf34f28d7e89ac7f4397bb5014058bea6eae784277fc489391c
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +30,10 @@ original_url: "https://portswigger.net/research/can-ai-do-novel-security-researc
 published: 2026-08-05
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 396481fafadb1f721ec9159541c70ccc79d50524f14b5832df7693e21f1d4703
+raw_sha256: a9fb6fda0ee419f79b734c39e10e2c2a37c046e891b780e9411cfeee5a6a285b
 retrieved_from: "https://portswigger.net/research/can-ai-do-novel-security-research"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:52:39+00:00"
+retrieved_utc: "2026-08-10T15:36:31+00:00"
 slug: 2026-portswigger-research-can-ai-do-novel-security-research-meet-http-terminator
 snapshot: ""
 title_english: ""
@@ -46,7 +47,8 @@ translation_of: ""
 
 - Published: 2026-08-05
 - Original: <https://portswigger.net/research/can-ai-do-novel-security-research>
-- Preserved from: https://portswigger.net/research/can-ai-do-novel-security-research (live) on 2026-08-08
+- Also published at: <https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf>
+- Preserved from: https://portswigger.net/research/can-ai-do-novel-security-research (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

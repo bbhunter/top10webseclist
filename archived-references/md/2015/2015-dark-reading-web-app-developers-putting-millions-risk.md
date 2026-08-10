@@ -5,9 +5,9 @@ resource: "http://www.darkreading.com/application-security/web-app-developers-pu
 tags: [article, webseclist-reference, en, dark-reading]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:08:50+00:00"
+  at: "2026-08-10T15:08:26+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.darkreading.com/application-security/web-app-developers-putting-millions-at-risk/d/d-id/1320720"
@@ -23,7 +23,7 @@ canonical_url: "https://www.darkreading.com/application-security/web-app-develop
 cited_by:
   - "2015.md:24"
 commit: ""
-content_sha256: da9c2dd65db398f84c70bd9d98d783fce700f835d52e5de0f9b5dbb17319d4fd
+content_sha256: 059f1237a06b11e0f7b76ce356aaf34c5a64506ef1d53ed0c0511ee04ddf5a31
 depth: full
 depth_reason: default
 kind: article
@@ -33,10 +33,10 @@ original_url: "http://www.darkreading.com/application-security/web-app-developer
 published: 2015-06-04
 publisher: Dark Reading
 publisher_english: ""
-raw_sha256: b3ebb74cf610b4a66e5dc18e2e497e8295e571c445a32f242113b506471d1e4e
+raw_sha256: db27fa684139a82b6a984e622a82ce4b2163713b2109308e95303c7025d93b0c
 retrieved_from: "https://www.darkreading.com/application-security/web-app-developers-putting-millions-at-risk"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:08:50+00:00"
+retrieved_utc: "2026-08-10T15:08:26+00:00"
 slug: 2015-dark-reading-web-app-developers-putting-millions-risk
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: 2015-06-04
 - Original: <http://www.darkreading.com/application-security/web-app-developers-putting-millions-at-risk/d/d-id/1320720>
 - Current location: <https://www.darkreading.com/application-security/web-app-developers-putting-millions-at-risk>
-- Preserved from: https://www.darkreading.com/application-security/web-app-developers-putting-millions-at-risk (live) on 2026-08-09
+- Preserved from: https://www.darkreading.com/application-security/web-app-developers-putting-millions-at-risk (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

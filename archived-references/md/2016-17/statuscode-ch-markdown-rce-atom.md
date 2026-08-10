@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20181124230850/https://statuscode.ch/2017
 tags: [article, webseclist-reference, statuscode-ch]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:31+00:00"
+  at: "2026-08-10T16:00:59+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20181124230850/https://statuscode.ch/2017/11/from-markdown-to-rce-in-atom/"
@@ -30,10 +30,10 @@ original_url: "https://web.archive.org/web/20181124230850/https://statuscode.ch/
 published: ""
 publisher: statuscode.ch
 publisher_english: ""
-raw_sha256: 8e621b24660eb32ee14901b7b20403b49bef4840552d3fe9bbe7cbf8f90d26c5
+raw_sha256: beef3b6bec4c57477670dd102c2e322103bd81c8d3cb818a912be9611377bb9c
 retrieved_from: "https://web.archive.org/web/20181124230850/https://statuscode.ch/2017/11/from-markdown-to-rce-in-atom/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:31+00:00"
+retrieved_utc: "2026-08-10T16:00:59+00:00"
 slug: statuscode-ch-markdown-rce-atom
 snapshot: 20181124230850
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20181124230850/https://statuscode.ch/2017/11/from-markdown-to-rce-in-atom/>
-- Preserved from: https://web.archive.org/web/20181124230850/https://statuscode.ch/2017/11/from-markdown-to-rce-in-atom/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20181124230850/https://statuscode.ch/2017/11/from-markdown-to-rce-in-atom/ (live) on 2026-08-10
 - Capture timestamp: 20181124230850
 - Licence: unknown
 

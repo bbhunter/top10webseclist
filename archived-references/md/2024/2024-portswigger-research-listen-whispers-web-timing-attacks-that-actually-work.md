@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/listen-to-the-whispers-web-timing-at
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:36+00:00"
+  at: "2026-08-10T15:36:48+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work"
@@ -19,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:22"
 commit: ""
-content_sha256: 13cf14df97a9592c975cfeb5119cdbf114eada5e9649f8014f90f1eac9f4b8b4
+content_sha256: 47cd83715d5417222a4a416d7c825ee572cd39015b6547c66fadcc5a72e4d87c
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/listen-to-the-whispers-web-timin
 published: 2024-08-07
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 32699cd997493ea1dc0c3ac9ef8799bf7a50e17afb9ef3f4a58b2c4a39653bf2
+raw_sha256: c9a64aac5c4f61b458a4a6b7f23350d35ba2e1d07eb6bf75abc2ae65fbaaf0cf
 retrieved_from: "https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:36+00:00"
+retrieved_utc: "2026-08-10T15:36:48+00:00"
 slug: 2024-portswigger-research-listen-whispers-web-timing-attacks-that-actually-work
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2024-08-07
 - Original: <https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work>
-- Preserved from: https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work (live) on 2026-08-09
+- Preserved from: https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

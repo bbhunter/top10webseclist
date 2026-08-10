@@ -5,9 +5,9 @@ resource: "https://acmccs.github.io/papers/p957-vissersA.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:49:43+00:00"
+  at: "2026-08-10T15:00:58+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://acmccs.github.io/papers/p957-vissersA.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:93"
+  - "2016-17.md:87"
 commit: ""
 content_sha256: 9891e9cd30294ca478998c1d13fc987b85c0c8e06e2b4b2b5e58dc4cc9969f99
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 12cdd038041f896d52159706f436013362a44e6e8b1b75b77d128b8043555ecc
 retrieved_from: "https://acmccs.github.io/papers/p957-vissersA.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:49:43+00:00"
+retrieved_utc: "2026-08-10T15:00:58+00:00"
 slug: wolf-name-street-hijacking-domains-through-their-nameservers
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://acmccs.github.io/papers/p957-vissersA.pdf>
-- Preserved from: https://acmccs.github.io/papers/p957-vissersA.pdf (live) on 2026-08-08
+- Preserved from: https://acmccs.github.io/papers/p957-vissersA.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

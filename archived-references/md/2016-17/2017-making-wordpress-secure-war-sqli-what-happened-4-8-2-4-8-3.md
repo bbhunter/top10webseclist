@@ -5,9 +5,9 @@ resource: "https://make.wordpress.org/security/2017/11/13/the-war-on-sqli-or-wha
 tags: [article, webseclist-reference, en, making-wordpress-secure]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:38+00:00"
+  at: "2026-08-10T15:31:17+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://make.wordpress.org/security/2017/11/13/the-war-on-sqli-or-what-happened-in-4-8-2-and-4-8-3/"
@@ -29,10 +29,10 @@ original_url: "https://make.wordpress.org/security/2017/11/13/the-war-on-sqli-or
 published: 2017-11-13
 publisher: Making WordPress Secure
 publisher_english: ""
-raw_sha256: cf88744ed1e80c12af3627e76bbbb5cacc26543e439b51a9b7100178e474ae60
+raw_sha256: 9042ed510d90cf60a61ae87df839edec5e72e32ab39d44e12cc801bec0b2d351
 retrieved_from: "https://make.wordpress.org/security/2017/11/13/the-war-on-sqli-or-what-happened-in-4-8-2-and-4-8-3/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:38+00:00"
+retrieved_utc: "2026-08-10T15:31:17+00:00"
 slug: 2017-making-wordpress-secure-war-sqli-what-happened-4-8-2-4-8-3
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2017-11-13
 - Original: <https://make.wordpress.org/security/2017/11/13/the-war-on-sqli-or-what-happened-in-4-8-2-and-4-8-3/>
-- Preserved from: https://make.wordpress.org/security/2017/11/13/the-war-on-sqli-or-what-happened-in-4-8-2-and-4-8-3/ (live) on 2026-08-09
+- Preserved from: https://make.wordpress.org/security/2017/11/13/the-war-on-sqli-or-what-happened-in-4-8-2-and-4-8-3/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

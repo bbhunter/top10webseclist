@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/12-m
 tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:46:16+00:00"
+  at: "2026-08-10T16:02:30+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/12-million-home-routers-vulnerable-to-takeover/109970"
@@ -35,10 +35,10 @@ original_url: "https://web.archive.org/web/20160403035045/http://threatpost.com/
 published: 2014-12-18
 publisher: Threatpost | The first stop for security news
 publisher_english: ""
-raw_sha256: 8bbbaf545eed7f1942cebbbce49aca5f87762ec499b6053bdcdcb4b66c2c57d5
+raw_sha256: fb6cfbc70c11c3d419fda83fd7d54371724b46018cd233ac4bccc38d313d0e16
 retrieved_from: "https://web.archive.org/web/20160417171411/https://threatpost.com/12-million-home-routers-vulnerable-to-takeover/109970/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:46:16+00:00"
+retrieved_utc: "2026-08-10T16:02:30+00:00"
 slug: 2014-threatpost-the-first-stop-for-security-news-12-million-home-takeover
 snapshot: 20160403035045
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 - Published: 2014-12-18
 - Original: <https://web.archive.org/web/20160403035045/http://threatpost.com/12-million-home-routers-vulnerable-to-takeover/109970>
 - Current location: <https://web.archive.org/web/20160417171411/https://threatpost.com/12-million-home-routers-vulnerable-to-takeover/109970/>
-- Preserved from: https://web.archive.org/web/20160417171411/https://threatpost.com/12-million-home-routers-vulnerable-to-takeover/109970/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160417171411/https://threatpost.com/12-million-home-routers-vulnerable-to-takeover/109970/ (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 

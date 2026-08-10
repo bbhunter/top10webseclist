@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:44+00:00"
+  at: "2026-08-10T15:35:14+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2019.md:78"
+  - "2019.md:76"
 commit: ""
 content_sha256: f54cd205f120d35fdd147c3dc0e4bdf5750041cb2d46d9f00cd407722cf8235a
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 5e7002617ec4bfb705405757e0712a795e23a0c54ce36d1f29cfeda569a091b9
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:44+00:00"
+retrieved_utc: "2026-08-10T15:35:14+00:00"
 slug: latex-gloves-protecting-browser-extensions-probing-revelation-attacks
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf (live) on 2026-08-08
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -335,19 +335,9 @@ http://domain.comWeb Page Title!Item 1!Item 2!Item 3!Item 4!Item 5Lorem ipsum do
 
 --- page 4 ---
 
-@¸ÿÀ´
-
-U¸ÿÀ@U@
-.A!$2@U¸ÿô´ U¸ÿô´U¸ÿô@
+@¸ÿÀ´U¸ÿÀ@U@.A!$2@U¸ÿô´ U¸ÿô´U¸ÿô@
 U¸ÿö@QUUU U*U
-
-UUU
-
-U’22?2+U+U+U¸ÿþ@%U UU
-
-UU
-
-U…1ô+++++++í++]ä+++++++++9ý++++22/]?í?í3/++?í99?10]%!"&'5332676655#"467663273&&#"326CþþþôY©R
+UUUU’22?2+U+U+U¸ÿþ@%U UUUUU…1ô+++++++í++]ä+++++++++9ý++++22/]?í?í3/++?í99?10]%!"&'5332676655#"467663273&&#"326CþþþôY©R
 .Èd`~##U›xÈëQFAºaƒI°¼K�@›²„™R¥þäþöÀ5.
 
 --- page 5 ---
@@ -356,19 +346,9 @@ http://domain.comWeb Page Title!Item 1!Item 2!Item 3!Item 4!Item 5Lorem ipsum do
 
 --- page 6 ---
 
-@¸ÿÀ´
-
-U¸ÿÀ@U@
-.A!$2@U¸ÿô´ U¸ÿô´U¸ÿô@
+@¸ÿÀ´U¸ÿÀ@U@.A!$2@U¸ÿô´ U¸ÿô´U¸ÿô@
 U¸ÿö@QUUU U*U
-
-UUU
-
-U’22?2+U+U+U¸ÿþ@%U UU
-
-UU
-
-U…1ô+++++++í++]ä+++++++++9ý++++22/]?í?í3/++?í99?10]%!"&'5332676655#"467663273&&#"326CþþþôY©R
+UUUU’22?2+U+U+U¸ÿþ@%U UUUUU…1ô+++++++í++]ä+++++++++9ý++++22/]?í?í3/++?í99?10]%!"&'5332676655#"467663273&&#"326CþþþôY©R
 .Èd`~##U›xÈëQFAºaƒI°¼K�@›²„™R¥þäþöÀ5.
 
 --- page 7 ---
@@ -527,8 +507,11 @@ g
 "content_scripts": [
 f
 "matches": ["
+*
 ://
+*
 .example.com/
+*
 "],
 "js": ["content_script.js"]
 g
@@ -1082,6 +1065,7 @@ These 13,011 extensions (1,378 Firefox
 URL matches the regular expressions in their manifest le. For
 instance, an extension which lists
 http://example.com/
+*
 in its manifest le, will not execute when visiting, e.g.,
 http://attacker.invalid/index.html
 . Extensions can
@@ -1126,6 +1110,7 @@ Extensions with more ne-grained regular expressions may
 require the attacker to register a domain in DNS. For instance,
 a regular expression
 http://
+*
 .com/abc
 does not match
 the
@@ -1150,10 +1135,13 @@ those regular expressions by replacing all “*” characters
 with “anystring”. For instance, we generate the URL
 http:
 //
+*
 .example.com/anystring
 for the regular expression
 http://
+*
 .example.com/
+*
 . We call this set of URLs the
 “generated” URLs.
 Dataset web page content
@@ -2140,8 +2128,7 @@ May-2018.
 --- page 20 ---
 
 YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
-½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
+ $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
 
 --- page 21 ---
 
@@ -2153,5 +2140,4 @@ Há§¯Ú>Ï;]%I‰ éâgÎJ:àïFš,ØžöOîóœòßôž:š%Ig8ê:�' R”^	`
 
 --- page 23 ---
 
-"¸?rtôTzª$ƒBjQ/ÆÌ
-jËùÂÞf™,¢˜<K~
+"¸?rtôTzª$ƒBjQ/ÆÌjËùÂÞf™,¢˜<K~

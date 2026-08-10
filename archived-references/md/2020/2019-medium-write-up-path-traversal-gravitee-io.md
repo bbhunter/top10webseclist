@@ -5,9 +5,9 @@ resource: "https://medium.com/@maxime.escourbiac/write-up-of-path-traversal-on-g
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:06+00:00"
+  at: "2026-08-10T15:32:14+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@maxime.escourbiac/write-up-of-path-traversal-on-gravitee-io-8835941be69f"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2020.md:18"
 commit: ""
-content_sha256: eae0da97cce06590f6292067708249a214bc80b47341a5e4b0fe135288824533
+content_sha256: bbb3adecbbfd3b62e8a0c69907e706fab91165840605c11182d1106d9e7d3bdd
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://medium.com/@maxime.escourbiac/write-up-of-path-traversal-
 published: 2019-12-09
 publisher: Medium
 publisher_english: ""
-raw_sha256: 560bd30384906e3e24bb7b8d7fe36a15fe1b3e7d28b3a35135e563243e4afad2
+raw_sha256: fa6478b360baae20817ff3e241f2432842758c1b106012e1225eb25d03ab0562
 retrieved_from: "https://medium.com/@maxime.escourbiac/write-up-of-path-traversal-on-gravitee-io-8835941be69f"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:06+00:00"
+retrieved_utc: "2026-08-10T15:32:14+00:00"
 slug: 2019-medium-write-up-path-traversal-gravitee-io
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2019-12-09
 - Original: <https://medium.com/@maxime.escourbiac/write-up-of-path-traversal-on-gravitee-io-8835941be69f>
-- Preserved from: https://medium.com/@maxime.escourbiac/write-up-of-path-traversal-on-gravitee-io-8835941be69f (live) on 2026-08-09
+- Preserved from: https://medium.com/@maxime.escourbiac/write-up-of-path-traversal-on-gravitee-io-8835941be69f (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

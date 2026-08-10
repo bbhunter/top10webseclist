@@ -5,25 +5,25 @@ resource: "https://infosecwriteups.com/exploring-the-world-of-esi-injection-b862
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T05:14:38+00:00"
+  at: "2026-08-10T15:56:21+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://infosecwriteups.com/exploring-the-world-of-esi-injection-b86234e66f91"
     title: Exploring the World of ESI Injection
     author: Sudhanshu Rajbhar
     last_modified: 2023-01-03
-  - id: capture
-    resource: "https://web.archive.org/web/20241007231329/https://infosecwriteups.com/exploring-the-world-of-esi-injection-b86234e66f91"
+  - id: canonical
+    resource: "https://infosecwriteups.com/exploring-the-world-of-esi-injection-b86234e66f91?gi=fc62334ec3d1"
 also_at: []
 authors:
   - Sudhanshu Rajbhar
-canonical_url: ""
+canonical_url: "https://infosecwriteups.com/exploring-the-world-of-esi-injection-b86234e66f91?gi=fc62334ec3d1"
 cited_by:
   - "2022.md:44"
 commit: ""
-content_sha256: 6d0510f6394c089d82f309507aabe938ed4ecee64b1bc21880a7aa725b641d81
+content_sha256: 9888840822f665a45846d95cbcf4fbde7189c7ae35f883374bc4c2667eac016d
 depth: full
 depth_reason: default
 kind: article
@@ -33,12 +33,12 @@ original_url: "https://infosecwriteups.com/exploring-the-world-of-esi-injection-
 published: 2023-01-03
 publisher: Medium
 publisher_english: ""
-raw_sha256: 5d537200d94729a93d44fe7f8a9f0e91fca8b0b3275803c3274c525efc733102
-retrieved_from: "https://infosecwriteups.com/exploring-the-world-of-esi-injection-b86234e66f91"
-retrieved_kind: stored
-retrieved_utc: "2026-08-09T05:14:38+00:00"
+raw_sha256: c782c91d2f0db3d5134ec04190a18d1600651881758b8c79565e23e8c7bcb14a
+retrieved_from: "https://infosecwriteups.com/exploring-the-world-of-esi-injection-b86234e66f91?gi=fc62334ec3d1"
+retrieved_kind: live
+retrieved_utc: "2026-08-10T15:56:21+00:00"
 slug: 2023-medium-exploring-world-esi-injection
-snapshot: 20241007231329
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -50,8 +50,8 @@ translation_of: ""
 
 - Published: 2023-01-03
 - Original: <https://infosecwriteups.com/exploring-the-world-of-esi-injection-b86234e66f91>
-- Preserved from: https://infosecwriteups.com/exploring-the-world-of-esi-injection-b86234e66f91 (stored) on 2026-08-09
-- Capture timestamp: 20241007231329
+- Current location: <https://infosecwriteups.com/exploring-the-world-of-esi-injection-b86234e66f91?gi=fc62334ec3d1>
+- Preserved from: https://infosecwriteups.com/exploring-the-world-of-esi-injection-b86234e66f91?gi=fc62334ec3d1 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -66,13 +66,9 @@ page going offline. To read the original, follow the link above.
 
 # Exploring the World of ESI Injection
 
-[![Sudhanshu Rajbhar](https://miro.medium.com/v2/resize:fill:88:88/2*IwNAX8FaOfAcFwqXw4t0Cg.jpeg)](https://sudhanshur705.medium.com/?source=post_page-----b86234e66f91--------------------------------)[![InfoSec Write-ups](https://miro.medium.com/v2/resize:fill:48:48/1*SWJxYWGZzgmBP1D0Qg_3zQ.png)](https://infosecwriteups.com/?source=post_page-----b86234e66f91--------------------------------)
+[![Sudhanshu Rajbhar](https://miro.medium.com/v2/resize:fill:64:64/2*IwNAX8FaOfAcFwqXw4t0Cg.jpeg)](https://sudhanshur705.medium.com/?source=post_page---byline--b86234e66f91---------------------------------------)
 
-[Sudhanshu Rajbhar](https://sudhanshur705.medium.com/?source=post_page-----b86234e66f91--------------------------------)
-
-Published in
-
-[InfoSec Write-ups](https://infosecwriteups.com/?source=post_page-----b86234e66f91--------------------------------)
+[Sudhanshu Rajbhar](https://sudhanshur705.medium.com/?source=post_page---byline--b86234e66f91---------------------------------------)
 
 Heyyy Everyoneee,
 
@@ -80,11 +76,11 @@ In this writeup I will be sharing my findings related to ESI (***Edge Side Inclu
 
 If you aren’t aware / haven’t already heard about ***Edge Side Include Injection, ***I strongly recommend reading the below articles first , as Gosecure has already done a great job at explaining it and also you can checkout Alex Birsan tweet below to find out how to look for them last but not the least you can also you can watch the DEFCON talk:
 
-[## Beyond XSS: Edge Side Include Injection - GoSecure ### Update: A new blog post has been published as a follow up to this article : ESI Part 2: Abusing specific… www.gosecure.net](https://www.gosecure.net/blog/2018/04/03/beyond-xss-edge-side-include-injection/?source=post_page-----b86234e66f91--------------------------------)
+[## Beyond XSS: Edge Side Include Injection - GoSecure ### Update: A new blog post has been published as a follow up to this article : ESI Part 2: Abusing specific… www.gosecure.net](https://www.gosecure.net/blog/2018/04/03/beyond-xss-edge-side-include-injection/?source=post_page-----b86234e66f91---------------------------------------)
 
-[## ESI Injection Part 2: Abusing specific implementations - GoSecure ### This post is a follow up with items discovered after the first ESI publication. Those discoveries are attack vectors… www.gosecure.net](https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations/?source=post_page-----b86234e66f91--------------------------------)
+[## ESI Injection Part 2: Abusing specific implementations - GoSecure ### This post is a follow up with items discovered after the first ESI publication. Those discoveries are attack vectors… www.gosecure.net](https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations/?source=post_page-----b86234e66f91---------------------------------------)
 
-## The Story Begins
+### The Story Begins
 
 These findings were on a private program so I will be referring to the target as **redacted.com**, to give you some idea about the company I will let you know that it’s a very famous sport’s organization.
 
@@ -120,7 +116,7 @@ The program allowed ***collaborating*** on reports , so I could just contact som
 
 There were many people in this program even some big names were also there , so it was a tough call on who should I contact after some thoughts I contacted ***nytr0gen ,*** I already knew about him as I have been playing ctfs. He is from *WreckTheLine *ctf team and trust me CTF players skillset are on a whole different level.
 
-# Collaboration Magic ⭐
+## Collaboration Magic ⭐
 
 In 30 minutes approximately nytr0gen came up with working ESI payload which can be used to popup a xss alert box.
 
@@ -140,7 +136,7 @@ Another interesting thing was that the application session cookies were marked a
 
 Well I even asked him how he came up with the idea of using the variables inside ESI comment, he told me he just read the docs
 
-[## Edge Side Includes (ESI) Language Tags ### This chapter describes the Edge Side Includes (ESI) tags provided for content assembly of dynamic fragments. This… docs.oracle.com](https://docs.oracle.com/cd/B14099_19/caching.1012/b14046/esi.htm?source=post_page-----b86234e66f91--------------------------------#i654520)
+[## Edge Side Includes (ESI) Language Tags ### This chapter describes the Edge Side Includes (ESI) tags provided for content assembly of dynamic fragments. This… docs.oracle.com](https://docs.oracle.com/cd/B14099_19/caching.1012/b14046/esi.htm?source=post_page-----b86234e66f91---------------------------------------#i654520)
 
 A full blown account takeover POC was provided in the report , the issue got *triaged *and was rewarded with a* high severity* rating (thanks to the 2x multplier):
 
@@ -186,13 +182,23 @@ A great bug deserves a great bounty :)
 
 We thought this must be the end of it and there will be no more ESI bugs, but we were wrong…………..
 
-# The Story Continueeeees
+## The Story Continueeeees
 
 We found another endpoint , it looked like a proxy which takes an url parameter as input and it then fetches the response of that url.
 
 It only whitelisted few domains some of them were on our target redacted.com and few were on other 3rd party sites.
 
 Due to the way it worked ,we started testing to see if ssrf is possible here. As it only allowed making requests to some whitelist hosts we began looking for any open redirect bug in those hosts.
+
+## Get Sudhanshu Rajbhar ’s stories in your inbox
+
+Join Medium for free to get updates from this writer.
+
+Subscribe
+
+Subscribe
+
+Remember me for faster sign in
 
 We were able to find one in redacted.com but it only worked when the user is authenticated, btw this open redirect was a bit interesting.
 
@@ -224,7 +230,7 @@ After further back and forth with the *h1 triager , *we got to know that the ori
 
 We forgot about this report and moved on. Soon enough the *promotion *came to end and we decided that we will also stop for now and if in future they did the same 2x promotion we will look back at this, which we thought had very less probability.
 
-# Another Promotion
+## Another Promotion
 
 Soon enough after 4–5 months they again launched the same 2x multiplier promotion and we were ready to hunt those ESI injection bugs again
 

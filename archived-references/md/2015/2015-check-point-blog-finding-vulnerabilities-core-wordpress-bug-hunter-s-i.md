@@ -5,9 +5,9 @@ resource: "http://blog.checkpoint.com/2015/08/04/wordpress-vulnerabilities-1/"
 tags: [article, webseclist-reference, en, check-point-blog]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:38+00:00"
+  at: "2026-08-10T15:04:14+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.checkpoint.com/2015/08/04/wordpress-vulnerabilities-1/"
@@ -25,7 +25,7 @@ canonical_url: "https://blog.checkpoint.com/research/wordpress-vulnerabilities-1
 cited_by:
   - "2015.md:28"
 commit: ""
-content_sha256: c83be4d8c3956f43652b1fca3539abad82ea15554c64ac71ffd29c8cf05d04a2
+content_sha256: c7e2288ad64dacfaf23a889dd38ab2a36c3e997236f26bee07018c7af81bc798
 depth: full
 depth_reason: default
 kind: article
@@ -35,10 +35,10 @@ original_url: "http://blog.checkpoint.com/2015/08/04/wordpress-vulnerabilities-1
 published: 2015-08-04
 publisher: Check Point Blog
 publisher_english: ""
-raw_sha256: d2fed9b1ae15ba416d321cef4c39526b60c8b8ff6e57b22bc2ae875ffa701aa0
+raw_sha256: 668cc04dc6a49a66d3563b2e5ffefe2a7d56d0fc23a0345be090ce7091be0ad4
 retrieved_from: "https://blog.checkpoint.com/research/wordpress-vulnerabilities-1/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:38+00:00"
+retrieved_utc: "2026-08-10T15:04:14+00:00"
 slug: 2015-check-point-blog-finding-vulnerabilities-core-wordpress-bug-hunter-s-i
 snapshot: ""
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 - Published: 2015-08-04
 - Original: <http://blog.checkpoint.com/2015/08/04/wordpress-vulnerabilities-1/>
 - Current location: <https://blog.checkpoint.com/research/wordpress-vulnerabilities-1/>
-- Preserved from: https://blog.checkpoint.com/research/wordpress-vulnerabilities-1/ (live) on 2026-08-09
+- Preserved from: https://blog.checkpoint.com/research/wordpress-vulnerabilities-1/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

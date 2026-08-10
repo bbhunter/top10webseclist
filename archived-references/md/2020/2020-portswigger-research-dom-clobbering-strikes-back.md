@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/dom-clobbering-strikes-back"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:27+00:00"
+  at: "2026-08-10T15:36:35+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/dom-clobbering-strikes-back"
@@ -17,9 +17,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2020.md:75"
+  - "2020.md:70"
 commit: ""
-content_sha256: 05b5bed78be9f3e0553b1b198608e327f0f8261e967789402222b4b56b89d6a2
+content_sha256: 298e639d702ff9ad17321168b9ca9167eec225ec089e98505ddb46ee5fb5743b
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/dom-clobbering-strikes-back"
 published: 2020-02-06
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 217eedc7a0a2fd7478172ddcc0de03891d89feb5bd3a5feddf03ab0764c3c5ec
+raw_sha256: 7c096b8747934ea461b0c9f39ba64ef080542cbc2171827a6e86090c364dda33
 retrieved_from: "https://portswigger.net/research/dom-clobbering-strikes-back"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:27+00:00"
+retrieved_utc: "2026-08-10T15:36:35+00:00"
 slug: 2020-portswigger-research-dom-clobbering-strikes-back
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2020-02-06
 - Original: <https://portswigger.net/research/dom-clobbering-strikes-back>
-- Preserved from: https://portswigger.net/research/dom-clobbering-strikes-back (live) on 2026-08-09
+- Preserved from: https://portswigger.net/research/dom-clobbering-strikes-back (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://www.linkedin.com/pulse/how-i-used-google-dorks-find-0-days-su
 tags: [article, webseclist-reference, en, linkedin-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:29+00:00"
+  at: "2026-08-10T15:31:09+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.linkedin.com/pulse/how-i-used-google-dorks-find-0-days-suraj-khetani/"
@@ -20,7 +20,7 @@ canonical_url: "https://www.linkedin.com/top-content/?trk=article_not_found"
 cited_by:
   - "2016-17.md:48"
 commit: ""
-content_sha256: e82454a7cd03c412f8358247181c32f546aaf77fdeedb00dfad5fe2aff3a267a
+content_sha256: 90c1ef02c4446006379522c6b725966c7707c64c28345b6f3f6df07551582c83
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "https://www.linkedin.com/pulse/how-i-used-google-dorks-find-0-day
 published: ""
 publisher: linkedin.com
 publisher_english: ""
-raw_sha256: 9f9fe45ff0454ca9195ac8353595d431a5424957360bb337eb6c52a7cbd5b171
+raw_sha256: 3831a2409205f8a3f17d4394d4a6fb87323a14774f1f1b1a648e73f47b828d9c
 retrieved_from: "https://www.linkedin.com/top-content/?trk=article_not_found"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:29+00:00"
+retrieved_utc: "2026-08-10T15:31:09+00:00"
 slug: linkedin-com-top-content-linkedin
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.linkedin.com/pulse/how-i-used-google-dorks-find-0-days-suraj-khetani/>
 - Current location: <https://www.linkedin.com/top-content/?trk=article_not_found>
-- Preserved from: https://www.linkedin.com/top-content/?trk=article_not_found (live) on 2026-08-09
+- Preserved from: https://www.linkedin.com/top-content/?trk=article_not_found (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -77,11 +77,11 @@ We can’t find the page you’re looking for. The page you’re looking for may
 
  [Career](https://www.linkedin.com/top-content/career/)🚀️
 
- [Career Advancement Tips](https://www.linkedin.com/top-content/career/career-advancement-tips/) 907K likes
+ [Career Advancement Tips](https://www.linkedin.com/top-content/career/career-advancement-tips/) 906K likes
 
  [Training & Development](https://www.linkedin.com/top-content/training-development/)📚
 
- [Mindset Development Tips](https://www.linkedin.com/top-content/training-development/mindset-development-tips/) 761K likes
+ [Mindset Development Tips](https://www.linkedin.com/top-content/training-development/mindset-development-tips/) 760K likes
 
  [Innovation](https://www.linkedin.com/top-content/innovation/)💡
 

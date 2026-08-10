@@ -5,9 +5,9 @@ resource: "https://scarybeastsecurity.blogspot.com/2009/12/cross-domain-search-t
 tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:56+00:00"
+  at: "2026-08-10T15:57:30+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://scarybeastsecurity.blogspot.com/2009/12/cross-domain-search-timing.html"
@@ -28,10 +28,10 @@ original_url: "https://scarybeastsecurity.blogspot.com/2009/12/cross-domain-sear
 published: ""
 publisher: scarybeastsecurity.blogspot.com
 publisher_english: ""
-raw_sha256: 9a8ca8c4b421b388512daf02b904f06a1d4ab8f95e1ad0a91f47f47a8746411d
+raw_sha256: 4e291a6d2702678672947dc7b8f733f93ea31cf9925a3034e2b8f1ef7c0d6f51
 retrieved_from: "https://scarybeastsecurity.blogspot.com/2009/12/cross-domain-search-timing.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:56+00:00"
+retrieved_utc: "2026-08-10T15:57:30+00:00"
 slug: scarybeastsecurity-blogspot-com-cross-domain-search-timing
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://scarybeastsecurity.blogspot.com/2009/12/cross-domain-search-timing.html>
-- Preserved from: https://scarybeastsecurity.blogspot.com/2009/12/cross-domain-search-timing.html (live) on 2026-08-09
+- Preserved from: https://scarybeastsecurity.blogspot.com/2009/12/cross-domain-search-timing.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

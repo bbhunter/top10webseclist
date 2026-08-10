@@ -5,9 +5,9 @@ resource: "https://www.sonarsource.com/blog/code-vulnerabilities-put-skiff-email
 tags: [article, webseclist-reference, en, sonarsource-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:36+00:00"
+  at: "2026-08-10T16:00:29+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.sonarsource.com/blog/code-vulnerabilities-put-skiff-emails-at-risk/"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:42"
 commit: ""
-content_sha256: df949dbcff442b991622bb3932a31a91f6c4020ad997407231d2ca279350486c
+content_sha256: 659334741f177d6fe97e1778c78543571a043be614dafac227e29ecf70bc1d90
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://www.sonarsource.com/blog/code-vulnerabilities-put-skiff-e
 published: 2023-09-12
 publisher: sonarsource.com
 publisher_english: ""
-raw_sha256: 0330c6975b247202002f4d848a91771fa401d90419c951d0508392ac016489d8
+raw_sha256: 01cdeafb16b5cb64542c2e8aa13b940a8857546efcb2dca14534a32a5d448aee
 retrieved_from: "https://www.sonarsource.com/blog/code-vulnerabilities-put-skiff-emails-at-risk/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:36+00:00"
+retrieved_utc: "2026-08-10T16:00:29+00:00"
 slug: 2023-sonarsource-com-code-vulnerabilities-put-skiff-emails-risk
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2023-09-12
 - Original: <https://www.sonarsource.com/blog/code-vulnerabilities-put-skiff-emails-at-risk/>
-- Preserved from: https://www.sonarsource.com/blog/code-vulnerabilities-put-skiff-emails-at-risk/ (live) on 2026-08-09
+- Preserved from: https://www.sonarsource.com/blog/code-vulnerabilities-put-skiff-emails-at-risk/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

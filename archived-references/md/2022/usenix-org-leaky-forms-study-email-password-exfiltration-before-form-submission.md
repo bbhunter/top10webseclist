@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/senol
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:43+00:00"
+  at: "2026-08-10T16:05:09+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/senol"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2022.md:84"
+  - "2022.md:82"
 commit: ""
 content_sha256: 171abaf954583aeb66f8e1d486372254aed0da05b7060332ee00ea15804a9bd0
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity22/presentation/s
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: e893d6b35ce1b87753406a456d55539bc89edd9ed6341ed64eae9bf0285be2a0
+raw_sha256: a63351973d879f14e7b031366933cc74c0d4b8e8eb7a68bd11d2d36331e0e0eb
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity22/presentation/senol"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:43+00:00"
+retrieved_utc: "2026-08-10T16:05:09+00:00"
 slug: usenix-org-leaky-forms-study-email-password-exfiltration-before-form-submission
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity22/presentation/senol>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/senol (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/senol (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

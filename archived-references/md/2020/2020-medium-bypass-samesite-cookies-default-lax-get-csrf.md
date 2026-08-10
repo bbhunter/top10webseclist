@@ -5,9 +5,9 @@ resource: "https://medium.com/@renwa/bypass-samesite-cookies-default-to-lax-and-
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:17+00:00"
+  at: "2026-08-10T15:32:18+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@renwa/bypass-samesite-cookies-default-to-lax-and-get-csrf-343ba09b9f2b"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2020.md:43"
 commit: ""
-content_sha256: c386054204baf52bc4dcbae70d00707f08bb382c75a51e87770ad76b922304b9
+content_sha256: f200f444989f271294b549f78d88dd5c470435c7a595be6a4645de832ae4b0b5
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://medium.com/@renwa/bypass-samesite-cookies-default-to-lax-
 published: 2020-01-08
 publisher: Medium
 publisher_english: ""
-raw_sha256: 416741e48c71fb34ac41f52338964bdfd3ce0e036e75aa506dc0a4f10d6777a3
+raw_sha256: 03e59b66ff8e41068bf8a5bbd6d02a75e5274af75ef8aab9ea3bd444b511b011
 retrieved_from: "https://medium.com/@renwa/bypass-samesite-cookies-default-to-lax-and-get-csrf-343ba09b9f2b"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:17+00:00"
+retrieved_utc: "2026-08-10T15:32:18+00:00"
 slug: 2020-medium-bypass-samesite-cookies-default-lax-get-csrf
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2020-01-08
 - Original: <https://medium.com/@renwa/bypass-samesite-cookies-default-to-lax-and-get-csrf-343ba09b9f2b>
-- Preserved from: https://medium.com/@renwa/bypass-samesite-cookies-default-to-lax-and-get-csrf-343ba09b9f2b (live) on 2026-08-09
+- Preserved from: https://medium.com/@renwa/bypass-samesite-cookies-default-to-lax-and-get-csrf-343ba09b9f2b (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,21 +5,22 @@ resource: "https://portswigger.net/research/portable-data-exfiltration"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:37+00:00"
+  at: "2026-08-10T15:36:50+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/portable-data-exfiltration"
     title: "Portable Data exFiltration: XSS for PDFs"
     last_modified: 2020-12-10
-also_at: []
+also_at:
+  - "https://portswigger.net/kb/papers/Portable-Data-ExFiltration.pdf"
 authors: []
 canonical_url: ""
 cited_by:
   - "2020.md:6"
 commit: ""
-content_sha256: 3bb7be1998eee18f320e60c516268275ea63bc4674a0fb365f3ee2c5904104fe
+content_sha256: 17b57310517e51b88b2acc683352686f4ee68c4a5c97075cd44e3d585c06e9c5
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +30,10 @@ original_url: "https://portswigger.net/research/portable-data-exfiltration"
 published: 2020-12-10
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 1b649f088edbf9c02a4846afddbc68d73e174850693b43f55b523e55a3f531ab
+raw_sha256: 0b3621c82c3f97abfd9d94c4f567b273626b3cb11e50e93f5ba1f68e142ab5e4
 retrieved_from: "https://portswigger.net/research/portable-data-exfiltration"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:37+00:00"
+retrieved_utc: "2026-08-10T15:36:50+00:00"
 slug: 2020-portswigger-research-portable-data-exfiltration-xss-pdfs
 snapshot: ""
 title_english: ""
@@ -46,7 +47,8 @@ translation_of: ""
 
 - Published: 2020-12-10
 - Original: <https://portswigger.net/research/portable-data-exfiltration>
-- Preserved from: https://portswigger.net/research/portable-data-exfiltration (live) on 2026-08-09
+- Also published at: <https://portswigger.net/kb/papers/Portable-Data-ExFiltration.pdf>
+- Preserved from: https://portswigger.net/research/portable-data-exfiltration (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

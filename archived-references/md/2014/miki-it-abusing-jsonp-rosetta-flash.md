@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/http://miki.it/blog/2014/7
 tags: [article, webseclist-reference, en, miki-it]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:36:04+00:00"
+  at: "2026-08-10T15:32:57+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/"
@@ -17,7 +17,8 @@ sources:
     resource: "https://web.archive.org/web/20151222203351/https://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/"
   - id: capture
     resource: "https://web.archive.org/web/20160403035045/http://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/"
-also_at: []
+also_at:
+  - "https://miki.it/RosettaFlash/RosettaFlash_paper.pdf"
 authors:
   - Michele Spagnuolo
 canonical_url: "https://web.archive.org/web/20151222203351/https://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/"
@@ -34,10 +35,10 @@ original_url: "https://web.archive.org/web/20160403035045/http://miki.it/blog/20
 published: ""
 publisher: miki.it
 publisher_english: ""
-raw_sha256: 7531f138f2d4c723f8e04a286c3019ce96508948d54fe357a78c8a88dbf43746
+raw_sha256: 339637a71d3e25cbcacd47221b767a6b5811c2434272a56bd0f7cfd4978ce095
 retrieved_from: "https://web.archive.org/web/20151222203351/https://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:36:04+00:00"
+retrieved_utc: "2026-08-10T15:32:57+00:00"
 slug: miki-it-abusing-jsonp-rosetta-flash
 snapshot: 20160403035045
 title_english: ""
@@ -52,7 +53,8 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/http://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/>
 - Current location: <https://web.archive.org/web/20151222203351/https://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/>
-- Preserved from: https://web.archive.org/web/20151222203351/https://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/ (live) on 2026-08-09
+- Also published at: <https://miki.it/RosettaFlash/RosettaFlash_paper.pdf>
+- Preserved from: https://web.archive.org/web/20151222203351/https://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/ (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 

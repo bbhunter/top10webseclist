@@ -5,9 +5,9 @@ resource: "http://www.hardened-php.net/library/poking_new_holes_with_flash_cross
 tags: [article, webseclist-reference, en, hardened-php]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:29:43+00:00"
+  at: "2026-08-10T15:27:06+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.hardened-php.net/library/poking_new_holes_with_flash_crossdomain_policy_files.html"
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: 92c9a57b34099a99d74ded8efb7ce774dd1c9be3b57e2137e71e31604c0f1f8f
 retrieved_from: "http://www.hardened-php.net"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:29:43+00:00"
+retrieved_utc: "2026-08-10T15:27:06+00:00"
 slug: hardened-php-hardened-php-hardened-php
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.hardened-php.net/library/poking_new_holes_with_flash_crossdomain_policy_files.html>
 - Current location: <http://www.hardened-php.net>
-- Preserved from: http://www.hardened-php.net (live) on 2026-08-09
+- Preserved from: http://www.hardened-php.net (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

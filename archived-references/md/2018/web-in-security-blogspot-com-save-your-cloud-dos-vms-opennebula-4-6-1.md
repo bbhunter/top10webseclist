@@ -5,9 +5,9 @@ resource: "https://web-in-security.blogspot.com/2018/07/save-your-cloud-dos-on-v
 tags: [article, webseclist-reference, en, web-in-security-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:17+00:00"
+  at: "2026-08-10T16:06:05+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web-in-security.blogspot.com/2018/07/save-your-cloud-dos-on-vms-in.html"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2018.md:46"
 commit: ""
-content_sha256: ad6abb571cb6c7439b564389e86599a6e3122fe06fa39654ebb5a28bdc4cc70c
+content_sha256: 9c8188fc10b87dabfba32bd337da4bd376987032cce3a88bdb4e8cab16f8879d
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://web-in-security.blogspot.com/2018/07/save-your-cloud-dos-
 published: ""
 publisher: web-in-security.blogspot.com
 publisher_english: ""
-raw_sha256: ace6362e82395e70001fbf4f6be853ba68013185bed8e7d6f88dcdac605b7bca
+raw_sha256: eaea32b9bc9fc24fa66fd0b7a2124effd1064513c501ebc53cec68b03f6960fb
 retrieved_from: "https://web-in-security.blogspot.com/2018/07/save-your-cloud-dos-on-vms-in.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:17+00:00"
+retrieved_utc: "2026-08-10T16:06:05+00:00"
 slug: web-in-security-blogspot-com-save-your-cloud-dos-vms-opennebula-4-6-1
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web-in-security.blogspot.com/2018/07/save-your-cloud-dos-on-vms-in.html>
-- Preserved from: https://web-in-security.blogspot.com/2018/07/save-your-cloud-dos-on-vms-in.html (live) on 2026-08-09
+- Preserved from: https://web-in-security.blogspot.com/2018/07/save-your-cloud-dos-on-vms-in.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -61,7 +61,6 @@ page going offline. To read the original, follow the link above.
 This is a post about an old vulnerability that I finally found the time to blog about. It dates back to 2014, but from a technical point of view it is nevertheless interesting: An XML parser that tries to fix structural errors in a document caused a DoS problem.
 
  All previous posts of [this series](http://web-in-security.blogspot.de/search/label/Save%20Your%20Cloud) focused on XSS. This time, we present a vulnerability which is connected another Cloud Management Platform: [OpenNebula](http://opennebula.org/). This Infrastructure-as-a-Service platform started as a research project in 2005. It is [ used by information technology companies](http://opennebula.org/users/featuredusers/) like IBM, Dell and Akamai as well as academic institutions and the European Space Administrations (ESA). By relying on standard Linux tools as far as possible, OpenNebula reaches a high level of customizability and flexibility in hypervisors, storage systems, and network infrastructures. OpenNebula is distributed using the Apache-2 license.
- 
 
  OpenNebula offers a broad variety of interfaces to control a cloud. This post focuses on Sunstone, OpenNebula's web interface (see Figure 1).
 

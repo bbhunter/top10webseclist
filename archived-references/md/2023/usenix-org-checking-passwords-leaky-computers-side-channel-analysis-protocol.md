@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/kwong
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:55+00:00"
+  at: "2026-08-10T16:05:19+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/kwong"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2023.md:100"
+  - "2023.md:95"
 commit: ""
 content_sha256: 20b010cf73128653c4d18a140e07934b1203e69a5ff4e0d74443d360c70d55b8
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity23/presentation/k
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 1d9e644f3d6eb93b16cf175b74798cb15fee2e54c5efcbbd500ffe926dd51fe2
+raw_sha256: b6cc85366c557e6a8e06d47f4fa218ab19ecbccbad7a3fc706ca9662aca5cd7a
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity23/presentation/kwong"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:55+00:00"
+retrieved_utc: "2026-08-10T16:05:19+00:00"
 slug: usenix-org-checking-passwords-leaky-computers-side-channel-analysis-protocol
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity23/presentation/kwong>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity23/presentation/kwong (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity23/presentation/kwong (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

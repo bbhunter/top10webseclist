@@ -5,9 +5,9 @@ resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transfor
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:48:41+00:00"
+  at: "2026-08-10T15:27:34+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:71"
+  - "2026-ai.md:49"
 commit: ""
 content_sha256: 6ce3f90d77b5c227b92f6f0ff95b2319431d49444f1176db9b37728d8452f2e4
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: be2c786efcd2f4efa95c498537de5de026ecb3cc5e934ff131418b5aecc802a2
 retrieved_from: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:48:41+00:00"
+retrieved_utc: "2026-08-10T15:27:34+00:00"
 slug: transformers-dark-side-type-weaponizing-conversion-layer
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf>
-- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf (live) on 2026-08-08
+- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

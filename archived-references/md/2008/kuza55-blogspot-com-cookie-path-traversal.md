@@ -5,9 +5,9 @@ resource: "https://kuza55.blogspot.com/2008/07/cookie-path-traversal.html"
 tags: [article, webseclist-reference, kuza55-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:32:54+00:00"
+  at: "2026-08-10T15:30:35+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://kuza55.blogspot.com/2008/07/cookie-path-traversal.html"
@@ -28,10 +28,10 @@ original_url: "https://kuza55.blogspot.com/2008/07/cookie-path-traversal.html"
 published: ""
 publisher: kuza55.blogspot.com
 publisher_english: ""
-raw_sha256: 84407ee93ab36919cbdeb0d29d7b9f0389a4c783573c636bc3f317d55b8b3bb4
+raw_sha256: 35f748cd778ddfca73a98b8fe4d96d1e7ee1b9fd4e29fa6d1116bbaaf2b3a4d4
 retrieved_from: "https://kuza55.blogspot.com/2008/07/cookie-path-traversal.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:32:54+00:00"
+retrieved_utc: "2026-08-10T15:30:35+00:00"
 slug: kuza55-blogspot-com-cookie-path-traversal
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://kuza55.blogspot.com/2008/07/cookie-path-traversal.html>
-- Preserved from: https://kuza55.blogspot.com/2008/07/cookie-path-traversal.html (live) on 2026-08-09
+- Preserved from: https://kuza55.blogspot.com/2008/07/cookie-path-traversal.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

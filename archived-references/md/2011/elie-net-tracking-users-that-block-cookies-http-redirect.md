@@ -5,9 +5,9 @@ resource: "https://elie.im/blog/security/tracking-users-that-block-cookies-with-
 tags: [article, webseclist-reference, en, elie-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:10:04+00:00"
+  at: "2026-08-10T15:09:22+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://elie.im/blog/security/tracking-users-that-block-cookies-with-a-http-redirect/"
@@ -32,10 +32,10 @@ original_url: "https://elie.im/blog/security/tracking-users-that-block-cookies-w
 published: ""
 publisher: elie.net
 publisher_english: ""
-raw_sha256: e24a09b71affa228a24394458a55a9d1604f38f7ac008d34c9efe15ef5db88de
+raw_sha256: 67c104d6771e95101511fee4d6564c7e103db176b8f5b4c4adbf4b235f22dbe3
 retrieved_from: "https://elie.net/blog/security/tracking-users-that-block-cookies-with-a-http-redirect"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:10:04+00:00"
+retrieved_utc: "2026-08-10T15:09:22+00:00"
 slug: elie-net-tracking-users-that-block-cookies-http-redirect
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://elie.im/blog/security/tracking-users-that-block-cookies-with-a-http-redirect/>
 - Current location: <https://elie.net/blog/security/tracking-users-that-block-cookies-with-a-http-redirect>
-- Preserved from: https://elie.net/blog/security/tracking-users-that-block-cookies-with-a-http-redirect (live) on 2026-08-09
+- Preserved from: https://elie.net/blog/security/tracking-users-that-block-cookies-with-a-http-redirect (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

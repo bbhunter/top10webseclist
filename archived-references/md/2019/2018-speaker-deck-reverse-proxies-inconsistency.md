@@ -5,9 +5,9 @@ resource: "https://speakerdeck.com/greendog/reverse-proxies-and-inconsistency"
 tags: [slides, webseclist-reference, en, speaker-deck]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:12+00:00"
+  at: "2026-08-10T16:00:46+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://speakerdeck.com/greendog/reverse-proxies-and-inconsistency"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:58"
 commit: ""
-content_sha256: e6efe0597f7d43ab18077d0814234944f814c0f384dcae75aebb79f35c942252
+content_sha256: d98257c085f3ab0c4474930715f9d54aec1e992a1f3f534b4830b2c3f2463c8a
 depth: full
 depth_reason: default
 kind: slides
@@ -32,10 +32,10 @@ original_url: "https://speakerdeck.com/greendog/reverse-proxies-and-inconsistenc
 published: 2018-11-21
 publisher: Speaker Deck
 publisher_english: ""
-raw_sha256: bf5f36539bba01ea66f25318c1ead11925bc3cd0e737d800b268717b37fdd5a6
+raw_sha256: 943e713b5263461ba49b5af958eec9b31bac6c8285034e6f351ee22859e1be1f
 retrieved_from: "https://speakerdeck.com/greendog/reverse-proxies-and-inconsistency"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:12+00:00"
+retrieved_utc: "2026-08-10T16:00:46+00:00"
 slug: 2018-speaker-deck-reverse-proxies-inconsistency
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2018-11-21
 - Original: <https://speakerdeck.com/greendog/reverse-proxies-and-inconsistency>
-- Preserved from: https://speakerdeck.com/greendog/reverse-proxies-and-inconsistency (live) on 2026-08-09
+- Preserved from: https://speakerdeck.com/greendog/reverse-proxies-and-inconsistency (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -115,25 +115,19 @@ Modern websites are growing more complex with different reverse proxies and bala
 
  [ See All in Technology ](https://speakerdeck.com/c/technology)
 
- [Digitization部 紹介資料](https://speakerdeck.com/sansan33/digitization)
+ [
 
- [ ![Avatar for Sansan, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTM5NzYsInB1ciI6ImJsb2JfaWQifX0=--742b6b79e99ff01edb063160edba4f5a13693ead/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/icon512.jpg) sansan33 ](https://speakerdeck.com/sansan33)
+ [しろおび夏祭り2026] チャットするAIから、作業するAIへ - 使われ方の変化と、その裏側で起きていること
 
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+ ](https://speakerdeck.com/kk0n/siroobixia-ji-ri2026-tiyatutosuruaikara-zuo-ye-suruaihe-shi-warefang-nobian-hua-to-sonoli-ce-deqi-kiteirukoto)
 
- 2
+ [ ![Avatar for kk0n](https://secure.gravatar.com/avatar/2b5bfc483194ca3ac6365926bc9be663?s=24) kk0n ](https://speakerdeck.com/kk0n)
 
-  7.7k
+ 0
 
- [『三匹の子ぶた』から学ぶネットワークセキュリティの昔と今 / Network Security: Then and Now Through the Lens of The Three Little Pigs](https://speakerdeck.com/nttcom/network-security-then-and-now-through-the-lens-of-the-three-little-pigs)
+  1.6k
 
- [ ![Avatar for NTT docomo Business](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzEzOTQ5LCJwdXIiOiJibG9iX2lkIn19--8ea44ee690f9ac74fa426435b6c9c2dd0828ba56/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/eyecatch.png) nttcom ](https://speakerdeck.com/nttcom)
-
- 1
-
-  1.7k
-
- [つくって納得、つかって実感！ 大規模言語モデルことはじめ ver2.0](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_kiryu)
+ [モダンフロントエンド 開発研修](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_sato)
 
  [ ![Avatar for Recruit](https://secure.gravatar.com/avatar/85da685d91fda190e2e3162d0de248a4?s=24) recruitengineers ](https://speakerdeck.com/recruitengineers)
 
@@ -141,189 +135,203 @@ Modern websites are growing more complex with different reverse proxies and bala
 
  3
 
-  930
+  550
 
- [トヨタ⽣産⽅式(TPS)⼊⾨](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_sone)
+ [AI駆動開発は個人技からチーム戦へ：組織でAIを使いこなすための実践設計](https://speakerdeck.com/moongift/aiqu-dong-kai-fa-hage-ren-ji-karatimuzhan-he-zu-zhi-teaiwoshi-ikonasutamenoshi-jian-she-ji)
 
- [ ![Avatar for Recruit](https://secure.gravatar.com/avatar/85da685d91fda190e2e3162d0de248a4?s=24) recruitengineers ](https://speakerdeck.com/recruitengineers)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
-
- 2
-
-  530
-
- [ラジオの科学](https://speakerdeck.com/frievea/radio-explained)
-
- [ ![Avatar for Frieve-A](https://secure.gravatar.com/avatar/98372e0220a3447bc5d8df1e7ba61ca5?s=24) frievea ](https://speakerdeck.com/frievea)
-
- 0
-
-  250
-
- [第3回しろおびセキュリティスポンサーセッション](https://speakerdeck.com/log0417/di-3hui-siroobisekiyuriteisuponsasetusiyon)
-
- [ ![Avatar for ogiogi](https://secure.gravatar.com/avatar/e764911839e52595bb96ef7dd7e205ce?s=24) log0417 ](https://speakerdeck.com/log0417)
-
- 0
-
-  150
-
- [AI ネイティブな組織に Gemini Enterprise Agent Platform がなぜ必要なのか](https://speakerdeck.com/asei/ai-neiteibunazu-zhi-ni-gemini-enterprise-agent-platform-ganazebi-yao-nanoka)
-
- [ ![Avatar for Asei Sugiyama](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTExMzEsInB1ciI6ImJsb2JfaWQifX0=--6ab0da6f609ebde4bd7f2e4864304699cc2b6203/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/icon.jpeg) asei ](https://speakerdeck.com/asei)
-
- 1
-
-  180
-
- [Sansan Engineering Unit 紹介資料](https://speakerdeck.com/sansan33/sansan-engineer)
-
- [ ![Avatar for Sansan, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTM5NzYsInB1ciI6ImJsb2JfaWQifX0=--742b6b79e99ff01edb063160edba4f5a13693ead/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/icon512.jpg) sansan33 ](https://speakerdeck.com/sansan33)
+ [ ![Avatar for Atsushi Nakatsugawa](https://secure.gravatar.com/avatar/4cafe6a1c6287d64d7252279eeeffa94?s=24) moongift ](https://speakerdeck.com/moongift)
 
  [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
- 1
+ 0
 
-  4.9k
+  480
 
- [20260801_スクフェス大阪](https://speakerdeck.com/kgnkhkr/20260801-sukuhuesuda-ban)
+ [20260608_Codexの可能性_ノンプログラマー向け_大城追記](https://speakerdeck.com/doradora09/20260608-codexnoke-neng-xing-nonhurokuramaxiang-ke-da-cheng-zhui-ji)
 
- [ ![Avatar for hikari](https://secure.gravatar.com/avatar/fcef1ad1e9cf1bf9a18e0eae6d936718?s=24) kgnkhkr ](https://speakerdeck.com/kgnkhkr)
+ [ ![Avatar for NobuakiOshiro](https://secure.gravatar.com/avatar/bc3d005a52243d2151ef2bc046464e0c?s=24) doradora09 ](https://speakerdeck.com/doradora09)
 
- 2
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
-  1.2k
+ 0
 
- [グローバル基準のSREは、運用現場でどう機能したか：成熟度アセスメントの実践 ／ SRE NEXT 2026](https://speakerdeck.com/sorawatanabe/sre-next-2026-maturity-assessment)
+  780
 
- [ ![Avatar for sorawatanabe](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6Nzk2MzIxLCJwdXIiOiJibG9iX2lkIn19--da69af7a91c32dabf462738087e1138976d6d3d5/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/%E5%86%99%E7%9C%9F%202026-06-12%208%2007%2005.jpg) sorawatanabe ](https://speakerdeck.com/sorawatanabe)
+ [ホームラボ紹介](https://speakerdeck.com/y_sera15/homuraboshao-jie)
+
+ [ ![Avatar for 世良泰明](https://secure.gravatar.com/avatar/719e6bde9fbc5bf00249d2477c73fbc5?s=24) y_sera15 ](https://speakerdeck.com/y_sera15)
 
  0
 
   110
 
- [モバイルアプリ開発概論2026](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_kokubo)
+ [今こそ聞きたいソフトウェア設計 ドメイン駆動設計再入門](https://speakerdeck.com/masuda220/jin-kosowen-kitaisohutoueashe-ji-domeinqu-dong-she-ji-zai-ru-men)
 
- [ ![Avatar for Recruit](https://secure.gravatar.com/avatar/85da685d91fda190e2e3162d0de248a4?s=24) recruitengineers ](https://speakerdeck.com/recruitengineers)
+ [ ![Avatar for 増田 亨](https://secure.gravatar.com/avatar/8f84b7d8869ef6005d89b378e8661f7c?s=24) masuda220 ](https://speakerdeck.com/masuda220)
 
  [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+
+ 17
+
+  6.6k
+
+ [20260804_Q4AzureUpdateBite_FabricDataAgentの精度を高める設計.pdf](https://speakerdeck.com/matayuuu/20260804-q4azureupdatebite-fabricdataagentnojing-du-wogao-merushe-ji)
+
+ [ ![Avatar for matayuuu](https://secure.gravatar.com/avatar/055723a928f4ab8b53baac1962ef63b9?s=24) matayuuu ](https://speakerdeck.com/matayuuu)
+
+ 1
+
+  110
+
+ [【CEDEC2026】専門性の高いデフォルメチームが挑んだ人材育成戦略 〜Cygames Academiaの企画から実施まで〜](https://speakerdeck.com/cygames/cygames_202607_cedec2026_02)
+
+ [ ![Avatar for Cygames, Inc.](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzQyMzEyLCJwdXIiOiJibG9iX2lkIn19--79c11d4c6a736302463ad65244e1053a62bdbfa4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/SpeakerDeck_%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.png) cygames ](https://speakerdeck.com/cygames)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+
+ 0
+
+  530
+
+ [Redmine 7.0 新機能・機能強化解説（OSC2026京都ダイジェスト版）](https://speakerdeck.com/vividtone/redmine-7-dot-0-new-features-digest-edition)
+
+ [ ![Avatar for MAEDA Go](https://secure.gravatar.com/avatar/3c80fe933f2d692f6a950d500f6377b7?s=24) vividtone ](https://speakerdeck.com/vividtone)
+
+ 1
+
+  200
+
+ [FORENSIA: ローカルLLMフォレンジックハーネス](https://speakerdeck.com/sumeshi/forensia-rokarullmhuorenzitukuhanesu)
+
+ [ ![Avatar for S.Nakano](https://secure.gravatar.com/avatar/8a60e7a300424e49ec2094ffd820b054?s=24) sumeshi ](https://speakerdeck.com/sumeshi)
 
  2
 
-  400
+  280
 
- [ブラウザ研修 2026](https://speakerdeck.com/recruitengineers/fy2026_bootcamp_furukawa)
+ [Agent 時代の Kaggle 展望 / kaggle-in-the-agentic-era](https://speakerdeck.com/upura/kaggle-in-the-agentic-era)
 
- [ ![Avatar for Recruit](https://secure.gravatar.com/avatar/85da685d91fda190e2e3162d0de248a4?s=24) recruitengineers ](https://speakerdeck.com/recruitengineers)
+ [ ![Avatar for Shotaro Ishihara](https://secure.gravatar.com/avatar/b1cc148711c6a37a5c922b6e72a4ad52?s=24) upura ](https://speakerdeck.com/upura)
 
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+ 1
 
- 4
+  650
 
-  620
+ [新しい SLO が良い感じにハマっている話](https://speakerdeck.com/z63d/about-how-the-new-slo-is-fitting-in-nicely)
+
+ [ ![Avatar for kaita](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTU0MTEyLCJwdXIiOiJibG9iX2lkIn19--e9dff0399a2337f00f182e48e9e9dba550f68200/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/IMG_1034.jpg) z63d ](https://speakerdeck.com/z63d)
+
+ 5
+
+  2.1k
 
 ## Featured
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [Into the Great Unknown - MozCon](https://speakerdeck.com/thekraken/into-the-great-unknown-mozcon)
+ [The SEO Collaboration Effect](https://speakerdeck.com/kristinabergwall1/the-seo-collaboration-effect)
 
- [ ![Avatar for Noah Learner](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2MTAyLCJwdXIiOiJibG9iX2lkIn19--00ef9d097f9c3f99abcc76113c2bb9648f33a0e8/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/noah.jpeg) thekraken ](https://speakerdeck.com/thekraken)
-
- 41
-
-  2.7k
-
- [We Are The Robots](https://speakerdeck.com/honzajavorek/we-are-the-robots)
-
- [ ![Avatar for Honza Javorek](https://secure.gravatar.com/avatar/7b2e4bf7ecca28e530e1c421f0676c0b?s=24) honzajavorek ](https://speakerdeck.com/honzajavorek)
-
- 0
-
-  290
-
- [A better future with KSS](https://speakerdeck.com/kneath/a-better-future-with-kss)
-
- [ ![Avatar for Kyle Neath](https://secure.gravatar.com/avatar/5f2da528927a2ec9ba4fec2069cbc958?s=24) kneath ](https://speakerdeck.com/kneath)
-
- 240
-
-  18k
-
- [The Curse of the Amulet](https://speakerdeck.com/leimatthew05/the-curse-of-the-amulet)
-
- [ ![Avatar for Matthew Lei](https://secure.gravatar.com/avatar/989a44ce1f1d3e5f5f1245f67e8b30a7?s=24) leimatthew05 ](https://speakerdeck.com/leimatthew05)
-
- 2
-
-  14k
-
- [Rails Girls Zürich Keynote](https://speakerdeck.com/gr2m/rails-girls-zurich-keynote)
-
- [ ![Avatar for Gregor Martynus](https://secure.gravatar.com/avatar/24fc194843a71f10949be18d5a692682?s=24) gr2m ](https://speakerdeck.com/gr2m)
-
- 96
-
-  14k
-
- [Building Adaptive Systems](https://speakerdeck.com/keathley/building-adaptive-systems)
-
- [ ![Avatar for Chris Keathley](https://secure.gravatar.com/avatar/06f8b41980eb4c577fa40c41d5030c19?s=24) keathley ](https://speakerdeck.com/keathley)
-
- 44
-
-  3.2k
-
- [SEO for Brand Visibility & Recognition](https://speakerdeck.com/aleyda/seo-for-brand-visibility-and-recognition)
-
- [ ![Avatar for Aleyda Solis](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6OTIyMDAsInB1ciI6ImJsb2JfaWQifX0=--f7ae7c6a9c16b0bb4461d98502be71c2c1b38eaf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/aleyda-solis.jpg) aleyda ](https://speakerdeck.com/aleyda)
-
- 0
-
-  4.7k
-
- [How to build an LLM SEO readiness audit: a practical framework](https://speakerdeck.com/nmsamuel/how-to-build-an-llm-seo-readiness-audit-a-practical-framework)
-
- [ ![Avatar for Nick Samuel](https://secure.gravatar.com/avatar/b8ae5f207a0dc0e5518184aaada82d09?s=24) nmsamuel ](https://speakerdeck.com/nmsamuel)
+ [ ![Avatar for Kristina Bergwall](https://secure.gravatar.com/avatar/ebbb8b31502fbaac10ecc9c5bca51501?s=24) kristinabergwall1 ](https://speakerdeck.com/kristinabergwall1)
 
  1
 
-  830
+  520
 
- [XXLCSS - How to scale CSS and keep your sanity](https://speakerdeck.com/sugarenia/xxlcss-how-to-scale-css-and-keep-your-sanity)
+ [Darren the Foodie - Storyboard](https://speakerdeck.com/khoart/space-taster)
 
- [ ![Avatar for Zaharenia Atzitzikaki](https://secure.gravatar.com/avatar/1b8ad785acdd1ce1c99914b1c2a4e10e?s=24) sugarenia ](https://speakerdeck.com/sugarenia)
-
- 249
-
-  1.3M
-
- [The Spectacular Lies of Maps](https://speakerdeck.com/axbom/the-spectacular-lies-of-maps)
-
- [ ![Avatar for Per Axbom](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzA4MTcsInB1ciI6ImJsb2JfaWQifX0=--3b22ae95c7f24edaeb9c2d37fdb67f05b7db6128/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/axbom-ind08b.jpg) axbom ](https://speakerdeck.com/axbom)
+ [ ![Avatar for Kevinho.art](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjUwODkzLCJwdXIiOiJibG9iX2lkIn19--84b437976633cafb8053a92ffd2e96fe8c8c0750/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/Screenshot%202026-03-04%20at%201.43.09%E2%80%AFPM.png) khoart ](https://speakerdeck.com/khoart)
 
  [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
+ 3
+
+  3.5k
+
+ [Believing is Seeing](https://speakerdeck.com/oripsolob/believing-is-seeing)
+
+ [ ![Avatar for Spiro Bolos](https://secure.gravatar.com/avatar/9d495f5d79fbbc9ddf3100da74f986c9?s=24) oripsolob ](https://speakerdeck.com/oripsolob)
+
  1
 
-  890
+  180
 
- [Claude Code どこまでも/ Claude Code Everywhere](https://speakerdeck.com/nwiizo/claude-everywhere)
+ [
 
- [ ![Avatar for nwiizo](https://secure.gravatar.com/avatar/6ed12627fec46a135f1bce5d56f3568e?s=24) nwiizo ](https://speakerdeck.com/nwiizo)
+ [RailsConf 2023] Rails as a piece of cake
 
- 66
+ ](https://speakerdeck.com/palkan/railsconf-2023-rails-as-a-piece-of-cake)
 
-  57k
+ [ ![Avatar for Vladimir Dementyev](https://secure.gravatar.com/avatar/52cc8a838bf44a589d2572833b2dd1b9?s=24) palkan ](https://speakerdeck.com/palkan)
 
- [Discover your Explorer Soul](https://speakerdeck.com/emna__ayadi/discover-your-explorer-soul)
+ 59
 
- [ ![Avatar for Emna](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzI5LCJwdXIiOiJibG9iX2lkIn19--c59e14bd8fc81f3e291b47c9b3de17d20d6d955b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/emna__ayadi.jpg) emna__ayadi ](https://speakerdeck.com/emna__ayadi)
+  6.9k
+
+ [Google's AI Overviews - The New Search](https://speakerdeck.com/badams/googles-ai-overviews-the-new-search)
+
+ [ ![Avatar for Barry Adams](https://secure.gravatar.com/avatar/00de107acb085244c96dbfe6da2b1560?s=24) badams ](https://speakerdeck.com/badams)
+
+ 0
+
+  1.1k
+
+ [Documentation Writing (for coders)](https://speakerdeck.com/carmenintech/documentation-writing-for-coders)
+
+ [ ![Avatar for Carmen Chung](https://secure.gravatar.com/avatar/61857dafbd287b3027c4dcea9008ad3c?s=24) carmenintech ](https://speakerdeck.com/carmenintech)
+
+ 77
+
+  5.4k
+
+ [Gemini Prompt Engineering: Practical Techniques for Tangible AI Outcomes](https://speakerdeck.com/mfonobong/gemini-prompt-engineering-practical-techniques-for-tangible-ai-outcomes)
+
+ [ ![Avatar for Mfonobong Umondia](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjIyMzkxLCJwdXIiOiJibG9iX2lkIn19--5cbe193d6e7c50710eb8ab78626ee4057e42cffd/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/YTProfile%20picture.png) mfonobong ](https://speakerdeck.com/mfonobong)
 
  2
 
-  1.2k
+  480
+
+ [CSS Pre-Processors: Stylus, Less & Sass](https://speakerdeck.com/bermonpainter/css-pre-processors-stylus-less-and-sass)
+
+ [ ![Avatar for Bermon Painter](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzIyNzgsInB1ciI6ImJsb2JfaWQifX0=--0a08b9ea50b78202a903b729cdf0585ed57d745f/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/Bermon-Painter---Profile---Square.jpg) bermonpainter ](https://speakerdeck.com/bermonpainter)
+
+ 360
+
+  30k
+
+ [Applied NLP in the Age of Generative AI](https://speakerdeck.com/inesmontani/applied-nlp-in-the-age-of-generative-ai)
+
+ [ ![Avatar for Ines Montani](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjkwMDgsInB1ciI6ImJsb2JfaWQifX0=--32562a32b00d456c251338e2bbab3b3a7c1775bf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/profile_ines.jpg) inesmontani ](https://speakerdeck.com/inesmontani)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+
+ 4
+
+  2.4k
+
+ [sira's awesome portfolio website redesign presentation](https://speakerdeck.com/elsirapls/siras-awesome-portfolio-website-redesign-presentation)
+
+ [ ![Avatar for ElsiraPls](https://secure.gravatar.com/avatar/56c84e8d01c873962f3ddd937c6a8f5a?s=24) elsirapls ](https://speakerdeck.com/elsirapls)
+
+ 0
+
+  320
+
+ [Designing for Timeless Needs](https://speakerdeck.com/cassininazir/designing-for-timeless-needs-a72bb8c4-c96b-47cc-8598-36af0340e28e)
+
+ [ ![Avatar for Cassini Nazir](https://secure.gravatar.com/avatar/4631d364d59bd9d045acf046a0ce1cfe?s=24) cassininazir ](https://speakerdeck.com/cassininazir)
+
+ 1
+
+  430
+
+ [Tell your own story through comics](https://speakerdeck.com/letsgokoyo/tell-your-own-story-through-comics)
+
+ [ ![Avatar for letsgokoyo](https://secure.gravatar.com/avatar/d38056617929476906141e6a157e0045?s=24) letsgokoyo ](https://speakerdeck.com/letsgokoyo)
+
+ 1
+
+  1k
 
 ## Transcript
 

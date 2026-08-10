@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/hijacking-service-workers-via-dom-cl
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:31+00:00"
+  at: "2026-08-10T15:36:40+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/hijacking-service-workers-via-dom-clobbering"
@@ -19,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2022.md:42"
 commit: ""
-content_sha256: a3606ef6d3e1e0a2660929bf2566dd4a05be9945900d5300af0c34b7334e412b
+content_sha256: afb9f2f58e8013e09598986d6c6ad810661ea5bd82d6ad3e313ab49d8b7b5d7b
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/hijacking-service-workers-via-do
 published: 2022-11-29
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 1e61511c1ee37fc138160d4785a9dca3311b36362ae044220042b08cbe3cffd6
+raw_sha256: 9bac91234a8e334b2f4fc6c0b9253bbf39227c854d5de1dded6851a9f6cbc5db
 retrieved_from: "https://portswigger.net/research/hijacking-service-workers-via-dom-clobbering"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:31+00:00"
+retrieved_utc: "2026-08-10T15:36:40+00:00"
 slug: 2022-portswigger-research-hijacking-service-workers-dom-clobbering
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2022-11-29
 - Original: <https://portswigger.net/research/hijacking-service-workers-via-dom-clobbering>
-- Preserved from: https://portswigger.net/research/hijacking-service-workers-via-dom-clobbering (live) on 2026-08-09
+- Preserved from: https://portswigger.net/research/hijacking-service-workers-via-dom-clobbering (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://skeletonscribe.blogspot.com/2010/12/chronofeit-phishing.html"
 tags: [article, webseclist-reference, en-GB, skeletonscribe-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:55+00:00"
+  at: "2026-08-10T15:59:23+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://skeletonscribe.blogspot.com/2010/12/chronofeit-phishing.html"
@@ -30,10 +30,10 @@ original_url: "https://skeletonscribe.blogspot.com/2010/12/chronofeit-phishing.h
 published: ""
 publisher: skeletonscribe.net
 publisher_english: ""
-raw_sha256: 45d1e971a85964b2a9b244db326c34b06bf098b6df50f3119124de1c45cda86a
+raw_sha256: 6dbdcf93afd9bd79b8e58be971eca4b7cfbbb7bca9f2a01919ce24b8b5624a74
 retrieved_from: "https://www.skeletonscribe.net/2010/12/chronofeit-phishing.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:55+00:00"
+retrieved_utc: "2026-08-10T15:59:23+00:00"
 slug: skeletonscribe-net-chronofeit-phishing
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://skeletonscribe.blogspot.com/2010/12/chronofeit-phishing.html>
 - Current location: <https://www.skeletonscribe.net/2010/12/chronofeit-phishing.html>
-- Preserved from: https://www.skeletonscribe.net/2010/12/chronofeit-phishing.html (live) on 2026-08-09
+- Preserved from: https://www.skeletonscribe.net/2010/12/chronofeit-phishing.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

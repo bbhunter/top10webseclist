@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:43+00:00"
+  at: "2026-08-10T15:35:11+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2018.md:77"
+  - "2018.md:73"
 commit: ""
 content_sha256: 71020a1cc6371e5a641e9d0ceb96c73a99a7729ce0ab94e873e17d73f3c26bba
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: dd10b44aaf3d40b157b3ac5dafd0751ad262cf193c565ff712e79dd1c4456725
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:43+00:00"
+retrieved_utc: "2026-08-10T15:35:11+00:00"
 slug: cloud-strife-mitigating-security-risks-domain-validated-certificates
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf (live) on 2026-08-08
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

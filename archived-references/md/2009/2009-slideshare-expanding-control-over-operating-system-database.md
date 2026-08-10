@@ -5,9 +5,9 @@ resource: "http://www.slideshare.net/inquis/expanding-the-control-over-the-opera
 tags: [slides, webseclist-reference, slideshare]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:23+00:00"
+  at: "2026-08-10T16:00:06+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.slideshare.net/inquis/expanding-the-control-over-the-operating-system-from-the-database"
@@ -33,10 +33,10 @@ original_url: "http://www.slideshare.net/inquis/expanding-the-control-over-the-o
 published: 2009-09-24
 publisher: Slideshare
 publisher_english: ""
-raw_sha256: cf49f8d24cc15776e688c2ae7201291ec545092f56e6eb4f225930708d68dce9
+raw_sha256: d4b4c2093a1f5de0768e4f518c899226920db1db3c9ec4c4c8057cb446ad7d8d
 retrieved_from: "https://www.slideshare.net/slideshow/expanding-the-control-over-the-operating-system-from-the-database/2060797"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:23+00:00"
+retrieved_utc: "2026-08-10T16:00:06+00:00"
 slug: 2009-slideshare-expanding-control-over-operating-system-database
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: 2009-09-24
 - Original: <http://www.slideshare.net/inquis/expanding-the-control-over-the-operating-system-from-the-database>
 - Current location: <https://www.slideshare.net/slideshow/expanding-the-control-over-the-operating-system-from-the-database/2060797>
-- Preserved from: https://www.slideshare.net/slideshow/expanding-the-control-over-the-operating-system-from-the-database/2060797 (live) on 2026-08-09
+- Preserved from: https://www.slideshare.net/slideshow/expanding-the-control-over-the-operating-system-from-the-database/2060797 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

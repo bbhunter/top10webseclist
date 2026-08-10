@@ -5,9 +5,9 @@ resource: "http://websecurity.com.ua/2981/"
 tags: [article, webseclist-reference, websecurity-com-ua]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:29+00:00"
+  at: "2026-08-10T16:06:19+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://websecurity.com.ua/2981/"
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: a42d74180cc7346723df71a001cd0c056c68ff319ae08d805ce7c97c235107df
 retrieved_from: "http://websecurity.com.ua/2981/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:29+00:00"
+retrieved_utc: "2026-08-10T16:06:19+00:00"
 slug: websecurity-com-ua-dos-abuse-functionality-websecurity_translate
 snapshot: ""
 title_english: DoS Attacks Through Abuse of Functionality Vulnerabilities - Websecurity
@@ -46,7 +46,7 @@ translation_of: websecurity-com-ua-dos-abuse-functionality-websecurity.md
 - Title in English: DoS Attacks Through Abuse of Functionality Vulnerabilities - Websecurity
 - Published: date not stated
 - Original: <http://websecurity.com.ua/2981/>
-- Preserved from: http://websecurity.com.ua/2981/ (live) on 2026-08-09
+- Preserved from: http://websecurity.com.ua/2981/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

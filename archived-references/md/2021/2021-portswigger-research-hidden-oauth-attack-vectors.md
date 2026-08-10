@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/hidden-oauth-attack-vectors"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:30+00:00"
+  at: "2026-08-10T15:36:39+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/hidden-oauth-attack-vectors"
@@ -19,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2021.md:9"
 commit: ""
-content_sha256: a6401d46b461a095622e7ec6e84eca4de544676a5298cbd1265e0ac81d549940
+content_sha256: ed6a1848440ad25b9c897e3400a6c9a859e0cdf48c396b9b75a8c4b7d2c3bffe
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/hidden-oauth-attack-vectors"
 published: 2021-03-24
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: b80c0ddf5bceccdf7c9e284498ef7d1aac91b5cffb26106117bc81f34e7db944
+raw_sha256: a82f02572d883560e795bf87170b03a1fef644fd3f73d594badbbc34290f871d
 retrieved_from: "https://portswigger.net/research/hidden-oauth-attack-vectors"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:30+00:00"
+retrieved_utc: "2026-08-10T15:36:39+00:00"
 slug: 2021-portswigger-research-hidden-oauth-attack-vectors
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2021-03-24
 - Original: <https://portswigger.net/research/hidden-oauth-attack-vectors>
-- Preserved from: https://portswigger.net/research/hidden-oauth-attack-vectors (live) on 2026-08-09
+- Preserved from: https://portswigger.net/research/hidden-oauth-attack-vectors (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

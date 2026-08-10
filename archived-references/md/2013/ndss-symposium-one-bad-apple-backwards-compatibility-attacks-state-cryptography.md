@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/one-bad-a
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T12:49:15+00:00"
+  at: "2026-08-10T15:34:31+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/one-bad-apple-backwards-compatibility-attacks-state-art-cryptography/"
@@ -18,7 +18,7 @@ also_at:
 authors: []
 canonical_url: ""
 cited_by:
-  - "2013.md:52"
+  - "2013.md:47"
 commit: ""
 content_sha256: d6a2fcea4933a08a4f8a9780954fac7d5289a8ca75a027d072c9a5bc5c519b00
 depth: full
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: c919ba185839022dde9ea14ed2acf12942986eaccf3aff955e551fce91cec08e
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/10_4_0.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T12:49:15+00:00"
+retrieved_utc: "2026-08-10T15:34:31+00:00"
 slug: ndss-symposium-one-bad-apple-backwards-compatibility-attacks-state-cryptography
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 - Original: <https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/one-bad-apple-backwards-compatibility-attacks-state-art-cryptography/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/10_4_0.pdf>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/Presentation10_4.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/10_4_0.pdf (live) on 2026-08-09
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/10_4_0.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -1162,6 +1162,7 @@ O
 Dec
 by submitting the ci-
 phertext
+~
 C
 := (
 C
@@ -1182,6 +1183,7 @@ responds with
 O
 Dec
 (
+~
 C
 ) =
 iv
@@ -2582,9 +2584,12 @@ O
 CBCxml
 , which
 takes as input an AES-CBC ciphertext
+~
 c
 = (
+~
 iv;
+~
 C
 (1)
 )
@@ -2596,7 +2601,9 @@ if the plaintext is correct, and
 otherwise.
 In particular, a randomly generated ciphertext
 (
+~
 iv;
+~
 C
 (1)
 )
@@ -3431,8 +3438,7 @@ leted by RFC 2279.
 --- page 20 ---
 
 YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
-½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
+ $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
 
 --- page 21 ---
 

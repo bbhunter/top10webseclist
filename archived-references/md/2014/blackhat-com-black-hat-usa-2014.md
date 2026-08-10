@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/https://www.blackhat.com/u
 tags: [article, webseclist-reference, blackhat-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:08+00:00"
+  at: "2026-08-10T15:03:54+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/https://www.blackhat.com/us-14/briefings.html#call-to-arms-a-tale-of-the-weaknesses-of-current-client-side-xss-filtering"
@@ -22,7 +22,7 @@ canonical_url: "https://web.archive.org/web/20160405180600/https://www.blackhat.
 cited_by:
   - "2014.md:21"
 commit: ""
-content_sha256: 35e3bcc1a3d81847e3bfa696d5406c5ec835599e580a664f2875444eab4838ad
+content_sha256: e573600f8cab0d8d37046b0dad19bc066e2f41c16c57badb6439dd22d8edfb34
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20160403035045/https://www.blackhat.c
 published: ""
 publisher: blackhat.com
 publisher_english: ""
-raw_sha256: 6a8e51b6b65bf18669724fcbaca5d3d40367de286a80dfdd44f3944df6ad8d37
+raw_sha256: 7985a3f918ed4cffb2ca5d5a7888c764915126acaf05ce7e77963d05d4b9fd27
 retrieved_from: "https://web.archive.org/web/20160405180600/https://www.blackhat.com/us-14/briefings.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:08+00:00"
+retrieved_utc: "2026-08-10T15:03:54+00:00"
 slug: blackhat-com-black-hat-usa-2014
 snapshot: 20160403035045
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/https://www.blackhat.com/us-14/briefings.html#call-to-arms-a-tale-of-the-weaknesses-of-current-client-side-xss-filtering>
 - Current location: <https://web.archive.org/web/20160405180600/https://www.blackhat.com/us-14/briefings.html>
-- Preserved from: https://web.archive.org/web/20160405180600/https://www.blackhat.com/us-14/briefings.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160405180600/https://www.blackhat.com/us-14/briefings.html (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 
@@ -178,7 +178,7 @@ The Wayback Machine - https://web.archive.org/web/20160405180600/https://www.bla
 - Gabriel Negreira Barbosa
 - Quynh Nguyen Anh
 - Brandon Niemczyk
-- Nils 
+- Nils
 - Karsten Nohl
 - Ivan Novikov
 - Jeong Wook Oh

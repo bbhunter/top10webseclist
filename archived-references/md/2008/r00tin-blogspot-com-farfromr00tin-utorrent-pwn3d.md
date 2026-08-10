@@ -5,9 +5,9 @@ resource: "https://r00tin.blogspot.com/2008/04/utorrent-pwn3d.html"
 tags: [article, webseclist-reference, en, r00tin-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:58+00:00"
+  at: "2026-08-10T15:57:04+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://r00tin.blogspot.com/2008/04/utorrent-pwn3d.html"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2008.md:19"
 commit: ""
-content_sha256: cf016d2f152f8c78db7c04be6d11334930d1e9ef3a3e0e356b19cce1b0ed8d21
+content_sha256: 508838bc4a630515b379af9b5ab4128b61d9b2d79a5e844ec6c7bcc330100a0f
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://r00tin.blogspot.com/2008/04/utorrent-pwn3d.html"
 published: ""
 publisher: r00tin.blogspot.com
 publisher_english: ""
-raw_sha256: 973838fbcb5c719bf691a13a9650053af1a558a24e16b62b5a89b2807ff553d5
+raw_sha256: 6a0219fb6b28c66372bf3f938c90dc8e0783312cb89b129f183fcf71b521a4be
 retrieved_from: "https://r00tin.blogspot.com/2008/04/utorrent-pwn3d.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:58+00:00"
+retrieved_utc: "2026-08-10T15:57:04+00:00"
 slug: r00tin-blogspot-com-farfromr00tin-utorrent-pwn3d
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://r00tin.blogspot.com/2008/04/utorrent-pwn3d.html>
-- Preserved from: https://r00tin.blogspot.com/2008/04/utorrent-pwn3d.html (live) on 2026-08-09
+- Preserved from: https://r00tin.blogspot.com/2008/04/utorrent-pwn3d.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

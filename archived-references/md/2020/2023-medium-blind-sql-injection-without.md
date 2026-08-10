@@ -5,9 +5,9 @@ resource: "https://medium.com/@terjanq/blind-sql-injection-without-an-in-1e14ba1
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:33+00:00"
+  at: "2026-08-10T15:32:25+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@terjanq/blind-sql-injection-without-an-in-1e14ba1d4952"
@@ -24,7 +24,7 @@ canonical_url: "https://terjanq.medium.com/blind-sql-injection-without-an-in-1e1
 cited_by:
   - "2020.md:29"
 commit: ""
-content_sha256: b3c6deec2ecd33ee76d374d9ecc07cca7be28451debeed4b933567a6c3f191dc
+content_sha256: c4b08937837f0c1f210effc952a44dabdcc1928aa00f4dff50c5fe46eb175681
 depth: full
 depth_reason: default
 kind: article
@@ -34,10 +34,10 @@ original_url: "https://medium.com/@terjanq/blind-sql-injection-without-an-in-1e1
 published: 2023-08-17
 publisher: Medium
 publisher_english: ""
-raw_sha256: 8193175bfa1fc850f81842391eb52098258f92024007dec19fb8558028807a62
+raw_sha256: 67463f196a925ec79752b4e22905ba60bdba5286e563de57012aefb1ef1f1e2e
 retrieved_from: "https://terjanq.medium.com/blind-sql-injection-without-an-in-1e14ba1d4952"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:33+00:00"
+retrieved_utc: "2026-08-10T15:32:25+00:00"
 slug: 2023-medium-blind-sql-injection-without
 snapshot: ""
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: 2023-08-17
 - Original: <https://medium.com/@terjanq/blind-sql-injection-without-an-in-1e14ba1d4952>
 - Current location: <https://terjanq.medium.com/blind-sql-injection-without-an-in-1e14ba1d4952>
-- Preserved from: https://terjanq.medium.com/blind-sql-injection-without-an-in-1e14ba1d4952 (live) on 2026-08-09
+- Preserved from: https://terjanq.medium.com/blind-sql-injection-without-an-in-1e14ba1d4952 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

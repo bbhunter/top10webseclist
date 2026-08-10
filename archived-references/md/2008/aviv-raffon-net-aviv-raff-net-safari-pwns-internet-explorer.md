@@ -5,20 +5,22 @@ resource: "https://web.archive.org/web/20081014003640/http://aviv.raffon.net:80/
 tags: [article, webseclist-reference, aviv-raffon-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:02:13+00:00"
+  at: "2026-08-10T15:02:54+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20081014003640/http://aviv.raffon.net:80/2008/05/31/SafariPwnsInternetExplorer.aspx"
     title: Aviv Raff On .NET - Safari pwns Internet Explorer
+  - id: capture
+    resource: "https://web.archive.org/web/20081014003640/http://aviv.raffon.net:80/2008/05/31/SafariPwnsInternetExplorer.aspx"
 also_at: []
 authors: []
 canonical_url: ""
 cited_by:
   - "2008.md:59"
 commit: ""
-content_sha256: 5bc17bf5ed03c82563e77ff138da87560ac7dbce39580c2a44b85aab0874f32c
+content_sha256: e823db8f1261c21f85edcdec87914715fea6df76691d2c4e75b46405e97bff5c
 depth: full
 depth_reason: default
 kind: article
@@ -28,12 +30,12 @@ original_url: "https://web.archive.org/web/20081014003640/http://aviv.raffon.net
 published: ""
 publisher: aviv.raffon.net
 publisher_english: ""
-raw_sha256: 95c14ce49b3af199faae92730b5579e24aca1afcbf135a061c380ad4ff0c4f7f
+raw_sha256: cbdfbee56d9e06f54299b43ca40837ef9380f11eb278ee09ad356091bc9ce1e8
 retrieved_from: "https://web.archive.org/web/20081014003640/http://aviv.raffon.net:80/2008/05/31/SafariPwnsInternetExplorer.aspx"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:02:13+00:00"
+retrieved_utc: "2026-08-10T15:02:54+00:00"
 slug: aviv-raffon-net-aviv-raff-net-safari-pwns-internet-explorer
-snapshot: ""
+snapshot: 20081014003640
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -45,7 +47,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20081014003640/http://aviv.raffon.net:80/2008/05/31/SafariPwnsInternetExplorer.aspx>
-- Preserved from: https://web.archive.org/web/20081014003640/http://aviv.raffon.net:80/2008/05/31/SafariPwnsInternetExplorer.aspx (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20081014003640/http://aviv.raffon.net:80/2008/05/31/SafariPwnsInternetExplorer.aspx (live) on 2026-08-10
+- Capture timestamp: 20081014003640
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -113,8 +116,6 @@ So, if you decide to keep using Safari for Windows, you should follow the steps 
   |   |   |
 
  |  |
-
- 
 
   |   |
 |    |

@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-explor
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:58+00:00"
+  at: "2026-08-10T15:33:37+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-exploring-email-auto-configuration-in-the-wild/"
     title: "Automatic Insecurity: Exploring Email Auto-configuration in the Wild"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2025-1078-paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2025.md:91"
+  - "2025.md:86"
 commit: ""
-content_sha256: a0d9c6afdc32bb836ddb3456cc7e9d2d55a438fde08e358a85dd6e08e4a88276
+content_sha256: a2d8a4e7b95b5cb75699e818faaf324f517a5c0016e3d6006a38ab166d4b823f
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-ex
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 1d3d7089218ddd2a4533669affe501c32f81859ef942f334523903e80ddd6eab
+raw_sha256: 83759412dfcf06e3d2b63bb8d1dc84fb2120c4e0023ed18e50fa2115c7745035
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-exploring-email-auto-configuration-in-the-wild/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:58+00:00"
+retrieved_utc: "2026-08-10T15:33:37+00:00"
 slug: ndss-symposium-automatic-insecurity-exploring-email-auto-configuration-wild
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-exploring-email-auto-configuration-in-the-wild/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-exploring-email-auto-configuration-in-the-wild/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2025-1078-paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-exploring-email-auto-configuration-in-the-wild/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -70,20 +72,20 @@ Email clients that support auto-configuration mechanisms automatically retrieve 
 
 ## View More Papers
 
-### [ Blindfold: Confidential Memory Management by Untrusted Operating System ](https://www.ndss-symposium.org/ndss-paper/blindfold-confidential-memory-management-by-untrusted-operating-system/)
+### [ A Multifaceted Study on the Use of TLS and... ](https://www.ndss-symposium.org/ndss-paper/a-multifaceted-study-on-the-use-of-tls-and-auto-detect-in-email-ecosystems/)
 
- Caihua Li (Yale University), Seung-seob Lee (Yale University), Lin Zhong (Yale University)
+ Ka Fun Tang (The Chinese University of Hong Kong), Che Wei Tu (The Chinese University of Hong Kong), Sui Ling Angela Mak (The Chinese University of Hong Kong), Sze Yiu Chau (The Chinese University of Hong Kong)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/blindfold-confidential-memory-management-by-untrusted-operating-system/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/a-multifaceted-study-on-the-use-of-tls-and-auto-detect-in-email-ecosystems/)
 
-### [ Home Shield IoT Traffic Analyzer: A Comprehensive Analysis of... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-605/)
+### [ CLIBE: Detecting Dynamic Backdoors in Transformer-based NLP Models ](https://www.ndss-symposium.org/ndss-paper/clibe-detecting-dynamic-backdoors-in-transformer-based-nlp-models/)
 
- Dhananjai Bajpai (Marquette University), Keyang Yu (Marquette University)
+ Rui Zeng (Zhejiang University), Xi Chen (Zhejiang University), Yuwen Pu (Zhejiang University), Xuhong Zhang (Zhejiang University), Tianyu Du (Zhejiang University), Shouling Ji (Zhejiang University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-605/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/clibe-detecting-dynamic-backdoors-in-transformer-based-nlp-models/)
 
-### [ Duumviri: Detecting Trackers and Mixed Trackers with a Breakage... ](https://www.ndss-symposium.org/ndss-paper/duumviri-detecting-trackers-and-mixed-trackers-with-a-breakage-detector/)
+### [ Delay-allowed Differentially Private Data Stream Release ](https://www.ndss-symposium.org/ndss-paper/delay-allowed-differentially-private-data-stream-release/)
 
- He Shuang (University of Toronto), Lianying Zhao (Carleton University and University of Toronto), David Lie (University of Toronto)
+ Xiaochen Li (University of Virginia), Zhan Qin (Zhejiang University), Kui Ren (Zhejiang University), Chen Gong (University of Virginia), Shuya Feng (University of Connecticut), Yuan Hong (University of Connecticut), Tianhao Wang (University of Virginia)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/duumviri-detecting-trackers-and-mixed-trackers-with-a-breakage-detector/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/delay-allowed-differentially-private-data-stream-release/)

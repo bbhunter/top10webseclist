@@ -5,9 +5,9 @@ resource: "https://mehmetince.net/the-story-of-a-perfect-exploit-chain-six-bugs-
 tags: [article, webseclist-reference, en, mehmet-ince-mdisec-vulnerability-researc]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:49+00:00"
+  at: "2026-08-10T15:32:31+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://mehmetince.net/the-story-of-a-perfect-exploit-chain-six-bugs-that-looked-harmless-until-they-became-pre-auth-rce-in-a-security-appliance/"
@@ -32,10 +32,10 @@ original_url: "https://mehmetince.net/the-story-of-a-perfect-exploit-chain-six-b
 published: 2026-01-01
 publisher: Mehmet Ince @mdisec - Vulnerability Researcher | Building security products | Security Advisor | Amateur Muay Thai fighter
 publisher_english: ""
-raw_sha256: 169926d2125079e7121964fb6dd8e2987939047eb858b8f56af0a1feeca01730
+raw_sha256: 544062a819be60a750390641e8d1167cb479f34a0f57ec17f35216c902329152
 retrieved_from: "https://mehmetince.net/the-story-of-a-perfect-exploit-chain-six-bugs-that-looked-harmless-until-they-became-pre-auth-rce-in-a-security-appliance/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:49+00:00"
+retrieved_utc: "2026-08-10T15:32:31+00:00"
 slug: 2026-advisor
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2026-01-01
 - Original: <https://mehmetince.net/the-story-of-a-perfect-exploit-chain-six-bugs-that-looked-harmless-until-they-became-pre-auth-rce-in-a-security-appliance/>
-- Preserved from: https://mehmetince.net/the-story-of-a-perfect-exploit-chain-six-bugs-that-looked-harmless-until-they-became-pre-auth-rce-in-a-security-appliance/ (live) on 2026-08-09
+- Preserved from: https://mehmetince.net/the-story-of-a-perfect-exploit-chain-six-bugs-that-looked-harmless-until-they-became-pre-auth-rce-in-a-security-appliance/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

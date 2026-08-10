@@ -5,9 +5,9 @@ resource: "https://www.atredis.com/blog/2026/3/12/findings-gadgets-like-its-2026
 tags: [article, webseclist-reference, en, atredis-partners]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:12+00:00"
+  at: "2026-08-10T15:02:42+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.atredis.com/blog/2026/3/12/findings-gadgets-like-its-2026"
@@ -18,7 +18,7 @@ also_at: []
 authors: []
 canonical_url: "https://www.atredis.com/blog/2026/3/12/findings-gadgets-like-its-2026/"
 cited_by:
-  - "2026-ai.md:75"
+  - "2026-ai.md:53"
 commit: ""
 content_sha256: abc0ded38bb12a33b6dabb0b3ab3dd70277be8fba6a76d24011f810a8a0187cb
 depth: full
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: d31218ed33ec268649ea87b1744881ba56f3eee2745422fcfc39abb27a281b0c
 retrieved_from: "https://www.atredis.com/blog/2026/3/12/findings-gadgets-like-its-2026/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:12+00:00"
+retrieved_utc: "2026-08-10T15:02:42+00:00"
 slug: atredis-partners-finding-gadgets-like-its-2026
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.atredis.com/blog/2026/3/12/findings-gadgets-like-its-2026>
 - Current location: <https://www.atredis.com/blog/2026/3/12/findings-gadgets-like-its-2026/>
-- Preserved from: https://www.atredis.com/blog/2026/3/12/findings-gadgets-like-its-2026/ (live) on 2026-08-08
+- Preserved from: https://www.atredis.com/blog/2026/3/12/findings-gadgets-like-its-2026/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

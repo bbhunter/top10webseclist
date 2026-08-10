@@ -5,9 +5,9 @@ resource: "https://alpaca-attack.com/"
 tags: [article, webseclist-reference, en, alpaca-attack-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:00:36+00:00"
+  at: "2026-08-10T15:01:23+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://alpaca-attack.com/"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2021.md:66"
+  - "2021.md:61"
 commit: ""
-content_sha256: 6b3e7f41bbd4ca6a74d09ebee9bc49ee6408b6ae322d20f23470f53253677e5f
+content_sha256: 8adcb18e80110cbd0baad75238dcf637abd5f517d8e9aba9cd0053b0301b831f
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://alpaca-attack.com/"
 published: ""
 publisher: alpaca-attack.com
 publisher_english: ""
-raw_sha256: 1b9f21868b018a6897f23d78ca870078fbb39452b3cad422695ddda3cbef5319
+raw_sha256: 55eb2b7594b1ac17fd7f7c4fa86399c966ca621a7f132d0edc040eaa3c4a827e
 retrieved_from: "https://alpaca-attack.com/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:00:36+00:00"
+retrieved_utc: "2026-08-10T15:01:23+00:00"
 slug: alpaca-attack-com-alpaca-attack
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://alpaca-attack.com/>
-- Preserved from: https://alpaca-attack.com/ (live) on 2026-08-09
+- Preserved from: https://alpaca-attack.com/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

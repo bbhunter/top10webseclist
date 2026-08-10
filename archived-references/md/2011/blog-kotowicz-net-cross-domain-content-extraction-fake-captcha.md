@@ -5,9 +5,9 @@ resource: "http://blog.kotowicz.net/2011/07/cross-domain-content-extraction-with
 tags: [article, webseclist-reference, blog-kotowicz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:04:50+00:00"
+  at: "2026-08-10T15:04:32+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.kotowicz.net/2011/07/cross-domain-content-extraction-with.html"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2011.md:37"
 commit: ""
-content_sha256: 2a7849af93fe32265efea36b75658d6f87eff350a56c588e336f355176d68333
+content_sha256: c4a6b925ec9989f75ff3597ef3e759782d8c24187f1f2f7e30b5de2083087fd9
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "http://blog.kotowicz.net/2011/07/cross-domain-content-extraction-
 published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
-raw_sha256: dac1775e2a4a74fa405c26fd2efb1f00e7e3b0f35b6249a4d45f03cca8bef115
+raw_sha256: 708044ae48db59ad945050f4efd1265ea00a095b93e3b6aae8cf70df52f38d18
 retrieved_from: "http://blog.kotowicz.net/2011/07/cross-domain-content-extraction-with.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:04:50+00:00"
+retrieved_utc: "2026-08-10T15:04:32+00:00"
 slug: blog-kotowicz-net-cross-domain-content-extraction-fake-captcha
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.kotowicz.net/2011/07/cross-domain-content-extraction-with.html>
-- Preserved from: http://blog.kotowicz.net/2011/07/cross-domain-content-extraction-with.html (live) on 2026-08-09
+- Preserved from: http://blog.kotowicz.net/2011/07/cross-domain-content-extraction-with.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -75,7 +75,6 @@ page going offline. To read the original, follow the link above.
  However, this way of using the vector requires significant effort from a user and **is pretty difficult to exploit** in real world situation (there's some clicking and dragging involved). Also, it will stop working once Mozilla [disallows cross origin drag & dropping](https://bugzilla.mozilla.org/show_bug.cgi?id=605991).
 
  I've found a neat way to do cross-origin content extraction that might be more suitable for some classes of websites. Ladies and gentleman, let me present **Fake Captcha**:
- 
 
 ##  No more drag
 

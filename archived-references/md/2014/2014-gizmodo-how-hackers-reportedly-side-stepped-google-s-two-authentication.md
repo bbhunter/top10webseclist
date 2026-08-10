@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/http://gizmodo.com/how-hac
 tags: [article, webseclist-reference, en, gizmodo]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:13:47+00:00"
+  at: "2026-08-10T15:10:27+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://gizmodo.com/how-hackers-reportedly-side-stepped-gmails-two-factor-a-1653631338"
@@ -25,7 +25,7 @@ canonical_url: "https://web.archive.org/web/20160322164132/http://gizmodo.com/ho
 cited_by:
   - "2014.md:11"
 commit: ""
-content_sha256: 67ab2929fe336c0f3daa6e1dd2bf26121c22ecd88f6183bb0ed7e9b4d524f0ef
+content_sha256: c2d1037e5426ee16e26bc17cc9d9711fdcac99727317684d24202feff8ba02c5
 depth: full
 depth_reason: default
 kind: article
@@ -35,10 +35,10 @@ original_url: "https://web.archive.org/web/20160403035045/http://gizmodo.com/how
 published: 2014-11-01
 publisher: Gizmodo
 publisher_english: ""
-raw_sha256: 95a9907924750b3e4a7320172005062762853a90c13d8fcea619490a1d96f1d2
+raw_sha256: e46ac55864068b461bb0e89703d000a9b125e6c69d67a2dd811c1a3c7977a733
 retrieved_from: "https://web.archive.org/web/20160322164132/http://gizmodo.com/how-hackers-reportedly-side-stepped-gmails-two-factor-a-1653631338"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:13:47+00:00"
+retrieved_utc: "2026-08-10T15:10:27+00:00"
 slug: 2014-gizmodo-how-hackers-reportedly-side-stepped-google-s-two-authentication
 snapshot: 20160403035045
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 - Published: 2014-11-01
 - Original: <https://web.archive.org/web/20160403035045/http://gizmodo.com/how-hackers-reportedly-side-stepped-gmails-two-factor-a-1653631338>
 - Current location: <https://web.archive.org/web/20160322164132/http://gizmodo.com/how-hackers-reportedly-side-stepped-gmails-two-factor-a-1653631338>
-- Preserved from: https://web.archive.org/web/20160322164132/http://gizmodo.com/how-hackers-reportedly-side-stepped-gmails-two-factor-a-1653631338 (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160322164132/http://gizmodo.com/how-hackers-reportedly-side-stepped-gmails-two-factor-a-1653631338 (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 

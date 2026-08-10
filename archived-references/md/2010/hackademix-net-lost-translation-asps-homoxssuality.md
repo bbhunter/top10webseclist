@@ -5,9 +5,9 @@ resource: "https://hackademix.net/2010/08/17/lost-in-translation-asps-homoxssual
 tags: [article, webseclist-reference, en-US, hackademix-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:29:36+00:00"
+  at: "2026-08-10T15:26:55+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://hackademix.net/2010/08/17/lost-in-translation-asps-homoxssuality/"
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 4425824b145ac86dfdd64d620ea7bcc34cfe70f341d06df235e46966fe594274
 retrieved_from: "https://hackademix.net/2010/08/17/lost-in-translation-asps-homoxssuality/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:29:36+00:00"
+retrieved_utc: "2026-08-10T15:26:55+00:00"
 slug: hackademix-net-lost-translation-asps-homoxssuality
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://hackademix.net/2010/08/17/lost-in-translation-asps-homoxssuality/>
-- Preserved from: https://hackademix.net/2010/08/17/lost-in-translation-asps-homoxssuality/ (live) on 2026-08-09
+- Preserved from: https://hackademix.net/2010/08/17/lost-in-translation-asps-homoxssuality/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

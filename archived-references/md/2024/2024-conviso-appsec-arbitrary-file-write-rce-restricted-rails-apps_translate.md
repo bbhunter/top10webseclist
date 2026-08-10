@@ -5,9 +5,9 @@ resource: "https://blog.convisoappsec.com/en/from-arbitrary-file-write-to-rce-in
 tags: [article, webseclist-reference, pt, conviso-appsec]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:44+00:00"
+  at: "2026-08-10T15:04:16+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blog.convisoappsec.com/en/from-arbitrary-file-write-to-rce-in-restricted-rails-apps/"
@@ -34,10 +34,10 @@ original_url: "https://blog.convisoappsec.com/en/from-arbitrary-file-write-to-rc
 published: 2024-12-23
 publisher: Conviso AppSec
 publisher_english: ""
-raw_sha256: d2c143551f3ab9b9e77e01d8c74b493a9024b453c4287c7b8f6a5946da09d401
+raw_sha256: a56ae6619f7bc782ce093f0dad4c274706a81c578bcf9b25a92805635c033bd4
 retrieved_from: "https://blog.convisoappsec.com/from-arbitrary-file-write-to-rce-in-restricted-rails-apps/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:44+00:00"
+retrieved_utc: "2026-08-10T15:04:16+00:00"
 slug: 2024-conviso-appsec-arbitrary-file-write-rce-restricted-rails-apps_translate
 snapshot: ""
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: 2024-conviso-appsec-arbitrary-file-write-rce-restricted-rails-ap
 - Published: 2024-12-23
 - Original: <https://blog.convisoappsec.com/en/from-arbitrary-file-write-to-rce-in-restricted-rails-apps/>
 - Current location: <https://blog.convisoappsec.com/from-arbitrary-file-write-to-rce-in-restricted-rails-apps/>
-- Preserved from: https://blog.convisoappsec.com/from-arbitrary-file-write-to-rce-in-restricted-rails-apps/ (live) on 2026-08-09
+- Preserved from: https://blog.convisoappsec.com/from-arbitrary-file-write-to-rce-in-restricted-rails-apps/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

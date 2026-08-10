@@ -5,9 +5,9 @@ resource: "https://labs.boostsecurity.io/articles/sleeper-squats-github-oidc-imm
 tags: [article, webseclist-reference, en, boost-security-labs]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:51:05+00:00"
+  at: "2026-08-10T15:30:41+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://labs.boostsecurity.io/articles/sleeper-squats-github-oidc-immutable-subject-claim"
@@ -20,7 +20,7 @@ authors:
   - Boost Security Labs
 canonical_url: "https://labs.boostsecurity.io/articles/sleeper-squats-github-oidc-immutable-subject-claim/"
 cited_by:
-  - "2026-ai.md:87"
+  - "2026-ai.md:65"
 commit: ""
 content_sha256: b940849a2e41dc0e440cb6952fe0ab8c65a9e399126045ab60dea49d7bb5b13b
 depth: full
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: 00c6f64f223c230c52034b1a23bf884f5b98ebb2931849b878c22a22d895a75d
 retrieved_from: "https://labs.boostsecurity.io/articles/sleeper-squats-github-oidc-immutable-subject-claim/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:51:05+00:00"
+retrieved_utc: "2026-08-10T15:30:41+00:00"
 slug: boost-security-labs-sleeper-squats-how-hyphen-almost-unraveled-github-s-claim
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://labs.boostsecurity.io/articles/sleeper-squats-github-oidc-immutable-subject-claim>
 - Current location: <https://labs.boostsecurity.io/articles/sleeper-squats-github-oidc-immutable-subject-claim/>
-- Preserved from: https://labs.boostsecurity.io/articles/sleeper-squats-github-oidc-immutable-subject-claim/ (live) on 2026-08-08
+- Preserved from: https://labs.boostsecurity.io/articles/sleeper-squats-github-oidc-immutable-subject-claim/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

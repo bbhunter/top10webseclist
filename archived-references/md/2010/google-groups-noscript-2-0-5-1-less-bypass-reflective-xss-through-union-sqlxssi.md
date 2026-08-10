@@ -5,9 +5,9 @@ resource: "https://groups.google.com/g/null-co-in/c/l4-fm9IHtJI"
 tags: [article, webseclist-reference, en-US, google-groups]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:14:14+00:00"
+  at: "2026-08-10T15:10:40+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://groups.google.com/g/null-co-in/c/l4-fm9IHtJI"
@@ -28,10 +28,10 @@ original_url: "https://groups.google.com/g/null-co-in/c/l4-fm9IHtJI"
 published: ""
 publisher: Google Groups
 publisher_english: ""
-raw_sha256: 39606af6caaa05280e1e9592bf4294bc6789fb90e8ea9172e11b907a86c38300
+raw_sha256: 695601b4ac660cb294657795b081366f756b8470e52c66a5139871b8214f5caa
 retrieved_from: "https://groups.google.com/g/null-co-in/c/l4-fm9IHtJI"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:14:14+00:00"
+retrieved_utc: "2026-08-10T15:10:40+00:00"
 slug: google-groups-noscript-2-0-5-1-less-bypass-reflective-xss-through-union-sqlxssi
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://groups.google.com/g/null-co-in/c/l4-fm9IHtJI>
-- Preserved from: https://groups.google.com/g/null-co-in/c/l4-fm9IHtJI (live) on 2026-08-09
+- Preserved from: https://groups.google.com/g/null-co-in/c/l4-fm9IHtJI (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

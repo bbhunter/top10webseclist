@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/woot12/workshop-program/presentatio
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:15+00:00"
+  at: "2026-08-10T16:05:42+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/woot12/workshop-program/presentation/bhargavan"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2012.md:94"
+  - "2012.md:88"
 commit: ""
-content_sha256: 91ad2ad32a8a019ebe676a0728f59e4ccf189d9e15456464cabf3117516a9293
+content_sha256: 95a18d26e8f8ead96ca944848b7e3d73fd04641ba94dc905dc718892a8bfb6bc
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/woot12/workshop-program/present
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: feb3b3eb005d6eb624fe50132e30a33aec38fab9ec6acc28e20db8b6cdf9e717
+raw_sha256: 194afbb2d56ae816f6a0f6efce3c0ececc7eba9bbea43591ebb50dd92491ce20
 retrieved_from: "https://www.usenix.org/conference/woot12/workshop-program/presentation/bhargavan"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:15+00:00"
+retrieved_utc: "2026-08-10T16:05:42+00:00"
 slug: usenix-org-web-based-attacks-host-proof-encrypted-storage
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/woot12/workshop-program/presentation/bhargavan>
-- Preserved from: https://www.usenix.org/conference/woot12/workshop-program/presentation/bhargavan (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/woot12/workshop-program/presentation/bhargavan (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

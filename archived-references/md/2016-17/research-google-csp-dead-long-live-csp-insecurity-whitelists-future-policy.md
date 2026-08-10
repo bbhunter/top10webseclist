@@ -5,9 +5,9 @@ resource: "https://research.google/pubs/csp-is-dead-long-live-csp-on-the-insecur
 tags: [article, webseclist-reference, en, research-google]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:02+00:00"
+  at: "2026-08-10T15:57:12+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://research.google/pubs/csp-is-dead-long-live-csp-on-the-insecurity-of-whitelists-and-the-future-of-content-security-policy/"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:79"
+  - "2016-17.md:73"
 commit: ""
 content_sha256: 003a2f44aad708120881a50fc5faf87a0355280eebd335e47eaed2817a46a0e3
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://research.google/pubs/csp-is-dead-long-live-csp-on-the-ins
 published: ""
 publisher: research.google
 publisher_english: ""
-raw_sha256: 899a5c4b975ff0b5a39940de4a0d66953a206db036e2393f6e25bd36fd61d117
+raw_sha256: 718c2eaa0cbbff3161c65ace1a13d0105c3e5254cbca384958df2f882f599d49
 retrieved_from: "https://research.google/pubs/csp-is-dead-long-live-csp-on-the-insecurity-of-whitelists-and-the-future-of-content-security-policy/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:02+00:00"
+retrieved_utc: "2026-08-10T15:57:12+00:00"
 slug: research-google-csp-dead-long-live-csp-insecurity-whitelists-future-policy
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://research.google/pubs/csp-is-dead-long-live-csp-on-the-insecurity-of-whitelists-and-the-future-of-content-security-policy/>
-- Preserved from: https://research.google/pubs/csp-is-dead-long-live-csp-on-the-insecurity-of-whitelists-and-the-future-of-content-security-policy/ (live) on 2026-08-08
+- Preserved from: https://research.google/pubs/csp-is-dead-long-live-csp-on-the-insecurity-of-whitelists-and-the-future-of-content-security-policy/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

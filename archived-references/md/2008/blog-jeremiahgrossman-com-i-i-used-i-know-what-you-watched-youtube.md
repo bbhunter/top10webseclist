@@ -5,9 +5,9 @@ resource: "https://jeremiahgrossman.blogspot.com/2008/09/i-used-to-know-what-you
 tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:31:17+00:00"
+  at: "2026-08-10T15:30:01+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2008/09/i-used-to-know-what-you-watched-on.html"
@@ -30,10 +30,10 @@ original_url: "https://jeremiahgrossman.blogspot.com/2008/09/i-used-to-know-what
 published: ""
 publisher: blog.jeremiahgrossman.com
 publisher_english: ""
-raw_sha256: 575806b8c2fdd7add2d95a70db9037761c7ac698abbebf2d9d83ae3353374502
+raw_sha256: 2872b2e9fb2f332360356fc3bced205a0358bdff6559742a4d04ff23356b9fbf
 retrieved_from: "https://blog.jeremiahgrossman.com/2008/09/i-used-to-know-what-you-watched-on.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:31:17+00:00"
+retrieved_utc: "2026-08-10T15:30:01+00:00"
 slug: blog-jeremiahgrossman-com-i-i-used-i-know-what-you-watched-youtube
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2008/09/i-used-to-know-what-you-watched-on.html>
 - Current location: <https://blog.jeremiahgrossman.com/2008/09/i-used-to-know-what-you-watched-on.html>
-- Preserved from: https://blog.jeremiahgrossman.com/2008/09/i-used-to-know-what-you-watched-on.html (live) on 2026-08-09
+- Preserved from: https://blog.jeremiahgrossman.com/2008/09/i-used-to-know-what-you-watched-on.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

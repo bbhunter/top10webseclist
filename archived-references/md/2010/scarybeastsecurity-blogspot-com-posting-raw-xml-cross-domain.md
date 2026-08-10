@@ -5,9 +5,9 @@ resource: "https://scarybeastsecurity.blogspot.com/2010/01/posting-raw-xml-cross
 tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:58+00:00"
+  at: "2026-08-10T15:57:32+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://scarybeastsecurity.blogspot.com/2010/01/posting-raw-xml-cross-domain.html"
@@ -28,10 +28,10 @@ original_url: "https://scarybeastsecurity.blogspot.com/2010/01/posting-raw-xml-c
 published: ""
 publisher: scarybeastsecurity.blogspot.com
 publisher_english: ""
-raw_sha256: 07ae0e232d639a6642bad41b634922c27b3c623c6a3abf7ae9de6cf9df5d5bbf
+raw_sha256: dfe09e2e59b0a79e4360b6717e65431ebe9a95ee37ffe186e45cd3b3bc394488
 retrieved_from: "https://scarybeastsecurity.blogspot.com/2010/01/posting-raw-xml-cross-domain.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:58+00:00"
+retrieved_utc: "2026-08-10T15:57:32+00:00"
 slug: scarybeastsecurity-blogspot-com-posting-raw-xml-cross-domain
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://scarybeastsecurity.blogspot.com/2010/01/posting-raw-xml-cross-domain.html>
-- Preserved from: https://scarybeastsecurity.blogspot.com/2010/01/posting-raw-xml-cross-domain.html (live) on 2026-08-09
+- Preserved from: https://scarybeastsecurity.blogspot.com/2010/01/posting-raw-xml-cross-domain.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

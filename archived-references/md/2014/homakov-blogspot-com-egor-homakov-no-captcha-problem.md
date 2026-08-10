@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/http://homakov.blogspot.co
 tags: [article, webseclist-reference, homakov-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:01+00:00"
+  at: "2026-08-10T15:27:23+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://homakov.blogspot.com/2014/12/the-no-captcha-problem.html"
@@ -15,7 +15,7 @@ sources:
   - id: canonical
     resource: "https://web.archive.org/web/20160424013214/http://homakov.blogspot.com/2014/12/the-no-captcha-problem.html"
   - id: capture
-    resource: "https://web.archive.org/web/20150314063908/http://homakov.blogspot.com/2014/12/the-no-captcha-problem.html"
+    resource: "https://web.archive.org/web/20160403035045/http://homakov.blogspot.com/2014/12/the-no-captcha-problem.html"
 also_at: []
 authors: []
 canonical_url: "https://web.archive.org/web/20160424013214/http://homakov.blogspot.com/2014/12/the-no-captcha-problem.html"
@@ -32,12 +32,12 @@ original_url: "https://web.archive.org/web/20160403035045/http://homakov.blogspo
 published: ""
 publisher: homakov.blogspot.com
 publisher_english: ""
-raw_sha256: 79fd6300a1830880cc112b310204d8edfc66f9b1d59c003b0946f73af71daa53
+raw_sha256: a649a76d6eca7c670e7ca3590ca12bf775cf783b5ce8a4c1911fa2cd4067c44b
 retrieved_from: "https://web.archive.org/web/20160424013214/http://homakov.blogspot.com/2014/12/the-no-captcha-problem.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:01+00:00"
+retrieved_utc: "2026-08-10T15:27:23+00:00"
 slug: homakov-blogspot-com-egor-homakov-no-captcha-problem
-snapshot: 20150314063908
+snapshot: 20160403035045
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -50,8 +50,8 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/http://homakov.blogspot.com/2014/12/the-no-captcha-problem.html>
 - Current location: <https://web.archive.org/web/20160424013214/http://homakov.blogspot.com/2014/12/the-no-captcha-problem.html>
-- Preserved from: https://web.archive.org/web/20160424013214/http://homakov.blogspot.com/2014/12/the-no-captcha-problem.html (live) on 2026-08-09
-- Capture timestamp: 20150314063908
+- Preserved from: https://web.archive.org/web/20160424013214/http://homakov.blogspot.com/2014/12/the-no-captcha-problem.html (live) on 2026-08-10
+- Capture timestamp: 20160403035045
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

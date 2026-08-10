@@ -5,9 +5,9 @@ resource: "http://www.thespanner.co.uk/2009/12/06/html5-new-xss-vectors/"
 tags: [article, webseclist-reference, en, thespanner-co-uk]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:46:06+00:00"
+  at: "2026-08-10T16:02:12+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/12/06/html5-new-xss-vectors/"
@@ -30,10 +30,10 @@ original_url: "http://www.thespanner.co.uk/2009/12/06/html5-new-xss-vectors/"
 published: ""
 publisher: thespanner.co.uk
 publisher_english: ""
-raw_sha256: 503a6837f091f63729f8b82c307b24453c7451923c6a1e21528b8539fbcbc675
+raw_sha256: 8189dcce9e4340653009858c656513bc6aafe6288f0e4e826003c3c76b6fe42a
 retrieved_from: "https://thespanner.co.uk/2009/12/06/html5-new-xss-vectors"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:46:06+00:00"
+retrieved_utc: "2026-08-10T16:02:12+00:00"
 slug: thespanner-co-uk-html5-new-xss-vectors
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/12/06/html5-new-xss-vectors/>
 - Current location: <https://thespanner.co.uk/2009/12/06/html5-new-xss-vectors>
-- Preserved from: https://thespanner.co.uk/2009/12/06/html5-new-xss-vectors (live) on 2026-08-09
+- Preserved from: https://thespanner.co.uk/2009/12/06/html5-new-xss-vectors (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://medium.com/dataseries/weird-vulnerabilities-happening-on-load
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:40+00:00"
+  at: "2026-08-10T15:32:28+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/dataseries/weird-vulnerabilities-happening-on-load-balancers-shallow-copies-and-caches-9194d4f72322"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2020.md:54"
 commit: ""
-content_sha256: 1b866e155b6d173a9396d0ad4e9c47758f92c511111c377e47c25fc77845980b
+content_sha256: 958bfaa373a3a267b3ea0b498d31993606bfd6df6f7a3a04a0fae35df399b85c
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://medium.com/dataseries/weird-vulnerabilities-happening-on-
 published: 2020-03-31
 publisher: Medium
 publisher_english: ""
-raw_sha256: ae8f0fa0890f95a377c79f424998578f1b6d14cb889592fd3ee4fa1de2f3bdf0
+raw_sha256: 61dfe73c0a19c395088e58e92215861cbeb7f9c189e28b62999ee81ea6008111
 retrieved_from: "https://medium.com/dataseries/weird-vulnerabilities-happening-on-load-balancers-shallow-copies-and-caches-9194d4f72322"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:40+00:00"
+retrieved_utc: "2026-08-10T15:32:28+00:00"
 slug: 2020-medium-weird-vulnerabilities-happening-load-balancers-shallow-copies-caches
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2020-03-31
 - Original: <https://medium.com/dataseries/weird-vulnerabilities-happening-on-load-balancers-shallow-copies-and-caches-9194d4f72322>
-- Preserved from: https://medium.com/dataseries/weird-vulnerabilities-happening-on-load-balancers-shallow-copies-and-caches-9194d4f72322 (live) on 2026-08-09
+- Preserved from: https://medium.com/dataseries/weird-vulnerabilities-happening-on-load-balancers-shallow-copies-and-caches-9194d4f72322 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

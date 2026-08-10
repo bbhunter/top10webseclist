@@ -5,9 +5,9 @@ resource: "http://www.adambarth.com/experimental/websocket.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T00:58:48+00:00"
+  at: "2026-08-10T15:01:02+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.adambarth.com/experimental/websocket.pdf"
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: a87d8090cc108081ceafdebd3dbeb9b384ddd20615fcaa1c51ec8e9e357368eb
 retrieved_from: "http://www.adambarth.com/papers/2011/huang-chen-barth-rescorla-jackson.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T00:58:48+00:00"
+retrieved_utc: "2026-08-10T15:01:02+00:00"
 slug: poisoning-proxy-caches-using-java-flash-web-sockets
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.adambarth.com/experimental/websocket.pdf>
 - Current location: <http://www.adambarth.com/papers/2011/huang-chen-barth-rescorla-jackson.pdf>
-- Preserved from: http://www.adambarth.com/papers/2011/huang-chen-barth-rescorla-jackson.pdf (live) on 2026-08-09
+- Preserved from: http://www.adambarth.com/papers/2011/huang-chen-barth-rescorla-jackson.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

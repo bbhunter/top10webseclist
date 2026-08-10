@@ -5,9 +5,9 @@ resource: "https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-cr
 tags: [article, webseclist-reference, en, joshua-jabra-abraham]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:26+00:00"
+  at: "2026-08-10T16:00:54+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/"
@@ -19,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2010.md:56"
 commit: ""
-content_sha256: c71828860fddab0a2facbb970de70ad2143d3279da7e9155133e3a5b259e5b27
+content_sha256: 37435cf52e7468ec9e21539b29b410cb8ac3658cca8da11b97a2b809e9efed3a
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-vi
 published: 2010-12-02
 publisher: "Joshua \"Jabra\" Abraham"
 publisher_english: ""
-raw_sha256: 85e2da686c4d1df7bc0d7624c775519b3255120f4afe6be9c783909a62632443
+raw_sha256: 8d3da1605a504dcc78d5550495409b0794cfc3f9374496e2f2b11a363b582c55
 retrieved_from: "https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:26+00:00"
+retrieved_utc: "2026-08-10T16:00:54+00:00"
 slug: 2010-joshua-jabra-abraham-internal-port-scanning-crystal-reports
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2010-12-02
 - Original: <https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/>
-- Preserved from: https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/ (live) on 2026-08-09
+- Preserved from: https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

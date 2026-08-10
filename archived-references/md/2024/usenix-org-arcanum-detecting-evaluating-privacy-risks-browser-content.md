@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/xie-q
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:09+00:00"
+  at: "2026-08-10T16:05:35+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/xie-qinge"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2024.md:154"
+  - "2024.md:151"
 commit: ""
 content_sha256: 3c55ef8286e2d62fa35135542d5f50ea658d663feed9b27c01c1e6fc0dc5d5ea
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity24/presentation/x
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 7eaf0cf076fe2a8cbf413a0edddf057ec6135f1f93787ebd622a20dc890fad2d
+raw_sha256: 0c93d8f0d90e0b0fc326d7c7415a590554a90806f4b86a5466776de2a81200af
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity24/presentation/xie-qinge"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:09+00:00"
+retrieved_utc: "2026-08-10T16:05:35+00:00"
 slug: usenix-org-arcanum-detecting-evaluating-privacy-risks-browser-content
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity24/presentation/xie-qinge>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity24/presentation/xie-qinge (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity24/presentation/xie-qinge (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

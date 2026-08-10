@@ -5,9 +5,9 @@ resource: "https://webblaze.cs.berkeley.edu/contentsniff.html"
 tags: [article, webseclist-reference, webblaze-cs-berkeley-edu]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:40+00:00"
+  at: "2026-08-10T16:06:11+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://webblaze.cs.berkeley.edu/contentsniff.html"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2009.md:107"
+  - "2009.md:102"
 commit: ""
-content_sha256: dbb1614c1965a294a45f19bafddbf968c66058a01ce1cb1c99531d8c57e74a46
+content_sha256: b14f6b6d68824b067df0bfae3866aa61338b8ba140ab38487186e369210525e5
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 5515680e32aec7d0c2cd33160a7810d2f20914126bdd04f92d907059408ddf96
 retrieved_from: "https://webblaze.cs.berkeley.edu/contentsniff.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:40+00:00"
+retrieved_utc: "2026-08-10T16:06:11+00:00"
 slug: webblaze-cs-berkeley-edu-webblaze-content-sniffing-attacks-web-browsers
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://webblaze.cs.berkeley.edu/contentsniff.html>
-- Preserved from: https://webblaze.cs.berkeley.edu/contentsniff.html (live) on 2026-08-08
+- Preserved from: https://webblaze.cs.berkeley.edu/contentsniff.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -63,7 +63,7 @@ WebBlaze - Content Sniffing Attacks in Web Browsers
 ## Content Sniffing Attacks in Web Browsers
 
 [Secure Content Sniffing for Web Browsers, or
-How to Stop Papers from Reviewing Themselves](https://webblaze.cs.berkeley.edu/papers/barth-caballero-song.pdf)[[BibTex]]()
+How to Stop Papers from Reviewing Themselves](https://webblaze.cs.berkeley.edu/papers/barth-caballero-song.pdf)[BibTex]
 
 [Adam Barth](http://www.adambarth.com/), [Juan Caballero](http://www.ece.cmu.edu/~juanca/), [Dawn Song](http://www.cs.berkeley.edu/~dawnsong/)
 

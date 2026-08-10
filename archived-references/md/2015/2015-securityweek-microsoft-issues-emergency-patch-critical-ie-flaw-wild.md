@@ -5,9 +5,9 @@ resource: "http://www.securityweek.com/microsoft-issues-emergency-patch-critical
 tags: [article, webseclist-reference, en, securityweek]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:27+00:00"
+  at: "2026-08-10T15:58:54+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.securityweek.com/microsoft-issues-emergency-patch-critical-ie-flaw-exploited-wild"
@@ -24,7 +24,7 @@ canonical_url: "https://www.securityweek.com/microsoft-issues-emergency-patch-cr
 cited_by:
   - "2015.md:31"
 commit: ""
-content_sha256: ee4467e82fdc987ab48f81bbb993102115272cc6c7bd0fd4ff6356f1ce8b4c95
+content_sha256: ce8679153da18c61ac8b56f6a623050872a0a05f7187c5e05b457bdb714d08f1
 depth: full
 depth_reason: default
 kind: article
@@ -34,10 +34,10 @@ original_url: "http://www.securityweek.com/microsoft-issues-emergency-patch-crit
 published: 2015-08-18
 publisher: SecurityWeek
 publisher_english: ""
-raw_sha256: 334b465eae5ec75a7b92c32ea63b4e698ee2ebdbc1f0a3150826cf9801fbe064
+raw_sha256: b3fdbab99c2bf38866326c370c631d1cf42c156b20ed66b039fa02cbeb216560
 retrieved_from: "https://www.securityweek.com/microsoft-issues-emergency-patch-critical-ie-flaw-exploited-wild/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:27+00:00"
+retrieved_utc: "2026-08-10T15:58:54+00:00"
 slug: 2015-securityweek-microsoft-issues-emergency-patch-critical-ie-flaw-wild
 snapshot: ""
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: 2015-08-18
 - Original: <http://www.securityweek.com/microsoft-issues-emergency-patch-critical-ie-flaw-exploited-wild>
 - Current location: <https://www.securityweek.com/microsoft-issues-emergency-patch-critical-ie-flaw-exploited-wild/>
-- Preserved from: https://www.securityweek.com/microsoft-issues-emergency-patch-critical-ie-flaw-exploited-wild/ (live) on 2026-08-09
+- Preserved from: https://www.securityweek.com/microsoft-issues-emergency-patch-critical-ie-flaw-exploited-wild/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -110,35 +110,32 @@ For more than 15 years, Mike Lennon has been closely monitoring the threat lands
 
 ## Latest News
 
-- [Critical One-Click Vulnerability in Atlassian’s Rovo AI Exposed Enterprise Data](https://www.securityweek.com/critical-one-click-vulnerability-in-atlassians-rovo-ai-exposed-enterprise-data/)
-- [In Other News: AI Slop Limits Apple Bounties, North Carolina Port Attacks, Hackers Target Wall Street](https://www.securityweek.com/in-other-news-ai-slop-limits-apple-bounties-north-carolina-port-attacks-hackers-target-wall-street/)
-- [Vishing Extortion Group UNC6671 Rebrands After Making Millions](https://www.securityweek.com/vishing-extortion-group-unc6671-rebrands-after-making-millions/)
-- [Truck Brake Controller’s Safety Recall Doubled as Hidden Security Fix](https://www.securityweek.com/truck-brake-controllers-safety-recall-doubled-as-hidden-security-fix/)
-- [Black Hat USA 2026 – Summary of Vendor Announcements (Part 4)](https://www.securityweek.com/black-hat-usa-2026-summary-of-vendor-announcements-part-4/)
-- [Microsoft, Apple Release Fresh Security Updates](https://www.securityweek.com/microsoft-apple-release-fresh-security-updates/)
-- [3.8 Million Impacted by Unlimited Technology Systems Data Breach](https://www.securityweek.com/3-8-million-impacted-by-unlimited-technology-systems-data-breach/)
-- [Critical Vulnerabilities Patched With Chrome 151 Update](https://www.securityweek.com/critical-vulnerabilities-patched-with-chrome-151-update/)
+- [OpenAI’s Upcoming Astra Model Raises Autonomous Cyberattack Concerns](https://www.securityweek.com/openais-upcoming-astra-model-raises-autonomous-cyberattack-concerns/)
+- [Stealthium Targets Security Blind Spots in AI Accelerators and Neo-Clouds](https://www.securityweek.com/stealthium-targets-security-blind-spots-in-ai-accelerators-and-neo-clouds/)
+- [Cisco Warns of High-Severity ClamAV Vulnerabilities With Public PoC](https://www.securityweek.com/cisco-warns-of-high-severity-clamav-vulnerabilities-with-public-poc/)
+- [‘Ghostjacking’ Attack Uses Poisoned Logs to Turn AI Agents Bad](https://www.securityweek.com/ghostjacking-attack-uses-poisoned-logs-to-turn-ai-agents-bad/)
+- [New Jersey, Alabama Join States Targeted in Water Cyberattacks](https://www.securityweek.com/new-jersey-alabama-join-states-targeted-in-water-cyberattacks/)
+- [Metabase Patches Vulnerability Exploited as Zero-Day](https://www.securityweek.com/metabase-patches-vulnerability-exploited-as-zero-day/)
+- [Novel Private APN Pivot Let Hackers Sabotage Second Polish Energy Facility](https://www.securityweek.com/novel-private-apn-pivot-let-hackers-sabotage-second-polish-energy-facility/)
+- [CISA Urges Immediate Patching of Exploited Progress LoadMaster Vulnerability](https://www.securityweek.com/cisa-urges-immediate-patching-of-exploited-progress-loadmaster-vulnerability/)
 
  ![](https://www.securityweek.com/wp-content/uploads/2022/04/SecurityWeek-Small-Dark.png)
 
- [
--  **  ]() [
--  **  ]()
+-  **
+-  **
 -  **  [
 -    ](https://www.securityweek.com/microsoft-issues-emergency-patch-critical-ie-flaw-exploited-wild/#respond)
 -  **
 
- [
 -
 
 Flipboard
 
- **  ]() [
 -
 
 Reddit
 
- **  ]() [
+ **   [
 -
 
 Whatsapp
@@ -153,4 +150,4 @@ Whatsapp
 
 Email
 
- **  ](https://www.securityweek.com/cdn-cgi/l/email-protection#a996dadccbc3cccadd94e4c0cadbc6dac6cfdd89e0dadadcccda89ecc4ccdbceccc7cad089f9c8ddcac189cfc6db89eadbc0ddc0cac8c589e0ec89efc5c8de89ecd1d9c5c6c0ddcccd89c0c789ddc1cc89fec0c5cd8fc8c4d992ebe6edf094e089cfc6dcc7cd89ddc1c0da89c8dbddc0cac5cc89c0c7ddccdbccdaddc0c7ce89c8c7cd89ddc1c6dccec1dd89c6cf89dac1c8dbc0c7ce89c0dd89dec0ddc189d0c6dc8789eac1cccac289c0dd89c6dcdd9389c1ddddd9da938686dedede87dacccadcdbc0ddd0deccccc287cac6c486c4c0cadbc6dac6cfdd84c0dadadcccda84ccc4ccdbceccc7cad084d9c8ddcac184cadbc0ddc0cac8c584c0cc84cfc5c8de84ccd1d9c5c6c0ddcccd84dec0c5cd86)
+ **  ](https://www.securityweek.com/cdn-cgi/l/email-protection#efd09c9a8d858a8c9bd2a2868c9d809c80899bcfa69c9c9a8a9ccfaa828a9d888a818c96cfbf8e9b8c87cf89809dcfac9d869b868c8e83cfa6aacfa9838e98cfaa979f8380869b8a8bcf8681cf9b878acfb886838bc98e829fd4ada0abb6d2a6cf89809a818bcf9b87869ccf8e9d9b868c838acf86819b8a9d8a9c9b868188cf8e818bcf9b87809a88879bcf8089cf9c878e9d868188cf869bcf98869b87cf96809ac1cfac878a8c84cf869bcf809a9bd5cf879b9b9f9cd5c0c0989898c19c8a8c9a9d869b96988a8a84c18c8082c082868c9d809c80899bc2869c9c9a8a9cc28a828a9d888a818c96c29f8e9b8c87c28c9d869b868c8e83c2868ac289838e98c28a979f8380869b8a8bc29886838bc0)

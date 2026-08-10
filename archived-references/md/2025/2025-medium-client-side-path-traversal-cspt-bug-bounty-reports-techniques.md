@@ -5,9 +5,9 @@ resource: "https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bounty-
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:19+00:00"
+  at: "2026-08-10T15:32:19+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2025.md:61"
 commit: ""
-content_sha256: af5aa085cae1620f63257fb7baf7fd85143712fe6758dffc362078cbb71867b8
+content_sha256: 22316d8bf24a507338c5d107fb676220cd8cb275ee2adcafc0216e45a335a16f
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bou
 published: 2025-01-24
 publisher: Medium
 publisher_english: ""
-raw_sha256: 96bfc9912b5992ae57e867d0e96f74c838b9f5d1ecbc4ab40a98a50bda351187
+raw_sha256: 0c0d066cf422860d8db7c9f26c592d216b24af08313437611cfddc68be42c768
 retrieved_from: "https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:19+00:00"
+retrieved_utc: "2026-08-10T15:32:19+00:00"
 slug: 2025-medium-client-side-path-traversal-cspt-bug-bounty-reports-techniques
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2025-01-24
 - Original: <https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1>
-- Preserved from: https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1 (live) on 2026-08-09
+- Preserved from: https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

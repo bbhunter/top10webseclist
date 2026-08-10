@@ -5,9 +5,9 @@ resource: "https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities"
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:14:01+00:00"
+  at: "2026-08-10T15:10:33+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities"
@@ -30,10 +30,10 @@ original_url: "https://www.gnucitizen.org/blog/username-enumeration-vulnerabilit
 published: ""
 publisher: gnucitizen.org
 publisher_english: ""
-raw_sha256: facdb9dd26e24123bfdb4060a159aefca4612ad884711cbe81df1ec3d036adf4
+raw_sha256: 726f6bd264337664752282d9e04805a09bb24a65ad387912129c3b00500ed326
 retrieved_from: "https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:14:01+00:00"
+retrieved_utc: "2026-08-10T15:10:33+00:00"
 slug: gnucitizen-org-username-enumeration-vulnerabilities
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities>
 - Current location: <https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities/>
-- Preserved from: https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities/ (live) on 2026-08-09
+- Preserved from: https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

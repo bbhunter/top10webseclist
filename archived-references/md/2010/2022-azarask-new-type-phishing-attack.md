@@ -5,9 +5,9 @@ resource: "http://www.azarask.in/blog/post/a-new-type-of-phishing-attack/"
 tags: [article, webseclist-reference, en, azarask]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:02:18+00:00"
+  at: "2026-08-10T15:02:58+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.azarask.in/blog/post/a-new-type-of-phishing-attack/"
@@ -31,10 +31,10 @@ original_url: "http://www.azarask.in/blog/post/a-new-type-of-phishing-attack/"
 published: 2022-06-04
 publisher: AzarAsk
 publisher_english: ""
-raw_sha256: f11eb42e224420d3823fe16c8fd66a95395d733ce4578103e7800d44203cce2f
+raw_sha256: c5a07693ba85a5adabbbcf2f6b60dd439073d19140c1562eb84ac1ae537f5e9f
 retrieved_from: "https://www.azarask.in/blog/post/a-new-type-of-phishing-attack/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:02:18+00:00"
+retrieved_utc: "2026-08-10T15:02:58+00:00"
 slug: 2022-azarask-new-type-phishing-attack
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 - Published: 2022-06-04
 - Original: <http://www.azarask.in/blog/post/a-new-type-of-phishing-attack/>
 - Current location: <https://www.azarask.in/blog/post/a-new-type-of-phishing-attack/>
-- Preserved from: https://www.azarask.in/blog/post/a-new-type-of-phishing-attack/ (live) on 2026-08-09
+- Preserved from: https://www.azarask.in/blog/post/a-new-type-of-phishing-attack/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

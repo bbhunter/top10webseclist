@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/squar
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:47:55+00:00"
+  at: "2026-08-10T16:05:21+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/squarcina"
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity23/presentation/s
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: b23d2374531ff3f2fdb2fce8529af4ef56b996118eb7d364bf0855a99ecb273a
+raw_sha256: 745fbf3f508410c3c1c2facfd4bd102f6b6b011f396521edfdf09c198327a2ff
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity23/presentation/squarcina"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:47:55+00:00"
+retrieved_utc: "2026-08-10T16:05:21+00:00"
 slug: usenix-org-cookie-crumbles-breaking-fixing-web-session-integrity
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity23/presentation/squarcina>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity23/presentation/squarcina (live) on 2026-08-09
+- Preserved from: https://www.usenix.org/conference/usenixsecurity23/presentation/squarcina (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

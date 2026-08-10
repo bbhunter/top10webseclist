@@ -5,9 +5,9 @@ resource: "https://blog.flatt.tech/entry/signed_url_path_traversal"
 tags: [article, webseclist-reference, ja, gmo-flatt-security-blog]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T19:02:34+00:00"
+  at: "2026-08-10T15:04:18+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blog.flatt.tech/entry/signed_url_path_traversal"
@@ -17,9 +17,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:77"
+  - "2026-ai.md:54"
 commit: ""
-content_sha256: 6e59c643242701bce6eb085de058cb39b4293c6726aee024c33cc46a0dd51410
+content_sha256: 56d146b5ad4a64efce17fcc35ed1193588ff465383ee456ad6b1ca2bbb8c0018
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://blog.flatt.tech/entry/signed_url_path_traversal"
 published: 2026-03-10
 publisher: GMO Flatt Security Blog
 publisher_english: ""
-raw_sha256: b769cd346198ec30efb22a48991b377cdfd94416300cc664abd656c31e918c3c
+raw_sha256: 14f3293e15cee4bf332c3ec1a7be35fcc39eecc9ee45f58bc4aeded10015f3f2
 retrieved_from: "https://blog.flatt.tech/entry/signed_url_path_traversal"
-retrieved_kind: stored
-retrieved_utc: "2026-08-08T19:02:34+00:00"
+retrieved_kind: live
+retrieved_utc: "2026-08-10T15:04:18+00:00"
 slug: 2026-gmo-flatt-security-blog-awssdkurl
 snapshot: ""
 title_english: Path Traversal in Signed URLs, Which Even Existed in the Official AWS SDK
@@ -47,7 +47,7 @@ translation_of: ""
 - Title in English: Path Traversal in Signed URLs, Which Even Existed in the Official AWS SDK
 - Published: 2026-03-10
 - Original: <https://blog.flatt.tech/entry/signed_url_path_traversal>
-- Preserved from: https://blog.flatt.tech/entry/signed_url_path_traversal (stored) on 2026-08-08
+- Preserved from: https://blog.flatt.tech/entry/signed_url_path_traversal (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

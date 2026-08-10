@@ -5,9 +5,9 @@ resource: "https://arxiv.org/abs/2603.12277"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:09+00:00"
+  at: "2026-08-10T15:02:35+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://arxiv.org/abs/2603.12277"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:99"
+  - "2026-ai.md:77"
 commit: ""
-content_sha256: e7469d11edf4c402e975f0d12e3ff080416aa6a4b3907d4dbcc65804a63fc1c1
+content_sha256: 73eee4e0393d44dca39747163b8a2b0423cc1cb9465d80703a6ce2fd3a049ea0
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 38f08a284ce790f8dedf2fca368ed4e9dca5cf5faedbff609f5534034285aee0
 retrieved_from: "https://arxiv.org/abs/2603.12277"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:09+00:00"
+retrieved_utc: "2026-08-10T15:02:35+00:00"
 slug: arxiv-org-prompt-injection-as-role-confusion
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/2603.12277>
-- Preserved from: https://arxiv.org/abs/2603.12277 (live) on 2026-08-08
+- Preserved from: https://arxiv.org/abs/2603.12277 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

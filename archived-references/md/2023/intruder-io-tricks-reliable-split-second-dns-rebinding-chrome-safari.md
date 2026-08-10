@@ -5,9 +5,9 @@ resource: "https://www.intruder.io/research/split-second-dns-rebinding-in-chrome
 tags: [article, webseclist-reference, en, intruder-io]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:50+00:00"
+  at: "2026-08-10T15:29:26+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.intruder.io/research/split-second-dns-rebinding-in-chrome-and-safari"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:28"
 commit: ""
-content_sha256: c04520c5811593506cde2e88fb866dc57dc914941a1364c7aa31ac2b77cef2d1
+content_sha256: d03cd211fcfc9bf42c1e08d5887b25610a46587030b6374cb8bfbd567247ee5a
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: c3fd8a9f85e16711fc19721c8bebf630491b95483c7dd52a1e40155b6824fea2
 retrieved_from: "https://www.intruder.io/research/split-second-dns-rebinding-in-chrome-and-safari"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:50+00:00"
+retrieved_utc: "2026-08-10T15:29:26+00:00"
 slug: intruder-io-tricks-reliable-split-second-dns-rebinding-chrome-safari
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.intruder.io/research/split-second-dns-rebinding-in-chrome-and-safari>
-- Preserved from: https://www.intruder.io/research/split-second-dns-rebinding-in-chrome-and-safari (live) on 2026-08-09
+- Preserved from: https://www.intruder.io/research/split-second-dns-rebinding-in-chrome-and-safari (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

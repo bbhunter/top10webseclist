@@ -5,9 +5,9 @@ resource: "https://arxiv.org/abs/1708.06376"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:01+00:00"
+  at: "2026-08-10T15:02:28+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://arxiv.org/abs/1708.06376"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:108"
+  - "2016-17.md:102"
 commit: ""
-content_sha256: 58747c7968ad8bd9ff825b89f087d057d2256f68eecf5f29fb59f5903b9477d0
+content_sha256: 616dbd9bb392a2d9daf9c170eb30a297f296a579ec850858c1abcc776d7be42b
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 124ed295cdf8116ecf8cdb682ae9a1e9ff513b6c46132f4a334141c9f0194843
 retrieved_from: "https://arxiv.org/abs/1708.06376"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:01+00:00"
+retrieved_utc: "2026-08-10T15:02:28+00:00"
 slug: arxiv-org-automated-website-fingerprinting-through-deep-learning
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/1708.06376>
-- Preserved from: https://arxiv.org/abs/1708.06376 (live) on 2026-08-08
+- Preserved from: https://arxiv.org/abs/1708.06376 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

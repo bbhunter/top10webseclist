@@ -5,9 +5,9 @@ resource: "https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_P
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:32+00:00"
+  at: "2026-08-10T15:31:26+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2011.md:81"
+  - "2011.md:76"
 commit: ""
 content_sha256: e4e205cf1b1ef3bade9e1851cf584dfe7d06dc656b1ac9a9f3e6861bfa99bdfb
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 728103e01da5c7ac23cf67bb5cc49046fbd83e824092d11845b375e11ba430de
 retrieved_from: "https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:32+00:00"
+retrieved_utc: "2026-08-10T15:31:26+00:00"
 slug: sour-pickles-shellcoding-python-s-serialisation-format
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf>
-- Preserved from: https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf (live) on 2026-08-08
+- Preserved from: https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

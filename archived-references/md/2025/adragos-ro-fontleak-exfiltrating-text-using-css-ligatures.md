@@ -5,9 +5,9 @@ resource: "https://adragos.ro/fontleak/"
 tags: [article, webseclist-reference, en, adragos-ro]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:00:27+00:00"
+  at: "2026-08-10T15:01:17+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://adragos.ro/fontleak/"
@@ -34,7 +34,7 @@ publisher_english: ""
 raw_sha256: 60e536063686ab850b31e18b1f1c81939bbedf7fe0c6037e6e974a520cffa5fc
 retrieved_from: "https://adragos.ro/fontleak/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:00:27+00:00"
+retrieved_utc: "2026-08-10T15:01:17+00:00"
 slug: adragos-ro-fontleak-exfiltrating-text-using-css-ligatures
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2025-04-16
 - Original: <https://adragos.ro/fontleak/>
-- Preserved from: https://adragos.ro/fontleak/ (live) on 2026-08-09
+- Preserved from: https://adragos.ro/fontleak/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -159,8 +159,7 @@ And the accompanying SVG font:
 " horiz-adv-x="0" d="M1 0z"/>
       <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
       <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
-      <glyph glyph-name="u0" unicode="
-" horiz-adv-x="0" d="M1 0z"/>
+      <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
       <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
       <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
       <glyph glyph-name="u0" unicode="" horiz-adv-x="0" d="M1 0z"/>
@@ -616,7 +615,7 @@ Exfiltrating 2400 characters in 7 minutes. Reason that it gets slower as it goes
 
 This is the CSP that allowed the exfiltration to happen:
 
-!
+![](https://adragos.ro/assets/images/posts/20250421150321.webp)
 
 As you can see, no @import was allowed but the static version of fontleak was able to do the job.
 

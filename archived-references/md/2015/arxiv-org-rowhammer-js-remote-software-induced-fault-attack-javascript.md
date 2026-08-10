@@ -5,9 +5,9 @@ resource: "https://arxiv.org/abs/1507.06955"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:49:59+00:00"
+  at: "2026-08-10T15:02:25+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://arxiv.org/abs/1507.06955"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2015.md:60"
+  - "2015.md:56"
 commit: ""
-content_sha256: df53ea8b2bd28af60fa82756366b8cc1b1eec008858087ac2487bbc5f9ebdf1f
+content_sha256: 96363cf94f3afc2dbdc34f6bfa6ad58e07af09d953a44fd0cdd3ce38be8aa73f
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 8c54f4a1eca737cff350b2cea832003b09999bf5b613567c4d93cf5238f1b414
 retrieved_from: "https://arxiv.org/abs/1507.06955"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:49:59+00:00"
+retrieved_utc: "2026-08-10T15:02:25+00:00"
 slug: arxiv-org-rowhammer-js-remote-software-induced-fault-attack-javascript
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/1507.06955>
-- Preserved from: https://arxiv.org/abs/1507.06955 (live) on 2026-08-08
+- Preserved from: https://arxiv.org/abs/1507.06955 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

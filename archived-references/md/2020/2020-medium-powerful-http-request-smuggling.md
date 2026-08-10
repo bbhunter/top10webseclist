@@ -5,9 +5,9 @@ resource: "https://medium.com/@ricardoiramar/the-powerful-http-request-smuggling
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:31+00:00"
+  at: "2026-08-10T15:32:24+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@ricardoiramar/the-powerful-http-request-smuggling-af208fafa142"
@@ -23,7 +23,7 @@ canonical_url: "https://ricardoiramar.medium.com/the-powerful-http-request-smugg
 cited_by:
   - "2020.md:48"
 commit: ""
-content_sha256: 004b48ab35224db738dcaa5055d9f980ca9f29af057771eb6a740d5e4b986331
+content_sha256: e548a24e053d4f6b98f7446fc40ae2982a6714d205ad8f35d6bb651759d81a5c
 depth: full
 depth_reason: default
 kind: article
@@ -33,10 +33,10 @@ original_url: "https://medium.com/@ricardoiramar/the-powerful-http-request-smugg
 published: 2020-10-06
 publisher: Medium
 publisher_english: ""
-raw_sha256: f9081e7292e44bce23d0eb5027e9d5f73a96ab1f9d46127cac809de6bee65fc9
+raw_sha256: 368d28ecb405fa453ce63469a3819362a3a71eeb2a227b244784c31fedf48228
 retrieved_from: "https://ricardoiramar.medium.com/the-powerful-http-request-smuggling-af208fafa142"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:31+00:00"
+retrieved_utc: "2026-08-10T15:32:24+00:00"
 slug: 2020-medium-powerful-http-request-smuggling
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: 2020-10-06
 - Original: <https://medium.com/@ricardoiramar/the-powerful-http-request-smuggling-af208fafa142>
 - Current location: <https://ricardoiramar.medium.com/the-powerful-http-request-smuggling-af208fafa142>
-- Preserved from: https://ricardoiramar.medium.com/the-powerful-http-request-smuggling-af208fafa142 (live) on 2026-08-09
+- Preserved from: https://ricardoiramar.medium.com/the-powerful-http-request-smuggling-af208fafa142 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

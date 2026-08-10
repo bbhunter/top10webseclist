@@ -5,9 +5,9 @@ resource: "https://www.ieee-security.org/TC/SP2016/papers/0824a091.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:52:56+00:00"
+  at: "2026-08-10T15:28:28+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2016/papers/0824a091.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:70"
+  - "2016-17.md:64"
 commit: ""
 content_sha256: 4015d275f87f746606674b3d1c96e3c3c68acb3703ddb86e6c6af44c69ba1220
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: c6ed2fd16122d871a713002e1501c57c22e78d990d1e5307ccd98487e71e430c
 retrieved_from: "https://www.ieee-security.org/TC/SP2016/papers/0824a091.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:52:56+00:00"
+retrieved_utc: "2026-08-10T15:28:28+00:00"
 slug: back-black-towards-formal-black-box-analysis-sanitizers-filters
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2016/papers/0824a091.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2016/papers/0824a091.pdf (live) on 2026-08-08
+- Preserved from: https://www.ieee-security.org/TC/SP2016/papers/0824a091.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

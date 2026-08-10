@@ -5,9 +5,9 @@ resource: "https://jeremiahgrossman.blogspot.com/2009/08/web-pages-detecting-vir
 tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:31:23+00:00"
+  at: "2026-08-10T15:30:07+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2009/08/web-pages-detecting-virtualized.html"
@@ -30,10 +30,10 @@ original_url: "https://jeremiahgrossman.blogspot.com/2009/08/web-pages-detecting
 published: ""
 publisher: blog.jeremiahgrossman.com
 publisher_english: ""
-raw_sha256: 0eeb5b2dbe2d98015d6269191024daff70e8e7408f521566de81c649c524e17e
+raw_sha256: 67aac8a5298da8970d2ec0a6d2ae5f8f4e5b836cffdb64f0e8a3dab1567b874b
 retrieved_from: "https://blog.jeremiahgrossman.com/2009/08/web-pages-detecting-virtualized.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:31:23+00:00"
+retrieved_utc: "2026-08-10T15:30:07+00:00"
 slug: blog-jeremiahgrossman-com-web-pages-detecting-virtualized-browsers-other-tricks
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2009/08/web-pages-detecting-virtualized.html>
 - Current location: <https://blog.jeremiahgrossman.com/2009/08/web-pages-detecting-virtualized.html>
-- Preserved from: https://blog.jeremiahgrossman.com/2009/08/web-pages-detecting-virtualized.html (live) on 2026-08-09
+- Preserved from: https://blog.jeremiahgrossman.com/2009/08/web-pages-detecting-virtualized.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

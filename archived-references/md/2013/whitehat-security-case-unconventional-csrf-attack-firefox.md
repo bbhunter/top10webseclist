@@ -5,9 +5,9 @@ resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com
 tags: [article, webseclist-reference, en, whitehat-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:58+00:00"
+  at: "2026-08-10T16:06:49+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/the-case-of-an-unconventional-csrf-attack-in-firefox/"
@@ -32,10 +32,10 @@ original_url: "http://web.archive.org/web/20160507023636/https://www.whitehatsec
 published: ""
 publisher: WhiteHat Security
 publisher_english: ""
-raw_sha256: 383df121264a998e60e40b790a2d7274800683c0e2fe5983ecb8f8892f5cada0
+raw_sha256: 5fb9310dc99083ccb5c291cea1dea2a83e920f2d4b394ee49aa31b339c79d208
 retrieved_from: "http://web.archive.org/web/20160527225307/https://www.whitehatsec.com/blog/the-case-of-an-unconventional-csrf-attack-in-firefox/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:58+00:00"
+retrieved_utc: "2026-08-10T16:06:49+00:00"
 slug: whitehat-security-case-unconventional-csrf-attack-firefox
 snapshot: 20160507023636
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/the-case-of-an-unconventional-csrf-attack-in-firefox/>
 - Current location: <http://web.archive.org/web/20160527225307/https://www.whitehatsec.com/blog/the-case-of-an-unconventional-csrf-attack-in-firefox/>
-- Preserved from: http://web.archive.org/web/20160527225307/https://www.whitehatsec.com/blog/the-case-of-an-unconventional-csrf-attack-in-firefox/ (live) on 2026-08-09
+- Preserved from: http://web.archive.org/web/20160527225307/https://www.whitehatsec.com/blog/the-case-of-an-unconventional-csrf-attack-in-firefox/ (live) on 2026-08-10
 - Capture timestamp: 20160507023636
 - Licence: unknown
 

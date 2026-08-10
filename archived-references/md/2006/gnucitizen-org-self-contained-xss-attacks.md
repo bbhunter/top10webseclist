@@ -5,9 +5,9 @@ resource: "https://www.gnucitizen.org/blog/self-contained-xss-attacks/"
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:49:02+00:00"
+  at: "2026-08-10T15:10:30+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/self-contained-xss-attacks/"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2006.md:94"
+  - "2006.md:89"
 commit: ""
-content_sha256: 8c605d1a0cc83fd6fa7b862462d35a1545f6a575671f8d3587d1bbff7d6d6e5d
+content_sha256: be009f961355d0644c18396e77b876ac0131d2c59e690a74aa8f06bc3da309f9
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: b004231ec9082a7baf9f934f9a333eda9b9d9399246dbf53738174631a85e693
 retrieved_from: "https://www.gnucitizen.org/blog/self-contained-xss-attacks/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:49:02+00:00"
+retrieved_utc: "2026-08-10T15:10:30+00:00"
 slug: gnucitizen-org-self-contained-xss-attacks
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/self-contained-xss-attacks/>
-- Preserved from: https://www.gnucitizen.org/blog/self-contained-xss-attacks/ (live) on 2026-08-08
+- Preserved from: https://www.gnucitizen.org/blog/self-contained-xss-attacks/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

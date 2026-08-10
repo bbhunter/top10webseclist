@@ -5,9 +5,9 @@ resource: "https://vnhacker.blogspot.com/2011/09/beast.html"
 tags: [article, webseclist-reference, blogger]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:06+00:00"
+  at: "2026-08-10T16:05:57+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://vnhacker.blogspot.com/2011/09/beast.html"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2011.md:5"
 commit: ""
-content_sha256: dfbd81510220fe0223f45f36f17f580c786cf2dbc5cf2dee611bc5f78aebce97
+content_sha256: a922691e80ce96e80245ca896c80f3835cb3faf9f4caf6b5605a8f15118c5afa
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://vnhacker.blogspot.com/2011/09/beast.html"
 published: 2011-09-25
 publisher: Blogger
 publisher_english: ""
-raw_sha256: 4fc5ba6ff6ed23a9f0fb8a33ce5acc1da99dae29bca83a40558324bc9f77ecf1
+raw_sha256: 7f60ea3b2db48f93538bfd180a9da42fc21729308648e10739362ec58252a13e
 retrieved_from: "https://vnhacker.blogspot.com/2011/09/beast.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:06+00:00"
+retrieved_utc: "2026-08-10T16:05:57+00:00"
 slug: 2011-blogger-beast
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2011-09-25
 - Original: <https://vnhacker.blogspot.com/2011/09/beast.html>
-- Preserved from: https://vnhacker.blogspot.com/2011/09/beast.html (live) on 2026-08-09
+- Preserved from: https://vnhacker.blogspot.com/2011/09/beast.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

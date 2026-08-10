@@ -5,9 +5,9 @@ resource: "https://www.zerodayinitiative.com/blog/2024/12/11/solarwinds-access-r
 tags: [advisory, webseclist-reference, en, zero-day-initiative]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:51:18+00:00"
+  at: "2026-08-10T16:08:06+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.zerodayinitiative.com/blog/2024/12/11/solarwinds-access-rights-manager-one-vulnerability-to-lpe-them-all"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:122"
 commit: ""
-content_sha256: 526e47ba865106c8edba4c7fa8594838390f37e15bb791f7fc520a762e436aee
+content_sha256: 1fa49fbbb7b0dcd862a4b95630cce040915025bb656555b784dec42d5a7ea297
 depth: full
 depth_reason: default
 kind: advisory
@@ -31,10 +31,10 @@ original_url: "https://www.zerodayinitiative.com/blog/2024/12/11/solarwinds-acce
 published: 2024-12-12
 publisher: Zero Day Initiative
 publisher_english: ""
-raw_sha256: 02f9de5440d33832c06524079a9b498fe039a11932318aec53d7950ad1d0c637
+raw_sha256: 4f1a9d06bcb545a5eceebb5d02c3dbc5ac891c59887cf3938168254e7f17790d
 retrieved_from: "https://www.zerodayinitiative.com/blog/2024/12/11/solarwinds-access-rights-manager-one-vulnerability-to-lpe-them-all"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:51:18+00:00"
+retrieved_utc: "2026-08-10T16:08:06+00:00"
 slug: 2024-zero-day-initiative-zero-day-initiative-solarwinds-access-rights-all
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2024-12-12
 - Original: <https://www.zerodayinitiative.com/blog/2024/12/11/solarwinds-access-rights-manager-one-vulnerability-to-lpe-them-all>
-- Preserved from: https://www.zerodayinitiative.com/blog/2024/12/11/solarwinds-access-rights-manager-one-vulnerability-to-lpe-them-all (live) on 2026-08-09
+- Preserved from: https://www.zerodayinitiative.com/blog/2024/12/11/solarwinds-access-rights-manager-one-vulnerability-to-lpe-them-all (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -203,3 +203,5 @@ You can follow me at [@chudypb](https://twitter.com/chudyPB) and follow the team
 Add your voice to the work that pushes attackers back.
 
  [
+
+#### RESEARCHERS

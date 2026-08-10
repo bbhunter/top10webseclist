@@ -5,20 +5,21 @@ resource: "https://www.spookjs.com/"
 tags: [article, webseclist-reference, en, spookjs-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:19+00:00"
+  at: "2026-08-10T16:00:54+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.spookjs.com/"
     title: Spook.js
-also_at: []
+also_at:
+  - "https://www.spookjs.com/files/spook-js.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2021.md:59"
+  - "2021.md:54"
 commit: ""
-content_sha256: f3dadcc76526bb52f9bc2d75288a21bef4d0e02a922957f09de85ef740f9d4b6
+content_sha256: 9fc382bf7a8f6d3ee1b4e936f0394158e412706fa496dab80549455a684a92e0
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +32,7 @@ publisher_english: ""
 raw_sha256: 0643385e1ccb6c9c7afb7d9d70db32b21e6998848ce2d96fb32ceab53516b93d
 retrieved_from: "https://www.spookjs.com/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:19+00:00"
+retrieved_utc: "2026-08-10T16:00:54+00:00"
 slug: spookjs-com-spook-js
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.spookjs.com/>
-- Preserved from: https://www.spookjs.com/ (live) on 2026-08-08
+- Also published at: <https://www.spookjs.com/files/spook-js.pdf>
+- Preserved from: https://www.spookjs.com/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

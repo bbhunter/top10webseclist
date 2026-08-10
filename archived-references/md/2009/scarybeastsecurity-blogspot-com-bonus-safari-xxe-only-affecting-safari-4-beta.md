@@ -5,9 +5,9 @@ resource: "https://scarybeastsecurity.blogspot.com/2009/06/bonus-safari-xxe-only
 tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:54+00:00"
+  at: "2026-08-10T15:57:29+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://scarybeastsecurity.blogspot.com/2009/06/bonus-safari-xxe-only-affecting-safari.html"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2009.md:52"
 commit: ""
-content_sha256: 4bc3ecaf1044a01f4097814165596b80274fb4980ffd367d67d8380812fd34d4
+content_sha256: 06951cda98053b41b916c8b04f7bbaec4fade897ee4048edc461746972d75133
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://scarybeastsecurity.blogspot.com/2009/06/bonus-safari-xxe-
 published: ""
 publisher: scarybeastsecurity.blogspot.com
 publisher_english: ""
-raw_sha256: 9c2ef920015e6c99f1248a701c9f236ff54dfcf511711656f75e7282993f9da7
+raw_sha256: 8a264919c8b839294549271c0b7e8cb9fa6f813940e1bf2d46aafb4daa1f4588
 retrieved_from: "https://scarybeastsecurity.blogspot.com/2009/06/bonus-safari-xxe-only-affecting-safari.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:54+00:00"
+retrieved_utc: "2026-08-10T15:57:29+00:00"
 slug: scarybeastsecurity-blogspot-com-bonus-safari-xxe-only-affecting-safari-4-beta
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://scarybeastsecurity.blogspot.com/2009/06/bonus-safari-xxe-only-affecting-safari.html>
-- Preserved from: https://scarybeastsecurity.blogspot.com/2009/06/bonus-safari-xxe-only-affecting-safari.html (live) on 2026-08-09
+- Preserved from: https://scarybeastsecurity.blogspot.com/2009/06/bonus-safari-xxe-only-affecting-safari.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -59,8 +59,6 @@ page going offline. To read the original, follow the link above.
 > execute code, or fetch URLs because this text says so.
 
 Security: Bonus Safari XXE (only affecting Safari 4 Beta)
-
-   
 
 ###  Bonus Safari XXE (only affecting Safari 4 Beta)
 

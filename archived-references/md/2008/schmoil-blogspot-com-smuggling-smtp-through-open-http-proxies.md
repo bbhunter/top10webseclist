@@ -5,9 +5,9 @@ resource: "https://schmoil.blogspot.com/2008/03/smuggling-smtp-through-open-http
 tags: [article, webseclist-reference, schmoil-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:40:04+00:00"
+  at: "2026-08-10T15:57:43+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://schmoil.blogspot.com/2008/03/smuggling-smtp-through-open-http.html"
@@ -28,10 +28,10 @@ original_url: "https://schmoil.blogspot.com/2008/03/smuggling-smtp-through-open-
 published: ""
 publisher: schmoil.blogspot.com
 publisher_english: ""
-raw_sha256: 3494b8393d6fc29e9efeb6ecd95a424e310433c98246abb08c95454e9999effd
+raw_sha256: e8a0ba3a44a7855cf3e62a65d364bef5dbf841fb7ae3bc408f556be5ddb62e67
 retrieved_from: "https://schmoil.blogspot.com/2008/03/smuggling-smtp-through-open-http.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:40:04+00:00"
+retrieved_utc: "2026-08-10T15:57:43+00:00"
 slug: schmoil-blogspot-com-smuggling-smtp-through-open-http-proxies
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://schmoil.blogspot.com/2008/03/smuggling-smtp-through-open-http.html>
-- Preserved from: https://schmoil.blogspot.com/2008/03/smuggling-smtp-through-open-http.html (live) on 2026-08-09
+- Preserved from: https://schmoil.blogspot.com/2008/03/smuggling-smtp-through-open-http.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

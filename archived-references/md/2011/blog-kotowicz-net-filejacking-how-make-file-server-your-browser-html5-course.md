@@ -5,9 +5,9 @@ resource: "http://blog.kotowicz.net/2011/04/how-to-make-file-server-from-your.ht
 tags: [article, webseclist-reference, blog-kotowicz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:04:45+00:00"
+  at: "2026-08-10T15:04:29+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.kotowicz.net/2011/04/how-to-make-file-server-from-your.html"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2011.md:48"
 commit: ""
-content_sha256: b39ea2820fc4c709c8b944794825226110f101fe0acd387e313a44b80bbea79a
+content_sha256: 332e899ed926cba47dc69caac79456374e36abdc6b00d29be484cf68ba93490f
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "http://blog.kotowicz.net/2011/04/how-to-make-file-server-from-you
 published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
-raw_sha256: f89cd9c26d1818bd094466aa44e059d44f3f528fccefaf26c1b6e814a13dc0bb
+raw_sha256: 712c7b8d74f4d4ac5bf24e4a85dbf8dfac09f159b1e01a71031839ead374a23d
 retrieved_from: "http://blog.kotowicz.net/2011/04/how-to-make-file-server-from-your.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:04:45+00:00"
+retrieved_utc: "2026-08-10T15:04:29+00:00"
 slug: blog-kotowicz-net-filejacking-how-make-file-server-your-browser-html5-course
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.kotowicz.net/2011/04/how-to-make-file-server-from-your.html>
-- Preserved from: http://blog.kotowicz.net/2011/04/how-to-make-file-server-from-your.html (live) on 2026-08-09
+- Preserved from: http://blog.kotowicz.net/2011/04/how-to-make-file-server-from-your.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -60,7 +60,6 @@ page going offline. To read the original, follow the link above.
 
 Back in the days of [browser wars](http://en.wikipedia.org/wiki/Browser_wars), there was a joke: *Internet Explorer is the only web browser that makes Internet browse your computer*. Through various security flaws, IE was exploitable and allowed for remote code execution that could e.g. steal your sensitive files.
  But now the times are different. It's not that easy to exploit current browsers, they get patched (relatively) quickly. Attackers cannot easily access your files using browsers vulnerabilities, so they turn to the weakest link - **users**. In this post we'll try to explore what current browsers can do with your files.
- 
 
 ## Your file, please
 

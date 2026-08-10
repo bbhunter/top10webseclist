@@ -5,9 +5,9 @@ resource: "https://arxiv.org/abs/1601.01229"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:00+00:00"
+  at: "2026-08-10T15:02:26+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://arxiv.org/abs/1601.01229"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:72"
+  - "2016-17.md:66"
 commit: ""
-content_sha256: 31cb51f3c735f08345315642af0d2a9043a57c50f4b9ce35e79cc0f2b972b218
+content_sha256: a7efd4e94036e5ce44c528d16721035aecc3fb35b5aa2cd6f48d47e840e2d97c
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: cb0b1305b74a26a4048b81edb38a4e605aaa57d0c77b415963603dcaf42e2304
 retrieved_from: "https://arxiv.org/abs/1601.01229"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:00+00:00"
+retrieved_utc: "2026-08-10T15:02:26+00:00"
 slug: arxiv-org-comprehensive-formal-security-analysis-oauth-2-0
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/1601.01229>
-- Preserved from: https://arxiv.org/abs/1601.01229 (live) on 2026-08-08
+- Preserved from: https://arxiv.org/abs/1601.01229 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

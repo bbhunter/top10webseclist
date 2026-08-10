@@ -5,21 +5,22 @@ resource: "https://portswigger.net/research/smashing-the-state-machine"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:41+00:00"
+  at: "2026-08-10T15:36:55+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/smashing-the-state-machine"
     title: "Smashing the state machine: the true potential of web race conditions"
     last_modified: 2023-08-09
-also_at: []
+also_at:
+  - "https://portswigger.net/kb/papers/rifmwla/racewhitepaper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
   - "2023.md:5"
 commit: ""
-content_sha256: fac94dda4296275b342b09c251631f0212c5560d9316c6d4817f2de1d22dfc09
+content_sha256: 6aa4780cdac9283fa64be0b6e514334ed14b41c9a8fe053d43185fd9ee2b6075
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +30,10 @@ original_url: "https://portswigger.net/research/smashing-the-state-machine"
 published: 2023-08-09
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 8d49a0ad430940a02a3920943e927f2386c1833a8b55a57a953ec10e6efad08e
+raw_sha256: b07d384ec63c7b16f2906e9062417ede3d0ac78213482a51a22e40d7ced6520e
 retrieved_from: "https://portswigger.net/research/smashing-the-state-machine"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:41+00:00"
+retrieved_utc: "2026-08-10T15:36:55+00:00"
 slug: 2023-portswigger-research-smashing-state-machine-true-potential-web-conditions
 snapshot: ""
 title_english: ""
@@ -46,7 +47,8 @@ translation_of: ""
 
 - Published: 2023-08-09
 - Original: <https://portswigger.net/research/smashing-the-state-machine>
-- Preserved from: https://portswigger.net/research/smashing-the-state-machine (live) on 2026-08-09
+- Also published at: <https://portswigger.net/kb/papers/rifmwla/racewhitepaper.pdf>
+- Preserved from: https://portswigger.net/research/smashing-the-state-machine (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

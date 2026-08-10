@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://www.dc949.org/proje
 tags: [article, webseclist-reference, en, dc949-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:09:08+00:00"
+  at: "2026-08-10T15:08:47+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://www.dc949.org/projects/stiltwalker/"
@@ -15,14 +15,14 @@ sources:
   - id: canonical
     resource: "https://web.archive.org/web/20170916090033/http://www.dc949.org/projects/stiltwalker"
   - id: capture
-    resource: "https://web.archive.org/web/20120804013710/http://www.dc949.org/projects/stiltwalker/"
+    resource: "https://web.archive.org/web/20170903113359/http://www.dc949.org/projects/stiltwalker/"
 also_at: []
 authors: []
 canonical_url: "https://web.archive.org/web/20170916090033/http://www.dc949.org/projects/stiltwalker"
 cited_by:
   - "2012.md:44"
 commit: ""
-content_sha256: 0bae77dc0cbfe511c3179c3248fbb5d43679dfb2f3833ec729ae9dc69b9f91bd
+content_sha256: b4053ec271d72ce76de5fe5d70f3ba36cf3e950b91536a3839b3d3f6f419899c
 depth: full
 depth_reason: default
 kind: article
@@ -32,12 +32,12 @@ original_url: "https://web.archive.org/web/20170903113359/http://www.dc949.org/p
 published: ""
 publisher: dc949.org
 publisher_english: ""
-raw_sha256: 4aee3c1960ec64161a3c57db0411f050597caa0b5c63d0a25dea823c74cfccb7
+raw_sha256: 60219c12ad6a6ffc31ff575fd2b2132cadf38b759ed8551084843250b72b815d
 retrieved_from: "https://web.archive.org/web/20170916090033/http://www.dc949.org/projects/stiltwalker"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:09:08+00:00"
+retrieved_utc: "2026-08-10T15:08:47+00:00"
 slug: dc949-org-defcon-group-949
-snapshot: 20120804013710
+snapshot: 20170903113359
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -50,8 +50,8 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://www.dc949.org/projects/stiltwalker/>
 - Current location: <https://web.archive.org/web/20170916090033/http://www.dc949.org/projects/stiltwalker>
-- Preserved from: https://web.archive.org/web/20170916090033/http://www.dc949.org/projects/stiltwalker (live) on 2026-08-09
-- Capture timestamp: 20120804013710
+- Preserved from: https://web.archive.org/web/20170916090033/http://www.dc949.org/projects/stiltwalker (live) on 2026-08-10
+- Capture timestamp: 20170903113359
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -67,8 +67,6 @@ page going offline. To read the original, follow the link above.
 Defcon Group 949
 
 The Wayback Machine - https://web.archive.org/web/20170916090033/http://www.dc949.org:80/projects/stiltwalker/
-
- 
 
 # Stiltwalker: Nucaptcha, Paypal, SecurImage, Slashdot, Davids Summer Communication
 
@@ -89,8 +87,6 @@ We gave a talk on all of our changes since round 1 at BsidesLV 2012. You can gra
  **Davids Summer Communication:**
  python complete.py -ds -s 1 chrome 2
 
- 
-
 # Stiltwalker: reCAPTCHA v3 - 59.4% Accurate *non-functional*
 
 Please review v1 then v2 before continuing.
@@ -109,8 +105,6 @@ FOOTNOTE: It looks like Stiltwalker v2 may still work depending on your location
 UPDATE: reCAPTCHA pushed a new set of words, borking this version. Splitter and solver still work, it's just a matter of rolling the new words into Stiltwalker.
 
 ---
-
- 
 
 # Stiltwalker: reCAPTCHA v2 - 60.95% Accurate *non-functional*
 
@@ -172,8 +166,6 @@ Somtime today (6/1/2012) reCAPTCHA was rolled back to the previous, and almost u
 
 ---
 
- 
-
 # Stiltwalker: reCAPTCHA v1 99.1% Accurate *non-functional*
 
 Stiltwalker is a proof of concept tool that defeats Google's reCAPTCHA with an insanely high accuracy (99%). We have released all of our research, code, tools and examples used in the reCAPTCHA domination. You can get the slides [here](https://web.archive.org/web/20170916090033/http:/www.dc949.org/projects/LayerOne-Stiltwalker.odp) (or [here](https://web.archive.org/web/20170916090033/http:/www.dc949.org/projects/LayerOne-Stiltwalker.tar.gz) to get the mp3s as well) and the video is at the bottom of the page.
@@ -221,8 +213,6 @@ In response to the member of the audience asking for the corpus (sample sets), [
  **Warning**: include(): Failed opening 'menu.php' for inclusion (include_path='.:') in **/home/vyrus001/dc949.org/projects/stiltwalker/index.php** on line **222**
 
 ---
-
- 
 
 # Stiltwalker Timeline
 

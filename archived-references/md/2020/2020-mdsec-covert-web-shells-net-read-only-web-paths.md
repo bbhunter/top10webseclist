@@ -5,9 +5,9 @@ resource: "https://www.mdsec.co.uk/2020/10/covert-web-shells-in-net-with-read-on
 tags: [article, webseclist-reference, en, mdsec]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:34:10+00:00"
+  at: "2026-08-10T15:31:26+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.mdsec.co.uk/2020/10/covert-web-shells-in-net-with-read-only-web-paths/"
@@ -32,10 +32,10 @@ original_url: "https://www.mdsec.co.uk/2020/10/covert-web-shells-in-net-with-rea
 published: 2020-10-15
 publisher: MDSec
 publisher_english: ""
-raw_sha256: 8bae1cec9379c196dc0316c15fcb8890e3e90fbf55fd9b79cb3e96cc94c8fa2f
+raw_sha256: 8c474d954382ad9f7a58f791ec7c220c42b83d6b6a142917968720daa087457d
 retrieved_from: "https://www.mdsec.co.uk/2020/10/covert-web-shells-in-net-with-read-only-web-paths/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:34:10+00:00"
+retrieved_utc: "2026-08-10T15:31:26+00:00"
 slug: 2020-mdsec-covert-web-shells-net-read-only-web-paths
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2020-10-15
 - Original: <https://www.mdsec.co.uk/2020/10/covert-web-shells-in-net-with-read-only-web-paths/>
-- Preserved from: https://www.mdsec.co.uk/2020/10/covert-web-shells-in-net-with-read-only-web-paths/ (live) on 2026-08-09
+- Preserved from: https://www.mdsec.co.uk/2020/10/covert-web-shells-in-net-with-read-only-web-paths/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

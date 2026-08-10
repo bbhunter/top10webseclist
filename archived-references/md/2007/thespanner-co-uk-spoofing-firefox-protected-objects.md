@@ -5,9 +5,9 @@ resource: "http://www.thespanner.co.uk/2007/11/14/spoofing-firefox-protected-obj
 tags: [article, webseclist-reference, en, thespanner-co-uk]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:45:44+00:00"
+  at: "2026-08-10T16:01:38+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2007/11/14/spoofing-firefox-protected-objects/"
@@ -30,10 +30,10 @@ original_url: "http://www.thespanner.co.uk/2007/11/14/spoofing-firefox-protected
 published: ""
 publisher: thespanner.co.uk
 publisher_english: ""
-raw_sha256: 4296083bc53b591c20db7b946b5d14a8eecde4fc2eda750c25bc78f9ad6cdc99
+raw_sha256: 199f4b01fcb329912f5f3b53977142312efca0f10db005c5fb0ce45784139800
 retrieved_from: "https://thespanner.co.uk/2007/11/14/spoofing-firefox-protected-objects"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:45:44+00:00"
+retrieved_utc: "2026-08-10T16:01:38+00:00"
 slug: thespanner-co-uk-spoofing-firefox-protected-objects
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2007/11/14/spoofing-firefox-protected-objects/>
 - Current location: <https://thespanner.co.uk/2007/11/14/spoofing-firefox-protected-objects>
-- Preserved from: https://thespanner.co.uk/2007/11/14/spoofing-firefox-protected-objects (live) on 2026-08-09
+- Preserved from: https://thespanner.co.uk/2007/11/14/spoofing-firefox-protected-objects (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

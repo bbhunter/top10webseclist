@@ -5,9 +5,9 @@ resource: "https://ermetic.com/blog/azure/emojideploy-smile-your-azure-web-servi
 tags: [article, webseclist-reference, en, tenable]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:10:10+00:00"
+  at: "2026-08-10T15:09:27+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://ermetic.com/blog/azure/emojideploy-smile-your-azure-web-service-just-got-rced/"
@@ -21,7 +21,7 @@ canonical_url: "https://www.tenable.com/blog/Emoji-Deploy-Smile-Your-Azure-web-s
 cited_by:
   - "2023.md:65"
 commit: ""
-content_sha256: 61406db698f60ef5e3e3d6ef6ded594bd863b77d2346908dbecbc660fd40813d
+content_sha256: e45182859bf3dc226ed2099522b70e7efc3abd8d4591e51a48706f652b2e85cc
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://ermetic.com/blog/azure/emojideploy-smile-your-azure-web-s
 published: 2023-01-19
 publisher: Tenable®
 publisher_english: ""
-raw_sha256: 858edbea9bd9b69055e7a28b4ac948e67c7f7dca03340022faba4984b97b90c8
+raw_sha256: e0d1e6af562700ca2f1829c47f8ea4babb741eaec9854576efe5a33803aebacc
 retrieved_from: "https://www.tenable.com/blog/Emoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:10:10+00:00"
+retrieved_utc: "2026-08-10T15:09:27+00:00"
 slug: 2023-tenable-emojideploy-smile-your-azure-web-service-just-got-rced
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 - Published: 2023-01-19
 - Original: <https://ermetic.com/blog/azure/emojideploy-smile-your-azure-web-service-just-got-rced/>
 - Current location: <https://www.tenable.com/blog/Emoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced>
-- Preserved from: https://www.tenable.com/blog/Emoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced (live) on 2026-08-09
+- Preserved from: https://www.tenable.com/blog/Emoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -66,11 +66,11 @@ page going offline. To read the original, follow the link above.
 
 #  EmojiDeploy: Smile! Your Azure web service just got RCE’d ._.
 
-[![Liv Matan](https://www.tenable.com/sites/default/files/pictures/2024-03/Liv-Matan.jpg) ]()
+![Liv Matan](https://www.tenable.com/sites/default/files/pictures/2024-03/Liv-Matan.jpg)
 
  By [Liv Matan](https://www.tenable.com/profile/liv-matan)
 
-       Subscribe  
+       Subscribe
 
  ![Tenable Cloud Security](https://www.tenable.com/sites/default/files/images/articles/Blog-Cloud_Banners_5_5.png)
 

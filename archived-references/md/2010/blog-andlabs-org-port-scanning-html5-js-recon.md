@@ -5,9 +5,9 @@ resource: "http://blog.andlabs.org/2010/12/port-scanning-with-html5-and-js-recon
 tags: [article, webseclist-reference, en, blog-andlabs-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:25+00:00"
+  at: "2026-08-10T15:04:07+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.andlabs.org/2010/12/port-scanning-with-html5-and-js-recon.html"
@@ -28,10 +28,10 @@ original_url: "http://blog.andlabs.org/2010/12/port-scanning-with-html5-and-js-r
 published: ""
 publisher: blog.andlabs.org
 publisher_english: ""
-raw_sha256: 75c4953ce8506df6f7366df9f6e8453eb1a68f21f8e405c7a8594383d980ad66
+raw_sha256: 35b7d0b7f23bc5eb59a1f0f9fdf8db4a4b18e7ea1155fb3edb54ca78b7e9742f
 retrieved_from: "http://blog.andlabs.org/2010/12/port-scanning-with-html5-and-js-recon.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:25+00:00"
+retrieved_utc: "2026-08-10T15:04:07+00:00"
 slug: blog-andlabs-org-port-scanning-html5-js-recon
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.andlabs.org/2010/12/port-scanning-with-html5-and-js-recon.html>
-- Preserved from: http://blog.andlabs.org/2010/12/port-scanning-with-html5-and-js-recon.html (live) on 2026-08-09
+- Preserved from: http://blog.andlabs.org/2010/12/port-scanning-with-html5-and-js-recon.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

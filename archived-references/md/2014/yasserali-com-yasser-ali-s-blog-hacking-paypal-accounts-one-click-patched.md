@@ -5,20 +5,24 @@ resource: "https://web.archive.org/web/20160403035045/http://yasserali.com/hacki
 tags: [article, webseclist-reference, yasserali-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T02:39:43+00:00"
+  at: "2026-08-10T16:07:45+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://yasserali.com/hacking-paypal-accounts-with-one-click/"
     title: "Yasser Ali's Blog » Hacking PayPal Accounts with one click (Patched)"
+  - id: canonical
+    resource: "https://web.archive.org/web/20160409220105/http://yasserali.com/hacking-paypal-accounts-with-one-click"
+  - id: capture
+    resource: "https://web.archive.org/web/20160403035045/http://yasserali.com/hacking-paypal-accounts-with-one-click/"
 also_at: []
 authors: []
-canonical_url: ""
+canonical_url: "https://web.archive.org/web/20160409220105/http://yasserali.com/hacking-paypal-accounts-with-one-click"
 cited_by:
   - "2014.md:10"
 commit: ""
-content_sha256: cf1eb28431579144edf1053991b68fc2f67412ad3e008fe3372e4e28e10d668c
+content_sha256: fe40c6f0c565cfc7a9376ec56ef60b6682a9004dba9e2de7e96125c8ab41aa85
 depth: full
 depth_reason: default
 kind: article
@@ -28,12 +32,12 @@ original_url: "https://web.archive.org/web/20160403035045/http://yasserali.com/h
 published: ""
 publisher: yasserali.com
 publisher_english: ""
-raw_sha256: 2b960086d099d376ee8b166455c22a786191d2505bca875fe9fcf0248d80627f
-retrieved_from: "https://web.archive.org/web/20160403035045/http://yasserali.com/hacking-paypal-accounts-with-one-click/"
-retrieved_kind: browser
-retrieved_utc: "2026-08-09T02:39:43+00:00"
+raw_sha256: 79dad59fedcfe65e74af44877636693095192f27007c143f2bd069c771cd1726
+retrieved_from: "https://web.archive.org/web/20160409220105/http://yasserali.com/hacking-paypal-accounts-with-one-click"
+retrieved_kind: live
+retrieved_utc: "2026-08-10T16:07:45+00:00"
 slug: yasserali-com-yasser-ali-s-blog-hacking-paypal-accounts-one-click-patched
-snapshot: ""
+snapshot: 20160403035045
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -45,7 +49,9 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/http://yasserali.com/hacking-paypal-accounts-with-one-click/>
-- Preserved from: https://web.archive.org/web/20160403035045/http://yasserali.com/hacking-paypal-accounts-with-one-click/ (browser) on 2026-08-09
+- Current location: <https://web.archive.org/web/20160409220105/http://yasserali.com/hacking-paypal-accounts-with-one-click>
+- Preserved from: https://web.archive.org/web/20160409220105/http://yasserali.com/hacking-paypal-accounts-with-one-click (live) on 2026-08-10
+- Capture timestamp: 20160403035045
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -60,14 +66,14 @@ page going offline. To read the original, follow the link above.
 
 Yasser Ali's Blog » Hacking PayPal Accounts with one click (Patched)
 
-The Wayback Machine - http://yasserali.com:80/hacking-paypal-accounts-with-one-click/
+The Wayback Machine - https://web.archive.org/web/20160409220105/http://yasserali.com:80/hacking-paypal-accounts-with-one-click/
 
  2014
  10.09
 
-## [Hacking PayPal Accounts with one click (Patched)](http://yasserali.com/hacking-paypal-accounts-with-one-click/)
+## [Hacking PayPal Accounts with one click (Patched)](https://web.archive.org/web/20160409220105/http://yasserali.com/hacking-paypal-accounts-with-one-click/)
 
- Category: [Security](http://yasserali.com/category/security/) / Tag: [PayPal Hacked](http://yasserali.com/tag/paypal-hacked/), [The Magical CSRF](http://yasserali.com/tag/the-magical-csrf/) /  / 256,765 Total Views
+ Category: [Security](https://web.archive.org/web/20160409220105/http://yasserali.com/category/security/) / Tag: [PayPal Hacked](https://web.archive.org/web/20160409220105/http://yasserali.com/tag/paypal-hacked/), [The Magical CSRF](https://web.archive.org/web/20160409220105/http://yasserali.com/tag/the-magical-csrf/) /  / 256,765 Total Views
 
 Today I am going to publicly disclose a critical vulnerability I have found during my research in PayPal, This vulnerability enabled me to completely bypass the CSRF Prevention System implemented by PayPal, The vulnerability is patched very fast and PayPal paid me the maximum bounty they give ;).
 
@@ -80,7 +86,7 @@ The CSRF token “that authenticate every single request made by the user” whi
 
 The CSRF Auth verifies every single request of that user, So what If an attacker “not logged in” tries to make a “send money” request then PayPal will ask the attacker to provide his email and password, The attacker will provide the “Victim Email” and ANY password, Then he will capture the request, The request will contain a Valid CSRF Auth token Which is Reusable and Can authorise this specific user requests. Upon Further Investigation, We have found out that an Attacker can obtain the CSRF Auth which can be valid for ALL users, by intercepting the POST request from a page that provide an Auth Token before the Logging-in process, check this page for the magical CSRF Auth “https://www.paypal.com/eg/cgi-bin/webscr?cmd=_send-money”. At this point the attacker Can CSRF “almost” any request on behalf of this user.
 
-[![The application generates a valid "Auth" token for a logged-out user!](http://yasserali.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-09-at-8.17.29-PM-1024x463.png)](http://yasserali.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-09-at-8.17.29-PM.png)
+[![The application generates a valid "Auth" token for a logged-out user!](https://web.archive.org/web/20160409220105im_/http://yasserali.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-09-at-8.17.29-PM-1024x463.png)](https://web.archive.org/web/20160409220105/http://yasserali.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-09-at-8.17.29-PM.png)
 
 The application generates a valid “Auth” token for a logged-out user!
 
@@ -88,7 +94,7 @@ Through examination of the password change process, I have found that an attacke
 
 #### 3- ByPassing the Security Questions Change:
 
-[![Screen Shot 2014-08-13 at 12.20.52 AM](http://yasserali.com/wp-content/uploads/2014/10/Screen-Shot-2014-08-13-at-12.20.52-AM-1024x434.png)](http://yasserali.com/wp-content/uploads/2014/10/Screen-Shot-2014-08-13-at-12.20.52-AM.png)
+[![Screen Shot 2014-08-13 at 12.20.52 AM](https://web.archive.org/web/20160409220105im_/http://yasserali.com/wp-content/uploads/2014/10/Screen-Shot-2014-08-13-at-12.20.52-AM-1024x434.png)](https://web.archive.org/web/20160409220105/http://yasserali.com/wp-content/uploads/2014/10/Screen-Shot-2014-08-13-at-12.20.52-AM.png)
 
 The initial process of “setting” security questions is not password protected and is reusable
 
@@ -108,17 +114,17 @@ Here is the POC Video:
 
 **Update #1 (Dec 4th 2014):**
 
-PayPal spokesperson released the following [statement](http://thehackernews.com/2014/12/hacking-paypal-account.html):
+PayPal spokesperson released the following [statement](https://web.archive.org/web/20160409220105/http://thehackernews.com/2014/12/hacking-paypal-account.html):
 
 *“One of our security researchers recently made us aware of a potential way to bypass PayPal’s Cross-Site Request Forgery (CSRF) Protection Authorization System when logging onto PayPal.com. Through the PayPal Bug Bounty program, the researcher reported this to us first and our team worked quickly to fix this potential vulnerability before any of our customers were affected by this issue. We proactively work with security researchers to learn about and stay ahead of potential threats because the security of our customers’ accounts is our top concern.” *
 
 **Update #2 (Dec 31st 2014)”**
 
-Made the 3rd Rank in [Top Ethical Hackers of 2014](https://www.checkmarx.com/2014/12/31/ethical-hackers-tips/) , CheckMarx Company
+Made the 3rd Rank in [Top Ethical Hackers of 2014](https://web.archive.org/web/20160409220105/https://www.checkmarx.com/2014/12/31/ethical-hackers-tips/) , CheckMarx Company
 
 **Update #3 (March 20th 2015):**
 
-This technique has been listed on the ( [TOP 10 Web Hacking techniques of 2014](https://blog.whitehatsec.com/top-10-web-hacking-techniques-of-2014/)) with the rank #6.
+This technique has been listed on the ( [TOP 10 Web Hacking techniques of 2014](https://web.archive.org/web/20160409220105/https://blog.whitehatsec.com/top-10-web-hacking-techniques-of-2014/)) with the rank #6.
 
 ### Your Comment
 

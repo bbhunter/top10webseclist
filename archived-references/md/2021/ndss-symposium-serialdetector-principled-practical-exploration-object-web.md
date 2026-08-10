@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/serialdetector-principled-a
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:09+00:00"
+  at: "2026-08-10T15:33:54+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/serialdetector-principled-and-practical-exploration-of-object-injection-vulnerabilities-for-the-web/"
     title: "SerialDetector: Principled and Practical Exploration of Object Injection Vulnerabilities for the Web"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/ndss2021_3A-5_24550_paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2021.md:67"
+  - "2021.md:62"
 commit: ""
-content_sha256: 47938d7a0e29a94b497732279d81b7d669b4b75efa4a7c1e4126aa19f54dcaca
+content_sha256: cef34d2188ebd325944bf57c75a10d5a12e74ab1cf4acdf747291f0dcbab366f
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/serialdetector-principl
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 0fcbbe5a9eef576d313078a88c9317d975398963f88ad2c0b4f5d211aafc1f76
+raw_sha256: 7f0f1c2d64da40c4b219d00293c6453b4be7d3f7d4e2cc7e9d528486512d6b24
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/serialdetector-principled-and-practical-exploration-of-object-injection-vulnerabilities-for-the-web/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:09+00:00"
+retrieved_utc: "2026-08-10T15:33:54+00:00"
 slug: ndss-symposium-serialdetector-principled-practical-exploration-object-web
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/serialdetector-principled-and-practical-exploration-of-object-injection-vulnerabilities-for-the-web/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/serialdetector-principled-and-practical-exploration-of-object-injection-vulnerabilities-for-the-web/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/ndss2021_3A-5_24550_paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/serialdetector-principled-and-practical-exploration-of-object-injection-vulnerabilities-for-the-web/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -70,17 +72,17 @@ This paper presents the first systematic approach for detecting and exploiting O
 
 ## View More Papers
 
-### [ Comparative Analysis of the DoT with HTTPS Certificate Ecosystems ](https://www.ndss-symposium.org/ndss-paper/auto-draft-143/)
+### [ Data Analytics and Expert Judgment in Time of Crisis:... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-169/)
 
- Ali Sadeghi Jahromi, AbdelRahman Abdou (Carleton University)
+ Igor Linkov, PhD Senior Science and Technology Manager, US Army Engineer Research and Development Center; Senior Data Analyst (on detail), FEMA/HHS R1 COVID Task Force; Adjunct Professor, Carnegie Mellon University
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-143/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-169/)
 
-### [ POSEIDON: Privacy-Preserving Federated Neural Network Learning ](https://www.ndss-symposium.org/ndss-paper/poseidon-privacy-preserving-federated-neural-network-learning/)
+### [ Tales of Favicons and Caches: Persistent Tracking in Modern... ](https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-caches-persistent-tracking-in-modern-browsers/)
 
- Sinem Sav (EPFL), Apostolos Pyrgelis (EPFL), Juan Ramón Troncoso-Pastoriza (EPFL), David Froelicher (EPFL), Jean-Philippe Bossuat (EPFL), Joao Sa Sousa (EPFL), Jean-Pierre Hubaux (EPFL)
+ Konstantinos Solomos (University of Illinois at Chicago), John Kristoff (University of Illinois at Chicago), Chris Kanich (University of Illinois at Chicago), Jason Polakis (University of Illinois at Chicago)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/poseidon-privacy-preserving-federated-neural-network-learning/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-caches-persistent-tracking-in-modern-browsers/)
 
 ### [ Demo #10: Security of Deep Learning based Automated Lane... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-116/)
 

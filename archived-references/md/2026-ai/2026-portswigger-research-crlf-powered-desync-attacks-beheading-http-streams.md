@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/crlf-powered-desync-attacks"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:52:40+00:00"
+  at: "2026-08-10T15:36:33+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/crlf-powered-desync-attacks"
@@ -17,9 +17,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:57"
+  - "2026-ai.md:33"
 commit: ""
-content_sha256: a0f5f097554d430a0548285fc9ea0ee7c45f42325530a7d619f2067209c508ce
+content_sha256: 359b6f9f76605c570e64d08a3dbd2e31169e1af32b679f1d1f108096125d7e59
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/crlf-powered-desync-attacks"
 published: 2026-08-05
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 687bc38df15c7407394fc723be81c38f42ed32c5b82117907a628b497ef67e38
+raw_sha256: 995e9912583f8ea28639f88c5973890b8e71a123d456943af9f6e535b6dde4c7
 retrieved_from: "https://portswigger.net/research/crlf-powered-desync-attacks"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:52:40+00:00"
+retrieved_utc: "2026-08-10T15:36:33+00:00"
 slug: 2026-portswigger-research-crlf-powered-desync-attacks-beheading-http-streams
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2026-08-05
 - Original: <https://portswigger.net/research/crlf-powered-desync-attacks>
-- Preserved from: https://portswigger.net/research/crlf-powered-desync-attacks (live) on 2026-08-08
+- Preserved from: https://portswigger.net/research/crlf-powered-desync-attacks (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

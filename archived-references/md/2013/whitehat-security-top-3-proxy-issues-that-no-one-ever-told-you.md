@@ -5,9 +5,9 @@ resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com
 tags: [article, webseclist-reference, en, whitehat-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:49:04+00:00"
+  at: "2026-08-10T16:06:55+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/top-3-proxy-issues-that-no-one-ever-told-you/"
@@ -32,10 +32,10 @@ original_url: "http://web.archive.org/web/20160507023636/https://www.whitehatsec
 published: ""
 publisher: WhiteHat Security
 publisher_english: ""
-raw_sha256: d4279e6d09c14c2ef9af9762ed26921caf1d733691af1a00db3335949b4fb386
+raw_sha256: 507eec7935a3da08780631d2687656eccd5d4634c505d46cbddb45cc1e987258
 retrieved_from: "http://web.archive.org/web/20160527193519/https://www.whitehatsec.com/blog/top-3-proxy-issues-that-no-one-ever-told-you/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:49:04+00:00"
+retrieved_utc: "2026-08-10T16:06:55+00:00"
 slug: whitehat-security-top-3-proxy-issues-that-no-one-ever-told-you
 snapshot: 20160507023636
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/top-3-proxy-issues-that-no-one-ever-told-you/>
 - Current location: <http://web.archive.org/web/20160527193519/https://www.whitehatsec.com/blog/top-3-proxy-issues-that-no-one-ever-told-you/>
-- Preserved from: http://web.archive.org/web/20160527193519/https://www.whitehatsec.com/blog/top-3-proxy-issues-that-no-one-ever-told-you/ (live) on 2026-08-09
+- Preserved from: http://web.archive.org/web/20160527193519/https://www.whitehatsec.com/blog/top-3-proxy-issues-that-no-one-ever-told-you/ (live) on 2026-08-10
 - Capture timestamp: 20160507023636
 - Licence: unknown
 

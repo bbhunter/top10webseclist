@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://blog.nibblesec.org/
 tags: [article, webseclist-reference, blog-nibblesec-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:06:17+00:00"
+  at: "2026-08-10T15:05:32+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-firefox-0day-and.html"
@@ -22,7 +22,7 @@ canonical_url: "https://web.archive.org/web/20171005091933/http://blog.nibblesec
 cited_by:
   - "2012.md:55"
 commit: ""
-content_sha256: 5b0c13667076761ee71e897c0ee04045cae16b6baf253ba2203842c9db0beda5
+content_sha256: ca3d5ff70c7cf5093bd927b01fb9b926325b007862d2f9960ff399aca38ba8d3
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://blog.nibblesec.
 published: ""
 publisher: blog.nibblesec.org
 publisher_english: ""
-raw_sha256: 685b8661ace6d8cb04f0328c9967dc1e5fbfd0b1c857f9d06e2c2b751a6c77b5
+raw_sha256: 38631439e0bc37c9d271fd4a71acc4c132df6af5871775a6a1d83650976c1576
 retrieved_from: "https://web.archive.org/web/20171005091933/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-firefox-0day-and.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:06:17+00:00"
+retrieved_utc: "2026-08-10T15:05:32+00:00"
 slug: blog-nibblesec-org-ui-redressing-mayhem-firefox-0day-leakedin-affair
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-firefox-0day-and.html>
 - Current location: <https://web.archive.org/web/20171005091933/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-firefox-0day-and.html>
-- Preserved from: https://web.archive.org/web/20171005091933/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-firefox-0day-and.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20171005091933/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-firefox-0day-and.html (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

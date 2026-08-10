@@ -5,9 +5,9 @@ resource: "https://schmoil.blogspot.com/2008/03/stealing-basic-auth-with-persist
 tags: [article, webseclist-reference, schmoil-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:40:05+00:00"
+  at: "2026-08-10T15:57:44+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://schmoil.blogspot.com/2008/03/stealing-basic-auth-with-persistent-xss.html"
@@ -28,10 +28,10 @@ original_url: "https://schmoil.blogspot.com/2008/03/stealing-basic-auth-with-per
 published: ""
 publisher: schmoil.blogspot.com
 publisher_english: ""
-raw_sha256: b19fb9acbc258d382b3e284575c2daaef4561d4b29e174abe353f2b2ca2b7e58
+raw_sha256: 32dbfdcc12c161d5a3d9d3180603ccf03a331c4d1a0b2d6d4c8fd8f88b81b649
 retrieved_from: "https://schmoil.blogspot.com/2008/03/stealing-basic-auth-with-persistent-xss.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:40:05+00:00"
+retrieved_utc: "2026-08-10T15:57:44+00:00"
 slug: schmoil-blogspot-com-stealing-basic-auth-persistent-xss
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://schmoil.blogspot.com/2008/03/stealing-basic-auth-with-persistent-xss.html>
-- Preserved from: https://schmoil.blogspot.com/2008/03/stealing-basic-auth-with-persistent-xss.html (live) on 2026-08-09
+- Preserved from: https://schmoil.blogspot.com/2008/03/stealing-basic-auth-with-persistent-xss.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

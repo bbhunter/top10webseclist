@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/ali"
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:59+00:00"
+  at: "2026-08-10T16:05:23+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/ali"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2024.md:153"
+  - "2024.md:150"
 commit: ""
 content_sha256: ed83085d8bf1ddefb465553c5ddcd49eee18b012913c15a403e2647f5815d296
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity24/presentation/a
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: e236eb22b9a32b1a6c430d9315ada78f28aa8c854a44dfbf4c8ffc70ae2d951d
+raw_sha256: 8a20bfddd22f1b7c60cb816b82ff02580ab739ed773e72748217568f201546a1
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity24/presentation/ali"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:59+00:00"
+retrieved_utc: "2026-08-10T16:05:23+00:00"
 slug: usenix-org-rise-inspectron-automated-black-box-auditing-cross-platform-apps
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity24/presentation/ali>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity24/presentation/ali (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity24/presentation/ali (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://arxiv.org/abs/1908.02204"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:02+00:00"
+  at: "2026-08-10T15:02:31+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://arxiv.org/abs/1908.02204"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2019.md:69"
+  - "2019.md:67"
 commit: ""
-content_sha256: 7c28f54577b8555f37fdaaec37632a39125bd8f6f2fa14998526b7b579396be7
+content_sha256: 44fbe166b7b54896d2dd37ad13c75e9b8a50a11e1912abde4eca54479f183406
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 41b6d12e7b21c47401322acbca8c1ff5e2c3fb191c038e95bd965d591db0c175
 retrieved_from: "https://arxiv.org/abs/1908.02204"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:02+00:00"
+retrieved_utc: "2026-08-10T15:02:31+00:00"
 slug: arxiv-org-cross-origin-state-inference-cosi-attacks-leaking-web-site-leaks
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/1908.02204>
-- Preserved from: https://arxiv.org/abs/1908.02204 (live) on 2026-08-08
+- Preserved from: https://arxiv.org/abs/1908.02204 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

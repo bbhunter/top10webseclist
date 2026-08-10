@@ -5,9 +5,9 @@ resource: "https://blog.includesecurity.com/2025/04/cross-site-websocket-hijacki
 tags: [article, webseclist-reference, en, include-security-research-blog]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:04:11+00:00"
+  at: "2026-08-10T15:04:18+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blog.includesecurity.com/2025/04/cross-site-websocket-hijacking-exploitation-in-2025/"
@@ -32,10 +32,10 @@ original_url: "https://blog.includesecurity.com/2025/04/cross-site-websocket-hij
 published: 2025-04-17
 publisher: Include Security Research Blog
 publisher_english: ""
-raw_sha256: dd61b2dc7ce914d5f4cf040a559ed4e4f4573d9fd245205cdb84ec8d78512521
+raw_sha256: b37c99318a7035ab49aa39ada2bad0d2e70c3749cdda6e65ed045dde7b230e13
 retrieved_from: "https://blog.includesecurity.com/2025/04/cross-site-websocket-hijacking-exploitation-in-2025/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:04:11+00:00"
+retrieved_utc: "2026-08-10T15:04:18+00:00"
 slug: 2025-include-security-research-blog-cross-site-websocket-hijacking-2025
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2025-04-17
 - Original: <https://blog.includesecurity.com/2025/04/cross-site-websocket-hijacking-exploitation-in-2025/>
-- Preserved from: https://blog.includesecurity.com/2025/04/cross-site-websocket-hijacking-exploitation-in-2025/ (live) on 2026-08-09
+- Preserved from: https://blog.includesecurity.com/2025/04/cross-site-websocket-hijacking-exploitation-in-2025/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

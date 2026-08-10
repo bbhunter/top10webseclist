@@ -5,9 +5,9 @@ resource: "https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper015.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:52:25+00:00"
+  at: "2026-08-10T15:27:54+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper015.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2011.md:72"
+  - "2011.md:67"
 commit: ""
 content_sha256: cad421512caefcac2a1162cbf7e84533794eaa6b43ce60fb6b663878a577a320
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: ae46e858db0e4481e7761dafe7e203c8eda0f02cc26fdc73462b0fb3e879e08e
 retrieved_from: "https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper015.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:52:25+00:00"
+retrieved_utc: "2026-08-10T15:27:54+00:00"
 slug: you-might-also-like-privacy-risks-collaborative-filtering
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper015.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper015.pdf (live) on 2026-08-08
+- Preserved from: https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper015.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

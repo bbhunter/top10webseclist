@@ -5,9 +5,9 @@ resource: "https://casa.rub.de/en/research/publications/detail/finding-all-cross
 tags: [article, webseclist-reference, en-GB, casa-cyber-security-in-the-age-of-large-]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:57+00:00"
+  at: "2026-08-10T15:07:08+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://casa.rub.de/en/research/publications/detail/finding-all-cross-site-needles-in-the-dom-stack-a-comprehensive-methodology-for-the-automatic-xs-leak-detection-in-web-browsers"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2023.md:93"
+  - "2023.md:88"
 commit: ""
-content_sha256: 31dd947cb33e6ccddad809e0b1b86c8a01cf1a1bd250499a1735d37f6c2b53eb
+content_sha256: aaf47d3a1f5ad78a7dcc452d9f6856d3a399db2cc602d0b87645086d9a80c34d
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://casa.rub.de/en/research/publications/detail/finding-all-c
 published: ""
 publisher: CASA - Cyber Security in the Age of Large-Scale Adversaries
 publisher_english: ""
-raw_sha256: 298818a7b2cb6af98828897a5b892e17e472289339b0780c542bebaff5b77c99
+raw_sha256: 5afa5ffaaf8b0e17eaeb867441765537fe27bb503d35f2e0051fc8b5e5d845ae
 retrieved_from: "https://casa.rub.de/en/research/publications/detail/finding-all-cross-site-needles-in-the-dom-stack-a-comprehensive-methodology-for-the-automatic-xs-leak-detection-in-web-browsers"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:57+00:00"
+retrieved_utc: "2026-08-10T15:07:08+00:00"
 slug: casa-cyber-security-in-the-age-of-large-scale-adversaries-finding-all-browsers
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://casa.rub.de/en/research/publications/detail/finding-all-cross-site-needles-in-the-dom-stack-a-comprehensive-methodology-for-the-automatic-xs-leak-detection-in-web-browsers>
-- Preserved from: https://casa.rub.de/en/research/publications/detail/finding-all-cross-site-needles-in-the-dom-stack-a-comprehensive-methodology-for-the-automatic-xs-leak-detection-in-web-browsers (live) on 2026-08-08
+- Preserved from: https://casa.rub.de/en/research/publications/detail/finding-all-cross-site-needles-in-the-dom-stack-a-comprehensive-methodology-for-the-automatic-xs-leak-detection-in-web-browsers (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2
 tags: [article, webseclist-reference, blog-kotowicz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:05:11+00:00"
+  at: "2026-08-10T15:04:41+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/02/chrome-addons-hacking-want-xss-on.html"
@@ -22,7 +22,7 @@ canonical_url: "https://web.archive.org/web/20171003023224/http://blog.kotowicz.
 cited_by:
   - "2012.md:7"
 commit: ""
-content_sha256: 1650b24d09d0b1794517f5d90b93e7d554fe8403dab3c68a225471af7c4beeb9
+content_sha256: 5cc6c7cb0d23aacefc772e5cf1776540afb6cd9397ba137bd3bf41194f7e6ec8
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.n
 published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
-raw_sha256: ad9d39fa33929b8b72243050e737a2e3d33eaf41bb09e21b27a8b7a4b18c6c37
+raw_sha256: 01b7e0b521c5e4738b4b321fc0f3d8652238e202e1f5bebb49f340cec7b51b4c
 retrieved_from: "https://web.archive.org/web/20171003023224/http://blog.kotowicz.net/2012/02/chrome-addons-hacking-want-xss-on.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:05:11+00:00"
+retrieved_utc: "2026-08-10T15:04:41+00:00"
 slug: blog-kotowicz-net-chrome-addons-hacking-want-xss-google-com
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/02/chrome-addons-hacking-want-xss-on.html>
 - Current location: <https://web.archive.org/web/20171003023224/http://blog.kotowicz.net/2012/02/chrome-addons-hacking-want-xss-on.html>
-- Preserved from: https://web.archive.org/web/20171003023224/http://blog.kotowicz.net/2012/02/chrome-addons-hacking-want-xss-on.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20171003023224/http://blog.kotowicz.net/2012/02/chrome-addons-hacking-want-xss-on.html (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 
@@ -73,7 +73,6 @@ For a few days now I'm checking various Chrome extensions code looking for vulne
  Chrome extensions can alter the contents of a webpage you're navigating (if they have the permission for the URL). In web security, what is the worst thing you might do when altering HTML document on-the-fly? Of course, [XSS](https://web.archive.org/web/20171003023224/http://en.wikipedia.org/wiki/Cross-site_scripting). Even if the page itself is totally safe from XSS, an addon might introduce it (it's similar to just entering javascript:code()in address bar) and the page cannot possibly defend from it ([more or less](https://web.archive.org/web/20171003023224/http://blog.kotowicz.net/2011/10/sad-state-of-dom-security-or-how-we-all.html)).
 
  Google documentation about Chrome extensions [warns about this](https://web.archive.org/web/20171003023224/http://code.google.com/chrome/extensions/content_scripts.html#security-considerations) exact threat. But, as it turns out, seeing is believing, so there you go. Let me tell you about some minor extension (196 users as of now, which is the only reason why I'm 0daying now) that allowed me to XSS Google.
- 
 
 ##  Meet Linkify
 

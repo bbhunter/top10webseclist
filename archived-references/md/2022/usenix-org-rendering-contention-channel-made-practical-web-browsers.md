@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/wu-sh
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:49+00:00"
+  at: "2026-08-10T16:05:14+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/wu-shujiang"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2022.md:64"
+  - "2022.md:62"
 commit: ""
 content_sha256: 9dc1bd438c106ad5372715ae97b8db352c7f6d86c540e19a29b73b362665d9bc
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity22/presentation/w
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: d3abc7353b26a2b66e0b82612800d3ef97d34caa91d6bf76b2c5874c37affefb
+raw_sha256: a04896c7dd367a2f21a296ad3323443d11902e20af1e944e5c2ec0610cdab7d5
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity22/presentation/wu-shujiang"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:49+00:00"
+retrieved_utc: "2026-08-10T16:05:14+00:00"
 slug: usenix-org-rendering-contention-channel-made-practical-web-browsers
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity22/presentation/wu-shujiang>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/wu-shujiang (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/wu-shujiang (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

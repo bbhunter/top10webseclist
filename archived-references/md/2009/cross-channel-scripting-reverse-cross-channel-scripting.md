@@ -5,9 +5,9 @@ resource: "https://www.blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Boji
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:39+00:00"
+  at: "2026-08-10T15:03:32+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf"
@@ -18,7 +18,7 @@ also_at: []
 authors: []
 canonical_url: "https://blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf"
 cited_by:
-  - "2009.md:108"
+  - "2009.md:103"
 commit: ""
 content_sha256: ca338ddfb9cffadc92dff2081f8f01541b7d4c239fa97735ca46f217b01669e3
 depth: full
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: ee9b7a0974b5a61921bf700b368a77856027ae01e54703e0384172c22efc13a4
 retrieved_from: "https://blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:39+00:00"
+retrieved_utc: "2026-08-10T15:03:32+00:00"
 slug: cross-channel-scripting-reverse-cross-channel-scripting
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf>
 - Current location: <https://blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf>
-- Preserved from: https://blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf (live) on 2026-08-08
+- Preserved from: https://blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

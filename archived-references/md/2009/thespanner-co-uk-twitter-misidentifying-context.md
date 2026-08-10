@@ -5,9 +5,9 @@ resource: "http://www.thespanner.co.uk/2009/11/23/twitter-misidentifying-context
 tags: [article, webseclist-reference, en, thespanner-co-uk]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:46:04+00:00"
+  at: "2026-08-10T16:02:09+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/11/23/twitter-misidentifying-context/"
@@ -30,10 +30,10 @@ original_url: "http://www.thespanner.co.uk/2009/11/23/twitter-misidentifying-con
 published: ""
 publisher: thespanner.co.uk
 publisher_english: ""
-raw_sha256: 303781ca02d2940bb81ce2ee921c388a178d215071c0227f5e9510d1fd83badf
+raw_sha256: b3405ed391dec07c7e83d449bb9ce353959f397edfb808bf58dfd5a8f51a54fc
 retrieved_from: "https://thespanner.co.uk/2009/11/23/twitter-misidentifying-context"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:46:04+00:00"
+retrieved_utc: "2026-08-10T16:02:09+00:00"
 slug: thespanner-co-uk-twitter-misidentifying-context
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/11/23/twitter-misidentifying-context/>
 - Current location: <https://thespanner.co.uk/2009/11/23/twitter-misidentifying-context>
-- Preserved from: https://thespanner.co.uk/2009/11/23/twitter-misidentifying-context (live) on 2026-08-09
+- Preserved from: https://thespanner.co.uk/2009/11/23/twitter-misidentifying-context (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

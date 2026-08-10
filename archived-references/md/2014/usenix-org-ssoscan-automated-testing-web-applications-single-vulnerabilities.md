@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:58+00:00"
+  at: "2026-08-10T16:04:22+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/zhou"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2014.md:79"
+  - "2014.md:74"
 commit: ""
 content_sha256: 5f4136c84833508da0b31b901c25e40dc3d47ede6252751c118b8a9fcc151f3a
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity14/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 2f9a83ee6399e1318a627539fc116a838c9e1ec643295c9cad5d6d3555378a75
+raw_sha256: e657262449d88fd2f8af57fcf6033cf8419898eff48b800bd905529326ed9179
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/zhou"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:58+00:00"
+retrieved_utc: "2026-08-10T16:04:22+00:00"
 slug: usenix-org-ssoscan-automated-testing-web-applications-single-vulnerabilities
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/zhou>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/zhou (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/zhou (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

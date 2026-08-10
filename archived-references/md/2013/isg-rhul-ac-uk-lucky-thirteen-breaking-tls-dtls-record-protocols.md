@@ -5,9 +5,9 @@ resource: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/t
 tags: [article, webseclist-reference, en, isg-rhul-ac-uk]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:31:00+00:00"
+  at: "2026-08-10T15:29:43+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/Lucky13.html"
@@ -22,7 +22,7 @@ canonical_url: "http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac
 cited_by:
   - "2013.md:8"
 commit: ""
-content_sha256: 75df4b7aabe5687baf5db301d09109ae1c67c0890fd2a152137ba6c19a5349b8
+content_sha256: 50276b00e591b43a29bd2b23f0fd5ba85728d230261a1df9e0e22b8bf84811a2
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.
 published: ""
 publisher: isg.rhul.ac.uk
 publisher_english: ""
-raw_sha256: 9e56deac2a784e0271018ca03a4db69d195f858cef44abe311e31815196f40d5
+raw_sha256: abc11738aa97bec76138b0d76ee333f222a6f108c7a76229574e374b50a9b5a8
 retrieved_from: "http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/Lucky13.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:31:00+00:00"
+retrieved_utc: "2026-08-10T15:29:43+00:00"
 slug: isg-rhul-ac-uk-lucky-thirteen-breaking-tls-dtls-record-protocols
 snapshot: 20160507023636
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/Lucky13.html>
 - Current location: <http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/Lucky13.html>
-- Preserved from: http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/Lucky13.html (live) on 2026-08-09
+- Preserved from: http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/Lucky13.html (live) on 2026-08-10
 - Capture timestamp: 20160507023636
 - Licence: unknown
 
@@ -68,21 +68,15 @@ Lucky Thirteen: Breaking the TLS and DTLS Record Protocols
 
 The Wayback Machine - http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk:80/tls/Lucky13.html
 
- 
-
 ## Introduction:
 
  **This page is about the Lucky 13 attack on CBC-mode encryption in TLS. For details on the security of RC4 encryption in TLS, click [here.](http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/index.html)**
 
  The Transport Layer Security (TLS) protocol aims to provide confidentiality and integrity of data in transit across untrusted networks like the Internet. It is widely used to secure web traffic and e-commerce transactions on the Internet. Datagram TLS (DTLS) is a variant of TLS that is growing in importance. We have found new attacks against TLS and DTLS that allow a Man-in-the-Middle attacker to recover plaintext from a TLS/DTLS connection when CBC-mode encryption is used. The attacks arise from a flaw in the TLS specification rather than as a bug in specific implementations. We have carried out experiments to demonstrate the feasibility of the attacks against the OpenSSL and GnuTLS implementations of TLS, and we have studied the source code of other implementations to determine whether they are likely to be vulnerable. There are effective countermeasures against our attacks and we have worked with a number of TLS and DTLS software developers to prepare patches and security advisories.
 
- 
-
 ## Who are we?
 
  The team behind this research comprises Nadhem AlFardan and [ Kenny Paterson](http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/%7Ekp). Nadhem is a PhD student in the [Information Security Group](http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/) at [Royal Holloway, University of London](http://web.archive.org/web/20160526000934/http://www.rhul.ac.uk/). Kenny is a Professor of Information Security and an EPSRC Leadership Fellow in the Information Security Group. We have previous experience in analysing secure network protocols, including IPsec, SSH, SSL/TLS and DTLS.
-
- 
 
 ## What is affected?
 
@@ -98,8 +92,6 @@ All TLS and DTLS ciphersuites which include CBC-mode encryption are potentially 
 
 We have tested our attacks against OpenSSL and GnuTLS. For OpenSSL, a full plaintext recovery attack is possible. For GnuTLS, a partial plaintext recovery attack is possible, recovering up to 4 bits of the last byte in any block of plaintext. We have examined the source code of the NSS, PolarSSL, yaSSL, BouncyCastle and OpenJDK implementations of TLS. They are all potentially vulnerable to our attacks. We have not studied any closed-source implementations of TLS.
 
- 
-
 ## How severe are the attacks?
 
 We have discovered a variety of attacks, each having different complexity and severity. For TLS, our attacks are multi-session attacks, which means that we require the target plaintext to be repeatedly sent in the same position in the plaintext stream in multiple TLS sessions. The attacks involve detecting small differences in the time at which TLS error messages appear on the network in response to attacker-generated ciphertexts. Because of network jitter and other effects, the times observed by the attacker are noisy, and multiple samples of each time are needed to make the attacks reliable. In their simplest form, our attacks can reliably recover a complete block of TLS-encrypted plaintext using about 223 TLS sessions, assuming the attacker is located on the same LAN as the machine being attacked and HMAC-SHA1 is used as TLS's MAC algorithm. This can be reduced to 219 TLS sessions if the plaintext is known to be base64 encoded. This can be further reduced to 213 sessions per byte if a byte of plaintext in one of the last two positions in a block is already known. The attack complexities are different for different MAC algorithms. Further details can be found in our [research paper](http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/TLStiming.pdf).
@@ -107,8 +99,6 @@ We have discovered a variety of attacks, each having different complexity and se
 The sessions needed for our attacks on TLS can be generated in various ways. The attacks cause the TLS session to be terminated, and some applications running over TLS automatically reconnect and retransmit a cookie or password. In a web environment, the sessions may also be generated by client-side malware, in a similar way to the BEAST attack. Unlike BEAST, no exploit is needed to bypass the same origin policy in the web browser, since the attacker does not require the ability to inject plaintext blocks into the TLS session. And, with the BEAST-style enhancements, the attacker no longer needs to know one out of two bytes of plaintext at the end of the block, so that full plaintext recovery of the full base64 encoded plaintext is possible using 213 sessions per byte.
 
 For DTLS, the attacks can be carried out in a single session, and known amplification techniques can be used to boost the timing signals relative to the noise. (Further details of these techniques can be found in [our NDSS12 paper](http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/%7Ekp/dtls.pdf).) The attacks are fully practical for DTLS. For further details, see the [research paper](http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/TLStiming.pdf).
-
- 
 
 ##  How does this work relate to known attacks, like BEAST and CRIME?
 
@@ -126,13 +116,9 @@ The attacks are quite different from BEAST and CRIME. BEAST exploits the inadvis
 
 At a high level, the attacks can be seen as an advanced form of padding oracle attack. In more detail, the attacks rely on the fact that, for certain carefully chosen message lengths and when the HMAC-SHA1 MAC algorithm is used, then TLS messages containing at least two bytes of correct padding will be processed slightly faster than TLS messages containing one byte of correct padding or padding that is incorrectly formatted. This is because of a fortuitous alignment of TLS header bytes, plaintext bytes and MAC tag bytes with the block cipher's block boundary and the hash compression function's block boundary. The timing difference corresponds to the time taken for a single hash function compression function evaluation, on the order of a few hundred clock cycles on a modern processor. This timing difference is detected over the network in our attack, by timing the arrival of TLS error messages. By repeating the attack sufficiently often and using careful statistical processing, the noise arising from network jitter and other sources can be overcome and the different padding conditions can be differentiated from one another. Thus an attacker can distinguish messages containing at least two bytes of correct padding from all other patterns. At this point, a variant of the standard padding oracle attack can be carried out. For further details, please see our [research paper](http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/TLStiming.pdf).
 
- 
-
 ## Why are the attacks called "Lucky Thirteen"?
 
 In Western culture, 13 is considered an unlucky number. However, the fact that the TLS MAC calculation includes 13 bytes of header information (5 bytes of TLS header plus 8 bytes of TLS sequence number) is, in part, what makes the attacks possible. So, in the context of our attacks, 13 is lucky - from the attacker's perspective at least. This is what passes for humour amongst cryptographers.
-
- 
 
 ## What are the countermeasures?
 
@@ -142,8 +128,6 @@ There are several possible countermeasures against our attacks, some of which ar
 - **Switch to using RC4 ciphersuites.** This should only be seen as a temporary measure, since RC4 has significant cryptographic weaknesses when it is used in TLS. This option is not available for DTLS.
 - **Switch to using AEAD ciphersuites, such as AES-GCM.** Support for AEAD ciphersuites was specified in TLS 1.2, but this version of TLS is not yet widely supported. We hope that our research will spur support for TLS 1.2 in client and server implementations.
 - **Modify TLS's CBC-mode decryption procedure so as to remove the timing side channel** Our [research paper](http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/TLStiming.pdf) describes one method for doing this that is being adopted by some vendors. Other approaches are also possible. However, some care is needed in implementations to completely remove the timing side channel that our attacks exploit. Our recommendation for the long term is to avoid using TLS in CBC-mode and to switch to using AEAD algorithms.
-
- 
 
 ## Patches, advisories and press
 
@@ -176,24 +160,16 @@ Selected press coverage:
 - [Times of India](http://web.archive.org/web/20160526000934/http://timesofindia.indiatimes.com/tech/personal-tech/computing/Why-your-Google-Facebook-accounts-may-be-unsafe/articleshow/18333810.cms)
 - [Wikipedia](http://web.archive.org/web/20160526000934/http://en.wikipedia.org/wiki/Lucky_Thirteen_attack)
 
- 
-
 ## Is it still safe to use TLS?
 
 The attacks can only be carried out by a determined attacker who is located close to the machine being attacked and who can generate sufficient sessions for the attacks. In this sense, the attacks do not pose a significant danger to ordinary users of TLS in their current form. However, it is a truism that attacks only get better with time, and we cannot anticipate what improvements to our attacks, or entirely new attacks, may yet to be discovered. In addition, because of its extremely widespread use, any attack against TLS requires careful evaluation. In this context, it is notable that the leading TLS implementations are deploying countermeasures to our attacks.
-
- 
 
 ## Source code
 
 We have no plans to make the source code generally available. If you are a researcher interested in replicating or extending our work, then please contact us.
 
- 
-
 ## Isn't it irresponsible to publish attacks on such important protocols?
 
 In short, no. Our long-term aim is to ensure that weak encryption options are eliminated from TLS, to the eventual benefit of all users of TLS. Experience shows that the only way to make this happen is to make the attacks as powerful as possible and build proof-of-concept implementations of them. We have expended significant research effort to develop and prototype our attacks. We disclosed the attacks to affected vendors well in advance of making our research public, and we worked with any vendor who requested our assistance in assessing the attacks and implementing countermeasures.
-
- 
 
 ## For more information

@@ -5,9 +5,9 @@ resource: "https://lightningsecurity.io/blog/password-not-provided/"
 tags: [article, webseclist-reference, lightningsecurity-io]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:28+00:00"
+  at: "2026-08-10T15:31:04+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://lightningsecurity.io/blog/password-not-provided/"
@@ -30,10 +30,10 @@ original_url: "https://lightningsecurity.io/blog/password-not-provided/"
 published: ""
 publisher: lightningsecurity.io
 publisher_english: ""
-raw_sha256: 0f8fa57765bc7535bfa16430e970b38dcc388fd78b70a4ed59c37849c5132d91
+raw_sha256: 7fb7c5a28dd7b8e585787500f34964a43d027e5ab3d9c30d11522fb0e5538967
 retrieved_from: "https://lightningsecurity.io/blog/password-not-provided/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:28+00:00"
+retrieved_utc: "2026-08-10T15:31:04+00:00"
 slug: lightningsecurity-io-password-not-provided-compromising-any-flurry-user-bounty
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://lightningsecurity.io/blog/password-not-provided/>
-- Preserved from: https://lightningsecurity.io/blog/password-not-provided/ (live) on 2026-08-09
+- Preserved from: https://lightningsecurity.io/blog/password-not-provided/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

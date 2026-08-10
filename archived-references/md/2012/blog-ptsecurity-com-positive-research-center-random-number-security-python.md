@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://blog.ptsecurity.com
 tags: [article, webseclist-reference, blog-ptsecurity-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:06:35+00:00"
+  at: "2026-08-10T15:06:08+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.ptsecurity.com/2012/10/random-number-security-in-python.html"
@@ -15,14 +15,14 @@ sources:
   - id: canonical
     resource: "https://web.archive.org/web/20171001165020/http://blog.ptsecurity.com/2012/10/random-number-security-in-python.html"
   - id: capture
-    resource: "https://web.archive.org/web/20130527012659/http://blog.ptsecurity.com/2012/10/random-number-security-in-python.html"
+    resource: "https://web.archive.org/web/20170903113359/http://blog.ptsecurity.com/2012/10/random-number-security-in-python.html"
 also_at: []
 authors: []
 canonical_url: "https://web.archive.org/web/20171001165020/http://blog.ptsecurity.com/2012/10/random-number-security-in-python.html"
 cited_by:
   - "2012.md:51"
 commit: ""
-content_sha256: 1c79c5d5ac87ca821742863ab8ae3903b634789c8b6431c2bae07bdd94d5bd56
+content_sha256: c079b7f2e1ccce5ba2ec400958028b07732957091833df785592b2e69e995ef0
 depth: full
 depth_reason: default
 kind: article
@@ -32,12 +32,12 @@ original_url: "https://web.archive.org/web/20170903113359/http://blog.ptsecurity
 published: ""
 publisher: blog.ptsecurity.com
 publisher_english: ""
-raw_sha256: a517f1608b76878fc958de1acd775ab92bdec1b0004553f19a1e022a17d64cd7
+raw_sha256: dd49896b0f96d851dcfbfaf8c7e6ea1566d849ce73b9edecbd1a5dd764d4112b
 retrieved_from: "https://web.archive.org/web/20171001165020/http://blog.ptsecurity.com/2012/10/random-number-security-in-python.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:06:35+00:00"
+retrieved_utc: "2026-08-10T15:06:08+00:00"
 slug: blog-ptsecurity-com-positive-research-center-random-number-security-python
-snapshot: 20130527012659
+snapshot: 20170903113359
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -50,8 +50,8 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.ptsecurity.com/2012/10/random-number-security-in-python.html>
 - Current location: <https://web.archive.org/web/20171001165020/http://blog.ptsecurity.com/2012/10/random-number-security-in-python.html>
-- Preserved from: https://web.archive.org/web/20171001165020/http://blog.ptsecurity.com/2012/10/random-number-security-in-python.html (live) on 2026-08-09
-- Capture timestamp: 20130527012659
+- Preserved from: https://web.archive.org/web/20171001165020/http://blog.ptsecurity.com/2012/10/random-number-security-in-python.html (live) on 2026-08-10
+- Capture timestamp: 20170903113359
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -79,7 +79,6 @@ page going offline. To read the original, follow the link above.
  The [previous article](https://web.archive.org/web/20171001165020/http://blog.ptsecurity.com/2012/08/not-so-random-numbers-take-two.html), relying on the research of George Argyros and Aggelos Kiayias ([3]), explained how to guess random numbers in PHP using **PHPSESSID **and taught various methods to reduce pseudorandom number entropy.
 
  Now we are going to consider PRNG in web applications written in the Python language.
- 
 
 ##  SPECIFIC FEATURES OF PYTHON PRNG
 

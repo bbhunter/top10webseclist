@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20180808171731/https://jankopecky.net/ind
 tags: [article, webseclist-reference, en-US, jankopecky-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:31:03+00:00"
+  at: "2026-08-10T15:29:46+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20180808171731/https://jankopecky.net/index.php/2017/04/18/0day-textplain-considered-harmful/"
@@ -30,10 +30,10 @@ original_url: "https://web.archive.org/web/20180808171731/https://jankopecky.net
 published: ""
 publisher: jankopecky.net
 publisher_english: ""
-raw_sha256: 09e97d7a46624f4988db3d96dfcc4a5e533419605ae9dceadd7820ee942261a8
+raw_sha256: cdd4b4018efce0222790e9cfbdad811c30accd4611c1a30c7144b2dfb55fc3f3
 retrieved_from: "https://web.archive.org/web/20180808171731/https://jankopecky.net/index.php/2017/04/18/0day-textplain-considered-harmful/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:31:03+00:00"
+retrieved_utc: "2026-08-10T15:29:46+00:00"
 slug: jankopecky-net-0day-text-plain-considered-harmful
 snapshot: 20180808171731
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20180808171731/https://jankopecky.net/index.php/2017/04/18/0day-textplain-considered-harmful/>
-- Preserved from: https://web.archive.org/web/20180808171731/https://jankopecky.net/index.php/2017/04/18/0day-textplain-considered-harmful/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20180808171731/https://jankopecky.net/index.php/2017/04/18/0day-textplain-considered-harmful/ (live) on 2026-08-10
 - Capture timestamp: 20180808171731
 - Licence: unknown
 

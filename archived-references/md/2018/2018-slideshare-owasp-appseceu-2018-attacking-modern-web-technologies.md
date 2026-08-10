@@ -5,9 +5,9 @@ resource: "https://www.slideshare.net/fransrosen/attacking-modern-web-technologi
 tags: [slides, webseclist-reference, slideshare]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:19+00:00"
+  at: "2026-08-10T15:59:59+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.slideshare.net/fransrosen/attacking-modern-web-technologies?from_action=save"
@@ -33,10 +33,10 @@ original_url: "https://www.slideshare.net/fransrosen/attacking-modern-web-techno
 published: 2018-07-05
 publisher: Slideshare
 publisher_english: ""
-raw_sha256: 4745278c156d05edacc94a201bfd3bd2c6ab59ffd1688cdbe8a82cd93742a2aa
+raw_sha256: a1dab8c0fcfa5d48480a196f11d640b09546094de451f5d84921648c839cf27d
 retrieved_from: "https://www.slideshare.net/slideshow/attacking-modern-web-technologies/104396723"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:19+00:00"
+retrieved_utc: "2026-08-10T15:59:59+00:00"
 slug: 2018-slideshare-owasp-appseceu-2018-attacking-modern-web-technologies
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: 2018-07-05
 - Original: <https://www.slideshare.net/fransrosen/attacking-modern-web-technologies?from_action=save>
 - Current location: <https://www.slideshare.net/slideshow/attacking-modern-web-technologies/104396723>
-- Preserved from: https://www.slideshare.net/slideshow/attacking-modern-web-technologies/104396723 (live) on 2026-08-09
+- Preserved from: https://www.slideshare.net/slideshow/attacking-modern-web-technologies/104396723 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

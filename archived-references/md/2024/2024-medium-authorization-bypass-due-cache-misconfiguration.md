@@ -5,9 +5,9 @@ resource: "https://rikeshbaniya.medium.com/authorization-bypass-due-to-cache-mis
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:21+00:00"
+  at: "2026-08-10T15:57:14+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://rikeshbaniya.medium.com/authorization-bypass-due-to-cache-misconfiguration-fde8b2332d2d"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:111"
 commit: ""
-content_sha256: a2be749f1dc40f0025ed10b8e77a017a2e3a475230a5d0ccefd52f35d19afd0e
+content_sha256: 00192f7761364e609aee3007e7d635d27756f76ec5349d8e2e39d18f94dcebc7
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://rikeshbaniya.medium.com/authorization-bypass-due-to-cache
 published: 2024-08-21
 publisher: Medium
 publisher_english: ""
-raw_sha256: a9e3254e8bf081f67d9e139e9b43aaa95c87e45d786b780226720c23e176f051
+raw_sha256: 63039b49038c1795708643382121f744dad48b61ec7d05b1862c999c9bbc2c97
 retrieved_from: "https://rikeshbaniya.medium.com/authorization-bypass-due-to-cache-misconfiguration-fde8b2332d2d"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:21+00:00"
+retrieved_utc: "2026-08-10T15:57:14+00:00"
 slug: 2024-medium-authorization-bypass-due-cache-misconfiguration
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2024-08-21
 - Original: <https://rikeshbaniya.medium.com/authorization-bypass-due-to-cache-misconfiguration-fde8b2332d2d>
-- Preserved from: https://rikeshbaniya.medium.com/authorization-bypass-due-to-cache-misconfiguration-fde8b2332d2d (live) on 2026-08-09
+- Preserved from: https://rikeshbaniya.medium.com/authorization-bypass-due-to-cache-misconfiguration-fde8b2332d2d (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

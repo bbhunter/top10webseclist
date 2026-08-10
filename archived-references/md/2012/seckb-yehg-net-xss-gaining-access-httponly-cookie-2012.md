@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012
 tags: [article, webseclist-reference, seckb-yehg-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:40:18+00:00"
+  at: "2026-08-10T15:58:06+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html"
@@ -22,7 +22,7 @@ canonical_url: "https://web.archive.org/web/20170925041004/http://seckb.yehg.net
 cited_by:
   - "2012.md:13"
 commit: ""
-content_sha256: 5ff66980550b706701b6fbeca1329a20a50e53b555d81b87f32cdfc2c4a8e7b5
+content_sha256: d8e769a445075152c132bad278ecdba6e63f36557f7da6fa5e970b772144058a
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/
 published: ""
 publisher: seckb.yehg.net
 publisher_english: ""
-raw_sha256: 0d02b2a420aebe6952bcc7140ff6dd29807a23e81bbb308391cfb04168682cef
+raw_sha256: 749080dd849429b184c0872f2319ea3dfaf8aa2170c27d612b194180557e5172
 retrieved_from: "https://web.archive.org/web/20170925041004/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:40:18+00:00"
+retrieved_utc: "2026-08-10T15:58:06+00:00"
 slug: seckb-yehg-net-xss-gaining-access-httponly-cookie-2012
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html>
 - Current location: <https://web.archive.org/web/20170925041004/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html>
-- Preserved from: https://web.archive.org/web/20170925041004/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20170925041004/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

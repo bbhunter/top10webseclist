@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/bypassing-wafs-with-the-phantom-vers
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:26+00:00"
+  at: "2026-08-10T15:36:30+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/bypassing-wafs-with-the-phantom-version-cookie"
@@ -19,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:24"
 commit: ""
-content_sha256: 21828f2328de4bee36d66a440f80502e18fd8a5edf9fa731905956cb16cf98f6
+content_sha256: 4145f0c1c783c497790e5ee69f666a5518087a2af99a01be299dbcb9da3e310c
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/bypassing-wafs-with-the-phantom-
 published: 2024-12-04
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: d1ddc8a43f23d2ca1be869b82876a9305dc3844392a23ef6292cfd16f2213e82
+raw_sha256: c21c692b5e67bbc56e1d9a8fea157ae5f9746bb1af38e97d449a853c3519f6b1
 retrieved_from: "https://portswigger.net/research/bypassing-wafs-with-the-phantom-version-cookie"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:26+00:00"
+retrieved_utc: "2026-08-10T15:36:30+00:00"
 slug: 2024-portswigger-research-bypassing-wafs-phantom-version-cookie
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2024-12-04
 - Original: <https://portswigger.net/research/bypassing-wafs-with-the-phantom-version-cookie>
-- Preserved from: https://portswigger.net/research/bypassing-wafs-with-the-phantom-version-cookie (live) on 2026-08-09
+- Preserved from: https://portswigger.net/research/bypassing-wafs-with-the-phantom-version-cookie (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

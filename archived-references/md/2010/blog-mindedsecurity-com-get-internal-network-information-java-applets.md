@@ -5,9 +5,9 @@ resource: "http://blog.mindedsecurity.com/2010/10/get-internal-network-informati
 tags: [article, webseclist-reference, blog-mindedsecurity-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:06:04+00:00"
+  at: "2026-08-10T15:05:20+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.mindedsecurity.com/2010/10/get-internal-network-information-with.html"
@@ -30,10 +30,10 @@ original_url: "http://blog.mindedsecurity.com/2010/10/get-internal-network-infor
 published: ""
 publisher: blog.mindedsecurity.com
 publisher_english: ""
-raw_sha256: 51d9b86092504493040b1cc2d8d05125b85934cccda72dd02d03949e1e8c08de
+raw_sha256: 4cfc74d308b7664ae3af81812b7c466b4422a431899eb4afa172b760aa01183b
 retrieved_from: "https://blog.mindedsecurity.com/2010/10/get-internal-network-information-with.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:06:04+00:00"
+retrieved_utc: "2026-08-10T15:05:20+00:00"
 slug: blog-mindedsecurity-com-get-internal-network-information-java-applets
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://blog.mindedsecurity.com/2010/10/get-internal-network-information-with.html>
 - Current location: <https://blog.mindedsecurity.com/2010/10/get-internal-network-information-with.html>
-- Preserved from: https://blog.mindedsecurity.com/2010/10/get-internal-network-information-with.html (live) on 2026-08-09
+- Preserved from: https://blog.mindedsecurity.com/2010/10/get-internal-network-information-with.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

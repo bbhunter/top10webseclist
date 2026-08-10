@@ -5,9 +5,9 @@ resource: "https://www.microsoft.com/en-us/research/publication/sidebuster-autom
 tags: [article, webseclist-reference, en, microsoft-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:44+00:00"
+  at: "2026-08-10T15:32:39+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.microsoft.com/en-us/research/publication/sidebuster-automated-detection-and-quantification-of-side-channel-leaks-in-web-application-development/"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2010.md:105"
+  - "2010.md:100"
 commit: ""
 content_sha256: 8fea077b91048b2b8a4f400106295e00998b55b9d7f05b3e371b01a126e0f5b7
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.microsoft.com/en-us/research/publication/sidebuster-a
 published: ""
 publisher: Microsoft Research
 publisher_english: ""
-raw_sha256: 01c4e38bd492b4e0b4e9a98586c14ddb979516c56f7f198f97fcda07e743c302
+raw_sha256: d33ea4f1ef8564c7e5e7ea9b6e37af2b9a41b6d13a94c34d470ae1a099dbb5ab
 retrieved_from: "https://www.microsoft.com/en-us/research/publication/sidebuster-automated-detection-and-quantification-of-side-channel-leaks-in-web-application-development/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:44+00:00"
+retrieved_utc: "2026-08-10T15:32:39+00:00"
 slug: microsoft-research-sidebuster-automated-detection-quantification-development
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.microsoft.com/en-us/research/publication/sidebuster-automated-detection-and-quantification-of-side-channel-leaks-in-web-application-development/>
-- Preserved from: https://www.microsoft.com/en-us/research/publication/sidebuster-automated-detection-and-quantification-of-side-channel-leaks-in-web-application-development/ (live) on 2026-08-08
+- Preserved from: https://www.microsoft.com/en-us/research/publication/sidebuster-automated-detection-and-quantification-of-side-channel-leaks-in-web-application-development/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

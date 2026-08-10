@@ -5,9 +5,9 @@ resource: "https://slcyber.io/assetnote-security-research-center/novel-ssrf-tech
 tags: [article, webseclist-reference, en, searchlight-cyber]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:42:46+00:00"
+  at: "2026-08-10T15:59:26+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://slcyber.io/assetnote-security-research-center/novel-ssrf-technique-involving-http-redirect-loops/"
@@ -24,7 +24,7 @@ canonical_url: "https://slcyber.io/research-center/novel-ssrf-technique-involvin
 cited_by:
   - "2025.md:7"
 commit: ""
-content_sha256: 97abbf418a30ac069499ee288629f17a636dbcd9def8eeaa5bbcbf3c7b13bd1e
+content_sha256: 71a74f5ba83f71444f165e6f3ee4aff11555cfaf7569cc3d1aa12f7362a20598
 depth: full
 depth_reason: default
 kind: article
@@ -34,10 +34,10 @@ original_url: "https://slcyber.io/assetnote-security-research-center/novel-ssrf-
 published: 2025-06-23
 publisher: Searchlight Cyber
 publisher_english: ""
-raw_sha256: 838c17f53914a6ee9a299667ca2e04fcb85aaf391299c65f70dc70c6653aae12
+raw_sha256: 9cf5fa80b0b0ae895e9e794a53990446852b0110e175328b70e381f87a1b3004
 retrieved_from: "https://slcyber.io/research-center/novel-ssrf-technique-involving-http-redirect-loops/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:42:46+00:00"
+retrieved_utc: "2026-08-10T15:59:26+00:00"
 slug: 2025-searchlight-cyber-novel-ssrf-technique-involving-http-redirect-loops-cyber
 snapshot: ""
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: 2025-06-23
 - Original: <https://slcyber.io/assetnote-security-research-center/novel-ssrf-technique-involving-http-redirect-loops/>
 - Current location: <https://slcyber.io/research-center/novel-ssrf-technique-involving-http-redirect-loops/>
-- Preserved from: https://slcyber.io/research-center/novel-ssrf-technique-involving-http-redirect-loops/ (live) on 2026-08-09
+- Preserved from: https://slcyber.io/research-center/novel-ssrf-technique-involving-http-redirect-loops/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

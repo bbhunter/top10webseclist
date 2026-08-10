@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/making-http-header-injection-critica
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:37+00:00"
+  at: "2026-08-10T15:36:49+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/making-http-header-injection-critical-via-response-queue-poisoning"
@@ -19,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2022.md:10"
 commit: ""
-content_sha256: a1a6d825a7a4a494423a45349b5c8ae27f5dd6d774b3cb5d0aeeed1128ade472
+content_sha256: 4be925c1f594a1c7b87fe22836d845cf626829d107685e51270b4ed768a2fa89
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/making-http-header-injection-cri
 published: 2022-09-22
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 613f1fe2b6e7013eea52f171e7a9963ee82d6c8667f1fe04ec10a5f4de5bd566
+raw_sha256: cc7a7a7d579a6018e372048563ac1e36b06bf2a691f625b00569090501f6836c
 retrieved_from: "https://portswigger.net/research/making-http-header-injection-critical-via-response-queue-poisoning"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:37+00:00"
+retrieved_utc: "2026-08-10T15:36:49+00:00"
 slug: 2022-portswigger-research-making-http-header-injection-critical-poisoning
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2022-09-22
 - Original: <https://portswigger.net/research/making-http-header-injection-critical-via-response-queue-poisoning>
-- Preserved from: https://portswigger.net/research/making-http-header-injection-critical-via-response-queue-poisoning (live) on 2026-08-09
+- Preserved from: https://portswigger.net/research/making-http-header-injection-critical-via-response-queue-poisoning (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

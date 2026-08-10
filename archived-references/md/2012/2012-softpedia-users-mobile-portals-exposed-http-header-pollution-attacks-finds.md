@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://news.softpedia.com/
 tags: [article, webseclist-reference, en-us, softpedia]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:37:07+00:00"
+  at: "2026-08-10T15:35:40+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://news.softpedia.com/news/Users-of-Mobile-Portals-Exposed-to-HTTP-Header-Pollution-Attacks-Expert-Finds-293540.shtml"
@@ -36,10 +36,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://news.softpedia.
 published: 2012-09-20
 publisher: softpedia
 publisher_english: ""
-raw_sha256: c9dca3536115cd0d4c1956306f34692cfad864afa5abd83f2edb0779500a17f3
+raw_sha256: 3052de3dd7b23bcabe5b70755235d2c3ff051fffe91b567f653858846713608d
 retrieved_from: "https://web.archive.org/web/20150912105524/http://news.softpedia.com/news/Users-of-Mobile-Portals-Exposed-to-HTTP-Header-Pollution-Attacks-Expert-Finds-293540.shtml"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:37:07+00:00"
+retrieved_utc: "2026-08-10T15:35:40+00:00"
 slug: 2012-softpedia-users-mobile-portals-exposed-http-header-pollution-attacks-finds
 snapshot: 20170903113359
 title_english: ""
@@ -54,7 +54,7 @@ translation_of: ""
 - Published: 2012-09-20
 - Original: <https://web.archive.org/web/20170903113359/http://news.softpedia.com/news/Users-of-Mobile-Portals-Exposed-to-HTTP-Header-Pollution-Attacks-Expert-Finds-293540.shtml>
 - Current location: <https://web.archive.org/web/20150912105524/http://news.softpedia.com/news/Users-of-Mobile-Portals-Exposed-to-HTTP-Header-Pollution-Attacks-Expert-Finds-293540.shtml>
-- Preserved from: https://web.archive.org/web/20150912105524/http://news.softpedia.com/news/Users-of-Mobile-Portals-Exposed-to-HTTP-Header-Pollution-Attacks-Expert-Finds-293540.shtml (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20150912105524/http://news.softpedia.com/news/Users-of-Mobile-Portals-Exposed-to-HTTP-Header-Pollution-Attacks-Expert-Finds-293540.shtml (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

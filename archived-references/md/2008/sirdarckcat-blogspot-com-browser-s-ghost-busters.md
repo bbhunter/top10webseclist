@@ -5,9 +5,9 @@ resource: "https://sirdarckcat.blogspot.com/2008/05/browsers-ghost-busters.html"
 tags: [article, webseclist-reference, sirdarckcat-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:48+00:00"
+  at: "2026-08-10T15:59:17+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://sirdarckcat.blogspot.com/2008/05/browsers-ghost-busters.html"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2008.md:47"
 commit: ""
-content_sha256: 689914fb531ad9c7ba8cdd07972807de5cf546ab2d7a4ff7ad724d6dd995c727
+content_sha256: b6f08d04b2456e6d67bcf3186da5ca1c207cd813a5f4a96310da8f58d4f44952
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://sirdarckcat.blogspot.com/2008/05/browsers-ghost-busters.h
 published: ""
 publisher: sirdarckcat.blogspot.com
 publisher_english: ""
-raw_sha256: b572a2d72553ae05c0f0d0681e05c8d1998343a2606f3c2ad9d10c4685c3209f
+raw_sha256: 47a6693f978be0f2daadc01ef7a93bd8a615bc92fd748192e826a27baacd282e
 retrieved_from: "https://sirdarckcat.blogspot.com/2008/05/browsers-ghost-busters.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:48+00:00"
+retrieved_utc: "2026-08-10T15:59:17+00:00"
 slug: sirdarckcat-blogspot-com-browser-s-ghost-busters
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://sirdarckcat.blogspot.com/2008/05/browsers-ghost-busters.html>
-- Preserved from: https://sirdarckcat.blogspot.com/2008/05/browsers-ghost-busters.html (live) on 2026-08-09
+- Preserved from: https://sirdarckcat.blogspot.com/2008/05/browsers-ghost-busters.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

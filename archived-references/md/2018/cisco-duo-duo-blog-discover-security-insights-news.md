@@ -5,9 +5,9 @@ resource: "https://duo.com/blog/duo-finds-saml-vulnerabilities-affecting-multipl
 tags: [article, webseclist-reference, en, cisco-duo]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:09:57+00:00"
+  at: "2026-08-10T15:09:15+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://duo.com/blog/duo-finds-saml-vulnerabilities-affecting-multiple-implementations"
@@ -23,7 +23,7 @@ canonical_url: "https://duo.com/blog"
 cited_by:
   - "2018.md:32"
 commit: ""
-content_sha256: 458f0ee5da09371c489f57acc0bf25b855eb430063c471ce7d8b5517725971c8
+content_sha256: 92aa52aeecd1a55b346173e40468404ad20b4a99e94abf9307188fbb37bd7f6e
 depth: full
 depth_reason: default
 kind: article
@@ -33,10 +33,10 @@ original_url: "https://duo.com/blog/duo-finds-saml-vulnerabilities-affecting-mul
 published: ""
 publisher: Cisco Duo
 publisher_english: ""
-raw_sha256: 9cc6eac7480987b01c0c7c98ff4cbe48c758909ec5c07227354d60f11881067a
+raw_sha256: 74ed355e4f6cac62ff3ba8c6afdefe757f0229a7c1e1ed30029ebdb4f0c19bb5
 retrieved_from: "https://duo.com/blog"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:09:57+00:00"
+retrieved_utc: "2026-08-10T15:09:15+00:00"
 slug: cisco-duo-duo-blog-discover-security-insights-news
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://duo.com/blog/duo-finds-saml-vulnerabilities-affecting-multiple-implementations>
 - Current location: <https://duo.com/blog>
-- Preserved from: https://duo.com/blog (live) on 2026-08-09
+- Preserved from: https://duo.com/blog (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

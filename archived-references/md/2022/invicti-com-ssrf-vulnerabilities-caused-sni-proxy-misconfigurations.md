@@ -5,9 +5,9 @@ resource: "https://www.invicti.com/blog/web-security/ssrf-vulnerabilities-caused
 tags: [article, webseclist-reference, en, invicti-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:51+00:00"
+  at: "2026-08-10T15:29:27+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.invicti.com/blog/web-security/ssrf-vulnerabilities-caused-by-sni-proxy-misconfigurations/"
@@ -20,7 +20,7 @@ canonical_url: "https://www.invicti.com/blog/web-security/ssrf-vulnerabilities-c
 cited_by:
   - "2022.md:35"
 commit: ""
-content_sha256: 043e664f31ed03b60d59858c924be10d97629d1e1a49cd98cb18de637e792d73
+content_sha256: 50de8fb2343f84b71c0312094d1947ebe88edac79d9e162ecaf26060e62c588a
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: 2c34503aa438cb988cdc661c3fc2e7b89a8e6ade6b539100dab47cdcb665d72e
 retrieved_from: "https://www.invicti.com/blog/web-security/ssrf-vulnerabilities-caused-by-sni-proxy-misconfigurations"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:51+00:00"
+retrieved_utc: "2026-08-10T15:29:27+00:00"
 slug: invicti-com-ssrf-vulnerabilities-caused-sni-proxy-misconfigurations
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.invicti.com/blog/web-security/ssrf-vulnerabilities-caused-by-sni-proxy-misconfigurations/>
 - Current location: <https://www.invicti.com/blog/web-security/ssrf-vulnerabilities-caused-by-sni-proxy-misconfigurations>
-- Preserved from: https://www.invicti.com/blog/web-security/ssrf-vulnerabilities-caused-by-sni-proxy-misconfigurations (live) on 2026-08-09
+- Preserved from: https://www.invicti.com/blog/web-security/ssrf-vulnerabilities-caused-by-sni-proxy-misconfigurations (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unvei
 tags: [slides, webseclist-reference, en, speaker-deck]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:03+00:00"
+  at: "2026-08-10T16:00:39+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unveiling-vulnerabilities-in-websocket-apis"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:27"
 commit: ""
-content_sha256: 1feb8d73299f5dc48d4ac95085725d5762f67240ad338824000cc465f8fd0fbd
+content_sha256: 900bf0dc796eb2800f69a73e47447c0c8d6c82dc9b50182b02df66bebe262efd
 depth: full
 depth_reason: default
 kind: slides
@@ -32,10 +32,10 @@ original_url: "https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-u
 published: 2019-10-25
 publisher: Speaker Deck
 publisher_english: ""
-raw_sha256: 277ee2c99aa0d60ab8a158de7b9ad9fce322dba346badd3fae49e7a3b59cb761
+raw_sha256: ccdf84d253a7682fb7814c533ef4883de6017d15308b2f6cdb4bca7362741de0
 retrieved_from: "https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unveiling-vulnerabilities-in-websocket-apis"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:03+00:00"
+retrieved_utc: "2026-08-10T16:00:39+00:00"
 slug: 2019-speaker-deck-whats-wrong-websocket-apis-unveiling-vulnerabilities-apis
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2019-10-25
 - Original: <https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unveiling-vulnerabilities-in-websocket-apis>
-- Preserved from: https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unveiling-vulnerabilities-in-websocket-apis (live) on 2026-08-09
+- Preserved from: https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unveiling-vulnerabilities-in-websocket-apis (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -130,57 +130,23 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
  [ See All in Programming ](https://speakerdeck.com/c/programming)
 
- [Foundation Models frameworkで画像分析](https://speakerdeck.com/ryodeveloper/foundation-models-image-analysis)
+ [琵琶湖の水は止められてもNet--HTTPのリトライは止められない / You might be able to stop the water flow of Lake Biwa but you can't stop Net::HTTP retries](https://speakerdeck.com/luccafort/you-might-be-able-to-stop-the-water-flow-of-lake-biwa-but-you-cant-stop-net-http-retries)
 
- [ ![Avatar for リョウ](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDMyNTk0LCJwdXIiOiJibG9iX2lkIn19--806658d7bd2e85f6ff20f7169e291c4ed8ca9d4a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/RyoDeveloper.png) ryodeveloper ](https://speakerdeck.com/ryodeveloper)
-
- 1
-
-  570
-
- [PHP Application における Kubernetes 内 gRPC 通信](https://speakerdeck.com/ganchiku/php-application-niokeru-kubernetes-nei-grpc-tong-xin)
-
- [ ![Avatar for Shin Ohno](https://secure.gravatar.com/avatar/9d9d328f9eaf5c5c32df35cdfbf549ac?s=24) ganchiku ](https://speakerdeck.com/ganchiku)
-
- 0
-
-  580
-
- [Built Our Own Background Agent at LayerX](https://speakerdeck.com/layerx/built-our-own-background-agent-at-layerx-number-aidevex-findy)
-
- [ ![Avatar for LayerX](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDI1NzEsInB1ciI6ImJsb2JfaWQifX0=--1279d35afed8acdecd4f8bf29a0512e0c5b8aa19/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/icon.png) layerx ](https://speakerdeck.com/layerx)
+ [ ![Avatar for luccafort](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzM0NzYzLCJwdXIiOiJibG9iX2lkIn19--bba9e4bb1f36172b8ddd875db8283d273044d07a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/2023-logo-compressed.png) luccafort ](https://speakerdeck.com/luccafort)
 
  [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
- 9
-
-  4.9k
-
- [Go言語とトイモデルで学ぶTransformerの気持ち / fukuokago23-transformer](https://speakerdeck.com/monochromegane/fukuokago23-transformer)
-
- [ ![Avatar for monochromegane](https://secure.gravatar.com/avatar/cd3d2cb2dadf5488935fe0ddaea7938a?s=24) monochromegane ](https://speakerdeck.com/monochromegane)
-
  0
 
-  160
+  600
 
- [Welcome to the "Parametricity" 🏙️ − Generic だけど Specific な世界 −](https://speakerdeck.com/guvalif/welcome-to-the-parametricity)
+ [人間の目はかわらない、だからJPEGは30年もつ](https://speakerdeck.com/yuzneri/ren-jian-nomu-hakawaranai-dakarajpegha30nian-motu)
 
- [ ![Avatar for TAKASE Kazuyuki](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTc4NzE3LCJwdXIiOiJibG9iX2lkIn19--7b7109219815a8815b650ec5121cc3e9a88eac54/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/profile-guvalif-voxel-500x500.png) guvalif ](https://speakerdeck.com/guvalif)
+ [ ![Avatar for yuzneri](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTk5Mjk4LCJwdXIiOiJibG9iX2lkIn19--ceb7e5047d49436a51a2b172915a24dc106f8589/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/SDicon.png) yuzneri ](https://speakerdeck.com/yuzneri)
 
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+ 12
 
- 1
-
-  200
-
- [Apache Hive: Toward a Cloud Native Lakehouse](https://speakerdeck.com/okumin/toward-a-cloud-native-lakehouse-english-version)
-
- [ ![Avatar for okumin](https://secure.gravatar.com/avatar/b2c98a18ec9268bdeff1696873995cd8?s=24) okumin ](https://speakerdeck.com/okumin)
-
- 0
-
-  180
+  18k
 
  [AWS CDK を「作」ってみた 〜フルスクラッチで見えた CDK の裏側〜 / aws-cdk-from-scratch](https://speakerdeck.com/gotok365/aws-cdk-from-scratch)
 
@@ -190,13 +156,21 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
   2.8k
 
- [React本体のコードリーディング](https://speakerdeck.com/high_g_engineer/reactben-ti-nokotoriteinku)
+ [仕様書を書く前にハーネスを作る - Agent Native開発は「探索を速く、判定を固く」](https://speakerdeck.com/gotalab555/shi-yang-shu-woshu-kuqian-nihanesuwozuo-ru-agent-nativekai-fa-ha-tan-suo-wosu-ku-pan-ding-wogu-ku)
 
- [ ![Avatar for high-g](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDkwMjkwLCJwdXIiOiJibG9iX2lkIn19--d377d096416c07913860846ab9b699b161b6581d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/fIfGdy87_400x400.jpg) high_g_engineer ](https://speakerdeck.com/high_g_engineer)
+ [ ![Avatar for Gota](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzkwMjM2LCJwdXIiOiJibG9iX2lkIn19--36c11f982f6809374b012fff3ec53b65f0b4c39b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/icon.png) gotalab555 ](https://speakerdeck.com/gotalab555)
 
- 1
+ 4
 
-  140
+  1.6k
+
+ [PHP初心者セッション2026 〜生成AIでは見えない裏側を知る：今だからLAMPを通して仕組みを学ぶ〜](https://speakerdeck.com/kashioka/phpchu-xin-zhe-setusiyon2026-sheng-cheng-aidehajian-enaili-ce-wozhi-ru-jin-dakaralampwotong-siteshi-zu-miwoxue-bu)
+
+ [ ![Avatar for Hideo Kashioka](https://secure.gravatar.com/avatar/267cdf0d184f715349459a0af9e6b0ff?s=24) kashioka ](https://speakerdeck.com/kashioka)
+
+ 0
+
+  860
 
  [FDEが実現するAI駆動経営の現在地](https://speakerdeck.com/gonta/ai-driven-management-enabled-by-fde)
 
@@ -204,145 +178,159 @@ Slides from Hacktivity 2019 conference - [https://hacktivity.com/index.php/prese
 
  2
 
-  260
+  270
 
- [yield再入門 #phpcon](https://speakerdeck.com/o0h/phpcon-2026)
+ [Cloudflare is Agents](https://speakerdeck.com/chimame/cloudflare-is-agents)
 
- [ ![Avatar for hideki kinjyo](https://secure.gravatar.com/avatar/c90bac78c0fb61105cfd8239767f903d?s=24) o0h ](https://speakerdeck.com/o0h)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+ [ ![Avatar for chimame](https://secure.gravatar.com/avatar/52f95e52a6d71b67361ac179fb8405f4?s=24) chimame ](https://speakerdeck.com/chimame)
 
  0
 
-  950
+  140
 
- [2年かけて Deno に DOMMatrix を実装した話 / How I implemented DOMMatrix in Deno over two years](https://speakerdeck.com/petamoriken/how-i-implemented-dommatrix-in-deno-over-two-years)
+ [Laravel Boostに学ぶ、AIにPHPを書かせる技術 〜OSSの実装から蒸留するエージェント制御の王道〜](https://speakerdeck.com/kentaroutakeda/laravel-boostnixue-bu-ainiphpwoshu-kaseruji-shu-ossnoshi-zhuang-karazheng-liu-suruezientozhi-yu-nowang-dao)
 
- [ ![Avatar for petamoriken / 森建](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTMyMzUxLCJwdXIiOiJibG9iX2lkIn19--7e8ea5a0fddf246c4417decb1ee0a0770d865df9/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/moriken_circle.png) petamoriken ](https://speakerdeck.com/petamoriken)
+ [ ![Avatar for 武田 憲太郎](https://secure.gravatar.com/avatar/da5f6aeb65f2675dd9ec5928baf22c56?s=24) kentaroutakeda ](https://speakerdeck.com/kentaroutakeda)
+
+ 3
+
+  670
+
+ [AIが無かった頃の素敵な出会いの話](https://speakerdeck.com/codmoninc/leap-year)
+
+ [ ![Avatar for コドモン開発チーム](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzQ3MzQ3LCJwdXIiOiJibG9iX2lkIn19--3f65a93a09e0a48d5c4da7132a16b2bf2a339846/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/%E3%83%AD%E3%82%B3%E3%82%99%E7%99%BD%E8%83%8C%E6%99%AF.jpg) codmoninc ](https://speakerdeck.com/codmoninc)
+
+ 1
+
+  390
+
+ [これって Effect でできたのでは? / TSKaigi Mashup Kansai #2](https://speakerdeck.com/susisu/tskaigi-mashup-kansai-number-2)
+
+ [ ![Avatar for Susisu](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjUzNTM5LCJwdXIiOiJibG9iX2lkIn19--866bc0f5292297dcf556f0a02491f523e3bf788f/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/icon_abstract.png) susisu ](https://speakerdeck.com/susisu)
+
+ 0
+
+  150
+
+ [【やさしく解説 設計編・中級 #1】一つの車に、運転手は一人 ～ある倉庫システムの事例から～](https://speakerdeck.com/panda728/yasasiku-sekkei-2-number-1)
+
+ [ ![Avatar for HideyukiKitao](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDYxNzYxLCJwdXIiOiJibG9iX2lkIn19--311fd001070ae8fbe7f712b87ca75029a8717c7c/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2ZpbGwiOlsyNCwyNF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--b48c0a77ba540dff89d4e01c944dfca4119c9e28/IMG_3396.jpeg) panda728 ](https://speakerdeck.com/panda728)
+
+ [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
  0
 
   200
 
- [【SRE NEXT 2026 Lunch Session】一人目専任SREの立ち上げを加速する ― AIと進めたオンボーディングで2分を0.04秒にした話](https://speakerdeck.com/pkshadeck/sre-next-2026-lunch-session-ren-mu-zhuan-ren-srenoli-tishang-kewojia-su-suru-aitojin-metaonhoteinkute2fen-wo0-dot-04miao-nisitahua)
+ [jsmini JavaScript Engine を作ってみた話](https://speakerdeck.com/yosuke_furukawa/jsmini-javascript-engine-wozuo-tutemitahua)
 
- [ ![Avatar for PKSHA Technology（パークシャテクノロジー）](https://secure.gravatar.com/avatar/03020c2b2466b17753b90cd1feefe86c?s=24) pkshadeck ](https://speakerdeck.com/pkshadeck)
+ [ ![Avatar for Yosuke Furukawa](https://secure.gravatar.com/avatar/d76231a2114896dfcc7b79ac69558b79?s=24) yosuke_furukawa ](https://speakerdeck.com/yosuke_furukawa)
 
  [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
 
  0
 
-  3.5k
+  290
 
 ## Featured
 
  [ See All Featured ](https://speakerdeck.com/p/featured)
 
- [Conquering PDFs: document understanding beyond plain text](https://speakerdeck.com/inesmontani/conquering-pdfs-document-understanding-beyond-plain-text)
+ [BBQ](https://speakerdeck.com/matthewcrist/bbq)
 
- [ ![Avatar for Ines Montani](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjkwMDgsInB1ciI6ImJsb2JfaWQifX0=--32562a32b00d456c251338e2bbab3b3a7c1775bf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/profile_ines.jpg) inesmontani ](https://speakerdeck.com/inesmontani)
+ [ ![Avatar for Matthew Crist](https://secure.gravatar.com/avatar/761be20b5ebd271008bcee1244fc5b52?s=24) matthewcrist ](https://speakerdeck.com/matthewcrist)
 
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+ 89
 
- 4
+  10k
 
-  2.9k
+ [The Myth of the Modular Monolith - Day 2 Keynote - Rails World 2024](https://speakerdeck.com/eileencodes/the-myth-of-the-modular-monolith-day-2-keynote-rails-world-2024)
 
- [Hiding What from Whom? A Critical Review of the History of Programming languages for Music](https://speakerdeck.com/tomoyanonymous/hiding-what-from-whom-a-critical-review-of-the-history-of-programming-languages-for-music)
+ [ ![Avatar for Eileen M. Uchitelle](https://secure.gravatar.com/avatar/c44e1f7e22c3f23cff7bc130871047ef?s=24) eileencodes ](https://speakerdeck.com/eileencodes)
 
- [ ![Avatar for Tomoya Matsuura](https://secure.gravatar.com/avatar/24b82e535177c6be997ca4ec43d8df6b?s=24) tomoyanonymous ](https://speakerdeck.com/tomoyanonymous)
+ 28
 
- 3
+  3.6k
 
-  1.1k
+ [Have SEOs Ruined the Internet? - User Awareness of SEO in 2025](https://speakerdeck.com/akashhashmi/have-seos-ruined-the-internet-user-awareness-of-seo-in-2025)
 
- [jQuery: Nuts, Bolts and Bling](https://speakerdeck.com/dougneiner/jquery-nuts-bolts-and-bling)
+ [ ![Avatar for Akash Hashmi](https://secure.gravatar.com/avatar/29692d1f7c44ff105e34864118235415?s=24) akashhashmi ](https://speakerdeck.com/akashhashmi)
 
- [ ![Avatar for Doug Neiner](https://secure.gravatar.com/avatar/9cde37f47e4a800ea081ea42de8d749a?s=24) dougneiner ](https://speakerdeck.com/dougneiner)
+ 0
 
- 66
+  410
 
-  8.5k
+ [Responsive Adventures: Dirty Tricks From The Dark Corners of Front-End](https://speakerdeck.com/smashingmag/responsive-adventures-dirty-tricks-from-the-dark-corners-of-front-end)
 
- [Speed Design](https://speakerdeck.com/sergeychernyshev/speed-design)
+ [ ![Avatar for Vitaly Friedman](https://secure.gravatar.com/avatar/b3d6434763caa0ef5dc4b792662c49f7?s=24) smashingmag ](https://speakerdeck.com/smashingmag)
 
- [ ![Avatar for Sergey Chernyshev](https://secure.gravatar.com/avatar/1e2ff8ee6ac0e790883b1cdc420f158d?s=24) sergeychernyshev ](https://speakerdeck.com/sergeychernyshev)
+ 254
 
- 33
+  22k
 
-  2k
-
- [We Analyzed 250 Million AI Search Results: Here's What I Found](https://speakerdeck.com/joshbly/we-analyzed-250-million-ai-search-results-heres-what-i-found)
-
- [ ![Avatar for Josh Blyskal](https://secure.gravatar.com/avatar/466d1e24bc0d3058fb53bc890043c3e7?s=24) joshbly ](https://speakerdeck.com/joshbly)
-
- 1
-
-  1.7k
-
- [Keith and Marios Guide to Fast Websites](https://speakerdeck.com/keithpitt/keith-and-marios-guide-to-fast-websites)
-
- [ ![Avatar for Keith Pitt](https://secure.gravatar.com/avatar/e14f55d3f939977cecbf51b64ff6f861?s=24) keithpitt ](https://speakerdeck.com/keithpitt)
-
- 413
-
-  23k
-
- [Lessons Learnt from Crawling 1000+ Websites](https://speakerdeck.com/charlesmeaden/lessons-learnt-from-crawling-1000-plus-websites)
-
- [ ![Avatar for Charles Meaden](https://secure.gravatar.com/avatar/ce0e73fa718d3c8e32bf992761c1968e?s=24) charlesmeaden ](https://speakerdeck.com/charlesmeaden)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
-
- 1
-
-  1.5k
-
- [Paper Plane](https://speakerdeck.com/katiecoart/paper-plane)
-
- [ ![Avatar for Katie Cordina Lindsey](https://secure.gravatar.com/avatar/92f506fce3a633eabc7d2018eb13739f?s=24) katiecoart ](https://speakerdeck.com/katiecoart)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
-
- 2
-
-  52k
-
- [Bootstrapping a Software Product](https://speakerdeck.com/garrettdimon/bootstrapping-a-software-product)
-
- [ ![Avatar for Garrett Dimon](https://secure.gravatar.com/avatar/a9179349dd2bdc67f377719f56d85656?s=24) garrettdimon ](https://speakerdeck.com/garrettdimon)
-
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
-
- 307
-
-  120k
-
- [Reality Check: Gamification 10 Years Later](https://speakerdeck.com/codingconduct/reality-check-gamification-10-years-later)
+ [Ruling the World: When Life Gets Gamed](https://speakerdeck.com/codingconduct/ruling-the-world-when-life-gets-gamed)
 
  [ ![Avatar for Sebastian Deterding](https://secure.gravatar.com/avatar/9f5f8d89c1c298beb2e5d3b1e41941e2?s=24) codingconduct ](https://speakerdeck.com/codingconduct)
 
  0
 
-  2.2k
+  290
 
- [Efficient Content Optimization with Google Search Console & Apps Script](https://speakerdeck.com/katarinadahlin/wtsfest-berlin-25)
+ [The Cost Of JavaScript in 2023](https://speakerdeck.com/addyosmani/the-cost-of-javascript-in-2023)
 
- [ ![Avatar for Katarina Dahlin](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjAwNTg5LCJwdXIiOiJibG9iX2lkIn19--24cb98b2197cd4cdeb5e3ae1f94b4c1a162cd1bf/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--924ecf2834d46e1be7416cc0ef8ce19d4bbdebbf/Avainsana-analyysi%20thumbnails.png) katarinadahlin ](https://speakerdeck.com/katarinadahlin)
+ [ ![Avatar for Addy Osmani](https://secure.gravatar.com/avatar/96270e4c3e5e9806cf7245475c00b275?s=24) addyosmani ](https://speakerdeck.com/addyosmani)
 
- [PRO](https://speakerdeck.com/pro?utm_campaign=PRO&utm_medium=web&utm_source=user_pro_badge)
+ 55
+
+  10k
+
+ [コードの90%をAIが書く世界で何が待っているのか / What awaits us in a world where 90% of the code is written by AI](https://speakerdeck.com/rkaga/what-awaits-us-in-a-world-where-90-percent-of-the-code-is-written-by-ai)
+
+ [ ![Avatar for r-kagaya](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTk0MjI4LCJwdXIiOiJibG9iX2lkIn19--1d94fa4c6a5eceb2447fdd6c94e46df3dbd85301/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/69yLDu7R_400x400.jpg) rkaga ](https://speakerdeck.com/rkaga)
+
+ 63
+
+  45k
+
+ [Stop Working from a Prison Cell](https://speakerdeck.com/hatefulcrawdad/stop-working-from-a-prison-cell)
+
+ [ ![Avatar for Chris Michel](https://secure.gravatar.com/avatar/c1daf20e5c49ff910745198ef9869ac2?s=24) hatefulcrawdad ](https://speakerdeck.com/hatefulcrawdad)
+
+ 274
+
+  21k
+
+ [The Illustrated Guide to Node.js - THAT Conference 2024](https://speakerdeck.com/reverentgeek/the-illustrated-guide-to-node-dot-js-that-conference-2024)
+
+ [ ![Avatar for David Neal](https://secure.gravatar.com/avatar/3ab1249be442027903e1180025340b3f?s=24) reverentgeek ](https://speakerdeck.com/reverentgeek)
 
  1
 
-  770
+  420
 
- [Technical Leadership for Architectural Decision Making](https://speakerdeck.com/baasie/technical-leadership-for-architectural-decision-making)
+ [ピンチをチャンスに：未来をつくるプロダクトロードマップ #pmconf2020](https://speakerdeck.com/aki_iinuma/pintiwotiyansuni-wei-lai-wotukurupurodakutorodomatupu-number-pmconf2020)
 
- [ ![Avatar for Kenny Baas-Schwegler](https://speakerdeck.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjUwMDA5LCJwdXIiOiJibG9iX2lkIn19--11a66eb48413d60f9ccb6c1e12df4a3d45b184fe/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzI0LDI0XX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--dcc78b2290da0fc746e1bfe817edcd08056147b6/kenny_small_round.jpg) baasie ](https://speakerdeck.com/baasie)
+ [ ![Avatar for Aki / @LoveIdahoBurger](https://secure.gravatar.com/avatar/e425fe9f170efa0dfaf8ab69d7107418?s=24) aki_iinuma ](https://speakerdeck.com/aki_iinuma)
 
- 3
+ 128
 
-  460
+  56k
+
+ [Rails Girls Zürich Keynote](https://speakerdeck.com/gr2m/rails-girls-zurich-keynote)
+
+ [ ![Avatar for Gregor Martynus](https://secure.gravatar.com/avatar/24fc194843a71f10949be18d5a692682?s=24) gr2m ](https://speakerdeck.com/gr2m)
+
+ 96
+
+  14k
+
+ [Evolving SEO for Evolving Search Engines](https://speakerdeck.com/ryanjones/evolving-seo-for-evolving-search-engines)
+
+ [ ![Avatar for Ryan Jones](https://secure.gravatar.com/avatar/2bf27e1a5632db8aba77510c78aaa9a2?s=24) ryanjones ](https://speakerdeck.com/ryanjones)
+
+ 0
+
+  250
 
 ## Transcript
 

@@ -5,9 +5,9 @@ resource: "https://archives.iw3c2.org/www2013/proceedings/p435.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:49:54+00:00"
+  at: "2026-08-10T15:01:31+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://archives.iw3c2.org/www2013/proceedings/p435.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2013.md:60"
+  - "2013.md:55"
 commit: ""
 content_sha256: fbd5dd94efb6349df33a5c5958aa015198a9864f379d86ef2c1a174ffe617e49
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 37108aa4cc470eae1315913670006b35e1d7f033371aa3f4153ff642ba5b8d74
 retrieved_from: "https://archives.iw3c2.org/www2013/proceedings/p435.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:49:54+00:00"
+retrieved_utc: "2026-08-10T15:01:31+00:00"
 slug: when-tolerance-causes-weakness-case-injection-friendly-browsers
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://archives.iw3c2.org/www2013/proceedings/p435.pdf>
-- Preserved from: https://archives.iw3c2.org/www2013/proceedings/p435.pdf (live) on 2026-08-08
+- Preserved from: https://archives.iw3c2.org/www2013/proceedings/p435.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

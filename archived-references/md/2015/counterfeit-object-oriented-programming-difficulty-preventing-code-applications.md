@@ -5,9 +5,9 @@ resource: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a745.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:52:54+00:00"
+  at: "2026-08-10T15:28:23+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a745.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2015.md:68"
+  - "2015.md:64"
 commit: ""
 content_sha256: 4c2400cc4a64212101576c3bf602e2a510c789b33ea6083498fabe2880083c2e
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: ccc4c9e312cc6cb7af726d0db9814ae7a52cea173375b5a9ed0122e0f652a3be
 retrieved_from: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a745.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:52:54+00:00"
+retrieved_utc: "2026-08-10T15:28:23+00:00"
 slug: counterfeit-object-oriented-programming-difficulty-preventing-code-applications
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2015/papers-archived/6949a745.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2015/papers-archived/6949a745.pdf (live) on 2026-08-08
+- Preserved from: https://www.ieee-security.org/TC/SP2015/papers-archived/6949a745.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

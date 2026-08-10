@@ -5,9 +5,9 @@ resource: "https://www.ieee-security.org/TC/SP2014/papers/UsingFrankencertsforAu
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:52:47+00:00"
+  at: "2026-08-10T15:28:16+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2014/papers/UsingFrankencertsforAutomatedAdversarialTestingofCertificateValidationinSSL_s_TLSImplementations.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2014.md:67"
+  - "2014.md:62"
 commit: ""
 content_sha256: 480c1c45f1c56d3d223127da3e4e7db1181113e65b4eaa85854916bb257102e8
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 923b08580469dd0367cdb7268566784da9d8b46d12b8cbe68260b15a50fb2d0c
 retrieved_from: "https://www.ieee-security.org/TC/SP2014/papers/UsingFrankencertsforAutomatedAdversarialTestingofCertificateValidationinSSL_s_TLSImplementations.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:52:47+00:00"
+retrieved_utc: "2026-08-10T15:28:16+00:00"
 slug: using-frankencerts-automated-adversarial-testing-certificate-implementations
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2014/papers/UsingFrankencertsforAutomatedAdversarialTestingofCertificateValidationinSSL_s_TLSImplementations.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2014/papers/UsingFrankencertsforAutomatedAdversarialTestingofCertificateValidationinSSL_s_TLSImplementations.pdf (live) on 2026-08-08
+- Preserved from: https://www.ieee-security.org/TC/SP2014/papers/UsingFrankencertsforAutomatedAdversarialTestingofCertificateValidationinSSL_s_TLSImplementations.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

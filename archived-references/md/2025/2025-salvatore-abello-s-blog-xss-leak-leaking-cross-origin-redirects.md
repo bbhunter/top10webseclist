@@ -5,9 +5,9 @@ resource: "https://blog.babelo.xyz/posts/cross-site-subdomain-leak/"
 tags: [article, webseclist-reference, salvatore-abello-s-blog]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:32+00:00"
+  at: "2026-08-10T15:04:07+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blog.babelo.xyz/posts/cross-site-subdomain-leak/"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2025.md:12"
 commit: ""
-content_sha256: 0d9f1e0ac033472e4290a0488706070ccfffd1bc7508c9706de491c5ef0170e7
+content_sha256: cfc330eb47a802d0533428f0d186b63026fd7b275ae29356b2b283f1f9c34776
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://blog.babelo.xyz/posts/cross-site-subdomain-leak/"
 published: 2025-09-18
 publisher: "Salvatore Abello's Blog"
 publisher_english: ""
-raw_sha256: 274b44c011c7b83ddfe009237ab8faa00860d8d57b1c8967d1fb25c44c1ba894
+raw_sha256: 8f4791aa38530c9715d4779a157ac85ee1a127db0761c5b339e860ac3f7e2642
 retrieved_from: "https://blog.babelo.xyz/posts/cross-site-subdomain-leak/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:32+00:00"
+retrieved_utc: "2026-08-10T15:04:07+00:00"
 slug: 2025-salvatore-abello-s-blog-xss-leak-leaking-cross-origin-redirects
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2025-09-18
 - Original: <https://blog.babelo.xyz/posts/cross-site-subdomain-leak/>
-- Preserved from: https://blog.babelo.xyz/posts/cross-site-subdomain-leak/ (live) on 2026-08-09
+- Preserved from: https://blog.babelo.xyz/posts/cross-site-subdomain-leak/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-c
 tags: [article, webseclist-reference, en, bishop-fox]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:02:33+00:00"
+  at: "2026-08-10T15:03:07+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-controls"
@@ -20,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2021.md:37"
 commit: ""
-content_sha256: b5842bcfa54bf46f336b1d2cdc59518176bba4112af6083ae88ad95c0ac4c517
+content_sha256: b018fd3ade038f2bc4f179c63e0835f09deaac362affff963d6510749b9de30b
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-securi
 published: ""
 publisher: Bishop Fox
 publisher_english: ""
-raw_sha256: fd83fba4566e4f75bdb4ccf6d3772921127e00afd1b8ffa1c71936983e16090b
+raw_sha256: 651c30ba6e85c0a21693beaa8b65842bf7fe0973839a98a4ffd652ffef9fdb5e
 retrieved_from: "https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-controls"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:02:33+00:00"
+retrieved_utc: "2026-08-10T15:03:07+00:00"
 slug: bishop-fox-lexss-bypassing-lexical-parsing-security-controls
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-controls>
-- Preserved from: https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-controls (live) on 2026-08-09
+- Preserved from: https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-controls (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "http://www.thespanner.co.uk/2010/09/15/one-vector-to-rule-them-all/"
 tags: [article, webseclist-reference, en, thespanner-co-uk]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:46:05+00:00"
+  at: "2026-08-10T16:02:16+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2010/09/15/one-vector-to-rule-them-all/"
@@ -30,10 +30,10 @@ original_url: "http://www.thespanner.co.uk/2010/09/15/one-vector-to-rule-them-al
 published: ""
 publisher: thespanner.co.uk
 publisher_english: ""
-raw_sha256: 000055d1feef1c70a54f46ae19a22223bdbfec362184a199c3857992ce4c3f4a
+raw_sha256: ffc006dc4cbdc1fc63d1ee5c894d5711ae6817101dbd8c3b9f284225d603b934
 retrieved_from: "https://thespanner.co.uk/2010/09/15/one-vector-to-rule-them-all"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:46:05+00:00"
+retrieved_utc: "2026-08-10T16:02:16+00:00"
 slug: thespanner-co-uk-one-vector-rule-them-all
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2010/09/15/one-vector-to-rule-them-all/>
 - Current location: <https://thespanner.co.uk/2010/09/15/one-vector-to-rule-them-all>
-- Preserved from: https://thespanner.co.uk/2010/09/15/one-vector-to-rule-them-all (live) on 2026-08-09
+- Preserved from: https://thespanner.co.uk/2010/09/15/one-vector-to-rule-them-all (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

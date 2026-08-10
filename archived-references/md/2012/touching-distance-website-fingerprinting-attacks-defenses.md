@@ -5,9 +5,9 @@ resource: "https://www.freehaven.net/anonbib/cache/ccs2012-fingerprinting.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:52:04+00:00"
+  at: "2026-08-10T15:10:13+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.freehaven.net/anonbib/cache/ccs2012-fingerprinting.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2012.md:89"
+  - "2012.md:83"
 commit: ""
 content_sha256: 42282264306e59f69c0a043f84f09b0fd80f40d247537334e270efa87e79895e
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 737432f7d90b986422f562de208ba22a34fccbfb41b3cb14e2ea2b2a9397c3f6
 retrieved_from: "https://www.freehaven.net/anonbib/cache/ccs2012-fingerprinting.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:52:04+00:00"
+retrieved_utc: "2026-08-10T15:10:13+00:00"
 slug: touching-distance-website-fingerprinting-attacks-defenses
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.freehaven.net/anonbib/cache/ccs2012-fingerprinting.pdf>
-- Preserved from: https://www.freehaven.net/anonbib/cache/ccs2012-fingerprinting.pdf (live) on 2026-08-08
+- Preserved from: https://www.freehaven.net/anonbib/cache/ccs2012-fingerprinting.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

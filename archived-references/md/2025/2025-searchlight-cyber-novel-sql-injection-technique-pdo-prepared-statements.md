@@ -5,9 +5,9 @@ resource: "https://slcyber.io/research-center/a-novel-technique-for-sql-injectio
 tags: [article, webseclist-reference, en, searchlight-cyber]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:42:46+00:00"
+  at: "2026-08-10T15:59:27+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://slcyber.io/research-center/a-novel-technique-for-sql-injection-in-pdos-prepared-statements/"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2025.md:68"
 commit: ""
-content_sha256: 93d1f29d76136b1dd71a50e6400d0ba0619138dc4b04d508692960aa5bb5f7bd
+content_sha256: 1eb0f22944081b1e5388d0aae3140eeee213f46cd10c1c2c42f45b10c70045d8
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://slcyber.io/research-center/a-novel-technique-for-sql-inje
 published: 2025-07-21
 publisher: Searchlight Cyber
 publisher_english: ""
-raw_sha256: b133b80e322935fdcf1913dc7f4467d86fc441849bf73fde56f54a82d22271c4
+raw_sha256: b59f6cb13c4fa476f7e60290fa42ca2c0ec62785ac645f7ef2810516e91ec1fc
 retrieved_from: "https://slcyber.io/research-center/a-novel-technique-for-sql-injection-in-pdos-prepared-statements/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:42:46+00:00"
+retrieved_utc: "2026-08-10T15:59:27+00:00"
 slug: 2025-searchlight-cyber-novel-sql-injection-technique-pdo-prepared-statements
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2025-07-21
 - Original: <https://slcyber.io/research-center/a-novel-technique-for-sql-injection-in-pdos-prepared-statements/>
-- Preserved from: https://slcyber.io/research-center/a-novel-technique-for-sql-injection-in-pdos-prepared-statements/ (live) on 2026-08-09
+- Preserved from: https://slcyber.io/research-center/a-novel-technique-for-sql-injection-in-pdos-prepared-statements/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

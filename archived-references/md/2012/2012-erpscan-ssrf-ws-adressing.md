@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://erpscan.com/press-c
 tags: [article, webseclist-reference, en, erpscan]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:10:14+00:00"
+  at: "2026-08-10T15:09:30+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://erpscan.com/press-center/blog/ssrf-via-ws-adressing/"
@@ -35,10 +35,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://erpscan.com/pre
 published: 2012-12-08
 publisher: ERPScan
 publisher_english: ""
-raw_sha256: 8ab9b73911c1ceafdea0f6e331ea1ddbe92eb162fbd48ea5ca3c3b54ce3ae391
+raw_sha256: 7ff6c865b86916b83e00dd958025255cb07e7034e6e53707e8c3453ae281ad35
 retrieved_from: "https://web.archive.org/web/20151101090809/http://erpscan.com/press-center/blog/ssrf-via-ws-adressing/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:10:14+00:00"
+retrieved_utc: "2026-08-10T15:09:30+00:00"
 slug: 2012-erpscan-ssrf-ws-adressing
 snapshot: 20170903113359
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 - Published: 2012-12-08
 - Original: <https://web.archive.org/web/20170903113359/http://erpscan.com/press-center/blog/ssrf-via-ws-adressing/>
 - Current location: <https://web.archive.org/web/20151101090809/http://erpscan.com/press-center/blog/ssrf-via-ws-adressing/>
-- Preserved from: https://web.archive.org/web/20151101090809/http://erpscan.com/press-center/blog/ssrf-via-ws-adressing/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20151101090809/http://erpscan.com/press-center/blog/ssrf-via-ws-adressing/ (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

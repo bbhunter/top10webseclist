@@ -5,9 +5,9 @@ resource: "https://sec-consult.com/blog/detail/forgot-password-taking-over-user-
 tags: [article, webseclist-reference, en, sec-consult]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:40:11+00:00"
+  at: "2026-08-10T15:57:49+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/"
@@ -28,10 +28,10 @@ original_url: "https://sec-consult.com/blog/detail/forgot-password-taking-over-u
 published: ""
 publisher: SEC Consult
 publisher_english: ""
-raw_sha256: ff39c9dcfdc2969c395be84da200e4892eec5ee62099a1a3197e73e1873a94a2
+raw_sha256: 2a6135dfc465dba1b5cb3fb4f3a004c15fd980472fd6547de400ec661df74fd0
 retrieved_from: "https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:40:11+00:00"
+retrieved_utc: "2026-08-10T15:57:49+00:00"
 slug: sec-consult-forgot-password-taking-over-user-accounts-kaminsky-style
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/>
-- Preserved from: https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/ (live) on 2026-08-09
+- Preserved from: https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

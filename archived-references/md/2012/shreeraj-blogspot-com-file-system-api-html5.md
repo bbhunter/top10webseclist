@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://shreeraj.blogspot.c
 tags: [article, webseclist-reference, en, shreeraj-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:43+00:00"
+  at: "2026-08-10T15:59:16+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://shreeraj.blogspot.com/2012/08/file-system-api-with-html5-juice-for-xss.html"
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://shreeraj.blogsp
 published: ""
 publisher: shreeraj.blogspot.com
 publisher_english: ""
-raw_sha256: d624320e1b47e02217ffeff45f9af7ed8ffc794b35a4644e22c5e1ace27771dd
+raw_sha256: 304f7fedbb42e871b53a42352018466d2a375229ca5c859db4ce1a64072e02c2
 retrieved_from: "https://web.archive.org/web/20190110045801/http://shreeraj.blogspot.com/2012/08/file-system-api-with-html5-juice-for-xss.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:43+00:00"
+retrieved_utc: "2026-08-10T15:59:16+00:00"
 slug: shreeraj-blogspot-com-file-system-api-html5
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://shreeraj.blogspot.com/2012/08/file-system-api-with-html5-juice-for-xss.html>
 - Current location: <https://web.archive.org/web/20190110045801/http://shreeraj.blogspot.com/2012/08/file-system-api-with-html5-juice-for-xss.html>
-- Preserved from: https://web.archive.org/web/20190110045801/http://shreeraj.blogspot.com/2012/08/file-system-api-with-html5-juice-for-xss.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20190110045801/http://shreeraj.blogspot.com/2012/08/file-system-api-with-html5-juice-for-xss.html (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

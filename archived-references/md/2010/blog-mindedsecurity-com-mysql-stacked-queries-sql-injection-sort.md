@@ -5,9 +5,9 @@ resource: "http://blog.mindedsecurity.com/2010/04/mysql-stacked-queries-with-sql
 tags: [article, webseclist-reference, blog-mindedsecurity-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:05:57+00:00"
+  at: "2026-08-10T15:05:13+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.mindedsecurity.com/2010/04/mysql-stacked-queries-with-sql.html"
@@ -30,10 +30,10 @@ original_url: "http://blog.mindedsecurity.com/2010/04/mysql-stacked-queries-with
 published: ""
 publisher: blog.mindedsecurity.com
 publisher_english: ""
-raw_sha256: 087d920bc5e6146ea49826c8275858648a2b0957bb44602da9fe58460019ba43
+raw_sha256: 5d4b85fce1183d011113a0b85ea2fc98d2fb7925b52501c3c27b0af150638818
 retrieved_from: "https://blog.mindedsecurity.com/2010/04/mysql-stacked-queries-with-sql.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:05:57+00:00"
+retrieved_utc: "2026-08-10T15:05:13+00:00"
 slug: blog-mindedsecurity-com-mysql-stacked-queries-sql-injection-sort
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://blog.mindedsecurity.com/2010/04/mysql-stacked-queries-with-sql.html>
 - Current location: <https://blog.mindedsecurity.com/2010/04/mysql-stacked-queries-with-sql.html>
-- Preserved from: https://blog.mindedsecurity.com/2010/04/mysql-stacked-queries-with-sql.html (live) on 2026-08-09
+- Preserved from: https://blog.mindedsecurity.com/2010/04/mysql-stacked-queries-with-sql.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

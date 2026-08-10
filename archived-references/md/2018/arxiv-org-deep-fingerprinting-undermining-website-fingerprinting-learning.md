@@ -5,9 +5,9 @@ resource: "https://arxiv.org/abs/1801.02265"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:01+00:00"
+  at: "2026-08-10T15:02:30+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://arxiv.org/abs/1801.02265"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2018.md:84"
+  - "2018.md:80"
 commit: ""
-content_sha256: 675d1a56a399c64fe8ea79666356713cb6ed71b1ccddd7e9671d60f7d7002e6d
+content_sha256: 19718225b80c1e6e3ed5ee5f1a135cbd83555f0a406a0eea574f299a1ffcdfce
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: af946659c988e82b41ab1a25e970cc009090c6e6e7029cbda8da0d6c3a3d450f
 retrieved_from: "https://arxiv.org/abs/1801.02265"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:01+00:00"
+retrieved_utc: "2026-08-10T15:02:30+00:00"
 slug: arxiv-org-deep-fingerprinting-undermining-website-fingerprinting-learning
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/1801.02265>
-- Preserved from: https://arxiv.org/abs/1801.02265 (live) on 2026-08-08
+- Preserved from: https://arxiv.org/abs/1801.02265 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

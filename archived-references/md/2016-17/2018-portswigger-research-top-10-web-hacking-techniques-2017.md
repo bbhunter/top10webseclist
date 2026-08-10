@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/top-10-web-hacking-techniques-of-201
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:44+00:00"
+  at: "2026-08-10T15:36:58+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/top-10-web-hacking-techniques-of-2017-nominations-open"
@@ -19,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2016-17.md:3"
 commit: ""
-content_sha256: 5a3cad1145ea32d28e2eee517fa0b192cda5ec81ef96a9b22b63d4fb14c0d4a4
+content_sha256: 018d9c73f5609d6021e230e05abb3baaa9d964ca550ec73a3484b8c3004e42a2
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/top-10-web-hacking-techniques-of
 published: 2018-07-17
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 1cc47a0400493c971ee1a6c74adb601f89db68f789835bb54e3069e7ec6e848e
+raw_sha256: 86ba85f62a004f90b1240e4ddcf98430a4b7e55b49d02407b9edebe1373bc0b6
 retrieved_from: "https://portswigger.net/research/top-10-web-hacking-techniques-of-2017-nominations-open"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:44+00:00"
+retrieved_utc: "2026-08-10T15:36:58+00:00"
 slug: 2018-portswigger-research-top-10-web-hacking-techniques-2017
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2018-07-17
 - Original: <https://portswigger.net/research/top-10-web-hacking-techniques-of-2017-nominations-open>
-- Preserved from: https://portswigger.net/research/top-10-web-hacking-techniques-of-2017-nominations-open (live) on 2026-08-09
+- Preserved from: https://portswigger.net/research/top-10-web-hacking-techniques-of-2017-nominations-open (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

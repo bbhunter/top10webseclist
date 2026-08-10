@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/harri
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:35+00:00"
+  at: "2026-08-10T16:05:02+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/harrity"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2022.md:75"
+  - "2022.md:73"
 commit: ""
 content_sha256: c185b96280c617c16a33183180e4b832c27bc797b4e3af3479f8eac7d4d6a208
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity22/presentation/h
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 1ff82379394b9aafcbbcc2ea06cc38521a0461f90d32441cf63fe1a375d53a6c
+raw_sha256: 5551bfe8776d28fd83d4ed44035bc0c6574e089ee02fba1cd9892691919a0842
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity22/presentation/harrity"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:35+00:00"
+retrieved_utc: "2026-08-10T16:05:02+00:00"
 slug: usenix-org-get-out-automated-discovery-application-layer-censorship-strategies
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity22/presentation/harrity>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/harrity (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/harrity (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

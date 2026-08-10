@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity26/presentation/li-ru
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:52:47+00:00"
+  at: "2026-08-10T16:05:42+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity26/presentation/li-ruixuan"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:56"
+  - "2026-ai.md:32"
 commit: ""
 content_sha256: 0c4921d7b9227cad475344c982a29ac2447e366ddd7644c8457824a0636b1d7b
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity26/presentation/l
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: b090b022d8ebfef7407b3177d8d93444b5f0ff43906d118691c99fb07bf0f4df
+raw_sha256: 07ba7de280097c919aafe13ca9cb4e13c79cf151bc813b83ccfa8a2e5754a0ba
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity26/presentation/li-ruixuan"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:52:47+00:00"
+retrieved_utc: "2026-08-10T16:05:42+00:00"
 slug: usenix-org-alias-equals-zone-large-scale-stealthy-takeover-domain-verification
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity26/presentation/li-ruixuan>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity26/presentation/li-ruixuan (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity26/presentation/li-ruixuan (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

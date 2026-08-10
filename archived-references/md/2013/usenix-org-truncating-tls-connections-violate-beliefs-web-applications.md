@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/woot13/workshop-program/presentatio
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:21+00:00"
+  at: "2026-08-10T16:05:47+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/woot13/workshop-program/presentation/smyth"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2013.md:58"
+  - "2013.md:53"
 commit: ""
-content_sha256: 8953283405ceff0d85e77b2eb7b7abe615f800cb0824483be0b26919e6e13920
+content_sha256: 1e7d90a8dc2a892d664db3209507b436fe163c8b15d5543ca5d281fd24c0c2aa
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/woot13/workshop-program/present
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: a72b1c7691554c7740e19b6d20a33857fa09ec3a7f8d5f9f9b6c30958a2269e5
+raw_sha256: 52c8942d8df797cd323c55cf38e08fd994fe2e5317f35aea9bfb86a4c3bfa5e3
 retrieved_from: "https://www.usenix.org/conference/woot13/workshop-program/presentation/smyth"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:21+00:00"
+retrieved_utc: "2026-08-10T16:05:47+00:00"
 slug: usenix-org-truncating-tls-connections-violate-beliefs-web-applications
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/woot13/workshop-program/presentation/smyth>
-- Preserved from: https://www.usenix.org/conference/woot13/workshop-program/presentation/smyth (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/woot13/workshop-program/presentation/smyth (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

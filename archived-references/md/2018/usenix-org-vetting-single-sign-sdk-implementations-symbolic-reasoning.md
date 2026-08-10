@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/yang"
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:21+00:00"
+  at: "2026-08-10T16:04:47+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/yang"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2018.md:83"
+  - "2018.md:79"
 commit: ""
 content_sha256: 2a49d8e01aca9ee09b28ef05eba1b4f3b862f7c20b53cfd20278e1284c2b2791
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity18/presentation/y
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: d19debcc465a819e31c06862aa38875ff09edb49b35a7ea3d3c5bde887d4202a
+raw_sha256: 916cf56f05da2de0d41a0797fb2ee9b30ec6f7708c86a21263703ae5b6d480f5
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity18/presentation/yang"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:21+00:00"
+retrieved_utc: "2026-08-10T16:04:47+00:00"
 slug: usenix-org-vetting-single-sign-sdk-implementations-symbolic-reasoning
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity18/presentation/yang>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity18/presentation/yang (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity18/presentation/yang (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

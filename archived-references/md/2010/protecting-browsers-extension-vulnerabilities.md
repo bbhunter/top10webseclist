@@ -5,21 +5,19 @@ resource: "https://www.ndss-symposium.org/ndss2010/protecting-browsers-extension
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T11:34:44+00:00"
+  at: "2026-08-10T15:57:00+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2010/protecting-browsers-extension-vulnerabilities/"
     title: Protecting Browsers from Extension Vulnerabilities
-  - id: capture
-    resource: "https://web.archive.org/web/20180223163537/https://www.ndss-symposium.org/ndss2010/protecting-browsers-extension-vulnerabilities/"
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/barth.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2010.md:92"
+  - "2010.md:87"
 commit: ""
 content_sha256: df6016b26a9aa5c85db1e1c633b20dbc336b8751e2dfdb384f700b5586e3954b
 depth: full
@@ -34,9 +32,9 @@ publisher_english: ""
 raw_sha256: 6697a26d0061b4931f7edfc5cc4d5179fb7741c9374ae87ad8f2f8fe7eb04e47
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/barth.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T11:34:44+00:00"
+retrieved_utc: "2026-08-10T15:57:00+00:00"
 slug: protecting-browsers-extension-vulnerabilities
-snapshot: 20180223163537
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -49,8 +47,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2010/protecting-browsers-extension-vulnerabilities/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/barth.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/barth.pdf (live) on 2026-08-09
-- Capture timestamp: 20180223163537
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/barth.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -604,6 +601,8 @@ of privilege escalation. To fully limit the privilege levels of
  ,
 !
 
+
+
 :
 subtype
 (
@@ -612,11 +611,14 @@ subtype
  ,
 !
 
+
 S
 UBTYPING
 `
  ,
 !
+
+
 
 :
 method
@@ -625,6 +627,7 @@ method
 )`
  ,
 !
+
 
 M
 ETHOD
@@ -659,6 +662,7 @@ ETTER`
  ,
 !
 
+
 T
 YPE
 F
@@ -667,7 +671,13 @@ ORGERY
  ,
 !
 
+
 !
+
+`
+ ,
+!
+
 
 `
  ,
@@ -677,9 +687,6 @@ ORGERY
  ,
 !
 
-`
- ,
-!
 
 R
 ETURN
@@ -687,7 +694,13 @@ ETURN
  ,
 !
 
+
 !
+
+`
+ ,
+!
+
 
 `
  ,
@@ -697,9 +710,6 @@ ETURN
  ,
 !
 
-`
- ,
-!
 
 P
 ARAMETERFigure 4. Inference rules for reachability in a type system with type forgery, such as the Firefox
@@ -766,6 +776,7 @@ pal implements each concrete instance of the interface. We
 write
  ,
 !
+
 
 when principal
 
@@ -877,8 +888,10 @@ messages...",
 "permissions": [
 "tabs",
 "http://
+*
 .google.com/",
 "https://
+*
 .google.com/"
 ],
 "browser_action": { "default_title": "" },
@@ -908,9 +921,11 @@ which web sites they would like to access by ori-
 gin. For example, Gmail Checker requests access
 to Google by listing
 http://
+*
 .google.com
 and
 https://
+*
 .google.com
 in its manifest. If the
 extension were compromised, the attacker would not

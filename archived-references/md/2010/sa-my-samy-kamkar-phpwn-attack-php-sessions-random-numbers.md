@@ -5,9 +5,9 @@ resource: "http://samy.pl/phpwn/"
 tags: [article, webseclist-reference, sa-my]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:47+00:00"
+  at: "2026-08-10T15:57:25+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://samy.pl/phpwn/"
@@ -20,7 +20,7 @@ canonical_url: "http://sa.my/phpwn/"
 cited_by:
   - "2010.md:20"
 commit: ""
-content_sha256: 6188f81da8b9435a9518b32890ef8ad00d25f2f41db85405a8e19f1a811cc60c
+content_sha256: 5946105b74ff9c8a13649de6d9aefd422021391de9b06372e9d39a491e2ce43f
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "http://samy.pl/phpwn/"
 published: ""
 publisher: sa.my
 publisher_english: ""
-raw_sha256: b8d35979be303d6735dd3df0f4741d1480748ff0ebc6c8305ca364926080437d
+raw_sha256: 6bb81ba5334e183c77d7359895d79ca1e6cb7152faa00c1e038a6e7a0b867554
 retrieved_from: "http://sa.my/phpwn/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:47+00:00"
+retrieved_utc: "2026-08-10T15:57:25+00:00"
 slug: sa-my-samy-kamkar-phpwn-attack-php-sessions-random-numbers
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://samy.pl/phpwn/>
 - Current location: <http://sa.my/phpwn/>
-- Preserved from: http://sa.my/phpwn/ (live) on 2026-08-09
+- Preserved from: http://sa.my/phpwn/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -82,15 +82,15 @@ samy kamkar - phpwn: Attack on PHP Sessions and Random Numbers
  **Warning**: session_start(): Cannot send session cookie - headers already sent by (output started at /var/www/samy/phpwn/index.php:21) in **/var/www/samy/phpwn/index.php** on line **25**
 
  **Warning**: session_start(): Cannot send session cache limiter - headers already sent (output started at /var/www/samy/phpwn/index.php:21) in **/var/www/samy/phpwn/index.php** on line **25**
- Hi 31.94.38.26! The time is 1786239586
+ Hi 31.94.38.26! The time is 1786377441
 
 To test breaking the seed, run the following (after compiling [s1s2.c](http://sa.my/phpwn/s1s2.c))
-`time [./s1s2](http://sa.my/phpwn/s1s2.c) 19481 0.535091949776`
+`time [./s1s2](http://sa.my/phpwn/s1s2.c) 26481 0.42932092823522`
 
-Can you guess my next lcg_value based off the above? (hint: it's 0.48956105888604).
+Can you guess my next lcg_value based off the above? (hint: it's 0.5576357755996).
 Test by running: `time [./lcg-state-forward](http://sa.my/phpwn/lcg-state-forward.c) [s1] [s2] 100`
 
-Your [session_id](http://www.test.com/search?q=409902cfb5472e185db16f793474b10b) is 409902cfb5472e185db16f793474b10b (or just look at your cookie)
+Your [session_id](http://www.test.com/search?q=32862dd3cef825e4af506032ab5d2dd4) is 32862dd3cef825e4af506032ab5d2dd4 (or just look at your cookie)
 
 ---
 

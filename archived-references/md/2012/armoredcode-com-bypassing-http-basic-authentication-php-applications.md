@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://armoredcode.com/blo
 tags: [article, webseclist-reference, en, armoredcode-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:01:08+00:00"
+  at: "2026-08-10T15:02:00+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://armoredcode.com/blog/bypassing-basic-authentication-in-php-applications/"
@@ -16,7 +16,7 @@ sources:
   - id: canonical
     resource: "https://web.archive.org/web/20160520151154/http://armoredcode.com/blog/bypassing-basic-authentication-in-php-applications/"
   - id: capture
-    resource: "https://web.archive.org/web/20140214125047/http://armoredcode.com/blog/bypassing-basic-authentication-in-php-applications/"
+    resource: "https://web.archive.org/web/20170903113359/http://armoredcode.com/blog/bypassing-basic-authentication-in-php-applications/"
 also_at: []
 authors:
   - Paolo Perego
@@ -34,12 +34,12 @@ original_url: "https://web.archive.org/web/20170903113359/http://armoredcode.com
 published: ""
 publisher: armoredcode.com
 publisher_english: ""
-raw_sha256: d0ae1000c73d2d10dca23f4444d2747402fcd7e00122495f5c91f4e7b71ca2c7
+raw_sha256: 0f3b2e7303044bfe12f8fe1c97b3a384494e18968efa4f36ce9fedbb4dbcbf79
 retrieved_from: "https://web.archive.org/web/20160520151154/http://armoredcode.com/blog/bypassing-basic-authentication-in-php-applications/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:01:08+00:00"
+retrieved_utc: "2026-08-10T15:02:00+00:00"
 slug: armoredcode-com-bypassing-http-basic-authentication-php-applications
-snapshot: 20140214125047
+snapshot: 20170903113359
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -52,8 +52,8 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://armoredcode.com/blog/bypassing-basic-authentication-in-php-applications/>
 - Current location: <https://web.archive.org/web/20160520151154/http://armoredcode.com/blog/bypassing-basic-authentication-in-php-applications/>
-- Preserved from: https://web.archive.org/web/20160520151154/http://armoredcode.com/blog/bypassing-basic-authentication-in-php-applications/ (live) on 2026-08-09
-- Capture timestamp: 20140214125047
+- Preserved from: https://web.archive.org/web/20160520151154/http://armoredcode.com/blog/bypassing-basic-authentication-in-php-applications/ (live) on 2026-08-10
+- Capture timestamp: 20170903113359
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

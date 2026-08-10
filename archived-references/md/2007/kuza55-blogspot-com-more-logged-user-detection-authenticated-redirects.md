@@ -5,9 +5,9 @@ resource: "https://kuza55.blogspot.com/2007/01/more-user-login-detection-via.htm
 tags: [article, webseclist-reference, kuza55-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:32:53+00:00"
+  at: "2026-08-10T15:30:30+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://kuza55.blogspot.com/2007/01/more-user-login-detection-via.html"
@@ -28,10 +28,10 @@ original_url: "https://kuza55.blogspot.com/2007/01/more-user-login-detection-via
 published: ""
 publisher: kuza55.blogspot.com
 publisher_english: ""
-raw_sha256: fe25af7ecf4610f598a009cc0871f92c4c5cf00ae3a923e738ccaf2742b9dcc6
+raw_sha256: 7f15ca89a99470b0a25b708b9a9f2de5896631876b07607c73169cf624f6bf94
 retrieved_from: "https://kuza55.blogspot.com/2007/01/more-user-login-detection-via.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:32:53+00:00"
+retrieved_utc: "2026-08-10T15:30:30+00:00"
 slug: kuza55-blogspot-com-more-logged-user-detection-authenticated-redirects
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://kuza55.blogspot.com/2007/01/more-user-login-detection-via.html>
-- Preserved from: https://kuza55.blogspot.com/2007/01/more-user-login-detection-via.html (live) on 2026-08-09
+- Preserved from: https://kuza55.blogspot.com/2007/01/more-user-login-detection-via.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

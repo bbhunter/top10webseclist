@@ -5,9 +5,9 @@ resource: "http://samy.pl/natpin/"
 tags: [article, webseclist-reference, samy-pl]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:46+00:00"
+  at: "2026-08-10T15:57:23+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://samy.pl/natpin/"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2010.md:21"
 commit: ""
-content_sha256: f52a94311d7d1e27b6d1016dc3d9d6d1dcf697d84c62f9339addf5ac4ac2de0c
+content_sha256: edec9b12beae2e765921c0f2284ddc11abebb5232b22db346ac5e09862644c80
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: f05b91fa7f883238ddb69e6b8b0db321c81475f397df71c16540532a09faf8d0
 retrieved_from: "http://samy.pl/natpin/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:46+00:00"
+retrieved_utc: "2026-08-10T15:57:23+00:00"
 slug: samy-pl-samy-kamkar-nat-pinning
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://samy.pl/natpin/>
-- Preserved from: http://samy.pl/natpin/ (live) on 2026-08-09
+- Preserved from: http://samy.pl/natpin/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

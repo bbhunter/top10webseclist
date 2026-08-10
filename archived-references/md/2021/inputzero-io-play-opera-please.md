@@ -5,9 +5,9 @@ resource: "https://www.inputzero.io/2021/04/play-the-opera-please.html"
 tags: [article, webseclist-reference, en-US, inputzero-io]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:38+00:00"
+  at: "2026-08-10T15:29:09+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.inputzero.io/2021/04/play-the-opera-please.html"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2021.md:45"
 commit: ""
-content_sha256: 996dca8f3067549c92557750b628ac572dc3ea3f45054e223351a4efe570da5a
+content_sha256: d9c8449a277becace3981dde952704562445991325fb25e25eaefcf1f9b29fe7
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.inputzero.io/2021/04/play-the-opera-please.html"
 published: ""
 publisher: inputzero.io
 publisher_english: ""
-raw_sha256: 57892c77548a73f520052ebe2fb92184ab9c64b2520999feb89d827e3585d4d1
+raw_sha256: 98c60f4a60104467fa32444b69969738bcd2a5f04905c97bd45d7361e3c9fc7d
 retrieved_from: "https://www.inputzero.io/2021/04/play-the-opera-please.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:38+00:00"
+retrieved_utc: "2026-08-10T15:29:09+00:00"
 slug: inputzero-io-play-opera-please
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.inputzero.io/2021/04/play-the-opera-please.html>
-- Preserved from: https://www.inputzero.io/2021/04/play-the-opera-please.html (live) on 2026-08-09
+- Preserved from: https://www.inputzero.io/2021/04/play-the-opera-please.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/"
 tags: [article, webseclist-reference, en, thespanner-co-uk]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:46:02+00:00"
+  at: "2026-08-10T16:02:06+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/"
@@ -30,10 +30,10 @@ original_url: "http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/"
 published: ""
 publisher: thespanner.co.uk
 publisher_english: ""
-raw_sha256: 1d1510de6f84e54929ea7c3735db27c152a7b3f5f02230e629fed25305e2e0b9
+raw_sha256: 27e86a2c232fd76e3d5d733ff17868ccd1d7f2ee3c74cedd2d949aefcbc086fa
 retrieved_from: "https://thespanner.co.uk/2009/11/23/ping-pong-obfuscation"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:46:02+00:00"
+retrieved_utc: "2026-08-10T16:02:06+00:00"
 slug: thespanner-co-uk-ping-pong-obfuscation
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/>
 - Current location: <https://thespanner.co.uk/2009/11/23/ping-pong-obfuscation>
-- Preserved from: https://thespanner.co.uk/2009/11/23/ping-pong-obfuscation (live) on 2026-08-09
+- Preserved from: https://thespanner.co.uk/2009/11/23/ping-pong-obfuscation (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

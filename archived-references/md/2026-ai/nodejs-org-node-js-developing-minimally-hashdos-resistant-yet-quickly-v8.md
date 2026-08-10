@@ -5,9 +5,9 @@ resource: "https://nodejs.org/en/blog/vulnerability/march-2026-hashdos"
 tags: [article, webseclist-reference, en-GB, nodejs-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:52:35+00:00"
+  at: "2026-08-10T15:35:40+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://nodejs.org/en/blog/vulnerability/march-2026-hashdos"
@@ -18,9 +18,9 @@ authors:
   - @nodejs
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:74"
+  - "2026-ai.md:52"
 commit: ""
-content_sha256: 1669085a23be7a5ef9b10cd966cb23536bccb6e6cb7b26819f40aec5b32ff259
+content_sha256: 2892eab42081b6a19faa603c43b710a428413ed002bc49a5421d4e1e921e2346
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "https://nodejs.org/en/blog/vulnerability/march-2026-hashdos"
 published: ""
 publisher: nodejs.org
 publisher_english: ""
-raw_sha256: 622f58780c4fcfee56738495efd72a8eaa528bfa912ad940b1c087a12e580a90
+raw_sha256: ca2dce9ba410b3277538bc04096d71c8b91694ab2741ffacda1156c18522865d
 retrieved_from: "https://nodejs.org/en/blog/vulnerability/march-2026-hashdos"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:52:35+00:00"
+retrieved_utc: "2026-08-10T15:35:40+00:00"
 slug: nodejs-org-node-js-developing-minimally-hashdos-resistant-yet-quickly-v8
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://nodejs.org/en/blog/vulnerability/march-2026-hashdos>
-- Preserved from: https://nodejs.org/en/blog/vulnerability/march-2026-hashdos (live) on 2026-08-08
+- Preserved from: https://nodejs.org/en/blog/vulnerability/march-2026-hashdos (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -338,13 +338,13 @@ Now let's look at some visualizations to get an intuitive sense of the hash. For
 
 First, we take sequential inputs (spaced by an interval for better visibility) and plot their hash outputs. This helps us easily spot any linear relationships or patterns.
 
-![Hash output vs sequential input](https://nodejs.org/static/images/blog/vulnerability/hash-distribution.svg?dpl=dpl_7v15okjLkaScHNARBjXUJwY11SAR)
+![Hash output vs sequential input](https://nodejs.org/static/images/blog/vulnerability/hash-distribution.svg?dpl=dpl_9rLPehv5pLXAt7yKVFSDWNxA9csE)
 
 As you can see, 2-round and 3-round xorshift-multiply both look significantly more random and less predictable than the naive constructions.
 
 Another way to visualize it is to look at the [avalanche matrix](https://cacm.acm.org/practice/questioning-the-criteria-for-evaluating-non-cryptographic-hash-functions/#F5). Here we take 50,000 random inputs, flip each input bit one at a time, and record how often each output bit changes. Each cell (row *i*, column *j*) shows the probability that flipping input bit *i* causes output bit *j* to flip - green means it's close to the ideal 50%, red means it's strongly biased toward never or always flipping. The more green there is, the better.
 
-![Avalanche matrix](https://nodejs.org/static/images/blog/vulnerability/avalanche-matrix.svg?dpl=dpl_7v15okjLkaScHNARBjXUJwY11SAR)
+![Avalanche matrix](https://nodejs.org/static/images/blog/vulnerability/avalanche-matrix.svg?dpl=dpl_9rLPehv5pLXAt7yKVFSDWNxA9csE)
 
 Once again, the 2-round and 3-round xorshift-multiply constructions show much better avalanche properties than the naive constructions.
 

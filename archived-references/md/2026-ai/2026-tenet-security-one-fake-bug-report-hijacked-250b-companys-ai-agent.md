@@ -5,9 +5,9 @@ resource: "https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-se
 tags: [article, webseclist-reference, en, tenet-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:52:47+00:00"
+  at: "2026-08-10T16:01:19+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/"
@@ -17,9 +17,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:104"
+  - "2026-ai.md:82"
 commit: ""
-content_sha256: e770eb413d087490ca8be2a41ee8449ef4b84ece63ed401d34420d8049f962b6
+content_sha256: 580e8ed08e8bd886035cc86af7623ef71de49eeeab9549794af6996e4cb2f1b8
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fak
 published: 2026-06-17
 publisher: Tenet Security
 publisher_english: ""
-raw_sha256: 8e8d7feea7a54bdc815ae6646ac85105d6108d7929538a6685e66fb800c53f70
+raw_sha256: 26b1d2d321cc9b94c75bc40072402b5c718806ae8be4be4d43415e83418fdf96
 retrieved_from: "https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:52:47+00:00"
+retrieved_utc: "2026-08-10T16:01:19+00:00"
 slug: 2026-tenet-security-one-fake-bug-report-hijacked-250b-companys-ai-agent
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2026-06-17
 - Original: <https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/>
-- Preserved from: https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/ (live) on 2026-08-08
+- Preserved from: https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

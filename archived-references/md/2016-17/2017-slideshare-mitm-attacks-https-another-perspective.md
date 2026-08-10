@@ -5,9 +5,9 @@ resource: "https://www.slideshare.net/GreenD0g/mitm-attacks-on-https-another-per
 tags: [slides, webseclist-reference, slideshare]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:42:55+00:00"
+  at: "2026-08-10T15:59:37+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.slideshare.net/GreenD0g/mitm-attacks-on-https-another-perspective/"
@@ -33,10 +33,10 @@ original_url: "https://www.slideshare.net/GreenD0g/mitm-attacks-on-https-another
 published: 2017-11-20
 publisher: Slideshare
 publisher_english: ""
-raw_sha256: 71a8b019e6defb58af7754ebdfacedc1515c268e0df91498a7b561655d466894
+raw_sha256: 8bddbcc6092a6c001a0435bf824110ccd6b76ed2ec6a5921b4678f6fc5366758
 retrieved_from: "https://www.slideshare.net/slideshow/mitm-attacks-on-https-another-perspective/82373614"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:42:55+00:00"
+retrieved_utc: "2026-08-10T15:59:37+00:00"
 slug: 2017-slideshare-mitm-attacks-https-another-perspective
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: 2017-11-20
 - Original: <https://www.slideshare.net/GreenD0g/mitm-attacks-on-https-another-perspective/>
 - Current location: <https://www.slideshare.net/slideshow/mitm-attacks-on-https-another-perspective/82373614>
-- Preserved from: https://www.slideshare.net/slideshow/mitm-attacks-on-https-another-perspective/82373614 (live) on 2026-08-09
+- Preserved from: https://www.slideshare.net/slideshow/mitm-attacks-on-https-another-perspective/82373614 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

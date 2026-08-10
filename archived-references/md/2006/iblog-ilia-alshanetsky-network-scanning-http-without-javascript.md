@@ -5,9 +5,9 @@ resource: "http://ilia.ws/archives/145-Network-Scanning-with-HTTP-without-JavaSc
 tags: [article, webseclist-reference, en, iblog-ilia-alshanetsky]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:31+00:00"
+  at: "2026-08-10T15:28:55+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://ilia.ws/archives/145-Network-Scanning-with-HTTP-without-JavaScript.html"
@@ -30,10 +30,10 @@ original_url: "http://ilia.ws/archives/145-Network-Scanning-with-HTTP-without-Ja
 published: ""
 publisher: iBlog - Ilia Alshanetsky
 publisher_english: ""
-raw_sha256: b1d2cea3bc83309ff4b6a8273d4e51969c983c5b8661fefa216b581940ef54a2
+raw_sha256: 15ee00bc25daef7d871e13ca6cd715009a8e4fdecc2d0b79cf9596c2e6cd3290
 retrieved_from: "https://ilia.ws/blog/network-scanning-with-http-without-javascript"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:31+00:00"
+retrieved_utc: "2026-08-10T15:28:55+00:00"
 slug: iblog-ilia-alshanetsky-network-scanning-http-without-javascript
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://ilia.ws/archives/145-Network-Scanning-with-HTTP-without-JavaScript.html>
 - Current location: <https://ilia.ws/blog/network-scanning-with-http-without-javascript>
-- Preserved from: https://ilia.ws/blog/network-scanning-with-http-without-javascript (live) on 2026-08-09
+- Preserved from: https://ilia.ws/blog/network-scanning-with-http-without-javascript (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

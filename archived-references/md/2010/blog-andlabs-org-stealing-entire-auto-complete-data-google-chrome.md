@@ -5,9 +5,9 @@ resource: "http://blog.andlabs.org/2010/08/stealing-entire-auto-complete-data-in
 tags: [article, webseclist-reference, en, blog-andlabs-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:19+00:00"
+  at: "2026-08-10T15:04:02+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.andlabs.org/2010/08/stealing-entire-auto-complete-data-in.html"
@@ -28,10 +28,10 @@ original_url: "http://blog.andlabs.org/2010/08/stealing-entire-auto-complete-dat
 published: ""
 publisher: blog.andlabs.org
 publisher_english: ""
-raw_sha256: 6006264670ecc9184e3ae67d7fc4a4bb5c93b76b653e3f60fe1313c87b382091
+raw_sha256: 717086f574c094e13788d1c9d288ab5d1b4dc67a7cecdd449af9b1bbc0a58377
 retrieved_from: "http://blog.andlabs.org/2010/08/stealing-entire-auto-complete-data-in.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:19+00:00"
+retrieved_utc: "2026-08-10T15:04:02+00:00"
 slug: blog-andlabs-org-stealing-entire-auto-complete-data-google-chrome
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.andlabs.org/2010/08/stealing-entire-auto-complete-data-in.html>
-- Preserved from: http://blog.andlabs.org/2010/08/stealing-entire-auto-complete-data-in.html (live) on 2026-08-09
+- Preserved from: http://blog.andlabs.org/2010/08/stealing-entire-auto-complete-data-in.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

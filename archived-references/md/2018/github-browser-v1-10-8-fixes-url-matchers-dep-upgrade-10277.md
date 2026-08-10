@@ -5,9 +5,9 @@ resource: "https://github.com/keybase/client/commit/3d30d6e0fc928968827646b7b967
 tags: [code, webseclist-reference, en, github]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:13:15+00:00"
+  at: "2026-08-10T15:10:20+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://github.com/keybase/client/commit/3d30d6e0fc928968827646b7b9676cc298fc47dc"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2018.md:33"
 commit: ""
-content_sha256: 1b2c799229ad9dee5cad8cb337193fe9a43ea1c0c0635cb5f40b3837b6d2c356
+content_sha256: 812e1497564fc0d9ea3e49e52959c9414e49ca9d53c06cdce520789ea780fb4c
 depth: full
 depth_reason: default
 kind: code
@@ -28,10 +28,10 @@ original_url: "https://github.com/keybase/client/commit/3d30d6e0fc928968827646b7
 published: ""
 publisher: GitHub
 publisher_english: ""
-raw_sha256: 17a6070de1b580be7422cac50e467fdde6f75475f42dfa282ce9fd772b68ea39
+raw_sha256: 1cb3d20bdc5b42307c4b98007d2c8ff6fc0c4467108b00ff76dfc2e339a4b666
 retrieved_from: "https://github.com/keybase/client/commit/3d30d6e0fc928968827646b7b9676cc298fc47dc"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:13:15+00:00"
+retrieved_utc: "2026-08-10T15:10:20+00:00"
 slug: github-browser-v1-10-8-fixes-url-matchers-dep-upgrade-10277
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://github.com/keybase/client/commit/3d30d6e0fc928968827646b7b9676cc298fc47dc>
-- Preserved from: https://github.com/keybase/client/commit/3d30d6e0fc928968827646b7b9676cc298fc47dc (live) on 2026-08-09
+- Preserved from: https://github.com/keybase/client/commit/3d30d6e0fc928968827646b7b9676cc298fc47dc (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

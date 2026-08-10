@@ -5,21 +5,19 @@ resource: "https://www.ndss-symposium.org/ndss2010/flax-systematic-discovery-cli
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T11:34:05+00:00"
+  at: "2026-08-10T15:56:59+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2010/flax-systematic-discovery-client-side-validation-vulnerabilities-rich-web-applications/"
     title: "FLAX: Systematic Discovery of Client-side Validation Vulnerabilities in Rich Web Applications"
-  - id: capture
-    resource: "https://web.archive.org/web/20180223163552/https://www.ndss-symposium.org/ndss2010/flax-systematic-discovery-client-side-validation-vulnerabilities-rich-web-applications/"
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/saxe.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2010.md:91"
+  - "2010.md:86"
 commit: ""
 content_sha256: a4cb2cad8b2695478b3d5975cb134924013f424b9a2565834fef4535cd32cfc9
 depth: full
@@ -34,9 +32,9 @@ publisher_english: ""
 raw_sha256: ebfc1ef1c02c594a994d23964a1a43179a271e06cf3a0fd3cb584dacd01469df
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/saxe.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T11:34:05+00:00"
+retrieved_utc: "2026-08-10T15:56:59+00:00"
 slug: flax-systematic-discovery-client-side-validation-vulnerabilities-applications
-snapshot: 20180223163552
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -49,8 +47,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2010/flax-systematic-discovery-client-side-validation-vulnerabilities-rich-web-applications/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/saxe.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/saxe.pdf (live) on 2026-08-09
-- Capture timestamp: 20180223163552
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/saxe.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

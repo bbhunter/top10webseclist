@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/crossfire-a
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:30+00:00"
+  at: "2026-08-10T15:35:03+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/crossfire-analysis-firefox-extension-reuse-vulnerabilities.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:81"
+  - "2016-17.md:75"
 commit: ""
 content_sha256: 994f7762bcb8128935d1a7720182a0a9174376edd5a5b0b609aa95a0780be785
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: ebff8b60d54fafa3b1be2f72a52dab2c8bc333e756aa9ce6d53799a01ebccef2
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/crossfire-analysis-firefox-extension-reuse-vulnerabilities.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:30+00:00"
+retrieved_utc: "2026-08-10T15:35:03+00:00"
 slug: crossfire-analysis-firefox-extension-reuse-vulnerabilities
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/crossfire-analysis-firefox-extension-reuse-vulnerabilities.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/crossfire-analysis-firefox-extension-reuse-vulnerabilities.pdf (live) on 2026-08-08
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/crossfire-analysis-firefox-extension-reuse-vulnerabilities.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

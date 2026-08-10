@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/new-
 tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:47:00+00:00"
+  at: "2026-08-10T16:03:16+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/new-timing-attack-could-de-anonymize-google-users/108141"
@@ -35,10 +35,10 @@ original_url: "https://web.archive.org/web/20160403035045/http://threatpost.com/
 published: 2014-09-08
 publisher: Threatpost | The first stop for security news
 publisher_english: ""
-raw_sha256: c1bf98a729d839be5bc0e485144eb65828c07f4365c7a9917a626701a6823d0b
+raw_sha256: 52433f2b5aaf330fa6051f70753ee8998dfd87af6e527b188506c62ef814f251
 retrieved_from: "https://web.archive.org/web/20160311221053/https://threatpost.com/new-timing-attack-could-de-anonymize-google-users/108141/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:47:00+00:00"
+retrieved_utc: "2026-08-10T16:03:16+00:00"
 slug: 2014-threatpost-the-first-stop-for-security-news-new-timing-attack-could-users
 snapshot: 20160403035045
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 - Published: 2014-09-08
 - Original: <https://web.archive.org/web/20160403035045/http://threatpost.com/new-timing-attack-could-de-anonymize-google-users/108141>
 - Current location: <https://web.archive.org/web/20160311221053/https://threatpost.com/new-timing-attack-could-de-anonymize-google-users/108141/>
-- Preserved from: https://web.archive.org/web/20160311221053/https://threatpost.com/new-timing-attack-could-de-anonymize-google-users/108141/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160311221053/https://threatpost.com/new-timing-attack-could-de-anonymize-google-users/108141/ (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 

@@ -5,9 +5,9 @@ resource: "https://portswigger.net/research/turbo-intruder-embracing-the-billion
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:55+00:00"
+  at: "2026-08-10T15:36:59+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack"
@@ -17,9 +17,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2019.md:68"
+  - "2019.md:66"
 commit: ""
-content_sha256: 207f5435a9bceccc028468d865099923ae59c45f78b74d23fd76537bfadcfa11
+content_sha256: 83aec7a80e362cc257eeb99a7ac2995894402c629e2adc30708a7df74fe951df
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +29,10 @@ original_url: "https://portswigger.net/research/turbo-intruder-embracing-the-bil
 published: 2019-01-25
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: d33cf30c63835ed71f21c741c44ce279633a57735ce32400058fcf49c1a12fdb
+raw_sha256: f79ee9f7fac22852a8b661012046870009d6023e6a455de883f43a9959371247
 retrieved_from: "https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:55+00:00"
+retrieved_utc: "2026-08-10T15:36:59+00:00"
 slug: 2019-portswigger-research-turbo-intruder-embracing-billion-request-attack
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2019-01-25
 - Original: <https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack>
-- Preserved from: https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack (live) on 2026-08-08
+- Preserved from: https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

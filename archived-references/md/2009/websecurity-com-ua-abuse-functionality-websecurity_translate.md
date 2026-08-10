@@ -5,9 +5,9 @@ resource: "http://websecurity.com.ua/2840/"
 tags: [article, webseclist-reference, websecurity-com-ua]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:27+00:00"
+  at: "2026-08-10T16:06:17+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://websecurity.com.ua/2840/"
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 621e32ec7ee0ad181500c256c616595e152e757a8b0386da834a497359e47705
 retrieved_from: "http://websecurity.com.ua/2840/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:27+00:00"
+retrieved_utc: "2026-08-10T16:06:17+00:00"
 slug: websecurity-com-ua-abuse-functionality-websecurity_translate
 snapshot: ""
 title_english: Detecting Usernames Through Abuse of Functionality Vulnerabilities - Websecurity
@@ -46,7 +46,7 @@ translation_of: websecurity-com-ua-abuse-functionality-websecurity.md
 - Title in English: Detecting Usernames Through Abuse of Functionality Vulnerabilities - Websecurity
 - Published: date not stated
 - Original: <http://websecurity.com.ua/2840/>
-- Preserved from: http://websecurity.com.ua/2840/ (live) on 2026-08-09
+- Preserved from: http://websecurity.com.ua/2840/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

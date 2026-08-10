@@ -5,9 +5,9 @@ resource: "https://adnanthekhan.com/posts/copilot-or-co-conspirator/"
 tags: [article, webseclist-reference, en, adnan-khan-security-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:46:08+00:00"
+  at: "2026-08-10T15:01:16+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://adnanthekhan.com/posts/copilot-or-co-conspirator/"
@@ -20,7 +20,7 @@ authors:
   - adnanthekhan
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:112"
+  - "2026-ai.md:90"
 commit: ""
 content_sha256: a679f33c33775f679f299e6b9fc0f0b13e542150c2145c1c3ead07a9bad510e2
 depth: full
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: 24ef14d29b736e9e5c13a315c845cddc5af3a4aa6c8a53dd7ada23554149dd8d
 retrieved_from: "https://adnanthekhan.com/posts/copilot-or-co-conspirator/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:46:08+00:00"
+retrieved_utc: "2026-08-10T15:01:16+00:00"
 slug: 2026-adnan-khan-security-research-copilot-coconspirator-tricking-github-secrets
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2026-01-07
 - Original: <https://adnanthekhan.com/posts/copilot-or-co-conspirator/>
-- Preserved from: https://adnanthekhan.com/posts/copilot-or-co-conspirator/ (live) on 2026-08-08
+- Preserved from: https://adnanthekhan.com/posts/copilot-or-co-conspirator/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

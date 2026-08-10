@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:50+00:00"
+  at: "2026-08-10T16:04:16+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2014.md:70"
+  - "2014.md:65"
 commit: ""
-content_sha256: e12914fde6ffa7302ca21ff40f0b3979b4799361a4b69ed6dbc374ebc039a321
+content_sha256: f316e9d6ef3fa97b08c2cbf6f905cbeaecc3185aff2c222ef8e316d28f7d5218
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity14/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 5a1cf9dd136d18bd5bb87095e680d725c54f2e7f34dd971d0c420836ea0c4dd8
+raw_sha256: 82b64c8fbf96ee1f560c9e075f7dd2bfb8d879114212a7d0074badf8e84a9a6f
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:50+00:00"
+retrieved_utc: "2026-08-10T16:04:16+00:00"
 slug: usenix-org-static-detection-second-order-vulnerabilities-web-applications
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

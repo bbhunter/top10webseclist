@@ -5,9 +5,9 @@ resource: "https://archives.iw3c2.org/www2013/proceedings/p1191.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:49:52+00:00"
+  at: "2026-08-10T15:01:28+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://archives.iw3c2.org/www2013/proceedings/p1191.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2013.md:65"
+  - "2013.md:60"
 commit: ""
 content_sha256: 1d76de4df7e825a244bd8d0f6b54520221887b2e2d4818c64f1ecea680ea93f5
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 25641c0a5d78ad46c6351f26c9176d87c24caa24e4586a760265999a33b9da38
 retrieved_from: "https://archives.iw3c2.org/www2013/proceedings/p1191.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:49:52+00:00"
+retrieved_utc: "2026-08-10T15:01:28+00:00"
 slug: i-know-shortened-urls-you-clicked-twitter
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://archives.iw3c2.org/www2013/proceedings/p1191.pdf>
-- Preserved from: https://archives.iw3c2.org/www2013/proceedings/p1191.pdf (live) on 2026-08-08
+- Preserved from: https://archives.iw3c2.org/www2013/proceedings/p1191.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

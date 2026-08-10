@@ -5,9 +5,9 @@ resource: "https://shreeraj.blogspot.com/2011/12/double-eval-for-dom-based-xss.h
 tags: [article, webseclist-reference, en, shreeraj-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:34+00:00"
+  at: "2026-08-10T15:58:59+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://shreeraj.blogspot.com/2011/12/double-eval-for-dom-based-xss.html"
@@ -28,10 +28,10 @@ original_url: "https://shreeraj.blogspot.com/2011/12/double-eval-for-dom-based-x
 published: ""
 publisher: shreeraj.blogspot.com
 publisher_english: ""
-raw_sha256: 0f120cc94a3fd08eb717a5a76b4e29091b5f45c170358ebedb4119a904d5e014
+raw_sha256: 9825a3f8d27735d0edc94dbc6d15db51cc3bdf00027779bc64c58a3d8723c108
 retrieved_from: "https://shreeraj.blogspot.com/2011/12/double-eval-for-dom-based-xss.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:34+00:00"
+retrieved_utc: "2026-08-10T15:58:59+00:00"
 slug: shreeraj-blogspot-com-double-eval-dom-based-xss
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://shreeraj.blogspot.com/2011/12/double-eval-for-dom-based-xss.html>
-- Preserved from: https://shreeraj.blogspot.com/2011/12/double-eval-for-dom-based-xss.html (live) on 2026-08-09
+- Preserved from: https://shreeraj.blogspot.com/2011/12/double-eval-for-dom-based-xss.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

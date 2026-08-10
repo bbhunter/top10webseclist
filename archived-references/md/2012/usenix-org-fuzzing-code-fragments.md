@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity12/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:44+00:00"
+  at: "2026-08-10T16:04:12+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/holler"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2012.md:77"
+  - "2012.md:71"
 commit: ""
-content_sha256: 8363c89285584934b4c11d01d742ee0d9e9274bdb4dfdd0a195531e9f7633125
+content_sha256: af113f7856ac3cd17c82163d834a1e8ad7ffe4a6c4d04f5e4358f1c26f10293e
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity12/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 4a80d192df1d649889a94ecfd6fec3ef5ac3341f8b20c6b4259120300da84d5a
+raw_sha256: 4521b0d37dbd71a29147774e7fc0d4e28b15bcc5b3d9be042a981d2465cf82ad
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/holler"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:44+00:00"
+retrieved_utc: "2026-08-10T16:04:12+00:00"
 slug: usenix-org-fuzzing-code-fragments
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/holler>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/holler (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/holler (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

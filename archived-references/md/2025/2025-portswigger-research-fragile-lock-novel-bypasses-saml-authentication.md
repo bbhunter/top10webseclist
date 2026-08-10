@@ -5,21 +5,22 @@ resource: "https://portswigger.net/research/the-fragile-lock"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:43+00:00"
+  at: "2026-08-10T15:36:57+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/research/the-fragile-lock"
     title: "The Fragile Lock: Novel Bypasses For SAML Authentication"
     last_modified: 2025-12-10
-also_at: []
+also_at:
+  - "https://portswigger.net/kb/papers/z0cb0bb8/the-fragile-lock.pdf"
 authors: []
 canonical_url: ""
 cited_by:
   - "2025.md:25"
 commit: ""
-content_sha256: cfcf054c249adb0d3ddf4d12e7bf78cb0644840224f33994813128bf3c20edcb
+content_sha256: 0aace172cdd15479b3e3688afb86bca57370cd04d3c8bec84282cb264d52aaaa
 depth: full
 depth_reason: default
 kind: article
@@ -29,10 +30,10 @@ original_url: "https://portswigger.net/research/the-fragile-lock"
 published: 2025-12-10
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 15c6ae94e052d12a72e9ae345602fb31f60d3e0bf19d9549e7c8bfcd9c407511
+raw_sha256: f25b549496b3bb724f33a9a35456fad24eda2a5cd52e95c82ab64d6ab9b918f9
 retrieved_from: "https://portswigger.net/research/the-fragile-lock"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:43+00:00"
+retrieved_utc: "2026-08-10T15:36:57+00:00"
 slug: 2025-portswigger-research-fragile-lock-novel-bypasses-saml-authentication
 snapshot: ""
 title_english: ""
@@ -46,7 +47,8 @@ translation_of: ""
 
 - Published: 2025-12-10
 - Original: <https://portswigger.net/research/the-fragile-lock>
-- Preserved from: https://portswigger.net/research/the-fragile-lock (live) on 2026-08-09
+- Also published at: <https://portswigger.net/kb/papers/z0cb0bb8/the-fragile-lock.pdf>
+- Preserved from: https://portswigger.net/research/the-fragile-lock (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "http://www.thespanner.co.uk/2009/01/28/detecting-ie-in-12-bytes/"
 tags: [article, webseclist-reference, en, thespanner-co-uk]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:45:51+00:00"
+  at: "2026-08-10T16:01:49+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2009/01/28/detecting-ie-in-12-bytes/"
@@ -30,10 +30,10 @@ original_url: "http://www.thespanner.co.uk/2009/01/28/detecting-ie-in-12-bytes/"
 published: ""
 publisher: thespanner.co.uk
 publisher_english: ""
-raw_sha256: 5f3ea8df72ce90994e2d00a079623dcdb3a825d2cd6a7fe1bd1d3b46ed6f462b
+raw_sha256: 585279eb41c5efe5a9c353e30f346ca64d2292590082f7c44127c455c879c4b7
 retrieved_from: "https://thespanner.co.uk/2009/01/28/detecting-ie-in-12-bytes"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:45:51+00:00"
+retrieved_utc: "2026-08-10T16:01:49+00:00"
 slug: thespanner-co-uk-detecting-ie-12-bytes
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2009/01/28/detecting-ie-in-12-bytes/>
 - Current location: <https://thespanner.co.uk/2009/01/28/detecting-ie-in-12-bytes>
-- Preserved from: https://thespanner.co.uk/2009/01/28/detecting-ie-in-12-bytes (live) on 2026-08-09
+- Preserved from: https://thespanner.co.uk/2009/01/28/detecting-ie-in-12-bytes (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity16/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:06+00:00"
+  at: "2026-08-10T16:04:35+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/vangoethem"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:77"
+  - "2016-17.md:71"
 commit: ""
 content_sha256: c000cb2287546ef67278e8cfdf00ebf3419d3286dcb4ea0eaa02e0325b5413d0
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity16/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 9addfe2649577d56cdd1971c25f4464768329830a9b3dd2b07867c5ca61b472e
+raw_sha256: e4a4a8c80af7e2c4dc4b5a0511d29401bcd44d282f5d07f1a364a9e94a678f76
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/vangoethem"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:06+00:00"
+retrieved_utc: "2026-08-10T16:04:35+00:00"
 slug: usenix-org-request-conquer-exposing-cross-origin-resource-size
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/vangoethem>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/vangoethem (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/vangoethem (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

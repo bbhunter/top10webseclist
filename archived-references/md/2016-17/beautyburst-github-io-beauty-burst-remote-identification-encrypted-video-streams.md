@@ -5,9 +5,9 @@ resource: "https://beautyburst.github.io/"
 tags: [article, webseclist-reference, beautyburst-github-io]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:05+00:00"
+  at: "2026-08-10T15:02:59+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://beautyburst.github.io/"
@@ -18,9 +18,9 @@ authors:
   - Roei Schuster, Vitali Shmatikov, Eran Tromer
 canonical_url: ""
 cited_by:
-  - "2016-17.md:113"
+  - "2016-17.md:107"
 commit: ""
-content_sha256: ad2bfd6d06718a7509cbbc53a30214738381ecc5264073af9f1a690520992f81
+content_sha256: c42aac4e8af37bed0ba3cf258767d62679a6625c172e5e03f5f5d8b0a7c35482
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: 546ed2c9d492b2afe57191cf30e6dba2c0b2f7e2c24d2918a9d89b2349468844
 retrieved_from: "https://beautyburst.github.io/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:05+00:00"
+retrieved_utc: "2026-08-10T15:02:59+00:00"
 slug: beautyburst-github-io-beauty-burst-remote-identification-encrypted-video-streams
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://beautyburst.github.io/>
-- Preserved from: https://beautyburst.github.io/ (live) on 2026-08-08
+- Preserved from: https://beautyburst.github.io/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

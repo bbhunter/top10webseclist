@@ -5,9 +5,9 @@ resource: "https://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:33+00:00"
+  at: "2026-08-10T15:31:27+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server_Side_WP.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2011.md:71"
+  - "2011.md:66"
 commit: ""
 content_sha256: 230ce99cbaecae3f8060bcaaea356104297bb5c6aeba59570fdab1eb1dbc5b9b
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: abc16486d92f71091f0a20b34f5b519df1078f212868dee83e2b135c52fe7b77
 retrieved_from: "https://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server_Side_WP.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:33+00:00"
+retrieved_utc: "2026-08-10T15:31:27+00:00"
 slug: server-side-javascript-injection-attacking-nosql-node-js
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server_Side_WP.pdf>
-- Preserved from: https://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server_Side_WP.pdf (live) on 2026-08-08
+- Preserved from: https://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server_Side_WP.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

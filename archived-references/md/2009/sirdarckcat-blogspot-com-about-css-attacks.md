@@ -5,9 +5,9 @@ resource: "https://sirdarckcat.blogspot.com/2008/10/about-css-attacks.html"
 tags: [article, webseclist-reference, sirdarckcat-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:49+00:00"
+  at: "2026-08-10T15:59:19+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://sirdarckcat.blogspot.com/2008/10/about-css-attacks.html"
@@ -28,10 +28,10 @@ original_url: "https://sirdarckcat.blogspot.com/2008/10/about-css-attacks.html"
 published: ""
 publisher: sirdarckcat.blogspot.com
 publisher_english: ""
-raw_sha256: 25bf885db139d465f77eab1af957c7e3436d7c64512a266bfb643379c1cd182a
+raw_sha256: 7bf08eefb8b910693f363c7669b15720ad019687451c515aa5293443f682fc47
 retrieved_from: "https://sirdarckcat.blogspot.com/2008/10/about-css-attacks.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:49+00:00"
+retrieved_utc: "2026-08-10T15:59:19+00:00"
 slug: sirdarckcat-blogspot-com-about-css-attacks
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://sirdarckcat.blogspot.com/2008/10/about-css-attacks.html>
-- Preserved from: https://sirdarckcat.blogspot.com/2008/10/about-css-attacks.html (live) on 2026-08-09
+- Preserved from: https://sirdarckcat.blogspot.com/2008/10/about-css-attacks.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

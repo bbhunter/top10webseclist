@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity21/presentation/xiao"
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:32+00:00"
+  at: "2026-08-10T16:05:00+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity21/presentation/xiao"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2021.md:63"
+  - "2021.md:58"
 commit: ""
 content_sha256: c0d6a2cfcab7cd48aebb0e938dd3b191d40ff7467343e69b909ed95f6795d037
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity21/presentation/x
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 0fa7dff4569b1553faa297e5396648d08640c75272f3b7db695a238177b8d455
+raw_sha256: 5be446779f0c2ab1b31e6315c52edbbe17d7cabd508978cb5b318fb059ba75a1
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity21/presentation/xiao"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:32+00:00"
+retrieved_utc: "2026-08-10T16:05:00+00:00"
 slug: usenix-org-abusing-hidden-properties-attack-node-js-ecosystem
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity21/presentation/xiao>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity21/presentation/xiao (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity21/presentation/xiao (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

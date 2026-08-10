@@ -5,9 +5,9 @@ resource: "https://0xacb.com/2022/11/21/recollapse/"
 tags: [article, webseclist-reference, 0xacb-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T00:58:42+00:00"
+  at: "2026-08-10T15:00:52+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://0xacb.com/2022/11/21/recollapse/"
@@ -28,10 +28,10 @@ original_url: "https://0xacb.com/2022/11/21/recollapse/"
 published: ""
 publisher: 0xacb.com
 publisher_english: ""
-raw_sha256: 4d9196ca1cfc5cbafbcec5873c1d0dff1756cba8340c8dfbd59d7a537b715385
+raw_sha256: 8d48c0dcafb99857cb35d8bcbb07d1b97767a32084632998e4920e02a5c4b1c2
 retrieved_from: "https://0xacb.com/2022/11/21/recollapse/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T00:58:42+00:00"
+retrieved_utc: "2026-08-10T15:00:52+00:00"
 slug: 0xacb-com-till-recollapse
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://0xacb.com/2022/11/21/recollapse/>
-- Preserved from: https://0xacb.com/2022/11/21/recollapse/ (live) on 2026-08-09
+- Preserved from: https://0xacb.com/2022/11/21/recollapse/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://slcyber.io/research-center/smashing-the-servicenow-sandbox-pr
 tags: [article, webseclist-reference, en, searchlight-cyber]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:52:45+00:00"
+  at: "2026-08-10T15:59:29+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://slcyber.io/research-center/smashing-the-servicenow-sandbox-pre-authentication-rce/"
@@ -20,9 +20,9 @@ authors:
   - @searchlightsec
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:81"
+  - "2026-ai.md:59"
 commit: ""
-content_sha256: 8583f0a35a27a31df4a0cad81ee7d8eca1d0ad2ea7c2df4c9390201305ba08d0
+content_sha256: c0c23cefa6bd097b0e521838628c19238b3f07534377ca1bfba94260414c3653
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://slcyber.io/research-center/smashing-the-servicenow-sandbo
 published: 2026-07-14
 publisher: Searchlight Cyber
 publisher_english: ""
-raw_sha256: b6a85963443403c2a29ee4273c0801ea223258f8bfc6d96b254d07467a72d657
+raw_sha256: 75ec572af7ad8588f3963a8630349958151b88459789e847acb6d83490477a9d
 retrieved_from: "https://slcyber.io/research-center/smashing-the-servicenow-sandbox-pre-authentication-rce/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:52:45+00:00"
+retrieved_utc: "2026-08-10T15:59:29+00:00"
 slug: 2026-searchlight-cyber-smashing-servicenow-sandbox-pre-authentication-rce-cyber
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2026-07-14
 - Original: <https://slcyber.io/research-center/smashing-the-servicenow-sandbox-pre-authentication-rce/>
-- Preserved from: https://slcyber.io/research-center/smashing-the-servicenow-sandbox-pre-authentication-rce/ (live) on 2026-08-08
+- Preserved from: https://slcyber.io/research-center/smashing-the-servicenow-sandbox-pre-authentication-rce/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

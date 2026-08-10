@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity20/presentation/chen-
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:47:52+00:00"
+  at: "2026-08-10T16:04:55+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity20/presentation/chen-jianjun"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2020.md:76"
+  - "2020.md:71"
 commit: ""
 content_sha256: b05594bf83e33e20c145cc95b4438f15b58ca3499bf87b9dd9fee6fd40d7f242
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity20/presentation/c
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: ea514d5681ce42e82822e61ed3935b72c8f446df063991a55e5193723cb16e5d
+raw_sha256: 5944eaa2648c037a287da176752a27d6d2f97389d83112cc563477dc40853d68
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity20/presentation/chen-jianjun"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:47:52+00:00"
+retrieved_utc: "2026-08-10T16:04:55+00:00"
 slug: usenix-org-composition-kills-case-study-email-sender-authentication
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity20/presentation/chen-jianjun>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity20/presentation/chen-jianjun (live) on 2026-08-09
+- Preserved from: https://www.usenix.org/conference/usenixsecurity20/presentation/chen-jianjun (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

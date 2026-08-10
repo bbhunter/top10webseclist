@@ -5,9 +5,9 @@ resource: "https://medium.com/@luanherrera/xs-searching-googles-bug-tracker-to-f
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:34:59+00:00"
+  at: "2026-08-10T15:32:12+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@luanherrera/xs-searching-googles-bug-tracker-to-find-out-vulnerable-source-code-50d8135b7549"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2018.md:14"
 commit: ""
-content_sha256: 6ddd0a9bbc2f003ed0968659e4a66426f56dc29303b484e61ec7f9265f546308
+content_sha256: 1c8b96f422dd63db07360c3d98d4b58262ebd6e16bf5d0bd96df72e51f646aeb
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://medium.com/@luanherrera/xs-searching-googles-bug-tracker-
 published: 2019-03-31
 publisher: Medium
 publisher_english: ""
-raw_sha256: 024a01219e6b335f481a9b087e94d7109daa25592925967567ed8f2265df34b9
+raw_sha256: 25247ea57f6172b4ebc82a809302509a5f3c78c1392bb0429ffb1df2c9bac314
 retrieved_from: "https://medium.com/@luanherrera/xs-searching-googles-bug-tracker-to-find-out-vulnerable-source-code-50d8135b7549"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:34:59+00:00"
+retrieved_utc: "2026-08-10T15:32:12+00:00"
 slug: 2019-medium-xs-searching-googles-bug-tracker-find-out-vulnerable-source-code
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2019-03-31
 - Original: <https://medium.com/@luanherrera/xs-searching-googles-bug-tracker-to-find-out-vulnerable-source-code-50d8135b7549>
-- Preserved from: https://medium.com/@luanherrera/xs-searching-googles-bug-tracker-to-find-out-vulnerable-source-code-50d8135b7549 (live) on 2026-08-09
+- Preserved from: https://medium.com/@luanherrera/xs-searching-googles-bug-tracker-to-find-out-vulnerable-source-code-50d8135b7549 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

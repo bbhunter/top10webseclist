@@ -5,9 +5,9 @@ resource: "https://medium.com/@ricardoiramar/reusing-cookies-23ed4691122b"
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:35:28+00:00"
+  at: "2026-08-10T15:32:23+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@ricardoiramar/reusing-cookies-23ed4691122b"
@@ -23,7 +23,7 @@ canonical_url: "https://ricardoiramar.medium.com/reusing-cookies-23ed4691122b"
 cited_by:
   - "2019.md:33"
 commit: ""
-content_sha256: 2ef3557d1ad89a25290020f039fc46236eddd8e03c00115bae15c2e3ac2dc625
+content_sha256: baa1d765ef1a43cf40411305c557c71138e61cb11b0566e5f14ed46b38fa01b6
 depth: full
 depth_reason: default
 kind: article
@@ -33,10 +33,10 @@ original_url: "https://medium.com/@ricardoiramar/reusing-cookies-23ed4691122b"
 published: 2019-12-12
 publisher: Medium
 publisher_english: ""
-raw_sha256: 60d9632fd5dc8310fef2c5d1119ebbc8c9efc63cfc331565e1d10160cb54cf1d
+raw_sha256: 45dee585a4666a6cc73754fd610d6c446da9a38df349e38c802b200ddd94dbb3
 retrieved_from: "https://ricardoiramar.medium.com/reusing-cookies-23ed4691122b"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:35:28+00:00"
+retrieved_utc: "2026-08-10T15:32:23+00:00"
 slug: 2019-medium-reusing-cookies
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: 2019-12-12
 - Original: <https://medium.com/@ricardoiramar/reusing-cookies-23ed4691122b>
 - Current location: <https://ricardoiramar.medium.com/reusing-cookies-23ed4691122b>
-- Preserved from: https://ricardoiramar.medium.com/reusing-cookies-23ed4691122b (live) on 2026-08-09
+- Preserved from: https://ricardoiramar.medium.com/reusing-cookies-23ed4691122b (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

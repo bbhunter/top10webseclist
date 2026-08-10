@@ -5,9 +5,9 @@ resource: "https://cs.brown.edu/people/vpk/papers/spy.ccs15.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:51:07+00:00"
+  at: "2026-08-10T15:07:44+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://cs.brown.edu/people/vpk/papers/spy.ccs15.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2015.md:59"
+  - "2015.md:55"
 commit: ""
 content_sha256: 3ef618115b081717cc1d9f1228516e03a314b50fbfed248040182ff2f59ff2a3
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 587433ea7efb1822336befc9cdb543f3dbdf3183b1550b1bb608899b8e37a3b2
 retrieved_from: "https://cs.brown.edu/people/vpk/papers/spy.ccs15.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:51:07+00:00"
+retrieved_utc: "2026-08-10T15:07:44+00:00"
 slug: spy-ccs15
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://cs.brown.edu/people/vpk/papers/spy.ccs15.pdf>
-- Preserved from: https://cs.brown.edu/people/vpk/papers/spy.ccs15.pdf (live) on 2026-08-08
+- Preserved from: https://cs.brown.edu/people/vpk/papers/spy.ccs15.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20141231141714/http://blog.whitehatsec.co
 tags: [article, webseclist-reference, en-US, blog-whitehatsec-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:07:44+00:00"
+  at: "2026-08-10T15:06:53+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20141231141714/http://blog.whitehatsec.com/hackerkast-11-bonus-round/"
@@ -30,10 +30,10 @@ original_url: "https://web.archive.org/web/20141231141714/http://blog.whitehatse
 published: ""
 publisher: blog.whitehatsec.com
 publisher_english: ""
-raw_sha256: 9f18d4060055001ef142a7a24135e52060d793cadb2c90b9fefbfbe97d15c151
+raw_sha256: b797370ff8805c3675f102137e3854427db30c089ac758035dc390df77b1012a
 retrieved_from: "https://web.archive.org/web/20141231141714/http://blog.whitehatsec.com/hackerkast-11-bonus-round/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:07:44+00:00"
+retrieved_utc: "2026-08-10T15:06:53+00:00"
 slug: blog-whitehatsec-com-hackerkast-11-bonus-round-latest-clickjacking
 snapshot: 20141231141714
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20141231141714/http://blog.whitehatsec.com/hackerkast-11-bonus-round/>
-- Preserved from: https://web.archive.org/web/20141231141714/http://blog.whitehatsec.com/hackerkast-11-bonus-round/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20141231141714/http://blog.whitehatsec.com/hackerkast-11-bonus-round/ (live) on 2026-08-10
 - Capture timestamp: 20141231141714
 - Licence: unknown
 

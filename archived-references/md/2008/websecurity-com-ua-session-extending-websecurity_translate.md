@@ -5,9 +5,9 @@ resource: "http://websecurity.com.ua/2233/"
 tags: [article, webseclist-reference, websecurity-com-ua]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:25+00:00"
+  at: "2026-08-10T16:06:15+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://websecurity.com.ua/2233/"
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: e83d10b38a93172743ac22123500dd624f21bd0729c4b5aa245b6cfcf9022c7c
 retrieved_from: "http://websecurity.com.ua/2233/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:25+00:00"
+retrieved_utc: "2026-08-10T16:06:15+00:00"
 slug: websecurity-com-ua-session-extending-websecurity_translate
 snapshot: ""
 title_english: Session Extending - Session Extension - Websecurity
@@ -46,7 +46,7 @@ translation_of: websecurity-com-ua-session-extending-websecurity.md
 - Title in English: Session Extending - Session Extension - Websecurity
 - Published: date not stated
 - Original: <http://websecurity.com.ua/2233/>
-- Preserved from: http://websecurity.com.ua/2233/ (live) on 2026-08-09
+- Preserved from: http://websecurity.com.ua/2233/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

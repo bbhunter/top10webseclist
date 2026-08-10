@@ -5,9 +5,9 @@ resource: "https://zeroknock.blogspot.com/2009/12/google-chrome-webkit-msword-sc
 tags: [article, webseclist-reference, zeroknock-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:51:21+00:00"
+  at: "2026-08-10T16:08:08+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://zeroknock.blogspot.com/2009/12/google-chrome-webkit-msword-scripting.html"
@@ -28,10 +28,10 @@ original_url: "https://zeroknock.blogspot.com/2009/12/google-chrome-webkit-mswor
 published: ""
 publisher: zeroknock.blogspot.com
 publisher_english: ""
-raw_sha256: d2bcd67854c9a309de4d682a8a84c818df1633f6720f29e76cf07eb42c85769f
+raw_sha256: a4b2970211f92c5e4b67b9fc1ec5dbc4e08df28f84eb3a979165e3816c2bae96
 retrieved_from: "https://zeroknock.blogspot.com/2009/12/google-chrome-webkit-msword-scripting.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:51:21+00:00"
+retrieved_utc: "2026-08-10T16:08:08+00:00"
 slug: zeroknock-blogspot-com-google-chrome-webkit-msword-scripting-object-stringency
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://zeroknock.blogspot.com/2009/12/google-chrome-webkit-msword-scripting.html>
-- Preserved from: https://zeroknock.blogspot.com/2009/12/google-chrome-webkit-msword-scripting.html (live) on 2026-08-09
+- Preserved from: https://zeroknock.blogspot.com/2009/12/google-chrome-webkit-msword-scripting.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,9 +5,9 @@ resource: "https://blogs.opera.com/security/2021/09/bug-bounty-guest-post-local-
 tags: [article, webseclist-reference, en, opera-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:07:49+00:00"
+  at: "2026-08-10T15:06:55+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blogs.opera.com/security/2021/09/bug-bounty-guest-post-local-file-read-via-stored-xss-in-the-opera-browser/"
@@ -29,10 +29,10 @@ original_url: "https://blogs.opera.com/security/2021/09/bug-bounty-guest-post-lo
 published: 2021-09-08
 publisher: Opera Security
 publisher_english: ""
-raw_sha256: be477c300a54dda31484c71a245f251fa712e0158769f3265f7c2c8e60f5221f
+raw_sha256: 9060db2c4233912e03354dff851643f074359bdd07ea3f2e7da3a20168041713
 retrieved_from: "https://blogs.opera.com/security/2021/09/bug-bounty-guest-post-local-file-read-via-stored-xss-in-the-opera-browser/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:07:49+00:00"
+retrieved_utc: "2026-08-10T15:06:55+00:00"
 slug: 2021-opera-security-bug-bounty-guest-post-local-file-read-stored-xss-browser
 snapshot: ""
 title_english: ""
@@ -46,7 +46,7 @@ translation_of: ""
 
 - Published: 2021-09-08
 - Original: <https://blogs.opera.com/security/2021/09/bug-bounty-guest-post-local-file-read-via-stored-xss-in-the-opera-browser/>
-- Preserved from: https://blogs.opera.com/security/2021/09/bug-bounty-guest-post-local-file-read-via-stored-xss-in-the-opera-browser/ (live) on 2026-08-09
+- Preserved from: https://blogs.opera.com/security/2021/09/bug-bounty-guest-post-local-file-read-via-stored-xss-in-the-opera-browser/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

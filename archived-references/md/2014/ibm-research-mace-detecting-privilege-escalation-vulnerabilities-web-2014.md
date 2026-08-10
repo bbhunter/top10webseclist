@@ -5,9 +5,9 @@ resource: "https://research.ibm.com/publications/mace-detecting-privilege-escala
 tags: [article, webseclist-reference, en, ibm-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:04+00:00"
+  at: "2026-08-10T15:57:12+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://research.ibm.com/publications/mace-detecting-privilege-escalation-vulnerabilities-in-web-applications"
@@ -18,7 +18,7 @@ authors:
   - @IBMResearch
 canonical_url: ""
 cited_by:
-  - "2014.md:75"
+  - "2014.md:70"
 commit: ""
 content_sha256: 7cfc4fd1658e0569024973763cbe86e485bccc73f4949949a3fa2e9a3094107d
 depth: full
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: aa513efd9f5a59bb891d362296efa625cb0abd9dd5933d901188d2b38b2ee5ae
 retrieved_from: "https://research.ibm.com/publications/mace-detecting-privilege-escalation-vulnerabilities-in-web-applications"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:04+00:00"
+retrieved_utc: "2026-08-10T15:57:12+00:00"
 slug: ibm-research-mace-detecting-privilege-escalation-vulnerabilities-web-2014
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://research.ibm.com/publications/mace-detecting-privilege-escalation-vulnerabilities-in-web-applications>
-- Preserved from: https://research.ibm.com/publications/mace-detecting-privilege-escalation-vulnerabilities-in-web-applications (live) on 2026-08-08
+- Preserved from: https://research.ibm.com/publications/mace-detecting-privilege-escalation-vulnerabilities-in-web-applications (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

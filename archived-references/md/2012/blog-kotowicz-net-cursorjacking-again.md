@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2
 tags: [article, webseclist-reference, blog-kotowicz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:05:00+00:00"
+  at: "2026-08-10T15:04:37+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/01/cursorjacking-again.html"
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.n
 published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
-raw_sha256: 7b2a26cd658163e2ece6d39456fe2dabe109e80fd6202698f9897390a607b83c
+raw_sha256: aa6a647f3ccd1e30ab5a3010d1a346e9e7ea73c1145ac3c4ce98a06e5214c0d4
 retrieved_from: "https://web.archive.org/web/20171017190804/http://blog.kotowicz.net/2012/01/cursorjacking-again.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:05:00+00:00"
+retrieved_utc: "2026-08-10T15:04:37+00:00"
 slug: blog-kotowicz-net-cursorjacking-again
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/01/cursorjacking-again.html>
 - Current location: <https://web.archive.org/web/20171017190804/http://blog.kotowicz.net/2012/01/cursorjacking-again.html>
-- Preserved from: https://web.archive.org/web/20171017190804/http://blog.kotowicz.net/2012/01/cursorjacking-again.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20171017190804/http://blog.kotowicz.net/2012/01/cursorjacking-again.html (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

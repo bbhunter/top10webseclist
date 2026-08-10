@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bu
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:06+00:00"
+  at: "2026-08-10T15:33:46+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/"
     title: "FUSE: Finding File Upload Bugs via Penetration Testing"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2020/02/23126-paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2020.md:81"
+  - "2020.md:76"
 commit: ""
-content_sha256: 30cb412177d7eb6a9144616293a1d80b7150bc5239431665d141ac1e7e66f7eb
+content_sha256: e2669561c46f43b83db56e6764d5ee261ec71f86bd1dfbac2c65ff470a5cbb54
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-uploa
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 5c10bbcad4da82320e057fbb622fff9065888c82fda10de538c162470474ae26
+raw_sha256: e598aa48f20b92f87bbb497da4c17cc8d1e8f1f4fb582be4c774534064b092e5
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:06+00:00"
+retrieved_utc: "2026-08-10T15:33:46+00:00"
 slug: ndss-symposium-fuse-finding-file-upload-bugs-penetration-testing
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2020/02/23126-paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -68,20 +70,20 @@ An Unrestricted File Upload (UFU) vulnerability is a critical security threat th
 
 ## View More Papers
 
-### [ Metal: A Metadata-Hiding File-Sharing System ](https://www.ndss-symposium.org/ndss-paper/metal-a-metadata-hiding-file-sharing-system/)
+### [ FlowPrint: Semi-Supervised Mobile-App Fingerprinting on Encrypted Network Traffic ](https://www.ndss-symposium.org/ndss-paper/flowprint-semi-supervised-mobile-app-fingerprinting-on-encrypted-network-traffic/)
 
- Weikeng Chen (UC Berkeley), Raluca Ada Popa (UC Berkeley)
+ Thijs van Ede (University of Twente), Riccardo Bortolameotti (Bitdefender), Andrea Continella (UC Santa Barbara), Jingjing Ren (Northeastern University), Daniel J. Dubois (Northeastern University), Martina Lindorfer (TU Wien), David Choffnes (Northeastern University), Maarten van Steen (University of Twente), Andreas Peter (University of Twente)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/metal-a-metadata-hiding-file-sharing-system/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/flowprint-semi-supervised-mobile-app-fingerprinting-on-encrypted-network-traffic/)
 
-### [ BLAG: Improving the Accuracy of Blacklists ](https://www.ndss-symposium.org/ndss-paper/blag-improving-the-accuracy-of-blacklists/)
+### [ Compliance Cautions: Investigating Security Issues Associated with U.S. Digital-Security... ](https://www.ndss-symposium.org/ndss-paper/compliance-cautions-investigating-security-issues-associated-with-u-s-digital-security-standards/)
 
- Sivaramakrishnan Ramanathan (University of Southern California/Information Sciences Institute), Jelena Mirkovic (University of Southern California/Information Sciences Institute), Minlan Yu (Harvard University)
+ Rock Stevens (University of Maryland), Josiah Dykstra (Independent Security Researcher), Wendy Knox Everette (Leviathan Security Group), James Chapman (Independent Security Researcher), Garrett Bladow (Dragos), Alexander Farmer (Independent Security Researcher), Kevin Halliday (University of Maryland), Michelle L. Mazurek (University of Maryland)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/blag-improving-the-accuracy-of-blacklists/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/compliance-cautions-investigating-security-issues-associated-with-u-s-digital-security-standards/)
 
-### [ When Malware is Packin' Heat; Limits of Machine Learning... ](https://www.ndss-symposium.org/ndss-paper/when-malware-is-packin-heat-limits-of-machine-learning-classifiers-based-on-static-analysis-features/)
+### [ On Using Application-Layer Middlebox Protocols for Peeking Behind NAT... ](https://www.ndss-symposium.org/ndss-paper/on-using-application-layer-middlebox-protocols-for-peeking-behind-nat-gateways/)
 
- Hojjat Aghakhani (University of California, Santa Barbara), Fabio Gritti (University of California, Santa Barbara), Francesco Mecca (Università degli Studi di Torino), Martina Lindorfer (TU Wien), Stefano Ortolani (Lastline Inc.), Davide Balzarotti (Eurecom), Giovanni Vigna (University of California, Santa Barbara), Christopher Kruegel (University of California, Santa Barbara)
+ Teemu Rytilahti (Ruhr University Bochum), Thorsten Holz (Ruhr University Bochum)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/when-malware-is-packin-heat-limits-of-machine-learning-classifiers-based-on-static-analysis-features/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/on-using-application-layer-middlebox-protocols-for-peeking-behind-nat-gateways/)

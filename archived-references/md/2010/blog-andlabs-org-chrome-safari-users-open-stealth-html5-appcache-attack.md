@@ -5,9 +5,9 @@ resource: "http://blog.andlabs.org/2010/06/chrome-and-safari-users-open-to-steal
 tags: [article, webseclist-reference, en, blog-andlabs-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:17+00:00"
+  at: "2026-08-10T15:04:01+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://blog.andlabs.org/2010/06/chrome-and-safari-users-open-to-stealth.html"
@@ -28,10 +28,10 @@ original_url: "http://blog.andlabs.org/2010/06/chrome-and-safari-users-open-to-s
 published: ""
 publisher: blog.andlabs.org
 publisher_english: ""
-raw_sha256: 818e641928b385034e682b08c11b9d83aba375c33516044c26d8c798f8818ae1
+raw_sha256: 70b4ce831e90d00f8d20033a0783692cc2e5ea30b0b2b2d1da6a8c8fe8de1bf4
 retrieved_from: "http://blog.andlabs.org/2010/06/chrome-and-safari-users-open-to-stealth.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:17+00:00"
+retrieved_utc: "2026-08-10T15:04:01+00:00"
 slug: blog-andlabs-org-chrome-safari-users-open-stealth-html5-appcache-attack
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://blog.andlabs.org/2010/06/chrome-and-safari-users-open-to-stealth.html>
-- Preserved from: http://blog.andlabs.org/2010/06/chrome-and-safari-users-open-to-stealth.html (live) on 2026-08-09
+- Preserved from: http://blog.andlabs.org/2010/06/chrome-and-safari-users-open-to-stealth.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

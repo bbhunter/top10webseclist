@@ -5,9 +5,9 @@ resource: "https://medium.com/@anador/attacks-via-a-new-oauth-flow-authorization
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:34:48+00:00"
+  at: "2026-08-10T15:32:00+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://medium.com/@anador/attacks-via-a-new-oauth-flow-authorization-code-injection-and-whether-httponly-pkce-and-bff-3db1624b4fa7"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2025.md:48"
 commit: ""
-content_sha256: 711f40ec7f01665a572efcbee36043ec291ce4e84343dab63bf445927d7c49a2
+content_sha256: 2ea0972067177ec6e9805666ee9aefd5cd43ba22a477c7da17d634fccdffd127
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://medium.com/@anador/attacks-via-a-new-oauth-flow-authoriza
 published: 2025-10-25
 publisher: Medium
 publisher_english: ""
-raw_sha256: 40e0ff6c4c3a0ba80017676ba9878e80e9e616f3fdc4a5d2e65ed77d7fc331e6
+raw_sha256: 4e4c16ca0d624a88a53bfc94256ad7419567ce725dbc8301f26a2a5bf52dea52
 retrieved_from: "https://medium.com/@anador/attacks-via-a-new-oauth-flow-authorization-code-injection-and-whether-httponly-pkce-and-bff-3db1624b4fa7"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:34:48+00:00"
+retrieved_utc: "2026-08-10T15:32:00+00:00"
 slug: 2025-medium-attacks-new-oauth-flow-authorization-code-injection-whether-bff
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2025-10-25
 - Original: <https://medium.com/@anador/attacks-via-a-new-oauth-flow-authorization-code-injection-and-whether-httponly-pkce-and-bff-3db1624b4fa7>
-- Preserved from: https://medium.com/@anador/attacks-via-a-new-oauth-flow-authorization-code-injection-and-whether-httponly-pkce-and-bff-3db1624b4fa7 (live) on 2026-08-09
+- Preserved from: https://medium.com/@anador/attacks-via-a-new-oauth-flow-authorization-code-injection-and-whether-httponly-pkce-and-bff-3db1624b4fa7 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

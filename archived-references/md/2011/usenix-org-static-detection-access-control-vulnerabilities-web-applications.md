@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenix-security-11/static-detection
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:38+00:00"
+  at: "2026-08-10T16:04:07+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenix-security-11/static-detection-access-control-vulnerabilities-web-applications"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2011.md:75"
+  - "2011.md:70"
 commit: ""
-content_sha256: b1017c4e9e801d940f1dd0c22197f31cdd002cbd047168d012ed80a2e9971ac6
+content_sha256: 9f04fa06231d12f68640c0dd8ec336cdcd1ef9fc13488a5abd8435e6556a6bfa
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenix-security-11/static-detec
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 1d27b59b82cff5582b85cba7c424d2e40bddaa06ad42f0c07c8c7c19067d2e6e
+raw_sha256: e844bfae9adc8ccb5aaa64a7c4a6e18bdf2660388aae1b1de4fe2069b79d693a
 retrieved_from: "https://www.usenix.org/conference/usenix-security-11/static-detection-access-control-vulnerabilities-web-applications"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:38+00:00"
+retrieved_utc: "2026-08-10T16:04:07+00:00"
 slug: usenix-org-static-detection-access-control-vulnerabilities-web-applications
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenix-security-11/static-detection-access-control-vulnerabilities-web-applications>
-- Preserved from: https://www.usenix.org/conference/usenix-security-11/static-detection-access-control-vulnerabilities-web-applications (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenix-security-11/static-detection-access-control-vulnerabilities-web-applications (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

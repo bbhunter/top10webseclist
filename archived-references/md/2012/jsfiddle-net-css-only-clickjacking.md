@@ -5,20 +5,22 @@ resource: "https://jsfiddle.net/gcollazo/UMyEm/embedded/result/"
 tags: [article, webseclist-reference, jsfiddle-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T13:15:31+00:00"
+  at: "2026-08-10T15:56:25+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://jsfiddle.net/gcollazo/UMyEm/embedded/result/"
     title: CSS-Only Clickjacking
     author: JSFiddle
+  - id: canonical
+    resource: "https://jsfiddle.net/gcollazo/UMyEm/"
 also_at:
   - "https://jsfiddle.net/gcollazo/UMyEm/show/"
   - "https://jsfiddle.net/gcollazo/UMyEm/embedded/result/"
 authors:
   - JSFiddle
-canonical_url: ""
+canonical_url: "https://jsfiddle.net/gcollazo/UMyEm/"
 cited_by:
   - "2012.md:39"
 commit: ""
@@ -32,10 +34,10 @@ original_url: "https://jsfiddle.net/gcollazo/UMyEm/embedded/result/"
 published: ""
 publisher: jsfiddle.net
 publisher_english: ""
-raw_sha256: 87c05041d8beb1193267d7306c08a2c9b9b6da93c38c8ab528ed0833b8bb20cf
-retrieved_from: "https://jsfiddle.net/gcollazo/UMyEm/embedded/result/"
-retrieved_kind: browser
-retrieved_utc: "2026-08-09T13:15:31+00:00"
+raw_sha256: bf49e5026bef4c75ab73bebc81a26d19a27c411e9d5794aeff4bdc7e6754f0f5
+retrieved_from: "https://jsfiddle.net/gcollazo/UMyEm/"
+retrieved_kind: live
+retrieved_utc: "2026-08-10T15:56:25+00:00"
 slug: jsfiddle-net-css-only-clickjacking
 snapshot: ""
 title_english: ""
@@ -49,9 +51,10 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://jsfiddle.net/gcollazo/UMyEm/embedded/result/>
+- Current location: <https://jsfiddle.net/gcollazo/UMyEm/>
 - Also published at: <https://jsfiddle.net/gcollazo/UMyEm/show/>
 - Also published at: <https://jsfiddle.net/gcollazo/UMyEm/embedded/result/>
-- Preserved from: https://jsfiddle.net/gcollazo/UMyEm/embedded/result/ (browser) on 2026-08-09
+- Preserved from: https://jsfiddle.net/gcollazo/UMyEm/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

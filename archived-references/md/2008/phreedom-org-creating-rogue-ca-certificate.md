@@ -5,23 +5,21 @@ resource: "http://www.phreedom.org/research/rogue-ca/"
 tags: [article, webseclist-reference, en, phreedom-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T11:26:39+00:00"
+  at: "2026-08-10T15:36:10+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://www.phreedom.org/research/rogue-ca/"
     title: Creating a rogue CA certificate
-  - id: capture
-    resource: "https://web.archive.org/web/20090116112348/http://www.phreedom.org/research/rogue-ca/"
 also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2008.md:90"
+  - "2008.md:85"
   - "2009.md:5"
 commit: ""
-content_sha256: a492360ec95d374b6b43b32ccd409c82404ab2a32f9be74da9921752ac0ce160
+content_sha256: d0180409cdc84049b98722e8e99ee365500a4f7718ac6b8820037a0eddf31d94
 depth: full
 depth_reason: default
 kind: article
@@ -31,12 +29,12 @@ original_url: "http://www.phreedom.org/research/rogue-ca/"
 published: ""
 publisher: phreedom.org
 publisher_english: ""
-raw_sha256: 015eac9b037ec54a9fdbcc85d167b53a5dcfd3da4f2b34adc803c6c2292d1f9a
+raw_sha256: d5c71d0895b763ab13921a907f94ae48c5ee724970b46b7e33f170d9694f8f13
 retrieved_from: "http://www.phreedom.org/research/rogue-ca/"
-retrieved_kind: stored
-retrieved_utc: "2026-08-09T11:26:39+00:00"
+retrieved_kind: live
+retrieved_utc: "2026-08-10T15:36:10+00:00"
 slug: phreedom-org-creating-rogue-ca-certificate
-snapshot: 20090116112348
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -48,8 +46,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://www.phreedom.org/research/rogue-ca/>
-- Preserved from: http://www.phreedom.org/research/rogue-ca/ (stored) on 2026-08-09
-- Capture timestamp: 20090116112348
+- Preserved from: http://www.phreedom.org/research/rogue-ca/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -84,8 +81,8 @@ Further details:
 
 Colliding certificates:
 
-- [Real certificate](http://www.win.tue.nl/hashclash/rogue-ca/real.cert.pem)
-- [Rogue CA certificate](http://www.win.tue.nl/hashclash/rogue-ca/rogue_ca.cert.pem)
+- [Real certificate](http://www.win.tue.nl/hashclash/rogue-ca/downloads/real.cert.pem)
+- [Rogue CA certificate](http://www.win.tue.nl/hashclash/rogue-ca/downloads/rogue_ca.cert.pem)
 
 This work was [presented](http://events.ccc.de/congress/2008/Fahrplan/track/Hacking/3023.en.html) at the 25th Chaos Communication Congress in Berlin on December 30, 2008.
 

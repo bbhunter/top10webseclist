@@ -5,9 +5,9 @@ resource: "https://www.ieee-security.org/TC/SP2016/papers/0824a724.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:04+00:00"
+  at: "2026-08-10T15:28:37+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2016/papers/0824a724.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:88"
+  - "2016-17.md:82"
 commit: ""
 content_sha256: 1f49749c57a24f56079bc0ec5f5e7a7d015d02c254126d3002821876022567c1
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 5cc6e6059f499299ed041ad54ae8476cfaccf4badf52de9ef17178157b43c328
 retrieved_from: "https://www.ieee-security.org/TC/SP2016/papers/0824a724.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:04+00:00"
+retrieved_utc: "2026-08-10T15:28:37+00:00"
 slug: cracked-cookie-jar-http-cookie-hijacking-exposure-private-information
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2016/papers/0824a724.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2016/papers/0824a724.pdf (live) on 2026-08-08
+- Preserved from: https://www.ieee-security.org/TC/SP2016/papers/0824a724.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

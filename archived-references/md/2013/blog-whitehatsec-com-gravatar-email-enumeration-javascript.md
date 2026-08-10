@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20130323005639/http://blog.whitehatsec.co
 tags: [article, webseclist-reference, en-US, blog-whitehatsec-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:07:42+00:00"
+  at: "2026-08-10T15:06:50+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20130323005639/http://blog.whitehatsec.com/gravatar-email-enumeration-in-javascript/"
@@ -20,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2013.md:19"
 commit: ""
-content_sha256: 64ce4593a0b2f3983744d4993f657d90c4c5848359123c258d0249651c573a68
+content_sha256: 55010753b0be8d78ab2e955de949800e2528c374ceb59c984e7799a61635c7fe
 depth: full
 depth_reason: default
 kind: article
@@ -30,10 +30,10 @@ original_url: "https://web.archive.org/web/20130323005639/http://blog.whitehatse
 published: ""
 publisher: blog.whitehatsec.com
 publisher_english: ""
-raw_sha256: bb935cfe7f356c9064de6d8491e3a54d30a175d23ad9c732f37a8611d352e84c
+raw_sha256: dcd7fd7b274d39c0e2479bc7ebf95cf51c367ca888aa3d5b0bd530147df93e40
 retrieved_from: "https://web.archive.org/web/20130323005639/http://blog.whitehatsec.com/gravatar-email-enumeration-in-javascript/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:07:42+00:00"
+retrieved_utc: "2026-08-10T15:06:50+00:00"
 slug: blog-whitehatsec-com-gravatar-email-enumeration-javascript
 snapshot: 20130323005639
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20130323005639/http://blog.whitehatsec.com/gravatar-email-enumeration-in-javascript/>
-- Preserved from: https://web.archive.org/web/20130323005639/http://blog.whitehatsec.com/gravatar-email-enumeration-in-javascript/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20130323005639/http://blog.whitehatsec.com/gravatar-email-enumeration-in-javascript/ (live) on 2026-08-10
 - Capture timestamp: 20130323005639
 - Licence: unknown
 
@@ -89,4 +89,3 @@ And if the attacker can have a random browser on the Internet do this recon on h
 I’ve created an embeddable [example here](https://web.archive.org/web/20130323005639/http://ha.ckers.org/weird/gravatar.html) which demonstrates this enumeration.
 
 Once discovered, this is not an easy problem to fix, because so many people and sites use Gravatar, and it would require a forklift upgrade of their code to use something more secure than a simple MD5 hash. Therefore, it is probable that this issue will continue to exist for a long time – certainly as long as Gravatar exists and provides the features it currently offers. The result is the possibility of large-scale, spear-phishing campaigns against large corporations. Therefore, WhiteHat’s Threat Research Center recommends that corporate Internet users limit their employees from using Gravatar tied to their corporate email addresses when conducting company-specific business.
-

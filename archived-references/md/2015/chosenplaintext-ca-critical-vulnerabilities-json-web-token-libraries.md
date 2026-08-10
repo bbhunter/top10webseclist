@@ -5,9 +5,9 @@ resource: "https://www.chosenplaintext.ca/2015/03/31/jwt-algorithm-confusion.htm
 tags: [article, webseclist-reference, chosenplaintext-ca]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:58+00:00"
+  at: "2026-08-10T15:07:10+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.chosenplaintext.ca/2015/03/31/jwt-algorithm-confusion.html"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2015.md:57"
+  - "2015.md:53"
 commit: ""
 content_sha256: d59344c733e348a8a2514a79e1145fc4d3898770af9bc26e2a73cceb5d8a910d
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 523a0a2e27d7e83f52c3e62809ab1431b8edd33e2837e207eaf2579cb337a199
 retrieved_from: "https://www.chosenplaintext.ca/2015/03/31/jwt-algorithm-confusion.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:58+00:00"
+retrieved_utc: "2026-08-10T15:07:10+00:00"
 slug: chosenplaintext-ca-critical-vulnerabilities-json-web-token-libraries
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.chosenplaintext.ca/2015/03/31/jwt-algorithm-confusion.html>
-- Preserved from: https://www.chosenplaintext.ca/2015/03/31/jwt-algorithm-confusion.html (live) on 2026-08-08
+- Preserved from: https://www.chosenplaintext.ca/2015/03/31/jwt-algorithm-confusion.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

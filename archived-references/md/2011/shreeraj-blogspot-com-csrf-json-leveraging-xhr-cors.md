@@ -5,9 +5,9 @@ resource: "https://shreeraj.blogspot.com/2011/11/csrf-with-json-leveraging-xhr-a
 tags: [article, webseclist-reference, en, shreeraj-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:32+00:00"
+  at: "2026-08-10T15:58:58+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://shreeraj.blogspot.com/2011/11/csrf-with-json-leveraging-xhr-and-cors_28.html"
@@ -28,10 +28,10 @@ original_url: "https://shreeraj.blogspot.com/2011/11/csrf-with-json-leveraging-x
 published: ""
 publisher: shreeraj.blogspot.com
 publisher_english: ""
-raw_sha256: 74658e1be440cab7acdc42b7dc1fce84597fc28e6de1944d7a2b7d002f89f1a6
+raw_sha256: 6cf13dad4b0e3ef6d1fc8eb714937483f9e424d35c33f9415c4d36d364b51035
 retrieved_from: "https://shreeraj.blogspot.com/2011/11/csrf-with-json-leveraging-xhr-and-cors_28.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:32+00:00"
+retrieved_utc: "2026-08-10T15:58:58+00:00"
 slug: shreeraj-blogspot-com-csrf-json-leveraging-xhr-cors
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://shreeraj.blogspot.com/2011/11/csrf-with-json-leveraging-xhr-and-cors_28.html>
-- Preserved from: https://shreeraj.blogspot.com/2011/11/csrf-with-json-leveraging-xhr-and-cors_28.html (live) on 2026-08-09
+- Preserved from: https://shreeraj.blogspot.com/2011/11/csrf-with-json-leveraging-xhr-and-cors_28.html (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

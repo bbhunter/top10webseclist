@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/davis
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:56:17+00:00"
+  at: "2026-08-10T16:04:44+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/davis"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2018.md:87"
+  - "2018.md:83"
 commit: ""
 content_sha256: db018ecd54c50cfea5d699b92d595f8073c155b21f2e6fc87548b7030107bfd6
 depth: full
@@ -28,10 +28,10 @@ original_url: "https://www.usenix.org/conference/usenixsecurity18/presentation/d
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 6f7d9946aa71d773f07a39f09332fe8b34cd7491b6713cb85ca311b6f96c8397
+raw_sha256: 069178d756c7c7cea3f6dcd157ba009ab1ab02a17575f2d472368ec1c30f3231
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity18/presentation/davis"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:56:17+00:00"
+retrieved_utc: "2026-08-10T16:04:44+00:00"
 slug: usenix-org-sense-time-javascript-node-js-first-class-timeouts-as-cure-poisoning
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity18/presentation/davis>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity18/presentation/davis (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/conference/usenixsecurity18/presentation/davis (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

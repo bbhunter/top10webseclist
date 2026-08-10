@@ -5,9 +5,9 @@ resource: "https://people.engr.tamu.edu/guofei/paper/WARDroid_SP18.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:48+00:00"
+  at: "2026-08-10T15:35:58+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://people.engr.tamu.edu/guofei/paper/WARDroid_SP18.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2018.md:78"
+  - "2018.md:74"
 commit: ""
 content_sha256: 90413c5637108ebd798388c6ccbd32ec41da22a1eb710bcd03fa1c0711588aac
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: ba643f31e9a19684aea435ce391705c9182d3df69eb1121d640659e9a3906e42
 retrieved_from: "https://people.engr.tamu.edu/guofei/paper/WARDroid_SP18.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:48+00:00"
+retrieved_utc: "2026-08-10T15:35:58+00:00"
 slug: mobile-application-web-api-reconnaissance-web-mobile-vulnerabilities
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://people.engr.tamu.edu/guofei/paper/WARDroid_SP18.pdf>
-- Preserved from: https://people.engr.tamu.edu/guofei/paper/WARDroid_SP18.pdf (live) on 2026-08-08
+- Preserved from: https://people.engr.tamu.edu/guofei/paper/WARDroid_SP18.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

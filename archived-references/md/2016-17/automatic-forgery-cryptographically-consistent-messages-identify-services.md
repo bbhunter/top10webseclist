@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-f
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:29+00:00"
+  at: "2026-08-10T15:35:02+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:75"
+  - "2016-17.md:69"
 commit: ""
 content_sha256: 7a242b43abe67078063dbc6fa3904d43ddcf9bef117c3b257c96f5a13b5e6b98
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 6d5ce4d54e9503712e36e8798aa7285752e9e84e75f3af3852ce4de59ac2896f
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:29+00:00"
+retrieved_utc: "2026-08-10T15:35:02+00:00"
 slug: automatic-forgery-cryptographically-consistent-messages-identify-services
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf (live) on 2026-08-08
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -269,6 +269,7 @@ Step
 ¸
 or right after the execution of
 Step
+·
 .
 
 Step
@@ -942,6 +943,7 @@ A. Security ImplicationsAUTOFORGEhas demonstrated that lack of security checks a
 
 --- page 18 ---
 
+
 Limiting the number of login attempts. One sim-ple solution app developers can adopt is to keep alogin attempt state at the server side and limit thenumber of login attempts within a certain time win-dow. We only found 11 out of 76 apps (14%), suchascom.imdb.mobile, that followed this approach.While this solution cannot defeat leaked username andpassword probing attacks, it can defeat at least userpassword brute forcing. Meanwhile, unlike CAPTCHAand two factor-authentication discussed below, thisdefense will not change any user's experience.
 
 Using CAPTCHA. Automatic data forgery is not a newattack, and there are already solutions to mitigate this.One way that has been widely used on the desktop isthe CAPTCHA [34]. A CAPTCHA is a program thatprotects websites against automated resource abusingor login attempts. However, we have not seen muchusage in mobile apps. We believe one reason is thatCAPTCHA might hurt user experience. However, aswe have demonstrated in this paper, to really slowdown attackers, CAPTCHA is a viable approach, thoughCAPTCHA can also be broken [33].
@@ -1087,13 +1089,11 @@ APP SERVERS
 --- page 23 ---
 
 YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
-½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
+ $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
 
 --- page 24 ---
 
-ÒŽ¼óÕ¬¿`ï@«¤p
-êíÀJ2è’Q‘klÁËzàcÌäºš‚¯�f¤»ˆ¢à¶ÃÜjö¾ÝOé+7a˜{í²Hík» •VÁÝÒ€ïç‹¼~,-¹KûÆ;G¤‚ˆ¾D�Ÿ+‘<¶J
+ÒŽ¼óÕ¬¿`ï@«¤pêíÀJ2è’Q‘klÁËzàcÌäºš‚¯�f¤»ˆ¢à¶ÃÜjö¾ÝOé+7a˜{í²Hík» •VÁÝÒ€ïç‹¼~,-¹KûÆ;G¤‚ˆ¾D�Ÿ+‘<¶J
 
 --- page 25 ---
 

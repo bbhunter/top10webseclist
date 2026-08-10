@@ -5,9 +5,9 @@ resource: "https://css.csail.mit.edu/6.858/2012/readings/oauth-sso.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:51:39+00:00"
+  at: "2026-08-10T15:08:14+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://css.csail.mit.edu/6.858/2012/readings/oauth-sso.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2012.md:87"
+  - "2012.md:81"
 commit: ""
 content_sha256: b0159bc7141344bbab436b1a0abfd52169a23d27c1dd8fe355d2f6c883c2ac5d
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 98667a1563c2e064652a00b1ff2e1ba1e1e2175ecf2ca066b03c73343c091fa9
 retrieved_from: "https://css.csail.mit.edu/6.858/2012/readings/oauth-sso.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:51:39+00:00"
+retrieved_utc: "2026-08-10T15:08:14+00:00"
 slug: devil-implementation-details-empirical-analysis-oauth-sso-systems
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://css.csail.mit.edu/6.858/2012/readings/oauth-sso.pdf>
-- Preserved from: https://css.csail.mit.edu/6.858/2012/readings/oauth-sso.pdf (live) on 2026-08-08
+- Preserved from: https://css.csail.mit.edu/6.858/2012/readings/oauth-sso.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

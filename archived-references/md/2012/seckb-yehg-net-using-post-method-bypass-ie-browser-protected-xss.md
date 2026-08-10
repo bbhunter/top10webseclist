@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012
 tags: [article, webseclist-reference, seckb-yehg-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:40:14+00:00"
+  at: "2026-08-10T15:57:56+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/06/using-post-method-to-bypass-ie-browser.html"
@@ -32,10 +32,10 @@ original_url: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/
 published: ""
 publisher: seckb.yehg.net
 publisher_english: ""
-raw_sha256: ef1af1f5faa28eba2f9d3ef51bfe1a4834be2bbedf6112b1be9042241962e5cc
+raw_sha256: 2c9e9562a5bab989186926c88c1f61b1d06f00dfc61e39faaa31722532ecfac3
 retrieved_from: "https://web.archive.org/web/20171009145357/http://seckb.yehg.net/2012/06/using-post-method-to-bypass-ie-browser.html"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:40:14+00:00"
+retrieved_utc: "2026-08-10T15:57:56+00:00"
 slug: seckb-yehg-net-using-post-method-bypass-ie-browser-protected-xss
 snapshot: 20170903113359
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/06/using-post-method-to-bypass-ie-browser.html>
 - Current location: <https://web.archive.org/web/20171009145357/http://seckb.yehg.net/2012/06/using-post-method-to-bypass-ie-browser.html>
-- Preserved from: https://web.archive.org/web/20171009145357/http://seckb.yehg.net/2012/06/using-post-method-to-bypass-ie-browser.html (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20171009145357/http://seckb.yehg.net/2012/06/using-post-method-to-bypass-ie-browser.html (live) on 2026-08-10
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

@@ -5,9 +5,9 @@ resource: "https://web.archive.org/web/20160403035045/http://insertco.in/2014/02
 tags: [article, webseclist-reference, en, insertco-in]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:48+00:00"
+  at: "2026-08-10T15:29:25+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://insertco.in/2014/02/10/how-i-hacked-instagram/"
@@ -34,10 +34,10 @@ original_url: "https://web.archive.org/web/20160403035045/http://insertco.in/201
 published: ""
 publisher: insertco.in
 publisher_english: ""
-raw_sha256: 12b1194e2e124f54c1933987ae83e4ac36f14f43f152ba675e28314c060f7954
+raw_sha256: c9dd3d76cb2e63d11b998c723703a75e86082533e4eb63766443f66d12becffc
 retrieved_from: "https://web.archive.org/web/20160322204622/http://insertco.in/2014/02/10/how-i-hacked-instagram/"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:48+00:00"
+retrieved_utc: "2026-08-10T15:29:25+00:00"
 slug: insertco-in-how-i-hacked-instagram-see-your-private-photos
 snapshot: 20160403035045
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/http://insertco.in/2014/02/10/how-i-hacked-instagram/>
 - Current location: <https://web.archive.org/web/20160322204622/http://insertco.in/2014/02/10/how-i-hacked-instagram/>
-- Preserved from: https://web.archive.org/web/20160322204622/http://insertco.in/2014/02/10/how-i-hacked-instagram/ (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20160322204622/http://insertco.in/2014/02/10/how-i-hacked-instagram/ (live) on 2026-08-10
 - Capture timestamp: 20160403035045
 - Licence: unknown
 

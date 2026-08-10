@@ -5,9 +5,9 @@ resource: "https://www.cs.uic.edu/~polakis/papers/lin-sp23.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:51:21+00:00"
+  at: "2026-08-10T15:07:55+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.cs.uic.edu/~polakis/papers/lin-sp23.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2023.md:95"
+  - "2023.md:90"
 commit: ""
 content_sha256: 2a63b47016677d6c47b10d285e3545be73fa1eb3c55033b05ee68a255d882069
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: c17998dae976f0f381f8ef35caa83d8bf7ec18107070122b2c4e12e9a3e6c529
 retrieved_from: "https://www.cs.uic.edu/~polakis/papers/lin-sp23.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:51:21+00:00"
+retrieved_utc: "2026-08-10T15:07:55+00:00"
 slug: fashion-faux-pas-implicit-stylistic-fingerprints-bypassing-browsers-defenses
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.cs.uic.edu/~polakis/papers/lin-sp23.pdf>
-- Preserved from: https://www.cs.uic.edu/~polakis/papers/lin-sp23.pdf (live) on 2026-08-08
+- Preserved from: https://www.cs.uic.edu/~polakis/papers/lin-sp23.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -73,6 +73,7 @@ y
 , Jiyong Jang
 y
 , Jason Polakis
+
 
 University of Illinois Chicago,
 y
@@ -296,8 +297,8 @@ we use dimensional data, none of the font families need to bewri‹en in the med
 --- page 7 ---
 
 þý8ZJ²ÄCR6N%GkQÎú;XC&s=gR>*'‚',TzM.TG8
-5Rn/L5þ]#;OýÝ:X<þ87Raÿð9—°…+X³;+¸ÿè³M+¸ÿð³M+¸ÿì³
-M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10±!¸/³l!&¸,´lS5¸*³l5	0¸.²l	V?+Ä+?+Ä+01Y%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+5Rn/L5þ]#;OýÝ:X<þ87Raÿð9—°…+X³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10±!¸/³l!&¸,´lS5¸*³l5	0¸.²l	V?+Ä+?+Ä+01Y%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+·
 
 --- page 8 ---
 
@@ -652,23 +653,19 @@ url (/ Firefox-Tor-macOS ); } }CSS features directly with requests. To reduce th
 
 --- page 20 ---
 
-" +K°_PX@,&$$ K°lPX@*&&$ @3&&#$!YY°8+3!2#!2>54&#%!2>54&#!®É„¿{;!CeD� C�»xþÇ6SwM$�ŸþËRxO&˜ þù™4`‹W5bTB¤†[–l;�þ
-&E_9o�Š$@[6~vZÿð	©.Í@;`{�{`;;p¥kxÆJ¹"
+" +K°_PX@,&$$ K°lPX@*&&$ @3&&#$!YY°8+3!2#!2>54&#%!2>54&#!®É„¿{;!CeD� C�»xþÇ6SwM$�ŸþËRxO&˜ þù™4`‹W5bTB¤†[–l;�þ&E_9o�Š$@[6~vZÿð	©.Í@;`{�{`;;p¥kxÆJ¹"
 
 --- page 21 ---
 
-" +K°_PX@,&$$ K°lPX@*&&$ @3&&#$!YY°8+3!2#!2>54&#%!2>54&#!®É„¿{;!CeD� C�»xþÇ6SwM$�ŸþËRxO&˜ þù™4`‹W5bTB¤†[–l;�þ
-&E_9o�Š$@[6~vZÿð	©.Í@;`{�{`;;p¥kxÆJ¹"
+" +K°_PX@,&$$ K°lPX@*&&$ @3&&#$!YY°8+3!2#!2>54&#%!2>54&#!®É„¿{;!CeD� C�»xþÇ6SwM$�ŸþËRxO&˜ þù™4`‹W5bTB¤†[–l;�þ&E_9o�Š$@[6~vZÿð	©.Í@;`{�{`;;p¥kxÆJ¹"
 
 --- page 22 ---
 
-" +K°_PX@,&$$ K°lPX@*&&$ @3&&#$!YY°8+3!2#!2>54&#%!2>54&#!®É„¿{;!CeD� C�»xþÇ6SwM$�ŸþËRxO&˜ þù™4`‹W5bTB¤†[–l;�þ
-&E_9o�Š$@[6~vZÿð	©.Í@;`{�{`;;p¥kxÆJ¹"
+" +K°_PX@,&$$ K°lPX@*&&$ @3&&#$!YY°8+3!2#!2>54&#%!2>54&#!®É„¿{;!CeD� C�»xþÇ6SwM$�ŸþËRxO&˜ þù™4`‹W5bTB¤†[–l;�þ&E_9o�Š$@[6~vZÿð	©.Í@;`{�{`;;p¥kxÆJ¹"
 
 --- page 23 ---
 
-" +K°_PX@,&$$ K°lPX@*&&$ @3&&#$!YY°8+3!2#!2>54&#%!2>54&#!®É„¿{;!CeD� C�»xþÇ6SwM$�ŸþËRxO&˜ þù™4`‹W5bTB¤†[–l;�þ
-&E_9o�Š$@[6~vZÿð	©.Í@;`{�{`;;p¥kxÆJ¹"
+" +K°_PX@,&$$ K°lPX@*&&$ @3&&#$!YY°8+3!2#!2>54&#%!2>54&#!®É„¿{;!CeD� C�»xþÇ6SwM$�ŸþËRxO&˜ þù™4`‹W5bTB¤†[–l;�þ&E_9o�Š$@[6~vZÿð	©.Í@;`{�{`;;p¥kxÆJ¹"
 
 --- page 24 ---
 
@@ -864,11 +861,9 @@ YXiºØððßîéHp9ôJçÁ*W®‹œB4×…»yV
 
 --- page 29 ---
 
-ãô9¨jÕÈÖ­B•°¼¡’GÍL‚Þƒ½Æ¢Y#„'K›�CköN=E­zycŽ#`Ï•ncÄ^
-&èâ™áÌ ö‘M,ñG"LŸçª*žPË“î¡
+ãô9¨jÕÈÖ­B•°¼¡’GÍL‚Þƒ½Æ¢Y#„'K›�CköN=E­zycŽ#`Ï•ncÄ^&èâ™áÌ ö‘M,ñG"LŸçª*žPË“î¡
 
 --- page 30 ---
 
 YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
-½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
+ $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u

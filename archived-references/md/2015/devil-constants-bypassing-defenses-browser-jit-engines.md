@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/09_1_2.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:24+00:00"
+  at: "2026-08-10T15:34:56+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/09_1_2.pdf"
@@ -16,7 +16,7 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2015.md:73"
+  - "2015.md:69"
 commit: ""
 content_sha256: bf6e085029df8dad0d1e606a1fbfa0ec99cd135ae5b0c0ccbb92dae502facaee
 depth: full
@@ -31,7 +31,7 @@ publisher_english: ""
 raw_sha256: 39957a59acc753930b70b718dc974f89bbaa0d8a2ecca144f927b150321568bc
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/09_1_2.pdf"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:24+00:00"
+retrieved_utc: "2026-08-10T15:34:56+00:00"
 slug: devil-constants-bypassing-defenses-browser-jit-engines
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/09_1_2.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/09_1_2.pdf (live) on 2026-08-08
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/09_1_2.pdf (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

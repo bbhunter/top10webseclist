@@ -5,9 +5,9 @@ resource: "https://blackhat.com/archive/europe/2017/briefings.html#breaking-out-
 tags: [article, webseclist-reference, blackhat-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:06+00:00"
+  at: "2026-08-10T15:03:08+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://blackhat.com/archive/europe/2017/briefings.html#breaking-out-hsts"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:118"
+  - "2016-17.md:112"
 commit: ""
-content_sha256: e52b3b0a272171ed5895ae237a89079006c4f4a73340852f08dabe48b4772f22
+content_sha256: 41fcaef1c1ac79899a50f2fae1bd23e65a4ac37ee2f2fec3e3d9d5ff2154b4da
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +28,10 @@ original_url: "https://blackhat.com/archive/europe/2017/briefings.html#breaking-
 published: ""
 publisher: blackhat.com
 publisher_english: ""
-raw_sha256: 9252dc9efb362694ea4640485f2192cb1e27617a18763f4aff412529db87813b
+raw_sha256: 2f14513b7606cf71f2819c92373ef5bc539a7527522fe8e4f08671322fdb9417
 retrieved_from: "https://blackhat.com/archive/europe/2017/briefings.html#breaking-out-hsts"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:06+00:00"
+retrieved_utc: "2026-08-10T15:03:08+00:00"
 slug: blackhat-com-black-hat-europe-2017
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://blackhat.com/archive/europe/2017/briefings.html#breaking-out-hsts>
-- Preserved from: https://blackhat.com/archive/europe/2017/briefings.html#breaking-out-hsts (live) on 2026-08-08
+- Preserved from: https://blackhat.com/archive/europe/2017/briefings.html#breaking-out-hsts (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -154,8 +154,6 @@ Black Hat Europe 2017 | Briefings
 
 ---
 
- 
-
 ## Diplomacy and Combating Evolving International Cyber Threats
 
 Governments and high-level executives have transitioned from seeing both policy and technical cyber threats as solely technical issues to core issues of national security, economic policy, human rights and, ultimately, foreign policy. Drawing on experience at the U.S. Department of Justice, at the White House, and finally at the U.S. State Department, I will detail the evolving cyber landscape and growing efforts to counter cyber threats internationally. I will focus on the emerging field of international "cyber diplomacy" and reveal how these tools have been used in particular cases as well as to counter larger policy threats posed by repressive regimes. I'll also outline efforts to promote norms (rules of the road) in cyberspace and the role of attribution and deterrence. Finally, I will examine challenges that lie ahead and the need for the policy and technical communities to work together globally to meet those challenges.
@@ -165,8 +163,6 @@ Governments and high-level executives have transitioned from seeing both policy 
  [Chris Painter](https://blackhat.com/archive/europe/2017/speakers/Chris-Painter.html)
 
 ---
-
- 
 
 ## Security Through Distrusting
 
@@ -192,8 +188,6 @@ In this talk, based on my prior work as both offensive researcher in the past, a
 
 ---
 
- 
-
 ## A Process is No One: Hunting for Token Manipulation
 
 Does your organization want to start Threat Hunting, but you're not sure how to begin? Most people start with collecting ALL THE DATA, but data means nothing if you're not able to analyze it properly. This talk begins with the often overlooked first step of hunt hypothesis generation which can help guide targeted collection and analysis of forensic artifacts. We will demonstrate how to use the MITRE ATTACK Framework and our five-phase Hypothesis Generation Process to develop actionable hunt processes, narrowing the scope of your Hunt operation and avoiding "analysis paralysis." We will then walk through a detailed case study of detecting access token impersonation/manipulation from concept to technical execution by way of the Hypothesis Generation Process. Along the way, we will detail some of the most common access token manipulations in use and detail the defensive detection implications for each of these cases. This comprehensive case study will better arm both attackers and defenders with how to better utilize their toolset to detect or avoid detection of token theft and manipulation.
@@ -205,8 +199,6 @@ Does your organization want to start Threat Hunting, but you're not sure how to 
  [Jared Atkinson](https://blackhat.com/archive/europe/2017/speakers/Jared-Atkinson.html) & [Robby Winchester](https://blackhat.com/archive/europe/2017/speakers/Robby-Winchester.html)
 
 ---
-
- 
 
 ## A Universal Controller to Take Over a Z-Wave Network
 
@@ -226,8 +218,6 @@ With the advent of Internet-of-Things, Z-Wave is a major communication protocol 
 
 ---
 
- 
-
 ## Attacking NextGen Roaming Networks
 
 Weaknesses of SS7 Roaming Networks are well known – but what about the Diameter interfaces coming up at the moment? Diameter is and will be used for roaming connections of LTE/LTE-A mobile networks - a new architecture, and a new implementation. But still, one remains the same: it is a AAA protocol designed for trusted environments - roaming interconnection interfaces between providers.
@@ -245,8 +235,6 @@ Weaknesses of SS7 Roaming Networks are well known – but what about the Diamete
  [Hendrik Schmidt](https://blackhat.com/archive/europe/2017/speakers/Hendrik-Schmidt.html) & [Daniel Mende](https://blackhat.com/archive/europe/2017/speakers/Daniel-Mende.html)
 
 ---
-
- 
 
 ## Attacks Against GSMA's M2M Remote Provisioning
 
@@ -266,8 +254,6 @@ These attacks arise from flaws in the specification, and we will discuss fixes t
 
 ---
 
- 
-
 ## Automatic Discovery of Evasion Vulnerabilities Using Targeted Protocol Fuzzing
 
 Network protocol normalization and reassembly is the basis of traffic inspection performed by NGFW and IPS devices. Even common network protocols are complex with multiple possible interpretations for the same traffic sequence. We present a novel method for automated discovery of errors in traffic normalization by targeted protocol stack fuzzing. These errors can be used by attackers to evade detection and bypass security devices. We will demonstrate the techniques against up-to-date security devices and show that many security devices still have basic evasion vulnerabilities. The tools used will be publicly available after this presentation.
@@ -280,8 +266,6 @@ Network protocol normalization and reassembly is the basis of traffic inspection
 
 ---
 
- 
-
 ## Becoming You: A Glimpse into Credential Abuse
 
 In recent years, security threats have exponentially increased, as have the potential solutions to detect and mitigate these threats. The question often is, where in the workflow to deploy respective detection and mitigation strategies that are risk averse while maintaining efficacy. For a given strategy, the idea is to observe the request workflow to determine how the request presents itself in terms of headers and other attributes that describe the request, how the client processes the challenge questions, and how the request is managed accordingly. Detection is managing things we know such as partner bots, aggregators, and search engines. Detection strategies include both request and session anomalies, and more specifically, session tracking, rate detection, workflow validation, behavioral detection, fingerprint anomalies, header anomalies, and cookie validation. Mitigation strategies include alternate actions such as static content and/or honey pots, deny, request rate modification, and tarpit actions using session black-holing. In this talk, we discuss how to detect and mitigate vulnerabilities using CDNs or existing back end platform architecture. CDN based technology helps to offload security protection during request flow versus relying solely on the origin. With or without CDN specific functionality, platform techniques helps to manage security at the earliest point in the request flow across all nodes within the back end architecture in order to correlate data amongst nodes based on attributes and reputational intelligence to provide actionable data to the system.
@@ -293,8 +277,6 @@ In recent years, security threats have exponentially increased, as have the pote
  [Sonia Burney](https://blackhat.com/archive/europe/2017/speakers/Sonia-Burney.html) & [Brent Maynard](https://blackhat.com/archive/europe/2017/speakers/Brent-Maynard.html)
 
 ---
-
- 
 
 ## BlueBorne - A New Class of Airborne Attacks that can Remotely Compromise Any Linux/IoT Device
 
@@ -312,8 +294,6 @@ The thought of a cyber attack spreading through the air like a plague was only a
 
 ---
 
- 
-
 ## Breaking Bad: Stealing Patient Data Through Medical Devices
 
 This talk discusses the risks of connected healthcare devices. It looks at the benefits of adopting IoT for medical devices, current exposure, common communication channels in use as well as interconnectivity approaches used with other critical components. Based off output from security assessments performed against medical devices widely deployed at various hospitals and medical institutions, I will present an in-depth analysis of the target medical device and elaborate on how I was able to compromise it to gain access to plethora of medical records from all the medical institutions it was deployed at and not just the one where our target device was hosted.
@@ -329,8 +309,6 @@ This talk discusses the risks of connected healthcare devices. It looks at the b
  [Saurabh Harit](https://blackhat.com/archive/europe/2017/speakers/Saurabh-Harit.html)
 
 ---
-
- 
 
 ## Breaking Out HSTS (and HPKP) on Firefox IE/Edge and (Possibly) Chrome
 
@@ -350,8 +328,6 @@ Observing Microsoft's reports, the Edge browser - and its previous version, Inte
 
 ---
 
- 
-
 ## By-design Backdooring of Encryption System - Can We Trust Foreign Encryption Algorithms
 
 Recent years have shown that more than ever governments and intelligence agencies strive to control and bypass the cryptographic means used for the protection of data and communications. Backdooring encryption algorithms is considered as the best way to enforce cryptographic control. Until now, only implementation backdoors (at the protocol/implementation/management level) are generally considered. In this paper we propose to address the most critical issue of backdoors: mathematical backdoors or by-design backdoors, which are put directly at the mathematical design of the encryption algorithm. While the algorithm may be totally public, proving that there is a backdoor, identifying it and exploiting it, may be an intractable problem.
@@ -367,8 +343,6 @@ Recent years have shown that more than ever governments and intelligence agencie
  [Eric Filiol](https://blackhat.com/archive/europe/2017/speakers/Eric-Filiol.html) & [Arnaud Bannier](https://blackhat.com/archive/europe/2017/speakers/Arnaud-Bannier.html)
 
 ---
-
- 
 
 ## CALDERA: Automating Adversary Emulation
 
@@ -388,8 +362,6 @@ Adversarial assessment of a network is a critical part of securing and hardening
 
 ---
 
- 
-
 ## CLKSCREW: Exposing the Perils of Security-Oblivious Energy Management
 
 The need for power and energy-efficient computing has resulted in aggressive cooperative hardware-software energy management mechanisms on modern commodity devices. Most systems today, for example, allow software to control the frequency and voltage of the underlying hardware at a very fine granularity to extend battery life. Despite their benefits, these software-exposed energy management mechanisms pose grave security implications that have not been studied before.
@@ -404,8 +376,6 @@ The need for power and energy-efficient computing has resulted in aggressive coo
 
 ---
 
- 
-
 ## Dealing the Perfect Hand - Shuffling Memory Blocks on z/OS
 
 Follow me on a journey where we pwn one of the most secure platforms on earth. A giant mammoth that still powers the most critical business functions around the world: The Mainframe! Be it a wire transfer, an ATM withdrawal, or a flight booking, you can be sure that you've used the trusted services of a Mainframe at least once during the last 24 hours. In this talk, I will present methods of privilege escalation on IBM z/OS: How to leverage a simple access to achieve total control over the machine and impersonate other users. If you are interested in mainframes or merely curious to see a what memory manipulation looks like on z/OS, you are welcome to tag along.
@@ -417,8 +387,6 @@ Follow me on a journey where we pwn one of the most secure platforms on earth. A
  [Ayoub Elaassal](https://blackhat.com/archive/europe/2017/speakers/Ayoub-Elaassal.html)
 
 ---
-
- 
 
 ## DIFUZZing Android Kernel Drivers
 
@@ -444,8 +412,6 @@ As the rest of the Android security infrastructure improves, the Android/Linux k
 
 ---
 
- 
-
 ## Enraptured Minds: Strategic Gaming of Cognitive Mindhacks
 
 There is no spoon! We live in the Matrix and no information can be trusted without validation. Content promotion services have been available in the grey market for some time, but the Fake News Phenomena did not gain public attention until a number of media outlets argued that several elections were heavily influenced by fake news. In this presentation, we will demonstrate tools and methods available to public mind manipulators, and walk through a selection of previous research, including USSR's study on public control and a Chinese study on crisis management. Moreover, we take Twitter posts as examples to demonstrate how significant social events are used by malefactors to promote their own agenda. We will also demonstrate a number of techniques used by cyber propaganda perpetrators, as well as how to detect their activities. To conclude, we will visit several underground markets to see how the services facilitate opinion manipulation.
@@ -457,8 +423,6 @@ There is no spoon! We live in the Matrix and no information can be trusted witho
  [Vladimir Kropotov](https://blackhat.com/archive/europe/2017/speakers/Vladimir-Kropotov.html) & [Fyodor Yarochkin](https://blackhat.com/archive/europe/2017/speakers/Fyodor-Yarochkin.html) & [Lion Gu](https://blackhat.com/archive/europe/2017/speakers/Lion-Gu.html)
 
 ---
-
- 
 
 ## Exfiltrating Reconnaissance Data from Air-Gapped ICS/SCADA Networks
 
@@ -480,8 +444,6 @@ Air-gapped industrial networks are assumed to be impenetrable because they are d
 
 ---
 
- 
-
 ## Exposing Hidden Exploitable Behaviors in Programming Languages Using Differential Fuzzing
 
 Securely developed applications may have unidentified vulnerabilities in the underlying programming languages. Attackers can target these programming language flaws to alter applications' behavior. This means applications are only as secure as the programming languages parsing the code.
@@ -500,8 +462,6 @@ Securely developed applications may have unidentified vulnerabilities in the und
 
 ---
 
- 
-
 ## Fed Up Getting Shattered and Log Jammed? A New Generation of Crypto is Coming
 
 The SHA-3 standard came out in 2015 including the new hash function SHA-3 itself (based on a sponge construction) as well as SHAKE, a new kind of hash function called XOF. This talk will first go over these two modern algorithms, and will then introduce the other standardized functions derived from SHA-3 (KMAC, TupleHash, ParallelHash) and the more mature, modern and faster hash functions based on SHA-3: KangarooTwelve and MarsupilamiFourteen. The second part of the talk will focus on cryptographic protocols created out of SHA-3: Strobe, a symmetric protocol to protect traffic which only relies on SHA-3 as its core cryptographic function; Disco, a Noise (TLS-like) protocol and library leveraging SHA-3's properties to minimize the number of cryptographic primitives, reduce the code size, simplify the logic and increase the capabilities (hashing, generation of random numbers, derivation of keys, signing, encryption, authentication).
@@ -513,8 +473,6 @@ The SHA-3 standard came out in 2015 including the new hash function SHA-3 itself
  [David Wong](https://blackhat.com/archive/europe/2017/speakers/David-Wong.html)
 
 ---
-
- 
 
 The European Union's General Data Protection Regulation (GDPR) is set to go into effect in a matter of months, and already it is having a profound effect. Under GDPR rules, companies that collect or store data belonging to EU citizens or entities are required to provide top-notch privacy and security to protect that data; otherwise they could could face huge fines – as large as €20m.
 
@@ -532,8 +490,6 @@ The European Union's General Data Protection Regulation (GDPR) is set to go into
 
 ---
 
- 
-
 ## Heap Layout Optimisation for Exploitation
 
 Heap-based overflows and underflows are a common vulnerability in software built in C and C++. When leveraging such a vulnerability as part of an exploit, an attacker will usually try to position the chunk which is the source of the overflow or underflow relative to a specific victim chunk. The less collateral data between the source chunk and the victim chunk, the more optimal the layout. This is typically a problem that is solved manually and requires an in-depth understanding of the heap allocator in use and how the target application interacts with it.
@@ -549,8 +505,6 @@ Heap-based overflows and underflows are a common vulnerability in software built
  [Sean Heelan](https://blackhat.com/archive/europe/2017/speakers/Sean-Heelan.html)
 
 ---
-
- 
 
 ## Hiding Pin's Artifacts to Defeat Evasive Malware
 
@@ -570,8 +524,6 @@ Malware authors constantly develop new techniques in order to evade analysis sys
 
 ---
 
- 
-
 ## How Samsung Secures Your Wallet and How to Break It
 
 Samsung launched its mobile payment service -- SamsungPay. For about two years, few discussion have been made public. In this talk, we will demystify every detail of SamsungPay implementation and security mechanism. In addition, we will discuss the way to bypass those obstacle that block analyzing.
@@ -583,8 +535,6 @@ Samsung launched its mobile payment service -- SamsungPay. For about two years, 
  [HC MA](https://blackhat.com/archive/europe/2017/speakers/HC-MA.html)
 
 ---
-
- 
 
 ## How to Hack a Turned-Off Computer or Running Unsigned Code in Intel Management Engine
 
@@ -602,8 +552,6 @@ Intel Management Engine is a proprietary technology that consists of a microcont
 
 ---
 
- 
-
 This talk will be 50% real audio from a social engineering engagement and 50% lessons learned from the call. During this call I talk a VP at a bank into giving us full access to his computer as well as facilities. At one point during the call, the AV triggers (thanks to a junior submitting the payload to virustotal :)). This is an intense call with a ton of valuable lessons for any social engineer or defender looking to learn how to identify attacks.
 
  [![](https://blackhat.com/images/page-graphics-usa-17/icon_slides.png) ](https://blackhat.com/docs/eu-17/materials/eu17-Crumbaugh-How-To-Rob-A-Bank-Over-The-Phone.pdf)
@@ -613,8 +561,6 @@ This talk will be 50% real audio from a social engineering engagement and 50% le
  [Joshua Crumbaugh](https://blackhat.com/archive/europe/2017/speakers/Joshua-Crumbaugh.html)
 
 ---
-
- 
 
 ## I Trust My Zombies: A Trust-Enabled Botnet
 
@@ -629,8 +575,6 @@ Defending against botnets has always been a cat and mouse game. Cyber-security r
  [Emmanouil Vasilomanolakis](https://blackhat.com/archive/europe/2017/speakers/Emmanouil-Vasilomanolakis.html) & [Max Mühlhäuser](https://blackhat.com/archive/europe/2017/speakers/Max-Mühlhäuser.html) & [Jan Helge Wolf](https://blackhat.com/archive/europe/2017/speakers/Jan-Helge-Wolf.html) & [Leon Böck](https://blackhat.com/archive/europe/2017/speakers/Leon-Böck.html) & [Shankar Karuppayah](https://blackhat.com/archive/europe/2017/speakers/Shankar-Karuppayah.html)
 
 ---
-
- 
 
 ## Inside Android's SafetyNet Attestation
 
@@ -650,8 +594,6 @@ Many app developers often have questions like the following: "Is the device my a
 
 ---
 
- 
-
 ## Intel ME: Flash File System Explained
 
 Intel Management Engine (ME) technology has been around for over 10 years (since 2005), but it seems impossible to find any official information about ME on the Internet. Fortunately, some studies have been published in recent years; however, all of them deal with ME 10 and earlier, while modern computers implement ME 11 (introduced in 2015 for Skylake microarchitecture). In our presentation, we explain in detail how ME 11.x stores its state on the flash and the other types of file systems that are supported by ME 11.x.
@@ -663,8 +605,6 @@ Intel Management Engine (ME) technology has been around for over 10 years (since
  [Dmitry Sklyarov](https://blackhat.com/archive/europe/2017/speakers/Dmitry-Sklyarov.html)
 
 ---
-
- 
 
 ## Jailbreaking Apple Watch
 
@@ -679,8 +619,6 @@ On April 24, 2015, Apple launched themselves into the wearables category with th
  [Max Bazaliy](https://blackhat.com/archive/europe/2017/speakers/Max-Bazaliy.html)
 
 ---
-
- 
 
 ## Key Reinstallation Attacks: Breaking the WPA2 Protocol
 
@@ -700,8 +638,6 @@ Finally, we confirmed our findings in practice, and found that every Wi-Fi devic
 
 ---
 
- 
-
 ## Locknote: Conclusions and Key Takeaways from Black Hat Europe 2017
 
 At the close of this year's conference, join Black Hat Founder Jeff Moss and members of the esteemed Black Hat Review Board for an insightful conversation on the most pressing issues facing the InfoSec community. This Locknote will feature a candid discussion on the key takeaways coming out of Black Hat Europe and how these trends will impact future InfoSec strategies.
@@ -711,8 +647,6 @@ At the close of this year's conference, join Black Hat Founder Jeff Moss and mem
  [Jeff Moss](https://blackhat.com/archive/europe/2017/speakers/Jeff-Moss.html) & [Sharon Conheady](https://blackhat.com/archive/europe/2017/speakers/Sharon-Conheady.html) & [Andreas Lindh](https://blackhat.com/archive/europe/2017/speakers/Andreas-Lindh.html) & [Shawn Moyer](https://blackhat.com/archive/europe/2017/speakers/Shawn-Moyer.html)
 
 ---
-
- 
 
 ## Lost in Transaction: Process Doppelgänging
 
@@ -730,8 +664,6 @@ Process Hollowing is a technique first introduced years ago by attackers to thwa
 
 ---
 
- 
-
 ## Nation-State Moneymule's Hunting Season – APT Attacks Targeting Financial Institutions
 
 Lazarus, Bluenoroff, and Andariel are three notorious APT groups from North Korea infamous for deconstruction, cyber heist, and espionage attacks. From DarkSeoul to Sony Picture Entertainment breach, the groups conducted several operations that have received international public attention.
@@ -747,8 +679,6 @@ Lazarus, Bluenoroff, and Andariel are three notorious APT groups from North Kore
  [Chi-en (Ashley) Shen](https://blackhat.com/archive/europe/2017/speakers/Chi-en-(Ashley)-Shen.html) & [Kyoung-ju Kwak](https://blackhat.com/archive/europe/2017/speakers/Kyoung-ju-Kwak.html) & [Min-Chang Jang](https://blackhat.com/archive/europe/2017/speakers/Min-Chang-Jang.html)
 
 ---
-
- 
 
 ## Passive Fingerprinting of HTTP/2 Clients
 
@@ -767,8 +697,6 @@ HTTP/2 is the second major version of the HTTP protocol. It changes the way HTTP
 
 ---
 
- 
-
 ## Red Team Techniques for Evading Bypassing and Disabling MS Advanced Threat Protection and Advanced Threat Analytics
 
 Windows Defender Advanced Threat Protection is now available for all Blue Teams to utilize within Windows 10 Enterprise and Server 2012/16, which includes detection of post breach tools, tactics and techniques commonly used by Red Teams, as well as behavior analytics. Combined with Microsoft Advanced Threat Analytics for user behavior analytics across the Domain, Red Teamers will soon face a significantly more challenging time maintaining stealth while performing internal recon, lateral movement, and privilege escalation in Windows 10/Active Directory environments.
@@ -783,8 +711,6 @@ This talk highlights challenges to red teams posed by Microsoft's new tools base
 
 ---
 
- 
-
 ## Ro(o)tten Apples: Vulnerability Heaven in the iOS Sandbox
 
 In modern days, no exploitation chain can be considered complete without a reliable privilege escalation vulnerability. This is why many security researchers spend a lot of their research time in finding those vulnerabilities. Apple has set a new standard in iOS security by implementing many innovative techniques to prevent exploitation of PE vulnerabilities, however despite their continuous efforts some areas of iOS still remain more exposed than others to this kind of vulnerabilities. This presentation will shed a light on some critical areas in the iOS kernel, that have been proven to contain many privilege escalation vulnerabilities that can potentially affect hundred of millions of iOS devices. In this talk, we will overview these yet unexplored areas and present a chain of vulnerabilities, leading to a complete kernel privilege escalation exploit while bypassing all the latest kernel mitigations Apple introduced.
@@ -796,8 +722,6 @@ In modern days, no exploitation chain can be considered complete without a relia
  [Adam Donenfeld](https://blackhat.com/archive/europe/2017/speakers/Adam-Donenfeld.html)
 
 ---
-
- 
 
 ## Self-Verifying Authentication – A Framework for Safer Integrations of Single-Sign-On Services
 
@@ -822,8 +746,6 @@ The talk is based on two published papers, but contains many new contents reflec
 
 ---
 
- 
-
 ## The Apple of Your EFI: An Updated Analysis of the State of Apple's EFI Security Support
 
 Duo Labs conducted an extensive data analysis on the state of Apple's EFI security from two main perspectives. The first was analysing all EFI updates released by Apple since OS X 10.10.0 through macOS 10.12.6 to fully characterise the security support provided across different Mac models and OS versions. This also provided a baseline for the "expected state" Mac systems should be in - this defined as the state the user would expect their Mac's software and firmware to be in after running the available updates. The second was an analysis across over 73,000 real-world Mac systems to compare the actual state of their EFI against the expected state.
@@ -841,8 +763,6 @@ Duo Labs conducted an extensive data analysis on the state of Apple's EFI securi
  [Rich Smith](https://blackhat.com/archive/europe/2017/speakers/Rich-Smith.html) & [Pepijn Bruienne](https://blackhat.com/archive/europe/2017/speakers/Pepijn-Bruienne.html)
 
 ---
-
- 
 
 ## The Great Escapes of VMWare: A Retrospective Case Study of VMWare G2H Escape Vulnerabilities
 
@@ -868,8 +788,6 @@ Virtual machine escape is the process of breaking out of the virtual machine and
 
 ---
 
- 
-
 ## The Spear to Break the Security Wall of S7CommPlus
 
 In the past few years, attacks against industrial control systems (ICS) have increased year over year. Stuxnet in 2010 exploited the insecurity of the S7Comm protocol, the communication protocol used between Siemens Simatic S7 PLCs to cause serious damage in nuclear power facilities. After the exposure of Stuxnet, Siemens has implemented some security reinforcements into the S7Comm protocol. The current S7CommPlus protocol implementing encryption has been used in S7-1200 V4.0 and above, as well as S7-1500, to prevent attackers from controlling and damaging the PLC devices.
@@ -886,8 +804,6 @@ In the past few years, attacks against industrial control systems (ICS) have inc
 
 ---
 
- 
-
 ## Wi-Fi Direct to Hell: Attacking Wi-Fi Direct Protocol Implementations
 
 Today Wi-Fi is everywhere and is by far the most widely used wireless networking protocol. During the last years, Wi-Fi security research was mainly focused on WPA/WPA2 security mechanisms. But modern Wi-Fi firmware's and drivers support several protocols that could be targeted by attackers. This is the case of Wi-Fi P2P, also known as Wi-Fi Direct. This protocol provides with the ability to discover nearby devices and connect directly to each other via Wi-Fi without an intermediate access point.
@@ -901,8 +817,6 @@ Today Wi-Fi is everywhere and is by far the most widely used wireless networking
  [Andrés Blanco](https://blackhat.com/archive/europe/2017/speakers/Andrés-Blanco.html)
 
 ---
-
- 
 
 ## Zero Days Thousands of Nights: The Life and Times of Zero-Day Vulnerabilities and Their Exploits
 

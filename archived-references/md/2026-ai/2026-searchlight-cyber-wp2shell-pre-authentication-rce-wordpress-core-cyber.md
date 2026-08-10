@@ -5,9 +5,9 @@ resource: "https://slcyber.io/research-center/wp2shell-pre-authentication-rce-in
 tags: [article, webseclist-reference, en, searchlight-cyber]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:52:46+00:00"
+  at: "2026-08-10T15:59:31+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://slcyber.io/research-center/wp2shell-pre-authentication-rce-in-wordpress-core/"
@@ -20,9 +20,9 @@ authors:
   - @searchlightsec
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:80"
+  - "2026-ai.md:58"
 commit: ""
-content_sha256: 9e29aee08d03a9e36c56ea6bee1db2d860d93bcebee227315210b530e79bf42f
+content_sha256: ae164c74e871999d4501717a52f22886586ccd1936128ff6641939ca067ea5c8
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "https://slcyber.io/research-center/wp2shell-pre-authentication-rc
 published: 2026-07-17
 publisher: Searchlight Cyber
 publisher_english: ""
-raw_sha256: d9aa1729ce140ca163e665a1ded31e12ec05769815c423deca3dd98d9d7334d2
+raw_sha256: 7707a5de1042f4a88115778c0d84df753e552481bdc7f22778aac0f515e60ce8
 retrieved_from: "https://slcyber.io/research-center/wp2shell-pre-authentication-rce-in-wordpress-core/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T18:52:46+00:00"
+retrieved_utc: "2026-08-10T15:59:31+00:00"
 slug: 2026-searchlight-cyber-wp2shell-pre-authentication-rce-wordpress-core-cyber
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: 2026-07-17
 - Original: <https://slcyber.io/research-center/wp2shell-pre-authentication-rce-in-wordpress-core/>
-- Preserved from: https://slcyber.io/research-center/wp2shell-pre-authentication-rce-in-wordpress-core/ (live) on 2026-08-08
+- Preserved from: https://slcyber.io/research-center/wp2shell-pre-authentication-rce-in-wordpress-core/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

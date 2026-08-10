@@ -5,9 +5,9 @@ resource: "https://rikeshbaniya.medium.com/tale-of-zendesk-0-day-and-a-potential
 tags: [article, webseclist-reference, en, medium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:22+00:00"
+  at: "2026-08-10T15:57:15+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://rikeshbaniya.medium.com/tale-of-zendesk-0-day-and-a-potential-25k-bounty-61bcf9c5dc06"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:110"
 commit: ""
-content_sha256: 350922f44c81c7b66cfbc4d6ebbb43455a7d7b5814f4842e35a096d9736fa59c
+content_sha256: b7f0f028aa0d0d16cf30ebe3a4e43c41dcb390e6ea9de68dff598e082d749af5
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://rikeshbaniya.medium.com/tale-of-zendesk-0-day-and-a-poten
 published: 2025-01-14
 publisher: Medium
 publisher_english: ""
-raw_sha256: ff231c6068b49c16ff5ed98680d6a071ca9e64deb46da5be130e7cb52cac8959
+raw_sha256: 8a78bcada7485611a1cba723f8e6374cf79dfd5112080fa6b29a2ecbc850e44d
 retrieved_from: "https://rikeshbaniya.medium.com/tale-of-zendesk-0-day-and-a-potential-25k-bounty-61bcf9c5dc06"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:22+00:00"
+retrieved_utc: "2026-08-10T15:57:15+00:00"
 slug: 2025-medium-user-info-extraction-abusing-placeholder-injection-zendesk
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: 2025-01-14
 - Original: <https://rikeshbaniya.medium.com/tale-of-zendesk-0-day-and-a-potential-25k-bounty-61bcf9c5dc06>
-- Preserved from: https://rikeshbaniya.medium.com/tale-of-zendesk-0-day-and-a-potential-25k-bounty-61bcf9c5dc06 (live) on 2026-08-09
+- Preserved from: https://rikeshbaniya.medium.com/tale-of-zendesk-0-day-and-a-potential-25k-bounty-61bcf9c5dc06 (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

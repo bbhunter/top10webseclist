@@ -5,9 +5,9 @@ resource: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/t
 tags: [article, webseclist-reference, en, isg-rhul-ac-uk]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:58+00:00"
+  at: "2026-08-10T15:29:38+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/"
@@ -22,7 +22,7 @@ canonical_url: "http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac
 cited_by:
   - "2013.md:9"
 commit: ""
-content_sha256: cf364bdf37654e8c7cab840e74e75b15fe0589c73a5add9c19b2682395c6fc0c
+content_sha256: 765c21b687bad2dbb0a74526fd7bc3f911bcc72b693c021c58fdcb4fee7cdc33
 depth: full
 depth_reason: default
 kind: article
@@ -32,10 +32,10 @@ original_url: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.
 published: ""
 publisher: isg.rhul.ac.uk
 publisher_english: ""
-raw_sha256: 4b14200a547897cc9dfc55ea85d469dd990a9299f8cd0832b1958500f0eb1138
+raw_sha256: 6fc4a4d1d035477fe728f28c0d82f286463e12bde23dc01090ad5be97215c449
 retrieved_from: "http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:58+00:00"
+retrieved_utc: "2026-08-10T15:29:38+00:00"
 slug: isg-rhul-ac-uk-security-rc4-tls
 snapshot: 20160507023636
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/>
 - Current location: <http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls>
-- Preserved from: http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls (live) on 2026-08-09
+- Preserved from: http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls (live) on 2026-08-10
 - Capture timestamp: 20160507023636
 - Licence: unknown
 
@@ -68,8 +68,6 @@ On the Security of RC4 in TLS
 
 The Wayback Machine - http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk:80/tls/
 
- 
-
 ## Introduction
 
  **This page is about the security of RC4 encryption in TLS and WPA/TKIP. For details of the Lucky 13 attack on CBC-mode encryption in TLS, click [here.](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/Lucky13.html)**
@@ -86,13 +84,9 @@ One of the attacks also applies to WPA/TKIP, the IEEE's successor protocol to WE
 
 Part of our work was presented at [USENIX Security 2013](http://web.archive.org/web/20160520151330/https://www.usenix.org/conference/usenixsecurity13), Washington DC, USA, 14th-16th August, 2013.
 
- 
-
 ## Who are we?
 
  The team behind this research comprises Nadhem AlFardan, [Dan Bernstein](http://web.archive.org/web/20160520151330/http://cr.yp.to/djb.html), [Kenny Paterson](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/%7Ekp), Bertram Poettering and Jacob Schuldt. Nadhem is a PhD student in the [Information Security Group](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/) at [Royal Holloway, University of London](http://web.archive.org/web/20160520151330/http://www.rhul.ac.uk/). Dan is a Research Professor at the University of Illinois at Chicago and a Professor at the Eindhoven University of Technology. Kenny is a Professor of Information Security and an EPSRC Leadership Fellow in the Information Security Group at Royal Holloway, University of London. Bertram and Jacob are postdocs in the Information Security Group.
-
- 
 
 ## What is affected?
 
@@ -112,8 +106,6 @@ All TLS implementations which support RC4 are affected.
 
 All WPA/TKIP implementations are affected.
 
- 
-
 ## How severe are the attacks?
 
 Our first attack is a multi-session attack, which means that we require a target plaintext to be repeatedly sent in the same position in the plaintext stream in multiple TLS connections or sessions. It exploits **single-byte biases** in the initial 256 bytes of RC4 keystreams. For details of these biases, see this [slide-deck](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/biases.pdf) showing the distributions of the first 256 output bytes from the RC4 generator (based on 244 random 128-bit keys).
@@ -130,8 +122,6 @@ Our second attack applies to TLS and can be carried out in a single connection o
 
 In contrast to the recent [Lucky 13 attack](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/Lucky13.html), there is no need for sophisticated timing of error messages, and the attacker can be located anywhere on the network path between client and server in our attacks.
 
- 
-
 ##  How does this work relate to known attacks, like BEAST, CRIME and Lucky 13?
 
 TLS in CBC-mode has been the subject of several attacks over the years, most notably padding oracle attacks, the BEAST attack and the recent Lucky 13 attack. For more details of prior attacks, see the [Lucky 13 research paper](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/TLStiming.pdf). There are now countermeasures for the BEAST and Lucky 13 attacks, and TLS in CBC-mode is believed to be secure against them once these countermeasures are applied. By contrast, the new attack targets the RC4 algorithm in TLS.
@@ -144,13 +134,9 @@ There have been many attacks on RC4 over the years, most notably against RC4 in 
 
 The attacks are quite different from BEAST, CRIME and Lucky 13. BEAST exploits the inadvisable use of chained IVs in CBC-mode in SSL and TLS 1.0. CRIME cleverly exploits the use of compression in TLS. Lucky 13 defeats existing RFC-recommended countermeasures for padding oracle attacks against CBC-mode. Our attacks are against the RC4 algorithm and are based on analysing statistical weaknesses in the RC4 keystream. However, our attacks can be mounted using BEAST-style techniques.
 
- 
-
 ## Why don't the attacks have cool names?
 
 In Western culture, naming one's attacks after obscure Neil Young albums is now considered passé.;
-
- 
 
 ## What are the countermeasures?
 
@@ -162,8 +148,6 @@ For TLS, there are several possible countermeasures against our attacks. Some of
 - **Modify browser behaviour.** There are ways to modify the manner in which a browser using TLS handles HTTP GET requests to make the attack less effective. However, care is needed to avoid potential future improvements to our attack. Our recommendation for the long term is to avoid using RC4 in TLS and to switch to using AEAD algorithms.
 
 For WPA/TKIP, the only reasonable countermeasure is to upgrade to WPA2.
-
- 
 
 ## Patches, advisories and press
 
@@ -193,25 +177,17 @@ Selected media coverage:
 - [slashdot](http://web.archive.org/web/20160520151330/http://yro.slashdot.org/story/13/03/14/1839239/cryptographers-break-commonly-used-rc4-cipher?utm_source=rss1.0moreanon&utm_medium=feed)
 - [Wikipedia article on RC4 with mention of the attack](http://web.archive.org/web/20160520151330/http://en.wikipedia.org/wiki/RC4#Security)
 
- 
-
 ## Is it still safe to use RC4 ?
 
 The attacks can only be carried out by a determined attacker who can generate sufficient sessions for the attacks. They recover a limited amount of plaintext. In this sense, the attacks do not pose a significant danger to ordinary users of TLS or WPA/TKIP in their current form. However, it is a truism that attacks only get better with time, and we anticipate significant further improvements to our attacks. In addition, because of their extremely widespread use, any attacks against TLS or WPA/TKIP require careful evaluation.
-
- 
 
 ## Source code
 
 We have no plans to make our source code generally available. If you are a researcher interested in replicating or extending our work, then please contact us.
 
- 
-
 ## Isn't it irresponsible to publish attacks on such important protocols?
 
 In short, no. Our long-term aim is to ensure that weak encryption options are eliminated from TLS, to the eventual benefit of all users of TLS. Likewise with WPA/TKIP. Experience shows that the only way to make this happen is to make the attacks as powerful as possible and build proof-of-concept implementations of them. We have expended significant research effort to develop and prototype our attacks. We disclosed the attacks to affected vendors in advance of making our research public, and we are working with all vendors who request our assistance in assessing the attacks and implementing countermeasures.
-
- 
 
 ## For more information
 

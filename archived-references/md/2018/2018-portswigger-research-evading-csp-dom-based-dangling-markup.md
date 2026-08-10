@@ -5,9 +5,9 @@ resource: "https://portswigger.net/blog/evading-csp-with-dom-based-dangling-mark
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:38:22+00:00"
+  at: "2026-08-10T15:36:18+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://portswigger.net/blog/evading-csp-with-dom-based-dangling-markup"
@@ -21,7 +21,7 @@ canonical_url: "https://portswigger.net/research/evading-csp-with-dom-based-dang
 cited_by:
   - "2018.md:45"
 commit: ""
-content_sha256: 45e4755ecc4fe3f6c91aafc761fb8921b7e1763370cdd1373c61689ae9f1ff72
+content_sha256: ad29b0f022a39145a5dc265d439c0c0885d2e1cc94d6fee4a27d68678aaa03b7
 depth: full
 depth_reason: default
 kind: article
@@ -31,10 +31,10 @@ original_url: "https://portswigger.net/blog/evading-csp-with-dom-based-dangling-
 published: 2018-07-18
 publisher: PortSwigger Research
 publisher_english: ""
-raw_sha256: 6f3dd409bca311e9a17eddb8226b6909bfe0aa92c323e780ca112ff14dec99a6
+raw_sha256: c01553e8b3f2c4f8969a53ac6a6e7a71eeddefb82a5f50d5c9ff3546e545e21a
 retrieved_from: "https://portswigger.net/research/evading-csp-with-dom-based-dangling-markup"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:38:22+00:00"
+retrieved_utc: "2026-08-10T15:36:18+00:00"
 slug: 2018-portswigger-research-evading-csp-dom-based-dangling-markup
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 - Published: 2018-07-18
 - Original: <https://portswigger.net/blog/evading-csp-with-dom-based-dangling-markup>
 - Current location: <https://portswigger.net/research/evading-csp-with-dom-based-dangling-markup>
-- Preserved from: https://portswigger.net/research/evading-csp-with-dom-based-dangling-markup (live) on 2026-08-09
+- Preserved from: https://portswigger.net/research/evading-csp-with-dom-based-dangling-markup (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

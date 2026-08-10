@@ -5,20 +5,21 @@ resource: "https://www.ndss-symposium.org/ndss-paper/cross-origin-web-attacks-vi
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:02+00:00"
+  at: "2026-08-10T15:33:41+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/cross-origin-web-attacks-via-http-2-server-push-and-signed-http-exchange/"
     title: Cross-Origin Web Attacks via HTTP/2 Server Push and Signed HTTP Exchange
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2025-1086-paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2025.md:97"
+  - "2025.md:92"
 commit: ""
-content_sha256: db758bb0f8235a0aa31bab5d79277260124dae96a1410c663d4322cb8fcf3a74
+content_sha256: 18c6ee13315d6bee4c205b278fe7474b26719b05325aca04870903b047da92c0
 depth: full
 depth_reason: default
 kind: article
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss-paper/cross-origin-web-attack
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 8cc4e495dabb463679f5f2fc9419f9320f90ddf91ae3e081a4116d5f0507f665
+raw_sha256: 43b5d7b2fa230795a3ee079efb2e4285a991e6182e7807308dc7e485b4398183
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/cross-origin-web-attacks-via-http-2-server-push-and-signed-http-exchange/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:02+00:00"
+retrieved_utc: "2026-08-10T15:33:41+00:00"
 slug: ndss-symposium-cross-origin-web-attacks-http-2-server-push-signed-http-exchange
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/cross-origin-web-attacks-via-http-2-server-push-and-signed-http-exchange/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/cross-origin-web-attacks-via-http-2-server-push-and-signed-http-exchange/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2025-1086-paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/cross-origin-web-attacks-via-http-2-server-push-and-signed-http-exchange/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -68,20 +70,20 @@ In this paper, we investigate the security implications of HTTP/2 server push an
 
 ## View More Papers
 
-### [ Secure Transformer Inference Made Non-interactive ](https://www.ndss-symposium.org/ndss-paper/secure-transformer-inference-made-non-interactive/)
+### [ THEMIS: Regulating Textual Inversion for Personalized Concept Censorship ](https://www.ndss-symposium.org/ndss-paper/themis-regulating-textual-inversion-for-personalized-concept-censorship/)
 
- Jiawen Zhang (Zhejiang University), Xinpeng Yang (Zhejiang University), Lipeng He (University of Waterloo), Kejia Chen (Zhejiang University), Wen-jie Lu (Zhejiang University), Yinghao Wang (Zhejiang University), Xiaoyang Hou (Zhejiang University), Jian Liu (Zhejiang University), Kui Ren (Zhejiang University), Xiaohu Yang (Zhejiang University)
+ Yutong Wu (Nanyang Technological University), Jie Zhang (Centre for Frontier AI Research, Agency for Science, Technology and Research (A*STAR), Singapore), Florian Kerschbaum (University of Waterloo), Tianwei Zhang (Nanyang Technological University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/secure-transformer-inference-made-non-interactive/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/themis-regulating-textual-inversion-for-personalized-concept-censorship/)
 
-### [ Understanding Influences on SMS Phishing Detection: User Behavior, Demographics,... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-593/)
+### [ RACONTEUR: A Knowledgeable, Insightful, and Portable LLM-Powered Shell Command... ](https://www.ndss-symposium.org/ndss-paper/raconteur-a-knowledgeable-insightful-and-portable-llm-powered-shell-command-explainer/)
 
- Daniel Timko (California State University San Marcos), Daniel Hernandez Castillo (California State University San Marcos), Muhammad Lutfor Rahman (California State University San Marcos)
+ Jiangyi Deng (Zhejiang University), Xinfeng Li (Zhejiang University), Yanjiao Chen (Zhejiang University), Yijie Bai (Zhejiang University), Haiqin Weng (Ant Group), Yan Liu (Ant Group), Tao Wei (Ant Group), Wenyuan Xu (Zhejiang University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-593/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/raconteur-a-knowledgeable-insightful-and-portable-llm-powered-shell-command-explainer/)
 
-### [ HADES Attack: Understanding and Evaluating Manipulation Risks of Email... ](https://www.ndss-symposium.org/ndss-paper/hades-attack-understanding-and-evaluating-manipulation-risks-of-email-blocklists/)
+### [ A Formal Approach to Multi-Layered Privileges for Enclaves ](https://www.ndss-symposium.org/ndss-paper/a-formal-approach-to-multi-layered-privileges-for-enclaves/)
 
- Ruixuan Li (Tsinghua University), Chaoyi Lu (Tsinghua University), Baojun Liu (Tsinghua University;Zhongguancun Laboratory), Yunyi Zhang (Tsinghua University), Geng Hong (Fudan University), Haixin Duan (Tsinghua University;Zhongguancun Laboratory), Yanzhong Lin (Coremail Technology Co. Ltd), Qingfeng Pan (Coremail Technology Co. Ltd), Min Yang (Fudan University), Jun Shao (Zhejiang Gongshang University)
+ Ganxiang Yang (Shanghai Jiao Tong University), Chenyang Liu (Shanghai Jiao Tong University), Zhen Huang (Shanghai Jiao Tong University), Guoxing Chen (Shanghai Jiao Tong University), Hongfei Fu (Shanghai Jiao Tong University), Yuanyuan Zhang (Shanghai Jiao Tong University), Haojin Zhu (Shanghai Jiao Tong University)
 
- [Read More](https://www.ndss-symposium.org/ndss-paper/hades-attack-understanding-and-evaluating-manipulation-risks-of-email-blocklists/)
+ [Read More](https://www.ndss-symposium.org/ndss-paper/a-formal-approach-to-multi-layered-privileges-for-enclaves/)

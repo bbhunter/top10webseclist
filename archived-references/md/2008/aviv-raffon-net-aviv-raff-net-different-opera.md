@@ -5,20 +5,22 @@ resource: "https://web.archive.org/web/20090403024932/http://aviv.raffon.net:80/
 tags: [article, webseclist-reference, aviv-raffon-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:02:17+00:00"
+  at: "2026-08-10T15:02:56+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20090403024932/http://aviv.raffon.net:80/2008/10/30/ADifferentOpera.aspx"
     title: Aviv Raff On .NET - A different Opera
+  - id: capture
+    resource: "https://web.archive.org/web/20090403024932/http://aviv.raffon.net:80/2008/10/30/ADifferentOpera.aspx"
 also_at: []
 authors: []
 canonical_url: ""
 cited_by:
   - "2008.md:9"
 commit: ""
-content_sha256: cea3ae3835f590c351e07a8b215b9ec0f7e2c0e51740afa819823f08b521a8ed
+content_sha256: f6ad285c8b66bed91f9b2cacbb0ecb3c87b94ffc1dbcea0ec86ceb8197e40c4a
 depth: full
 depth_reason: default
 kind: article
@@ -28,12 +30,12 @@ original_url: "https://web.archive.org/web/20090403024932/http://aviv.raffon.net
 published: ""
 publisher: aviv.raffon.net
 publisher_english: ""
-raw_sha256: 0d459fbc127ae93859add54a4b11bd60bee78aa1e5891851abe46349d9ee36bd
+raw_sha256: b2da11f1603152bb887ccb961b4a300d67900b37b34b7e39a70c33eb2740f607
 retrieved_from: "https://web.archive.org/web/20090403024932/http://aviv.raffon.net:80/2008/10/30/ADifferentOpera.aspx"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:02:17+00:00"
+retrieved_utc: "2026-08-10T15:02:56+00:00"
 slug: aviv-raffon-net-aviv-raff-net-different-opera
-snapshot: ""
+snapshot: 20090403024932
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -45,7 +47,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20090403024932/http://aviv.raffon.net:80/2008/10/30/ADifferentOpera.aspx>
-- Preserved from: https://web.archive.org/web/20090403024932/http://aviv.raffon.net:80/2008/10/30/ADifferentOpera.aspx (live) on 2026-08-09
+- Preserved from: https://web.archive.org/web/20090403024932/http://aviv.raffon.net:80/2008/10/30/ADifferentOpera.aspx (live) on 2026-08-10
+- Capture timestamp: 20090403024932
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -116,8 +119,6 @@ Nevertheless, my recommendation for Opera users is still [to upgrade to the late
   |   |   |
 
  |  |
-
- 
 
   |   |
 |    |

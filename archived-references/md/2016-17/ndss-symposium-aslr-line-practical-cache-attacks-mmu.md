@@ -5,18 +5,19 @@ resource: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:21+00:00"
+  at: "2026-08-10T15:34:48+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache-practical-cache-attacks-mmu/"
     title: "ASLR on the Line: Practical Cache Attacks on the MMU"
-also_at: []
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/ndss2017_09-1_Gras_paper.pdf"
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:94"
+  - "2016-17.md:88"
 commit: ""
 content_sha256: 6d76db5b4a4cfa84b6d7b355b138077c747a39d0bd784f179443926a86325a64
 depth: full
@@ -28,10 +29,10 @@ original_url: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrc
 published: ""
 publisher: NDSS Symposium
 publisher_english: ""
-raw_sha256: 5d5bfe1f94c61cb01946c7f3fb4b4cf7e69defdf4c82cb21a494fb1394b08bfe
+raw_sha256: 02b99bef0532bd5bc9f12ae9024fd200425242f8a946426faa2911b6185e6f4e
 retrieved_from: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache-practical-cache-attacks-mmu/"
 retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:21+00:00"
+retrieved_utc: "2026-08-10T15:34:48+00:00"
 slug: ndss-symposium-aslr-line-practical-cache-attacks-mmu
 snapshot: ""
 title_english: ""
@@ -45,7 +46,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache-practical-cache-attacks-mmu/>
-- Preserved from: https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache-practical-cache-attacks-mmu/ (live) on 2026-08-08
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/ndss2017_09-1_Gras_paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache-practical-cache-attacks-mmu/ (live) on 2026-08-10
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
