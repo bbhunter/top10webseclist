@@ -1,6 +1,6 @@
 ---
 type: Article
-title: Google Code Archive - Long-term storage for Google Code Project Hosting.
+title: dominator - Community version of the DOMinator for Firefox
 resource: "https://code.google.com/p/dominator/"
 tags: [article, webseclist-reference, en, code-google-com]
 generated:
@@ -11,7 +11,7 @@ stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://code.google.com/p/dominator/"
-    title: Google Code Archive - Long-term storage for Google Code Project Hosting.
+    title: dominator - Community version of the DOMinator for Firefox
 also_at: []
 authors: []
 canonical_url: ""
@@ -39,9 +39,9 @@ translation_file: ""
 translation_of: ""
 ---
 
-# Google Code Archive - Long-term storage for Google Code Project Hosting.
+# dominator - Community version of the DOMinator for Firefox
 
-**Google Code Archive - Long-term storage for Google Code Project Hosting.** - Author not stated, code.google.com.
+**dominator - Community version of the DOMinator for Firefox** - Author not stated, code.google.com.
 
 - Published: date not stated
 - Original: <https://code.google.com/p/dominator/>

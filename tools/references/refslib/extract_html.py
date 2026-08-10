@@ -226,6 +226,26 @@ class _Builder(HTMLParser):
             child = self.current.add(Node("#text", {}, self.current))
             child.text = data
 
+    def handle_comment(self, data):
+        # A COMMENT INSIDE A LISTING IS THE LISTING. Webflow's code widget
+        # escapes its contents by wrapping them in an HTML comment -
+        # `<pre><code class="language-http"><!--GET / HTTP/1.1 ... --></code></pre>` -
+        # so dropping comments, which is right everywhere else, emptied every
+        # code block on the page. One 2021 Top 10 article lost all 47 of its
+        # request/response listings that way and kept only the prose saying
+        # "the following results", above 47 blank boxes.
+        #
+        # Narrow on purpose: only inside a listing, where a comment cannot be
+        # page furniture, an editor's note or a conditional-comment hack. This
+        # recovers TEXT; nothing here is ever parsed as markup or executed.
+        node = self.current
+        while node is not None:
+            if node.tag in ("pre", "code"):
+                child = self.current.add(Node("#text", {}, self.current))
+                child.text = data
+                return
+            node = node.parent
+
 
 def _parse(markup):
     builder = _Builder()

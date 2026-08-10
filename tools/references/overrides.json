@@ -575,6 +575,186 @@
       "class": "research",
       "title": "365-Day: https Cookie Stealing",
       "reason": "The fscked.org domain was taken over, so this deck cannot be fetched. The DEF CON 16 media copy was supplied by the maintainer and imported; the citation reads only \"Slides\", so the deck's own title slide names it."
+    },
+    "https://i.blackhat.com/BH-USA-25/Presentations/USA-25-Barnett-Lost-In-Translation-Exploiting-Unicode-compressed.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Lost in Translation: Exploiting Unicode Normalization",
+      "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited."
+    },
+    "https://0day.click/parser-diff-talk-oc25": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Parser Differentials: When Interpretation Becomes a Vulnerability",
+      "reason": "Reviewed 2026-08-10: the recorded title was \"reveal.js\", the slide framework the deck is built with rather than the document's own title. The document itself is the one cited."
+    },
+    "https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Exploring the DOMPurify library: Bypasses and Fixes (1/2)",
+      "reason": "Reviewed 2026-08-10: the recorded title was the title with the page's tag list appended rather than the document's own title. The document itself is the one cited."
+    },
+    "https://paulosyibelo.com/2024/12/doubleclickjacking-what.html": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "DoubleClickjacking: A New Era of UI Redressing",
+      "reason": "Reviewed 2026-08-10: the recorded title was the title with the site's \"Blog:\" prefix rather than the document's own title. The document itself is the one cited."
+    },
+    "https://blog.malicious.group/from-akamai-to-f5-to-ntlm": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "From Akamai to F5 to NTLM... with love.",
+      "reason": "Reviewed 2026-08-10: the recorded title was the blog's name, taken from its front page rather than the document's own title. The document itself is the one cited."
+    },
+    "https://hitcon.org/2019/CMT/slide-files/d1_s0_r0_keynote.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Infiltrating Corporate Intranet Like NSA: Pre-auth RCE on Leading SSL VPNs",
+      "reason": "Reviewed 2026-08-10: the recorded title was the conference's slide-file stem rather than the document's own title. The document itself is the one cited."
+    },
+    "https://leucosite.com/Edge-Chromium-EoP-RCE": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Microsoft Edge (Chromium) - Elevation of Privilege to Potential Remote Code Execution",
+      "reason": "Reviewed 2026-08-10: the recorded title was only the first half of the title rather than the document's own title. The document itself is the one cited."
+    },
+    "https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Breaking Parser Logic: Take Your Path Normalization Off and Pop 0days Out",
+      "reason": "Reviewed 2026-08-10: the recorded title was the PDF's hyphenated file stem rather than the document's own title. The document itself is the one cited."
+    },
+    "https://i.blackhat.com/us-18/Thu-August-9/us-18-Thomas-Its-A-PHP-Unserialization-Vulnerability-Jim-But-Not-As-We-Know-It-wp.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "It's A PHP Unserialization Vulnerability Jim, But Not As We Know It",
+      "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited."
+    },
+    "https://blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Friday the 13th: JSON Attacks",
+      "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file name rather than the document's own title. The document itself is the one cited."
+    },
+    "https://blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing-Attacks-Made-Practical-wp.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Web Timing Attacks Made Practical",
+      "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited."
+    },
+    "https://thehackerblog.com/wp-content/uploads/2015/09/Black_Hat_USA_2015-Bypass_Surgery-6Aug2015.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Bypass Surgery: Abusing Content Delivery Networks With Server-Side Request Forgery (SSRF), Flash, and DNS",
+      "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited."
+    },
+    "https://blackhat.com/docs/webcast/11192015-exploiting-xml-entity-vulnerabilities-in-file-parsing-functionality.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Exploiting XXE in File Upload Functionality",
+      "reason": "Reviewed 2026-08-10: the recorded title was the PDF's dated file stem rather than the document's own title. The document itself is the one cited."
+    },
+    "https://blackhat.com/docs/us-15/materials/us-15-Arnaboldi-Abusing-XSLT-For-Practical-Attacks-wp.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Abusing XSLT for Practical Attacks",
+      "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited."
+    },
+    "https://cure53.de/fp170.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "mXSS Attacks: Attacking well-secured Web-Applications by using innerHTML Mutations",
+      "reason": "Reviewed 2026-08-10: the recorded title was \"fp170\", the publisher's file name rather than the document's own title. The document itself is the one cited."
+    },
+    "https://gwern.net/doc/cs/js/2013-stone.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Pixel Perfect Timing Attacks with HTML5",
+      "reason": "Reviewed 2026-08-10: the recorded title was \"2013 stone\", the mirror's file name rather than the document's own title. The document itself is the one cited."
+    },
+    "https://media.blackhat.com/us-13/us-13-Grossman-Million-Browser-Botnet.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Million Browser Botnet",
+      "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited."
+    },
+    "https://code.google.com/p/dominator": {
+      "outcome": "archive",
+      "class": "records",
+      "title": "dominator - Community version of the DOMinator for Firefox",
+      "reason": "Reviewed 2026-08-10: the recorded title was \"Google Code Archive\", the hosting service's own page title rather than the document's own title. The document itself is the one cited."
+    },
+    "https://blog.securitee.org/?p=37": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Bypassing Chrome's Anti-XSS filter",
+      "reason": "Reviewed 2026-08-10: the recorded title was \"Nick Nikiforakis\", the author's faculty homepage the blog now redirects to rather than the document's own title. The document itself is the one cited."
+    },
+    "https://usenix.org/events/woot10/tech/full_papers/Rizzo.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Practical Padding Oracle Attacks",
+      "reason": "Reviewed 2026-08-10: the recorded title was the citation's own link text rather than the paper's title rather than the document's own title. The document itself is the one cited."
+    },
+    "https://media.blackhat.com/bh-us-10/whitepapers/Bursztein_Gourdin_Rydstedt/BlackHat-USA-2010-Bursztein-Bad-Memories-wp.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Bad Memories",
+      "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited."
+    },
+    "https://dhanjani.com/blog/2008/05/safari-carpet-b.html": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Safari Carpet Bomb",
+      "reason": "Reviewed 2026-08-10: the recorded title was \"Typepad | Network Solutions\", the host's shutdown notice rather than the document's own title. The document itself is the one cited."
+    },
+    "https://docs.google.com/View?docid=ajfxntc4dmsq_14dt57ssdw&pli=1": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "XSS Vulnerabilities in Common Shockwave Flash Files",
+      "reason": "Reviewed 2026-08-10: the recorded title was the title truncated with an ellipsis rather than the document's own title. The document itself is the one cited."
+    },
+    "https://archives.neohapsis.com/archives/fulldisclosure/2007-01/0062.html": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "[Full-disclosure] Adobe Acrobat Reader Plugin - Multiple Vulnerabilities",
+      "reason": "Reviewed 2026-08-10: the recorded title was the archive site's masthead rather than the document's own title. The document itself is the one cited."
+    },
+    "https://ha.ckers.org/blog/20070623/hiding-js-in-valid-images": {
+      "outcome": "archive",
+      "class": "records",
+      "title": "Hiding JS in Valid Images",
+      "reason": "Reviewed 2026-08-10: the recorded title was the blog's masthead rather than the document's own title. The document itself is the one cited."
+    },
+    "https://ha.ckers.org/blog/20061211/exponential-xss-attacks": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Exponential XSS Attacks",
+      "reason": "Reviewed 2026-08-10: the recorded title was the blog's masthead rather than the document's own title. The document itself is the one cited."
+    },
+    "https://ha.ckers.org/blog/20060908/dns-pinning-just-got-worse": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "DNS Pinning Just Got Worse",
+      "reason": "Reviewed 2026-08-10: the recorded title was the blog's masthead rather than the document's own title. The document itself is the one cited."
+    },
+    "https://securityfocus.com/archive/1/441014/30/0/threaded": {
+      "outcome": "archive",
+      "class": "records",
+      "title": "Forging HTTP request headers with Flash",
+      "reason": "Reviewed 2026-08-10: the recorded title was \"BUGTRAQ IS BACK\", the present-day securityfocus.com landing page rather than the document's own title. The document itself is the one cited."
+    },
+    "https://secunia.com/advisories/22477": {
+      "outcome": "archive",
+      "class": "records",
+      "title": "Internet Explorer 7 \"mhtml:\" Redirection Information Disclosure",
+      "reason": "Reviewed 2026-08-10: the live advisory URL 301s into Flexera's corporate site, so the capture and its file name were the \"About Secunia Research\" page. Recaptured from a 2006 snapshot; the file is renamed after the advisory (Secunia SA22477)."
+    },
+    "https://blogs.technet.com/msrc/archive/2009/12/27/new-reports-of-a-vulnerability-in-iis.aspx": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "New Reports of a Vulnerability in IIS",
+      "reason": "Reviewed 2026-08-10: every live microsoft.com path for this post redirects to the Microsoft Learn homepage, which is what the capture and its file name recorded. Recaptured from a January 2010 snapshot of the MSRC post."
     }
   }
 }

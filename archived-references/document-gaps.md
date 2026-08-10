@@ -42,4 +42,20 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-Nothing unresolved. Every cited source has a local copy.
+2 reference(s) unresolved. 2 of them already have their raw bytes stored.
+
+## https://bugzilla.mozilla.org/show_bug.cgi?id=369814
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the bug's comment thread is still absent - the capture holds the metadata table, attachments and change history, and Bugzilla loads comments through BugModal; the long-format view was pinned as the linked document and did not supply them either; try the containerised browser route (check-browser) or a Wayback capture of the pre-BugModal bug page (reported 2026-08-10)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2007.md:7`
+
+## https://web.archive.org/web/20160403035045/https://cwiki.apache.org/confluence/display/WW/S2-020
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the Workaround section's two listings are still absent - the commons-fileupload 1.3.1 Maven dependency block and the ParametersInterceptor excludeParams block - so the bulletin states a remedy the reader cannot apply; Confluence renders them with a code macro no plain fetch resolves, so try the containerised browser route (check-browser) (reported 2026-08-10)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2014.md:12`

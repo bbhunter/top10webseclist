@@ -44,6 +44,66 @@ commits `5c0a8ae`, `c5d55d8` and `4034057`, and in the one that adds this line.
 
 ---
 
+## 0. The Top 10 entries, 2006-2025, HAVE now been read — 205 documents
+
+Not a pack: a subtraction from every pack below. Each of the 205 archived
+documents cited by a `## Top 10` section was read and judged, and every fault
+found was re-checked by two independent readers asked to REFUTE it. 35 findings
+survived that; 11 did not and were dropped.
+
+The judged set is the Top 10 lines only. **The other ~1,330 documents of
+2006-2025 — the "Other nominations" and "Missed from the original list"
+sections — remain unread**, and everything each pack below says still applies to
+them in full.
+
+What it corrected: 32 recorded titles that were site chrome, a blog masthead or
+a PDF's file stem; 28 files renamed after their documents; and 11 captures that
+were not the cited document at all — a corporate about-page filed as a 2006
+Secunia advisory, `learn.microsoft.com`'s homepage as an MSRC IIS advisory, a
+Blogger label sidebar as the 2009 HTTP Parameter Pollution post, an author's
+faculty homepage as "Bypassing Chrome's Anti-XSS filter".
+
+Two of those repairs found a converter fault rather than a capture fault, now
+fixed in `sanitise.py` and `extract_html.py`: **a listing wrapped in an HTML
+comment**, which is how Webflow's code widget escapes one. Stripping comments —
+right everywhere else — had emptied all 47 request/response listings in the 2021
+header-smuggling article while leaving its 47 fences in place, so the file
+measured as code-bearing and read as prose above blank boxes. **A fence count is
+not a listing count**; 14 more documents outside the Top 10 still show the
+symptom and are a re-extraction away from the fix.
+
+What it did NOT settle, and what the packs below should be read against:
+
+- **Figures on the repaired documents are gone for good.** Recapturing the
+  document does not recapture its pictures: the hosts that served them redirect
+  to their roots. 20 screenshots for the 2023 Akamai/F5/NTLM chain, 8 for the
+  2021 header-smuggling article, 4 for the securitee post, 1 for Safari Carpet
+  Bomb. `images` refuses them, and it has no Wayback route. See pack 3.
+- **A recapture leaves the old capture's figure rows behind.** Five entries were
+  asserting the discarded page's pictures as their own — Flexera's marketing
+  icons as the Secunia advisory's figures, Network Solutions' service icons as
+  Safari Carpet Bomb's. Pruned for those five; two more outside the Top 10 still
+  have it (`weixin-official-accounts-platform-make-xxe-attacks-brilliant` and
+  one other), and any future recapture will do it again unless `acquire` learns
+  to clear them.
+- **Six of 17 sampled rendered PDFs are not faithful to their Markdown**, which
+  narrows pack 1 without closing it. In all six the PROSE is complete and code
+  blocks are not reflowed — the renderer is sound on text. Five fail only on
+  pictures the archive never held, which is pack 3 again rather than a print
+  fault. The sixth is a genuine renderer gap and the one worth chasing:
+  `2018-slideshare-owasp-appseceu-2018-attacking-modern-web-technologies` is a
+  deck whose slides ARE its content, and the archive holds 60 slide images, all
+  60 present in the store and none a duplicate of another — yet the printed PDF
+  embeds 52. Eight preserved slides do not reach the page, and re-running
+  `images --force` then `pdf --force` does not change the count, so the loss is
+  in `makepdf`, not in acquisition.
+- Two documents keep a filed fault because part of the document is still
+  missing: Bugzilla 369814's comment thread, and the two listings in the Struts
+  S2-020 Workaround section. Both are on
+  [document-gaps.md](document-gaps.md), which is where they belong.
+
+---
+
 ## 1. Rendered PDFs, reprinted whole — 1,283 documents
 
 Every PDF the archive renders was reprinted, because the converter changed:

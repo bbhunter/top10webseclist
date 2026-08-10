@@ -78,6 +78,18 @@ INJECTION_MARKERS = (
 )
 
 
+# The opening of a listing, then a comment that is the whole of its contents.
+_COMMENTED_LISTING = re.compile(
+    r"(<pre\b[^>]*>\s*(?:<code\b[^>]*>\s*)?)<!--(.*?)-->",
+    re.IGNORECASE | re.DOTALL)
+
+
+def _uncomment_listing(match):
+    body = match.group(2)
+    escaped = body.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    return match.group(1) + escaped
+
+
 class Sanitised(object):
     def __init__(self, text, removed=None, markers=None):
         self.text = text
@@ -92,6 +104,24 @@ def sanitise_html(markup):
     """Remove the machinery and the hiding places from an HTML document."""
     removed = []
     text = markup or ""
+
+    # A LISTING ESCAPED AS A COMMENT IS STILL THE LISTING, and it is recovered
+    # before the general rule below removes it. Webflow's code widget stores a
+    # block's contents inside an HTML comment - `<pre><code
+    # class="language-http"><!--GET / HTTP/1.1 ... --></code></pre>` - so
+    # stripping comments emptied every code block on such a page. One 2021 Top
+    # 10 article lost all 47 of its request/response listings that way, leaving
+    # prose that said "the following results" above 47 blank boxes.
+    #
+    # This does NOT reopen the hiding place: the comment body is HTML-ESCAPED on
+    # the way out, so whatever was in there becomes TEXT inside the listing it
+    # was already inside, and can never become live markup. It is also confined
+    # to `<pre>`, where a comment is not page furniture, an editor's note or a
+    # conditional-comment hack. Everything else still goes.
+    before = text
+    text = _COMMENTED_LISTING.sub(_uncomment_listing, text)
+    if text != before:
+        removed.append("commented-listing")
 
     before = text
     text = re.sub(r"<!--.*?-->", " ", text, flags=re.DOTALL)

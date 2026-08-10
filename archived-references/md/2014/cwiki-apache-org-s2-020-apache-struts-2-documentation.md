@@ -5,24 +5,24 @@ resource: "https://web.archive.org/web/20160403035045/https://cwiki.apache.org/c
 tags: [article, webseclist-reference, cwiki-apache-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:08:49+00:00"
+  at: "2026-08-10T13:05:25+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/https://cwiki.apache.org/confluence/display/WW/S2-020"
     title: S2-020 - Apache Struts 2 Documentation
   - id: canonical
-    resource: "https://web.archive.org/web/20160316143003/https://cwiki.apache.org/confluence/display/WW/S2-020"
+    resource: "https://cwiki.apache.org/confluence/display/WW/S2-020"
   - id: capture
-    resource: "https://web.archive.org/web/20160403035045/https://cwiki.apache.org/confluence/display/WW/S2-020"
+    resource: "https://web.archive.org/web/20150907194344/https://cwiki.apache.org/confluence/display/WW/S2-020"
 also_at: []
 authors: []
-canonical_url: "https://web.archive.org/web/20160316143003/https://cwiki.apache.org/confluence/display/WW/S2-020"
+canonical_url: "https://cwiki.apache.org/confluence/display/WW/S2-020"
 cited_by:
   - "2014.md:12"
 commit: ""
-content_sha256: c220e0ea82e5ac316848a05e69085c517b4390e1ed1fd7303955f4f6b85f097d
+content_sha256: 3adb277aa7d6428604c91628a5a54fe7975d4f400a605e2ef6dbd3a69f0b9f72
 depth: full
 depth_reason: default
 kind: article
@@ -32,12 +32,12 @@ original_url: "https://web.archive.org/web/20160403035045/https://cwiki.apache.o
 published: ""
 publisher: cwiki.apache.org
 publisher_english: ""
-raw_sha256: 6a5af90393d838a7564d4534df4bb6d1f61c56c8af2c56bc32d5ae9cebd527aa
-retrieved_from: "https://web.archive.org/web/20160316143003/https://cwiki.apache.org/confluence/display/WW/S2-020"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:08:49+00:00"
+raw_sha256: 5197be3fff26c6778535820613ff2f306f11600aecda13a67ce3a9a99f00743d
+retrieved_from: "https://cwiki.apache.org/confluence/display/WW/S2-020"
+retrieved_kind: stored
+retrieved_utc: "2026-08-10T13:05:25+00:00"
 slug: cwiki-apache-org-s2-020-apache-struts-2-documentation
-snapshot: 20160403035045
+snapshot: 20150907194344
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -49,9 +49,9 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/https://cwiki.apache.org/confluence/display/WW/S2-020>
-- Current location: <https://web.archive.org/web/20160316143003/https://cwiki.apache.org/confluence/display/WW/S2-020>
-- Preserved from: https://web.archive.org/web/20160316143003/https://cwiki.apache.org/confluence/display/WW/S2-020 (live) on 2026-08-09
-- Capture timestamp: 20160403035045
+- Current location: <https://cwiki.apache.org/confluence/display/WW/S2-020>
+- Preserved from: https://cwiki.apache.org/confluence/display/WW/S2-020 (stored) on 2026-08-10
+- Capture timestamp: 20150907194344
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -66,11 +66,9 @@ page going offline. To read the original, follow the link above.
 
 S2-020 - Apache Struts 2 Documentation - Apache Software Foundation
 
-The Wayback Machine - https://web.archive.org/web/20160316143003/https://cwiki.apache.org/confluence/display/WW/S2-020
-
  Skip to end of metadata
 
--  Created by  [Lukasz Lenart](https://web.archive.org/web/20160316143003/https://cwiki.apache.org/confluence/display/~lukaszlenart), last modified on [Mar 06, 2014](https://web.archive.org/web/20160316143003/https://cwiki.apache.org/confluence/pages/diffpagesbyversion.action?pageId=39621692&selectedPageVersions=7&selectedPageVersions=8)
+-  Created by  [Lukasz Lenart](https://cwiki.apache.org/confluence/display/~lukaszlenart), last modified on [Mar 06, 2014](https://cwiki.apache.org/confluence/pages/diffpagesbyversion.action?pageId=39621692&selectedPageVersions=7&selectedPageVersions=8)
 
  Go to start of metadata
 
@@ -111,7 +109,7 @@ Recommendation
 
  |
 
-Developers should immediately upgrade to [Struts 2.3.16.1](https://web.archive.org/web/20160316143003/http://struts.apache.org/download.cgi#struts23161)
+Developers should immediately upgrade to [Struts 2.3.16.1](http://struts.apache.org/download.cgi#struts23161)
 
  |  |
 |

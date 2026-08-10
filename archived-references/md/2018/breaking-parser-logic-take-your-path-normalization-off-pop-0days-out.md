@@ -1,6 +1,6 @@
 ---
 type: Whitepaper
-title: Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out
+title: "Breaking Parser Logic: Take Your Path Normalization Off and Pop 0days Out"
 resource: "https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
@@ -11,7 +11,7 @@ stale_after: 2027-08-06
 sources:
   - id: original
     resource: "https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf"
-    title: Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out
+    title: "Breaking Parser Logic: Take Your Path Normalization Off and Pop 0days Out"
 also_at: []
 authors: []
 canonical_url: ""
@@ -39,9 +39,9 @@ translation_file: ""
 translation_of: ""
 ---
 
-# Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out
+# Breaking Parser Logic: Take Your Path Normalization Off and Pop 0days Out
 
-**Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out** - Author not stated, Publisher not stated.
+**Breaking Parser Logic: Take Your Path Normalization Off and Pop 0days Out** - Author not stated, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf>

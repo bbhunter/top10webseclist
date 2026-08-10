@@ -239,3 +239,32 @@ class TestATruncatedPageDoesNotPublishItsMachinery(unittest.TestCase):
     def test_it_is_still_idempotent(self):
         once = sanitise.sanitise_html("<p>text</p><script>var a = 1;").text
         self.assertEqual(sanitise.sanitise_html(once).text, once)
+
+
+class CommentedListingTest(unittest.TestCase):
+    """Webflow escapes a code block by wrapping it in an HTML comment, so the
+    general comment strip emptied every listing on such a page - 47 of them in
+    one 2021 Top 10 article. The listing is recovered, and only inside `<pre>`."""
+
+    def test_the_listing_survives(self):
+        out = sanitise.sanitise_html(
+            '<pre><code class="language-http"><!--GET / HTTP/1.1\nHost: x\n-->'
+            "</code></pre>")
+        self.assertIn("GET / HTTP/1.1", out.text)
+        self.assertIn("commented-listing", out.removed)
+
+    def test_page_furniture_comments_still_go(self):
+        out = sanitise.sanitise_html("<p>a</p><!-- google tag manager --><p>b</p>")
+        self.assertNotIn("google tag manager", out.text)
+
+    def test_the_recovered_body_can_never_become_markup(self):
+        """The hiding place is not reopened: the body comes back ESCAPED."""
+        out = sanitise.sanitise_html(
+            "<pre><code><!--<script>alert(1)</script>--></code></pre>")
+        self.assertIn("&lt;script&gt;", out.text)
+        self.assertNotIn("<script>", out.text)
+
+    def test_recovery_is_idempotent(self):
+        once = sanitise.sanitise_html(
+            "<pre><code><!--payload: <b>x</b>--></code></pre>").text
+        self.assertEqual(sanitise.sanitise_html(once).text, once)

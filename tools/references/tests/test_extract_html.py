@@ -217,3 +217,35 @@ class TestSiteMarkupThatReachesTheText(unittest.TestCase):
         out = self.markdown("compare &amp;lt;T&amp;gt; in code")
         self.assertIn("<T>", out)
         self.assertNotIn("&lt;", out)
+
+
+class CommentedListingTest(unittest.TestCase):
+    """Webflow's code widget escapes a listing by wrapping it in an HTML comment.
+
+    Dropping comments is right everywhere else on a page, and it emptied every
+    code block on one 2021 Top 10 article: 47 request/response listings became
+    47 blank boxes under prose that still said "the following results".
+    """
+
+    LISTING = ('<div class="w-embed"><pre><code class="language-http">'
+               '<!--GET / HTTP/1.1\nHost: example.com\nContent-Length: z\n-->'
+               '</code></pre></div>')
+    PROSE = ('<p>The methodology relies on comparing the responses when valid and '
+             'invalid values are sent, which is what the listing below shows.</p>')
+
+    def markdown(self, body):
+        return extract_html.candidates(
+            "<html><body><article>%s</article></body></html>" % body)[0].markdown
+
+    def test_a_listing_hidden_in_a_comment_is_recovered(self):
+        out = self.markdown(self.PROSE + self.LISTING)
+        self.assertIn("GET / HTTP/1.1", out)
+        self.assertIn("Content-Length: z", out)
+
+    def test_the_recovered_listing_is_still_a_code_block(self):
+        out = self.markdown(self.PROSE + self.LISTING)
+        self.assertIn("```http", out)
+
+    def test_an_ordinary_page_comment_is_still_dropped(self):
+        out = self.markdown(self.PROSE + "<!-- google tag manager -->")
+        self.assertNotIn("google tag manager", out)
