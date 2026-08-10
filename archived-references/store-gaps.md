@@ -32,7 +32,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 `raw_sha256` offline - re-import it rather than re-crawling.
 
 
-253 archived reference(s) name 298 store object(s) that are no longer held: 49 browser_dom_sha256, 23 content_sha256, 5 landing_sha256, 221 raw_sha256.
+252 archived reference(s) name 297 store object(s) that are no longer held: 49 browser_dom_sha256, 22 content_sha256, 5 landing_sha256, 221 raw_sha256.
 
 | Reference | Kind | Missing | Cited at |
 |---|---|---|---|
@@ -109,7 +109,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://code.google.com/p/puzzlemall/downloads/list> | article | `raw_sha256`, `browser_dom_sha256` | `2011.md:53` |
 | <https://coeus.ece.gatech.edu/2008/10/01/DNS_Forgery/> | article | `landing_sha256` | `2008.md:90` |
 | <https://diafygi.github.io/webrtc-ips/> | article | `raw_sha256` | `2015.md:75` |
-| <https://dl.acm.org/doi/10.1145/2810103.2813633> | article | `content_sha256` | `2015.md:61` |
 | <https://dl.acm.org/doi/10.1145/2810103.2813680> | article | `content_sha256` | `2015.md:60` |
 | <https://dl.acm.org/doi/10.1145/2810103.2813688> | article | `content_sha256` | `2015.md:67` |
 | <https://dl.acm.org/doi/10.1145/2818000.2818029> | article | `content_sha256` | `2015.md:74` |
