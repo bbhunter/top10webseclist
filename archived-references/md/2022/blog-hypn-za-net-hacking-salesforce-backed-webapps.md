@@ -293,7 +293,7 @@ Salesforce now returns the nested "Notes" records related to each "Contact", whe
 
 (so much for "Notes" being private!)
 
-Finding properties and related records of Objects is covered below in the "[Useful API Calls]()" section below.
+Finding properties and related records of Objects is covered below in the "Useful API Calls" section below.
 
 It seems only directly related data can be retrieved this way, so more interesting deeper-reaching queries like `Contact.Account.Invoices` result in an error: `First SObject of a nested query must be a child of its outer query`.
 

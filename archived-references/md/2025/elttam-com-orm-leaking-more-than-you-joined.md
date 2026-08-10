@@ -79,11 +79,7 @@ ORM Leaks
 
 web
 
-[
-
 TOC Element
-
-]()
 
 ## Introduction
 

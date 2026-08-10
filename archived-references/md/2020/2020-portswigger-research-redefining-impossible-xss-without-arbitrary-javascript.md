@@ -65,7 +65,7 @@ Redefining Impossible: XSS without arbitrary JavaScript | PortSwigger Research
 
  ![Luan Herrera](https://portswigger.net/content/images/profiles/callout_luan_herrera_114px.png)
 
-### [Luan Herrera]()
+### Luan Herrera
 
 Researcher
 

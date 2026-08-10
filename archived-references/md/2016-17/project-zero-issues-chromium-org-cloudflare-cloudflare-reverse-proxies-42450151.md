@@ -82,8 +82,6 @@ page going offline. To read the original, follow the link above.
 
  [taviso@google.com](https://bugs.chromium.org/u/916485438/)
 
- *
-
  [project-...@google.com](https://bugs.chromium.org/u/611522594/)
 
  *  |  |

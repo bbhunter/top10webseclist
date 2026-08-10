@@ -77,7 +77,7 @@ Anyway, the reason I originally started thinking about this was because of somet
 
 But when you’re talking about HTML, you have a lot of things that sort of act as subordinates in the same way as a chain of command might. For instance, HTML can load JavaScript, CSS, Objects, etc… those can load more JavaScript, Images, Bindings, etc… All of that has a certain behavior in the browser, and in one way or another can be detected. So the trick is how do you detect it? The Indiana paper does a good job of enumerating some of those possibilities, but there are a lot of other tricks an attacker could use as a man in the middle to reduce the noise on the wire. That’s what the presentation is largely about. Anyway, check out the paper!
 
-  This entry was posted on Monday, June 21st, 2010 at 1:23 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Monday, June 21st, 2010 at 1:23 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

@@ -79,7 +79,7 @@ http://ha.ckers.org/log.cgi/rAnd0mcr4p%aPpdAta%2hide%coMpuTeRnaME%th3v4rz
 
 If you cut and paste that it will be translated on the fly before it is sent. So how you’d use this is either just like you see above - a URL that must be cut and pasted to be used or something like a broken link that is clearly easily re-constructed just by changing one letter or removing a space or something. I never did find a way to automatically get this to fire. I tried in CSS, images, iframes, frames, word docs, PDFs, and on and on. If someone figures out a way to make it automatically fire without user interaction that would make this a lot more useful. Either way, it seemed worthy of a post.
 
-  This entry was posted on Monday, August 10th, 2009 at 8:19 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Monday, August 10th, 2009 at 8:19 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

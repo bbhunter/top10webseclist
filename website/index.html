@@ -208,6 +208,7 @@
         <button id="pdf-read-toggle" type="button">○ Mark as read</button>
         <button id="pdf-favourite-toggle" type="button" hidden>☆ Add favourite</button>
         <button id="pdf-open-markdown" type="button" hidden>▤ Markdown</button>
+        <button id="pdf-links-toggle" type="button" aria-expanded="false" title="Links inside a PDF are handled by the browser's own viewer and cannot open a new tab; these can" hidden>⚯ Links</button>
         <button id="pdf-fit-width" type="button">Fit width</button>
         <button id="pdf-fit-page" type="button">Fit page</button>
         <a id="pdf-new-tab" target="_blank" rel="noopener noreferrer">Open tab ↗</a>
@@ -223,6 +224,14 @@
         <h2>Your browser did not embed this document</h2>
         <p id="pdf-fallback-message">The preserved file is still available using the Open tab or Download controls above.</p>
       </div>
+      <aside class="pdf-links" id="pdf-links" hidden aria-label="Links in this document">
+        <header>
+          <strong>Links in this document</strong>
+          <button id="pdf-links-close" type="button" aria-label="Close the link list">×</button>
+        </header>
+        <p class="pdf-links-note">A link clicked inside the embedded PDF is handled by the browser's own viewer, which opens it in place rather than in a new tab. These open in a new tab.</p>
+        <div id="pdf-links-list"></div>
+      </aside>
     </div>
     <footer class="pdf-viewer-note" id="pdf-viewer-note"><span>Browser-native viewer</span> Use its internal toolbar for navigation, search and zoom. Viewer theme changes the surround; the PDF keeps its original page colours.</footer>
   </dialog>

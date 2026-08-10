@@ -65,18 +65,9 @@ page going offline. To read the original, follow the link above.
 
 Few months back, I came across an oauth xss accompanied by a nice CSP bypass in Twitter. While creating an application, a developer can set their terms and service URL for their app, which Twitter configured to be:* ([https?:])\w+ *
 
- **
-**
-
  Unfortunately the regexp is missing a ^ char in the start making malicious URLs like *data:CONTENT#https://…* work -- so we got HTML Injection, but almost useless for a practical attack because of the CSP rules. After checking the header, I noticed there are multiple CSP misconfigurations in the script-src and object-src blocks, making it possible to bypass CSP in twitter.com. The CSP Rule looks like:
 
- **
-**
-
  script-src https://connect.facebook.net https://cm.g.doubleclick.net https://ssl.google-analytics.com https://graph.facebook.com https://twitter.com 'unsafe-eval' ‘unsafe-inline’ https://*.twimg.com https://api.twitter.com https://analytics.twitter.com https://publish.twitter.com https://ton.twitter.com https://syndication.twitter.com https://www.google.com;frame-ancestors 'self';object-src https://twitter.com https://pbs.twimg.com; default-src 'self';...
-
- **
-**
 
  Looking at this, the object-src and the script-src blocks got my immediate attention.
 
@@ -84,28 +75,13 @@ Few months back, I came across an oauth xss accompanied by a nice CSP bypass in 
 
  Originally I thought, by exploiting the object-src block (https://pbs.twimg.com) -- one can upload a Flash file (as picture/video extension with few bytes header) to Twitter CDN -- refer it to as an embedded Object to gain code execution. However, because of character limitation, the payload I was trying to make was too long and being cut off, so this method wasn't practical as we were working on a limited payload space. At this point, I sticked to the JSONP bypass for the script-src blocks and started playing with multiple parameters until I found a shorter version, when injected generating an alert in twitter.com.
 
- **
-**
-
  http://syndication.twitter.com/widgets/timelines/246079887021051904?dnt=true&domain=twitter.com&lang=en&callback=alert
-
- **
-**
 
  The above JSONP response from syndication.twitter.com comes back with a Content-Disposition header forcing a download. However, browsers like Chrome still execute the returned file even when returned as an attachment. At this point, this misconfiguration added with the ‘unsafe-inline’ CSP block -- meant we are able to execute code.
 
- **
-**
-
  By setting the Terms & Services URL of an App to
 
- **
-**
-
  data:text/html,<script src="[https://syndication.twitter.com/widgets/timelines/246079887021051904?callback=alert](http://syndication.twitter.com/widgets/timelines/246079887021051904?callback=alert)"></script>
-
- **
-**
 
  A developer will be able to pop-up an alert.
 
@@ -113,15 +89,9 @@ Few months back, I came across an oauth xss accompanied by a nice CSP bypass in 
 
  [ ](https://hackerone.com/redirect?signature=949b24b43fc4635ddd6f3413db2686e7228f8f60&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DZUXk7CUmaaE%26feature%3Dyoutu.be)
 
- **
-**
-
  After some digging I noticed ssl.google-analytics.com, www.google.com and even graph.facebook.com host JSONP endpoints -- which I wrote to twitter over email -- but will not be fixed anytime soon because it may break the sites usage and call to these sites and performance.
 
  **Edit**: Ben Hayak [mentioned](https://twitter.com/BenHayak/status/859490588504317953) we can use same origin method execution (SOME) attack to manipulate the page as we like: https://syndication.twitter.com/widgets/timelines/246079887021051904?callback=document.body.firstElementChild.Reference.submit -- as used by my [Instagram XSS](http://www.paulosyibelo.com/2016/11/instagram-stored-oauth-xss.html).
-
- **
-**
 
  I hope it was a fun read, :) --
 

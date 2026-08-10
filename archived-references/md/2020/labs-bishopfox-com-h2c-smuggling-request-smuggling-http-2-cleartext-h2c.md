@@ -246,9 +246,7 @@ backend be1
 server s1 backend:80
 ```
 
-**
 Traefik
-**
 
 ```yaml
 
@@ -274,10 +272,6 @@ Because of its ability to reduce bandwidth, h2c makes a strong candidate for low
 As such, popular web frameworks often support a configuration option to enable h2c upgrade support. That said, support is rarely an out-of-the-box default.
 
 Assuming an insecure front-end proxy configuration, h2c usage in microservices may increase the likelihood of a successful attack.
-
-**
-
-**
 
 ## REMEDIATION
 

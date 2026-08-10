@@ -58,11 +58,7 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-**
-
 Seongil Wi (KAIST), Trung Tin Nguyen (CISPA Helmholtz Center for Information Security, Saarland University), Jihwan Kim (KAIST), Ben Stock (CISPA Helmholtz Center for Information Security), Sooel Son (KAIST)
-
- **
 
 The Content Security Policy (CSP) is one of the de facto security mechanisms that mitigate web threats. Many websites have been deploying CSPs mainly to mitigate cross-site scripting (XSS) attacks by instructing client browsers to constrain JavaScript (JS) execution. However, a browser bug in CSP enforcement enables an adversary to bypass a deployed CSP, posing a security threat. As the CSP specification evolves, CSP becomes more complicated in supporting an increasing number of directives, which brings additional complexity to implementing correct enforcement behaviors. Unfortunately, the finding of CSP enforcement bugs in a systematic way has been largely understudied.
 

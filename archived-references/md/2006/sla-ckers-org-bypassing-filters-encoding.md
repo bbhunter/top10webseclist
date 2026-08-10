@@ -108,7 +108,7 @@ Thanks to RSnake for opening my eyes to alternate encoding recently, with his bl
 
  -maluc
 
- []()
+ 
 
 **Re: Bypassing Filters With Encoding**
 
@@ -121,7 +121,7 @@ This is a good list. We should definitely try to keep it up to date as new thing
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: Bypassing Filters With Encoding**
 
@@ -142,7 +142,7 @@ http://maluc.110mb.com/charsettest.php?charset&string
 
  -maluc
 
- []()
+ 
 
 **Re: Bypassing Filters With Encoding**
 
@@ -152,7 +152,7 @@ Date: November 20, 2006 02:09AM
 
 Yay! nice work maluc! is this info being collected somewhere for quick reference? cause i see it scattered accross the boards.
 
- []()
+ 
 
 **Re: Bypassing Filters With Encoding**
 
@@ -181,7 +181,7 @@ Alternative semi-colon: » .. which is %BB
 
  Edited 1 time(s). Last edit at 11/29/2006 04:18AM by maluc.
 
- []()
+ 
 
 **Re: Bypassing Filters With Encoding**
 
@@ -193,7 +193,7 @@ lol.. now why did i add a -moz-binding for US-ASCII, an IE-only encoding.. remov
 
  -maluc
 
- []()
+ 
 
 **Re: Bypassing Filters With Encoding**
 
@@ -206,7 +206,7 @@ Hahah... I never would have noticed unless you said something. There are really 
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: Bypassing Filters With Encoding**
 

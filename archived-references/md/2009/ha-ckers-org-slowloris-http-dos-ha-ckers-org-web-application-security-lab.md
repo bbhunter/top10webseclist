@@ -91,7 +91,7 @@ The reason this works is because **the web server will patiently wait well beyon
 
 Anyway, I hope this gets people thinking about better web server architecture. That’s especially true if this is “expected” behavior of their web server, and at least offer a default configuration that can protect from this sort of attack, instead of having to jump through a bunch of convoluted hoops. I thought it would be better to open this up for discussion, so I encourage you to try out the tool in QA or staging and see how your web server handles it. The software is very beta though, so do not use this against anything in production - I make no warranties about its ability to do anything outside of a lab environment!
 
-  This entry was posted on Wednesday, June 17th, 2009 at 8:32 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Wednesday, June 17th, 2009 at 8:32 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

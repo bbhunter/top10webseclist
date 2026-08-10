@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 IMQ Minded Security Blog: A Twitter DomXss, a wrong fix and something more
 
-    []()
+    
 
 #  A Twitter DomXss, a wrong fix and something more
 

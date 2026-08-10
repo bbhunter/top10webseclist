@@ -83,7 +83,7 @@ We will present some CVEs we found in popular open-source identity servers and w
 
 This blog post is based on work that I recently presented at [Black Hat USA](https://www.blackhat.com/us-23/briefings/schedule/#mtls-when-certificate-authentication-is-done-wrong-33203) and [DEF CON](https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Michael%20Stepankin%20-%20mTLS%20when%20certificate%20authentication%20done%20wrong.pdf).
 
-## [Introduction: What is mutual TLS?]()
+## Introduction: What is mutual TLS?
 
 Website certificates are a very widely recognized technology, even to people who don’t work in the tech industry, thanks to the padlock icon used by web browsers. Whenever we connect to Gmail or GitHub, our browser checks the certificate provided by the server to make sure it’s truly the service we want to talk to. Fewer people know that the same technology can be used to authenticate clients: the TLS protocol is also designed to be able to verify the client using public and private key cryptography.
 
@@ -116,7 +116,7 @@ Certificate:
 
 The server checks that this certificate is signed by one of the trusted authorities. This is a bit similar to checking the signature of a JWT token. Next, the client sends a “Certificate verify” message encrypted with the private key, so that the server can verify that the client actually has the private key.
 
-### [How certificates are validated]()
+### How certificates are validated
 
 “Certificate validation” commonly refers to the PKIX certificate validation process defined in [RFC 5280](https://www.rfc-editor.org/rfc/rfc5280).
 
@@ -128,7 +128,7 @@ Then, for each certificate in the chain, the validator checks the signature, val
 
 Note: in my research I mostly looked at how mTLS is implemented in applications written in Java, but it is likely that the ideas and attacks below apply to other languages as well.
 
-### [mTLS in a Java web application, an example]()
+### mTLS in a Java web application, an example
 
 Let’s see how to use mTLS in a Java web application. The bare minimum configuration is to enable it in the application settings and specify the location of all trusted root certificates, like this:
 
@@ -151,12 +151,12 @@ $ curl -k -v –cert client.pem http://localhost/hello
 
 This setup works for very simple mTLS configurations, when there is only a single root certificate, and all client certificates are signed by it. You can find this example in various articles on the web and it’s quite secure due to its simplicity. Let’s quickly break down its pros and cons.
 
-#### [Pros:]()
+#### Pros:
 
 - Speed: Authorization happens only during TLS handshake, all subsequent “keep-alive” HTTP requests are considered authenticated, saving CPU time.
 - Storage: Similar to JWT, the server does not store all client certificates, only the root certificate.
 
-#### [Cons:]()
+#### Cons:
 
 - No granular control: if mTLS is enabled, all requests have to be authenticated, even to `/static/style.css`.
 - Any certificate signed by a trusted CA can be used to access this HTTP service. Even if the certificate is issued for another purpose, it still can potentially be used for TLS authentication.
@@ -166,7 +166,7 @@ This setup works for very simple mTLS configurations, when there is only a singl
 
 As you can see, this approach brings some advantages and disadvantages compared to traditional authentication methods, such as password or tokens.
 
-### [Previous attacks]()
+### Previous attacks
 
 Before we dive into the attack section, I’ll briefly mention some previous well-known attacks on certificate parsing and validation:
 
@@ -174,13 +174,13 @@ Before we dive into the attack section, I’ll briefly mention some previous wel
 - Since the X.509 format is quite complex, just parsing these data structures can lead to buffer and heap overflows.
 - Lack of basic constraints checking. The end-entity certificates should not be used to sign additional certificates.
 
-### [My approach]()
+### My approach
 
 In Java, most of these attacks are already mitigated in APIs provided by the JDK. Weak algorithms are intentionally not allowed. Fuzzing of certificate parsing in Java also did not look productive to me, as the vast majority of PKIX code is implemented in memory-safe Java, instead of using native libraries. I had to take a different approach, so I decided to have a deep look at how mTLS is used from the source code perspective. Since the certificate validation process is quite complex, I suspected that someone might implement it in a weird way. After several weeks, it yielded me some interesting vulnerabilities in popular open source projects.
 
 So, let’s move on to the attack’s section.
 
-## [Chapter 1: Improper certificate extraction]()
+## Chapter 1: Improper certificate extraction
 
 In real-life applications, developers often need to access the certificate presented during the TLS handshake. For example, they might need it for authorization purposes, such as checking the current username. In Java, there are two common ways how to access it:
 
@@ -216,7 +216,7 @@ for (X509Certificate cert : certificates) {
 
 This is dangerous, as the underlying TLS library in Java only verifies the first certificate in the list. Moreover, it does not require the chain to be sent in a strict order.
 
-### [Example: CVE-2023-2422 improper certificate validation in KeyCloak]()
+### Example: CVE-2023-2422 improper certificate validation in KeyCloak
 
 One of these examples was a vulnerability I discovered in Keycloak. Keycloak is a popular authorization server that supports OAuth, SAML, and other authorization methods, as well as mutual TLS.
 
@@ -290,7 +290,7 @@ http {
 
 I’ve seen a number of systems like that, and in most cases the backend servers behind nginx do not perform additional validation, just trusting the reverse proxy. This behavior is not directly exploitable, but it’s not ideal either. Why? Well, first of all, it means that any server in the local network can make a request with this header, so this network segment needs to be carefully isolated from any traffic coming from outside. Additionally, if the backend or reverse proxy is affected by request smuggling or header injection, its exploitation becomes trivial. Over the past few years, we’ve seen a lot of request and header smuggling vulnerabilities, including the latest CVEs in [Netty](https://github.com/netty/netty/security/advisories/GHSA-wm47-8v5p-wjpj) and [Nodejs](https://github.com/advisories/GHSA-cggh-pq45-6h9x). Be careful when implementing these scenarios and check the certificate’s signature on all servers if possible.
 
-## [Chapter 2: “Follow the chain, where does it lead you?”]()
+## Chapter 2: “Follow the chain, where does it lead you?”
 
 ![Excerpt from RFC 4158: "Figure 1 - Sample Hierarchical PKI"](https://github.blog/wp-content/uploads/2023/08/mtls-4.png?w=1024&resize=1024%2C744)
 
@@ -302,7 +302,7 @@ In large systems, servers may not store all root and intermediate certificates l
 
 When certificate stores are in use, you should think of these values as “untrusted user input” or “Insertion points,” similar to those we have in Burp Suite’s Intruder. And what attackers will really love is that all of these values can be used in queries *before* the signature is checked.
 
-### [Example: CVE-2023-33201 LDAP injection in Bouncy Castle]()
+### Example: CVE-2023-33201 LDAP injection in Bouncy Castle
 
 To demonstrate an example of this vulnerability, we’ll use [LDAPCertStore](https://github.com/bcgit/bc-java/blob/main/prov/src/main/java/org/bouncycastle/jce/provider/X509LDAPCertStoreSpi.java) from the Bouncy Castle library. Bouncy Castle is one of the most popular libraries for certificate validation in Java. Here is an example of how you can use this store to build and validate a certificate chain.
 
@@ -330,7 +330,7 @@ So, if the Subject contains any special characters, it can change the syntax of 
 
 In general, whenever you incorporate user-supplied data into an LDAP query, special characters should be properly filtered. That’s exactly how this CVE has been patched in the Bouncy Castle code.
 
-## [Chapter 3: Certificate revocation and its unintended uses]()
+## Chapter 3: Certificate revocation and its unintended uses
 
 Similar to Json web tokens, the beauty of certificate chains is that they can be trusted just based on their signature. But what happens if we need to revoke a certificate, so it can no longer be used?
 
@@ -367,7 +367,7 @@ private static Collection getCrlsFromLDAP(CertificateFactory certFact, URI distr
 
 ```
 
-### [Example: CVE-2023-28857 credentials leak in Apereo CAS]()
+### Example: CVE-2023-28857 credentials leak in Apereo CAS
 
 I also had a quick look at open source projects that support mTLS and perform revocation checking. One of these projects was Apereo CAS. It’s another popular authentication server that is highly configurable. Administrators of Apereo CAS can enable the revocation check using an external LDAP server by specifying its address and password in the settings:
 
@@ -408,7 +408,7 @@ When I tested this in Apereo CAS, I noticed one interesting behavior. The server
 
 After reporting this vulnerability, the application developers issued a fix within just one day. They patched it by clearing the login and password used for LDAP connection if the URL is taken from the CRLDP. Therefore, the password leak is no longer possible. Nevertheless, I would say that using URLs from the CRLDP extension is still dangerous, as it broadens the attack surface.
 
-## [Summary]()
+## Summary
 
 If you’re developing an mTLS system or performing a security assessment, I suggest:
 

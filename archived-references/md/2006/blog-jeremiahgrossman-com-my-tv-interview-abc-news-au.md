@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 Jeremiah Grossman: My TV interview with ABC News (AU)
 
-   []()
+   
 
 ###  My TV interview with ABC News (AU)
 

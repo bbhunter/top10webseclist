@@ -107,9 +107,9 @@ Via
 - frame.location="new location";
 - frame.open("new location","_self");
 
-The modification of location of iframe's location work on windows inside frames on IE6, IE7, FF2, FF3 (go [here](http://images.google.com/imgres?imgurl=http://sla.ckers.org/images/slack.png&imgrefurl=http://sirdarckcat.blogspot.com/&h=300&w=400&sz=490&hl=es&start=32&um=1&tbnid=GnCpmSh_VEDO1M:&tbnh=93&tbnw=124&prev=) and then use [this]() code) but we wont use a frame in a frame to get the reference to the window, since we cant detach a window from a frame, and so, it is not what the bug is about.
+The modification of location of iframe's location work on windows inside frames on IE6, IE7, FF2, FF3 (go [here](http://images.google.com/imgres?imgurl=http://sla.ckers.org/images/slack.png&imgrefurl=http://sirdarckcat.blogspot.com/&h=300&w=400&sz=490&hl=es&start=32&um=1&tbnid=GnCpmSh_VEDO1M:&tbnh=93&tbnw=124&prev=) and then use this code) but we wont use a frame in a frame to get the reference to the window, since we cant detach a window from a frame, and so, it is not what the bug is about.
 
-Anyway, none of the mentioned method work for windows gotten from window.opener and open() on FF2 or FF3, but [it does work on IE7 on windows gotten from open()]() and [from window.opener](http://www.sirdarckcat.net/caballero.html).
+Anyway, none of the mentioned method work for windows gotten from window.opener and open() on FF2 or FF3, but it does work on IE7 on windows gotten from open() and [from window.opener](http://www.sirdarckcat.net/caballero.html).
 
 - So so far, we have an exploit that only works on IE (6&7).
 

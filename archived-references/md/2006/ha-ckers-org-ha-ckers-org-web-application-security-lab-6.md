@@ -73,7 +73,7 @@ Okay, I didn’t write part I, and really didn’t even know about it until toda
 
 Michael includes a remote image (I’ve had mixed luck trying this myself). My failures in trying nearly the exact same thing were fixed when I came up with another way to inject embedded files into word. Those files were actually CSS elements that Word will happily go and fetch for you. [Click here to get the scoop on how to inject CSS files into Word](http://ha.ckers.org/webbug.html). Using this same technique you can easily turn this into a complex platform for doing many CSRFs through a single Word file. See what happens when no one tells me about these things? Sheesh! Nice work Michael, I just wish I had seen it when it came out!
 
-  This entry was posted on Friday, December 15th, 2006 at 12:40 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [Random Security](http://ha.ckers.org/blog/category/random-security/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20061215/csrf-with-word-part-ii/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20061215/csrf-with-word-part-ii/trackback/) from your own site.
+  This entry was posted on Friday, December 15th, 2006 at 12:40 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [Random Security](http://ha.ckers.org/blog/category/random-security/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20061215/csrf-with-word-part-ii/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20061215/csrf-with-word-part-ii/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

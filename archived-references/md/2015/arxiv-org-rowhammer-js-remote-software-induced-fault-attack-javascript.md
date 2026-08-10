@@ -91,7 +91,7 @@ We demonstrate a fully automated attack that requires nothing but a website with
  **[[v4]](https://arxiv.org/abs/1507.06955v4)** Fri, 1 Apr 2016 11:42:18 UTC (151 KB)
  **[v5]** Tue, 5 Apr 2016 09:32:41 UTC (151 KB)
 
- []() Full-text links:
+  Full-text links:
 
 ## Access Paper:
 
@@ -218,4 +218,4 @@ Both individuals and organizations that work with arXivLabs have embraced and ac
 
 Have an idea for a project that will add value for arXiv's community? [**Learn more about arXivLabs**](https://info.arxiv.org/labs/index.html).
 
- [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1507.06955) | [Disable MathJax]() ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))
+ [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1507.06955) | Disable MathJax ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))

@@ -76,26 +76,26 @@ Valentino Massaro - [[email protected]](https://buganizer.cc/cdn-cgi/l/email-pro
 
 ## Table of contents
 
-- [bugSWAT Tokyo 2025]()
+- bugSWAT Tokyo 2025
 
-- [Gemini markdown sanitizer bypass]()
+- Gemini markdown sanitizer bypass
 
-- [Introduction]()
-- [Image rendering process]()
-- [Linkification process]()
-- [Bypassing the sanitizer]()
-- [Bypassing CSP]()
-- [Timeline]()
-- [Conclusion]()
+- Introduction
+- Image rendering process
+- Linkification process
+- Bypassing the sanitizer
+- Bypassing CSP
+- Timeline
+- Conclusion
 
-- [Colaboratory markdown sanitizer bypass]()
+- Colaboratory markdown sanitizer bypass
 
-- [Introduction]()
-- [Escaping the Gemini sanitizer]()
-- [Confusing Colab]()
-- [Bypassing URI prefix]()
-- [Timeline]()
-- [Conclusion]()
+- Introduction
+- Escaping the Gemini sanitizer
+- Confusing Colab
+- Bypassing URI prefix
+- Timeline
+- Conclusion
 
 ## bugSWAT Tokyo 2025
 
@@ -168,7 +168,7 @@ Although it was an already-known issue, finding this bug was a really cool proce
 
 ### Introduction
 
-Have you looked at my previous issue? (described in [Gemini Markdown sanitizer bypass]()). Well… I was actually looking for bugs in the **Export to Colab** feature before realizing I had found a Gemini sanitizer bypass. It seems that Gemini was performing sanitization before exporting to **Google Colab**, therefore, the bug would work in both Gemini (0-click) and “Export to Colab” (1-click).
+Have you looked at my previous issue? (described in Gemini Markdown sanitizer bypass). Well… I was actually looking for bugs in the **Export to Colab** feature before realizing I had found a Gemini sanitizer bypass. It seems that Gemini was performing sanitization before exporting to **Google Colab**, therefore, the bug would work in both Gemini (0-click) and “Export to Colab” (1-click).
 
 In this context, since Gemini and Colab are applications which parse and render content in a different way, I was looking for discrepancies between them. Generally, features that connect Gemini to other products can be seen as a bridge to other contexts, which expand the attack surface.
 

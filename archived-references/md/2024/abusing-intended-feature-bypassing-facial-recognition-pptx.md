@@ -73,26 +73,22 @@ TfnluCon 2024
 
 $ THAAMI $
 
-•
 Aspnrnnl Sfburnty Rfsfarbmfr
 
-•
 Bul Bounty Huntfr
 
-•
 CTF Pvayfr
 
-•
 Unn Studfnt @Cowp.Sbn..nl.
 
-•
 Ranufd Top15 rfsfarbmfr @?CIIPC
 
 --- page 3 ---
 
 ÿáU?ák|3?ó„ÿÀ$ÿ
 ù~?†^5�…u–ÖÕ—ÿBÁ¬OøsVðåÜvºö›q§ÜHžbÇ:€Ì™#wÔW=-
-Ïš¬ŸšLÒ5'#+`Û|[øqo2É»H½Gÿ
+Ïš¬ŸšLÒ5'
+#+`Û|[øqo2É»H½Gÿ
 «âOˆÿ
 
 --- page 4 ---
@@ -109,14 +105,11 @@ l
 
 --- page 6 ---
 
-•
 Tmf appvnbatnon usfs Artnknbnav Intfvvnlfnbf to wap out tmf kabf ok any partnbuvar usfr krow tmf 
 lroup pmotos
 
-•
 Autowatnbavvy knnd and batflornzf usfr nwalfs aasfd on tmfnr kabf.
 
-•
 Savfs tnwf ay fvnwnnatnnl tmf nffd kor wanuav pmoto sfarbmnnl.
 
 --- page 7 ---
@@ -189,13 +182,11 @@ Bypass
 
 --- page 16 ---
 
-•
  Condubtfd a tfst wntm a pmysnbav pmotolrapm, nt lot avur 
 and fndfd up 
 afnnl dftfbtfd & rftfbtfd
 .
 
-•
 Usfd a dffpkauf Iwalf krow tmf Intfndfd kfaturf 
 (Iwportfd krow lavvfry) and nt 
 aypassfd tmf bmfbu

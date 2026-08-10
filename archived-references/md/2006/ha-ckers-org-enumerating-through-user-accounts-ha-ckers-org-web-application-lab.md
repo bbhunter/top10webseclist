@@ -77,7 +77,7 @@ Let’s just count the ways in which this was a poorly designed system. 1) They 
 
 Anyway, this was one of the worst secured systems I’ve seen in a long time, and I thought you all might like to hear about it. Almost all of these issues surface at one point or another but rarely all at the same time. To make matters worse this isn’t exactly a little known website according to Alexa. Makes me worry about where I’ve used my credit card in the past.
 
-  This entry was posted on Saturday, November 18th, 2006 at 11:24 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Saturday, November 18th, 2006 at 11:24 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

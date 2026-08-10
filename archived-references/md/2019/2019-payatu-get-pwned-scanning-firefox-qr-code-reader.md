@@ -68,7 +68,7 @@ One of the most common ways to navigate to a website or URLs is by typing websit
 
 Table of Contents
 
- [ ]()
+  
 
 But this might be frustrating if you have to type a complex web address that includes some kind of tokens.
 

@@ -41,6 +41,8 @@ python tools/references/refs.py harvest        # every cited URL in the year lis
 python tools/references/refs.py check          # probe each URL, record health   [NETWORK]
 python tools/references/refs.py check-browser  # only the walled rows            [NETWORK]
 python tools/references/refs.py acquire        # preserve, convert, render        [NETWORK]
+python tools/references/refs.py papers         # the publisher's own PDF of an article [NETWORK]
+python tools/references/refs.py images         # the figures, decoded and re-encoded   [NETWORK]
 python tools/references/refs.py pdf            # a PDF beside each Markdown file   [DOCKER]
 python tools/references/refs.py wayback        # a better capture for a dead URL  [NETWORK]
 python tools/references/refs.py transcripts    # a talk's captions, in a container [NETWORK]
@@ -57,8 +59,38 @@ Useful flags: `harvest --json`, `harvest --show-excluded`, `check --limit N`,
 `pdf --force`, `index --prune-files`.
 
 `harvest`, `translate`, `index`, `verify`, `report`, `import` and `dependencies`
-are offline. `check`, `check-browser`, `acquire`, `pdf`, `wayback`, `insecure`
-and `transcripts` are the ones that reach the network or a browser.
+are offline. `check`, `check-browser`, `acquire`, `papers`, `images`, `pdf`,
+`wayback`, `insecure` and `transcripts` are the ones that reach the network or a
+browser. `pdf` prints without a network by contract, which is why `papers` and
+`images` exist as commands of their own: they fetch and store, and `pdf` later
+uses what they stored.
+
+### papers and images: what a rendered PDF is made of
+
+A PDF is only RENDERED from our Markdown when nothing better exists. In order of
+preference `pdf` publishes:
+
+1. the source's own bytes, when the reference IS a PDF (`source: original-pdf`);
+2. the publisher's own PDF of the article, when the page names one and `papers`
+   has fetched it (`source: linked-paper`) - every PortSwigger research post
+   offers a "print/download friendly" paper, and printing our text instead threw
+   away the author's typesetting;
+3. our Markdown, printed - and where `images` has preserved the article's
+   figures they are embedded in it, so the one artefact that cannot go and fetch
+   them later is the one that carries them.
+
+`images` NEVER STORES WHAT IT FETCHED. Each image is decoded to a pixel buffer
+and written back out as a new JPEG, which is what removes EXIF, ICC and XMP
+blocks, anything appended after the end of a valid image, and anything hidden in
+the low bits. SVG is refused outright rather than rasterised, because rasterising
+one means running it. See `refslib/images.py` for the size and format limits and
+why JPEG rather than WebP.
+
+The preserved images are held in the content store, OUT of the repository, and
+appear in the repository only inside the PDFs. The Markdown keeps pointing at the
+publisher's copy: publishing 4,500 image files would roughly double a repository
+that already carries 800MB of documents, and the website degrades a picture it
+cannot load into a note saying where the archived copy is.
 
 > `inventory` parses a document's SECTION structure and suits the upstream
 > project's curated documents; the year lists here are flat link lists, so it

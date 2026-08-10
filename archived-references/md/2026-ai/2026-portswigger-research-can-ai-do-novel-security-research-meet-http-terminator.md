@@ -93,49 +93,49 @@ You'll leave with new exploits from desync triggers to undisclosed attack classe
 
 This whitepaper is also available as a [printable PDF](https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf). If you've seen the size of the scrollbar and you're about to ask for an AI summary, you may prefer to read the [executive summary](https://portswigger.net/kb/papers/gkaicuremal/http-terminator-executive-summary.pdf) instead. This research was presented at [Black Hat USA 2026](https://blackhat.com/us-26/briefings/schedule/?#can-ai-do-novel-security-research-meet-the-http-terminator-51894) and [DEF CON 34](https://defcon.org/html/defcon-34/dc-34-speakers.html#content_66581), and this page will be updated with the recording once it's available - follow PortSwigger Research on [X](https://x.com/portswiggerres), [LinkedIn](https://www.linkedin.com/showcase/portswigger-research/posts/?feedView=all&viewAsMember=true) or [RSS](https://portswigger.net/research/rss) to get notified when it lands.
 
-## [Contents]()
+## Contents
 
-- [Introduction]()
+- Introduction
 
-- [Defining novel HTTP desync research]()
-- [HTTP Terminator Design]()
+- Defining novel HTTP desync research
+- HTTP Terminator Design
 
-- [Ideation]()
+- Ideation
 
-- [The technique rediscovery test]()
-- [Scaling ideation with micro-inspiration]()
+- The technique rediscovery test
+- Scaling ideation with micro-inspiration
 
-- [Evaluation]()
+- Evaluation
 
-- [The core evaluation primitive]()
-- [Evaluation case-study]()
-- [Novel desync triggers]()
+- The core evaluation primitive
+- Evaluation case-study
+- Novel desync triggers
 
-- [Weaponization]()
+- Weaponization
 
-- [Autonomous RQP]()
-- [Turning the environment into the weapon]()
-- [Making iteration viable]()
-- [The stacked-response problem]()
-- [The dangling-byte technique]()
+- Autonomous RQP
+- Turning the environment into the weapon
+- Making iteration viable
+- The stacked-response problem
+- The dangling-byte technique
 
-- [Cascade]()
+- Cascade
 
-- [Anomaly detection cascade]()
-- [Chasing an autonomous cascade]()
-- [Status-line Injection]()
-- [Range Cache Poisoning]()
-- [Shared-Parser Confusion]()
-- [Scanning for inspiration]()
+- Anomaly detection cascade
+- Chasing an autonomous cascade
+- Status-line Injection
+- Range Cache Poisoning
+- Shared-Parser Confusion
+- Scanning for inspiration
 
-- [Conclusion]()
+- Conclusion
 
-- [The blueprint]()
-- [Tool releases]()
-- [Defense]()
-- [Takeaways]()
+- The blueprint
+- Tool releases
+- Defense
+- Takeaways
 
-## [Introduction]()
+## Introduction
 
 Automation is often focused on efficiency but I believe that when it's approached just right, automation can enable outcomes that were previously impossible. This research is about chasing that promise of something more.
 
@@ -145,7 +145,7 @@ My secondary objective was to push the "fully autonomous research" concept to co
 
 Finally, I aimed to discover factors that make a research topic unsuitable for an AI-driven approach. This would be valuable to people who prefer to stick with a classic, fully-manual research approach and want to minimize the risk of collision with an AI-enhanced researcher.
 
-### [Defining novel HTTP desync research]()
+### Defining novel HTTP desync research
 
 We've all seen experts claiming AI can't do original security research. One of the many risks of my project was that people might claim that the system's discoveries weren't actually original. To minimize this risk I choose the topic I was most qualified for - HTTP Desync Attacks. I repopularized this attack class back in 2019, and in total I've done four years of research on it, resulting in four Black Hat USA & DEF CON presentations:
 
@@ -175,7 +175,7 @@ Desync triggers vary a lot in originality and value but in general, if a single 
 
 Desync attacks rely on the combined behavior of a front-end and back-end server. This means it's quite easy to point AI at a server codebase and have it spit out original vectors that have minimal value because they don't work in any realistic deployment setup. For me, it's just a research lead until it's proven on a live, third-party website.
 
-### [HTTP Terminator Design]()
+### HTTP Terminator Design
 
 I based the design of the HTTP Terminator on my own research methodology:
 
@@ -191,7 +191,7 @@ Finally, there's the Cascade - using each proven hypothesis as fuel for more dis
 
 I'll structure the rest of this paper around these phases. This structure is broadly applicable to other research topics, and I'll focus on the most transferable takeaways throughout. I've included some extra advice on how to design this type of system at the end.
 
-## [Ideation]()
+## Ideation
 
 To kick off the research, we need the system to autonomously generate hypotheses. In this context, a hypothesis is simply an idea or technique that might work. It must be testable so we can find out if it actually does work. Here's a few examples:
 
@@ -200,7 +200,7 @@ To kick off the research, we need the system to autonomously generate hypotheses
 - Desync pattern hypothesis: A malformed header makes some servers ignore subsequent headers
 - Weaponization hypothesis: Adding the Expect to a smuggled request bypasses RQP defenses
 
-### [The technique rediscovery test]()
+### The technique rediscovery test
 
 I wanted to explore strategies to make LLMs better at hypothesis generation, so the first step was to find a task that the best models found genuinely challenging. To do this I tested whether AI could invent a technique that I'd already invented and evaluated myself - but never published.
 
@@ -252,7 +252,7 @@ In summary we learned that if you're trying to generate valuable hypotheses:
 - Ask a concrete, high-value question without being too broad
 - Be aware that models aggressively anchor on all context provided, so every extra sentence of prompt risks context-contamination.
 
-### [Scaling ideation with micro-inspiration]()
+### Scaling ideation with micro-inspiration
 
 Applying these lessons to desync trigger generation lead to the following prompt:
 
@@ -292,7 +292,7 @@ To kick things off, I fed the system all HTTP and SMTP RFCs. It took these 138 R
 
 As you can see in the diagram earlier, I planned for the system to use many different sources of inspiration - it was even going to monitor mailing lists and GitHub issues so when someone posted a bug report, the HTTP Terminator would immediately attempt to weaponize it and exploit live websites. However, I ended up with so many findings just from RFCs, I moved on to the next component - evaluation.
 
-## [Evaluation]()
+## Evaluation
 
 There's nothing quite like having 30,000 different potential desync vectors to drive you to create a fully automated way to identify which ones actually work.
 
@@ -306,7 +306,7 @@ The HTTP Terminator is designed to run forever. Once a vanilla trigger has hit a
 
 To address the tension between getting false-positives and overlooking valid but unexpected discoveries, I added an anomaly detection layer which flagged unusual responses. In retrospect, permutations and anomaly-detection fingerprints should have both been read in from a database rather than hard-coded - that design would have enabled some more powerful autonomous feedback loops later on. More on that later.
 
-### [The core evaluation primitive]()
+### The core evaluation primitive
 
 The evaluation strategy is the most important component of an autonomous research system because it dictates both the quality and scope of the discoveries. If it yields false positives, at autonomy-scale any notable discoveries will be drowned in noise. But if it's overly specific, it'll only discover the kind of things you expect it to find, and miss the best discoveries.
 
@@ -322,7 +322,7 @@ This system has no expectations about what the poisoned response should look lik
 
 `POST / HTTP/1.1 GET / HTTP/777 X: Y````GET / HTTP/1.1``HTTP/1.1 505 HTTP Version Not Supported`
 
-### [Evaluation case-study]()
+### Evaluation case-study
 
 Here's a real example of this evaluation system in action.
 
@@ -342,7 +342,7 @@ When this was discovered, I hadn't yet built the Weaponization system so I simpl
 
 While I can't name the airport, the underlying vulnerability was traced to F5 Big-IP.
 
-### [Novel desync triggers]()
+### Novel desync triggers
 
 Here's a quick preview of some of the more original desync triggers that were confirmed viable by the evaluation system:
 
@@ -366,9 +366,9 @@ Placing the payload in the body after the terminator makes a lot of sense (and w
 
 This technique worked on multiple different server implementations and exposed over 200 different websites in my target set, including an American bank. It's a great illustration of how RFCs let you come up with one concept that exploits multiple different implementations.
 
-## [Weaponization]()
+## Weaponization
 
-### [Autonomous RQP]()
+### Autonomous RQP
 
 At this point I had roughly 700 vulnerable targets, so it was time to equip the HTTP Terminator to achieve real security impact.
 
@@ -384,7 +384,7 @@ When the agents didn't hit that false positive, they would turn on client-side c
 
 My attempts to fix these issues with prompting were ineffective, so I tried disabling the connection-reuse feature entirely. Unfortunately, the model was so convinced that client-side connection reuse was essential for a successful desync attack, that when it realized it couldn't reuse connections, it would give up!
 
-### [Turning the environment into the weapon]()
+### Turning the environment into the weapon
 
 When designing the MCP, I got a refusal:
 
@@ -410,7 +410,7 @@ Escaping bad semantic connections
 
 Finally, the agent got confused by the term "Response Queue Poisoning", and incorrectly thought it was successful when an attacker poisoned a victim's response. I solved this by eliminating all references to RQP and using the invented attack class "Victim Response Theft" instead.
 
-### [Making iteration viable]()
+### Making iteration viable
 
 Initially, the agents wrote Turbo Intruder scripts by customizing a template script. As I continued working on making this system reliable, I realized that autonomous vs human is the wrong framing. When something is fully AI-driven and heavily reliant on disposable AI-generated code it's extremely difficult to improve it iteratively over time.
 
@@ -430,7 +430,7 @@ Stealing live victim data isn't always strictly necessary for reporting a vulner
 
 ![Black box orchestration](https://portswigger.net/cms/images/e1/c4/0a21-article-black-box-orchestration.png)
 
-### [The stacked-response problem]()
+### The stacked-response problem
 
 Response queue poisoning is very difficult on many websites, thanks to the stacked-response problem.
 
@@ -442,7 +442,7 @@ This creates a race condition that breaks RQP attempts. It's not a reliable defe
 
 The only known technique to overcome the stacked-response problem and achieve RQP is sending an extremely high volume of requests, as fast as possible. This approach often still fails and also carries the risk of triggering DoS defenses, or causing downtime.
 
-### [The dangling-byte technique]()
+### The dangling-byte technique
 
 Depending on the exact front-end client and back-end server code, there are a number of ways you could make RQP more reliable. For example, in theory choosing a smuggled request that takes the back-end longer to process should widen the race window. Testing these theories manually is fiddly and time-consuming, so I kicked off an autonomous research sub-project.
 
@@ -461,7 +461,7 @@ This completely eliminated the race condition by meaning the second response was
 
 I was surprised that none of the other hypotheses survived evaluation, and was about to investigate when I decided to test a little feedback-loop idea I had first.
 
-## [Cascade]()
+## Cascade
 
 When you make a significant research discovery, it may contain a clue to something conceptually nearby (but often on a different target) that you overlooked. I visualize the landscape of discovered and undiscovered techniques as a tree. When you discover something, if you explore back up the tree you may find other undiscovered branches:
 
@@ -478,7 +478,7 @@ That might not look like much, but it creates a positive feedback loop which can
 
 Before we get started, a word of warning. Cascades are about harnessing chaos for progress. From this point onwards, it's going to get messy.
 
-### [Anomaly detection cascade]()
+### Anomaly detection cascade
 
 The HTTP Terminator proposed the following payload:
 
@@ -520,7 +520,7 @@ This combined with the way triggers are repeated to reduce non-determinism, a lu
 
 This alignment of a badly behaved AI, a lucky permutation, the perfect payload, and the updated anomaly detection system revealed a desync trigger which turned out to be a zero-day in Apache Traffic Server. It's now been patched and tracked as CVE-2026-63078.
 
-### [Chasing an autonomous cascade]()
+### Chasing an autonomous cascade
 
 The previous cascade was not autonomous - every step involved me analyzing a finding, and overseeing a code change to the anomaly detection layer. If I'd designed the system to treat anomaly patterns as importable data and mitigated the inevitable noise issues, perhaps that kind of cascade could happen autonomously?
 
@@ -548,7 +548,7 @@ The novel desync triggers led to a few small findings but nothing overly excitin
 
 The novel attack concept generation was an afterthought, but proved surprisingly valuable. Two of them are legitimate further-research leads, and the third is a genuinely significant discovery.
 
-### [Status-line Injection]()
+### Status-line Injection
 
 Status-line injection is an attack enabled by servers which copy the protocol string in the request line directly into the response status line, without sanitization:
 
@@ -560,7 +560,7 @@ This isn't directly exploitable, but enables the attacker to hit otherwise untou
 
 Real impact remains hypothetical - I'd love to hear if anyone manages to exploit this in the wild.
 
-### [Range Cache Poisoning]()
+### Range Cache Poisoning
 
 Range cache poisoning is a similar 'might work somewhere' technique. The AI noticed that some RANGE responses were being sent without a 206 status-code, meaning that they could potentially get incorrectly saved in a cache.
 
@@ -573,8 +573,6 @@ This would enable exploitation via front-end reassembly:
 Or, if the front-end isn't reassembling, via context-aware escaping
 
 `GET /x?q=sanitized\x< HTTP/1.1 Range: bytes=5-10``HTTP/1.1 200 OK Content-Type: text/html <script> q='sanitized\\x<'`
-
-###
 
 The critical breakthrough came when the system analyzed one of the many Content-Type: multipart/byteranges discoveries and made the following observation:
 
@@ -596,7 +594,7 @@ The closest published technique I could find is [Orange Tsai](https://x.com/oran
 
 I regard Shared Parser Confusion as one of the most significant discoveries of this research.
 
-### [Scanning for inspiration]()
+### Scanning for inspiration
 
 The last cascade I'd like to share was kicked off by the HTTP Terminator achieving RQP on a live site running a product by Beyond Trust, inspired by this RFC line:
 
@@ -640,9 +638,9 @@ I opened my laptop in the morning to discover the HTTP Terminator had found one 
 
 In that moment, It felt like I'd stepped into the audience for someone else's talk. The bank later informed me that they'd tracked the issue down to a misconfiguration in their Citrix NetScaler server.
 
-## [Conclusion]()
+## Conclusion
 
-### [The blueprint]()
+### The blueprint
 
 This research was a lot of fun, and I'd highly recommend building your own autonomous research engine.
 
@@ -661,7 +659,7 @@ Also, remember you can start rapidly by using an LLM for everything, then iterat
 
 If you build one, I'd love to hear how it goes.
 
-### [Tool releases]()
+### Tool releases
 
 To accompany this publication, I've published:
 
@@ -674,7 +672,7 @@ The latter three can be easily installed via Burp's BApp store.
 
 Please note that the HTTP Terminator is a research factory. If you just want to quickly find desync vulnerabilities in a specific target, HTTP Request Smuggler is the tool to use. On a similar note, the HTTP Terminator has not been integrated into our new product Burp AT - it's unsuitable for deployment in a commercial product. However, lessons learned from it informed the product design, and high-value research discoveries are shipped to customers regularly via Burp AT's skill system.
 
-### [Defense]()
+### Defense
 
 The solution to HTTP desync attacks is to never use upstream HTTP/1.1 - always use HTTP/2 or higher. Further mitigations are [covered in depth](https://portswigger.net/research/http1-must-die#defending-against-http-desync-attacks) in last year's paper HTTP/1.1 Must Die, but based on the slew of vectors discovered by the HTTP Terminator I'd add two additional recommendations for those forced to use upstream HTTP/1.1:
 
@@ -682,7 +680,7 @@ The solution to HTTP desync attacks is to never use upstream HTTP/1.1 - always u
 
 - Use a separate allow-list to specify which HTTP methods are allowed to have a request body. This should be limited to POST, and possibly PUT/PATCH etc if you use those. Methods like GET, HEAD, OPTIONS should never be accompanied by a body.
 
-### [Takeaways]()
+### Takeaways
 
 Looking back at the original desync research goals, we can see the HTTP Terminator autonomously invented and proved:
 

@@ -68,7 +68,7 @@ On the Security of RC4 in TLS
 
 The Wayback Machine - http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk:80/tls/
 
- []()
+ 
 
 ## Introduction
 
@@ -86,13 +86,13 @@ One of the attacks also applies to WPA/TKIP, the IEEE's successor protocol to WE
 
 Part of our work was presented at [USENIX Security 2013](http://web.archive.org/web/20160520151330/https://www.usenix.org/conference/usenixsecurity13), Washington DC, USA, 14th-16th August, 2013.
 
- []()
+ 
 
 ## Who are we?
 
  The team behind this research comprises Nadhem AlFardan, [Dan Bernstein](http://web.archive.org/web/20160520151330/http://cr.yp.to/djb.html), [Kenny Paterson](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/%7Ekp), Bertram Poettering and Jacob Schuldt. Nadhem is a PhD student in the [Information Security Group](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/) at [Royal Holloway, University of London](http://web.archive.org/web/20160520151330/http://www.rhul.ac.uk/). Dan is a Research Professor at the University of Illinois at Chicago and a Professor at the Eindhoven University of Technology. Kenny is a Professor of Information Security and an EPSRC Leadership Fellow in the Information Security Group at Royal Holloway, University of London. Bertram and Jacob are postdocs in the Information Security Group.
 
- []()
+ 
 
 ## What is affected?
 
@@ -112,7 +112,7 @@ All TLS implementations which support RC4 are affected.
 
 All WPA/TKIP implementations are affected.
 
- []()
+ 
 
 ## How severe are the attacks?
 
@@ -130,7 +130,7 @@ Our second attack applies to TLS and can be carried out in a single connection o
 
 In contrast to the recent [Lucky 13 attack](http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls/Lucky13.html), there is no need for sophisticated timing of error messages, and the attacker can be located anywhere on the network path between client and server in our attacks.
 
- []()
+ 
 
 ##  How does this work relate to known attacks, like BEAST, CRIME and Lucky 13?
 
@@ -144,13 +144,13 @@ There have been many attacks on RC4 over the years, most notably against RC4 in 
 
 The attacks are quite different from BEAST, CRIME and Lucky 13. BEAST exploits the inadvisable use of chained IVs in CBC-mode in SSL and TLS 1.0. CRIME cleverly exploits the use of compression in TLS. Lucky 13 defeats existing RFC-recommended countermeasures for padding oracle attacks against CBC-mode. Our attacks are against the RC4 algorithm and are based on analysing statistical weaknesses in the RC4 keystream. However, our attacks can be mounted using BEAST-style techniques.
 
- []()
+ 
 
 ## Why don't the attacks have cool names?
 
 In Western culture, naming one's attacks after obscure Neil Young albums is now considered passé.;
 
- []()
+ 
 
 ## What are the countermeasures?
 
@@ -163,7 +163,7 @@ For TLS, there are several possible countermeasures against our attacks. Some of
 
 For WPA/TKIP, the only reasonable countermeasure is to upgrade to WPA2.
 
- []()
+ 
 
 ## Patches, advisories and press
 
@@ -193,25 +193,25 @@ Selected media coverage:
 - [slashdot](http://web.archive.org/web/20160520151330/http://yro.slashdot.org/story/13/03/14/1839239/cryptographers-break-commonly-used-rc4-cipher?utm_source=rss1.0moreanon&utm_medium=feed)
 - [Wikipedia article on RC4 with mention of the attack](http://web.archive.org/web/20160520151330/http://en.wikipedia.org/wiki/RC4#Security)
 
- []()
+ 
 
 ## Is it still safe to use RC4 ?
 
 The attacks can only be carried out by a determined attacker who can generate sufficient sessions for the attacks. They recover a limited amount of plaintext. In this sense, the attacks do not pose a significant danger to ordinary users of TLS or WPA/TKIP in their current form. However, it is a truism that attacks only get better with time, and we anticipate significant further improvements to our attacks. In addition, because of their extremely widespread use, any attacks against TLS or WPA/TKIP require careful evaluation.
 
- []()
+ 
 
 ## Source code
 
 We have no plans to make our source code generally available. If you are a researcher interested in replicating or extending our work, then please contact us.
 
- []()
+ 
 
 ## Isn't it irresponsible to publish attacks on such important protocols?
 
 In short, no. Our long-term aim is to ensure that weak encryption options are eliminated from TLS, to the eventual benefit of all users of TLS. Likewise with WPA/TKIP. Experience shows that the only way to make this happen is to make the attacks as powerful as possible and build proof-of-concept implementations of them. We have expended significant research effort to develop and prototype our attacks. We disclosed the attacks to affected vendors in advance of making our research public, and we are working with all vendors who request our assistance in assessing the attacks and implementing countermeasures.
 
- []()
+ 
 
 ## For more information
 

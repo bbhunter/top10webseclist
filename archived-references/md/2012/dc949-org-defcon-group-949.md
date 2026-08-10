@@ -68,11 +68,11 @@ Defcon Group 949
 
 The Wayback Machine - https://web.archive.org/web/20170916090033/http://www.dc949.org:80/projects/stiltwalker/
 
- []()
+ 
 
 # Stiltwalker: Nucaptcha, Paypal, SecurImage, Slashdot, Davids Summer Communication
 
-Please review [v1](), [v2](), and [v3]() before continuing.
+Please review v1, v2, and v3 before continuing.
 
 We gave a talk on all of our changes since round 1 at BsidesLV 2012. You can grab the slides [here](https://web.archive.org/web/20170916090033/http:/www.dc949.org/projects/Stiltwalker2.odp) (or [here](https://web.archive.org/web/20170916090033/http:/www.dc949.org/projects/stiltwalkerPresentation2.tar.gz) for a tarball containing the demo videos and mp3s) and watch the video below.
 
@@ -89,11 +89,11 @@ We gave a talk on all of our changes since round 1 at BsidesLV 2012. You can gra
  **Davids Summer Communication:**
  python complete.py -ds -s 1 chrome 2
 
- []()
+ 
 
 # Stiltwalker: reCAPTCHA v3 - 59.4% Accurate *non-functional*
 
-Please review [v1]() then [v2]() before continuing.
+Please review v1 then v2 before continuing.
 
 Nothing but a broken record here: Google rolled back reCAPTCHA to the difficult (for humans) version, and we are rolling out some new Stiltwalker code that defeats it.
  It's mentioned in the v2 section, but we thought it deserved repeating.
@@ -104,17 +104,17 @@ The funny part, however, is that this version is what Google released when we fi
 
  You know the drill by now, Get the files here: [Stiltwalker v3](https://web.archive.org/web/20170916090033/http:/www.dc949.org/projects/stiltwalkerv3.tar.gz) and the [Corpus v3](https://web.archive.org/web/20170916090033/http:/www.dc949.org/projects/stiltwalker_corpusv3.tar.gz)
 
-FOOTNOTE: It looks like [Stiltwalker v2]() may still work depending on your location, old versions of reCAPTCHA seem to pop up from time to time.
+FOOTNOTE: It looks like Stiltwalker v2 may still work depending on your location, old versions of reCAPTCHA seem to pop up from time to time.
 
 UPDATE: reCAPTCHA pushed a new set of words, borking this version. Splitter and solver still work, it's just a matter of rolling the new words into Stiltwalker.
 
 ---
 
- []()
+ 
 
 # Stiltwalker: reCAPTCHA v2 - 60.95% Accurate *non-functional*
 
-Before reading this, we recommend you read [Stiltwalker: reCAPTCHA v1]() Located at the bottom of the page.
+Before reading this, we recommend you read Stiltwalker: reCAPTCHA v1 Located at the bottom of the page.
 
  Using the exact same methodologies as the first time around, Stiltwalker does it again.
  This time around, it has an accuracy of 60.95%, this is lower than last time since we decided to hang up our perfectionist hats for the time being.
@@ -172,7 +172,7 @@ Somtime today (6/1/2012) reCAPTCHA was rolled back to the previous, and almost u
 
 ---
 
- []()
+ 
 
 # Stiltwalker: reCAPTCHA v1 99.1% Accurate *non-functional*
 
@@ -222,7 +222,7 @@ In response to the member of the audience asking for the corpus (sample sets), [
 
 ---
 
- []()
+ 
 
 # Stiltwalker Timeline
 

@@ -93,3 +93,57 @@ def discover(markup, base_url=""):
 
 def _label(text):
     return re.sub(r"\s+", " ", html.unescape(text or "")).strip().lower()
+
+
+# THE SAME DOCUMENT, TYPESET BY ITS AUTHOR. A research post frequently offers
+# itself as a PDF - "you can also get this paper as a print/download friendly
+# PDF" - and printing our Markdown instead of taking that file throws away the
+# author's own figures, tables and layout. Every PortSwigger research post has
+# one, and so do write-ups from Doyensec, iSecLab and others.
+#
+# TWO CONDITIONS, BOTH REQUIRED, because a research write-up cites other
+# people's papers constantly and none of those is this document. Measured over
+# the archive, same-site alone matched 215 documents and included a DMCA form, a
+# CV, an affidavit and a vendor threat report; adding the phrase test left 18,
+# every one of them the page's own paper.
+PAPER_PHRASE = re.compile(
+    r"\b(?:white ?paper|printable|print/download|pdf version|version of this"
+    r"|as a pdf|read the paper|the paper|full paper"
+    r"|download (?:the )?(?:paper|pdf))\b", re.IGNORECASE)
+_MARKDOWN_LINK = re.compile(r"\[([^\]\n]{0,80})\]\((https?://[^)\s]+\.pdf)\)",
+                            re.IGNORECASE)
+_WAYBACK = re.compile(r"^https?://web\.archive\.org/web/[^/]+/(https?://.*)$",
+                      re.IGNORECASE)
+
+
+def paper_link(markdown, source_url=""):
+    """The publisher's own PDF of THIS document, named inside its own text.
+
+    Reads the archived Markdown rather than the markup, so it answers the same
+    question during acquisition and years later for a document whose stored
+    bytes are gone.
+    """
+    home = _site(source_url)
+    if not home:
+        return ""
+    for label, url in _MARKDOWN_LINK.findall(markdown or ""):
+        if _site(url) != home:
+            continue
+        if PAPER_PHRASE.search(label):
+            return _unwrap(url)
+    return ""
+
+
+def _unwrap(url):
+    """A Wayback capture URL reduced to the URL it captured.
+
+    Both sides need it: a recovered page IS `web.archive.org`, and comparing
+    that with a captured PDF's host made every link on the page same-site.
+    """
+    match = _WAYBACK.match(url or "")
+    return match.group(1) if match else (url or "")
+
+
+def _site(url):
+    host = (urlsplit(_unwrap(url)).hostname or "").lower().split(".")
+    return ".".join(host[-2:]) if len(host) > 1 else ".".join(host)

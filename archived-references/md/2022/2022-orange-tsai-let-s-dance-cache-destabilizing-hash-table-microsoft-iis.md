@@ -66,7 +66,7 @@ page going offline. To read the original, follow the link above.
 Hi, this is my fifth time speaking at [Black Hat USA](https://www.blackhat.com/us-22/briefings/schedule/index.html#lets-dance-in-the-cache---destabilizing-hash-table-on-microsoft-iis-27199) and [DEFCON](https://forum.defcon.org/node/241837). You can get the slide copy and video there:
 
 - [Let’s Dance in the Cache - Destabilizing Hash Table on Microsoft IIS (slides)](https://i.blackhat.com/USA-22/Wednesday/US-22-Tsai-Lets-Dance-in-the-Cache-Destabilizing-Hash-Table-on-Microsoft-IIS.pdf)
-- [Let’s Dance in the Cache - Destabilizing Hash Table on Microsoft IIS (video - TBD)]()
+- Let’s Dance in the Cache - Destabilizing Hash Table on Microsoft IIS (video - TBD)
 
 As the most fundamental Data Structure in Computer Science, Hash Table is extensively used in Computer Infrastructures, such as Operating Systems, Programming Languages, Databases, and Web Servers. Also, because of its importance, Microsoft has designed its own Hash Table algorithm from a very early stage, and applied it heavily to its web server, IIS.
 
@@ -99,8 +99,6 @@ Output Caching uses a bad Query String parser that only takes the first occurren
 This may be the most interesting bug of this talk. LKRHash is a Hash Table algorithm designed and [patented](https://patents.google.com/patent/US6578131) by Microsoft in 1997. It’s based on [Linear Hashing](https://en.wikipedia.org/wiki/Linear_hashing) and created by [Paul Larson](https://en.wikipedia.org/wiki/Paul_Larson) of Microsoft Research, Murali Krishnan and George Reilly of the IIS team.
 
 LKRHash aims to build a scalable and high-concurrent Hash Table under the multithreading and multi-core environment. The creators put a lot of effort into making this implementation portable, flexible and customizable to adapt to multiple products across Microsoft. An application can define its own Table-Related functions, such as the Hash Function, the Key Extracting Function, or the Key Comparing Function. This kind of extensibility creates a bunch of opportunities for vulnerability mining. So, under this context, we cares more about the relationship between the records, the keys, and the functions.
-
-**
 
 |
 
@@ -158,8 +156,6 @@ I guess the original intent was to compare the password. However, the developer 
 
 To build the smallest PoC to test your own, you can create a testing account and configure the Basic Authentication on your IIS.
 
-**
-
 |
 
 ```
@@ -186,8 +182,6 @@ HTTP/1.1 200 OK
  |  |
 
 Under the attacker’s terminal:
-
-**
 
 |
 

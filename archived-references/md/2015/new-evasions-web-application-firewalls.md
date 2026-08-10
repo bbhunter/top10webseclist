@@ -161,7 +161,6 @@ D
 --- page 3 ---
 
 Doublel
-*
 l
 lllllll
 lllllllll
@@ -792,7 +791,6 @@ D
 ndEDMT1EDMnHL+nLHEDTMDndEDAiHMnDcgEDBLnD-indDMJi(dnD+dTg(EMy
 D
 Dl+HiobuTM(MiArEbbAbTM230
-~
 -ttxBfR.LARvGMU
 D
 The 1,230~ characters to execute the alert() functio
@@ -819,7 +817,6 @@ D
 --- page 10 ---
 
 Doublel
-~
 l
 lllllll
 lllllllll
@@ -912,7 +909,6 @@ D
 KEnE+nicgy
 D
 DvlCBuAr E( +ErwTM(ooMUmlHO 
-~
 JLluzBpEbED+ErwBlvTM(ooMBAroOA&TMRLEb ncdMU
 D
 D
@@ -1015,7 +1011,6 @@ E2E+LnEKyDhdED)TaJcTKD-cHPMDcgDSiHEAc2DcgJay
 D
 DvlCBuAr E
 ( +ErwTM(ooMUmlHO 
-~
 JLluzBpEbED+ErwBlvTM(ooMBAroOA&TM2F;6;GMU
 D
 D
@@ -1047,7 +1042,6 @@ KEnE+nicg
 y
 D
 DIAv.Bo .LETMOElHO NcKKKe(MBAr&OEELTM230
-~
 -ttzBfR.LARvGMU
 D
 The 1,230~ characters 
@@ -1056,9 +1050,7 @@ execute the alert() function.
 D
  
 DvlCBuAr E( +ErwTM(ooMUmlHO 
-~
 JLluzBpEbED+ErwBlvTM(ooMBAroOA&TM230
-~
 -ttzB
 fR.LARvGMU
 D
@@ -1102,7 +1094,6 @@ D
 D
 DvlCBuAr E(
  +ErwTM(ooMUmlHO 
-~
 JLluzBpEbED+ErwBlvTM(ooMB
 AroOA&TMebA+sS*s)Ss))sS*s)Ss)a(PK7 ncdMU
 B
@@ -1207,7 +1198,6 @@ D
 E2E+LnEKyDhdED)TaJcTKD-cHPMDcgDSiHEAc2DcgJay
 D
 DvlCBuAr E( +ErwTM(ooMUmlHO 
-~
 JLluzBpEbED+ErwBlvTM(ooMBAroOA&TMRLEb ncdMU
 B
 D

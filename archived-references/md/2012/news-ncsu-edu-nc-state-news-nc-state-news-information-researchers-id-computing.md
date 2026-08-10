@@ -72,11 +72,11 @@ NC State News :: NC State News and Information » Researchers ID Ways to Exploit
 
 ## Accessibility Navigation:
 
-- [Skip to resource navigation]()
-- [Skip to section navigation]()
-- [Skip to topic navigation]()
-- [Skip to services navigation]()
-- [Skip to main content]()
+- Skip to resource navigation
+- Skip to section navigation
+- Skip to topic navigation
+- Skip to services navigation
+- Skip to main content
 
 ## Resource Navigation:
 

@@ -73,7 +73,7 @@ We're pleased to announce the availability of 'Socket Capable Browser Plugins Re
 
 **CERT Advisory: **[http://www.kb.cert.org/vuls/id/435052](http://www.kb.cert.org/vuls/id/435052)
 
- []()
+ 
 
 TrackBack URL for this entry:
 http://www.typepad.com/services/trackback/6a00e5502ec8d98834011168ceb72c970c

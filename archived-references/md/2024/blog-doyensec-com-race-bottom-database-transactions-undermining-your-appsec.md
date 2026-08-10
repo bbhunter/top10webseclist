@@ -513,7 +513,7 @@ All of these were performed using [BurpSuite’s](https://portswigger.net/burp) 
 
 Using this setup, we attacked the application by performing 20 requests using 10 threads/connections, transferring an amount of 50 from Bob (account ID `2` with a starting balance of 200) to Alice. Once the attack was done, we noted the number of accepted requests. Given a non-vulnerable application, there shouldn’t be more than 4 accepted requests.
 
-This was performed 10 times, for each combination of application/database/attack method. The number of successfully processed requests was noted. From those numbers we conclude if a specific isolation level is exploitable or not. Those results can be found [here]().
+This was performed 10 times, for each combination of application/database/attack method. The number of successfully processed requests was noted. From those numbers we conclude if a specific isolation level is exploitable or not. Those results can be found here.
 
 ## Results and Observations
 

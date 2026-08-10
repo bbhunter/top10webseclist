@@ -71,7 +71,6 @@ page going offline. To read the original, follow the link above.
  Behind these touch screen menus are running standalone or browser-mode Adobe Flash applications which are second-to-none for interactivity and scalablity and ease of update. Data could be pulled from somewhere round their centralized web severs.
 
  **Weakness: Jumping out**
- **
 **We cannot use [iKat](https://web.archive.org/web/20171009145341/http://ikat.ha.cked.net/) at first as we do not have access to any keyboard facility.
  However, the trick is no-brainer.
 

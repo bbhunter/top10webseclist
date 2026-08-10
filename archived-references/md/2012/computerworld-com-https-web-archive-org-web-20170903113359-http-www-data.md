@@ -114,7 +114,7 @@ Bogdan hasn't been doing Web vulnerability research for a long time. However, he
 
 Google, Mozilla, Facebook and PayPal run bug bounty programs through which they pay researchers who responsibly disclose vulnerabilities found in their websites. Other companies, such as Microsoft, don't hand out monetary rewards but recognize the help received from researchers by publishing their names on special thank-you pages on their websites.
 
-[Print]()
+Print
 
 Reprinted with permission from **IDG.net**. Story copyright 2012 International Data Group. All rights reserved.
 
@@ -128,7 +128,7 @@ Small and midsize businesses are moving to the cloud to host their communication
 
 [Read now.](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/show/200014207/00623430077818CTWPRJ0UHXTC9/?email=%%emailaddr%%)
 
- []()
+ 
 
    [ Malware Deep Dive Report ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/33199/detail) If malware were biological, the world would be in the grip of the worst pandemic in history. [ Malware B-Z: Inside the Threat From Blackhole to ZeroAccess ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/32145/detail) Learn how two of the most commonly used and technically capable pieces of crimeware are used by bad guys to compromise your security... [ Dell Active Infrastructure ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/35501/detail) Dell Active Infrastructure is a makeup of modular and automated converged infrastructure solutions combing servers, storage, networking and infrastructure management into an integrated... [ Microsoft SQL Server Database Consolidation ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/35496/detail) Dell's data-center-in-a-box solution, featuring the M1000e chassis, maybe the right choice for SMB customers looking to consolidate SQL Server databases in a virtualized... [ Oracle Cloud KnowledgeVault ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/35482/detail) The Oracle Cloud offers a broad portfolio of software as a service applications, platform as a service and social capabilities-- all on a... [All Malware and Vulnerabilities White Papers](https://web.archive.org/web/20130329114320/http://www.computerworld.com/s/whitepapers/topic/85/Malware+and+Vulnerabilities/1)
 
@@ -140,4 +140,4 @@ Small and midsize businesses are moving to the cloud to host their communication
 
  [Jobs](https://web.archive.org/web/20130329114320/http://www.simplyhired.com/) by [SimplyHired](https://web.archive.org/web/20130329114320/http://www.simplyhired.com/)
 
- [Skip to top]()
+ Skip to top

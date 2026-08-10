@@ -70,7 +70,7 @@ https://bugs.webkit.org/show_bug.cgi?id=15936
 
 |   Attachments  |   |
 |   [ **Updates the frame navigation policy to match Internet Explorer 7 (single window)**](https://bugs.webkit.org/attachment.cgi?id=17584)  (2.64 KB, patch)
- [2007-11-28 17:26 PST](), Collin Jackson    |   sam: review-
+ 2007-11-28 17:26 PST, Collin Jackson    |   sam: review-
   |
 
  [Details](https://bugs.webkit.org/attachment.cgi?id=17584&action=edit)[Formatted Diff](https://bugs.webkit.org/attachment.cgi?id=17584&action=prettypatch)[Diff](https://bugs.webkit.org/attachment.cgi?id=17584&action=diff)

@@ -45,6 +45,7 @@ from refslib import harvest as harvest_module          # noqa: E402
 from refslib import indexer as indexer_module          # noqa: E402
 from refslib import inventory as inventory_module      # noqa: E402
 from refslib import ledger as ledger_module            # noqa: E402
+from refslib import manifest as manifest_module        # noqa: E402
 from refslib import paths                             # noqa: E402
 from refslib import sources as sources_module          # noqa: E402
 from refslib import slugs as slugs_module              # noqa: E402
@@ -891,7 +892,10 @@ def command_translate(args):
             if entry.get("content_sha256"):
                 unreadable.append(entry.get("slug") or key)
             continue
-        if not translate_module.has_foreign_prose(
+        # WARRANTS, not merely HAS. A translation is a second document that the
+        # website opens in place of the original, so a stray foreign sample in
+        # an English write-up must not manufacture one.
+        if not translate_module.warrants_translation(
                 text, entry.get("language") or "",
                 {field: entry.get(field) or ""
                  for field in translate_module.METADATA_FIELDS}):
@@ -1442,6 +1446,262 @@ def _clear_completed_pdf_gap(entry, out_path):
     return True
 
 
+def command_images(args):
+    """Preserve the pictures an archived article was written around (network).
+
+    Only for the references whose PDF this archive RENDERS. A source that is
+    already a PDF carries its own figures, and a reference with no document has
+    nothing to illustrate.
+
+    What is stored is never what was fetched: `images.sanitise` decodes each one
+    and writes a new file from the pixels alone, so metadata, appended payloads
+    and anything hidden in the low bits do not come with it.
+    """
+    from refslib import images as images_module
+    from refslib.store import Store
+
+    root = paths.repo_root()
+    config = paths.config()
+    manifest = check_module.open_manifest(root, config)
+    store = Store(paths.store_root())
+    archive_dir = root / (config.get("archive_dir") or "archived-references")
+    fetcher = check_module.fetcher_module.Fetcher(per_host_gap=args.gap,
+                                                  timeout=args.timeout)
+
+    documents = kept = refused = held = 0
+    for key, entry in manifest.data["urls"].items():
+        if args.only and args.only.lower() not in key.lower():
+            continue
+        slug = entry.get("slug")
+        if not slug:
+            continue
+        if (entry.get("steps") or {}).get("pdf", {}).get("source") == "original-pdf":
+            continue
+        if (entry.get("paper") or {}).get("sha256"):
+            continue
+        md_path = archive_dir / collections_module.md_relpath(entry, config, slug)
+        if not md_path.exists():
+            continue
+        urls = images_module.urls_in(md_path.read_text(encoding="utf-8"))
+        if not urls:
+            continue
+        documents += 1
+        record = dict(entry.get("images") or {})
+        embedded = sum(item.get("bytes") or 0 for item in record.values()
+                       if item.get("sha256"))
+        for url in urls[:images_module.MAX_IMAGES_PER_DOCUMENT]:
+            if url in record and not args.force:
+                held += 1
+                continue
+            if embedded >= images_module.MAX_EMBEDDED_BYTES:
+                record[url] = {"reason": "the document reached its embedded image budget"}
+                continue
+            try:
+                response = fetcher.get(url, max_bytes=images_module.MAX_SOURCE_BYTES)
+                clean, width, height = images_module.sanitise(response.body or b"")
+            except images_module.Unusable as error:
+                record[url] = {"reason": str(error)[:120]}
+                refused += 1
+                continue
+            except Exception as error:
+                record[url] = {"reason": "%s: %s" % (type(error).__name__, str(error)[:90])}
+                refused += 1
+                continue
+            record[url] = {"sha256": store.put(clean), "bytes": len(clean),
+                           "width": width, "height": height}
+            embedded += len(clean)
+            kept += 1
+        entry["images"] = record
+        usable = sum(1 for item in record.values() if item.get("sha256"))
+        manifest.record(key, "images", result="stored", bytes=embedded,
+                        reason="%d of %d image(s) preserved" % (usable, len(record)))
+        print("  %-52s %3d/%-3d kept  %7d bytes"
+              % (slug[:52], usable, len(record), embedded))
+        # A sweep of the whole archive is thousands of requests and hours long.
+        # Saving as it goes means an interruption costs the document in hand
+        # rather than the run.
+        if documents % 25 == 0:
+            manifest.save()
+
+    manifest.save()
+    print("\n%d document(s): %d image(s) preserved, %d refused, %d already held."
+          % (documents, kept, refused, held))
+    print("Run `refs.py pdf --stale --force` to print them into the archived PDFs.")
+    return 0
+
+
+def command_papers(args):
+    """Preserve the publisher's own PDF of an archived article (network).
+
+    A research post very often offers itself as a PDF - "you can also get this
+    paper as a print/download friendly PDF" - and every PortSwigger research
+    post does. Printing our Markdown instead of taking that file throws away the
+    author's figures, tables and typesetting for no reason.
+
+    NETWORK LIVES IN ITS OWN COMMAND. `pdf` is offline by contract, so this
+    fetches and stores the bytes, and `pdf` later prefers them over rendering.
+    """
+    from refslib import linked_documents
+    from refslib import makepdf
+    from refslib.store import Store
+
+    root = paths.repo_root()
+    config = paths.config()
+    manifest = check_module.open_manifest(root, config)
+    store = Store(paths.store_root())
+    archive_dir = root / (config.get("archive_dir") or "archived-references")
+    fetcher = check_module.fetcher_module.Fetcher(per_host_gap=args.gap,
+                                                  timeout=args.timeout)
+
+    # A PAPER THE NETWORK CANNOT DELIVER. `blog.watchfire.com/FPI.pdf` is the
+    # Flash Parameter Injection advisory, named by its own 2008 article and
+    # served by a host that has been gone for years. The maintainer has a copy;
+    # without this the only route would be a fetch that can never succeed.
+    if args.from_file:
+        targets = [(key, entry) for key, entry in manifest.data["urls"].items()
+                   if args.only and args.only.lower() in key.lower()]
+        if len(targets) != 1:
+            print("Name exactly one reference with --only (matched %d)." % len(targets))
+            return 2
+        key, entry = targets[0]
+        body = Path(args.from_file).read_bytes()
+        if not makepdf.is_pdf_bytes(body):
+            print("That file is not a PDF.")
+            return 2
+        slug = entry.get("slug") or key
+        md_path = archive_dir / collections_module.md_relpath(entry, config, slug)
+        named = linked_documents.paper_link(
+            md_path.read_text(encoding="utf-8") if md_path.exists() else "",
+            (entry.get("spellings") or [key])[0])
+        entry["paper"] = {
+            "url": named,
+            "sha256": store.put(body),
+            "bytes": len(body),
+            "retrieved_utc": manifest_module.utc_now(),
+            "provenance": "manual-import",
+        }
+        manifest.record(key, "paper", result="stored", file="", bytes=len(body),
+                        reason="supplied by hand: %s" % (named or "url not recorded"))
+        manifest.save()
+        print("  stored   %-52s %8d bytes  (by hand)" % (slug[:52], len(body)))
+        if not named:
+            print("\nThe article does not name a PDF of its own, so nothing records"
+                  "\nwhere this file came from. Check it is the right document.")
+        print("\nRun `refs.py pdf --stale --force` to publish it.")
+        return 0
+
+    found, stored, failed, skipped = 0, 0, 0, 0
+    for key, entry in manifest.data["urls"].items():
+        if args.only and args.only.lower() not in key.lower():
+            continue
+        slug = entry.get("slug")
+        if not slug:
+            continue
+        # A reference whose ORIGINAL is already a PDF has nothing to look for.
+        if (entry.get("steps") or {}).get("pdf", {}).get("source") == "original-pdf":
+            continue
+        md_path = archive_dir / collections_module.md_relpath(entry, config, slug)
+        if not md_path.exists():
+            continue
+        url = linked_documents.paper_link(
+            md_path.read_text(encoding="utf-8"), (entry.get("spellings") or [key])[0])
+        if not url:
+            continue
+        found += 1
+        if (entry.get("paper") or {}).get("sha256") and not args.force:
+            skipped += 1
+            continue
+        try:
+            response = fetcher.get(url, max_bytes=64 * 1024 * 1024)
+            body = response.body or b""
+            if not makepdf.is_pdf_bytes(body):
+                raise ValueError("the link served %d bytes that are not a PDF"
+                                 % len(body))
+            entry["paper"] = {
+                "url": url,
+                "sha256": store.put(body),
+                "bytes": len(body),
+                "retrieved_utc": manifest_module.utc_now(),
+            }
+            entry["also_at"] = sorted(set((entry.get("also_at") or []) + [url]))
+            manifest.record(key, "paper", result="stored", file="", bytes=len(body),
+                            reason=url)
+            stored += 1
+            print("  stored   %-52s %8d bytes  %s" % (slug[:52], len(body), url[:60]))
+        except Exception as error:
+            failed += 1
+            manifest.record(key, "paper", result="failed",
+                            reason="%s: %s" % (type(error).__name__, str(error)[:120]))
+            print("  FAILED   %-52s %s" % (slug[:52], str(error)[:60]))
+
+    manifest.save()
+    print("\n%d article(s) name their own PDF: %d stored, %d already held, %d failed."
+          % (found, stored, skipped, failed))
+    print("Run `refs.py pdf --stale --force` to publish them.")
+    return 1 if failed else 0
+
+
+def _pdf_is_stale(entry, config, archive_dir):
+    """Whether this reference's published PDF no longer reflects its inputs.
+
+    A full `pdf --force` reprints 1,344 documents through a browser to fix the
+    handful that changed. Three things make a PDF out of date, and each is
+    something a preceding command recorded:
+
+    * the Markdown it was printed from has been rewritten since;
+    * `papers` has since fetched the publisher's own PDF of the article, which
+      outranks anything we could print;
+    * `images` has since preserved figures that are not in it.
+    """
+    steps = entry.get("steps") or {}
+    slug = entry.get("slug") or ""
+    printed = steps.get("pdf") or {}
+    out_path = archive_dir / collections_module.pdf_relpath(entry, config, slug)
+    if not out_path.exists():
+        return True
+    if (entry.get("paper") or {}).get("sha256") and printed.get("source") != "linked-paper":
+        return True
+    if printed.get("source") != "markdown":
+        return False
+    # A converter fix changes what the document should look like without
+    # touching the Markdown it came from, so the file's own timestamps cannot
+    # see it. The recorded version can.
+    from refslib import makepdf as makepdf_module
+    if (printed.get("renderer") or 1) < makepdf_module.RENDERER:
+        return True
+    md_path = archive_dir / collections_module.md_relpath(entry, config, slug)
+    if md_path.exists() and md_path.stat().st_mtime > out_path.stat().st_mtime:
+        return True
+    images_at = (steps.get("images") or {}).get("utc") or ""
+    return bool(images_at and images_at > (printed.get("utc") or ""))
+
+
+def _image_source(entry, store):
+    """A lookup from image URL to an embeddable copy the archive already holds.
+
+    OFFLINE, and it has to be: `pdf` prints without a network, so an image that
+    `images` did not preserve is simply not printed. Returns None when this
+    reference has no preserved images, so the converter skips the work entirely.
+    """
+    held = {url: item.get("sha256") for url, item in (entry.get("images") or {}).items()
+            if item.get("sha256")}
+    if not held:
+        return None
+    from refslib import images as images_module
+
+    cache = {}
+
+    def source(url):
+        if url in cache:
+            return cache[url]
+        sha = held.get(url)
+        body = store.get(sha) if (sha and store.has(sha)) else b""
+        cache[url] = images_module.data_uri(body) if body else ""
+        return cache[url]
+
+    return source
+
+
 def command_pdf(args):
     """Make a PDF copy of every archived reference, beside its Markdown file.
 
@@ -1472,6 +1732,8 @@ def command_pdf(args):
         if (entry.get("kind") or "") in skip_kinds:
             return False
         if args.only and args.only.lower() not in key.lower():
+            return False
+        if args.stale and not _pdf_is_stale(entry, config, archive_dir):
             return False
         return True
 
@@ -1509,7 +1771,28 @@ def command_pdf(args):
 
         raw = store.get(entry["raw_sha256"]) if (
             entry.get("raw_sha256") and store.has(entry["raw_sha256"])) else b""
+        # THE AUTHOR'S OWN PDF OF THIS DOCUMENT, when `papers` found and stored
+        # one. It outranks our text render for the same reason an original PDF
+        # does: it is the document as its publisher typeset it, figures and all.
+        paper_sha = (entry.get("paper") or {}).get("sha256") or ""
+        paper = store.get(paper_sha) if (paper_sha and store.has(paper_sha)) else b""
         try:
+            if makepdf.is_pdf_bytes(paper):
+                out_dir.mkdir(parents=True, exist_ok=True)
+                out_path.write_bytes(paper)
+                manifest.record(key, "pdf", result="copied",
+                                file=paths.rel(out_path, root), bytes=len(paper),
+                                source="linked-paper")
+                if _clear_completed_pdf_gap(entry, out_path):
+                    manifest.record(key, "pdf-remedy", result="resolved",
+                                    file=paths.rel(out_path, root),
+                                    reason="the previously missing archive PDF now exists")
+                    cleared += 1
+                copied += 1
+                print("  [%3d] copied   %-52s %d bytes (publisher's own paper)"
+                      % (number, slug[:52], len(paper)))
+                continue
+
             if makepdf.is_pdf_bytes(raw):
                 out_dir.mkdir(parents=True, exist_ok=True)
                 out_path.write_bytes(raw)
@@ -1535,12 +1818,15 @@ def command_pdf(args):
                 continue
             text = md_path.read_text(encoding="utf-8")
             title = entry.get("title_english") or entry.get("title") or slug
-            document = makepdf.markdown_to_html(text, title=title, source_url=url)
+            document = makepdf.markdown_to_html(
+                text, title=title, source_url=url,
+                image_source=_image_source(entry, store))
             pdf = ladder.print_pdf(document)
             out_dir.mkdir(parents=True, exist_ok=True)
             out_path.write_bytes(pdf)
             manifest.record(key, "pdf", result="rendered", file=paths.rel(out_path, root),
-                            bytes=len(pdf), source="markdown")
+                            bytes=len(pdf), source="markdown",
+                            renderer=makepdf.RENDERER)
             if _clear_completed_pdf_gap(entry, out_path):
                 manifest.record(key, "pdf-remedy", result="resolved",
                                 file=paths.rel(out_path, root),
@@ -2548,10 +2834,41 @@ def build_parser():
                                  help="accepted for symmetry; PDF making is cheap to repeat")
     make_pdf_parser.add_argument("--force", action="store_true",
                                  help="remake PDFs that already exist")
+    make_pdf_parser.add_argument("--stale", action="store_true",
+                                 help="only references whose Markdown, paper or "
+                                      "images changed after the PDF was made "
+                                      "(combine with --force to reprint them)")
     make_pdf_parser.add_argument("--translations-only", action="store_true",
                                  help="render only English translation PDFs; do not "
                                       "touch the original-language PDFs")
     make_pdf_parser.set_defaults(handler=command_pdf)
+
+    images_parser = subparsers.add_parser(
+        "images", help="preserve the pictures an archived article was written "
+                       "around, re-encoded (network)")
+    images_parser.add_argument("--only", default="",
+                               help="only references whose identity contains this text")
+    images_parser.add_argument("--force", action="store_true",
+                               help="fetch again even where an image is already held")
+    images_parser.add_argument("--gap", type=float, default=0.5,
+                               help="seconds to wait between requests to one host")
+    images_parser.add_argument("--timeout", type=int, default=30)
+    images_parser.set_defaults(handler=command_images)
+
+    papers_parser = subparsers.add_parser(
+        "papers", help="preserve the publisher's own PDF of an archived article (network)")
+    papers_parser.add_argument("--only", default="",
+                               help="only references whose identity contains this text")
+    papers_parser.add_argument("--force", action="store_true",
+                               help="fetch again even when the paper is already held")
+    papers_parser.add_argument("--from-file", default="",
+                               help="a PDF obtained by hand, for the one reference "
+                                    "named by --only; its path is never written "
+                                    "into tracked output")
+    papers_parser.add_argument("--gap", type=float, default=1.0,
+                               help="seconds to wait between requests to one host")
+    papers_parser.add_argument("--timeout", type=int, default=60)
+    papers_parser.set_defaults(handler=command_papers)
 
     pdf_text_parser = subparsers.add_parser(
         "pdf-text", help="read a PDF's text with poppler, in the container")

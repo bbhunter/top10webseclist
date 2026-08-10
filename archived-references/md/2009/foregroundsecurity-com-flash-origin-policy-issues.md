@@ -168,7 +168,7 @@ The ideal fix should involve Adobe implementing a more sensible origin policy fo
 
 ![0](http://www.gravatar.com/avatar.php?gravatar_id=09ca15b6efbb7e63ce422fcb37667adb&default=http%3A%2F%2Fwww.foregroundsecurity.com%2Fcomponents%2Fcom_jomcomment%2Fsmilies%2Fguest.gif&size=40)
 
-   Lowly rated comment [[Show]()]
+   Lowly rated comment [Show]
 
 ![0](http://www.gravatar.com/avatar.php?gravatar_id=694d40482bf1386d53b983cebdd1a3f5&default=http%3A%2F%2Fwww.foregroundsecurity.com%2Fcomponents%2Fcom_jomcomment%2Fsmilies%2Fguest.gif&size=40)
 
@@ -184,7 +184,7 @@ The ideal fix should involve Adobe implementing a more sensible origin policy fo
 
 ![0](http://www.gravatar.com/avatar.php?gravatar_id=2a5d2e19906383b1a574f4d48d634d47&default=http%3A%2F%2Fwww.foregroundsecurity.com%2Fcomponents%2Fcom_jomcomment%2Fsmilies%2Fguest.gif&size=40)
 
-   Lowly rated comment [[Show]()]
+   Lowly rated comment [Show]
 
 ![0](http://www.gravatar.com/avatar.php?gravatar_id=294659ed50a68a6c21345100642de4e0&default=http%3A%2F%2Fwww.foregroundsecurity.com%2Fcomponents%2Fcom_jomcomment%2Fsmilies%2Fguest.gif&size=40)
 

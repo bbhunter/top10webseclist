@@ -64,8 +64,6 @@ page going offline. To read the original, follow the link above.
 
 >
 
-#
-
 # Misconfigurations in Java XML Parsers
 
 XML is a powerful data format that can elegantly encapsulate any conceivable kind of information. To ensure that this complex data adheres to a pre-defined structure, XML documents can specify a DTD – a helper document that defines the expected structure of the data. And to help simplify the contents of a complex document, XML allows for External Entities – bits of content that can be included in a document by reference, like a link in a web page. DTDs and External Entities are additional content for XML software to process, but this kind of software is often written with a focus on the actual XML document, with less attention paid to the details of processing DTDs and External Entities. An XML External Entity attack, or XXE attack, attempts to find vulnerabilities in software that processes DTDs and External Entities of XML documents.

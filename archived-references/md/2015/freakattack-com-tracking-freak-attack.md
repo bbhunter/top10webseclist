@@ -71,7 +71,7 @@ For additional details about the attack and its implications, see [this post by 
 
 ---
 
- [ ]()
+  
 
 ## Who is vulnerable?
 
@@ -86,7 +86,7 @@ Servers that accept RSA_EXPORT cipher suites put their users at risk from the FR
 |  HTTPS servers with browser-trusted certificates |  6.5% |  down from 36.7% |   |
 |  All HTTPS servers |  11.8% |  down from 26.3% |   |
 
-See below for a list of [vulnerable popular domains](). You can test servers using the [SSL FREAK Check](https://tools.keycdn.com/freak) tool or the Qualys SSL Labs’ [SSL Server Test](https://www.ssllabs.com/ssltest/), which can also identify other security problems.
+See below for a list of vulnerable popular domains. You can test servers using the [SSL FREAK Check](https://tools.keycdn.com/freak) tool or the Qualys SSL Labs’ [SSL Server Test](https://www.ssllabs.com/ssltest/), which can also identify other security problems.
 
 #### **Clients**
 
@@ -110,7 +110,7 @@ In addition to browsers, many mobile apps, embedded systems, and other software 
 
 ---
 
- []()
+ 
 
 ## What should I do?
 
@@ -128,7 +128,7 @@ Make sure any TLS libraries you use are up to date. Unpatched [OpenSSL](https://
 
 ---
 
- []()
+ 
 
 ## Popular sites that are susceptible to FREAK
 

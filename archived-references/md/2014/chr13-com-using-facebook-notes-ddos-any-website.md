@@ -70,9 +70,9 @@ The Wayback Machine - https://web.archive.org/web/20160406153520/http://chr13.co
 
 ## Using Facebook Notes to DDoS any website
 
-  Posted by [chr13]() on April 20, 2014
+  Posted by chr13 on April 20, 2014
 
-**[[Update]()]**
+**[Update]**
 
 Facebook Notes allows users to include <img> tags. Whenever a <img> tag is used, Facebook crawls the image from the external server and caches it. Facebook will only cache the image once however using random get parameters the cache can be by-passed and the feature can be abused to cause a huge HTTP GET flood.
 

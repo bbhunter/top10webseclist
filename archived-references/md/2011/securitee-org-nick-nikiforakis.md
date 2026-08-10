@@ -197,13 +197,13 @@ My students and I work on all sorts of practical, hands-on security and privacy.
  *Narong Chaiwut and Nick Nikiforakis*
 Proceedings of the International Conference on Information and Communications Security (ICICS), 2026
 
-[ Citation]()
+ Citation
 
 - ![](https://www.securitee.org/img/new.gif)[ New Trains, Same Rails: Fingerprinting Cryptocurrency Software via Network Requests](https://www.securitee.org/files/newtrainsweb3_ifipnetworking2026.pdf)
  *Muhammad Muzammil, Oleksii Starov, Zane Ma, and Nick Nikiforakis*
 Proceedings of the IFIP Networking Conference, 2026
 
-[ Citation](),
+ Citation,
 
  [Paper Artifacts](https://pragseclab.github.io/DNS-Web3/)
 
@@ -211,20 +211,20 @@ Proceedings of the IFIP Networking Conference, 2026
  *Ruining Yang, Narong Chaiwut, and Nick Nikiforakis*
 Proceedings of the ACM Conference on Data and Application Security and Privacy (CODASPY), 2026
 
-[ Citation]()
+ Citation
 
 - [ No Wallet for Old Tricks: Introducing Context-aware Defenses Against Cryptocurrency-based
 Social Engineering Attacks](https://www.securitee.org/files/ensdefenses_eurosec2026.pdf)
  *Muhammad Muzammil, Harsh Shah, and Nick Nikiforakis*
 Proceedings of the European Workshop on Systems Security (EuroSec), 2026
 
-[ Citation]()
+ Citation
 
 - [ Echoes of the Past: Detecting and Classifying Re-registered Domains in Enterprise DNS Traffic](https://www.securitee.org/files/echoes_madweb2026.pdf)
  *Muhammad Muzammil, Zafir Ansari, Nick Nikiforakis, and Darin Johnson*
 Proceedings of the Workshop on Measurements, Attacks, and Defenses for the Web (MADWeb), 2026
 
-[ Citation]()
+ Citation
 
 2025
 
@@ -232,7 +232,7 @@ Proceedings of the Workshop on Measurements, Attacks, and Defenses for the Web (
  *Billy Tsouvalas and Nick Nikiforakis*
 Proceedings of the Symposium on Electronic Crime Research (eCrime), 2025
 
-[ Citation](),
+ Citation,
 
 [Paper Artifacts](https://parallaxpaper.github.io/)
 
@@ -240,49 +240,49 @@ Proceedings of the Symposium on Electronic Crime Research (eCrime), 2025
  * Chris Tsoukaladelis, Roberto Perdisci, and Nick Nikiforakis*
 Proceedings of the 28th International Symposium on Research in Attacks, Intrusions and Defenses (RAID), 2025
 
- [Citation]()
+ Citation
 
 - [ What Gets Measured Gets Managed: Mitigating Supply Chain Attacks with a Link Integrity Management System ](https://www.securitee.org/files/so-2025-what.pdf)
  * Johnny So, Michael Ferdman, and Nick Nikiforakis*
 Proceedings of the ACM Conference on Computer and Communications Security (CCS), 2025
 
- [Citation]()
+ Citation
 
 - [ The Power to Never Be Wrong: Evasions and Anachronistic Attacks Against Web Archives](https://www.securitee.org/files/kirchner_power_ccs2025.pdf)
  * Robin Kirchner, Chris Tsoukaladelis, Martin Johns, and Nick Nikiforakis*
 Proceedings of the ACM Conference on Computer and Communications Security (CCS), 2025
 
- [Citation]()
+ Citation
 
 - [ A Decade-long Landscape of Advanced Persistent Threats: Longitudinal Analysis and Global Trends](https://www.securitee.org/files/apt_ccs2025.pdf)
  * Shakhzod Yuldoshkhujaev, Mijin Jeon, Doowon Kim, Nick Nikiforakis, and Hyungjoon Koo*
 Proceedings of the ACM Conference on Computer and Communications Security (CCS), 2025
 
- [Citation]()
+ Citation
 
 - [ Time for Actions: A Longitudinal Study of the GitHub Actions Marketplace](https://www.securitee.org/files/timeforactions_secdev2025.pdf)
  * Narong Chaiwut and Nick Nikiforakis*
 Proceedings of the IEEE Secure Development Conference (SecDev), 2025
 
- [Citation]()
+ Citation
 
 - [ Doubly Dangerous: Evading Phishing Reporting Systems by Leveraging Email Tracking Techniques](https://www.securitee.org/files/doublydangerous_ccs2025.pdf)
  * Anish Chand, Nick Nikiforakis, and Phani Vadrevu *
 Proceedings of the USENIX Security Symposium, 2025
 
- [Citation]()
+ Citation
 
 - [ Lost in the Mists of Time: Expirations in DNS Footprints of Mobile Apps](https://www.securitee.org/files/dnsmists_usenix2025.pdf)
  * Johnny So, Iskander Sanchez-Rola, and Nick Nikiforakis *
 Proceedings of the USENIX Security Symposium, 2025
 
- [Citation]()
+ Citation
 
 - [ The Poorest Man in Babylon: A Longitudinal Study of Cryptocurrency Investment Scams](https://www.securitee.org/files/crimson_www2025.pdf)
  * Muhammad Muzammil, Abisheka Pitumpe, Xigao Li, Amir Rahmati, and Nick Nikiforakis *
 Proceedings of the Web Conference (WWW), 2025
 
- [Citation]()
+ Citation
 
 2024
 
@@ -290,26 +290,26 @@ Proceedings of the Web Conference (WWW), 2025
  * Brian Kondracki, Michael Ferdman, and Nick Nikiforakis *
 Proceedings of the Annual Computer Security Applications Conference (ACSAC), 2024
 
- [Citation](), [Paper Artifacts](https://pragseclab.github.io/mako/)
+ Citation, [Paper Artifacts](https://pragseclab.github.io/mako/)
 
 - [ Harnessing Multiplicity: Granular Browser Extension Fingerprinting through User Configurations](https://www.securitee.org/files/multifp_acsac2024.pdf)
  * Konstantinos Solomos, Nick Nikiforakis, and Jason Polakis *
 Proceedings of the Annual Computer Security Applications Conference (ACSAC), 2024
 
- [Citation]()
+ Citation
 
 - [ Panning for gold.eth: Understanding and Analyzing ENS Domain Dropcatching](https://www.securitee.org/files/ens_domains_imc2024.pdf)
  *Muhammad Muzammil, ZhengYu Wu, Aruna Balasubramanian, and Nick Nikiforakis*
 Proceedings of the Internet Measurement Conference (IMC), 2024
 
-[ Citation](), [Paper Artifacts](https://github.com/pragseclab/ens-dropcatching)
+ Citation, [Paper Artifacts](https://github.com/pragseclab/ens-dropcatching)
 
 - [ Typosquatting 3.0: Characterizing Squatting in Blockchain Naming Systems](https://arxiv.org/pdf/2411.00352)
  *Muhammad Muzammil, ZhengYu Wu, Lalith Harisha, Brian Kondracki, and Nick Nikiforakis*
 Proceedings of the Symposium on Electronic Crime Research (eCrime), 2024
  **(Bronze Medal Award)**
 
-[ Citation](), [Paper Artifacts](https://github.com/pragseclab/typosquatting3.0?tab=readme-ov-file)
+ Citation, [Paper Artifacts](https://github.com/pragseclab/typosquatting3.0?tab=readme-ov-file)
 
 Media Coverage: [Fast Company](https://www.fastcompany.com/91228285/scammers-are-making-thousands-of-dollars-through-blockchain-typosquatting), [The Debrief](https://thedebrief.org/cryptocurrency-scammers-are-trying-to-exploit-typos-in-your-digital-wallet/), [CoinTrust](https://www.cointrust.com/market-news/stony-brook-researchers-highlight-blockchain-naming-system-risks), [SBU News](https://news.stonybrook.edu/university/sbu-researchers-uncover-new-cybersecurity-risks-in-blockchain-win-ecrime-medal/)
 
@@ -318,39 +318,39 @@ Media Coverage: [Fast Company](https://www.fastcompany.com/91228285/scammers-are
 Proceedings of the USENIX Security Symposium, 2024
  **(Distinguished Paper Award)**
 
-[ Citation](), [Paper Artifacts](https://pragseclab.github.io/smudged-fingerprints/)
+ Citation, [Paper Artifacts](https://pragseclab.github.io/smudged-fingerprints/)
 
 - [ Knocking on Admin's Door: Protecting Critical Web Applications with Deception](https://www.securitee.org/files/pageknocker_dimva2024.pdf)
  *Billy Tsouvalas and Nick Nikiforakis *
 Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA)
 
-[ Citation](), [Paper Artifacts](https://pageknocker.github.io/)
+ Citation, [Paper Artifacts](https://pageknocker.github.io/)
 
 - [ Secrets are forever: Characterizing sensitive file leaks on IPFS](https://www.securitee.org/files/ipfs_ifipnet2024.pdf)
  *Zhengyu Wu, Brian Kondracki, Nick Nikiforakis and Aruna Balasubramanian *
 International Federation for Information Processing (IFIP) Networking Conference (NETWORKING 2024)
 
-[ Citation ]()
+ Citation 
 
 - [ Manufactured Narratives: On the Potential of Manipulating Social Media to Politicize World Events](https://www.securitee.org/files/narratives_secweb2024.pdf)
  *Chris Tsoukaladelis and Nick Nikiforakis*
 Proceedings of the SecWeb Workshop (SecWeb), 2024
  **(Best Paper Award)**
 
-[Citation]()
+Citation
 
 - [ The Times They Are A-Changin': Characterizing Post-Publication Changes to Online News](https://www.securitee.org/files/changing_times_oakland24.pdf)
  *Chris Tsoukaladelis, Brian Kondracki, Niranjan Balasubramanian, and Nick Nikiforakis*
 Proceedings of the IEEE Symposium on Security and Privacy (IEEE S&P), 2024
 **(Second place, CSAW 2024 competition, social impact award)**
 
-[Citation](), [Paper artifacts](https://changing-times.github.io/)
+Citation, [Paper artifacts](https://changing-times.github.io/)
 
 - [ Like, Comment, Get Scammed: Characterizing Comment Scams on Media Platforms ](https://www.securitee.org/files/likecomment_ndss2024.pdf)
  *Xigao Li, Amir Rahmati, and Nick Nikiforakis *
 Proceedings of the Network and Distributed System Security Symposium (NDSS), 2024 **(Distinguished Paper Award, CSAW 2024 Finalist)**
 
-[ Citation](), [Paper Artifacts](https://like-comment-get-scammed.github.io/)
+ Citation, [Paper Artifacts](https://like-comment-get-scammed.github.io/)
 
 2023
 
@@ -358,43 +358,43 @@ Proceedings of the Network and Distributed System Security Symposium (NDSS), 202
  *Babak Amin Azad, Rasoul Jahanshahi, Christos Tsoukaladelis, Manuel Egele, and Nick Nikiforakis *
 Proceedings of the USENIX Security Symposium, 2023
 
- [Citation](), [Paper artifacts](https://animatedead.debloating.com/)
+ Citation, [Paper artifacts](https://animatedead.debloating.com/)
 
 - [ Minimalist: Semi-automated Debloating of PHP Web Applications through Static Analysis ](https://www.securitee.org/files/minimalist_usec2023.pdf)
  *Rasoul Jahanshahi, Babak Amin Azad, Nick Nikiforakis, and Manuel Egele *
 Proceedings of the USENIX Security Symposium, 2023
 
- [Citation](), [Paper artifacts](https://github.com/BUseclab/Minimalist)
+ Citation, [Paper artifacts](https://github.com/BUseclab/Minimalist)
 
 - [ The More Things Change, the More They Stay the Same: Integrity of Modern JavaScript ](https://www.securitee.org/files/jsintegrity_www2023.pdf)
  *Johnny So, Michael Ferdman, and Nick Nikiforakis*
 Proceedings of the Web Conference (WWW), 2023
 
- [Citation](), [Paper artifacts](https://zenodo.org/records/7192279)
+ Citation, [Paper artifacts](https://zenodo.org/records/7192279)
 
 - [ Scan Me If You Can: Understanding and Detecting Unwanted Vulnerability Scanning ](https://www.securitee.org/files/scanmeifyoucan_www2023.pdf)
  *Xigao Li, Babak Amin Azad, Amir Rahmati, and Nick Nikiforakis*
 Proceedings of the Web Conference (WWW), 2023
 
- [Citation](), [Paper artifacts](https://scan-me-if-you-can.github.io/)
+ Citation, [Paper artifacts](https://scan-me-if-you-can.github.io/)
 
 - [ Role Models: Role-based Debloating for Web Applications](https://www.securitee.org/files/dbltr_2023codaspy.pdf)
  * Babak Amin Azad and Nick Nikiforakis *
 Proceedings of the ACM Conference on Data and Application Security and Privacy (CODASPY), 2023
 
- [Citation](), [Paper artifacts](https://dbltr.debloating.com/)
+ Citation, [Paper artifacts](https://dbltr.debloating.com/)
 
 - [ Double and Nothing: Understanding and Detecting Cryptocurrency Giveaway Scams](https://www.securitee.org/files/cryptoscams_ndss2023.pdf)
  *Xigao Li, Anurag Yepuri, and Nick Nikiforakis*
 Proceedings of the Network and Distributed System Security Symposium (NDSS), 2023
 
- [Citation](), [Paper artifacts](https://double-and-nothing.github.io/)
+ Citation, [Paper artifacts](https://double-and-nothing.github.io/)
 
 - [ Navigating Murky Waters: Automated Browser Feature Testing for Uncovering Tracking Vectors](https://www.securitee.org/files/murkywaters_ndss2023.pdf)
  * Mir Masood Ali, Binoy Chitale, Mohammad Ghasemisharif, Chris Kanich, Nick Nikiforakis, and Jason Polakis *
 Proceedings of the Network and Distributed System Security Symposium (NDSS), 2023
 
- [Citation](), [Paper artifacts](https://github.com/masood/canitrack)
+ Citation, [Paper artifacts](https://github.com/masood/canitrack)
 
 2022
 
@@ -402,38 +402,38 @@ Proceedings of the Network and Distributed System Security Symposium (NDSS), 202
  * Konstantinos Solomos, Panagiotis Ilia, Nick Nikiforakis, and Jason Polakis *
 Proceedings of the ACM Conference on Computer and Communications Security (CCS), 2022
 
- [Citation]()
+ Citation
 
 - [ Uninvited Guests: Analyzing the Identity and Behavior of Certificate Transparency Bots](https://www.securitee.org/files/ctpot_usec2022.pdf)
  *Brian Kondracki, Johnny So, and Nick Nikiforakis*
 Proceedings of USENIX Security Symposium (USENIX Security), 2022
 
  **(NSA Best Scientific Cybersecurity Paper award)**
- [Citation](), [Paper artifacts](https://uninvited-guests.github.io/)
+ Citation, [Paper artifacts](https://uninvited-guests.github.io/)
 
 - [ The Dangers of Human Touch: Fingerprinting Browser Extensions through User Actions ](https://www.securitee.org/files/extensiontouch_usec2022.pdf)
  *Konstantinos Solomos, Panagiotis Ilia, Soroush Karami, Nick Nikiforakis, and Jason Polakis *
 Proceedings of USENIX Security Symposium (USENIX Security), 2022
 
- [Citation]()
+ Citation
 
 - [ Verba Volant, Scripta Volant: Understanding Post-publication Title Changes in News Outlets ](https://www.securitee.org/files/scripta_volant_www2022.pdf)
  *Xingzhi Guo, Brian Kondracki, Nick Nikiforakis, and Steven Skiena*
 Proceedings of the 31st Web Conference (WWW), 2022
 
- [Citation](), [Paper artifacts](https://scripta-volant.github.io/)
+ Citation, [Paper artifacts](https://scripta-volant.github.io/)
 
 - [ The Droid is in the Details: Environment-aware Evasion of Android Sandboxes ](https://www.securitee.org/files/androidsandboxes_ndss2022.pdf)
  *Brian Kondracki, Babak Amin Azad, Najmeh Miramirkhani, and Nick Nikiforakis*
 Proceedings of the 29th Network and Distributed System Security Symposium (NDSS), 2022
 
- [Citation]()
+ Citation
 
 - [ Domains Do Change Their Spots: Quantifying Potential Abuse of Residual Trust ](https://www.securitee.org/files/domainreputation_oakland2022.pdf)
  *Johnny So, Najmeh Miramirkhani, Mike Ferdman, and Nick Nikiforakis*
 Proceedings of the IEEE Symposium on Security and Privacy (IEEE S&P), 2022
 
- [Citation]()
+ Citation
 
 2021
 
@@ -442,7 +442,7 @@ Proceedings of the IEEE Symposium on Security and Privacy (IEEE S&P), 2022
 Proceedings of ACM Conference on Computer and Communications Security (CCS), 2021
  **(3rd place at the Applied Research Competition, CSAW 2021)**
 
- [Citation](), [Paper artifacts](https://catching-transparent-phish.github.io/)
+ Citation, [Paper artifacts](https://catching-transparent-phish.github.io/)
 
 Media Coverage: [The Hacker News](https://thehackernews.com/2021/11/researchers-demonstrate-new-way-to.html), [Slashdot](https://it.slashdot.org/story/21/12/27/1922249/more-than-1200-phishing-toolkits-capable-of-intercepting-2fa-detected-in-the-wild), [The Record](https://therecord.media/more-than-1200-phishing-toolkits-capable-of-intercepting-2fa-detected-in-the-wild/), [Gizmodo](https://gizmodo.com/hackers-are-getting-better-and-better-at-defeating-your-1848278177), [CyberNews](https://cybernews.com/security/researchers-find-more-than-1200-phishing-toolkits-across-the-web/), [MalwareBytes](https://blog.malwarebytes.com/reports/2022/01/intercepting-2fa-over-1200-man-in-the-middle-phishing-toolkits-detected/), [Avast](https://blog.avast.com/discovering-new-ways-to-phish-avast)
 
@@ -450,31 +450,31 @@ Media Coverage: [The Hacker News](https://thehackernews.com/2021/11/researchers-
  *Xigao Li, Babak Amin Azad, Amir Rahmati, and Nick Nikiforakis*
  Proceedings of the 42nd IEEE Symposium on Security and Privacy (IEEE S&P), 2021
 
- [Citation]()
+ Citation
 
 - [ Click This, Not That: Extending Web Authentication with Deception](https://www.securitee.org/files/clickthis_asiaccs2021.pdf)
  *Timothy Barron, Johnny So, and Nick Nikiforakis*
  Proceedings of the 16th ACM ASIA Conference on Computer and Communications Security (ASIACCS), 2021
 
- [Citation]()
+ Citation
 
 - [ Where are you taking me? Understanding Abusive Traffic Distribution Systems](https://www.securitee.org/files/tds-www2021.pdf)
  *Janos Szurdi, Meng Luo, Brian Kondracki, Nick Nikiforakis, and Nicolas Christin*
  Proceedings of the 30th Web Conference (WWW), 2021
 
- [Citation]()
+ Citation
 
 - [ To Err.Is Human: Characterizing the Threat of Unintended URLs in Social Media](https://www.securitee.org/files/toerrishuman_ndss2021.pdf)
  *Beliz Kaleli, Brian Kondracki, Manuel Egele, Nick Nikiforakis, and Gianluca Stringhini*
  Proceedings of the 28th Network and Distributed System Security Symposium (NDSS), 2021
 
- [Citation]()
+ Citation
 
 - [ Fingerprinting in Style: Detecting Browser Extensions via Injected Style Sheets](https://www.securitee.org/files/stylefingerprinting_usec2021.pdf)
  * Pierre Laperdrix, Oleksii Starov, Quan Chen, Alexandros Kapravelos, and Nick Nikiforakis *
  Proceedings of the USENIX Security Symposium (USENIX Security), 2021
 
- [Citation](), [Paper artifacts](https://github.com/plaperdr/fingerprinting-in-style)
+ Citation, [Paper artifacts](https://github.com/plaperdr/fingerprinting-in-style)
 
 2020
 
@@ -482,37 +482,37 @@ Media Coverage: [The Hacker News](https://thehackernews.com/2021/11/researchers-
  * Nikolaos Pantelaios, Nick Nikiforakis, and Alexandros Kapravelos*
 Proceedings of ACM Conference on Computer and Communications Security (CCS), 2020
 
- [Citation]()
+ Citation
 
 - [ Web Runner 2049: Evaluating Third-Party Anti-bot Services](https://www.securitee.org/files/webrunner_dimva2020.pdf)
  * Babak Amin Azad, Oleksii Starov, Pierre Laperdrix, and Nick Nikiforakis*
 Proceedings of the 17th Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA), 2020
 
- [Citation]()
+ Citation
 
 - [ Taming The Shape Shifter: Detecting Anti-fingerprinting Browsers](https://www.securitee.org/files/antifpbrowsers_dimva2020.pdf)
  * Babak Amin Azad, Oleksii Starov, Pierre Laperdrix, and Nick Nikiforakis*
 Proceedings of the 17th Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA), 2020
 
- [Citation]()
+ Citation
 
 - [ Need for Mobile Speed: A Historical Study of Mobile Web Performance ](https://www.securitee.org/files/needformobilespeed_tma2020.pdf)
  *Javad Nejati, Meng Luo, Nick Nikiforakis, and Aruna Balasubramanian *
 Proceedings of the 4th Network Traffic Measurement and Analysis Conference (TMA), 2020
 
- [Citation]()
+ Citation
 
 - [ Meddling Middlemen: Empirical Analysis of the Risks of Data-Saving Mobile Browsers](https://www.securitee.org/files/meddlingmiddlemen_oakland2020.pdf)
  *Brian Kondracki, Assel Aliyeva, Manuel Egele, Jason Polakis, and Nick Nikiforakis*
 Proceedings of the 41st IEEE Symposium on Security and Privacy (IEEE S&P), 2020
 
- [Citation]()
+ Citation
 
 - [ Complex Security Policy? A Longitudinal Analysis of Deployed Content Security Policies](https://www.securitee.org/files/csp_ndss2020.pdf)
  *Sebastian Roth, Timothy Barron, Stefano Calzavara, Nick Nikiforakis, and Ben Stock*
 Proceedings of the 27th Network and Distributed System Security Symposium (NDSS), 2020
 
- [Citation]()
+ Citation
 
 2019
 
@@ -520,43 +520,43 @@ Proceedings of the 27th Network and Distributed System Security Symposium (NDSS)
  *Timothy Barron, Najmeh Miramirkhani, and Nick Nikiforakis*
 Proceedings of the 22nd International Symposium on Research in Attacks, Intrusions and Defenses (RAID), 2019
 
- [Citation]()
+ Citation
 
 - [ Less is More: Quantifying the Security Benefits of Debloating Web Applications](https://www.securitee.org/files/debloating_usec2019.pdf)
  *Babak Amin Azad, Pierre Laperdrix, and Nick Nikiforakis*
 Proceedings of the 28th USENIX Security Symposium (USENIX Security), 2019
 
- [Citation](), [Paper artifacts](https://debloating.com)
+ Citation, [Paper artifacts](https://debloating.com)
 
 - [ Everyone is Different: Client-side Diversification for Defending Against Extension Fingerprinting](https://www.securitee.org/files/everyoneisdifferent_usec2019.pdf)
  *Erik Trickel, Oleksii Starov, Alexandros Kapravelos, Nick Nikiforakis, and Adam Doupé*
 Proceedings of the 28th USENIX Security Symposium (USENIX Security), 2019
 
- [Citation]()
+ Citation
 
 - [ Morellian Analysis for Browsers: Making Web Authentication Stronger With Canvas Fingerprinting](https://www.securitee.org/files/canvasauthentication_dimva2019.pdf)
  *Pierre Laperdrix, Gildas Avoine, Benoit Baudry, and Nick Nikiforakis*
 Proceedings of the 16th Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA), 2019
 
- [Citation](), [Paper artifacts](https://github.com/plaperdr/morellian-canvas)
+ Citation, [Paper artifacts](https://github.com/plaperdr/morellian-canvas)
 
 - [ Purchased Fame: Exploring the Ecosystem of Private Blog Networks](https://www.securitee.org/files/backlinks-asiaccs2019.pdf)
  *Tom Van Goethem, Najmeh Miramirkhani, Wouter Joosen, and Nick Nikiforakis*
 Proceedings of the 14th ACM ASIA Conference on Computer and Communications Security (ASIACCS), 2019
 
- [Citation]()
+ Citation
 
 - [ Unnecessarily Identifiable: Quantifying the fingerprintability of browser extensions due to bloat](https://www.securitee.org/files/extensionbloat_www2019.pdf)
  *Oleksii Starov, Pierre Laperdrix, Alexandros Kapravelos, and Nick Nikiforakis*
 Proceedings of the Web Conference (WWW), 2019
 
- [Citation]()
+ Citation
 
 - [ Time Does Not Heal All Wounds: A Longitudinal Analysis of Security-Mechanism Support in Mobile Browsers](https://www.securitee.org/files/mobilebrowsers_ndss2019.pdf)
  *Meng Luo, Pierre Laperdrix, Nima Honarmand, and Nick Nikiforakis*
 Proceedings of the 26th Network and Distributed System Security Symposium (NDSS), 2019
 
- [Citation]()
+ Citation
 
 2018
 
@@ -564,25 +564,25 @@ Proceedings of the 26th Network and Distributed System Security Symposium (NDSS)
  *Oleksii Starov and Nick Nikiforakis*
 Proceedings of the 10th International Symposium on Engineering Secure Software and Systems (ESSoS) 2018
 
- [Citation]()
+ Citation
 
 - [ Panning for gold.com: Understanding the dynamics of domain dropcatching](https://www.securitee.org/files/dropcatching_www2018.pdf)
  *Najmeh Miramirkhani, Timothy Barron, Michael Ferdman, and Nick Nikiforakis*
 Proceedings of the Web Conference (WWW), 2018
 
- [Citation]()
+ Citation
 
 - [ Betrayed by Your Dashboard: Discovering Malicious Campaigns via Web Analytics](https://www.securitee.org/files/malanalytics_www2018.pdf)
  *Oleksii Starov, Yuchen Zhou, Xiao Zhang, Najmeh Miramirkhani, and Nick Nikiforakis*
 Proceedings of the Web Conference (WWW), 2018
 
- [Citation]()
+ Citation
 
 - [ Exposing Search and Advertisement Abuse Tactics and Infrastructure of Technical Support Scammers](https://www.securitee.org/files/tss_www2018.pdf)
  *Bharat Srinivasan, Athanasios Kountouras, Najmeh Miramirkhani, Monjur Alam, Nick Nikiforakis, Manos Antonakakis, and Mustaque Ahamad*
 Proceedings of the Web Conference (WWW), 2018
 
- [Citation]()
+ Citation
 
 2017
 
@@ -590,63 +590,63 @@ Proceedings of the Web Conference (WWW), 2018
  *Timothy Barron and Nick Nikiforakis*
 Proceedings of the 33rd Annual Computer Security Applications Conference (ACSAC), 2017
 
- [Citation]()
+ Citation
 
 - [ Hindsight: Understanding the Evolution of UI Vulnerabilities in Mobile Browsers](https://www.securitee.org/files/hindsight_ccs2017.pdf)
  *Meng Luo, Oleksii Starov, Nima Honarmand, and Nick Nikiforakis*
 Proceedings of the 24th ACM Conference on Computer and Communications Security (CCS), 2017
 
- [Citation]()
+ Citation
 
 - [ The Wolf of Name Street: Hijacking Domains Through Their Nameservers](https://www.securitee.org/files/dnshijack_ccs2017.pdf)
  *Thomas Vissers, Timothy Barron, Tom Van Goethem, Wouter Joosen, and Nick Nikiforakis*
 Proceedings of the 24th ACM Conference on Computer and Communications Security (CCS), 2017
 
- [Citation]()
+ Citation
 
 - [ Hiding in Plain Sight: A Longitudinal Study of Combosquatting Abuse](https://www.securitee.org/files/combosquatting_ccs2017.pdf)
  *Panagiotis Kintis, Najmeh Miramirkhani, Charles Lever, Yizheng Chen, Rosa Romero-Gomez, Nikolaos Pitropakis,
 Nick Nikiforakis, and Manos Antonakakis*
 Proceedings of the 24th ACM Conference on Computer and Communications Security (CCS), 2017
 
- [Citation]()
+ Citation
 
 - [ XHOUND: Quantifying the Fingerprintability of Browser Extensions](https://www.securitee.org/files/xhound-oakland17.pdf)
  *Oleksii Starov and Nick Nikiforakis*
 Proceedings of the 38th IEEE Symposium on Security and Privacy (IEEE S&P), 2017
 
- [Citation]()
+ Citation
 
 - [ Spotless Sandboxes: Evading Malware Analysis Systems using Wear-and-Tear Artifacts](https://www.securitee.org/files/wearntear-oakland2017.pdf)
  *Najmeh Miramirkhani, Mahathi Priya Appini, Nick Nikiforakis and Michalis Polychronakis*
 Proceedings of the 38th IEEE Symposium on Security and Privacy (IEEE S&P), 2017
  **(CSAW 2017 Finalist)**
 
- [Citation]()
+ Citation
 
 - [ Extended Tracking Powers: Measuring the Privacy Diffusion Enabled by Browser Extensions](https://www.securitee.org/files/extendedtracking_www2017.pdf)
  *Oleksii Starov and Nick Nikiforakis*
 Proceedings of the 26th International World Wide Web Conference (WWW), 2017
 
- [Citation]()
+ Citation
 
 - [ What's in a Name? Understanding Profile Name Reuse on Twitter](https://www.securitee.org/files/profilename-WWW2017.pdf)
  *Enrico Mariconti, Jeremiah Onaolapo, Sharique Ahmad, Nicolas Nikiforou, Manuel Egele, Nick Nikiforakis and Gianluca Stringhini*
 Proceedings of the 26th International World Wide Web Conference (WWW), 2017
 
- [Citation]()
+ Citation
 
 - [ Block Me If You Can: A Large-Scale Study of Tracker-Blocking Tools](https://www.securitee.org/files/trackblock_eurosp2017.pdf)
  *Georg Merzdovnik, Markus Huber, Damjan Buhov, Nick Nikiforakis, Sebastian Neuner, Martin Schmiedecker, Edgar Weippl*
 Proceedings of the 2nd IEEE European Symposium on Security and Privacy (IEEE EuroS&P), 2017
 
- [Citation]()
+ Citation
 
 - [ Dial One for Scam: A Large-Scale Analysis of Technical Support Scams](https://www.securitee.org/files/tss_ndss2017.pdf)
  *Najmeh Miramirkhani, Oleksii Starov, and Nick Nikiforakis*
 Proceedings of the 24th Network and Distributed System Security Symposium (NDSS), 2017 **(Distinguished Paper Award)**
 
- [Citation]()
+ Citation
  Media Coverage: [WIRED](https://www.wired.com/2017/03/listen-tech-support-scam-calls-bilk-millions-victims/), [Slashdot](https://yro.slashdot.org/story/17/04/16/062210/researchers-find-25000-domains-used-in-tech-support-scams), [ Sophos](https://nakedsecurity.sophos.com/2017/04/19/how-tech-support-scammers-have-made-millions-of-dollars/amp/), [OnTheWire](https://www.onthewire.io/inside-the-tech-support-scam-ecosystem/)
 
 2016
@@ -655,19 +655,19 @@ Proceedings of the 24th Network and Distributed System Security Symposium (NDSS)
  *Enrico Mariconti, Jeremiah Onaolapo, Syed Sharique Ahmad, Nicolas Nikiforou, Manuel Egele, Nick Nikiforakis, and Gianluca Stringhini*
 Proceedings of the 9th European Workshop on System Security (EUROSEC), 2016
 
- [Citation]()
+ Citation
 
 - [ No Honor Among Thieves: A Large-Scale Analysis of Malicious Web Shells](https://www.securitee.org/files/webshells_www2016.pdf)
  *Oleksii Starov, Johannes Dahse, Syed Sharique Ahmad, Thorsten Holz, Nick Nikiforakis*
 Proceedings of the 25th International World Wide Web Conference (WWW), 2016
 
- [Citation]()
+ Citation
 
 - [ It's Free for a Reason: Exploring the Ecosystem of Free Live Streaming Services](https://www.securitee.org/files/flis_ndss16.pdf)
  *Zubair Rafique, Tom Van Goethem, Wouter Joosen, Christophe Huygens, Nick Nikiforakis*
 Proceedings of the 23rd Network and Distributed System Security Symposium (NDSS), 2016
 
- [Citation]()
+ Citation
  Media Coverage: [BBC](http://www.bbc.com/news/technology-35434765), [Wired](http://www.wired.co.uk/article/live-streaming-illegal-sports-security-risk), [Fortune](http://fortune.com/2016/06/15/free-live-sports-malware/), [Phys](http://phys.org/news/2016-06-malware-theft-scams-expose-free.html), [HelpNetSecurity](https://www.helpnetsecurity.com/2016/06/17/malicious-ads-free-livestreaming/), [Financial Express](http://www.financialexpress.com/article/industry/tech/free-livestreaming-websites-may-expose-you-to-security-risks/287357/), [International Business Times](http://www.ibtimes.co.uk/half-advertisements-illegal-livestreaming-websites-found-be-full-malware-1566092), [Washington Times](http://www.washingtontimes.com/news/2016/jun/15/half-ads-livestreaming-sites-pose-security-risks-v/)
 
 - [ Are You Sure You Want to Contact Us? Quantifying the Leakage of PII via Website Contact Forms](https://www.securitee.org/files/contactus_pets2016.pdf)
@@ -676,9 +676,7 @@ Proceedings of the 16th Privacy Enhancing Technologies Symposium (PETS), 2016 **
 
 (Honorable mention)
 
-**
-
- [Citation]()
+ Citation
 
 2015
 
@@ -686,20 +684,20 @@ Proceedings of the 16th Privacy Enhancing Technologies Symposium (PETS), 2016 **
  *Tom Van Goethem, Wouter Joosen, Nick Nikiforakis*
 Proceedings of the 22nd ACM Conference on Computer and Communications Security (CCS), 2015
 
- [Citation]()
+ Citation
 
 - [ Maneuvering Around Clouds: Bypassing Cloud-based Security Providers](https://www.securitee.org/files/cloudpiercer_ccs2015.pdf)
  *Thomas Vissers, Tom Van Goethem, Wouter Joosen, Nick Nikiforakis*
 Proceedings of the 22nd ACM Conference on Computer and Communications Security (CCS), 2015
 
- [Citation]()
+ Citation
  Media Coverage: [TheRegister](http://www.theregister.co.uk/2015/10/08/cloudpiercer_tool_lifts_ddos_protection_cloak_from_70_percent_of_sites/), [Akamai Blog](https://blogs.akamai.com/2015/10/cloudpiercer-discovery-tool.html), [Incapsula](https://www.incapsula.com/blog/cloudpiercer-origin-ddos-attack.html), [SCMagazine](http://www.scmagazineuk.com/cloudpiercer-tool-discloses-ddos-defence-providers/article/444000/), [ AT&T ThreatTraq](https://youtu.be/pc6kdZ5_Yqo?t=13m27s), [TechRepublic](http://www.techrepublic.com/article/ddos-mitigation-may-leave-your-site-even-more-vulnerable/)
 
 - [ Drops for Stuff: An Analysis of Reshipping Mule Scams](https://www.securitee.org/files/mules_ccs2015.pdf)
  *Shuang Hao, Kevin Borgolte, Nick Nikiforakis, Gianluca Stringhini, Manuel Egele, Michael Eubanks, Brian Krebs, Giovanni Vigna*
 Proceedings of the 22nd ACM Conference on Computer and Communications Security (CCS), 2015
 
- [Citation]()
+ Citation
  Media Coverage: [KrebsOnSecurity.com](http://krebsonsecurity.com/2015/09/with-stolen-cards-fraudsters-shop-to-drop/), [Slashdot](http://news.slashdot.org/story/15/09/28/2157238/study-18-billion-in-reshipping-fraud-with-stolen-cards-each-year)
 
 - [ PriVaricator: Deceiving fingerprinters with Little White Lies](https://www.securitee.org/files/privaricator_www2015.pdf)
@@ -707,20 +705,20 @@ Proceedings of the 22nd ACM Conference on Computer and Communications Security (
 Proceedings of the 24th International World Wide Web Conference
 (WWW 2015)
 
- [Citation]()
+ Citation
  Media Coverage: [Observer](http://observer.com/2016/06/lie-web-trackers/)
 
 - [ Parking Sensors: Analyzing and Detecting Parked Domains](https://www.securitee.org/files/parking-sensors_ndss2015.pdf)
  *Thomas Vissers, Wouter Joosen, Nick Nikiforakis*
 Proceedings of the 22nd Network and Distributed System Security Symposium (NDSS 2015)
 
- [Citation]()
+ Citation
 
 - [ Seven Months' Worth of Mistakes: A Longitudinal Study of Typosquatting Abuse](https://www.securitee.org/files/typosquatting_ndss2015.pdf)
  *Pieter Agten, Wouter Joosen, Frank Piessens, Nick Nikiforakis*
 Proceedings of the 22nd Network and Distributed System Security Symposium (NDSS 2015)
 
- [Citation]()
+ Citation
  Media Coverage: [ TheRegister](http://www.theregister.co.uk/2015/01/16/four_perps_behind_every_second_typosquat_site/), [ Net-Security](http://www.net-security.org/secworld.php?id=17833), [Register.be](http://www.register.be/en/news/477-of-the-alexa-top-500-websites-face-typosquatters), [World Trademark Review](http://www.worldtrademarkreview.com/Blog/Detail.aspx?g=59f40171-11fb-4806-a837-2c0b29564681)
 
 2014
@@ -729,14 +727,14 @@ Proceedings of the 22nd Network and Distributed System Security Symposium (NDSS 
  *Nick Nikiforakis, Marco Balduzzi, Lieven Desmet, Frank Piessens, Wouter Joosen*
 Proceedings of the 17th Information Security Conference (ISC 2014), Hong Kong **(Best Paper Award)**
 
- [Citation]()
+ Citation
  Media Coverage: [World Trademark Review](http://www.worldtrademarkreview.com/blog/Detail.aspx?g=8f2d5450-86d0-4b7d-ac51-5c1e9b3db4a2)
 
 - [ Clubbing Seals: Exploring the Ecosystem of Third-party Security Seals](https://www.securitee.org/files/seals_ccs2014.pdf)
  *Tom Van Goethem, Frank Piessens, Wouter Joosen, Nick Nikiforakis*
 Proceedings of the 21st ACM Conference on Computer and Communications Security (CCS 2014), Scottsdale, Arizona, USA
 
- [Citation]()
+ Citation
  Media Coverage: [TheRegister](http://www.theregister.co.uk/2014/11/26/security_seals_clobbered_ahead_of_black_friday_bonanza/), [Softpedia](http://news.softpedia.com/news/Website-Security-Seals-Are-Not-a-Trust-Guarantee-for-Holiday-Shoppers-465938.shtml), [Ars Technica](http://arstechnica.com/security/2014/12/sites-certified-as-secure-often-morevulnerable-to-hacking-scientists-find/)
 
 - [ Security Analysis of the Chinese Web: How well is it protected? ](https://www.securitee.org/files/chineseweb_safeconfig2014.pdf)
@@ -744,74 +742,74 @@ Proceedings of the 21st ACM Conference on Computer and Communications Security (
 Workshop of Cyber Security Analytics and Automation
 (SafeConfig 2014), Scottsdale, Arizona, USA
 
- [Citation]()
+ Citation
 
 - [ Crying Wolf? On the Price Discrimination of Online Airline Tickets](https://www.securitee.org/files/pdiscrimination_hotpets2014.pdf)
  *Thomas Vissers, Nick Nikiforakis, Nataliia Bielova, Wouter Joosen*
 Workshop on Hot Topics in Privacy Enhancing Technologies
 (HotPETs 2014), Amsterdam, Netherlands
 
- [Citation]()
+ Citation
 
 - [ Secure multi-execution of web scripts: Theory and practice](https://www.securitee.org/files/eusec_trust2014.pdf)
  *Willem De Groef, Dominique Devriese, Nick Nikiforakis, Frank Piessens*
 Journal of Computer Security
 
- [Citation]()
+ Citation
 
 - [ Large-scale Security Analysis of the Web: Challenges and Findings](https://www.securitee.org/files/eusec_trust2014.pdf)
  *Tom Van Goethem, Ping Chen, Nick Nikiforakis, Lieven Desmet, Wouter Joosen*
 Proceedings of the 7th International Conference on Trust & Trustworthy Computing
 (TRUST 2014), Heraklion, Crete, Greece
 
- [Citation]()
+ Citation
 
 - [ Monkey-in-the-browser: Malware and vulnerabilities in augmented browsing script markets](https://www.securitee.org/files/monkey_asiaccs2014.pdf)
  *Steven Van Acker, Nick Nikiforakis, Lieven Desmet, Frank Piessens, Wouter Joosen*
 Proceedings of the 9th ACM Symposium on Information, Computer and Communications Security (ASIACCS 2014), Kyoto, Japan
 
- [Citation]()
+ Citation
 
 - [ Stranger Danger: Exploring the Ecosystem of Ad-based URL Shortening Services](https://www.securitee.org/files/strangerdanger_www2014.pdf)
  *Nick Nikiforakis, Federico Maggi, Gianluca Stringhini, M Zubair Rafique, Wouter Joosen, Christopher Kruegel, Frank Piessens, Giovanni Vigna, Stefano Zanero*
 Proceedings of the 23rd International World Wide Web Conference (WWW 2014), Seoul, Korea
 
- [Citation]()
+ Citation
 
 2013
 
 - [A Dangerous Mix: Large-scale analysis of mixed-content websites](https://www.securitee.org/files/mixedinc_isc2013.pdf)
  *Ping Chen, Nick Nikiforakis, Lieven Desmet, Christophe Huygens* Proceedings of the 16th Information Security Conference (ISC 2013), Dallas, Texas, USA
 
- [Citation]()
+ Citation
 
 - [FPDetective: Dusting the web for fingerprinters](https://www.securitee.org/files/fpdetective_ccs2013.pdf)
  *Güneş Acar, Marc Juárez Miró, Nick Nikiforakis, Claudia Diaz, Seda Gürses, Frank Piessens, Bart Preneel*
  Proceedings of the 20th ACM Conference on Computer and Communications Security (CCS 2013), Berlin, Germany **(Runner up for 2015 Caspar Bowden PET award)**
 
- [Citation]()
+ Citation
 
 - [HeapSentry: Kernel-assisted Protection against Heap Overflows](https://www.securitee.org/files/heapsentry_dimva2013.pdf)
  *Nick Nikiforakis, Frank Piessens, Wouter Joosen* Proceedings of the 10th Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA 2013), Berlin, Germany
 
- [Citation]()
+ Citation
 
 - [Bitsquatting: Exploiting bit-flips for fun, or profit?](https://www.securitee.org/files/bitsquatting_www2013.pdf)
  *Nick Nikiforakis, Steven Van Acker, Wannes Meert, Lieven Desmet, Frank Piessens, Wouter Joosen*
 Proceedings of the 22nd International World Wide Web Conference (WWW 2013), Rio de Janeiro, Brazil
 
- [Citation]()
+ Citation
 
 - [Cookieless Monster: Exploring the Ecosystem of Web-based Device Fingerprinting](https://www.securitee.org/files/cookieless_sp2013.pdf)
  *Nick Nikiforakis, Alexandros Kapravelos, Wouter Joosen, Christopher Kruegel, Frank Piessens, Giovanni Vigna* Proceedings of the 34th IEEE Symposium of Security and Privacy (IEEE S&P 2013), San Francisco, CA, USA
 
- [Citation]()
+ Citation
 
 - [TabShots: Client-side detection of tabnabbing attacks](https://www.securitee.org/files/tabnabbing_asiaccs2013.pdf)
  *Philippe De Ryck, Nick Nikiforakis, Lieven Desmet, Wouter Joosen*
  Proceedings of the 8th ACM Symposium on Information, Computer and Communications Security (ASIACCS 2013), Hangzhou, China
 
- [Citation]()
+ Citation
 
 2012
 
@@ -819,55 +817,55 @@ Proceedings of the 22nd International World Wide Web Conference (WWW 2013), Rio 
  *Nick Nikiforakis, Luca Invernizzi, Alexandros Kapravelos, Steven Van Acker, Wouter Joosen, Christopher Kruegel, Frank Piessens and Giovanni Vigna*
 Proceedings of the 19th ACM Conference on Computer and Communications Security (CCS 2012), Raleigh, NC, USA
 
- [Citation]()
+ Citation
 
 - [FlowFox: a Web Browser with Flexible and Precise Information Flow Control](https://www.securitee.org/files/flowfox_ccs2012.pdf)
  *Willem De Groef, Dominique Devriese, Nick Nikiforakis, and Frank Piessens*
 Proceedings of the 19th ACM Conference on Computer and Communications Security (CCS 2012), Raleigh, NC, USA
 
- [Citation]()
+ Citation
 
 - [There is Safety in Numbers: Preventing Control-Flow Hijacking by Duplication](https://www.securitee.org/files/safety_nordsec2012.pdf)
  *Job Noorman, Nick Nikiforakis, and Frank Piessens*
 Proceedings of the 17th Nordic Conference on Secure IT Systems (NordSec 2012), Karlskrona, Sweden
 
- [Citation]()
+ Citation
 
 - [DEMACRO: Defense against Malicious Cross-domain Requests](https://www.securitee.org/files/demacro_raid2012.pdf)
  *Sebastian Lekies, Nick Nikiforakis, Walter Tighzert, Frank Piessens and Martin Johns*
 Proceedings of the 15th International Symposium on Research In Attacks, Intrusions and Defenses (RAID 2012), Amsterdam, The Netherlands
 
- [Citation]()
+ Citation
 
 - [Serene: Self-Reliant Client-Side Protection against Session Fixation](https://www.securitee.org/files/serene_dais2012.pdf)
  *Philippe De Ryck, Nick Nikiforakis, Lieven Desmet, Frank Piessens and Wouter Joosen*
 Proceedings of the 7th International Federated Conference on Distributed Computing Techniques (DAIS 2012), Stockholm, Sweden
 
- [Citation]()
+ Citation
 
 - [Exploring the Ecosystem of Referrer-Anonymizing Services](https://www.securitee.org/files/ras_pets2012.pdf)
  *Nick Nikiforakis, Steven Van Acker, Frank Piessens and Wouter Joosen*
 Proceedings of the 12th Privacy Enhancing Technology Symposium (PETS 2012), Vigo, Spain
 
- [Citation]()
+ Citation
 
 - [Recent Developments in Low-Level Software Security](https://www.securitee.org/files/rdevel_wistp2012.pdf)
  *Pieter Agten, Nick Nikiforakis, Raoul Strackx, Willem De Groef and Frank Piessens*
 Proceedings of the 6th Workshop in Information Security Theory and Practice (WISTP 2012), London, UK
 
- [Citation]()
+ Citation
 
 - [FlashOver: Automated Discovery of Cross-site Scripting Vulnerabilities in Rich Internet Applications](https://www.securitee.org/files/flashover_asiaccs2012.pdf)
  *Steven Van Acker, Nick Nikiforakis, Lieven Desmet, Wouter Joosen and Frank Piessens*
 Proceedings of the 7th ACM Symposium on Information, Computer and Communications Security (ASIACCS 2012), Seoul, South Korea
 
- [Citation]()
+ Citation
 
 - [HyperForce: Hypervisor-enForced Execution of Security-Critical Code](https://www.securitee.org/files/hyperforce_ifipsec2012.pdf)
  *Francesco Gadaleta, Nick Nikiforakis, Jan Tobias Muhlberg and Wouter Joosen*
 Proceedings of the 27th IFIP International Information Security and Privacy Conference (IFIP SEC 2012), Heraklion, Crete, Greece
 
- [Citation]()
+ Citation
 
 2011
 
@@ -875,52 +873,52 @@ Proceedings of the 27th IFIP International Information Security and Privacy Conf
  *John Wilander, Nick Nikiforakis, Yves Younan, Mariam Kamkar and Wouter Joosen*
 Proceedings of the 27th Annual Computer Security Applications Conference (ACSAC 2011), Orlando, US
 
- [Citation](), [Paper artifacts](https://github.com/johnwilander/RIPE)
+ Citation, [Paper artifacts](https://github.com/johnwilander/RIPE)
 
 - [Hello rootKitty: A lightweight invariance-enforcing framework](https://www.securitee.org/files/rootkitty_isc2011.pdf)
  *Francesco Gadaleta, Nick Nikiforakis, Yves Younan and Wouter Joosen*
 Proceedings of the 14th Information Security Conference (ISC 2011), Xi'an, China
 
- [Citation](), [Paper artifacts](http://www.youtube.com/watch?v=ZNz5UUTlVc0)
+ Citation, [Paper artifacts](http://www.youtube.com/watch?v=ZNz5UUTlVc0)
 
 - [Abusing Locality in Shared Web Hosting](https://www.securitee.org/files/abuse_locality_eurosec2011.pdf)
  *Nick Nikiforakis, Wouter Joosen and Martin Johns* in Proceedings of the 4th European Workshop on System Security (EuroSec 2011), Salzburg, Austria
 
- [Citation]()
+ Citation
 
 - [Exposing the Lack of Privacy in File Hosting Services](https://www.securitee.org/files/exposing_leet2011.pdf)
  *Nick Nikiforakis, Marco Balduzzi, Steven Van Acker, Wouter Joosen and Davide Balzarotti* in Proceedings of the 4th USENIX Workshop on Large-scale Exploits and Emergent Threats (LEET 2011), Boston, US
 
- [Citation]()
+ Citation
  Media Coverage: [TheRegister](http://www.theregister.co.uk/2011/05/08/file_hosting_sites_under_attack/), [SlashDot](http://it.slashdot.org/story/11/05/08/2339252/File-hosting-Sites-Not-a-Safe-Haven-For-Private-Data), [ZDNet](http://www.zdnetasia.com/firms-must-relook-what-how-they-share-online-62301064.htm), [Net-Security](http://www.net-security.org/secworld.php?id=10994), [Security Now - Episode 300](http://wiki.twit.tv/wiki/Security_Now_300), [Ere-Security](http://ere-security.com/blog/file-sharing-or-privacy-breaching-service-beware)
 
 - [SessionShield: Lightweight Protection against Session Hijacking](https://www.securitee.org/files/sshield_essos2011.pdf)
  *Nick Nikiforakis,Wannes Meert, Yves Younan, Martin Johns and Wouter Joosen* in Proceedings of the 3rd International Symposium on Engineering Secure Software and Systems (ESSoS 2011), Madrid, Spain
 
- [Citation]()
+ Citation
 
 2010 and earlier
 
 - [ValueGuard: Protection of native applications against data-only buffer overflows](https://www.securitee.org/files/valueguard_iciss2010.pdf)
  *Steven Van Acker, Nick Nikiforakis, Pieter Philippaerts, Yves Younan and Frank Piessens* in Proceedings of the Sixth International Conference on Information Systems Security (ICISS 2010), Gujarat, India
 
- [Citation]()
+ Citation
 
 - [HProxy: Client-side detection of SSL stripping attacks](https://www.securitee.org/files/hproxy_dimva2010.pdf)
  *Nick Nikiforakis, Yves Younan and Wouter Joosen*
 Proceedings of the 7th International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment, DIMVA 2010, Bonn, Germany
 
- [Citation]()
+ Citation
 
 - [Monitoring three National Research Networks for Eight Weeks: Observations and Implications](https://www.securitee.org/files/appmon.e2emon08.pdf)
  *Demetris Antoniades, Michalis Polychronakis, Nick Nikiforakis, Evangelos P. Markatos, Yiannis Mitsos* in the 6th IEEE Workshop on End-to-End Monitoring Techniques and Services (E2EMon). April 2008, Salvador, Bahia, Brazil.
 
- [Citation]()
+ Citation
 
 - [ Alice, what did you do last time? Fighting Phishing Using Past Activity Tests](https://www.securitee.org/files/pact.pdf)
  *Nikos Nikiforakis, Andreas Makridakis, Elias Athanasopoulos, and Evangelos P. Markatos * in Proceedings of the 3rd European Conference on Computer Network Defense (EC2ND). October 2007, Heraklion, Greece.
 
- [Citation]()
+ Citation
 
 Content Integrity and Residual Trust
 
@@ -956,7 +954,7 @@ Low-level Security
 - [Browse at your own risk](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=6866435)
  *Nick Nikiforakis and Gunes Acarin* in IEEE Spectrum, Volume 41, Issue 8, August 2014
 
-- [On the Workings and Current Practices of Web-based Device Fingerprinting]()
+- On the Workings and Current Practices of Web-based Device Fingerprinting
  *Nick Nikiforakis, Alexandros Kapravelos, Wouter Joosen, Christopher Kruegel, Frank Piessens, Giovanni Vigna* in IEEE Security & Privacy Magazine, Issue 99, 2013
 
 - [Direct Object Reference or, How a Toddler can hack your Web application](https://www.securitee.org/files/toddlerhack_hackin9.pdf)

@@ -100,6 +100,103 @@ _JUNK = [(label, re.compile(pattern, re.IGNORECASE | re.MULTILINE))
 FENCE = re.compile(r"^```", re.MULTILINE)
 
 
+# WHAT A DEAD LINK LEAVES BEHIND. `[  ►  ]()` and `[↩︎]()` are a carousel arrow
+# and a footnote's return arrow: once the empty target goes, the glyph is a line
+# of its own that means nothing without the anchor it belonged to. Named
+# individually rather than "any line of punctuation", because `---`, `|`, `>`
+# and `*` are all Markdown that carries meaning, and a shell prompt or an ASCII
+# diagram is content.
+DECORATION = frozenset("►▶◄◀▲▼→←↑↓↩↪⇧⇨•·◦∙‣⁃🔗📎⌘¶§#*_~")
+VARIATION_SELECTORS = frozenset("︎️")
+
+# Empty-target link syntax, innermost first so `[![alt](img)]()` loses the outer
+# construct and keeps the image.
+_DEAD_IMAGE = re.compile(r"!\[[^\]\n]*\]\(\s*\)")
+_DEAD_LINK = re.compile(r"\[([^\[\]\n]*)\]\(\s*\)")
+# An anchor that wrapped BLOCK content converts with its brackets on lines of
+# their own, so the single-line rule cannot see it - a collapsible "TOC Element"
+# toggle and a site's "Platform / Solutions / Resources" menu both land this way.
+# Bounded and tempered: the body may not contain another bracket or a live link
+# target, so a stray `[` early in a document can never swallow the article.
+_DEAD_BLOCK_ANCHOR = re.compile(
+    r"(?<!!)\[[ \t]*\n((?:(?!\]\()[^\[\]]){0,400}?)\n[ \t]*\]\(\s*\)")
+_FENCED = re.compile(r"^```.*?^```", re.MULTILINE | re.DOTALL)
+
+
+def drop_dead_links(markdown):
+    """(text, [labels]) with empty-target link syntax reduced to its label.
+
+    A LINK WITH NO TARGET IS NOT A LINK, wherever it appears - so unlike `trim`
+    this works over the whole document rather than inward from the edges. It is
+    a syntax rule, not a judgement about content: `[Data request]()` becomes
+    `Data request`, and nothing that a reader can act on is lost, because there
+    was never anywhere to go.
+
+    Fenced code is left exactly as it is. A write-up about Markdown injection
+    quotes this syntax on purpose, and rewriting a payload is the one thing this
+    archive must never do.
+    """
+    # NUL FIRST, because the fenced blocks are held behind `\x00N\x00` tokens and
+    # this runs BEFORE `sanitise_text` removes control characters. A document
+    # carrying its own NUL could otherwise forge a token and have another of its
+    # own code blocks pasted in its place.
+    text = (markdown or "").replace("\x00", "")
+    removed = []
+    held = []
+
+    def hold(match):
+        held.append(match.group(0))
+        return "\x00%d\x00" % (len(held) - 1)
+
+    body = _FENCED.sub(hold, text)
+
+    before = body
+    body = _DEAD_IMAGE.sub("", body)
+    if body != before:
+        removed.append("dead-image")
+
+    before = body
+    # Twice: `[[label]()]()` is a real shape on wiki-style pages, and one pass
+    # only reaches the inner one.
+    for _ in range(2):
+        body = _DEAD_LINK.sub(lambda match: match.group(1), body)
+    if body != before:
+        removed.append("dead-link")
+
+    before = body
+    body = _DEAD_BLOCK_ANCHOR.sub(lambda match: match.group(1), body)
+    if body != before:
+        removed.append("dead-block-anchor")
+
+    before = body
+    body = "\n".join(line for line in body.split("\n") if not _is_decoration(line))
+    if body != before:
+        removed.append("orphaned-decoration")
+
+    # Three or more blank lines is what a removed block leaves behind. Only when
+    # something WAS removed: reflowing a document this rule did not touch turns a
+    # surgical fix into a whole-corpus rewrite.
+    if removed:
+        body = re.sub(r"\n{3,}", "\n\n", body)
+    text = re.sub(r"\x00(\d+)\x00", lambda match: held[int(match.group(1))], body)
+    return text, sorted(set(removed))
+
+
+_RULE = re.compile(r"^(?:\*{3,}|_{3,}|-{3,})$")
+
+
+def _is_decoration(line):
+    """True for a line that is only the glyph a dead anchor was wrapped around."""
+    stripped = (line or "").strip()
+    if not stripped or len(stripped) > 4:
+        return False
+    # `***` and `___` are horizontal rules made of characters this set contains.
+    if _RULE.match(stripped):
+        return False
+    return all(char in DECORATION or char in VARIATION_SELECTORS
+               for char in stripped)
+
+
 def trim(markdown):
     """(text, [labels]) with the publisher's furniture removed from the edges."""
     text = markdown or ""

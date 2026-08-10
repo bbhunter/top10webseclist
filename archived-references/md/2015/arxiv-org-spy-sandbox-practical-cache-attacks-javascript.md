@@ -85,7 +85,7 @@ Authors:[Yossef Oren](https://arxiv.org/search/cs?searchtype=author&query=Oren,+
  **[[v1]](https://arxiv.org/abs/1502.07373v1)** Wed, 25 Feb 2015 21:25:49 UTC (940 KB)
  **[v2]** Sun, 1 Mar 2015 22:58:28 UTC (939 KB)
 
- []() Full-text links:
+  Full-text links:
 
 ## Access Paper:
 
@@ -214,4 +214,4 @@ Both individuals and organizations that work with arXivLabs have embraced and ac
 
 Have an idea for a project that will add value for arXiv's community? [**Learn more about arXivLabs**](https://info.arxiv.org/labs/index.html).
 
- [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1502.07373) | [Disable MathJax]() ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))
+ [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1502.07373) | Disable MathJax ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))

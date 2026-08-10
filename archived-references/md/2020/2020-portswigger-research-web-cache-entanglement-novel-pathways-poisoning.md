@@ -89,7 +89,7 @@ These flaws pervade all layers of caching - from sprawling CDNs, through caching
 
 This whitepaper is also available as a [printable PDF](https://portswigger.net/kb/papers/c3wwniai/web-cache-entanglement.pdf), and as a "director's cut" edition of a presentation premiered at Black Hat USA 2020:
 
-## [Introduction]()
+## Introduction
 
  Caches save copies of responses to reduce load on the backend system. When a cache receives a HTTP request, it calculates the request's cache key and uses that to identify whether it has the appropriate response already saved, or whether it needs to forward the request on to the back-end. A cache key typically consists of the request method, path, query string, and Host header, plus maybe one or two other headers. In the following request, the values **not** included in the cache key have been coloured orange. We'll follow this highlighting standard throughout the presentation.
 

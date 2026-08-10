@@ -98,7 +98,7 @@ Cloudflare Pagesは、Cloudflareが提供するJAMstackプラットフォーム�
 
 Cloudflare Pagesは、ユーザーの指定したコマンドを使用して静的サイトを生成する機能を提供している。
 上記のブログで解説されているように、このコマンドが実行される環境はKubernetes内に存在しており、更にビルドを実行するのはかなり権限の絞られた`buildbot`ユーザーである。
-そのため、調査をする際に役に立つ情報[1]()が得られない状況から調査を開始する必要がある。
+そのため、調査をする際に役に立つ情報1が得られない状況から調査を開始する必要がある。
 
 ## 調査開始
 
@@ -131,7 +131,7 @@ Cloudflare Pagesは、ユーザーの指定したコマンドを使用して静�
 
 ## コラボレーション
 
-任意のファイルをビルド環境から読み出す方法を見つけた時点で21時近くになっており、脆弱性調査に使える時間は約1日ほどしか残っていなかった。[2]()
+任意のファイルをビルド環境から読み出す方法を見つけた時点で21時近くになっており、脆弱性調査に使える時間は約1日ほどしか残っていなかった。2
 一人で権限昇格を見つけ、更にそこから脆弱性を探すのは現実的ではないように思えたため、記事冒頭で言及した記事の著者2人にコラボレーションを持ちかけることにした。
 
 ![Twitterで記事の著者2人にコラボレーションを持ちかける様子](https://blog.ryotak.net/img/cloudflare-pages-twitter-dm.png)
@@ -163,7 +163,7 @@ James氏からの返信があった後、Sean氏が来るまで2人で権限昇�
 
 ## npmを経由した権限昇格
 
-npmのコードを読んだ結果、`npm install`は`package.json`等と同様に、バージョンを指定する箇所にURLを指定することで、npmのレジストリからではなく指定されたURLからtarballをダウンロードするということがわかった。[3]()
+npmのコードを読んだ結果、`npm install`は`package.json`等と同様に、バージョンを指定する箇所にURLを指定することで、npmのレジストリからではなく指定されたURLからtarballをダウンロードするということがわかった。3
 
 例えば、`npm install wrangler@https://example.com/example.tgz`というコマンドを実行した場合、wranglerの`https://example.com/example.tgz`というバージョンのインストールを試みる代わりに、`https://example.com/example.tgz`からtarballをダウンロードし、それをwranglerとして扱う。
 
@@ -305,16 +305,13 @@ root権限を得ることに成功した時点で日付を跨いでしまって�
 
 -
 
-ビルド環境内で動いているプロセスのバイナリやコードなど [↩︎]()
+ビルド環境内で動いているプロセスのバイナリやコードなど ↩︎
 
 -
 
-調査を開始したのが土曜日であり、休日中に調査を終わらせたかったため。 [↩︎]()
+調査を開始したのが土曜日であり、休日中に調査を終わらせたかったため。 ↩︎
 
 -
 
-[https://github.com/npm/npm-package-arg/blob/2dd33f52a772c091f26169c97cefaa399a7233cc/lib/npa.js#L77-L85](https://github.com/npm/npm-package-arg/blob/2dd33f52a772c091f26169c97cefaa399a7233cc/lib/npa.js#L77-L85)[↩︎]()
+[https://github.com/npm/npm-package-arg/blob/2dd33f52a772c091f26169c97cefaa399a7233cc/lib/npa.js#L77-L85](https://github.com/npm/npm-package-arg/blob/2dd33f52a772c091f26169c97cefaa399a7233cc/lib/npa.js#L77-L85)↩︎
 
-**
-
-**

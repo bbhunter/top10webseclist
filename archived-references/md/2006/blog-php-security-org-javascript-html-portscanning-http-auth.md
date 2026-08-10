@@ -85,6 +85,6 @@ So far so good... Now you know how you can use simple HTML to not even scan, but
 
 Display comments as ([Linear](http://blog.php-security.org/index.php?url=archives/54-JavaScriptHTML-Portscanning-and-HTTP-Auth.html&serendipity[cview]=linear#comments) | Threaded)
 
- []()  []()  []()  []()  []()  []()
+           
 
  |    |

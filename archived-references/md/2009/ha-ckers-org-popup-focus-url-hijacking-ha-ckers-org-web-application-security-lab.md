@@ -82,7 +82,7 @@ Click to Enlarge
 
 Unlike Firefox, IE doesn’t even say where the file is being downloaded from so it’s even a more confusing user experience. Not that this is a particularly good example since .xpi files are meaningless in Internet Explorer, but you get the point. Either way, this is kinda a nasty user experience, and is extremely likely to result in user compromise if the malicious site is creative enough in how it presents the user to download the latest version of whatever software addon or plugin the attacker is trying to spoof (think about Adobe Flash upgrades, Java upgrades and so on). Could be nasty.
 
-  This entry was posted on Monday, December 28th, 2009 at 11:58 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Monday, December 28th, 2009 at 11:58 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

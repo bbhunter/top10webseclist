@@ -75,7 +75,7 @@ But now that leaves us to the aftermath. After looking at the contest for the fi
 
 That said, there is at least two or three more potential outputs of this contest - including papers on propagation analytics, worm tracking technology, and potentially other things that I’m not privy to. Was it worth it? Absolutely. I couldn’t have been happier with the results. Thanks again to everyone who made it such a success. It was a lot of work, but it was the first step towards large scale worm defense. Again, a huge congrats to Giorgio Maone and Sirdarckcat!
 
-  This entry was posted on Thursday, January 10th, 2008 at 4:26 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20080110/diminutive-worm-contest-wrapup/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20080110/diminutive-worm-contest-wrapup/trackback/) from your own site.
+  This entry was posted on Thursday, January 10th, 2008 at 4:26 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20080110/diminutive-worm-contest-wrapup/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20080110/diminutive-worm-contest-wrapup/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

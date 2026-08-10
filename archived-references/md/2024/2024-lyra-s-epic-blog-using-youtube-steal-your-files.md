@@ -108,7 +108,7 @@ I looked into it for a bit, and found a bunch of framable resources on **/s/**. 
 
 ## Part 2: Redirects
 
-Open redirects are a genre of “vulnerabilities” that can redirect you to any other page. For example, visiting **[google.com/url?q=https://lyra.horse](https://www.google.com/url?q=https://lyra.horse)**[1]() will take you to **[lyra.horse](https://lyra.horse)**. They are [rarely considered](https://bughunters.google.com/learn/invalid-reports/web-platform/navigation/6680364896223232/open-redirectors) to be real vulnerabilities because their impact is very limited - you’ll just be redirected from one page to another.
+Open redirects are a genre of “vulnerabilities” that can redirect you to any other page. For example, visiting **[google.com/url?q=https://lyra.horse](https://www.google.com/url?q=https://lyra.horse)**1 will take you to **[lyra.horse](https://lyra.horse)**. They are [rarely considered](https://bughunters.google.com/learn/invalid-reports/web-platform/navigation/6680364896223232/open-redirectors) to be real vulnerabilities because their impact is very limited - you’ll just be redirected from one page to another.
 
 Yet, as we’re stuck in an iframe on **youtube.com**, an open redirect would be pretty lovely. Being able to navigate this Slides iframe to any website of our choice would let us do some very interesting stuff. So let’s find one!
 
@@ -197,9 +197,9 @@ So we have Docs inside of Docs, which is incredibly fun for a few minutes, but c
 
 You might think that the document editing pages themselves would be useful, but those pages already have protections in place because they’re already (intentionally) framable on external websites. If a page detects that it is within an iframe, it’ll disable a lot of the dangerous functionality, such as the sharing options of the document.
 
-This part here is what actually took me the longest to figure out. I spent a while looking for anything interesting on the **docs.google.com** domain to frame and clickjack. Looking through the Wayback Machine[2]() and trying various Google dorks[3](), I kept finding a bunch of old endpoints that would’ve been useful in the past, but now just redirect to Google Drive, which we cannot frame.
+This part here is what actually took me the longest to figure out. I spent a while looking for anything interesting on the **docs.google.com** domain to frame and clickjack. Looking through the Wayback Machine2 and trying various Google dorks3, I kept finding a bunch of old endpoints that would’ve been useful in the past, but now just redirect to Google Drive, which we cannot frame.
 
-Going through link after link, I eventually stumbled upon this url: docs.google.com/file/d/{ID}/edit. This page lets us preview and perform actions (such as sharing) on Google Drive files, and unlike the other links I found earlier, it stays on the **docs.google.com** domain instead of redirecting to Drive. And not only does it work with Drive files, it also works with folders and other such entities (such as Google Sites pages). You could even open up your Drive’s “Root” folder[4]() with it!
+Going through link after link, I eventually stumbled upon this url: docs.google.com/file/d/{ID}/edit. This page lets us preview and perform actions (such as sharing) on Google Drive files, and unlike the other links I found earlier, it stays on the **docs.google.com** domain instead of redirecting to Drive. And not only does it work with Drive files, it also works with folders and other such entities (such as Google Sites pages). You could even open up your Drive’s “Root” folder4 with it!
 
 docs.google.com/file/d/0ALK4w9WgXcQUUk9PVA/edit
 
@@ -219,7 +219,7 @@ The page has a share button that stays enabled even within an iframe. If we can 
 
 ## Part 5: But can we?
 
-But let’s do a reality check - can we *really* trick someone into performing all those actions? Maybe, if we try hard enough, but even with all our iframing and clickjacking abilities it’s going to take a lot to convince someone to do all that. I don’t think the VRP panel[5]() would be very impressed with *this* much reliance on social engineering. We must find a way to make it more convincing - ideally condensing it down to just a single click.
+But let’s do a reality check - can we *really* trick someone into performing all those actions? Maybe, if we try hard enough, but even with all our iframing and clickjacking abilities it’s going to take a lot to convince someone to do all that. I don’t think the VRP panel5 would be very impressed with *this* much reliance on social engineering. We must find a way to make it more convincing - ideally condensing it down to just a single click.
 
 Thinking of ways to improve the attack, I remembered the feature in Drive that lets you request access to other people’s documents. Doing so sends out an e-mail with a cool little button to immediately manage the permissions.
 
@@ -313,7 +313,7 @@ accounts.youtube.com (cross-site) → docs.google.com/??? (same-origin) → docs
 
 and it should work! But we have to find something that’d work for that part in the middle. And lucky for us, I had already spotted something like that in my googling earlier.
 
-It seems like there’s an old legacy GSuite URL format of **docs.google.com/a/<domain>/…**, which probably did something useful years ago (edit: and still does[6]()), but these days just disappears when you open an URL. If you’re logged out, you must find some working donor URL to use, such as **/a/wyo.gov/**[7](), but logged in you can even do **/a/a/** and it’ll just work.
+It seems like there’s an old legacy GSuite URL format of **docs.google.com/a/<domain>/…**, which probably did something useful years ago (edit: and still does6), but these days just disappears when you open an URL. If you’re logged out, you must find some working donor URL to use, such as **/a/wyo.gov/**7, but logged in you can even do **/a/a/** and it’ll just work.
 
 Here are a couple of example URLs to try out.
 
@@ -375,28 +375,28 @@ love you all <3!
 
 -
 
-This specific example will probably display a warning - but let’s just pretend it doesn’t. [↩︎]()
+This specific example will probably display a warning - but let’s just pretend it doesn’t. ↩︎
 
 -
 
-The [Internet Archive](https://web.archive.org/) allows listing all archived URLs for a domain, quite handy for recon. [↩︎]()
+The [Internet Archive](https://web.archive.org/) allows listing all archived URLs for a domain, quite handy for recon. ↩︎
 
 -
 
-Dorks are the various search operations and tricks you can use on Google, such as `site:docs.google.com` or `inurl:document`. [↩︎]()
+Dorks are the various search operations and tricks you can use on Google, such as `site:docs.google.com` or `inurl:document`. ↩︎
 
 -
 
-Every Google Drive file and folder has an ID associated with it, and your entire drive’s Root folder is no exception! Want to find yours? Open Drive’s page with DevTools open, and then search for `9PVA` in the network requests. [↩︎]()
+Every Google Drive file and folder has an ID associated with it, and your entire drive’s Root folder is no exception! Want to find yours? Open Drive’s page with DevTools open, and then search for `9PVA` in the network requests. ↩︎
 
 -
 
-The [VRP](https://bughunters.google.com/about/rules/google-friends/6625378258649088/google-and-alphabet-vulnerability-reward-program-vrp-rules) is Google’s bug bounty program, and its panel is a group of people who decide how much $$$ you’ll get for a bug. [↩︎]()
+The [VRP](https://bughunters.google.com/about/rules/google-friends/6625378258649088/google-and-alphabet-vulnerability-reward-program-vrp-rules) is Google’s bug bounty program, and its panel is a group of people who decide how much $$$ you’ll get for a bug. ↩︎
 
 -
 
-advaith [let me know](https://twitter.com/advaithj1/status/1836940041756750021) that /a/domain urls automatically switch your account to the one under the domain, so they’re still handy if you use multiple accounts. [↩︎]()
+advaith [let me know](https://twitter.com/advaithj1/status/1836940041756750021) that /a/domain urls automatically switch your account to the one under the domain, so they’re still handy if you use multiple accounts. ↩︎
 
 -
 
-I’m using this domain as an example because it’s short and came up a lot in my Google searches, but there isn’t anything special about it, you can use other gsuite domains too. In case anyone from the [Wyoming goverment](https://ets.wyo.gov/cybersecurity) happens across this post - no, this isn’t touching your IT systems in any way, it’s only affecting Google’s systems and they’re already aware of and working on the topics discussed in this blog post. [↩︎]()
+I’m using this domain as an example because it’s short and came up a lot in my Google searches, but there isn’t anything special about it, you can use other gsuite domains too. In case anyone from the [Wyoming goverment](https://ets.wyo.gov/cybersecurity) happens across this post - no, this isn’t touching your IT systems in any way, it’s only affecting Google’s systems and they’re already aware of and working on the topics discussed in this blog post. ↩︎

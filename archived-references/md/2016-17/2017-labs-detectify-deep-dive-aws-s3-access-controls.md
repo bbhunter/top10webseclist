@@ -377,11 +377,11 @@ You found a bucket which is served by a subdomain or domain of the company.
 
 #### You should test for:
 
-- []()**BUCKET READ**
+- **BUCKET READ**
  Listing files in the bucket. Sensitive information might be exposed.
-- []()**BUCKET READ-ACP**
+- **BUCKET READ-ACP**
  Let’s look at the ACP and see if we can identify the bucket being vulnerable without actually trying anything. If we see that `AllUsers` or `AuthenticatedUsers` has `WRITE_ACP` set, we know we can gain full control over the bucket, without doing anything else.
-- []()**BUCKET WRITE** (Simulate using invalid-MD5 hack)
+- **BUCKET WRITE** (Simulate using invalid-MD5 hack)
  If we can upload a new file to the bucket. This also tells us we can overwrite any object in the bucket. However, if we want to avoid uploading anything, we can try the following hack, not uploading anything but still see that we are able to do it:
  When making a signed PUT request to a bucket, we have the option to add a `Content-MD5` telling AWS the checksum of the content being uploaded. It turns out that this check is happening inside the following flow:
 
@@ -445,15 +445,15 @@ PUT to S3 with invalid md5: test-secure-bucket/write.txt
 
 We will therefore never modify the content, only confirm we can do it. This unfortunately only works on `WRITE` on objects, not on `WRITE_ACP` as far as we know.
 
-- []()**BUCKET WRITE-ACP**
+- **BUCKET WRITE-ACP**
  The most dangerous one. Fully upgradable to full access of the bucket. Destructive call. Be careful. The only way to do this one properly is to first figure out how the bucket behaves to not break any current ACP. Remember that you can still have access to `WRITE_ACP` even though you do not have access to `READ_ACP`.
  [API-documentation reference](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTacl.html)
-- []()**OBJECT READ**
+- **OBJECT READ**
  We can try to read the content of files we are interested in found by BUCKET READ.
-- []()**OBJECT WRITE**
+- **OBJECT WRITE**
  No need to test this one, since BUCKET WRITE decides fully. If BUCKET WRITE gives an error the object will *not* be writable and if BUCKET WRITE is successful, the object will *always* be writable.
  However, if the company using the bucket has an application where users can upload files, look at the implementation of how they make the actual file upload to S3. If the company is using a [POST Policy upload](https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-HTTPPOSTConstructPolicy.html), specifically look in the policy at the *Condition Matching* of the `$key` and the `Content-type`. Depending on if they use `starts-with` you might be able to modify the content type to HTML/XML/SVG or similar, or change the location of the file being uploaded.
-- []()**OBJECT WRITE-ACP**
+- **OBJECT WRITE-ACP**
  We can try modifying the ACP of the specific object. It will not enable us to modify the content, but only the access control of the file, giving us the ability to stop files from working publicly.
  [API-documentation reference](http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPUTacl.html)
 
@@ -523,10 +523,10 @@ Which will give us all assets on the page which we then can use to figure out if
 
 #### You should test for:
 
-- [**BUCKET READ-ACP**]()
-- [**BUCKET WRITE** (By invalid-MD5 hack)]()
-- [**BUCKET WRITE-ACP**]()
-- [**OBJECT WRITE-ACP**]()
+- **BUCKET READ-ACP**
+- **BUCKET WRITE** (By invalid-MD5 hack)
+- **BUCKET WRITE-ACP**
+- **OBJECT WRITE-ACP**
 
 #### Possible vulnerabilities:
 
@@ -540,11 +540,11 @@ This one is a bit complicated. You need to have clear evidence and proof that th
 
 #### You should test for:
 
-- [**BUCKET READ**]()
-- [**BUCKET READ-ACP**]()
-- [**BUCKET WRITE** (By invalid-MD5 hack)]()
-- [**BUCKET WRITE-ACP**]()
-- [**OBJECT WRITE-ACP**]()
+- **BUCKET READ**
+- **BUCKET READ-ACP**
+- **BUCKET WRITE** (By invalid-MD5 hack)
+- **BUCKET WRITE-ACP**
+- **OBJECT WRITE-ACP**
 
 #### Possible vulnerabilities:
 

@@ -66,7 +66,7 @@ page going offline. To read the original, follow the link above.
 
 Almost two years ago I had stumbled upon a pretty significant vulnerability in the StackExchange network. I say stumbled, because I wasn't actually trying to attack the site. Circumstance just showed me a door. The actual attack is pretty interesting, and it holds a lesson for everybody who builds or maintains websites or server infrastructure. So here's the story on how I hacked StackOverflow...
 
- []()
+ 
 
 ##  The Setup
 

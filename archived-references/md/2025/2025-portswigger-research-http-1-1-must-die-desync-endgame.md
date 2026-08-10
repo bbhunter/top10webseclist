@@ -95,48 +95,48 @@ Please note you can find a summary and FAQ aimed at a broader audience at [http1
 
 ## Table of contents
 
-- [The desync endgame]()
+- The desync endgame
 
-- [The fatal flaw in HTTP/1.1]()
-- [Mitigations that hide but don't fix]()
-- [Hacking 20 million websites by accident]()
-- ["HTTP/1 is simple" and other lies]()
+- The fatal flaw in HTTP/1.1
+- Mitigations that hide but don't fix
+- Hacking 20 million websites by accident
+- "HTTP/1 is simple" and other lies
 
-- [A strategy to win the desync endgame]()
+- A strategy to win the desync endgame
 
-- [Detecting parser discrepancies]()
-- [Understanding V-H and H-V discrepancies]()
-- [Turning a V-H discrepancy into a CL.0 desync]()
-- [Exploiting H-V on IIS behind ALB]()
-- [Exploiting H-V without Transfer-Encoding]()
+- Detecting parser discrepancies
+- Understanding V-H and H-V discrepancies
+- Turning a V-H discrepancy into a CL.0 desync
+- Exploiting H-V on IIS behind ALB
+- Exploiting H-V without Transfer-Encoding
 
-- [0.CL desync attacks]()
+- 0.CL desync attacks
 
-- [The 0.CL deadlock]()
-- [Moving beyond 400 Bad Request]()
-- [Converting 0.CL into CL.0 with a double-desync]()
-- [More desync attacks are coming]()
+- The 0.CL deadlock
+- Moving beyond 400 Bad Request
+- Converting 0.CL into CL.0 with a double-desync
+- More desync attacks are coming
 
-- [Expect-based desync attacks]()
+- Expect-based desync attacks
 
-- [Bypassing response header removal]()
-- [0.CL desync via vanilla Expect - T-Mobile]()
-- [0.CL desync via obfuscated Expect - Gitlab]()
-- [CL.0 desync via vanilla Expect - Netlify CDN]()
-- [CL.0 desync via obfuscated Expect - Akamai CDN]()
+- Bypassing response header removal
+- 0.CL desync via vanilla Expect - T-Mobile
+- 0.CL desync via obfuscated Expect - Gitlab
+- CL.0 desync via vanilla Expect - Netlify CDN
+- CL.0 desync via obfuscated Expect - Akamai CDN
 
-- [Defending against HTTP desync attacks]()
+- Defending against HTTP desync attacks
 
-- [Why patching HTTP/1.1 is not enough]()
-- [How secure is HTTP/2 compared to HTTP/1?]()
-- [How to survive with HTTP/1.1]()
-- [How you can help kill HTTP/1.1]()
+- Why patching HTTP/1.1 is not enough
+- How secure is HTTP/2 compared to HTTP/1?
+- How to survive with HTTP/1.1
+- How you can help kill HTTP/1.1
 
-- [Conclusion]()
+- Conclusion
 
-## [The desync endgame]()
+## The desync endgame
 
-### [The fatal flaw in HTTP/1.1]()
+### The fatal flaw in HTTP/1.1
 
 HTTP/1.1 has a fatal, highly-exploitable flaw - the boundaries between individual HTTP requests are very weak. Requests are simply concatenated on the underlying TCP/TLS socket with no delimiters, and there are multiple ways to specify their length. This means attackers can create extreme ambiguity about where one request ends and the next request starts. Major websites often use reverse proxies, which funnel requests from different users down a shared connection pool to the back-end server. This means that an attacker who finds the tiniest parser discrepancy in the server chain can cause a desync, apply a malicious prefix to other users' requests, and usually achieve complete site takeover:
 
@@ -146,7 +146,7 @@ As HTTP/1.1 is an ancient, lenient, text-based protocol with thousands of implem
 
 Six years later, it's easy to think we've solved the problem, with a combination of parser tightening and HTTP/2 - a binary protocol that pretty much eliminates the entire attack class if it's used for the upstream connections from the front-end onwards. Unfortunately, it turns out all we've managed to do is make the problem look solved.
 
-### [Mitigations that hide but don't fix]()
+### Mitigations that hide but don't fix
 
 In 2025, HTTP/1.1 is everywhere - but not necessarily in plain sight. Servers and CDNs often claim to support HTTP/2, but actually downgrade incoming HTTP/2 requests to HTTP/1.1 for transmission to the back-end system, thereby losing most of the security benefits. Downgrading incoming HTTP/2 messages is even more dangerous than using HTTP/1.1 end to end, as it introduces a fourth way to specify the length of a message. In this paper, we'll use the following acronyms for the four major length interpretations:
 
@@ -172,7 +172,7 @@ This has created the desync endgame - you've got the illusion of security thanks
 
 In truth, HTTP/1.1 implementations are so densely packed with critical vulnerabilities, you can literally find them by mistake.
 
-### [Hacking 20 million websites by accident]()
+### Hacking 20 million websites by accident
 
 HTTP/1.1 is simply not fit for a world where we solve every problem by adding another layer. The following case-study illustrates this beautifully.
 
@@ -194,7 +194,7 @@ We reported this issue, and Cloudflare patched it within hours, [published a pos
 
 Readers unfamiliar with bug bounty hunting may find themselves surprised by the bounties paid relative to the impact throughout this whitepaper, but most bounties received were close to the maximum payout advertised by the respective program. Bounty size is an artefact of the underlying economics and any genuinely surprising bounty experiences will be highlighted.
 
-### ["HTTP/1 is simple" and other lies]()
+### "HTTP/1 is simple" and other lies
 
 How does a bug like that happen? Partly, it's the sheer complexity of the systems involved. For example, we can infer that requests sent to Cloudflare over HTTP/2 are sometimes rewritten to HTTP/1.1 for internal use, then rewritten again to HTTP/2 for the upstream connection! However, the underlying problem is the foundation.
 
@@ -218,9 +218,9 @@ All case-studies were identified through authorized testing on targets with vuln
 
 All bounties earned during this research were split equally between everyone involved, and my cut was doubled by PortSwigger then donated to [a local charity](https://www.42ndstreet.org.uk/).
 
-## [A strategy to win the desync endgame]()
+## A strategy to win the desync endgame
 
-### [Detecting parser discrepancies]()
+### Detecting parser discrepancies
 
 In the desync endgame, detecting vulnerabilities is difficult due to mitigations, complexity, and quirks. To thrive in this environment, we need a detection strategy that reliably identifies the underlying flaws that make desync attacks possible, rather than attempting brittle attacks with many moving parts. This will set us up to recognize and overcome exploitation challenges.
 
@@ -230,7 +230,7 @@ This tool proved highly effective, and I'm pleased to release it in the open-sou
 
 ![](https://portswigger.net/cms/images/61/19/f4a9-article-reqsmuggler.png)
 
-### [Understanding V-H and H-V discrepancies]()
+### Understanding V-H and H-V discrepancies
 
 Let's take a look at real detection, and how to interpret it:
 
@@ -244,7 +244,7 @@ Hidden-Visible (H-V): The masked Host header is hidden from the front-end, but v
 
 You can often distinguish between V-H and H-V discrepancies by paying close attention to the responses, and guessing whether they originated from a front-end or back-end. Note that the specific status codes are not relevant, and can sometimes be confusing. All that matters is that they're different. This finding turned out to be a V-H discrepancy.
 
-### [Turning a V-H discrepancy into a CL.0 desync]()
+### Turning a V-H discrepancy into a CL.0 desync
 
 Given a V-H discrepancy, you could attempt a TE.CL exploit by hiding the Transfer-Encoding header from the back-end, or try a CL.0 exploit by hiding the Content-Length header. I highly recommend using CL.0 wherever possible as it's much less likely to get blocked by a WAF. On many V-H targets, including the one above, exploitation was simple:
 
@@ -254,7 +254,7 @@ On a different target, the above exploit failed because the front-end server was
 
 I didn't invest any time in crafting a fully weaponized PoC on this target, as it's not economical for low-paid bounty programs and VDPs.
 
-### [Detection strategies]()
+### Detection strategies
 
 By combining different headers, permutations, and strategies, the tool achieves superior coverage. For example, here's a discovery made using the same header (Host), and the same permutation (leading space before header name), but a different strategy (duplicate Host with invalid value):
 
@@ -262,7 +262,7 @@ By combining different headers, permutations, and strategies, the tool achieves 
 
 This target was once again straightforward to exploit using a CL.0 desync. In my experience, web VPNs often have flawed HTTP implementations and I would strongly advise against placing one behind any kind of reverse proxy.
 
-### [Detecting high-risk parsing]()
+### Detecting high-risk parsing
 
 The discrepancy-detection approach can also identify servers that deviate from accepted parsing conventions and are, therefore, likely to be vulnerable if placed behind a reverse proxy. For example, scanning a <redacted> server revealed that they don't treat \n\n as terminating the header block:
 
@@ -270,7 +270,7 @@ The discrepancy-detection approach can also identify servers that deviate from a
 
 This is harmless for direct access, but [RFC-9112](https://datatracker.ietf.org/doc/html/rfc9112#section-2.2) states "a recipient MAY recognize a single LF as a line terminator". Behind such a front-end, this would be exploitable. This vulnerability was traced back to the underlying HTTP library, and a patch is on the way. Reporting theoretical findings like these is unlikely to net you sizeable bug bounty payouts, but could potentially do quite a lot to make the ecosystem more secure.
 
-### [Exploiting H-V on IIS behind ALB]()
+### Exploiting H-V on IIS behind ALB
 
 HTTP Request Smuggler also identified a large number of vulnerable systems using Microsoft IIS behind AWS Application Load Balancer (ALB). This is useful to understand because AWS isn't planning to patch it. The detection typically shows up like:
 
@@ -290,13 +290,13 @@ Set routing.http.desync_mitigation_mode = strictest
 
 This unfixed finding exposes an overlooked danger of cloud proxies: adopting them imports another company's technical debt directly into your own security posture.
 
-### [Exploiting H-V without Transfer-Encoding]()
+### Exploiting H-V without Transfer-Encoding
 
 The next major breakthrough in this research came when I discovered a H-V discrepancy on a certain website which blocks all requests containing Transfer-Encoding, making CL.TE attacks impossible. There was only one way forward with this: a 0.CL desync attack.
 
-## [0.CL desync attacks]()
+## 0.CL desync attacks
 
-### [The 0.CL deadlock]()
+### The 0.CL deadlock
 
 0.CL desync attacks are widely regarded as unexploitable. To understand why, consider what happens when you send the following attack to a target with a H-V parser discrepancy:
 
@@ -308,7 +308,7 @@ The front-end doesn't see the Content-Length header, so it will regard the orang
 
 The back end does see the Content-Length header, so it will wait for the body to arrive. Meanwhile, the front-end will wait for the back-end to reply. Eventually, one of the servers will time out and reset the connection, breaking the attack. In essence, 0.CL desync attacks usually result in an upstream connection deadlock.
 
-### [Breaking the 0.CL deadlock]()
+### Breaking the 0.CL deadlock
 
 Prior to this research, I spent two years exploring [race conditions](https://portswigger.net/web-security/race-conditions) and timing attacks. In the process, I stumbled on a solution for the 0.CL deadlock.
 
@@ -336,7 +336,7 @@ I've known about the /con quirk for over ten years but this was the first time I
 
 On other servers, I found server-level redirects operated as early-response gadgets. However, I never found a viable gadget for Apache; they're too studious about closing the connection when they hit an error condition.
 
-### [Moving beyond 400 Bad Request]()
+### Moving beyond 400 Bad Request
 
 To prove you've found a 0.CL desync, the next step is to trigger a controllable response. After the attack request, send a 'victim' request containing a second path nested inside the header block:
 
@@ -346,7 +346,7 @@ If you set the Content-Length of the first request correctly, it will slice the 
 
 This is sufficient to prove there's a 0.CL desync, but it's obviously not a realistic attack - we can't assume our victim will include a payload inside their own request! We need a way to add our payload to the victim's request. We need to convert our 0.CL into a CL.0.
 
-### [Converting 0.CL into CL.0 with a double-desync]()
+### Converting 0.CL into CL.0 with a double-desync
 
 To convert 0.CL into CL.0, we need a double-desync! This is a multi-stage attack where the attacker uses a sequence of two requests to set the trap for the victim:
 
@@ -376,7 +376,7 @@ You can experiment with this technique yourself for free using our new Web Secur
 
 Using these techniques, we initially identified around ten simple 0.CL vulnerabilities in websites with bug bounty programs. Many of these findings were on websites using a certain cloud WAF - this is not the first time we've seen a WAF making a website easier to hack. We were distracted by other discoveries at this point and didn't bother to weaponize any of the attacks beyond a DoS, so this only took the total bounties earned to $21,645. The best bounty experience was with [EXNESS](https://hackerone.com/exness?type=team) who awarded $7,500. As usual, the most valuable outcome wasn't the bounties themselves - it was the foundation this work provided for our subsequent findings.
 
-### [More desync attacks are coming]()
+### More desync attacks are coming
 
 At this point, I thought the desync threat was finally fully mapped and future issues would be niche, one-off implementation flaws. This is a mistake I make every year. Here's a partial history of major advances in request smuggling:
 
@@ -391,9 +391,9 @@ At this point, I thought the desync threat was finally fully mapped and future i
 
 It took the next discovery for me to finally realise the truth - more desync attacks are always coming.
 
-## [Expect-based desync attacks]()
+## Expect-based desync attacks
 
-### [The Expect complexity bomb]()
+### The Expect complexity bomb
 
 Back in 2022, I tried out using the [Expect header for desync attacks](https://github.com/PortSwigger/http-request-smuggler/blame/a07da1292dcaaaefbebbc79b764e576962fedf3c/src/burp/DesyncBox.java#L422) but didn't find anything. As it turns out, I didn't look hard enough.
 
@@ -423,8 +423,6 @@ And secret keys:
 
  `POST / HTTP/1.1 Host: <redacted> Expect: 100-continue Content-Length: 1 X``HTTP/1.1 401 Unauthorized Www-Authenticate: Bearer HTTP/1.1 100 ContinTransfer-EncodingzxWthTQmiI8fJ4oj9fzE" X-: chunked HTTP/1.1 401 Unauthorized Www-Authenticate: Bearer HTTP/1.1 100 ContinTransfer-EncodingzxWthTQm145 `
 
-###
-
 All HTTP/1.1 responses have one header block - unless you send Expect. As a result, the second header block often takes parsers by surprise and breaks attempts from front-end servers to remove sensitive response headers. Here's an example:
 
   `POST /_next/static/foo.js HTTP/1.1 Host: app.netlify.com ` `HTTP/1.1 200 OK Server: Netlify X-Nf-Request-Id: <redacted> `
@@ -435,13 +433,13 @@ I reported this example to Netlify and they said "this information is provided b
 
 This technique also reveals hundreds of server/version banners that people have attempted to mask in an attempt to mitigate targeted exploits. Luckily, exposed server banners are more of a threat to compliance than anything critical.
 
-### [An unplanned collaboration]()
+### An unplanned collaboration
 
 Around this time, I received a message from a small team of full-time bounty hunters - [Paolo 'sw33tLie' Arnolfo](https://x.com/sw33tLie), [Guillermo 'bsysop' Gregorio](https://x.com/bsysop), and [Mariani 'Medusa' Francesco](https://www.linkedin.com/in/francesco-mariani-85841b1b3). They had also noticed the Expect header making interesting things happen. They had a solid research pedigree - their exploration of [TE.0 Request Smuggling](https://www.bugcrowd.com/blog/unveiling-te-0-http-request-smuggling-discovering-a-critical-vulnerability-in-thousands-of-google-cloud-websites/) landed third in the [Top Ten Web Hacking Techniques of 2024](https://portswigger.net/research/top-10-web-hacking-techniques-of-2024). As such, we decided to team up.
 
 We ended up exploiting many, many targets. Our findings fell into four broad categories:
 
-### [0.CL desync via vanilla Expect - T-Mobile]()
+### 0.CL desync via vanilla Expect - T-Mobile
 
 Simply sending a valid Expect header causes a 0.CL desync on numerous different servers. I believe this is caused by a broken Expect implementation in the front-end server, which makes it correctly forward the headers, but get confused by the back-end's non-100 reply and forget it still needs to receive a body from the client.
 
@@ -451,7 +449,7 @@ Here's a proof of concept we built targeting a T-Mobile staging domain:
 
 [T-Mobile](https://bugcrowd.com/engagements/t-mobile) awarded us $12,000 for this finding - a highly competitive payout for a non-production domain.
 
-### [0.CL desync via obfuscated Expect - Gitlab]()
+### 0.CL desync via obfuscated Expect - Gitlab
 
 Sending a lightly obfuscated Expect header exposes a substantial number of new targets. For example, "Expect: y 100-continue" causes a 0.CL desync on h1.sec.gitlab.net. This was an interesting target as it holds the attachments to reports sent to Gitlab's bug bounty program - potentially critical zerodays.
 
@@ -461,7 +459,7 @@ The site had a tiny attack surface so we weren't able to find a classic redirect
 
 After this, some high-end payouts took us to around $95,000 earned from 0.CL Expect-based desync attacks.
 
-### [CL.0 desync via vanilla Expect - Netlify CDN]()
+### CL.0 desync via vanilla Expect - Netlify CDN
 
 Proving that it can break servers in every possible way, Expect can also cause CL.0 desync vulnerabilities.
 
@@ -473,7 +471,7 @@ We found this while testing a particular Netlify-hosted website, but it didn't m
 
 The attack stopped working shortly after we found it, but we reported it to Netlify anyway and received the reply "Websites utilizing Netlify are out of scope", and no bounty. Normally, when I encounter a surprising bounty outcome, I don’t mention it as it tends to distract readers from the technical content. I’ve made an exception here because it provides useful context for what happened next.
 
-### [CL.0 desync via obfuscated Expect - Akamai CDN]()
+### CL.0 desync via obfuscated Expect - Akamai CDN
 
 Unsurprisingly, obfuscating the Expect header revealed even more CL.0 desync vulnerabilities. Here's an example we found that let us serve arbitrary content to users accessing auth.lastpass.com, netting their maximum bounty - $5,000:
 
@@ -487,9 +485,9 @@ The reports were well received, but things didn't go entirely smoothly. It trans
 
 Overall, it was quite stressful, but at least I got some USD-backed evidence of the danger posed by HTTP/1.1. The total bounties earned from this research so far currently stands at slightly over $350,000.
 
-## [Defending against HTTP desync attacks]()
+## Defending against HTTP desync attacks
 
-### [Why patching HTTP/1.1 is not enough]()
+### Why patching HTTP/1.1 is not enough
 
 All the attacks in this paper are exploiting implementation flaws, so it might seem strange to conclude that the solution is to abandon the entire protocol. However, all these attacks have the same root cause. HTTP/1.1's fatal flaw - poor request separation - means tiny bugs often have critical impact. This is compounded by two key factors.
 
@@ -499,7 +497,7 @@ Second, the last six years have proven that we struggle to apply the types of pa
 
 All these factors combine to mean one thing - more desync attacks are coming.
 
-### [How secure is HTTP/2 compared to HTTP/1?]()
+### How secure is HTTP/2 compared to HTTP/1?
 
 HTTP/2 is not perfect - it's significantly more complex than HTTP/1, and can be painful to implement. However, upstream HTTP/2+ makes desync vulnerabilities vastly less likely. This is because HTTP/2 is a binary protocol, much like TCP and TLS, with zero ambiguity about the length of each message. You can expect implementation bugs, but the probability that a given bug is actually exploitable is significantly lower.
 
@@ -509,7 +507,7 @@ Note that HTTP/2 downgrading, where front-end servers speak HTTP/2 with clients 
 
 You might encounter an argument stating that HTTP/1.1 is more secure than HTTP/2 because HTTP/1.1 implementations are older, and therefore more hardened. To counter this, I would like to draw a comparison between request smuggling, and buffer overflows. Request smuggling has been a well known threat for roughly six years. This means our defences against it are roughly as mature as our defences against buffer overflows were in 2002. It's time to switch to a memory safe language.
 
-### [How to defeat request smuggling with HTTP/2]()
+### How to defeat request smuggling with HTTP/2
 
 First, ensure your origin server supports HTTP/2. Most modern servers do, so this shouldn't be a problem.
 
@@ -519,7 +517,7 @@ Unfortunately, the following vendors have not yet added support for upstream HTT
 
 Note that disabling HTTP/1 between the browser and the front-end is not required. These connections are rarely shared between different users and, as a result, they're significantly less dangerous. Just ensure they're converted to HTTP/2 upstream.
 
-### [How to survive with HTTP/1.1]()
+### How to survive with HTTP/1.1
 
 If you're currently stuck with upstream HTTP/1.1, there are some strategies you can use to try and help your website survive the inevitable future rounds of desync attacks until you can start using HTTP/2.
 
@@ -532,7 +530,7 @@ If you're currently stuck with upstream HTTP/1.1, there are some strategies you 
 
 Finally, please be wary of vendor claims that WAFs can thwart desync attacks as effectively as upstream HTTP/2.
 
-### [How you can help kill HTTP/1.1]()
+### How you can help kill HTTP/1.1
 
 Right now, the biggest barrier to killing upstream HTTP/1 is poor awareness of how dangerous it is. Hopefully this research will help a bit, but to make a lasting difference and ensure we're not in exactly the same place in six years time, I need your help.
 
@@ -540,7 +538,7 @@ We need to collectively show the world how broken HTTP/1.1 is. Take HTTP Request
 
 Finally, share the message - more desync attacks are always coming.
 
-## [Conclusion]()
+## Conclusion
 
 Over the last six years, we've seen that a design flaw in HTTP/1.1 regularly exposes websites to critical attacks. Attempts to hotfix individual implementations have failed to keep pace with the threat, and the only viable long-term solution is upstream HTTP/2. This is not a quick fix, but by spreading awareness just how dangerous upstream HTTP/1.1 really is, we can help kill HTTP/1.1.
 

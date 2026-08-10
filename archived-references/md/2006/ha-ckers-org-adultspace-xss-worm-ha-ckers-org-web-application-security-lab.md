@@ -77,7 +77,7 @@ I guess there are some perverts out there who happen to be pretty good JavaScrip
 
 Thanks for Luny for the tip!
 
-  This entry was posted on Thursday, December 14th, 2006 at 3:04 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Thursday, December 14th, 2006 at 3:04 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

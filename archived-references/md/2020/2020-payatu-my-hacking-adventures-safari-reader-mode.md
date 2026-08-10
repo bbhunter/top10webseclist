@@ -70,7 +70,7 @@ page going offline. To read the original, follow the link above.
 
 Table of Contents
 
- [ ]()
+  
 
 # My hacking adventures with Safari reader mode
 

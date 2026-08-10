@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 Exploring the DOMPurify library: Bypasses and Fixes (1/2) | mizu.re
 
- [ *keyboard_arrow_up* ]()
+  *keyboard_arrow_up* 
 
 title: Exploring the DOMPurify library: Bypasses and Fixes (1/2)
 date: Nov 17, 2024
@@ -71,43 +71,43 @@ tags: [Article](https://mizu.re/tag/Article) [Web](https://mizu.re/tag/Web) [mXS
 
 # Exploring the DOMPurify library: Bypasses and Fixes (1/2)
 
-- [📜 Introduction]()
-- [🔍 How does client-side HTML sanitizer works?]()
-- [❓ Why are mutation XSS (mXSS) possible?]()
-- [▶️ DOMPurify 3.1.0 bypass (found by @IceFont 👑)]()
+- 📜 Introduction
+- 🔍 How does client-side HTML sanitizer works?
+- ❓ Why are mutation XSS (mXSS) possible?
+- ▶️ DOMPurify 3.1.0 bypass (found by @IceFont 👑)
 
-- [Node flattening]()
-- [HTML Parsing states]()
-- [Proof Of Concept]()
+- Node flattening
+- HTML Parsing states
+- Proof Of Concept
 
-- [⏩ DOMPurify 3.1.1 bypass]()
+- ⏩ DOMPurify 3.1.1 bypass
 
-- [DOMPurify 3.1.0 fix]()
-- [DOM Clobbering issue]()
-- [Proof Of Concept]()
+- DOMPurify 3.1.0 fix
+- DOM Clobbering issue
+- Proof Of Concept
 
-- [⏭️ DOMPurify 3.1.2 bypass]()
+- ⏭️ DOMPurify 3.1.2 bypass
 
-- [DOMPurify 3.1.1 fix]()
-- [Second-order DOM Clobbering]()
-- ["Elevator" HTML mutation]()
-- [Proof Of Concept]()
+- DOMPurify 3.1.1 fix
+- Second-order DOM Clobbering
+- "Elevator" HTML mutation
+- Proof Of Concept
 
-- [👨👩👧 DOMPurify Triple HTML Parsing bypass (found with @hash_kitten and @ryotkak 🔥)]()
+- 👨👩👧 DOMPurify Triple HTML Parsing bypass (found with @hash_kitten and @ryotkak 🔥)
 
-- [Form reordering and node flattening]()
-- [Proof Of Concept]()
+- Form reordering and node flattening
+- Proof Of Concept
 
-- [➡️ What's next?]()
+- ➡️ What's next?
 
-- [DOMPurify 3.1.2 fix]()
-- [Conclusion]()
+- DOMPurify 3.1.2 fix
+- Conclusion
 
-- [📚 Bibliography]()
+- 📚 Bibliography
 
 ## 📜 Introduction
 
-This article will be part of a two-article series focusin📜 Introductionel free to skip to "[DOMPurify 3.1.0 bypass (found by @IceFont 👑)]()".
+This article will be part of a two-article series focusin📜 Introductionel free to skip to "DOMPurify 3.1.0 bypass (found by @IceFont 👑)".
 
 ## 🔍 How does client-side HTML sanitizer works?
 
@@ -388,7 +388,7 @@ Even if the fix might look great at first glance, a small mistake has been made 
 
 **Fig. 28**: Example of __depth clobbering through the .parentNode property.
 
-Using this bug twice in a row is required for the fix, as 255 * 2 = 510, which doesn't reach the flattening limit. This can be done by using the nested <form> mutation described in the "[Why are mutation XSS (mXSS) possible?"]() section.
+Using this bug twice in a row is required for the fix, as 255 * 2 = 510, which doesn't reach the flattening limit. This can be done by using the nested <form> mutation described in the "Why are mutation XSS (mXSS) possible?" section.
 
 ### Proof Of Concept
 

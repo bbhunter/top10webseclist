@@ -63,8 +63,6 @@ page going offline. To read the original, follow the link above.
 
 CSRF on Novell GroupWise WebAccess allows email theft and other attacks
 
-####
-
 ###  PR08-21 - CSRF on Novell GroupWise WebAccess allows email theft and other attacks
 
  Vulnerability found:03 October 2008Vendor informed:03 October 2008Severity level:CriticalCredits:Adrian Pastor of ProCheckUp Ltd (www.procheckup.com). ProCheckUp thanks Novell for working with us in such a professional manner. Description:Novell WebAccess is vulnerable to CSRF.

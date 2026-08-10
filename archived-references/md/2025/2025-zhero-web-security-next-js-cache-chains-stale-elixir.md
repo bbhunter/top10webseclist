@@ -73,28 +73,28 @@ Reading my previous publication is not required to understand this one, but if y
 
 ## Index
 
-- [Data request]()
+- Data request
 
-- [getStaticProps - SSG]()
-- [getServerSideProps - SSR]()
-- [Data fetching]()
+- getStaticProps - SSG
+- getServerSideProps - SSR
+- Data fetching
 
-- [Internal URL parameter and pageProps]()
+- Internal URL parameter and pageProps
 
-- [Exploitation - DoS via Cache Poisoning]()
-- [Real world exploitation (Bug Bounty)]()
+- Exploitation - DoS via Cache Poisoning
+- Real world exploitation (Bug Bounty)
 
-- [CVE-2024-46982: The stale elixir]()
+- CVE-2024-46982: The stale elixir
 
-- [Exploitation - DoS via Cache Poisoning]()
-- [Exploitation - Stored XSS via Cache Poisoning]()
-- [Exploitation - Another way]()
-- [Exploitation - Cache deception]()
-- [Specific cases]()
+- Exploitation - DoS via Cache Poisoning
+- Exploitation - Stored XSS via Cache Poisoning
+- Exploitation - Another way
+- Exploitation - Cache deception
+- Specific cases
 
-- [Security Advisory]()
-- [Disclaimer]()
-- [Conclusion]()
+- Security Advisory
+- Disclaimer
+- Conclusion
 
 ## Data request
 

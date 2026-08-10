@@ -82,7 +82,7 @@ If an attacker finds an HTML injection vulnerability within the main domain (ex:
 
 A good example we will use is our website Octagon.net, which hosts the following CSP rule:
 
-[Content-Security-Policy: script-src 'self'; object-src 'none';]()
+Content-Security-Policy: script-src 'self'; object-src 'none';
 
 Octagon.net is not a Wordpress site, but it hosts Wordpress endpoint for blogging and research at[ https://octagon.net/blog](https://octagon.net/blog) - This means if an attacker finds an HTML injection in the main domain (octagon.net) they can now abuse a hidden Wordpress jsonp endpoint to turn it to an XSS vulnerability against the whole site. The functionality can be reached with this link:
 

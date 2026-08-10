@@ -1162,7 +1162,6 @@ O
 Dec
 by submitting the ci-
 phertext
-~
 C
 := (
 C
@@ -1183,7 +1182,6 @@ responds with
 O
 Dec
 (
-~
 C
 ) =
 iv
@@ -2584,12 +2582,9 @@ O
 CBCxml
 , which
 takes as input an AES-CBC ciphertext
-~
 c
 = (
-~
 iv;
-~
 C
 (1)
 )
@@ -2601,9 +2596,7 @@ if the plaintext is correct, and
 otherwise.
 In particular, a randomly generated ciphertext
 (
-~
 iv;
-~
 C
 (1)
 )
@@ -3438,7 +3431,8 @@ leted by RFC 2279.
 --- page 20 ---
 
 YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
+ $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
+½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
 
 --- page 21 ---
 

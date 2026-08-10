@@ -83,7 +83,7 @@ I’ve informed MS, but they didn’t respond so far.
 
 The IDN thing is interesting because I’m sure if you were in the field a few years back this will sound familiar - people setting up fake websites that looked in every way like the target website, except one letter would be Cyrillic. That mostly affected Firefox, and Netscape (because it used the Gecko rendering engine), but now it looks as if IE might also run into problems. Not that I think a ton of people fall for this sort of thing, but even if it’s only vaguely useful, it’s still something we should consider as a workable attack vector.
 
-  This entry was posted on Friday, June 8th, 2007 at 9:39 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [Phishing](http://ha.ckers.org/blog/category/webappsec/phishing/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070608/cross-domain-basic-auth-phishing-tactics/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20070608/cross-domain-basic-auth-phishing-tactics/trackback/) from your own site.
+  This entry was posted on Friday, June 8th, 2007 at 9:39 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [Phishing](http://ha.ckers.org/blog/category/webappsec/phishing/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070608/cross-domain-basic-auth-phishing-tactics/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070608/cross-domain-basic-auth-phishing-tactics/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

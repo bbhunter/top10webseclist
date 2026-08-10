@@ -89,7 +89,7 @@ Authors:[Payap Sirinam](https://arxiv.org/search/cs?searchtype=author&query=Siri
  **[[v4]](https://arxiv.org/abs/1801.02265v4)** Tue, 10 Jul 2018 15:39:52 UTC (2,475 KB)
  **[v5]** Mon, 20 Aug 2018 01:28:48 UTC (2,475 KB)
 
- []() Full-text links:
+  Full-text links:
 
 ## Access Paper:
 
@@ -217,4 +217,4 @@ Both individuals and organizations that work with arXivLabs have embraced and ac
 
 Have an idea for a project that will add value for arXiv's community? [**Learn more about arXivLabs**](https://info.arxiv.org/labs/index.html).
 
- [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1801.02265) | [Disable MathJax]() ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))
+ [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1801.02265) | Disable MathJax ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))

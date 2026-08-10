@@ -74,7 +74,7 @@ How about [this link?](http://josefsson.org/idn.php?data=%A2%BE%BCscript%BEalert
 
 Giving users the ability to select their encoding method (by browser sniffing or otherwise) is a really bad idea as we can now clearly see in this example.
 
-  This entry was posted on Friday, November 3rd, 2006 at 8:26 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20061103/selecting-encoding-methods-for-xss-filter-evasion/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20061103/selecting-encoding-methods-for-xss-filter-evasion/trackback/) from your own site.
+  This entry was posted on Friday, November 3rd, 2006 at 8:26 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20061103/selecting-encoding-methods-for-xss-filter-evasion/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20061103/selecting-encoding-methods-for-xss-filter-evasion/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

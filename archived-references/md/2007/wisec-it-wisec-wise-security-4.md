@@ -153,7 +153,7 @@ After having read [Pdp](http://www.gnucitizen.org)'s point of view [about](http:
 
 # Wisec is brought to you by...
 
-Wisec is written and mantained by [ Stefano Di Paola]().
+Wisec is written and mantained by  Stefano Di Paola.
 
 Wisec uses open standards, including XHTML, CSS2, and XML-RPC.
 

@@ -105,7 +105,7 @@ New Hack Abuses Cloud-Based Browsers - Dark Reading
 
  *Have a comment on this story? Please click "Add Your Comment" below. If you'd like to contact* Dark Reading's *editors directly, [send us a message](mailto:editors@darkreading.com)*.
 
-  []()
+  
 
  [![](http://twimgs.com/techweb/xml.gif)Subscribe to RSS](http://www.darkreading.com/rss/index.html)
 
@@ -158,8 +158,8 @@ New Hack Abuses Cloud-Based Browsers - Dark Reading
 
 ### Upcoming Events
 
-- [WebCasts]()
-- [Live Events]()
+- WebCasts
+- Live Events
 
 -  [ Agile for Dummies ](http://www.applicationlifecycle.techweb.com/login/index/assetId/2884/agile-for-dummies?cid=SBX_dr_fture_wp_default_cloud_security&itc=SBX_dr_fture_wp_default_cloud_security)
 -  [ Design matters: Collaborate, automate, innovate and be agile ](http://www.applicationlifecycle.techweb.com/login/index/assetId/3079/design-matters-collaborate-automate-innovate-and-be-agile?cid=SBX_dr_fture_wp_default_cloud_security&itc=SBX_dr_fture_wp_default_cloud_security)

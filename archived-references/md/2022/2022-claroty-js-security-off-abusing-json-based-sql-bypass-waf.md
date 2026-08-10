@@ -113,63 +113,63 @@ Attackers using this technique would be able to bypass the WAF’s protection an
 
 -
 
-[Previous Work Leads to New Technique]()
+Previous Work Leads to New Technique
 
 -
 
-[Cloud Deployment]()
+Cloud Deployment
 
 -
 
-[Getting Stuck With a Zero Day You Can’t Exploit]()
+Getting Stuck With a Zero Day You Can’t Exploit
 
 -
 
-[Limitation 1: We Can Only Retrieve Integers]()
+Limitation 1: We Can Only Retrieve Integers
 
 -
 
-[Limitation 2: The Returned Rows Are Returned In Random Order]()
+Limitation 2: The Returned Rows Are Returned In Random Order
 
 -
 
-[Limitation 3: We Can Only Return a Limited Number Of Rows In Each Request]()
+Limitation 3: We Can Only Return a Limited Number Of Rows In Each Request
 
 -
 
-[Constructing Our Payload]()
+Constructing Our Payload
 
 -
 
-[Going To The Clouds (and Falling Down)]()
+Going To The Clouds (and Falling Down)
 
 -
 
-[Researching AWS WAF]()
+Researching AWS WAF
 
 -
 
-[JSON in SQL]()
+JSON in SQL
 
 -
 
-[The New ‘ or ‘a’=’a]()
+The New ‘ or ‘a’=’a
 
 -
 
-[Armed With JSON Syntax]()
+Armed With JSON Syntax
 
 -
 
-[Dream Big: A Generic WAF Bypass]()
+Dream Big: A Generic WAF Bypass
 
 -
 
-[Automating The Process]()
+Automating The Process
 
 -
 
-[Conclusion]()
+Conclusion
 
 ## What is Web Application Firewall (WAF)?
 

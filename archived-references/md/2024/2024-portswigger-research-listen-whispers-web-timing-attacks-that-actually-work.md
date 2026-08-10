@@ -130,7 +130,7 @@ You can also read this whitepaper in a [print-friendly PDF format](https://ports
 - [Defence](https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work#defence)
 - [Takeaways](https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work#takeaways)
 
-### [Background]()
+### Background
 
 Web timing attacks are notorious for two things; making big promises, and failing to deliver. Examples are often theoretical, and even where a technique is dubbed 'practical' everyone knows it'll stop working as soon as you try to apply it outside a lab environment.
 
@@ -158,13 +158,13 @@ Before this research, the smallest time gap I'd personally exploited was 30,000Î
 
 Three key attack techniques stood out as providing valuable findings on a diverse range of live systems: discovering hidden attack surface, server-side injection vulnerabilities, and misconfigured reverse proxies. In this paper, I'll explore each of these in depth.
 
-### [Making timing attacks that work everywhere]()
+### Making timing attacks that work everywhere
 
 All three techniques are now available in Param Miner so, if you wanted to, you could stop reading and try them out right now. The true value of this research comes from understanding that it doesn't stop here; these are just a sample of what's possible. Timing attacks can take you almost anywhere, but to grasp this potential, we need to start from the beginning.
 
 Let's have a closer look at the key factors that real-world timing attacks live or die by, and how to overcome them. In this section, I'll show how to make timing attacks 'local', portable, and feasible.
 
-#### [Answering difficult questions]()
+#### Answering difficult questions
 
 It's easy to assume that all web timing attacks are exploits, but this is a mistake because it limits your thinking around potential applications. At their core, web timing attacks are simply about answering difficult questions - ones that can't be answered by observing the server's response.
 
@@ -178,7 +178,7 @@ In this illustration, we're using two HTTP requests to ask the question 'Does th
 
 Unfortunately, the actual time to compare each character is somewhere in the realm of 5 nanoseconds, or 0.000000005 seconds. Good luck exploiting that.
 
-#### [Noise vs signal]()
+#### Noise vs signal
 
 The success of every timing attack comes down to two competing variables - signal and noise. Signal refers to the size of the timing difference you want to detect, and noise refers to everything else that affects the response timing. If the signal is too quiet relative to the background noise, you won't hear it:
 
@@ -194,7 +194,7 @@ Note that this equation does not include 'number of measurements'. You can attem
 
  Network jitter is the *variation* in latency - the time taken for a packet to get to a target system and back again. It's the classic nemesis of remote timing attacks. When someone sees a timing attack demonstrated against a local system and says 'That'll never work on a remote system', they're basically saying that network jitter is going to make the attack impossible. Five years ago, this might have been true.
 
-#### [Making timing attacks 'local']()
+#### Making timing attacks 'local'
 
 In 2020, [Timeless Timing Attacks](https://usenix.org/conference/usenixsecurity20/presentation/van-goethem) showed that you could fully eliminate network jitter from measurements using HTTP/2. You could place two HTTP/2 requests into a single TCP packet, ensuring they arrive at the server simultaneously. Then you could look at the order the responses arrive in, inferring which took longer to process on the server:
 
@@ -202,7 +202,7 @@ In 2020, [Timeless Timing Attacks](https://usenix.org/conference/usenixsecurity2
 
 This single discovery eliminated the biggest source of noise and shifted the boundaries of what's detectable. There's just one small catch.
 
-#### [The sticky request-order problem]()
+#### The sticky request-order problem
 
 At the HTTP/2 layer, the two requests are completely concurrent, but the underlying TLS data is a stream so one request is still 'first' i.e. one will be fully decrypted before the other. If you try this technique out, you'll notice that websites show a significant bias towards answering the first request first. This bias probably stems from multiple factors, including the time it takes to decrypt the second request and resource availability. Unfortunately, this can mask the delay that you're trying to detect:
 
@@ -210,7 +210,7 @@ At the HTTP/2 layer, the two requests are completely concurrent, but the underly
 
 The authors noticed this problem and tackled it by adding dummy parameters to slow down parsing of the first request, in an attempt to resynchronise execution.
 
-#### [Making timing attacks portable]()
+#### Making timing attacks portable
 
 Lab environments are known for having less noise than real targets, but there's also a second, subtler issue. Focusing on a single target often yields target-specific techniques that require extensive tuning to apply anywhere else This makes them significantly less valuable for anyone working to a deadline.
 
@@ -234,7 +234,7 @@ Implementing this dual-packet sync turned out to be extremely easy - just add an
 
 We integrated this improved technique into Burp Suite's built-in single-packet attack as soon as we discovered it, so you might have already benefited from it! I'm currently working with the developer of the open-source implementation [h2spacex](https://github.com/nxenon/h2spacex) to get it in there too.
 
-#### [Making timing attacks feasible]()
+#### Making timing attacks feasible
 
 With network noise out of the picture, our next target is server noise. Do not underestimate server noise. It stems from numerous sources including load on the target server, other systems it interacts with, other virtual systems running on the same physical hardware, and probably the weather near the datacenter. Server noise is the reason I haven't made any claims about what time-delay you can expect to detect with the enhanced single-packet attack - any such claim is so target-specific it's effectively meaningless.
 
@@ -246,7 +246,7 @@ To maximize signal, focus on the slow code path and make it even slower by using
 
 Modern web technologies like [ORMs](https://www.elttam.com/blog/plorming-your-primsa-orm/) and [GraphQL](https://portswigger.net/web-security/graphql#bypassing-rate-limiting-using-aliases) also are particularly suited for delay-expansion techniques. Remember that a DoS attack is just a really easy timing attack and adapt classic techniques like ReDoS, batching, and recursive [XML entities](https://portswigger.net/web-security/xxe/xml-entities).
 
-### [Hidden attack surface]()
+### Hidden attack surface
 
 Vulnerabilities often lurk out of sight in disused and forgotten features that get overlooked by developers and security testers alike. As such, vulnerability discovery journeys often start with the detection of a hidden parameter, cookie, or HTTP header.
 
@@ -258,7 +258,7 @@ Vulnerabilities often lurk out of sight in disused and forgotten features that g
 
  Instead I just measured the time from the last byte of the request to the first byte of the response, and compared the bottom quartile of the two sets of 30 timing measurements to see if they were distinct (indicating a valid parameter), or overlapped. The bottom quartile is ideal for this comparison because it reflects the measurements with the least noise.
 
-#### [Discovery overload]()
+#### Discovery overload
 
 Running the time-augmented Param Miner on the test bed of 30,000 live sites yielded a huge number of hidden parameters, including some really weird ones.
 
@@ -283,7 +283,7 @@ One frequent finding was much more practical:
 
 This pair of responses tells us two valuable things. First, the site is only including specific parameters like 'id' in the cache key, so it's highly exposed to [parameter-based cache poisoning attacks](https://portswigger.net/web-security/web-cache-poisoning/exploiting-implementation-flaws#:~:text=payload%2C%20for%20example.-,Unkeyed%20query%20string,-Like%20the%20Host). Second, we know the 'id' parameter is keyed and this configuration is typically done site-wide. This means that using time analysis, Param Miner has detected a parameter that applies to a different page!
 
-#### [The hardest problem]()
+#### The hardest problem
 
 When I tried this concept out, I anticipated two problems. First, I expected many of the techniques to fail completely. Second, I suspected that any valid results I encountered would be hidden in a morass of false positives.
 
@@ -295,7 +295,7 @@ This video shows what initially looks like a potential remote code execution vul
 
 That was one of the easy cases - sometimes you may never fully understand what you've detected. Carry your assumptions lightly and test them from different angles wherever possible.
 
-#### [Proving the concept]()
+#### Proving the concept
 
 To avoid being misled by false assumptions, I decided to focus on specific parameters that provide a clear security impact without any time-consuming manual investigation and a straightforward way to gather additional corroborating evidence.
 
@@ -338,7 +338,7 @@ Here's a clue - in your login history, the website specified the login IP addres
 
 So, we've gained a new technique for parameter discovery, proved timing attacks can work at scale in the wild, and also spotted something significant: inputs that trigger errors can short-cut large code paths and result in significantly faster responses. In other words, timing attacks are exceptionally good at detecting exceptions
 
-### [Server-side injection]()
+### Server-side injection
 
 Triggering and spotting exceptions is a foundational part of testing for server-side injection vulnerabilities, from [SQLi](https://portswigger.net/web-security/sql-injection) to [OS command injection](https://portswigger.net/web-security/os-command-injection). This makes timing analysis a perfect match for server-side injection detection.
 
@@ -346,7 +346,7 @@ I attempted to replicate my success with Param Miner by adding 'time' as a respo
 
 For my second attempt, I reused some code from Param Miner to build a much simpler test that used the single-packet attack. I issued up to 50 request pairs per probe, and recorded the response order of each pair. If the response order was at least 80% biased towards one payload, I reported it as a valid finding.
 
-#### [Fully blind SQLi]()
+#### Fully blind SQLi
 
 The first finding was a fully blind SQL injection, detected with a classic payload pair:
 
@@ -358,7 +358,7 @@ Unfortunately, when I reported this it turned out to be a duplicate. In retrospe
 
 For powerful vulnerabilities like command injection, SQLi, and code injection, timing-based detection is only really useful when you've got a WAF or filtering in place that blocks the classic detection techniques. Let's look elsewhere.
 
-#### [Blind JSON injection]()
+#### Blind JSON injection
 
 Timing comes into its own when looking for the injection underclass; vulnerabilities that allow manipulation of data structures and formats, but stop shy of full code execution. This includes injection into formats like JSON, XML, CSV, and server-side query parameters and HTTP headers. Many of these bugs are rarely spoken of because they're so hard to detect.
 
@@ -387,7 +387,7 @@ There's a clue in the response formatting - the invalid syntax we injected hasn'
 
 This feature provides a second clue: when our invalid JSON sequence got redacted, the timing difference disappeared! Taken together, this strongly suggests that the delay is happening due to a component parsing the response being sent to us. My best guess is that it's some kind of error logging system. I was pretty pleased about figuring this out from a 0.2ms time differential but with no clear path to an exploit, I decided to move on.
 
-#### [Blind server-side parameter pollution]()
+#### Blind server-side parameter pollution
 
 My most prolific probe was for blind server-side parameter pollution. This worked by comparing the response times for reserved URI characters like ? and #, with non-reserved characters like !.
 
@@ -401,7 +401,7 @@ This could be due to the fragment breaking a server-side path and getting a spee
 
 Server-side parameter pollution was the most common type of injection discovery by a huge margin, so I think it's a promising area for further research. For more information on this attack class, check out [server-side parameter pollution](https://portswigger.net/web-security/api-testing/server-side-parameter-pollution), and [Attacking Secondary Contexts in Web Applications](https://www.youtube.com/watch?v=hWmXEAi9z5w).
 
-#### [Bug doppelgangers]()
+#### Bug doppelgangers
 
 As we've seen, high-precision timing is great for detecting blind injection bugs but they aren't always easy to exploit. While analyzing these findings I often gained some understanding of what was happening server-side, but stalled short of actual exploitation. Also, timing tends to surface lesser-known attack classes that we're less familiar with exploiting.
 
@@ -411,7 +411,7 @@ As we've seen, high-precision timing is great for detecting blind injection bugs
 
  Bug doppelgangers form part of a broader, recurrent theme from this research. If you ignore timing, you'll miss out, but if you focus too much on timing, you'll also miss out. For success, use every available information channel.
 
-### [Reverse proxy misconfigurations]()
+### Reverse proxy misconfigurations
 
 The single biggest breakthrough in this research was when I realized I could use timing to detect a widely overlooked type of SSRF.
 
@@ -425,7 +425,7 @@ If the target was vulnerable, I would see my request arriving on my site at burp
 
 After that I would send internal IPs and hostnames to plunder their internal network. This yielded some spectacular findings, including accidentally hacking a system that my ISP put in place to MITM their customers.
 
-#### [Scoped SSRF]()
+#### Scoped SSRF
 
 Although successful, this detection technique had a major blind spot - scoped SSRF.
 
@@ -439,7 +439,7 @@ This was a hint at a really common scenario, where companies allow request forwa
 
 I don't think there's an established name for this type of SSRF, so I'll call it scoped SSRF. This restriction can be implemented via an internal DNS server, simple hostname validation, a firewall blocking outbound DNS, or a tight listener config. The outcome is always the same - you've got a bug with an impact close to full SSRF, but it can't be detected using pingback/OAST techniques.
 
-#### [Detecting scoped SSRF]()
+#### Detecting scoped SSRF
 
 To detect scoped SSRF, we need to answer the question "Did the server try to connect to the specified hostname?". Timing is perfectly suited for this. Consider a server at www.example.com that issues the following responses:
 
@@ -461,7 +461,7 @@ Some DNS systems don't cache failed DNS lookups, but I found an alternative solu
 | aaa{62}.example.com |  404 Not Found |  25ms |  |
 | aaa{63}.example.com |  404 Not Found |  20ms |  |
 
-#### [Sifting for secret routes]()
+#### Sifting for secret routes
 
 Scanning with these techniques revealed hundreds of vulnerable reverse proxies, exposing alternative routes to tens of thousands of domains - I desperately needed automation.
 
@@ -475,7 +475,7 @@ I made Param Miner try to access each host twice - once directly and once throug
 
 Guessing hostnames directly in the Host header is often referred to as 'vhost bruteforcing', but reverse-proxy exploitation often looks completely different, so it's important to understand the distinction. Virtual-host bruteforcing only provides access to other websites on the same server. Meanwhile, reverse proxies will route requests to different systems, enabling unique attacks like front-end rule bypass, front-end impersonation, and exploit chaining opportunities. Let's dive in.
 
-#### [Firewall bypass]()
+#### Firewall bypass
 
 The simplest exploit is where you can see the target from outside but can't directly access it.
 
@@ -487,7 +487,7 @@ The simplest exploit is where you can see the target from outside but can't dire
 | sonarqube.redacted.com |  sonarqube.redacted.com |   --reset-- |  |
 | app.redacted.com |  sonarqube.redacted.com |  200 OK |  |
 
-#### [Firewall bypass - invisible route variant]()
+#### Firewall bypass - invisible route variant
 
 There's a common variation where the internal system doesn't have a convenient public DNS record to let you know it exists:
 
@@ -497,7 +497,7 @@ There are a huge number of pre-prod, staging, and development servers exposed to
 
  The most interesting targets I found were pre-launch systems still under active development. In particular, I discovered an admin console with apparently-public access on a really cool US government system, which I'm gutted I can't provide any details about. I reported the issue and the system went 'live' a few months later, but the admin console is nowhere in sight.
 
-#### [Front-end rule bypass]()
+#### Front-end rule bypass
 
 Some targets are publicly accessible, but sit behind front-end servers that enforce inconvenient security rules that block attacks or restrict access to valuable endpoints. The classic way to handle these is by talking directly to the back-end, but that's often impossible due to firewalls.
 
@@ -513,7 +513,7 @@ Into this:
 
 ![](https://portswigger.net/cms/images/97/13/24b7-article-unforbidden.png)
 
-#### [Front-end impersonation attacks]()
+#### Front-end impersonation attacks
 
 The most spectacular and surprising exploits happen when there's a trust relationship between the front-end and back-end. It's common knowledge that you can use headers like X-Forwarded-For to spoof your IP address. What's less appreciated is that this is part of a much broader and more powerful bug class. This type of attack has no established name, so I'll call it a front-end impersonation attack.
 
@@ -533,7 +533,7 @@ Misconfigured proxies offer an elegant alternative way to bypass header-overwrit
 
 Applying this successfully requires a robust mental visualization of what's happening behind the scenes. To help out, I've made a little CTF at [listentothewhispers.net](https://listentothewhispers.net/) - see if you can crack it!
 
-#### [Chaining]()
+#### Chaining
 
 Finally, scoped SSRF via reverse proxies offers some great exploit chaining opportunities.
 
@@ -541,13 +541,13 @@ Finally, scoped SSRF via reverse proxies offers some great exploit chaining oppo
 
  Since reverse proxies let you pick your back-end, they're great for HTTP request smuggling. I didn't have time to properly explore this concept. In short, I think you'll find that, while it should be easy to find back-ends that are vulnerable to request smuggling, cross-user exploitation will often be impossible because no legitimate users will be sharing your front-end/back-end connection. To prove the impact, you'll need to pursue tunneling-based exploits like front-end impersonation and header disclosure.
 
-### [What's next?]()
+### What's next?
 
-#### [My plan]()
+#### My plan
 
  My goal for this research is to get people using timing attacks day to day. As such, I plan to spend the next month improving the tooling in Param Miner and Turbo Intruder. In particular, I think it's possible to make most timing attacks quite a bit faster simply by using the t-test to decide whether to report a discovery, bail, or get more samples. I'll also be looking out for user feedback - if you have any requests or thoughts, let me know via [Github](https://github.com/portswigger/param-miner/issues) or [send me an email](https://jameskettle.com/#contact).
 
-#### [Timing research roadmap]()
+#### Timing research roadmap
 
  These findings have just scratched the surface, and timing attacks still have massive potential for further research. If you're interested to see where this attack class might go next, or pushing it further yourself, there are many different avenues to consider.
 
@@ -561,7 +561,7 @@ I think the single most valuable area is looking for new applications of timing 
 
  Finally, whichever path you take, try to resist the lure of hyper-focus on a single target - generic and reusable techniques contribute far more to the development of the field.
 
-### [Defence]()
+### Defence
 
  Timing attacks are hard to defend against. First and foremost, developers should understand that attacker visibility into their system's inner workings goes beyond the actual response content.
 
@@ -573,7 +573,7 @@ I think the single most valuable area is looking for new applications of timing 
 
  Finally, yes I do recommend using constant-time functions when comparing user input with secret keys. Just ask anyone who says this is an actual threat to provide a proof of concept.
 
-### [Takeaways]()
+### Takeaways
 
  It's not just about the exploits. At their core, web timing attacks are about answering difficult questions.
 

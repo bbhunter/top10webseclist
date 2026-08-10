@@ -72,7 +72,7 @@ What happens when a hashing scheme needs to be both HashDoS resistant and quickl
 
 In this post, we will go into the details of this vulnerability, explain why and how the design tried to meet the two seemingly contradictory requirements, and sample the statistical analysis we performed to evaluate the quality of the hash. Along the way, we will also discuss some specifics of how V8 stores and uses string hashes internally that lead to these constraints, the implementation techniques, and the performance analysis.
 
-## [What is HashDoS and why does it matter for Node.js?]()
+## What is HashDoS and why does it matter for Node.js?
 
 [Hash tables](https://en.wikipedia.org/wiki/Hash_table) are one of the most important data structures in software, and Node.js/V8 are no exceptions. With hash tables, there comes the problem of [collisions](https://en.wikipedia.org/wiki/Hash_collision) - while hash tables are designed to have O(1) average time complexity for, e.g., single lookup and insertion, when there are so many keys whose hashed values can be mapped to the same slot that the table has to walk through many locations to insert a new key, it's theoretically possible to degrade to O(n2) in total for inserting *n* keys.
 
@@ -82,7 +82,7 @@ HashDoS vulnerabilities can show up in a wide range of platforms. In the case of
 
 Unlike other DoS attack vectors that can be more easily mitigated by userland restrictions, HashDoS vulnerabilities are particularly tricky because they lurk inside widely used internal data structures and well-defined operations trusted by developers. For V8 embedders, this means fixes for HashDoS vulnerabilities usually fall on the runtime maintainers, and they are a critical part of maintaining the security and reliability of the ecosystem.
 
-## [Mitigating HashDoS with seeded hashes]()
+## Mitigating HashDoS with seeded hashes
 
 The core of HashDoS vulnerabilities lies in deterministic hash functions - if the attacker can predict the hash values of their inputs, they can craft inputs that reliably trigger worst-case performance in the target server. The standard mitigation is to [mix a seed value into the computation of the hash, and make sure that the seed is randomly generated at program initialization](https://www.usenix.org/legacy/events/sec03/tech/full_papers/crosby/crosby.pdf). This way, even if the attacker knows the hash function, they can't predict the hash values without knowing the seed that changes whenever the server restarts, and therefore can't craft inputs that will reliably collide.
 
@@ -90,7 +90,7 @@ In Node.js/V8, HashDoS vulnerabilities tend to center around misconfigurations t
 
 Until recently, most HashDoS discoveries in V8 had centered on hashing of regular strings, since they are more commonly found in paths exposed to server handlers. It wasn't until the recent HackerOne report by Mate Marjanović that our attention was drawn to an elephant in the room: array index strings (those that look like non-negative integers and fit within 24 bits) in V8 used a different deterministic hash that can be trivially predicted.
 
-## [What string hashes look like in V8]()
+## What string hashes look like in V8
 
 To understand the vulnerability, let's look at how V8 stores string hashes internally.
 
@@ -119,7 +119,7 @@ The layout of the hash fields looks like this (the least significant bits are on
 
 As you can see, the hash for array index strings is fully deterministic and there's no seeding involved. An attacker can easily predict their hash values, and with a bit of effort, craft colliding inputs.
 
-### [Exploiting the deterministic hash for array index strings]()
+### Exploiting the deterministic hash for array index strings
 
 One of the most commonly used hash tables in V8 is the [string table](https://chromium.googlesource.com/v8/v8/+/6ded7b3c4d79fc170b8e104dc0efc33cc4f67021/src/objects/string-table.h#51), which is used for [string internalization](https://en.wikipedia.org/wiki/String_interning) - deduplicating and caching strings in a global table for time and memory efficiency. The string table uses [open addressing](https://en.wikipedia.org/wiki/Open_addressing) with [quadratic probing](https://en.wikipedia.org/wiki/Quadratic_probing) to deal with collisions. The [probing sequence](https://chromium.googlesource.com/v8/v8/+/de546675cd3b496a44138edccb06ed5289b9c60f/src/objects/off-heap-hash-table-inl.h#160) is:
 
@@ -164,7 +164,7 @@ JSON.parse(string);
 
 With a ~2 MB payload, this can significantly slow down the JSON parsing - even on a powerful MacBook, this can hang for about half a minute. This means for servers that parse JSON from untrusted sources, a remote attacker can cause significant disruption via extreme [asymmetric resource consumption](https://cwe.mitre.org/data/definitions/405.html). Since the same hashing scheme is also used for many other V8 internals, e.g., Map keys, this has a wide attack surface.
 
-## [HashDoS resistant vs. efficiently reversible]()
+## HashDoS resistant vs. efficiently reversible
 
 As mentioned above, the standard mitigation for HashDoS is to seed the hash function, so we need to look for a more robust, seeded hashing scheme for array index strings.
 
@@ -172,7 +172,7 @@ When we talk about hashes for security purposes, we often naturally think of [cr
 
 So it looks like we are in a bind: do we have to either live with this vulnerability because of the reversibility requirement, or accept the performance regression?
 
-### [Finding a middle ground: minimal HashDoS resistance]()
+### Finding a middle ground: minimal HashDoS resistance
 
 Now is the time to take a step back and think about what exactly makes a hash resistant to HashDoS attacks. It turned out that those who looked into rapidhash wondered the same and proposed the idea of ["minimal HashDoS resistance"](https://github.com/hoxxep/rapidhash?tab=readme-ov-file#minimal-dos-resistance), with constraints that apply to our case:
 
@@ -189,13 +189,13 @@ These contributed to the evaluation of high attack complexity in [CVE-2026-21717
 
 That said, for servers with fewer guardrails or simpler states, a fully deterministic hash still makes the attack feasible. So while we don't need the hash to be cryptographically secure (or due to the reversibility requirement it just can't be), we still need to find an efficiently invertible, randomly keyed permutation with good diffusion on the 24-bit space, in order to bring the unpredictability of array index string hashes up to a level similar to randomly keyed rapidhash's unpredictability for regular strings.
 
-## [Exploring candidate hashes]()
+## Exploring candidate hashes
 
-### [Some naive hashes and why they fail]()
+### Some naive hashes and why they fail
 
 We first prototyped with a few naive hashes, partly to identify all the code paths in V8 that would need updating, and partly to see whether something simple might be good enough in practice.
 
-#### [Multiply a secret, then add another]()
+#### Multiply a secret, then add another
 
 ```cpp
 const uint32_t kMask = (1 << 24) - 1;  // 24-bit mask
@@ -206,7 +206,7 @@ uint32_t SeedArrayIndexValue(uint32_t value, uint32_t secrets[2]) {
 
 The first naive idea that came to mind was the classic [linear congruential generator](https://en.wikipedia.org/wiki/Linear_congruential_generator) (LCG) construction, but applied individually on the input instead of on a sequence. This is bijective when `secrets[0]` is odd, and can be quickly inverted (just subtract and multiply by the [modular inverse](https://en.wikipedia.org/wiki/Modular_multiplicative_inverse)). Unfortunately, this construction preserves linear relationships, and the low bits of the output depend only on the low bits of the input. As mentioned before, in many hash tables only the lower bits matter in probing, so an attacker can still generate collisions by picking values that are congruent modulo a guessed capacity.
 
-#### [XOR with a secret]()
+#### XOR with a secret
 
 ```cpp
 uint32_t SeedArrayIndexValue(uint32_t value, uint32_t secrets[1]) {
@@ -218,7 +218,7 @@ Another suggestion that came up during the development to minimize the overhead 
 
 These were clearly not good enough. We needed something with genuine bit diffusion, where changing a single input bit would affect many output bits in an unpredictable way for the attacker.
 
-### [The xorshift-multiply mixers]()
+### The xorshift-multiply mixers
 
 The search for bijective integer hash functions led us to Christopher Wellons' [hash-prospector](https://github.com/skeeto/hash-prospector) project, which generates billions of integer hash functions at random from a selection of nine reversible operations, then evaluates and ranks them. This project [showed](https://nullprogram.com/blog/2018/07/31/) that many of the best-performing functions came from the same family of constructions that use alternating rounds of two operations:
 
@@ -257,7 +257,7 @@ uint32_t UnseedArrayIndexValue(uint32_t hash, uint32_t m_inv[2]) {
 }
 ```
 
-### [Multiplier generation]()
+### Multiplier generation
 
 Now that we had found a(nother) plausible structure to mix the bits, the next step was to find a way to generate good multipliers. The multipliers need to be 24-bit since the permutation needs to operate on the 24-bit modular arithmetic space, and they also need to be chosen well - if the multiplier is 1, for example, it won't mix the bits at all. On the other hand, since they need to be generated at startup, we need to minimize the cost of finding good multipliers.
 
@@ -274,7 +274,7 @@ uint32_t derive_multiplier(uint64_t secret) {
 
 And because V8 already has to generate them anyway, we essentially get these multipliers for free and can reuse a good chunk of the infrastructure around its management.
 
-## [Statistical evaluation]()
+## Statistical evaluation
 
 With the construction taking shape, we'd like to see some empirical evidence about how well it diffuses the bits. While our threat model primarily relies on the secrecy of the multipliers and the invisibility of hash output, good diffusion is needed for that secrecy to reach every output bit. One common way to quantify diffusion for a hash function is to check its [avalanche effect](https://en.wikipedia.org/wiki/Avalanche_effect), which measures how a small change in the input affects the output bits. For example, if for each input *x* and each input bit position *j*, we compute the hash of both *x* and *x* with bit *j* flipped, then count how often each output bit *k* changed, the ideal hash function should have each output bit flipped 50% of the time for each input bit flip, known as the [strict avalanche criterion (SAC)](https://en.wikipedia.org/wiki/Avalanche_effect#Strict_avalanche_criterion). We adapted the code in [hash-prospector](https://github.com/skeeto/hash-prospector/tree/master) to evaluate the bias (root-mean-square relative deviation) from the SAC for our 24-bit input space (scaled by 1000 for readability):
 
@@ -332,7 +332,7 @@ This turned out to be quite effective in improving the stability of the avalanch
 | **2 rounds** | 2.03 | 7.92 | 40.37 | 7.19 |  |
 | **3 rounds** | 0.37 | 0.50 | 1.68 | 0.20 |  |
 
-### [Visualizing the hashes]()
+### Visualizing the hashes
 
 Now let's look at some visualizations to get an intuitive sense of the hash. For the seeded hashes, we derived the constants from the default rapidhash secrets for the visualization, but the variation analysis above should also help you extrapolate the variance in these visualizations when different secrets are applied.
 
@@ -348,15 +348,15 @@ Another way to visualize it is to look at the [avalanche matrix](https://cacm.ac
 
 Once again, the 2-round and 3-round xorshift-multiply constructions show much better avalanche properties than the naive constructions.
 
-### [Limitations]()
+### Limitations
 
 The SAC is a necessary but insufficient condition for a good hash function. Since this hashing scheme was developed to address a specific vulnerability, not to be a general-purpose PRNG or a non-cryptographic hash, we only measured bias from SAC as an empirical smoke test to guide the development, which happened in a limited timeframe. We have been [exploring other evaluations](https://github.com/joyeecheung/rapid-xorshift-multiply/), but to keep this post focused we won't go into them here. To avoid falling into the trap of identifying weaknesses in a [spherical cow](https://en.wikipedia.org/wiki/Spherical_cow), it's important to keep in mind that structural weaknesses that cannot be exploited by a blind attacker to cause worst-case performance would only be informative rather than actionable in our threat model. The defense lies not only in the hash construction itself, but also in the lack of visibility of the randomly generated multipliers and the hash output.
 
-## [Implementation]()
+## Implementation
 
 With a security release deadline to meet, we iterated on the hash design and V8 implementation in parallel, using the statistical analysis above to guide our choices while finding ways to reduce the impact on performance and code complexity.
 
-### [Improving the access to hash secrets]()
+### Improving the access to hash secrets
 
 Since our design will require even more frequent access to the hash secrets in hot paths, we need to ensure the access to them is efficient. In V8, the hash seed and the derived rapidhash secrets are stored in [a `ByteArray` in the read-only roots](https://chromium.googlesource.com/v8/v8/+/882eb6b29fa8ca8f55a76bfa4488d5bd6570f837/src/roots/roots.h#264), which in the default configuration of Node.js, are shared across isolates and initialized during process startup. The layout of the `ByteArray` was as follows:
 
@@ -372,7 +372,7 @@ Offset (bytes) | Content
 
 The roots tend to be hot and in cache, so reading the secrets from the roots directly should be efficient. However, like most heap objects in V8, the `ByteArray` was previously allocated with the default 4-byte alignment. To deal with the potential misalignment when reading 8-byte secrets, the [`HashSeed`](https://chromium.googlesource.com/v8/v8/+/aac14dd95e5be0d487eba6bcdaf9cef4f8bd806c/src/numbers/hash-seed.h#22) struct that was used to map them for access in C++ was passed around by value, with each part `memcpy`-ed from the `ByteArray`, or copied from another `HashSeed` that's not necessarily in cache. To reduce the overhead, we [updated the `ByteArray` to be allocated with 8-byte alignment, and changed the `HashSeed` to only hold a pointer to the beginning of the `ByteArray` in the read-only roots](https://chromium-review.googlesource.com/c/v8/v8/+/7609720/). Accesses to individual parts of the structure were then just direct loads from a pointer that points to the roots without copying, and in code they are just simple field accesses from a `HashSeed` struct reinterpreted over the `ByteArray`.
 
-### [Extending the `HashSeed` for the new hash]()
+### Extending the `HashSeed` for the new hash
 
 For our new hashing scheme, during hash seed initialization, we derive the multipliers from the rapidhash secrets by taking the lowest 24 bits, compute their modular inverses using [Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method), and store them all in the `ByteArray` that `HashSeed` maps onto. When we initially implemented the 2-round xorshift-multiply scheme, the layout of the `ByteArray` became:
 
@@ -392,7 +392,7 @@ Offset (bytes) | Content
 
 This was later extended to include `m3` and `m3_inv` for the 3-round scheme, with `m3` and `m3_inv` derived from `secrets[2]`.
 
-### [Applying the new hashing scheme across V8]()
+### Applying the new hashing scheme across V8
 
 To implement the new seeded hashing scheme, we consolidated all the code paths that treated the value bits as the original numeric value to go through a few helpers and [enforce seeding when it's enabled](https://chromium-review.googlesource.com/c/v8/v8/+/7564330):
 
@@ -411,11 +411,11 @@ After the changes, the layout of the `raw_hash_field` for array index strings lo
 
 ```
 
-## [Performance evaluation]()
+## Performance evaluation
 
 At first glance, adding 3 rounds of xorshift-multiply to every array index string's decoding might seem like a lot. The encoding direction has less impact since it only runs once during string construction, and would be dwarfed by the cost of the initial string-to-integer conversion. But what about decoding, which is where the optimization that requires reversibility lies?
 
-### [Decoding cost showdown]()
+### Decoding cost showdown
 
 - Without seeding: recovering the integer from `raw_hash_field` is essentially `(raw_hash_field >> 2) & 0xFFFFFF`, which is just one shift and one mask.
 - With seeding: on top of 1, this adds 4 xors, 4 shifts, 3 multiplies, 3 masks, and 3 loads of precomputed modular inverses from read-only roots that are likely in cache.
@@ -423,7 +423,7 @@ At first glance, adding 3 rounds of xorshift-multiply to every array index strin
 
 Compared to unseeded decoding, the seeded decoding incurs a few more ALU instructions. But these are still a lot cheaper than any memory access that could happen around them, and can be offset by the improvements in hash diffusion - the previous scheme produced consecutive hashes for consecutive integers, which can already lead to [worst-case performance issues in real-world workloads](https://v8.dev/blog/speeding-up-v8-heap-snapshots). As for reparsing, at length 5 the ALU costs alone would add up to be comparable to the seeded decoding, and when the string content is not in cache, the memory access cost would dominate.
 
-### [Benchmark results]()
+### Benchmark results
 
 To quantify the performance impact of the changes, we ran four JavaScript benchmark suites - Octane, SunSpider, Kraken, JetStream 3 - with and without `v8_enable_seeded_array_index_hash` on an x64 Linux server. The performance impact [appeared neutral and within noise](https://github.com/joyeecheung/rapid-xorshift-multiply/blob/main/data), which was adequate since our goal was to fix the vulnerability without causing a significant performance regression.
 
@@ -433,13 +433,13 @@ To quantify the performance impact of the changes, we ran four JavaScript benchm
 | Octane | 72848 | 72742 | -0.1% |  |
 | JetStream 3 | 203.20 | 202.90 | -0.15% |  |
 
-## [Deployment]()
+## Deployment
 
 The new seeded hashing scheme for array index strings has been merged into V8, gated by [`v8_enable_seeded_array_index_hash = true`](https://chromium.googlesource.com/v8/v8/+/d3f0ec122bd234aa82347cc0e838c8fae8cd6565/BUILD.gn#510), and it needs to be used together with [`v8_use_default_hasher_secret = false`](https://chromium.googlesource.com/v8/v8/+/d3f0ec122bd234aa82347cc0e838c8fae8cd6565/BUILD.gn#507) for HashDoS resistance. For Chrome, where DoS attacks are not applicable, this will be disabled. In Node.js, this is enabled and shipped to v25, v24, v22, and v20 in the [March 2026 security release](https://nodejs.org/en/blog/vulnerability/march-2026-security-releases).
 
 We have also notified other V8 embedders (Deno and Cloudflare workers) about the vulnerability and the fix during the development and the rollout.
 
-## [Acknowledgments]()
+## Acknowledgments
 
 This fix was developed and backported to Node.js LTS branches by [Joyee Cheung](https://github.com/joyeecheung) (Igalia, under the sponsorship of Bloomberg). Thanks to [Mate Marjanović](https://hackerone.com/sharp_edged?type=user) for identifying and reporting the vulnerability, [Leszek Swirski](https://github.com/leszekswirski) from the Google V8 team for reviewing and providing feedback on the design and implementation, [Chengzhong Wu](https://github.com/legendecas) (Bloomberg) for reviewing the V8 patches for Node.js, [Matteo Collina](https://github.com/mcollina) (Platformatic) for triaging and investigating the mitigations, [Olivier Flückiger](https://github.com/o-) (Google V8) for helping with the coordination, [Antoine du Hamel](https://github.com/aduh95), [Juan José Arboleda](https://github.com/juanarbol), [Marco Ippolito](https://github.com/marco-ippolito), and [Rafael Gonzaga](https://github.com/RafaelGSS) for preparing the security releases.
 

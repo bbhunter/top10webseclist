@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 .:: Phrack Magazine ::.
 
- [ [News](https://phrack.org/news.html) ] [ [Issues](https://phrack.org/issues/72/1.html) ] [ [Authors](https://phrack.org/authors.html) ] [ [Archives](https://phrack.org/archives/) ] [ [Contact](https://phrack.org/contact.html) ] [ [Search]() ]
+ [ [News](https://phrack.org/news.html) ] [ [Issues](https://phrack.org/issues/72/1.html) ] [ [Authors](https://phrack.org/authors.html) ] [ [Archives](https://phrack.org/archives/) ] [ [Contact](https://phrack.org/contact.html) ] [ Search ]
 
  [ Close ]
 

@@ -71,7 +71,7 @@ ha.ckers.org web application security lab - Archive » IE7.0 Detector
 
 The broken image in Firefox actually has a size, which we can detect (instead of giving an error when I attempt to access the image - which I could still probably get around by measuring the width of something that surrounds it most likely). Anyway, with a small hack I can now test if the user is using IE7.0 regardless if they are spoofing their user agent. Tis a minor issue.
 
-  This entry was posted on Saturday, February 10th, 2007 at 8:42 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070210/ie70-detector/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20070210/ie70-detector/trackback/) from your own site.
+  This entry was posted on Saturday, February 10th, 2007 at 8:42 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070210/ie70-detector/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070210/ie70-detector/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

@@ -77,7 +77,7 @@ You can read the page for the details, like the fact that basic and digest authe
 
 Incidentally, Jeremiah and I both gave the thumbs up to the idea of a cross domain XHR several years ago when the Mozilla team first asked us about the concept. Because there are so many other things wrong with the browser Jeremiah and I told them that it wouldn’t change much - the browser is already so broken from a security perspective that it really didn’t matter - a sad commentary thinking back. Of course, it really is all about the implementation.
 
-  This entry was posted on Monday, July 20th, 2009 at 8:01 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Monday, July 20th, 2009 at 8:01 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

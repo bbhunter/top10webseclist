@@ -75,7 +75,7 @@ But while messing around with WebDeveloper’s DOM “generated source” utilit
 
 Knowing what your target has installed is both a way to fingerprint the user as well as a way to bypass whatever security settings they may have (knowing what they have installed can help you figure out ways around it, or use it to your advantage as we saw with IEView). I’ve always thought the plugins would be Firefox’s major security flaw. Looks like we’re getting closer to proving that fact.
 
-  This entry was posted on Wednesday, August 23rd, 2006 at 9:15 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [Random Security](http://ha.ckers.org/blog/category/random-security/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20060823/detecting-firefox-extentions/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20060823/detecting-firefox-extentions/trackback/) from your own site.
+  This entry was posted on Wednesday, August 23rd, 2006 at 9:15 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [Random Security](http://ha.ckers.org/blog/category/random-security/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20060823/detecting-firefox-extentions/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20060823/detecting-firefox-extentions/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

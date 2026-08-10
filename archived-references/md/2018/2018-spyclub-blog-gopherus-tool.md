@@ -108,8 +108,8 @@ So for each of them, I made script separately and one script for dumping the con
 
  ![](https://spyclub.tech/images/photos/tool2.7.png)
 
-[❮]()
-[❯]()
+❮
+❯
 
 ### Redis
 
@@ -125,8 +125,8 @@ So tool will ask you the location of crontab(differs as OS changes) of the victi
 
  ![](https://spyclub.tech/images/photos/tool2.8.png)
 
-[❮]()
-[❯]()
+❮
+❯
 
 ### Zabbix
 

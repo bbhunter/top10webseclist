@@ -71,32 +71,32 @@ To formalize the term “*account takeover*”, we define that the attacker’s 
 
 ## Table of Contents
 
-- [Fundamentals]()
+- Fundamentals
 
-- [OAuth2/OIDC]()
+- OAuth2/OIDC
 
-- [Public vs. Confidential Client]()
-- [Protocol Flow(s)]()
+- Public vs. Confidential Client
+- Protocol Flow(s)
 
-- [SSO Gadgets]()
+- SSO Gadgets
 
-- [Client Configuration supports Implicit Flow]()
-- [Confidential Client, OAuth with Code Flow (no PKCE)]()
-- [SPA with Code Flow + PKCE]()
+- Client Configuration supports Implicit Flow
+- Confidential Client, OAuth with Code Flow (no PKCE)
+- SPA with Code Flow + PKCE
 
-- [Real World Examples]()
+- Real World Examples
 
-- [Self-XSS + Login CSRF + SSO Gadget = ATO]()
-- [Google SSO: Broadly Accessibly SSO Gadget]()
+- Self-XSS + Login CSRF + SSO Gadget = ATO
+- Google SSO: Broadly Accessibly SSO Gadget
 
-- [Mitigation]()
-- [Conclusion]()
+- Mitigation
+- Conclusion
 
 ---
 
 ## Fundamentals
 
-If you are familiar with [*OAuth2/OIDC*](), [*public/confidential clients*](), and the associated [*protocol flows*]() feel free to [skip]() this section.
+If you are familiar with *OAuth2/OIDC*, *public/confidential clients*, and the associated *protocol flows* feel free to skip this section.
 
 ### OAuth2/OIDC
 
@@ -107,13 +107,13 @@ In this section, I will outline some of the most important concepts of OAuth2/OI
 Formally, there is a clear distinction between **authorization** (*OAuth2*) and **authentication** (*OIDC*):
 
 - **Authorization**: The bearer `access_token` is used to authorize actions on behalf of the user. This is the main purpose of *OAuth2*.
-- **Authentication**: The “*identity layer on top of the OAuth 2.0*”[1]() introduced with *OIDC* allows the authentication of a user. Technically, *OIDC* mainly introduced a *JSON Web Token* (JWT)[2]() called `id_token` which contains the user’s identity information (e.g. name, email, etc.).
+- **Authentication**: The “*identity layer on top of the OAuth 2.0*”1 introduced with *OIDC* allows the authentication of a user. Technically, *OIDC* mainly introduced a *JSON Web Token* (JWT)2 called `id_token` which contains the user’s identity information (e.g. name, email, etc.).
 
 However, in practice, they are often used together, and to take over an account, it is sufficient to obtain the `access_token` of a victim user. In this post, I will use the term *OAuth2/OIDC* to refer to both protocols.
 
 #### Public vs. Confidential Client
 
-In terms of OAuth2/OIDC, a *Client* is an entity that is granted permission to access a user’s resources (*authorization*) or authenticates a user (*authentication*). In the context of SSO, a *Client* is usually a web application. In general, there are two types of clients[3]():
+In terms of OAuth2/OIDC, a *Client* is an entity that is granted permission to access a user’s resources (*authorization*) or authenticates a user (*authentication*). In the context of SSO, a *Client* is usually a web application. In general, there are two types of clients3:
 
 - **Public Clients**: This includes all clients which are not able to keep a secret, such as a web browser app or a mobile app.
 - **Confidential Clients**: This includes all clients which can keep a secret, such as a web server.
@@ -122,13 +122,13 @@ In terms of OAuth2/OIDC, a *Client* is an entity that is granted permission to a
 
 #### Protocol Flow(s)
 
-As of 2023, it is recommended to use the *authorization code flow* with *PKCE* for all OAuth flows[4]() to authorize entities or authenticate users.
+As of 2023, it is recommended to use the *authorization code flow* with *PKCE* for all OAuth flows4 to authorize entities or authenticate users.
 
 An exemplary flow for a *Confidential Client* could look like this:
 
 ![Authorization Code Flow](https://security.lauritz-holtmann.de/images/advisories/code_flow_pkce.svg)
 
-Besides this flow, there is also the less-secure *implicit flow*, which is deprecated and will be dropped in OAuth 2.1[5](). The flow is described in detail in the [OAuth2 specification](https://tools.ietf.org/html/rfc6749#section-4.2). The core difference to the previously described flow is that the `access_token` is returned directly to the client, instead of being exchanged for an `authorization_code` first. This means that the `access_token` is directly exposed to the user agent and can be obtained by an attacker.
+Besides this flow, there is also the less-secure *implicit flow*, which is deprecated and will be dropped in OAuth 2.15. The flow is described in detail in the [OAuth2 specification](https://tools.ietf.org/html/rfc6749#section-4.2). The core difference to the previously described flow is that the `access_token` is returned directly to the client, instead of being exchanged for an `authorization_code` first. This means that the `access_token` is directly exposed to the user agent and can be obtained by an attacker.
 
 ![Implicit Flow](https://security.lauritz-holtmann.de/images/advisories/implicit_flow.svg)
 
@@ -140,13 +140,13 @@ All *SSO Gadgets* covered in this post have the following:
 
 - The victim user has an active session at the IdP.
 - The victim user granted consent for the vulnerable application.
-- The IdP supports the `prompt=none` auth. request parameter[6]().
+- The IdP supports the `prompt=none` auth. request parameter6.
 
 ---
 
 ### Case 1: Client Configuration supports Implicit Flow (despite the Client using Code Flow with PKCE normally)
 
-In this scenario, we are dealing with a client which uses the *authorization code flow* with *PKCE* to authenticate the user. Even though the flow that is used by the application follows the current best practice, the client configuration also allows using the *implicit flow* (which is not recommended anymore and will be dropped in OAuth 2.1[5]()).
+In this scenario, we are dealing with a client which uses the *authorization code flow* with *PKCE* to authenticate the user. Even though the flow that is used by the application follows the current best practice, the client configuration also allows using the *implicit flow* (which is not recommended anymore and will be dropped in OAuth 2.15).
 
 **A malicious actor can then abuse the *implicit flow* to directly obtain an `access_token` for the victim user.**
 
@@ -169,7 +169,7 @@ setTimeout(function(){
 
 ```
 
-Please note that we assume that the application does not support the *implicit flow* and the login flow “breaks”. The victim user ends up on the `redirect_uri` of the application, which is not able to handle the `access_token` value. The attacker can then use the above snippet to obtain the `access_token` value from the window’s URL and perform an “*Access Token Injection*”[7]() attack.
+Please note that we assume that the application does not support the *implicit flow* and the login flow “breaks”. The victim user ends up on the `redirect_uri` of the application, which is not able to handle the `access_token` value. The attacker can then use the above snippet to obtain the `access_token` value from the window’s URL and perform an “*Access Token Injection*”7 attack.
 
 In detail, the above snippet performs the following steps:
 
@@ -218,7 +218,7 @@ tryToObtainToken();
 
 In this scenario, we are dealing with a *confidential client* which uses the *authorization code flow* **without PKCE** to authenticate the user. Further, the client configuration does not allow to use the *implicit flow*. Still, a malicious actor can use the *authorization code flow* to obtain an `access_token` for the victim user as follows:
 
-- The attacker injects a malicious JavaScript snippet into the vulnerable application, just like they did in the previous case. The key difference is, that the `code` must not be redeemed by the application before the attacker can send it to their server and then use it to obtain an `access_token` on their own. This can for instance be achieved by using an invalid `state` value or a `response_mode=fragment` parameter if supported by the IdP. [Frans Rosén](https://twitter.com/fransrosen) wrote a great blog post about this topic and introduced the term “Non-Happy” paths for this[8]().
+- The attacker injects a malicious JavaScript snippet into the vulnerable application, just like they did in the previous case. The key difference is, that the `code` must not be redeemed by the application before the attacker can send it to their server and then use it to obtain an `access_token` on their own. This can for instance be achieved by using an invalid `state` value or a `response_mode=fragment` parameter if supported by the IdP. [Frans Rosén](https://twitter.com/fransrosen) wrote a great blog post about this topic and introduced the term “Non-Happy” paths for this8.
 
 ```javascript
 // Perform code flow, consent, and active session required
@@ -242,11 +242,11 @@ setTimeout(function(){
 
 - The attacker is authenticated as the victim user.
 
-This attack is also referred to as the “*Authorization Code Injection*” attack[9](). If you want to learn more about this attack, please have a look at the [*OAuth 2.0 Security Best Current Practice*](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics).
+This attack is also referred to as the “*Authorization Code Injection*” attack9. If you want to learn more about this attack, please have a look at the [*OAuth 2.0 Security Best Current Practice*](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics).
 
 ### Case 3: SPA with Code Flow + PKCE
 
-In this scenario, we are dealing with a *public client* which uses the *authorization code flow* **with PKCE** to authenticate the user. Further, the client configuration does not allow to use of the *implicit flow*. It should be noted that XSS in the case of a SPA that serves as a *public client* is known to allow “*full compromise the application*”[10]().
+In this scenario, we are dealing with a *public client* which uses the *authorization code flow* **with PKCE** to authenticate the user. Further, the client configuration does not allow to use of the *implicit flow*. It should be noted that XSS in the case of a SPA that serves as a *public client* is known to allow “*full compromise the application*”10.
 
 A malicious actor can use the *authorization code flow* to obtain an `access_token` for the victim user as follows:
 
@@ -283,7 +283,7 @@ setTimeout(function(){
 
 ```
 
-In case the IdP does not return an optional long-living `refresh_token` value by default, a malicious actor can try to explicitly request a `refresh_token` value by adding the `offline_access` scope to the authorization request[11](). If the IdP responds with a `refresh_token`, this value can then be used to obtain a fresh `access_token` value at a later point in time.
+In case the IdP does not return an optional long-living `refresh_token` value by default, a malicious actor can try to explicitly request a `refresh_token` value by adding the `offline_access` scope to the authorization request11. If the IdP responds with a `refresh_token`, this value can then be used to obtain a fresh `access_token` value at a later point in time.
 
 *Please note: This gadget only works because we are dealing with a public client. If we were dealing with a confidential client, the attacker would not be able to directly issue the - otherwise required - `client_secret` to the token endpoint.*
 
@@ -304,7 +304,7 @@ The very first aspect of the exploit chain was a *Login CSRF* vulnerability whic
 There are multiple common patterns of *Login CSRF* vulnerabilities, for instance:
 
 - Login form without Anti-CSRF token.
-- Missing CSRF protection in *OAuth2/OIDC* flow: Weak or no `state` value, no PKCE[12]().
+- Missing CSRF protection in *OAuth2/OIDC* flow: Weak or no `state` value, no PKCE12.
 - Custom redirect to the main application including session information or token as GET parameter on login:
 
 ```http
@@ -336,7 +336,7 @@ The full attack chain could be executed as follows:
 
 ### Ex. 2: Google SSO: Broadly Accessibly SSO Gadget
 
-Google is a *very* common Login Provider. As of January 2023, it is not possible to disable the *implicit flow* [in Google’s OAuth 2.0 configuration](https://console.cloud.google.com/apis/credentials) for clients with the type “web-application”. This means that many web application which use Google as a Login Provider are vulnerable to the first SSO Gadget. In fact, that the *implicit flow* cannot be disabled, was already noted in StackOverflow questions years ago[13]().
+Google is a *very* common Login Provider. As of January 2023, it is not possible to disable the *implicit flow* [in Google’s OAuth 2.0 configuration](https://console.cloud.google.com/apis/credentials) for clients with the type “web-application”. This means that many web application which use Google as a Login Provider are vulnerable to the first SSO Gadget. In fact, that the *implicit flow* cannot be disabled, was already noted in StackOverflow questions years ago13.
 
 Furthermore, as Google supports the `prompt=none` parameter, it is directly possible to utilize the first SSO gadget introduced in this post against many web applications that support *Google Sign-In*.
 
@@ -370,7 +370,7 @@ setTimeout(function(){
 
 ![Google SSO Gadget](https://security.lauritz-holtmann.de/images/advisories/xss-sso-google-gadget.png)
 
-This issue was reported to Google in December 2022[14](). However, as of February 2023, the issue is still not fixed.
+This issue was reported to Google in December 202214. However, as of February 2023, the issue is still not fixed.
 
 ---
 
@@ -380,7 +380,7 @@ To define a thorough mitigation strategy, we need to understand the underlying m
 
 Consequently, the following mitigation strategies should be considered
 
-- Use the *code flow* with *PKCE* for all clients, as it is also recommended by the OAuth 2.0 Best Current Practice[4]() and the OAuth 2.1 specification draft[5]().
+- Use the *code flow* with *PKCE* for all clients, as it is also recommended by the OAuth 2.0 Best Current Practice4 and the OAuth 2.1 specification draft5.
 - Disable all unused protocol flows (e.g. `response_type=token` for the implicit flow).
 - Carefully evaluate the support of the `prompt=none` parameter. If feasible, disable it.
 - Follow the [OAuth 2.0 current practice for Browser-Based Apps](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps). Especially for Single Page Applications (SPAs), there are design patterns that can prevent direct access to the `access_token` from within the application’s origin (e.g. by using a [Token Mediating Backend](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps#section-6.3) or by [Acquiring tokens from a Service Worker](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps#name-acquiring-tokens-from-a-ser)).
@@ -405,59 +405,59 @@ You can directly tweet about this post using [this link](https://twitter.com/int
 
 -
 
-[OpenID Connect Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html)[↩︎]()
+[OpenID Connect Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html)↩︎
 
 -
 
-[RFC7519: JSON Web Token (JWT)](https://www.rfc-editor.org/rfc/rfc7519)[↩︎]()
+[RFC7519: JSON Web Token (JWT)](https://www.rfc-editor.org/rfc/rfc7519)↩︎
 
 -
 
-[RFC6749: The OAuth 2.0 Authorization Framework](https://www.rfc-editor.org/rfc/rfc6749)[↩︎]()
+[RFC6749: The OAuth 2.0 Authorization Framework](https://www.rfc-editor.org/rfc/rfc6749)↩︎
 
 -
 
-[OAuth 2.0 Security Best Current Practice](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics)[↩︎]()[↩︎]()
+[OAuth 2.0 Security Best Current Practice](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics)↩︎↩︎
 
 -
 
-[oauth.net: Summary of changes introduced with OAuth 2.1](https://oauth.net/2.1/)[↩︎]()[↩︎]()[↩︎]()
+[oauth.net: Summary of changes introduced with OAuth 2.1](https://oauth.net/2.1/)↩︎↩︎↩︎
 
 -
 
-[OpenID Connect Core 1.0: Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest)[↩︎]()
+[OpenID Connect Core 1.0: Authentication Request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest)↩︎
 
 -
 
-[OAuth 2.0 Security Best Current Practice: Access Token Injection](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics#name-access-token-injection)[↩︎]()
+[OAuth 2.0 Security Best Current Practice: Access Token Injection](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics#name-access-token-injection)↩︎
 
 -
 
-[Frans Rosén: Account hijacking using “dirty dancing” in sign-in OAuth-flows](https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/#non-happy-paths-in-the-oauth-dance)[↩︎]()
+[Frans Rosén: Account hijacking using “dirty dancing” in sign-in OAuth-flows](https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/#non-happy-paths-in-the-oauth-dance)↩︎
 
 -
 
-[OAuth 2.0 Security Best Current Practice: Authorization Code Injection](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics#name-authorization-code-injectio)[↩︎]()
+[OAuth 2.0 Security Best Current Practice: Authorization Code Injection](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics#name-authorization-code-injectio)↩︎
 
 -
 
-[OAuth 2.0 for Browser-Based Apps](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps)[↩︎]()
+[OAuth 2.0 for Browser-Based Apps](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps)↩︎
 
 -
 
-[OpenID Connect Core 1.0: Offline Access](https://openid.net/specs/openid-connect-core-1_0.html#OfflineAccess)[↩︎]()
+[OpenID Connect Core 1.0: Offline Access](https://openid.net/specs/openid-connect-core-1_0.html#OfflineAccess)↩︎
 
 -
 
-[OAuth 2.0 Security Best Current Practice: Protecting Redirect-Based Flows](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics#section-2.1)[↩︎]()
+[OAuth 2.0 Security Best Current Practice: Protecting Redirect-Based Flows](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics#section-2.1)↩︎
 
 -
 
-[StackOverflow: Disabling implicit flow for Google OAuth (Web Server applications)?](https://stackoverflow.com/questions/46402365/disabling-implicit-flow-for-google-oauth-web-server-applications)[↩︎]()
+[StackOverflow: Disabling implicit flow for Google OAuth (Web Server applications)?](https://stackoverflow.com/questions/46402365/disabling-implicit-flow-for-google-oauth-web-server-applications)↩︎
 
 -
 
-[Google SSO exposes Relying Parties to an ATO Gadget by do not allowing developers to disable the OAuth 2.0 Implicit Flow.](https://issuetracker.google.com/issues/261555427)[↩︎]()
+[Google SSO exposes Relying Parties to an ATO Gadget by do not allowing developers to disable the OAuth 2.0 Implicit Flow.](https://issuetracker.google.com/issues/261555427)↩︎
 
 - [Cross-Site Scripting](https://security.lauritz-holtmann.de/tags/cross-site-scripting)
 - [SSO](https://security.lauritz-holtmann.de/tags/sso)

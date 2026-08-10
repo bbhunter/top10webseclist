@@ -69,20 +69,20 @@ March 23, 2026
 
    Table of contents
 
--  [Introduction]()
--  [TL;DR]()
--  [About Looker]()
--  [Technical Details]()
+-  Introduction
+-  TL;DR
+-  About Looker
+-  Technical Details
 
--  [Git Integration in Looker]()
--  [Improper Validation in Directory Deletion]()
--  [Internals of FileUtils.rm_rf]()
--  [Controlling Deletion Order]()
--  [Remote Command Execution]()
--  [Privilege Escalation Against Other Looker Instances]()
+-  Git Integration in Looker
+-  Improper Validation in Directory Deletion
+-  Internals of FileUtils.rm_rf
+-  Controlling Deletion Order
+-  Remote Command Execution
+-  Privilege Escalation Against Other Looker Instances
 
--  [Conclusion]()
--  [Shameless Plug]()
+-  Conclusion
+-  Shameless Plug
 
 ## Introduction
 

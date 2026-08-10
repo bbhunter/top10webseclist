@@ -109,7 +109,21 @@ def sanitise_html(markup):
         pattern = re.compile(r"<%s\b.*?</%s\s*>" % (element, element), re.IGNORECASE | re.DOTALL)
         before = text
         text = pattern.sub(" ", text)
-        # A self-closing or unclosed one still has to go.
+        # AN UNCLOSED ONE TAKES THE REST OF THE DOCUMENT WITH IT, which is what a
+        # browser does too: after `<script>` with no `</script>`, everything to
+        # the end IS script. Removing only the tag and keeping the body is how
+        # 735,283 characters of JavaScript and stylesheet were published as one
+        # article's prose, after a 4.4 MB page was truncated mid-script.
+        #
+        # It cannot cost an article anything a browser would have shown: the
+        # text after an unclosed script is not rendered as prose by anything.
+        opener = re.compile(r"<%s\b[^>]*>" % element, re.IGNORECASE)
+        match = opener.search(text)
+        if match and not re.search(r"</%s\s*>" % element, text[match.end():],
+                                   re.IGNORECASE):
+            text = text[:match.start()] + " "
+            removed.append("unclosed-" + element)
+        # A self-closing one still has to go.
         text = re.sub(r"<%s\b[^>]*/?>" % element, " ", text, flags=re.IGNORECASE)
         if text != before:
             removed.append(element)

@@ -63,17 +63,17 @@ page going offline. To read the original, follow the link above.
 
 ---
 
-# Abstract [#]()
+# Abstract #
 
 Content-Security Policy (CSP) is one of the most important protection layers in client-side web security. A strict policy should not allow external communications to non-permitted hosts. This blog post demonstrates a bypass I found in Chrome and Firefox that permits backchannel communication leaks by requesting non-permitted domains.
 
-# Background [#]()
+# Background #
 
 I recently discussed how CSP can secure web applications against backchannel leaks. The concept sounded reasonable at first sight; CSP is designed to block unauthorized content from loading, which generically blocks XSS attacks and unsafe loading of remote JavaScript (and various resources and contents) from unauthorized origins.
 
 This discussion led me to research methods for issuing backchannel communications with non-permitted hosts.
 
-# Research [#]()
+# Research #
 
 The first step for the research is to set up the testing bed. I prepared an application with a strict Content-Security Policy. The policy is:
 
@@ -86,9 +86,9 @@ This should block all requests (outbound connections) from unauthorized origins 
 
 The tests were focused on the latest versions of Chrome and Firefox as of January 18th, 2019. Chrome: v72.0 Firefox: v64.0
 
-# Result [#]()
+# Result #
 
-### Chrome [#]()
+### Chrome #
 
 Chrome has an interesting bypass that does not follow the CSP policy by utilizing the “link prerendering”.
 
@@ -101,7 +101,7 @@ The following payload leaks an HTTP request from the client’s agent.
 
 This loads resources within a URL in the background. Chrome is not enforcing CSP on the link prerendering process.
 
-### Firefox [#]()
+### Firefox #
 
 Firefox is much better at protecting against backchannel communication leaks. However, after further testing, I have found that this payload bypasses this protection:
 
@@ -112,12 +112,12 @@ Firefox is much better at protecting against backchannel communication leaks. Ho
 
 Redirection using the Meta tag is possible on CSP and can not be blocked. Therefore, I can redirect users to other sites without using JavaScript and typical active content. It’s also working on Chrome. Once a client is redirected, we will receive a connection back to our server.
 
-### Update: Safari is vulnerable to the Meta refresh vector. [#]()
+### Update: Safari is vulnerable to the Meta refresh vector. #
 
-# Conclusion [#]()
+# Conclusion #
 
 While having CSP to protect against backchannel communication leaks sounds generally true, the CSP implementation on browsers does not provide this protection. The bypasses I stated in the post are currently working against the latest versions of modern browsers.
 
-# Final Thoughts [#]()
+# Final Thoughts #
 
 These payloads can be suitable for testing and exploiting vulnerabilities that rely on OOB (out-of-band) requests, such as blind XSS, in a scenario where the Content-Security Policy blocks outbound requests to untrusted hosts.

@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 IBM Application Security Insider: Flash Parameter Injection
 
- []()
+ 
 
 During the recent [OWASP NYC AppSec](http://www.owasp.org/index.php/OWASP_NYC_AppSec_2008_Conference) conference, Adi Sharabani & Ayal Yogev, both from the IBM Rational application security research group, gave a presentation on the subject of Flash security, and revealed the details of a new Flash related attack vector called Flash Parameter Injection (FPI).
 

@@ -79,7 +79,7 @@ So I ended up shortening the response splitting by instead of typing in Content-
 
 I can’t help but think there are nearly as many variants of response splitting as there are traditional [XSS](http://ha.ckers.org/xss.html) attacks. Just another reason not to have open redirection on your site.
 
-  This entry was posted on Sunday, August 27th, 2006 at 7:38 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Sunday, August 27th, 2006 at 7:38 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

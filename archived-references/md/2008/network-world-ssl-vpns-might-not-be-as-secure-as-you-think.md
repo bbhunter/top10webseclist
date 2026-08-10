@@ -65,7 +65,7 @@ page going offline. To read the original, follow the link above.
 
 SSL VPNs might not be as secure as you think
 
- []()
+ 
 
 LAS VEGAS -- SSL VPNs can be compromised in a way that enables them to take over remote users' machines and potentially cause mischief inside the networks they attach to, according to research presented at the [Black Hat conference](http://www.networkworld.com/news/2008/073108-black-hat.html).
 
@@ -97,7 +97,7 @@ While his exploit was not directly related to SSL VPNs, it demonstrated that SSL
 - [Supercomputer to connect to 400PB of storage via Ethernet](http://www.networkworld.com/news/2012/052412-supercomputer-to-connect-to-400pb-259585.html?t51hb)
 - [Tech's $20 million CEOs](http://www.networkworld.com/news/2012/051412-tech-ceo-compensation-259181.html?t51hb)
 
- [View more Most Read]()
+ View more Most Read
 
 [![rss](http://www.networkworld.com/includes/styles/r08/feed-icon-14x14.png)](http://link.brightcove.com/services/link/bcpid1343712625?action=rss)Rss Feed
 
@@ -107,7 +107,7 @@ While his exploit was not directly related to SSL VPNs, it demonstrated that SSL
 - [Take me out to the ballgame, with 4G](http://www.networkworld.com/news/2012/052512-sports-4g-259631.html)
 - [Most OpenOffice users run Windows](http://www.networkworld.com/news/2012/052512-openoffice-windows-259633.html)
 
- [View more Latest News]()
+ View more Latest News
 
 [![rss](http://www.networkworld.com/includes/styles/r08/feed-icon-14x14.png)](http://www.networkworld.com/netflash.rss)Rss Feed
 

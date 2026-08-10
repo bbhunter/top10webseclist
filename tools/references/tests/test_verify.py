@@ -146,6 +146,25 @@ class TestManifestAndStore(unittest.TestCase):
         findings = verify._check_store(self.manifest, self.store)
         self.assertTrue(any("does not match its hash" in item.what for item in findings))
 
+    def test_a_preserved_figure_or_paper_is_not_an_orphan(self):
+        """Both live one level down, in `images` and `paper`. Reading only the
+        entry's own `*_sha256` fields reported 2,712 preserved figures as
+        unreferenced - and that report is what a store cleanup would read."""
+        figure = self.store.put(b"a figure")
+        paper = self.store.put(b"%PDF- a paper")
+        entry = self.manifest.entry("https://example.org/a")
+        entry["paper"] = {"sha256": paper}
+        entry["images"] = {"https://example.org/1.png": {"sha256": figure}}
+        findings = verify._check_store(self.manifest, self.store)
+        self.assertEqual([item for item in findings if item.level == "fail"], [])
+        self.assertEqual(findings, [])
+
+    def test_a_figure_the_store_lost_is_reported(self):
+        entry = self.manifest.entry("https://example.org/a")
+        entry["images"] = {"https://example.org/1.png": {"sha256": "0" * 64}}
+        findings = verify._check_store(self.manifest, self.store)
+        self.assertTrue(any("missing store object" in item.what for item in findings))
+
     def test_an_orphan_object_is_a_warning_and_survives(self):
         orphan = self.store.put(b"orphan")
         findings = verify._check_store(self.manifest, self.store)
@@ -173,6 +192,84 @@ class TestManifestAndStore(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestPdfsOlderThanTheirInputs(unittest.TestCase):
+    """`papers` and `images` change what a PDF should contain without touching
+    the file. Nothing else notices, and the site then serves a document that no
+    longer matches its own archive."""
+
+    def manifest_with(self, entry):
+        # A reference `pdf` would actually select: it has a document, and it is
+        # not a talk. The gate applies the command's own exclusions.
+        entry.setdefault("grade", "research")
+        entry.setdefault("content_sha256", "text1")
+        entry.setdefault("kind", "article")
+        return manifest_module.Manifest(Path("unused.json"),
+                                        data={"urls": {"https://x.test/a": entry}})
+
+    def test_a_talk_the_command_never_prints_is_not_reported(self):
+        """`pdf` skips a video, so asking for its reprint is work nobody can do."""
+        findings = verify._check_pdfs_are_current(self.manifest_with({
+            "slug": "talk", "kind": "video",
+            "steps": {"pdf": {"result": "rendered", "source": "markdown",
+                              "utc": "2026-08-01T00:00:00+00:00"}}}))
+        self.assertEqual(findings, [])
+
+    def test_a_record_with_no_document_is_not_reported(self):
+        findings = verify._check_pdfs_are_current(manifest_module.Manifest(
+            Path("unused.json"), data={"urls": {"https://x.test/a": {
+                "slug": "row", "kind": "article",
+                "steps": {"pdf": {"result": "rendered", "source": "markdown",
+                                  "utc": "2026-08-01T00:00:00+00:00"}}}}}))
+        self.assertEqual(findings, [])
+
+    def test_a_pdf_printed_before_its_figures_were_preserved_is_reported(self):
+        findings = verify._check_pdfs_are_current(self.manifest_with({
+            "slug": "post",
+            "steps": {"pdf": {"result": "rendered", "source": "markdown",
+                              "utc": "2026-08-01T00:00:00+00:00"},
+                      "images": {"result": "stored",
+                                 "utc": "2026-08-10T00:00:00+00:00"}}}))
+        self.assertTrue(any("older than their inputs" in item.what for item in findings))
+
+    def test_a_pdf_printed_after_them_is_not(self):
+        from refslib import makepdf
+        findings = verify._check_pdfs_are_current(self.manifest_with({
+            "slug": "post",
+            "steps": {"pdf": {"result": "rendered", "source": "markdown",
+                              "renderer": makepdf.RENDERER,
+                              "utc": "2026-08-10T12:00:00+00:00"},
+                      "images": {"result": "stored",
+                                 "utc": "2026-08-10T00:00:00+00:00"}}}))
+        self.assertEqual(findings, [])
+
+    def test_a_pdf_from_an_older_converter_is_reported(self):
+        """A converter fix changes the output without touching the Markdown, so
+        no timestamp can see it. 12% of this archive's link annotations pointed
+        at a double-escaped URL until one such fix landed."""
+        findings = verify._check_pdfs_are_current(self.manifest_with({
+            "slug": "post",
+            "steps": {"pdf": {"result": "rendered", "source": "markdown",
+                              "utc": "2026-08-10T12:00:00+00:00"}}}))
+        self.assertTrue(any("older than their inputs" in item.what for item in findings))
+
+    def test_a_text_render_standing_in_for_a_held_paper_is_reported(self):
+        findings = verify._check_pdfs_are_current(self.manifest_with({
+            "slug": "post",
+            "paper": {"sha256": "paper1"},
+            "steps": {"pdf": {"result": "rendered", "source": "markdown",
+                              "utc": "2026-08-10T00:00:00+00:00"}}}))
+        self.assertTrue(any("older than their inputs" in item.what for item in findings))
+
+    def test_a_source_that_is_itself_a_pdf_is_never_stale(self):
+        findings = verify._check_pdfs_are_current(self.manifest_with({
+            "slug": "paper",
+            "steps": {"pdf": {"result": "copied", "source": "original-pdf",
+                              "utc": "2026-08-01T00:00:00+00:00"},
+                      "images": {"result": "stored",
+                                 "utc": "2026-08-10T00:00:00+00:00"}}}))
+        self.assertEqual(findings, [])
 
 
 class TestUntranslatedDocumentsAreReported(unittest.TestCase):
@@ -222,6 +319,15 @@ class TestUntranslatedDocumentsAreReported(unittest.TestCase):
                   language="en")
         findings = verify._check_translations(self.manifest, self.store)
         self.assertTrue(any("untranslated" in item.what for item in findings))
+
+    def test_an_english_document_quoting_another_script_is_not_work(self):
+        """The gate must ask the same question `translate` answers. Asking the
+        looser one demanded a translation for every English write-up that quotes
+        a Chinese error message - work the pipeline correctly refuses to do, so
+        the warning could never be cleared."""
+        article = "\n\n".join([self.ENGLISH] * 10) + "\n\n错误信息如下\n"
+        self._add("https://example.org/b", article, slug="en-post-with-a-quote")
+        self.assertEqual(verify._check_translations(self.manifest, self.store), [])
 
 
 class TestOrphansFollowTheLastAcquire(unittest.TestCase):

@@ -78,10 +78,6 @@ In the previous post, a new cross-domain extraction method - affecting the lates
 
 ###  Smashing PayPal for Fun but.. NO Profit
 
-###
-
-###
-
  During my security research on UI Redressing attacks I found multiple PayPal subdomains (e.g. **https://b.stats.paypal.com**) affected by the Apache disclosure bug as detailed in Figure 1 and Figure 2.
 
 | [![](http://4.bp.blogspot.com/-UX7AXFvyOAw/UM0VW0KNetI/AAAAAAAAAFA/F6G9tYYpnHs/s640/resp.png)](http://4.bp.blogspot.com/-UX7AXFvyOAw/UM0VW0KNetI/AAAAAAAAAFA/F6G9tYYpnHs/s1600/resp.png) |  |
@@ -112,15 +108,10 @@ In the previous post, a new cross-domain extraction method - affecting the lates
 
 ###  7350PayPwn
 
-###
-
-###
-
  The exploitation is now trivial. The following are the logical steps implemented by the Proof of Concept exploit:
 
 - The exploit triggers the victim to open an *under pop* (Figure 7) web page that generates the monster cookie - with **domain=.paypal.com** - involving the **history.paypal.com** application;
 - The **https://b.stats.paypal.com** is then framed thus inducing the forward of a malformed HTTP request that triggers the disclosure of the Cookie header, containing the PayPal account's session cookies;**
-**
 - The malicious page allows the victim to play the d&d game with the extraction of the secret session cookies.
 
 |

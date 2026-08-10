@@ -70,19 +70,19 @@ js
 
 -
 
-[identities.js]()
+identities.js
 
 -
 
-[manifest.json]()
+manifest.json
 
 -
 
-[package.json]()
+package.json
 
 -
 
-[yarn.lock]()
+yarn.lock
 
 | Original file line number | Diff line number | Diff line change |  |
 |

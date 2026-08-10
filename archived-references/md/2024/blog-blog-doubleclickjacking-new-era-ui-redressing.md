@@ -111,13 +111,7 @@ Replace the values for url, top, left, width, and height with the specific butto
 
 **Example: Salesforce Account Takeover**
 
-**
 Example: Slack Account Takeover
-
- **
-
-**
-**
 
 **Why It’s Dangerous**
 
@@ -167,7 +161,6 @@ The following JavaScript based approach can eliminate the risk of DoubleClickjac
 
 Using it is super simple. just <script src=doubleclickjackingprotection.js></script> on your sensitive pages and you are done.
 
-**
 How it works**
 
 - ****All submit/buttons on a page are initially disabled.

@@ -11,12 +11,27 @@ The Markdown these files use is small and regular - it is what `render.py` emits
 and what the extractors produce - so this is a compact block converter rather
 than a full CommonMark implementation. Anything it does not recognise degrades
 to a paragraph of escaped text, which is safe: the worst case is plain text, not
-broken markup, and never a network fetch. Images are rendered as a labelled link
-rather than an `<img>`, precisely so printing cannot pull a remote asset.
+broken markup, and never a network fetch. An image is printed only from a copy
+the archive re-encoded and stored (`images.py`), embedded as a `data:` URI;
+without one it degrades to a labelled link. Either way printing cannot pull a
+remote asset.
 """
 
 import html as html_module
 import re
+
+# THE CONVERTER'S OWN VERSION, recorded on every PDF it prints. A fix in here
+# changes what the document SHOULD look like without touching the Markdown it
+# came from, so nothing downstream can tell that the published file is out of
+# date - and 12% of the link annotations in this archive pointed at a
+# double-escaped URL for exactly that long. Raise it whenever a change alters
+# the output, and `pdf --stale` reprints what it affects.
+#
+# 1: the original converter.
+# 2: link targets escaped once instead of twice; `javascript:` and `data:`
+#    targets printed as text; preserved figures embedded; figures kept whole
+#    across page breaks.
+RENDERER = 2
 
 # A print stylesheet, inlined so the document owes nothing to the network. A4
 # with comfortable margins; the browser's `preferCSSPageSize` honours the @page.
@@ -53,7 +68,10 @@ table { border-collapse: collapse; margin: .7em 0; width: 100%; font-size: 10pt;
 th, td { border: 1px solid #ccc; padding: .35em .55em; text-align: left; vertical-align: top; }
 th { background: #f2f2f2; }
 hr { border: none; border-top: 1px solid #ddd; margin: 1.2em 0; }
-img { max-width: 100%; }
+/* A figure that straddles a page break is drawn twice, once clipped on each
+   page: 26 preserved images came out as 50 draws. Keeping each one whole reads
+   better and prints smaller. */
+img { display: block; max-width: 100%; margin: .8em auto; page-break-inside: avoid; }
 .src-note { color: #666; font-size: 9pt; margin-top: 2em; border-top: 1px solid #eee; padding-top: .6em; }
 """
 
@@ -73,6 +91,49 @@ _LINK = re.compile(r"\[([^\]]+)\]\(\s*([^)\s]+)[^)]*\)")
 _BOLD = re.compile(r"(\*\*|__)(?=\S)(.+?)(?<=\S)\1")
 _ITALIC = re.compile(r"(?<![\*_\w])([*_])(?=\S)(.+?)(?<=\S)\1(?![\*_\w])")
 
+# WHERE A PRINTED LINK IS ALLOWED TO POINT. The corpus is XSS research, so a
+# `javascript:` or `data:` URL in a document is ordinary content here - and a
+# converter that copies one into an `<a href>` turns the payload into something
+# a reader can activate from the archive's own file. Extraction already empties
+# those targets upstream; this is the sink, and the sink checks for itself.
+# Everything else keeps its text and loses only the ability to be clicked.
+_SAFE_TARGET = re.compile(r"^(?:https?:|mailto:)", re.IGNORECASE)
+
+
+def _link_html(label, target):
+    """A printed link, or plain text when the target is not one we will follow.
+
+    ESCAPED ONCE, FROM THE RAW URL. `_inline` hands this text that has already
+    been through `html.escape`, so escaping the target again turned every `&` in
+    a query string into `&amp;amp;` - and a reader following that link asked for
+    `?a=1&amp;b=2`. Unescape first, check the scheme on what the URL actually
+    says, and escape that once for the attribute.
+    """
+    url = html_module.unescape(target or "").strip()
+    if not _SAFE_TARGET.match(url):
+        return label
+    return '<a href="%s">%s</a>' % (html_module.escape(url, quote=True), label)
+
+
+def _image_html(alt, target, image_source):
+    """The picture itself when the archive holds a preserved copy of it.
+
+    NEVER THE REMOTE URL. `image_source` returns a `data:` URI built from bytes
+    the archive re-encoded and stored, so printing stays offline: a renderer that
+    fetched the publisher's copy would put the archive's own PDFs at the mercy of
+    a host that may be gone, and would leak a request per figure.
+
+    Without a preserved copy this degrades to what it always was - a labelled
+    link - so a document whose pictures could not be kept still says where each
+    one belonged.
+    """
+    url = html_module.unescape(target or "").strip()
+    embedded = image_source(url) if image_source else ""
+    if embedded:
+        return '<img src="%s" alt="%s">' % (html_module.escape(embedded, quote=True),
+                                            alt or "")
+    return _link_html("[image: %s]" % (alt or "image"), target)
+
 
 def strip_frontmatter(text):
     """Drop a leading YAML frontmatter block; the PDF shows the body only."""
@@ -84,7 +145,7 @@ def strip_frontmatter(text):
     return text
 
 
-def _inline(text):
+def _inline(text, image_source=None):
     """Escape a run of prose and apply inline Markdown to it."""
     spans = []
 
@@ -94,24 +155,20 @@ def _inline(text):
 
     masked = _CODE_SPAN.sub(stash, text)
     masked = html_module.escape(masked)
-    # Images first (a subset of link syntax): render as a labelled link so no
-    # remote asset is ever loaded while printing.
-    masked = _IMAGE.sub(
-        lambda m: '<a href="%s">[image: %s]</a>'
-        % (html_module.escape(m.group(2), quote=True), m.group(1) or "image"), masked)
-    masked = _LINK.sub(
-        lambda m: '<a href="%s">%s</a>'
-        % (html_module.escape(m.group(2), quote=True), m.group(1)), masked)
+    # Images first, because the syntax is a superset of a link's.
+    masked = _IMAGE.sub(lambda m: _image_html(m.group(1), m.group(2), image_source),
+                        masked)
+    masked = _LINK.sub(lambda m: _link_html(m.group(1), m.group(2)), masked)
     masked = _BOLD.sub(lambda m: "<strong>%s</strong>" % m.group(2), masked)
     masked = _ITALIC.sub(lambda m: "<em>%s</em>" % m.group(2), masked)
     return re.sub(r"\x00(\d+)\x00", lambda m: spans[int(m.group(1))], masked)
 
 
-def _list_item_html(items):
-    return "".join("<li>%s</li>" % _inline(item) for item in items)
+def _list_item_html(items, image_source=None):
+    return "".join("<li>%s</li>" % _inline(item, image_source) for item in items)
 
 
-def markdown_to_html_body(md_text):
+def markdown_to_html_body(md_text, image_source=None):
     """The Markdown body converted to an HTML fragment."""
     lines = strip_frontmatter(md_text).replace("\r\n", "\n").split("\n")
     out = []
@@ -140,7 +197,7 @@ def markdown_to_html_body(md_text):
         heading = _ATX.match(line)
         if heading:
             level = len(heading.group(1))
-            out.append("<h%d>%s</h%d>" % (level, _inline(heading.group(2)), level))
+            out.append("<h%d>%s</h%d>" % (level, _inline(heading.group(2), image_source), level))
             index += 1
             continue
 
@@ -157,7 +214,7 @@ def markdown_to_html_body(md_text):
             while index < total and "|" in lines[index] and lines[index].strip():
                 rows.append(_split_row(lines[index]))
                 index += 1
-            out.append(_table_html(header, rows))
+            out.append(_table_html(header, rows, image_source))
             continue
 
         # Blockquote: consecutive `>` lines.
@@ -168,13 +225,13 @@ def markdown_to_html_body(md_text):
                 index += 1
             out.append("<blockquote>%s</blockquote>"
                        % _inline(" ".join(part for part in quote if part).strip()
-                                 or " "))
+                                 or " ", image_source))
             continue
 
         # Lists: consecutive bullet or numbered lines. Nesting by indent, in
         # steps of two spaces, one level deep - enough for these documents.
         if _UL.match(line) or _OL.match(line):
-            index, block = _consume_list(lines, index, total)
+            index, block = _consume_list(lines, index, total, image_source)
             out.append(block)
             continue
 
@@ -183,7 +240,7 @@ def markdown_to_html_body(md_text):
         while index < total and lines[index].strip() and not _is_block_start(lines, index):
             para.append(lines[index].strip())
             index += 1
-        out.append("<p>%s</p>" % _inline(" ".join(para)))
+        out.append("<p>%s</p>" % _inline(" ".join(para), image_source))
     return "\n".join(out)
 
 
@@ -195,7 +252,7 @@ def _is_block_start(lines, index):
     return "|" in line and index + 1 < len(lines) and _TABLE_SEP.match(lines[index + 1])
 
 
-def _consume_list(lines, index, total):
+def _consume_list(lines, index, total, image_source=None):
     """One list block, supporting a single level of indented nesting."""
     def indent_of(match):
         return len(match.group(1).replace("\t", "  "))
@@ -212,14 +269,14 @@ def _consume_list(lines, index, total):
             break
         if indent_of(match) > base_indent:
             # Nested list under the previous item.
-            index, nested = _consume_list(lines, index, total)
+            index, nested = _consume_list(lines, index, total, image_source)
             if items:
                 items[-1] = (items[-1][0], items[-1][1] + nested)
             continue
         items.append((match.group(2), ""))
         index += 1
     tag = "ol" if ordered else "ul"
-    body = "".join("<li>%s%s</li>" % (_inline(text), nested)
+    body = "".join("<li>%s%s</li>" % (_inline(text, image_source), nested)
                    for text, nested in items)
     return index, "<%s>%s</%s>" % (tag, body, tag)
 
@@ -229,21 +286,21 @@ def _split_row(line):
     return [cell.strip() for cell in cells]
 
 
-def _table_html(header, rows):
-    head = "".join("<th>%s</th>" % _inline(cell) for cell in header)
+def _table_html(header, rows, image_source=None):
+    head = "".join("<th>%s</th>" % _inline(cell, image_source) for cell in header)
     body = []
     for row in rows:
         # Pad or trim to the header width so a ragged row still renders.
         cells = (row + [""] * len(header))[:len(header)]
         body.append("<tr>%s</tr>"
-                    % "".join("<td>%s</td>" % _inline(cell) for cell in cells))
+                    % "".join("<td>%s</td>" % _inline(cell, image_source) for cell in cells))
     return "<table><thead><tr>%s</tr></thead><tbody>%s</tbody></table>" \
         % (head, "".join(body))
 
 
-def markdown_to_html(md_text, title="", source_url=""):
+def markdown_to_html(md_text, title="", source_url="", image_source=None):
     """A complete, self-contained HTML document for one archived Markdown file."""
-    body = markdown_to_html_body(md_text)
+    body = markdown_to_html_body(md_text, image_source)
     note = ""
     if source_url:
         note = ('<p class="src-note">Archived from '

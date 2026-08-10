@@ -424,6 +424,6 @@ the SQL query will look something like this:
 
 The first part of the payload `/*` is treated as a string, followed by the OR condition, and the remainder `*/` is commented out by `--`, allowing the `SLEEP` function to execute, Which will result in the database sleeping for 5 seconds confirming the presence of an SQLI.
 
-It can also be used for XSS: `//akamai.com/?x=/*<input/autofocus/onfocus=a=self;a['ale'%2b'rt']()>*%2f`.
+It can also be used for XSS: `//akamai.com/?x=/*<input/autofocus/onfocus=a=self;a'ale'%2b'rt'>*%2f`.
 
 Thank you for reading & Many thanks to [@garethheyes ](https://x.com/garethheyes), [@terjanq ](https://x.com/terjanq) & [@0xEdra ](https://x.com/0xEdra)

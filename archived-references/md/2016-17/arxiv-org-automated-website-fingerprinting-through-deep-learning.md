@@ -93,7 +93,7 @@ Authors:[Vera Rimmer](https://arxiv.org/search/cs?searchtype=author&query=Rimmer
  **[[v1]](https://arxiv.org/abs/1708.06376v1)** Mon, 21 Aug 2017 18:32:08 UTC (461 KB)
  **[v2]** Tue, 5 Dec 2017 17:35:56 UTC (535 KB)
 
- []() Full-text links:
+  Full-text links:
 
 ## Access Paper:
 
@@ -225,4 +225,4 @@ Both individuals and organizations that work with arXivLabs have embraced and ac
 
 Have an idea for a project that will add value for arXiv's community? [**Learn more about arXivLabs**](https://info.arxiv.org/labs/index.html).
 
- [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1708.06376) | [Disable MathJax]() ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))
+ [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1708.06376) | Disable MathJax ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))

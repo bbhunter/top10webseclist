@@ -67,16 +67,16 @@ April 29, 2025 | by siunam
 
   **Table of Contents**
 
-- [Overview]()
-- [Previous Research on Python Dirty AFW]()
-- [Overwriting Bytecode Files]()
+- Overview
+- Previous Research on Python Dirty AFW
+- Overwriting Bytecode Files
 
-- [Limitations]()
-- [Without Arbitrary File Read?? Black-box Scenario??]()
+- Limitations
+- Without Arbitrary File Read?? Black-box Scenario??
 
-- [Just Upload a Shared Object File (The Most Powerful)]()
-- [Not Importing Modules Dynamically??]()
-- [Conclusion]()
+- Just Upload a Shared Object File (The Most Powerful)
+- Not Importing Modules Dynamically??
+- Conclusion
 
 ![](https://raw.githubusercontent.com/siunam321/CTF-Writeups/main/Research/python-dirty-arbitrary-file-write-to-rce-via-writing-shared-object-files-or-overwriting-bytecode-files/images/ogimage.png)
 
@@ -410,7 +410,7 @@ uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10
 
 One thing that sticks out in the above approach is that it requires reading the bytecode file in order to **get the correct magic number and modification date timestamp**. Also, we'll need a certain level of source code access in order to get the **dynamically imported module's name**.
 
-In section [Limitations](), I mentioned that we can have a "workaround" for this situation by leveraging an arbitrary file read vulnerability in the application. But what if we don't have it?
+In section Limitations, I mentioned that we can have a "workaround" for this situation by leveraging an arbitrary file read vulnerability in the application. But what if we don't have it?
 
 Let's start with getting the correct magic tag and magic number. If you are in a black-box scenario, you may or may not be able to get the server's Python version via the `Server` response header. In the above demonstration, by default, Flask will reflect the Python version in the `Server` response header:
 
@@ -644,7 +644,7 @@ In this case, you'll need to find another way to do the second import in a diffe
 
 - Gunicorn
 
-In section "[Previous Research on Python Dirty AFW]()", I've mentioned [the writeup for a web challenge in AIS3 EOF CTF 2019 Finals](https://github.com/BookGin/my-ctf-challenges/tree/master/ais3-eof-ctf-2019-finals/imagination#writeup), in that writeup, we can force Gunicorn to restart the worker via DoS attack, which ultimately will import the module again in a different process.
+In section "Previous Research on Python Dirty AFW", I've mentioned [the writeup for a web challenge in AIS3 EOF CTF 2019 Finals](https://github.com/BookGin/my-ctf-challenges/tree/master/ais3-eof-ctf-2019-finals/imagination#writeup), in that writeup, we can force Gunicorn to restart the worker via DoS attack, which ultimately will import the module again in a different process.
 
 - Flask with debug mode on or any frameworks that are using [Werkzeug's Reloader](https://werkzeug.palletsprojects.com/en/stable/serving/#reloader)
 

@@ -81,7 +81,7 @@ http://example.com/?search=<script>eval(location.hash.slice(1))</script>#a=docum
 
 So you have a reflected XSS on example.com that instantiates a DOM based XSS which instantiates a clickjacking attack against victim.com. Obviously you’d need to modify this to actually fit the right coordinates and work in other browsers, but this could easily be used to leverage the attack in situations where an attacker might not be able to otherwise. For instance, if the clickjacking defenses only care about the referrer and the referrer is on the correct domain just a different sub-domain, that could be used to bypass it - and so on. Anyway, I thought some people might think this is interesting. Happy penetration testing!
 
-  This entry was posted on Monday, June 14th, 2010 at 11:27 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Monday, June 14th, 2010 at 11:27 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

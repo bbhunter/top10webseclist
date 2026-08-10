@@ -71,7 +71,7 @@ This write-up will prove that the current implementation of same origin policy o
 
 We would like to credit Rob Carter for his great work in [describing](https://r00tin.blogspot.com/2008/03/local-web-servers-are-dangerous.html) the problematic nature of exploiting XSS vulnerabilities in local web servers by taking advantage of the promiscuous security behavior of Internet Explorer 6.
 
- []()
+ 
 
 **Current Browser Restrictions**
 

@@ -77,7 +77,7 @@ page going offline. To read the original, follow the link above.
 
 # What is HTML Over the Wire? A brief history of web app tech.
 
-***TL;DR: Early web applications made you wait after every click until it could render an HTML response on the server and send it back. SPAs made the web more responsive by handling interactions in the background and updating the UI by sending XHR requests to JSON/XML apis. A new pattern has recently emerged that attempts to combine these two approaches, but brings with it some interesting and dangerous new functionality.*** [Skip Ahead]()
+***TL;DR: Early web applications made you wait after every click until it could render an HTML response on the server and send it back. SPAs made the web more responsive by handling interactions in the background and updating the UI by sending XHR requests to JSON/XML apis. A new pattern has recently emerged that attempts to combine these two approaches, but brings with it some interesting and dangerous new functionality.*** Skip Ahead
 
 I’m old enough to remember a time before reactive, responsive single-page web applications (SPA) were the norm. Heck I’m old enough to remember a time before the vast majority of the web was dynamic at all, but I want to talk about a time somewhere between ancient history and the modern web.
 
@@ -91,7 +91,7 @@ HTML Over the Wire, sometimes called “FROW” or “fragments over the wire”
 
 ---
 
-[]() Some of the libraries and framework extensions that attempt to enable HTML Over the Wire include
+ Some of the libraries and framework extensions that attempt to enable HTML Over the Wire include
 
 - Hotwire Turbo - default frontend framework that ships with Rails 7
 - Unpoly - framework agnostic javascript library

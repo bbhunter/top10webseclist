@@ -63,14 +63,14 @@ page going offline. To read the original, follow the link above.
 
 [![sonar logo](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/8e59bcad-6e39-41dc-abd9-a0e251e8d63f/Sonar%20%282%29.svg?w=128&h=32&fit=clip&q=80)](https://www.sonarsource.com/)
 
-## TL;DR overview[]()
+## TL;DR overview
 
 - Critical security vulnerabilities in Jenkins plugins allow attackers to perform arbitrary file reads and server-side request forgery (SSRF), potentially exposing credentials and internal infrastructure.
 - The flaws stem from excessive expansion of user-controlled input in Jenkins expression evaluation, where crafted expressions reach sensitive file system or network operations.
 - Because Jenkins typically runs with broad system permissions and network access in CI/CD environments, these vulnerabilities can be a gateway to compromising the entire build infrastructure.
 - Organizations using Jenkins should keep plugins updated, apply the principle of least privilege for Jenkins service accounts, and audit pipeline configurations for untrusted input handling.
 
-## Key Information[]()
+## Key Information
 
 - Sonar’s Vulnerability Research Team has discovered security vulnerabilities in Jenkins, the leading open-source Continuous Integration and Continuous Deployment (CI/CD) software.
 - The discovered Critical vulnerability tracked as CVE-2024-23897 allows unauthenticated attackers to read a limited amount of arbitrary files’ data, and "read-only" authorized attackers to an entire arbitrary file from Jenkins’ server.
@@ -80,7 +80,7 @@ page going offline. To read the original, follow the link above.
 
 Jenkins is the leading open-source automation server widely used for building, deploying, and automating software projects. Originally developed as Hudson, Jenkins has evolved into a powerful tool for continuous integration and continuous delivery (CI/CD). It enables developers to automate various aspects of the software development lifecycle, including building, testing, and deploying applications. With a market share of approximately [44% in 2023](https://cd.foundation/announcement/2023/08/29/jenkins-project-growth/), the popularity of Jenkins is evident. This means the potential impact of security vulnerabilities in Jenkins is large.
 
-## Vulnerabilities Impact[]()
+## Vulnerabilities Impact
 
 Unauthenticated attackers can read the first few lines of arbitrary files from the server, while read-only authorized attackers can read the entire file. This could ultimately lead to the execution of arbitrary code in some cases (CVE-2024-23897). If one of the following conditions is met, even unauthenticated users have at least read permission:
 
@@ -90,11 +90,11 @@ Unauthenticated attackers can read the first few lines of arbitrary files from t
 
 The second vulnerability (CVE-2024-23898) resides within the WebSocket CLI feature, which lacks an origin check, allowing Cross-Site WebSocket Hijacking (CSWSH). This vulnerability might be exploited by sending a malicious link to a victim. Certain modern web browsers implement a “[lax by default](https://caniuse.com/mdn-http_headers_set-cookie_samesite_lax_default)” policy, which serves as a potential safeguard against this vulnerability. Nonetheless, given that some widely used browsers like Safari and Firefox do not strictly enforce this policy, and considering the associated risks of potential [bypass](https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions#bypassing-samesite-lax-restrictions-with-newly-issued-cookies) techniques or users using outdated browsers, the severity classification for this vulnerability is High.
 
-## Technical Details[]()
+## Technical Details
 
 In this section of the blog, we will explore our findings taking a deeper dive into the code, to understand the vulnerabilities and how an attacker could exploit them. During the Jenkins security team’s triaging of our report, they found further ways to exploit the first vulnerability (CVE-2024-23897) using an unauthenticated user. The following "Technical Details" covers the attack scenario of a read-only capable attacker.
 
-### Background[]()
+### Background
 
 Jenkins provides multiple ways of authorization, the unsafe *“anyone can do anything”*, the “*legacy”* permissions, and “*logged-in users can do anything”*. The latter authorization method allows the option for anonymous read access and gives read permission to anyone, which is also the case in the *legacy* mode.
 
@@ -110,7 +110,7 @@ According to the [official documentation](https://www.jenkins.io/doc/book/securi
 
 On the other hand, [administrators](https://www.jenkins.io/doc/book/security/access-control/permissions/#administer) can pretty much do everything on a Jenkins instance. From an attacker's point of view, admins can run arbitrary code on a Jenkins server.
 
-### Jenkins-CLI Feature Background[]()
+### Jenkins-CLI Feature Background
 
 [Jenkins-CLI](https://www.jenkins.io/doc/book/managing/cli/) provides users with a built-in command line interface to execute custom commands that are implemented in the [hudson/cli](https://github.com/jenkinsci/jenkins/tree/jenkins-2.441/core/src/main/java/hudson/cli) directory of the Jenkins Git repository.
 
@@ -146,7 +146,7 @@ public void generateResponse(StaplerRequest req, StaplerResponse rsp, Object nod
 
 This function requires a downloader and uploader. The downloader returns the command’s response, and the uploader invokes a specified command from the body of the request. Jenkins connects them (downloader and uploader) using the UUID from the `Session` header.
 
-### Data Leak Vulnerability (CVE-2024-23897)[]()
+### Data Leak Vulnerability (CVE-2024-23897)
 
 When invoking a CLI command with arguments, we have noticed that Jenkins uses [args4j’s](https://github.com/kohsuke/args4j) [parseArgument](https://github.com/jenkinsci/jenkins/blob/3b0de10df3bedba515e13032104d4d84f83045be/core/src/main/java/hudson/cli/CLICommand.java#L248), which [calls](https://github.com/kohsuke/args4j/blob/fc458a24d6bd08b58fdd0bd7e37acb08200eac59/args4j/src/org/kohsuke/args4j/CmdLineParser.java#L479) [expandAtFiles](https://github.com/kohsuke/args4j/blob/fc458a24d6bd08b58fdd0bd7e37acb08200eac59/args4j/src/org/kohsuke/args4j/CmdLineParser.java#L548):
 
@@ -221,12 +221,12 @@ Achieving code execution from arbitrary file read is dependent on the context. S
 - Source code, build artifacts
 - and more…
 
-#### Binary Files Reading Limitations []()
+#### Binary Files Reading Limitations 
 
 When a file is read, the process's default character encoding is used, which is UTF-8 for most deployments. Because of this, any invalid UTF-8 sequence (statistically almost 50% of all bytes, assuming an equal distribution) would be replaced by the sequence `0xef 0xbf 0xbd` and cause data loss.
 Some other encodings (such as Windows-1252, commonly used by instances running on Windows) would make it more feasible to exfiltrate binary data.
 
-### CSWSH Vulnerability (CVE-2024-23898)[]()
+### CSWSH Vulnerability (CVE-2024-23898)
 
 As mentioned earlier, one of the ways to invoke the [Jenkins-CLI](https://www.jenkins.io/doc/book/managing/cli/) commands is by web sockets (which is the implementation of `jenkins-cli.jar`).
 
@@ -234,7 +234,7 @@ It is known that browsers don’t enforce SOP and CORS policies on WebSockets: �
 
 Since there is no Jenkins-crumb (CSRF token) nor Origin header check in the web sockets requests, any website can use [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) to invoke Jenkins-CLI commands with the victim's identity, in a similar fashion to CSRF vulnerabilities.
 
-### Patch[]()
+### Patch
 
 The Jenkins security team patched CVE-2024-23897 by adding a secure configuration, which disables the “[expandAtFiles](https://github.com/kohsuke/args4j/blob/fc458a24d6bd08b58fdd0bd7e37acb08200eac59/args4j/src/org/kohsuke/args4j/CmdLineParser.java#L478)” feature.
 
@@ -273,9 +273,9 @@ public HttpResponse doWs(StaplerRequest req) {
 
 ```
 
-## Timeline[]()
+## Timeline
 
-## Summary[]()
+## Summary
 
 In this blog, we uncovered two vulnerabilities on Jenkins, the first one leverages the “[expandAtFiles](https://github.com/kohsuke/args4j/blob/fc458a24d6bd08b58fdd0bd7e37acb08200eac59/args4j/src/org/kohsuke/args4j/CmdLineParser.java#L479)” functionality to read arbitrary files and eventually execute arbitrary code on the server. The second finding has the potential to execute arbitrary commands as the victim, by manipulating them to visit a malicious link.
 

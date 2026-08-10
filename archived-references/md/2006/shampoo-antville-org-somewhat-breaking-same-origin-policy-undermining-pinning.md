@@ -72,11 +72,8 @@ It's a shampoo world anyway
 |   |
 
 [Maddin](http://www.informatik.uni-hamburg.de/SVS/personnel/martin/index.php), 14. August 2006 um 17:42:44 MESZ
- **
 
 (somewhat) breaking the same-origin policy by undermining dns-pinning
-
- **
 
 A small contribution to the current âhacking the intranet with JavaScriptâ meme:
 

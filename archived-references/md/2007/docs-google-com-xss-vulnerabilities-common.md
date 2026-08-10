@@ -154,13 +154,9 @@ This issue was fixed in the December Flash player release. An attacker can also 
 
 ** Users
 
-**
-
 -  Update to the latest version of Flash Player plugin. This will protect users from attacks using the "asfunction" protocol handler
 
 ** Website Owners
-
-**
 
 -  All vulnerabilities reported above have been fixed, so please:
 
@@ -179,7 +175,6 @@ This issue was fixed in the December Flash player release. An attacker can also 
 ** Flash Authoring Tools Developers and All Flash Developers
 
 **Flash based XSS is not limited to authoring tools. Unfortunately, common design patterns used in many Flash applications introduce XSS issues, so all Flash developers, including Flash authoring tools developers, should do the following:**
-**
 
 -  Test your SWFs with Stafano Di Paola's [SWFIntruder](https://www.owasp.org/index.php/Category:SWFIntruder). If you don't, others will.
 -  Perform proper input validation on all user definable variables used in URL loading functions and the "htmlText" fields. For example:
@@ -226,7 +221,6 @@ This issue was fixed in the December Flash player release. An attacker can also 
 
  /*
  * Quiz app
- *
  * To compile:
  * mtasc -swf Quiz.swf -main -header 10:10:10 Quiz.as
  */

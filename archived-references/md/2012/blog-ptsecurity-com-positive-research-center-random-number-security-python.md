@@ -79,7 +79,7 @@ page going offline. To read the original, follow the link above.
  The [previous article](https://web.archive.org/web/20171001165020/http://blog.ptsecurity.com/2012/08/not-so-random-numbers-take-two.html), relying on the research of George Argyros and Aggelos Kiayias ([3]), explained how to guess random numbers in PHP using **PHPSESSID **and taught various methods to reduce pseudorandom number entropy.
 
  Now we are going to consider PRNG in web applications written in the Python language.
- []()
+ 
 
 ##  SPECIFIC FEATURES OF PYTHON PRNG
 

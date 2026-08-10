@@ -89,8 +89,6 @@ Sponsored
 
 Luckily, Blakeman had the wherewithal and knowledge to investigate and ultimately restore his accounts. But his story is a cautionary one: No matter [how bulletproof two-factor authentication seems](https://web.archive.org/web/20160322164132/http://gizmodo.com/its-time-to-enable-two-step-authentication-on-everythin-1646242605), no security system is perfect. [[Hacker News](https://web.archive.org/web/20160322164132/https://news.ycombinator.com/item?id=8541313)]
 
-[]()
+ Reply88 replies
 
- [Reply]()88 replies
-
-[Leave a reply]()
+Leave a reply

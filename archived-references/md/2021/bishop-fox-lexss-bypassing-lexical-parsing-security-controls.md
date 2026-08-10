@@ -68,12 +68,10 @@ Share
 
 ---
 
-##
 Introduction to Key Concepts
 
 Note: this blog post assumes some previous knowledge of XSS (better described as JavaScript injection) and a basic understanding of HTML. For a high-level primer, [head over to our XSS overview writeup](https://bishopfox.com/blog/what-is-xss).
 
-###
 Cross-site Scripting (XSS) Protections
 
 XSS protections come in many forms. In the early days of preventing XSS and occasionally still today, regular expressions (regex) were used to examine user input for "dangerous" strings. A simplified example is that if a user provided input containing `<script>`, the regex would match that exact string and remove it. However, this type of regex-based XSS protection often misses the mark, as there are many ways to formulate a JavaScript string of code to bypass the protection. In the same simplified example, simply capitalizing a letter in `<scRipt>` would bypass the filter and result in XSS. It is therefore not advisable to attempt a regex filter to prevent XSS.
@@ -82,7 +80,6 @@ So, let's talk about a better solution. Contextual output encoding is a form of 
 
 What if users require the ability to include some HTML such as images, links, and rich text? This is where lexical parsing comes into play.
 
-###
 Cross-site Scripting (XSS) Protections via Lexical Parsing
 
 Lexical parsing is a very sophisticated way of preventing XSS because it evaluates whether the data is instructions or plaintext before performing additional logic such as blocking or encoding the data. At a high level, lexical parsing can be described as parsing that will separate user data (i.e., non-dangerous textual content) from computer instructions (i.e., JavaScript and certain dangerous HTML tags). In instances where the user is allowed a subset of HTML by design, this type of parsing can be used to determine what is allowed content and what will be blocked or sanitized.
@@ -91,7 +88,6 @@ Some examples that allow a subset of HTML by design are rich-text editors, email
 
 However, lexical parsing as a form of XSS protection can be exploited when the HTML parser and sanitizing lexical parser do not process the data in the exact same manner. This blog post focuses on how in some cases it is possible to trick lexical parsers by leveraging the HTML parsing logic to inject JavaScript despite the sophisticated protections. In order to understand how to exploit these XSS issues, we must first examine how HTML is parsed; caveats and special cases during processing of data; and how the sanitizing parsers work.
 
-###
 How the Data Flows Through the HTML Parser
 
 To understand how we can achieve XSS in an application that uses lexical analysis on HTML input, we first must look at how HTML is parsed and how content is determined to be either data or instructions. The figure below is a visualization of the HTML parser's order of operations:
@@ -122,7 +118,6 @@ Our goal as an attacker is to control the node in this stage of HTML parsing. As
 
 **KEY TAKEAWAY: **Now you should have a high-level understanding of how data flows through the HTML parsing process and how the information is organized, which will come into play during exploitation.
 
-###
 The Concept of the HTML Parser's Context State
 
 During the `tokenization` stage, the HTML parser will sort the HTML elements into different categories of data states known as the `Context State`. The [HTML specification](https://html.spec.whatwg.org/#concept-frag-parse-context) lists the `Context State` switching elements as follows:
@@ -211,7 +206,6 @@ Note that the `data state` is the only state that attempted to load an image. Th
 
 Different supplied elements alter how data in those elements is parsed and rendered by switching the Context State of the data.
 
-###
 Namespaces – Foreign Content and Leveraging the Unexpected Behavior
 
 The browser’s HTML parser understands more than just HTML; it can switch between three distinct namespaces: HTML, MathML, and SVG.
@@ -226,7 +220,6 @@ Michał Bentkowski's DOMPurify [writeup](https://research.securitum.com/mutation
 
 The HTML parser will context switch to separate namespaces when it encounters MathML or SVG elements, which can be used to confuse the parser.
 
-##
 Sanitizing Lexical Parsing Flow
 
 To exploit sanitizing lexical parsers, we need to understand the general flow of how they work. At a high level, the general flow is as follows:
@@ -241,7 +234,6 @@ This flow is depicted below:
 
 The goal of exploitation is to provide HTML that will trick the sanitizing parser into believing the provided input is non-dangerous text data (RCDATA, RAWTEXT, or PLAINTEXT) when it is actually computer instructions (data state). This is often possible for several reasons: HTML is not designed to be parsed twice; slight variations in parsing can occur between the initial HTML parser and the sanitizing parser; and sanitizing parsers often implement their own processing logic.
 
-##
 Test Case 1 = TinyMCE XSS
 
 TinyMCE is a What-You-See-Is-What-You-Get (WYSIWYG) HTML text editor and JavaScript library. It is typically included in third-party websites to provide text editing functionality, including HTML text.
@@ -266,7 +258,6 @@ The above was a result of TinyMCE's parser viewing the data incorrectly like thi
 
 Note that the `img` element with the active content `onerror `event is within the `text` context in the DOM tree; when lexically parsed, this would register as non-dangerous and not be stripped or output encoded. Since the` textarea` element was contained in the `iframe`, the` img` element was not actually within a `textarea` element. Therefore, the active content (JavaScript) executed and XSS was achieved.
 
-##
 Test Case 2 = Froala XSS
 
 Froala is a What-You-See-Is-What-You-Get (WYSIWYG) HTML text editor and JavaScript library that is similar in functionality to TinyMCE. For a second test case, we will review an XSS vulnerability that was found as a part of this research ([CVE-2021-28114](https://bishopfox.com/blog/froala-editor-v3-2-6-advisory)). In the advisory for this CVE, I detailed how XSS was achieved using the following payload:
@@ -285,7 +276,6 @@ The result was the XSS payload execution. This can be further visualized by exam
 
 The Froala parser removed the <math> element and added a --> to close what it believed was a comment. The final-stage HTML parser viewed the opening comment as contained within iframe elements and set the closing comment element added by the Froala parser to the RCDATA state, ignoring it as a valid closing tag. The result was active content execution (XSS).
 
-##
 Prevention
 
 When implementing applications that allow some user-controlled HTML by design, the key to avoiding these types of bugs is to process the HTML as close to the original parse as possible. While doing so, it is important to account for the order of elements and embed the elements’ context. These XSS issues within lexical analysis will arise if there is a variation in how the HTML parser views a node versus how the sanitizing parser views a node. It is also advisable to blacklist MathML and SVG namespace elements when they are not required and completely drop any request containing these (i.e., do not continue to write the data into the DOM).
@@ -303,8 +293,6 @@ Even when input is lexically analyzed, XSS may still be possible by exploiting c
 - **Securitum - DOM Purify Bypass - **[https://research.securitum.com...](https://research.securitum.com...)
 - [**Bishop Fox – TinyMCE v5.2.1 Advisory**](https://bishopfox.com/blog/tinymce-version-5-2-1-advisory)
 - **Mozilla – Content Security Policy - **[https://developer.mozilla.org/...](https://developer.mozilla.org/...)
-
-##
 
  ![](https://bishopfox.com/static/assets/images/backgrounds/lander-header-bg-black-lines.svg)
 

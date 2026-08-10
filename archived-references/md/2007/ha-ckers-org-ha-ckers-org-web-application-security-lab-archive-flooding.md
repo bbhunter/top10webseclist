@@ -73,7 +73,7 @@ A post by [Super-Friez](http://sla.ckers.org/forum/read.php?14,13943) got me thi
 
 When you found the right URL, launching a GET request flood against the server could seriously delay certain types of requests (especially if they must touch a database two times versus one time, for instance - if the DB was part of the flooding). Suddenly something that is normally the difference of a few microseconds could be the difference of seconds. Who cares? Because I’m always curious if there are any practical applications in hacking for DoS and this appears to be one of them - at least in theory.
 
-  This entry was posted on Sunday, December 9th, 2007 at 9:04 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Sunday, December 9th, 2007 at 9:04 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

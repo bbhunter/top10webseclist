@@ -237,7 +237,7 @@ The hacker selected the **Server-Side Request Forgery (SSRF)** weakness. This vu
 
 changed the status to ****Triaged**.
 
-[April 23, 2018, 12:21am UTC]()
+April 23, 2018, 12:21am UTC
 
 Thanks for your report [@0xacb](https://hackerone.com/0xacb), our engineering team is investigating and we will let you know when we have an update.
 
@@ -251,7 +251,7 @@ Thanks for your report [@0xacb](https://hackerone.com/0xacb), our engineering te
 
 rewarded [0xacb](https://hackerone.com/0xacb) with a bounty.
 
-[April 23, 2018, 1:08pm UTC]()
+April 23, 2018, 1:08pm UTC
 
 We've disabled the vulnerable service last night, thank you again for reporting this. As per our program rules, I'm paying this initial amount on triage, with the rest once the issue has been closed.
 
@@ -265,7 +265,7 @@ We've disabled the vulnerable service last night, thank you again for reporting 
 
 .
 
-[April 23, 2018, 1:32pm UTC]()
+April 23, 2018, 1:32pm UTC
 
 Thank you for the initial reward :)
 
@@ -281,7 +281,7 @@ I forgot to mention, but I stopped exploring this when I achieved RCE. I'm not s
 
 .
 
-[April 27, 2018, 5:25pm UTC]()
+April 27, 2018, 5:25pm UTC
 
 Hi [@0xacb](https://hackerone.com/0xacb), thanks again for this report and the level of detail you provided, it was extremely helpful. I just wanted to provide a quick update. As you know, we immediately patched on the weekend. We are continuing to implement network changes to prevent the behaviour again should another SSRF vulnerability be discovered in the future. Given the sensitivity around this, we're taking our time to ensure proper mitigations. We're hoping to be able to resolve it soon but will keep you up to date on the progress.
 
@@ -295,7 +295,7 @@ Hi [@0xacb](https://hackerone.com/0xacb), thanks again for this report and the l
 
 .
 
-[April 27, 2018, 7:56pm UTC]()
+April 27, 2018, 7:56pm UTC
 
 Thanks for the update, Peter!
 
@@ -309,7 +309,7 @@ Thanks for the update, Peter!
 
 .
 
-[May 17, 2018, 3:02pm UTC]()
+May 17, 2018, 3:02pm UTC
 
 Hello [@shopify-peteryaworski](https://hackerone.com/shopify-peteryaworski), Any updates on the progress? Thank you!
 
@@ -323,7 +323,7 @@ Hello [@shopify-peteryaworski](https://hackerone.com/shopify-peteryaworski), Any
 
 .
 
-[May 18, 2018, 12:35pm UTC]()
+May 18, 2018, 12:35pm UTC
 
 Hi [@0xacb](https://hackerone.com/0xacb), sorry, we don't have an update. We will let you know when we do.
 
@@ -337,7 +337,7 @@ Hi [@0xacb](https://hackerone.com/0xacb), sorry, we don't have an update. We wil
 
 closed the report and changed the status to ****Resolved**.
 
-[May 23, 2018, 7:03pm UTC]()
+May 23, 2018, 7:03pm UTC
 
 Thanks again for your report [@0xacb](https://hackerone.com/0xacb) and your patience. As you know, we patched this immediately. We've finished implementing the network changes necessary to prevent this from occurring again. You should hear back from us shortly regarding the bounty.
 
@@ -353,7 +353,7 @@ On that note, this was a great find [@0xacb](https://hackerone.com/0xacb)! Thank
 
 .
 
-[May 23, 2018, 8:28pm UTC]()
+May 23, 2018, 8:28pm UTC
 
 Sounds great, [@shopify-peteryaworski](https://hackerone.com/shopify-peteryaworski)! It was really a pleasure to work with you :)
 
@@ -367,7 +367,7 @@ Sounds great, [@shopify-peteryaworski](https://hackerone.com/shopify-peteryawors
 
 rewarded [0xacb](https://hackerone.com/0xacb) with a bounty.
 
-[May 23, 2018, 8:59pm UTC]()
+May 23, 2018, 8:59pm UTC
 
 Thanks again [@0xacb](https://hackerone.com/0xacb)!
 
@@ -375,7 +375,7 @@ Thanks again [@0xacb](https://hackerone.com/0xacb)!
 
 requested to disclose this report.
 
-[May 23, 2018, 8:59pm UTC]()
+May 23, 2018, 8:59pm UTC
 
 [
 
@@ -387,7 +387,7 @@ requested to disclose this report.
 
 .
 
-[May 23, 2018, 9:07pm UTC]()
+May 23, 2018, 9:07pm UTC
 
 Sure! We can disclose this. Thanks for the huge bounty guys!!
 
@@ -395,11 +395,11 @@ Sure! We can disclose this. Thanks for the huge bounty guys!!
 
 agreed to disclose this report.
 
-[May 23, 2018, 9:09pm UTC]()
+May 23, 2018, 9:09pm UTC
 
 This report has been disclosed.
 
-[May 23, 2018, 9:09pm UTC]()
+May 23, 2018, 9:09pm UTC
 
 [
 
@@ -411,7 +411,7 @@ This report has been disclosed.
 
 rewarded [0xacb](https://hackerone.com/0xacb) with **swag**.
 
-[May 23, 2018, 9:35pm UTC]()
+May 23, 2018, 9:35pm UTC
 
 We'd also like to award you with some hacker-exclusive Shopify swag
 
@@ -425,7 +425,7 @@ We'd also like to award you with some hacker-exclusive Shopify swag
 
 .
 
-[May 23, 2018, 9:38pm UTC]()
+May 23, 2018, 9:38pm UTC
 
 Thank you so much :)
 
@@ -437,10 +437,10 @@ critical (10.0)
 
 .
 
-[June 15, 2018, 5:38pm UTC]()
+June 15, 2018, 5:38pm UTC
 
 [shopify-peteryaworski](https://hackerone.com/shopify-peteryaworski)
 
 changed the scope from **your-store.myshopify.com** to **https://exchangemarketplace.com/**.
 
-[June 15, 2018, 5:38pm UTC]()
+June 15, 2018, 5:38pm UTC

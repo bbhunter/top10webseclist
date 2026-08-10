@@ -75,7 +75,7 @@ This is a continuation of [the first post](http://ha.ckers.org/blog/20100822/usi
 
 By combining the over-long cookie (minus 50 bytes) a logged in state will cause the image to fail to load, where as a logged out state will allow the image to load just fine. In this way an attacker can tell cookie states as long as the cookies are variable width and there aren’t other cookies muddying the waters. Interesting attack, I thought!
 
-  This entry was posted on Sunday, August 22nd, 2010 at 10:03 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Sunday, August 22nd, 2010 at 10:03 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

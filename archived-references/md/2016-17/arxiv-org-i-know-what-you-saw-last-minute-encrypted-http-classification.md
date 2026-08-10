@@ -94,7 +94,7 @@ Authors:[Ran Dubin](https://arxiv.org/search/cs?searchtype=author&query=Dubin,+R
  **[[v1]](https://arxiv.org/abs/1602.00490v1)** Mon, 1 Feb 2016 12:15:27 UTC (696 KB)
  **[v2]** Thu, 21 Jul 2016 06:42:01 UTC (317 KB)
 
- []() Full-text links:
+  Full-text links:
 
 ## Access Paper:
 
@@ -224,4 +224,4 @@ Both individuals and organizations that work with arXivLabs have embraced and ac
 
 Have an idea for a project that will add value for arXiv's community? [**Learn more about arXivLabs**](https://info.arxiv.org/labs/index.html).
 
- [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1602.00490) | [Disable MathJax]() ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))
+ [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1602.00490) | Disable MathJax ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))

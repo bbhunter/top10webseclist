@@ -91,27 +91,27 @@ You can get this paper as a [print/download friendly](https://portswigger.net/kb
 
 ## Table of contents
 
-- [Abstract]()
-- [Service Provider-initiated SAML Flow]()
-- [XML Signature Wrapping Attack (XSW)]()
-- [Complete authentication bypass]()
-- [The Illusion of Safety]()
-- [Flawed XML Security implementation]()
-- [Attribute pollution]()
-- [REXML Namespace confusion without DTDs]()
-- [The XML Schema]()
-- [Impossible XSW]()
-- [Void Canonicalization technique]()
-- [Golden SAML Response]()
-- [Getting a Valid Signature]()
-- [Final Exploit]()
-- [Real Use Case Scenario]()
-- [Tools]()
-- [Defense]()
-- [Timeline]()
-- [Conclusion]()
+- Abstract
+- Service Provider-initiated SAML Flow
+- XML Signature Wrapping Attack (XSW)
+- Complete authentication bypass
+- The Illusion of Safety
+- Flawed XML Security implementation
+- Attribute pollution
+- REXML Namespace confusion without DTDs
+- The XML Schema
+- Impossible XSW
+- Void Canonicalization technique
+- Golden SAML Response
+- Getting a Valid Signature
+- Final Exploit
+- Real Use Case Scenario
+- Tools
+- Defense
+- Timeline
+- Conclusion
 
-## [Abstract]()
+## Abstract
 
 Security Assertion Markup Language (SAML 2.0) is a complex authentication standard built on insecure and outdated XML technology. These legacy foundations have made the protocol notoriously difficult to maintain and have resulted in a persistent stream of critical vulnerabilities over the past two decades.
 
@@ -121,7 +121,7 @@ In addition, I present an open-source toolkit designed to identify and analyze d
 
 The recent increase in SAML vulnerabilities shows that secure authentication cannot happen by accident. Keeping protocols like SAML safe requires coordinated, ongoing effort from the entire security community, not just quick fixes.
 
-### [Service Provider-initiated SAML Flow]()
+### Service Provider-initiated SAML Flow
 
 ![](https://portswigger.net/cms/images/54/9d/57d1-article-service-provider-initiated-flow.png)
 
@@ -129,7 +129,7 @@ The Service Provider-Initiated (SP-Initiated) SAML flow is the most common way u
 
 The IdP receives this request, verifies its validity, and then issues a SAML Response containing a digitally signed Assertion that confirms the user’s identity. This response is sent back via the user’s browser to the service provider (SP). The SP then verifies the digital signature and extracts user information (such as username and email) from the Assertion. If the signature and data are valid, access is granted.
 
-### [XML Signature Wrapping Attack (XSW)]()
+### XML Signature Wrapping Attack (XSW)
 
 The overall security of this flow depends entirely on how the SAML Response signature is validated. In many implementations, signature verification and assertion processing are handled by separate modules or even different XML parsers. An XML Signature Wrapping (XSW) attack exploits the discrepancies between these components.
 
@@ -137,7 +137,7 @@ In a typical scenario, an attacker intercepts a legitimate SAML Response signed 
 
 Juraj Somorovsky, in his research "[On Breaking SAML: Be Whoever You Want to Be](https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final91.pdf)" suggests that this could be done by registering through the IdP, performing a man-in-the-middle attack, or even digging through publicly exposed files using Google dorking. The problem is that this is a big requirement. Getting a valid signed SAML Assertion for an arbitrary website is extremely difficult. Identity Providers almost never expose them, and even if you somehow capture one, most Service Providers will accept it only once, after that it gets cached and rejected.
 
-### [Complete authentication bypass]()
+### Complete authentication bypass
 
 ![](https://portswigger.net/cms/images/cc/b4/adc4-article-methodology.png)
 
@@ -145,13 +145,13 @@ So we take a different approach. Instead of trying to steal or reuse a signed As
 
 With that legitimate signature in hand, we can then exploit the server's flawed signature-verification logic and make it believe that our malicious Assertion is the one that was signed, even though it wasn’t.
 
-### [The Illusion of Safety]()
+### The Illusion of Safety
 
 In our previous research with Gareth Heyes - [SAML roulette: the hacker always wins](https://portswigger.net/research/saml-roulette-the-hacker-always-wins), we demonstrated how flaws in handling Document Type Declarations (DTDs) could be exploited to perform an XSW attack against the widely used Ruby-SAML library. To mitigate these issues, two security patches were released - versions 1.12.4 and 1.18.0.
 
 In this paper, I use the Ruby-SAML 1.12.4 patches as a case study to demonstrate why incremental fixes are insufficient and despite multiple attempts to address XML-related vulnerabilities, the underlying architecture remains fragile.
 
-### [Flawed XML Security implementation]()
+### Flawed XML Security implementation
 
 Security patch 1.12.4 introduced two new checks to ensure that the SAML document does not contain DTDs and is a well-formed XML document. While this eliminated our original exploit, it did not address the root cause of the problem. The XML Security library still relied on two separate XML parsers - REXML and Nokogiri - for different parts of the validation process.
 
@@ -161,7 +161,7 @@ In the Ruby-SAML implementation, both REXML and Nokogiri locate the Signature el
 
 An XML Signature is a two-pass signature mechanism: the hash value of the signed resource (DigestValue) and the URI reference to the signed element are stored inside a Reference element. The SignedInfo block that contains these references is then itself signed, and the resulting Base64-encoded signature is placed in the SignatureValue element. In the Ruby-SAML implementation, REXML is used to extract the DigestValue, which is then compared against the hashed element transformed with Nokogiri. The SignatureValue, also extracted by REXML, is expected to match the SignedInfo element as processed by Nokogiri, creating a fragile dependency between two different parsers with inconsistent XML handling.
 
-### [Attribute pollution]()
+### Attribute pollution
 
 To craft a reliable exploit, it is important to first understand a fundamental feature of XML - namespaces. XML namespaces provide a mechanism for qualifying element and attribute names by associating them with Uniform Resource Identifiers (URIs).
 
@@ -215,7 +215,7 @@ Attack Workflow
 - Signature verification module locates the target of the XML Signature using the XPath query "//*[@ID='id']", that ignores namespaces
 - Business logic then verifies that the root element’s identifier matches the one referenced by the signature - retrieving the ID via a namespace-agnostic attribute getter (e.g., element['ID'], getNamedItem('ID'), or attributes['ID']).
 
-### [REXML Namespace confusion without DTDs]()
+### REXML Namespace confusion without DTDs
 
 As you already know, xmlns is a reserved attribute, and xml is another reserved prefix. Both are defined by the XML specification and cannot be redeclared or bound to different values.
 
@@ -233,7 +233,7 @@ This technique also works in the opposite direction, allowing an attacker to hid
 
 This allows the attacker to split signature detection logic, causing the parser to locate and validate a Signature element in an unintended location within the document.
 
-### [The XML Schema]()
+### The XML Schema
 
 Now that we can craft a valid XML document that produces two different interpretations in REXML and Nokogiri, the next step is to determine where to inject malicious elements without violating the XML Schema.
 
@@ -258,13 +258,13 @@ However, XML Schema validation alone does not prevent the inclusion of malicious
  </Assertion>
 </samlp:Response>`
 
-### [Impossible XSW]()
+### Impossible XSW
 
 At this stage, we can successfully bypass the SignatureValue verification, but the process fails with an invalid DigestValue. The reason lies in how Nokogiri handles canonicalization and digest calculation. During digest computation, the parser temporarily removes the Signature element before calculating the hash, ensuring the signature is not included in the data being signed.
 
 However, in our modified document, the fake Signature element remains inside the Assertion, meaning the parser now attempts to calculate the digest over a string that already contains the signature data itself. This creates a recursive dependency - the digest must include its own hash value - achieving a valid DigestValue in this scenario would require generating a perfect hash collision.
 
-### [Void Canonicalization technique]()
+### Void Canonicalization technique
 
 To solve this seemingly impossible problem, we need to take another close look at the SAML specification. According to the standard, the referenced element must be processed through one or more XML transformations before being hashed. By targeting this transformation stage, we open the door to a new class of attack - what I call Void Canonicalization.
 
@@ -282,7 +282,7 @@ The processing SHOULD create a new document in which relative URIs have been con
 
 This behavior introduces an opportunity: if the canonicalization process encounters a limitation, such as an unresolved relative URI, it may return an error instead of a canonicalized string. Fortunately for an attacker, only a small number of XML parsers are designed to properly handle such failures. Most implementations silently continue execution, treating the missing output as an empty or “void” canonical form, effectively skipping the data that should have been included in the digest. This powerful inconsistency becomes the foundation of the Void Canonicalization attack class.
 
-### [Golden SAML Response]()
+### Golden SAML Response
 
 To demonstrate this behavior, consider the following SAML Response that exploits the canonicalization weakness:
 
@@ -315,7 +315,7 @@ The ruby-saml 1.12.4 and php-saml libraries are vulnerable to the canonicalizati
 
 An example of such a "Golden SAML Response" (a message that always passes signature validation, regardless of how the assertion claims are modified) is available in the [GitHub Samples folder](https://github.com/d0ge/XSW/blob/main/samples/Golden-SAMLResponse.xml).
 
-### [Getting a Valid Signature]()
+### Getting a Valid Signature
 
 Even if a malicious user cannot directly access a signed SAML Assertion, it does not mean there are no valid, IdP-signed XML documents available publicly. Several types of legitimate, signed data can be repurposed for exploitation.
 
@@ -339,7 +339,7 @@ This means that even when a request is malformed or syntactically invalid, the I
 
 A signed error message can also become a source of a void signature if the reflected error content inside the response triggers a canonicalization error, resulting in the digest being computed over an empty string.
 
-### [Final Exploit]()
+### Final Exploit
 
 Finally, [Web Services Federation metadata](https://learn.microsoft.com/en-us/entra/identity-platform/federation-metadata) is almost always publicly available for major identity providers. These documents provide a convenient and legitimate way for attackers to obtain valid signature elements, even when the XML is not fully compliant with the SAML schema.
 
@@ -350,15 +350,15 @@ Putting all together:
 - Fake signature node remains at Assertion element but keep Digest value of empty string
 - Finally Void canonicalization throws an unhandled exception to bypass hash restrictions
 
-### [Real Use Case Scenario]()
+### Real Use Case Scenario
 
  In this large SaaS real-world scenario, which cannot be disclosed in detail, we used the Ruby-SAML exploit together with Gareth Heyes’ research, "[Splitting the Email Atom: Exploiting Parsers to Bypass Access Controls](https://portswigger.net/research/splitting-the-email-atom)" to generate a forged SAML Response, create a new account, and ultimately bypass authentication.
 
-### [Tools]()
+### Tools
 
 You can download the Burp Suite extension that automates the entire exploitation process from [GitHub](https://github.com/d0ge/XSW). These vulnerabilities will also be added to the SAML Raider extension - stay tuned.
 
-### [Defense]()
+### Defense
 
 To mitigate the risks described in this research, the following best practices should be adopted when implementing or maintaining SAML authentication systems:
 
@@ -367,7 +367,7 @@ To mitigate the risks described in this research, the following best practices s
 - Keep all SAML and XML security libraries up to date, applying the latest security patches and version updates.
 - Avoid using email domain suffixes as a form of [access control](https://portswigger.net/web-security/access-control), as parser discrepancies can be exploited to bypass such restrictions.
 
-### [Timeline]()
+### Timeline
 
 - 29 April 2025 - Details of the Ruby-SAML 1.12.4 vulnerability were shared with the maintainer.
 - 27 August 2025 - Ruby-SAML and PHP-SAML void canonicalization (libxml2) vulnerabilities were disclosed to their maintainers.
@@ -376,7 +376,7 @@ To mitigate the risks described in this research, the following best practices s
 - 8 December 2025 - Ruby-SAML maintainers published an [announcement](https://github.com/SAML-Toolkits/ruby-saml/issues/783) addressing CVE-2025-66568 and CVE-2025-66567, affecting all versions prior to 1.18.0 (including 1.12.4).
 - 20 January 2026 - Okta replied to our report explaining that changing its signing behavior would violate the SAML/WS-Fed standards, and that the issue should be addressed by Service Providers through appropriate patching.
 
-### [Conclusion]()
+### Conclusion
 
 Reliable authentication security cannot depend on unsupported or poorly maintained libraries. Comprehensive and lasting remediation requires significant restructuring of existing SAML libraries. Such changes may introduce breaking compatibility issues or regressions, but they are essential to ensure the robustness of XML parsing, signature validation, and canonicalization logic. Without this foundational rework, SAML authentication will remain vulnerable to the same classes of attacks that have persisted for nearly two decades.
 

@@ -125,9 +125,9 @@ Let's just hope they figure out how to unscrew, and to remain in the unscrew aid
 
 Tags: [Google](http://nakedsecurity.sophos.com/tag/google/), [Google Maps](http://nakedsecurity.sophos.com/tag/google-maps/), [Google Places](http://nakedsecurity.sophos.com/tag/google-places/), [Spam](http://nakedsecurity.sophos.com/tag/spam/)
 
- []()
+ 
 
-  []()
+  
 
  ![](http://0.gravatar.com/avatar/607892ea3a6693d2c75fbe9bf3ca0fc1?s=60&d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&r=G)
 

@@ -75,7 +75,7 @@ Still in line with the DefCon preso, next on the list of things I need to talk a
 
 Of course for this to work several things have to be true. One, the above IP address needs to be modified to be the attacker’s computer. Two, the attacker needs to be running SMB services to listen and get the information. Three, the company where the victim is connecting from must allow outbound SMB - which I’m told is only about 50%. So 50% of people running 60% of browsers (an IE variant) will be vulnerable to this. Still not terrible and isn’t particularly noisy either and requires no user interaction, which is nice.
 
-  This entry was posted on Tuesday, August 11th, 2009 at 12:54 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Tuesday, August 11th, 2009 at 12:54 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

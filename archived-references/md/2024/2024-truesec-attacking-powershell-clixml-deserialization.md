@@ -684,24 +684,24 @@ $result
 
  [ ![](https://www.truesec.com/wp-content/uploads/2026/08/data-dump-2-1-960x540.png)](https://www.truesec.com/hub/blog/false-cve-in-overwhelmed-verification-system)
 
- [Cybersecurity](), [Threat Intelligence]()
+ Cybersecurity, Threat Intelligence
 
 ###  [ False CVE in Overwhelmed Verification System ](https://www.truesec.com/hub/blog/false-cve-in-overwhelmed-verification-system)
 
  [ ![](https://www.truesec.com/wp-content/uploads/2026/08/corridor-960x540.jpg)](https://www.truesec.com/hub/blog/llmjacking-is-a-new-cyber-threat)
 
- [Cybersecurity](), [Threat Intelligence]()
+ Cybersecurity, Threat Intelligence
 
 ###  [ LLMjacking Is a New Cyber Threat ](https://www.truesec.com/hub/blog/llmjacking-is-a-new-cyber-threat)
 
  [ ![](https://www.truesec.com/wp-content/uploads/2026/07/a-minimalistic-futuristic-scene-represen_iPZP_e8sTSmG09a8esEuew_xA9UM_b5RvGJOLXaXj3Rew-960x540.png)](https://www.truesec.com/hub/blog/rogue-ai-agent-allegedly-hack-hugging-face)
 
- [AI](), [Cybersecurity]()
+ AI, Cybersecurity
 
 ###  [ Rogue AI Agent Allegedly Hack Hugging Face ](https://www.truesec.com/hub/blog/rogue-ai-agent-allegedly-hack-hugging-face)
 
  [ ![](https://www.truesec.com/wp-content/uploads/2026/07/bild2.png)](https://www.truesec.com/hub/blog/microsoft-sharepoint-server-vulnerabilities-actively-exploited)
 
- [Threat Intelligence]()
+ Threat Intelligence
 
 ###  [ Microsoft SharePoint Server Vulnerabilities Actively Exploited ](https://www.truesec.com/hub/blog/microsoft-sharepoint-server-vulnerabilities-actively-exploited)

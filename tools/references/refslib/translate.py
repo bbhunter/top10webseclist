@@ -382,8 +382,48 @@ def has_foreign_prose(text, language="", metadata=None):
 
     The record's own title and publisher count, because an English page on a
     Chinese site is still a file whose heading a reader cannot read.
+
+    NOT THE TEST FOR WHETHER TO BUILD A TRANSLATION - see `warrants_translation`.
     """
     return bool(prepare(text, language, metadata).chunks)
+
+
+# HOW MUCH OF A DOCUMENT HAS TO BE FOREIGN BEFORE IT GETS AN ENGLISH EDITION.
+# `has_foreign_prose` answers a segment-scale question and was wired to a
+# document-scale decision, which is a different thing: one foreign segment is
+# work to do, and a whole parallel `_translate` file is a second document that
+# the website then opens INSTEAD of the original. Three CJK sample characters on
+# one slide of an 86-segment English Black Hat deck about Unicode confusables
+# were enough to manufacture one, and the 78KB text render displaced the
+# author's own 4.7MB PDF.
+#
+# CALIBRATED on the 72 translation pairs this archive had when the rule was
+# written. Sorted by the share of prose segments measured foreign, they fall
+# into two groups with nothing in between: 52 English documents quoting another
+# script scored 0.148 and below - conference decks, papers with CJK author
+# affiliations, English write-ups sampling Cyrillic - and the 20 genuinely
+# foreign ones scored 0.360 and up (French, Russian, Portuguese, Japanese,
+# Chinese, Ukrainian). The threshold sits in that empty gap.
+#
+# The share, not a count: a foreign paragraph inside a short README is a
+# document a reader cannot read, and the same paragraph inside a 200-page
+# proceedings is a citation.
+TRANSLATION_SHARE = 0.25
+
+
+def warrants_translation(text, language="", metadata=None):
+    """Whether this document should get a parallel English file at all.
+
+    A translation REPLACES the original for a reader of the site, so the bar is
+    "most of this document is in another language" rather than "some of it is".
+    Below the bar the foreign fragments stay where the author put them, in the
+    one file that carries the source's own words.
+    """
+    prepared = prepare(text, language, metadata)
+    total = prepared.segments + prepared.skipped
+    if not total or not prepared.chunks:
+        return False
+    return prepared.segments / total >= TRANSLATION_SHARE
 
 
 # A prose line has sentences in it, and sentences have spaces. A minified script

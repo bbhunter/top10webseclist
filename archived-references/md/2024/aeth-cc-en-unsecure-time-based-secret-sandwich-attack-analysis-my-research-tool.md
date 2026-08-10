@@ -60,88 +60,88 @@ page going offline. To read the original, follow the link above.
 
 [EN] Unsecure time-based secret and Sandwich Attack - Analysis of my research and release of the “Reset Tolkien” tool
 
-# [**]()[EN] Unsecure time-based secret and Sandwich Attack - Analysis of my research and release of the “Reset Tolkien” tool
+# **[EN] Unsecure time-based secret and Sandwich Attack - Analysis of my research and release of the “Reset Tolkien” tool
 
 ![Reset Tolkien Picture](https://www.aeth.cc/public/Article-Reset-Tolkien/reset-tolkien.png)
 
-# [**]()Abstract
+# **Abstract
 
 In this article, I detail my research into time-based secrets. This research began for me a year ago, following a finding during a Bug bounty program, and enabled me to take the time to implement my Python tool: [“**Reset Tolkien**”](https://github.com/AethliosIK/reset-tolkien).
 
-# [**]()Table of Content
+# **Table of Content
 
 - [[EN] Unsecure time-based secret and Sandwich Attack - Analysis of my research and release of the “Reset Tolkien” tool]()
-- [Abstract]()
-- [Table of Content]()
-- [I - First vulnerability: PHP function uniqid and password reset]()
+- Abstract
+- Table of Content
+- I - First vulnerability: PHP function uniqid and password reset
 
-- [I.1 - Context]()
-- [I.2 - Hypothesis]()
-- [I.3 - Attack scenario]()
-- [I.4 - Beginning of the adventure]()
+- I.1 - Context
+- I.2 - Hypothesis
+- I.3 - Attack scenario
+- I.4 - Beginning of the adventure
 
-- [II - Second vulnerability: Mongo DB ObjectID and e-mail address confirmation]()
+- II - Second vulnerability: Mongo DB ObjectID and e-mail address confirmation
 
-- [II.1 - Context]()
-- [II.2 - Hypothesis]()
-- [II.3 - Attack scenario]()
+- II.1 - Context
+- II.2 - Hypothesis
+- II.3 - Attack scenario
 
-- [III - Research]()
+- III - Research
 
-- [III.1 - StackOverflow overview]()
+- III.1 - StackOverflow overview
 
-- [III.1.1 - The bad choices, but that doesn’t help us]()
-- [III.1.2 - The bad choices, and it’s interesting]()
-- [III.1.3 - The good choices]()
+- III.1.1 - The bad choices, but that doesn’t help us
+- III.1.2 - The bad choices, and it’s interesting
+- III.1.3 - The good choices
 
-- [III.2 - Limits of our previous scenarios]()
-- [III.3 - The end of the adventure?]()
+- III.2 - Limits of our previous scenarios
+- III.3 - The end of the adventure?
 
-- [IV - Theories and algorithms]()
+- IV - Theories and algorithms
 
-- [IV.1 - First step: known generation date]()
+- IV.1 - First step: known generation date
 
-- [IV.1.1 - Detection algorithm]()
-- [IV.1.2 - Attack algorithm]()
+- IV.1.1 - Detection algorithm
+- IV.1.2 - Attack algorithm
 
-- [IV.2 - Second step: taking hash functions into account]()
+- IV.2 - Second step: taking hash functions into account
 
-- [IV.2.1 - Detection algorithm using hash functions]()
-- [IV.2.2 - Attack algorithm using hash functions]()
+- IV.2.1 - Detection algorithm using hash functions
+- IV.2.2 - Attack algorithm using hash functions
 
-- [IV.3 - Third stage: precise generation date unknown]()
+- IV.3 - Third stage: precise generation date unknown
 
-- [IV.3.1 - Detection algorithm with arbitrary time frame]()
-- [IV.3.2 - Attack algorithm with arbitrary time frame]()
+- IV.3.1 - Detection algorithm with arbitrary time frame
+- IV.3.2 - Attack algorithm with arbitrary time frame
 
-- [IV.4 - Fourth step - Optimizing the attack by reducing Oracle solicitations]()
+- IV.4 - Fourth step - Optimizing the attack by reducing Oracle solicitations
 
-- [IV.4.1 - Sandwich attack scenario]()
-- [IV.4.2 - Sandwich attack algorithm]()
+- IV.4.1 - Sandwich attack scenario
+- IV.4.2 - Sandwich attack algorithm
 
-- [IV.5 - Conclusion]()
+- IV.5 - Conclusion
 
-- [V - Practice]()
+- V - Practice
 
-- [V.2 - Scenario confirming the hypothesis]()
-- [V.3 - Sandwich attack scenario]()
+- V.2 - Scenario confirming the hypothesis
+- V.3 - Sandwich attack scenario
 
-- [VI - Reset Tolkien]()
+- VI - Reset Tolkien
 
-- [VI.1 - Introduction]()
-- [VI.2 - Encoding and hash function supported]()
-- [VI.3 - Usage]()
-- [VI.4 - Practical example]()
-- [VI.5 - Default tests]()
-- [VI.6 - Customised test configuration]()
-- [VI.7 - The “Todo” list]()
+- VI.1 - Introduction
+- VI.2 - Encoding and hash function supported
+- VI.3 - Usage
+- VI.4 - Practical example
+- VI.5 - Default tests
+- VI.6 - Customised test configuration
+- VI.7 - The “Todo” list
 
-- [VII - Conclusion]()
-- [Credits]()
+- VII - Conclusion
+- Credits
 
-# [**]()I - First vulnerability: PHP function `uniqid` and password reset
+# **I - First vulnerability: PHP function `uniqid` and password reset
 
-## [**]()I.1 - Context
+## **I.1 - Context
 
 During a bug bounty program, I found an application with very poor features. I’m forced to focus on the relatively classic features of the application, such as the password reset feature.
 
@@ -153,7 +153,7 @@ For this challenge, I imagined a password reset functionality based on the Pytho
 
 It was nice to design, but well, it’s not possible to find that, is it? Let’s find out…
 
-## [**]()I.2 - Hypothesis
+## **I.2 - Hypothesis
 
 So I’m testing this perimeter with this challenge in mind. By generating tokens with my own account, almost at the same time, I obtain these two tokens:
 
@@ -209,7 +209,7 @@ for token in tokens:
 
 ```
 
-## [**]()I.3 - Attack scenario
+## **I.3 - Attack scenario
 
 By confirming this hypothesis, I’m now able to create an attack scenario that will impact other users:
 
@@ -222,7 +222,7 @@ By confirming this hypothesis, I’m now able to create an attack scenario that 
 
 With just the prerequisite of the victim’s email address, I’m able to reset his password. On the perimeter concerned, I can change his email using the new password and perform a full-account takeover. The report will be accepted as “**Critical**”.
 
-## [**]()I.4 - Beginning of the adventure
+## **I.4 - Beginning of the adventure
 
 On finding this vulnerability, I’m trying to reproduce this exploit on a large number of Bug bounty perimeters using a more detailed scenario:
 
@@ -234,9 +234,9 @@ On finding this vulnerability, I’m trying to reproduce this exploit on a large
 - If entropy is low, guess the tokens’ format.
 - If the generation date can be found without any further prerequisites, the hypothesis that these tokens are based on the generation date is confirmed.
 
-# [**]()II - Second vulnerability: Mongo DB ObjectID and e-mail address confirmation
+# **II - Second vulnerability: Mongo DB ObjectID and e-mail address confirmation
 
-## [**]()II.1 - Context
+## **II.1 - Context
 
 During my various manual searches using the previous scenario, I spot an intriguing case on another functionality than password reset. When confirming an email address, I spot this format similarity:
 
@@ -274,7 +274,7 @@ token = "65c7e6f47ded1f0fef0c1006"
 
 ```
 
-## [**]()II.2 - Hypothesis
+## **II.2 - Hypothesis
 
 From a token, we are able to extract the information needed to generate that token.
  This information will be used to guess the next token:
@@ -285,7 +285,7 @@ From a token, we are able to extract the information needed to generate that tok
 
 By implementing an attack scenario similar to the first vulnerability, the success of the attack is not guaranteed. Indeed, tokens may be generated by different machines and/or processes. It is therefore necessary to list the different values in order to generate the token with the value corresponding to the machine and process used.
 
-## [**]()II.3 - Attack scenario
+## **II.3 - Attack scenario
 
 - Create an account on the tested perimeter.
 - Perform several email changes on a controlled email.
@@ -296,17 +296,17 @@ By implementing an attack scenario similar to the first vulnerability, the succe
 
 In the context of the application, I’m able to bypass email verification. The impact on the perimeter concerned is limited. However, this gives me the opportunity to imagine a use similar to the first vulnerability in another context, that of e-mail confirmation.
 
-# [**]()III - Research
+# **III - Research
 
 Following these findings, I felt the need to explore this subject in more depth, in order to generalize this exploitation.
 
-## [**]()III.1 - StackOverflow overview
+## **III.1 - StackOverflow overview
 
 In order to generalize these cases, I needed more examples. Not just examples of black-box-generated tokens, but also examples of source code. Using my favorite search engine, I drew up a representative sample of implementations of password reset functionality. I looked for “*good*”" and “*bad*” implementations.
 
 As my search began with the discovery of the PHP function `uniqid`, I focused on PHP source code examples. Here’s a best-of.
 
-### [**]()III.1.1 - The bad choices, but that doesn’t help us
+### **III.1.1 - The bad choices, but that doesn’t help us
 
 - [**Example 1.1** - Password Reset System Using PHP](https://talkerscode.com/webtricks/password-reset-system-using-php.php)
 
@@ -354,7 +354,7 @@ Interestingly, if you’d like to study this in more detail, there are a number 
 
 But this is not the subject of our study.
 
-### [**]()III.1.2 - The bad choices, and it’s interesting
+### **III.1.2 - The bad choices, and it’s interesting
 
 - [**Example 2.1** - Send Reset/Forgot Password Link in Email PHP Mysql](https://www.tutsmake.com/send-reset-password-link-email-php/)
 
@@ -383,7 +383,7 @@ This sounds complicated to exploit, but it points to an essential piece of infor
 
 *Note again, note again.*
 
-### [**]()III.1.3 - The good choices
+### **III.1.3 - The good choices
 
 - [**Example 3.1** - Forgot Password and password reset form in PHP with MYSQL ](https://technosmarter.com/php/forgot-password-and-password-reset-form-in-php)
 
@@ -396,7 +396,7 @@ This is a good example of what **is secured** from a cryptographically secure [`
 
 *Don’t note, don’t note.*
 
-## [**]()III.2 - Limits of our previous scenarios
+## **III.2 - Limits of our previous scenarios
 
 Looking at the previous examples of source code, it’s possible to draw some conclusions:
 
@@ -404,7 +404,7 @@ Looking at the previous examples of source code, it’s possible to draw some co
 - Some tokens may be **results of hash functions** that add entropy to values that would not be cryptographically secure.
 - Some tokens may be **based on a date with fine precision**, making the prerequisite of knowing the token’s generation date uncertain.
 
-## [**]()III.3 - The end of the adventure?
+## **III.3 - The end of the adventure?
 
 These two findings gave me the opportunity to inspect the various time-based functions.
  These functions should not be used in contexts that require cryptographically secure secrets.
@@ -417,15 +417,15 @@ Each perimeter has different technologies and differently implemented functional
 
 *So the adventure doesn’t end there for me.*
 
-# [**]()IV - Theories and algorithms
+# **IV - Theories and algorithms
 
 So let’s take a moment to theorize, based on the practical cases we’ve discovered and the lessons we’ve learned from our research into source code examples.
 
-## [**]()IV.1 - First step: known generation date
+## **IV.1 - First step: known generation date
 
 Let’s try to describe different algorithms for generalizing the search for a token’s format, assuming that the token’s generation date is known.
 
-### [**]()IV.1.1 - Detection algorithm
+### **IV.1.1 - Detection algorithm
 
 It is therefore possible to create a first algorithm which, from a list of functions of possible format F , **determines whether the token is based on the token generation date**:
 
@@ -456,7 +456,7 @@ Algorithm: native_detect
 
 - Return null
 
-### [**]()IV.1.2 - Attack algorithm
+### **IV.1.2 - Attack algorithm
 
 Once the hypothesis has been confirmed, we can provide an algorithm to **generate the victim’s token based on the generation date**:
 
@@ -489,13 +489,13 @@ Algorithm: native_attack
 
 - Else return null
 
-## [**]()IV.2 - Second step: taking hash functions into account
+## **IV.2 - Second step: taking hash functions into account
 
 Previous algorithms took into account the possibility of knowing the inverse of a function, but if we want to take into account token formats using hash functions, by definition, **we can’t define the inverse function.**
 
 We therefore need to invert and base ourselves on the date, apply the formatting functions and compare the value obtained with the token provided as input.
 
-### [**]()IV.2.1 - Detection algorithm using hash functions
+### **IV.2.1 - Detection algorithm using hash functions
 
 From the token generation date, we need to confirm which hash function is used:
 
@@ -528,7 +528,7 @@ Algorithm: detect_with_hash
 
 - Return null
 
-### [**]()IV.2.2 - Attack algorithm using hash functions
+### **IV.2.2 - Attack algorithm using hash functions
 
 We can therefore provide an algorithm that will generate the victim’s token from the generation date:
 
@@ -561,13 +561,13 @@ Algorithm: attack_with_hash
 
 - Else return null
 
-## [**]()IV.3 - Third stage: precise generation date unknown
+## **IV.3 - Third stage: precise generation date unknown
 
 Previous algorithms took into account the prerequisite of precise knowledge of the token generation date. However, when a reset request is made, we can retrieve **the date of the request**, but this **is not necessarily the date on which the token was generated**. In fact, there may be a delay between the two dates. What’s more, if the token is based on a time with a precision finer than seconds, we can’t be sure of the token’s generation date.
 
 However, the request date is bound to be close to the generation date. We can therefore **try to guess the generation date by incrementing the request date up** to an arbitrary limit, which will convince us that our hypothesis is wrong.
 
-### [**]()IV.3.1 - Detection algorithm with arbitrary time frame
+### **IV.3.1 - Detection algorithm with arbitrary time frame
 
 It is possible to define an arbitrary time frame from the date of the request to determine whether the token was generated by one of these dates:
 
@@ -610,7 +610,7 @@ Algorithm: detect_with_timeframe
 
 - Return null,null
 
-### [**]()IV.3.2 - Attack algorithm with arbitrary time frame
+### **IV.3.2 - Attack algorithm with arbitrary time frame
 
 To perform the attack, we need to consider **the existence of an oracle**, named verify , **which confirms that a token is valid**:
 
@@ -649,7 +649,7 @@ Algorithm: attack_with_timeframe
 
 - Else return null
 
-## [**]()IV.4 - Fourth step - Optimizing the attack by reducing Oracle solicitations
+## **IV.4 - Fourth step - Optimizing the attack by reducing Oracle solicitations
 
 In the previous step, we verify the validity of a victim’s token against an arbitrarily defined time frame and an oracle.
  This oracle could be a script that verifies the token’s validity by means of an HTTP request via the web application.
@@ -662,7 +662,7 @@ Here’s a very good reference on this type of attack:
 
 - [0 Click ATO with the Sandwich Attack](https://www.landh.tech/blog/20230811-sandwich-attack).
 
-### [**]()IV.4.1 - Sandwich attack scenario
+### **IV.4.1 - Sandwich attack scenario
 
 - Create an account on the tested perimeter.
 - Perform 3 **sequential** reset token generation requests:
@@ -675,7 +675,7 @@ Here’s a very good reference on this type of attack:
 - Generate possible tokens from this time frame.
 - Confirm the valid token with the oracle.
 
-### [**]()IV.4.2 - Sandwich attack algorithm
+### **IV.4.2 - Sandwich attack algorithm
 
 Let’s try to define an algorithm to guess the generation date of the victim’s token:
 
@@ -716,13 +716,13 @@ Algorithm: sandwich_attack
 
 - Else return null
 
-## [**]()IV.5 - Conclusion
+## **IV.5 - Conclusion
 
 Thanks to these algorithms and the generation date prerequisite, **we are able to confirm the hypothesis that a token is time-based**.
 
 Once this hypothesis has been confirmed, we can **bound the generation date of the victim token between two tokens generated from the attacker’s account**. The oracle will allow us to confirm which of the tokens is the victim’s.
 
-# [**]()V - Practice
+# **V - Practice
 
 Let’s imagine a web application implementing password reset functionality. Here’s an example of a web application with [Flask](https://flask.palletsprojects.com) and [SQLite](https://www.sqlite.org/index.html):
 
@@ -820,7 +820,7 @@ def generate_token():
 
 Testing this application in black box, we’ll see a token in MD5 format: `e6e1b03ab79ba996265417e78a6d80d2`, which **doesn’t allow us to guess that it’s a time-based token**, nor to evaluate the entropy of the value.
 
-## [**]()V.2 - Scenario confirming the hypothesis
+## **V.2 - Scenario confirming the hypothesis
 
 Assuming that the token is time-based, we will now apply the scenario to confirm our hypothesis:
 
@@ -842,7 +842,7 @@ Assuming that the token is time-based, we will now apply the scenario to confirm
 
 - If the output of our algorithm is not null, the hypothesis is confirmed
 
-## [**]()V.3 - Sandwich attack scenario
+## **V.3 - Sandwich attack scenario
 
 To perform our attack, we’ll need to implement the verify  function, which is an oracle used to confirm the validity of a token:
 
@@ -890,9 +890,9 @@ The goal of the scenario is to retrieve a token from a victim:
 
 Note: I have considered that **the Oracle confirms the validity of the token without causing it to expire**. If this is the case, you’ll need to automate the password reset as soon as the token is accessed for the first time, in order to succeed in the attack.
 
-# [**]()VI - Reset Tolkien
+# **VI - Reset Tolkien
 
-## [**]()VI.1 - Introduction
+## **VI.1 - Introduction
 
 To enable this vulnerability to be exploited, I’ve taken the time to build a ready-to-use tool based on the previous algorithms.
 
@@ -903,7 +903,7 @@ This not only implements the previous algorithms literally, but also **adds conc
 - **Time zone** management.
 - Definition of **prefix values or suffixes** based on **account information**.
 
-## [**]()VI.2 - Encoding and hash function supported
+## **VI.2 - Encoding and hash function supported
 
 The tool recursively tests different token formats:
 
@@ -934,7 +934,7 @@ The tool also manages the most popular hash functions:
 - `blake_256`
 - `blake_512`
 
-## [**]()VI.3 - Usage
+## **VI.3 - Usage
 
 The various features of the tool are as follows:
 
@@ -1076,7 +1076,7 @@ options:
 
 ```
 
-## [**]()VI.4 - Practical example
+## **VI.4 - Practical example
 
 If we want to attack the application described above, we can use this tool.
  The detection scenario can also be used with a Burp tool. Here’s a Python script (specific to this application) to apply the detection scenario:
@@ -1219,7 +1219,7 @@ def exploit(attacker_email, victim_email):
 
 ```
 
-## [**]()VI.5 - Default tests
+## **VI.5 - Default tests
 
 By default, the tool is configured to detect this type of time-based token generation:
 
@@ -1246,7 +1246,7 @@ function getToken($level, $email)
 
 ```
 
-## [**]()VI.6 - Customised test configuration
+## **VI.6 - Customised test configuration
 
 In addition, the tool allows you to define your own token formats before applying a hash function via a `TimestampHashFormat` object. For example, to test whether the token is generated using this token generation function:
 
@@ -1274,7 +1274,7 @@ float-uniqid:
 
 ```
 
-## [**]()VI.7 - The “Todo” list
+## **VI.7 - The “Todo” list
 
 Of course, as with any tool, there is always the possibility of adding new features to complement it.
 
@@ -1285,7 +1285,7 @@ Among the points that would be very useful:
 - **Management of other dynamic variables**: the tool detects formats and allows attacks based on the only variable supported: time. However, some formats can have several variables that evolve (*such as the example of the second vulnerability with the `ObjectID` format whose counter is incremented with each memory access, the tool is able to detect this format but is not yet able to exploit it.*).
 - **Addition of new supported formats**: the tool only supports the time-based functions found during my research, but many other formats should still exist and could also be supported by the tool.
 
-# [**]()VII - Conclusion
+# **VII - Conclusion
 
 My research has led to the implementation of a **first version of a tool** that can **detect simple cases** and carry out a **sandwich attack** for a certain number of formats. It should be enriched, as research progresses, with new time-based formats.
 
@@ -1293,6 +1293,6 @@ The purpose of this article is to **open a discussion with you** to help me impr
 
 This first version of the tool is stable enough in my view to be made public, but I intend to develop it further, notably using the previous list.
 
-# [**]()Credits
+# **Credits
 
 - Main illustration: service provided by [@valentin.froute](https://www.instagram.com/valentin.froute/).

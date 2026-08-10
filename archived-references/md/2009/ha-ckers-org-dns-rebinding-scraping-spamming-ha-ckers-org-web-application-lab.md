@@ -75,7 +75,7 @@ Okay, last post about DNS Rebinding and then I’ll (probably) shut up about it 
 
 I know a lot of people think this is a complicated technique, but it’s really not that hard. It just requires some JavaScript (similar to [BeEF](http://www.bindshell.net/tools/beef/) or [XSS Shell](http://ferruh.mavituna.com/article/?1338)), a place to log data to log whatever the user saw when the attacker forced them to perform the action, a hacked up DNS server (like the [simple DNS Rebinding server sample](http://ha.ckers.org/blog/20090706/sample-dns-rebinding-code/)), a domain, a Firewall that is somehow linked to the attacker/spammer application and some Internet traffic to abuse. None of these things are out of reach for a decently skilled attacker. Anyway, I doubt it’s getting fixed anytime soon, which means DNS Rebinding essentially allows nearly free reign for attackers and spammers for the foreseeable future - and no one appears to be doing anything about it.
 
-  This entry was posted on Wednesday, November 18th, 2009 at 9:18 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [CAPTCHA](http://ha.ckers.org/blog/category/webappsec/captcha/), [SEO/SEM](http://ha.ckers.org/blog/category/seo-sem/), [spam](http://ha.ckers.org/blog/category/spam/). You can [leave a response]() as well.
+  This entry was posted on Wednesday, November 18th, 2009 at 9:18 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [CAPTCHA](http://ha.ckers.org/blog/category/webappsec/captcha/), [SEO/SEM](http://ha.ckers.org/blog/category/seo-sem/), [spam](http://ha.ckers.org/blog/category/spam/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

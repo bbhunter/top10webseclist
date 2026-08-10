@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 SIFT - Information Security Services
 
- []()
+ 
 
 |   [![](http://www.sift.com.au/images/hd_logo.gif)](http://www.sift.com.au/index.asp) |
 
@@ -102,7 +102,7 @@ Several workarounds exist and have been detailed in this paper and the technique
 
 [![](http://www.sift.com.au/images/icon_download.gif)](http://www.sift.com.au/assets/downloads/SIFT-XML-Port-Scanning-v1-00.pdf)
 
- [Top]()
+ Top
 
   |   |
 

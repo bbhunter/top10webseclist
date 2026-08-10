@@ -148,7 +148,7 @@ Karthikeyan Bhargavan, Gaëtan Leurent
 
  Vulnerable Websites For a better estimate of the number of vulnerable servers, we tested servers from Alexa's top 10k that negotiate Triple-DES with a modern client. We identified 11483 different HTTPS servers, and found that 226 of them (1.9%) negotiate Triple-DES with a modern client. Moreover, 72 of these (0.6% of the total) also accept to keep a connection open for at least 800k requests. Consequently, the duration of the attack is not unrealistic, at least from the viewpoint of browsers and servers, and we estimate that at least 0.6% of HTTPS connections are vulnerable to our attacks.
 
- For advice about how to check a website's configuration and configure it properly, see the [FAQ]().
+ For advice about how to check a website's configuration and configure it properly, see the FAQ.
 
 ##  Attacking Authenticated HTTP over TLS and OpenVPN
 

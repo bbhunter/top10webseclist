@@ -86,7 +86,7 @@ In the following example web application, it allows users to view static files a
 
 >
 
-Note: The source code of the web application can be seen in “[Appendix 1]()”.
+Note: The source code of the web application can be seen in “Appendix 1”.
 
 However, if we do response splitting and inject a `<script>` tag, the CSP will block its execution, because directive `script-src`’s source is set to `'self'`, which means only sources that are from the same origin can be loaded. The directive also doesn’t have source [`'unsafe-inline'`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy#unsafe-inline).
 
@@ -149,7 +149,7 @@ alert(origin)
 
 ![](https://lab.ctbb.show/research/articles/ArticleNo0005/image8.png)
 
-If response header `Content-Length` is in above of injection point and its value can be controlled, ([Appendix 2]()), we can just change its value to the length of our JavaScript payload:
+If response header `Content-Length` is in above of injection point and its value can be controlled, (Appendix 2), we can just change its value to the length of our JavaScript payload:
 
 ```
 /static/markdown/example.md?type=text/html%0d%0a%0d%0a%3Cscript+src=%22/static/css/main.css?type=text/javascript%250d%250a%250d%250aalert(origin)%26length=13%22%3E%3C/script%3E
@@ -165,7 +165,7 @@ Injected response body data:
 
 ## HTTP/1.1 Trick: Transfer-Encoding With chunked Encoding
 
-If the web application or server uses **HTTP/1.1** ([Appendix 3]()), we can override the `Content-Length` response header by injecting `Transfer-Encoding` header with `chunked` encoding.
+If the web application or server uses **HTTP/1.1** (Appendix 3), we can override the `Content-Length` response header by injecting `Transfer-Encoding` header with `chunked` encoding.
 
 >
 
@@ -217,7 +217,7 @@ alert(origin)
 
 ```
 
-In most cases, the `Content-Length` header’s value is calculated based on **the length of the original response body data**. In the example web application ([Appendix 4]()), static route `/static/markdown/example.md` will return `Content-Length` value `180`, because the Markdown code is `180` characters long.
+In most cases, the `Content-Length` header’s value is calculated based on **the length of the original response body data**. In the example web application (Appendix 4), static route `/static/markdown/example.md` will return `Content-Length` value `180`, because the Markdown code is `180` characters long.
 
 Therefore, we can leverage the fixed `Content-Length` value to truncate the invalid JavaScript syntax by appending junk text, so that the length of the injected response body is greater than the fixed `Content-Length` value:
 

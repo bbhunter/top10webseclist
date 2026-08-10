@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 [![sonar logo](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/8e59bcad-6e39-41dc-abd9-a0e251e8d63f/Sonar%20%282%29.svg?w=128&h=32&fit=clip&q=80)](https://www.sonarsource.com/)
 
-## TL;DR overview[]()
+## TL;DR overview
 
 - Encoding differentials occur when different layers of a web application interpret the same byte sequence under different character sets, creating security gaps that bypass input validation.
 - Charset mismatches between the browser, server, and database can allow attackers to smuggle malicious payloads—such as XSS or SQL injection—past filters that rely on consistent encoding.
@@ -95,7 +95,7 @@ If you have doubts about the `Content-Type` header, you are right. There is only
 
 This blog post's content was also presented at the [TROOPERS24 conference](https://troopers.de/troopers24/talks/r3hxdq/). A recording of the talk can be found here: [From ASCII to UTF-16: Leveraging Encodings to Break Software](https://www.youtube.com/watch?v=z-ug2dwcSz8).
 
-## Character Encodings[]()
+## Character Encodings
 
 A common `Content-Type` header in an HTTP response looks like this:
 
@@ -130,7 +130,7 @@ In summary, there are three common ways that a browser uses to **determine the c
 - `charset` attribute in the `Content-Type` header
 - `<meta>` tag in the HTML document
 
-## Missing Charset Information[]()
+## Missing Charset Information
 
 The Byte-Order Mark is generally very uncommon and the `charset` attribute is not always present in a `Content-Type` header or might be invalid. Also - especially for partial HTML responses - there is usually no `<meta>` tag that indicates a character encoding. In these cases, the browser does not have any information about what character set to use:
 
@@ -144,7 +144,7 @@ For missing character information, browsers try to make an educated guess based 
 
 At this point, we are familiar with the different mechanisms a browser may use to determine the character encoding of an HTML document. But how could attackers exploit this?
 
-## Encoding Differentials[]()
+## Encoding Differentials
 
 The purpose of character encoding is to translate characters into a computer-processable byte sequence. These bytes can be transmitted over a network and decoded back to characters by the receiver. This way, the **exact same characters** that the sender intended to transmit are restored:
 
@@ -172,7 +172,7 @@ Although there are still a lot of other supported character encodings, most of t
 
 However, there is a particularly interesting encoding: **ISO-2022-JP**.
 
-## ISO-2022-JP[]()
+## ISO-2022-JP
 
 ISO-2022-JP is a Japanese character encoding defined in [RFC 1468](https://www.rfc-editor.org/rfc/rfc1468.html). It is one of the official character encodings that user agents must support, as defined by the [HTML standard](https://html.spec.whatwg.org/#character-encodings). Particularly interesting about this encoding is that it supports certain **escape sequences** to **switch between different character sets**.
 
@@ -184,7 +184,7 @@ This feature of ISO-2022-JP not only provides great flexibility but can also bre
 
 The following sections explain two different exploitation techniques that attackers may use when they can make the browser assume an ISO-2022-JP charset. Depending on the capabilities of the attacker, this can for example be achieved by directly controlling the `charset` attribute in the `Content-Type` header or by inserting a `<meta>` tag via an HTML injection vulnerability. If a web server provides an invalid `charset` attribute or none at all, there are usually no other prerequisites since attackers can easily switch the charset to ISO-2022-JP via auto-detection.
 
-### Technique 1: Negating Backslash Escaping[]()
+### Technique 1: Negating Backslash Escaping
 
 The scenario for this technique is that **user-controlled data** is placed **in a JavaScript string**:
 
@@ -226,7 +226,7 @@ Accordingly, the inserted double quote actually designates the end of the string
 
 Although this technique is quite powerful, it is limited to bypassing sanitization in a JavaScript context since a backslash character does not have special meaning in HTML. The next section explains a more advanced technique that can be applied in a pure HTML context.
 
-### Technique 2: Breaking HTML Context[]()
+### Technique 2: Breaking HTML Context
 
 The scenario for this second technique is that an attacker can control values in **two different HTML contexts**. A common use case would be a website that supports markdown. For example, let’s consider the following markdown text:
 
@@ -275,7 +275,7 @@ At this point, the `src` attribute value of the second image is not an attribute
 
 This, again, allows an attacker to inject arbitrary JavaScript code.
 
-## Summary[]()
+## Summary
 
 In this blog post, we highlighted the importance of providing charset information when serving HTML documents. The absence of charset information can lead to severe XSS vulnerabilities when attackers are able to change the character set that the browser assumes.
 

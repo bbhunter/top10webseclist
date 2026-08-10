@@ -76,7 +76,7 @@ Last year we shared some details on [GitHub’s CSP journey](https://githubengin
 
 With a solid foundation provided by CSP, we opened up an internal issue titled “Defending against post-CSP exploitation” to continue the journey. The goal of this issue was twofold. First, to research bypasses of our existing CSP policy and secondly, to brainstorm additional mitigations for attacks not prevented by CSP. We quickly identified a few ideas for additional defense-in-depth protections, but we were curious what gaps we hadn’t considered. To help us investigate this, we enlisted the expertise of [Cure53](https://cure53.de/). In a relatively unique project, we asked Cure53 to assess what an attacker could do, assuming a content injection bug in GitHub.com. As expected and hoped for, Cure53 identified a handful of interesting bypasses that helped evolve our mitigations. In this post, we wanted to share some of the mitigations that resulted from these efforts.
 
-### [`img-src` – How scary can an image really be?]()
+### `img-src` – How scary can an image really be?
 
 Locking down `img-src` isn’t at the top of the list when most people start working on CSP. But, as noted in last year’s writeup, once you have used CSP to address the low-hanging fruit related to actual JavaScript execution, you start to focus on how other tags can be used to exfiltrate sensitive information to a third-party. Images are a prime candidate, since many CSP policies are relatively permissive with what sources can be used. Using the same example as last year, consider the following injected content:
 
@@ -176,7 +176,7 @@ The second path parameter is simply the original URL hex encoded:
 
 The first path component is a HMAC of the original URL. The proxy will only fetch the image if the HMAC is valid for the URL. In the case of a content injection attack, it would be impossible to inject a proxied Camo URL unless you know the entire URL before it was injected. Looking at all of the examples above, image injections leverage unclosed attributes to capture unknown surrounding markup that includes various secrets. So, by definition, the attacker doesn’t know the full URL and an attacker would be unable to formulate a Camo proxy image URL with a valid HMAC. We now proxy all Gravatar URLs and were able to completely remove all Gravatar related sources from our `img-src` list.
 
-### [Dangling markup busting]()
+### Dangling markup busting
 
 A consistent goal in mitigating dangling markup attacks is to protect secrets contained within the page. CSRF tokens are a natural starting point when analyzing these attacks. In parallel with adding some of the other mitigations discussed later in this article, we also considered the problem purely from the perspective of blocking dangling markup in the first place. Our CSRF tokens are primarily written to a form input tag like the following:
 
@@ -285,7 +285,7 @@ Given this statement, I reached out to [@mikewest](https://github.com/mikewest),
 
 In the end, our dangling markup mitigation has a known bypass in the most popular browser used by GitHub users. We still feel the effort was worthwhile, as it has sparked discussion around the attack surface of dangling markup. Dangling markup is a non-trivial problem to solve and without efforts such as these, the problem sits stagnant. We are thrilled to have stirred up discussion with folks in a position to help mitigate the issue at the browser level.
 
-### [Per-form CSRF tokens]()
+### Per-form CSRF tokens
 
 While the content exfiltration attacks described above can potentially be used to disclose arbitrary secrets, the most common secrets to go after are CSRF tokens. CSRF tokens occur on nearly every page and the exfiltration of one can be easily leveraged to escalate privileges. Our existing CSP is already robust against exfiltration of CSRF tokens for the following reasons:
 
@@ -341,23 +341,23 @@ end
 
 This extra validation gets checked inline with our existing CSRF token. One caveat in coupling these checks is that we are restricting the same-site check to endpoints that already perform CSRF protection. Any endpoint mistakenly missing CSRF protection, such as an action incorrectly implemented as a `GET` based endpoint, would also bypass the new check. However, this helps protect against leaked CSRF tokens or regressions in our token-based checks. The additional validation provided by same-site cookies is a nice belt and suspender protection that required minimal changes in our code.
 
-### [Post-CSP odds and ends]()
+### Post-CSP odds and ends
 
 The four mitigations discussed are the largest of the efforts completed as a result of our “Defending against post-CSP exploitation” brainstorming. However, they aren’t the only things we worked on this journey. There were other ideas investigated and edge cases researched. Here is a quick hit list of some of our other changes:
 
-#### [“form nonces”]()
+#### “form nonces”
 
 To further combat injected forms, we experimented with adding a nonce in a data attribute for all `<form>` tags. Upon page load, we would execute JavaScript to enumerate all forms on the page and remove any form that didn’t contain the nonce. We ended up reverting this experiment since we found edge cases related to HTML caching. Luckily, our previously discussed mitigations provide a better overall solution.
 
-#### [Locking down dangerous JavaScript APIs]()
+#### Locking down dangerous JavaScript APIs
 
 GitHub uses [Facebox](http://defunkt.io/facebox/) to render many of our modal dialogs. In most cases, the HTML for the dialog is statically defined and referenced by a hidden `<div>` in the DOM. However, by default, Facebox supports fetching HTML partials from arbitrary hosts based on a data attribute. This could be leveraged in content injection attacks that control or inject attributes to render HTML from an arbitrary Amazon S3 bucket on GitHub.com. There were a handful of cases where we relied on this XHR functionality. So, we refactored these cases to reference a static hidden `<div>` and removed the XHR functionality from Facebox.
 
-#### [Moving S3 bucket URLs from subpath to subdomain]()
+#### Moving S3 bucket URLs from subpath to subdomain
 
 Part of what made the Facebox XHR functionality easy to exploit was the way we used S3. Early on, we had added `s3.amazonaws.com` to our `connect-src` since we had uses that were making requests to `https://s3.amazonaws.com/github-cloud`. However, this effectively opened up our `connect-src` to any Amazon S3 bucket. We refactored our URL generation and switched all call sites and our `connect-src` to use `https://github-cloud.s3.amazonaws.com` to reference our bucket.
 
-### [What’s next]()
+### What’s next
 
 As always, there is more to be done. While we are relatively satisfied with the mitigations put in place, we are excited to continue pushing our protections to the next level. We are particularly looking forward to exploring [suborigins](https://w3c.github.io/webappsec-suborigins/) once they ship in Chrome. There are some obvious basic uses, such as user-content sandboxing, but we would also like to investigate how to fully integrate and utilize the restrictions it provides.
 

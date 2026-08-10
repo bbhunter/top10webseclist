@@ -69,7 +69,7 @@ samy kamkar - NAT Slipstreaming v2.0
 
 **Read [Ben & Gregory's excellent technical writeup on v2 here](https://www.armis.com/research/nat-slipstreaming-v20/)** which goes deep into their updates of v2 with plenty of additional details.
 
-**v1 released**: October 31 [👻]() 2020
+**v1 released**: October 31 👻 2020
  **v2 released**: January 26, 2021
 
 **Source code**: [https://github.com/samyk/slipstream](https://github.com/samyk/slipstream)
@@ -78,40 +78,40 @@ samy kamkar - NAT Slipstreaming v2.0
 
 # Table of Contents
 
-- [Summary]()
-- [The deets]()
+- Summary
+- The deets
 
-- [Network Address Translation (NAT)]()
+- Network Address Translation (NAT)
 
-- [Connection Tracking]()
-- [Application Level Gateway]()
+- Connection Tracking
+- Application Level Gateway
 
-- [Router Investigation / Firmware Dumping]()
-- [Reverse Engineering Firmware]()
+- Router Investigation / Firmware Dumping
+- Reverse Engineering Firmware
 
-- [Finding Interesting Files]()
-- [Exploring Interesting Functions]()
-- [Ports / Services to Investigate]()
-- [Reversing the Kernel Object]()
-- [Attempting SIP Packet in HTTP POST]()
-- [Continue Reversing Kernel Object Further]()
+- Finding Interesting Files
+- Exploring Interesting Functions
+- Ports / Services to Investigate
+- Reversing the Kernel Object
+- Attempting SIP Packet in HTTP POST
+- Continue Reversing Kernel Object Further
 
-- [Connection Tracking / Application Level Gateway Investigation]()
+- Connection Tracking / Application Level Gateway Investigation
 
-- [Linux Netfilter]()
+- Linux Netfilter
 
-- [Packet Boundary / Fragmentation Control]()
-- [TCP Timing Attack / Internal Subnet & IP Discovery]()
+- Packet Boundary / Fragmentation Control
+- TCP Timing Attack / Internal Subnet & IP Discovery
 
-- [Timing Attack]()
+- Timing Attack
 
-- [Browser Protocol Confusion]()
+- Browser Protocol Confusion
 
-- [Live Browser Packet Alteration]()
+- Live Browser Packet Alteration
 
-- [Other Findings]()
-- [Example / Download]()
-- [Contact]()
+- Other Findings
+- Example / Download
+- Contact
 
 # Summary
 

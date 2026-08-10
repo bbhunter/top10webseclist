@@ -70,7 +70,7 @@ July 17, 2026
 
 # wp2shell: Pre Authentication RCE in WordPress Core
 
-Stay current: [Get research alerts for newly disclosed vulnerabilities and exposures]()
+Stay current: Get research alerts for newly disclosed vulnerabilities and exposures
 
 Searchlight Cyber’s security research team has discovered a pre-authentication RCE in WordPress Core. The attack has no preconditions and can be exploited by an anonymous user in a stock install of WordPress with no plugins.
 

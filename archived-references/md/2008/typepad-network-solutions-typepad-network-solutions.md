@@ -67,7 +67,7 @@ Typepad | Network Solutions
 
 Your previous provider has shut down, but your online presence can still thrive. Partner with Network Solutions to keep your domain, website, and brand moving forward.
 
-[Read our FAQs]()
+Read our FAQs
 
 Please enter a domain to search
 

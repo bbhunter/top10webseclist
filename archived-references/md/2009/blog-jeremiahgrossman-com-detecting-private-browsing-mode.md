@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 Jeremiah Grossman: Detecting Private Browsing Mode
 
-   []()
+   
 
 ###  Detecting Private Browsing Mode
 

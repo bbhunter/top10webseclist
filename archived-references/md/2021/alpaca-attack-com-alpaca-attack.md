@@ -60,8 +60,8 @@ page going offline. To read the original, follow the link above.
 
 ALPACA Attack
 
-- [Paper]()
-- [Q&A]()
+- Paper
+- Q&A
 - [How to ALPN/SNI](https://alpaca-attack.com/libs.html)
 - [Updates!](https://alpaca-attack.com/updates.html)
 

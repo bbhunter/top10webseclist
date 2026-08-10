@@ -70,7 +70,7 @@ page going offline. To read the original, follow the link above.
 
  By [Liv Matan](https://www.tenable.com/profile/liv-matan)
 
- [   ](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.tenable.com%2Fblog%2FEmoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced&title=EmojiDeploy%3A%20Smile%21%20Your%20Azure%20web%20service%20just%20got%20RCE%E2%80%99d%20._.) [   ](https://www.reddit.com/submit?url=https%3A%2F%2Fwww.tenable.com%2Fblog%2FEmoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced&title=EmojiDeploy%3A%20Smile%21%20Your%20Azure%20web%20service%20just%20got%20RCE%E2%80%99d%20._.) [   ](https://twitter.com/intent/tweet?urlhttps%3A%2F%2Fwww.tenable.com%2Fblog%2FEmoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced&text=EmojiDeploy%3A%20Smile%21%20Your%20Azure%20web%20service%20just%20got%20RCE%E2%80%99d%20._.)  [  Subscribe  ]()
+ [   ](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.tenable.com%2Fblog%2FEmoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced&title=EmojiDeploy%3A%20Smile%21%20Your%20Azure%20web%20service%20just%20got%20RCE%E2%80%99d%20._.) [   ](https://www.reddit.com/submit?url=https%3A%2F%2Fwww.tenable.com%2Fblog%2FEmoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced&title=EmojiDeploy%3A%20Smile%21%20Your%20Azure%20web%20service%20just%20got%20RCE%E2%80%99d%20._.) [   ](https://twitter.com/intent/tweet?urlhttps%3A%2F%2Fwww.tenable.com%2Fblog%2FEmoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced&text=EmojiDeploy%3A%20Smile%21%20Your%20Azure%20web%20service%20just%20got%20RCE%E2%80%99d%20._.)    Subscribe  
 
  ![Tenable Cloud Security](https://www.tenable.com/sites/default/files/images/articles/Blog-Cloud_Banners_5_5.png)
 

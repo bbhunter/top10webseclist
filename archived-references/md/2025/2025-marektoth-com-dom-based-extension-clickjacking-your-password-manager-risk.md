@@ -85,7 +85,7 @@ This security research was presented at [DEF CON 33](https://defcon.org/html/def
  LogMeOnce: 7.12.7 fixed - released: 9.9.2025, <=7.12.6 vulnerable
 
  Update 14.1.2026:
- New section "Web applications with custom content (no vulnerability required)" in [Impact-Login credentials]()
+ New section "Web applications with custom content (no vulnerability required)" in Impact-Login credentials
  Updated the latest vulnerable versions
 
 ---
@@ -102,47 +102,47 @@ A **single click anywhere** on a attacker controlled website could **allow attac
 
 Table of contents:
 
-- [Key Information]()
-- [Introduction]()
+- Key Information
+- Introduction
 
-- [Intrusive Web Elements]()
-- [Clickjacking (Web Application)]()
-- [Password Managers]()
+- Intrusive Web Elements
+- Clickjacking (Web Application)
+- Password Managers
 
-- [Browser Extension Clickjacking]()
-- [IFRAME-based]()
-- [**DOM-based Extension Clickjacking**]()
-- [Extension Element]()
+- Browser Extension Clickjacking
+- IFRAME-based
+- **DOM-based Extension Clickjacking**
+- Extension Element
 
-- [Root Element]()
-- [Child Element]()
+- Root Element
+- Child Element
 
-- [Parent Element]()
+- Parent Element
 
-- [BODY]()
-- [HTML]()
+- BODY
+- HTML
 
-- [Overlay]()
+- Overlay
 
-- [Partial Overlay]()
-- [Full Overlay]()
+- Partial Overlay
+- Full Overlay
 
-- [Position]()
-- [Password Managers: Test Results]()
-- [Detection]()
-- [Impact]()
+- Position
+- Password Managers: Test Results
+- Detection
+- Impact
 
-- [Credit Card, Personal Data]()
-- [Login Credentials]()
-- [Passkeys]()
+- Credit Card, Personal Data
+- Login Credentials
+- Passkeys
 
-- [Password Managers: Vulnerable & Fixed Versions]()
-- [Demo Sites]()
-- [Users at Risk]()
-- [Limitation]()
-- [Mitigation]()
-- [Recommendations for Users]()
-- [Conclusion]()
+- Password Managers: Vulnerable & Fixed Versions
+- Demo Sites
+- Users at Risk
+- Limitation
+- Mitigation
+- Recommendations for Users
+- Conclusion
 
 ## Key Information
 
@@ -664,7 +664,7 @@ As the name suggests, it can be set so that the UI is always under the mouse cur
 - the newly created form position has the current mouse coordinates
  - every 100ms focus() on input = UI follows the form
 
-Result: **1 click anywhere on the website = An attacker has your data **(see more the [Impact section]())
+Result: **1 click anywhere on the website = An attacker has your data **(see more the Impact section)
 
 ```js
 document.addEventListener('mousemove', function (event) {
@@ -683,7 +683,7 @@ The table below shows **the status of whether password managers were vulnerable*
 
  ![](https://marektoth.com/images/dombased-vulnerable2.png)
 
-Current vulnerability status is in section [Password Managers: Vulnerable & Fixed Versions]().
+Current vulnerability status is in section Password Managers: Vulnerable & Fixed Versions.
 
 ## Detection
 
@@ -750,7 +750,7 @@ In this case, **the attacker needs to find some vulnerability, such as XSS**, su
 The attacker can exfiltrate these data:
 
 - **Login credentials** - username, password, TOTP (2FA)
-+ the attacker can also obtain data that is not limited to the domain = payment card and personal data (see [above]())
++ the attacker can also obtain data that is not limited to the domain = payment card and personal data (see above)
 
 Password managers allow not only storing credentials, but also storing TOTP (Time-based one-time password). If a user saves TOTP in the password manager instead of in another application (Google Authenticator), the **attacker could also exfiltrate TOTP**, often without additional user interaction.
 
@@ -797,7 +797,7 @@ Although it may seem like a security vulnerability, this is not the case. Some p
 The impact is identical to finding a security vulnerability, as an attacker can exfiltrate the following data:
 
 - **Login credentials** - username, password, TOTP (2FA)
-+ the attacker can also obtain data that is not limited to the domain = payment card and personal data (see [above]())
++ the attacker can also obtain data that is not limited to the domain = payment card and personal data (see above)
 
 **Example for Shopify (e-commerce platform):**
 
@@ -805,7 +805,7 @@ Every user logs into the admin panel via https://accounts.shopify.com
 
  ![](https://marektoth.com/images/shopify-login.png)
 
-→ The user has credentials saved for **accounts.shopify.com** in their password manager (autofill for *.shopify.com, see [autofill for all subdomains]())
+→ The user has credentials saved for **accounts.shopify.com** in their password manager (autofill for *.shopify.com, see autofill for all subdomains)
 
 After logging in, the user is redirected to their administration panel (https://admin.shopify.com/store/), where they can manage their e-shop content (e-shop HTML pages) or upload various files.
 
@@ -821,7 +821,7 @@ Confirmation that anything can be stored on Shopify CDN - “Shopify allows merc
 
 Executing custom JavaScript on cdn.shopify.com normally cannot achieve any impact. Data cannot be obtained from the administration panel because it is a different subdomain - it is not possible to send a request to the admin and receive a response (data cannot be obtained due to the request from a different subdomain **cdn**.shopify.com → **admin**.shopify.com).
 
-However, by utilizing the DOM-based extension clickjacking technique, it is possible to obtain saved credentials from the password manager, because all password managers autofill credentials into all subdomains (described in [autofill for all subdomains]()).
+However, by utilizing the DOM-based extension clickjacking technique, it is possible to obtain saved credentials from the password manager, because all password managers autofill credentials into all subdomains (described in autofill for all subdomains).
 
 → Credentials will be autofilled on cdn.shopify.com since it is a shopify.com domain = after the victim clicks, the attacker obtains their saved admin credentials.
 
@@ -1178,7 +1178,7 @@ All vulnerabilities were reported in April 2025 with a notice that public disclo
 
 PoC with Credit Card:
 
-See more in [Credit Card section]()
+See more in Credit Card section
 
 **❌ LastPass**
  **Vulnerable version:** <=4.150.1 (**latest** 14.1.2026)

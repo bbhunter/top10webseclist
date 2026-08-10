@@ -72,7 +72,7 @@ December 3, 2012, 10:17PM
 
 -
 
-[]()[]()[]()[Share]()[]()[]()
+Share
 
 by [Anne Saita](http://threatpost.com/author/Anne Saita)
 

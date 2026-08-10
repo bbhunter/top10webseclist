@@ -62,15 +62,15 @@ Just by clicking a link, it’s possible for an attacker to steal a GitHub token
 
 ### Table of Contents
 
-- [Background]()
-- [VSCode Webview Security Model]()
+- Background
+- VSCode Webview Security Model
 
-- [The Bug]()
+- The Bug
 
-- [PoC and Protecting Yourself]()
-- [What VSCode Did Well]()
-- [Why Full Disclosure]()
-- [Timeline]()
+- PoC and Protecting Yourself
+- What VSCode Did Well
+- Why Full Disclosure
+- Timeline
 
 # Background
 

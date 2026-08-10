@@ -952,7 +952,6 @@ I
 )
 5:
 mut
-_
 input
 =
 M
@@ -962,13 +961,11 @@ input
 )
 6:
 generation
-_
 paths
 =
 ;
 7:
 generation
-_
 outputs
 =
 ;
@@ -979,38 +976,31 @@ app
 do
 9:
 app
-_
 path; app
-_
 outputs
 =
 R
 UN
 (
 app; mut
-_
 input
 )
 10:
 geneneration
-_
 paths
 [
 =
 f
 app
-_
 path
 g
 11:
 geneneration
-_
 outputs
 [
 =
 f
 app
-_
 outputs
 g
 12:
@@ -1023,11 +1013,9 @@ P
 ATTERN
 (
 generation
-_
 paths
 ,
 generation
-_
 outputs;
 GlobalState
 )
@@ -1035,7 +1023,6 @@ then
 14:
 I I [
 mut
-_
 input
 15:
 end if
@@ -1047,7 +1034,6 @@ D
 ISCREPANCY
 (
 generation
-_
 outputs
 )
 then
@@ -1056,7 +1042,6 @@ discrepancies
 [
 =
 mut
-_
 input
 18:
 end if
@@ -1295,7 +1280,6 @@ under input
 i
 . Let
 path
-_
 set
 p;i
 be the set
@@ -1304,7 +1288,6 @@ path
 p;i
 . Thus
 path
-_
 set
 p;i
 contains no duplicate edges, but instead holds only the
@@ -1326,19 +1309,16 @@ P
 =
 h
 path
-_
 set
 p
 1
 ;i
 ; path
-_
 set
 p
 2
 ;i
 ; :::; path
-_
 set
 p
 jPj
@@ -1606,11 +1586,9 @@ P
 ATTERN
 (
 gen
-_
 paths
 ,
 gen
-_
 outputs
 ,
 GlobalState
@@ -1631,7 +1609,6 @@ PDC
 OARSE
 (
 gen
-_
 paths; GlobalState
 )
 5:
@@ -1648,7 +1625,6 @@ PDF
 INE
 (
 gen
-_
 paths; GlobalState
 )
 8:
@@ -1663,7 +1639,6 @@ j
 =
 OD(
 gen
-_
 outputs; GlobalState
 )
 11:
@@ -1735,12 +1710,10 @@ PDC
 OARSE
 (
 generation
-_
 paths; GS
 )
 5:
 path
-_
 card
 =
 ;
@@ -1749,12 +1722,10 @@ for
 path
 in
 generation
-_
 paths
 do
 7:
 path
-_
 card
 [
 =
@@ -1769,25 +1740,19 @@ end for
 ; check against stored tuples in the GlobalState
 11:
 new
-_
 card
-_
 tuple
 =
 fh
 path
-_
 card
 ig n
 GS:P DC
-_
 tuples
 12:
 if
 new
-_
 card
-_
 tuple
 6
 =
@@ -1797,23 +1762,18 @@ then
 ; If new, add to GlobalState and update score
 14:
 GS:P DC
-_
 tuples
 [
 =
 new
-_
 card
-_
 tuple
 15:
 GlobalState:P DC
-_
 Score
 =
 j
 GS:P DC
-_
 tuples
 j
 16:
@@ -1836,12 +1796,10 @@ PDF
 INE
 (
 generation
-_
 paths; GS
 )
 22:
 path
-_
 set
 =
 ;
@@ -1850,12 +1808,10 @@ for
 path
 in
 generation
-_
 paths
 do
 24:
 path
-_
 set
 [
 =
@@ -1866,23 +1822,18 @@ g
 end for
 26:
 new
-_
 paths
 =
 fh
 path
-_
 set
 ig n
 GS:P DF
-_
 tuples
 27:
 if
 new
-_
 path
-_
 tuple
 6
 =
@@ -1890,23 +1841,18 @@ tuple
 then
 28:
 GS:P DF
-_
 tuples
 [
 =
 new
-_
 path
-_
 tuple
 29:
 GlobalState:P DF
-_
 Score
 =
 j
 GS:P DF
-_
 tuples
 j
 30:
@@ -1927,30 +1873,23 @@ end procedure
 procedure
 OD(
 generation
-_
 outputs; GS
 )
 36:
 new
-_
 output
-_
 tuple
 =
 fh
 output
-_
 tuple
 ig n
 GS:OD
-_
 tuples
 37:
 if
 new
-_
 output
-_
 tuple
 6
 =
@@ -1958,23 +1897,18 @@ tuple
 then
 38:
 GS:OD
-_
 tuples
 [
 =
 new
-_
 output
-_
 tuple
 39:
 GlobalState:OD
-_
 Score
 =
 j
 GS:OD
-_
 tuples
 j
 40:
@@ -2181,7 +2115,9 @@ Process_i (Data)NEZHA_TestStartNEZHA_TestEndLLVMFuzzerNezhaPathsLLVMFuzzerNezhaO
 
 --- page 13 ---
 
-Ð01!"&=#"5432#"&546;232#32654&#"“<´i½ÿËg¤;5W3_n9$$"'ý�d{9»+6+»+¸+¹ô¸6¸Ð¸/¸+¸Ð¸¹/ôº/9¸¹#ô¹ô¸¸;Ü¸EX¸/¹>Y¸EX¸/¹>Y¸EX¸2/¹2>Y»+¸2¹ô¸¹'ôAé'ù']A8'H'X'h'x'ˆ'˜'¨'¸'È'Ø']º'9¸¸Ð¸Ð¸"Ð¸#Ð¸+Ð¸,Ð017#"&546;2>3232#!"&546;4&#"32#!"&5463îD3ª
+Ð01!"&=#"5432#"&546;232#32654&#"“<´i½ÿËg¤;5W3_n9$$"'ý�d{9»+6+»+¸+¹ô¸6¸Ð¸/¸+¸Ð¸¹/ôº
+/9¸¹#ô¹ô¸¸;Ü¸EX¸/¹>Y¸EX¸/¹>Y¸EX¸2/¹2>Y»+¸2¹ô¸¹'ôAé'ù']A8'H'X'h'x'ˆ'˜'¨'¸'È'Ø']º
+'9¸¸Ð¸Ð¸"Ð¸#Ð¸+Ð¸,Ð017#"&546;2>3232#!"&546;4&#"32#!"&5463îD3ª
 
 --- page 14 ---
 
@@ -3082,7 +3018,6 @@ e_ident
 eld.
 1
 static int load_elf_binary(struct linux_binprm
-*
 bprm) {
 2
 ...
@@ -3138,7 +3073,6 @@ next->coder->dict.buf
 9
 10
 lzma_alloc(size_t size, const lzma_allocator
-*
 allocator) {
 11
 ...
@@ -3164,7 +3098,6 @@ ClamAV does not consider the le as an archive, and thus
 skips scanning the compressed malware.
 1
 SRes LzmaDec_Allocate(.., const Byte
-*
 props, ...) {
 2
 ...
@@ -3178,7 +3111,6 @@ if (p->dic == 0 || dicBufSize != p->dicBufSize){
 // Invoke __xz_wrap_alloc()
 7
 p->dic = (Byte
-*
 )alloc->Alloc(alloc, dicBufSize);
 8
 if (p->dic == 0) {
@@ -3191,15 +3123,11 @@ return SZ_ERROR_MEM;
 12
 13
 void
-*
 __xz_wrap_alloc(void
-*
 unused, size_t size) {
 14
 // Fails if size > (182
-*
 1024
-*
 1024)
 15
 if(!size || size > CLI_MAX_ALLOCATION)
@@ -3299,9 +3227,7 @@ int asn1_time_parse(..., size_t len, ..., int mode) {
 int type = 0;
 4
 /
-*
 Constrain to valid lengths.
-*
 /
 5
 if (len != UTCTIME_LENGTH && len != GENTIME_LENGTH)
@@ -4125,19 +4051,15 @@ and continues to parse
 the bitstring as-is as shown in Listing 8.
 1
 ASN1_BIT_STRING
-*
 c2i_ASN1_BIT_STRING(..., char
-**
 pp) {
 2
 ...
 3
 p =
-*
 pp;
 4
 padding =
-*
 (p++);
 5
 // returns an error if invalid padding byte
@@ -4161,19 +4083,15 @@ bitstrings
 .
 1
 ASN1_BIT_STRING
-*
 c2i_ASN1_BIT_STRING(..., char
-**
 pp) {
 2
 ...
 3
 p =
-*
 pp;
 4
 i =
-*
 (p++);
 5
 // masks the padding byte, instead of with a check
@@ -4239,12 +4157,14 @@ Global coverage
 
 --- page 33 ---
 
-á‰M¿›†¦Rå»þÎ¢£§˜ôªTÑ2ºà_çÞ×
+á‰M¿›†¦Rå»þÎ¢£§˜
+ôªTÑ2ºà_çÞ×
 
 --- page 34 ---
 
 YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
+ $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
+½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
 
 --- page 35 ---
 
@@ -4252,5 +4172,6 @@ I€ÚE±aO2­ùá#r9‹´Ðœxp~OYâ,â³ÒúþS–Î�{§ŸÉ{†lš¢ØCsák
 
 --- page 36 ---
 
-Ù Ï¤CpJâ‹À.œua¿¤_–ü_×O½IÌeÆ: ¾©ëì1ý èÉ�TÿB”·;¦jÚ2 À?ìÆz’�±$¿Gªÿà^6åj‹Lf8J¦›“5öf4~�§aùú–þtWp¥¬Ä‘‡.qä…øÐ¦!È78­*³Ó1gaÚPÜ´ìuß¾rœÇ/OQÔ…�¯ØtÏÁ1¹Å°ì“kU„]bgCŸ•I¦ó+À&Fb‹ul¼Ë&DÎÖö�îS§l½Ø¾y8†j�Ã2Œ8ò°_i¿{†ßø±	F†©�iõÕ< =1�î’£}�_�Ñè$ûM¦¹å]è}z³¿…ê@úÒU¢mÀ€‘wö­Ïi�”slú7GÃ˜``ý÷xê‹ãJÅ
+Ù Ï¤CpJâ‹À.œua¿¤_–ü_×O½IÌeÆ: ¾©ëì1ý èÉ�TÿB”·;¦jÚ2 À?ìÆz’�±$¿Gªÿà^6åj‹Lf8J¦›“5öf4~�§aùú–þtWp¥¬Ä‘‡.qä…øÐ¦!È78­*³Ó1gaÚPÜ´ìuß¾
+rœÇ/OQÔ…�¯ØtÏÁ1¹Å°ì“kU„]bgCŸ•I¦ó+À&Fb‹ul¼Ë&DÎÖö�îS§l½Ø¾y8†j�Ã2Œ8ò°_i¿{†ßø±	F†©�iõÕ< =1�î’£}�_�Ñè$ûM¦¹å]è}z³¿…ê@úÒU¢mÀ€‘wö­Ïi�”slú7GÃ˜``ý÷xê‹ãJÅ
 5Äüìý·Gÿ°òéOKÂ=qêr"C^ýè¡Ô•üÞöÙ¢š­‹wq —xXE6�Ó­¿ºuÙ‘úJ¨„ÚL€`›œƒ$e <I¾=

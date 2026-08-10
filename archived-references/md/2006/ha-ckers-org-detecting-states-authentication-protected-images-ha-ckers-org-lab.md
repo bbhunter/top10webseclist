@@ -81,7 +81,7 @@ Let’s assume you have an image that’s inside the members directory as seen a
 
 You can take it further by looking for scripts that are hidden behind protected directories. Admittedly I’ve never seen anything like that, except in basic auth situations but I’m sure there are examples out there. But here’s where the story ends. Neither Jeremiah or I could think of anything off the tops of our heads that would allow this technique to be more prevalent. Ideas?
 
-  This entry was posted on Wednesday, November 8th, 2006 at 3:30 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Wednesday, November 8th, 2006 at 3:30 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

@@ -106,10 +106,9 @@ So for instance, if you are running Ubuntu 8.10 (intrepid), then the crash only 
 Either way, the fact that the daemon crashes when the maximum number of RSS subscriptions is exceeded is a* separate issue* to the lack-of-authentication problem when managing RSS subscriptions (<1.3.8). Even though on Mac OS X Leopard (CUPS >=1.38) authentication *is* required to manage RSS subscriptions, Apple has acknowledged the crash issue and is currently working on a fix.
 
 Finally, this bug cannot lead to code execution, since it's a NULL pointer dereference as confirmed by redb0ne and Josh Bressers from Red Hat Security Response Team: [http://openwall.com/lists/oss-security/2008/11/19/4](http://openwall.com/lists/oss-security/2008/11/19/4)**
-**
 
   |   |
 
 -  [cups_dos_poc.html.txt](http://lab.gnucitizen.org/projects/cups-0day/cups_dos_poc.html.txt?attredirects=0) 1k - on Nov 19, 2008 2:48 PM by Adrian Pastor (version 2 / [earlier versions](http://lab.gnucitizen.org/system/app/pages/revisions?target=wuid:gx:78e8cd76c50ec1a))
 
- []()
+ 

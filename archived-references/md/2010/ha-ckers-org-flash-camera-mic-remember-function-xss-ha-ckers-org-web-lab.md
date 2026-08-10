@@ -77,7 +77,7 @@ Clearly XSS is bad in of itself, but once settings are permanently remembered, e
 
 The nice thing about this attack is if it fails it doesn’t create a modal dialog alerting the user to the fact that they were under attack (one of the many perils of not using modal dialogs). So the moral of the story is even if your app contains no sensitive data, you need to be extremely careful of XSS. Oh, yeah and Flash may want to allow the web sites in question to remove the “Remember” function from their apps in future versions.
 
-  This entry was posted on Sunday, July 18th, 2010 at 5:42 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Sunday, July 18th, 2010 at 5:42 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

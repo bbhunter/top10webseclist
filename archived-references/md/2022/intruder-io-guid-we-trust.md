@@ -78,7 +78,7 @@ bcd510ca-3357-48d7-8e3f-1206b9c09632
 
 The first of these is the version number, which can be found directly after the second hyphen. For example, the GUID shown above is a version 4 GUID.
 
-There are five[ ]()possible values for this version detailed in the [RFC](https://datatracker.ietf.org/doc/html/rfc4122#section-4.2.2):
+There are five possible values for this version detailed in the [RFC](https://datatracker.ietf.org/doc/html/rfc4122#section-4.2.2):
 
 **Version 0**
 

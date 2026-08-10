@@ -73,7 +73,7 @@ With all this anti-DNS pinning stuff going on, [Martin Johns](http://shampoo.ant
 
 However it is pretty trivial to detect LocalRodeo by actually trying to connect to localhost. Because LocalRodeo won’t let the connection take place, neither an onload nor an onerror event handler will fire. However the DOM is not modified so you can’t just iterate over the images and see if the source still points to the correct location. But the first part is enough to [detect if LocalRodeo is installed or not](http://ha.ckers.org/weird/localrodeo.html) (example requires JavaScript). Still, it’s a great tool and I encourage people to try it out and give feedback to help improve it.
 
-  This entry was posted on Tuesday, April 3rd, 2007 at 10:58 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Tuesday, April 3rd, 2007 at 10:58 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

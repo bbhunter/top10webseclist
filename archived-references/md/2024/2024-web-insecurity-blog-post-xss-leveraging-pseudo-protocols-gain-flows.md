@@ -61,9 +61,9 @@ page going offline. To read the original, follow the link above.
 
 POSTS May 10, 2024 19 min read 3841 words
 
-In 2020, a [blog post](https://security.lauritz-holtmann.de/post/sso-security-redirect-uri/) was published here about the real-world security implications of a vague specification of the *Redirect URI* within the *OAuth 2.0 RFC*[1](). At that time, I focussed on *redirect-based flows*. This post uncovers additional protocol-level issues that lead to security vulnerabilities in popular and well-audited SSO implementations such as *Authentik* (CVE-2024-21637), *Keycloak* (CVE-2023-6134), and *FusionAuth*. Notably, the vulnerabilities were identified in the context of the *OAuth 2.0 Form Post Response Mode*[2]() **and** the *SAML POST-Binding*[3]() and therefore are not limited to OAuth 2.0 and OpenID Connect, but also affect SAML-based SSO-Flows.
+In 2020, a [blog post](https://security.lauritz-holtmann.de/post/sso-security-redirect-uri/) was published here about the real-world security implications of a vague specification of the *Redirect URI* within the *OAuth 2.0 RFC*1. At that time, I focussed on *redirect-based flows*. This post uncovers additional protocol-level issues that lead to security vulnerabilities in popular and well-audited SSO implementations such as *Authentik* (CVE-2024-21637), *Keycloak* (CVE-2023-6134), and *FusionAuth*. Notably, the vulnerabilities were identified in the context of the *OAuth 2.0 Form Post Response Mode*2 **and** the *SAML POST-Binding*3 and therefore are not limited to OAuth 2.0 and OpenID Connect, but also affect SAML-based SSO-Flows.
 
-In this post, we will dive into specification inaccuracies regarding the use of dangerous *pseudo-schemes* (JavaScript-URIs) in combination with POST-based SSO flows such as the *OAuth 2.0 Form Post Response Mode*[2]() and the *SAML POST-Bindings*[3](), resulting in a *protocol-level* Cross-Site Scripting (XSS) vulnerability pattern.
+In this post, we will dive into specification inaccuracies regarding the use of dangerous *pseudo-schemes* (JavaScript-URIs) in combination with POST-based SSO flows such as the *OAuth 2.0 Form Post Response Mode*2 and the *SAML POST-Bindings*3, resulting in a *protocol-level* Cross-Site Scripting (XSS) vulnerability pattern.
 
 ---
 
@@ -75,52 +75,52 @@ Then you might be vulnerable to a protocol-level XSS vulnerability. This post wi
 
 #### Table of Contents
 
-- [Fundamentals and Background]()
+- Fundamentals and Background
 
-- [The `javascript:` Pseudo-Protocol]()
+- The `javascript:` Pseudo-Protocol
 
-- [XSS Gadgets: HTML Forms and The `javascript:` Scheme]()
-- [window.open() and The `javascript:` Scheme]()
+- XSS Gadgets: HTML Forms and The `javascript:` Scheme
+- window.open() and The `javascript:` Scheme
 
-- [POST Requests in SSO-Flows]()
+- POST Requests in SSO-Flows
 
-- [OAuth 2.0 and OpenID Connect]()
+- OAuth 2.0 and OpenID Connect
 
-- [Redirect URI]()
-- [OAuth 2.0 Form Post Response Mode]()
-- [Side Note: OAuth 2.0 Web Message Response Mode]()
+- Redirect URI
+- OAuth 2.0 Form Post Response Mode
+- Side Note: OAuth 2.0 Web Message Response Mode
 
-- [SAML POST-Binding]()
+- SAML POST-Binding
 
-- [Assembling The Puzzle: Uncovering a Protocol-Level Vulnerability Pattern]()
-- [Impact]()
+- Assembling The Puzzle: Uncovering a Protocol-Level Vulnerability Pattern
+- Impact
 
-- [Attacker Models]()
-- [Exemplary XSS Payloads]()
-- [CVSS Calculation]()
+- Attacker Models
+- Exemplary XSS Payloads
+- CVSS Calculation
 
-- [Example: CVE-2023-6134: Keycloak XSS Via response_mode=form_post And Wildcard Redirect URI]()
-- [Evaluation of Popular SSO-Providers]()
-- [Recommendations and Proposed Fix]()
-- [Conclusion]()
+- Example: CVE-2023-6134: Keycloak XSS Via response_mode=form_post And Wildcard Redirect URI
+- Evaluation of Popular SSO-Providers
+- Recommendations and Proposed Fix
+- Conclusion
 
-- [Future Work]()
-- [Takeaways for Security Researchers]()
-- [Appendix: Selection of Test Cases]()
+- Future Work
+- Takeaways for Security Researchers
+- Appendix: Selection of Test Cases
 
-- [References]()
+- References
 
 ---
 
 ### Fundamentals and Background
 
-In this section, we will take a deep dive into the theoretical and historical background of this post. We will start in the early days of JavaScript and will make our way from the *Security Assertion Markup Language* (SAML) to *OAuth* and *OpenID Connect* and their most recent response modes and flow variants. If you are familiar wih all these topics, [you may want to directly jump to the core of the vulnerability pattern]().
+In this section, we will take a deep dive into the theoretical and historical background of this post. We will start in the early days of JavaScript and will make our way from the *Security Assertion Markup Language* (SAML) to *OAuth* and *OpenID Connect* and their most recent response modes and flow variants. If you are familiar wih all these topics, you may want to directly jump to the core of the vulnerability pattern.
 
 #### The `javascript:` Pseudo-Protocol
 
-The `javascript:` resource identifier scheme or “*pseudo-protocol*” was formally defined in an IETF draft in 2010[4](): “*Using [‘javascript’ resource identifier] scheme, executable script code can be specified in contexts that support resource identifiers*”.
+The `javascript:` resource identifier scheme or “*pseudo-protocol*” was formally defined in an IETF draft in 20104: “*Using [‘javascript’ resource identifier] scheme, executable script code can be specified in contexts that support resource identifiers*”.
 
-But little surprising, the *pseudo-protocol* was invented way before 2010. The very first references I could find are from *David Flannagan*’s *JavaScript: The Definitive Guide*[5]() (second version from 1997):
+But little surprising, the *pseudo-protocol* was invented way before 2010. The very first references I could find are from *David Flannagan*’s *JavaScript: The Definitive Guide*5 (second version from 1997):
 
 >
 
@@ -139,9 +139,9 @@ That being said, I did not find any good source regarding the origin in which th
 
 ##### XSS Gadgets: HTML Forms and The `javascript:` Scheme
 
-While, according to the W3C[6]() on HTML form’s `action` URI, “*User agent behavior for a value other than an HTTP URI is undefined*”, as of May 2024, all major user agents accept `javascript:` URIs[4]() as an `action` attribute.
+While, according to the W3C6 on HTML form’s `action` URI, “*User agent behavior for a value other than an HTTP URI is undefined*”, as of May 2024, all major user agents accept `javascript:` URIs4 as an `action` attribute.
 
-This is not very surprising, as this is also a behavior *David Flannagan* already outlined in 1997[5]():
+This is not very surprising, as this is also a behavior *David Flannagan* already outlined in 19975:
 
 >
 
@@ -160,7 +160,7 @@ The following simple example indicates, that HTML forms can be utilized to evalu
 
 ##### window.open() and The `javascript:` Scheme
 
-Another XSS gadget is the `window.open()` method[7](). In case this method is called with a `javascript:`-URI, likewise to previous examples, JavaScript is evaluated in the origin of the embedding document:
+Another XSS gadget is the `window.open()` method7. In case this method is called with a `javascript:`-URI, likewise to previous examples, JavaScript is evaluated in the origin of the embedding document:
 
 ```html
 <script>
@@ -201,17 +201,17 @@ Achieving a POST Request that is performed as top-level navigation including a c
 
 #### OAuth 2.0 and OpenID Connect
 
-*The following section will highlight certain aspects of the OAuth 2.0 and OpenID Connect protocol. Fundamentals for these protocols can be found [in this post](https://security.lauritz-holtmann.de/post/xss-ato-gadgets/#fundamentals) or [PortSwigger’s awesome academy](https://portswigger.net/web-security/oauth)[8]() and will not be covered in detail here.*
+*The following section will highlight certain aspects of the OAuth 2.0 and OpenID Connect protocol. Fundamentals for these protocols can be found [in this post](https://security.lauritz-holtmann.de/post/xss-ato-gadgets/#fundamentals) or [PortSwigger’s awesome academy](https://portswigger.net/web-security/oauth)8 and will not be covered in detail here.*
 
 ##### Redirect URI
 
-The `redirect_uri` validation is crucial for the security of an OpenID Connect Identity Provider implementation[9](). The OpenID Connect specification requires, that the provided value within the Authentication Request “*[…] MUST exactly match one of the Redirection URI values for the Client pre-registered at the OpenID Provider*”[6](). The comparison must be performed using “*simple string comparison*”. On the other hand, the specification is quite vague regarding the allowed schemes for `redirect_uri` values. Https should be used, but “*The Redirection URI MAY use an alternate scheme, such as one that is intended to identify a callback into a native application […]*"[6]().
+The `redirect_uri` validation is crucial for the security of an OpenID Connect Identity Provider implementation9. The OpenID Connect specification requires, that the provided value within the Authentication Request “*[…] MUST exactly match one of the Redirection URI values for the Client pre-registered at the OpenID Provider*”6. The comparison must be performed using “*simple string comparison*”. On the other hand, the specification is quite vague regarding the allowed schemes for `redirect_uri` values. Https should be used, but “*The Redirection URI MAY use an alternate scheme, such as one that is intended to identify a callback into a native application […]*"6.
 
 ❗️ Essentially, in case an OIDC Provider aims to support native applications, the above specification suggests allowing any arbitrary schemes without indication that there may be certain reserved schemes that may have security implications. ❗️
 
 ##### OAuth 2.0 Form Post Response Mode
 
-The *OAuth 2.0 Form Post Response Mode*[2]() defines a mechanism to utilize HTTP POST requests for the *Authorization Response*. To do so, auto-submitted HTML forms are utilized.
+The *OAuth 2.0 Form Post Response Mode*2 defines a mechanism to utilize HTTP POST requests for the *Authorization Response*. To do so, auto-submitted HTML forms are utilized.
 
 The specification gives [the following example](https://openid.net/specs/oauth-v2-form-post-response-mode-1_0.html#FormPostResponseExample) (taken 1:1 from the specification):
 
@@ -281,7 +281,7 @@ state=DcP7csa3hMlvybERqcieLHrRzKBra
 
 ##### Side Note: OAuth 2.0 Web Message Response Mode
 
-The (outdated) draft for the *OAuth 2.0 Web Message Response Mode*[10]() includes the following JavaScript code:
+The (outdated) draft for the *OAuth 2.0 Web Message Response Mode*10 includes the following JavaScript code:
 
 ```javascript
 function connect(request, callback) {
@@ -308,7 +308,7 @@ The *Security Assertion Markup Language* (SAML) protocol specifies multiple bind
 
 ```
 
-The above example was again taken 1:1 from the specification[3]().
+The above example was again taken 1:1 from the specification3.
 
 ---
 
@@ -351,7 +351,7 @@ The following attacker models are considered:
 
 ##### Web Attacker
 
-This attacker model is based on the unauthenticated web attacker model which was introduced by Barth et al. in 2008 [11](). A malicious actor under this model can lure a victim user to visit a malicious website. The attacker’s objective is to obtain the victim’s OAuth credentials or to perform actions on behalf of the victim user. In case the victim user has (super-)admin capabilities, the attacker’s objective is to escalate their privileges.
+This attacker model is based on the unauthenticated web attacker model which was introduced by Barth et al. in 2008 11. A malicious actor under this model can lure a victim user to visit a malicious website. The attacker’s objective is to obtain the victim’s OAuth credentials or to perform actions on behalf of the victim user. In case the victim user has (super-)admin capabilities, the attacker’s objective is to escalate their privileges.
 
 In the wild, this attacker model was only observed in a few instances. A requirement for this attacker model is that the unprivileged attacker can arbitrarily choose the `redirect_uri` or `ACS-URL` within an SSO-Flow. This can be for instance the case, if the SSO-Provider allows wildcard `redirect_uri` values or wildcard `ACS-URL` values and the client is insecurely configured to allow arbitrary `redirect_uri` or `ACS-URL` values.
 
@@ -409,7 +409,7 @@ The above script creates two input fields, one of type `text` and one of type `p
 
 ##### Payload 3: Privilege Escalation by Creating a Backdoored User
 
-In case the management console and the SSO endpoints share their origin[1]() at the identity provider, privilege escalation by targeting a (auper-)admin is likely possible. The following idealized example illustrates that approach:
+In case the management console and the SSO endpoints share their origin1 at the identity provider, privilege escalation by targeting a (auper-)admin is likely possible. The following idealized example illustrates that approach:
 
 - Load management console within an iFrame or in a Pop-up.
 - Use the user creation form to create a back door user with elevated privileges.
@@ -579,9 +579,9 @@ Hopefully, this post will raise awareness of the security implications of the *O
 
 #### Future Work
 
-As outlined earlier, the outdated *OAuth 2.0 Web Message Response Mode*[10]() specification likewise leaves space for interpretation and may contribute to vulnerable SSO implementations.
+As outlined earlier, the outdated *OAuth 2.0 Web Message Response Mode*10 specification likewise leaves space for interpretation and may contribute to vulnerable SSO implementations.
 
-The previously referenced example JavaScript code from the specification document uses `window.open()` to open the `authorizationEndpoint`. In case a malicious actor manages to register a malicious endpoint with `javascript:` *pseudo-protocol*, this would result in JavaScript evaluation within the Service Provider origin. In a real-world scenario, a rogue Identity Provider could utilize the *OpenID Provider Configuration*[12]() discovery mechanism and update its endpoints to include JavaScript at some point in time after initial setup.
+The previously referenced example JavaScript code from the specification document uses `window.open()` to open the `authorizationEndpoint`. In case a malicious actor manages to register a malicious endpoint with `javascript:` *pseudo-protocol*, this would result in JavaScript evaluation within the Service Provider origin. In a real-world scenario, a rogue Identity Provider could utilize the *OpenID Provider Configuration*12 discovery mechanism and update its endpoints to include JavaScript at some point in time after initial setup.
 
 I did not find any implementation that follows the outdated draft and supports OIDC discovery via the provider configuration endpoint. In case you are aware of any implementations that fulfill all these requirements, I would highly appreciate a short notice. 😉
 
@@ -623,51 +623,51 @@ You can directly tweet about this post using [this link](https://twitter.com/int
 
 -
 
-[IETF: The OAuth 2.0 Authorization Framework, 2012](https://datatracker.ietf.org/doc/html/rfc6749)[↩︎]()[↩︎]()
+[IETF: The OAuth 2.0 Authorization Framework, 2012](https://datatracker.ietf.org/doc/html/rfc6749)↩︎↩︎
 
 -
 
-[OpenID Foundation: OAuth 2.0 Form Post Response Mode, 2015](https://openid.net/specs/oauth-v2-form-post-response-mode-1_0.html)[↩︎]()[↩︎]()[↩︎]()
+[OpenID Foundation: OAuth 2.0 Form Post Response Mode, 2015](https://openid.net/specs/oauth-v2-form-post-response-mode-1_0.html)↩︎↩︎↩︎
 
 -
 
-[OASIS: Security Assertion Markup Language (SAML) V2.0 Technical Overview, 2008](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0-cd-02.html#5.1.2.SP-Initiated%20SSO:%20%20Redirect/POST%20Bindings%7Coutline)[↩︎]()[↩︎]()[↩︎]()
+[OASIS: Security Assertion Markup Language (SAML) V2.0 Technical Overview, 2008](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0-cd-02.html#5.1.2.SP-Initiated%20SSO:%20%20Redirect/POST%20Bindings%7Coutline)↩︎↩︎↩︎
 
 -
 
-[IETF: The ‘javascript’ resource identifier scheme, 2010](https://datatracker.ietf.org/doc/html/draft-hoehrmann-javascript-scheme)[↩︎]()[↩︎]()
+[IETF: The ‘javascript’ resource identifier scheme, 2010](https://datatracker.ietf.org/doc/html/draft-hoehrmann-javascript-scheme)↩︎↩︎
 
 -
 
-[David Flannagan: JavaScript: The Definitive Guide, Chapter 10.4 “JavaScript in URLs”, 1997](https://docstore.mik.ua/orelly/web/jscript/ch10_04.html)[↩︎]()[↩︎]()
+[David Flannagan: JavaScript: The Definitive Guide, Chapter 10.4 “JavaScript in URLs”, 1997](https://docstore.mik.ua/orelly/web/jscript/ch10_04.html)↩︎↩︎
 
 -
 
-[OpenID Foundation: OpenID Connect Core 1.0, 2014](https://openid.net/specs/openid-connect-core-1_0.html)[↩︎]()[↩︎]()[↩︎]()
+[OpenID Foundation: OpenID Connect Core 1.0, 2014](https://openid.net/specs/openid-connect-core-1_0.html)↩︎↩︎↩︎
 
 -
 
-[MDN: Window: open() method](https://developer.mozilla.org/en-US/docs/Web/API/Window/open)[↩︎]()
+[MDN: Window: open() method](https://developer.mozilla.org/en-US/docs/Web/API/Window/open)↩︎
 
 -
 
-[PortSwigger: OAuth 2.0 authentication vulnerabilities](https://portswigger.net/web-security/oauth)[↩︎]()
+[PortSwigger: OAuth 2.0 authentication vulnerabilities](https://portswigger.net/web-security/oauth)↩︎
 
 -
 
-[IETF: OAuth 2.0 Security Best Current Practice, 2024](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics)[↩︎]()
+[IETF: OAuth 2.0 Security Best Current Practice, 2024](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics)↩︎
 
 -
 
-[IETF: OAuth 2.0 Web Message Response Mode](https://datatracker.ietf.org/doc/html/draft-sakimura-oauth-wmrm-00)[↩︎]()[↩︎]()
+[IETF: OAuth 2.0 Web Message Response Mode](https://datatracker.ietf.org/doc/html/draft-sakimura-oauth-wmrm-00)↩︎↩︎
 
 -
 
-[Bart et al.: Securing Frame Communication in Browsers](https://www.adambarth.com/papers/2008/barth-jackson-mitchell.pdf)[↩︎]()
+[Bart et al.: Securing Frame Communication in Browsers](https://www.adambarth.com/papers/2008/barth-jackson-mitchell.pdf)↩︎
 
 -
 
-[OpenID Foundation: OpenID Connect Discovery 1.0, OpenID Provider Configuration](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig)[↩︎]()
+[OpenID Foundation: OpenID Connect Discovery 1.0, OpenID Provider Configuration](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig)↩︎
 
 - [OpenID Connect](https://security.lauritz-holtmann.de/tags/openid-connect)
 - [OAuth](https://security.lauritz-holtmann.de/tags/oauth)

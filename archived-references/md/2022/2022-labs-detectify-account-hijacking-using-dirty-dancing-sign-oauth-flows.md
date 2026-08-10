@@ -80,7 +80,7 @@ page going offline. To read the original, follow the link above.
 
 **Combining response-type switching, invalid state and redirect-uri quirks using OAuth, with third-party javascript-inclusions has multiple vulnerable scenarios where authorization codes or tokens could leak to an attacker. This could be used in attacks for single-click account takeovers.**
 
-Frans Rosén, Security Advisor at Detectify goes through three different scenarios found in the wild below and also suggests ways to [reduce the risk]().
+Frans Rosén, Security Advisor at Detectify goes through three different scenarios found in the wild below and also suggests ways to reduce the risk.
 
 Introducing ‘Account hijacking using “dirty dancing” in sign-in OAuth-flows’
 
@@ -88,13 +88,13 @@ or *Abuse abnormal flows in OAuth combined with URL-leaks*
 
 To [Nir Goldshlager](https://twitter.com/Nirgoldshlager) and [Egor Homakov](https://twitter.com/homakov)
 
-## [Background]()
+## Background
 
 About ten years ago, when bug bounties were just getting started, I was inspired by [Nir](https://web.archive.org/web/20130408005206/http://www.breaksec.com/?p=6039) [Goldshlager](https://web.archive.org/web/20130408011657/http://www.breaksec.com/?p=5753) [and](https://web.archive.org/web/20130409071442/http://www.breaksec.com/?p=5734) [Egor Homakov’s](https://homakov.blogspot.com/2013/03/redirecturi-is-achilles-heel-of-oauth.html?m=1) [multiple](https://homakov.blogspot.com/2012/07/saferweb-most-common-oauth2.html?m=1) [blog posts](https://homakov.blogspot.com/2013/02/hacking-facebook-with-oauth2-and-chrome.html) about account hijacking related to OAuth. This was at the start of my journey in security and every time they posted something on their blogs, I just had to try to figure out exactly what, why, and how it worked. To celebrate 10-years in security, I asked myself:
 
 – “What about methodologies for stealing OAuth tokens in 2022?”
 
-## [Current state and assumptions about OAuth credential leakage]()
+## Current state and assumptions about OAuth credential leakage
 
 Cross-origin “referer” leaks are not that common anymore, since browsers remove all additional information other than the domain that the request was made from. Cross-site scripting (XSS) became trickier (but never really impossible) with the introduction of the short-lived XSS-auditors.
 
@@ -112,9 +112,9 @@ There is a concept called [“Sender-Constrained Access Tokens”](https://datat
 
 The specification “OAuth 2.0 Security Best Current Practice” mentions the attack methods I will cover below as [4.2.1 Leakage from the OAuth client](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-19#section-4.2.1), however, this attack method is currently categorized under “Credential Leakage via Referer Headers” which is not correct, since the Referer-header is not involved at all in these attacks. [Note: This research has been shared with the authors of the specification.]
 
-## [Explanation of different OAuth-dances]()
+## Explanation of different OAuth-dances
 
-### [Response types]()
+### Response types
 
 First, there are different response types you can use in the OAuth-dance, the three most common ones are:
 
@@ -122,7 +122,7 @@ First, there are different response types you can use in the OAuth-dance, the th
 - `id_token`. Is a JSON Web Token (JWT) signed using a public certificate from the OAuth-provider to verify that the identity provided is indeed who it claims to be.
 - `token`. Is an access token used in the API of the service provider.
 
-### [Response modes]()
+### Response modes
 
 There are different modes the authorization flow could use to provide the codes or tokens to the website in the OAuth-dance, these are four of the most common ones:
 
@@ -151,7 +151,7 @@ There are different modes the authorization flow could use to provide the codes 
 
 Some OAuth providers have simplified the OAuth flow by providing a complete SDK-wrapper around the OAuth-dance, such as Google’s GSI. This works exactly like a regular OAuth flow for an id_token. The token is sent either by a form-POST back to the website or by postMessage.
 
-## [A theory: stealing tokens through postMessage]()
+## A theory: stealing tokens through postMessage
 
 Now, let’s dig into the details of what my theory was and why I decided to investigate it.
 
@@ -181,7 +181,7 @@ When collecting all of the different ways the websites used the OAuth-providers,
 
 – Baby
 
-## [It took a lot of time to get here]()
+## It took a lot of time to get here
 
 I think it’s a good practice to remind readers of these posts that when you read everything here, a lot of things mentioned might seem obvious. However, a lot of time was spent trying to figure out different scenarios, testing them, thinking you had something great only to realize that you’ve completely misinterpreted the OAuth specification, or not realizing that there are multiple mitigations to prevent impact if any code or token is leaked. It’s a grind. At one point I was viewing the source-code of the start-page on a website for so long that I fell asleep having my laptop fall right down in my face.
 
@@ -197,7 +197,7 @@ I tried documenting my investigation through chat messages to [@avlidienbrunn](h
 
 Ok, enough. Let’s go through the findings. I have simplified the examples quite a lot and made them generic so as not to pinpoint any specific website or service.
 
-## [Non-happy paths in the OAuth-dance]()
+## Non-happy paths in the OAuth-dance
 
 First, let’s explain the various ways to break the OAuth-dance. **When I mean break, I mean causing a difference between the OAuth-provider issuing valid codes or tokens, but the website that gets the tokens from the provider is not successfully receiving and handling the tokens**. I’ll refer to this below as a “non-[happy path](https://en.wikipedia.org/wiki/Happy_path)“.
 
@@ -220,7 +220,7 @@ However, if the `state`-value is invalid, the `code` will not be consumed since 
 - Attacker finds a way to leak the `code` from the error page.
 - Attacker can now sign in with their own `state` and the `code` leaked from the victim.
 
-### [Response-type/Response-mode switching]()
+### Response-type/Response-mode switching
 
 Changing response-types or response-modes of the OAuth-dance will effect in what way the codes or tokens are sent back to the website, which most of the time causes unexpected behavior. I haven’t seen any OAuth-provider having the option to restrict what response-types or modes that the website wants to support, so depending on the OAuth-provider there are often at least two or more that can be changed to when trying to end up in a non-happy path.
 
@@ -292,7 +292,7 @@ redirect_uri=https%3A%2F%2Fexample.com%2Fcallback
 
 Will redirect you to `https://example.com/callback#code=xxx&state=yyy&id_token=zzz`.
 
-### [Redirect-uri case shifting]()
+### Redirect-uri case shifting
 
 Some OAuth-providers allows case-shifting in the path of the `redirect_uri`, not really following the [specification of protecting redirect-based flows](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-19#section-2.1):
 
@@ -317,7 +317,7 @@ and will redirect you to: `https://example.com/CaLlBaCk#id_token=xxx`. All websi
 
 Please also note that using `response_type=code` this quirk is harder to exploit. In a proper OAuth-dance using `code`, in the last step to acquire the access token from the service provider, the `redirect_uri` must also be provided for validation to the service-provider. If the `redirect_uri` that was used in the dance is mismatching the value that the website sends to the provider, no access token will be issued. However, using any other response type, like `token` or `id_token` this last-step validation is not needed since the token was provided directly in the redirection.
 
-### [Redirect-uri path appending]()
+### Redirect-uri path appending
 
 Some OAuth-providers allow additional data to be added to the path for `redirect_uri`. This is also breaking the specification in the same way as for “Redirect-uri case shifting”. For example, having a `https://example.com/callback`redirect uri, sending in:
 
@@ -328,7 +328,7 @@ redirect_uri=https://example.com/callbackxxx
 
 would end up in a redirect to `https://example.com/callbackxxx#id_token`. This was reported to the affected providers. The same thing as for case shifting applies here, for `response_type=code` this will not allow you to issue a token, since the correct `redirect_uri` is compared in the last step when acquiring the token from the provider.
 
-### [Redirect-uri parameter appending]()
+### Redirect-uri parameter appending
 
 Some OAuth-providers allow additional query or fragment parameters to be added to the `redirect_uri`. You can use this by triggering a non-happy path by providing the same parameters that will be appended to the URL. For example, having a `https://example.com/callback` redirect uri, sending in:
 
@@ -348,7 +348,7 @@ redirect_uri=https://example.com/callback%23id_token=xxx%26
 
 ends up as `https://example.com/callback#id_token=xxx&id_token=real-id_token`. Depending on the javascript that fetches the fragment parameters when multiple parameters of the same name are present, this could also end up in a non-happy path.
 
-### [Redirect-uri leftovers or misconfigurations]()
+### Redirect-uri leftovers or misconfigurations
 
 When collecting all sign-in URLs containing the `redirect_uri`-values I could also test if other redirect-uri values were also valid. Out of 125 different Google sign-in flows I saved from the websites I tested, 5 websites had the start-page also as a valid `redirect_uri`. For example, if `redirect_uri=https://auth.example.com/callback` was the one being used, in these 5 cases, any of these were also valid:
 
@@ -359,7 +359,7 @@ When collecting all sign-in URLs containing the `redirect_uri`-values I could al
 
 This was especially interesting for the websites that actually used `id_token` or `token`, since `response_type=code` will still have the OAuth-provider validating the `redirect_uri` in the last step of the OAuth-dance when acquiring a token.
 
-## [I ended up on a non-happy path. Now what?]()
+## I ended up on a non-happy path. Now what?
 
 I have now collected a bunch of non-happy paths for all websites. These were the different cases I saw:
 
@@ -385,7 +385,7 @@ I had a lot of self-doubt here. But I also recalled how many times I was solely 
 
 Since the postMessage-listener extension also logs when any iframes on the page have listeners, I started to focus on the websites that at least had one postMessage-listener in any frame of the window you ended up on with the tokens in the URL.
 
-## [Here be more time]()
+## Here be more time
 
 Once again, this is where most of the time was spent, but I think some of these cases are quite fun, so in retrospect it was absolutely worth it.
 
@@ -399,11 +399,11 @@ Ok, I’ll stop complaining now. Let’s go!
  – g*dd*mn
  – 1-click hijack, SHABLAM [think of it like a Batman “kapow”]
 
-## [URL-leaking gadgets]()
+## URL-leaking gadgets
 
 I will categorize the different methods of leaking the URL as different gadgets since they have different properties. Let’s go through the different sorts of methods that I have identified.
 
-### [Gadget 1: Weak or no origin-check postMessage-listeners that leaks URL]()
+### Gadget 1: Weak or no origin-check postMessage-listeners that leaks URL
 
 [![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget-1-1536x873-1.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget-1-1536x873-1.png)
 
@@ -429,7 +429,7 @@ A response message would show up in the window that sent the message containing 
 
 The flow that could be used in an attack depended on how codes and tokens were used for the sign-in flow, but the idea was:
 
-#### [Attack scenario]()
+#### Attack scenario
 
 - Attacker sends the victim a crafted link that has been prepared to result in a non-happy path in the OAuth-dance.
 - Victim clicks the link. New tab opens up with a sign-in flow with one of the OAuth-providers of the website being exploited.
@@ -438,11 +438,11 @@ The flow that could be used in an attack depended on how codes and tokens were u
 - Original tab sent by the attacker then listens to the message sent to it. When the URL comes back in a message, the code and token is extracted and sent to the attacker.
 - Attacker signs in as the victim using the code or token that ended up on the non-happy path.
 
-### [Gadget 2: XSS on sandbox/third-party domain that gets the URL]()
+### Gadget 2: XSS on sandbox/third-party domain that gets the URL
 
 [![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget-2-1536x873-1.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget-2-1536x873-1.png)
 
-#### [Gadget 2: example 1, stealing window.name from a sandbox iframe]()
+#### Gadget 2: example 1, stealing window.name from a sandbox iframe
 
 I reported the first chain found in the wild using this gadget on May 12:
 
@@ -518,7 +518,7 @@ window.addEventListener('message', function (e) {
 </script>
 ```
 
-#### [Gadget 2: example 2, iframe with XSS + parent origin check]()
+#### Gadget 2: example 2, iframe with XSS + parent origin check
 
 The second example was an iframe loaded on the non-happy path with an XSS using postMessage, but messages were only allowed from the `parent`-window that loaded it. The `location.href` was sent down to the iframe when it asked for `initConfig` in a message to the `parent`-window.
 
@@ -598,13 +598,13 @@ window.addEventListener('message', function (e) {
 </script>
 ```
 
-### [Gadget 3: Using APIs to fetch URL out-of-bounds]()
+### Gadget 3: Using APIs to fetch URL out-of-bounds
 
 [![](https://labsadmin.detectify.com/app/uploads/2022/07/Gadget-3-1536x873-1.png)](https://labsadmin.detectify.com/app/uploads/2022/07/Gadget-3-1536x873-1.png)
 
 This gadget turned out to be the most fun. There’s something satisfying about sending the victim somewhere and then picking up sensitive data from a different location.
 
-#### [Gadget 3: example 1, storage-iframe with no origin check]()
+#### Gadget 3: example 1, storage-iframe with no origin check
 
 The first example used an external service for tracking-data. This service added a “storage iframe”:
 
@@ -709,7 +709,7 @@ target="_blank">Click here to hijack token</a>';
 
 - The victim would click the link, go through the OAuth-dance, and end up on the non-happy path loading the tracking-script and the storage-iframe. The storage iframe gets an update of `last-url`. The `window.storage`-event would trigger in the iframe of the malicious page since the localStorage was updated, and the malicious page that was now getting updates whenever the storage changed would get a postMessage with the current URL of the victim:[![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example2.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example2.png)
 
-#### [Gadget 3: example 2, customer mix-up in CDN – DIY storage-SVG without origin check]()
+#### Gadget 3: example 2, customer mix-up in CDN – DIY storage-SVG without origin check
 
 Since the analytics-service itself had a bug bounty, I was also interested to see if I could find a way to leak URLs also for the websites that had configured proper origins for the storage-iframe.
 
@@ -787,8 +787,6 @@ Since no website would be able to patch this themselves, I sent a report to the 
 [![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example7.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget3-example7.png)
 
 The whole idea about looking at misconfiguration bugs on the third-party was mainly to confirm that there are multiple ways to achieve the leaking of the tokens and since the third-party had a bug bounty, this was just a different receiver for the same kind of bug, the difference being that the impact was for all of the customers of the analytics service instead. In this case, the customer of the third-party actually had the ability to properly configure the tool to not make it leak data to the attacker. However, since the sensitive data was still sent to the third-party it was interesting to see if there was somehow a way to completely bypass the customer’s proper configuration of the tool.
-
-####
 
 The last example was based on a chat-widget that was present on all pages of a website, even the error pages. There were multiple postMessage-listeners, one of them without a proper origin check that only allowed you to start the chat-popup. Another listener had a strict origin check for the chat-widget to receive an initialization-call and the current chat-api-token that was used for the current user.
 
@@ -924,11 +922,11 @@ function handleRequest(request) {
 
 - When the victim clicked the link and went through the OAuth-dance and landed on the error page with the token added, the chat-widget would suddenly popup, register the current URL and the attacker would have the access token from the victim.
 
-## [Other ideas for leaking URLs]()
+## Other ideas for leaking URLs
 
 There are still other different types of gadgets waiting to be found. Here’s one of those cases I wasn’t able to find in the wild but could be a potential way to get the URL to leak using any of the response modes available.
 
-### [A page on a domain that routes any postMessage to its opener]()
+### A page on a domain that routes any postMessage to its opener
 
 Since all `web_message` response types cannot validate any path of the origin, any URL on a valid domain can receive the postMessage with the token. If there’s some form of postMessage-listener proxy on any of the pages on the domain, that takes any message sent to it and sends everything to its `opener`, I can make a double-window.open chain:
 
@@ -967,13 +965,13 @@ Which causes the attacker to get the token:
 
 [![](https://labsadmin.detectify.com/app/uploads/2022/07/gadget4-example3.png)](https://labsadmin.detectify.com/app/uploads/2022/07/gadget4-example3.png)
 
-## [Conclusion]()
+## Conclusion
 
 As you see, there are many different methods to steal these tokens still present ten years after I started understanding the problem.
 
 Due to the fact that each OAuth-provider allows so many different response types and modes, it becomes quite tricky for a website to cover all different cases.
 
-### [How can we fix this?]()
+### How can we fix this?
 
 The first section under countermeasures of credential stealing in the [“OAuth 2.0 Security Best Current Practice”](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-19#section-4.2.4) states that:
 
@@ -991,7 +989,7 @@ Also I think as an OAuth-client, having the ability to enable only the response-
 
 Not really, in my examples the attacker prepares a link to the OAuth-provider for the victim to use. This link would successfully issue the code in the OAuth-provider connecting it with the `code_challenge` that the attacker provided, but intentionally end up on a non-happy path on the website of the OAuth-client; for example using the “breaking state intentionally”-method. When the URL with the code is leaked to the attacker (if there’s a gadget on the error page), the attacker can use the `code`, since it was the attacker’s `code_verifier` being used for the `code_challenge`.
 
-### [How to reduce the risk]()
+### How to reduce the risk
 
 - Know what kind of pages that are involved in the OAuth-dance. This includes exception- or error pages that could be triggered to show up in the flow if any parameters expected in the dance are wrong or missing.
 - Make sure those pages does not use any third-party scripts. You might not use any vulnerable third-party scripts today, but if anyone in your organisation introduces anything new through Google Tag Manager or similar, or if the third-party scripts change, you can prevent any future potential token leakage.

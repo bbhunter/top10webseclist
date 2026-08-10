@@ -75,7 +75,7 @@ Digger also showed something that surprisingly is a very common misunderstood wa
 
 Anyway, I’m out for a few days so this’ll be my last post until the weekend is over. No parties while I’m gone - not unless you save some for me. Have a good weekend!
 
-  This entry was posted on Thursday, June 15th, 2006 at 10:45 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20060615/a-story-that-diggs-itself/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20060615/a-story-that-diggs-itself/trackback/) from your own site.
+  This entry was posted on Thursday, June 15th, 2006 at 10:45 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20060615/a-story-that-diggs-itself/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20060615/a-story-that-diggs-itself/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

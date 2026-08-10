@@ -78,7 +78,7 @@ I call this technique “**SVG clickjacking**”.
 
 The day Apple announced its new Liquid Glass redesign was pretty chaotic. You couldn’t go on social media without every other post being about the new design, whether it was critique over how inaccessible it seemed, or awe at how realistic the refraction effects were.
 
-Drowning in the flurry of posts, a thought came to mind - how hard would it be to re-create this effect? Could I do this, on the web, without resorting to canvas and shaders? I got to work, and about an hour later I had [a pretty accurate CSS/SVG recreation of the effect](https://codepen.io/rebane2001/details/OPVQXMv)[1]().
+Drowning in the flurry of posts, a thought came to mind - how hard would it be to re-create this effect? Could I do this, on the web, without resorting to canvas and shaders? I got to work, and about an hour later I had [a pretty accurate CSS/SVG recreation of the effect](https://codepen.io/rebane2001/details/OPVQXMv)1.
 
  [
 
@@ -152,7 +152,7 @@ My little tech demo made quite a splash online, and even resulted in a [news art
 
 A few days passed, and another thought came to mind - would this SVG effect work on top of an iframe?
 
-Like, surely not? The way the effect “refracts light”[2]() is way too complex to work on a cross-origin document.
+Like, surely not? The way the effect “refracts light”2 is way too complex to work on a cross-origin document.
 
 But, to my surprise, it did.
 
@@ -181,7 +181,7 @@ Let’s take a look at some of the more useful base elements we can play with:
 
 That’s quite a selection of utilities!
 
-If you’re a demoscener[3]() you’re probably feeling right at home. These are the fundamental building blocks for many kinds of computer graphics, and they can be combined into many useful primitives of our own. So let’s see some examples.
+If you’re a demoscener3 you’re probably feeling right at home. These are the fundamental building blocks for many kinds of computer graphics, and they can be combined into many useful primitives of our own. So let’s see some examples.
 
 ### Fake captcha
 
@@ -251,7 +251,7 @@ too short
 
 In this example we want to trick the user into setting an attacker-known password, so we want them to be able to see the text they’re entering, but not the grey placeholder text, nor the red “too short” text.
 
-Let’s start off by using `feComposite` with arithmetics to make the grey text disappear. The `arithmetic` operation takes in two images, `i1` (`in=...`) and `i2` (`in2=...`), and lets us do per-pixel maths with `k1`, `k2`, `k3`, `k4` as the arguments according to this formula: r=k1⁢i1⁢i2+k2⁢i1+k3⁢i2+k4[4]().
+Let’s start off by using `feComposite` with arithmetics to make the grey text disappear. The `arithmetic` operation takes in two images, `i1` (`in=...`) and `i2` (`in2=...`), and lets us do per-pixel maths with `k1`, `k2`, `k3`, `k4` as the arguments according to this formula: r=k1⁢i1⁢i2+k2⁢i1+k3⁢i2+k44.
 
 Set a new password
 
@@ -295,7 +295,7 @@ too short
 
 ```
 
-Now we have to increase the contrast of the mask. I’m going to do it by first using `feFlood` to create a solid white image, which we can then `feBlend` with `difference` to invert our mask. And then we can use `feComposite` to multiply[5]() the mask for better contrast.
+Now we have to increase the contrast of the mask. I’m going to do it by first using `feFlood` to create a solid white image, which we can then `feBlend` with `difference` to invert our mask. And then we can use `feComposite` to multiply5 the mask for better contrast.
 
 Set a new password
 
@@ -364,7 +364,7 @@ You can see how the textbox is entirely recontextualized now to fit a different 
 
 And now we come to what is most likely the most useful attack primitive - pixel reading. That’s right, you can use SVG filters to read color data off of images and perform all sorts of logic on them to create really advanced and convincing attacks.
 
-The catch is of course, that you’ll have to do everything within SVG filters - there is no way to get the data out[6](). Despite that, it is very powerful if you get creative with it.
+The catch is of course, that you’ll have to do everything within SVG filters - there is no way to get the data out6. Despite that, it is very powerful if you get creative with it.
 
 On a higher level, what this lets us do is make everything in a clickjacking attack responsive - fake buttons can have hover effects, pressing them can show fake dropdowns and dialogs, and we can even have fake form validation.
 
@@ -453,7 +453,7 @@ And that’s it, a simple example of how we can read a pixel value and use it to
 
 But here’s the part where it gets fun! We can repeat the pixel-reading process to read out multiple pixels, and then run logic on them to program an attack.
 
-By using `feBlend` and `feComposite`, we can recreate all logic gates and make SVG filters [functionally complete](https://en.wikipedia.org/wiki/Functional_completeness). This means that we can program anything we want, as long as it is not timing-based[7]() and doesn’t take up too many resources[8]().
+By using `feBlend` and `feComposite`, we can recreate all logic gates and make SVG filters [functionally complete](https://en.wikipedia.org/wiki/Functional_completeness). This means that we can program anything we want, as long as it is not timing-based7 and doesn’t take up too many resources8.
 
  Input A Input B
 
@@ -600,7 +600,7 @@ Anyways, let’s build out a logic tree for a filter-based attack:
 - *(No)* Make the user check the checkbox
 - *(Yes)* Make the user click the button
 
-Which can be expressed in logic gates[9]() as:
+Which can be expressed in logic gates9 as:
 
 - Inputs
 
@@ -743,7 +743,7 @@ What this attack does is:
 
 In the past, individual parts of such an attack could’ve been pulled off through traditional clickjacking and some basic CSS, but the entire attack would’ve been way too long and complex to be realistic. With this new technique of running logic inside SVG filters, such attacks become realistic.
 
-Google VRP awarded me $3133.70 for the find. That was, of course, [right before](https://infosec.exchange/@rebane2001/115349916882356842) they introduced a novelty bonus for new vulnerability classes. Hmph![10]()
+Google VRP awarded me $3133.70 for the find. That was, of course, [right before](https://infosec.exchange/@rebane2001/115349916882356842) they introduced a novelty bonus for new vulnerability classes. Hmph
 
 ## The QR attack
 
@@ -763,7 +763,7 @@ Creating a QR code within an SVG filter is easier said than done however. We can
 
 QR codes use [Reed-Solomon error correction](https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction), which is some fun math stuff that’s a bit more advanced than a simple checksum. It does math with polynomials and stuff and that is a bit annoying to reimplement in an SVG.
 
-Luckily for us, I’ve faced the same problem before! Back in 2021 I was the first person[11]() to [make a QR code generator in Minecraft](https://www.planetminecraft.com/project/rebane-s-qr-code-generator/), so I’ve already figured out the things necessary.
+Luckily for us, I’ve faced the same problem before! Back in 2021 I was the first person11 to [make a QR code generator in Minecraft](https://www.planetminecraft.com/project/rebane-s-qr-code-generator/), so I’ve already figured out the things necessary.
 
 In my build I pre-calculated some lookup tables for the error correction, and used those instead to make the build simpler - and we can do the same with the SVG filter.
 
@@ -858,44 +858,44 @@ see y’all around!!
 
 -
 
-What I actually had after an hour was [this](https://gist.github.com/rebane2001/8ba35ad6e1b17c4cb5b2b2431d9e992c/revisions#diff-106c46aeca8c98d010362a57e574d9a6543362f34bb81c47081cece6fcbbbe48), the Codepen link is an updated version that I added controls to later on. [↩︎]()
+What I actually had after an hour was [this](https://gist.github.com/rebane2001/8ba35ad6e1b17c4cb5b2b2431d9e992c/revisions#diff-106c46aeca8c98d010362a57e574d9a6543362f34bb81c47081cece6fcbbbe48), the Codepen link is an updated version that I added controls to later on. ↩︎
 
 -
 
-This is a fancy way of saying it does a basic displacement of pixels. [↩︎]()
+This is a fancy way of saying it does a basic displacement of pixels. ↩︎
 
 -
 
-…or After Effects/Blender/Fusion etc user. Or anything else computer graphics. [↩︎]()
+…or After Effects/Blender/Fusion etc user. Or anything else computer graphics. ↩︎
 
 -
 
-**result = k1*i1*i2 + k2*i1 + k3*i2 + k4** in programmer language (I just couldn’t resist trying out the <math> tag for fun). [↩︎]()
+**result = k1*i1*i2 + k2*i1 + k3*i2 + k4** in programmer language (I just couldn’t resist trying out the <math> tag for fun). ↩︎
 
 -
 
-The multiplication in this case is kind of the opposite of what you’d expect from the “multiply” blend mode - things will get lighter, not darker. [↩︎]()
+The multiplication in this case is kind of the opposite of what you’d expect from the “multiply” blend mode - things will get lighter, not darker. ↩︎
 
 -
 
-It’s not possible to get the pixel data out of a SVG filter as they’re implemented in constant-time. If you *can* find a way to retrieve the data then it’s a browser bug and you can most likely get bounty for it. Happy to collaborate if you’d like to turn such a finding into a working proof of concept for a report :). [↩︎]()
+It’s not possible to get the pixel data out of a SVG filter as they’re implemented in constant-time. If you *can* find a way to retrieve the data then it’s a browser bug and you can most likely get bounty for it. Happy to collaborate if you’d like to turn such a finding into a working proof of concept for a report :). ↩︎
 
 -
 
-We can actually pass the current time into an SVG filter, but we can’t do attacks such as “if a pixel changes, wait 1 second and then show a dialog” unless we can piggyback off an animation in the source frame. [↩︎]()
+We can actually pass the current time into an SVG filter, but we can’t do attacks such as “if a pixel changes, wait 1 second and then show a dialog” unless we can piggyback off an animation in the source frame. ↩︎
 
 -
 
-Since SVG filters are implemented in constant-time, they become pretty resource-intensive for complex filters on high-resolution targets. One optimization would be to have a full-resolution filter just for picking out the pixels, then a tiny-resolution backdrop-filter to run all the logic, and then another full-resolution filter to display the attack. [↩︎]()
+Since SVG filters are implemented in constant-time, they become pretty resource-intensive for complex filters on high-resolution targets. One optimization would be to have a full-resolution filter just for picking out the pixels, then a tiny-resolution backdrop-filter to run all the logic, and then another full-resolution filter to display the attack. ↩︎
 
 -
 
-¬ - NOT, ∧ - AND, ∨ - OR, ⊕ - XOR etc, see [List of logic symbols](https://en.wikipedia.org/wiki/List_of_logic_symbols). [↩︎]()
+¬ - NOT, ∧ - AND, ∨ - OR, ⊕ - XOR etc, see [List of logic symbols](https://en.wikipedia.org/wiki/List_of_logic_symbols). ↩︎
 
 -
 
-This is kind of similar to how I reported the [Docs/YouTube/Slides chain](https://lyra.horse/blog/2024/09/using-youtube-to-steal-your-files/) right before they 5x’d the VRP rewards. I seem to have the worst luck with timing my reports… [↩︎]()
+This is kind of similar to how I reported the [Docs/YouTube/Slides chain](https://lyra.horse/blog/2024/09/using-youtube-to-steal-your-files/) right before they 5x’d the VRP rewards. I seem to have the worst luck with timing my reports… ↩︎
 
 -
 
-I released my QR code generator in 2021, making it the earliest publicly released Minecraft QR code generator. I know, however, that DavidJR was independently working on a QR code generator at the same time as I was, eventually [releasing it in 2023](https://www.youtube.com/watch?v=jKwrh-l31yY). Then there’s one from Sep 2024 [by 37meliodas](https://www.youtube.com/watch?v=CcD7pqCDSS0), and lastly there’s the probably most well-known one [by mattbatwings](https://www.youtube.com/watch?v=ZizmvuZ3EFk) from Dec 2024. The latter has an awesome video explaining everything in-depth, so I definitely recommend checking it out if you’re interested in Minecraft redstone. [↩︎]()
+I released my QR code generator in 2021, making it the earliest publicly released Minecraft QR code generator. I know, however, that DavidJR was independently working on a QR code generator at the same time as I was, eventually [releasing it in 2023](https://www.youtube.com/watch?v=jKwrh-l31yY). Then there’s one from Sep 2024 [by 37meliodas](https://www.youtube.com/watch?v=CcD7pqCDSS0), and lastly there’s the probably most well-known one [by mattbatwings](https://www.youtube.com/watch?v=ZizmvuZ3EFk) from Dec 2024. The latter has an awesome video explaining everything in-depth, so I definitely recommend checking it out if you’re interested in Minecraft redstone. ↩︎

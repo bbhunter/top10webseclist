@@ -84,7 +84,7 @@ Sure, this issue is only dangerous if an image is only checked by getimagesize()
 
 Indeed! I’ve seen a lot of really strange ideas on how to secure uploads, and this is no doubt used in some places. Even still sometimes being able to get PHP into a system, even if it’s not named .php may provide some value if the attacker can execute local files but can’t include them remotely. This is an interesting follow on to [yesterday’s post](http://ha.ckers.org/blog/20070603/image-upload-xss/). I bet there is a lot of issues left to uncover with uploads.
 
-  This entry was posted on Monday, June 4th, 2007 at 3:08 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070604/passing-malicious-php-through-getimagesize/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20070604/passing-malicious-php-through-getimagesize/trackback/) from your own site.
+  This entry was posted on Monday, June 4th, 2007 at 3:08 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070604/passing-malicious-php-through-getimagesize/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070604/passing-malicious-php-through-getimagesize/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

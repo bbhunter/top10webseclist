@@ -73,7 +73,7 @@ The presentation attached gives an overview of the subject while the paper gives
 
 You can download the presentation in PPT format [here](http://blog.watchfire.com/AMitM.ppt), or download the full version of the whitepaper as PDF [here](http://blog.watchfire.com/AMitM.pdf).
 
- []()
+ 
 
 TrackBack URL for this entry:
 http://www.typepad.com/services/trackback/6a00d835130c5153ef0111689c0fa0970c

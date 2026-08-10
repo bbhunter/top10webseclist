@@ -71,41 +71,41 @@ This post explores the security implications of improper trailer parsing by syst
 
 The inspiration for this research came from a curious allowance in RFC 9112: the merging of trailer fields into the main header section under certain circumstances. What began as a technical curiosity quickly escalated into an in-depth investigation of parsing discrepancies, ultimately revealing an overlooked attack surface and novel smuggling techniques.
 
-### [Contents]()
+### Contents
 
-- [Trailers]()
-- [HTTP Header Smuggling via Trailer Merge]()
+- Trailers
+- HTTP Header Smuggling via Trailer Merge
 
-- [Downstream components]()
+- Downstream components
 
-- [Attack flow]()
-- [Examples]()
+- Attack flow
+- Examples
 
-- [Access control bypass]()
-- [Host header spoofing]()
+- Access control bypass
+- Host header spoofing
 
-- [Upstream components]()
+- Upstream components
 
-- [Attack flow]()
+- Attack flow
 
-- [Trailer Merge (TR.MRG) HTTP Request Smuggling]()
+- Trailer Merge (TR.MRG) HTTP Request Smuggling
 
-- [TR.MRG in lighttpd1.4]()
+- TR.MRG in lighttpd1.4
 
-- [Connection header parsing bug]()
+- Connection header parsing bug
 
-- [Trailer parsing discrepancies]()
+- Trailer parsing discrepancies
 
-- [Unparsed Trailers]()
-- [Early parsing termination]()
-- [Hide-Merge-Smuggle]()
+- Unparsed Trailers
+- Early parsing termination
+- Hide-Merge-Smuggle
 
-- [Findings]()
-- [Tool]()
-- [Resources]()
-- [Conclusion]()
+- Findings
+- Tool
+- Resources
+- Conclusion
 
-### [Trailers]()
+### Trailers
 
 HTTP trailers are extra header fields transmitted after the body in chunked transfer encoding in HTTP/1.1, or as a trailing `HEADERS` frame sent after the final `DATA` frame on the same stream in HTTP/2 and HTTP/3. They allow metadata that is available only after the body has been generated, such as checksums, digital signatures, or post-processing results, to be sent without buffering the entire payload in memory.
 
@@ -180,7 +180,7 @@ The attack can have a different impact, depending on which component merged trai
 - **Upstream**: components closer to the client (client-facing reverse proxies, and load balancers) that receive the request first and forward it.
 - **Downstream**: components closer to the application logic (backend servers / origin services) that receive a request after one or more intermediaries.
 
-#### [Downstream components]()
+#### Downstream components
 
 Downstream components are servers or applications positioned after intermediaries in the request processing chain. These are typically backend services that receive requests after they have passed through one or more intermediaries.
 
@@ -190,16 +190,16 @@ Unsafe merging at this level can cause trailer data to override or modify origin
 - Inject unsafe inputs into backend logic that trusts request headers
 - Poison caches: headers smuggled through trailers can poison cached responses under legitimate cache keys, causing the cache to serve malicious content to subsequent users requesting the same resource.
 
-#### [Attack flow]()
+#### Attack flow
 
 - The attacker sends an HTTP request that includes a trailer section containing 'malicious' header fields. For example, the trailers contain `Host: attacker.com` or `X-Forwarded-For: 127.0.0.1`.
 - The proxy parses and validates headers, then forwards the request, including trailers.
 - The **backend** receives and parses the request, then **merges trailers into the headers**.
 - Smuggled headers are used in the application logic. `Host` or `X-Forwarded-For` have been **modified or injected** by trailers during the parsing. These values were **never visible** to the proxy during its initial validation, but the backend/application trusts them when making authorization or logic decisions.
 
-#### [Examples]()
+#### Examples
 
-#### [Access control bypass]()
+#### Access control bypass
 
 Consider the following example application that trusts the `x-forwarded-for` header to make authorization decisions:
 
@@ -321,11 +321,11 @@ Some implementations merge response trailers to make them directly available to 
 
 ---
 
-#### [Upstream components]()
+#### Upstream components
 
 When trailer merging occurs upstream, the impact can be more severe, as attackers may also be able to manipulate request boundaries by smuggling `Content-Length` or `Transfer-Encoding` headers.
 
-#### [Attack flow]()
+#### Attack flow
 
 - The attacker sends a request with a trailer section containing `Content-Length: 0`.
 - The front-end proxy receives the request and parses the header section. It uses those headers for request delimitation, routing, authorization, and caching decisions.
@@ -333,7 +333,7 @@ When trailer merging occurs upstream, the impact can be more severe, as attacker
 - The proxy forwards the request to the backend with the merged headers.
 - The backend receives the forwarded request with the attacker-supplied `Content-Length: 0` and treats the remaining bytes on the connection as belonging to subsequent requests, potentially enabling request smuggling.
 
-### [Trailer Merge (TR.MRG) HTTP Request Smuggling]()
+### Trailer Merge (TR.MRG) HTTP Request Smuggling
 
 Intermediaries may merge trailers for compatibility reasons, as stated in [RFC 9110 §6.5.1](https://www.rfc-editor.org/rfc/rfc9110#section-6.5.1):
 
@@ -343,7 +343,7 @@ Trailer fields can be difficult to process by intermediaries that forward messag
 
 Trailer Merge (TR.MRG) HTTP Request Smuggling occurs when intermediaries unsafely merge trailers, allowing the override or injection of headers such as `content-length` or `transfer-encoding` **after initial parsing**. This alters downstream request boundaries, enabling injection of additional requests.
 
-#### [TR.MRG in lighttpd1.4]()
+#### TR.MRG in lighttpd1.4
 
 lighttpd1.4.80 merged trailers post-dechunking, **overriding** the `content-length` header before forwarding downstream:
 
@@ -479,13 +479,13 @@ dangerous-input
 
 In other words, the client sends a single HTTP request to lighttpd, but the downstream server interprets two separate requests on the same connection, with attacker-controlled content in the second one.
 
-### [Trailer parsing discrepancies]()
+### Trailer parsing discrepancies
 
 Beyond trailer merging, other parsing discrepancies can arise in how trailers are parsed.
 
 In most implementations, trailer fields are subject to the same validation checks as ordinary headers, but there are exceptions where trailer parsing can differ from that of the headers. Certain proxies, such as Apache Traffic Server and Pound, do not correctly validate trailers. This allows attackers to craft malformed trailers that can smuggle additional, hidden HTTP requests into the trailers section.
 
-#### [Unparsed Trailers]()
+#### Unparsed Trailers
 
 Eventlet, after reading the chunked body of an HTTP request, completely skipped trailer parsing, only reading the line following the last chunk:
 
@@ -556,7 +556,7 @@ Host: localhost\r\n
 
 ```
 
-#### [Early parsing termination]()
+#### Early parsing termination
 
 A bug in http4s caused the trailer parsing to terminate prematurely. The parser would stop if it encountered a line without a colon, failing to wait for the blank line that officially marks the end of the trailer section and the request.
 
@@ -642,7 +642,7 @@ Host: localhost\r\n
 
 ```
 
-#### [Hide-Merge-Smuggle]()
+#### Hide-Merge-Smuggle
 
 The following technique exploits a parsing ambiguity that causes parsers to misinterpret the boundaries between separate HTTP requests. It requires two requests: the first one has a trailer section with an invalid header that lacks a colon, while the second one 'hides' another request in its body:
 
@@ -899,7 +899,7 @@ Host: localhost\r\n
 
 However, Puma has a very short read timeout, so the proxy must send both requests nearly simultaneously over the same connection to make this bug exploitable.
 
-### [Findings]()
+### Findings
 
 Around 70 open-source implementations were tested using [http-garden](https://github.com/narfindustries/http-garden). Here’s a summary of the findings:
 
@@ -918,18 +918,18 @@ Around 70 open-source implementations were tested using [http-garden](https://gi
 | PHP Built-in Server | header smuggling | - |  |
 | Yahns proxy and server | header smuggling | - |  |
 
-### [Tool]()
+### Tool
 
 Most HTTP clients do not support trailers, making it challenging to experiment with trailer-based attacks. To address this gap, I developed **[riphttp](https://github.com/sebastianosrt/riphttp)**, a tool that allows sending requests with trailers across all HTTP versions.
 
 In addition, I created **[riphttplib](https://github.com/sebastianosrt/riphttplib)**, a library purpose-built for protocol security testing. The library provides non-RFC-compliant HTTP abstractions that allow crafting malformed requests and APIs for connection management and low-level framing.
 
-### [Resources]()
+### Resources
 
 - Vulnerable apps: [Trailer-Merge-Lab](https://github.com/sebastianosrt/Trailers-Merge-Lab).
 - TR.MRG CTF challenge: [TrailingDanger](https://github.com/sebastianosrt/My-CTF-Challenges/tree/main/m0lecon-2026-teaser/trailing-danger).
 - More trailer parsing discrepancies [https://w4ke.info/2025/10/29/funky-chunks-2](https://w4ke.info/2025/10/29/funky-chunks-2)
 
-### [Conclusion]()
+### Conclusion
 
 Through a systematic analysis of HTTP open-source implementations, I have shown that even minor discrepancies in trailer parsing can introduce vulnerabilities. This work underscores that legacy protocol features, often considered harmless or irrelevant, may still harbor unexpected risks due to ambiguous handling and inconsistent implementation.

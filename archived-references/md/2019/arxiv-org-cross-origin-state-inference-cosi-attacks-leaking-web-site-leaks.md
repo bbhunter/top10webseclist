@@ -85,7 +85,7 @@ Authors:[Avinash Sudhodanan](https://arxiv.org/search/cs?searchtype=author&query
  **[[v1]](https://arxiv.org/abs/1908.02204v1)** Tue, 6 Aug 2019 15:11:59 UTC (70 KB)
  **[v2]** Fri, 31 Jan 2020 15:41:14 UTC (134 KB)
 
- []() Full-text links:
+  Full-text links:
 
 ## Access Paper:
 
@@ -210,4 +210,4 @@ Both individuals and organizations that work with arXivLabs have embraced and ac
 
 Have an idea for a project that will add value for arXiv's community? [**Learn more about arXivLabs**](https://info.arxiv.org/labs/index.html).
 
- [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1908.02204) | [Disable MathJax]() ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))
+ [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1908.02204) | Disable MathJax ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))

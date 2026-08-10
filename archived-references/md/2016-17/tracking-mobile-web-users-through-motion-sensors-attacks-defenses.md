@@ -174,7 +174,6 @@ site operators to develop other means of uniquely identifying                   
 and tracking users. Eckersley’s Panopticon project showed that                         web-browsing setting, either in a user’s hand or resting on
 many browsers can be uniquely identified by enumerating                                a flat surface. Additionally, we consider the simultaneous
 
-
                                                          TABLE I: Comparison with other works
                      Work      Sensorsa     Settings         Stimulation       Features Explored   Features Used   # of Devices     Results (≈)
                        [2]        A           Lab              Vibration               80                36            107b        99% Accuracy
@@ -189,9 +188,6 @@ many browsers can be uniquely identified by enumerating                         
    a here ‘A’ means accelerometer and ‘G’ refers to gyroscope
    b 80 external chips, 25 phones and 2 tablets
    c considering only devices with two submissions
-
-
-
 
                                                                                    2
                                                                                                        Fixed Electrode
@@ -261,7 +257,6 @@ the device’s three axes. MEMS-based gyroscopes use the                        
                                                                                                                q         vector into a scalar by
    1 iPhone 6 has been reported to use sensors made by InvenSense [38]        taking its magnitude: |~a(t)| = a2x + a2y + a2z . This technique
 
-
                                                                          3
                                                 TABLE II: Explored temporal and spectral features
     #      Domain             Feature                                                         Description
@@ -291,8 +286,6 @@ the device’s three axes. MEMS-based gyroscopes use the                        
     23                      Spectral flux                         Measure of how quickly the power spectrum of a signal changes
     24                 Spectral Attack Time                                       Average rise time to spectral peaks
     25                 Spectral Attack Slope                                       Average slope to spectral peaks
-
-
 
 discards some information, but has the advantage of making                    the source sensor. Any supervised learning classifier has two
 the accelerometer data independent of device orientation; e.g.,               main phases: training phase and testing phase. During training,
@@ -411,7 +404,6 @@ collect 10 samples where each sample is about 5 to 8 seconds                    
     4 Computed the avg. time to obtain 100 samples. http://datarepo.cs.illinois.       increase the accuracy of the signal, it does make direct application of standard
 edu/SamplingFreq.html                                                                  signal processing tools more convenient.
 
-
                                                                                    5
                                    Using accelerometer data only                                                         Using gyroscope data only                                               Using both accelerometer and gyroscope data
                       100                                                                              100                                                                                 100
@@ -420,13 +412,7 @@ edu/SamplingFreq.html                                                           
                                                                                                         90                                                                                  99
   Avg. F-score (%)
 
-
-
-
                                                                                     Avg. F-score (%)
-
-
-
 
                                                                                                                                                                         Avg. F-score (%)
                        96
@@ -448,8 +434,6 @@ edu/SamplingFreq.html                                                           
 Fig. 3: Exploring the number optimal features for different sensors. a) For accelerometer using more than top 10 features leads to diminished
 returns, b) For gyroscope all 75 features contribute to obtaining improved accuracy, c) For the combined sensor data using more than 70
 features leads to diminished returns.
-
-
 
 top 70 features (from a total of 100 features) seems to provide                                                                                  Motorola Droid
                                                                                                                                           Samsung Galaxy Note 4
@@ -529,9 +513,6 @@ were kept on top of a desk                                                      
 we see that combining features from both sensors provides                                                                     Number of devices
 the best result. In this case we obtained an F-score of 96%.
 
-
-
-
                                                                             Avg. F-score (%)
                                                                                                  100
 All these results suggest that smartphones can be successfully                                    98
@@ -546,9 +527,6 @@ smartphones were kept on top of a desk                                          
                 Accelerometer   Gyroscope     Accelerometer+Gyroscope
    No-audio          85            89                   96
                                                                                                                               Number of devices
-
-
-
 
                                                                             Avg. F-score (%)
      Sine            89            89                   95                                       100
@@ -573,9 +551,6 @@ generally decreases with large number of devices, which is                      
 expected as an increased number of labels makes classification
 more difficult. But even then scaling from 10 devices to 93                                       99
                                                                             Avg. F-score (%)
-
-
-
 
 devices the F-score decreases by only 4%. Extrapolating from
 the graph, we expect classification to remain accurate even for                                   98
@@ -605,9 +580,6 @@ cases we also took readings inside the office where temperature             gene
 was set to around 74◦ F on the thermostat. As these set of                  indicated by the red and blue blocks in the table).
 experiments were conducted at a later time compared to our
 other experiments, we were only able to collect data from                                      7 We only had access to these 17 smartphones at that time.
-
-
-
 
                                                                         7
 TABLE VIII: Types of phones used for analyzing temperature effect                            mean signal value is the most discriminating feature for each
@@ -654,7 +626,6 @@ data collected from the previous section (Section V-F3). As                     
                                                                                                                               Sx 0     0
                                                                                                                                           #"
                                                                                                                                              ax
-                                                                                                                                                 #
 we collected data inside our lab in two different dates (one on                                          M
                                                                                                       ay  = Oy + 0 Sy 0                    ay      (7)
 September 03, 2015 and the other on October 09, 2015) we
@@ -706,11 +677,8 @@ two error parameters are the offset o (bias away from 0) and the                
 gain g which magnifies or diminishes the acceleration value.                                      9 Android and iOS consider the positive and negative direction along an
 Our classification uses many features, but we find that the                                  axis differently.
 
-
                                                                                          8
                                Fig. 7: Calibrating accelerometer along three axes. We collect measurements along all 6 directions (±x, ±y, ±z).
-
-
 
                                                                                                                                   Measured rotation =        α
                                             Accelerometer data
@@ -721,9 +689,6 @@ Our classification uses many features, but we find that the                     
 
                     1.02
 Gain error (S)
-
-
-
 
                                                                                                                                              α
                     1.01
@@ -814,9 +779,6 @@ different range of offset and gain error across different units.
                  1.04                                       iPhone 5s
 Gain error (S)
 
-
-
-
                  1.03                                                                        • Uniform noise: highest entropy while having a bound.
                  1.02                                                                        • Laplace noise: highest entropy which is inspired by
                  1.01                                                                          Differential Privacy.
@@ -871,9 +833,6 @@ TABLE XII: Average F-score for obfuscated data under lab setting                
                                                                                                               90                         No-audio
   On Desk         Sine           49            76                   76
                                                                                                               80                             Sine
-
-
-
 
                                                                                           Avg. F-score (%)
                  Song            71            88                   93
@@ -964,9 +923,6 @@ nal. Our data injection procedure is described in Algorithm 1.                  
                                                                                                 we can think of each device as a single data set, and K
 Avg. F-score (%)
 
-
-
-
                        70
                                                                                                 as the process of selecting random offset and gain error.
                        60                                                                       S then becomes the outcome of applying random noise to
@@ -1043,15 +999,9 @@ K gives -differential privacy if for all data sets D1 and D2                    
                                                                                                            160
                    70                                                                                      150
 
-
-
-
                                                                                          Avg. step count
                                                                                                            140
 Avg. step count
-
-
-
 
                    60                                                                                      130
                                                                                                            120
@@ -1072,8 +1022,6 @@ Avg. step count
                                                Epsilon (ε)
                             Fig. 14: Impact of Laplace noise on utility.                                         Fig. 16: Impact of white noise on sensor utility.
 
-
-
 impact on spectral features; therefore we next added Gaussian                            obfuscated unless the user explicitly allows an application to
 white noise to the signal, after applying random offset and                              access unaltered sensor data. As we just observed for some
 gain error from a Laplace distribution. For this experimental                            applications small amount of obfuscation does not impact
@@ -1091,9 +1039,6 @@ significantly when white noise is added to the signal.                          
                                                                                              Our approach has a few limitations. First, we experimented
                    40                                                                    with 93 devices; a larger target device pool could lower our
 Avg. F-score (%)
-
-
-
 
                                                                                          accuracy. However, we conducted our experiments in real-
                    30                                                                    world settings (i.e., users under natural web browsing settings),
@@ -1216,7 +1161,6 @@ reports on work that was supported in part by NSF CNS                           
        Fingerprinting,” in Proceedings of the 15th Conference on USENIX                         technical-competitive-analysis/resources/blog/inside-the-samsung-
        Security Symposium, 2006.                                                                galaxy-siii/.
 
-
                                                                                     14
 [40]   Inside the Samsung Galaxy S4. http://www.chipworks.com/en/                    function motionHandler(event){
        technical-competitive-analysis/resources/blog/inside-the-samsung-                 agx = event.accelerationIncludingGravity.x;
@@ -1279,7 +1223,6 @@ reports on work that was supported in part by NSF CNS                           
        tional Colloquium on Automata, Languages and Programming (ICALP).
        Springer Verlag, 2006, pp. 1–12.
 
-
                      A PPENDIX A
        ACCESSING M OTION S ENSORS F ROM B ROWSER
     To access motion sensors the DeviceMotion class needs to
@@ -1290,6 +1233,5 @@ if(window.DeviceMotionEvent!=undefined){
        motionHandler);
     window.ondevicemotion = motionHandler;
 }
-
 
                                                                                 15

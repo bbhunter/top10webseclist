@@ -65,58 +65,35 @@ Jan Drescher   David Klein   Martin Johns
 February 25, 2026
 Site Isolation
 
-
-
-
         • 1 renderer process per site1                                            Browser
         • site = scheme + eTLD+1                                       IPC
         • inter-process communication (IPC)
                                                                       Renderer              Renderer
                                                                     Sandbox               Sandbox
 
-
-
-
     1
         Reis, Moshchuk, and Oskov, “Site Isolation: Process Separation for Web Sites within the Browser.”
                                                                                                             1 / 19
 Site Isolation Architecture
 
-
                           Browser Process
                                       Browser
-
-
-
 
             a.com
      su
       b.
 
-
-
-
                  b.
           a.
-
-
-
 
                   co
              c
 
-
-
-
                      m
             om
 
-
-
-
                                                 2 / 19
 Site Isolation Architecture
-
 
                                     Browser Process          Renderer Process COGS
                                                    Browser    RenderProcess
@@ -124,36 +101,21 @@ Site Isolation Architecture
                                      RenderProcessHost
                                      LOCK http://a.com
 
-
-
      CROSSHAIRS      a.com
      su
          b.
 
-
-
-
                             b.
                   a.
-
-
-
 
                               co
                      co
 
-
-
-
                                 m
                         m
 
-
-
-
                                                                                      2 / 19
 Site Isolation Architecture
-
 
                                     Browser Process                  Renderer Process COGS
                                                    Browser            RenderProcess
@@ -161,46 +123,25 @@ Site Isolation Architecture
                                      RenderProcessHost                         RenderFrame
                                      LOCK http://a.com                         FILE-ALT a.com
 
-
-
      CROSSHAIRS      a.com
      su
-
-
-
 
                                                    RenderFrameHost
          b.
 
-
-
-
                             b.
-
-
-
 
                                                    ☼ http://a.com
                   a.
 
-
-
-
                               co
                      co
-
-
-
 
                                 m
                         m
 
-
-
-
                                                                                                 2 / 19
 Site Isolation Architecture
-
 
                               Browser Process                  Renderer Process COGS
                                              Browser            RenderProcess
@@ -212,56 +153,28 @@ Site Isolation Architecture
                   a.com                                         FILE-ALT sub.a.com
      su
 
-
-
-
                                              RenderFrameHost
       b.
 
-
-
-
                       b.
-
-
-
 
                                              ☼ http://a.com
             a.
 
-
-
-
                         co
-
-
-
 
      CROSSHAIRS
                co
 
-
-
-
                           m
-
-
-
 
                                   RenderFrameHost
                   m
 
-
-
-
                                   ☼ http://sub.a.com
-
-
-
 
                                                                                                2 / 19
 Site Isolation Architecture
-
 
                                Browser Process                               Renderer Process COGS
                                               Browser                         RenderProcess
@@ -273,53 +186,28 @@ Site Isolation Architecture
             a.com                                                             FILE-ALT sub.a.com
      su
 
-
-
-
                                               RenderFrameHost
       b.
 
-
-
-
                   b.
-
-
-
 
                                               ☼ http://a.com
           a.
 
-
-
-
                         co
-
-
-
 
                  CROSSHAIRS
              c
 
-
-
-
                            m
             om
-
-
-
 
                                    RenderFrameHost
                                    ☼ http://sub.a.com                        Renderer Process COGS
                                                                               RenderProcess
 
-
-
-
                                                                                                              2 / 19
 Site Isolation Architecture
-
 
                                Browser Process                                 Renderer Process COGS
                                               Browser                           RenderProcess
@@ -333,42 +221,21 @@ Site Isolation Architecture
                                                                                                                Proxy
      su
 
-
-
-
                                               RenderFrameHost                                                  b.com
       b.
 
-
-
-
                   b.
-
-
-
 
                                               ☼ http://a.com
           a.
 
-
-
-
                         co
-
-
-
 
                  CROSSHAIRS
              c
 
-
-
-
                            m
             om
-
-
-
 
                                    RenderFrameHost
                                    ☼ http://sub.a.com                          Renderer Process COGS
@@ -383,12 +250,8 @@ Site Isolation Architecture
                                                                                                                RenderFrame
                                                                                                                FILE-ALT b.com
 
-
-
-
                                                                                                                                 2 / 19
 Site Isolation Architecture
-
 
                           Browser Process                                    Renderer Process COGS
                                             Browser                           RenderProcess
@@ -402,37 +265,19 @@ Site Isolation Architecture
                                                                                                              Proxy
      su
 
-
-
-
                                             RenderFrameHost                                                  b.com
       b.
 
-
-
-
                  b.
-
-
-
 
                                             ☼ http://a.com
           a.
 
-
-
-
                   co
              c
 
-
-
-
                      m
             om
-
-
-
 
                                  RenderFrameHost
                                  ☼ http://sub.a.com                          Renderer Process COGS
@@ -447,18 +292,11 @@ Site Isolation Architecture
                                                         Storage Service                                      RenderFrame
                                                                                                              FILE-ALT b.com
 
-
-
-
                                                                                                                               2 / 19
 Site Isolation Bypass
 
-
-
-
                                  Browser Process                                 Renderer Process COGS
                                                 Browser                           RenderProcess
-
 
  Causes:                          RenderProcessHost
                                   LOCK http://a.com
@@ -475,7 +313,6 @@ Site Isolation Bypass
                                                 ☼ http://a.com
                                                                                                                  b.com
 
-
                                      RenderFrameHost
    3. Origin Confusion               ☼ http://sub.a.com                          Renderer Process SKULL
                                                           RenderFrameHost         RenderProcess
@@ -489,19 +326,12 @@ Site Isolation Bypass
 
                                                                                                                  RenderFrame
                                                                                                                  FILE-ALT b.com
-
-
-
 
                                                                                                                                   3 / 19
 Site Isolation Bypass
 
-
-
-
                                  Browser Process                                 Renderer Process COGS
                                                 Browser                           RenderProcess
-
 
  Causes:                          RenderProcessHost
                                   LOCK http://a.com
@@ -518,7 +348,6 @@ Site Isolation Bypass
                                                 ☼ http://a.com
                                                                                                                  b.com
 
-
                                      RenderFrameHost
    3. Origin Confusion               ☼ http://sub.a.com                          Renderer Process SKULL
                                                           RenderFrameHost         RenderProcess
@@ -532,19 +361,12 @@ Site Isolation Bypass
 
                                                                                                                  RenderFrame
                                                                                                                  FILE-ALT b.com
-
-
-
 
                                                                                                                                   3 / 19
 Site Isolation Bypass
 
-
-
-
                                  Browser Process                                 Renderer Process COGS
                                                 Browser                           RenderProcess
-
 
  Causes:                          RenderProcessHost
                                   LOCK http://a.com
@@ -561,7 +383,6 @@ Site Isolation Bypass
                                                 ☼ http://a.com
                                                                                                                  b.com
 
-
                                      RenderFrameHost
    3. Origin Confusion               ☼ http://sub.a.com                          Renderer Process SKULL
                                                           RenderFrameHost         RenderProcess
@@ -575,19 +396,12 @@ Site Isolation Bypass
 
                                                                                                                  RenderFrame
                                                                                                                  FILE-ALT b.com
-
-
-
 
                                                                                                                                   3 / 19
 Site Isolation Bypass
 
-
-
-
                                  Browser Process                                 Renderer Process COGS
                                                 Browser                           RenderProcess
-
 
  Causes:                          RenderProcessHost
                                   LOCK http://a.com
@@ -604,7 +418,6 @@ Site Isolation Bypass
                                                 ☼ http://a.com
                                                                                                                  b.com
 
-
                                      RenderFrameHost
    3. Origin Confusion               ☼ http://sub.a.com                          Renderer Process SKULL
                                                           RenderFrameHost         RenderProcess
@@ -618,19 +431,12 @@ Site Isolation Bypass
 
                                                                                                                  RenderFrame
                                                                                                                  FILE-ALT b.com
-
-
-
 
                                                                                                                                   3 / 19
 Site Isolation Bypass
 
-
-
-
                                  Browser Process                                 Renderer Process COGS
                                                 Browser                           RenderProcess
-
 
  Causes:                          RenderProcessHost
                                   LOCK http://a.com
@@ -647,7 +453,6 @@ Site Isolation Bypass
                                                 ☼ http://a.com
                                                                                                                  b.com
 
-
                                      RenderFrameHost
    3. Origin Confusion               ☼ http://sub.a.com                          Renderer Process SKULL
                                                           RenderFrameHost         RenderProcess
@@ -661,76 +466,47 @@ Site Isolation Bypass
 
                                                                                                                  RenderFrame
                                                                                                                  FILE-ALT b.com
-
-
-
 
                                                                                                                                   3 / 19
 SI Bypass Example: CVE-2018-18345
-
 
                 Renderer                 Browser   Renderer
                attacker.com              Process   victim.com
 
-
                            create blob
-
-
-
 
                                                                 4 / 19
 SI Bypass Example: CVE-2018-18345
 
-
                  Renderer                                Browser    Renderer
                attacker.com                              Process   victim.com
 
-
                            create blob
-
-
-
 
                      Register Blob URL
                      blob: blob,
                      url: "blob:http://attacker.com/4500bd..."
 
-
-
-
                                                                                 4 / 19
 SI Bypass Example: CVE-2018-18345
-
 
                  Renderer                                Browser    Renderer
                attacker.com                              Process   victim.com
 
-
                            create blob
-
-
-
 
                      Register Blob URL
                      blob: blob,
                      url: "blob:http://attacker.com/4500bd..."
                                        victim.com
 
-
-
-
                                                                                 4 / 19
 SI Bypass Example: CVE-2018-18345
-
 
                 Renderer                                 Browser                                   Renderer
                attacker.com                              Process                                  victim.com
 
-
                            create blob
-
-
-
 
                      Register Blob URL
                      blob: blob,
@@ -739,21 +515,13 @@ SI Bypass Example: CVE-2018-18345
                                                                blob: blob,
                                                                url: "blob:http://victim.com/4500bd..."
 
-
-
-
                                                                                                                4 / 19
 SI Bypass Example: CVE-2018-18345
-
 
                  Renderer                                Browser                                   Renderer
                attacker.com                              Process                                  victim.com
 
-
                            create blob
-
-
-
 
                      Register Blob URL
                      blob: blob,
@@ -767,21 +535,13 @@ SI Bypass Example: CVE-2018-18345
                                                                Open
                                                                url: "blob:http://victim.com/4500bd..."
 
-
-
-
                                                                                                                4 / 19
 SI Bypass Example: CVE-2018-18345
-
 
                  Renderer                                Browser                                   Renderer
                attacker.com                              Process                                  victim.com
 
-
                            create blob
-
-
-
 
                      Register Blob URL
                      blob: blob,
@@ -796,13 +556,19 @@ SI Bypass Example: CVE-2018-18345
                                                                url: "blob:http://victim.com/4500bd..."
                                                                                                                load blob
 
-
-
-
                                                                                                                            4 / 19
 Design
 
-
+    1. Detection of SI bypass bugs
+       LONG-ARROW-ALT-RIGHT detection at runtime
+       LONG-ARROW-ALT-RIGHT Process Sanitizer & Leak Sanitizer
+    2. Cover all APIs / IPC interactions
+       LONG-ARROW-ALT-RIGHT WebIDL-based Grammar
+    3. Complex navigations to trigger Origin Confusion
+       LONG-ARROW-ALT-RIGHT favor navigation API
+    4. Simulate compromised renderer process
+       LONG-ARROW-ALT-RIGHT mutate IPC messages
+Design
 
     1. Detection of SI bypass bugs
        LONG-ARROW-ALT-RIGHT detection at runtime
@@ -815,8 +581,6 @@ Design
        LONG-ARROW-ALT-RIGHT mutate IPC messages
 Design
 
-
-
     1. Detection of SI bypass bugs
        LONG-ARROW-ALT-RIGHT detection at runtime
        LONG-ARROW-ALT-RIGHT Process Sanitizer & Leak Sanitizer
@@ -827,21 +591,6 @@ Design
     4. Simulate compromised renderer process
        LONG-ARROW-ALT-RIGHT mutate IPC messages
 Design
-
-
-
-    1. Detection of SI bypass bugs
-       LONG-ARROW-ALT-RIGHT detection at runtime
-       LONG-ARROW-ALT-RIGHT Process Sanitizer & Leak Sanitizer
-    2. Cover all APIs / IPC interactions
-       LONG-ARROW-ALT-RIGHT WebIDL-based Grammar
-    3. Complex navigations to trigger Origin Confusion
-       LONG-ARROW-ALT-RIGHT favor navigation API
-    4. Simulate compromised renderer process
-       LONG-ARROW-ALT-RIGHT mutate IPC messages
-Design
-
-
 
     1. Detection of SI bypass bugs
        LONG-ARROW-ALT-RIGHT detection at runtime
@@ -853,8 +602,6 @@ Design
     4. Simulate compromised renderer process
        LONG-ARROW-ALT-RIGHT mutate IPC messages
 Site Isolation Bypass Fuzzing
-
-
 
             Web Servers             CHROME
                                     ARROW-LEFT ARROW-RIGHT   https://www.example.com
@@ -870,14 +617,8 @@ Site Isolation Bypass Fuzzing
                                         Instrumentation                 Sink
                             1
 
-
-
-
                                                                                              5 / 19
 Process Sanitizer
-
-
-
 
                                                          Browser
   → detect cross-site reuse of renderers
@@ -888,14 +629,8 @@ Process Sanitizer
    3. compare document and tag
                                              Sandbox          Sandbox
 
-
-
-
                                                                               6 / 19
 Process Sanitizer
-
-
-
 
                                                         Browser
   → detect cross-site reuse of renderers
@@ -905,13 +640,8 @@ Process Sanitizer
    3. compare document and tag
                                              File-Alt             File-Alt
 
-
-
                                                                              6 / 19
 Process Sanitizer
-
-
-
 
                                                           Browser
   → detect cross-site reuse of renderers
@@ -921,13 +651,8 @@ Process Sanitizer
    3. compare document and tag
                                              File-Alt → Tag         File-Alt → Tag
 
-
-
                                                                                      6 / 19
 Process Sanitizer
-
-
-
 
                                                               Browser
   → detect cross-site reuse of renderers
@@ -937,13 +662,8 @@ Process Sanitizer
    3. compare document and tag
                                              File-Alt = Tag             File-Alt = Tag
 
-
-
                                                                                          6 / 19
 Process Sanitizer
-
-
-
 
                                                         Browser
   → detect cross-site reuse of renderers
@@ -953,13 +673,8 @@ Process Sanitizer
    3. compare document and tag
                                                                   File-Alt 6= Tag
 
-
-
                                                                                     6 / 19
 Leak Sanitizer
-
-
-
 
   → detect data leaks across renderers                     Browser
    1. inject secret string in victim context    IPC
@@ -967,28 +682,16 @@ Leak Sanitizer
    3. detect secret string in ipc messages      attacker             victim
                                                Sandbox           Sandbox
 
-
-
-
                                                                               7 / 19
 Leak Sanitizer
-
-
-
 
   → detect data leaks across renderers                    Browser
    1. inject secret string in victim context                                 Key
    2. victim data leaked to attacker
    3. detect secret string in ipc messages     attacker             victim
 
-
-
-
                                                                                    7 / 19
 Leak Sanitizer
-
-
-
 
   → detect data leaks across renderers                    Browser
    1. inject secret string in victim context
@@ -996,14 +699,8 @@ Leak Sanitizer
                                                Key
    3. detect secret string in ipc messages     attacker             victim
 
-
-
-
                                                                              7 / 19
 Leak Sanitizer
-
-
-
 
   → detect data leaks across renderers                       Browser
    1. inject secret string in victim context
@@ -1011,9 +708,6 @@ Leak Sanitizer
                                                CROSSHAIRS
                                                Key
    3. detect secret string in ipc messages        attacker             victim
-
-
-
 
                                                                                 7 / 19
 IPC Hooks
@@ -1023,7 +717,6 @@ IPC Hooks
             ◦ little changes to the browser code
    → Patch the IPC interface generation
 
-
               Register(...)            SendMojoMessage()                                 Register(...)
 
                           class                                     IPC                            class                 Implements
@@ -1031,15 +724,12 @@ IPC Hooks
                                          C++                                                                       C++
    Renderer Process                                                                                                              Browser Process
 
-
                                         generates COGS      interface BlobRegistry{      generates COGS
                                                               Register (...)
                                                             }
                                                                              mojo
 
-
                                       C++ IPC bindings generation in Chrome
-
 
                                                                                                                                                    8 / 19
 IPC Hooks
@@ -1049,7 +739,6 @@ IPC Hooks
             ◦ little changes to the browser code
    → Patch the IPC interface generation
 
-
               Register(...)            SendMojoMessage()                                 Register(...)
 
                           class                                     IPC                            class                 Implements
@@ -1057,15 +746,12 @@ IPC Hooks
                                          C++                                                                       C++
    Renderer Process                                                                                                              Browser Process
 
-
                                         generates COGS      interface BlobRegistry{      generates COGS
                                                               Register (...)
                                                             }
                                                                              mojo
 
-
                                       C++ IPC bindings generation in Chrome
-
 
                                                                                                                                                    8 / 19
 IPC Hooks
@@ -1075,7 +761,6 @@ IPC Hooks
             ◦ little changes to the browser code
    → Patch the IPC interface generation
 
-
               Register(...)            SendMojoMessage()                                 Register(...)
 
                           class                                     IPC                            class                 Implements
@@ -1083,52 +768,36 @@ IPC Hooks
                                          C++                                                                       C++
    Renderer Process                                                                                                              Browser Process
 
-
                                         generates COGS      interface BlobRegistry{      generates COGS
                                                               Register (...)
                                                             }
                                                                              mojo
 
-
                                       C++ IPC bindings generation in Chrome
-
 
                                                                                                                                                    8 / 19
 IPC Fuzzer JavaScript API
 
+     • How to sync JS generation and IPC mutations?
+    → JavaScript API to enqueue mutations
+    → Reproducible crashes
+
+                                                      9 / 19
+IPC Fuzzer JavaScript API
 
      • How to sync JS generation and IPC mutations?
     → JavaScript API to enqueue mutations
     → Reproducible crashes
 
-
-
-
                                                       9 / 19
 IPC Fuzzer JavaScript API
-
 
      • How to sync JS generation and IPC mutations?
     → JavaScript API to enqueue mutations
     → Reproducible crashes
 
-
-
-
                                                       9 / 19
 IPC Fuzzer JavaScript API
-
-
-     • How to sync JS generation and IPC mutations?
-    → JavaScript API to enqueue mutations
-    → Reproducible crashes
-
-
-
-
-                                                      9 / 19
-IPC Fuzzer JavaScript API
-
 
      • How to sync JS generation and IPC mutations?
     → JavaScript API to enqueue mutations
@@ -1139,12 +808,8 @@ IPC Fuzzer JavaScript API
                IPCFuzzer.check_isolation(src);
                <\/script></body></html>`;
 
-
-
-
                                                       9 / 19
 IPC Fuzzer JavaScript API
-
 
      • How to sync JS generation and IPC mutations?
     → JavaScript API to enqueue mutations
@@ -1156,12 +821,8 @@ IPC Fuzzer JavaScript API
                <\/script></body></html>`;
    var blob = new Blob([text], { type: "text/html" });
 
-
-
-
                                                          9 / 19
 IPC Fuzzer JavaScript API
-
 
      • How to sync JS generation and IPC mutations?
     → JavaScript API to enqueue mutations
@@ -1176,12 +837,8 @@ IPC Fuzzer JavaScript API
    IPCFuzzer.mutate_url_replace_host("http://victim.com");
    var url = URL.createObjectURL(blob);
 
-
-
-
                                                              9 / 19
 IPC Fuzzer JavaScript API
-
 
      • How to sync JS generation and IPC mutations?
     → JavaScript API to enqueue mutations
@@ -1202,9 +859,6 @@ IPC Fuzzer JavaScript API
                                                              9 / 19
 Findings
 
-
-
-
     Browser       Description                                      Tracker
         FIREFOX   renderer can spoof URL in history.replaceState   CVE-2024-9392
         CHROME    Window.name leaks on navigation                  #384781865†
@@ -1215,23 +869,13 @@ Findings
     ‡
         Known issue
 
-
-
-
                                                                                    10 / 19
 Coverage Evaluation
-
-
-
 
                       11 / 19
 Questions?
 
-
-
-
      Full Paper:
-
 
                    Envelope jan.drescher@tu-braunschweig.de
                     LINKEDIN jan-niklas-drescher-5968081
@@ -1242,9 +886,6 @@ Reis, Charles, Alexander Moshchuk, and Nasko Oskov. “Site Isolation: Process S
 within the Browser.”. In: 2019, pp. 1661–1678.
 Findings: CVE-2024-9392
 
-
-
-
    IPCFuzzer.activate_leak_sanitizer();
    IPCFuzzer.mutate_url("http://127.0.0.2:8080/victim.html");
    window.history.replaceState("foo","", null);
@@ -1252,14 +893,8 @@ Findings: CVE-2024-9392
 
                     Proof-of-Concept for Firefox History Confusion
 
-
-
-
                                                                      13 / 19
 Fuzzer Evaluation
-
-
-
 
                            Reproduction on known vulnerabilities
 
@@ -1270,37 +905,24 @@ Fuzzer Evaluation
         CVE-2019-5856    < 76.0.3809.87    67.0.3396.99    1      1 minute
         CVE-2018-18345   < 71.0.3578.80    67.0.3396.99    1      11.4 hours
 
-
-
-
                                                                                       14 / 19
 Oracle Evaluation
-
-
-
 
                                                 Oracle Evaluation on known PoC’s
 
    • Add sanitizer to vulnerable browser   ID               Class   LeakSan   ProcessSan
                                            CVE-2018-16074    3
    • Test if sanitizer detects the PoC     CVE-2019-5773     1
-                                                                      #
-                                                                                  #
      exploit                               #40093844         2                    #
                                            CVE-2024-1671     3                    #
                                            CVE-2022-3044     1        #           #
 
-
-
-
                                                                                            15 / 19
 SI Bypass Example: CVE-2022-1637
-
 
    let win = window.open('data:,hello', '_blank');
    // manipulate IPC message
    console.log('Exfiltrated cookies: ' + win.document.cookie);
-
 
                                                  GetOpener()
                            GetOriginalOpener()
@@ -1313,18 +935,14 @@ SI Bypass Example: CVE-2022-1637
                                       COGS                                  COGS
                       Chrome SI bypass caused by Origin Confusion
 
-
                                                                                    16 / 19
 Known SI Bypass Vulnerabilities
 
            ID               Description                                                                                                                   Class   In Scope
 
-
            CVE-2024-1671    Origin confusion in session history leaks URL of srcdoc iframe                                                                 3
            CVE-2022-4913    Compromised renderer can access extension storage                                                                               1       H
-                                                                                                                                                                    #
            CVE-2022-3661    Compromised renderer can message any extension content script                                                                   1       H
-                                                                                                                                                                    #
            CVE-2022-3044    No access checks for clipboard interface                                                                                        1
            CVE-2022-1637    Cross-origin iframe can spoof the hostname of top-frame by opening new window with javascript: URI and target _blank           3
            CVE-2022-0305    Hidden bug report for Service Worker                                                                                           ?         ?
@@ -1332,17 +950,14 @@ Known SI Bypass Vulnerabilities
            CVE-2022-0292    Fenced frame can open textttfile: URLs                                                                                          1
            CVE-2022-0291    Hidden bug report for storage                                                                                                   ?        ?
            #40060671        Compromised renderer can spoof PortContext and claim to be WorkerContext of arbitrary extension                                 1       H
-                                                                                                                                                                    #
            CVE-2021-38010   URLLoader leaked to ServiceWorker, compromised renderer can read the response of redirected cross-origin requests               1       #
            CVE-2021-30507   Compromised renderer can spoof textttX-Chrome-offline header to read arbitrary file                                             1       #
            CVE-2021-21222   TOCTOU bug in GeneratedCodeCache: compromised renderer can change value after the hash computation                             2        #
            CVE-2021-21175   X-Frame-Options error of cross-origin iframe is leaked to parent                                                                1
            #40054801        Compromised renderer that outlives state in the browser process can bypass security checks to spoof origin                     2
            CVE-2020-6435    Compromised renderer can spoof sender id to extension                                                                           1       H
-                                                                                                                                                                    #
            CVE-2020-6385    Origin checks in BlobURLStoreImpl::Register skipped if renderer process simulates detachment                                   2
            CVE-2020-6380    Compromised renderer can spoof origin, message any extension                                                                    1       H
-                                                                                                                                                                    #
            CVE-2019-13763   Compromised renderer can spoof origin and leak data from textttPaymentManager                                                   1
            CVE-2019-13738   Sandboxed iframe shares execution context with initial non-sandboxed about:blank frame                                         3
            CVE-2019-13727   Compromised renderer can create WebSocket to arbitrary URL and leak the response headers                                        1
@@ -1387,11 +1002,8 @@ Mojo IDL Example
                              bool is_top_level_navigation);
    };
 
-
-
                                                                                     18 / 19
 Firefox IPDL Example
-
 
    struct BlobURLRegistrationData
    {
@@ -1413,8 +1025,6 @@ Firefox IPDL Example
 
    }
 
-
                                            Excerpt of PContent.ipdl
-
 
                                                                                                                 19 / 19

@@ -72,7 +72,7 @@ Spook.js
 
  More specifically, we show that an attacker-controlled webpage can know which other pages from the same websites a user is currently browsing, retrieve sensitive information from these pages, and even recover login credentials (e.g., username and password) when they are autofilled. We further demonstrate that the attacker can retrieve data from Chrome extensions (such as credential managers) if a user installs a malicous extension.
 
- [**Download the Paper (PDF)](https://www.spookjs.com/files/spook-js.pdf) [** Cite (BibTeX)]()
+ [**Download the Paper (PDF)](https://www.spookjs.com/files/spook-js.pdf) ** Cite (BibTeX)
 
 #### **What can Spook.js do?
 

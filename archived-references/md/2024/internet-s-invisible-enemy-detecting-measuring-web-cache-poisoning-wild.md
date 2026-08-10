@@ -67,7 +67,6 @@ Tsinghua University
 Beijing, China
 liangyj21@tsinghua.org.cn
 Jianjun Chen
-*
 Tsinghua University; Zhongguancun
 Laboratory
 Beijing, China
@@ -120,7 +119,8 @@ ACM Reference Format:Yuejia Liang, Jianjun Chen, Run Guo, Kaiwen Shen, Hui Jiang
 
 --- page 3 ---
 
-3õK‡mØy}"C3§éýô!Åä!ßñwUßÓXéAz*&Ñ¼h7¯µ È #<!‹XLò6ð7‘2Dò[8—Ëâ¬2½?bEA•H!£UB†Mö»Ú[¨@�s>³¯dA5_Î«bTí£ŽÓL½tÞè,¬‚kTÖÅh÷+ªc0[Ä‚ªuR°+°€’fS2rŠÖ“W®¶´–ŠFQ~Q±HìëO“[É§ClY0âÕEùp¼T'£ö£Eî¾í4Þ=‹$©Ê‡ŒÚÀãêôso‹®‘ìýgÄcD&8&—ë÷ÎÈOÍ«•hÒš˜®NªÊ‚ÀIOÓz„²Ë*´
+3õK‡mØy}"C3§éýô!Åä!ßñwUßÓXéAz*&Ñ¼h7¯µ È #<!‹XLò6ð7‘2Dò[8—Ëâ¬2½?bEA•H!£UB†Mö»Ú[¨@�s>³¯dA5_Î«bTí£ŽÓL½tÞè,¬‚kTÖÅh÷+ªc0[Ä‚ªuR°+°€’fS2rŠÖ“W®¶´–ŠFQ~Q±HìëO“[É§ClY0âÕEùp¼T'£ö£Eî¾í4Þ=‹$©Ê‡ŒÚÀ
+ãêôso‹®‘ìýgÄcD&8&—ë÷ÎÈOÍ«•hÒš˜®NªÊ‚ÀIOÓz„²Ë*´
 éù³^ÄÊ±›YÎÐÃÇL�©g-!¢µŸÕÂfý‡A	ÍG¼„¶e`ng�òÿWkåÄ”Ó³H¤Ï9³£!TYÎ¤ë”'Ôeän×á?_;$ÁYªKËÀðªòðƒ£F7!Àf�ê†²¶n^ó�>¦GÊ¤„ùw8éF%#ì`ˆÄ!�VòGªbÏ©æ›Ç ‰hÀ¾ ‹©áOu„èAÆZ¼÷4QÖ’@Uoà-Ÿ~ïM”TÃÉ˜æ?¡ºaÏ¥÷«‡ÕØ¾“Ó/Àë/š^´+X¾Dê`]¾¶ÌR‚¸°"*ù¹9
 
 --- page 4 ---
@@ -284,7 +284,7 @@ HTTP Header Oversize20%HTTP Method Override11%Forwarded Header Attack7%HTTP Para
 
 --- page 20 ---
 
-%+/1233333333333333333321.
+%+/1233333333333333333321.
 
 --- page 21 ---
 
@@ -577,17 +577,23 @@ alipay.com*: The vulnerable websites in the table only show the base domain. The
 
 --- page 31 ---
 
-2°-9°"@*+:<$9°±99±²999°&µ"$9±7	³*+-/$9°°901'#'7672327&#"'4?654'&"&#"5674#"'672BVüTT×Dzh>DjmHX;�oN7Í–QD! VþN%-þÎV%v%ºN><'+³N¹²6+´H6+²?+°+3°/±!é³+°3´+°2°O/°;Ö±Fé°2°F±é°/°F±N+´3 +°3° Ö±é°/±	é±P+±F³@A$9°µ$6BCH$9°N³+,$9°	±-99°3°.9±?H±3;99±!³	$901"&54632"&54632%!".54>3!2'727!".5'727!2>5m>5/%!3ü™%/0$#11+þWªÉ%E%ðþÙP•š^%‡%Xd�P-¸+@
+2°-9°"@*+:<$9°
+±99±²999°&µ"$9±7	³*+-/$9°°901'#'7672327&#"'4?654'&"&#"5674#"'672BVüTT×Dzh>DjmHX;�oN7Í–QD! VþN%-þÎV%v%ºN><'+³N¹²6+´H6+²?+°+3°/±!é³+°3´+°2°O/°;Ö±Fé°2°F±é°/°F±N+´3 +°3° Ö±é°/±	é±P+±F³@A$9°µ$6BCH$9°N³+,$9°	±-99°3°.9±?H±3;99±!³	$901"&54632"&54632%!".54>3!2'727!".5'727!2>5m>5/%!3ü™%/0$#11+þWªÉ%E%ðþÙP•š^%‡%Xd�P-¸+@
 +25$9±°9±±%099°*³	
 5$9±%°9°5°'9°0±"99±°9012#".546'64>7632#"'6&'.#"3267`_?<B+DÍ®1-278$9±2°49°
-²-999012#".5462654.#"'732632#"'&"'6;`_?<B+C99±°9°°-9014"3252632#"'2&! '5437>54&/"=7áRTTRTäX¼Éïä'/?8dþùþö`5?21@5`˜NMúNNsÍ‡ËÌün+'''%-â-$'XþÛRPL²+´+²+°
+²-999012#".5462654.#"'732632#"'&"'6;`_?<B+C99±°9°
+°-9014"3252632#"'2&! '5437>54&/"=7áRTTRTäX¼Éïä'/?8dþùþö`5?21@5`˜NMúNNsÍ‡ËÌün+'''%-â-$'XþÛRPL²+´+²+°
 /´+° /°Ö´+° Ö±
-é°2±!+±µ	$9015673#.".5473jTTR10Ú/4;`J
+é°
+2±!+±µ	$9015673#.".5473jTTR10Ú/4;`J
 bŽƒTÙL#PZ
-2ý´1#5/u!žo¨/#LPöš	J°/´"+°/´"+°/°Ö´,+°±+´ +±+±°9±±9901324'&#"&547672#"Ñdf=fJ7HD[^@FJ?_o5þð;u;XýðZ�šdX^š®ZL‘åéF°/´ +°/°Ö´+°2°´,+°/±+±±99°´$901462"4'7672&#0567‘%6&&6'I+@�6&&6%þ¬žBmtZ�eR”'þ“!$X²+°/°3´"9+°2°%/°!Ö°#2´,+°2²!
-+³@	+±&+±!²	999±"°9°±$9901"'476532732+&#"567'3d;}œ*$9°±99°²99901654#"5654'&#"#'7632#"/?7^-y–7FzT6;�D+3VHojF!6+ž%T3†+5V;%G…!%+Hj8/>V9'ÿ/Å!$K°/°3´"9+°2°%/°!Ö°#2´,+°2²!
+2ý´1#5/u!žo¨/#LPöš	J°/´"+°/´"+°/°Ö´,+°±+´ +±+±°9±±9901324'&#"&547672#"Ñdf=fJ7HD[^@FJ?_o5þð;u;XýðZ�šdX^š®ZL‘åéF°/´ +°/°Ö´+°2°´,+°/±+±±99°´
+$901462"4'7672&#0567‘%6&&6
+'I+@�6&&6%þ¬žB
+mtZ�eR”'þ“!$X²+°/°3´"9+°2°%/°!Ö°#2´,+°2²!
++³@	+±&+±!²	999±"°9°±$9901"'476532732+&#"567'3d;}œ*$9°±99°
+²99901654#"5654'&#"#'7632#"/?7^-y–7FzT6;�D+3VHojF!6+ž%T3†+5V;%G…!%+Hj8/>V9'ÿ/Å!$K°/°3´"9+°2°%/°!Ö°#2´,+°2²!
 +³@	+±&+±!²	999±"°901"'476532732+&#"567'3d;}œ++
-
 
 --- page 32 ---
 
@@ -1391,7 +1397,6 @@ Tsinghua University
 Beijing, China
 liangyj21@tsinghua.org.cn
 Jianjun Chen
-*
 Tsinghua University; Zhongguancun
 Laboratory
 Beijing, China
@@ -1435,7 +1440,6 @@ Network security
 Web application security
 .
 KEYWORDSNetwork Security, Measurement, Web Cache, Web Cache Poisoning
-*
 Corresponding author.This work is licensed under a Creative Commons AttributionInternational 4.0 License.
 CCS '24, October 1418, 2024, Salt Lake City, UT, USA
 ©

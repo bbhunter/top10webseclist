@@ -226,7 +226,7 @@ F2544137: [biz.yelp-yelp-ato-poc.mp4](https://hackerone-us-west-2-production-att
 
 .
 
-[July 28, 2023, 11:12pm UTC]()
+July 28, 2023, 11:12pm UTC
 
 Hi there!
 
@@ -246,7 +246,7 @@ Best, The Yelp Security Team
 
 changed the status to ****Triaged**.
 
-[July 29, 2023, 1:15am UTC]()
+July 29, 2023, 1:15am UTC
 
 Hi [@lil_endian](https://hackerone.com/lil_endian),
 
@@ -266,7 +266,7 @@ Thanks, Yelp Security
 
 closed the report and changed the status to ****Resolved**.
 
-[August 10, 2023, 8:14pm UTC]()
+August 10, 2023, 8:14pm UTC
 
 Hi [@lil_endian](https://hackerone.com/lil_endian),
 
@@ -278,7 +278,7 @@ Best, Yelp Security
 
 rewarded [lil_endian](https://hackerone.com/lil_endian) with a bounty.
 
-[August 10, 2023, 8:14pm UTC]()
+August 10, 2023, 8:14pm UTC
 
 [calvinli](https://hackerone.com/calvinli)
 
@@ -286,7 +286,7 @@ rewarded [lil_endian](https://hackerone.com/lil_endian) with a bounty.
 
 requested to disclose this report.
 
-[August 10, 2023, 8:15pm UTC]()
+August 10, 2023, 8:15pm UTC
 
 [
 
@@ -298,7 +298,7 @@ requested to disclose this report.
 
 .
 
-[August 11, 2023, 12:50am UTC]()
+August 11, 2023, 12:50am UTC
 
 Thanks for the bounty!
 
@@ -316,7 +316,7 @@ I intend to spend more time hacking on Yelp, so understanding how you rate bugs 
 
 .
 
-[August 17, 2023, 3:06pm UTC]()
+August 17, 2023, 3:06pm UTC
 
 [@calvinli](https://hackerone.com/calvinli) bumping just in case you missed my question above :)
 
@@ -330,7 +330,7 @@ I intend to spend more time hacking on Yelp, so understanding how you rate bugs 
 
 .
 
-[August 23, 2023, 7:12am UTC]()
+August 23, 2023, 7:12am UTC
 
 [@calvinli](https://hackerone.com/calvinli) bump again
 
@@ -344,7 +344,7 @@ I intend to spend more time hacking on Yelp, so understanding how you rate bugs 
 
 .
 
-[August 28, 2023, 12:44pm UTC]()
+August 28, 2023, 12:44pm UTC
 
 I'd really appreciate an answer here...
 
@@ -356,7 +356,7 @@ high (8.8)
 
  to medium.
 
-[August 28, 2023, 12:50pm UTC]()
+August 28, 2023, 12:50pm UTC
 
 [
 
@@ -368,7 +368,7 @@ high (8.8)
 
 .
 
-[August 28, 2023, 12:57pm UTC]()
+August 28, 2023, 12:57pm UTC
 
 Hello [@lil_endian](https://hackerone.com/lil_endian),
 
@@ -386,7 +386,7 @@ Best, The Yelp Security Team
 
 .
 
-[August 28, 2023, 1:17pm UTC]()
+August 28, 2023, 1:17pm UTC
 
 Can you please share the CVSS score metrics you used to rate this issue then?
 
@@ -402,7 +402,7 @@ You made 2 changes based on this report (fixed the XSS issue, and made changes t
 
 .
 
-[August 29, 2023, 7:28am UTC]()
+August 29, 2023, 7:28am UTC
 
 Hello [@lil_endian](https://hackerone.com/lil_endian),
 
@@ -424,7 +424,7 @@ Best, The Yelp Security Team
 
 .
 
-[August 29, 2023, 8:12am UTC]()
+August 29, 2023, 8:12am UTC
 
 Setting "Privileges Required" to "Low" makes no sense when an attacker can immediately bootstrap themselves from having no account to creating a free business account in less than a minute.
 
@@ -446,8 +446,8 @@ Anyway, I'll get back to hacking on Yelp now.
 
 agreed to disclose this report.
 
-[September 8, 2023, 7:22am UTC]()
+September 8, 2023, 7:22am UTC
 
 This report has been disclosed.
 
-[September 8, 2023, 7:22am UTC]()
+September 8, 2023, 7:22am UTC

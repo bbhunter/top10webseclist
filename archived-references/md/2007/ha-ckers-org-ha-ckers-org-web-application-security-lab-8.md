@@ -87,7 +87,7 @@ The next question people are going to ask is, how do you do this if you have doz
 
 Of course other protocols may be in place with external applications that are installed (similar to the scp example). Knowing them can be tricky and noisy if they fail, depending on how the fail. The point being there are a lot of alternative paths to getting a machine to connect directly to the machine in question by bypassing the normal hypertext transfer protocol completely.
 
-  This entry was posted on Saturday, April 21st, 2007 at 10:22 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070421/noisy-decloaking-methods/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20070421/noisy-decloaking-methods/trackback/) from your own site.
+  This entry was posted on Saturday, April 21st, 2007 at 10:22 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070421/noisy-decloaking-methods/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070421/noisy-decloaking-methods/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

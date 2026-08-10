@@ -61,7 +61,7 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-### []()Abstract
+### Abstract
 
 Despite HTTP Request Tunnelling's resurgence in recent years with the advent of [HTTP/2 Desync Attacks](https://portswigger.net/research/http2#h2desync), its much bolder big brother HTTP Request Smuggling has stolen the limelight, leaving cases of desync-powered tunnelling buried for all but the most dedicated tunnelling enthusiasts.
 
@@ -73,26 +73,26 @@ This research was originally presented at [BSides Exeter 2025](https://bsidesexe
 
 [Recording](https://www.youtube.com/watch?v=BTdP7yjbH5Y)
 
-### []()Table of Contents
+### Table of Contents
 
-- [Breadcrumbs]()
-- [HTTP/2 Request Tunnelling]()
-- [Fixing the Existing Detection]()
-- [Building an Exploit]()
+- Breadcrumbs
+- HTTP/2 Request Tunnelling
+- Fixing the Existing Detection
+- Building an Exploit
 
-- [The 2000 Request Problem]()
-- [Embracing the Single-Packet Attack]()
+- The 2000 Request Problem
+- Embracing the Single-Packet Attack
 
-- [Single-Packet Detection]()
+- Single-Packet Detection
 
-- [Building Custom Research Tools]()
-- [Building a Research Pipeline]()
+- Building Custom Research Tools
+- Building a Research Pipeline
 
-- [Case Studies]()
-- [Conclusions]()
+- Case Studies
+- Conclusions
 
-- [Key Takeaways]()
-- [Further Research]()
+- Key Takeaways
+- Further Research
 
 A common misconception is that research stems from what is often perceived as a sudden "light-bulb" moment in which a researcher breaks through the current understanding of their chosen topic. This is however, in my experience, light years away from the truth. Solid research ideas typically stem from so-called "breadcrumbs" that particularly persistent testers decide they finally have the time to follow-up on. You yourself may already be thinking of such examples from your own engagements, where you felt a specific feature or behavior just had to be vulnerable, if only you had enough time to exploit it.
 
@@ -131,13 +131,13 @@ Server: ...
 
 ```
 
-He had discovered that by attempting to smuggle a very invalid, but **complete** request (`FOO\r\n\r\n`) you would often receive a `HTTP/2` response with a `HTTP/1` response embedded within its body. This behavior as it turned out, is a strong indication of [HTTP Request Tunnelling]() and is **often** mistaken for a HTTP Request Smuggling false positive.
+He had discovered that by attempting to smuggle a very invalid, but **complete** request (`FOO\r\n\r\n`) you would often receive a `HTTP/2` response with a `HTTP/1` response embedded within its body. This behavior as it turned out, is a strong indication of HTTP Request Tunnelling and is **often** mistaken for a HTTP Request Smuggling false positive.
 
 I then realized that all of these so-called false positives, were actually a commonly overlooked case of HTTP Request Tunnelling and that, presented an interesting opportunity for further research.
 
-### []()HTTP/2 Request Tunnelling
+### HTTP/2 Request Tunnelling
 
-HTTP Request Tunnelling has already been covered in excellent detail over at [Portswigger's Web Security Academy]() so I will only cover it briefly here.
+HTTP Request Tunnelling has already been covered in excellent detail over at Portswigger's Web Security Academy so I will only cover it briefly here.
 
 First, lets take a look at a HTTP Desync Attack which is the basis for both smuggling and tunnelling. ![](https://www.assured.se/media/2025/05/http-desync-attacks.webp)
 
@@ -253,7 +253,7 @@ Content-Type: text/html
 
 While this certainly looks strange, you might be wondering what the vulnerability here actually is. Modern frontends are responsible for a lot more than simply load-balancing. They will also often implement WAFs, access control rules and HTTP header rewrites. However, when a request is "tunnelled" within a request's body, the frontend has no reason to treat this request as anything other than data sent inside the encapsulating request's body. Therefore, by default, WAF rules, access controls and header rewrites are completely bypassed.
 
-### []()Fixing the Existing Detection
+### Fixing the Existing Detection
 
 Once I had a grasp on request tunnelling, I couldn't help but wonder why [HTTP Request Smuggler](https://github.com/PortSwigger/http-request-smuggler) was unable to identify this vulnerability. It actually has built-in support for tunnelling detection, but in this case, the detection seemed to fail consistently.
 
@@ -301,11 +301,11 @@ attacks.add(foo);
 
 I tested this probe on all of the apps that I had explored the issue on previously and found that it worked on all of them. I even found a few more cases within some other customer environments. It's worth noting that [HTTP Request Smuggler](https://github.com/PortSwigger/http-request-smuggler) wasn't actually failing to detect anything here, as the timeout technique works for both smuggling and tunnelling detection. However, to further improve the clarity of the detection, this technique has now been added to [HTTP Request Smuggler](https://github.com/PortSwigger/http-request-smuggler) so that burp will report a seperate issue that actually uses the tunnelling-specific detection.
 
-### []()Building an Exploit
+### Building an Exploit
 
 Now that I had working detection, I felt it was probably time to start figuring out how to exploit these cases. However, as soon as I started this process, I quickly hit my next roadblock.
 
-#### []()The 2000 Request Problem
+#### The 2000 Request Problem
 
 HTTP Request Tunnelling is often blind, meaning that while requests may be split by the backend causing two responses to be generated for every one request forwarded by the frontend, the frontend may detect and ignore the "extra" response. As a client therefore, we see absolutely nothing in response to our probes.
 
@@ -358,7 +358,7 @@ The behaviour **usually** took ~2000 requests to trigger, but would occasionally
 
 Initially I completely dismissed this idea as a race condition in how HTTP requests are interpreted by a frontend sounded insane. Eventually I decided it was the best lead I had and given that a brilliant web race condition paper called [smashing the state machine](https://portswigger.net/research/smashing-the-state-machine) had just been released, it seemed as though this theory would be trivial to test. In the worst case, I'd be able to [fail fast](https://portswigger.net/research/how-i-choose-a-security-research-topic) and move on.
 
-#### []()Embracing the Single-Packet Attack
+#### Embracing the Single-Packet Attack
 
 The single-packet attack represents a huge leap forward in the ability to exploit web race conditions. You can read more about it [here](https://portswigger.net/research/the-single-packet-attack-making-remote-race-conditions-local) but all you really need to know today, is that it makes web race conditions **significantly** easier to detect and reproduce. Conveniently, the technique itself is both powerful and trivial to implement, meaning that it's already built-in to a lot of tools including burp repeater.
 
@@ -437,9 +437,9 @@ Content-Type: text/html
 
 This was the single greatest breakthrough I made during the research and fuelled my motivation moving forward. While I now had a reliable method for exploitation, I couldn't help but wonder if this technique could also reveal a novel detection method for request tunnelling.
 
-### []()Single-Packet Detection
+### Single-Packet Detection
 
-#### []()Building Custom Research Tools
+#### Building Custom Research Tools
 
 In an attempt to rapidly prototype this idea, I initially dove straight back into the [HTTP Request Smuggler](https://github.com/PortSwigger/http-request-smuggler) code with the expectation that I'd quickly implement the Single-Packet Attack with all of the header permutations from that tool. However, for whatever reason, I hit a road-block that I wasn't able to over-come and out of frustration decided I'd build my own tool.
 
@@ -511,7 +511,7 @@ All of the code regarding burp's interface, selection of proxy entries and threa
 
 Once I had this tool working, I needed something to scan. Fortunately, the world of bug bounty exists, and there are some great resources explaining [how to create a Bug Bounty web research file](https://portswigger.net/research/cracking-the-lens-targeting-https-hidden-attack-surface). I replicated this setup with a little difficulty as follows (shout-out to the Portswigger discord for helping me with this process):
 
-#### []()Building a Research Pipeline
+#### Building a Research Pipeline
 
 ![](https://www.assured.se/media/2025/05/research-pipeline.webp)
 
@@ -530,11 +530,11 @@ Eventually, I had a huge Burp Suite file filled with bug bounty programs that I 
 
 The single-packet technique worked great, revealing a significantly large number of vulnerable servers.
 
-### []()Case Studies
+### Case Studies
 
 Actually exploiting request tunnelling turned out to be extremely challenging with the little time I could spare. As a result, I don't have a huge number of cases to discuss, but I do have some major disclosures I am more than happy to share.
 
-#### []()AWS Application Load Balancer Access Control Bypass
+#### AWS Application Load Balancer Access Control Bypass
 
 The major work from this research impacted everything running AWS' application load balancer in front of any server that accepted whitespace before the colon in the `Transfer-Encoding` header. In the vast majority of cases, this turned out to be IIS.
 
@@ -692,7 +692,7 @@ Our tunnelled request therefore meets the backend code's requirements, which all
 
 It can be tricky to find these hidden headers. But in general, documentation for frontends will often reveal headers that are supported. Otherwise, you'll have to settle for blind guessing. For classic tunnelling cases, [param miner](https://github.com/PortSwigger/param-miner) has built-in support for guessing headers within tunnelled requests. However, if you need to guess headers **while** using the single-packet attack, you can use my crude implementation of the same header-guessing behavior, which is built-in to my single-packet tunneller extension.
 
-#### []()AWS Disclosure Timeline
+#### AWS Disclosure Timeline
 
 I reported the Single-Packet Tunnelling attack to AWS who quickly got to work on a fix.
 
@@ -730,7 +730,7 @@ Content-Length: 122
 
 ```
 
-#### []()Connection-locked Request Smuggling in Azure Front Door
+#### Connection-locked Request Smuggling in Azure Front Door
 
 One of the benefits of being a very hacky coder, is that any detection tools you do write, will often find similar cases completely accidentally. In my case, I happened to scan a site that was simultaneously vulnerable to request tunnelling and request smuggling. With or without the single-packet attack I was able to smuggle prefixes or full requests, but could not interact with other users.
 
@@ -758,7 +758,7 @@ HTTP/2 404 Not Found
 
 ```
 
-#### []()Azure Front Door Disclosure Timeline
+#### Azure Front Door Disclosure Timeline
 
 I reported this bug via MSRC but the impact wasn't deemed critical enough to be considered for immediate attention and therefore a bounty. I did attempt to clarify that any impact would be determined case-by-case, based on any frontend rules or backend functionality that used frontend header rewrites, but I never heard back.
 
@@ -770,11 +770,11 @@ I reported this bug via MSRC but the impact wasn't deemed critical enough to be 
 
 ![](https://www.assured.se/media/2025/05/msrc-response.webp)
 
-### []()Conclusions
+### Conclusions
 
 To summarize, I have revealed a couple of new techniques for detecting and exploiting HTTP/2 Request Tunnelling and implemented them both into either the existing tooling ([HTTP Request Smuggler](https://github.com/PortSwigger/http-request-smuggler)) or my own tooling [Single-Packet Tunneller](https://github.com/t0xodile/the-single-packet-shovel/tree/main/single-packet-tunneller). Hopefully this paper has also helped further demystify the web security research process and provided any aspiring researchers with the tools they need to follow their own breadcrumbs.
 
-#### []()Key Takeaways
+#### Key Takeaways
 
 - Request Tunnelling is **still** underrated
 - Building research tools for burp is not so scary thanks to [BulkScan](https://github.com/albinowax/bulkScan)
@@ -784,7 +784,7 @@ To summarize, I have revealed a couple of new techniques for detecting and explo
 - Producing your own research can be as easy as simply following the **breadcrumbs**
 - Tooling and resources used available at [github.com/t0xodile/the-single-packet-shovel](https://github.com/t0xodile/the-single-packet-shovel)
 
-#### []()Further Research
+#### Further Research
 
 All research should conclude with some ideas for further work. Fortunately, while working on this paper I've spotted some clues in the wild that indicate some potential in the following areas:
 

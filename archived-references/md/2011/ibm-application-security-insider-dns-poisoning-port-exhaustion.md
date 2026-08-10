@@ -87,7 +87,7 @@ We would like to thank Oracle and Microsoft for their cooperation.
 
 -Roee Hay and Yair Amit
 
- []()
+ 
 
 TrackBack URL for this entry:
 http://www.typepad.com/services/trackback/6a00d835130c5153ef01539261ff79970b

@@ -69,7 +69,7 @@ I spent a couple of hours to a very few days looking at this code, setting up a 
 
 My main focus was on [`pash`](https://hg.mozilla.org/hgcustom/version-control-tools/file/tip/hgserver/pash) which is used in place of the shell when handling [hg](https://www.mercurial-scm.org/) operations via SSH on `hg.mozilla.org`.
 
-## LDAP query truncation[#]()
+## LDAP query truncation#
 
 pash [offered to clone from user’s private repositories](https://hg.mozilla.org/hgcustom/version-control-tools/file/dc5c59fe7099386e744c6632e318965b4a5265f8/hgserver/pash/hg_helper.py#l341) in the `make_repo_clone` method. The `source_user` is completely user controlled and read from `input` via SSH:
 

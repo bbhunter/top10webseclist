@@ -83,7 +83,7 @@ Sergey Vzloman sent me a really interesting proof of concept this morning on how
 
 So as you probably would have expected, I did add it to [Mr. T (click for an example in Firefox)](http://ha.ckers.org/mr-t/) so that it would be included as well when you’re in the process of doing recon. Very cool, and obviously can be used to know in very fine detail what the user is using and what specialized security settings they may have installed. Tricky. Thanks to Sergey for the code!
 
-  This entry was posted on Wednesday, May 16th, 2007 at 8:34 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070516/read-firefox-settings-poc/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20070516/read-firefox-settings-poc/trackback/) from your own site.
+  This entry was posted on Wednesday, May 16th, 2007 at 8:34 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070516/read-firefox-settings-poc/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070516/read-firefox-settings-poc/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

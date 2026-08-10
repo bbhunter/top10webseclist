@@ -86,7 +86,7 @@ We present the first measurement study of authentication security in real-world 
  From: Huijun Zhou [[view email](https://arxiv.org/show-email/fec10057/2605.22333)]
  **[v1]** Thu, 21 May 2026 11:22:21 UTC (775 KB)
 
- []() Full-text links:
+  Full-text links:
 
 ## Access Paper:
 
@@ -206,4 +206,4 @@ Both individuals and organizations that work with arXivLabs have embraced and ac
 
 Have an idea for a project that will add value for arXiv's community? [**Learn more about arXivLabs**](https://info.arxiv.org/labs/index.html).
 
- [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/2605.22333) | [Disable MathJax]() ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))
+ [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/2605.22333) | Disable MathJax ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))

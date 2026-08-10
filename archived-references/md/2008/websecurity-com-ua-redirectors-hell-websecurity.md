@@ -94,7 +94,7 @@ This entry was posted on 22:46 03.12.2008 and is filed under [Уразливос
 
 You must be [logged in](http://websecurity.com.ua/wp-login.php?redirect_to=http://websecurity.com.ua/2670/) to post a comment.
 
- [![English](http://websecurity.com.ua/images/uk.gif)](http://translate.google.com/translate?hl=en&u=http://websecurity.com.ua/2670/&sl=uk&tl=en)[*]()[![Ukrainian](http://websecurity.com.ua/images/ua.gif)](http://websecurity.com.ua/2670/)
+ [![English](http://websecurity.com.ua/images/uk.gif)](http://translate.google.com/translate?hl=en&u=http://websecurity.com.ua/2670/&sl=uk&tl=en)*[![Ukrainian](http://websecurity.com.ua/images/ua.gif)](http://websecurity.com.ua/2670/)
 -
 
 -
@@ -159,7 +159,7 @@ You must be [logged in](http://websecurity.com.ua/wp-login.php?redirect_to=http:
 
 -
 
-## Архів [+]()
+## Архів +
 
 - 2006 - 2026
 

@@ -97,5 +97,69 @@ class TestTheShareLimit(unittest.TestCase):
         self.assertEqual(boilerplate.trim("")[1], [])
 
 
+class TestDeadLinks(unittest.TestCase):
+    """`[Data request]()` is what a table of contents, a footnote arrow and a
+    collapsible toggle convert to, and 6,132 of them were published as literal
+    brackets across 425 files. A link with no target is not a link."""
+
+    def test_a_dead_link_keeps_its_label_and_loses_its_brackets(self):
+        text, removed = boilerplate.drop_dead_links(
+            "- [Data request]()\n- [Data fetching]()\n")
+        self.assertEqual(text, "- Data request\n- Data fetching\n")
+        self.assertEqual(removed, ["dead-link"])
+
+    def test_a_live_link_is_untouched(self):
+        source = "See [the paper](https://example.test/paper.pdf) for the proof.\n"
+        text, removed = boilerplate.drop_dead_links(source)
+        self.assertEqual(text, source)
+        self.assertEqual(removed, [])
+
+    def test_an_anchor_around_block_content_loses_only_its_brackets(self):
+        text, removed = boilerplate.drop_dead_links("[\n\nTOC Element\n\n]()\n")
+        self.assertEqual(text.strip(), "TOC Element")
+        self.assertIn("dead-block-anchor", removed)
+
+    def test_an_image_with_no_source_goes(self):
+        text, removed = boilerplate.drop_dead_links("![diagram]()\n\nThe proof.\n")
+        self.assertEqual(text.strip(), "The proof.")
+        self.assertIn("dead-image", removed)
+
+    def test_the_glyph_a_dead_anchor_wrapped_goes_with_it(self):
+        text, _removed = boilerplate.drop_dead_links("Body.\n\n[  ►  ]()\n\nMore.\n")
+        self.assertNotIn("►", text)
+        self.assertIn("More.", text)
+
+    def test_a_horizontal_rule_is_not_decoration(self):
+        text, _removed = boilerplate.drop_dead_links("One.\n\n***\n\n[x]()\n\nTwo.\n")
+        self.assertIn("***", text)
+
+    def test_markdown_quoted_inside_a_fence_is_never_rewritten(self):
+        """A write-up about Markdown injection quotes this syntax on purpose."""
+        source = "Payload:\n\n```\n[click]()\n```\n\nThat is the bug.\n"
+        text, removed = boilerplate.drop_dead_links(source)
+        self.assertIn("[click]()", text)
+        self.assertEqual(removed, [])
+
+    def test_it_is_idempotent(self):
+        once, _removed = boilerplate.drop_dead_links("- [A]()\n- [B](https://x.test)\n")
+        twice, removed = boilerplate.drop_dead_links(once)
+        self.assertEqual(once, twice)
+        self.assertEqual(removed, [])
+
+    def test_a_document_cannot_forge_the_token_that_holds_a_code_block(self):
+        """The fenced blocks are held behind `\\x00N\\x00` while the rest is
+        rewritten, and this runs before control characters are stripped."""
+        text, _removed = boilerplate.drop_dead_links(
+            "```\nreal payload\n```\n\nforged: \x000\x00\n\n[x]()\n")
+        self.assertEqual(text.count("real payload"), 1)
+        self.assertNotIn("\x00", text)
+
+    def test_a_stray_bracket_cannot_swallow_the_article(self):
+        source = "[\n\n" + ("Real content. " * 200) + "\n\n]()\n"
+        text, _removed = boilerplate.drop_dead_links(source)
+        self.assertIn("Real content.", text)
+        self.assertGreater(len(text), 2000)
+
+
 if __name__ == "__main__":
     unittest.main()

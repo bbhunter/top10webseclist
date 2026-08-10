@@ -81,7 +81,7 @@ Researcher
 
 -
 
-## [Abstract]()
+## Abstract
 
 In this paper we’ll show that HTTP Header Injection is severely underestimated. Forget open redirects or [Cross-Site Scripting](https://portswigger.net/web-security/cross-site-scripting) and instead, embrace the catastrophic potential of the CRLF-Powered Desync Worm.
 
@@ -89,59 +89,59 @@ We’ll begin by teaching you how to take a simple header injection primitive an
 
 Along the way, we’ll help you avoid accidental desync disasters like logging every active user of your target into your own account causing your shopping cart to be overwritten with random users’ items on every refresh.
 
-## [Collaboration]()
+## Collaboration
 
 This paper was co-authored with [Tobia Righi](https://x.com/m4st3rspl1nt3r) from [TurtleSec](https://turtlesec.io/). Over the last year, we've collaborated on this research in order to ensure that every single technique was pushed to its absolute limit. This went rather well, and we ended up co-presenting the results at BHUSA and DEFCON. You can read his own version of the paper on [TurtleSec’s blog](https://turtlesec.io/blog/posts/crlf-powered-desync-attacks/).
 
-- [Research Origins]()
-- [HTTP Request Smuggling]()
-- [Request Header Injection]()
-- [Detecting Request Header Injection]()
-- [HTTP Request Splitting]()
+- Research Origins
+- HTTP Request Smuggling
+- Request Header Injection
+- Detecting Request Header Injection
+- HTTP Request Splitting
 
-- [Response Queue Poisoning via Request Splitting]()
-- [RQP Inside the Infrastructure of a CDN]()
-- [Header Injection via Custom Upstream Header]()
-- [Header Injection via Non-Path Insertion Points]()
-- [AI-Generated Detection Techniques]()
+- Response Queue Poisoning via Request Splitting
+- RQP Inside the Infrastructure of a CDN
+- Header Injection via Custom Upstream Header
+- Header Injection via Non-Path Insertion Points
+- AI-Generated Detection Techniques
 
-- [CRLF-Powered CL.TE Desync Attacks]()
+- CRLF-Powered CL.TE Desync Attacks
 
-- [The Desync Disaster]()
-- [The Nested Response Mystery]()
-- [Cache Poisoning & AI-Generated HEAD Gadget]()
+- The Desync Disaster
+- The Nested Response Mystery
+- Cache Poisoning & AI-Generated HEAD Gadget
 
-- [Browser-Powered CRLF Desync Attacks]()
+- Browser-Powered CRLF Desync Attacks
 
-- [CRLF-Powered Desync Worms]()
-- [HTTP Request Tunnelling]()
+- CRLF-Powered Desync Worms
+- HTTP Request Tunnelling
 
-- [Bypassing Blind Request Tunnelling]()
-- [Bypassing Access Controls via Request Tunnelling]()
+- Bypassing Blind Request Tunnelling
+- Bypassing Access Controls via Request Tunnelling
 
-- [Browser-Powered Connection-Locked Desyncs]()
+- Browser-Powered Connection-Locked Desyncs
 
-- [Browser-Powered 0.CL]()
+- Browser-Powered 0.CL
 
-- [Browser-Powered IP-Locked Desyncs]()
+- Browser-Powered IP-Locked Desyncs
 
-- [Browser-Powered Request Splitting - HEAD + Range]()
-- [Browser-Powered Request Splitting - Stealing HTTPOnly Cookies]()
+- Browser-Powered Request Splitting - HEAD + Range
+- Browser-Powered Request Splitting - Stealing HTTPOnly Cookies
 
-- [Bypassing Response Header Removal]()
-- [Response Header Injection]()
+- Bypassing Response Header Removal
+- Response Header Injection
 
-- [Cookie Tossing - TikTok]()
-- [XSS on a Redirect]()
-- [Reverse Desync Attacks]()
+- Cookie Tossing - TikTok
+- XSS on a Redirect
+- Reverse Desync Attacks
 
-- [Defence]()
-- [Tooling]()
-- [Further Research]()
-- [Key Takeaways]()
-- [Conclusion]()
+- Defence
+- Tooling
+- Further Research
+- Key Takeaways
+- Conclusion
 
-## [Research Origins]()
+## Research Origins
 
 Around 1 year ago, we came across [this post on Bluesky](https://bsky.app/profile/aroly.bsky.social/post/3lq7obuqcrk2m) which mentioned an attack technique we’d heard of, but never come across in the wild. This post bothered us, as it claimed the attack was “not that uncommon” in spite of our failure to ever find it. On top of this, we knew of at least two other research papers on the same topic (both of which were in their respective year’s [Top 10 Web Hacking Techniques](https://portswigger.net/research/top-10-web-hacking-techniques)).
 
@@ -149,11 +149,9 @@ The first, [Making HTTP header injection critical via response queue poisoning](
 
 This got us thinking. What would happen if we took James’ desync techniques, and applied them to everything that seemed vulnerable to HTTP header injection. After our first encounter, we quickly realised the technique’s potential and started to spot gaps in its current understanding.
 
-## [HTTP Request Smuggling]()
+## HTTP Request Smuggling
 
 This entire paper will talk extensively about request smuggling, and therefore we highly recommend going through our free [Web Security Academy](https://portswigger.net/web-security/request-smuggling) resources if you’re not already familiar.
-
-##
 
 In Nginx configurations (an extremely popular web server) if the $uri variable is included in the proxy_pass directive, Nginx will [normalise](https://nginx.org/en/docs/http/ngx_http_core_module.html#location) the request path before use, url-decoding any encoded characters including CRLF sequences (%0d%0a). This allows us to inject new lines into the request that is forwarded upstream of Nginx, giving us full control over the structure of that request.
 
@@ -185,8 +183,6 @@ Content-Length: X
 X: x</@urlencode_all> HTTP/1.1
 Host: example.com`
 
-##
-
 Detection for request header injection is thankfully quite simple. Inject a header or piece of invalid HTTP syntax in order to produce a predictable status code.
 
  `GET /<@urlencode_all> HTTP/13.37
@@ -195,7 +191,7 @@ Foo: bar</@urlencode_all> HTTP/1.1``HTTP/1.1 505 Version Not Supported`
 Transfer-Encoding: x
 Foo: bar</@urlencode_all> HTTP/1.1``HTTP/1.1 501 Not Implemented`
 
-## [HTTP Request Splitting]()
+## HTTP Request Splitting
 
 Historically request splitting has referred to an ultra powerful form of [Cross-Site Request Forgery](https://portswigger.net/web-security/csrf). However, James explained that by splitting the request into exactly two requests and using a little automation, you could achieve [Response Queue Poisoning](https://portswigger.net/web-security/request-smuggling/advanced/response-queue-poisoning) (RQP).
 
@@ -215,7 +211,7 @@ HTTP/1.1 200 OK
 HTTP/1.1 200 OK
 HTTP/1.1 405 Method Not Allowed`
 
-### [Response Queue Poisoning via Request Splitting]()
+### Response Queue Poisoning via Request Splitting
 
 RQP is a truly glorious attack, where you smuggle two complete requests, this causes the server to lose track of which response is meant to go to who, and instead send everyone random responses intended for other users.
 
@@ -223,7 +219,7 @@ From an attacker’s perspective, this means we can continuously harvest respons
 
 ![Response Queue Poisoning via Request Splitting](https://portswigger.net/cms/images/45/5a/2722-article-response-queue-poisoning.svg)
 
-### [RQP Inside the Infrastructure of a CDN]()
+### RQP Inside the Infrastructure of a CDN
 
 After a few days of scanning, and by just applying the techniques outlined in [Making HTTP header injection critical via response queue poisoning](https://portswigger.net/research/making-http-header-injection-critical-via-response-queue-poisoning), we quickly found a domain where we could trigger RQP.
 
@@ -238,8 +234,6 @@ When you trigger a desync this close to the edge you’ll often find that you ca
 Impact wise, as a result of capturing requests, we also started to capture session cookies and auth tokens for thousands of applications hosted on the CDN. They did insist we provide more evidence.
 
  ![Capturing requests inside of a CDN](https://portswigger.net/cms/images/5e/73/48bb-article-cdn-request-capture.svg)
-
-###
 
 Occasionally, you’ll encounter behaviour where your injection ends up inside a custom header rather than the path.
 
@@ -276,8 +270,6 @@ HTTP/1.1 200 OK
 {"token":"eyJ..."}`
 
 After running the exploit with 500 connections for over 20 minutes, we eventually started to steal access tokens from their internal infrastructure, landing us a hefty $20,000 bounty.
-
-###
 
 In a similar vein, your insertion point may not always be the request’s path. We knew this was theoretically possible, but failed to find a single case until very recently when we asked Claude to build the scan for us. We’re unsure what differed about its approach, but it instantly produced a case of request header injection inside a payment provider’s session cookie.
 
@@ -325,7 +317,7 @@ Access-Control-Allow-Origin: y.ecom
 
 Upon triggering our exploit, we noticed that we received credit card numbers and PII data from multiple major corporations. While demonstrating this to an ex-colleague of mine (you rock Wictor), he pointed out that the response headers indicated that the desync was occurring inside the provider’s Kubernetes cluster, allowing us to randomly exfiltrate customer data for every organisation using the payment provider.
 
-### [AI-Generated Detection Techniques]()
+### AI-Generated Detection Techniques
 
 At this point in the research, our detection techniques started to become less reliable. In an attempt to invent new ones, we asked Claude. It came back with the Expect header, and its unique 417 status code.
 
@@ -355,7 +347,7 @@ Host: example.com``HTTP/1.1 200 OK`
 
 The only question that remained then was, can we achieve a desync by injecting a single header?
 
-## [CRLF-Powered CL.TE Desync Attacks]()
+## CRLF-Powered CL.TE Desync Attacks
 
 By creating a request with a Content-Length header and an **injected** Transfer-Encoding header, we realised we could achieve a classic [CL.TE](https://portswigger.net/web-security/request-smuggling/finding#finding-cl-te-vulnerabilities-using-timing-techniques) desync. As we’ll see later, it is also possible to achieve a 0.CL desync, but these are significantly trickier to exploit and we’d therefore recommend sticking with a CL.TE desync where possible.
 
@@ -371,7 +363,7 @@ d
 x=y
 0``-TIMEOUT-`
 
-### [The Desync Disaster]()
+### The Desync Disaster
 
 Once we figured out how to trigger a desync, we wanted to confirm that we could impact other users directly, by smuggling an update to my profile page.
 
@@ -417,7 +409,7 @@ Set-Cookie: SESSID=abcdefg
 
 Profile Updated`
 
-### [The Nested Response Mystery]()
+### The Nested Response Mystery
 
 On a major phone manufacturer's accounts subdomain, we were able to produce some unusual stacked response behaviour.
 
@@ -470,7 +462,7 @@ To fully exploit this behaviour, Tobia used a QR code gadget from his previous r
 
 When we reported this to the program, they quickly closed it as duplicate. We checked back a few months later and found the recreation flow still worked. Suspicious of this, we emailed their security team and got the report re-opened with a $500 bounty awarded for our efforts.
 
-### [Cache Poisoning & AI-Generated HEAD Gadget]()
+### Cache Poisoning & AI-Generated HEAD Gadget
 
 For our final CL.TE case study, we found ourselves able to poison the home page of a major social media’s CDN domain with any valid response on the platform. We thought this was pretty cool, but the program wanted more impact.
 
@@ -525,7 +517,7 @@ Content-Length: 64
 HTTP/1.1 204 No Content
 X-Reflect: <img/src/onerror=fetch()>`
 
-## [Browser-Powered CRLF Desync Attacks]()
+## Browser-Powered CRLF Desync Attacks
 
 In [Browser-Powered Desync Attacks](https://portswigger.net/research/browser-powered-desync-attacks), James Kettle revealed that a few desync classes were actually entirely fetch-spec compatible. This means that it is entirely possible for a browser to issue those attacks. After months of exploiting classic desync cases, we noticed that the same was true for our CRLF-Powered Desync attacks.
 
@@ -562,7 +554,7 @@ X: x``fetch(
  }
 )`
 
-### [CRLF-Powered Desync Worms]()
+### CRLF-Powered Desync Worms
 
 In the same paper, James [theorised](https://portswigger.net/research/browser-powered-desync-attacks#h2.0) an attack where an attacker abuses request smuggling in order to trigger XSS in the victim’s browser. The victim's browser could then be used as a platform to trigger the same desync attack via fetch, spreading the attack to even more users and resulting in a self-replicating desync worm.
 
@@ -574,11 +566,11 @@ In fact, if you look back at our case studies so far, you’ll notice that all o
 
 Exploiting Browser-Powered Desyncs that impact other users follows exactly the same process as [regular desync attacks](https://portswigger.net/web-security/request-smuggling/exploiting), so we won’t dwell on it here. However, the ability to launch attacks from the victim’s browser does open up a lot more opportunities in cases where cross-user exploitation is not usually possible.
 
-### [HTTP Request Tunnelling]()
+### HTTP Request Tunnelling
 
 Request tunnelling often looks exactly like request smuggling, but cross-user exploitation is prevented because keep-alive connections are not reused. You can learn all you need about it in our [Web Security Academy](https://portswigger.net/web-security/request-smuggling/advanced/request-tunnelling).
 
-#### [Bypassing Blind Request Tunnelling]()
+#### Bypassing Blind Request Tunnelling
 
 Exploiting tunnelling is often tricky, due to the fact that it is usually blind. This means that you never see your prefix have any affect on the responses you receive. You can occasionally bypass this limitation simply by using the HEAD verb, causing the front-end to accidentally over-read from the back-end, revealing the tunnelled response.
 
@@ -604,7 +596,7 @@ HTTP/1.1 200 OK
 
 HTTP/1.1 405 Method Not Allowed`
 
-#### [Bypassing Access Controls via Request Tunnelling]()
+#### Bypassing Access Controls via Request Tunnelling
 
 To abuse this behaviour, you can target front-end [access control](https://portswigger.net/web-security/access-control) rules. For example, on a well-known car manufacturer’s domain, we were able to bypass a front-end access control rule using this technique to gain access to an internal configuration file.
 
@@ -624,11 +616,11 @@ Content-Type: application/json
 
 {"config":{"...”}} `
 
-### [Browser-Powered Connection-Locked Desyncs]()
+### Browser-Powered Connection-Locked Desyncs
 
 Another more limited form of desync attack is a connection-locked desync, where you must reuse your own keep-alive connections from the client in order to have your connections reused upstream. This again, prevents normal methods of cross-user exploitation.
 
-#### [Browser-Powered 0.CL]()
+#### Browser-Powered 0.CL
 
 On a major streaming service neither request splitting or the Transfer-Encoding header seemed to have any impact. However, once [HTTP/1.1 must die](https://portswigger.net/research/http1-must-die) was released, we realised that a connection-locked 0.CL attack might be the solution. By re-using our keep-alive connections to the front-end, we were able to find clear signs of a desync
 
@@ -697,13 +689,13 @@ Click me!
 
 We abused our XSS to steal PII data from the target’s core domain and received $5000 for our efforts.
 
-### [Browser-Powered IP-Locked Desyncs]()
+### Browser-Powered IP-Locked Desyncs
 
 There is yet another limited form of request smuggling called an IP-locked desync. This type of desync can impact users that share the same public IP (if they use the same VPN connection for example), but for most Bug Bounty programs, that explanation won’t help you get through triage.
 
 Instead, by moving the attack into the victim’s browser you can simply have the victim execute the desync on your behalf. This is extra powerful if there are other users sharing a public IP, as those users will be impacted when the victim launches the attack over the VPN connection.
 
-#### [Browser-Powered Request Splitting - HEAD + Range]()
+#### Browser-Powered Request Splitting - HEAD + Range
 
 On another target, we found that by using HTTP/2, and an injected expect header we could achieve an IP-locked desync.
 
@@ -822,8 +814,6 @@ var inter = setInterval(() => {
 
 Finding the right timeout for the iframes was a challenge as if it’s too short, the XSS wouldn’t have enough time to execute. Additionally, doing it fast enough and reliably caused us to require the user to sit on the attacker-controlled page for roughly 10 seconds. In the end, creating a fancy “Loading your profile” page gave us the 10 seconds we needed to trigger the XSS and abuse a [CORS](https://portswigger.net/web-security/cors) misconfiguration to extract authentication tokens and PII from the XSSed iframe. This netted us a $3,255 bounty and some kudos from the program.
 
-####
-
 For our final desync case study, we found ourselves on a domain where XSS was completely useless due to a well-implemented 2FA flow that triggered on all sensitive actions and the HTTPOnly cookie attribute.
 
 However, while browsing around the site, Tobia realised that the session cookie was often refreshed on certain responses. With this in mind, we wondered what would occur if we used the HEAD technique to gain XSS and then, stacked another response containing sensitive data after the XSS payload. This would hopefully push our Set-Cookie response header containing the session token into the response’s body.
@@ -876,8 +866,6 @@ window.addEventListener("message", ev => {
  if (ev.data?.event === "popped") { /* XSS landed */ }
 });`
 
-##
-
 The Expect header continues to be useful outside of desync attacks. Last year in [HTTP/1.1 must die](https://portswigger.net/research/http1-must-die#bypassing-response-header-removal) we saw that the Expect header can be abused in order to cause the front-end to forget to strip sensitive response headers.
 
 You can achieve exactly the same result on even more targets, if you inject the Expect header instead.
@@ -893,8 +881,6 @@ x-fd-int-roxy-origin-name: <redacted>
 x-fd-int-roxy-origin-url: <redacted>
 x-fd-int-roxy-upstream-error-info: <redacted>
 x-fd-int-roxy-originshield-parent: <redacted>`
-
-##
 
 A natural question to ask ourselves once we had gotten this far was, “what about response header injection”? This technique is often known as response splitting which is an unusual name for a technique that doesn’t actually involve splitting the response in two as is the case in request splitting.
 
@@ -912,8 +898,6 @@ X-In-Hdr: 1`
 
 Using this technique, we can achieve impact in a couple of ways.
 
-###
-
 By injecting a Set-Cookie response header, an attacker can attach their own session to the victim’s browser.
 
  `GET /%0d%0aSet-Cookie:%20Sess=abc%0d%0a%0d%0a HTTP/1.1
@@ -927,7 +911,7 @@ From then on, any sensitive actions the victim takes, end up occurring in the at
 
 Reporting this to TikTok was an incredibly smooth triage experience and netted us a healthy $4,500 bounty.
 
-### [XSS on a Redirect Response]()
+### XSS on a Redirect Response
 
 If you can inject headers, why not two new lines? In some cases, you’ll notice that you’re able to break out of the header block, and into the body of the response. This initially seems ripe for a [reflected XSS](https://portswigger.net/web-security/cross-site-scripting/reflected). Sadly however, response header injection almost always occurs on a redirect response and after the start of the location header, preventing us from breaking the syntax of the location header and stopping the redirect from being followed by the browser.
 
@@ -965,7 +949,7 @@ Content-Type: charset=ISO-2022-JP
 
 <scr(Bipt>alert(B(1(B)</scr(Bipt>`
 
-### [Reverse Desync Attacks]()
+### Reverse Desync Attacks
 
 If you pay attention to response splitting’s name and really go looking for its original inception, you’ll find yourself staring at [Divide and Conquer: HTTP Response Splitting, Web Cache Poisoning Attacks, and Related Topics](https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20HTTP%20Response%20Splitting%20-%20Divide%20and%20Conquer.pdf) by Amit Klein (2004).
 
@@ -1001,7 +985,7 @@ Sadly, this technique is now usually blocked by the [stacked-response](https://p
 
 This basically killed what was the original response splitting exploit and to this day, we’ve been unable to bypass it. There are some blogs out there that hint at a [solution](https://portswigger.net/research/making-http-header-injection-critical-via-response-queue-poisoning) however.
 
-## [Defence]()
+## Defence
 
 Defending against HTTP Header Injection in Nginx is fortunately in most cases, very simple. You just need to completely avoid the $uri and $document_uri variables inside of the proxy_pass or return directive. Additionally, do not create a variable with a regex match that fails to exclude whitespace.
 
@@ -1011,14 +995,14 @@ During our research, we realised that many of the servers we were testing were n
 
 Finally, for a permanent and reliable fix follow the advice from HTTP/1.1 Must Die, [enable HTTP/2 upstream](https://portswigger.net/research/http1-must-die#defending-against-http-desync-attacks).
 
-## [Tooling]()
+## Tooling
 
 We are releasing both the Burp Suite extension I used throughout the research and a set of nuclei templates created by Tobia completely open source, in addition to some labs for you to use before going hunting in the wild. You can find these at our respective GitHubs. Pull requests are welcome.
 
 - [https://github.com/t0xodile/crlf-powered-desync-scanner](https://github.com/t0xodile/crlf-powered-desync-scanner)
 - [https://github.com/turtlesec-software/crlf-desyncs](https://github.com/turtlesec-software/crlf-desyncs)
 
-## [Further Research]()
+## Further Research
 
 As you explore a topic deeply, new research leads arise that may be worth exploring. The following are the top 4 we came across that show some potential.
 
@@ -1038,13 +1022,13 @@ It turns out that parser discrepancies are best left to the ever vigilant HTTP T
 
 A lot of WAFs will mitigate these techniques by checking for %0d%0a within insertion points. Defeat them as we always have. For hints, take a look at [Lost in Ⲧ𝖗𝛂ռ𝔰𝕝𝚊𝔱Ꭵ𝞼𝘯: exploiting Unicode Normalization by Ryan & Isabella Barnett](https://i.blackhat.com/BH-USA-25/Presentations/USA-25-Barnett-Lost-In-Translation-Exploiting-Unicode-compressed.pdf) from last year’s BlackHat USA.
 
-## [Key Takeaways]()
+## Key Takeaways
 
-- Header injections are not low-impact bugs. See the [CRLF-Powered Desync Worm]()
+- Header injections are not low-impact bugs. See the CRLF-Powered Desync Worm
 - CRLF-Powered desync attacks achieve impact where other desync classes fail
 - Desyncs from header injections aren’t going anywhere, while Nginx exists
 
-## [Conclusion]()
+## Conclusion
 
 In summary we’ve demonstrated how you can escalate request header injection to its maximum potential of a desync worm and provided a plethora of novel methods for detecting and exploiting desync vulnerabilities, even when connections aren’t shared between users. To complement this, we’ve shared our open-source toolkit and hope you’ll use it to find some desyncs that have gone unexploited for far too long. Even while preparing for BlackHat, we spotted [great examples in the wild](https://tmctmt.com/posts/http-desync-in-discord/) such as a desync found by [@tmctmt](https://x.com/tmctmt) which affected Discord.
 

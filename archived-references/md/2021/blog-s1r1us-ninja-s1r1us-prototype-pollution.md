@@ -66,8 +66,6 @@ Skip to navigation
 
 #  - Exploiting Client-Side Prototype Pollution in the wild
 
-##
-
 Introduction
 
 Prototype pollution is an interesting vulnerability, either it is server-side or client-side. Based on the application logic, prototype pollution leads to other vulnerabilities. For instance, [posix](https://twitter.com/po6ix) introduced an interesting [technique](https://blog.p6.is/AST-Injection/) to achieve RCE in the template engines, [Michał Bentkowski](http://twitter.com/securitymb) showed [bypassing](https://research.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers/) client-side HTML sanitizers and [William Bowling](https://twitter.com/wcbowling)'s found a Reflected [XSS](https://hackerone.com/reports/986386) on HackerOne using prototype pollution. From RCE to SQL, any vulnerability is possible with the prototype pollution in the javascript application.
@@ -77,8 +75,6 @@ Prototype pollution is an interesting vulnerability, either it is server-side or
 In this research, our goal was simple which is to scan all the vulnerability disclosure programs for prototype pollution and find script gadgets to achieve XSS. This technical write-up will touch the tools we created, challenges we faced, and case studies during the whole process.
 
 A lot of people are involved in this work, it was really a great experience working with these super awesome people.
-
-###
 
 Research Team
 
@@ -144,8 +140,6 @@ William Bowling [wcbowling](https://twitter.com/wcbowling)
 
 Ian Bouchard [corb3nik](http://corb3nik)
 
-##
-
 Numbers
 
 Number of vulnerable libraries found: 18
@@ -156,19 +150,13 @@ We found numerous(more than thousand) websites vulnerable to pollution, we haven
 
 If you don't want to know the methodology, feel free to skip to the case studies(real bugs).
 
-##
-
 Methodology
 
 ![](https://lh3.googleusercontent.com/sitesv/AG8ngQXWA3ChlF73KUJFWf5CmBFxwtTYB6OPO5R1LqIZJw2tz8uOXnZUV_fWJeeqCi5WkHightqmiidEQygp_cqPhiLWcHfyqmDnwJoxzbR9iF-vS0DZzMRbH2kn658wAPr5ftKkpLWyVgefPaxzwjMwHUpsCCt-0Zin6ibcyfvbmcbCD_xmwAi7xYVF3Q6Z9OGNPBuBenO7u8c7A7rO-rOpxxN3x9s5OJkb1ErDErh5opU=w1280)
 
-##
-
 Detection
 
 There are two cases we are interested in a web application to check if it is vulnerable to prototype pollution.
-
-###
 
 Case 1
 
@@ -192,19 +180,13 @@ __proto__[eedffcb] = eedffcb
 
 __proto__.baaebfc = baaebfc
 
-###
-
 Selenium Bot
 
 To automate this, we wrote a selenium bot that runs on a huge subdomains database and checks if the application is vulnerable. Check the basic example of the bot.
 
-###
-
 Browser Extension
 
 One issue with the bot is we can't scan directories and authorized endpoints of an application because the database becomes very large and it takes days to scan and most of the programs prohibit scanning. To overcome this issue, we wrote a chrome extension with the same logic as a bot but it scans when a user visits the particular endpoint in chrome. Using the extension, we can casually use the chrome and in the background, it scans for the prototype pollution. You can find the addon [here](https://github.com/msrkp/PPScan).
-
-###
 
 Case 2
 
@@ -214,23 +196,17 @@ This case is a little bit challenging to automate fortunately, CodeQL made thing
 
 We were able to find one application where user-controlled JSON is merged with another one which leads to prototype pollution and we scored a nice bounty for an XSS.
 
-##
-
 Identifying the vulnerable library
 
 Once the bot identifies the vulnerable application, our next task is to identify the vulnerable library and the exact line where the prototype is polluted and store the result in the database. To identify, we've used few different techniques.
 
 If the application is not complex, searching for keywords like location.hash/decodeURIComponent/location.search in Chrome Developer Tools will result in finding the exact functionality of vulnerable implementation.
 
-###
-
 Blocking the JS resource request in Firefox
 
 There is a nice option called Block URL in Firefox developer tools network activity, so to find the js resource which is responsible for prototype pollution we block the URL and check if the polluted property is undefined. If it is undefined, we confirm the blocked resource is responsible for pollution.
 
 ![](https://lh3.googleusercontent.com/sitesv/AG8ngQU7ueFn7YZ0v5a889v77u9lvcmR7V8peUxnYnXIqm54Ewik_16oqmeugUEgklIn9YUftSNWzWxTendsPHO5xKHKgje6yOD6bQGmAjrranV0tBhwDazf9kOHBRMY8VP0D3C6ofSctCt60ppr1aKyviYecOd5JylSPfqmp6LSVDgi2eG8Z0MbZcUU3cPXcdIZ8GrDirq7oUqzccRWwKi7Hs7A8fpsBAoErXtaHycvZKo=w1280)
-
-###
 
 Debugger Breakpoint on setter
 
@@ -256,11 +232,7 @@ return tmp = val;
 
 ![](https://lh3.googleusercontent.com/sitesv/AG8ngQXPkbAz4_MQC2DQjUXx64zUHlwi7ztYyWmnhYku4MoOK307lxMh-thFtYHBOPOpJr3mOLSy59wFml9YA5q86rr7tW2UzlFhRBNOeXJsJ8So6hIWdApg70dGaPffJmxFTUT-auXroqKf9EpjhKJ-siuklh5DLD_jzr3jJKa6VWKK7XpAdGIykgPUp939l8lTpcGZYIQj-7iPIZ8agxbdsayY3ZQFBstezspvjzauhyk=w1280)
 
-##
-
 Finding Script Gadgets
-
-###
 
 What is a script gadget?
 
@@ -303,8 +275,6 @@ this._userServerConfiguration.install.hooks = functionHooks
 }
 
 Based on the application, we've used different techniques to find the script gadgets.
-
-###
 
 Keyword search and Source Code Review
 
@@ -356,8 +326,6 @@ return this;
 
 }
 
-###
-
 SecurityMB's pollute.js
 
 We had written a burp extension around SecurityMB's [pollute.js](https://github.com/securitum/research/blob/master/r2020_prototype-pollution/pollute.js), which replaces all JS resources with the modified version generated by the pollute.js. Also, we modified pollute.js to log the information only if a certain property is polluted.
@@ -367,8 +335,6 @@ The basic idea of pollute.js is it instruments the code by adding debugs functio
 Check the addon below.
 
 Note: The addon is not perfect, tmp.js might get overwritten it's better to use a random name there.
-
-###
 
 Filedescriptor's untrusted-types extension
 
@@ -386,13 +352,9 @@ polluting "li" property leads to XSS
 
 Similar to the filedescriptor's extension securitymb's pollute.js logs the similar stack traces and we have to review the source and check if it leads to XSS manually.
 
-##
-
 Report
 
 Once the gadget is found we report the bug to the respective program.
-
-##
 
 Store vulnerable libraries and gadgets in database
 
@@ -414,11 +376,7 @@ Link to the burp addon: [https://github.com/BlackFan/cspp-tools/tree/main/match_
 
 Let's see a few of the interesting bugs we found.
 
-##
-
 Case Studies
-
-###
 
 Case Study 1: CodeQL for fun and profit
 
@@ -434,15 +392,11 @@ To my surprise, it showed a result where a vulnerable merge exists in the downlo
 
 -
 
-###
-
 Polluting prototype
 
 After two days of hustle, we were able to pollute the prototype by sending a JSON payload to a certain endpoint which saves the payload, when the client receives the same payload the prototype gets polluted.
 
 -
-
-###
 
 Finding a gadget
 
@@ -458,15 +412,11 @@ As the Web Worker can't directly manipulate the DOM, the impact of this XSS is v
 
 -
 
-###
-
 Escalation to Account Takeover.
 
 As you may have already noticed this is a self XSS we have to show the impact. For one more day, we worked on escalating the self XSS to account take over by opening sensitive pages in iframes/windows and used SAML to login to our account(attacker) and read the data in sensitive pages to take over the account.
 
  We nearly took a whole week to exploit the bug but in the end, we got a generous $4000 bounty.
-
-###
 
 Case Study 2: Prototype Pollution on Jira Service Management 4.16.0, <4.18.0(fix bypass)
 
@@ -496,8 +446,6 @@ a.setAttribute(b, "" + d);
 
 ...
 
-###
-
 Below are a few other gadgets that are found using filedescriptor's untrusted types.
 
 PoC #1
@@ -515,8 +463,6 @@ PoC #3
 PoC #4
 
 [http://server/servicedesk/customer/user/signup?__proto__.js.main=data:,alert(document.domain)](http://server/servicedesk/customer/user/signup?__proto__.js.main=data:,alert%28document.domain%29)
-
-###
 
 XSS on jira.mozilla.com
 
@@ -566,13 +512,9 @@ var parts = key.split('.');
 
 Bypass: [https://local:8080/servicedesk/customer/user/signup?__pro[]to__.div=1&__pro[]to__.div=%3Cimg%20src%20onerror=alert(document.domain)%3E&__pro[]to__.div=1](https://local:8080/servicedesk/customer/user/signup?__pro[]to__.div=1&__pro[]to__.div=%3Cimg%20src%20onerror=alert%28document.domain%29%3E&__pro[]to__.div=1)
 
-###
-
 Case Study 3: XSS on apple.com found using chrome extension by Rahul and Harsh
 
 -
-
-###
 
 Finding the bug
 
@@ -582,8 +524,6 @@ At that time, they were already working on Apple’s program. So, The first thin
 
 -
 
-###
-
 Finding the gadget
 
 We quickly found a gadget with the help of BlackFan's repo. And the final URL is,
@@ -591,8 +531,6 @@ We quickly found a gadget with the help of BlackFan's repo. And the final URL is
 [https://www.apple.com/shop/buy-watch/apple-watch?__proto__[src]=image&__proto__[onerror]=alert(1) ](https://www.apple.com/shop/buy-watch/apple-watch?__proto__[src]=image&__proto__[onerror]=alert%281%29)
 
 -
-
-###
 
 Root cause and Bypassing the fix
 
@@ -604,15 +542,11 @@ We submitted the bypass to the fix, Apple fixed the bug by totally removing the 
 
 And in the end, A nice $6000 bounty for a reflected XSS.
 
-###
-
 Case Study 4: HubSpot Analytics
 
 HubSpot was vulnerable to prototype pollution, it was using [deparam](https://github.com/BlackFan/client-side-prototype-pollution/blob/master/pp/jquery-deparam.md) in one of the [js](https://js.hs-analytics.net/analytics/1601196000000/2749863.js) files which parses the query string(location.search).
 
 As mentioned on their site, HubSpot is [used](https://www.hubspot.com/case-studies#:~:text=More%20than) by more than 121,000 companies. We found numerous applications vulnerable to XSS because of the HubSpot third-party analytics they are using.
-
-###
 
 Reporting to HubSpot and Bypassing the fixes.
 
@@ -643,8 +577,6 @@ sanitizeKey = function(t) {
 return t && ["__proto__", "constructor", "prototype"].indexOf(t.toLowerCase()) > -1 ? t.toUpperCase() : t
 
  }
-
-###
 
 Case Study 5: Segment Analytics Pollution by Masato Kinugawa
 
@@ -697,8 +629,6 @@ Trello is one example for this issue, you can notice Object.prototype[123] being
 There is one gadget using numbers found by the Securitymb in [knockout.js](https://github.com/BlackFan/client-side-prototype-pollution/blob/master/gadgets/knockout.md), you will be so lucky if the vulnerable site uses knockout.js.
 
 ?__proto__[4]=a':1,[alert(1)]:1,'b&__proto__[5]=,
-
-##
 
 Mitigations
 

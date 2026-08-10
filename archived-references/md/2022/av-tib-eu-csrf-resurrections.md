@@ -158,4 +158,3 @@ You are free to use, adapt and copy, distribute and transmit the work or content
 
  |  |
 
-**

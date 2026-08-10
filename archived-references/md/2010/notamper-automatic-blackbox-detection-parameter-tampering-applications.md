@@ -278,7 +278,6 @@ dir
 var
 textRE
 = /([a-zA-Z])
-*
 /;
 var
 bReturn
@@ -380,11 +379,7 @@ I
 I
 = 
 
-
-
-
     
-
 
 Conceptually, both the client and the server perform two tasks:
 checking that user-supplied inputs satisfy certain constraints, and
@@ -691,7 +686,6 @@ copies
 directions
 2
 [a-zA-Z]
-*
 payment
 2
 (1234-5678-9012-3456 | 7890-1234-5678-9012)
@@ -1146,7 +1140,6 @@ string constraints. It includes the usual boolean connectives: con-
 junction (
 ^
 ), disjunction (
-_
 ), and negation (
 :
 ). The atomic con-
@@ -1217,7 +1210,6 @@ disj
 <
 sent
 >
-_
 <
 sent
 >
@@ -1511,7 +1503,6 @@ bining formulas for each path that returned
 true
 with disjunction
 (
-_
 ).
 For the running example one control path succeeds in returning
 true
@@ -1521,7 +1512,6 @@ true
 (
 copies <
 0
-_
 copies
 2
 <
@@ -1529,7 +1519,6 @@ copies
 directions
 2
 [a-zA-Z]
-*
 The above is then combined with constraint on variable
 payment
 mentioned before to generate
@@ -1737,7 +1726,6 @@ reg
 >Table 3: The reduced constraint language:
 ^
 and
-_
 over the
 above atoms.
 
@@ -1764,7 +1752,6 @@ is the formula
 (
 copies >
 0
-_
 copies
 = 0)
 ^
@@ -1772,7 +1759,6 @@ copies
 directions
 2
 [a-zA-Z]
-*
 )
 :
 N
@@ -1786,7 +1772,6 @@ copies >
 directions
 2
 [a-zA-Z]
-*
 and another for
 copies
 = 0
@@ -1794,7 +1779,6 @@ copies
 directions
 2
 [a-zA-Z]
-*
 .
 If the type of
 copies
@@ -1804,7 +1788,6 @@ and the type of
 directions
 is
 [a-zA-Z0-9]
-*
 , N
 O
 T
@@ -1817,12 +1800,10 @@ and
 directions
 2
 [a-zA-Z0-9]
-*
 . If the variable
 name
 is required and has type
 [a-zA-Z]
-*
 , N
 O
 T
@@ -1832,7 +1813,6 @@ straint
 name
 2
 [a-zA-Z]
-*
 . If
 
 is nonempty, N
@@ -1901,7 +1881,6 @@ In the example above, the disjunctive normal form of
 f
 client
 produces a formula with two disjuncts.
-_
 :
 (
 copies >
@@ -1915,7 +1894,6 @@ copies
 directions
 2
 [a-zA-Z]
-*
 )
 Suppose that both
 copies
@@ -1943,7 +1921,6 @@ es the original formula, i.e., that satises
 directions
 2
 [a-zA-Z]
-*
 .
 Likewise, after solving the second disjunct producing a value for
 directions

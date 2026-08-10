@@ -75,7 +75,7 @@ Just a quicky post on how in Firefox you can detect proxies using image tags. Fi
 
 Something as simple as http://[123.123.123.123]/img.jpg?unique_id embedded into a page could be used to see if the user is using a proxy, which, as far as I’ve seen - at least using Apache’s proxy, doesn’t understand that syntax and therefore won’t fetch the image. This does give false positives when using something that blocks cross domain requests, and robots that try to stay on the same domain. Anyway, this might be helpful to someone.
 
-  This entry was posted on Friday, August 20th, 2010 at 12:52 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Friday, August 20th, 2010 at 12:52 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

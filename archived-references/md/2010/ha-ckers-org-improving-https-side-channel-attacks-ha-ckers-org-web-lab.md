@@ -81,7 +81,7 @@ So by forcing the user’s browser to pre-cache the content, an attacker can get
 
 In this way an attacker is really getting down to the exact parts of the data they are interested in. Obviously the earlier an attacker can do this the better - trying to cache after the fact doesn’t make a lot of sense, although using timing attacks an attacker may be able to tell where the user has been, interestingly enough ([Chris Evans did a good writeup on this](http://scarybeastsecurity.blogspot.com/2009/12/cross-domain-search-timing.html) a while back).
 
-  This entry was posted on Tuesday, June 22nd, 2010 at 4:08 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Tuesday, June 22nd, 2010 at 4:08 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

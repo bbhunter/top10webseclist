@@ -91,39 +91,39 @@ You can download the [slides](https://portswigger.net/kb/papers/firuaml/server-s
 
 ## Outline
 
-- [Introduction]()
-- [What is server-side prototype pollution?]()
-- [Prototypal inheritance]()
-- [JSON.parse()]()
-- [Vulnerable libraries]()
-- [Impact of prototype pollution]()
-- [The DoS problem]()
-- [Detection methods that cause DoS]()
-- [Encoding]()
-- [Constructor]()
-- [Expect]()
-- [Request body overwrite]()
-- [Safe detection methods for manual testers]()
-- [Parameter limit]()
-- [Ignore query prefix]()
-- [Allow dots]()
-- [Content type]()
-- [Safe automated detection methods]()
-- [JSON spaces]()
-- [Exposed headers]()
-- [Status]()
-- [OPTIONS]()
-- [JSON reflection]()
-- [Immutable prototype]()
-- [OAST]()
-- [Detecting JavaScript engines]()
-- [Debugging Node applications]()
-- [Preventing server-side prototype pollution]()
-- [Use Map/Set]()
-- [Deleting __proto__]()
-- [Null prototype]()
-- [Credits]()
-- [Conclusion]()
+- Introduction
+- What is server-side prototype pollution?
+- Prototypal inheritance
+- JSON.parse()
+- Vulnerable libraries
+- Impact of prototype pollution
+- The DoS problem
+- Detection methods that cause DoS
+- Encoding
+- Constructor
+- Expect
+- Request body overwrite
+- Safe detection methods for manual testers
+- Parameter limit
+- Ignore query prefix
+- Allow dots
+- Content type
+- Safe automated detection methods
+- JSON spaces
+- Exposed headers
+- Status
+- OPTIONS
+- JSON reflection
+- Immutable prototype
+- OAST
+- Detecting JavaScript engines
+- Debugging Node applications
+- Preventing server-side prototype pollution
+- Use Map/Set
+- Deleting __proto__
+- Null prototype
+- Credits
+- Conclusion
 
 ## Introduction
 
@@ -131,7 +131,7 @@ Detecting server-side prototype pollution legitimately is a huge challenge. The 
 
 If you want to try out the techniques mentioned in this article for yourself, we've built some Web Security Academy labs to help [hone your skills on prototype pollution](https://portswigger.net/web-security/prototype-pollution/server-side).
 
-We'll start with a quick recap on what prototype pollution is and how it occurs. If you're already familiar with the basics you can skip to "[The DoS problem]()".
+We'll start with a quick recap on what prototype pollution is and how it occurs. If you're already familiar with the basics you can skip to "The DoS problem".
 
 ### What is server-side prototype pollution?
 

@@ -58,11 +58,7 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-**
-
 XiangFan Wu (Ocean University of China; QI-ANXIN Technology Research Institute), Lingyun Ying (QI-ANXIN Technology Research Institute), Guoqiang Chen (QI-ANXIN Technology Research Institute), Yacong Gu (Tsinghua University; Tsinghua University-QI-ANXIN Group JCNS), Haipeng Qu (Department of Computer Science and Technology, Ocean University of China)
-
- **
 
 Large Language Models (LLMs) are rapidly reshaping digital interactions. Their performance and efficiency are critically dependent on advanced caching mechanisms, such as prefix caching and semantic caching.
  However, these mechanisms introduce a new attack surface. Unlike prior work focused on LLMs poisoning attacks during the training phase, this paper presents the first comprehensive investigation into cache-related security risks that arise during the LLM inference-time.

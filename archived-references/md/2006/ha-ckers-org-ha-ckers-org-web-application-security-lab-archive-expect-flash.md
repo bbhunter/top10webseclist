@@ -77,7 +77,7 @@ This is huge folks. Not just big, but huge. There’s no way of knowing exactly 
 
 Special thanks to Blad3 for making me re-visit this.
 
-  This entry was posted on Monday, July 31st, 2006 at 8:58 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20060731/expect-header-injection-via-flash/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20060731/expect-header-injection-via-flash/trackback/) from your own site.
+  This entry was posted on Monday, July 31st, 2006 at 8:58 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20060731/expect-header-injection-via-flash/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20060731/expect-header-injection-via-flash/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

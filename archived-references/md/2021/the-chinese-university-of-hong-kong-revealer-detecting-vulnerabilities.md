@@ -62,7 +62,7 @@ Regular expression Denial-of-Service (ReDoS) is a class of algorithmic complexit
 
 | Original language | English |  |
 | Title of host publication | Proceedings - 2021 IEEE Symposium on Security and Privacy, SP 2021 |  |
-| Publisher | [Institute of Electrical and Electronics Engineers Inc.]() |  |
+| Publisher | Institute of Electrical and Electronics Engineers Inc. |  |
 | Pages | 1468-1484 |  |
 | Number of pages | 17 |  |
 | ISBN (Electronic) | 9781728189345 |  |
@@ -72,7 +72,7 @@ Regular expression Denial-of-Service (ReDoS) is a class of algorithmic complexit
 
  |  |
 | Publication status | Published - May 2021 |  |
-| Event | [42nd IEEE Symposium on Security and Privacy, SP 2021]() - Virtual, San Francisco, United States
+| Event | 42nd IEEE Symposium on Security and Privacy, SP 2021 - Virtual, San Francisco, United States
 Duration: 24 May 2021 → 27 May 2021 |  |
 
 | Name | Proceedings - IEEE Symposium on Security and Privacy |  |
@@ -93,7 +93,7 @@ Publisher Copyright:
 
 [MENG, W.](https://research.cuhk.edu.hk/en/persons/wei-meng/) (PI)
 
-[Research Grants Council (RGC)]()
+Research Grants Council (RGC)
 
 1/01/20 → 31/12/22
 

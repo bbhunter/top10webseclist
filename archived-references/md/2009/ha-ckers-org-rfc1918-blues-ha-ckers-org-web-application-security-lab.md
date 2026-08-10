@@ -73,7 +73,7 @@ Well, it’s been quite a week or so for me. 7 days of travel, to Las Vegas for 
 
 Without re-explaining the paper, it turns out that in certain browser, and with certain VPN and the current architecture of most RFC1918 networks, there is a high tendency for bad things to inadvertently happen, like IP collisions. That’s annoying in the networking world (and a well known problem) but it’s dangerous in the security world (and far less understood). Anyway, I talked it over with HD Moore and Toby and some of the other guys at SANS and it turns out they had actually seen similar things happen in the past, so it’s been validated in the wild (again, inadvertently though).
 
-  This entry was posted on Monday, June 8th, 2009 at 1:02 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [Random Security](http://ha.ckers.org/blog/category/random-security/). You can [leave a response]() as well.
+  This entry was posted on Monday, June 8th, 2009 at 1:02 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [Random Security](http://ha.ckers.org/blog/category/random-security/). You can leave a response as well.
 
 -  [arshan](http://i8jesus.com/) Says:
 

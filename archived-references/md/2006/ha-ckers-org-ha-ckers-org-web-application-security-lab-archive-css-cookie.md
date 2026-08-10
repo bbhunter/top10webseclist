@@ -79,7 +79,7 @@ In its simplest form, once a user visits a certain web page an attacker could ch
 
 Yes, yes, it very easily could. This is actually an interesting way to get around some of the issues really large sites have with companies like AOL that have massive super proxies with upwards of 30k people behind a single IP address. You can “cookie” them in this way with a relatively small footprint compared to an actual cookie (which is often killed anyway by security products or turned off entirely by paranoid/malicious users) and upon a user repeat visit you can detect them once again. It’ll be interesting to see how this attack evolves over time, as I am sure there are dozens of other interesting ways to use these attacks. Special thanks to [Matan](http://www.hacker.co.il)!
 
-  This entry was posted on Wednesday, August 23rd, 2006 at 8:29 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20060823/css-history-stealing-acts-as-cookie/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20060823/css-history-stealing-acts-as-cookie/trackback/) from your own site.
+  This entry was posted on Wednesday, August 23rd, 2006 at 8:29 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20060823/css-history-stealing-acts-as-cookie/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20060823/css-history-stealing-acts-as-cookie/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

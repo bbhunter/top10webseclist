@@ -109,9 +109,9 @@ The ***WI***se ***SEC***urity
 
 # IE 7 and Firefox Browsers Digest Authentication Request Splitting
 
-#### Updated on 27th April 2007 see updated details [here]()
+#### Updated on 27th April 2007 see updated details here
 
- **Safari is also affected by this [issue]().**
+ **Safari is also affected by this issue.**
 
 ### Title:
 
@@ -355,7 +355,7 @@ be left as an exercise for the reader.
 
 ```
 
- []()
+ 
 
 ### Update
 
@@ -427,7 +427,7 @@ this information.
 
 # Wisec is brought to you by...
 
-Wisec is written and mantained by [ Stefano Di Paola]().
+Wisec is written and mantained by  Stefano Di Paola.
 
 Wisec uses open standards, including XHTML, CSS2, and XML-RPC.
 

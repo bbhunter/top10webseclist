@@ -72,41 +72,41 @@ Tags: [Cybersec](https://blog.babelo.xyz/tags/cybersec), [Research](https://blog
 
 In this post, I will introduce `XSS-Leak` (“Cross-Site-Subdomain Leak”), a technique for Chromium-based browsers that leaks cross-origin redirects, `fetch()` destinations, and more. I use the name `XSS-Leak` because the original goal was to leak subdomains of cross-origin requests, as I’ll explain later.
 
-## [Index]()
+## Index
 
-- [Index]()
-- [Challenge Overview]()
+- Index
+- Challenge Overview
 
-- [Route /]()
-- [Content Security Policy]()
-- [Route /report]()
+- Route /
+- Content Security Policy
+- Route /report
 
-- [Swimming in the connection pool (again)]()
-- [Exploit - Leaking subdomains of cross-origin requests]()
+- Swimming in the connection pool (again)
+- Exploit - Leaking subdomains of cross-origin requests
 
-- [PoC]()
+- PoC
 
-- [Leaking redirect hosts]()
+- Leaking redirect hosts
 
-- [PoC - Admin]()
-- [PoC - User]()
+- PoC - Admin
+- PoC - User
 
-- [Use Cases]()
-- [Limitations]()
-- [Conclusion]()
+- Use Cases
+- Limitations
+- Conclusion
 
 A few months ago I found a cool way to leak subdomains from cross-origin (no injection required), so I created a small challenge and posted it on X.
 
 Only two people managed to get the flag: 🩸 first blood to [0xAl3ssandro](https://x.com/0xAl3ssandro) and the second solve to [J0R1AN](https://x.com/J0R1AN/) , congrats!
 
-## [Challenge Overview]()
+## Challenge Overview
 
 We’re given a minimal Express app which exposes two routes:
 
 - `/`, serves a page with an inline script
 - `/report`, triggers a visit from a headless Chrome bot
 
-### [Route /]()
+### Route /
 
 ```html
 <!DOCTYPE html>
@@ -147,7 +147,7 @@ When `location.hash` changes, the page:
 
 Note: `window.onhashchange` wasn’t required to solve the challenge, but it made the exploitation easier.
 
-### [Content Security Policy]()
+### Content Security Policy
 
 The server also sends a strict CSP
 
@@ -164,7 +164,7 @@ app.use((req, res, next) => {
 
 So network requests are restricted to `*.${DOMAIN}:${PORT}` (`connect-src`) and framing is blocked both ways: the page can’t create frames and it cannot be embedded by others (`frame-ancestors 'none'`)
 
-### [Route /report]()
+### Route /report
 
 The bot simulates a user (or admin) using Chrome:
 
@@ -211,7 +211,7 @@ The bot, will:
 - Navigates to a supplied URL
 - sleeps for 120 seconds
 
-## [Swimming In The Connection Pool (again)]()
+## Swimming In The Connection Pool (again)
 
 To solve this challenge, you need to know how Chrome’s connection pool works ( background: [https://xsleaks.dev](https://xsleaks.dev/docs/attacks/timing-attacks/connection-pool/) ). In short, Chrome can run up to 256 concurrent requests across different origins, but only 6 in parallel to the same origin.
 
@@ -227,7 +227,7 @@ This quirk gives us an oracle. We can “guess” the unknown subdomain (the one
 
 I explained this behaviour in a [previous article](https://blog.babelo.xyz/posts/css-exfiltration-under-default-src-self/#stalled-requests-priorities--more) in a detailed way. Here I’ll just cover what we need for the exploit
 
-## [Exploit - Leaking subdomains of cross-origin requests]()
+## Exploit - Leaking subdomains of cross-origin requests
 
 Firstly, let’s create some functions to setup the connection pool
 
@@ -388,9 +388,9 @@ This leaks the entire flag in ~70s. You can find the full exploit [here](https:/
 
 Flag: `flag{gj2e4syr1ght?}`
 
-### [PoC]()
+### PoC
 
-## [Leaking redirect hosts]()
+## Leaking redirect hosts
 
 This technique also lets us leak where a redirect goes. I built a small demo app to illustrate it (source code [here](https://gist.github.com/salvatore-abello/7d4fd69a098e1f80c900747dc1d3dae5) ). In short:
 
@@ -589,11 +589,11 @@ const popunder = () => {
 
 ```
 
-### [PoC - admin]()
+### PoC - admin
 
-### [PoC - user]()
+### PoC - user
 
-## [Use cases]()
+## Use cases
 
 This technique is not limited to leaking subdomains of cross-origin requests but it’s useful in several other scenarios:
 
@@ -601,13 +601,13 @@ This technique is not limited to leaking subdomains of cross-origin requests but
 - Delay POST requests: [https://github.com/icesfont/ctf-writeups/tree/main/idekctf/2025#appendix](https://github.com/icesfont/ctf-writeups/tree/main/idekctf/2025#appendix)
 - Leak the scheme of cross-origin requests
 - Leak the port of cross-origin requests
-- Possibly leak `GroupId.privacy_mode_`[1]() (not verified).
+- Possibly leak `GroupId.privacy_mode_`1 (not verified).
 
-## [Limitations]()
+## Limitations
 
 Only works in Chromium-based browsers
 
-## [Conclusion]()
+## Conclusion
 
 This post is a follow-up to my [previous post](https://blog.babelo.xyz/posts/css-exfiltration-under-default-src-self/) from a few months ago. Since then, I reported the behaviour to Chrome. Because it’s essentially a variant of the [classic connection-pool](https://xsleaks.dev/docs/attacks/timing-attacks/connection-pool/) exhaustion attack, they considered it likely WAI and I don’t think it will be fixed soon.
 
@@ -617,4 +617,4 @@ Thanks for reading.
 
 -
 
-[https://source.chromium.org/chromium/chromium/src/+/main:net/socket/client_socket_pool.h;l=162;drc=48d6f7175422b2c969c14258f9f8d5b196c28d18](https://source.chromium.org/chromium/chromium/src/+/main:net/socket/client_socket_pool.h;l=162;drc=48d6f7175422b2c969c14258f9f8d5b196c28d18) [↩︎]()
+[https://source.chromium.org/chromium/chromium/src/+/main:net/socket/client_socket_pool.h;l=162;drc=48d6f7175422b2c969c14258f9f8d5b196c28d18](https://source.chromium.org/chromium/chromium/src/+/main:net/socket/client_socket_pool.h;l=162;drc=48d6f7175422b2c969c14258f9f8d5b196c28d18) ↩︎

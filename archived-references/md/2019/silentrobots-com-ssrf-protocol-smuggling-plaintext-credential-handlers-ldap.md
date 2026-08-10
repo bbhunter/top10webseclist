@@ -65,8 +65,6 @@ page going offline. To read the original, follow the link above.
 
 SSRF protocol smuggling involves an attacker injecting one TCP protocol into a dissimilar TCP protocol. A classic example is using gopher (i.e. the first protocol) to smuggle SMTP (i.e. the second protocol):
 
-**
-
 |
 
 ```
@@ -86,8 +84,6 @@ gopher://127.0.0.1:25/%0D%0AHELO%20localhost%0D%0AMAIL%20FROM%3Abadguy@evil.com%
 The keypoint above is the use of the CRLF character (i.e. %0D%0A) which breaks up the commands of the second protocol. *This attack is only possible with the ability to inject CRLF characters into a protocol*.
 
 Almost all LDAP client libraries support plaintext authentication or a non-ssl simple bind. For example, the following is an LDAP authentication example using Python 2.7 and the python-ldap library:
-
-**
 
 |
 
@@ -111,8 +107,6 @@ conn.simple_bind_s("[USERNAME]", "[PASSWORD]")
 
 In many LDAP client libraries it is possible to insert a CRLF inside the username or password field. Because LDAP is a rather plain TCP protocol this makes it immediately of note.
 
-**
-
 |
 
 ```
@@ -134,8 +128,6 @@ conn.simple_bind_s("1\n2\n\3\n", "4\n5\n6---")
  |  |
 
 You can see the CRLF characters are sent in the request:
-
-**
 
 |
 
@@ -178,8 +170,6 @@ Imagine the case where the user can control the server and the port. This is ver
 # Putting It All Together
 
 If a user can control the server/port and CRLF can be injected into the username or password, this becomes an interesting SSRF protocol smuggle. For example, here is a Redis Remote Code Execution payload smuggled completely inside the password field of the LDAP authentication in a PHP application. In this case the web root is ‘/app’ and the Redis server would need to be able to write the web root:
-
-**
 
 |
 

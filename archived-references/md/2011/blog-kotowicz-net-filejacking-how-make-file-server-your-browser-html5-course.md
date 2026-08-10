@@ -60,7 +60,7 @@ page going offline. To read the original, follow the link above.
 
 Back in the days of [browser wars](http://en.wikipedia.org/wiki/Browser_wars), there was a joke: *Internet Explorer is the only web browser that makes Internet browse your computer*. Through various security flaws, IE was exploitable and allowed for remote code execution that could e.g. steal your sensitive files.
  But now the times are different. It's not that easy to exploit current browsers, they get patched (relatively) quickly. Attackers cannot easily access your files using browsers vulnerabilities, so they turn to the weakest link - **users**. In this post we'll try to explore what current browsers can do with your files.
- []()
+ 
 
 ## Your file, please
 

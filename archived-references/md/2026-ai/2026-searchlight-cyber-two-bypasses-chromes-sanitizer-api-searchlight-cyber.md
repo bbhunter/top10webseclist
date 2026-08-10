@@ -70,7 +70,7 @@ May 22, 2026
 
 # Two Bypasses for Chrome’s Sanitizer API
 
- Stay current: [Get research alerts for newly disclosed vulnerabilities and exposures]()
+ Stay current: Get research alerts for newly disclosed vulnerabilities and exposures
 
 The Sanitizer API arrived [with much fanfare](https://hacks.mozilla.org/2026/02/goodbye-innerhtml-hello-sethtml-stronger-xss-protection-in-firefox-148/) in both Chrome 146 and Firefox 148 just a few months ago. The API provides two new ways to set HTML safely from within javascript; the default mode:
 

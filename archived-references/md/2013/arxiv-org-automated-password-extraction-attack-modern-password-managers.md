@@ -85,7 +85,7 @@ Authors:[Raul Gonzalez](https://arxiv.org/search/cs?searchtype=author&query=Gonz
  From: Eric Chen [[view email](https://arxiv.org/show-email/d53322c7/1309.1416)]
  **[v1]** Thu, 5 Sep 2013 17:42:26 UTC (508 KB)
 
- []() Full-text links:
+  Full-text links:
 
 ## Access Paper:
 
@@ -212,4 +212,4 @@ Both individuals and organizations that work with arXivLabs have embraced and ac
 
 Have an idea for a project that will add value for arXiv's community? [**Learn more about arXivLabs**](https://info.arxiv.org/labs/index.html).
 
- [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1309.1416) | [Disable MathJax]() ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))
+ [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1309.1416) | Disable MathJax ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))

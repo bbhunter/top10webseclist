@@ -67,10 +67,10 @@ This article will focus on cache-poisoning. If you are unfamiliar with this vuln
 
 ## Index
 
-- [First vulnerability: Start of research, disillusionment and n-day]()
-- [Second vulnerability: React Server Component and CDNs, a food poisoning]()
-- [Third vulnerability: Internal header, HTTP status and error page]()
-- [Conclusion and Bonus]()
+- First vulnerability: Start of research, disillusionment and n-day
+- Second vulnerability: React Server Component and CDNs, a food poisoning
+- Third vulnerability: Internal header, HTTP status and error page
+- Conclusion and Bonus
 
 ## First vulnerability: Start of research, disillusionment and n-day
 

@@ -95,17 +95,11 @@ Login
 
  [](https://www.netcraft.com/)
 
- [
-
+ 
 Platform
 
-]()
-
- [
-
+ 
 Solutions
-
-]()
 
  [
 
@@ -113,11 +107,8 @@ Why Netcraft
 
 ](https://www.netcraft.com/why-netcraft)
 
- [
-
+ 
 Resources
-
-]()
 
  [
 
@@ -171,17 +162,11 @@ Login
 
 ](https://services.netcraft.com/)
 
- [
-
+ 
 Platform
 
-]()
-
- [
-
+ 
 Solutions
-
-]()
 
  [
 
@@ -189,11 +174,8 @@ Why Netcraft
 
 ](https://www.netcraft.com/why-netcraft)
 
- [
-
+ 
 Resources
-
-]()
 
  [
 

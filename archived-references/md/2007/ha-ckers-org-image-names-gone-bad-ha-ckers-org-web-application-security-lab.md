@@ -79,7 +79,7 @@ http://ha.ckers.org/weird/images/");alert("XSS");var%20a=(".jpg
 
 I bet there are some systems out there that are otherwise hardened that have this issue. The first one above is simply trying to break out of an image tag. The next two are taking a guess that they may be inside a JavaScript tag. Either way, you get the idea. Could be bad, who knows?
 
-  This entry was posted on Friday, February 9th, 2007 at 5:06 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Friday, February 9th, 2007 at 5:06 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

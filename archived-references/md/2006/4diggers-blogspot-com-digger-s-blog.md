@@ -67,7 +67,7 @@ Digger's blog
 
 ### Tuesday, June 06, 2006
 
- []()
+ 
 
 # How to defeat digg.com
 

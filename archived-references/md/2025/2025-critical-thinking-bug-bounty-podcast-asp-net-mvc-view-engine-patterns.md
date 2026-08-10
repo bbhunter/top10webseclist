@@ -92,8 +92,6 @@ When an HTTP request arrives at an ASP.NET MVC application, the framework goes t
 
 ```
 
-↓
-
 >
 
 [!info] Step 2: URL Routing Engine
@@ -102,8 +100,6 @@ When an HTTP request arrives at an ASP.NET MVC application, the framework goes t
 - IIS receives the request and ASP.NET MVC's UrlRoutingModule intercepts it
 
 ```
-
-↓
 
 >
 
@@ -115,8 +111,6 @@ When an HTTP request arrives at an ASP.NET MVC application, the framework goes t
 - Id: 5
 
 ```
-
-↓
 
 >
 
@@ -232,8 +226,6 @@ AreaViewLocationFormats = new[]
 
 [!info] Step 1: Controller returns View()
 
-↓
-
 >
 
 [!info] Step 2: ViewResult.ExecuteResult()
@@ -244,8 +236,6 @@ AreaViewLocationFormats = new[]
 
 ```
 
-↓
-
 >
 
 [!info] Step 3: ViewEngineCollection.FindView()
@@ -254,8 +244,6 @@ AreaViewLocationFormats = new[]
 - Iterates through all registered engines
 
 ```
-
-↓
 
 >
 
@@ -267,8 +255,6 @@ AreaViewLocationFormats = new[]
 
 ```
 
-↓
-
 >
 
 [!info] Step 5: Returns ViewEngineResult
@@ -279,13 +265,9 @@ AreaViewLocationFormats = new[]
 
 ```
 
-↓
-
 >
 
 [!question] Step 6: View Found?
-
-↓
 
 >
 
@@ -316,13 +298,9 @@ Search Order (RazorViewEngine):
 
 ```
 
-↓
-
 >
 
 [!failure] Result: NAME NOT FOUND
-
-↓
 
 >
 
@@ -334,13 +312,9 @@ Search Order (RazorViewEngine):
 
 ```
 
-↓
-
 >
 
 [!failure] Result: NAME NOT FOUND
-
-↓
 
 >
 
@@ -352,19 +326,13 @@ Search Order (RazorViewEngine):
 
 ```
 
-↓
-
 >
 
 [!success] Result: SUCCESS - File found!
 
-↓
-
 >
 
 [!info] Step 4: Load and compile view
-
-↓
 
 >
 
@@ -399,13 +367,9 @@ Search Order (RazorViewEngine):
 
 ```
 
-↓
-
 >
 
 [!question] Step 2: Is view already compiled in cache?
-
-↓
 
 >
 
@@ -420,8 +384,6 @@ Search Order (RazorViewEngine):
 
 [!info] If NO: Begin Compilation Process
 
-↓
-
 >
 
 [!info] Step 3: Razor Parser
@@ -431,8 +393,6 @@ Search Order (RazorViewEngine):
 - Generates .cs file
 
 ```
-
-↓
 
 >
 
@@ -444,8 +404,6 @@ Search Order (RazorViewEngine):
 
 ```
 
-↓
-
 >
 
 [!info] Step 5: Execute compiled view
@@ -456,8 +414,6 @@ Search Order (RazorViewEngine):
 - Generates HTML output
 
 ```
-
-↓
 
 >
 
@@ -538,8 +494,6 @@ Next piece of the puzzle is the web.config and the flows how IIS and ASP.NET MVC
 
 ```
 
-↓
-
 >
 
 [!warning] Step 2: IIS Request Filtering Module
@@ -550,13 +504,9 @@ Next piece of the puzzle is the web.config and the flows how IIS and ASP.NET MVC
 
 ```
 
-↓
-
 >
 
 [!failure] Step 3: BLOCKED!
-
-↓
 
 >
 
@@ -578,8 +528,6 @@ Next piece of the puzzle is the web.config and the flows how IIS and ASP.NET MVC
 
 ```
 
-↓
-
 >
 
 [!info] Step 2: IIS Request Filtering Module
@@ -593,8 +541,6 @@ Next piece of the puzzle is the web.config and the flows how IIS and ASP.NET MVC
 
 ALLOWED - Passes to ASP.NET
 
-↓
-
 >
 
 [!info] Step 3: MVC Routing
@@ -603,13 +549,9 @@ ALLOWED - Passes to ASP.NET
 - Creates: ControllerController
 - Calls: Method() ```
 
-↓
-
 >
 
 [!info] Step 4: Controller returns View()
-
-↓
 
 >
 
@@ -622,25 +564,17 @@ ALLOWED - Passes to ASP.NET
 
 ```
 
-↓
-
 >
 
 [!info] Step 6: Check ~/Controller/Method.cshtml
-
-↓
 
 >
 
 [!info] Step 7: File.Exists(‘C:\inetpub\wwwroot\App\Controller\Method.cshtml’)
 
-↓
-
 >
 
 [!success] Step 8: SUCCESS - File found!
-
-↓
 
 >
 
@@ -678,8 +612,6 @@ ALLOWED - Passes to ASP.NET
 
 [!info] IIS Request Pipeline
 
-↓
-
 >
 
 [!info] Phase 1: IIS Native Modules (BEFORE ASP.NET)
@@ -692,13 +624,9 @@ Request Filtering Module:
 
 ```
 
-↓
-
 >
 
 [!question] Is request blocked?
-
-↓
 
 >
 
@@ -707,8 +635,6 @@ Request Filtering Module:
 >
 
 [!success] If NO: Continue to ASP.NET
-
-↓
 
 >
 

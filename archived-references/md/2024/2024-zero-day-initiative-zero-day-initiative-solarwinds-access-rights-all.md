@@ -93,11 +93,7 @@ When we think about a solution that can perform management tasks in the Active D
 
  ![](https://images.squarespace-cdn.com/content/v1/5894c269e4fcb5e65a1ed623/2f9432a9-bbb2-4426-bb42-c977e5eb9431/Picture1.png)
 
-*
-
 *Figure 1 - Part of ARM AD account-related documentation (*[*source*](https://documentation.solarwinds.com/en/success_center/arm/content/system_requirements/arm_2022-4_system_requirements.htm)*) *
-
- *
 
 In general, the vendor recommends using a dedicated service account for the ARM operation, and this is a very good approach. However, it allows you to use a Domain Admin account for the product. To use some features, it may be even required to use such an account, depending on the AD configuration.
 
@@ -165,21 +161,13 @@ In my PoC, I’m running the exploit as presented in the following screenshot.
 
  ![](https://images.squarespace-cdn.com/content/v1/5894c269e4fcb5e65a1ed623/7487bea6-8550-4b8b-941f-8cc05f5876bc/Picture2.png)
 
-*
-
 *Figure 2 - Running CVE-2024-23474 exploit to remove file remotely*
-
- *
 
 After a while, we will reach the `File.Delete` method with the path provided to the exploit.
 
  ![](https://images.squarespace-cdn.com/content/v1/5894c269e4fcb5e65a1ed623/e7af195a-e9ba-49c2-9662-f2f27ee942ad/Picture3.png)
 
-*
-
 *Figure 3 - Debugging of CVE-2024-23474*
-
- *
 
 Finally, the file will be removed and we will get a SYSTEM shell afterward.
 

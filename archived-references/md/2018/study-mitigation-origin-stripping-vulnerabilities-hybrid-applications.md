@@ -126,7 +126,8 @@ and more implementation and evaluation details are availableonline.
 I. I
 NTRODUCTIONCross-origin communication using the HTML5 postMessagefacility [1] has been a popular and often necessary techniqueon the web platform. It relaxes the restrictions enforced by thewell-known same origin policy (SOP) security model [2] byallowing bidirectional messaging between mutually distrustingweb frames or windows. With the increasing amalgamation ofthe web and mobile platforms, postMessage has also found   
 	
-         
+  
+       
  ! "#$ % &'() *
 + ,- ./
 0 123 4
@@ -163,7 +164,8 @@ Security Issue. Unfortunately, while hybrid postMessageprovides easy and conveni
  
 
  
- 
+
+ 
  
 
  
@@ -207,7 +209,8 @@ t u vw xy z{ |}~€ �
 ö÷ øù ú û
 üý þ ÿ
     	
- 
+
+ 
  
   
   !" #$ %&'()*
@@ -284,7 +287,8 @@ security policies to offer access control. However, they arecircumscribed to pre
 
    
 
-	 
+	
+ 
  
  !"#$ %&'(
 ) *+,- ./0123
@@ -468,7 +472,6 @@ NativeViolated RuleRule IRule IIRule IRule IISub-Vulnerability TypeV
 3V
 4Table I: Denitions of Four Sub-Types of OSV  	
 
-
  Figure 5: Attacks On
 V
 2The four OSV sub-vulnerabilities disclose more attackpatterns than those discussed in SectionI. For example, consider
@@ -499,7 +502,6 @@ WebView.loadUrl()
 ) from the native frame to the main web frame:
 WebView.loadUrl("javascript:window.postMessage('"+
 content +"', '
-*
 ')").In both cases above,
 “window.postMessage()”
 should be acommunication launcher (message sender). To discover itscorresponding message receiver, its parameter, especially
@@ -591,7 +593,8 @@ window.postMessage()
 
   
 
-  
+ 
+ 
    
   !"#$ %&' ()*+,-
 ./0 12345678 9:;<
@@ -811,7 +814,6 @@ likely caused. Although there are several solutions proposedto protect JavaScrip
 D. Case Studies1) Facebook React Native:
 Facebook React Native is athird-party development framework that allows developers to
 develop mobile apps purely in JavaScript. It supports severalpopular mobile platforms (like Android and iOS). Thus, theOSV vulnerability impacts all the supported platforms.  	
-
 
  
   
@@ -1043,7 +1045,8 @@ indicates the origin of main web frame;the second origin
 “scriptOrigin”
 provides the origin of theembedded script, where the JavaScript method that sends themessage is located; the third variable ag
 “isProxyInvolved”indicates whether the main web frame is forwarding a message 	
-  
+ 
+ 
     
 !" # $%&'
 ( )* +,-./

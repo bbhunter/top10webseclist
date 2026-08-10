@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 [![sonar logo](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/8e59bcad-6e39-41dc-abd9-a0e251e8d63f/Sonar%20%282%29.svg?w=128&h=32&fit=clip&q=80)](https://www.sonarsource.com/)
 
-## TL;DR overview[]()
+## TL;DR overview
 
 - Sonar's research found multiple vulnerabilities in pretalx—an open source conference management system—including cross-site scripting and SQL injection flaws accessible to unauthenticated or low-privileged users submitting talk proposals
 - The vulnerabilities stem from insufficient input validation in submission and review features, where user-controlled data reaches database queries or template rendering without adequate sanitization.
@@ -76,7 +76,7 @@ While submitting talks to some conferences, we wondered how secure the CfP platf
 
 In this article, we outline the impact of the vulnerabilities and dive into the technical details. Furthermore, we introduce the generic technique to gain code execution via a file write vulnerability. In the end, we explain how the vulnerabilities can be mitigated by having a look at the applied patches.
 
-## Impact[]()
+## Impact
 
 We discovered the following vulnerabilities in pretalx, which affect versions `2.3.1` and prior:
 
@@ -89,11 +89,11 @@ The second vulnerability allows a user with access to a scheduled talk to write 
 
 Both vulnerabilities were fixed in pretalx version `2.3.2`, which was released in an incredible time of [fewer than 3 hours after our notification](https://pretalx.com/p/news/security-release-232/). The SaaS platform pretalx.com was immediately patched. We strongly recommend updating any self-hosted instance with a version before this release.
 
-## Technical Details[]()
+## Technical Details
 
 In this section, we dive into the technical details of both vulnerabilities.
 
-### Arbitrary File Read (CVE-2023-28459)[]()
+### Arbitrary File Read (CVE-2023-28459)
 
 Pretalx allows privileged users to create and download a static HTML export of a schedule. The creation of the exported HTML is also triggered automatically on a regular basis, [usually via a cron job](https://docs.pretalx.org/administrator/installation.html#step-9-provide-periodic-tasks).
 
@@ -140,7 +140,7 @@ print(local_path)
 
 You can read more about similar security pitfalls in Python in our blog post on [10 Unknown Security Pitfalls for Python](https://www.sonarsource.com/blog/10-unknown-security-pitfalls-for-python/).
 
-### Limited File Write (CVE-2023-28458)[]()
+### Limited File Write (CVE-2023-28458)
 
 The second vulnerability also resides within the HTML export feature. The function responsible for dumping the content retrieved from a URL is called `dump_content` and uses the URL (parameter `path`) to determine the destination path. Although leading slashes are removed from `path` before being added to the destination folder, it is not ensured that the final path is below the destination folder:
 
@@ -201,7 +201,7 @@ Thus, the user-controlled content is written to `/tmp` in a file called `%2e%2e%
 
 When determining the impact of this arbitrary file write, we discovered a generic technique to gain code execution.
 
-## Code Execution via Site-Specific Configuration Hooks[]()
+## Code Execution via Site-Specific Configuration Hooks
 
 The requirements for this technique are the following:
 
@@ -286,7 +286,7 @@ user
 
 Regarding pretalx, this technique can be used to turn the file write into code execution, if running in `DEBUG` mode. The payload is executed once a new Python process is spawned to perform [periodic tasks](https://docs.pretalx.org/administrator/installation.html#step-9-provide-periodic-tasks).
 
-## Patch[]()
+## Patch
 
 The file read vulnerability in pretalx was fixed by first resolving the `local_path` and then ensuring that it is either within the `MEDIA_ROOT` or `STATIC_ROOT`:
 
@@ -316,9 +316,9 @@ def dump_content(destination, path, getter):
     raise CommandError("Path traversal detected, aborting.")
 ```
 
-## Timeline[]()
+## Timeline
 
-## Summary[]()
+## Summary
 
 In this article, we detailed a file read and file write vulnerability we discovered in the conference planning tool pretalx. Furthermore, we introduced a generic technique to turn a file write vulnerability into code execution by leveraging Python's `.pth` files. We also learned how to prevent these vulnerabilities by looking at the applied patches.
 

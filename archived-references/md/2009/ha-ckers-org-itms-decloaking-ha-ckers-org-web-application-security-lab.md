@@ -79,7 +79,7 @@ I talked with Microsoft, Apple and Firefox about this and we had a very hard tim
 
 This brought up one last conversation that I thought was worth sharing. The private browsing initiative that several browsers are undertaking at the moment really was never meant to protect users from this sort of privacy leak. It was intended to prevent wives from seeing what presents their husbands are buying them for their birthday. *cough* But maybe future versions should do a better job of this sort of privacy leaks - better integrate with Tor or something of that nature. I dunno, but it was an interesting conversation with the browser/OS/plugin guys.
 
-  This entry was posted on Wednesday, August 19th, 2009 at 9:43 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Wednesday, August 19th, 2009 at 9:43 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

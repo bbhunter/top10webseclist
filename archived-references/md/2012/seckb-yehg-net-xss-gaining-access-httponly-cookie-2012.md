@@ -89,9 +89,6 @@ page going offline. To read the original, follow the link above.
 
  * Java permission exception for "TRACE" method being as HTTP Request*
 
- *
-*
-
  [![](https://web.archive.org/web/20170925041004im_/https://4.bp.blogspot.com/-5Pg3t5FXG9Q/T70iZNqdacI/AAAAAAAAAFo/NsRVlb-LlcQ/s640/java-getproperty.png)](https://web.archive.org/web/20170925041004/http://4.bp.blogspot.com/-5Pg3t5FXG9Q/T70iZNqdacI/AAAAAAAAAFo/NsRVlb-LlcQ/s1600/java-getproperty.png)
 
  *Cookie value shown as null from Java Applet*
@@ -341,52 +338,6 @@ page going offline. To read the original, follow the link above.
 
  [![](https://web.archive.org/web/20170925041004im_/https://3.bp.blogspot.com/-DZ93WIpipK4/T8GbDeeky1I/AAAAAAAAAGw/JJAgBPrabDs/s1600/java-getHeaderField.png)](https://web.archive.org/web/20170925041004/http://3.bp.blogspot.com/-DZ93WIpipK4/T8GbDeeky1I/AAAAAAAAAGw/JJAgBPrabDs/s1600/java-getHeaderField.png)
 
- *
-*
-
- *
-*
-
- *
-*
-
- *
-*
-
- *
-*
-
- *
-*
-
- *
-*
-
- *
-*
-
- *
-*
-
- *
-*
-
- *
-*
-
- *
-*
-
- *
-*
-
- *
-*
-
- *
-*
-
- *
 * *
 * * XSS Test: Getting HttpOnly Cookie through the Java Applet*
 

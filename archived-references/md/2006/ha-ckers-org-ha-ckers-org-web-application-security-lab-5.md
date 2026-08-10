@@ -78,7 +78,7 @@ If the user is currently using Internet Explorer, you can even try to re-write a
 
 So… what’s the worst thing you can do with XSS? **Steal every piece of sensitive information you’ve ever inputted or will ever input on any website you’re authenticated to.** Yes, it’s potentially that bad.
 
-  This entry was posted on Monday, December 11th, 2006 at 10:15 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20061211/exponential-xss-attacks/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20061211/exponential-xss-attacks/trackback/) from your own site.
+  This entry was posted on Monday, December 11th, 2006 at 10:15 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20061211/exponential-xss-attacks/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20061211/exponential-xss-attacks/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

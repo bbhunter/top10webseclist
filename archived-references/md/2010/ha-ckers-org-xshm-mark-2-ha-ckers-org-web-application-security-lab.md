@@ -77,7 +77,7 @@ a.location = 'data:text/html;utf-8,<script>alert(history.length);history.go(-1);
 
 By setting either a recursive setTimeout or using some manual polling mechanism, the attacker can (in this case) cause a popup which monitors how many pages they’ve gone. Normally it wouldn’t cause a popup, the attacker would redirect to another domain that they had access to which would do the same history.length check. Voila. The user only sees a brief white flash and then the same page they were just on - as if nothing happened. They’d probably just think their browser is messing up again. This could be helpful in a number of esoteric situations where the number of pages visited may change, or you may want to force them through several flows (and back and forth again) all with a single mouse click - giving you authority to popup in the first place. The best part is that this will follow them while they surf for as long as both windows stay open.
 
-  This entry was posted on Wednesday, September 1st, 2010 at 6:48 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Wednesday, September 1st, 2010 at 6:48 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

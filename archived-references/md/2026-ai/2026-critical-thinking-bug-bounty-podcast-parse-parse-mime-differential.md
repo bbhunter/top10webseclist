@@ -77,7 +77,7 @@ This research is an extension of [`Content-Type` research from BlackFan](https:/
 
 Parser differential (parser confusion, parser mismatch, or whatever you call it) happens when two or more parsers that parse (process) the exact same input, will produce two or more different results.
 
-Section “[Summary Table]()” shows all the libraries/frameworks that I’ve tested!
+Section “Summary Table” shows all the libraries/frameworks that I’ve tested!
 
 ## Introduction
 
@@ -627,7 +627,7 @@ application/json;,text/html(=
 
 - `,text/html(`: An empty string
 
-This one, however, leverages one weird quirk on how Chromium determines where the MIME type ends. You might have noticed this back in section “[Last Match Wins Problem]()” or [BlackFan’s “Mime-type separators”](https://github.com/BlackFan/content-type-research/blob/master/XSS.md#response-content-type-tricks) trick:
+This one, however, leverages one weird quirk on how Chromium determines where the MIME type ends. You might have noticed this back in section “Last Match Wins Problem” or [BlackFan’s “Mime-type separators”](https://github.com/BlackFan/content-type-research/blob/master/XSS.md#response-content-type-tricks) trick:
 
 ```
 bool ParseMimeType(std::string_view type_str,

@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 Jeremiah Grossman: I still know where you've been, without JavaScript
 
-   []()
+   
 
 ###  I still know where you've been, without JavaScript
 

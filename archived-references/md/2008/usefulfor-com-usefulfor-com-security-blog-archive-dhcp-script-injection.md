@@ -130,7 +130,7 @@ Device providing an administrative web interface with a DHCP management function
 - [![Slashdot](http://usefulfor.com/security/wp-content/plugins/sociable/images/slashdot.png)](http://slashdot.org/bookmark.pl?title=DHCP+Script+Injection&url=http%3A%2F%2Fusefulfor.com%2Fsecurity%2F2008%2F08%2F04%2Fdhcp-script-injection%2F)
 - [![Technorati](http://usefulfor.com/security/wp-content/plugins/sociable/images/technorati.png)](http://technorati.com/faves?add=http%3A%2F%2Fusefulfor.com%2Fsecurity%2F2008%2F08%2F04%2Fdhcp-script-injection%2F)
 
-  This entry was posted on Monday, August 4th, 2008 at 11:39 am and is filed under [hack-fu](http://usefulfor.com/security/category/hack-fu/). You can follow any responses to this entry through the [RSS 2.0](http://usefulfor.com/security/2008/08/04/dhcp-script-injection/feed/) feed. You can [leave a response](), or [trackback](http://usefulfor.com/security/2008/08/04/dhcp-script-injection/trackback/) from your own site.
+  This entry was posted on Monday, August 4th, 2008 at 11:39 am and is filed under [hack-fu](http://usefulfor.com/security/category/hack-fu/). You can follow any responses to this entry through the [RSS 2.0](http://usefulfor.com/security/2008/08/04/dhcp-script-injection/feed/) feed. You can leave a response, or [trackback](http://usefulfor.com/security/2008/08/04/dhcp-script-injection/trackback/) from your own site.
 
 ### Leave a Reply
 

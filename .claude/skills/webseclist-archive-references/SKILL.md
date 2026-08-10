@@ -118,8 +118,8 @@ YYYY-ai` with `check`, `acquire` and `pdf` to process only that provisional tree
 ## The pipeline
 
 Every command is `python tools/references/refs.py <command>`. Only `check`,
-`check-browser`, `acquire`, `pdf`, `wayback`, `insecure` and `transcripts` touch
-the network or a browser.
+`check-browser`, `acquire`, `papers`, `images`, `wayback`, `insecure` and
+`transcripts` touch the network; `pdf` needs a browser but never a network.
 
 ```text
 python tools/references/refs.py harvest            # cited URLs in the year lists
@@ -127,11 +127,20 @@ python tools/references/refs.py sync               # citations/folders, offline
 python tools/references/refs.py check              # health of each URL       [NETWORK]
 python tools/references/refs.py check-browser      # only the walled rows     [NETWORK]
 python tools/references/refs.py acquire            # preserve, convert, render [NETWORK]
+python tools/references/refs.py papers             # the article's own PDF     [NETWORK]
+python tools/references/refs.py images             # its figures, re-encoded   [NETWORK]
 python tools/references/refs.py pdf                # a PDF for each md         [BROWSER]
 python tools/references/refs.py translate          # anything not in English
 python tools/references/refs.py index              # regenerate the folder index
 python tools/references/refs.py verify             # the offline gate
 ```
+
+`papers` and `images` run BEFORE `pdf` and decide what it publishes. A reference
+that is already a PDF is copied; otherwise the publisher's own PDF of the article
+wins if `papers` found one; otherwise our Markdown is printed, carrying whatever
+figures `images` preserved. `images` never stores what it fetched - every image
+is decoded and re-encoded, which is what strips metadata, appended payloads and
+anything hidden in the low bits, and SVG is refused rather than rasterised.
 
 ### Ordinary sync, after a year list changed
 
@@ -139,6 +148,8 @@ python tools/references/refs.py verify             # the offline gate
 python tools/references/refs.py check --prune
 python tools/references/refs.py check-browser
 python tools/references/refs.py acquire
+python tools/references/refs.py papers
+python tools/references/refs.py images
 python tools/references/refs.py pdf
 python tools/references/refs.py translate --prepare      # then translate, then --apply
 python tools/references/refs.py index
@@ -416,6 +427,17 @@ The archive is read in English, and a third of a technique is lost when the
 write-up is in a language the reader cannot follow. Run translation on every
 acquire, before you call the run finished; `verify` warns for any document that
 is not in English and has no translation.
+
+**ONLY A DOCUMENT THAT IS ACTUALLY IN ANOTHER LANGUAGE GETS ONE.** The website
+opens the `_translate` file INSTEAD of the original, so manufacturing one for an
+English document replaces the real thing with a machine paraphrase of itself. A
+Black Hat deck about Unicode confusables was translated on the strength of three
+CJK sample characters on one slide, and its 78KB text render then stood in front
+of the author's own 4.7MB PDF on the site. `translate` therefore requires a
+material share of the document's prose to be foreign (`TRANSLATION_SHARE` in
+`refslib/translate.py`, calibrated against every pair in the archive) before it
+will build a pair. A stray foreign phrase inside an English write-up stays where
+the author put it.
 
 ```text
 python tools/references/refs.py translate                # the backlog

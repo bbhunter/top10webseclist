@@ -70,7 +70,7 @@ July 14, 2026
 
 # Smashing the ServiceNow Sandbox – Pre Authentication RCE
 
-Stay current: [Get research alerts for newly disclosed vulnerabilities and exposures]()
+Stay current: Get research alerts for newly disclosed vulnerabilities and exposures
 
 # Smashing the ServiceNow Sandbox: Pre Authentication RCE
 

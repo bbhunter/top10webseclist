@@ -134,7 +134,7 @@ F19491: [Screen_Shot_2014-10-26_at_01.38.37.png](https://hackerone-us-west-2-pro
 
 changed the status to ****Triaged**.
 
-[October 27, 2014, 5:51pm UTC]()
+October 27, 2014, 5:51pm UTC
 
 Thank you for your report! We believe it may be a valid security issue and will investigate it further. It could take some time to find and update the root cause for an issue, so we thank you for your patience.
 
@@ -150,7 +150,7 @@ Thank you for helping keep Twitter secure!
 
 closed the report and changed the status to ****Resolved**.
 
-[October 27, 2014, 6:15pm UTC]()
+October 27, 2014, 6:15pm UTC
 
 We consider this issue to be fixed now. Can you please confirm?
 
@@ -166,7 +166,7 @@ Thank you for helping keep Twitter secure!
 
 .
 
-[October 27, 2014, 7:24pm UTC]()
+October 27, 2014, 7:24pm UTC
 
 Hi, Yes! It is fixed, it does not resolve to anything anymore. Great work!
 
@@ -180,7 +180,7 @@ Hi, Yes! It is fixed, it does not resolve to anything anymore. Great work!
 
 .
 
-[October 27, 2014, 8pm UTC]()
+October 27, 2014, 8pm UTC
 
 Great, thank you for a confirming. A bounty amount will be awarded at the end of the week.
 
@@ -196,7 +196,7 @@ Thanks again!
 
 rewarded [fransrosen](https://hackerone.com/fransrosen) with a bounty.
 
-[November 3, 2014, 4:43pm UTC]()
+November 3, 2014, 4:43pm UTC
 
 Thanks again for helping us keep Twitter safe and secure for our users!
 
@@ -210,7 +210,7 @@ Thanks again for helping us keep Twitter safe and secure for our users!
 
 requested to disclose this report.
 
-[November 3, 2014, 11:36pm UTC]()
+November 3, 2014, 11:36pm UTC
 
 Hi, we are requesting public disclosure of this issue to encourage other whitehats to submit quality reports like yours!
 
@@ -224,10 +224,10 @@ Hi, we are requesting public disclosure of this issue to encourage other whiteha
 
 agreed to disclose this report.
 
-[November 3, 2014, 11:37pm UTC]()
+November 3, 2014, 11:37pm UTC
 
 Sure! Btw, thanks alot!
 
 This report has been disclosed.
 
-[November 3, 2014, 11:37pm UTC]()
+November 3, 2014, 11:37pm UTC

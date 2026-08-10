@@ -67,13 +67,13 @@ page going offline. To read the original, follow the link above.
 
 [ ![Supply chain attacks: a new era](https://osec.io/_astro/banner.DV6Lw4n7_TSeMQ.webp) ]()
 
-## Overview[]()
+## Overview
 
 [Supply chain](https://www.cloudflare.com/it-it/learning/security/what-is-a-supply-chain-attack/) attacks are becoming [increasingly popular in Web3](https://www.bleepingcomputer.com/news/security/ledger-dapp-supply-chain-attack-steals-600k-from-crypto-wallets/). In response, Lavamoat has emerged as a robust defense mechanism against supply chain attacks, offering sophisticated isolation and access control features. These help ensure that malicious dependencies cannot execute harmful code.
 
 In this article, we will explore how each component of Lavamoat works, and dive into the various bypasses we reported.
 
-### Introduction[]()
+### Introduction
 
 It is important to note that there are three different versions of Lavamoat:
 
@@ -81,9 +81,9 @@ It is important to note that there are three different versions of Lavamoat:
 - [NodeJS Lavamoat](https://github.com/LavaMoat/LavaMoat/tree/f3e53c8c44f063f000adc620b0aa3f7a41dda5c6/packages/node) is a variant of Lavamoat tailored specifically for Node.js environments.
 - [Lavamoat allow-scripts](https://github.com/LavaMoat/LavaMoat/tree/f3e53c8c44f063f000adc620b0aa3f7a41dda5c6/packages/allow-scripts) are used to prevent malicious code execution on lifecycle scripts.
 
-### Lavamoat’s security features[]()
+### Lavamoat’s security features
 
-The three most important features of Lavamoat[1]() are:
+The three most important features of Lavamoat1 are:
 
 - Policy files
 - NPM anti-hijacking
@@ -91,7 +91,7 @@ The three most important features of Lavamoat[1]() are:
 
 Let’s go over them one by one.
 
-#### Policy files[]()
+#### Policy files
 
 Policy files are one important feature of Lavamoat, as they limit access to the potentially dangerous platform API and globals.
 
@@ -139,13 +139,13 @@ The `globals` section in a Lavamoat policy specifies which global variables and 
 
 To enforce these policies, Lavamoat uses `lavapack`, a custom webpack that wraps every dependency and applies the specified rules independently.
 
-#### NPM anti-hijacking[]()
+#### NPM anti-hijacking
 
 One important note is that Lavamoat can’t rely solely on the names of the packages as they are published on NPM. Otherwise, a malicious actor could create a package with the same name as a popular, trusted package.
 
 Instead, Lavamoat looks at how each package is connected by [walking the modules](https://github.com/LavaMoat/LavaMoat/blob/f3e53c8c44f063f000adc620b0aa3f7a41dda5c6/packages/core/src/walk.js#L22) in a project’s dependency tree, thus generating a unique name for each package.
 
-#### Scuttling[]()
+#### Scuttling
 
 Scuttling is an optional feature that adds an extra layer of protection. Even if the real `GlobalThis` object is leaked by an attacker or accessed through a malicious package manager, scuttling removes sensitive APIs, preventing malicious requests from being executed.
 
@@ -171,7 +171,7 @@ Subsequently, the code defines a [function](https://github.com/LavaMoat/LavaMoat
 
 Finally, the `performScuttleGlobalThis()` [function](https://github.com/LavaMoat/LavaMoat/blob/f3e53c8c44f063f000adc620b0aa3f7a41dda5c6/packages/core/src/scuttle.js#L125) modifies the properties of the global object (`globalRef`). It starts by creating an array `props`, containing the names of all properties in the prototype chain of `globalRef`. Then, an empty object is created to serve as a proxy for scuttled properties. The function then iterates over each property, making changes to the global window object based on the provided configuration.
 
-## Hacking webpacks[]()
+## Hacking webpacks
 
 Now let’s get to the fun stuff.
 
@@ -215,7 +215,7 @@ Webpack is used to bundle all modules and packages into a single file. It insert
 
 Lavapack uses `with()` proxies to restrict the objects accessible by the module, and `__MODULE_CONTENT__` is replaced by the content of a file required by the project being built.
 
-### Injection? Not so simple[]()
+### Injection? Not so simple
 
 We first tried to inject invalid JavaScript inside a JavaScript file, and then attempt to escape the `with` environment:
 
@@ -265,7 +265,7 @@ catch (err) {
 
 Interestingly, it *is* possible to inject a `}); (() => {` inside source, and will not throw a syntax error. Unfortunately, this is not enough to bypass the `with()` sandbox of Lavapack.
 
-### Source map: the syntax killer[]()
+### Source map: the syntax killer
 
 Lavapack has a feature to extract source map files from the code using the [convert-source-map](https://www.npmjs.com/package/convert-source-map) npm package:
 
@@ -313,7 +313,7 @@ exports.removeComments = function (src) {
 
 Looking deeper at the RegEx, it matches the start of the multiple line comment (`/*`) but doesn’t match the end of it, meaning that the syntax would break in the case of multiline source map comments.
 
-### The bypass[]()
+### The bypass
 
 By abusing the `removeComments()` function, we could bypass the Lavamoat restrictions by escaping the `with()` sandbox. To do so, we created a multiline source map comment, and injected the invalid JavaScript inside the comment:
 
@@ -341,7 +341,7 @@ By abusing the `removeComments()` function, we could bypass the Lavamoat restric
 
 This allows malicious code to execute without breaking any other package or feature. This payload also makes the supply chain attack more impactful. Any injected code is executed as soon as the bundle file is imported.
 
-### Lavapack patch[]()
+### Lavapack patch
 
 MetaMask mitigated the issues we reported on Lavapack by defining `assertValidJS()`, an independent check that differs from the browserify syntax check we used to exploit the issue.
 
@@ -369,7 +369,7 @@ function assertValidJS(code) {
 
 ```
 
-## Hacking JS realms[]()
+## Hacking JS realms
 
 Lavamoat scuttling removes unnecessary and dangerous attributes from the `globalThis` object. However, this can be easily bypassed when Lavamoat is running in a browser context:
 
@@ -389,7 +389,7 @@ The window must be same-origin and must not be scuttled.
 
 As a mitigation, some applications integrate SnowJS with scuttling, so every new same-origin window and iframe will be detected and scuttled (check the [MetaMask implementation](https://github.com/MetaMask/metamask-extension/blob/3996f505a6a156d96077acb49579e6fc9e78cd45/app/scripts/use-snow.js#L22)).
 
-### SnowJS attack surface[]()
+### SnowJS attack surface
 
 SnowJS is a JavaScript sandbox implementation that secures same-origin realms in browser applications. It is configured to detect new realms and attach them to the sandbox.
 
@@ -421,7 +421,7 @@ This means that an attacker can’t use any of these functions to create an ifra
 
 Unfortunately, client-side JavaScript is surprisingly complex with lots of strange behaviours that could be used to bypass the hook security feature.
 
-### Bypassing SnowJS[]()
+### Bypassing SnowJS
 
 The deprecated [`document.execCommand`](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand) function is used to execute commands inside a `contenteditable` focused context. Despite being a deprecated function, it is still supported by modern browsers, and works on an element like this:
 
@@ -439,7 +439,7 @@ document.execCommand('insertHTML', false, '<iframe srcdoc="aaa">');
 
 ```
 
-### Impact on Lavamoat scuttling[]()
+### Impact on Lavamoat scuttling
 
 As it is recommended to use snowJS integrated with Lavamoat scuttling to prevent bypasses, it is possible to completely bypass the scuttling feature without pre-conditions.
 
@@ -459,11 +459,11 @@ document.getElementsByTagName('iframe')[0].contentWindow.alert(document.domain);
 
 ```
 
-### SnowJS patch[]()
+### SnowJS patch
 
 MetaMask is working on conceptual changes and aiming to integrate SnowJS as a [browser feature within W3C standards](https://www.w3.org/2023/03/secure-the-web-forward/talks/realms.html#talk), with the intention of addressing not only this issue, but also all other well-known issues with SnowJS. [Here](https://github.com/weizman/Realms-Initialization-Control) is their new proposal.
 
-## Chaining the impacts[]()
+## Chaining the impacts
 
 We were able to find two vulnerabilities in the Lavamoat project:
 
@@ -474,17 +474,17 @@ By combining the exploits, it is possible to completely bypass Lavamoat supply-c
 
 Using MetaMask as an example, these exploits could be used to retrieve the encrypted keypair in extension storage. The only precondition would be compromising an NPM dependency.
 
-## Conclusion[]()
+## Conclusion
 
 The vulnerability within the Lavapack module sandboxing, along with the issues we discussed regarding SnowJs and the Scuttling feature, illustrate the complexities of mitigating supply chain attacks within the JavaScript ecosystem. While the lavapack release with a mitigation was available in under two days, the inherent complexity makes designing robust security implementations a challenging task.
 
 [![An otter waving hello](https://osec.io/_astro/hello-otter.CY-UvNiU_1qzCWs.webp)]()
 
-## Footnotes[]()
+## Footnotes
 
 -
 
-Excluding SES, which was covered [in our last article](https://osec.io/blog/metamask-snaps). [↩]()
+Excluding SES, which was covered [in our last article](https://osec.io/blog/metamask-snaps). ↩
 
 ## Read more from our blog
 

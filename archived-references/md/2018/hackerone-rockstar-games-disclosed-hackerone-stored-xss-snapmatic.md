@@ -224,7 +224,7 @@ January 26, 2018, 11:36am UTC
 
 .
 
-[January 26, 2018, 8:48pm UTC]()
+January 26, 2018, 8:48pm UTC
 
 [jmarshall](https://hackerone.com/jmarshall)
 
@@ -232,13 +232,13 @@ January 26, 2018, 11:36am UTC
 
 changed the status to ****Triaged**.
 
-[January 26, 2018, 8:48pm UTC]()
+January 26, 2018, 8:48pm UTC
 
 [europa](https://hackerone.com/europa)
 
 .
 
-Updated [January 27, 2018, 9:52am UTC]()
+Updated January 27, 2018, 9:52am UTC
 
 [jmarshall](https://hackerone.com/jmarshall)
 
@@ -246,31 +246,31 @@ Updated [January 27, 2018, 9:52am UTC]()
 
 .
 
-[February 16, 2018, 2:24am UTC]()
+February 16, 2018, 2:24am UTC
 
 [Rockstar Games](https://hackerone.com/rockstargames)
 
 rewarded [europa](https://hackerone.com/europa) with a bounty.
 
-[February 16, 2018, 2:24am UTC]()
+February 16, 2018, 2:24am UTC
 
 [europa](https://hackerone.com/europa)
 
 .
 
-[February 16, 2018, 9:30am UTC]()
+February 16, 2018, 9:30am UTC
 
 [europa](https://hackerone.com/europa)
 
 .
 
-Updated [March 3, 2018, 6:26pm UTC]()
+Updated March 3, 2018, 6:26pm UTC
 
 [europa](https://hackerone.com/europa)
 
 .
 
-[March 19, 2018, 11:17am UTC]()
+March 19, 2018, 11:17am UTC
 
 [jmarshall](https://hackerone.com/jmarshall)
 
@@ -278,13 +278,13 @@ Updated [March 3, 2018, 6:26pm UTC]()
 
 closed the report and changed the status to ****Resolved**.
 
-[March 19, 2018, 3:29pm UTC]()
+March 19, 2018, 3:29pm UTC
 
 [europa](https://hackerone.com/europa)
 
 requested to disclose this report.
 
-[April 8, 2018, 1:42pm UTC]()
+April 8, 2018, 1:42pm UTC
 
 [jmarshall](https://hackerone.com/jmarshall)
 
@@ -292,19 +292,19 @@ requested to disclose this report.
 
 .
 
-[April 9, 2018, 2:05pm UTC]()
+April 9, 2018, 2:05pm UTC
 
 [europa](https://hackerone.com/europa)
 
 .
 
-[April 9, 2018, 2:09pm UTC]()
+April 9, 2018, 2:09pm UTC
 
 [europa](https://hackerone.com/europa)
 
 .
 
-[April 9, 2018, 5:55pm UTC]()
+April 9, 2018, 5:55pm UTC
 
 [jmarshall](https://hackerone.com/jmarshall)
 
@@ -312,13 +312,13 @@ requested to disclose this report.
 
 .
 
-[April 19, 2018, 3:25pm UTC]()
+April 19, 2018, 3:25pm UTC
 
 [europa](https://hackerone.com/europa)
 
 .
 
-[April 19, 2018, 3:38pm UTC]()
+April 19, 2018, 3:38pm UTC
 
 [jmarshall](https://hackerone.com/jmarshall)
 
@@ -326,8 +326,8 @@ requested to disclose this report.
 
 agreed to disclose this report.
 
-[April 19, 2018, 10:14pm UTC]()
+April 19, 2018, 10:14pm UTC
 
 This report has been disclosed.
 
-[April 19, 2018, 10:14pm UTC]()
+April 19, 2018, 10:14pm UTC

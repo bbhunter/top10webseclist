@@ -83,7 +83,7 @@ samy kamkar - NAT Pinning
 
  **Not all routers support this method of NAT traversal -- using the FTP method is far superior.** I chose IRC in this example because IRC connection tracking support is in older versions of Linux, some routers' FTP's connection tracking only works on inbound connections, and IRC is just way more fun. I've tested this successfully on a Belkin N1 Vision Wireless Router and worked out of the box (the IRC method failed on a Netopia 3347-02).
 
- To use FTP, you'll just need to send a "227 samy was here (192,168,0,1,20,30)\n", however it needs to be on port 21 and on some routers must be on an *inbound* connection. You'll want to use an attack [like this (FF/Opera only)]() to get their internal IP. In this scenario, the internal IP is 192.168.0.1 and the port to connect to is 5150 (20 = 0x14, 30 = 0x1e, 0x141e = 5150).
+ To use FTP, you'll just need to send a "227 samy was here (192,168,0,1,20,30)\n", however it needs to be on port 21 and on some routers must be on an *inbound* connection. You'll want to use an attack like this (FF/Opera only) to get their internal IP. In this scenario, the internal IP is 192.168.0.1 and the port to connect to is 5150 (20 = 0x14, 30 = 0x1e, 0x141e = 5150).
 
  To view other cool stuff, check out [my website](http://samy.pl) or [follow my twitter](http://twitter.com/samykamkar).
 

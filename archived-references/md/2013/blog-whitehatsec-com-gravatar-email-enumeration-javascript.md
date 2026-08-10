@@ -90,6 +90,3 @@ I’ve created an embeddable [example here](https://web.archive.org/web/20130323
 
 Once discovered, this is not an easy problem to fix, because so many people and sites use Gravatar, and it would require a forklift upgrade of their code to use something more secure than a simple MD5 hash. Therefore, it is probable that this issue will continue to exist for a long time – certainly as long as Gravatar exists and provides the features it currently offers. The result is the possibility of large-scale, spear-phishing campaigns against large corporations. Therefore, WhiteHat’s Threat Research Center recommends that corporate Internet users limit their employees from using Gravatar tied to their corporate email addresses when conducting company-specific business.
 
-**
-
-**

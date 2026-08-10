@@ -68,14 +68,12 @@ Share
 
 ---
 
-##
 INTRODUCTION: MORE PARSERS, MORE PROBLEMS
 
 JSON is the backbone of web application communications. The simplicity of JSON is often taken for granted. We don't usually consider JSON parsing as part of our threat model. However, in our modern, multi-language, microservice architectures, our applications often rely on several separate JSON parsing implementations, each of which has its own quirks.
 
 As we've seen through attacks like [HTTP request smuggling](https://portswigger.net/web-security/request-smuggling), discrepancies across parsers combined with multi-stage request processing can introduce serious vulnerabilities. In this research, I conducted a survey of 49 JSON parsers, cataloged their quirks, and present a variety of attack scenarios and [Docker Compose labs](https://github.com/BishopFox/json-interop-vuln-labs/) to highlight their risks. Through our payment processing and user management examples, we will explore how JSON parsing inconsistencies can mask serious business logic vulnerabilities in otherwise benign code.
 
-##
 WHY ARE THERE PARSING INCONSISTENCIES?
 
 ### Official and Alternative Specs
@@ -115,7 +113,6 @@ I categorized the identified interoperability security risks into five categorie
 ### 1. Inconsistent Duplicate Key Precedence
 
 *Creed said they were different. Creed and Pam were both right, but it depends on whom you ask.
-*
 
 Many of us have encountered this quirk of JSON through our development work: What happens if you have a duplicate key?
 
@@ -254,7 +251,6 @@ However, in this example, the validated JSON document was not re-stringified aft
 
 [Try out this attack in Lab 1.](https://github.com/BishopFox/json-interop-vuln-labs/tree/master/lab1)
 
-###
 2. Key Collision: Character Truncation and Comments
 
 via GIPHY
@@ -475,14 +471,12 @@ So far, we've only focused on JSON decoding, but nearly all implementations also
 Conventional wisdom is to avoid duplicate keys, which is easy to do with internal services, but not possible to guarantee with external user input. So, not all parsers explore the behavior with duplicate keys. In one instance, a parser (Java's JSON-iterator) produced the following input and outputs:
 
 **Input:
-**
 
 ```
 obj = {"test": 1, "test": 2}
 ```
 
 **Output:
-**
 
 ```
 obj["test"] // 1
@@ -496,14 +490,12 @@ As shown above, the values of key retrieval and serialization differ. The underl
 Per the specification, it's acceptable to serialize duplicate keys, and some parsers (e.g., C++’s rapidjson) do just that:
 
 **Input:
-**
 
 ```
 obj = {"test": 1, "test": 2}
 ```
 
 **Output:
-**
 
 ```
 obj["test"] // 2
@@ -553,7 +545,6 @@ We'll try out an example.
 Let's revisit Lab 1. We know that the third-party Golang jsonparser library used in the Payments API will decode large numbers to 0, while the Cart API will decode the number faithfully. We can exploit this inconsistency to get free items. Let's purchase a large quantity of e-gift cards (`id: 8`):
 
 **Request:
-**
 
 ```
 POST /cart/checkout HTTP/1.1
@@ -600,14 +591,12 @@ The business logic layer faithfully decodes the integer, while the payment proce
 Positive and negative infinity along with NaN (not a number) are not supported by the official RFC. But many parsers have chosen workarounds. Deserializing and/or reserializing values can lead to a variety of outcomes such as:
 
 **Input:
-**
 
 ```
 {"description": "Big float", "test": 1.0e4096}
 ```
 
 **Output:
-**
 
 ```
 {"description":"Big float","test":1.0e4096}
@@ -656,7 +645,6 @@ Two parsing libraries crashed on malformed JSON. Both of these instances have be
 
 That said, in the interest of performance, many parsers rely on low-level routines that may be susceptible to memory safety issues. Be sure to keep an eye on parsers that rely on native code. Joining programs like Google’s OSS-Fuzz is a great way to get easy access to fuzzing.
 
-##
 WHAT ABOUT BINARY JSON PARSERS
 
 I briefly tested BSON, MessagePack, UBJSON, and CBOR formats, and a sampling of their respective parsers. Many of the same issues persisted for these parsers as well. Although some serializers refused to create binary representations of multiple keys, we can manually create malicious documents by byte swapping, as shown below for MessagePack:
@@ -683,7 +671,6 @@ If we look at the documentation, many of the specifications try to be backwards 
 
 There are certainly more opportunities to discover further interoperability issues in these binary formats.
 
-##
 RESULTS: PARSER BEHAVIOR
 
 The survey consisted of 49 parsers across the following languages, representing both standard library parsers (when available) and third-party parsers:
@@ -810,7 +797,6 @@ For security folks:
 
 - These are nuanced attacks and not easy to identify from the outside. If you have access to source code, look for parsers with known quirks. Try duplicating keys and using the suggestions in the [Labs README](https://github.com/BishopFox/json-interop-vuln-labs/#attack-techniques) to try to induce collisions.
 
-##
 WHAT ABOUT: JSON SCHEMA VALIDATORS?
 
 The JSON Schema specification can help simplify and enforce type-safety and constraints, but it can't help with duplicate keys. JSON Schema implementations do not perform JSON parsing themselves, but instead process only the parsed object. To demonstrate this point, I used JSON Schema in the vulnerable labs that accompany this blog post.
@@ -847,13 +833,9 @@ Finally, when designing protocols or standards, restricting behavior to determin
 
 **UPDATE 02/26/21:** Thank you InfoSec Twitter for bringing another awesome resource on JSON parsing quirks to my attention: [http://seriot.ch/parsing_json.php](http://seriot.ch/parsing_json.php) (2018) by Nicolas Seriot ([@nst021](https://twitter.com/nst021)). Be sure to check it out for a deep-dive on JSON parsing. It also includes parser quirks for languages not covered in this article (e.g., Perl, Lua, Swift, and more).
 
-[]()
+## Appendix A - Version Numbers
 
-## [Appendix A - Version Numbers]()
-
-[ ]()
-
-[]()
+ 
 
 - C/C++
 

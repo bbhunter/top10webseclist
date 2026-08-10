@@ -62,7 +62,7 @@ Serialization binders are often used to validate types specified in the serializ
 
 In this blog post we'll have a look into cases where this can fail and consequently may allow to bypass validation. We'll also walk though two real-world examples of insecure serialization binders in the DevExpress framework (CVE-2022-28684) and Microsoft Exchange (CVE-2022-23277), that both allow remote code execution.
 
- []()
+ 
 
 ## Introduction
 

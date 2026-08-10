@@ -275,14 +275,12 @@ if($_GET['op'] == "purchase"){
 11
 12
 $cost = $_POST['quantity']
-*
 $price + $shipping;
 13
 14
 if(isset($_POST['discount']))
 15
 $cost = $cost - $_POST['discount']
-*
 $cost / 100;
 16
 17
@@ -778,19 +776,16 @@ client
 is
 quantity <
 0
-_
 len
 (
 name
 )
 >
 10
-_
 op
 ! = \
 purchase
 00
-_
 card
 62 f
 card
@@ -1286,7 +1281,6 @@ if($_GET['op'] == "purchase"){
 11
 12
 $main_cost = $_POST['quantity']
-*
 100 + 10; //
 where $price is 100
 13
@@ -1386,7 +1380,6 @@ statement
 on Line 2 (Listing 3) checks if
 $
 main
-_
 ca matches
 0
 card
@@ -1400,11 +1393,9 @@ card
 . We expand
 $
 main
-_
 ca
 with
 $
-_
 POST
 [
 0
@@ -1815,10 +1806,8 @@ member
 ) are uni-
 formly transformed as
 v
-_
 $
 id
-_
 member
 1
 . This enables subsequent
@@ -1917,12 +1906,10 @@ PHP
 functions often accept and re-
 turn such data structures. For example, MyBloggie employs the
 preg
-_
 replace
 function, which is a regular-expression version of
 a string replacement operation.
 preg
-_
 replace
 can both accept and
 return arrays as arguments. Arrays are difcult to translate to Kaluza

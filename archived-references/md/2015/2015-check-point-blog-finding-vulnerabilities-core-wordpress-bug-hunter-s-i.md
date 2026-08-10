@@ -188,7 +188,6 @@ This means that we need to wait a full week in order to exploit our vulnerabilit
 Finally, after passing the token validation, the privileges validation, the basic admin validation, and the post ID validation, changing the post status to *‘trash’* is as simple as sending an HTTP parameter. Thank God.
 
 Combining all of these bypasses together, we use a chain of around a dozen different bugs, a faulty privilege system, and about every false assumption in the system to achieve partial editor privileges. The road to a critical vulnerability is still long, but at its end we found both a SQLi and an XSS, to be described in the next posts.**
- **
 
 **POC**
 

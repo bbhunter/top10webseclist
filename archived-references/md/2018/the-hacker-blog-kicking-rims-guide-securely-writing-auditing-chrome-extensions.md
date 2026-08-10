@@ -78,7 +78,7 @@ page going offline. To read the original, follow the link above.
 
 ## A Quick Disclaimer
 
- This section get fairly into the weeds of how Chrome extensions operate. If you’re already familiar with this, then you can skip straight to the “[Stealing from the Stainless, Security Anti-Patterns in the Extension World]()” section. Even if you already develop Chrome extensions reading this section is still likely useful as a refresher.
+ This section get fairly into the weeds of how Chrome extensions operate. If you’re already familiar with this, then you can skip straight to the “Stealing from the Stainless, Security Anti-Patterns in the Extension World” section. Even if you already develop Chrome extensions reading this section is still likely useful as a refresher.
 
 ## Home is Where the manifest.json Is – The Basic Extension Layout
 

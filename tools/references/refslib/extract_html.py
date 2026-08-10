@@ -368,9 +368,19 @@ def _render(node, out, base_url, stack):
 
     if tag == "a":
         href = _absolute(node.attrs.get("href", ""), base_url)
+        # AN ANCHOR WITH NOWHERE TO GO IS NOT A LINK. `_absolute` empties the
+        # target of a same-page fragment, a `javascript:` handler and an anchor
+        # with no href at all - a table of contents, a footnote arrow, a
+        # collapsible section's toggle - and writing `[label]()` for those put
+        # 6,132 dead links across 425 archived files. They render as literal
+        # brackets in the reader, and 1,886 of them had no label either, so they
+        # rendered as `[]()`. The label is the only part that was ever content.
+        if not href:
+            _children(node, out, base_url, stack)
+            return
         out.append("[")
         _children(node, out, base_url, stack)
-        out.append("](%s)" % href if href else "]()")
+        out.append("](%s)" % href)
         return
 
     if tag == "img":

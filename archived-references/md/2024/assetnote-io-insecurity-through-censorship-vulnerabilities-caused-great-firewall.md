@@ -58,7 +58,7 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-> *The testing tool to identify if your domain is vulnerable to this attack is *[*located at the end of the blog post*]()*.*
+> *The testing tool to identify if your domain is vulnerable to this attack is **located at the end of the blog post**.*
 
 At Assetnote, we are contstantly resolving millions of DNS as part of the operation of our [Attack Surface Management platform](https://assetnote.io). When performing DNS resolutions at the scale that we do across the number of diverse customer attack surfaces that we are monitoring we start to notice some really interesting behavior in the wild.
 
@@ -76,9 +76,9 @@ In 2022, it was reported that the total number of Chinese domains had reached 33
 
 The attack vectors we have found in this blog post affect any domains that are being routed through Chinese infrastructure. It's hard to quantify the exact number of affected zones, but we estimate the number would be in the tens of millions.
 
-After the discovery of this issue, we reviewed notes with [Eric (todayisnew)](https://twitter.com/codecancare), who had independently found this issue and had spent a lot of time investigating it. Eric provided an additional exploitation vector that doesn't rely on the ability to claim a Fastly domain. You can skip to the attack vectors [at the bottom of this blog post]() if you're not interested in the analysis.
+After the discovery of this issue, we reviewed notes with [Eric (todayisnew)](https://twitter.com/codecancare), who had independently found this issue and had spent a lot of time investigating it. Eric provided an additional exploitation vector that doesn't rely on the ability to claim a Fastly domain. You can skip to the attack vectors at the bottom of this blog post if you're not interested in the analysis.
 
-We have also created an interactive tool to test if your domain is affected by this DNS poisoning issue, which can be found [here]().
+We have also created an interactive tool to test if your domain is affected by this DNS poisoning issue, which can be found here.
 
 ### Unreliable DNS Resolvers
 
@@ -349,7 +349,7 @@ We have attached a list of the known poisoned IPs to the end of this post, and t
 
 Conversely, bad keywords could be identified with a reverse DNS lookup on these IPs and seeing what nonsensical domains are pointing to IPs that are known to belong to a single host.
 
-Further work was done by Eric, who compiled a list of known keywords from his own research which [we have attached to the end of this post]().
+Further work was done by Eric, who compiled a list of known keywords from his own research which we have attached to the end of this post.
 
 ### Weaponizing via Fastly
 
@@ -464,8 +464,6 @@ Do you have any domains that are being routed through China that you want to tes
 Enter in the domain you would like to test, i.e. `domain.cn`, and we will let you know if it's vulnerable to the attack vectors in this blog post.
 
  Enter domain:  Lookup
-
-##
 
 Written by:
 

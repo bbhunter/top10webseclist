@@ -100,7 +100,7 @@ January 15, 2026, 10pm UTC
 
 changed the status to ****Triaged**.
 
-[January 26, 2026, 1:09pm UTC]()
+January 26, 2026, 1:09pm UTC
 
 [rafaelgss](https://hackerone.com/rafaelgss)
 
@@ -116,13 +116,13 @@ medium (5.9)
 
 .
 
-[March 11, 2026, 9:12pm UTC]()
+March 11, 2026, 9:12pm UTC
 
 [sharp_edged](https://hackerone.com/sharp_edged)
 
 .
 
-[March 12, 2026, 12:21am UTC]()
+March 12, 2026, 12:21am UTC
 
 [joyeecheung](https://hackerone.com/joyeecheung)
 
@@ -130,25 +130,25 @@ medium (5.9)
 
 .
 
-[March 12, 2026, 9:29pm UTC]()
+March 12, 2026, 9:29pm UTC
 
- Bot:[ security-release-stewards ]()
+ Bot: security-release-stewards 
 
 updated CVE reference to **[CVE-2026-21717](https://hackerone.com/hacktivity/cve_discovery?id=CVE-2026-21717)**.
 
-[March 17, 2026, 2:54pm UTC]()
+March 17, 2026, 2:54pm UTC
 
 [Node.js](https://hackerone.com/nodejs)
 
 closed the report and changed the status to ****Resolved**.
 
-[March 24, 2026, 10:21pm UTC]()
+March 24, 2026, 10:21pm UTC
 
- Bot:[ security-release-stewards ]()
+ Bot: security-release-stewards 
 
 requested to disclose this report.
 
-[March 24, 2026, 10:21pm UTC]()
+March 24, 2026, 10:21pm UTC
 
 [rafaelgss](https://hackerone.com/rafaelgss)
 
@@ -156,4 +156,4 @@ requested to disclose this report.
 
 disclosed this report.
 
-[March 30, 2026, 4:44pm UTC]()
+March 30, 2026, 4:44pm UTC

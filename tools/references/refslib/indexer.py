@@ -247,8 +247,22 @@ def lost_bytes(entry, store):
     """
     if store is None:
         return []
-    return [field for field in STORE_FIELDS
+    gone = [field for field in STORE_FIELDS
             if entry.get(field) and not store.has(entry[field])]
+    # The two that are NOT top-level hashes. Both are evidence the same way: the
+    # published PDF still carries the author's paper and the article's figures,
+    # and without these objects it can never be printed again with them.
+    paper = (entry.get("paper") or {}).get("sha256")
+    if paper and not store.has(paper):
+        gone.append("paper")
+    figures = [item.get("sha256") for item in (entry.get("images") or {}).values()
+               if item.get("sha256")]
+    missing_figures = [sha for sha in figures if not store.has(sha)]
+    if missing_figures:
+        # One row per document rather than per picture: a slide deck holds 60 of
+        # them, and 60 lines saying the same thing is not a report.
+        gone.append("images (%d of %d)" % (len(missing_figures), len(figures)))
+    return gone
 
 
 def needs_work(entry):

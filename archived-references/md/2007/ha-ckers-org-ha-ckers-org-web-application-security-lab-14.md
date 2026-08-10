@@ -89,7 +89,7 @@ I thinks it’s useful for evading filter and hosting malicius JS code into wide
 
 The =1 thing is pretty clever and indeed simple things like that can stop a lot of errors from happening (IE is often more strict about that than Firefox but your mileage may vary). Anyway, interesting trick. Nice work by Matteo!
 
-  This entry was posted on Saturday, June 23rd, 2007 at 12:36 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070623/hiding-js-in-valid-images/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20070623/hiding-js-in-valid-images/trackback/) from your own site.
+  This entry was posted on Saturday, June 23rd, 2007 at 12:36 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070623/hiding-js-in-valid-images/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070623/hiding-js-in-valid-images/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

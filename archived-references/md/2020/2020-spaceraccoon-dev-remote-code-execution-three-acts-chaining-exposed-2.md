@@ -66,7 +66,7 @@ page going offline. To read the original, follow the link above.
 
  Jan 12, 2020  ·   1043 words   ·   5 minute read
 
-# Prelude [🔗]()
+# Prelude 🔗
 
 The Spring Boot framework is one of the most popular Java-based microservice frameworks that helps developers quickly and easily deploy Java applications. With its focus on developer-friendly tools and configurations, Spring Boot accelerates the development process.
 
@@ -85,7 +85,7 @@ Content-Type: application/json
 
 The payload comprises of three different parts: the environment modification request to the `/actuator/env` endpoint, the `CREATE ALIAS` H2 SQL command, and of course the final OS command injection.
 
-# Act One: Exposed Actuators [🔗]()
+# Act One: Exposed Actuators 🔗
 
 Spring Boot [Actuators](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html) creates several HTTP endpoints that allows a developer to easily monitor and manage an application. As Stepankin notes, “Starting with Spring version 1.5, all endpoints apart from /health and /info are considered sensitive and secured by default, but this security is often disabled by the application developers.” For this exploit, the `/actuator/env` endpoint must be exposed. Developers only need to add `management.endpoints.web.exposure.include=env` (or worse, `management.endpoints.web.exposure.include=*`) to their `application.properties` configuration file to expose this.
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 You can explore the list of environment variables for the application, which provide data about the execution context and system. However, only a few of these variables can be leveraged to change the app at runtime, and even fewer can be used to achieve code execution. Fortunately, Spring Boot 2.x uses the [HikariCP](https://github.com/brettwooldridge/HikariCP) database connection pool by default, which introduces one such variable.
 
-# Act Two: H2 CREATE ALIAS Command [🔗]()
+# Act Two: H2 CREATE ALIAS Command 🔗
 
 HikariCP helps applications communicate with databases. According to its documentation, it accepts the `connectionTestQuery` configuration which defines `the query that will be executed just before a connection is given to you from the pool to validate that the connection to the database is still alive.` The matching Spring Boot environment variable is `spring.datasource.hikari.connection-test-query`. In short, whenever a new database connection is created, the value of `spring.datasource.hikari.connection-test-query` will be executed as an SQL query first. There are two ways to trigger a new database connection - either by restarting the app with a request to `POST /actuator/restart` or changing the number of database connections and initializing it by making multiple requests to the application.
 
@@ -118,7 +118,7 @@ CALL GET_SYSTEM_PROPERTY('java.class.path');
 
 Of course, you can use Java’s `Runtime.getRuntime().exec` function, which allows you to execute OS commands directly.
 
-## Act Three: Command Injection against WAFs and Limited Execution Contexts [🔗]()
+## Act Three: Command Injection against WAFs and Limited Execution Contexts 🔗
 
 At this point, you might come up against common WAF filters especially with juicy strings like `exec()` and so on. However, one advantage of such a nested payload is that you can easily find bypasses using various string concatenation techniques. RIPStech’s [Johannes Moritz](https://blog.ripstech.com/2019/dotcms515-sqli-to-rce/) demonstrates this by breaking up the query using the `CONCAT` and `HEXTORAW` commands:
 
@@ -151,7 +151,7 @@ Hopefully, you don’t have to deal with that and can get a simple `curl` pingba
 
  ![Burp Collaborator](https://spaceraccoon.dev/images/3/burp_collaborator_pingback.png)
 
-# Conclusion: Dangerous Development Defaults [🔗]()
+# Conclusion: Dangerous Development Defaults 🔗
 
 By exposing the `/actuator/env` and `/actuator/restart` endpoints - pretty common in a development setting - a developer puts their application at risk of remote code execution. Of course, this wouldn’t be a problem if the application is run locally, but it’s not a stretch to imagine a careless developer putting it on a public IP during proptyping.
 

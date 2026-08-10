@@ -73,7 +73,7 @@ Okay, I know we’ve talked about Intranet port scanning to death, but I’ve be
 
 That’s the good news. Here’s the bad news. 1) It only works in Firefox so far in my testing. It didn’t work in IE8 (false negatives), Opera (false positives) or Safari (false negatives). 2) It’s slow. Since it has to wait for all the HTTP requests to fire it’s pretty unwieldy once you get over a few dozen requests. 3) It’s noisy. If you’re dealing with NTLM/basic or digest auth, not to mention any other popups or sounds or what-have-you, you’re talking a pretty noisy port scanner. But all that said, it seems to work fairly well. You can [check out the demo here](http://ha.ckers.org/weird/javascriptless-port-scanning.cgi).
 
-  This entry was posted on Monday, January 25th, 2010 at 10:36 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Monday, January 25th, 2010 at 10:36 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

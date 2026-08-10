@@ -73,7 +73,7 @@ For a few days now I'm checking various Chrome extensions code looking for vulne
  Chrome extensions can alter the contents of a webpage you're navigating (if they have the permission for the URL). In web security, what is the worst thing you might do when altering HTML document on-the-fly? Of course, [XSS](https://web.archive.org/web/20171003023224/http://en.wikipedia.org/wiki/Cross-site_scripting). Even if the page itself is totally safe from XSS, an addon might introduce it (it's similar to just entering javascript:code()in address bar) and the page cannot possibly defend from it ([more or less](https://web.archive.org/web/20171003023224/http://blog.kotowicz.net/2011/10/sad-state-of-dom-security-or-how-we-all.html)).
 
  Google documentation about Chrome extensions [warns about this](https://web.archive.org/web/20171003023224/http://code.google.com/chrome/extensions/content_scripts.html#security-considerations) exact threat. But, as it turns out, seeing is believing, so there you go. Let me tell you about some minor extension (196 users as of now, which is the only reason why I'm 0daying now) that allowed me to XSS Google.
- []()
+ 
 
 ##  Meet Linkify
 

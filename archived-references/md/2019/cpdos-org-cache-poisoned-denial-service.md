@@ -98,7 +98,7 @@ Legitimate users trying to obtain the target resource with subsequent requests..
 
 ![](https://cpdos.org/img/CPDoS.png)
 
-With CPDoS, a malicious client can block [any web resource]() that is distributed via [Content Distribution Networks (CDNs)]() or hosted on [proxy caches](). Note, that **a single crafted request** is sufficient to restrain all subsequent requests from accessing the targeted content.
+With CPDoS, a malicious client can block any web resource that is distributed via Content Distribution Networks (CDNs) or hosted on proxy caches. Note, that **a single crafted request** is sufficient to restrain all subsequent requests from accessing the targeted content.
 
 ---
 
@@ -108,15 +108,15 @@ We detected three variations of CPDoS:
 
 -
 
-[HTTP Header Oversize (HHO)]()
+HTTP Header Oversize (HHO)
 
 -
 
-[HTTP Meta Character (HMC)]()
+HTTP Meta Character (HMC)
 
 -
 
-[HTTP Method Override (HMO)]()
+HTTP Method Override (HMO)
 
 ## HTTP Header Oversize (HHO)
 
@@ -207,13 +207,13 @@ This analysis has been conducted with [TurboBytes Pulse](https://pulse.turbobyte
 
 # CPDoS vulnerability overview
 
-This overview summarizes what pair of web caching system and HTTP implementation is vulnerable to what CPDoS attack. More details are described in the paper which can be downloaded [below](). **Note, that the table below illustrates the results from our research experiments conducted in February 2019. In the meantime, the affected organizations have taken precautions to mitigate CPDoS attacks. The majority of the CPDoS vulnerabilities has been addressed by the respective organizations. Click on the info icons in the table or see the section [Vendor Responses to CPDoS]() for more details.**
+This overview summarizes what pair of web caching system and HTTP implementation is vulnerable to what CPDoS attack. More details are described in the paper which can be downloaded below. **Note, that the table below illustrates the results from our research experiments conducted in February 2019. In the meantime, the affected organizations have taken precautions to mitigate CPDoS attacks. The majority of the CPDoS vulnerabilities has been addressed by the respective organizations. Click on the info icons in the table or see the section Vendor Responses to CPDoS for more details.**
 
-|  HTTP ImplementationCache |  Apache HTTPD |  Apache TS |  Nginx |  Squid |  Varnish |  Akamai |  Azure |  CDN77 |  CDNSun |  Cloudflare |  [CloudFront]() |  Fastly |  G-Core Labs |  KeyCDN |  StackPath |   |
+|  HTTP ImplementationCache |  Apache HTTPD |  Apache TS |  Nginx |  Squid |  Varnish |  Akamai |  Azure |  CDN77 |  CDNSun |  Cloudflare |  CloudFront |  Fastly |  G-Core Labs |  KeyCDN |  StackPath |   |
 |  Apache HTTPD + (ModSecurity) |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  HHO, HMC |  ○ |  ○ |  ○ |  ○ |   |
 |  Apache TS |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |   |
 |  Nginx + (ModSecurity) |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  HHO |  ○ |  ○ |  ○ |  ○ |   |
-|  [IIS]() |  ○ |  ○ |  ○ |  ○ |  (HHO) |  (HHO) |  ○ |  (HHO) |  ○ |  (HHO) |  HHO, HMC |  (HHO) |  ○ |  ○ |  ○ |   |
+|  IIS |  ○ |  ○ |  ○ |  ○ |  (HHO) |  (HHO) |  ○ |  (HHO) |  ○ |  (HHO) |  HHO, HMC |  (HHO) |  ○ |  ○ |  ○ |   |
 |  Tomcat |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  HHO |  ○ |  ○ |  ○ |  ○ |   |
 |  Squid |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |   |
 |  Varnish |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  HHO, HMC |  ○ |  ○ |  ○ |  ○ |   |
@@ -230,7 +230,7 @@ This overview summarizes what pair of web caching system and HTTP implementation
 |  Gin |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  HMC |  ○ |  ○ |  ○ |  ○ |   |
 |  Laravel |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  (HHO), (HMC) |  ○ |  ○ |  ○ |  ○ |   |
 |  Meteor.js |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  HMC |  ○ |  ○ |  ○ |  ○ |   |
-|  [Play 1]() |  ○ |  ○ |  ○ |  ○ |  HMO |  HMO |  ○ |  HMO |  ○ |  HMO |  HHO, HMO |  HMO |  ○ |  ○ |  ○ |   |
+|  Play 1 |  ○ |  ○ |  ○ |  ○ |  HMO |  HMO |  ○ |  HMO |  ○ |  HMO |  HHO, HMO |  HMO |  ○ |  ○ |  ○ |   |
 |  Play 2 |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  HHO, HMC |  ○ |  ○ |  ○ |  ○ |   |
 |  Rails |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  (HHO), (HMC) |  ○ |  ○ |  ○ |  ○ |   |
 |  Spring Boot |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  ○ |  HHO |  ○ |  ○ |  ○ |  ○ |   |
@@ -260,7 +260,7 @@ For more details on CPDoS attacks, you are welcome to read our research paper. A
  **Your Cache Has Fallen: Cache-Poisoned Denial-of-Service Attack**
  26th ACM Conference on Computer and Communications Security (CCS) 2019
 
- [Abstract ]() [ Bibtex ]() [Download](https://cpdos.org/paper/Your_Cache_Has_Fallen__Cache_Poisoned_Denial_of_Service_Attack__Preprint_.pdf)
+ Abstract   Bibtex  [Download](https://cpdos.org/paper/Your_Cache_Has_Fallen__Cache_Poisoned_Denial_of_Service_Attack__Preprint_.pdf)
 
 #### Abstract
 
@@ -301,7 +301,7 @@ In this paper we introduce and analyze a new class of web cache poisoning attack
 
 # Talks
 
-On November 14th, 2019, we will give a talk on CPDoS attacks at the [CCS 2019](). For more information, please take a look at the CCS’ agenda: [https://sigsac.org/ccs/CCS2019/…](https://sigsac.org/ccs/CCS2019/index.php/program/program-2/#Thursday)
+On November 14th, 2019, we will give a talk on CPDoS attacks at the CCS 2019. For more information, please take a look at the CCS’ agenda: [https://sigsac.org/ccs/CCS2019/…](https://sigsac.org/ccs/CCS2019/index.php/program/program-2/#Thursday)
 
 ---
 
@@ -491,12 +491,12 @@ Copyright
 
 # Datenschutzerklärung
 
-- [A. Name und Anschrift des Verantwortlichen]()
-- [B. Name und Anschrift der Datenschutzbeauftragten der TH Köln]()
-- [C. Aufsichtsbehörde in Datenschutzangelegenheiten]()
-- [D. Allgemeines zur Datenverarbeitung]()
-- [E. Bereitstellung der Webseite und Erstellung von Logfiles]()
-- [F. Rechte betroffener Personen]()
+- A. Name und Anschrift des Verantwortlichen
+- B. Name und Anschrift der Datenschutzbeauftragten der TH Köln
+- C. Aufsichtsbehörde in Datenschutzangelegenheiten
+- D. Allgemeines zur Datenverarbeitung
+- E. Bereitstellung der Webseite und Erstellung von Logfiles
+- F. Rechte betroffener Personen
 
 ## A. Name und Anschrift des Verantwortlichen
 

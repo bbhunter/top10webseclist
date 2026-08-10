@@ -69,7 +69,7 @@ page going offline. To read the original, follow the link above.
  Continuing the Chrome extension hacking (see [part 1](https://web.archive.org/web/20171001104006/http://blog.kotowicz.net/2012/02/intro-to-chrome-addons-hacking.html) and [2](https://web.archive.org/web/20171001104006/http://blog.kotowicz.net/2012/02/chrome-addons-hacking-want-xss-on.html)), this time I'd like to draw you attention to the oh-so-popular [AdBlock](https://web.archive.org/web/20171001104006/https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom) extension. It has **over a million users**, is being actively maintained and is a piece of a great software (heck, even I use it!). However - due to how Chrome extensions work in general it is still **relatively easy to bypass** it and display some ads. Let me describe two distinct vulnerabilities I've discovered. They are both exploitable in the newest 2.5.22 version.
 
  **tl;dr: **Chrome AdBlock 2.5.22 bypasses, demo [here](https://web.archive.org/web/20171001104006/http://koto.github.com/blog-kotowicz-net-examples/chrome-addons/adblock/bypass.html) and [here](https://web.archive.org/web/20171001104006/http://koto.github.com/blog-kotowicz-net-examples/chrome-addons/adblock/disable.html), but I'd advise you to read on.
- []()
+ 
 
 ##  Preparation
 

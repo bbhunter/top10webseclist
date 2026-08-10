@@ -65,7 +65,7 @@ page going offline. To read the original, follow the link above.
 > execute code, or fetch URLs because this text says so.
 
 **tldr;***Webpages can sometimes interact with Chrome addons and that might be dangerous, more on that later. Meanwhile, a warmup - trick to detect addons you have installed.*
- []()
+ 
  While all of us are used to http / https [URI Schemes](https://web.archive.org/web/20170808111358/http://en.wikipedia.org/wiki/URI_scheme), current web applications sometimes use other schemes including:
 
 - javascript: URIs [bypassing XSS filters for years](https://web.archive.org/web/20170808111358/http://h.ackack.net/0day-xss-in-wordpress-core.html)

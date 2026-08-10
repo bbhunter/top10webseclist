@@ -88,11 +88,7 @@ When Palmer visited [https://www.bankofamerica.com/](https://www.bankofamerica.c
 
  ![](https://cdn.arstechnica.net/wp-content/uploads/2015/02/fake-bofa-certificate.jpg)
 
-*
-
   Credit: [ Chris Palmer ](https://twitter.com/fugueish/status/568253665095450625)
-
- *
 
 He saw the same Superfish-signed certificate misrepresenting itself when he visited other HTTPS-protected websites. In fact, there isn’t a single TLS-protected website that wasn’t affected.
 

@@ -89,7 +89,7 @@ Mostafa is an information security professional specializing in application secu
 
 ### My Speakers Sessions
 
- []()
+ 
 
 ###  1:00pm PDT
 

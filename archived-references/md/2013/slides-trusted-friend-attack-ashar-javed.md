@@ -73,7 +73,6 @@ A talk by **Ashar Javed**
 @
 
 **HGI-Kolloquium
-**
 
 **31-10-2013, RUB**
 
@@ -83,8 +82,6 @@ A talk by **Ashar Javed**
 [http://theweek.com/article/index/239514/4-things-we-learned-from-facebooks-confounding-earnings-report](http://theweek.com/article/index/239514/4-things-we-learned-from-facebooks-confounding-earnings-report)
 
 ## WHO AM I?
-
-##
 
 -
 
@@ -212,8 +209,6 @@ Welcome to Facebook, MSc. Ashar
 "Bringing Social to Security" is GOOD
 
 BUT ...
-
-##
 
  ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91604/sa.JPG)
 [http://www.cl.cam.ac.uk/~rja14/Papers/socialauthentication.pdf](http://www.cl.cam.ac.uk/~rja14/Papers/socialauthentication.pdf)
@@ -501,8 +496,6 @@ Remark: In case of compromised accounts, if attacker has proceeded via answering
 
  ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/113403/secQuestionset.JPG)
 
-###
-
 ## my reaction :-)
 
  ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/90577/surprise.JPG)
@@ -747,9 +740,6 @@ On 23-08-2012, I got the following answer from Facebook Security Team:
 
 **Is there any attack that is not very well targeted?**
 
-**
-**
-
 **Where is social engineering in this attack?**
 
 ## on 24-08-2012
@@ -866,8 +856,6 @@ jim@mediaob.de
 
  ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91066/aca.png)
 
-##
-
 ## FreizeitFreunde (A german-specific social networking site) ([http://www.freizeitfreunde.de/](http://www.freizeitfreunde.de/))
 
  ![](https://s3.amazonaws.com/media-p.slid.es/uploads/mscasharjaved/images/91100/ff.JPG)
@@ -933,7 +921,6 @@ They have switched the email address from victims' to an attacker controlled ema
 Out of 50 surveyed social networks, we found
 
 **26 use Facebook as login-provider (SSO)
-**
 
 **24 don't have this feature**
 

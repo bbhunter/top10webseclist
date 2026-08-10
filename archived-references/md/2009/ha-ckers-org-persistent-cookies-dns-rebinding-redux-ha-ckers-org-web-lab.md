@@ -83,7 +83,7 @@ However, because most sites don’t care about host headers, the request is stil
 
 Now in terms of mitigation, there’s a whole host of things you can do if you happen to run intranet.exploitable.com. Firstly, using SSL would stop this attack because of the SSL to hostname mis-match. Secondly, not allowing any unknown host header to be sent would stop the incorrect host header from being processed. Using client side protections like LocalRodeo would stop the intranet from being contacted as well. Lastly, making sure that _all_ cookies are removed upon each shut down of the browser would stop the attacker from being able to re-use their cookies after having forced the victim’s browser to shut down. I hope all that was a lot more clear.
 
-  This entry was posted on Tuesday, January 20th, 2009 at 4:42 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Tuesday, January 20th, 2009 at 4:42 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

@@ -75,7 +75,7 @@ Anyway, it was an interesting issue, that I’ve definitely thought about before
 
 There are other variants of this attack as well, and I’m sure you can all think of one or you on your own, but ths is also similar to the XSS proxy stuff we’ve talked about. Getting third parties to hack on your behalf is starting to become more mainstream, I guess. Anyway, nice article from the SecuriTeam folks.
 
-  This entry was posted on Thursday, November 23rd, 2006 at 11:32 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20061123/google-hacks-on-your-behalf/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20061123/google-hacks-on-your-behalf/trackback/) from your own site.
+  This entry was posted on Thursday, November 23rd, 2006 at 11:32 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20061123/google-hacks-on-your-behalf/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20061123/google-hacks-on-your-behalf/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

@@ -63,7 +63,7 @@ page going offline. To read the original, follow the link above.
 
 Under the Beamer | mizu.re
 
- [ *keyboard_arrow_up* ]()
+  *keyboard_arrow_up* 
 
 title: Under the Beamer
 date: Sep 07, 2025
@@ -87,27 +87,19 @@ Sources: [here](https://mizu.re/articles/writeups/ASIS_QUALS_2025/under-the-beam
 
 ## Table of content
 
-- [📌 TL.DR]()
-- [📜 Introduction]()
-- [📽️ Beamer library]()
-- [👊 DOM Clobbering]()
-- [🧽 Remove node gadget]()
-- [💬 XSS gadget]()
-- [💥 Putting everything together]()
-
-[
+- 📌 TL.DR
+- 📜 Introduction
+- 📽️ Beamer library
+- 👊 DOM Clobbering
+- 🧽 Remove node gadget
+- 💬 XSS gadget
+- 💥 Putting everything together
 
 ## 📌 TL.DR
 
-]()
-
 ![dom-clobbering.png](https://mizu.re/articles/writeups/ASIS_QUALS_2025/under-the-beamer/./images/dom-clobbering.png)
 
-[
-
 ## 📜 Introduction
-
-]()
 
 The challenge was about a DOM Clobbering technique that I believe to be novel in the [Beamer](https://www.getbeamer.com/) library. The goal was to find a gadget that would bypass the DOMPurify sanitization in the specific library configuration. At the end of the 24h CTF, nobody managed to solve it.
 
@@ -217,11 +209,7 @@ function renderIframe() {
 
 On the frontend side, the code was very simple. It takes user input, sanitizes it with [DOMPurify](https://github.com/cure53/DOMPurify), and renders it in an iframe. The only important thing is that 1s after Beamer loads, it calls the update() method.
 
-[
-
 ## 📽️ Beamer library
-
-]()
 
 The Beamer library follows the "classic" configurable library schema, like [Hotjar](https://www.hotjar.com/), where the config object has to be defined before the library loads:
 
@@ -284,11 +272,7 @@ Beamer.escapeHtml = function(a) {
 
 At that point, it might look to be a dead end, but this is where an interesting DOM Clobbering behavior can be used.
 
-[
-
 ## 👊 DOM Clobbering
-
-]()
 
 Something well known is that on Chromium it is possible to have an [HTMLCollection](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection) when using two tags with the same id.
 
@@ -381,11 +365,7 @@ If I sum up, the idea is to:
 - Find a gadget to remove the Beamer.escapeHtml clobbering tag. This would make Beamer.escapeHtml undefined.
 - Find a gadget that leads to an innerHTML which won't be protected by Beamer.escapeHtml anymore.
 
-[
-
 ## 🧽 Remove node gadget
-
-]()
 
 At that point, there might be several solutions. Mine was to abuse removeIframe to remove the <p id="Beamer" name="escapeHtml"></p> tag:
 
@@ -448,11 +428,7 @@ Beamer.update = function(a) {
 
 *The enableAutoRefresh and activateAutoRefresh config option has to be enabled*
 
-[
-
 ## 💬 XSS gadget
-
-]()
 
 Now, the last step is to find the XSS gadget using the Beamer.escapeHtml bypass. Mine was to abuse appendUtilitiesIframe to get the XSS:
 
@@ -544,11 +520,7 @@ Beamer.appendPushScript = function(a) {
 
 Fortunately, having Beamer.pushDomain not null avoids this error from occurring! 🔥
 
-[
-
 ## 💥 Putting everything together
-
-]()
 
 We have everything to get the XSS working!
 

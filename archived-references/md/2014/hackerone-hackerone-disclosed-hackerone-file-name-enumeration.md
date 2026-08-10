@@ -104,7 +104,7 @@ Thanks, Ben
 
 changed the status to ****Triaged**.
 
-[November 4, 2014, 9:01pm UTC]()
+November 4, 2014, 9:01pm UTC
 
 Hi [@nahemsec](https://hackerone.com/nahemsec) - thanks for this report. I can confirm that your proof of concept works and we have started an investigation into what is causing this problem.
 
@@ -118,7 +118,7 @@ Hi [@nahemsec](https://hackerone.com/nahemsec) - thanks for this report. I can c
 
 .
 
-[November 5, 2014, 11:09pm UTC]()
+November 5, 2014, 11:09pm UTC
 
 Hi [@nahamsec](https://hackerone.com/nahamsec),
 
@@ -138,7 +138,7 @@ Cheers,
 
 .
 
-[November 6, 2014, 12:31am UTC]()
+November 6, 2014, 12:31am UTC
 
 Awesome. Thanks for the update guys.
 
@@ -152,7 +152,7 @@ Awesome. Thanks for the update guys.
 
 .
 
-[November 14, 2014, 12:38am UTC]()
+November 14, 2014, 12:38am UTC
 
 Time for another update: The Rails team has been working on a fix for this issue. We've already received a proposed fix and are now waiting for another Rails release.
 
@@ -166,7 +166,7 @@ Time for another update: The Rails team has been working on a fix for this issue
 
 .
 
-[November 14, 2014, 5:28am UTC]()
+November 14, 2014, 5:28am UTC
 
 Great! Do we know when they are going to release, so I can let others know as well.
 
@@ -174,7 +174,7 @@ Great! Do we know when they are going to release, so I can let others know as we
 
 changed the status to ****Triaged**.
 
-[November 17, 2014, 8:24pm UTC]()
+November 17, 2014, 8:24pm UTC
 
 [
 
@@ -186,7 +186,7 @@ changed the status to ****Triaged**.
 
 .
 
-[November 17, 2014, 10:08pm UTC]()
+November 17, 2014, 10:08pm UTC
 
 Seems like Rails has released the fix :)
 
@@ -202,7 +202,7 @@ I have been getting a few emails from other vendors stating they have patched it
 
 closed the report and changed the status to ****Resolved**.
 
-[November 17, 2014, 10:16pm UTC]()
+November 17, 2014, 10:16pm UTC
 
 You're right, we've deployed this Rails release this morning!
 
@@ -218,7 +218,7 @@ Thanks again for taking the time to report this bug to us.
 
 .
 
-[November 17, 2014, 10:17pm UTC]()
+November 17, 2014, 10:17pm UTC
 
 Happy to help!
 
@@ -226,7 +226,7 @@ Happy to help!
 
 rewarded [nahamsec](https://hackerone.com/nahamsec) with a bounty.
 
-[November 17, 2014, 10:22pm UTC]()
+November 17, 2014, 10:22pm UTC
 
 [
 
@@ -238,7 +238,7 @@ rewarded [nahamsec](https://hackerone.com/nahamsec) with a bounty.
 
 requested to disclose this report.
 
-[November 17, 2014, 10:24pm UTC]()
+November 17, 2014, 10:24pm UTC
 
 Unfortunately I was recognised in the credits of the [security advisory](https://groups.google.com/forum/#!topic/rubyonrails-security/rMTQy4oRCGk) on behalf of your report on HackerOne.
 
@@ -254,7 +254,7 @@ I'm requesting public disclosure so that people can actually see that you are th
 
 .
 
-Updated [November 17, 2014, 10:28pm UTC]()
+Updated November 17, 2014, 10:28pm UTC
 
 Awe dang! I thought they already knew about this issue and that's why I didn't report it to them!
 
@@ -270,7 +270,7 @@ Howerver, I appreciate the bounty.
 
 .
 
-[November 17, 2014, 10:28pm UTC]()
+November 17, 2014, 10:28pm UTC
 
 Patrick of github was also notified by me originally when I reported this same issue on one of the their servers
 
@@ -278,8 +278,8 @@ Patrick of github was also notified by me originally when I reported this same i
 
 agreed to disclose this report.
 
-[November 17, 2014, 10:28pm UTC]()
+November 17, 2014, 10:28pm UTC
 
 This report has been disclosed.
 
-[November 17, 2014, 10:28pm UTC]()
+November 17, 2014, 10:28pm UTC

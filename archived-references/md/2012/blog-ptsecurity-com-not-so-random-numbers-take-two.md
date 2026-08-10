@@ -67,7 +67,7 @@ page going offline. To read the original, follow the link above.
 [![](http://1.bp.blogspot.com/-yugJZtRbS1Q/UDSI6r4BVCI/AAAAAAAABo4/lKYcFUo8NRc/s200/1.jpg)](http://1.bp.blogspot.com/-yugJZtRbS1Q/UDSI6r4BVCI/AAAAAAAABo4/lKYcFUo8NRc/s1600/1.jpg)
 
  George Argyros and Aggelos Kiayias have published recently an awesome research concerning attacks on pseudo random generator in PHP. However, it lacked practical tools implementing this attack. That is why we conducted our own research which led to the creation of a program to perform the bruteforce of PHPSESSID.
- []()
+ 
 
 ###  How can we get mt_rand seed via PHPSESSID?
 
@@ -127,14 +127,12 @@ page going offline. To read the original, follow the link above.
  So, if a web application uses standard PHP sessions, it is possible to obtain the random numbers generated via mt_rand(), rand(), and uniqid().
 
  **How can we get mt_rand seed through one of the random numbers leakage?**
- **
 ** The seed used for mt_rand is an unsigned integer 2^32. If a random number leaked, it is possible to get the seed using PHP itself and rainbow tables. It takes less than 10 minutes.
  The scripts to generate rainbow tables, search the seed, and ready-made tables are available here: [http://www.gat3way.eu/poc/mtrt/](http://www.gat3way.eu/poc/mtrt/)
 
  [![](http://2.bp.blogspot.com/-MEltG-Dce_Q/UDSIc2BKmYI/AAAAAAAABoo/j4iUIPUP_qs/s640/2en.png)](http://2.bp.blogspot.com/-MEltG-Dce_Q/UDSIc2BKmYI/AAAAAAAABoo/j4iUIPUP_qs/s1600/2en.png)
 
  **What to look for in the code?**
- **
 ** All the mt_rand(), rand(), uniqid(), shuffle(), lcg_value(), etc. The only secure function is openssl_random_pseudo_bytes(), but it is rarely used in web applications. The main ways of defense against such attacks are the following:
 
 - MySQL function RAND() — it can be also predicted though.

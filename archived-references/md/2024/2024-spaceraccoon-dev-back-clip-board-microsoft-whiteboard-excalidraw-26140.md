@@ -67,7 +67,7 @@ It’s always interesting to find edge cases in strong appsec programmes like Me
 
  ![Facebook XSS](https://spaceraccoon.dev/images/29/facebook-xss.png)
 
-# It started with a collab [🔗]()
+# It started with a collab 🔗
 
 One day, [teknogeek](https://linktr.ee/teknogeek) and [nagli](https://twitter.com/naglinagli) pinged me to collaborate on some Meta assets. In particular, teknogeek was looking into a CodeQL default rule finding `Cross-site scripting vulnerability due to user-provided value` in [Excalidraw](https://excalidraw.com), an open-source collaborative whiteboard used by Meta. Excalidraw allows users to share rich text, drawings, shapes, images, and other typical whiteboard functionality.
 
@@ -126,7 +126,7 @@ In any case, my interest was piqued because I had found a similar clipboard-rela
 
 This sink was interesting because it allowed me to set the `href` attribute of an anchor tag, which can typically be exploited with an XSS payload like `javascript:alert()` when clicking the link. By tracing backwards, I eventually found that the source was indeed from the clipboard API. Basically, users can paste shapes and other rich data directly into an Excalidraw whiteboard, including with the XSS payload. Trying to inject this payload through typical user interaction was properly sanitised, so the only way was via a poisoned clipboard.
 
-# Moving on to Dynamic Analysis [🔗]()
+# Moving on to Dynamic Analysis 🔗
 
 If you take a deep dive into the Clipboard API, you’ll find that it gets really complex really fast, because developers have a lot of freedom on how they want to serialize HTML data. Re-creating a payload with static analysis can be a huge pain simply because of how much backward-stepping you need to do. In this case, it’s actually a lot easier to retrieve a typical clipboard serialized payload dynamically instead. For example, when accessing the whiteboard, you can enter the following code in the developer console to log paste events:
 
@@ -200,7 +200,7 @@ For example, copying and pasting a simple rectangle in Excalidraw gives the foll
 
 As you can imagine, this makes it a lot easier to quickly identify injection points rather than manually reverse-engineering this through code review. This gave me a “correct” initial payload that I could then modify to include the injection via the `link` value.
 
-# What’s the Attack Vector? [🔗]()
+# What’s the Attack Vector? 🔗
 
 At this point, it’s important to note that in some cases, it’s not necessary to poison the victim’s clipboard at all. While the clipboard might be a ***source*** of an XSS payload, the ***sink*** may actually load this data over other channels such as an API fetch in a collaborative whiteboard. This is similar to the Zoom Whiteboard XSS in which the whiteboard data was actually being sent over WebSocket instead, just that it was serialized in such a complex way that it was easier for the attacker to simply paste it in than craft a correctly-serialized and timestamped WebSocket request.
 
@@ -246,7 +246,7 @@ In reality, because of the flexibility of the Clipboard API, any website can act
 
 Such “copy to clipboard” buttons are everywhere in dynamic web applications and there’s a lot of implicit trust placed in them. So I guess the takeaway here is be careful of what you copy!
 
-# Breaking the Sandbox in Microsoft Whiteboard [🔗]()
+# Breaking the Sandbox in Microsoft Whiteboard 🔗
 
 While slightly less satisfying than popping an XSS on a Meta domain, the [Microsoft Whiteboard](https://whiteboard.office.com) bug was also interesting. Like Excalidraw, Whiteboard features a number of typical objects like shapes, images, and text. However, reviewing the client-side code of Whiteboard revealed a hidden supported object - Microsoft Whiteboard actually allows adding *iframes* into a whiteboard! This is presumably for dynamic content like YouTube videos, but also a magnet for possible XSS attacks.
 
@@ -319,7 +319,7 @@ Once the payload has been added to the whiteboard, any user who visits the white
 
 So what’s so dangerous about a client-side redirect or XSS? Microsoft Whiteboard isn’t just a web app - like many modern apps these days, it is also rendered in desktop applications like the [Windows Store AppX](https://apps.microsoft.com/detail/9MSPC6MP8FM4?hl=en-US&gl=US) version as well in Microsoft Teams. From there, it’s possible to pivot into desktop-side exploits or into the Microsoft Teams context instead.
 
-# Not your usual XSS [🔗]()
+# Not your usual XSS 🔗
 
 As simple web vulnerability classes get eradicated by [safe coding appsec strategies](https://bughunters.google.com/blog/5896512897417216/a-recipe-for-scaling-security), it’s interesting to find edge cases like the Excalidraw and Microsoft Whiteboard issues. In both cases, I suspect it may be due to relatively rare sinks that may not get picked up by static analysis tools. In addition, Excalidraw is a third-party dependency that may have fallen out of Meta’s appsec scope. On my end, I’ll be digging deep whenever I see a rich text editor or whiteboard.
 

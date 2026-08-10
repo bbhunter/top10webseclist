@@ -143,6 +143,36 @@ class TestStoreGaps(unittest.TestCase):
                                         store=FakeStore({"raw1", "text1", "tr1"}))
         self.assertIn("browser_dom_sha256", text)
 
+    def test_a_lost_paper_or_figure_counts_too(self):
+        """Neither is a top-level hash, and both are why a PDF can be printed
+        with the author's own typesetting and figures. Losing them is silent:
+        the published PDF still has them, and the next reprint would not."""
+        entry = archived(paper={"sha256": "paper1", "bytes": 10},
+                         images={"https://x.test/1.png": {"sha256": "fig1"},
+                                 "https://x.test/2.png": {"sha256": "fig2"}})
+        text = indexer.build_store_gaps(
+            FakeManifest({"https://x.test/a": entry}),
+            store=FakeStore({"raw1", "text1", "fig2"}))
+        self.assertIn("paper", text)
+        self.assertIn("images (1 of 2)", text)
+
+    def test_a_reference_whose_paper_and_figures_are_held_is_not_listed(self):
+        entry = archived(paper={"sha256": "paper1"},
+                         images={"https://x.test/1.png": {"sha256": "fig1"}})
+        text = indexer.build_store_gaps(
+            FakeManifest({"https://x.test/a": entry}),
+            store=FakeStore({"raw1", "text1", "paper1", "fig1"}))
+        self.assertIn("No gaps", text)
+
+    def test_an_image_that_was_refused_is_not_a_lost_object(self):
+        """`images` records WHY a picture was not kept - an SVG, a 403, an
+        avatar. A record with no hash never had bytes to lose."""
+        entry = archived(images={"https://x.test/1.svg": {"reason": "SVG"}})
+        text = indexer.build_store_gaps(
+            FakeManifest({"https://x.test/a": entry}),
+            store=FakeStore({"raw1", "text1"}))
+        self.assertIn("No gaps", text)
+
     def test_without_a_store_the_check_cannot_run_and_says_nothing(self):
         """An offline caller with no store must not report every reference as
         lost just because it cannot look."""

@@ -72,11 +72,11 @@ In April 2015, Facebook officially launched messenger.com, a stand-alone messeng
 
 ---
 
-# Sending Unrestricted Messages to Any User via CSRF [#]()
+# Sending Unrestricted Messages to Any User via CSRF #
 
 Using this issue, I could force any user to send messages to other users without the user’s knowledge.
 
-### PoC: [#]()
+### PoC: #
 
 ```html
 <html>
@@ -102,11 +102,11 @@ Where:
 - `VALUE1`: From User
 - `VALUE2`: To Target
 
-# Deleting Any Messages via CSRF [#]()
+# Deleting Any Messages via CSRF #
 
 Using this issue, I could force any user to delete messaging threads.
 
-### PoC: [#]()
+### PoC: #
 
 ```html
 <html>

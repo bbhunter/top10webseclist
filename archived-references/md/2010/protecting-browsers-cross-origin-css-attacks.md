@@ -100,7 +100,8 @@ Organization.The rest of this paper is organized as follows. Section 2presents a
 2. THREAT MODELThe threat model for cross-origin CSS attacks is awebattacker[16], a malicious principal who owns a domain nameand operates a web server. The web attacker's goal is tosteal data from another web site (thetarget) that shouldonly be revealed to a particular user (thevictim) and not tothe attacker.
 Attacker Abilities.
 The web attacker can send and receive arbitrary networktrac, but only from its own servers. It cannot modify oreavesdrop on the victim's network trac to other sites, norcan it generate \spoofed" packets that purport to be fromsome other site. The web attacker cannot install malicioussoftware on the victim's computer; otherwise, it could replacethe browser and bypass any browser-based defenses.
-Target Behavior.The web attacker can inject strings into the target site,even into pages that it cannot retrieve, but its injectionsmust pass server-side cross-site scripting (XSS) lters such asHTML Purier [30]. We do not assume that arbitrary stringinjection is required, since such targets would be vulnerableto conventional XSS attacks already. Opportunities to injectstrings into the target are not unusual in practice: reectionof URL parameters, intra-site messaging, or even non-webchannels [6].
+Target Behavior.The web attacker can inject strings into the target site,even into pages that it cannot retrieve, but its injectionsmust pass server-side cross-site scripting (XSS) lters such asHTML Purier [30]. We do not assume that arbitrary stringinjection is required, since such targets would be vulnerableto conventional XSS attacks already. Opportunities to injectstrings into the target are not unusual in practice: re
+ectionof URL parameters, intra-site messaging, or even non-webchannels [6].
 Victim Behavior.The web attacker can entice the victim into visiting itssite, for instance by sending bulk email to encourage visitors,or by manipulating an advertisement network. We do notassume that the victim discloses any sensitive informationwhile on the attacker's site; merely rendering the attacker's
 web content is sucient.
 3. CROSS-ORIGIN CSS ATTACKSIn this section, we present cross-origin CSS attacks indetail. First, we describe aspects of browser behavior that,together, make these attacks possible. Second, we lay outthe steps of an attack on a hypothetical website. Third,we discuss constraints on practical executions of the attack.Finally, we demonstrate that the attack can be carried outagainst several popular web applications.
@@ -241,10 +242,9 @@ currentStyle
 
 --- page 7 ---
 
-#
-$,
+$
 
-
+,
 
 .1
 14
@@ -257,12 +257,7 @@ $,
 
 	
 
-
 	
-
-
-
-
 
 --- page 8 ---
 

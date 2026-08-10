@@ -146,12 +146,10 @@ PayPal was vulnerable to web cache deception. The vulnerability is now fixed and
 
 - [https://history.paypal.com/cgi-bin/webscr/attack.css?cmd=_history-details](https://history.paypal.com/cgi-bin/webscr/attack.css?cmd=_history-details)
 
-**
  ** **Various static file extensions could be used to cache pages on PayPal (more than 40). Among them:**
 
 aif, aiff, au, avi, bin, bmp, cab, carb, cct, cdf, class, css, doc, dcr, dtd, gcf, gff, gif, grv, hdml, hqx, ico, ini, jpeg, jpg, js, mov, mp3, nc, pct, ppc, pws, swa, swf, txt, vbs, w32, wav, wbmp, wml, wmlc, wmls, wmlsc, xsd, zip
 
-**
  ** **Caching expiration**
 
 I've measured the time taken for the cached files to expire. It seems that after being accessed once (for the first time), a file is cached for ~5 hours. If it's accessed again during that time, the expiration time is extended. It's clear that this time period is more than enough for an attacker to "catch" the cached file on time before it expires, and by constantly monitoring this URL he can expose it as it's created.

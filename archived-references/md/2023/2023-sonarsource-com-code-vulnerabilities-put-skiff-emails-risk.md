@@ -63,14 +63,14 @@ page going offline. To read the original, follow the link above.
 
 [![sonar logo](https://assets-eu-01.kc-usercontent.com:443/ef593040-b591-0198-9506-ed88b30bc023/8e59bcad-6e39-41dc-abd9-a0e251e8d63f/Sonar%20%282%29.svg?w=128&h=32&fit=clip&q=80)](https://www.sonarsource.com/)
 
-## TL;DR overview[]()
+## TL;DR overview
 
 - Sonar's security research team found code vulnerabilities in Skiff, an end-to-end encrypted document and email platform, that could expose user data despite the platform's strong cryptographic protections.
 - The vulnerabilities are in the application layer—specifically in how Skiff processes and renders shared content—creating opportunities for cross-site scripting (XSS) attacks that bypass encryption.
 - This research illustrates a critical distinction: strong encryption protects data in transit and at rest, but code-level vulnerabilities in the application layer can still expose that data once it is decrypted and rendered.
 - Skiff responded to the disclosure and addressed the issues; the findings reinforce the need for rigorous code security review in privacy-focused applications.
 
-## Introduction[]()
+## Introduction
 
 [Last week's article](https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/) discussed the risks of end-to-end encrypted mail providers and showcased the details of a Cross-Site Scripting vulnerability we found in Proton Mail.
 
@@ -80,7 +80,7 @@ As part of our 3-post series, we will cover another severe vulnerability we foun
 
 We also presented the content of this blog post series as a talk at [Black Hat Asia 2023](https://www.blackhat.com/asia-23/briefings/schedule/#stealing-with-style-using-css-to-exploit-protonmail--friends-31697); the video recording will is available [here](https://www.youtube.com/watch?v=pnbZMvCPqSc).
 
-## Impact[]()
+## Impact
 
 The Sonar Research team discovered a Cross-Site Scripting vulnerability in the open-source code of Skiff's web client. Since the web client is where the decryption of emails happens after the user enters their password, it is also the place where the emails exist in their decrypted form. Attackers can therefore steal decrypted emails and impersonate their victims, bypassing the end-to-end encryption.
 
@@ -88,7 +88,7 @@ This time, attackers have to send two emails, both of which must be viewed by th
 
 We responsibly disclosed the vulnerabilities to the vendor in June 2022, and they were fixed shortly after. The following proof-of-concept shows how attackers could have exploited the vulnerability:
 
-## Technical Details[]()
+## Technical Details
 
 Dealing with user-controlled HTML in a web application always increases the risk of Cross-Site Scripting (XSS). While senders may want to style their message and include images, other HTML tags like `<script>` may have unwanted effects and compromise the reader's security. This is already dangerous for regular webmail services, where anybody could send a malicious email to a user just by knowing their email address.
 
@@ -100,7 +100,7 @@ The following sections will explain the code vulnerability we found in [Skiff](h
 
 **Prepare for a story about mXSS, sandbox bypasses, and CSP gadgets!**
 
-### Skiff[]()
+### Skiff
 
 To ensure the security of their service, Skiff employs multiple defenses. They start by sanitizing the HTML of an email body using DOMPurify. After that, they perform a few more steps, including the following transformation:
 
@@ -133,7 +133,7 @@ After that, the `injectShowPreviousContainer` function inserts the `<div>` tag, 
 
 If we consult the [HTML specification](https://html.spec.whatwg.org/multipage/parsing.html#parsing-main-inforeign), we can see that `<div>` elements are not valid children of `<svg>` elements. Since this was an explicit modification of the DOM, no error is thrown, and the element stays at the position it was inserted.
 
-### Reparsing Triggers Mutations[]()
+### Reparsing Triggers Mutations
 
 At a later stage in the email handling code, the sanitized DOM tree gets serialized back to its string representation again by reading its `innerHTML` property:
 
@@ -186,7 +186,7 @@ However, the `<style>` element was also moved outside the `<svg>` element along 
 
 This parsing difference can be abused the same way as before, resulting in the `<img>` tag being inserted into the DOM and triggering its `onerror` event handler during the rendering of the email. So, with a similar payload as the one for Proton Mail, we found a bypass of Skiff's sanitization process that allows inserting arbitrary HTML into the page.
 
-### Escaping the Sandbox[]()
+### Escaping the Sandbox
 
 As mentioned earlier, there are multiple defenses in place. After the sanitizer, the next one is an iframe sandbox like the one we covered for Proton Mail. We can find the same directives for Skiff, but there is no special case for Safari:
 
@@ -202,7 +202,7 @@ An attacker can then include a CSS payload in their email alongside the attachme
 
 Check out [last week's blog post](https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/) to learn about the details of the blob URL creation and CSS leak technique!
 
-### Bypassing the CSP with Cloudflare's Help[]()
+### Bypassing the CSP with Cloudflare's Help
 
 The final line of defense is Skiff's Content Security Policy (CSP). Here, we have many directives, with the most interesting ones being the following:
 
@@ -215,11 +215,11 @@ The first three are similar to Proton Mail and allow for remote images and inlin
 
 Attackers can bypass this directive with a known gadget. We observed that `hcaptcha.com` is hosted behind Cloudflare, a popular content delivery network and DDoS protection provider. This means `hcaptcha.com` will serve a few utility scripts under the `/cdn-cgi/scripts/` path. Some of those scripts contain gadgets that allow bypassing a site's CSP when `unsafe-eval` is allowed. This technique was discovered by [Pepe Vila in 2020](https://twitter.com/cgvwzq/status/1267444635938500610), and it perfectly fits our scenario. Check out [Pepe's page](https://demo.vwzq.net/cloudflare/) for the details about this method!
 
-### Putting it all together[]()
+### Putting it all together
 
 With that, the exploit strategy is complete. The attacker first sends an email with an attachment that causes a blob URL to be created. The email also contains CSS that leaks this URL to the attacker server with the previously described method. Once the blob URL is known, the attacker sends a follow-up email, this time containing a link that the victim has to click. When that happens, the blob URL is opened in a new tab where the hCaptcha/Cloudflare script gadget bypasses the CSP and executes arbitrary JavaScript in the context of the Skiff web application.
 
-### Patch[]()
+### Patch
 
 Since the code vulnerability we found led to serious impact, let's find out how it was fixed and how you can avoid similar issues in your code.
 
@@ -243,9 +243,9 @@ To avoid these kinds of sanitizer bypasses in general, we have a few recommendat
 - Never modify data after sanitizing it. This is not specific to HTML but to any data that needs to be sanitized. The more complex the data structure, the more dangerous it becomes to modify it after sanitization.
 - If possible, don't even re-parse HTML after sanitizing it. DOMPurify can be configured to return the sanitized DOM tree instead of a string. If you directly insert this tree into the page's DOM, the browser will not mutate its contents, leaving less opportunity for mXSS.
 
-## Timeline[]()
+## Timeline
 
-## Summary[]()
+## Summary
 
 In this article, we explained how an innocent-looking mistake in the code could significantly impact the security of an application. We showed how we found and exploited a Cross-Site Scripting vulnerability in Skiff, a popular end-to-end encrypted webmail service.
 

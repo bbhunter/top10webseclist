@@ -83,8 +83,6 @@ This vulnerability can be exploited by anonymous users.
 
 ## CVE identifier(s) issued
 
-[]()
-
 - CVE-2014-3704
 
 ## Versions affected

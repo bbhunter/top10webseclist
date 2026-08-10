@@ -67,15 +67,15 @@ page going offline. To read the original, follow the link above.
 
 [ ![How we broke exchanges: a deep dive into authentication and client-side bugs](https://osec.io/_astro/banner.DpZMFYT6_6hLfy.webp) ]()
 
-## Exploiting OAuth[]()
+## Exploiting OAuth
 
 Our main research focus was related to recent vulnerabilities we found in some of our audits. One common issue we find is related to OAuth misconfigurations that can be exploited to achieve account takeover. To understand the vulnerability and the exploit itself, we first need to dig into the different OAuth flows and the configurations that can be made in the Google Cloud Console.
 
-### Google authentication flows[]()
+### Google authentication flows
 
 During our research, we identified various Google Authentication flows that require different exploitation methods. The new/most recent flow is called GSI, which mainly uses `postMessage` for communication with the Relying Party (RP), and the old one mostly uses `redirect_uri` to send the token back to the RP.
 
-#### GSI (new flow)[]()
+#### GSI (new flow)
 
 The GSI flow also has two ways to authenticate the user to the RP:
 
@@ -84,7 +84,7 @@ The GSI flow also has two ways to authenticate the user to the RP:
 
 FedCM (Federated Credentials Manager) is a new browser API that lets users authenticate natively to an RP using a third-party IdP.
 
-##### FedCM method[]()
+##### FedCM method
 
 The FedCM method basically follows this [user experience](https://privacysandbox.google.com/cookies/fedcm/why#user-interaction). Users can log in by clicking a login button (which will open a “choose your account” prompt window) or by 1-tap UX (see images below).
 
@@ -98,7 +98,7 @@ One-Tap popup shown when you open the page:
 
 Both flows use FedCM API to authenticate using Google IdP service, which makes some CORS requests to the IdP server to return the token. After authenticating the first time, when the user returns to the same website after some time, it is possible to automatically reauthenticate using [FedCM auto-reauthentication](https://github.com/w3c-fedid/FedCM/issues/429), which has certain preconditions that must be met.
 
-##### Non-FedCM method[]()
+##### Non-FedCM method
 
 This method uses a popup window (or iframe) to open the Google OAuth consent page and return the token via `postMessage`:
 
@@ -108,7 +108,7 @@ This method uses a popup window (or iframe) to open the Google OAuth consent pag
 - They get redirected to [https://accounts.google.com/gsi/transform](https://accounts.google.com/gsi/transform)
 - /gsi/transform sends the token back to the RP via `postMessage` (after some SYN/ACK messages)
 
-#### OAuth 2.0 old flow[]()
+#### OAuth 2.0 old flow
 
 The old flow also redirects the user to the Google OAuth consent page and then returns the token via a `redirect_uri` provided in the URL and validated by a whitelist configuration:
 
@@ -117,7 +117,7 @@ The old flow also redirects the user to the Google OAuth consent page and then r
 - The user clicks the “Continue” button to authorize authentication
 - They get redirected to `redirect_uri` with the token in the query parameters or `location.hash`
 
-#### Different configurations[]()
+#### Different configurations
 
 These two flows must be configured differently in the Google Cloud Console. There are two whitelist configurations that we can control:
 
@@ -136,13 +136,13 @@ In the old flow, the `redirect_uri` parameter passed in the `/oauth2/v2/auth` en
 
 The new GSI flow can also have a different flow using `redirect_uri` validation. To execute this flow, you need to specify [login_uri](https://developers.google.com/identity/gsi/web/reference/js-reference#login_uri) while using the SDK.
 
-### Localhost exploit[]()
+### Localhost exploit
 
 During one of our audits, we found a bug related to how developers test the OAuth flow in their development environment. Developers often whitelist the `localhost` origin because it is considered trusted for local testing.
 
 Actually, this is partially true, as it depends on which security assumptions you make. This can be an issue in a mobile environment, as mobile apps can open localhost webservers without many permissions, and having a malicious app installed is not considered a significant issue on mobile since all applications are sandboxed. This configuration allows a malicious application to “escape” the sandbox and attack another system.
 
-#### Exploit[]()
+#### Exploit
 
 To exploit this misconfiguration, we first needed to understand the OAuth flow used by the target. If the OAuth implementation follows a standard flow without using Google Sign-In (GSI), we can extract the token via `location.hash` or `location.search`. To achieve this, we developed a Kotlin application that spins up a local web server:
 
@@ -358,11 +358,11 @@ We also reported this vulnerability to the Web3Auth mobile SDK, Slush Wallet, Ku
 
 Each team responded promptly, communicated clearly, and shipped fixes quickly. Their diligence set a strong example for coordinated response and helped ensure user security across the ecosystem.
 
-### How to mitigate[]()
+### How to mitigate
 
 The proper way to mitigate this issue is to disallow localhost in the live environment. Developers should have a separate staging OAuth environment with a different client ID for testing purposes. It’s important to ensure that tokens generated using the test client ID are not valid in the live environment.
 
-## Exploiting CORS[]()
+## Exploiting CORS
 
 Another bug we found during our research was related to CORS misconfiguration and how different browsers handle mixed content requests.
 
@@ -380,7 +380,7 @@ Access-Control-Allow-Credentials: true
 
 ```
 
-### CORS misconfiguration by lack of TLS[]()
+### CORS misconfiguration by lack of TLS
 
 This case requires specific preconditions. The idea is to redirect the user to an insecure subdomain of `exchange.com` and spoof the response by intercepting and tampering with the victim’s network packets.
 
@@ -389,7 +389,7 @@ However, while testing it by simulating an MITM attack, we figured out that this
 - **Chrome**: won’t work because cookies are not sent in `http://` → `https://` requests, even if same-site.
 - **Firefox and Safari**: works since cookies are sent from an insecure context `fetch()`.
 
-### Exploit[]()
+### Exploit
 
 To exploit it, we must follow some steps:
 
@@ -421,7 +421,7 @@ Once the redirect to the `http://` website is made, if the attacker is in an adj
 
 During our research, the misconfiguration we found was in an API with an endpoint to return the session token, so the impact was an account takeover (ATO) with some limitations since exchanges usually have MFA to perform some actions like withdrawing.
 
-### Mitigation[]()
+### Mitigation
 
 As mitigation, it is recommended to remove all `http://` URLs from the CORS configuration, including localhost, since a local web server in a mobile environment can abuse it.
 
@@ -429,7 +429,7 @@ As mitigation, it is recommended to remove all `http://` URLs from the CORS conf
 
 Configure the HSTS policy to include all subdomains and prevent insecure subdomains from loading in the browser.
 
-## Conclusion[]()
+## Conclusion
 
 In conclusion, our deep dive into authentication and client-side bugs within exchange platforms revealed several vulnerabilities stemming from misconfigurations. These types of attacks show the complexity of securing client-side applications due to the different contexts and environments they can operate in.
 

@@ -124,9 +124,6 @@ CCS’15, October 12–16, 2015, Denver, Colorado, USA.
 © 2015 ACM. ISBN 978-1-4503-3832-5/15/10 ...$15.00.                                                  be exploited by adversaries to obtain substantially more ac-
 DOI: http://dx.doi.org/10.1145/2810103.2813632.                                                      curate timing measurements. Contrary to classic timing at-
 
-
-
-
                                                                                               1382
 tacks which are subject to several limitations, such as vari-             detect whether a user is currently logged in to a cross-origin
 ations in latency and instability of the network, our newly               website.
@@ -197,9 +194,6 @@ an attacker to learn information on the state of a user at a              can ne
 cross-origin website. By leveraging JavaScript to time cross-             measurements. Variations in latency, network congestion,
 origin requests, the researchers show how an adversary can                and dropped packets are just a few examples which may
 
-
-
-
                                                                    1383
                                                                                                                                        
 prevent an attacker from successfully executing a timing at-              var img = new Image ();
@@ -268,9 +262,6 @@ load its entire contents and, subsequently, it will try to dis-          progres
 play the resource as an image, but will fail to do so since              to indicate that a resource is currently being downloaded,
 the user’s dashboard is an HTML resource. As a result,                   a progress event is periodically fired. Similarly, a suspend
 
-
-
-
                                                                   1384
                                                                         just as with images, indicates a failure in the attempt to
                                                                         parse the file as a media resource. Similar to the previous
@@ -337,9 +328,6 @@ not possible to perform this type of timing technique.
 time required to parse a resource, by measuring the time be-            directives, except for the no-store directive of the Cache-
 tween the suspend and the error events. The latter event,               Control header.
 
-
-
-
                                                                  1385
                                                              
  CACHE MANIFEST                                                          the cache2 . In the presented attack, we exploit side-channel
@@ -350,7 +338,6 @@ tween the suspend and the error events. The latter event,               Control 
  http :// example . com /250 kb . html                                   culated, for the four HTML files, the distribution of 100
                                                                          timing measurements where each file was first placed in the
  NETWORK :
- *
                                                                          cache and then removed, ten times in a row. The num-
                                                                        ber of sequential additions and removals from the cache was
                                                                          picked to accommodate the speed of the hard disk, but could
@@ -421,9 +408,6 @@ veloper to programmatically control the cache. This means                3
 that, for instance, a script could first download a specific             set to nosniff, Chrome and Internet Explorer will not parse
 resource, hold it in memory, and subsequently place it in                nor execute the file as a script
 
-
-
-
                                                                   1386
                                                              
  window . onerror = function () {
@@ -492,9 +476,6 @@ surements of the baseline, we compared the mean of those                 Other d
 measurements to the mean of the corresponding group of                   In order to validate that our proposed attacks work on multi-
 the tested file. For example, for the basic timing attack                ple systems, we performed the same experiment on a variety
 
-
-
-
                                                                   1387
                                                                          was followed using just a single request. In their research,
                                                                          Lee et al. have shown how this information can be lever-
@@ -562,9 +543,6 @@ result, the time between the initialization of the request and           against
 the fetchStart property will be considerably higher, allow-              posed to our attacks. It is also important to point out that
 ing the attacker to determine whether a redirection chain                our attacks, as far as a server is concerned, are merely cross-
 
-
-
-
                                                                   1388
 site requests, thus the tested web applications are never ex-
 posed to any kind of malicious input. Given the above, we
@@ -630,9 +608,6 @@ others, which are called connections. In order to browse                 combina
 through your contacts, LinkedIn offers the functionality to              ber of, can be used in a de-anonymization attack. Using a
 filter connections based on their name, location, employer, or           similar approach, but replacing the notion of “groups” with
 
-
-
-
                                                                   1389
 “protected Twitter accounts”, an adversary can use timing
 attacks to compose the list of protected accounts a user is
@@ -697,9 +672,6 @@ history. For example Amazon, one of the largest e-commerce                in ord
 services, offers users the ability to filter their own browsing           solution would be to add a random delay to the firing of
 history based on product category. We found that the page                 events. As a result, an attacker would have to collect more
 offering this functionality is vulnerable to timing attacks,              measurements and apply statistical methods in order to ac-
-
-
-
 
                                                                    1390
 curately determine the size of a resource. However, since                 scenario, the check of the Referer header can only pass if the
@@ -799,9 +771,6 @@ conundrum: either the website accepts the request, render-                Firewa
 ing the defense ineffective, or rejects it, which may prevent                Moreover, researchers have shown that cross-site timing
 legitimate users from accessing the website. In our defense               attacks can be employed to list network-enabled devices on
 
-
-
-
                                                                    1391
 the victim’s local network [19]. An adversary could subse-                and HTML features, adversaries can exfiltrate sensitive in-
 quently use this information to fingerprint the user, or to               formation, such as CSRF tokens [16]. Moreover, Lee et al.
@@ -866,9 +835,6 @@ searchers have found that the inherent behavior of certain                search
 browser features can allow an adversary to uncover a user’s               EU FP7 project NESSoS. For Stony Brook University, this
 private information at a cross-origin website. For instance,              work was supported by the National Science Foundation
 Heiderich et al. discovered that by leveraging various CSS                (NSF) under grant CNS-1527086.
-
-
-
 
                                                                    1392
 8.   REFERENCES                                                            filters. In Proceedings of the 2013 ACM SIGSAC
@@ -951,8 +917,5 @@ Heiderich et al. discovered that by leveraging various CSS                (NSF) 
      Springer, 1996.                                                       on, pages 223–238. IEEE, 2010.
 [21] R. Kotcher, Y. Pei, P. Jumde, and C. Jackson.
      Cross-origin pixel stealing: timing attacks using CSS
-
-
-
 
                                                                1393

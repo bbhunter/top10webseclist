@@ -102,7 +102,6 @@ J U M P E R Z . N E T - Anti-DNS Pinning ( DNS Rebinding ) + Socket in FLASH
  ... and maybe more.
 
  **You can see the [DEMO](http://www.jumperz.net/index.php?i=2&a=1&b=8).
-**
 
  **Java Applet**
  ![](http://www.jumperz.net/images/black.gif)

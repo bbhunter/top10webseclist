@@ -90,7 +90,6 @@ Diagram: an agent sends tool calls through a GUARDRAIL to “the world” (deplo
 
 ~~~javascript
 a = toolA();
-~~~
 
 The remainder is covered by an overlaid screenshot.
 
@@ -103,7 +102,6 @@ levent
 hello there the [illegible] is false thanx to my
 close friend akhil for asking about it and my other close
 friend fable for working during the world cup final
-~~~
 
 The words “halting problem” appear above scratched-out text.
 
@@ -121,7 +119,6 @@ const r = await tools.search(q);
 for (…) { … }
 
 return summary;
-~~~
 
 ## Page 5
 
@@ -274,13 +271,11 @@ Web-standard API
 ~~~javascript
 const p = new URLPattern({ pathname: '/blog/:year/:month/:slug' });
 p.exec('https://example.com/blog/2025/03/post').pathname.groups;
-~~~
 
 Result:
 
 ~~~javascript
 { year: '2025', month: '03', slug: 'post' }
-~~~
 
 ## Page 15
 
@@ -288,20 +283,17 @@ Result:
 
 ~~~text
 /blog/:year/:month/:slug
-~~~
 
 compiles to:
 
 ~~~regex
 ^/blog/([^/]+)/([^/]+)/([^/]+)$
-~~~
 
 Mappings shown:
 
 ~~~text
 /blog/:year/:month/:slug  →  year  month  slug
 /blog/:year/:month/(\d+) →  year  month  0
-~~~
 
 raw regex is allowed — and an **unnamed** group has no name to give, so it gets an **index**
 
@@ -313,38 +305,30 @@ raw regex is allowed — and an **unnamed** group has no name to give, so it get
 
 ~~~javascript
 new URLPattern('/blog/:year/:month/:slug')
-~~~
 
 produces:
 
 ~~~regex
 ^/blog/([^/]+)/([^/]+)/([^/]+)$
-~~~
 
 **exec**
 
 ~~~javascript
 .exec('/blog/2025/03/post')
-~~~
 
 produces:
 
 ~~~javascript
 [ '2025', '03', 'post' ]
-~~~
 
 **zip**
 
 ~~~text
 [ '2025', '03', 'post' ]
 [ year,   month, slug   ]
-~~~
-
-→
 
 ~~~javascript
 { year: '2025', month: '03', slug: 'post' }
-~~~
 
 ## Page 17
 
@@ -358,23 +342,18 @@ while (index < length) {
     groups.add({ name: nameList[index] });
     ++index;
 }
-~~~
 
 Diagram:
 
 ~~~text
 /blog/2025/03/post
-        ↓
 V8: [ '2025', '03', 'post' ]
 
 /blog/:year/:month/:slug
-        ↓
 ^/blog/([^/]+)/([^/]+)/([^/]+)$
-        ↓
 Cloudflare: [ year, month, slug ]
 
 Result: { year: '2025', month: '03', slug: 'post' }
-~~~
 
 ## Page 18
 
@@ -384,25 +363,21 @@ Result: { year: '2025', month: '03', slug: 'post' }
 Input:   /blog/2025/03/abcde
 Pattern: /blog/:year/:month/(ab(cde))
 Regex:   ^/blog/([^/]+)/([^/]+)/(ab(cde))$
-~~~
 
 V8 captures, size 4:
 
 ~~~text
 [ '2025', '03', 'abcde', 'cde' ]
-~~~
 
 Cloudflare names, size 3:
 
 ~~~text
 [ "year", "month", "0" ]
-~~~
 
 Displayed result:
 
 ~~~javascript
 { year: '2025', month: '03', 0: 'abcde', ?: 'cde' }
-~~~
 
 The fourth name is shown as missing.
 
@@ -416,7 +391,6 @@ Diagram:
 nameList : kj::Vector<kj::String>
 
 "year" | "month" | "0" | [adjacent tcmalloc memory]
-~~~
 
 A kj::String is shown as 24 bytes:
 
@@ -437,17 +411,13 @@ const handle = new DeflateRaw();
 const input  = Buffer.from("hello world");
 const output = Buffer.alloc(64);
 handle.write(input, output);
-~~~
 
 Call path:
 
 ~~~text
 handle.write(input, output) [javascript]
-             ↓
 javascript → c             [workerd]
-             ↓
 logic                      [zlib]
-~~~
 
 ## Page 21
 
@@ -471,13 +441,11 @@ void setBuffers(ArrayPtr<byte> input, ArrayPtr<byte> output) {
     stream.next_in  = input.begin();   // raw ptr → JS input buffer
     stream.next_out = output.begin();  // raw ptr → JS output buffer
 }
-~~~
 
 The slide marks the following cleanup as missing:
 
 ~~~cpp
 stream.next_out = nullptr;
-~~~
 
 ## Page 23
 
@@ -485,13 +453,11 @@ stream.next_out = nullptr;
 
 ~~~text
 handle.stream.next_out → dangling ptr
-~~~
 
 **IDEA 1 — Call write() again**
 
 ~~~javascript
 handle.write(input, output2)
-~~~
 
 → next_out = output2
 
@@ -499,7 +465,6 @@ handle.write(input, output2)
 
 ~~~javascript
 handle.params(level, strategy)
-~~~
 
 → deflateParams(&stream, …) → flushing remaining input
 
@@ -511,7 +476,6 @@ Without pending data:
 
 ~~~javascript
 handle.write(input, output)
-~~~
 
 input → output; no pending.
 
@@ -519,7 +483,6 @@ With no flushing:
 
 ~~~javascript
 handle.write(input, output, Z_NO_FLUSH)
-~~~
 
 Diagram: write 1 → write 2 → write 3 accumulate context; a later **flush** emits output.
 
@@ -565,7 +528,6 @@ Diagram:
 ~~~text
 nameList : kj::Vector<kj::String>
 [entries] | [adjacent tcmalloc memory]
-~~~
 
 The adjacent memory is interpreted as a 24-byte kj::String:
 
@@ -583,7 +545,6 @@ ptr → address → **arbitrary read**
 
 ~~~text
 control a fake kj::String { ptr, size, disposer } → read the bytes at ptr
-~~~
 
 **GOAL — sweep the shared heap for another tenant’s secret**
 
@@ -608,7 +569,6 @@ Successive operations change the pointer target:
 initial VFS file       → ADDR_A
 write() — inplace      → ADDR_B
 write()                → ADDR_C
-~~~
 
 ## Page 31
 
@@ -621,7 +581,6 @@ Diagram: a nameList kj::Vector sits beside a tcmalloc-backed VFS-file kj::String
 ~~~text
 { ptr, size, disposer, … } → heap ptr
        size = 8
-~~~
 
 ## Page 32
 
@@ -633,19 +592,16 @@ Before free, the VFS-file kj::String is shown as:
 0x00: ptr
 0x08: size = 8
 0x10: disposer
-~~~
 
 After free(), tcmalloc reuses it as a free chunk:
 
 ~~~text
 next | size = 8 | disposer | …
-~~~
 
 The “next” field points to a linked list of free chunks:
 
 ~~~text
 ptr → free chunk → ptr → free chunk → …
-~~~
 
 ## Page 33
 
@@ -656,7 +612,6 @@ Terminal:
 ~~~text
 victim % docker exec -it melt bash
 root@3c8ac451c9e5:/exploit#
-~~~
 
 ## Page 34
 
@@ -665,7 +620,6 @@ root@3c8ac451c9e5:/exploit#
 ~~~text
 prompt               → LLM              → zlib             → native code
 in Code Mode           generates the JS   DeflateRaw glue     execution
-~~~
 
 ## Page 35
 
@@ -675,13 +629,11 @@ A write initially overwrites an object with repeated values:
 
 ~~~text
 0xdaca  0xdaca  0xdaca  0xdaca
-~~~
 
 Extended API:
 
 ~~~javascript
 handle.write(flush, in, inOff, inLen, out, outOff, outLen)
-~~~
 
 outOff controls the write position in the overwritten object. The diagram shows a single 0xdaca value written at that offset.
 
@@ -777,7 +729,6 @@ v1.20260619.1
 
 What's Changed
 • 2026 06 16 upstream changes by @mikea in #6822
-~~~
 
 - HackerOne: slow start
 - Engineers: professional
@@ -823,7 +774,6 @@ pay_invoice("Nord Supply", usd=48000)
 a line in the invoice
 pay_invoice("Nord Supply", usd=48000)
 ✓ allowed
-~~~
 
 **THE MISSING VARIABLE**
 

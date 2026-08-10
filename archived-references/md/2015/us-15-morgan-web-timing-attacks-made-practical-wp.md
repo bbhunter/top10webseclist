@@ -66,7 +66,6 @@ page going offline. To read the original, follow the link above.
 --- page 1 ---
 
 Web Timing Attacks Made Practical
-*
 Timothy D. Morgan
 „
 Jason W. Morgan
@@ -488,7 +487,6 @@ l
 
 from step 3, test all widths in the range:
 w
-
 
 0
 :
@@ -1592,7 +1590,8 @@ http://www.daemonology.net/papers/htt.pdf
 --- page 46 ---
 
 YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
+ $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
+½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
 
 --- page 47 ---
 
@@ -1600,4 +1599,6 @@ YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
 
 --- page 48 ---
 
-¼»áÿø‘ÞôQóW™¼Íÿ×:Bz‘&©Ïó´¼z¼‰”ˆ<j�˜G™Ñ:§~nßÅs3·ìOÌî²x@îÐÃOm•×ÿyT‚÷ï^Í©Ëd/¢Éû¬±t@H—­¥e¸Qä{þë¬kÔöB—x˜%Ìlc‰0ÉV,Ì NÇîCÏ~‰fßüYéÈ¤”äŠøÈZlp†k¥”ÑìWãý�ŽÓ[½n6SËUÇÜ‡S»…ßŽÜYÍHæ�€‘ÿÝsg™û|¶»wvqñ…+,Q½Gx$hŸáíöq�Ôàsž”Ýøöú}“ÀÃ—>˜	¿`¾írë|ÿ¯	XÆìsn§Ý©jChæð}�=É¶OîBü·7ì±æåTeèCæÔÔÊââÚ>JW®6èÇëŠ�èT
+¼»áÿø‘ÞôQóW™¼Íÿ×:Bz‘&©Ïó´¼z¼‰”ˆ<j�˜G™Ñ:§~nßÅs3·ìOÌî²x@îÐÃOm•×ÿyT‚÷ï^Í©Ëd/¢Éû¬±t@H—­¥e¸Qä{þë¬kÔöB—x˜%Ìlc‰0
+ÉV,Ì NÇîCÏ~‰fßüYéÈ¤”äŠøÈZlp†k¥”ÑìWãý�ŽÓ[½n6SËUÇÜ‡S»…ßŽÜYÍHæ�€‘ÿÝsg™û|¶»wvqñ…+,Q½Gx$hŸáíöq�Ôàsž”Ýøöú}“ÀÃ—>˜	¿`¾írë|ÿ¯	XÆìsn§Ý©jChæð}�=É¶OîBü·7ì±æåTeèCæÔ
+ÔÊââÚ>JW®6èÇëŠ�èT

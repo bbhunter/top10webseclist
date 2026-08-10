@@ -95,22 +95,22 @@ It is also available in a [print/download-friendly PDF](https://portswigger.net/
 
 ### Outline
 
-- [The true potential]()
+- The true potential
 
-- [Beyond limit-overrun]()
-- [Single-packet attack]()
-- [Methodology]()
+- Beyond limit-overrun
+- Single-packet attack
+- Methodology
 
-- [Case studies]()
+- Case studies
 
-- [Object masking]()
-- [Multi-endpoint]()
-- [Single-endpoint]()
-- [Deferred]()
+- Object masking
+- Multi-endpoint
+- Single-endpoint
+- Deferred
 
-- [Further research]()
-- [Defence]()
-- [Takeaways]()
+- Further research
+- Defence
+- Takeaways
 
 ### Background
 

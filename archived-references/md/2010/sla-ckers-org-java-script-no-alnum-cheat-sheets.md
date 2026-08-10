@@ -83,7 +83,7 @@ Cheat sheets of the shortest ways we can find to accomplish things with differen
 
  Feel free to fill in different charsets and of course if you find a shorter version of a letter post it.
 
- Charset: **[]()+** (seemingly impossible to execute with)
+ Charset: **+** (seemingly impossible to execute with)
 
 ```
 
@@ -162,7 +162,7 @@ Y:  :
 Z:  :
 ```
 
- Charset: **[]()+!** (six with !)
+ Charset: **+!** (six with !)
 
 ```
 
@@ -255,7 +255,7 @@ Y:  : []["sort"]["call"]()["btoa"]("a")[0]
 Z:  : []["sort"]["call"]()["btoa"]("f")[0]
 ```
 
- Charset: **[]()+=** (six with = bit longer but might be more useful if using 1 variable)
+ Charset: **+=** (six with = bit longer but might be more useful if using 1 variable)
 
 ```
 
@@ -319,7 +319,7 @@ Y:  :
 Z:  :
 ```
 
- Charset: **[]()+!{}/.,** (everything?)
+ Charset: **+!{}/.,** (everything?)
 
 ```
 
@@ -380,7 +380,7 @@ Z:  :
 
  Edited 16 time(s). Last edit at 02/10/2010 08:23PM by SW.
 
- []()
+ 
 
 **Re: Java/script: no alnum cheat sheets**
 
@@ -392,7 +392,7 @@ Date: February 10, 2010 12:41AM
 
  These ways are shortest:
 
- 1. Charset: []()+
+ 1. Charset: +
 
  "NaN": +[][[]]+[]
  "NaN"[1]: (+[][[]]+[])[++[[]][+[]]]
@@ -408,7 +408,7 @@ Date: February 10, 2010 12:41AM
 
  edit all! hahaha
 
- []()
+ 
 
 **Re: Java/script: no alnum cheat sheets**
 
@@ -420,7 +420,7 @@ Thanks very much Lever, updated them.
 
  I think undefined[3] is shorter than NaNundefined[10] if you have !.
 
- []()
+ 
 
 **Re: Java/script: no alnum cheat sheets**
 
@@ -428,7 +428,7 @@ Posted by: ** [ LeverOne ](http://sla.ckers.org/forum/profile.php?24,3946) **
 
 Date: February 10, 2010 01:40AM
 
-2. Charset: []()+!
+2. Charset: +!
 
  Infinity: +(+!+[]+(!+[]+[])[!+[]+!+[]+!+[]]+[+!+[]]+[+[]]+[+[]]+[+[]]) // 60
  NaN: +[![]] // 6
@@ -439,7 +439,7 @@ Date: February 10, 2010 01:40AM
 
  Edited 2 time(s). Last edit at 02/10/2010 08:46PM by LeverOne.
 
- []()
+ 
 
 **Re: Java/script: no alnum cheat sheets**
 
@@ -457,7 +457,7 @@ Date: February 10, 2010 01:48AM
 
  Edited 1 time(s). Last edit at 02/10/2010 02:55AM by SW.
 
- []()
+ 
 
 **Re: Java/script: no alnum cheat sheets**
 
@@ -471,18 +471,18 @@ Hi again!
 
  ==> for example <==
 
- // []()+
+ // +
 
  y: 115: "NaNInfinity"[10]
  (+[][[]]+[+(++[[]][+[]]+([+[][[]]]+[][[]])[++[[]][+[]]+[+[]]]+[++[[]][+[]]]+[+[]]+[+[]]+[+[]])])[++[[]][+[]]+[+[]]]
 
- // []()+!
+ // +!
 
  y: 84: "NaNInfinity"[10] (+[![]]+[+(+!+[]+(!+[]+[])[!+[]+!+[]+!+[]]+[+!+[]]+[+[]]+[+[]]+[+[]])])[+!+[]+[+[]]]
 
  // Maybe to recheck all letters? :D
 
- []()
+ 
 
 **Re: Java/script: no alnum cheat sheets**
 
@@ -494,7 +494,7 @@ You have a good point, I listed the values NaN, etc rather than strings "NaN" no
 
  I hope the other letters should be fine. Will work on more of the list tomorrow.
 
- []()
+ 
 
 **Re: Java/script: no alnum cheat sheets**
 
@@ -505,7 +505,7 @@ Date: February 12, 2010 11:50AM
 Strange..
  [].constructor=[undefined], but [].constructor+[] = "function Array..."
 
- []()
+ 
 
 **Re: Java/script: no alnum cheat sheets**
 
@@ -513,7 +513,7 @@ Posted by: ** [ SW ](http://sla.ckers.org/forum/profile.php?24,438) **
 
 Date: February 12, 2010 08:15PM
 
-I made a script to automatically expand something into the []()+! charset, no alnum.
+I made a script to automatically expand something into the +! charset, no alnum.
 
  It's simple, and probably buggy, and I didn't enter all the characters yet.
 
@@ -533,7 +533,7 @@ http://discogscounter.getfreehosting.co.uk/js-noalnum.php?txt="abcdefghijklmnopq
 
  Edited 3 time(s). Last edit at 02/12/2010 10:39PM by SW.
 
- []()
+ 
 
 **Re: Java/script: no alnum cheat sheets**
 
@@ -547,11 +547,11 @@ Good work, SW!
 
  - []['filter']['constructior'] is better than []['constructior']['constructior']
 
- - []['filter']['constructor']('your code')() it is strategically more correct than []['sort']['call']()['method'](param), if we need to put all code into string.
+ - []['filter']['constructor']('your code')() it is strategically more correct than []['sort']'call'['method'](param), if we need to put all code into string.
 
  exs.
 
- []['sort']['call']()['eval']([]['sort']['call']()['name']) // good
+ []['sort']'call'['eval']([]['sort']'call'['name']) // good
 
  []['filter']['constructor']('eval(name)') // is better
 
@@ -576,7 +576,7 @@ Quote
 
  Edited 1 time(s). Last edit at 02/13/2010 12:26AM by LeverOne.
 
- []()
+ 
 
 **Re: Java/script: no alnum cheat sheets**
 
@@ -590,7 +590,7 @@ Thanx for looking LeverOne.
 
  Good tip on the numbers, I will fix this and the nested quotes. One problem with using filter.constructor("eval(...)") is if you need quotes it will be quite long, I think it's like 500 characters to generate a ".
 
- []()
+ 
 
 **Re: Java/script: no alnum cheat sheets**
 
@@ -611,7 +611,7 @@ New version:
 
  Edited 2 time(s). Last edit at 02/15/2010 07:25AM by SW.
 
- []()
+ 
 
 **Re: Java/script: no alnum cheat sheets**
 

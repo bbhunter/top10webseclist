@@ -114,8 +114,6 @@ In the past weeks I worked on [UI Redressing](https://web.archive.org/web/201710
 
  A working PoC has been developed and can be downloaded [here](https://web.archive.org/web/20171005091933/https://github.com/daath1/nibblesec/tree/master/ui_redressing_mayhem/linkedin). The following is a video of the attack:
 
-###
-
 ###  Beyond the Mayhem
 
  LinkedIn Team was informed about this attack scenario. The following are a series of suggestions that should prevent this kind of attacks:

@@ -67,9 +67,7 @@ page going offline. To read the original, follow the link above.
 
 [Get a demo ](https://www.wiz.io/demo?cta_source=blog&cta_page=/blog/azure-active-directory-bing-misconfiguration&cta_placement=nav)
 
-##
-
-[]()Executive summary
+Executive summary
 
 -
 
@@ -93,17 +91,13 @@ To check whether your environment has been affected by this misconfiguration, pl
 
 *BingBang attack flow*
 
-##
-
-[]()**Introduction**
+**Introduction**
 
 From Amazon Cognito to Google Firebase or Microsoft Azure Active Directory, there are many cloud-based identity providers on the market serving various business needs. The complexity of each IdP facilitates misconfigurations, which can potentially be leveraged by threat actors to compromise organizations’ production environments.
 
 In this blog post, we will demonstrate how Microsoft itself fell prey to AAD’s configuration challenges, and inadvertently exposed internal applications to external attackers. These applications allowed us to view and change various types of sensitive Microsoft data. In one particular case, we were able to manipulate search results on Bing.com and perform XSS attacks on Bing users, potentially exposing customers’ Office 365 data such as emails, chats, and documents. This blog will also provide details about the misconfigurations, and how to detect and mitigate them in your environment.
 
-##
-
-[]()**Azure Active Directory (AAD)**
+**Azure Active Directory (AAD)**
 
 Microsoft offers its own SSO service in Azure, AAD, which is the most common authentication mechanism for apps created in Azure App Services or Azure Functions. AAD provides different types of account access: single-tenant, multi-tenant, personal accounts, or a combination of the latter two. Single-tenant applications only allow users from the same tenant to issue an OAuth token for the app. Multi-tenant applications on the other hand, allow any Azure tenant to issue an OAuth token for them. Therefore, app developers must inspect the tokens within their code and decide which user should be allowed to log in.
 
@@ -121,13 +115,9 @@ Upon recognizing these issues and their potential impact, we started scanning th
 
 The following case study on the “Bing Trivia” application, which we have dubbed “#BingBang,” illustrates how Microsoft itself fell victim to misconfiguration pitfalls and exposed one of its most critical apps to any individual on the internet.
 
-##
+**The BingBang case study**
 
-[]()**The BingBang case study**
-
-###
-
-[]()**Part 1 – Reconnaissance**
+**Part 1 – Reconnaissance**
 
 To measure how common this misconfiguration was, we started scanning Azure App Services and Azure Functions for exposed endpoints. The scan yielded many potentially vulnerable websites, so to narrow the scope of the research, we decided to focus on Microsoft’s own tenant.
 
@@ -147,9 +137,7 @@ Given the app was named “Bing Trivia”, we assumed it was intended for trivia
 
 *Viewing the same wallpaper on Bing.com*
 
-###
-
-[]()**Part 2 – Altering search results**
+**Part 2 – Altering search results**
 
 To verify our ability to control Bing search results, we selected a carousel in the CMS and slightly altered its content. We wanted to make a small change, which would be easy to revert. We chose the “best soundtracks” query, which returned a list of highly recommended movie soundtracks; we then proceeded to change the first item, “*Dune (2021)*,” to our personal favorite, “*Hackers (1995),*” and saved our edit.
 
@@ -165,9 +153,7 @@ This proved that we could control Bing’s search results, and as we would later
 
 In order to ascertain the breadth of the attack surface, we then decided to leverage this access and test XSS viability with a sample harmless payload. The payload also ran as expected, so we quickly reverted our changes and immediately reported our findings to Microsoft.
 
-###
-
-[]()**Part 3 – Attacking Bing users**
+**Part 3 – Attacking Bing users**
 
 While working with Microsoft on the report, we started investigating the impact of the XSS. We saw that Bing has a “Work” section that allows you to search your organizational directory; when inspecting this functionality, we realized it was based on the Office 365 API, with the `business.bing.com` hostname used by Bing for Office-related communications.
 
@@ -187,9 +173,7 @@ A malicious actor with the same access could’ve hijacked the most popular sear
 
 *Full BingBang attack flow*
 
-##
-
-[]()**Additional vulnerable applications**
+**Additional vulnerable applications**
 
 In addition to the Bing Trivia app, we found several other internal Microsoft apps with similar misconfigurations and exposure to anyone trying to log in:
 
@@ -207,21 +191,15 @@ In addition to the Bing Trivia app, we found several other internal Microsoft ap
 
 All these issues have been reported to Microsoft. The Microsoft team fixed them in a timely manner and awarded us a bug bounty of $40,000, which we will donate. Although these services did not fall within the scope of the bounty program, the Microsoft team based their decision on the additional product and guidance improvements for AAD that stemmed from our findings.
 
-##
+**Customer remediation guidelines**
 
-[]()**Customer remediation guidelines**
-
-###
-
-[]()**Am I affected?**
+**Am I affected?**
 
 The issues we identified in this research may affect any organization with Azure Active Directory applications that have been configured as multi-tenant but lack sufficient authorization checks.
 
 Based on data from our scans, we assess that exposure is significantly more common across Azure App Service and Azure Functions applications, where validation responsibility is unclear to developers.
 
-###
-
-[]()**How do I detect these issues in my environment?**
+**How do I detect these issues in my environment?**
 
 Administrators can use the Azure Portal to query their AAD service principals and look for any that are configured to allow multi-tenant access. These should appear under “App Registrations” or the “Authentication” section of each application’s page.
 
@@ -237,9 +215,7 @@ To verify whether the application is vulnerable or not, use your web browser to 
 
 Wiz customers can use either [this query](https://app.wiz.io/graph#~(query~(type~(~'SERVICE_ACCOUNT)~select~true~where~(aad_signInAudience~(EQUALS~(~'AzureADMultipleOrgs~'AzureADandPersonalMicrosoftAccount))~externalOwners~(IS_SET~false))~relationships~(~(type~(~(type~'ACTING_AS~reverse~true))~with~(type~(~'WEB_SERVICE)~select~true~relationships~(~(type~(~(type~'EXPOSES))~with~(type~(~'ENDPOINT)~select~true~where~(portValidationResult~(NOT_EQUALS~(~'Closed)))))~(type~(~(type~'CONTAINS~reverse~true))~with~(type~(~'SUBSCRIPTION)~select~true))))))))) to spot all their potentially vulnerable assets, or [this query](https://app.wiz.io/graph#~(query~(type~(~'SERVICE_ACCOUNT)~select~true~where~(nativeType~(EQUALS~(~'ServicePrincipal*2fApplication))~aad_signInAudience~(EQUALS~(~'AzureADMultipleOrgs~'AzureADandPersonalMicrosoftAccount))~externalOwners~(IS_SET~false))~relationships~(~(type~(~(type~'ACTING_AS~reverse~true))~with~(type~(~'WEB_SERVICE)~select~true~where~(nativeType~(EQUALS~(~'Microsoft.Web*2fsites))~requiresAuth~(EQUALS~true))~relationships~(~(type~(~(type~'EXPOSES))~with~(type~(~'ENDPOINT)~select~true~where~(portValidationResult~(NOT_EQUALS~(~'Closed)))))~(type~(~(type~'CONTAINS~reverse~true))~with~(type~(~'SUBSCRIPTION)~select~true))))))))) to spot App Services and Functions specifically. We also recommend Wiz users to refer to [our customer advisory](https://docs.wiz.io/wiz-docs/docs/wiz-adv-2023-018) for additional guidance.
 
-###
-
-[]()**How can I resolve these issues?**
+**How can I resolve these issues?**
 
 If your application doesn’t require multi-tenancy, simply go to your app’s page and [switch to single-tenant authentication](https://learn.microsoft.com/en-us/azure/active-directory/develop/howto-modify-supported-accounts#change-the-application-registration-to-support-different-accounts).
 
@@ -249,29 +225,21 @@ If your app needs to be available on a specific external tenant other than your 
 
 Otherwise, you will need to implement [claims-based authorization](https://learn.microsoft.com/en-us/azure/active-directory/develop/access-tokens#claims-based-authorization) logic by performing [token checks](https://learn.microsoft.com/en-us/azure/active-directory/develop/access-tokens#claims-in-access-tokens) within your application code. There is no one-size-fits-all solution, and you should consult with your engineering team to find the right solution for your app. However, it is recommended to consult the relevant [Microsoft documentation](https://github.com/Azure-Samples/active-directory-aspnetcore-webapp-openidconnect-v2/blob/master/2-WebApp-graph-user/2-3-Multi-Tenant/README.md#about-the-code) beforehand.
 
-###
-
-[]()**How can I know if this issue has been exploited?**
+**How can I know if this issue has been exploited?**
 
 According to Microsoft, Azure Active Directory logs are insufficient to provide insight on past activity. The recommended solution is to view your application logs and look for any suspicious logins.
 
-##
-
-[]()**Takeaways**
+**Takeaways**
 
 We see this issue as a case of cloud exposure. Cloud Service Providers allow users to expose many of their cloud resources externally with the click of a button. The same thing happened here, where users could check the wrong box and publicly expose their app by accident.
 
 Moreover, users of Azure App Service and Azure Functions may not be fully aware of who is responsible for validating access tokens. Users who enable authentication via the Azure Portal may assume their application is fully secured. However, users must implement additional token validation and authentication in their application's code to ensure authentication security.
 
-##
-
-[]()**Summary**
+**Summary**
 
 In this blog we have covered real-world examples of OAuth misconfigurations, with a focus on Microsoft’s own applications. Based on what we found, we have concluded that this issue is both easily exploitable and severely impactful. This is why we urge anyone who owns multi-tenant apps to scan their environment with the guidelines provided above.
 
-##
-
-[]()**Disclosure timeline**
+**Disclosure timeline**
 
 -
 
@@ -301,9 +269,7 @@ In this blog we have covered real-world examples of OAuth misconfigurations, wit
 
 **Mar. 29, 2023** – Public disclosure
 
-##
-
-[]()**Stay in touch!**
+**Stay in touch!**
 
 Hi there! We are Hillai Ben-Sasson ([**@hillai**](https://twitter.com/hillai)), Shir Tamari ([**@shirtamari**](https://twitter.com/shirtamari)), Nir Ohfeld ([**@nirohfeld**](https://twitter.com/nirohfeld)), Sagi Tzadik ([**@sagitz_**](https://twitter.com/sagitz_)) and Ronen Shustin ([**@ronenshh**](https://twitter.com/ronenshh)) from the Wiz Research Team. We are a group of veteran white-hat hackers with a single goal: to make the cloud a safer place for everyone. We primarily focus on finding new attack vectors in the cloud and uncovering isolation issues in cloud vendors.
 

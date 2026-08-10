@@ -113,15 +113,15 @@ This material will be useful both for application developers and for those who l
 
 ## Table of contents
 
-- [Introduction]()
-- [Example of an attack]()
-- [BFF is not a cure-all]()
-- [Will PKCE help?]()
-- [Recommendations from BCP for OAuth 2.0 Security]()
-- [Reference to the attack in FAPI 2.0 Security Profile]()
-- [Relevance and applicability of the attack]()
-- [Protection measures]()
-- [Conclusion]()
+- Introduction
+- Example of an attack
+- BFF is not a cure-all
+- Will PKCE help?
+- Recommendations from BCP for OAuth 2.0 Security
+- Reference to the attack in FAPI 2.0 Security Profile
+- Relevance and applicability of the attack
+- Protection measures
+- Conclusion
 
 ## Introduction
 

@@ -69,7 +69,7 @@ page going offline. To read the original, follow the link above.
  [ [English](http://www.quotium.com/index.php) | [Français](http://www.quotium.fr/index.php) ]
 
 - [![Security et performance testing](http://www.quotium.com/img/QuotiumHome2.gif)](http://www.quotium.com/)
--  [About us****]()
+-  About us****
 
 ### Company
 
@@ -79,7 +79,7 @@ page going offline. To read the original, follow the link above.
 - [Press Releases](http://www.quotium.com/corp/pressReleases.php)
 - [Contact Office](http://www.quotium.com/corp/offices.php)
 
--  [Support****]()
+-  Support****
 
 ### Contact us
 
@@ -87,18 +87,18 @@ page going offline. To read the original, follow the link above.
 - [ +44 203 178 36 81
  support@quotium.com](mailto:info@quotium.com)
 
--  [Resources****]()
+-  Resources****
 
 ### Learn more
 
-- [Product datasheet]()
+- Product datasheet
 - [Seeker research Center](http://www.quotium.com/research/advisories/XSS-NetRequestValidation.php)
 
 ### Evaluate
 
 - [ Download Qtest free trial](http://www.quotium.com/forms/form.php?product=qtest)
 
--  [Solutions & Products****]()
+-  Solutions & Products****
 
 ### Solutions
 

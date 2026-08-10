@@ -63,7 +63,7 @@ It’s really time to sleep in my timezone, but I just couldn’t resist when I 
 The basic concept, not terribly new by the way, is that browser proxy settings cannot be enforced on browser plugins, which happily ignore them in some circumstances, e.g. when establishing a direct TCP socket connection.
  So if you’re using a proxy to hide your internet address (like [Tor](http://tor.eff.org) users do), embeddable objects like Java applets can betray you, revealing your real identity to advertisers spying on your habits or, worse, to the police of a repressive state.
 
-This caveat has been preached even [on the Tor download page](http://tor.eff.org/download.html.en#Warning) itself, but nothing better than some [scary demos]() to convert the non believers.
+This caveat has been preached even [on the Tor download page](http://tor.eff.org/download.html.en#Warning) itself, but nothing better than some scary demos to convert the non believers.
 
 RSnake’s interesting [proof of concept](http://ha.ckers.org/weird/tor.cgi) exploits JavaScript + LiveConnect , and it apparently works on Gecko-based browser with Java™ installed only. I didn’t manage to make it work on Opera, even though it does support LiveConnect.
 

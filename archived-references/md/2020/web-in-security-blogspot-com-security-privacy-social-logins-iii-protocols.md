@@ -76,12 +76,10 @@ It turned out that the postMessage API is commonly used in real-world SSO implem
 
 Identity Providers (IdPs) use "zero-click" authentication flows to automatically sign in the user on the Service Provider (SP) once it is logged in on the IdP and has consented. We show that these flows can harm user privacy and enable new targeted deanonymization attacks of the user's identity.
 
-- [Introduction to XS-Leaks in Single Sign-On]()
-- [XS-Leaks in Single Sign-On: Account Leakage Attack]()
-- [XS-Leaks in Single Sign-On: Identity Leakage Attack]()
-- [Automatic Sign-In and Session Management Practices in the Wild]()
-
-[]()
+- Introduction to XS-Leaks in Single Sign-On
+- XS-Leaks in Single Sign-On: Account Leakage Attack
+- XS-Leaks in Single Sign-On: Identity Leakage Attack
+- Automatic Sign-In and Session Management Practices in the Wild
 
 ## Introduction to XS-Leaks in Single Sign-On
 
@@ -123,7 +121,7 @@ With the account leakage attack, the attacker can determine whether the victim h
 
 The attack idea is simple: Let's assume the attacker wants to know whether the victim has an account on SP `sp.com` with the IdP `idp.com`. The attacker first tricks the victim into visiting its malicious website `attacker.com`. We further assume that the victim has an active session on the IdP. Then, the attacker constructs an Authentication Request URL, as shown in the figure below. Note that the SP `sp.com` has the `client_id=superSecretClient` on the IdP, the `redirect_uri` is set to `sp.com/redirect`, and the `prompt=none` parameter is set.
 
-From the attacker's website, a cross-origin `Fetch` request is sent to that URL as shown [before](). If the `prompt=none` flow is requested with established consent on the SP, the IdP returns the Authentication Response as an `HTTP/302` redirect to the `redirect_uri`. If the victim has not granted the SP's consent, the IdP returns the consent page with an `HTTP/200` response and asks the user to grant the consent. Thus, based on whether the victim has or has not an account on `sp.com`, the IdP returns an `HTTP/302` redirect or an `HTTP/200` response. Although the Same Origin Policy prevents us from viewing the response from `idp.com`, we can use the XS-Leak to detect whether a redirect was performed or not. If a redirect was performed, the victim has an account on `sp.com` with the IdP. If no redirect was performed, the victim has no account.
+From the attacker's website, a cross-origin `Fetch` request is sent to that URL as shown before. If the `prompt=none` flow is requested with established consent on the SP, the IdP returns the Authentication Response as an `HTTP/302` redirect to the `redirect_uri`. If the victim has not granted the SP's consent, the IdP returns the consent page with an `HTTP/200` response and asks the user to grant the consent. Thus, based on whether the victim has or has not an account on `sp.com`, the IdP returns an `HTTP/302` redirect or an `HTTP/200` response. Although the Same Origin Policy prevents us from viewing the response from `idp.com`, we can use the XS-Leak to detect whether a redirect was performed or not. If a redirect was performed, the victim has an account on `sp.com` with the IdP. If no redirect was performed, the victim has no account.
 
 [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDilSOsoGZq0vdxbbgCHz-RNRCvccPiP1zzsC4i4fpXpctWMlzqZUTH2g8kx7t-buI_GKDzX9a-5YCNwemCC8c87wLJaIiM_fyLafJnYB-YWAcRoggjCEbGcMUfSRz3ggmhD4p37pxp7Y4/w640-h198/5_xsleak_account.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDilSOsoGZq0vdxbbgCHz-RNRCvccPiP1zzsC4i4fpXpctWMlzqZUTH2g8kx7t-buI_GKDzX9a-5YCNwemCC8c87wLJaIiM_fyLafJnYB-YWAcRoggjCEbGcMUfSRz3ggmhD4p37pxp7Y4/s1225/5_xsleak_account.png)
 

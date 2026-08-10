@@ -289,9 +289,7 @@ Until next time.
 
 ---
 
-**
  Author:****
- **
 
 **Frans Rosén**
  Knowledge Advisor

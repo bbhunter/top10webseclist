@@ -123,6 +123,6 @@ Please note that you can use any kind of URL that points to a HTTP auth protecte
 
 Display comments as ([Linear](http://blog.php-security.org/index.php?url=archives/56-Bruteforcing-HTTP-Auth-in-Firefox-with-JavaScript.html&serendipity[cview]=linear#comments) | Threaded)
 
- []()  []()  []()  []()  []()
+         
 
  |    |

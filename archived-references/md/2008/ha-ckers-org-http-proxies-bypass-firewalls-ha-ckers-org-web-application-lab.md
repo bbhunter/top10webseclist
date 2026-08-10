@@ -80,7 +80,7 @@ The first scenario is what most bad guys use proxies for. They connect back out 
 
 If there are internal machines with critical vulnerabilities on them, the proxy can be used to connect back into that network, to exploit those vulnerabilities which may give a bigger foothold or uncover other sensitive information. If you haven’t scanned your own network for open proxies, you probably should. This is yet another reason to limit what your web servers have access to within your own networks.
 
-  This entry was posted on Tuesday, May 20th, 2008 at 7:38 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Tuesday, May 20th, 2008 at 7:38 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

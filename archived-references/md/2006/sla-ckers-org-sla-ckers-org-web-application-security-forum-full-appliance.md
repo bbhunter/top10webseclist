@@ -113,7 +113,7 @@ Date: November 17, 2006 01:20PM
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -132,7 +132,7 @@ One problem though: any site with embedded script like for(i=0;i<10;i++) gets ch
  Don't forget our IRC: irc://irc.irchighway.net/#slackers
  -[WhiteAcid](http://www.whiteacid.org) - your friendly, very lazy, web developer
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -148,7 +148,7 @@ Date: November 17, 2006 05:38PM
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -176,7 +176,7 @@ Date: November 17, 2006 07:09PM
 
  Edited 2 time(s). Last edit at 11/17/2006 07:14PM by br0ken.
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -200,7 +200,7 @@ Date: November 17, 2006 07:43PM
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -210,7 +210,7 @@ Date: November 18, 2006 05:41AM
 
  Though, excellent find! whish i had more time on my hands to look at it more closely.
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -222,7 +222,7 @@ Date: November 20, 2006 10:44AM
 
  Edited 1 time(s). Last edit at 12/12/2006 06:14AM by ChristPuncher.
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -249,7 +249,7 @@ Date: November 20, 2006 11:49AM
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -261,7 +261,7 @@ Date: November 20, 2006 01:24PM
 
  Edited 1 time(s). Last edit at 12/12/2006 06:15AM by ChristPuncher.
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -280,7 +280,7 @@ Date: November 20, 2006 02:41PM
 
  Edited 1 time(s). Last edit at 11/29/2006 05:50AM by maluc.
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -293,7 +293,7 @@ Date: November 28, 2006 09:11AM
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -306,7 +306,7 @@ Date: November 28, 2006 09:12AM
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -319,7 +319,7 @@ Date: November 28, 2006 09:43AM
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -331,7 +331,7 @@ Date: November 28, 2006 03:10PM
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -343,7 +343,7 @@ Date: November 28, 2006 04:35PM
 
  -id
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -356,7 +356,7 @@ Date: November 28, 2006 05:11PM
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -371,7 +371,7 @@ Date: November 28, 2006 05:43PM
  ----------
  'Just because you got the bacon, lettuce, and tomato don't mean I'm gonna give you my toast.'
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -393,7 +393,7 @@ Date: November 28, 2006 07:53PM
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -414,7 +414,7 @@ Date: November 28, 2006 09:27PM
 
  Edited 1 time(s). Last edit at 11/28/2006 09:37PM by digi7al64.
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -428,7 +428,7 @@ Date: November 29, 2006 05:05AM
 
  Edited 2 time(s). Last edit at 11/29/2006 05:08AM by jungsonn.
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -453,7 +453,7 @@ the meta tag..  <meta http-equiv="Content-Type" content="text/html; charset=utf-
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -463,7 +463,7 @@ Date: November 29, 2006 12:11PM
 
  Thanx maluc, that's much info to read.
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -474,7 +474,7 @@ Date: December 01, 2006 04:13PM
  [[www.us-cert.gov](http://www.us-cert.gov/current/#gleaplnvl)]
  [[digg.com](http://digg.com/security/Homeland_Security_Vulnerability_in_Google_Search_Appliance_and_Google_Mini)]
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -487,7 +487,7 @@ Date: December 03, 2006 07:48PM
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -499,7 +499,7 @@ Date: December 04, 2006 12:19AM
 
  :)
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -515,7 +515,7 @@ Date: December 04, 2006 11:36AM
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -530,7 +530,7 @@ Date: December 05, 2006 05:29PM
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -543,7 +543,7 @@ Date: December 05, 2006 05:31PM
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -557,7 +557,7 @@ Date: December 05, 2006 05:43PM
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -569,6 +569,6 @@ Date: December 09, 2006 09:01AM
 
  Edited 1 time(s). Last edit at 12/09/2006 09:03AM by unsticky.
 
- []()
+ 
 
 Sorry, only registered users may post in this forum.

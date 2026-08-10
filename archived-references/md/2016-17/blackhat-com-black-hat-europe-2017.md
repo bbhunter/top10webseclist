@@ -62,91 +62,91 @@ Black Hat Europe 2017 | Briefings
 
 ## briefings
 
-- [Lillian Ablon]()
-- [Andy Applebaum]()
-- [Fernando Arnaboldi]()
-- [David Atch]()
-- [Jared Atkinson]()
-- [Arnaud Bannier]()
-- [Max Bazaliy]()
-- [Sheila Berta]()
-- [Andrés Blanco]()
-- [Pepijn Bruienne]()
-- [Sonia Burney]()
-- [Leon Böck]()
-- [Phuong Cao]()
-- [Shuo Chen]()
-- [Lei Cheng]()
-- [Sharon Conheady]()
-- [Andrea Continella]()
-- [Jake Corina]()
-- [Joshua Crumbaugh]()
-- [Stefano D'Alessio]()
-- [Sergio De Los Santos]()
-- [Adam Donenfeld]()
-- [Ayoub Elaassal]()
-- [Mark Ermolov]()
-- [Eric Filiol]()
-- [Lorenzo Fontana]()
-- [Maxim Goryachy]()
-- [Fabio Gritti]()
-- [Avital Grushcovski]()
-- [Lion Gu]()
-- [Shuang Hao]()
-- [Saurabh Harit]()
-- [Sean Heelan]()
-- [Ravishankar Iyer]()
-- [Min-Chang Jang]()
-- [Shankar Karuppayah]()
-- [Eugene Kogan]()
-- [John Kozyrakis]()
-- [Vladimir Kropotov]()
-- [Kyoung-ju Kwak]()
-- [George Lashenko]()
-- [Antti Levomäki]()
-- [Tal Liberman]()
-- [Andreas Lindh]()
-- [HC MA]()
-- [Aravind Machiry]()
-- [Debasish Mandal]()
-- [Sebastiano Mariani]()
-- [Brent Maynard]()
-- [Matt McCutchen]()
-- [Daniel Mende]()
-- [Maxime Meyer]()
-- [Douglas Miller]()
-- [Jeff Moss]()
-- [Shawn Moyer]()
-- [Collin Mulliner]()
-- [Max Mühlhäuser]()
-- [Olli-Pekka Niemi]()
-- [Chris Painter]()
-- [Mario Polino]()
-- [Shaz Qadeer]()
-- [Loïc Rouch]()
-- [Joanna Rutkowska]()
-- [Chris Salls]()
-- [Hendrik Schmidt]()
-- [Ory Segal]()
-- [Ben Seri]()
-- [Simha Sethumadhavan]()
-- [Chi-en (Ashley) Shen]()
-- [Yan Shoshitaishvili]()
-- [Elad Shuster]()
-- [Dmitry Sklyarov]()
-- [Rich Smith]()
-- [Salvatore Stolfo]()
-- [Adrian Tang]()
-- [Chris Thompson]()
-- [Mathy Vanhoef]()
-- [Emmanouil Vasilomanolakis]()
-- [Gregory Vishnepolsky]()
-- [Robby Winchester]()
-- [Jan Helge Wolf]()
-- [David Wong]()
-- [Fyodor Yarochkin]()
-- [Stefano Zanero]()
-- [Yakun Zhang]()
+- Lillian Ablon
+- Andy Applebaum
+- Fernando Arnaboldi
+- David Atch
+- Jared Atkinson
+- Arnaud Bannier
+- Max Bazaliy
+- Sheila Berta
+- Andrés Blanco
+- Pepijn Bruienne
+- Sonia Burney
+- Leon Böck
+- Phuong Cao
+- Shuo Chen
+- Lei Cheng
+- Sharon Conheady
+- Andrea Continella
+- Jake Corina
+- Joshua Crumbaugh
+- Stefano D'Alessio
+- Sergio De Los Santos
+- Adam Donenfeld
+- Ayoub Elaassal
+- Mark Ermolov
+- Eric Filiol
+- Lorenzo Fontana
+- Maxim Goryachy
+- Fabio Gritti
+- Avital Grushcovski
+- Lion Gu
+- Shuang Hao
+- Saurabh Harit
+- Sean Heelan
+- Ravishankar Iyer
+- Min-Chang Jang
+- Shankar Karuppayah
+- Eugene Kogan
+- John Kozyrakis
+- Vladimir Kropotov
+- Kyoung-ju Kwak
+- George Lashenko
+- Antti Levomäki
+- Tal Liberman
+- Andreas Lindh
+- HC MA
+- Aravind Machiry
+- Debasish Mandal
+- Sebastiano Mariani
+- Brent Maynard
+- Matt McCutchen
+- Daniel Mende
+- Maxime Meyer
+- Douglas Miller
+- Jeff Moss
+- Shawn Moyer
+- Collin Mulliner
+- Max Mühlhäuser
+- Olli-Pekka Niemi
+- Chris Painter
+- Mario Polino
+- Shaz Qadeer
+- Loïc Rouch
+- Joanna Rutkowska
+- Chris Salls
+- Hendrik Schmidt
+- Ory Segal
+- Ben Seri
+- Simha Sethumadhavan
+- Chi-en (Ashley) Shen
+- Yan Shoshitaishvili
+- Elad Shuster
+- Dmitry Sklyarov
+- Rich Smith
+- Salvatore Stolfo
+- Adrian Tang
+- Chris Thompson
+- Mathy Vanhoef
+- Emmanouil Vasilomanolakis
+- Gregory Vishnepolsky
+- Robby Winchester
+- Jan Helge Wolf
+- David Wong
+- Fyodor Yarochkin
+- Stefano Zanero
+- Yakun Zhang
 
 # briefings - December 6 & 7
 
@@ -154,9 +154,9 @@ Black Hat Europe 2017 | Briefings
 
 ---
 
- []()[]()
+ 
 
-## [Diplomacy and Combating Evolving International Cyber Threats]()
+## Diplomacy and Combating Evolving International Cyber Threats
 
 Governments and high-level executives have transitioned from seeing both policy and technical cyber threats as solely technical issues to core issues of national security, economic policy, human rights and, ultimately, foreign policy. Drawing on experience at the U.S. Department of Justice, at the White House, and finally at the U.S. State Department, I will detail the evolving cyber landscape and growing efforts to counter cyber threats internationally. I will focus on the emerging field of international "cyber diplomacy" and reveal how these tools have been used in particular cases as well as to counter larger policy threats posed by repressive regimes. I'll also outline efforts to promote norms (rules of the road) in cyberspace and the role of attribution and deterrence. Finally, I will examine challenges that lie ahead and the need for the policy and technical communities to work together globally to meet those challenges.
 
@@ -166,9 +166,9 @@ Governments and high-level executives have transitioned from seeing both policy 
 
 ---
 
- []()[]()
+ 
 
-## [Security Through Distrusting]()
+## Security Through Distrusting
 
 There are different approaches to making (computer) systems (reasonably) secure and trustworthy:
 
@@ -192,9 +192,9 @@ In this talk, based on my prior work as both offensive researcher in the past, a
 
 ---
 
- []()[]()[]()
+ 
 
-## [A Process is No One: Hunting for Token Manipulation]()
+## A Process is No One: Hunting for Token Manipulation
 
 Does your organization want to start Threat Hunting, but you're not sure how to begin? Most people start with collecting ALL THE DATA, but data means nothing if you're not able to analyze it properly. This talk begins with the often overlooked first step of hunt hypothesis generation which can help guide targeted collection and analysis of forensic artifacts. We will demonstrate how to use the MITRE ATTACK Framework and our five-phase Hypothesis Generation Process to develop actionable hunt processes, narrowing the scope of your Hunt operation and avoiding "analysis paralysis." We will then walk through a detailed case study of detecting access token impersonation/manipulation from concept to technical execution by way of the Hypothesis Generation Process. Along the way, we will detail some of the most common access token manipulations in use and detail the defensive detection implications for each of these cases. This comprehensive case study will better arm both attackers and defenders with how to better utilize their toolset to detect or avoid detection of token theft and manipulation.
 
@@ -206,9 +206,9 @@ Does your organization want to start Threat Hunting, but you're not sure how to 
 
 ---
 
- []()[]()
+ 
 
-## [A Universal Controller to Take Over a Z-Wave Network]()
+## A Universal Controller to Take Over a Z-Wave Network
 
 With the advent of Internet-of-Things, Z-Wave is a major communication protocol for home automation systems. Z-Wave devices have to satisfy end-users convenience and thus are plug-and-play. Additionally, high market competitiveness leads to short development cycle, pushing aside security requirements.
 
@@ -226,9 +226,9 @@ With the advent of Internet-of-Things, Z-Wave is a major communication protocol 
 
 ---
 
- []()[]()[]()
+ 
 
-## [Attacking NextGen Roaming Networks]()
+## Attacking NextGen Roaming Networks
 
 Weaknesses of SS7 Roaming Networks are well known – but what about the Diameter interfaces coming up at the moment? Diameter is and will be used for roaming connections of LTE/LTE-A mobile networks - a new architecture, and a new implementation. But still, one remains the same: it is a AAA protocol designed for trusted environments - roaming interconnection interfaces between providers.
 
@@ -246,9 +246,9 @@ Weaknesses of SS7 Roaming Networks are well known – but what about the Diamete
 
 ---
 
- []()[]()
+ 
 
-## [Attacks Against GSMA's M2M Remote Provisioning]()
+## Attacks Against GSMA's M2M Remote Provisioning
 
 GSMA is investigating, developing and standardizing an embedded SIM card with remote provisioning (that is, over-the-air installation of subscription data), called an eUICC, to improve the current mobile-phone subscription model. In this presentation, we will review remote-provisioning security mechanisms and show that these mechanisms are vulnerable to attacks that prevent network operators from providing service, in particular, we:
 
@@ -266,9 +266,9 @@ These attacks arise from flaws in the specification, and we will discuss fixes t
 
 ---
 
- []()[]()[]()
+ 
 
-## [Automatic Discovery of Evasion Vulnerabilities Using Targeted Protocol Fuzzing]()
+## Automatic Discovery of Evasion Vulnerabilities Using Targeted Protocol Fuzzing
 
 Network protocol normalization and reassembly is the basis of traffic inspection performed by NGFW and IPS devices. Even common network protocols are complex with multiple possible interpretations for the same traffic sequence. We present a novel method for automated discovery of errors in traffic normalization by targeted protocol stack fuzzing. These errors can be used by attackers to evade detection and bypass security devices. We will demonstrate the techniques against up-to-date security devices and show that many security devices still have basic evasion vulnerabilities. The tools used will be publicly available after this presentation.
 
@@ -280,9 +280,9 @@ Network protocol normalization and reassembly is the basis of traffic inspection
 
 ---
 
- []()[]()[]()
+ 
 
-## [Becoming You: A Glimpse into Credential Abuse]()
+## Becoming You: A Glimpse into Credential Abuse
 
 In recent years, security threats have exponentially increased, as have the potential solutions to detect and mitigate these threats. The question often is, where in the workflow to deploy respective detection and mitigation strategies that are risk averse while maintaining efficacy. For a given strategy, the idea is to observe the request workflow to determine how the request presents itself in terms of headers and other attributes that describe the request, how the client processes the challenge questions, and how the request is managed accordingly. Detection is managing things we know such as partner bots, aggregators, and search engines. Detection strategies include both request and session anomalies, and more specifically, session tracking, rate detection, workflow validation, behavioral detection, fingerprint anomalies, header anomalies, and cookie validation. Mitigation strategies include alternate actions such as static content and/or honey pots, deny, request rate modification, and tarpit actions using session black-holing. In this talk, we discuss how to detect and mitigate vulnerabilities using CDNs or existing back end platform architecture. CDN based technology helps to offload security protection during request flow versus relying solely on the origin. With or without CDN specific functionality, platform techniques helps to manage security at the earliest point in the request flow across all nodes within the back end architecture in order to correlate data amongst nodes based on attributes and reputational intelligence to provide actionable data to the system.
 
@@ -294,9 +294,9 @@ In recent years, security threats have exponentially increased, as have the pote
 
 ---
 
- []()[]()[]()
+ 
 
-## [BlueBorne - A New Class of Airborne Attacks that can Remotely Compromise Any Linux/IoT Device]()
+## BlueBorne - A New Class of Airborne Attacks that can Remotely Compromise Any Linux/IoT Device
 
 The thought of a cyber attack spreading through the air like a plague was only a distant fear, until recently. This year, the airborne attack surface emerged, with significant vulnerabilities found in prominent wireless protocols - first Wi-Fi, and now Bluetooth, in the recently identified BlueBorne attack. In this talk we will present the ramifications of airborne attacks, which bypass all current security measures and provide hackers with a contagious attack, capable of jumping over "air-gapped" networks and allow easy full remote code execution on devices from every major OS. We will demonstrate two out of eight zero-day exploits we've found in the Bluetooth stacks of Linux, Android, Windows, and iOS. We will show how easy it is to infect devices ranging from ordinary PCs to the emerging realm of IoT devices, requiring no user interaction, and nothing more than an active Bluetooth.
 
@@ -312,9 +312,9 @@ The thought of a cyber attack spreading through the air like a plague was only a
 
 ---
 
- []()[]()
+ 
 
-## [Breaking Bad: Stealing Patient Data Through Medical Devices]()
+## Breaking Bad: Stealing Patient Data Through Medical Devices
 
 This talk discusses the risks of connected healthcare devices. It looks at the benefits of adopting IoT for medical devices, current exposure, common communication channels in use as well as interconnectivity approaches used with other critical components. Based off output from security assessments performed against medical devices widely deployed at various hospitals and medical institutions, I will present an in-depth analysis of the target medical device and elaborate on how I was able to compromise it to gain access to plethora of medical records from all the medical institutions it was deployed at and not just the one where our target device was hosted.
 
@@ -330,9 +330,9 @@ This talk discusses the risks of connected healthcare devices. It looks at the b
 
 ---
 
- []()[]()[]()
+ 
 
-## [Breaking Out HSTS (and HPKP) on Firefox IE/Edge and (Possibly) Chrome]()
+## Breaking Out HSTS (and HPKP) on Firefox IE/Edge and (Possibly) Chrome
 
 Observing Microsoft's reports, the Edge browser - and its previous version, Internet Explorer - supports HSTS (HTTP Strict Transport Security) beginning with IE 11 over Windows 7, 8.1 and 10. However, official technical documentation does not exist about how this system works in the browser, how the data is saved nor any other information. Likewise, there is no official documentation about how Firefox and Chrome implement it.
 
@@ -350,9 +350,9 @@ Observing Microsoft's reports, the Edge browser - and its previous version, Inte
 
 ---
 
- []()[]()[]()
+ 
 
-## [By-design Backdooring of Encryption System - Can We Trust Foreign Encryption Algorithms]()
+## By-design Backdooring of Encryption System - Can We Trust Foreign Encryption Algorithms
 
 Recent years have shown that more than ever governments and intelligence agencies strive to control and bypass the cryptographic means used for the protection of data and communications. Backdooring encryption algorithms is considered as the best way to enforce cryptographic control. Until now, only implementation backdoors (at the protocol/implementation/management level) are generally considered. In this paper we propose to address the most critical issue of backdoors: mathematical backdoors or by-design backdoors, which are put directly at the mathematical design of the encryption algorithm. While the algorithm may be totally public, proving that there is a backdoor, identifying it and exploiting it, may be an intractable problem.
 
@@ -368,9 +368,9 @@ Recent years have shown that more than ever governments and intelligence agencie
 
 ---
 
- []()[]()[]()
+ 
 
-## [CALDERA: Automating Adversary Emulation]()
+## CALDERA: Automating Adversary Emulation
 
 Adversarial assessment of a network is a critical part of securing and hardening it; done successfully, an adversarial assessment will replicate the techniques of an adversary in a realistic way. Instead of exclusively leveraging exploits, real adversaries tend to take advantage of existing, benign system functionality during their post-compromise operations. This behavior is codified in MITRE's Adversarial Tactics, Techniques, and Common Knowledge (ATT&CK;); a knowledge base of post-compromise actions of advanced persistent threats. ATT&CK; shifts the defensive focus from software patch levels, security controls, and known threat indicators to understanding and defending against common adversary behaviors.
 
@@ -388,9 +388,9 @@ Adversarial assessment of a network is a critical part of securing and hardening
 
 ---
 
- []()[]()[]()[]()
+ 
 
-## [CLKSCREW: Exposing the Perils of Security-Oblivious Energy Management]()
+## CLKSCREW: Exposing the Perils of Security-Oblivious Energy Management
 
 The need for power and energy-efficient computing has resulted in aggressive cooperative hardware-software energy management mechanisms on modern commodity devices. Most systems today, for example, allow software to control the frequency and voltage of the underlying hardware at a very fine granularity to extend battery life. Despite their benefits, these software-exposed energy management mechanisms pose grave security implications that have not been studied before.
 
@@ -404,9 +404,9 @@ The need for power and energy-efficient computing has resulted in aggressive coo
 
 ---
 
- []()[]()
+ 
 
-## [Dealing the Perfect Hand - Shuffling Memory Blocks on z/OS]()
+## Dealing the Perfect Hand - Shuffling Memory Blocks on z/OS
 
 Follow me on a journey where we pwn one of the most secure platforms on earth. A giant mammoth that still powers the most critical business functions around the world: The Mainframe! Be it a wire transfer, an ATM withdrawal, or a flight booking, you can be sure that you've used the trusted services of a Mainframe at least once during the last 24 hours. In this talk, I will present methods of privilege escalation on IBM z/OS: How to leverage a simple access to achieve total control over the machine and impersonate other users. If you are interested in mainframes or merely curious to see a what memory manipulation looks like on z/OS, you are welcome to tag along.
 
@@ -418,9 +418,9 @@ Follow me on a journey where we pwn one of the most secure platforms on earth. A
 
 ---
 
- []()[]()[]()[]()[]()[]()
+ 
 
-## [DIFUZZing Android Kernel Drivers]()
+## DIFUZZing Android Kernel Drivers
 
 As the rest of the Android security infrastructure improves, the Android/Linux kernel is well on its way to becoming the "weakest link," being responsible for a higher and higher fraction of vulnerabilities [1]. Most of these vulnerabilities are in kernel driver code, as this driver code is often maintained by third parties and gets less scrutiny than the kernel itself.
 
@@ -444,9 +444,9 @@ As the rest of the Android security infrastructure improves, the Android/Linux k
 
 ---
 
- []()[]()[]()[]()
+ 
 
-## [Enraptured Minds: Strategic Gaming of Cognitive Mindhacks]()
+## Enraptured Minds: Strategic Gaming of Cognitive Mindhacks
 
 There is no spoon! We live in the Matrix and no information can be trusted without validation. Content promotion services have been available in the grey market for some time, but the Fake News Phenomena did not gain public attention until a number of media outlets argued that several elections were heavily influenced by fake news. In this presentation, we will demonstrate tools and methods available to public mind manipulators, and walk through a selection of previous research, including USSR's study on public control and a Chinese study on crisis management. Moreover, we take Twitter posts as examples to demonstrate how significant social events are used by malefactors to promote their own agenda. We will also demonstrate a number of techniques used by cyber propaganda perpetrators, as well as how to detect their activities. To conclude, we will visit several underground markets to see how the services facilitate opinion manipulation.
 
@@ -458,9 +458,9 @@ There is no spoon! We live in the Matrix and no information can be trusted witho
 
 ---
 
- []()[]()[]()
+ 
 
-## [Exfiltrating Reconnaissance Data from Air-Gapped ICS/SCADA Networks]()
+## Exfiltrating Reconnaissance Data from Air-Gapped ICS/SCADA Networks
 
 Air-gapped industrial networks are assumed to be impenetrable because they are disconnected from the Internet and even from corporate IT networks. However, there are multiple ways that attackers can deploy malware to an air-gapped network, including compromising vendor update mechanisms or infecting USB drives or laptops of third-party contractors who connect directly to the air-gapped network for maintenance purposes.
 
@@ -480,9 +480,9 @@ Air-gapped industrial networks are assumed to be impenetrable because they are d
 
 ---
 
- []()[]()
+ 
 
-## [Exposing Hidden Exploitable Behaviors in Programming Languages Using Differential Fuzzing]()
+## Exposing Hidden Exploitable Behaviors in Programming Languages Using Differential Fuzzing
 
 Securely developed applications may have unidentified vulnerabilities in the underlying programming languages. Attackers can target these programming language flaws to alter applications' behavior. This means applications are only as secure as the programming languages parsing the code.
 
@@ -500,9 +500,9 @@ Securely developed applications may have unidentified vulnerabilities in the und
 
 ---
 
- []()[]()
+ 
 
-## [Fed Up Getting Shattered and Log Jammed? A New Generation of Crypto is Coming]()
+## Fed Up Getting Shattered and Log Jammed? A New Generation of Crypto is Coming
 
 The SHA-3 standard came out in 2015 including the new hash function SHA-3 itself (based on a sponge construction) as well as SHAKE, a new kind of hash function called XOF. This talk will first go over these two modern algorithms, and will then introduce the other standardized functions derived from SHA-3 (KMAC, TupleHash, ParallelHash) and the more mature, modern and faster hash functions based on SHA-3: KangarooTwelve and MarsupilamiFourteen. The second part of the talk will focus on cryptographic protocols created out of SHA-3: Strobe, a symmetric protocol to protect traffic which only relies on SHA-3 as its core cryptographic function; Disco, a Noise (TLS-like) protocol and library leveraging SHA-3's properties to minimize the number of cryptographic primitives, reduce the code size, simplify the logic and increase the capabilities (hashing, generation of random numbers, derivation of keys, signing, encryption, authentication).
 
@@ -514,9 +514,7 @@ The SHA-3 standard came out in 2015 including the new hash function SHA-3 itself
 
 ---
 
- []()[]()
-
-##
+ 
 
 The European Union's General Data Protection Regulation (GDPR) is set to go into effect in a matter of months, and already it is having a profound effect. Under GDPR rules, companies that collect or store data belonging to EU citizens or entities are required to provide top-notch privacy and security to protect that data; otherwise they could could face huge fines – as large as €20m.
 
@@ -534,9 +532,9 @@ The European Union's General Data Protection Regulation (GDPR) is set to go into
 
 ---
 
- []()[]()
+ 
 
-## [Heap Layout Optimisation for Exploitation]()
+## Heap Layout Optimisation for Exploitation
 
 Heap-based overflows and underflows are a common vulnerability in software built in C and C++. When leveraging such a vulnerability as part of an exploit, an attacker will usually try to position the chunk which is the source of the overflow or underflow relative to a specific victim chunk. The less collateral data between the source chunk and the victim chunk, the more optimal the layout. This is typically a problem that is solved manually and requires an in-depth understanding of the heap allocator in use and how the target application interacts with it.
 
@@ -552,9 +550,9 @@ Heap-based overflows and underflows are a common vulnerability in software built
 
 ---
 
- []()[]()[]()[]()[]()[]()[]()[]()
+ 
 
-## [Hiding Pin's Artifacts to Defeat Evasive Malware]()
+## Hiding Pin's Artifacts to Defeat Evasive Malware
 
 Malware authors constantly develop new techniques in order to evade analysis systems. Previous works addressed attempts to evade analysis by means of anti-sandboxing and anti-virtualization techniques, for example proposing to run samples on bare-metal. However, state-of-the-art bare-metal tools fail to provide richness and completeness in the results of the analysis. In this context, Dynamic Binary Instrumentation (DBI) tools have become popular in the analysis of new malware samples because of the deep control they guarantee over the instrumented binary. In fact, in some specific scenarios (e.g., manual and automated reverse engineering) we need to fully monitor and control the analyzed binary.
 
@@ -572,9 +570,9 @@ Malware authors constantly develop new techniques in order to evade analysis sys
 
 ---
 
- []()[]()
+ 
 
-## [How Samsung Secures Your Wallet and How to Break It]()
+## How Samsung Secures Your Wallet and How to Break It
 
 Samsung launched its mobile payment service -- SamsungPay. For about two years, few discussion have been made public. In this talk, we will demystify every detail of SamsungPay implementation and security mechanism. In addition, we will discuss the way to bypass those obstacle that block analyzing.
 
@@ -586,9 +584,9 @@ Samsung launched its mobile payment service -- SamsungPay. For about two years, 
 
 ---
 
- []()[]()[]()
+ 
 
-## [How to Hack a Turned-Off Computer or Running Unsigned Code in Intel Management Engine]()
+## How to Hack a Turned-Off Computer or Running Unsigned Code in Intel Management Engine
 
 Intel Management Engine is a proprietary technology that consists of a microcontroller integrated into the Platform Controller Hub (PCH) microchip with a set of built-in peripherals. The PCH carries almost all communication between the processor and external devices; therefore Intel ME has access to almost all data on the computer, and the ability to execute third-party code allows compromising the platform completely. Researchers have been long interested in such "God mode" capabilities, but recently we have seen a surge of interest in Intel ME. One of the reasons is the transition of this subsystem to a new hardware (x86) and software (modified MINIX as an operating system) architecture. The x86 platform allows researchers to bring to bear all the power of binary code analysis tools.
 
@@ -604,9 +602,7 @@ Intel Management Engine is a proprietary technology that consists of a microcont
 
 ---
 
- []()[]()
-
-##
+ 
 
 This talk will be 50% real audio from a social engineering engagement and 50% lessons learned from the call. During this call I talk a VP at a bank into giving us full access to his computer as well as facilities. At one point during the call, the AV triggers (thanks to a junior submitting the payload to virustotal :)). This is an intense call with a ton of valuable lessons for any social engineer or defender looking to learn how to identify attacks.
 
@@ -618,9 +614,9 @@ This talk will be 50% real audio from a social engineering engagement and 50% le
 
 ---
 
- []()[]()[]()[]()[]()[]()
+ 
 
-## [I Trust My Zombies: A Trust-Enabled Botnet]()
+## I Trust My Zombies: A Trust-Enabled Botnet
 
 Defending against botnets has always been a cat and mouse game. Cyber-security researchers and government agencies attempt to detect and take down botnets by playing the role of the cat. In this context, a lot of work has been done towards reverse engineering certain variants of malware families as well as understanding the network protocols of botnets to identify their weaknesses (if any) and exploit them. While this is necessary, such an approach offers the botmasters the ability to quickly counteract the defenders by simply performing small changes in their arsenals.
 
@@ -634,9 +630,9 @@ Defending against botnets has always been a cat and mouse game. Cyber-security r
 
 ---
 
- []()[]()[]()
+ 
 
-## [Inside Android's SafetyNet Attestation]()
+## Inside Android's SafetyNet Attestation
 
 Many app developers often have questions like the following: "Is the device my app runs on reliable and trustworthy?" "Could it be, god forbid, 'rooted'?" It turns out that answering these questions is quite difficult. In an area traditionally dominated by "root detection" products and DIY techniques, Google attempts to respond to this request: "OK Google, what do you think about the device I'm running in?"
 
@@ -654,9 +650,9 @@ Many app developers often have questions like the following: "Is the device my a
 
 ---
 
- []()[]()
+ 
 
-## [Intel ME: Flash File System Explained]()
+## Intel ME: Flash File System Explained
 
 Intel Management Engine (ME) technology has been around for over 10 years (since 2005), but it seems impossible to find any official information about ME on the Internet. Fortunately, some studies have been published in recent years; however, all of them deal with ME 10 and earlier, while modern computers implement ME 11 (introduced in 2015 for Skylake microarchitecture). In our presentation, we explain in detail how ME 11.x stores its state on the flash and the other types of file systems that are supported by ME 11.x.
 
@@ -668,9 +664,9 @@ Intel Management Engine (ME) technology has been around for over 10 years (since
 
 ---
 
- []()[]()
+ 
 
-## [Jailbreaking Apple Watch]()
+## Jailbreaking Apple Watch
 
 On April 24, 2015, Apple launched themselves into the wearables category with the introduction of Apple Watch. This June, at Apple's Worldwide Developer Conference, Apple announced that their watch is not only the #1 selling smartwatch worldwide by far, but also announced the introduction of new capabilities that will come with the release of watchOS 4. Like other devices, Apple Watch can contain user data such as email and text messages, contacts, GPS and more, and like other devices and operating systems, has become a target for malicious activity.
 
@@ -684,9 +680,9 @@ On April 24, 2015, Apple launched themselves into the wearables category with th
 
 ---
 
- []()[]()
+ 
 
-## [Key Reinstallation Attacks: Breaking the WPA2 Protocol]()
+## Key Reinstallation Attacks: Breaking the WPA2 Protocol
 
 We introduce key reinstallation attacks. These attacks abuse features of a protocol to reinstall an already in-use key, thereby resetting
 
@@ -704,9 +700,9 @@ Finally, we confirmed our findings in practice, and found that every Wi-Fi devic
 
 ---
 
- []()[]()[]()[]()[]()
+ 
 
-## [Locknote: Conclusions and Key Takeaways from Black Hat Europe 2017]()
+## Locknote: Conclusions and Key Takeaways from Black Hat Europe 2017
 
 At the close of this year's conference, join Black Hat Founder Jeff Moss and members of the esteemed Black Hat Review Board for an insightful conversation on the most pressing issues facing the InfoSec community. This Locknote will feature a candid discussion on the key takeaways coming out of Black Hat Europe and how these trends will impact future InfoSec strategies.
 
@@ -716,9 +712,9 @@ At the close of this year's conference, join Black Hat Founder Jeff Moss and mem
 
 ---
 
- []()[]()[]()
+ 
 
-## [Lost in Transaction: Process Doppelgänging]()
+## Lost in Transaction: Process Doppelgänging
 
 Process Hollowing is a technique first introduced years ago by attackers to thwart the mitigation capabilities of security products. However, most of today's solutions are able to detect and prevent such notorious attacks. In this talk, we will present a new technique, dubbed Process Doppelgänging, which has similar advantages but is much harder to detect - let alone prevent. Moreover, we will expose inherent limitations in the implementations of modern AV/NGAV scanning engines.
 
@@ -734,9 +730,9 @@ Process Hollowing is a technique first introduced years ago by attackers to thwa
 
 ---
 
- []()[]()[]()[]()
+ 
 
-## [Nation-State Moneymule's Hunting Season – APT Attacks Targeting Financial Institutions]()
+## Nation-State Moneymule's Hunting Season – APT Attacks Targeting Financial Institutions
 
 Lazarus, Bluenoroff, and Andariel are three notorious APT groups from North Korea infamous for deconstruction, cyber heist, and espionage attacks. From DarkSeoul to Sony Picture Entertainment breach, the groups conducted several operations that have received international public attention.
 
@@ -752,9 +748,9 @@ Lazarus, Bluenoroff, and Andariel are three notorious APT groups from North Kore
 
 ---
 
- []()[]()[]()
+ 
 
-## [Passive Fingerprinting of HTTP/2 Clients]()
+## Passive Fingerprinting of HTTP/2 Clients
 
 HTTP/2 is the second major version of the HTTP protocol. It changes the way HTTP is transferred "on the wire" by introducing a full binary protocol that is made up of TCP connections, streams, and frames, rather than a plain-text protocol. Such a fundamental change from HTTP/1.x to HTTP/2, means that client-side and server-side implementations have to incorporate completely new code in order to support new HTTP/2 features. This introduces nuances in protocol implementations, which, in return, might be used to passively fingerprint web clients.
 
@@ -771,9 +767,9 @@ HTTP/2 is the second major version of the HTTP protocol. It changes the way HTTP
 
 ---
 
- []()[]()
+ 
 
-## [Red Team Techniques for Evading Bypassing and Disabling MS Advanced Threat Protection and Advanced Threat Analytics]()
+## Red Team Techniques for Evading Bypassing and Disabling MS Advanced Threat Protection and Advanced Threat Analytics
 
 Windows Defender Advanced Threat Protection is now available for all Blue Teams to utilize within Windows 10 Enterprise and Server 2012/16, which includes detection of post breach tools, tactics and techniques commonly used by Red Teams, as well as behavior analytics. Combined with Microsoft Advanced Threat Analytics for user behavior analytics across the Domain, Red Teamers will soon face a significantly more challenging time maintaining stealth while performing internal recon, lateral movement, and privilege escalation in Windows 10/Active Directory environments.
 
@@ -787,9 +783,9 @@ This talk highlights challenges to red teams posed by Microsoft's new tools base
 
 ---
 
- []()[]()
+ 
 
-## [Ro(o)tten Apples: Vulnerability Heaven in the iOS Sandbox]()
+## Ro(o)tten Apples: Vulnerability Heaven in the iOS Sandbox
 
 In modern days, no exploitation chain can be considered complete without a reliable privilege escalation vulnerability. This is why many security researchers spend a lot of their research time in finding those vulnerabilities. Apple has set a new standard in iOS security by implementing many innovative techniques to prevent exploitation of PE vulnerabilities, however despite their continuous efforts some areas of iOS still remain more exposed than others to this kind of vulnerabilities. This presentation will shed a light on some critical areas in the iOS kernel, that have been proven to contain many privilege escalation vulnerabilities that can potentially affect hundred of millions of iOS devices. In this talk, we will overview these yet unexplored areas and present a chain of vulnerabilities, leading to a complete kernel privilege escalation exploit while bypassing all the latest kernel mitigations Apple introduced.
 
@@ -801,9 +797,9 @@ In modern days, no exploitation chain can be considered complete without a relia
 
 ---
 
- []()[]()[]()[]()[]()[]()
+ 
 
-## [Self-Verifying Authentication – A Framework for Safer Integrations of Single-Sign-On Services]()
+## Self-Verifying Authentication – A Framework for Safer Integrations of Single-Sign-On Services
 
 SSO (single-sign-on) services, such as those provided by Facebook, Google and Microsoft Azure, are integrated into tens of millions of apps, websites and cloud services, just like the front door lock for every home. However, the integration practice is very ad-hoc: on one hand, protocol documentation and usage guides of SSO libraries are written by experts, who are like experienced "locksmiths"; one the other hand, most app/website programmers are not "locksmiths", and inevitably fall into many pitfalls due to misunderstandings of such informal documentation. Security bugs in SSO integrations are continuously discovered in the field, which leave the front door of the cloud wide-open for attackers. SSO bugs are the primary example when the Cloud Security Alliance ranked API integration bugs as the No. 4 top security threat. They have become a familiar theme in major security conferences, including BlackHat USA 2016 and BlackHat Europe 2016.
 
@@ -826,9 +822,9 @@ The talk is based on two published papers, but contains many new contents reflec
 
 ---
 
- []()[]()[]()
+ 
 
-## [The Apple of Your EFI: An Updated Analysis of the State of Apple's EFI Security Support]()
+## The Apple of Your EFI: An Updated Analysis of the State of Apple's EFI Security Support
 
 Duo Labs conducted an extensive data analysis on the state of Apple's EFI security from two main perspectives. The first was analysing all EFI updates released by Apple since OS X 10.10.0 through macOS 10.12.6 to fully characterise the security support provided across different Mac models and OS versions. This also provided a baseline for the "expected state" Mac systems should be in - this defined as the state the user would expect their Mac's software and firmware to be in after running the available updates. The second was an analysis across over 73,000 real-world Mac systems to compare the actual state of their EFI against the expected state.
 
@@ -846,9 +842,9 @@ Duo Labs conducted an extensive data analysis on the state of Apple's EFI securi
 
 ---
 
- []()[]()[]()
+ 
 
-## [The Great Escapes of VMWare: A Retrospective Case Study of VMWare G2H Escape Vulnerabilities]()
+## The Great Escapes of VMWare: A Retrospective Case Study of VMWare G2H Escape Vulnerabilities
 
 Virtual machine escape is the process of breaking out of the virtual machine and interacting with the host operating system. VMWare recently fixed several bugs in their products that were allowing malicious code to escape sandbox. Some of these issues were exploited and reported during exploitation contest and while others reported individually by researchers. For very obvious reason details of this bugs are undisclosed. This paper presents a case study of VMWare VM escape vulnerabilities based on the analysis of different patches released by VMWare in recent past.
 
@@ -872,9 +868,9 @@ Virtual machine escape is the process of breaking out of the virtual machine and
 
 ---
 
- []()[]()
+ 
 
-## [The Spear to Break the Security Wall of S7CommPlus]()
+## The Spear to Break the Security Wall of S7CommPlus
 
 In the past few years, attacks against industrial control systems (ICS) have increased year over year. Stuxnet in 2010 exploited the insecurity of the S7Comm protocol, the communication protocol used between Siemens Simatic S7 PLCs to cause serious damage in nuclear power facilities. After the exposure of Stuxnet, Siemens has implemented some security reinforcements into the S7Comm protocol. The current S7CommPlus protocol implementing encryption has been used in S7-1200 V4.0 and above, as well as S7-1500, to prevent attackers from controlling and damaging the PLC devices.
 
@@ -890,9 +886,9 @@ In the past few years, attacks against industrial control systems (ICS) have inc
 
 ---
 
- []()[]()
+ 
 
-## [Wi-Fi Direct to Hell: Attacking Wi-Fi Direct Protocol Implementations]()
+## Wi-Fi Direct to Hell: Attacking Wi-Fi Direct Protocol Implementations
 
 Today Wi-Fi is everywhere and is by far the most widely used wireless networking protocol. During the last years, Wi-Fi security research was mainly focused on WPA/WPA2 security mechanisms. But modern Wi-Fi firmware's and drivers support several protocols that could be targeted by attackers. This is the case of Wi-Fi P2P, also known as Wi-Fi Direct. This protocol provides with the ability to discover nearby devices and connect directly to each other via Wi-Fi without an intermediate access point.
 
@@ -906,9 +902,9 @@ Today Wi-Fi is everywhere and is by far the most widely used wireless networking
 
 ---
 
- []()[]()
+ 
 
-## [Zero Days Thousands of Nights: The Life and Times of Zero-Day Vulnerabilities and Their Exploits]()
+## Zero Days Thousands of Nights: The Life and Times of Zero-Day Vulnerabilities and Their Exploits
 
 Zero-day vulnerabilities and their exploits are useful in offensive operations as well as in defensive and academic settings.
 

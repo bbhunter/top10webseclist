@@ -68,11 +68,7 @@ Let Me Github That For You | Lands of Packets
 
 The Wayback Machine - https://web.archive.org/web/20170829190206/http://www.phenoelit.org:80/blog/archives/2012/12/21/let_me_github_that_for_you/index.html
 
-[]()
-
 ## Fri Dec 21 16:02:48 UTC 2012
-
-[]()
 
 ### Let Me Github That For You
 

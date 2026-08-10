@@ -71,8 +71,6 @@ Mohamed Benchikh
 
  `Tue 17 October 2023`
 
-##
-
 Introduction
 
 OAuth has become a linchpin for ensuring the safe and seamless exchange of user data between applications and services. With the rise of interconnected ecosystems and the demand for user-friendly experiences, OAuth has become ubiquitous, powering our interactions with social media platforms, cloud-based services, and a myriad of applications. However, the widespread use of OAuth also makes it an attractive target for malicious actors looking to exploit vulnerabilities and therefore ensuring the security of such protocol has taken on paramount significance. Within this context, the insidious threat of OAuth account takeover through app impersonation has emerged as a significant security concern for users and OAuth providers.
@@ -80,8 +78,6 @@ OAuth has become a linchpin for ensuring the safe and seamless exchange of user 
 This article delves deep into the complex underpinnings of this vulnerability pattern, shedding light on the intricate ways in which malicious actors can compromise user accounts, impersonate legitimate mobile applications, and abuse the OAuth protocol. By leveraging custom URL scheme hijacking, attackers can manipulate OAuth authentication flows, deceiving users into granting unauthorized access to their accounts and personal information. The consequences of such breaches can be far-reaching, including data breaches, financial losses, and reputational damage for both users and app providers.
 
 In response, this article aims to provide readers with a comprehensive understanding of this evolving threat, offering insights into the latest attack techniques, real-world examples, and, most importantly, guidance on how to identify and mitigate these risks.
-
-##
 
 How does OAuth work?
 
@@ -182,8 +178,6 @@ OAuth scopes can be customized for each implementation and don't have to follow 
 
 When used for authentication, OpenID Connect (OIDC) identity layer is usually used on top of OAuth, one of the most common scopes used during that is `openid profile`, where `openid` is mandatory to indicate that OIDC is being used, and `profile` is a predefined set of basic information about the user, like firstname, lastname, birthdate, email and more.
 
-##
-
 What can go wrong?
 
 Many security misconfigurations might arise from an insecure OAuth implementation, notably:
@@ -259,8 +253,6 @@ Putting all of this into practice, an attacker runs the following scenarios to e
 
 ![Figure 3: Scheme conflict diagram](https://blog.ostorlab.co/static/img/2023_10_12_one_protocol_to_rule_them_all/conflict_bypass_flow.png)
 
-**
-
 here is a breakdown of the figure above:
 
 1- **Malicious app installed, legit app is not:**
@@ -330,8 +322,6 @@ And finally:
 https://evil.website/zoom.us/google/oauth?&token=ENCRYPTED_TOKEN
 
 ```
-
-##
 
 OAuth Mobile App Impersonation: Exploitation
 
@@ -488,8 +478,6 @@ On the client application side, we have the following intent filter to receive t
 - **User interaction bypass**
 
 Similar to Google OAuth, Okta too has an OAuth parameter `login_hint` that when supplied with the target user email, it allows the malicious app to bypass user interaction (consent) and have a seamless flow.
-
-##
 
 Popular apps found vulnerable
 
@@ -716,8 +704,6 @@ Future<oauth2.Client> createClient() async {
 
 ```
 
-##
-
 Conclusion
 
 In conclusion, the threat of OAuth account takeover through mobile app impersonation using custom schemes is a pressing concern for both users and OAuth providers.
@@ -738,35 +724,35 @@ Table of Contents
 
 ---
 
-- [Introduction]()
-- [How does OAuth work?]()
+- Introduction
+- How does OAuth work?
 
-- [OAuth Roles]()
-- [OAuth Grant types]()
-- [OAuth Scopes]()
+- OAuth Roles
+- OAuth Grant types
+- OAuth Scopes
 
-- [What can go wrong?]()
+- What can go wrong?
 
-- [Missing state parameter leading to CSRF]()
-- [Exposed token in OAuth Implicit flow]()
-- [Flawed/missing scope validation]()
-- [OAuth grant leakage through loose redirect uri validation]()
-- [OAuth grant leakage through loopback addresses]()
-- [OAuth Mobile App Impersonation]()
-- [OAuth Mobile App Impersonation with intent URI bypass (Chrome-only)]()
+- Missing state parameter leading to CSRF
+- Exposed token in OAuth Implicit flow
+- Flawed/missing scope validation
+- OAuth grant leakage through loose redirect uri validation
+- OAuth grant leakage through loopback addresses
+- OAuth Mobile App Impersonation
+- OAuth Mobile App Impersonation with intent URI bypass (Chrome-only)
 
-- [OAuth Mobile App Impersonation: Exploitation]()
+- OAuth Mobile App Impersonation: Exploitation
 
-- [Google OAuth]()
-- [Facebook OAuth]()
-- [Amazon Cognito OAuth]()
-- [Okta OAuth]()
+- Google OAuth
+- Facebook OAuth
+- Amazon Cognito OAuth
+- Okta OAuth
 
-- [Popular apps found vulnerable]()
-- [Recommendation]()
+- Popular apps found vulnerable
+- Recommendation
 
-- [Android]()
-- [iOS]()
-- [Flutter]()
+- Android
+- iOS
+- Flutter
 
-- [Conclusion]()
+- Conclusion

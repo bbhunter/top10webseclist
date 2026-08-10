@@ -65,7 +65,7 @@ How to Conceal XSS Injection in HTML5 | samuli.hakoniemi.net
 
 The Wayback Machine - https://web.archive.org/web/20101224204903/http://samuli.hakoniemi.net/how-to-conceal-xss-injection-in-html5/
 
-- [(1) Skip to Content]()
+- (1) Skip to Content
 - [(2) home](https://web.archive.org/web/20101224204903/http://samuli.hakoniemi.net/)
 - [(3) blog](https://web.archive.org/web/20101224204903/http://samuli.hakoniemi.net/blog/)
 

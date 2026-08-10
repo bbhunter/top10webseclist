@@ -67,7 +67,7 @@ page going offline. To read the original, follow the link above.
 
 In this post, I dissect a common misconception about the `SameSite` cookie attribute and I explore its potential impact on Web security.
 
-## TL;DR [¶]()
+## TL;DR ¶
 
 - The `SameSite` cookie attribute is not well understood.
 - Conflating *site* and *origin* is a common but harmful mistake.
@@ -77,13 +77,13 @@ In this post, I dissect a common misconception about the `SameSite` cookie attri
 - `SameSite` paints a target on your subdomains’ back.
 - Misguided practitioners may unduly eschew `SameSite=Strict`.
 
-## The advent of `SameSite` [¶]()
+## The advent of `SameSite` ¶
 
 You undoubtedly have heard of the [`SameSite` cookie attribute](https://developer.mozilla.org/en-us/docs/Web/HTTP/Headers/Set-Cookie/SameSite). It made headlines when, in February 2020, Chrome started rolling out changes to `SameSite`’s default behaviour. Intended as a defence-in-depth mechanism against cross-site attacks, such as [cross-site request forgery (CSRF)](https://owasp.org/www-community/attacks/csrf) and [cross-site script inclusion (XSSI)](https://www.scip.ch/en/?labs.20160414), `SameSite` had been lying dormant at the heart of implementing browsers since [its inception in 2016](https://tools.ietf.org/html/draft-west-first-party-cookies-07).
 
 [`SameSite`’s activation in early 2020](https://blog.chromium.org/2020/02/samesite-cookie-changes-in-february.html) required labourious adjustments by some websites to maintain third-party access, but was widely hailed as a welcome addition to browser defences. Both in anticipation and in reaction to `SameSite`’s activation in browsers, posts started sprouting on blogs all over the Web to spread the word about the mechanics of the “new” cookie attribute.
 
-## Playing fast and loose with terminology [¶]()
+## Playing fast and loose with terminology ¶
 
 Some of those posts were of admirable precision, such as [Rowan Merewood](https://rowan.fyi)’s [web.dev piece](https://web.dev/samesite-cookies-explained/) entitled “SameSite cookies explained”. Unfortunately, relatively few of the posts about `SameSite` went through the effort of clarifying the concept of *site*, from which the technical concepts of *same-site request* and *cross-site request* are of course derived.
 
@@ -117,7 +117,7 @@ After the update, all cookies without an explicit `SameSite` attribute will be t
 
 *Domain*, *host*, *origin*, *site*… Using those terms loosely in informal communication is natural; such laxity in the use of terminology can be forgiven, and if you’ve been guilty of it yourself, you’re in good company.
 
-## Are “site” and “origin” interchangeable? [¶]()
+## Are “site” and “origin” interchangeable? ¶
 
 However, the advent of the `SameSite` cookie attribute raises some questions…
 
@@ -134,7 +134,7 @@ This lapse in terminology didn’t escape everyone. That Google’s *Developer A
 
 In order to understand why the distinction matters, you first need to understand the difference between *origin* and *site*.
 
-## What do we mean by “origin”? [¶]()
+## What do we mean by “origin”? ¶
 
 If you work with Web technologies, you have at least some familiarity with the [Same-Origin Policy (SOP)](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy), arguably one of the main pillars of Web security. The concept of *origin* of a URI is of course central to the SOP and, as such, it is relatively well-understood. [Section 3.2 of RFC 6454](https://tools.ietf.org/html/rfc6454#section-3.2) defines an *origin* as a triple:
 
@@ -144,7 +144,7 @@ Roughly speaking, two URIs are part of the same origin (i.e., represent the same
 
 The port is optional; if not specified, the default port associated to the scheme is implied (e.g. 80 for `http` and 443 for `https`). [MDN Web Docs](https://developer.mozilla.org/en-us/docs/Glossary/Origin) has a series of clarifying examples.
 
-## What do we mean by “site”? [¶]()
+## What do we mean by “site”? ¶
 
 Behind the painfully generic term that is “site” hides a concept fundamentally more difficult to grasp than that of *origin*. For one thing, the term “site” was not always a technical one: it predates the SOP and was in in common use [when attacks like cross-site scripting came onto the scene](https://blog.jeremiahgrossman.com/2006/07/origins-of-cross-site-scripting-xss.html). Furthermore, the modern concept of *site* is fraught with technical difficulties. It is intimately linked to that of a host’s *registrable domain*, which the [URL Living Standard](https://url.spec.whatwg.org/#host-registrable-domain) defines as
 
@@ -167,7 +167,7 @@ It’s worth noting, however, that the concept of registrable domain is a fluid 
 
 The technicalities do not end there! As [web.dev warns us](https://web.dev/schemeful-samesite/), the concept of *site* is still evolving and will soon incorporate the scheme also. The change currently sits behind a flag in Chrome but will soon be rolled out. However, to sidestep this difficulty and prolong the relevance of this post, I’ll only consider origins whose scheme is `https` in what follows.
 
-## Same-site vs. cross-site requests [¶]()
+## Same-site vs. cross-site requests ¶
 
 Now that we’ve dealt with the concept of *site*, we can finally discuss the concepts of *same-site* and *cross-site* requests. A given request is either *same-site* or *cross-site*. Whether a request is same-site or cross-site depends on the comparison between the sites of the request’s source origin and target origin:
 
@@ -182,7 +182,7 @@ Here are three examples:
 
 If you’ve made it this far down the present post, I thank you for your patience. Take heart: the payoff is near!
 
-## Cross-origin, same-site requests [¶]()
+## Cross-origin, same-site requests ¶
 
 All cross-site requests are necessarily cross-origin; that much is clear. However, as shown by the first and third examples above and as illustrated by the crude Venn diagram below, not all cross-origin requests are cross-site.
 
@@ -190,7 +190,7 @@ All cross-site requests are necessarily cross-origin; that much is clear. Howeve
 
 And the `SameSite` cookie attribute is only concerned with cross-site requests; it has no effect on cross-origin requests that happen to be same-site. This is why the distinction between *origin* and *site* is important.
 
-## Online demo [¶]()
+## Online demo ¶
 
 To prove my point, I’ve drawn inspiration from [Troy Hunt’s post](https://www.troyhunt.com/promiscuous-cookies-and-their-impending-death-via-the-samesite-policy/) and I’ve deployed a simple Go server to `samesitedemo.jub0bs.com` composed of two endpoints. Endpoint `/setcookie` sets a `SameSite=Strict` cookie, like so:
 
@@ -212,9 +212,9 @@ To fix ideas, here’s what you can do:
 - Navigate to [https://jub0bs.github.io/samesitedemo-attacker-foiled](https://jub0bs.github.io/samesitedemo-attacker-foiled) and follow the link on that page. Because the site of the attacking URI (`jub0bs.github.io`) is different from that of the target URI (`jub0bs.com`), the browser does not attach the cookie to the request resulting from following the link, and no cookie gets printed in the response. `SameSite=Strict` works as expected, and the “attack” is foiled.
 - Now navigate to [https://samesitedemo-attacker.jub0bs.com/](https://samesitedemo-attacker.jub0bs.com/) and follow the link on that page. Because the site of the attacking URI (`jub0bs.com`) is identical to that of the target URI (`jub0bs.com`), the browser *does* attach the cookie to the request resulting from following the link, and the cookie *does* get printed in the response. The `SameSite` cookie attribute simply doesn’t apply, in this case, and the “attack” is a success.
 
-## The cost of conflating site and origin [¶]()
+## The cost of conflating site and origin ¶
 
-### False sense of security [¶]()
+### False sense of security ¶
 
 Implying that `SameSite` applies to *all* cross-origin requests is harmful, because it may lead practitioners to believe, incorrectly, that `SameSite` protects their users against *all* cross-origin abuse. Such a misconception is particularly dangerous to practictioners who neglect to scrutinise the security level of their subdomains. In particular,
 
@@ -238,7 +238,7 @@ Note: “Cross-site request forgery” is a misnomer in both of the cases descri
 
 What I find fascinating is that `SameSite` is likely to focus the attention of savvy attackers on your subdomains and sibling domains even more than in the past, because those domains are fast becoming the only refuge for cross-origin attacks against battle-hardened Web apps.
 
-### Slower adoption of `SameSite=Strict` [¶]()
+### Slower adoption of `SameSite=Strict` ¶
 
 Besides, this misconception may also slow down the adoption of the `Strict` value in favour of the `Lax` one. Some people indeed actively discourage practitioners from using `Strict` because they perceive it as a greater impediment to usability than it actually is. For instance, on Dareboost’s blog, [you can read](https://web.archive.org/web/20201201211835/https://blog.dareboost.com/en/2017/06/secure-cookies-samesite-attribute/) the following statement:
 
@@ -256,7 +256,7 @@ The behaviour can be confusing for the final user, so you would prefer using the
 
 This is just one example of unjustly disparaging the `Strict` value, but I’m sure you could find more examples elsewhere on the Web.
 
-## Parting words [¶]()
+## Parting words ¶
 
 I’ve reached out to all the people I quoted above who I believe are inaccurate in their description of `SameSite`’s mechanics. So far, only Kristian Bremberg from Detectify and Edwin Foudil (also known as [@edoverflow](https://edoverflow.com)) from Reconless have replied to me. I have high hopes that they will amend their posts after reading this one. I’ve left a [public comment](https://www.troyhunt.com/promiscuous-cookies-and-their-impending-death-via-the-samesite-policy/#comment-5242338292) on Troy Hunt’s post, but he hasn’t gotten back to me yet; and I’ve reached out to Dareboost, but I have yet to hear back from them.
 
@@ -264,7 +264,7 @@ Edit (2021/02/10): Dareboost have since [amended](https://blog.dareboost.com/en/
 
 Remember: `SameSite` is a powerful defence-in-depth mechanism for protecting users against cross-site attacks, but it is powerless against cross-origin, same-site attacks. Don’t miss this subtlety! Otherwise, if you’re on the defensive side, you may be lulled into a false sense of security and you may get blindsided by attacks you would not have thought possible; and if you’re on the offensive side, you may miss out on vulnerability findings and perhaps even sizable bug bounties.
 
-## Addendum (2021/01/31) [¶]()
+## Addendum (2021/01/31) ¶
 
 Since the first publication of this post, I have found more noteworthy instances of incautious use of the terms “origin” and “site” when describing `SameSite`’s mechanics. I have not attempted to contact the authors of the pieces I quote below.
 
@@ -294,7 +294,7 @@ If this attribute is set to “strict”, then the cookie will only be sent on *
 
 Edit (2021/02/07): the Wikipedia page has since been [corrected](https://en.wikipedia.org/w/index.php?title=Cross-site_request_forgery&diff=prev&oldid=1004816813).
 
-## Acknowledgments [¶]()
+## Acknowledgments ¶
 
 I’d like to thank [Fredrik N. Almroth](https://github.com/almroot), from Detectify, who kindly agreed to review a draft of this post before publication.
 

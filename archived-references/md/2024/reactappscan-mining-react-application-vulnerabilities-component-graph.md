@@ -103,8 +103,12 @@ https://doi.org/10.1145/3658644.3670331
 --- page 2 ---
 
 .sÎ,fa�‡ßñ³xíEâ†ß6Z0ÚxnYŸs
-Ÿ˜	Êï¢¢,µ’æqÉZ›¿ê#=6ÎIüvì“f`ÓËbÔû`ŽËdÕ¿28¼w›,ULÛw°ñ^—þ*cdƒ,ŒœbÎ%n¤ÍA{ÉiÝðV8�Xf>O8ìÃ˜Ð�ø]Ä»i˜zýK…9ìØA�K~ëÕ©K^ûxd³äÚ�tÒfÍõ¡EEù,gŠ°�C36•äîšü 4â…
-f�pqrØÃ1‡×�ëUô&7Înh=|“]O¼�;ìëþàM¥ç1twFï‚Û[gSÙ†›ïOçxŸ4‚ º„x~ûùî[–Dj¸›rÃ×jàHBX˜èŽòuH¾ü1˜Ëc™9mc]ú¦Ë»ê¹Æ�Æ/_É‡¬ìU2ÏŽØ,¿^ß"Á¿�èLª/<_&÷áº«Ê†.ÇT{¹ßùƒÂ[V}Kë”µH@©~k¦[ÝJ;€^NáåŽ—Â<Y€A—‡Š’‚©4�ÉE�·Ó€ ”;Ðµ›Lƒ�daW`Å¢ó¥¬SÆåJËy’&%Ô ˆ§�eª`ð‘w¹xEvë|•+yÝÃ°r?ËI£«ÄCn8×ò=3	Vý�SaöÝFÞ£·#S&óäüïÇ†©üŒøÎ’Lþœß¼†rÀ—¯%–æ	è£#UbH}˜Hb‚E7¥¯8ºù#LñEœH‰?ì d#‡WŠá'ÕSôÌZžµ½C‡Ëw+¿:Ý„³­qXfí˜Ã"à�06ó·¬œæ«|ø;rØ�w¶Œ3=T�åpË>_§C8—×Œ²ÞOØB^ÀNù®AyÓ},*²š‹]ñtjúfíÎLTŸÄ|éÇXÂY*=wWkªè[¶ßÓ0o7§/ÿ¨
+Ÿ˜	Êï¢¢,µ’æqÉZ›¿ê#=6ÎIüvì“f`ÓËbÔû`ŽËdÕ¿28¼w›,ULÛw°ñ^—þ*cdƒ,ŒœbÎ%n¤ÍA{ÉiÝðV8�Xf>
+O8ìÃ˜Ð�ø]Ä»i˜zýK…9ìØA�K~ëÕ©K^ûxd³äÚ�tÒfÍõ¡EEù,gŠ°�C36•äîšü 4â…
+f�pqrØÃ1‡×�ëUô&7Înh=|“]O¼�;ìëþàM¥ç1twFï‚Û[gSÙ†›ïOçxŸ4‚ º„x~ûùî[–Dj¸›rÃ×jàHBX˜èŽòuH¾ü1˜Ëc™9mc]ú¦Ë»ê¹Æ�Æ/_É‡¬ìU2ÏŽØ,¿^ß"Á¿�èLª/<_&÷áº«Ê†.ÇT{¹ßùƒÂ[V}Kë”µH@©~k¦[ÝJ;€^NáåŽ—Â<Y€A—‡Š’‚©4�ÉE�·Ó€ ”;Ðµ›Lƒ�daW`Å¢ó¥¬SÆ
+åJËy’&%Ô ˆ§�eª`ð‘w¹xEvë|•+yÝÃ°r?ËI£«ÄCn8×ò=3	Vý�SaöÝFÞ£·#S&óäüïÇ†©üŒøÎ’Lþœß¼†rÀ—¯%–æ	è£#UbH
+}˜Hb‚E7¥¯8ºù#LñE
+œH‰?ì d#‡WŠá'ÕSôÌZžµ½C‡Ëw+¿:Ý„³­qXfí˜Ã"à�06ó·¬œæ«|ø;rØ�w¶Œ3=T�åpË>_§C8—×Œ²ÞOØB^ÀNù®AyÓ},*²š‹]ñtjúfíÎLTŸÄ|éÇXÂY*=wWkªè[¶ßÓ0o7§/ÿ¨
 
 --- page 3 ---
 
@@ -362,53 +366,42 @@ Figure 3: System ArchitectureFollowing the lifecycles of React components, natur
 We describe these steps in more details next.Table 1: Notations (e.g., nodes, edges, and procedures) of Com-ponent GraphNotations Descriptions#
 A set of component graph nodes4;
 2
-#
 4;
 =
-#
 2
 [
-#
 3
 JSX element (DOM or component node)
 2
 2
-#
 2
 A JSX Component Node
 3
 2
-#
 3
 A DOM element node
 state
 2
-#
 state
 The state node of a JSX component
 props
 2
-#
 props
 The props node of a JSX component
 attr
 2
-#
 attr
 A JSX Attribute Node of a JSX Element
 0
 2
-#
 AST
 An AST Node
 E
 2
-#
 var
 A variable Node
 >
 2
-#
 obj
 A JSX Object Node
 A set of component graph edges4;
@@ -472,11 +465,8 @@ nameAdd a JSX component/DOM/element/attribute nodenameandAST node
 XXX
 =
 Comp
-•
 DOM
-•
 El
-•
 Attr
 ).
 AddNode
@@ -554,13 +544,9 @@ LkupXXX
 ºLook up the state/state object/props object/state vari-able/prop variable node of a component2(i.e.,XXX
 =
 State
-•
 StateObjs
-•
 PropsObjs
-•
 StateVar
-•
 PropsVar
 .
 LkupMountingFunc
@@ -840,7 +826,6 @@ Percentage of Applications (%)
 --- page 14 ---
 
 CCS '24, October 1418, 2024, Salt Lake City, UT, USA Zhiyong Guo, Mingqing Kang, V.N. Venkatakrishnan, Rigel Gjomemo, and Yinzhi CaoTable 5: A comparison of false discovery rate (FDR) and falsenegative rate (FNR) betweenReactAppScanand CodeQL.FDR is evaluated on the large-scale dataset and FNR is evalu-ated on the CVE dataset. Note that both numbers are basedon end-to-end, exploitable vulnerabilities.Approach FDR=FP/(FP+TP)
-#
 FNR=FN/(FN+TP)
 #ReactAppScan
 15/96 (15.6%) 2/14 (14.2%)
@@ -1080,10 +1065,8 @@ ReactAppScan
 • 4
 1
 ) ¹
-#
 4
 1
-• 
 4
 1
 • 4;•@• (
@@ -1093,12 +1076,9 @@ ReactAppScan
 º
 • 0• ?
 º ) ¹
-#
 [
-#
 4
 1
-• 
 [
 
 4
@@ -1116,7 +1096,6 @@ new
 new
 •@• (
 º
-•
 where
 4;
 new
@@ -1139,10 +1118,8 @@ JSXOpeningElement
 1
 • ?
 º ) ¹
-#
 4
 1
-• 
 4
 1
 • 4;
@@ -1158,10 +1135,8 @@ JSXOpeningElement
 =
 • ?•@
 º ) ¹
-#
 4
 =
-• 
 4
 =
 • 4;
@@ -1182,10 +1157,8 @@ JSXOpeningElement
 8
 =
 1
-#
 4
 8
-•
 =
 Ð
 8
@@ -1217,7 +1190,6 @@ JSXChildren
 ) ¹
 # • • 4;•@• (
 º
-•
 ¹
 4
 1
@@ -1225,15 +1197,12 @@ JSXChildren
 1
 • ?
 º ) ¹
-#
 4
 1
-• 
 4
 1
 • 4;•@• (
 º
-•
 ¹
 4
 2
@@ -1241,10 +1210,8 @@ JSXChildren
 2
 • ?
 º ) ¹
-#
 4
 2
-• 
 4
 2
 • 4;•@• (
@@ -1259,16 +1226,12 @@ Value
 º
 • 0• ?
 º ) ¹
-#
 [
-#
 4
 1
 [
-#
 4
 2
-• 
 [
 
 4
@@ -1307,7 +1270,6 @@ attr
 !
 >
 0
-•
 8
 >
 0
@@ -1318,7 +1280,6 @@ Child
 >
 0”4
 2
-•
 attr
 0
 =
@@ -1339,7 +1300,6 @@ props
 0”4
 1
 ”=0<4
-•
 props
 :
 =
@@ -1349,7 +1309,6 @@ LkupPropsObjs
 º
 • 4;
 2
-#
 2
 ¹
 JSXAttribute
@@ -1358,7 +1317,6 @@ JSXAttribute
 ) ¹
 # • • 4;•@• (
 º
-•
 ¹
 4
 1
@@ -1367,10 +1325,8 @@ JSXAttribute
 1
 • ?
 º ) ¹
-#
 4
 1
-• 
 4
 1
 • 4;•@• (
@@ -1384,10 +1340,8 @@ JSXAttribute
 =
 • ?•@
 º ) ¹
-#
 4
 =
-• 
 4
 =
 • 4;•@• (
@@ -1407,10 +1361,8 @@ Attr
 8
 =
 1
-#
 4
 8
-•
 =
 Ð
 8
@@ -1428,15 +1380,12 @@ JSXAttributes
 ) ¹
 # • • 4;•@• (
 º
-•
 ¹
 4• 0
 4
 • ?
 º ) ¹
-#
 4
-• 
 4
 • 4;•@• (
 º
@@ -1466,7 +1415,6 @@ DB4'45
 º
 • 0• ?
 º ) ¹
-#
 [
 A
 [
@@ -1481,13 +1429,10 @@ useRef
 ) ¹
 # • • 4;•@• (
 º
-•
 ¹
 4• 0”4• ?
 º ) ¹
-#
 4
-• 
 4
 • 4;•@• (
 º¹
@@ -1510,22 +1455,15 @@ then
 º
 else
 ¹
-#
 [
-#
 4
 [
-#
 state
 [
-#
 state
-_
 v
 [
-#
 setState
-• 
 [
 
 4
@@ -1551,23 +1489,19 @@ where
 >
 >
 :
-#
 state
 :
 =
 AddNode
 state
 0
-#
 state
-_
 v
 :
 =
 AddNode
 E
 0
-#
 setState
 :
 =
@@ -1603,7 +1537,6 @@ AddEdge
 state
 4;
 !
-#
 state
 
 setState
@@ -1616,15 +1549,11 @@ state
 E•E
 5
 ¡
-#
 state
 !
 Ÿ
-#
 state
-_
 v
-•#
 setState
 ¡
 
@@ -1635,14 +1564,11 @@ AddEdge
 E
 !
 >
-#
 state
-_
 v
 !
 >
 0
-•
 8
 >
 0
@@ -1662,10 +1588,8 @@ useState
 • 4
 1
 ) ¹
-#
 4
 1
-• 
 4
 1
 • 4;
@@ -1676,10 +1600,8 @@ useState
 • 4
 2
 ) ¹
-#
 4
 2
-• 
 4
 2
 • 4;
@@ -1694,19 +1616,14 @@ $?4=8=6; 4
 º
 • 0• ?
 º ) ¹
-#
 [
-#
 4
 1
 [
-#
 4
 2
 [
-#
 A
-• 
 [
 
 4
@@ -1739,7 +1656,6 @@ LkupStateObjs
 4
 1
 º
-•
 LkupPropsObjs
 ¹
 4;
@@ -1751,9 +1667,7 @@ gº
 where
 (
 ¹
-#
 A
-• 
 A
 º
 :
@@ -1850,13 +1764,10 @@ JSXElementName
 ) ¹
 # • • 4;•@• (
 º
-•
 ¹
 5 • 0”5 • ?
 º ) ¹
-#
 5
-• 
 5
 • 4;•@• (
 º¹
@@ -1866,11 +1777,8 @@ G• 5
 º
 • 0• ?
 º ) ¹
-#
 [
-#
 5
-• 
 [
 
 5
@@ -1881,7 +1789,6 @@ G• 5
 >
 0
 gº
-•
 8
 >
 0
@@ -1898,13 +1805,10 @@ callback register
 ) ¹
 # • • 4;•@• (
 º
-•
 ¹
 21• 0”21• ?
 º ) ¹
-#
 21
-• 
 21
 • 4;•@• (
 º
@@ -1915,13 +1819,10 @@ callback register
 ¹
 0”G”=0<4
 º
-•
 call
 5
 ) ¹
-#
 B
-• 
 B
 • 4;•@• (
 º¹
@@ -1931,9 +1832,7 @@ G•21
 º
 • 0• ?
 º ) ¹
-#
 [
-#
 2
 1• 
 [
@@ -1949,7 +1848,6 @@ call
 ºº
 • (
 º
-•
 8
 >
 0
@@ -1966,13 +1864,10 @@ callback invocation
 ) ¹
 # • • 4;•@• (
 º
-•
 ¹
 G• 0”G• ?
 º ) ¹
-#
 G
-• 
 G
 • 4;•@• (
 º¹
@@ -1982,15 +1877,12 @@ G
 º
 • 0• ?
 º ) ¹
-#
 [
-#
 G
 [
 AddNode
 >
 0”G
-• 
 [
 
 G
@@ -2003,32 +1895,24 @@ database model
 ) ¹
 # • • 4;•@• (
 º
-•
 ¹
 4• 0”4• ?
 º ) ¹
-#
 4
-• 
 4
 • 4;•@• (
 º
-•
 ¹
 5 • 0”5 • ?
 º ) ¹
-#
 5
-• 
 5
 • 4;•@• (
 º
-•
 if
 HasCommonKey
 ¹
 m
-•
 f
 0
 º
@@ -2039,9 +1923,7 @@ Copy
 0
 •<
 º ) ¹
-#
 2
-• 
 2
 º¹
 G”D?30C4
@@ -2050,17 +1932,12 @@ G”D?30C4
 º
 • 0• ?
 º ) ¹
-#
 [
-#
 4
 [
-#
 2
 [
-#
 5
-• 
 [
 
 4
@@ -2118,13 +1995,10 @@ model update
 ) ¹
 # • • 4;•@• (
 º
-•
 ¹
 4• 0”4• ?
 º ) ¹
-#
 4
-• 
 4
 • 4;•@• (
 º
@@ -2144,12 +2018,10 @@ Child
 0
 !
 >
-•
 if
 HasCommonKey
 ¹
 m
-•
 n
 º
 then
@@ -2157,9 +2029,7 @@ Copy
 ¹
 <•>
 º ) ¹
-#
 2
-• 
 2
 º
 where
@@ -2176,14 +2046,10 @@ G”5 8=3
 º
 • 0• ?
 º ) ¹
-#
 [
-#
 4
 [
-#
 2
-• 
 [
 
 4
@@ -2199,13 +2065,10 @@ model read
 ) ¹
 # • • 4;•@• (
 º
-•
 ¹
 G• 0”G• ?•@
 º ) ¹
-#
 G
-• 
 G
 • 4;•@• (
 º¹
@@ -2215,11 +2078,8 @@ G
 º
 • 0• ?
 º ) ¹
-#
 [
-#
 G
-• 
 [
 
 G
@@ -2300,7 +2160,6 @@ LkupStateObjs
 ¹
 4;
 º
-•
 LkupPropsObjs
 ¹
 4;
@@ -2314,13 +2173,10 @@ setState
 ) ¹
 # • • 4;•@• (
 º
-•
 ¹
 5 • 0”5 • ?
 º ) ¹
-#
 5
-• 
 5
 • 4;•@• (
 º
@@ -2331,25 +2187,19 @@ LkupCleanupFunc
 ¹
 4;
 º
-•
 ¹
 20;; 2
 ¹º
 • 0”2• ?
 º ) ¹
-#
 2
-• 
 2
 • 4;•@• (
 º
-•
 ¹
 4• 0”4• ?
 º ) ¹
-#
 4
-• 
 4
 • 4;•@• (
 º¹
@@ -2359,17 +2209,12 @@ useEffect
 º
 • 0• ?
 º ) ¹
-#
 [
-#
 5
 [
-#
 4
 [
-#
 2
-• 
 [
 
 5
@@ -2381,13 +2226,11 @@ useEffect
 2
 • 4;•@
 [ f
-#
 3
 g
 • (
 º
 where
-#
 3
 :
 =
@@ -2426,15 +2269,12 @@ forceUpdate
 ) ¹
 # • • 4;•@• (
 º
-•
 ¹
 5
 ¹º
 • 0”5 • ?
 º ) ¹
-#
 5
-• 
 5
 • 4;•@
 5
@@ -2445,11 +2285,8 @@ forceUpdate
 ¹º
 • 0• ?
 º ) ¹
-#
 [
-#
 5
-• 
 [
 
 5
@@ -2469,7 +2306,6 @@ componentDidMount
 ) ¹
 # • • 4;•@• (
 º
-•
 ¹
 5
 ¹
@@ -2477,16 +2313,13 @@ LkupPropsVar
 ¹
 4;
 º
-•
 LkupStateVar
 ¹
 4;
 ºº
 • 0”5 • ?
 º ) ¹
-#
 5
-• 
 5
 • 4;•@
 5
@@ -2502,11 +2335,8 @@ LkupStateVar
 º
 • 0• ?
 º ) ¹
-#
 [
-#
 5
-• 
 [
 
 5
@@ -2526,7 +2356,6 @@ constructor, render, getDerivedStateFromProps, shouldComponentUpdate
 ) ¹
 # • • 4;•@• (
 º
-•
 ¹
 5
 ¹
@@ -2536,9 +2365,7 @@ constructor, render, getDerivedStateFromProps, shouldComponentUpdate
 ºº
 • 0”5 • ?
 º ) ¹
-#
 5
-• 
 5
 • 4;•@
 5
@@ -2554,11 +2381,8 @@ constructor, render, getDerivedStateFromProps, shouldComponentUpdate
 º
 • 0• ?
 º ) ¹
-#
 [
-#
 5
-• 
 [
 
 5
@@ -2578,15 +2402,12 @@ getSnapshotBeforeUpdate, componentDidUpdate
 ) ¹
 # • • 4;•@• (
 º
-•
 ¹
 5
 ¹º
 • 0”5 • ?
 º ) ¹
-#
 5
-• 
 5
 • 4;•@• (
 º¹¹
@@ -2594,11 +2415,8 @@ getSnapshotBeforeUpdate, componentDidUpdate
 ¹º
 • 0• ?
 º ) ¹
-#
 [
-#
 5
-• 
 [
 
 5

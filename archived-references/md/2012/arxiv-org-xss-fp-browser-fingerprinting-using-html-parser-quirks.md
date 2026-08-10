@@ -84,7 +84,7 @@ Authors:[Erwan Abgrall](https://arxiv.org/search/cs?searchtype=author&query=Abgr
  From: Martin Monperrus [[view email](https://arxiv.org/show-email/7107ce5a/1211.4812)] [via CCSD proxy]
  **[v1]** Tue, 20 Nov 2012 17:44:57 UTC (385 KB)
 
- []() Full-text links:
+  Full-text links:
 
 ## Access Paper:
 
@@ -215,4 +215,4 @@ Both individuals and organizations that work with arXivLabs have embraced and ac
 
 Have an idea for a project that will add value for arXiv's community? [**Learn more about arXivLabs**](https://info.arxiv.org/labs/index.html).
 
- [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1211.4812) | [Disable MathJax]() ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))
+ [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1211.4812) | Disable MathJax ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))

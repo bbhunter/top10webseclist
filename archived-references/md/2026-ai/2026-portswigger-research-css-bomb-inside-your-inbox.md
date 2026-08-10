@@ -87,41 +87,41 @@ Researcher
 
 ## Table of contents
 
-- [Introduction]()
-- [Abusing allowed HTML/CSS]()
+- Introduction
+- Abusing allowed HTML/CSS
 
-- [Abusing HTML labels to perform UI actions]()
-- [Controlling AI browsers via email]()
-- [Account takeover from pasting into a draft email]()
-- [Exfiltrating tokens when CSP is blocking all external resources]()
+- Abusing HTML labels to perform UI actions
+- Controlling AI browsers via email
+- Account takeover from pasting into a draft email
+- Exfiltrating tokens when CSP is blocking all external resources
 
-- [Bypassing CSS sanitization]()
+- Bypassing CSS sanitization
 
-- [Making external requests]()
-- [Syntax quirks]()
-- [Image proxy bypasses]()
+- Making external requests
+- Syntax quirks
+- Image proxy bypasses
 
-- [Tracking if email is viewed in Fastmail]()
-- [Displaying your IP address in ProtonMail]()
-- [Tracking if email is viewed in Gmail]()
+- Tracking if email is viewed in Fastmail
+- Displaying your IP address in ProtonMail
+- Tracking if email is viewed in Gmail
 
-- [Combining an image proxy bypass with indirect prompt injection]()
-- [CSS mutation in Fastmail ]()
+- Combining an image proxy bypass with indirect prompt injection
+- CSS mutation in Fastmail 
 
-- [Exploitation with CSS]()
+- Exploitation with CSS
 
-- [Defacing Outlook using CSS gadgets]()
-- [CSS hotwiring in Fastmail]()
-- [Stealing passwords]()
+- Defacing Outlook using CSS gadgets
+- CSS hotwiring in Fastmail
+- Stealing passwords
 
-- [Defences]()
-- [Future attacks]()
+- Defences
+- Future attacks
 
-- [HTML only keylogger]()
-- [Chrome real time keylogger]()
+- HTML only keylogger
+- Chrome real time keylogger
 
-- [References]()
-- [Materials]()
+- References
+- Materials
 
 ## Introduction
 

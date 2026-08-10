@@ -63,17 +63,11 @@ Introduction
       Showcase Two
             The End
 
-
-
-
 Non-Obvious Bugs by Example
 
              Gregor Kopf
 
             BerlinSides 2010
-
-
-
 
                        Non-Obvious Bugs by Example
                           Introduction
@@ -81,11 +75,7 @@ Non-Obvious Bugs by Example
                         Showcase Two
                               The End
 
-
 What and why?
-
-
-
 
      Non-obvious (crypto) bugs
           As an example: two well-known CMS
@@ -93,20 +83,13 @@ What and why?
      Interesting to exploit
      Fun ;)
 
-
-
-
                                          Non-Obvious Bugs by Example
                            Introduction
                          Showcase One
                          Showcase Two
                                The End
 
-
 How?
-
-
-
 
        The process from discovery to exploitation will be shown
            The code part that raised suspicion
@@ -114,22 +97,13 @@ How?
            Further analysis (technical background of the bug)
            Exploitation
 
-
-
-
                                           Non-Obvious Bugs by Example
               Introduction
             Showcase One
             Showcase Two
                   The End
 
-
-
-
 Let’s get started: Typo3
-
-
-
 
                              Non-Obvious Bugs by Example
                           Introduction
@@ -137,10 +111,7 @@ Let’s get started: Typo3
                         Showcase Two
                               The End
 
-
 What Are We Looking at?
-
-
 
      Typo3 will allow us to view (almost) arbitrary files
      Just use a URL like
@@ -150,18 +121,13 @@ What Are We Looking at?
      before file access is granted
      Let’s look at the code!
 
-
-
-
                                          Non-Obvious Bugs by Example
                                             Introduction
                                           Showcase One
                                           Showcase Two
                                                 The End
 
-
 The Code
-
 
  1           $hArr = a r r a y (
  2                 $ t h i s −>j u m p u r l ,
@@ -182,15 +148,11 @@ The Code
 17                                  exit ;
 18                           }
 
-
-
-
                                                                        Non-Obvious Bugs by Example
                                            Introduction
                                          Showcase One
                                          Showcase Two
                                                The End
-
 
 Observations
 
@@ -202,8 +164,6 @@ Observations
 6       );
 7       $ c a l c J u H a s h= t 3 l i b d i v : : shortMD5 ( s e r i a l i z e ( $ h A r r ) ) ;
 
-
-
      To calculate juHash, a variable named encryptionKey is used
      encryptionKey is unknown to us, so we cannot supply the
      correct hash value. Or can we?
@@ -211,32 +171,23 @@ Observations
      improperly, as encryptionKey is just appended at the end of
      the data.
 
-
                                                                    Non-Obvious Bugs by Example
                                          Introduction
                                        Showcase One
                                        Showcase Two
                                              The End
 
-
 shortMD5
-
-
 
        What does shortMD5() do?
    1     p u b l i c s t a t i c f u n c t i o n shortMD5 ( $ i n p u t , $ l e n =10)   {
    2          r e t u r n s u b s t r (md5( $ i n p u t ) , 0 , $ l e n ) ;
    3     }
 
-
-
        shortMD5() returns the first 5 bytes (10 hex chars) of the
        MD5 hash of its input
        Shortening hash values is generally OK, but 5 bytes is not
        quite much...
-
-
-
 
                                                                Non-Obvious Bugs by Example
                         Introduction
@@ -244,10 +195,7 @@ shortMD5
                       Showcase Two
                             The End
 
-
 The Equals Operator in PHP
-
-
 
      The supplied hash is compared with the computed hash using
      the PHP operator ==
@@ -257,19 +205,13 @@ The Equals Operator in PHP
      PHP might perform nasty typecasting before the actual
      comparison is performed!
 
-
-
-
                                        Non-Obvious Bugs by Example
                                     Introduction
                                   Showcase One
                                   Showcase Two
                                         The End
 
-
 More on ==
-
-
 
        From the PHP manual:
    1   var dump ( 0 == ” a ” ) ; // 0 == 0 −> t r u e
@@ -277,15 +219,10 @@ More on ==
    3   var dump ( ” 10 ” == ” 1 e1 ” ) ; // 10 == 10 −> t r u e
    4   var dump ( 1 0 0 == ” 1 e2 ” ) ; // 100 == 100 −> t r u e
 
-
-
        Uh, WTF?
        In PHP, 100 is equal to 1e2 when using the == operator..
        Nice to know ;)
        Side node: scientific notation 1.234e2 = 1.234 · 102 = 123.4
-
-
-
 
                                                      Non-Obvious Bugs by Example
                          Introduction
@@ -293,10 +230,7 @@ More on ==
                        Showcase Two
                              The End
 
-
 The Idea
-
-
 
      What if the computed hash looks like 0e66631337?
      The comparison operator will treat it as equal to 0
@@ -305,18 +239,13 @@ The Idea
      form, then we’d know it would be equal to 0, which we could
      easily submit as our juHash value
 
-
-
-
                                         Non-Obvious Bugs by Example
                           Introduction
                         Showcase One
                         Showcase Two
                               The End
 
-
 Thoughts on the Feasibility
-
 
       The computed hash can be easily influenced, as jumpurl does
       not need to be canonical (e.g. we can just append ./ to the
@@ -331,16 +260,13 @@ Thoughts on the Feasibility
                                                      16 = 8 that a
       nibble is numeric.
 
-
                                          Non-Obvious Bugs by Example
                            Introduction
                          Showcase One
                          Showcase Two
                                The End
 
-
 Thoughts on the Feasibility
-
 
       As all the nibbles are (assumed to be) independent, the
                                                    8
@@ -357,27 +283,18 @@ Thoughts on the Feasibility
       Actually we need even less tries, as hashes like 000e1337 . . .
       are also OK.
 
-
-
                                           Non-Obvious Bugs by Example
                           Introduction
                         Showcase One
                         Showcase Two
                               The End
 
-
 The Attack
-
-
-
 
      It’s straight forward. Submit multiple requests for the same file
      For each request, prepend a ./ to the filename
      Always submit 0 as juHash value
      Get some beerˆW coffee and wait for your file
-
-
-
 
                                          Non-Obvious Bugs by Example
                          Introduction
@@ -385,10 +302,7 @@ The Attack
                        Showcase Two
                              The End
 
-
 For your Amusement
-
-
 
      The code should actually check that you don’t download
      localconf.php, which contains encryptionKey
@@ -398,22 +312,13 @@ For your Amusement
      Once you got the encryption key, you can calculate the correct
      juHash value for any file you like
 
-
-
-
                                         Non-Obvious Bugs by Example
           Introduction
         Showcase One
         Showcase Two
               The End
 
-
-
-
 Demo!
-
-
-
 
                          Non-Obvious Bugs by Example
              Introduction
@@ -421,20 +326,13 @@ Demo!
            Showcase Two
                  The End
 
-
-
-
 Even more fun: Joomla
-
-
-
 
                             Non-Obvious Bugs by Example
                                              Introduction
                                            Showcase One
                                            Showcase Two
                                                  The End
-
 
 The Code
 
@@ -457,18 +355,13 @@ The Code
 15       r e t u r n $makepas s ;
 16   }
 
-
-
-
                                                                    Non-Obvious Bugs by Example
                          Introduction
                        Showcase One
                        Showcase Two
                              The End
 
-
 Observations
-
 
      The used PRNG is the Mersenne Twister (seeded with 32 bit
      values)
@@ -481,16 +374,13 @@ Observations
      CRC32 is not a cryptographic hash!
      Maybe the seed is predictable?
 
-
                                         Non-Obvious Bugs by Example
                                           Introduction
                                         Showcase One
                                         Showcase Two
                                               The End
 
-
 Impact?
-
 
         Even if we could predict the seed: what would it be good for?
         The affected function is used for generating password reset
@@ -507,17 +397,13 @@ Impact?
    10
    11        $db−>s e t Q u e r y ( $ q u e r y ) ;
 
-
-
         Password reset → admin account → fun/profit
-
 
                                                                Non-Obvious Bugs by Example
                                                Introduction
                                              Showcase One
                                              Showcase Two
                                                    The End
-
 
 getHash
 
@@ -529,8 +415,6 @@ getHash
    4            r e t u r n md5( $ c o n f−>g e t V a l u e ( ’ c o n f i g . s e c r e t ’ ) .   $seed   );
    5      }
 
-
-
        config.secret is a random string generated during the
        installation process
        genRandomPassword() is used to generate config.secret
@@ -539,19 +423,13 @@ getHash
    3
    4           $vars [ ’ o f f l i n e ’ ]         = J T e x t : : ( ’STDOFFLINEMSG ’ ) ;
 
-
-
-
                                                                     Non-Obvious Bugs by Example
                           Introduction
                         Showcase One
                         Showcase Two
                               The End
 
-
 Short Summary
-
-
 
      The password reset function generates a reset token and sends
      it out via e-mail
@@ -562,18 +440,13 @@ Short Summary
      We also need to know the secret key
      Looks challenging. Let’s go!
 
-
-
-
                                          Non-Obvious Bugs by Example
                                 Introduction
                               Showcase One
                               Showcase Two
                                     The End
 
-
 How to Obtain config.secret
-
 
        config.secret is used in a number of places
        Whenever you click ,,remember my password”, a cookie will
@@ -585,12 +458,8 @@ How to Obtain config.secret
    4               s e t c o o k i e ( J U t i l i t y : : g e t H a s h ( ’JLOGIN REMEMBER ’ ) , $ r c o o k i e ,
    5                                   $lifetime , ’/ ’ );
 
-
-
        getHash() is used here again, so
        cookie = md5(config .secret + JLOGIN REMEMBER)
-
-
 
                                                       Non-Obvious Bugs by Example
                            Introduction
@@ -598,10 +467,7 @@ How to Obtain config.secret
                          Showcase Two
                                The End
 
-
 How to Obtain config.secret
-
-
 
       config.secret is generated during the installation process using
       the password generation function we have already seen
@@ -612,19 +478,13 @@ How to Obtain config.secret
           Could be optimized using rainbow tables
           It’s a great stress test and benchmark for your hardware ;)
 
-
-
-
                                           Non-Obvious Bugs by Example
                          Introduction
                        Showcase One
                        Showcase Two
                              The End
 
-
 Next Steps
-
-
 
      Alright, we can get config.secret. What now?
      We would like to predict the seed is was used to initialize the
@@ -634,15 +494,11 @@ Next Steps
          Cyclic Redundancy Check
          Based on polynomials over F2
 
-
-
-
                                         Non-Obvious Bugs by Example
                           Introduction
                         Showcase One
                         Showcase Two
                               The End
-
 
 More CRC
 
@@ -658,36 +514,26 @@ More CRC
     school)
     The remainder is the CRC value
 
-
                                          Non-Obvious Bugs by Example
                           Introduction
                         Showcase One
                         Showcase Two
                               The End
 
-
 So?
-
-
-
 
       An interesting property: CRC is additive!
       CRC (m) + CRC (n) = CRC (m + n)
       Addition is of course in F2
       I.e. poly(m) + poly(n) = poly(m xor n)
 
-
-
-
                                          Non-Obvious Bugs by Example
                           Introduction
                         Showcase One
                         Showcase Two
                               The End
 
-
 So?
-
 
       To put it in other words
           Assume we have some message m but we only know its CRC
@@ -700,19 +546,13 @@ So?
       Once we know one CRC value used for PRNG initialization,
       we could try to use it to predict future CRC values
 
-
-
-
                                          Non-Obvious Bugs by Example
                            Introduction
                          Showcase One
                          Showcase Two
                                The End
 
-
 The Idea
-
-
 
      Reset our own password and obtain a token
      Use the token to obtain the CRC value that was used to
@@ -723,24 +563,16 @@ The Idea
      Use the obtained CRC value to calculate future CRC values
      Reset the password of the admin account and guess the token
 
-
-
-
                                           Non-Obvious Bugs by Example
                                         Introduction
                                       Showcase One
                                       Showcase Two
                                             The End
 
-
 Flipping the Bits
-
-
 
         The input to the CRC function was
     1   crc32 ( microtime ( ) . implode ( ’ | ’ , $ s t a t ) )
-
-
 
         Between two calls, only the first few bits in the CRC argument
         change
@@ -748,15 +580,11 @@ Flipping the Bits
         the lower nibbles of the first few bytes can change (e.g. from
         0x30 to 0x33 or so)
 
-
-
-
                                                           Non-Obvious Bugs by Example
                              Introduction
                            Showcase One
                            Showcase Two
                                  The End
-
 
 Flipping the Bits
       Sample output of microtime(): |0.95003500
@@ -784,9 +612,7 @@ Flipping the Bits
                              Showcase Two
                                    The End
 
-
 Finding the Original Input Length
-
 
       We can generate two reset tokens for our own account
       We know that the input to the CRC function only differs in a
@@ -800,18 +626,13 @@ Finding the Original Input Length
                               |   {z . .}.
       k bits that make the difference l−k zero bits
 
-
-
-
                                               Non-Obvious Bugs by Example
                            Introduction
                          Showcase One
                          Showcase Two
                                The End
 
-
 Finding the Original Input Length
-
 
       Now it gets interesting ;)
       Say we have the CRC d of the bit difference m and we want
@@ -823,14 +644,11 @@ Finding the Original Input Length
       Keep in mind: X , m and d are polynomials, x ≡g y is
       shorthand for x = y mod g
 
-
-
                                           Non-Obvious Bugs by Example
                            Introduction
                          Showcase One
                          Showcase Two
                                The End
-
 
 Finding the Original Input Length
 
@@ -853,9 +671,7 @@ Finding the Original Input Length
                         Showcase Two
                               The End
 
-
 The Full Attack
-
 
      Log in on the target site and click ,,remember my password”
      Use the obtained cookie name to look up the value
@@ -867,18 +683,13 @@ The Full Attack
          Use a pre-calculated (application specific!) table
          Or perform a live brute force search
 
-
-
-
                                          Non-Obvious Bugs by Example
                            Introduction
                          Showcase One
                          Showcase Two
                                The End
 
-
 The Full Attack
-
 
      Use the obtained CRC32 values to calculate the length l of
      the input to the CRC32 function
@@ -891,21 +702,13 @@ The Full Attack
      tokens based on config.secret and a randomly generated string
      Get some beerˆW vodka and wait until you hit the right token
 
-
-
                                           Non-Obvious Bugs by Example
           Introduction
         Showcase One
         Showcase Two
               The End
 
-
-
-
 Demo!
-
-
-
 
                          Non-Obvious Bugs by Example
                          Introduction
@@ -913,11 +716,7 @@ Demo!
                        Showcase Two
                              The End
 
-
 Conclusions (Typo3)
-
-
-
 
      What went wrong?
          Shortening a MAC value without proper reasons
@@ -925,20 +724,13 @@ Conclusions (Typo3)
          Using a not-typesafe comparison operator
          Further: forgetting about null bytes
 
-
-
-
                                         Non-Obvious Bugs by Example
                         Introduction
                       Showcase One
                       Showcase Two
                             The End
 
-
 Conclusions (Joomla)
-
-
-
 
      Using a weak PRNG
          32 bit seed
@@ -946,24 +738,15 @@ Conclusions (Joomla)
      Frequently reseeding the PRNG
      Using CRC32 for cryptographic purposes
 
-
-
-
                                        Non-Obvious Bugs by Example
                           Introduction
                         Showcase One
                         Showcase Two
                               The End
 
-
-
-
 Contact me:
     mail: ping@gregorkopf.de
     twitter: teh gerg
-
-
-
 
                                          Non-Obvious Bugs by Example
                                      Introduction
@@ -971,10 +754,7 @@ Contact me:
                                    Showcase Two
                                          The End
 
-
 Sploit demo: Typo3
-
-
 
   [greg@uchuck ~/research/typo3]$ python sploit.py http://127.0.0.1/t3/index.php /../../../../../etc/passwd
   [.] Done 100 tries.
@@ -982,22 +762,17 @@ Sploit demo: Typo3
   [+] Download link: http://127.0.0.1/t3/index.php?jumpurl=/../../../../../etc/passwd
                       &locationData=1::3541&juSecure=1&juHash=0
   # $FreeBSD: src/etc/master.passwd,v 1.40.22.1.4.1 2010/06/14 02:09:06 kensmith Exp $
-  #
   root:*:0:0:Charlie &:/root:/bin/csh
   toor:*:0:0:Bourne-again Superuser:/root:
   daemon:*:1:1:Owner of many system processes:/root:/usr/sbin/nologin
   operator:*:2:5:System &:/:/usr/sbin/nologin
   [...]
 
-
-
-
                                                     Non-Obvious Bugs by Example
                                      Introduction
                                    Showcase One
                                    Showcase Two
                                          The End
-
 
 Sploit demo: Joomla
   [greg@uchuck ~/research/joomla]$ python feierAndForget.py 127.0.0.1 /joomla ’greg@uchuck’ ’root@uchuck’
@@ -1027,17 +802,13 @@ Sploit demo: Joomla
   0daacacae08c6956394aeb94d5d67094
   ...................
 
-
-
                                                     Non-Obvious Bugs by Example
                                      Introduction
                                    Showcase One
                                    Showcase Two
                                          The End
 
-
 Sploit demo: Joomla (contd.)
-
 
   [X] Time to try:
   python bruteToken.py OYHDHQbgoYMSETeT 0x96855789 000000000f0f0f0f\
@@ -1055,8 +826,5 @@ Sploit demo: Joomla (contd.)
   Your username / token: admin / b3b729db0688260e12da1c32e6375231
   URL http://127.0.0.1//joomla/index.php?option=com_user
       &view=reset&layout=confirm
-
-
-
 
                                                     Non-Obvious Bugs by Example

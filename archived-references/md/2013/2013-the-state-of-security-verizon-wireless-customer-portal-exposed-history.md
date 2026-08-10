@@ -68,7 +68,7 @@ Verizon Wireless Customer Portal Exposed Text Message History - The State of Sec
 
 The Wayback Machine - https://web.archive.org/web/20141220045918/http://www.tripwire.com:80/state-of-security/latest-security-news/verizon-wirelesss-customer-portal-exposed-text-messages/
 
- [Skip to content ↓]() [Skip to navigation ↓]()
+ Skip to content ↓ Skip to navigation ↓
 
 # Verizon Wireless Customer Portal Exposed Text Message History
 

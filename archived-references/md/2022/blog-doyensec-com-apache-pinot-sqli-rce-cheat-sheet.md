@@ -68,24 +68,24 @@ The database platform [Apache Pinot](https://pinot.apache.org/) has been growing
 
 This article will help pentesters use their familiarity with classic database systems such as Postgres and MariaDB, and apply it to Pinot. In this post, we will show how a classic SQL-injection (SQLi) bug in a Pinot-backed API can be escalated to Remote Code Execution (RCE) and then discuss post-exploitation.
 
-- [What Is Pinot?]()
-- [Essential Architectural Details]()
-- [Setting Up a Test Environment]()
-- [Pinot SQL Syntax & Injection Basics]()
+- What Is Pinot?
+- Essential Architectural Details
+- Setting Up a Test Environment
+- Pinot SQL Syntax & Injection Basics
 
-- [String Matching]()
-- [Query Options]()
+- String Matching
+- Query Options
 
-- [CTF-grade SQL injection]()
+- CTF-grade SQL injection
 
-- [Timeouts]()
-- [SQL Injection in Pinot]()
-- [RCE via Groovy]()
+- Timeouts
+- SQL Injection in Pinot
+- RCE via Groovy
 
-- [RCE Example Queries]()
+- RCE Example Queries
 
-- [Use RCE on Server to Attack Other Nodes]()
-- [TLDR]()
+- Use RCE on Server to Attack Other Nodes
+- TLDR
 
 ## What Is Pinot?
 
@@ -474,7 +474,7 @@ Prints `root` to the log! The official Pinot docker images run Groovy scripts as
 
 Note that:
 
-- The Groovy function is an exception to the [earlier rule]() requiring filters to include a column name.
+- The Groovy function is an exception to the earlier rule requiring filters to include a column name.
 - Even though the limit is 5, every row in each segment being searched is processed. Once 5 rows are reached, the query returns results to the Broker, but the `root` lines continue being printed to the log.
 - The return and comparison values need not be the same. However the types must match `returnType` in the metadata JSON (here `INT`).
 - The `return` keyword is optional for the final statement, so the script could could end with `; 1`.

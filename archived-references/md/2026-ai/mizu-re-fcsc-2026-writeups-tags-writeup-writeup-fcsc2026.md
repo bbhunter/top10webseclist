@@ -65,7 +65,7 @@ FCSC 2026 Writeups | mizu.re
 
 The Wayback Machine - https://web.archive.org/web/20260418230027/https://mizu.re/post/fcsc-2026-writeups
 
- [ *keyboard_arrow_up* ]()
+  *keyboard_arrow_up* 
 
 title: FCSC 2026 Writeups
 date: Sep 07, 2025
@@ -75,41 +75,41 @@ tags: [Writeup](https://web.archive.org/web/20260418230027/https://mizu.re/tag/W
 
   ![](https://web.archive.org/web/20260418230027im_/https://mizu.re/articles/writeups/FCSC2026/./images/fcsc-logo.png)
 
-- [Keywords]()
-- [10 Fast Fishers ⭐]()
+- Keywords
+- 10 Fast Fishers ⭐
 
-- [📖 Introduction]()
-- [🦊 document.execCommand Firefox normalization]()
-- [🔓 Bypassing the message event origin]()
-- [🚀 Solution script]()
+- 📖 Introduction
+- 🦊 document.execCommand Firefox normalization
+- 🔓 Bypassing the message event origin
+- 🚀 Solution script
 
-- [Deep Blue ⭐⭐]()
+- Deep Blue ⭐⭐
 
-- [📖 Introduction]()
-- [🛤️ Client-Side Path Traversal]()
-- [🎭 mime_content_type JSON / x-quicktime polyglot]()
-- [🔗 Chaining everything together]()
+- 📖 Introduction
+- 🛤️ Client-Side Path Traversal
+- 🎭 mime_content_type JSON / x-quicktime polyglot
+- 🔗 Chaining everything together
 
-- [Splash Studio ⭐⭐⭐]()
+- Splash Studio ⭐⭐⭐
 
-- [📖 Introduction]()
-- [💥 DOM Clobbering]()
-- [🧩 document.createElement quirk]()
-- [✅ Invalid but valid]()
-- [🔗 Chaining everything together]()
+- 📖 Introduction
+- 💥 DOM Clobbering
+- 🧩 document.createElement quirk
+- ✅ Invalid but valid
+- 🔗 Chaining everything together
 
-- [Bubulle Corp (Part 1/2) ⭐]()
+- Bubulle Corp (Part 1/2) ⭐
 
-- [📖 Introduction]()
-- [🌀 XML XPath confusion]()
+- 📖 Introduction
+- 🌀 XML XPath confusion
 
-- [Bubulle Corp (Part 2/2) ⭐⭐⭐]()
+- Bubulle Corp (Part 2/2) ⭐⭐⭐
 
-- [📖 Introduction]()
-- [⚙️ Apache HttpProtocolOptions]()
-- [🦖 Old Gunicorn HTTP parsing quirks]()
-- [📏 Increase the Content-Length]()
-- [🔗 Chaining everything together]()
+- 📖 Introduction
+- ⚙️ Apache HttpProtocolOptions
+- 🦖 Old Gunicorn HTTP parsing quirks
+- 📏 Increase the Content-Length
+- 🔗 Chaining everything together
 
 ## Keywords
 
@@ -124,7 +124,7 @@ tags: [Writeup](https://web.archive.org/web/20260418230027/https://mizu.re/tag/W
 - [Gunicorn 21.2.0](https://web.archive.org/web/20260418230027/https://github.com/benoitc/gunicorn/releases/tag/21.2.0) smuggling via HEAd method confusion and dangerous header name stripping.
 - Gunicorn [SCRIPT_NAME](https://web.archive.org/web/20260418230027/https://github.com/benoitc/gunicorn/blob/ab9c8301cb9ae573ba597154ddeea16f0326fc15/gunicorn/http/wsgi.py#L182) abuse to increase the [Content-Length](https://web.archive.org/web/20260418230027/https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Length).
 
-## [10 Fast Fishers ⭐]()
+## 10 Fast Fishers ⭐
 
 Difficulty: 464 points | 15 solves
 
@@ -142,7 +142,7 @@ Sources: [here](https://web.archive.org/web/20260418230027/https://mizu.re/artic
 
 ---
 
-### [📖 Introduction]()
+### 📖 Introduction
 
 The challenge was a fishing-themed version inspired by [10fastfingers.com](https://web.archive.org/web/20260418230027/https://10fastfingers.com/typing-test/french):
 
@@ -240,7 +240,7 @@ const browser = await puppeteer.launch({
 
 fig. 5: Source of /src/bot/src/bot.js.
 
-### [🦊 document.execCommand Firefox normalization]()
+### 🦊 document.execCommand Firefox normalization
 
 Before going further into the message event handler origin checks, it's important to figure out what the final goal is. In the game.js message handler (top-frame), the following snippet was executed:
 
@@ -398,7 +398,7 @@ In short, the command name is normalized using u_tolower, which is a **single-co
 - JavaScript engine: "\u0130".toLowerCase() → "\u0069\u0307" (i + combining dot above, 2 code points), so the === 'inserthtml' check passes.
 - CPP u_tolower: u_tolower(0x0130) → 0x0069 (plain i, single code point), so Firefox's internal lookup resolves \u0130nsertHTML to insertHTML and executes it.
 
-### [🔓 Bypassing the message event origin]()
+### 🔓 Bypassing the message event origin
 
 Now that we know which message has to be sent, we need to find a way to bypass the origin check. This is how it is performed:
 
@@ -425,7 +425,7 @@ How could an iframe in a page be hijacked?
 
 In fact, as long as a window has parent access over another window reference, it's possible to update its location! Since no X-Frame-Options header is present on the challenge, we can update the sub-frame's location :)
 
-### [🚀 Solution script]()
+### 🚀 Solution script
 
 Now that we have all the pieces, we just need to bring everything together to get the FLAG!
 
@@ -463,7 +463,7 @@ fig. 15: Sending the solution URL to the bot.
 
 fig. 16: Flag.
 
-## [Deep Blue ⭐⭐]()
+## Deep Blue ⭐⭐
 
 Difficulty: 454 points | 19 solves
 
@@ -475,7 +475,7 @@ Sources: [here](https://web.archive.org/web/20260418230027/https://mizu.re/artic
 
 ---
 
-### [📖 Introduction]()
+### 📖 Introduction
 
 This challenge website was a sea fish & crustaceans blog :D
 
@@ -504,7 +504,7 @@ await browser.setCookie({
 
 fig. 18: Source of /src/bot/src/bot.js.
 
-### [🛤️ Client-Side Path Traversal]()
+### 🛤️ Client-Side Path Traversal
 
 The first thing to notice is a Client-Side Path Traversal (CSPT) in the article component:
 
@@ -637,7 +637,7 @@ fig. 27: CSPT via Angular matrix params.
 
 In short, everything after the ; in the article segment is ignored by the angular routing. However, for the apache server (backend), they are real directories in the path resolution, preventing it from triggering a 400!
 
-### [🎭 mime_content_type JSON / x-quicktime polyglot]()
+### 🎭 mime_content_type JSON / x-quicktime polyglot
 
 Now that we have a CSPT, since the articles content contains raw HTML, we "only" need to find a way to control the CSPT response to trigger an XSS. To do this we need to take advantage of the read/api/v1/image?action=XXX endpoint.
 
@@ -775,7 +775,7 @@ fig. 35: Valid application/json / image/x-quicktime polyglot.
 
 *Apparently, most players solved this step by nesting {"x":...} a thousand times, abusing this with a JSON-only payload...*
 
-### [🔗 Chaining everything together]()
+### 🔗 Chaining everything together
 
 ```py
 #!/usr/bin/python3
@@ -827,7 +827,7 @@ fig. 36: Solution script.
 
 fig. 37: Flag.
 
-## [Splash Studio ⭐⭐⭐]()
+## Splash Studio ⭐⭐⭐
 
 Difficulty: 500 points | 1 solves
 
@@ -843,7 +843,7 @@ Sources: [here](https://web.archive.org/web/20260418230027/https://mizu.re/artic
 
 ---
 
-### [📖 Introduction]()
+### 📖 Introduction
 
 >
 
@@ -938,7 +938,7 @@ process.stdin.on("data", (data) => {
 
 fig. 41: Source of /src/bot/src/bot.js.
 
-### [💥 DOM Clobbering]()
+### 💥 DOM Clobbering
 
 For a hard challenge like this one, which likely involves a specific chain, I always prefer starting from the end to get a sense of where the challenge is taking me. With that in mind, let's start with the DOM Clobbering.
 
@@ -1036,7 +1036,7 @@ fig. 52: Working DOM Clobbering payload.
 
 fig. 53: Valid DOM Clobbering.
 
-### [🧩 document.createElement quirk]()
+### 🧩 document.createElement quirk
 
 At that point we know how to XSS using DOM Clobbering. However, we have one new big issue. We need the <base> tag, which isn't allowed by default by DOMPurify ([ref](https://web.archive.org/web/20260418230027/https://github.com/cure53/DOMPurify/blob/main/src/tags.ts)), nor in the challenge configuration.
 
@@ -1148,7 +1148,7 @@ console.log(elem.outerHTML); // <Ḿizu x="<img src=x >
 
 fig. 61: JSDOM outerHTML serialization without attribute encoding.
 
-### [✅ Invalid but valid]()
+### ✅ Invalid but valid
 
 At that point, there is one last problem to overcome.
 
@@ -1216,7 +1216,7 @@ fig. 66: Fuzzer output.
 
 Luckily for us, there is **a single** valid nodeName starting with a k in the DOMPurify default allow list: kbd ([ref](https://web.archive.org/web/20260418230027/https://github.com/cure53/DOMPurify/blob/8bcbf73ae7eb56e7b4f1300b66cf543342c7ee27/src/tags.ts#L64))! :)
 
-### [🔗 Chaining everything together]()
+### 🔗 Chaining everything together
 
 From now on, we have all the keys to solve the challenge. To sum up, we need to:
 
@@ -1233,7 +1233,7 @@ fig. 67: Solution command.
 
 fig. 68: Flag.
 
-## [Bubulle Corp (Part 1/2) ⭐]()
+## Bubulle Corp (Part 1/2) ⭐
 
 Difficulty: 173 points | 173 solves
 
@@ -1249,7 +1249,7 @@ Sources: [here](https://web.archive.org/web/20260418230027/https://mizu.re/artic
 
 ---
 
-### [📖 Introduction]()
+### 📖 Introduction
 
 For this challenge, the application was a very basic fake corporate dashboard.
 
@@ -1346,7 +1346,7 @@ fig. 71: Source of /src/app/routes/settings.py.
 
 The icon_url restriction is the only gate that blocks the flag from being retrieved since the proxy only handles HTTP, and the challenge doesn't have internet access.
 
-### [🌀 XML XPath confusion]()
+### 🌀 XML XPath confusion
 
 In order to bypass /settings, it was important to compare how the XML was sanitized against how it was consumed on /icon.
 
@@ -1377,7 +1377,7 @@ fig. 72: Flag.
 
 *This challenge was inspired by the [Gitlab CVE-2024-45409](https://web.archive.org/web/20260418230027/https://projectdiscovery.io/blog/ruby-saml-gitlab-auth-bypass). It was mostly here to introduce the second part of the challenge, which is way harder :)*
 
-## [Bubulle Corp (Part 2/2) ⭐⭐⭐]()
+## Bubulle Corp (Part 2/2) ⭐⭐⭐
 
 Difficulty: 493 points | 4 solves
 
@@ -1393,7 +1393,7 @@ Sources: [here](https://web.archive.org/web/20260418230027/https://mizu.re/artic
 
 ---
 
-### [📖 Introduction]()
+### 📖 Introduction
 
 For the second part of the challenge, the goal was to somehow read the flag from the gunicorn backend application.
 
@@ -1451,7 +1451,7 @@ fig. 76: Source of /src/internal-backend/requirements.txt.
 
 The only problem for request smuggling exploitation is that the apache [ProxyPass](https://web.archive.org/web/20260418230027/https://httpd.apache.org/docs/current/fr/mod/mod_proxy.html#proxypass) directive **blocks** connection keep-alive/reuse with keepalive=Off disablereuse=On. Because of that, a simple smuggling would be blind, as only the first response is returned by apache to the front-end.
 
-### [⚙️ Apache HttpProtocolOptions]()
+### ⚙️ Apache HttpProtocolOptions
 
 First of all, it's important to understand what HttpProtocolOptions Unsafe means for apache.
 
@@ -1561,7 +1561,7 @@ if (r->proto_num == HTTP_VERSION(0, 9) && error == http_error_none) {
 
 fig. 83: Apache HTTP/0.9 method check ([source](https://web.archive.org/web/20260418230027/https://github.com/apache/httpd/blob/a62c08dd334f5827124963435272c278ce5c58b7/server/protocol.c#L1217-L1222)).
 
-### [🦖 Old Gunicorn HTTP parsing quirks]()
+### 🦖 Old Gunicorn HTTP parsing quirks
 
 Now that we know exactly how HttpProtocolOptions Unsafe works, we need to find gunicorn HTTP parsing issues.
 
@@ -1676,7 +1676,7 @@ Yes! For apache it would be a normal request, not a HEAD one, meaning it will tr
 
 *Having a response without Content-Length would have allowed bypassing the keepalive=Off disablereuse=On restriction too, by the way. While that wasn't possible here, it's worth keeping in mind.*
 
-### [📏 Increase the Content-Length]()
+### 📏 Increase the Content-Length
 
 Even if it looks like a win, one last barrier blocks us from retrieving the flag: the / route's Content-Length...
 
@@ -1735,7 +1735,7 @@ fig. 100: 308 response when the request path equals SCRIPT_NAME.
 
 *Root cause: [https://github.com/pallets/werkzeug/blob/3.1.8/src/werkzeug/routing/exceptions.py#L28-L35](https://web.archive.org/web/20260418230027/https://github.com/pallets/werkzeug/blob/3.1.8/src/werkzeug/routing/exceptions.py#L28-L35).*
 
-### [🔗 Chaining everything together]()
+### 🔗 Chaining everything together
 
 Now we have all the keys to get the flag. The only missing piece we aren't going to cover is that, since the front-end uses the pycurl library to send requests, there is a CRLF injection in every option (as in every other language binding). Because of that, we can use the request method to send our full raw request.
 

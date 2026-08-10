@@ -76,11 +76,7 @@ ffmpeg
 
 homeassistant
 
-[
-
 TOC Element
-
-]()
 
 ## Introduction
 

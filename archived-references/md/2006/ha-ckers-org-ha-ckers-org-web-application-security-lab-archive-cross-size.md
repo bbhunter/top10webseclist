@@ -77,7 +77,7 @@ There is another application that I haven’t figured out a good use for, but vi
 
 Another alternative is that the image is either there or not there based on the user’s state (members area directing them to a login screen which will prompt a JavaScript error that you can trap).Â Again, all of these conditions may be rare, but it points to the ability to use a remote image to not only control remote cross site scripting vectors, but to also know the state of users on remote websites via CSRF.Â Scary!
 
-  This entry was posted on Friday, July 28th, 2006 at 1:40 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20060728/cross-domain-leakage-with-image-size/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20060728/cross-domain-leakage-with-image-size/trackback/) from your own site.
+  This entry was posted on Friday, July 28th, 2006 at 1:40 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20060728/cross-domain-leakage-with-image-size/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20060728/cross-domain-leakage-with-image-size/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

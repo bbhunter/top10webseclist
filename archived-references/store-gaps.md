@@ -30,7 +30,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 `raw_sha256` offline - re-import it rather than re-crawling.
 
 
-1007 archived reference(s) name 1080 store object(s) that are no longer held: 54 browser_dom_sha256, 131 content_sha256, 5 landing_sha256, 2 linked_document_sha256, 880 raw_sha256, 8 translation_sha256.
+1002 archived reference(s) name 1071 store object(s) that are no longer held: 54 browser_dom_sha256, 131 content_sha256, 5 landing_sha256, 2 linked_document_sha256, 879 raw_sha256.
 
 | Reference | Kind | Missing | Cited at |
 |---|---|---|---|
@@ -46,7 +46,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <http://blog.andlabs.org/2010/12/cracking-hashes-in-javascript-cloud.html> | article | `raw_sha256` | `2010.md:66` |
 | <http://blog.andlabs.org/2010/12/performing-ddos-attacks-with-html5.html> | article | `raw_sha256` | `2010.md:65` |
 | <http://blog.andlabs.org/2010/12/port-scanning-with-html5-and-js-recon.html> | article | `raw_sha256` | `2010.md:64` |
-| <http://blog.c22.cc/2011/04/22/surveymonkey-ip-spoofing/> | article | `raw_sha256`, `translation_sha256` | `2011.md:46` |
+| <http://blog.c22.cc/2011/04/22/surveymonkey-ip-spoofing/> | article | `raw_sha256` | `2011.md:46` |
 | <http://blog.checkpoint.com/2015/08/04/wordpress-vulnerabilities-1/> | article | `raw_sha256` | `2015.md:28` |
 | <http://blog.kotowicz.net/2010/11/xss-track-how-to-quietly-track-whole.html> | article | `raw_sha256` | `2010.md:52` |
 | <http://blog.kotowicz.net/2011/01/how-to-get-sql-query-contents-from-sql.html> | article | `raw_sha256` | `2011.md:35` |
@@ -379,13 +379,11 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://honoki.net/2020/03/18/xxe-scape-through-the-front-door-circumventing-the-firewall-with-http-request-smuggling/> | article | `raw_sha256` | `2020.md:49` |
 | <https://hovav.net/ucsd/papers/ms12.html> | article | `raw_sha256` | `2012.md:78` |
 | <https://i.blackhat.com/BH-US-23/Presentations/US-23-Genuer-chained-to-hit-discovering-new-vectors-to-gain-remote-and-root-access-in-sap-enterprise-software-wp.pdf> | whitepaper | `content_sha256` | `2023.md:73` |
-| <https://i.blackhat.com/BH-USA-25/Presentations/USA-25-Barnett-Lost-In-Translation-Exploiting-Unicode-compressed.pdf> | whitepaper | `translation_sha256` | `2025.md:8` |
 | <https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-Slides.pdf> | whitepaper | `content_sha256` | `2026-ai.md:63` |
 | <https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-Slides.pdf> | whitepaper | `content_sha256` | `2026-ai.md:72` |
 | <https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf> | whitepaper | `content_sha256` | `2026-ai.md:72` |
 | <https://i.blackhat.com/BH-USA-26/Presentations/US-26-Stacey-CRLF-Powered-Desync-Attacks-Wed.pdf> | whitepaper | `content_sha256` | `2026-ai.md:58` |
 | <https://i.blackhat.com/USA-22/Wednesday/US-22-Doyhenard-Internal-Server-Error.pdf> | whitepaper | `content_sha256` | `2022.md:27` |
-| <https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf> | whitepaper | `translation_sha256` | `2018.md:5` |
 | <https://ieeexplore.ieee.org/document/8418635/> | article | `content_sha256` | `2018.md:75` |
 | <https://ieeexplore.ieee.org/document/8835223> | article | `content_sha256` | `2019.md:80` |
 | <https://img2.helpnetsecurity.com/dl/articles/JavaScript_Hijacking.pdf> | whitepaper | `content_sha256` | `2007.md:106` |
@@ -481,14 +479,12 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes> | article | `raw_sha256` | `2024.md:9` |
 | <https://mksben.l0.cm/2018/05/cve-2018-5175-firefox-csp-strict-dynamic-bypass.html> | advisory | `raw_sha256`, `browser_dom_sha256` | `2016-17.md:25`, `2018.md:38` |
 | <https://mohemiv.com/all/exploiting-xxe-with-local-dtd-files/> | article | `raw_sha256` | `2018.md:11` |
-| <https://mp.weixin.qq.com/s/kUlXxJxKO-70QMNCQvLHZA> | article | `raw_sha256` | `2025.md:53` |
 | <https://nathandavison.com/blog/exploiting-email-address-parsing-with-aws-ses> | article | `raw_sha256` | `2020.md:31` |
 | <https://neilmadden.blog/2022/04/19/psychic-signatures-in-java/> | article | `raw_sha256` | `2022.md:12` |
 | <https://nodejs.org/en/blog/vulnerability/march-2026-hashdos> | article | `raw_sha256` | `2026-ai.md:75` |
 | <https://nowotarski.info/http2-continuation-flood-technical-details/> | article | `raw_sha256` | `2024.md:42` |
 | <https://oauth.net/advisories/2009-1/> | advisory | `raw_sha256` | `2009.md:106` |
 | <https://octagon.net/blog/2022/05/29/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution/> | article | `raw_sha256` | `2022.md:53` |
-| <https://offzone.moscow/upload/iblock/11a/sagouc86idiapdb8f29w41yaupqv6fwv.pdf> | whitepaper | `translation_sha256` | `2023.md:10` |
 | <https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html> | article | `raw_sha256` | `2016-17.md:8` |
 | <https://opossum-attack.com/> | article | `raw_sha256` | `2025.md:24` |
 | <https://orenlab.cis.bgu.ac.il/p/DrawnApart> | article | `raw_sha256` | `2022.md:66` |
@@ -615,7 +611,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://srcincite.io/blog/2024/07/21/jndi-injection-rce-via-path-manipulation-in-memoryuserdatabasefactory.html> | article | `raw_sha256` | `2024.md:82` |
 | <https://srcincite.io/blog/2024/11/25/remote-code-execution-with-spring-properties.html> | article | `raw_sha256` | `2024.md:26` |
 | <https://superevr.com/blog/2011/xss-in-skype-for-ios/> | article | `raw_sha256` | `2011.md:43` |
-| <https://swarm.ptsecurity.com/advanced-mssql-injection-tricks/> | article | `translation_sha256` | `2020.md:27` |
 | <https://sweet32.info/> | article | `raw_sha256` | `2016-17.md:76` |
 | <https://teamusec.de/publications/conf-ccs-fahlhmsbf12/> | article | `raw_sha256` | `2012.md:91` |
 | <https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/> | article | `raw_sha256` | `2026-ai.md:105` |
@@ -759,7 +754,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://www.blackhat.com/docs/us-16/materials/us-16-VanGoethem-HEIST-HTTP-Encrypted-Information-Can-Be-Stolen-Through-TCP-Windows-wp.pdf> | whitepaper | `content_sha256` | `2016-17.md:84` |
 | <https://www.blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf> | whitepaper | `content_sha256` | `2008.md:94` |
 | <https://www.blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf> | whitepaper | `content_sha256` | `2009.md:108` |
-| <https://www.blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf> | whitepaper | `content_sha256`, `translation_sha256` | `2009.md:111` |
+| <https://www.blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf> | whitepaper | `content_sha256` | `2009.md:111` |
 | <https://www.brokenbrowser.com/zombie-alert/> | article | `raw_sha256` | `2016-17.md:44` |
 | <https://www.chosenplaintext.ca/2015/03/31/jwt-algorithm-confusion.html> | article | `raw_sha256` | `2015.md:57` |
 | <https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf> | whitepaper | `content_sha256` | `2010.md:102` |
@@ -784,7 +779,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://www.gnucitizen.org/blog/self-contained-xss-attacks/> | article | `raw_sha256` | `2006.md:94` |
 | <https://www.gnucitizen.org/blog/social-networks-evil-twin-attacks/> | article | `raw_sha256`, `browser_dom_sha256` | `2008.md:67` |
 | <https://www.gnucitizen.org/blog/username-enumeration-vulnerabilities> | article | `raw_sha256` | `2007.md:83` |
-| <https://www.gnucitizen.org/projects/0day-quicktime-pwns-firefox/> | article | `raw_sha256`, `content_sha256`, `translation_sha256` | `2007.md:89` |
+| <https://www.gnucitizen.org/projects/0day-quicktime-pwns-firefox/> | article | `raw_sha256`, `content_sha256` | `2007.md:89` |
 | <https://www.gnucitizen.org/projects/total-surveillance-made-easy-with-voip-phones/> | article | `raw_sha256` | `2008.md:66` |
 | <https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations> | article | `raw_sha256`, `browser_dom_sha256` | `2019.md:31` |
 | <https://www.gosecure.net/blog/2021/10/19/a-scientific-notation-bug-in-mysql-left-aws-waf-clients-vulnerable-to-sql-injection/> | article | `raw_sha256`, `browser_dom_sha256` | `2021.md:39` |
@@ -890,7 +885,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf> | whitepaper | `content_sha256` | `2019.md:78` |
 | <https://www.ndss-symposium.org/wp-content/uploads/2026-f697-paper.pdf> | whitepaper | `content_sha256` | `2026-ai.md:92` |
 | <https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf> | whitepaper | `content_sha256` | `2026-ai.md:65` |
-| <https://www.ndss-symposium.org/wp-content/uploads/f0697-yang-slides.pdf> | whitepaper | `content_sha256`, `translation_sha256` | `2026-ai.md:92` |
+| <https://www.ndss-symposium.org/wp-content/uploads/f0697-yang-slides.pdf> | whitepaper | `content_sha256` | `2026-ai.md:92` |
 | <https://www.paloaltonetworks.com/blog/prisma-cloud/github-actions-worm-dependencies/> | article | `raw_sha256` | `2023.md:70` |
 | <https://www.paulosyibelo.com/2024/02/cross-window-forgery-web-attack-vector.html?m=1> | article | `raw_sha256` | `2024.md:49` |
 | <https://www.praetorian.com/blog/azure-b2c-crypto-misuse-and-account-compromise/> | article | `raw_sha256` | `2023.md:63` |

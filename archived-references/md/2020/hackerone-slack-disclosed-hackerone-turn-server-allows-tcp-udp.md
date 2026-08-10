@@ -136,7 +136,7 @@ F281911: [turn_udp(53)_proxy_response.pcapng](https://hackerone-us-west-2-produc
 
 .
 
-[April 19, 2018, 12:19pm UTC]()
+April 19, 2018, 12:19pm UTC
 
 [@fyunaz](https://hackerone.com/fyunaz) thanks for spinning that test environment.
 
@@ -207,7 +207,7 @@ F288621: [live-fix-port53-127.0.0.1-10.33.0.96-response.pcapng](https://hackeron
 
 .
 
-[April 19, 2018, 6:50pm UTC]()
+April 19, 2018, 6:50pm UTC
 
 [@sandrogauci](https://hackerone.com/sandrogauci) Thanks for your detail response, we are looking into this.
 
@@ -221,7 +221,7 @@ F288621: [live-fix-port53-127.0.0.1-10.33.0.96-response.pcapng](https://hackeron
 
 .
 
-[April 19, 2018, 11:30pm UTC]()
+April 19, 2018, 11:30pm UTC
 
 [@sandrogauci](https://hackerone.com/sandrogauci) We added a patch to the `z-slack-calls-orca-research1.slack-core.com` to make it work for a legitimate traffic. Can you please re-run the test to that host again and confirm that the vulnerability fixed and we are not blocking any legitimate traffic?
 
@@ -237,7 +237,7 @@ Thanks!
 
 .
 
-[April 20, 2018, 2:55am UTC]()
+April 20, 2018, 2:55am UTC
 
 Hi [@fyunaz](https://hackerone.com/fyunaz) glad that it helped. I have rerun the tool on the new patch and yes it does reflect the recommended change, i.e. it looks like a correct fix.
 
@@ -257,7 +257,7 @@ lines of interest from my test log:
 
 .
 
-[April 20, 2018, 3:34am UTC]()
+April 20, 2018, 3:34am UTC
 
 [@sandrogauci](https://hackerone.com/sandrogauci) Awesome! Thanks for confirming the patch works. We will continue working on this. I will keep you updated when we have additional information.
 
@@ -271,7 +271,7 @@ lines of interest from my test log:
 
 .
 
-[April 20, 2018, 6:40am UTC]()
+April 20, 2018, 6:40am UTC
 
 Excellent - yes do keep me up to date
 
@@ -285,7 +285,7 @@ Excellent - yes do keep me up to date
 
 .
 
-[April 30, 2018, 6:36pm UTC]()
+April 30, 2018, 6:36pm UTC
 
 Hi [@fyunaz](https://hackerone.com/fyunaz) - following up on the status of this one. Do you require anything else from our side?
 
@@ -299,7 +299,7 @@ Hi [@fyunaz](https://hackerone.com/fyunaz) - following up on the status of this 
 
 .
 
-[April 30, 2018, 10:58pm UTC]()
+April 30, 2018, 10:58pm UTC
 
 Hi [@sandrogauci](https://hackerone.com/sandrogauci), No, there's nothing that we need from your end at this point. Our team is still working on the additional fix. We will let you know when we have additional information.
 
@@ -315,7 +315,7 @@ Thanks!
 
 .
 
-[May 11, 2018, 8:03pm UTC]()
+May 11, 2018, 8:03pm UTC
 
 Hi [@sandrogauci](https://hackerone.com/sandrogauci),
 
@@ -333,7 +333,7 @@ Thanks!
 
 .
 
-[May 14, 2018, 7:38am UTC]()
+May 14, 2018, 7:38am UTC
 
 Will test as soon as we can and get back to you.
 
@@ -347,7 +347,7 @@ Will test as soon as we can and get back to you.
 
 .
 
-[May 16, 2018, 4:53pm UTC]()
+May 16, 2018, 4:53pm UTC
 
 [@sandrogauci](https://hackerone.com/sandrogauci), kindly following up on the status. Did you confirm the fix? I think we can close this issue but would be great if can get your testing done before closing this.
 
@@ -361,7 +361,7 @@ Will test as soon as we can and get back to you.
 
 .
 
-[May 16, 2018, 5:31pm UTC]()
+May 16, 2018, 5:31pm UTC
 
 [@fyunaz](https://hackerone.com/fyunaz) thanks for the follow up. I've been at a conference these last days and swamped with work. I think however I'll have time to verify the fixes sometime tomorrow. Do we test on live?
 
@@ -375,7 +375,7 @@ Will test as soon as we can and get back to you.
 
 .
 
-[May 16, 2018, 5:44pm UTC]()
+May 16, 2018, 5:44pm UTC
 
 [@sandrogauci](https://hackerone.com/sandrogauci) Tomorrow sounds good. And yes, please do the testing on prod (live) system. Let me know if you need more information.
 
@@ -391,7 +391,7 @@ Thanks!
 
 .
 
-[May 19, 2018, 7:47pm UTC]()
+May 19, 2018, 7:47pm UTC
 
 Hi [@fyunaz](https://hackerone.com/fyunaz) - we have tested the fix and realised that the fix blocks everything but UDP packets towards the WebRTC gateway. We didn't find ways to exploit this configuration to get any responses and are happy to close this issue. Thanks for awaiting our confirmation. Hope that our feedback and various retests were valuable to you and your colleagues.
 
@@ -405,7 +405,7 @@ Hi [@fyunaz](https://hackerone.com/fyunaz) - we have tested the fix and realised
 
 .
 
-[May 21, 2018, 7:12am UTC]()
+May 21, 2018, 7:12am UTC
 
 Just in case it was not clear from my response; I confirm that the fix appears to do the job.
 
@@ -419,7 +419,7 @@ Just in case it was not clear from my response; I confirm that the fix appears t
 
 closed the report and changed the status to ****Resolved**.
 
-[May 21, 2018, 4:18pm UTC]()
+May 21, 2018, 4:18pm UTC
 
 Thank you for the confirmation and for your patience! We will resolve and reward shortly!
 
@@ -433,7 +433,7 @@ Thank you for the confirmation and for your patience! We will resolve and reward
 
 rewarded [sandrogauci](https://hackerone.com/sandrogauci) with a **$3,500** bounty.
 
-[May 21, 2018, 9:52pm UTC]()
+May 21, 2018, 9:52pm UTC
 
 Thank you for your report!
 
@@ -449,7 +449,7 @@ The Slack Security Team
 
 .
 
-[January 21, 2020, 11:20am UTC]()
+January 21, 2020, 11:20am UTC
 
 Hi [@fyunaz](https://hackerone.com/fyunaz) can you make this report public please?
 
@@ -457,7 +457,7 @@ Hi [@fyunaz](https://hackerone.com/fyunaz) can you make this report public pleas
 
 requested to disclose this report.
 
-[January 31, 2020, 4am UTC]()
+January 31, 2020, 4am UTC
 
 [
 
@@ -469,7 +469,7 @@ requested to disclose this report.
 
 .
 
-[February 25, 2020, 8:09pm UTC]()
+February 25, 2020, 8:09pm UTC
 
 Hey [@sandrogauci](https://hackerone.com/sandrogauci),
 
@@ -487,7 +487,7 @@ We apologize for the delay.
 
 cancelled the request to disclose this report.
 
-[February 25, 2020, 8:09pm UTC]()
+February 25, 2020, 8:09pm UTC
 
 As noted above
 
@@ -501,7 +501,7 @@ As noted above
 
 .
 
-[February 28, 2020, 2:45am UTC]()
+February 28, 2020, 2:45am UTC
 
 Hi [@bugtriage-josh](https://hackerone.com/bugtriage-josh) - that comes unexpectedly as we were under the impression that you successfully resolved this issue 2 years ago. We have an educational presentation to give at Kamailio World and were hoping to use this report as an example of our contribution to the WebRTC security space. We're not interested in making Slack look bad of course; only to have practical and real examples to the VoIP/WebRTC developers in the audience.
 
@@ -511,7 +511,7 @@ Could you let me know when your review is planned to be complete so that we can 
 
 requested to disclose this report.
 
-[March 4, 2020, 3:29pm UTC]()
+March 4, 2020, 3:29pm UTC
 
 [
 
@@ -523,7 +523,7 @@ requested to disclose this report.
 
 agreed to disclose this report.
 
-[March 12, 2020, 12:15am UTC]()
+March 12, 2020, 12:15am UTC
 
 Hey [@sandrogauci](https://hackerone.com/sandrogauci)
 
@@ -531,4 +531,4 @@ We should be good to go with disclosure now. Sorry about the delay and thank you
 
 This report has been disclosed.
 
-[March 12, 2020, 12:15am UTC]()
+March 12, 2020, 12:15am UTC

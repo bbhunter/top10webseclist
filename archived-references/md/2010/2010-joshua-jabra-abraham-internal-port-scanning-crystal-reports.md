@@ -92,7 +92,7 @@ Enjoy!
 Regards,
  Jabra
 
-  This entry was posted on Thursday, December 2nd, 2010 at 10:15 am and is filed under [Exploitation](https://spl0it.wordpress.com/category/exploitation/), [Talks](https://spl0it.wordpress.com/category/talks/), [WebApp](https://spl0it.wordpress.com/category/webapp/). You can follow any responses to this entry through the [RSS 2.0](https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/feed/) feed. You can [leave a response](), or [trackback](https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/trackback/) from your own site.
+  This entry was posted on Thursday, December 2nd, 2010 at 10:15 am and is filed under [Exploitation](https://spl0it.wordpress.com/category/exploitation/), [Talks](https://spl0it.wordpress.com/category/talks/), [WebApp](https://spl0it.wordpress.com/category/webapp/). You can follow any responses to this entry through the [RSS 2.0](https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/feed/) feed. You can leave a response, or [trackback](https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/trackback/) from your own site.
 
 Design a site like this with WordPress.com
 

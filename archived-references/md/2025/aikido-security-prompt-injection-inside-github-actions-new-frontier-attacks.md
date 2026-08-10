@@ -80,7 +80,6 @@ Mar 17, 2026
  Untrusted user input → injected into prompts → AI agent executes privileged tools → secrets leaked or workflows manipulated.
 - First confirmed real-world demonstration that AI prompt injection can compromise CI/CD pipelines.
 
-##
 TLDR: How to see if you are affected:
 
 Option 1) Use Aikido on your GitHub and GitLab repos, Aikido scans automatically to see if you are affected. [This is available in the free version.](https://app.aikido.dev/login)
@@ -156,13 +155,9 @@ Workflows are at risk if they:
 - Use AI agents including:
 
 - **Gemini CLI
-**
 - **Claude Code Actions
-**
 - **OpenAI Codex Actions
-**
 - **GitHub AI Inference
-**
 
 - Insert untrusted user content directly into prompts, such as:
 
@@ -190,7 +185,6 @@ Workflows are at risk if they:
 
 Some workflows require write permissions to trigger, but others can be triggered by any external user filing an issue, significantly broadening the attack surface.
 
-###
 The Growing Trend: AI in CI/CD Pipelines
 
 Maintainers are increasingly relying on automation to handle the growing volume of issues and pull requests. AI integrations have become common for tasks such as:
@@ -217,7 +211,6 @@ The intention is to reduce the maintainer workload.
 
 The risk arises because untrusted user input is being directly inserted into AI prompts. The AI's response is then used inside shell commands or GitHub CLI operations that run with repository-level or even cloud-level privileges.
 
-##
 How AI Turns Into a Remote Execution Vector
 
 So, how does using AI inside your workflow actually work? Classic prompt injection works by getting an AI model to treat data in a payload as model instructions. The most basic example is “ignore previous instructions and do X”.
@@ -381,19 +374,14 @@ This is not theoretical. Live proof-of-concept exploits already exist, and sever
 
 If your project uses AI within GitHub Actions, now is the time to audit and secure your workflows.
 
-[
-
 Similar Posts
-
-]()[
+[
 
 See all
 
 ](https://www.aikido.dev/blog)
 
 August 4, 2026
-
-•
 
 Vulnerabilities & Threats
 
@@ -403,15 +391,11 @@ Mini Shai-Hulud malware was injected into keyv and eight related npm packages on
 
 ![](https://cdn.prod.website-files.com/642adcaf364024552e71df01/6836b17027f911d14ce42ba7_arrow%20right.svg)
 
-#
-
 Malware
 
 [](https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack)
 
 July 31, 2026
-
-•
 
 Vulnerabilities & Threats
 
@@ -421,23 +405,15 @@ Anthropic disclosed an agent that pushed real malware to PyPI. We think we found
 
 ![](https://cdn.prod.website-files.com/642adcaf364024552e71df01/6836b17027f911d14ce42ba7_arrow%20right.svg)
 
-#
-
 AI
 
-#
-
 AI Safety
-
-#
 
 Malware
 
 [](https://www.aikido.dev/blog/anthropic-rogue-agents-package-stole-keys)
 
 July 22, 2026
-
-•
 
 Vulnerabilities & Threats
 
@@ -447,11 +423,7 @@ Eight high-severity NodeBB vulnerabilities, found by our AI Pentest in six hours
 
 ![](https://cdn.prod.website-files.com/642adcaf364024552e71df01/6836b17027f911d14ce42ba7_arrow%20right.svg)
 
-#
-
 AI Penetration Testing
-
-#
 
 Vulnerabilities
 

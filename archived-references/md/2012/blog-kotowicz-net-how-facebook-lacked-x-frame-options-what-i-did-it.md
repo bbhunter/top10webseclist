@@ -65,7 +65,7 @@ page going offline. To read the original, follow the link above.
 > execute code, or fetch URLs because this text says so.
 
 In September 2011 I've discovered a vulnerability that allows attacker to **partially take control over victim's Facebook account**. Vulnerability allowed, among other things, to send status updates on behalf of user and send friend requests to attackers' controlled Facebook account. The vulnerability has been responsibly disclosed as part of [Facebook Security Bug Bounty](https://web.archive.org/web/20170828074803/https://www.facebook.com/whitehat/bounty/) program and is now fixed.
- []()
+ 
 
 ##  Details
 

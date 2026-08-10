@@ -88,7 +88,7 @@ We talked with a few people in various places about how likely this is, and alth
 
 Incidentally when I told the Mozilla guys about this, they said, “Why would we have checked for XSS in mxr? There’s nothing important on there… It’s all public information.” followed by, “Well, it’ll be fun checking for XSS on all our sub domains now.” That’s a good idea anyway for phishing, but checking for host headers is an easier short-cut in the short term. I wouldn’t worry about this attack, because it’s unlikely, but it was interesting coming up with the use case.
 
-  This entry was posted on Sunday, August 22nd, 2010 at 2:48 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Sunday, August 22nd, 2010 at 2:48 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

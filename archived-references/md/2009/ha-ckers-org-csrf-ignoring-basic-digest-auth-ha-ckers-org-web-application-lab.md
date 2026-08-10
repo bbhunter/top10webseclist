@@ -75,7 +75,7 @@ One of the single most annoying things about CSRF and router hacking etc… is t
 
 I know there are others tags that work, but probably not as well as this method from what I’ve seen so far. I haven’t found a reliable way in other browsers to allow this to happen, but I’ve only barely scratched the surface of the vast number of CSRFable tags out there. But anyway, yes, this doesn’t cause the Basic or Digest auth dialog to fire so it will be more stealthy upon performing a CSRF that fails. Of course for POST based CSRF you’re still out of luck…
 
-  This entry was posted on Tuesday, June 30th, 2009 at 12:51 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Tuesday, June 30th, 2009 at 12:51 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

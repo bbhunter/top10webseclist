@@ -105,11 +105,11 @@ Inria Rennes – Bretagne Atlantique , IRISA-D4 - LANGAGE ET GÉNIE LOGICIEL
 
   Complete list of metadatas  ** Display
 
-  Cited literature [23 references]    [ ** Display ]() [ ** Hide ]() [ ** Download ](https://hal.inria.fr/hal-01652021v1/html_references)
+  Cited literature [23 references]     ** Display   ** Hide  [ ** Download ](https://hal.inria.fr/hal-01652021v1/html_references)
 
 ---
 
   https://hal.inria.fr/hal-01652021
- Contributor : [Romain Rouvoy](https://hal.inria.fr/search/index/q/*/contributorId_i/102479/) <[]() >
+ Contributor : [Romain Rouvoy](https://hal.inria.fr/search/index/q/*/contributorId_i/102479/) < >
  Submitted on : Saturday, December 2, 2017 - 3:39:47 PM
  Last modification on : Friday, September 13, 2019 - 9:48:41 AM

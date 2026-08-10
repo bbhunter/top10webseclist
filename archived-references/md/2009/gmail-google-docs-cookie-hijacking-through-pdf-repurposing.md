@@ -93,8 +93,6 @@ Advisory: Gmail - Google Docs Cookie Hijacking
 
  **[Advisory in PDF (advisory_gmail_google_docs_pdf_repurposing_attack.pdf)](advisory_gmail_google_docs_pdf_repurposing_attack.pdf)
 
-**
-
 ---
 
 # Discussion

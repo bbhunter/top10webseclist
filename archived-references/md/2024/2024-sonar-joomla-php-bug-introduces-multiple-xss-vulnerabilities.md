@@ -65,14 +65,14 @@ page going offline. To read the original, follow the link above.
 
 *Update 2024-02-23: Full technical details added.*
 
-## TL;DR overview[]()
+## TL;DR overview
 
 - Multiple cross-site scripting vulnerabilities in Joomla allow attackers to inject malicious scripts via insufficiently sanitized user input, affecting both front-end and back-end components of the CMS.
 - The flaws stem from inconsistent output encoding across Joomla's template and component system, where some input sources are sanitized while others are passed to the browser unescaped.
 - Successful XSS exploitation in Joomla's admin interface can lead to session hijacking, account takeover, and malicious content injection—particularly impactful for high-traffic public websites.
 - Joomla users should apply security patches promptly and configure Content Security Policy headers as an additional layer of defense against XSS exploitation.
 
-## Key Information[]()
+## Key Information
 
 - Sonar’s Vulnerability Research Team has discovered an issue that led to multiple XSS vulnerabilities in the popular Content Management System [Joomla](https://www.joomla.org/).
 - The issue discovered with the help of [SonarQube Cloud](https://sonarcloud.io/) affects Joomla’s core filter component and is tracked as [CVE-2024-21726](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2024-21726).
@@ -81,7 +81,7 @@ page going offline. To read the original, follow the link above.
 - The bug was fixed with PHP versions 8.3 and 8.4, but not backported to older PHP versions.
 - Joomla released a [security announcement](https://developer.joomla.org/security-centre/929-20240205-core-inadequate-content-filtering-within-the-filter-code.html) and published [version 5.0.3/4.4.3](https://www.joomla.org/announcements/release-news/5904-joomla-5-0-3-and-4-4-3-security-and-bug-fix-release.html), which mitigates the vulnerability.
 
-## Joomla[]()
+## Joomla
 
 Joomla is a free and open-source Content Management System (CMS) used for building websites and online applications. Roughly [2% of all websites](https://w3techs.com/technologies/overview/content_management) use Joomla, which makes it one of the most popular CMSs with millions of deployments worldwide.
 
@@ -89,7 +89,7 @@ The widespread usage of Joomla and the fact that most deployments are publicly a
 
 In this article, we dive into an interesting XSS issue detected by [SonarQube Cloud](https://sonarcloud.io/), which led us down the rabbit hole to the discovery of a bug in PHP. We will explain how an inconsistency in PHP’s mbstring functions can be leveraged by attackers to bypass Joomla’s input sanitization introducing multiple XSS vulnerabilities.
 
-## Impact[]()
+## Impact
 
 Joomla versions 5.0.2/4.4.2 and below are prone to multiple XSS vulnerabilities. Attackers tricking an administrator into clicking on a malicious link can gain remote code execution (RCE):
 
@@ -97,7 +97,7 @@ Joomla [version 5.0.3/4.4.3](https://www.joomla.org/announcements/release-news/5
 
 **We strongly recommend updating Joomla to the latest version as well as keeping your PHP version up-to-date.**
 
-## Technical Details[]()
+## Technical Details
 
 In our continuous effort to help secure open-source projects and improve our Code Quality solution, we regularly scan open-source projects via [SonarQube Cloud](https://sonarcloud.io/) and evaluate the findings. When scanning Joomla, SonarQube Cloud reported an interesting XSS issue:
 
@@ -197,7 +197,7 @@ An attacker can insert multiple invalid UTF-8 sequences, which effectively offse
 
 One of the resulting XSS vulnerabilities can for example be leveraged by an attacker to craft a malicious link. When an administrator clicks on this link, the injected JavaScript payload can be used to [customize a template](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/joomla#rce) and insert arbitrary PHP code. Thus, an attacker can gain remote code execution (RCE) by tricking an administrator into clicking on the malicious link.
 
-### Patch[]()
+### Patch
 
 Joomla addressed the issue by replacing the usage of the mbstring functions with PHP’s regular string functions:
 
@@ -220,9 +220,9 @@ We also reported the inconsistent behavior of the mbstring functions to the PHP 
 
 More background information on the behavior of the PHP mbstring functions and the patch can be found in the excellent explanation from Alex Dowad in the related [commit message](https://github.com/php/php-src/pull/12913).
 
-## Timeline[]()
+## Timeline
 
-## Summary[]()
+## Summary
 
 In this article, we explained how SonarQube Cloud led us to an interesting XSS finding in the popular CMS Joomla. During our analysis of the issue, we discovered an inconsistency in how PHP’s mbstring functions handle invalid multibyte sequences. Attackers could leverage this behavior to bypass the sanitization performed by Joomla’s core filter leading to multiple XSS vulnerabilities.
 

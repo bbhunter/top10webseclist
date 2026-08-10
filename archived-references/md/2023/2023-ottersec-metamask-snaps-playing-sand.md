@@ -67,7 +67,7 @@ page going offline. To read the original, follow the link above.
 
 [ ![MetaMask Snaps: playing in the sand](https://osec.io/_astro/banner.CoU4CvM0_29Rvrr.webp) ]()
 
-## Overview[]()
+## Overview
 
 MetaMask snaps are simple modules that extend MetaMask’s functionality. These modules can be written by anyone, and provide useful features that the vanilla wallet doesn’t.
 
@@ -75,11 +75,11 @@ MetaMask provides a sandboxed environment that allows developers to run Snap cod
 
 In this article, we’ll explore exactly how the snap execution environment works. We’ll then delve into a unique property spoofing vulnerability we reported in the MetaMask Snaps sandbox.
 
-## Sandbox security[]()
+## Sandbox security
 
 In the first part of the article, we’ll describe how the MetaMask sandbox works, and examine what it’s doing to protect the security of Snaps.
 
-### Permission-based security[]()
+### Permission-based security
 
 Each snap is built to have only the permissions it needs to hold. These permissions are specified in the `snap.manifest.json` file and can be critical to security.
 
@@ -92,7 +92,7 @@ Here are the critical permissions possible to be given to a snap:
 - `snap_getBip44Entropy` and `snap_getBip32Entropy`: a malicious snap retrieving a keypair leads to loss of funds.
 - `endowment:transaction-insight`: a malicious snap getting insights into a transaction before approval can lead to frontrunning attacks.
 
-### Snap execution environment[]()
+### Snap execution environment
 
 Snaps are executed in a totally sandboxed environment which provides a safe context for executing untrusted code, and separates it from the normal execution flow. To accomplish this, MetaMask uses three layers of security to create this safe environment:
 
@@ -102,11 +102,11 @@ Snaps are executed in a totally sandboxed environment which provides a safe cont
 
 [![Nested diagram of the snap execution environment: an outer IframeExecutionEnv box contains LavaMoat, which contains the SES containers](https://osec.io/_astro/environment.CAMdBxrE_Z1VIEHV.webp)]()
 
-### Isolated iframe — layer 1[]()
+### Isolated iframe — layer 1
 
 Snaps empower developers to enhance MetaMask’s functionality while maintaining a strong security posture. These modules execute within an [iframe](https://blog.logrocket.com/the-ultimate-guide-to-iframes/) environment, ensuring they are isolated and secure. To facilitate this execution, MetaMask takes advantage of an iframe sandboxing mechanism, allowing snaps to operate in a contained context.
 
-#### The framework: metamask-extension repo[]()
+#### The framework: metamask-extension repo
 
 The process of snap execution kicks off within the metamask-extension repository’s `metamask-controller.js` file. Here’s a glimpse of the relevant [code](https://github.com/MetaMask/metamask-extension/blob/4b23ea8c95bea9ea12336537bb6bda4568a99098/app/scripts/metamask-controller.js#L978):
 
@@ -142,7 +142,7 @@ process.env.IFRAME_EXECUTION_ENVIRONMENT_URL =
 
 This code is defining the `snapExecutionServiceArgs` object, which contains information required for the `IframeExecutionService` to execute snaps. The `IFRAME_EXECUTION_ENVIRONMENT_URL` points to the location where the execution environment resides.
 
-#### Executing snaps: IframeExecutionService in action[]()
+#### Executing snaps: IframeExecutionService in action
 
 Inside the snaps-controller package’s IframeExecutionService.ts file, the `IframeExecutionService` orchestrates snap execution. Again, here’s a snippet of the relevant [code](https://github.com/MetaMask/snaps/blob/92fcf31678c13067615e6e69681e57a542a2c58a/packages/snaps-controllers/src/services/AbstractExecutionService.ts#L89):
 
@@ -182,7 +182,7 @@ async executeSnap(snapData: SnapExecutionData) {
 
 The `IframeExecutionService` registers message handlers that facilitate communication between MetaMask and snaps within the iframe. The `${controllerName}:executeSnap` handler triggers the snap execution process.
 
-#### Step-by-step execution: from initialization to iframe [creation](https://github.com/MetaMask/snaps/blob/92fcf31678c13067615e6e69681e57a542a2c58a/packages/snaps-controllers/src/services/iframe/IframeExecutionService.ts#L31)[]()
+#### Step-by-step execution: from initialization to iframe [creation](https://github.com/MetaMask/snaps/blob/92fcf31678c13067615e6e69681e57a542a2c58a/packages/snaps-controllers/src/services/iframe/IframeExecutionService.ts#L31)
 
 ```
 
@@ -238,7 +238,7 @@ const iframe = document.createElement('iframe');
 
 This enables the iframe to be created with sandbox attributes, ensuring secure execution.
 
-### LavaMoat against supply-chain attacks — layer 2[]()
+### LavaMoat against supply-chain attacks — layer 2
 
 Instances of software supply chain breaches occur when a malicious component infiltrates a developer’s application. Subsequently, attackers exploit the component to extract critical information, such as private access keys. To safeguard against these issues, MetaMask employs a tool called LavaMoat.
 
@@ -288,20 +288,20 @@ One crucial aspect of the policy, apart from the `globals` section, is the `pack
 
 LavaMoat additionally provides protection against prototype pollution attacks, since a malicious extension could use it to tamper with a legitimate function with arbitrary code. To safeguard against this, LavaMoat uses the SES `lockdown()` function to freeze all JavaScript builtin prototypes.
 
-### Secure ECMAScript (SES) sandbox — layer 3[]()
+### Secure ECMAScript (SES) sandbox — layer 3
 
 Within the iframe and after the LavaMoat execution, the MetaMask sandbox uses [Secure ECMAScript (SES)](https://github.com/endojs/endo/tree/master/packages/ses) as a way to set up limits for the snap. Let’s dig into how it works:
 
-#### SES fundamentals[]()
+#### SES fundamentals
 
-##### Lockdown[]()
+##### Lockdown
 
 As the first step of setting up the SES sandbox, MetaMask executes the `lockdown()` function, which protects JavaScript objects against some attacks, mainly:
 
 - **Prototype pollution.** Lockdown executes `Object.freeze()` against all JavaScript builtin prototypes, preventing these attacks.
 - **Information disclosure.** Lockdown removes some sensitive information that can be disclosed by some JavaScript builtin objects, such as the `trace` attribute in an `Error` object, which contains the stack trace of the error.
 
-##### Compartment[]()
+##### Compartment
 
 Compartments serve as the fundamental security layer within the snap execution environment. Their primary function is to establish a tightly controlled sandboxed execution environment. This is accomplished by manipulating the `globalThis` object to exclusively accommodate secure functions. Consequently, any code executed within this controlled `globalThis` context is incapable of tampering with security:
 
@@ -317,13 +317,13 @@ c.globalThis.JSON === JSON; // true
 
 Compartment also changes the behaviour of evaluator functions such as `eval()` and the `Function` constructor, so that the evaluated code is also executed within the sandboxed `globalThis`.
 
-##### Endowments[]()
+##### Endowments
 
 While creating a Compartment, it is possible to specify *endowments*. These endowments constitute objects that become accessible within the Compartment’s `globalThis`. However, endowments need to be carefully chosen and sanitized since they will be exposed to the untrusted environment.
 
 In addition, SES provides the `harden()` function, which is mainly used to prevent the endowments from being modified by malicious code executed in a Compartment.
 
-#### Setting up snaps execution env[]()
+#### Setting up snaps execution env
 
 When starting a snap, the setup follows these steps:
 
@@ -397,9 +397,9 @@ Once the Compartment creates these functions, no matter where they are executed,
 
 After the evaluation, the function exports are registered and executed later when the respective event is emitted.
 
-## Vulnerability research[]()
+## Vulnerability research
 
-### Possible attacks[]()
+### Possible attacks
 
 While searching for vulnerabilities in snap environments, we enumerated some features that can be broken, and lead to security issues, such as:
 
@@ -412,9 +412,9 @@ We went through all of these vulnerability assumptions, and found a minor permis
 
 To understand the exploit, we need to dig into the snap’s RPC interfaces exposed via endowments.
 
-### RPC interfaces endowments[]()
+### RPC interfaces endowments
 
-#### Providers limitations[]()
+#### Providers limitations
 
 A snap has two interfaces that can be used to communicate with the MetaMask RPC interface: `snap` and `ethereum` (EIP-1193). These differ in that each one can only send a subset of the available RPC [methods](https://github.com/MetaMask/snaps/blob/92fcf31678c13067615e6e69681e57a542a2c58a/packages/snaps-execution-environments/src/common/utils.ts#L130):
 
@@ -460,7 +460,7 @@ This function is called by the `snap` RPC provider, so it can only send methods 
 
 On the other hand, the `ethereum` provider only blocks methods starting with `snap_` and the blocked methods. However, it requires the `endowment:ethereum-provider` permission in the snap manifest.
 
-#### Execution flow[]()
+#### Execution flow
 
 Both providers (`snap` and `ethereum`) are built outside the SES container with a `request()` [function](https://github.com/MetaMask/snaps/blob/main/packages/snaps-execution-environments/src/common/BaseSnapExecutor.ts#L437):
 
@@ -506,7 +506,7 @@ As we can see in the code, the execution flow follows this pattern:
 
 `originalRequest` makes the RPC call to the MetaMask service worker.
 
-### Safe JSON exploit[]()
+### Safe JSON exploit
 
 As we dug further into the `getSafeJson()` function (defined in the `@metamask/utils` package) we discovered the following [code](https://github.com/MetaMask/utils/blob/7f0116d4d853d85319d200c503a2f9abc390f1d3/src/json.ts#L72):
 
@@ -551,13 +551,13 @@ The assertion bypass can be useful on two occasions:
 
 This particular vulnerability allows the snap to perform Ethereum requests without permissions.
 
-### Impact[]()
+### Impact
 
 The bypass we described may be used to mislead the allowed permissions of the snap. This can cause the snap installation confirmation popup not to display the actual permissions of the snap. This exploit allows the snap to unexpectedly propose malicious transactions to the user, which shouldn’t be possible, even with permissions according to the documentation:
 
 [![MetaMask documentation note explaining that the global ethereum API in Snaps has fewer capabilities than window.ethereum and cannot write to the blockchain or initiate transactions](https://osec.io/_astro/note.BYF1vP42_20tFUL.webp)]()
 
-### Proof of concept[]()
+### Proof of concept
 
 To demonstrate the issue, we created a snap without the `endowment:ethereum-provider` permission, and used the `snap` interface to call `eth_sendTransaction`. According to the documentation, this shouldn’t be possible:
 
@@ -641,7 +641,7 @@ export const onRpcRequest: OnRpcRequestHandler = ({ origin, request }) => {
 
 We set `x.method = "snap_dialog"` to pass the assertion and set up a `toJSON()` function to change this method to `eth_sendTransaction` after.
 
-### Mitigation[]()
+### Mitigation
 
 MetaMask mitigated this issue by asserting the arguments after the `getSafeJson()` function execution. The patch was introduced in commit [168ff08](https://github.com/MetaMask/snaps/pull/1762/commits/168ff082102a65e2aad428f44c5b10f9a100c689) with the following changes:
 
@@ -659,7 +659,7 @@ const request = async (args: RequestArguments) => {
 
 ```
 
-## Conclusion[]()
+## Conclusion
 
 This unique property spoofing vulnerability in the Snaps sandboxing implementation illustrates the wide range of control attackers have in JavaScript, which makes designing robust sandbox implementations an extremely complex task.
 

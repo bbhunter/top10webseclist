@@ -206,3 +206,36 @@ class TestNestedHiddenElements(unittest.TestCase):
         result = sanitise.sanitise_html('<p>before</p><div hidden><p>after</p>')
         self.assertIn("before", result.text)
         self.assertIn("after", result.text)
+
+
+class TestATruncatedPageDoesNotPublishItsMachinery(unittest.TestCase):
+    """A WeChat write-up whose markup runs to 4.4 MB was stored as its first
+    2,097,152 bytes, cut in the middle of a `<script>`. The paired rule cannot
+    match an unclosed tag, the fallback removed only the tag, and 735,283
+    characters of JavaScript and stylesheet were published as the article."""
+
+    def test_an_unclosed_script_takes_its_body_with_it(self):
+        result = sanitise.sanitise_html(
+            "<p>The article.</p><script>var __INLINE__ = function () { return 1; };")
+        self.assertIn("The article.", result.text)
+        self.assertNotIn("__INLINE__", result.text)
+        self.assertIn("unclosed-script", result.removed)
+
+    def test_an_unclosed_style_takes_its_body_with_it(self):
+        result = sanitise.sanitise_html(
+            "<p>The article.</p><style>.wx-root{--weui-RED:#FA5151;}")
+        self.assertIn("The article.", result.text)
+        self.assertNotIn("weui-RED", result.text)
+
+    def test_a_properly_closed_script_still_only_costs_itself(self):
+        result = sanitise.sanitise_html(
+            "<script>var a = 1;</script><p>before</p>"
+            "<script>var b = 2;</script><p>after</p>")
+        self.assertIn("before", result.text)
+        self.assertIn("after", result.text)
+        self.assertNotIn("var a", result.text)
+        self.assertNotIn("unclosed-script", result.removed)
+
+    def test_it_is_still_idempotent(self):
+        once = sanitise.sanitise_html("<p>text</p><script>var a = 1;").text
+        self.assertEqual(sanitise.sanitise_html(once).text, once)

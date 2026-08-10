@@ -276,7 +276,6 @@ obj
 '
 ,
 '
-_
 '
 , source);Listing 7: Example function creation gadgets3.5.4 JavaScript execution sink gadgets.These gadgets are usu-ally standalone, or are the last in the constructed gadget chain,taking the input from the previous gadgets and putting it into aDOM XSS[16] JavaScript execution sink.eval(input);
 inputFunction.apply();
@@ -484,7 +483,6 @@ Detect benign code.Benign code passes various policychecks based on code provena
 8
 
 --- page 9 ---
-
 
 Chrome and Safari's XSS Auditor.The latest XSS lterto be implemented in a major browser was Chrome and Sa-fari's XSS Auditor. The XSS Auditor hooks into JavaScriptruntime in the browser. XSS Auditor uses the 'detect mali-cious code' approach - before Auditor permits code exe-cution, it validates that the code was not included in theHTTP request, and blocks it if it was.
 
@@ -750,7 +748,9 @@ attr) 15
 
 --- page 17 ---
 
-#æìäyå³ísð—íÁšÇrœOP-yŒùþÖ9-æ4Í›y5°Eí«—„“;ç-a‰¿Õv?mØN–Òd*ïkîz°���ÝÏ2Ç_öð ñI�-¯hÞýþÁðâ1õÎxÑHlH¬¿Ë–·]/%¦–Ò=&h™e?=€>‰Mo#cT÷ÏW�7,m6ƒû.õŒXÑ¯#"Wï­nê<{Ò+´«QBy‘©°±‡S-rÿ{“¾Ë€@´NÍmþž°‰úåÌ¦Ôß-¹$HX,Ž±ôˆqÝÃ+Æ˜u—‰šìN'¶ºÍ”éäë¥DGDü‹°<ÍÒV®ñþË}¤ÄŽ›oŸo³§I-ÎL4À½4•Ã´°|ë¦³É�!ù05æÕÑÝ ç’ÚU%kéNIü@Î‘ù*@ aâ>
+#æìäyå³ísð—íÁšÇrœOP-yŒùþÖ9-æ4Í›y5°Eí«—„“;ç-a‰¿Õv?mØN–Òd*ïkîz°���ÝÏ2Ç_öð ñI�-¯hÞýþÁðâ1õÎxÑHlH¬¿Ë–·]/%¦–Ò=&h™e?=€>‰Mo#cT÷ÏW�7,m6ƒû.õŒXÑ¯#"Wï
+­nê<{Ò+´«QBy‘©°±‡S-rÿ{“¾Ë€@´NÍmþž°‰úåÌ¦Ôß-¹$HX,Ž±ôˆqÝÃ+Æ˜u—‰šìN'¶ºÍ”éäë¥DGDü‹°<ÍÒV®ñþË}¤ÄŽ›oŸo³§I-ÎL4À½4•Ã´°|ë¦³É�!ù05æÕÑÝ ç
+’ÚU%kéNIü@Î‘ù*@ aâ>
 
 --- page 18 ---
 

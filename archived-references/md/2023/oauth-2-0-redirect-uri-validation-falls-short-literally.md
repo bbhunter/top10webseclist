@@ -522,7 +522,6 @@ Trento, Italy
 Kaan Onarlioglu
 Akamai Technologies
 and Northeastern University
-*
 Cambridge, MA, USA
 Ali Mirheidari
 Independent Researcher
@@ -554,7 +553,8 @@ org/10
 
 --- page 19 ---
 
-òÙA{|BsýÙ]®³´<ø�ºÓ‚ÊMØõa-£ŒlÂ–,ŽW=H%½•t?�àäïÛ¨[
+òÙA{|BsýÙ]®³´<ø�ºÓ‚
+ÊMØõa-£ŒlÂ–,ŽW=H%½•t?�àäïÛ¨[
 
 --- page 20 ---
 
@@ -562,9 +562,12 @@ org/10
 
 --- page 21 ---
 
-ê–‘Tvl~ {½Þ–é«M!:¡'‘úkcùÞ2�³”H×Ð='~–8Óq5…9»ñÀÑ=v¸w³ÓX î@Ï]p1§ÓÓÆ¤_zÚ†
+ê–‘Tvl~ {½Þ–é«M!:¡'‘úkcùÞ2�³”H×Ð='~–8Óq5…9»
+ñÀÑ=v¸w³ÓX î@Ï]p1§ÓÓÆ¤_zÚ†
 
 --- page 22 ---
 
-0Ã²ábHÏhàôfC¥·�Ø6H­1ÙÒô|K¦T0Q¥Ån-÷V�{§`$ñÌI:õ¾ø£„&Ø¸œÎf£Ô¡êÝ#:ËÀŒo¨H¯N^Â‹1ßZ ÿÕ¹¾fðYB`yð†×ó4$ŒÍý…p^¿Jzf×C¦"Ý¨¿—býÖruÌËgÞüUöEm&mGNòù¨¢5õ»ŒŒ‹K¤^K'¯ë†ŠZéûS‹àg*ÚÍ[ÌÆá¤$€¯Oúˆ!d‚Ž%ŽÚùÌ‚/ú~MsÅ¨9ù»Ü©¼XÐlo-+ÐÂ¯åSŽNrÇpÈ¦!þ�e‹¢—â¶Eã­ŒìTž˜ùI8~÷þ¶LƒéþOE+!
-C¬*®ðä YÔÙíŽŒf‰GJÓ–[�Œ_BE”ÌÆâDÆ�ê;WH+�ÒuJ{'ã{PçºñXü^xåVÑÉçtÈž¥õÆúÚÞ¬�Tm²DKI±Àªáò©8rQ¡:¡]ºLDF7ÍÍƒˆPÖUëº¶Ó4ì×šGÛv­t=Íö×wFºbíûeRÉÏX´œÄ.ìÒ^JpÄ—§ûSr'zu'™ò'?ýwÒgÞzlŒ‘¼ÛHÈwV^«GgàF:ëâºÂ®þgÊDHµò=Ð+ƒ5*’ÖdzÏ“SoÐ'L]¥¥g³w‚fé!%Œÿ•´iœp¤Uüü¶‚9‹ËÑ1	©o Ã÷r55Ï:£å‹¥ # ÅºcÏ:XžÞ£o£ìp$áÔ#T�$
+0Ã²ábHÏhàôfC¥·�Ø6H­1ÙÒô|K¦T0Q¥Ån-÷V�
+{§`$ñÌI:õ¾ø£„&Ø¸œÎf£Ô¡êÝ#:ËÀŒo¨H¯N^Â‹1ßZ ÿÕ¹¾fðYB`yð†×ó4$ŒÍý…p^¿Jzf×C¦"Ý¨¿—býÖruÌËgÞüUöEm&mGNòù¨¢5õ»ŒŒ‹K¤^K'¯ë†ŠZéûS‹àg*ÚÍ[ÌÆá¤$€¯Oúˆ!d‚Ž%ŽÚùÌ‚/ú~MsÅ¨9ù»Ü©¼XÐlo-+ÐÂ¯åSŽNrÇpÈ¦!þ�e‹¢—â¶Eã­ŒìTž˜ùI8~÷þ¶LƒéþOE+!
+C¬*®ðä YÔÙíŽŒf‰GJÓ–[�Œ_BE”ÌÆâDÆ�ê;WH+�ÒuJ{'ã{PçºñXü^xåVÑÉçtÈž¥õÆúÚÞ¬�Tm²DKI±Àªáò©8rQ¡:¡]ºLDF7ÍÍƒˆPÖUëº¶Ó4ì×šGÛv­t=Íö×wFºbíûeRÉÏX´œÄ.ìÒ^JpÄ—§ûSr'zu'™ò'?ýwÒgÞzlŒ‘¼ÛHÈwV^«GgàF:ëâºÂ®þgÊDHµò=Ð+ƒ5*’Ö
+dzÏ“SoÐ'L]¥¥g³w‚fé!%Œÿ•´iœp¤Uüü¶‚9‹ËÑ1	©o Ã÷r55Ï:£å‹¥ # ÅºcÏ:XžÞ£o£ìp$áÔ#T�$

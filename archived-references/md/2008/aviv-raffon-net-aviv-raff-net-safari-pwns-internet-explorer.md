@@ -75,8 +75,6 @@ Saturday, 31 May 2008
  |  |
 |
 
-[]()
-
 |   |
 
 |
@@ -116,7 +114,7 @@ So, if you decide to keep using Safari for Windows, you should follow the steps 
 
  |  |
 
- []()
+ 
 
   |   |
 |    |

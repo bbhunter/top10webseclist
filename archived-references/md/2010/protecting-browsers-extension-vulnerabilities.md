@@ -604,8 +604,6 @@ of privilege escalation. To fully limit the privilege levels of
  ,
 !
 
-
-
 :
 subtype
 (
@@ -614,14 +612,11 @@ subtype
  ,
 !
 
-
 S
 UBTYPING
 `
  ,
 !
-
-
 
 :
 method
@@ -630,7 +625,6 @@ method
 )`
  ,
 !
-
 
 M
 ETHOD
@@ -665,7 +659,6 @@ ETTER`
  ,
 !
 
-
 T
 YPE
 F
@@ -674,13 +667,7 @@ ORGERY
  ,
 !
 
-
 !
-
-`
- ,
-!
-
 
 `
  ,
@@ -690,6 +677,9 @@ ORGERY
  ,
 !
 
+`
+ ,
+!
 
 R
 ETURN
@@ -697,13 +687,7 @@ ETURN
  ,
 !
 
-
 !
-
-`
- ,
-!
-
 
 `
  ,
@@ -713,6 +697,9 @@ ETURN
  ,
 !
 
+`
+ ,
+!
 
 P
 ARAMETERFigure 4. Inference rules for reachability in a type system with type forgery, such as the Firefox
@@ -779,7 +766,6 @@ pal implements each concrete instance of the interface. We
 write
  ,
 !
-
 
 when principal
 
@@ -891,10 +877,8 @@ messages...",
 "permissions": [
 "tabs",
 "http://
-*
 .google.com/",
 "https://
-*
 .google.com/"
 ],
 "browser_action": { "default_title": "" },
@@ -924,11 +908,9 @@ which web sites they would like to access by ori-
 gin. For example, Gmail Checker requests access
 to Google by listing
 http://
-*
 .google.com
 and
 https://
-*
 .google.com
 in its manifest. If the
 extension were compromised, the attacker would not

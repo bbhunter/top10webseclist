@@ -69,11 +69,7 @@ Bastion Security
 
 Sam Schroder found a local file inclusion (write only) vulnerability inside of the upload functionality of Statamic CMS. This affects front end components like forms with `assets` fields.
 
-[
-
 Talk to an expert
-
-]()
 
 #### Introduction
 

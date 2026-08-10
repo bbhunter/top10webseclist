@@ -95,8 +95,6 @@ Postfix developers Wietse Venema and Viktor Dukhovni have promptly responded to 
 
 [https://www.postfix.org/smtp-smuggling.html](https://www.postfix.org/smtp-smuggling.html)
 
-###
-
 ### Official tools to test for SMTP smuggling issues are now available on [GitHub](https://github.com/The-Login/SMTP-Smuggling-Tools)
 
 [![Example SMTP session between sender.example and receiver.example](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2023_12/SMTP_Smuggling-SMTP_session_example_full__02_.png)](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2023_12/SMTP_Smuggling-SMTP_session_example_full__02_.png)
@@ -110,8 +108,6 @@ Even though SMTP, the Simple Mail Transfer Protocol, is used for sending e-mails
 ## TL;DR
 
 By exploiting interpretation differences of the SMTP protocol, it is possible to smuggle/send spoofed e-mails - hence SMTP smuggling - while still passing SPF alignment checks. During this research, two types of SMTP smuggling, **outbound** and **inbound**, were discovered. These allowed sending spoofed e-mails **from millions** of domains (e.g., admin@outlook.com) to millions of receiving SMTP servers (e.g., Amazon, PayPal, eBay). Identified vulnerabilities in Microsoft and GMX were quickly fixed, however, **SEC Consult urges** companies using the also affected [Cisco Secure Email](https://www.cisco.com/site/in/en/products/security/secure-email/index.html) product to manually update their vulnerable default configuration (see Responsible Disclosure section below)!
-
-##
 
 ## SMTP Basics
 
@@ -140,7 +136,7 @@ As you can see, there is a lot of back and forth in this SMTP session. To keep i
 
 * Figure 3: Overview of a simplified e-mailing process via SMTP from left to right *
 
-With this much knowledge about the SMTP protocol, we can put the training wheels aside and look at how SMTP is used to transfer e-mails across the Internet. For example, by sending an e-mail from [user(at)outlook.com]() to [user(at)receiver.example]()!
+With this much knowledge about the SMTP protocol, we can put the training wheels aside and look at how SMTP is used to transfer e-mails across the Internet. For example, by sending an e-mail from user(at)outlook.com to user(at)receiver.example!
 
 When sending an e-mail via [outlook.com](https://outlook.com/), we generally have two options:
 
@@ -165,7 +161,7 @@ This concludes the e-mail transfer. But how does the receiving inbound SMTP serv
 
 ## SPF, DKIM and DMARC
 
-Before an inbound SMTP server accepts an e-mail, it checks the sender's authenticity via e-mail authentication mechanisms such as [SPF](https://en.wikipedia.org/wiki/Sender_Policy_Framework), [DKIM](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail) and [DMARC](https://en.wikipedia.org/wiki/DMARC). This is important, since otherwise attackers could just send e-mails from arbitrary domains. For example, sending an e-mail as [admin(at)outlook.com]() from an attacker server would be entirely possible. The most prevalent e-mail authentication mechanism, **SPF**, works by permitting sender IP addresses in special SPF/TXT DNS records. The SPF record of [outlook.com](http://outlook.com/) permits the following IP ranges for e-mail transfer:
+Before an inbound SMTP server accepts an e-mail, it checks the sender's authenticity via e-mail authentication mechanisms such as [SPF](https://en.wikipedia.org/wiki/Sender_Policy_Framework), [DKIM](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail) and [DMARC](https://en.wikipedia.org/wiki/DMARC). This is important, since otherwise attackers could just send e-mails from arbitrary domains. For example, sending an e-mail as admin(at)outlook.com from an attacker server would be entirely possible. The most prevalent e-mail authentication mechanism, **SPF**, works by permitting sender IP addresses in special SPF/TXT DNS records. The SPF record of [outlook.com](http://outlook.com/) permits the following IP ranges for e-mail transfer:
 
 v=spf1 include:spf-a.outlook.com include:spf-b.outlook.com ip4:157.55.9.128/25 include:spf.protection.outlook.com include:spf-a.hotmail.com include:_spf-ssg-b.microsoft.com include:_spf-ssg-c.microsoft.com ~all
 
@@ -431,7 +427,7 @@ Funnily enough, the [sec-consult.com](https://sec-consult.com/) SMTP server supp
 
 * Figure 23: Typical Austrian reaction after receiving a spoofed e-mail *
 
-Based on their reaction (figure 23), the message from [admin(at)outlook.com]() definitely got delivered and didn't end up in spam.
+Based on their reaction (figure 23), the message from admin(at)outlook.com definitely got delivered and didn't end up in spam.
 
 [![Receiving a spoofed e-mail from admin@outlook.com aka Timo Lo(n)gin](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2023_12/image-2023-7-5_15-26-20__24_.png)](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2023_12/image-2023-7-5_15-26-20__24_.png)
 
@@ -445,7 +441,7 @@ The actual e-mail is shown in figure 24:
 
 We can once more confirm SPF alignment by looking at the message headers:
 
-Received-SPF: Pass ([mx3.atos.net](http://mx3.atos.net/): domain of [admin(at)outlook.com]() designates 40.92.75.68 as permitted sender)
+Received-SPF: Pass ([mx3.atos.net](http://mx3.atos.net/): domain of admin(at)outlook.com designates 40.92.75.68 as permitted sender)
  identity=mailfrom; client-ip=40.92.75.68;
  receiver=[mx3.atos.net](http://mx3.atos.net/); envelope-from="admin@[outlook.com](http://outlook.com/)";
  x-sender="admin@[outlook.com](http://outlook.com/)"; x-conformance=spf_only;
@@ -473,7 +469,7 @@ Since this affects **LOTS** of companies (as later discussed in SMTP Smuggling I
 
 As before, the SPF check succeeds with domain alignment, since sec-consult.com is using Exchange Online and the SPF record includes the respective Exchange Online SPF domain **spf.protection.outlook.com**.
 
-Received-SPF: Pass ([mx4.atos.net](http://mx4.atos.net/): domain of [ceo(at)sec-consult.com]()
+Received-SPF: Pass ([mx4.atos.net](http://mx4.atos.net/): domain of ceo(at)sec-consult.com
  designates 40.92.48.103 as permitted sender)
  identity=mailfrom; client-ip=40.92.48.103;
  receiver=[mx4.atos.net](http://mx4.atos.net/); envelope-from="ceo@[sec-consult.com](http://sec-consult.com/)";
@@ -525,7 +521,7 @@ This sequence gets accepted by the inbound e-mail servers of some really high-va
 
 The one thing that they all have in common is that they're using [Cisco Secure Email](https://www.cisco.com/site/in/en/products/security/secure-email/index.html), with on-prem **Cisco Secure Email Gateway** or cloud-based Cisco's Secure Email Cloud Gateway. And again, for some odd reason, sec-consult.com is using Cisco Secure Email Gateway as well!
 
-As a proof of concept (figure 28), we can now send an e-mail from [admin(at)icloud.com]() to our target at sec-consult.com, since, like with many other outbound SMTP servers (further discussed in SMTP Smuggling Impact),** <CR>.<CR> doesn't get filtered:**
+As a proof of concept (figure 28), we can now send an e-mail from admin(at)icloud.com to our target at sec-consult.com, since, like with many other outbound SMTP servers (further discussed in SMTP Smuggling Impact),** <CR>.<CR> doesn't get filtered:**
 
 [![Sending spoofed e-mails as admin@icloud.com](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2023_12/image-2023-7-5_18-13-25__29_.png)](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2023_12/image-2023-7-5_18-13-25__29_.png)
 
@@ -539,7 +535,7 @@ Like before, the e-mail goes through unscathed, as shown in figure 29.
 
 SPF checks pass with domain alignment and without any issues.
 
-Received-SPF: Pass ([mx4.atos.net](http://mx4.atos.net/): domain of [admin(at)icloud.com]()
+Received-SPF: Pass ([mx4.atos.net](http://mx4.atos.net/): domain of admin(at)icloud.com
  designates 17.57.155.23 as permitted sender)
  identity=mailfrom; client-ip=17.57.155.23;
  receiver=[mx4.atos.net](http://mx4.atos.net/); envelope-from="admin@[icloud.com](http://icloud.com/)";

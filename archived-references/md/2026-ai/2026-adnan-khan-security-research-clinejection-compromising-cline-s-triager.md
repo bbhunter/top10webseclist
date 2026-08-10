@@ -287,7 +287,7 @@ It’s unclear if their initial vector was the issue triage workflow, but it is 
 
 ### Cacheract’s IoC
 
-As covered in the [Background](), Cacheract persists by overwriting the `action.yml` file for `actions/checkout`, redirecting its `post` step to execute a payload silently at the end of every job. When this overwrite is malformed or incompatible with the runner, the post step fails with no output — a distinctive indicator of compromise, since legitimate `actions/checkout` post-step failures are extremely rare.
+As covered in the Background, Cacheract persists by overwriting the `action.yml` file for `actions/checkout`, redirecting its `post` step to execute a payload silently at the end of every job. When this overwrite is malformed or incompatible with the runner, the post step fails with no output — a distinctive indicator of compromise, since legitimate `actions/checkout` post-step failures are extremely rare.
 
 ### Shenanigans in Cline’s CI
 

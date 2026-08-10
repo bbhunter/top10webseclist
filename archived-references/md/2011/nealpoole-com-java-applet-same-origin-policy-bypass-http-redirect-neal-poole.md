@@ -79,7 +79,7 @@ From [Wikipedia](http://en.wikipedia.org/w/index.php?title=Same_origin_policy&di
 
 In computing, the same origin policy is an important security concept for a number of browser-side programming languages, such as JavaScript. The policy permits scripts running on pages originating from the same site to access each other’s methods and properties with no specific restrictions, but prevents access to most methods and properties across pages on different sites.
 
-The origin for a Java applet is the hostname of the website where the applet is served from. So, for example, if I upload an applet to [http://example.com/applet.jar](), that applet’s origin is example.com. We care about the origin for security reasons: the same-origin policy ensures that an applet is only allowed to make HTTP requests back to the domain from which it originates (or to another domain which resolves to the same IP address, but we can ignore that behavior here).
+The origin for a Java applet is the hostname of the website where the applet is served from. So, for example, if I upload an applet to http://example.com/applet.jar, that applet’s origin is example.com. We care about the origin for security reasons: the same-origin policy ensures that an applet is only allowed to make HTTP requests back to the domain from which it originates (or to another domain which resolves to the same IP address, but we can ignore that behavior here).
 
 ### So, where’s the security vulnerability?
 
@@ -88,7 +88,7 @@ Under certain conditions, the JRE did not correctly determine the origin of an a
 If you’re confused, an example might help to illustrate things. Lets first start by imagining a website, example.com, that contains an [open redirect](http://www.owasp.org/index.php/Open_redirect). In other words, imagine that browsing to [http://example.com/redirect.php?url=http://www.google.com](http://example.com/redirect.php?url=http://www.google.com) redirects the user to [http://www.google.com](http://www.google.com) using a 301 or 302 redirect. Now, lets consider an attacker who controls the domain evildomain.com. This is what the attacker does:
 
 - Writes a malicious Java applet that accesses [http://example.com](http://example.com)
-- Uploads that applet to [http://evildomain.com/evil.jar]()
+- Uploads that applet to http://evildomain.com/evil.jar
 - Constructs a redirect from [http://example.com](http://example.com) to the malicious applet ([http://example.com/redirect.php?url=http://evildomain.com/evil.jar](http://example.com/redirect.php?url=http://evildomain.com/evil.jar))
 -
 
@@ -122,7 +122,7 @@ So what happens when a user visits that page? Well, lets first think about what 
 - The user loads the page
 - The user’s browser fetches the Java applet.
 - The Java applet executes.
-- The Java applets tries to access [http://example.com](http://example.com) but fails because the applet was served up by [http://evildomain.com](), violating the same-origin policy.
+- The Java applets tries to access [http://example.com](http://example.com) but fails because the applet was served up by http://evildomain.com, violating the same-origin policy.
 
 Now, here’s what actually happened:
 

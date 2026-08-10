@@ -78,8 +78,6 @@ Wednesday, 02 January 2008
  |  |
 |
 
-[]()
-
 |   |
 
 |
@@ -138,7 +136,7 @@ Until Mozilla fixes this vulnerability, I recommend not to provide username and 
 
  |  |
 
- []()
+ 
 
   |   |
 |    |

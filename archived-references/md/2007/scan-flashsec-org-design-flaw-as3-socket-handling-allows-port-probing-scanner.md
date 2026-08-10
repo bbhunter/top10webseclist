@@ -152,7 +152,7 @@ Design flaw in AS3 socket handling allows port probing: Description and PoC of a
 
  Ports:
 
-[Start Scan]()
+Start Scan
 
 ## Source Code
 

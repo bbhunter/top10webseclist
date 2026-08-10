@@ -62,7 +62,7 @@ page going offline. To read the original, follow the link above.
 
  Referer is that tiny bit of information that browser sends to servers while you click your way through interwebs, always carrying the URL of the webpage you've clicked the link at (more or less). It's useful for webdevelopers. For example, if they know you've reached their page from Google search results they can tailor the webpage especially for you. Of course, it's a privacy leak, so users can **turn off referrer sending** in current browsers. All in all, Referer is usually spoken in [SEO](http://en.wikipedia.org/wiki/SEO) circles, which is not my pair of shoes. However, at least one thing makes Referer very interesting from security point of view.
 
- []()
+ 
 
 ##  Are you me?
 
@@ -115,7 +115,6 @@ function post_and_lose(url) {
 
  [Demo](http://attacker.kotowicz.net/lose-referer/test.php) and [source](https://github.com/koto/blog-kotowicz-net-examples/tree/master/lose-referer).
 
- **
 Update: **[@websterprodigy](https://twitter.com/websterprodigy) topped that with a nice way to lose the referrer in POST & GET in all browsers using [<iframe src=about:blank>](http://webstersprodigy.net/2013/02/01/stripping-the-referer-in-a-cross-domain-post-request/). Good job!
 
 ##  Why do I care?

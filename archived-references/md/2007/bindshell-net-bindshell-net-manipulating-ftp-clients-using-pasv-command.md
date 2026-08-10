@@ -65,17 +65,17 @@ BindShell.Net: Manipulating FTP Clients Using The PASV Command
 
 **Contents**
 
-[Summary]()
+Summary
 
-[Paper]()
+Paper
 
-[Proof of Concept Code]()
+Proof of Concept Code
 
-[Mozilla Fix Information]()
+Mozilla Fix Information
 
-[Bug Numbers]()
+Bug Numbers
 
-[Some Follow Up]()
+Some Follow Up
 
 # Manipulating FTP Clients Using The PASV Command
 

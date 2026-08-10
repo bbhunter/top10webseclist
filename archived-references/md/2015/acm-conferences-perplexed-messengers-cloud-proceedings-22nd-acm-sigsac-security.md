@@ -66,75 +66,60 @@ research-article
 # Perplexed Messengers from the Cloud: Automated Security Analysis of Push-Messaging Integrations
 
 - **Authors: **
-- [
-
+- 
 Yangyi Chen
 
 Indiana University Bloomington, Bloomington, IN, USA
-
-]()
 
 Indiana University Bloomington, Bloomington, IN, USA
 
 [View Profile](https://dl.acm.org/profile/81488663204)
 
 ,
-- [
-
+- 
 Tongxin Li
 
 Peking University, Beijing, China
-
-]()
 
 Peking University, Beijing, China
 
 [View Profile](https://dl.acm.org/profile/99658657276)
 
 ,
-- [
-
+- 
 XiaoFeng Wang
 
 Indiana University Bloomington, Bloomington, IN, USA
-
-]()
 
 Indiana University Bloomington, Bloomington, IN, USA
 
 [View Profile](https://dl.acm.org/profile/81372591949)
 
 ,
-- [
-
+- 
 Kai Chen
 
 Indiana University Bloomington and Institute of Information Engineering, CAS, Bloomington, IN, USA
-
-]()
 
 Indiana University Bloomington and Institute of Information Engineering, CAS, Bloomington, IN, USA
 
 [View Profile](https://dl.acm.org/profile/88158748957)
 
 ,
-- [
-
+- 
 Xinhui Han
 
 Peking University, Beijing, China
-
-]()
 
 Peking University, Beijing, China
 
 [View Profile](https://dl.acm.org/profile/81548994256)
 
-[Authors Info & Claims ]()
+Authors Info & Claims 
 
 [CCS '15: Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security](https://dl.acm.org/doi/proceedings/10.1145/2810103)October 2015 Pages 1260–1272[https://doi.org/10.1145/2810103.2813652](https://doi.org/10.1145/2810103.2813652)
 
-Online:12 October 2015[Publication History]()
+Online:12 October 2015Publication History
 
 ## ABSTRACT
 
@@ -315,7 +300,7 @@ Request permissions about this article.
 
 Total Citations
 
-[View Citations]()
+View Citations
 -
 
 712
@@ -327,7 +312,7 @@ Total Downloads
 
 ### Other Metrics
 
-[View Author Metrics]()
+View Author Metrics
 
 ### PDF Format
 
@@ -345,24 +330,18 @@ View online with eReader.
 
 View this article in digital edition.
 
-[View Digital Edition]()
+View Digital Edition
 
 -
 
-- []()
-- []()
-- [**]()
-- [0References]()
-- []()
-- []()
+- 
+- 
+- **
+- 0References
+- 
+- 
 -
 
-[]()[]()[]()[]()
-
-####
-
-[]()[]()Change zoom level
-
-###
+Change zoom level
 
 [View Table of Contents](https://dl.acm.org/doi/proceedings/10.1145/2810103)

@@ -75,7 +75,7 @@ However, what to do if we found a vulnerability on *one *page, and all the inter
 
 All of this is possible **with a single injected script - **think **XSS-injected Google Analytics**! With just one XSS vulnerability on any page an attacker gets information about all browsing actions of unsuspecting user. Demo inside!
  ****
- []()
+ 
 
 ## Disclaimer
 

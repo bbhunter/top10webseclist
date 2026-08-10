@@ -77,7 +77,7 @@ It’s all very confusing so I should probably give you an example. [Click here 
 
 This is a very scary and very real possible exploit for any site that allows things like images with additional ALT parameters or inline style tags of any kind. This could have impacts all over the place. I will be curious to see how this plays out with the search engines (what encodings they are vulnerable to if any) for the [blackhat SEO](http://seoblackhat.com) world. I applaud Cheng for finding this. It’s very easy to exploit if you know what you’re doing and very difficult to prevent.
 
-  This entry was posted on Thursday, August 17th, 2006 at 11:50 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [SEO/SEM](http://ha.ckers.org/blog/category/seo-sem/). You can [leave a response]() as well.
+  This entry was posted on Thursday, August 17th, 2006 at 11:50 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [SEO/SEM](http://ha.ckers.org/blog/category/seo-sem/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

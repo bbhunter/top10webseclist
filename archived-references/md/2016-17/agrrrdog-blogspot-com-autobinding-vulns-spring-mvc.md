@@ -118,8 +118,6 @@ _The source's own words. An English translation of this document is archived bes
 
  Sources of the tasks - [https://github.com/GrrrDog/ZeroNights-HackQuest-2016](https://github.com/GrrrDog/ZeroNights-HackQuest-2016)
 
-###
-
  The First School of Bulimia “Edik”
 
  The application consists of 3 "pages": registration, authentication, home page. The goal is to perform an expression language injection in the home page. The obstacle is that a user can set values only during registration process...
@@ -166,13 +164,9 @@ _The source's own words. An English translation of this document is archived bes
 
  The goal is achieved.
 
-###
-
  Populating
 
  There is an interesting and maybe not so obvious fact about autobinding. During populating data, Spring MVC makes changes on a field basis; it doesn't create a new object if something comes from an HTTP request. It means if there is an object from the model and only one param is received from an HTTP request, the value of only one field (with the same name as the HTTP param) will be changed and other fields will stay the same.
-
-###
 
  Justice League
 
@@ -216,8 +210,6 @@ _The source's own words. An English translation of this document is archived bes
 
  If there is another controller that uses the same name of session attribute and trusts it, then we can perform a Session Puzzling attack (Session Variable Overloading). [https://www.owasp.org/index.php/Testing_for_Session_puzzling_(OTG-SESS-008)](https://www.owasp.org/index.php/Testing_for_Session_puzzling_(OTG-SESS-008)) . As far as I remember, the documentation says that a session attribute (created using @SessionAttribute) is limited to a controller, but in practice, we can use it in other controllers too.
 
-###
-
  Real Examples
 
  I was looking for real examples of such issues on GitHub and in articles about Spring MVC and even found some. But:
@@ -251,8 +243,6 @@ _The source's own words. An English translation of this document is archived bes
  ObjectWithNameField.name = text1,text2
 
  3) As soon as we've collected all param names, we can send them to all entry points (URLs), even to those that, at first glance, don't accept params (like resetViewQuestionHandler), and check if replies are different or the same as without params.
-
-###
 
  Conclusion
 

@@ -74,7 +74,7 @@ file:///C:/Program%20Files/Adobe/Acrobat%207.0/Resource/ENUtxt.pdf#blah=javascri
 
 Hmmm… It would appear that Adobe Acrobat has now created a local JavaScript issue for Firefox and Opera users. I’m sure there are other default locations for other versions of Adobe Acrobat. Very scary stuff.
 
-  This entry was posted on Wednesday, January 3rd, 2007 at 8:08 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070103/pdf-xss-can-compromise-your-machine/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20070103/pdf-xss-can-compromise-your-machine/trackback/) from your own site.
+  This entry was posted on Wednesday, January 3rd, 2007 at 8:08 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070103/pdf-xss-can-compromise-your-machine/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070103/pdf-xss-can-compromise-your-machine/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

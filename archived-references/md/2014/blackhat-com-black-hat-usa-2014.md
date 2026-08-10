@@ -70,177 +70,177 @@ The Wayback Machine - https://web.archive.org/web/20160405180600/https://www.bla
 
 ## briefings
 
-- [Ross Anderson]()
-- [Brad Antoniewicz]()
-- [Ertunga Arsal]()
-- [Antonios Atlasis]()
-- [Vijay Balasubramaniyan]()
-- [Alex Balducci]()
-- [John Bambenek]()
-- [Raj Bandyopadhyay]()
-- [Kevin Bankston]()
-- [Anders Beitnes]()
-- [Sergey Belov]()
-- [Marc Blanchou]()
-- [Alexander Bolshev]()
-- [Dominique Bongard]()
-- [Ravishankar Borgaonkar]()
-- [Rodrigo Branco]()
-- [Stephen Breen]()
-- [Daniel Brodie]()
-- [Daniel Buentello]()
-- [Jon Butler]()
-- [John Butterworth]()
-- [Telvis Calhoun]()
-- [Greg Castle]()
-- [Silvio Cesare]()
-- [Daniel Chechik]()
-- [Gleb Cherbov]()
-- [Julian Cohen]()
-- [Greg Conti]()
-- [Samuel Cornwell]()
-- [Tom Cross]()
-- [Rennie deGraaf]()
-- [Antoine Delignat-Lavaud]()
-- [Benjamin Delpy]()
-- [Jonathan-Christofer Demay]()
-- [Matt Devost]()
-- [Alban Diquet]()
-- [Joshua Drake]()
-- [Alva Duckwall]()
-- [Joseph FitzPatrick]()
-- [Trey Ford]()
-- [Jeff Forristal]()
-- [James Forshaw]()
-- [Xinwen Fu]()
-- [Daniele Gallingani]()
-- [Dan Geer]()
-- [Kenneth Geers]()
-- [Yoel Gluck]()
-- [Brian Gorenc]()
-- [Ron Gutierrez]()
-- [Chris Hallenbeck]()
-- [Matt Hastings]()
-- [Matthew Hathaway]()
-- [Lars Haukli]()
-- [Andrew Hay]()
-- [Ben Hayak]()
-- [Jason Healey]()
-- [Grant Hernandez]()
-- [Timo Hirvonen]()
-- [Marcia Hofmann]()
-- [Jacob Holcomb]()
-- [Pili Hu]()
-- [Mikko Hypponen]()
-- [Jamil Jaffer]()
-- [Markus Jakobsson]()
-- [Lance James]()
-- [Yeongjin Jang]()
-- [Mark Jaycox]()
-- [Yier Jin]()
-- [Martin Johns]()
-- [Corey Kallenberg]()
-- [Vitaliy Kamluk]()
-- [Ryan Kazanciyan]()
-- [Ayhan Soner Koca]()
-- [Stephen Komal]()
-- [Jake Kouns]()
-- [Xeno Kovah]()
-- [Christopher Kruegel]()
-- [Zach Lanier]()
-- [Jason Larsen]()
-- [Billy Lau]()
-- [Wing Cheong Lau]()
-- [Dr. Stefan Lders]()
-- [Arnaud Lebrun]()
-- [Byoungyoung Lee]()
-- [Daniel Lehmann]()
-- [Sebastian Lekies]()
-- [Jakob Lell]()
-- [Frankie Li]()
-- [Kang Li]()
-- [Xiaoning Li]()
-- [Andreas Lindh]()
-- [Zhen Ling]()
-- [David Litchfield]()
-- [Matthias Luft]()
-- [Kelly Lum]()
-- [Dhia Mahjoub]()
-- [Mark Mateski]()
-- [Daniel Mayer]()
-- [Alaeddine Mesbahi]()
-- [Charlie Miller]()
-- [Jesus Molina]()
-- [Collin Mulliner]()
-- [Igor Muttik]()
-- [Jeff Myers]()
-- [Alex Nayshtut]()
-- [Gabriel Negreira Barbosa]()
-- [Quynh Nguyen Anh]()
-- [Brandon Niemczyk]()
-- [Nils ]()
-- [Karsten Nohl]()
-- [Ivan Novikov]()
-- [Jeong Wook Oh]()
-- [Davi Ottenheimer]()
-- [Fatih Ozavci]()
-- [Catherine Pearce]()
-- [Jean-Michel Picod]()
-- [Alex Pinto]()
-- [Kymberlee Price]()
-- [Thomas Ptacek]()
-- [Rob Ragan]()
-- [Prasad Rao]()
-- [David Raymond]()
-- [Thibault Reuille]()
-- [Enno Rey]()
-- [Andres Riancho]()
-- [Billy Rios]()
-- [Edmond Rogers]()
-- [William Rogers]()
-- [Dan Rosenberg]()
-- [Anibal Sacco]()
-- [Ahmad-Reza Sadeghi]()
-- [Tony Sager]()
-- [Oscar Salazar]()
-- [Joel Sandin]()
-- [Ruben Santamarta]()
-- [Joshua Saxe]()
-- [Mark Schloesser]()
-- [Bruce Schneier]()
-- [Balint Seeber]()
-- [Michael Shaulov]()
-- [Mathew Solnik]()
-- [Aditya K Sood]()
-- [Jasiel Spelman]()
-- [Jonathan Spring]()
-- [Alex Stamos]()
-- [Ben Stock]()
-- [Arne Swinnen]()
-- [Nikita Tarakanov]()
-- [Braden Thomas]()
-- [Patrick Thomas]()
-- [Kevin Thompson]()
-- [Andree Toonk]()
-- [Jacob Torrey]()
-- [Ryan Trost]()
-- [Swapnil Udar]()
-- [Christopher Valasek]()
-- [Nir Valtman]()
-- [Ilja van Sprundel]()
-- [Paul Vixie]()
-- [Tielei Wang]()
-- [Xiaoran Wang]()
-- [Yu Wang]()
-- [Gabe Weaver]()
-- [Tao Wei]()
-- [Steve Weis]()
-- [Ben Williams]()
-- [Rafal Wojtczuk]()
-- [Yang Yu]()
-- [Qinggang Yue]()
-- [Lucas Zaichkowsky]()
-- [Yulong Zhang]()
+- Ross Anderson
+- Brad Antoniewicz
+- Ertunga Arsal
+- Antonios Atlasis
+- Vijay Balasubramaniyan
+- Alex Balducci
+- John Bambenek
+- Raj Bandyopadhyay
+- Kevin Bankston
+- Anders Beitnes
+- Sergey Belov
+- Marc Blanchou
+- Alexander Bolshev
+- Dominique Bongard
+- Ravishankar Borgaonkar
+- Rodrigo Branco
+- Stephen Breen
+- Daniel Brodie
+- Daniel Buentello
+- Jon Butler
+- John Butterworth
+- Telvis Calhoun
+- Greg Castle
+- Silvio Cesare
+- Daniel Chechik
+- Gleb Cherbov
+- Julian Cohen
+- Greg Conti
+- Samuel Cornwell
+- Tom Cross
+- Rennie deGraaf
+- Antoine Delignat-Lavaud
+- Benjamin Delpy
+- Jonathan-Christofer Demay
+- Matt Devost
+- Alban Diquet
+- Joshua Drake
+- Alva Duckwall
+- Joseph FitzPatrick
+- Trey Ford
+- Jeff Forristal
+- James Forshaw
+- Xinwen Fu
+- Daniele Gallingani
+- Dan Geer
+- Kenneth Geers
+- Yoel Gluck
+- Brian Gorenc
+- Ron Gutierrez
+- Chris Hallenbeck
+- Matt Hastings
+- Matthew Hathaway
+- Lars Haukli
+- Andrew Hay
+- Ben Hayak
+- Jason Healey
+- Grant Hernandez
+- Timo Hirvonen
+- Marcia Hofmann
+- Jacob Holcomb
+- Pili Hu
+- Mikko Hypponen
+- Jamil Jaffer
+- Markus Jakobsson
+- Lance James
+- Yeongjin Jang
+- Mark Jaycox
+- Yier Jin
+- Martin Johns
+- Corey Kallenberg
+- Vitaliy Kamluk
+- Ryan Kazanciyan
+- Ayhan Soner Koca
+- Stephen Komal
+- Jake Kouns
+- Xeno Kovah
+- Christopher Kruegel
+- Zach Lanier
+- Jason Larsen
+- Billy Lau
+- Wing Cheong Lau
+- Dr. Stefan Lders
+- Arnaud Lebrun
+- Byoungyoung Lee
+- Daniel Lehmann
+- Sebastian Lekies
+- Jakob Lell
+- Frankie Li
+- Kang Li
+- Xiaoning Li
+- Andreas Lindh
+- Zhen Ling
+- David Litchfield
+- Matthias Luft
+- Kelly Lum
+- Dhia Mahjoub
+- Mark Mateski
+- Daniel Mayer
+- Alaeddine Mesbahi
+- Charlie Miller
+- Jesus Molina
+- Collin Mulliner
+- Igor Muttik
+- Jeff Myers
+- Alex Nayshtut
+- Gabriel Negreira Barbosa
+- Quynh Nguyen Anh
+- Brandon Niemczyk
+- Nils 
+- Karsten Nohl
+- Ivan Novikov
+- Jeong Wook Oh
+- Davi Ottenheimer
+- Fatih Ozavci
+- Catherine Pearce
+- Jean-Michel Picod
+- Alex Pinto
+- Kymberlee Price
+- Thomas Ptacek
+- Rob Ragan
+- Prasad Rao
+- David Raymond
+- Thibault Reuille
+- Enno Rey
+- Andres Riancho
+- Billy Rios
+- Edmond Rogers
+- William Rogers
+- Dan Rosenberg
+- Anibal Sacco
+- Ahmad-Reza Sadeghi
+- Tony Sager
+- Oscar Salazar
+- Joel Sandin
+- Ruben Santamarta
+- Joshua Saxe
+- Mark Schloesser
+- Bruce Schneier
+- Balint Seeber
+- Michael Shaulov
+- Mathew Solnik
+- Aditya K Sood
+- Jasiel Spelman
+- Jonathan Spring
+- Alex Stamos
+- Ben Stock
+- Arne Swinnen
+- Nikita Tarakanov
+- Braden Thomas
+- Patrick Thomas
+- Kevin Thompson
+- Andree Toonk
+- Jacob Torrey
+- Ryan Trost
+- Swapnil Udar
+- Christopher Valasek
+- Nir Valtman
+- Ilja van Sprundel
+- Paul Vixie
+- Tielei Wang
+- Xiaoran Wang
+- Yu Wang
+- Gabe Weaver
+- Tao Wei
+- Steve Weis
+- Ben Williams
+- Rafal Wojtczuk
+- Yang Yu
+- Qinggang Yue
+- Lucas Zaichkowsky
+- Yulong Zhang
 
 # briefings - august 6 & 7
 
@@ -248,9 +248,7 @@ The Wayback Machine - https://web.archive.org/web/20160405180600/https://www.bla
 
 ---
 
-[]()
-
-## [Cybersecurity as Realpolitik]()
+## Cybersecurity as Realpolitik
 
 Power exists to be used. Some wish for cyber safety, which they will not get. Others wish for cyber order, which they will not get. Some have the eye to discern cyber policies that are "the least worst thing;" may they fill the vacuum of wishful thinking.
 
@@ -264,9 +262,7 @@ Power exists to be used. Some wish for cyber safety, which they will not get. Ot
 
 ---
 
-[]()[]()
-
-## ["Nobody is Listening to Your Phone Calls." Really? A Debate and Discussion on the NSA's Activities]()
+## "Nobody is Listening to Your Phone Calls." Really? A Debate and Discussion on the NSA's Activities
 
 "We failed to connect the dots. And so, we had to come up with a way of helping to stop attacks." - General Keith B. Alexander, Former Director of NSA, at Black Hat USA 2013.
 
@@ -278,9 +274,7 @@ Power exists to be used. Some wish for cyber safety, which they will not get. Ot
 
 ---
 
-[]()[]()
-
-## [48 Dirty Little Secrets Cryptographers Don't Want You To Know]()
+## 48 Dirty Little Secrets Cryptographers Don't Want You To Know
 
 Over the past year, more than 10,000 people participated in the Matasano crypto challenges, a staged learning exercise where participants implemented 48 different attacks against realistic cryptographic constructions. In the process, we collected crypto exploit code in dozens of different languages, ranging from X86 assembly to Haskell. With the permission of the participants, we've built a "Rosetta Code" site with per-language implementations of each of the crypto attacks we taught.
 
@@ -292,9 +286,7 @@ Over the past year, more than 10,000 people participated in the Matasano crypto 
 
 ---
 
-[]()
-
-## [802.1x and Beyond!]()
+## 802.1x and Beyond!
 
 IEEE 802.1x has been leveraged for a long time for authentication purposes. Up until this point, little has been done to help researchers expose vulnerabilities within the systems that implement the protocol. In this talk, we'll dissect IEEE 802.1x, its surrounding protocols (RADIUS/EAP), provide testing tools, and detail a number of vulnerabilities identified in popular supporting systems. We'll wrap up demonstrating a vulnerability within a RADIUS server that allows for remote code execution over 802.11 wireless using WPA Enterprise before the user is authorized to join the network.
 
@@ -304,9 +296,7 @@ IEEE 802.1x has been leveraged for a long time for authentication purposes. Up u
 
 ---
 
-[]()
-
-## [A Journey to Protect Points-of-Sale]()
+## A Journey to Protect Points-of-Sale
 
 Many point-of-sale breaches occurred in the past year and many organizations are still vulnerable against the simplest exploits. In this presentation, I explain about how points-of-sale get compromised from both retailer's and software-vendor's perspective. One of the most common threats is memory scraping, which is a difficult issue to solve. Hence, I would like to share with you a demonstration of how it works and what can be done in order to minimize this threat. During this presentation, I will explain the long journey to understand how to mitigate it, while walking through the concepts (not exposing vendor names) that don't work and those that can work.
 
@@ -316,9 +306,7 @@ Many point-of-sale breaches occurred in the past year and many organizations are
 
 ---
 
-[]()[]()
-
-## [A Practical Attack Against VDI Solutions]()
+## A Practical Attack Against VDI Solutions
 
 The secure BYOD hype is growing and Virtual Desktop Infrastructure (VDI) is considered the alternative solution for secure containers. In a nutshell, VDI solutions provide a remote workstation offering so that no data is stored locally. We decided to examine the architecture and see for ourselves whether VDI delivers on its security promise.
 
@@ -330,9 +318,7 @@ The secure BYOD hype is growing and Virtual Desktop Infrastructure (VDI) is cons
 
 ---
 
-[]()
-
-## [A Scalable, Ensemble Approach for Building and Visualizing Deep Code-Sharing Networks Over Millions of Malicious Binaries]()
+## A Scalable, Ensemble Approach for Building and Visualizing Deep Code-Sharing Networks Over Millions of Malicious Binaries
 
 The millions of unique malicious binaries gathered in today's white-hat malware repositories are connected through a dense web of hidden code-sharing relationships. If we could recover this shared-code network, we could provide much needed context for and insight into newly observed malware. For example, our analysis could leverage previous reverse engineering work performed on a new malware sample's older "relatives," giving important context and accelerating the reverse engineering process.
 
@@ -348,9 +334,7 @@ The millions of unique malicious binaries gathered in today's white-hat malware 
 
 ---
 
-[]()[]()
-
-## [A Survey of Remote Automotive Attack Surfaces]()
+## A Survey of Remote Automotive Attack Surfaces
 
 Automotive security concerns have gone from the fringe to the mainstream with security researchers showing the susceptibility of the modern vehicle to local and remote attacks. A malicious attacker leveraging a remote vulnerability could do anything from enabling a microphone for eavesdropping to turning the steering wheel to disabling the brakes. Unfortunately, research has only been presented on three or four particular vehicles. Each manufacturer designs their fleets differently; therefore analysis of remote threats must avoid generalities. This talk takes a step back and examines the automotive network of a large number of different manufacturers from a security perspective. From this larger dataset, we can begin to answer questions like: Are some cars more secure from remote compromise than others? Has automotive network security changed for the better (or worse) in the last five years? What does the future of automotive security hold and how can we protect our vehicles from attack moving forward?
 
@@ -359,10 +343,6 @@ Automotive security concerns have gone from the fringe to the mainstream with se
  [Charlie Miller](https://web.archive.org/web/20160405180600/https:/www.blackhat.com/us-14/speakers/Charlie-Miller.html) & [Christopher Valasek](https://web.archive.org/web/20160405180600/https:/www.blackhat.com/us-14/speakers/Christopher-Valasek.html)
 
 ---
-
-[]()[]()[]()
-
-##
 
 Consumer Premise Equipment (CPE) has become common, nearly ubiquitous, home and small office attire. Many homes have a router/modem device that mediates access between home devices and the ISP. Abuse of these devices is particularly problematic both because the owner has difficulty interfacing with (and fixing) the device and because the static code provided by the vendor is generally rotted (and vulnerable) by the time the consumer unpacks the device.
 
@@ -374,9 +354,7 @@ Consumer Premise Equipment (CPE) has become common, nearly ubiquitous, home and 
 
 ---
 
-[]()[]()
-
-## [Abusing Microsoft Kerberos: Sorry You Guys Don't Get It]()
+## Abusing Microsoft Kerberos: Sorry You Guys Don't Get It
 
 Microsoft Active Directory uses Kerberos to handle authentication requests by default. However, if the domain is compromised, how bad can it really be? With the loss of the right hash, Kerberos can be completely compromised for years after the attacker gained access. Yes, it really is that bad.
 
@@ -390,9 +368,7 @@ Microsoft Active Directory uses Kerberos to handle authentication requests by de
 
 ---
 
-[]()[]()[]()
-
-## [Abusing Performance Optimization Weaknesses to Bypass ASLR]()
+## Abusing Performance Optimization Weaknesses to Bypass ASLR
 
 The primary goal of ASLR is to effectively randomize a program's memory layout so that adversaries cannot easily infer such information. As ASLR is a critical defense against exploitation, there have been tremendous efforts to evaluate the mechanism's security. To date, previous attacks that bypass ASLR have focused mostly on exploiting memory leak vulnerabilities, or abusing non-randomized data structures.
 
@@ -408,9 +384,7 @@ The primary goal of ASLR is to effectively randomize a program's memory layout s
 
 ---
 
-[]()
-
-## [Android FakeID Vulnerability Walkthrough]()
+## Android FakeID Vulnerability Walkthrough
 
 The team that discovered the Android MasterKey vulnerability in 2013 is here to present another new Android vulnerability with widespread impact: a flaw in Android application handling, allowing malicious applications to escape the normal application sandbox and get special security privileges without any user notification. This can lead to a malicious application having the ability to steal user data, recover passwords and secrets, or in certain cases, compromise the whole Android device. The vulnerability is embedded in all shipped Android devices since January 2010 (Android Eclair 2.1).
 
@@ -422,9 +396,7 @@ The team that discovered the Android MasterKey vulnerability in 2013 is here to 
 
 ---
 
-[]()
-
-## [APT Attribution and DNS Profiling]()
+## APT Attribution and DNS Profiling
 
 Advanced Persistent Threat (APT) attacks are highly organized and are launched for prolonged periods. APT attacks exhibit discernible attributes or patterns. In order to maintain the command and control (c2) network redundant, APT attacks are generally embedded with multiple DNS names. An intuitive view is that APT attackers keep and control a high number of DNS-IP address pairs. Most of existing malware attribution works placed great emphasis on grouping the technological or behavioral contexts from the malware binaries. We studied a small sample of malware from a specific victim group who had been subjected to APT attacks. Our study indicates that the attackers follow some behavioral patterns of registering DNS domains and the frequently use of stable DNS-IP pairs. The gatherings of such evidence regarding malware binaries are not complicated. But it requires tedious online queries of open source information. We developed an automated solution to simplify the tasks of collecting and storing the information as a database for future analysis. Once the initial set of malicious DNS-IP pair, "parked domain" and "whois information" are identified; the database can be called to perform updates manually. This database can be used for further analysis by a visualization tool, and for identification of the possible identity or personas of the attackers. In our studies, we used Maltego for the analysis.
 
@@ -434,9 +406,7 @@ Advanced Persistent Threat (APT) attacks are highly organized and are launched f
 
 ---
 
-[]()
-
-## [Attacking Mobile Broadband Modems Like a Criminal Would]()
+## Attacking Mobile Broadband Modems Like a Criminal Would
 
 While there has certainly been some interesting research into the security of mobile broadband modems, or "dongles," in the past, it has almost exclusively focused on novel attacks such as buffer overflows over text message, attacks on the device's file system, and other advanced approaches. The level of skill and effort required to execute such an attack reduces the potential number of attackers, but there are easier ways to monetize from attacking these devices too.
 
@@ -450,9 +420,7 @@ While there has certainly been some interesting research into the security of mo
 
 ---
 
-[]()
-
-## [Babar-ians at the Gate: Data Protection at Massive Scale]()
+## Babar-ians at the Gate: Data Protection at Massive Scale
 
 We are meant to measure and manage data with more precision than ever before using Big Data. But companies are getting Hadoopy often with little or no consideration of security. Are we taking on too much risk too fast? This session explains how best to handle the looming Big Data risk in any environment. Better predictions and more intelligent decisions are expected from our biggest data sets, yet do we really trust systems we secure the least? And do we really know why "learning" machines continue to make amusing and sometimes tragic mistakes? Infosec is in this game but with Big Data we appear to be waiting on the sidelines. What have we done about emerging vulnerabilities and threats to Hadoop as it leaves many of our traditional data paradigms behind? This presentation, based on the new book "Realities of Big Data Security," takes the audience through an overview of the hardest big data protection problem areas ahead and into our best solutions for the elephantine challenges here today.
 
@@ -462,9 +430,7 @@ We are meant to measure and manage data with more precision than ever before usi
 
 ---
 
-[]()[]()[]()
-
-## [Badger - The Networked Security State Estimation Toolkit]()
+## Badger - The Networked Security State Estimation Toolkit
 
 The recently open sourced Cyber Physical Topology Language (CPTL) has allowed cyber defenders the capability of building tools to provide metrics for estimation of a security state. This provides a metric that can be used to assess the ongoing security status of data network. Using CPTL's framework, monitoring data from any arbitrary tool can be imported through standard data gathering methods such as syslog and SNMP queries. The toolkit specifically provides a running score from a many configurable settings based on metrics gathered on applications, systems, or networks. A graphical canvas in the Badger provides an at a glance view of the state of networked security elements.
 
@@ -474,9 +440,7 @@ The recently open sourced Cyber Physical Topology Language (CPTL) has allowed cy
 
 ---
 
-[]()[]()
-
-## [BadUSB - On Accessories that Turn Evil]()
+## BadUSB - On Accessories that Turn Evil
 
 USB has become so commonplace that we rarely worry about its security implications. USB sticks undergo the occasional virus scan, but we consider USB to be otherwise perfectly safe - until now.
 
@@ -492,9 +456,7 @@ USB has become so commonplace that we rarely worry about its security implicatio
 
 ---
 
-[]()[]()
-
-## [Bitcoin Transaction Malleability Theory in Practice]()
+## Bitcoin Transaction Malleability Theory in Practice
 
 A mysterious vulnerability from 2011 almost made the Bitcoin network collapse. Silk Road, MTGox, and potentially many more trading websites claim to be prone to "Transaction Malleability." We will shed some light and show in practice how to exploit this vulnerability.
 
@@ -504,9 +466,7 @@ A mysterious vulnerability from 2011 almost made the Bitcoin network collapse. S
 
 ---
 
-[]()
-
-## [Breaking the Security of Physical Devices]()
+## Breaking the Security of Physical Devices
 
 In this talk, I look at a number of household or common devices and things, including a popular model car and physical security measures such as home alarm systems. I then proceed to break the security of those devices. The keyless entry of a 2004/2005 popular make and widely used car is shown to be breakable with predictable rolling codes. The actual analysis involved not only mathematics and software defined radio, but the building of a button pushing robot to press the keyless entry to capture data sets that enable the mathematical analysis. Software defined radio is not only used in the kelyess entry attack, but in simple eavesdropping attacks against 40mhz analog baby monitors. But that's an easy attack. A more concering set of attacks are against home alarm systems. Practically all home alarm systems that had an RF remote to enable and disable the system were shown to used fixed codes. This meant that a replay attack could disable the alarm. I built an Arduino and Raspberry Pi based device for less than $50 dollars that could be trained to capture and replay those codes to defeat the alarms. I also show that by physically tampering with a home alarm system by connecting a device programmer, the eeprom data off the alarm's microcontroller can be read. This means that an attacker can read the secret passcode that disables or enables the alarm. In summary, these attacks are simple but effective in physical devices that are common in today's world. I will talk about ways of mitigating these attacks, which essentially comes down to avoiding the bad and buying the good. But how do you know what's the difference? Come to this talk to find out.
 
@@ -516,9 +476,7 @@ In this talk, I look at a number of household or common devices and things, incl
 
 ---
 
-[]()[]()[]()
-
-## [Bringing Software Defined Radio to the Penetration Testing Community]()
+## Bringing Software Defined Radio to the Penetration Testing Community
 
 The large adoption of wireless devices goes further than WiFi (smartmeters, wearable devices, Internet of Things, etc.).
 
@@ -536,9 +494,7 @@ The large adoption of wireless devices goes further than WiFi (smartmeters, wear
 
 ---
 
-[]()
-
-## [Building Safe Systems at Scale - Lessons from Six Months at Yahoo]()
+## Building Safe Systems at Scale - Lessons from Six Months at Yahoo
 
 Our profession is at a crossroads. The success of malicious actors such as phishers, spammers, malvertisers, and other criminals combined with revelations of pervasive government surveillance has changed the way users look at technology and has greatly increased our responsibility for building safe software.
 
@@ -552,9 +508,7 @@ Our profession is at a crossroads. The success of malicious actors such as phish
 
 ---
 
-[]()[]()[]()
-
-## [Call To Arms: A Tale of the Weaknesses of Current Client-Side XSS Filtering]()
+## Call To Arms: A Tale of the Weaknesses of Current Client-Side XSS Filtering
 
 Cross-Site Scripting (XSS) is one of the most severe security vulnerabilities of the web. With the introduction of HTML5, the complexity of web applications is ever increasing and despite the existence of robust protection libraries, Cross-Site Scripting vulnerabilities are nowadays omnipresent on the web.
 
@@ -572,9 +526,7 @@ Cross-Site Scripting (XSS) is one of the most severe security vulnerabilities of
 
 ---
 
-[]()
-
-## [Capstone: Next Generation Disassembly Framework]()
+## Capstone: Next Generation Disassembly Framework
 
 Disassembly framework is the fundamental component in all binary analysis, reversing, and exploit development. However, it is shameful that until the end of 2013, there was no single framework that can handle multi-architecture machine code with a friendly license. Especially, with the shift of the computer industry towards multi-platforms products, the lack of such a disassembly engine becomes serious and should be fixed as soon as possible. Unfortunately, at that time, there was no light at the end of the tunnel, as apparently nobody proposed anything to fix it.
 
@@ -602,9 +554,7 @@ Disassembly framework is the fundamental component in all binary analysis, rever
 
 ---
 
-[]()[]()[]()
-
-## [Catching Malware En Masse: DNS and IP Style]()
+## Catching Malware En Masse: DNS and IP Style
 
 The Internet is constantly growing, providing a myriad of new services both legitimate and malicious. Criminals take advantage of the scalable, distributed, and rather easily accessible naming, hosting and routing infrastructures of the Internet. As a result, the battle against malware is raging on multiple fronts: the endpoint, the network perimeter, and the application layer. The need for innovative measures to gain ground against the enemy has never been greater.
 
@@ -630,9 +580,7 @@ The Internet is constantly growing, providing a myriad of new services both legi
 
 ---
 
-[]()[]()
-
-## [Cellular Exploitation on a Global Scale: The Rise and Fall of the Control Protocol]()
+## Cellular Exploitation on a Global Scale: The Rise and Fall of the Control Protocol
 
 Since the introduction of the smart phone, the issue of control has entered a new paradigm. Manufacturers and enterprises have claimed control over not just how your phone operates, but the software that is allowed to run on it. However, few people know that Service Providers have a hidden and pervasive level of control over your device. These hidden controls can be found in over 2 billion cellular devices worldwide. Organizations have been quietly deploying these controls in smart phones, feature phones, basebands, laptops, embedded M2M devices, and even certain cars. Someone with knowledge of these controls and the right techniques could potentially leverage them for cellular exploitation on a global scale.
 
@@ -646,9 +594,7 @@ Since the introduction of the smart phone, the issue of control has entered a ne
 
 ---
 
-[]()[]()
-
-## [CloudBots: Harvesting Crypto Coins Like a Botnet Farmer]()
+## CloudBots: Harvesting Crypto Coins Like a Botnet Farmer
 
 What happens when computer criminals start using friendly cloud services for malicious activities? In this presentation, we explore how to (ab)use free trials to get access to vast amounts of computing power, storage, and pre-made hacking environments. Oh! Also, we violate the hell out of some terms of service.
 
@@ -662,9 +608,7 @@ What happens when computer criminals start using friendly cloud services for mal
 
 ---
 
-[]()[]()[]()
-
-## [Computrace Backdoor Revisited]()
+## Computrace Backdoor Revisited
 
 This presentation includes a live demonstration of security flaws in modern anti-theft technologies that reside in firmware and PC BIOS of most popular laptops and some desktop computers. While the general idea behind anti-theft technology is good, improper implementation can render it useless as well as harmful, or even extremely dangerous. We have found several proofs of unauthorized activations of Absolute Computrace anti-theft software on our private and corporate computers and discovered that this software can be used as an advanced removal-resistant BIOS-based backdoor.
 
@@ -676,9 +620,7 @@ This presentation includes a live demonstration of security flaws in modern anti
 
 ---
 
-[]()
-
-## [Contemporary Automatic Program Analysis]()
+## Contemporary Automatic Program Analysis
 
 The ability to automatically discover security vulnerabilities has been coveted since Martin Bishop's team found the black box in the 1992 film "Sneakers." Automatic exploitation generation research coming out of academia demonstrates that we're getting close and DARPA's Cyber Grand Challenge announcement indicates that we want it bad. Behind the facade of automatic program analysis is a lot of arduous computer theory and discrete math. But automatic analysis is supposed to make vulnerability research easier not harder!
 
@@ -690,9 +632,7 @@ The ability to automatically discover security vulnerabilities has been coveted 
 
 ---
 
-[]()[]()
-
-## [Creating a Spider Goat: Using Transactional Memory Support for Security]()
+## Creating a Spider Goat: Using Transactional Memory Support for Security
 
 Often a solution from one area helps solve problems in a completely different field. In this session, we will show you how Intel CPU improvements designed to speed up computations have boosted security by creating a flexible memory monitor capable of detecting and reversing unauthorized memory changes.
 
@@ -720,9 +660,7 @@ We will also discuss potential problems - for example, a DoS attack on TSX to ex
 
 ---
 
-[]()
-
-## [Data-Only Pwning Microsoft Windows Kernel: Exploitation of Kernel Pool Overflows on Microsoft Windows 8.1]()
+## Data-Only Pwning Microsoft Windows Kernel: Exploitation of Kernel Pool Overflows on Microsoft Windows 8.1
 
 Each new version of Windows OS Microsoft enhances security by adding security mitigation mechanisms - Kernel land vulnerabilities are getting more and more valuable these days. For example, the easy way to escape from a sandbox is by using a kernel vulnerability. That's why Microsoft struggles to enhance security of Windows kernel.
 
@@ -744,9 +682,7 @@ Each new version of Windows OS Microsoft enhances security by adding security mi
 
 ---
 
-[]()[]()
-
-## [Defeating the Transparency Feature of DBI]()
+## Defeating the Transparency Feature of DBI
 
 DynamoRIO and similar dynamic binary instrumentation (DBI) systems are used for program analysis, profiling, and comprehensive manipulation of binary applications. These DBI tools are critical for malware analysis, program feature collections, and virtual machine binary translations. An important aspect of these DBI tools is the transparent feature, i.e. the binary application (such as malware) being analyzed is not modified and is not aware of the runtime code manipulation.
 
@@ -758,9 +694,7 @@ DynamoRIO and similar dynamic binary instrumentation (DBI) systems are used for 
 
 ---
 
-[]()
-
-## [Digging for IE11 Sandbox Escapes]()
+## Digging for IE11 Sandbox Escapes
 
 In June 2013, Microsoft started the first of their new bug-bounty programs, focusing on finding vulnerabilities in IE11 on the upcoming Windows 8.1 OS. Rather than spending my time fuzzing for RCEs, I focused on pure logic bugs and the best place to find them was in the sandbox implementation. As IE11 defaults to using Microsoft's new Enhanced Protected Mode (EPM) sandbox that repurposes Windows 8's App Container mechanism to more heavily restrict access to securable resources, it would seem to be a tough challenge, but it turned out not to be the case.
 
@@ -774,9 +708,7 @@ In June 2013, Microsoft started the first of their new bug-bounty programs, focu
 
 ---
 
-[]()
-
-## [Dynamic Flash Instrumentation for Fun and Profit]()
+## Dynamic Flash Instrumentation for Fun and Profit
 
 Many of the latest Flash exploits seen in the wild (CVE-2013-5329, CVE-2013-5330, CVE-2014-0497, etc) are protected with commercial tools like DoSWF and secureSWF. Malicious Flash redirectors are also utilizing the same tools. Static analysis of protected Flash objects is slow and frustrating: you need to identify the encryption algorithm and the key, implement the decryption routine, and extract the encrypted data from the Flash object. Code obfuscation techniques can also be a real pain in the *** when static analysis is the only option. If only there were a decent tool for dynamic analysis Flash files...
 
@@ -788,9 +720,7 @@ Many of the latest Flash exploits seen in the wild (CVE-2013-5329, CVE-2013-5330
 
 ---
 
-[]()[]()
-
-## [Epidemiology of Software Vulnerabilities: A Study of Attack Surface Spread]()
+## Epidemiology of Software Vulnerabilities: A Study of Attack Surface Spread
 
 Many developers today are turning to well established third-party libraries to speed the development process and realize quality improvements over creating an in-house proprietary font parsing or image rendering library from the ground up. Efficiency comes at a cost though: a single application may have as many as 100 different third party libraries implemented. The result is that third-party and open source libraries have the ability to spread a single vulnerability across multiple products, exposing enterprises and requiring software vendors and IT organizations to patch the same vulnerability repeatedly. How big of a problem is this? What libraries are the biggest offenders for spreading pestilence? And what can be done to minimize this problem? This presentation will dive deep into vulnerability data and explore the source and spread of these vulnerabilities through products, as well as actions the security research community and enterprise customers can take to address this problem.
 
@@ -800,9 +730,7 @@ Many developers today are turning to well established third-party libraries to s
 
 ---
 
-[]()[]()
-
-## [Evasion of High-End IPS Devices in the Age of IPv6]()
+## Evasion of High-End IPS Devices in the Age of IPv6
 
 IPv6 era is here, either if you already use it or if you continue to ignore it. However, even in the last case, this does not mean that your nodes (end-hosts, networking devices, security devices) are not already pre-configured with IPv6 connectivity, at least to some extent. At the same time, ARIN states that they are currently in phase three of a 4-phased IPv4 Countdown Plan, being already down to about 0.9/8s in aggregate. On the other hand, RIPE NCC has reached its last /8 IPv4 address space quite some time ago.
 
@@ -814,9 +742,7 @@ And what IPv6 does not forgive for sure is the lack of security awareness. Sever
 
 ---
 
-[]()[]()[]()[]()
-
-## [Exploiting Unpatched iOS Vulnerabilities for Fun and Profit]()
+## Exploiting Unpatched iOS Vulnerabilities for Fun and Profit
 
 Patching all vulnerabilities for a modern, complex software system (i.e., Windows, iOS) is often difficult due to the volume of bugs and response time requirements. Instead, software vendors usually devise quick workarounds to mitigate the exploitation of a given vulnerability. However, those patches are sometimes incomplete, and attackers can utilize different attack vectors to re-exploit a patched vulnerability. iOS is no exception.
 
@@ -828,9 +754,7 @@ Patching all vulnerabilities for a modern, complex software system (i.e., Window
 
 ---
 
-[]()
-
-## [Exposing Bootkits with BIOS Emulation]()
+## Exposing Bootkits with BIOS Emulation
 
 Stealth and persistency are invaluable assets to an intruder. You cannot defend against what you cannot see. This talk discusses techniques to counter attempts at subverting modern security features, and regain control of compromised machines, by drilling down deep into internal structures of the operating system to battle the threat of bootkits.
 
@@ -846,9 +770,7 @@ Stealth and persistency are invaluable assets to an intruder. You cannot defend 
 
 ---
 
-[]()[]()[]()[]()
-
-## [Extreme Privilege Escalation on Windows 8/UEFI Systems]()
+## Extreme Privilege Escalation on Windows 8/UEFI Systems
 
 The UEFI specification has more tightly coupled the bonds of the operating system and the platform firmware by providing the well-defined "runtime services" interface between the operating system and the firmware.
 
@@ -862,9 +784,7 @@ The UEFI specification has more tightly coupled the bonds of the operating syste
 
 ---
 
-[]()
-
-## [Finding and Exploiting Access Control Vulnerabilities in Graphical User Interfaces]()
+## Finding and Exploiting Access Control Vulnerabilities in Graphical User Interfaces
 
 Graphical user interfaces (GUIs) contain a number of common visual elements or widgets such as labels, text fields, buttons, and lists. GUIs typically provide the ability to set attributes on these widgets to control their visibility, enabled status, and whether they are writable. While these attributes are extremely useful to provide visual cues to users to guide them through an application's GUI, they can also be misused for purposes they were not intended. In particular, in the context of GUI-based applications that include multiple privilege levels within the application, GUI element attributes are often misused as a mechanism for enforcing access control policies.
 
@@ -876,9 +796,7 @@ Graphical user interfaces (GUIs) contain a number of common visual elements or w
 
 ---
 
-[]()
-
-## [Fingerprinting Web Application Platforms by Variations in PNG Implementations]()
+## Fingerprinting Web Application Platforms by Variations in PNG Implementations
 
 Fingerprinting is an important preliminary step when auditing web applications. But the usual techniques based on the analysis of cookies, headers, and static files are easy to fool. Fingerprinting digital images is a technique commonly used for forensic investigations but rarely for security audits. Moreover, it is mostly based on the analysis of JPEG images only. In this talk we study the implementation differences between a number of PNG decoders/encoders, either build-in or commonly used with the main web application development platforms. As a result, we give a set of tests that can discriminate between various PNG libraries. As a consequence, it is often possible to identify the platform behind a website even when an effort has been made to prevent fingerprinting, as long as said website allows the upload of PNG images.
 
@@ -888,9 +806,7 @@ Fingerprinting is an important preliminary step when auditing web applications. 
 
 ---
 
-[]()
-
-## [From Attacks to Action - Building a Usable Threat Model to Drive Defensive Choices]()
+## From Attacks to Action - Building a Usable Threat Model to Drive Defensive Choices
 
 By any historical standard, it would be fair to call today the "Golden Age Of Threat." As defenders, never before in our history have we known so much about bad guys, vulnerabilities, attacks, incidents, tradecraft, exploitation, etc. And it has become its own fast-rising industry of threat feeds, alerts, intelligence reports, standards, and tools.
 
@@ -910,9 +826,7 @@ By any historical standard, it would be fair to call today the "Golden Age Of Th
 
 ---
 
-[]()
-
-## [Full System Emulation: Achieving Successful Automated Dynamic Analysis of Evasive Malware]()
+## Full System Emulation: Achieving Successful Automated Dynamic Analysis of Evasive Malware
 
 Today, forensics experts and anti-malware solutions face a multitude of challenges when attempting to extract information from malicious files; dynamic analysis (sandboxing) is a popular method of identifying behavior associated with running or opening a given file, and provides the ability to examine the actions which that file is responsible for. Dynamic analysis technology is gaining popularity for use in detecting targeted threats and zero-day attacks, because this approach need not rely on detecting the malicious code. Instead, it can leverage the ability to identify generic "suspicious behaviors" to assess the risk inherent in running a given sample, and provide intelligence about the protocols and infrastructure attackers can use to control malicious samples.
 
@@ -930,9 +844,7 @@ Today, forensics experts and anti-malware solutions face a multitude of challeng
 
 ---
 
-[]()
-
-## [Governments As Malware Authors: The Next Generation]()
+## Governments As Malware Authors: The Next Generation
 
 After cancelling his RSA talk in protest, Mikko delivered his talk on Governments as Malware Authors at TrustyCon instead. This follow-up talk will look at what's changed since then, and what new we have learned about governments that write malware. Which governments are involved? Where do they get the skills? How big are the budgets for this? And, most importantly: do we have any hope of fighting malwareof this caliber?
 
@@ -942,9 +854,7 @@ After cancelling his RSA talk in protest, Mikko delivered his talk on Government
 
 ---
 
-[]()
-
-## [GRR: Find All the Badness, Collect All the Things]()
+## GRR: Find All the Badness, Collect All the Things
 
 While on vacation Joe saw something weird happen on his machine, and thinks he might be owned. From the comfort of your desk: collect common persistence mechanisms and submit the binaries to your bulk malware analysis pipeline, grab a netstat, a process listing, and check recent browsing history. See something interesting? Grab a process listing from memory, collect deleted files, find the badness. Now check every machine in your fleet for the same malware within 30 minutes.
 
@@ -958,9 +868,7 @@ While on vacation Joe saw something weird happen on his machine, and thinks he m
 
 ---
 
-[]()
-
-## [Hacking the Wireless World with Software Defined Radio - 2.0]()
+## Hacking the Wireless World with Software Defined Radio - 2.0
 
 Ever wanted to spoof a restaurant's pager system? How about use an airport's Primary Surveillance RADAR to build your own bistatic RADAR system and track moving objects? What sorts of RF transactions take place in RFID systems, such as toll booths, building security and vehicular keyless entry? Then there's 'printing' steganographic images onto the radio spectrum...
 
@@ -976,9 +884,7 @@ Ever wanted to spoof a restaurant's pager system? How about use an airport's Pri
 
 ---
 
-[]()
-
-## [How Smartcard Payment Systems Fail]()
+## How Smartcard Payment Systems Fail
 
 The USA is starting to introduce EMV, the Europay-Mastercard-Visa system for making payments using chip cards instead of the old mag strip variety. EMV is already in wide use in Europe, and has started to appear in countries from Canada to India.
  In theory, smartcards should have reduced fraud by making bankcards much harder to copy and by enabling banks to authenticate users at the point of sale using PINs rather than signatures. The practice has been different. In Britain, for example, fraud first went up, then down, and is now headed upwards again. There have been many fascinating attacks, which I'll describe. The certification system wasn't fit for purpose, so terminals that were certified as tamper-resistant turned out not to be. We even saw Trojans inserted in the supply chain. A protocol flaw meant that a crook could use a stolen card without knowing the PIN; he could use a man-in-the-middle device to persuade the terminal that the card had accepted the PIN, while the card was told to do a signature-only transaction. Merchant refunds were not authenticated, so a crook could pretend to the bank that he was a merchant, and credit his card back after making a purchase.
@@ -992,10 +898,6 @@ The USA is starting to introduce EMV, the Europay-Mastercard-Visa system for mak
  [Ross Anderson](https://web.archive.org/web/20160405180600/https:/www.blackhat.com/us-14/speakers/Ross-Anderson.html)
 
 ---
-
-[]()[]()
-
-##
 
 Many Online Social Networks (OSN) are using OAuth 2.0 to grant access to API endpoints nowadays. Despite many thorough threat model analyses (e.g. RFC6819), only a few real world attacks have been discovered and demonstrated. To our knowledge, previously discovered loopholes are all based on the misuse of OAuth. It was generally believed that the correct use of OAuth 2.0 (by OSN provider and application developer) is secure enough. We break this belief by demonstrating a massive leakage of user data which roots from the scotoma of OAuth's fundamental design rationale: focus on protecting user, not protecting application.
 
@@ -1011,9 +913,7 @@ Our discovery shows that it is urgent for industrial practitioners to provide th
 
 ---
 
-[]()
-
-## [How to Wear Your Password]()
+## How to Wear Your Password
 
 We introduce a new authentication paradigm that achieves both a desirable user experience and a high level of security. We describe and demo an implementation of an identity manager in the guise of a smart bracelet. This bracelet is equipped with a low-power processor, a Bluetooth LE transmitter, an accelerometer, and a clasp that is constructed so that opening and closing it breaks and closes a circuit, thereby allowing an automatic detection of when the bracelet is put on and taken off. However, for reasons of cost, design and error avoidance, the bracelet does not have any user interface, nor any biometric sensors: All user interaction is assisted by third-party devices, such as user phones and point of sale terminals.
 
@@ -1027,9 +927,7 @@ We introduce a new authentication paradigm that achieves both a desirable user e
 
 ---
 
-[]()
-
-## [I Know Your Filtering Policy Better than You Do: External Enumeration and Exploitation of Email and Web Security Solutions]()
+## I Know Your Filtering Policy Better than You Do: External Enumeration and Exploitation of Email and Web Security Solutions
 
 Email and web filtering products and services are core components for protecting company employees from malware, phishing and client-side attacks.
 
@@ -1049,9 +947,7 @@ Email and web filtering products and services are core components for protecting
 
 ---
 
-[]()[]()
-
-## [ICSCorsair: How I Will PWN Your ERP Through 4-20 mA Current Loop]()
+## ICSCorsair: How I Will PWN Your ERP Through 4-20 mA Current Loop
 
 Modern Industrial Control Systems (ICS) are deeply integrated with other parts of corporate networks. Plant Asset Management systems, OPC, and SCADA interconnect low-level devices, such as transmitters, actuators, PLCs, with high-level applications, such as MES and ERP. But, what will happen if you can connect to the line where low-level network protocols (such as HART (FSK over 4-20 mA current loop), FF H1, Profibus DP, Modbus over RS-485, e t.c.) flow? Almost everyone knows that then you can probably affect industrial processes. But, there is something more: from this point, you can attack not only the lowest levels of the network, but also PAS, MES, and even ERP systems!
 
@@ -1065,9 +961,7 @@ Modern Industrial Control Systems (ICS) are deeply integrated with other parts o
 
 ---
 
-[]()
-
-## [Internet Scanning - Current State and Lessons Learned]()
+## Internet Scanning - Current State and Lessons Learned
 
 After publishing raw data sets and engaging with the community within our Internet Scanning efforts labeled Project Sonar, there were several logical next steps and an endless amount of ideas to follow up on. In the first quarter of 2014, we were implementing databases, search engines, and generic trending features on top of the collected data from the project. Several community members, from students to pentesters and researchers, downloaded the data sets and started analysis on their own or used it for their work.
 
@@ -1083,9 +977,7 @@ After publishing raw data sets and engaging with the community within our Intern
 
 ---
 
-[]()[]()
-
-## [Investigating PowerShell Attacks]()
+## Investigating PowerShell Attacks
 
 Over the past two years, we've seen targeted attackers increasingly make use of PowerShell to conduct command-and-control in compromised Windows environments. If your organization is running Windows 7 or Server 2008 R2, you've got PowerShell 2.0 installed (and on Server 2012, remoting is enabled by default!). This has created a whole new playground of attack techniques for intruders that have already popped a few admin accounts (or an entire domain). Even if you're not legitimately using PowerShell to administer your systems, you need to be aware of how attackers can enable and abuse its features.
 
@@ -1097,9 +989,7 @@ Over the past two years, we've seen targeted attackers increasingly make use of 
 
 ---
 
-[]()
-
-## [It Just (Net)works: The Truth About iOS 7's Multipeer Connectivity Framework]()
+## It Just (Net)works: The Truth About iOS 7's Multipeer Connectivity Framework
 
 With the release of iOS 7, Apple has quietly introduced a nifty feature called Multipeer Connectivity. Using a surprisingly small and simple set of APIs, developers can create applications that have the ability to discover and directly communicate with nearby iOS devices over Bluetooth or WiFi, without the need for an Internet connection. While the Multipeer Connectivity Framework brings the promise of peer-to-peer and mesh networking apps significantly closer to reality, little is known regarding how it actually works behind the scenes and what the risks are for applications leveraging this functionality.
 
@@ -1111,9 +1001,7 @@ With the release of iOS 7, Apple has quietly introduced a nifty feature called M
 
 ---
 
-[]()
-
-## [Learn How to Control Every Room at a Luxury Hotel Remotely: The Dangers of Insecure Home Automation Deployment]()
+## Learn How to Control Every Room at a Luxury Hotel Remotely: The Dangers of Insecure Home Automation Deployment
 
 Have you ever had the urge to create mayhem at a hotel? Force every hotel guest to watch your favorite TV show with you? Or wake your neighbors up (all 290 of them!) with blaring music and with their blinds up at 3 AM?
 
@@ -1129,9 +1017,7 @@ Have you ever had the urge to create mayhem at a hotel? Force every hotel guest 
 
 ---
 
-[]()[]()
-
-## [Leviathan: Command and Control Communications on Planet Earth]()
+## Leviathan: Command and Control Communications on Planet Earth
 
 Every day, computer network attackers leverage a Leviathan of compromised infrastructure, based in every corner of the globe, to play hide-and-seek with network security, law enforcement, and counterintelligence personnel.
 
@@ -1149,9 +1035,7 @@ In conclusion, the authors consider the future of this Leviathan, including whet
 
 ---
 
-[]()[]()[]()
-
-## [Lifecycle of a Phone Fraudster: Exposing Fraud Activity from Reconnaissance to Takeover Using Graph Analysis and Acoustical Anomalies]()
+## Lifecycle of a Phone Fraudster: Exposing Fraud Activity from Reconnaissance to Takeover Using Graph Analysis and Acoustical Anomalies
 
 Enterprises are vulnerable to "human hacking," the effective social engineering of employees, contractors, and other trusted persons. In particular, financial institutions have seen a significant increase in account takeover attacks over the phone by sophisticated fraudsters socially engineering call center agents. The customer information required is often obtained by gathering intelligence through reconnaissance, probing systems or humans. In this talk, we will show how to detect both the account takeover calls using acoustical anomalies and the reconnaissance calls leading to it through graph analysis. Using acoustical anomalies, we are able to detect over 80% of these calls with less than a 2% false positive rate. Furthermore, our graph analysis is able to see reconnaissance calls for 46% of these account takeovers 10 days before the actual takeover. These results are on a dataset of over hundreds of million calls. In the process, we will reveal the lifecycle of a phone fraudster as he works through both the call center agent and its technology to extract information about a customer and takeover his or her account.
 
@@ -1161,9 +1045,7 @@ Enterprises are vulnerable to "human hacking," the effective social engineering 
 
 ---
 
-[]()
-
-## [Miniaturization]()
+## Miniaturization
 
 Too often researchers ignore the hard parts of SCADA hacking. Too many presentations could be described as "I got past the SCADA firewall so I win!!!" Little information is available on what to do after the attacker gains control of the process. As a challenge, consider the scenario where I just gave you control of a paint factory. Now what? The answer to that question is often specific to the process, but there are a number of generic techniques that can be discussed. Often, designing an attack leads to interesting hacking and computer science challenges.
 
@@ -1179,9 +1061,7 @@ Too often researchers ignore the hard parts of SCADA hacking. Too many presentat
 
 ---
 
-[]()[]()
-
-## [Mission mPOSsible]()
+## Mission mPOSsible
 
 Mobile Point-of-Sale (mPOS) systems allow small businesses and drug dealers to accept credit card payments using their favourite iDevice (Disclaimer: other mobile devices are available). During our research, we had a look at the security of the leading solutions for mobile Chip&Pin; payments. If you saw our previous PinPadPwn research, you won't be surprised to hear we discovered a series of vulnerabilities which allow us to gain code execution on these devices through each of the available input vectors. We will discuss the weaknesses of current solutions and have live demonstrations for multiple attack vectors, our favourite being a malicious credit card which drops a remote root shell on an embedded mPOS device.
 
@@ -1191,9 +1071,7 @@ Mobile Point-of-Sale (mPOS) systems allow small businesses and drug dealers to a
 
 ---
 
-[]()
-
-## [Mobile Device Mismanagement]()
+## Mobile Device Mismanagement
 
 MDM solutions are ubiquitous in today's enterprise environment. They provide a way for security and IT departments to mitigate the risk of mobile malware and lost/stolen devices when personal devices are being used to access and store corporate resources.
 
@@ -1207,9 +1085,7 @@ MDM solutions are ubiquitous in today's enterprise environment. They provide a w
 
 ---
 
-[]()
-
-## [MoRE Shadow Walker: The Progression of TLB-Splitting on x86]()
+## MoRE Shadow Walker: The Progression of TLB-Splitting on x86
 
 This talk will cover the concept of translation lookaside buffer (TLB) splitting for code hiding and how the evolution of the Intel x86 architecture has rendered previous techniques obsolete and new techniques to perform TLB-splitting on modern hardware. After requisite background is provided, a timeline of how TLB-splitting was used for both defensive (PaX memory protections) and offensive purposes (Shadow Walker root-kit) and how the new Intel Core i-series processors fundamentally changed the TLB architecture, breaking those technologies. The talk will then move to the new research, the author's method for splitting a TLB on Core i-series and newer processors and how it can again be used for defensive (MoRE code-injection detection) and offensive purposes (EPT Shadow Walker root-kit).
 
@@ -1221,9 +1097,7 @@ This talk will cover the concept of translation lookaside buffer (TLB) splitting
 
 ---
 
-[]()[]()
-
-## [Multipath TCP: Breaking Today's Networks with Tomorrow's Protocols]()
+## Multipath TCP: Breaking Today's Networks with Tomorrow's Protocols
 
 MultiPath TCP (MPTCP) is an extension to TCP that enables sessions to use multiple network endpoints and multiple network paths at the same time, and to change addresses in the middle of a connection. MPTCP works transparently over most existing network infrastructure, yet very few security and network management tools can correctly interpret MPTCP streams. With MPTCP network security is changed: how do you secure traffic when you can't see it all and when the endpoint addresses change in the middle of a connection?
 
@@ -1235,9 +1109,7 @@ MultiPath TCP (MPTCP) is an extension to TCP that enables sessions to use multip
 
 ---
 
-[]()[]()[]()
-
-## [My Google Glass Sees Your Passwords!]()
+## My Google Glass Sees Your Passwords!
 
 In this presentation, we introduce a novel computer vision based attack that automatically discloses inputs on a touch enabled device. Our spying camera, including Google Glass, can take a video of the victim tapping on the touch screen and automatically recognize more than 90% of the tapped passcodes from three meters away, even if our naked eyes cannot see those passcodes or anything on the touch screen. The basic idea is to track the movement of the fingertip and use the fingertip's relative position on the touch screen to recognize the touch input. We carefully analyze the shadow formation around the fingertip, apply the optical flow, deformable part-based model (DPM) object detector, k-means clustering and other computer vision techniques to automatically track the touching fingertip and locate the touched points. Planar homography is then applied to map the estimated touched points to a software keyboard in a reference image. Our work is substantially different from related work on blind recognition of touch inputs. We target passcodes where no language model can be applied to correct estimated touched keys. We are interested in scenarios such as conferences and similar gathering places where a Google Glass, webcam, or smartphone can be used for a stealthy attack. Extensive experiments were performed to demonstrate the impact of this attack. As a countermeasure, we design a context aware Privacy Enhancing Keyboard (PEK) which pops up a randomized keyboard on Android systems for sensitive information such as password inputs and shows a conventional QWERTY keyboard for normal inputs.
 
@@ -1247,9 +1119,7 @@ In this presentation, we introduce a novel computer vision based attack that aut
 
 ---
 
-[]()
-
-## [Network Attached Shell: N.A.S.ty Systems that Store Network Accessible Shells]()
+## Network Attached Shell: N.A.S.ty Systems that Store Network Accessible Shells
 
 Through extensive analysis, Independent Security Evaluators (ISE) has identified dozens of previously undisclosed, critical security vulnerabilities in numerous network storage devices from a handful of goto manufacturers (manufacturers: e.g., Seagate, D-Link, Netgear). Vulnerabilities of network-attached storage not only expose stored data, but also provide a vantage point for further PWNAGE of the network infrastructure on which the storage system sits. Our research efforts focused on identifying vulnerabilities that obtained administrative access (such as command injection, directory traversal, authentication bypass, memory corruption, backdoors, etc.), and quantifying the associated risk.
 
@@ -1267,9 +1137,7 @@ Through extensive analysis, Independent Security Evaluators (ISE) has identified
 
 ---
 
-[]()[]()
-
-## [One Packer to Rule Them All: Empirical Identification, Comparison, and Circumvention of Current Antivirus Detection Techniques]()
+## One Packer to Rule Them All: Empirical Identification, Comparison, and Circumvention of Current Antivirus Detection Techniques
 
 Lately, many popular anti-virus solutions claim to be the most effective against unknown and obfuscated malware. Most of these solutions are rather vague about how they supposedly achieve this goal, making it hard for end-users to evaluate and compare the effectiveness of the different products on the market. This presentation presents empirically discovered results on the various implementations of these methods per solution, which reveal that some anti-virus solutions have more mature methods to detect x86 malware than others, but all of them are lagging behind when it comes to x64 malware. In general, at most three stages were identified in the detection process: Static detection, Code Emulation detection (before execution), and Runtime detection (during execution). New generic evasion techniques are presented for each of these stages. These techniques were implemented by an advanced, dedicated packer, which is an approach commonly taken by malware developers to evade detection of their malicious toolset. Two brand new packing methods were developed for this cause. By combining several evasion techniques, real-world malicious executables with a high detection rate were rendered completely undetected to the prying eyes of anti-virus products.
 
@@ -1279,9 +1147,7 @@ Lately, many popular anti-virus solutions claim to be the most effective against
 
 ---
 
-[]()
-
-## [OpenStack Cloud at Yahoo Scale: How to Avoid Disaster]()
+## OpenStack Cloud at Yahoo Scale: How to Avoid Disaster
 
 OpenStack is an Open Source project that allows you to manage a cloud of VMs that has grown into a widely adopted platform. The issue with having a centralized Infrastructure As A Service (IAAS) is that if you compromise the management cluster you can attack everything it controls, which is a lot at Yahoo scale. How do you keep your OpenStack cluster safe? What do you do when a management system, hypervisor, or VM is compromised?
 
@@ -1293,9 +1159,7 @@ OpenStack is an Open Source project that allows you to manage a cloud of VMs tha
 
 ---
 
-[]()
-
-## [Oracle Data Redaction is Broken]()
+## Oracle Data Redaction is Broken
 
 The Oracle data redaction service is a new feature introduced with Oracle 12c. It allows sensitive data, such as PII, to be redacted to prevent it being exposed to attackers. On paper this sounds like a great idea, but in practice, Oracle's implementation is vulnerable to multiple attacks that allow an attacker to bypass the redaction and launch privilege escalation attacks.
 
@@ -1305,9 +1169,7 @@ The Oracle data redaction service is a new feature introduced with Oracle 12c. I
 
 ---
 
-[]()
-
-## [Pivoting in Amazon Clouds]()
+## Pivoting in Amazon Clouds
 
 From no access at all, to the company Amazon's root account, this talk will teach attendees about the components used in cloud applications like: EC2, SQS, IAM, RDS, meta-data, user-data, Celery; and how misconfigurations in each can be abused to gain access to operating systems, database information, application source code, and Amazon's services through its API.
 
@@ -1329,9 +1191,7 @@ From no access at all, to the company Amazon's root account, this talk will teac
 
 ---
 
-[]()
-
-## [Poacher Turned Gamekeeper: Lessons Learned from Eight Years of Breaking Hypervisors]()
+## Poacher Turned Gamekeeper: Lessons Learned from Eight Years of Breaking Hypervisors
 
 Hypervisors have become a key element of both cloud and client computing. It is without doubt that hypervisors are going to be commonplace in future devices, and play an important role in the security industry. In this presentation, we discuss in detail the various lessons learnt whilst building and breaking various common hypervisors. In particular, we take a trip down memory lane and examine vulnerabilities found in all the popular hypervisors that have led to break-outs. To add some spice, we will talk about details of four not-yet-discussed vulnerabilities we recently discovered.
 
@@ -1345,9 +1205,7 @@ Hypervisors have become a key element of both cloud and client computing. It is 
 
 ---
 
-[]()
-
-## [Point of Sale System Architecture and Security]()
+## Point of Sale System Architecture and Security
 
 To most people, Point of Sale (POS) systems with integrated payment processing are a black box where magic happens. Financial criminals breach hundreds of merchants each year, displaying a better understanding of how these systems operate than the dealer technicians that install and maintain them. With an understanding of POS architecture, integrated payment processing, and weaknesses in the technology, security professionals can better protect local businesses, major retailers, and developers handling payment card information. In this session, attendees will learn and see how POS components operate, their integration points, and the flow of payment data including where it's most vulnerable. A live demonstration will show exactly what sensitive data is passed in the clear by both magstripe and EMV chip readers, mapping it from peripheral all the way through the electronic payments infrastructure. Common attack vectors will then be presented, building on that architectural knowledge. Finally, top attack mitigations will be provided to save businesses from being breached and the disastrous losses that result.
 
@@ -1357,9 +1215,7 @@ To most people, Point of Sale (POS) systems with integrated payment processing a
 
 ---
 
-[]()[]()
-
-## [Prevalent Characteristics in Modern Malware]()
+## Prevalent Characteristics in Modern Malware
 
 Malware is widely acknowledged as a growing threat with hundreds of thousands of new samples reported each week. Analysis of these malware samples has to deal with this significant quantity but also with the defensive capabilities built into malware. Malware authors use a range of evasion techniques to harden their creations against accurate analysis. The evasion techniques aim to disrupt attempts of disassembly, debugging or analyze in a virtualized environment.
 
@@ -1375,9 +1231,7 @@ Malware is widely acknowledged as a growing threat with hundreds of thousands of
 
 ---
 
-[]()[]()
-
-## [Probabilistic Spying on Encrypted Tunnels]()
+## Probabilistic Spying on Encrypted Tunnels
 
 At the network layer, encrypted tunnels are typically seen as black boxes. Network traffic however, leaks side channel information that can often be analyzed to determine what the tunnel is being used for and the type of content being sent over it. Probabilistic algorithms will be explored that can analyze this side channel information and identify application protocols within the tunnel. An open-source toolkit containing the algorithms/attacks presented will be released.
 
@@ -1387,9 +1241,7 @@ At the network layer, encrypted tunnels are typically seen as black boxes. Netwo
 
 ---
 
-[]()
-
-## [Protecting Data In-Use from Firmware and Physical Attacks]()
+## Protecting Data In-Use from Firmware and Physical Attacks
 
 Recent revelations of the NSA ANT program illustrated the many well-known and low-cost physical and firmware attacks that can compromise data in-use and system integrity. These attacks have become more concerning as more computing infrastructure runs outside an organization's physical control.
 
@@ -1401,9 +1253,7 @@ Recent revelations of the NSA ANT program illustrated the many well-known and lo
 
 ---
 
-[]()
-
-## [Pulling Back the Curtain on Airport Security: Can a Weapon Get Past TSA?]()
+## Pulling Back the Curtain on Airport Security: Can a Weapon Get Past TSA?
 
 Every day, millions of people go through airport security. While it is an inconvenience that could take a while, most are willing to follow the necessary procedures if it can guarantee their safety. Modern airport security checkpoints use sophisticated technology to help the security screeners identify potential threats and suspicious baggage. Have you ever wondered how these devices work? Have you ever wondered why an airport security checkpoint was set up in a particular configuration? Join us as we present the details on how a variety of airport security systems actually work, and reveal their weaknesses. We'll present what we have learned about modern airport security procedures, dive deep into the devices used to detect threats, and we'll present some the bugs we discovered along the way.
 
@@ -1413,9 +1263,7 @@ Every day, millions of people go through airport security. While it is an inconv
 
 ---
 
-[]()[]()
-
-## [RAVAGE - Runtime Analysis of Vulnerabilities and Generation of Exploits]()
+## RAVAGE - Runtime Analysis of Vulnerabilities and Generation of Exploits
 
 In this talk, we will show cutting edge research and a tool built to accurately detect vulnerabilities. The tool leverages the standard program execution to detect the full dataflow of vulnerabilities at runtime. It can be used both offensively and defensively. We will show how RAVAGE can be used to detect vulnerabilities, generate exploits, and integrate the newly found exploits into existing exploitation frameworks. In addition to the offensive usage, it can also be used defensively by running existing non-security-related test cases to detect security vulnerabilities.
 
@@ -1427,9 +1275,7 @@ In this talk, we will show cutting edge research and a tool built to accurately 
 
 ---
 
-[]()
-
-## [Reflections on Trusting TrustZone]()
+## Reflections on Trusting TrustZone
 
 TrustZone has emerged as a leading option for security-critical tasks on ARM devices. It has been billed as a "100% secure solution" for restricting access to sensitive device hardware components and securely storing highly privileged information. As a result, TrustZone is used on millions of mobile devices for diverse tasks including managing secure boot, storing DRM keys on behalf of digital content providers, supporting mobile payments, and performing integrity validation on the live operating system kernel.
 
@@ -1441,9 +1287,7 @@ TrustZone has emerged as a leading option for security-critical tasks on ARM dev
 
 ---
 
-[]()
-
-## [Researching Android Device Security with the Help of a Droid Army]()
+## Researching Android Device Security with the Help of a Droid Army
 
 In the last few years, Android has become the world's leading smart phone operating system. Unfortunately, the diversity and sheer number of devices in the ecosystem represent a significant challenge to security researchers. Primarily, auditing and exploit development efforts are less effective when focusing on a single device because each device is like a snowflake: unique.
 
@@ -1457,9 +1301,7 @@ In the last few years, Android has become the world's leading smart phone operat
 
 ---
 
-[]()
-
-## [Reverse Engineering Flash Memory for Fun and Benefit]()
+## Reverse Engineering Flash Memory for Fun and Benefit
 
 There are many benefits to interacting directly with Flash memory when you're having a hard time finding the correct JTAG connection points. That's especially true when you're a software reverse engineer who delves into hardware reversing. Some vendors intentionally obfuscate JTAG points or remove them to prevent reverse engineering.
 
@@ -1473,9 +1315,7 @@ There are many benefits to interacting directly with Flash memory when you're ha
 
 ---
 
-[]()
-
-## [Reverse-Engineering the Supra iBox: Exploitation of a Hardened MSP430-Based Device]()
+## Reverse-Engineering the Supra iBox: Exploitation of a Hardened MSP430-Based Device
 
 This presentation walks through the reverse engineering and exploitation of a hardened embedded device and provides certain techniques you can use to exploit similar devices. The Supra iBox BT is a bluetooth and IR-based physical key storage device used by many real estate professionals in the US. It is physically hardened, and inside is a hardened MSP430 with a blown JTAG fuse. As MSP430 devices become more common, it is slowly becoming the norm to encounter devices in production with blown JTAG fuses. Previously, this was a significant hurdle. In 2008, Goodspeed described several attacks against the MSP's BSL (bootstrap loader). This presentation will review those attacks and describe the challenges facing a researcher attempting to perform them. This presentation will demonstrate how to reliably perform successful firmware extraction on a MSP430 with a blown JTAG fuse.
 
@@ -1487,9 +1327,7 @@ This presentation walks through the reverse engineering and exploitation of a ha
 
 ---
 
-[]()
-
-## [SAP, Credit Cards, and the Bird that Talks Too Much]()
+## SAP, Credit Cards, and the Bird that Talks Too Much
 
 SAP applications build the business backbone of the largest organizations in the world. In this presentation, exploits will be shown manipulating a business process to extract money, critical payment information, and credit card data out of the business backbone. Follow the bird and enjoy tweets of data that will interest you.
 
@@ -1499,9 +1337,7 @@ SAP applications build the business backbone of the largest organizations in the
 
 ---
 
-[]()
-
-## [SATCOM Terminals: Hacking by Air, Sea, and Land]()
+## SATCOM Terminals: Hacking by Air, Sea, and Land
 
 Satellite Communications (SATCOM) play a vital role in the global telecommunications system. We live in a world where data is constantly flowing. It is clear that those who control communications traffic have a distinct advantage. The ability to disrupt, inspect, modify, or re-route traffic provides an invaluable opportunity to carry out attacks.
 
@@ -1531,9 +1367,7 @@ Satellite Communications (SATCOM) play a vital role in the global telecommunicat
 
 ---
 
-[]()
-
-## [Saving Cyberspace]()
+## Saving Cyberspace
 
 Imagine that twenty years after Johannes Gutenberg invented mechanical movable type, the Pope and the petty princes - in fact, anyone who tried hard enough - had the ability to determine exactly who was printing exactly what. Worrying about intellectual property theft, privacy or civil rights violations, had those concepts existed, would be missing the point.
 
@@ -1551,9 +1385,7 @@ Imagine that twenty years after Johannes Gutenberg invented mechanical movable t
 
 ---
 
-[]()
-
-## [SecSi Product Development: Techniques for Ensuring Secure Silicon Applied to Open-Source Verilog Projects]()
+## SecSi Product Development: Techniques for Ensuring Secure Silicon Applied to Open-Source Verilog Projects
 
 Secure development processes for software have formed, developed, and matured in the past decade to the point where there are well defined categories of security bugs and proven methods to find them. Secure hardware development, on the other hand, is essentially undefined at this point. Most developers of integrated circuits do no hardware security validation, or are secretive about their methods and findings.
 
@@ -1565,9 +1397,7 @@ Secure development processes for software have formed, developed, and matured in
 
 ---
 
-[]()
-
-## [Secure Because Math: A Deep-Dive on Machine Learning-Based Monitoring]()
+## Secure Because Math: A Deep-Dive on Machine Learning-Based Monitoring
 
 We could all have predicted this with our magical Big Data analytics platforms, but it seems that machine learning is the new hotness in Information Security. A great number of start-ups with 'cy' and 'threat' in their names that claim that their product will defend or detect more effectively than their neighbors' product "because math." And it should be easy to fool people without a PhD or two that math just works.
 
@@ -1583,9 +1413,7 @@ We could all have predicted this with our magical Big Data analytics platforms, 
 
 ---
 
-[]()[]()
-
-## [Sidewinder Targeted Attack Against Android in the Golden Age of Ad Libs]()
+## Sidewinder Targeted Attack Against Android in the Golden Age of Ad Libs
 
 While Google Play has little malware, many vulnerabilities exist in the apps as well as the Android system itself, and aggressive ad libs leak a lot of user privacy information. When they are combined together, more powerful targeted attacks can be conducted.
 
@@ -1605,9 +1433,7 @@ While Google Play has little malware, many vulnerabilities exist in the apps as 
 
 ---
 
-[]()[]()[]()
-
-## [Smart Nest Thermostat: A Smart Spy in Your Home]()
+## Smart Nest Thermostat: A Smart Spy in Your Home
 
 The Nest thermostat is a smart home automation device that aims to learn about your heating and cooling habits to help optimize your scheduling and power usage. Debuted in 2010, the smart NEST devices have been proved a huge success that Google spent $3.2B to acquire the whole company. However, the smartness of the thermostat also breeds security vulnerabilities, similar to all other smart consumer electronics. The severity of security breach has not been fully embraced due to the traditional assumption that thermostat cannot function more than a thermostat even though users are enjoying its smartness.
 
@@ -1621,9 +1447,7 @@ Using the USB exploit mentioned above, we have loaded a custom compiled kernel w
 
 ---
 
-[]()
-
-## [Static Detection and Automatic Exploitation of Intent Message Vulnerabilities in Android Applications]()
+## Static Detection and Automatic Exploitation of Intent Message Vulnerabilities in Android Applications
 
 We identified a set of vulnerabilities that common Android Apps programming (mis)practices might introduce.
 
@@ -1641,9 +1465,7 @@ We identified a set of vulnerabilities that common Android Apps programming (mis
 
 ---
 
-[]()[]()
-
-## [Stay Out of the Kitchen: A DLP Security Bake-Off]()
+## Stay Out of the Kitchen: A DLP Security Bake-Off
 
 Despite a plethora of data security and protection standards and certifications, companies and their systems are still leaking information like a sieve. Data Loss Prevention (DLP) solutions have often been touted as the "silver bullet" that will keep corporations from becoming the next headline. With deployment models ranging from a fat agent on an endpoint, to a blinky-lights box surveilling all network traffic, to some unified threat management gateway with DLP secret sauce, these solutions are ripe for bypass - or worse.
 
@@ -1655,9 +1477,7 @@ Despite a plethora of data security and protection standards and certifications,
 
 ---
 
-[]()
-
-## [SVG: Exploiting Browsers without Image Parsing Bugs]()
+## SVG: Exploiting Browsers without Image Parsing Bugs
 
 SVG is an XML-based format for vector graphics. Modern web browsers support it natively and allow it to be styled using CSS and manipulated using JavaScript. It is less well-known that SVG can contain its own JavaScript and can import external scripts and stylesheets. Consequently, from a browser security perspective, SVG must be treated like HTML; treating it like JPEG will lead to great suffering.
 
@@ -1667,9 +1487,7 @@ SVG is an XML-based format for vector graphics. Modern web browsers support it n
 
 ---
 
-[]()[]()
-
-## [The Beast is in Your Memory: Return-Oriented Programming Attacks Against Modern Control-Flow Integrity Protection Techniques]()
+## The Beast is in Your Memory: Return-Oriented Programming Attacks Against Modern Control-Flow Integrity Protection Techniques
 
 Return-oriented Programming (ROP) is a powerful exploitation technique used in nearly every exploit today. It maliciously combines short code snippets (gadgets) residing in shared libraries and the executable to bypass data execution prevention (DEP). As a consequence, several new control-flow integrity (CFI) mechanisms and tools have been recently proposed to thwart ROP attacks. For instance, kBouncer and ROPGuard both restrict return instructions to target a call-preceded instruction. In addition, ROPecker and kBouncer force the adversary to invoke a long instruction sequence after a pre-defined number of short gadgets thereby preventing an attacker to execute a sequence of ROP gadgets. Some of the proposed mechanisms have already been integrated in Microsoft's Windows EMET tool. In general, these mechanisms significantly reduce the gadget space and make it challenging for an attacker to mount ROP attacks.
 
@@ -1681,9 +1499,7 @@ Return-oriented Programming (ROP) is a powerful exploitation technique used in n
 
 ---
 
-[]()
-
-## [The BEAST Wins Again: Why TLS Keeps Failing to Protect HTTP]()
+## The BEAST Wins Again: Why TLS Keeps Failing to Protect HTTP
 
 SSL has been around for decades and yet it keeps happening: new attacks are being discovered against TLS at a steady rate. The past year has seen its share of rogue CA certificates and critical vulnerabilities in TLS libraries that we have come to expect. In this talk, I will present no less than three new attacks against the use of TLS on the web. The first one relies on a long-known cryptographic weakness in the protocol that can be combined with long-known issues in TLS implementations to re-enable a flavor of the 2009 renegotiation attack that was thought to be fixed. The second one exploits the truncation weakness known since SSL2 but left unsolved to bypass anti-stripping defenses (strict transport security) and steal secure cookies. The last one exploits vulnerabilities in the deployment of HTTPS, in particular, how HTTP servers process requests and manage certificates and sessions, to reach the holy grail of TLS attacks: full server impersonation of several thousands of websites, including Microsoft, Apple, Twitter, PayPal. The three attacks have strong common points: they rely on an attacker that operates both at the TLS and HTTP levels, and they exploit misunderstandings and false assumptions between TLS libraries and applications.
 
@@ -1695,9 +1511,7 @@ SSL has been around for decades and yet it keeps happening: new attacks are bein
 
 ---
 
-[]()[]()[]()
-
-## [The Big Chill: Legal Landmines that Stifle Security Research and How to Disarm Them]()
+## The Big Chill: Legal Landmines that Stifle Security Research and How to Disarm Them
 
 Security research is a dangerous business.
 
@@ -1711,9 +1525,7 @@ Security research is a dangerous business.
 
 ---
 
-[]()[]()
-
-## [The Devil Does Not Exist - The Role of Deception in Cyber]()
+## The Devil Does Not Exist - The Role of Deception in Cyber
 
 While it might be convenient to think of cyberadversaries as ones and zeros, the reality is that systems are attacked and defended by human beings. As a result, it is important to understand the role deception plays in network operations. This presentation draws upon traditional and emerging research on deception and associated game theories to help the audience understand how attackers might deceive them, how to recognize that deception, and how defenders can also deceive their attackers.
 
@@ -1723,9 +1535,7 @@ While it might be convenient to think of cyberadversaries as ones and zeros, the
 
 ---
 
-[]()[]()[]()
-
-## [The Library of Sparta]()
+## The Library of Sparta
 
 On today's increasingly militarized Internet, companies, non-profits, activists, and individual hackers are forced to melee with nation-state class adversaries. Just as one should never bring a knife to a gun fight, a network defender should not rely on tired maxims such as "perimeter defense" and "defense in depth." Today's adversaries are well past that. This talk teaches you how to tap what we call the Library of Sparta - the collective written expertise codified into military doctrine. Hidden in plain sight, vast free libraries contain the time-tested wisdom of combat at the tactical, operational, and strategic levels. This is the playbook nation-state adversaries are using to target and attack you. This talk will help you better understand how adversaries will target your organization, and it will help you to employ military processes and strategies in your defensive operations. These techniques scale from the individual and small team level all the way up to online armies. This talk isn't a dry index into the library of doctrine, we provide entirely new approaches and examples about how to translate and employ doctrinal concepts in your current operations.
 
@@ -1739,9 +1549,7 @@ On today's increasingly militarized Internet, companies, non-profits, activists,
 
 ---
 
-[]()
-
-## [The New Page of Injections Book: Memcached Injections]()
+## The New Page of Injections Book: Memcached Injections
 
 Memcached is a distributed memory caching system. It is in great demand in big-data Internet projects as it allows reasonably sped up web applications by caching data in RAM. Cached data often includes user sessions and other operational information.
 
@@ -1755,9 +1563,7 @@ Memcached is a distributed memory caching system. It is in great demand in big-d
 
 ---
 
-[]()[]()
-
-## [The New Scourge of Ransomware: A Study of CryptoLocker and Its Friends]()
+## The New Scourge of Ransomware: A Study of CryptoLocker and Its Friends
 
 In March of this year, a Romanian man killed himself and his 4-year old son because of a ransomware he received after visiting adult websites. This "police impersonation" malware instructed him to pay a massive fine or else go to jail for 11 years. Ransomware isn't a new threat; however, it introduced new life with CryptoLocker, the very first variant to perform encryption correctly, thussignificantly inhibiting security researchers and their typical countermeasures. Due to its unique nature, CryptoLocker is one of the few current malware campaigns that spawned its own working group focused around remediation. As time progressed, other ransomware copycat campaigns emerged, some of which got media attention even though they were nothing but vaporware.
 
@@ -1769,9 +1575,7 @@ In March of this year, a Romanian man killed himself and his 4-year old son beca
 
 ---
 
-[]()
-
-## [The State of Incident Response]()
+## The State of Incident Response
 
 The last of the protection-detection-response triad to get any real attention, incident response is big business these days. I plan on stepping back and looking at both the economic and psychological forces that affect incident response as both a business and a technical activity. Nothing seems to be able to keep sufficiently skilled and motivated attackers out of a network. Can incident response save the day?
 
@@ -1781,9 +1585,7 @@ The last of the protection-detection-response triad to get any real attention, i
 
 ---
 
-[]()[]()
-
-## [Thinking Outside the Sandbox - Violating Trust Boundaries in Uncommon Ways]()
+## Thinking Outside the Sandbox - Violating Trust Boundaries in Uncommon Ways
 
 Attacking the modern browser and its plugins is becoming harder. Vendors are employing numerous mitigation technologies to increase the cost of exploit development. An attacker is now forced to uncover multiple vulnerabilities to gain privileged-level code execution on his targets. First, an attacker needs to find a vulnerability, leak an address to get around ASLR, and bypass DEP to gain code execution within the renderer process. The attacker then needs to bypass the application sandbox to elevate his privileges, which will allow him to do something interesting. Our journey begins at the sandbox and investigates some of the more obscure techniques used to violate this trust boundary.
 
@@ -1795,9 +1597,7 @@ Attacking the modern browser and its plugins is becoming harder. Vendors are emp
 
 ---
 
-[]()
-
-## [Threat Intelligence Library - A New Revolutionary Technology to Enhance the SOC Battle Rhythm!]()
+## Threat Intelligence Library - A New Revolutionary Technology to Enhance the SOC Battle Rhythm!
 
 Cyber indicators are the 'new-er' detection strategy to help dismantle adversarial assaults and the volume of crowdsourced and private community malicious IOCs grows exponentially every day forcing the security industry to create a new must have tool - a threat library. The effectiveness of every SOC is based on their ability to discover, ingest, analyze, respond to, and pivot off threat intelligence and, historically, an ad-hoc spreadsheet combined with a day of analyst muscle was manageable to maintain and chase IOCs. However, over the past several years, as crowdsourcing intelligence has become mainstream, the volume of IOCs released by cyber intelligence providers (commercial and public do-gooders), industry blogs, malware repositories, vendor whitepapers, and open source intelligence (OSINT) has turned the spreadsheet firedrill into a bottleneck of operational inefficiencies amongst the typical workflows within an adversary hunting SOC. This discussion will provide a first-hand operational look from within a large 30+ team DIB SOC and explore the evolution of IOCs, associated SOC workflows, assess IOC overlap by Source, discuss several tools that help manage threat intelligence, and finally some hindsight implementation lessons learned.
 
@@ -1807,9 +1607,7 @@ Cyber indicators are the 'new-er' detection strategy to help dismantle adversari
 
 ---
 
-[]()[]()
-
-## [Time Trial: Racing Towards Practical Timing Attacks]()
+## Time Trial: Racing Towards Practical Timing Attacks
 
 Attacks on software become increasingly sophisticated over time and while the community has a good understanding of many classes of vulnerabilities that are commonly exploited, the practical relevance of side-channel attacks is much less understood.
 
@@ -1825,9 +1623,7 @@ Attacks on software become increasingly sophisticated over time and while the co
 
 ---
 
-[]()[]()
-
-## [Understanding IMSI Privacy]()
+## Understanding IMSI Privacy
 
 It is said that 80% of the world's population now has a mobile phone. They use mobile devices to make calls, send SMS messages, and to access the Internet via the cellular network infrastructure. End-users carrying mobile phones 24 hours trust cellular network operators and believe that the provided mobile communication link is secure.
 
@@ -1841,9 +1637,7 @@ It is said that 80% of the world's population now has a mobile phone. They use m
 
 ---
 
-[]()
-
-## [Understanding TOCTTOU in the Windows Kernel Font Scaler Engine]()
+## Understanding TOCTTOU in the Windows Kernel Font Scaler Engine
 
 The Font Scaler engine is widely used in Microsoft Windows and Mac OS operating systems for rendering TrueType/OpenType fonts. It was first introduced in 1989. Later, to improve the performance of the Windows NT operating system, Microsoft decided to move the engine from user mode to kernel mode. This enhancement does improve the performance, but it also brings security issues. Specifically, Font Scaler engine represents a significant kernel attack surface, and it is perhaps the most easily accessible point which can be reached remotely. For example, the famous Duqu malware well demonstrated vulnerabilities in this engine in 2011.
 
@@ -1857,9 +1651,7 @@ The Font Scaler engine is widely used in Microsoft Windows and Mac OS operating 
 
 ---
 
-[]()[]()
-
-## [Unveiling the Open Source Visualization Engine for Busy Hackers]()
+## Unveiling the Open Source Visualization Engine for Busy Hackers
 
 The way a human efficiently digests information varies from person-to-person. Scientific studies have shown that some individuals learn better through the presentation of visual/spatial information compared to simply reading text. Why then do vendors expect customers to consume presented data following only the written word method as opposed to advanced graphical representations of the data? We believe this approach is dated.
 
@@ -1877,9 +1669,7 @@ The way a human efficiently digests information varies from person-to-person. Sc
 
 ---
 
-[]()[]()
-
-## [Unwrapping the Truth: Analysis of Mobile Application Wrapping Solutions]()
+## Unwrapping the Truth: Analysis of Mobile Application Wrapping Solutions
 
 One of the latest trends of BYOD solutions is to employ "Mobile Application Management (MAM)," which allows organizations to wrap existing applications to perform policy enforcement and data/transport security at the application layer rather than at the device level. Today's organizations face a complex choice: there are a plethora of BYOD application wrapping products on the market, each with their own colorful datasheets and hefty security claims. How well do these BYOD application wrapping solutions stand up to their claims? And perhaps just as important, how well do they defend against real-life mobile threats?
 
@@ -1891,9 +1681,7 @@ One of the latest trends of BYOD solutions is to employ "Mobile Application Mana
 
 ---
 
-[]()
-
-## [VoIP Wars: Attack of the Cisco Phones]()
+## VoIP Wars: Attack of the Cisco Phones
 
 Many hosted VoIP service providers are using Cisco hosted collaboration suite and Cisco VoIP solutions. These Cisco hosted VoIP implementations are very similar; they have Cisco Unified Communication services, SIP protocol for IP Phones of tenants, common conference solutions, Skinny protocol for compliance, generic RTP implementation, VOSS Solutions product family for management services for tenants. Tenants use desktop and mobile clients to connect these services. Cisco hosted VoIP implementations and VoIP clients are vulnerable to many attacks, including:
 
@@ -1917,9 +1705,7 @@ Many hosted VoIP service providers are using Cisco hosted collaboration suite an
 
 ---
 
-[]()
-
-## [What Goes Around Comes Back Around - Exploiting Fundamental Weaknesses in Botnet C&C; Panels!]()
+## What Goes Around Comes Back Around - Exploiting Fundamental Weaknesses in Botnet C&C; Panels!
 
 Bot herders deploy Command and Control (C&C;) panels for commanding and collecting exfiltrated data from the infected hosts on the Internet. To protect C&C; panels, bot herders deploy several built-in (software-centric) protection mechanisms to restrict direct access to these C&C; panels. However, there exist fundamental mistakes in the design and deployment of these C&C; panels that can be exploited to take complete control. This talk discusses about the methodology of launching reverse attacks on the centralized C&C; panels to derive intelligence that can be used to build automated solutions. This research reveals how to detect vulnerabilities and configuration flaws in the remote C&C; panels and exploit them by following the path of penetration testing. This talk is derived from the real time research in which several C&C; panels were targeted and intelligence was gathered to attack the next set of C&C; panels. A number of case studies will be discussed to elaborate step-by-step process of attacking and compromising C&C; panels. This talk also demonstrates the use of automated tools authored for making the testing easier for the researchers.
 
@@ -1929,9 +1715,7 @@ Bot herders deploy Command and Control (C&C;) panels for commanding and collecti
 
 ---
 
-[]()[]()
-
-## [When the Lights Go Out: Hacking Cisco EnergyWise]()
+## When the Lights Go Out: Hacking Cisco EnergyWise
 
 Energy Management Protocols (EMPs) are used in a variety of devices and environments. Their purpose is always the same: Controlling and measuring the energy consumption of connected devices. However, most EMPs are designed and implemented for embedded, non-IP environments, such as HDMI or home automation networks.
 
@@ -1945,9 +1729,7 @@ Energy Management Protocols (EMPs) are used in a variety of devices and environm
 
 ---
 
-[]()
-
-## [Why Control System Cyber-Security Sucks...]()
+## Why Control System Cyber-Security Sucks...
 
 Since the 2010's "Stuxnet" sabotage attempt, cyber-security of industrial control systems (ICS) or "SCADA" has become a buzzword in industry. The (cyber-) protection of the critical infrastructure became a focal point for governments. Vendors and manufacturers have pushed "Industrial Security" appliances onto the market, or claim that their products are now with "enhanced security". A cacophony of standards have emerged, and certification schemes are offered. But does this help? Given the increasing interconnectivity of ICS (SmartMeters, later the Internet-of-Things), shouldn't the direction be more towards standard IT than sticking to a dedicated ICS IT? Why is it that I can patch a computer centre over night, but not a control system within a year? This presentation will not give the answers but outline why control system cyber-security sucks and which hurdles we encountered to handle ICS cyber-security like that of our computer centres¦ A change of paradigm is needed, and this change must start with people and not with technology.
 
@@ -1957,9 +1739,7 @@ Since the 2010's "Stuxnet" sabotage attempt, cyber-security of industrial contro
 
 ---
 
-[]()[]()
-
-## [Why You Need to Detect More Than PtH]()
+## Why You Need to Detect More Than PtH
 
 Compromised credentials are a key predatory weapon in the attackers arsenal, and this isn't changing in the foreseeable future. This talk will systematically explore why they can be prevented but never cut off completely, and how to leverage this knowledge in detection. In closing, we will pick apart IoCs focused on Pass-the-Hash (PtH), while detailing more efficient detection techniques focused on misused, donated, or otherwise compromised credentials.
 
@@ -1969,9 +1749,7 @@ Compromised credentials are a key predatory weapon in the attackers arsenal, and
 
 ---
 
-[]()
-
-## [Windows Kernel Graphics Driver Attack Surface]()
+## Windows Kernel Graphics Driver Attack Surface
 
 Ever wondered about the attack surface of graphics drivers on Windows? Are they similar to other drivers? Do they expose ioctl's? In this talk, all those questions will be answered and more. Whether you're a security researcher, a developer looking for some security guidance when writing these drivers, or just generally curious about driver internals, there's something here for all.
 
@@ -1983,9 +1761,7 @@ Ever wondered about the attack surface of graphics drivers on Windows? Are they 
 
 ---
 
-[]()
-
-## [Write Once, Pwn Anywhere]()
+## Write Once, Pwn Anywhere
 
 Modern Windows use mitigation techniques such as DEP and ASLR to mitigate exploitation. The combination of ASLR and DEP have been proven to be a solid shield in most cases. Mitigation bypass is always one of the hottest topic in the security community.
 

@@ -67,13 +67,13 @@ By chaining various messaging APIs in browsers and browser extensions, I demonst
 
 Note: The extension case studies were disclosed to their owners in April, but haven’t been patched and are thus censored.
 
-# Introduction [🔗]()
+# Introduction 🔗
 
 Universal cross-site scripting (XSS) has been described as “the most powerful XSS” because of its ability to execute on any webpage (hence “universal”) and break Same Origin Policy in some cases. The reason for this is that the vulnerability lies in the browser or a browser extension, allowing it to extend beyond a single origin’s scope.
 
 However, thanks to the ever-growing capabilities of browser extension APIs and dangerously-implemented native messaging protocols, a far more impactful vulnerability can exploited - universal code execution. As observed by Arseny Reutov as early as 2017 in [“PostMessage Security in Chrome Extensions”](https://owasp.org/www-chapter-london/assets/slides/OWASPLondon_PostMessage_Security_in_Chrome_Extensions.pdf), there’s a way to relay messages from a web page all the way to native applications, and not much has improved since then. Unfortunately, one fact of vulnerability research is that you only realise halfway through that another researcher has taken the same track before, but it’s still worth revisiting old techniques to see if they still apply.
 
-# Content Scripts Message Passing [🔗]()
+# Content Scripts Message Passing 🔗
 
 Often, browser extensions need to execute JavaScript in the context of the page a user is visiting. For example, a browser may modify the document object model (DOM) of a page. These extensions must declare *content scripts* in their [`manifest.json` file](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts), for example:
 
@@ -125,7 +125,7 @@ chrome.runtime.onMessage.addListener(
 
 While cross-extension messaging is possible, most extensions only allow message passing between their own content scripts and background scripts. Unfortunately, as hinted earlier, there are many ways in which malicious web pages can barge into this conversation.
 
-# postMessage() to sendMessage() [🔗]()
+# postMessage() to sendMessage() 🔗
 
 One common vulnerable pattern in extension content scripts is lack of origin validation in `postMessage` handlers.
 
@@ -166,7 +166,7 @@ Notably, the protection offered by the event source check is completely nullifie
 
  ![Browser Extension Message Chain](https://spaceraccoon.dev/images/31/browser-extension-message-chain.png)
 
-# Breaking Same Origin Policy [🔗]()
+# Breaking Same Origin Policy 🔗
 
 By exploiting the trust boundary between content scripts and background scripts, malicious web pages can easily break Same Origin Policy protections using the expanded capabilities of a vulnerable extension.
 
@@ -251,7 +251,7 @@ setTimeout(runPoc, 1000)
 
 This is effectively a Same Origin Policy breakout, since a malicious page on [https://example.com](https://example.com) can now access the cookies of [https://website-a.com](https://website-a.com).
 
-# Native messaging [🔗]()
+# Native messaging 🔗
 
 However, to go beyond existing research and web-only impact, we can turn to another browser extension capability: native messaging. This allows background scripts to communicate with *native applications* running on the host operating system itself. For example, password manager extensions that retrieve passwords from the native password manager application on the desktop.
 
@@ -292,7 +292,7 @@ We thus have a complete chain for universal code execution:
 
  ![Native Message Chain](https://spaceraccoon.dev/images/31/native-message-chain.png)
 
-# Browser Extension Vulnerability Hunting at Scale [🔗]()
+# Browser Extension Vulnerability Hunting at Scale 🔗
 
 Given the somewhat narrow requirements of this chain, it may be daunting to find such extensions. However, thanks to the [chrome-extension-manifests-dataset](https://github.com/palant/chrome-extension-manifests-dataset) project, it’s possible to quickly query hundreds of thousands of Chrome extensions for matching manifests.
 
@@ -327,7 +327,7 @@ rules:
 
 ```
 
-## Command Execution in Smart Card Extensions [🔗]()
+## Command Execution in Smart Card Extensions 🔗
 
 One common use for native messaging in extensions in PKI (Public Key Infrastructure) Smart Card-related functionality. PKI smart cards are traditionally used for passwordless authentication, but are not natively supported by browsers, which largely support the WebAuthn standard instead for FIDO2 and passkeys.
 
@@ -447,7 +447,7 @@ setTimeout(downloadPayload, 2000);
 
 ```
 
-## Conclusion [🔗]()
+## Conclusion 🔗
 
 In this paper, I demonstrate how to extend browser extension messaging chains with native messaging to achieve “universal code execution”. With large datasets and static code analysis automation, it’s possible to find large numbers of exploitable extensions with large userbases. The nature of some extensions using this pattern makes it difficult to secure at the source and must thus be carefully handled at every link in the chain.
 

@@ -98,7 +98,7 @@ For hosts that usually use forward secrecy, but still support a vulnerable RSA e
 
 ## Who is affected?
 
-We have identifed vulnerable implementations from at least seven vendors including F5, Citrix, and Cisco. ([Current patch status is listed below.]())
+We have identifed vulnerable implementations from at least seven vendors including F5, Citrix, and Cisco. (Current patch status is listed below.)
 
 Some of the most popular webpages on the Internet were affected, including Facebook and Paypal. In total, we found vulnerable subdomains on 27 of the top 100 domains as ranked by Alexa.
 
@@ -106,7 +106,7 @@ We published a [python tool to scan for vulnerable hosts](https://github.com/rob
 
 We will update the following table if we become aware of more affected vendors:
 
- []()
+ 
 
 | F5 | [BIG-IP SSL vulnerability](https://support.f5.com/csp/article/K21905460) | [CVE-2017-6168](https://nvd.nist.gov/vuln/detail/CVE-2017-6168) |  |
 | Citrix | [TLS Padding Oracle Vulnerability in Citrix NetScaler Application Delivery Controller (ADC) and NetScaler Gateway](https://support.citrix.com/article/CTX230238) | [CVE-2017-17382](https://nvd.nist.gov/vuln/detail/CVE-2017-17382) |  |
@@ -284,7 +284,7 @@ We will probably run the contest for two months, but we may revisit the timeline
 
 We had considerable disagreement in our team about this. Juraj agreed only under protest. All complaints about this issue need to go to Hanno.
 
-## []()Media, Blogs and more
+## Media, Blogs and more
 
 #### Media reports
 

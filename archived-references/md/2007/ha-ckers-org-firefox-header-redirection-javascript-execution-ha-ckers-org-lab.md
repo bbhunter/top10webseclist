@@ -71,7 +71,7 @@ This sounds a lot sexier than it actually is, although it was interesting to fin
 
 [Click here for an example (only works in Firefox)](http://ha.ckers.org/weird/header-redirection.cgi). Like I said, this isn’t that particularly interesting, but it could be somewhat useful in some obscure circumstances. Nothing to see here, move along….
 
-  This entry was posted on Friday, March 9th, 2007 at 5:06 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070309/firefox-header-redirection-javascript-execution/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20070309/firefox-header-redirection-javascript-execution/trackback/) from your own site.
+  This entry was posted on Friday, March 9th, 2007 at 5:06 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070309/firefox-header-redirection-javascript-execution/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070309/firefox-header-redirection-javascript-execution/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

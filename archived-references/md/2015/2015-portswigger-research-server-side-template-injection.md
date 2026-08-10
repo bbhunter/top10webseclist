@@ -158,7 +158,7 @@ Hello
 personal_greeting=username}}<tag>
 Hello user01 <tag> `
 
-### [Identify]()
+### Identify
 
 After detecting template injection, the next step is to identify the template engine in use. This step is sometimes as trivial as submitting invalid syntax, as template engines may identify themselves in the resulting error messages. However, this technique fails when error messages are supressed, and isn't well suited for automation. We have instead automated this in Burp Suite using a decision tree of language-specific payloads. Green and red arrows represent 'success' and 'failure' responses respectively. In some cases, a single payload can have multiple distinct success responses - for example, the probe {{7*'7'}} would result in 49 in Twig, 7777777 in Jinja2, and neither if no template language is in use.
 
@@ -316,9 +316,7 @@ Further code review reveals that the [self::clearConfig()](https://github.com/sm
 
 `/**
 * Deassigns a single or all config variables
-*
 * @param string $varname variable name or null
-*
 * @return Smarty_Internal_Data current Smarty_Internal_Data (or Smarty or Smarty_Internal_Template) instance for chaining
 */
 public function clearConfig($varname = null)

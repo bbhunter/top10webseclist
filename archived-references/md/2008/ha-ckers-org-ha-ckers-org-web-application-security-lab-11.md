@@ -75,7 +75,7 @@ Then we got to talking and laughing and ultimately came up with a CSRF joke of a
 
 It’s funny but it’s less funny when you talk about getting people [arrested in China](http://itgossips.com/featured/open-a-page-go-to-jail-2-735.it) as we talked about [a long time ago](http://ha.ckers.org/blog/20060614/using-xss-to-dos-china/) or of course [going to jail for child porn](http://ha.ckers.org/blog/20080320/click-a-link-go-to-jail/), etc… Funny and scary all at the same time.
 
-  This entry was posted on Thursday, April 3rd, 2008 at 1:06 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [Random Security](http://ha.ckers.org/blog/category/random-security/). You can [leave a response]() as well.
+  This entry was posted on Thursday, April 3rd, 2008 at 1:06 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [Random Security](http://ha.ckers.org/blog/category/random-security/). You can leave a response as well.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

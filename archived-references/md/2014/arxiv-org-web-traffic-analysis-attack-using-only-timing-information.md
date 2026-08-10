@@ -86,7 +86,7 @@ Authors:[Saman Feghhi](https://arxiv.org/search/cs?searchtype=author&query=Feghh
  **[[v2]](https://arxiv.org/abs/1410.2087v2)** Thu, 3 Sep 2015 12:28:54 UTC (1,371 KB)
  **[v3]** Sat, 9 Jul 2016 07:12:24 UTC (1,368 KB)
 
- []() Full-text links:
+  Full-text links:
 
 ## Access Paper:
 
@@ -212,4 +212,4 @@ Both individuals and organizations that work with arXivLabs have embraced and ac
 
 Have an idea for a project that will add value for arXiv's community? [**Learn more about arXivLabs**](https://info.arxiv.org/labs/index.html).
 
- [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1410.2087) | [Disable MathJax]() ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))
+ [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1410.2087) | Disable MathJax ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))

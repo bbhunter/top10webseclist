@@ -99,12 +99,12 @@ Anytime you have large groups of computer users aggregating at such places, they
 
 So far, the damage has been mostly harmless. The most high-profile case so far came in mid-October when [one **Myspace.com** user](http://namb.la/popular/tech.html) released [a self-replicating computer worm](http://www.sophos.com/virusinfo/analyses/jsspaceheroa.html) that took advantage of Javascript flaws to [add more than a million fellow users to his buddy list](http://it.slashdot.org/it/05/10/14/126233.shtml?tid=172&tid=95&tid=220). A [similar worm](http://blogs.securiteam.com/index.php/archives/166) hit the online community Xanga on New Year's eve (there is also some strong language at this link.)
 
- []()
+ 
 
  By Brian Krebs | January 20, 2006; 12:26 PM ET | Category: [Latest Warnings](http://blog.washingtonpost.com/securityfix/latest_warnings/)
  Previous: [Rep. Takes Aim at Cell Phone Record Sales](http://blog.washingtonpost.com/securityfix/2006/01/rep_takes_aim_at_cell_phone_re.html) | [Main Index](http://blog.washingtonpost.com/securityfix/) | Next: [Kama Sutra Worm Gets Nasty](http://blog.washingtonpost.com/securityfix/2006/01/kama_sutra_worm_gets_nasty.html)
 
- []()
+ 
 
 ### TrackBack
 
@@ -113,281 +113,281 @@ TrackBack URL for this entry:
 
 Listed below are links to weblogs that reference [Account Hijackings Force LiveJournal Changes](http://blog.washingtonpost.com/securityfix/2006/01/account_hijackings_force_livej.html):
 
- []() » [Livejournal Security Issues](http://tsal.arikel.net/2006/20/livejournal-security-issues/)"from"musings of wrath
+  » [Livejournal Security Issues](http://tsal.arikel.net/2006/20/livejournal-security-issues/)"from"musings of wrath
  Hmm Im tempted to say how I saw it coming, but I didnt. Apparently, several hundred thousand LJ accounts were hijacked over the course of several months - using security holes in the JavaScript they run at LJ. On the upside, a f... [[Read More]](http://tsal.arikel.net/2006/20/livejournal-security-issues/)
 
 Tracked on January 20, 2006 02:58 PM
 
- []() » [Account Hijackings Force LiveJournal Changes](http://www.kross.ro/account_hijackings_force_livejournal_changes)"from"Knowledge Research Open Source Solutions
+  » [Account Hijackings Force LiveJournal Changes](http://www.kross.ro/account_hijackings_force_livejournal_changes)"from"Knowledge Research Open Source Solutions
  LiveJournal, an online community that boasts nearly 2 million active members, on Thursday announced sitewide changes for users logging into their accounts changes prompted by a hacker groups successful hijacking of potentially hundreds of [[Read More]](http://www.kross.ro/account_hijackings_force_livejournal_changes)
 
 Tracked on January 20, 2006 06:55 PM
 
- []()
+ 
 
 Posted by: wiredog | January 20, 2006 12:58 PM
 
- []()
+ 
 
 Posted by: Bk | January 20, 2006 01:03 PM
 
- []()
+ 
 
 Posted by: anonymous | January 20, 2006 02:53 PM
 
- []()
+ 
 
 Posted by: Ayjay | January 20, 2006 02:55 PM
 
- []()
+ 
 
 Posted by: rfjason | January 20, 2006 03:01 PM
 
- []()
+ 
 
 Posted by: | January 20, 2006 03:06 PM
 
- []()
+ 
 
 Posted by: Bk | January 20, 2006 03:15 PM
 
- []()
+ 
 
 Posted by: DS | January 20, 2006 03:18 PM
 
- []()
+ 
 
 Posted by: rfjason | January 20, 2006 03:33 PM
 
- []()
+ 
 
 Posted by: | January 20, 2006 03:39 PM
 
- []()
+ 
 
 Posted by: me | January 20, 2006 03:40 PM
 
- []()
+ 
 
 Posted by: bantown | January 20, 2006 03:42 PM
 
- []()
+ 
 
 Posted by: | January 20, 2006 03:52 PM
 
- []()
+ 
 
 Posted by: SheeEttin | January 20, 2006 03:58 PM
 
- []()
+ 
 
 Posted by: jameth | January 20, 2006 04:23 PM
 
- []()
+ 
 
 Posted by: yo mom | January 20, 2006 04:37 PM
 
- []()
+ 
 
 Posted by: | January 20, 2006 05:06 PM
 
- []()
+ 
 
 Posted by: | January 20, 2006 05:39 PM
 
- []()
+ 
 
 Posted by: Concerned Comrade | January 20, 2006 05:43 PM
 
- []()
+ 
 
 Posted by: nonameLJuser | January 20, 2006 06:11 PM
 
- []()
+ 
 
 Posted by: nonameLJuser | January 20, 2006 06:17 PM
 
- []()
+ 
 
 Posted by: Concerned Comrade | January 20, 2006 06:18 PM
 
- []()
+ 
 
 Posted by: bowl-o-lols | January 20, 2006 06:49 PM
 
- []()
+ 
 
 Posted by: Epiphany | January 20, 2006 07:44 PM
 
- []()
+ 
 
 Posted by: Concerned Shitizen | January 20, 2006 08:31 PM
 
- []()
+ 
 
 Posted by: alex_jon | January 20, 2006 08:35 PM
 
- []()
+ 
 
 Posted by: | January 20, 2006 08:36 PM
 
- []()
+ 
 
 Posted by: lima_pcp | January 20, 2006 08:53 PM
 
- []()
+ 
 
 Posted by: lima_pcp | January 20, 2006 08:56 PM
 
- []()
+ 
 
 Posted by: C | January 20, 2006 09:27 PM
 
- []()
+ 
 
 Posted by: pajanada | January 20, 2006 10:01 PM
 
- []()
+ 
 
 Posted by: Asleep | January 20, 2006 10:10 PM
 
- []()
+ 
 
 Posted by: Comrade | January 20, 2006 10:15 PM
 
- []()
+ 
 
 Posted by: biscman | January 20, 2006 10:55 PM
 
- []()
+ 
 
 Posted by: yellow_finch | January 20, 2006 11:23 PM
 
- []()
+ 
 
 Posted by: | January 21, 2006 12:13 AM
 
- []()
+ 
 
 Posted by: nifty | January 21, 2006 12:43 AM
 
- []()
+ 
 
 Posted by: Ð§ÐµÐ±ÑÑÐ°ÑÐºÐ° | January 21, 2006 01:04 AM
 
- []()
+ 
 
 Posted by: Kibs | January 21, 2006 01:19 AM
 
- []()
+ 
 
 Posted by: || | January 21, 2006 02:36 AM
 
- []()
+ 
 
 Posted by: Blingin to the Oldies | January 21, 2006 02:47 AM
 
- []()
+ 
 
 Posted by: Factor V | January 21, 2006 02:48 AM
 
- []()
+ 
 
 Posted by: random | January 21, 2006 03:50 AM
 
- []()
+ 
 
 Posted by: not yo mom | January 21, 2006 06:10 AM
 
- []()
+ 
 
 Posted by: neo | January 21, 2006 02:40 PM
 
- []()
+ 
 
 Posted by: | January 21, 2006 11:44 PM
 
- []()
+ 
 
 Posted by: Shino | January 22, 2006 12:42 AM
 
- []()
+ 
 
 Posted by: x | January 22, 2006 01:48 AM
 
- []()
+ 
 
 Posted by: alex_jon | January 22, 2006 04:42 AM
 
- []()
+ 
 
 Posted by: alex_jon | January 22, 2006 04:43 AM
 
- []()
+ 
 
 Posted by: LLBBooks | January 22, 2006 07:50 AM
 
- []()
+ 
 
 Posted by: D Doctor | January 22, 2006 07:22 PM
 
- []()
+ 
 
 Posted by: Jerome | January 22, 2006 09:13 PM
 
- []()
+ 
 
 Posted by: threep | January 22, 2006 10:06 PM
 
- []()
+ 
 
 Posted by: | January 23, 2006 04:52 AM
 
- []()
+ 
 
 Posted by: Chickn | January 24, 2006 03:23 AM
 
- []()
+ 
 
 Posted by: | January 24, 2006 06:58 PM
 
- []()
+ 
 
 Posted by: frustrated | January 27, 2006 01:25 AM
 
- []()
+ 
 
 Posted by: | January 27, 2006 08:35 PM
 
- []()
+ 
 
 Posted by: ur mom | January 28, 2006 06:17 PM
 
- []()
+ 
 
 Posted by: viva lj | January 28, 2006 06:18 PM
 
- []()
+ 
 
 Posted by: xf | January 28, 2006 06:19 PM
 
- []()
+ 
 
 Posted by: | January 28, 2006 06:21 PM
 
- []()
+ 
 
 Posted by: lj | January 28, 2006 06:21 PM
 
- []()
+ 
 
 Posted by: casino slot | February 1, 2006 12:13 PM
 
- []()
+ 
 
 Posted by: cialis comparison levitra viagra | February 3, 2006 12:12 AM
 
- []()
+ 
 
 Posted by: ultracet medication | February 3, 2006 12:54 AM
 

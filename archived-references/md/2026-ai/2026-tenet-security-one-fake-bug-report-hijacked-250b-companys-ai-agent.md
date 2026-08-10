@@ -186,7 +186,6 @@ A Cursor agent (Warp terminal) executed the payload and beaconed back. The captu
 ![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-3.jpeg)
 
 *Network interface address and the project identifier are redacted.
-*
 
 **E2 – AI agents inside WSL on a Windows machine**
 
@@ -195,7 +194,6 @@ Proof that agents running inside WSL (Ubuntu 20.04) on managed Windows machines 
   ![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-4.jpeg)
 
 *Logon server and Windows username redacted. The SSH agent socket path is shown – it is not itself a secret, but its presence means **the agent could reach the developer’s SSH identity.**
-*
 
 **E3 – Claude Code on macOS (with access to other agents & keys)**
 
@@ -204,7 +202,6 @@ This is the one that shows reach. A live **AWS secret access key** was present i
   ![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-5.jpeg)
 
 *labels and agent version strings kept. “Connected to other agents” here means the blast radius extends beyond this host – the environment held credentials to other agents and services – not that one agent infected another.
-*
 
 **E4 – A Sandboxed OpenAI Codex agent in CI/CD**
 
@@ -213,7 +210,6 @@ An OpenAI Codex agent running in a CI pipeline (CircleCI) on an EC2 container �
   ![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-6.jpeg)
 
 *EC2 internal hostname and container names redacted. The AWS region is not sensitive and is left visible.
-*
 
 **E5 – An OpenAI agent running as a VS Code extension**
 
@@ -259,9 +255,6 @@ The payload is just text appended inside a bug report, formatted to look exactly
   ![](https://tenetsecurity.ai/wp-content/uploads/2026/06/image-14.png)
 
 *Our crafted report – formatted to look like an ordinary resolution. The agent is easily “phished”.*
-
-*
-*
 
 # **A New Era of Threat: Why This Changes AI Agent Security**
 

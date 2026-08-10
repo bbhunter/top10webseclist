@@ -161,6 +161,7 @@ const state = {
   pdfItem: null,
   pdfPath: "",
   pdfKind: "pdf",
+  pdfOriginal: false,
   pdfVerified: false,
   pdfViewMode: "page-width"
 };
@@ -485,6 +486,12 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
       archiveStatus: mdPath && pdfPath ? "preserved" : mdPath || pdfPath ? "partial" : record?.health?.status === "ok" ? "live" : "missing",
       mdPath,
       pdfPath,
+      // The Markdown hotlinks the publisher's images, because publishing 4,500
+      // of them would double this repository. Where the archive holds its own
+      // re-encoded copies they are printed into the PDF, so a picture the
+      // reader cannot load has somewhere to send them. Emitted only where true,
+      // for the same payload reason as the translation keys.
+      ...(pdfLink.record?.steps?.images?.result === "stored" ? { figuresInPdf: true } : {}),
       ...(originalMdPath || originalPdfPath ? { originalMdPath, originalPdfPath, translated: true } : {}),
       archived: Boolean(mdPath || pdfPath),
       citedBy: record?.cited_by || [`${year}.md:${lineIndex + 1}`],
@@ -797,6 +804,8 @@ function wireShell() {
     $("#pdf-frame").hidden = false;
   });
   $("#pdf-dialog").addEventListener("close", clearPdfViewer);
+  $("#pdf-links-toggle").addEventListener("click", () => togglePdfLinks());
+  $("#pdf-links-close").addEventListener("click", () => togglePdfLinks(false));
   $("#pdf-fit-width").addEventListener("click", () => setPdfView("page-width"));
   $("#pdf-fit-page").addEventListener("click", () => setPdfView("page-fit"));
   $("#pdf-read-toggle").addEventListener("click", () => {
@@ -2418,6 +2427,10 @@ function openPdfViewer(item, options = {}) {
     favouriteButton.textContent = item.favourite ? "★ Favourite" : "☆ Add favourite";
   }
   $("#pdf-open-markdown").hidden = !item?.mdPath;
+  state.pdfOriginal = Boolean(options.original);
+  $("#pdf-links-toggle").hidden = !item?.mdPath;
+  togglePdfLinks(false);
+  $("#pdf-links").dataset.path = "";
   $("#pdf-new-tab").href = url;
   $("#pdf-new-tab").textContent = "Open tab ↗";
   $("#pdf-download").href = url;
@@ -2435,6 +2448,72 @@ function openPdfViewer(item, options = {}) {
   setPdfView(state.pdfViewMode);
 }
 
+// A LINK INSIDE AN EMBEDDED PDF CANNOT OPEN A NEW TAB, and that is the viewer's
+// decision rather than ours: the browser's own PDF viewer gives its links no
+// target, so a click navigates the frame they sit in - which this page's
+// `frame-src 'self'` then refuses, so the click does nothing at all.
+//
+// The alternative is shipping a JavaScript PDF viewer and telling it to target
+// a new tab. That would run third-party PDFs - the actual subject matter of this
+// archive - as script in this origin, next to the reader's own data, in place of
+// the browser's sandboxed viewer process. Not for a link target.
+//
+// So the links get a route of their own. They are read from the preserved
+// Markdown, which for a rendered PDF is the very document that was printed, and
+// for a preserved original is the text extracted from it.
+const PDF_LINK_LIMIT = 400;
+
+function linksInMarkdown(markdown) {
+  const found = new Map();
+  const remember = (url, label) => {
+    // Raw Markdown, so no HTML escaping layer to undo first.
+    const safe = safeExternalUrl(url);
+    if (!safe || found.has(safe) || found.size >= PDF_LINK_LIMIT) return;
+    found.set(safe, (label || "").replace(/[*_`]/g, "").trim() || safe);
+  };
+  const body = String(markdown || "");
+  for (const match of body.matchAll(/\[([^\]\n]{1,120})\]\((https?:\/\/[^\s)]+)\)/g)) {
+    remember(match[2], match[1]);
+  }
+  for (const match of body.matchAll(/<(https?:\/\/[^>\s]+)>/g)) remember(match[1], "");
+  for (const match of body.matchAll(/(?<![("<[])\bhttps?:\/\/[^\s)<>"'\]]+/g)) {
+    remember(match[0], "");
+  }
+  return [...found].map(([url, label]) => ({ url, label }));
+}
+
+async function togglePdfLinks(force) {
+  const panel = $("#pdf-links");
+  const button = $("#pdf-links-toggle");
+  const show = force ?? panel.hidden;
+  panel.hidden = !show;
+  button.setAttribute("aria-expanded", String(show));
+  button.classList.toggle("active", show);
+  if (!show || panel.dataset.path === state.pdfPath) return;
+
+  const list = $("#pdf-links-list");
+  const item = state.pdfItem;
+  const markdownUrl = archiveUrl(state.pdfOriginal ? item?.originalMdPath : item?.mdPath, "md");
+  if (!markdownUrl) {
+    list.innerHTML = `<p>No preserved text accompanies this document, so its links could not be listed.</p>`;
+    return;
+  }
+  list.innerHTML = `<p>Reading the preserved text…</p>`;
+  panel.dataset.path = state.pdfPath;
+  try {
+    const response = await fetch(markdownUrl, { credentials: "same-origin", cache: "default" });
+    if (!response.ok) throw new Error(`Markdown returned ${response.status}`);
+    const links = linksInMarkdown(await response.text());
+    if (panel.dataset.path !== state.pdfPath) return;
+    list.innerHTML = links.length
+      ? links.map((link) => `<a href="${h(link.url)}" target="_blank" rel="noopener noreferrer">${h(short(link.label, 70))}<small>${h(link.url)}</small></a>`).join("")
+      : `<p>This document carries no outbound links.</p>`;
+  } catch (error) {
+    panel.dataset.path = "";
+    list.innerHTML = `<p>The preserved text could not be read. ${h(error.message)}</p>`;
+  }
+}
+
 function clearPdfViewer() {
   clearTimeout(pdfLoadTimer);
   pdfVerifyToken++;
@@ -2448,6 +2527,10 @@ function clearPdfViewer() {
   frame.removeAttribute("src");
   $("#pdf-loading").hidden = true;
   $("#pdf-fallback").hidden = true;
+  $("#pdf-links").hidden = true;
+  $("#pdf-links").dataset.path = "";
+  $("#pdf-links-toggle").setAttribute("aria-expanded", "false");
+  $("#pdf-links-toggle").classList.remove("active");
 }
 
 function clampNumber(value, min, max) {
@@ -2587,6 +2670,34 @@ function markdownDocument(markdown) {
   return { html: html.join("\n"), headings };
 }
 
+// A HOTLINKED PICTURE IS NOT AN ARCHIVED ONE. The preserved Markdown points at
+// the publisher's copy, so a host that has gone away, moved the file or started
+// refusing hotlinks leaves a broken icon in the middle of the research. Say what
+// happened instead, and where the picture went - the archive prints its own
+// re-encoded copy into the PDF, which is the copy that cannot rot.
+//
+// Wired as a listener rather than an `onerror` attribute: this page's CSP allows
+// no inline script, and an archived document is untrusted input besides.
+function markBrokenImages(root, item) {
+  for (const image of $$("img", root)) {
+    image.addEventListener("error", () => {
+      const source = safeExternalUrl(image.getAttribute("src") || "");
+      const caption = image.getAttribute("alt") || "";
+      const note = document.createElement("p");
+      note.className = "image-gone";
+      const where = item?.figuresInPdf
+        ? "The archive's own copy is printed in the PDF."
+        : "The archive holds no copy of this one.";
+      // A rejected URL must not become `href=""`, which silently reloads the app.
+      const original = source
+        ? ` <a href="${h(source)}" target="_blank" rel="noopener noreferrer">Try the original ↗</a>`
+        : "";
+      note.innerHTML = `<strong>${h(caption || "Image")}</strong> could not be loaded from ${h(hostOf(source) || "its publisher")}. ${h(where)}${original}`;
+      image.replaceWith(note);
+    }, { once: true });
+  }
+}
+
 // `options.original` opens the source-language file of a translated reference.
 // Everything else about the view is identical - it is the same preserved
 // document, in the words the author wrote it in.
@@ -2644,6 +2755,7 @@ async function openReader(item, options = {}) {
     if (requestToken !== readerRequestToken || state.readerItem !== item) return;
     const documentView = markdownDocument(markdown);
     $("#reader-content").innerHTML = `<div class="archive-warning">Safe reader mode: third-party HTML is escaped, scripts cannot run, and links open separately.</div>${documentView.html}`;
+    markBrokenImages($("#reader-content"), item);
     $("#reader-toc").innerHTML = documentView.headings.slice(0, 40).map((heading) => `<button class="${heading.level > 2 ? "sub" : ""}" data-reader-target="${h(heading.slug)}">${h(short(heading.title, 52))}</button>`).join("");
   } catch (error) {
     if (requestToken !== readerRequestToken) return;

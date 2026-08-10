@@ -75,7 +75,7 @@ Now, regardless of anonymous proxies or hiding referring URLs or any other trick
 
 Now you’re saying, “But what if they clear their history?” Well, it’s easy enough to force their browser to the intranet site too. If they can successfully connect to the intranet site in question they now have it in their history, and boom, you’re detection is on again. .htaccess basic auth dialogues throw a wrench into the mix, but I’m not sure how many intranet sites are protected in that way. Anyway, sucks to be bigsearchengine.com right about now, doesn’t it?
 
-  This entry was posted on Monday, September 11th, 2006 at 9:44 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20060911/using-css-to-de-anonymize/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20060911/using-css-to-de-anonymize/trackback/) from your own site.
+  This entry was posted on Monday, September 11th, 2006 at 9:44 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20060911/using-css-to-de-anonymize/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20060911/using-css-to-de-anonymize/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

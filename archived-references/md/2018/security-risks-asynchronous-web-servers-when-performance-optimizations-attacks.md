@@ -127,98 +127,32 @@ Authorized licensed use limited to: Georgia Institute of Technology. Downloaded 
 --- page 17 ---
 
 Access control config.	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	
-	
-
-
-
-
-
-
 
 	
-
-
-
-
-
-
-
-
-
-
 
 	
-
-
-
-
-
-
-
-
-
-
 
 	
-
-
-
-
-
-
-
-
 
 	
-	
 
+	
 
-
+	
 
  
 	
-
-
-
-
 
 ! 
 	
-
-
-
 
 Retrieve
 offsetConfig. data 
 pointer table
 
-
-
-
-
-
-
  
-
-
 
 ! Reference 
 config. dataLog config.
@@ -301,12 +235,34 @@ Authorized licensed use limited to: Georgia Institute of Technology. Downloaded 
 --- page 19 ---
 
 we seek to understand how different server con“gurationoptions cause in-memory data structures to be populatedwith different data. This objective could conceivably beachieved through manual source-code analysis, tracking thedata ”ow of information from con“guration “le to in-memory structures. However, as discussed in Section5.1,thecomplex nature of callback functionality to supportasynchronous server processing means such manual analysisis a non-trivial task. Alternatively, related work by Hu et al.[21] uses taint tracking to identify data in a server that isin”uenced by directives in a con“guration “le, but this isan unnecessarily complex approach that generates a vastsearch space,2and at times requires the adversary to fallback on manually specifying the security-sensitive data inan application.Instead, we leverage the information gained from thememory tracing step to conduct live memory analysis of arunning server application in order to provide intelligenceon the low-level state of security-critical data structures andhow they can be manipulated. Speci“cally, our solution forlive memory analysis assumes that step one of our attackwork”ow has identi“ed a spot in the code that references thegiven in-memory con“guration data structure in question.Considering Nginx in particular, we observe that it hasunique data structures representing the con“guration forits different processing modules (e.g.,SSL module, GZIPmodule, access control module), and that each of thesemodules consult those data structures in determining howto respond to a request.In this way, for an arbitrary server processing module,we can set a breakpoint on a location in the programthat obtains a pointer to that module�s con“guration data,and run the server with different con“guration options set,investigating how those different high-level con“gurationdirectives map onto the low level in-memory data structuresonce they have been populated in process memory (these in-memory data structures are shown on the right in Figure2).With the application paused at a place where we have areference to this process memory, we can combine debugsymbols with access to raw process memory to constructan image of how the different con“guration data structuresfor given modules are populated based on different spec-i“cations in the con“guration “le. In essence, we build amemory analysis framework that produces a live snapshotof a given structure, including following pointers to otherstructures and capturing their snapshots recursively. The leftside of Figure2shows how our instruction tracing step helpsus hone in on spots in the code that reference con“gurationdata structures „ speci“cally via thecon“g data pointertable. Together with the results of our live memory analysistechnique (shown on the right), these two frameworks helpus leverage our assumptions oflinear heap disclosureandarbitrary writeto locate security-critical objects in memoryand corrupt them for malicious effect.The output of our memory analysis framework is a2. A signi“cant fraction of all data in a web server depends on thecon“guration “le in one way or another.	
-								
-				"		#$%&'"	
-			$%&#	
-				 !!	 !!	
-				(a)(b)	
-			Figure 3: Extracted data structures by our memory analysisframework when con“guring Nginx (a) to deny all access,and (b) to not perform any access control.human-readable printout of the data structure as well as acopy of the data structure in binary format. There are twodistinct abilities that this memory analysis approach affordsthe user. First, the framework can identify places in a givencon“guration data structure that vary for different con“g-uration settings. Running a program multiple times withdifferent con“gurations and performing a simplediffon theoutput of the memory analysis allows the user to quickly geta sense of the changes in low-level data structures that oc-cur in response to issuing different high-level con“gurationdirectives to the application. This is useful for determiningthe elements in a data structure whose runtime modi“cationwill essentiallyre-con“gurethe server, causing it to behavedifferently than was intended by the con“guration settings.For many of Nginx�s processing modules, it is a non-trivialtask to hone in on which “elds in the associated con“gu-ration data structure must be (recursively) altered to causethe server to operate insecurely without introducing someunexpected behavior. This is because the same con“gurationstructures often appear very differently in process memory,depending on the directives given in the con“guration “le.Our framework relieves the burden of needing to understandall of these complex interdependencies in the con“gurationdata structures, instead forcing the application to generatethe different versions of the structure and making it easy toobserve the differences.Figure3shows example outputs of running our mem-oryanalysis framework on the access control con“gurationstructure after having con“gured the server to (a) deny allaccess and (b) to not impose any access control (defaultbehavior). Many of the con“guration structures in Nginxare much more complex with many levels and members,but this example illustrates how the memory representationof a structure changes for different con“guration directives.The differences in these structures for different con“gurationdirectives completely determine how the server responds toa given request in terms of access control. We refer to asnapshot of the data structure our framework creates asadeep copyof that structure since it recursively recordspointers to other structures and their values.
+	
+			
+
+	
+
+			
+	
+			
+"
+
+		
+#$%&'"
+
+	
+	
+	
+	$%&#
+
+	
+	
+			
+ !!
+	 !!	
+	
+			(a)(b)	
+	
+	
+	Figure 3: Extracted data structures by our memory analysisframework when con“guring Nginx (a) to deny all access,and (b) to not perform any access control.human-readable printout of the data structure as well as acopy of the data structure in binary format. There are twodistinct abilities that this memory analysis approach affordsthe user. First, the framework can identify places in a givencon“guration data structure that vary for different con“g-uration settings. Running a program multiple times withdifferent con“gurations and performing a simplediffon theoutput of the memory analysis allows the user to quickly geta sense of the changes in low-level data structures that oc-cur in response to issuing different high-level con“gurationdirectives to the application. This is useful for determiningthe elements in a data structure whose runtime modi“cationwill essentiallyre-con“gurethe server, causing it to behavedifferently than was intended by the con“guration settings.For many of Nginx�s processing modules, it is a non-trivialtask to hone in on which “elds in the associated con“gu-ration data structure must be (recursively) altered to causethe server to operate insecurely without introducing someunexpected behavior. This is because the same con“gurationstructures often appear very differently in process memory,depending on the directives given in the con“guration “le.Our framework relieves the burden of needing to understandall of these complex interdependencies in the con“gurationdata structures, instead forcing the application to generatethe different versions of the structure and making it easy toobserve the differences.Figure3shows example outputs of running our mem-oryanalysis framework on the access control con“gurationstructure after having con“gured the server to (a) deny allaccess and (b) to not impose any access control (defaultbehavior). Many of the con“guration structures in Nginxare much more complex with many levels and members,but this example illustrates how the memory representationof a structure changes for different con“guration directives.The differences in these structures for different con“gurationdirectives completely determine how the server responds toa given request in terms of access control. We refer to asnapshot of the data structure our framework creates asadeep copyof that structure since it recursively recordspointers to other structures and their values.
 
 --- page 20 ---
 
@@ -395,10 +351,12 @@ Authorized licensed use limited to: Georgia Institute of Technology. Downloaded 
 --- page 41 ---
 
 .acl J’$OÐ<ªûlðkµð‹PÍM¶c¿ r	Ï
-_
-ý;vÀ÷ºÈøJøð�„„pzDûdû	'$¬#Ïûf¢”�•–•”–�Š�‰�F÷lñööªóÐ÷��Œ��–‚”€÷ŽÈ÷<øð€�‚€‡Œ‰�†Ñû©'û l#Fû‰†Š‰‡€”‚–•’’¦œÒ÷²÷	ïòjôG÷±t‚”�÷«´÷«øJûµ�„‰Œ‡€‚‚€�“‚“Š�Š÷a:û„�Š‰†”‚–“��•“Ü÷Ýû€“�ˆ“–””–�ˆ‘‡’:÷÷µš�‘‘–•‚•�ˆ„Š‰†û`÷�„”~}„‚y|Ÿ÷»÷dmoff©n²•²©§±°m§døvù�“Œ��•�”��†‡}„ûÛýL‡„Š†‡�•‚••��™’{´r´÷D´÷´Ó´÷Æ´b÷rø7ê�”’™˜‚’y|U÷ŸÒG¿.fJ~xT€‡…„�€”‚•��ŒŒ�£Ù§‘¯Ô½jZD›Pl�]û5P4‚?ÊWèÑÇ¥ÄÈ¬¸LHUsDF^­¿ÊÓ¶õ·»…‚¯{´ø´iŸß´÷í´Øøjø¯bUžNû+,ûûé/÷ÍÍŸ®¾§žš�—•‚”�„ˆ‰ƒƒ[WMsBû>Öô÷×Ö÷ßÒaV�z�‘„˜˜’”�æ8ž„”~}„‚x{´r´÷ñ´÷´Ê´÷ù´b÷¼øŠøð,y‚„~}”„�Áû€ÒZQ¬@û*'ûûì&÷rÖÇ®Ñº2ê�”’™˜‚’y|Uûp÷ñðÙ;#¬';:
+ý;vÀ÷ºÈøJøð�„„pzDûdû	'$¬#Ïûf¢”�•–•”–�Š�‰�F÷lñööªóÐ÷��Œ��–‚”€÷ŽÈ÷<øð€�‚€‡Œ‰�†Ñû©'û l#Fû‰†Š‰‡€”‚–•’’¦œÒ÷²÷	ïòjôG÷±t‚”�÷«´÷«øJûµ�„‰Œ‡€‚‚€�“‚“Š�Š÷a:û„�Š‰†”‚–“��•“Ü÷Ýû€“�ˆ“–””–�ˆ‘‡’:÷÷µš�‘‘–•‚•�ˆ„Š‰†û`÷�„”~}„‚y|Ÿ÷»÷dmoff©n²•²©§±°m§døvù
+�“Œ��•�”��†‡}„ûÛýL‡„Š†‡�•‚••��™’{´r´÷D´÷´Ó´÷Æ´b÷rø7ê�”’™˜‚’y|U÷ŸÒG¿.fJ~xT€‡…„�€”‚•��ŒŒ�£Ù§‘¯Ô½jZD›Pl�]û5P4‚?ÊWèÑÇ¥ÄÈ¬¸LHUsDF^­¿ÊÓ¶õ·»…‚¯{´ø´iŸß´÷í´Øøjø¯bUžNû+,ûûé/÷ÍÍŸ®¾§žš�—•‚”�„ˆ‰ƒƒ[WMsBû>Öô÷×Ö÷ßÒaV�z�‘„˜˜’”�æ8ž„”~}„‚x{´r´÷ñ´÷´Ê´÷ù´b÷¼øŠøð,y‚„~}”„�Áû€ÒZQ¬@û*'ûûì&÷rÖÇ®Ñº2ê�”’™˜‚’y|Uûp÷ñðÙ;#¬';:
 
 --- page 42 ---
 
-I'C'?&;$8"5"2"0".","*"?c•§ºÚÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÕ²¬²Ìäúÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿå»—wbÈÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÛžg6
-ŒÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÈ?^ÏÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÙ�9<ªÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿžL#�ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÜo}ùÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ¯Hoîÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ„dæÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿìQWÞÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ¸HÖÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿt8Ïÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿù¢Z#Åÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿß›,ºÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿï±}U9""²ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿß¿¥™˜š ¬½Úÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿã¾�€|ûÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿò·„W0¬ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÒŠLróÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÖ6KÉÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿú‘>/«ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÀZ•ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ�$„ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿç^wÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ´%jÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ}[ôÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿý+Lëÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ¥<áÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ0-Ùÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ™Ša''×ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿí¾‰U'%ÜÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿþÊ�v]J<2-,09GÞÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿýæÝÖÒÐÓÙäÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿïÔ»Öÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿç¸�jK/oÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿä¡g4<ÉÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÖ‚;—ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿí…1oÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ¦BPáÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿìi7Éÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ³/"¶ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿy§ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿò4™ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ©ŒÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿFÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿßtÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ—jÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÎcÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+I'C'?&;$8"5"2"0"
+.","*"?c•§ºÚÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÕ²¬²Ìäúÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿå»—wbÈÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÛžg6
+ŒÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÈ?^ÏÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÙ�9<ªÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿžL#�ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÜo}ùÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ¯Hoîÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ„dæÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿìQWÞÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ¸HÖÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿt8Ïÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿù¢Z#Åÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿß›,
+ºÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿï±}U9""²ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿß¿¥™˜š ¬½Úÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿã¾�€|ûÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿò·„W0¬ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÒŠLróÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÖ6KÉÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿú‘>/«ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÀZ•ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ�$„ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿç^wÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ´%jÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ}[ôÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿý+Lëÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ¥<áÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ0-Ùÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ™Ša''×ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿí¾‰U'%ÜÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿþÊ�v]J<2-,09GÞÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿýæÝÖÒÐÓÙäÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿïÔ»Öÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿç¸�jK/oÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿä¡g4<ÉÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÖ‚;—ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿí…1oÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ¦BPáÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿìi7Éÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ³/"¶ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿy§ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿò4™ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ©ŒÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿFÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿßtÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ—jÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÎcÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ

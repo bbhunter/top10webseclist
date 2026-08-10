@@ -72,7 +72,7 @@ page going offline. To read the original, follow the link above.
 
  The threat isn't theoretical though. I was able to find a chain of vulnerabilities in [cr-gpg](https://web.archive.org/web/20171017093250/http://thinkst.com/tools/cr-gpg/) extension which handles PGP encryption/decryption from within Gmail interface. Funny thing - the exact same vulnerabilities were reported independently by [Gynvael Coldwind](https://web.archive.org/web/20171017093250/http://gynvael.coldwind.pl/?id=487) - great finds, Gynvael! All reported issues below were **present in 0.7.4 **version and **are fixed in >=0.8.2.**
 
- []()
+ 
 
 ##  DOM XSS when injecting decrypted message content back into gmail interface.
 

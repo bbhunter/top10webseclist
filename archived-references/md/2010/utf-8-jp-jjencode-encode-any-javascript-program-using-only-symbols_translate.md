@@ -63,7 +63,6 @@ _Machine translation of [`utf-8-jp-jjencode-encode-any-javascript-program-using-
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-
 jjencode - Encode any JavaScript program using only symbols
 
 # jjencode demo
@@ -83,6 +82,6 @@ Enter any JavaScript source:
 
 0 letters
 
-[ [Permalink]() ]
+[ Permalink ]
 
 [[utf-8.jp/](http://utf-8.jp/)]

@@ -71,21 +71,21 @@ Let’s dive in.
 
 ## Index
 
-- [Mods feature on Opera GX]()
-- [Initial observations]()
-- [Unexpected state and (browser) Denial-of-Service]()
-- [Possibilities and limitations]()
-- [Look at the sky, another constraint is falling]()
-- [Defining the objective and the CSS cascade]()
+- Mods feature on Opera GX
+- Initial observations
+- Unexpected state and (browser) Denial-of-Service
+- Possibilities and limitations
+- Look at the sky, another constraint is falling
+- Defining the objective and the CSS cascade
 
-- [CSS Variables for collision-free wandering]()
+- CSS Variables for collision-free wandering
 
-- [Theory and foundational approach]()
-- [Implementation and hitting the ceiling]()
-- [We need to reduce the load!]()
-- [String reconstruction algorithm]()
-- [0-Click XSLeak via Universal CSS Injection]()
-- [Conclusion]()
+- Theory and foundational approach
+- Implementation and hitting the ceiling
+- We need to reduce the load!
+- String reconstruction algorithm
+- 0-Click XSLeak via Universal CSS Injection
+- Conclusion
 
 ## Mods feature on Opera GX
 

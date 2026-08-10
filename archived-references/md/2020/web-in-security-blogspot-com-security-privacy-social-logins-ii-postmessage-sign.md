@@ -72,16 +72,14 @@ Although previous work uncovered various security flaws in SSO, it did not work 
 
 It turned out that the postMessage API is commonly used in real-world SSO implementations. We introduce the reasons for this and propose security best practices on how to implement postMessage in SSO. Further, we present vulnerabilities on top-visited websites that caused DOM-based XSS and account takeovers due to insecure use of postMessage in SSO.
 
-- [Vuln. 1) DOM-based XSS on myaccount.nytimes.com]()
-- [Vuln. 2) Account Takeover on cbsnews.com, cnet.com, and zdnet.com]()
-- [Vuln. 3) Account Takeover in SAP Customer Data Cloud (GIGYA)]()
+- Vuln. 1) DOM-based XSS on myaccount.nytimes.com
+- Vuln. 2) Account Takeover on cbsnews.com, cnet.com, and zdnet.com
+- Vuln. 3) Account Takeover in SAP Customer Data Cloud (GIGYA)
 
 #### [Part III: Privacy in Single Sign-On Protocols (coming soon)
 ](https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part3.html)
 
 Identity Providers (IdPs) use "zero-click" authentication flows to automatically sign in the user on the Service Provider (SP) once it is logged in on the IdP and has consented. We show that these flows can harm user privacy and enable new targeted deanonymization attacks of the user's identity.
-
-[]()
 
 ## PostMessage Security in Single Sign-On
 

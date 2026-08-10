@@ -58,11 +58,7 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-**
-
 Zifeng Kang (Johns Hopkins University), Song Li (Johns Hopkins University), Yinzhi Cao (Johns Hopkins University)
-
- **
 
 Prototype pollution is a relatively new type of JavaScript vulnerabilities, which allows an adversary
  to inject a property into a prototypical object, such as Object.prototype. The injected property may be used later in other sensitive functions like innerHTML, leading to Cross- site Scripting (XSS), or document.cookie, leading to cookie manipulations. Prior works proposed to detect prototype pollution in Node.js application using static analysis. However, it still remains unclear how prevalent prototype pollution exists in client-side websites, let alone what consequences (e.g., XSS and cookie manipulations) prototype pollution could lead to.

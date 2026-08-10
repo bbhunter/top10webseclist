@@ -78,7 +78,7 @@ Here’s a sample of what the log looked like when I tested it:
 
 As you can see, not only does this give away local address information, but it can also give you sensitive information like the user name, and the location on the drive. That could easily be used to leverage further attacks, and to my knowledge there is no other way to do this without running JavaScript or some other active control. This completely fails in Firefox as it doesn’t support XML data islands. Nice find, Trev!
 
-  This entry was posted on Sunday, March 25th, 2007 at 9:09 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070325/ie-sends-local-addresses-in-referer-header/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20070325/ie-sends-local-addresses-in-referer-header/trackback/) from your own site.
+  This entry was posted on Sunday, March 25th, 2007 at 9:09 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070325/ie-sends-local-addresses-in-referer-header/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070325/ie-sends-local-addresses-in-referer-header/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

@@ -51,6 +51,17 @@ PAGE_IS_THE_DOCUMENT_CHARS = 5000
 # extracted as glyph soup. A 30 MB conference deck is ordinary.
 MAX_DOCUMENT_BYTES = 64 * 1024 * 1024
 
+# AND NEITHER IS A PAGE. The same mistake, one path over: the article fetch was
+# left on the probe cap, so a WeChat write-up whose markup runs to 4.4 MB was
+# stored as its first 2,097,152 bytes - cut in the middle of a `<script>`. An
+# unclosed script cannot be removed as a pair, and 735,283 characters of
+# JavaScript and stylesheet were published as the article's prose.
+#
+# Smaller than a document's budget because this is markup held in memory and
+# parsed several times over, and larger than any honest article: the widest
+# page in this corpus is 4.4 MB, and most are under 200 KB.
+MAX_PAGE_BYTES = 16 * 1024 * 1024
+
 # The lightweight in-process PDF reader is useful for small, ordinary files,
 # but its fallback stream-expression scan is quadratic on some multi-megabyte
 # conference decks. A 4.3 MiB Black Hat paper spent minutes inside one regex.
@@ -222,7 +233,7 @@ def acquire(key, entry, store, fetcher, config, taken_slugs=(), refetch=False,
         # JavaScript viewer rather than the file. The citation keeps naming the
         # blob page; only the bytes come from elsewhere.
         fetch_url = github.raw_url(url) or url
-        response = fetcher.get(fetch_url)
+        response = fetcher.get(fetch_url, max_bytes=MAX_PAGE_BYTES)
         if not (200 <= response.status < 300) or not response.body:
             return Acquired(key, "failed",
                             reason="http %d on acquisition" % response.status)
@@ -317,6 +328,11 @@ def acquire(key, entry, store, fetcher, config, taken_slugs=(), refetch=False,
     # chrome removal cannot see a call to action that sits in the article's own
     # flow with no class worth naming, and 111 files end with one.
     trimmed, furniture = boilerplate.trim(chosen.markdown)
+    # Dead link syntax goes AFTER the edge trim: a trailing navigation panel is
+    # recognised by its `](url)` fragments, and clearing them first would leave
+    # the panel behind as prose.
+    trimmed, dead = boilerplate.drop_dead_links(trimmed)
+    furniture = sorted(set(furniture) | set(dead))
     body = sanitise.sanitise_text(trimmed)
     facts = meta.read(markup, final_url)
     title = facts["title"] or _title_from(chosen.markdown) or url
@@ -781,6 +797,11 @@ def _html_document(key, url, entry, kind, raw, raw_sha, retrieved_kind, final_ur
                                "page extracted to only %d characters"
                                % (kind, chosen.metrics["chars"] if chosen else 0))
     trimmed, furniture = boilerplate.trim(chosen.markdown)
+    # Dead link syntax goes AFTER the edge trim: a trailing navigation panel is
+    # recognised by its `](url)` fragments, and clearing them first would leave
+    # the panel behind as prose.
+    trimmed, dead = boilerplate.drop_dead_links(trimmed)
+    furniture = sorted(set(furniture) | set(dead))
     body = sanitise.sanitise_text(trimmed)
     content_sha = store.put_text(body.text)
     facts = meta.read(markup, final_url)

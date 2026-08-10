@@ -248,6 +248,6 @@ on chrispederic.com.
  (Dirk Wetter, Dec 17 2010, 9:30am GMT+1)
  :wq!
 
-|   []() [DiscussIf you do not want to have your comment published below, let me know](mailto:spam@drwetter.org?subject=Discuss:%20Stored%20XSS%20at%20Amazon) this article | [Permalink](https://drwetter.eu/amazon/storedXSS-vuln.at.amazon.html) | [![Twitter tracebacks so far](https://drwetter.eu/addto/topsy.png) Trackbacks](http://topsy.com/drwetter.eu/amazon/) | Comments [0]  |  [[Home](https://drwetter.eu/index.html)] |   |
+|    [DiscussIf you do not want to have your comment published below, let me know](mailto:spam@drwetter.org?subject=Discuss:%20Stored%20XSS%20at%20Amazon) this article | [Permalink](https://drwetter.eu/amazon/storedXSS-vuln.at.amazon.html) | [![Twitter tracebacks so far](https://drwetter.eu/addto/topsy.png) Trackbacks](http://topsy.com/drwetter.eu/amazon/) | Comments [0]  |  [[Home](https://drwetter.eu/index.html)] |   |
 
   |   |

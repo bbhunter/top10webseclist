@@ -62,7 +62,7 @@ page going offline. To read the original, follow the link above.
 
  [ testcase for comment 57 ](https://bugzilla.mozilla.org/attachment.cgi?id=288383)
 
- [18 years ago]()
+ 18 years ago
 
 [ Daniel Veditz [:dveditz]](https://bugzilla.mozilla.org/user_profile?user_id=1689)
 
@@ -73,7 +73,7 @@ page going offline. To read the original, follow the link above.
 
  [ test cases ](https://bugzilla.mozilla.org/attachment.cgi?id=288615)
 
- [18 years ago]()
+ 18 years ago
 
 [ Dave Camp (:dcamp)](https://bugzilla.mozilla.org/user_profile?user_id=265995)
 
@@ -84,7 +84,7 @@ page going offline. To read the original, follow the link above.
 
  [ new branch patch ](https://bugzilla.mozilla.org/attachment.cgi?id=288623)
 
- [18 years ago]()
+ 18 years ago
 
 [ Dave Camp (:dcamp)](https://bugzilla.mozilla.org/user_profile?user_id=265995)
 
@@ -94,14 +94,14 @@ page going offline. To read the original, follow the link above.
 
 dveditz
 
-: [ approval1.8.1.10+]()
+:  approval1.8.1.10+
 
  |   [Details](https://bugzilla.mozilla.org/attachment.cgi?id=288623&action=edit) | [Diff](https://bugzilla.mozilla.org/attachment.cgi?id=288623&action=diff) | [Splinter Review](https://bugzilla.mozilla.org/page.cgi?id=splinter.html&ignore=&bug=369814&attachment=288623)  |  |
 |
 
  [ ![](https://bugzilla.mozilla.org/extensions/BugModal/web/image.png) this is jar file - add !/tar1.html to open ](https://bugzilla.mozilla.org/attachment.cgi?id=288634)
 
- [18 years ago]()
+ 18 years ago
 
 [ georgi - hopefully not receiving bugspam](https://bugzilla.mozilla.org/user_profile?user_id=23768)
 
@@ -112,7 +112,7 @@ dveditz
 
  [ ![](https://bugzilla.mozilla.org/extensions/BugModal/web/image.png) this is jar file - add !/mid.html ](https://bugzilla.mozilla.org/attachment.cgi?id=288662)
 
- [18 years ago]()
+ 18 years ago
 
 [ georgi - hopefully not receiving bugspam](https://bugzilla.mozilla.org/user_profile?user_id=23768)
 
@@ -123,7 +123,7 @@ dveditz
 
  [ this is jar file - add !/flash3.swf ](https://bugzilla.mozilla.org/attachment.cgi?id=288666)
 
- [18 years ago]()
+ 18 years ago
 
 [ georgi - hopefully not receiving bugspam](https://bugzilla.mozilla.org/user_profile?user_id=23768)
 
@@ -134,7 +134,7 @@ dveditz
 
  [ newer branch patch ](https://bugzilla.mozilla.org/attachment.cgi?id=288695)
 
- [18 years ago]()
+ 18 years ago
 
 [ Dave Camp (:dcamp)](https://bugzilla.mozilla.org/user_profile?user_id=265995)
 
@@ -144,22 +144,22 @@ dveditz
 
 bzbarsky
 
-: [ review+]()
+:  review+
 
 dveditz
 
-: [ superreview-]()
+:  superreview-
 
 dveditz
 
-: [ approval1.8.1.10-]()
+:  approval1.8.1.10-
 
  |   [Details](https://bugzilla.mozilla.org/attachment.cgi?id=288695&action=edit) | [Diff](https://bugzilla.mozilla.org/attachment.cgi?id=288695&action=diff) | [Splinter Review](https://bugzilla.mozilla.org/page.cgi?id=splinter.html&ignore=&bug=369814&attachment=288695)  |  |
 |
 
  [ use the malformedURI error page on the branch ](https://bugzilla.mozilla.org/attachment.cgi?id=288772)
 
- [18 years ago]()
+ 18 years ago
 
 [ Dave Camp (:dcamp)](https://bugzilla.mozilla.org/user_profile?user_id=265995)
 
@@ -169,18 +169,18 @@ dveditz
 
 dveditz
 
-: [ superreview+]()
+:  superreview+
 
 dveditz
 
-: [ approval1.8.1.10+]()
+:  approval1.8.1.10+
 
  |   [Details](https://bugzilla.mozilla.org/attachment.cgi?id=288772&action=edit) | [Diff](https://bugzilla.mozilla.org/attachment.cgi?id=288772&action=diff) | [Splinter Review](https://bugzilla.mozilla.org/page.cgi?id=splinter.html&ignore=&bug=369814&attachment=288772)  |  |
 |
 
  [ trunk patch with tests ](https://bugzilla.mozilla.org/attachment.cgi?id=289040)
 
- [18 years ago]()
+ 18 years ago
 
 [ Dave Camp (:dcamp)](https://bugzilla.mozilla.org/user_profile?user_id=265995)
 
@@ -190,22 +190,22 @@ dveditz
 
 bzbarsky
 
-: [ review+]()
+:  review+
 
 dveditz
 
-: [ superreview+]()
+:  superreview+
 
 beltzner
 
-: [ ui-review+]()
+:  ui-review+
 
  |   [Details](https://bugzilla.mozilla.org/attachment.cgi?id=289040&action=edit) | [Diff](https://bugzilla.mozilla.org/attachment.cgi?id=289040&action=diff) | [Splinter Review](https://bugzilla.mozilla.org/page.cgi?id=splinter.html&ignore=&bug=369814&attachment=289040)  |  |
 |
 
  [ zipfile for mochitest ](https://bugzilla.mozilla.org/attachment.cgi?id=289041)
 
- [18 years ago]()
+ 18 years ago
 
 [ Dave Camp (:dcamp)](https://bugzilla.mozilla.org/user_profile?user_id=265995)
 
@@ -216,7 +216,7 @@ beltzner
 
  [ valid.jar ](https://bugzilla.mozilla.org/attachment.cgi?id=289242)
 
- [18 years ago]()
+ 18 years ago
 
 [ georgi - hopefully not receiving bugspam](https://bugzilla.mozilla.org/user_profile?user_id=23768)
 
@@ -227,7 +227,7 @@ beltzner
 
  [ the circle may be rotating in the 3rd window ](https://bugzilla.mozilla.org/attachment.cgi?id=289243)
 
- [18 years ago]()
+ 18 years ago
 
 [ georgi - hopefully not receiving bugspam](https://bugzilla.mozilla.org/user_profile?user_id=23768)
 
@@ -238,7 +238,7 @@ beltzner
 
  [ test updates ](https://bugzilla.mozilla.org/attachment.cgi?id=290297)
 
- [18 years ago]()
+ 18 years ago
 
 [ Dave Camp (:dcamp)](https://bugzilla.mozilla.org/user_profile?user_id=265995)
 
@@ -248,14 +248,14 @@ beltzner
 
 bzbarsky
 
-: [ review+]()
+:  review+
 
  |   [Details](https://bugzilla.mozilla.org/attachment.cgi?id=290297&action=edit) | [Diff](https://bugzilla.mozilla.org/attachment.cgi?id=290297&action=diff) | [Splinter Review](https://bugzilla.mozilla.org/page.cgi?id=splinter.html&ignore=&bug=369814&attachment=290297)  |  |
 |
 
  [ test fixes for bug 392567 ](https://bugzilla.mozilla.org/attachment.cgi?id=290344)
 
- [18 years ago]()
+ 18 years ago
 
 [ Dave Camp (:dcamp)](https://bugzilla.mozilla.org/user_profile?user_id=265995)
 
@@ -266,7 +266,7 @@ bzbarsky
 
  [ 1.8.1_combined (as reference) ](https://bugzilla.mozilla.org/attachment.cgi?id=306279)
 
- [18 years ago]()
+ 18 years ago
 
 [ Alexander Sack](https://bugzilla.mozilla.org/user_profile?user_id=113760)
 
@@ -277,7 +277,7 @@ bzbarsky
 
  [ same for 1.8.0 patch ](https://bugzilla.mozilla.org/attachment.cgi?id=306280)
 
- [18 years ago]()
+ 18 years ago
 
 [ Alexander Sack](https://bugzilla.mozilla.org/user_profile?user_id=113760)
 
@@ -287,7 +287,7 @@ bzbarsky
 
 caillon
 
-: [ approval1.8.0.next+]()
+:  approval1.8.0.next+
 
  |   [Details](https://bugzilla.mozilla.org/attachment.cgi?id=306280&action=edit) | [Diff](https://bugzilla.mozilla.org/attachment.cgi?id=306280&action=diff) | [Splinter Review](https://bugzilla.mozilla.org/page.cgi?id=splinter.html&ignore=&bug=369814&attachment=306280)  |  |
 
@@ -305,8 +305,6 @@ URL: jar:http://www.squarefree.com/bug3698...
 |
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a7301_11608)
-
- •
 
 19 years ago
 
@@ -337,8 +335,6 @@ Flags: blocking1.8.0.11?
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a1164441_7044)
 
- •
-
 19 years ago
 
   |   |
@@ -358,8 +354,6 @@ Flags: blocking1.9? → blocking1.9+
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a1164727_7044)
 
- •
-
 19 years ago
 
   |   |
@@ -378,8 +372,6 @@ Whiteboard: [sg:moderate] XSS against sites that allow uploads of files such as 
 |
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a2898367_1689)
-
- •
 
 19 years ago
 
@@ -410,8 +402,6 @@ Whiteboard: [sg:moderate] XSS against sites that allow uploads of files such as 
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a4234397_1689)
 
- •
-
 19 years ago
 
   |   |
@@ -430,8 +420,6 @@ Keywords: [arch](https://bugzilla.mozilla.org/buglist.cgi?keywords=arch&resoluti
 |
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a5244245_103593)
-
- •
 
 19 years ago
 
@@ -462,8 +450,6 @@ Flags: blocking1.8.0.12+
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a7744362_1689)
 
- •
-
 19 years ago
 
   |   |
@@ -485,8 +471,6 @@ Target Milestone: mozilla1.9alpha6 → mozilla1.9beta1
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a13024961_1689)
 
- •
-
 19 years ago
 
   |   |
@@ -505,8 +489,6 @@ Flags: blocking1.8.1.5+ → blocking1.8.1.6+
 |
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a13528086_83595)
-
- •
 
 19 years ago
 
@@ -527,8 +509,6 @@ Assignee: dveditz → jwalden+bmo
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a15514029_1689)
 
- •
-
 19 years ago
 
   |   |
@@ -547,8 +527,6 @@ Flags: blocking1.8.0.13+ → blocking1.8.0.14+
 |
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a20280891_1689)
-
- •
 
 18 years ago
 
@@ -575,8 +553,6 @@ Group: security
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a23426389_180188)
 
- •
-
 18 years ago
 
   |   |
@@ -597,8 +573,6 @@ Assignee: jwalden+bmo → dcamp
 |
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a23487773_1689)
-
- •
 
 18 years ago
 
@@ -624,8 +598,6 @@ Flags: blocking1.8.1.11+ → blocking1.8.1.10+
 |
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a23564087_265995)
-
- •
 
 18 years ago
 
@@ -656,8 +628,6 @@ Flags: blocking1.8.1.11+ → blocking1.8.1.10+
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a23723437_1689)
 
- •
-
 18 years ago
 
   |   |
@@ -687,8 +657,6 @@ Depends on: [jarxss2](https://bugzilla.mozilla.org/show_bug.cgi?id=403331)
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a23894207_265995)
 
- •
-
 18 years ago
 
   |   |
@@ -714,8 +682,6 @@ Depends on: [jarxss2](https://bugzilla.mozilla.org/show_bug.cgi?id=403331)
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a23911651_1689)
 
- •
-
 18 years ago
 
   |   |
@@ -734,8 +700,6 @@ Depends on: [jarxss2](https://bugzilla.mozilla.org/show_bug.cgi?id=403331)
 |
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a23911753_1689)
-
- •
 
 18 years ago
 
@@ -757,8 +721,6 @@ Depends on: [jarxss2](https://bugzilla.mozilla.org/show_bug.cgi?id=403331)
 |
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a23919352_279345)
-
- •
 
 18 years ago
 
@@ -788,8 +750,6 @@ Blocks: [403552](https://bugzilla.mozilla.org/show_bug.cgi?id=403552)
 |
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a23983429_1689)
-
- •
 
 18 years ago
 
@@ -874,8 +834,6 @@ Whiteboard: [sg:high] XSS against sites that allow uploads of files such as imag
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a24101593_1689)
 
- •
-
 18 years ago
 
   |   |
@@ -921,8 +879,6 @@ Whiteboard: [sg:high] [need 1.8 patch] XSS against sites that allow uploads of f
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a25125037_265995)
 
- •
-
 18 years ago
 
   |   |
@@ -949,8 +905,6 @@ Whiteboard: [sg:high] [need 1.8 patch] XSS against sites that allow uploads of f
 |
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a25142681_265995)
-
- •
 
 18 years ago
 
@@ -979,8 +933,6 @@ Resolution: --- → FIXED
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a25197898_169237)
 
- •
-
 18 years ago
 
   |   |
@@ -999,8 +951,6 @@ Depends on: [405676](https://bugzilla.mozilla.org/show_bug.cgi?id=405676)
 |
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a25279355_103593)
-
- •
 
 18 years ago
 
@@ -1027,8 +977,6 @@ Flags: blocking1.8.0.14+
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a26100017_20209)
 
- •
-
 18 years ago
 
   |   |
@@ -1047,8 +995,6 @@ Depends on: [407303](https://bugzilla.mozilla.org/show_bug.cgi?id=407303)
 |
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a32442811_32335)
-
- •
 
 18 years ago
 
@@ -1075,8 +1021,6 @@ Flags: blocking1.8.0.15? → blocking1.8.0.15+
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a33215427_113760)
 
- •
-
 18 years ago
 
   |   |
@@ -1101,8 +1045,6 @@ Keywords: [dev-doc-needed](https://bugzilla.mozilla.org/buglist.cgi?keywords=dev
 |
 
 ###  [Updated](https://bugzilla.mozilla.org/show_bug.cgi?id=369814#a78424584_49577)
-
- •
 
 17 years ago
 

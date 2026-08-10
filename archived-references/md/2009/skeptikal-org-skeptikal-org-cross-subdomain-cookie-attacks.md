@@ -63,8 +63,6 @@ page going offline. To read the original, follow the link above.
 
 Skeptikal.org: Cross-subdomain Cookie Attacks
 
-[]()
-
 ###  Cross-subdomain Cookie Attacks
 
 I did a talk at Toorcon last weekend on exploiting client-side applications' trust in subdomains. Primarily, it formalized and demonstrated a few attacks on cookies, which implement security policies backwards by placing more trust in a subdomain of a trusted domain, rather than less, as the hierachical nature of DNS would suggest.

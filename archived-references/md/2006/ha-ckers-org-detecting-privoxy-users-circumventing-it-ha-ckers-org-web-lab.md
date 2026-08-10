@@ -75,7 +75,7 @@ So anyway, there I was, downloading the [torbutton extention](http://freehaven.n
 
 My own website has links to ads in it, which Privoxy so nicely kills with an error message letting me know why, and allowing me to go directly to the link. That link that allows me to bypass the Privoxy block was intriguing as it was just a modified URL (and a pretty easy one to reconstruct at that). [So I threw up a little test script to detect privoxy and poof!](http://ha.ckers.org/weird/privoxy.html) I inserted a keyword that it blocks after a legitimate image with the modified URL. If it hits it, Privoxy is being used. If there’s an error because it’s not finding the correct image (because the modified URL doesn’t actually exist) you know they are safe. Now I can tell if users have it installed or not. This may be better than the chrome:// firefox extensions detection because I have a feeling that will get killed eventually.
 
-  This entry was posted on Monday, September 11th, 2006 at 3:01 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Monday, September 11th, 2006 at 3:01 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

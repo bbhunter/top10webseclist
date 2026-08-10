@@ -347,7 +347,7 @@ GlobaLeaks was using Tor2web to route inbound requests to a Tor hidden service t
 
 This unique vulnerability has an impact that's tricky to quantify. As all requests are routed through Tor, it can't be abused to access any internal services. That said, it's an exceptionally powerful way to mask an attack on a third party, particular as since GlobaLeaks is a whistleblowing platform it probably doesn't keep any logs and may end up being blamed for attacks. Additionally, the ability to make the webserver connect to a hostile site over Tor exposes a significant amount of attack surface.
 
-## [Targeting auxiliary systems]()
+## Targeting auxiliary systems
 
 We've seen significant diversity in reverse proxies and the techniques necessary to make them misroute requests, but the final impact has so far stayed more or less consistent. In this section we'll see that when targeting helper systems like backend analytics and caches, figuring out a genuinely useful exploit is often more difficult than causing a callback in the first place.
 
@@ -430,7 +430,7 @@ The following diagram shows the attack sequence:
 
 Note that the use of XSS to inject an absolute URL means this attack works even if the application rejects requests that contain an unrecognized host header. To aid understanding of this attack I've built a replica of the vulnerable system so that you can [try exploiting it yourself](http://hackxor.net/mission?id=4).
 
-## [Conclusion]()
+## Conclusion
 
 In recent years a surge in bug bounty programs has enabled a new type of research; it's now possible to evaluate a novel attack concept against tens of thousands of servers in the space of fifteen minutes. Using this, I've shown that minor flaws in reverse proxies can result in critical vulnerabilities, and earned a healthy $33,000 along the way. To achieve any semblance of defense in depth, reverse proxies should be firewalled into a hardened DMZ, isolated from anything that isn't publicly accessible.
 

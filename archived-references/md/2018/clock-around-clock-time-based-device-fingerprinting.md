@@ -121,10 +121,15 @@ clocks use oscillators based on quartz crystals, and small variationsin those cr
 
 --- page 11 ---
 
-n'ZðNîg¥ÚHªä%Ö:é½ òJðX&!çß½ù á�^†~ YèŒ`/ÛhOÅ£ºxÁ0’”¶Öbªhëäžoè>T:RZúÇsæ Q¿@ÈÒW‡
-Å¤ia�M_ÀÏ”ÄgÆå`VÃ@alƒ…®c‚«²`è&W£u‹¯¦šø[PúÿZŸÑÎ½ó¦„Ø¦yx�OkÄ²Âä$¬{-PÊâ¢œÅØ"ÉT!YÍUcµ|<wèpAóç…ÕÛõ¤+_]óätQÏüèFug°’ÓN½{Gáq¨A�N;ÃPÌhâaúÔbC­X�áŒ-®À–"Œù%]ˆ‚*ÝË©¯Xs>·3Ž9fP/û™¥�î|bÑíŽÂ@´D½}
+n'Z
+ðNîg¥ÚHªä%
+Ö:é½ òJðX&!çß½ù á�^†~ YèŒ`/ÛhOÅ£ºxÁ0’”¶Öbªhëäžoè>T:RZúÇsæ Q¿@ÈÒW‡
+Å¤ia�M_ÀÏ
+”ÄgÆå`VÃ@alƒ
+…®c‚«²`è&W£u‹¯¦šø[PúÿZŸÑÎ½ó¦„Ø¦yx�OkÄ²Âä$¬{-PÊâ¢œÅØ"ÉT!YÍUcµ|<wèpAóç…ÕÛõ¤+_]óätQÏüèFug°’ÓN½{Gáq¨A�N;ÃPÌhâaúÔbC­X�áŒ-®À–"Œù%]ˆ‚*ÝË©¯Xs>·3Ž9fP/û™¥�î|bÑíŽÂ@´D½}
 
-üDúÁŸ“:’VK_Q"|D�¯*N²É5±äfâÜØÄã<áñê¯†¶†”õ=7dì J š‹ÚŸÇŠj¿¸	iÝF;ÞÁ*½‰ûe+ë^o¡ÒdoMÌ«®H|û0�ôåŒ^…ö`uÓ¾hO4 á#PÅ‹1Rsc¹> ªTÉ¡÷˜ýÐÇ�5ØÎú>¯ØvÊæ°î÷îÙrëÿ&ó¹]Îß0ÃõäÁ•®·¦=ÙpÕ"Ê¤UópÌ°MjÞ¢[	xL¬ÐÛ‚³[Èþzöœè	qº7s?IéÍ	®hS#Š£ŒŠ|Ö|÷è2Ï›°c¨Ž«eÌfñ
+üDúÁŸ“:’VK_Q"|D�¯*N²É5±äfâÜØÄã<áñê¯†¶†”õ=7dì J š‹ÚŸÇŠj¿¸	iÝF;ÞÁ*½‰ûe+ë^o¡ÒdoMÌ«®H|û0�ôåŒ^…ö`uÓ¾hO4 á#PÅ‹1Rsc¹> ªTÉ¡÷˜ýÐÇ�5ØÎú>¯ØvÊæ°î÷îÙ
+rëÿ&ó¹]Îß0ÃõäÁ•®·¦=ÙpÕ"Ê¤UópÌ°MjÞ¢[	xL¬ÐÛ‚³[Èþzöœè	qº7s?IéÍ	®hS#Š£ŒŠ|Ö|÷è2Ï›°c¨Ž«eÌfñ
 ÌdáÄ¶2iNüÆ?V
 
 --- page 12 ---
@@ -389,7 +394,6 @@ n
 m
 )2
 num
-_
 coindences
  
 0
@@ -401,7 +405,6 @@ f p
 3
 f p
 1
-_
 mode
  
 f loat
@@ -420,7 +423,6 @@ n
 do6
 f p
 1
-_
 mode
 [
 i
@@ -480,7 +482,6 @@ do14
 if
 f p
 1
-_
 mode
 [
 i
@@ -494,11 +495,9 @@ j
 ]
 then15
 num
-_
 coindences
  
 num
-_
 coindences
 +
 1
@@ -534,7 +533,6 @@ end
 24
 return
 num
-_
 coincidences
 ;
 Input:
@@ -782,7 +780,8 @@ that generates keys for encryption.
 
 --- page 20 ---
 
-|ÇoîÍ„ŒiFéJK»‚nA«é¤Ä×BM·M.~»Õ8x¯>çU½YXý62æp1å$]©P§-GœHÖxðJÐãÜ™=ÅÐÆ-‡¦
+|ÇoîÍ„ŒiFéJK»‚nA«é¤Ä×BM·M.~»Õ8x¯
+>çU½YXý62æp1å$]©P§-GœHÖxðJÐãÜ™=ÅÐÆ-‡¦
 
 --- page 21 ---
 

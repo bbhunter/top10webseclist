@@ -95,7 +95,6 @@ For a Reflected File Download attack to be successful, there are **three** simpl
 **3)****Download** – The response is being downloaded and a file is created "on-the-fly" by the Web browser. The browser then sets the attacker-controlled filename that was parsed in requirement 2 above.
 
 **![11967_d28b5119-eef4-460c-9082-db9f4c5e9685](https://www.levelblue.com/hs-fs/hubfs/Imported_Blog_Media/11967_d28b5119-eef4-460c-9082-db9f4c5e9685.webp?width=400&height=268&name=11967_d28b5119-eef4-460c-9082-db9f4c5e9685.webp)
-**
 
 **Figure 2 – A service is vulnerable if the three RFD requirements are met**
 

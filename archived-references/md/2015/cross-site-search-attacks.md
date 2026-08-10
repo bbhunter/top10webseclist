@@ -89,7 +89,8 @@ statistical tests
 amplication
 of the timing
 side-channel, by
-`inating' communication or computation
+`in
+ating' communication or computation
 ,
 and (3) optimized, tailored
 divide-and-conquer
@@ -204,8 +205,21 @@ post [13] that discusses this threat. In spite of being aware
 --- page 9 ---
 
 *b1-b.-':Ly%#%'2#2'E#E'¥''9?:9&"%&8/78-""--/?¸É@> / /.!.!"988''&h??+ 0`p°Ààð
-¸ú@D S d  2" ""¸Ã¶@A–!kŠ++ö]ô]ý]qä]?<<<?<<<99‡.+‡}Ä‡.+‡}ÄíÀíÀíÀíÀíÀíÀíÀíÀY10]]CX² /]Y]]]]qCX¶/@U	¸ÿô´U	¸ÿô´U	¸ÿà´U	¸ÿØ@U	U
-U¸ÿþ´U¸ÿì´U¸ÿÜ´U¸ÿØ@	U¯ý V9$$<Ua•, $p<oiX@!zÆuswppÄÆ×ç	Õ¸-@Ï””!TZ++Nô]Mý]9/?íì]í9910]]3#%#ù¸¾þïåiþµÕÕE–Ln@C§¹¶‰††vw‹fzyjid™–¨4�	w�h/¸p·hXÞ+NôMíý]í?<í<ôýô<10]]]]]]#663232673#"'&&#"6 jN	 "		S	S/¸ÿð@Ê:I7¸8È8™:¨8™8™9' 9¬¸¬@988"87
+¸ú@D S d  2" ""¸Ã¶@A–!kŠ++ö]ô]ý]qä]?<<<?<<<99‡.+‡}Ä‡.+‡}ÄíÀíÀíÀíÀíÀíÀíÀíÀY10]]CX² /]Y]]]]qCX¶/@U	¸ÿô´U	¸ÿô´
+
+U	¸ÿà´U	¸ÿØ@U	
+
+U
+U
+¸ÿþ´U¸ÿì´
+
+U¸ÿÜ´U¸ÿØ@	U¯ý V9$$<Ua•, $p<oiX@!zÆuswppÄÆ×ç	Õ¸-@Ï””!TZ++Nô]Mý]9/?íì]í9910]]3#%#ù¸¾þïåiþµÕÕE–Ln@C§¹¶‰††vw‹fzyjid™–¨4�	w
+�
+h
+
+/
+
+¸p·hXÞ+NôMíý]í?<í<ôýô<10]]]]]]#663232673#"'&&#"6 jN	 "		S	S/¸ÿð@Ê:I7¸8È8™:¨8™8™9' 9¬¸¬@988"87
 =Læ	.ld‰u 9"lJRF/w
 @/*9"R3@73“1	3Hl/|�ˆÌÎ->O5=yoUOC‡rF$<Qî9zd‰u 9"lJR	4 4� �@	4?/?hh¯/]í3/í/]q+Àí2/ýÄ10+++#323273#"'&#"ý µ/500,DD/:&,E-" ".$$!!*$!$" +!$"44#-2 10"!"$C@"   "!   RR??RR??,,,,,,,,RR??RR??,,RR??
 
@@ -311,7 +325,8 @@ The right statistical test is critical for ef-
 cient, accurate exposure. We evaluated several tests,
 including `classical' tests and `tailored' tests which we
 developed, that provided signicant improvements.
-Response-inate mechanisms,
+Response-in
+ate mechanisms,
 where the attacker sig-
 nicantly increases the
 size
@@ -319,7 +334,8 @@ of one of the two response
 options. This may require the term to appear in mul-
 tiple records within the private data. See Figure 1(a)
 and Section 3.
-Compute-inate mechanisms,
+Compute-in
+ate mechanisms,
 where the attacker sig-
 nicantly increases the
 computation load
@@ -347,8 +363,10 @@ We draw attention to the potential pri-
 vacy exposure due to XS-search attacks. XS-search attacks
 are not trivial to launch; however, we present several types of
 tools that facilitate eective XS-search attacks: XS-search-
-optimized statistical tests, response-inate and compute-
-inate mechanisms, and divide-and-conquer XS-search al-
+optimized statistical tests, response-in
+ate and compute-
+in
+ate mechanisms, and divide-and-conquer XS-search al-
 gorithms (see brief descriptions above, and details within).
 We evaluated these dierent tools extensively, using eth-
 ical, IRB-approved experiments, focusing on some of the
@@ -364,9 +382,13 @@ validated them using experiments in dierent environments.
 
 --- page 11 ---
 
-(a) Response-inate attack example (Section 3)
-(b) Compute-inate attack example (Section 4)
-Figure 1: Examples of eective XS-search attack using the Response-inate and Compute-inate techniques. In the end of
+(a) Response-in
+ate attack example (Section 3)
+(b) Compute-in
+ate attack example (Section 4)
+Figure 1: Examples of eective XS-search attack using the Response-in
+ate and Compute-in
+ate techniques. In the end of
 the attack, the adversary uses statistical tests to decide whether
 T
 (r
@@ -420,11 +442,13 @@ however, without evaluating its eectiveness or developing
 any tools to make the attack practical; indeed, from the re-
 sponses of vendors, this attack was not considered practical.
 2. XS-Search ATTACK
-In this section we briey introduce the XS-search attack
+In this section we brie
+y introduce the XS-search attack
 and its use of timing side-channel. We rst describe the XS-
 search attack, and then discuss techniques for analyzing the
 responses' loading times. In Sections 3 and 4 we discuss two
-`ination' techniques that improve the attacks by decreasing
+`in
+ation' techniques that improve the attacks by decreasing
 the number of requests required for the attacker to learn
 information.
 2.1 Adversary Model & Attack Process
@@ -763,7 +787,8 @@ gether with the dummy request, which is expected to yield
 an empty response, and compares the loading time of the
 two responses.
 In this section, we present the
-Response-inate XS-search
+Response-in
+ate XS-search
 attack, a technique that makes it easier to distinguish be-
 tween the loading time of empty and full responses, allowing
 the attacker to nd the correct answers to Boolean queries
@@ -774,7 +799,8 @@ nd out the user's name, phone-number, and other informa-
 tion.
 The idea of the attack is to increase the dierence between
 the size of empty and full responses. We begin by presenting
-some methods of response inating, which we found applica-
+some methods of response in
+ating, which we found applica-
 ble to many web-services (see [27]), and then we give specic
 details for two example sensitive data services: the Bing his-
 tory logs and the Gmail email archive.
@@ -788,7 +814,8 @@ in the response. Furthermore, a response may often contain
 
 many entries, typically, one entry per every record which ts
 the criteria in the request. By sending a relatively-long pa-
-rameter, the length of the response is signicantly inuenced
+rameter, the length of the response is signicantly in
+uenced
 by the number of entries, which often allows the attacker
 to distinguish between empty responses, i.e., no-match, vs.
 responses with signicant number of matches. This is facil-
@@ -815,7 +842,8 @@ follow on any result); details in subsection 3.2.
 3.2 Response-Inate XS-Search Attack on
 Bing's Search History
 Bing's search history is an example of a service vulnera-
-ble to the Response-Inate XS-Search Attack. Many web-
+ble to the Response-In
+ate XS-Search Attack. Many web-
 services maintain a
 log
 containing `history-records' listing
@@ -933,10 +961,12 @@ for
 more
 requests, the size of such responses is less than
 1KB. The smaller size of empty responses and the higher
-ination ratio, make the
+in
+ation ratio, make the
 more
 request more suitable for the
-Response-inate XS-search attack.
+Response-in
+ate XS-search attack.
 Attack details.
 Consider a request that is replied to with
 a full response containing
@@ -954,7 +984,8 @@ IID
 parameters of 2000 bytes each, the size of the response
 for the
 search
-request is inated by nearly 2000
+request is in
+ated by nearly 2000
 
 (X
 +
@@ -963,12 +994,14 @@ Y
 bytes compared to the empty response. Moreover, the size
 of the response for the
 more
-request is inated by nearly
+request is in
+ated by nearly
 2000
 
 (2X
 + 3Y
-) bytes. This ination is exacerbated since
+) bytes. This in
+ation is exacerbated since
 Bing does not compress (zip) their responses.
 3.2.1 Bing-History Response-Inate XS-Search At-
 tack: Environments
@@ -1181,33 +1214,45 @@ choose the threshold accordingly. However, this procedure
 increases the time required for the attack. Additional details
 and extended analysis appear in [27].
 3.2.4 Response ination effect
-To test the eect of the response ination, we repeated our
+To test the eect of the response in
+ation, we repeated our
 evaluation experiment in the OW environment with simple
-(not inated) requests. The results showed that although it
+(not in
+ated) requests. The results showed that although it
 is possible to distinguish between empty and full responses,
 a larger sample size is required. We also observed that the
-response ination decreases the FN when detecting a full
+response in
+ation decreases the FN when detecting a full
 response that contains fewer entries. Figure 6 depicts the
 FN dierence according to the box test (BX
 2
 0
 ) for simple
-and inating requests. We extend the comparison in [27].
+and in
+ating requests. We extend the comparison in [27].
 3.3 Response-Inate XS-Search Attack on
 Gmail
 Google's Gmail is the most popular email service today.
 We observed that it is possible to extract information from
 Gmail accounts by measuring the times of cross-site search
-requests and further inating the dierence in the sizes of
+requests and further in
+ating the dierence in the sizes of
 full and empty responses. Compared to the attack on Bing,
-the inating process is weaker due to compression of the
-responses. Because the response ination is done similarly to
-the attack on Bing, we briey describe the response ination
+the in
+ating process is weaker due to compression of the
+responses. Because the response in
+ation is done similarly to
+the attack on Bing, we brie
+y describe the response in
+ation
 and further elaborate in [27].
 
 --- page 15 ---
 
-¿5Rô]ù#Ê¡m"Ü—“{¿Vpþ$ÿ‚6ü;±ý®5ïŽ<[ñàÄOZÏkâ[¿ÜéÿdñœÑ»Ëqi¨YÝÛ‰wF|I.Ìç.Å�aûÁ1¾þÀüMá_†âYñ›Iu®øÊîî=KÄzµûFP_M5ÄoJ¬Í"§“äg>OÎá¬Ãpø‹þ�Çö€ÿÀ=ÿ–tÃpø‹þ�Çö€ÿÀ=ÿ–u”b”=šÚÜ¿öíïËä¯­–—×¢.Oš|òÕÞþ®Ö»îí¥Þ¶Ó©äßðMø!_ÃŸø%gÅ¯x»á×ÄO‹Ú´¾2„E®iÞ"¾Òîìõ&VwŽVò¬"™]I
+¿5Rô]ù#Ê¡m"Ü—“{¿Vpþ$ÿ‚6ü;±ý®5ïŽ
+<[ñàÄOZÏkâ[¿ÜéÿdñœÑ»Ëqi¨YÝÛ‰wF|I.Ìç.Å�aûÁ1¾þÀüMá_†
+â
+Yñ›Iu®øÊîî=KÄzµûFP_M5ÄoJ¬Í"§“äg>OÎá¬Ãpø‹þ�Çö€ÿÀ=ÿ–tÃpø‹þ�Çö€ÿÀ=ÿ–u”b”=šÚÜ¿öíïËä¯­–—×¢.Oš|òÕÞþ®Ö»îí¥Þ¶Ó©äßðMø!_ÃŸø%gÅ¯x»á×ÄO‹Ú´¾2„E®iÞ"¾Òîìõ&VwŽVò¬"™]I
 
 --- page 16 ---
 
@@ -1224,7 +1269,8 @@ Figure 6: False negative rate (%) for the BX
 2
 0
 using simple
-and inating requests, for dierent sample sizes as a function
+and in
+ating requests, for dierent sample sizes as a function
 of the number of times the term (
 T
 i
@@ -1257,7 +1303,8 @@ Simple (HTML)
 35
 :3 (8
 :5)
-Inated (HTML)
+In
+ated (HTML)
 106 (11)
 303 (21
 :1)
@@ -1278,32 +1325,39 @@ the name of the user is X, whether she has a contact named
 Y, or is a client of bank Z, can be sent as a search query
 for emails sent from X, sent or received from Y, or received
 from the known `no-reply' email address of bank Z.
-Response ination. Similarly to what we did for Bing,
-we inated the search query to its maximal size, which, in
+Response in
+ation. Similarly to what we did for Bing,
+we in
+ated the search query to its maximal size, which, in
 Gmail, is 8KB. In Gmail's basic HTML view [19], the search
 query appears once for each entry in the response; this dra-
-matically inates the HTTP body of a full response over an
+matically in
+ates the HTTP body of a full response over an
 empty response. The default maximal number of entries in a
 response is 50. Although Gmail sends the responses zipped,
 and hence the improvement is not as signicant as in the
 Bing history attack (see Section 3.2), it takes longer to cre-
 ate, zip, and unzip longer responses. A comparison between
-the simple and the inating requests for launching eective
+the simple and the in
+ating requests for launching eective
 timing attacks is discussed in [27].
 4. Compute-Inate XS-Search Attack
-The Response-inate XS-search attack is based on caus-
+The Response-in
+ate XS-search attack is based on caus-
 ing a signicant dierence in the
 length of the response
 due
 to its dependency on the number of terms returned. For
 this dierence to be signicant, the number of terms should
 be substantial. In contrast, in this section, we present
-the Compute-inate XS-search attack, which can eectively
+the Compute-in
+ate XS-search attack, which can eectively
 check in the private data for the existence of records that
 meet specic search criteria -
 even a single record
 . The
-Compute-inate XS-search attack is based on causing a sig-
+Compute-in
+ate XS-search attack is based on causing a sig-
 nicant dierence in the
 time
 required to process the search
@@ -1314,7 +1368,8 @@ amount
 of information. This exploits the fact that the
 time to process queries may vary signicantly, depending on
 specic conditions.
-Specically, the Compute-inate XS-search attack is ap-
+Specically, the Compute-in
+ate XS-search attack is ap-
 plicable for the many web services satisfying the following
 conditions:
 1.
@@ -1409,7 +1464,8 @@ compute' term is using a conjunction of many
 exclude
 terms.
 4.1 Cross-site Existence Queries on Gmail
-To be vulnerable to Compute-inate XS-search attack,
+To be vulnerable to Compute-in
+ate XS-search attack,
 a service must meet the four conditions described above.
 Gmail satises the rst two conditions: it allows cross-site
 queries and supports the conjunction of queries. We now
@@ -1451,7 +1507,8 @@ Early-abort and hard-to-compute evaluation
 fore we evaluated the use of many-
 has not
 query for the
-Compute-inate XS-search attack, we veried two basic
+Compute-in
+ate XS-search attack, we veried two basic
 claims: (1) When appending the
 has not
 operator with many
@@ -1510,7 +1567,8 @@ queries and complex queries on real users gave the same
 indication; see below.
 4.2 Compute-Inate Attack on Gmail: Eval-
 uation
-To evaluate the Compute-Inate Attack, we conducted
+To evaluate the Compute-In
+ate Attack, we conducted
 several experiments for participants using their active Gmail
 account. These were designed with IRB approval. We de-
 scribe here only the rst experiment, which tested the ef-
@@ -1532,7 +1590,8 @@ conducted a similar experiment for detecting a single email
 by its recipient or subject, with dierent users, and received
 similar results; see [27].
 Our content-detection experiment had two goals: (1) show
-that using Compute-inate XS-search attack it is possible
+that using Compute-in
+ate XS-search attack it is possible
 Complex queries
 Simple queries
 Test
@@ -1657,7 +1716,8 @@ BX
 18
 :1
 Table 2: Analyzing false negative (FN) and false positive
-(FP) for Compute-inate XS-search attack, to detect a sen-
+(FP) for Compute-in
+ate XS-search attack, to detect a sen-
 tence that appears only once in Gmail mailbox; complex vs.
 simple queries. See test descriptions in Section 2.2.
 to learn about the existence of a sentence in Gmail account
@@ -1763,8 +1823,6 @@ and
 
 0
 are search terms, then
-
-_
 
 0
 is
@@ -2095,7 +2153,8 @@ phone numbers and credit card numbers.
 Phone numbers. Consider a victim who has her phone
 number in her email signature, as done by many users. The
 attacker can launch an eective XS-search attack relying on
-the Response-inate technique, as the phone number ap-
+the Response-in
+ate technique, as the phone number ap-
 pears in every sent email. This task is even more ecient
 since phone numbers have few common formats, and fur-
 thermore, they are usually broken into well-dened sets of
@@ -2104,7 +2163,8 @@ code, and continue to the next short sequence.
 Credit card numbers
 . Unlike phone numbers, credit card
 numbers do not appear many times in Gmail accounts,
-hence, the Response-inate technique is less eective here;
+hence, the Response-in
+ate technique is less eective here;
 however, with minor adjustments, the ATI algorithm worked
 ne, and found credit card numbers in the Gmail accounts
 of both the authors. Specically, we use the fact that credit
@@ -2163,8 +2223,10 @@ disclosed their names. We evaluated the use of the three al-
 gorithms for detecting keywords that appear in many email
 messages, by identifying the rst and last name of the user
 out of a list of 2000 common names. The attacks used in-
-ating search requests as described in Section 3.3; we used
-inating requests based on the results of subsection 3.3.
+
+ating search requests as described in Section 3.3; we used
+in
+ating requests based on the results of subsection 3.3.
 Participants and process.
 Participants were 78 (paid, in-
 formed and consenting) students, required to have and con-
@@ -2322,10 +2384,12 @@ or when sending too many cross-site queries. Indeed, Google
 requires users to re-authenticate to perform queries on their
 search-history log.
 Websites can block or limit the eectiveness of Response-
-inate XS-search attack, for example by limiting the number
+in
+ate XS-search attack, for example by limiting the number
 of entries returned for a search query or the length of param-
 eters duplicated in the response. It seems more dicult to
-prevent Compute-inate XS-search attack, without increas-
+prevent Compute-in
+ate XS-search attack, without increas-
 ing the response time for benign requests.
 Client-side defenses.
 Several works propose client-side
@@ -2445,11 +2509,6 @@ FN counter = 2
 7:7
 5:1
 
-
-
-
-
-
 FP counter = 1
 9
 5:1
@@ -2478,11 +2537,6 @@ FP counter = 2
 0
 0
 1:3
-
-
-
-
-
 
 Perfect counter
 34:6
@@ -2550,7 +2604,8 @@ Perfect: avg RC
 :2
 64
 :7
-Table 3: Finding two names out of 2000 options by Response-inate XS-search attack with MTI and OMTI, and by running
+Table 3: Finding two names out of 2000 options by Response-in
+ate XS-search attack with MTI and OMTI, and by running
 ATI twice. In bold are the best values per
 sampleSize
 . The maximal value for the FN and FP counters in some run, was 2.

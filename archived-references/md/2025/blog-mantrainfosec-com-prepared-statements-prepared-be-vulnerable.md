@@ -306,19 +306,13 @@ Although our team was initially unaware of this “feature” in the MySQL packa
 
 Contact Us
 
- **
-
 #### Email:
 
 [info [] mantrainfosec [] com](mailto:info [] mantrainfosec [] com)
 
- **
-
 #### Call:
 
 [+44 788 0076 532](tel:+447880076532)
-
- **
 
 #### Location:
 

@@ -73,7 +73,7 @@ David Byrne sent over an interesting proof of concept to use the same res:// att
 
 I’m not sure if this provides additional value over the original res:// attack, but certainly it shows that timing attacks are really very possible for this. The results on my machine were dramatic (over double the time for existing verses non-existing files). Your mileage may vary. Cool trick, nonetheless.
 
-  This entry was posted on Wednesday, July 25th, 2007 at 6:01 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070725/res-timing-attack/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20070725/res-timing-attack/trackback/) from your own site.
+  This entry was posted on Wednesday, July 25th, 2007 at 6:01 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070725/res-timing-attack/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070725/res-timing-attack/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

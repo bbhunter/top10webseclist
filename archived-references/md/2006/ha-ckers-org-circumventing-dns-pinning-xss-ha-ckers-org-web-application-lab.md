@@ -75,7 +75,7 @@ What Martin was able to accomplish was to detect that if the server goes down, i
 
 The only limitations he came up with were that it must be accessable at the IP address, and not at the virtual host level, because it will be requesting a host that does not exist (www.whatever.com) on the internal address. If you can get around that, you now have read/write on any internal host in JavaScript space! That’s an amazing extention of [cross site scripting](http://ha.ckers.org/xss.html) that was never possible before! Great find, Martin!
 
-  This entry was posted on Tuesday, August 15th, 2006 at 10:22 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Tuesday, August 15th, 2006 at 10:22 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

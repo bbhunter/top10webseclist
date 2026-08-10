@@ -147,7 +147,7 @@ K D authored Sep 23, 2021
 | [ setup.py](https://gitlab.com/kostasdrk/xdriver3-open/-/blob/master/setup.py?ref_type=heads)  |  [changing default dirs to /tmp to avoid permission issues on installation](https://gitlab.com/kostasdrk/xdriver3-open/-/commit/4d0bd2ed632261a0c3827d5c3bdccd68ad39d49d)  |  5 years ago  |  |
 | [ setup.sh](https://gitlab.com/kostasdrk/xdriver3-open/-/blob/master/setup.sh?ref_type=heads)  |  [minor](https://gitlab.com/kostasdrk/xdriver3-open/-/commit/0acba00be0e031c9a48b03b7f3970c90edc0513b)  |  5 years ago  |  |
 
-## **General**[]()
+## **General**
 
 XDriver was initially implemented as part of our project:
 
@@ -157,7 +157,7 @@ More information can be found [here](https://cookiehunter.ics.forth.gr/).
 
 If you use XDriver for your research please [cite](https://cookiehunter.ics.forth.gr/data/bibtex.bib) our paper.
 
-## **Overview**[]()
+## **Overview**
 
 This tool was implemented to ease and enhance interaction with websites, as well as to provide a number of auxiliary mechanisms and a series of modules focused on security-related tasks. Some of the main features are:
 
@@ -189,7 +189,7 @@ This tool was implemented to ease and enhance interaction with websites, as well
 
 - **Security policies evaluation** -- Evaluate a series of security mechanisms and return structured, parsable results on their deployment, detected misconfigurations, syntax errors etc. So far the following are supported: `HSTS, CSP, CORS, X-Content-Type-Options, X-XSS-Protection, X-Frame-Options, Expect-CT, Feature-Policy, Referrer-Policy` [(example)](https://gitlab.com/kostasdrk/xdriver3-open/-/tree/master/testing/sec.py) **Acks & disclaimer**: In this version of XDriver, most of the security mechanisms evaluation methods have been implemented by Alex Savvopoulos (besides CORS). They have not been fully tested and evaluated and should be considered **experimental**.
 
-## **Setup**[]()
+## **Setup**
 
 Implemented and tested on Ubuntu 16.04 and 20.04 with python3.8. Should work on other debian-based systems as well.
 

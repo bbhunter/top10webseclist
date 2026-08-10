@@ -61,7 +61,7 @@ page going offline. To read the original, follow the link above.
 This is a post about an old vulnerability that I finally found the time to blog about. It dates back to 2014, but from a technical point of view it is nevertheless interesting: An XML parser that tries to fix structural errors in a document caused a DoS problem.
 
  All previous posts of [this series](http://web-in-security.blogspot.de/search/label/Save%20Your%20Cloud) focused on XSS. This time, we present a vulnerability which is connected another Cloud Management Platform: [OpenNebula](http://opennebula.org/). This Infrastructure-as-a-Service platform started as a research project in 2005. It is [ used by information technology companies](http://opennebula.org/users/featuredusers/) like IBM, Dell and Akamai as well as academic institutions and the European Space Administrations (ESA). By relying on standard Linux tools as far as possible, OpenNebula reaches a high level of customizability and flexibility in hypervisors, storage systems, and network infrastructures. OpenNebula is distributed using the Apache-2 license.
- []()
+ 
 
  OpenNebula offers a broad variety of interfaces to control a cloud. This post focuses on Sunstone, OpenNebula's web interface (see Figure 1).
 

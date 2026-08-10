@@ -73,7 +73,7 @@ In part two of my DNS rebinding diatribe I wanted to talk a little more about [t
 
 A lot of people still don’t get that you don’t need to know people’s usernames and/or passwords to get into their accounts. If you can get (or guess) the credential, that’s good enough. What if the credential were a weak cookie like username=bob or id=1234567? It might be extremely trivial to use DNS rebinding to not only get access to read the login page and perform a traditional brute force attack, but if the format of the credential is known (like in a lot of open source projects) it may be easy to brute force that token. So yes, by getting DNS rebinding and by utilizing brute force you can then fix their session to whatever account you just broke into. And it just keeps getting worse…
 
-  This entry was posted on Tuesday, November 17th, 2009 at 3:07 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Tuesday, November 17th, 2009 at 3:07 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

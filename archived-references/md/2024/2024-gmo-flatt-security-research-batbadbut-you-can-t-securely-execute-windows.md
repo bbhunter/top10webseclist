@@ -69,27 +69,27 @@ April 9, 2024
 
    Table of contents
 
--  [Introduction]()
--  [TL;DR]()
--  [CVSS Score]()
--  [Technical Details]()
+-  Introduction
+-  TL;DR
+-  CVSS Score
+-  Technical Details
 
--  [Root Cause]()
--  [Wrapping `CreateProcess`]()
--  [Parsing rule of `cmd.exe`]()
+-  Root Cause
+-  Wrapping `CreateProcess`
+-  Parsing rule of `cmd.exe`
 
--  [Mitigation]()
+-  Mitigation
 
--  [Escaping double quotes?]()
--  [As a Developer]()
--  [As a User]()
--  [As a Maintainer of the runtime]()
+-  Escaping double quotes?
+-  As a Developer
+-  As a User
+-  As a Maintainer of the runtime
 
--  [Conclusion]()
--  [Appendix]()
+-  Conclusion
+-  Appendix
 
--  [Appendix A: Flowchart to determine if your applications are affected]()
--  [Appendix B: Status of the affected programming languages]()
+-  Appendix A: Flowchart to determine if your applications are affected
+-  Appendix B: Status of the affected programming languages
 
 ## Introduction
 
@@ -128,10 +128,10 @@ Exploitation of these behaviors is possible when the following conditions are sa
 - The application executes a command on Windows
 - The application doesn’t specify the file extension of the command, or the file extension is `.bat` or `.cmd`
 - The command being executed contains user-controlled input as part of the command arguments
-- The runtime of the programming language fails to escape the command arguments for `cmd.exe` properly[1]()
+- The runtime of the programming language fails to escape the command arguments for `cmd.exe` properly1
 
 By exploiting these behaviors, arbitrary command execution might be possible.
- I created a flowchart to determine if your applications are affected by this vulnerability, so please refer to [Appendix A]() if you are unsure whether you are affected or not, and refer to [Appendix B]() for the status of the affected programming languages.
+ I created a flowchart to determine if your applications are affected by this vulnerability, so please refer to Appendix A if you are unsure whether you are affected or not, and refer to Appendix B for the status of the affected programming languages.
 
 ## CVSS Score
 
@@ -170,7 +170,7 @@ While this isn’t a problem itself, the issue arises when the programming langu
 ### Wrapping `CreateProcess`
 
 Most programming languages provide a function to execute a command, and they wrap the `CreateProcess` function to provide a more user-friendly interface.
- For example, the `child_process` module in Node.js[2]() wraps the `CreateProcess` function and provides a way to execute a command with arguments like the following:
+ For example, the `child_process` module in Node.js2 wraps the `CreateProcess` function and provides a way to execute a command with arguments like the following:
 
 ```javascript
 const { spawn } = require('child_process');
@@ -233,7 +233,7 @@ WCHAR* quote_cmd_arg(const WCHAR *source, WCHAR *target) {
 
 ```
 
-Most developers expect that the `spawn` function properly escapes the command arguments, and it’s true in most cases.[3]()
+Most developers expect that the `spawn` function properly escapes the command arguments, and it’s true in most cases.3
 
 However, as I mentioned earlier, the `CreateProcess` function implicitly spawns `cmd.exe` when executing batch files.
  And unfortunately, the `cmd.exe` has different escaping rules compared to the usual escaping mechanism.
@@ -257,10 +257,10 @@ echo "\"&calc.exe"
 
 ```
 
-This is because the command prompt doesn’t use the backslash as an escape character, and uses the caret (`^`) instead.[4]()
+This is because the command prompt doesn’t use the backslash as an escape character, and uses the caret (`^`) instead.4
 
 Back to the `child_process` example, it escapes the double quotes (`"`) in command arguments using a backslash (`\`).
- Due to the escaping rules of `cmd.exe` mentioned above, this escaping is not sufficient when executing the batch file, so the following snippet spawns `calc.exe` even though the argument is separated properly, and the `shell` option[5]() is not enabled:
+ Due to the escaping rules of `cmd.exe` mentioned above, this escaping is not sufficient when executing the batch file, so the following snippet spawns `calc.exe` even though the argument is separated properly, and the `shell` option5 is not enabled:
 
 ```javascript
 const { spawn } = require('child_process');
@@ -275,7 +275,7 @@ Because of this behavior, a malicious command line argument might be able to per
 ### Escaping double quotes?
 
 The problem here is that the double-quoted string is broken by the double quote inside of the string.
- So, it seems that escaping double quotes (`"`) with a caret (`^`) is sufficient to prevent the command injection.[6]()
+ So, it seems that escaping double quotes (`"`) with a caret (`^`) is sufficient to prevent the command injection.6
 
 But in fact, that is not enough to prevent the command injection.
  Surprisingly, the command prompt parses and expands variables (e.g., `%PATH%`) before any other parsing.
@@ -309,7 +309,7 @@ Due to this behavior, escaping double quotes with a caret is insufficient to pre
 
 ### As a Developer
 
-Since not all programming languages patched the issue[1](), you should be careful when executing commands on Windows.
+Since not all programming languages patched the issue1, you should be careful when executing commands on Windows.
 
 As a developer who executes commands on Windows, but doesn’t want to execute batch files, you should always specify the file extension of the command.
  For example, the following code snippet may execute `test.bat` instead of `test.exe` if the user places `test.bat` in the directory included in the `PATH` environment variable:
@@ -328,10 +328,10 @@ cmd := exec.Command("test.exe", "arg1", "arg2")
 
 If you want to execute batch files, and your runtime doesn’t escape the command arguments properly for the batch file, you must escape user-controlled input before using it as command arguments.
 
-Since spaces can’t be escaped properly outside of the double-quoted string[7](), you have to use double quotes to wrap the command arguments.
- However, inside the double-quoted string, `%` can’t be escaped properly[8]().
+Since spaces can’t be escaped properly outside of the double-quoted string7, you have to use double quotes to wrap the command arguments.
+ However, inside the double-quoted string, `%` can’t be escaped properly8.
 
-To solve this situation, the following tricky escaping is required:[9]()
+To solve this situation, the following tricky escaping is required:9
 
 - Disable the automatic escaping that uses the backslash (`\`) provided by the runtime.
 - Apply the following steps to each argument:
@@ -387,36 +387,36 @@ I hope that this article helps you to understand the severity of this issue and 
 
 -
 
-Please refer to the [Appendix B]() for the status of the affected programming languages. [↩︎]()[↩︎]()
+Please refer to the Appendix B for the status of the affected programming languages. ↩︎↩︎
 
 -
 
-As I use Node.js mostly, I’m using it as an example here. However, the issue is not specific to Node.js, and it affects other programming languages as well. [↩︎]()
+As I use Node.js mostly, I’m using it as an example here. However, the issue is not specific to Node.js, and it affects other programming languages as well. ↩︎
 
 -
 
-In fact, many programming languages guarantee that the command arguments are escaped properly, and/or don’t use shell. [↩︎]()
+In fact, many programming languages guarantee that the command arguments are escaped properly, and/or don’t use shell. ↩︎
 
 -
 
-Please note that replacing the backslash with the caret doesn’t escape the double quote properly, and requires further escaping. [↩︎]()
+Please note that replacing the backslash with the caret doesn’t escape the double quote properly, and requires further escaping. ↩︎
 
 -
 
-When the `shell` option is disabled, the `child_process` module doesn’t spawn `cmd.exe` and directly spawns the command instead. However, Windows implicitly spawns `cmd.exe` when executing batch files, so the `shell` option is silently ignored when executing batch files. [↩︎]()
+When the `shell` option is disabled, the `child_process` module doesn’t spawn `cmd.exe` and directly spawns the command instead. However, Windows implicitly spawns `cmd.exe` when executing batch files, so the `shell` option is silently ignored when executing batch files. ↩︎
 
 -
 
-Of course, you need to escape the caret itself. [↩︎]()
+Of course, you need to escape the caret itself. ↩︎
 
 -
 
-When executing `.\\test.bat arg1^ arg2`, `arg1` and `arg2` will be recognized as separate arguments. [↩︎]()
+When executing `.\\test.bat arg1^ arg2`, `arg1` and `arg2` will be recognized as separate arguments. ↩︎
 
 -
 
-`.\\test.bat "100^%"` will be recognized as `100^%` instead of `100%`. [↩︎]()
+`.\\test.bat "100^%"` will be recognized as `100^%` instead of `100%`. ↩︎
 
 -
 
-While the testing shows that this prevents the command injection, I’m still unsure if this escaping is the best way to prevent it, so if you are aware of a better way, please let me know. [↩︎]()
+While the testing shows that this prevents the command injection, I’m still unsure if this escaping is the best way to prevent it, so if you are aware of a better way, please let me know. ↩︎

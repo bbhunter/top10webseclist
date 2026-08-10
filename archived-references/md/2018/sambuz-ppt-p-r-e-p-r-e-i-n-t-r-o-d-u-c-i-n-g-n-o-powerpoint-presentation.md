@@ -58,8 +58,6 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-▶
-
  ![p r e p a r e i n t r o d u c i n g n o v e l e x p l o i](https://c.sambuz.com/910240/p-r-e-p-a-r-e-i-n-t-r-o-d-u-c-i-n-g-n-o-v-e-l-e-x-p-l-o-i-l.webp)
 
   ** Download    Share

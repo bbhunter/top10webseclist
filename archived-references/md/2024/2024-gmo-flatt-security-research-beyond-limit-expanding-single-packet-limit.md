@@ -69,18 +69,18 @@ August 2, 2024
 
    Table of contents
 
--  [Introduction]()
--  [TL;DR]()
--  [Limitation of single-packet attack]()
--  [Fragmentation of IP packet]()
--  [TCP and Sequence Number]()
--  [First Sequence Sync]()
--  [Combining IP fragmentation and First Sequence Sync]()
--  [Limiting factors]()
--  [Demonstration]()
--  [Further Improvements]()
--  [Conclusion]()
--  [Shameless plug]()
+-  Introduction
+-  TL;DR
+-  Limitation of single-packet attack
+-  Fragmentation of IP packet
+-  TCP and Sequence Number
+-  First Sequence Sync
+-  Combining IP fragmentation and First Sequence Sync
+-  Limiting factors
+-  Demonstration
+-  Further Improvements
+-  Conclusion
+-  Shameless plug
 
 ## Introduction
 
@@ -128,7 +128,7 @@ When you send a TCP packet over the Ethernet, the TCP packet is encapsulated in 
 
 ![An image that shows how TCP packet is encapsulated](https://flatt.tech/research/beyond-the-limit-expanding-single-packet-race-condition-with-first-sequence-sync/02.png)
 
-The maximum size of the Ethernet frame is 1,518 bytes including the Ethernet header (14 bytes) and the frame check sequence (4 bytes), so the maximum size of the IP packet that can be encapsulated in a single Ethernet frame is 1,500 bytes.[1]() ![An image that shows the IP packet is limited to 1,500 bytes](https://flatt.tech/research/beyond-the-limit-expanding-single-packet-race-condition-with-first-sequence-sync/03.png)
+The maximum size of the Ethernet frame is 1,518 bytes including the Ethernet header (14 bytes) and the frame check sequence (4 bytes), so the maximum size of the IP packet that can be encapsulated in a single Ethernet frame is 1,500 bytes.1 ![An image that shows the IP packet is limited to 1,500 bytes](https://flatt.tech/research/beyond-the-limit-expanding-single-packet-race-condition-with-first-sequence-sync/03.png)
 
 This is why James mentioned 1,500 bytes as a soft limit of the TCP. But, why the TCP allows the maximum size of 65,535 bytes for the TCP packet even though the IP packet has a limit of 1,500 bytes?
 
@@ -154,7 +154,7 @@ Since the fragmented IP packet won’t be passed to the TCP layer until all the 
 
 ## TCP and Sequence Number
 
-We can now send a TCP packet up to 65,535 bytes[2]() by using IP fragmentation, but it’s still not enough when we want to send a large number of requests simultaneously.
+We can now send a TCP packet up to 65,535 bytes2 by using IP fragmentation, but it’s still not enough when we want to send a large number of requests simultaneously.
 
 Since we are now using the TCP window size fully, we can’t expand the limit further with a single TCP packet, so we need to figure out how to synchronize the multiple TCP packets.
 
@@ -196,7 +196,7 @@ First, the client establishes a TCP connection with the server and opens HTTP/2 
 
 ![An image that shows the client sends the requests except for the last byte](https://flatt.tech/research/beyond-the-limit-expanding-single-packet-race-condition-with-first-sequence-sync/08.png)
 
-Then, the client creates large TCP packets that contain multiple HTTP/2 frames with the last byte of requests and sends the packets to the server using IP fragmentation[3](), except for the TCP packet with the first sequence number.
+Then, the client creates large TCP packets that contain multiple HTTP/2 frames with the last byte of requests and sends the packets to the server using IP fragmentation3, except for the TCP packet with the first sequence number.
  As the server receives the packets out-of-order, the server waits for the final packet before passing the packets to the application.
 
 ![An image that shows the client sends TCP packets with the last byte of requests, but except for the first TCP packet](https://flatt.tech/research/beyond-the-limit-expanding-single-packet-race-condition-with-first-sequence-sync/09.png)
@@ -218,7 +218,7 @@ However, there is another factor that can affect the number of requests that can
 In HTTP/2, the number of streams that can be opened simultaneously is limited by the `SETTINGS_MAX_CONCURRENT_STREAMS` setting.
  For example, if the server has the `SETTINGS_MAX_CONCURRENT_STREAMS` set to 100, the server can process only 100 requests simultaneously in one TCP connection.
 
-This is a critical issue when we try to use the techniques described in this article because we need to send the requests in one TCP connection to use the first sequence sync.[4]()
+This is a critical issue when we try to use the techniques described in this article because we need to send the requests in one TCP connection to use the first sequence sync.4
 
 ![An image that indicates that the client can’t open the streams above the limit](https://flatt.tech/research/beyond-the-limit-expanding-single-packet-race-condition-with-first-sequence-sync/11.png)
 
@@ -233,7 +233,7 @@ That being said, [RFC 9113 defines](https://datatracker.ietf.org/doc/html/rfc911
 
 |  Implementation |  Default `SETTINGS_MAX_CONCURRENT_STREAMS` |   |
 |  nghttp2 |  [4294967295](https://github.com/nghttp2/nghttp2/blob/35a245554ba8df0941b7e8a940eb13ff15eed978/lib/nghttp2_session.h#L107)  |   |
-|  Node.js |  [4294967295](https://nodejs.org/api/http2.html#settings-object) [5]() |   |
+|  Node.js |  [4294967295](https://nodejs.org/api/http2.html#settings-object) 5 |   |
 
 So, the techniques described in this article could be really powerful depending on the HTTP/2 implementation used by the server.
 
@@ -260,7 +260,7 @@ iptables -A OUTPUT -p tcp --tcp-flags RST RST -s [IP] -j DROP
 ```
 
 Firstly, I will synchronize the 10,000 requests using the first sequence sync, and measure the time it takes to send the requests.
- The code that I used for the benchmark is available in the [rc-benchmark](https://github.com/Ry0taK/first-sequence-sync/tree/main/rc-benchmark) folder of the repository.[6]()
+ The code that I used for the benchmark is available in the [rc-benchmark](https://github.com/Ry0taK/first-sequence-sync/tree/main/rc-benchmark) folder of the repository.6
 
 Here is the result of the benchmark:
 
@@ -271,10 +271,10 @@ Here is the result of the benchmark:
 |  Median time between requests |  14221ns |   |
 |  Min time between requests |  220ns |   |
 
-As you can see, I was able to send 10,000 requests in about 166ms.[7]() This is equivalent to 0.0166ms per request, which is significantly fast considering the network latency between the servers is around 250ms.
+As you can see, I was able to send 10,000 requests in about 166ms.7 This is equivalent to 0.0166ms per request, which is significantly fast considering the network latency between the servers is around 250ms.
 
 Next, I will demonstrate the exploitation of the limit-overrun vulnerability in the rate-limiting of the one-time token authentication.
- The code that I used for this demonstration is available in the [rc-pin-bypass](https://github.com/Ry0taK/first-sequence-sync/tree/main/rc-pin-bypass) folder of the repository.[8]()
+ The code that I used for this demonstration is available in the [rc-pin-bypass](https://github.com/Ry0taK/first-sequence-sync/tree/main/rc-pin-bypass) folder of the repository.8
 
 While the target server software limits the maximum authentication attempts to 5 times, the client machine was able to perform 1,000 attempts, bypassing the rate limiting.
  Considering that only about 10 attempts could be made when I tried the same attack with the last byte sync, this is a significantly more reliable and efficient attack.
@@ -309,32 +309,32 @@ If you’re interested in learning more, feel free to reach out to us at [https:
 
 -
 
-Jumbo frame is an exception here, but as it requires all the network devices between the sender and the receiver to support it, we will not consider it in this article. [↩︎]()
+Jumbo frame is an exception here, but as it requires all the network devices between the sender and the receiver to support it, we will not consider it in this article. ↩︎
 
 -
 
-In fact, it depends on the TCP window size set by the server. Please note that the default maximum size of the TCP window size is 65,535 bytes, but RFC 7323 defines the Window Scale Option that allows the maximum size of the TCP window size to be 1 GiB. However, we can’t force the server to use the Window Scale Option, and my testing shows that test environments usually set the TCP window size to around 62,000 ~ 63,000 bytes. [↩︎]()
+In fact, it depends on the TCP window size set by the server. Please note that the default maximum size of the TCP window size is 65,535 bytes, but RFC 7323 defines the Window Scale Option that allows the maximum size of the TCP window size to be 1 GiB. However, we can’t force the server to use the Window Scale Option, and my testing shows that test environments usually set the TCP window size to around 62,000 ~ 63,000 bytes. ↩︎
 
 -
 
-In theory, IP fragmentation shouldn’t be necessary because the client can send the packets out-of-order and synchronize packets as much as we want. However, when I tested the techniques without IP fragmentation, the attack became less reliable, so I’m mentioning IP fragmentation in this article. [↩︎]()
+In theory, IP fragmentation shouldn’t be necessary because the client can send the packets out-of-order and synchronize packets as much as we want. However, when I tested the techniques without IP fragmentation, the attack became less reliable, so I’m mentioning IP fragmentation in this article. ↩︎
 
 -
 
-While it’s true that we can synchronize the requests without the last byte sync technique, the concurrency is still limited by the `SETTINGS_MAX_CONCURRENT_STREAMS` setting. [↩︎]()
+While it’s true that we can synchronize the requests without the last byte sync technique, the concurrency is still limited by the `SETTINGS_MAX_CONCURRENT_STREAMS` setting. ↩︎
 
 -
 
-Node.js uses nghttp2 internally, and it inherits the `SETTINGS_MAX_CONCURRENT_STREAMS` setting from nghttp2. [↩︎]()
+Node.js uses nghttp2 internally, and it inherits the `SETTINGS_MAX_CONCURRENT_STREAMS` setting from nghttp2. ↩︎
 
 -
 
-Please note that I intentionally set the `MaxConcurrentStreams` to 10,000 for this demonstration as Go has 250 as the default value. As I mentioned earlier, the default value of the `MaxConcurrentStreams` is implementation-dependent, and it’s not that unusual to see a large limit in the real world. [↩︎]()
+Please note that I intentionally set the `MaxConcurrentStreams` to 10,000 for this demonstration as Go has 250 as the default value. As I mentioned earlier, the default value of the `MaxConcurrentStreams` is implementation-dependent, and it’s not that unusual to see a large limit in the real world. ↩︎
 
 -
 
-Please note this solely depends on the performance of the target server. When I tested the same attack against the t2.micro instance, the attack took about 500ms to complete. [↩︎]()
+Please note this solely depends on the performance of the target server. When I tested the same attack against the t2.micro instance, the attack took about 500ms to complete. ↩︎
 
 -
 
-This implementation uses 3 3-digit PIN for the one-time token to demonstrate the attack reliably. When I tested the attack with the 4-digit PIN with the same implementation, around 2,000 attempts could be made. So, the attack still works on the 4-digit PIN, but it wasn’t possible to cover the entire PIN space. [↩︎]()
+This implementation uses 3 3-digit PIN for the one-time token to demonstrate the attack reliably. When I tested the attack with the 4-digit PIN with the same implementation, around 2,000 attempts could be made. So, the attack still works on the 4-digit PIN, but it wasn’t possible to cover the entire PIN space. ↩︎

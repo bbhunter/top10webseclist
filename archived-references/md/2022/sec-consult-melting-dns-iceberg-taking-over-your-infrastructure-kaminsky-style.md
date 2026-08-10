@@ -110,8 +110,6 @@ However, not every company exposes a web application, let alone has registration
 
 Though, this would not allow us to test resolvers in internal networks. That’s why we chose another, even easier, method. SPF, DKIM and DMARC are mechanisms for e-mail spam protection that utilize the DNS. Now, we can "exploit" these mechanisms to analyze closed resolvers. "But, how do we do that?", one might ask.
 
-##
-
 ![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2022_10/sec-consult-c-iceberg-adns-fig4.gif)
 
 ## Exploiting Spam Protection

@@ -62,7 +62,7 @@ In this paper, we present the actual risks of stealing user PINs by using mobile
 
 | Original language | English |  |
 | Pages (from-to) | 291–313 |  |
-| Journal | [International Journal of Information Security]() |  |
+| Journal | International Journal of Information Security |  |
 | Volume | 17 |  |
 | Issue number | 3 |  |
 | Early online date | 7 Apr 2017 |  |

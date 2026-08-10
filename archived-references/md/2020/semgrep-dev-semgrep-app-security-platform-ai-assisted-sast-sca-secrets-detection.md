@@ -63,8 +63,6 @@ page going offline. To read the original, follow the link above.
 
 Semgrep App Security Platform | AI-assisted SAST, SCA and Secrets Detection
 
-#
-
 Code Security
  **for Builders**
 
@@ -232,8 +230,6 @@ Kevin Twingstrom
  ![Logo for Acrisure](https://semgrep.dev/assets/logos/acrisure_logo.svg.png)
 
  [ Learn about our metrics and methodology -> ](https://semgrep.dev/docs/semgrep-assistant/metrics)
-
-###
 
 Protect your code with secure guardrails
 

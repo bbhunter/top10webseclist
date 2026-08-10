@@ -139,10 +139,6 @@ Weblog status
 
 powered by vi, bash, cat, grep, sed, and [nb 3.4.2](http://web.archive.org/web/20160425033628/http://nanoblogger.sourceforge.net/)
 
-[]()
-
-[]()
-
 ## samedi 6 février 2016, 20:30:52 (UTC+0100)
 
 ### Deserialization in Perl v5.8
@@ -311,8 +307,6 @@ Or, if you prefer a Burp Suite screenshot:
 PWNED! Feel free to play with the following files: the vulnerable programm [victim](http://web.archive.org/web/20160425033628/http://www.agarri.fr/docs/victim) and the exploit itself [PoC_thaw_perl58.pl](http://web.archive.org/web/20160425033628/http://www.agarri.fr/docs/PoC_thaw_perl58.pl). Please keep in mind that the exploitation path will be different on Perl > 5.8
 
  Posted by Nicolas Grégoire | [ Permanent link](http://web.archive.org/web/20160425033628/http://www.agarri.fr/kom/archives/2016/02/06/deserialization_in_perl_v5_8/index.html)
-
-[]()
 
 ## jeudi 17 décembre 2015, 19:16:50 (UTC+0100)
 
@@ -611,8 +605,6 @@ The full script can be download from [this](http://web.archive.org/web/201604250
 
  Posted by Nicolas Grégoire | [ Permanent link](http://web.archive.org/web/20160425033628/http://www.agarri.fr/kom/archives/2015/12/17/amf_parsing_and_xxe/index.html)
 
-[]()
-
 ## mercredi 15 octobre 2014, 12:04:30 (UTC+0200)
 
 ### Bypassing blacklists based on IPy
@@ -734,8 +726,6 @@ Both the normal and integer formats are correctly considered as 'PRIVATE'. The h
 The bug was reported to IPy's maintainer (Jeff Ferland aka autocracy) in March. No news since then :-( Prezi patched their own filter and awarded me $500. Not a big payout, but the real impact was near null in their setup. Thanks defense in depth mechanisms! Anyway, if you are using IPy, maybe you should take care of these bypasses...
 
  Posted by Nicolas Grégoire | [ Permanent link](http://web.archive.org/web/20160425033628/http://www.agarri.fr/kom/archives/2014/10/15/bypassing_blacklists_based_on_ipy/index.html)
-
-[]()
 
 ## jeudi 11 septembre 2014, 10:35:56 (UTC+0200)
 
@@ -1027,8 +1017,6 @@ Even if I wasn't able to execute my own code on this server, researching Redis w
 
  Posted by Nicolas Grégoire | [ Permanent link](http://web.archive.org/web/20160425033628/http://www.agarri.fr/kom/archives/2014/09/11/trying_to_hack_redis_via_http_requests/index.html)
 
-[]()
-
 ## mercredi 27 novembre 2013, 17:32:42 (UTC+0100)
 
 ### Compromising an unreachable Solr server with CVE-2013-6397
@@ -1254,8 +1242,6 @@ That's all, folks! I hope you enjoyed this short journey into the world of XML h
 
  Posted by Nicolas Grégoire | [ Permanent link](http://web.archive.org/web/20160425033628/http://www.agarri.fr/kom/archives/2013/11/27/compromising_an_unreachable_solr_server_with_cve-2013-6397/index.html)
 
-[]()
-
 ## mardi 22 octobre 2013, 22:19:58 (UTC+0200)
 
 ### Exploiting WPAD with Burp Suite and the "HTTP Injector" extension
@@ -1317,8 +1303,6 @@ By default, the prank mode is activated. In this mode, a src attribute pointing 
 If you want more information, the code is [here](http://web.archive.org/web/20160425033628/http://www.agarri.fr/docs/HTTPInjector.py) and a copy of my slides (in French, but there's plenty of pictures) is [here](http://web.archive.org/web/20160425033628/http://www.agarri.fr/docs/asfws2013-gregoire-burp-v1.3.pdf). Enjoy!
 
  Posted by Nicolas Grégoire | [ Permanent link](http://web.archive.org/web/20160425033628/http://www.agarri.fr/kom/archives/2013/10/22/exploiting_wpad_with_burp_suite_and_the_http_injector_extension/index.html)
-
-[]()
 
 ## lundi 25 février 2013, 17:26:37 (UTC+0100)
 
@@ -1711,8 +1695,6 @@ I hope that you enjoyed this journey inside the little known world of XSLT parse
 
  Posted by Nicolas Grégoire | [ Permanent link](http://web.archive.org/web/20160425033628/http://www.agarri.fr/kom/archives/2013/02/25/mutation-based_fuzzing_of_xslt_engines/index.html)
 
-[]()
-
 ## lundi 26 novembre 2012, 17:00:51 (UTC+0100)
 
 ### ZeroNights 2012: Opinions and links
@@ -1776,8 +1758,6 @@ Workshops:
 And many thanks to those who personally took care of myself during this trip and made it so enjoyable: Maria, Nikita, Dimitry, Alexey, ...
 
  Posted by Nicolas Grégoire | [ Permanent link](http://web.archive.org/web/20160425033628/http://www.agarri.fr/kom/archives/2012/11/26/zeronights_2012_opinions_and_links/index.html)
-
-[]()
 
 ## mardi 28 août 2012, 00:32:18 (UTC+0200)
 
@@ -1976,8 +1956,6 @@ CVE-2012-3488 (abuse of a libxslt feature):
  - August 2012: Release of patched versions
 
  Posted by Nicolas Grégoire | [ Permanent link](http://web.archive.org/web/20160425033628/http://www.agarri.fr/kom/archives/2012/08/28/all_your_postgresql_databases_are_belong_to_us/index.html)
-
-[]()
 
 ## lundi 2 juillet 2012, 19:19:36 (UTC+0200)
 

@@ -138,7 +138,7 @@ Account Takeover for periscope.tv
 
 changed the status to ****Needs more info**.
 
-[February 21, 2018, 1:30am UTC]()
+February 21, 2018, 1:30am UTC
 
 Thank you for your report.
 
@@ -168,7 +168,7 @@ Thank you for thinking of Twitter security.
 
 changed the status to ****New**.
 
-Updated [August 31, 2018, 5:35pm UTC]()
+Updated August 31, 2018, 5:35pm UTC
 
 There are some difference between my step to reproduce and yours, not sure if they are important or not, but I will share anyway.
 
@@ -192,7 +192,7 @@ I made a video to show I confirmed takeover is possible.
 
 .
 
-[February 21, 2018, 11:29pm UTC]()
+February 21, 2018, 11:29pm UTC
 
 Thanks for the followup.
 
@@ -210,7 +210,7 @@ Thank you for thinking of Twitter security.
 
 .
 
-[February 21, 2018, 11:30pm UTC]()
+February 21, 2018, 11:30pm UTC
 
 Thanks!
 
@@ -224,7 +224,7 @@ Thanks!
 
 changed the status to ****Triaged**.
 
-[February 22, 2018, 12:09am UTC]()
+February 22, 2018, 12:09am UTC
 
 Thank you for your report. We believe it may be a valid security issue and will investigate it further. It could take some time to find and update the root cause for an issue, so we thank you for your patience.
 
@@ -240,7 +240,7 @@ Thank you for helping keep Twitter secure!
 
 .
 
-[February 22, 2018, 12:25am UTC]()
+February 22, 2018, 12:25am UTC
 
 nice pro pic, you make me want to change mine lol
 
@@ -254,7 +254,7 @@ nice pro pic, you make me want to change mine lol
 
 .
 
-[February 22, 2018, 12:39am UTC]()
+February 22, 2018, 12:39am UTC
 
 Thanks mate :-)
 
@@ -268,7 +268,7 @@ Thanks mate :-)
 
 rewarded [ngalog](https://hackerone.com/ngalog) with a bounty.
 
-[February 23, 2018, 8:40pm UTC]()
+February 23, 2018, 8:40pm UTC
 
 Thanks again. As mentioned we’ll keep you updated as we investigate further. As a reminder, please remember to keep the details of this report private until we have fully investigated and addressed the issue.
 
@@ -282,7 +282,7 @@ Thanks again. As mentioned we’ll keep you updated as we investigate further. A
 
 .
 
-[February 26, 2018, 5:48pm UTC]()
+February 26, 2018, 5:48pm UTC
 
 We've deployed a fix that should address the issue. Can you please confirm?
 
@@ -298,7 +298,7 @@ Thanks for thinking of Twitter security!
 
 .
 
-[February 27, 2018, 8:58am UTC]()
+February 27, 2018, 8:58am UTC
 
 Unless someone beat the regex, I think the fix is good
 
@@ -312,7 +312,7 @@ Unless someone beat the regex, I think the fix is good
 
 closed the report and changed the status to ****Resolved**.
 
-[March 2, 2018, 1:44am UTC]()
+March 2, 2018, 1:44am UTC
 
 We consider this issue to be fixed now.
 
@@ -322,14 +322,14 @@ Thank you for helping keep Twitter secure!
 
 requested to disclose this report.
 
-[August 31, 2018, 5:32am UTC]()
+August 31, 2018, 5:32am UTC
 
 [asayler](https://hackerone.com/asayler)
 
 agreed to disclose this report.
 
-[September 6, 2018, 3:37pm UTC]()
+September 6, 2018, 3:37pm UTC
 
 This report has been disclosed.
 
-[September 6, 2018, 3:37pm UTC]()
+September 6, 2018, 3:37pm UTC

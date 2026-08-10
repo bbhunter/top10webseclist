@@ -64,13 +64,13 @@ We structured this blog post series into three parts according to the [research 
 
 ## Overview
 
-#### [Part I: Single Sign-On Protocols in the Wild]()
+#### Part I: Single Sign-On Protocols in the Wild
 
 Although previous work uncovered various security flaws in SSO, it did not work out uniform protocol descriptions of real-world SSO implementations. We summarize our in-depth analyses of Apple, Google, and Facebook SSO. We also refer to the sections of the [thesis](https://www.nds.ruhr-uni-bochum.de/media/nds/arbeiten/2020/10/29/Masterarbeit_Louis_Jannett_Security_and_Privacy_of_Social_Logins.pdf#page=61) that provide more detailed insights into the protocol flows and messages.
 
-- [Identity Provider: Apple]()
-- [Identity Provider: Google]()
-- [Identity Provider: Facebook]()
+- Identity Provider: Apple
+- Identity Provider: Google
+- Identity Provider: Facebook
 
 #### [Part II: PostMessage Security in Single Sign-On ](https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part2.html)
 
@@ -80,8 +80,6 @@ It turned out that the postMessage API is commonly used in real-world SSO implem
 ](https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part3.html)
 
 Identity Providers (IdPs) use "zero-click" authentication flows to automatically sign in the user on the Service Provider (SP) once it is logged in on the IdP and has consented. We show that these flows can harm user privacy and enable new targeted deanonymization attacks of the user's identity.
-
-[]()
 
 ## Single Sign-On Protocols in the Wild
 

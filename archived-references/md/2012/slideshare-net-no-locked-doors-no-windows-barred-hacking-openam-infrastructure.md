@@ -130,8 +130,6 @@ Loading in...5
 
   [ Follow ](https://web.archive.org/web/20150110195738/http://www.slideshare.net/signup?login_source=slideview.popup.follow&from=addcontact&from_source=http%3A%2F%2Fwww.slideshare.net%2Fandrewpetukhov%2Fno-locked-doors-no-windows-barred-hacking-openam-infrastructure%2F11)
 
- **
-
  Uploaded on Nov 19, 2012
 
  One of the main functional components of enterprise applications and Internet portals is an authentication and access control system (AuthC/Z). In this presentation, we describe a popular access … **

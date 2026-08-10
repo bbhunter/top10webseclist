@@ -69,4 +69,3 @@ I think it was [RSnake](http://ha.ckers.org/) who found this first, but the bloc
 
 I believe this technique could be used to improve [JavaScript Port Scanning](http://www.whitehatsec.com/home/resources/presentations/files/javascript_malware.pdf), where we’re currently only scanning horizontally for web servers (80/443). Instead we may be able to perform vertical port scans on the remaining ports and bypass the imposed restrictions. Perhaps also useful for the[ Browser Port Scanning without JavaScript](http://jeremiahgrossman.blogspot.com/2006/11/browser-port-scanning-without.html) technique.
 
-###

@@ -115,7 +115,7 @@ So i fell asleep last night and didn't finish the encoding script as i assumed i
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -136,7 +136,7 @@ One problem though: any site with embedded script like for(i=0;i<10;i++) gets ch
  Don't forget our IRC: irc://irc.irchighway.net/#slackers
  -[WhiteAcid](http://www.whiteacid.org) - your friendly, very lazy, web developer
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -152,7 +152,7 @@ because of how UTF7 encoding works.. any special characters - i.e. not
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -180,7 +180,7 @@ Date: November 17, 2006 09:09PM
 
  Edited 2 time(s). Last edit at 11/17/2006 09:14PM by br0ken.
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -204,7 +204,7 @@ ya, it froze ie7 once or twice for me as well.. theres alot of ways to freeze a 
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -214,7 +214,7 @@ Date: November 18, 2006 07:41AM
 
 Though, excellent find! whish i had more time on my hands to look at it more closely.
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -226,7 +226,7 @@ Nevermind
 
  Edited 1 time(s). Last edit at 12/12/2006 08:14AM by ChristPuncher.
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -253,7 +253,7 @@ Over the last few hours alone 11 Google employees have read the article, Maluc:
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -265,7 +265,7 @@ Fixed.
 
  Edited 1 time(s). Last edit at 12/12/2006 08:15AM by ChristPuncher.
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -284,7 +284,7 @@ wow, probably got put on some google memo.. i'm interested to see how quickly th
 
  Edited 1 time(s). Last edit at 11/29/2006 07:50AM by maluc.
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -297,7 +297,7 @@ http://www.nist.org/news.php?extend.184
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -310,7 +310,7 @@ http://news.zdnet.com/2102-1009_22-6138744.html We weren't mentioned in the arti
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -323,7 +323,7 @@ http://news.com.com/2100-1002_3-6138744.html?part=rss&tag=2547-1_3-0-20&subj=new
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -335,7 +335,7 @@ lol, i like how nist links to a random mortgage agent http://ha.ckers.com
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -347,7 +347,7 @@ Next time I'm in vegas I should call DARIN FERRARO, set up an appointment to see
 
  -id
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -360,7 +360,7 @@ lol, you should.. would be a probably inexpensive way to get it
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -375,7 +375,7 @@ I did pm some with this but they haven't replied and its been enough time. perha
  ----------
  'Just because you got the bacon, lettuce, and tomato don't mean I'm gonna give you my toast.'
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -397,7 +397,7 @@ as i said in the first post.. google.com is not affected because they sanitize a
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -418,7 +418,7 @@ hmmm,
 
  Edited 1 time(s). Last edit at 11/28/2006 11:37PM by digi7al64.
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -432,7 +432,7 @@ Maluc, is there a way to circumvent this in "normal" sites? i can image by just 
 
  Edited 2 time(s). Last edit at 11/29/2006 07:08AM by jungsonn.
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -457,7 +457,7 @@ the meta tag..  <meta http-equiv="Content-Type" content="text/html; charset=utf-
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -467,7 +467,7 @@ Date: November 29, 2006 02:11PM
 
 Thanx maluc, that's much info to read.
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -478,7 +478,7 @@ Date: December 01, 2006 06:13PM
 http://www.us-cert.gov/current/#gleaplnvl
  http://digg.com/security/Homeland_Security_Vulnerability_in_Google_Search_Appliance_and_Google_Mini
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -491,7 +491,7 @@ Interesting... I guess CERT didn't feel like mentioning your name Maluc. Maybe y
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -503,7 +503,7 @@ they are "aware"
 
  :)
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -519,7 +519,7 @@ lol.. well it seems like anything short of arbitrary code execution isn't enough
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -534,7 +534,7 @@ John Herron sent this over: http://www.kb.cert.org/vuls/id/989144
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -547,7 +547,7 @@ And here: http://secunia.com/advisories/23239/
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -561,7 +561,7 @@ woot, my first entry into cert :3
 
  -maluc
 
- []()
+ 
 
 **Re: Widespread XSS for Google Search Appliance**
 

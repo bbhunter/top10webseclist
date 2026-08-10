@@ -75,7 +75,7 @@ page going offline. To read the original, follow the link above.
  However, this way of using the vector requires significant effort from a user and **is pretty difficult to exploit** in real world situation (there's some clicking and dragging involved). Also, it will stop working once Mozilla [disallows cross origin drag & dropping](https://bugzilla.mozilla.org/show_bug.cgi?id=605991).
 
  I've found a neat way to do cross-origin content extraction that might be more suitable for some classes of websites. Ladies and gentleman, let me present **Fake Captcha**:
- []()
+ 
 
 ##  No more drag
 

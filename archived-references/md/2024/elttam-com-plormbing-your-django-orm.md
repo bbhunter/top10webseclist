@@ -81,11 +81,7 @@ Django
 
 web
 
-[
-
 TOC Element
-
-]()
 
 ## Introduction
 

@@ -71,7 +71,7 @@ page going offline. To read the original, follow the link above.
 - with arbitrary filename
 - with arbitrary content
 - without user interaction
-- **.. to another domain.**[]()
+- **.. to another domain.**
 
  This last point is crucial. Before CORS, the attacker might forge a file upload request with Javascript, but he could only upload it to the same domain (so XSS in a victim site was required) - now he can do it from anywhere.
  *Disclaimer: *Don't expect a miracle that will exploit every website dealing with file upload. Described method is not likely to be exploited in the wild as it requires the victim application to be vulnerable in a specific way. It's rather a proof of concept of how bad application turns into terrible when HTML5 arrives.**Update: **now it's much more [closer to miracle](http://blog.kotowicz.net/2011/05/cross-domain-arbitrary-file-upload.html)

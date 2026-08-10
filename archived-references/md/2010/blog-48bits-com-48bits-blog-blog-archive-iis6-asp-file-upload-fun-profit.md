@@ -228,4 +228,4 @@ La solución va enfocada a dos roles diferentes:
 
 -
 
-[Vista previa]()
+Vista previa

@@ -692,8 +692,6 @@ Every “sandbox” here is the same job under different names: block dangerous 
 - Attacker's code runs here
 - uid 0 · no seccomp · full host
 
-→
-
 **PHASE 2 · THE REAL SANDBOX ACTIVATES**
 
 - seccomp + chroot + setuid / V8 isolate
@@ -982,8 +980,6 @@ Tags: Apache Airflow · Python · CVE-2026-30898
       bash_command="echo {{ dag_run.conf['msg'] }}",
     )  ← renders trigger-time conf
 
-→
-
 **2 · PoC · trigger the DAG**
 
     POST /api/v1/dags/notify/dagRuns
@@ -1041,9 +1037,7 @@ Tags: Kestra · Java
 **interpreter**
 
     Property<List<String>> · dynamic Pebble
-        ↓
     ProcessBuilder.command() · no validation
-        ↓
     host exec, no shell needed
 
     interpreter: ["/usr/bin/python3","-c",
@@ -1054,7 +1048,6 @@ Tags: Kestra · Java
     webhook body (unauth)
         ↓ Pebble render
     Collectors.joining concat
-        ↓
     /bin/sh -c single string
 
     beforeCommands: ["echo {{ trigger.body.command }}"]
@@ -1080,8 +1073,6 @@ Tags: Kestra · Java
       - type: scripts.shell.Commands
         beforeCommands:
           - "echo {{ trigger.body.command }}"  ← Pebble sink
-
-→
 
 **2 · PoC · unauthenticated webhook**
 

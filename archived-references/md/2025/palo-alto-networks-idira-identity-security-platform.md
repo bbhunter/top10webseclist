@@ -82,15 +82,11 @@ Trusted by
 
 [![Aflac logo](https://www.paloaltonetworks.com/content/dam/pan/en_US/images/idira/customers/aflac-logo.svg)]()[![Panasonic logo](https://www.paloaltonetworks.com/content/dam/pan/en_US/images/idira/customers/Panasonic.svg)]()[![Carnival Corporation logo](https://www.paloaltonetworks.com/content/dam/pan/en_US/images/customers/carnival-corporation/carnival-logo.svg)]()[![Transgourmet logo](https://www.paloaltonetworks.com/content/dam/pan/en_US/images/idira/customers/transgourmet-logo.svg)]()[![Equinix logo](https://www.paloaltonetworks.com/content/dam/pan/en_US/images/idira/customers/equinix-logo-white.svg)]()
 
-[]()
-
 Overview
 
 ## One platform to Secure Every Identity
 
 Identity is the control plane for the AI enterprise. Introducing Idira®, the only platform that seamlessly integrates modern privilege access management (PAM), machine and agentic identity security capabilities.
-
-[]()
 
 Challenges
 
@@ -130,8 +126,6 @@ Idira disrupts the status quo with modern PAM extending privilege control to eve
 
 [Learn more **](https://www.paloaltonetworks.com/idira/human)
 
-[]()
-
 Why Platformize
 
 ##  The identity market is fragmented, but your
@@ -151,15 +145,11 @@ Learn more about the platform advantage
 
 [ Get the guide **](https://www.paloaltonetworks.com/idira/identity-security-guide)
 
-[]()
-
 How it works
 
 ##  The Identity Security Control Plane
 
 Idira secures every identity with a unified control plane that discovers risk, applies privilege dynamically and governs the full lifecycle from first access to final session.
-
-[]()
 
 Solutions
 
@@ -184,8 +174,6 @@ Secure every machine identity — from secrets to workloads — with one unified
 Discover, control and govern agentic identities at scale to accelerate AI innovation.
 
 [Learn more **](https://www.paloaltonetworks.com/idira/agentic)
-
-[]()
 
 TRUSTED BY THE BEST
 
@@ -283,8 +271,6 @@ Identity Threat Detection & Response (ITDR)
 
 2025 Frost Radar™. Key & Secrets Management
 
-[]()
-
 ## See Idira in Action
 
 See how Idira secures human, machine and agentic identities at enterprise scale. Reduce identity risk without slowing the business.
@@ -350,8 +336,6 @@ Buyer’s Guide
 The Executive Guide to Identity Security Platforms
 
 ](https://www.paloaltonetworks.com/idira/identity-security-guide)
-
-[]()
 
 FAQ
 

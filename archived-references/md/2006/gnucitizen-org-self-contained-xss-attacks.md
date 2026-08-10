@@ -70,7 +70,7 @@ The essence of all Cross-site scripting (XSS) attacks is "unsanitized verbosity"
 
 XSS attacks can be persistent and non-persistent. Persistent XSS is more dangerous since it allow attackers to control exploited clients for longer. On the other hand non-persistent XSS is considered less dangerous although it has been widely used in many phishing attempts.
 
-In this article I am planning to introduce you to some of my findings around a new attack vector which is of type non-persistent XSS but a lot more dangerous than the persistent one. This method can be used to successfully bypass some mail filters, XSS filters, application firewalls and sanitization functions. In fact if you are previewing this post with an RSS reader that is vulnerable you may try clicking on the following [link]() which will result in a harmless greeting alert box.
+In this article I am planning to introduce you to some of my findings around a new attack vector which is of type non-persistent XSS but a lot more dangerous than the persistent one. This method can be used to successfully bypass some mail filters, XSS filters, application firewalls and sanitization functions. In fact if you are previewing this post with an RSS reader that is vulnerable you may try clicking on the following link which will result in a harmless greeting alert box.
 
 Some of you might be familiar with this attack vector; this subject has been covered very vaguely in the past and none of its full potentials has been explored. The impact of this attack is much bigger today and could affect many web applications.
 

@@ -64,12 +64,12 @@ page going offline. To read the original, follow the link above.
 
 #### In this post
 
-- [Attempt 1 - Request Handling and REST Mappings]()
-- [Attempt 2 - CFML Expression Interpreter, Cookies and Sessions.]()
-- [Attempt 3 - Variable Interpreter, Functions and Mura CMS]()
-- [Vulnerability Detection]()
-- [Applying patch]()
-- [Conclusion]()
+- Attempt 1 - Request Handling and REST Mappings
+- Attempt 2 - CFML Expression Interpreter, Cookies and Sessions.
+- Attempt 3 - Variable Interpreter, Functions and Mura CMS
+- Vulnerability Detection
+- Applying patch
+- Conclusion
 
 #### Authors
 

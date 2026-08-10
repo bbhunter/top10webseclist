@@ -71,7 +71,7 @@ ha.ckers.org web application security lab - Archive » Stealing Mouse Clicks for
 
 [I wrote a sample code off of one of those annoying cursor following scripts to show that you can force text in a div (what could be an iframe to the banner ad) to be placed immediately below the image](http://ha.ckers.org/weird/followmouse.html). What I haven’t shown is that the onclick event handler can be used to make the div appear at the right moment, or that you can make it semi-transparent or any of the other fun tricks. But this proof of concept proves that iframes are not really a particularly good way of protecting from click events. Banner advertisers beware!
 
-  This entry was posted on Tuesday, January 16th, 2007 at 5:55 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [Random Security](http://ha.ckers.org/blog/category/random-security/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070116/stealing-mouse-clicks-for-banner-fraud/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20070116/stealing-mouse-clicks-for-banner-fraud/trackback/) from your own site.
+  This entry was posted on Tuesday, January 16th, 2007 at 5:55 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [Random Security](http://ha.ckers.org/blog/category/random-security/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070116/stealing-mouse-clicks-for-banner-fraud/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070116/stealing-mouse-clicks-for-banner-fraud/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

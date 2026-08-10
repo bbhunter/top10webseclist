@@ -84,7 +84,7 @@ Authors:[Zengrui Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+Z
  From: Zengrui Liu [[view email](https://arxiv.org/show-email/18eecf09/2110.10129)]
  **[v1]** Tue, 19 Oct 2021 17:42:11 UTC (24,646 KB)
 
- []() Full-text links:
+  Full-text links:
 
 ## Access Paper:
 
@@ -210,4 +210,4 @@ Both individuals and organizations that work with arXivLabs have embraced and ac
 
 Have an idea for a project that will add value for arXiv's community? [**Learn more about arXivLabs**](https://info.arxiv.org/labs/index.html).
 
- [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/2110.10129) | [Disable MathJax]() ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))
+ [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/2110.10129) | Disable MathJax ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))

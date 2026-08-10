@@ -89,7 +89,7 @@ hi, i'm daniel. i'm a 15-year-old with some programming experience and i do a li
 
 ## say hello to zendesk
 
-[ ]()
+ 
 
 If you've spent some time online, you’ve probably come across Zendesk.
 
@@ -99,7 +99,7 @@ Personally, I’ve always found it surprising that these massive companies, wort
 
 ## your weakest link
 
-[ ]()
+ 
 
 As the saying goes, “You’re only as strong as your weakest link.” Since Zendesk is just seen as a basic ticketing tool, companies often set it up without much thought. The most common setup I've seen is is forwarding all emails from `support@company.com` to Zendesk.
 
@@ -107,7 +107,7 @@ Why is that dangerous? Many companies use their @company.com domain for Single S
 
 ## email spoofing
 
-[ ]()
+ 
 
 At the beginning of the year, I discovered a serious vulnerability in Zendesk that allowed attackers to read customer support tickets from any company using Zendesk. All they had to do was sent a crafted email to a Support email handled by Zendesk. The shocking part? Zendesk didn’t seem to care.
 
@@ -129,7 +129,7 @@ Bug Prerequisites:
 
 ## "out of scope," said no attacker ever
 
-[ ]()
+ 
 
 As soon as I discovered this vulnerability, I reported it through Zendesk’s bug bounty program, fully expecting it to be taken seriously and fixed quickly. A week later, I was hit with a disappointing response: [![image](https://private-user-images.githubusercontent.com/60828015/375600604-ac8f16ef-97a5-4519-a6fd-d49c0ac0c7fe.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODYyMzgyMzUsIm5iZiI6MTc4NjIzNzkzNSwicGF0aCI6Ii82MDgyODAxNS8zNzU2MDA2MDQtYWM4ZjE2ZWYtOTdhNS00NTE5LWE2ZmQtZDQ5YzBhYzBjN2ZlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA4MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwODA5VDAxMTIxNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTAyNTY5NjMwNDc2YTFhMTgwOWU0ZTRjODFiNjdkNjhjMzdmNDY2OWUyYjMxODVkODk5ZGY2MGRlZGU1ODY1MWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.b-DxBgc-piblst8e_wWIvMN9lC_9-8Pn7LRmHoiltfE)](https://private-user-images.githubusercontent.com/60828015/375600604-ac8f16ef-97a5-4519-a6fd-d49c0ac0c7fe.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODYyMzgyMzUsIm5iZiI6MTc4NjIzNzkzNSwicGF0aCI6Ii82MDgyODAxNS8zNzU2MDA2MDQtYWM4ZjE2ZWYtOTdhNS00NTE5LWE2ZmQtZDQ5YzBhYzBjN2ZlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA4MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwODA5VDAxMTIxNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTAyNTY5NjMwNDc2YTFhMTgwOWU0ZTRjODFiNjdkNjhjMzdmNDY2OWUyYjMxODVkODk5ZGY2MGRlZGU1ODY1MWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.b-DxBgc-piblst8e_wWIvMN9lC_9-8Pn7LRmHoiltfE)
 
@@ -143,7 +143,7 @@ Zendesk refused to reconsider. Despite the security risk, they wouldn’t act on
 
 ## escalating this to a full Slack takeover
 
-[ ]()
+ 
 
 I could have reported the email spoofing bug to individual companies that were affected by it, as it was possible to patch individual instances by disabling email collaboration, prevent attackers from adding themselves to tickets. But I wanted to make a bigger impact.
 
@@ -153,7 +153,7 @@ I realized that I could replicate his exploit using my bug, but with a few chall
 
 ### Enter OAuth
 
-[ ]()
+ 
 
 After his disclosure (this was years ago!), Slack changed their email verification system to include a random token in email addresses.
 
@@ -175,7 +175,7 @@ Apple didn't do this though, Apple sent verification emails from `appleid@` addr
 
 ## reproduction steps, apple -> zendesk -> slack
 
-[ ]()
+ 
 
 The steps to execute the attack now were simple:
 
@@ -218,7 +218,7 @@ I replicated this 6-step reproduction steps across hundreds of vulnerable Zendes
 
 ## aftermath
 
-[ ]()
+ 
 
 I spent about a week reporting the vulnerability to individual companies, some of them took immediate action and patched their instances, while others argued that it was a Zendesk issue. Then, something interesting happened—a comment appeared on my original HackerOne report:
 
@@ -232,7 +232,7 @@ I provided the proof of concept for the Slack vulnerability, and they confirmed 
 
 ## bounties
 
-[ ]()
+ 
 
 Once companies vulnerable to this were alerted to the issue, many of them quickly disabled Zendesk’s email collaboration feature to protect their instances. Over the course of my reporting, I earned more than $50,000 in bounties from individual companies on HackerOne and other platforms.
 
@@ -240,7 +240,7 @@ Unsurprisingly, Zendesk didn’t come out of this looking good. At least one or 
 
 ## zendesk's fix (and my $0 bounty)
 
-[ ]()
+ 
 
 On July 2, 2024—two months after I submitted the report—Zendesk finally confirmed that they had fixed the issue. Here’s a statement from their Offensive Security Leader:
 
@@ -255,7 +255,7 @@ Despite fixing the issue, Zendesk ultimately chose not to award a bounty for my 
 
 ## conclusion
 
-[ ]()
+ 
 
 What started as a small email bug turned into an exploit that allowed me to infiltrate the internal systems of some of the world’s largest companies. While Zendesk eventually fixed the vulnerability, the journey to get there was a frustrating mix of rejections, slow responses, and ultimately no recognition for the report. But that’s the reality of bug hunting—sometimes you win, sometimes you don’t.
 
@@ -263,6 +263,6 @@ If you enjoyed this write-up and want to stay updated on more of my bug hunting 
 
 read next? [how I stumbled upon a Discord server and left with a $4000 bounty](https://x.com/hackermondev/status/1816625357052588539)
 
- []()
+ 
 
  [Sign up for free](https://gist.github.com/join?source=comment-gist) **to join this conversation on GitHub**. Already have an account? [Sign in to comment](https://gist.github.com/login?return_to=https%3A%2F%2Fgist.github.com%2Fhackermondev%2F68ec8ed145fcee49d2f5e2b9d2cf2e52)

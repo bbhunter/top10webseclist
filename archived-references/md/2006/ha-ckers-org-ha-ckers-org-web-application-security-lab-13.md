@@ -125,7 +125,7 @@ The one that I think is the most interesting is actually Hi5 (even though this i
 
 So, in review: Locating that the site is there in the first place using [Jeremiah’s JavaScript intranet port scanner](http://ha.ckers.org/blog/20060802/javascript-port-scanners/) and then using the DNS pinning attack to read the page itself pretty much seals the deal.
 
-  This entry was posted on Friday, September 8th, 2006 at 8:44 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20060908/dns-pinning-just-got-worse/feed/) feed. You can [leave a response](), or [trackback](http://ha.ckers.org/blog/20060908/dns-pinning-just-got-worse/trackback/) from your own site.
+  This entry was posted on Friday, September 8th, 2006 at 8:44 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20060908/dns-pinning-just-got-worse/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20060908/dns-pinning-just-got-worse/trackback/) from your own site.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

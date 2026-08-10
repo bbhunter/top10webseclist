@@ -60,7 +60,54 @@ def run(root, config, manifest, store, curated_hashes=None):
     findings.extend(_check_store(manifest, store))
     findings.extend(check_published_attribution(root, config))
     findings.extend(_check_translations(manifest, store))
+    findings.extend(_check_pdfs_are_current(manifest, config))
     return findings
+
+
+def _check_pdfs_are_current(manifest, config=None):
+    """A published PDF must reflect the inputs it was printed from.
+
+    `papers`, `images` and a fix to the converter itself all change what a PDF
+    SHOULD contain without touching the file, and so does a repair to the
+    Markdown. Nothing else notices: the PDF exists, the manifest records it, and
+    the website serves a document that no longer matches its own archive. The
+    gate is the thing that remembers to reprint it.
+    """
+    from refslib import indexer, makepdf
+
+    # THE SAME REFERENCES `pdf` WOULD SELECT, or the gate asks for work that
+    # command will never do: a talk is skipped as a video and a metadata-only
+    # row has no document to print, and twelve of them sat in this warning with
+    # nothing anybody could do about it.
+    skip_kinds = set(((config or {}).get("pdf") or {}).get("skip_kinds")
+                     or ["video"])
+
+    stale = []
+    for key, entry in (manifest.data.get("urls") or {}).items():
+        printed = (entry.get("steps") or {}).get("pdf") or {}
+        if printed.get("result") not in ("rendered", "copied"):
+            continue
+        if (entry.get("kind") or "") in skip_kinds:
+            continue
+        if not indexer.has_document(entry):
+            continue
+        if (entry.get("paper") or {}).get("sha256") and printed.get("source") != "linked-paper":
+            stale.append(entry.get("slug") or key)
+            continue
+        if printed.get("source") != "markdown":
+            continue
+        if (printed.get("renderer") or 1) < makepdf.RENDERER:
+            stale.append(entry.get("slug") or key)
+            continue
+        images_at = ((entry.get("steps") or {}).get("images") or {}).get("utc") or ""
+        if images_at and images_at > (printed.get("utc") or ""):
+            stale.append(entry.get("slug") or key)
+    if not stale:
+        return []
+    return [Finding(
+        "warn", "PDFs older than their inputs",
+        "%d PDF(s) were printed before their paper or figures were preserved, "
+        "e.g. %s. Run 'refs.py pdf --stale --force'." % (len(stale), stale[0]))]
 
 
 def _check_translations(manifest, store):
@@ -71,6 +118,12 @@ def _check_translations(manifest, store):
     finished: a file with frontmatter, attribution and content. Only a reader who
     cannot read the content finds out, long after the run. So the gate asks the
     question every time rather than trusting whoever ran the pipeline to notice.
+
+    IT ASKS THE SAME QUESTION THE PIPELINE ANSWERS. Asking `has_foreign_prose`
+    while `translate` builds a pair on `warrants_translation` made the gate
+    demand work the pipeline had correctly decided not to do: every English
+    write-up quoting a Chinese error message would be reported as untranslated,
+    for ever, with nothing anyone could do about it.
     """
     from refslib import translate
 
@@ -84,7 +137,7 @@ def _check_translations(manifest, store):
             continue
         if entry.get("translation_sha256"):
             continue
-        if not translate.has_foreign_prose(
+        if not translate.warrants_translation(
                 store.get_text(sha), entry.get("language") or "",
                 {field: entry.get(field) or ""
                  for field in translate.METADATA_FIELDS}):
@@ -427,19 +480,32 @@ def _check_manifest(manifest):
 
 
 def _check_store(manifest, store):
-    """Every hash the manifest names must exist and still hash to its name."""
+    """Every hash the manifest names must exist and still hash to its name.
+
+    NAMED IS NAMED, WHEREVER IT IS SPELLED. The scan used to read only the
+    entry's own `*_sha256` fields, so the 2,712 preserved figures and the 17
+    publisher papers - which live one level down, in `images` and `paper` -
+    counted as unreferenced. That report is what a store cleanup would read.
+    """
     findings = []
     referenced = set()
     for key, entry in (manifest.data.get("urls") or {}).items():
-        for field, value in entry.items():
-            if field.endswith("_sha256") and value:
-                referenced.add(value)
-                if not store.has(value):
-                    findings.append(Finding("fail", "missing store object",
-                                            "%s -> %s" % (key, value[:16])))
-                elif not store.verify(value):
-                    findings.append(Finding("fail", "store object does not match its hash",
-                                            "%s -> %s" % (key, value[:16])))
+        named = [(field, value) for field, value in entry.items()
+                 if field.endswith("_sha256") and value]
+        paper = (entry.get("paper") or {}).get("sha256")
+        if paper:
+            named.append(("paper", paper))
+        named.extend(("images", item["sha256"])
+                     for item in (entry.get("images") or {}).values()
+                     if item.get("sha256"))
+        for _field, value in named:
+            referenced.add(value)
+            if not store.has(value):
+                findings.append(Finding("fail", "missing store object",
+                                        "%s -> %s" % (key, value[:16])))
+            elif not store.verify(value):
+                findings.append(Finding("fail", "store object does not match its hash",
+                                        "%s -> %s" % (key, value[:16])))
     orphans = store.unreferenced(referenced)
     if orphans:
         findings.append(Finding("warn", "unreferenced store objects",

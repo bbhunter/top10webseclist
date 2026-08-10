@@ -98,7 +98,7 @@ fancyimage.jpg
 
 If you double click on the `fancyevilimage.jpg` you get your default image viewer with the actual image displayed inside. If you put the image inside the `src` attribute of an `img` tag, surprise, surprise, it renders. If you try to verify the image headers, you will get `OK`. However, if you change the extension from `.jpg` to `.zip` and try to unzip it with WinRAR or the command line unzip utility, you get the archive content. So, it seams that uploading weired stuff on a server does not have to be as hard as it seams. In our case, the Java runtime, will happily interpret an image as a JAR.
 
-It is actually possible to attach any other file before the JAR but you have to be careful since you may end up with corrupted JAR. If the remote site does not have any type checks, then the attacker can simply upload a [.class]() file. It works pretty much in the same way.
+It is actually possible to attach any other file before the JAR but you have to be careful since you may end up with corrupted JAR. If the remote site does not have any type checks, then the attacker can simply upload a .class file. It works pretty much in the same way.
 
 *As I side note, the same technique can be used to trick application into running arbitrary Java classes.*
 

@@ -69,21 +69,21 @@ We will show here how simple, widely known standard request headers, combined wi
 
 ## Index
 
-- [URL creation and unwanted guests]()
-- [Exploitation: Two vectors, numerous possibilities]()
+- URL creation and unwanted guests
+- Exploitation: Two vectors, numerous possibilities
 
-- [Bypassing path-based middleware protections]()
+- Bypassing path-based middleware protections
 
-- [WHATWG URL Standard and parser behavior]()
-- [Final round and bypass]()
+- WHATWG URL Standard and parser behavior
+- Final round and bypass
 
-- [SSRF]()
-- [URLs pollution (to SXSS)]()
-- [WAF bypass]()
+- SSRF
+- URLs pollution (to SXSS)
+- WAF bypass
 
-- [CVE-2025-61925 - Complete bypass]()
-- [Security Advisory - CVE-2025-64525]()
-- [Conclusion]()
+- CVE-2025-61925 - Complete bypass
+- Security Advisory - CVE-2025-64525
+- Conclusion
 
 ## URL construction and unwanted guests
 
@@ -247,7 +247,7 @@ x-forwarded-proto: x:admin?
 
 We were able to bypass the check because, as you will have understood, `"admin" != "/admin"`. The question mark `?` marks the start of the query string and absorbs the current path. As a result, `${req.url}`, whatever its value, is interpreted as part of the query and no longer influences the routing logic when creating the URL.
 
-As previously explained, the payload must target a server-side rendered route (*SSR condition*) so that the Node adapter invokes its `createRequest` function as is also the case for all the attacks cited in this paper [[1]()]. The route doesn’t matter as long as it’s SSR, since the path will be rewritten, and the value of the initially targeted route will be absorbed by the query. Also take into account that the `x-forwarded-proto` header value may be overwritten by a reverse proxy on its way to the targeted server.
+As previously explained, the payload must target a server-side rendered route (*SSR condition*) so that the Node adapter invokes its `createRequest` function as is also the case for all the attacks cited in this paper [1]. The route doesn’t matter as long as it’s SSR, since the path will be rewritten, and the value of the initially targeted route will be absorbed by the query. Also take into account that the `x-forwarded-proto` header value may be overwritten by a reverse proxy on its way to the targeted server.
 
 ## SSRF
 
@@ -275,7 +275,7 @@ x-forwarded-proto: javascript:/links#/;alert('Long live Algeria')//
 **Concise explanation of the payload, router side**:
 
 - `javascript:` -> protocol
-- `/links` -> Although it is not mandatory to specify the slash `/` for the reasons discussed in the [WHATWG URL Standard and parser behavior]() section (*“javascript” is not a special scheme*), we must do so here for the proper execution of JS, as we will see below
+- `/links` -> Although it is not mandatory to specify the slash `/` for the reasons discussed in the WHATWG URL Standard and parser behavior section (*“javascript” is not a special scheme*), we must do so here for the proper execution of JS, as we will see below
 - `#` -> Everything that comes after it is considered part of the hash and is therefore ignored by the router (`#` *included*)
 
 **Concise explanation of the payload, JS side**:

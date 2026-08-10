@@ -68,7 +68,7 @@ Million Browser Botnet
 
 The Wayback Machine - http://web.archive.org/web/20150719211459/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet
 
- Your SlideShare is downloading. [×]()
+ Your SlideShare is downloading. ×
 
  ![Million Browser Botnet
 BLACK HAT USA 2013
@@ -260,8 +260,6 @@ Loading in...5
 
   [ ** Follow ](http://web.archive.org/web/20150719211459/http://www.slideshare.net/signup?login_source=slideview.popup.follow&from=addcontact&from_source=http%3A%2F%2Fwww.slideshare.net%2Fjeremiahgrossman%2Fmillion-browser-botnet)
 
- **
-
  Published on Aug 05, 2013
 
  http://blackhat.com/us-13/briefings.html#Grossman
@@ -276,7 +274,7 @@ Before leveraging advertising networks, the reason this attack scenario didn’t
 
  Published in: [Technology](http://web.archive.org/web/20150719211459/http://www.slideshare.net/featured/category/technology)
 
-   [  0 Comments ]()   [ **  4 Likes  ]()   [ ** Statistics ]()   [ ** Notes ]()
+     0 Comments     **  4 Likes      ** Statistics     ** Notes 
 
 -
 
@@ -356,7 +354,7 @@ No embeds
 
  Select your reason for flagging this presentation as inappropriate.
 
-  None Pornographic Defamatory Illegal/Unlawful Spam Other Terms Of Service Violation   [Cancel]()
+  None Pornographic Defamatory Illegal/Unlawful Spam Other Terms Of Service Violation   Cancel
 
  [Copyright Complaint](http://web.archive.org/web/20150719211459/http://www.linkedin.com/legal/copyright-policy)
 

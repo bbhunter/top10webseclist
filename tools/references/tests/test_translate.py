@@ -532,3 +532,45 @@ class TestMinifiedCodeIsNotProse(unittest.TestCase):
 
     def test_ordinary_short_segments_are_unaffected(self):
         self.assertTrue(translate._segment_is_foreign("本系列是笔者", True))
+
+
+class TestWhatWarrantsATranslation(unittest.TestCase):
+    """A `_translate` file is a SECOND document that the website opens instead of
+    the original, so "some of this is foreign" is the wrong bar for making one.
+
+    Three CJK sample characters on one slide of an English Black Hat deck about
+    Unicode confusables manufactured a translation, and its 78KB text render
+    then displaced the author's own 4.7MB PDF on the site."""
+
+    ENGLISH_DECK = "\n\n".join(
+        ["Exploiting Unicode Normalization",
+         "Decoding errors, truncation, confusables, casing and combining diacritics.",
+         "Internationalization (i18n) 帆蕭 琼",
+         "The front end and the back end disagree about where the request ends.",
+         "A CDN normalizes the path before the origin server validates it.",
+         "That is the whole bug, and it is worth a slide of its own."])
+
+    JAPANESE_WRITEUP = "\n\n".join(
+        ["リクエストスマグリングの調査メモ",
+         "フロントエンドとバックエンドの解釈が食い違うことが原因です。",
+         "この挙動は多くのプロキシで再現しました。",
+         "The proxy accepted the request and forwarded it to the origin server.",
+         "検証環境の構築手順を以下に示します。"])
+
+    def test_an_english_document_quoting_another_script_gets_no_translation(self):
+        self.assertTrue(translate.has_foreign_prose(self.ENGLISH_DECK))
+        self.assertFalse(translate.warrants_translation(self.ENGLISH_DECK))
+
+    def test_a_document_written_in_another_language_still_does(self):
+        self.assertTrue(translate.warrants_translation(self.JAPANESE_WRITEUP))
+
+    def test_the_foreign_segments_are_still_found_when_one_is_warranted(self):
+        """The gate decides whether to build the file, never what goes in it: an
+        English sentence quoted inside a Japanese write-up stays untranslated."""
+        prepared = translate.prepare(self.JAPANESE_WRITEUP)
+        self.assertGreaterEqual(prepared.skipped, 1)
+        self.assertGreaterEqual(prepared.segments, 3)
+
+    def test_an_english_document_is_never_translated(self):
+        english = "\n\n".join(["The cache key omits the query string."] * 8)
+        self.assertFalse(translate.warrants_translation(english))

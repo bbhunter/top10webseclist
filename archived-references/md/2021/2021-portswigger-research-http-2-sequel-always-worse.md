@@ -93,14 +93,14 @@ This research paper accompanies a presentation at [Black Hat USA](https://www.bl
 
 ### Outline
 
-- [HTTP/2 for Hackers]()
-- [HTTP/2 Desync Attacks]()
-- [Desync-Powered Request Tunnelling]()
-- [HTTP/2 Exploit Primitives]()
-- [Essential Information & Tooling]()
-- [Conclusion]()
+- HTTP/2 for Hackers
+- HTTP/2 Desync Attacks
+- Desync-Powered Request Tunnelling
+- HTTP/2 Exploit Primitives
+- Essential Information & Tooling
+- Conclusion
 
-## [HTTP/2 for Hackers]()
+## HTTP/2 for Hackers
 
 The first step to exploiting HTTP/2 is learning the protocol fundamentals. Fortunately, there's less to learn than you might think.
 

@@ -476,6 +476,8 @@
   .markdown-body th, .markdown-body td { min-width: 120px; padding: 10px 12px; border: 1px solid var(--line); text-align: left; }
   .markdown-body th { color: var(--ink); background: rgba(130,245,178,.06); font: 700 .64rem var(--mono); }
   .markdown-body img { max-height: 620px; margin: 26px auto; object-fit: contain; background: #050a08; border: 1px solid var(--line); border-radius: 9px; }
+  .markdown-body .image-gone { margin: 22px 0; padding: 13px 15px; color: var(--muted); background: rgba(110,231,231,.04); border: 1px dashed var(--line-strong); border-radius: 9px; font-size: .74rem; }
+  .markdown-body .image-gone strong { color: var(--ink); }
   .markdown-body .archive-warning { margin: 0 0 34px; padding: 14px 17px; color: #dbc48c; background: rgba(246,201,107,.055); border: 1px solid rgba(246,201,107,.18); border-radius: 8px; font: .62rem/1.55 var(--mono); }
   .reader-loading { display: grid; min-height: 430px; place-content: center; justify-items: center; gap: 17px; color: var(--muted); font: .66rem var(--mono); }
   .reader-loading i { width: 28px; height: 28px; border: 2px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: reader-spin .8s linear infinite; }
@@ -549,6 +551,20 @@
   .pdf-viewer-note { height: 34px; padding: 9px 20px; color: #60776e; background: #06100d; border-top: 1px solid var(--line); font: .51rem var(--mono); }
   .pdf-viewer-note span { margin-right: 8px; color: var(--cyan); text-transform: uppercase; }
 
+  /* The link list. A PDF's own links are handled by the browser's viewer, which
+     opens them in place; this is the route that opens one in a new tab. */
+  .pdf-links { position: absolute; top: 0; right: 0; bottom: 0; z-index: 3; display: flex; width: min(390px, 82vw); flex-direction: column; background: rgba(6,16,13,.97); border-left: 1px solid var(--line); box-shadow: -18px 0 50px rgba(0,0,0,.45); }
+  .pdf-links[hidden] { display: none; }
+  .pdf-links header { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px 10px; border-bottom: 1px solid var(--line); }
+  .pdf-links header strong { font: 650 .62rem var(--mono); text-transform: uppercase; letter-spacing: .07em; color: var(--cyan); }
+  .pdf-links header button { width: 26px; height: 26px; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 50%; cursor: pointer; }
+  .pdf-links-note { margin: 0; padding: 11px 16px; color: var(--faint); font: .53rem/1.55 var(--mono); border-bottom: 1px solid var(--line); }
+  #pdf-links-list { overflow-y: auto; padding: 8px 10px 16px; }
+  #pdf-links-list a { display: block; padding: 8px 9px; margin-bottom: 4px; color: var(--ink); border: 1px solid transparent; border-radius: 7px; font-size: .68rem; text-decoration: none; }
+  #pdf-links-list a:hover { border-color: var(--line-strong); background: rgba(110,231,231,.07); }
+  #pdf-links-list a small { display: block; overflow: hidden; margin-top: 3px; color: var(--faint); font: .5rem var(--mono); text-overflow: ellipsis; white-space: nowrap; }
+  #pdf-links-list p { padding: 10px 9px; color: var(--muted); font-size: .68rem; }
+
   .pdf-dialog[data-reading-theme="light"] {
     --ink: #202822;
     --muted: #53625a;
@@ -573,6 +589,8 @@
   .pdf-dialog[data-reading-theme="light"] .pdf-loading { color: #53625a; background: rgba(238,233,223,.9); }
   .pdf-dialog[data-reading-theme="light"] .pdf-loading i::before { background: #eee9df; }
   .pdf-dialog[data-reading-theme="light"] .pdf-viewer-note { color: #607068; background: #e7e1d6; }
+  .pdf-dialog[data-reading-theme="light"] .pdf-links { background: rgba(238,233,223,.98); }
+  .pdf-dialog[data-reading-theme="light"] #pdf-links-list a:hover { background: rgba(8,117,132,.08); }
 }
 
 @layer views {

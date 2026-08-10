@@ -77,7 +77,7 @@ In other news, I should also mention that I got back from [the Minnesota OWASP m
 
 I missed Schmoocon and DC Blackhat but here is the unofficial list of my upcoming cons: [Source Boston](http://www.sourceboston.com/) (leading a panel), [RSACon 2008](http://www.rsaconference.com/2008/US/Home.aspx) (just visiting), [TRISC](http://www.trisc.org/) (speaking), [Secure360](http://www.secure360.org/) (speaking - unconfirmed), Super Secret SANS Conference to be talked about at a later date (speaking), OWASP Denver (speaking - unconfirmed), [World OWASP NYC 2008](http://www.owasp.org/index.php/OWASP_NYC_AppSec_2008_Conference) (speaking). So yah, busy busy busy…
 
-  This entry was posted on Wednesday, February 27th, 2008 at 5:51 pm and is filed under [General News](http://ha.ckers.org/blog/category/general-news/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can [leave a response]() as well.
+  This entry was posted on Wednesday, February 27th, 2008 at 5:51 pm and is filed under [General News](http://ha.ckers.org/blog/category/general-news/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
 
 ### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
 

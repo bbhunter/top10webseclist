@@ -269,7 +269,6 @@ Step
 ¸
 or right after the execution of
 Step
-·
 .
 
 Step
@@ -943,7 +942,6 @@ A. Security ImplicationsAUTOFORGEhas demonstrated that lack of security checks a
 
 --- page 18 ---
 
-
 Limiting the number of login attempts. One sim-ple solution app developers can adopt is to keep alogin attempt state at the server side and limit thenumber of login attempts within a certain time win-dow. We only found 11 out of 76 apps (14%), suchascom.imdb.mobile, that followed this approach.While this solution cannot defeat leaked username andpassword probing attacks, it can defeat at least userpassword brute forcing. Meanwhile, unlike CAPTCHAand two factor-authentication discussed below, thisdefense will not change any user's experience.
 
 Using CAPTCHA. Automatic data forgery is not a newattack, and there are already solutions to mitigate this.One way that has been widely used on the desktop isthe CAPTCHA [34]. A CAPTCHA is a program thatprotects websites against automated resource abusingor login attempts. However, we have not seen muchusage in mobile apps. We believe one reason is thatCAPTCHA might hurt user experience. However, aswe have demonstrated in this paper, to really slowdown attackers, CAPTCHA is a viable approach, thoughCAPTCHA can also be broken [33].
@@ -1089,11 +1087,13 @@ APP SERVERS
 --- page 23 ---
 
 YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
+ $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
+½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
 
 --- page 24 ---
 
-ÒŽ¼óÕ¬¿`ï@«¤pêíÀJ2è’Q‘klÁËzàcÌäºš‚¯�f¤»ˆ¢à¶ÃÜjö¾ÝOé+7a˜{í²Hík» •VÁÝÒ€ïç‹¼~,-¹KûÆ;G¤‚ˆ¾D�Ÿ+‘<¶J
+ÒŽ¼óÕ¬¿`ï@«¤p
+êíÀJ2è’Q‘klÁËzàcÌäºš‚¯�f¤»ˆ¢à¶ÃÜjö¾ÝOé+7a˜{í²Hík» •VÁÝÒ€ïç‹¼~,-¹KûÆ;G¤‚ˆ¾D�Ÿ+‘<¶J
 
 --- page 25 ---
 

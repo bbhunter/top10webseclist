@@ -84,7 +84,7 @@ Authors:[Anatoly Shusterman](https://arxiv.org/search/cs?searchtype=author&query
  From: Anatoly Shusterman [[view email](https://arxiv.org/show-email/81dc8d07/2103.04952)]
  **[v1]** Mon, 8 Mar 2021 18:16:10 UTC (470 KB)
 
- []() Full-text links:
+  Full-text links:
 
 ## Access Paper:
 
@@ -215,4 +215,4 @@ Both individuals and organizations that work with arXivLabs have embraced and ac
 
 Have an idea for a project that will add value for arXiv's community? [**Learn more about arXivLabs**](https://info.arxiv.org/labs/index.html).
 
- [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/2103.04952) | [Disable MathJax]() ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))
+ [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/2103.04952) | Disable MathJax ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))

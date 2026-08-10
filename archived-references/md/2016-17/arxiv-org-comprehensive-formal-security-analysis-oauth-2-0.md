@@ -91,7 +91,7 @@ We propose fixes for the identified vulnerabilities, and then, for the first tim
  **[[v3]](https://arxiv.org/abs/1601.01229v3)** Fri, 27 May 2016 09:37:26 UTC (112 KB)
  **[v4]** Mon, 8 Aug 2016 15:42:17 UTC (111 KB)
 
- []() Full-text links:
+  Full-text links:
 
 ## Access Paper:
 
@@ -218,4 +218,4 @@ Both individuals and organizations that work with arXivLabs have embraced and ac
 
 Have an idea for a project that will add value for arXiv's community? [**Learn more about arXivLabs**](https://info.arxiv.org/labs/index.html).
 
- [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1601.01229) | [Disable MathJax]() ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))
+ [Which authors of this paper are endorsers?](https://arxiv.org/auth/show-endorsers/1601.01229) | Disable MathJax ([What is MathJax?](https://info.arxiv.org/help/mathjax.html))
