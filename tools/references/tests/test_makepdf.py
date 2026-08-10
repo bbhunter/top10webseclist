@@ -85,6 +85,32 @@ class TestOverLongHeadings(unittest.TestCase):
                                   and not makepdf._FENCE.match(line)
                                   and not makepdf._UL.match(line)))
 
+class TestColouredListings(unittest.TestCase):
+    """The source articles colour their code and the archive printed every
+    listing as grey. Colour is only safe here because it is lossless."""
+
+    def test_a_listing_gets_token_spans(self):
+        body = makepdf.markdown_to_html_body(
+            "```js\n// note\nconst a = \"x\";\n```\n")
+        self.assertIn('<span class="c">', body)
+        self.assertIn('<span class="s">', body)
+
+    def test_the_listing_itself_is_unchanged(self):
+        import html as html_module
+        import re as re_module
+        code = "GET /a?b=1 HTTP/1.1\nHost: x.test\n<script>alert(1)</script>"
+        body = makepdf.markdown_to_html_body("```http\n%s\n```\n" % code)
+        inner = re_module.search(r"<pre><code>(.*)</code></pre>", body, re_module.S).group(1)
+        self.assertEqual(re_module.sub(r'<span class="[a-z]">|</span>', "", inner),
+                         html_module.escape(code))
+
+    def test_the_stylesheet_defines_every_class_the_tokenizer_emits(self):
+        from refslib import highlight
+        for kind in (highlight.COMMENT, highlight.STRING, highlight.NUMBER,
+                     highlight.KEYWORD, highlight.TAG, highlight.ATTRIBUTE,
+                     highlight.HEADER):
+            self.assertIn("pre .%s {" % kind, makepdf.STYLE)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -20,6 +20,8 @@ remote asset.
 import html as html_module
 import re
 
+from . import highlight
+
 # THE CONVERTER'S OWN VERSION, recorded on every PDF it prints. A fix in here
 # changes what the document SHOULD look like without touching the Markdown it
 # came from, so nothing downstream can tell that the published file is out of
@@ -32,13 +34,16 @@ import re
 #    targets printed as text; preserved figures embedded; figures kept whole
 #    across page breaks; a heading over MAX_HEADING_CHARS printed as a paragraph.
 #
+# 3: fenced listings coloured by `highlight.py`, and the print stylesheet given
+#    token colours chosen for print on white and for colour blindness.
+#
 # THE HEADING CAP DID NOT EARN A VERSION OF ITS OWN, and the reasoning is worth
-# keeping: a bump reprints all 1,283 rendered documents, every PDF comes out
-# byte-different because the printer stamps it, and that is ~300MB of history to
-# change 30 lines across 13 documents. Those 13 were reprinted by name instead.
-# Bump the version for a change that alters output BROADLY; name the documents
-# when it alters output for a handful.
-RENDERER = 2
+# keeping: a bump reprints every rendered document, each comes out byte-different
+# because the printer stamps it, and that is ~300MB of history. It was worth it
+# for 3, which changes almost every document that carries code; it was not worth
+# it for 30 lines across 13 documents, which were reprinted by name instead.
+# Bump for a change that alters output BROADLY; name the documents otherwise.
+RENDERER = 3
 
 # A print stylesheet, inlined so the document owes nothing to the network. A4
 # with comfortable margins; the browser's `preferCSSPageSize` honours the @page.
@@ -71,6 +76,19 @@ pre {
   padding: .7em .9em; overflow-x: auto; page-break-inside: avoid;
 }
 pre code { background: none; padding: 0; font-size: 9pt; line-height: 1.4; }
+/* SYNTAX COLOUR, from `highlight.py`. The source articles colour their listings
+   and the archive printed every one as undifferentiated grey, which is the
+   difference between reading a request and staring at it. Chosen for print on
+   white and for the common kinds of colour blindness: the hues are blue, teal
+   and brown rather than red and green, and each is dark enough to survive a
+   greyscale printer as its own tone. */
+pre .c { color: #64757f; font-style: italic; }   /* comment */
+pre .s { color: #9a4b16; }                       /* string */
+pre .n { color: #0a6b74; }                       /* number */
+pre .k { color: #1a4fa0; font-weight: 600; }     /* keyword */
+pre .t { color: #1a4fa0; }                       /* markup tag */
+pre .a { color: #6b3fa0; }                       /* attribute name */
+pre .h { color: #0a6b74; font-weight: 600; }     /* HTTP header name */
 table { border-collapse: collapse; margin: .7em 0; width: 100%; font-size: 10pt; }
 th, td { border: 1px solid #ccc; padding: .35em .55em; text-align: left; vertical-align: top; }
 th { background: #f2f2f2; }
@@ -206,14 +224,19 @@ def markdown_to_html_body(md_text, image_source=None):
         # Fenced code block.
         if _FENCE.match(line):
             fence = line.strip()[:3]
+            # The fence's own label, which is the only hint about the language.
+            language = line.strip()[3:].strip()
             body = []
             index += 1
             while index < total and not lines[index].strip().startswith(fence):
                 body.append(lines[index])
                 index += 1
             index += 1  # consume the closing fence (or run off the end)
+            # Coloured by `highlight.py`, which is lossless by construction and
+            # escapes as it goes: strip its spans and the escaped listing comes
+            # back byte for byte.
             out.append("<pre><code>%s</code></pre>"
-                       % html_module.escape("\n".join(body)))
+                       % highlight.to_html("\n".join(body), language))
             continue
 
         if not line.strip():
