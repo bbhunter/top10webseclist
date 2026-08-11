@@ -274,9 +274,9 @@
   .support-action.is-sponsor span { color: var(--coral); background: rgba(255,142,115,.09); border-color: rgba(255,142,115,.22); }
   .view-intro { position: relative; display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 28px; padding-top: 17px; border-top: 1px solid var(--line); }
   .view-intro::before { position: absolute; top: -3px; left: 0; width: 38px; height: 5px; content: ""; background: linear-gradient(90deg,var(--accent) 0 45%,transparent 45% 55%,var(--signal) 55%); }
-  .view-intro h1 { margin: 9px 0 10px; font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-size: clamp(2.55rem, 5.2vw, 5.6rem); font-weight: 600; line-height: .91; letter-spacing: -.052em; }
-  /* The heading is the archive; this line is the room you are standing in. */
-  .view-intro .view-mode { display: flex; align-items: center; gap: 10px; margin-bottom: 11px; color: var(--signal); font: 500 clamp(.86rem, 1.35vw, 1.05rem)/1.25 var(--mono); letter-spacing: -.01em; }
+  /* The site names itself once, in the masthead h1. The heading here names the
+     room being read, and stays small: the records are what the page is for. */
+  .view-intro .view-mode { display: flex; align-items: center; gap: 10px; margin: 10px 0 11px; color: var(--signal); font: 500 clamp(.95rem, 1.6vw, 1.28rem)/1.25 var(--mono); letter-spacing: -.01em; }
   .view-intro .view-mode::before { flex: 0 0 auto; width: 22px; height: 1px; content: ""; background: currentColor; opacity: .55; }
   .view-intro > div:first-child > p:last-child { max-width: 680px; color: var(--muted); font-size: clamp(.82rem, 1.2vw, .98rem); line-height: 1.65; }
   .view-intro-tools { display: grid; flex: 0 0 auto; justify-items: stretch; gap: 12px; }
@@ -1614,7 +1614,6 @@
     .view-intro-tools { align-self: start; }
     .view-fullscreen { width: 42px; min-height: 42px; padding: 0; font-size: 0; }
     .view-fullscreen span { font-size: 1rem; }
-    .view-intro h1 { font-size: 2.65rem; }
     .preliminary-notice { align-items: flex-start; flex-direction: column; gap: 6px; }
     .winner-plinths, .nominee-wall, .timeline-winners { grid-template-columns: 1fr; }
     .winner-plinths .artifact-card:first-child { grid-column: auto; }
@@ -1728,7 +1727,7 @@
     .signal-finding { padding-inline: 12px; }
     main:fullscreen { padding: 12px; }
     main:fullscreen .view-intro { margin-bottom: 12px; }
-    main:fullscreen .view-intro h1 { font-size: 2rem; }
+    main:fullscreen .view-intro .view-mode { margin: 4px 0 0; }
     main:fullscreen .view-intro > div:first-child > p:last-child { display: none; }
     main:fullscreen .constellation-frame { height: calc(100dvh - 116px); min-height: 340px; margin-inline: 0; }
     main:fullscreen .hacker-terminal { height: calc(100dvh - 116px); margin-inline: 0; }
@@ -1760,7 +1759,6 @@
     .global-search { padding-inline: 10px; }
     .global-search input { font-size: .72rem; }
     .sound-button { display: none; }
-    .view-intro h1 { font-size: 2.25rem; }
     .artifact-dialog { width: calc(100vw - 12px); }
     .artifact-dialog .dialog-body { padding-inline: 19px; }
     .artifact-facts { grid-template-columns: 1fr; }

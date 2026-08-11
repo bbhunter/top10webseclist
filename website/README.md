@@ -64,11 +64,13 @@ one-day cache with stale revalidation.
 
 Google, Bing and the rest take the site name from the home page only, and from
 several signals at once: `WebSite` structured data in `index.html`, `og:site_name`,
-`application-name`, the `<title>`, the manifest `name` and the `h1`. All of them say
-**Web Hacking Techniques Index**, with `alternateName` and the manifest `short_name`
-keeping *Web Hack List* eligible as the domain-shaped short form. Never let an archive
-mode's name reach one of those fields — a search engine would print it as the name of
-the site. The smoke test fails if any signal disagrees or if a view title leaks in.
+`application-name`, the `<title>`, the manifest `name`, and the page's single `h1` —
+the masthead one, which is why the reading area heads its records with an `h2` naming
+the mode instead. All of them say **Web Hacking Techniques Index**, with
+`alternateName` and the manifest `short_name` keeping *Web Hack List* eligible as the
+domain-shaped short form. Never let an archive mode's name reach one of those fields:
+a search engine would print it as the name of the site. The smoke test fails if any
+signal disagrees, if a view title leaks in, or if a second `h1` appears.
 
 A search engine may take days or weeks to re-crawl and adopt a changed site name.
 
@@ -97,9 +99,10 @@ fullscreen is unavailable.
 
 ## Archive routes
 
-Every route is a way into the same archive, so the page heading and the browser tab
-always read *Web Hacking Techniques Index*. The route's own name sits under the
-heading as the mode currently open, never as the name of the site.
+Every route is a way into the same archive, so the browser tab always reads
+*Web Hacking Techniques Index* and the archive names itself once, in the masthead
+heading beside the brand mark. Above the records a route shows only its own name, as
+the mode currently open — never as the name of the site.
 
 - Museum at Night — one room per collection, styled in the Signal Observatory's
   instrument theme so both views read as the same receiver

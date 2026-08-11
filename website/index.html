@@ -59,9 +59,13 @@
 
   <div class="app-shell" id="app-shell" hidden>
     <aside class="sidebar" id="concept-sidebar" aria-label="Archive experiences">
+      <!-- The archive's name is the page's one h1. It lives in the masthead
+           rather than over the reading area: the heading above the records
+           names the mode being read, and a search engine reads an h1 as a
+           signal for the name of the SITE. -->
       <a class="brand" href="#museum" aria-label="Web Hacking Techniques Index home">
         <img class="brand-mark" src="brand-mark.svg" alt="">
-        <span class="brand-copy"><strong>WEB HACKING</strong><b>TECHNIQUES INDEX</b><em>Research archive</em></span>
+        <h1 class="brand-copy"><strong>WEB HACKING</strong><b>TECHNIQUES INDEX</b><em>Research archive</em></h1>
       </a>
       <p class="brand-edition"><span>2006—NOW</span> Research record</p>
 
@@ -138,8 +142,7 @@
         <header class="view-intro">
           <div>
             <p class="eyebrow" id="view-kicker">Room 01 / exhibition mode</p>
-            <h1 id="view-title">Web Hacking Techniques Index</h1>
-            <p class="view-mode" id="view-mode">Museum at Night</p>
+            <h2 class="view-mode" id="view-mode">Museum at Night</h2>
             <p id="view-description">Walk through twenty years of research as rooms, illuminated winners and recovered artifacts.</p>
           </div>
           <div class="view-intro-tools">

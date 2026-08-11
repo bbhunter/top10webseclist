@@ -14,9 +14,9 @@ const collectionRequests = new Map();
 const KNOWN_MISSING_PATHS = new Set([]);
 // Kinds the archive never prints a PDF for - `config.json -> pdf.skip_kinds`.
 const NO_PDF_KINDS = new Set(["video"]);
-// The archive's own name, never the name of the mode being viewed. Each view
-// still announces itself under the heading and in the browser's history entry,
-// but the site is one archive whatever room you are standing in.
+// The archive's own name, never the name of the mode being viewed. The browser
+// tab reads the same in every room; the mode names itself in the heading above
+// the records, and in the masthead h1 the site names itself once.
 const SITE_TITLE = "Web Hacking Techniques Index";
 const SITE_DOCUMENT_TITLE = `${SITE_TITLE} — Research archive`;
 const READ_STORAGE_KEY = "technique-vault-read-v1";
@@ -1136,7 +1136,6 @@ function toggleReadingTheme() {
 function render() {
   const copy = viewCopy();
   $("#view-kicker").textContent = copy.kicker;
-  $("#view-title").textContent = SITE_TITLE;
   $("#view-mode").textContent = copy.title;
   $("#view-description").textContent = copy.description;
   document.title = SITE_DOCUMENT_TITLE;

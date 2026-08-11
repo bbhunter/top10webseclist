@@ -319,11 +319,15 @@ const experienceChecks = [
   appSource.includes('title: "The Hacker Terminal"'),
   appSource.includes('title: "The Investigation Board"'),
   appSource.includes('title: "Signal Observatory"'),
-  // The page is named for the archive, not for the room being viewed: the
-  // heading and the tab stay generic, and the view name sits under them.
-  indexSource.includes('<h1 id="view-title">Web Hacking Techniques Index</h1>'),
-  indexSource.includes('<p class="view-mode" id="view-mode">'),
-  appSource.includes('$("#view-title").textContent = SITE_TITLE'),
+  // The page is named for the archive, not for the room being viewed. The one
+  // h1 is the masthead's site name; over the records a small h2 names the mode,
+  // and no display heading repeats the site name there.
+  indexSource.includes('<h1 class="brand-copy"><strong>WEB HACKING</strong><b>TECHNIQUES INDEX</b>'),
+  (indexSource.match(/<h1[ >]/g) || []).length === 2, // the masthead, plus the boot screen app.js removes
+  indexSource.includes('<h2 class="view-mode" id="view-mode">'),
+  !indexSource.includes("view-title"),
+  !appSource.includes("#view-title"),
+  !stylesSource.includes(".view-intro h1"),
   appSource.includes('$("#view-mode").textContent = copy.title'),
   appSource.includes("document.title = SITE_DOCUMENT_TITLE"),
   !appSource.includes("${copy.title} — Web Hacking Techniques Index"),
