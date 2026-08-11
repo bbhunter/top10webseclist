@@ -536,6 +536,20 @@ an unattributed reference says the archive does not know, a misattributed one
 credits a stranger with someone's work and reads as fact. An entry naming nobody
 is kept too, so the next run does not ask the same question again.
 
+`--accept medium` widens it, and "medium" is not a synonym for "doubtful": it is
+what a reviewer says when the byline is real but sits somewhere other than under
+the title - a site-wide footer ("Wisec is written and mantained by Stefano Di
+Paola"), a signature, a handle an author has published under for twenty years.
+Taking those is a curation call, which is why it is spelled on the command line.
+
+**ATTRIBUTION MUST NEVER DECIDE WHETHER A DOCUMENT IS KEPT.** `grade.classify`
+reads an override as a whole judgement and defaults a missing `outcome` to
+`skip`, so an entry carrying only `authors` once told the grader to keep no
+document at all - 214 research references lost their grade in a single run. The
+grader now ignores an override that says nothing about keeping the document, and
+`refs.attribution_decision` returns only `authors` and `publisher`. Re-render
+runs should still watch the count of `grade: null` entries and stop if it rises.
+
 `bylines.json` is generated and always loses to `overrides.json`, where a
 maintainer states an author by hand. Withdraw a wrong credit there with
 `"authors": []`; see the `attribution` notes in `tools/references/README.md`.
