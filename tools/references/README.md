@@ -209,6 +209,19 @@ and re-importing needs the hand-obtained file back. Who wrote a document is a
 fact about the document, not about the capture. The published files keep the old
 byline until they are next re-rendered, which the command says on the way out.
 
+A credit can also be WITHDRAWN, because the archive will eventually name the
+wrong person. The key being present is the statement and what it holds is what
+it states, so `"authors": []` credits nobody and clears a name already recorded,
+while deleting the key leaves extraction alone and `["", " "]` is read as a typo
+rather than a retraction.
+
+Stating a `publisher` on a reference that also carries a corrected `title` moves
+the file: `acquire` rebuilds a corrected title's slug FROM the publisher, so the
+next re-render renames the document and orphans the old name (`verify` reports
+it, `acquire --prune-files` removes it). That rename is wanted — a file named
+after a squatter should not survive — and `attribution` prints it in advance so
+it is expected rather than discovered.
+
 ## Configuration
 
 | File | What it holds |

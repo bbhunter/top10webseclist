@@ -122,6 +122,46 @@ class RecoverySelectorTests(unittest.TestCase):
         entry["authors"].append("Someone Else")
         self.assertEqual(["Alex Example"], judged["authors"])
 
+    def test_an_emptied_decision_withdraws_a_name_the_archive_got_wrong(self):
+        # Reading only truthy values left a misattribution un-retractable: the
+        # correction restored silence, and silence read as "nothing to say".
+        entry = {"authors": ["Wrong Person"], "publisher": "wrong.example"}
+        self.assertTrue(refs._apply_attribution_override(entry, {"authors": []}))
+        self.assertEqual([], entry["authors"])
+        self.assertTrue(refs._apply_attribution_override(entry, {"publisher": ""}))
+        self.assertEqual("", entry["publisher"])
+
+    def test_a_stated_publisher_moving_a_corrected_slug_is_reported(self):
+        entry = {"slug": "2008-hugedomains-com-recovered-title",
+                 "publisher": "Aspect Security", "published": "2008-05-16"}
+        self.assertEqual("2008-aspect-security-recovered-title",
+                         refs._slug_after_attribution(entry, {"title": "Recovered title"}))
+
+    def test_attribution_without_a_title_correction_renames_nothing(self):
+        entry = {"slug": "2008-aspect-security-recovered-title",
+                 "publisher": "Aspect Security", "published": "2008-05-16"}
+        self.assertEqual("", refs._slug_after_attribution(entry, {"authors": ["Alex Example"]}))
+        self.assertEqual("", refs._slug_after_attribution(
+            entry, {"title": "Recovered title"}))
+
+    def test_recording_attribution_twice_finds_nothing_the_second_time(self):
+        urls = {"https://one.example/a": {"authors": [], "publisher": "squatter.example"}}
+        decisions = {"https://one.example/a": {"authors": ["Alex Example"],
+                                               "publisher": "example.test"}}
+        first = refs._attribution_changes(urls, decisions)
+        self.assertEqual(1, len(first))
+        self.assertEqual((["Alex Example"], "example.test"), first[0][2])
+        self.assertEqual([], refs._attribution_changes(urls, decisions))
+
+    def test_a_withdrawal_counts_as_a_change_to_record(self):
+        urls = {"https://one.example/a": {"authors": ["Wrong Person"]}}
+        changes = refs._attribution_changes(urls, {"https://one.example/a": {"authors": []}})
+        self.assertEqual(1, len(changes))
+        self.assertEqual([], changes[0][2][0])
+
+    def test_attribution_accepts_the_dry_run_selector(self):
+        self.assertTrue(refs.build_parser().parse_args(["attribution", "--check"]).check)
+
     def test_frontmatter_scalar_reader_keeps_only_top_level_values(self):
         text = ('---\nslug: example\noriginal_url: "https://example.test/a:b"\n'
                 'sources:\n  - id: original\nempty: ""\n---\n\n# Example\n')

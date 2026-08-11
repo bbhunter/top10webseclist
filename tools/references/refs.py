@@ -104,19 +104,75 @@ def _apply_attribution_override(entry, judged, record=None):
     Written to the manifest entry, because `render` builds its attribution block
     from the entry; also to `record` when the caller holds one, because the
     fetch path renders from the acquisition result rather than from the entry.
+
+    THE KEY BEING PRESENT IS THE STATEMENT, and what it holds is what it states.
+    An absent `authors` leaves extraction alone; an empty one states that the
+    archive credits nobody. Reading only truthy values meant a name could be
+    written but never taken back: deleting a wrong one from the decision merely
+    restored silence, which reads as "nothing to say" and skips the entry, so
+    the misattribution outlived its own correction. A list holding only blank
+    names is a typo rather than a retraction, and is still ignored.
     """
     curated = judged or {}
-    authors = [str(name).strip() for name in (curated.get("authors") or [])
-               if str(name).strip()]
-    publisher = str(curated.get("publisher") or "").strip()
+    stated = {}
+    if "authors" in curated:
+        listed = curated.get("authors") or []
+        names = [str(name).strip() for name in listed if str(name).strip()]
+        if names or not listed:
+            stated["authors"] = names
+    if "publisher" in curated:
+        stated["publisher"] = str(curated.get("publisher") or "").strip()
     for target in (entry, record):
         if target is None:
             continue
-        if authors:
-            target["authors"] = list(authors)
-        if publisher:
-            target["publisher"] = publisher
-    return bool(authors or publisher)
+        for field, value in stated.items():
+            target[field] = list(value) if isinstance(value, list) else value
+    return bool(stated)
+
+
+def _slug_after_attribution(entry, judged):
+    """The slug the next `acquire` would build, when a stated publisher moves it.
+
+    The offline path records attribution and touches no file, but `acquire`
+    rebuilds a CORRECTED TITLE'S SLUG FROM THE PUBLISHER. State a publisher on a
+    reference that also carries a title correction and the two routes disagree:
+    the manifest keeps the old file name, and the next re-render renames the
+    published document and orphans what it replaced. The rename is right - a
+    file named after a squatter should not survive - but a maintainer should
+    read it here rather than find it in `verify` afterwards.
+
+    Indicative only: the collision suffix depends on what else is taken at the
+    time, which is knowledge the run that renames it has and this one does not.
+    """
+    corrected = (judged or {}).get("title") or ""
+    if not corrected:
+        return ""
+    rebuilt = slugs_module.build(
+        corrected, entry.get("publisher") or "",
+        slugs_module.year_of(entry.get("published") or ""), taken=set())
+    return rebuilt if rebuilt != entry.get("slug") else ""
+
+
+def _attribution_changes(urls, decisions):
+    """Every reference whose recorded credit the curated decisions would alter.
+
+    Applies as it compares, because a decision is only legible as a change once
+    it has been written onto the entry. Nothing here saves: the caller decides
+    whether the in-memory result is written, which is what lets `--check` report
+    the same list without touching the manifest on disk.
+    """
+    changes = []
+    for key, entry in sorted(urls.items()):
+        judged = maintainer_decision(key, entry, decisions)
+        if not judged:
+            continue
+        before = (list(entry.get("authors") or []), entry.get("publisher") or "")
+        _apply_attribution_override(entry, judged)
+        after = (list(entry.get("authors") or []), entry.get("publisher") or "")
+        if after != before:
+            changes.append((key, before, after,
+                            _slug_after_attribution(entry, judged)))
+    return changes
 
 
 def _frontmatter_scalars(text):
@@ -2309,34 +2365,30 @@ def command_attribution(args):
     manifest = check_module.open_manifest(root, config)
     decisions = paths.decisions()
 
-    changed = []
-    for key, entry in sorted(manifest.data["urls"].items()):
-        judged = maintainer_decision(key, entry, decisions)
-        if not judged:
-            continue
-        before = (list(entry.get("authors") or []), entry.get("publisher") or "")
-        _apply_attribution_override(entry, judged)
-        after = (list(entry.get("authors") or []), entry.get("publisher") or "")
-        if after != before:
-            changed.append((key, before, after))
+    changed = _attribution_changes(manifest.data["urls"], decisions)
 
     if not changed:
         print("Every curated attribution is already recorded in the manifest.")
         return 0
 
-    for key, before, after in changed:
-        who = ", ".join(after[0]) or "-"
+    renames = 0
+    for key, before, after, rebuilt in changed:
+        who = ", ".join(after[0]) or "(credit withdrawn)"
         print("  %-56s %s" % (key[:56], who))
         if before[1] != after[1]:
             print("  %-56s publisher: %s -> %s"
-                  % ("", before[1] or "not stated", after[1]))
+                  % ("", before[1] or "not stated", after[1] or "not stated"))
+        if rebuilt:
+            renames += 1
+            print("  %-56s renames on re-render: %s -> %s"
+                  % ("", (manifest.data["urls"][key].get("slug") or "-"), rebuilt))
 
     if args.check:
         print("\n%d reference(s) would change. This was --check: nothing was written."
               % len(changed))
         return 1
 
-    for key, _before, after in changed:
+    for key, _before, after, _rebuilt in changed:
         manifest.record(key, "attribution", result="applied",
                         authors=after[0], publisher=after[1],
                         reason="maintainer-stated attribution from overrides.json")
@@ -2349,6 +2401,11 @@ def command_attribution(args):
           "re-render with\nthe content store available: `acquire --force --only "
           "<url>` for a fetched\nreference, or `import <dir>` again for a hand "
           "import, then `index`.")
+    if renames:
+        print("%d of them will also be RENAMED by that re-render, because a "
+              "stated publisher\nrebuilds a corrected title's slug. The old file "
+              "becomes an orphan: `verify`\nreports it and `acquire --prune-files` "
+              "removes it." % renames)
     return 0
 
 

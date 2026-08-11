@@ -374,6 +374,18 @@ function briefCreditOf(item) {
   return (item.authors || []).join(", ") || item.publisher || "";
 }
 
+// The credit the shard carries. A cap keeps the payload bounded, but a cap that
+// stops mid-list is the same failure this field exists to fix: the archive's
+// longest byline is four names today and a conference paper carries more, so
+// the eighth name is followed by the words that say there were others rather
+// than by silence.
+const CREDIT_LIMIT = 8;
+function creditList(authors) {
+  return authors.length > CREDIT_LIMIT
+    ? [...authors.slice(0, CREDIT_LIMIT), "et al."]
+    : [...authors];
+}
+
 function normalizeUrl(value) {
   try {
     const url = new URL(value);
@@ -544,7 +556,7 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
       // the payload reason above: a reference that names nobody looks exactly as
       // it did, and falls back to its publisher everywhere.
       ...(documentLink.record?.authors?.length
-        ? { authors: documentLink.record.authors.slice(0, 4) }
+        ? { authors: creditList(documentLink.record.authors) }
         : {}),
       kind: record?.kind || "link",
       language: record?.language || "",
