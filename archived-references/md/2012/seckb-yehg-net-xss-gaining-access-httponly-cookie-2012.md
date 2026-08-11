@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html"
     title: "XSS: Gaining access to HttpOnly Cookie in 2012"
+    author: Aung Khant
   - id: canonical
     resource: "https://web.archive.org/web/20170925041004/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html"
 also_at: []
-authors: []
+authors:
+  - Aung Khant
 canonical_url: "https://web.archive.org/web/20170925041004/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html"
 cited_by:
   - "2012.md:13"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # XSS: Gaining access to HttpOnly Cookie in 2012
 
-**XSS: Gaining access to HttpOnly Cookie in 2012** - Author not stated, seckb.yehg.net.
+**XSS: Gaining access to HttpOnly Cookie in 2012** - Aung Khant, seckb.yehg.net.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html>

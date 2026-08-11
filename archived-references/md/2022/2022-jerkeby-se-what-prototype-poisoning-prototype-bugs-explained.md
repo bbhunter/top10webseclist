@@ -12,9 +12,11 @@ sources:
   - id: original
     resource: "https://www.jerkeby.se/newsletter/posts/prototype-poisoning/"
     title: What is prototype poisoning? Prototype bugs explained!
+    author: Christoffer Jerkeby
     last_modified: 2022-09-14
 also_at: []
-authors: []
+authors:
+  - Christoffer Jerkeby
 canonical_url: ""
 cited_by:
   - "2022.md:51"
@@ -42,7 +44,7 @@ translation_of: ""
 
 # What is prototype poisoning? Prototype bugs explained!
 
-**What is prototype poisoning? Prototype bugs explained!** - Author not stated, jerkeby.se.
+**What is prototype poisoning? Prototype bugs explained!** - Christoffer Jerkeby, jerkeby.se.
 
 - Published: 2022-09-14
 - Original: <https://www.jerkeby.se/newsletter/posts/prototype-poisoning/>

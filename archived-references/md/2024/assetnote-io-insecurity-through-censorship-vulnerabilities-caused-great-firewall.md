@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.assetnote.io/resources/research/insecurity-through-censorship-vulnerabilities-caused-by-the-great-firewall"
     title: "Insecurity through Censorship: Vulnerabilities Caused by The Great Firewall"
+    author: Shubham Shah
 also_at: []
-authors: []
+authors:
+  - Shubham Shah
 canonical_url: ""
 cited_by:
   - "2024.md:23"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Insecurity through Censorship: Vulnerabilities Caused by The Great Firewall
 
-**Insecurity through Censorship: Vulnerabilities Caused by The Great Firewall** - Author not stated, assetnote.io.
+**Insecurity through Censorship: Vulnerabilities Caused by The Great Firewall** - Shubham Shah, assetnote.io.
 
 - Published: date not stated
 - Original: <https://www.assetnote.io/resources/research/insecurity-through-censorship-vulnerabilities-caused-by-the-great-firewall>

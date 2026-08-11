@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://blog.doyensec.com/2024/07/11/database-race-conditions.html"
     title: A Race to the Bottom - Database Transactions Undermining Your AppSec
+    author: Viktor Chuchurski
 also_at: []
-authors: []
+authors:
+  - Viktor Chuchurski
 canonical_url: ""
 cited_by:
   - "2024.md:34"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # A Race to the Bottom - Database Transactions Undermining Your AppSec
 
-**A Race to the Bottom - Database Transactions Undermining Your AppSec** - Author not stated, blog.doyensec.com.
+**A Race to the Bottom - Database Transactions Undermining Your AppSec** - Viktor Chuchurski, blog.doyensec.com.
 
 - Published: date not stated
 - Original: <https://blog.doyensec.com/2024/07/11/database-race-conditions.html>

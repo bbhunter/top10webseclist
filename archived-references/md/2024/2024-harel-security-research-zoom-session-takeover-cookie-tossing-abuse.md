@@ -12,9 +12,13 @@ sources:
   - id: original
     resource: "https://nokline.github.io/bugbounty/2024/06/07/Zoom-ATO.html"
     title: Zoom Session Takeover - Cookie Tossing Payloads, OAuth Dirty Dancing, Browser Permissions Hijacking, and WAF abuse
+    author: Sudi, BrunoZero, H4R3L
     last_modified: 2024-06-07
 also_at: []
-authors: []
+authors:
+  - Sudi
+  - BrunoZero
+  - H4R3L
 canonical_url: ""
 cited_by:
   - "2024.md:63"
@@ -42,7 +46,7 @@ translation_of: ""
 
 # Zoom Session Takeover - Cookie Tossing Payloads, OAuth Dirty Dancing, Browser Permissions Hijacking, and WAF abuse
 
-**Zoom Session Takeover - Cookie Tossing Payloads, OAuth Dirty Dancing, Browser Permissions Hijacking, and WAF abuse** - Author not stated, Harel Security Research.
+**Zoom Session Takeover - Cookie Tossing Payloads, OAuth Dirty Dancing, Browser Permissions Hijacking, and WAF abuse** - Sudi, BrunoZero, H4R3L, Harel Security Research.
 
 - Published: 2024-06-07
 - Original: <https://nokline.github.io/bugbounty/2024/06/07/Zoom-ATO.html>

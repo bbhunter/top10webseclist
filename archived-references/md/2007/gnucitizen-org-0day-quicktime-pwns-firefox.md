@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://www.gnucitizen.org/projects/0day-quicktime-pwns-firefox/"
     title: "0DAY: QuickTime pwns Firefox"
+    author: pdp
   - id: capture
     resource: "https://web.archive.org/web/20071214054935/https://www.gnucitizen.org/projects/0day-quicktime-pwns-firefox/"
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: ""
 cited_by:
   - "2007.md:89"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # 0DAY: QuickTime pwns Firefox
 
-**0DAY: QuickTime pwns Firefox** - Author not stated, gnucitizen.org.
+**0DAY: QuickTime pwns Firefox** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/projects/0day-quicktime-pwns-firefox/>

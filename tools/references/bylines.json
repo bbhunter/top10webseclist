@@ -114,6 +114,14 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://agarri.fr/blog": {
+      "authors": [
+        "Nicolas Grégoire"
+      ],
+      "evidence": "Posted by Nicolas Grégoire | Permanent link",
+      "confidence": "high",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
+    },
     "https://agent-security.cs.washington.edu/agentic_browsers_sop.html": {
       "authors": [
         "Franziska Roesner",
@@ -395,6 +403,30 @@
       "evidence": "Authors:Huijun Zhou, Xiaohan Zhang, Haozhe Zhang, Haoyang Zhang, Mi Zhang, Min Yang",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://assetnote.io/resources/research/chaining-three-bugs-to-access-all-your-servicenow-data": {
+      "authors": [
+        "Adam Kues"
+      ],
+      "evidence": "Written by: Adam Kues",
+      "confidence": "high",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
+    },
+    "https://assetnote.io/resources/research/how-an-obscure-php-footgun-led-to-rce-in-craft-cms": {
+      "authors": [
+        "Adam Kues"
+      ],
+      "evidence": "Written by: Adam Kues",
+      "confidence": "high",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
+    },
+    "https://assetnote.io/resources/research/insecurity-through-censorship-vulnerabilities-caused-by-the-great-firewall": {
+      "authors": [
+        "Shubham Shah"
+      ],
+      "evidence": "Written by: Shubham Shah",
+      "confidence": "high",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
     },
     "https://av.tib.eu/media/62200": {
       "authors": [
@@ -818,6 +850,14 @@
       "evidence": "Introducing CSPT2CSRF 02 Jul 2024 - Posted by Maxence Schmitt Doyensec CSPT2CSRF",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://blog.doyensec.com/2024/07/11/database-race-conditions.html": {
+      "authors": [
+        "Viktor Chuchurski"
+      ],
+      "evidence": "This research was presented by Viktor Chuchurski (@viktorot) at the 2024 OWASP Global AppSec",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
     },
     "https://blog.doyensec.com/2024/10/02/class-pollution-ruby.html": {
       "authors": [
@@ -1935,6 +1975,14 @@
       "confidence": "medium",
       "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
+    "https://gnucitizen.org/projects/0day-quicktime-pwns-firefox": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "» comments rss | posted by » pdp",
+      "confidence": "high",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
+    },
     "https://googleprojectzero.blogspot.com/2022/11/gregor-samsa-exploiting-java-xml.html": {
       "authors": [
         "Felix Wilhelm"
@@ -2009,6 +2057,14 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://hackademix.net/2010/08/17/lost-in-translation-asps-homoxssuality": {
+      "authors": [
+        "ma1"
+      ],
+      "evidence": "## By ma1 Hacker, atheist, humanist, dad, mozillian, security breaker and builder, creator of NoScript",
+      "confidence": "high",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
+    },
     "https://hackemall.live/index.php/2020/03/31/akamai-web-application-firewall-bypass-journey-exploiting-google-bigquery-sql-injection-vulnerability": {
       "authors": [
         "Duc Nguyen The"
@@ -2016,6 +2072,14 @@
       "evidence": "By Duc Nguyen The, March 31, 2020",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://hackerone.com/reports/2089042": {
+      "authors": [
+        "lil_endian"
+      ],
+      "evidence": "lil_endian submitted a report to **Yelp**. July 28, 2023, 11:12pm UTC",
+      "confidence": "high",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
     },
     "https://hitcon.org/2019/CMT/slide-files/d1_s0_r0_keynote.pdf": {
       "authors": [
@@ -2643,6 +2707,14 @@
       "confidence": "medium",
       "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
+    "https://jerkeby.se/newsletter/posts/prototype-poisoning": {
+      "authors": [
+        "Christoffer Jerkeby"
+      ],
+      "evidence": "Application security, change management and detection: Christoffer Jerkeby",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
+    },
     "https://jianjunchen.com/p/wafmanis.sp24.pdf": {
       "authors": [
         "Qi Wang",
@@ -2722,6 +2794,14 @@
       "evidence": "Author: **Frans Rosén** Knowledge Advisor @fransrosen",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://labs.integrity.pt/articles/from-0-day-to-exploit-buffer-overflow-in-belkin-n750-cve-2014-1635": {
+      "authors": [
+        "Marco Vaz"
+      ],
+      "evidence": "#Author : Discovered and developed by Marco Vaz <mv@integrity.pt>",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
     },
     "https://labs.mwrinfosecurity.com/blog/from-http-referer-to-aws-security-credentials": {
       "authors": [
@@ -3864,6 +3944,16 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://nokline.github.io/bugbounty/2024/06/07/Zoom-ATO.html": {
+      "authors": [
+        "Sudi",
+        "BrunoZero",
+        "H4R3L"
+      ],
+      "evidence": "This finding, exploit and writeup was a thanks to a team-effort between Sudi, BrunoZero and H4R3L.",
+      "confidence": "high",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
+    },
     "https://notsosecure.com/exploiting-ssrf-in-aws-elastic-beanstalk": {
       "authors": [
         "Sunil Yadav"
@@ -3962,6 +4052,20 @@
       "evidence": "published on 2014-06-04 13:33:37 by phrag",
       "confidence": "medium",
       "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://phreedom.org/research/rogue-ca": {
+      "authors": [
+        "Alexander Sotirov",
+        "Marc Stevens",
+        "Jacob Appelbaum",
+        "Arjen Lenstra",
+        "David Molnar",
+        "Dag Arne Osvik",
+        "Benne de Weger"
+      ],
+      "evidence": "Co-authored by Alexander Sotirov, Marc Stevens, Jacob Appelbaum, Arjen Lenstra, David Molnar, Dag Arne Osvik, Benne de Weger",
+      "confidence": "high",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
     },
     "https://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf": {
       "authors": [
@@ -4626,6 +4730,15 @@
       "confidence": "medium",
       "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
+    "https://sec-consult.com/blog/detail/melting-the-dns-iceberg-taking-over-your-infrastructure-kaminsky-style": {
+      "authors": [
+        "Timo Longin",
+        "Clemens Stockenreitner"
+      ],
+      "evidence": "This research has been performed by Timo Longin and Clemens Stockenreitner and published on behalf of the SEC Consult Vulnerability Lab.",
+      "confidence": "high",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
+    },
     "https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide": {
       "authors": [
         "Timo Longin"
@@ -4641,6 +4754,14 @@
       "evidence": "Abusing PHP Sockets For Fun And Profit OWASP April 2008 Rodrigo Marcos rodrigo.marcos@secforce.co.uk",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://seckb.yehg.net/2012/06/xss-gaining-access-to-httponly-cookie.html": {
+      "authors": [
+        "Aung Khant"
+      ],
+      "evidence": "Stealing HttpOnly Cookie - by Aung Khant, YGN Ethical Hacker Group, http://yehg.net/",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
     },
     "https://seclab.cs.ucsb.edu/publications/nikiforakis2013cookieless_monster": {
       "authors": [
@@ -4758,6 +4879,22 @@
       "evidence": "Gunes Acar, Christian Eubank, Steven Englehardt, Marc Juarez, Arvind Narayanan, Claudia Diaz",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs": {
+      "authors": [
+        "Inferno"
+      ],
+      "evidence": "Discovered by : Inferno",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
+    },
+    "https://securethoughts.com/2009/11/using-blended-browser-threats-involving-chrome-to-steal-files-on-your-computer": {
+      "authors": [
+        "Inferno"
+      ],
+      "evidence": "- Discovered by | : Inferno |",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
     },
     "https://securing.pl/en/cve-2024-50603-aviatrix-network-controller-command-injection-vulnerability": {
       "authors": [
@@ -5967,6 +6104,22 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://usenix.org/conference/usenixsecurity24/presentation/du": {
+      "authors": [
+        "Wenlong Du",
+        "Jian Li",
+        "Yanhao Wang",
+        "Libo Chen",
+        "Ruijie Zhao",
+        "Junmin Zhu",
+        "Zhengguang Han",
+        "Yijun Wang",
+        "Zhi Xue"
+      ],
+      "evidence": "author = {Wenlong Du and Jian Li and Yanhao Wang and Libo Chen and Ruijie Zhao and Junmin Zhu and Zhengguang Han and Yijun Wang and Zhi Xue}",
+      "confidence": "high",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
+    },
     "https://usenix.org/conference/usenixsecurity24/presentation/gast": {
       "authors": [
         "Stefan Gast",
@@ -6273,6 +6426,14 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://vupen.com/blog/20140520.Advanced_Exploitation_Firefox_UaF_Pwn2Own_2014.php": {
+      "authors": [
+        "Arno"
+      ],
+      "evidence": "Published on 2014-05-20 17:19:47 UTC by Arno, Security Researcher @ VUPEN",
+      "confidence": "high",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
+    },
     "https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part1.html": {
       "authors": [
         "Louis Jannett"
@@ -6465,6 +6626,22 @@
       "evidence": "Posted by Nate McFeters on September 24th, 2007",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://xs-sniper.com/blog/2007/09/28/all-your-google-docs-are-belong-to-us": {
+      "authors": [
+        "Billy Rios"
+      ],
+      "evidence": "Billy (BK) Rios » All Your Google Docs are Belong To US…",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
+    },
+    "https://xs-sniper.com/blog/2008/01/08/theres-an-oak-tree-in-my-blog": {
+      "authors": [
+        "Billy Rios"
+      ],
+      "evidence": "Billy (BK) Rios » There’s an OAK TREE in my blog!?!?!",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T20:21:52+00:00"
     },
     "https://xs-sniper.com/blog/2012/10/11/content-smuggling": {
       "authors": [

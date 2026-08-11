@@ -12,11 +12,19 @@ sources:
   - id: original
     resource: "http://www.phreedom.org/research/rogue-ca/"
     title: Creating a rogue CA certificate
+    author: Alexander Sotirov, Marc Stevens, Jacob Appelbaum, Arjen Lenstra, David Molnar, Dag Arne Osvik, Benne de Weger
 also_at: []
-authors: []
+authors:
+  - Alexander Sotirov
+  - Marc Stevens
+  - Jacob Appelbaum
+  - Arjen Lenstra
+  - David Molnar
+  - Dag Arne Osvik
+  - Benne de Weger
 canonical_url: ""
 cited_by:
-  - "2008.md:85"
+  - "2008.md:86"
   - "2009.md:5"
 commit: ""
 content_sha256: d0180409cdc84049b98722e8e99ee365500a4f7718ac6b8820037a0eddf31d94
@@ -42,7 +50,7 @@ translation_of: ""
 
 # Creating a rogue CA certificate
 
-**Creating a rogue CA certificate** - Author not stated, phreedom.org.
+**Creating a rogue CA certificate** - Alexander Sotirov, Marc Stevens, Jacob Appelbaum, Arjen Lenstra, David Molnar, Dag Arne Osvik, Benne de Weger, phreedom.org.
 
 - Published: date not stated
 - Original: <http://www.phreedom.org/research/rogue-ca/>

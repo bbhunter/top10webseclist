@@ -12,8 +12,11 @@ sources:
   - id: original
     resource: "https://sec-consult.com/blog/detail/melting-the-dns-iceberg-taking-over-your-infrastructure-kaminsky-style/"
     title: "Melting the DNS Iceberg: Taking over your infrastructure Kaminsky style"
+    author: Timo Longin, Clemens Stockenreitner
 also_at: []
-authors: []
+authors:
+  - Timo Longin
+  - Clemens Stockenreitner
 canonical_url: ""
 cited_by:
   - "2022.md:28"
@@ -41,7 +44,7 @@ translation_of: ""
 
 # Melting the DNS Iceberg: Taking over your infrastructure Kaminsky style
 
-**Melting the DNS Iceberg: Taking over your infrastructure Kaminsky style** - Author not stated, SEC Consult.
+**Melting the DNS Iceberg: Taking over your infrastructure Kaminsky style** - Timo Longin, Clemens Stockenreitner, SEC Consult.
 
 - Published: date not stated
 - Original: <https://sec-consult.com/blog/detail/melting-the-dns-iceberg-taking-over-your-infrastructure-kaminsky-style/>

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://securethoughts.com/2009/11/using-blended-browser-threats-involving-chrome-to-steal-files-on-your-computer/"
     title: Using Blended Browser Threats involving Chrome to steal files on your computer
+    author: Inferno
   - id: canonical
     resource: "https://securethoughts.com/2009/11/using-blended-browser-threats-involving-chrome-to-steal-files-on-your-computer/"
 also_at: []
-authors: []
+authors:
+  - Inferno
 canonical_url: "https://securethoughts.com/2009/11/using-blended-browser-threats-involving-chrome-to-steal-files-on-your-computer/"
 cited_by:
   - "2009.md:67"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Using Blended Browser Threats involving Chrome to steal files on your computer
 
-**Using Blended Browser Threats involving Chrome to steal files on your computer** - Author not stated, securethoughts.com.
+**Using Blended Browser Threats involving Chrome to steal files on your computer** - Inferno, securethoughts.com.
 
 - Published: date not stated
 - Original: <http://securethoughts.com/2009/11/using-blended-browser-threats-involving-chrome-to-steal-files-on-your-computer/>

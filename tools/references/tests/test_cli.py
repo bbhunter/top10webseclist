@@ -186,6 +186,20 @@ class RecoverySelectorTests(unittest.TestCase):
         self.assertTrue(excerpt.endswith("TAIL"))
         self.assertIn("[…]", excerpt)
 
+    def test_the_excerpt_reaches_a_byline_buried_in_a_long_document(self):
+        """Head-and-tail alone hid a byline from 130 of 536 documents: an author
+        block partway down, an acknowledgements section, a closing credit."""
+        body = ("opening. " * 200) + " About the author: Alex Example writes here. " \
+               + ("filler. " * 400) + " closing words."
+        excerpt = refs._byline_excerpt(body)
+        self.assertIn("Alex Example", excerpt)
+        self.assertTrue(excerpt.startswith("opening."))
+        self.assertTrue(excerpt.endswith("closing words."))
+
+    def test_the_excerpt_stays_bounded_when_a_document_says_by_constantly(self):
+        body = "start. " + ("by Someone Named Here and more text. " * 400) + " end."
+        self.assertLess(len(refs._byline_excerpt(body)), 3000)
+
     def test_a_read_byline_is_refused_without_the_words_it_was_read_from(self):
         known = {"https://one.example/a": {}}
         good = {"authors": ["Alex Example"], "evidence": "By Alex Example",

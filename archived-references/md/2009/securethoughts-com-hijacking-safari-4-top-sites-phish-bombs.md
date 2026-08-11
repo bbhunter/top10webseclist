@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/"
     title: Hijacking Safari 4 Top Sites with Phish Bombs
+    author: Inferno
   - id: canonical
     resource: "https://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/"
 also_at: []
-authors: []
+authors:
+  - Inferno
 canonical_url: "https://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/"
 cited_by:
   - "2009.md:69"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Hijacking Safari 4 Top Sites with Phish Bombs
 
-**Hijacking Safari 4 Top Sites with Phish Bombs** - Author not stated, securethoughts.com.
+**Hijacking Safari 4 Top Sites with Phish Bombs** - Inferno, securethoughts.com.
 
 - Published: date not stated
 - Original: <http://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/>

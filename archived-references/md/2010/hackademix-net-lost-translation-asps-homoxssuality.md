@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://hackademix.net/2010/08/17/lost-in-translation-asps-homoxssuality/"
     title: Lost in Translation (ASP’s HomoXSSuality)
+    author: ma1
 also_at: []
-authors: []
+authors:
+  - ma1
 canonical_url: ""
 cited_by:
   - "2010.md:57"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Lost in Translation (ASP’s HomoXSSuality)
 
-**Lost in Translation (ASP’s HomoXSSuality)** - Author not stated, hackademix.net.
+**Lost in Translation (ASP’s HomoXSSuality)** - ma1, hackademix.net.
 
 - Published: date not stated
 - Original: <https://hackademix.net/2010/08/17/lost-in-translation-asps-homoxssuality/>

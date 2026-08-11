@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://xs-sniper.com/blog/2007/09/28/all-your-google-docs-are-belong-to-us/"
     title: Billy (BK) Rios » All Your Google Docs are Belong To US…
+    author: Billy Rios
   - id: capture
     resource: "https://web.archive.org/web/20160408035749/http://xs-sniper.com/blog/2007/09/28/all-your-google-docs-are-belong-to-us/"
 also_at: []
-authors: []
+authors:
+  - Billy Rios
 canonical_url: ""
 cited_by:
   - "2007.md:30"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Billy (BK) Rios » All Your Google Docs are Belong To US…
 
-**Billy (BK) Rios » All Your Google Docs are Belong To US…** - Author not stated, xs-sniper.com.
+**Billy (BK) Rios » All Your Google Docs are Belong To US…** - Billy Rios, xs-sniper.com.
 
 - Published: date not stated
 - Original: <http://xs-sniper.com/blog/2007/09/28/all-your-google-docs-are-belong-to-us/>

@@ -2389,6 +2389,35 @@ def command_index(args):
     return 0
 
 
+# Where a byline hides in the middle of a long document: an author block partway
+# down, an "About the author" section, a talk's closing credits, a paper's
+# acknowledgements. Head-and-tail alone hid one from 130 of 536 documents.
+_BYLINE_MARKER = re.compile(
+    r"(?:^|\s)(?:by|authors?|posted by|written by|about the authors?"
+    r"|acknowledge?ments)\b[:\s]", re.I)
+_BYLINE_NAME = re.compile(
+    r"[A-Z][a-zÀ-ſ'’-]{1,20}(?:\s+[A-Z][a-zÀ-ſ'’-]{1,20}){1,3}")
+
+
+def _byline_windows(middle, budget=3, span=220):
+    """Bounded passages from the unseen middle that look like they name someone.
+
+    Deliberately generous about what it offers and silent about what it means:
+    deciding whether "by" introduces an author or a technique is the reviewer's
+    job, and a window that turns out to be neither costs one line of reading.
+    """
+    windows, used = [], 0
+    for match in _BYLINE_MARKER.finditer(middle):
+        if used >= budget:
+            break
+        start = max(0, match.start() - 40)
+        chunk = middle[start:start + span]
+        if _BYLINE_NAME.search(chunk):
+            windows.append(chunk.strip())
+            used += 1
+    return windows
+
+
 def _byline_excerpt(text, head=1600, tail=400):
     """The part of an archived file a byline would be in, minus our own words.
 
@@ -2416,7 +2445,10 @@ def _byline_excerpt(text, head=1600, tail=400):
     body = re.sub(r"\s+", " ", body).strip()
     if len(body) <= head + tail:
         return body
-    return body[:head].strip() + " […] " + body[-tail:].strip()
+    parts = [body[:head].strip()]
+    parts.extend(_byline_windows(body[head:-tail]))
+    parts.append(body[-tail:].strip())
+    return " […] ".join(parts)
 
 
 def _byline_queue(manifest, root, config, only="", limit=None, recorded=()):

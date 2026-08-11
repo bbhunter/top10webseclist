@@ -12,13 +12,15 @@ sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://www.agarri.fr/blog/"
     title: "Agarri : Sécurité informatique offensive"
+    author: Nicolas Grégoire
   - id: canonical
     resource: "http://web.archive.org/web/20160425033628/http://www.agarri.fr/blog/"
   - id: capture
     resource: "https://web.archive.org/web/20160507023636/http://www.agarri.fr/blog/"
 also_at:
   - "http://www.agarri.fr/docs/ZeroNights_2012-Nicolas_Gregoire-XML_Hacking.pdf"
-authors: []
+authors:
+  - Nicolas Grégoire
 canonical_url: "http://web.archive.org/web/20160425033628/http://www.agarri.fr/blog/"
 cited_by:
   - "2013.md:33"
@@ -46,7 +48,7 @@ translation_of: ""
 
 # Agarri : Sécurité informatique offensive
 
-**Agarri : Sécurité informatique offensive** - Author not stated, agarri.fr.
+**Agarri : Sécurité informatique offensive** - Nicolas Grégoire, agarri.fr.
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://www.agarri.fr/blog/>

@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://hackerone.com/reports/2089042"
     title: "Yelp disclosed on HackerOne: yelp.com and biz.yelp.com ATO via XSS..."
+    author: lil_endian
 also_at: []
-authors: []
+authors:
+  - lil_endian
 canonical_url: ""
 cited_by:
   - "2023.md:61"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Yelp disclosed on HackerOne: yelp.com and biz.yelp.com ATO via XSS...
 
-**Yelp disclosed on HackerOne: yelp.com and biz.yelp.com ATO via XSS...** - Author not stated, HackerOne.
+**Yelp disclosed on HackerOne: yelp.com and biz.yelp.com ATO via XSS...** - lil_endian, HackerOne.
 
 - Published: date not stated
 - Original: <https://hackerone.com/reports/2089042>

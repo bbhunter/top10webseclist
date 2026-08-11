@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.assetnote.io/resources/research/chaining-three-bugs-to-access-all-your-servicenow-data"
     title: Chaining Three Bugs to Access All Your ServiceNow Data
+    author: Adam Kues
 also_at: []
-authors: []
+authors:
+  - Adam Kues
 canonical_url: ""
 cited_by:
   - "2024.md:94"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Chaining Three Bugs to Access All Your ServiceNow Data
 
-**Chaining Three Bugs to Access All Your ServiceNow Data** - Author not stated, assetnote.io.
+**Chaining Three Bugs to Access All Your ServiceNow Data** - Adam Kues, assetnote.io.
 
 - Published: date not stated
 - Original: <https://www.assetnote.io/resources/research/chaining-three-bugs-to-access-all-your-servicenow-data>

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://xs-sniper.com/blog/2008/01/08/theres-an-oak-tree-in-my-blog/"
     title: Billy (BK) Rios » There’s an OAK TREE in my blog!?!?!
+    author: Billy Rios
   - id: capture
     resource: "https://web.archive.org/web/20150908044241/http://xs-sniper.com/blog/2008/01/08/theres-an-oak-tree-in-my-blog/"
 also_at: []
-authors: []
+authors:
+  - Billy Rios
 canonical_url: ""
 cited_by:
   - "2007.md:27"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Billy (BK) Rios » There’s an OAK TREE in my blog!?!?!
 
-**Billy (BK) Rios » There’s an OAK TREE in my blog!?!?!** - Author not stated, xs-sniper.com.
+**Billy (BK) Rios » There’s an OAK TREE in my blog!?!?!** - Billy Rios, xs-sniper.com.
 
 - Published: date not stated
 - Original: <http://xs-sniper.com/blog/2008/01/08/theres-an-oak-tree-in-my-blog/>
