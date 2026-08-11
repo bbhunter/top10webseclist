@@ -119,6 +119,7 @@ const annualPdfFiles = yearRecords.filter((record) => record.ranked !== false).m
 const missingAnnualPdfs = [];
 for (const file of annualPdfFiles) if (!(await exists(file))) missingAnnualPdfs.push(file);
 const mockupFiles = [
+  "website/404.html",
   "website/index.html",
   "website/archive-years.json",
   "website/brand-mark.svg",
@@ -138,6 +139,7 @@ const constellationSource = await readFile(path.join(root, "website/constellatio
 const stylesSource = await readFile(path.join(root, "website/styles.css"), "utf8");
 const buildSiteSource = await readFile(path.join(root, "website/build-site.mjs"), "utf8");
 const headersSource = await readFile(path.join(root, "website/_headers"), "utf8");
+const notFoundSource = await readFile(path.join(root, "website/404.html"), "utf8");
 const progressiveCatalogue = JSON.parse(await readFile(path.join(root, "website/data/catalogue.json"), "utf8"));
 const progressiveRecord = [...progressiveCatalogue.years].reverse().find((record) => record.status === "final") || progressiveCatalogue.years.at(-1);
 const progressiveShard = JSON.parse(await readFile(path.join(root, `website/data/collections/${progressiveRecord.id}.json`), "utf8"));
@@ -187,6 +189,9 @@ const hostileMarkdown = [
   "<https://example.test/?a=1&b=2>"
 ].join("\n\n");
 const hostileHtml = clientEval(`markdownDocument(${JSON.stringify(hostileMarkdown)}).html`);
+const externalImageHtml = clientEval(`markdownDocument("![private probe](https://127.0.0.1/admin)").html`);
+const mutationMarkdown = "[**label**](https://example.test/a__b**c) and `code`";
+const mutationHtml = clientEval(`markdownDocument(${JSON.stringify(mutationMarkdown)}).html`);
 const hostileRegistryRecord = [{ id: "2025", label: '"><img src=x onerror=globalThis.pwned=7>', status: "final" }];
 const hostileYearPills = clientEval(`YEAR_RECORDS = ${JSON.stringify(hostileRegistryRecord)}; yearPills("2025")`);
 // The collection id reaches data-year/data-signal-year/data-term-command as an
@@ -257,6 +262,11 @@ const activeClientSecurityChecks = [
   clientEval(`compileSafeGrep("/xss|csrf/i").regex.test("XSS research")`) === true,
   Boolean(clientEval(`compileSafeGrep("(a+)+$").error`)),
   Boolean(clientEval(`compileSafeGrep("(a|aa)+$").error`)),
+  Boolean(clientEval(`compileSafeGrep("a.*b").error`)),
+  Boolean(clientEval(`compileSafeGrep("a+a?$").error`)),
+  clientEval(`compileSafeGrep("^CVE-\\\\d{4}-\\\\d{1,7}$").regex.test("CVE-2026-12345")`) === true,
+  !externalImageHtml.includes("<img") && externalImageHtml.includes("external-image-reference") && externalImageHtml.includes("target=\"_blank\""),
+  !mutationHtml.match(/(?:href|src)="[^"]*</) && mutationHtml.includes("<strong>label</strong>") && mutationHtml.includes("<code>code</code>"),
   terminalPaths === '["/","/","/2016-17",true]',
   // Route names must be own properties: a bare VIEWS[name] lookup also answers
   // for every Object.prototype key, so "#__proto__" would pass the guard.
@@ -273,11 +283,13 @@ const securityChecks = [
   indexSource.includes("Content-Security-Policy"),
   indexSource.includes("object-src 'none'"),
   indexSource.includes("frame-src 'self'"),
+  indexSource.includes("img-src 'self' data:") && !indexSource.includes("img-src 'self' data: https:"),
   indexSource.includes('id="pdf-dialog"'),
   indexSource.includes('id="pdf-frame"'),
   appSource.includes("function safeArchivePath"),
   appSource.includes('method: "HEAD"'),
   !/img-src[^;]*\bhttp:/.test(indexSource),
+  !hostileHtml.includes("<img"),
   appSource.includes('`md-${'),
   !/\beval\s*\(|new\s+Function\s*\(|document\.write\s*\(/.test(sourceBundle),
   unsafeBlankTargets.length === 0,
@@ -424,10 +436,12 @@ const deploymentChecks = [
   appSource.includes("function toggleSiteFullscreen"),
   appSource.includes("requestFullscreen(document.documentElement)"),
   appSource.includes("function toggleViewFullscreen"),
+  appSource.includes("function setViewFullscreenFallback") && appSource.includes("viewButton.hidden = !supportedView"),
   stylesSource.includes("height: 100dvh"),
   stylesSource.includes(".investigation-board { display: grid; min-height: 0 !important"),
   stylesSource.includes("main:fullscreen .favourites-view"),
   stylesSource.includes("main:fullscreen .museum-map"),
+  stylesSource.includes("main.view-fullscreen-fallback .museum-map") && stylesSource.includes("main.view-fullscreen-fallback .library-hall"),
   progressiveCatalogue.hosting?.cloudflareMaxAssetBytes === 26214400,
   Object.keys(progressiveCatalogue.hosting?.largePdfFallbacks || {}).length >= 1,
   Object.values(progressiveCatalogue.hosting?.largePdfFallbacks || {}).every((url) => String(url).startsWith("https://irsdl.github.io/webhacklist/")),
@@ -435,7 +449,14 @@ const deploymentChecks = [
   buildSiteSource.includes("fileCount > 20000"),
   buildSiteSource.includes('target === "github"') && buildSiteSource.includes("Object.keys(largeFallbacks)"),
   buildSiteSource.includes("GitHub Pages site-size limit exceeded"),
+  buildSiteSource.includes("default-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'"),
   headersSource.includes("frame-ancestors 'self'"),
+  headersSource.includes("Cross-Origin-Opener-Policy: same-origin"),
+  headersSource.includes("Cross-Origin-Resource-Policy: same-origin"),
+  headersSource.includes("Origin-Agent-Cluster: ?1"),
+  headersSource.includes("Strict-Transport-Security: max-age=31536000"),
+  headersSource.includes("fullscreen=(self)"),
+  notFoundSource.includes("default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; object-src 'none'"),
   headersSource.includes("/data/collections/*"),
   headersSource.includes("max-age=31536000, immutable")
 ];

@@ -30,8 +30,8 @@ const STATIC_FILES = [
 ];
 const GITHUB_INDEX = `<!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Web Hack List file origin</title></head>
-<body><main><h1>Web Hack List file origin</h1><p>This GitHub Pages project serves only oversized preserved files for <a href="https://webhacklist.com/">webhacklist.com</a>.</p></main></body>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'"><title>Web Hack List file origin</title></head>
+<body><main><h1>Web Hack List file origin</h1><p>This GitHub Pages project serves only oversized preserved files for <a href="https://webhacklist.com/" rel="noreferrer">webhacklist.com</a>.</p></main></body>
 </html>
 `;
 

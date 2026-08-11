@@ -229,7 +229,7 @@ function safeExternalUrl(value) {
 // that one escaping layer before URL parsing, then escape the canonical URL
 // again at the HTML sink. This prevents quote/entity tricks from manufacturing
 // an attribute while keeping ordinary query strings intact.
-function safeMarkdownUrl(value, httpsOnly = false) {
+function safeMarkdownUrl(value) {
   const decoded = String(value || "")
     .replaceAll("&quot;", '"')
     .replaceAll("&#039;", "'")
@@ -237,8 +237,7 @@ function safeMarkdownUrl(value, httpsOnly = false) {
     .replaceAll("&gt;", ">")
     .replaceAll("&amp;", "&");
   const safe = safeExternalUrl(decoded);
-  if (!safe || (httpsOnly && !safe.startsWith("https://"))) return "";
-  return safe;
+  return safe || "";
 }
 
 function safeArchivePath(value, kind) {
@@ -825,7 +824,10 @@ function wireShell() {
       event.preventDefault();
       $("#global-search").focus();
     }
-    if (event.key === "Escape" && !$("#global-results").hidden) closeGlobalSearch();
+    if (event.key === "Escape" && viewFullscreenFallbackActive()) {
+      setViewFullscreenFallback(false);
+      syncFullscreenControls();
+    } else if (event.key === "Escape" && !$("#global-results").hidden) closeGlobalSearch();
   });
 
   window.addEventListener("hashchange", async () => {
@@ -1094,6 +1096,16 @@ function fullscreenAvailable(target = document.documentElement) {
   return Boolean(target && (target.requestFullscreen || target.webkitRequestFullscreen));
 }
 
+function viewFullscreenFallbackActive() {
+  return $("#main-content")?.classList.contains("view-fullscreen-fallback") || false;
+}
+
+function setViewFullscreenFallback(active) {
+  const target = $("#main-content");
+  target?.classList.toggle("view-fullscreen-fallback", Boolean(active));
+  document.body.classList.toggle("view-fullscreen-fallback-open", Boolean(active));
+}
+
 function updateFullscreenButton(button, active, title) {
   if (!button) return;
   button.setAttribute("aria-pressed", String(active));
@@ -1112,8 +1124,11 @@ function syncFullscreenControls() {
 
   const viewButton = $("#view-fullscreen");
   const supportedView = FULLSCREEN_VIEWS.has(state.view);
-  viewButton.hidden = !fullscreenAvailable($("#main-content")) || (!supportedView && current !== $("#main-content"));
-  updateFullscreenButton(viewButton, active, "Fill the screen with this archive mode");
+  // Focus mode is a safe CSS fallback when a browser exposes no Fullscreen API
+  // (or refuses it because of browser UI policy). Every real archive view keeps
+  // the control, including the Museum and Library reading views.
+  viewButton.hidden = !supportedView;
+  updateFullscreenButton(viewButton, active || viewFullscreenFallbackActive(), "Fill the screen with this archive mode");
 }
 
 async function requestFullscreen(target) {
@@ -1128,6 +1143,7 @@ async function exitFullscreen() {
 
 async function toggleSiteFullscreen() {
   try {
+    if (viewFullscreenFallbackActive()) setViewFullscreenFallback(false);
     if (fullscreenElement()) await exitFullscreen();
     else await requestFullscreen(document.documentElement);
   } catch (error) {
@@ -1138,11 +1154,20 @@ async function toggleSiteFullscreen() {
 
 async function toggleViewFullscreen() {
   const target = $("#main-content");
+  if (viewFullscreenFallbackActive()) {
+    setViewFullscreenFallback(false);
+    syncFullscreenControls();
+    return;
+  }
   try {
     if (fullscreenElement()) await exitFullscreen();
-    else if (FULLSCREEN_VIEWS.has(state.view)) await requestFullscreen(target);
+    else if (FULLSCREEN_VIEWS.has(state.view) && fullscreenAvailable(target)) await requestFullscreen(target);
+    else if (FULLSCREEN_VIEWS.has(state.view)) setViewFullscreenFallback(true);
   } catch (error) {
-    toast(`Full screen is unavailable: ${error.message}`);
+    // A rejected native request still gets a full-window, scrollable mode. It
+    // does not claim access to browser chrome; it only keeps the archive usable.
+    setViewFullscreenFallback(true);
+    toast("Browser full screen was unavailable; using full-window focus mode");
   }
   syncFullscreenControls();
 }
@@ -1778,8 +1803,76 @@ function terminalTokens(command) {
 }
 
 // JavaScript regexes cannot be interrupted once running. Keep grep inside a
-// deliberately conservative, bounded subset: no assertions/backreferences,
-// no repeated groups or stacked quantifiers, and short patterns/haystacks.
+// deliberately conservative, FINITE subset: no assertions/backreferences,
+// no quantified groups and no unbounded *, + or {n,} repetition. A small
+// number of bounded atom repeats remains useful for CVEs and similar records.
+function regexSafetyIssue(source) {
+  let inClass = false;
+  let previous = "start";
+  let quantifiers = 0;
+  let rangedRepeats = 0;
+  let alternatives = 0;
+  const groups = [];
+
+  for (let index = 0; index < source.length; index++) {
+    const character = source[index];
+    if (character === "\\") {
+      const escaped = source[index + 1] || "";
+      if (!inClass && (/[1-9]/.test(escaped) || (escaped === "k" && source[index + 2] === "<"))) {
+        return "backreferences are disabled for ReDoS safety";
+      }
+      index++;
+      previous = "atom";
+      continue;
+    }
+    if (inClass) {
+      if (character === "]") { inClass = false; previous = "atom"; }
+      continue;
+    }
+    if (character === "[") { inClass = true; continue; }
+    if (character === "(") {
+      if (source[index + 1] === "?") {
+        if (source[index + 2] !== ":") return "lookarounds and special groups are disabled for ReDoS safety";
+        index += 2;
+      }
+      groups.push(index);
+      previous = "group-open";
+      continue;
+    }
+    if (character === ")") {
+      groups.pop();
+      previous = "group";
+      continue;
+    }
+    if (character === "|") {
+      if (++alternatives > 12) return "pattern has too many alternatives for the safe grep engine";
+      previous = "alternative";
+      continue;
+    }
+    if (character === "*" || character === "+") return "unbounded repetition is disabled for ReDoS safety; use a bounded repeat such as {0,32}";
+
+    let repeat = null;
+    if (character === "{") repeat = /^\{(\d+)(?:,(\d*))?\}/.exec(source.slice(index));
+    if (character === "?" || repeat) {
+      if (previous === "group") return "quantified groups are disabled for ReDoS safety";
+      if (previous === "quantifier") return "stacked quantifiers are disabled for ReDoS safety";
+      if (++quantifiers > 4) return "pattern is too complex for the safe grep engine";
+      if (repeat) {
+        const lower = Number(repeat[1]);
+        const upper = repeat[2] === undefined ? lower : repeat[2] === "" ? Infinity : Number(repeat[2]);
+        if (!Number.isFinite(upper)) return "unbounded repetition is disabled for ReDoS safety";
+        if (lower > 64 || upper > 64 || upper < lower) return "repeat bounds must be ordered and no greater than 64";
+        if (repeat[2] !== undefined && ++rangedRepeats > 1) return "multiple ranged repeats are disabled for ReDoS safety";
+        index += repeat[0].length - 1;
+      }
+      previous = "quantifier";
+      continue;
+    }
+    previous = "atom";
+  }
+  return "";
+}
+
 function compileSafeGrep(expression, insensitive = true) {
   let source = String(expression || "");
   let flags = insensitive ? "i" : "";
@@ -1791,20 +1884,8 @@ function compileSafeGrep(expression, insensitive = true) {
   if (!source) return { error: "empty regular expression" };
   if (source.length > 160) return { error: "pattern exceeds the 160-character safety limit" };
   if (/[^im]/.test(flags) || new Set(flags).size !== flags.length) return { error: "only the i and m regex flags are supported" };
-  if (/\\(?:[1-9]|k<)/.test(source)) return { error: "backreferences are disabled for ReDoS safety" };
-  if (/\(\?(?!:)/.test(source)) return { error: "lookarounds and special groups are disabled for ReDoS safety" };
-  if (/\([^)]*\)\s*(?:[*+?]|\{)/.test(source)) return { error: "quantified groups are disabled for ReDoS safety" };
-  if (/(?:[*+?]|\{\d+(?:,\d*)?\})\s*(?:[*+?]|\{)/.test(source)) return { error: "stacked quantifiers are disabled for ReDoS safety" };
-  if ((source.match(/[*+]/g) || []).length > 1) return { error: "multiple unbounded quantifiers are disabled for ReDoS safety" };
-  if ((source.match(/[|]/g) || []).length > 12 || (source.match(/(?:[*+?]|\{)/g) || []).length > 4) return { error: "pattern is too complex for the safe grep engine" };
-  let rangedRepeats = 0;
-  for (const repeat of source.matchAll(/\{(\d+)(?:,(\d*))?\}/g)) {
-    const lower = Number(repeat[1]);
-    const upper = repeat[2] === undefined ? lower : repeat[2] === "" ? 1001 : Number(repeat[2]);
-    if (repeat[2] !== undefined) rangedRepeats++;
-    if (lower > 1000 || upper > 1000 || upper < lower) return { error: "repeat bounds must be ordered and no greater than 1000" };
-  }
-  if (rangedRepeats > 1) return { error: "multiple ranged repeats are disabled for ReDoS safety" };
+  const safetyIssue = regexSafetyIssue(source);
+  if (safetyIssue) return { error: safetyIssue };
   try { return { regex: new RegExp(source, flags), source, flags }; }
   catch (error) { return { error: `invalid regular expression: ${error.message}` }; }
 }
@@ -2776,40 +2857,52 @@ function highlightCode(code, language) {
   return out + h(code.slice(last));
 }
 
+function formatInlineEmphasis(value) {
+  return value
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/__([^_]+)__/g, "<strong>$1</strong>")
+    .replace(/(^|[\s(])\*([^*\n]+)\*(?=$|[\s).,!?:;])/g, "$1<em>$2</em>")
+    .replace(/~~([^~]+)~~/g, "<del>$1</del>");
+}
+
 function inlineMarkdown(value) {
-  const codeTokens = [];
-  // The raw "<" in the placeholder cannot appear in escaped text, so document
-  // content can never collide with (or forge) a code token.
-  let output = h(value).replace(/`([^`]+)`/g, (_, code) => {
-    const token = `%%<ic:${codeTokens.length}>%%`;
-    codeTokens.push(`<code>${code}</code>`);
+  const safeTokens = [];
+  const hold = (html) => {
+    const token = `%%<inline:${safeTokens.length}>%%`;
+    safeTokens.push(html);
     return token;
+  };
+  // The raw "<" in the placeholder cannot appear in escaped text, so document
+  // content can never collide with (or forge) one of these trusted tokens.
+  let output = h(value).replace(/`([^`]+)`/g, (_, code) => {
+    return hold(`<code>${code}</code>`);
   });
 
-  // Only HTTPS images are embedded (the CSP blocks cleartext image loads);
-  // http-only images degrade to a labelled link instead of a broken icon.
+  // Preserved Markdown is third-party input. Loading its images automatically
+  // would let a document probe private-network URLs, make cookie-bearing image
+  // requests, or track every reader. Keep the URL available behind an explicit
+  // click; the archived PDF remains the durable visual copy where one exists.
   output = output.replace(/!\[([^\]]*)\]\((https?:\/\/[^\s)]+)(?:\s+&quot;[^&]*&quot;)?\)/g, (_, alt, url) => {
-    const imageUrl = safeMarkdownUrl(url, true);
-    const linkUrl = imageUrl || safeMarkdownUrl(url);
-    return imageUrl
-      ? `<img src="${h(imageUrl)}" alt="${alt}" loading="lazy" decoding="async" referrerpolicy="no-referrer">`
-      : linkUrl ? `<a href="${h(linkUrl)}" target="_blank" rel="noopener noreferrer">${alt || h(linkUrl)} (image)</a>` : alt;
+    const linkUrl = safeMarkdownUrl(url);
+    if (!linkUrl) return alt;
+    const label = formatInlineEmphasis(alt || "External article image");
+    return hold(`<span class="external-image-reference"><span>${label}</span><a href="${h(linkUrl)}" target="_blank" rel="noopener noreferrer">Open publisher image ↗</a></span>`);
   });
   output = output.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)(?:\s+&quot;[^&]*&quot;)?\)/g, (_, label, url) => {
     const safe = safeMarkdownUrl(url);
-    return safe ? `<a href="${h(safe)}" target="_blank" rel="noopener noreferrer">${label}</a>` : label;
+    return safe ? hold(`<a href="${h(safe)}" target="_blank" rel="noopener noreferrer">${formatInlineEmphasis(label)}</a>`) : label;
   });
   output = output.replace(/&lt;(https?:\/\/[^&\s]+)&gt;/g, (_, url) => {
     const safe = safeMarkdownUrl(url);
-    return safe ? `<a href="${h(safe)}" target="_blank" rel="noopener noreferrer">${h(safe)}</a>` : url;
+    return safe ? hold(`<a href="${h(safe)}" target="_blank" rel="noopener noreferrer">${h(safe)}</a>`) : url;
   });
-  output = output.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
-  output = output.replace(/__([^_]+)__/g, "<strong>$1</strong>");
-  output = output.replace(/(^|[\s(])\*([^*\n]+)\*(?=$|[\s).,!?:;])/g, "$1<em>$2</em>");
-  output = output.replace(/~~([^~]+)~~/g, "<del>$1</del>");
+  output = formatInlineEmphasis(output);
   // Function form so "$&", "$'" etc. inside untrusted code spans are never
-  // interpreted as replacement patterns.
-  codeTokens.forEach((token, index) => { output = output.replace(`%%<ic:${index}>%%`, () => token); });
+  // interpreted as replacement patterns. Reverse order restores a link that
+  // contains an earlier code token before restoring the code inside its label.
+  for (let index = safeTokens.length - 1; index >= 0; index--) {
+    output = output.replace(`%%<inline:${index}>%%`, () => safeTokens[index]);
+  }
   return output;
 }
 
@@ -2927,34 +3020,6 @@ function markdownDocument(markdown) {
   return { html: html.join("\n"), headings };
 }
 
-// A HOTLINKED PICTURE IS NOT AN ARCHIVED ONE. The preserved Markdown points at
-// the publisher's copy, so a host that has gone away, moved the file or started
-// refusing hotlinks leaves a broken icon in the middle of the research. Say what
-// happened instead, and where the picture went - the archive prints its own
-// re-encoded copy into the PDF, which is the copy that cannot rot.
-//
-// Wired as a listener rather than an `onerror` attribute: this page's CSP allows
-// no inline script, and an archived document is untrusted input besides.
-function markBrokenImages(root, item) {
-  for (const image of $$("img", root)) {
-    image.addEventListener("error", () => {
-      const source = safeExternalUrl(image.getAttribute("src") || "");
-      const caption = image.getAttribute("alt") || "";
-      const note = document.createElement("p");
-      note.className = "image-gone";
-      const where = item?.figuresInPdf
-        ? "The archive's own copy is printed in the PDF."
-        : "The archive holds no copy of this one.";
-      // A rejected URL must not become `href=""`, which silently reloads the app.
-      const original = source
-        ? ` <a href="${h(source)}" target="_blank" rel="noopener noreferrer">Try the original ↗</a>`
-        : "";
-      note.innerHTML = `<strong>${h(caption || "Image")}</strong> could not be loaded from ${h(hostOf(source) || "its publisher")}. ${h(where)}${original}`;
-      image.replaceWith(note);
-    }, { once: true });
-  }
-}
-
 // `options.original` opens the source-language file of a translated reference.
 // Everything else about the view is identical - it is the same preserved
 // document, in the words the author wrote it in.
@@ -3014,8 +3079,7 @@ async function openReader(item, options = {}) {
     if (markdown.length > 8_000_000) throw new Error("Markdown exceeds the safe reader size limit");
     if (requestToken !== readerRequestToken || state.readerItem !== item) return;
     const documentView = markdownDocument(markdown);
-    $("#reader-content").innerHTML = `<div class="archive-warning">Safe reader mode: third-party HTML is escaped, scripts cannot run, and links open separately.</div>${documentView.html}`;
-    markBrokenImages($("#reader-content"), item);
+    $("#reader-content").innerHTML = `<div class="archive-warning">Safe reader mode: third-party HTML is escaped, scripts cannot run, and external links and images require a separate click.</div>${documentView.html}`;
     $("#reader-toc").innerHTML = documentView.headings.slice(0, 40).map((heading) => `<button class="${heading.level > 2 ? "sub" : ""}" data-reader-target="${h(heading.slug)}">${h(short(heading.title, 52))}</button>`).join("");
   } catch (error) {
     if (requestToken !== readerRequestToken) return;
