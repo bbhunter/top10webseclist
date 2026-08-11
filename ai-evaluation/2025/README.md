@@ -126,3 +126,49 @@ arbitrary paper from a programme nobody has been through.
 **CCS 2025 remains unaudited.** A `webseclist-find-missed` pass over that
 programme is the outstanding work; this note exists so the imbalance is visible
 rather than closed over by a single entry.
+
+## CCS 2025 sweep (2026-08-11)
+
+The gap noted above, worked. The programme was taken from dblp rather than the
+ACM DL, which is walled: **396 entries**, filtered by mechanism keywords to **28**
+touching a web, HTTP, browser or DNS beat, and **25** after dropping posters.
+Abstracts and open-access links came from the Semantic Scholar graph API, paced,
+with 429 backing off rather than being recorded as absence. No throttling
+occurred.
+
+One correction worth recording, because it nearly poisoned the sweep. The first
+title-to-DOI mapping paired each dblp title with the *next* DOI in the document,
+which silently shifts whenever an entry has none — "Styled to Steal" came back
+with an abstract about Ethereum rollups. The reliable pairing is the COinS
+`Z3988` span, which carries `rft.atitle` and `rft_id` in one attribute. It was
+verified against RebirthDay, the one DOI already known independently.
+
+### Judged in full
+
+| Score | Verdict | List decision | Candidate |
+|---:|---|---|---|
+| 76.4 | Meaningful extension | add | [Styled to Steal: The Overlooked Attack Surface in Email Clients](https://doi.org/10.1145/3719027.3765189) |
+
+### Candidates that need the paper before they can be judged
+
+Four clear the abstract screen as offensive web technique work but resolve only
+to the ACM DL, which serves a single human request and walls a script. They are
+**not** rejected — they are unjudged, and each needs one pass through the reader:
+
+| Candidate | Why it screens in |
+|---|---|
+| [In the DOM We Trust](https://doi.org/10.1145/3719027.3765117) | Generalises script gadgets to "DOM gadgets": benign markup injection reaching request hijacking, CSRF and UI manipulation rather than only XSS. 2.6M DOM-to-sink flows across the top 15k. |
+| [Exploiting the Shared Storage API](https://doi.org/10.1145/3719027.3744848) | Attacks on a deployed Privacy Sandbox API achieving the cross-site reidentification it was built to prevent; most still work in Chrome after disclosure. |
+| [The Power to Never Be Wrong](https://doi.org/10.1145/3719027.3765051) | Two threat models against web archives — crawler-evading and anachronistic adversaries who retain control of their own snapshots. Directly relevant to an archive that relies on Wayback. |
+| [Be Aware of What You Let Pass](https://doi.org/10.1145/3719027.3765199) | URL-based authentication bypass in Java web apps: routing and authentication disagreeing about `/../`. 53 real vulnerabilities studied, 35 verified 0-days. |
+
+### Screened out
+
+Defensive, measurement or non-web: BACScan, NodeShield, Wanilla, JsDeObsBench,
+Byte by Byte, the dead-drop-resolver remediation and the FIDO2 channel are
+defences or detectors; the robots.txt, DNS-abuse and divergent-JavaScript papers
+are measurement; CROSS-X, BASTAG, ExfilState and GhostCache are CPU and kernel
+side channels with no web bearing; Swallow and GAPDiS are website-fingerprinting
+attack and defence on traffic rather than web technique; Lock the Door But Keep
+the Window Open is Android accessibility with a browser-rendered component, kept
+as a borderline lead. RebirthDay was added separately on 2026-08-10.

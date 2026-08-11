@@ -475,6 +475,93 @@ capture the master credential is a meaningful adaptation with measured effect.
 Meaningful extension. It is not generic phishing alone; the browser's failure to
 distinguish extension UI from page content creates the reusable condition.
 
+## 76.4 — [Styled to Steal: The Overlooked Attack Surface in Email Clients](https://doi.org/10.1145/3719027.3765189) [Artifact](https://github.com/cispa/stylemail) — Leon Trampert, Daniel Weber, Christian Rossow, Michael Schwarz, CISPA
+
+**KEPT** · Meaningful extension · confidence High
+
+### Candidate
+
+ACM CCS '25, Taipei, October 2025 — in the 2025 window and absent from the
+nomination round. Found in the 2026-08-11 CCS sweep. Read in full from the
+authors' open figshare copy (`stylemail_ccs25.pdf`), since the ACM landing page
+is walled.
+
+### Core contribution
+
+A scriptless attack that recovers **arbitrary plaintext out of an end-to-end
+encrypted email** using CSS alone. Three benign features compose into the
+primitive: container queries decide, lazy-loaded web fonts fire the request, and
+contextual ligatures map each character of the decrypted text to a distinct font
+glyph — so every character becomes a unique network request to the attacker.
+The recovery completes in a **single rendering pass**, with no JavaScript, no
+visual artifact, and depending on client configuration no user interaction at
+all. Demonstrated end to end against PGP mail in Thunderbird and KMail, with a
+proof of concept against Meta's Code Verify (Accountable JavaScript) and a
+finding that DOMPurify's default configuration does not stop it.
+
+### Prior art
+
+Dense, and partly in this same year's list. Efail (2018) established
+content exfiltration from encrypted mail through crafted HTML, and the isolation
+mitigations this paper defeats were the response to it. **Fontleak** (already in
+`2025.md`) exfiltrates text with CSS and ligatures, and **Cascading Spy Sheets**
+(in this missed list, same first author) covers CSS-based email and browser
+fingerprinting. Blind CSS exfiltration (2023, in archive), the Firefox
+single-injection-point work (2020, in archive) and Bench Press (2024, in archive)
+carry the wider lineage.
+
+### Candidate's distinct contribution
+
+Not the ligature oracle — that is Fontleak's, in the same year. What is new is
+the **threat model it reaches**: plaintext out of an E2EE mailbox rather than
+text off a web page, defeating the specific isolation that email clients adopted
+after Efail. Plus the single-pass, zero-interaction construction, and two
+results that transfer past email: Code Verify does not stop it, and DOMPurify's
+defaults do not either.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 66 | 25% | 16.50 | The ligature primitive is Fontleak's, published the same year; the new threat model and single-pass construction are the increment. |
+| Transferability | 78 | 20% | 15.60 | Applies across three mail clients and reaches Code Verify and DOMPurify; the primitive works in any CSS-injection context. |
+| Lasting value | 74 | 20% | 14.80 | Post-Efail isolation is a standing design problem, and practitioner work in 2026 already cites this as the CCS result for scriptless CSS on mail clients. |
+| Technical soundness | 88 | 15% | 13.20 | Peer-reviewed, end-to-end exploits, responsible disclosure to GPGSuite, Thunderbird and KMail. |
+| Practical usability | 78 | 10% | 7.80 | Artifact released at github.com/cispa/stylemail. |
+| Clarity and reproducibility | 85 | 10% | 8.50 | Full paper plus a public artifact. |
+
+**Final score: 76.4/100.** Archive decision: include as a core technique.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the paper itself (title page, contribution
+  list, threat model), the figshare record for authorship and affiliation, and the
+  CCS '25 proceedings reference in the paper's own ACM citation block.
+- **Independent prior-art check:** searched the year lists and the archive by
+  mechanism — ligature oracle, CSS exfiltration, scriptless attack, Efail — rather
+  than by title. That surfaced Fontleak in this very list, which the abstract does
+  not mention and which materially reduces the originality claim.
+- **Strongest challenge to the result:** with Fontleak already listed for 2025,
+  a reader could call this the same technique with a different target, which would
+  make it a duplicate rather than an extension.
+- **Benefit-of-doubt check:** it survives that challenge because the target is the
+  contribution here — recovering plaintext from inside an E2EE mailbox is a
+  different security property from reading a rendered page, and the isolation it
+  defeats was purpose-built against exactly this class after Efail.
+- **Changes after reverification:** Original contribution cut from 72 to 66 and the
+  total from 78.7 to 76.4 once Fontleak was found in the same year's list.
+
+### Verdict
+
+Meaningful extension. New is the E2EE-mail threat model, the single-pass
+zero-interaction construction, and the Code Verify and DOMPurify results.
+Already known is the ligature oracle, CSS exfiltration generally, and that
+crafted markup can exfiltrate decrypted mail.
+
+- **Archive decision:** Include as a core technique
+- **Confidence:** High
+- **Evidence gaps:** None material; the paper and its artifact were both read.
+
 ## 75.0 — [Universal Cross-app Attacks: Exploiting and Securing OAuth 2.0 in Integration Platforms](https://www.usenix.org/conference/usenixsecurity25/presentation/luo-kaixuan)
 
 **KEPT** · Meaningful extension · confidence High

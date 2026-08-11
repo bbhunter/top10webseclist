@@ -87,7 +87,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <http://www.thespanner.co.uk/2009/12/06/html5-new-xss-vectors/> | article | `raw_sha256` | `2009.md:47` |
 | <http://www.thespanner.co.uk/2010/09/15/one-vector-to-rule-them-all/> | article | `raw_sha256` | `2010.md:47` |
 | <http://www.thespanner.co.uk/2011/12/05/nulls-in-entities-in-firefox/> | article | `raw_sha256` | `2011.md:25` |
-| <http://www.thespanner.co.uk/2014/03/21/rpo/> | article | `raw_sha256` | `2014.md:63`, `2015.md:43` |
+| <http://www.thespanner.co.uk/2014/03/21/rpo/> | article | `raw_sha256` | `2014.md:64`, `2015.md:43` |
 | <http://yifan.lu/2011/12/10/kindle-touch-5-0-jailbreakroot-and-ssh/> | article | `raw_sha256`, `browser_dom_sha256` | `2011.md:24` |
 | <https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization> | article | `raw_sha256`, `browser_dom_sha256` | `2024.md:43` |
 | <https://amolnaik4.blogspot.com/2011/03/exploitation-of-self-only-cross-site.html> | article | `raw_sha256`, `browser_dom_sha256` | `2011.md:49` |
@@ -103,26 +103,26 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://blog.viettelcybersecurity.com/sharepoint-toolshell/> | article | `raw_sha256`, `browser_dom_sha256` | `2025.md:46` |
 | <https://blog.viettelcybersecurity.com/tabshell-owassrf/> | article | `raw_sha256`, `browser_dom_sha256` | `2022.md:49` |
 | <https://bugs.chromium.org/p/project-zero/issues/detail?id=1139> | article | `content_sha256` | `2016-17.md:11` |
-| <https://bugs.webkit.org/show_bug.cgi?id=15936> | article | `raw_sha256` | `2007.md:100` |
+| <https://bugs.webkit.org/show_bug.cgi?id=15936> | article | `raw_sha256` | `2007.md:101` |
 | <https://bugzilla.mozilla.org/show_bug.cgi?id=370445> | article | `raw_sha256`, `browser_dom_sha256` | `2007.md:78` |
 | <https://code.google.com/p/dominator/> | article | `raw_sha256`, `browser_dom_sha256` | `2011.md:8` |
 | <https://code.google.com/p/puzzlemall/downloads/list> | article | `raw_sha256`, `browser_dom_sha256` | `2011.md:53` |
-| <https://coeus.ece.gatech.edu/2008/10/01/DNS_Forgery/> | article | `landing_sha256` | `2008.md:90` |
-| <https://diafygi.github.io/webrtc-ips/> | article | `raw_sha256` | `2015.md:75` |
-| <https://dl.acm.org/doi/10.1145/2810103.2813680> | article | `content_sha256` | `2015.md:60` |
-| <https://dl.acm.org/doi/10.1145/2810103.2813688> | article | `content_sha256` | `2015.md:67` |
-| <https://dl.acm.org/doi/10.1145/2818000.2818029> | article | `content_sha256` | `2015.md:74` |
-| <https://doi.org/10.1007/978-3-319-18467-8_7> | article | `raw_sha256`, `browser_dom_sha256` | `2015.md:78` |
-| <https://doi.org/10.1016/j.cose.2015.07.004> | article | `content_sha256`, `browser_dom_sha256` | `2015.md:76` |
-| <https://doi.org/10.1109/SP.2019.00025> | article | `content_sha256`, `browser_dom_sha256` | `2019.md:81` |
-| <https://doi.org/10.1109/SP.2019.00049> | article | `browser_dom_sha256` | `2019.md:74` |
-| <https://doi.org/10.1109/SP46214.2022.00064> | article | `content_sha256` | `2022.md:72` |
-| <https://doi.org/10.1109/SP61157.2025.00029> | article | `browser_dom_sha256` | `2025.md:90` |
-| <https://doi.org/10.1145/3658644.3690361> | article | `content_sha256` | `2024.md:143` |
+| <https://coeus.ece.gatech.edu/2008/10/01/DNS_Forgery/> | article | `landing_sha256` | `2008.md:91` |
+| <https://diafygi.github.io/webrtc-ips/> | article | `raw_sha256` | `2015.md:76` |
+| <https://dl.acm.org/doi/10.1145/2810103.2813680> | article | `content_sha256` | `2015.md:61` |
+| <https://dl.acm.org/doi/10.1145/2810103.2813688> | article | `content_sha256` | `2015.md:68` |
+| <https://dl.acm.org/doi/10.1145/2818000.2818029> | article | `content_sha256` | `2015.md:75` |
+| <https://doi.org/10.1007/978-3-319-18467-8_7> | article | `raw_sha256`, `browser_dom_sha256` | `2015.md:79` |
+| <https://doi.org/10.1016/j.cose.2015.07.004> | article | `content_sha256`, `browser_dom_sha256` | `2015.md:77` |
+| <https://doi.org/10.1109/SP.2019.00025> | article | `content_sha256`, `browser_dom_sha256` | `2019.md:82` |
+| <https://doi.org/10.1109/SP.2019.00049> | article | `browser_dom_sha256` | `2019.md:75` |
+| <https://doi.org/10.1109/SP46214.2022.00064> | article | `content_sha256` | `2022.md:73` |
+| <https://doi.org/10.1109/SP61157.2025.00029> | article | `browser_dom_sha256` | `2025.md:91` |
+| <https://doi.org/10.1145/3658644.3690361> | article | `content_sha256` | `2024.md:144` |
 | <https://elie.im/publication/text-based-captcha-strengths-and-weaknesses> | article | `raw_sha256` | `2011.md:52` |
 | <https://elie.im/publication/the-failure-of-noise-based-non-continuous-audio-captchas> | article | `raw_sha256` | `2011.md:23` |
 | <https://githubengineering.com/githubs-post-csp-journey/> | article | `raw_sha256`, `browser_dom_sha256` | `2016-17.md:24` |
-| <https://gitlab.com/kostasdrk/xdriver3-open> | article | `raw_sha256`, `browser_dom_sha256` | `2020.md:77` |
+| <https://gitlab.com/kostasdrk/xdriver3-open> | article | `raw_sha256`, `browser_dom_sha256` | `2020.md:78` |
 | <https://hackademix.net/2007/09/26/cross-browser-proxy-unmasking/> | article | `raw_sha256`, `browser_dom_sha256` | `2007.md:39` |
 | <https://hackerone.com/reports/2089042> | article | `raw_sha256`, `browser_dom_sha256` | `2023.md:61` |
 | <https://hackerone.com/reports/309531> | article | `raw_sha256`, `browser_dom_sha256` | `2018.md:35` |
@@ -132,7 +132,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://hackerone.com/reports/33935> | article | `raw_sha256`, `browser_dom_sha256` | `2014.md:50` |
 | <https://hackerone.com/reports/341876> | article | `raw_sha256`, `browser_dom_sha256` | `2018.md:39` |
 | <https://hackerone.com/reports/3511792> | article | `raw_sha256`, `browser_dom_sha256` | `2026-ai.md:52` |
-| <https://hal.inria.fr/hal-01652021> | article | `raw_sha256` | `2016-17.md:105` |
+| <https://hal.inria.fr/hal-01652021> | article | `raw_sha256` | `2016-17.md:106` |
 | <https://iustin24.github.io/Cache-Key-Normalization-Denial-of-Service/> | article | `raw_sha256`, `browser_dom_sha256` | `2020.md:60` |
 | <https://jeremiahgrossman.blogspot.com/2006/08/i-know-where-youve-been.html> | article | `raw_sha256`, `browser_dom_sha256` | `2006.md:8` |
 | <https://jeremiahgrossman.blogspot.com/2010/07/i-know-who-your-name-where-you-work-and.html> | article | `raw_sha256`, `browser_dom_sha256` | `2010.md:7` |
@@ -142,7 +142,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c> | article | `raw_sha256` | `2016-17.md:9` |
 | <https://mksben.l0.cm/2018/05/cve-2018-5175-firefox-csp-strict-dynamic-bypass.html> | advisory | `raw_sha256`, `browser_dom_sha256` | `2016-17.md:25`, `2018.md:38` |
 | <https://portswigger-labs.net/fmnt.php?x=acunetix.com/blog/web-security-zone/bypassing-sop-using-the-browser-cache/> | article | `raw_sha256`, `browser_dom_sha256` | `2019.md:57` |
-| <https://roberto.greyhats.it/pubs/dimva08-web.pdf> | whitepaper | `content_sha256` | `2008.md:89` |
+| <https://roberto.greyhats.it/pubs/dimva08-web.pdf> | whitepaper | `content_sha256` | `2008.md:90` |
 | <https://skii.dev/rook-to-xss/> | article | `raw_sha256` | `2024.md:102` |
 | <https://slcyber.io/research-center/exploit-brokers-pay-500000-for-a-wordpress-rce-i-found-one-with-gpt5-6/> | article | `content_sha256` | `2026-ai.md:58` |
 | <https://slcyber.io/research-center/smashing-the-servicenow-sandbox-pre-authentication-rce/> | article | `content_sha256` | `2026-ai.md:59` |
@@ -168,7 +168,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://superevr.com/blog/2011/xss-in-skype-for-ios/> | article | `raw_sha256` | `2011.md:43` |
 | <https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/> | article | `raw_sha256` | `2026-ai.md:82` |
 | <https://thehackerblog.com/the-io-error-taking-control-of-all-io-domains-with-a-targeted-registration/index.html> | article | `raw_sha256` | `2016-17.md:36` |
-| <https://thespanner.co.uk/2013/05/16/dom-clobbering> | article | `raw_sha256` | `2013.md:54` |
+| <https://thespanner.co.uk/2013/05/16/dom-clobbering> | article | `raw_sha256` | `2013.md:55` |
 | <https://tinyurl.com/5w6koqj> | article | `content_sha256` | `2011.md:21` |
 | <https://vnhacker.blogspot.com/2011/09/beast.html> | article | `raw_sha256` | `2011.md:5` |
 | <https://vttynotes.blogspot.com/2011/10/cve-2011-3230-launch-any-file-path-from.html> | advisory | `raw_sha256`, `browser_dom_sha256` | `2011.md:41` |
@@ -211,7 +211,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://webappdefender.blogspot.com/2026/02/lost-in-translation-exploiting-unicode.html> | article | `raw_sha256` | `2024.md:58` |
 | <https://websec.wordpress.com/2010/12/04/sqli-filter-evasion-cheat-sheet-mysql/> | article | `raw_sha256` | `2010.md:74` |
 | <https://websec.wordpress.com/2012/01/04/multiple-vulnerabilities-in-apache-struts2-and-property-oriented-programming-with-java/> | article | `raw_sha256` | `2011.md:6` |
-| <https://www-personal.umd.umich.edu/~birhanu/dsplab/publications/navex-2018/> | article | `browser_dom_sha256`, `landing_sha256` | `2018.md:76` |
+| <https://www-personal.umd.umich.edu/~birhanu/dsplab/publications/navex-2018/> | article | `browser_dom_sha256`, `landing_sha256` | `2018.md:77` |
 | <https://www.gnucitizen.org/blog/backdooring-quicktime-movies/> | article | `raw_sha256`, `browser_dom_sha256` | `2006.md:9` |
 | <https://www.gnucitizen.org/blog/google-gmail-e-mail-hijack-technique/> | article | `raw_sha256`, `browser_dom_sha256` | `2007.md:12` |
 | <https://www.gnucitizen.org/blog/hacking-the-interwebs/> | article | `raw_sha256`, `browser_dom_sha256` | `2008.md:65` |
@@ -220,11 +220,11 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations> | article | `raw_sha256`, `browser_dom_sha256` | `2019.md:31` |
 | <https://www.gosecure.net/blog/2021/10/19/a-scientific-notation-bug-in-mysql-left-aws-waf-clients-vulnerable-to-sql-injection/> | article | `raw_sha256`, `browser_dom_sha256` | `2021.md:39` |
 | <https://www.gosecure.net/blog/2023/06/21/aws-waf-clients-left-vulnerable-to-sql-injection-due-to-unorthodox-mssql-design-choice/> | article | `content_sha256` | `2023.md:38` |
-| <https://www.kb.cert.org/vuls/id/120541/> | article | `raw_sha256`, `browser_dom_sha256` | `2009.md:98` |
-| <https://www.microsoft.com/en-us/research/publication/incoherencies-web-browser-access-control-policies/> | article | `landing_sha256` | `2010.md:92` |
-| <https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/AmazonSignatureWrapping.pdf> | whitepaper | `content_sha256` | `2011.md:69` |
-| <https://www.ndss-symposium.org/ndss2010/flax-systematic-discovery-client-side-validation-vulnerabilities-rich-web-applications/> | article | `landing_sha256` | `2010.md:86` |
-| <https://www.ndss-symposium.org/ndss2010/protecting-browsers-extension-vulnerabilities/> | article | `landing_sha256` | `2010.md:87` |
+| <https://www.kb.cert.org/vuls/id/120541/> | article | `raw_sha256`, `browser_dom_sha256` | `2009.md:99` |
+| <https://www.microsoft.com/en-us/research/publication/incoherencies-web-browser-access-control-policies/> | article | `landing_sha256` | `2010.md:93` |
+| <https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/AmazonSignatureWrapping.pdf> | whitepaper | `content_sha256` | `2011.md:70` |
+| <https://www.ndss-symposium.org/ndss2010/flax-systematic-discovery-client-side-validation-vulnerabilities-rich-web-applications/> | article | `landing_sha256` | `2010.md:87` |
+| <https://www.ndss-symposium.org/ndss2010/protecting-browsers-extension-vulnerabilities/> | article | `landing_sha256` | `2010.md:88` |
 | <https://www.sambuz.com/doc/p-r-e-p-a-r-e-i-n-t-r-o-d-u-c-i-n-g-n-o-v-e-l-e-x-p-l-o-i-presentation-910240> | article | `raw_sha256` | `2018.md:12` |
 | <https://www.slideshare.net/GreenD0g/mitm-attacks-on-https-another-perspective/> | slides | `raw_sha256` | `2016-17.md:49` |
 | <https://www.slideshare.net/fransrosen/attacking-modern-web-technologies?from_action=save> | slides | `raw_sha256` | `2018.md:9` |
@@ -233,49 +233,49 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/?utm_source=twitter&utm_medium=social&utm_campaign=protonmail&utm_content=security&utm_term=mofu> | article | `raw_sha256` | `2023.md:59` |
 | <https://www.tiraniddo.dev/2024/06/working-your-way-around-acl.html> | article | `raw_sha256` | `2024.md:125` |
 | <https://www.truesec.com/hub/blog/attacking-powershell-clixml-deserialization> | article | `raw_sha256` | `2024.md:73` |
-| <https://www.usenix.org/conference/leet13/workshop-program/presentation/neugschwandtner> | article | `raw_sha256` | `2013.md:61` |
-| <https://www.usenix.org/conference/usenix-security-11/presentation/dark-clouds-horizon-using-cloud-storage-attack-vector-and> | article | `raw_sha256` | `2011.md:73` |
-| <https://www.usenix.org/conference/usenix-security-11/presentation/fast-and-precise-sanitizer-analysis-bek> | article | `raw_sha256` | `2011.md:68` |
-| <https://www.usenix.org/conference/usenix-security-11/static-detection-access-control-vulnerabilities-web-applications> | article | `raw_sha256` | `2011.md:70` |
-| <https://www.usenix.org/conference/usenixsecurity10/analysis-private-browsing-modes-modern-browsers> | article | `raw_sha256` | `2010.md:94` |
-| <https://www.usenix.org/conference/usenixsecurity13/technical-sessions/paper/xing> | article | `raw_sha256` | `2013.md:58` |
-| <https://www.usenix.org/conference/usenixsecurity13/technical-sessions/presentation/bhargavan> | article | `raw_sha256` | `2013.md:57` |
-| <https://www.usenix.org/conference/usenixsecurity19/presentation/alrawi> | article | `raw_sha256` | `2019.md:79` |
-| <https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-lei> | article | `raw_sha256` | `2022.md:67` |
-| <https://www.usenix.org/conference/usenixsecurity23/presentation/gierlings> | article | `raw_sha256` | `2023.md:84` |
-| <https://www.usenix.org/conference/usenixsecurity23/presentation/kim-young-min> | article | `raw_sha256` | `2023.md:97` |
-| <https://www.usenix.org/conference/usenixsecurity23/presentation/kwong> | article | `raw_sha256` | `2023.md:95` |
-| <https://www.usenix.org/conference/usenixsecurity23/presentation/oz> | article | `raw_sha256` | `2023.md:86` |
+| <https://www.usenix.org/conference/leet13/workshop-program/presentation/neugschwandtner> | article | `raw_sha256` | `2013.md:62` |
+| <https://www.usenix.org/conference/usenix-security-11/presentation/dark-clouds-horizon-using-cloud-storage-attack-vector-and> | article | `raw_sha256` | `2011.md:74` |
+| <https://www.usenix.org/conference/usenix-security-11/presentation/fast-and-precise-sanitizer-analysis-bek> | article | `raw_sha256` | `2011.md:69` |
+| <https://www.usenix.org/conference/usenix-security-11/static-detection-access-control-vulnerabilities-web-applications> | article | `raw_sha256` | `2011.md:71` |
+| <https://www.usenix.org/conference/usenixsecurity10/analysis-private-browsing-modes-modern-browsers> | article | `raw_sha256` | `2010.md:95` |
+| <https://www.usenix.org/conference/usenixsecurity13/technical-sessions/paper/xing> | article | `raw_sha256` | `2013.md:59` |
+| <https://www.usenix.org/conference/usenixsecurity13/technical-sessions/presentation/bhargavan> | article | `raw_sha256` | `2013.md:58` |
+| <https://www.usenix.org/conference/usenixsecurity19/presentation/alrawi> | article | `raw_sha256` | `2019.md:80` |
+| <https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-lei> | article | `raw_sha256` | `2022.md:68` |
+| <https://www.usenix.org/conference/usenixsecurity23/presentation/gierlings> | article | `raw_sha256` | `2023.md:85` |
+| <https://www.usenix.org/conference/usenixsecurity23/presentation/kim-young-min> | article | `raw_sha256` | `2023.md:98` |
+| <https://www.usenix.org/conference/usenixsecurity23/presentation/kwong> | article | `raw_sha256` | `2023.md:96` |
+| <https://www.usenix.org/conference/usenixsecurity23/presentation/oz> | article | `raw_sha256` | `2023.md:87` |
 | <https://www.usenix.org/conference/usenixsecurity23/presentation/squarcina> | article | `raw_sha256` | `2023.md:13` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/afek> | article | `raw_sha256` | `2024.md:141` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/ali> | article | `raw_sha256` | `2024.md:150` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/bernardo> | article | `raw_sha256` | `2024.md:137` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/cornelissen> | article | `raw_sha256` | `2024.md:139` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/du> | article | `raw_sha256` | `2024.md:144` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/gast> | article | `raw_sha256` | `2024.md:135` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/jahanshahi> | article | `raw_sha256` | `2024.md:140` |
+| <https://www.usenix.org/conference/usenixsecurity24/presentation/afek> | article | `raw_sha256` | `2024.md:142` |
+| <https://www.usenix.org/conference/usenixsecurity24/presentation/ali> | article | `raw_sha256` | `2024.md:151` |
+| <https://www.usenix.org/conference/usenixsecurity24/presentation/bernardo> | article | `raw_sha256` | `2024.md:138` |
+| <https://www.usenix.org/conference/usenixsecurity24/presentation/cornelissen> | article | `raw_sha256` | `2024.md:140` |
+| <https://www.usenix.org/conference/usenixsecurity24/presentation/du> | article | `raw_sha256` | `2024.md:145` |
+| <https://www.usenix.org/conference/usenixsecurity24/presentation/gast> | article | `raw_sha256` | `2024.md:136` |
+| <https://www.usenix.org/conference/usenixsecurity24/presentation/jahanshahi> | article | `raw_sha256` | `2024.md:141` |
 | <https://www.usenix.org/conference/usenixsecurity24/presentation/kirchner> | article | `raw_sha256` | `2024.md:112` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/lin-ziyu> | article | `raw_sha256` | `2024.md:138` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/oconnell> | article | `raw_sha256` | `2024.md:142` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/olsson> | article | `raw_sha256` | `2024.md:149` |
-| <https://www.usenix.org/conference/usenixsecurity24/presentation/xie-qinge> | article | `raw_sha256` | `2024.md:151` |
-| <https://www.usenix.org/conference/usenixsecurity25/presentation/anliker> | article | `raw_sha256` | `2025.md:94` |
-| <https://www.usenix.org/conference/usenixsecurity25/presentation/de-ridder> | article | `raw_sha256` | `2025.md:87` |
-| <https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok> | article | `raw_sha256` | `2025.md:84` |
-| <https://www.usenix.org/conference/usenixsecurity25/presentation/luo-kaixuan> | article | `raw_sha256` | `2025.md:95` |
-| <https://www.usenix.org/conference/usenixsecurity25/presentation/you> | article | `raw_sha256` | `2025.md:83` |
+| <https://www.usenix.org/conference/usenixsecurity24/presentation/lin-ziyu> | article | `raw_sha256` | `2024.md:139` |
+| <https://www.usenix.org/conference/usenixsecurity24/presentation/oconnell> | article | `raw_sha256` | `2024.md:143` |
+| <https://www.usenix.org/conference/usenixsecurity24/presentation/olsson> | article | `raw_sha256` | `2024.md:150` |
+| <https://www.usenix.org/conference/usenixsecurity24/presentation/xie-qinge> | article | `raw_sha256` | `2024.md:152` |
+| <https://www.usenix.org/conference/usenixsecurity25/presentation/anliker> | article | `raw_sha256` | `2025.md:95` |
+| <https://www.usenix.org/conference/usenixsecurity25/presentation/de-ridder> | article | `raw_sha256` | `2025.md:88` |
+| <https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok> | article | `raw_sha256` | `2025.md:85` |
+| <https://www.usenix.org/conference/usenixsecurity25/presentation/luo-kaixuan> | article | `raw_sha256` | `2025.md:96` |
+| <https://www.usenix.org/conference/usenixsecurity25/presentation/you> | article | `raw_sha256` | `2025.md:84` |
 | <https://www.usenix.org/conference/usenixsecurity26/presentation/li-ruixuan> | article | `raw_sha256` | `2026-ai.md:32` |
-| <https://www.usenix.org/conference/woot12/workshop-program/presentation/bhargavan> | article | `raw_sha256` | `2012.md:88` |
-| <https://www.usenix.org/conference/woot12/workshop-program/presentation/gilad> | article | `raw_sha256` | `2012.md:77` |
-| <https://www.usenix.org/conference/woot12/workshop-program/presentation/schmitt> | article | `raw_sha256` | `2012.md:82` |
-| <https://www.usenix.org/conference/woot13/workshop-program/presentation/dai> | article | `raw_sha256` | `2013.md:63` |
-| <https://www.usenix.org/conference/woot13/workshop-program/presentation/smyth> | article | `raw_sha256` | `2013.md:53` |
-| <https://www.usenix.org/conference/woot15/workshop-program/presentation/kupser> | article | `raw_sha256` | `2015.md:73` |
-| <https://www.usenix.org/conference/woot15/workshop-program/presentation/pellegrino> | article | `raw_sha256` | `2015.md:80` |
-| <https://www.usenix.org/conference/woot18/presentation/smith> | article | `raw_sha256` | `2018.md:69` |
-| <https://www.usenix.org/conference/woot18/workshop-program> | article | `raw_sha256` | `2018.md:89` |
-| <https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/index.html> | article | `raw_sha256` | `2008.md:86` |
-| <https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html> | article | `raw_sha256` | `2008.md:91` |
+| <https://www.usenix.org/conference/woot12/workshop-program/presentation/bhargavan> | article | `raw_sha256` | `2012.md:89` |
+| <https://www.usenix.org/conference/woot12/workshop-program/presentation/gilad> | article | `raw_sha256` | `2012.md:78` |
+| <https://www.usenix.org/conference/woot12/workshop-program/presentation/schmitt> | article | `raw_sha256` | `2012.md:83` |
+| <https://www.usenix.org/conference/woot13/workshop-program/presentation/dai> | article | `raw_sha256` | `2013.md:64` |
+| <https://www.usenix.org/conference/woot13/workshop-program/presentation/smyth> | article | `raw_sha256` | `2013.md:54` |
+| <https://www.usenix.org/conference/woot15/workshop-program/presentation/kupser> | article | `raw_sha256` | `2015.md:74` |
+| <https://www.usenix.org/conference/woot15/workshop-program/presentation/pellegrino> | article | `raw_sha256` | `2015.md:81` |
+| <https://www.usenix.org/conference/woot18/presentation/smith> | article | `raw_sha256` | `2018.md:70` |
+| <https://www.usenix.org/conference/woot18/workshop-program> | article | `raw_sha256` | `2018.md:90` |
+| <https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/index.html> | article | `raw_sha256` | `2008.md:87` |
+| <https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html> | article | `raw_sha256` | `2008.md:92` |
 | <https://www.vulnano.com/2019/03/facebook-messenger-server-random-memory.html> | article | `raw_sha256` | `2019.md:21` |
 | <https://www.whitehatsec.com/home/resources/presentations/files/javascript_malware.pdf> | whitepaper | `content_sha256` | `2006.md:5`, `2006.md:23` |
 | <https://www.wiz.io/blog/azure-active-directory-bing-misconfiguration> | article | `raw_sha256` | `2023.md:39` |

@@ -18,7 +18,7 @@ Curating the year lists themselves is a separate job. This folder is generated
 by `tools/references/refs.py` from those lists and never edits them.
 
 
-1619 reference(s) archived across 20 year list(s). 1472 carry technique and 147 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
+1621 reference(s) archived across 20 year list(s). 1474 carry technique and 147 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
 
 Three more lists complete the picture: [document-gaps.md](document-gaps.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
 
@@ -106,7 +106,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [US 26 Stacey CRLF Powered Desync Attacks Wed](md/2026-ai/us-26-stacey-crlf-powered-desync-attacks-wed.md) | whitepaper |  |  | research | 1 |
 | [Your WAF Blocked Us, That Was The Exploit — Remote Agent Takeover via Cloudflare, Sentry and Claude Zero-Day](md/2026-ai/your-waf-blocked-us-that-exploit-remote-agent-takeover-cloudflare-sentry-day.md) | whitepaper |  |  | research | 1 |
 
-## 2025 (85)
+## 2025 (87)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -178,6 +178,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [SOAPwn: Pwning .NET Framework Applications Through HTTP Client Proxies And WSDL](md/2025/2025-watchtowr-labs-soapwn-pwning-net-framework-applications-through-http-wsdl.md) | article | watchTowr Labs | 2025 | research | 1 |
 | [STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets](md/2025/usenix-org-stek-sharing-not-caring-bypassing-tls-authentication-web-tickets.md) | article | usenix.org |  | research | 1 |
 | [Stopping Redirects](md/2025/2025-critical-thinking-bug-bounty-podcast-stopping-redirects.md) | article | Critical Thinking - Bug Bounty Podcast | 2025 | research | 1 |
+| [Styled to Steal: The Overlooked Attack Surface in Email Clients](md/2025/styled-steal-overlooked-attack-surface-email-clients.md) | article |  |  | research | 1 |
 | [SVG clickjacking](md/2025/2025-lyra-s-epic-blog-svg-clickjacking.md) | article | lyra's epic blog | 2025 | research | 1 |
 | [Temenos OFS String Injection: Revealing a Hidden Financial Attack Vector](md/2025/2025-medium-temenos-ofs-string-injection-revealing-hidden-financial-vector.md) | article | Medium | 2025 | research | 1 |
 | [The Fragile Lock: Novel Bypasses For SAML Authentication](md/2025/2025-portswigger-research-fragile-lock-novel-bypasses-saml-authentication.md) | article | PortSwigger Research | 2025 | research | 1 |
@@ -191,6 +192,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Vesta Admin Takeover: Exploiting Reduced Seed Entropy in bash $RANDOM](md/2025/2024-fortbridge-vesta-admin-takeover-exploiting-reduced-seed-entropy-bash-random.md) | article | FORTBRIDGE | 2024 | research | 1 |
 | [XSS-Leak: Leaking Cross-Origin Redirects](md/2025/2025-salvatore-abello-s-blog-xss-leak-leaking-cross-origin-redirects.md) | article | Salvatore Abello's Blog | 2025 | research | 1 |
 | [RenwaX23/X: safari_bug.md](md/2025/github-renwax23-x-safari-bug-md.md) | code | GitHub |  | research | 1 |
+| [Artifact](md/2025/github-cispa-stylemail.md) | repo | GitHub |  | research | 1 |
 | [Blind SSTI](md/2025/github-vladko312-research-successful-errors.md) | repo | GitHub |  | research | 1 |
 | [PoC](md/2025/github-lachlan2k-react2shell-cve-2025-55182-original-poc.md) | repo | GitHub |  | research | 1 |
 | [BHAS26 Davidson Discovering React2Shell](md/2025/bhas26-davidson-discovering-react2shell.md) | whitepaper |  |  | research | 1 |
