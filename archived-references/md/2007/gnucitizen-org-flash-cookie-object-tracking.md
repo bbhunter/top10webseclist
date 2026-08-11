@@ -5,15 +5,17 @@ resource: "https://www.gnucitizen.org/blog/flash-cookie-object-tracking/"
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:13:52+00:00"
+  at: "2026-08-11T19:36:48+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/flash-cookie-object-tracking/"
     title: Flash Cookie Object Tracking
+    author: pdp
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: ""
 cited_by:
   - "2007.md:86"
@@ -30,8 +32,8 @@ publisher: gnucitizen.org
 publisher_english: ""
 raw_sha256: 7d06b216661f618726f1878f6d2d8513778c612f3d6e073f32a5f37bfae76e70
 retrieved_from: "https://www.gnucitizen.org/blog/flash-cookie-object-tracking/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:13:52+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:48+00:00"
 slug: gnucitizen-org-flash-cookie-object-tracking
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Flash Cookie Object Tracking
 
-**Flash Cookie Object Tracking** - Author not stated, gnucitizen.org.
+**Flash Cookie Object Tracking** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/flash-cookie-object-tracking/>
-- Preserved from: https://www.gnucitizen.org/blog/flash-cookie-object-tracking/ (live) on 2026-08-09
+- Preserved from: https://www.gnucitizen.org/blog/flash-cookie-object-tracking/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

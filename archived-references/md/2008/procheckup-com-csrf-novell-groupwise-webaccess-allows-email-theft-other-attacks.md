@@ -5,22 +5,24 @@ resource: "http://www.procheckup.com/vulnerability_manager/vulnerabilities/pr08-
 tags: [article, webseclist-reference, procheckup-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:09+00:00"
+  at: "2026-08-11T19:37:09+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.procheckup.com/vulnerability_manager/vulnerabilities/pr08-21"
     title: CSRF on Novell GroupWise WebAccess allows email theft and other attacks
+    author: Adrian Pastor
   - id: capture
     resource: "https://web.archive.org/web/20140717000842/http://www.procheckup.com/vulnerability_manager/vulnerabilities/pr08-21"
 also_at: []
-authors: []
+authors:
+  - Adrian Pastor
 canonical_url: ""
 cited_by:
   - "2008.md:77"
 commit: ""
-content_sha256: 43d3325b1028a2fbb8b06a31762ee0721a3185a6c68bda2ce0d2ee679ff58109
+content_sha256: 03003727535545b66a5a93006c12b76545b34624a48ce1e8e3942b8a103f7f6e
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 53a1b3474f08fbd38e6780991e7a12dc7b0cce089d2a08bbc0b4939a2a1a694b
 retrieved_from: "http://www.procheckup.com/vulnerability_manager/vulnerabilities/pr08-21"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:09+00:00"
+retrieved_utc: "2026-08-11T19:37:09+00:00"
 slug: procheckup-com-csrf-novell-groupwise-webaccess-allows-email-theft-other-attacks
 snapshot: 20140717000842
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # CSRF on Novell GroupWise WebAccess allows email theft and other attacks
 
-**CSRF on Novell GroupWise WebAccess allows email theft and other attacks** - Author not stated, procheckup.com.
+**CSRF on Novell GroupWise WebAccess allows email theft and other attacks** - Adrian Pastor, procheckup.com.
 
 - Published: date not stated
 - Original: <http://www.procheckup.com/vulnerability_manager/vulnerabilities/pr08-21>
-- Preserved from: http://www.procheckup.com/vulnerability_manager/vulnerabilities/pr08-21 (stored) on 2026-08-09
+- Preserved from: http://www.procheckup.com/vulnerability_manager/vulnerabilities/pr08-21 (stored) on 2026-08-11
 - Capture timestamp: 20140717000842
 - Licence: unknown
 

@@ -5,15 +5,17 @@ resource: "https://www.gnucitizen.org/blog/javascript-global-namespace-pollution
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:13:58+00:00"
+  at: "2026-08-11T19:36:53+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/javascript-global-namespace-pollution/"
     title: JavaScript Global Namespace Pollution
+    author: pdp
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: ""
 cited_by:
   - "2008.md:37"
@@ -30,8 +32,8 @@ publisher: gnucitizen.org
 publisher_english: ""
 raw_sha256: ef1b8752954dc01aa170d01f94f1a01a4e9e7a0cf2e1704fe605c43ae7f97e61
 retrieved_from: "https://www.gnucitizen.org/blog/javascript-global-namespace-pollution/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:13:58+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:53+00:00"
 slug: gnucitizen-org-javascript-global-namespace-pollution
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # JavaScript Global Namespace Pollution
 
-**JavaScript Global Namespace Pollution** - Author not stated, gnucitizen.org.
+**JavaScript Global Namespace Pollution** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/javascript-global-namespace-pollution/>
-- Preserved from: https://www.gnucitizen.org/blog/javascript-global-namespace-pollution/ (live) on 2026-08-09
+- Preserved from: https://www.gnucitizen.org/blog/javascript-global-namespace-pollution/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

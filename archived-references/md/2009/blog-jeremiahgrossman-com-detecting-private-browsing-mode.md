@@ -5,17 +5,19 @@ resource: "https://jeremiahgrossman.blogspot.com/2009/03/detecting-private-brows
 tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:30:04+00:00"
+  at: "2026-08-11T19:37:02+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2009/03/detecting-private-browsing-mode.html"
     title: Detecting Private Browsing Mode
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2009/03/detecting-private-browsing-mode.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2009/03/detecting-private-browsing-mode.html"
 cited_by:
   - "2009.md:51"
@@ -32,8 +34,8 @@ publisher: blog.jeremiahgrossman.com
 publisher_english: ""
 raw_sha256: b8de1d48bd7322a411dccad40ec60f7f10c852e2b65de7d1f2d80c9e0cc6cda7
 retrieved_from: "https://blog.jeremiahgrossman.com/2009/03/detecting-private-browsing-mode.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:30:04+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:02+00:00"
 slug: blog-jeremiahgrossman-com-detecting-private-browsing-mode
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Detecting Private Browsing Mode
 
-**Detecting Private Browsing Mode** - Author not stated, blog.jeremiahgrossman.com.
+**Detecting Private Browsing Mode** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2009/03/detecting-private-browsing-mode.html>
 - Current location: <https://blog.jeremiahgrossman.com/2009/03/detecting-private-browsing-mode.html>
-- Preserved from: https://blog.jeremiahgrossman.com/2009/03/detecting-private-browsing-mode.html (live) on 2026-08-10
+- Preserved from: https://blog.jeremiahgrossman.com/2009/03/detecting-private-browsing-mode.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,15 +5,17 @@ resource: "https://www.gnucitizen.org/blog/the-attack-of-the-tiny-urls/"
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:14:00+00:00"
+  at: "2026-08-11T19:36:56+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/the-attack-of-the-tiny-urls/"
     title: The Attack of the TINY URLs
+    author: pdp
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: ""
 cited_by:
   - "2006.md:18"
@@ -30,8 +32,8 @@ publisher: gnucitizen.org
 publisher_english: ""
 raw_sha256: 8b9b0a7057194c4233f16c2a01e7baad13eabe1f1a9434b027be66ba9cfd10ff
 retrieved_from: "https://www.gnucitizen.org/blog/the-attack-of-the-tiny-urls/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:14:00+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:56+00:00"
 slug: gnucitizen-org-attack-tiny-urls
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # The Attack of the TINY URLs
 
-**The Attack of the TINY URLs** - Author not stated, gnucitizen.org.
+**The Attack of the TINY URLs** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/the-attack-of-the-tiny-urls/>
-- Preserved from: https://www.gnucitizen.org/blog/the-attack-of-the-tiny-urls/ (live) on 2026-08-09
+- Preserved from: https://www.gnucitizen.org/blog/the-attack-of-the-tiny-urls/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,17 +5,19 @@ resource: "http://archives.neohapsis.com/archives/fulldisclosure/2007-01/0062.ht
 tags: [article, webseclist-reference, en, archives-neohapsis-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T04:16:42+00:00"
+  at: "2026-08-11T19:36:22+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://archives.neohapsis.com/archives/fulldisclosure/2007-01/0062.html"
     title: "[Full-disclosure] Adobe Acrobat Reader Plugin - Multiple Vulnerabilities"
+    author: Stefano Di Paola
   - id: capture
     resource: "https://web.archive.org/web/20071016120248/http://archives.neohapsis.com/archives/fulldisclosure/2007-01/0062.html"
 also_at: []
-authors: []
+authors:
+  - Stefano Di Paola
 canonical_url: ""
 cited_by:
   - "2007.md:6"
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 1519e071ecfeb55f8f74d4195ea938cea583b563239ac3db620fef65ca3c460d
 retrieved_from: "http://archives.neohapsis.com/archives/fulldisclosure/2007-01/0062.html"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T04:16:42+00:00"
+retrieved_utc: "2026-08-11T19:36:22+00:00"
 slug: archives-neohapsis-com-full-disclosure-adobe-acrobat-reader-vulnerabilities
 snapshot: 20071016120248
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # [Full-disclosure] Adobe Acrobat Reader Plugin - Multiple Vulnerabilities
 
-**[Full-disclosure] Adobe Acrobat Reader Plugin - Multiple Vulnerabilities** - Author not stated, archives.neohapsis.com.
+**[Full-disclosure] Adobe Acrobat Reader Plugin - Multiple Vulnerabilities** - Stefano Di Paola, archives.neohapsis.com.
 
 - Published: date not stated
 - Original: <http://archives.neohapsis.com/archives/fulldisclosure/2007-01/0062.html>
-- Preserved from: http://archives.neohapsis.com/archives/fulldisclosure/2007-01/0062.html (stored) on 2026-08-09
+- Preserved from: http://archives.neohapsis.com/archives/fulldisclosure/2007-01/0062.html (stored) on 2026-08-11
 - Capture timestamp: 20071016120248
 - Licence: unknown
 

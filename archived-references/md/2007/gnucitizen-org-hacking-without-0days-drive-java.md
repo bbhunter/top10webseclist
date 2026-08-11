@@ -5,15 +5,17 @@ resource: "https://www.gnucitizen.org/blog/hacking-without-0days-drive-by-java/"
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:13:55+00:00"
+  at: "2026-08-11T19:36:50+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/hacking-without-0days-drive-by-java/"
     title: Hacking without 0days Drive-by Java
+    author: pdp
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: ""
 cited_by:
   - "2007.md:81"
@@ -30,8 +32,8 @@ publisher: gnucitizen.org
 publisher_english: ""
 raw_sha256: 0724b6361dfe71a8770327b9502ee4e195e3e279e4d960d8aceb16f962280eb3
 retrieved_from: "https://www.gnucitizen.org/blog/hacking-without-0days-drive-by-java/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:13:55+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:50+00:00"
 slug: gnucitizen-org-hacking-without-0days-drive-java
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Hacking without 0days Drive-by Java
 
-**Hacking without 0days Drive-by Java** - Author not stated, gnucitizen.org.
+**Hacking without 0days Drive-by Java** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/hacking-without-0days-drive-by-java/>
-- Preserved from: https://www.gnucitizen.org/blog/hacking-without-0days-drive-by-java/ (live) on 2026-08-09
+- Preserved from: https://www.gnucitizen.org/blog/hacking-without-0days-drive-by-java/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,20 +5,23 @@ resource: "http://scan.flashsec.org/"
 tags: [article, webseclist-reference, en, scan-flashsec-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:49+00:00"
+  at: "2026-08-11T19:37:11+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://scan.flashsec.org/"
     title: "Design flaw in AS3 socket handling allows port probing: Description and PoC of a Flash 9/AS 3 port scanner"
+    author: David Neu, fukami
 also_at: []
-authors: []
+authors:
+  - David Neu
+  - fukami
 canonical_url: ""
 cited_by:
   - "2007.md:49"
 commit: ""
-content_sha256: 96dafda1784d1f9b60c9fe0ce24f78a377fc570c358dbddf4314e46a8e5de9f3
+content_sha256: f51e16976aa19c91377e8d575e5f41bff73cceb54b36f526196b73551a1677e3
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +33,8 @@ publisher: scan.flashsec.org
 publisher_english: ""
 raw_sha256: 58de2fa579241638ac61b0e8a5724499b5e2962d1c3ef3b2fbf640ce8d54f055
 retrieved_from: "http://scan.flashsec.org/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:49+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:11+00:00"
 slug: scan-flashsec-org-design-flaw-as3-socket-handling-allows-port-probing-scanner
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # Design flaw in AS3 socket handling allows port probing: Description and PoC of a Flash 9/AS 3 port scanner
 
-**Design flaw in AS3 socket handling allows port probing: Description and PoC of a Flash 9/AS 3 port scanner** - Author not stated, scan.flashsec.org.
+**Design flaw in AS3 socket handling allows port probing: Description and PoC of a Flash 9/AS 3 port scanner** - David Neu, fukami, scan.flashsec.org.
 
 - Published: date not stated
 - Original: <http://scan.flashsec.org/>
-- Preserved from: http://scan.flashsec.org/ (live) on 2026-08-09
+- Preserved from: http://scan.flashsec.org/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

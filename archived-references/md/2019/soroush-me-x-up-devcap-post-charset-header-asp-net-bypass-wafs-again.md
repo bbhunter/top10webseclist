@@ -5,20 +5,22 @@ resource: "https://soroush.me/blog/x-up-devcap-post-charset-header-in-aspnet-to-
 tags: [article, webseclist-reference, en, soroush-me]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:59+00:00"
+  at: "2026-08-11T19:37:30+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://soroush.me/blog/x-up-devcap-post-charset-header-in-aspnet-to-bypass-wafs-again"
     title: x-up-devcap-post-charset Header in ASP.NET to Bypass WAFs Again!
+    author: Soroush Dalili
 also_at: []
-authors: []
+authors:
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2019.md:59"
 commit: ""
-content_sha256: e2e14a3e4807e72d751f87321909749ecd6c57e94738a2f07015467ce826136f
+content_sha256: 8474e202967fc2a70f840310e7ae45010d5e008e9ae7533eb4cc34fbea34d51a
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: soroush.me
 publisher_english: ""
 raw_sha256: e3b64f855def9bad7ab83fc8e6605aa4fae9abf97edd1969b520b270393e9d35
 retrieved_from: "https://soroush.me/blog/x-up-devcap-post-charset-header-in-aspnet-to-bypass-wafs-again"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:59+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:30+00:00"
 slug: soroush-me-x-up-devcap-post-charset-header-asp-net-bypass-wafs-again
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # x-up-devcap-post-charset Header in ASP.NET to Bypass WAFs Again!
 
-**x-up-devcap-post-charset Header in ASP.NET to Bypass WAFs Again!** - Author not stated, soroush.me.
+**x-up-devcap-post-charset Header in ASP.NET to Bypass WAFs Again!** - Soroush Dalili, soroush.me.
 
 - Published: date not stated
 - Original: <https://soroush.me/blog/x-up-devcap-post-charset-header-in-aspnet-to-bypass-wafs-again>
-- Preserved from: https://soroush.me/blog/x-up-devcap-post-charset-header-in-aspnet-to-bypass-wafs-again (live) on 2026-08-09
+- Preserved from: https://soroush.me/blog/x-up-devcap-post-charset-header-in-aspnet-to-bypass-wafs-again (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

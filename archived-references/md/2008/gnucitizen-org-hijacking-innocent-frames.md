@@ -5,15 +5,17 @@ resource: "https://www.gnucitizen.org/blog/hijacking-innocent-frames/"
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:13:56+00:00"
+  at: "2026-08-11T19:36:51+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/hijacking-innocent-frames/"
     title: Hijacking Innocent Frames
+    author: pdp
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: ""
 cited_by:
   - "2008.md:64"
@@ -30,8 +32,8 @@ publisher: gnucitizen.org
 publisher_english: ""
 raw_sha256: 7ad606ddf06ed952eaff451b6f04ad09e5127e11f7735e607013b40f899a52f4
 retrieved_from: "https://www.gnucitizen.org/blog/hijacking-innocent-frames/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:13:56+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:51+00:00"
 slug: gnucitizen-org-hijacking-innocent-frames
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Hijacking Innocent Frames
 
-**Hijacking Innocent Frames** - Author not stated, gnucitizen.org.
+**Hijacking Innocent Frames** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/hijacking-innocent-frames/>
-- Preserved from: https://www.gnucitizen.org/blog/hijacking-innocent-frames/ (live) on 2026-08-09
+- Preserved from: https://www.gnucitizen.org/blog/hijacking-innocent-frames/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

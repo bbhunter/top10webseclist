@@ -5,20 +5,22 @@ resource: "https://soroush.me/blog/cookieless-duodrop-iis-auth-bypass-app-pool-p
 tags: [article, webseclist-reference, en, soroush-me]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:51+00:00"
+  at: "2026-08-11T19:37:20+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://soroush.me/blog/cookieless-duodrop-iis-auth-bypass-app-pool-privesc-in-asp-net-framework-cve-2023-36899"
     title: "Cookieless DuoDrop: IIS Auth Bypass & App Pool Privesc in ASP.NET Framework (CVE-2023-36899 & CVE-2023-36560)"
+    author: Soroush Dalili
 also_at: []
-authors: []
+authors:
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2023.md:47"
 commit: ""
-content_sha256: 72bc8f580950fe3bcee37d0354587ffc2749a5f3f6e61b5f4fd310a6de443935
+content_sha256: 2502e429281ecb52ad57a0ca0573f2ff53168212bbecf434b581497b8f0ceb86
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: soroush.me
 publisher_english: ""
 raw_sha256: a480f3d7151b1b9533db2cf85f654c6c5ab17d4c701856c3e511e815c9248fbe
 retrieved_from: "https://soroush.me/blog/cookieless-duodrop-iis-auth-bypass-app-pool-privesc-in-asp-net-framework-cve-2023-36899"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:51+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:20+00:00"
 slug: soroush-me-cookieless-duodrop-iis-auth-bypass-app-pool-privesc-asp-net-36560
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Cookieless DuoDrop: IIS Auth Bypass & App Pool Privesc in ASP.NET Framework (CVE-2023-36899 & CVE-2023-36560)
 
-**Cookieless DuoDrop: IIS Auth Bypass & App Pool Privesc in ASP.NET Framework (CVE-2023-36899 & CVE-2023-36560)** - Author not stated, soroush.me.
+**Cookieless DuoDrop: IIS Auth Bypass & App Pool Privesc in ASP.NET Framework (CVE-2023-36899 & CVE-2023-36560)** - Soroush Dalili, soroush.me.
 
 - Published: date not stated
 - Original: <https://soroush.me/blog/cookieless-duodrop-iis-auth-bypass-app-pool-privesc-in-asp-net-framework-cve-2023-36899>
-- Preserved from: https://soroush.me/blog/cookieless-duodrop-iis-auth-bypass-app-pool-privesc-in-asp-net-framework-cve-2023-36899 (live) on 2026-08-09
+- Preserved from: https://soroush.me/blog/cookieless-duodrop-iis-auth-bypass-app-pool-privesc-in-asp-net-framework-cve-2023-36899 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

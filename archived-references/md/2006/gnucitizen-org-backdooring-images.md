@@ -5,15 +5,17 @@ resource: "https://www.gnucitizen.org/blog/backdooring-images/"
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:13:49+00:00"
+  at: "2026-08-11T19:36:43+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/backdooring-images/"
     title: Backdooring Images
+    author: pdp
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: ""
 cited_by:
   - "2006.md:75"
@@ -30,8 +32,8 @@ publisher: gnucitizen.org
 publisher_english: ""
 raw_sha256: 9cd8aa62aa0c12f7cb1e24fbefc6a4c0fe6965e7a293e3ea05095cbcb469c170
 retrieved_from: "https://www.gnucitizen.org/blog/backdooring-images/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:13:49+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:43+00:00"
 slug: gnucitizen-org-backdooring-images
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Backdooring Images
 
-**Backdooring Images** - Author not stated, gnucitizen.org.
+**Backdooring Images** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/backdooring-images/>
-- Preserved from: https://www.gnucitizen.org/blog/backdooring-images/ (live) on 2026-08-09
+- Preserved from: https://www.gnucitizen.org/blog/backdooring-images/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,22 +5,24 @@ resource: "https://www.gnucitizen.org/blog/java-jar-attacks-and-features"
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:13:57+00:00"
+  at: "2026-08-11T19:36:52+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/java-jar-attacks-and-features"
     title: Java JAR Attacks and Features
+    author: pdp
   - id: canonical
     resource: "https://www.gnucitizen.org/blog/java-jar-attacks-and-features/"
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: "https://www.gnucitizen.org/blog/java-jar-attacks-and-features/"
 cited_by:
   - "2007.md:87"
 commit: ""
-content_sha256: ef6438a95b33a41187b176ba7bd43a2fcd39931c68b0efe2b4e70cf6cb1193d0
+content_sha256: 4a6d8bc159eb83ebbd489335c88deba3c9fced891c34243673515ef417e3cb50
 depth: full
 depth_reason: default
 kind: article
@@ -32,8 +34,8 @@ publisher: gnucitizen.org
 publisher_english: ""
 raw_sha256: 8eb446fc5ed38d3ec89b2dbe86d19c537ad14cb47ea074c81192a3e801f64bf7
 retrieved_from: "https://www.gnucitizen.org/blog/java-jar-attacks-and-features/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:13:57+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:52+00:00"
 slug: gnucitizen-org-java-jar-attacks-features
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Java JAR Attacks and Features
 
-**Java JAR Attacks and Features** - Author not stated, gnucitizen.org.
+**Java JAR Attacks and Features** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/java-jar-attacks-and-features>
 - Current location: <https://www.gnucitizen.org/blog/java-jar-attacks-and-features/>
-- Preserved from: https://www.gnucitizen.org/blog/java-jar-attacks-and-features/ (live) on 2026-08-09
+- Preserved from: https://www.gnucitizen.org/blog/java-jar-attacks-and-features/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

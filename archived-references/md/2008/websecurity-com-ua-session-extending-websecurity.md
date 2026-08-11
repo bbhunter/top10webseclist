@@ -5,15 +5,17 @@ resource: "http://websecurity.com.ua/2233/"
 tags: [article, webseclist-reference, websecurity-com-ua]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:06:15+00:00"
+  at: "2026-08-11T19:37:41+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://websecurity.com.ua/2233/"
     title: Session Extending - продовження сесії - Websecurity
+    author: MustLive
 also_at: []
-authors: []
+authors:
+  - MustLive
 canonical_url: ""
 cited_by:
   - "2008.md:70"
@@ -30,8 +32,8 @@ publisher: websecurity.com.ua
 publisher_english: ""
 raw_sha256: e83d10b38a93172743ac22123500dd624f21bd0729c4b5aa245b6cfcf9022c7c
 retrieved_from: "http://websecurity.com.ua/2233/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:06:15+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:41+00:00"
 slug: websecurity-com-ua-session-extending-websecurity
 snapshot: ""
 title_english: Session Extending - Session Extension - Websecurity
@@ -41,12 +43,12 @@ translation_of: ""
 
 # Session Extending - Session Extension - Websecurity
 
-**Session Extending - продовження сесії - Websecurity** - Author not stated, websecurity.com.ua.
+**Session Extending - продовження сесії - Websecurity** - MustLive, websecurity.com.ua.
 
 - Title in English: Session Extending - Session Extension - Websecurity
 - Published: date not stated
 - Original: <http://websecurity.com.ua/2233/>
-- Preserved from: http://websecurity.com.ua/2233/ (live) on 2026-08-10
+- Preserved from: http://websecurity.com.ua/2233/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,20 +5,22 @@ resource: "https://soroush.me/blog/browsers-anti-xss-methods-in-asp-classic-have
 tags: [article, webseclist-reference, en, soroush-me]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:51+00:00"
+  at: "2026-08-11T19:37:19+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://soroush.me/blog/browsers-anti-xss-methods-in-asp-classic-have-been-defeated"
     title: Browsers Anti-XSS methods in ASP (classic) have been defeated!
+    author: Soroush Dalili
 also_at: []
-authors: []
+authors:
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2012.md:42"
 commit: ""
-content_sha256: 6528c18665cde280c926bc869d3f9e56c623499483a52a91d23924209476bc8f
+content_sha256: e6625a266b63f36b727dada0a9c258f21df08a633e5bab5aaab11c7fcf73ee28
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: soroush.me
 publisher_english: ""
 raw_sha256: 3b6c828fa87cb198e90a0fb0b423e1e22614c66fbd55729b2ed4f66181d849db
 retrieved_from: "https://soroush.me/blog/browsers-anti-xss-methods-in-asp-classic-have-been-defeated"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:51+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:19+00:00"
 slug: soroush-me-browsers-anti-xss-methods-asp-classic-have-been-defeated
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Browsers Anti-XSS methods in ASP (classic) have been defeated!
 
-**Browsers Anti-XSS methods in ASP (classic) have been defeated!** - Author not stated, soroush.me.
+**Browsers Anti-XSS methods in ASP (classic) have been defeated!** - Soroush Dalili, soroush.me.
 
 - Published: date not stated
 - Original: <https://soroush.me/blog/browsers-anti-xss-methods-in-asp-classic-have-been-defeated>
-- Preserved from: https://soroush.me/blog/browsers-anti-xss-methods-in-asp-classic-have-been-defeated (live) on 2026-08-09
+- Preserved from: https://soroush.me/blog/browsers-anti-xss-methods-in-asp-classic-have-been-defeated (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

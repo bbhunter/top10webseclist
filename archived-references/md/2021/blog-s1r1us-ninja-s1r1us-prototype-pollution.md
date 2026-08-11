@@ -5,15 +5,26 @@ resource: "https://blog.s1r1us.ninja/research/PP"
 tags: [article, webseclist-reference, en-US, blog-s1r1us-ninja]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:06:11+00:00"
+  at: "2026-08-11T19:36:32+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://blog.s1r1us.ninja/research/PP"
     title: s1r1us - Prototype Pollution
+    author: Sergey Bobrov, Mohan Sri Rama Krishna P, Terjanq, Beomjin Lee, Masato Kinugawa, Nikita Stupin, Rahul Maini, Harsh Jaiswal, Mikhail Egorov, Melar Dev
 also_at: []
-authors: []
+authors:
+  - Sergey Bobrov
+  - Mohan Sri Rama Krishna P
+  - Terjanq
+  - Beomjin Lee
+  - Masato Kinugawa
+  - Nikita Stupin
+  - Rahul Maini
+  - Harsh Jaiswal
+  - Mikhail Egorov
+  - Melar Dev
 canonical_url: ""
 cited_by:
   - "2021.md:8"
@@ -30,8 +41,8 @@ publisher: blog.s1r1us.ninja
 publisher_english: ""
 raw_sha256: 4ec0378ef741da97c6d21ed4fe7d4fa59829cfef33e3a41469529594fd731ff3
 retrieved_from: "https://blog.s1r1us.ninja/research/PP"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:06:11+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:32+00:00"
 slug: blog-s1r1us-ninja-s1r1us-prototype-pollution
 snapshot: ""
 title_english: ""
@@ -41,11 +52,11 @@ translation_of: ""
 
 # s1r1us - Prototype Pollution
 
-**s1r1us - Prototype Pollution** - Author not stated, blog.s1r1us.ninja.
+**s1r1us - Prototype Pollution** - Sergey Bobrov, Mohan Sri Rama Krishna P, Terjanq, Beomjin Lee, Masato Kinugawa, Nikita Stupin, Rahul Maini, Harsh Jaiswal, Mikhail Egorov, Melar Dev, blog.s1r1us.ninja.
 
 - Published: date not stated
 - Original: <https://blog.s1r1us.ninja/research/PP>
-- Preserved from: https://blog.s1r1us.ninja/research/PP (live) on 2026-08-10
+- Preserved from: https://blog.s1r1us.ninja/research/PP (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

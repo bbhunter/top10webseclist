@@ -5,20 +5,22 @@ resource: "https://soroush.me/blog/iis-application-vs-folder-detection-during-bl
 tags: [article, webseclist-reference, en, soroush-me]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:55+00:00"
+  at: "2026-08-11T19:37:24+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://soroush.me/blog/iis-application-vs-folder-detection-during-blackbox-testing"
     title: IIS Application vs. Folder Detection During Blackbox Testing
+    author: Soroush Dalili
 also_at: []
-authors: []
+authors:
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2019.md:41"
 commit: ""
-content_sha256: 8b21c3489c2e40bb16ad1fbdd75a5b0a951b5b17894101bec1f9048580bc5a30
+content_sha256: 88d027d7f732dd96fe8e7922d8b662d4cecf61b9c29c22b649a71532460e6a18
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: soroush.me
 publisher_english: ""
 raw_sha256: b35fbe807722214aeb94be4e5be0c5863bba6c20935962ae54e1a679e1c52a8b
 retrieved_from: "https://soroush.me/blog/iis-application-vs-folder-detection-during-blackbox-testing"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:55+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:24+00:00"
 slug: soroush-me-iis-application-vs-folder-detection-during-blackbox-testing
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # IIS Application vs. Folder Detection During Blackbox Testing
 
-**IIS Application vs. Folder Detection During Blackbox Testing** - Author not stated, soroush.me.
+**IIS Application vs. Folder Detection During Blackbox Testing** - Soroush Dalili, soroush.me.
 
 - Published: date not stated
 - Original: <https://soroush.me/blog/iis-application-vs-folder-detection-during-blackbox-testing>
-- Preserved from: https://soroush.me/blog/iis-application-vs-folder-detection-during-blackbox-testing (live) on 2026-08-09
+- Preserved from: https://soroush.me/blog/iis-application-vs-folder-detection-during-blackbox-testing (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

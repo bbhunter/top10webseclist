@@ -5,18 +5,20 @@ resource: "https://notsosecure.com/hacking-aws-cognito-misconfigurations/"
 tags: [article, webseclist-reference, en, notsosecure]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:37:13+00:00"
+  at: "2026-08-11T19:37:06+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://notsosecure.com/hacking-aws-cognito-misconfigurations/"
     title: Hacking AWS Cognito Misconfigurations
+    author: Sunil Yadav
     last_modified: 2020-02-17
   - id: canonical
     resource: "https://notsosecure.com/hacking-aws-cognito-misconfigurations"
 also_at: []
-authors: []
+authors:
+  - Sunil Yadav
 canonical_url: "https://notsosecure.com/hacking-aws-cognito-misconfigurations"
 cited_by:
   - "2020.md:61"
@@ -33,8 +35,8 @@ publisher: NotSoSecure
 publisher_english: ""
 raw_sha256: f4e69debed6701722eb8f45c5d8fbec21220e8c20edd87b0591a19195ad28b24
 retrieved_from: "https://notsosecure.com/hacking-aws-cognito-misconfigurations"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:37:13+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:06+00:00"
 slug: 2020-notsosecure-hacking-aws-cognito-misconfigurations
 snapshot: ""
 title_english: ""
@@ -44,12 +46,12 @@ translation_of: ""
 
 # Hacking AWS Cognito Misconfigurations
 
-**Hacking AWS Cognito Misconfigurations** - Author not stated, NotSoSecure.
+**Hacking AWS Cognito Misconfigurations** - Sunil Yadav, NotSoSecure.
 
 - Published: 2020-02-17
 - Original: <https://notsosecure.com/hacking-aws-cognito-misconfigurations/>
 - Current location: <https://notsosecure.com/hacking-aws-cognito-misconfigurations>
-- Preserved from: https://notsosecure.com/hacking-aws-cognito-misconfigurations (live) on 2026-08-09
+- Preserved from: https://notsosecure.com/hacking-aws-cognito-misconfigurations (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

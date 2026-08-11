@@ -1,5 +1,6 @@
 """Command-line recovery selectors."""
 
+import inspect
 import types
 import unittest
 from pathlib import Path
@@ -222,11 +223,16 @@ class RecoverySelectorTests(unittest.TestCase):
         self.assertEqual({"authors": ["Alex Example"]}, stated)
         self.assertNotIn("outcome", stated)
         self.assertNotIn("class", stated)
-        # And the shape the grader would have been handed is no longer built.
-        self.assertEqual("skip", grade_module.classify(
-            "body text", override={"authors": ["Alex Example"]}).outcome,
-            "grade.classify still defaults a bare override to skip, so nothing "
-            "carrying only authors may ever be passed to it as an override")
+        # And an attribution-only override no longer reads as a judgement, so a
+        # maintainer who hand-writes `authors` into overrides.json without an
+        # outcome cannot silently exclude the document either.
+        self.assertNotEqual("maintainer", grade_module.classify(
+            "body text long enough to grade", url="https://one.example/a",
+            override={"authors": ["Alex Example"]}).rule,
+            "an override carrying only attribution must not decide the grade")
+        self.assertEqual("maintainer", grade_module.classify(
+            "body text", override={"outcome": "skip", "class": "derivative"}).rule,
+            "a real judgement must still win outright")
 
     def test_a_hand_statement_outranks_a_read_one(self):
         entry, decisions = {}, {"https://one.example/a": {
@@ -249,6 +255,19 @@ class RecoverySelectorTests(unittest.TestCase):
         readings = {"https://one.example/a/": {"authors": ["Alex Example"]}}
         self.assertEqual(["Alex Example"], refs.attribution_decision(
             "https://one.example/a", entry, {}, readings)["authors"])
+
+    def test_stale_is_its_own_authorisation_to_reprint(self):
+        """`--stale` alone used to select the right references and then reprint
+        none of them, because the exists-guard needed `--force` as well. It
+        reported "0 rendered, N skipped", which reads as "nothing needed doing"."""
+        parser = refs.build_parser()
+        stale = parser.parse_args(["pdf", "--stale"])
+        self.assertTrue(stale.stale)
+        self.assertFalse(stale.force)
+        source = inspect.getsource(refs.command_pdf)
+        self.assertIn("not (args.force or args.stale)", source,
+                      "the exists-guard must treat --stale as authorisation, or "
+                      "`pdf --stale` silently reprints nothing at all")
 
     def test_bylines_takes_exactly_one_of_queue_or_apply(self):
         parser = refs.build_parser()

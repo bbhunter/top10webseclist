@@ -5,17 +5,19 @@ resource: "http://www.jumperz.net/index.php?i=2&a=1&b=7"
 tags: [article, webseclist-reference, jumperz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:58+00:00"
+  at: "2026-08-11T19:37:03+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.jumperz.net/index.php?i=2&a=1&b=7"
     title: "J U M P E R Z . N E T - Stealing Information Using Anti-DNS Pinning ( DNS Rebinding ) : Online Demonstration"
+    author: Kanatoko
   - id: capture
     resource: "https://web.archive.org/web/20120625205350/http://www.jumperz.net/index.php?i=2&a=1&b=7"
 also_at: []
-authors: []
+authors:
+  - Kanatoko
 canonical_url: ""
 cited_by:
   - "2007.md:11"
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 8be3deee16970cba6b098b7fb5e74eb344e508e450129ff4df670441e131b1f6
 retrieved_from: "http://www.jumperz.net/index.php?i=2&a=1&b=7"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:58+00:00"
+retrieved_utc: "2026-08-11T19:37:03+00:00"
 slug: jumperz-net-j-u-m-p-e-r-z-n-e-t-stealing-information-using-anti-demonstration
 snapshot: 20120625205350
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # J U M P E R Z . N E T - Stealing Information Using Anti-DNS Pinning ( DNS Rebinding ) : Online Demonstration
 
-**J U M P E R Z . N E T - Stealing Information Using Anti-DNS Pinning ( DNS Rebinding ) : Online Demonstration** - Author not stated, jumperz.net.
+**J U M P E R Z . N E T - Stealing Information Using Anti-DNS Pinning ( DNS Rebinding ) : Online Demonstration** - Kanatoko, jumperz.net.
 
 - Published: date not stated
 - Original: <http://www.jumperz.net/index.php?i=2&a=1&b=7>
-- Preserved from: http://www.jumperz.net/index.php?i=2&a=1&b=7 (stored) on 2026-08-09
+- Preserved from: http://www.jumperz.net/index.php?i=2&a=1&b=7 (stored) on 2026-08-11
 - Capture timestamp: 20120625205350
 - Licence: unknown
 

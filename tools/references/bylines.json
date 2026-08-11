@@ -131,6 +131,22 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://amolnaik4.blogspot.com/2011/03/exploitation-of-self-only-cross-site.html": {
+      "authors": [
+        "AMol NAik"
+      ],
+      "evidence": "Me AMol NAik Web Application Pentester",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://appsecusa2015.sched.org/speaker/mostafa_siraj.1tssijvd": {
+      "authors": [
+        "Mostafa Siraj"
+      ],
+      "evidence": "Difference in == Operator Room D Mostafa Siraj",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
     "https://archive.conference.hitb.org/hitbsecconf2011ams/materials/D2T2%20-%20Rosario%20Valotta%20-%20Cookie%20Jacking.pdf": {
       "authors": [
         "Rosario Valotta"
@@ -189,6 +205,14 @@
       "evidence": "Oana Goga UPMC Sorbonne Universités Paris, France oana.goga@lip6.fr Howard Lei ICSI Berkeley, USA",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://archives.neohapsis.com/archives/fulldisclosure/2007-01/0062.html": {
+      "authors": [
+        "Stefano Di Paola"
+      ],
+      "evidence": "Original Discovery and Research: Stefano Di Paola",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://arxiv.org/abs/1211.4812": {
       "authors": [
@@ -593,6 +617,14 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://blackhat.com/presentations/bh-dc-09/Sutton/blackhat-dc-09-Sutton-persistent-storage.pdf": {
+      "authors": [
+        "Michael Sutton"
+      ],
+      "evidence": "Michael Sutton VP, Security Research A WOLF IN SHEEP'S CLOTHING The Dangers of Persistent Web Browser Storage",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
     "https://blackhat.com/presentations/bh-europe-07/Sotirov/Presentation/bh-eu-07-sotirov-apr19.pdf": {
       "authors": [
         "Alexander Sotirov"
@@ -713,6 +745,14 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://blog.c22.cc/2011/04/22/surveymonkey-ip-spoofing": {
+      "authors": [
+        "ChrisJohnRiley"
+      ],
+      "evidence": "Posted by ChrisJohnRiley on April 22, 2011",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
     "https://blog.doyensec.com/2017/08/03/electron-framework-security.html": {
       "authors": [
         "Luca Carettoni"
@@ -787,6 +827,22 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html": {
+      "authors": [
+        "Krzysztof Kotowicz"
+      ],
+      "evidence": "from **Krzysztof Kotowicz**",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://blog.m-sec.net/2012/new-gsm-vulnerability": {
+      "authors": [
+        "Bogdan Alecu"
+      ],
+      "evidence": "Tags: attack, bogdan alecu, http headers",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
     "https://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html": {
       "authors": [
         "Roberto Suggi Liverani"
@@ -829,6 +885,56 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://blog.s1r1us.ninja/research/PP": {
+      "authors": [
+        "Sergey Bobrov",
+        "Mohan Sri Rama Krishna P",
+        "Terjanq",
+        "Beomjin Lee",
+        "Masato Kinugawa",
+        "Nikita Stupin",
+        "Rahul Maini",
+        "Harsh Jaiswal",
+        "Mikhail Egorov",
+        "Melar Dev"
+      ],
+      "evidence": "Research Team - Sergey Bobrov Black2Fan - Mohan Sri Rama Krishna P s1r1us - Terjanq terjanq - Beomjin Lee posix - Masato Kinugawa kinugawamasato",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://blog.washingtonpost.com/securityfix/2006/01/account_hijackings_force_livej.html": {
+      "authors": [
+        "Brian Krebs"
+      ],
+      "evidence": "Security Fix - Brian Krebs on Computer and Internet Security",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://blog.watchfire.com/wfblog/2008/06/cross-environ-1.html": {
+      "authors": [
+        "Yair Amit"
+      ],
+      "evidence": "This research was performed by Yair Amit with additional help from Adi Sharabani, Danny Allan & Ory Segal.",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://blog.watchfire.com/wfblog/2008/06/javascript-code.html": {
+      "authors": [
+        "Ory Segal",
+        "Adi Sharabani"
+      ],
+      "evidence": "This research was performed by the following IBM Rational Application Security Group Members: Ory Segal & Adi Sharabani",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://blog.watchfire.com/wfblog/2011/10/json-based-xss-exploitation.html": {
+      "authors": [
+        "Adi Cohen"
+      ],
+      "evidence": "**Discovered by** - Adi Cohen, IBM Application Security Research",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
     "https://blog.whitehatsec.com/how-to-own-every-user-on-a-social-networking-site": {
       "authors": [
         "Matt Johansen"
@@ -844,6 +950,14 @@
       "evidence": "David Ross MSRC Engineering Team, Microsoft 4/25/2012",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://blogs.technet.com/msrc/archive/2009/12/27/new-reports-of-a-vulnerability-in-iis.aspx": {
+      "authors": [
+        "Jerry Bryant"
+      ],
+      "evidence": "Thanks, Jerry Bryant",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://buer.haus/2019/10/18/a-tale-of-exploitation-in-spreadsheet-file-conversions": {
       "authors": [
@@ -894,6 +1008,14 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://chudypb.github.io/exchange-powershell.html": {
+      "authors": [
+        "Piotr Bazydło"
+      ],
+      "evidence": "Exploiting Microsoft Exchange PowerShell Remoting | Piotr Bazydło (chudy)",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
     "https://codeanlabs.com/blog/research/cve-2024-4367-arbitrary-js-execution-in-pdf-js": {
       "authors": [
         "Thomas Rinsma"
@@ -926,6 +1048,15 @@
       "evidence": "Chaz Lever, Robert Walls, Yacin Nadji, David Dagon, Patrick McDaniel, Manos Antonakakis",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://community.websense.com/blogs/securitylabs/archive/2014/02/14/msie-0-day-exploit-cve-2014-0322-possibly-targeting-french-aerospace-organization.aspx": {
+      "authors": [
+        "Alex Watson",
+        "Victor Chin"
+      ],
+      "evidence": "Contributors: Alex Watson, Victor Chin - Websense Security Labs",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://comp.nus.edu.sg/~prateeks/papers/w2sp10-primitives.pdf": {
       "authors": [
@@ -1470,6 +1601,14 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://events.ccc.de/congress/2011/Fahrplan/events/4680.en.html": {
+      "authors": [
+        "Alexander Klink"
+      ],
+      "evidence": "| Alexander 'alech' Klink |",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
     "https://exploit-db.com/docs/english/38468-new-methods-in-automated-xss-detection.pdf": {
       "authors": [
         "Kenneth F. Belva"
@@ -1529,6 +1668,22 @@
       "evidence": "Xiang Cai Stony Brook University xcai@cs.stonybrook.edu Xin Cheng Zhang Stony Brook University xinczhan@gmail.com Brijesh Joshi",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://fscked.org/blog/fully-automated-active-https-cookie-hijacking": {
+      "authors": [
+        "Mike Perry"
+      ],
+      "evidence": "Submitted by mikeperry on Thu, 08/14/2008 - 01:39",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://fscked.org/projects/cookiemonster": {
+      "authors": [
+        "Mike Perry"
+      ],
+      "evidence": "Submitted by mikeperry on Mon, 08/04/2008 - 04:08",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://fscked.org/talks/ActiveHTTPSCookieStealing.pdf": {
       "authors": [
@@ -1595,6 +1750,190 @@
       "evidence": "Browser Security White Paper Final Paper 2017-09-19 Markus Vervier, Michele Orrù, Berend-Jan Wever, Eric Sesterhenn X41 D-SEC GmbH",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://gnucitizen.org/blog/backdooring-flash-objects": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Backdooring Flash Objects (the walkthrough) Mon, 04 Sep 2006 19:07:37 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/backdooring-images": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Backdooring Images Fri, 15 Dec 2006 04:57:22 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/backdooring-mp3-files": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Backdooring MP3 Files Wed, 20 Sep 2006 21:39:18 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/backdooring-quicktime-movies": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Backdooring QuickTime Movies Tue, 05 Sep 2006 22:51:33 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/bugs-in-the-browser-firefoxs-data-url-scheme-vulnerability": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Bugs In The Browser Firefox's DATA URL Scheme Vulnerability Thu, 01 Nov 2007 01:39:19 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/client-side-sql-injection-attacks": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Client-side SQL Injection Attacks Tue, 05 Jun 2007 21:33:36 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/content-disposition-hacking": {
+      "authors": [
+        "pagvac"
+      ],
+      "evidence": "# Content-Disposition Hacking Mon, 05 Nov 2007 12:44:31 GMT by pagvac",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/cross-site-file-upload-attacks": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Cross-site File Upload Attacks Thu, 21 Feb 2008 12:15:32 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/flash-cookie-object-tracking": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Flash Cookie Object Tracking Thu, 06 Dec 2007 14:44:26 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/frame-injection-fun": {
+      "authors": [
+        "pagvac"
+      ],
+      "evidence": "# Frame Injection Fun Fri, 10 Oct 2008 00:01:28 GMT by pagvac",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/google-gmail-e-mail-hijack-technique": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Google GMail E-mail Hijack Technique Tue, 25 Sep 2007 18:50:33 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/google-urchin-password-theft-madness": {
+      "authors": [
+        "pagvac"
+      ],
+      "evidence": "# Google Urchin Password Theft Madness Mon, 24 Sep 2007 14:14:49 GMT by pagvac",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/hacking-the-interwebs": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Hacking The Interwebs Sat, 12 Jan 2008 12:57:22 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/hacking-without-0days-drive-by-java": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Hacking without 0days Drive-by Java Thu, 25 Oct 2007 16:13:36 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/hijacking-innocent-frames": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Hijacking Innocent Frames Thu, 11 Dec 2008 21:39:16 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/java-jar-attacks-and-features": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Java JAR Attacks and Features Sat, 10 Nov 2007 22:35:33 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/javascript-global-namespace-pollution": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# JavaScript Global Namespace Pollution Thu, 07 Feb 2008 10:11:56 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/self-contained-xss-attacks": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Self-contained XSS Attacks Fri, 22 Sep 2006 11:52:17 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/severe-xss-in-google-and-others-due-to-the-jar-protocol-issues": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Severe XSS in Google and Others Due To The JAR Protocol Issues Sat, 10 Nov 2007 11:39:16 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/social-networks-evil-twin-attacks": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Social Networks Evil Twin Attacks Mon, 18 Feb 2008 21:01:42 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/the-attack-of-the-tiny-urls": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# The Attack of the TINY URLs Thu, 16 Nov 2006 02:41:30 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/username-enumeration-vulnerabilities": {
+      "authors": [
+        "pagvac"
+      ],
+      "evidence": "# Username Enumeration Vulnerabilities Wed, 04 Apr 2007 09:34:18 GMT by pagvac",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues": {
+      "authors": [
+        "pdp"
+      ],
+      "evidence": "# Web Mayhem Firefox's JAR Protocol issues Wed, 07 Nov 2007 00:51:46 GMT by pdp",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://googleprojectzero.blogspot.com/2022/11/gregor-samsa-exploiting-java-xml.html": {
       "authors": [
@@ -2244,6 +2583,14 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://inputzero.io/2018/08/kaspersky-vpn-leaks-dns-address.html": {
+      "authors": [
+        "Dhiraj Mishra"
+      ],
+      "evidence": "Kaspersky Lab would like to thank Dhiraj Mishra for discovering a vulnerability in the Android-based Kaspersky Secure Connection app",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
     "https://intruder.io/research/practical-http-header-smuggling": {
       "authors": [
         "Daniel Thatcher"
@@ -2263,6 +2610,39 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://isg.rhul.ac.uk/tls/Lucky13.html": {
+      "authors": [
+        "Nadhem AlFardan",
+        "Kenny Paterson"
+      ],
+      "evidence": "The team behind this research comprises Nadhem AlFardan and Kenny Paterson.",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://jeremiahgrossman.blogspot.com/2006/01/my-tv-interview-with-abc-news-au.html": {
+      "authors": [
+        "Jeremiah Grossman"
+      ],
+      "evidence": "Jeremiah Grossman: My TV interview with ABC News (AU)",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://jeremiahgrossman.blogspot.com/2007/03/i-still-know-where-youve-been-without.html": {
+      "authors": [
+        "Jeremiah Grossman"
+      ],
+      "evidence": "Jeremiah Grossman: I still know where you've been, without JavaScript",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://jeremiahgrossman.blogspot.com/2009/03/detecting-private-browsing-mode.html": {
+      "authors": [
+        "Jeremiah Grossman"
+      ],
+      "evidence": "Jeremiah Grossman: Detecting Private Browsing Mode",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
     "https://jianjunchen.com/p/wafmanis.sp24.pdf": {
       "authors": [
         "Qi Wang",
@@ -2276,6 +2656,22 @@
       "evidence": "Qi Wang, Jianjun Chen, Zheyu Jiang, Run Guo, Ximeng Liu, Chao Zhang and Haixin Duan",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://jumperz.net/index.php?i=2&a=1&b=7": {
+      "authors": [
+        "Kanatoko"
+      ],
+      "evidence": "Contact: Kanatoko twitter: @kinyuka",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://jumperz.net/index.php?i=2&a=3&b=3": {
+      "authors": [
+        "Kanatoko"
+      ],
+      "evidence": "Contact: Kanatoko anvil at jumperz.net",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://kapravelos.com/publications/mystique-CCS18.pdf": {
       "authors": [
@@ -2310,6 +2706,14 @@
       "evidence": "MATTIAS GRENFELDT AND ASTA OLOFSSON Degree project, first cycle (15 hp)",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://lab.gnucitizen.org/projects/cups-0day": {
+      "authors": [
+        "Adrian Pastor"
+      ],
+      "evidence": "on Nov 19, 2008 2:48 PM by Adrian Pastor",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://labs.detectify.com/2017/02/28/hacking-slack-using-postmessage-and-websocket-reconnect-to-steal-your-precious-token": {
       "authors": [
@@ -2364,6 +2768,14 @@
       "evidence": "Cross-Site Challenge-Response Attacks Nethanel Gelernter Itamar Peretz Dept. of Computer Science",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://matiaskatz.com/en/projects/htexploit": {
+      "authors": [
+        "Matias Katz"
+      ],
+      "evidence": "Blog de Matias Katz - HTExploit - Bypassing .htaccess restrictions",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://mbsd.jp/Whitepaper/smtpi.pdf": {
       "authors": [
@@ -3452,6 +3864,22 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://notsosecure.com/exploiting-ssrf-in-aws-elastic-beanstalk": {
+      "authors": [
+        "Sunil Yadav"
+      ],
+      "evidence": "In this blog, Sunil Yadav, our lead trainer",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://notsosecure.com/hacking-aws-cognito-misconfigurations": {
+      "authors": [
+        "Sunil Yadav"
+      ],
+      "evidence": "In this blog, Sunil Yadav, our lead trainer",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
     "https://nowotarski.info/http2-continuation-flood-technical-details": {
       "authors": [
         "Bartek Nowotarski"
@@ -3526,6 +3954,14 @@
       "evidence": "Vulnerabilities Abner Mendoza, Guofei Gu Texas A&M University abmendoza@tamu.edu, guofei@cse.tamu.edu",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html": {
+      "authors": [
+        "phrag"
+      ],
+      "evidence": "published on 2014-06-04 13:33:37 by phrag",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf": {
       "authors": [
@@ -3881,6 +4317,16 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://procheckup.com/Vulner_PR0703.php": {
+      "authors": [
+        "Richard Brain",
+        "Jan Fry",
+        "Adrian Pastor"
+      ],
+      "evidence": "found by Richard Brain and further researched by Jan Fry and Adrian Pastor",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
     "https://procheckup.com/media/41602/hacking_zyxel_gateways.pdf": {
       "authors": [
         "Adrian Pastor"
@@ -3888,6 +4334,14 @@
       "evidence": "Research and paper by Adrian Pastor of ProCheckUp Ltd",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://procheckup.com/vulnerability_manager/vulnerabilities/pr08-21": {
+      "authors": [
+        "Adrian Pastor"
+      ],
+      "evidence": "Credits: Adrian Pastor of ProCheckUp Ltd (www.procheckup.com)",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-again": {
       "authors": [
@@ -4021,6 +4475,16 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://role-confusion.github.io/": {
+      "authors": [
+        "Charles Ye",
+        "Jasmine Cui",
+        "Dylan Hadfield-Menell"
+      ],
+      "evidence": "author = {Ye, Charles and Cui, Jasmine and Hadfield-Menell, Dylan}",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
     "https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf": {
       "authors": [
         "Seyed Ali Mirheidari",
@@ -4095,6 +4559,23 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://samy.pl/slipstream": {
+      "authors": [
+        "Samy Kamkar"
+      ],
+      "evidence": "samy kamkar - NAT Slipstreaming v2.0 # NAT Slipstreaming v2.0",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://scan.flashsec.org/": {
+      "authors": [
+        "David Neu",
+        "fukami"
+      ],
+      "evidence": "- David Neu david.neu@gmail.com Problem-Discovery and PoC - fukami, SektionEins",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
     "https://scary.beasts.org/security/CESA-2008-009.html": {
       "authors": [
         "Chris Evans"
@@ -4128,6 +4609,30 @@
       "evidence": "Liu, Daiping ; Hao, Shuai ; Wang, Haining",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://sec-consult.com/blog/detail/dns-analyzer-finding-dns-vulnerabilities-with-burp-suite": {
+      "authors": [
+        "Timo Longin"
+      ],
+      "evidence": "Timo Longin, security expert at SEC Consult, has developed and introduced the DNS Analysis Server",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style": {
+      "authors": [
+        "Timo Longin"
+      ],
+      "evidence": "Timo Longin (SEC Consult Vienna) discovered that some web applications are **still vulnerable today**",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide": {
+      "authors": [
+        "Timo Longin"
+      ],
+      "evidence": "Timo Longin (@timolongin) - known for his DNS protocol attacks - discovered a novel exploitation technique",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://secforce.co.uk/media/presentations/OWASP_Abusing_PHP_sockets.pdf": {
       "authors": [
@@ -4329,6 +4834,14 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://security.linkedin.com/blog-archive": {
+      "authors": [
+        "Sakshi Jain"
+      ],
+      "evidence": "Who Are You? A Statistical Approach to Protecting LinkedIn Logins Sakshi Jain Senior Data Scientist",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
     "https://securityfocus.com/archive/1/441014/30/0/threaded": {
       "authors": [
         "Amit Klein"
@@ -4336,6 +4849,14 @@
       "evidence": "Forging HTTP request headers with Flash Amit Klein, July 2006",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://skullsecurity.org/blog/2010/stuffing-javascript-into-dns-names": {
+      "authors": [
+        "Ron Bowes"
+      ],
+      "evidence": "Permalink Comments (19) Ron Bowes Apr 20, 2010",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://sla.ckers.org/forum/read.php?13%2C2033=": {
       "authors": [
@@ -4352,6 +4873,14 @@
       "evidence": "Bypassing Filters With Encoding Posted by: ** maluc ** Date: November 19, 2006 12:42AM",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://sla.ckers.org/forum/read.php?24%2C33349=": {
+      "authors": [
+        "SW"
+      ],
+      "evidence": "Java/script: no alnum cheat sheets Posted by: ** SW ** Date: February 09, 2010 09:12PM",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://sla.ckers.org/forum/read.php?3%2C3109%2C3124=": {
       "authors": [
@@ -4459,6 +4988,14 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports": {
+      "authors": [
+        "Joshua Abraham"
+      ],
+      "evidence": "Internal Port Scanning via Crystal Reports | Joshua \"Jabra\" Abraham",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
     "https://starlabs.sg/blog/2021/04/you-talking-to-me": {
       "authors": [
         "Li JianTao"
@@ -4491,6 +5028,14 @@
       "evidence": "(use our names without any accents.) - Karthikeyan Bhargavan - Gaëtan Leurent",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://tetraph.com/covert_redirect/oauth2_openid_covert_redirect.html": {
+      "authors": [
+        "Wang Jing"
+      ],
+      "evidence": "Covert Redirect logo is free to use, designed by WANG Jing.",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://thehackerblog.com/wp-content/uploads/2015/09/Black_Hat_USA_2015-Bypass_Surgery-6Aug2015.pdf": {
       "authors": [
@@ -4555,6 +5100,15 @@
       "evidence": "Abusing HTML 5 Structured Client-side Storage ALBERTO TRIVERO First release: 20 July 2008",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://troopers.de/media/filer_public/a5/a3/a5a3a6bf-de72-44fb-910d-5a94910a277e/troopers_2015_-_the_old_is_new_again_cve-2011-2461_is_back.pdf": {
+      "authors": [
+        "Luca Carettoni",
+        "Mauro Gentile"
+      ],
+      "evidence": "Luca 'ikki' Carettoni Application Security @ LinkedIn Mauro 'sneak' Gentile",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://trouge.net/papers/xsleaks_sp2023.pdf": {
       "authors": [
@@ -5762,6 +6316,14 @@
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
     },
+    "https://webappsec.org/lists/websecurity/archive/2009-04/msg00047.html": {
+      "authors": [
+        "MustLive"
+      ],
+      "evidence": "- *From*: \"MustLive\" <mustlive@xxxxxxxxxxxxxxxxxx>",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
     "https://webappsec.org/projects/articles/121106.shtml": {
       "authors": [
         "Vicente Aguilera Diaz"
@@ -5769,6 +6331,26 @@
       "evidence": "By Vicente Aguilera Diaz ( vaguilera (at) isecauditors (dot) com )",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://webblaze.cs.berkeley.edu/blancura.html": {
+      "authors": [
+        "Matthew Finifter",
+        "Joel Weinberger",
+        "Adam Barth"
+      ],
+      "evidence": "Matthew Finifter, Joel Weinberger, Adam Barth",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://webblaze.cs.berkeley.edu/contentsniff.html": {
+      "authors": [
+        "Adam Barth",
+        "Juan Caballero",
+        "Dawn Song"
+      ],
+      "evidence": "Adam Barth, Juan Caballero, Dawn Song",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://webblaze.cs.berkeley.edu/papers/kudzu.pdf": {
       "authors": [
@@ -5782,6 +6364,14 @@
       "evidence": "Prateek Saxena, Devdatta Akhawe, Steve Hanna, Feng Mao, Stephen McCamant, Dawn Song",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://websecurity.com.ua/2233": {
+      "authors": [
+        "MustLive"
+      ],
+      "evidence": "розробив власний метод - MustLive Session Extending Method.",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://whitehatsec.com/downloads/WHXSSThreats.pdf": {
       "authors": [
@@ -5799,6 +6389,54 @@
       "evidence": "Jeremiah Grossman (Founder and CTO) T.C. Niedzialkowski (Sr. Security Engineer)",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://wisec.it/sectou.php?id=4698ebdc59d15": {
+      "authors": [
+        "Stefano Di Paola"
+      ],
+      "evidence": "Wisec is written and mantained by Stefano Di Paola.",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://wisec.it/sectou.php?id=46d592056b008": {
+      "authors": [
+        "Stefano Di Paola"
+      ],
+      "evidence": "Wisec is written and mantained by Stefano Di Paola.",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://wisec.it/sectou.php?id=4706611fe9210": {
+      "authors": [
+        "Stefano Di Paola"
+      ],
+      "evidence": "Wisec is written and mantained by Stefano Di Paola.",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://wisec.it/sectou.php?id=472a5b8d1a4cd": {
+      "authors": [
+        "Stefano Di Paola"
+      ],
+      "evidence": "Wisec is written and mantained by Stefano Di Paola.",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://wisec.it/sectou.php?id=472f952d79293": {
+      "authors": [
+        "Stefano Di Paola"
+      ],
+      "evidence": "Wisec is written and mantained by Stefano Di Paola.",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://wisec.it/vulns.php?id=11": {
+      "authors": [
+        "Stefano Di Paola"
+      ],
+      "evidence": "Original Discovery and Research: Stefano Di Paola",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://wokb.cz/Hacking%20technique/Abusing%20Internet%20Explorer%208%27s%20XSS%20Filters.pdf": {
       "authors": [
@@ -5827,6 +6465,22 @@
       "evidence": "Posted by Nate McFeters on September 24th, 2007",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://xs-sniper.com/blog/2012/10/11/content-smuggling": {
+      "authors": [
+        "Billy Rios"
+      ],
+      "evidence": "Billy (BK) Rios - Content Smuggling",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://yasserali.com/hacking-paypal-accounts-with-one-click": {
+      "authors": [
+        "Yasser Ali"
+      ],
+      "evidence": "Yasser Ali's Blog - Hacking PayPal Accounts with one click (Patched)",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     },
     "https://yinzhicao.org/CoCo/CoCo.pdf": {
       "authors": [
@@ -5883,6 +6537,31 @@
       "evidence": "Penghui Li Zhongguancun Laboratory Beijing, China lipenghui315@gmail.com Mingxue Zhang",
       "confidence": "high",
       "reviewed_utc": "2026-08-11T17:18:41+00:00"
+    },
+    "https://zhero-web-sec.github.io/research-and-things/astro-framework-and-standards-weaponization": {
+      "authors": [
+        "zhero",
+        "inzo_"
+      ],
+      "evidence": "Research conducted by zhero; & inzo_",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://zhero-web-sec.github.io/research-and-things/eclipse-on-nextjs-conditioned-exploitation-of-an-intended-race-condition": {
+      "authors": [
+        "zhero"
+      ],
+      "evidence": "Al hamduliLlah; zhero;",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
+    },
+    "https://zhero-web-sec.github.io/research-and-things/nextjs-cache-and-chains-the-stale-elixir": {
+      "authors": [
+        "zhero"
+      ],
+      "evidence": "Al hamduliLlah; zhero;",
+      "confidence": "medium",
+      "reviewed_utc": "2026-08-11T19:35:36+00:00"
     }
   }
 }

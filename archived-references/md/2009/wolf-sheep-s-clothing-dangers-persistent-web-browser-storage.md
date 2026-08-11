@@ -5,18 +5,20 @@ resource: "https://blackhat.com/presentations/bh-dc-09/Sutton/blackhat-dc-09-Sut
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:26+00:00"
+  at: "2026-08-11T19:36:28+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://blackhat.com/presentations/bh-dc-09/Sutton/blackhat-dc-09-Sutton-persistent-storage.pdf"
     title: "A Wolf in Sheep's Clothing: The Dangers of Persistent Web Browser Storage"
+    author: Michael Sutton
 also_at: []
-authors: []
+authors:
+  - Michael Sutton
 canonical_url: ""
 cited_by:
-  - "2009.md:112"
+  - "2009.md:108"
 commit: ""
 content_sha256: 5a5bd0c8b072900607a1c3eb5c6f19fcfe8e0071c98406c818e16e557186809d
 depth: full
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 49ebe5197502b6bf7c7f9c179d223adaf5b3080230e8a4539d0a30780566de9e
 retrieved_from: "https://blackhat.com/presentations/bh-dc-09/Sutton/blackhat-dc-09-Sutton-persistent-storage.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:26+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:28+00:00"
 slug: wolf-sheep-s-clothing-dangers-persistent-web-browser-storage
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # A Wolf in Sheep's Clothing: The Dangers of Persistent Web Browser Storage
 
-**A Wolf in Sheep's Clothing: The Dangers of Persistent Web Browser Storage** - Author not stated, Publisher not stated.
+**A Wolf in Sheep's Clothing: The Dangers of Persistent Web Browser Storage** - Michael Sutton, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://blackhat.com/presentations/bh-dc-09/Sutton/blackhat-dc-09-Sutton-persistent-storage.pdf>
-- Preserved from: https://blackhat.com/presentations/bh-dc-09/Sutton/blackhat-dc-09-Sutton-persistent-storage.pdf (live) on 2026-08-08
+- Preserved from: https://blackhat.com/presentations/bh-dc-09/Sutton/blackhat-dc-09-Sutton-persistent-storage.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -97,6 +99,9 @@ Future
                         Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
 Background
 
+
+
+
  Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
    Evolu9on of Web Applica9ons
 Largely sta9c, site generated content        Dynamic, user
@@ -105,11 +110,17 @@ Largely sta9c, site generated content        Dynamic, user
                                                         Web 2.0    applica9ons
                                                                     Web 3.0
 
+
+
+
 Time          Dot com Google IPO         O’Reilly   Google        Safari 3.1
 Warner/       bubble                     Media Web Gears          supports
 AOL           bursts                     2.0        released      HTML 5
 merger                                   Conference               database
                                                                   storage
+
+
+
 
                                 Twi+er Ques9ons: zscaler_su+on    Copyright 2009 Zscaler, Inc.
                           Browser Storage
@@ -136,8 +147,13 @@ HTML 5 Database Storage
 • Supported by Safari 3.1, released March 18, 2007
 • Full local rela9onal database
 
+
+
                                       Twi+er Ques9ons: zscaler_su+on                Copyright 2009 Zscaler, Inc.
 HTTP Cookies
+
+
+
 
  Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
                               HTTP Cookies
@@ -164,17 +180,31 @@ Abuse
 • Cookie hijacking
 • Cookie poisoning
 
+
+
                                      Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
 Persistent csXSS
+
+
+
 
    Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
 Sony Search
 
+
+
+
  Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
 Sony Persistent csXSS
 
+
+
+
      Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
 Sony Persistent csXSS
+
+
+
 
      Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
                   Persistent csXSS
@@ -196,6 +226,9 @@ Prevalence
 
                           Twi+er Ques9ons: zscaler_su+on      Copyright 2009 Zscaler, Inc.
 Flash Local SharedObjects
+
+
+
 
         Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
                                      Flash LSOs
@@ -222,6 +255,8 @@ Abuse
 • Cookie poisoning
 • Data leakage
 
+
+
                                        Twi+er Ques9ons: zscaler_su+on                   Copyright 2009 Zscaler, Inc.
  What’s Stored in Flash LSO’s?
 Tracking Iden9ﬁers
@@ -246,6 +281,9 @@ SharedObject Sandboxing
   Programming Adobe ActionScript 3.0
   for Adobe Flash
   SharedObjects
+
+
+
 
           Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
    Flash LSO Storage Loca9ons
@@ -324,6 +362,7 @@ package {
       }
 }
 
+
                                          Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
            Reading From a Flash Cookie
 …
@@ -347,8 +386,14 @@ public func9on zscaler() {
 }
 …
 
+
+
+
                                         Twi+er Ques9ons: zscaler_su+on     Copyright 2009 Zscaler, Inc.
 Reading From a Flash Cookie
+
+
+
 
          Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
    Pros/Cons of Flash Cookies
@@ -367,6 +412,9 @@ Cons
 
                      Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
 (Google) Gears
+
+
+
 
   Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
                                           Gears
@@ -392,6 +440,7 @@ Abuse
 • Data conﬁden9ality
 • Data integrity
 
+
                                     Twi+er Ques9ons: zscaler_su+on                 Copyright 2009 Zscaler, Inc.
                     Gears Ac9va9on
 Allow
@@ -402,6 +451,9 @@ Install
 
 • SQLite database installed on local
   ﬁle system
+
+
+
 
                             Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
              Gears Storage Loca9ons
@@ -433,8 +485,13 @@ Windows Mobile
 
 •Mobile Internet Explorer: \Applica9on Data\Google\Google Gears for Internet Explorer
 
+
+
                                           Twi+er Ques9ons: zscaler_su+on                         Copyright 2009 Zscaler, Inc.
     csSQLi
+
+
+
 
 Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
                             csSQLi
@@ -480,10 +537,13 @@ Thank You
 
 <div style="float: left; padding-bottom: 10px;">
 
+
+
     Injec9on point
 
    • Within paragraph tag
    • Tag will need to be closed </p>
+
 
                      Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
                   Read Paymo Data
@@ -510,6 +570,9 @@ Thank You
                            Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
 Paymo csSQLi
 
+
+
+
  Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
                 Gears csSQLi
 BulitIn SQLi Protec9on
@@ -534,10 +597,13 @@ through verbose error messages
                                                             accessible
          or brute force
 
+
         Online a+acks                                 Online and oﬄine a+acks
+
 
     SQL statement must be                         XSS makes any site vulnerable,
           vulnerable                                 regardless of SQL syntax
+
 
                          Twi+er Ques9ons: zscaler_su+on             Copyright 2009 Zscaler, Inc.
           csSQLi vs Cookie The‹
@@ -561,6 +627,9 @@ Verdict
                            Twi+er Ques9ons: zscaler_su+on          Copyright 2009 Zscaler, Inc.
 Sites Using Gears
 
+
+
+
    Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
              Pros/Cons of Gears
 Pros
@@ -578,9 +647,13 @@ Cons
   • csSQLi is a reality ‐ Data can be remotely accessed from a local
     rela9onal database
 
+
                          Twi+er Ques9ons: zscaler_su+on     Copyright 2009 Zscaler, Inc.
            HTML 5
 Structured Client Side Storage
+
+
+
 
          Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.
                                         HTML 5
@@ -604,6 +677,8 @@ Abuse
 
 • Data conﬁden9ality
 • Data integrity
+
+
 
                                      Twi+er Ques9ons: zscaler_su+on            Copyright 2009 Zscaler, Inc.
           HTML 5 Browser DB Support
@@ -663,6 +738,9 @@ Expiry          Custom          Never                   Never                 Ne
 File Format     Text            Binary                  Binary (SQLite)       Binary (SQLite)
 Deployment      Universal       Near universal          Minimal               Beta only
 
+
+
+
                             Twi+er Ques9ons: zscaler_su+on                Copyright 2009 Zscaler, Inc.
 How Gears and HTML 5 Change the
       Game for A+ackers
@@ -681,6 +759,7 @@ A+ack surface
 • Poten9ally conﬁden9al data moves from a single, centralized loca9on
   (server) to poten9ally millions of individual loca9ons (client)
 • All targets (clients) can be a+acked from one loca9on (web app w/ XSS vuln.)
+
 
                            Twi+er Ques9ons: zscaler_su+on          Copyright 2009 Zscaler, Inc.
                           Predic9ons
@@ -702,9 +781,15 @@ A+acks
 
 • A+ack prevalence will increase in propor9on to adop9on rates
 
+
                              Twi+er Ques9ons: zscaler_su+on          Copyright 2009 Zscaler, Inc.
                       Ques9ons?
+
+
+
 
 Michael Su+on ‐ VP, Security Research
 h+p://research.zscaler.com
 Michael.Su+on@zscaler.com
+
+                        Twi+er Ques9ons: zscaler_su+on   Copyright 2009 Zscaler, Inc.

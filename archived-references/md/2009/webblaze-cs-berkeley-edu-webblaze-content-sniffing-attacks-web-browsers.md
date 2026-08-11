@@ -5,18 +5,22 @@ resource: "https://webblaze.cs.berkeley.edu/contentsniff.html"
 tags: [article, webseclist-reference, webblaze-cs-berkeley-edu]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:06:11+00:00"
+  at: "2026-08-11T19:37:40+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://webblaze.cs.berkeley.edu/contentsniff.html"
     title: WebBlaze - Content Sniffing Attacks in Web Browsers
+    author: Adam Barth, Juan Caballero, Dawn Song
 also_at: []
-authors: []
+authors:
+  - Adam Barth
+  - Juan Caballero
+  - Dawn Song
 canonical_url: ""
 cited_by:
-  - "2009.md:102"
+  - "2009.md:103"
 commit: ""
 content_sha256: b14f6b6d68824b067df0bfae3866aa61338b8ba140ab38487186e369210525e5
 depth: full
@@ -30,8 +34,8 @@ publisher: webblaze.cs.berkeley.edu
 publisher_english: ""
 raw_sha256: 5515680e32aec7d0c2cd33160a7810d2f20914126bdd04f92d907059408ddf96
 retrieved_from: "https://webblaze.cs.berkeley.edu/contentsniff.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:06:11+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:40+00:00"
 slug: webblaze-cs-berkeley-edu-webblaze-content-sniffing-attacks-web-browsers
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # WebBlaze - Content Sniffing Attacks in Web Browsers
 
-**WebBlaze - Content Sniffing Attacks in Web Browsers** - Author not stated, webblaze.cs.berkeley.edu.
+**WebBlaze - Content Sniffing Attacks in Web Browsers** - Adam Barth, Juan Caballero, Dawn Song, webblaze.cs.berkeley.edu.
 
 - Published: date not stated
 - Original: <https://webblaze.cs.berkeley.edu/contentsniff.html>
-- Preserved from: https://webblaze.cs.berkeley.edu/contentsniff.html (live) on 2026-08-10
+- Preserved from: https://webblaze.cs.berkeley.edu/contentsniff.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,18 +5,20 @@ resource: "https://www.gnucitizen.org/blog/self-contained-xss-attacks/"
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:10:30+00:00"
+  at: "2026-08-11T19:36:54+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/self-contained-xss-attacks/"
     title: Self-contained XSS Attacks
+    author: pdp
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: ""
 cited_by:
-  - "2006.md:89"
+  - "2006.md:90"
 commit: ""
 content_sha256: be009f961355d0644c18396e77b876ac0131d2c59e690a74aa8f06bc3da309f9
 depth: full
@@ -30,8 +32,8 @@ publisher: gnucitizen.org
 publisher_english: ""
 raw_sha256: b004231ec9082a7baf9f934f9a333eda9b9d9399246dbf53738174631a85e693
 retrieved_from: "https://www.gnucitizen.org/blog/self-contained-xss-attacks/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:10:30+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:54+00:00"
 slug: gnucitizen-org-self-contained-xss-attacks
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Self-contained XSS Attacks
 
-**Self-contained XSS Attacks** - Author not stated, gnucitizen.org.
+**Self-contained XSS Attacks** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/self-contained-xss-attacks/>
-- Preserved from: https://www.gnucitizen.org/blog/self-contained-xss-attacks/ (live) on 2026-08-10
+- Preserved from: https://www.gnucitizen.org/blog/self-contained-xss-attacks/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

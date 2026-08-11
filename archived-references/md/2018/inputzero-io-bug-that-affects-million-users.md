@@ -5,15 +5,17 @@ resource: "https://www.inputzero.io/2018/08/kaspersky-vpn-leaks-dns-address.html
 tags: [article, webseclist-reference, en-US, inputzero-io]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:29:06+00:00"
+  at: "2026-08-11T19:36:58+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.inputzero.io/2018/08/kaspersky-vpn-leaks-dns-address.html"
     title: A bug that affects million users
+    author: Dhiraj Mishra
 also_at: []
-authors: []
+authors:
+  - Dhiraj Mishra
 canonical_url: ""
 cited_by:
   - "2018.md:25"
@@ -30,8 +32,8 @@ publisher: inputzero.io
 publisher_english: ""
 raw_sha256: 9f705e311944ee92d74bda56c4e06faa3648d39ceca4793236137d71a8bb0a41
 retrieved_from: "https://www.inputzero.io/2018/08/kaspersky-vpn-leaks-dns-address.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:29:06+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:58+00:00"
 slug: inputzero-io-bug-that-affects-million-users
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # A bug that affects million users
 
-**A bug that affects million users** - Author not stated, inputzero.io.
+**A bug that affects million users** - Dhiraj Mishra, inputzero.io.
 
 - Published: date not stated
 - Original: <https://www.inputzero.io/2018/08/kaspersky-vpn-leaks-dns-address.html>
-- Preserved from: https://www.inputzero.io/2018/08/kaspersky-vpn-leaks-dns-address.html (live) on 2026-08-10
+- Preserved from: https://www.inputzero.io/2018/08/kaspersky-vpn-leaks-dns-address.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,17 +5,19 @@ resource: "https://www.gnucitizen.org/blog/google-urchin-password-theft-madness"
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:13:54+00:00"
+  at: "2026-08-11T19:36:50+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/google-urchin-password-theft-madness"
     title: Google Urchin Password Theft Madness
+    author: pagvac
   - id: canonical
     resource: "https://www.gnucitizen.org/blog/google-urchin-password-theft-madness/"
 also_at: []
-authors: []
+authors:
+  - pagvac
 canonical_url: "https://www.gnucitizen.org/blog/google-urchin-password-theft-madness/"
 cited_by:
   - "2007.md:82"
@@ -32,8 +34,8 @@ publisher: gnucitizen.org
 publisher_english: ""
 raw_sha256: 906dcfcad4e6cf04a4b4fda2d393df0e5ad1f92e9079db29151af4a920ce93ef
 retrieved_from: "https://www.gnucitizen.org/blog/google-urchin-password-theft-madness/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:13:54+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:50+00:00"
 slug: gnucitizen-org-google-urchin-password-theft-madness
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Google Urchin Password Theft Madness
 
-**Google Urchin Password Theft Madness** - Author not stated, gnucitizen.org.
+**Google Urchin Password Theft Madness** - pagvac, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/google-urchin-password-theft-madness>
 - Current location: <https://www.gnucitizen.org/blog/google-urchin-password-theft-madness/>
-- Preserved from: https://www.gnucitizen.org/blog/google-urchin-password-theft-madness/ (live) on 2026-08-09
+- Preserved from: https://www.gnucitizen.org/blog/google-urchin-password-theft-madness/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

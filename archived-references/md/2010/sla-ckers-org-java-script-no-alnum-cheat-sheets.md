@@ -5,22 +5,24 @@ resource: "http://sla.ckers.org/forum/read.php?24,33349"
 tags: [article, webseclist-reference, EN, sla-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:26+00:00"
+  at: "2026-08-11T19:37:17+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://sla.ckers.org/forum/read.php?24,33349"
     title: "Java/script: no alnum cheat sheets"
+    author: SW
   - id: capture
     resource: "https://web.archive.org/web/20120211062554/http://sla.ckers.org/forum/read.php?24,33349"
 also_at: []
-authors: []
+authors:
+  - SW
 canonical_url: ""
 cited_by:
   - "2010.md:49"
 commit: ""
-content_sha256: fa2135b612bf7ef09459b9a6e87ef56b9b1e0af5f55a2cef49f8b922d687b423
+content_sha256: 3494d97d73511d0e454f572b2b03e870d86682ca4fb910db4fc7131d18b0a902
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 1315fc9d4139cf9b15e89b043060d1129056fe8b0a4e315ca36fa3b4552abb4e
 retrieved_from: "http://sla.ckers.org/forum/read.php?24,33349"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:26+00:00"
+retrieved_utc: "2026-08-11T19:37:17+00:00"
 slug: sla-ckers-org-java-script-no-alnum-cheat-sheets
 snapshot: 20120211062554
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Java/script: no alnum cheat sheets
 
-**Java/script: no alnum cheat sheets** - Author not stated, sla.ckers.org.
+**Java/script: no alnum cheat sheets** - SW, sla.ckers.org.
 
 - Published: date not stated
 - Original: <http://sla.ckers.org/forum/read.php?24,33349>
-- Preserved from: http://sla.ckers.org/forum/read.php?24,33349 (stored) on 2026-08-09
+- Preserved from: http://sla.ckers.org/forum/read.php?24,33349 (stored) on 2026-08-11
 - Capture timestamp: 20120211062554
 - Licence: unknown
 
@@ -380,8 +382,6 @@ Z:  :
 
  Edited 16 time(s). Last edit at 02/10/2010 08:23PM by SW.
 
- 
-
 **Re: Java/script: no alnum cheat sheets**
 
 Posted by: ** [ LeverOne ](http://sla.ckers.org/forum/profile.php?24,3946) **
@@ -408,8 +408,6 @@ Date: February 10, 2010 12:41AM
 
  edit all! hahaha
 
- 
-
 **Re: Java/script: no alnum cheat sheets**
 
 Posted by: ** [ SW ](http://sla.ckers.org/forum/profile.php?24,438) **
@@ -419,8 +417,6 @@ Date: February 10, 2010 01:24AM
 Thanks very much Lever, updated them.
 
  I think undefined[3] is shorter than NaNundefined[10] if you have !.
-
- 
 
 **Re: Java/script: no alnum cheat sheets**
 
@@ -439,8 +435,6 @@ Date: February 10, 2010 01:40AM
 
  Edited 2 time(s). Last edit at 02/10/2010 08:46PM by LeverOne.
 
- 
-
 **Re: Java/script: no alnum cheat sheets**
 
 Posted by: ** [ SW ](http://sla.ckers.org/forum/profile.php?24,438) **
@@ -456,8 +450,6 @@ Date: February 10, 2010 01:48AM
  OK, I see to get rid of the comma I forgot in there, using atob is now ~1048 characters, lol. Unless we have a shorter way to access window than []["sort"]["call"], without using comma. Seems quite infeasible without using variables.
 
  Edited 1 time(s). Last edit at 02/10/2010 02:55AM by SW.
-
- 
 
 **Re: Java/script: no alnum cheat sheets**
 
@@ -482,8 +474,6 @@ Hi again!
 
  // Maybe to recheck all letters? :D
 
- 
-
 **Re: Java/script: no alnum cheat sheets**
 
 Posted by: ** [ SW ](http://sla.ckers.org/forum/profile.php?24,438) **
@@ -494,8 +484,6 @@ You have a good point, I listed the values NaN, etc rather than strings "NaN" no
 
  I hope the other letters should be fine. Will work on more of the list tomorrow.
 
- 
-
 **Re: Java/script: no alnum cheat sheets**
 
 Posted by: ** [ SW ](http://sla.ckers.org/forum/profile.php?24,438) **
@@ -504,8 +492,6 @@ Date: February 12, 2010 11:50AM
 
 Strange..
  [].constructor=[undefined], but [].constructor+[] = "function Array..."
-
- 
 
 **Re: Java/script: no alnum cheat sheets**
 
@@ -532,8 +518,6 @@ http://discogscounter.getfreehosting.co.uk/js-noalnum.php?txt="abcdefghijklmnopq
 ```
 
  Edited 3 time(s). Last edit at 02/12/2010 10:39PM by SW.
-
- 
 
 **Re: Java/script: no alnum cheat sheets**
 
@@ -576,8 +560,6 @@ Quote
 
  Edited 1 time(s). Last edit at 02/13/2010 12:26AM by LeverOne.
 
- 
-
 **Re: Java/script: no alnum cheat sheets**
 
 Posted by: ** [ SW ](http://sla.ckers.org/forum/profile.php?24,438) **
@@ -589,8 +571,6 @@ Thanx for looking LeverOne.
  Could you explain how it's strategically better to use filter.constructor than window.eval? I think they are around the same length, well, I don't mind which is used. :)
 
  Good tip on the numbers, I will fix this and the nested quotes. One problem with using filter.constructor("eval(...)") is if you need quotes it will be quite long, I think it's like 500 characters to generate a ".
-
- 
 
 **Re: Java/script: no alnum cheat sheets**
 
@@ -610,8 +590,6 @@ New version:
  - should be easily extensible to other charsets & to add variables
 
  Edited 2 time(s). Last edit at 02/15/2010 07:25AM by SW.
-
- 
 
 **Re: Java/script: no alnum cheat sheets**
 

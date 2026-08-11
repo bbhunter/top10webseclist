@@ -5,17 +5,19 @@ resource: "https://appsecusa2015.sched.org/speaker/mostafa_siraj.1tssijvd"
 tags: [article, webseclist-reference, en, appsecusa2015-sched-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:01:26+00:00"
+  at: "2026-08-11T19:36:21+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://appsecusa2015.sched.org/speaker/mostafa_siraj.1tssijvd"
     title: "Mostafa Siraj's schedule for AppSecUSA 2015"
+    author: Mostafa Siraj
   - id: canonical
     resource: "https://appsecusa2015.sched.com/speaker/mostafa_siraj.1tssijvd"
 also_at: []
-authors: []
+authors:
+  - Mostafa Siraj
 canonical_url: "https://appsecusa2015.sched.com/speaker/mostafa_siraj.1tssijvd"
 cited_by:
   - "2015.md:36"
@@ -32,8 +34,8 @@ publisher: appsecusa2015.sched.com
 publisher_english: ""
 raw_sha256: 7eba89d7e2c77a5feb320f1aa0db981687bf294c53a07f931770ae7d33ba9c96
 retrieved_from: "https://appsecusa2015.sched.com/speaker/mostafa_siraj.1tssijvd"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:01:26+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:21+00:00"
 slug: appsecusa2015-sched-com-mostafa-siraj-s-schedule-appsecusa-2015
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Mostafa Siraj's schedule for AppSecUSA 2015
 
-**Mostafa Siraj's schedule for AppSecUSA 2015** - Author not stated, appsecusa2015.sched.com.
+**Mostafa Siraj's schedule for AppSecUSA 2015** - Mostafa Siraj, appsecusa2015.sched.com.
 
 - Published: date not stated
 - Original: <https://appsecusa2015.sched.org/speaker/mostafa_siraj.1tssijvd>
 - Current location: <https://appsecusa2015.sched.com/speaker/mostafa_siraj.1tssijvd>
-- Preserved from: https://appsecusa2015.sched.com/speaker/mostafa_siraj.1tssijvd (live) on 2026-08-10
+- Preserved from: https://appsecusa2015.sched.com/speaker/mostafa_siraj.1tssijvd (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

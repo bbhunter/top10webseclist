@@ -5,18 +5,20 @@ resource: "http://events.ccc.de/congress/2011/Fahrplan/events/4680.en.html"
 tags: [article, webseclist-reference, fahrplan-events-ccc-de]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:10:18+00:00"
+  at: "2026-08-11T19:36:39+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://events.ccc.de/congress/2011/Fahrplan/events/4680.en.html"
     title: "28C3: Effective Denial of Service attacks against web application platforms"
+    author: Alexander Klink
     last_modified: 2012-01-07
   - id: canonical
     resource: "https://fahrplan.events.ccc.de/congress/2011/Fahrplan/events/4680.en.html"
 also_at: []
-authors: []
+authors:
+  - Alexander Klink
 canonical_url: "https://fahrplan.events.ccc.de/congress/2011/Fahrplan/events/4680.en.html"
 cited_by:
   - "2011.md:58"
@@ -33,8 +35,8 @@ publisher: fahrplan.events.ccc.de
 publisher_english: ""
 raw_sha256: 135e3408c73ac73b36363e9f3cd2bb71f7791e7fb9848149e06f11291558a3eb
 retrieved_from: "https://fahrplan.events.ccc.de/congress/2011/Fahrplan/events/4680.en.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:10:18+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:39+00:00"
 slug: 2012-fahrplan-events-ccc-de-28c3-effective-denial-service-attacks-platforms
 snapshot: ""
 title_english: ""
@@ -44,12 +46,12 @@ translation_of: ""
 
 # 28C3: Effective Denial of Service attacks against web application platforms
 
-**28C3: Effective Denial of Service attacks against web application platforms** - Author not stated, fahrplan.events.ccc.de.
+**28C3: Effective Denial of Service attacks against web application platforms** - Alexander Klink, fahrplan.events.ccc.de.
 
 - Published: 2012-01-07
 - Original: <http://events.ccc.de/congress/2011/Fahrplan/events/4680.en.html>
 - Current location: <https://fahrplan.events.ccc.de/congress/2011/Fahrplan/events/4680.en.html>
-- Preserved from: https://fahrplan.events.ccc.de/congress/2011/Fahrplan/events/4680.en.html (live) on 2026-08-09
+- Preserved from: https://fahrplan.events.ccc.de/congress/2011/Fahrplan/events/4680.en.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

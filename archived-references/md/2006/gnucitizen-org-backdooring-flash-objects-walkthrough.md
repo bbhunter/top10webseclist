@@ -5,15 +5,17 @@ resource: "https://www.gnucitizen.org/blog/backdooring-flash-objects/"
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:13:48+00:00"
+  at: "2026-08-11T19:36:42+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/backdooring-flash-objects/"
     title: Backdooring Flash Objects (the walkthrough)
+    author: pdp
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: ""
 cited_by:
   - "2006.md:74"
@@ -30,8 +32,8 @@ publisher: gnucitizen.org
 publisher_english: ""
 raw_sha256: 053ef3191ff906862a936a5e7bab8e1ff7cb9ca6ff6e3a06cbd81084a2574144
 retrieved_from: "https://www.gnucitizen.org/blog/backdooring-flash-objects/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:13:48+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:42+00:00"
 slug: gnucitizen-org-backdooring-flash-objects-walkthrough
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Backdooring Flash Objects (the walkthrough)
 
-**Backdooring Flash Objects (the walkthrough)** - Author not stated, gnucitizen.org.
+**Backdooring Flash Objects (the walkthrough)** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/backdooring-flash-objects/>
-- Preserved from: https://www.gnucitizen.org/blog/backdooring-flash-objects/ (live) on 2026-08-09
+- Preserved from: https://www.gnucitizen.org/blog/backdooring-flash-objects/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

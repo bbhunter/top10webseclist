@@ -5,15 +5,17 @@ resource: "https://www.gnucitizen.org/blog/backdooring-mp3-files/"
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:13:49+00:00"
+  at: "2026-08-11T19:36:44+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/backdooring-mp3-files/"
     title: Backdooring MP3 Files
+    author: pdp
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: ""
 cited_by:
   - "2006.md:19"
@@ -30,8 +32,8 @@ publisher: gnucitizen.org
 publisher_english: ""
 raw_sha256: 37b2e46b6b53d3d7262357f4267f633b806abf87d0c46581acae2180d83eb360
 retrieved_from: "https://www.gnucitizen.org/blog/backdooring-mp3-files/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:13:49+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:44+00:00"
 slug: gnucitizen-org-backdooring-mp3-files
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Backdooring MP3 Files
 
-**Backdooring MP3 Files** - Author not stated, gnucitizen.org.
+**Backdooring MP3 Files** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/backdooring-mp3-files/>
-- Preserved from: https://www.gnucitizen.org/blog/backdooring-mp3-files/ (live) on 2026-08-09
+- Preserved from: https://www.gnucitizen.org/blog/backdooring-mp3-files/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

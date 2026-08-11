@@ -1915,7 +1915,13 @@ def command_pdf(args):
         out_path = archive_dir / collections_module.pdf_relpath(entry, config, slug)
         out_dir = out_path.parent
         url = (entry.get("spellings") or [key])[0]
-        if out_path.exists() and not args.force:
+        # `--stale` IS THE AUTHORISATION. Selecting a reference already means its
+        # PDF no longer reflects its inputs, so leaving it to the exists-guard
+        # below made `--stale` alone a guaranteed no-op: it reported "0 rendered,
+        # 679 skipped", which reads as "nothing needed doing" when it meant "I
+        # was not allowed to do anything". That cost a run of 457 re-rendered
+        # documents their PDF refresh, and read as a detection failure instead.
+        if out_path.exists() and not (args.force or args.stale):
             if _clear_completed_pdf_gap(entry, out_path):
                 manifest.record(key, "pdf-remedy", result="resolved",
                                 file=paths.rel(out_path, root),
@@ -2445,13 +2451,25 @@ def _byline_queue(manifest, root, config, only="", limit=None, recorded=()):
     return queue
 
 
-def _accept_byline(url, reading, known):
+ACCEPTED_CONFIDENCE = {"high": ("high",), "medium": ("high", "medium")}
+
+
+def _accept_byline(url, reading, known, accept="high"):
     """The reason to refuse one reviewed byline, or "" to take it.
 
     A WRONG NAME IS WORSE THAN NO NAME. An unattributed reference says the
     archive does not know; a misattributed one credits a stranger with someone's
     work and reads as fact. So a reading is taken only when it names a URL the
-    archive holds, is confident, and can quote the words it read the name from.
+    archive holds, is confident enough, and can quote the words it read the name
+    from.
+
+    `accept` is the maintainer's call on how much evidence is enough, and the
+    second tier exists because "medium" is not a synonym for "doubtful". It is
+    what a reviewer says when a byline is real but sits somewhere other than
+    under the title: a site-wide footer ("Wisec is written and mantained by
+    Stefano Di Paola"), a signature, a handle an author has published under for
+    twenty years. Judging those is a curation call, so it is spelled out on the
+    command line rather than hidden in the threshold.
     """
     if url not in known:
         return "no such reference in the manifest"
@@ -2459,8 +2477,9 @@ def _accept_byline(url, reading, known):
              if str(name).strip()]
     if not names:
         return ""              # "I read it and found nobody" is a real answer
-    if reading.get("confidence") != "high":
-        return "confidence is not high"
+    allowed = ACCEPTED_CONFIDENCE.get(accept) or ACCEPTED_CONFIDENCE["high"]
+    if reading.get("confidence") not in allowed:
+        return "confidence is not %s" % " or ".join(allowed)
     if not str(reading.get("evidence") or "").strip():
         return "no quotation to support the name"
     for name in names:
@@ -2508,7 +2527,7 @@ def command_bylines(args):
     merged = dict(recorded)
     taken = refused = empty = 0
     for url, reading in sorted(readings.items()):
-        reason = _accept_byline(url, reading or {}, known)
+        reason = _accept_byline(url, reading or {}, known, args.accept)
         if reason:
             refused += 1
             print("  REFUSED  %-52s %s" % (url[:52], reason))
@@ -3136,6 +3155,11 @@ def build_parser():
                                 help="only references whose identity contains this text")
     bylines_parser.add_argument("--limit", type=int, default=None,
                                 help="stop the queue after this many references")
+    bylines_parser.add_argument("--accept", choices=sorted(ACCEPTED_CONFIDENCE),
+                                default="high",
+                                help="lowest confidence to record; 'medium' also takes "
+                                     "a byline read from a signature, a site footer or "
+                                     "a long-published handle (default: high)")
     bylines_parser.set_defaults(handler=command_bylines)
 
     attribution_parser = subparsers.add_parser(

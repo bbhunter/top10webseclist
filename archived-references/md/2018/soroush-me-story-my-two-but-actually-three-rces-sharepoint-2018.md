@@ -5,20 +5,22 @@ resource: "https://soroush.me/blog/story-of-two-published-rces-in-sharepoint-wor
 tags: [article, webseclist-reference, en, soroush-me]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:56+00:00"
+  at: "2026-08-11T19:37:27+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://soroush.me/blog/story-of-two-published-rces-in-sharepoint-workflows"
     title: Story of my two (but actually three) RCEs in SharePoint in 2018
+    author: Soroush Dalili
 also_at: []
-authors: []
+authors:
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2018.md:55"
 commit: ""
-content_sha256: 8f660845949c4b3368ee8a242468483bf10f9ee5f42512f09402b1897b99e82c
+content_sha256: 4f401fdaa1e6d25f4a4b376721321f05fa1d6c90f08c89ce4df5ad4f0966abb5
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: soroush.me
 publisher_english: ""
 raw_sha256: 92f09c994dac89948bcd2ff2f072054511a857ea3bf42c9749a62920bd023755
 retrieved_from: "https://soroush.me/blog/story-of-two-published-rces-in-sharepoint-workflows"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:56+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:27+00:00"
 slug: soroush-me-story-my-two-but-actually-three-rces-sharepoint-2018
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Story of my two (but actually three) RCEs in SharePoint in 2018
 
-**Story of my two (but actually three) RCEs in SharePoint in 2018** - Author not stated, soroush.me.
+**Story of my two (but actually three) RCEs in SharePoint in 2018** - Soroush Dalili, soroush.me.
 
 - Published: date not stated
 - Original: <https://soroush.me/blog/story-of-two-published-rces-in-sharepoint-workflows>
-- Preserved from: https://soroush.me/blog/story-of-two-published-rces-in-sharepoint-workflows (live) on 2026-08-09
+- Preserved from: https://soroush.me/blog/story-of-two-published-rces-in-sharepoint-workflows (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

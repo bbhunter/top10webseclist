@@ -5,20 +5,22 @@ resource: "https://soroush.me/blog/ie9-self-xss-blackbox-protection-bypass"
 tags: [article, webseclist-reference, en, soroush-me]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:54+00:00"
+  at: "2026-08-11T19:37:23+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://soroush.me/blog/ie9-self-xss-blackbox-protection-bypass"
     title: IE9 Self-XSS Blackbox Protection bypass
+    author: Soroush Dalili
 also_at: []
-authors: []
+authors:
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2012.md:35"
 commit: ""
-content_sha256: 54d31f38114112ce6f4bf699f1568a03d5ecf0f3513dc60b47d78cd27f42a960
+content_sha256: 38aa2157195b91e15ad579611adf6411127136ee3049f4c76a6208d19c6cd6a0
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: soroush.me
 publisher_english: ""
 raw_sha256: e42b5952ef48318bacba8b1e5ef32e0c61664c2f4b8de4d87bbf0e99b1bf3d65
 retrieved_from: "https://soroush.me/blog/ie9-self-xss-blackbox-protection-bypass"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:54+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:23+00:00"
 slug: soroush-me-ie9-self-xss-blackbox-protection-bypass
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # IE9 Self-XSS Blackbox Protection bypass
 
-**IE9 Self-XSS Blackbox Protection bypass** - Author not stated, soroush.me.
+**IE9 Self-XSS Blackbox Protection bypass** - Soroush Dalili, soroush.me.
 
 - Published: date not stated
 - Original: <https://soroush.me/blog/ie9-self-xss-blackbox-protection-bypass>
-- Preserved from: https://soroush.me/blog/ie9-self-xss-blackbox-protection-bypass (live) on 2026-08-09
+- Preserved from: https://soroush.me/blog/ie9-self-xss-blackbox-protection-bypass (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

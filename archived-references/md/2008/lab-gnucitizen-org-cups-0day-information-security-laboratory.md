@@ -5,22 +5,24 @@ resource: "http://lab.gnucitizen.org/projects/cups-0day"
 tags: [article, webseclist-reference, lab-gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:09:00+00:00"
+  at: "2026-08-11T19:37:04+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://lab.gnucitizen.org/projects/cups-0day"
     title: CUPS 0day ‎(Information Security Laboratory‎)
+    author: Adrian Pastor
   - id: capture
     resource: "https://web.archive.org/web/20081229065812/http://lab.gnucitizen.org/projects/cups-0day"
 also_at: []
-authors: []
+authors:
+  - Adrian Pastor
 canonical_url: ""
 cited_by:
   - "2008.md:53"
 commit: ""
-content_sha256: 59d200aa1c7cd4042b7b85ff47c23644b8eaab6914d52493207fe589796587b6
+content_sha256: 8b8c68fec2478f11202af15d73e4b24846d0356f8216c80279ce9696c924066c
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: eb41cc9d2a58f564306b2b6b99168cecf39490ecc213fe236637d182bccda9ba
 retrieved_from: "http://lab.gnucitizen.org/projects/cups-0day"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:09:00+00:00"
+retrieved_utc: "2026-08-11T19:37:04+00:00"
 slug: lab-gnucitizen-org-cups-0day-information-security-laboratory
 snapshot: 20081229065812
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # CUPS 0day ‎(Information Security Laboratory‎)
 
-**CUPS 0day ‎(Information Security Laboratory‎)** - Author not stated, lab.gnucitizen.org.
+**CUPS 0day ‎(Information Security Laboratory‎)** - Adrian Pastor, lab.gnucitizen.org.
 
 - Published: date not stated
 - Original: <http://lab.gnucitizen.org/projects/cups-0day>
-- Preserved from: http://lab.gnucitizen.org/projects/cups-0day (stored) on 2026-08-09
+- Preserved from: http://lab.gnucitizen.org/projects/cups-0day (stored) on 2026-08-11
 - Capture timestamp: 20081229065812
 - Licence: unknown
 
@@ -110,5 +112,3 @@ Finally, this bug cannot lead to code execution, since it's a NULL pointer deref
   |   |
 
 -  [cups_dos_poc.html.txt](http://lab.gnucitizen.org/projects/cups-0day/cups_dos_poc.html.txt?attredirects=0) 1k - on Nov 19, 2008 2:48 PM by Adrian Pastor (version 2 / [earlier versions](http://lab.gnucitizen.org/system/app/pages/revisions?target=wuid:gx:78e8cd76c50ec1a))
-
- 

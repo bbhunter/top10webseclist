@@ -5,20 +5,22 @@ resource: "https://soroush.me/blog/thirteen-years-on-advancing-the-understanding
 tags: [article, webseclist-reference, en, soroush-me]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:57+00:00"
+  at: "2026-08-11T19:37:28+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://soroush.me/blog/thirteen-years-on-advancing-the-understanding-of-iis-short-file-name-sfn-disclosure"
     title: "Thirteen Years On: Advancing the Understanding of IIS Short File Name (SFN) Disclosure!"
+    author: Soroush Dalili
 also_at: []
-authors: []
+authors:
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2023.md:56"
 commit: ""
-content_sha256: 90aa865615d58aeaa76f2db97bcc8ed78a2835ba1817ac55a9daddf51029b34b
+content_sha256: 7da25d16d4cdeba9294f251b05f720caaf902e7e1f9b475f3266e699a7641d29
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: soroush.me
 publisher_english: ""
 raw_sha256: ae447a9513092c1554daaf35d7790dbe21124f2f6834260fc0a347dfdeaca3dc
 retrieved_from: "https://soroush.me/blog/thirteen-years-on-advancing-the-understanding-of-iis-short-file-name-sfn-disclosure"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:57+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:28+00:00"
 slug: soroush-me-thirteen-years-advancing-understanding-iis-short-file-disclosure
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Thirteen Years On: Advancing the Understanding of IIS Short File Name (SFN) Disclosure!
 
-**Thirteen Years On: Advancing the Understanding of IIS Short File Name (SFN) Disclosure!** - Author not stated, soroush.me.
+**Thirteen Years On: Advancing the Understanding of IIS Short File Name (SFN) Disclosure!** - Soroush Dalili, soroush.me.
 
 - Published: date not stated
 - Original: <https://soroush.me/blog/thirteen-years-on-advancing-the-understanding-of-iis-short-file-name-sfn-disclosure>
-- Preserved from: https://soroush.me/blog/thirteen-years-on-advancing-the-understanding-of-iis-short-file-name-sfn-disclosure (live) on 2026-08-09
+- Preserved from: https://soroush.me/blog/thirteen-years-on-advancing-the-understanding-of-iis-short-file-name-sfn-disclosure (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

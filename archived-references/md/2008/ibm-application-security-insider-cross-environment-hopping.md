@@ -5,22 +5,24 @@ resource: "http://blog.watchfire.com/wfblog/2008/06/cross-environ-1.html"
 tags: [article, webseclist-reference, ibm-application-security-insider]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:07+00:00"
+  at: "2026-08-11T19:36:34+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://blog.watchfire.com/wfblog/2008/06/cross-environ-1.html"
     title: Cross Environment Hopping
+    author: Yair Amit
   - id: capture
     resource: "https://web.archive.org/web/20220929181316/http://blog.watchfire.com/wfblog/2008/06/cross-environ-1.html"
 also_at: []
-authors: []
+authors:
+  - Yair Amit
 canonical_url: ""
 cited_by:
   - "2008.md:49"
 commit: ""
-content_sha256: 414156d07f5d1b0665ea99a301ca8015ddb2be7644e81bc7bc7d582430522ded
+content_sha256: 2d78f536562731c2caa50c9a3b2e4c1cef33ecefe1b4afbbcf7a3351c78e6df8
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 8e9c0401994f692459b4ffbddee14efc4de48ed24326f7b4713dc921e4403736
 retrieved_from: "http://blog.watchfire.com/wfblog/2008/06/cross-environ-1.html"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:07+00:00"
+retrieved_utc: "2026-08-11T19:36:34+00:00"
 slug: ibm-application-security-insider-cross-environment-hopping
 snapshot: 20220929181316
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Cross Environment Hopping
 
-**Cross Environment Hopping** - Author not stated, IBM Application Security Insider.
+**Cross Environment Hopping** - Yair Amit, IBM Application Security Insider.
 
 - Published: date not stated
 - Original: <http://blog.watchfire.com/wfblog/2008/06/cross-environ-1.html>
-- Preserved from: http://blog.watchfire.com/wfblog/2008/06/cross-environ-1.html (stored) on 2026-08-09
+- Preserved from: http://blog.watchfire.com/wfblog/2008/06/cross-environ-1.html (stored) on 2026-08-11
 - Capture timestamp: 20220929181316
 - Licence: unknown
 
@@ -70,8 +72,6 @@ The CEH technique enables an attacker to exploit a local XSS vulnerability in or
 This write-up will prove that the current implementation of same origin policy on the localhost in ***up-to-date*** Web browsers, combined with the presence of an XSS vulnerability, creates a special set of circumstances that enable environment hopping, and that the resulting malicious activity can be performed on any server running on a designated port.
 
 We would like to credit Rob Carter for his great work in [describing](https://r00tin.blogspot.com/2008/03/local-web-servers-are-dangerous.html) the problematic nature of exploiting XSS vulnerabilities in local web servers by taking advantage of the promiscuous security behavior of Internet Explorer 6.
-
- 
 
 **Current Browser Restrictions**
 

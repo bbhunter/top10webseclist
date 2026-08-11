@@ -5,17 +5,20 @@ resource: "http://blog.watchfire.com/wfblog/2008/06/javascript-code.html"
 tags: [article, webseclist-reference, blog-watchfire-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:07+00:00"
+  at: "2026-08-11T19:36:34+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://blog.watchfire.com/wfblog/2008/06/javascript-code.html"
     title: "IBM Application Security Insider: JavaScript Code Flow Manipulation, and a real world example advisory"
+    author: Ory Segal, Adi Sharabani
   - id: capture
     resource: "https://web.archive.org/web/20140723103435/http://blog.watchfire.com/wfblog/2008/06/javascript-code.html"
 also_at: []
-authors: []
+authors:
+  - Ory Segal
+  - Adi Sharabani
 canonical_url: ""
 cited_by:
   - "2008.md:54"
@@ -33,7 +36,7 @@ publisher_english: ""
 raw_sha256: f33d47fa1cb8f2d7c1c62792a75b0535933133c2ab016616a13dd955f207e7ea
 retrieved_from: "http://blog.watchfire.com/wfblog/2008/06/javascript-code.html"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:07+00:00"
+retrieved_utc: "2026-08-11T19:36:34+00:00"
 slug: blog-watchfire-com-ibm-application-security-insider-javascript-code-advisory
 snapshot: 20140723103435
 title_english: ""
@@ -43,11 +46,11 @@ translation_of: ""
 
 # IBM Application Security Insider: JavaScript Code Flow Manipulation, and a real world example advisory
 
-**IBM Application Security Insider: JavaScript Code Flow Manipulation, and a real world example advisory** - Author not stated, blog.watchfire.com.
+**IBM Application Security Insider: JavaScript Code Flow Manipulation, and a real world example advisory** - Ory Segal, Adi Sharabani, blog.watchfire.com.
 
 - Published: date not stated
 - Original: <http://blog.watchfire.com/wfblog/2008/06/javascript-code.html>
-- Preserved from: http://blog.watchfire.com/wfblog/2008/06/javascript-code.html (stored) on 2026-08-09
+- Preserved from: http://blog.watchfire.com/wfblog/2008/06/javascript-code.html (stored) on 2026-08-11
 - Capture timestamp: 20140723103435
 - Licence: unknown
 

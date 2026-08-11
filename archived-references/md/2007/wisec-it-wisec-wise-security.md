@@ -5,20 +5,22 @@ resource: "http://www.wisec.it/sectou.php?id=4698ebdc59d15"
 tags: [article, webseclist-reference, wisec-it]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:49:14+00:00"
+  at: "2026-08-11T19:37:41+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.wisec.it/sectou.php?id=4698ebdc59d15"
     title: Wisec - The WIse SECurity
+    author: Stefano Di Paola
 also_at: []
-authors: []
+authors:
+  - Stefano Di Paola
 canonical_url: ""
 cited_by:
   - "2007.md:35"
 commit: ""
-content_sha256: a1adb1b3b81b1d31ae7b30cdaa5892a5054c6fc166458e6381df9d4aa1acd7a1
+content_sha256: 6de540c5885c51a5c76213033a332a64f8b1dc77018c50856a9d3a7df7f61172
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: wisec.it
 publisher_english: ""
 raw_sha256: ebe62961deb20ce2d015d51b48ab1eec1212e7891b4bc1a404591cbe51f9172f
 retrieved_from: "http://www.wisec.it/sectou.php?id=4698ebdc59d15"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:49:14+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:41+00:00"
 slug: wisec-it-wisec-wise-security
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Wisec - The WIse SECurity
 
-**Wisec - The WIse SECurity** - Author not stated, wisec.it.
+**Wisec - The WIse SECurity** - Stefano Di Paola, wisec.it.
 
 - Published: date not stated
 - Original: <http://www.wisec.it/sectou.php?id=4698ebdc59d15>
-- Preserved from: http://www.wisec.it/sectou.php?id=4698ebdc59d15 (live) on 2026-08-09
+- Preserved from: http://www.wisec.it/sectou.php?id=4698ebdc59d15 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

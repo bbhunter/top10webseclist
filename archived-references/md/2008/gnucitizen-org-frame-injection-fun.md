@@ -5,15 +5,17 @@ resource: "https://www.gnucitizen.org/blog/frame-injection-fun/"
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:13:52+00:00"
+  at: "2026-08-11T19:36:49+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/frame-injection-fun/"
     title: Frame Injection Fun
+    author: pagvac
 also_at: []
-authors: []
+authors:
+  - pagvac
 canonical_url: ""
 cited_by:
   - "2008.md:24"
@@ -30,8 +32,8 @@ publisher: gnucitizen.org
 publisher_english: ""
 raw_sha256: b12ac867e9842a03c45704fdcdfb78b5bb6c0ec431a26cd7d9c86cf64f6488bf
 retrieved_from: "https://www.gnucitizen.org/blog/frame-injection-fun/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:13:52+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:49+00:00"
 slug: gnucitizen-org-frame-injection-fun
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Frame Injection Fun
 
-**Frame Injection Fun** - Author not stated, gnucitizen.org.
+**Frame Injection Fun** - pagvac, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/frame-injection-fun/>
-- Preserved from: https://www.gnucitizen.org/blog/frame-injection-fun/ (live) on 2026-08-09
+- Preserved from: https://www.gnucitizen.org/blog/frame-injection-fun/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

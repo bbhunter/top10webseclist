@@ -5,21 +5,23 @@ resource: "https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-w
 tags: [article, webseclist-reference, en, sec-consult]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:40:10+00:00"
+  at: "2026-08-11T19:37:14+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide/"
     title: SMTP Smuggling - Spoofing E-Mails Worldwide
+    author: Timo Longin
 also_at: []
-authors: []
+authors:
+  - Timo Longin
 canonical_url: ""
 cited_by:
   - "2023.md:7"
   - "2024.md:104"
 commit: ""
-content_sha256: b529916f8a82e847db60c5ff3bd30d1ba304f07aca88b013b7e804c4f87903eb
+content_sha256: 9d4c9606dbfd83cb8dc0b1acd1faee548f414e3b72a3f3c69ce423e46d0d03e2
 depth: full
 depth_reason: default
 kind: article
@@ -31,8 +33,8 @@ publisher: SEC Consult
 publisher_english: ""
 raw_sha256: 033ad3a533b0cb5f63621ffea5a7c086d95b7e185baf97161fddf387b75bf88a
 retrieved_from: "https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:40:10+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:14+00:00"
 slug: sec-consult-smtp-smuggling-spoofing-e-mails-worldwide
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # SMTP Smuggling - Spoofing E-Mails Worldwide
 
-**SMTP Smuggling - Spoofing E-Mails Worldwide** - Author not stated, SEC Consult.
+**SMTP Smuggling - Spoofing E-Mails Worldwide** - Timo Longin, SEC Consult.
 
 - Published: date not stated
 - Original: <https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide/>
-- Preserved from: https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide/ (live) on 2026-08-09
+- Preserved from: https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

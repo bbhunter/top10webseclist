@@ -5,20 +5,22 @@ resource: "https://fscked.org/blog/fully-automated-active-https-cookie-hijacking
 tags: [article, webseclist-reference, en, fscked-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T13:48:37+00:00"
+  at: "2026-08-11T19:36:40+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://fscked.org/blog/fully-automated-active-https-cookie-hijacking"
     title: Automated HTTPS Cookie Hijacking
+    author: Mike Perry
   - id: capture
     resource: "https://web.archive.org/web/20081204112922/https://fscked.org/blog/fully-automated-active-https-cookie-hijacking"
 also_at: []
-authors: []
+authors:
+  - Mike Perry
 canonical_url: ""
 cited_by:
-  - "2008.md:97"
+  - "2008.md:93"
 commit: ""
 content_sha256: 5e4162bddb5149bfa10cc559944409566e08700c926c58c8a5e0b4c71ffa66ae
 depth: full
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 56f7201a8c72cba1be8ad3cbbcdf14df992903776dd300a5dcfe607508ff44c8
 retrieved_from: "https://fscked.org/blog/fully-automated-active-https-cookie-hijacking"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T13:48:37+00:00"
+retrieved_utc: "2026-08-11T19:36:40+00:00"
 slug: fscked-org-automated-https-cookie-hijacking
 snapshot: 20081204112922
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Automated HTTPS Cookie Hijacking
 
-**Automated HTTPS Cookie Hijacking** - Author not stated, fscked.org.
+**Automated HTTPS Cookie Hijacking** - Mike Perry, fscked.org.
 
 - Published: date not stated
 - Original: <https://fscked.org/blog/fully-automated-active-https-cookie-hijacking>
-- Preserved from: https://fscked.org/blog/fully-automated-active-https-cookie-hijacking (stored) on 2026-08-09
+- Preserved from: https://fscked.org/blog/fully-automated-active-https-cookie-hijacking (stored) on 2026-08-11
 - Capture timestamp: 20081204112922
 - Licence: unknown
 

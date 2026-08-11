@@ -1302,7 +1302,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [IIS5.1 Directory Authentication Bypass by using “:$I30:$Index_Allocation”](md/2010/soroush-me-iis5-1-directory-authentication-bypass-using-i30-index-allocation.md) | article | soroush.me |  | research | 1 |
 | [Improving HTTPS Side Channel Attacks ha.ckers.org web application security lab](md/2010/ha-ckers-org-improving-https-side-channel-attacks-ha-ckers-org-web-lab.md) | article | ha.ckers.org |  | research | 1 |
 | [In Firefox we can’t read auto-complete, but we can write to it (a lot)!](md/2010/blog-jeremiahgrossman-com-firefox-we-cant-read-auto-complete-but-we-can-lot.md) | article | blog.jeremiahgrossman.com |  | research | 1 |
-| [Internal Port Scanning via Crystal Reports](md/2010/2010-joshua-jabra-abraham-internal-port-scanning-crystal-reports.md) | article | Joshua "Jabra" Abraham | 2010 | records | 1 |
+| [Internal Port Scanning via Crystal Reports « Joshua "Jabra" Abraham](md/2010/2010-joshua-jabra-abraham-internal-port-scanning-crystal-reports.md) | article | Joshua "Jabra" Abraham | 2010 | records | 1 |
 | [iSecLab - A Practical Attack to De-anonymize Social Network Users](md/2010/iseclab-org-iseclab-practical-attack-de-anonymize-social-network-users.md) | article | iseclab.org |  | research | 1 |
 | [Java Applet Same IP Host Access](md/2010/blog-mindedsecurity-com-java-applet-same-ip-host-access.md) | article | blog.mindedsecurity.com |  | research | 1 |
 | [Java/script: no alnum cheat sheets](md/2010/sla-ckers-org-java-script-no-alnum-cheat-sheets.md) | article | sla.ckers.org |  | research | 1 |

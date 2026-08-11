@@ -5,22 +5,24 @@ resource: "https://security.linkedin.com/blog-archive#11232015"
 tags: [article, webseclist-reference, en, linkedin]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:22+00:00"
+  at: "2026-08-11T19:37:15+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://security.linkedin.com/blog-archive#11232015"
     title: LinkedIn Security Practices – Find out how we protect you
+    author: Sakshi Jain
   - id: capture
     resource: "https://web.archive.org/web/20160304103642/https://security.linkedin.com/blog-archive#11232015"
 also_at: []
-authors: []
+authors:
+  - Sakshi Jain
 canonical_url: ""
 cited_by:
   - "2015.md:41"
 commit: ""
-content_sha256: 55aaaabba82e9a447ebae8579032f4ab6bbae407af2c8425c8f100d698bb4475
+content_sha256: c35964769fd91c1dee6c6d5a6126c78c2af8afcf60e79380a2fac64b9b70fd16
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 487da08219b2a22160e99f3ff81434e8fa175e270f78d4911dbe52980ee3efe8
 retrieved_from: "https://security.linkedin.com/blog-archive#11232015"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:22+00:00"
+retrieved_utc: "2026-08-11T19:37:15+00:00"
 slug: linkedin-linkedin-security-practices-find-out-how-we-protect-you
 snapshot: 20160304103642
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # LinkedIn Security Practices – Find out how we protect you
 
-**LinkedIn Security Practices – Find out how we protect you** - Author not stated, LinkedIn.
+**LinkedIn Security Practices – Find out how we protect you** - Sakshi Jain, LinkedIn.
 
 - Published: date not stated
 - Original: <https://security.linkedin.com/blog-archive#11232015>
-- Preserved from: https://security.linkedin.com/blog-archive#11232015 (stored) on 2026-08-09
+- Preserved from: https://security.linkedin.com/blog-archive#11232015 (stored) on 2026-08-11
 - Capture timestamp: 20160304103642
 - Licence: unknown
 

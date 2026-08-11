@@ -5,15 +5,17 @@ resource: "https://sec-consult.com/blog/detail/dns-analyzer-finding-dns-vulnerab
 tags: [article, webseclist-reference, en, sec-consult]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:40:10+00:00"
+  at: "2026-08-11T19:37:12+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://sec-consult.com/blog/detail/dns-analyzer-finding-dns-vulnerabilities-with-burp-suite/"
     title: DNS Analyzer - Finding DNS vulnerabilities with Burp Suite
+    author: Timo Longin
 also_at: []
-authors: []
+authors:
+  - Timo Longin
 canonical_url: ""
 cited_by:
   - "2023.md:49"
@@ -30,8 +32,8 @@ publisher: SEC Consult
 publisher_english: ""
 raw_sha256: 707230d498a4a8a3b6a6cd44b606834037ffdb1ac7be5960d95bf78671755b25
 retrieved_from: "https://sec-consult.com/blog/detail/dns-analyzer-finding-dns-vulnerabilities-with-burp-suite/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:40:10+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:12+00:00"
 slug: sec-consult-dns-analyzer-finding-dns-vulnerabilities-burp-suite
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # DNS Analyzer - Finding DNS vulnerabilities with Burp Suite
 
-**DNS Analyzer - Finding DNS vulnerabilities with Burp Suite** - Author not stated, SEC Consult.
+**DNS Analyzer - Finding DNS vulnerabilities with Burp Suite** - Timo Longin, SEC Consult.
 
 - Published: date not stated
 - Original: <https://sec-consult.com/blog/detail/dns-analyzer-finding-dns-vulnerabilities-with-burp-suite/>
-- Preserved from: https://sec-consult.com/blog/detail/dns-analyzer-finding-dns-vulnerabilities-with-burp-suite/ (live) on 2026-08-09
+- Preserved from: https://sec-consult.com/blog/detail/dns-analyzer-finding-dns-vulnerabilities-with-burp-suite/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

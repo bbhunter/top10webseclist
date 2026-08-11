@@ -211,7 +211,8 @@
     "https://soroush.me/blog/aspxerrorpath-in-url-technique-in-scanning-a-net-web-application": {
       "outcome": "archive",
       "class": "research",
-      "reason": "Verified live on 2026-08-06 as the cited article. Its discussion of custom error handling contains the phrase 'page not found', which is research text rather than evidence that the server returned a not-found page."
+      "reason": "Verified live on 2026-08-06 as the cited article. Its discussion of custom error handling contains the phrase 'page not found', which is research text rather than evidence that the server returned a not-found page. soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text.",
+      "authors": ["Soroush Dalili"]
     },
     "https://www.youtube.com/TheKn0ck#p/a/u/1/r-kgKNspqjQ": {
       "outcome": "skip",
@@ -780,6 +781,96 @@
       "class": "research",
       "title": "New Reports of a Vulnerability in IIS",
       "reason": "Reviewed 2026-08-10: every live microsoft.com path for this post redirects to the Microsoft Learn homepage, which is what the capture and its file name recorded. Recaptured from a January 2010 snapshot of the MSRC post."
+    },
+    "https://soroush.me/blog/browsers-anti-xss-methods-in-asp-classic-have-been-defeated": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": ["Soroush Dalili"],
+      "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
+    },
+    "https://soroush.me/blog/cookieless-duodrop-iis-auth-bypass-app-pool-privesc-in-asp-net-framework-cve-2023-36899": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": ["Soroush Dalili"],
+      "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
+    },
+    "https://soroush.me/blog/cross-site-url-hijacking-by-using-error-object-in-mozilla-firefox": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": ["Soroush Dalili"],
+      "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
+    },
+    "https://soroush.me/blog/drag-and-drop-xss-in-firefox-by-html5-cross-domain-in-frames": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": ["Soroush Dalili"],
+      "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
+    },
+    "https://soroush.me/blog/exploiting-deserialisation-in-asp-net-via-viewstate": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": ["Soroush Dalili"],
+      "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
+    },
+    "https://soroush.me/blog/ie9-self-xss-blackbox-protection-bypass": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": ["Soroush Dalili"],
+      "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
+    },
+    "https://soroush.me/blog/iis-application-vs-folder-detection-during-blackbox-testing": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": ["Soroush Dalili"],
+      "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
+    },
+    "https://soroush.me/blog/iis5-1-directory-authentication-bypass-by-using-i30index-allocation": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": ["Soroush Dalili"],
+      "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
+    },
+    "https://soroush.me/blog/mongodb-nosql-injection-with-aggregation-pipelines": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": ["Soroush Dalili"],
+      "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
+    },
+    "https://soroush.me/blog/story-of-two-published-rces-in-sharepoint-workflows": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": ["Soroush Dalili"],
+      "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
+    },
+    "https://soroush.me/blog/thirteen-years-on-advancing-the-understanding-of-iis-short-file-name-sfn-disclosure": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": ["Soroush Dalili"],
+      "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
+    },
+    "https://soroush.me/blog/uploading-web-config-for-fun-and-profit-2": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": ["Soroush Dalili"],
+      "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
+    },
+    "https://soroush.me/blog/x-up-devcap-post-charset-header-in-aspnet-to-bypass-wafs-again": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": ["Soroush Dalili"],
+      "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
+    },
+    "https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications-_v1.1.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": ["Soroush Dalili"],
+      "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
+    },
+    "https://soroush.me/downloadable/getting_shell_with_xamlx_files.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": ["Soroush Dalili"],
+      "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
     }
   }
 }

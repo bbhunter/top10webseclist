@@ -5,19 +5,21 @@ resource: "https://web.archive.org/web/20170903113359/http://www.skullsecurity.o
 tags: [article, webseclist-reference, skullsecurity-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:24+00:00"
+  at: "2026-08-11T19:37:16+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://www.skullsecurity.org/blog/2010/stuffing-javascript-into-dns-names"
     title: SkullSecurity » Blog Archive » Stuffing Javascript into DNS names
+    author: Ron Bowes
   - id: canonical
     resource: "http://www.skullsecurity.org/blog/2010/stuffing-javascript-into-dns-names"
   - id: capture
     resource: "https://web.archive.org/web/20121031001203/http://www.skullsecurity.org/blog/2010/stuffing-javascript-into-dns-names"
 also_at: []
-authors: []
+authors:
+  - Ron Bowes
 canonical_url: "http://www.skullsecurity.org/blog/2010/stuffing-javascript-into-dns-names"
 cited_by:
   - "2012.md:32"
@@ -35,7 +37,7 @@ publisher_english: ""
 raw_sha256: 098dbaeacfe885d8f6b292a8b0eda6d14acc41dfc643bb6b794ceb4fdcb6eaeb
 retrieved_from: "http://www.skullsecurity.org/blog/2010/stuffing-javascript-into-dns-names"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:24+00:00"
+retrieved_utc: "2026-08-11T19:37:16+00:00"
 slug: skullsecurity-org-skullsecurity-blog-archive-stuffing-javascript-dns-names
 snapshot: 20121031001203
 title_english: ""
@@ -45,12 +47,12 @@ translation_of: ""
 
 # SkullSecurity » Blog Archive » Stuffing Javascript into DNS names
 
-**SkullSecurity » Blog Archive » Stuffing Javascript into DNS names** - Author not stated, skullsecurity.org.
+**SkullSecurity » Blog Archive » Stuffing Javascript into DNS names** - Ron Bowes, skullsecurity.org.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://www.skullsecurity.org/blog/2010/stuffing-javascript-into-dns-names>
 - Current location: <http://www.skullsecurity.org/blog/2010/stuffing-javascript-into-dns-names>
-- Preserved from: http://www.skullsecurity.org/blog/2010/stuffing-javascript-into-dns-names (stored) on 2026-08-09
+- Preserved from: http://www.skullsecurity.org/blog/2010/stuffing-javascript-into-dns-names (stored) on 2026-08-11
 - Capture timestamp: 20121031001203
 - Licence: unknown
 

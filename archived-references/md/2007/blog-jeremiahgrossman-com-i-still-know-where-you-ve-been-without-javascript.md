@@ -5,17 +5,19 @@ resource: "https://jeremiahgrossman.blogspot.com/2007/03/i-still-know-where-youv
 tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:29:58+00:00"
+  at: "2026-08-11T19:37:01+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2007/03/i-still-know-where-youve-been-without.html"
     title: "I still know where you've been, without JavaScript"
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2007/03/i-still-know-where-youve-been-without.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2007/03/i-still-know-where-youve-been-without.html"
 cited_by:
   - "2007.md:24"
@@ -32,8 +34,8 @@ publisher: blog.jeremiahgrossman.com
 publisher_english: ""
 raw_sha256: 8689f92be2ef88ecf0e24d8c3c528f92bbf97bda4593a265602432a62cc83006
 retrieved_from: "https://blog.jeremiahgrossman.com/2007/03/i-still-know-where-youve-been-without.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:29:58+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:01+00:00"
 slug: blog-jeremiahgrossman-com-i-still-know-where-you-ve-been-without-javascript
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # I still know where you've been, without JavaScript
 
-**I still know where you've been, without JavaScript** - Author not stated, blog.jeremiahgrossman.com.
+**I still know where you've been, without JavaScript** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2007/03/i-still-know-where-youve-been-without.html>
 - Current location: <https://blog.jeremiahgrossman.com/2007/03/i-still-know-where-youve-been-without.html>
-- Preserved from: https://blog.jeremiahgrossman.com/2007/03/i-still-know-where-youve-been-without.html (live) on 2026-08-10
+- Preserved from: https://blog.jeremiahgrossman.com/2007/03/i-still-know-where-youve-been-without.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,20 +5,22 @@ resource: "http://www.wisec.it/vulns.php?id=11"
 tags: [article, webseclist-reference, wisec-it]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:49:17+00:00"
+  at: "2026-08-11T19:37:42+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.wisec.it/vulns.php?id=11"
     title: Wisec - The WIse SECurity
+    author: Stefano Di Paola
 also_at: []
-authors: []
+authors:
+  - Stefano Di Paola
 canonical_url: ""
 cited_by:
   - "2007.md:54"
 commit: ""
-content_sha256: 95b89e29064acf75e9fd2bbb462bf4a8eaa6b0ea9994ea730a6cddc159d8bc05
+content_sha256: cfee1511a96046090f81c93fe3ae2e4dd231b05429f5dd92203991d562402914
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: wisec.it
 publisher_english: ""
 raw_sha256: c1b0230a8df5449706bc3f191b1743aed9944d3426a3477491f803b77cfb90bc
 retrieved_from: "http://www.wisec.it/vulns.php?id=11"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:49:17+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:42+00:00"
 slug: wisec-it-wisec-wise-security-6
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Wisec - The WIse SECurity
 
-**Wisec - The WIse SECurity** - Author not stated, wisec.it.
+**Wisec - The WIse SECurity** - Stefano Di Paola, wisec.it.
 
 - Published: date not stated
 - Original: <http://www.wisec.it/vulns.php?id=11>
-- Preserved from: http://www.wisec.it/vulns.php?id=11 (live) on 2026-08-09
+- Preserved from: http://www.wisec.it/vulns.php?id=11 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -354,8 +356,6 @@ Note: there is some difference between IE and Firefox, but it'll
 be left as an exercise for the reader.
 
 ```
-
- 
 
 ### Update
 

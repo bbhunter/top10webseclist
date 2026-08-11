@@ -5,20 +5,22 @@ resource: "https://samy.pl/slipstream/"
 tags: [article, webseclist-reference, samy-pl]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:48+00:00"
+  at: "2026-08-11T19:37:11+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://samy.pl/slipstream/"
     title: samy kamkar - NAT Slipstreaming v2.0
+    author: Samy Kamkar
 also_at: []
-authors: []
+authors:
+  - Samy Kamkar
 canonical_url: ""
 cited_by:
   - "2020.md:9"
 commit: ""
-content_sha256: b90560eadd83afcb4fff65c7c9551050ce55dadd1efc5f23a2e454ddc1f7a8df
+content_sha256: 704b8b902787fdae20b9dea8be96366bd66c9390a8db1da7b18f45d3fb50b162
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: samy.pl
 publisher_english: ""
 raw_sha256: 51c964e5779475cc296f3e5108959f5ac3671edc8264a1e207336fdd90998859
 retrieved_from: "https://samy.pl/slipstream/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:48+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:11+00:00"
 slug: samy-pl-samy-kamkar-nat-slipstreaming-v2-0
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # samy kamkar - NAT Slipstreaming v2.0
 
-**samy kamkar - NAT Slipstreaming v2.0** - Author not stated, samy.pl.
+**samy kamkar - NAT Slipstreaming v2.0** - Samy Kamkar, samy.pl.
 
 - Published: date not stated
 - Original: <https://samy.pl/slipstream/>
-- Preserved from: https://samy.pl/slipstream/ (live) on 2026-08-09
+- Preserved from: https://samy.pl/slipstream/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

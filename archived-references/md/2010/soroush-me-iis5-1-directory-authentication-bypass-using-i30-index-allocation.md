@@ -5,20 +5,22 @@ resource: "https://soroush.me/blog/iis5-1-directory-authentication-bypass-by-usi
 tags: [article, webseclist-reference, en, soroush-me]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:55+00:00"
+  at: "2026-08-11T19:37:25+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://soroush.me/blog/iis5-1-directory-authentication-bypass-by-using-i30index-allocation"
     title: "IIS5.1 Directory Authentication Bypass by using “:$I30:$Index_Allocation”"
+    author: Soroush Dalili
 also_at: []
-authors: []
+authors:
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2010.md:59"
 commit: ""
-content_sha256: 61c2b8da7ce060fb6b9fb6dfe7863aadacb48f1bd02d13efa68217b3f2dfdb3a
+content_sha256: 31d57277f566d526c4c19eb0c9e6a48c66e5a540b23f8a0eb0e9d4cf24e3b139
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: soroush.me
 publisher_english: ""
 raw_sha256: 0ec8f06d4f0fd87b3cf6bcc5ba5edfd79b5141786b1a7382393ab03281e9898b
 retrieved_from: "https://soroush.me/blog/iis5-1-directory-authentication-bypass-by-using-i30index-allocation"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:55+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:25+00:00"
 slug: soroush-me-iis5-1-directory-authentication-bypass-using-i30-index-allocation
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # IIS5.1 Directory Authentication Bypass by using “:$I30:$Index_Allocation”
 
-**IIS5.1 Directory Authentication Bypass by using “:$I30:$Index_Allocation”** - Author not stated, soroush.me.
+**IIS5.1 Directory Authentication Bypass by using “:$I30:$Index_Allocation”** - Soroush Dalili, soroush.me.
 
 - Published: date not stated
 - Original: <https://soroush.me/blog/iis5-1-directory-authentication-bypass-by-using-i30index-allocation>
-- Preserved from: https://soroush.me/blog/iis5-1-directory-authentication-bypass-by-using-i30index-allocation (live) on 2026-08-09
+- Preserved from: https://soroush.me/blog/iis5-1-directory-authentication-bypass-by-using-i30index-allocation (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

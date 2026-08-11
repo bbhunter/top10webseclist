@@ -5,20 +5,22 @@ resource: "https://soroush.me/blog/aspxerrorpath-in-url-technique-in-scanning-a-
 tags: [article, webseclist-reference, en, soroush-me]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-07T09:43:31+00:00"
+  at: "2026-08-11T19:37:18+00:00"
 status: stable
-stale_after: 2027-08-07
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://soroush.me/blog/aspxerrorpath-in-url-technique-in-scanning-a-net-web-application"
     title: “ASPXErrorPath in URL” Technique in Scanning a .Net Web Application
+    author: Soroush Dalili
 also_at: []
-authors: []
+authors:
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2012.md:46"
 commit: ""
-content_sha256: 5faaae27006d8510cfc65c97bf3bd5fabecfe638a2b39683d322dd5e0b845ce7
+content_sha256: 02aa6ea510e5a05b7ed2badc7cacab3f33f07febae852057c93845c3d5e7ee35
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +33,7 @@ publisher_english: ""
 raw_sha256: 9e0c0586c26b5f0638e605005cc7c187696b4e1d434d700de4161cc09df01b30
 retrieved_from: "https://soroush.me/blog/aspxerrorpath-in-url-technique-in-scanning-a-net-web-application"
 retrieved_kind: stored
-retrieved_utc: "2026-08-07T09:43:31+00:00"
+retrieved_utc: "2026-08-11T19:37:18+00:00"
 slug: soroush-me-aspxerrorpath-url-technique-scanning-net-web-application
 snapshot: ""
 title_english: ""
@@ -41,15 +43,15 @@ translation_of: ""
 
 # “ASPXErrorPath in URL” Technique in Scanning a .Net Web Application
 
-**“ASPXErrorPath in URL” Technique in Scanning a .Net Web Application** - Author not stated, soroush.me.
+**“ASPXErrorPath in URL” Technique in Scanning a .Net Web Application** - Soroush Dalili, soroush.me.
 
 - Published: date not stated
 - Original: <https://soroush.me/blog/aspxerrorpath-in-url-technique-in-scanning-a-net-web-application>
-- Preserved from: https://soroush.me/blog/aspxerrorpath-in-url-technique-in-scanning-a-net-web-application (stored) on 2026-08-07
+- Preserved from: https://soroush.me/blog/aspxerrorpath-in-url-technique-in-scanning-a-net-web-application (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

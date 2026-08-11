@@ -5,21 +5,24 @@ resource: "https://zhero-web-sec.github.io/research-and-things/astro-framework-a
 tags: [article, webseclist-reference, en-US, zhero-web-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:51:26+00:00"
+  at: "2026-08-11T19:37:44+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://zhero-web-sec.github.io/research-and-things/astro-framework-and-standards-weaponization"
     title: Astro framework and standards weaponization
+    author: zhero, inzo_
     last_modified: 2025-11-05
 also_at: []
-authors: []
+authors:
+  - zhero
+  - inzo_
 canonical_url: ""
 cited_by:
   - "2025.md:65"
 commit: ""
-content_sha256: 40deb2247754c74d5ffa958bd2227fbc25b3effba5c548bbded619f2cfa11a90
+content_sha256: bc7b858bbbae9aaae44ad011dbd685c4da157113470b0b2d24bc46ed067b1d84
 depth: full
 depth_reason: default
 kind: article
@@ -31,8 +34,8 @@ publisher: zhero_web_security
 publisher_english: ""
 raw_sha256: c8dbb0898a4a4f73170e0d28a34d52025efeff725cc82454e4b678d4ac2bdbd0
 retrieved_from: "https://zhero-web-sec.github.io/research-and-things/astro-framework-and-standards-weaponization"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:51:26+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:44+00:00"
 slug: 2025-zhero-web-security-astro-framework-standards-weaponization
 snapshot: ""
 title_english: ""
@@ -42,11 +45,11 @@ translation_of: ""
 
 # Astro framework and standards weaponization
 
-**Astro framework and standards weaponization** - Author not stated, zhero_web_security.
+**Astro framework and standards weaponization** - zhero, inzo_, zhero_web_security.
 
 - Published: 2025-11-05
 - Original: <https://zhero-web-sec.github.io/research-and-things/astro-framework-and-standards-weaponization>
-- Preserved from: https://zhero-web-sec.github.io/research-and-things/astro-framework-and-standards-weaponization (live) on 2026-08-09
+- Preserved from: https://zhero-web-sec.github.io/research-and-things/astro-framework-and-standards-weaponization (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

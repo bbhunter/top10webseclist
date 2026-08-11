@@ -5,20 +5,23 @@ resource: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/t
 tags: [article, webseclist-reference, en, isg-rhul-ac-uk]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:29:43+00:00"
+  at: "2026-08-11T19:36:59+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/Lucky13.html"
     title: "Lucky Thirteen: Breaking the TLS and DTLS Record Protocols"
+    author: Nadhem AlFardan, Kenny Paterson
   - id: canonical
-    resource: "http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/Lucky13.html"
+    resource: "http://www.isg.rhul.ac.uk/tls/Lucky13.html"
   - id: capture
     resource: "https://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/Lucky13.html"
 also_at: []
-authors: []
-canonical_url: "http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/Lucky13.html"
+authors:
+  - Nadhem AlFardan
+  - Kenny Paterson
+canonical_url: "http://www.isg.rhul.ac.uk/tls/Lucky13.html"
 cited_by:
   - "2013.md:8"
 commit: ""
@@ -33,9 +36,9 @@ published: ""
 publisher: isg.rhul.ac.uk
 publisher_english: ""
 raw_sha256: abc11738aa97bec76138b0d76ee333f222a6f108c7a76229574e374b50a9b5a8
-retrieved_from: "http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/Lucky13.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:29:43+00:00"
+retrieved_from: "http://www.isg.rhul.ac.uk/tls/Lucky13.html"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:59+00:00"
 slug: isg-rhul-ac-uk-lucky-thirteen-breaking-tls-dtls-record-protocols
 snapshot: 20160507023636
 title_english: ""
@@ -45,12 +48,12 @@ translation_of: ""
 
 # Lucky Thirteen: Breaking the TLS and DTLS Record Protocols
 
-**Lucky Thirteen: Breaking the TLS and DTLS Record Protocols** - Author not stated, isg.rhul.ac.uk.
+**Lucky Thirteen: Breaking the TLS and DTLS Record Protocols** - Nadhem AlFardan, Kenny Paterson, isg.rhul.ac.uk.
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/Lucky13.html>
-- Current location: <http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/Lucky13.html>
-- Preserved from: http://web.archive.org/web/20160526000934/http://www.isg.rhul.ac.uk/tls/Lucky13.html (live) on 2026-08-10
+- Current location: <http://www.isg.rhul.ac.uk/tls/Lucky13.html>
+- Preserved from: http://www.isg.rhul.ac.uk/tls/Lucky13.html (stored) on 2026-08-11
 - Capture timestamp: 20160507023636
 - Licence: unknown
 

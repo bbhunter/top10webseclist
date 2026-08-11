@@ -5,20 +5,22 @@ resource: "https://soroush.me/blog/mongodb-nosql-injection-with-aggregation-pipe
 tags: [article, webseclist-reference, en, soroush-me]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:56+00:00"
+  at: "2026-08-11T19:37:26+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://soroush.me/blog/mongodb-nosql-injection-with-aggregation-pipelines"
     title: MongoDB NoSQL Injection with Aggregation Pipelines
+    author: Soroush Dalili
 also_at: []
-authors: []
+authors:
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2024.md:114"
 commit: ""
-content_sha256: a1b662b72f126d6a0ba81ee0dbb14b614a6cea716ba47274e5da69cbcd7cca8d
+content_sha256: e8ebb55dc150fecdcc3b0bdc7895536873eac3c2235ca6624f34cb75254f284d
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: soroush.me
 publisher_english: ""
 raw_sha256: ac5b5b28971e4d0b98498e0a058485f5ac47f24dde323cb5c8d1d19605add448
 retrieved_from: "https://soroush.me/blog/mongodb-nosql-injection-with-aggregation-pipelines"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:56+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:26+00:00"
 slug: soroush-me-mongodb-nosql-injection-aggregation-pipelines
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # MongoDB NoSQL Injection with Aggregation Pipelines
 
-**MongoDB NoSQL Injection with Aggregation Pipelines** - Author not stated, soroush.me.
+**MongoDB NoSQL Injection with Aggregation Pipelines** - Soroush Dalili, soroush.me.
 
 - Published: date not stated
 - Original: <https://soroush.me/blog/mongodb-nosql-injection-with-aggregation-pipelines>
-- Preserved from: https://soroush.me/blog/mongodb-nosql-injection-with-aggregation-pipelines (live) on 2026-08-09
+- Preserved from: https://soroush.me/blog/mongodb-nosql-injection-with-aggregation-pipelines (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

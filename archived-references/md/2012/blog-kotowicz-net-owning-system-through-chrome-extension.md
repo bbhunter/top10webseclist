@@ -5,20 +5,22 @@ resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2
 tags: [article, webseclist-reference, blog-kotowicz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:05:03+00:00"
+  at: "2026-08-11T19:36:30+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html"
     title: Owning a system through a Chrome extension
+    author: Krzysztof Kotowicz
   - id: canonical
-    resource: "https://web.archive.org/web/20171017093250/http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html"
+    resource: "http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html"
 also_at: []
-authors: []
-canonical_url: "https://web.archive.org/web/20171017093250/http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html"
+authors:
+  - Krzysztof Kotowicz
+canonical_url: "http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html"
 cited_by:
   - "2012.md:7"
 commit: ""
@@ -33,9 +35,9 @@ published: ""
 publisher: blog.kotowicz.net
 publisher_english: ""
 raw_sha256: 2f8a3776e14546d9a240c69e30e0d18b8deb4d33a2792d6afb3963fcd26e2d11
-retrieved_from: "https://web.archive.org/web/20171017093250/http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:05:03+00:00"
+retrieved_from: "http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:30+00:00"
 slug: blog-kotowicz-net-owning-system-through-chrome-extension
 snapshot: 20170903113359
 title_english: ""
@@ -45,12 +47,12 @@ translation_of: ""
 
 # Owning a system through a Chrome extension
 
-**Owning a system through a Chrome extension** - Author not stated, blog.kotowicz.net.
+**Owning a system through a Chrome extension** - Krzysztof Kotowicz, blog.kotowicz.net.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html>
-- Current location: <https://web.archive.org/web/20171017093250/http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html>
-- Preserved from: https://web.archive.org/web/20171017093250/http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html (live) on 2026-08-10
+- Current location: <http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html>
+- Preserved from: http://blog.kotowicz.net/2012/09/owning-system-through-chrome-extension.html (stored) on 2026-08-11
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

@@ -5,17 +5,19 @@ resource: "https://jeremiahgrossman.blogspot.com/2006/01/my-tv-interview-with-ab
 tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:29:49+00:00"
+  at: "2026-08-11T19:37:00+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2006/01/my-tv-interview-with-abc-news-au.html"
     title: My TV interview with ABC News (AU)
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2006/01/my-tv-interview-with-abc-news-au.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2006/01/my-tv-interview-with-abc-news-au.html"
 cited_by:
   - "2006.md:64"
@@ -32,8 +34,8 @@ publisher: blog.jeremiahgrossman.com
 publisher_english: ""
 raw_sha256: 870488c9ec86319971a43c1ef70f89c4d0d6de52bddaf772ba4217df074a1583
 retrieved_from: "https://blog.jeremiahgrossman.com/2006/01/my-tv-interview-with-abc-news-au.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:29:49+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:00+00:00"
 slug: blog-jeremiahgrossman-com-my-tv-interview-abc-news-au
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # My TV interview with ABC News (AU)
 
-**My TV interview with ABC News (AU)** - Author not stated, blog.jeremiahgrossman.com.
+**My TV interview with ABC News (AU)** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2006/01/my-tv-interview-with-abc-news-au.html>
 - Current location: <https://blog.jeremiahgrossman.com/2006/01/my-tv-interview-with-abc-news-au.html>
-- Preserved from: https://blog.jeremiahgrossman.com/2006/01/my-tv-interview-with-abc-news-au.html (live) on 2026-08-10
+- Preserved from: https://blog.jeremiahgrossman.com/2006/01/my-tv-interview-with-abc-news-au.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

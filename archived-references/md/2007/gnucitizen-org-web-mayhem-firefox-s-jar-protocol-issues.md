@@ -5,17 +5,19 @@ resource: "https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issu
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:14:03+00:00"
+  at: "2026-08-11T19:36:57+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues"
     title: "Web Mayhem Firefox's JAR Protocol issues"
+    author: pdp
   - id: canonical
     resource: "https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues/"
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: "https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues/"
 cited_by:
   - "2007.md:7"
@@ -32,8 +34,8 @@ publisher: gnucitizen.org
 publisher_english: ""
 raw_sha256: 0e6a078dce104ef6868c17822985fb685db4edd89642514bf46dfc169c292d71
 retrieved_from: "https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:14:03+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:57+00:00"
 slug: gnucitizen-org-web-mayhem-firefox-s-jar-protocol-issues
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Web Mayhem Firefox's JAR Protocol issues
 
-**Web Mayhem Firefox's JAR Protocol issues** - Author not stated, gnucitizen.org.
+**Web Mayhem Firefox's JAR Protocol issues** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues>
 - Current location: <https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues/>
-- Preserved from: https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues/ (live) on 2026-08-09
+- Preserved from: https://www.gnucitizen.org/blog/web-mayhem-firefoxs-jar-protocol-issues/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

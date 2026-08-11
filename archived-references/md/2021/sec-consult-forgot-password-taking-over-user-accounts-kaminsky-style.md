@@ -2,38 +2,42 @@
 type: Article
 title: Forgot password? Taking over user accounts Kaminsky style
 resource: "https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/"
-tags: [article, webseclist-reference, en, sec-consult]
+tags: [article, webseclist-reference, en-us, sec-consult]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:57:49+00:00"
+  at: "2026-08-11T19:37:13+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/"
     title: Forgot password? Taking over user accounts Kaminsky style
+    author: Timo Longin
+  - id: capture
+    resource: "https://web.archive.org/web/20210723141232/https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/"
 also_at: []
-authors: []
+authors:
+  - Timo Longin
 canonical_url: ""
 cited_by:
   - "2021.md:22"
 commit: ""
-content_sha256: 3345576eaa1fe119c9951b818a38539ab5fda82bdd6b659652f2b77acbaf9262
+content_sha256: a00715144154afd0c7f6658a6c9d797118c24510ebddde14a49ee399d15650ad
 depth: full
 depth_reason: default
 kind: article
-language: en
+language: en-us
 licence: unknown
 original_url: "https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/"
 published: ""
 publisher: SEC Consult
 publisher_english: ""
-raw_sha256: 2a6135dfc465dba1b5cb3fb4f3a004c15fd980472fd6547de400ec661df74fd0
+raw_sha256: 73580b873dbbf47d2c5160e938b31e3364ef23f20ceb324a2def32b51eecbe9d
 retrieved_from: "https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:57:49+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:13+00:00"
 slug: sec-consult-forgot-password-taking-over-user-accounts-kaminsky-style
-snapshot: ""
+snapshot: 20210723141232
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -41,11 +45,12 @@ translation_of: ""
 
 # Forgot password? Taking over user accounts Kaminsky style
 
-**Forgot password? Taking over user accounts Kaminsky style** - Author not stated, SEC Consult.
+**Forgot password? Taking over user accounts Kaminsky style** - Timo Longin, SEC Consult.
 
 - Published: date not stated
 - Original: <https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/>
-- Preserved from: https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/ (live) on 2026-08-10
+- Preserved from: https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/ (stored) on 2026-08-11
+- Capture timestamp: 20210723141232
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -63,8 +68,6 @@ page going offline. To read the original, follow the link above.
  21.07.2021
 
 The "Forgot password?" feature and how DNS vulnerabilities may allow the takeover of user accounts.
-
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2021_07/sec-consult-h_pwd_dns_image_1_en.png)
 
 **TL;DR**
 
@@ -93,15 +96,11 @@ Assuming an attacker can inject arbitrary DNS records into the cache of the DNS 
  That way, said attacker can receive all e-mails destined to "gmail.com". **Including password reset e-mails.**
  The following picture illustrates this:
 
-![Illustration showing DNS traffic from web app (left), ober DNS resolver (middle) to the ADNS (right).](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2021_07/sec-consult-c_pwd_dns_image_2_en.png)
-
 * Figure 1: Redirecting e-mails via DNS cache poisoning [14] *
 
 So, if an attacker can manipulate the DNS name resolution of a web application, the "Forgot password?" feature could be abused to take over user accounts.
 
 Dan Kaminsky already presented this [attack vector](https://www.blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf) in 2008 at the Black Hat conference [1]. The following analysis of 146 web applications, which was conducted during Timo Longin's diploma thesis "DNS vulnerabilities in web applications" [14], shows that the attack vector is **still relevant today**.
-
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2021_07/sec-consult-c_pwd_dns_image_3_en.png)
 
 * Figure 2: DNS traffic between web application, DNS resolver and ADNS of the "analysis.example" domain [14] *
 
@@ -112,8 +111,6 @@ So, how do you check the DNS name resolution of 146 web applications for vulnera
 By registering 146 users! Multiple times!
 
 When a user registers on a web application, the web application most commonly sends an e-mail to verify the e-mail address. Take the e-mail address is "test@analysis.example". In order for an e-mail to be sent, the e-mail domain of said e-mail address must first be resolved to an IP address. So, for "analysis.example", the IP address of the e-mail server must be determined. After a few DNS queries, this results in a DNS query with the type "MX" being sent to the authoritative name server (ADNS) of "analysis.example" (see figure 2).
-
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2021_07/sec-consult-c_pwd_dns_image_4_en.png)
 
 * Figure 3: DNS traffic flowing through the DNS proxy [14] *
 
@@ -213,8 +210,6 @@ The length of this DNS response exceeds the Maximum Transmission Unit (MTU) and 
 
 **Attack requirement - Source Port Randomization:** Another example is requirements of a [Kaminsky attack](https://www.blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf) [1]. One of the requirements is that DNS requests have a low entropy and thus DNS responses are easy to guess. This low entropy results from the fact that source ports are not randomly assigned. We can check this requirement by analyzing log files of the DNS proxy. Scatter plots are particularly well suited for this purpose (see figure 4).
 
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2021_07/sec-consult-c_pwd_dns_scatterplot_random.png)
-
 * Figure 4: Scatter plot of randomly distributed UDP source ports *
 
 In this case, source ports are chosen randomly, which makes Kaminsky attacks hardly feasible.
@@ -231,8 +226,6 @@ If a web application manages to resolve an e-mail domain into an IP address, as 
 Now the time has come! Nothing holds us back from analyzing the DNS name resolution of 146 web applications!
 
 The test procedure looks like this (see figure 5).
-
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2021_07/sec-consult-c_pwd_dns_image_5_en.png)
 
 * Figure 5: Test procedure for checking web applications for DNS vulnerabilities [14] *
 
@@ -270,8 +263,6 @@ No usage/enforcement of DNS security features (DNSSEC, DNS cookies, etc.)
 
 It is possible to trigger a large number of DNS queries to a "victim" domain (for example, "gmail.com")
 
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2021_07/sec-consult-c_pwd_dns_scatterplot_static.PNG)
-
 * Figure 6: Web application with static source port distribution [14] *
 
 The low entropy of DNS requests is particularly interesting here. As already shown, it can be visualized with scatter plots of UDP source ports. The scatter plot of a vulnerable DNS name resolution of an online casino looks as follows (see figure 6).
@@ -279,8 +270,6 @@ The low entropy of DNS requests is particularly interesting here. As already sho
 Every second DNS request uses source port 30200, other DNS requests use incremental source ports. This makes it easy for an attacker to guess used source ports and perform a Kaminsky attack.
 
 The second web application (a news station) with guessable source ports has the following scatter plot (see figure 7).
-
-![](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/2021_07/sec-consult-c_pwd_dns_scatterplot_incremental.png)
 
 * Figure 7: Web application with incremental source port distribution [14] *
 
@@ -447,12 +436,10 @@ In internal security assessments, it is common practice to exploit the "Forgot p
 
 ####  About the author
 
-![Portrait of Timo Longin SEC Consult](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/Authors/a-TLO.png)
-
 Timo Longin
 SEC Consult
-Senior Security Consultant
+Associate Security Consultant
 
-Timo Longin (also known as Login) is a senior security consultant at SEC Consult at day and a security researcher at night. Aside from everyday security assessments, he publishes blog posts and security tools, holds talks at conferences and universities, and has a passion for CTFs. As a well-rounded offensive security researcher, he tries to find forgotten and new exploitation techniques that make the unthinkable possible!
+In addition to customer projects, certifications and everyday life, Timo is always looking for new challenges and opportunities to make the IT world a bit safer.
 
 [ Back ](https://sec-consult.com/blog/)

@@ -5,20 +5,22 @@ resource: "https://soroush.me/blog/drag-and-drop-xss-in-firefox-by-html5-cross-d
 tags: [article, webseclist-reference, en, soroush-me]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:52+00:00"
+  at: "2026-08-11T19:37:22+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://soroush.me/blog/drag-and-drop-xss-in-firefox-by-html5-cross-domain-in-frames"
     title: Drag and Drop XSS in Firefox by HTML5 (Cross Domain in frames)
+    author: Soroush Dalili
 also_at: []
-authors: []
+authors:
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2011.md:57"
 commit: ""
-content_sha256: 0a3f2415244deabd0b1329a7885e6953153967562f7f780da8791a0847c66400
+content_sha256: 7457cb81fc079b8d19aa5ca2128124d258c7760385bd7c423d55da8f74506b3d
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: soroush.me
 publisher_english: ""
 raw_sha256: 9ee50da442ad0ab4ff844ac9dcc1a9a68039007e055eae06cfd938e3326e9ff2
 retrieved_from: "https://soroush.me/blog/drag-and-drop-xss-in-firefox-by-html5-cross-domain-in-frames"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:52+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:22+00:00"
 slug: soroush-me-drag-drop-xss-firefox-html5-cross-domain-frames
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Drag and Drop XSS in Firefox by HTML5 (Cross Domain in frames)
 
-**Drag and Drop XSS in Firefox by HTML5 (Cross Domain in frames)** - Author not stated, soroush.me.
+**Drag and Drop XSS in Firefox by HTML5 (Cross Domain in frames)** - Soroush Dalili, soroush.me.
 
 - Published: date not stated
 - Original: <https://soroush.me/blog/drag-and-drop-xss-in-firefox-by-html5-cross-domain-in-frames>
-- Preserved from: https://soroush.me/blog/drag-and-drop-xss-in-firefox-by-html5-cross-domain-in-frames (live) on 2026-08-09
+- Preserved from: https://soroush.me/blog/drag-and-drop-xss-in-firefox-by-html5-cross-domain-in-frames (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

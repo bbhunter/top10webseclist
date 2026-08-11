@@ -5,17 +5,19 @@ resource: "https://www.gnucitizen.org/blog/content-disposition-hacking"
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:13:51+00:00"
+  at: "2026-08-11T19:36:46+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/content-disposition-hacking"
     title: Content-Disposition Hacking
+    author: pagvac
   - id: canonical
     resource: "https://www.gnucitizen.org/blog/content-disposition-hacking/"
 also_at: []
-authors: []
+authors:
+  - pagvac
 canonical_url: "https://www.gnucitizen.org/blog/content-disposition-hacking/"
 cited_by:
   - "2007.md:85"
@@ -32,8 +34,8 @@ publisher: gnucitizen.org
 publisher_english: ""
 raw_sha256: 349430701abe7d0f1a30e9582a61148b125bd24369c6cb9cfcbe14a0bf595cd6
 retrieved_from: "https://www.gnucitizen.org/blog/content-disposition-hacking/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:13:51+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:46+00:00"
 slug: gnucitizen-org-content-disposition-hacking
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Content-Disposition Hacking
 
-**Content-Disposition Hacking** - Author not stated, gnucitizen.org.
+**Content-Disposition Hacking** - pagvac, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/content-disposition-hacking>
 - Current location: <https://www.gnucitizen.org/blog/content-disposition-hacking/>
-- Preserved from: https://www.gnucitizen.org/blog/content-disposition-hacking/ (live) on 2026-08-09
+- Preserved from: https://www.gnucitizen.org/blog/content-disposition-hacking/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

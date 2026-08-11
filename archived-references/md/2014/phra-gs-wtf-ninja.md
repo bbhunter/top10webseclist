@@ -5,24 +5,26 @@ resource: "https://web.archive.org/web/20160403035045/https://phra.gs/blob/2014-
 tags: [article, webseclist-reference, phra-gs]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:10+00:00"
+  at: "2026-08-11T19:37:07+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/https://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html"
     title: wtf.ninja
+    author: phrag
   - id: canonical
-    resource: "https://web.archive.org/web/20160306222527/http://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html"
+    resource: "https://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html"
   - id: capture
     resource: "https://web.archive.org/web/20160403035045/https://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html"
 also_at: []
-authors: []
-canonical_url: "https://web.archive.org/web/20160306222527/http://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html"
+authors:
+  - phrag
+canonical_url: "https://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html"
 cited_by:
   - "2014.md:29"
 commit: ""
-content_sha256: 6c180f4dc4b4ece1481b087ff6a6dcd2ae566bf477a62476c82fc65f87f84094
+content_sha256: 0dac4dec22f0f7e1080ce47dde2ff83ad49428c30cace6f5962983a654f92d27
 depth: full
 depth_reason: default
 kind: article
@@ -33,9 +35,9 @@ published: ""
 publisher: phra.gs
 publisher_english: ""
 raw_sha256: eac2a18d8aaf65d30bbe47e2c315e7c2a078a08d73ac4a6374f7d406c8fa892e
-retrieved_from: "https://web.archive.org/web/20160306222527/http://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:10+00:00"
+retrieved_from: "https://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:07+00:00"
 slug: phra-gs-wtf-ninja
 snapshot: 20160403035045
 title_english: ""
@@ -45,12 +47,12 @@ translation_of: ""
 
 # wtf.ninja
 
-**wtf.ninja** - Author not stated, phra.gs.
+**wtf.ninja** - phrag, phra.gs.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/https://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html>
-- Current location: <https://web.archive.org/web/20160306222527/http://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html>
-- Preserved from: https://web.archive.org/web/20160306222527/http://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html (live) on 2026-08-10
+- Current location: <https://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html>
+- Preserved from: https://phra.gs/blob/2014-06-04-linksys-e4200-auth-bypass.html (stored) on 2026-08-11
 - Capture timestamp: 20160403035045
 - Licence: unknown
 
@@ -70,7 +72,7 @@ The Wayback Machine - https://web.archive.org/web/20160306222527/http://phra.gs/
 
 # wtf.ninja
 
- [phra.gs](https://web.archive.org/web/20160306222527/https://phra.gs/) • [blob](https://web.archive.org/web/20160306222527/http://wtf.ninja/) • [about](https://web.archive.org/web/20160306222527/http:/phra.gs/blob/about.html)
+ [phra.gs](https://web.archive.org/web/20160306222527/https://phra.gs/) • [blob](https://web.archive.org/web/20160306222527/http://wtf.ninja/) • [about](https://phra.gs/blob/about.html)
 
 ## Linksys E4200 Authentication Bypass Disclosure
 

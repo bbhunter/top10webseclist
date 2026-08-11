@@ -5,22 +5,24 @@ resource: "http://blog.washingtonpost.com/securityfix/2006/01/account_hijackings
 tags: [article, webseclist-reference, blog-washingtonpost-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:06+00:00"
+  at: "2026-08-11T19:36:33+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://blog.washingtonpost.com/securityfix/2006/01/account_hijackings_force_livej.html"
     title: Security Fix - Brian Krebs on Computer and Internet Security
+    author: Brian Krebs
   - id: capture
     resource: "https://web.archive.org/web/20060314151344/http://blog.washingtonpost.com/securityfix/2006/01/account_hijackings_force_livej.html"
 also_at: []
-authors: []
+authors:
+  - Brian Krebs
 canonical_url: ""
 cited_by:
   - "2006.md:65"
 commit: ""
-content_sha256: 9454130734750b24c97b394e66c29fb19010b4dbe79c27548aed6bce39a6c66e
+content_sha256: 05b75cbebfbb877bc528535ba6c61891b86c018ba896340f52bbeb8eea5dde5a
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: ec3f8bdfb670529b2e30dc368b54175c1b2003a87bd6fc4c0ad12111761d630c
 retrieved_from: "http://blog.washingtonpost.com/securityfix/2006/01/account_hijackings_force_livej.html"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:06+00:00"
+retrieved_utc: "2026-08-11T19:36:33+00:00"
 slug: washingtonpost-com-security-fix-brian-krebs-computer-internet-security
 snapshot: 20060314151344
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Security Fix - Brian Krebs on Computer and Internet Security
 
-**Security Fix - Brian Krebs on Computer and Internet Security** - Author not stated, blog.washingtonpost.com.
+**Security Fix - Brian Krebs on Computer and Internet Security** - Brian Krebs, blog.washingtonpost.com.
 
 - Published: date not stated
 - Original: <http://blog.washingtonpost.com/securityfix/2006/01/account_hijackings_force_livej.html>
-- Preserved from: http://blog.washingtonpost.com/securityfix/2006/01/account_hijackings_force_livej.html (stored) on 2026-08-09
+- Preserved from: http://blog.washingtonpost.com/securityfix/2006/01/account_hijackings_force_livej.html (stored) on 2026-08-11
 - Capture timestamp: 20060314151344
 - Licence: unknown
 
@@ -99,12 +101,8 @@ Anytime you have large groups of computer users aggregating at such places, they
 
 So far, the damage has been mostly harmless. The most high-profile case so far came in mid-October when [one **Myspace.com** user](http://namb.la/popular/tech.html) released [a self-replicating computer worm](http://www.sophos.com/virusinfo/analyses/jsspaceheroa.html) that took advantage of Javascript flaws to [add more than a million fellow users to his buddy list](http://it.slashdot.org/it/05/10/14/126233.shtml?tid=172&tid=95&tid=220). A [similar worm](http://blogs.securiteam.com/index.php/archives/166) hit the online community Xanga on New Year's eve (there is also some strong language at this link.)
 
- 
-
  By Brian Krebs | January 20, 2006; 12:26 PM ET | Category: [Latest Warnings](http://blog.washingtonpost.com/securityfix/latest_warnings/)
  Previous: [Rep. Takes Aim at Cell Phone Record Sales](http://blog.washingtonpost.com/securityfix/2006/01/rep_takes_aim_at_cell_phone_re.html) | [Main Index](http://blog.washingtonpost.com/securityfix/) | Next: [Kama Sutra Worm Gets Nasty](http://blog.washingtonpost.com/securityfix/2006/01/kama_sutra_worm_gets_nasty.html)
-
- 
 
 ### TrackBack
 
@@ -123,271 +121,137 @@ Tracked on January 20, 2006 02:58 PM
 
 Tracked on January 20, 2006 06:55 PM
 
- 
-
 Posted by: wiredog | January 20, 2006 12:58 PM
-
- 
 
 Posted by: Bk | January 20, 2006 01:03 PM
 
- 
-
 Posted by: anonymous | January 20, 2006 02:53 PM
-
- 
 
 Posted by: Ayjay | January 20, 2006 02:55 PM
 
- 
-
 Posted by: rfjason | January 20, 2006 03:01 PM
-
- 
 
 Posted by: | January 20, 2006 03:06 PM
 
- 
-
 Posted by: Bk | January 20, 2006 03:15 PM
-
- 
 
 Posted by: DS | January 20, 2006 03:18 PM
 
- 
-
 Posted by: rfjason | January 20, 2006 03:33 PM
-
- 
 
 Posted by: | January 20, 2006 03:39 PM
 
- 
-
 Posted by: me | January 20, 2006 03:40 PM
-
- 
 
 Posted by: bantown | January 20, 2006 03:42 PM
 
- 
-
 Posted by: | January 20, 2006 03:52 PM
-
- 
 
 Posted by: SheeEttin | January 20, 2006 03:58 PM
 
- 
-
 Posted by: jameth | January 20, 2006 04:23 PM
-
- 
 
 Posted by: yo mom | January 20, 2006 04:37 PM
 
- 
-
 Posted by: | January 20, 2006 05:06 PM
-
- 
 
 Posted by: | January 20, 2006 05:39 PM
 
- 
-
 Posted by: Concerned Comrade | January 20, 2006 05:43 PM
-
- 
 
 Posted by: nonameLJuser | January 20, 2006 06:11 PM
 
- 
-
 Posted by: nonameLJuser | January 20, 2006 06:17 PM
-
- 
 
 Posted by: Concerned Comrade | January 20, 2006 06:18 PM
 
- 
-
 Posted by: bowl-o-lols | January 20, 2006 06:49 PM
-
- 
 
 Posted by: Epiphany | January 20, 2006 07:44 PM
 
- 
-
 Posted by: Concerned Shitizen | January 20, 2006 08:31 PM
-
- 
 
 Posted by: alex_jon | January 20, 2006 08:35 PM
 
- 
-
 Posted by: | January 20, 2006 08:36 PM
-
- 
 
 Posted by: lima_pcp | January 20, 2006 08:53 PM
 
- 
-
 Posted by: lima_pcp | January 20, 2006 08:56 PM
-
- 
 
 Posted by: C | January 20, 2006 09:27 PM
 
- 
-
 Posted by: pajanada | January 20, 2006 10:01 PM
-
- 
 
 Posted by: Asleep | January 20, 2006 10:10 PM
 
- 
-
 Posted by: Comrade | January 20, 2006 10:15 PM
-
- 
 
 Posted by: biscman | January 20, 2006 10:55 PM
 
- 
-
 Posted by: yellow_finch | January 20, 2006 11:23 PM
-
- 
 
 Posted by: | January 21, 2006 12:13 AM
 
- 
-
 Posted by: nifty | January 21, 2006 12:43 AM
-
- 
 
 Posted by: Ð§ÐµÐ±ÑÑÐ°ÑÐºÐ° | January 21, 2006 01:04 AM
 
- 
-
 Posted by: Kibs | January 21, 2006 01:19 AM
-
- 
 
 Posted by: || | January 21, 2006 02:36 AM
 
- 
-
 Posted by: Blingin to the Oldies | January 21, 2006 02:47 AM
-
- 
 
 Posted by: Factor V | January 21, 2006 02:48 AM
 
- 
-
 Posted by: random | January 21, 2006 03:50 AM
-
- 
 
 Posted by: not yo mom | January 21, 2006 06:10 AM
 
- 
-
 Posted by: neo | January 21, 2006 02:40 PM
-
- 
 
 Posted by: | January 21, 2006 11:44 PM
 
- 
-
 Posted by: Shino | January 22, 2006 12:42 AM
-
- 
 
 Posted by: x | January 22, 2006 01:48 AM
 
- 
-
 Posted by: alex_jon | January 22, 2006 04:42 AM
-
- 
 
 Posted by: alex_jon | January 22, 2006 04:43 AM
 
- 
-
 Posted by: LLBBooks | January 22, 2006 07:50 AM
-
- 
 
 Posted by: D Doctor | January 22, 2006 07:22 PM
 
- 
-
 Posted by: Jerome | January 22, 2006 09:13 PM
-
- 
 
 Posted by: threep | January 22, 2006 10:06 PM
 
- 
-
 Posted by: | January 23, 2006 04:52 AM
-
- 
 
 Posted by: Chickn | January 24, 2006 03:23 AM
 
- 
-
 Posted by: | January 24, 2006 06:58 PM
-
- 
 
 Posted by: frustrated | January 27, 2006 01:25 AM
 
- 
-
 Posted by: | January 27, 2006 08:35 PM
-
- 
 
 Posted by: ur mom | January 28, 2006 06:17 PM
 
- 
-
 Posted by: viva lj | January 28, 2006 06:18 PM
-
- 
 
 Posted by: xf | January 28, 2006 06:19 PM
 
- 
-
 Posted by: | January 28, 2006 06:21 PM
-
- 
 
 Posted by: lj | January 28, 2006 06:21 PM
 
- 
-
 Posted by: casino slot | February 1, 2006 12:13 PM
 
- 
-
 Posted by: cialis comparison levitra viagra | February 3, 2006 12:12 AM
-
- 
 
 Posted by: ultracet medication | February 3, 2006 12:54 AM
 

@@ -5,19 +5,21 @@ resource: "https://web.archive.org/web/20160403035045/http://yasserali.com/hacki
 tags: [article, webseclist-reference, yasserali-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T19:02:36+00:00"
+  at: "2026-08-11T19:37:43+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://yasserali.com/hacking-paypal-accounts-with-one-click/"
     title: "Yasser Ali's Blog » Hacking PayPal Accounts with one click (Patched)"
+    author: Yasser Ali
   - id: canonical
     resource: "http://yasserali.com/hacking-paypal-accounts-with-one-click/"
   - id: capture
     resource: "https://web.archive.org/web/20161101101544/http://yasserali.com/hacking-paypal-accounts-with-one-click/"
 also_at: []
-authors: []
+authors:
+  - Yasser Ali
 canonical_url: "http://yasserali.com/hacking-paypal-accounts-with-one-click/"
 cited_by:
   - "2014.md:10"
@@ -35,7 +37,7 @@ publisher_english: ""
 raw_sha256: 4dc446d7d2d68e9a2d9bfc23589cfd31173d36d4932f781b85c98f1670fdc715
 retrieved_from: "http://yasserali.com/hacking-paypal-accounts-with-one-click/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T19:02:36+00:00"
+retrieved_utc: "2026-08-11T19:37:43+00:00"
 slug: yasserali-com-yasser-ali-s-blog-hacking-paypal-accounts-one-click-patched
 snapshot: 20161101101544
 title_english: ""
@@ -45,12 +47,12 @@ translation_of: ""
 
 # Yasser Ali's Blog » Hacking PayPal Accounts with one click (Patched)
 
-**Yasser Ali's Blog » Hacking PayPal Accounts with one click (Patched)** - Author not stated, yasserali.com.
+**Yasser Ali's Blog » Hacking PayPal Accounts with one click (Patched)** - Yasser Ali, yasserali.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/http://yasserali.com/hacking-paypal-accounts-with-one-click/>
 - Current location: <http://yasserali.com/hacking-paypal-accounts-with-one-click/>
-- Preserved from: http://yasserali.com/hacking-paypal-accounts-with-one-click/ (stored) on 2026-08-10
+- Preserved from: http://yasserali.com/hacking-paypal-accounts-with-one-click/ (stored) on 2026-08-11
 - Capture timestamp: 20161101101544
 - Licence: unknown
 

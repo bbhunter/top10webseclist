@@ -5,22 +5,24 @@ resource: "http://www.jumperz.net/index.php?i=2&a=3&b=3"
 tags: [article, webseclist-reference, jumperz-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:58+00:00"
+  at: "2026-08-11T19:37:03+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.jumperz.net/index.php?i=2&a=3&b=3"
     title: J U M P E R Z . N E T - Anti-DNS Pinning ( DNS Rebinding ) + Socket in FLASH
+    author: Kanatoko
   - id: capture
     resource: "https://web.archive.org/web/20110727110721/http://www.jumperz.net/index.php?i=2&a=3&b=3"
 also_at: []
-authors: []
+authors:
+  - Kanatoko
 canonical_url: ""
 cited_by:
   - "2007.md:65"
 commit: ""
-content_sha256: 9c88d5a4c4c7e5fbea925ee484ab5b3833d2eb62282555d5575fab96caa6a536
+content_sha256: 48e0c36f30c694ee3719d0f28dc8d9e926358b015566e13b10c76eb5fd321e42
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: ecc08d98f3eade5acab4d4250a57c94217d01a88e5829efd3a403a4f806a7936
 retrieved_from: "http://www.jumperz.net/index.php?i=2&a=3&b=3"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:58+00:00"
+retrieved_utc: "2026-08-11T19:37:03+00:00"
 slug: jumperz-net-j-u-m-p-e-r-z-n-e-t-anti-dns-pinning-dns-rebinding-socket-flash
 snapshot: 20110727110721
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # J U M P E R Z . N E T - Anti-DNS Pinning ( DNS Rebinding ) + Socket in FLASH
 
-**J U M P E R Z . N E T - Anti-DNS Pinning ( DNS Rebinding ) + Socket in FLASH** - Author not stated, jumperz.net.
+**J U M P E R Z . N E T - Anti-DNS Pinning ( DNS Rebinding ) + Socket in FLASH** - Kanatoko, jumperz.net.
 
 - Published: date not stated
 - Original: <http://www.jumperz.net/index.php?i=2&a=3&b=3>
-- Preserved from: http://www.jumperz.net/index.php?i=2&a=3&b=3 (stored) on 2026-08-09
+- Preserved from: http://www.jumperz.net/index.php?i=2&a=3&b=3 (stored) on 2026-08-11
 - Capture timestamp: 20110727110721
 - Licence: unknown
 

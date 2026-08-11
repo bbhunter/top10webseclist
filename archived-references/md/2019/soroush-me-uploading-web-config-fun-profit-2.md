@@ -5,20 +5,22 @@ resource: "https://soroush.me/blog/uploading-web-config-for-fun-and-profit-2"
 tags: [article, webseclist-reference, en, soroush-me]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:58+00:00"
+  at: "2026-08-11T19:37:29+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://soroush.me/blog/uploading-web-config-for-fun-and-profit-2"
     title: Uploading web.config for Fun and Profit 2
+    author: Soroush Dalili
 also_at: []
-authors: []
+authors:
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2019.md:52"
 commit: ""
-content_sha256: 7614748512669660a1d8cf8c688090bbc454f4b3450669a54452e639e9245587
+content_sha256: ccd74b3fcbe61dee3685ecebd705d2ac9649e5a7541c98d80050e4f771fa0b67
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: soroush.me
 publisher_english: ""
 raw_sha256: 44168959d98eafd878024f597ba7455ce077ffa4bea1f8d6f1c521f6427b7304
 retrieved_from: "https://soroush.me/blog/uploading-web-config-for-fun-and-profit-2"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:58+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:29+00:00"
 slug: soroush-me-uploading-web-config-fun-profit-2
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Uploading web.config for Fun and Profit 2
 
-**Uploading web.config for Fun and Profit 2** - Author not stated, soroush.me.
+**Uploading web.config for Fun and Profit 2** - Soroush Dalili, soroush.me.
 
 - Published: date not stated
 - Original: <https://soroush.me/blog/uploading-web-config-for-fun-and-profit-2>
-- Preserved from: https://soroush.me/blog/uploading-web-config-for-fun-and-profit-2 (live) on 2026-08-09
+- Preserved from: https://soroush.me/blog/uploading-web-config-for-fun-and-profit-2 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

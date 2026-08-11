@@ -5,17 +5,21 @@ resource: "http://www.procheckup.com/Vulner_PR0703.php"
 tags: [article, webseclist-reference, procheckup-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:08+00:00"
+  at: "2026-08-11T19:37:08+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.procheckup.com/Vulner_PR0703.php"
     title: ProCheckUp - Security Vulnerabilities 2007
+    author: Richard Brain, Jan Fry, Adrian Pastor
   - id: capture
     resource: "https://web.archive.org/web/20080908085308/http://www.procheckup.com/Vulner_PR0703.php"
 also_at: []
-authors: []
+authors:
+  - Richard Brain
+  - Jan Fry
+  - Adrian Pastor
 canonical_url: ""
 cited_by:
   - "2007.md:22"
@@ -33,7 +37,7 @@ publisher_english: ""
 raw_sha256: d5f0a4f8d2a8cf9ad7442caf6f376341eb7cd6f7aacabac7fcfc0973182cf220
 retrieved_from: "http://www.procheckup.com/Vulner_PR0703.php"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:08+00:00"
+retrieved_utc: "2026-08-11T19:37:08+00:00"
 slug: procheckup-com-procheckup-security-vulnerabilities-2007
 snapshot: 20080908085308
 title_english: ""
@@ -43,11 +47,11 @@ translation_of: ""
 
 # ProCheckUp - Security Vulnerabilities 2007
 
-**ProCheckUp - Security Vulnerabilities 2007** - Author not stated, procheckup.com.
+**ProCheckUp - Security Vulnerabilities 2007** - Richard Brain, Jan Fry, Adrian Pastor, procheckup.com.
 
 - Published: date not stated
 - Original: <http://www.procheckup.com/Vulner_PR0703.php>
-- Preserved from: http://www.procheckup.com/Vulner_PR0703.php (stored) on 2026-08-09
+- Preserved from: http://www.procheckup.com/Vulner_PR0703.php (stored) on 2026-08-11
 - Capture timestamp: 20080908085308
 - Licence: unknown
 

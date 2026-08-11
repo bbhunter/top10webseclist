@@ -5,20 +5,22 @@ resource: "https://soroush.me/blog/cross-site-url-hijacking-by-using-error-objec
 tags: [article, webseclist-reference, en, soroush-me]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:43:52+00:00"
+  at: "2026-08-11T19:37:21+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://soroush.me/blog/cross-site-url-hijacking-by-using-error-object-in-mozilla-firefox"
     title: Cross Site URL Hijacking by using Error Object in Mozilla Firefox
+    author: Soroush Dalili
 also_at: []
-authors: []
+authors:
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2010.md:58"
 commit: ""
-content_sha256: f036394f55cd2dbf636a75d9e0595aefcde599fa91195021e6910cc5a7b696b2
+content_sha256: 50a25128bcb25f3ab5fcf1579839abad5add5d8682212d4c1ae7da6c8c3c57d4
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: soroush.me
 publisher_english: ""
 raw_sha256: fd3d55901cae94ed4072bb9a97f52d7e7a3ad2405c698451e579b0111e6987a4
 retrieved_from: "https://soroush.me/blog/cross-site-url-hijacking-by-using-error-object-in-mozilla-firefox"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:43:52+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:37:21+00:00"
 slug: soroush-me-cross-site-url-hijacking-using-error-object-mozilla-firefox
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Cross Site URL Hijacking by using Error Object in Mozilla Firefox
 
-**Cross Site URL Hijacking by using Error Object in Mozilla Firefox** - Author not stated, soroush.me.
+**Cross Site URL Hijacking by using Error Object in Mozilla Firefox** - Soroush Dalili, soroush.me.
 
 - Published: date not stated
 - Original: <https://soroush.me/blog/cross-site-url-hijacking-by-using-error-object-in-mozilla-firefox>
-- Preserved from: https://soroush.me/blog/cross-site-url-hijacking-by-using-error-object-in-mozilla-firefox (live) on 2026-08-09
+- Preserved from: https://soroush.me/blog/cross-site-url-hijacking-by-using-error-object-in-mozilla-firefox (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

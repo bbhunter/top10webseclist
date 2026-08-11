@@ -5,15 +5,17 @@ resource: "https://www.gnucitizen.org/blog/cross-site-file-upload-attacks/"
 tags: [article, webseclist-reference, en, gnucitizen-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:13:51+00:00"
+  at: "2026-08-11T19:36:47+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/cross-site-file-upload-attacks/"
     title: Cross-site File Upload Attacks
+    author: pdp
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: ""
 cited_by:
   - "2008.md:33"
@@ -30,8 +32,8 @@ publisher: gnucitizen.org
 publisher_english: ""
 raw_sha256: 69837de17a661e3697f9f128347ce3d9424cf054cf93138095758dbfc8cf684d
 retrieved_from: "https://www.gnucitizen.org/blog/cross-site-file-upload-attacks/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:13:51+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T19:36:47+00:00"
 slug: gnucitizen-org-cross-site-file-upload-attacks
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Cross-site File Upload Attacks
 
-**Cross-site File Upload Attacks** - Author not stated, gnucitizen.org.
+**Cross-site File Upload Attacks** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/cross-site-file-upload-attacks/>
-- Preserved from: https://www.gnucitizen.org/blog/cross-site-file-upload-attacks/ (live) on 2026-08-09
+- Preserved from: https://www.gnucitizen.org/blog/cross-site-file-upload-attacks/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -188,7 +188,14 @@ def classify(markdown, url="", content_gap="", override=None, complete=False, ti
     of those is a short record, not a stub, and calling it a stub put finished
     work on the list of things still to fetch.
     """
-    if override:
+    # AN ENTRY THAT SAYS NOTHING ABOUT KEEPING THE DOCUMENT IS NOT A JUDGEMENT.
+    # `outcome` defaults to "skip" below, so an override carrying only
+    # attribution - `authors`, or a `publisher` beside them - used to read as
+    # "keep no document for this". It wiped the grade of 214 research references
+    # in one run. Stating who wrote something must never decide whether to
+    # archive it, whether the statement was hand-written here or read from the
+    # document itself.
+    if override and (override.get("outcome") or override.get("class")):
         outcome = override.get("outcome") or "skip"
         klass = override.get("class") or DERIVATIVE
         return Decision(outcome, klass, override.get("reason") or "maintainer decision",
