@@ -5,18 +5,22 @@ resource: "https://www.cs.utexas.edu/~isil/ccs15.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:08:09+00:00"
+  at: "2026-08-11T17:34:40+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.cs.utexas.edu/~isil/ccs15.pdf"
     title: ccs15
+    author: Oswaldo Olivo, Isil Dillig, Calvin Lin
 also_at: []
-authors: []
+authors:
+  - Oswaldo Olivo
+  - Isil Dillig
+  - Calvin Lin
 canonical_url: ""
 cited_by:
-  - "2015.md:60"
+  - "2015.md:61"
 commit: ""
 content_sha256: 0da429cc55579922a0d96ffab61d4f852bd6dc288ba0a566d207bc2d255158e6
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 2470f16560a6c462f67752ea3f07b6430225ad16684cfc8280e051332de83bab
 retrieved_from: "https://www.cs.utexas.edu/~isil/ccs15.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:08:09+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:40+00:00"
 slug: ccs15
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # ccs15
 
-**ccs15** - Author not stated, Publisher not stated.
+**ccs15** - Oswaldo Olivo, Isil Dillig, Calvin Lin, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.cs.utexas.edu/~isil/ccs15.pdf>
-- Preserved from: https://www.cs.utexas.edu/~isil/ccs15.pdf (live) on 2026-08-10
+- Preserved from: https://www.cs.utexas.edu/~isil/ccs15.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

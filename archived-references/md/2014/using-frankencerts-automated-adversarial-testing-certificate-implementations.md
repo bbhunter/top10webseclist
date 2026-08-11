@@ -5,18 +5,24 @@ resource: "https://www.ieee-security.org/TC/SP2014/papers/UsingFrankencertsforAu
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:16+00:00"
+  at: "2026-08-11T17:42:11+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2014/papers/UsingFrankencertsforAutomatedAdversarialTestingofCertificateValidationinSSL_s_TLSImplementations.pdf"
     title: Using Frankencerts for Automated Adversarial Testing of Certificate Validation in SSL/TLS Implementations
+    author: Chad Brubaker, Suman Jana, Baishakhi Ray, Sarfraz Khurshid, Vitaly Shmatikov
 also_at: []
-authors: []
+authors:
+  - Chad Brubaker
+  - Suman Jana
+  - Baishakhi Ray
+  - Sarfraz Khurshid
+  - Vitaly Shmatikov
 canonical_url: ""
 cited_by:
-  - "2014.md:62"
+  - "2014.md:63"
 commit: ""
 content_sha256: 480c1c45f1c56d3d223127da3e4e7db1181113e65b4eaa85854916bb257102e8
 depth: full
@@ -30,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 923b08580469dd0367cdb7268566784da9d8b46d12b8cbe68260b15a50fb2d0c
 retrieved_from: "https://www.ieee-security.org/TC/SP2014/papers/UsingFrankencertsforAutomatedAdversarialTestingofCertificateValidationinSSL_s_TLSImplementations.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:16+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:42:11+00:00"
 slug: using-frankencerts-automated-adversarial-testing-certificate-implementations
 snapshot: ""
 title_english: ""
@@ -41,11 +47,11 @@ translation_of: ""
 
 # Using Frankencerts for Automated Adversarial Testing of Certificate Validation in SSL/TLS Implementations
 
-**Using Frankencerts for Automated Adversarial Testing of Certificate Validation in SSL/TLS Implementations** - Author not stated, Publisher not stated.
+**Using Frankencerts for Automated Adversarial Testing of Certificate Validation in SSL/TLS Implementations** - Chad Brubaker, Suman Jana, Baishakhi Ray, Sarfraz Khurshid, Vitaly Shmatikov, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2014/papers/UsingFrankencertsforAutomatedAdversarialTestingofCertificateValidationinSSL_s_TLSImplementations.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2014/papers/UsingFrankencertsforAutomatedAdversarialTestingofCertificateValidationinSSL_s_TLSImplementations.pdf (live) on 2026-08-10
+- Preserved from: https://www.ieee-security.org/TC/SP2014/papers/UsingFrankencertsforAutomatedAdversarialTestingofCertificateValidationinSSL_s_TLSImplementations.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

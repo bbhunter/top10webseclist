@@ -5,22 +5,24 @@ resource: "http://blog.48bits.com/2010/09/28/iis6-asp-file-upload-for-fun-and-pr
 tags: [article, webseclist-reference, blog-48bits-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:01+00:00"
-status: deprecated
-stale_after: 2027-08-09
+  at: "2026-08-11T17:34:08+00:00"
+status: stable
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://blog.48bits.com/2010/09/28/iis6-asp-file-upload-for-fun-and-profit/"
     title: 48Bits Blog » Blog Archive » IIS6/ASP & file upload for fun and profit
+    author: Juan Galiana
   - id: capture
     resource: "https://web.archive.org/web/20130829145418/http://blog.48bits.com/2010/09/28/iis6-asp-file-upload-for-fun-and-profit/"
 also_at: []
-authors: []
+authors:
+  - Juan Galiana
 canonical_url: ""
 cited_by:
   - "2010.md:60"
 commit: ""
-content_sha256: 68b924f1e5b753eac5b9b656c84fdabebbd98ca7aeaafa5aea6b25ddde3b3fca
+content_sha256: 5678c40ec8bf11a8b63217eae1c3847c505777185449d40ab843e0f7c36b4cbb
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 544208f567cfed7bd404c26cb7925a2a7a2c40603fa0131bbb86668488256ee2
 retrieved_from: "http://blog.48bits.com/2010/09/28/iis6-asp-file-upload-for-fun-and-profit/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:01+00:00"
+retrieved_utc: "2026-08-11T17:34:08+00:00"
 slug: blog-48bits-com-48bits-blog-blog-archive-iis6-asp-file-upload-fun-profit_translate
 snapshot: 20130829145418
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: blog-48bits-com-48bits-blog-blog-archive-iis6-asp-file-upload-fu
 
 # 48Bits Blog » Blog Archive » IIS6/ASP & file upload for fun and profit (English translation)
 
-**48Bits Blog » Blog Archive » IIS6/ASP & file upload for fun and profit** - Author not stated, blog.48bits.com.
+**48Bits Blog » Blog Archive » IIS6/ASP & file upload for fun and profit** - Juan Galiana, blog.48bits.com.
 
 - Published: date not stated
 - Original: <http://blog.48bits.com/2010/09/28/iis6-asp-file-upload-for-fun-and-profit/>
-- Preserved from: http://blog.48bits.com/2010/09/28/iis6-asp-file-upload-for-fun-and-profit/ (stored) on 2026-08-09
+- Preserved from: http://blog.48bits.com/2010/09/28/iis6-asp-file-upload-for-fun-and-profit/ (stored) on 2026-08-11
 - Capture timestamp: 20130829145418
 - Licence: unknown
 

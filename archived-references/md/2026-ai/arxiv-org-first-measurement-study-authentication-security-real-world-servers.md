@@ -5,15 +5,22 @@ resource: "https://arxiv.org/abs/2605.22333"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:02:35+00:00"
+  at: "2026-08-11T17:34:06+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://arxiv.org/abs/2605.22333"
     title: A First Measurement Study on Authentication Security in Real-World Remote MCP Servers
+    author: Huijun Zhou, Xiaohan Zhang, Haozhe Zhang, Haoyang Zhang, Mi Zhang, Min Yang
 also_at: []
-authors: []
+authors:
+  - Huijun Zhou
+  - Xiaohan Zhang
+  - Haozhe Zhang
+  - Haoyang Zhang
+  - Mi Zhang
+  - Min Yang
 canonical_url: ""
 cited_by:
   - "2026-ai.md:86"
@@ -30,8 +37,8 @@ publisher: arXiv.org
 publisher_english: ""
 raw_sha256: f1b2d3437a51522cc09d73e275a65a4392ae7bf260997ae58ca3814b9f59816f
 retrieved_from: "https://arxiv.org/abs/2605.22333"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:02:35+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:06+00:00"
 slug: arxiv-org-first-measurement-study-authentication-security-real-world-servers
 snapshot: ""
 title_english: ""
@@ -41,11 +48,11 @@ translation_of: ""
 
 # A First Measurement Study on Authentication Security in Real-World Remote MCP Servers
 
-**A First Measurement Study on Authentication Security in Real-World Remote MCP Servers** - Author not stated, arXiv.org.
+**A First Measurement Study on Authentication Security in Real-World Remote MCP Servers** - Huijun Zhou, Xiaohan Zhang, Haozhe Zhang, Haoyang Zhang, Mi Zhang, Min Yang, arXiv.org.
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/2605.22333>
-- Preserved from: https://arxiv.org/abs/2605.22333 (live) on 2026-08-10
+- Preserved from: https://arxiv.org/abs/2605.22333 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

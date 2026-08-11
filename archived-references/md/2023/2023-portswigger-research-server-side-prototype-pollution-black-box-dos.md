@@ -5,16 +5,18 @@ resource: "https://portswigger.net/research/server-side-prototype-pollution"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:54+00:00"
+  at: "2026-08-11T17:45:01+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/server-side-prototype-pollution"
     title: "Server-side prototype pollution: Black-box detection without the DoS"
+    author: Gareth Heyes
     last_modified: 2023-02-15
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: ""
 cited_by:
   - "2023.md:27"
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 64a47d09878e546384a979153cc7f8a297029c387d66ca3c83a6b7525e5f3567
 retrieved_from: "https://portswigger.net/research/server-side-prototype-pollution"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:54+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:01+00:00"
 slug: 2023-portswigger-research-server-side-prototype-pollution-black-box-dos
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Server-side prototype pollution: Black-box detection without the DoS
 
-**Server-side prototype pollution: Black-box detection without the DoS** - Author not stated, PortSwigger Research.
+**Server-side prototype pollution: Black-box detection without the DoS** - Gareth Heyes, PortSwigger Research.
 
 - Published: 2023-02-15
 - Original: <https://portswigger.net/research/server-side-prototype-pollution>
-- Preserved from: https://portswigger.net/research/server-side-prototype-pollution (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/server-side-prototype-pollution (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

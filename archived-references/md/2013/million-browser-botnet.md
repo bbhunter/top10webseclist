@@ -5,15 +5,18 @@ resource: "https://media.blackhat.com/us-13/us-13-Grossman-Million-Browser-Botne
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T13:06:26+00:00"
+  at: "2026-08-11T17:42:21+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://media.blackhat.com/us-13/us-13-Grossman-Million-Browser-Botnet.pdf"
     title: Million Browser Botnet
+    author: Jeremiah Grossman, Matt Johansen
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
+  - Matt Johansen
 canonical_url: ""
 cited_by:
   - "2013.md:11"
@@ -31,7 +34,7 @@ publisher_english: ""
 raw_sha256: 1b55f1e7d23751484f5b52acac0bd92a53c15f8599b5a9366c891f7a5fe569a2
 retrieved_from: "https://media.blackhat.com/us-13/us-13-Grossman-Million-Browser-Botnet.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T13:06:26+00:00"
+retrieved_utc: "2026-08-11T17:42:21+00:00"
 slug: million-browser-botnet
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # Million Browser Botnet
 
-**Million Browser Botnet** - Author not stated, Publisher not stated.
+**Million Browser Botnet** - Jeremiah Grossman, Matt Johansen, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://media.blackhat.com/us-13/us-13-Grossman-Million-Browser-Botnet.pdf>
-- Preserved from: https://media.blackhat.com/us-13/us-13-Grossman-Million-Browser-Botnet.pdf (stored) on 2026-08-10
+- Preserved from: https://media.blackhat.com/us-13/us-13-Grossman-Million-Browser-Botnet.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

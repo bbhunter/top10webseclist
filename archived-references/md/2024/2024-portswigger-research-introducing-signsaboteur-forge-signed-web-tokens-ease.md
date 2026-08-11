@@ -5,19 +5,21 @@ resource: "https://portswigger.net/research/introducing-signsaboteur-forge-signe
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:46+00:00"
+  at: "2026-08-11T17:44:44+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/introducing-signsaboteur-forge-signed-web-tokens-with-ease"
     title: "Introducing SignSaboteur: forge signed web tokens with ease"
+    author: Zakhar Fedotkin
     last_modified: 2024-05-22
 also_at: []
-authors: []
+authors:
+  - Zakhar Fedotkin
 canonical_url: ""
 cited_by:
-  - "2024.md:155"
+  - "2024.md:156"
 commit: ""
 content_sha256: 4b5dff9968fe858d6e6b7332b5743dd371c5657df27cef471a4b255f7076b822
 depth: full
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 6190b465946891969f719bd38244795d5c4e7594ffe38e467cb110c30d9002df
 retrieved_from: "https://portswigger.net/research/introducing-signsaboteur-forge-signed-web-tokens-with-ease"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:46+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:44+00:00"
 slug: 2024-portswigger-research-introducing-signsaboteur-forge-signed-web-tokens-ease
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Introducing SignSaboteur: forge signed web tokens with ease
 
-**Introducing SignSaboteur: forge signed web tokens with ease** - Author not stated, PortSwigger Research.
+**Introducing SignSaboteur: forge signed web tokens with ease** - Zakhar Fedotkin, PortSwigger Research.
 
 - Published: 2024-05-22
 - Original: <https://portswigger.net/research/introducing-signsaboteur-forge-signed-web-tokens-with-ease>
-- Preserved from: https://portswigger.net/research/introducing-signsaboteur-forge-signed-web-tokens-with-ease (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/introducing-signsaboteur-forge-signed-web-tokens-with-ease (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

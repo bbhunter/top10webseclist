@@ -5,18 +5,24 @@ resource: "https://www.cs.uic.edu/~venkat/research/papers/NoTamper-ccs2010.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:51:23+00:00"
+  at: "2026-08-11T17:34:29+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.cs.uic.edu/~venkat/research/papers/NoTamper-ccs2010.pdf"
     title: "NoTamper: Automatic Blackbox Detection of Parameter Tampering Opportunities in Web Applications"
+    author: Prithvi Bisht, Timothy Hinrichs, Nazari Skrupsky, Radoslaw Bobrowicz, V.N. Venkatakrishnan
 also_at: []
-authors: []
+authors:
+  - Prithvi Bisht
+  - Timothy Hinrichs
+  - Nazari Skrupsky
+  - Radoslaw Bobrowicz
+  - V.N. Venkatakrishnan
 canonical_url: ""
 cited_by:
-  - "2010.md:96"
+  - "2010.md:92"
 commit: ""
 content_sha256: d476004b551a42115a22ef07adaed990394c001ec8137056cf69e41096399bf2
 depth: full
@@ -30,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 19a9fa397c22db040679bff66e851cbb0c01bb4b1c07e93dc979cecb2764aebb
 retrieved_from: "https://www.cs.uic.edu/~venkat/research/papers/NoTamper-ccs2010.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:51:23+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:29+00:00"
 slug: notamper-automatic-blackbox-detection-parameter-tampering-applications
 snapshot: ""
 title_english: ""
@@ -41,11 +47,11 @@ translation_of: ""
 
 # NoTamper: Automatic Blackbox Detection of Parameter Tampering Opportunities in Web Applications
 
-**NoTamper: Automatic Blackbox Detection of Parameter Tampering Opportunities in Web Applications** - Author not stated, Publisher not stated.
+**NoTamper: Automatic Blackbox Detection of Parameter Tampering Opportunities in Web Applications** - Prithvi Bisht, Timothy Hinrichs, Nazari Skrupsky, Radoslaw Bobrowicz, V.N. Venkatakrishnan, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.cs.uic.edu/~venkat/research/papers/NoTamper-ccs2010.pdf>
-- Preserved from: https://www.cs.uic.edu/~venkat/research/papers/NoTamper-ccs2010.pdf (live) on 2026-08-08
+- Preserved from: https://www.cs.uic.edu/~venkat/research/papers/NoTamper-ccs2010.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -278,6 +284,7 @@ dir
 var
 textRE
 = /([a-zA-Z])
+*
 /;
 var
 bReturn
@@ -379,7 +386,11 @@ I
 I
 = 
 
+
+
+
     
+
 
 Conceptually, both the client and the server perform two tasks:
 checking that user-supplied inputs satisfy certain constraints, and
@@ -686,6 +697,7 @@ copies
 directions
 2
 [a-zA-Z]
+*
 payment
 2
 (1234-5678-9012-3456 | 7890-1234-5678-9012)
@@ -1140,6 +1152,7 @@ string constraints. It includes the usual boolean connectives: con-
 junction (
 ^
 ), disjunction (
+_
 ), and negation (
 :
 ). The atomic con-
@@ -1210,6 +1223,7 @@ disj
 <
 sent
 >
+_
 <
 sent
 >
@@ -1503,6 +1517,7 @@ bining formulas for each path that returned
 true
 with disjunction
 (
+_
 ).
 For the running example one control path succeeds in returning
 true
@@ -1512,6 +1527,7 @@ true
 (
 copies <
 0
+_
 copies
 2
 <
@@ -1519,6 +1535,7 @@ copies
 directions
 2
 [a-zA-Z]
+*
 The above is then combined with constraint on variable
 payment
 mentioned before to generate
@@ -1726,6 +1743,7 @@ reg
 >Table 3: The reduced constraint language:
 ^
 and
+_
 over the
 above atoms.
 
@@ -1752,6 +1770,7 @@ is the formula
 (
 copies >
 0
+_
 copies
 = 0)
 ^
@@ -1759,6 +1778,7 @@ copies
 directions
 2
 [a-zA-Z]
+*
 )
 :
 N
@@ -1772,6 +1792,7 @@ copies >
 directions
 2
 [a-zA-Z]
+*
 and another for
 copies
 = 0
@@ -1779,6 +1800,7 @@ copies
 directions
 2
 [a-zA-Z]
+*
 .
 If the type of
 copies
@@ -1788,6 +1810,7 @@ and the type of
 directions
 is
 [a-zA-Z0-9]
+*
 , N
 O
 T
@@ -1800,10 +1823,12 @@ and
 directions
 2
 [a-zA-Z0-9]
+*
 . If the variable
 name
 is required and has type
 [a-zA-Z]
+*
 , N
 O
 T
@@ -1813,6 +1838,7 @@ straint
 name
 2
 [a-zA-Z]
+*
 . If
 
 is nonempty, N
@@ -1881,6 +1907,7 @@ In the example above, the disjunctive normal form of
 f
 client
 produces a formula with two disjuncts.
+_
 :
 (
 copies >
@@ -1894,6 +1921,7 @@ copies
 directions
 2
 [a-zA-Z]
+*
 )
 Suppose that both
 copies
@@ -1921,6 +1949,7 @@ es the original formula, i.e., that satises
 directions
 2
 [a-zA-Z]
+*
 .
 Likewise, after solving the second disjunct producing a value for
 directions

@@ -5,20 +5,25 @@ resource: "https://ieeexplore.ieee.org/document/8418635/"
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:51+00:00"
+  at: "2026-08-11T17:35:34+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://ieeexplore.ieee.org/document/8418635/"
     title: Study and Mitigation of Origin Stripping Vulnerabilities in Hybrid-postMessage Enabled Mobile Applications
+    author: Guangliang Yang, Jeff Huang, Guofei Gu, Abner Mendoza
 also_at:
   - "https://par.nsf.gov/servlets/purl/10065081/1000"
   - "https://success.cse.tamu.edu/osv-free/"
-authors: []
+authors:
+  - Guangliang Yang
+  - Jeff Huang
+  - Guofei Gu
+  - Abner Mendoza
 canonical_url: ""
 cited_by:
-  - "2018.md:71"
+  - "2018.md:72"
 commit: ""
 content_sha256: d8bfa67d109993fbb17bef8ba0da2db159abce23dd78d8b8acf3c38ce078ce8e
 depth: full
@@ -32,8 +37,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: bddb2f02dbfe76bae26418421b983ff1744e2b185cfa8264bb9d549c1d65166d
 retrieved_from: "https://par.nsf.gov/servlets/purl/10065081/1000"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:51+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:34+00:00"
 slug: study-mitigation-origin-stripping-vulnerabilities-hybrid-applications
 snapshot: ""
 title_english: ""
@@ -43,13 +48,13 @@ translation_of: ""
 
 # Study and Mitigation of Origin Stripping Vulnerabilities in Hybrid-postMessage Enabled Mobile Applications
 
-**Study and Mitigation of Origin Stripping Vulnerabilities in Hybrid-postMessage Enabled Mobile Applications** - Author not stated, Publisher not stated.
+**Study and Mitigation of Origin Stripping Vulnerabilities in Hybrid-postMessage Enabled Mobile Applications** - Guangliang Yang, Jeff Huang, Guofei Gu, Abner Mendoza, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://ieeexplore.ieee.org/document/8418635/>
 - Also published at: <https://par.nsf.gov/servlets/purl/10065081/1000>
 - Also published at: <https://success.cse.tamu.edu/osv-free/>
-- Preserved from: https://par.nsf.gov/servlets/purl/10065081/1000 (live) on 2026-08-10
+- Preserved from: https://par.nsf.gov/servlets/purl/10065081/1000 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

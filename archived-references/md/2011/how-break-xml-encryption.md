@@ -5,20 +5,23 @@ resource: "https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/HowTo
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:09:15+00:00"
+  at: "2026-08-11T17:42:54+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/HowToBreakXMLenc.pdf"
     title: How to Break XML Encryption
+    author: Tibor Jager, Juraj Somorovsky
   - id: capture
     resource: "https://web.archive.org/web/20111027015708/https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/HowToBreakXMLenc.pdf"
 also_at: []
-authors: []
+authors:
+  - Tibor Jager
+  - Juraj Somorovsky
 canonical_url: ""
 cited_by:
-  - "2011.md:77"
+  - "2011.md:73"
 commit: ""
 content_sha256: cfe09463182f1d702183730f4bdef7af36ed05198caf9e9769a479b0b5f076bb
 depth: full
@@ -33,7 +36,7 @@ publisher_english: ""
 raw_sha256: 01adb5d2077277add9c745558efea385afbff6bcf50ef5d61e13b1425d5304ed
 retrieved_from: "https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/HowToBreakXMLenc.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:09:15+00:00"
+retrieved_utc: "2026-08-11T17:42:54+00:00"
 slug: how-break-xml-encryption
 snapshot: 20111027015708
 title_english: ""
@@ -43,11 +46,11 @@ translation_of: ""
 
 # How to Break XML Encryption
 
-**How to Break XML Encryption** - Author not stated, Publisher not stated.
+**How to Break XML Encryption** - Tibor Jager, Juraj Somorovsky, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/HowToBreakXMLenc.pdf>
-- Preserved from: https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/HowToBreakXMLenc.pdf (stored) on 2026-08-09
+- Preserved from: https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/HowToBreakXMLenc.pdf (stored) on 2026-08-11
 - Capture timestamp: 20111027015708
 - Licence: unknown
 

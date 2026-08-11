@@ -5,15 +5,17 @@ resource: "http://www.whitehatsec.com/downloads/WHXSSThreats.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:43+00:00"
+  at: "2026-08-11T17:46:46+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.whitehatsec.com/downloads/WHXSSThreats.pdf"
     title: Web Worms (AdultSpace, MySpace, Xanga)
+    author: Jeremiah Grossman
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: ""
 cited_by:
   - "2006.md:13"
@@ -31,7 +33,7 @@ publisher_english: ""
 raw_sha256: 9ab96035b6827b62215f1658450535ad70367bec75572f13fbbe56380457b6f7
 retrieved_from: "http://www.whitehatsec.com/downloads/WHXSSThreats.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:43+00:00"
+retrieved_utc: "2026-08-11T17:46:46+00:00"
 slug: web-worms-adultspace-myspace-xanga
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Web Worms (AdultSpace, MySpace, Xanga)
 
-**Web Worms (AdultSpace, MySpace, Xanga)** - Author not stated, Publisher not stated.
+**Web Worms (AdultSpace, MySpace, Xanga)** - Jeremiah Grossman, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://www.whitehatsec.com/downloads/WHXSSThreats.pdf>
-- Preserved from: http://www.whitehatsec.com/downloads/WHXSSThreats.pdf (stored) on 2026-08-09
+- Preserved from: http://www.whitehatsec.com/downloads/WHXSSThreats.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

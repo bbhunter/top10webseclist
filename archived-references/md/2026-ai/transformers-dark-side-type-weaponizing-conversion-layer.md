@@ -5,15 +5,17 @@ resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transfor
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:27:34+00:00"
+  at: "2026-08-11T17:41:29+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf"
     title: "Transformers: Dark Side of the Type — Weaponizing the Conversion Layer"
+    author: Oleksandr Mirosh
 also_at: []
-authors: []
+authors:
+  - Oleksandr Mirosh
 canonical_url: ""
 cited_by:
   - "2026-ai.md:49"
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: be2c786efcd2f4efa95c498537de5de026ecb3cc5e934ff131418b5aecc802a2
 retrieved_from: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:27:34+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:29+00:00"
 slug: transformers-dark-side-type-weaponizing-conversion-layer
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Transformers: Dark Side of the Type — Weaponizing the Conversion Layer
 
-**Transformers: Dark Side of the Type — Weaponizing the Conversion Layer** - Author not stated, Publisher not stated.
+**Transformers: Dark Side of the Type — Weaponizing the Conversion Layer** - Oleksandr Mirosh, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf>
-- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf (live) on 2026-08-10
+- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

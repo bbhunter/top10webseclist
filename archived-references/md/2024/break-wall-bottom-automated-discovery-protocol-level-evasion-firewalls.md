@@ -5,15 +5,23 @@ resource: "https://www.jianjunchen.com/p/wafmanis.sp24.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:30:22+00:00"
+  at: "2026-08-11T17:35:45+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.jianjunchen.com/p/wafmanis.sp24.pdf"
     title: "Break the Wall from Bottom: Automated Discovery of Protocol-Level Evasion Vulnerabilities in Web Application Firewalls"
+    author: Qi Wang, Jianjun Chen, Zheyu Jiang, Run Guo, Ximeng Liu, Chao Zhang, Haixin Duan
 also_at: []
-authors: []
+authors:
+  - Qi Wang
+  - Jianjun Chen
+  - Zheyu Jiang
+  - Run Guo
+  - Ximeng Liu
+  - Chao Zhang
+  - Haixin Duan
 canonical_url: ""
 cited_by:
   - "2024.md:53"
@@ -30,8 +38,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 377dfc33d4859b986716f22bf5396e6ca36b01fded8ac7bf0247ed8361cdece6
 retrieved_from: "https://www.jianjunchen.com/p/wafmanis.sp24.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:30:22+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:45+00:00"
 slug: break-wall-bottom-automated-discovery-protocol-level-evasion-firewalls
 snapshot: ""
 title_english: ""
@@ -41,11 +49,11 @@ translation_of: ""
 
 # Break the Wall from Bottom: Automated Discovery of Protocol-Level Evasion Vulnerabilities in Web Application Firewalls
 
-**Break the Wall from Bottom: Automated Discovery of Protocol-Level Evasion Vulnerabilities in Web Application Firewalls** - Author not stated, Publisher not stated.
+**Break the Wall from Bottom: Automated Discovery of Protocol-Level Evasion Vulnerabilities in Web Application Firewalls** - Qi Wang, Jianjun Chen, Zheyu Jiang, Run Guo, Ximeng Liu, Chao Zhang, Haixin Duan, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.jianjunchen.com/p/wafmanis.sp24.pdf>
-- Preserved from: https://www.jianjunchen.com/p/wafmanis.sp24.pdf (live) on 2026-08-10
+- Preserved from: https://www.jianjunchen.com/p/wafmanis.sp24.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

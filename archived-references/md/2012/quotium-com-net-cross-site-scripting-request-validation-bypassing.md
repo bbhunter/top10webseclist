@@ -5,24 +5,26 @@ resource: "https://web.archive.org/web/20170903113359/http://www.quotium.com/res
 tags: [advisory, webseclist-reference, quotium-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:10+00:00"
+  at: "2026-08-11T17:36:49+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://www.quotium.com/research/advisories/XSS-NetRequestValidation.php"
     title: .Net Cross Site Scripting - Request Validation Bypassing
+    author: Zamir Paltiel
   - id: canonical
     resource: "http://www.quotium.com/research/advisories/XSS-NetRequestValidation.php"
   - id: capture
     resource: "https://web.archive.org/web/20121002072814/http://www.quotium.com/research/advisories/XSS-NetRequestValidation.php"
 also_at: []
-authors: []
+authors:
+  - Zamir Paltiel
 canonical_url: "http://www.quotium.com/research/advisories/XSS-NetRequestValidation.php"
 cited_by:
   - "2012.md:31"
 commit: ""
-content_sha256: 07c8076b0201d0c7876fbc73565dd7070e98b37fff11440ae3806fd696fcf1a7
+content_sha256: 595e7196d4dd2eda1b4dca007dcd3982f8d24d6db0b61f2a8ac666be3704c8ce
 depth: full
 depth_reason: default
 kind: advisory
@@ -35,7 +37,7 @@ publisher_english: ""
 raw_sha256: 01eab3575ece0b907143c3b96c1edba653dd870dfe820d826443b437eaf51d66
 retrieved_from: "http://www.quotium.com/research/advisories/XSS-NetRequestValidation.php"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:10+00:00"
+retrieved_utc: "2026-08-11T17:36:49+00:00"
 slug: quotium-com-net-cross-site-scripting-request-validation-bypassing
 snapshot: 20121002072814
 title_english: ""
@@ -45,12 +47,12 @@ translation_of: ""
 
 # .Net Cross Site Scripting - Request Validation Bypassing
 
-**.Net Cross Site Scripting - Request Validation Bypassing** - Author not stated, quotium.com.
+**.Net Cross Site Scripting - Request Validation Bypassing** - Zamir Paltiel, quotium.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://www.quotium.com/research/advisories/XSS-NetRequestValidation.php>
 - Current location: <http://www.quotium.com/research/advisories/XSS-NetRequestValidation.php>
-- Preserved from: http://www.quotium.com/research/advisories/XSS-NetRequestValidation.php (stored) on 2026-08-09
+- Preserved from: http://www.quotium.com/research/advisories/XSS-NetRequestValidation.php (stored) on 2026-08-11
 - Capture timestamp: 20121002072814
 - Licence: unknown
 

@@ -5,17 +5,19 @@ resource: "https://blog.whitehatsec.com/how-to-own-every-user-on-a-social-networ
 tags: [article, webseclist-reference, en-US, blog-whitehatsec-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:09+00:00"
+  at: "2026-08-11T17:39:52+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://blog.whitehatsec.com/how-to-own-every-user-on-a-social-networking-site/"
     title: How To Own Every User On A Social Networking Site
+    author: Matt Johansen
   - id: capture
     resource: "https://web.archive.org/web/20150528150919/https://blog.whitehatsec.com/how-to-own-every-user-on-a-social-networking-site/"
 also_at: []
-authors: []
+authors:
+  - Matt Johansen
 canonical_url: ""
 cited_by:
   - "2011.md:51"
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 8c408e53705bcaef45c42d3311327d81a7bfc6f5929d2baafbd47aa469d76e12
 retrieved_from: "https://blog.whitehatsec.com/how-to-own-every-user-on-a-social-networking-site/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:09+00:00"
+retrieved_utc: "2026-08-11T17:39:52+00:00"
 slug: blog-whitehatsec-com-how-own-every-user-social-networking-site
 snapshot: 20150528150919
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # How To Own Every User On A Social Networking Site
 
-**How To Own Every User On A Social Networking Site** - Author not stated, blog.whitehatsec.com.
+**How To Own Every User On A Social Networking Site** - Matt Johansen, blog.whitehatsec.com.
 
 - Published: date not stated
 - Original: <https://blog.whitehatsec.com/how-to-own-every-user-on-a-social-networking-site/>
-- Preserved from: https://blog.whitehatsec.com/how-to-own-every-user-on-a-social-networking-site/ (stored) on 2026-08-09
+- Preserved from: https://blog.whitehatsec.com/how-to-own-every-user-on-a-social-networking-site/ (stored) on 2026-08-11
 - Capture timestamp: 20150528150919
 - Licence: unknown
 

@@ -5,18 +5,20 @@ resource: "https://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:31:27+00:00"
+  at: "2026-08-11T17:42:23+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server_Side_WP.pdf"
     title: "Server-Side JavaScript Injection: Attacking NoSQL and Node.js"
+    author: Bryan Sullivan
 also_at: []
-authors: []
+authors:
+  - Bryan Sullivan
 canonical_url: ""
 cited_by:
-  - "2011.md:66"
+  - "2011.md:67"
 commit: ""
 content_sha256: 230ce99cbaecae3f8060bcaaea356104297bb5c6aeba59570fdab1eb1dbc5b9b
 depth: full
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: abc16486d92f71091f0a20b34f5b519df1078f212868dee83e2b135c52fe7b77
 retrieved_from: "https://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server_Side_WP.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:31:27+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:42:23+00:00"
 slug: server-side-javascript-injection-attacking-nosql-node-js
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Server-Side JavaScript Injection: Attacking NoSQL and Node.js
 
-**Server-Side JavaScript Injection: Attacking NoSQL and Node.js** - Author not stated, Publisher not stated.
+**Server-Side JavaScript Injection: Attacking NoSQL and Node.js** - Bryan Sullivan, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server_Side_WP.pdf>
-- Preserved from: https://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server_Side_WP.pdf (live) on 2026-08-10
+- Preserved from: https://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server_Side_WP.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

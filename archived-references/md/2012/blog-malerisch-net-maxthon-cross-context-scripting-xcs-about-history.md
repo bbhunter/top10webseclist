@@ -5,25 +5,27 @@ resource: "https://web.archive.org/web/20170903113359/http://blog.malerisch.net/
 tags: [article, webseclist-reference, blog-malerisch-net]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:39:37+00:00"
+  at: "2026-08-11T17:34:09+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html"
     title: "malerisch.net: Maxthon - Cross Context Scripting (XCS) - about:history"
+    author: Roberto Suggi Liverani
   - id: canonical
-    resource: "https://web.archive.org/web/20160429152513/http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html"
+    resource: "http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html"
   - id: capture
-    resource: "https://web.archive.org/web/20170903113359/http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html"
+    resource: "https://web.archive.org/web/20130522055255/http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html"
 also_at: []
-authors: []
-canonical_url: "https://web.archive.org/web/20160429152513/http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html"
+authors:
+  - Roberto Suggi Liverani
+canonical_url: "http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html"
 cited_by:
   - "2012.md:62"
   - "2012.md:62"
 commit: ""
-content_sha256: be3e3aa64053337eea5a586eceddf7053db44090e5177e77d1d1cc27660798a1
+content_sha256: 19bac56a789c6651e71e7b4d09b7a901625c14874f2237d1c42086129319465c
 depth: full
 depth_reason: default
 kind: article
@@ -33,12 +35,12 @@ original_url: "https://web.archive.org/web/20170903113359/http://blog.malerisch.
 published: ""
 publisher: blog.malerisch.net
 publisher_english: ""
-raw_sha256: 35afe20d5b8b88e02ab3c03175c0adee43763ba3d5dce42097ce2a62e3775761
-retrieved_from: "https://web.archive.org/web/20160429152513/http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:39:37+00:00"
+raw_sha256: a8f4aaa6ead5c12946e14dd4380993201e1913393c416c050210b3591ce7e0a6
+retrieved_from: "http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:09+00:00"
 slug: blog-malerisch-net-maxthon-cross-context-scripting-xcs-about-history
-snapshot: 20170903113359
+snapshot: 20130522055255
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -46,13 +48,13 @@ translation_of: ""
 
 # malerisch.net: Maxthon - Cross Context Scripting (XCS) - about:history
 
-**malerisch.net: Maxthon - Cross Context Scripting (XCS) - about:history** - Author not stated, blog.malerisch.net.
+**malerisch.net: Maxthon - Cross Context Scripting (XCS) - about:history** - Roberto Suggi Liverani, blog.malerisch.net.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html>
-- Current location: <https://web.archive.org/web/20160429152513/http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html>
-- Preserved from: https://web.archive.org/web/20160429152513/http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html (live) on 2026-08-10
-- Capture timestamp: 20170903113359
+- Current location: <http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html>
+- Preserved from: http://blog.malerisch.net/2012/12/maxthon-cross-context-scripting-xcs-about-history-rce.html (stored) on 2026-08-11
+- Capture timestamp: 20130522055255
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -65,7 +67,7 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-[![](https://web.archive.org/web/20160429152513im_/http://4.bp.blogspot.com/-TdQCwTlwTW8/UKgQwnGi_cI/AAAAAAAAAFo/6-b4Ts3XRBo/s200/maxthon-browser-1.png)](https://web.archive.org/web/20160429152513/http://4.bp.blogspot.com/-TdQCwTlwTW8/UKgQwnGi_cI/AAAAAAAAAFo/6-b4Ts3XRBo/s1600/maxthon-browser-1.png)
+[![](http://4.bp.blogspot.com/-TdQCwTlwTW8/UKgQwnGi_cI/AAAAAAAAAFo/6-b4Ts3XRBo/s200/maxthon-browser-1.png)](http://4.bp.blogspot.com/-TdQCwTlwTW8/UKgQwnGi_cI/AAAAAAAAAFo/6-b4Ts3XRBo/s1600/maxthon-browser-1.png)
 
  **Details**
 
@@ -73,12 +75,12 @@ page going offline. To read the original, follow the link above.
  Date: December, 5 2012 – CVE (TBA)
  Affected Software: Maxthon 3.4.5.2000 and previous versions
  Status: Unpatched (at the time of publishing)
- Researcher: Roberto Suggi Liverani - [@malerisch](https://web.archive.org/web/20160429152513/https://twitter.com/malerisch)
- PDF version: [Maxthon_multiple_vulnerabilities_advisory.pdf](https://web.archive.org/web/20160429152513/http://www.security-assessment.com/files/documents/advisory/Maxthon_multiple_vulnerabilities_advisory.pdf)
+ Researcher: Roberto Suggi Liverani - [@malerisch](https://twitter.com/malerisch)
+ PDF version: [Maxthon_multiple_vulnerabilities_advisory.pdf](http://www.security-assessment.com/files/documents/advisory/Maxthon_multiple_vulnerabilities_advisory.pdf)
 
  **Cross Context Scripting**
 
- [Cross Context Scripting](https://web.archive.org/web/20160429152513/http://www.gnucitizen.org/blog/cross-context-scripting-with-sage/) (XCS) is a particular code injection attack vector where the injection occurs from an untrusted zone (e.g. Internet) into a privileged browser zone. In this case, it is possible to inject arbitrary JavaScript/HTML code from an untrusted page into Maxthon browser privileged zone - mx://res/*.
+ [Cross Context Scripting](http://www.gnucitizen.org/blog/cross-context-scripting-with-sage/) (XCS) is a particular code injection attack vector where the injection occurs from an untrusted zone (e.g. Internet) into a privileged browser zone. In this case, it is possible to inject arbitrary JavaScript/HTML code from an untrusted page into Maxthon browser privileged zone - mx://res/*.
 
  **Description**
 
@@ -88,11 +90,11 @@ page going offline. To read the original, follow the link above.
 
  Injected payload is rendered in both the <img> and <a> elements of a history item, as shown below:
 
- [![](https://web.archive.org/web/20160429152513im_/http://2.bp.blogspot.com/-37BsUepGX3M/UKgQVl3GPNI/AAAAAAAAAFg/SdShlAysWfU/s1600/maxthon_xcs_inj1.png)](https://web.archive.org/web/20160429152513/http://2.bp.blogspot.com/-37BsUepGX3M/UKgQVl3GPNI/AAAAAAAAAFg/SdShlAysWfU/s1600/maxthon_xcs_inj1.png)
+ [![](http://2.bp.blogspot.com/-37BsUepGX3M/UKgQVl3GPNI/AAAAAAAAAFg/SdShlAysWfU/s1600/maxthon_xcs_inj1.png)](http://2.bp.blogspot.com/-37BsUepGX3M/UKgQVl3GPNI/AAAAAAAAAFg/SdShlAysWfU/s1600/maxthon_xcs_inj1.png)
 
  Most recently, only a single injection point is possible after some silent fixes from Maxthon. The about:history is mapped to mx://res/history/index.htm, as shown in the screen shot below:
 
- [![](https://web.archive.org/web/20160429152513im_/http://4.bp.blogspot.com/-xZsZZzuOVjw/UKkogqm3hgI/AAAAAAAAAF4/iqki0ehTNDc/s320/xcs_abouthistory.png)](https://web.archive.org/web/20160429152513/http://4.bp.blogspot.com/-xZsZZzuOVjw/UKkogqm3hgI/AAAAAAAAAF4/iqki0ehTNDc/s1600/xcs_abouthistory.png)
+ [![](http://4.bp.blogspot.com/-xZsZZzuOVjw/UKkogqm3hgI/AAAAAAAAAF4/iqki0ehTNDc/s320/xcs_abouthistory.png)](http://4.bp.blogspot.com/-xZsZZzuOVjw/UKkogqm3hgI/AAAAAAAAAF4/iqki0ehTNDc/s1600/xcs_abouthistory.png)
 
  **Exploitation**
 
@@ -116,7 +118,7 @@ page going offline. To read the original, follow the link above.
 
  **Metasploit module**
 
- Following disclosure of the bugs during [HITB2012AMS conference](https://web.archive.org/web/20160429152513/http://www.security-assessment.com/files/documents/presentations/window_shopping_browser_bug_hunting_in_2012_roberto_suggi_liverani_scott_bell.pdf), it was observed that the maxthon.program object was silently removed by Maxthon in recent versions. This only allows a malicious user to read and write files on the system.
+ Following disclosure of the bugs during [HITB2012AMS conference](http://www.security-assessment.com/files/documents/presentations/window_shopping_browser_bug_hunting_in_2012_roberto_suggi_liverani_scott_bell.pdf), it was observed that the maxthon.program object was silently removed by Maxthon in recent versions. This only allows a malicious user to read and write files on the system.
 
  Code execution without incurring in a warning or user prompt can still be achieved by overwriting an executable which can be called directly by the browser. A "dirty" way is to overwrite j2plauncher.exe assuming the victim has either JRE/JDK installed on the machine. The second step would be to force Maxthon to load java.exe (e.g. create an iframe that points to a page which loads a Java Applet). This approach was successfully tested on Windows 7.
 
@@ -124,7 +126,7 @@ page going offline. To read the original, follow the link above.
 
  The PoC Metasploit module includes the "dirty" Java overwrite approach described above.
 
- [https://github.com/malerisch/metasploit-framework/blob/maxthon3/modules/exploits/windows/browser/maxthon_history_xcs.rb](https://web.archive.org/web/20160429152513/https://github.com/malerisch/metasploit-framework/blob/maxthon3/modules/exploits/windows/browser/maxthon_history_xcs.rb)
+ [https://github.com/malerisch/metasploit-framework/blob/maxthon3/modules/exploits/windows/browser/maxthon_history_xcs.rb](https://github.com/malerisch/metasploit-framework/blob/maxthon3/modules/exploits/windows/browser/maxthon_history_xcs.rb)
 
  **Video**
 
@@ -137,9 +139,9 @@ page going offline. To read the original, follow the link above.
  13/02/2012 - Bug reported to multiple contacts
  21/02/2012 - Reception of report confirmed but no further reply
  21/02/2012 - Chased vendors - no reply
- 12/05/2012 - HITB2012AMS - bug disclosed during [presentation](https://web.archive.org/web/20160429152513/http://www.security-assessment.com/files/documents/presentations/window_shopping_browser_bug_hunting_in_2012_roberto_suggi_liverani_scott_bell.pdf)
+ 12/05/2012 - HITB2012AMS - bug disclosed during [presentation](http://www.security-assessment.com/files/documents/presentations/window_shopping_browser_bug_hunting_in_2012_roberto_suggi_liverani_scott_bell.pdf)
  02/11/2012 - 25 new releases following the report – 2 bugs silently fixed
- 14/11/2012 - HackPra - bug and exploit module [presented](https://web.archive.org/web/20160429152513/http://t.co/jJ8cXF9n)
+ 14/11/2012 - HackPra - bug and exploit module [presented](http://t.co/jJ8cXF9n)
 
  **Solution**
 

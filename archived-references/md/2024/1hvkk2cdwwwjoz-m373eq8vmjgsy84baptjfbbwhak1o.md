@@ -5,20 +5,23 @@ resource: "https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84
 tags: [slides, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-07T09:47:49+00:00"
+  at: "2026-08-11T17:39:58+00:00"
 status: stable
-stale_after: 2027-08-07
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/"
     title: 1HvkK2cdwWWjOZ m373Eq8vmjgsy84bapTJFBbWHaK1o
+    author: Luke McLaren, Farah Hawa
   - id: canonical
-    resource: "https://doc-0g-78-slides.googleusercontent.com/export/aimr0h2suon73ncmjrl9pqmmas/s2mugmgnmgm6nqpgv8lkjgbfcs/1786096055000/105502668445544282689/*/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o?exportFormat=pdf"
+    resource: "https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/edit"
 also_at: []
-authors: []
-canonical_url: "https://doc-0g-78-slides.googleusercontent.com/export/aimr0h2suon73ncmjrl9pqmmas/s2mugmgnmgm6nqpgv8lkjgbfcs/1786096055000/105502668445544282689/*/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o?exportFormat=pdf"
+authors:
+  - Luke McLaren
+  - Farah Hawa
+canonical_url: "https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/edit"
 cited_by:
-  - "2024.md:89"
+  - "2024.md:87"
 commit: ""
 content_sha256: 4863ef4df4e63dc50b0e36f0c27261d28d8b780da4eb20ab51093aff0d363225
 depth: full
@@ -31,9 +34,9 @@ published: ""
 publisher: ""
 publisher_english: ""
 raw_sha256: cfb88fd0ac7af7c556b6a46bf540716c1b77c5d77bc9f438831140c28777082f
-retrieved_from: "https://doc-0g-78-slides.googleusercontent.com/export/aimr0h2suon73ncmjrl9pqmmas/s2mugmgnmgm6nqpgv8lkjgbfcs/1786096055000/105502668445544282689/*/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o?exportFormat=pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-07T09:47:49+00:00"
+retrieved_from: "https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/edit"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:58+00:00"
 slug: 1hvkk2cdwwwjoz-m373eq8vmjgsy84baptjfbbwhak1o
 snapshot: ""
 title_english: ""
@@ -43,16 +46,16 @@ translation_of: ""
 
 # 1HvkK2cdwWWjOZ m373Eq8vmjgsy84bapTJFBbWHaK1o
 
-**1HvkK2cdwWWjOZ m373Eq8vmjgsy84bapTJFBbWHaK1o** - Author not stated, Publisher not stated.
+**1HvkK2cdwWWjOZ m373Eq8vmjgsy84bapTJFBbWHaK1o** - Luke McLaren, Farah Hawa, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/>
-- Current location: <https://doc-0g-78-slides.googleusercontent.com/export/aimr0h2suon73ncmjrl9pqmmas/s2mugmgnmgm6nqpgv8lkjgbfcs/1786096055000/105502668445544282689/*/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o?exportFormat=pdf>
-- Preserved from: https://doc-0g-78-slides.googleusercontent.com/export/aimr0h2suon73ncmjrl9pqmmas/s2mugmgnmgm6nqpgv8lkjgbfcs/1786096055000/105502668445544282689/*/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o?exportFormat=pdf (live) on 2026-08-07
+- Current location: <https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/edit>
+- Preserved from: https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/edit (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

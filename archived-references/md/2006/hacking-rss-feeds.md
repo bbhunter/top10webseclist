@@ -5,17 +5,19 @@ resource: "http://www.cgisecurity.com/papers/HackingFeeds.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:08:14+00:00"
+  at: "2026-08-11T17:39:53+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.cgisecurity.com/papers/HackingFeeds.pdf"
     title: Hacking RSS Feeds
+    author: Robert Auger
   - id: canonical
     resource: "https://www.cgisecurity.com/papers/HackingFeeds.pdf"
 also_at: []
-authors: []
+authors:
+  - Robert Auger
 canonical_url: "https://www.cgisecurity.com/papers/HackingFeeds.pdf"
 cited_by:
   - "2006.md:14"
@@ -32,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 64c0d6bb5d20b7e80d61e3b01e950b386ab4f342fb3fd98a58f74c5a526861fa
 retrieved_from: "https://www.cgisecurity.com/papers/HackingFeeds.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:08:14+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:53+00:00"
 slug: hacking-rss-feeds
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Hacking RSS Feeds
 
-**Hacking RSS Feeds** - Author not stated, Publisher not stated.
+**Hacking RSS Feeds** - Robert Auger, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://www.cgisecurity.com/papers/HackingFeeds.pdf>
 - Current location: <https://www.cgisecurity.com/papers/HackingFeeds.pdf>
-- Preserved from: https://www.cgisecurity.com/papers/HackingFeeds.pdf (live) on 2026-08-09
+- Preserved from: https://www.cgisecurity.com/papers/HackingFeeds.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

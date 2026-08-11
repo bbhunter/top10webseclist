@@ -5,18 +5,23 @@ resource: "https://www.microsoft.com/en-us/research/publication/pretty-bad-proxy
 tags: [article, webseclist-reference, en, microsoft-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:32:37+00:00"
+  at: "2026-08-11T17:36:02+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.microsoft.com/en-us/research/publication/pretty-bad-proxy-an-overlooked-adversary-in-browsers-https-deployments/"
     title: "Pretty-Bad-Proxy: An Overlooked Adversary in Browsers' HTTPS Deployments"
+    author: Shuo Chen, Ziqing Mao, Yi-Min Wang, Ming Zhang
 also_at: []
-authors: []
+authors:
+  - Shuo Chen
+  - Ziqing Mao
+  - Yi-Min Wang
+  - Ming Zhang
 canonical_url: ""
 cited_by:
-  - "2009.md:99"
+  - "2009.md:100"
 commit: ""
 content_sha256: c9cc93609f6f3c4b58ab443c2d4184dbbf99be3eb6c25a744ff7b7d6f4e5fd37
 depth: full
@@ -30,8 +35,8 @@ publisher: Microsoft Research
 publisher_english: ""
 raw_sha256: e24a3fad62f509e25b8f3ca1470a9cb835fd590caeda36b1de6c00e92a6fd15f
 retrieved_from: "https://www.microsoft.com/en-us/research/publication/pretty-bad-proxy-an-overlooked-adversary-in-browsers-https-deployments/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:32:37+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:02+00:00"
 slug: microsoft-research-pretty-bad-proxy-overlooked-adversary-browsers-deployments
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # Pretty-Bad-Proxy: An Overlooked Adversary in Browsers' HTTPS Deployments
 
-**Pretty-Bad-Proxy: An Overlooked Adversary in Browsers' HTTPS Deployments** - Author not stated, Microsoft Research.
+**Pretty-Bad-Proxy: An Overlooked Adversary in Browsers' HTTPS Deployments** - Shuo Chen, Ziqing Mao, Yi-Min Wang, Ming Zhang, Microsoft Research.
 
 - Published: date not stated
 - Original: <https://www.microsoft.com/en-us/research/publication/pretty-bad-proxy-an-overlooked-adversary-in-browsers-https-deployments/>
-- Preserved from: https://www.microsoft.com/en-us/research/publication/pretty-bad-proxy-an-overlooked-adversary-in-browsers-https-deployments/ (live) on 2026-08-10
+- Preserved from: https://www.microsoft.com/en-us/research/publication/pretty-bad-proxy-an-overlooked-adversary-in-browsers-https-deployments/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

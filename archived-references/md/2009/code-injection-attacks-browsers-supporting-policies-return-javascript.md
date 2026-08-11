@@ -5,18 +5,22 @@ resource: "https://www.ieee-security.org/TC/W2SP/2009/papers/s3p1.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:47+00:00"
+  at: "2026-08-11T17:41:58+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/W2SP/2009/papers/s3p1.pdf"
     title: Code-Injection Attacks in Browsers Supporting Policies (return-to-JavaScript)
+    author: Elias Athanasopoulos, Vasilis Pappas, Evangelos P. Markatos
 also_at: []
-authors: []
+authors:
+  - Elias Athanasopoulos
+  - Vasilis Pappas
+  - Evangelos P. Markatos
 canonical_url: ""
 cited_by:
-  - "2009.md:105"
+  - "2009.md:106"
 commit: ""
 content_sha256: f41f5384bfd97bd41f122fe198dbeab0583f054eacec8fa298385dd154b893e6
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: f0c70a8960d099adc979245a0e9d668158f74c4bd743f07fa7b090e638e5888e
 retrieved_from: "https://www.ieee-security.org/TC/W2SP/2009/papers/s3p1.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:47+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:58+00:00"
 slug: code-injection-attacks-browsers-supporting-policies-return-javascript
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # Code-Injection Attacks in Browsers Supporting Policies (return-to-JavaScript)
 
-**Code-Injection Attacks in Browsers Supporting Policies (return-to-JavaScript)** - Author not stated, Publisher not stated.
+**Code-Injection Attacks in Browsers Supporting Policies (return-to-JavaScript)** - Elias Athanasopoulos, Vasilis Pappas, Evangelos P. Markatos, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/W2SP/2009/papers/s3p1.pdf>
-- Preserved from: https://www.ieee-security.org/TC/W2SP/2009/papers/s3p1.pdf (live) on 2026-08-10
+- Preserved from: https://www.ieee-security.org/TC/W2SP/2009/papers/s3p1.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

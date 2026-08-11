@@ -5,15 +5,18 @@ resource: "https://thehackerblog.com/wp-content/uploads/2015/09/Black_Hat_USA_20
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T13:04:54+00:00"
+  at: "2026-08-11T17:45:43+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://thehackerblog.com/wp-content/uploads/2015/09/Black_Hat_USA_2015-Bypass_Surgery-6Aug2015.pdf"
     title: "Bypass Surgery: Abusing Content Delivery Networks With Server-Side Request Forgery (SSRF), Flash, and DNS"
+    author: Mike Brooks, Matthew Bryant
 also_at: []
-authors: []
+authors:
+  - Mike Brooks
+  - Matthew Bryant
 canonical_url: ""
 cited_by:
   - "2015.md:9"
@@ -31,7 +34,7 @@ publisher_english: ""
 raw_sha256: a8a59e9969f8fc8357a40810f7bc9959a2dd5756c7044e7e52e5bf7d1bd53674
 retrieved_from: "https://thehackerblog.com/wp-content/uploads/2015/09/Black_Hat_USA_2015-Bypass_Surgery-6Aug2015.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T13:04:54+00:00"
+retrieved_utc: "2026-08-11T17:45:43+00:00"
 slug: bypass-surgery-abusing-content-delivery-networks-server-side-request-dns
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # Bypass Surgery: Abusing Content Delivery Networks With Server-Side Request Forgery (SSRF), Flash, and DNS
 
-**Bypass Surgery: Abusing Content Delivery Networks With Server-Side Request Forgery (SSRF), Flash, and DNS** - Author not stated, Publisher not stated.
+**Bypass Surgery: Abusing Content Delivery Networks With Server-Side Request Forgery (SSRF), Flash, and DNS** - Mike Brooks, Matthew Bryant, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://thehackerblog.com/wp-content/uploads/2015/09/Black_Hat_USA_2015-Bypass_Surgery-6Aug2015.pdf>
-- Preserved from: https://thehackerblog.com/wp-content/uploads/2015/09/Black_Hat_USA_2015-Bypass_Surgery-6Aug2015.pdf (stored) on 2026-08-10
+- Preserved from: https://thehackerblog.com/wp-content/uploads/2015/09/Black_Hat_USA_2015-Bypass_Surgery-6Aug2015.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

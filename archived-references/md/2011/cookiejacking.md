@@ -5,15 +5,17 @@ resource: "https://archive.conference.hitb.org/hitbsecconf2011ams/materials/D2T2
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T20:42:08+00:00"
+  at: "2026-08-11T17:34:04+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://archive.conference.hitb.org/hitbsecconf2011ams/materials/D2T2%20-%20Rosario%20Valotta%20-%20Cookie%20Jacking.pdf"
     title: Cookiejacking
+    author: Rosario Valotta
 also_at: []
-authors: []
+authors:
+  - Rosario Valotta
 canonical_url: ""
 cited_by:
   - "2011.md:44"
@@ -31,7 +33,7 @@ publisher_english: ""
 raw_sha256: 99593ad9010061028eb864ae51579a6b66caea3f93d13d5291028cf84e011c4e
 retrieved_from: "https://archive.conference.hitb.org/hitbsecconf2011ams/materials/D2T2%20-%20Rosario%20Valotta%20-%20Cookie%20Jacking.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T20:42:08+00:00"
+retrieved_utc: "2026-08-11T17:34:04+00:00"
 slug: cookiejacking
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Cookiejacking
 
-**Cookiejacking** - Author not stated, Publisher not stated.
+**Cookiejacking** - Rosario Valotta, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://archive.conference.hitb.org/hitbsecconf2011ams/materials/D2T2%20-%20Rosario%20Valotta%20-%20Cookie%20Jacking.pdf>
-- Preserved from: https://archive.conference.hitb.org/hitbsecconf2011ams/materials/D2T2%20-%20Rosario%20Valotta%20-%20Cookie%20Jacking.pdf (stored) on 2026-08-09
+- Preserved from: https://archive.conference.hitb.org/hitbsecconf2011ams/materials/D2T2%20-%20Rosario%20Valotta%20-%20Cookie%20Jacking.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

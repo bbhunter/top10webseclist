@@ -5,18 +5,22 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/09_3_2.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:34:59+00:00"
+  at: "2026-08-11T17:43:12+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/09_3_2.pdf"
     title: "Too LeJIT to Quit: Extending JIT Spraying to ARM"
+    author: Wilson Lian, Hovav Shacham, Stefan Savage
 also_at: []
-authors: []
+authors:
+  - Wilson Lian
+  - Hovav Shacham
+  - Stefan Savage
 canonical_url: ""
 cited_by:
-  - "2015.md:77"
+  - "2015.md:78"
 commit: ""
 content_sha256: d189237c8048ce6609ec08a77e79ebe4f4fa7b26b5057caaf1a313818e0201b8
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: bfdbfd8cd6b6d82f72b1400868affb30b5ededc5e305a96a29556f4c2c352b08
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/09_3_2.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:34:59+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:12+00:00"
 slug: too-lejit-quit-extending-jit-spraying-arm
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # Too LeJIT to Quit: Extending JIT Spraying to ARM
 
-**Too LeJIT to Quit: Extending JIT Spraying to ARM** - Author not stated, Publisher not stated.
+**Too LeJIT to Quit: Extending JIT Spraying to ARM** - Wilson Lian, Hovav Shacham, Stefan Savage, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/09_3_2.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/09_3_2.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/09_3_2.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

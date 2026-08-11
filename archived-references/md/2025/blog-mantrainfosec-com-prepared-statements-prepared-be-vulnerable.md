@@ -5,20 +5,22 @@ resource: "https://blog.mantrainfosec.com/blog/18/prepared-statements-prepared-t
 tags: [article, webseclist-reference, en, blog-mantrainfosec-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:02+00:00"
+  at: "2026-08-11T17:34:10+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://blog.mantrainfosec.com/blog/18/prepared-statements-prepared-to-be-vulnerable"
     title: Prepared Statements? Prepared to Be Vulnerable.
+    author: Balazs Bucsay
 also_at: []
-authors: []
+authors:
+  - Balazs Bucsay
 canonical_url: ""
 cited_by:
   - "2025.md:27"
 commit: ""
-content_sha256: add95e8cd2678b43d03ad4cdf716a0c4581458c2ce93e3f9b145e43b837acf2b
+content_sha256: c90adad9289fa8bd77868718daefabe79c4be6d5725228f0dee26a2c4ab800cd
 depth: full
 depth_reason: default
 kind: article
@@ -31,7 +33,7 @@ publisher_english: ""
 raw_sha256: 1b1aaf1aa4697fdb055911134f19ac8fd967aa44ee8358b20cf0fd9d5757d574
 retrieved_from: "https://blog.mantrainfosec.com/blog/18/prepared-statements-prepared-to-be-vulnerable"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:02+00:00"
+retrieved_utc: "2026-08-11T17:34:10+00:00"
 slug: blog-mantrainfosec-com-prepared-statements-prepared-be-vulnerable
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Prepared Statements? Prepared to Be Vulnerable.
 
-**Prepared Statements? Prepared to Be Vulnerable.** - Author not stated, blog.mantrainfosec.com.
+**Prepared Statements? Prepared to Be Vulnerable.** - Balazs Bucsay, blog.mantrainfosec.com.
 
 - Published: date not stated
 - Original: <https://blog.mantrainfosec.com/blog/18/prepared-statements-prepared-to-be-vulnerable>
-- Preserved from: https://blog.mantrainfosec.com/blog/18/prepared-statements-prepared-to-be-vulnerable (stored) on 2026-08-09
+- Preserved from: https://blog.mantrainfosec.com/blog/18/prepared-statements-prepared-to-be-vulnerable (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

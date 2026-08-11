@@ -5,24 +5,26 @@ resource: "https://web.archive.org/web/20170903113359/http://threatpost.com/en_u
 tags: [article, webseclist-reference, en, threatpost-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T11:21:56+00:00"
+  at: "2026-08-11T17:45:44+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://threatpost.com/en_us/blogs/new-attack-uses-ssltls-information-leak-hijack-https-sessions-090512"
     title: New Attack Uses SSL/TLS Information Leak to Hijack HTTPS Sessions
+    author: Dennis Fisher
   - id: canonical
     resource: "http://threatpost.com/en_us/blogs/new-attack-uses-ssltls-information-leak-hijack-https-sessions-090512"
   - id: capture
-    resource: "https://web.archive.org/web/20121017092914/http://threatpost.com/en_us/blogs/new-attack-uses-ssltls-information-leak-hijack-https-sessions-090512"
+    resource: "https://web.archive.org/web/20121126053450/http://threatpost.com/en_us/blogs/new-attack-uses-ssltls-information-leak-hijack-https-sessions-090512"
 also_at: []
-authors: []
+authors:
+  - Dennis Fisher
 canonical_url: "http://threatpost.com/en_us/blogs/new-attack-uses-ssltls-information-leak-hijack-https-sessions-090512"
 cited_by:
   - "2012.md:5"
 commit: ""
-content_sha256: ad5658a8e89436877d017439d7e5fa44b26525b477f30cdb240f078e56277cdc
+content_sha256: af5903d283568e8d8deca9a6bdeb65cd07474ab9532de9ce9d17dbdac0d6ff7b
 depth: full
 depth_reason: default
 kind: article
@@ -32,12 +34,12 @@ original_url: "https://web.archive.org/web/20170903113359/http://threatpost.com/
 published: ""
 publisher: threatpost.com
 publisher_english: ""
-raw_sha256: 4cd2863618361de184eaa6a181bdc625c806af9dbcd0ccfd121ab7d6c7027715
+raw_sha256: f442b8d53aafa2ebdbb268af573bbb7eb8265cbcd9159ad478c61c9cdf8efa65
 retrieved_from: "http://threatpost.com/en_us/blogs/new-attack-uses-ssltls-information-leak-hijack-https-sessions-090512"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T11:21:56+00:00"
+retrieved_utc: "2026-08-11T17:45:44+00:00"
 slug: threatpost-com-new-attack-uses-ssl-tls-information-leak-hijack-https-sessions
-snapshot: 20121017092914
+snapshot: 20121126053450
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -45,13 +47,13 @@ translation_of: ""
 
 # New Attack Uses SSL/TLS Information Leak to Hijack HTTPS Sessions
 
-**New Attack Uses SSL/TLS Information Leak to Hijack HTTPS Sessions** - Author not stated, threatpost.com.
+**New Attack Uses SSL/TLS Information Leak to Hijack HTTPS Sessions** - Dennis Fisher, threatpost.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://threatpost.com/en_us/blogs/new-attack-uses-ssltls-information-leak-hijack-https-sessions-090512>
 - Current location: <http://threatpost.com/en_us/blogs/new-attack-uses-ssltls-information-leak-hijack-https-sessions-090512>
-- Preserved from: http://threatpost.com/en_us/blogs/new-attack-uses-ssltls-information-leak-hijack-https-sessions-090512 (stored) on 2026-08-09
-- Capture timestamp: 20121017092914
+- Preserved from: http://threatpost.com/en_us/blogs/new-attack-uses-ssltls-information-leak-hijack-https-sessions-090512 (stored) on 2026-08-11
+- Capture timestamp: 20121126053450
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -103,3 +105,15 @@ Rizzo said that the specific feature in TLS that he and Duong are using in this 
 Although the CRIME attack can use JavaScript, it's not required. Rizzo said that it really shouldn't be possible to hijack a user's session with one site just by loading JavaScript into the victim's browser from a separate site. But that's exactly what the new attack allows him to do.
 
 In addition to their work developing the BEAST attack, Rizzo and Duong in 2011 also developed a [padding oracle attack on Microsoft's ASP.NET](https://threatpost.com/en_us/blogs/new-crypto-attack-affects-millions-aspnet-apps-091310) that affected millions of applications and forced the software giant to issue an emergency patch.
+
+## Post new comment
+
+ Your name:
+
+ E-mail:
+
+The content of this field is kept private and will not be shown publicly.
+
+ Homepage:
+
+ Leave this field blank:

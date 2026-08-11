@@ -5,19 +5,25 @@ resource: "https://www.ndss-symposium.org/ndss-paper/processing-dangerous-paths-
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:50+00:00"
+  at: "2026-08-11T17:43:42+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/processing-dangerous-paths-on-security-and-privacy-of-the-portable-document-format/"
     title: Processing Dangerous Paths – On Security and Privacy of the Portable Document Format
+    author: Jens Müller, Dominik Noss, Christian Mainka, Vladislav Mladenov, Jörg Schwenk
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/ndss2021_1B-2_23109_paper.pdf"
-authors: []
+authors:
+  - Jens Müller
+  - Dominik Noss
+  - Christian Mainka
+  - Vladislav Mladenov
+  - Jörg Schwenk
 canonical_url: ""
 cited_by:
-  - "2021.md:60"
+  - "2021.md:61"
 commit: ""
 content_sha256: b1371d59354a37de1fb0f1cf65c0c6f06be579e028dabf5fbcb6e66af92bb6b7
 depth: full
@@ -31,8 +37,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: cf882add5febe0a81f25026343f3d6a431a510d1e36827a4004aa91799f3640e
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/processing-dangerous-paths-on-security-and-privacy-of-the-portable-document-format/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:50+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:42+00:00"
 slug: ndss-symposium-processing-dangerous-paths-security-privacy-portable-format
 snapshot: ""
 title_english: ""
@@ -42,12 +48,12 @@ translation_of: ""
 
 # Processing Dangerous Paths – On Security and Privacy of the Portable Document Format
 
-**Processing Dangerous Paths – On Security and Privacy of the Portable Document Format** - Author not stated, NDSS Symposium.
+**Processing Dangerous Paths – On Security and Privacy of the Portable Document Format** - Jens Müller, Dominik Noss, Christian Mainka, Vladislav Mladenov, Jörg Schwenk, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/processing-dangerous-paths-on-security-and-privacy-of-the-portable-document-format/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/ndss2021_1B-2_23109_paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/processing-dangerous-paths-on-security-and-privacy-of-the-portable-document-format/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/processing-dangerous-paths-on-security-and-privacy-of-the-portable-document-format/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

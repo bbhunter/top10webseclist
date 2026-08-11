@@ -5,20 +5,22 @@ resource: "https://www.blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:03:44+00:00"
+  at: "2026-08-11T17:39:01+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf"
     title: "Unraveling Unicode: A Bag of Tricks for Bug Hunting"
+    author: Chris Weber
   - id: canonical
     resource: "https://blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf"
 also_at: []
-authors: []
+authors:
+  - Chris Weber
 canonical_url: "https://blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf"
 cited_by:
-  - "2009.md:106"
+  - "2009.md:107"
 commit: ""
 content_sha256: d6a56432e73b6ac7f4731f303f3f98a6d9eed1e65b3f189fd124ee6a49ef11eb
 depth: full
@@ -32,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 2f3bff97dddf9e9c32ad3725de43b7022fd694e8bd5ef8e48549832083d90151
 retrieved_from: "https://blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:03:44+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:01+00:00"
 slug: unraveling-unicode-bag-tricks-bug-hunting
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Unraveling Unicode: A Bag of Tricks for Bug Hunting
 
-**Unraveling Unicode: A Bag of Tricks for Bug Hunting** - Author not stated, Publisher not stated.
+**Unraveling Unicode: A Bag of Tricks for Bug Hunting** - Chris Weber, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf>
 - Current location: <https://blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf>
-- Preserved from: https://blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf (live) on 2026-08-10
+- Preserved from: https://blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

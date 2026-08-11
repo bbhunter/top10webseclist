@@ -5,18 +5,25 @@ resource: "https://webblaze.cs.berkeley.edu/papers/kudzu.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:42+00:00"
+  at: "2026-08-11T17:46:41+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://webblaze.cs.berkeley.edu/papers/kudzu.pdf"
     title: A Symbolic Execution Framework for JavaScript
+    author: Prateek Saxena, Devdatta Akhawe, Steve Hanna, Feng Mao, Stephen McCamant, Dawn Song
 also_at: []
-authors: []
+authors:
+  - Prateek Saxena
+  - Devdatta Akhawe
+  - Steve Hanna
+  - Feng Mao
+  - Stephen McCamant
+  - Dawn Song
 canonical_url: ""
 cited_by:
-  - "2010.md:89"
+  - "2010.md:85"
 commit: ""
 content_sha256: 58b0959f2802a0d772fff93f1104168696be86c5ff3dfd6982afbdfebee241b0
 depth: full
@@ -30,8 +37,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 6ce9e6b0ed3e936094bd3b723f0a5beca4ad5e5512dbfee372e9fcef1d8fdc89
 retrieved_from: "https://webblaze.cs.berkeley.edu/papers/kudzu.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:42+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:46:41+00:00"
 slug: symbolic-execution-framework-javascript
 snapshot: ""
 title_english: ""
@@ -41,11 +48,11 @@ translation_of: ""
 
 # A Symbolic Execution Framework for JavaScript
 
-**A Symbolic Execution Framework for JavaScript** - Author not stated, Publisher not stated.
+**A Symbolic Execution Framework for JavaScript** - Prateek Saxena, Devdatta Akhawe, Steve Hanna, Feng Mao, Stephen McCamant, Dawn Song, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://webblaze.cs.berkeley.edu/papers/kudzu.pdf>
-- Preserved from: https://webblaze.cs.berkeley.edu/papers/kudzu.pdf (live) on 2026-08-08
+- Preserved from: https://webblaze.cs.berkeley.edu/papers/kudzu.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,15 +5,18 @@ resource: "https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentation
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-07T09:43:13+00:00"
+  at: "2026-08-11T17:42:47+00:00"
 status: stable
-stale_after: 2027-08-07
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentations/DEFCON-27-Ben-Sadeghipour-Owning-the-clout-through-SSRF-and-PDF-generators.pdf"
     title: DEFCON 27 Ben Sadeghipour Owning the clout through SSRF and PDF generators
+    author: Ben Sadeghipour, Cody Brocious
 also_at: []
-authors: []
+authors:
+  - Ben Sadeghipour
+  - Cody Brocious
 canonical_url: ""
 cited_by:
   - "2019.md:7"
@@ -30,8 +33,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: d1f61dbd23528e30d43b884f2f7bafe1dc2bad33363271abe841e0e9e11b54ca
 retrieved_from: "https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentations/DEFCON-27-Ben-Sadeghipour-Owning-the-clout-through-SSRF-and-PDF-generators.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-07T09:43:13+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:42:47+00:00"
 slug: defcon-27-ben-sadeghipour-owning-clout-through-ssrf-pdf-generators
 snapshot: ""
 title_english: ""
@@ -41,15 +44,15 @@ translation_of: ""
 
 # DEFCON 27 Ben Sadeghipour Owning the clout through SSRF and PDF generators
 
-**DEFCON 27 Ben Sadeghipour Owning the clout through SSRF and PDF generators** - Author not stated, Publisher not stated.
+**DEFCON 27 Ben Sadeghipour Owning the clout through SSRF and PDF generators** - Ben Sadeghipour, Cody Brocious, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentations/DEFCON-27-Ben-Sadeghipour-Owning-the-clout-through-SSRF-and-PDF-generators.pdf>
-- Preserved from: https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentations/DEFCON-27-Ben-Sadeghipour-Owning-the-clout-through-SSRF-and-PDF-generators.pdf (live) on 2026-08-07
+- Preserved from: https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentations/DEFCON-27-Ben-Sadeghipour-Owning-the-clout-through-SSRF-and-PDF-generators.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

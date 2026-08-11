@@ -5,20 +5,25 @@ resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:04:16+00:00"
+  at: "2026-08-11T17:46:26+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse"
     title: Static Detection of Second-Order Vulnerabilities in Web Applications
+    author: Johannes Dahse, Thorsten Holz
+  - id: capture
+    resource: "https://web.archive.org/web/20140703050559/https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse"
 also_at: []
-authors: []
+authors:
+  - Johannes Dahse
+  - Thorsten Holz
 canonical_url: ""
 cited_by:
-  - "2014.md:65"
+  - "2014.md:66"
 commit: ""
-content_sha256: f316e9d6ef3fa97b08c2cbf6f905cbeaecc3185aff2c222ef8e316d28f7d5218
+content_sha256: 4e964aff4bf301564b11c5ccc926da68093634dca9a39c32c0fad4b6604d3ea7
 depth: full
 depth_reason: default
 kind: article
@@ -28,12 +33,12 @@ original_url: "https://www.usenix.org/conference/usenixsecurity14/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 82b64c8fbf96ee1f560c9e075f7dd2bfb8d879114212a7d0074badf8e84a9a6f
+raw_sha256: 0cbc46ce77982f91ff3ce4959a7736c25d209e3b9b0f3c4b56e3e9d7426e5f02
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:04:16+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:46:26+00:00"
 slug: usenix-org-static-detection-second-order-vulnerabilities-web-applications
-snapshot: ""
+snapshot: 20140703050559
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -41,11 +46,12 @@ translation_of: ""
 
 # Static Detection of Second-Order Vulnerabilities in Web Applications
 
-**Static Detection of Second-Order Vulnerabilities in Web Applications** - Author not stated, usenix.org.
+**Static Detection of Second-Order Vulnerabilities in Web Applications** - Johannes Dahse, Thorsten Holz, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse (live) on 2026-08-10
+- Preserved from: https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse (stored) on 2026-08-11
+- Capture timestamp: 20140703050559
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -60,53 +66,22 @@ page going offline. To read the original, follow the link above.
 
 Static Detection of Second-Order Vulnerabilities in Web Applications | USENIX
 
- [ Back to USENIX ](https://www.usenix.org/)
+[USENIX](https://www.usenix.org/)
 
 #  Static Detection of Second-Order Vulnerabilities in Web Applications
 
-Friday, August 1, 2014 - 10:45am
+Authors:
 
 Johannes Dahse and Thorsten Holz, *Ruhr-University Bochum*
 
-***Facebook [Internet Defense Prize](http://internetdefenseprize.org/) Winner!***
+## Open Access Content
 
-Web applications evolved in the last decades from simple scripts to multi-functional applications. Such complex web applications are prone to different types of security vulnerabilities that lead to data leakage or a compromise of the underlying web server. So called *secondorder vulnerabilities* occur when an attack payload is first stored by the application on the web server and then later on used in a security-critical operation.
-
-In this paper, we introduce the first automated static code analysis approach to detect second-order vulnerabilities and related multi-step exploits in web applications. By analyzing reads and writes to memory locations of the web server, we are able to identify unsanitized data flows by connecting input and output points of data in *persistent data stores* such as databases or session data. As a result, we identified 159 second-order vulnerabilities in six popular web applications such as the conference management systems *HotCRP* and *Open- Conf*. Moreover, the analysis of web applications evaluated in related work revealed that we are able to detect several critical vulnerabilities previously missed.
-
-## [Johannes Dahse, Ruhr-University Bochum](https://www.usenix.org/conference/usenixsecurity14/speaker-or-organizer/johannes-dahse-ruhr-university-bochum)
-
-## [Thorsten Holz, Ruhr-University Bochum](https://www.usenix.org/conference/usenixsecurity14/speaker-or-organizer/thorsten-holz-ruhr-university-bochum-0)
-
-## Open Access Media
-
-USENIX is committed to Open Access to the research presented at our events. Papers and proceedings are freely available to everyone once the event begins. Any video, audio, and/or slides that are posted after the event are also free and open to everyone. [Support USENIX](https://www.usenix.org/annual-fund) and our commitment to Open Access.
+Papers are restricted to registered attendees until the event begins. Once the event begins, the content becomes free and open to everyone. Journal articles are open to everyone upon publication. If available, video, audio, and/or slides of this presentation will be posted here after the event.
 
 BibTeX
 
-@inproceedings {184419,
- author = {Johannes Dahse and Thorsten Holz},
- title = {Static Detection of {Second-Order} Vulnerabilities in Web Applications},
- booktitle = {23rd USENIX Security Symposium (USENIX Security 14)},
- year = {2014},
- isbn = {978-1-931971-15-7},
- address = {San Diego, CA},
- pages = {989--1003},
- url = {https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse},
- publisher = {USENIX Association},
- month = aug
- }
+Text of BibTeX entry:
 
-[Download](https://www.usenix.org/biblio/export/bibtex/184419)
+@inproceedings {184419, title = {Static Detection of Second-Order Vulnerabilities in Web Applications}, booktitle = {23rd USENIX Security Symposium (USENIX Security 14)}, year = {2014}, month = Aug, address = {San Diego, CA}, url = {https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse}, publisher = {USENIX Association}, } <br><a href="/biblio/export/bibtex/184419">Download</a>
 
- [Dahse PDF](https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-dahse.pdf)
-
-[View the slides](https://www.usenix.org/sites/default/files/conference/protected-files/sec14_slides_dahse.pdf)
-
-#### Presentation Video
-
-#### Presentation Audio
-
-    [MP3 Download](https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/sec14/dahse.mp3) [OGG Download](https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/sec14/dahse.ogg)
-
-[Download Audio](https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/sec14/dahse.mp3)
+## Open access to the papers is sponsored by USENIX.

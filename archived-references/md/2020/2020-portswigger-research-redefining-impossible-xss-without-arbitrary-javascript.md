@@ -5,16 +5,18 @@ resource: "https://portswigger.net/research/redefining-impossible-xss-without-ar
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:52+00:00"
+  at: "2026-08-11T17:44:59+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/redefining-impossible-xss-without-arbitrary-javascript"
     title: "Redefining Impossible: XSS without arbitrary JavaScript"
+    author: Luan Herrera
     last_modified: 2020-09-23
 also_at: []
-authors: []
+authors:
+  - Luan Herrera
 canonical_url: ""
 cited_by:
   - "2020.md:23"
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 4fc683b52c7a60b7c6abd7a26f84f9d12e445318576bb870cc4daa5014259243
 retrieved_from: "https://portswigger.net/research/redefining-impossible-xss-without-arbitrary-javascript"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:52+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:59+00:00"
 slug: 2020-portswigger-research-redefining-impossible-xss-without-arbitrary-javascript
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Redefining Impossible: XSS without arbitrary JavaScript
 
-**Redefining Impossible: XSS without arbitrary JavaScript** - Author not stated, PortSwigger Research.
+**Redefining Impossible: XSS without arbitrary JavaScript** - Luan Herrera, PortSwigger Research.
 
 - Published: 2020-09-23
 - Original: <https://portswigger.net/research/redefining-impossible-xss-without-arbitrary-javascript>
-- Preserved from: https://portswigger.net/research/redefining-impossible-xss-without-arbitrary-javascript (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/redefining-impossible-xss-without-arbitrary-javascript (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

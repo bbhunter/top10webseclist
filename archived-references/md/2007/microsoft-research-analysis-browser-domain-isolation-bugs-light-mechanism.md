@@ -5,20 +5,24 @@ resource: "https://www.microsoft.com/en-us/research/?p=153771"
 tags: [article, webseclist-reference, en, microsoft-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:32:45+00:00"
+  at: "2026-08-11T17:36:03+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.microsoft.com/en-us/research/?p=153771"
     title: An Analysis of Browser Domain-Isolation Bugs and A Light-Weight Transparent Defense Mechanism
+    author: Shuo Chen, David Ross, Yi-Min Wang
   - id: canonical
     resource: "https://www.microsoft.com/en-us/research/publication/an-analysis-of-browser-domain-isolation-bugs-and-a-light-weight-transparent-defense-mechanism/"
 also_at: []
-authors: []
+authors:
+  - Shuo Chen
+  - David Ross
+  - Yi-Min Wang
 canonical_url: "https://www.microsoft.com/en-us/research/publication/an-analysis-of-browser-domain-isolation-bugs-and-a-light-weight-transparent-defense-mechanism/"
 cited_by:
-  - "2007.md:104"
+  - "2007.md:105"
 commit: ""
 content_sha256: 2bc967a348f91f0ec2d0bddd86ce5f880288f68536e69dd60204f5fea0989ecb
 depth: full
@@ -32,8 +36,8 @@ publisher: Microsoft Research
 publisher_english: ""
 raw_sha256: 9c6bfedd5dd4394e8959a713c16ae1320cd331333490df4b95f9f107b3616203
 retrieved_from: "https://www.microsoft.com/en-us/research/publication/an-analysis-of-browser-domain-isolation-bugs-and-a-light-weight-transparent-defense-mechanism/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:32:45+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:03+00:00"
 slug: microsoft-research-analysis-browser-domain-isolation-bugs-light-mechanism
 snapshot: ""
 title_english: ""
@@ -43,12 +47,12 @@ translation_of: ""
 
 # An Analysis of Browser Domain-Isolation Bugs and A Light-Weight Transparent Defense Mechanism
 
-**An Analysis of Browser Domain-Isolation Bugs and A Light-Weight Transparent Defense Mechanism** - Author not stated, Microsoft Research.
+**An Analysis of Browser Domain-Isolation Bugs and A Light-Weight Transparent Defense Mechanism** - Shuo Chen, David Ross, Yi-Min Wang, Microsoft Research.
 
 - Published: date not stated
 - Original: <https://www.microsoft.com/en-us/research/?p=153771>
 - Current location: <https://www.microsoft.com/en-us/research/publication/an-analysis-of-browser-domain-isolation-bugs-and-a-light-weight-transparent-defense-mechanism/>
-- Preserved from: https://www.microsoft.com/en-us/research/publication/an-analysis-of-browser-domain-isolation-bugs-and-a-light-weight-transparent-defense-mechanism/ (live) on 2026-08-10
+- Preserved from: https://www.microsoft.com/en-us/research/publication/an-analysis-of-browser-domain-isolation-bugs-and-a-light-weight-transparent-defense-mechanism/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

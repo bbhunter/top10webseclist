@@ -5,18 +5,28 @@ resource: "https://acmccs.github.io/papers/p829-liA.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:49:40+00:00"
+  at: "2026-08-11T17:37:39+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://acmccs.github.io/papers/p829-liA.pdf"
     title: "Unleashing the Walking Dead: Understanding Cross-App Remote Infections on Mobile WebViews"
+    author: Tongxin Li, Xueqiang Wang, Mingming Zha, Kai Chen, XiaoFeng Wang, Luyi Xing, Xiaolong Bai, Nan Zhang, Xinhui Han
 also_at: []
-authors: []
+authors:
+  - Tongxin Li
+  - Xueqiang Wang
+  - Mingming Zha
+  - Kai Chen
+  - XiaoFeng Wang
+  - Luyi Xing
+  - Xiaolong Bai
+  - Nan Zhang
+  - Xinhui Han
 canonical_url: ""
 cited_by:
-  - "2016-17.md:104"
+  - "2016-17.md:99"
 commit: ""
 content_sha256: 1ec8a1db32e0ed29d3dde33fba1f0a84c6440d9f558173a168406b5744e255d9
 depth: full
@@ -30,8 +40,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 248177ba769a7c06c83df46f1fde1ec09093138d1226746c18663b9224b24392
 retrieved_from: "https://acmccs.github.io/papers/p829-liA.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:49:40+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:37:39+00:00"
 slug: unleashing-walking-dead-understanding-cross-app-remote-infections-webviews
 snapshot: ""
 title_english: ""
@@ -41,11 +51,11 @@ translation_of: ""
 
 # Unleashing the Walking Dead: Understanding Cross-App Remote Infections on Mobile WebViews
 
-**Unleashing the Walking Dead: Understanding Cross-App Remote Infections on Mobile WebViews** - Author not stated, Publisher not stated.
+**Unleashing the Walking Dead: Understanding Cross-App Remote Infections on Mobile WebViews** - Tongxin Li, Xueqiang Wang, Mingming Zha, Kai Chen, XiaoFeng Wang, Luyi Xing, Xiaolong Bai, Nan Zhang, Xinhui Han, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://acmccs.github.io/papers/p829-liA.pdf>
-- Preserved from: https://acmccs.github.io/papers/p829-liA.pdf (live) on 2026-08-08
+- Preserved from: https://acmccs.github.io/papers/p829-liA.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

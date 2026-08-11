@@ -5,17 +5,19 @@ resource: "https://portswigger.net/research/http2"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:43+00:00"
+  at: "2026-08-11T17:45:06+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/http2"
     title: "HTTP/2: The Sequel is Always Worse"
+    author: James Kettle
     last_modified: 2021-08-05
 also_at:
   - "https://portswigger.net/kb/papers/rfekn2Uv/HTTP2whitepaper.pdf"
-authors: []
+authors:
+  - James Kettle
 canonical_url: ""
 cited_by:
   - "2021.md:6"
@@ -32,8 +34,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: b36821d93e613ccc57c9b9a59f9bac9739301fe4a072f9d907cb9f2b3cdc6df8
 retrieved_from: "https://portswigger.net/research/http2"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:43+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:06+00:00"
 slug: 2021-portswigger-research-http-2-sequel-always-worse
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # HTTP/2: The Sequel is Always Worse
 
-**HTTP/2: The Sequel is Always Worse** - Author not stated, PortSwigger Research.
+**HTTP/2: The Sequel is Always Worse** - James Kettle, PortSwigger Research.
 
 - Published: 2021-08-05
 - Original: <https://portswigger.net/research/http2>
 - Also published at: <https://portswigger.net/kb/papers/rfekn2Uv/HTTP2whitepaper.pdf>
-- Preserved from: https://portswigger.net/research/http2 (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/http2 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

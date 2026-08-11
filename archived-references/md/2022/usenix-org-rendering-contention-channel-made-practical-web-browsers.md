@@ -5,20 +5,27 @@ resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/wu-sh
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:05:14+00:00"
+  at: "2026-08-11T17:46:01+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/wu-shujiang"
     title: Rendering Contention Channel Made Practical in Web Browsers
+    author: Shujiang Wu, Jianjia Yu, Min Yang, Yinzhi Cao
+  - id: capture
+    resource: "https://web.archive.org/web/20220626212556/https://www.usenix.org/conference/usenixsecurity22/presentation/wu-shujiang"
 also_at: []
-authors: []
+authors:
+  - Shujiang Wu
+  - Jianjia Yu
+  - Min Yang
+  - Yinzhi Cao
 canonical_url: ""
 cited_by:
-  - "2022.md:62"
+  - "2022.md:63"
 commit: ""
-content_sha256: 9dc1bd438c106ad5372715ae97b8db352c7f6d86c540e19a29b73b362665d9bc
+content_sha256: b6feb7ded33fb9c7c53f4fdae415e459a72bae99614df6c9c4d1c12f4500fab7
 depth: full
 depth_reason: default
 kind: article
@@ -28,12 +35,12 @@ original_url: "https://www.usenix.org/conference/usenixsecurity22/presentation/w
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: a04896c7dd367a2f21a296ad3323443d11902e20af1e944e5c2ec0610cdab7d5
+raw_sha256: 0e1092b9b6cff3730f2e09de466099bf7eda495910f1b3cc687331c1326d7cd6
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity22/presentation/wu-shujiang"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:05:14+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:46:01+00:00"
 slug: usenix-org-rendering-contention-channel-made-practical-web-browsers
-snapshot: ""
+snapshot: 20220626212556
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -41,11 +48,12 @@ translation_of: ""
 
 # Rendering Contention Channel Made Practical in Web Browsers
 
-**Rendering Contention Channel Made Practical in Web Browsers** - Author not stated, usenix.org.
+**Rendering Contention Channel Made Practical in Web Browsers** - Shujiang Wu, Jianjia Yu, Min Yang, Yinzhi Cao, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity22/presentation/wu-shujiang>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/wu-shujiang (live) on 2026-08-10
+- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/wu-shujiang (stored) on 2026-08-11
+- Capture timestamp: 20220626212556
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -60,7 +68,11 @@ page going offline. To read the original, follow the link above.
 
 # Rendering Contention Channel Made Practical in Web Browsers
 
+Authors:
+
 Shujiang Wu and Jianjia Yu, *Johns Hopkins University;* Min Yang, *Fudan University;* Yinzhi Cao, *Johns Hopkins University*
+
+Abstract:
 
 Browser rendering utilizes hardware resources shared within and across browsers to display web contents, thus inevitably being vulnerable to side channel attacks. Prior works have studied rendering side channels that are caused by rendering time differences of one frame, such as URL color change. However, it still remains unclear how rendering contentions play a role in side-channel attacks and covert communications.
 
@@ -77,22 +89,15 @@ USENIX is committed to Open Access to the research presented at our events. Pape
 BibTeX
 
 @inproceedings {277118,
- author = {Shujiang Wu and Jianjia Yu and Min Yang and Yinzhi Cao},
  title = {Rendering Contention Channel Made Practical in Web Browsers},
  booktitle = {31st USENIX Security Symposium (USENIX Security 22)},
  year = {2022},
- isbn = {978-1-939133-31-1},
  address = {Boston, MA},
- pages = {3183--3199},
  url = {https://www.usenix.org/conference/usenixsecurity22/presentation/wu-shujiang},
  publisher = {USENIX Association},
- month = aug
+ month = aug,
  }
 
 [Download](https://www.usenix.org/biblio/export/bibtex/277118)
 
-![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Wu PDF](https://www.usenix.org/system/files/sec22-wu-shujiang.pdf)
-
-![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Wu Paper (Prepublication) PDF](https://www.usenix.org/system/files/sec22summer_wu.pdf)
-
-## Presentation Video
+![PDF icon](https://www.usenix.org/modules/file/icons/application-pdf.png) [Wu Paper (Prepublication) PDF](https://www.usenix.org/system/files/sec22summer_wu.pdf)

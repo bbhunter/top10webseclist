@@ -5,20 +5,27 @@ resource: "https://doi.org/10.1109/SP.2019.00049"
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:40:09+00:00"
+  at: "2026-08-11T17:39:59+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://doi.org/10.1109/SP.2019.00049"
     title: "PhishFarm: A Scalable Framework for Measuring the Effectiveness of Evasion Techniques against Browser Phishing Blacklists"
+    author: Adam Oest, Yeganeh Safaei, Adam Doupé, Gail-Joon Ahn, Brad Wardman, Kevin Tyers
 also_at:
   - "https://sefcom.asu.edu/publications/phishfarm-oakland2019.pdf"
   - "https://docs.apwg.org/documents/phishfarm_ieee_sp_2019_oest.pdf"
-authors: []
+authors:
+  - Adam Oest
+  - Yeganeh Safaei
+  - Adam Doupé
+  - Gail-Joon Ahn
+  - Brad Wardman
+  - Kevin Tyers
 canonical_url: ""
 cited_by:
-  - "2019.md:74"
+  - "2019.md:75"
 commit: ""
 content_sha256: 3f957728de6713590fd22df05bfcd6002905c723f27acdfeb2f08e8f3d2a6f66
 depth: full
@@ -32,8 +39,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 885bae9435fc26f0cf20b593efe48b1ae0a1dcd243dfe674c829f7a58bf35784
 retrieved_from: "https://sefcom.asu.edu/publications/phishfarm-oakland2019.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:40:09+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:59+00:00"
 slug: phishfarm-scalable-framework-measuring-effectiveness-evasion-blacklists
 snapshot: ""
 title_english: ""
@@ -43,13 +50,13 @@ translation_of: ""
 
 # PhishFarm: A Scalable Framework for Measuring the Effectiveness of Evasion Techniques against Browser Phishing Blacklists
 
-**PhishFarm: A Scalable Framework for Measuring the Effectiveness of Evasion Techniques against Browser Phishing Blacklists** - Author not stated, Publisher not stated.
+**PhishFarm: A Scalable Framework for Measuring the Effectiveness of Evasion Techniques against Browser Phishing Blacklists** - Adam Oest, Yeganeh Safaei, Adam Doupé, Gail-Joon Ahn, Brad Wardman, Kevin Tyers, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://doi.org/10.1109/SP.2019.00049>
 - Also published at: <https://sefcom.asu.edu/publications/phishfarm-oakland2019.pdf>
 - Also published at: <https://docs.apwg.org/documents/phishfarm_ieee_sp_2019_oest.pdf>
-- Preserved from: https://sefcom.asu.edu/publications/phishfarm-oakland2019.pdf (live) on 2026-08-10
+- Preserved from: https://sefcom.asu.edu/publications/phishfarm-oakland2019.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

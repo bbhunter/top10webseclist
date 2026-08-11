@@ -5,18 +5,21 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/transcript-
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:35:07+00:00"
+  at: "2026-08-11T17:43:21+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/transcript-collision-attacks-breaking-authentication-tls-ike-ssh.pdf"
     title: "Transcript Collision Attacks: Breaking Authentication in TLS, IKE and SSH"
+    author: Karthikeyan Bhargavan, Gaëtan Leurent
 also_at: []
-authors: []
+authors:
+  - Karthikeyan Bhargavan
+  - Gaëtan Leurent
 canonical_url: ""
 cited_by:
-  - "2016-17.md:62"
+  - "2016-17.md:63"
 commit: ""
 content_sha256: 46ef63b53c1ab8296ba28f5fb20f1e3402c586e9b0954190c3281cbbfbb156a2
 depth: full
@@ -30,8 +33,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 51583877f50f668113184ca1be50b0aafb69b2bca761eacfa57eac4f004dea36
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/transcript-collision-attacks-breaking-authentication-tls-ike-ssh.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:35:07+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:21+00:00"
 slug: transcript-collision-attacks-breaking-authentication-tls-ike-ssh
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # Transcript Collision Attacks: Breaking Authentication in TLS, IKE and SSH
 
-**Transcript Collision Attacks: Breaking Authentication in TLS, IKE and SSH** - Author not stated, Publisher not stated.
+**Transcript Collision Attacks: Breaking Authentication in TLS, IKE and SSH** - Karthikeyan Bhargavan, Gaëtan Leurent, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/transcript-collision-attacks-breaking-authentication-tls-ike-ssh.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/transcript-collision-attacks-breaking-authentication-tls-ike-ssh.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/transcript-collision-attacks-breaking-authentication-tls-ike-ssh.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

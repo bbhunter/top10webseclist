@@ -5,15 +5,21 @@ resource: "https://www.usenix.org/system/files/sec22summer_mirheidari.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:48:02+00:00"
+  at: "2026-08-11T17:46:25+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.usenix.org/system/files/sec22summer_mirheidari.pdf"
     title: Web Cache Deception Escalates!
+    author: Seyed Ali Mirheidari, Matteo Golinelli, Kaan Onarlioglu, Engin Kirda, Bruno Crispo
 also_at: []
-authors: []
+authors:
+  - Seyed Ali Mirheidari
+  - Matteo Golinelli
+  - Kaan Onarlioglu
+  - Engin Kirda
+  - Bruno Crispo
 canonical_url: ""
 cited_by:
   - "2021.md:35"
@@ -30,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 29776c872ca0f0024b683205654f69161a79b14c2fb8168c255907e631f09fa6
 retrieved_from: "https://www.usenix.org/system/files/sec22summer_mirheidari.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:48:02+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:46:25+00:00"
 slug: web-cache-deception-escalates
 snapshot: ""
 title_english: ""
@@ -41,11 +47,11 @@ translation_of: ""
 
 # Web Cache Deception Escalates!
 
-**Web Cache Deception Escalates!** - Author not stated, Publisher not stated.
+**Web Cache Deception Escalates!** - Seyed Ali Mirheidari, Matteo Golinelli, Kaan Onarlioglu, Engin Kirda, Bruno Crispo, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/system/files/sec22summer_mirheidari.pdf>
-- Preserved from: https://www.usenix.org/system/files/sec22summer_mirheidari.pdf (live) on 2026-08-09
+- Preserved from: https://www.usenix.org/system/files/sec22summer_mirheidari.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

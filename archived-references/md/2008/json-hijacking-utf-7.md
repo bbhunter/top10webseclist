@@ -5,19 +5,21 @@ resource: "http://powerofcommunity.net/poc2008/hasegawa.pptx"
 tags: [slides, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:08+00:00"
-status: deprecated
-stale_after: 2027-08-09
+  at: "2026-08-11T17:36:47+00:00"
+status: stable
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://powerofcommunity.net/poc2008/hasegawa.pptx"
     title: JSON Hijacking with UTF-7
+    author: Yosuke Hasegawa
   - id: canonical
     resource: "https://pocsec.com/poc2008/hasegawa.pptx"
   - id: capture
     resource: "https://web.archive.org/web/20090201095000/http://powerofcommunity.net/poc2008/hasegawa.pptx"
 also_at: []
-authors: []
+authors:
+  - Yosuke Hasegawa
 canonical_url: "https://pocsec.com/poc2008/hasegawa.pptx"
 cited_by:
   - "2008.md:74"
@@ -35,7 +37,7 @@ publisher_english: ""
 raw_sha256: 34cd692574c8905c52a744b3314dcc546188e96798a69347c53542d9a5b34b93
 retrieved_from: "https://pocsec.com/poc2008/hasegawa.pptx"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:08+00:00"
+retrieved_utc: "2026-08-11T17:36:47+00:00"
 slug: json-hijacking-utf-7
 snapshot: 20090201095000
 title_english: ""
@@ -45,12 +47,12 @@ translation_of: ""
 
 # JSON Hijacking with UTF-7
 
-**JSON Hijacking with UTF-7** - Author not stated, Publisher not stated.
+**JSON Hijacking with UTF-7** - Yosuke Hasegawa, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://powerofcommunity.net/poc2008/hasegawa.pptx>
 - Current location: <https://pocsec.com/poc2008/hasegawa.pptx>
-- Preserved from: https://pocsec.com/poc2008/hasegawa.pptx (stored) on 2026-08-09
+- Preserved from: https://pocsec.com/poc2008/hasegawa.pptx (stored) on 2026-08-11
 - Capture timestamp: 20090201095000
 - Licence: unknown
 

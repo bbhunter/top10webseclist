@@ -5,17 +5,19 @@ resource: "http://www.webappsec.org/lists/websecurity/archive/2006-10/msg00063.h
 tags: [article, webseclist-reference, webappsec-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:37+00:00"
+  at: "2026-08-11T17:46:40+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.webappsec.org/lists/websecurity/archive/2006-10/msg00063.html"
     title: "[WEB SECURITY] Netflix.com XSRF vuln"
+    author: Dave Ferguson
   - id: capture
     resource: "https://web.archive.org/web/20090602131747/http://www.webappsec.org/lists/websecurity/archive/2006-10/msg00063.html"
 also_at: []
-authors: []
+authors:
+  - Dave Ferguson
 canonical_url: ""
 cited_by:
   - "2006.md:49"
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 2f471828ab6a85a951afd3e9ba453946341215ce79ea124fe186be94550a3b99
 retrieved_from: "http://www.webappsec.org/lists/websecurity/archive/2006-10/msg00063.html"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:37+00:00"
+retrieved_utc: "2026-08-11T17:46:40+00:00"
 slug: lists-webappsec-org-web-security-netflix-com-xsrf-vuln
 snapshot: 20090602131747
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # [WEB SECURITY] Netflix.com XSRF vuln
 
-**[WEB SECURITY] Netflix.com XSRF vuln** - Author not stated, webappsec.org.
+**[WEB SECURITY] Netflix.com XSRF vuln** - Dave Ferguson, webappsec.org.
 
 - Published: date not stated
 - Original: <http://www.webappsec.org/lists/websecurity/archive/2006-10/msg00063.html>
-- Preserved from: http://www.webappsec.org/lists/websecurity/archive/2006-10/msg00063.html (stored) on 2026-08-09
+- Preserved from: http://www.webappsec.org/lists/websecurity/archive/2006-10/msg00063.html (stored) on 2026-08-11
 - Capture timestamp: 20090602131747
 - Licence: unknown
 

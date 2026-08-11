@@ -5,16 +5,18 @@ resource: "https://portswigger.net/research/blind-css-exfiltration"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:27+00:00"
+  at: "2026-08-11T17:44:47+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/blind-css-exfiltration"
     title: "Blind CSS Exfiltration: exfiltrate unknown web pages"
+    author: Gareth Heyes
     last_modified: 2023-12-05
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: ""
 cited_by:
   - "2023.md:26"
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 35b15744b7ae1983b47b90280294846cbb3ce1ec6e55d53afcafa862d37d74eb
 retrieved_from: "https://portswigger.net/research/blind-css-exfiltration"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:27+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:47+00:00"
 slug: 2023-portswigger-research-blind-css-exfiltration-exfiltrate-unknown-web-pages
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Blind CSS Exfiltration: exfiltrate unknown web pages
 
-**Blind CSS Exfiltration: exfiltrate unknown web pages** - Author not stated, PortSwigger Research.
+**Blind CSS Exfiltration: exfiltrate unknown web pages** - Gareth Heyes, PortSwigger Research.
 
 - Published: 2023-12-05
 - Original: <https://portswigger.net/research/blind-css-exfiltration>
-- Preserved from: https://portswigger.net/research/blind-css-exfiltration (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/blind-css-exfiltration (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

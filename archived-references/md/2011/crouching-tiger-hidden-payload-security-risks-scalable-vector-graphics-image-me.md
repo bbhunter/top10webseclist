@@ -5,20 +5,25 @@ resource: "https://www.nds.ruhr-uni-bochum.de/media/hgi/veroeffentlichungen/2011
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:09:13+00:00"
+  at: "2026-08-11T17:36:11+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.nds.ruhr-uni-bochum.de/media/hgi/veroeffentlichungen/2011/10/19/svgSecurity-ccs11.pdf"
     title: "Crouching Tiger Hidden Payload: Security Risks of Scalable Vector Graphics (The Image That Called Me)"
+    author: Mario Heiderich, Tilman Frosch, Meiko Jensen, Thorsten Holz
   - id: capture
     resource: "https://web.archive.org/web/20151210062707/https://www.nds.ruhr-uni-bochum.de/media/hgi/veroeffentlichungen/2011/10/19/svgSecurity-ccs11.pdf"
 also_at: []
-authors: []
+authors:
+  - Mario Heiderich
+  - Tilman Frosch
+  - Meiko Jensen
+  - Thorsten Holz
 canonical_url: ""
 cited_by:
-  - "2011.md:84"
+  - "2011.md:80"
 commit: ""
 content_sha256: 0ed73b8fb089908dffa641d903491137ff119631e6e272f550a6645ab85d84e1
 depth: full
@@ -33,7 +38,7 @@ publisher_english: ""
 raw_sha256: 7cbb303ef67b6b8f849e1356ce449e37929113cdae918851801c1619c3a96294
 retrieved_from: "https://www.nds.ruhr-uni-bochum.de/media/hgi/veroeffentlichungen/2011/10/19/svgSecurity-ccs11.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:09:13+00:00"
+retrieved_utc: "2026-08-11T17:36:11+00:00"
 slug: crouching-tiger-hidden-payload-security-risks-scalable-vector-graphics-image-me
 snapshot: 20151210062707
 title_english: ""
@@ -43,11 +48,11 @@ translation_of: ""
 
 # Crouching Tiger Hidden Payload: Security Risks of Scalable Vector Graphics (The Image That Called Me)
 
-**Crouching Tiger Hidden Payload: Security Risks of Scalable Vector Graphics (The Image That Called Me)** - Author not stated, Publisher not stated.
+**Crouching Tiger Hidden Payload: Security Risks of Scalable Vector Graphics (The Image That Called Me)** - Mario Heiderich, Tilman Frosch, Meiko Jensen, Thorsten Holz, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.nds.ruhr-uni-bochum.de/media/hgi/veroeffentlichungen/2011/10/19/svgSecurity-ccs11.pdf>
-- Preserved from: https://www.nds.ruhr-uni-bochum.de/media/hgi/veroeffentlichungen/2011/10/19/svgSecurity-ccs11.pdf (stored) on 2026-08-09
+- Preserved from: https://www.nds.ruhr-uni-bochum.de/media/hgi/veroeffentlichungen/2011/10/19/svgSecurity-ccs11.pdf (stored) on 2026-08-11
 - Capture timestamp: 20151210062707
 - Licence: unknown
 

@@ -5,17 +5,19 @@ resource: "http://www.sectheory.com/file-sharing.htm"
 tags: [article, webseclist-reference, sectheory-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T11:26:40+00:00"
+  at: "2026-08-11T17:37:03+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.sectheory.com/file-sharing.htm"
     title: Building Subversive File Sharing With Client Side Applications
+    author: Robert Hansen
   - id: capture
     resource: "https://web.archive.org/web/20080516202155/http://www.sectheory.com/file-sharing.htm"
 also_at: []
-authors: []
+authors:
+  - Robert Hansen
 canonical_url: ""
 cited_by:
   - "2008.md:43"
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: b9a9f4bc46bbf66a3fc82367106bffb6a757fb08cb81faf733f0c12eb9bc801e
 retrieved_from: "http://www.sectheory.com/file-sharing.htm"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T11:26:40+00:00"
+retrieved_utc: "2026-08-11T17:37:03+00:00"
 slug: sectheory-com-building-subversive-file-sharing-client-side-applications
 snapshot: 20080516202155
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Building Subversive File Sharing With Client Side Applications
 
-**Building Subversive File Sharing With Client Side Applications** - Author not stated, sectheory.com.
+**Building Subversive File Sharing With Client Side Applications** - Robert Hansen, sectheory.com.
 
 - Published: date not stated
 - Original: <http://www.sectheory.com/file-sharing.htm>
-- Preserved from: http://www.sectheory.com/file-sharing.htm (stored) on 2026-08-09
+- Preserved from: http://www.sectheory.com/file-sharing.htm (stored) on 2026-08-11
 - Capture timestamp: 20080516202155
 - Licence: unknown
 

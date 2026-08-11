@@ -5,19 +5,24 @@ resource: "https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-cache
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:56+00:00"
+  at: "2026-08-11T17:44:23+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-caches-persistent-tracking-in-modern-browsers/"
     title: "Tales of Favicons and Caches: Persistent Tracking in Modern Browsers"
+    author: Konstantinos Solomos, John Kristoff, Chris Kanich, Jason Polakis
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/ndss2021_1C-5_24202_paper.pdf"
-authors: []
+authors:
+  - Konstantinos Solomos
+  - John Kristoff
+  - Chris Kanich
+  - Jason Polakis
 canonical_url: ""
 cited_by:
-  - "2021.md:56"
+  - "2021.md:57"
 commit: ""
 content_sha256: eba9075fe5baf30d00d357398ba9ced0f546143f13dc4895c264b521d1581c65
 depth: full
@@ -31,8 +36,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: 5cf970f0bf53a895d043b0be1dac3fc971ce9bb4beb8af9f5080320455530126
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-caches-persistent-tracking-in-modern-browsers/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:56+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:23+00:00"
 slug: ndss-symposium-tales-favicons-caches-persistent-tracking-modern-browsers
 snapshot: ""
 title_english: ""
@@ -42,12 +47,12 @@ translation_of: ""
 
 # Tales of Favicons and Caches: Persistent Tracking in Modern Browsers
 
-**Tales of Favicons and Caches: Persistent Tracking in Modern Browsers** - Author not stated, NDSS Symposium.
+**Tales of Favicons and Caches: Persistent Tracking in Modern Browsers** - Konstantinos Solomos, John Kristoff, Chris Kanich, Jason Polakis, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-caches-persistent-tracking-in-modern-browsers/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/ndss2021_1C-5_24202_paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-caches-persistent-tracking-in-modern-browsers/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/tales-of-favicons-and-caches-persistent-tracking-in-modern-browsers/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

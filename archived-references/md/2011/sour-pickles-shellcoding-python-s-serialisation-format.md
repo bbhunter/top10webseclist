@@ -5,18 +5,20 @@ resource: "https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_P
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:31:26+00:00"
+  at: "2026-08-11T17:42:22+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf"
     title: "Sour Pickles: Shellcoding in Python's Serialisation Format"
+    author: Marco Slaviero
 also_at: []
-authors: []
+authors:
+  - Marco Slaviero
 canonical_url: ""
 cited_by:
-  - "2011.md:76"
+  - "2011.md:77"
 commit: ""
 content_sha256: e4e205cf1b1ef3bade9e1851cf584dfe7d06dc656b1ac9a9f3e6861bfa99bdfb
 depth: full
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 728103e01da5c7ac23cf67bb5cc49046fbd83e824092d11845b375e11ba430de
 retrieved_from: "https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:31:26+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:42:22+00:00"
 slug: sour-pickles-shellcoding-python-s-serialisation-format
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Sour Pickles: Shellcoding in Python's Serialisation Format
 
-**Sour Pickles: Shellcoding in Python's Serialisation Format** - Author not stated, Publisher not stated.
+**Sour Pickles: Shellcoding in Python's Serialisation Format** - Marco Slaviero, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf>
-- Preserved from: https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf (live) on 2026-08-10
+- Preserved from: https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

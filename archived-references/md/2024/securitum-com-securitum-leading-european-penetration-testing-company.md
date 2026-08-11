@@ -5,20 +5,22 @@ resource: "https://www.securitum.com/crashing_servers_with_digits.html"
 tags: [article, webseclist-reference, en, securitum-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:07+00:00"
+  at: "2026-08-11T17:45:29+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.securitum.com/crashing_servers_with_digits.html"
     title: Securitum. Leading european penetration testing company
+    author: Martin Matyja
 also_at: []
-authors: []
+authors:
+  - Martin Matyja
 canonical_url: ""
 cited_by:
   - "2024.md:109"
 commit: ""
-content_sha256: 00b991c0359148c606ea43558f87d265c33515709c731a4475f8a449f19df80e
+content_sha256: 8aac5ad8961dbc6feddd7c3eae40807f8e15818a9979faf099a30a07d3e8a6c9
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: securitum.com
 publisher_english: ""
 raw_sha256: 2688759ff04edda85289f1422dbc45baf9998c5e8843ad8506b9ae5a2d2741b4
 retrieved_from: "https://www.securitum.com/crashing_servers_with_digits.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:07+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:29+00:00"
 slug: securitum-com-securitum-leading-european-penetration-testing-company
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Securitum. Leading european penetration testing company
 
-**Securitum. Leading european penetration testing company** - Author not stated, securitum.com.
+**Securitum. Leading european penetration testing company** - Martin Matyja, securitum.com.
 
 - Published: date not stated
 - Original: <https://www.securitum.com/crashing_servers_with_digits.html>
-- Preserved from: https://www.securitum.com/crashing_servers_with_digits.html (live) on 2026-08-09
+- Preserved from: https://www.securitum.com/crashing_servers_with_digits.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,15 +5,17 @@ resource: "https://0xpwn.wordpress.com/wp-content/uploads/2024/09/a-deep-dive-in
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T00:58:46+00:00"
+  at: "2026-08-11T17:33:45+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://0xpwn.wordpress.com/wp-content/uploads/2024/09/a-deep-dive-into-openapi-security.pdf"
     title: a-deep-dive-into-openapi-security.pdf
+    author: Andrei Agape
 also_at: []
-authors: []
+authors:
+  - Andrei Agape
 canonical_url: ""
 cited_by:
   - "2024.md:84"
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 581e1278d0e84bb7e384fe581fb0c86a80617ecc46c59c6777cf5fe8865a42ec
 retrieved_from: "https://0xpwn.wordpress.com/wp-content/uploads/2024/09/a-deep-dive-into-openapi-security.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T00:58:46+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:33:45+00:00"
 slug: deep-dive-openapi-security-pdf
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # a-deep-dive-into-openapi-security.pdf
 
-**a-deep-dive-into-openapi-security.pdf** - Author not stated, Publisher not stated.
+**a-deep-dive-into-openapi-security.pdf** - Andrei Agape, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://0xpwn.wordpress.com/wp-content/uploads/2024/09/a-deep-dive-into-openapi-security.pdf>
-- Preserved from: https://0xpwn.wordpress.com/wp-content/uploads/2024/09/a-deep-dive-into-openapi-security.pdf (live) on 2026-08-09
+- Preserved from: https://0xpwn.wordpress.com/wp-content/uploads/2024/09/a-deep-dive-into-openapi-security.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

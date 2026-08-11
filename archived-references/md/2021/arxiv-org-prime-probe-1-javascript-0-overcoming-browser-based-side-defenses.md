@@ -5,18 +5,25 @@ resource: "https://arxiv.org/abs/2103.04952"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:02:32+00:00"
+  at: "2026-08-11T17:34:06+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://arxiv.org/abs/2103.04952"
     title: "Prime+Probe 1, JavaScript 0: Overcoming Browser-based Side-Channel Defenses"
+    author: "Anatoly Shusterman, Ayush Agarwal, Sioli O'Connell, Daniel Genkin, Yossi Oren, Yuval Yarom"
 also_at: []
-authors: []
+authors:
+  - Anatoly Shusterman
+  - Ayush Agarwal
+  - "Sioli O'Connell"
+  - Daniel Genkin
+  - Yossi Oren
+  - Yuval Yarom
 canonical_url: ""
 cited_by:
-  - "2021.md:55"
+  - "2021.md:56"
 commit: ""
 content_sha256: d931eb37767ede6389f30301af0da06eef2a01fff6600f0c1279672d3d1d145a
 depth: full
@@ -30,8 +37,8 @@ publisher: arXiv.org
 publisher_english: ""
 raw_sha256: 064eaab661c9a0fc406ddb5e9d6cfda520d94c03b1e5705f7d50111a33fc5fb2
 retrieved_from: "https://arxiv.org/abs/2103.04952"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:02:32+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:06+00:00"
 slug: arxiv-org-prime-probe-1-javascript-0-overcoming-browser-based-side-defenses
 snapshot: ""
 title_english: ""
@@ -41,11 +48,11 @@ translation_of: ""
 
 # Prime+Probe 1, JavaScript 0: Overcoming Browser-based Side-Channel Defenses
 
-**Prime+Probe 1, JavaScript 0: Overcoming Browser-based Side-Channel Defenses** - Author not stated, arXiv.org.
+**Prime+Probe 1, JavaScript 0: Overcoming Browser-based Side-Channel Defenses** - Anatoly Shusterman, Ayush Agarwal, Sioli O'Connell, Daniel Genkin, Yossi Oren, Yuval Yarom, arXiv.org.
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/2103.04952>
-- Preserved from: https://arxiv.org/abs/2103.04952 (live) on 2026-08-10
+- Preserved from: https://arxiv.org/abs/2103.04952 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

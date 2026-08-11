@@ -5,19 +5,21 @@ resource: "https://portswigger.net/research/introducing-the-url-validation-bypas
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:47+00:00"
+  at: "2026-08-11T17:44:54+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/introducing-the-url-validation-bypass-cheat-sheet"
     title: Introducing the URL validation bypass cheat sheet
+    author: Zakhar Fedotkin
     last_modified: 2024-09-03
 also_at: []
-authors: []
+authors:
+  - Zakhar Fedotkin
 canonical_url: ""
 cited_by:
-  - "2024.md:152"
+  - "2024.md:153"
 commit: ""
 content_sha256: 8e49ae91d93e1a60052de213715d0e20349acd23a449c6bfc182f2f5c2c89372
 depth: full
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: cee15b20be9bf8b48bdb9f91c5279b307c2a667729ed6ac42139324b0d862417
 retrieved_from: "https://portswigger.net/research/introducing-the-url-validation-bypass-cheat-sheet"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:47+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:54+00:00"
 slug: 2024-portswigger-research-introducing-url-validation-bypass-cheat-sheet
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Introducing the URL validation bypass cheat sheet
 
-**Introducing the URL validation bypass cheat sheet** - Author not stated, PortSwigger Research.
+**Introducing the URL validation bypass cheat sheet** - Zakhar Fedotkin, PortSwigger Research.
 
 - Published: 2024-09-03
 - Original: <https://portswigger.net/research/introducing-the-url-validation-bypass-cheat-sheet>
-- Preserved from: https://portswigger.net/research/introducing-the-url-validation-bypass-cheat-sheet (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/introducing-the-url-validation-bypass-cheat-sheet (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

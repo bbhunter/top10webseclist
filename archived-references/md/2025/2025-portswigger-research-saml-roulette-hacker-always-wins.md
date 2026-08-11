@@ -5,19 +5,21 @@ resource: "https://portswigger.net/research/saml-roulette-the-hacker-always-wins
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:53+00:00"
+  at: "2026-08-11T17:45:11+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/saml-roulette-the-hacker-always-wins"
     title: "SAML roulette: the hacker always wins"
+    author: Gareth Heyes
     last_modified: 2025-03-18
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: ""
 cited_by:
-  - "2025.md:89"
+  - "2025.md:90"
 commit: ""
 content_sha256: 5972d717af3c64de2283fa672b4be2809123e1eac8192bc3d5c5f6d95747f782
 depth: full
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 620336826d09ddfa3b5e7cff1bc3b661c6bc4bef9e2186963f108a36827613fa
 retrieved_from: "https://portswigger.net/research/saml-roulette-the-hacker-always-wins"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:53+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:11+00:00"
 slug: 2025-portswigger-research-saml-roulette-hacker-always-wins
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # SAML roulette: the hacker always wins
 
-**SAML roulette: the hacker always wins** - Author not stated, PortSwigger Research.
+**SAML roulette: the hacker always wins** - Gareth Heyes, PortSwigger Research.
 
 - Published: 2025-03-18
 - Original: <https://portswigger.net/research/saml-roulette-the-hacker-always-wins>
-- Preserved from: https://portswigger.net/research/saml-roulette-the-hacker-always-wins (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/saml-roulette-the-hacker-always-wins (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,19 +5,21 @@ resource: "https://portswigger.net/blog/practical-web-cache-poisoning"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:24+00:00"
+  at: "2026-08-11T17:44:49+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/blog/practical-web-cache-poisoning"
     title: Practical Web Cache Poisoning
+    author: James Kettle
     last_modified: 2018-08-09
   - id: canonical
     resource: "https://portswigger.net/research/practical-web-cache-poisoning"
 also_at:
   - "https://portswigger.net/kb/papers/7q1e9u9a/web-cache-poisoning.pdf"
-authors: []
+authors:
+  - James Kettle
 canonical_url: "https://portswigger.net/research/practical-web-cache-poisoning"
 cited_by:
   - "2018.md:6"
@@ -34,8 +36,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 3d8bf50df5f09f66719c5c34a3b8de3001bb10938ea5f964b780eafd0baa1896
 retrieved_from: "https://portswigger.net/research/practical-web-cache-poisoning"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:24+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:49+00:00"
 slug: 2018-portswigger-research-practical-web-cache-poisoning
 snapshot: ""
 title_english: ""
@@ -45,13 +47,13 @@ translation_of: ""
 
 # Practical Web Cache Poisoning
 
-**Practical Web Cache Poisoning** - Author not stated, PortSwigger Research.
+**Practical Web Cache Poisoning** - James Kettle, PortSwigger Research.
 
 - Published: 2018-08-09
 - Original: <https://portswigger.net/blog/practical-web-cache-poisoning>
 - Current location: <https://portswigger.net/research/practical-web-cache-poisoning>
 - Also published at: <https://portswigger.net/kb/papers/7q1e9u9a/web-cache-poisoning.pdf>
-- Preserved from: https://portswigger.net/research/practical-web-cache-poisoning (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/practical-web-cache-poisoning (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

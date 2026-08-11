@@ -5,18 +5,22 @@ resource: "https://robotattack.org/"
 tags: [article, webseclist-reference, en, robotattack-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:57:18+00:00"
+  at: "2026-08-11T17:36:55+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://robotattack.org/"
     title: The ROBOT Attack
+    author: Hanno Böck, Juraj Somorovsky, Craig Young
 also_at: []
-authors: []
+authors:
+  - Hanno Böck
+  - Juraj Somorovsky
+  - Craig Young
 canonical_url: ""
 cited_by:
-  - "2016-17.md:109"
+  - "2016-17.md:110"
 commit: ""
 content_sha256: 102e6485520d0ebfb44f7c7abb1174f19fe9a477ed7707afb8ad80930e3eedd4
 depth: full
@@ -30,8 +34,8 @@ publisher: robotattack.org
 publisher_english: ""
 raw_sha256: d5c085628d880debfb8c047b6cd7630a538eb359185f18ee8232e778964247ef
 retrieved_from: "https://robotattack.org/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:57:18+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:55+00:00"
 slug: robotattack-org-robot-attack
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # The ROBOT Attack
 
-**The ROBOT Attack** - Author not stated, robotattack.org.
+**The ROBOT Attack** - Hanno Böck, Juraj Somorovsky, Craig Young, robotattack.org.
 
 - Published: date not stated
 - Original: <https://robotattack.org/>
-- Preserved from: https://robotattack.org/ (live) on 2026-08-10
+- Preserved from: https://robotattack.org/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

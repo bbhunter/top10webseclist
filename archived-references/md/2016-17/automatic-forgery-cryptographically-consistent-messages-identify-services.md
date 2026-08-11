@@ -5,18 +5,23 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-f
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:35:02+00:00"
+  at: "2026-08-11T17:43:43+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf"
     title: Automatic Forgery of Cryptographically Consistent Messages to Identify Security Vulnerabilities in Mobile Services
+    author: Chaoshun Zuo, Wubing Wang, Rui Wang, Zhiqiang Lin
 also_at: []
-authors: []
+authors:
+  - Chaoshun Zuo
+  - Wubing Wang
+  - Rui Wang
+  - Zhiqiang Lin
 canonical_url: ""
 cited_by:
-  - "2016-17.md:69"
+  - "2016-17.md:70"
 commit: ""
 content_sha256: 7a242b43abe67078063dbc6fa3904d43ddcf9bef117c3b257c96f5a13b5e6b98
 depth: full
@@ -30,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 6d5ce4d54e9503712e36e8798aa7285752e9e84e75f3af3852ce4de59ac2896f
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:35:02+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:43+00:00"
 slug: automatic-forgery-cryptographically-consistent-messages-identify-services
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # Automatic Forgery of Cryptographically Consistent Messages to Identify Security Vulnerabilities in Mobile Services
 
-**Automatic Forgery of Cryptographically Consistent Messages to Identify Security Vulnerabilities in Mobile Services** - Author not stated, Publisher not stated.
+**Automatic Forgery of Cryptographically Consistent Messages to Identify Security Vulnerabilities in Mobile Services** - Chaoshun Zuo, Wubing Wang, Rui Wang, Zhiqiang Lin, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

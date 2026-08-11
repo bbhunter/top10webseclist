@@ -5,20 +5,20 @@ resource: "https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Hoffman.pdf
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:48:58+00:00"
+  at: "2026-08-11T17:39:31+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Hoffman.pdf"
     title: Ajax (in)security
-  - id: canonical
-    resource: "https://blackhat.com/presentations/bh-usa-06/BH-US-06-Hoffman.pdf"
+    author: Billy Hoffman
 also_at: []
-authors: []
-canonical_url: "https://blackhat.com/presentations/bh-usa-06/BH-US-06-Hoffman.pdf"
+authors:
+  - Billy Hoffman
+canonical_url: ""
 cited_by:
-  - "2006.md:92"
+  - "2006.md:88"
 commit: ""
 content_sha256: f1b53dd4bcbd4a809c66aaf8e6d73948015453639211d04eab2a53247161675b
 depth: full
@@ -31,9 +31,9 @@ published: ""
 publisher: ""
 publisher_english: ""
 raw_sha256: dd291c70f777e6c047951a3176aefdbea60fb8f1884846ec95fa067f45d2c61a
-retrieved_from: "https://blackhat.com/presentations/bh-usa-06/BH-US-06-Hoffman.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:48:58+00:00"
+retrieved_from: "https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Hoffman.pdf"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:31+00:00"
 slug: ajax-security
 snapshot: ""
 title_english: ""
@@ -43,12 +43,11 @@ translation_of: ""
 
 # Ajax (in)security
 
-**Ajax (in)security** - Author not stated, Publisher not stated.
+**Ajax (in)security** - Billy Hoffman, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Hoffman.pdf>
-- Current location: <https://blackhat.com/presentations/bh-usa-06/BH-US-06-Hoffman.pdf>
-- Preserved from: https://blackhat.com/presentations/bh-usa-06/BH-US-06-Hoffman.pdf (live) on 2026-08-08
+- Preserved from: https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Hoffman.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

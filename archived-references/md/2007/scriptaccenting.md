@@ -5,18 +5,22 @@ resource: "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/S
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:32:43+00:00"
+  at: "2026-08-11T17:36:03+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ScriptAccenting.pdf"
     title: ScriptAccenting
+    author: Shuo Chen, David Ross, Yi-Min Wang
 also_at: []
-authors: []
+authors:
+  - Shuo Chen
+  - David Ross
+  - Yi-Min Wang
 canonical_url: ""
 cited_by:
-  - "2007.md:104"
+  - "2007.md:105"
 commit: ""
 content_sha256: 1fcc48467c6bdfb11e1c5f4957c6401dda818eb2f1300aef2743ac8b4778c766
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 5a05447eb2defbfc607bb9578545f308e3640e4cf5bbe2988baa802a14a68301
 retrieved_from: "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ScriptAccenting.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:32:43+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:03+00:00"
 slug: scriptaccenting
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # ScriptAccenting
 
-**ScriptAccenting** - Author not stated, Publisher not stated.
+**ScriptAccenting** - Shuo Chen, David Ross, Yi-Min Wang, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ScriptAccenting.pdf>
-- Preserved from: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ScriptAccenting.pdf (live) on 2026-08-10
+- Preserved from: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ScriptAccenting.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

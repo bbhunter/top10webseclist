@@ -5,20 +5,27 @@ resource: "https://www.usenix.org/conference/usenixsecurity16/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:04:35+00:00"
+  at: "2026-08-11T17:46:28+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/vangoethem"
     title: "Request and Conquer: Exposing Cross-Origin Resource Size"
+    author: Tom Van Goethem, Mathy Vanhoef, Frank Piessens, Wouter Joosen
+  - id: capture
+    resource: "https://web.archive.org/web/20220127230913/https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/vangoethem"
 also_at: []
-authors: []
+authors:
+  - Tom Van Goethem
+  - Mathy Vanhoef
+  - Frank Piessens
+  - Wouter Joosen
 canonical_url: ""
 cited_by:
-  - "2016-17.md:71"
+  - "2016-17.md:72"
 commit: ""
-content_sha256: c000cb2287546ef67278e8cfdf00ebf3419d3286dcb4ea0eaa02e0325b5413d0
+content_sha256: 75e1bb91b14299b18cb20af5e7c4c10f918e50ec4dbc171f54e1f685bfd6f589
 depth: full
 depth_reason: default
 kind: article
@@ -28,12 +35,12 @@ original_url: "https://www.usenix.org/conference/usenixsecurity16/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: e4a4a8c80af7e2c4dc4b5a0511d29401bcd44d282f5d07f1a364a9e94a678f76
+raw_sha256: 40ae01b297e9f1149ad9648154b92779ad9fac87c0c17b14548226768f2f4fba
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/vangoethem"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:04:35+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:46:28+00:00"
 slug: usenix-org-request-conquer-exposing-cross-origin-resource-size
-snapshot: ""
+snapshot: 20220127230913
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -41,11 +48,12 @@ translation_of: ""
 
 # Request and Conquer: Exposing Cross-Origin Resource Size
 
-**Request and Conquer: Exposing Cross-Origin Resource Size** - Author not stated, usenix.org.
+**Request and Conquer: Exposing Cross-Origin Resource Size** - Tom Van Goethem, Mathy Vanhoef, Frank Piessens, Wouter Joosen, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/vangoethem>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/vangoethem (live) on 2026-08-10
+- Preserved from: https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/vangoethem (stored) on 2026-08-11
+- Capture timestamp: 20220127230913
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -60,11 +68,15 @@ page going offline. To read the original, follow the link above.
 
 Request and Conquer: Exposing Cross-Origin Resource Size | USENIX
 
- [ Back to USENIX ](https://www.usenix.org/)
+[USENIX](https://www.usenix.org/)
 
 #  Request and Conquer: Exposing Cross-Origin Resource Size
 
+Authors:
+
 Tom Van Goethem, Mathy Vanhoef, Frank Piessens, and Wouter Joosen, *Katholieke Universiteit Leuven*
+
+Abstract:
 
 Numerous initiatives are encouraging website owners to enable and enforce TLS encryption for the communication between the server and their users. Although this encryption, when configured properly, completely prevents adversaries from disclosing the content of the traffic, certain features are not concealed, most notably the size of messages. As modern-day web applications tend to provide users with a view that is tailored to the information they entrust these web services with, it is clear that knowing the size of specific resources, an adversary can easily uncover personal and sensitive information.
 
@@ -94,7 +106,7 @@ BibTeX
  pages = {447--462},
  url = {https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/vangoethem},
  publisher = {USENIX Association},
- month = aug
+ month = aug,
  }
 
 [Download](https://www.usenix.org/biblio/export/bibtex/197257)

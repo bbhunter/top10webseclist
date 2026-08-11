@@ -5,20 +5,23 @@ resource: "https://www.blackhat.com/docs/us-16/materials/us-16-VanGoethem-HEIST-
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:03:23+00:00"
+  at: "2026-08-11T17:38:20+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.blackhat.com/docs/us-16/materials/us-16-VanGoethem-HEIST-HTTP-Encrypted-Information-Can-Be-Stolen-Through-TCP-Windows-wp.pdf"
     title: "HEIST: HTTP Encrypted Information can be Stolen Through TCP-Windows"
+    author: Mathy Vanhoef, Tom Van Goethem
   - id: canonical
     resource: "https://blackhat.com/docs/us-16/materials/us-16-VanGoethem-HEIST-HTTP-Encrypted-Information-Can-Be-Stolen-Through-TCP-Windows-wp.pdf"
 also_at: []
-authors: []
+authors:
+  - Mathy Vanhoef
+  - Tom Van Goethem
 canonical_url: "https://blackhat.com/docs/us-16/materials/us-16-VanGoethem-HEIST-HTTP-Encrypted-Information-Can-Be-Stolen-Through-TCP-Windows-wp.pdf"
 cited_by:
-  - "2016-17.md:78"
+  - "2016-17.md:79"
 commit: ""
 content_sha256: ece5c1e09b838f84778dac4cff072e6422931f76e45e2b4421b276a42c5de221
 depth: full
@@ -32,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: d3c670c51163b7bbd6aac935de9c94b8b0b23816387edccb9c584de7e7a52fbe
 retrieved_from: "https://blackhat.com/docs/us-16/materials/us-16-VanGoethem-HEIST-HTTP-Encrypted-Information-Can-Be-Stolen-Through-TCP-Windows-wp.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:03:23+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:38:20+00:00"
 slug: heist-http-encrypted-information-can-be-stolen-through-tcp-windows
 snapshot: ""
 title_english: ""
@@ -43,12 +46,12 @@ translation_of: ""
 
 # HEIST: HTTP Encrypted Information can be Stolen Through TCP-Windows
 
-**HEIST: HTTP Encrypted Information can be Stolen Through TCP-Windows** - Author not stated, Publisher not stated.
+**HEIST: HTTP Encrypted Information can be Stolen Through TCP-Windows** - Mathy Vanhoef, Tom Van Goethem, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/docs/us-16/materials/us-16-VanGoethem-HEIST-HTTP-Encrypted-Information-Can-Be-Stolen-Through-TCP-Windows-wp.pdf>
 - Current location: <https://blackhat.com/docs/us-16/materials/us-16-VanGoethem-HEIST-HTTP-Encrypted-Information-Can-Be-Stolen-Through-TCP-Windows-wp.pdf>
-- Preserved from: https://blackhat.com/docs/us-16/materials/us-16-VanGoethem-HEIST-HTTP-Encrypted-Information-Can-Be-Stolen-Through-TCP-Windows-wp.pdf (live) on 2026-08-10
+- Preserved from: https://blackhat.com/docs/us-16/materials/us-16-VanGoethem-HEIST-HTTP-Encrypted-Information-Can-Be-Stolen-Through-TCP-Windows-wp.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

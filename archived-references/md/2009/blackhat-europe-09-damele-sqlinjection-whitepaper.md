@@ -5,17 +5,19 @@ resource: "https://www.blackhat.com/presentations/bh-europe-09/Guimaraes/Blackha
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:02:59+00:00"
+  at: "2026-08-11T17:39:27+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.blackhat.com/presentations/bh-europe-09/Guimaraes/Blackhat-europe-09-Damele-SQLInjection-whitepaper.pdf"
     title: Blackhat europe 09 Damele SQLInjection whitepaper
+    author: Bernardo Damele Assumpção Guimarães
   - id: canonical
     resource: "https://blackhat.com/presentations/bh-europe-09/Guimaraes/Blackhat-europe-09-Damele-SQLInjection-whitepaper.pdf"
 also_at: []
-authors: []
+authors:
+  - Bernardo Damele Assumpção Guimarães
 canonical_url: "https://blackhat.com/presentations/bh-europe-09/Guimaraes/Blackhat-europe-09-Damele-SQLInjection-whitepaper.pdf"
 cited_by:
   - "2009.md:81"
@@ -32,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: d7ae79b18cb503635cf4e7952bd054354bf38dbbb5cf70fa1ed8ecb133293568
 retrieved_from: "https://blackhat.com/presentations/bh-europe-09/Guimaraes/Blackhat-europe-09-Damele-SQLInjection-whitepaper.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:02:59+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:27+00:00"
 slug: blackhat-europe-09-damele-sqlinjection-whitepaper
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Blackhat europe 09 Damele SQLInjection whitepaper
 
-**Blackhat europe 09 Damele SQLInjection whitepaper** - Author not stated, Publisher not stated.
+**Blackhat europe 09 Damele SQLInjection whitepaper** - Bernardo Damele Assumpção Guimarães, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/presentations/bh-europe-09/Guimaraes/Blackhat-europe-09-Damele-SQLInjection-whitepaper.pdf>
 - Current location: <https://blackhat.com/presentations/bh-europe-09/Guimaraes/Blackhat-europe-09-Damele-SQLInjection-whitepaper.pdf>
-- Preserved from: https://blackhat.com/presentations/bh-europe-09/Guimaraes/Blackhat-europe-09-Damele-SQLInjection-whitepaper.pdf (live) on 2026-08-09
+- Preserved from: https://blackhat.com/presentations/bh-europe-09/Guimaraes/Blackhat-europe-09-Damele-SQLInjection-whitepaper.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

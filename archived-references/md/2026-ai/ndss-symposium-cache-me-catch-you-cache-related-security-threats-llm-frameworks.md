@@ -5,20 +5,27 @@ resource: "https://www.ndss-symposium.org/ndss-paper/cache-me-catch-you-cache-re
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T18:57:30+00:00"
+  at: "2026-08-11T17:42:58+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/cache-me-catch-you-cache-related-security-threats-in-llm-serving-frameworks/"
     title: "Cache Me, Catch You: Cache Related Security Threats in LLM Serving Frameworks"
-also_at: []
-authors: []
+    author: XiangFan Wu, Lingyun Ying, Guoqiang Chen, Yacong Gu, Haipeng Qu
+also_at:
+  - "https://www.ndss-symposium.org/wp-content/uploads/2026-f2812-paper.pdf"
+authors:
+  - XiangFan Wu
+  - Lingyun Ying
+  - Guoqiang Chen
+  - Yacong Gu
+  - Haipeng Qu
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:96"
+  - "2026-ai.md:73"
 commit: ""
-content_sha256: 067d5dae26b061a003324052512abb35d35dfb007d07e853a3617bf4c8c44e2a
+content_sha256: c8f52f7051834f1accffeb8327327f7fe1c27fa3cf899cda952aae071be16842
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +37,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: cc7e2f67e1303993fd1b95aa080c1b9246e1fbb120c3c8a364d1db7ec8e27313
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/cache-me-catch-you-cache-related-security-threats-in-llm-serving-frameworks/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T18:57:30+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:42:58+00:00"
 slug: ndss-symposium-cache-me-catch-you-cache-related-security-threats-llm-frameworks
 snapshot: ""
 title_english: ""
@@ -41,11 +48,12 @@ translation_of: ""
 
 # Cache Me, Catch You: Cache Related Security Threats in LLM Serving Frameworks
 
-**Cache Me, Catch You: Cache Related Security Threats in LLM Serving Frameworks** - Author not stated, NDSS Symposium.
+**Cache Me, Catch You: Cache Related Security Threats in LLM Serving Frameworks** - XiangFan Wu, Lingyun Ying, Guoqiang Chen, Yacong Gu, Haipeng Qu, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/cache-me-catch-you-cache-related-security-threats-in-llm-serving-frameworks/>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/cache-me-catch-you-cache-related-security-threats-in-llm-serving-frameworks/ (live) on 2026-08-09
+- Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2026-f2812-paper.pdf>
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/cache-me-catch-you-cache-related-security-threats-in-llm-serving-frameworks/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

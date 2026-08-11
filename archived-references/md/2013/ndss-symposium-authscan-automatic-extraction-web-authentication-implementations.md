@@ -5,20 +5,29 @@ resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/authscan-
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:34:31+00:00"
+  at: "2026-08-11T17:44:04+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/authscan-automatic-extraction-web-authentication-protocols-implementations/"
     title: "AUTHSCAN: Automatic Extraction of Web Authentication Protocols from Implementations"
+    author: Guangdong Bai, Jike Lei, Guozhu Meng, Sai Sathyanarayan Venkatraman, Prateek Saxena, Jun Sun, Yang Liu, Jin Song Dong
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_4_0.pdf"
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/Presentation04_4.pdf"
-authors: []
+authors:
+  - Guangdong Bai
+  - Jike Lei
+  - Guozhu Meng
+  - Sai Sathyanarayan Venkatraman
+  - Prateek Saxena
+  - Jun Sun
+  - Yang Liu
+  - Jin Song Dong
 canonical_url: ""
 cited_by:
-  - "2013.md:51"
+  - "2013.md:52"
 commit: ""
 content_sha256: 54787224d53e050bf28b87744acd1597f667537ba6d1db28cd4d7d8541231630
 depth: full
@@ -32,8 +41,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 5dc0433e7ea92a5e7a3d3887a0f5aba59d8698b70e7952db67bb8a6fc54cb6ea
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_4_0.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:34:31+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:04+00:00"
 slug: ndss-symposium-authscan-automatic-extraction-web-authentication-implementations
 snapshot: ""
 title_english: ""
@@ -43,13 +52,13 @@ translation_of: ""
 
 # AUTHSCAN: Automatic Extraction of Web Authentication Protocols from Implementations
 
-**AUTHSCAN: Automatic Extraction of Web Authentication Protocols from Implementations** - Author not stated, Publisher not stated.
+**AUTHSCAN: Automatic Extraction of Web Authentication Protocols from Implementations** - Guangdong Bai, Jike Lei, Guozhu Meng, Sai Sathyanarayan Venkatraman, Prateek Saxena, Jun Sun, Yang Liu, Jin Song Dong, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/authscan-automatic-extraction-web-authentication-protocols-implementations/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_4_0.pdf>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/Presentation04_4.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_4_0.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_4_0.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

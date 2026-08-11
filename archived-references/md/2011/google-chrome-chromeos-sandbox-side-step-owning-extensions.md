@@ -5,15 +5,18 @@ resource: "https://media.blackhat.com/bh-us-11/Johansen/BH_US_11_JohnasenOsborn_
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:34:13+00:00"
+  at: "2026-08-11T17:42:27+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://media.blackhat.com/bh-us-11/Johansen/BH_US_11_JohnasenOsborn_Hacking_Google_WP.pdf"
     title: Google Chrome/ChromeOS sandbox side step via owning extensions
+    author: Kyle Osborn, Matt Johansen
 also_at: []
-authors: []
+authors:
+  - Kyle Osborn
+  - Matt Johansen
 canonical_url: ""
 cited_by:
   - "2011.md:55"
@@ -30,8 +33,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 80c7333c145b2607bdb348f65a835c791e547bc0f35bf3d70cd9fcd928471e58
 retrieved_from: "https://media.blackhat.com/bh-us-11/Johansen/BH_US_11_JohnasenOsborn_Hacking_Google_WP.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:34:13+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:42:27+00:00"
 slug: google-chrome-chromeos-sandbox-side-step-owning-extensions
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # Google Chrome/ChromeOS sandbox side step via owning extensions
 
-**Google Chrome/ChromeOS sandbox side step via owning extensions** - Author not stated, Publisher not stated.
+**Google Chrome/ChromeOS sandbox side step via owning extensions** - Kyle Osborn, Matt Johansen, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://media.blackhat.com/bh-us-11/Johansen/BH_US_11_JohnasenOsborn_Hacking_Google_WP.pdf>
-- Preserved from: https://media.blackhat.com/bh-us-11/Johansen/BH_US_11_JohnasenOsborn_Hacking_Google_WP.pdf (live) on 2026-08-09
+- Preserved from: https://media.blackhat.com/bh-us-11/Johansen/BH_US_11_JohnasenOsborn_Hacking_Google_WP.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,20 +5,29 @@ resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/turon
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:05:12+00:00"
+  at: "2026-08-11T17:46:06+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/turonova"
     title: "Counting in Regexes Considered Harmful: Exposing ReDoS Vulnerability of Nonbacktracking Matchers"
+    author: Lenka Turoňová, Lukáš Holík, Ivan Homoliak, Ondřej Lengál, Margus Veanes, Tomáš Vojnar
+  - id: capture
+    resource: "https://web.archive.org/web/20221217234228/https://www.usenix.org/conference/usenixsecurity22/presentation/turonova"
 also_at: []
-authors: []
+authors:
+  - Lenka Turoňová
+  - Lukáš Holík
+  - Ivan Homoliak
+  - Ondřej Lengál
+  - Margus Veanes
+  - Tomáš Vojnar
 canonical_url: ""
 cited_by:
-  - "2022.md:74"
+  - "2022.md:75"
 commit: ""
-content_sha256: a6e24e8b11aad4b20412d6bb2932984d56982e9772e30b2030aaa8a1a076cf3e
+content_sha256: e4b800418db839c6e250656d2919c5c8b66c17a3946f1b2d5cb228a2997a052b
 depth: full
 depth_reason: default
 kind: article
@@ -28,12 +37,12 @@ original_url: "https://www.usenix.org/conference/usenixsecurity22/presentation/t
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: ca31bbccc643a1f82ae961f0d96f6c20b58aa19cfe23bc4bb21afc5789e4380d
+raw_sha256: 2605ef7eec71cb31c27843f83b88043f57c1af6efc3d4f6fc1e69a114a372c17
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity22/presentation/turonova"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:05:12+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:46:06+00:00"
 slug: usenix-org-counting-regexes-considered-harmful-exposing-redos-matchers
-snapshot: ""
+snapshot: 20221217234228
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -41,11 +50,12 @@ translation_of: ""
 
 # Counting in Regexes Considered Harmful: Exposing ReDoS Vulnerability of Nonbacktracking Matchers
 
-**Counting in Regexes Considered Harmful: Exposing ReDoS Vulnerability of Nonbacktracking Matchers** - Author not stated, usenix.org.
+**Counting in Regexes Considered Harmful: Exposing ReDoS Vulnerability of Nonbacktracking Matchers** - Lenka Turoňová, Lukáš Holík, Ivan Homoliak, Ondřej Lengál, Margus Veanes, Tomáš Vojnar, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity22/presentation/turonova>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/turonova (live) on 2026-08-10
+- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/turonova (stored) on 2026-08-11
+- Capture timestamp: 20221217234228
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -60,9 +70,25 @@ page going offline. To read the original, follow the link above.
 
 # Counting in Regexes Considered Harmful: Exposing ReDoS Vulnerability of Nonbacktracking Matchers
 
+Authors:
+
 Lenka Turoňová, Lukáš Holík, Ivan Homoliak, and Ondřej Lengál, *Faculty of Information Technology, Brno University of Technology;* Margus Veanes, *Microsoft Research Redmond;* Tomáš Vojnar, *Faculty of Information Technology, Brno University of Technology*
 
+Abstract:
+
 In this paper, we study the performance characteristics of nonbacktracking regex matchers and their vulnerability against ReDoS (*regular expression denial of service*) attacks. We focus on their known Achilles heel, which are extended regexes that use bounded quantifiers (e.g., `'(ab){100}'`). We propose a method for generating input texts that can cause ReDoS attacks on these matchers. The method exploits the bounded repetition and uses it to force expensive simulations of the deterministic automaton for the regex. We perform an extensive experimental evaluation of our and other state-of-the-art ReDoS generators on a large set of practical regexes with a comprehensive set of backtracking and nonbacktracking matchers, as well as experiments where we demonstrate ReDoS attacks on state-of-the-art real-world security applications containing SNORT with Hyperscan and the HW-accelerated regex matching engine on the NVIDIA BlueField-2 card. Our experiments show that bounded repetition is indeed a notable weakness of nonbacktracking matchers, with our generator being the only one capable of significantly increasing their running time.
+
+##  [Lenka Turoňová, Faculty of Information Technology, Brno University of Technology](https://www.usenix.org/conference/usenixsecurity22/speaker-or-organizer/lenka-turo%C5%88ov%C3%A1-faculty-information-technology-brno)
+
+##  [Lukáš Holík, Faculty of Information Technology, Brno University of Technology](https://www.usenix.org/conference/usenixsecurity22/speaker-or-organizer/luk%C3%A1%C5%A1-hol%C3%ADk-faculty-information-technology-brno)
+
+##  [Ivan Homoliak, Faculty of Information Technology, Brno University of Technology](https://www.usenix.org/conference/usenixsecurity22/speaker-or-organizer/ivan-homoliak-faculty-information-technology-brno)
+
+##  [Ondřej Lengál, Faculty of Information Technology, Brno University of Technology](https://www.usenix.org/conference/usenixsecurity22/speaker-or-organizer/ond%C5%99ej-leng%C3%A1l-faculty-information-technology-brno)
+
+##  [Margus Veanes, Microsoft Research Redmond](https://www.usenix.org/conference/usenixsecurity22/speaker-or-organizer/margus-veanes-microsoft-research-redmond)
+
+##  [Tomáš Vojnar, Faculty of Information Technology, Brno University of Technology](https://www.usenix.org/conference/usenixsecurity22/speaker-or-organizer/tom%C3%A1%C5%A1-vojnar-faculty-information-technology-brno)
 
 ## Open Access Media
 
@@ -80,16 +106,16 @@ BibTeX
  pages = {4165--4182},
  url = {https://www.usenix.org/conference/usenixsecurity22/presentation/turonova},
  publisher = {USENIX Association},
- month = aug
+ month = aug,
  }
 
 [Download](https://www.usenix.org/biblio/export/bibtex/279930)
 
-![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Turoňová PDF](https://www.usenix.org/system/files/sec22-turonova.pdf)
+![PDF icon](https://www.usenix.org/modules/file/icons/application-pdf.png) [Turoňová PDF](https://www.usenix.org/system/files/sec22-turonova.pdf)
 
-![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Turoňová Paper (Prepublication) PDF](https://www.usenix.org/system/files/sec22fall_turonova.pdf)
+![PDF icon](https://www.usenix.org/modules/file/icons/application-pdf.png) [Turoňová Paper (Prepublication) PDF](https://www.usenix.org/system/files/sec22fall_turonova.pdf)
 
-![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-unlocked.png)
+![](https://www.usenix.org/sites/all/modules/usenix/usenix_files/images/usenix-unlocked.png)
 
 [View the slides](https://www.usenix.org/system/files/sec22_slides-turonova.pdf)
 

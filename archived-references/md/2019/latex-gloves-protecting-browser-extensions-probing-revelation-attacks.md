@@ -5,18 +5,23 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:35:14+00:00"
+  at: "2026-08-11T17:44:07+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf"
     title: "Latex Gloves: Protecting Browser Extensions from Probing and Revelation Attacks"
+    author: Alexander Sjösten, Steven Van Acker, Pablo Picazo-Sanchez, Andrei Sabelfeld
 also_at: []
-authors: []
+authors:
+  - Alexander Sjösten
+  - Steven Van Acker
+  - Pablo Picazo-Sanchez
+  - Andrei Sabelfeld
 canonical_url: ""
 cited_by:
-  - "2019.md:76"
+  - "2019.md:77"
 commit: ""
 content_sha256: f54cd205f120d35fdd147c3dc0e4bdf5750041cb2d46d9f00cd407722cf8235a
 depth: full
@@ -30,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 5e7002617ec4bfb705405757e0712a795e23a0c54ce36d1f29cfeda569a091b9
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:35:14+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:07+00:00"
 slug: latex-gloves-protecting-browser-extensions-probing-revelation-attacks
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # Latex Gloves: Protecting Browser Extensions from Probing and Revelation Attacks
 
-**Latex Gloves: Protecting Browser Extensions from Probing and Revelation Attacks** - Author not stated, Publisher not stated.
+**Latex Gloves: Protecting Browser Extensions from Probing and Revelation Attacks** - Alexander Sjösten, Steven Van Acker, Pablo Picazo-Sanchez, Andrei Sabelfeld, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

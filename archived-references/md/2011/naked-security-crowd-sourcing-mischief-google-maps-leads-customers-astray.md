@@ -5,22 +5,24 @@ resource: "https://nakedsecurity.sophos.com/2011/09/07/crowd-sourcing-mischief-o
 tags: [article, webseclist-reference, en, naked-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:09:07+00:00"
+  at: "2026-08-11T17:36:09+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://nakedsecurity.sophos.com/2011/09/07/crowd-sourcing-mischief-on-google-maps-leads-customers-astray/"
     title: Crowd-sourcing mischief on Google Maps leads customers astray
+    author: Lisa Vaas
   - id: capture
     resource: "https://web.archive.org/web/20111229115245/https://nakedsecurity.sophos.com/2011/09/07/crowd-sourcing-mischief-on-google-maps-leads-customers-astray/"
 also_at: []
-authors: []
+authors:
+  - Lisa Vaas
 canonical_url: ""
 cited_by:
   - "2011.md:42"
 commit: ""
-content_sha256: ff010595e16aeafc8f172fd1dcca1e4830e739cf7e041769b13f2ab1061e2543
+content_sha256: 96ccc5c36759ebc60096fd3105b52d8ac92696e8ea6a8460a8d34a3aaf2107b1
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 8d012d8b573dc0d41e391b4ab93b67fe39c956a71e313fa9816fe75fc9692596
 retrieved_from: "https://nakedsecurity.sophos.com/2011/09/07/crowd-sourcing-mischief-on-google-maps-leads-customers-astray/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:09:07+00:00"
+retrieved_utc: "2026-08-11T17:36:09+00:00"
 slug: naked-security-crowd-sourcing-mischief-google-maps-leads-customers-astray
 snapshot: 20111229115245
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Crowd-sourcing mischief on Google Maps leads customers astray
 
-**Crowd-sourcing mischief on Google Maps leads customers astray** - Author not stated, Naked Security.
+**Crowd-sourcing mischief on Google Maps leads customers astray** - Lisa Vaas, Naked Security.
 
 - Published: date not stated
 - Original: <https://nakedsecurity.sophos.com/2011/09/07/crowd-sourcing-mischief-on-google-maps-leads-customers-astray/>
-- Preserved from: https://nakedsecurity.sophos.com/2011/09/07/crowd-sourcing-mischief-on-google-maps-leads-customers-astray/ (stored) on 2026-08-09
+- Preserved from: https://nakedsecurity.sophos.com/2011/09/07/crowd-sourcing-mischief-on-google-maps-leads-customers-astray/ (stored) on 2026-08-11
 - Capture timestamp: 20111229115245
 - Licence: unknown
 
@@ -124,10 +126,6 @@ Let's just hope they figure out how to unscrew, and to remain in the unscrew aid
  [Follow @LisaVaas](http://twitter.com/LisaVaas)
 
 Tags: [Google](http://nakedsecurity.sophos.com/tag/google/), [Google Maps](http://nakedsecurity.sophos.com/tag/google-maps/), [Google Places](http://nakedsecurity.sophos.com/tag/google-places/), [Spam](http://nakedsecurity.sophos.com/tag/spam/)
-
- 
-
-  
 
  ![](http://0.gravatar.com/avatar/607892ea3a6693d2c75fbe9bf3ca0fc1?s=60&d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&r=G)
 

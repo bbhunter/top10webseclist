@@ -5,18 +5,26 @@ resource: "https://fabianmonrose.github.io/papers/morton18.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:09:53+00:00"
+  at: "2026-08-11T17:35:17+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://fabianmonrose.github.io/papers/morton18.pdf"
     title: "Security Risks in Asynchronous Web Servers: When Performance Optimizations Amplify the Impact of Data-Oriented Attacks"
+    author: Micah Morton, Jan Werner, Panagiotis Kintis, Kevin Snow, Manos Antonakakis, Michalis Polychronakis, Fabian Monrose
 also_at: []
-authors: []
+authors:
+  - Micah Morton
+  - Jan Werner
+  - Panagiotis Kintis
+  - Kevin Snow
+  - Manos Antonakakis
+  - Michalis Polychronakis
+  - Fabian Monrose
 canonical_url: ""
 cited_by:
-  - "2018.md:88"
+  - "2018.md:89"
 commit: ""
 content_sha256: e75af1d73ecf390a95497eb52f75c98af94e5eb489c99470a8183d24b0e33a0f
 depth: full
@@ -30,8 +38,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 83c8c5cf4fcca88a25523579521e66b1f772a34f53be9e37ba735b6e5df88930
 retrieved_from: "https://fabianmonrose.github.io/papers/morton18.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:09:53+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:17+00:00"
 slug: security-risks-asynchronous-web-servers-when-performance-optimizations-attacks
 snapshot: ""
 title_english: ""
@@ -41,11 +49,11 @@ translation_of: ""
 
 # Security Risks in Asynchronous Web Servers: When Performance Optimizations Amplify the Impact of Data-Oriented Attacks
 
-**Security Risks in Asynchronous Web Servers: When Performance Optimizations Amplify the Impact of Data-Oriented Attacks** - Author not stated, Publisher not stated.
+**Security Risks in Asynchronous Web Servers: When Performance Optimizations Amplify the Impact of Data-Oriented Attacks** - Micah Morton, Jan Werner, Panagiotis Kintis, Kevin Snow, Manos Antonakakis, Michalis Polychronakis, Fabian Monrose, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://fabianmonrose.github.io/papers/morton18.pdf>
-- Preserved from: https://fabianmonrose.github.io/papers/morton18.pdf (live) on 2026-08-10
+- Preserved from: https://fabianmonrose.github.io/papers/morton18.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

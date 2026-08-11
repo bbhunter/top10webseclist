@@ -5,17 +5,19 @@ resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Gavrichenkov-Brea
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-07T09:40:57+00:00"
+  at: "2026-08-11T17:39:40+00:00"
 status: stable
-stale_after: 2027-08-07
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Gavrichenkov-Breaking-HTTPS-With-BGP-Hijacking-wp.pdf"
     title: us 15 Gavrichenkov Breaking HTTPS With BGP Hijacking wp
+    author: Artyom Gavrichenkov
   - id: canonical
     resource: "https://blackhat.com/docs/us-15/materials/us-15-Gavrichenkov-Breaking-HTTPS-With-BGP-Hijacking-wp.pdf"
 also_at: []
-authors: []
+authors:
+  - Artyom Gavrichenkov
 canonical_url: "https://blackhat.com/docs/us-15/materials/us-15-Gavrichenkov-Breaking-HTTPS-With-BGP-Hijacking-wp.pdf"
 cited_by:
   - "2015.md:19"
@@ -32,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: f3e9647e9308d63a23d464e293d342fe3ff5f5541cdb14d32f7738dde909f326
 retrieved_from: "https://blackhat.com/docs/us-15/materials/us-15-Gavrichenkov-Breaking-HTTPS-With-BGP-Hijacking-wp.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-07T09:40:57+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:40+00:00"
 slug: us-15-gavrichenkov-breaking-https-bgp-hijacking-wp
 snapshot: ""
 title_english: ""
@@ -43,16 +45,16 @@ translation_of: ""
 
 # us 15 Gavrichenkov Breaking HTTPS With BGP Hijacking wp
 
-**us 15 Gavrichenkov Breaking HTTPS With BGP Hijacking wp** - Author not stated, Publisher not stated.
+**us 15 Gavrichenkov Breaking HTTPS With BGP Hijacking wp** - Artyom Gavrichenkov, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/docs/us-15/materials/us-15-Gavrichenkov-Breaking-HTTPS-With-BGP-Hijacking-wp.pdf>
 - Current location: <https://blackhat.com/docs/us-15/materials/us-15-Gavrichenkov-Breaking-HTTPS-With-BGP-Hijacking-wp.pdf>
-- Preserved from: https://blackhat.com/docs/us-15/materials/us-15-Gavrichenkov-Breaking-HTTPS-With-BGP-Hijacking-wp.pdf (live) on 2026-08-07
+- Preserved from: https://blackhat.com/docs/us-15/materials/us-15-Gavrichenkov-Breaking-HTTPS-With-BGP-Hijacking-wp.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

@@ -5,18 +5,21 @@ resource: "https://css.csail.mit.edu/6.858/2012/readings/oauth-sso.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:08:14+00:00"
+  at: "2026-08-11T17:34:44+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://css.csail.mit.edu/6.858/2012/readings/oauth-sso.pdf"
     title: "The Devil is in the (Implementation) Details: An Empirical Analysis of OAuth SSO Systems"
+    author: San-Tsai Sun, Konstantin Beznosov
 also_at: []
-authors: []
+authors:
+  - San-Tsai Sun
+  - Konstantin Beznosov
 canonical_url: ""
 cited_by:
-  - "2012.md:81"
+  - "2012.md:82"
 commit: ""
 content_sha256: b0159bc7141344bbab436b1a0abfd52169a23d27c1dd8fe355d2f6c883c2ac5d
 depth: full
@@ -30,8 +33,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 98667a1563c2e064652a00b1ff2e1ba1e1e2175ecf2ca066b03c73343c091fa9
 retrieved_from: "https://css.csail.mit.edu/6.858/2012/readings/oauth-sso.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:08:14+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:44+00:00"
 slug: devil-implementation-details-empirical-analysis-oauth-sso-systems
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # The Devil is in the (Implementation) Details: An Empirical Analysis of OAuth SSO Systems
 
-**The Devil is in the (Implementation) Details: An Empirical Analysis of OAuth SSO Systems** - Author not stated, Publisher not stated.
+**The Devil is in the (Implementation) Details: An Empirical Analysis of OAuth SSO Systems** - San-Tsai Sun, Konstantin Beznosov, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://css.csail.mit.edu/6.858/2012/readings/oauth-sso.pdf>
-- Preserved from: https://css.csail.mit.edu/6.858/2012/readings/oauth-sso.pdf (live) on 2026-08-10
+- Preserved from: https://css.csail.mit.edu/6.858/2012/readings/oauth-sso.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

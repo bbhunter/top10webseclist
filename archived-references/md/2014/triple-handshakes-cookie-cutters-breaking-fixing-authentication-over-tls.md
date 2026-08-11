@@ -5,18 +5,24 @@ resource: "https://www.ieee-security.org/TC/SP2014/papers/TripleHandshakesandCoo
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:11+00:00"
+  at: "2026-08-11T17:41:41+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2014/papers/TripleHandshakesandCookieCutters_c_BreakingandFixingAuthenticationoverTLS.pdf"
     title: "Triple Handshakes and Cookie Cutters: Breaking and Fixing Authentication over TLS"
+    author: Karthikeyan Bhargavan, Antoine Delignat-Lavaud, Cédric Fournet, Alfredo Pironti, Pierre-Yves Strub
 also_at: []
-authors: []
+authors:
+  - Karthikeyan Bhargavan
+  - Antoine Delignat-Lavaud
+  - Cédric Fournet
+  - Alfredo Pironti
+  - Pierre-Yves Strub
 canonical_url: ""
 cited_by:
-  - "2014.md:61"
+  - "2014.md:62"
 commit: ""
 content_sha256: 29eefd08eb06a9cf57f238b76114d98146327bdcbd4fd7a724b4e291b34f0595
 depth: full
@@ -30,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 1222724bd595cc533bbae6d9abdc3fe46d7311c7fd68f16a20dfd4e0f5e26f06
 retrieved_from: "https://www.ieee-security.org/TC/SP2014/papers/TripleHandshakesandCookieCutters_c_BreakingandFixingAuthenticationoverTLS.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:11+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:41+00:00"
 slug: triple-handshakes-cookie-cutters-breaking-fixing-authentication-over-tls
 snapshot: ""
 title_english: ""
@@ -41,11 +47,11 @@ translation_of: ""
 
 # Triple Handshakes and Cookie Cutters: Breaking and Fixing Authentication over TLS
 
-**Triple Handshakes and Cookie Cutters: Breaking and Fixing Authentication over TLS** - Author not stated, Publisher not stated.
+**Triple Handshakes and Cookie Cutters: Breaking and Fixing Authentication over TLS** - Karthikeyan Bhargavan, Antoine Delignat-Lavaud, Cédric Fournet, Alfredo Pironti, Pierre-Yves Strub, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2014/papers/TripleHandshakesandCookieCutters_c_BreakingandFixingAuthenticationoverTLS.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2014/papers/TripleHandshakesandCookieCutters_c_BreakingandFixingAuthenticationoverTLS.pdf (live) on 2026-08-10
+- Preserved from: https://www.ieee-security.org/TC/SP2014/papers/TripleHandshakesandCookieCutters_c_BreakingandFixingAuthenticationoverTLS.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

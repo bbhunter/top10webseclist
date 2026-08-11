@@ -5,17 +5,19 @@ resource: "http://www.securityfocus.com/archive/1/441014/30/0/threaded"
 tags: [article, webseclist-reference, securityfocus-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T13:15:37+00:00"
+  at: "2026-08-11T17:45:32+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.securityfocus.com/archive/1/441014/30/0/threaded"
     title: Forging HTTP request headers with Flash
+    author: Amit Klein
   - id: capture
     resource: "https://web.archive.org/web/20080724012935/http://www.securityfocus.com/archive/1/441014/30/0/threaded"
 also_at: []
-authors: []
+authors:
+  - Amit Klein
 canonical_url: ""
 cited_by:
   - "2006.md:10"
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: dba439aacf3f190125b31dd93b4fc3c4d282e2507672f111e88dab9fc6409071
 retrieved_from: "http://www.securityfocus.com/archive/1/441014/30/0/threaded"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T13:15:37+00:00"
+retrieved_utc: "2026-08-11T17:45:32+00:00"
 slug: securityfocus-com-forging-http-request-headers-flash
 snapshot: 20080724012935
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Forging HTTP request headers with Flash
 
-**Forging HTTP request headers with Flash** - Author not stated, securityfocus.com.
+**Forging HTTP request headers with Flash** - Amit Klein, securityfocus.com.
 
 - Published: date not stated
 - Original: <http://www.securityfocus.com/archive/1/441014/30/0/threaded>
-- Preserved from: http://www.securityfocus.com/archive/1/441014/30/0/threaded (stored) on 2026-08-10
+- Preserved from: http://www.securityfocus.com/archive/1/441014/30/0/threaded (stored) on 2026-08-11
 - Capture timestamp: 20080724012935
 - Licence: unknown
 

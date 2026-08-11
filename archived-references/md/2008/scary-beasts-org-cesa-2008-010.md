@@ -5,15 +5,17 @@ resource: "http://scary.beasts.org/security/CESA-2008-010.html"
 tags: [article, webseclist-reference, scary-beasts-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:16+00:00"
+  at: "2026-08-11T17:36:59+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://scary.beasts.org/security/CESA-2008-010.html"
     title: CESA-2008-010
+    author: Chris Evans
 also_at: []
-authors: []
+authors:
+  - Chris Evans
 canonical_url: ""
 cited_by:
   - "2008.md:44"
@@ -31,7 +33,7 @@ publisher_english: ""
 raw_sha256: 78a24307ffc900c0910e215c9abf5b05b9254f514b84a4998445d9ce3c66da4c
 retrieved_from: "http://scary.beasts.org/security/CESA-2008-010.html"
 retrieved_kind: browser
-retrieved_utc: "2026-08-09T10:26:16+00:00"
+retrieved_utc: "2026-08-11T17:36:59+00:00"
 slug: scary-beasts-org-cesa-2008-010
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # CESA-2008-010
 
-**CESA-2008-010** - Author not stated, scary.beasts.org.
+**CESA-2008-010** - Chris Evans, scary.beasts.org.
 
 - Published: date not stated
 - Original: <http://scary.beasts.org/security/CESA-2008-010.html>
-- Preserved from: http://scary.beasts.org/security/CESA-2008-010.html (browser) on 2026-08-09
+- Preserved from: http://scary.beasts.org/security/CESA-2008-010.html (browser) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

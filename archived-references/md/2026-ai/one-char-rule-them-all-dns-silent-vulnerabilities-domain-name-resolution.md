@@ -5,18 +5,23 @@ resource: "https://i.blackhat.com/Asia-26/Presentations/BHAS26-Miao-One-Char-to-
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:47:09+00:00"
+  at: "2026-08-11T17:40:23+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/Asia-26/Presentations/BHAS26-Miao-One-Char-to-Rule-The.pdf"
     title: "One Char to Rule Them All: DNS Silent Vulnerabilities in Domain Name Resolution"
+    author: Fasheng Miao, Xiang Li, Changqing An, Jilong Wang
 also_at: []
-authors: []
+authors:
+  - Fasheng Miao
+  - Xiang Li
+  - Changqing An
+  - Jilong Wang
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:55"
+  - "2026-ai.md:31"
 commit: ""
 content_sha256: 687214116f13bf06aaa0a9462c66239a3844936a64074b5b97187ecc8783a12d
 depth: full
@@ -30,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 16b06b8a4abd9d87bd57ad14204b89df21de37936c0e1cb8ccaa58ac9e125faa
 retrieved_from: "https://i.blackhat.com/Asia-26/Presentations/BHAS26-Miao-One-Char-to-Rule-The.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T18:47:09+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:40:23+00:00"
 slug: one-char-rule-them-all-dns-silent-vulnerabilities-domain-name-resolution
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # One Char to Rule Them All: DNS Silent Vulnerabilities in Domain Name Resolution
 
-**One Char to Rule Them All: DNS Silent Vulnerabilities in Domain Name Resolution** - Author not stated, Publisher not stated.
+**One Char to Rule Them All: DNS Silent Vulnerabilities in Domain Name Resolution** - Fasheng Miao, Xiang Li, Changqing An, Jilong Wang, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/Asia-26/Presentations/BHAS26-Miao-One-Char-to-Rule-The.pdf>
-- Preserved from: https://i.blackhat.com/Asia-26/Presentations/BHAS26-Miao-One-Char-to-Rule-The.pdf (live) on 2026-08-08
+- Preserved from: https://i.blackhat.com/Asia-26/Presentations/BHAS26-Miao-One-Char-to-Rule-The.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

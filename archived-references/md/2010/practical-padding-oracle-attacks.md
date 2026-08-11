@@ -5,17 +5,20 @@ resource: "https://www.usenix.org/events/woot10/tech/full_papers/Rizzo.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T13:07:23+00:00"
+  at: "2026-08-11T17:45:55+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.usenix.org/events/woot10/tech/full_papers/Rizzo.pdf"
     title: Practical Padding Oracle Attacks
+    author: Juliano Rizzo, Thai Duong
   - id: canonical
     resource: "https://www.usenix.org/legacy/events/woot10/tech/full_papers/Rizzo.pdf"
 also_at: []
-authors: []
+authors:
+  - Juliano Rizzo
+  - Thai Duong
 canonical_url: "https://www.usenix.org/legacy/events/woot10/tech/full_papers/Rizzo.pdf"
 cited_by:
   - "2010.md:5"
@@ -33,7 +36,7 @@ publisher_english: ""
 raw_sha256: 459a7c98bd7841138ce600fa269cc409866ee3b280e03a3030921614552fcfa8
 retrieved_from: "https://www.usenix.org/legacy/events/woot10/tech/full_papers/Rizzo.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T13:07:23+00:00"
+retrieved_utc: "2026-08-11T17:45:55+00:00"
 slug: practical-padding-oracle-attacks
 snapshot: ""
 title_english: ""
@@ -43,12 +46,12 @@ translation_of: ""
 
 # Practical Padding Oracle Attacks
 
-**Practical Padding Oracle Attacks** - Author not stated, Publisher not stated.
+**Practical Padding Oracle Attacks** - Juliano Rizzo, Thai Duong, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/events/woot10/tech/full_papers/Rizzo.pdf>
 - Current location: <https://www.usenix.org/legacy/events/woot10/tech/full_papers/Rizzo.pdf>
-- Preserved from: https://www.usenix.org/legacy/events/woot10/tech/full_papers/Rizzo.pdf (stored) on 2026-08-10
+- Preserved from: https://www.usenix.org/legacy/events/woot10/tech/full_papers/Rizzo.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

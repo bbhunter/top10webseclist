@@ -5,15 +5,21 @@ resource: "https://raw.githubusercontent.com/google/security-research-pocs/maste
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-07T09:43:17+00:00"
+  at: "2026-08-11T17:36:51+00:00"
 status: stable
-stale_after: 2027-08-07
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://raw.githubusercontent.com/google/security-research-pocs/master/script-gadgets/ccs_gadgets.pdf"
     title: ccs gadgets
+    author: Sebastian Lekies, Krzysztof Kotowicz, Samuel Groß, Eduardo A. Vela Nava, Martin Johns
 also_at: []
-authors: []
+authors:
+  - Sebastian Lekies
+  - Krzysztof Kotowicz
+  - Samuel Groß
+  - Eduardo A. Vela Nava
+  - Martin Johns
 canonical_url: ""
 cited_by:
   - "2016-17.md:30"
@@ -30,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 9bc7dd6f063509ecffef7c178ef817e788f1d57319f27deda422c4b40704ff29
 retrieved_from: "https://raw.githubusercontent.com/google/security-research-pocs/master/script-gadgets/ccs_gadgets.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-07T09:43:17+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:51+00:00"
 slug: ccs-gadgets
 snapshot: ""
 title_english: ""
@@ -41,15 +47,15 @@ translation_of: ""
 
 # ccs gadgets
 
-**ccs gadgets** - Author not stated, Publisher not stated.
+**ccs gadgets** - Sebastian Lekies, Krzysztof Kotowicz, Samuel Groß, Eduardo A. Vela Nava, Martin Johns, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://raw.githubusercontent.com/google/security-research-pocs/master/script-gadgets/ccs_gadgets.pdf>
-- Preserved from: https://raw.githubusercontent.com/google/security-research-pocs/master/script-gadgets/ccs_gadgets.pdf (live) on 2026-08-07
+- Preserved from: https://raw.githubusercontent.com/google/security-research-pocs/master/script-gadgets/ccs_gadgets.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content
@@ -276,6 +282,7 @@ obj
 '
 ,
 '
+_
 '
 , source);Listing 7: Example function creation gadgets3.5.4 JavaScript execution sink gadgets.These gadgets are usu-ally standalone, or are the last in the constructed gadget chain,taking the input from the previous gadgets and putting it into aDOM XSS[16] JavaScript execution sink.eval(input);
 inputFunction.apply();
@@ -483,6 +490,7 @@ Detect benign code.Benign code passes various policychecks based on code provena
 8
 
 --- page 9 ---
+
 
 Chrome and Safari's XSS Auditor.The latest XSS lterto be implemented in a major browser was Chrome and Sa-fari's XSS Auditor. The XSS Auditor hooks into JavaScriptruntime in the browser. XSS Auditor uses the 'detect mali-cious code' approach - before Auditor permits code exe-cution, it validates that the code was not included in theHTTP request, and blocks it if it was.
 
@@ -748,9 +756,7 @@ attr) 15
 
 --- page 17 ---
 
-#æìäyå³ísð—íÁšÇrœOP-yŒùþÖ9-æ4Í›y5°Eí«—„“;ç-a‰¿Õv?mØN–Òd*ïkîz°���ÝÏ2Ç_öð ñI�-¯hÞýþÁðâ1õÎxÑHlH¬¿Ë–·]/%¦–Ò=&h™e?=€>‰Mo#cT÷ÏW�7,m6ƒû.õŒXÑ¯#"Wï
-­nê<{Ò+´«QBy‘©°±‡S-rÿ{“¾Ë€@´NÍmþž°‰úåÌ¦Ôß-¹$HX,Ž±ôˆqÝÃ+Æ˜u—‰šìN'¶ºÍ”éäë¥DGDü‹°<ÍÒV®ñþË}¤ÄŽ›oŸo³§I-ÎL4À½4•Ã´°|ë¦³É�!ù05æÕÑÝ ç
-’ÚU%kéNIü@Î‘ù*@ aâ>
+#æìäyå³ísð—íÁšÇrœOP-yŒùþÖ9-æ4Í›y5°Eí«—„“;ç-a‰¿Õv?mØN–Òd*ïkîz°���ÝÏ2Ç_öð ñI�-¯hÞýþÁðâ1õÎxÑHlH¬¿Ë–·]/%¦–Ò=&h™e?=€>‰Mo#cT÷ÏW�7,m6ƒû.õŒXÑ¯#"Wï­nê<{Ò+´«QBy‘©°±‡S-rÿ{“¾Ë€@´NÍmþž°‰úåÌ¦Ôß-¹$HX,Ž±ôˆqÝÃ+Æ˜u—‰šìN'¶ºÍ”éäë¥DGDü‹°<ÍÒV®ñþË}¤ÄŽ›oŸo³§I-ÎL4À½4•Ã´°|ë¦³É�!ù05æÕÑÝ ç’ÚU%kéNIü@Î‘ù*@ aâ>
 
 --- page 18 ---
 

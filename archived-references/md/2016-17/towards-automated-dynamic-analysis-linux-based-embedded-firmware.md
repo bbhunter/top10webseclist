@@ -5,18 +5,23 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-aut
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:35:04+00:00"
+  at: "2026-08-11T17:44:26+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf"
     title: Towards Automated Dynamic Analysis for Linux-based Embedded Firmware
+    author: Daming D. Chen, Manuel Egele, Maverick Woo, David Brumley
 also_at: []
-authors: []
+authors:
+  - Daming D. Chen
+  - Manuel Egele
+  - Maverick Woo
+  - David Brumley
 canonical_url: ""
 cited_by:
-  - "2016-17.md:68"
+  - "2016-17.md:69"
 commit: ""
 content_sha256: 686f1fdf2ed0c9346f694fb73760cbff0580f63b6eeb4b280c8519d39d941693
 depth: full
@@ -30,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: a88844595fe037215474deb87860cf29ebd3b68d5b832d3b3089b24ef800f888
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:35:04+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:26+00:00"
 slug: towards-automated-dynamic-analysis-linux-based-embedded-firmware
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # Towards Automated Dynamic Analysis for Linux-based Embedded Firmware
 
-**Towards Automated Dynamic Analysis for Linux-based Embedded Firmware** - Author not stated, Publisher not stated.
+**Towards Automated Dynamic Analysis for Linux-based Embedded Firmware** - Daming D. Chen, Manuel Egele, Maverick Woo, David Brumley, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

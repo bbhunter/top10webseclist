@@ -5,20 +5,25 @@ resource: "https://www.cs.uic.edu/~hinrichs/papers/bisht2011waptec.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T04:35:28+00:00"
+  at: "2026-08-11T17:34:26+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.cs.uic.edu/~hinrichs/papers/bisht2011waptec.pdf"
     title: "WAPTEC: Whitebox Analysis of Web Applications for Parameter Tampering Exploit Construction"
+    author: Prithvi Bisht, Timothy Hinrichs, Nazari Skrupsky, V.N. Venkatakrishnan
   - id: capture
     resource: "https://web.archive.org/web/20240414060730/https://www.cs.uic.edu/~hinrichs/papers/bisht2011waptec.pdf"
 also_at: []
-authors: []
+authors:
+  - Prithvi Bisht
+  - Timothy Hinrichs
+  - Nazari Skrupsky
+  - V.N. Venkatakrishnan
 canonical_url: ""
 cited_by:
-  - "2011.md:79"
+  - "2011.md:75"
 commit: ""
 content_sha256: e6c39a19f72114fd6a0a25cff33a980ac3662f7f5ded625fbfdf08c8159fade1
 depth: full
@@ -33,7 +38,7 @@ publisher_english: ""
 raw_sha256: ce2b8ccd15223164c49a1839d3e64644deae6347dd9ab791a53974104fc0cef2
 retrieved_from: "https://www.cs.uic.edu/~hinrichs/papers/bisht2011waptec.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T04:35:28+00:00"
+retrieved_utc: "2026-08-11T17:34:26+00:00"
 slug: waptec-whitebox-analysis-web-applications-parameter-tampering-construction
 snapshot: 20240414060730
 title_english: ""
@@ -43,11 +48,11 @@ translation_of: ""
 
 # WAPTEC: Whitebox Analysis of Web Applications for Parameter Tampering Exploit Construction
 
-**WAPTEC: Whitebox Analysis of Web Applications for Parameter Tampering Exploit Construction** - Author not stated, Publisher not stated.
+**WAPTEC: Whitebox Analysis of Web Applications for Parameter Tampering Exploit Construction** - Prithvi Bisht, Timothy Hinrichs, Nazari Skrupsky, V.N. Venkatakrishnan, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.cs.uic.edu/~hinrichs/papers/bisht2011waptec.pdf>
-- Preserved from: https://www.cs.uic.edu/~hinrichs/papers/bisht2011waptec.pdf (stored) on 2026-08-09
+- Preserved from: https://www.cs.uic.edu/~hinrichs/papers/bisht2011waptec.pdf (stored) on 2026-08-11
 - Capture timestamp: 20240414060730
 - Licence: unknown
 
@@ -275,12 +280,14 @@ if($_GET['op'] == "purchase"){
 11
 12
 $cost = $_POST['quantity']
+*
 $price + $shipping;
 13
 14
 if(isset($_POST['discount']))
 15
 $cost = $cost - $_POST['discount']
+*
 $cost / 100;
 16
 17
@@ -776,16 +783,19 @@ client
 is
 quantity <
 0
+_
 len
 (
 name
 )
 >
 10
+_
 op
 ! = \
 purchase
 00
+_
 card
 62 f
 card
@@ -1281,6 +1291,7 @@ if($_GET['op'] == "purchase"){
 11
 12
 $main_cost = $_POST['quantity']
+*
 100 + 10; //
 where $price is 100
 13
@@ -1380,6 +1391,7 @@ statement
 on Line 2 (Listing 3) checks if
 $
 main
+_
 ca matches
 0
 card
@@ -1393,9 +1405,11 @@ card
 . We expand
 $
 main
+_
 ca
 with
 $
+_
 POST
 [
 0
@@ -1806,8 +1820,10 @@ member
 ) are uni-
 formly transformed as
 v
+_
 $
 id
+_
 member
 1
 . This enables subsequent
@@ -1906,10 +1922,12 @@ PHP
 functions often accept and re-
 turn such data structures. For example, MyBloggie employs the
 preg
+_
 replace
 function, which is a regular-expression version of
 a string replacement operation.
 preg
+_
 replace
 can both accept and
 return arrays as arguments. Arrays are difcult to translate to Kaluza

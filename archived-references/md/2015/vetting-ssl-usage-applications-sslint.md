@@ -5,18 +5,26 @@ resource: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a519.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:19+00:00"
+  at: "2026-08-11T17:41:53+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a519.pdf"
     title: Vetting SSL Usage in Applications with SSLINT
+    author: Boyuan He, Vaibhav Rastogi, Yinzhi Cao, Yan Chen, V.N. Venkatakrishnan, Runqing Yang, Zhenrui Zhang
 also_at: []
-authors: []
+authors:
+  - Boyuan He
+  - Vaibhav Rastogi
+  - Yinzhi Cao
+  - Yan Chen
+  - V.N. Venkatakrishnan
+  - Runqing Yang
+  - Zhenrui Zhang
 canonical_url: ""
 cited_by:
-  - "2015.md:71"
+  - "2015.md:72"
 commit: ""
 content_sha256: 550518bc69efdacea3814ee4ec24ef74f2d3533ab58af60edabd081c60ad3b4e
 depth: full
@@ -30,8 +38,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 1b7e9085a0ebe78cb9edd8baa00bc66a6c2cfb9bd1fc65e112f4f19ba11fecee
 retrieved_from: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a519.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:19+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:53+00:00"
 slug: vetting-ssl-usage-applications-sslint
 snapshot: ""
 title_english: ""
@@ -41,11 +49,11 @@ translation_of: ""
 
 # Vetting SSL Usage in Applications with SSLINT
 
-**Vetting SSL Usage in Applications with SSLINT** - Author not stated, Publisher not stated.
+**Vetting SSL Usage in Applications with SSLINT** - Boyuan He, Vaibhav Rastogi, Yinzhi Cao, Yan Chen, V.N. Venkatakrishnan, Runqing Yang, Zhenrui Zhang, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2015/papers-archived/6949a519.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2015/papers-archived/6949a519.pdf (live) on 2026-08-10
+- Preserved from: https://www.ieee-security.org/TC/SP2015/papers-archived/6949a519.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

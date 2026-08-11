@@ -5,15 +5,18 @@ resource: "https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Expres
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-07T09:43:19+00:00"
+  at: "2026-08-11T17:36:53+00:00"
 status: stable
-stale_after: 2027-08-07
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Expression%20Language%20Injection.pdf"
     title: Expression Language Injection
+    author: Stefano Di Paola, Arshan Dabirsiaghi
 also_at: []
-authors: []
+authors:
+  - Stefano Di Paola
+  - Arshan Dabirsiaghi
 canonical_url: ""
 cited_by:
   - "2011.md:10"
@@ -30,8 +33,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: a84dcd777500fb9e35e1bfd81f09894c898affb76f0646f8679bf0321c1bf07e
 retrieved_from: "https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Expression%20Language%20Injection.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-07T09:43:19+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:53+00:00"
 slug: expression-language-injection
 snapshot: ""
 title_english: ""
@@ -41,15 +44,15 @@ translation_of: ""
 
 # Expression Language Injection
 
-**Expression Language Injection** - Author not stated, Publisher not stated.
+**Expression Language Injection** - Stefano Di Paola, Arshan Dabirsiaghi, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Expression%20Language%20Injection.pdf>
-- Preserved from: https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Expression%20Language%20Injection.pdf (live) on 2026-08-07
+- Preserved from: https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Expression%20Language%20Injection.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

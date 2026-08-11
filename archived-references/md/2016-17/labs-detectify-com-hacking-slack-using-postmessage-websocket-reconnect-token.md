@@ -5,22 +5,24 @@ resource: "https://labs.detectify.com/2017/02/28/hacking-slack-using-postmessage
 tags: [article, webseclist-reference, en, labs-detectify-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:09:00+00:00"
+  at: "2026-08-11T17:42:18+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://labs.detectify.com/2017/02/28/hacking-slack-using-postmessage-and-websocket-reconnect-to-steal-your-precious-token/"
     title: Hacking Slack using postMessage and WebSocket-reconnect to steal your precious token
+    author: Frans Rosén
   - id: capture
     resource: "https://web.archive.org/web/20170311163851/https://labs.detectify.com/2017/02/28/hacking-slack-using-postmessage-and-websocket-reconnect-to-steal-your-precious-token/"
 also_at: []
-authors: []
+authors:
+  - Frans Rosén
 canonical_url: ""
 cited_by:
   - "2016-17.md:43"
 commit: ""
-content_sha256: 8a88126a8434f77ebd40ac1b464ed7e8171499bd65eef1a845bc4312d40b0d38
+content_sha256: 6d876274545fc6011a3b9df2dfe819e4b676c0e27451b52714058e0e2f3ef668
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 1e3308aeb0e3fa05a3c2c2a20b2dfc4315675636d4e4b5a8e0adc5198339ecc3
 retrieved_from: "https://labs.detectify.com/2017/02/28/hacking-slack-using-postmessage-and-websocket-reconnect-to-steal-your-precious-token/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:09:00+00:00"
+retrieved_utc: "2026-08-11T17:42:18+00:00"
 slug: labs-detectify-com-hacking-slack-using-postmessage-websocket-reconnect-token
 snapshot: 20170311163851
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Hacking Slack using postMessage and WebSocket-reconnect to steal your precious token
 
-**Hacking Slack using postMessage and WebSocket-reconnect to steal your precious token** - Author not stated, labs.detectify.com.
+**Hacking Slack using postMessage and WebSocket-reconnect to steal your precious token** - Frans Rosén, labs.detectify.com.
 
 - Published: date not stated
 - Original: <https://labs.detectify.com/2017/02/28/hacking-slack-using-postmessage-and-websocket-reconnect-to-steal-your-precious-token/>
-- Preserved from: https://labs.detectify.com/2017/02/28/hacking-slack-using-postmessage-and-websocket-reconnect-to-steal-your-precious-token/ (stored) on 2026-08-09
+- Preserved from: https://labs.detectify.com/2017/02/28/hacking-slack-using-postmessage-and-websocket-reconnect-to-steal-your-precious-token/ (stored) on 2026-08-11
 - Capture timestamp: 20170311163851
 - Licence: unknown
 

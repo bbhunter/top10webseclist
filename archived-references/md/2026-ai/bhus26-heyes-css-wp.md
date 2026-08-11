@@ -5,18 +5,20 @@ resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-WP.pd
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:48:36+00:00"
+  at: "2026-08-11T17:40:49+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-WP.pdf"
     title: BHUS26 Heyes CSS WP
+    author: Gareth Heyes
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:62"
+  - "2026-ai.md:38"
 commit: ""
 content_sha256: c12cfdab24fd62187918da16603fddcd04e5877a4685416e4c17b9d8069f569e
 depth: full
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 051c88b7abc2c1065ddaa809d0c2c056dc719bc445152e981472b9b60caf319c
 retrieved_from: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-WP.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T18:48:36+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:40:49+00:00"
 slug: bhus26-heyes-css-wp
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # BHUS26 Heyes CSS WP
 
-**BHUS26 Heyes CSS WP** - Author not stated, Publisher not stated.
+**BHUS26 Heyes CSS WP** - Gareth Heyes, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-WP.pdf>
-- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-WP.pdf (live) on 2026-08-08
+- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-WP.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

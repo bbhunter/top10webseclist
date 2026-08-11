@@ -5,19 +5,22 @@ resource: "https://www.cs.virginia.edu/~evans/pubs/ccs2011/"
 tags: [article, webseclist-reference, cs-virginia-edu]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:08:10+00:00"
+  at: "2026-08-11T17:34:41+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.cs.virginia.edu/~evans/pubs/ccs2011/"
     title: Automated Black-Box Detection of Side-Channel Vulnerabilities in Web Applications
+    author: Peter Chapman, David Evans
 also_at:
   - "https://www.cs.virginia.edu/~evans/pubs/ccs2011/sca-packaged.pdf"
-authors: []
+authors:
+  - Peter Chapman
+  - David Evans
 canonical_url: ""
 cited_by:
-  - "2011.md:80"
+  - "2011.md:81"
 commit: ""
 content_sha256: 076f1091e7cb097fe74f9a0598163380f1fbb7159914c27658bc48266f53f047
 depth: full
@@ -31,8 +34,8 @@ publisher: cs.virginia.edu
 publisher_english: ""
 raw_sha256: 05814296481a71e948e026c7235b9102a8a24ef1f8be6d0d5066be106e45da81
 retrieved_from: "https://www.cs.virginia.edu/~evans/pubs/ccs2011/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:08:10+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:41+00:00"
 slug: cs-virginia-edu-automated-black-box-detection-side-channel-applications
 snapshot: ""
 title_english: ""
@@ -42,12 +45,12 @@ translation_of: ""
 
 # Automated Black-Box Detection of Side-Channel Vulnerabilities in Web Applications
 
-**Automated Black-Box Detection of Side-Channel Vulnerabilities in Web Applications** - Author not stated, cs.virginia.edu.
+**Automated Black-Box Detection of Side-Channel Vulnerabilities in Web Applications** - Peter Chapman, David Evans, cs.virginia.edu.
 
 - Published: date not stated
 - Original: <https://www.cs.virginia.edu/~evans/pubs/ccs2011/>
 - Also published at: <https://www.cs.virginia.edu/~evans/pubs/ccs2011/sca-packaged.pdf>
-- Preserved from: https://www.cs.virginia.edu/~evans/pubs/ccs2011/ (live) on 2026-08-10
+- Preserved from: https://www.cs.virginia.edu/~evans/pubs/ccs2011/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,7 +5,7 @@ resource: "https://arxiv.org/abs/1211.4812"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:33:05+00:00"
+  at: "2026-08-11T17:34:04+00:00"
 status: stable
 stale_after: 2027-08-11
 sources:
@@ -38,7 +38,7 @@ publisher_english: ""
 raw_sha256: 54f7b4694f816db16517981c6e9942c3635204cde413b3eac076e53c595a7ec6
 retrieved_from: "https://arxiv.org/abs/1211.4812"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:33:05+00:00"
+retrieved_utc: "2026-08-11T17:34:04+00:00"
 slug: arxiv-org-xss-fp-browser-fingerprinting-using-html-parser-quirks
 snapshot: ""
 title_english: ""

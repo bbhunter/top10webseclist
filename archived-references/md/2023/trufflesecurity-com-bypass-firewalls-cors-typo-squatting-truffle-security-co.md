@@ -5,22 +5,24 @@ resource: "https://trufflesecurity.com/blog/of-cors/"
 tags: [article, webseclist-reference, en-US, trufflesecurity-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:47:41+00:00"
+  at: "2026-08-11T17:37:18+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://trufflesecurity.com/blog/of-cors/"
     title: Bypass firewalls with of-CORs and typo-squatting ◆ Truffle Security Co.
+    author: Chris Grayson
   - id: canonical
     resource: "https://trufflesecurity.com/blog/of-cors"
 also_at: []
-authors: []
+authors:
+  - Chris Grayson
 canonical_url: "https://trufflesecurity.com/blog/of-cors"
 cited_by:
   - "2023.md:20"
 commit: ""
-content_sha256: 3beec21b9336e96d214ed0159fc53dc03b8c42234c5e19735d03c4476da139ce
+content_sha256: 8f8350030ee26fea49df540feaf4274992b474f44ab738e30154138bc7a54197
 depth: full
 depth_reason: default
 kind: article
@@ -32,8 +34,8 @@ publisher: trufflesecurity.com
 publisher_english: ""
 raw_sha256: b05c40652594f2dbbb39b913dd826edd3c178506cda234ffc6b319c570dadcc5
 retrieved_from: "https://trufflesecurity.com/blog/of-cors"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:47:41+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:37:18+00:00"
 slug: trufflesecurity-com-bypass-firewalls-cors-typo-squatting-truffle-security-co
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Bypass firewalls with of-CORs and typo-squatting ◆ Truffle Security Co.
 
-**Bypass firewalls with of-CORs and typo-squatting ◆ Truffle Security Co.** - Author not stated, trufflesecurity.com.
+**Bypass firewalls with of-CORs and typo-squatting ◆ Truffle Security Co.** - Chris Grayson, trufflesecurity.com.
 
 - Published: date not stated
 - Original: <https://trufflesecurity.com/blog/of-cors/>
 - Current location: <https://trufflesecurity.com/blog/of-cors>
-- Preserved from: https://trufflesecurity.com/blog/of-cors (live) on 2026-08-09
+- Preserved from: https://trufflesecurity.com/blog/of-cors (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

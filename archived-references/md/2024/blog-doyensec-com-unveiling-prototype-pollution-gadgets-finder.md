@@ -5,15 +5,17 @@ resource: "https://blog.doyensec.com/2024/02/17/server-side-prototype-pollution-
 tags: [article, webseclist-reference, en-us, blog-doyensec-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:56+00:00"
+  at: "2026-08-11T17:39:50+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://blog.doyensec.com/2024/02/17/server-side-prototype-pollution-Gadgets-scanner.html"
     title: Unveiling the Prototype Pollution Gadgets Finder
+    author: Raúl Miján
 also_at: []
-authors: []
+authors:
+  - Raúl Miján
 canonical_url: ""
 cited_by:
   - "2024.md:52"
@@ -30,8 +32,8 @@ publisher: blog.doyensec.com
 publisher_english: ""
 raw_sha256: ad1738d10512d02d54ecb34cdc314bc0e5ecf76b923e40b015c886cc30132832
 retrieved_from: "https://blog.doyensec.com/2024/02/17/server-side-prototype-pollution-Gadgets-scanner.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:56+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:50+00:00"
 slug: blog-doyensec-com-unveiling-prototype-pollution-gadgets-finder
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Unveiling the Prototype Pollution Gadgets Finder
 
-**Unveiling the Prototype Pollution Gadgets Finder** - Author not stated, blog.doyensec.com.
+**Unveiling the Prototype Pollution Gadgets Finder** - Raúl Miján, blog.doyensec.com.
 
 - Published: date not stated
 - Original: <https://blog.doyensec.com/2024/02/17/server-side-prototype-pollution-Gadgets-scanner.html>
-- Preserved from: https://blog.doyensec.com/2024/02/17/server-side-prototype-pollution-Gadgets-scanner.html (live) on 2026-08-09
+- Preserved from: https://blog.doyensec.com/2024/02/17/server-side-prototype-pollution-Gadgets-scanner.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

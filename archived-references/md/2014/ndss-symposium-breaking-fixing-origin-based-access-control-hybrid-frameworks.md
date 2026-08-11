@@ -5,20 +5,24 @@ resource: "https://www.ndss-symposium.org/ndss2014/ndss-2014-programme/breaking-
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:34:40+00:00"
+  at: "2026-08-11T17:42:58+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2014/ndss-2014-programme/breaking-and-fixing-origin-based-access-control-hybrid-webmobile-application-frameworks/"
     title: Breaking and Fixing Origin-Based Access Control in Hybrid Web/Mobile Application Frameworks
+    author: Martin Georgiev, Suman Jana, Vitaly Shmatikov
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/03_4_1.pdf"
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/03_4_slides.pdf"
-authors: []
+authors:
+  - Martin Georgiev
+  - Suman Jana
+  - Vitaly Shmatikov
 canonical_url: ""
 cited_by:
-  - "2014.md:64"
+  - "2014.md:65"
 commit: ""
 content_sha256: 882627ab1c10ed6610801e6cef9cf1249ecacb364a9b7552055cd326b11f5c27
 depth: full
@@ -32,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: fde7f5c4f6c1505add1823c9f2dda8d5b80b797924a48d8c913139e1a1c09ae3
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/03_4_1.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:34:40+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:42:58+00:00"
 slug: ndss-symposium-breaking-fixing-origin-based-access-control-hybrid-frameworks
 snapshot: ""
 title_english: ""
@@ -43,13 +47,13 @@ translation_of: ""
 
 # Breaking and Fixing Origin-Based Access Control in Hybrid Web/Mobile Application Frameworks
 
-**Breaking and Fixing Origin-Based Access Control in Hybrid Web/Mobile Application Frameworks** - Author not stated, Publisher not stated.
+**Breaking and Fixing Origin-Based Access Control in Hybrid Web/Mobile Application Frameworks** - Martin Georgiev, Suman Jana, Vitaly Shmatikov, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2014/ndss-2014-programme/breaking-and-fixing-origin-based-access-control-hybrid-webmobile-application-frameworks/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/03_4_1.pdf>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/03_4_slides.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/03_4_1.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/03_4_1.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

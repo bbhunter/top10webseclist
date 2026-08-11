@@ -5,18 +5,20 @@ resource: "http://blog.portswigger.net/2015/09/hunting-asynchronous-vulnerabilit
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:05:56+00:00"
+  at: "2026-08-11T17:34:11+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://blog.portswigger.net/2015/09/hunting-asynchronous-vulnerabilities.html"
     title: Hunting asynchronous vulnerabilities
+    author: James Kettle
     last_modified: 2015-09-15
   - id: canonical
     resource: "https://portswigger.net/research/hunting-asynchronous-vulnerabilities"
 also_at: []
-authors: []
+authors:
+  - James Kettle
 canonical_url: "https://portswigger.net/research/hunting-asynchronous-vulnerabilities"
 cited_by:
   - "2015.md:46"
@@ -33,8 +35,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 25351ce0aa79b72d07ac51c3e7133390fea598606d264f789b40802c3bbf5f81
 retrieved_from: "https://portswigger.net/research/hunting-asynchronous-vulnerabilities"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:05:56+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:11+00:00"
 slug: 2015-portswigger-research-hunting-asynchronous-vulnerabilities
 snapshot: ""
 title_english: ""
@@ -44,12 +46,12 @@ translation_of: ""
 
 # Hunting asynchronous vulnerabilities
 
-**Hunting asynchronous vulnerabilities** - Author not stated, PortSwigger Research.
+**Hunting asynchronous vulnerabilities** - James Kettle, PortSwigger Research.
 
 - Published: 2015-09-15
 - Original: <http://blog.portswigger.net/2015/09/hunting-asynchronous-vulnerabilities.html>
 - Current location: <https://portswigger.net/research/hunting-asynchronous-vulnerabilities>
-- Preserved from: https://portswigger.net/research/hunting-asynchronous-vulnerabilities (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/hunting-asynchronous-vulnerabilities (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

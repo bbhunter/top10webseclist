@@ -5,22 +5,24 @@ resource: "http://sla.ckers.org/forum/read.php?2,3153,3153"
 tags: [article, webseclist-reference, EN, sla-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:25+00:00"
+  at: "2026-08-11T17:45:33+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://sla.ckers.org/forum/read.php?2,3153,3153"
     title: Bypassing Filters With Encoding
+    author: maluc
   - id: capture
     resource: "https://web.archive.org/web/20130601084541/http://sla.ckers.org/forum/read.php?2,3153,3153"
 also_at: []
-authors: []
+authors:
+  - maluc
 canonical_url: ""
 cited_by:
   - "2006.md:52"
 commit: ""
-content_sha256: 524511225d8ff14d7e8440f96e65f63eac2f4f0ae63daef3ae8b2ff8c4fe4a70
+content_sha256: d937e66e4e0286bf3824d4deb9cf25b273a901d7eab05b59f09a655a7aeae943
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 908b5ee5b0638fbbf34740b274a956deb34481831d1c2f4bdd3cfa0f4921aa37
 retrieved_from: "http://sla.ckers.org/forum/read.php?2,3153,3153"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:25+00:00"
+retrieved_utc: "2026-08-11T17:45:33+00:00"
 slug: sla-ckers-org-bypassing-filters-encoding
 snapshot: 20130601084541
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Bypassing Filters With Encoding
 
-**Bypassing Filters With Encoding** - Author not stated, sla.ckers.org.
+**Bypassing Filters With Encoding** - maluc, sla.ckers.org.
 
 - Published: date not stated
 - Original: <http://sla.ckers.org/forum/read.php?2,3153,3153>
-- Preserved from: http://sla.ckers.org/forum/read.php?2,3153,3153 (stored) on 2026-08-09
+- Preserved from: http://sla.ckers.org/forum/read.php?2,3153,3153 (stored) on 2026-08-11
 - Capture timestamp: 20130601084541
 - Licence: unknown
 
@@ -108,8 +110,6 @@ Thanks to RSnake for opening my eyes to alternate encoding recently, with his bl
 
  -maluc
 
- 
-
 **Re: Bypassing Filters With Encoding**
 
 Posted by: ** [ rsnake ](http://sla.ckers.org/forum/profile.php?2,2) **
@@ -120,8 +120,6 @@ This is a good list. We should definitely try to keep it up to date as new thing
 
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
-
- 
 
 **Re: Bypassing Filters With Encoding**
 
@@ -142,8 +140,6 @@ http://maluc.110mb.com/charsettest.php?charset&string
 
  -maluc
 
- 
-
 **Re: Bypassing Filters With Encoding**
 
 Posted by: ** [ jungsonn ](http://sla.ckers.org/forum/profile.php?2,187) **
@@ -151,8 +147,6 @@ Posted by: ** [ jungsonn ](http://sla.ckers.org/forum/profile.php?2,187) **
 Date: November 20, 2006 02:09AM
 
 Yay! nice work maluc! is this info being collected somewhere for quick reference? cause i see it scattered accross the boards.
-
- 
 
 **Re: Bypassing Filters With Encoding**
 
@@ -181,8 +175,6 @@ Alternative semi-colon: » .. which is %BB
 
  Edited 1 time(s). Last edit at 11/29/2006 04:18AM by maluc.
 
- 
-
 **Re: Bypassing Filters With Encoding**
 
 Posted by: ** [ maluc ](http://sla.ckers.org/forum/profile.php?2,50) **
@@ -192,8 +184,6 @@ Date: November 29, 2006 04:15AM
 lol.. now why did i add a -moz-binding for US-ASCII, an IE-only encoding.. removed.
 
  -maluc
-
- 
 
 **Re: Bypassing Filters With Encoding**
 
@@ -205,8 +195,6 @@ Hahah... I never would have noticed unless you said something. There are really 
 
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
-
- 
 
 **Re: Bypassing Filters With Encoding**
 

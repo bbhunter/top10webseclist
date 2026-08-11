@@ -5,18 +5,24 @@ resource: "https://www.ieee-security.org/TC/W2SP/2012/papers/w2sp12-final10.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:17+00:00"
+  at: "2026-08-11T17:41:31+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/W2SP/2012/papers/w2sp12-final10.pdf"
     title: "Cruel Intentions: Violating Browser Security and Privacy Through Web Intents"
+    author: Jenna Kallaher, Amal Krishnan, Paul Makowski, Eric Chen, Collin Jackson
 also_at: []
-authors: []
+authors:
+  - Jenna Kallaher
+  - Amal Krishnan
+  - Paul Makowski
+  - Eric Chen
+  - Collin Jackson
 canonical_url: ""
 cited_by:
-  - "2012.md:95"
+  - "2012.md:90"
 commit: ""
 content_sha256: 21ff68268dbf0c35a22ccb8966643d31f62d327a38a43dc86298a002c4927576
 depth: full
@@ -30,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 921216d65a0e74a388169634f911aeaf02b8c47b31193b651fb58ef406838de4
 retrieved_from: "https://www.ieee-security.org/TC/W2SP/2012/papers/w2sp12-final10.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:17+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:31+00:00"
 slug: cruel-intentions-violating-browser-security-privacy-through-web-intents
 snapshot: ""
 title_english: ""
@@ -41,11 +47,11 @@ translation_of: ""
 
 # Cruel Intentions: Violating Browser Security and Privacy Through Web Intents
 
-**Cruel Intentions: Violating Browser Security and Privacy Through Web Intents** - Author not stated, Publisher not stated.
+**Cruel Intentions: Violating Browser Security and Privacy Through Web Intents** - Jenna Kallaher, Amal Krishnan, Paul Makowski, Eric Chen, Collin Jackson, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/W2SP/2012/papers/w2sp12-final10.pdf>
-- Preserved from: https://www.ieee-security.org/TC/W2SP/2012/papers/w2sp12-final10.pdf (live) on 2026-08-08
+- Preserved from: https://www.ieee-security.org/TC/W2SP/2012/papers/w2sp12-final10.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

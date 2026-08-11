@@ -5,23 +5,25 @@ resource: "https://gosecure.net/2018/04/03/beyond-xss-edge-side-include-injectio
 tags: [article, webseclist-reference, en, gosecure]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T04:43:10+00:00"
+  at: "2026-08-11T17:40:02+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://gosecure.net/2018/04/03/beyond-xss-edge-side-include-injection/"
     title: "Beyond XSS: Edge Side Include Injection"
+    author: Louis Dion-Marcil
     last_modified: 2018-04-03
   - id: capture
     resource: "https://web.archive.org/web/20180925181719/https://gosecure.net/2018/04/03/beyond-xss-edge-side-include-injection/"
 also_at: []
-authors: []
+authors:
+  - Louis Dion-Marcil
 canonical_url: ""
 cited_by:
   - "2018.md:7"
 commit: ""
-content_sha256: 2ec2b62581383bd2ef40cd6198c67bb5d785365c2d41f0e9803feb40e8afa9e6
+content_sha256: 40e8d3ffde617ac0b579f3e77d5d9545c4fb2b2f759d835bd7d45ab23bf4a7ab
 depth: full
 depth_reason: default
 kind: article
@@ -34,7 +36,7 @@ publisher_english: ""
 raw_sha256: 6007930d248c45b2b6048d5c2855b4f3273e376b3a079e745e58672775835003
 retrieved_from: "https://gosecure.net/2018/04/03/beyond-xss-edge-side-include-injection/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T04:43:10+00:00"
+retrieved_utc: "2026-08-11T17:40:02+00:00"
 slug: 2018-gosecure-beyond-xss-edge-side-include-injection
 snapshot: 20180925181719
 title_english: ""
@@ -44,11 +46,11 @@ translation_of: ""
 
 # Beyond XSS: Edge Side Include Injection
 
-**Beyond XSS: Edge Side Include Injection** - Author not stated, GoSecure.
+**Beyond XSS: Edge Side Include Injection** - Louis Dion-Marcil, GoSecure.
 
 - Published: 2018-04-03
 - Original: <https://gosecure.net/2018/04/03/beyond-xss-edge-side-include-injection/>
-- Preserved from: https://gosecure.net/2018/04/03/beyond-xss-edge-side-include-injection/ (stored) on 2026-08-09
+- Preserved from: https://gosecure.net/2018/04/03/beyond-xss-edge-side-include-injection/ (stored) on 2026-08-11
 - Capture timestamp: 20180925181719
 - Licence: unknown
 

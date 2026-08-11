@@ -5,18 +5,22 @@ resource: "https://img2.helpnetsecurity.com/dl/articles/JavaScript_Hijacking.pdf
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:58+00:00"
+  at: "2026-08-11T17:35:38+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://img2.helpnetsecurity.com/dl/articles/JavaScript_Hijacking.pdf"
     title: JavaScript Hijacking
+    author: "Brian Chess, Yekaterina Tsipenyuk O'Neil, Jacob West"
 also_at: []
-authors: []
+authors:
+  - Brian Chess
+  - "Yekaterina Tsipenyuk O'Neil"
+  - Jacob West
 canonical_url: ""
 cited_by:
-  - "2007.md:101"
+  - "2007.md:102"
 commit: ""
 content_sha256: 3d1a9208e76179bd2cfc40a03f15936ec41ba3a9cd2e87be6e2f26fc874bb3c4
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: dae00db1a4ac1ac6391002fdf23706f959acbf720926f3531a28b0d8f720c976
 retrieved_from: "https://img2.helpnetsecurity.com/dl/articles/JavaScript_Hijacking.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:58+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:38+00:00"
 slug: javascript-hijacking
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # JavaScript Hijacking
 
-**JavaScript Hijacking** - Author not stated, Publisher not stated.
+**JavaScript Hijacking** - Brian Chess, Yekaterina Tsipenyuk O'Neil, Jacob West, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://img2.helpnetsecurity.com/dl/articles/JavaScript_Hijacking.pdf>
-- Preserved from: https://img2.helpnetsecurity.com/dl/articles/JavaScript_Hijacking.pdf (live) on 2026-08-10
+- Preserved from: https://img2.helpnetsecurity.com/dl/articles/JavaScript_Hijacking.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,15 +5,17 @@ resource: "https://www.descope.com/blog/post/noauth"
 tags: [article, webseclist-reference, en, descope]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:08:48+00:00"
+  at: "2026-08-11T17:34:49+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.descope.com/blog/post/noauth"
     title: "nOAuth: How Microsoft OAuth Misconfiguration Can Lead to Full Account Takeover"
+    author: Omer Cohen
 also_at: []
-authors: []
+authors:
+  - Omer Cohen
 canonical_url: ""
 cited_by:
   - "2023.md:51"
@@ -30,8 +32,8 @@ publisher: Descope
 publisher_english: ""
 raw_sha256: 6fbb34017ab7683747c96f49e0aaeb42bf93d0e08825389d37cf6b389bc270ae
 retrieved_from: "https://www.descope.com/blog/post/noauth"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:08:48+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:49+00:00"
 slug: descope-noauth-how-microsoft-oauth-misconfiguration-can-lead-full-takeover
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # nOAuth: How Microsoft OAuth Misconfiguration Can Lead to Full Account Takeover
 
-**nOAuth: How Microsoft OAuth Misconfiguration Can Lead to Full Account Takeover** - Author not stated, Descope.
+**nOAuth: How Microsoft OAuth Misconfiguration Can Lead to Full Account Takeover** - Omer Cohen, Descope.
 
 - Published: date not stated
 - Original: <https://www.descope.com/blog/post/noauth>
-- Preserved from: https://www.descope.com/blog/post/noauth (live) on 2026-08-10
+- Preserved from: https://www.descope.com/blog/post/noauth (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

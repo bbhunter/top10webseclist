@@ -5,17 +5,19 @@ resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Yason-Understandi
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:03:20+00:00"
+  at: "2026-08-11T17:38:23+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Yason-Understanding-The-Attack-Surface-And-Attack-Resilience-Of-Project-Spartans-New-EdgeHTML-Rendering-Engine-wp.pdf"
     title: "Attack Surface for Project Spartan's EdgeHTML Rendering Engine"
+    author: Mark Vincent Yason
   - id: canonical
     resource: "https://blackhat.com/docs/us-15/materials/us-15-Yason-Understanding-The-Attack-Surface-And-Attack-Resilience-Of-Project-Spartans-New-EdgeHTML-Rendering-Engine-wp.pdf"
 also_at: []
-authors: []
+authors:
+  - Mark Vincent Yason
 canonical_url: "https://blackhat.com/docs/us-15/materials/us-15-Yason-Understanding-The-Attack-Surface-And-Attack-Resilience-Of-Project-Spartans-New-EdgeHTML-Rendering-Engine-wp.pdf"
 cited_by:
   - "2015.md:33"
@@ -32,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: f3a036a5bdb6b982c03b5b2b72eed213ba6affddb8b6676c4e5fc5d8e6959b18
 retrieved_from: "https://blackhat.com/docs/us-15/materials/us-15-Yason-Understanding-The-Attack-Surface-And-Attack-Resilience-Of-Project-Spartans-New-EdgeHTML-Rendering-Engine-wp.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:03:20+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:38:23+00:00"
 slug: attack-surface-project-spartan-s-edgehtml-rendering-engine
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Attack Surface for Project Spartan's EdgeHTML Rendering Engine
 
-**Attack Surface for Project Spartan's EdgeHTML Rendering Engine** - Author not stated, Publisher not stated.
+**Attack Surface for Project Spartan's EdgeHTML Rendering Engine** - Mark Vincent Yason, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/docs/us-15/materials/us-15-Yason-Understanding-The-Attack-Surface-And-Attack-Resilience-Of-Project-Spartans-New-EdgeHTML-Rendering-Engine-wp.pdf>
 - Current location: <https://blackhat.com/docs/us-15/materials/us-15-Yason-Understanding-The-Attack-Surface-And-Attack-Resilience-Of-Project-Spartans-New-EdgeHTML-Rendering-Engine-wp.pdf>
-- Preserved from: https://blackhat.com/docs/us-15/materials/us-15-Yason-Understanding-The-Attack-Surface-And-Attack-Resilience-Of-Project-Spartans-New-EdgeHTML-Rendering-Engine-wp.pdf (live) on 2026-08-10
+- Preserved from: https://blackhat.com/docs/us-15/materials/us-15-Yason-Understanding-The-Attack-Surface-And-Attack-Resilience-Of-Project-Spartans-New-EdgeHTML-Rendering-Engine-wp.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

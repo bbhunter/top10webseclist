@@ -5,20 +5,22 @@ resource: "https://www.securitum.com/prototype-pollution-and-bypassing-client-si
 tags: [article, webseclist-reference, en, securitum-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:09+00:00"
+  at: "2026-08-11T17:45:31+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html"
     title: Securitum. Leading european penetration testing company
+    author: Michał Bentkowski
 also_at: []
-authors: []
+authors:
+  - Michał Bentkowski
 canonical_url: ""
 cited_by:
-  - "2020.md:74"
+  - "2020.md:70"
 commit: ""
-content_sha256: 14fa4105b5423fba446a2f58562954bc916a3194ef86015941e1ab1a5ea9bd35
+content_sha256: 4c4a488dfcb51f6240da5f946d41510690d135d6c5e1e4972c672c1481fe004c
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: securitum.com
 publisher_english: ""
 raw_sha256: c3fa325de4a3eb817f5697fe76eed78d9361b6e30c20419ca0373061f05146d7
 retrieved_from: "https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:09+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:31+00:00"
 slug: securitum-com-securitum-leading-european-penetration-testing-company-3
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Securitum. Leading european penetration testing company
 
-**Securitum. Leading european penetration testing company** - Author not stated, securitum.com.
+**Securitum. Leading european penetration testing company** - Michał Bentkowski, securitum.com.
 
 - Published: date not stated
 - Original: <https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html>
-- Preserved from: https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html (live) on 2026-08-09
+- Preserved from: https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

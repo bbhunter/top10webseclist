@@ -5,19 +5,25 @@ resource: "https://www.ndss-symposium.org/ndss-paper/diffcsp-finding-browser-bug
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:43+00:00"
+  at: "2026-08-11T17:43:35+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/diffcsp-finding-browser-bugs-in-content-security-policy-enforcement-through-differential-testing/"
     title: "DiffCSP: Finding Browser Bugs in Content Security Policy Enforcement through Differential Testing"
+    author: Seongil Wi, Trung Tin Nguyen, Jihwan Kim, Ben Stock, Sooel Son
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2023-200-paper.pdf"
-authors: []
+authors:
+  - Seongil Wi
+  - Trung Tin Nguyen
+  - Jihwan Kim
+  - Ben Stock
+  - Sooel Son
 canonical_url: ""
 cited_by:
-  - "2023.md:83"
+  - "2023.md:84"
 commit: ""
 content_sha256: 93d1e472c476a88aa896d369ad6089ce6a3da4efe14c323d47dc97d7f9eec800
 depth: full
@@ -31,8 +37,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: c466ef768b7c9700e07540314b4b2fedc10bcf2b8cdc6874f80596eebdfac0b8
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/diffcsp-finding-browser-bugs-in-content-security-policy-enforcement-through-differential-testing/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:43+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:35+00:00"
 slug: ndss-symposium-diffcsp-finding-browser-bugs-content-security-policy-testing
 snapshot: ""
 title_english: ""
@@ -42,12 +48,12 @@ translation_of: ""
 
 # DiffCSP: Finding Browser Bugs in Content Security Policy Enforcement through Differential Testing
 
-**DiffCSP: Finding Browser Bugs in Content Security Policy Enforcement through Differential Testing** - Author not stated, NDSS Symposium.
+**DiffCSP: Finding Browser Bugs in Content Security Policy Enforcement through Differential Testing** - Seongil Wi, Trung Tin Nguyen, Jihwan Kim, Ben Stock, Sooel Son, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/diffcsp-finding-browser-bugs-in-content-security-policy-enforcement-through-differential-testing/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2023-200-paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/diffcsp-finding-browser-bugs-in-content-security-policy-enforcement-through-differential-testing/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/diffcsp-finding-browser-bugs-in-content-security-policy-enforcement-through-differential-testing/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

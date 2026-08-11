@@ -2,25 +2,25 @@
 type: Article
 title: Penetrating Intranets through Adobe Flex Applications
 resource: "http://www.gdssecurity.com/l/b/2010/03/17/penetrating-intranets-through-adobe-flex-applications/"
-tags: [article, webseclist-reference, en, levelblue-com]
+tags: [article, webseclist-reference, en, gdssecurity-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:12:13+00:00"
+  at: "2026-08-11T17:35:22+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.gdssecurity.com/l/b/2010/03/17/penetrating-intranets-through-adobe-flex-applications/"
     title: Penetrating Intranets through Adobe Flex Applications
-  - id: canonical
-    resource: "https://www.levelblue.com/services/penetration-testing"
+    author: Marcin Wielgoszewski
 also_at: []
-authors: []
-canonical_url: "https://www.levelblue.com/services/penetration-testing"
+authors:
+  - Marcin Wielgoszewski
+canonical_url: ""
 cited_by:
   - "2010.md:48"
 commit: ""
-content_sha256: e5b26d8df7c3dd124ab661814c79f239d4473088aa6c7185c78cc3fd30915b7f
+content_sha256: fe418437459c2ab98825c846d0d4609e8913ac7d5d6df82fd8807858fbb8fded
 depth: full
 depth_reason: default
 kind: article
@@ -28,12 +28,12 @@ language: en
 licence: unknown
 original_url: "http://www.gdssecurity.com/l/b/2010/03/17/penetrating-intranets-through-adobe-flex-applications/"
 published: ""
-publisher: levelblue.com
+publisher: gdssecurity.com
 publisher_english: ""
 raw_sha256: f628b380bcab51f68edd6bdcce4822f854755472f15de109268ed6412bea1eef
-retrieved_from: "https://www.levelblue.com/services/penetration-testing"
+retrieved_from: "http://www.gdssecurity.com/l/b/2010/03/17/penetrating-intranets-through-adobe-flex-applications/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T01:12:13+00:00"
+retrieved_utc: "2026-08-11T17:35:22+00:00"
 slug: gdssecurity-com-penetrating-intranets-through-adobe-flex-applications
 snapshot: ""
 title_english: ""
@@ -43,12 +43,11 @@ translation_of: ""
 
 # Penetrating Intranets through Adobe Flex Applications
 
-**Penetrating Intranets through Adobe Flex Applications** - Author not stated, levelblue.com.
+**Penetrating Intranets through Adobe Flex Applications** - Marcin Wielgoszewski, gdssecurity.com.
 
 - Published: date not stated
 - Original: <http://www.gdssecurity.com/l/b/2010/03/17/penetrating-intranets-through-adobe-flex-applications/>
-- Current location: <https://www.levelblue.com/services/penetration-testing>
-- Preserved from: https://www.levelblue.com/services/penetration-testing (stored) on 2026-08-09
+- Preserved from: http://www.gdssecurity.com/l/b/2010/03/17/penetrating-intranets-through-adobe-flex-applications/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -63,9 +62,9 @@ page going offline. To read the original, follow the link above.
 
 Penetrating Intranets through Adobe Flex Applications - Gotham Digital Science
 
-[About](https://www.levelblue.com/g/a.php)|[Careers](https://www.levelblue.com/g/ca.php)|[Press](https://www.levelblue.com/g/pr.php)|[News](https://www.levelblue.com/g/ne.php)|[Case Studies](https://www.levelblue.com/g/cs.php)|[Tools](https://www.levelblue.com/l/t.php)|[Blog](https://www.levelblue.com/l/b/)
+[About](http://www.gdssecurity.com/g/a.php)|[Careers](http://www.gdssecurity.com/g/ca.php)|[Press](http://www.gdssecurity.com/g/pr.php)|[News](http://www.gdssecurity.com/g/ne.php)|[Case Studies](http://www.gdssecurity.com/g/cs.php)|[Tools](http://www.gdssecurity.com/l/t.php)|[Blog](http://www.gdssecurity.com/l/b/)
 
-[![](https://www.levelblue.com/images/gds_logo_2.png)](https://www.levelblue.com/)
+[![](http://www.gdssecurity.com/images/gds_logo_2.png)](http://www.gdssecurity.com/)
 
   Mar   17   2010
 
@@ -128,7 +127,7 @@ If using SOAP, you’ll need to know the following additional information:
 
 Below is a screenshot of Blazentoo in action. Note that the URL being accessed in this example is “http://localhost/”. This could just as easily have been an internal IP address or hostname.
 
-[![Blazentoo in action](https://www.levelblue.com/l/blazentoo.png)](https://www.levelblue.com/l/blazentoo.png)
+[![Blazentoo in action](http://www.gdssecurity.com/l/blazentoo.png)](http://www.gdssecurity.com/l/blazentoo.png)
 
 You can download Blazentoo from our [tools](http://www.gdssecurity.com/l/t.php) page.
 

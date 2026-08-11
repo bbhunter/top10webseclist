@@ -5,15 +5,17 @@ resource: "https://i.blackhat.com/USA-20/Wednesday/us-20-Klein-HTTP-Request-Smug
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:17+00:00"
+  at: "2026-08-11T17:41:19+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/USA-20/Wednesday/us-20-Klein-HTTP-Request-Smuggling-In-2020-New-Variants-New-Defenses-And-New-Challenges.pdf"
     title: HTTP Request Smuggling in 2020
+    author: Amit Klein
 also_at: []
-authors: []
+authors:
+  - Amit Klein
 canonical_url: ""
 cited_by:
   - "2020.md:22"
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 048d4ae23d92b15870ceaad27c72a25381ca621a020751f50533f788b1f3041d
 retrieved_from: "https://i.blackhat.com/USA-20/Wednesday/us-20-Klein-HTTP-Request-Smuggling-In-2020-New-Variants-New-Defenses-And-New-Challenges.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:17+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:19+00:00"
 slug: http-request-smuggling-2020
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # HTTP Request Smuggling in 2020
 
-**HTTP Request Smuggling in 2020** - Author not stated, Publisher not stated.
+**HTTP Request Smuggling in 2020** - Amit Klein, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/USA-20/Wednesday/us-20-Klein-HTTP-Request-Smuggling-In-2020-New-Variants-New-Defenses-And-New-Challenges.pdf>
-- Preserved from: https://i.blackhat.com/USA-20/Wednesday/us-20-Klein-HTTP-Request-Smuggling-In-2020-New-Variants-New-Defenses-And-New-Challenges.pdf (live) on 2026-08-09
+- Preserved from: https://i.blackhat.com/USA-20/Wednesday/us-20-Klein-HTTP-Request-Smuggling-In-2020-New-Variants-New-Defenses-And-New-Challenges.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,20 +5,27 @@ resource: "https://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T09:40:28+00:00"
+  at: "2026-08-11T17:34:40+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf"
     title: The Most Dangerous Code in the World
+    author: Martin Georgiev, Subodh Iyengar, Suman Jana, Rishita Anubhai, Dan Boneh, Vitaly Shmatikov
   - id: capture
     resource: "https://web.archive.org/web/20121024020823/https://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf"
 also_at: []
-authors: []
+authors:
+  - Martin Georgiev
+  - Subodh Iyengar
+  - Suman Jana
+  - Rishita Anubhai
+  - Dan Boneh
+  - Vitaly Shmatikov
 canonical_url: ""
 cited_by:
-  - "2012.md:81"
+  - "2012.md:76"
 commit: ""
 content_sha256: 18fdf313678a9e79a99c35fddecfee6a2cf87c163598c11a76e14a424ad9561e
 depth: full
@@ -33,7 +40,7 @@ publisher_english: ""
 raw_sha256: c628e14c04c42010e35ccc2fb2175bab0738780a9ee09ff43f9ac34f411aa8bf
 retrieved_from: "https://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T09:40:28+00:00"
+retrieved_utc: "2026-08-11T17:34:40+00:00"
 slug: most-dangerous-code-world
 snapshot: 20121024020823
 title_english: ""
@@ -43,11 +50,11 @@ translation_of: ""
 
 # The Most Dangerous Code in the World
 
-**The Most Dangerous Code in the World** - Author not stated, Publisher not stated.
+**The Most Dangerous Code in the World** - Martin Georgiev, Subodh Iyengar, Suman Jana, Rishita Anubhai, Dan Boneh, Vitaly Shmatikov, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf>
-- Preserved from: https://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf (stored) on 2026-08-09
+- Preserved from: https://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf (stored) on 2026-08-11
 - Capture timestamp: 20121024020823
 - Licence: unknown
 

@@ -5,18 +5,20 @@ resource: "https://download.scrt.ch/insomnihack/ins24-slides/Secret_web_hacking_
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-07T09:42:25+00:00"
+  at: "2026-08-11T17:35:00+00:00"
 status: stable
-stale_after: 2027-08-07
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://download.scrt.ch/insomnihack/ins24-slides/Secret_web_hacking_knowledge.pdf"
     title: Secret web hacking knowledge
+    author: Philippe Dourassov
 also_at: []
-authors: []
+authors:
+  - Philippe Dourassov
 canonical_url: ""
 cited_by:
-  - "2024.md:88"
+  - "2024.md:86"
 commit: ""
 content_sha256: 1ca567365e97c35543497c5e9eb970e211a96d88ed556f1049afa43109ca0c80
 depth: full
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 95a69a74a8286ae657ac727f4e4a4405a2c7680e8da3a5b22031361fbe6776cd
 retrieved_from: "https://download.scrt.ch/insomnihack/ins24-slides/Secret_web_hacking_knowledge.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-07T09:42:25+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:00+00:00"
 slug: secret-web-hacking-knowledge
 snapshot: ""
 title_english: ""
@@ -41,15 +43,15 @@ translation_of: ""
 
 # Secret web hacking knowledge
 
-**Secret web hacking knowledge** - Author not stated, Publisher not stated.
+**Secret web hacking knowledge** - Philippe Dourassov, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://download.scrt.ch/insomnihack/ins24-slides/Secret_web_hacking_knowledge.pdf>
-- Preserved from: https://download.scrt.ch/insomnihack/ins24-slides/Secret_web_hacking_knowledge.pdf (live) on 2026-08-07
+- Preserved from: https://download.scrt.ch/insomnihack/ins24-slides/Secret_web_hacking_knowledge.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

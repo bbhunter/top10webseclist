@@ -5,18 +5,20 @@ resource: "https://i.blackhat.com/BH-USA-26/Presentations/US-26-SplitlineNg-Born
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:50:58+00:00"
+  at: "2026-08-11T17:40:34+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/BH-USA-26/Presentations/US-26-SplitlineNg-BornCorrupted-Thursday.pdf"
     title: Born Corrupted
+    author: Tsi-Lin Ng
 also_at: []
-authors: []
+authors:
+  - Tsi-Lin Ng
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:113"
+  - "2026-ai.md:91"
 commit: ""
 content_sha256: 7d3ba03a401ffcc44b8d1258821ae376c412e269b13c6181d50ec01cf1af0350
 depth: full
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 650f71794f9f75a72c0a9da640c72eb71767d40fe51c4fd869a1b83e46c875a8
 retrieved_from: "https://i.blackhat.com/BH-USA-26/Presentations/US-26-SplitlineNg-BornCorrupted-Thursday.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T18:50:58+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:40:34+00:00"
 slug: born-corrupted
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Born Corrupted
 
-**Born Corrupted** - Author not stated, Publisher not stated.
+**Born Corrupted** - Tsi-Lin Ng, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-USA-26/Presentations/US-26-SplitlineNg-BornCorrupted-Thursday.pdf>
-- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/US-26-SplitlineNg-BornCorrupted-Thursday.pdf (live) on 2026-08-08
+- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/US-26-SplitlineNg-BornCorrupted-Thursday.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

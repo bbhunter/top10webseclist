@@ -5,15 +5,19 @@ resource: "https://arxiv.org/abs/2603.12277"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:02:35+00:00"
+  at: "2026-08-11T17:34:06+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://arxiv.org/abs/2603.12277"
     title: Prompt Injection as Role Confusion
+    author: Charles Ye, Jasmine Cui, Dylan Hadfield-Menell
 also_at: []
-authors: []
+authors:
+  - Charles Ye
+  - Jasmine Cui
+  - Dylan Hadfield-Menell
 canonical_url: ""
 cited_by:
   - "2026-ai.md:77"
@@ -30,8 +34,8 @@ publisher: arXiv.org
 publisher_english: ""
 raw_sha256: 38f08a284ce790f8dedf2fca368ed4e9dca5cf5faedbff609f5534034285aee0
 retrieved_from: "https://arxiv.org/abs/2603.12277"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:02:35+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:06+00:00"
 slug: arxiv-org-prompt-injection-as-role-confusion
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # Prompt Injection as Role Confusion
 
-**Prompt Injection as Role Confusion** - Author not stated, arXiv.org.
+**Prompt Injection as Role Confusion** - Charles Ye, Jasmine Cui, Dylan Hadfield-Menell, arXiv.org.
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/2603.12277>
-- Preserved from: https://arxiv.org/abs/2603.12277 (live) on 2026-08-10
+- Preserved from: https://arxiv.org/abs/2603.12277 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

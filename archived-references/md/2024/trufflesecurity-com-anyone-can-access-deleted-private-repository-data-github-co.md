@@ -5,20 +5,22 @@ resource: "https://trufflesecurity.com/blog/anyone-can-access-deleted-and-privat
 tags: [article, webseclist-reference, en-US, trufflesecurity-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:47:39+00:00"
+  at: "2026-08-11T17:37:18+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github"
     title: Anyone can Access Deleted and Private Repository Data on GitHub ◆ Truffle Security Co.
+    author: Joe Leon
 also_at: []
-authors: []
+authors:
+  - Joe Leon
 canonical_url: ""
 cited_by:
   - "2024.md:116"
 commit: ""
-content_sha256: b5898616222cb4ae26f8eb154146e2775096979960375aad0fdc487c108ad2aa
+content_sha256: 011055efa6e98ca4f42cdf673832d7fb9fc9d973fb31c804829fc1de2fde47cd
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: trufflesecurity.com
 publisher_english: ""
 raw_sha256: 5fc47a0b180f3941d0676ae5f272094395237d9f50717c642d37ddec634e9c4b
 retrieved_from: "https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:47:39+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:37:18+00:00"
 slug: trufflesecurity-com-anyone-can-access-deleted-private-repository-data-github-co
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Anyone can Access Deleted and Private Repository Data on GitHub ◆ Truffle Security Co.
 
-**Anyone can Access Deleted and Private Repository Data on GitHub ◆ Truffle Security Co.** - Author not stated, trufflesecurity.com.
+**Anyone can Access Deleted and Private Repository Data on GitHub ◆ Truffle Security Co.** - Joe Leon, trufflesecurity.com.
 
 - Published: date not stated
 - Original: <https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github>
-- Preserved from: https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github (live) on 2026-08-09
+- Preserved from: https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

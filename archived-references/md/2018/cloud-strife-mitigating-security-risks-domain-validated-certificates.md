@@ -5,18 +5,24 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:35:11+00:00"
+  at: "2026-08-11T17:43:32+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf"
     title: "Cloud Strife: Mitigating the Security Risks of Domain-Validated Certificates"
+    author: Kevin Borgolte, Tobias Fiebig, Shuang Hao, Christopher Kruegel, Giovanni Vigna
 also_at: []
-authors: []
+authors:
+  - Kevin Borgolte
+  - Tobias Fiebig
+  - Shuang Hao
+  - Christopher Kruegel
+  - Giovanni Vigna
 canonical_url: ""
 cited_by:
-  - "2018.md:73"
+  - "2018.md:74"
 commit: ""
 content_sha256: 71020a1cc6371e5a641e9d0ceb96c73a99a7729ce0ab94e873e17d73f3c26bba
 depth: full
@@ -30,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: dd10b44aaf3d40b157b3ac5dafd0751ad262cf193c565ff712e79dd1c4456725
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:35:11+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:32+00:00"
 slug: cloud-strife-mitigating-security-risks-domain-validated-certificates
 snapshot: ""
 title_english: ""
@@ -41,11 +47,11 @@ translation_of: ""
 
 # Cloud Strife: Mitigating the Security Risks of Domain-Validated Certificates
 
-**Cloud Strife: Mitigating the Security Risks of Domain-Validated Certificates** - Author not stated, Publisher not stated.
+**Cloud Strife: Mitigating the Security Risks of Domain-Validated Certificates** - Kevin Borgolte, Tobias Fiebig, Shuang Hao, Christopher Kruegel, Giovanni Vigna, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

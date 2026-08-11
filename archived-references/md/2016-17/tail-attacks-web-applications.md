@@ -5,18 +5,22 @@ resource: "https://acmccs.github.io/papers/p1725-shanAemb.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:49:21+00:00"
+  at: "2026-08-11T17:37:32+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://acmccs.github.io/papers/p1725-shanAemb.pdf"
     title: Tail Attacks on Web Applications
+    author: Huasong Shan, Qingyang Wang, Calton Pu
 also_at: []
-authors: []
+authors:
+  - Huasong Shan
+  - Qingyang Wang
+  - Calton Pu
 canonical_url: ""
 cited_by:
-  - "2016-17.md:106"
+  - "2016-17.md:101"
 commit: ""
 content_sha256: 760b9219f314ce223b2fb4c851aa9ffc24bd367655f8f0af4ec419c476c4858b
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 922bbe0153210b7cc5263b0e49b43ba056f832023c2ff21210e0d2297a2779df
 retrieved_from: "https://acmccs.github.io/papers/p1725-shanAemb.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:49:21+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:37:32+00:00"
 slug: tail-attacks-web-applications
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # Tail Attacks on Web Applications
 
-**Tail Attacks on Web Applications** - Author not stated, Publisher not stated.
+**Tail Attacks on Web Applications** - Huasong Shan, Qingyang Wang, Calton Pu, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://acmccs.github.io/papers/p1725-shanAemb.pdf>
-- Preserved from: https://acmccs.github.io/papers/p1725-shanAemb.pdf (live) on 2026-08-08
+- Preserved from: https://acmccs.github.io/papers/p1725-shanAemb.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

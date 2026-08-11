@@ -5,18 +5,20 @@ resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Lahav-ChatMate-
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T18:56:10+00:00"
+  at: "2026-08-11T17:40:12+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Lahav-ChatMate-Slides.pdf"
     title: "ChatMate: Remote Prompt Execution on AI Assistants through Sandbox Escaping"
+    author: Ori Lahav
 also_at: []
-authors: []
+authors:
+  - Ori Lahav
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:103"
+  - "2026-ai.md:80"
 commit: ""
 content_sha256: e9a0108ac4f883db5fa0196e3940db42d518101701fdac41be1d3a306a13ef10
 depth: full
@@ -31,7 +33,7 @@ publisher_english: ""
 raw_sha256: ed26aa90bbed92bb78d2e9bdd517bb4e3dc5cb1194046f63a5728cfa53d019f6
 retrieved_from: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Lahav-ChatMate-Slides.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T18:56:10+00:00"
+retrieved_utc: "2026-08-11T17:40:12+00:00"
 slug: chatmate-remote-prompt-execution-ai-assistants-through-sandbox-escaping
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # ChatMate: Remote Prompt Execution on AI Assistants through Sandbox Escaping
 
-**ChatMate: Remote Prompt Execution on AI Assistants through Sandbox Escaping** - Author not stated, Publisher not stated.
+**ChatMate: Remote Prompt Execution on AI Assistants through Sandbox Escaping** - Ori Lahav, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Lahav-ChatMate-Slides.pdf>
-- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Lahav-ChatMate-Slides.pdf (stored) on 2026-08-09
+- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Lahav-ChatMate-Slides.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

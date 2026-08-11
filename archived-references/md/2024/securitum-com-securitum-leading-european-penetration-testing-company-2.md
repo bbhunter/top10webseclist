@@ -5,20 +5,22 @@ resource: "https://www.securitum.com/few_steps_on_how_to_take_over_a_whole_appli
 tags: [article, webseclist-reference, en, securitum-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:08+00:00"
+  at: "2026-08-11T17:45:28+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.securitum.com/few_steps_on_how_to_take_over_a_whole_application.html"
     title: Securitum. Leading european penetration testing company
+    author: Sebastian Jeż
 also_at: []
-authors: []
+authors:
+  - Sebastian Jeż
 canonical_url: ""
 cited_by:
   - "2024.md:108"
 commit: ""
-content_sha256: 368dcc427279160eccdb093898d37d3c274cee038dbeab40605afe682a6b3c78
+content_sha256: cc382faf2783a877b7a2180d1787978f1fce2d167ed161bd9b58c26884a77049
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: securitum.com
 publisher_english: ""
 raw_sha256: 05f1f026ea6e66b8ebf553627420a871d02027942966072c6c3a06c7f0fc882b
 retrieved_from: "https://www.securitum.com/few_steps_on_how_to_take_over_a_whole_application.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:08+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:28+00:00"
 slug: securitum-com-securitum-leading-european-penetration-testing-company-2
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Securitum. Leading european penetration testing company
 
-**Securitum. Leading european penetration testing company** - Author not stated, securitum.com.
+**Securitum. Leading european penetration testing company** - Sebastian Jeż, securitum.com.
 
 - Published: date not stated
 - Original: <https://www.securitum.com/few_steps_on_how_to_take_over_a_whole_application.html>
-- Preserved from: https://www.securitum.com/few_steps_on_how_to_take_over_a_whole_application.html (live) on 2026-08-09
+- Preserved from: https://www.securitum.com/few_steps_on_how_to_take_over_a_whole_application.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,18 +5,22 @@ resource: "https://www.eurecom.edu/publication/5664/download/sec-publi-5664.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:09:42+00:00"
+  at: "2026-08-11T17:35:08+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.eurecom.edu/publication/5664/download/sec-publi-5664.pdf"
     title: "Clock Around the Clock: Time-Based Device Fingerprinting"
+    author: Iskander Sanchez-Rola, Igor Santos, Davide Balzarotti
 also_at: []
-authors: []
+authors:
+  - Iskander Sanchez-Rola
+  - Igor Santos
+  - Davide Balzarotti
 canonical_url: ""
 cited_by:
-  - "2018.md:78"
+  - "2018.md:79"
 commit: ""
 content_sha256: a0d010a50cd7a53b1e7efbacc66931515e3bb1d459b1f9825a0447754f36f72f
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 43ddf04d8a15a90f69cd9b57b6b7e42458a573c356e43048fe8042f62de29c4c
 retrieved_from: "https://www.eurecom.edu/publication/5664/download/sec-publi-5664.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:09:42+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:08+00:00"
 slug: clock-around-clock-time-based-device-fingerprinting
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # Clock Around the Clock: Time-Based Device Fingerprinting
 
-**Clock Around the Clock: Time-Based Device Fingerprinting** - Author not stated, Publisher not stated.
+**Clock Around the Clock: Time-Based Device Fingerprinting** - Iskander Sanchez-Rola, Igor Santos, Davide Balzarotti, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.eurecom.edu/publication/5664/download/sec-publi-5664.pdf>
-- Preserved from: https://www.eurecom.edu/publication/5664/download/sec-publi-5664.pdf (live) on 2026-08-10
+- Preserved from: https://www.eurecom.edu/publication/5664/download/sec-publi-5664.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

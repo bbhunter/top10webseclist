@@ -5,19 +5,21 @@ resource: "https://portswigger.net/research/turbo-intruder-embracing-the-billion
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:59+00:00"
+  at: "2026-08-11T17:44:58+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack"
     title: "Turbo Intruder: Embracing the billion-request attack"
+    author: James Kettle
     last_modified: 2019-01-25
 also_at: []
-authors: []
+authors:
+  - James Kettle
 canonical_url: ""
 cited_by:
-  - "2019.md:66"
+  - "2019.md:67"
 commit: ""
 content_sha256: 83aec7a80e362cc257eeb99a7ac2995894402c629e2adc30708a7df74fe951df
 depth: full
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: f79ee9f7fac22852a8b661012046870009d6023e6a455de883f43a9959371247
 retrieved_from: "https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:59+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:58+00:00"
 slug: 2019-portswigger-research-turbo-intruder-embracing-billion-request-attack
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Turbo Intruder: Embracing the billion-request attack
 
-**Turbo Intruder: Embracing the billion-request attack** - Author not stated, PortSwigger Research.
+**Turbo Intruder: Embracing the billion-request attack** - James Kettle, PortSwigger Research.
 
 - Published: 2019-01-25
 - Original: <https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack>
-- Preserved from: https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

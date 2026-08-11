@@ -5,18 +5,21 @@ resource: "https://www.kapravelos.com/publications/mystique-CCS18.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:23+00:00"
+  at: "2026-08-11T17:35:46+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.kapravelos.com/publications/mystique-CCS18.pdf"
     title: "Mystique: Uncovering Information Leakage from Browser Extensions"
+    author: Quan Chen, Alexandros Kapravelos
 also_at: []
-authors: []
+authors:
+  - Quan Chen
+  - Alexandros Kapravelos
 canonical_url: ""
 cited_by:
-  - "2018.md:88"
+  - "2018.md:85"
 commit: ""
 content_sha256: 9f64f57109205987620b41125481ca5d442134463c662eca1fa98885681dc609
 depth: full
@@ -30,8 +33,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 6ad50f5ebcb003b81fdc9a23cf7f81463054b90aff9e3b12b3ac457d14751835
 retrieved_from: "https://www.kapravelos.com/publications/mystique-CCS18.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:23+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:46+00:00"
 slug: mystique-uncovering-information-leakage-browser-extensions
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # Mystique: Uncovering Information Leakage from Browser Extensions
 
-**Mystique: Uncovering Information Leakage from Browser Extensions** - Author not stated, Publisher not stated.
+**Mystique: Uncovering Information Leakage from Browser Extensions** - Quan Chen, Alexandros Kapravelos, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.kapravelos.com/publications/mystique-CCS18.pdf>
-- Preserved from: https://www.kapravelos.com/publications/mystique-CCS18.pdf (live) on 2026-08-08
+- Preserved from: https://www.kapravelos.com/publications/mystique-CCS18.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

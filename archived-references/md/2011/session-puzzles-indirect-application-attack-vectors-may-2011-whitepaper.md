@@ -5,15 +5,17 @@ resource: "https://storage.googleapis.com/google-code-archive-downloads/v2/code.
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:44:37+00:00"
+  at: "2026-08-11T17:37:13+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Session%20Puzzles%20-%20Indirect%20Application%20Attack%20Vectors%20-%20May%202011%20-%20Whitepaper.pdf"
     title: Session Puzzles Indirect Application Attack Vectors May 2011 Whitepaper
+    author: Shay Chen
 also_at: []
-authors: []
+authors:
+  - Shay Chen
 canonical_url: ""
 cited_by:
   - "2011.md:53"
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 06c60c05ca14aa4fb0a7964972f1f70f32e8a96f4c0fe15c701694b42b9c30d0
 retrieved_from: "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Session%20Puzzles%20-%20Indirect%20Application%20Attack%20Vectors%20-%20May%202011%20-%20Whitepaper.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:44:37+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:37:13+00:00"
 slug: session-puzzles-indirect-application-attack-vectors-may-2011-whitepaper
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Session Puzzles Indirect Application Attack Vectors May 2011 Whitepaper
 
-**Session Puzzles Indirect Application Attack Vectors May 2011 Whitepaper** - Author not stated, Publisher not stated.
+**Session Puzzles Indirect Application Attack Vectors May 2011 Whitepaper** - Shay Chen, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Session%20Puzzles%20-%20Indirect%20Application%20Attack%20Vectors%20-%20May%202011%20-%20Whitepaper.pdf>
-- Preserved from: https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Session%20Puzzles%20-%20Indirect%20Application%20Attack%20Vectors%20-%20May%202011%20-%20Whitepaper.pdf (live) on 2026-08-09
+- Preserved from: https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Session%20Puzzles%20-%20Indirect%20Application%20Attack%20Vectors%20-%20May%202011%20-%20Whitepaper.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,18 +5,25 @@ resource: "https://www.cs.virginia.edu/~evans/pubs/usenix2013/"
 tags: [article, webseclist-reference, cs-virginia-edu]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:08:11+00:00"
+  at: "2026-08-11T17:34:41+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.cs.virginia.edu/~evans/pubs/usenix2013/"
     title: "Explicating SDKs: Uncovering Assumptions Underlying Secure Authentication and Authorization"
+    author: Rui Wang, Yuchen Zhou, Shuo Chen, Shaz Qadeer, David Evans, Yuri Gurevich
 also_at: []
-authors: []
+authors:
+  - Rui Wang
+  - Yuchen Zhou
+  - Shuo Chen
+  - Shaz Qadeer
+  - David Evans
+  - Yuri Gurevich
 canonical_url: ""
 cited_by:
-  - "2013.md:50"
+  - "2013.md:51"
 commit: ""
 content_sha256: 9373e2e005b9548d120820b3118a8c57f220a696fe826007185a295003bd4eef
 depth: full
@@ -30,8 +37,8 @@ publisher: cs.virginia.edu
 publisher_english: ""
 raw_sha256: 440149c6d84e8f6c9bd8650fbe6485940316dacd8524e0d2c9cea41f593c1e6c
 retrieved_from: "https://www.cs.virginia.edu/~evans/pubs/usenix2013/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:08:11+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:41+00:00"
 slug: cs-virginia-edu-explicating-sdks-uncovering-assumptions-authorization
 snapshot: ""
 title_english: ""
@@ -41,11 +48,11 @@ translation_of: ""
 
 # Explicating SDKs: Uncovering Assumptions Underlying Secure Authentication and Authorization
 
-**Explicating SDKs: Uncovering Assumptions Underlying Secure Authentication and Authorization** - Author not stated, cs.virginia.edu.
+**Explicating SDKs: Uncovering Assumptions Underlying Secure Authentication and Authorization** - Rui Wang, Yuchen Zhou, Shuo Chen, Shaz Qadeer, David Evans, Yuri Gurevich, cs.virginia.edu.
 
 - Published: date not stated
 - Original: <https://www.cs.virginia.edu/~evans/pubs/usenix2013/>
-- Preserved from: https://www.cs.virginia.edu/~evans/pubs/usenix2013/ (live) on 2026-08-10
+- Preserved from: https://www.cs.virginia.edu/~evans/pubs/usenix2013/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

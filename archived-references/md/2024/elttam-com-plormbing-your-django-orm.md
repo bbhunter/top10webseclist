@@ -5,22 +5,24 @@ resource: "https://www.elttam.com/blog/plormbing-your-django-orm/"
 tags: [article, webseclist-reference, en, elttam-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:10:09+00:00"
+  at: "2026-08-11T17:35:05+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.elttam.com/blog/plormbing-your-django-orm/"
     title: plORMbing your Django ORM
+    author: Alex Brown
   - id: canonical
     resource: "https://www.elttam.com/blog/plormbing-your-django-orm"
 also_at: []
-authors: []
+authors:
+  - Alex Brown
 canonical_url: "https://www.elttam.com/blog/plormbing-your-django-orm"
 cited_by:
   - "2024.md:117"
 commit: ""
-content_sha256: b905324a333c9ead5d10a4a8238142bd13bca39099e1e469bdc4cb96b8a3e97a
+content_sha256: c15a716baae6d1cef2f663b2baab10c40efa0c1de1323a470770dc91686bbbdb
 depth: full
 depth_reason: default
 kind: article
@@ -32,8 +34,8 @@ publisher: elttam.com
 publisher_english: ""
 raw_sha256: 03689079490841d5acc4ef658a120398cf7c2906fb85846c755931ad66a89b5d
 retrieved_from: "https://www.elttam.com/blog/plormbing-your-django-orm"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:10:09+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:05+00:00"
 slug: elttam-com-plormbing-your-django-orm
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # plORMbing your Django ORM
 
-**plORMbing your Django ORM** - Author not stated, elttam.com.
+**plORMbing your Django ORM** - Alex Brown, elttam.com.
 
 - Published: date not stated
 - Original: <https://www.elttam.com/blog/plormbing-your-django-orm/>
 - Current location: <https://www.elttam.com/blog/plormbing-your-django-orm>
-- Preserved from: https://www.elttam.com/blog/plormbing-your-django-orm (live) on 2026-08-09
+- Preserved from: https://www.elttam.com/blog/plormbing-your-django-orm (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

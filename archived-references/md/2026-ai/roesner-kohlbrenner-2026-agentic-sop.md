@@ -5,15 +5,18 @@ resource: "https://www.franziroesner.com/pdf/roesner_kohlbrenner_2026_agentic_so
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:10:12+00:00"
+  at: "2026-08-11T17:35:20+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.franziroesner.com/pdf/roesner_kohlbrenner_2026_agentic_sop.pdf"
     title: roesner kohlbrenner 2026 agentic sop
+    author: Franziska Roesner, David Kohlbrenner
 also_at: []
-authors: []
+authors:
+  - Franziska Roesner
+  - David Kohlbrenner
 canonical_url: ""
 cited_by:
   - "2026-ai.md:81"
@@ -30,8 +33,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 4b278a7762acd0ab9e0a319dccfa3b6fd078f3ed72000e5709e5946431e71972
 retrieved_from: "https://www.franziroesner.com/pdf/roesner_kohlbrenner_2026_agentic_sop.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:10:12+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:20+00:00"
 slug: roesner-kohlbrenner-2026-agentic-sop
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # roesner kohlbrenner 2026 agentic sop
 
-**roesner kohlbrenner 2026 agentic sop** - Author not stated, Publisher not stated.
+**roesner kohlbrenner 2026 agentic sop** - Franziska Roesner, David Kohlbrenner, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.franziroesner.com/pdf/roesner_kohlbrenner_2026_agentic_sop.pdf>
-- Preserved from: https://www.franziroesner.com/pdf/roesner_kohlbrenner_2026_agentic_sop.pdf (live) on 2026-08-10
+- Preserved from: https://www.franziroesner.com/pdf/roesner_kohlbrenner_2026_agentic_sop.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

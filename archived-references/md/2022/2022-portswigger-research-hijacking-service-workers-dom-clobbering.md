@@ -5,16 +5,18 @@ resource: "https://portswigger.net/research/hijacking-service-workers-via-dom-cl
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:40+00:00"
+  at: "2026-08-11T17:45:12+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/hijacking-service-workers-via-dom-clobbering"
     title: Hijacking service workers via DOM Clobbering
+    author: Gareth Heyes
     last_modified: 2022-11-29
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: ""
 cited_by:
   - "2022.md:42"
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 9bac91234a8e334b2f4fc6c0b9253bbf39227c854d5de1dded6851a9f6cbc5db
 retrieved_from: "https://portswigger.net/research/hijacking-service-workers-via-dom-clobbering"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:40+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:12+00:00"
 slug: 2022-portswigger-research-hijacking-service-workers-dom-clobbering
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Hijacking service workers via DOM Clobbering
 
-**Hijacking service workers via DOM Clobbering** - Author not stated, PortSwigger Research.
+**Hijacking service workers via DOM Clobbering** - Gareth Heyes, PortSwigger Research.
 
 - Published: 2022-11-29
 - Original: <https://portswigger.net/research/hijacking-service-workers-via-dom-clobbering>
-- Preserved from: https://portswigger.net/research/hijacking-service-workers-via-dom-clobbering (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/hijacking-service-workers-via-dom-clobbering (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

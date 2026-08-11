@@ -5,15 +5,17 @@ resource: "https://blog.doyensec.com/2017/08/03/electron-framework-security.html
 tags: [article, webseclist-reference, en-us, blog-doyensec-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:46+00:00"
+  at: "2026-08-11T17:39:44+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://blog.doyensec.com/2017/08/03/electron-framework-security.html"
     title: "Modern Alchemy: Turning XSS into RCE"
+    author: Luca Carettoni
 also_at: []
-authors: []
+authors:
+  - Luca Carettoni
 canonical_url: ""
 cited_by:
   - "2016-17.md:28"
@@ -30,8 +32,8 @@ publisher: blog.doyensec.com
 publisher_english: ""
 raw_sha256: 2d86f73556b0bffc227552f9280ead98aad19d01edcc407e494521ea5cb0e23e
 retrieved_from: "https://blog.doyensec.com/2017/08/03/electron-framework-security.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:46+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:44+00:00"
 slug: blog-doyensec-com-modern-alchemy-turning-xss-rce
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Modern Alchemy: Turning XSS into RCE
 
-**Modern Alchemy: Turning XSS into RCE** - Author not stated, blog.doyensec.com.
+**Modern Alchemy: Turning XSS into RCE** - Luca Carettoni, blog.doyensec.com.
 
 - Published: date not stated
 - Original: <https://blog.doyensec.com/2017/08/03/electron-framework-security.html>
-- Preserved from: https://blog.doyensec.com/2017/08/03/electron-framework-security.html (live) on 2026-08-09
+- Preserved from: https://blog.doyensec.com/2017/08/03/electron-framework-security.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

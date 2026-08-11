@@ -5,19 +5,24 @@ resource: "https://www.ndss-symposium.org/ndss2010/flax-systematic-discovery-cli
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:56:59+00:00"
+  at: "2026-08-11T17:43:39+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2010/flax-systematic-discovery-client-side-validation-vulnerabilities-rich-web-applications/"
     title: "FLAX: Systematic Discovery of Client-side Validation Vulnerabilities in Rich Web Applications"
+    author: Prateek Saxena, Steve Hanna, Pongsin Poosankam, Dawn Song
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/saxe.pdf"
-authors: []
+authors:
+  - Prateek Saxena
+  - Steve Hanna
+  - Pongsin Poosankam
+  - Dawn Song
 canonical_url: ""
 cited_by:
-  - "2010.md:86"
+  - "2010.md:87"
 commit: ""
 content_sha256: a4cb2cad8b2695478b3d5975cb134924013f424b9a2565834fef4535cd32cfc9
 depth: full
@@ -31,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: ebfc1ef1c02c594a994d23964a1a43179a271e06cf3a0fd3cb584dacd01469df
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/saxe.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:56:59+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:39+00:00"
 slug: flax-systematic-discovery-client-side-validation-vulnerabilities-applications
 snapshot: ""
 title_english: ""
@@ -42,12 +47,12 @@ translation_of: ""
 
 # FLAX: Systematic Discovery of Client-side Validation Vulnerabilities in Rich Web Applications
 
-**FLAX: Systematic Discovery of Client-side Validation Vulnerabilities in Rich Web Applications** - Author not stated, Publisher not stated.
+**FLAX: Systematic Discovery of Client-side Validation Vulnerabilities in Rich Web Applications** - Prateek Saxena, Steve Hanna, Pongsin Poosankam, Dawn Song, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2010/flax-systematic-discovery-client-side-validation-vulnerabilities-rich-web-applications/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/saxe.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/saxe.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/saxe.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

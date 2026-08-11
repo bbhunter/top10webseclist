@@ -5,17 +5,19 @@ resource: "http://samy.pl/evercookie/"
 tags: [article, webseclist-reference, sa-my]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:44+00:00"
+  at: "2026-08-11T17:45:15+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://samy.pl/evercookie/"
     title: samy kamkar - evercookie - virtually irrevocable persistent cookies
+    author: Samy Kamkar
   - id: canonical
     resource: "https://sa.my/evercookie/"
 also_at: []
-authors: []
+authors:
+  - Samy Kamkar
 canonical_url: "https://sa.my/evercookie/"
 cited_by:
   - "2010.md:6"
@@ -32,8 +34,8 @@ publisher: sa.my
 publisher_english: ""
 raw_sha256: b28e873c5f8b2827ad6a53bf18fc0e9ca9f3a410a1d9b1c2c8efc83a90bb179e
 retrieved_from: "https://sa.my/evercookie/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:44+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:15+00:00"
 slug: sa-my-samy-kamkar-evercookie-virtually-irrevocable-persistent-cookies
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # samy kamkar - evercookie - virtually irrevocable persistent cookies
 
-**samy kamkar - evercookie - virtually irrevocable persistent cookies** - Author not stated, sa.my.
+**samy kamkar - evercookie - virtually irrevocable persistent cookies** - Samy Kamkar, sa.my.
 
 - Published: date not stated
 - Original: <http://samy.pl/evercookie/>
 - Current location: <https://sa.my/evercookie/>
-- Preserved from: https://sa.my/evercookie/ (live) on 2026-08-09
+- Preserved from: https://sa.my/evercookie/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

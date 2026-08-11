@@ -5,16 +5,18 @@ resource: "https://portswigger.net/research/top-10-web-hacking-techniques-of-201
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:58+00:00"
+  at: "2026-08-11T17:45:01+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/top-10-web-hacking-techniques-of-2017-nominations-open"
     title: Top 10 Web Hacking Techniques of 2017
+    author: James Kettle
     last_modified: 2018-07-17
 also_at: []
-authors: []
+authors:
+  - James Kettle
 canonical_url: ""
 cited_by:
   - "2016-17.md:3"
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 86ba85f62a004f90b1240e4ddcf98430a4b7e55b49d02407b9edebe1373bc0b6
 retrieved_from: "https://portswigger.net/research/top-10-web-hacking-techniques-of-2017-nominations-open"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:58+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:01+00:00"
 slug: 2018-portswigger-research-top-10-web-hacking-techniques-2017
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Top 10 Web Hacking Techniques of 2017
 
-**Top 10 Web Hacking Techniques of 2017** - Author not stated, PortSwigger Research.
+**Top 10 Web Hacking Techniques of 2017** - James Kettle, PortSwigger Research.
 
 - Published: 2018-07-17
 - Original: <https://portswigger.net/research/top-10-web-hacking-techniques-of-2017-nominations-open>
-- Preserved from: https://portswigger.net/research/top-10-web-hacking-techniques-of-2017-nominations-open (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/top-10-web-hacking-techniques-of-2017-nominations-open (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

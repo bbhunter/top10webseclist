@@ -5,18 +5,22 @@ resource: "https://arxiv.org/abs/1601.01229"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:02:26+00:00"
+  at: "2026-08-11T17:34:05+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://arxiv.org/abs/1601.01229"
     title: A Comprehensive Formal Security Analysis of OAuth 2.0
+    author: Daniel Fett, Ralf Kuesters, Guido Schmitz
 also_at: []
-authors: []
+authors:
+  - Daniel Fett
+  - Ralf Kuesters
+  - Guido Schmitz
 canonical_url: ""
 cited_by:
-  - "2016-17.md:66"
+  - "2016-17.md:67"
 commit: ""
 content_sha256: a7efd4e94036e5ce44c528d16721035aecc3fb35b5aa2cd6f48d47e840e2d97c
 depth: full
@@ -30,8 +34,8 @@ publisher: arXiv.org
 publisher_english: ""
 raw_sha256: cb0b1305b74a26a4048b81edb38a4e605aaa57d0c77b415963603dcaf42e2304
 retrieved_from: "https://arxiv.org/abs/1601.01229"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:02:26+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:05+00:00"
 slug: arxiv-org-comprehensive-formal-security-analysis-oauth-2-0
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # A Comprehensive Formal Security Analysis of OAuth 2.0
 
-**A Comprehensive Formal Security Analysis of OAuth 2.0** - Author not stated, arXiv.org.
+**A Comprehensive Formal Security Analysis of OAuth 2.0** - Daniel Fett, Ralf Kuesters, Guido Schmitz, arXiv.org.
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/1601.01229>
-- Preserved from: https://arxiv.org/abs/1601.01229 (live) on 2026-08-10
+- Preserved from: https://arxiv.org/abs/1601.01229 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

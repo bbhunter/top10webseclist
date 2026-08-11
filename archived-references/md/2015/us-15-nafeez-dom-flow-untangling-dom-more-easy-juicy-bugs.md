@@ -5,21 +5,22 @@ resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Nafeez-Dom-Flow-U
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-07T09:41:05+00:00"
+  at: "2026-08-11T17:39:26+00:00"
 status: stable
-stale_after: 2027-08-07
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Nafeez-Dom-Flow-Untangling-The-DOM-For-More-Easy-Juicy-Bugs.pdf"
     title: us 15 Nafeez Dom Flow Untangling The DOM For More Easy Juicy Bugs
+    author: Ahamed Nafeez
   - id: canonical
     resource: "https://blackhat.com/docs/us-15/materials/us-15-Nafeez-Dom-Flow-Untangling-The-DOM-For-More-Easy-Juicy-Bugs.pdf"
 also_at: []
-authors: []
+authors:
+  - Ahamed Nafeez
 canonical_url: "https://blackhat.com/docs/us-15/materials/us-15-Nafeez-Dom-Flow-Untangling-The-DOM-For-More-Easy-Juicy-Bugs.pdf"
 cited_by:
-  - "2015.md:24"
-  - "2015.md:25"
+  - "2015.md:23"
 commit: ""
 content_sha256: 4aefcd1b276f689fae1107828cec87ec284843e5ff7103a6c654857220a5ef77
 depth: full
@@ -33,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 3c2d4906d090b9375f1add611aa4d839da490414fed496ff20e92271e3a8bef1
 retrieved_from: "https://blackhat.com/docs/us-15/materials/us-15-Nafeez-Dom-Flow-Untangling-The-DOM-For-More-Easy-Juicy-Bugs.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-07T09:41:05+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:26+00:00"
 slug: us-15-nafeez-dom-flow-untangling-dom-more-easy-juicy-bugs
 snapshot: ""
 title_english: ""
@@ -44,16 +45,16 @@ translation_of: ""
 
 # us 15 Nafeez Dom Flow Untangling The DOM For More Easy Juicy Bugs
 
-**us 15 Nafeez Dom Flow Untangling The DOM For More Easy Juicy Bugs** - Author not stated, Publisher not stated.
+**us 15 Nafeez Dom Flow Untangling The DOM For More Easy Juicy Bugs** - Ahamed Nafeez, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/docs/us-15/materials/us-15-Nafeez-Dom-Flow-Untangling-The-DOM-For-More-Easy-Juicy-Bugs.pdf>
 - Current location: <https://blackhat.com/docs/us-15/materials/us-15-Nafeez-Dom-Flow-Untangling-The-DOM-For-More-Easy-Juicy-Bugs.pdf>
-- Preserved from: https://blackhat.com/docs/us-15/materials/us-15-Nafeez-Dom-Flow-Untangling-The-DOM-For-More-Easy-Juicy-Bugs.pdf (live) on 2026-08-07
+- Preserved from: https://blackhat.com/docs/us-15/materials/us-15-Nafeez-Dom-Flow-Untangling-The-DOM-For-More-Easy-Juicy-Bugs.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

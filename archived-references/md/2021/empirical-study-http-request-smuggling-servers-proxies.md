@@ -5,15 +5,18 @@ resource: "https://kth.diva-portal.org/smash/get/diva2:1596031/FULLTEXT01.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:32:52+00:00"
+  at: "2026-08-11T17:35:49+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://kth.diva-portal.org/smash/get/diva2:1596031/FULLTEXT01.pdf"
     title: Empirical Study of HTTP Request Smuggling in Servers and Proxies
+    author: Mattias Grenfeldt, Asta Olofsson
 also_at: []
-authors: []
+authors:
+  - Mattias Grenfeldt
+  - Asta Olofsson
 canonical_url: ""
 cited_by:
   - "2021.md:26"
@@ -30,8 +33,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 109de778899b2036b883153e44d8d68f629f95e08b085ad067969b19a9354c9e
 retrieved_from: "https://kth.diva-portal.org/smash/get/diva2:1596031/FULLTEXT01.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:32:52+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:49+00:00"
 slug: empirical-study-http-request-smuggling-servers-proxies
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # Empirical Study of HTTP Request Smuggling in Servers and Proxies
 
-**Empirical Study of HTTP Request Smuggling in Servers and Proxies** - Author not stated, Publisher not stated.
+**Empirical Study of HTTP Request Smuggling in Servers and Proxies** - Mattias Grenfeldt, Asta Olofsson, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://kth.diva-portal.org/smash/get/diva2:1596031/FULLTEXT01.pdf>
-- Preserved from: https://kth.diva-portal.org/smash/get/diva2:1596031/FULLTEXT01.pdf (live) on 2026-08-09
+- Preserved from: https://kth.diva-portal.org/smash/get/diva2:1596031/FULLTEXT01.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

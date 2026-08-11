@@ -5,15 +5,17 @@ resource: "https://i.blackhat.com/BH-US-23/Presentations/US-23-Tervoort-Three-Ne
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:11+00:00"
+  at: "2026-08-11T17:40:24+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/BH-US-23/Presentations/US-23-Tervoort-Three-New-Attacks-Against-JSON-Web-Tokens-whitepaper.pdf"
     title: Three New Attacks Against JSON Web Tokens
+    author: Tom Tervoort
 also_at: []
-authors: []
+authors:
+  - Tom Tervoort
 canonical_url: ""
 cited_by:
   - "2023.md:34"
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 6edba9d7333c149a44f2a553533b8b6aef6c327a043cc3daecdc8ee718567201
 retrieved_from: "https://i.blackhat.com/BH-US-23/Presentations/US-23-Tervoort-Three-New-Attacks-Against-JSON-Web-Tokens-whitepaper.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:11+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:40:24+00:00"
 slug: three-new-attacks-against-json-web-tokens
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Three New Attacks Against JSON Web Tokens
 
-**Three New Attacks Against JSON Web Tokens** - Author not stated, Publisher not stated.
+**Three New Attacks Against JSON Web Tokens** - Tom Tervoort, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-US-23/Presentations/US-23-Tervoort-Three-New-Attacks-Against-JSON-Web-Tokens-whitepaper.pdf>
-- Preserved from: https://i.blackhat.com/BH-US-23/Presentations/US-23-Tervoort-Three-New-Attacks-Against-JSON-Web-Tokens-whitepaper.pdf (live) on 2026-08-09
+- Preserved from: https://i.blackhat.com/BH-US-23/Presentations/US-23-Tervoort-Three-New-Attacks-Against-JSON-Web-Tokens-whitepaper.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

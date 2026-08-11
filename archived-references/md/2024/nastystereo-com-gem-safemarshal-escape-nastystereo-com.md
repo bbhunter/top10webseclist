@@ -5,15 +5,17 @@ resource: "https://nastystereo.com/security/ruby-safe-marshal-escape.html"
 tags: [article, webseclist-reference, en-AU, nastystereo-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:36:28+00:00"
+  at: "2026-08-11T17:36:11+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://nastystereo.com/security/ruby-safe-marshal-escape.html"
     title: "Gem::SafeMarshal escape / nastystereo.com"
+    author: Luke Jahnke
 also_at: []
-authors: []
+authors:
+  - Luke Jahnke
 canonical_url: ""
 cited_by:
   - "2024.md:124"
@@ -30,8 +32,8 @@ publisher: nastystereo.com
 publisher_english: ""
 raw_sha256: 5c79c0a10adc82cda6cd832b1bfb02bfaabe4e1e176d2c1d03b9e17379914f0f
 retrieved_from: "https://nastystereo.com/security/ruby-safe-marshal-escape.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:36:28+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:11+00:00"
 slug: nastystereo-com-gem-safemarshal-escape-nastystereo-com
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Gem::SafeMarshal escape / nastystereo.com
 
-**Gem::SafeMarshal escape / nastystereo.com** - Author not stated, nastystereo.com.
+**Gem::SafeMarshal escape / nastystereo.com** - Luke Jahnke, nastystereo.com.
 
 - Published: date not stated
 - Original: <https://nastystereo.com/security/ruby-safe-marshal-escape.html>
-- Preserved from: https://nastystereo.com/security/ruby-safe-marshal-escape.html (live) on 2026-08-09
+- Preserved from: https://nastystereo.com/security/ruby-safe-marshal-escape.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

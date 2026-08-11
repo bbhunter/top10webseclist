@@ -5,18 +5,21 @@ resource: "https://arxiv.org/abs/1410.2087"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:02:24+00:00"
+  at: "2026-08-11T17:34:05+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://arxiv.org/abs/1410.2087"
     title: A Web Traffic Analysis Attack Using Only Timing Information
+    author: Saman Feghhi, Douglas J. Leith
 also_at: []
-authors: []
+authors:
+  - Saman Feghhi
+  - Douglas J. Leith
 canonical_url: ""
 cited_by:
-  - "2014.md:72"
+  - "2014.md:73"
 commit: ""
 content_sha256: 942309de492d55bfcb8ff2e0040a7803f176bbf45f06560d5c899aa1eac3b3fd
 depth: full
@@ -30,8 +33,8 @@ publisher: arXiv.org
 publisher_english: ""
 raw_sha256: eeb8ec89c13a4363a5426cd3462710539fc5d25520dd9c69766dd7a8cb5701eb
 retrieved_from: "https://arxiv.org/abs/1410.2087"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:02:24+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:05+00:00"
 slug: arxiv-org-web-traffic-analysis-attack-using-only-timing-information
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # A Web Traffic Analysis Attack Using Only Timing Information
 
-**A Web Traffic Analysis Attack Using Only Timing Information** - Author not stated, arXiv.org.
+**A Web Traffic Analysis Attack Using Only Timing Information** - Saman Feghhi, Douglas J. Leith, arXiv.org.
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/1410.2087>
-- Preserved from: https://arxiv.org/abs/1410.2087 (live) on 2026-08-10
+- Preserved from: https://arxiv.org/abs/1410.2087 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

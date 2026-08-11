@@ -5,18 +5,24 @@ resource: "https://casa.rub.de/en/research/publications/detail/finding-all-cross
 tags: [article, webseclist-reference, en-GB, casa-cyber-security-in-the-age-of-large-]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:07:08+00:00"
+  at: "2026-08-11T17:34:14+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://casa.rub.de/en/research/publications/detail/finding-all-cross-site-needles-in-the-dom-stack-a-comprehensive-methodology-for-the-automatic-xs-leak-detection-in-web-browsers"
     title: "Finding All Cross-Site Needles in the DOM Stack: A Comprehensive Methodology for the Automatic XS-Leak Detection in Web Browsers"
+    author: Jörg Schwenk, Marcus Niemietz, Christian Mainka, Lukas Knittel, Dominik Trevor Noß
 also_at: []
-authors: []
+authors:
+  - Jörg Schwenk
+  - Marcus Niemietz
+  - Christian Mainka
+  - Lukas Knittel
+  - Dominik Trevor Noß
 canonical_url: ""
 cited_by:
-  - "2023.md:88"
+  - "2023.md:89"
 commit: ""
 content_sha256: aaf47d3a1f5ad78a7dcc452d9f6856d3a399db2cc602d0b87645086d9a80c34d
 depth: full
@@ -30,8 +36,8 @@ publisher: CASA - Cyber Security in the Age of Large-Scale Adversaries
 publisher_english: ""
 raw_sha256: 5afa5ffaaf8b0e17eaeb867441765537fe27bb503d35f2e0051fc8b5e5d845ae
 retrieved_from: "https://casa.rub.de/en/research/publications/detail/finding-all-cross-site-needles-in-the-dom-stack-a-comprehensive-methodology-for-the-automatic-xs-leak-detection-in-web-browsers"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:07:08+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:14+00:00"
 slug: casa-cyber-security-in-the-age-of-large-scale-adversaries-finding-all-browsers
 snapshot: ""
 title_english: ""
@@ -41,11 +47,11 @@ translation_of: ""
 
 # Finding All Cross-Site Needles in the DOM Stack: A Comprehensive Methodology for the Automatic XS-Leak Detection in Web Browsers
 
-**Finding All Cross-Site Needles in the DOM Stack: A Comprehensive Methodology for the Automatic XS-Leak Detection in Web Browsers** - Author not stated, CASA - Cyber Security in the Age of Large-Scale Adversaries.
+**Finding All Cross-Site Needles in the DOM Stack: A Comprehensive Methodology for the Automatic XS-Leak Detection in Web Browsers** - Jörg Schwenk, Marcus Niemietz, Christian Mainka, Lukas Knittel, Dominik Trevor Noß, CASA - Cyber Security in the Age of Large-Scale Adversaries.
 
 - Published: date not stated
 - Original: <https://casa.rub.de/en/research/publications/detail/finding-all-cross-site-needles-in-the-dom-stack-a-comprehensive-methodology-for-the-automatic-xs-leak-detection-in-web-browsers>
-- Preserved from: https://casa.rub.de/en/research/publications/detail/finding-all-cross-site-needles-in-the-dom-stack-a-comprehensive-methodology-for-the-automatic-xs-leak-detection-in-web-browsers (live) on 2026-08-10
+- Preserved from: https://casa.rub.de/en/research/publications/detail/finding-all-cross-site-needles-in-the-dom-stack-a-comprehensive-methodology-for-the-automatic-xs-leak-detection-in-web-browsers (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

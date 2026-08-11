@@ -5,18 +5,22 @@ resource: "https://tom.vg/papers/timing-attacks_ccs2015.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:47:34+00:00"
+  at: "2026-08-11T17:37:16+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://tom.vg/papers/timing-attacks_ccs2015.pdf"
     title: timing attacks ccs2015
+    author: Tom Van Goethem, Wouter Joosen, Nick Nikiforakis
 also_at: []
-authors: []
+authors:
+  - Tom Van Goethem
+  - Wouter Joosen
+  - Nick Nikiforakis
 canonical_url: ""
 cited_by:
-  - "2015.md:74"
+  - "2015.md:71"
 commit: ""
 content_sha256: 121ebd42d468ef481991fcf7880ca2bd8632a84611c3b6985adec68e17b677ae
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: cbdf82e554d038b24ca9569cf08e77474da08a3a7cfee5eb289b96eb3ca19c44
 retrieved_from: "https://tom.vg/papers/timing-attacks_ccs2015.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:47:34+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:37:16+00:00"
 slug: timing-attacks-ccs2015
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # timing attacks ccs2015
 
-**timing attacks ccs2015** - Author not stated, Publisher not stated.
+**timing attacks ccs2015** - Tom Van Goethem, Wouter Joosen, Nick Nikiforakis, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://tom.vg/papers/timing-attacks_ccs2015.pdf>
-- Preserved from: https://tom.vg/papers/timing-attacks_ccs2015.pdf (live) on 2026-08-09
+- Preserved from: https://tom.vg/papers/timing-attacks_ccs2015.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

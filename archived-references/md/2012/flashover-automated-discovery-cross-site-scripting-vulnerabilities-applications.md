@@ -5,18 +5,24 @@ resource: "https://www.securitee.org/files/flashover_asiaccs2012.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:58:34+00:00"
+  at: "2026-08-11T17:45:27+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.securitee.org/files/flashover_asiaccs2012.pdf"
     title: "FlashOver: Automated Discovery of Cross-site Scripting Vulnerabilities in Rich Internet Applications"
+    author: Steven Van Acker, Nick Nikiforakis, Lieven Desmet, Wouter Joosen, Frank Piessens
 also_at: []
-authors: []
+authors:
+  - Steven Van Acker
+  - Nick Nikiforakis
+  - Lieven Desmet
+  - Wouter Joosen
+  - Frank Piessens
 canonical_url: ""
 cited_by:
-  - "2012.md:84"
+  - "2012.md:85"
 commit: ""
 content_sha256: f0bac4a2cd2abc482c6caa754b47ca2294856d6bec6ea153dfdc14b7a68ca682
 depth: full
@@ -30,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: e2af8ae480275d7c169aaee8091c161ce4e6093557f5fdb6083e55f5f5243929
 retrieved_from: "https://www.securitee.org/files/flashover_asiaccs2012.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:58:34+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:27+00:00"
 slug: flashover-automated-discovery-cross-site-scripting-vulnerabilities-applications
 snapshot: ""
 title_english: ""
@@ -41,11 +47,11 @@ translation_of: ""
 
 # FlashOver: Automated Discovery of Cross-site Scripting Vulnerabilities in Rich Internet Applications
 
-**FlashOver: Automated Discovery of Cross-site Scripting Vulnerabilities in Rich Internet Applications** - Author not stated, Publisher not stated.
+**FlashOver: Automated Discovery of Cross-site Scripting Vulnerabilities in Rich Internet Applications** - Steven Van Acker, Nick Nikiforakis, Lieven Desmet, Wouter Joosen, Frank Piessens, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.securitee.org/files/flashover_asiaccs2012.pdf>
-- Preserved from: https://www.securitee.org/files/flashover_asiaccs2012.pdf (live) on 2026-08-10
+- Preserved from: https://www.securitee.org/files/flashover_asiaccs2012.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

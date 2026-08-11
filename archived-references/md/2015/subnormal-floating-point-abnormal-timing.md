@@ -5,18 +5,25 @@ resource: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a623.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:22+00:00"
+  at: "2026-08-11T17:41:42+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a623.pdf"
     title: On Subnormal Floating Point and Abnormal Timing
+    author: Marc Andrysco, David Kohlbrenner, Keaton Mowery, Ranjit Jhala, Sorin Lerner, Hovav Shacham
 also_at: []
-authors: []
+authors:
+  - Marc Andrysco
+  - David Kohlbrenner
+  - Keaton Mowery
+  - Ranjit Jhala
+  - Sorin Lerner
+  - Hovav Shacham
 canonical_url: ""
 cited_by:
-  - "2015.md:62"
+  - "2015.md:63"
 commit: ""
 content_sha256: dfb0209bdcf183b72756db794105a935264bcc21e795cb81dd585ec454ca6585
 depth: full
@@ -30,8 +37,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: de630112656f81104ccb81c2e5ebc4e86a0bb914ee11dbab77ddc13575a5f21f
 retrieved_from: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a623.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:22+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:42+00:00"
 slug: subnormal-floating-point-abnormal-timing
 snapshot: ""
 title_english: ""
@@ -41,11 +48,11 @@ translation_of: ""
 
 # On Subnormal Floating Point and Abnormal Timing
 
-**On Subnormal Floating Point and Abnormal Timing** - Author not stated, Publisher not stated.
+**On Subnormal Floating Point and Abnormal Timing** - Marc Andrysco, David Kohlbrenner, Keaton Mowery, Ranjit Jhala, Sorin Lerner, Hovav Shacham, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2015/papers-archived/6949a623.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2015/papers-archived/6949a623.pdf (live) on 2026-08-10
+- Preserved from: https://www.ieee-security.org/TC/SP2015/papers-archived/6949a623.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

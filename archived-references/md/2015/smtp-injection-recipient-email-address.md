@@ -5,17 +5,19 @@ resource: "http://www.mbsd.jp/Whitepaper/smtpi.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:52+00:00"
+  at: "2026-08-11T17:35:58+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.mbsd.jp/Whitepaper/smtpi.pdf"
     title: SMTP Injection via Recipient Email Address
+    author: Takeshi Terada
   - id: canonical
     resource: "https://www.mbsd.jp/Whitepaper/smtpi.pdf"
 also_at: []
-authors: []
+authors:
+  - Takeshi Terada
 canonical_url: "https://www.mbsd.jp/Whitepaper/smtpi.pdf"
 cited_by:
   - "2015.md:44"
@@ -32,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 08585c75debf76aa3b63a4e6ac0071eac9eb8d46e9a9b17a553e0e67ddb9fe66
 retrieved_from: "https://www.mbsd.jp/Whitepaper/smtpi.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:52+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:58+00:00"
 slug: smtp-injection-recipient-email-address
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # SMTP Injection via Recipient Email Address
 
-**SMTP Injection via Recipient Email Address** - Author not stated, Publisher not stated.
+**SMTP Injection via Recipient Email Address** - Takeshi Terada, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://www.mbsd.jp/Whitepaper/smtpi.pdf>
 - Current location: <https://www.mbsd.jp/Whitepaper/smtpi.pdf>
-- Preserved from: https://www.mbsd.jp/Whitepaper/smtpi.pdf (live) on 2026-08-09
+- Preserved from: https://www.mbsd.jp/Whitepaper/smtpi.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

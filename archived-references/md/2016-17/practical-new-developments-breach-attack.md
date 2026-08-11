@@ -5,20 +5,23 @@ resource: "https://www.blackhat.com/docs/asia-16/materials/asia-16-Karakostas-Pr
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:03:13+00:00"
+  at: "2026-08-11T17:39:36+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.blackhat.com/docs/asia-16/materials/asia-16-Karakostas-Practical-New-Developments-In-The-BREACH-Attack-wp.pdf"
     title: Practical New Developments in the BREACH Attack
+    author: Dimitris Karakostas, Dionysis Zindros
   - id: canonical
     resource: "https://blackhat.com/docs/asia-16/materials/asia-16-Karakostas-Practical-New-Developments-In-The-BREACH-Attack-wp.pdf"
 also_at: []
-authors: []
+authors:
+  - Dimitris Karakostas
+  - Dionysis Zindros
 canonical_url: "https://blackhat.com/docs/asia-16/materials/asia-16-Karakostas-Practical-New-Developments-In-The-BREACH-Attack-wp.pdf"
 cited_by:
-  - "2016-17.md:79"
+  - "2016-17.md:80"
 commit: ""
 content_sha256: a3f6b2a7f1950faffc215764007bf1a1bdd95595d5ace7f8d0d1325576d025a3
 depth: full
@@ -32,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: fea4d017c6a1d399de75d6612fbaac38cba7f9cd73ed000069e4ba1f240d1473
 retrieved_from: "https://blackhat.com/docs/asia-16/materials/asia-16-Karakostas-Practical-New-Developments-In-The-BREACH-Attack-wp.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:03:13+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:36+00:00"
 slug: practical-new-developments-breach-attack
 snapshot: ""
 title_english: ""
@@ -43,12 +46,12 @@ translation_of: ""
 
 # Practical New Developments in the BREACH Attack
 
-**Practical New Developments in the BREACH Attack** - Author not stated, Publisher not stated.
+**Practical New Developments in the BREACH Attack** - Dimitris Karakostas, Dionysis Zindros, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/docs/asia-16/materials/asia-16-Karakostas-Practical-New-Developments-In-The-BREACH-Attack-wp.pdf>
 - Current location: <https://blackhat.com/docs/asia-16/materials/asia-16-Karakostas-Practical-New-Developments-In-The-BREACH-Attack-wp.pdf>
-- Preserved from: https://blackhat.com/docs/asia-16/materials/asia-16-Karakostas-Practical-New-Developments-In-The-BREACH-Attack-wp.pdf (live) on 2026-08-10
+- Preserved from: https://blackhat.com/docs/asia-16/materials/asia-16-Karakostas-Practical-New-Developments-In-The-BREACH-Attack-wp.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

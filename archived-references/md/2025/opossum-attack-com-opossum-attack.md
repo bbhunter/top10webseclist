@@ -5,16 +5,25 @@ resource: "https://opossum-attack.com/"
 tags: [article, webseclist-reference, en, opossum-attack-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:35:45+00:00"
+  at: "2026-08-11T17:36:44+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://opossum-attack.com/"
     title: Opossum Attack
+    author: Robert Merget, Nurullah Erinola, Marcel Maehren, Lukas Knittel, Sven Hebrok, Marcus Brinkmann, Juraj Somorovsky, Jörg Schwenk
 also_at:
   - "https://opossum-attack.com/opossum.pdf"
-authors: []
+authors:
+  - Robert Merget
+  - Nurullah Erinola
+  - Marcel Maehren
+  - Lukas Knittel
+  - Sven Hebrok
+  - Marcus Brinkmann
+  - Juraj Somorovsky
+  - Jörg Schwenk
 canonical_url: ""
 cited_by:
   - "2025.md:24"
@@ -31,8 +40,8 @@ publisher: opossum-attack.com
 publisher_english: ""
 raw_sha256: 25aa1c6c503c2e34ca2954ea503870b17825590f3232c6a0dc8a29b333ae4283
 retrieved_from: "https://opossum-attack.com/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:35:45+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:44+00:00"
 slug: opossum-attack-com-opossum-attack
 snapshot: ""
 title_english: ""
@@ -42,12 +51,12 @@ translation_of: ""
 
 # Opossum Attack
 
-**Opossum Attack** - Author not stated, opossum-attack.com.
+**Opossum Attack** - Robert Merget, Nurullah Erinola, Marcel Maehren, Lukas Knittel, Sven Hebrok, Marcus Brinkmann, Juraj Somorovsky, Jörg Schwenk, opossum-attack.com.
 
 - Published: date not stated
 - Original: <https://opossum-attack.com/>
 - Also published at: <https://opossum-attack.com/opossum.pdf>
-- Preserved from: https://opossum-attack.com/ (live) on 2026-08-10
+- Preserved from: https://opossum-attack.com/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

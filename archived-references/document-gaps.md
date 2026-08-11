@@ -42,7 +42,7 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-2 reference(s) unresolved. 2 of them already have their raw bytes stored.
+13 reference(s) unresolved. 13 of them already have their raw bytes stored.
 
 ## https://bugzilla.mozilla.org/show_bug.cgi?id=369814
 
@@ -52,10 +52,98 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2007.md:7`
 
-## https://web.archive.org/web/20160403035045/https://cwiki.apache.org/confluence/display/WW/S2-020
+## https://www.ndss-symposium.org/ndss-paper/quicforge-client-side-request-forgery-in-quic/
 
-- Outcome: `broken-capture`
+- Outcome: `stub`
 - Kind: article
-- Reason: faulty capture: the Workaround section's two listings are still absent - the commons-fileupload 1.3.1 Maven dependency block and the ParametersInterceptor excludeParams block - so the bulletin states a remedy the reader cannot apply; Confluence renders them with a code macro no plain fetch resolves, so try the containerised browser route (check-browser) (reported 2026-08-10)
-- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
-- Cited at: `2014.md:12`
+- Reason: whitepaper could not be converted: no extractable text: the PDF is image-only (a scan or exported slides), so it needs OCR rather than conversion
+- What would fix it: Needs OCR. The PDF holds pictures of words, so no converter will help: run OCR yourself, or archive the metadata only.
+- Cited at: `2023.md:94`
+
+## https://www.ndss-symposium.org/ndss2011/automated-discovery-of-parameter-pollution-vulnerabilities-in-web-applications/
+
+- Outcome: `stub`
+- Kind: article
+- Reason: whitepaper could not be converted: no extractable text: the PDF is image-only (a scan or exported slides), so it needs OCR rather than conversion
+- What would fix it: Needs OCR. The PDF holds pictures of words, so no converter will help: run OCR yourself, or archive the metadata only.
+- Cited at: `2011.md:76`
+
+## https://www.usenix.org/conference/hotbots-07/ghost-browser-analysis-web-based-malware
+
+- Outcome: `stub`
+- Kind: article
+- Reason: extraction produced 132 characters, below the floor
+- What would fix it: The page is built by JavaScript and the browser ladder could not settle it. Try saving the page by hand and importing it.
+- Cited at: `2007.md:103`
+
+## https://www.usenix.org/conference/hotsec-07/transaction-generators-root-kits-web
+
+- Outcome: `stub`
+- Kind: article
+- Reason: extraction produced 118 characters, below the floor
+- What would fix it: The page is built by JavaScript and the browser ladder could not settle it. Try saving the page by hand and importing it.
+- Cited at: `2007.md:106`
+
+## https://www.usenix.org/conference/leet-10/dns-prefetching-and-its-privacy-implications-when-good-things-go-bad
+
+- Outcome: `stub`
+- Kind: article
+- Reason: extraction produced 146 characters, below the floor
+- What would fix it: The page is built by JavaScript and the browser ladder could not settle it. Try saving the page by hand and importing it.
+- Cited at: `2010.md:102`
+
+## https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse
+
+- Outcome: `stub`
+- Kind: article
+- Reason: the converted document is a stub rather than a document
+- What would fix it: The page really is that short, or the useful part is behind something. Worth a look only if the citation matters: otherwise leave it as a record.
+- Cited at: `2014.md:66`
+
+## https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/meyer
+
+- Outcome: `stub`
+- Kind: article
+- Reason: the converted document is a stub rather than a document
+- What would fix it: The page really is that short, or the useful part is behind something. Worth a look only if the citation matters: otherwise leave it as a record.
+- Cited at: `2014.md:72`
+
+## https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/silver
+
+- Outcome: `stub`
+- Kind: article
+- Reason: the converted document is a stub rather than a document
+- What would fix it: The page really is that short, or the useful part is behind something. Worth a look only if the citation matters: otherwise leave it as a record.
+- Cited at: `2014.md:68`
+
+## https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/wang_tao
+
+- Outcome: `stub`
+- Kind: article
+- Reason: the converted document is a stub rather than a document
+- What would fix it: The page really is that short, or the useful part is behind something. Worth a look only if the citation matters: otherwise leave it as a record.
+- Cited at: `2014.md:78`
+
+## https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/zhou
+
+- Outcome: `stub`
+- Kind: article
+- Reason: the converted document is a stub rather than a document
+- What would fix it: The page really is that short, or the useful part is behind something. Worth a look only if the citation matters: otherwise leave it as a record.
+- Cited at: `2014.md:75`
+
+## https://www.usenix.org/conference/usenixsecurity22/presentation/kim
+
+- Outcome: `stub`
+- Kind: article
+- Reason: the converted document is a stub rather than a document
+- What would fix it: The page really is that short, or the useful part is behind something. Worth a look only if the citation matters: otherwise leave it as a record.
+- Cited at: `2022.md:62`
+
+## https://www.usenix.org/conference/usenixsecurity22/presentation/koishybayev
+
+- Outcome: `stub`
+- Kind: article
+- Reason: the converted document is a stub rather than a document
+- What would fix it: The page really is that short, or the useful part is behind something. Worth a look only if the citation matters: otherwise leave it as a record.
+- Cited at: `2022.md:82`

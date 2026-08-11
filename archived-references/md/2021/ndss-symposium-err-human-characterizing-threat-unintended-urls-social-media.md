@@ -5,19 +5,25 @@ resource: "https://www.ndss-symposium.org/ndss-paper/to-err-is-human-characteriz
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:57+00:00"
+  at: "2026-08-11T17:44:24+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/to-err-is-human-characterizing-the-threat-of-unintended-urls-in-social-media/"
     title: "To Err.Is Human: Characterizing the Threat of Unintended URLs in Social Media"
+    author: Beliz Kaleli, Brian Kondracki, Manuel Egele, Nick Nikiforakis, Gianluca Stringhini
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/ndss2021_3A-4_24322_paper.pdf"
-authors: []
+authors:
+  - Beliz Kaleli
+  - Brian Kondracki
+  - Manuel Egele
+  - Nick Nikiforakis
+  - Gianluca Stringhini
 canonical_url: ""
 cited_by:
-  - "2021.md:66"
+  - "2021.md:67"
 commit: ""
 content_sha256: 08dfd1aca7b984a44f42f6e9c90adada94fdfdf18c2363a581c0ca6255280320
 depth: full
@@ -31,8 +37,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: b1ac1c004538e82e4849adf1b819a6952e71a3fac6332ae847dd8942795a6864
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/to-err-is-human-characterizing-the-threat-of-unintended-urls-in-social-media/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:57+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:24+00:00"
 slug: ndss-symposium-err-human-characterizing-threat-unintended-urls-social-media
 snapshot: ""
 title_english: ""
@@ -42,12 +48,12 @@ translation_of: ""
 
 # To Err.Is Human: Characterizing the Threat of Unintended URLs in Social Media
 
-**To Err.Is Human: Characterizing the Threat of Unintended URLs in Social Media** - Author not stated, NDSS Symposium.
+**To Err.Is Human: Characterizing the Threat of Unintended URLs in Social Media** - Beliz Kaleli, Brian Kondracki, Manuel Egele, Nick Nikiforakis, Gianluca Stringhini, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/to-err-is-human-characterizing-the-threat-of-unintended-urls-in-social-media/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/ndss2021_3A-4_24322_paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/to-err-is-human-characterizing-the-threat-of-unintended-urls-in-social-media/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/to-err-is-human-characterizing-the-threat-of-unintended-urls-in-social-media/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

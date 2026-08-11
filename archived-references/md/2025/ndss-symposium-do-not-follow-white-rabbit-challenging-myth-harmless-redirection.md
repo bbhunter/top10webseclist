@@ -5,19 +5,23 @@ resource: "https://www.ndss-symposium.org/ndss-paper/do-not-follow-the-white-rab
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:44+00:00"
+  at: "2026-08-11T17:44:05+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/do-not-follow-the-white-rabbit-challenging-the-myth-of-harmless-open-redirection/"
     title: "Do (Not) Follow the White Rabbit: Challenging the Myth of Harmless Open Redirection"
+    author: Soheil Khodayari, Kai Glauber, Giancarlo Pellegrino
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2025-523-paper.pdf"
-authors: []
+authors:
+  - Soheil Khodayari
+  - Kai Glauber
+  - Giancarlo Pellegrino
 canonical_url: ""
 cited_by:
-  - "2025.md:93"
+  - "2025.md:94"
 commit: ""
 content_sha256: 89b47e48e514722934763d54233981496de81a6f828bdbb9087adf23121cd251
 depth: full
@@ -31,8 +35,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: e862c101fbd5ab6431ec3c4bb7179261bbe30f68f9bd8d4541eb0ddbf697c087
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/do-not-follow-the-white-rabbit-challenging-the-myth-of-harmless-open-redirection/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:44+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:05+00:00"
 slug: ndss-symposium-do-not-follow-white-rabbit-challenging-myth-harmless-redirection
 snapshot: ""
 title_english: ""
@@ -42,12 +46,12 @@ translation_of: ""
 
 # Do (Not) Follow the White Rabbit: Challenging the Myth of Harmless Open Redirection
 
-**Do (Not) Follow the White Rabbit: Challenging the Myth of Harmless Open Redirection** - Author not stated, NDSS Symposium.
+**Do (Not) Follow the White Rabbit: Challenging the Myth of Harmless Open Redirection** - Soheil Khodayari, Kai Glauber, Giancarlo Pellegrino, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/do-not-follow-the-white-rabbit-challenging-the-myth-of-harmless-open-redirection/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2025-523-paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/do-not-follow-the-white-rabbit-challenging-the-myth-of-harmless-open-redirection/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/do-not-follow-the-white-rabbit-challenging-the-myth-of-harmless-open-redirection/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

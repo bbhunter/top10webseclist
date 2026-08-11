@@ -5,18 +5,24 @@ resource: "https://www.ieee-security.org/TC/SP2017/papers/390.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:40+00:00"
+  at: "2026-08-11T17:41:30+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2017/papers/390.pdf"
     title: "NEZHA: Efficient Domain-Independent Differential Testing"
+    author: Theofilos Petsios, Adrian Tang, Salvatore Stolfo, Angelos D. Keromytis, Suman Jana
 also_at: []
-authors: []
+authors:
+  - Theofilos Petsios
+  - Adrian Tang
+  - Salvatore Stolfo
+  - Angelos D. Keromytis
+  - Suman Jana
 canonical_url: ""
 cited_by:
-  - "2016-17.md:93"
+  - "2016-17.md:94"
 commit: ""
 content_sha256: 3d4afbd9be0a7451e31d320f0da4aba6bdea5069526086bd88ea19f260eb360b
 depth: full
@@ -30,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: f2501b0313d9dcf31e408115651b7a3961871ae5337d96bc71f2fe1c9986b15a
 retrieved_from: "https://www.ieee-security.org/TC/SP2017/papers/390.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:40+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:30+00:00"
 slug: nezha-efficient-domain-independent-differential-testing
 snapshot: ""
 title_english: ""
@@ -41,11 +47,11 @@ translation_of: ""
 
 # NEZHA: Efficient Domain-Independent Differential Testing
 
-**NEZHA: Efficient Domain-Independent Differential Testing** - Author not stated, Publisher not stated.
+**NEZHA: Efficient Domain-Independent Differential Testing** - Theofilos Petsios, Adrian Tang, Salvatore Stolfo, Angelos D. Keromytis, Suman Jana, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2017/papers/390.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2017/papers/390.pdf (live) on 2026-08-10
+- Preserved from: https://www.ieee-security.org/TC/SP2017/papers/390.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

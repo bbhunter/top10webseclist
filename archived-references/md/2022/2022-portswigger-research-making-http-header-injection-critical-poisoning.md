@@ -5,16 +5,18 @@ resource: "https://portswigger.net/research/making-http-header-injection-critica
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:49+00:00"
+  at: "2026-08-11T17:45:00+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/making-http-header-injection-critical-via-response-queue-poisoning"
     title: Making HTTP header injection critical via response queue poisoning
+    author: James Kettle
     last_modified: 2022-09-22
 also_at: []
-authors: []
+authors:
+  - James Kettle
 canonical_url: ""
 cited_by:
   - "2022.md:10"
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: cc7a7a7d579a6018e372048563ac1e36b06bf2a691f625b00569090501f6836c
 retrieved_from: "https://portswigger.net/research/making-http-header-injection-critical-via-response-queue-poisoning"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:49+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:00+00:00"
 slug: 2022-portswigger-research-making-http-header-injection-critical-poisoning
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Making HTTP header injection critical via response queue poisoning
 
-**Making HTTP header injection critical via response queue poisoning** - Author not stated, PortSwigger Research.
+**Making HTTP header injection critical via response queue poisoning** - James Kettle, PortSwigger Research.
 
 - Published: 2022-09-22
 - Original: <https://portswigger.net/research/making-http-header-injection-critical-via-response-queue-poisoning>
-- Preserved from: https://portswigger.net/research/making-http-header-injection-critical-via-response-queue-poisoning (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/making-http-header-injection-critical-via-response-queue-poisoning (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

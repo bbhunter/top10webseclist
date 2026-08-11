@@ -5,15 +5,17 @@ resource: "https://av.tib.eu/media/62200"
 tags: [article, webseclist-reference, en, av-tib-eu]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:02:43+00:00"
+  at: "2026-08-11T17:34:07+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://av.tib.eu/media/62200"
     title: The CSRF Resurrections
+    author: Dongsung Kim
 also_at: []
-authors: []
+authors:
+  - Dongsung Kim
 canonical_url: ""
 cited_by:
   - "2022.md:36"
@@ -30,8 +32,8 @@ publisher: av.tib.eu
 publisher_english: ""
 raw_sha256: d2e7a6e7c44c07b17e86ccaeb09f6755fb8d0128780d208feaa08cb85e61e593
 retrieved_from: "https://av.tib.eu/media/62200"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:02:43+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:07+00:00"
 slug: av-tib-eu-csrf-resurrections
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # The CSRF Resurrections
 
-**The CSRF Resurrections** - Author not stated, av.tib.eu.
+**The CSRF Resurrections** - Dongsung Kim, av.tib.eu.
 
 - Published: date not stated
 - Original: <https://av.tib.eu/media/62200>
-- Preserved from: https://av.tib.eu/media/62200 (live) on 2026-08-10
+- Preserved from: https://av.tib.eu/media/62200 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

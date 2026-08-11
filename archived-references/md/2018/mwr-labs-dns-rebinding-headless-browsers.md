@@ -5,22 +5,24 @@ resource: "https://labs.mwrinfosecurity.com/blog/from-http-referer-to-aws-securi
 tags: [article, webseclist-reference, en, mwr-labs]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:09:01+00:00"
+  at: "2026-08-11T17:35:50+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://labs.mwrinfosecurity.com/blog/from-http-referer-to-aws-security-credentials/"
     title: DNS Rebinding Headless Browsers
+    author: Alexandre Kaskasoli
   - id: capture
     resource: "https://web.archive.org/web/20190820101055/https://labs.mwrinfosecurity.com/blog/from-http-referer-to-aws-security-credentials/"
 also_at: []
-authors: []
+authors:
+  - Alexandre Kaskasoli
 canonical_url: ""
 cited_by:
   - "2018.md:61"
 commit: ""
-content_sha256: caaff2cf73477f2fceb4b0aa4ff0bee02f092b3135d7209350caf55586f7f075
+content_sha256: 9e4ab6c783bf9b54a0cc35ee8d6c2fdfe38e6ede747d42e8359baf1c05a149d2
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 6e6a8593fe7b4df75806252c865308d3f3b23f3843d19e4b457931e664d0ce8a
 retrieved_from: "https://labs.mwrinfosecurity.com/blog/from-http-referer-to-aws-security-credentials/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:09:01+00:00"
+retrieved_utc: "2026-08-11T17:35:50+00:00"
 slug: mwr-labs-dns-rebinding-headless-browsers
 snapshot: 20190820101055
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # DNS Rebinding Headless Browsers
 
-**DNS Rebinding Headless Browsers** - Author not stated, MWR Labs.
+**DNS Rebinding Headless Browsers** - Alexandre Kaskasoli, MWR Labs.
 
 - Published: date not stated
 - Original: <https://labs.mwrinfosecurity.com/blog/from-http-referer-to-aws-security-credentials/>
-- Preserved from: https://labs.mwrinfosecurity.com/blog/from-http-referer-to-aws-security-credentials/ (stored) on 2026-08-09
+- Preserved from: https://labs.mwrinfosecurity.com/blog/from-http-referer-to-aws-security-credentials/ (stored) on 2026-08-11
 - Capture timestamp: 20190820101055
 - Licence: unknown
 

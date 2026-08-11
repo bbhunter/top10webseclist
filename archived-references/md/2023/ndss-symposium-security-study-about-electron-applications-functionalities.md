@@ -5,19 +5,26 @@ resource: "https://www.ndss-symposium.org/ndss-paper/a-security-study-about-elec
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:34+00:00"
+  at: "2026-08-11T17:43:15+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/a-security-study-about-electron-applications-and-a-programming-methodology-to-tame-dom-functionalities/"
     title: A Security Study about Electron Applications and a Programming Methodology to Tame DOM Functionalities
+    author: Zihao Jin, Shuo Chen, Yang Chen, Haixin Duan, Jianjun Chen, Jianping Wu
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2023-305-paper.pdf"
-authors: []
+authors:
+  - Zihao Jin
+  - Shuo Chen
+  - Yang Chen
+  - Haixin Duan
+  - Jianjun Chen
+  - Jianping Wu
 canonical_url: ""
 cited_by:
-  - "2023.md:96"
+  - "2023.md:97"
 commit: ""
 content_sha256: 5eeee2b5522f42a99987d589c4c7983021efd4fd5fe96c04e7c7c7372bf67c7b
 depth: full
@@ -31,8 +38,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: 8f5e87c4004c662288ac254fb26e7b4797e70eadee3848325814c79b0b4ad130
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/a-security-study-about-electron-applications-and-a-programming-methodology-to-tame-dom-functionalities/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:34+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:15+00:00"
 slug: ndss-symposium-security-study-about-electron-applications-functionalities
 snapshot: ""
 title_english: ""
@@ -42,12 +49,12 @@ translation_of: ""
 
 # A Security Study about Electron Applications and a Programming Methodology to Tame DOM Functionalities
 
-**A Security Study about Electron Applications and a Programming Methodology to Tame DOM Functionalities** - Author not stated, NDSS Symposium.
+**A Security Study about Electron Applications and a Programming Methodology to Tame DOM Functionalities** - Zihao Jin, Shuo Chen, Yang Chen, Haixin Duan, Jianjun Chen, Jianping Wu, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/a-security-study-about-electron-applications-and-a-programming-methodology-to-tame-dom-functionalities/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2023-305-paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/a-security-study-about-electron-applications-and-a-programming-methodology-to-tame-dom-functionalities/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/a-security-study-about-electron-applications-and-a-programming-methodology-to-tame-dom-functionalities/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

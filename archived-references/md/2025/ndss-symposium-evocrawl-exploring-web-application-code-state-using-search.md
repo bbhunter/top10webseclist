@@ -5,19 +5,24 @@ resource: "https://www.ndss-symposium.org/ndss-paper/evocrawl-exploring-web-appl
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:45+00:00"
+  at: "2026-08-11T17:44:26+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/evocrawl-exploring-web-application-code-and-state-using-evolutionary-search/"
     title: "EvoCrawl: Exploring Web Application Code and State using Evolutionary Search"
+    author: Xiangyu Guo, Akshay Kawlay, Eric Liu, David Lie
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2025-366-paper.pdf"
-authors: []
+authors:
+  - Xiangyu Guo
+  - Akshay Kawlay
+  - Eric Liu
+  - David Lie
 canonical_url: ""
 cited_by:
-  - "2025.md:88"
+  - "2025.md:89"
 commit: ""
 content_sha256: 0f8ccb1b772630583efd18039fc35c54e30c211cc253a2c0acbf480d5e32be42
 depth: full
@@ -31,8 +36,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: 4c88ea43cad82e954283f929c015033078b14f742d799ff5518f802a050344ee
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/evocrawl-exploring-web-application-code-and-state-using-evolutionary-search/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:45+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:26+00:00"
 slug: ndss-symposium-evocrawl-exploring-web-application-code-state-using-search
 snapshot: ""
 title_english: ""
@@ -42,12 +47,12 @@ translation_of: ""
 
 # EvoCrawl: Exploring Web Application Code and State using Evolutionary Search
 
-**EvoCrawl: Exploring Web Application Code and State using Evolutionary Search** - Author not stated, NDSS Symposium.
+**EvoCrawl: Exploring Web Application Code and State using Evolutionary Search** - Xiangyu Guo, Akshay Kawlay, Eric Liu, David Lie, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/evocrawl-exploring-web-application-code-and-state-using-evolutionary-search/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2025-366-paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/evocrawl-exploring-web-application-code-and-state-using-evolutionary-search/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/evocrawl-exploring-web-application-code-and-state-using-evolutionary-search/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

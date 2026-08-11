@@ -5,20 +5,24 @@ resource: "https://www.ndss-symposium.org/ndss2014/ndss-2014-programme/detecting
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:34:44+00:00"
+  at: "2026-08-11T17:43:30+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2014/ndss-2014-programme/detecting-logic-vulnerabilities-e-commerce-applications/"
     title: Detecting Logic Vulnerabilities in E-Commerce Applications
+    author: Fangqi Sun, Liang Xu, Zhendong Su
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_4_1.pdf"
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_4_slides.pdf"
-authors: []
+authors:
+  - Fangqi Sun
+  - Liang Xu
+  - Zhendong Su
 canonical_url: ""
 cited_by:
-  - "2014.md:75"
+  - "2014.md:76"
 commit: ""
 content_sha256: 93707d0c08d33a31a179a560cbf3ece5b5701426f9bbe782225f3d85cc5c869f
 depth: full
@@ -32,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 38a82c67a3081699a12a3c52115425247b489d42e0a0c677801c2fbe8952a3e2
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_4_1.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:34:44+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:30+00:00"
 slug: ndss-symposium-detecting-logic-vulnerabilities-e-commerce-applications
 snapshot: ""
 title_english: ""
@@ -43,13 +47,13 @@ translation_of: ""
 
 # Detecting Logic Vulnerabilities in E-Commerce Applications
 
-**Detecting Logic Vulnerabilities in E-Commerce Applications** - Author not stated, Publisher not stated.
+**Detecting Logic Vulnerabilities in E-Commerce Applications** - Fangqi Sun, Liang Xu, Zhendong Su, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2014/ndss-2014-programme/detecting-logic-vulnerabilities-e-commerce-applications/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_4_1.pdf>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_4_slides.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_4_1.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_4_1.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

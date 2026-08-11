@@ -5,19 +5,21 @@ resource: "http://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurpo
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T12:59:50+00:00"
+  at: "2026-08-11T17:45:21+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurposing_attack.pdf"
     title: advisory gmail google docs pdf repurposing attack
+    author: Aditya K Sood
   - id: canonical
     resource: "https://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurposing_attack.pdf"
   - id: capture
     resource: "https://web.archive.org/web/20111015175348/http://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurposing_attack.pdf"
 also_at: []
-authors: []
+authors:
+  - Aditya K Sood
 canonical_url: "https://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurposing_attack.pdf"
 cited_by:
   - "2009.md:71"
@@ -35,7 +37,7 @@ publisher_english: ""
 raw_sha256: 84043a14c6b544193ef554abc031b0e021f2e7a63dfe4048ecfc5c7db290d8e8
 retrieved_from: "https://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurposing_attack.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T12:59:50+00:00"
+retrieved_utc: "2026-08-11T17:45:21+00:00"
 slug: advisory-gmail-google-docs-pdf-repurposing-attack
 snapshot: 20111015175348
 title_english: ""
@@ -45,12 +47,12 @@ translation_of: ""
 
 # advisory gmail google docs pdf repurposing attack
 
-**advisory gmail google docs pdf repurposing attack** - Author not stated, Publisher not stated.
+**advisory gmail google docs pdf repurposing attack** - Aditya K Sood, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurposing_attack.pdf>
 - Current location: <https://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurposing_attack.pdf>
-- Preserved from: https://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurposing_attack.pdf (stored) on 2026-08-09
+- Preserved from: https://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurposing_attack.pdf (stored) on 2026-08-11
 - Capture timestamp: 20111015175348
 - Licence: unknown
 

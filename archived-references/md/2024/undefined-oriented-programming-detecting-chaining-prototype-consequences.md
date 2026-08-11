@@ -5,15 +5,19 @@ resource: "https://yinzhicao.org/UoP/UoP-Oakland.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:07:57+00:00"
+  at: "2026-08-11T17:37:24+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://yinzhicao.org/UoP/UoP-Oakland.pdf"
     title: "Undefined-oriented Programming: Detecting and Chaining Prototype Pollution Gadgets in Node.js Template Engines for Malicious Consequences"
+    author: Zhengyu Liu, Kecheng An, Yinzhi Cao
 also_at: []
-authors: []
+authors:
+  - Zhengyu Liu
+  - Kecheng An
+  - Yinzhi Cao
 canonical_url: ""
 cited_by:
   - "2024.md:81"
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: f25436c7112f37bbdcc7d6d83795e3f12c30c0099a56501cca3e5c1988b25f35
 retrieved_from: "https://yinzhicao.org/UoP/UoP-Oakland.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:07:57+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:37:24+00:00"
 slug: undefined-oriented-programming-detecting-chaining-prototype-consequences
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # Undefined-oriented Programming: Detecting and Chaining Prototype Pollution Gadgets in Node.js Template Engines for Malicious Consequences
 
-**Undefined-oriented Programming: Detecting and Chaining Prototype Pollution Gadgets in Node.js Template Engines for Malicious Consequences** - Author not stated, Publisher not stated.
+**Undefined-oriented Programming: Detecting and Chaining Prototype Pollution Gadgets in Node.js Template Engines for Malicious Consequences** - Zhengyu Liu, Kecheng An, Yinzhi Cao, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://yinzhicao.org/UoP/UoP-Oakland.pdf>
-- Preserved from: https://yinzhicao.org/UoP/UoP-Oakland.pdf (live) on 2026-08-10
+- Preserved from: https://yinzhicao.org/UoP/UoP-Oakland.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

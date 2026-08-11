@@ -5,18 +5,24 @@ resource: "https://www.yinzhicao.org/reactappscan/reactappscan.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:07:59+00:00"
+  at: "2026-08-11T17:37:25+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.yinzhicao.org/reactappscan/reactappscan.pdf"
     title: "ReactAppScan: Mining React Application Vulnerabilities via Component Graph"
+    author: Zhiyong Guo, Mingqing Kang, V.N. Venkatakrishnan, Rigel Gjomemo, Yinzhi Cao
 also_at: []
-authors: []
+authors:
+  - Zhiyong Guo
+  - Mingqing Kang
+  - V.N. Venkatakrishnan
+  - Rigel Gjomemo
+  - Yinzhi Cao
 canonical_url: ""
 cited_by:
-  - "2024.md:147"
+  - "2024.md:148"
 commit: ""
 content_sha256: e9337d6214214c968623584c8c6af31ee79deb9d3ef9736383f07c45a236a139
 depth: full
@@ -30,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 9ec13964fdc05abe02b456f753b4ba91699f8f97fa3f08394f13d59d29539eb3
 retrieved_from: "https://www.yinzhicao.org/reactappscan/reactappscan.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:07:59+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:37:25+00:00"
 slug: reactappscan-mining-react-application-vulnerabilities-component-graph
 snapshot: ""
 title_english: ""
@@ -41,11 +47,11 @@ translation_of: ""
 
 # ReactAppScan: Mining React Application Vulnerabilities via Component Graph
 
-**ReactAppScan: Mining React Application Vulnerabilities via Component Graph** - Author not stated, Publisher not stated.
+**ReactAppScan: Mining React Application Vulnerabilities via Component Graph** - Zhiyong Guo, Mingqing Kang, V.N. Venkatakrishnan, Rigel Gjomemo, Yinzhi Cao, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.yinzhicao.org/reactappscan/reactappscan.pdf>
-- Preserved from: https://www.yinzhicao.org/reactappscan/reactappscan.pdf (live) on 2026-08-10
+- Preserved from: https://www.yinzhicao.org/reactappscan/reactappscan.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

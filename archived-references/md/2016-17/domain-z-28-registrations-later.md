@@ -5,18 +5,25 @@ resource: "https://coeus.ece.gatech.edu/articles/domain-z-ieee.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:07:29+00:00"
+  at: "2026-08-11T17:34:20+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://coeus.ece.gatech.edu/articles/domain-z-ieee.pdf"
     title: "Domain-Z: 28 Registrations Later"
+    author: Chaz Lever, Robert Walls, Yacin Nadji, David Dagon, Patrick McDaniel, Manos Antonakakis
 also_at: []
-authors: []
+authors:
+  - Chaz Lever
+  - Robert Walls
+  - Yacin Nadji
+  - David Dagon
+  - Patrick McDaniel
+  - Manos Antonakakis
 canonical_url: ""
 cited_by:
-  - "2016-17.md:83"
+  - "2016-17.md:84"
 commit: ""
 content_sha256: 26844e59c00c643ba13fb72fb6cfe0ff3f2867be29e4ddd852566aaf2318bdb9
 depth: full
@@ -30,8 +37,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: dc1983fc061919ff3f60e93a4f09d42f44be67e9b2b79796ba8cfe0d4c1868b0
 retrieved_from: "https://coeus.ece.gatech.edu/articles/domain-z-ieee.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:07:29+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:20+00:00"
 slug: domain-z-28-registrations-later
 snapshot: ""
 title_english: ""
@@ -41,11 +48,11 @@ translation_of: ""
 
 # Domain-Z: 28 Registrations Later
 
-**Domain-Z: 28 Registrations Later** - Author not stated, Publisher not stated.
+**Domain-Z: 28 Registrations Later** - Chaz Lever, Robert Walls, Yacin Nadji, David Dagon, Patrick McDaniel, Manos Antonakakis, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://coeus.ece.gatech.edu/articles/domain-z-ieee.pdf>
-- Preserved from: https://coeus.ece.gatech.edu/articles/domain-z-ieee.pdf (live) on 2026-08-10
+- Preserved from: https://coeus.ece.gatech.edu/articles/domain-z-ieee.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

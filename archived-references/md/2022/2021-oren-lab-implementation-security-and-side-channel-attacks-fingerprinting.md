@@ -5,19 +5,30 @@ resource: "https://orenlab.cis.bgu.ac.il/p/DrawnApart"
 tags: [article, webseclist-reference, en, oren-lab-implementation-security-and-sid]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:35:45+00:00"
+  at: "2026-08-11T17:36:45+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://orenlab.cis.bgu.ac.il/p/DrawnApart"
     title: "DRAWN APART : A Device Identification Technique based on Remote GPU Fingerprinting"
+    author: Tomer Laor, Naif Mehanna, Vitaly Dyadyuk, Antonin Durey, Pierre Laperdrix, Clémentine Maurice, Yossi Oren, Romain Rouvoy, Walter Rudametkin, Yuval Yarom
     last_modified: 2021-12-31
 also_at: []
-authors: []
+authors:
+  - Tomer Laor
+  - Naif Mehanna
+  - Vitaly Dyadyuk
+  - Antonin Durey
+  - Pierre Laperdrix
+  - Clémentine Maurice
+  - Yossi Oren
+  - Romain Rouvoy
+  - Walter Rudametkin
+  - Yuval Yarom
 canonical_url: ""
 cited_by:
-  - "2022.md:64"
+  - "2022.md:65"
 commit: ""
 content_sha256: 2bbb9024808712ba2195e282dce8e6ca77817472bdf426394954688864814971
 depth: full
@@ -31,8 +42,8 @@ publisher: Oren Lab - Implementation Security and Side-Channel Attacks
 publisher_english: ""
 raw_sha256: 8067efb9c393a904f9396fcb4d1fa950f57a0495b5625416ce9624bbe484c669
 retrieved_from: "https://orenlab.cis.bgu.ac.il/p/DrawnApart"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:35:45+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:45+00:00"
 slug: 2021-oren-lab-implementation-security-and-side-channel-attacks-fingerprinting
 snapshot: ""
 title_english: ""
@@ -42,11 +53,11 @@ translation_of: ""
 
 # DRAWN APART : A Device Identification Technique based on Remote GPU Fingerprinting
 
-**DRAWN APART : A Device Identification Technique based on Remote GPU Fingerprinting** - Author not stated, Oren Lab - Implementation Security and Side-Channel Attacks.
+**DRAWN APART : A Device Identification Technique based on Remote GPU Fingerprinting** - Tomer Laor, Naif Mehanna, Vitaly Dyadyuk, Antonin Durey, Pierre Laperdrix, Clémentine Maurice, Yossi Oren, Romain Rouvoy, Walter Rudametkin, Yuval Yarom, Oren Lab - Implementation Security and Side-Channel Attacks.
 
 - Published: 2021-12-31
 - Original: <https://orenlab.cis.bgu.ac.il/p/DrawnApart>
-- Preserved from: https://orenlab.cis.bgu.ac.il/p/DrawnApart (live) on 2026-08-10
+- Preserved from: https://orenlab.cis.bgu.ac.il/p/DrawnApart (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,20 +5,23 @@ resource: "https://www.blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:03:28+00:00"
+  at: "2026-08-11T17:38:20+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf"
     title: Concurrency Attacks in Web Applications
+    author: Scott T. Stender, Alexander G. Vidergar
   - id: canonical
     resource: "https://blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf"
 also_at: []
-authors: []
+authors:
+  - Scott T. Stender
+  - Alexander G. Vidergar
 canonical_url: "https://blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf"
 cited_by:
-  - "2008.md:89"
+  - "2008.md:90"
 commit: ""
 content_sha256: 51fb31b57e54a8e2fd0e496c8b91a9222040e334d055b58edb3dd02d9db7959b
 depth: full
@@ -32,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: bb999671819bc955e5b50a7e67039c9bb62e91492d9356e64ba4d9148c9dc06f
 retrieved_from: "https://blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:03:28+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:38:20+00:00"
 slug: concurrency-attacks-web-applications
 snapshot: ""
 title_english: ""
@@ -43,12 +46,12 @@ translation_of: ""
 
 # Concurrency Attacks in Web Applications
 
-**Concurrency Attacks in Web Applications** - Author not stated, Publisher not stated.
+**Concurrency Attacks in Web Applications** - Scott T. Stender, Alexander G. Vidergar, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf>
 - Current location: <https://blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf>
-- Preserved from: https://blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf (live) on 2026-08-10
+- Preserved from: https://blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

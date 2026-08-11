@@ -5,15 +5,17 @@ resource: "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentation
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:34:40+00:00"
+  at: "2026-08-11T17:42:36+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf"
     title: "DEF CON 32 - SQL Injection Isn't Dead: Smuggling Queries at the Protocol Level"
+    author: Paul Gerste
 also_at: []
-authors: []
+authors:
+  - Paul Gerste
 canonical_url: ""
 cited_by:
   - "2024.md:6"
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: c050fa9f55128d13aa5443e20b24bfe01ff47d7d97dadbd96c9cea1ba0398d77
 retrieved_from: "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:34:40+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:42:36+00:00"
 slug: def-con-32-sql-injection-isn-t-dead-smuggling-queries-protocol-level
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # DEF CON 32 - SQL Injection Isn't Dead: Smuggling Queries at the Protocol Level
 
-**DEF CON 32 - SQL Injection Isn't Dead: Smuggling Queries at the Protocol Level** - Author not stated, Publisher not stated.
+**DEF CON 32 - SQL Injection Isn't Dead: Smuggling Queries at the Protocol Level** - Paul Gerste, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf>
-- Preserved from: https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf (live) on 2026-08-09
+- Preserved from: https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -69,13 +71,22 @@ LOWER
    ©2024, SonarSource S.A, Switzerland.
 HGETALL user:1               SELECT * FROM users WHERE id=1
 
+
+
+
                  db.users.find({
                     id: 1,
                  })
 
+
+
+
                      ©2024, SonarSource S.A, Switzerland.
 Type             Length                                     Value…
 'Q'    00   00            00            17             "SELECT …"
+
+
+
 
                                messageLength                                 requestID                 responseTo
                           17     00         00           00           00     00    00    00       00   00     00    00
@@ -91,20 +102,30 @@ func getUser(w http.ResponseWriter, req *http.Request) (user User) {
     // ...
 }
 
+
+
                               ©2024, SonarSource S.A, Switzerland.
 Teaser
+
+
+
 
   Application
 
                                                        Database
 
+
+
                 ©2024, SonarSource S.A, Switzerland.
 Teaser
+
 
                        ��
   Application
                        ⚡
                                                        Database
+
+
 
                 ©2024, SonarSource S.A, Switzerland.
 SELECT * FROM speakers
@@ -114,11 +135,15 @@ Paul Gerste | Vuln Researcher | Sonar | R&D
 
 (1 row)
 
+
+
+
                        ©2024, SonarSource S.A, Switzerland.
 SELECT * FROM speakers INNER JOIN companies
     name    |      role       | company | team |
 ------------+-----------------+---------+------+------
 Paul Gerste | Vuln Researcher | Sonar | R&D |
+
 
   logo | name |       description
 -------+-------+------------------------
@@ -155,11 +180,15 @@ What About Binary Protocols?
 ● Length ﬁelds
    ○ E.g., Type-Length-Value (TLV) protocols
 
+
                         ©2024, SonarSource S.A, Switzerland.
 Binary Protocols: Desync
 
 ● Delimiters
    ○ Insert delimiters into values
+
+
+
 
                          ©2024, SonarSource S.A, Switzerland.
 Binary Protocols: Desync
@@ -179,6 +208,9 @@ Binary Protocols: Landscape
 
                         Application
 
+
+
+
                                                            Message Queue
        Cache
 
@@ -191,6 +223,9 @@ Binary Protocols: Landscape
       Database                                                Logging
 
                         Application
+
+
+
 
                                                            Message Queue
        Cache
@@ -219,16 +254,19 @@ High-Level Protocol Comparison
 
 ● MongoDB
 
+
                     ©2024, SonarSource S.A, Switzerland.
 High-Level Protocol Comparison
                 Type                                               Length              Value…
 ● PostgreSQL     'Q'               00                         00            00   17   "SELECT …"
+
 
 ● MySQL
 
 ● Redis
 
 ● MongoDB
+
 
                        ©2024, SonarSource S.A, Switzerland.
 High-Level Protocol Comparison
@@ -238,9 +276,11 @@ High-Level Protocol Comparison
                                      Length                                      Sequence     Value…
 ● MySQL           00                       00                       17             00        "SELECT …"
 
+
 ● Redis
 
 ● MongoDB
+
 
                        ©2024, SonarSource S.A, Switzerland.
 High-Level Protocol Comparison
@@ -253,7 +293,9 @@ High-Level Protocol Comparison
                  Type               Length                     Delimiter          Value…       Delimiter
 ● Redis          '+'                  "17"                          \r\n          "GET …"        \r\n
 
+
 ● MongoDB
+
 
                         ©2024, SonarSource S.A, Switzerland.
 High-Level Protocol Comparison
@@ -265,6 +307,7 @@ High-Level Protocol Comparison
 
                     Type                   Length                     Delimiter          Value…               Delimiter
 ● Redis             '+'                      "17"                          \r\n          "GET …"                \r\n
+
 
 ● MongoDB
                     messageLength                                          requestID                    responseTo
@@ -280,25 +323,36 @@ PostgreSQL Wire Protocol
 
                     'Q'               00                         00            00   17   "SELECT …"
 
+
+
+
 ● Type: 1-byte identiﬁer
 ● Length: 4-byte integer
 ● Value
+
 
                           ©2024, SonarSource S.A, Switzerland.
 PostgreSQL Wire Protocol
                    Type                                               Length              Value…
 
                     'Q'               00                         00            00   17   "SELECT …"
+
+
+
 
 ● Type: 1-byte identiﬁer                                                   Max value: 232-1
 ● Length: 4-byte integer
 ● Value
 
+
                           ©2024, SonarSource S.A, Switzerland.
 PostgreSQL Wire Protocol
                    Type                                               Length              Value…
 
                     'Q'               00                         00            00   17   "SELECT …"
+
+
+
 
 ● Type: 1-byte identiﬁer                                                   Max value: 232-1
 ● Length: 4-byte integer
@@ -395,6 +449,8 @@ Message Size Overﬂow
 
   'Q'     00       00            00                08                        "AAAA"
 
+
+
 Size: 8        =   0x00000008
 4 bytes length + 4 bytes data
 Payload: "A" * 4
@@ -406,6 +462,8 @@ Message Size Overﬂow
  Type                Length                                                        Value
 
  'Q'     FF     FF            FF                FF                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA…"
+
+
 
 Size: 232-1 =   0xFFFFFFFF
 4 bytes length + 232-5 bytes data
@@ -419,6 +477,8 @@ Message Size Overﬂow
 
  'Q'     00    00            00                04                         ""     'A'   'A'   'A'
 
+
+
 Size: 232+4 = 0x100000004
 4 bytes length + 232 bytes data
 Payload: "A" * (2**32)
@@ -431,6 +491,8 @@ Message Size Overﬂow
 
  'Q'     00    00            00                04                         ""     'Q'         00            00
 
+
+
 Size: 232+4 = 0x100000004
 4 bytes length + 232 bytes data
 Payload: fakeMsg + "A" * (2**32 - len(fakeMsg))
@@ -440,6 +502,9 @@ Message Size Overﬂow - Zoomed Out
 Message 1
 
  8    AAAA
+
+
+
 
                   ©2024, SonarSource S.A, Switzerland.
 Message Size Overﬂow - Zoomed Out
@@ -459,6 +524,7 @@ Message Size Overﬂow - Zoomed Out
 
 …AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
+
                                        ©2024, SonarSource S.A, Switzerland.
 Message Size Overﬂow - Zoomed Out
                                         … Message 1 …
@@ -476,6 +542,7 @@ Message Size Overﬂow - Zoomed Out
                                         … Message 1 …
 
 …AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
 
                                        ©2024, SonarSource S.A, Switzerland.
 Message Size Overﬂow - Zoomed Out
@@ -495,6 +562,7 @@ Message Size Overﬂow - Zoomed Out
 
 …AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
+
                                        ©2024, SonarSource S.A, Switzerland.
 Message Size Overﬂow - Zoomed Out
   Message 1                                   Message 2                          Message 3 …
@@ -513,6 +581,7 @@ Message Size Overﬂow - Zoomed Out
 
 …AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
+
                                        ©2024, SonarSource S.A, Switzerland.
 Impact
 
@@ -525,6 +594,9 @@ Impact
                          ©2024, SonarSource S.A, Switzerland.
 How does it look in the real world?
 
+
+
+
                      ©2024, SonarSource S.A, Switzerland.
 How does it look in the real world?
 
@@ -535,6 +607,9 @@ Type             Length                                                Value
 
  'Q'   00   00            00   2e               SELECT * FROM users WHERE id = '5831bfeb'\x00
 
+
+
+
                                 ©2024, SonarSource S.A, Switzerland.
 How does it look in the real world?
 
@@ -544,6 +619,8 @@ conn.QueryRow("SELECT * FROM users WHERE id = $1", id)
 Type             Length                                                   Value
 
  'Q'   00   00            00      26          SELECT * FROM users WHERE id = 'AAAAAAAAAAAAAAAA…
+
+
 
                                0x26 = 38
 
@@ -558,6 +635,8 @@ Type             Length                                                  Value  
  'Q'   00   00            00     29          SELECT * FROM users WHERE id = 'AAAAAAAAAAAAAAAA…
                                                                                   'Q'      00
 
+
+
                                How to know this offset?
 
                                   ©2024, SonarSource S.A, Switzerland.
@@ -569,6 +648,7 @@ Crafting a Payload
 ● Calculate the offset when query is known
 ● What if it's not?
 
+
                         ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload
 
@@ -578,6 +658,7 @@ Crafting a Payload
    ○ Risk of DoS
 ● Can we make it more reliable?
 
+
                          ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: NOP Sled
 
@@ -585,6 +666,9 @@ Crafting a Payload: NOP Sled
   ○ Use a lot of small messages
   ○ Hit start of a message → success
   ○ Hit something else → connection closed
+
+
+
 
                       ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: NOP Sled
@@ -594,26 +678,41 @@ Type         Length
 
 'Q'    00   00    00   04
 
+
+
+
                             ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: NOP Sled
+
 
 Type                Length                   Type                      Length                           Type            Length
                                                                                                                                          …
 'Q'      00        00        00        04    'Q'      00            00             00             04    'Q'      00    00      00   04
 
+
+
+
       Type               Length                    Type                         Length                                      Value
 …
        'Q'    00        00        00        04      'Q'        00             00             00        3B      INSERT INTO admins VALUES …
 
+
+
+
                                                           ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: NOP Sled
+
 
 Type         Length         Type                 Length                         Type         Length
                                                                                                             …
 'Q'    00   00    00   04   'Q'    00         00             00            04   'Q'    00   00    00   04
 
+
+
+
                                     ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: NOP Sled
+
 
 Pad   Type    LengthLength         Type                         Length                Type         Length
 
@@ -621,8 +720,12 @@ A     'Q'
        00    00   00     00
                          04   04   'Q'         00             00            00   04   'Q'    00   00    00   04
 
+
+
+
                                      ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: NOP Sled
+
 
     Pad       Type        Length            Type                             Length         Type         Length
 
@@ -631,8 +734,12 @@ A         A   'Q'
                      00   00
                           04   00   04       'Q'              00            00    00   04   'Q'    00   00    00
 
+
+
+
                                      ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: NOP Sled
+
 
     Pad       Type         Length                          Type                   Length         Type         Lengt
 
@@ -640,13 +747,20 @@ A   A     A   'Q'
                00    00
                      04   00    00            04            'Q'             00   00    00   04   'Q'    00   00
 
+
+
+
                                      ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: NOP Sled
+
 
         Pad           Type         Length                                 Type         Length         Type
 
 A   A         A   A   'Q'
                        04    00   00         00             04            'Q'    00   00    00   04   'Q'    00
+
+
+
 
                                    ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: NOP Sled
@@ -657,6 +771,7 @@ Crafting a Payload: NOP Sled
 ● Still have to send 5 × 4 GB in the worst case
    ○ Can we make it even better?
 
+
                          ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
 
@@ -664,169 +779,261 @@ Crafting a Payload: Trampolines
 
                                                                'Q'    00   00    00   04
 
+
+
+
                         ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
 
 ● Can length bytes be valid types?                             Type          Length
 
+
   ○ Trampolines!                                               'Q'    'Q'   'Q'   'Q'   'Q'
 
                                                                       ❔ ❔ ❔ ❔
+
+
+
 
                         ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
 
 ● Can length bytes be valid types?                                                                                         Type                    Length
 
+
   ○ Trampolines!                                                                                                           'Q'        51          51           51       51
 
                                                                                                                                       ❔ ❔ ❔ ❔
 
+
+
+
 Q   Q   Q   Q   Q   S   S   S   S   S   B   B   B   B   B   E   E     E     E     E     Z    Z     Z       Z   Z   …   Q    ?     ?   ?   ?   Q   ?    ?   ?    ?   Q   ?    ?
+
+
+
 
                                                                     ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
 
 ● Can length bytes be valid types?                                                                                         Type                    Length
 
+
   ○ Trampolines!                                                                                                           'Q'        51          51           51       51
 
                                                                                                                                       ❔ ❔ ❔ ❔
 
+
+
+
 Q   Q   Q   Q   Q   S   S   S   S   S   B   B   B   B   B   E   E     E     E     E     Z    Z     Z       Z   Z   …   Q    ?     ?   ?   ?   Q   ?    ?   ?    ?   Q   ?    ?
+
+
+
 
                                                                     ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
 
 ● Can length bytes be valid types?                                                                                         Type                    Length
 
+
   ○ Trampolines!                                                                                                           'Q'        51          51           51       51
 
                                                                                                                                       ❔ ❔ ❔ ❔
 
+
+
+
 Q   Q   Q   Q   Q   S   S   S   S   S   B   B   B   B   B   E   E     E     E     E     Z    Z     Z       Z   Z   …   Q    ?     ?   ?   ?   Q   ?    ?   ?    ?   Q   ?    ?
+
+
+
 
                                                                     ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
 
 ● Can length bytes be valid types?                                                                                         Type                    Length
 
+
   ○ Trampolines!                                                                                                           'Q'        51          51           51       51
 
                                                                                                                                       ❔ ❔ ❔ ❔
 
+
+
+
 Q   Q   Q   Q   Q   S   S   S   S   S   B   B   B   B   B   E   E     E     E     E     Z    Z     Z       Z   Z   …   Q    ?     ?   ?   ?   Q   ?    ?   ?    ?   Q   ?    ?
+
+
+
 
                                                                     ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
 
 ● Can length bytes be valid types?                                                                                         Type                    Length
 
+
   ○ Trampolines!                                                                                                           'Q'        51          51           51       51
 
                                                                                                                                       ❔ ❔ ❔ ❔
 
+
+
+
 Q   Q   Q   Q   Q   S   S   S   S   S   B   B   B   B   B   E   E     E     E     E     Z    Z     Z       Z   Z   …   Q    ?     ?   ?   ?   Q   ?    ?   ?    ?   Q   ?    ?
+
+
+
 
                                                                     ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
 
 ● Can length bytes be valid types?                                                                                         Type                    Length
 
+
   ○ Trampolines!                                                                                                           'Q'        51          51           51       51
 
                                                                                                                                       ❔ ❔ ❔ ❔
 
+
+
+
 Q   Q   Q   Q   Q   S   S   S   S   S   B   B   B   B   B   E   E     E     E     E     Z    Z     Z       Z   Z   …   Q    ?     ?   ?   ?   Q   ?    ?   ?    ?   Q   ?    ?
+
+
+
 
                                                                     ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
 
 ● Can length bytes be valid types?                                                                                         Type                    Length
 
+
   ○ Trampolines!                                                                                                           'Q'        51          51           51       51
 
                                                                                                                                       ❔ ❔ ❔ ❔
 
+
+
+
 Q   Q   Q   Q   Q   S   S   S   S   S   B   B   B   B   B   E   E     E     E     E     Z    Z     Z       Z   Z   …   Q    ?     ?   ?   ?   Q   ?    ?   ?    ?   Q   ?    ?
+
+
+
 
                                                                     ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
 
 ● Can length bytes be valid types?                                                                                         Type                    Length
 
+
   ○ Trampolines!                                                                                                           'Q'        51          51           51       51
 
                                                                                                                                       ❔ ❔ ❔ ❔
 
+
+
+
 Q   Q   Q   Q   Q   S   S   S   S   S   B   B   B   B   B   E   E     E     E     E     Z    Z     Z       Z   Z   …   Q    ?     ?   ?   ?   Q   ?    ?   ?    ?   Q   ?    ?
+
+
+
 
                                                                     ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
 
 ● Can length bytes be valid types?                                                                                         Type                    Length
 
+
   ○ Trampolines!                                                                                                           'Q'        51          51           51       51
 
                                                                                                                                       ❔ ❔ ❔ ❔
 
+
+
+
 Q   Q   Q   Q   Q   S   S   S   S   S   B   B   B   B   B   E   E     E     E     E     Z    Z     Z       Z   Z   …   Q    ?     ?   ?   ?   Q   ?    ?   ?    ?   Q   ?    ?
+
+
+
 
                                                                     ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
 
 ● Can length bytes be valid types?                             Type         Length
 
+
   ○ Trampolines!                                               'Q'    51   51    51   51
 
                                                                       ❔ ❔ ❔ ❔
+
+
+
 
                         ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
 
 ● Can length bytes be valid types?                            Type         Length
 
+
   ○ Trampolines!                                              'Q'    51   51    51   51
+
 
 ● Max. logical size: 0x3fffffff                               ✅ ❌ ✅ ✅ ✅
 
   ○ First size byte cannot be > 0x3f
 
+
+
+
                        ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
 
 ● Can length bytes be valid types?                            Type         Length
 
+
   ○ Trampolines!                                              3f     3f   3f    3f   3f
+
 
 ● Max. logical size: 0x3fffffff                               ❔ ❔ ❔ ❔ ❔
 
   ○ First size byte cannot be > 0x3f
 
+
+
+
                        ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
 
 ● Can length bytes be valid types?                            Type         Length
 
+
   ○ Trampolines!                                              3f     3f   3f    3f   3f
+
 
 ● Max. logical size: 0x3fffffff                               ❌ ✅ ✅ ✅ ✅
 
   ○ First size byte cannot be > 0x3f
 ● No valid message type ≤ 0x3f
 
+
+
+
                        ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
 
 ● Can length bytes be valid types?                            Type         Length
 
+
   ○ Trampolines!                                              'Q'    00   'Q'   00   'Q'
+
 
 ● Max. logical size: 0x3fffffff                               ✅ ❌ ✅ ❌ ✅
 
   ○ First size byte cannot be > 0x3f
 ● No valid message type ≤ 0x3f
 ● Solution: alternating pattern
+
 
                        ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload: Trampolines
@@ -873,8 +1080,14 @@ Exploitable Applications
  Vulnerable library                                          Has vulnerable
        used                                                      conﬁg
 
+
+
+
                                                              Vulnerable in
                                                              default conﬁg
+
+
+
 
                       ©2024, SonarSource S.A, Switzerland.
      Demo: Harbor
@@ -989,6 +1202,8 @@ Crafting a Payload
   ○ Message type (dd 07) is already invalid
   ○ Size ﬁelds can become invalid
 
+
+
                        ©2024, SonarSource S.A, Switzerland.
 Crafting a Payload
 
@@ -1011,6 +1226,9 @@ Query:                            BSON Document:
 
 }                                 0000 002e 2e2e 0000                                             ........
 
+
+
+
                                      Length                         Type        Key       Value        Other
 
                                     ©2024, SonarSource S.A, Switzerland.
@@ -1025,6 +1243,9 @@ Query:                          BSON Document:
 
 }                               0000 002e 2e2e 0000                                              ........
 
+
+
+
                                    Length                         Type         Key       Value        Other
 
                                   ©2024, SonarSource S.A, Switzerland.
@@ -1036,6 +1257,8 @@ Vulnerable Libraries
      Java      mongo-java-driver           ❌                                  ❌                -
   JavaScript   mongodb                     ❌                                  ❌                -
 
+
+
 ● Sent advisory in February 2024
 ● mongodb ﬁxed in March
 
@@ -1043,6 +1266,9 @@ Vulnerable Libraries
 Real-World
 Applicability
 Constraints
+
+
+
 
               ©2024, SonarSource S.A, Switzerland.
 How Web Apps Handle Large Payloads
@@ -1125,6 +1351,9 @@ Language Comparison
    ○ How big can strings/buffers be?
 ● Are integer overﬂows silent?
 
+
+
+
                        ©2024, SonarSource S.A, Switzerland.
 Language Comparison: Large Payloads
 Language                            Max. String Size                       Max. Buffer Size
@@ -1161,6 +1390,7 @@ Python                                                 No                       
 
 Rust                                     In release builds                                 N/A *
 
+
 * Type system prevents overﬂows. Devs have to check for overﬂows, leading to bugs
 
                                          ©2024, SonarSource S.A, Switzerland.
@@ -1176,8 +1406,12 @@ Real-World Applicability
 Future Research
 Safety First: No DoS Please!
 
+
+
+
                           ⚠
 Do not send large payloads to third-party systems!
+
 
                      ©2024, SonarSource S.A, Switzerland.
 Non-Invasive Detection
@@ -1197,6 +1431,8 @@ Research More!
                                                                   Database
                                                                              Application
 
+
+
    ○ Caches, message queues, …
 ● Find more desync techniques                                      Cache                   Message
                                                                                             Queue
@@ -1214,6 +1450,9 @@ Research More!
    ○ Much easier to exploit (65KB vs. 4GB)
    ○ More to come in the future 👀
 
+
+
+
                         ©2024, SonarSource S.A, Switzerland.
 Conclusion
 Takeaways
@@ -1224,8 +1463,12 @@ Takeaways
 ● SQL injection isn't dead
    ○ If you can't hack it, just go a level deeper!
 
+
                          ©2024, SonarSource S.A, Switzerland.
  Thank you!
 @Sonar_Research                                                  @pspaul95
 
 @SonarResearch@infosec.exchange                                  @pspaul@infosec.exchange
+
+https://sonarsource.com
+                          ©2024, SonarSource S.A, Switzerland.

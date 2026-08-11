@@ -5,16 +5,18 @@ resource: "https://portswigger.net/research/bypassing-wafs-with-the-phantom-vers
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:30+00:00"
+  at: "2026-08-11T17:44:57+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/bypassing-wafs-with-the-phantom-version-cookie"
     title: Bypassing WAFs with the phantom $Version cookie
+    author: Zakhar Fedotkin
     last_modified: 2024-12-04
 also_at: []
-authors: []
+authors:
+  - Zakhar Fedotkin
 canonical_url: ""
 cited_by:
   - "2024.md:24"
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: c21c692b5e67bbc56e1d9a8fea157ae5f9746bb1af38e97d449a853c3519f6b1
 retrieved_from: "https://portswigger.net/research/bypassing-wafs-with-the-phantom-version-cookie"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:30+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:57+00:00"
 slug: 2024-portswigger-research-bypassing-wafs-phantom-version-cookie
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Bypassing WAFs with the phantom $Version cookie
 
-**Bypassing WAFs with the phantom $Version cookie** - Author not stated, PortSwigger Research.
+**Bypassing WAFs with the phantom $Version cookie** - Zakhar Fedotkin, PortSwigger Research.
 
 - Published: 2024-12-04
 - Original: <https://portswigger.net/research/bypassing-wafs-with-the-phantom-version-cookie>
-- Preserved from: https://portswigger.net/research/bypassing-wafs-with-the-phantom-version-cookie (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/bypassing-wafs-with-the-phantom-version-cookie (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

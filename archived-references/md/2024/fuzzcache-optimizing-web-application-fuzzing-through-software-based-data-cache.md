@@ -5,18 +5,21 @@ resource: "https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:08:12+00:00"
+  at: "2026-08-11T17:37:26+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf"
     title: "FuzzCache: Optimizing Web Application Fuzzing Through Software-Based Data Cache"
+    author: Penghui Li, Mingxue Zhang
 also_at: []
-authors: []
+authors:
+  - Penghui Li
+  - Mingxue Zhang
 canonical_url: ""
 cited_by:
-  - "2024.md:146"
+  - "2024.md:147"
 commit: ""
 content_sha256: e1d3220699a98e3397c94501721391e8d1aa223fa77942e262b4836c115ea824
 depth: full
@@ -30,8 +33,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 13a3776c2c310273609c6a93cfbb0954404074c861d06c34b2d01a7a5ebeda27
 retrieved_from: "https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:08:12+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:37:26+00:00"
 slug: fuzzcache-optimizing-web-application-fuzzing-through-software-based-data-cache
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # FuzzCache: Optimizing Web Application Fuzzing Through Software-Based Data Cache
 
-**FuzzCache: Optimizing Web Application Fuzzing Through Software-Based Data Cache** - Author not stated, Publisher not stated.
+**FuzzCache: Optimizing Web Application Fuzzing Through Software-Based Data Cache** - Penghui Li, Mingxue Zhang, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf>
-- Preserved from: https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf (live) on 2026-08-10
+- Preserved from: https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

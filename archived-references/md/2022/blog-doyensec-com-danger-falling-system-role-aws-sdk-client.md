@@ -5,15 +5,18 @@ resource: "https://blog.doyensec.com/2022/10/18/cloudsectidbit-dataimport.html"
 tags: [article, webseclist-reference, en-us, blog-doyensec-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:50+00:00"
+  at: "2026-08-11T17:39:47+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://blog.doyensec.com/2022/10/18/cloudsectidbit-dataimport.html"
     title: The Danger of Falling to System Role in AWS SDK Client
+    author: Francesco Lacerenza, Mohamed Ouad
 also_at: []
-authors: []
+authors:
+  - Francesco Lacerenza
+  - Mohamed Ouad
 canonical_url: ""
 cited_by:
   - "2022.md:40"
@@ -30,8 +33,8 @@ publisher: blog.doyensec.com
 publisher_english: ""
 raw_sha256: ebb6b57d51265f4234ee2e4b3ff1fe47ebba53857d71770531edbc9878b16c11
 retrieved_from: "https://blog.doyensec.com/2022/10/18/cloudsectidbit-dataimport.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:50+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:47+00:00"
 slug: blog-doyensec-com-danger-falling-system-role-aws-sdk-client
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # The Danger of Falling to System Role in AWS SDK Client
 
-**The Danger of Falling to System Role in AWS SDK Client** - Author not stated, blog.doyensec.com.
+**The Danger of Falling to System Role in AWS SDK Client** - Francesco Lacerenza, Mohamed Ouad, blog.doyensec.com.
 
 - Published: date not stated
 - Original: <https://blog.doyensec.com/2022/10/18/cloudsectidbit-dataimport.html>
-- Preserved from: https://blog.doyensec.com/2022/10/18/cloudsectidbit-dataimport.html (live) on 2026-08-09
+- Preserved from: https://blog.doyensec.com/2022/10/18/cloudsectidbit-dataimport.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,19 +5,27 @@ resource: "https://www.ndss-symposium.org/ndss-paper/cross-origin-web-attacks-vi
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:41+00:00"
+  at: "2026-08-11T17:42:59+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/cross-origin-web-attacks-via-http-2-server-push-and-signed-http-exchange/"
     title: Cross-Origin Web Attacks via HTTP/2 Server Push and Signed HTTP Exchange
+    author: Pinji Chen, Jianjun Chen, Mingming Zhang, Qi Wang, Yiming Zhang, Mingwei Xu, Haixin Duan
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2025-1086-paper.pdf"
-authors: []
+authors:
+  - Pinji Chen
+  - Jianjun Chen
+  - Mingming Zhang
+  - Qi Wang
+  - Yiming Zhang
+  - Mingwei Xu
+  - Haixin Duan
 canonical_url: ""
 cited_by:
-  - "2025.md:92"
+  - "2025.md:93"
 commit: ""
 content_sha256: 18c6ee13315d6bee4c205b278fe7474b26719b05325aca04870903b047da92c0
 depth: full
@@ -31,8 +39,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: 43b5d7b2fa230795a3ee079efb2e4285a991e6182e7807308dc7e485b4398183
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/cross-origin-web-attacks-via-http-2-server-push-and-signed-http-exchange/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:41+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:42:59+00:00"
 slug: ndss-symposium-cross-origin-web-attacks-http-2-server-push-signed-http-exchange
 snapshot: ""
 title_english: ""
@@ -42,12 +50,12 @@ translation_of: ""
 
 # Cross-Origin Web Attacks via HTTP/2 Server Push and Signed HTTP Exchange
 
-**Cross-Origin Web Attacks via HTTP/2 Server Push and Signed HTTP Exchange** - Author not stated, NDSS Symposium.
+**Cross-Origin Web Attacks via HTTP/2 Server Push and Signed HTTP Exchange** - Pinji Chen, Jianjun Chen, Mingming Zhang, Qi Wang, Yiming Zhang, Mingwei Xu, Haixin Duan, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/cross-origin-web-attacks-via-http-2-server-push-and-signed-http-exchange/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2025-1086-paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/cross-origin-web-attacks-via-http-2-server-push-and-signed-http-exchange/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/cross-origin-web-attacks-via-http-2-server-push-and-signed-http-exchange/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

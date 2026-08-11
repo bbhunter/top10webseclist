@@ -5,18 +5,22 @@ resource: "https://lilicoding.github.io/SA3Repo/papers/2015_zuo2015automatically
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:31:07+00:00"
+  at: "2026-08-11T17:35:53+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://lilicoding.github.io/SA3Repo/papers/2015_zuo2015automatically.pdf"
     title: Automatically Detecting SSL Error-Handling Vulnerabilities in Hybrid Mobile Web Apps
+    author: Chaoshun Zuo, Jianliang Wu, Shanqing Guo
 also_at: []
-authors: []
+authors:
+  - Chaoshun Zuo
+  - Jianliang Wu
+  - Shanqing Guo
 canonical_url: ""
 cited_by:
-  - "2015.md:79"
+  - "2015.md:80"
 commit: ""
 content_sha256: 660532d5654146314f002eab34d4908ee694a0da7cec2973bb4e663fec4e9e82
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 0f1b0560c68fe38d02909d20d8e699fefa76822843d6ae5fd023bfd7f913c429
 retrieved_from: "https://lilicoding.github.io/SA3Repo/papers/2015_zuo2015automatically.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:31:07+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:53+00:00"
 slug: automatically-detecting-ssl-error-handling-vulnerabilities-hybrid-mobile-apps
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # Automatically Detecting SSL Error-Handling Vulnerabilities in Hybrid Mobile Web Apps
 
-**Automatically Detecting SSL Error-Handling Vulnerabilities in Hybrid Mobile Web Apps** - Author not stated, Publisher not stated.
+**Automatically Detecting SSL Error-Handling Vulnerabilities in Hybrid Mobile Web Apps** - Chaoshun Zuo, Jianliang Wu, Shanqing Guo, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://lilicoding.github.io/SA3Repo/papers/2015_zuo2015automatically.pdf>
-- Preserved from: https://lilicoding.github.io/SA3Repo/papers/2015_zuo2015automatically.pdf (live) on 2026-08-10
+- Preserved from: https://lilicoding.github.io/SA3Repo/papers/2015_zuo2015automatically.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

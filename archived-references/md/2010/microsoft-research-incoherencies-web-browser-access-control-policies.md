@@ -5,19 +5,24 @@ resource: "https://www.microsoft.com/en-us/research/publication/incoherencies-we
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:56:32+00:00"
+  at: "2026-08-11T17:36:02+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.microsoft.com/en-us/research/publication/incoherencies-web-browser-access-control-policies/"
     title: On the Incoherencies in Web Browser Access Control Policies
+    author: Kapil Singh, Alexander Moshchuk, Helen J. Wang, Wenke Lee
 also_at:
   - "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/incoherencyAndWebAnalyzer.pdf"
-authors: []
+authors:
+  - Kapil Singh
+  - Alexander Moshchuk
+  - Helen J. Wang
+  - Wenke Lee
 canonical_url: ""
 cited_by:
-  - "2010.md:92"
+  - "2010.md:93"
 commit: ""
 content_sha256: 6a98913d88ba325460bc019b0034c309df7033082071f53b1ccca060bece4a60
 depth: full
@@ -31,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: a9ab21b845df32e822221b305c72460495798da5ea78df11167a0e633b0513bd
 retrieved_from: "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/incoherencyAndWebAnalyzer.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:56:32+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:02+00:00"
 slug: microsoft-research-incoherencies-web-browser-access-control-policies
 snapshot: ""
 title_english: ""
@@ -42,12 +47,12 @@ translation_of: ""
 
 # On the Incoherencies in Web Browser Access Control Policies
 
-**On the Incoherencies in Web Browser Access Control Policies** - Author not stated, Publisher not stated.
+**On the Incoherencies in Web Browser Access Control Policies** - Kapil Singh, Alexander Moshchuk, Helen J. Wang, Wenke Lee, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.microsoft.com/en-us/research/publication/incoherencies-web-browser-access-control-policies/>
 - Also published at: <https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/incoherencyAndWebAnalyzer.pdf>
-- Preserved from: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/incoherencyAndWebAnalyzer.pdf (live) on 2026-08-10
+- Preserved from: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/incoherencyAndWebAnalyzer.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,19 +5,24 @@ resource: "https://iseclab.org/publications/wondracek2010a_practical/"
 tags: [article, webseclist-reference, iseclab-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:29:28+00:00"
+  at: "2026-08-11T17:35:40+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://iseclab.org/publications/wondracek2010a_practical/"
     title: iSecLab - A Practical Attack to De-anonymize Social Network Users
+    author: Gilbert Wondracek, Thorsten Holz, Engin Kirda, Christopher Kruegel
 also_at:
   - "https://iseclab.org/files/publications/Wondracek2010A_Practical.pdf"
-authors: []
+authors:
+  - Gilbert Wondracek
+  - Thorsten Holz
+  - Engin Kirda
+  - Christopher Kruegel
 canonical_url: ""
 cited_by:
-  - "2010.md:85"
+  - "2010.md:86"
 commit: ""
 content_sha256: fb70a43fece962ec1e5324c767f28127e8400e170f0ee2d1f2fe39fa0fd58788
 depth: full
@@ -31,8 +36,8 @@ publisher: iseclab.org
 publisher_english: ""
 raw_sha256: 8bfa70475f927ad82c42b229f89bb0930e01da3ce49d89f2138bdcb25f0dd945
 retrieved_from: "https://iseclab.org/publications/wondracek2010a_practical/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:29:28+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:40+00:00"
 slug: iseclab-org-iseclab-practical-attack-de-anonymize-social-network-users
 snapshot: ""
 title_english: ""
@@ -42,12 +47,12 @@ translation_of: ""
 
 # iSecLab - A Practical Attack to De-anonymize Social Network Users
 
-**iSecLab - A Practical Attack to De-anonymize Social Network Users** - Author not stated, iseclab.org.
+**iSecLab - A Practical Attack to De-anonymize Social Network Users** - Gilbert Wondracek, Thorsten Holz, Engin Kirda, Christopher Kruegel, iseclab.org.
 
 - Published: date not stated
 - Original: <https://iseclab.org/publications/wondracek2010a_practical/>
 - Also published at: <https://iseclab.org/files/publications/Wondracek2010A_Practical.pdf>
-- Preserved from: https://iseclab.org/publications/wondracek2010a_practical/ (live) on 2026-08-10
+- Preserved from: https://iseclab.org/publications/wondracek2010a_practical/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

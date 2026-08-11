@@ -5,15 +5,17 @@ resource: "https://nastystereo.com/security/ruby-3.4-deserialization.html"
 tags: [article, webseclist-reference, en-AU, nastystereo-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:36:27+00:00"
+  at: "2026-08-11T17:36:10+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://nastystereo.com/security/ruby-3.4-deserialization.html"
     title: Ruby 3.4 Universal RCE Deserialization Gadget Chain / nastystereo.com
+    author: Luke Jahnke
 also_at: []
-authors: []
+authors:
+  - Luke Jahnke
 canonical_url: ""
 cited_by:
   - "2024.md:70"
@@ -30,8 +32,8 @@ publisher: nastystereo.com
 publisher_english: ""
 raw_sha256: cd06bd3697fe58791f84acc4ac0f71d9b20567e049a2acf9e334251ef6b931f0
 retrieved_from: "https://nastystereo.com/security/ruby-3.4-deserialization.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:36:27+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:10+00:00"
 slug: nastystereo-com-ruby-3-4-universal-rce-deserialization-gadget-chain-com
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Ruby 3.4 Universal RCE Deserialization Gadget Chain / nastystereo.com
 
-**Ruby 3.4 Universal RCE Deserialization Gadget Chain / nastystereo.com** - Author not stated, nastystereo.com.
+**Ruby 3.4 Universal RCE Deserialization Gadget Chain / nastystereo.com** - Luke Jahnke, nastystereo.com.
 
 - Published: date not stated
 - Original: <https://nastystereo.com/security/ruby-3.4-deserialization.html>
-- Preserved from: https://nastystereo.com/security/ruby-3.4-deserialization.html (live) on 2026-08-09
+- Preserved from: https://nastystereo.com/security/ruby-3.4-deserialization.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

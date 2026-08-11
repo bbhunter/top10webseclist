@@ -5,20 +5,23 @@ resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/postman-a
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:34:36+00:00"
+  at: "2026-08-11T17:44:29+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/postman-always-rings-twice-attacking-and-defending-postmessage-html5-websites/"
     title: "The Postman Always Rings Twice: Attacking and Defending postMessage in HTML5 Websites"
+    author: Sooel Son, Vitaly Shmatikov
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_5.pdf"
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/Presentation04_5.pdf"
-authors: []
+authors:
+  - Sooel Son
+  - Vitaly Shmatikov
 canonical_url: ""
 cited_by:
-  - "2013.md:48"
+  - "2013.md:49"
 commit: ""
 content_sha256: 636e0f0e1931393e6b2e942d866ad1040c8218ae9e00e2d6a2763eeacf23268f
 depth: full
@@ -32,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 0636f58f20e52fb3bc3f88928e81a2504a09484070e95c083215a1ba9c1ece92
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_5.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:34:36+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:29+00:00"
 slug: ndss-symposium-postman-always-rings-twice-attacking-defending-websites
 snapshot: ""
 title_english: ""
@@ -43,13 +46,13 @@ translation_of: ""
 
 # The Postman Always Rings Twice: Attacking and Defending postMessage in HTML5 Websites
 
-**The Postman Always Rings Twice: Attacking and Defending postMessage in HTML5 Websites** - Author not stated, Publisher not stated.
+**The Postman Always Rings Twice: Attacking and Defending postMessage in HTML5 Websites** - Sooel Son, Vitaly Shmatikov, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/postman-always-rings-twice-attacking-and-defending-postmessage-html5-websites/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_5.pdf>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/Presentation04_5.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_5.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_5.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

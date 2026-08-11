@@ -5,20 +5,22 @@ resource: "https://www.securitum.com/soql_injection__how_to_exfiltrate_sensitive
 tags: [article, webseclist-reference, en, securitum-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:41:10+00:00"
+  at: "2026-08-11T17:45:30+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.securitum.com/soql_injection__how_to_exfiltrate_sensitive_data_in_real-world_pentests.html"
     title: Securitum - Security penetration testing.
+    author: Adam Borczyk
 also_at: []
-authors: []
+authors:
+  - Adam Borczyk
 canonical_url: ""
 cited_by:
   - "2024.md:107"
 commit: ""
-content_sha256: 9d256983c9babcd271fcb9ec6531a4d0a4147a74b9ab5dcb6633d93400c3c234
+content_sha256: 68c304c3242e6a77d47825ce6abe776667d4bbcab8d03ea8027bef4a2c09edbd
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: securitum.com
 publisher_english: ""
 raw_sha256: 7949dece32b120f792d458c8fb3775e0409c778844bce23c9320cfa34e3fc7a7
 retrieved_from: "https://www.securitum.com/soql_injection__how_to_exfiltrate_sensitive_data_in_real-world_pentests.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:41:10+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:30+00:00"
 slug: securitum-com-securitum-security-penetration-testing
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Securitum - Security penetration testing.
 
-**Securitum - Security penetration testing.** - Author not stated, securitum.com.
+**Securitum - Security penetration testing.** - Adam Borczyk, securitum.com.
 
 - Published: date not stated
 - Original: <https://www.securitum.com/soql_injection__how_to_exfiltrate_sensitive_data_in_real-world_pentests.html>
-- Preserved from: https://www.securitum.com/soql_injection__how_to_exfiltrate_sensitive_data_in_real-world_pentests.html (live) on 2026-08-09
+- Preserved from: https://www.securitum.com/soql_injection__how_to_exfiltrate_sensitive_data_in_real-world_pentests.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

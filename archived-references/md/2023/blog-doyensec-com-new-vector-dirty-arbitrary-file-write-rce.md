@@ -5,15 +5,18 @@ resource: "https://blog.doyensec.com/2023/02/28/new-vector-for-dirty-arbitrary-f
 tags: [article, webseclist-reference, en-us, blog-doyensec-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:52+00:00"
+  at: "2026-08-11T17:39:50+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://blog.doyensec.com/2023/02/28/new-vector-for-dirty-arbitrary-file-write-2-rce.html"
     title: A New Vector For “Dirty” Arbitrary File Write to RCE
+    author: Maxence Schmitt, Lorenzo Stella
 also_at: []
-authors: []
+authors:
+  - Maxence Schmitt
+  - Lorenzo Stella
 canonical_url: ""
 cited_by:
   - "2023.md:37"
@@ -30,8 +33,8 @@ publisher: blog.doyensec.com
 publisher_english: ""
 raw_sha256: 3cb03f5ae9bb4def3113e71bc77841f2182c10d61576f30e5a9bff4de1fb9cff
 retrieved_from: "https://blog.doyensec.com/2023/02/28/new-vector-for-dirty-arbitrary-file-write-2-rce.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:52+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:50+00:00"
 slug: blog-doyensec-com-new-vector-dirty-arbitrary-file-write-rce
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # A New Vector For “Dirty” Arbitrary File Write to RCE
 
-**A New Vector For “Dirty” Arbitrary File Write to RCE** - Author not stated, blog.doyensec.com.
+**A New Vector For “Dirty” Arbitrary File Write to RCE** - Maxence Schmitt, Lorenzo Stella, blog.doyensec.com.
 
 - Published: date not stated
 - Original: <https://blog.doyensec.com/2023/02/28/new-vector-for-dirty-arbitrary-file-write-2-rce.html>
-- Preserved from: https://blog.doyensec.com/2023/02/28/new-vector-for-dirty-arbitrary-file-write-2-rce.html (live) on 2026-08-09
+- Preserved from: https://blog.doyensec.com/2023/02/28/new-vector-for-dirty-arbitrary-file-write-2-rce.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

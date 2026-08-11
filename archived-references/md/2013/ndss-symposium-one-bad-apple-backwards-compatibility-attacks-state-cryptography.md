@@ -5,20 +5,24 @@ resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/one-bad-a
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:34:31+00:00"
+  at: "2026-08-11T17:44:06+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/one-bad-apple-backwards-compatibility-attacks-state-art-cryptography/"
     title: "One Bad Apple: Backwards Compatibility Attacks on State-of-the-Art Cryptography"
+    author: Tibor Jager, Kenneth G. Paterson, Juraj Somorovsky
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/10_4_0.pdf"
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/Presentation10_4.pdf"
-authors: []
+authors:
+  - Tibor Jager
+  - Kenneth G. Paterson
+  - Juraj Somorovsky
 canonical_url: ""
 cited_by:
-  - "2013.md:47"
+  - "2013.md:48"
 commit: ""
 content_sha256: d6a2fcea4933a08a4f8a9780954fac7d5289a8ca75a027d072c9a5bc5c519b00
 depth: full
@@ -32,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: c919ba185839022dde9ea14ed2acf12942986eaccf3aff955e551fce91cec08e
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/10_4_0.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:34:31+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:06+00:00"
 slug: ndss-symposium-one-bad-apple-backwards-compatibility-attacks-state-cryptography
 snapshot: ""
 title_english: ""
@@ -43,13 +47,13 @@ translation_of: ""
 
 # One Bad Apple: Backwards Compatibility Attacks on State-of-the-Art Cryptography
 
-**One Bad Apple: Backwards Compatibility Attacks on State-of-the-Art Cryptography** - Author not stated, Publisher not stated.
+**One Bad Apple: Backwards Compatibility Attacks on State-of-the-Art Cryptography** - Tibor Jager, Kenneth G. Paterson, Juraj Somorovsky, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/one-bad-apple-backwards-compatibility-attacks-state-art-cryptography/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/10_4_0.pdf>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/Presentation10_4.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/10_4_0.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/10_4_0.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

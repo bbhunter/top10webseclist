@@ -5,21 +5,27 @@ resource: "https://ieeexplore.ieee.org/document/8835223"
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:53+00:00"
+  at: "2026-08-11T17:35:35+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://ieeexplore.ieee.org/document/8835223"
     title: "Postcards from the Post-HTTP World: Amplification of HTTPS Vulnerabilities in the Web Ecosystem"
+    author: Stefano Calzavara, Riccardo Focardi, Matus Nemec, Alvise Rabitti, Marco Squarcina
 also_at:
   - "https://iris.unive.it/retrieve/handle/10278/3713409/162410/oakland19.pdf"
   - "https://iris.unive.it/handle/10278/3713409"
   - "https://minimalblue.com/data/papers/SP19_postcards_from_the_post_HTTP_world.pdf"
-authors: []
+authors:
+  - Stefano Calzavara
+  - Riccardo Focardi
+  - Matus Nemec
+  - Alvise Rabitti
+  - Marco Squarcina
 canonical_url: ""
 cited_by:
-  - "2019.md:78"
+  - "2019.md:79"
 commit: ""
 content_sha256: dee32e4709fde0d64b5d7d1936448e0c856d41fdd8266022d4ac23c6b66a0ea5
 depth: full
@@ -33,8 +39,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: d9fce116c9e5c4fd021410e7ef67f619b0757dd507132fbc9accb76ab903194b
 retrieved_from: "https://minimalblue.com/data/papers/SP19_postcards_from_the_post_HTTP_world.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:53+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:35+00:00"
 slug: postcards-post-http-world-amplification-https-vulnerabilities-web-ecosystem
 snapshot: ""
 title_english: ""
@@ -44,14 +50,14 @@ translation_of: ""
 
 # Postcards from the Post-HTTP World: Amplification of HTTPS Vulnerabilities in the Web Ecosystem
 
-**Postcards from the Post-HTTP World: Amplification of HTTPS Vulnerabilities in the Web Ecosystem** - Author not stated, Publisher not stated.
+**Postcards from the Post-HTTP World: Amplification of HTTPS Vulnerabilities in the Web Ecosystem** - Stefano Calzavara, Riccardo Focardi, Matus Nemec, Alvise Rabitti, Marco Squarcina, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://ieeexplore.ieee.org/document/8835223>
 - Also published at: <https://iris.unive.it/retrieve/handle/10278/3713409/162410/oakland19.pdf>
 - Also published at: <https://iris.unive.it/handle/10278/3713409>
 - Also published at: <https://minimalblue.com/data/papers/SP19_postcards_from_the_post_HTTP_world.pdf>
-- Preserved from: https://minimalblue.com/data/papers/SP19_postcards_from_the_post_HTTP_world.pdf (live) on 2026-08-10
+- Preserved from: https://minimalblue.com/data/papers/SP19_postcards_from_the_post_HTTP_world.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

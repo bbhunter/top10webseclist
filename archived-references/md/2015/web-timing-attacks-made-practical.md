@@ -5,17 +5,20 @@ resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T13:04:51+00:00"
+  at: "2026-08-11T17:39:11+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing-Attacks-Made-Practical-wp.pdf"
     title: Web Timing Attacks Made Practical
+    author: Timothy D. Morgan, Jason W. Morgan
   - id: canonical
     resource: "https://blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing-Attacks-Made-Practical-wp.pdf"
 also_at: []
-authors: []
+authors:
+  - Timothy D. Morgan
+  - Jason W. Morgan
 canonical_url: "https://blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing-Attacks-Made-Practical-wp.pdf"
 cited_by:
   - "2015.md:7"
@@ -33,7 +36,7 @@ publisher_english: ""
 raw_sha256: e8c01d952cc9d7f25ac0ae7012b0c11083cae1cf927f718b2f2de219b9e9bb33
 retrieved_from: "https://blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing-Attacks-Made-Practical-wp.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T13:04:51+00:00"
+retrieved_utc: "2026-08-11T17:39:11+00:00"
 slug: web-timing-attacks-made-practical
 snapshot: ""
 title_english: ""
@@ -43,12 +46,12 @@ translation_of: ""
 
 # Web Timing Attacks Made Practical
 
-**Web Timing Attacks Made Practical** - Author not stated, Publisher not stated.
+**Web Timing Attacks Made Practical** - Timothy D. Morgan, Jason W. Morgan, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing-Attacks-Made-Practical-wp.pdf>
 - Current location: <https://blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing-Attacks-Made-Practical-wp.pdf>
-- Preserved from: https://blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing-Attacks-Made-Practical-wp.pdf (stored) on 2026-08-10
+- Preserved from: https://blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing-Attacks-Made-Practical-wp.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

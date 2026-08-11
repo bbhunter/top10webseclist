@@ -5,17 +5,23 @@ resource: "http://www.adambarth.com/experimental/websocket.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:01:02+00:00"
+  at: "2026-08-11T17:33:51+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.adambarth.com/experimental/websocket.pdf"
     title: Poisoning proxy caches using Java/Flash/Web Sockets
+    author: Lin-Shung Huang, Eric Y. Chen, Adam Barth, Eric Rescorla, Collin Jackson
   - id: canonical
     resource: "http://www.adambarth.com/papers/2011/huang-chen-barth-rescorla-jackson.pdf"
 also_at: []
-authors: []
+authors:
+  - Lin-Shung Huang
+  - Eric Y. Chen
+  - Adam Barth
+  - Eric Rescorla
+  - Collin Jackson
 canonical_url: "http://www.adambarth.com/papers/2011/huang-chen-barth-rescorla-jackson.pdf"
 cited_by:
   - "2010.md:69"
@@ -32,8 +38,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: a87d8090cc108081ceafdebd3dbeb9b384ddd20615fcaa1c51ec8e9e357368eb
 retrieved_from: "http://www.adambarth.com/papers/2011/huang-chen-barth-rescorla-jackson.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:01:02+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:33:51+00:00"
 slug: poisoning-proxy-caches-using-java-flash-web-sockets
 snapshot: ""
 title_english: ""
@@ -43,12 +49,12 @@ translation_of: ""
 
 # Poisoning proxy caches using Java/Flash/Web Sockets
 
-**Poisoning proxy caches using Java/Flash/Web Sockets** - Author not stated, Publisher not stated.
+**Poisoning proxy caches using Java/Flash/Web Sockets** - Lin-Shung Huang, Eric Y. Chen, Adam Barth, Eric Rescorla, Collin Jackson, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://www.adambarth.com/experimental/websocket.pdf>
 - Current location: <http://www.adambarth.com/papers/2011/huang-chen-barth-rescorla-jackson.pdf>
-- Preserved from: http://www.adambarth.com/papers/2011/huang-chen-barth-rescorla-jackson.pdf (live) on 2026-08-10
+- Preserved from: http://www.adambarth.com/papers/2011/huang-chen-barth-rescorla-jackson.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

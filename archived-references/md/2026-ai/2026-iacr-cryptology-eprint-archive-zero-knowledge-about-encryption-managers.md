@@ -5,16 +5,21 @@ resource: "https://eprint.iacr.org/2026/058"
 tags: [article, webseclist-reference, en, iacr-cryptology-eprint-archive]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:09:26+00:00"
+  at: "2026-08-11T17:35:06+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://eprint.iacr.org/2026/058"
     title: "Zero Knowledge (About) Encryption: A Comparative Security Analysis of Three Cloud-based Password Managers"
+    author: Matteo Scarlata, Giovanni Torrisi, Matilda Backendal, Kenneth G. Paterson
     last_modified: 2026-01-14
 also_at: []
-authors: []
+authors:
+  - Matteo Scarlata
+  - Giovanni Torrisi
+  - Matilda Backendal
+  - Kenneth G. Paterson
 canonical_url: ""
 cited_by:
   - "2026-ai.md:68"
@@ -31,8 +36,8 @@ publisher: IACR Cryptology ePrint Archive
 publisher_english: ""
 raw_sha256: 00038d8844b4541062dd9dfc6a3dd7ecff2279b7158fe174be9993649363f673
 retrieved_from: "https://eprint.iacr.org/2026/058"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:09:26+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:06+00:00"
 slug: 2026-iacr-cryptology-eprint-archive-zero-knowledge-about-encryption-managers
 snapshot: ""
 title_english: ""
@@ -42,11 +47,11 @@ translation_of: ""
 
 # Zero Knowledge (About) Encryption: A Comparative Security Analysis of Three Cloud-based Password Managers
 
-**Zero Knowledge (About) Encryption: A Comparative Security Analysis of Three Cloud-based Password Managers** - Author not stated, IACR Cryptology ePrint Archive.
+**Zero Knowledge (About) Encryption: A Comparative Security Analysis of Three Cloud-based Password Managers** - Matteo Scarlata, Giovanni Torrisi, Matilda Backendal, Kenneth G. Paterson, IACR Cryptology ePrint Archive.
 
 - Published: 2026-01-14
 - Original: <https://eprint.iacr.org/2026/058>
-- Preserved from: https://eprint.iacr.org/2026/058 (live) on 2026-08-10
+- Preserved from: https://eprint.iacr.org/2026/058 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

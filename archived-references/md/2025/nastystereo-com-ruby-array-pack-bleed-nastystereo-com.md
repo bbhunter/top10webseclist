@@ -5,15 +5,17 @@ resource: "https://nastystereo.com/security/ruby-pack.html"
 tags: [article, webseclist-reference, en-AU, nastystereo-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:36:27+00:00"
+  at: "2026-08-11T17:36:10+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://nastystereo.com/security/ruby-pack.html"
     title: Ruby Array Pack Bleed / nastystereo.com
+    author: Luke Jahnke
 also_at: []
-authors: []
+authors:
+  - Luke Jahnke
 canonical_url: ""
 cited_by:
   - "2025.md:58"
@@ -30,8 +32,8 @@ publisher: nastystereo.com
 publisher_english: ""
 raw_sha256: c456c373fe59dffee4ea8a83c0a2ad06cb0cc4f2529d82a2369e06bc637bbbd1
 retrieved_from: "https://nastystereo.com/security/ruby-pack.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:36:27+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:10+00:00"
 slug: nastystereo-com-ruby-array-pack-bleed-nastystereo-com
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Ruby Array Pack Bleed / nastystereo.com
 
-**Ruby Array Pack Bleed / nastystereo.com** - Author not stated, nastystereo.com.
+**Ruby Array Pack Bleed / nastystereo.com** - Luke Jahnke, nastystereo.com.
 
 - Published: date not stated
 - Original: <https://nastystereo.com/security/ruby-pack.html>
-- Preserved from: https://nastystereo.com/security/ruby-pack.html (live) on 2026-08-09
+- Preserved from: https://nastystereo.com/security/ruby-pack.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

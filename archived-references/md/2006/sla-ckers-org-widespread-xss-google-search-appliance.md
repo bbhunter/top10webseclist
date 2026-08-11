@@ -5,22 +5,24 @@ resource: "http://sla.ckers.org/forum/read.php?3,3109"
 tags: [article, webseclist-reference, EN, sla-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:24+00:00"
+  at: "2026-08-11T17:45:35+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://sla.ckers.org/forum/read.php?3,3109"
     title: Widespread XSS for Google Search Appliance
+    author: maluc
   - id: capture
     resource: "https://web.archive.org/web/20110712120049/http://sla.ckers.org/forum/read.php?3,3109"
 also_at: []
-authors: []
+authors:
+  - maluc
 canonical_url: ""
 cited_by:
   - "2006.md:35"
 commit: ""
-content_sha256: 9194c6edc21b903033261bf2bbde274579acf5c1699084eca315b72c27993aa4
+content_sha256: 1abe802e1f4a4ed8a365b6f925e5d447799dcd6420dfa4194c571dc5fc3fe61d
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 4aaf91ef9678815034c098cccaeb2a6f3e6c1bcb0f828e3bdf81ee8de6b5b64a
 retrieved_from: "http://sla.ckers.org/forum/read.php?3,3109"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:24+00:00"
+retrieved_utc: "2026-08-11T17:45:35+00:00"
 slug: sla-ckers-org-widespread-xss-google-search-appliance
 snapshot: 20110712120049
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Widespread XSS for Google Search Appliance
 
-**Widespread XSS for Google Search Appliance** - Author not stated, sla.ckers.org.
+**Widespread XSS for Google Search Appliance** - maluc, sla.ckers.org.
 
 - Published: date not stated
 - Original: <http://sla.ckers.org/forum/read.php?3,3109>
-- Preserved from: http://sla.ckers.org/forum/read.php?3,3109 (stored) on 2026-08-09
+- Preserved from: http://sla.ckers.org/forum/read.php?3,3109 (stored) on 2026-08-11
 - Capture timestamp: 20110712120049
 - Licence: unknown
 
@@ -115,8 +117,6 @@ So i fell asleep last night and didn't finish the encoding script as i assumed i
 
  -maluc
 
- 
-
 **Re: Widespread XSS for Google Search Appliance**
 
 Posted by: ** [ WhiteAcid ](http://sla.ckers.org/forum/profile.php?3,8) **
@@ -136,8 +136,6 @@ One problem though: any site with embedded script like for(i=0;i<10;i++) gets ch
  Don't forget our IRC: irc://irc.irchighway.net/#slackers
  -[WhiteAcid](http://www.whiteacid.org) - your friendly, very lazy, web developer
 
- 
-
 **Re: Widespread XSS for Google Search Appliance**
 
 Posted by: ** [ maluc ](http://sla.ckers.org/forum/profile.php?3,50) **
@@ -151,8 +149,6 @@ because of how UTF7 encoding works.. any special characters - i.e. not
  So ++ gets interpretted as an invalid encoding and erased. An annoying side-effect if that infinite for() loop comes before the injection and thus can't be overwritten fast enough :/ .. luckily, most seem to be afterwards so they can be fixed during exploit
 
  -maluc
-
- 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -180,8 +176,6 @@ Date: November 17, 2006 09:09PM
 
  Edited 2 time(s). Last edit at 11/17/2006 09:14PM by br0ken.
 
- 
-
 **Re: Widespread XSS for Google Search Appliance**
 
 Posted by: ** [ maluc ](http://sla.ckers.org/forum/profile.php?3,50) **
@@ -204,8 +198,6 @@ ya, it froze ie7 once or twice for me as well.. theres alot of ways to freeze a 
 
  -maluc
 
- 
-
 **Re: Widespread XSS for Google Search Appliance**
 
 Posted by: ** [ jungsonn ](http://sla.ckers.org/forum/profile.php?3,187) **
@@ -213,8 +205,6 @@ Posted by: ** [ jungsonn ](http://sla.ckers.org/forum/profile.php?3,187) **
 Date: November 18, 2006 07:41AM
 
 Though, excellent find! whish i had more time on my hands to look at it more closely.
-
- 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -225,8 +215,6 @@ Date: November 20, 2006 12:44PM
 Nevermind
 
  Edited 1 time(s). Last edit at 12/12/2006 08:14AM by ChristPuncher.
-
- 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -253,8 +241,6 @@ Over the last few hours alone 11 Google employees have read the article, Maluc:
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- 
-
 **Re: Widespread XSS for Google Search Appliance**
 
 Posted by: ** [ ChristPuncher ](http://sla.ckers.org/forum/profile.php?3,239) **
@@ -264,8 +250,6 @@ Date: November 20, 2006 03:24PM
 Fixed.
 
  Edited 1 time(s). Last edit at 12/12/2006 08:15AM by ChristPuncher.
-
- 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -284,8 +268,6 @@ wow, probably got put on some google memo.. i'm interested to see how quickly th
 
  Edited 1 time(s). Last edit at 11/29/2006 07:50AM by maluc.
 
- 
-
 **Re: Widespread XSS for Google Search Appliance**
 
 Posted by: ** [ rsnake ](http://sla.ckers.org/forum/profile.php?3,2) **
@@ -296,8 +278,6 @@ http://www.nist.org/news.php?extend.184
 
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
-
- 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -310,8 +290,6 @@ http://news.zdnet.com/2102-1009_22-6138744.html We weren't mentioned in the arti
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- 
-
 **Re: Widespread XSS for Google Search Appliance**
 
 Posted by: ** [ rsnake ](http://sla.ckers.org/forum/profile.php?3,2) **
@@ -323,8 +301,6 @@ http://news.com.com/2100-1002_3-6138744.html?part=rss&tag=2547-1_3-0-20&subj=new
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- 
-
 **Re: Widespread XSS for Google Search Appliance**
 
 Posted by: ** [ maluc ](http://sla.ckers.org/forum/profile.php?3,50) **
@@ -334,8 +310,6 @@ Date: November 28, 2006 05:10PM
 lol, i like how nist links to a random mortgage agent http://ha.ckers.com
 
  -maluc
-
- 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -347,8 +321,6 @@ Next time I'm in vegas I should call DARIN FERRARO, set up an appointment to see
 
  -id
 
- 
-
 **Re: Widespread XSS for Google Search Appliance**
 
 Posted by: ** [ maluc ](http://sla.ckers.org/forum/profile.php?3,50) **
@@ -359,8 +331,6 @@ lol, you should.. would be a probably inexpensive way to get it
  it's not like "ckers" is related in any way to his business or name
 
  -maluc
-
- 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -374,8 +344,6 @@ I did pm some with this but they haven't replied and its been enough time. perha
 
  ----------
  'Just because you got the bacon, lettuce, and tomato don't mean I'm gonna give you my toast.'
-
- 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -397,8 +365,6 @@ as i said in the first post.. google.com is not affected because they sanitize a
 
  -maluc
 
- 
-
 **Re: Widespread XSS for Google Search Appliance**
 
 Posted by: ** [ digi7al64 ](http://sla.ckers.org/forum/profile.php?3,26) **
@@ -418,8 +384,6 @@ hmmm,
 
  Edited 1 time(s). Last edit at 11/28/2006 11:37PM by digi7al64.
 
- 
-
 **Re: Widespread XSS for Google Search Appliance**
 
 Posted by: ** [ jungsonn ](http://sla.ckers.org/forum/profile.php?3,187) **
@@ -431,8 +395,6 @@ Maluc, is there a way to circumvent this in "normal" sites? i can image by just 
  Like: sending a form, and in the same time changing the UTF-8 > UTF-7 ?
 
  Edited 2 time(s). Last edit at 11/29/2006 07:08AM by jungsonn.
-
- 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -457,8 +419,6 @@ the meta tag..  <meta http-equiv="Content-Type" content="text/html; charset=utf-
 
  -maluc
 
- 
-
 **Re: Widespread XSS for Google Search Appliance**
 
 Posted by: ** [ jungsonn ](http://sla.ckers.org/forum/profile.php?3,187) **
@@ -466,8 +426,6 @@ Posted by: ** [ jungsonn ](http://sla.ckers.org/forum/profile.php?3,187) **
 Date: November 29, 2006 02:11PM
 
 Thanx maluc, that's much info to read.
-
- 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -477,8 +435,6 @@ Date: December 01, 2006 06:13PM
 
 http://www.us-cert.gov/current/#gleaplnvl
  http://digg.com/security/Homeland_Security_Vulnerability_in_Google_Search_Appliance_and_Google_Mini
-
- 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -491,8 +447,6 @@ Interesting... I guess CERT didn't feel like mentioning your name Maluc. Maybe y
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- 
-
 **Re: Widespread XSS for Google Search Appliance**
 
 Posted by: ** [ jungsonn ](http://sla.ckers.org/forum/profile.php?3,187) **
@@ -502,8 +456,6 @@ Date: December 04, 2006 02:19AM
 they are "aware"
 
  :)
-
- 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -519,8 +471,6 @@ lol.. well it seems like anything short of arbitrary code execution isn't enough
 
  -maluc
 
- 
-
 **Re: Widespread XSS for Google Search Appliance**
 
 Posted by: ** [ rsnake ](http://sla.ckers.org/forum/profile.php?3,2) **
@@ -534,8 +484,6 @@ John Herron sent this over: http://www.kb.cert.org/vuls/id/989144
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- 
-
 **Re: Widespread XSS for Google Search Appliance**
 
 Posted by: ** [ rsnake ](http://sla.ckers.org/forum/profile.php?3,2) **
@@ -546,8 +494,6 @@ And here: http://secunia.com/advisories/23239/
 
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
-
- 
 
 **Re: Widespread XSS for Google Search Appliance**
 
@@ -560,8 +506,6 @@ woot, my first entry into cert :3
  how nice
 
  -maluc
-
- 
 
 **Re: Widespread XSS for Google Search Appliance**
 

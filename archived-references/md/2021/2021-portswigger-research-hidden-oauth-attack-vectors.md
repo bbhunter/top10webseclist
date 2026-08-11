@@ -5,16 +5,18 @@ resource: "https://portswigger.net/research/hidden-oauth-attack-vectors"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:39+00:00"
+  at: "2026-08-11T17:44:51+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/hidden-oauth-attack-vectors"
     title: Hidden OAuth attack vectors
+    author: Michael Stepankin
     last_modified: 2021-03-24
 also_at: []
-authors: []
+authors:
+  - Michael Stepankin
 canonical_url: ""
 cited_by:
   - "2021.md:9"
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: a82f02572d883560e795bf87170b03a1fef644fd3f73d594badbbc34290f871d
 retrieved_from: "https://portswigger.net/research/hidden-oauth-attack-vectors"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:39+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:51+00:00"
 slug: 2021-portswigger-research-hidden-oauth-attack-vectors
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Hidden OAuth attack vectors
 
-**Hidden OAuth attack vectors** - Author not stated, PortSwigger Research.
+**Hidden OAuth attack vectors** - Michael Stepankin, PortSwigger Research.
 
 - Published: 2021-03-24
 - Original: <https://portswigger.net/research/hidden-oauth-attack-vectors>
-- Preserved from: https://portswigger.net/research/hidden-oauth-attack-vectors (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/hidden-oauth-attack-vectors (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

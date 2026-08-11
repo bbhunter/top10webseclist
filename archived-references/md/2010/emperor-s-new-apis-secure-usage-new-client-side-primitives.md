@@ -5,18 +5,25 @@ resource: "https://www.comp.nus.edu.sg/~prateeks/papers/w2sp10-primitives.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:08:34+00:00"
+  at: "2026-08-11T17:34:21+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.comp.nus.edu.sg/~prateeks/papers/w2sp10-primitives.pdf"
     title: "The Emperor's New APIs: On the (In)Secure Usage of New Client-side Primitives"
+    author: Steve Hanna, Eui Chul Richard Shin, Devdatta Akhawe, Arman Boehm, Prateek Saxena, Dawn Song
 also_at: []
-authors: []
+authors:
+  - Steve Hanna
+  - Eui Chul Richard Shin
+  - Devdatta Akhawe
+  - Arman Boehm
+  - Prateek Saxena
+  - Dawn Song
 canonical_url: ""
 cited_by:
-  - "2010.md:104"
+  - "2010.md:100"
 commit: ""
 content_sha256: edadfb64493024594ff781671213aa401e0733e923ff56ca12bd68e3fa76e218
 depth: full
@@ -30,8 +37,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 9f439475cd4e3e2a29962aa33f40153f25693d7b0da48183e41dc239f4770379
 retrieved_from: "https://www.comp.nus.edu.sg/~prateeks/papers/w2sp10-primitives.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:08:34+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:21+00:00"
 slug: emperor-s-new-apis-secure-usage-new-client-side-primitives
 snapshot: ""
 title_english: ""
@@ -41,11 +48,11 @@ translation_of: ""
 
 # The Emperor's New APIs: On the (In)Secure Usage of New Client-side Primitives
 
-**The Emperor's New APIs: On the (In)Secure Usage of New Client-side Primitives** - Author not stated, Publisher not stated.
+**The Emperor's New APIs: On the (In)Secure Usage of New Client-side Primitives** - Steve Hanna, Eui Chul Richard Shin, Devdatta Akhawe, Arman Boehm, Prateek Saxena, Dawn Song, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.comp.nus.edu.sg/~prateeks/papers/w2sp10-primitives.pdf>
-- Preserved from: https://www.comp.nus.edu.sg/~prateeks/papers/w2sp10-primitives.pdf (live) on 2026-08-09
+- Preserved from: https://www.comp.nus.edu.sg/~prateeks/papers/w2sp10-primitives.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

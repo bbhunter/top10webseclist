@@ -5,17 +5,20 @@ resource: "https://www.ias.cs.tu-bs.de/publications/parsing_differentials.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:29+00:00"
+  at: "2026-08-11T17:35:33+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ias.cs.tu-bs.de/publications/parsing_differentials.pdf"
     title: "Parse Me, Baby, One More Time: Bypassing HTML Sanitizer via Parsing Differentials"
+    author: David Klein, Martin Johns
   - id: capture
     resource: "https://web.archive.org/web/20240211121905/https://www.ias.cs.tu-bs.de/publications/parsing_differentials.pdf"
 also_at: []
-authors: []
+authors:
+  - David Klein
+  - Martin Johns
 canonical_url: ""
 cited_by:
   - "2024.md:113"
@@ -32,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: c30129a01ccf1fd656ca00e6420099ebf4d553f14d3516bdd9403be09a1136e2
 retrieved_from: "https://www.ias.cs.tu-bs.de/publications/parsing_differentials.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:29+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:33+00:00"
 slug: parse-me-baby-one-more-time-bypassing-html-sanitizer-parsing-differentials
 snapshot: 20240211121905
 title_english: ""
@@ -43,11 +46,11 @@ translation_of: ""
 
 # Parse Me, Baby, One More Time: Bypassing HTML Sanitizer via Parsing Differentials
 
-**Parse Me, Baby, One More Time: Bypassing HTML Sanitizer via Parsing Differentials** - Author not stated, Publisher not stated.
+**Parse Me, Baby, One More Time: Bypassing HTML Sanitizer via Parsing Differentials** - David Klein, Martin Johns, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ias.cs.tu-bs.de/publications/parsing_differentials.pdf>
-- Preserved from: https://www.ias.cs.tu-bs.de/publications/parsing_differentials.pdf (live) on 2026-08-09
+- Preserved from: https://www.ias.cs.tu-bs.de/publications/parsing_differentials.pdf (stored) on 2026-08-11
 - Capture timestamp: 20240211121905
 - Licence: unknown
 
@@ -717,6 +720,7 @@ Typo3 #
 : Affected,
 G#
 : Affected in relaxed conguration,
+#
 : Unaffected,
 H#
 : Affected but not in scope of threat modelThe rst problematic aspect is the correct parsing oftags with textual content. Every analyzed parser fails at thistask for at least some samples. Similarly, the handling ofnoscript, which not only requires a parsing transitionbut also relies on runtime information in the browser, is afrequent source of mistakes. How HTML parsers implementthis aspect differs, with some requiring users to pick a valuefor the scripting ag, e.g., as AngleSharp for .NET. Others,such as the Nokogiri HTML parser for Ruby, do not offera choice at all. The sensitive default for sanitization codewould be to default to scripting being active. Only the GoogleCaja-based sanitizers had this setting, however.If the parser is mainly used for tasks such as web scraping,defaulting to false seems sensible. It is, however, a potentialsecurity issue, as bypasses 6, 16 and 14 show. This quirkreceived considerable media attention in2019when MasatoKinugawa found a bypass in the Google Search Bar [45]based on the duality ofnoscript. Nevertheless, as ourresults show, this has not led to awareness for authors ofsanitizing libraries.Foreign content (PI 3) is similarly a common sourceof mistakes. The rules on when to switch namespaces arenot correctly implemented in any analyzed sanitizer. Allsanitizers we were able to bypass are also affected by atleast one serialization issue, as those bypasses usually relyon a parsing mistake combined with a lack of encoding tosucceed. Interestingly, HtmlRuleSanitizer allows the user tocongure if HTML entities in text nodes shall be encoded.Giving control to the user might seem desirable, but withoutadditional warning, enabling this option allows to triviallybypass the sanitizer.
@@ -1335,7 +1339,9 @@ EncloseJSComment
 P
 =
 /
+*
 P
+*
 /
 Enclose
 P
@@ -1350,6 +1356,7 @@ P
 =
 (
 /
+*
 P
 ;
 if
@@ -1357,6 +1364,7 @@ p =
 Prepend
 P
 /
+*
 ;
 if
 p =
@@ -1372,6 +1380,7 @@ place
 P
 =
 (
+*
 /
 P
 ;
@@ -1379,6 +1388,7 @@ if
 p =
 Prepend
 P
+*
 /
 ;
 if
@@ -1849,8 +1859,7 @@ B.4. Noteworthy Concerns
 --- page 20 ---
 
 YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
-½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
+ $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
 
 --- page 21 ---
 

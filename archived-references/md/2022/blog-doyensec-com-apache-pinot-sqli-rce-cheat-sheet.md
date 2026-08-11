@@ -5,20 +5,22 @@ resource: "https://blog.doyensec.com/2022/06/09/apache-pinot-sqli-rce.html"
 tags: [article, webseclist-reference, en-us, blog-doyensec-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:48+00:00"
+  at: "2026-08-11T17:39:46+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://blog.doyensec.com/2022/06/09/apache-pinot-sqli-rce.html"
     title: Apache Pinot SQLi and RCE Cheat Sheet
+    author: Ben Caller
 also_at: []
-authors: []
+authors:
+  - Ben Caller
 canonical_url: ""
 cited_by:
   - "2022.md:39"
 commit: ""
-content_sha256: 10de526fc77355bdfcb9708f87440967b310331649440c9a9593b8f9df2199e2
+content_sha256: c240551ee0984ae8adee674e9096097ea29c37cc601939d9898b7bed78bae335
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +32,8 @@ publisher: blog.doyensec.com
 publisher_english: ""
 raw_sha256: ee3eb2b42e8260deaabb0e347ccf15063ffc4114e25a400890072f1944bd02b2
 retrieved_from: "https://blog.doyensec.com/2022/06/09/apache-pinot-sqli-rce.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:48+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:46+00:00"
 slug: blog-doyensec-com-apache-pinot-sqli-rce-cheat-sheet
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Apache Pinot SQLi and RCE Cheat Sheet
 
-**Apache Pinot SQLi and RCE Cheat Sheet** - Author not stated, blog.doyensec.com.
+**Apache Pinot SQLi and RCE Cheat Sheet** - Ben Caller, blog.doyensec.com.
 
 - Published: date not stated
 - Original: <https://blog.doyensec.com/2022/06/09/apache-pinot-sqli-rce.html>
-- Preserved from: https://blog.doyensec.com/2022/06/09/apache-pinot-sqli-rce.html (live) on 2026-08-09
+- Preserved from: https://blog.doyensec.com/2022/06/09/apache-pinot-sqli-rce.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

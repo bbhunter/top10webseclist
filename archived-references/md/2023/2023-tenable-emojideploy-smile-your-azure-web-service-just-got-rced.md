@@ -5,18 +5,20 @@ resource: "https://ermetic.com/blog/azure/emojideploy-smile-your-azure-web-servi
 tags: [article, webseclist-reference, en, tenable]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:09:27+00:00"
+  at: "2026-08-11T17:35:07+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://ermetic.com/blog/azure/emojideploy-smile-your-azure-web-service-just-got-rced/"
     title: "EmojiDeploy: Smile! Your Azure web service just got RCE’d ._."
+    author: Liv Matan
     last_modified: 2023-01-19
   - id: canonical
     resource: "https://www.tenable.com/blog/Emoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced"
 also_at: []
-authors: []
+authors:
+  - Liv Matan
 canonical_url: "https://www.tenable.com/blog/Emoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced"
 cited_by:
   - "2023.md:65"
@@ -33,8 +35,8 @@ publisher: Tenable®
 publisher_english: ""
 raw_sha256: e0d1e6af562700ca2f1829c47f8ea4babb741eaec9854576efe5a33803aebacc
 retrieved_from: "https://www.tenable.com/blog/Emoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:09:27+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:07+00:00"
 slug: 2023-tenable-emojideploy-smile-your-azure-web-service-just-got-rced
 snapshot: ""
 title_english: ""
@@ -44,12 +46,12 @@ translation_of: ""
 
 # EmojiDeploy: Smile! Your Azure web service just got RCE’d ._.
 
-**EmojiDeploy: Smile! Your Azure web service just got RCE’d ._.** - Author not stated, Tenable®.
+**EmojiDeploy: Smile! Your Azure web service just got RCE’d ._.** - Liv Matan, Tenable®.
 
 - Published: 2023-01-19
 - Original: <https://ermetic.com/blog/azure/emojideploy-smile-your-azure-web-service-just-got-rced/>
 - Current location: <https://www.tenable.com/blog/Emoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced>
-- Preserved from: https://www.tenable.com/blog/Emoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced (live) on 2026-08-10
+- Preserved from: https://www.tenable.com/blog/Emoji-Deploy-Smile-Your-Azure-web-service-just-got-Rced (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

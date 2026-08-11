@@ -5,18 +5,20 @@ resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Grafnetter-Pass
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:47:22+00:00"
+  at: "2026-08-11T17:41:14+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Grafnetter-Pass-the-Passkey-WP.pdf"
     title: BHUS26 Grafnetter Pass the Passkey WP
+    author: Michael Grafnetter
 also_at: []
-authors: []
+authors:
+  - Michael Grafnetter
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:86"
+  - "2026-ai.md:64"
 commit: ""
 content_sha256: a9f95f034e2180cf2fec102e74a7dab72ab6a926464d26af484d722cee86ba4f
 depth: full
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: c8b28d049aace7e8588f1b1efaba73ed326323fc8547522e1a07338a4c9ff44f
 retrieved_from: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Grafnetter-Pass-the-Passkey-WP.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T18:47:22+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:14+00:00"
 slug: bhus26-grafnetter-pass-passkey-wp
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # BHUS26 Grafnetter Pass the Passkey WP
 
-**BHUS26 Grafnetter Pass the Passkey WP** - Author not stated, Publisher not stated.
+**BHUS26 Grafnetter Pass the Passkey WP** - Michael Grafnetter, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Grafnetter-Pass-the-Passkey-WP.pdf>
-- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Grafnetter-Pass-the-Passkey-WP.pdf (live) on 2026-08-08
+- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Grafnetter-Pass-the-Passkey-WP.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

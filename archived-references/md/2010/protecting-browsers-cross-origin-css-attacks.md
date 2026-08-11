@@ -5,18 +5,23 @@ resource: "https://www.linshunghuang.com/papers/css.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:31:10+00:00"
+  at: "2026-08-11T17:35:54+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.linshunghuang.com/papers/css.pdf"
     title: Protecting Browsers from Cross-Origin CSS Attacks
+    author: Lin-Shung Huang, Zack Weinberg, Chris Evans, Collin Jackson
 also_at: []
-authors: []
+authors:
+  - Lin-Shung Huang
+  - Zack Weinberg
+  - Chris Evans
+  - Collin Jackson
 canonical_url: ""
 cited_by:
-  - "2010.md:93"
+  - "2010.md:94"
 commit: ""
 content_sha256: ef97de736e8b38fb97033a2e9c6bd830277ef578c548d860b53f744e1e438c59
 depth: full
@@ -30,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: e10715f53aae376bfd62faaa0cdf7e19d82d34aca8deb153184a205b03ffc65c
 retrieved_from: "https://www.linshunghuang.com/papers/css.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:31:10+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:54+00:00"
 slug: protecting-browsers-cross-origin-css-attacks
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # Protecting Browsers from Cross-Origin CSS Attacks
 
-**Protecting Browsers from Cross-Origin CSS Attacks** - Author not stated, Publisher not stated.
+**Protecting Browsers from Cross-Origin CSS Attacks** - Lin-Shung Huang, Zack Weinberg, Chris Evans, Collin Jackson, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.linshunghuang.com/papers/css.pdf>
-- Preserved from: https://www.linshunghuang.com/papers/css.pdf (live) on 2026-08-10
+- Preserved from: https://www.linshunghuang.com/papers/css.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,20 +5,24 @@ resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/analyzing
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:34:08+00:00"
+  at: "2026-08-11T17:44:17+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/analyzing-unique-bid-auction-sites-fun-and-profit/"
     title: Analyzing Unique-Bid Auction Sites for Fun and Profit
+    author: Ory Samorodnitzky, Eran Tromer, Avishai Wool
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/11_5.pdf"
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/Presentation11_5.pdf"
-authors: []
+authors:
+  - Ory Samorodnitzky
+  - Eran Tromer
+  - Avishai Wool
 canonical_url: ""
 cited_by:
-  - "2013.md:64"
+  - "2013.md:65"
 commit: ""
 content_sha256: 82365c236e2244dbce078d7c591253a83dab89112d6bc188faf798fcb47609dc
 depth: full
@@ -32,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 1d71a0d1f6f3b61343d02b420c13f4b47e84ec55615c3edf34958d329663934d
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/11_5.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:34:08+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:17+00:00"
 slug: ndss-symposium-analyzing-unique-bid-auction-sites-fun-profit
 snapshot: ""
 title_english: ""
@@ -43,13 +47,13 @@ translation_of: ""
 
 # Analyzing Unique-Bid Auction Sites for Fun and Profit
 
-**Analyzing Unique-Bid Auction Sites for Fun and Profit** - Author not stated, Publisher not stated.
+**Analyzing Unique-Bid Auction Sites for Fun and Profit** - Ory Samorodnitzky, Eran Tromer, Avishai Wool, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/analyzing-unique-bid-auction-sites-fun-and-profit/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/11_5.pdf>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/Presentation11_5.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/11_5.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/11_5.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

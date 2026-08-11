@@ -5,18 +5,22 @@ resource: "https://gruss.cc/files/dedup.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:10:43+00:00"
+  at: "2026-08-11T17:35:27+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://gruss.cc/files/dedup.pdf"
     title: Practical Memory Deduplication Attacks in Sandboxed JavaScript
+    author: Daniel Gruss, David Bidner, Stefan Mangard
 also_at: []
-authors: []
+authors:
+  - Daniel Gruss
+  - David Bidner
+  - Stefan Mangard
 canonical_url: ""
 cited_by:
-  - "2015.md:68"
+  - "2015.md:69"
 commit: ""
 content_sha256: d4b0735a53c5a08c0a7578c0721d0a8b94a9b00eac3671c4b7b2dad3624fd982
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 8ed0f586a1d0b281f94f8fdc9850aaed7a67555ee9b28216bd57bf7566f0fd10
 retrieved_from: "https://gruss.cc/files/dedup.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:10:43+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:27+00:00"
 slug: practical-memory-deduplication-attacks-sandboxed-javascript
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # Practical Memory Deduplication Attacks in Sandboxed JavaScript
 
-**Practical Memory Deduplication Attacks in Sandboxed JavaScript** - Author not stated, Publisher not stated.
+**Practical Memory Deduplication Attacks in Sandboxed JavaScript** - Daniel Gruss, David Bidner, Stefan Mangard, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://gruss.cc/files/dedup.pdf>
-- Preserved from: https://gruss.cc/files/dedup.pdf (live) on 2026-08-10
+- Preserved from: https://gruss.cc/files/dedup.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

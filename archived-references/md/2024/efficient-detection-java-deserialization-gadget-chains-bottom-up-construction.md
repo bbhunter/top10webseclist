@@ -5,17 +5,25 @@ resource: "https://secsys.fudan.edu.cn/_upload/article/files/8a/3c/d8d0e5a142dbb
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:21+00:00"
+  at: "2026-08-11T17:37:02+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://secsys.fudan.edu.cn/_upload/article/files/8a/3c/d8d0e5a142dbbfaa39a58edc76b0/88ab6956-5447-4e4c-8ad8-6785c3fec057.pdf"
     title: Efficient Detection of Java Deserialization Gadget Chains via Bottom-up Gadget Search and Dataflow-aided Payload Construction
+    author: Bofei Chen, Lei Zhang, Xinyou Huang, Yinzhi Cao, Keke Lian, Yuan Zhang, Min Yang
   - id: capture
     resource: "https://web.archive.org/web/20240415082249/https://secsys.fudan.edu.cn/_upload/article/files/8a/3c/d8d0e5a142dbbfaa39a58edc76b0/88ab6956-5447-4e4c-8ad8-6785c3fec057.pdf"
 also_at: []
-authors: []
+authors:
+  - Bofei Chen
+  - Lei Zhang
+  - Xinyou Huang
+  - Yinzhi Cao
+  - Keke Lian
+  - Yuan Zhang
+  - Min Yang
 canonical_url: ""
 cited_by:
   - "2024.md:80"
@@ -33,7 +41,7 @@ publisher_english: ""
 raw_sha256: c25310fe00c6ab261795383a802903771c1f86dd3127bf5437f776f985ac1812
 retrieved_from: "https://secsys.fudan.edu.cn/_upload/article/files/8a/3c/d8d0e5a142dbbfaa39a58edc76b0/88ab6956-5447-4e4c-8ad8-6785c3fec057.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:21+00:00"
+retrieved_utc: "2026-08-11T17:37:02+00:00"
 slug: efficient-detection-java-deserialization-gadget-chains-bottom-up-construction
 snapshot: 20240415082249
 title_english: ""
@@ -43,11 +51,11 @@ translation_of: ""
 
 # Efficient Detection of Java Deserialization Gadget Chains via Bottom-up Gadget Search and Dataflow-aided Payload Construction
 
-**Efficient Detection of Java Deserialization Gadget Chains via Bottom-up Gadget Search and Dataflow-aided Payload Construction** - Author not stated, Publisher not stated.
+**Efficient Detection of Java Deserialization Gadget Chains via Bottom-up Gadget Search and Dataflow-aided Payload Construction** - Bofei Chen, Lei Zhang, Xinyou Huang, Yinzhi Cao, Keke Lian, Yuan Zhang, Min Yang, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://secsys.fudan.edu.cn/_upload/article/files/8a/3c/d8d0e5a142dbbfaa39a58edc76b0/88ab6956-5447-4e4c-8ad8-6785c3fec057.pdf>
-- Preserved from: https://secsys.fudan.edu.cn/_upload/article/files/8a/3c/d8d0e5a142dbbfaa39a58edc76b0/88ab6956-5447-4e4c-8ad8-6785c3fec057.pdf (stored) on 2026-08-09
+- Preserved from: https://secsys.fudan.edu.cn/_upload/article/files/8a/3c/d8d0e5a142dbbfaa39a58edc76b0/88ab6956-5447-4e4c-8ad8-6785c3fec057.pdf (stored) on 2026-08-11
 - Capture timestamp: 20240415082249
 - Licence: unknown
 

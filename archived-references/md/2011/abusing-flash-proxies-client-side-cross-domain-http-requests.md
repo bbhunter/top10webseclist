@@ -5,17 +5,20 @@ resource: "http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:08+00:00"
+  at: "2026-08-11T17:44:37+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf"
     title: Abusing Flash-Proxies for client-side cross-domain HTTP requests
+    author: Martin Johns, Sebastian Lekies
   - id: capture
     resource: "https://web.archive.org/web/20120617112536/http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf"
 also_at: []
-authors: []
+authors:
+  - Martin Johns
+  - Sebastian Lekies
 canonical_url: ""
 cited_by:
   - "2011.md:9"
@@ -33,7 +36,7 @@ publisher_english: ""
 raw_sha256: c76b9589f7263a36ff8978a70795ad1290a73daf2ce482493d8c3c74c3694ba0
 retrieved_from: "http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:08+00:00"
+retrieved_utc: "2026-08-11T17:44:37+00:00"
 slug: abusing-flash-proxies-client-side-cross-domain-http-requests
 snapshot: 20120617112536
 title_english: ""
@@ -43,11 +46,11 @@ translation_of: ""
 
 # Abusing Flash-Proxies for client-side cross-domain HTTP requests
 
-**Abusing Flash-Proxies for client-side cross-domain HTTP requests** - Author not stated, Publisher not stated.
+**Abusing Flash-Proxies for client-side cross-domain HTTP requests** - Martin Johns, Sebastian Lekies, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf>
-- Preserved from: http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf (stored) on 2026-08-09
+- Preserved from: http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf (stored) on 2026-08-11
 - Capture timestamp: 20120617112536
 - Licence: unknown
 
@@ -99,8 +102,7 @@ In this paper we examine how the dierence in handling the same-origin
 policy in respect to cross-domain JavaScript and cross-domain Flash lead to
 unexpected consequences. For this purpose, we explore the eld of client-side
 Flash proxies for cross-domain requests. After covering the technological basis
-of client-side HTTP requests (Sec. 2), we explore a little known security 
-aw
+of client-side HTTP requests (Sec. 2), we explore a little known security aw
 that can occur when cross-domain Flash applets interact with adversary con-
 trolled JavaScript (Sec. 3). To substantiate our observation, we examine ve?
 This work was in parts supported by the EU Project WebSand (FP7-256964),
@@ -111,8 +113,7 @@ http://www.websand.eu.
 2 Martin Johns, Sebastian Lekies
 publicly available client-side Flash proxies (see Sec. 3.3). Furthermore, we show
 how to overcome the identied issues. First, we solve the specic problem of
-providing a secure and 
-exible client-side Flash proxy (Sec. 4). Secondly, we
+providing a secure and exible client-side Flash proxy (Sec. 4). Secondly, we
 tackle the general problem of implementing Flash-based functionality that reli-
 ably makes origin-based security decisions even when interacting with untrust-
 worthy JavaScript (Sec. 5). After discussing related work (Sec. 6) we nish with
@@ -249,8 +250,8 @@ proxy library.
 --- page 6 ---
 
 þý8ZJ²ÄCR6N%GkQÎú;XC&s=gR>*'‚',TzM.TG8
-5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³
-M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+·
 
 --- page 7 ---
 
@@ -261,8 +262,7 @@ libraries which provide the described functionality. See Table 3.3 for a brief
 overview.
 2.5 Security implications of client-side cross-domain HTTP requests
 Before we discuss the potential security problems introduced by client-side Flash
-proxies in Section 3, we brie
-y revisit the general potential security problem that
+proxies in Section 3, we briey revisit the general potential security problem that
 can arise in connection with client-side cross-domain HTTP requests.
 Attacker model:
 From now on, we consider the following scenario: The victim
@@ -299,8 +299,8 @@ tion context.
 
 --- page 9 ---
 
-Dý†ýMaÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³
-M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+Dý†ýMaÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+·
 
 --- page 10 ---
 
@@ -506,15 +506,14 @@ identify readymade client-side Flash proxies. We were able to identify ve dif-
 --- page 14 ---
 
 þý8ZJ²ÄCR6N%GkQÎú;XC&s=gR>*'‚',TzM.TG8
-5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³
-M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+·
 
 --- page 15 ---
 
 A closer look at client-side Flash proxies for cross-domain requests 9
 Fig. 4: Attack variant 1 - Transitivity of trust
-ferent publicly available implementations: 
-XHR [30],SWFHttpRequest [34],
+ferent publicly available implementations: XHR [30],SWFHttpRequest [34],
 FlashXMLHttpRequest [8], CrossXHR [24], and F4A
 3
 .
@@ -546,8 +545,7 @@ allowDomain(*)
 directive,
 which is needed to expose the SWF's interface to JavaScript originating from
 dierent domains. Two of the three vulnerable proxies (CrossXHR and F4A)
-were exploitable on the rst try. The case of 
-XHR was more interesting, as
+were exploitable on the rst try. The case of XHR was more interesting, as
 the author of the proxy apparently was aware of the security problem and took
 measures to mitigate it (he even wrote a blog post about the problem [29]).3
 The development of F4A seems to have ended. We included it in this survey, as it is
@@ -561,23 +559,19 @@ nike.com
 --- page 17 ---
 
 þý8ZJ²ÄCR6N%GkQÎú;XC&s=gR>*'‚',TzM.TG8
-5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³
-M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+·
 
 --- page 18 ---
 
 10 Martin Johns, Sebastian Lekies
 Fig. 5: Attack variant 2 - Return to sender
-Case study - the 
-XHR proxy:
-
-XHR is the only implementation that attempts
+Case study - the XHR proxy:
+XHR is the only implementation that attempts
 to defend directly against the in Section 3.2 identied attack vectors. Before
-initiating a request, a 
-XHR proxy tries to compare its own origin with the
+initiating a request, a XHR proxy tries to compare its own origin with the
 origin of the interfacing JavaScript. If these two origin values do not match,
-
-XHR checks the
+XHR checks the
 crossdomain.xml
 le of the request's target domain manually,
 if the origin of the JavaScript is whitelisted in the policy. This is even done, when
@@ -586,14 +580,12 @@ The problem that arises from this solution is how the origin-value of the in-
 terfacing JavaScript is obtained: As Flash does not provide such a mechanism na-
 tively, the only possibility to accomplish this task is to use the
 ExternalInterface
-API [3] to call a JavaScript function. In the examined case, 
-XHR obtains the
+API [3] to call a JavaScript function. In the examined case, XHR obtains the
 value through calling the function
 window.location.href.toString()
 .
 However, the JavaScript of the enclosing Web page is completely controlled
-by the adversary and, thus, all public JavaScript functions can be overwrittenNameYearSourceJS-libsVulnerable
-XHR [30]2010No1,2,3,4Yes, despite of countermeasuresSWFHttpRequest [34]2007Yes1,2,3NoFlashXMLHttpRequest [8]2007No3NoCrossXHR [24]2010Yes1,2YesF4AunknownNo-YesLegend:
+by the adversary and, thus, all public JavaScript functions can be overwrittenNameYearSourceJS-libsVulnerableXHR [30]2010No1,2,3,4Yes, despite of countermeasuresSWFHttpRequest [34]2007Yes1,2,3NoFlashXMLHttpRequest [8]2007No3NoCrossXHR [24]2010Yes1,2YesF4AunknownNo-YesLegend:
 Year
 : Year of last recorded activity
 Source
@@ -608,15 +600,14 @@ JS-libs
 --- page 20 ---
 
 þý8ZJ²ÄCR6N%GkQÎú;XC&s=gR>*'‚',TzM.TG8
-5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³
-M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+·
 
 --- page 21 ---
 
 A closer look at client-side Flash proxies for cross-domain requests 11
 with function wrappers [22]. With the method presented in Listing 2, an attacker
-can fake the location of his page and make 
-XHR believe that the enclosing origin
+can fake the location of his page and make XHR believe that the enclosing origin
 matches its own.
 As we will discuss further in Section 5.1, with the
 ExternalInterface
@@ -626,8 +617,7 @@ functions by name and not by reference. Therefore, it is not possible to call a
 function which cannot be overwritten by an adversary. In Section 5.2 we describe
 our approach towards ensuring that the received location value has not been
 tampered with.Listing 2
-Subverting 
-XHR's protective measuresself = new function (){}
+Subverting XHR's protective measuresself = new function (){}
 self. location = new function (){};
 self. location .href = new function () {
 this. toString = function (){
@@ -642,8 +632,7 @@ allowing internal policy in respect to interaction with external JavaScript: All
 three vulnerable applets used the directive
 allowDomain("*")
 within their code
-(see Sec. 3.1). Even the author of the 
-XHR proxy decided to do so, although
+(see Sec. 3.1). Even the author of the XHR proxy decided to do so, although
 he was aware of the resulting potential security problems.
 The reason for this design decision is inherent in the purpose of the applets:
 They are built to function as pre-built, drop-in solutions which can be used
@@ -673,11 +662,9 @@ Web application. For this, we propose two approaches: First, we discuss how to
 apply the general method of CSRF protection to securely include a prefabricated,
 potentially vulnerable Flash proxy (see Sec. 4.1). Secondly, we show how to build
 a custom proxy that is safe against the attack without giving up to much of the
-
-exibility of the existing solutions (see Sec. 4.2).
+exibility of the existing solutions (see Sec. 4.2).
 4.1 Secure inclusion via CSRF protection
-Some of the already existing Flash proxies (e.g. 
-XHR) are matured software
+Some of the already existing Flash proxies (e.g. XHR) are matured software
 and provide well tested support code, such as plug-ins for popular JavaScript
 frameworks. For this reason it might be desirable to use them regardless of the
 identied security issues.
@@ -737,8 +724,7 @@ time he wants to update his access grants.
 Therefore, we propose an alternative solution which uses a separate cong-
 uration le and dynamically grants access to all domains specied in this le.
 With the help of this le a user can change his conguration at any time without
-the need of recompiling the SWF. As this solution provides the needed 
-exibil-
+the need of recompiling the SWF. As this solution provides the needed exibil-
 ity and does only grant cross-domain access to trusted domains and not to the
 general public it is well suited for general purpose libraries.
 Implementation:
@@ -823,8 +809,7 @@ as the function wrapper trick (see Sec. 3.3 and Listing 2) while continuing to
 provide its designated functionality in legitimate use cases.
 Limitation:
 The proposed countermeasure might cause problems with Web ap-
-plications that utilize fragment identiers to re
-ect their current application-
+plications that utilize fragment identiers to reect their current application-
 state in the URL. Web applications that rely heavily on AJAX-driven inter-
 action with their server-side, traditionally expose problems when it comes to
 creating hyperlinks which directly lead to specic parts of the application. For
@@ -845,8 +830,8 @@ fragment identier is straight forward.
 --- page 27 ---
 
 þý8ZJ²ÄCR6N%GkQÎú;XC&s=gR>*'‚',TzM.TG8
-5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³
-M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+·
 
 --- page 28 ---
 
@@ -863,6 +848,7 @@ the applied security community [28, 10]. To assess the potential attack surface,
 Grossman examined in 2008 the policy les of the Alexa 500 and Fortune 500
 websites [12]. He found that at this point in time 7% of the examined websites
 had a policy that granted every domain full access via the
+*
 -wildcard. Public doc-
 umentation of real issues were given by, e.g., Rios [25] who compromised Google's
 mail service GMail by attaching a forged
@@ -875,8 +861,7 @@ a swf-le to a host which was whitelisted in YouTube's policy. In 2010, the tool
 MalaRIA (short for 'Malicious Rich Internet Application') [23] was released. The
 tool provides a graphical user interface to interactively conduct session hijacking
 attacks, as outlined in Section 2.5.
-Further 
-aws of Flash's client-side networking:
+Further aws of Flash's client-side networking:
 Besides cross-domain aspects,
 Flash's handling of client-side HTTP requests exposed further security short-
 comings (which have been resolved in the meantime): For one, Flash allowed in
@@ -923,11 +908,9 @@ in components for legacy browsers to securely support the transitional hybrid
 model.
 8 Acknowledgments
 We would like to thank Kyle Simpson for feedback and valuable insight in the
-development of 
-XHR.
+development of XHR.
 References
-1. Adobe Coperation. Adobe 
-ash. [online]
+1. Adobe Coperation. Adobe ash. [online]
 http://www.adobe.com/products/
 flash/flashpro/
 .
@@ -935,15 +918,13 @@ flash/flashpro/
 http://www.adobe.
 com/devnet/articles/crossdomain_policy_file_spec.html
 , January 2010.
-3. Adobe Systems Incorporated. 
-ash.external ExternalInterface . Action-
+3. Adobe Systems Incorporated. ash.external ExternalInterface . Action-
 Script 3.0 Reference for the Adobe Flash Platform,
 http://help.adobe.
 com/en_US/FlashPlatform/reference/actionscript/3/flash/external/
 ExternalInterface.html
 , accessed in January 2011, December 2010.
-4. Adobe Systems Incorporated. 
-ash.system Security. ActionScript 3.0 Reference
+4. Adobe Systems Incorporated. ash.system Security. ActionScript 3.0 Reference
 for the Adobe Flash Platform,
 http://help.adobe.com/en_US/FlashPlatform/
 reference/actionscript/3/flash/system/Security.html
@@ -1055,8 +1036,7 @@ http:
 http://www.mozilla.org/
 projects/security/components/same-origin.html
 (01/10/06), August 2001.
-27. Chriss Shi
-ett. Cross-Domain Ajax Insecurity. [online],
+27. Chriss Shiett. Cross-Domain Ajax Insecurity. [online],
 http://shiflett.org/
 blog/2006/aug/cross-domain-ajax-insecurity
 , Accessed in January 2011, Au-
@@ -1065,22 +1045,19 @@ gust 2006.
 --- page 31 ---
 
 20 Martin Johns, Sebastian Lekies
-28. Chriss Shi
-ett. The Dangers of Cross-Domain Ajax
+28. Chriss Shiett. The Dangers of Cross-Domain Ajax
 with Flash. [online],
 http://shiflett.org/blog/2006/sep/
 the-dangers-of-cross-domain-ajax-with-flash
 , Accessed in January 2011,
 September 2006.
 29. Kyle Simpson. (new) Adobe Flash Player security hole found,
-
-XHRs response. [online],
+XHRs response. [online],
 http://www.flensed.com/fresh/2008/08/
 adobe-flash-player-security-hole/
 , accessed in January 2011, August
 2008.
-30. Kyle Simpson. 
-XHR - Cross-Domain Ajax with Flash. [software],
+30. Kyle Simpson. XHR - Cross-Domain Ajax with Flash. [software],
 http://flxhr.
 flensed.com/
 , accessed in January 2011, 2010.

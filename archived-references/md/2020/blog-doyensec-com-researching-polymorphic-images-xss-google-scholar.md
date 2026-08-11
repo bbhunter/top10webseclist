@@ -5,15 +5,17 @@ resource: "https://blog.doyensec.com/2020/04/30/polymorphic-images-for-xss.html"
 tags: [article, webseclist-reference, en-us, blog-doyensec-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:48+00:00"
+  at: "2026-08-11T17:39:48+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://blog.doyensec.com/2020/04/30/polymorphic-images-for-xss.html"
     title: Researching Polymorphic Images for XSS on Google Scholar
+    author: Lorenzo Stella
 also_at: []
-authors: []
+authors:
+  - Lorenzo Stella
 canonical_url: ""
 cited_by:
   - "2020.md:35"
@@ -30,8 +32,8 @@ publisher: blog.doyensec.com
 publisher_english: ""
 raw_sha256: a8d5b9435f196d9e988f42575de6c405188909ec40aa0d3ecbd5fc60ff519bd1
 retrieved_from: "https://blog.doyensec.com/2020/04/30/polymorphic-images-for-xss.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:48+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:48+00:00"
 slug: blog-doyensec-com-researching-polymorphic-images-xss-google-scholar
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Researching Polymorphic Images for XSS on Google Scholar
 
-**Researching Polymorphic Images for XSS on Google Scholar** - Author not stated, blog.doyensec.com.
+**Researching Polymorphic Images for XSS on Google Scholar** - Lorenzo Stella, blog.doyensec.com.
 
 - Published: date not stated
 - Original: <https://blog.doyensec.com/2020/04/30/polymorphic-images-for-xss.html>
-- Preserved from: https://blog.doyensec.com/2020/04/30/polymorphic-images-for-xss.html (live) on 2026-08-09
+- Preserved from: https://blog.doyensec.com/2020/04/30/polymorphic-images-for-xss.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

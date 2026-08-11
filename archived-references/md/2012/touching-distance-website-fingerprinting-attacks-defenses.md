@@ -5,18 +5,23 @@ resource: "https://www.freehaven.net/anonbib/cache/ccs2012-fingerprinting.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:10:13+00:00"
+  at: "2026-08-11T17:35:21+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.freehaven.net/anonbib/cache/ccs2012-fingerprinting.pdf"
     title: "Touching from a Distance: Website Fingerprinting Attacks and Defenses"
+    author: Xiang Cai, Xin Cheng Zhang, Brijesh Joshi, Rob Johnson
 also_at: []
-authors: []
+authors:
+  - Xiang Cai
+  - Xin Cheng Zhang
+  - Brijesh Joshi
+  - Rob Johnson
 canonical_url: ""
 cited_by:
-  - "2012.md:83"
+  - "2012.md:84"
 commit: ""
 content_sha256: 42282264306e59f69c0a043f84f09b0fd80f40d247537334e270efa87e79895e
 depth: full
@@ -30,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 737432f7d90b986422f562de208ba22a34fccbfb41b3cb14e2ea2b2a9397c3f6
 retrieved_from: "https://www.freehaven.net/anonbib/cache/ccs2012-fingerprinting.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:10:13+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:21+00:00"
 slug: touching-distance-website-fingerprinting-attacks-defenses
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # Touching from a Distance: Website Fingerprinting Attacks and Defenses
 
-**Touching from a Distance: Website Fingerprinting Attacks and Defenses** - Author not stated, Publisher not stated.
+**Touching from a Distance: Website Fingerprinting Attacks and Defenses** - Xiang Cai, Xin Cheng Zhang, Brijesh Joshi, Rob Johnson, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.freehaven.net/anonbib/cache/ccs2012-fingerprinting.pdf>
-- Preserved from: https://www.freehaven.net/anonbib/cache/ccs2012-fingerprinting.pdf (live) on 2026-08-10
+- Preserved from: https://www.freehaven.net/anonbib/cache/ccs2012-fingerprinting.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

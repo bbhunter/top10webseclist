@@ -5,18 +5,22 @@ resource: "https://www.cs.uic.edu/~polakis/classes/CS568/fall-2020/cookiehijacke
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:07:53+00:00"
+  at: "2026-08-11T17:34:28+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.cs.uic.edu/~polakis/classes/CS568/fall-2020/cookiehijacker-ccs20.pdf"
     title: "The Cookie Hunter: Automated Black-box Auditing for Web Authentication and Authorization Flaws"
+    author: Kostas Drakonakis, Sotiris Ioannidis, Jason Polakis
 also_at: []
-authors: []
+authors:
+  - Kostas Drakonakis
+  - Sotiris Ioannidis
+  - Jason Polakis
 canonical_url: ""
 cited_by:
-  - "2020.md:77"
+  - "2020.md:78"
 commit: ""
 content_sha256: ff130c0f69ea6253bdaa251ee386dab8965f2c5b75f805e3546547628d9c28df
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 55e01813b49a1b7ef87f198cca4870011a65bdf50724b415cba9e4834815efc7
 retrieved_from: "https://www.cs.uic.edu/~polakis/classes/CS568/fall-2020/cookiehijacker-ccs20.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:07:53+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:28+00:00"
 slug: cookie-hunter-automated-black-box-auditing-web-authentication-flaws
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # The Cookie Hunter: Automated Black-box Auditing for Web Authentication and Authorization Flaws
 
-**The Cookie Hunter: Automated Black-box Auditing for Web Authentication and Authorization Flaws** - Author not stated, Publisher not stated.
+**The Cookie Hunter: Automated Black-box Auditing for Web Authentication and Authorization Flaws** - Kostas Drakonakis, Sotiris Ioannidis, Jason Polakis, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.cs.uic.edu/~polakis/classes/CS568/fall-2020/cookiehijacker-ccs20.pdf>
-- Preserved from: https://www.cs.uic.edu/~polakis/classes/CS568/fall-2020/cookiehijacker-ccs20.pdf (live) on 2026-08-10
+- Preserved from: https://www.cs.uic.edu/~polakis/classes/CS568/fall-2020/cookiehijacker-ccs20.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

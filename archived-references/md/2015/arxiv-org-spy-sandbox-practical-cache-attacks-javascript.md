@@ -5,18 +5,23 @@ resource: "https://arxiv.org/abs/1502.07373"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:02:24+00:00"
+  at: "2026-08-11T17:34:05+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://arxiv.org/abs/1502.07373"
     title: The Spy in the Sandbox -- Practical Cache Attacks in Javascript
+    author: Yossef Oren, Vasileios P. Kemerlis, Simha Sethumadhavan, Angelos D. Keromytis
 also_at: []
-authors: []
+authors:
+  - Yossef Oren
+  - Vasileios P. Kemerlis
+  - Simha Sethumadhavan
+  - Angelos D. Keromytis
 canonical_url: ""
 cited_by:
-  - "2015.md:55"
+  - "2015.md:56"
 commit: ""
 content_sha256: a66c93dad1b400e2483516b044af8c614997580b2471506eb40624d865424026
 depth: full
@@ -30,8 +35,8 @@ publisher: arXiv.org
 publisher_english: ""
 raw_sha256: ecd3d96de8bf6e04653f2ef5bef9e04dbe6a3a31b0a181864391c05c35183990
 retrieved_from: "https://arxiv.org/abs/1502.07373"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:02:24+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:05+00:00"
 slug: arxiv-org-spy-sandbox-practical-cache-attacks-javascript
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # The Spy in the Sandbox -- Practical Cache Attacks in Javascript
 
-**The Spy in the Sandbox -- Practical Cache Attacks in Javascript** - Author not stated, arXiv.org.
+**The Spy in the Sandbox -- Practical Cache Attacks in Javascript** - Yossef Oren, Vasileios P. Kemerlis, Simha Sethumadhavan, Angelos D. Keromytis, arXiv.org.
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/1502.07373>
-- Preserved from: https://arxiv.org/abs/1502.07373 (live) on 2026-08-10
+- Preserved from: https://arxiv.org/abs/1502.07373 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,15 +5,19 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:35:17+00:00"
+  at: "2026-08-11T17:43:07+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf"
     title: Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations
+    author: Jan Drescher, David Klein, Martin Johns
 also_at: []
-authors: []
+authors:
+  - Jan Drescher
+  - David Klein
+  - Martin Johns
 canonical_url: ""
 cited_by:
   - "2026-ai.md:40"
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: dd3b0033dc24361354c29fc8c092245f77dff113f92764490b1033d290679e36
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:35:17+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:07+00:00"
 slug: your-sites-truly-isolated-automatically-detecting-logic-bugs-implementations
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations
 
-**Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations** - Author not stated, Publisher not stated.
+**Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations** - Jan Drescher, David Klein, Martin Johns, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,18 +5,20 @@ resource: "https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:52:38+00:00"
+  at: "2026-08-11T17:44:41+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf"
     title: http terminator
+    author: James Kettle
 also_at: []
-authors: []
+authors:
+  - James Kettle
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:54"
+  - "2026-ai.md:30"
 commit: ""
 content_sha256: baf01ab1311afcc66b8f7a1428df2945c21ca28aaa2a054718da95017d8289ed
 depth: full
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 116796b4829d32e6e9165c72d0d28db5797757d4da23dd8459fa3e3c1eb04256
 retrieved_from: "https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T18:52:38+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:41+00:00"
 slug: http-terminator
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # http terminator
 
-**http terminator** - Author not stated, Publisher not stated.
+**http terminator** - James Kettle, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf>
-- Preserved from: https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf (live) on 2026-08-08
+- Preserved from: https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

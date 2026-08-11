@@ -5,22 +5,24 @@ resource: "http://drwetter.eu/amazon/"
 tags: [article, webseclist-reference, en, drwetter-eu]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:09:54+00:00"
+  at: "2026-08-11T17:35:02+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://drwetter.eu/amazon/"
     title: "Research: Remarkable 2nd order XSS @ Amazon or How to hack Amazon with a book"
+    author: Dirk Wetter
   - id: canonical
     resource: "https://drwetter.eu/amazon/storedXSS-vuln.at.amazon.html"
 also_at: []
-authors: []
+authors:
+  - Dirk Wetter
 canonical_url: "https://drwetter.eu/amazon/storedXSS-vuln.at.amazon.html"
 cited_by:
   - "2010.md:68"
 commit: ""
-content_sha256: 40a83b26fe2f194cc343aeb7dc57c0687d3c8e57f958f0c7bf80d4ee016d4166
+content_sha256: 4310ddd4c091d60c7eddd546609fa54ff6cc3d4346795c34a9492515516a8cdf
 depth: full
 depth_reason: default
 kind: article
@@ -32,8 +34,8 @@ publisher: drwetter.eu
 publisher_english: ""
 raw_sha256: 191e325aeb293bd33d831afc87a6f0e69a96376207bbf24c5721b10d72a14be0
 retrieved_from: "https://drwetter.eu/amazon/storedXSS-vuln.at.amazon.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:09:54+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:02+00:00"
 slug: drwetter-eu-research-remarkable-2nd-order-xss-amazon-how-hack-amazon-book
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Research: Remarkable 2nd order XSS @ Amazon or How to hack Amazon with a book
 
-**Research: Remarkable 2nd order XSS @ Amazon or How to hack Amazon with a book** - Author not stated, drwetter.eu.
+**Research: Remarkable 2nd order XSS @ Amazon or How to hack Amazon with a book** - Dirk Wetter, drwetter.eu.
 
 - Published: date not stated
 - Original: <http://drwetter.eu/amazon/>
 - Current location: <https://drwetter.eu/amazon/storedXSS-vuln.at.amazon.html>
-- Preserved from: https://drwetter.eu/amazon/storedXSS-vuln.at.amazon.html (live) on 2026-08-09
+- Preserved from: https://drwetter.eu/amazon/storedXSS-vuln.at.amazon.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

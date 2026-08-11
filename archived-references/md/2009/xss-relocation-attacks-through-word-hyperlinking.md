@@ -5,19 +5,21 @@ resource: "http://www.secniche.org/papers/SNS_09_01_Evad_Xss_Filter_Msword.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T13:00:49+00:00"
+  at: "2026-08-11T17:45:23+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.secniche.org/papers/SNS_09_01_Evad_Xss_Filter_Msword.pdf"
     title: XSS Relocation Attacks through Word Hyperlinking
+    author: Aditya K Sood
   - id: canonical
     resource: "https://secniche.org/papers/sns_09_01_evad_xss_filter_msword.pdf"
   - id: capture
     resource: "https://web.archive.org/web/20091222202800/http://www.secniche.org/papers/SNS_09_01_Evad_Xss_Filter_Msword.pdf"
 also_at: []
-authors: []
+authors:
+  - Aditya K Sood
 canonical_url: "https://secniche.org/papers/sns_09_01_evad_xss_filter_msword.pdf"
 cited_by:
   - "2009.md:61"
@@ -35,7 +37,7 @@ publisher_english: ""
 raw_sha256: 3224c19c42480827ffcd5d08519bf3d651901dc4e69b38378e260f05f7ad01a7
 retrieved_from: "https://secniche.org/papers/sns_09_01_evad_xss_filter_msword.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T13:00:49+00:00"
+retrieved_utc: "2026-08-11T17:45:23+00:00"
 slug: xss-relocation-attacks-through-word-hyperlinking
 snapshot: 20091222202800
 title_english: ""
@@ -45,12 +47,12 @@ translation_of: ""
 
 # XSS Relocation Attacks through Word Hyperlinking
 
-**XSS Relocation Attacks through Word Hyperlinking** - Author not stated, Publisher not stated.
+**XSS Relocation Attacks through Word Hyperlinking** - Aditya K Sood, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://www.secniche.org/papers/SNS_09_01_Evad_Xss_Filter_Msword.pdf>
 - Current location: <https://secniche.org/papers/sns_09_01_evad_xss_filter_msword.pdf>
-- Preserved from: https://secniche.org/papers/sns_09_01_evad_xss_filter_msword.pdf (stored) on 2026-08-09
+- Preserved from: https://secniche.org/papers/sns_09_01_evad_xss_filter_msword.pdf (stored) on 2026-08-11
 - Capture timestamp: 20091222202800
 - Licence: unknown
 

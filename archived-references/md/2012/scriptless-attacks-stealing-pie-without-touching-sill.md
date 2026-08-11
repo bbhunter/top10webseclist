@@ -5,20 +5,26 @@ resource: "https://www.nds.rub.de/media/emma/veroeffentlichungen/2012/08/16/scri
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:09:10+00:00"
+  at: "2026-08-11T17:42:53+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.nds.rub.de/media/emma/veroeffentlichungen/2012/08/16/scriptlessAttacks-ccs2012.pdf"
     title: "Scriptless Attacks: Stealing the Pie Without Touching the Sill"
+    author: Mario Heiderich, Marcus Niemietz, Felix Schuster, Thorsten Holz, Jörg Schwenk
   - id: capture
     resource: "https://web.archive.org/web/20130903131722/https://www.nds.rub.de/media/emma/veroeffentlichungen/2012/08/16/scriptlessAttacks-ccs2012.pdf"
 also_at: []
-authors: []
+authors:
+  - Mario Heiderich
+  - Marcus Niemietz
+  - Felix Schuster
+  - Thorsten Holz
+  - Jörg Schwenk
 canonical_url: ""
 cited_by:
-  - "2012.md:86"
+  - "2012.md:81"
 commit: ""
 content_sha256: 153dcffc22d1ec496a8cbe43486fd63b694fe2e23894dadc498e679dd6b08ca5
 depth: full
@@ -33,7 +39,7 @@ publisher_english: ""
 raw_sha256: b8b9dfefae605ac40a1a562786f91b5f50c0c4a5e4695bdae07fd5275ef732a8
 retrieved_from: "https://www.nds.rub.de/media/emma/veroeffentlichungen/2012/08/16/scriptlessAttacks-ccs2012.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:09:10+00:00"
+retrieved_utc: "2026-08-11T17:42:53+00:00"
 slug: scriptless-attacks-stealing-pie-without-touching-sill
 snapshot: 20130903131722
 title_english: ""
@@ -43,11 +49,11 @@ translation_of: ""
 
 # Scriptless Attacks: Stealing the Pie Without Touching the Sill
 
-**Scriptless Attacks: Stealing the Pie Without Touching the Sill** - Author not stated, Publisher not stated.
+**Scriptless Attacks: Stealing the Pie Without Touching the Sill** - Mario Heiderich, Marcus Niemietz, Felix Schuster, Thorsten Holz, Jörg Schwenk, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.nds.rub.de/media/emma/veroeffentlichungen/2012/08/16/scriptlessAttacks-ccs2012.pdf>
-- Preserved from: https://www.nds.rub.de/media/emma/veroeffentlichungen/2012/08/16/scriptlessAttacks-ccs2012.pdf (stored) on 2026-08-09
+- Preserved from: https://www.nds.rub.de/media/emma/veroeffentlichungen/2012/08/16/scriptlessAttacks-ccs2012.pdf (stored) on 2026-08-11
 - Capture timestamp: 20130903131722
 - Licence: unknown
 

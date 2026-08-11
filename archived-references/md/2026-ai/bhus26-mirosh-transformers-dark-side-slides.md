@@ -5,15 +5,17 @@ resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transfor
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:27:32+00:00"
+  at: "2026-08-11T17:40:54+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-Slides.pdf"
     title: BHUS26 Mirosh Transformers Dark Side Slides
+    author: Oleksandr Mirosh
 also_at: []
-authors: []
+authors:
+  - Oleksandr Mirosh
 canonical_url: ""
 cited_by:
   - "2026-ai.md:49"
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 3fc686b68cc0805758a640155dce4db3da93b16ca16cbe8e0218df418eed5cf1
 retrieved_from: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-Slides.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:27:32+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:40:54+00:00"
 slug: bhus26-mirosh-transformers-dark-side-slides
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # BHUS26 Mirosh Transformers Dark Side Slides
 
-**BHUS26 Mirosh Transformers Dark Side Slides** - Author not stated, Publisher not stated.
+**BHUS26 Mirosh Transformers Dark Side Slides** - Oleksandr Mirosh, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-Slides.pdf>
-- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-Slides.pdf (live) on 2026-08-10
+- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-Slides.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

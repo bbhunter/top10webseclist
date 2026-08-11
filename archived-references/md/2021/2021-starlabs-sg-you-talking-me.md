@@ -5,18 +5,20 @@ resource: "https://starlabs.sg/blog/2021/04/you-talking-to-me/"
 tags: [article, webseclist-reference, starlabs-sg]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:25+00:00"
+  at: "2026-08-11T17:37:09+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://starlabs.sg/blog/2021/04/you-talking-to-me/"
     title: You Talking To Me?
+    author: Li JianTao
     last_modified: 2021-04-12
   - id: capture
     resource: "https://web.archive.org/web/20220610183920/https://starlabs.sg/blog/2021/04/you-talking-to-me/"
 also_at: []
-authors: []
+authors:
+  - Li JianTao
 canonical_url: ""
 cited_by:
   - "2021.md:44"
@@ -34,7 +36,7 @@ publisher_english: ""
 raw_sha256: 02092103086b0b6af7eb94639dff8d312ddea2966242433d98e57a76d4571c4d
 retrieved_from: "https://starlabs.sg/blog/2021/04/you-talking-to-me/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:25+00:00"
+retrieved_utc: "2026-08-11T17:37:09+00:00"
 slug: 2021-starlabs-sg-you-talking-me
 snapshot: 20220610183920
 title_english: ""
@@ -44,11 +46,11 @@ translation_of: ""
 
 # You Talking To Me?
 
-**You Talking To Me?** - Author not stated, starlabs.sg.
+**You Talking To Me?** - Li JianTao, starlabs.sg.
 
 - Published: 2021-04-12
 - Original: <https://starlabs.sg/blog/2021/04/you-talking-to-me/>
-- Preserved from: https://starlabs.sg/blog/2021/04/you-talking-to-me/ (stored) on 2026-08-09
+- Preserved from: https://starlabs.sg/blog/2021/04/you-talking-to-me/ (stored) on 2026-08-11
 - Capture timestamp: 20220610183920
 - Licence: unknown
 

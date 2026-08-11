@@ -5,18 +5,25 @@ resource: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a745.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:23+00:00"
+  at: "2026-08-11T17:42:01+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a745.pdf"
     title: "Counterfeit Object-oriented Programming: On the Difficulty of Preventing Code Reuse Attacks in C++ Applications"
+    author: Felix Schuster, Thomas Tendyck, Christopher Liebchen, Lucas Davi, Ahmad-Reza Sadeghi, Thorsten Holz
 also_at: []
-authors: []
+authors:
+  - Felix Schuster
+  - Thomas Tendyck
+  - Christopher Liebchen
+  - Lucas Davi
+  - Ahmad-Reza Sadeghi
+  - Thorsten Holz
 canonical_url: ""
 cited_by:
-  - "2015.md:64"
+  - "2015.md:65"
 commit: ""
 content_sha256: 4c2400cc4a64212101576c3bf602e2a510c789b33ea6083498fabe2880083c2e
 depth: full
@@ -30,8 +37,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: ccc4c9e312cc6cb7af726d0db9814ae7a52cea173375b5a9ed0122e0f652a3be
 retrieved_from: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a745.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:23+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:42:01+00:00"
 slug: counterfeit-object-oriented-programming-difficulty-preventing-code-applications
 snapshot: ""
 title_english: ""
@@ -41,11 +48,11 @@ translation_of: ""
 
 # Counterfeit Object-oriented Programming: On the Difficulty of Preventing Code Reuse Attacks in C++ Applications
 
-**Counterfeit Object-oriented Programming: On the Difficulty of Preventing Code Reuse Attacks in C++ Applications** - Author not stated, Publisher not stated.
+**Counterfeit Object-oriented Programming: On the Difficulty of Preventing Code Reuse Attacks in C++ Applications** - Felix Schuster, Thomas Tendyck, Christopher Liebchen, Lucas Davi, Ahmad-Reza Sadeghi, Thorsten Holz, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2015/papers-archived/6949a745.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2015/papers-archived/6949a745.pdf (live) on 2026-08-10
+- Preserved from: https://www.ieee-security.org/TC/SP2015/papers-archived/6949a745.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

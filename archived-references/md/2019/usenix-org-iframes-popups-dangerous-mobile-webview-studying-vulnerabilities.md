@@ -5,20 +5,26 @@ resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/yang-
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:04:52+00:00"
+  at: "2026-08-11T17:45:52+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/yang-guangliang"
     title: "Iframes/Popups Are Dangerous in Mobile WebView: Studying and Mitigating Differential Context Vulnerabilities"
+    author: GuangLiang Yang, Jeff Huang, Guofei Gu
+  - id: capture
+    resource: "https://web.archive.org/web/20191114161107/https://www.usenix.org/conference/usenixsecurity19/presentation/yang-guangliang"
 also_at: []
-authors: []
+authors:
+  - GuangLiang Yang
+  - Jeff Huang
+  - Guofei Gu
 canonical_url: ""
 cited_by:
-  - "2019.md:68"
+  - "2019.md:69"
 commit: ""
-content_sha256: 9b8fb03d6996405a797247b883348e1788f566b7fe863c3cd874000234761ddf
+content_sha256: 606efb9064121a786aaf59ab55162358964df762a0944418784324ec3d353bb2
 depth: full
 depth_reason: default
 kind: article
@@ -28,12 +34,12 @@ original_url: "https://www.usenix.org/conference/usenixsecurity19/presentation/y
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 52f78378503aa3425a4c9f370f665b05727becf7862265be1369f4c50a20dcaf
+raw_sha256: bdd6856fe25290273896da971592156011d0307accccfb2fd8bf315277b85c31
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity19/presentation/yang-guangliang"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:04:52+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:52+00:00"
 slug: usenix-org-iframes-popups-dangerous-mobile-webview-studying-vulnerabilities
-snapshot: ""
+snapshot: 20191114161107
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -41,11 +47,12 @@ translation_of: ""
 
 # Iframes/Popups Are Dangerous in Mobile WebView: Studying and Mitigating Differential Context Vulnerabilities
 
-**Iframes/Popups Are Dangerous in Mobile WebView: Studying and Mitigating Differential Context Vulnerabilities** - Author not stated, usenix.org.
+**Iframes/Popups Are Dangerous in Mobile WebView: Studying and Mitigating Differential Context Vulnerabilities** - GuangLiang Yang, Jeff Huang, Guofei Gu, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity19/presentation/yang-guangliang>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity19/presentation/yang-guangliang (live) on 2026-08-10
+- Preserved from: https://www.usenix.org/conference/usenixsecurity19/presentation/yang-guangliang (stored) on 2026-08-11
+- Capture timestamp: 20191114161107
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -60,11 +67,21 @@ page going offline. To read the original, follow the link above.
 
 # Iframes/Popups Are Dangerous in Mobile WebView: Studying and Mitigating Differential Context Vulnerabilities
 
+Authors:
+
 GuangLiang Yang, Jeff Huang, and Guofei Gu, *Texas A&M University*
+
+Abstract:
 
 In this paper, we present a novel class of Android WebView vulnerabilities (called Differential Context Vulnerabilities or DCVs) associated with web iframe/popup behaviors. To demonstrate the security implications of DCVs, we devise several novel concrete attacks. We show an untrusted web iframe/popup inside WebView becomes dangerous that it can launch these attacks to open holes on existing defense solutions, and obtain risky privileges and abilities, such as breaking web messaging integrity, stealthily accessing sensitive mobile functionalities, and performing phishing attacks.
 
 Then, we study and assess the security impacts of DCVs on real-world apps. For this purpose, we develop a novel technique, DCV-Hunter, that can automatically vet Android apps against DCVs. By applying DCV-Hunter on a large number of most popular apps, we find DCVs are prevalent. Many high-profile apps are verified to be impacted, such as Facebook, Instagram, Facebook Messenger, Google News, Skype, Uber, Yelp, and U.S. Bank. To mitigate DCVs, we design a multi-level solution that enhances the security of WebView. Our evaluation on real-world apps shows the mitigation solution is effective and scalable, with negligible overhead.
+
+##  [GuangLiang Yang, Texas A&M University](https://www.usenix.org/conference/usenixsecurity19/speaker-or-organizer/guangliang-yang-texas-am-university)
+
+##  [Jeff Huang, Texas A&M University](https://www.usenix.org/conference/usenixsecurity19/speaker-or-organizer/jeff-huang-texas-am-university)
+
+##  [Guofei Gu, Texas A&M University](https://www.usenix.org/conference/usenixsecurity19/speaker-or-organizer/guofei-gu-texas-am-university)
 
 ## Open Access Media
 
@@ -74,20 +91,20 @@ BibTeX
 
 @inproceedings {236356,
  author = {Guangliang Yang and Jeff Huang and Guofei Gu},
- title = {{Iframes/Popups} Are Dangerous in Mobile {WebView}: Studying and Mitigating Differential Context Vulnerabilities},
- booktitle = {28th USENIX Security Symposium (USENIX Security 19)},
+ title = {Iframes/Popups Are Dangerous in Mobile WebView: Studying and Mitigating Differential Context Vulnerabilities},
+ booktitle = {28th {USENIX} Security Symposium ({USENIX} Security 19)},
  year = {2019},
  isbn = {978-1-939133-06-9},
  address = {Santa Clara, CA},
  pages = {977--994},
  url = {https://www.usenix.org/conference/usenixsecurity19/presentation/yang-guangliang},
- publisher = {USENIX Association},
- month = aug
+ publisher = {{USENIX} Association},
+ month = aug,
  }
 
 [Download](https://www.usenix.org/biblio/export/bibtex/236356)
 
-![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Yang PDF](https://www.usenix.org/system/files/sec19-yang-guangliang_0.pdf)
+![PDF icon](https://www.usenix.org/modules/file/icons/application-pdf.png) [Yang PDF](https://www.usenix.org/system/files/sec19-yang-guangliang_0.pdf)
 
 [View the slides](https://www.usenix.org/sites/default/files/conference/protected-files/sec19_slides_yang-guangliang.pdf)
 

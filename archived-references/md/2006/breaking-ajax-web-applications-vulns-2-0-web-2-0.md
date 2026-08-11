@@ -5,20 +5,21 @@ resource: "https://www.blackhat.com/presentations/bh-jp-06/BH-JP-06-Stamos-Lacke
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:48:54+00:00"
+  at: "2026-08-11T17:38:50+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.blackhat.com/presentations/bh-jp-06/BH-JP-06-Stamos-Lackey.pdf"
     title: "Breaking AJAX Web Applications: Vulns 2.0 in Web 2.0"
-  - id: canonical
-    resource: "https://blackhat.com/presentations/bh-jp-06/BH-JP-06-Stamos-Lackey.pdf"
+    author: Alex Stamos, Zane Lackey
 also_at: []
-authors: []
-canonical_url: "https://blackhat.com/presentations/bh-jp-06/BH-JP-06-Stamos-Lackey.pdf"
+authors:
+  - Alex Stamos
+  - Zane Lackey
+canonical_url: ""
 cited_by:
-  - "2006.md:93"
+  - "2006.md:89"
 commit: ""
 content_sha256: 2e85f579af6ab106a565f221bc108aec9481c83d265dfb6412c7f3abbd11d4a2
 depth: full
@@ -31,9 +32,9 @@ published: ""
 publisher: ""
 publisher_english: ""
 raw_sha256: 97b5f5b8126f743ad6db70cecb9b08e7d4bd16c795d7fda112188f3e57edb398
-retrieved_from: "https://blackhat.com/presentations/bh-jp-06/BH-JP-06-Stamos-Lackey.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:48:54+00:00"
+retrieved_from: "https://www.blackhat.com/presentations/bh-jp-06/BH-JP-06-Stamos-Lackey.pdf"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:38:50+00:00"
 slug: breaking-ajax-web-applications-vulns-2-0-web-2-0
 snapshot: ""
 title_english: ""
@@ -43,12 +44,11 @@ translation_of: ""
 
 # Breaking AJAX Web Applications: Vulns 2.0 in Web 2.0
 
-**Breaking AJAX Web Applications: Vulns 2.0 in Web 2.0** - Author not stated, Publisher not stated.
+**Breaking AJAX Web Applications: Vulns 2.0 in Web 2.0** - Alex Stamos, Zane Lackey, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/presentations/bh-jp-06/BH-JP-06-Stamos-Lackey.pdf>
-- Current location: <https://blackhat.com/presentations/bh-jp-06/BH-JP-06-Stamos-Lackey.pdf>
-- Preserved from: https://blackhat.com/presentations/bh-jp-06/BH-JP-06-Stamos-Lackey.pdf (live) on 2026-08-08
+- Preserved from: https://www.blackhat.com/presentations/bh-jp-06/BH-JP-06-Stamos-Lackey.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

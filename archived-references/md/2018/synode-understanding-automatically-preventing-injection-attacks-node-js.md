@@ -5,18 +5,22 @@ resource: "https://www.software-lab.org/publications/ndss2018.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:00:27+00:00"
+  at: "2026-08-11T17:37:07+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.software-lab.org/publications/ndss2018.pdf"
     title: "SYNODE: Understanding and Automatically Preventing Injection Attacks on Node.js"
+    author: Cristian-Alexandru Staicu, Michael Pradel, Benjamin Livshits
 also_at: []
-authors: []
+authors:
+  - Cristian-Alexandru Staicu
+  - Michael Pradel
+  - Benjamin Livshits
 canonical_url: ""
 cited_by:
-  - "2018.md:75"
+  - "2018.md:76"
 commit: ""
 content_sha256: ec0adccbcb7904b01ad1d93daa3244dc60e83f17113399682ee626672f5a3bae
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 18c9d25601814e42ecc3a97fd15c0f8f5817184e46b06f58b50c98297fce92cd
 retrieved_from: "https://www.software-lab.org/publications/ndss2018.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:00:27+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:37:07+00:00"
 slug: synode-understanding-automatically-preventing-injection-attacks-node-js
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # SYNODE: Understanding and Automatically Preventing Injection Attacks on Node.js
 
-**SYNODE: Understanding and Automatically Preventing Injection Attacks on Node.js** - Author not stated, Publisher not stated.
+**SYNODE: Understanding and Automatically Preventing Injection Attacks on Node.js** - Cristian-Alexandru Staicu, Michael Pradel, Benjamin Livshits, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.software-lab.org/publications/ndss2018.pdf>
-- Preserved from: https://www.software-lab.org/publications/ndss2018.pdf (live) on 2026-08-10
+- Preserved from: https://www.software-lab.org/publications/ndss2018.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

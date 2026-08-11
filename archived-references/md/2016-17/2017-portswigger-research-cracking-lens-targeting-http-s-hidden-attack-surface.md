@@ -5,19 +5,21 @@ resource: "https://portswigger.net/blog/cracking-the-lens-targeting-https-hidden
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:16+00:00"
+  at: "2026-08-11T17:45:06+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/blog/cracking-the-lens-targeting-https-hidden-attack-surface"
     title: "Cracking the lens: targeting HTTP's hidden attack-surface"
+    author: James Kettle
     last_modified: 2017-07-27
   - id: canonical
     resource: "https://portswigger.net/research/cracking-the-lens-targeting-https-hidden-attack-surface"
 also_at:
   - "https://portswigger.net/knowledgebase/papers/crackingthelens-whitepaper.pdf"
-authors: []
+authors:
+  - James Kettle
 canonical_url: "https://portswigger.net/research/cracking-the-lens-targeting-https-hidden-attack-surface"
 cited_by:
   - "2016-17.md:22"
@@ -34,8 +36,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: c1be40bda33a85a9f151c5e376172818c245c2990614b6e22f77c54d4a8121c4
 retrieved_from: "https://portswigger.net/research/cracking-the-lens-targeting-https-hidden-attack-surface"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:16+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:06+00:00"
 slug: 2017-portswigger-research-cracking-lens-targeting-http-s-hidden-attack-surface
 snapshot: ""
 title_english: ""
@@ -45,13 +47,13 @@ translation_of: ""
 
 # Cracking the lens: targeting HTTP's hidden attack-surface
 
-**Cracking the lens: targeting HTTP's hidden attack-surface** - Author not stated, PortSwigger Research.
+**Cracking the lens: targeting HTTP's hidden attack-surface** - James Kettle, PortSwigger Research.
 
 - Published: 2017-07-27
 - Original: <https://portswigger.net/blog/cracking-the-lens-targeting-https-hidden-attack-surface>
 - Current location: <https://portswigger.net/research/cracking-the-lens-targeting-https-hidden-attack-surface>
 - Also published at: <https://portswigger.net/knowledgebase/papers/crackingthelens-whitepaper.pdf>
-- Preserved from: https://portswigger.net/research/cracking-the-lens-targeting-https-hidden-attack-surface (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/cracking-the-lens-targeting-https-hidden-attack-surface (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

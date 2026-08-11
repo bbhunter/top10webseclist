@@ -5,20 +5,20 @@ resource: "https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:15+00:00"
+  at: "2026-08-11T17:38:16+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf"
     title: "Timing Attacks Have Never Been So Practical: Advanced Cross-Site Search Attacks"
-  - id: canonical
-    resource: "https://blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf"
+    author: Nethanel Gelernter
 also_at: []
-authors: []
-canonical_url: "https://blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf"
+authors:
+  - Nethanel Gelernter
+canonical_url: ""
 cited_by:
-  - "2016-17.md:78"
+  - "2016-17.md:73"
 commit: ""
 content_sha256: 62a2923935e4b9e7ffe3cc5704fb2e2744bfdbd159c599c86c730281b0993a4b
 depth: full
@@ -31,9 +31,9 @@ published: ""
 publisher: ""
 publisher_english: ""
 raw_sha256: 0ae9a0ceb1d4e7005ab4f06635791447030cfca52069497d6ad59b82ac4cf015
-retrieved_from: "https://blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:15+00:00"
+retrieved_from: "https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:38:16+00:00"
 slug: timing-attacks-have-never-been-so-practical-advanced-cross-site-search-attacks
 snapshot: ""
 title_english: ""
@@ -43,12 +43,11 @@ translation_of: ""
 
 # Timing Attacks Have Never Been So Practical: Advanced Cross-Site Search Attacks
 
-**Timing Attacks Have Never Been So Practical: Advanced Cross-Site Search Attacks** - Author not stated, Publisher not stated.
+**Timing Attacks Have Never Been So Practical: Advanced Cross-Site Search Attacks** - Nethanel Gelernter, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf>
-- Current location: <https://blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf>
-- Preserved from: https://blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf (live) on 2026-08-08
+- Preserved from: https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

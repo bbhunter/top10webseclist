@@ -5,19 +5,21 @@ resource: "https://portswigger.net/research/concealing-payloads-in-url-credentia
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:32+00:00"
+  at: "2026-08-11T17:44:58+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/concealing-payloads-in-url-credentials"
     title: Concealing payloads in URL credentials
+    author: Gareth Heyes
     last_modified: 2024-10-23
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: ""
 cited_by:
-  - "2024.md:154"
+  - "2024.md:155"
 commit: ""
 content_sha256: 8367bc267a5cfd184c540f3597300a0347cb0aac36200629705d53720cde4b9c
 depth: full
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 1c0a970fbe44260313907f2d55f16823fd157118c4a71bffb3571995cc1beb3a
 retrieved_from: "https://portswigger.net/research/concealing-payloads-in-url-credentials"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:32+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:58+00:00"
 slug: 2024-portswigger-research-concealing-payloads-url-credentials
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Concealing payloads in URL credentials
 
-**Concealing payloads in URL credentials** - Author not stated, PortSwigger Research.
+**Concealing payloads in URL credentials** - Gareth Heyes, PortSwigger Research.
 
 - Published: 2024-10-23
 - Original: <https://portswigger.net/research/concealing-payloads-in-url-credentials>
-- Preserved from: https://portswigger.net/research/concealing-payloads-in-url-credentials (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/concealing-payloads-in-url-credentials (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

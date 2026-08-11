@@ -5,17 +5,19 @@ resource: "https://portswigger.net/research/browser-powered-desync-attacks"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:28+00:00"
+  at: "2026-08-11T17:45:03+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/browser-powered-desync-attacks"
     title: "Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling"
+    author: James Kettle
     last_modified: 2022-08-10
 also_at:
   - "https://portswigger.net/kb/papers/firuaml/browser-powered-desync-attacks.pdf"
-authors: []
+authors:
+  - James Kettle
 canonical_url: ""
 cited_by:
   - "2022.md:6"
@@ -32,8 +34,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 48cea3852d6d909d92a45cb51ef60bb44d9ce3c715c9f9442f682e635e7fb5ed
 retrieved_from: "https://portswigger.net/research/browser-powered-desync-attacks"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:28+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:03+00:00"
 slug: 2022-portswigger-research-browser-powered-desync-attacks-new-frontier-smuggling
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling
 
-**Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling** - Author not stated, PortSwigger Research.
+**Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling** - James Kettle, PortSwigger Research.
 
 - Published: 2022-08-10
 - Original: <https://portswigger.net/research/browser-powered-desync-attacks>
 - Also published at: <https://portswigger.net/kb/papers/firuaml/browser-powered-desync-attacks.pdf>
-- Preserved from: https://portswigger.net/research/browser-powered-desync-attacks (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/browser-powered-desync-attacks (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

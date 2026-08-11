@@ -5,24 +5,26 @@ resource: "https://web.archive.org/web/20170903113359/http://threatpost.com/en_u
 tags: [article, webseclist-reference, en, threatpost-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T13:10:29+00:00"
+  at: "2026-08-11T17:45:45+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://threatpost.com/en_us/blogs/bug-hunter-finds-blended-threat-targeting-yahoo-web-site-120312"
     title: "Bug Hunter Finds 'Blended Threat' Targeting Yahoo Web Site"
+    author: Anne Saita
   - id: canonical
     resource: "http://threatpost.com/en_us/blogs/bug-hunter-finds-blended-threat-targeting-yahoo-web-site-120312"
   - id: capture
     resource: "https://web.archive.org/web/20130220015400/http://threatpost.com/en_us/blogs/bug-hunter-finds-blended-threat-targeting-yahoo-web-site-120312"
 also_at: []
-authors: []
+authors:
+  - Anne Saita
 canonical_url: "http://threatpost.com/en_us/blogs/bug-hunter-finds-blended-threat-targeting-yahoo-web-site-120312"
 cited_by:
   - "2012.md:18"
 commit: ""
-content_sha256: d461f3fc66d1b761ae511a59a81b3dcfabd02058980a12c3a3f6065795231e22
+content_sha256: 489fb81351919dbb6ace9b518dfad1cccedbd93feacf2c6e4f50a19833b112db
 depth: full
 depth_reason: default
 kind: article
@@ -35,7 +37,7 @@ publisher_english: ""
 raw_sha256: 99f8e654e481c7a1aefeffcf1417b8d2adbb53868a1c0e67032f758a94682ec2
 retrieved_from: "http://threatpost.com/en_us/blogs/bug-hunter-finds-blended-threat-targeting-yahoo-web-site-120312"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T13:10:29+00:00"
+retrieved_utc: "2026-08-11T17:45:45+00:00"
 slug: threatpost-com-bug-hunter-finds-blended-threat-targeting-yahoo-web-site
 snapshot: 20130220015400
 title_english: ""
@@ -45,12 +47,12 @@ translation_of: ""
 
 # Bug Hunter Finds 'Blended Threat' Targeting Yahoo Web Site
 
-**Bug Hunter Finds 'Blended Threat' Targeting Yahoo Web Site** - Author not stated, threatpost.com.
+**Bug Hunter Finds 'Blended Threat' Targeting Yahoo Web Site** - Anne Saita, threatpost.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://threatpost.com/en_us/blogs/bug-hunter-finds-blended-threat-targeting-yahoo-web-site-120312>
 - Current location: <http://threatpost.com/en_us/blogs/bug-hunter-finds-blended-threat-targeting-yahoo-web-site-120312>
-- Preserved from: http://threatpost.com/en_us/blogs/bug-hunter-finds-blended-threat-targeting-yahoo-web-site-120312 (stored) on 2026-08-09
+- Preserved from: http://threatpost.com/en_us/blogs/bug-hunter-finds-blended-threat-targeting-yahoo-web-site-120312 (stored) on 2026-08-11
 - Capture timestamp: 20130220015400
 - Licence: unknown
 

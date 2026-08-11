@@ -5,18 +5,20 @@ resource: "https://blackhat.com/docs/eu-14/materials/eu-14-Selvi-Bypassing-HTTP-
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:03:15+00:00"
+  at: "2026-08-11T17:38:26+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://blackhat.com/docs/eu-14/materials/eu-14-Selvi-Bypassing-HTTP-Strict-Transport-Security-wp.pdf"
     title: Bypassing HTTP Strict Transport Security
+    author: Jose Selvi
 also_at: []
-authors: []
+authors:
+  - Jose Selvi
 canonical_url: ""
 cited_by:
-  - "2014.md:79"
+  - "2014.md:80"
 commit: ""
 content_sha256: 8417ee12f320bb083e2f8f9ca5d894d8809c52fb9523a9b9affcf3ba2cca849d
 depth: full
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 8ad7ccedc2ccb9a9e6730e3e108c448d289825e107ed3e9f78d0ebc4625fbc29
 retrieved_from: "https://blackhat.com/docs/eu-14/materials/eu-14-Selvi-Bypassing-HTTP-Strict-Transport-Security-wp.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:03:15+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:38:26+00:00"
 slug: bypassing-http-strict-transport-security
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Bypassing HTTP Strict Transport Security
 
-**Bypassing HTTP Strict Transport Security** - Author not stated, Publisher not stated.
+**Bypassing HTTP Strict Transport Security** - Jose Selvi, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://blackhat.com/docs/eu-14/materials/eu-14-Selvi-Bypassing-HTTP-Strict-Transport-Security-wp.pdf>
-- Preserved from: https://blackhat.com/docs/eu-14/materials/eu-14-Selvi-Bypassing-HTTP-Strict-Transport-Security-wp.pdf (live) on 2026-08-10
+- Preserved from: https://blackhat.com/docs/eu-14/materials/eu-14-Selvi-Bypassing-HTTP-Strict-Transport-Security-wp.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

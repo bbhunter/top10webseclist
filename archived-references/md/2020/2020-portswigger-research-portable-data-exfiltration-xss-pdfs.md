@@ -5,17 +5,19 @@ resource: "https://portswigger.net/research/portable-data-exfiltration"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:50+00:00"
+  at: "2026-08-11T17:44:43+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/portable-data-exfiltration"
     title: "Portable Data exFiltration: XSS for PDFs"
+    author: Gareth Heyes
     last_modified: 2020-12-10
 also_at:
   - "https://portswigger.net/kb/papers/Portable-Data-ExFiltration.pdf"
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: ""
 cited_by:
   - "2020.md:6"
@@ -32,8 +34,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 0b3621c82c3f97abfd9d94c4f567b273626b3cb11e50e93f5ba1f68e142ab5e4
 retrieved_from: "https://portswigger.net/research/portable-data-exfiltration"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:50+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:43+00:00"
 slug: 2020-portswigger-research-portable-data-exfiltration-xss-pdfs
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Portable Data exFiltration: XSS for PDFs
 
-**Portable Data exFiltration: XSS for PDFs** - Author not stated, PortSwigger Research.
+**Portable Data exFiltration: XSS for PDFs** - Gareth Heyes, PortSwigger Research.
 
 - Published: 2020-12-10
 - Original: <https://portswigger.net/research/portable-data-exfiltration>
 - Also published at: <https://portswigger.net/kb/papers/Portable-Data-ExFiltration.pdf>
-- Preserved from: https://portswigger.net/research/portable-data-exfiltration (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/portable-data-exfiltration (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

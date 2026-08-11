@@ -5,18 +5,20 @@ resource: "https://blackhat.com/presentations/bh-dc-09/Marlinspike/BlackHat-DC-0
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:02:57+00:00"
+  at: "2026-08-11T17:39:39+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://blackhat.com/presentations/bh-dc-09/Marlinspike/BlackHat-DC-09-Marlinspike-Defeating-SSL.pdf"
     title: New Tricks for Defeating SSL in Practice (sslstrip & null-prefix certificates)
+    author: Moxie Marlinspike
 also_at: []
-authors: []
+authors:
+  - Moxie Marlinspike
 canonical_url: ""
 cited_by:
-  - "2009.md:102"
+  - "2009.md:98"
 commit: ""
 content_sha256: e8a08f42507e65d3d826ec34e89e1e03ca291978beec29c2309a56a2eb185b3a
 depth: full
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 334a68871046cd84ac1c219b1784f2e7fd6bf3ae0aa85b2b3b9b2b438ab89ffc
 retrieved_from: "https://blackhat.com/presentations/bh-dc-09/Marlinspike/BlackHat-DC-09-Marlinspike-Defeating-SSL.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:02:57+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:39+00:00"
 slug: new-tricks-defeating-ssl-practice-sslstrip-null-prefix-certificates
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # New Tricks for Defeating SSL in Practice (sslstrip & null-prefix certificates)
 
-**New Tricks for Defeating SSL in Practice (sslstrip & null-prefix certificates)** - Author not stated, Publisher not stated.
+**New Tricks for Defeating SSL in Practice (sslstrip & null-prefix certificates)** - Moxie Marlinspike, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://blackhat.com/presentations/bh-dc-09/Marlinspike/BlackHat-DC-09-Marlinspike-Defeating-SSL.pdf>
-- Preserved from: https://blackhat.com/presentations/bh-dc-09/Marlinspike/BlackHat-DC-09-Marlinspike-Defeating-SSL.pdf (live) on 2026-08-09
+- Preserved from: https://blackhat.com/presentations/bh-dc-09/Marlinspike/BlackHat-DC-09-Marlinspike-Defeating-SSL.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

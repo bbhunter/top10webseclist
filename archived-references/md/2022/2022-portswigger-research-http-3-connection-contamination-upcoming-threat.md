@@ -5,19 +5,21 @@ resource: "https://portswigger.net/research/http-3-connection-contamination"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:41+00:00"
+  at: "2026-08-11T17:44:48+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/http-3-connection-contamination"
     title: "HTTP/3 connection contamination: an upcoming threat?"
+    author: James Kettle
     last_modified: 2022-10-19
 also_at: []
-authors: []
+authors:
+  - James Kettle
 canonical_url: ""
 cited_by:
-  - "2022.md:68"
+  - "2022.md:69"
 commit: ""
 content_sha256: bf479bf505aacefb7f910488b126728e1d964d0da8b860315837aa02f8685920
 depth: full
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: a985a78f98b0dfdb20302bb37c51167a6a48fe2ba419a579d7f34aac14695d00
 retrieved_from: "https://portswigger.net/research/http-3-connection-contamination"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:41+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:48+00:00"
 slug: 2022-portswigger-research-http-3-connection-contamination-upcoming-threat
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # HTTP/3 connection contamination: an upcoming threat?
 
-**HTTP/3 connection contamination: an upcoming threat?** - Author not stated, PortSwigger Research.
+**HTTP/3 connection contamination: an upcoming threat?** - James Kettle, PortSwigger Research.
 
 - Published: 2022-10-19
 - Original: <https://portswigger.net/research/http-3-connection-contamination>
-- Preserved from: https://portswigger.net/research/http-3-connection-contamination (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/http-3-connection-contamination (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

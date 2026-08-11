@@ -5,15 +5,18 @@ resource: "https://i.blackhat.com/Asia-23/AS-23-Yuanzhen-A-new-attack-interface-
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:07+00:00"
+  at: "2026-08-11T17:41:17+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/Asia-23/AS-23-Yuanzhen-A-new-attack-interface-in-Java.pdf"
     title: A New Attack Interface In Java Application
+    author: Xu Yuanzhen, Peter Mularien
 also_at: []
-authors: []
+authors:
+  - Xu Yuanzhen
+  - Peter Mularien
 canonical_url: ""
 cited_by:
   - "2024.md:128"
@@ -30,8 +33,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 4cbb0bebf843064957ce16424a747987e6aabb899ef99eb6dd9239ca5cfc0e2f
 retrieved_from: "https://i.blackhat.com/Asia-23/AS-23-Yuanzhen-A-new-attack-interface-in-Java.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:07+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:17+00:00"
 slug: new-attack-interface-java-application
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # A New Attack Interface In Java Application
 
-**A New Attack Interface In Java Application** - Author not stated, Publisher not stated.
+**A New Attack Interface In Java Application** - Xu Yuanzhen, Peter Mularien, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/Asia-23/AS-23-Yuanzhen-A-new-attack-interface-in-Java.pdf>
-- Preserved from: https://i.blackhat.com/Asia-23/AS-23-Yuanzhen-A-new-attack-interface-in-Java.pdf (live) on 2026-08-09
+- Preserved from: https://i.blackhat.com/Asia-23/AS-23-Yuanzhen-A-new-attack-interface-in-Java.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

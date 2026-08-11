@@ -5,19 +5,21 @@ resource: "https://web.archive.org/web/20160403035045/https://cwiki.apache.org/c
 tags: [article, webseclist-reference, cwiki-apache-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T13:05:25+00:00"
+  at: "2026-08-11T17:34:48+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/https://cwiki.apache.org/confluence/display/WW/S2-020"
     title: S2-020 - Apache Struts 2 Documentation
+    author: Lukasz Lenart
   - id: canonical
     resource: "https://cwiki.apache.org/confluence/display/WW/S2-020"
   - id: capture
     resource: "https://web.archive.org/web/20150907194344/https://cwiki.apache.org/confluence/display/WW/S2-020"
 also_at: []
-authors: []
+authors:
+  - Lukasz Lenart
 canonical_url: "https://cwiki.apache.org/confluence/display/WW/S2-020"
 cited_by:
   - "2014.md:12"
@@ -35,7 +37,7 @@ publisher_english: ""
 raw_sha256: 5197be3fff26c6778535820613ff2f306f11600aecda13a67ce3a9a99f00743d
 retrieved_from: "https://cwiki.apache.org/confluence/display/WW/S2-020"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T13:05:25+00:00"
+retrieved_utc: "2026-08-11T17:34:48+00:00"
 slug: cwiki-apache-org-s2-020-apache-struts-2-documentation
 snapshot: 20150907194344
 title_english: ""
@@ -45,12 +47,12 @@ translation_of: ""
 
 # S2-020 - Apache Struts 2 Documentation
 
-**S2-020 - Apache Struts 2 Documentation** - Author not stated, cwiki.apache.org.
+**S2-020 - Apache Struts 2 Documentation** - Lukasz Lenart, cwiki.apache.org.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/https://cwiki.apache.org/confluence/display/WW/S2-020>
 - Current location: <https://cwiki.apache.org/confluence/display/WW/S2-020>
-- Preserved from: https://cwiki.apache.org/confluence/display/WW/S2-020 (stored) on 2026-08-10
+- Preserved from: https://cwiki.apache.org/confluence/display/WW/S2-020 (stored) on 2026-08-11
 - Capture timestamp: 20150907194344
 - Licence: unknown
 

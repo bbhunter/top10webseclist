@@ -5,19 +5,22 @@ resource: "https://www.ndss-symposium.org/ndss-paper/serialdetector-principled-a
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:54+00:00"
+  at: "2026-08-11T17:43:09+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/serialdetector-principled-and-practical-exploration-of-object-injection-vulnerabilities-for-the-web/"
     title: "SerialDetector: Principled and Practical Exploration of Object Injection Vulnerabilities for the Web"
+    author: Mikhail Shcherbakov, Musard Balliu
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/ndss2021_3A-5_24550_paper.pdf"
-authors: []
+authors:
+  - Mikhail Shcherbakov
+  - Musard Balliu
 canonical_url: ""
 cited_by:
-  - "2021.md:62"
+  - "2021.md:63"
 commit: ""
 content_sha256: cef34d2188ebd325944bf57c75a10d5a12e74ab1cf4acdf747291f0dcbab366f
 depth: full
@@ -31,8 +34,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: 7f0f1c2d64da40c4b219d00293c6453b4be7d3f7d4e2cc7e9d528486512d6b24
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/serialdetector-principled-and-practical-exploration-of-object-injection-vulnerabilities-for-the-web/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:54+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:09+00:00"
 slug: ndss-symposium-serialdetector-principled-practical-exploration-object-web
 snapshot: ""
 title_english: ""
@@ -42,12 +45,12 @@ translation_of: ""
 
 # SerialDetector: Principled and Practical Exploration of Object Injection Vulnerabilities for the Web
 
-**SerialDetector: Principled and Practical Exploration of Object Injection Vulnerabilities for the Web** - Author not stated, NDSS Symposium.
+**SerialDetector: Principled and Practical Exploration of Object Injection Vulnerabilities for the Web** - Mikhail Shcherbakov, Musard Balliu, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/serialdetector-principled-and-practical-exploration-of-object-injection-vulnerabilities-for-the-web/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/ndss2021_3A-5_24550_paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/serialdetector-principled-and-practical-exploration-of-object-injection-vulnerabilities-for-the-web/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/serialdetector-principled-and-practical-exploration-of-object-injection-vulnerabilities-for-the-web/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

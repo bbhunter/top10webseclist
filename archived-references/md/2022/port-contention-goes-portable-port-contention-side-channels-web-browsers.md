@@ -5,18 +5,23 @@ resource: "https://thomasrokicki.github.io/publications/wpc.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:24+00:00"
+  at: "2026-08-11T17:37:15+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://thomasrokicki.github.io/publications/wpc.pdf"
     title: "Port Contention Goes Portable: Port Contention Side Channels in Web Browsers"
+    author: Thomas Rokicki, Clémentine Maurice, Marina Botvinnik, Yossi Oren
 also_at: []
-authors: []
+authors:
+  - Thomas Rokicki
+  - Clémentine Maurice
+  - Marina Botvinnik
+  - Yossi Oren
 canonical_url: ""
 cited_by:
-  - "2022.md:68"
+  - "2022.md:67"
 commit: ""
 content_sha256: af5156a437aaa82cab5c3ade28101da0f25dc5e40adc61d70d2e0254c81d25bb
 depth: full
@@ -30,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 37c9467c7169387d68b9424b4a0d41fc57584327f66a2f3b069f5a9b88965992
 retrieved_from: "https://thomasrokicki.github.io/publications/wpc.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:24+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:37:15+00:00"
 slug: port-contention-goes-portable-port-contention-side-channels-web-browsers
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # Port Contention Goes Portable: Port Contention Side Channels in Web Browsers
 
-**Port Contention Goes Portable: Port Contention Side Channels in Web Browsers** - Author not stated, Publisher not stated.
+**Port Contention Goes Portable: Port Contention Side Channels in Web Browsers** - Thomas Rokicki, Clémentine Maurice, Marina Botvinnik, Yossi Oren, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://thomasrokicki.github.io/publications/wpc.pdf>
-- Preserved from: https://thomasrokicki.github.io/publications/wpc.pdf (live) on 2026-08-08
+- Preserved from: https://thomasrokicki.github.io/publications/wpc.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

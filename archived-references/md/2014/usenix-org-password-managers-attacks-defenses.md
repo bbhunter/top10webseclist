@@ -5,20 +5,28 @@ resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:04:19+00:00"
+  at: "2026-08-11T17:45:59+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/silver"
     title: "Password Managers: Attacks and Defenses"
+    author: David Silver, Suman Jana, Dan Boneh, Eric Chen, Collin Jackson
+  - id: capture
+    resource: "https://web.archive.org/web/20140703003042/https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/silver"
 also_at: []
-authors: []
+authors:
+  - David Silver
+  - Suman Jana
+  - Dan Boneh
+  - Eric Chen
+  - Collin Jackson
 canonical_url: ""
 cited_by:
-  - "2014.md:67"
+  - "2014.md:68"
 commit: ""
-content_sha256: b63414275321cfe11ec27bcffc8c6bfdd8a0a7a306c3fd5fa0818aabedc95681
+content_sha256: 9d5ce89ee4245b5599253fa8d6d0118335d5db5b8c0b172d7a382cf2bdf0d9e7
 depth: full
 depth_reason: default
 kind: article
@@ -28,12 +36,12 @@ original_url: "https://www.usenix.org/conference/usenixsecurity14/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 215c70ebbf00a197a4b09ba357f76efa63bcd8e361a426959e6569627ec651a1
+raw_sha256: aeff48ab73a6507fbdf49e1fbaca620296427309f0a78141bbf11e37bcef8099
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/silver"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:04:19+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:59+00:00"
 slug: usenix-org-password-managers-attacks-defenses
-snapshot: ""
+snapshot: 20140703003042
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -41,11 +49,12 @@ translation_of: ""
 
 # Password Managers: Attacks and Defenses
 
-**Password Managers: Attacks and Defenses** - Author not stated, usenix.org.
+**Password Managers: Attacks and Defenses** - David Silver, Suman Jana, Dan Boneh, Eric Chen, Collin Jackson, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/silver>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/silver (live) on 2026-08-10
+- Preserved from: https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/silver (stored) on 2026-08-11
+- Capture timestamp: 20140703003042
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -60,55 +69,22 @@ page going offline. To read the original, follow the link above.
 
 Password Managers: Attacks and Defenses | USENIX
 
- [ Back to USENIX ](https://www.usenix.org/)
+[USENIX](https://www.usenix.org/)
 
 #  Password Managers: Attacks and Defenses
 
-Friday, August 1, 2014 - 10:00am
+Authors:
 
-David Silver, Suman Jana, and Dan Boneh, *Stanford University;* Eric Chen and Collin Jackson, *Carnegie Mellon University*
+David Silver and Suman Jana, *Stanford University;* Eric Chen and Collin Jackson, *Carnegie Mellon University;* Dan Boneh, *Stanford University*
 
-We study the security of popular password managers and their policies on automatically filling in Web passwords. We examine browser built-in password managers, mobile password managers, and 3rd party managers. We observe significant differences in autofill policies among password managers. Several autofill policies can lead to disastrous consequences where a remote network attacker can extract multiple passwords from the user’s password manager without any interaction with the user. We experiment with these attacks and with techniques to enhance the security of password managers. We show that our enhancements can be adopted by existing managers.
+## Open Access Content
 
-## [David Silver, Stanford University](https://www.usenix.org/conference/usenixsecurity14/speaker-or-organizer/david-silver-stanford-university)
-
-## [Suman Jana, Stanford University](https://www.usenix.org/conference/usenixsecurity14/speaker-or-organizer/suman-jana-stanford-university)
-
-## [Dan Boneh, Stanford University](https://www.usenix.org/conference/usenixsecurity14/speaker-or-organizer/dan-boneh-stanford-university-0)
-
-## [Eric Chen, Carnegie Mellon University](https://www.usenix.org/conference/usenixsecurity14/speaker-or-organizer/eric-chen-carnegie-mellon-university)
-
-## [Collin Jackson, Carnegie Mellon University](https://www.usenix.org/conference/usenixsecurity14/speaker-or-organizer/collin-jackson-carnegie-mellon-university)
-
-## Open Access Media
-
-USENIX is committed to Open Access to the research presented at our events. Papers and proceedings are freely available to everyone once the event begins. Any video, audio, and/or slides that are posted after the event are also free and open to everyone. [Support USENIX](https://www.usenix.org/annual-fund) and our commitment to Open Access.
+Papers are restricted to registered attendees until the event begins. Once the event begins, the content becomes free and open to everyone. Journal articles are open to everyone upon publication. If available, video, audio, and/or slides of this presentation will be posted here after the event.
 
 BibTeX
 
-@inproceedings {184475,
- author = {David Silver and Suman Jana and Dan Boneh and Eric Chen and Collin Jackson},
- title = {Password Managers: Attacks and Defenses},
- booktitle = {23rd USENIX Security Symposium (USENIX Security 14)},
- year = {2014},
- isbn = {978-1-931971-15-7},
- address = {San Diego, CA},
- pages = {449--464},
- url = {https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/silver},
- publisher = {USENIX Association},
- month = aug
- }
+Text of BibTeX entry:
 
-[Download](https://www.usenix.org/biblio/export/bibtex/184475)
+@inproceedings {184475, title = {Password Managers: Attacks and Defenses}, booktitle = {23rd USENIX Security Symposium (USENIX Security 14)}, year = {2014}, month = Aug, address = {San Diego, CA}, url = {https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/silver}, publisher = {USENIX Association}, } <br><a href="/biblio/export/bibtex/184475">Download</a>
 
- [Silver PDF](https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-silver.pdf)
-
-[View the slides](https://www.usenix.org/sites/default/files/conference/protected-files/sec14_slides_silver.pdf)
-
-## Presentation Video
-
-#### Presentation Audio
-
-   [MP3 Download](https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/sec14/silver.mp3)
-
-[Download Audio](https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/sec14/silver.mp3)
+## Open access to the papers is sponsored by USENIX.

@@ -5,15 +5,17 @@ resource: "http://immunityservices.blogspot.com/2021/02/misconfigurations-in-jav
 tags: [article, webseclist-reference, immunityservices-blogspot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:58+00:00"
+  at: "2026-08-11T17:35:39+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://immunityservices.blogspot.com/2021/02/misconfigurations-in-java-xml-parsers.html"
     title: Misconfigurations in Java XML Parsers
+    author: Anibal Irrera
 also_at: []
-authors: []
+authors:
+  - Anibal Irrera
 canonical_url: ""
 cited_by:
   - "2021.md:20"
@@ -30,8 +32,8 @@ publisher: immunityservices.blogspot.com
 publisher_english: ""
 raw_sha256: 187b9b235438c94a502b64ca299caf53386bf28e09f240b35ba15dc010243639
 retrieved_from: "http://immunityservices.blogspot.com/2021/02/misconfigurations-in-java-xml-parsers.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:58+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:39+00:00"
 slug: immunityservices-blogspot-com-misconfigurations-java-xml-parsers
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Misconfigurations in Java XML Parsers
 
-**Misconfigurations in Java XML Parsers** - Author not stated, immunityservices.blogspot.com.
+**Misconfigurations in Java XML Parsers** - Anibal Irrera, immunityservices.blogspot.com.
 
 - Published: date not stated
 - Original: <http://immunityservices.blogspot.com/2021/02/misconfigurations-in-java-xml-parsers.html>
-- Preserved from: http://immunityservices.blogspot.com/2021/02/misconfigurations-in-java-xml-parsers.html (live) on 2026-08-10
+- Preserved from: http://immunityservices.blogspot.com/2021/02/misconfigurations-in-java-xml-parsers.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

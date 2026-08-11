@@ -5,22 +5,24 @@ resource: "https://docs.google.com/View?docid=ajfxntc4dmsq_14dt57ssdw&pli=1"
 tags: [article, webseclist-reference, docs-google-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T04:39:49+00:00"
-status: deprecated
-stale_after: 2027-08-09
+  at: "2026-08-11T17:39:59+00:00"
+status: stable
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://docs.google.com/View?docid=ajfxntc4dmsq_14dt57ssdw&pli=1"
     title: XSS Vulnerabilities in Common Shockwave Flash Files
+    author: Rich Cannings
   - id: capture
     resource: "https://web.archive.org/web/20111113074052/https://docs.google.com/View?docid=ajfxntc4dmsq_14dt57ssdw&pli=1"
 also_at: []
-authors: []
+authors:
+  - Rich Cannings
 canonical_url: ""
 cited_by:
   - "2007.md:5"
 commit: ""
-content_sha256: 19c810f135fd2e3d36ba86f183768e69c27908bf4ef5270e85431110c2f4f5da
+content_sha256: 4901983a395a7d3270202c0ed7bec498e7dd73fd5b7e77a843122e5339899614
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 197e94c10aaa7c46610a566868b5bb29c9ccde757bef768629be4ab3d085a124
 retrieved_from: "https://docs.google.com/View?docid=ajfxntc4dmsq_14dt57ssdw&pli=1"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T04:39:49+00:00"
+retrieved_utc: "2026-08-11T17:39:59+00:00"
 slug: docs-google-com-xss-vulnerabilities-common-shockwave-flash-files
 snapshot: 20111113074052
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # XSS Vulnerabilities in Common Shockwave Flash Files
 
-**XSS Vulnerabilities in Common Shockwave Flash Files** - Author not stated, docs.google.com.
+**XSS Vulnerabilities in Common Shockwave Flash Files** - Rich Cannings, docs.google.com.
 
 - Published: date not stated
 - Original: <https://docs.google.com/View?docid=ajfxntc4dmsq_14dt57ssdw&pli=1>
-- Preserved from: https://docs.google.com/View?docid=ajfxntc4dmsq_14dt57ssdw&pli=1 (stored) on 2026-08-09
+- Preserved from: https://docs.google.com/View?docid=ajfxntc4dmsq_14dt57ssdw&pli=1 (stored) on 2026-08-11
 - Capture timestamp: 20111113074052
 - Licence: unknown
 
@@ -154,13 +156,9 @@ This issue was fixed in the December Flash player release. An attacker can also 
 
 ** Users
 
-**
-
 -  Update to the latest version of Flash Player plugin. This will protect users from attacks using the "asfunction" protocol handler
 
 ** Website Owners
-
-**
 
 -  All vulnerabilities reported above have been fixed, so please:
 
@@ -179,7 +177,6 @@ This issue was fixed in the December Flash player release. An attacker can also 
 ** Flash Authoring Tools Developers and All Flash Developers
 
 **Flash based XSS is not limited to authoring tools. Unfortunately, common design patterns used in many Flash applications introduce XSS issues, so all Flash developers, including Flash authoring tools developers, should do the following:**
-**
 
 -  Test your SWFs with Stafano Di Paola's [SWFIntruder](https://www.owasp.org/index.php/Category:SWFIntruder). If you don't, others will.
 -  Perform proper input validation on all user definable variables used in URL loading functions and the "htmlText" fields. For example:
@@ -226,7 +223,6 @@ This issue was fixed in the December Flash player release. An attacker can also 
 
  /*
  * Quiz app
- *
  * To compile:
  * mtasc -swf Quiz.swf -main -header 10:10:10 Quiz.as
  */

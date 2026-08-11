@@ -5,18 +5,23 @@ resource: "https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:49+00:00"
+  at: "2026-08-11T17:41:46+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf"
     title: Cross-Site Scripting Attacks in Social Network APIs
+    author: Yuqing Zhang, Xiali Wang, Qihan Luo, Qixu Liu
 also_at: []
-authors: []
+authors:
+  - Yuqing Zhang
+  - Xiali Wang
+  - Qihan Luo
+  - Qixu Liu
 canonical_url: ""
 cited_by:
-  - "2013.md:62"
+  - "2013.md:63"
 commit: ""
 content_sha256: 17dfe75404a2d0dadc61611f901e920d0e1e9d1fc5d8f4261f1fd4232208e3db
 depth: full
@@ -30,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 813a49ad61c3956da8a0de63d76cdba434d083d0e5f2b291eac453aa73b88ac4
 retrieved_from: "https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:49+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:46+00:00"
 slug: cross-site-scripting-attacks-social-network-apis
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # Cross-Site Scripting Attacks in Social Network APIs
 
-**Cross-Site Scripting Attacks in Social Network APIs** - Author not stated, Publisher not stated.
+**Cross-Site Scripting Attacks in Social Network APIs** - Yuqing Zhang, Xiali Wang, Qihan Luo, Qixu Liu, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf>
-- Preserved from: https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf (live) on 2026-08-10
+- Preserved from: https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

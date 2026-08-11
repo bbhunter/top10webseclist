@@ -5,19 +5,26 @@ resource: "https://www.ndss-symposium.org/ndss-paper/navigating-murky-waters-aut
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:48+00:00"
+  at: "2026-08-11T17:44:33+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/navigating-murky-waters-automated-browser-feature-testing-for-uncovering-tracking-vectors/"
     title: "Navigating Murky Waters: Automated Browser Feature Testing for Uncovering Tracking Vectors"
+    author: Mir Masood Ali, Binoy Chitale, Mohammad Ghasemisharif, Chris Kanich, Nick Nikiforakis, Jason Polakis
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_f72_paper.pdf"
-authors: []
+authors:
+  - Mir Masood Ali
+  - Binoy Chitale
+  - Mohammad Ghasemisharif
+  - Chris Kanich
+  - Nick Nikiforakis
+  - Jason Polakis
 canonical_url: ""
 cited_by:
-  - "2023.md:91"
+  - "2023.md:92"
 commit: ""
 content_sha256: 38c04803a64deb772de6e6410acac70da0e54ac3816559aff8bd9a63a59c1641
 depth: full
@@ -31,8 +38,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: b0a42de0a34b4a085c4d3ddd4a35b1e60b53986585c8d7275e7876e80ac88ba9
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/navigating-murky-waters-automated-browser-feature-testing-for-uncovering-tracking-vectors/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:48+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:33+00:00"
 slug: ndss-symposium-navigating-murky-waters-automated-browser-feature-vectors
 snapshot: ""
 title_english: ""
@@ -42,12 +49,12 @@ translation_of: ""
 
 # Navigating Murky Waters: Automated Browser Feature Testing for Uncovering Tracking Vectors
 
-**Navigating Murky Waters: Automated Browser Feature Testing for Uncovering Tracking Vectors** - Author not stated, NDSS Symposium.
+**Navigating Murky Waters: Automated Browser Feature Testing for Uncovering Tracking Vectors** - Mir Masood Ali, Binoy Chitale, Mohammad Ghasemisharif, Chris Kanich, Nick Nikiforakis, Jason Polakis, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/navigating-murky-waters-automated-browser-feature-testing-for-uncovering-tracking-vectors/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_f72_paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/navigating-murky-waters-automated-browser-feature-testing-for-uncovering-tracking-vectors/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/navigating-murky-waters-automated-browser-feature-testing-for-uncovering-tracking-vectors/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

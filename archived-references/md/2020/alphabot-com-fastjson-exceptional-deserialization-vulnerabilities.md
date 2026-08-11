@@ -5,15 +5,17 @@ resource: "https://www.alphabot.com/security/blog/2020/java/Fastjson-exceptional
 tags: [article, webseclist-reference, en, alphabot-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:00:37+00:00"
+  at: "2026-08-11T17:34:00+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.alphabot.com/security/blog/2020/java/Fastjson-exceptional-deserialization-vulnerabilities.html"
     title: "Fastjson: exceptional deserialization vulnerabilities"
+    author: Peter Stöckli
 also_at: []
-authors: []
+authors:
+  - Peter Stöckli
 canonical_url: ""
 cited_by:
   - "2020.md:19"
@@ -30,8 +32,8 @@ publisher: alphabot.com
 publisher_english: ""
 raw_sha256: 30d31a7fe7c647cea4d7b7b72266530a46d74e513e78d1e1bf2efcb29a5dbc85
 retrieved_from: "https://www.alphabot.com/security/blog/2020/java/Fastjson-exceptional-deserialization-vulnerabilities.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:00:37+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:00+00:00"
 slug: alphabot-com-fastjson-exceptional-deserialization-vulnerabilities
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Fastjson: exceptional deserialization vulnerabilities
 
-**Fastjson: exceptional deserialization vulnerabilities** - Author not stated, alphabot.com.
+**Fastjson: exceptional deserialization vulnerabilities** - Peter Stöckli, alphabot.com.
 
 - Published: date not stated
 - Original: <https://www.alphabot.com/security/blog/2020/java/Fastjson-exceptional-deserialization-vulnerabilities.html>
-- Preserved from: https://www.alphabot.com/security/blog/2020/java/Fastjson-exceptional-deserialization-vulnerabilities.html (live) on 2026-08-09
+- Preserved from: https://www.alphabot.com/security/blog/2020/java/Fastjson-exceptional-deserialization-vulnerabilities.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

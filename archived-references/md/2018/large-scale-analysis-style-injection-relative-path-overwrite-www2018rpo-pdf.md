@@ -5,15 +5,22 @@ resource: "https://sajjadium.github.io/files/www2018rpo_paper.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:36+00:00"
+  at: "2026-08-11T17:36:57+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://sajjadium.github.io/files/www2018rpo_paper.pdf"
     title: Large-Scale Analysis of Style Injection by Relative Path Overwrite - www2018rpo_paper.pdf
+    author: Sajjad Arshad, Seyed Ali Mirheidari, Tobias Lauinger, Bruno Crispo, Engin Kirda, William Robertson
 also_at: []
-authors: []
+authors:
+  - Sajjad Arshad
+  - Seyed Ali Mirheidari
+  - Tobias Lauinger
+  - Bruno Crispo
+  - Engin Kirda
+  - William Robertson
 canonical_url: ""
 cited_by:
   - "2018.md:29"
@@ -30,8 +37,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 676f7cfac5de25c95308a5758f9407ab633a1d66251278061cf0c6defa621458
 retrieved_from: "https://sajjadium.github.io/files/www2018rpo_paper.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:36+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:57+00:00"
 slug: large-scale-analysis-style-injection-relative-path-overwrite-www2018rpo-pdf
 snapshot: ""
 title_english: ""
@@ -41,11 +48,11 @@ translation_of: ""
 
 # Large-Scale Analysis of Style Injection by Relative Path Overwrite - www2018rpo_paper.pdf
 
-**Large-Scale Analysis of Style Injection by Relative Path Overwrite - www2018rpo_paper.pdf** - Author not stated, Publisher not stated.
+**Large-Scale Analysis of Style Injection by Relative Path Overwrite - www2018rpo_paper.pdf** - Sajjad Arshad, Seyed Ali Mirheidari, Tobias Lauinger, Bruno Crispo, Engin Kirda, William Robertson, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://sajjadium.github.io/files/www2018rpo_paper.pdf>
-- Preserved from: https://sajjadium.github.io/files/www2018rpo_paper.pdf (live) on 2026-08-09
+- Preserved from: https://sajjadium.github.io/files/www2018rpo_paper.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

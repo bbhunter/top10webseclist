@@ -5,19 +5,29 @@ resource: "https://www.ndss-symposium.org/ndss-paper/cdn-judo-breaking-the-cdn-d
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:40+00:00"
+  at: "2026-08-11T17:43:36+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/cdn-judo-breaking-the-cdn-dos-protection-with-itself/"
     title: "CDN Judo: Breaking the CDN DoS Protection with Itself"
+    author: Run Guo, Weizhong Li, Baojun Liu, Shuang Hao, Jia Zhang, Haixin Duan, Kaiwen Sheng, Jianjun Chen, Ying Liu
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2020/02/24411-paper.pdf"
-authors: []
+authors:
+  - Run Guo
+  - Weizhong Li
+  - Baojun Liu
+  - Shuang Hao
+  - Jia Zhang
+  - Haixin Duan
+  - Kaiwen Sheng
+  - Jianjun Chen
+  - Ying Liu
 canonical_url: ""
 cited_by:
-  - "2020.md:75"
+  - "2020.md:76"
 commit: ""
 content_sha256: a0bb4dcae8343a0243bac7d816e5e876f6bec286063082792568535a851990cb
 depth: full
@@ -31,8 +41,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: f2bd099c92ddc76e6be3225bacdd79919510a94f52d2adbad8ae45b9fcc2a84e
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/cdn-judo-breaking-the-cdn-dos-protection-with-itself/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:40+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:36+00:00"
 slug: ndss-symposium-cdn-judo-breaking-cdn-dos-protection-itself
 snapshot: ""
 title_english: ""
@@ -42,12 +52,12 @@ translation_of: ""
 
 # CDN Judo: Breaking the CDN DoS Protection with Itself
 
-**CDN Judo: Breaking the CDN DoS Protection with Itself** - Author not stated, NDSS Symposium.
+**CDN Judo: Breaking the CDN DoS Protection with Itself** - Run Guo, Weizhong Li, Baojun Liu, Shuang Hao, Jia Zhang, Haixin Duan, Kaiwen Sheng, Jianjun Chen, Ying Liu, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/cdn-judo-breaking-the-cdn-dos-protection-with-itself/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2020/02/24411-paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/cdn-judo-breaking-the-cdn-dos-protection-with-itself/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/cdn-judo-breaking-the-cdn-dos-protection-with-itself/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

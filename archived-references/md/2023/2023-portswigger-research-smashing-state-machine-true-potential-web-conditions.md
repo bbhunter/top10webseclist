@@ -5,17 +5,19 @@ resource: "https://portswigger.net/research/smashing-the-state-machine"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:55+00:00"
+  at: "2026-08-11T17:45:10+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/smashing-the-state-machine"
     title: "Smashing the state machine: the true potential of web race conditions"
+    author: James Kettle
     last_modified: 2023-08-09
 also_at:
   - "https://portswigger.net/kb/papers/rifmwla/racewhitepaper.pdf"
-authors: []
+authors:
+  - James Kettle
 canonical_url: ""
 cited_by:
   - "2023.md:5"
@@ -32,8 +34,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: b07d384ec63c7b16f2906e9062417ede3d0ac78213482a51a22e40d7ced6520e
 retrieved_from: "https://portswigger.net/research/smashing-the-state-machine"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:55+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:10+00:00"
 slug: 2023-portswigger-research-smashing-state-machine-true-potential-web-conditions
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Smashing the state machine: the true potential of web race conditions
 
-**Smashing the state machine: the true potential of web race conditions** - Author not stated, PortSwigger Research.
+**Smashing the state machine: the true potential of web race conditions** - James Kettle, PortSwigger Research.
 
 - Published: 2023-08-09
 - Original: <https://portswigger.net/research/smashing-the-state-machine>
 - Also published at: <https://portswigger.net/kb/papers/rifmwla/racewhitepaper.pdf>
-- Preserved from: https://portswigger.net/research/smashing-the-state-machine (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/smashing-the-state-machine (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

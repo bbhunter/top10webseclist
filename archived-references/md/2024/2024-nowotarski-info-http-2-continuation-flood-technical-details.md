@@ -5,16 +5,18 @@ resource: "https://nowotarski.info/http2-continuation-flood-technical-details/"
 tags: [article, webseclist-reference, nowotarski-info]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:35:41+00:00"
+  at: "2026-08-11T17:36:43+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://nowotarski.info/http2-continuation-flood-technical-details/"
     title: "HTTP/2 `CONTINUATION` Flood: Technical Details"
+    author: Bartek Nowotarski
     last_modified: 2024-04-03
 also_at: []
-authors: []
+authors:
+  - Bartek Nowotarski
 canonical_url: ""
 cited_by:
   - "2024.md:42"
@@ -31,8 +33,8 @@ publisher: nowotarski.info
 publisher_english: ""
 raw_sha256: da0885efd498fa7d6c15587aa3dd6e37cb446d6a1e9313ee7a1dcac263dbeba9
 retrieved_from: "https://nowotarski.info/http2-continuation-flood-technical-details/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:35:41+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:43+00:00"
 slug: 2024-nowotarski-info-http-2-continuation-flood-technical-details
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # HTTP/2 `CONTINUATION` Flood: Technical Details
 
-**HTTP/2 `CONTINUATION` Flood: Technical Details** - Author not stated, nowotarski.info.
+**HTTP/2 `CONTINUATION` Flood: Technical Details** - Bartek Nowotarski, nowotarski.info.
 
 - Published: 2024-04-03
 - Original: <https://nowotarski.info/http2-continuation-flood-technical-details/>
-- Preserved from: https://nowotarski.info/http2-continuation-flood-technical-details/ (live) on 2026-08-10
+- Preserved from: https://nowotarski.info/http2-continuation-flood-technical-details/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

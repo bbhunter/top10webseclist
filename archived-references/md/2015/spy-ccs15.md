@@ -5,18 +5,23 @@ resource: "https://cs.brown.edu/people/vpk/papers/spy.ccs15.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:07:44+00:00"
+  at: "2026-08-11T17:34:22+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://cs.brown.edu/people/vpk/papers/spy.ccs15.pdf"
     title: spy.ccs15
+    author: Yossef Oren, Vasileios P. Kemerlis, Simha Sethumadhavan, Angelos D. Keromytis
 also_at: []
-authors: []
+authors:
+  - Yossef Oren
+  - Vasileios P. Kemerlis
+  - Simha Sethumadhavan
+  - Angelos D. Keromytis
 canonical_url: ""
 cited_by:
-  - "2015.md:55"
+  - "2015.md:56"
 commit: ""
 content_sha256: 3ef618115b081717cc1d9f1228516e03a314b50fbfed248040182ff2f59ff2a3
 depth: full
@@ -30,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 587433ea7efb1822336befc9cdb543f3dbdf3183b1550b1bb608899b8e37a3b2
 retrieved_from: "https://cs.brown.edu/people/vpk/papers/spy.ccs15.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:07:44+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:22+00:00"
 slug: spy-ccs15
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # spy.ccs15
 
-**spy.ccs15** - Author not stated, Publisher not stated.
+**spy.ccs15** - Yossef Oren, Vasileios P. Kemerlis, Simha Sethumadhavan, Angelos D. Keromytis, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://cs.brown.edu/people/vpk/papers/spy.ccs15.pdf>
-- Preserved from: https://cs.brown.edu/people/vpk/papers/spy.ccs15.pdf (live) on 2026-08-10
+- Preserved from: https://cs.brown.edu/people/vpk/papers/spy.ccs15.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

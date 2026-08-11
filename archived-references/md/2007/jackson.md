@@ -5,18 +5,22 @@ resource: "https://www.usenix.org/legacy/event/hotsec07/tech/full_papers/jackson
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:57:28+00:00"
+  at: "2026-08-11T17:46:17+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.usenix.org/legacy/event/hotsec07/tech/full_papers/jackson/jackson.pdf"
     title: jackson
+    author: Collin Jackson, Dan Boneh, John Mitchell
 also_at: []
-authors: []
+authors:
+  - Collin Jackson
+  - Dan Boneh
+  - John Mitchell
 canonical_url: ""
 cited_by:
-  - "2007.md:110"
+  - "2007.md:106"
 commit: ""
 content_sha256: 532f55fe0aae4485922f7f7313e73d658f4bada18fc1b13ee6d9b6be72797772
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 5d3b0767ae34fda35a8e94707809c35409b3c1da27c77a5458df69462268441b
 retrieved_from: "https://www.usenix.org/legacy/event/hotsec07/tech/full_papers/jackson/jackson.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:57:28+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:46:17+00:00"
 slug: jackson
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # jackson
 
-**jackson** - Author not stated, Publisher not stated.
+**jackson** - Collin Jackson, Dan Boneh, John Mitchell, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/legacy/event/hotsec07/tech/full_papers/jackson/jackson.pdf>
-- Preserved from: https://www.usenix.org/legacy/event/hotsec07/tech/full_papers/jackson/jackson.pdf (live) on 2026-08-08
+- Preserved from: https://www.usenix.org/legacy/event/hotsec07/tech/full_papers/jackson/jackson.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

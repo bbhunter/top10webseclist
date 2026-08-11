@@ -5,18 +5,22 @@ resource: "https://acmccs.github.io/papers/p1741-lernerAT3.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:49:31+00:00"
+  at: "2026-08-11T17:37:49+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://acmccs.github.io/papers/p1741-lernerAT3.pdf"
     title: "Rewriting History: Changing the Archived Web from the Present"
+    author: Ada Lerner, Tadayoshi Kohno, Franziska Roesner
 also_at: []
-authors: []
+authors:
+  - Ada Lerner
+  - Tadayoshi Kohno
+  - Franziska Roesner
 canonical_url: ""
 cited_by:
-  - "2016-17.md:97"
+  - "2016-17.md:92"
 commit: ""
 content_sha256: 2f8e088d950ee5d297b2f42eda8015d8699b7e22bd2920fb49835d5259dc368c
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 01e21e824b10fdc1bc0320ec0af87bc5410324ecd4f6458ed5e82bfb66dd8437
 retrieved_from: "https://acmccs.github.io/papers/p1741-lernerAT3.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:49:31+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:37:49+00:00"
 slug: rewriting-history-changing-archived-web-present
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # Rewriting History: Changing the Archived Web from the Present
 
-**Rewriting History: Changing the Archived Web from the Present** - Author not stated, Publisher not stated.
+**Rewriting History: Changing the Archived Web from the Present** - Ada Lerner, Tadayoshi Kohno, Franziska Roesner, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://acmccs.github.io/papers/p1741-lernerAT3.pdf>
-- Preserved from: https://acmccs.github.io/papers/p1741-lernerAT3.pdf (live) on 2026-08-08
+- Preserved from: https://acmccs.github.io/papers/p1741-lernerAT3.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

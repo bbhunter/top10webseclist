@@ -5,18 +5,25 @@ resource: "https://www.ieee-security.org/TC/SP2017/papers/449.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:42+00:00"
+  at: "2026-08-11T17:42:04+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2017/papers/449.pdf"
     title: Side-Channel Attacks on Shared Search Indexes
+    author: Liang Wang, Paul Grubbs, Jiahui Lu, Vincent Bindschaedler, David Cash, Thomas Ristenpart
 also_at: []
-authors: []
+authors:
+  - Liang Wang
+  - Paul Grubbs
+  - Jiahui Lu
+  - Vincent Bindschaedler
+  - David Cash
+  - Thomas Ristenpart
 canonical_url: ""
 cited_by:
-  - "2016-17.md:95"
+  - "2016-17.md:96"
 commit: ""
 content_sha256: 002b94d33bcb27d1b4d64018a949c1b02d3fdf94e409a6f15111c9d64e839ec3
 depth: full
@@ -30,8 +37,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: fdbacf801e1ca914f20972e292847b3b6422217e57d3ace285e59e6b808d45ef
 retrieved_from: "https://www.ieee-security.org/TC/SP2017/papers/449.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:42+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:42:04+00:00"
 slug: side-channel-attacks-shared-search-indexes
 snapshot: ""
 title_english: ""
@@ -41,11 +48,11 @@ translation_of: ""
 
 # Side-Channel Attacks on Shared Search Indexes
 
-**Side-Channel Attacks on Shared Search Indexes** - Author not stated, Publisher not stated.
+**Side-Channel Attacks on Shared Search Indexes** - Liang Wang, Paul Grubbs, Jiahui Lu, Vincent Bindschaedler, David Cash, Thomas Ristenpart, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2017/papers/449.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2017/papers/449.pdf (live) on 2026-08-10
+- Preserved from: https://www.ieee-security.org/TC/SP2017/papers/449.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

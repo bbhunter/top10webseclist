@@ -5,17 +5,19 @@ resource: "https://portswigger.net/research/web-cache-entanglement"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:37:01+00:00"
+  at: "2026-08-11T17:45:09+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/web-cache-entanglement"
     title: "Web Cache Entanglement: Novel Pathways to Poisoning"
+    author: James Kettle
     last_modified: 2020-08-05
 also_at:
   - "https://portswigger.net/kb/papers/c3wwniai/web-cache-entanglement.pdf"
-authors: []
+authors:
+  - James Kettle
 canonical_url: ""
 cited_by:
   - "2020.md:21"
@@ -32,8 +34,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 9b72798463decc75a96772fe72efde889945979cac27dbdb5e502cc43424e33a
 retrieved_from: "https://portswigger.net/research/web-cache-entanglement"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:37:01+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:09+00:00"
 slug: 2020-portswigger-research-web-cache-entanglement-novel-pathways-poisoning
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Web Cache Entanglement: Novel Pathways to Poisoning
 
-**Web Cache Entanglement: Novel Pathways to Poisoning** - Author not stated, PortSwigger Research.
+**Web Cache Entanglement: Novel Pathways to Poisoning** - James Kettle, PortSwigger Research.
 
 - Published: 2020-08-05
 - Original: <https://portswigger.net/research/web-cache-entanglement>
 - Also published at: <https://portswigger.net/kb/papers/c3wwniai/web-cache-entanglement.pdf>
-- Preserved from: https://portswigger.net/research/web-cache-entanglement (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/web-cache-entanglement (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

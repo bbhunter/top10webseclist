@@ -5,22 +5,24 @@ resource: "http://www.sectheory.com/rfc1918-security-issues.htm"
 tags: [article, webseclist-reference, sectheory-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T11:26:40+00:00"
+  at: "2026-08-11T17:37:03+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.sectheory.com/rfc1918-security-issues.htm"
     title: RFC1918 Caching Security Issues
+    author: Robert Hansen
   - id: capture
-    resource: "https://web.archive.org/web/20090611203301/http://www.sectheory.com/rfc1918-security-issues.htm"
+    resource: "https://web.archive.org/web/20090625045507/http://www.sectheory.com/rfc1918-security-issues.htm"
 also_at: []
-authors: []
+authors:
+  - Robert Hansen
 canonical_url: ""
 cited_by:
   - "2009.md:13"
 commit: ""
-content_sha256: dec8f2207b16aad50cce53df13eb0b0e54e5c4662e4b192be2004a33ed8f976c
+content_sha256: 3c706a818de44776f168de41e7c8833d3dfaed3c826f4c1e18aec929632ea896
 depth: full
 depth_reason: default
 kind: article
@@ -30,12 +32,12 @@ original_url: "http://www.sectheory.com/rfc1918-security-issues.htm"
 published: ""
 publisher: sectheory.com
 publisher_english: ""
-raw_sha256: 4f0a3696372f00d49223d63fcc93abe15897b553ebedd7e0b6dc599a80948fdf
+raw_sha256: 96002de42a1e7862d7c627201d41268f704aa4a9392f8796b2a182892a561453
 retrieved_from: "http://www.sectheory.com/rfc1918-security-issues.htm"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T11:26:40+00:00"
+retrieved_utc: "2026-08-11T17:37:03+00:00"
 slug: sectheory-com-rfc1918-caching-security-issues
-snapshot: 20090611203301
+snapshot: 20090625045507
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # RFC1918 Caching Security Issues
 
-**RFC1918 Caching Security Issues** - Author not stated, sectheory.com.
+**RFC1918 Caching Security Issues** - Robert Hansen, sectheory.com.
 
 - Published: date not stated
 - Original: <http://www.sectheory.com/rfc1918-security-issues.htm>
-- Preserved from: http://www.sectheory.com/rfc1918-security-issues.htm (stored) on 2026-08-09
-- Capture timestamp: 20090611203301
+- Preserved from: http://www.sectheory.com/rfc1918-security-issues.htm (stored) on 2026-08-11
+- Capture timestamp: 20090625045507
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -68,9 +70,9 @@ SecTheory - Internet Security
 By Robert Hansen
  Date: 08/06/2009
 
-**Preface:** Intranets are intended to be secured from the outside by way of firewalls and other networking devices. Unfortunately, there has been a move towards non-routable address space as a method of protection, rather than other methods of protecting private IP space. This paper will outline a number of flaws that can be exploited by an adversary because of the use of well known non-routable IP address spaces.
+**Preface:** Intranets are intended to be secured from the outside by way of firewalls and other networking devices. Unfortunately, there has been a move towards non publicly-routable address space as a method of protection, rather than other methods of protecting private IP space. This paper will outline a number of flaws that can be exploited by an adversary because of the use of well known non publicly-routable IP address spaces.
 
-**Overview:** One of the principle technologies employed by enterprises is the concept of non-routable IP address space (otherwise known as [RFC1918](http://www.faqs.org/rfcs/rfc1918.html)). RFC1918 as defined explains that one of the principle reasons people use it is to avoid the future IP exhaustion that [IPv6](http://www.sectheory.com/ipv4-to-ipv6.htm) is intended to obviate. Unfortunately, it accomplishes this task by using the same set of IP spaces for everyone who uses this tactic.
+**Overview:** One of the principle technologies employed by enterprises is the concept of non publicly-routable IP address space (otherwise known as [RFC1918](http://www.faqs.org/rfcs/rfc1918.html)). RFC1918 as defined explains that one of the principle reasons people use it is to avoid the future IP exhaustion that [IPv6](http://www.sectheory.com/ipv4-to-ipv6.htm) is intended to obviate. Unfortunately, it accomplishes this task by using the same set of IP spaces for everyone who uses this tactic.
 
 ```
 

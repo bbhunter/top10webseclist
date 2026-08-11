@@ -5,18 +5,23 @@ resource: "https://www.microsoft.com/en-us/research/publication/timing-based-bro
 tags: [article, webseclist-reference, en, microsoft-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:32:41+00:00"
+  at: "2026-08-11T17:36:03+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.microsoft.com/en-us/research/publication/timing-based-browsing-privacy-vulnerabilities-via-site-isolation/"
     title: Timing-Based Browsing Privacy Vulnerabilities Via Site Isolation
+    author: Zihao Jin, Ziqiao Kong, Shuo Chen, Haixin Duan
 also_at: []
-authors: []
+authors:
+  - Zihao Jin
+  - Ziqiao Kong
+  - Shuo Chen
+  - Haixin Duan
 canonical_url: ""
 cited_by:
-  - "2022.md:69"
+  - "2022.md:70"
 commit: ""
 content_sha256: be29c6c3cceb4f7571afe7a60d8549a082e106cebe012fc8d7d53d4acf9ffeaf
 depth: full
@@ -30,8 +35,8 @@ publisher: Microsoft Research
 publisher_english: ""
 raw_sha256: 7a3d1ccfe1f4b88831e31c31fd4209ad37bb8e907f35dd74443576e4d675430e
 retrieved_from: "https://www.microsoft.com/en-us/research/publication/timing-based-browsing-privacy-vulnerabilities-via-site-isolation/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:32:41+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:03+00:00"
 slug: microsoft-research-timing-based-browsing-privacy-vulnerabilities-site-isolation
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # Timing-Based Browsing Privacy Vulnerabilities Via Site Isolation
 
-**Timing-Based Browsing Privacy Vulnerabilities Via Site Isolation** - Author not stated, Microsoft Research.
+**Timing-Based Browsing Privacy Vulnerabilities Via Site Isolation** - Zihao Jin, Ziqiao Kong, Shuo Chen, Haixin Duan, Microsoft Research.
 
 - Published: date not stated
 - Original: <https://www.microsoft.com/en-us/research/publication/timing-based-browsing-privacy-vulnerabilities-via-site-isolation/>
-- Preserved from: https://www.microsoft.com/en-us/research/publication/timing-based-browsing-privacy-vulnerabilities-via-site-isolation/ (live) on 2026-08-10
+- Preserved from: https://www.microsoft.com/en-us/research/publication/timing-based-browsing-privacy-vulnerabilities-via-site-isolation/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

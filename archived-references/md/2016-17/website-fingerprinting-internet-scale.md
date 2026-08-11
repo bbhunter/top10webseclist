@@ -5,18 +5,26 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fin
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:35:09+00:00"
+  at: "2026-08-11T17:44:18+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf"
     title: Website Fingerprinting at Internet Scale
+    author: Andriy Panchenko, Fabian Lanze, Andreas Zinnen, Martin Henze, Jan Pennekamp, Klaus Wehrle, Thomas Engel
 also_at: []
-authors: []
+authors:
+  - Andriy Panchenko
+  - Fabian Lanze
+  - Andreas Zinnen
+  - Martin Henze
+  - Jan Pennekamp
+  - Klaus Wehrle
+  - Thomas Engel
 canonical_url: ""
 cited_by:
-  - "2016-17.md:84"
+  - "2016-17.md:85"
 commit: ""
 content_sha256: cfae8cee10916aefc08af82884c1aa6cb873944a6069d422337290bab88d2eff
 depth: full
@@ -30,8 +38,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 807d9ac047baddcf537d6a0923d4815afc6832a09a4c9c056d683162a260eb3a
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:35:09+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:18+00:00"
 slug: website-fingerprinting-internet-scale
 snapshot: ""
 title_english: ""
@@ -41,11 +49,11 @@ translation_of: ""
 
 # Website Fingerprinting at Internet Scale
 
-**Website Fingerprinting at Internet Scale** - Author not stated, Publisher not stated.
+**Website Fingerprinting at Internet Scale** - Andriy Panchenko, Fabian Lanze, Andreas Zinnen, Martin Henze, Jan Pennekamp, Klaus Wehrle, Thomas Engel, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

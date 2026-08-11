@@ -5,19 +5,21 @@ resource: "https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md"
 tags: [article, webseclist-reference, en, valentino-s-issue-tracker]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:07:03+00:00"
+  at: "2026-08-11T17:34:13+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md"
     title: "Hacking Gemini: A Multi-Layered Approach"
+    author: Valentino Massaro
     last_modified: 2025-11-10
   - id: canonical
     resource: "https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/"
 also_at:
   - "https://buganizer.cc/Hacking-Gemini-A-Multi-Layered-Approach.pdf"
-authors: []
+authors:
+  - Valentino Massaro
 canonical_url: "https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/"
 cited_by:
   - "2025.md:52"
@@ -34,8 +36,8 @@ publisher: Valentino’s issue tracker
 publisher_english: ""
 raw_sha256: c7d2adc6114e5c9c2081556c784438913093f0675a5f7449cb3acca149b4c44d
 retrieved_from: "https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:07:03+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:13+00:00"
 slug: 2025-valentinos-issue-tracker-hacking-gemini-multi-layered-approach
 snapshot: ""
 title_english: ""
@@ -45,13 +47,13 @@ translation_of: ""
 
 # Hacking Gemini: A Multi-Layered Approach
 
-**Hacking Gemini: A Multi-Layered Approach** - Author not stated, Valentino’s issue tracker.
+**Hacking Gemini: A Multi-Layered Approach** - Valentino Massaro, Valentino’s issue tracker.
 
 - Published: 2025-11-10
 - Original: <https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md>
 - Current location: <https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/>
 - Also published at: <https://buganizer.cc/Hacking-Gemini-A-Multi-Layered-Approach.pdf>
-- Preserved from: https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/ (live) on 2026-08-10
+- Preserved from: https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

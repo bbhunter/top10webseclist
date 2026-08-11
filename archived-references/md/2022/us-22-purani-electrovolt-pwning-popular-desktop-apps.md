@@ -5,15 +5,20 @@ resource: "https://i.blackhat.com/USA-22/Thursday/US-22-Purani-ElectroVolt-Pwnin
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-07T09:42:48+00:00"
+  at: "2026-08-11T17:40:29+00:00"
 status: stable
-stale_after: 2027-08-07
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/USA-22/Thursday/US-22-Purani-ElectroVolt-Pwning-Popular-Desktop-Apps.pdf"
     title: US 22 Purani ElectroVolt Pwning Popular Desktop Apps
+    author: Mohan Sri Rama Krishna, Max Garrett, Aaditya Purani, William Bowling
 also_at: []
-authors: []
+authors:
+  - Mohan Sri Rama Krishna
+  - Max Garrett
+  - Aaditya Purani
+  - William Bowling
 canonical_url: ""
 cited_by:
   - "2022.md:41"
@@ -30,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 0eda3839442fbd8053842e5c1c343c7a4563c2e008a58e74e65c68e8e67766cb
 retrieved_from: "https://i.blackhat.com/USA-22/Thursday/US-22-Purani-ElectroVolt-Pwning-Popular-Desktop-Apps.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-07T09:42:48+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:40:29+00:00"
 slug: us-22-purani-electrovolt-pwning-popular-desktop-apps
 snapshot: ""
 title_english: ""
@@ -41,15 +46,15 @@ translation_of: ""
 
 # US 22 Purani ElectroVolt Pwning Popular Desktop Apps
 
-**US 22 Purani ElectroVolt Pwning Popular Desktop Apps** - Author not stated, Publisher not stated.
+**US 22 Purani ElectroVolt Pwning Popular Desktop Apps** - Mohan Sri Rama Krishna, Max Garrett, Aaditya Purani, William Bowling, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/USA-22/Thursday/US-22-Purani-ElectroVolt-Pwning-Popular-Desktop-Apps.pdf>
-- Preserved from: https://i.blackhat.com/USA-22/Thursday/US-22-Purani-ElectroVolt-Pwning-Popular-Desktop-Apps.pdf (live) on 2026-08-07
+- Preserved from: https://i.blackhat.com/USA-22/Thursday/US-22-Purani-ElectroVolt-Pwning-Popular-Desktop-Apps.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

@@ -5,18 +5,29 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/simple-gene
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:54:34+00:00"
+  at: "2026-08-11T17:43:13+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/simple-generic-attack-text-captchas.pdf"
     title: A Simple Generic Attack on Text Captchas
+    author: Haichang Gao, Jeff Yan, Fang Cao, Zhengya Zhang, Lei Lei, Mengyun Tang, Ping Zhang, Xin Zhou, Xuqin Wang, Jiawei Li
 also_at: []
-authors: []
+authors:
+  - Haichang Gao
+  - Jeff Yan
+  - Fang Cao
+  - Zhengya Zhang
+  - Lei Lei
+  - Mengyun Tang
+  - Ping Zhang
+  - Xin Zhou
+  - Xuqin Wang
+  - Jiawei Li
 canonical_url: ""
 cited_by:
-  - "2016-17.md:86"
+  - "2016-17.md:81"
 commit: ""
 content_sha256: 4d40f67a9363fe982643592d541dbc79c37be08b34d2e1768e195f62c00b0052
 depth: full
@@ -30,8 +41,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 674144dad6c8812474bf61ee31475f4ed9d5b683f6177fc279dffb3b2488eafe
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/simple-generic-attack-text-captchas.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:54:34+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:13+00:00"
 slug: simple-generic-attack-text-captchas
 snapshot: ""
 title_english: ""
@@ -41,11 +52,11 @@ translation_of: ""
 
 # A Simple Generic Attack on Text Captchas
 
-**A Simple Generic Attack on Text Captchas** - Author not stated, Publisher not stated.
+**A Simple Generic Attack on Text Captchas** - Haichang Gao, Jeff Yan, Fang Cao, Zhengya Zhang, Lei Lei, Mengyun Tang, Ping Zhang, Xin Zhou, Xuqin Wang, Jiawei Li, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/simple-generic-attack-text-captchas.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/simple-generic-attack-text-captchas.pdf (live) on 2026-08-08
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/simple-generic-attack-text-captchas.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

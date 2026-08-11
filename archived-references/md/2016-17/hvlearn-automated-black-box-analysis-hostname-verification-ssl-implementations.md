@@ -5,18 +5,24 @@ resource: "http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:07:45+00:00"
+  at: "2026-08-11T17:34:23+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf"
     title: "HVLearn: Automated Black-box Analysis of Hostname Verification in SSL/TLS Implementations"
+    author: Suphannee Sivakorn, George Argyros, Kexin Pei, Angelos D. Keromytis, Suman Jana
 also_at: []
-authors: []
+authors:
+  - Suphannee Sivakorn
+  - George Argyros
+  - Kexin Pei
+  - Angelos D. Keromytis
+  - Suman Jana
 canonical_url: ""
 cited_by:
-  - "2016-17.md:96"
+  - "2016-17.md:97"
 commit: ""
 content_sha256: 8e327e02a89c62ea9353b3ed2dc420f42cf768a286f182e333b6815024b2236e
 depth: full
@@ -30,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: ad81042304892fe70dccf189ca8c13c14d68054fe1e2effbe0fb6f65cfc575ce
 retrieved_from: "http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:07:45+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:23+00:00"
 slug: hvlearn-automated-black-box-analysis-hostname-verification-ssl-implementations
 snapshot: ""
 title_english: ""
@@ -41,11 +47,11 @@ translation_of: ""
 
 # HVLearn: Automated Black-box Analysis of Hostname Verification in SSL/TLS Implementations
 
-**HVLearn: Automated Black-box Analysis of Hostname Verification in SSL/TLS Implementations** - Author not stated, Publisher not stated.
+**HVLearn: Automated Black-box Analysis of Hostname Verification in SSL/TLS Implementations** - Suphannee Sivakorn, George Argyros, Kexin Pei, Angelos D. Keromytis, Suman Jana, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf>
-- Preserved from: http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf (live) on 2026-08-10
+- Preserved from: http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

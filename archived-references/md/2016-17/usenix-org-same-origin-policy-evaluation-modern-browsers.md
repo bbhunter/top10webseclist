@@ -5,20 +5,26 @@ resource: "https://www.usenix.org/conference/usenixsecurity17/technical-sessions
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:04:39+00:00"
+  at: "2026-08-11T17:46:29+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/schwenk"
     title: "Same-Origin Policy: Evaluation in Modern Browsers"
+    author: Jörg Schwenk, Marcus Niemietz, Christian Mainka
+  - id: capture
+    resource: "https://web.archive.org/web/20170821173230/https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/schwenk"
 also_at: []
-authors: []
+authors:
+  - Jörg Schwenk
+  - Marcus Niemietz
+  - Christian Mainka
 canonical_url: ""
 cited_by:
-  - "2016-17.md:103"
+  - "2016-17.md:104"
 commit: ""
-content_sha256: 2d42465b626eedabdda38155f379f15325549e9b3a0038de070cdaec527a3ae0
+content_sha256: 462c08feb060861e3e1ec84e6535c5091351d7b86a454e2cdf8d1b34bbf4e0c7
 depth: full
 depth_reason: default
 kind: article
@@ -28,12 +34,12 @@ original_url: "https://www.usenix.org/conference/usenixsecurity17/technical-sess
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: e9a407b95ebe40efae28703ede8896408908135d706353529e965996530c410a
+raw_sha256: 94ed845240e4a602c3f6c4729b1eee723fbd13d1dd3dd77945d5664a28bc81ac
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/schwenk"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:04:39+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:46:29+00:00"
 slug: usenix-org-same-origin-policy-evaluation-modern-browsers
-snapshot: ""
+snapshot: 20170821173230
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -41,11 +47,12 @@ translation_of: ""
 
 # Same-Origin Policy: Evaluation in Modern Browsers
 
-**Same-Origin Policy: Evaluation in Modern Browsers** - Author not stated, usenix.org.
+**Same-Origin Policy: Evaluation in Modern Browsers** - Jörg Schwenk, Marcus Niemietz, Christian Mainka, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/schwenk>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/schwenk (live) on 2026-08-10
+- Preserved from: https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/schwenk (stored) on 2026-08-11
+- Capture timestamp: 20170821173230
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -60,35 +67,46 @@ page going offline. To read the original, follow the link above.
 
 # Same-Origin Policy: Evaluation in Modern Browsers
 
+Authors:
+
 Jörg Schwenk, Marcus Niemietz, and Christian Mainka, *Horst Görtz Institute for IT Security, Chair for Network and Data Security, Ruhr-University Bochum*
 
-The term *Same-Origin Policy (SOP)* is used to denote a complex set of rules which governs the interaction of different *Web Origins* within a web application. A subset of these SOP rules controls the interaction between the host document and an embedded document, and this subset is the target of our research (SOP-DOM). In contrast to other important concepts like Web Origins (RFC 6454) or the Document Object Model (DOM), there is no formal specification of the SOP-DOM.
+##  [Jörg Schwenk, Horst Görtz Institute for IT Security, Chair for Network and Data Security, Ruhr-University Bochum](https://www.usenix.org/conference/usenixsecurity17/speaker-or-organizer/j%C3%B6rg-schwenk-horst-g%C3%B6rtz-institute-it-security)
 
-In an empirical study, we ran 544 different test cases on each of the 10 major web browsers. We show that in addition to Web Origins, access rights granted by SOPDOM depend on at least three attributes: the type of the embedding element (EE), the sandbox, and CORS attributes. We also show that due to the lack of a formal specification, different browser behaviors could be detected in approximately 23% of our test cases. The issues discovered in Internet Explorer and Edge are also acknowledged by Microsoft (MSRC Case 32703). We discuss our findings in terms of *read, write, and execute* rights in different access control models.
+- [Read more about Jörg Schwenk, Horst Görtz Institute for IT Security, Chair for Network and Data Security, Ruhr-University Bochum](https://www.usenix.org/conference/usenixsecurity17/speaker-or-organizer/j%C3%B6rg-schwenk-horst-g%C3%B6rtz-institute-it-security)
 
-## Open Access Media
+##  [Marcus Niemietz, Horst Görtz Institute for IT Security, Chair for Network and Data Security, Ruhr-University Bochum](https://www.usenix.org/conference/usenixsecurity17/speaker-or-organizer/marcus-niemietz-horst-g%C3%B6rtz-institute-it-security)
+
+- [Read more about Marcus Niemietz, Horst Görtz Institute for IT Security, Chair for Network and Data Security, Ruhr-University Bochum](https://www.usenix.org/conference/usenixsecurity17/speaker-or-organizer/marcus-niemietz-horst-g%C3%B6rtz-institute-it-security)
+
+##  [Christian Mainka, Horst Görtz Institute for IT Security, Chair for Network and Data Security, Ruhr-University Bochum](https://www.usenix.org/conference/usenixsecurity17/speaker-or-organizer/christian-mainka-horst-g%C3%B6rtz-institute-it-security)
+
+- [Read more about Christian Mainka, Horst Görtz Institute for IT Security, Chair for Network and Data Security, Ruhr-University Bochum](https://www.usenix.org/conference/usenixsecurity17/speaker-or-organizer/christian-mainka-horst-g%C3%B6rtz-institute-it-security)
+
+## Open Access Content
 
 USENIX is committed to Open Access to the research presented at our events. Papers and proceedings are freely available to everyone once the event begins. Any video, audio, and/or slides that are posted after the event are also free and open to everyone. [Support USENIX](https://www.usenix.org/annual-fund) and our commitment to Open Access.
+
+![PDF icon](https://www.usenix.org/modules/file/icons/application-pdf.png) [Schwenk PDF](https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-schwenk.pdf)
 
 BibTeX
 
 @inproceedings {203852,
  author = {J{\"o}rg Schwenk and Marcus Niemietz and Christian Mainka},
- title = {{Same-Origin} Policy: Evaluation in Modern Browsers},
- booktitle = {26th USENIX Security Symposium (USENIX Security 17)},
+ title = {Same-Origin Policy: Evaluation in Modern Browsers},
+ booktitle = {26th {USENIX} Security Symposium ({USENIX} Security 17)},
  year = {2017},
  isbn = {978-1-931971-40-9},
  address = {Vancouver, BC},
  pages = {713--727},
  url = {https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/schwenk},
- publisher = {USENIX Association},
- month = aug
+ publisher = {{USENIX} Association},
  }
 
 [Download](https://www.usenix.org/biblio/export/bibtex/203852)
 
-![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Schwenk PDF](https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-schwenk.pdf)
+Abstract:
 
-[View the slides](https://www.usenix.org/sites/default/files/conference/protected-files/usenixsecurity17_slides_marcus_niemietz.pdf)
+The term *Same-Origin Policy (SOP)* is used to denote a complex set of rules which governs the interaction of different *Web Origins* within a web application. A subset of these SOP rules controls the interaction between the host document and an embedded document, and this subset is the target of our research (SOP-DOM). In contrast to other important concepts like Web Origins (RFC 6454) or the Document Object Model (DOM), there is no formal specification of the SOP-DOM.
 
-## Presentation Video
+In an empirical study, we ran 544 different test cases on each of the 10 major web browsers. We show that in addition to Web Origins, access rights granted by SOPDOM depend on at least three attributes: the type of the embedding element (EE), the sandbox, and CORS attributes. We also show that due to the lack of a formal specification, different browser behaviors could be detected in approximately 23% of our test cases. The issues discovered in Internet Explorer and Edge are also acknowledged by Microsoft (MSRC Case 32703). We discuss our findings in terms of *read, write, and execute* rights in different access control models.

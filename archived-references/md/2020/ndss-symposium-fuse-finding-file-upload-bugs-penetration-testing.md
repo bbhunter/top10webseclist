@@ -5,19 +5,24 @@ resource: "https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bu
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:46+00:00"
+  at: "2026-08-11T17:43:41+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/"
     title: "FUSE: Finding File Upload Bugs via Penetration Testing"
+    author: Taekjin Lee, Seongil Wi, Suyoung Lee, Sooel Son
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2020/02/23126-paper.pdf"
-authors: []
+authors:
+  - Taekjin Lee
+  - Seongil Wi
+  - Suyoung Lee
+  - Sooel Son
 canonical_url: ""
 cited_by:
-  - "2020.md:76"
+  - "2020.md:77"
 commit: ""
 content_sha256: e2669561c46f43b83db56e6764d5ee261ec71f86bd1dfbac2c65ff470a5cbb54
 depth: full
@@ -31,8 +36,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: e598aa48f20b92f87bbb497da4c17cc8d1e8f1f4fb582be4c774534064b092e5
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:46+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:41+00:00"
 slug: ndss-symposium-fuse-finding-file-upload-bugs-penetration-testing
 snapshot: ""
 title_english: ""
@@ -42,12 +47,12 @@ translation_of: ""
 
 # FUSE: Finding File Upload Bugs via Penetration Testing
 
-**FUSE: Finding File Upload Bugs via Penetration Testing** - Author not stated, NDSS Symposium.
+**FUSE: Finding File Upload Bugs via Penetration Testing** - Taekjin Lee, Seongil Wi, Suyoung Lee, Sooel Son, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2020/02/23126-paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

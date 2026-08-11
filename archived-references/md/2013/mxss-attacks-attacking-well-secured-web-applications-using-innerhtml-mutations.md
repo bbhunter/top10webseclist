@@ -5,15 +5,21 @@ resource: "https://cure53.de/fp170.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T13:06:22+00:00"
+  at: "2026-08-11T17:34:47+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://cure53.de/fp170.pdf"
     title: "mXSS Attacks: Attacking well-secured Web-Applications by using innerHTML Mutations"
+    author: Mario Heiderich, Jörg Schwenk, Tilman Frosch, Jonas Magazinius, Edward Z. Yang
 also_at: []
-authors: []
+authors:
+  - Mario Heiderich
+  - Jörg Schwenk
+  - Tilman Frosch
+  - Jonas Magazinius
+  - Edward Z. Yang
 canonical_url: ""
 cited_by:
   - "2013.md:5"
@@ -31,7 +37,7 @@ publisher_english: ""
 raw_sha256: 22207254e7c077c725b43884b034eb1bfca5779a37f7fd55a28226f1a581a0b3
 retrieved_from: "https://cure53.de/fp170.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T13:06:22+00:00"
+retrieved_utc: "2026-08-11T17:34:47+00:00"
 slug: mxss-attacks-attacking-well-secured-web-applications-using-innerhtml-mutations
 snapshot: ""
 title_english: ""
@@ -41,11 +47,11 @@ translation_of: ""
 
 # mXSS Attacks: Attacking well-secured Web-Applications by using innerHTML Mutations
 
-**mXSS Attacks: Attacking well-secured Web-Applications by using innerHTML Mutations** - Author not stated, Publisher not stated.
+**mXSS Attacks: Attacking well-secured Web-Applications by using innerHTML Mutations** - Mario Heiderich, Jörg Schwenk, Tilman Frosch, Jonas Magazinius, Edward Z. Yang, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://cure53.de/fp170.pdf>
-- Preserved from: https://cure53.de/fp170.pdf (stored) on 2026-08-10
+- Preserved from: https://cure53.de/fp170.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

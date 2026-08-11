@@ -5,19 +5,26 @@ resource: "https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-explor
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:37+00:00"
+  at: "2026-08-11T17:43:14+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-exploring-email-auto-configuration-in-the-wild/"
     title: "Automatic Insecurity: Exploring Email Auto-configuration in the Wild"
+    author: Shushang Wen, Yiming Zhang, Yuxiang Shen, Bingyu Li, Haixin Duan, Jingqiang Lin
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2025-1078-paper.pdf"
-authors: []
+authors:
+  - Shushang Wen
+  - Yiming Zhang
+  - Yuxiang Shen
+  - Bingyu Li
+  - Haixin Duan
+  - Jingqiang Lin
 canonical_url: ""
 cited_by:
-  - "2025.md:86"
+  - "2025.md:87"
 commit: ""
 content_sha256: a2d8a4e7b95b5cb75699e818faaf324f517a5c0016e3d6006a38ab166d4b823f
 depth: full
@@ -31,8 +38,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: 83759412dfcf06e3d2b63bb8d1dc84fb2120c4e0023ed18e50fa2115c7745035
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-exploring-email-auto-configuration-in-the-wild/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:37+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:14+00:00"
 slug: ndss-symposium-automatic-insecurity-exploring-email-auto-configuration-wild
 snapshot: ""
 title_english: ""
@@ -42,12 +49,12 @@ translation_of: ""
 
 # Automatic Insecurity: Exploring Email Auto-configuration in the Wild
 
-**Automatic Insecurity: Exploring Email Auto-configuration in the Wild** - Author not stated, NDSS Symposium.
+**Automatic Insecurity: Exploring Email Auto-configuration in the Wild** - Shushang Wen, Yiming Zhang, Yuxiang Shen, Bingyu Li, Haixin Duan, Jingqiang Lin, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-exploring-email-auto-configuration-in-the-wild/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2025-1078-paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-exploring-email-auto-configuration-in-the-wild/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-exploring-email-auto-configuration-in-the-wild/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

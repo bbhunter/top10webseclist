@@ -5,18 +5,23 @@ resource: "https://www.ieee-security.org/TC/W2SP/2012/papers/w2sp12-final11.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:53:18+00:00"
+  at: "2026-08-11T17:41:32+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/W2SP/2012/papers/w2sp12-final11.pdf"
     title: "Self-Exfiltration: The Dangers of Browser-Enforced Information Flow Control"
+    author: Eric Y. Chen, Sergey Gorbaty, Astha Singhal, Collin Jackson
 also_at: []
-authors: []
+authors:
+  - Eric Y. Chen
+  - Sergey Gorbaty
+  - Astha Singhal
+  - Collin Jackson
 canonical_url: ""
 cited_by:
-  - "2012.md:82"
+  - "2012.md:77"
 commit: ""
 content_sha256: 438c8badd9487cc36760ac2205692d2926af90c736b77b3fdfb79e79b806a357
 depth: full
@@ -30,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 9a957f925a05fb550e6b9e3705c72521c18a982ebc96cc461a0753470c4b4fc1
 retrieved_from: "https://www.ieee-security.org/TC/W2SP/2012/papers/w2sp12-final11.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:53:18+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:32+00:00"
 slug: self-exfiltration-dangers-browser-enforced-information-flow-control
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # Self-Exfiltration: The Dangers of Browser-Enforced Information Flow Control
 
-**Self-Exfiltration: The Dangers of Browser-Enforced Information Flow Control** - Author not stated, Publisher not stated.
+**Self-Exfiltration: The Dangers of Browser-Enforced Information Flow Control** - Eric Y. Chen, Sergey Gorbaty, Astha Singhal, Collin Jackson, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/W2SP/2012/papers/w2sp12-final11.pdf>
-- Preserved from: https://www.ieee-security.org/TC/W2SP/2012/papers/w2sp12-final11.pdf (live) on 2026-08-08
+- Preserved from: https://www.ieee-security.org/TC/W2SP/2012/papers/w2sp12-final11.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

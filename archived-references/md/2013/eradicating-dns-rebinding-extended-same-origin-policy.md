@@ -5,19 +5,23 @@ resource: "http://web.archive.org/web/20160507023636/http://ben-stock.de/wp-cont
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T13:02:51+00:00"
+  at: "2026-08-11T17:38:03+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://ben-stock.de/wp-content/uploads/dns-rebinding.pdf"
     title: Eradicating DNS Rebinding with the Extended Same-Origin Policy
+    author: Martin Johns, Sebastian Lekies, Ben Stock
   - id: canonical
     resource: "http://web.archive.org/web/20160402141953/https://www.ben-stock.de/wp-content/uploads/dns-rebinding.pdf"
   - id: capture
     resource: "https://web.archive.org/web/20150110195951/http://ben-stock.de/wp-content/uploads/dns-rebinding.pdf"
 also_at: []
-authors: []
+authors:
+  - Martin Johns
+  - Sebastian Lekies
+  - Ben Stock
 canonical_url: "http://web.archive.org/web/20160402141953/https://www.ben-stock.de/wp-content/uploads/dns-rebinding.pdf"
 cited_by:
   - "2013.md:38"
@@ -35,7 +39,7 @@ publisher_english: ""
 raw_sha256: bb3aa797511fff0a28f868d0bd294135f59d9b2fbcb75379204217afb455f686
 retrieved_from: "http://web.archive.org/web/20160402141953/https://www.ben-stock.de/wp-content/uploads/dns-rebinding.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T13:02:51+00:00"
+retrieved_utc: "2026-08-11T17:38:03+00:00"
 slug: eradicating-dns-rebinding-extended-same-origin-policy
 snapshot: 20150110195951
 title_english: ""
@@ -45,12 +49,12 @@ translation_of: ""
 
 # Eradicating DNS Rebinding with the Extended Same-Origin Policy
 
-**Eradicating DNS Rebinding with the Extended Same-Origin Policy** - Author not stated, Publisher not stated.
+**Eradicating DNS Rebinding with the Extended Same-Origin Policy** - Martin Johns, Sebastian Lekies, Ben Stock, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://ben-stock.de/wp-content/uploads/dns-rebinding.pdf>
 - Current location: <http://web.archive.org/web/20160402141953/https://www.ben-stock.de/wp-content/uploads/dns-rebinding.pdf>
-- Preserved from: http://web.archive.org/web/20160402141953/https://www.ben-stock.de/wp-content/uploads/dns-rebinding.pdf (stored) on 2026-08-09
+- Preserved from: http://web.archive.org/web/20160402141953/https://www.ben-stock.de/wp-content/uploads/dns-rebinding.pdf (stored) on 2026-08-11
 - Capture timestamp: 20150110195951
 - Licence: unknown
 
@@ -396,8 +400,7 @@ t
 
 --- page 5 ---
 
-*-/1345666665421/,"
-		&1=HPUY^_``aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``_][XTME:.$"+6AJQVZ^_``aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``_^ZVQKA7,"	$+28=BGKNQSUVXYZ[[[[\\[[[[YXWVUSPMJEA<60+.0246789:;;;;;;::976531.,*,.012233333210/-+
+*-/1345666665421/,"		&1=HPUY^_``aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``_][XTME:.$"+6AJQVZ^_``aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``_^ZVQKA7,"	$+28=BGKNQSUVXYZ[[[[\\[[[[YXWVUSPMJEA<60+.0246789:;;;;;;::976531.,*,.012233333210/-+
 
 --- page 6 ---
 
@@ -1839,8 +1842,8 @@ s
 
 --- page 17 ---
 
-Dý†ýMaÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³
-M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+Dý†ýMaÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
+·
 
 --- page 18 ---
 
@@ -2295,5 +2298,4 @@ org
 --- page 21 ---
 
 YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
-½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
+ $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u

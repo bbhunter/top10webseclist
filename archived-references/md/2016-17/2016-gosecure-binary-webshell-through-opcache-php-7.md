@@ -5,18 +5,20 @@ resource: "https://gosecure.net/2016/04/27/binary-webshell-through-opcache-in-ph
 tags: [article, webseclist-reference, en, gosecure]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T04:43:04+00:00"
+  at: "2026-08-11T17:40:03+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://gosecure.net/2016/04/27/binary-webshell-through-opcache-in-php-7/"
     title: Binary Webshell Through OPcache in PHP 7
+    author: Ian Bouchard
     last_modified: 2016-04-27
   - id: capture
     resource: "https://web.archive.org/web/20161211155253/https://gosecure.net/2016/04/27/binary-webshell-through-opcache-in-php-7/"
 also_at: []
-authors: []
+authors:
+  - Ian Bouchard
 canonical_url: ""
 cited_by:
   - "2016-17.md:16"
@@ -34,7 +36,7 @@ publisher_english: ""
 raw_sha256: fbed04532d5bab05821f62e4b5871860d334df04803ca4e34f971cb3a5f8e576
 retrieved_from: "https://gosecure.net/2016/04/27/binary-webshell-through-opcache-in-php-7/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T04:43:04+00:00"
+retrieved_utc: "2026-08-11T17:40:03+00:00"
 slug: 2016-gosecure-binary-webshell-through-opcache-php-7
 snapshot: 20161211155253
 title_english: ""
@@ -44,11 +46,11 @@ translation_of: ""
 
 # Binary Webshell Through OPcache in PHP 7
 
-**Binary Webshell Through OPcache in PHP 7** - Author not stated, GoSecure.
+**Binary Webshell Through OPcache in PHP 7** - Ian Bouchard, GoSecure.
 
 - Published: 2016-04-27
 - Original: <https://gosecure.net/2016/04/27/binary-webshell-through-opcache-in-php-7/>
-- Preserved from: https://gosecure.net/2016/04/27/binary-webshell-through-opcache-in-php-7/ (stored) on 2026-08-09
+- Preserved from: https://gosecure.net/2016/04/27/binary-webshell-through-opcache-in-php-7/ (stored) on 2026-08-11
 - Capture timestamp: 20161211155253
 - Licence: unknown
 

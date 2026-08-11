@@ -5,20 +5,25 @@ resource: "https://www.blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Boji
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:03:32+00:00"
+  at: "2026-08-11T17:39:16+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf"
     title: Cross-Channel Scripting and Reverse Cross-Channel Scripting
+    author: Hristo Bojinov, Elie Bursztein, Eric Lovett, Dan Boneh
   - id: canonical
     resource: "https://blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf"
 also_at: []
-authors: []
+authors:
+  - Hristo Bojinov
+  - Elie Bursztein
+  - Eric Lovett
+  - Dan Boneh
 canonical_url: "https://blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf"
 cited_by:
-  - "2009.md:103"
+  - "2009.md:104"
 commit: ""
 content_sha256: ca338ddfb9cffadc92dff2081f8f01541b7d4c239fa97735ca46f217b01669e3
 depth: full
@@ -32,8 +37,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: ee9b7a0974b5a61921bf700b368a77856027ae01e54703e0384172c22efc13a4
 retrieved_from: "https://blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:03:32+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:16+00:00"
 slug: cross-channel-scripting-reverse-cross-channel-scripting
 snapshot: ""
 title_english: ""
@@ -43,12 +48,12 @@ translation_of: ""
 
 # Cross-Channel Scripting and Reverse Cross-Channel Scripting
 
-**Cross-Channel Scripting and Reverse Cross-Channel Scripting** - Author not stated, Publisher not stated.
+**Cross-Channel Scripting and Reverse Cross-Channel Scripting** - Hristo Bojinov, Elie Bursztein, Eric Lovett, Dan Boneh, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf>
 - Current location: <https://blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf>
-- Preserved from: https://blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf (live) on 2026-08-10
+- Preserved from: https://blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

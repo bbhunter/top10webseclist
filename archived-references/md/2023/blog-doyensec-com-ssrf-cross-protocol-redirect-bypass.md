@@ -5,15 +5,17 @@ resource: "https://blog.doyensec.com/2023/03/16/ssrf-remediation-bypass.html"
 tags: [article, webseclist-reference, en-us, blog-doyensec-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:54+00:00"
+  at: "2026-08-11T17:39:45+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://blog.doyensec.com/2023/03/16/ssrf-remediation-bypass.html"
     title: SSRF Cross Protocol Redirect Bypass
+    author: Szymon Drosdzol
 also_at: []
-authors: []
+authors:
+  - Szymon Drosdzol
 canonical_url: ""
 cited_by:
   - "2023.md:36"
@@ -30,8 +32,8 @@ publisher: blog.doyensec.com
 publisher_english: ""
 raw_sha256: a4240c7486fcae853b7886e1f5778aae632104fd9d9faa7cc0b47f0f3d24f209
 retrieved_from: "https://blog.doyensec.com/2023/03/16/ssrf-remediation-bypass.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:54+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:45+00:00"
 slug: blog-doyensec-com-ssrf-cross-protocol-redirect-bypass
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # SSRF Cross Protocol Redirect Bypass
 
-**SSRF Cross Protocol Redirect Bypass** - Author not stated, blog.doyensec.com.
+**SSRF Cross Protocol Redirect Bypass** - Szymon Drosdzol, blog.doyensec.com.
 
 - Published: date not stated
 - Original: <https://blog.doyensec.com/2023/03/16/ssrf-remediation-bypass.html>
-- Preserved from: https://blog.doyensec.com/2023/03/16/ssrf-remediation-bypass.html (live) on 2026-08-09
+- Preserved from: https://blog.doyensec.com/2023/03/16/ssrf-remediation-bypass.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

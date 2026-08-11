@@ -5,20 +5,21 @@ resource: "https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-F
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:50:20+00:00"
+  at: "2026-08-11T17:39:20+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf"
     title: A Journey from JNDI/LDAP Manipulation to Remote Code Execution Dream Land
-  - id: canonical
-    resource: "https://blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf"
+    author: Alvaro Muñoz, Oleksandr Mirosh
 also_at: []
-authors: []
-canonical_url: "https://blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf"
+authors:
+  - Alvaro Muñoz
+  - Oleksandr Mirosh
+canonical_url: ""
 cited_by:
-  - "2016-17.md:64"
+  - "2016-17.md:59"
 commit: ""
 content_sha256: 4df6a9a16d9b890a81efe571d8b1f851690ae757b2ab2056d16bf9f589f0d612
 depth: full
@@ -31,9 +32,9 @@ published: ""
 publisher: ""
 publisher_english: ""
 raw_sha256: 43aa56ea691ed5b06e399fdcbd746b77cc43c106d88193375ef817b12bb50b49
-retrieved_from: "https://blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:50:20+00:00"
+retrieved_from: "https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:20+00:00"
 slug: journey-jndi-ldap-manipulation-remote-code-execution-dream-land
 snapshot: ""
 title_english: ""
@@ -43,12 +44,11 @@ translation_of: ""
 
 # A Journey from JNDI/LDAP Manipulation to Remote Code Execution Dream Land
 
-**A Journey from JNDI/LDAP Manipulation to Remote Code Execution Dream Land** - Author not stated, Publisher not stated.
+**A Journey from JNDI/LDAP Manipulation to Remote Code Execution Dream Land** - Alvaro Muñoz, Oleksandr Mirosh, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf>
-- Current location: <https://blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf>
-- Preserved from: https://blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf (live) on 2026-08-08
+- Preserved from: https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

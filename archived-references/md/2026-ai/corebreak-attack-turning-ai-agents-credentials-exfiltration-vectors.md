@@ -5,18 +5,21 @@ resource: "https://i.blackhat.com/BH-USA-26/Presentations/CoreBreak_BlackHat2026
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:50:51+00:00"
+  at: "2026-08-11T17:40:38+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/BH-USA-26/Presentations/CoreBreak_BlackHat2026_FINAL.pdf"
     title: "The CoreBreak Attack: Turning AI Agents into Credentials Exfiltration Vectors"
+    author: Aviyam Ivgi, Hedi Ingber
 also_at: []
-authors: []
+authors:
+  - Aviyam Ivgi
+  - Hedi Ingber
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:100"
+  - "2026-ai.md:78"
 commit: ""
 content_sha256: de69eac73a00875414cabfe85fcbec02e5d128a5af1efcafe84937b0ede62494
 depth: full
@@ -30,8 +33,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 8fc46832790e2c0e79a7adb9b4ab6bb09a0807cd1df57c46ec2457fb7264aa0d
 retrieved_from: "https://i.blackhat.com/BH-USA-26/Presentations/CoreBreak_BlackHat2026_FINAL.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T18:50:51+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:40:38+00:00"
 slug: corebreak-attack-turning-ai-agents-credentials-exfiltration-vectors
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # The CoreBreak Attack: Turning AI Agents into Credentials Exfiltration Vectors
 
-**The CoreBreak Attack: Turning AI Agents into Credentials Exfiltration Vectors** - Author not stated, Publisher not stated.
+**The CoreBreak Attack: Turning AI Agents into Credentials Exfiltration Vectors** - Aviyam Ivgi, Hedi Ingber, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-USA-26/Presentations/CoreBreak_BlackHat2026_FINAL.pdf>
-- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/CoreBreak_BlackHat2026_FINAL.pdf (live) on 2026-08-08
+- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/CoreBreak_BlackHat2026_FINAL.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

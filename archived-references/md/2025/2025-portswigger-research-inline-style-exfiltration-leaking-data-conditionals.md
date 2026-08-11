@@ -5,16 +5,18 @@ resource: "https://portswigger.net/research/inline-style-exfiltration"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:45+00:00"
+  at: "2026-08-11T17:45:02+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/inline-style-exfiltration"
     title: "Inline Style Exfiltration: leaking data with chained CSS conditionals"
+    author: Gareth Heyes
     last_modified: 2025-08-26
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: ""
 cited_by:
   - "2025.md:76"
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 6acca19ca06736cbc3e3041a360307d7a061f2992a819e8a5a322de02c2264c2
 retrieved_from: "https://portswigger.net/research/inline-style-exfiltration"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:45+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:02+00:00"
 slug: 2025-portswigger-research-inline-style-exfiltration-leaking-data-conditionals
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Inline Style Exfiltration: leaking data with chained CSS conditionals
 
-**Inline Style Exfiltration: leaking data with chained CSS conditionals** - Author not stated, PortSwigger Research.
+**Inline Style Exfiltration: leaking data with chained CSS conditionals** - Gareth Heyes, PortSwigger Research.
 
 - Published: 2025-08-26
 - Original: <https://portswigger.net/research/inline-style-exfiltration>
-- Preserved from: https://portswigger.net/research/inline-style-exfiltration (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/inline-style-exfiltration (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,18 +5,22 @@ resource: "https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:27:57+00:00"
+  at: "2026-08-11T17:42:02+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf"
     title: Signing Me onto Your Accounts through Facebook and Google
+    author: Rui Wang, Shuo Chen, XiaoFeng Wang
 also_at: []
-authors: []
+authors:
+  - Rui Wang
+  - Shuo Chen
+  - XiaoFeng Wang
 canonical_url: ""
 cited_by:
-  - "2012.md:70"
+  - "2012.md:71"
 commit: ""
 content_sha256: 977abadd5e489b8915694acf70a98498534b41b11e1bd123d4a6e1a694cdbee7
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: a07d457722bc785b4687b08ba2f2c45922317d5b0e4d09504dc18a5b7465a819
 retrieved_from: "https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:27:57+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:42:02+00:00"
 slug: signing-me-onto-your-accounts-through-facebook-google
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # Signing Me onto Your Accounts through Facebook and Google
 
-**Signing Me onto Your Accounts through Facebook and Google** - Author not stated, Publisher not stated.
+**Signing Me onto Your Accounts through Facebook and Google** - Rui Wang, Shuo Chen, XiaoFeng Wang, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf (live) on 2026-08-10
+- Preserved from: https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

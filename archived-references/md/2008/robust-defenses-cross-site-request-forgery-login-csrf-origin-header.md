@@ -5,18 +5,22 @@ resource: "https://seclab.stanford.edu/websec/csrf/csrf.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:40:28+00:00"
+  at: "2026-08-11T17:45:19+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://seclab.stanford.edu/websec/csrf/csrf.pdf"
     title: Robust Defenses for Cross-Site Request Forgery (Login CSRF & the Origin header)
+    author: Adam Barth, Collin Jackson, John C. Mitchell
 also_at: []
-authors: []
+authors:
+  - Adam Barth
+  - Collin Jackson
+  - John C. Mitchell
 canonical_url: ""
 cited_by:
-  - "2008.md:89"
+  - "2008.md:85"
 commit: ""
 content_sha256: 6e2386eaf2f61ac3e4b13ed006c79d3001bf8ae5175c32bff055c99d664767e9
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 00218eb56fc5827e46cbe138a3a82116c42c064550a1992112de75b8a68c0191
 retrieved_from: "https://seclab.stanford.edu/websec/csrf/csrf.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:40:28+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:19+00:00"
 slug: robust-defenses-cross-site-request-forgery-login-csrf-origin-header
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # Robust Defenses for Cross-Site Request Forgery (Login CSRF & the Origin header)
 
-**Robust Defenses for Cross-Site Request Forgery (Login CSRF & the Origin header)** - Author not stated, Publisher not stated.
+**Robust Defenses for Cross-Site Request Forgery (Login CSRF & the Origin header)** - Adam Barth, Collin Jackson, John C. Mitchell, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://seclab.stanford.edu/websec/csrf/csrf.pdf>
-- Preserved from: https://seclab.stanford.edu/websec/csrf/csrf.pdf (live) on 2026-08-09
+- Preserved from: https://seclab.stanford.edu/websec/csrf/csrf.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

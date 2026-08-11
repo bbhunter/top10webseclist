@@ -5,20 +5,28 @@ resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/roth"
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:05:08+00:00"
+  at: "2026-08-11T17:46:35+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/roth"
     title: "The Security Lottery: Measuring Client-Side Web Security Inconsistencies"
+    author: Sebastian Roth, Stefano Calzavara, Moritz Wilhelm, Alvise Rabitti, Ben Stock
+  - id: capture
+    resource: "https://web.archive.org/web/20221217202111/https://www.usenix.org/conference/usenixsecurity22/presentation/roth"
 also_at: []
-authors: []
+authors:
+  - Sebastian Roth
+  - Stefano Calzavara
+  - Moritz Wilhelm
+  - Alvise Rabitti
+  - Ben Stock
 canonical_url: ""
 cited_by:
-  - "2022.md:80"
+  - "2022.md:81"
 commit: ""
-content_sha256: 98419a7be769502db86e62b52e20057b046ff5fbb5e82e63dc0963f7af73e59b
+content_sha256: 285f65b21d5206aec872888b19be6576ed3ff91756de621f32756e7549716233
 depth: full
 depth_reason: default
 kind: article
@@ -28,12 +36,12 @@ original_url: "https://www.usenix.org/conference/usenixsecurity22/presentation/r
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 547412350875db47561fe1f2ef9ff5b071474f72da84085df91a5e5edc80e665
+raw_sha256: 6f93fdf59eb9c66b9b0d4c07acd93173c144ee8c997ba82b207852d57d0b0202
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity22/presentation/roth"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:05:08+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:46:35+00:00"
 slug: usenix-org-security-lottery-measuring-client-side-web-security-inconsistencies
-snapshot: ""
+snapshot: 20221217202111
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -41,11 +49,12 @@ translation_of: ""
 
 # The Security Lottery: Measuring Client-Side Web Security Inconsistencies
 
-**The Security Lottery: Measuring Client-Side Web Security Inconsistencies** - Author not stated, usenix.org.
+**The Security Lottery: Measuring Client-Side Web Security Inconsistencies** - Sebastian Roth, Stefano Calzavara, Moritz Wilhelm, Alvise Rabitti, Ben Stock, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity22/presentation/roth>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/roth (live) on 2026-08-10
+- Preserved from: https://www.usenix.org/conference/usenixsecurity22/presentation/roth (stored) on 2026-08-11
+- Capture timestamp: 20221217202111
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -60,15 +69,29 @@ page going offline. To read the original, follow the link above.
 
 # The Security Lottery: Measuring Client-Side Web Security Inconsistencies
 
+Authors:
+
 Sebastian Roth, *CISPA Helmholtz Center for Information Security;* Stefano Calzavara, *Università Ca' Foscari Venezia;* Moritz Wilhelm, *CISPA Helmholtz Center for Information Security;* Alvise Rabitti, *Università Ca' Foscari Venezia;* Ben Stock, *CISPA Helmholtz Center for Information Security*
 
+Abstract:
+
 To mitigate a myriad of Web attacks, modern browsers support client-side security policies shipped through HTTP response headers. To enforce these defenses, the server needs to communicate them to the client, a seemingly straightforward process. However, users may access the same site in variegate ways, e.g., using different User-Agents, network access methods, or language settings. All these usage scenarios should enforce the same security policies, otherwise a security lottery would take place: depending on specific client characteristics, different levels of Web application security would be provided to users (inconsistencies). We formalize security guarantees provided through four popular mechanisms and apply this to measure the prevalence of inconsistencies in the security policies of top sites across different client characteristics. Based on our insights, we investigate the security implications of both deterministic and non-deterministic inconsistencies, and show how even prominent services are affected by them.
+
+##  [Sebastian Roth, CISPA Helmholtz Center for Information Security](https://www.usenix.org/conference/usenixsecurity22/speaker-or-organizer/sebastian-roth-cispa-helmholtz-center-information)
+
+##  [Stefano Calzavara, Università Ca' Foscari Venezia](https://www.usenix.org/conference/usenixsecurity22/speaker-or-organizer/stefano-calzavara-universit%C3%A0-ca-foscari-venezia-0)
+
+##  [Moritz Wilhelm, CISPA Helmholtz Center for Information Security](https://www.usenix.org/conference/usenixsecurity22/speaker-or-organizer/moritz-wilhelm-cispa-helmholtz-center-information)
+
+##  [Alvise Rabitti, Università Ca' Foscari Venezia](https://www.usenix.org/conference/usenixsecurity22/speaker-or-organizer/alvise-rabitti-universit%C3%A0-ca-foscari-venezia)
+
+##  [Ben Stock, CISPA Helmholtz Center for Information Security](https://www.usenix.org/conference/usenixsecurity22/speaker-or-organizer/ben-stock-cispa-helmholtz-center-information-0)
 
 ## Open Access Media
 
 USENIX is committed to Open Access to the research presented at our events. Papers and proceedings are freely available to everyone once the event begins. Any video, audio, and/or slides that are posted after the event are also free and open to everyone. [Support USENIX](https://www.usenix.org/annual-fund) and our commitment to Open Access.
 
-![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-locked.png)
+![](https://www.usenix.org/sites/all/modules/usenix/usenix_files/images/usenix-locked.png)
 
 BibTeX
 
@@ -82,16 +105,16 @@ BibTeX
  pages = {2047--2064},
  url = {https://www.usenix.org/conference/usenixsecurity22/presentation/roth},
  publisher = {USENIX Association},
- month = aug
+ month = aug,
  }
 
 [Download](https://www.usenix.org/biblio/export/bibtex/281452)
 
-![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Roth PDF](https://www.usenix.org/system/files/sec22-roth.pdf)
+![PDF icon](https://www.usenix.org/modules/file/icons/application-pdf.png) [Roth PDF](https://www.usenix.org/system/files/sec22-roth.pdf)
 
-![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Roth Appendix PDF](https://www.usenix.org/system/files/usenixsecurity22-roth.pdf)
+![PDF icon](https://www.usenix.org/modules/file/icons/application-pdf.png) [Roth Appendix PDF](https://www.usenix.org/system/files/usenixsecurity22-roth.pdf)
 
-![](https://www.usenix.org/modules/custom/usenix_files/images/usenix-unlocked.png)
+![](https://www.usenix.org/sites/all/modules/usenix/usenix_files/images/usenix-unlocked.png)
 
 [View the slides](https://www.usenix.org/system/files/sec22_slides-roth.pdf)
 

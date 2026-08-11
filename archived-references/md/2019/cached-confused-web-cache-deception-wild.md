@@ -5,15 +5,22 @@ resource: "https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:39:34+00:00"
+  at: "2026-08-11T17:36:57+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf"
     title: "Cached and Confused: Web Cache Deception in the Wild"
+    author: Seyed Ali Mirheidari, Sajjad Arshad, Kaan Onarlioglu, Bruno Crispo, Engin Kirda, William Robertson
 also_at: []
-authors: []
+authors:
+  - Seyed Ali Mirheidari
+  - Sajjad Arshad
+  - Kaan Onarlioglu
+  - Bruno Crispo
+  - Engin Kirda
+  - William Robertson
 canonical_url: ""
 cited_by:
   - "2019.md:5"
@@ -30,8 +37,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 391981498c2ebfd724e074e0e1d401e0dfaaa2774d3874ba3c191c6759184d48
 retrieved_from: "https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:39:34+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:57+00:00"
 slug: cached-confused-web-cache-deception-wild
 snapshot: ""
 title_english: ""
@@ -41,11 +48,11 @@ translation_of: ""
 
 # Cached and Confused: Web Cache Deception in the Wild
 
-**Cached and Confused: Web Cache Deception in the Wild** - Author not stated, Publisher not stated.
+**Cached and Confused: Web Cache Deception in the Wild** - Seyed Ali Mirheidari, Sajjad Arshad, Kaan Onarlioglu, Bruno Crispo, Engin Kirda, William Robertson, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf>
-- Preserved from: https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf (live) on 2026-08-09
+- Preserved from: https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -270,6 +277,7 @@ example.com/account.php#summary
 example.com/account.php
 %23nonexistent.css
 (d) Encoded Pound (
+#
 )
 example.com/account.php?name=val
 example.com/account.php
@@ -287,6 +295,7 @@ Encoded Semicolon (
 ;
 ).Some web servers and web ap-plication frameworks accept lists of parameters in the URLdelimited by semicolons; however, the caching proxy frontingthe server may not be congured to recognize such lists. Thepath confusion technique we present in Figure 4c exploits thisscenario by appending the nonexistent static le name after asemicolon. In a successful attack, the server would decode theURL and return a response forexample.com/account.php,while the proxy would fail to decode the semicolon, interpretexample.com/account.php%3Bnonexistent.cssas a re-source, and attempt to cache the nonexistent style sheet.
 Encoded Pound (
+#
 ).Web servers often process the poundcharacter as an HTML fragment identier, and thereforestop parsing the URL at its rst occurrence. However,proxies and their caching rules may not be congured to11
 
 --- page 15 ---
@@ -300,6 +309,7 @@ Encoded
 ;
 3,912 25,576 91 92 13 7
 Encoded
+#
 7,849 20,794 102 85 14 7
 Encoded
 ?
@@ -318,6 +328,7 @@ Encoded
 ;
 29,488 (68.2%) 105 (70.9%) 14 (56.0%)
 Encoded
+#
 28,643 (66.2%) 109 (73.6%) 15 (60.0%)
 Encoded
 ?
@@ -346,6 +357,7 @@ is ineffective.Technique Path Parameter Encoded
 Encoded
 ;
 Encoded
+#
 Encoded
 ?Path Parameter - 4,390 / 26 / 7 1,010 / 5 / 4 5,691 / 11 / 3 5,673 / 12 / 3
 Encoded
@@ -355,6 +367,7 @@ Encoded
 ;
 696 / 7 / 4 3,761 / 24 / 6 - 4,881 / 9 / 2 4,863 / 8 / 0
 Encoded
+#
 4,532 / 17 / 4 6,386 / 28 / 7 4,036 / 13 / 3 - 90 / 1 / 1
 Encoded
 ?
@@ -779,8 +792,7 @@ org/
 
 --- page 22 ---
 
-á‰M¿›†¦Rå»þÎ¢£§˜
-ôªTÑ2ºà_çÞ×
+á‰M¿›†¦Rå»þÎ¢£§˜ôªTÑ2ºà_çÞ×
 
 --- page 23 ---
 
@@ -789,16 +801,12 @@ org/
 --- page 24 ---
 
 YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
-½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
+ $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
 
 --- page 25 ---
 
-`†µÔ‡
-GîÁì@¾
-ß²›Ìs÷[^’8ì:�’RÓ
+`†µÔ‡GîÁì@¾ß²›Ìs÷[^’8ì:�’RÓ
 
 --- page 26 ---
 
-=ýwú†|’ð{©R1êm.Ìñ[4±B‘¤ÍÛ®o±iÉùS�Mû¯¯?[¼t¶…Ø7æ�Žó£øý–?òbBù1üp”<�ûx'šh‚fŒwO~i-¿â£Kz&K Ò‡% ƒ7eÓÛZ áï-ŽÈ«Æ{&%â¬@ÈYd—e­£�²6
-ŒVL=@¯Ì3ÚÝÆM*?.„{ø¬9�xAmG$¥lÌB¤ËXÿØù'M…Áµšºÿïã™
+=ýwú†|’ð{©R1êm.Ìñ[4±B‘¤ÍÛ®o±iÉùS�Mû¯¯?[¼t¶…Ø7æ�Žó£øý–?òbBù1üp”<�ûx'šh‚fŒwO~i-¿â£Kz&K Ò‡% ƒ7eÓÛZ áï-ŽÈ«Æ{&%â¬@ÈYd—e­£�²6ŒVL=@¯Ì3ÚÝÆM*?.„{ø¬9�xAmG$¥lÌB¤ËXÿØù'M…Áµšºÿïã™

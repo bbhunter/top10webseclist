@@ -5,18 +5,23 @@ resource: "https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:07:47+00:00"
+  at: "2026-08-11T17:39:54+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf"
     title: An Empirical Study of Privacy-Violating Information Flows in JavaScript Web Applications
+    author: Dongseok Jang, Ranjit Jhala, Sorin Lerner, Hovav Shacham
 also_at: []
-authors: []
+authors:
+  - Dongseok Jang
+  - Ranjit Jhala
+  - Sorin Lerner
+  - Hovav Shacham
 canonical_url: ""
 cited_by:
-  - "2010.md:97"
+  - "2010.md:98"
 commit: ""
 content_sha256: c705a11380a1c760356731c9c9b5abb2dbbc29a1ff20cdc1f7d39120fb2aaef3
 depth: full
@@ -30,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 174b1b725e28ed117a9a301c6e973642bcea61f83a1c78c728d63bb1efb2d555
 retrieved_from: "https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:07:47+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:39:54+00:00"
 slug: empirical-study-privacy-violating-information-flows-javascript-web-applications
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # An Empirical Study of Privacy-Violating Information Flows in JavaScript Web Applications
 
-**An Empirical Study of Privacy-Violating Information Flows in JavaScript Web Applications** - Author not stated, Publisher not stated.
+**An Empirical Study of Privacy-Violating Information Flows in JavaScript Web Applications** - Dongseok Jang, Ranjit Jhala, Sorin Lerner, Hovav Shacham, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf>
-- Preserved from: https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf (live) on 2026-08-10
+- Preserved from: https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

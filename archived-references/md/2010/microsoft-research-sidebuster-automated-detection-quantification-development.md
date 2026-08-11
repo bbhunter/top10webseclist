@@ -5,18 +5,24 @@ resource: "https://www.microsoft.com/en-us/research/publication/sidebuster-autom
 tags: [article, webseclist-reference, en, microsoft-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:32:39+00:00"
+  at: "2026-08-11T17:36:03+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.microsoft.com/en-us/research/publication/sidebuster-automated-detection-and-quantification-of-side-channel-leaks-in-web-application-development/"
     title: "Sidebuster: Automated Detection and Quantification of Side-Channel Leaks in Web Application Development"
+    author: Kehuan Zhang, Zhou Li, Rui Wang, XiaoFeng Wang, Shuo Chen
 also_at: []
-authors: []
+authors:
+  - Kehuan Zhang
+  - Zhou Li
+  - Rui Wang
+  - XiaoFeng Wang
+  - Shuo Chen
 canonical_url: ""
 cited_by:
-  - "2010.md:100"
+  - "2010.md:101"
 commit: ""
 content_sha256: 8fea077b91048b2b8a4f400106295e00998b55b9d7f05b3e371b01a126e0f5b7
 depth: full
@@ -30,8 +36,8 @@ publisher: Microsoft Research
 publisher_english: ""
 raw_sha256: d33ea4f1ef8564c7e5e7ea9b6e37af2b9a41b6d13a94c34d470ae1a099dbb5ab
 retrieved_from: "https://www.microsoft.com/en-us/research/publication/sidebuster-automated-detection-and-quantification-of-side-channel-leaks-in-web-application-development/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:32:39+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:03+00:00"
 slug: microsoft-research-sidebuster-automated-detection-quantification-development
 snapshot: ""
 title_english: ""
@@ -41,11 +47,11 @@ translation_of: ""
 
 # Sidebuster: Automated Detection and Quantification of Side-Channel Leaks in Web Application Development
 
-**Sidebuster: Automated Detection and Quantification of Side-Channel Leaks in Web Application Development** - Author not stated, Microsoft Research.
+**Sidebuster: Automated Detection and Quantification of Side-Channel Leaks in Web Application Development** - Kehuan Zhang, Zhou Li, Rui Wang, XiaoFeng Wang, Shuo Chen, Microsoft Research.
 
 - Published: date not stated
 - Original: <https://www.microsoft.com/en-us/research/publication/sidebuster-automated-detection-and-quantification-of-side-channel-leaks-in-web-application-development/>
-- Preserved from: https://www.microsoft.com/en-us/research/publication/sidebuster-automated-detection-and-quantification-of-side-channel-leaks-in-web-application-development/ (live) on 2026-08-10
+- Preserved from: https://www.microsoft.com/en-us/research/publication/sidebuster-automated-detection-and-quantification-of-side-channel-leaks-in-web-application-development/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

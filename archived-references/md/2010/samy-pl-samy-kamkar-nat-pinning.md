@@ -5,15 +5,17 @@ resource: "http://samy.pl/natpin/"
 tags: [article, webseclist-reference, samy-pl]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:57:23+00:00"
+  at: "2026-08-11T17:45:16+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://samy.pl/natpin/"
     title: samy kamkar - NAT Pinning
+    author: Samy Kamkar
 also_at: []
-authors: []
+authors:
+  - Samy Kamkar
 canonical_url: ""
 cited_by:
   - "2010.md:21"
@@ -30,8 +32,8 @@ publisher: samy.pl
 publisher_english: ""
 raw_sha256: f05b91fa7f883238ddb69e6b8b0db321c81475f397df71c16540532a09faf8d0
 retrieved_from: "http://samy.pl/natpin/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:57:23+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:16+00:00"
 slug: samy-pl-samy-kamkar-nat-pinning
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # samy kamkar - NAT Pinning
 
-**samy kamkar - NAT Pinning** - Author not stated, samy.pl.
+**samy kamkar - NAT Pinning** - Samy Kamkar, samy.pl.
 
 - Published: date not stated
 - Original: <http://samy.pl/natpin/>
-- Preserved from: http://samy.pl/natpin/ (live) on 2026-08-10
+- Preserved from: http://samy.pl/natpin/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,18 +5,22 @@ resource: "https://www.ieee-security.org/TC/SP2016/papers/0824a878.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:38+00:00"
+  at: "2026-08-11T17:41:43+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2016/papers/0824a878.pdf"
     title: "Beauty and the Beast: Diverting Modern Web Browsers to Build Unique Browser Fingerprints"
+    author: Pierre Laperdrix, Walter Rudametkin, Benoit Baudry
 also_at: []
-authors: []
+authors:
+  - Pierre Laperdrix
+  - Walter Rudametkin
+  - Benoit Baudry
 canonical_url: ""
 cited_by:
-  - "2016-17.md:85"
+  - "2016-17.md:86"
 commit: ""
 content_sha256: e59a7e08f7468f09296b5f2382931023c3e3882bbf770d5b429a4a72b6f2ef1a
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 5020c8cce89f032a2cfcafbbab7ace3c72f3f277d803db2de29fccf2cdbf6ede
 retrieved_from: "https://www.ieee-security.org/TC/SP2016/papers/0824a878.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:38+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:43+00:00"
 slug: beauty-beast-diverting-modern-web-browsers-build-unique-browser-fingerprints
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # Beauty and the Beast: Diverting Modern Web Browsers to Build Unique Browser Fingerprints
 
-**Beauty and the Beast: Diverting Modern Web Browsers to Build Unique Browser Fingerprints** - Author not stated, Publisher not stated.
+**Beauty and the Beast: Diverting Modern Web Browsers to Build Unique Browser Fingerprints** - Pierre Laperdrix, Walter Rudametkin, Benoit Baudry, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2016/papers/0824a878.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2016/papers/0824a878.pdf (live) on 2026-08-10
+- Preserved from: https://www.ieee-security.org/TC/SP2016/papers/0824a878.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

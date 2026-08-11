@@ -5,18 +5,22 @@ resource: "https://arxiv.org/abs/1908.02204"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:02:31+00:00"
+  at: "2026-08-11T17:34:05+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://arxiv.org/abs/1908.02204"
     title: "Cross-Origin State Inference (COSI) Attacks: Leaking Web Site States through XS-Leaks"
+    author: Avinash Sudhodanan, Soheil Khodayari, Juan Caballero
 also_at: []
-authors: []
+authors:
+  - Avinash Sudhodanan
+  - Soheil Khodayari
+  - Juan Caballero
 canonical_url: ""
 cited_by:
-  - "2019.md:67"
+  - "2019.md:68"
 commit: ""
 content_sha256: 44fbe166b7b54896d2dd37ad13c75e9b8a50a11e1912abde4eca54479f183406
 depth: full
@@ -30,8 +34,8 @@ publisher: arXiv.org
 publisher_english: ""
 raw_sha256: 41b6d12e7b21c47401322acbca8c1ff5e2c3fb191c038e95bd965d591db0c175
 retrieved_from: "https://arxiv.org/abs/1908.02204"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:02:31+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:05+00:00"
 slug: arxiv-org-cross-origin-state-inference-cosi-attacks-leaking-web-site-leaks
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # Cross-Origin State Inference (COSI) Attacks: Leaking Web Site States through XS-Leaks
 
-**Cross-Origin State Inference (COSI) Attacks: Leaking Web Site States through XS-Leaks** - Author not stated, arXiv.org.
+**Cross-Origin State Inference (COSI) Attacks: Leaking Web Site States through XS-Leaks** - Avinash Sudhodanan, Soheil Khodayari, Juan Caballero, arXiv.org.
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/1908.02204>
-- Preserved from: https://arxiv.org/abs/1908.02204 (live) on 2026-08-10
+- Preserved from: https://arxiv.org/abs/1908.02204 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

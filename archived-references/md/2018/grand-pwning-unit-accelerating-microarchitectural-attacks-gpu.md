@@ -5,18 +5,23 @@ resource: "https://download.vusec.net/papers/glitch_sp18.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:51:59+00:00"
+  at: "2026-08-11T17:35:01+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://download.vusec.net/papers/glitch_sp18.pdf"
     title: "Grand Pwning Unit: Accelerating Microarchitectural Attacks with the GPU"
+    author: Pietro Frigo, Cristiano Giuffrida, Herbert Bos, Kaveh Razavi
 also_at: []
-authors: []
+authors:
+  - Pietro Frigo
+  - Cristiano Giuffrida
+  - Herbert Bos
+  - Kaveh Razavi
 canonical_url: ""
 cited_by:
-  - "2018.md:76"
+  - "2018.md:73"
 commit: ""
 content_sha256: 1b8e0aab7994dc401b05db726d3a2985444fc0a48a90bd299a16d753e90badb1
 depth: full
@@ -30,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: e94b5190652323c2e2fe26472fc1a36b60365600a749d250e2c4953e8d17124d
 retrieved_from: "https://download.vusec.net/papers/glitch_sp18.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:51:59+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:01+00:00"
 slug: grand-pwning-unit-accelerating-microarchitectural-attacks-gpu
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # Grand Pwning Unit: Accelerating Microarchitectural Attacks with the GPU
 
-**Grand Pwning Unit: Accelerating Microarchitectural Attacks with the GPU** - Author not stated, Publisher not stated.
+**Grand Pwning Unit: Accelerating Microarchitectural Attacks with the GPU** - Pietro Frigo, Cristiano Giuffrida, Herbert Bos, Kaveh Razavi, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://download.vusec.net/papers/glitch_sp18.pdf>
-- Preserved from: https://download.vusec.net/papers/glitch_sp18.pdf (live) on 2026-08-08
+- Preserved from: https://download.vusec.net/papers/glitch_sp18.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

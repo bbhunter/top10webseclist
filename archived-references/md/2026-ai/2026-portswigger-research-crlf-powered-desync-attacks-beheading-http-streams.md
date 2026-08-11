@@ -5,16 +5,19 @@ resource: "https://portswigger.net/research/crlf-powered-desync-attacks"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:33+00:00"
+  at: "2026-08-11T17:45:05+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/crlf-powered-desync-attacks"
     title: "CRLF-Powered Desync Attacks: Beheading HTTP Streams"
+    author: Tom Stacey, Tobia Righi
     last_modified: 2026-08-05
 also_at: []
-authors: []
+authors:
+  - Tom Stacey
+  - Tobia Righi
 canonical_url: ""
 cited_by:
   - "2026-ai.md:33"
@@ -31,8 +34,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 995e9912583f8ea28639f88c5973890b8e71a123d456943af9f6e535b6dde4c7
 retrieved_from: "https://portswigger.net/research/crlf-powered-desync-attacks"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:33+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:05+00:00"
 slug: 2026-portswigger-research-crlf-powered-desync-attacks-beheading-http-streams
 snapshot: ""
 title_english: ""
@@ -42,11 +45,11 @@ translation_of: ""
 
 # CRLF-Powered Desync Attacks: Beheading HTTP Streams
 
-**CRLF-Powered Desync Attacks: Beheading HTTP Streams** - Author not stated, PortSwigger Research.
+**CRLF-Powered Desync Attacks: Beheading HTTP Streams** - Tom Stacey, Tobia Righi, PortSwigger Research.
 
 - Published: 2026-08-05
 - Original: <https://portswigger.net/research/crlf-powered-desync-attacks>
-- Preserved from: https://portswigger.net/research/crlf-powered-desync-attacks (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/crlf-powered-desync-attacks (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

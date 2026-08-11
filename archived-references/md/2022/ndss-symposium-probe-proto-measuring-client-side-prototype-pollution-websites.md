@@ -5,19 +5,23 @@ resource: "https://www.ndss-symposium.org/ndss-paper/auto-draft-207/"
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:36+00:00"
+  at: "2026-08-11T17:43:21+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/auto-draft-207/"
     title: "Probe the Proto: Measuring Client-Side Prototype Pollution Vulnerabilities of One Million Real-world Websites"
+    author: Zifeng Kang, Song Li, Yinzhi Cao
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2022-308-paper.pdf"
-authors: []
+authors:
+  - Zifeng Kang
+  - Song Li
+  - Yinzhi Cao
 canonical_url: ""
 cited_by:
-  - "2022.md:71"
+  - "2022.md:72"
 commit: ""
 content_sha256: 2f176b54cb6cecc2bdc12b3cefbd280b211db4da80b125bb7b89536e7bbe02ea
 depth: full
@@ -31,8 +35,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: 923ae5bd9cde1d9298cd4cef864396406052a4b12739d85556caedf09cdab6e6
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/auto-draft-207/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:36+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:21+00:00"
 slug: ndss-symposium-probe-proto-measuring-client-side-prototype-pollution-websites
 snapshot: ""
 title_english: ""
@@ -42,12 +46,12 @@ translation_of: ""
 
 # Probe the Proto: Measuring Client-Side Prototype Pollution Vulnerabilities of One Million Real-world Websites
 
-**Probe the Proto: Measuring Client-Side Prototype Pollution Vulnerabilities of One Million Real-world Websites** - Author not stated, NDSS Symposium.
+**Probe the Proto: Measuring Client-Side Prototype Pollution Vulnerabilities of One Million Real-world Websites** - Zifeng Kang, Song Li, Yinzhi Cao, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/auto-draft-207/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2022-308-paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/auto-draft-207/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/auto-draft-207/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

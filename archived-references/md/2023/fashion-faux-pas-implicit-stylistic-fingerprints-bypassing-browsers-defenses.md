@@ -5,18 +5,24 @@ resource: "https://www.cs.uic.edu/~polakis/papers/lin-sp23.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:07:55+00:00"
+  at: "2026-08-11T17:34:29+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.cs.uic.edu/~polakis/papers/lin-sp23.pdf"
     title: "Fashion Faux Pas: Implicit Stylistic Fingerprints for Bypassing Browsers' Anti-Fingerprinting Defenses"
+    author: Xu Lin, Frederico Araujo, Teryl Taylor, Jiyong Jang, Jason Polakis
 also_at: []
-authors: []
+authors:
+  - Xu Lin
+  - Frederico Araujo
+  - Teryl Taylor
+  - Jiyong Jang
+  - Jason Polakis
 canonical_url: ""
 cited_by:
-  - "2023.md:90"
+  - "2023.md:91"
 commit: ""
 content_sha256: 2a63b47016677d6c47b10d285e3545be73fa1eb3c55033b05ee68a255d882069
 depth: full
@@ -30,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: c17998dae976f0f381f8ef35caa83d8bf7ec18107070122b2c4e12e9a3e6c529
 retrieved_from: "https://www.cs.uic.edu/~polakis/papers/lin-sp23.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:07:55+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:29+00:00"
 slug: fashion-faux-pas-implicit-stylistic-fingerprints-bypassing-browsers-defenses
 snapshot: ""
 title_english: ""
@@ -41,11 +47,11 @@ translation_of: ""
 
 # Fashion Faux Pas: Implicit Stylistic Fingerprints for Bypassing Browsers' Anti-Fingerprinting Defenses
 
-**Fashion Faux Pas: Implicit Stylistic Fingerprints for Bypassing Browsers' Anti-Fingerprinting Defenses** - Author not stated, Publisher not stated.
+**Fashion Faux Pas: Implicit Stylistic Fingerprints for Bypassing Browsers' Anti-Fingerprinting Defenses** - Xu Lin, Frederico Araujo, Teryl Taylor, Jiyong Jang, Jason Polakis, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.cs.uic.edu/~polakis/papers/lin-sp23.pdf>
-- Preserved from: https://www.cs.uic.edu/~polakis/papers/lin-sp23.pdf (live) on 2026-08-10
+- Preserved from: https://www.cs.uic.edu/~polakis/papers/lin-sp23.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

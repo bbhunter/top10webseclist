@@ -5,17 +5,19 @@ resource: "https://www.intruder.io/research/practical-http-header-smuggling"
 tags: [article, webseclist-reference, intruder-io]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T13:36:27+00:00"
+  at: "2026-08-11T17:42:16+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.intruder.io/research/practical-http-header-smuggling"
     title: "Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond"
+    author: Daniel Thatcher
   - id: capture
     resource: "https://web.archive.org/web/20211111200543/https://www.intruder.io/research/practical-http-header-smuggling"
 also_at: []
-authors: []
+authors:
+  - Daniel Thatcher
 canonical_url: ""
 cited_by:
   - "2021.md:12"
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 3a92cd6f7b9d25674d0e6be297d17914226e2714be54b7713848f9e2b88f4565
 retrieved_from: "https://www.intruder.io/research/practical-http-header-smuggling"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T13:36:27+00:00"
+retrieved_utc: "2026-08-11T17:42:16+00:00"
 slug: intruder-io-practical-http-header-smuggling-sneaking-past-reverse-beyond
 snapshot: 20211111200543
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond
 
-**Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond** - Author not stated, intruder.io.
+**Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond** - Daniel Thatcher, intruder.io.
 
 - Published: date not stated
 - Original: <https://www.intruder.io/research/practical-http-header-smuggling>
-- Preserved from: https://www.intruder.io/research/practical-http-header-smuggling (stored) on 2026-08-10
+- Preserved from: https://www.intruder.io/research/practical-http-header-smuggling (stored) on 2026-08-11
 - Capture timestamp: 20211111200543
 - Licence: unknown
 

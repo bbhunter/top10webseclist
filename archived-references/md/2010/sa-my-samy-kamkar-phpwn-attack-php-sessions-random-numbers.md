@@ -1,26 +1,28 @@
 ---
 type: Article
-title: "samy kamkar - phpwn: Attack on PHP Sessions and Random Numbers"
+title: Attack on PHP Sessions and Random Numbers
 resource: "http://samy.pl/phpwn/"
-tags: [article, webseclist-reference, sa-my]
+tags: [article, webseclist-reference, samy-pl]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:57:25+00:00"
+  at: "2026-08-11T17:45:15+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://samy.pl/phpwn/"
-    title: "samy kamkar - phpwn: Attack on PHP Sessions and Random Numbers"
-  - id: canonical
-    resource: "http://sa.my/phpwn/"
+    title: Attack on PHP Sessions and Random Numbers
+    author: Samy Kamkar
+  - id: capture
+    resource: "https://web.archive.org/web/20100813061342/http://samy.pl/phpwn/"
 also_at: []
-authors: []
-canonical_url: "http://sa.my/phpwn/"
+authors:
+  - Samy Kamkar
+canonical_url: ""
 cited_by:
   - "2010.md:20"
 commit: ""
-content_sha256: 5946105b74ff9c8a13649de6d9aefd422021391de9b06372e9d39a491e2ce43f
+content_sha256: c6cfe6545dc68670d6b2219b5e8e28eba68ee9c9eb91038b17d33a5b393b8291
 depth: full
 depth_reason: default
 kind: article
@@ -28,27 +30,27 @@ language: ""
 licence: unknown
 original_url: "http://samy.pl/phpwn/"
 published: ""
-publisher: sa.my
+publisher: samy.pl
 publisher_english: ""
-raw_sha256: 6bb81ba5334e183c77d7359895d79ca1e6cb7152faa00c1e038a6e7a0b867554
-retrieved_from: "http://sa.my/phpwn/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:57:25+00:00"
+raw_sha256: 66070879b18cde2c4ceb75f45b61aeebf3fc6744dbf9427f42428309d0af702f
+retrieved_from: "http://samy.pl/phpwn/"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:15+00:00"
 slug: sa-my-samy-kamkar-phpwn-attack-php-sessions-random-numbers
-snapshot: ""
+snapshot: 20100813061342
 title_english: ""
 translation_file: ""
 translation_of: ""
 ---
 
-# samy kamkar - phpwn: Attack on PHP Sessions and Random Numbers
+# Attack on PHP Sessions and Random Numbers
 
-**samy kamkar - phpwn: Attack on PHP Sessions and Random Numbers** - Author not stated, sa.my.
+**Attack on PHP Sessions and Random Numbers** - Samy Kamkar, samy.pl.
 
 - Published: date not stated
 - Original: <http://samy.pl/phpwn/>
-- Current location: <http://sa.my/phpwn/>
-- Preserved from: http://sa.my/phpwn/ (live) on 2026-08-10
+- Preserved from: http://samy.pl/phpwn/ (stored) on 2026-08-11
+- Capture timestamp: 20100813061342
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -61,13 +63,11 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-samy kamkar - phpwn: Attack on PHP Sessions and Random Numbers
+Attack on PHP Sessions and Random Numbers
 
- [home page](http://samy.pl) || [follow my twitter](http://twitter.com/samykamkar) || [blog](http://namb.la) || [email me](mailto:code@sa.my) || samy kamkar
+ [home page](http://samy.pl) || [follow my twitter](http://twitter.com/samykamkar) || [blog](http://namb.la) || [email me](mailto:code@samy.pl) || samy kamkar
 
 ---
-
- [**Read the full PHPWN paper here (presented at Black Hat & DEF CON 2010)**](http://sa.my/phpwn/BlackHat-USA-2010-Kamkar-How-I-Met-Your-Girlfriend-wp.pdf)
 
  **phpwn: Attack on PHP sessions and random numbers**
 
@@ -79,18 +79,15 @@ samy kamkar - phpwn: Attack on PHP Sessions and Random Numbers
 
 ---
 
- **Warning**: session_start(): Cannot send session cookie - headers already sent by (output started at /var/www/samy/phpwn/index.php:21) in **/var/www/samy/phpwn/index.php** on line **25**
+ Hi 207.241.235.49! The time is 1281680022
 
- **Warning**: session_start(): Cannot send session cache limiter - headers already sent (output started at /var/www/samy/phpwn/index.php:21) in **/var/www/samy/phpwn/index.php** on line **25**
- Hi 31.94.38.26! The time is 1786377441
+To test breaking the seed, run the following (after compiling [s1s2.c](http://samy.pl/phpwn/s1s2.c))
+`time [./s1s2](http://samy.pl/phpwn/s1s2.c) 28267 0.29084925261522`
 
-To test breaking the seed, run the following (after compiling [s1s2.c](http://sa.my/phpwn/s1s2.c))
-`time [./s1s2](http://sa.my/phpwn/s1s2.c) 26481 0.42932092823522`
+Can you guess my next lcg_value based off the above? (hint: it's 0.65361082239897).
+Test by running: `time [./lcg-state-forward](http://samy.pl/phpwn/lcg-state-forward.c) [s1] [s2] 100`
 
-Can you guess my next lcg_value based off the above? (hint: it's 0.5576357755996).
-Test by running: `time [./lcg-state-forward](http://sa.my/phpwn/lcg-state-forward.c) [s1] [s2] 100`
-
-Your [session_id](http://www.test.com/search?q=32862dd3cef825e4af506032ab5d2dd4) is 32862dd3cef825e4af506032ab5d2dd4 (or just look at your cookie)
+Your session_id is mhnppgr0ne3ofqofujbpr6lv71 (or just look at your cookie)
 
 ---
 
@@ -109,7 +106,7 @@ echo "<code>time <a href='s1s2.c'>./s1s2</a> " . getmypid() . " " . lcg_value() 
 echo "Can you guess my next lcg_value based off the above? (hint: it's " . lcg_value() . ").<br>";
 echo "Test by running: <code>time <a href='lcg-state-forward.c'>./lcg-state-forward</a> [s1] [s2] 100</code><p>";
 
-echo "Your <a href='http://www.test.com/search?q=" . session_id() . "'>session_id</a> is " . session_id() . " (or just look at your cookie)";
+echo "Your session_id is " . session_id() . " (or just look at your cookie)";
 
 ```
 
@@ -117,20 +114,20 @@ echo "Your <a href='http://www.test.com/search?q=" . session_id() . "'>session_i
 
 # Index of /phpwn
 
-| ![[ICO]](http://sa.my/icons/blank.gif) | [Name](http://sa.my/phpwn/?C=N;O=D) | [Last modified](http://sa.my/phpwn/?C=M;O=A) | [Size](http://sa.my/phpwn/?C=S;O=A) | [Description](http://sa.my/phpwn/?C=D;O=A) |  |
+| ![[ICO]](http://samy.pl/icons/blank.gif) | [Name](http://samy.pl/phpwn/?C=N;O=D) | [Last modified](http://samy.pl/phpwn/?C=M;O=A) | [Size](http://samy.pl/phpwn/?C=S;O=A) | [Description](http://samy.pl/phpwn/?C=D;O=A) |  |
 |
 
 ---
 
  |  |
-| ![[DIR]](http://sa.my/icons/back.gif) | [Parent Directory](http://sa.my/) |  |  -  |  |
-| ![[TXT]](http://sa.my/icons/text.gif) | [lcg-state-forward.c](http://sa.my/phpwn/lcg-state-forward.c) | 07-Jan-2010 11:53  | 1.0K |  |
-| ![[TXT]](http://sa.my/icons/text.gif) | [lcg-state-reverse.c](http://sa.my/phpwn/lcg-state-reverse.c) | 06-Sep-2009 10:44  | 2.7K |  |
-| ![[TXT]](http://sa.my/icons/text.gif) | [s1s2-rand.c](http://sa.my/phpwn/s1s2-rand.c) | 06-Sep-2009 10:44  | 2.1K |  |
-| ![[TXT]](http://sa.my/icons/text.gif) | [s1s2-session.c](http://sa.my/phpwn/s1s2-session.c) | 06-Sep-2009 10:44  | 3.2K |  |
-| ![[TXT]](http://sa.my/icons/text.gif) | [s1s2.c](http://sa.my/phpwn/s1s2.c) | 07-Jan-2010 11:44  | 3.4K |  |
-| ![[TXT]](http://sa.my/icons/text.gif) | [time-lcg-session.c](http://sa.my/phpwn/time-lcg-session.c) | 07-Jan-2010 11:45  | 3.2K |  |
-| ![[TXT]](http://sa.my/icons/text.gif) | [time-session.c](http://sa.my/phpwn/time-session.c) | 07-Jan-2010 11:46  | 4.6K |  |
+| ![[DIR]](http://samy.pl/icons/back.gif) | [Parent Directory](http://samy.pl/) |  |  -  |  |
+| ![[TXT]](http://samy.pl/icons/text.gif) | [lcg-state-forward.c](http://samy.pl/phpwn/lcg-state-forward.c) | 07-Jan-2010 11:53  | 1.0K |  |
+| ![[TXT]](http://samy.pl/icons/text.gif) | [lcg-state-reverse.c](http://samy.pl/phpwn/lcg-state-reverse.c) | 06-Sep-2009 10:44  | 2.7K |  |
+| ![[TXT]](http://samy.pl/icons/text.gif) | [s1s2-rand.c](http://samy.pl/phpwn/s1s2-rand.c) | 06-Sep-2009 10:44  | 2.1K |  |
+| ![[TXT]](http://samy.pl/icons/text.gif) | [s1s2-session.c](http://samy.pl/phpwn/s1s2-session.c) | 06-Sep-2009 10:44  | 3.2K |  |
+| ![[TXT]](http://samy.pl/icons/text.gif) | [s1s2.c](http://samy.pl/phpwn/s1s2.c) | 07-Jan-2010 11:44  | 3.4K |  |
+| ![[TXT]](http://samy.pl/icons/text.gif) | [time-lcg-session.c](http://samy.pl/phpwn/time-lcg-session.c) | 07-Jan-2010 11:45  | 3.2K |  |
+| ![[TXT]](http://samy.pl/icons/text.gif) | [time-session.c](http://samy.pl/phpwn/time-session.c) | 07-Jan-2010 11:46  | 4.6K |  |
 |
 
 ---

@@ -5,18 +5,23 @@ resource: "https://raid2024.github.io/papers/raid2024-14.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-07T09:43:16+00:00"
+  at: "2026-08-11T17:36:50+00:00"
 status: stable
-stale_after: 2027-08-07
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://raid2024.github.io/papers/raid2024-14.pdf"
     title: "Gudifu: Guided Differential Fuzzing for HTTP Request Parsing Discrepancies"
+    author: Bahruz Jabiyev, Anthony Gavazzi, Kaan Onarlioglu, Engin Kirda
 also_at: []
-authors: []
+authors:
+  - Bahruz Jabiyev
+  - Anthony Gavazzi
+  - Kaan Onarlioglu
+  - Engin Kirda
 canonical_url: ""
 cited_by:
-  - "2024.md:70"
+  - "2024.md:68"
 commit: ""
 content_sha256: 4b172aa5f4144efd4245b05882d214153b4d6a3ad29147a21ae50ad3f442ab61
 depth: full
@@ -30,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 05cf6ce3e625dfe41db29287d39583b9a59168182e116f08f05c652de27c72e0
 retrieved_from: "https://raid2024.github.io/papers/raid2024-14.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-07T09:43:16+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:50+00:00"
 slug: gudifu-guided-differential-fuzzing-http-request-parsing-discrepancies
 snapshot: ""
 title_english: ""
@@ -41,15 +46,15 @@ translation_of: ""
 
 # Gudifu: Guided Differential Fuzzing for HTTP Request Parsing Discrepancies
 
-**Gudifu: Guided Differential Fuzzing for HTTP Request Parsing Discrepancies** - Author not stated, Publisher not stated.
+**Gudifu: Guided Differential Fuzzing for HTTP Request Parsing Discrepancies** - Bahruz Jabiyev, Anthony Gavazzi, Kaan Onarlioglu, Engin Kirda, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://raid2024.github.io/papers/raid2024-14.pdf>
-- Preserved from: https://raid2024.github.io/papers/raid2024-14.pdf (live) on 2026-08-07
+- Preserved from: https://raid2024.github.io/papers/raid2024-14.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

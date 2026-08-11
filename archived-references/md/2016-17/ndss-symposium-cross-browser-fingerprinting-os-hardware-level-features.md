@@ -5,20 +5,24 @@ resource: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/cross-bro
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:34:53+00:00"
+  at: "2026-08-11T17:43:25+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/cross-browser-fingerprinting-os-and-hardware-level-features/"
     title: (Cross-)Browser Fingerprinting via OS and Hardware Level Features
+    author: Yinzhi Cao, Song Li, Erik Wijmans
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/ndss2017_02B-3_Cao_paper.pdf"
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/ndss2017_02b_3_cao_slides.pdf"
-authors: []
+authors:
+  - Yinzhi Cao
+  - Song Li
+  - Erik Wijmans
 canonical_url: ""
 cited_by:
-  - "2016-17.md:97"
+  - "2016-17.md:98"
 commit: ""
 content_sha256: afa328fe561702f1e3bc3ad1ed41c8905ecd2966bbfcc2232c168d33e8eef24d
 depth: full
@@ -32,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 98364e9bc5dc4b5dff7517a3dee85fb921bbea35be992c429f709f5902546daf
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/ndss2017_02B-3_Cao_paper.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:34:53+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:25+00:00"
 slug: ndss-symposium-cross-browser-fingerprinting-os-hardware-level-features
 snapshot: ""
 title_english: ""
@@ -43,13 +47,13 @@ translation_of: ""
 
 # (Cross-)Browser Fingerprinting via OS and Hardware Level Features
 
-**(Cross-)Browser Fingerprinting via OS and Hardware Level Features** - Author not stated, Publisher not stated.
+**(Cross-)Browser Fingerprinting via OS and Hardware Level Features** - Yinzhi Cao, Song Li, Erik Wijmans, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/cross-browser-fingerprinting-os-and-hardware-level-features/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/ndss2017_02B-3_Cao_paper.pdf>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/ndss2017_02b_3_cao_slides.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/ndss2017_02B-3_Cao_paper.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/ndss2017_02B-3_Cao_paper.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

@@ -5,24 +5,26 @@ resource: "https://web.archive.org/web/20160403035045/https://www.duosecurity.co
 tags: [article, webseclist-reference, en, the-duo-security-bulletin]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:09:20+00:00"
+  at: "2026-08-11T17:35:03+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security"
     title: "The PayPal 2FA Bypass: How Legacy Infrastructure Impacts Modern Security"
+    author: Jon Oberheide
   - id: canonical
-    resource: "https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security"
+    resource: "https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security"
   - id: capture
     resource: "https://web.archive.org/web/20160403035045/https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security"
 also_at: []
-authors: []
-canonical_url: "https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security"
+authors:
+  - Jon Oberheide
+canonical_url: "https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security"
 cited_by:
   - "2014.md:25"
 commit: ""
-content_sha256: 7ea1f0dfdbf9277d907b8a9e980a1730531c35a6e2f6e1bf0835af6e3b1759aa
+content_sha256: 782922213e54e990cbe09909f6801ec671f78bad6f5f919b5fef41b723037164
 depth: full
 depth_reason: default
 kind: article
@@ -33,9 +35,9 @@ published: ""
 publisher: The Duo Security Bulletin
 publisher_english: ""
 raw_sha256: 0d8fd4a8fe02455e7cac7a1d1335f2e04d530a6c3cbbd20e45c967f443529d3b
-retrieved_from: "https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:09:20+00:00"
+retrieved_from: "https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:03+00:00"
 slug: the-duo-security-bulletin-paypal-2fa-bypass-how-legacy-infrastructure-security
 snapshot: 20160403035045
 title_english: ""
@@ -45,12 +47,12 @@ translation_of: ""
 
 # The PayPal 2FA Bypass: How Legacy Infrastructure Impacts Modern Security
 
-**The PayPal 2FA Bypass: How Legacy Infrastructure Impacts Modern Security** - Author not stated, The Duo Security Bulletin.
+**The PayPal 2FA Bypass: How Legacy Infrastructure Impacts Modern Security** - Jon Oberheide, The Duo Security Bulletin.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security>
-- Current location: <https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security>
-- Preserved from: https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security (live) on 2026-08-10
+- Current location: <https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security>
+- Preserved from: https://www.duosecurity.com/blog/the-paypal-2fa-bypass-how-legacy-infrastructure-impacts-modern-security (stored) on 2026-08-11
 - Capture timestamp: 20160403035045
 - Licence: unknown
 
@@ -70,11 +72,11 @@ The Wayback Machine - https://web.archive.org/web/20150110194832/https://www.duo
 
 # The PayPal 2FA Bypass: How Legacy Infrastructure Impacts Modern Security
 
--  [ ![](https://web.archive.org/web/20150110194832im_/https://www.duosecurity.com/static/images/team/jono_1.jpg) Jon Oberheide ](https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/author/jono)
+-  [ ![](https://www.duosecurity.com/web/20150110194832im_/https://www.duosecurity.com/static/images/team/jono_1.jpg) Jon Oberheide ](https://www.duosecurity.com/web/20150110194832/https://www.duosecurity.com/blog/author/jono)
 
 #### Jun 26, 2014
 
-*[See [Part 1 for our technical write up](https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/duo-security-researchers-uncover-bypass-of-paypal-s-two-factor-authentication) and demonstration video.]*
+*[See [Part 1 for our technical write up](https://www.duosecurity.com/web/20150110194832/https://www.duosecurity.com/blog/duo-security-researchers-uncover-bypass-of-paypal-s-two-factor-authentication) and demonstration video.]*
 
 Once upon a time, our buddy [Dan](https://web.archive.org/web/20150110194832/https://twitter.com/dbl) reached out to us to inquire about a surprising issue he observed in the PayPal iOS mobile app.
 
@@ -82,7 +84,7 @@ Dan is a tech-savvy guy (founder of [EverydayCarry.com](https://web.archive.org/
 
 Dan observed that after he logged in to his [2FA-protected](https://web.archive.org/web/20150110194832/https://www.paypal.com/securitykey) PayPal account using the iOS mobile app, he would be automatically logged out since the mobile app does not yet support 2FA login. However, Dan noticed that if he enabled his iPhone’s “Airplane mode” at the right moment, the app would fail to log him out and he would have normal, full access to his PayPal account without ever completing two-factor authentication.
 
-![](https://web.archive.org/web/20150110194832im_/https://www.duosecurity.com/static/images/blog/paypal2_image00.jpg)
+![](https://www.duosecurity.com/web/20150110194832im_/https://www.duosecurity.com/static/images/blog/paypal2_image00.jpg)
 
 If you’re a security d00d, that should pop red flags, ring alarm bells, and raise your mental [DHS hacker advisory level](https://web.archive.org/web/20150110194832/http://www.wired.com/images_blogs/threatlevel/2011/01/threat_colors_01.jpg) from ELEVATED to HIGH.
 
@@ -100,7 +102,7 @@ If you have enabled two-factor on your PayPal account, congratulations on naviga
 
 The bad news: you’ve unknowingly been living dangerously, since the weakness we identified in PayPal’s authentication process allows a complete bypass of the two-factor mechanism. In addition, many users of two-factor may feel more confident about their account security and thereby lower their guard when it comes to selecting or protecting their password, putting them at greater risk.
 
-![](https://web.archive.org/web/20150110194832im_/https://www.duosecurity.com/static/images/blog/paypal2_image02.jpg)
+![](https://www.duosecurity.com/web/20150110194832im_/https://www.duosecurity.com/static/images/blog/paypal2_image02.jpg)
 
 Does that mean you should avoid enabling two-factor across the web? No way! While implementation flaws may limit the efficacy in some specific cases like this one, properly implemented 2FA is one of the most effective technologies to secure your accounts, so [apply liberally](https://web.archive.org/web/20150110194832/http://twofactorauth.org/)!
 
@@ -110,7 +112,7 @@ When dissecting the PayPal vulnerability, it quickly becomes clear that the root
 
 This is particularly challenging for a company at the scale of PayPal that has an extensive ecosystem of merchant partners, payment APIs, and checkout SDKs to integrate into thousands of third-party applications and services. Making significant changes in authentication flow, the one security control that gates all vital access and privilege, is an enormously arduous and fragile task.
 
-![](https://web.archive.org/web/20150110194832im_/https://www.duosecurity.com/static/images/blog/paypal2_image01.jpg)
+![](https://www.duosecurity.com/web/20150110194832im_/https://www.duosecurity.com/static/images/blog/paypal2_image01.jpg)
 
 Unsurprisingly, this is not the first time we’ve observed legacy infrastructure have a major impact on the security of two-factor authentication. In fact, about a year ago, we published a similar break in Google’s two-factor authentication service, that resulted from a mechanism called “Application Specific Passwords” that was designed to maintain compatibility with legacy authentication interfaces: [Bypassing Google’s Two-Factor Authentication](https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/bypassing-googles-two-factor-authentication).
 
@@ -136,7 +138,7 @@ In other words, we have a lot more great research going on at [Duo Labs](https:/
 
  [** @jonoberheide](https://web.archive.org/web/20150110194832/http://twitter.com/jonoberheide)
 
-#### [ ![](https://web.archive.org/web/20150110194832im_/https://www.duosecurity.com/static/images/team/jono_1.jpg) Jon Oberheide](https://web.archive.org/web/20150110194832/https://www.duosecurity.com/blog/author/jono)
+#### [ ![](https://www.duosecurity.com/web/20150110194832im_/https://www.duosecurity.com/static/images/team/jono_1.jpg) Jon Oberheide](https://www.duosecurity.com/web/20150110194832/https://www.duosecurity.com/blog/author/jono)
  Co-Founder and CTO
 
 Jon is the co-founder and CTO of Duo Security, responsible for leading product vision and the Duo Labs advanced research team. Before starting Duo, Jon was a self-loathing academic, completing his PhD at the University of Michigan in the realm of cloud security. In a prior life, Jon enjoyed offensive security research and generally hacking the planet. Jon was recently named to Forbes "30 under 30" list for his mobile security hijinks.

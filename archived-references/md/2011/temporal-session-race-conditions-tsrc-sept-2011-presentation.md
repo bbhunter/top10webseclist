@@ -5,15 +5,17 @@ resource: "https://storage.googleapis.com/google-code-archive-downloads/v2/code.
 tags: [slides, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-07T09:43:38+00:00"
+  at: "2026-08-11T17:37:13+00:00"
 status: stable
-stale_after: 2027-08-07
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Temporal%20Session%20Race%20Conditions%20%28TSRC%29%20-%20Sept%202011%20-%20Presentation.pptx"
     title: Temporal Session Race Conditions (TSRC) Sept 2011 Presentation
+    author: Shay Chen
 also_at: []
-authors: []
+authors:
+  - Shay Chen
 canonical_url: ""
 cited_by:
   - "2011.md:54"
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 255faa9386a609124d7390b167076fc2ad61ed4aeadb393c7f8d7350c8ad01a8
 retrieved_from: "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Temporal%20Session%20Race%20Conditions%20%28TSRC%29%20-%20Sept%202011%20-%20Presentation.pptx"
-retrieved_kind: live
-retrieved_utc: "2026-08-07T09:43:38+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:37:13+00:00"
 slug: temporal-session-race-conditions-tsrc-sept-2011-presentation
 snapshot: ""
 title_english: ""
@@ -41,15 +43,15 @@ translation_of: ""
 
 # Temporal Session Race Conditions (TSRC) Sept 2011 Presentation
 
-**Temporal Session Race Conditions (TSRC) Sept 2011 Presentation** - Author not stated, Publisher not stated.
+**Temporal Session Race Conditions (TSRC) Sept 2011 Presentation** - Shay Chen, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Temporal%20Session%20Race%20Conditions%20%28TSRC%29%20-%20Sept%202011%20-%20Presentation.pptx>
-- Preserved from: https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Temporal%20Session%20Race%20Conditions%20%28TSRC%29%20-%20Sept%202011%20-%20Presentation.pptx (live) on 2026-08-07
+- Preserved from: https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Temporal%20Session%20Race%20Conditions%20%28TSRC%29%20-%20Sept%202011%20-%20Presentation.pptx (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

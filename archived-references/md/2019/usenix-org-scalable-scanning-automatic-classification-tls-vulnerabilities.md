@@ -5,20 +5,30 @@ resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/merge
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:04:49+00:00"
+  at: "2026-08-11T17:46:13+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/merget"
     title: Scalable Scanning and Automatic Classification of TLS Padding Oracle Vulnerabilities
+    author: Robert Merget, Juraj Somorovsky, Nimrod Aviram, Craig Young, Janis Fliegenschmidt, Jörg Schwenk, Yuval Shavitt
+  - id: capture
+    resource: "https://web.archive.org/web/20191120111615/https://www.usenix.org/conference/usenixsecurity19/presentation/merget"
 also_at: []
-authors: []
+authors:
+  - Robert Merget
+  - Juraj Somorovsky
+  - Nimrod Aviram
+  - Craig Young
+  - Janis Fliegenschmidt
+  - Jörg Schwenk
+  - Yuval Shavitt
 canonical_url: ""
 cited_by:
-  - "2019.md:77"
+  - "2019.md:78"
 commit: ""
-content_sha256: b422c769f967e98dc97b8ca4a6f0da2e75ed00d5f1dc78d64523ba6c99497782
+content_sha256: 573eafec7d94a82d5c2b14ef580e0cb16bbc78f0bbf10843785145a229897bdb
 depth: full
 depth_reason: default
 kind: article
@@ -28,12 +38,12 @@ original_url: "https://www.usenix.org/conference/usenixsecurity19/presentation/m
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: 9a59531da9af4befdbe8caf3fb961e42e6eeec5aabe27d9c26bcfdd1f9c04cc7
+raw_sha256: 88361b4ffb2c8ad482bc2527b7143d093f1c3e3608947f758caee2117c9700c0
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity19/presentation/merget"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:04:49+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:46:13+00:00"
 slug: usenix-org-scalable-scanning-automatic-classification-tls-vulnerabilities
-snapshot: ""
+snapshot: 20191120111615
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -41,11 +51,12 @@ translation_of: ""
 
 # Scalable Scanning and Automatic Classification of TLS Padding Oracle Vulnerabilities
 
-**Scalable Scanning and Automatic Classification of TLS Padding Oracle Vulnerabilities** - Author not stated, usenix.org.
+**Scalable Scanning and Automatic Classification of TLS Padding Oracle Vulnerabilities** - Robert Merget, Juraj Somorovsky, Nimrod Aviram, Craig Young, Janis Fliegenschmidt, Jörg Schwenk, Yuval Shavitt, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity19/presentation/merget>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity19/presentation/merget (live) on 2026-08-10
+- Preserved from: https://www.usenix.org/conference/usenixsecurity19/presentation/merget (stored) on 2026-08-11
+- Capture timestamp: 20191120111615
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -60,7 +71,11 @@ page going offline. To read the original, follow the link above.
 
 # Scalable Scanning and Automatic Classification of TLS Padding Oracle Vulnerabilities
 
+Authors:
+
 Robert Merget and Juraj Somorovsky, *Ruhr University Bochum;* Nimrod Aviram, *Tel Aviv University;* Craig Young, *Tripwire VERT;* Janis Fliegenschmidt and Jörg Schwenk, *Ruhr University Bochum;* Yuval Shavitt, *Tel Aviv University*
+
+Abstract:
 
 The TLS protocol provides encryption, data integrity, and authentication on the modern Internet. Despite the protocol's importance, currently-deployed TLS versions use obsolete cryptographic algorithms which have been broken using various attacks. One prominent class of such attacks is CBC padding oracle attacks. These attacks allow an adversary to decrypt TLS traffic by observing different server behaviors which depend on the validity of CBC padding.
 
@@ -69,6 +84,20 @@ We present the first large-scale scan for CBC padding oracle vulnerabilities in 
 We used a novel scanning methodology consisting of three steps. First, we created a large set of probes that detect vulnerabilities at a considerable scanning cost. We then reduced the number of probes using a preliminary scan, such that a smaller set of probes has the same detection rate but is small enough to be used in large-scale scans. Finally, we used the reduced set to scan at scale, and clustered our findings with a novel approach using graph drawing algorithms.
 
 Contrary to common wisdom, exploiting CBC padding oracles does not necessarily require performing precise timing measurements. We detected vulnerabilities that can be exploited simply by observing the content of different server responses. These vulnerabilities pose a significantly larger threat in practice than previously assumed.
+
+##  [Robert Merget, Ruhr University Bochum](https://www.usenix.org/conference/usenixsecurity19/speaker-or-organizer/robert-merget-ruhr-university-bochum)
+
+##  [Juraj Somorovsky, Ruhr University Bochum](https://www.usenix.org/conference/usenixsecurity19/speaker-or-organizer/juraj-somorovsky-ruhr-university-bochum)
+
+##  [Nimrod Aviram, Tel Aviv University](https://www.usenix.org/conference/usenixsecurity19/speaker-or-organizer/nimrod-aviram-tel-aviv-university)
+
+##  [Craig Young, Tripwire VERT](https://www.usenix.org/conference/usenixsecurity19/speaker-or-organizer/craig-young-tripwire-vert)
+
+##  [Janis Fliegenschmidt, Ruhr University Bochum](https://www.usenix.org/conference/usenixsecurity19/speaker-or-organizer/janis-fliegenschmidt-ruhr-university-bochum)
+
+##  [Jörg Schwenk, Ruhr University Bochum](https://www.usenix.org/conference/usenixsecurity19/speaker-or-organizer/j%C3%B6rg-schwenk-ruhr-university-bochum)
+
+##  [Yuval Shavitt, Tel Aviv University](https://www.usenix.org/conference/usenixsecurity19/speaker-or-organizer/yuval-shavitt-tel-aviv-university)
 
 ## Open Access Media
 
@@ -79,18 +108,18 @@ BibTeX
 @inproceedings {235495,
  author = {Robert Merget and Juraj Somorovsky and Nimrod Aviram and Craig Young and Janis Fliegenschmidt and J{\"o}rg Schwenk and Yuval Shavitt},
  title = {Scalable Scanning and Automatic Classification of {TLS} Padding Oracle Vulnerabilities},
- booktitle = {28th USENIX Security Symposium (USENIX Security 19)},
+ booktitle = {28th {USENIX} Security Symposium ({USENIX} Security 19)},
  year = {2019},
  isbn = {978-1-939133-06-9},
  address = {Santa Clara, CA},
  pages = {1029--1046},
  url = {https://www.usenix.org/conference/usenixsecurity19/presentation/merget},
- publisher = {USENIX Association},
- month = aug
+ publisher = {{USENIX} Association},
+ month = aug,
  }
 
 [Download](https://www.usenix.org/biblio/export/bibtex/235495)
 
-![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Merget PDF](https://www.usenix.org/system/files/sec19-merget.pdf)
+![PDF icon](https://www.usenix.org/modules/file/icons/application-pdf.png) [Merget PDF](https://www.usenix.org/system/files/sec19-merget.pdf)
 
 ## Presentation Video

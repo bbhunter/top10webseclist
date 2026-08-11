@@ -5,15 +5,17 @@ resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-Slide
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:27:31+00:00"
+  at: "2026-08-11T17:40:59+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-Slides.pdf"
     title: BHUS26 Heyes CSS Slides
+    author: Gareth Heyes
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: ""
 cited_by:
   - "2026-ai.md:38"
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 8dfbe66bc21362f3e73b75a62b1ecc7d90829b73c2a9c925815946c1d210d022
 retrieved_from: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-Slides.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:27:31+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:40:59+00:00"
 slug: bhus26-heyes-css-slides
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # BHUS26 Heyes CSS Slides
 
-**BHUS26 Heyes CSS Slides** - Author not stated, Publisher not stated.
+**BHUS26 Heyes CSS Slides** - Gareth Heyes, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-Slides.pdf>
-- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-Slides.pdf (live) on 2026-08-10
+- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-Slides.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

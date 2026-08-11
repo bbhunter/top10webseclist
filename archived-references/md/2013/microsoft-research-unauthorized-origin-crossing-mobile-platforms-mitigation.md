@@ -5,18 +5,23 @@ resource: "https://www.microsoft.com/en-us/research/publication/unauthorized-ori
 tags: [article, webseclist-reference, en, microsoft-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:32:42+00:00"
+  at: "2026-08-11T17:36:03+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.microsoft.com/en-us/research/publication/unauthorized-origin-crossing-on-mobile-platforms-threats-and-mitigation/"
     title: "Unauthorized Origin Crossing on Mobile Platforms: Threats and Mitigation"
+    author: Rui Wang, Luyi Xing, XiaoFeng Wang, Shuo Chen
 also_at: []
-authors: []
+authors:
+  - Rui Wang
+  - Luyi Xing
+  - XiaoFeng Wang
+  - Shuo Chen
 canonical_url: ""
 cited_by:
-  - "2013.md:49"
+  - "2013.md:50"
 commit: ""
 content_sha256: f00ff60fb62fb5737055a4013417601386c1293fbef8997732c0915f107a96d9
 depth: full
@@ -30,8 +35,8 @@ publisher: Microsoft Research
 publisher_english: ""
 raw_sha256: a1f78a59eb37b7334fc5b1c7420d64e43504828c046ab4877c84137e8f5ad3e1
 retrieved_from: "https://www.microsoft.com/en-us/research/publication/unauthorized-origin-crossing-on-mobile-platforms-threats-and-mitigation/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:32:42+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:03+00:00"
 slug: microsoft-research-unauthorized-origin-crossing-mobile-platforms-mitigation
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # Unauthorized Origin Crossing on Mobile Platforms: Threats and Mitigation
 
-**Unauthorized Origin Crossing on Mobile Platforms: Threats and Mitigation** - Author not stated, Microsoft Research.
+**Unauthorized Origin Crossing on Mobile Platforms: Threats and Mitigation** - Rui Wang, Luyi Xing, XiaoFeng Wang, Shuo Chen, Microsoft Research.
 
 - Published: date not stated
 - Original: <https://www.microsoft.com/en-us/research/publication/unauthorized-origin-crossing-on-mobile-platforms-threats-and-mitigation/>
-- Preserved from: https://www.microsoft.com/en-us/research/publication/unauthorized-origin-crossing-on-mobile-platforms-threats-and-mitigation/ (live) on 2026-08-10
+- Preserved from: https://www.microsoft.com/en-us/research/publication/unauthorized-origin-crossing-on-mobile-platforms-threats-and-mitigation/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

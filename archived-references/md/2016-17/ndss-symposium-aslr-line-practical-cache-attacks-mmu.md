@@ -5,19 +5,25 @@ resource: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:34:48+00:00"
+  at: "2026-08-11T17:43:40+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache-practical-cache-attacks-mmu/"
     title: "ASLR on the Line: Practical Cache Attacks on the MMU"
+    author: Ben Gras, Kaveh Razavi, Erik Bosman, Herbert Box, Cristiano Giuffrida
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/ndss2017_09-1_Gras_paper.pdf"
-authors: []
+authors:
+  - Ben Gras
+  - Kaveh Razavi
+  - Erik Bosman
+  - Herbert Box
+  - Cristiano Giuffrida
 canonical_url: ""
 cited_by:
-  - "2016-17.md:88"
+  - "2016-17.md:89"
 commit: ""
 content_sha256: 6d76db5b4a4cfa84b6d7b355b138077c747a39d0bd784f179443926a86325a64
 depth: full
@@ -31,8 +37,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: 02b99bef0532bd5bc9f12ae9024fd200425242f8a946426faa2911b6185e6f4e
 retrieved_from: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache-practical-cache-attacks-mmu/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:34:48+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:40+00:00"
 slug: ndss-symposium-aslr-line-practical-cache-attacks-mmu
 snapshot: ""
 title_english: ""
@@ -42,12 +48,12 @@ translation_of: ""
 
 # ASLR on the Line: Practical Cache Attacks on the MMU
 
-**ASLR on the Line: Practical Cache Attacks on the MMU** - Author not stated, NDSS Symposium.
+**ASLR on the Line: Practical Cache Attacks on the MMU** - Ben Gras, Kaveh Razavi, Erik Bosman, Herbert Box, Cristiano Giuffrida, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache-practical-cache-attacks-mmu/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/ndss2017_09-1_Gras_paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache-practical-cache-attacks-mmu/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache-practical-cache-attacks-mmu/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

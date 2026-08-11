@@ -5,18 +5,24 @@ resource: "https://acmccs.github.io/papers/p1757-pellegrinoA.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:49:34+00:00"
+  at: "2026-08-11T17:37:52+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://acmccs.github.io/papers/p1757-pellegrinoA.pdf"
     title: "Deemon: Detecting CSRF with Dynamic Analysis and Property Graphs"
+    author: Giancarlo Pellegrino, Martin Johns, Simon Koch, Michael Backes, Christian Rossow
 also_at: []
-authors: []
+authors:
+  - Giancarlo Pellegrino
+  - Martin Johns
+  - Simon Koch
+  - Michael Backes
+  - Christian Rossow
 canonical_url: ""
 cited_by:
-  - "2016-17.md:105"
+  - "2016-17.md:100"
 commit: ""
 content_sha256: 5d6fa5244ae1e901a219b8c145a7eb0dfd241526e6e77bb11579269946b1a209
 depth: full
@@ -30,8 +36,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 0122201bd876677819442a1e643c15b82089187feeba42da21f56b49c859c406
 retrieved_from: "https://acmccs.github.io/papers/p1757-pellegrinoA.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:49:34+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:37:52+00:00"
 slug: deemon-detecting-csrf-dynamic-analysis-property-graphs
 snapshot: ""
 title_english: ""
@@ -41,11 +47,11 @@ translation_of: ""
 
 # Deemon: Detecting CSRF with Dynamic Analysis and Property Graphs
 
-**Deemon: Detecting CSRF with Dynamic Analysis and Property Graphs** - Author not stated, Publisher not stated.
+**Deemon: Detecting CSRF with Dynamic Analysis and Property Graphs** - Giancarlo Pellegrino, Martin Johns, Simon Koch, Michael Backes, Christian Rossow, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://acmccs.github.io/papers/p1757-pellegrinoA.pdf>
-- Preserved from: https://acmccs.github.io/papers/p1757-pellegrinoA.pdf (live) on 2026-08-08
+- Preserved from: https://acmccs.github.io/papers/p1757-pellegrinoA.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

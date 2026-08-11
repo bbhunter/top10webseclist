@@ -5,15 +5,18 @@ resource: "https://i.blackhat.com/USA-19/Wednesday/us-19-Munoz-SSO-Wars-The-Toke
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:15+00:00"
+  at: "2026-08-11T17:41:02+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/USA-19/Wednesday/us-19-Munoz-SSO-Wars-The-Token-Menace-wp.pdf"
     title: "SSO Wars: The Token Menace"
+    author: Oleksandr Mirosh, Alvaro Muñoz
 also_at: []
-authors: []
+authors:
+  - Oleksandr Mirosh
+  - Alvaro Muñoz
 canonical_url: ""
 cited_by:
   - "2019.md:49"
@@ -30,8 +33,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: e0417515eb61766fd4fe6a598d4270679868f5e8959b39a3c8859af003331b98
 retrieved_from: "https://i.blackhat.com/USA-19/Wednesday/us-19-Munoz-SSO-Wars-The-Token-Menace-wp.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:15+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:02+00:00"
 slug: sso-wars-token-menace
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # SSO Wars: The Token Menace
 
-**SSO Wars: The Token Menace** - Author not stated, Publisher not stated.
+**SSO Wars: The Token Menace** - Oleksandr Mirosh, Alvaro Muñoz, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/USA-19/Wednesday/us-19-Munoz-SSO-Wars-The-Token-Menace-wp.pdf>
-- Preserved from: https://i.blackhat.com/USA-19/Wednesday/us-19-Munoz-SSO-Wars-The-Token-Menace-wp.pdf (live) on 2026-08-09
+- Preserved from: https://i.blackhat.com/USA-19/Wednesday/us-19-Munoz-SSO-Wars-The-Token-Menace-wp.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

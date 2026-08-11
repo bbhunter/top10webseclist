@@ -5,15 +5,17 @@ resource: "https://gwern.net/doc/cs/js/2013-stone.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T13:06:23+00:00"
+  at: "2026-08-11T17:35:31+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://gwern.net/doc/cs/js/2013-stone.pdf"
     title: Pixel Perfect Timing Attacks with HTML5
+    author: Paul Stone
 also_at: []
-authors: []
+authors:
+  - Paul Stone
 canonical_url: ""
 cited_by:
   - "2013.md:7"
@@ -31,7 +33,7 @@ publisher_english: ""
 raw_sha256: ad49079c6415cf017b3778ff60da1b2d0c52a70ae65a5f5ba6633e99876b4862
 retrieved_from: "https://gwern.net/doc/cs/js/2013-stone.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T13:06:23+00:00"
+retrieved_utc: "2026-08-11T17:35:31+00:00"
 slug: pixel-perfect-timing-attacks-html5
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Pixel Perfect Timing Attacks with HTML5
 
-**Pixel Perfect Timing Attacks with HTML5** - Author not stated, Publisher not stated.
+**Pixel Perfect Timing Attacks with HTML5** - Paul Stone, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://gwern.net/doc/cs/js/2013-stone.pdf>
-- Preserved from: https://gwern.net/doc/cs/js/2013-stone.pdf (stored) on 2026-08-10
+- Preserved from: https://gwern.net/doc/cs/js/2013-stone.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

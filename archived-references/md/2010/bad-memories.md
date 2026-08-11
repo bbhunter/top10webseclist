@@ -5,15 +5,20 @@ resource: "https://media.blackhat.com/bh-us-10/whitepapers/Bursztein_Gourdin_Ryd
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T13:07:26+00:00"
+  at: "2026-08-11T17:42:26+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://media.blackhat.com/bh-us-10/whitepapers/Bursztein_Gourdin_Rydstedt/BlackHat-USA-2010-Bursztein-Bad-Memories-wp.pdf"
     title: Bad Memories
+    author: Elie Bursztein, Baptiste Gourdin, Gustav Rydstedt, Dan Boneh
 also_at: []
-authors: []
+authors:
+  - Elie Bursztein
+  - Baptiste Gourdin
+  - Gustav Rydstedt
+  - Dan Boneh
 canonical_url: ""
 cited_by:
   - "2010.md:8"
@@ -33,7 +38,7 @@ publisher_english: ""
 raw_sha256: a44ac8782a821d7d930dd2630bd5635398256e412476cd09b6d02608c6ef6762
 retrieved_from: "https://media.blackhat.com/bh-us-10/whitepapers/Bursztein_Gourdin_Rydstedt/BlackHat-USA-2010-Bursztein-Bad-Memories-wp.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T13:07:26+00:00"
+retrieved_utc: "2026-08-11T17:42:26+00:00"
 slug: bad-memories
 snapshot: ""
 title_english: ""
@@ -43,11 +48,11 @@ translation_of: ""
 
 # Bad Memories
 
-**Bad Memories** - Author not stated, Publisher not stated.
+**Bad Memories** - Elie Bursztein, Baptiste Gourdin, Gustav Rydstedt, Dan Boneh, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://media.blackhat.com/bh-us-10/whitepapers/Bursztein_Gourdin_Rydstedt/BlackHat-USA-2010-Bursztein-Bad-Memories-wp.pdf>
-- Preserved from: https://media.blackhat.com/bh-us-10/whitepapers/Bursztein_Gourdin_Rydstedt/BlackHat-USA-2010-Bursztein-Bad-Memories-wp.pdf (stored) on 2026-08-10
+- Preserved from: https://media.blackhat.com/bh-us-10/whitepapers/Bursztein_Gourdin_Rydstedt/BlackHat-USA-2010-Bursztein-Bad-Memories-wp.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

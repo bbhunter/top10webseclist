@@ -5,22 +5,24 @@ resource: "https://www.elttam.com/blog/plorming-your-primsa-orm/"
 tags: [article, webseclist-reference, en, elttam-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:10:10+00:00"
+  at: "2026-08-11T17:35:05+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.elttam.com/blog/plorming-your-primsa-orm/"
     title: plORMbing your Prisma ORM with Time-based Attacks
+    author: Alex Brown
   - id: canonical
     resource: "https://www.elttam.com/blog/plorming-your-primsa-orm"
 also_at: []
-authors: []
+authors:
+  - Alex Brown
 canonical_url: "https://www.elttam.com/blog/plorming-your-primsa-orm"
 cited_by:
   - "2024.md:30"
 commit: ""
-content_sha256: 5ed81e559b56a5e4f4ed44413672b2853e5107670a3c0110ab5edef8a6ba55ee
+content_sha256: 0f6913c5cee3d44afe849863ef9170630b755dee4aac02f86c3f3e55702222cc
 depth: full
 depth_reason: default
 kind: article
@@ -32,8 +34,8 @@ publisher: elttam.com
 publisher_english: ""
 raw_sha256: 06d3221aa74bf0138789116066c3246c042a4986deab3aeb87916627b7f3ea7b
 retrieved_from: "https://www.elttam.com/blog/plorming-your-primsa-orm"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:10:10+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:05+00:00"
 slug: elttam-com-plormbing-your-prisma-orm-time-based-attacks
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # plORMbing your Prisma ORM with Time-based Attacks
 
-**plORMbing your Prisma ORM with Time-based Attacks** - Author not stated, elttam.com.
+**plORMbing your Prisma ORM with Time-based Attacks** - Alex Brown, elttam.com.
 
 - Published: date not stated
 - Original: <https://www.elttam.com/blog/plorming-your-primsa-orm/>
 - Current location: <https://www.elttam.com/blog/plorming-your-primsa-orm>
-- Preserved from: https://www.elttam.com/blog/plorming-your-primsa-orm (live) on 2026-08-09
+- Preserved from: https://www.elttam.com/blog/plorming-your-primsa-orm (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

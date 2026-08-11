@@ -5,18 +5,27 @@ resource: "https://www.securitee.org/files/jsinclusions_ccs2012.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:58:37+00:00"
+  at: "2026-08-11T17:45:26+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.securitee.org/files/jsinclusions_ccs2012.pdf"
     title: "You Are What You Include: Large-scale Evaluation of Remote JavaScript Inclusions"
+    author: Nick Nikiforakis, Luca Invernizzi, Alexandros Kapravelos, Steven Van Acker, Wouter Joosen, Christopher Kruegel, Frank Piessens, Giovanni Vigna
 also_at: []
-authors: []
+authors:
+  - Nick Nikiforakis
+  - Luca Invernizzi
+  - Alexandros Kapravelos
+  - Steven Van Acker
+  - Wouter Joosen
+  - Christopher Kruegel
+  - Frank Piessens
+  - Giovanni Vigna
 canonical_url: ""
 cited_by:
-  - "2012.md:79"
+  - "2012.md:80"
 commit: ""
 content_sha256: fe4fd5103c59cc8c4c3387b9d3cdcca6a9fc7f47ef08cc3445b54e5d10cf6711
 depth: full
@@ -30,8 +39,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 0120e7ef39fa6f6d86e1be0bfcf60ba67bd844807f9979db1714caab48c05827
 retrieved_from: "https://www.securitee.org/files/jsinclusions_ccs2012.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:58:37+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:26+00:00"
 slug: you-what-you-include-large-scale-evaluation-remote-javascript-inclusions
 snapshot: ""
 title_english: ""
@@ -41,11 +50,11 @@ translation_of: ""
 
 # You Are What You Include: Large-scale Evaluation of Remote JavaScript Inclusions
 
-**You Are What You Include: Large-scale Evaluation of Remote JavaScript Inclusions** - Author not stated, Publisher not stated.
+**You Are What You Include: Large-scale Evaluation of Remote JavaScript Inclusions** - Nick Nikiforakis, Luca Invernizzi, Alexandros Kapravelos, Steven Van Acker, Wouter Joosen, Christopher Kruegel, Frank Piessens, Giovanni Vigna, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.securitee.org/files/jsinclusions_ccs2012.pdf>
-- Preserved from: https://www.securitee.org/files/jsinclusions_ccs2012.pdf (live) on 2026-08-10
+- Preserved from: https://www.securitee.org/files/jsinclusions_ccs2012.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

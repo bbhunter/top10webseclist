@@ -5,22 +5,24 @@ resource: "https://www.elttam.com/blog/leaking-more-than-you-joined-for/"
 tags: [article, webseclist-reference, en, elttam-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:10:07+00:00"
+  at: "2026-08-11T17:35:05+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.elttam.com/blog/leaking-more-than-you-joined-for/"
     title: ORM Leaking More Than You Joined For
+    author: Alex Brown
   - id: canonical
     resource: "https://www.elttam.com/blog/leaking-more-than-you-joined-for"
 also_at: []
-authors: []
+authors:
+  - Alex Brown
 canonical_url: "https://www.elttam.com/blog/leaking-more-than-you-joined-for"
 cited_by:
   - "2025.md:6"
 commit: ""
-content_sha256: d031839cf8838e17e10f0f89fc2c29b68bd7476844d2dbc67763c3793cc6662a
+content_sha256: 7bddf5d7409391a7b93a81ae626b92a21ebbe12e3c5a033dcb9714a6df053b16
 depth: full
 depth_reason: default
 kind: article
@@ -32,8 +34,8 @@ publisher: elttam.com
 publisher_english: ""
 raw_sha256: 80f2ef4f7a811ba2eefab0814de71904a38a51cb53048e7a7964f2e3c3523dd7
 retrieved_from: "https://www.elttam.com/blog/leaking-more-than-you-joined-for"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:10:07+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:05+00:00"
 slug: elttam-com-orm-leaking-more-than-you-joined
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # ORM Leaking More Than You Joined For
 
-**ORM Leaking More Than You Joined For** - Author not stated, elttam.com.
+**ORM Leaking More Than You Joined For** - Alex Brown, elttam.com.
 
 - Published: date not stated
 - Original: <https://www.elttam.com/blog/leaking-more-than-you-joined-for/>
 - Current location: <https://www.elttam.com/blog/leaking-more-than-you-joined-for>
-- Preserved from: https://www.elttam.com/blog/leaking-more-than-you-joined-for (live) on 2026-08-09
+- Preserved from: https://www.elttam.com/blog/leaking-more-than-you-joined-for (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

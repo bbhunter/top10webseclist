@@ -5,18 +5,22 @@ resource: "https://www.ieee-security.org/TC/SP2016/papers/0824a724.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:37+00:00"
+  at: "2026-08-11T17:41:52+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2016/papers/0824a724.pdf"
     title: "The Cracked Cookie Jar: HTTP Cookie Hijacking and the Exposure of Private Information"
+    author: Suphannee Sivakorn, Iasonas Polakis, Angelos D. Keromytis
 also_at: []
-authors: []
+authors:
+  - Suphannee Sivakorn
+  - Iasonas Polakis
+  - Angelos D. Keromytis
 canonical_url: ""
 cited_by:
-  - "2016-17.md:82"
+  - "2016-17.md:83"
 commit: ""
 content_sha256: 1f49749c57a24f56079bc0ec5f5e7a7d015d02c254126d3002821876022567c1
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 5cc6e6059f499299ed041ad54ae8476cfaccf4badf52de9ef17178157b43c328
 retrieved_from: "https://www.ieee-security.org/TC/SP2016/papers/0824a724.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:37+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:52+00:00"
 slug: cracked-cookie-jar-http-cookie-hijacking-exposure-private-information
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # The Cracked Cookie Jar: HTTP Cookie Hijacking and the Exposure of Private Information
 
-**The Cracked Cookie Jar: HTTP Cookie Hijacking and the Exposure of Private Information** - Author not stated, Publisher not stated.
+**The Cracked Cookie Jar: HTTP Cookie Hijacking and the Exposure of Private Information** - Suphannee Sivakorn, Iasonas Polakis, Angelos D. Keromytis, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2016/papers/0824a724.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2016/papers/0824a724.pdf (live) on 2026-08-10
+- Preserved from: https://www.ieee-security.org/TC/SP2016/papers/0824a724.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

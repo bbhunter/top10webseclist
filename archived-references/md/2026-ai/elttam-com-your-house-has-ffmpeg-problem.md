@@ -5,15 +5,17 @@ resource: "https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem"
 tags: [article, webseclist-reference, en, elttam-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:09:25+00:00"
+  at: "2026-08-11T17:35:05+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem"
     title: Your House Has an FFmpeg Problem
+    author: Jia Hao Poh
 also_at: []
-authors: []
+authors:
+  - Jia Hao Poh
 canonical_url: ""
 cited_by:
   - "2026-ai.md:60"
@@ -30,8 +32,8 @@ publisher: elttam.com
 publisher_english: ""
 raw_sha256: 6dc306d37d5be97d2ff00ab29028396712da8fa0aef23f78974e0a27a90fc535
 retrieved_from: "https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:09:25+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:05+00:00"
 slug: elttam-com-your-house-has-ffmpeg-problem
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Your House Has an FFmpeg Problem
 
-**Your House Has an FFmpeg Problem** - Author not stated, elttam.com.
+**Your House Has an FFmpeg Problem** - Jia Hao Poh, elttam.com.
 
 - Published: date not stated
 - Original: <https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem>
-- Preserved from: https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem (live) on 2026-08-10
+- Preserved from: https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

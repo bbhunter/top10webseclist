@@ -5,17 +5,19 @@ resource: "https://portswigger.net/research/can-ai-do-novel-security-research"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:31+00:00"
+  at: "2026-08-11T17:44:42+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/can-ai-do-novel-security-research"
     title: Can AI do novel security research? Meet the HTTP Terminator
+    author: James Kettle
     last_modified: 2026-08-05
 also_at:
   - "https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf"
-authors: []
+authors:
+  - James Kettle
 canonical_url: ""
 cited_by:
   - "2026-ai.md:30"
@@ -32,8 +34,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: a9fb6fda0ee419f79b734c39e10e2c2a37c046e891b780e9411cfeee5a6a285b
 retrieved_from: "https://portswigger.net/research/can-ai-do-novel-security-research"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:31+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:42+00:00"
 slug: 2026-portswigger-research-can-ai-do-novel-security-research-meet-http-terminator
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # Can AI do novel security research? Meet the HTTP Terminator
 
-**Can AI do novel security research? Meet the HTTP Terminator** - Author not stated, PortSwigger Research.
+**Can AI do novel security research? Meet the HTTP Terminator** - James Kettle, PortSwigger Research.
 
 - Published: 2026-08-05
 - Original: <https://portswigger.net/research/can-ai-do-novel-security-research>
 - Also published at: <https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf>
-- Preserved from: https://portswigger.net/research/can-ai-do-novel-security-research (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/can-ai-do-novel-security-research (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

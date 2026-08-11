@@ -5,15 +5,17 @@ resource: "https://soroush.me/downloadable/common-security-issues-in-financially
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-07T09:43:33+00:00"
+  at: "2026-08-11T17:45:37+00:00"
 status: stable
-stale_after: 2027-08-07
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications-_v1.1.pdf"
     title: Common Security Issues in Financially-Oriented Web Applications
+    author: Soroush Dalili
 also_at: []
-authors: []
+authors:
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2019.md:40"
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 0329c929c18ff4a33ecd239cb2210db54ae410feb49d0896e845f4371594ab96
 retrieved_from: "https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications-_v1.1.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-07T09:43:33+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:37+00:00"
 slug: common-security-issues-financially-oriented-web-applications
 snapshot: ""
 title_english: ""
@@ -41,15 +43,15 @@ translation_of: ""
 
 # Common Security Issues in Financially-Oriented Web Applications
 
-**Common Security Issues in Financially-Oriented Web Applications** - Author not stated, Publisher not stated.
+**Common Security Issues in Financially-Oriented Web Applications** - Soroush Dalili, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications-_v1.1.pdf>
-- Preserved from: https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications-_v1.1.pdf (live) on 2026-08-07
+- Preserved from: https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications-_v1.1.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

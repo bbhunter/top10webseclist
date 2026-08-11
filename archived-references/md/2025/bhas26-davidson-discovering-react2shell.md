@@ -5,15 +5,17 @@ resource: "https://i.blackhat.com/Asia-26/Presentations/BHAS26-Davidson-Discover
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:30:11+00:00"
+  at: "2026-08-11T17:40:46+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/Asia-26/Presentations/BHAS26-Davidson-Discovering-React2Shell.pdf"
     title: BHAS26 Davidson Discovering React2Shell
+    author: Lachlan Davidson
 also_at: []
-authors: []
+authors:
+  - Lachlan Davidson
 canonical_url: ""
 cited_by:
   - "2025.md:74"
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: c6e122d7b4f1abd77a6b4112ab1c2e5b73a023b92f7f14430c91057b161b6942
 retrieved_from: "https://i.blackhat.com/Asia-26/Presentations/BHAS26-Davidson-Discovering-React2Shell.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:30:11+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:40:46+00:00"
 slug: bhas26-davidson-discovering-react2shell
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # BHAS26 Davidson Discovering React2Shell
 
-**BHAS26 Davidson Discovering React2Shell** - Author not stated, Publisher not stated.
+**BHAS26 Davidson Discovering React2Shell** - Lachlan Davidson, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/Asia-26/Presentations/BHAS26-Davidson-Discovering-React2Shell.pdf>
-- Preserved from: https://i.blackhat.com/Asia-26/Presentations/BHAS26-Davidson-Discovering-React2Shell.pdf (live) on 2026-08-09
+- Preserved from: https://i.blackhat.com/Asia-26/Presentations/BHAS26-Davidson-Discovering-React2Shell.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

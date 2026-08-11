@@ -5,15 +5,17 @@ resource: "https://groups.google.com/g/null-co-in/c/l4-fm9IHtJI"
 tags: [article, webseclist-reference, en-US, google-groups]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:10:40+00:00"
+  at: "2026-08-11T17:35:24+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://groups.google.com/g/null-co-in/c/l4-fm9IHtJI"
     title: "NoScript (2.0.5.1 < less ) - Bypass \"Reflective XSS\" through Union SQL Poisoning Trick (SQLXSSI)"
+    author: Rohit Bansal
 also_at: []
-authors: []
+authors:
+  - Rohit Bansal
 canonical_url: ""
 cited_by:
   - "2010.md:62"
@@ -30,8 +32,8 @@ publisher: Google Groups
 publisher_english: ""
 raw_sha256: 695601b4ac660cb294657795b081366f756b8470e52c66a5139871b8214f5caa
 retrieved_from: "https://groups.google.com/g/null-co-in/c/l4-fm9IHtJI"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:10:40+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:35:24+00:00"
 slug: google-groups-noscript-2-0-5-1-less-bypass-reflective-xss-through-union-sqlxssi
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # NoScript (2.0.5.1 < less ) - Bypass "Reflective XSS" through Union SQL Poisoning Trick (SQLXSSI)
 
-**NoScript (2.0.5.1 < less ) - Bypass "Reflective XSS" through Union SQL Poisoning Trick (SQLXSSI)** - Author not stated, Google Groups.
+**NoScript (2.0.5.1 < less ) - Bypass "Reflective XSS" through Union SQL Poisoning Trick (SQLXSSI)** - Rohit Bansal, Google Groups.
 
 - Published: date not stated
 - Original: <https://groups.google.com/g/null-co-in/c/l4-fm9IHtJI>
-- Preserved from: https://groups.google.com/g/null-co-in/c/l4-fm9IHtJI (live) on 2026-08-10
+- Preserved from: https://groups.google.com/g/null-co-in/c/l4-fm9IHtJI (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

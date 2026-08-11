@@ -5,18 +5,23 @@ resource: "https://misc0110.net/files/timers.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:05+00:00"
+  at: "2026-08-11T17:36:08+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://misc0110.net/files/timers.pdf"
     title: "Fantastic Timers and Where to Find Them: High-Resolution Microarchitectural Attacks in JavaScript"
+    author: Michael Schwarz, Clémentine Maurice, Daniel Gruss, Stefan Mangard
 also_at: []
-authors: []
+authors:
+  - Michael Schwarz
+  - Clémentine Maurice
+  - Daniel Gruss
+  - Stefan Mangard
 canonical_url: ""
 cited_by:
-  - "2016-17.md:92"
+  - "2016-17.md:93"
 commit: ""
 content_sha256: 024e85dfae20dd27fccae948881f77b32da5cbf823ccb4a426d570bddcadb037
 depth: full
@@ -30,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 7626ce3b3cd43be39ac107cd6ea82490f0492169e6fecf901214f8475477733c
 retrieved_from: "https://misc0110.net/files/timers.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:05+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:36:08+00:00"
 slug: fantastic-timers-where-find-them-high-resolution-microarchitectural-javascript
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # Fantastic Timers and Where to Find Them: High-Resolution Microarchitectural Attacks in JavaScript
 
-**Fantastic Timers and Where to Find Them: High-Resolution Microarchitectural Attacks in JavaScript** - Author not stated, Publisher not stated.
+**Fantastic Timers and Where to Find Them: High-Resolution Microarchitectural Attacks in JavaScript** - Michael Schwarz, Clémentine Maurice, Daniel Gruss, Stefan Mangard, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://misc0110.net/files/timers.pdf>
-- Preserved from: https://misc0110.net/files/timers.pdf (live) on 2026-08-10
+- Preserved from: https://misc0110.net/files/timers.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

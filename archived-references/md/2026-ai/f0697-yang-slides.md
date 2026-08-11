@@ -5,15 +5,24 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/f0697-yang-slides.p
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:35:22+00:00"
+  at: "2026-08-11T17:44:13+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/f0697-yang-slides.pdf"
     title: f0697 yang slides
+    author: Jingcheng Yang, Enze Wang, Jianjun Chen, Qi Wang, Yuheng Zhang, Haixin Duan, Wei Xie, Baosheng Wang
 also_at: []
-authors: []
+authors:
+  - Jingcheng Yang
+  - Enze Wang
+  - Jianjun Chen
+  - Qi Wang
+  - Yuheng Zhang
+  - Haixin Duan
+  - Wei Xie
+  - Baosheng Wang
 canonical_url: ""
 cited_by:
   - "2026-ai.md:69"
@@ -30,8 +39,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: dd70455ee1c20dc787a3f2123728181dfeac1c5463f101c7ce251cd6dd57c1e4
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/f0697-yang-slides.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:35:22+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:13+00:00"
 slug: f0697-yang-slides
 snapshot: ""
 title_english: ""
@@ -41,11 +50,11 @@ translation_of: ""
 
 # f0697 yang slides
 
-**f0697 yang slides** - Author not stated, Publisher not stated.
+**f0697 yang slides** - Jingcheng Yang, Enze Wang, Jianjun Chen, Qi Wang, Yuheng Zhang, Haixin Duan, Wei Xie, Baosheng Wang, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/f0697-yang-slides.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/f0697-yang-slides.pdf (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/f0697-yang-slides.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

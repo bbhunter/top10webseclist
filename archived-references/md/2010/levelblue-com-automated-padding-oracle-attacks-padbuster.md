@@ -5,17 +5,19 @@ resource: "http://www.gdssecurity.com/l/b/2010/09/14/automated-padding-oracle-at
 tags: [article, webseclist-reference, en, gdssecurity-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T04:42:49+00:00"
+  at: "2026-08-11T17:35:22+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.gdssecurity.com/l/b/2010/09/14/automated-padding-oracle-attacks-with-padbuster/"
     title: Automated Padding Oracle Attacks with PadBuster
+    author: Brian Holyfield
   - id: capture
     resource: "https://web.archive.org/web/20110723192819/http://www.gdssecurity.com/l/b/2010/09/14/automated-padding-oracle-attacks-with-padbuster/"
 also_at: []
-authors: []
+authors:
+  - Brian Holyfield
 canonical_url: ""
 cited_by:
   - "2010.md:5"
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 6f3a92df1e702b848dbf24fabcc221aedb7067f484838a468f8f763a40978af1
 retrieved_from: "http://www.gdssecurity.com/l/b/2010/09/14/automated-padding-oracle-attacks-with-padbuster/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T04:42:49+00:00"
+retrieved_utc: "2026-08-11T17:35:22+00:00"
 slug: levelblue-com-automated-padding-oracle-attacks-padbuster
 snapshot: 20110723192819
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Automated Padding Oracle Attacks with PadBuster
 
-**Automated Padding Oracle Attacks with PadBuster** - Author not stated, gdssecurity.com.
+**Automated Padding Oracle Attacks with PadBuster** - Brian Holyfield, gdssecurity.com.
 
 - Published: date not stated
 - Original: <http://www.gdssecurity.com/l/b/2010/09/14/automated-padding-oracle-attacks-with-padbuster/>
-- Preserved from: http://www.gdssecurity.com/l/b/2010/09/14/automated-padding-oracle-attacks-with-padbuster/ (stored) on 2026-08-09
+- Preserved from: http://www.gdssecurity.com/l/b/2010/09/14/automated-padding-oracle-attacks-with-padbuster/ (stored) on 2026-08-11
 - Capture timestamp: 20110723192819
 - Licence: unknown
 

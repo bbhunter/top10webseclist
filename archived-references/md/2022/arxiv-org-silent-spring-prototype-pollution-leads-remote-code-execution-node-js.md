@@ -5,19 +5,23 @@ resource: "https://arxiv.org/abs/2207.11171"
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T21:11:48+00:00"
+  at: "2026-08-11T17:34:06+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://arxiv.org/abs/2207.11171"
     title: "Silent Spring: Prototype Pollution Leads to Remote Code Execution in Node.js"
+    author: Mikhail Shcherbakov, Musard Balliu, Cristian-Alexandru Staicu
 also_at:
   - "https://www.usenix.org/system/files/usenixsecurity23-shcherbakov.pdf"
-authors: []
+authors:
+  - Mikhail Shcherbakov
+  - Musard Balliu
+  - Cristian-Alexandru Staicu
 canonical_url: ""
 cited_by:
-  - "2022.md:78"
+  - "2022.md:77"
 commit: ""
 content_sha256: 99cd938fa4e3bf43fbabd7a12b7eee2c458bd7172308a54dfb788920b8ee62f6
 depth: full
@@ -31,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 9bb46082408fbbedebaf1dbd0cbd5c4c56b359a7a02b1a4a6f6d2b0173b221fc
 retrieved_from: "https://www.usenix.org/system/files/usenixsecurity23-shcherbakov.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T21:11:48+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:06+00:00"
 slug: arxiv-org-silent-spring-prototype-pollution-leads-remote-code-execution-node-js
 snapshot: ""
 title_english: ""
@@ -42,12 +46,12 @@ translation_of: ""
 
 # Silent Spring: Prototype Pollution Leads to Remote Code Execution in Node.js
 
-**Silent Spring: Prototype Pollution Leads to Remote Code Execution in Node.js** - Author not stated, Publisher not stated.
+**Silent Spring: Prototype Pollution Leads to Remote Code Execution in Node.js** - Mikhail Shcherbakov, Musard Balliu, Cristian-Alexandru Staicu, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/2207.11171>
 - Also published at: <https://www.usenix.org/system/files/usenixsecurity23-shcherbakov.pdf>
-- Preserved from: https://www.usenix.org/system/files/usenixsecurity23-shcherbakov.pdf (live) on 2026-08-09
+- Preserved from: https://www.usenix.org/system/files/usenixsecurity23-shcherbakov.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

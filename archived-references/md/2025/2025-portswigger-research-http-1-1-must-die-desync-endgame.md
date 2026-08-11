@@ -5,17 +5,19 @@ resource: "https://portswigger.net/research/http1-must-die"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:42+00:00"
+  at: "2026-08-11T17:45:07+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/http1-must-die"
     title: "HTTP/1.1 must die: the desync endgame"
+    author: James Kettle
     last_modified: 2025-08-06
 also_at:
   - "https://portswigger.net/kb/papers/dzmxreq/http1-must-die.pdf"
-authors: []
+authors:
+  - James Kettle
 canonical_url: ""
 cited_by:
   - "2025.md:20"
@@ -32,8 +34,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 4f38a2986a0fc3a16b71d3c9f7a1a11d70a25018762688e28e27ff00425c8346
 retrieved_from: "https://portswigger.net/research/http1-must-die"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:42+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:07+00:00"
 slug: 2025-portswigger-research-http-1-1-must-die-desync-endgame
 snapshot: ""
 title_english: ""
@@ -43,12 +45,12 @@ translation_of: ""
 
 # HTTP/1.1 must die: the desync endgame
 
-**HTTP/1.1 must die: the desync endgame** - Author not stated, PortSwigger Research.
+**HTTP/1.1 must die: the desync endgame** - James Kettle, PortSwigger Research.
 
 - Published: 2025-08-06
 - Original: <https://portswigger.net/research/http1-must-die>
 - Also published at: <https://portswigger.net/kb/papers/dzmxreq/http1-must-die.pdf>
-- Preserved from: https://portswigger.net/research/http1-must-die (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/http1-must-die (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

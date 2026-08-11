@@ -5,16 +5,18 @@ resource: "https://portswigger.net/research/listen-to-the-whispers-web-timing-at
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:48+00:00"
+  at: "2026-08-11T17:44:55+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work"
     title: "Listen to the whispers: web timing attacks that actually work"
+    author: James Kettle
     last_modified: 2024-08-07
 also_at: []
-authors: []
+authors:
+  - James Kettle
 canonical_url: ""
 cited_by:
   - "2024.md:22"
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: c9a64aac5c4f61b458a4a6b7f23350d35ba2e1d07eb6bf75abc2ae65fbaaf0cf
 retrieved_from: "https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:48+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:55+00:00"
 slug: 2024-portswigger-research-listen-whispers-web-timing-attacks-that-actually-work
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Listen to the whispers: web timing attacks that actually work
 
-**Listen to the whispers: web timing attacks that actually work** - Author not stated, PortSwigger Research.
+**Listen to the whispers: web timing attacks that actually work** - James Kettle, PortSwigger Research.
 
 - Published: 2024-08-07
 - Original: <https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work>
-- Preserved from: https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

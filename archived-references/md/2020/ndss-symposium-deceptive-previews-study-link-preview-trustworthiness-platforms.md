@@ -5,19 +5,22 @@ resource: "https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-study-
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:42+00:00"
+  at: "2026-08-11T17:44:19+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-study-of-the-link-preview-trustworthiness-in-social-platforms/"
     title: "Deceptive Previews: A Study of the Link Preview Trustworthiness in Social Platforms"
+    author: Giada Stivala, Giancarlo Pellegrino
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2020/02/24252-paper.pdf"
-authors: []
+authors:
+  - Giada Stivala
+  - Giancarlo Pellegrino
 canonical_url: ""
 cited_by:
-  - "2020.md:79"
+  - "2020.md:80"
 commit: ""
 content_sha256: aa4d63603c65f8256b4d649d1a3570a688bbe3c4b62a28e8420940efc5b95ace
 depth: full
@@ -31,8 +34,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: f038948e3fef5456f9d0c101eb278f33413b938be8b69c74ba78c6c4e83fbe24
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-study-of-the-link-preview-trustworthiness-in-social-platforms/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:42+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:19+00:00"
 slug: ndss-symposium-deceptive-previews-study-link-preview-trustworthiness-platforms
 snapshot: ""
 title_english: ""
@@ -42,12 +45,12 @@ translation_of: ""
 
 # Deceptive Previews: A Study of the Link Preview Trustworthiness in Social Platforms
 
-**Deceptive Previews: A Study of the Link Preview Trustworthiness in Social Platforms** - Author not stated, NDSS Symposium.
+**Deceptive Previews: A Study of the Link Preview Trustworthiness in Social Platforms** - Giada Stivala, Giancarlo Pellegrino, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-study-of-the-link-preview-trustworthiness-in-social-platforms/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2020/02/24252-paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-study-of-the-link-preview-trustworthiness-in-social-platforms/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/deceptive-previews-a-study-of-the-link-preview-trustworthiness-in-social-platforms/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

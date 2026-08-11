@@ -5,19 +5,24 @@ resource: "https://www.ndss-symposium.org/ndss-paper/carnus-exploring-the-privac
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:38+00:00"
+  at: "2026-08-11T17:43:05+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/carnus-exploring-the-privacy-threats-of-browser-extension-fingerprinting/"
     title: "Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting"
+    author: Soroush Karami, Panagiotis Ilia, Konstantinos Solomos, Jason Polakis
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2020/02/24383-paper.pdf"
-authors: []
+authors:
+  - Soroush Karami
+  - Panagiotis Ilia
+  - Konstantinos Solomos
+  - Jason Polakis
 canonical_url: ""
 cited_by:
-  - "2020.md:74"
+  - "2020.md:75"
 commit: ""
 content_sha256: bfb25730cf05b3f866535c822435ba2485a331c37374aba0cb165d9979e85543
 depth: full
@@ -31,8 +36,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: fd9d2f867b42b5e6eda2054f33aeb31e8f557453716539c15783fbd34b175cfe
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/carnus-exploring-the-privacy-threats-of-browser-extension-fingerprinting/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:38+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:05+00:00"
 slug: ndss-symposium-carnus-exploring-privacy-threats-browser-extension-fingerprinting
 snapshot: ""
 title_english: ""
@@ -42,12 +47,12 @@ translation_of: ""
 
 # Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting
 
-**Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting** - Author not stated, NDSS Symposium.
+**Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting** - Soroush Karami, Panagiotis Ilia, Konstantinos Solomos, Jason Polakis, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/carnus-exploring-the-privacy-threats-of-browser-extension-fingerprinting/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2020/02/24383-paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/carnus-exploring-the-privacy-threats-of-browser-extension-fingerprinting/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/carnus-exploring-the-privacy-threats-of-browser-extension-fingerprinting/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

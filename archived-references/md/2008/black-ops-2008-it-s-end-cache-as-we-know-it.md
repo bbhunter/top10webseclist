@@ -5,18 +5,20 @@ resource: "https://blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHa
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:03:28+00:00"
+  at: "2026-08-11T17:38:12+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf"
     title: "Black Ops 2008: It's The End Of The Cache As We Know It"
+    author: Dan Kaminsky
 also_at: []
-authors: []
+authors:
+  - Dan Kaminsky
 canonical_url: ""
 cited_by:
-  - "2008.md:88"
+  - "2008.md:89"
 commit: ""
 content_sha256: 8912f42643fe21fb7991bbbecc1dc0a6a73786286140ded41d76c2469dd819c6
 depth: full
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 8b9575e17374aa2fc64468f8b5c35a25377561b851e73856e2865b0bc9ddce35
 retrieved_from: "https://blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:03:28+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:38:12+00:00"
 slug: black-ops-2008-it-s-end-cache-as-we-know-it
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Black Ops 2008: It's The End Of The Cache As We Know It
 
-**Black Ops 2008: It's The End Of The Cache As We Know It** - Author not stated, Publisher not stated.
+**Black Ops 2008: It's The End Of The Cache As We Know It** - Dan Kaminsky, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf>
-- Preserved from: https://blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf (live) on 2026-08-10
+- Preserved from: https://blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

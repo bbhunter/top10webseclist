@@ -5,20 +5,25 @@ resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/staic
 tags: [article, webseclist-reference, en, usenix-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:04:46+00:00"
+  at: "2026-08-11T17:46:37+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/staicu"
     title: "Freezing the Web: A Study of ReDoS Vulnerabilities in JavaScript-based Web Servers"
+    author: Cristian-Alexandru Staicu, Michael Pradel
+  - id: capture
+    resource: "https://web.archive.org/web/20191112053602/https://www.usenix.org/conference/usenixsecurity18/presentation/staicu"
 also_at: []
-authors: []
+authors:
+  - Cristian-Alexandru Staicu
+  - Michael Pradel
 canonical_url: ""
 cited_by:
-  - "2018.md:87"
+  - "2018.md:88"
 commit: ""
-content_sha256: 7e22258a9eedf780d46d5bf4163d9e3b9ade36e68a025d85e02d7b623d04a573
+content_sha256: 61096accd82665a1e2cee080c125ba19fd2992d94c29d7a83a5503f95d3e4b79
 depth: full
 depth_reason: default
 kind: article
@@ -28,12 +33,12 @@ original_url: "https://www.usenix.org/conference/usenixsecurity18/presentation/s
 published: ""
 publisher: usenix.org
 publisher_english: ""
-raw_sha256: c0c62a134f047a1ea05bb3852875c71541821a51f056d9ba8d00a223dcf6d939
+raw_sha256: d1f4e8e3ff1d719e481854921755799608d94fed69314824321793c7105c5a2d
 retrieved_from: "https://www.usenix.org/conference/usenixsecurity18/presentation/staicu"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:04:46+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:46:37+00:00"
 slug: usenix-org-freezing-web-study-redos-vulnerabilities-javascript-based-web-servers
-snapshot: ""
+snapshot: 20191112053602
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -41,11 +46,12 @@ translation_of: ""
 
 # Freezing the Web: A Study of ReDoS Vulnerabilities in JavaScript-based Web Servers
 
-**Freezing the Web: A Study of ReDoS Vulnerabilities in JavaScript-based Web Servers** - Author not stated, usenix.org.
+**Freezing the Web: A Study of ReDoS Vulnerabilities in JavaScript-based Web Servers** - Cristian-Alexandru Staicu, Michael Pradel, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity18/presentation/staicu>
-- Preserved from: https://www.usenix.org/conference/usenixsecurity18/presentation/staicu (live) on 2026-08-10
+- Preserved from: https://www.usenix.org/conference/usenixsecurity18/presentation/staicu (stored) on 2026-08-11
+- Capture timestamp: 20191112053602
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -60,9 +66,17 @@ page going offline. To read the original, follow the link above.
 
 # Freezing the Web: A Study of ReDoS Vulnerabilities in JavaScript-based Web Servers
 
+Authors:
+
 Cristian-Alexandru Staicu and Michael Pradel, *TU Darmstadt*
 
+Abstract:
+
 Regular expression denial of service (ReDoS) is a class of algorithmic complexity attacks where matching a regular expression against an attacker-provided input takes unexpectedly long. The single-threaded execution model of JavaScript makes JavaScript-based web servers particularly susceptible to ReDoS attacks. Despite this risk and the increasing popularity of the server-side Node.js platform, there is currently little reported knowledge about the severity of the ReDoS problem in practice. This paper presents a large-scale study of ReDoS vulnerabilities in real-world web sites. Underlying our study is a novel methodology for analyzing the exploitability of deployed servers. The basic idea is to search for previously unknown vulnerabilities in popular libraries, hypothesize how these libraries may be used by servers, and to then craft targeted exploits. In the course of the study, we identify 25 previously unknown vulnerabilities in popular modules and test 2,846 of the most popular websites against them. We find that 339 of these web sites suffer from at least one ReDoS vulnerability. Since a single request can block a vulnerable site for several seconds, and sometimes even much longer, ReDoS poses a serious threat to the availability of these sites. Our results are a call-to-arms for developing techniques to detect and mitigate ReDoS vulnerabilities in JavaScript.
+
+##  [Cristian-Alexandru Staicu, TU Darmstadt](https://www.usenix.org/conference/usenixsecurity18/speaker-or-organizer/cristian-alexandru-staicu-tu-darmstadt)
+
+##  [Michael Pradel, TU Darmstadt](https://www.usenix.org/conference/usenixsecurity18/speaker-or-organizer/michael-pradel-tu-darmstadt)
 
 ## Open Access Media
 
@@ -72,20 +86,20 @@ BibTeX
 
 @inproceedings {217517,
  author = {Cristian-Alexandru Staicu and Michael Pradel},
- title = {Freezing the Web: A Study of {ReDoS} Vulnerabilities in {JavaScript-based} Web Servers},
- booktitle = {27th USENIX Security Symposium (USENIX Security 18)},
+ title = {Freezing the Web: A Study of ReDoS Vulnerabilities in JavaScript-based Web Servers},
+ booktitle = {27th {USENIX} Security Symposium ({USENIX} Security 18)},
  year = {2018},
  isbn = {978-1-939133-04-5},
  address = {Baltimore, MD},
  pages = {361--376},
  url = {https://www.usenix.org/conference/usenixsecurity18/presentation/staicu},
- publisher = {USENIX Association},
- month = aug
+ publisher = {{USENIX} Association},
+ month = aug,
  }
 
 [Download](https://www.usenix.org/biblio/export/bibtex/217517)
 
-![PDF icon](https://www.usenix.org/core/modules/file/icons/application-pdf.png) [Staicu PDF](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-staicu.pdf)
+![PDF icon](https://www.usenix.org/modules/file/icons/application-pdf.png) [Staicu PDF](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-staicu.pdf)
 
 [View the slides](https://www.usenix.org/sites/default/files/conference/protected-files/security18_slides_staicu.pdf)
 

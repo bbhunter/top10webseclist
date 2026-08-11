@@ -5,15 +5,17 @@ resource: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentation
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:31:55+00:00"
+  at: "2026-08-11T17:42:44+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf"
     title: "One Chain to Own Them All: Breaking AI Infrastructures"
+    author: "Ji'an Zhou"
 also_at: []
-authors: []
+authors:
+  - "Ji'an Zhou"
 canonical_url: ""
 cited_by:
   - "2026-ai.md:75"
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 0ab97ef76707c58a515d9ea2732e5cb33e69a9f9585016d390fb98cec1def43c
 retrieved_from: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:31:55+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:42:44+00:00"
 slug: one-chain-own-them-all-breaking-ai-infrastructures
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # One Chain to Own Them All: Breaking AI Infrastructures
 
-**One Chain to Own Them All: Breaking AI Infrastructures** - Author not stated, Publisher not stated.
+**One Chain to Own Them All: Breaking AI Infrastructures** - Ji'an Zhou, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf>
-- Preserved from: https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf (live) on 2026-08-10
+- Preserved from: https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

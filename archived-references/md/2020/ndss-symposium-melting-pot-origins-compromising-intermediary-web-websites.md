@@ -5,19 +5,24 @@ resource: "https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-comp
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:47+00:00"
+  at: "2026-08-11T17:43:10+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/"
     title: "Melting Pot of Origins: Compromising the Intermediary Web Services that Rehost Websites"
+    author: Takuya Watanabe, Eitaro Shioji, Mitsuaki Akiyama, Tatsuya Mori
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2020/02/24140-paper.pdf"
-authors: []
+authors:
+  - Takuya Watanabe
+  - Eitaro Shioji
+  - Mitsuaki Akiyama
+  - Tatsuya Mori
 canonical_url: ""
 cited_by:
-  - "2020.md:72"
+  - "2020.md:73"
 commit: ""
 content_sha256: d023015fcfc61c1adebe4d98e31235849dd7e97b59b8a562f03a1d81f64f20a7
 depth: full
@@ -31,8 +36,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: dd81308d0efe6353939cb800ec2d9f062c5bae5bf66d54c65d02f048edd57f2a
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:47+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:43:10+00:00"
 slug: ndss-symposium-melting-pot-origins-compromising-intermediary-web-websites
 snapshot: ""
 title_english: ""
@@ -42,12 +47,12 @@ translation_of: ""
 
 # Melting Pot of Origins: Compromising the Intermediary Web Services that Rehost Websites
 
-**Melting Pot of Origins: Compromising the Intermediary Web Services that Rehost Websites** - Author not stated, NDSS Symposium.
+**Melting Pot of Origins: Compromising the Intermediary Web Services that Rehost Websites** - Takuya Watanabe, Eitaro Shioji, Mitsuaki Akiyama, Tatsuya Mori, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2020/02/24140-paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

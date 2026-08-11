@@ -5,18 +5,23 @@ resource: "https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper029.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:27:56+00:00"
+  at: "2026-08-11T17:42:00+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper029.pdf"
     title: "How to Shop for Free Online: Security Analysis of Cashier-as-a-Service Based Web Stores"
+    author: Rui Wang, Shuo Chen, XiaoFeng Wang, Shaz Qadeer
 also_at: []
-authors: []
+authors:
+  - Rui Wang
+  - Shuo Chen
+  - XiaoFeng Wang
+  - Shaz Qadeer
 canonical_url: ""
 cited_by:
-  - "2011.md:65"
+  - "2011.md:66"
 commit: ""
 content_sha256: b97329ae0b1bc23f1d3e314fe84b7ef2a741872d740c1f06201eec843cd84e03
 depth: full
@@ -30,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 089336d2aba99040c8fc199dec7819615565a4dad07391d5006a8a688578ebd5
 retrieved_from: "https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper029.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:27:56+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:42:00+00:00"
 slug: how-shop-free-online-security-analysis-cashier-as-service-based-web-stores
 snapshot: ""
 title_english: ""
@@ -41,11 +46,11 @@ translation_of: ""
 
 # How to Shop for Free Online: Security Analysis of Cashier-as-a-Service Based Web Stores
 
-**How to Shop for Free Online: Security Analysis of Cashier-as-a-Service Based Web Stores** - Author not stated, Publisher not stated.
+**How to Shop for Free Online: Security Analysis of Cashier-as-a-Service Based Web Stores** - Rui Wang, Shuo Chen, XiaoFeng Wang, Shaz Qadeer, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper029.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper029.pdf (live) on 2026-08-10
+- Preserved from: https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper029.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

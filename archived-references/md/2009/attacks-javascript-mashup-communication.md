@@ -5,18 +5,22 @@ resource: "https://www.ieee-security.org/TC/W2SP/2009/papers/s1p3.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:46+00:00"
+  at: "2026-08-11T17:41:35+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/W2SP/2009/papers/s1p3.pdf"
     title: Attacks on JavaScript Mashup Communication
+    author: Adam Barth, Collin Jackson, William Li
 also_at: []
-authors: []
+authors:
+  - Adam Barth
+  - Collin Jackson
+  - William Li
 canonical_url: ""
 cited_by:
-  - "2009.md:104"
+  - "2009.md:105"
 commit: ""
 content_sha256: e439f55de8dc41dcc54af928c32d80f3be2c56b864784d68ed4a1784779eedf4
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 1721267002250e515c0991973a1c797ff826d41b81e466363cde2a2484903dc3
 retrieved_from: "https://www.ieee-security.org/TC/W2SP/2009/papers/s1p3.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:46+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:35+00:00"
 slug: attacks-javascript-mashup-communication
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # Attacks on JavaScript Mashup Communication
 
-**Attacks on JavaScript Mashup Communication** - Author not stated, Publisher not stated.
+**Attacks on JavaScript Mashup Communication** - Adam Barth, Collin Jackson, William Li, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/W2SP/2009/papers/s1p3.pdf>
-- Preserved from: https://www.ieee-security.org/TC/W2SP/2009/papers/s1p3.pdf (live) on 2026-08-10
+- Preserved from: https://www.ieee-security.org/TC/W2SP/2009/papers/s1p3.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

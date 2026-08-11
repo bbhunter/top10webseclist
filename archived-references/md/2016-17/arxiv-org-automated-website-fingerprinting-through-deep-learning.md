@@ -5,18 +5,24 @@ resource: "https://arxiv.org/abs/1708.06376"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:02:28+00:00"
+  at: "2026-08-11T17:34:05+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://arxiv.org/abs/1708.06376"
     title: Automated Website Fingerprinting through Deep Learning
+    author: Vera Rimmer, Davy Preuveneers, Marc Juarez, Tom Van Goethem, Wouter Joosen
 also_at: []
-authors: []
+authors:
+  - Vera Rimmer
+  - Davy Preuveneers
+  - Marc Juarez
+  - Tom Van Goethem
+  - Wouter Joosen
 canonical_url: ""
 cited_by:
-  - "2016-17.md:102"
+  - "2016-17.md:103"
 commit: ""
 content_sha256: 616dbd9bb392a2d9daf9c170eb30a297f296a579ec850858c1abcc776d7be42b
 depth: full
@@ -30,8 +36,8 @@ publisher: arXiv.org
 publisher_english: ""
 raw_sha256: 124ed295cdf8116ecf8cdb682ae9a1e9ff513b6c46132f4a334141c9f0194843
 retrieved_from: "https://arxiv.org/abs/1708.06376"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:02:28+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:05+00:00"
 slug: arxiv-org-automated-website-fingerprinting-through-deep-learning
 snapshot: ""
 title_english: ""
@@ -41,11 +47,11 @@ translation_of: ""
 
 # Automated Website Fingerprinting through Deep Learning
 
-**Automated Website Fingerprinting through Deep Learning** - Author not stated, arXiv.org.
+**Automated Website Fingerprinting through Deep Learning** - Vera Rimmer, Davy Preuveneers, Marc Juarez, Tom Van Goethem, Wouter Joosen, arXiv.org.
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/1708.06376>
-- Preserved from: https://arxiv.org/abs/1708.06376 (live) on 2026-08-10
+- Preserved from: https://arxiv.org/abs/1708.06376 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

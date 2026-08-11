@@ -5,19 +5,25 @@ resource: "https://www.ndss-symposium.org/ndss-paper/synthdb-synthesizing-databa
 tags: [article, webseclist-reference, en, ndss-symposium]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:33:55+00:00"
+  at: "2026-08-11T17:44:34+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/synthdb-synthesizing-database-via-program-analysis-for-security-testing-of-web-applications/"
     title: "SynthDB: Synthesizing Database via Program Analysis for Security Testing of Web Applications"
+    author: An Chen, Jiho Lee, Basanta Chaulagain, Yonghwi Kwon, Kyu Hyung Lee
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2023-632-paper.pdf"
-authors: []
+authors:
+  - An Chen
+  - Jiho Lee
+  - Basanta Chaulagain
+  - Yonghwi Kwon
+  - Kyu Hyung Lee
 canonical_url: ""
 cited_by:
-  - "2023.md:89"
+  - "2023.md:90"
 commit: ""
 content_sha256: 6797e474a009f2ce4a52ef424e653e1cd8dd62f240cca146495c99fc1638ef0d
 depth: full
@@ -31,8 +37,8 @@ publisher: NDSS Symposium
 publisher_english: ""
 raw_sha256: c5d99b17d2bcaadd074909a67f660bdd43264fc4c0426bbb93eb30bed3e72c6e
 retrieved_from: "https://www.ndss-symposium.org/ndss-paper/synthdb-synthesizing-database-via-program-analysis-for-security-testing-of-web-applications/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:33:55+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:34+00:00"
 slug: ndss-symposium-synthdb-synthesizing-database-program-analysis-applications
 snapshot: ""
 title_english: ""
@@ -42,12 +48,12 @@ translation_of: ""
 
 # SynthDB: Synthesizing Database via Program Analysis for Security Testing of Web Applications
 
-**SynthDB: Synthesizing Database via Program Analysis for Security Testing of Web Applications** - Author not stated, NDSS Symposium.
+**SynthDB: Synthesizing Database via Program Analysis for Security Testing of Web Applications** - An Chen, Jiho Lee, Basanta Chaulagain, Yonghwi Kwon, Kyu Hyung Lee, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/synthdb-synthesizing-database-via-program-analysis-for-security-testing-of-web-applications/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2023-632-paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/ndss-paper/synthdb-synthesizing-database-via-program-analysis-for-security-testing-of-web-applications/ (live) on 2026-08-10
+- Preserved from: https://www.ndss-symposium.org/ndss-paper/synthdb-synthesizing-database-via-program-analysis-for-security-testing-of-web-applications/ (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

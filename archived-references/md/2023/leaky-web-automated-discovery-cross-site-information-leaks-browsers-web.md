@@ -5,18 +5,22 @@ resource: "https://trouge.net/papers/xsleaks_sp2023.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T23:55:27+00:00"
+  at: "2026-08-11T17:45:48+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://trouge.net/papers/xsleaks_sp2023.pdf"
     title: "The Leaky Web: Automated Discovery of Cross-Site Information Leaks in Browsers and the Web"
+    author: Jannis Rautenstrauch, Giancarlo Pellegrino, Ben Stock
 also_at: []
-authors: []
+authors:
+  - Jannis Rautenstrauch
+  - Giancarlo Pellegrino
+  - Ben Stock
 canonical_url: ""
 cited_by:
-  - "2023.md:87"
+  - "2023.md:83"
 commit: ""
 content_sha256: 905a267756a8d8b76af394912c2f4fa339e9e97add1c28fc252005c7c26a6dd6
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 5fc61b3d59a31430868946b13bb6f528fd60e47e8289a2191cc680f178510691
 retrieved_from: "https://trouge.net/papers/xsleaks_sp2023.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T23:55:27+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:48+00:00"
 slug: leaky-web-automated-discovery-cross-site-information-leaks-browsers-web
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # The Leaky Web: Automated Discovery of Cross-Site Information Leaks in Browsers and the Web
 
-**The Leaky Web: Automated Discovery of Cross-Site Information Leaks in Browsers and the Web** - Author not stated, Publisher not stated.
+**The Leaky Web: Automated Discovery of Cross-Site Information Leaks in Browsers and the Web** - Jannis Rautenstrauch, Giancarlo Pellegrino, Ben Stock, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://trouge.net/papers/xsleaks_sp2023.pdf>
-- Preserved from: https://trouge.net/papers/xsleaks_sp2023.pdf (live) on 2026-08-08
+- Preserved from: https://trouge.net/papers/xsleaks_sp2023.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

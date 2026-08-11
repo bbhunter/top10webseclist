@@ -5,18 +5,20 @@ resource: "https://portswigger.net/blog/evading-csp-with-dom-based-dangling-mark
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:18+00:00"
+  at: "2026-08-11T17:45:12+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/blog/evading-csp-with-dom-based-dangling-markup"
     title: Evading CSP with DOM-based dangling markup
+    author: Gareth Heyes
     last_modified: 2018-07-18
   - id: canonical
     resource: "https://portswigger.net/research/evading-csp-with-dom-based-dangling-markup"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://portswigger.net/research/evading-csp-with-dom-based-dangling-markup"
 cited_by:
   - "2018.md:45"
@@ -33,8 +35,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: c01553e8b3f2c4f8969a53ac6a6e7a71eeddefb82a5f50d5c9ff3546e545e21a
 retrieved_from: "https://portswigger.net/research/evading-csp-with-dom-based-dangling-markup"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:18+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:45:12+00:00"
 slug: 2018-portswigger-research-evading-csp-dom-based-dangling-markup
 snapshot: ""
 title_english: ""
@@ -44,12 +46,12 @@ translation_of: ""
 
 # Evading CSP with DOM-based dangling markup
 
-**Evading CSP with DOM-based dangling markup** - Author not stated, PortSwigger Research.
+**Evading CSP with DOM-based dangling markup** - Gareth Heyes, PortSwigger Research.
 
 - Published: 2018-07-18
 - Original: <https://portswigger.net/blog/evading-csp-with-dom-based-dangling-markup>
 - Current location: <https://portswigger.net/research/evading-csp-with-dom-based-dangling-markup>
-- Preserved from: https://portswigger.net/research/evading-csp-with-dom-based-dangling-markup (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/evading-csp-with-dom-based-dangling-markup (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

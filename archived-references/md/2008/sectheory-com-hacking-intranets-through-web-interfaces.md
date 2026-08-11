@@ -5,17 +5,19 @@ resource: "http://www.sectheory.com/intranet-hacking.htm"
 tags: [article, webseclist-reference, sectheory-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T11:26:40+00:00"
+  at: "2026-08-11T17:37:03+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://www.sectheory.com/intranet-hacking.htm"
     title: Hacking Intranets Through Web Interfaces
+    author: Robert Hansen
   - id: capture
     resource: "https://web.archive.org/web/20080517144729/http://www.sectheory.com/intranet-hacking.htm"
 also_at: []
-authors: []
+authors:
+  - Robert Hansen
 canonical_url: ""
 cited_by:
   - "2008.md:39"
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: be2bcecee6dfc448f18b119727346b2e4e7eff1d88f7fa8f2a9e90368b780a95
 retrieved_from: "http://www.sectheory.com/intranet-hacking.htm"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T11:26:40+00:00"
+retrieved_utc: "2026-08-11T17:37:03+00:00"
 slug: sectheory-com-hacking-intranets-through-web-interfaces
 snapshot: 20080517144729
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Hacking Intranets Through Web Interfaces
 
-**Hacking Intranets Through Web Interfaces** - Author not stated, sectheory.com.
+**Hacking Intranets Through Web Interfaces** - Robert Hansen, sectheory.com.
 
 - Published: date not stated
 - Original: <http://www.sectheory.com/intranet-hacking.htm>
-- Preserved from: http://www.sectheory.com/intranet-hacking.htm (stored) on 2026-08-09
+- Preserved from: http://www.sectheory.com/intranet-hacking.htm (stored) on 2026-08-11
 - Capture timestamp: 20080517144729
 - Licence: unknown
 

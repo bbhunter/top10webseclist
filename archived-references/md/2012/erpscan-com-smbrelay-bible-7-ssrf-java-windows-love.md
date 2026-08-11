@@ -5,20 +5,22 @@ resource: "https://web.archive.org/web/20170903113359/http://erpscan.com/press-c
 tags: [article, webseclist-reference, en-US, erpscan-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:09:39+00:00"
+  at: "2026-08-11T17:40:00+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/"
     title: "SMBRelay Bible 7: SSRF + Java + Windows = Love"
+    author: Alexey Tyurin
   - id: canonical
-    resource: "https://web.archive.org/web/20150110195735/http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/"
+    resource: "http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/"
 also_at: []
-authors: []
-canonical_url: "https://web.archive.org/web/20150110195735/http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/"
+authors:
+  - Alexey Tyurin
+canonical_url: "http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/"
 cited_by:
   - "2012.md:57"
 commit: ""
@@ -33,9 +35,9 @@ published: ""
 publisher: erpscan.com
 publisher_english: ""
 raw_sha256: 15c643e7244fffb875959fe5d267ad48c39c8aeb21f263c8890a80e80263afdc
-retrieved_from: "https://web.archive.org/web/20150110195735/http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:09:39+00:00"
+retrieved_from: "http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:40:00+00:00"
 slug: erpscan-com-smbrelay-bible-7-ssrf-java-windows-love
 snapshot: 20170903113359
 title_english: ""
@@ -45,12 +47,12 @@ translation_of: ""
 
 # SMBRelay Bible 7: SSRF + Java + Windows = Love
 
-**SMBRelay Bible 7: SSRF + Java + Windows = Love** - Author not stated, erpscan.com.
+**SMBRelay Bible 7: SSRF + Java + Windows = Love** - Alexey Tyurin, erpscan.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/>
-- Current location: <https://web.archive.org/web/20150110195735/http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/>
-- Preserved from: https://web.archive.org/web/20150110195735/http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/ (live) on 2026-08-10
+- Current location: <http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/>
+- Preserved from: http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/ (stored) on 2026-08-11
 - Capture timestamp: 20170903113359
 - Licence: unknown
 

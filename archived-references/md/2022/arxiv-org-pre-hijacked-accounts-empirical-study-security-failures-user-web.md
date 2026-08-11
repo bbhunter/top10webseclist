@@ -5,20 +5,23 @@ resource: "https://arxiv.org/abs/2205.10174"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:01:33+00:00"
+  at: "2026-08-11T17:34:06+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://arxiv.org/abs/2205.10174"
     title: "Pre-hijacked accounts: An Empirical Study of Security Failures in User Account Creation on the Web"
+    author: Avinash Sudhodanan, Andrew Paverd
 also_at: []
-authors: []
+authors:
+  - Avinash Sudhodanan
+  - Andrew Paverd
 canonical_url: ""
 cited_by:
-  - "2022.md:79"
+  - "2022.md:78"
 commit: ""
-content_sha256: c31c0c615e6110cd1dca55dd0d8edaa9a23ba4d15fa2c9b1b6d96d8e9ddb41c4
+content_sha256: 38cb8babd9f6a25f936d264d3d215d44c7faa3a31248486e5354b4c1b88bb738
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +33,8 @@ publisher: arXiv.org
 publisher_english: ""
 raw_sha256: 2a2a3d12a966cb850156642440a92790c5574d19f2329d368e2b91308ef6a843
 retrieved_from: "https://arxiv.org/abs/2205.10174"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:01:33+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:34:06+00:00"
 slug: arxiv-org-pre-hijacked-accounts-empirical-study-security-failures-user-web
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # Pre-hijacked accounts: An Empirical Study of Security Failures in User Account Creation on the Web
 
-**Pre-hijacked accounts: An Empirical Study of Security Failures in User Account Creation on the Web** - Author not stated, arXiv.org.
+**Pre-hijacked accounts: An Empirical Study of Security Failures in User Account Creation on the Web** - Avinash Sudhodanan, Andrew Paverd, arXiv.org.
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/2205.10174>
-- Preserved from: https://arxiv.org/abs/2205.10174 (live) on 2026-08-09
+- Preserved from: https://arxiv.org/abs/2205.10174 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

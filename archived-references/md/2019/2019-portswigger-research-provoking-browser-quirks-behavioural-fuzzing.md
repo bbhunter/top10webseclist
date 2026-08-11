@@ -5,19 +5,21 @@ resource: "https://portswigger.net/research/provoking-browser-quirks-with-behavi
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:36:51+00:00"
+  at: "2026-08-11T17:44:38+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing"
     title: Provoking browser quirks with behavioural fuzzing
+    author: Gareth Heyes
     last_modified: 2019-05-28
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: ""
 cited_by:
-  - "2019.md:80"
+  - "2019.md:81"
 commit: ""
 content_sha256: c593dbf7c0dc809227ce3e4feecf1244006e019cd7fe3583f15ac2066b134b82
 depth: full
@@ -31,8 +33,8 @@ publisher: PortSwigger Research
 publisher_english: ""
 raw_sha256: 75bc96cb1ee85fbe754ee6bac09ae016df0956b56ce38e7675cf3be1114c1320
 retrieved_from: "https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:36:51+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:44:38+00:00"
 slug: 2019-portswigger-research-provoking-browser-quirks-behavioural-fuzzing
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Provoking browser quirks with behavioural fuzzing
 
-**Provoking browser quirks with behavioural fuzzing** - Author not stated, PortSwigger Research.
+**Provoking browser quirks with behavioural fuzzing** - Gareth Heyes, PortSwigger Research.
 
 - Published: 2019-05-28
 - Original: <https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing>
-- Preserved from: https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing (live) on 2026-08-10
+- Preserved from: https://portswigger.net/research/provoking-browser-quirks-with-behavioural-fuzzing (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

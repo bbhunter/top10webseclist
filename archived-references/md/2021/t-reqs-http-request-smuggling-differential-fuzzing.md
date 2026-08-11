@@ -5,17 +5,22 @@ resource: "https://bahruz.me/papers/ccs2021treqs.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T19:07:00+00:00"
+  at: "2026-08-11T17:38:02+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://bahruz.me/papers/ccs2021treqs.pdf"
     title: "T-Reqs: HTTP Request Smuggling with Differential Fuzzing"
+    author: Bahruz Jabiyev, Steven Sprecher, Kaan Onarlioglu, Engin Kirda
   - id: capture
     resource: "https://web.archive.org/web/20220525035027/https://bahruz.me/papers/ccs2021treqs.pdf"
 also_at: []
-authors: []
+authors:
+  - Bahruz Jabiyev
+  - Steven Sprecher
+  - Kaan Onarlioglu
+  - Engin Kirda
 canonical_url: ""
 cited_by:
   - "2021.md:24"
@@ -33,7 +38,7 @@ publisher_english: ""
 raw_sha256: 093372154d479b74abe1046f447e8db0c1fcd2861f0c5bf56da352e0b80ca745
 retrieved_from: "https://bahruz.me/papers/ccs2021treqs.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T19:07:00+00:00"
+retrieved_utc: "2026-08-11T17:38:02+00:00"
 slug: t-reqs-http-request-smuggling-differential-fuzzing
 snapshot: 20220525035027
 title_english: ""
@@ -43,11 +48,11 @@ translation_of: ""
 
 # T-Reqs: HTTP Request Smuggling with Differential Fuzzing
 
-**T-Reqs: HTTP Request Smuggling with Differential Fuzzing** - Author not stated, Publisher not stated.
+**T-Reqs: HTTP Request Smuggling with Differential Fuzzing** - Bahruz Jabiyev, Steven Sprecher, Kaan Onarlioglu, Engin Kirda, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://bahruz.me/papers/ccs2021treqs.pdf>
-- Preserved from: https://bahruz.me/papers/ccs2021treqs.pdf (stored) on 2026-08-10
+- Preserved from: https://bahruz.me/papers/ccs2021treqs.pdf (stored) on 2026-08-11
 - Capture timestamp: 20220525035027
 - Licence: unknown
 

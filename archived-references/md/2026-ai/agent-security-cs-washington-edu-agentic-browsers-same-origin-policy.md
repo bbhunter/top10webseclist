@@ -5,15 +5,18 @@ resource: "https://agent-security.cs.washington.edu/agentic_browsers_sop.html"
 tags: [article, webseclist-reference, en, agent-security-cs-washington-edu]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:01:21+00:00"
+  at: "2026-08-11T17:33:59+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://agent-security.cs.washington.edu/agentic_browsers_sop.html"
     title: Agentic Browsers and the Same-Origin Policy
+    author: Franziska Roesner, David Kohlbrenner
 also_at: []
-authors: []
+authors:
+  - Franziska Roesner
+  - David Kohlbrenner
 canonical_url: ""
 cited_by:
   - "2026-ai.md:81"
@@ -30,8 +33,8 @@ publisher: agent-security.cs.washington.edu
 publisher_english: ""
 raw_sha256: d2a577f6420c2afee45f90ade9c45cd488ce6a3fb750b89a15689834a0a44a97
 retrieved_from: "https://agent-security.cs.washington.edu/agentic_browsers_sop.html"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:01:21+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:33:59+00:00"
 slug: agent-security-cs-washington-edu-agentic-browsers-same-origin-policy
 snapshot: ""
 title_english: ""
@@ -41,11 +44,11 @@ translation_of: ""
 
 # Agentic Browsers and the Same-Origin Policy
 
-**Agentic Browsers and the Same-Origin Policy** - Author not stated, agent-security.cs.washington.edu.
+**Agentic Browsers and the Same-Origin Policy** - Franziska Roesner, David Kohlbrenner, agent-security.cs.washington.edu.
 
 - Published: date not stated
 - Original: <https://agent-security.cs.washington.edu/agentic_browsers_sop.html>
-- Preserved from: https://agent-security.cs.washington.edu/agentic_browsers_sop.html (live) on 2026-08-10
+- Preserved from: https://agent-security.cs.washington.edu/agentic_browsers_sop.html (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

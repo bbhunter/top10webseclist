@@ -5,18 +5,27 @@ resource: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a535.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:28:20+00:00"
+  at: "2026-08-11T17:41:47+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a535.pdf"
     title: "A Messy State of the Union: Taming the Composite State Machines of TLS"
+    author: Benjamin Beurdouche, Karthikeyan Bhargavan, Antoine Delignat-Lavaud, Cédric Fournet, Markulf Kohlweiss, Alfredo Pironti, Pierre-Yves Strub, Jean Karim Zinzindohoue
 also_at: []
-authors: []
+authors:
+  - Benjamin Beurdouche
+  - Karthikeyan Bhargavan
+  - Antoine Delignat-Lavaud
+  - Cédric Fournet
+  - Markulf Kohlweiss
+  - Alfredo Pironti
+  - Pierre-Yves Strub
+  - Jean Karim Zinzindohoue
 canonical_url: ""
 cited_by:
-  - "2015.md:54"
+  - "2015.md:55"
 commit: ""
 content_sha256: 565ca033cd67e2d86cdc8dcca4af5516713738c15471f3502f024c8822d29db5
 depth: full
@@ -30,8 +39,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 5cc107f7eadb186666e4151fe93a1922b8553edfa037b01dc945209092b5cba5
 retrieved_from: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a535.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:28:20+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:41:47+00:00"
 slug: messy-state-union-taming-composite-state-machines-tls
 snapshot: ""
 title_english: ""
@@ -41,11 +50,11 @@ translation_of: ""
 
 # A Messy State of the Union: Taming the Composite State Machines of TLS
 
-**A Messy State of the Union: Taming the Composite State Machines of TLS** - Author not stated, Publisher not stated.
+**A Messy State of the Union: Taming the Composite State Machines of TLS** - Benjamin Beurdouche, Karthikeyan Bhargavan, Antoine Delignat-Lavaud, Cédric Fournet, Markulf Kohlweiss, Alfredo Pironti, Pierre-Yves Strub, Jean Karim Zinzindohoue, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2015/papers-archived/6949a535.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2015/papers-archived/6949a535.pdf (live) on 2026-08-10
+- Preserved from: https://www.ieee-security.org/TC/SP2015/papers-archived/6949a535.pdf (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
