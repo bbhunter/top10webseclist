@@ -21,18 +21,34 @@
     "  An entry may also carry 'title'. The probe records what the page called",
     "  itself, so a page that answered with a bot check is archived under the",
     "  wall's title; stating the real one corrects the heading, the frontmatter",
-    "  and the file name. Only a human can know it, which is why it lives here."
+    "  and the file name. Only a human can know it, which is why it lives here.",
+    "  An entry may also carry 'authors' and 'publisher'. Extraction reads only",
+    "  an author a page DECLARES in a meta tag, so a whitepaper whose byline is",
+    "  body text and a blog that declares nothing both render 'Author not",
+    "  stated' - 1,261 of 1,684 references do. Stating them credits the",
+    "  researcher instead of the hostname, and a stated publisher outranks the",
+    "  squatter that answered for a domain the research outlived. Apply them",
+    "  with `refs.py attribution`, which is offline; the published documents",
+    "  keep the old byline until the next re-render."
   ],
   "canonical_sources": [],
   "author_copies": [],
   "mirror_sources": [],
   "urls": {},
   "decisions": {
+    "https://aspectsecurity.com/documents/Bypassing_VBAAC_with_HTTP_Verb_Tampering.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": ["Arshan Dabirsiaghi"],
+      "publisher": "Aspect Security",
+      "reason": "The hand-imported whitepaper is the right document and names its own author on page one - \"Arshan Dabirsiaghi, Director of Research, Aspect Security\" - but a PDF byline is body text, so extraction recorded neither an author nor a publisher and the file read \"Author not stated, Publisher not stated\". Both are stated here. The title is left as the citation spells it; the paper's own heading reads \"Web\" where the 2008 list reads \"URL\", which is a curation question and not an attribution one."
+    },
     "https://aspectsecurity.com/tools/javasnoop": {
       "outcome": "archive",
       "class": "research",
       "title": "JavaSnoop",
-      "reason": "The live domain served a GoDaddy sale page. A near-publication Wayback capture recovered the cited project page; the curated citation title replaces the stale parked-domain heading and file name."
+      "authors": ["Arshan Dabirsiaghi"],
+      "reason": "The live domain served a GoDaddy sale page. A near-publication Wayback capture recovered the cited project page; the curated citation title replaces the stale parked-domain heading and file name. JavaSnoop was written by Arshan Dabirsiaghi at Aspect Security; the recovered project page declares no author, so the byline is stated here."
     },
     "https://gosecure.net/blog/2023/06/21/aws-waf-clients-left-vulnerable-to-sql-injection-due-to-unorthodox-mssql-design-choice": {
       "outcome": "archive",
@@ -44,31 +60,36 @@
       "outcome": "archive",
       "class": "research",
       "title": "HTML/CSS Injections - Primitive Malicious Code",
-      "reason": "The live domain served a HugeDomains sale page. A 2008 Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name."
+      "authors": ["Arshan Dabirsiaghi"],
+      "reason": "The live domain served a HugeDomains sale page. A 2008 Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name. i8jesus.com was Arshan Dabirsiaghi's blog and the 2008-era captures declare no author, so the byline is stated here."
     },
     "https://i8jesus.com/?p=13": {
       "outcome": "archive",
       "class": "research",
       "title": "Same Origin Bypassing Using Image Dimensions",
-      "reason": "The live domain served a HugeDomains sale page. A 2008 Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name."
+      "authors": ["Arshan Dabirsiaghi"],
+      "reason": "The live domain served a HugeDomains sale page. A 2008 Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name. i8jesus.com was Arshan Dabirsiaghi's blog and the 2008-era captures declare no author, so the byline is stated here."
     },
     "https://i8jesus.com/?p=37": {
       "outcome": "archive",
       "class": "research",
       "title": "Browser Scheme and Slash Quirks",
-      "reason": "The live domain served a HugeDomains sale page. A near-publication Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name."
+      "authors": ["Arshan Dabirsiaghi"],
+      "reason": "The live domain served a HugeDomains sale page. A near-publication Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name. i8jesus.com was Arshan Dabirsiaghi's blog and the 2009-era captures declare no author, so the byline is stated here."
     },
     "https://i8jesus.com/?p=48": {
       "outcome": "archive",
       "class": "research",
       "title": "Forget Sidejacking, Clickjacking, and Carjacking: Enter Formjacking",
-      "reason": "The live domain served a HugeDomains sale page. A near-publication Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name."
+      "authors": ["Arshan Dabirsiaghi"],
+      "reason": "The live domain served a HugeDomains sale page. A near-publication Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name. i8jesus.com was Arshan Dabirsiaghi's blog and the 2009-era captures declare no author, so the byline is stated here."
     },
     "https://i8jesus.com/?p=75": {
       "outcome": "archive",
       "class": "research",
       "title": "Cross-protocol XSS with non-standard service ports",
-      "reason": "The live domain and one replay served a HugeDomains sale page. An alternate 2009 Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name."
+      "authors": ["Arshan Dabirsiaghi"],
+      "reason": "The live domain and one replay served a HugeDomains sale page. An alternate 2009 Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name. i8jesus.com was Arshan Dabirsiaghi's blog and the 2009-era captures declare no author, so the byline is stated here."
     },
     "https://blog.quaji.com/2009/12/out-of-context-information-disclosure.html": {
       "outcome": "archive",
