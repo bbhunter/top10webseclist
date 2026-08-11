@@ -6,14 +6,16 @@ tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T16:33:55+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-06
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://www.mcafee.com/us/resources/white-papers/foundstone/wp-attacking-captchas-for-fun-profit.pdf"
     title: Attacking CAPTCHAs for Fun and Profit
+    author: Gursev Singh Kalra
 also_at: []
-authors: []
+authors:
+  - Gursev Singh Kalra
 canonical_url: ""
 cited_by:
   - "2012.md:59"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Attacking CAPTCHAs for Fun and Profit
 
-**Attacking CAPTCHAs for Fun and Profit** - Author not stated, Publisher not stated.
+**Attacking CAPTCHAs for Fun and Profit** - Gursev Singh Kalra, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://www.mcafee.com/us/resources/white-papers/foundstone/wp-attacking-captchas-for-fun-profit.pdf>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

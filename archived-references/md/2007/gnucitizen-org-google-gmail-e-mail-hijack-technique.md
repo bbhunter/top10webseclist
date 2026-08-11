@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/google-gmail-e-mail-hijack-technique/"
     title: Google GMail E-mail Hijack Technique
+    author: pdp
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: ""
 cited_by:
   - "2007.md:12"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Google GMail E-mail Hijack Technique
 
-**Google GMail E-mail Hijack Technique** - Author not stated, gnucitizen.org.
+**Google GMail E-mail Hijack Technique** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/google-gmail-e-mail-hijack-technique/>

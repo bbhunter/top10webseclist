@@ -12,10 +12,17 @@ sources:
   - id: original
     resource: "https://bahruz.me/publications/11844.pdf"
     title: "FRAMESHIFTER: Security Implications of HTTP/2-to-HTTP/1 Conversion Anomalies"
+    author: Bahruz Jabiyev, Steven Sprecher, Anthony Gavazzi, Tommaso Innocenti, Kaan Onarlioglu, Engin Kirda
   - id: canonical
     resource: "https://spaces-cdn.owlstown.com/blobs/h04e1cfw22p2g7xvog93a96x6zel"
 also_at: []
-authors: []
+authors:
+  - Bahruz Jabiyev
+  - Steven Sprecher
+  - Anthony Gavazzi
+  - Tommaso Innocenti
+  - Kaan Onarlioglu
+  - Engin Kirda
 canonical_url: "https://spaces-cdn.owlstown.com/blobs/h04e1cfw22p2g7xvog93a96x6zel"
 cited_by:
   - "2022.md:22"
@@ -43,7 +50,7 @@ translation_of: ""
 
 # FRAMESHIFTER: Security Implications of HTTP/2-to-HTTP/1 Conversion Anomalies
 
-**FRAMESHIFTER: Security Implications of HTTP/2-to-HTTP/1 Conversion Anomalies** - Author not stated, Publisher not stated.
+**FRAMESHIFTER: Security Implications of HTTP/2-to-HTTP/1 Conversion Anomalies** - Bahruz Jabiyev, Steven Sprecher, Anthony Gavazzi, Tommaso Innocenti, Kaan Onarlioglu, Engin Kirda, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://bahruz.me/publications/11844.pdf>

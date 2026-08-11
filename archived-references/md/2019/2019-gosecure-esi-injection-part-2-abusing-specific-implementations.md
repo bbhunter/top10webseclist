@@ -12,8 +12,11 @@ sources:
   - id: original
     resource: "https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations"
     title: 24/7 managed detection, response, and expert cybersecurity services
+    author: Philippe Arteau, @GoSecure_Inc
 also_at: []
-authors: []
+authors:
+  - Philippe Arteau
+  - @GoSecure_Inc
 canonical_url: ""
 cited_by:
   - "2019.md:31"
@@ -41,7 +44,7 @@ translation_of: ""
 
 # 24/7 managed detection, response, and expert cybersecurity services
 
-**24/7 managed detection, response, and expert cybersecurity services** - Author not stated, GoSecure.
+**24/7 managed detection, response, and expert cybersecurity services** - Philippe Arteau, @GoSecure_Inc, GoSecure.
 
 - Published: date not stated
 - Original: <https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations>

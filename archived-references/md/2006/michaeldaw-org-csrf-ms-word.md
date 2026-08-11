@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20070101051946/http://michaeldaw.org/md-hacks/csrf-with-msword/"
     title: CSRF with MS Word
+    author: David Kierznowski
 also_at: []
-authors: []
+authors:
+  - David Kierznowski
 canonical_url: ""
 cited_by:
   - "2006.md:24"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # CSRF with MS Word
 
-**CSRF with MS Word** - Author not stated, michaeldaw.org.
+**CSRF with MS Word** - David Kierznowski, michaeldaw.org.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20070101051946/http://michaeldaw.org/md-hacks/csrf-with-msword/>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

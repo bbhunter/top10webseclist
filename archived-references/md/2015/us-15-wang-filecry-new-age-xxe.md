@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE.pdf"
     title: us 15 Wang FileCry The New Age Of XXE
+    author: Xiaoran Wang, Sergey Gorbaty
 also_at: []
-authors: []
+authors:
+  - Xiaoran Wang
+  - Sergey Gorbaty
 canonical_url: ""
 cited_by:
-  - "2015.md:32"
+  - "2015.md:29"
 commit: ""
 content_sha256: dd7dc49363f02b3eb2567ee07dbd9eb107f4550934cb477b3370c1f52357f325
 depth: full
@@ -41,7 +44,7 @@ translation_of: ""
 
 # us 15 Wang FileCry The New Age Of XXE
 
-**us 15 Wang FileCry The New Age Of XXE** - Author not stated, Publisher not stated.
+**us 15 Wang FileCry The New Age Of XXE** - Xiaoran Wang, Sergey Gorbaty, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE.pdf>
@@ -49,7 +52,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

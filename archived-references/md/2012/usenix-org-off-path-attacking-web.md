@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/woot12/workshop-program/presentation/gilad"
     title: Off-Path Attacking the Web
+    author: Yossi Gilad, Amir Herzberg
 also_at: []
-authors: []
+authors:
+  - Yossi Gilad
+  - Amir Herzberg
 canonical_url: ""
 cited_by:
-  - "2012.md:77"
+  - "2012.md:78"
 commit: ""
 content_sha256: 01da4902b27ab739845c42a0fbdc7b7fad0c4c4387fe4b7445ab455f27ac2203
 depth: full
@@ -41,7 +44,7 @@ translation_of: ""
 
 # Off-Path Attacking the Web
 
-**Off-Path Attacking the Web** - Author not stated, usenix.org.
+**Off-Path Attacking the Web** - Yossi Gilad, Amir Herzberg, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/woot12/workshop-program/presentation/gilad>

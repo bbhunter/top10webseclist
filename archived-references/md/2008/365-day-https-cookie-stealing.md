@@ -12,11 +12,13 @@ sources:
   - id: original
     resource: "https://fscked.org/talks/ActiveHTTPSCookieStealing.pdf"
     title: "365-Day: https Cookie Stealing"
+    author: Mike Perry
 also_at: []
-authors: []
+authors:
+  - Mike Perry
 canonical_url: ""
 cited_by:
-  - "2008.md:97"
+  - "2008.md:93"
 commit: ""
 content_sha256: 1e6c5cd7aa732226aa039e6bbf93366089a8aec5f5620cc2890d5c177e8b1ac8
 depth: full
@@ -41,7 +43,7 @@ translation_of: ""
 
 # 365-Day: https Cookie Stealing
 
-**365-Day: https Cookie Stealing** - Author not stated, Publisher not stated.
+**365-Day: https Cookie Stealing** - Mike Perry, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://fscked.org/talks/ActiveHTTPSCookieStealing.pdf>

@@ -6,14 +6,16 @@ tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:50:52+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-07
 sources:
   - id: original
     resource: "http://trivero.secdiscover.com/html5whitepaper.pdf"
     title: Abusing HTML 5 Structured Client-side Storage
+    author: Alberto Trivero
 also_at: []
-authors: []
+authors:
+  - Alberto Trivero
 canonical_url: ""
 cited_by:
   - "2008.md:10"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Abusing HTML 5 Structured Client-side Storage
 
-**Abusing HTML 5 Structured Client-side Storage** - Author not stated, Publisher not stated.
+**Abusing HTML 5 Structured Client-side Storage** - Alberto Trivero, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://trivero.secdiscover.com/html5whitepaper.pdf>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20140516030049/http://www.securatary.com/Portals/0/Vulnerabilities/PayPal/Paypal%20Manager%20Account%20Hijack.pdf"
     title: Paypal Manager Account Hijack
+    author: Mark Litchfield
 also_at: []
-authors: []
+authors:
+  - Mark Litchfield
 canonical_url: ""
 cited_by:
   - "2014.md:30"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Paypal Manager Account Hijack
 
-**Paypal Manager Account Hijack** - Author not stated, Publisher not stated.
+**Paypal Manager Account Hijack** - Mark Litchfield, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20140516030049/http://www.securatary.com/Portals/0/Vulnerabilities/PayPal/Paypal%20Manager%20Account%20Hijack.pdf>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

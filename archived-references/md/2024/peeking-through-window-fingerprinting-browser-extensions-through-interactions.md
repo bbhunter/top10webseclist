@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://doi.org/10.1145/3658644.3670339"
     title: "Peeking through the window: Fingerprinting Browser Extensions through Page-Visible Execution Traces and Interactions"
+    author: Shubham Agarwal, Aurore Fass, Ben Stock
 also_at: []
-authors: []
+authors:
+  - Shubham Agarwal
+  - Aurore Fass
+  - Ben Stock
 canonical_url: ""
 cited_by:
-  - "2024.md:148"
+  - "2024.md:146"
 commit: ""
 content_sha256: 4906756019d2a80047a5cfb46d558aa55121ebed03c61c1f361549be1cfc9548
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # Peeking through the window: Fingerprinting Browser Extensions through Page-Visible Execution Traces and Interactions
 
-**Peeking through the window: Fingerprinting Browser Extensions through Page-Visible Execution Traces and Interactions** - Author not stated, Publisher not stated.
+**Peeking through the window: Fingerprinting Browser Extensions through Page-Visible Execution Traces and Interactions** - Shubham Agarwal, Aurore Fass, Ben Stock, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://doi.org/10.1145/3658644.3670339>

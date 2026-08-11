@@ -12,8 +12,14 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity26/presentation/li-ruixuan"
     title: Alias Equals Zone? Large-Scale and Stealthy Takeover of Domain Hosting Service via CNAME-Following Cross-Domain Verification
+    author: Ruixuan Li, Xingyu Zhao, Yunyi Zhang, Baojun Liu, Jun Shao
 also_at: []
-authors: []
+authors:
+  - Ruixuan Li
+  - Xingyu Zhao
+  - Yunyi Zhang
+  - Baojun Liu
+  - Jun Shao
 canonical_url: ""
 cited_by:
   - "2026-ai.md:32"
@@ -41,7 +47,7 @@ translation_of: ""
 
 # Alias Equals Zone? Large-Scale and Stealthy Takeover of Domain Hosting Service via CNAME-Following Cross-Domain Verification
 
-**Alias Equals Zone? Large-Scale and Stealthy Takeover of Domain Hosting Service via CNAME-Following Cross-Domain Verification** - Author not stated, usenix.org.
+**Alias Equals Zone? Large-Scale and Stealthy Takeover of Domain Hosting Service via CNAME-Following Cross-Domain Verification** - Ruixuan Li, Xingyu Zhao, Yunyi Zhang, Baojun Liu, Jun Shao, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity26/presentation/li-ruixuan>

@@ -12,8 +12,11 @@ sources:
   - id: original
     resource: "https://www.gosecure.net/blog/2021/10/19/a-scientific-notation-bug-in-mysql-left-aws-waf-clients-vulnerable-to-sql-injection/"
     title: 24/7 managed detection, response, and expert cybersecurity services
+    author: Marc Olivier Bergeron, @GoSecure_Inc
 also_at: []
-authors: []
+authors:
+  - Marc Olivier Bergeron
+  - @GoSecure_Inc
 canonical_url: ""
 cited_by:
   - "2021.md:39"
@@ -41,7 +44,7 @@ translation_of: ""
 
 # 24/7 managed detection, response, and expert cybersecurity services
 
-**24/7 managed detection, response, and expert cybersecurity services** - Author not stated, GoSecure.
+**24/7 managed detection, response, and expert cybersecurity services** - Marc Olivier Bergeron, @GoSecure_Inc, GoSecure.
 
 - Published: date not stated
 - Original: <https://www.gosecure.net/blog/2021/10/19/a-scientific-notation-bug-in-mysql-left-aws-waf-clients-vulnerable-to-sql-injection/>

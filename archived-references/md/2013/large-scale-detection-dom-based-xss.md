@@ -12,12 +12,16 @@ sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://ben-stock.de/wp-content/uploads/domxss.pdf"
     title: Large Scale Detection of DOM based XSS
+    author: Sebastian Lekies, Ben Stock, Martin Johns
   - id: canonical
     resource: "http://web.archive.org/web/20160403091743/https://www.ben-stock.de/wp-content/uploads/domxss.pdf"
   - id: capture
     resource: "https://web.archive.org/web/20130929072705/http://ben-stock.de/wp-content/uploads/domxss.pdf"
 also_at: []
-authors: []
+authors:
+  - Sebastian Lekies
+  - Ben Stock
+  - Martin Johns
 canonical_url: "http://web.archive.org/web/20160403091743/https://www.ben-stock.de/wp-content/uploads/domxss.pdf"
 cited_by:
   - "2013.md:12"
@@ -45,7 +49,7 @@ translation_of: ""
 
 # Large Scale Detection of DOM based XSS
 
-**Large Scale Detection of DOM based XSS** - Author not stated, Publisher not stated.
+**Large Scale Detection of DOM based XSS** - Sebastian Lekies, Ben Stock, Martin Johns, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://ben-stock.de/wp-content/uploads/domxss.pdf>

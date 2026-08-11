@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/hotsec-07/transaction-generators-root-kits-web"
     title: "Transaction Generators: Root Kits for Web"
+    author: Collin Jackson, Dan Boneh, John Mitchell
 also_at: []
-authors: []
+authors:
+  - Collin Jackson
+  - Dan Boneh
+  - John Mitchell
 canonical_url: ""
 cited_by:
-  - "2007.md:105"
+  - "2007.md:106"
 commit: ""
 content_sha256: 068cd622d581ca3187d182c02c36625650fe37ef407c2e1ca94c655f0afa57ce
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # Transaction Generators: Root Kits for Web
 
-**Transaction Generators: Root Kits for Web** - Author not stated, usenix.org.
+**Transaction Generators: Root Kits for Web** - Collin Jackson, Dan Boneh, John Mitchell, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/hotsec-07/transaction-generators-root-kits-web>

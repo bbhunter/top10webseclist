@@ -12,11 +12,20 @@ sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/forwarding-loop-attacks-content-delivery-networks.pdf"
     title: Forwarding-Loop Attacks in Content Delivery Networks
+    author: Jianjun Chen, Jian Jiang, Xiaofeng Zheng, Haixin Duan, Jinjin Liang, Kang Li, Tao Wan, Vern Paxson
 also_at: []
-authors: []
+authors:
+  - Jianjun Chen
+  - Jian Jiang
+  - Xiaofeng Zheng
+  - Haixin Duan
+  - Jinjin Liang
+  - Kang Li
+  - Tao Wan
+  - Vern Paxson
 canonical_url: ""
 cited_by:
-  - "2016-17.md:67"
+  - "2016-17.md:62"
 commit: ""
 content_sha256: 515ebbdee5e19e0224de0ef2b6526d336bd0213f86cc03bd7ccabea273dd0b6a
 depth: full
@@ -41,7 +50,7 @@ translation_of: ""
 
 # Forwarding-Loop Attacks in Content Delivery Networks
 
-**Forwarding-Loop Attacks in Content Delivery Networks** - Author not stated, Publisher not stated.
+**Forwarding-Loop Attacks in Content Delivery Networks** - Jianjun Chen, Jian Jiang, Xiaofeng Zheng, Haixin Duan, Jinjin Liang, Kang Li, Tao Wan, Vern Paxson, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/forwarding-loop-attacks-content-delivery-networks.pdf>

@@ -12,11 +12,17 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/woot18/presentation/smith"
     title: "Browser history re:visited"
+    author: Michael Smith, Craig Disselkoen, Shravan Narayan, Fraser Brown, Deian Stefan
 also_at: []
-authors: []
+authors:
+  - Michael Smith
+  - Craig Disselkoen
+  - Shravan Narayan
+  - Fraser Brown
+  - Deian Stefan
 canonical_url: ""
 cited_by:
-  - "2018.md:69"
+  - "2018.md:70"
 commit: ""
 content_sha256: 68ff1a3f08aeec78617f0762661c37de6055426405cb25e62c4a080d829ac565
 depth: full
@@ -41,7 +47,7 @@ translation_of: ""
 
 # Browser history re:visited
 
-**Browser history re:visited** - Author not stated, usenix.org.
+**Browser history re:visited** - Michael Smith, Craig Disselkoen, Shravan Narayan, Fraser Brown, Deian Stefan, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/woot18/presentation/smith>

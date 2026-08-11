@@ -6,14 +6,16 @@ tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T15:35:18+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-06
 sources:
   - id: original
     resource: "http://www.ngssoftware.com/research/papers/InterProtocolCommunication.pdf"
     title: IMAP Vulnerable to XSS
+    author: Wade Alcorn
 also_at: []
-authors: []
+authors:
+  - Wade Alcorn
 canonical_url: ""
 cited_by:
   - "2006.md:41"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # IMAP Vulnerable to XSS
 
-**IMAP Vulnerable to XSS** - Author not stated, Publisher not stated.
+**IMAP Vulnerable to XSS** - Wade Alcorn, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://www.ngssoftware.com/research/papers/InterProtocolCommunication.pdf>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

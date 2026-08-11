@@ -12,11 +12,13 @@ sources:
   - id: original
     resource: "https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Neerumalla.pdf"
     title: SQL Injections by Truncation
+    author: Bala Neerumalla
 also_at: []
-authors: []
+authors:
+  - Bala Neerumalla
 canonical_url: ""
 cited_by:
-  - "2006.md:91"
+  - "2006.md:87"
 commit: ""
 content_sha256: b294f9cbf622cc7f1a778d47cf989c9916d08bbbb0c43d9860917bca967193c8
 depth: full
@@ -41,7 +43,7 @@ translation_of: ""
 
 # SQL Injections by Truncation
 
-**SQL Injections by Truncation** - Author not stated, Publisher not stated.
+**SQL Injections by Truncation** - Bala Neerumalla, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Neerumalla.pdf>

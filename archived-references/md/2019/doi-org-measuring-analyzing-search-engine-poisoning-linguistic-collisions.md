@@ -12,11 +12,17 @@ sources:
   - id: original
     resource: "https://doi.org/10.1109/SP.2019.00025"
     title: Measuring and Analyzing Search Engine Poisoning of Linguistic Collisions
+    author: Matthew Joslin, Neng Li, Shuang Hao, Minhui Xue, Haojin Zhu
 also_at: []
-authors: []
+authors:
+  - Matthew Joslin
+  - Neng Li
+  - Shuang Hao
+  - Minhui Xue
+  - Haojin Zhu
 canonical_url: ""
 cited_by:
-  - "2019.md:83"
+  - "2019.md:82"
 commit: ""
 content_sha256: c5774204a3d61a76e2c6328d44415e54552f6cca1260c9c5949ad5e0f32e664c
 depth: full
@@ -41,7 +47,7 @@ translation_of: ""
 
 # Measuring and Analyzing Search Engine Poisoning of Linguistic Collisions
 
-**Measuring and Analyzing Search Engine Poisoning of Linguistic Collisions** - Author not stated, doi.org.
+**Measuring and Analyzing Search Engine Poisoning of Linguistic Collisions** - Matthew Joslin, Neng Li, Shuang Hao, Minhui Xue, Haojin Zhu, doi.org.
 
 - Published: date not stated
 - Original: <https://doi.org/10.1109/SP.2019.00025>

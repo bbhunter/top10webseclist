@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/jahanshahi"
     title: "Argus: All your (PHP) Injection-sinks are belong to us."
+    author: Rasoul Jahanshahi, Manuel Egele
 also_at: []
-authors: []
+authors:
+  - Rasoul Jahanshahi
+  - Manuel Egele
 canonical_url: ""
 cited_by:
-  - "2024.md:140"
+  - "2024.md:141"
 commit: ""
 content_sha256: b388fc093bad8319c382e512f5c09d46aa75f34b4b0424b4973858a918955ed8
 depth: full
@@ -41,7 +44,7 @@ translation_of: ""
 
 # Argus: All your (PHP) Injection-sinks are belong to us.
 
-**Argus: All your (PHP) Injection-sinks are belong to us.** - Author not stated, usenix.org.
+**Argus: All your (PHP) Injection-sinks are belong to us.** - Rasoul Jahanshahi, Manuel Egele, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity24/presentation/jahanshahi>

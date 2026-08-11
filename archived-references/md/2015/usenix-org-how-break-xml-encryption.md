@@ -12,11 +12,16 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/woot15/workshop-program/presentation/kupser"
     title: How to Break XML Encryption
+    author: Dennis Kupser, Christian Mainka, Jorg Schwenk, Juraj Somorovsky
 also_at: []
-authors: []
+authors:
+  - Dennis Kupser
+  - Christian Mainka
+  - Jorg Schwenk
+  - Juraj Somorovsky
 canonical_url: ""
 cited_by:
-  - "2015.md:73"
+  - "2015.md:74"
 commit: ""
 content_sha256: 3a28d62ba302f305cf0a5fbff95843fe4e1a158e390eeadd20aca8b915d08a91
 depth: full
@@ -41,7 +46,7 @@ translation_of: ""
 
 # How to Break XML Encryption
 
-**How to Break XML Encryption** - Author not stated, usenix.org.
+**How to Break XML Encryption** - Dennis Kupser, Christian Mainka, Jorg Schwenk, Juraj Somorovsky, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/woot15/workshop-program/presentation/kupser>

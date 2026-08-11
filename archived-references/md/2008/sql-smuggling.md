@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "http://www.comsecglobal.com/FrameWork/Upload/SQL_Smuggling.pdf"
     title: SQL Smuggling
+    author: Avi Douglen
 also_at: []
-authors: []
+authors:
+  - Avi Douglen
 canonical_url: ""
 cited_by:
   - "2008.md:75"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # SQL Smuggling
 
-**SQL Smuggling** - Author not stated, Publisher not stated.
+**SQL Smuggling** - Avi Douglen, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://www.comsecglobal.com/FrameWork/Upload/SQL_Smuggling.pdf>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

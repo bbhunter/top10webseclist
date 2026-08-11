@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://blog.securitee.org/?p=37"
     title: "Bypassing Chrome's Anti-XSS filter"
+    author: Nick Nikiforakis
   - id: capture
     resource: "https://web.archive.org/web/20111225204159/http://blog.securitee.org/?p=37"
 also_at: []
-authors: []
+authors:
+  - Nick Nikiforakis
 canonical_url: ""
 cited_by:
   - "2011.md:13"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Bypassing Chrome's Anti-XSS filter
 
-**Bypassing Chrome's Anti-XSS filter** - Author not stated, blog.securitee.org.
+**Bypassing Chrome's Anti-XSS filter** - Nick Nikiforakis, blog.securitee.org.
 
 - Published: date not stated
 - Original: <http://blog.securitee.org/?p=37>

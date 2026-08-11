@@ -12,11 +12,19 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/bernardo"
     title: "Web Platform Threats: Automated Detection of Web Security Issues With WPT"
+    author: Pedro Bernardo, Lorenzo Veronese, Valentino Dalla Valle, Stefano Calzavara, Marco Squarcina, Pedro Adão, Matteo Maffei
 also_at: []
-authors: []
+authors:
+  - Pedro Bernardo
+  - Lorenzo Veronese
+  - Valentino Dalla Valle
+  - Stefano Calzavara
+  - Marco Squarcina
+  - Pedro Adão
+  - Matteo Maffei
 canonical_url: ""
 cited_by:
-  - "2024.md:137"
+  - "2024.md:138"
 commit: ""
 content_sha256: 7128f73d5e8a93db1e946aacd33655528a3d486ced8edaf7c0097a23b3939098
 depth: full
@@ -41,7 +49,7 @@ translation_of: ""
 
 # Web Platform Threats: Automated Detection of Web Security Issues With WPT
 
-**Web Platform Threats: Automated Detection of Web Security Issues With WPT** - Author not stated, usenix.org.
+**Web Platform Threats: Automated Detection of Web Security Issues With WPT** - Pedro Bernardo, Lorenzo Veronese, Valentino Dalla Valle, Stefano Calzavara, Marco Squarcina, Pedro Adão, Matteo Maffei, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity24/presentation/bernardo>

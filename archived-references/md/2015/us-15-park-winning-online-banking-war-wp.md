@@ -12,11 +12,13 @@ sources:
   - id: original
     resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Park-Winning-The-Online-Banking-War-wp.pdf"
     title: us 15 Park Winning The Online Banking War wp
+    author: Sean Park
 also_at: []
-authors: []
+authors:
+  - Sean Park
 canonical_url: ""
 cited_by:
-  - "2015.md:37"
+  - "2015.md:34"
 commit: ""
 content_sha256: 53c37b4aa7a10c159761cde66b259a725165facc5d34d6a7d6aa798d5cbafb45
 depth: full
@@ -41,7 +43,7 @@ translation_of: ""
 
 # us 15 Park Winning The Online Banking War wp
 
-**us 15 Park Winning The Online Banking War wp** - Author not stated, Publisher not stated.
+**us 15 Park Winning The Online Banking War wp** - Sean Park, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/docs/us-15/materials/us-15-Park-Winning-The-Online-Banking-War-wp.pdf>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

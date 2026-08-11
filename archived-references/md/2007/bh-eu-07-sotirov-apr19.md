@@ -12,11 +12,13 @@ sources:
   - id: original
     resource: "https://www.blackhat.com/presentations/bh-europe-07/Sotirov/Presentation/bh-eu-07-sotirov-apr19.pdf"
     title: bh eu 07 sotirov apr19
+    author: Alexander Sotirov
 also_at: []
-authors: []
+authors:
+  - Alexander Sotirov
 canonical_url: ""
 cited_by:
-  - "2007.md:103"
+  - "2007.md:99"
 commit: ""
 content_sha256: df7aaa61d26153d76a86b9c4dc807bd3e5bd6b481e379d9e90621da681f58b06
 depth: full
@@ -41,7 +43,7 @@ translation_of: ""
 
 # bh eu 07 sotirov apr19
 
-**bh eu 07 sotirov apr19** - Author not stated, Publisher not stated.
+**bh eu 07 sotirov apr19** - Alexander Sotirov, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/presentations/bh-europe-07/Sotirov/Presentation/bh-eu-07-sotirov-apr19.pdf>

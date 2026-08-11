@@ -12,8 +12,13 @@ sources:
   - id: original
     resource: "https://doi.org/10.1145/3719027.3765189"
     title: "Styled to Steal: The Overlooked Attack Surface in Email Clients"
+    author: Leon Trampert, Daniel Weber, Christian Rossow, Michael Schwarz
 also_at: []
-authors: []
+authors:
+  - Leon Trampert
+  - Daniel Weber
+  - Christian Rossow
+  - Michael Schwarz
 canonical_url: ""
 cited_by:
   - "2025.md:99"
@@ -41,7 +46,7 @@ translation_of: ""
 
 # Styled to Steal: The Overlooked Attack Surface in Email Clients
 
-**Styled to Steal: The Overlooked Attack Surface in Email Clients** - Author not stated, Publisher not stated.
+**Styled to Steal: The Overlooked Attack Surface in Email Clients** - Leon Trampert, Daniel Weber, Christian Rossow, Michael Schwarz, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://doi.org/10.1145/3719027.3765189>
@@ -517,5 +522,9 @@ g‡K…º•á"çÄ?Ui­˜ìx.fò.^Í¾HK
 
 --- page 18 ---
 
-#‚ûÃª¾D´æZÂ>Æˆ0ÙªÈ£nýˆ6o’­ÙŠ²Îcú@ˆŠšq]¥ghVŸ¨ŠU~²êdjââÔÝ†ìêª­½…Ü=Ù°CÙO]MÀ@Ð‡¹��kO9îãDºüb4L6‘}p»Wnèi+<›ÞO…$-Z1ÛæÇ-ã^¾©ç÷qQ"§ò#s©¯Ez~ˆÒq4cø¸Åûè°Ù¥-�ç}(7:VÆþ~G2>÷‡Ù9N³—5Bí¸—luPðž‡¾‡ö½]¯QKl§kØe¡Ìy; �6•œL7ÌZC¯ú­Ý¸
-°¡mQÒ�ÀºÏ+ûÄ±Õy“±ø÷ßVº_ËB7˜Aáv.=p#ÜWîÄýÉ6+tÂcK}RJå0¯¹Û¾­p6L8Áœs™ùõÌúÕ‰ž²Ë£Ùçá¦¬9Õöf§ÙdrSÒºO8£,3Â�Ž¸}  Z*©bV¢ò„9º™E^p—è"®0íËM×Šl”²�ND¯!B:Hy?ÏÝZJÉ½‡¿¢÷Ê|3 P=·ñl& WAÀ-SV².Q’ÝÆÓÁðöl*AIP‹åašaÔ—ÞJ¹bµNà4¹­î;0ã]´™®÷Î@›…Œ¾ú„Ó!¬@Òx©+
+#‚ûÃª¾D´æZÂ>Æˆ0ÙªÈ£nýˆ6o’­ÙŠ²Îcú@ˆŠšq]¥ghVŸ¨ŠU~²êdjââÔÝ†ìêª­½…Ü=Ù°CÙO]MÀ
+@Ð‡¹��kO9îãDºüb4L6‘}p»Wnèi+<›ÞO…$-Z1ÛæÇ-ã^¾©ç÷qQ"§ò#s©¯Ez~ˆÒq4cø¸Åûè°Ù¥-�ç}(
+7:VÆþ~G2>÷‡Ù9N³—5Bí¸—luPðž‡¾‡ö½]¯QKl§kØe¡Ìy; �6•œL7ÌZC¯ú­Ý¸
+°¡mQÒ�ÀºÏ+ûÄ±Õy“±ø÷ßVº_ËB7˜Aáv.=p#ÜWîÄýÉ6+tÂcK}RJå0¯¹Û¾­p6L8Áœs™ùõÌúÕ‰ž²Ë£Ùçá¦¬9Õöf§ÙdrSÒº
+O8£,3Â�Ž¸}  Z*©bV¢ò„9º™E^p—è"®0íËM×Šl”²�ND¯!B:Hy
+?ÏÝZJÉ½‡¿¢÷Ê|3 P=·ñl& WAÀ-SV².Q’ÝÆÓÁðöl*AIP‹åašaÔ—ÞJ¹bµNà4¹­î;0ã]´™®÷Î@›…Œ¾ú„Ó!¬@Òx©+

@@ -12,11 +12,20 @@ sources:
   - id: original
     resource: "https://doi.org/10.1145/3658644.3690361"
     title: "Internet's Invisible Enemy: Detecting and Measuring Web Cache Poisoning in the Wild"
+    author: Yuejia Liang, Jianjun Chen, Run Guo, Kaiwen Shen, Hui Jiang, Man Hou, Yue Yu, Haixin Duan
 also_at: []
-authors: []
+authors:
+  - Yuejia Liang
+  - Jianjun Chen
+  - Run Guo
+  - Kaiwen Shen
+  - Hui Jiang
+  - Man Hou
+  - Yue Yu
+  - Haixin Duan
 canonical_url: ""
 cited_by:
-  - "2024.md:146"
+  - "2024.md:144"
 commit: ""
 content_sha256: 838e39b28678656f609595be236cb12edba411054f1ecb300aa9f7a353bd3c2a
 depth: full
@@ -41,7 +50,7 @@ translation_of: ""
 
 # Internet's Invisible Enemy: Detecting and Measuring Web Cache Poisoning in the Wild
 
-**Internet's Invisible Enemy: Detecting and Measuring Web Cache Poisoning in the Wild** - Author not stated, Publisher not stated.
+**Internet's Invisible Enemy: Detecting and Measuring Web Cache Poisoning in the Wild** - Yuejia Liang, Jianjun Chen, Run Guo, Kaiwen Shen, Hui Jiang, Man Hou, Yue Yu, Haixin Duan, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://doi.org/10.1145/3658644.3690361>

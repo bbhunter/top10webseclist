@@ -12,11 +12,16 @@ sources:
   - id: original
     resource: "https://seclab.stanford.edu/websec/framebusting/framebust.pdf"
     title: "Busting Frame Busting: a Study of Clickjacking Vulnerabilities on Popular Sites"
+    author: Gustav Rydstedt, Elie Bursztein, Dan Boneh, Collin Jackson
 also_at: []
-authors: []
+authors:
+  - Gustav Rydstedt
+  - Elie Bursztein
+  - Dan Boneh
+  - Collin Jackson
 canonical_url: ""
 cited_by:
-  - "2010.md:87"
+  - "2010.md:90"
 commit: ""
 content_sha256: 3c0e90d9864dc6d5546f9e89cd0a27e54f7c52e2c9dcff52e88d4160a3c156fc
 depth: full
@@ -41,7 +46,7 @@ translation_of: ""
 
 # Busting Frame Busting: a Study of Clickjacking Vulnerabilities on Popular Sites
 
-**Busting Frame Busting: a Study of Clickjacking Vulnerabilities on Popular Sites** - Author not stated, Publisher not stated.
+**Busting Frame Busting: a Study of Clickjacking Vulnerabilities on Popular Sites** - Gustav Rydstedt, Elie Bursztein, Dan Boneh, Collin Jackson, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://seclab.stanford.edu/websec/framebusting/framebust.pdf>
@@ -49,7 +54,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/woot13/workshop-program/presentation/dai"
     title: "FireDrill: Interactive DNS Rebinding"
+    author: Yunxing Dai, Ryan Resig
 also_at: []
-authors: []
+authors:
+  - Yunxing Dai
+  - Ryan Resig
 canonical_url: ""
 cited_by:
-  - "2013.md:63"
+  - "2013.md:64"
 commit: ""
 content_sha256: 6940dd06b6e1c2ab0d4ca7c3a03883ae7392f6233842dcd6ccc15d8bbfd79ad0
 depth: full
@@ -41,7 +44,7 @@ translation_of: ""
 
 # FireDrill: Interactive DNS Rebinding
 
-**FireDrill: Interactive DNS Rebinding** - Author not stated, usenix.org.
+**FireDrill: Interactive DNS Rebinding** - Yunxing Dai, Ryan Resig, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/woot13/workshop-program/presentation/dai>

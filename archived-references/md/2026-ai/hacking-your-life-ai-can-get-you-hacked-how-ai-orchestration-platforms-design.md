@@ -12,11 +12,13 @@ sources:
   - id: original
     resource: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Peyton%20Kennedy%20-%20Hacking%20Your%20Life%20with%20AI%20Can%20Get%20You%20Hacked%20How%20AI%20Orchestration%20Platforms%20Ship%20RCE%20by%20Design%20-%20V1.pdf"
     title: "Hacking Your Life with AI Can Get You Hacked: How AI Orchestration Platforms Ship RCE by Design"
+    author: Peyton Kennedy
 also_at: []
-authors: []
+authors:
+  - Peyton Kennedy
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:106"
+  - "2026-ai.md:83"
 commit: ""
 content_sha256: 0c05c8ae87d52bb853da9b1db9b0c84bbd5f73fa521852e98bc1148e34e0bba6
 depth: full
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Hacking Your Life with AI Can Get You Hacked: How AI Orchestration Platforms Ship RCE by Design
 
-**Hacking Your Life with AI Can Get You Hacked: How AI Orchestration Platforms Ship RCE by Design** - Author not stated, Publisher not stated.
+**Hacking Your Life with AI Can Get You Hacked: How AI Orchestration Platforms Ship RCE by Design** - Peyton Kennedy, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Peyton%20Kennedy%20-%20Hacking%20Your%20Life%20with%20AI%20Can%20Get%20You%20Hacked%20How%20AI%20Orchestration%20Platforms%20Ship%20RCE%20by%20Design%20-%20V1.pdf>

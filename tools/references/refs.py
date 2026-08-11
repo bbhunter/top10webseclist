@@ -2488,6 +2488,105 @@ def _accept_byline(url, reading, known, accept="high"):
     return ""
 
 
+def _published_authors(text):
+    """The author list a published file already states, read off its frontmatter."""
+    match = re.search(r"^authors:(.*)$", text, re.MULTILINE)
+    if not match:
+        return []
+    if match.group(1).strip():
+        return []                      # `authors: []`, the only inline form written
+    names = []
+    # SKIP THE FIRST SPLIT. The match ends before its newline, so the remainder
+    # opens with the empty tail of the `authors:` line itself; reading it as the
+    # first list item ended the loop immediately and reported every multi-name
+    # file as having no authors at all.
+    for line in text[match.end():].splitlines()[1:]:
+        item = re.match(r"^  - (.*)$", line)
+        if not item:
+            break
+        names.append(item.group(1).strip().strip('"'))
+    return names
+
+
+def _published_body(text):
+    """The source's own words, taken back out of a file we already published.
+
+    `render` writes the untrusted-source banner, then the body, then an optional
+    recovery-notes section. Recovering the middle is what lets a byline be
+    corrected WITHOUT the content store, which matters because the store is
+    exactly what a hand import and a lost object do not have.
+    """
+    from refslib import render as render_module
+    marker = render_module.BANNER
+    if marker not in text:
+        return None
+    body = text.split(marker, 1)[1]
+    cut = body.find("\n## Recovery notes\n")
+    if cut >= 0:
+        body = body[:cut]
+    return body.strip("\n")
+
+
+# Lines the renderer OWNS and rewrites from current state, so a published file
+# written months ago legitimately differs from a fresh render of the same
+# document: the rights sentence was reworded, `cited_by` moves when a year list
+# is edited, `status` and `stale_after` age. A difference anywhere else means the
+# record was rebuilt wrong - a dropped `snapshot`, a lost `also_at` - and that is
+# what the reproduction test is actually guarding against.
+_REGENERATED = re.compile(
+    r'^(?:\s*- "\d{4}(?:-\d\d)?(?:-ai)?\.md:\d+"|cited_by:.*|status: .*'
+    r'|stale_after: .*|.*archive of a source from .*)$')
+
+
+def _same_but_for_generated(rebuilt, published):
+    """Whether a fresh render differs from the published file only where it may."""
+    keep = lambda text: [line for line in text.splitlines()
+                         if not _REGENERATED.match(line)]
+    return keep(rebuilt) == keep(published)
+
+
+def _republish_byline(path, entry, config):
+    """Re-publish one archived document with the byline the manifest now states.
+
+    NO FETCH AND NO STORE. The document is already here, and needing its source
+    bytes again to change one line is what left 71 hand imports and 65
+    references whose store objects are gone unable to be corrected at all.
+
+    Safe because it PROVES the renderer reproduces this exact file before
+    replacing it: the record is rendered once carrying the byline the file
+    already shows, and that must equal the file byte for byte. Any difference
+    means this document cannot be faithfully rebuilt here - an older renderer
+    wrote it, or a field the manifest no longer holds - so it is left untouched
+    and reported rather than rewritten into something subtly different.
+    """
+    from refslib import render as render_module
+    text = path.read_text(encoding="utf-8")
+    body = _published_body(text)
+    if body is None:
+        return "no untrusted-source banner: not a rendered reference"
+    # THE FILE WINS over the manifest for everything it states. The manifest
+    # historically did not retain the retrieval fields a published copy carries,
+    # which is why `_frontmatter_scalars` exists; and letting the file win is
+    # also what makes the reproduction test below meaningful rather than a test
+    # of how well the manifest happens to match. The lists it cannot state as
+    # scalars - `cited_by`, `also_at` - come from the entry underneath.
+    record = dict(entry)
+    record.update(_frontmatter_scalars(text))
+    depth = entry.get("depth") or record.get("depth") or "full"
+    was = dict(record, authors=_published_authors(text))
+    try:
+        if not _same_but_for_generated(render_module.render(was, body, depth), text):
+            return "the renderer does not reproduce this file; left as published"
+        corrected = dict(record, authors=list(entry.get("authors") or []))
+        if entry.get("publisher"):
+            corrected["publisher"] = entry["publisher"]
+        rebuilt = render_module.render(corrected, body, depth)
+    except render_module.MissingAttribution as error:
+        return str(error)
+    path.write_text(rebuilt, encoding="utf-8", newline="\n")
+    return ""
+
+
 def command_bylines(args):
     """Read authors out of the archived documents themselves (offline).
 
@@ -2588,6 +2687,13 @@ def command_attribution(args):
 
     if not changed:
         print("Every curated attribution is already recorded in the manifest.")
+        # `--rewrite` is about the PUBLISHED FILES, not the manifest, and the two
+        # go out of step by design: a byline is recorded offline and carried into
+        # the documents later. Returning here meant "nothing to record" silently
+        # cancelled the request to re-publish.
+        if args.rewrite:
+            print()
+            rewrite_published_bylines(manifest, root, config)
         return 0
 
     renames = 0
@@ -2625,7 +2731,51 @@ def command_attribution(args):
               "stated publisher\nrebuilds a corrected title's slug. The old file "
               "becomes an orphan: `verify`\nreports it and `acquire --prune-files` "
               "removes it." % renames)
+    if args.rewrite:
+        print()
+        rewrite_published_bylines(manifest, root, config)
     return 0
+
+
+def rewrite_published_bylines(manifest, root, config, only=""):
+    """Carry every recorded byline into the published files, without re-acquiring.
+
+    `acquire --force` re-renders from the content store, which is the right route
+    when the bytes are there and NO ROUTE AT ALL when they are not: a hand import
+    has none by definition, and 65 references have lost theirs. Re-fetching a
+    document we already hold to correct one line is work with nothing to buy.
+
+    Selected by comparing what each file says to what the manifest says, so it is
+    idempotent and picks up a byline recorded by an earlier run as readily as one
+    recorded a moment ago.
+    """
+    from refslib import collections as collections_module
+    archive_dir = root / (config.get("archive_dir") or "archived-references")
+    rewritten, refused, seen = 0, 0, 0
+    for key, entry in sorted(manifest.data["urls"].items()):
+        if not entry.get("authors") or not entry.get("slug"):
+            continue
+        if only and only.lower() not in key.lower():
+            continue
+        path = archive_dir / collections_module.md_relpath(entry, config, entry["slug"])
+        if not path.exists():
+            continue
+        if _published_authors(path.read_text(encoding="utf-8")) == list(entry["authors"]):
+            continue
+        seen += 1
+        reason = _republish_byline(path, entry, config)
+        if reason:
+            refused += 1
+            print("  KEPT     %-52s %s" % (key[:52], reason[:70]))
+        else:
+            rewritten += 1
+    if not seen:
+        print("Every published document already carries the byline the manifest states.")
+        return rewritten, refused
+    print("Re-published %d document(s) in place; %d left as they were."
+          % (rewritten, refused))
+    print("Refresh their PDFs with `refs.py pdf --stale`, then run `index`.")
+    return rewritten, refused
 
 
 def command_report(args):
@@ -3167,6 +3317,10 @@ def build_parser():
         help="record curated authors and publishers from overrides.json (offline)")
     attribution_parser.add_argument("--check", action="store_true",
                                     help="report what would change and write nothing")
+    attribution_parser.add_argument("--rewrite", action="store_true",
+                                    help="also carry the byline into the published "
+                                         "Markdown in place, without re-acquiring "
+                                         "(offline; needs no content store)")
     attribution_parser.set_defaults(handler=command_attribution)
 
     report_parser = subparsers.add_parser(

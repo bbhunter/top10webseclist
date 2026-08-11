@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.sambuz.com/doc/p-r-e-p-a-r-e-i-n-t-r-o-d-u-c-i-n-g-n-o-v-e-l-e-x-p-l-o-i-presentation-910240"
     title: "[PPT] - P r e p a r e ( ) : I n t r o d u c i n g n o PowerPoint Presentation"
+    author: Robin Peraglie
 also_at: []
-authors: []
+authors:
+  - Robin Peraglie
 canonical_url: ""
 cited_by:
   - "2018.md:12"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # [PPT] - P r e p a r e ( ) : I n t r o d u c i n g n o PowerPoint Presentation
 
-**[PPT] - P r e p a r e ( ) : I n t r o d u c i n g n o PowerPoint Presentation** - Author not stated, Sambuz.
+**[PPT] - P r e p a r e ( ) : I n t r o d u c i n g n o PowerPoint Presentation** - Robin Peraglie, Sambuz.
 
 - Published: date not stated
 - Original: <https://www.sambuz.com/doc/p-r-e-p-a-r-e-i-n-t-r-o-d-u-c-i-n-g-n-o-v-e-l-e-x-p-l-o-i-presentation-910240>

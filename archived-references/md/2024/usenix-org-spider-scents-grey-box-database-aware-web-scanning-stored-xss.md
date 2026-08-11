@@ -12,11 +12,16 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/olsson"
     title: "Spider-Scents: Grey-box Database-aware Web Scanning for Stored XSS"
+    author: Eric Olsson, Benjamin Eriksson, Adam Doupé, Andrei Sabelfeld
 also_at: []
-authors: []
+authors:
+  - Eric Olsson
+  - Benjamin Eriksson
+  - Adam Doupé
+  - Andrei Sabelfeld
 canonical_url: ""
 cited_by:
-  - "2024.md:149"
+  - "2024.md:150"
 commit: ""
 content_sha256: 2832ed5c4c59cac43781de312cfd4f9cd766ef44904ee5c72876aeb53f4688ec
 depth: full
@@ -41,7 +46,7 @@ translation_of: ""
 
 # Spider-Scents: Grey-box Database-aware Web Scanning for Stored XSS
 
-**Spider-Scents: Grey-box Database-aware Web Scanning for Stored XSS** - Author not stated, usenix.org.
+**Spider-Scents: Grey-box Database-aware Web Scanning for Stored XSS** - Eric Olsson, Benjamin Eriksson, Adam Doupé, Andrei Sabelfeld, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity24/presentation/olsson>

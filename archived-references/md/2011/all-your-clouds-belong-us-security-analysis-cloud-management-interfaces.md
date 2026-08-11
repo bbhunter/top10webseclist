@@ -12,13 +12,20 @@ sources:
   - id: original
     resource: "https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/AmazonSignatureWrapping.pdf"
     title: "All Your Clouds Are Belong to Us: Security Analysis of Cloud Management Interfaces"
+    author: Juraj Somorovsky, Mario Heiderich, Meiko Jensen, Jörg Schwenk, Nils Gruschka, Luigi Lo Iacono
   - id: capture
     resource: "https://web.archive.org/web/20111111201443/https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/AmazonSignatureWrapping.pdf"
 also_at: []
-authors: []
+authors:
+  - Juraj Somorovsky
+  - Mario Heiderich
+  - Meiko Jensen
+  - Jörg Schwenk
+  - Nils Gruschka
+  - Luigi Lo Iacono
 canonical_url: ""
 cited_by:
-  - "2011.md:74"
+  - "2011.md:70"
 commit: ""
 content_sha256: 9f664aa4b278d50227b95e8440b4c1084dabb9a8fca29d4479bfbe337eb6d630
 depth: full
@@ -43,7 +50,7 @@ translation_of: ""
 
 # All Your Clouds Are Belong to Us: Security Analysis of Cloud Management Interfaces
 
-**All Your Clouds Are Belong to Us: Security Analysis of Cloud Management Interfaces** - Author not stated, Publisher not stated.
+**All Your Clouds Are Belong to Us: Security Analysis of Cloud Management Interfaces** - Juraj Somorovsky, Mario Heiderich, Meiko Jensen, Jörg Schwenk, Nils Gruschka, Luigi Lo Iacono, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/AmazonSignatureWrapping.pdf>
@@ -455,7 +462,10 @@ cloud administration.
 
 --- page 4 ---
 
-K;#+TzOAmO,%ö™þA%5@u¢¨e�d@F©{¬+;{©+;{{™yZ@/€@Z@__?í?í/^]í]Üqí10]]]]]]]]]#!!24.#!!2>ej¸û‘ýñÒ£ÆoÀR”Î{þñ:o½ŠNÏ°þóµ]�Q©þü´�Ë‚=û±HŽÔ	M�ë@µJZjEUeŒ:Zjzƒ5Ueut„	Œ{*:	éù%5æö *:èø4T 0`�Àð%5æö¯¿ P0`�Àð/y		?3]?3]]q/]3]qq/]q_qq3]q_q9=/33]qq]qq10]]]]]]]]]]]!#367>73ÆýÁÉ†„É�ü -Y#
+K;#+TzOAmO,%ö™þA%5@u¢¨e�d@F©{¬+;{©+;{{™yZ@/
+
+€@Z@__?í?í/^]í]Üqí10]]]]]]]]]#!!24.#!!2>ej¸û‘ýñÒ£ÆoÀR”Î{þñ:o½ŠNÏ°þóµ]�Q©þü´�Ë‚=û±HŽÔ	M�ë@µJZjEUeŒ:Zjzƒ5Ueut„	Œ{*:	éù%5æö *:èø4T 0`�Àð%5æö¯¿ P0`�Àð/y		?3]?3]]q/]3]qq/]q_qq3]q_q9=/33]qq]qq10]]]]]]]]]]]!#367>73ÆýÁÉ†
+„É�ü -Y#
 
 --- page 5 ---
 
@@ -515,7 +525,8 @@ possible to add, remove, duplicate, nest, or move arbitrary
 XML fragments within the SOAP request message|without
 the message's validity being aected.
 We performed a set of SOAP requests that exploited this
-exibility in SOAP message design. We have employed a
+
+exibility in SOAP message design. We have employed a
 validly signed SOAP message that triggers the operation
 MonitorInstances
 . This operation is used to gather status
@@ -966,7 +977,8 @@ enforce the existence of
 any such XML Signatures. This deviation in assumptions
 is what lead to this kind of vulnerability and exploit tech-
 nique. Though being rather easy to x, this attack technique
-nevertheless demonstrates a fundamental aw in the typical
+nevertheless demonstrates a fundamental 
+aw in the typical
 separation-of-duties approach within the common Web Ser-
 vices frameworks.
 To summarize what has been learned thus far, the attacks
@@ -1134,7 +1146,8 @@ term "in-line approach", and was analyzed by Rahaman et
 al. [25] and Benameur et al. [5]. With this technique, ad-
 ditional information on the structure of a SOAP message
 is specied (and signed) in the header. However, due to
-the exible structure of a SOAP message, these approaches
+the 
+exible structure of a SOAP message, these approaches
 can easily be circumvented, and some operational signature
 wrapping attacks in presence of an in-line approach coun-
 termeasure have been explored [13].
@@ -1298,7 +1311,8 @@ download, the authentication keys, and other sensitive data.
 Up till now, there were more reliable ways for an attacker
 to get hands on the necessary tokens to perform the afore-
 mentioned signature wrapping attacks. One of the biggest
-architectural aw on
+architectural 
+aw on
 amazon.com
 is the shared login ses-
 sion between the Amazon shop and the Amazon AWS man-
@@ -1309,7 +1323,8 @@ aws.amazon.com
 and
 www.amazon.com
 . If a sophisticated at-
-tacker is behind the onset, a reected or in a worse case -
+tacker is behind the onset, a re
+ected or in a worse case -
 stored Cross Site Scripting (XSS) attack could cause harm
 and issues way beyond the theft of login credentials for the
 shop, or ordering items to an altered delivery address. We
@@ -1322,7 +1337,8 @@ The attack we managed to perform is just as simple as it is
 eective. The attacker has to create a new discussion topic
 on either a shop item, a user-generated tag or other entities.
 Upon creation of the topic, the headline for the discussion
-topic will be reected without proper encoding, thus allow-
+topic will be re
+ected without proper encoding, thus allow-
 ing the injection of arbitrary HTML code. This has allowed
 us to include script tags or other active markup forcing the
 user agent to execute JavaScript on the
@@ -1393,7 +1409,8 @@ address changes, were not immune against CSRF attacks
 using a token or similar mechanism.
 We believe that the precedence of Amazon AWS and the
 Amazon Shop sharing login sessions should cease. A vul-
-nerability in the shop system automatically inuences the
+nerability in the shop system automatically in
+uences the
 AWS management console and vice versa. Additionally,
 XSS vulnerabilities in both systems can be used to extract
 cookie data, since Amazon avoids usage of
@@ -1803,7 +1820,8 @@ Hitchhiker's World 8
 
 --- page 16 ---
 
-@ïBgtŸ½õ_yöŽ&œ!Ø Âó®rÌô¹v™ßOÚÝz<ö‚b4¼´Lï‚Le”¡­e^JÜ¸…â3ÿ2Ú%çË¹JÏ�@Îd‘‘ŽÎ±lZ_ÖÐe¹e1ú™Ìöü:ÍÄÓæï¿m+Cê	±ûô&]aÎîln'·îaâH–Q}mMBÖ²Jòlòð½=ØŸÉªýâLX
+@ïBgtŸ½õ_yöŽ&œ!Ø Âó®rÌô¹v™ßOÚÝz<ö‚b4¼´Lï‚Le”¡­e^JÜ¸…â3ÿ2Ú%çË¹JÏ�@Îd‘‘ŽÎ±lZ_ÖÐe¹e1ú™
+Ìöü:ÍÄÓæï¿m+Cê	±ûô&]aÎîln'·îaâH–Q}mMBÖ²Jòlòð½=ØŸÉªýâLX
 
 --- page 17 ---
 

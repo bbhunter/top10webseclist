@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity13/technical-sessions/presentation/bhargavan"
     title: Language-based Defenses Against Untrusted Browser Origins
+    author: Karthikeyan Bhargavan, Antoine Delignat-Lavaud, Sergio Maffeis
 also_at: []
-authors: []
+authors:
+  - Karthikeyan Bhargavan
+  - Antoine Delignat-Lavaud
+  - Sergio Maffeis
 canonical_url: ""
 cited_by:
-  - "2013.md:57"
+  - "2013.md:58"
 commit: ""
 content_sha256: 3558ebdbf5b2f46fa8b67b7a26f02b7bace43efbba1acebcfac8abe0a23d403d
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # Language-based Defenses Against Untrusted Browser Origins
 
-**Language-based Defenses Against Untrusted Browser Origins** - Author not stated, usenix.org.
+**Language-based Defenses Against Untrusted Browser Origins** - Karthikeyan Bhargavan, Antoine Delignat-Lavaud, Sergio Maffeis, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity13/technical-sessions/presentation/bhargavan>

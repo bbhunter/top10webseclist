@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/woot13/workshop-program/presentation/smyth"
     title: Truncating TLS Connections to Violate Beliefs in Web Applications
+    author: Ben Smyth, Alfredo Pironti
 also_at: []
-authors: []
+authors:
+  - Ben Smyth
+  - Alfredo Pironti
 canonical_url: ""
 cited_by:
-  - "2013.md:53"
+  - "2013.md:54"
 commit: ""
 content_sha256: 1e7d90a8dc2a892d664db3209507b436fe163c8b15d5543ca5d281fd24c0c2aa
 depth: full
@@ -41,7 +44,7 @@ translation_of: ""
 
 # Truncating TLS Connections to Violate Beliefs in Web Applications
 
-**Truncating TLS Connections to Violate Beliefs in Web Applications** - Author not stated, usenix.org.
+**Truncating TLS Connections to Violate Beliefs in Web Applications** - Ben Smyth, Alfredo Pironti, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/woot13/workshop-program/presentation/smyth>

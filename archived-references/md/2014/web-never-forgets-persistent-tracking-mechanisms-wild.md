@@ -12,12 +12,19 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/https://securehomes.esat.kuleuven.be/~gacar/persistent/the_web_never_forgets.pdf"
     title: "The Web Never Forgets: Persistent Tracking Mechanisms in the Wild"
+    author: Gunes Acar, Christian Eubank, Steven Englehardt, Marc Juarez, Arvind Narayanan, Claudia Diaz
   - id: canonical
     resource: "https://web.archive.org/web/20160416035757/https://securehomes.esat.kuleuven.be/~gacar/persistent/the_web_never_forgets.pdf"
   - id: capture
     resource: "https://web.archive.org/web/20140918021002/https://securehomes.esat.kuleuven.be/~gacar/persistent/the_web_never_forgets.pdf"
 also_at: []
-authors: []
+authors:
+  - Gunes Acar
+  - Christian Eubank
+  - Steven Englehardt
+  - Marc Juarez
+  - Arvind Narayanan
+  - Claudia Diaz
 canonical_url: "https://web.archive.org/web/20160416035757/https://securehomes.esat.kuleuven.be/~gacar/persistent/the_web_never_forgets.pdf"
 cited_by:
   - "2014.md:23"
@@ -45,7 +52,7 @@ translation_of: ""
 
 # The Web Never Forgets: Persistent Tracking Mechanisms in the Wild
 
-**The Web Never Forgets: Persistent Tracking Mechanisms in the Wild** - Author not stated, Publisher not stated.
+**The Web Never Forgets: Persistent Tracking Mechanisms in the Wild** - Gunes Acar, Christian Eubank, Steven Englehardt, Marc Juarez, Arvind Narayanan, Claudia Diaz, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/https://securehomes.esat.kuleuven.be/~gacar/persistent/the_web_never_forgets.pdf>

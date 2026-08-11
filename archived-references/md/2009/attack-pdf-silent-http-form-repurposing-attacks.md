@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "http://www.secniche.org/papers/SNS_09_03_PDF_Silent_Form_Re_Purp_Attack.pdf"
     title: Attack - PDF Silent HTTP Form Repurposing Attacks
+    author: Aditya K Sood
   - id: canonical
     resource: "https://secniche.org/papers/sns_09_03_pdf_silent_form_re_purp_attack.pdf"
   - id: capture
     resource: "https://web.archive.org/web/20090611230139/http://www.secniche.org/papers/SNS_09_03_PDF_Silent_Form_Re_Purp_Attack.pdf"
 also_at: []
-authors: []
+authors:
+  - Aditya K Sood
 canonical_url: "https://secniche.org/papers/sns_09_03_pdf_silent_form_re_purp_attack.pdf"
 cited_by:
   - "2009.md:60"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Attack - PDF Silent HTTP Form Repurposing Attacks
 
-**Attack - PDF Silent HTTP Form Repurposing Attacks** - Author not stated, Publisher not stated.
+**Attack - PDF Silent HTTP Form Repurposing Attacks** - Aditya K Sood, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://www.secniche.org/papers/SNS_09_03_PDF_Silent_Form_Re_Purp_Attack.pdf>

@@ -12,13 +12,18 @@ sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2011/automated-discovery-of-parameter-pollution-vulnerabilities-in-web-applications/"
     title: Automated Discovery of Parameter Pollution Vulnerabilities in Web Applications
+    author: Marco Balduzzi, Carmen Torrano Gimenez, Davide Balzarotti, Engin Kirda
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/Bald.pdf"
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/bald2.pdf"
-authors: []
+authors:
+  - Marco Balduzzi
+  - Carmen Torrano Gimenez
+  - Davide Balzarotti
+  - Engin Kirda
 canonical_url: ""
 cited_by:
-  - "2011.md:75"
+  - "2011.md:76"
 commit: ""
 content_sha256: 32ed456c1434e6e8d290c9fe1a155ae8b170eda281907eca6ef5e0447c6f90ca
 depth: full
@@ -43,7 +48,7 @@ translation_of: ""
 
 # Automated Discovery of Parameter Pollution Vulnerabilities in Web Applications
 
-**Automated Discovery of Parameter Pollution Vulnerabilities in Web Applications** - Author not stated, NDSS Symposium.
+**Automated Discovery of Parameter Pollution Vulnerabilities in Web Applications** - Marco Balduzzi, Carmen Torrano Gimenez, Davide Balzarotti, Engin Kirda, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2011/automated-discovery-of-parameter-pollution-vulnerabilities-in-web-applications/>

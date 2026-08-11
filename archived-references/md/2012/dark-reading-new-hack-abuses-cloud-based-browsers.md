@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://www.darkreading.com/cloud-security/167901092/security/news/240142718/new-hack-abuses-cloud-based-browsers.html"
     title: New Hack Abuses Cloud-Based Browsers
+    author: Kelly Jackson Higgins
   - id: canonical
     resource: "http://www.darkreading.com/cloud-security/167901092/security/news/240142718/new-hack-abuses-cloud-based-browsers.html"
   - id: capture
     resource: "https://web.archive.org/web/20130305235855/http://www.darkreading.com/cloud-security/167901092/security/news/240142718/new-hack-abuses-cloud-based-browsers.html"
 also_at: []
-authors: []
+authors:
+  - Kelly Jackson Higgins
 canonical_url: "http://www.darkreading.com/cloud-security/167901092/security/news/240142718/new-hack-abuses-cloud-based-browsers.html"
 cited_by:
   - "2012.md:19"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # New Hack Abuses Cloud-Based Browsers
 
-**New Hack Abuses Cloud-Based Browsers** - Author not stated, Dark Reading.
+**New Hack Abuses Cloud-Based Browsers** - Kelly Jackson Higgins, Dark Reading.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://www.darkreading.com/cloud-security/167901092/security/news/240142718/new-hack-abuses-cloud-based-browsers.html>

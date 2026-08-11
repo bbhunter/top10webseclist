@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf"
     title: "Breaking Parser Logic: Take Your Path Normalization Off and Pop 0days Out"
+    author: Orange Tsai
 also_at: []
-authors: []
+authors:
+  - Orange Tsai
 canonical_url: ""
 cited_by:
   - "2018.md:5"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Breaking Parser Logic: Take Your Path Normalization Off and Pop 0days Out
 
-**Breaking Parser Logic: Take Your Path Normalization Off and Pop 0days Out** - Author not stated, Publisher not stated.
+**Breaking Parser Logic: Take Your Path Normalization Off and Pop 0days Out** - Orange Tsai, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf>

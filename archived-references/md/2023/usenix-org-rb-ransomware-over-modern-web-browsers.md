@@ -12,11 +12,18 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/oz"
     title: "RøB: Ransomware over Modern Web Browsers"
+    author: Harun Oz, Ahmet Aris, Abbas Acar, Güliz Seray Tuncay, Leonardo Babun, Selcuk Uluagac
 also_at: []
-authors: []
+authors:
+  - Harun Oz
+  - Ahmet Aris
+  - Abbas Acar
+  - Güliz Seray Tuncay
+  - Leonardo Babun
+  - Selcuk Uluagac
 canonical_url: ""
 cited_by:
-  - "2023.md:86"
+  - "2023.md:87"
 commit: ""
 content_sha256: 0db831f964965088cfc9a18d67f12b3a87a62c070788f4daa947bdaf6d921513
 depth: full
@@ -41,7 +48,7 @@ translation_of: ""
 
 # RøB: Ransomware over Modern Web Browsers
 
-**RøB: Ransomware over Modern Web Browsers** - Author not stated, usenix.org.
+**RøB: Ransomware over Modern Web Browsers** - Harun Oz, Ahmet Aris, Abbas Acar, Güliz Seray Tuncay, Leonardo Babun, Selcuk Uluagac, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity23/presentation/oz>

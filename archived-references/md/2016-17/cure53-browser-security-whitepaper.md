@@ -12,8 +12,17 @@ sources:
   - id: original
     resource: "https://github.com/cure53/browser-sec-whitepaper/blob/master/browser-security-whitepaper.pdf"
     title: Cure53 Browser Security Whitepaper
+    author: Mario Heiderich, Alex Inführ, Fabian Fäßler, Nikolai Krein, Masato Kinugawa, Tsang-Chi Hong, Dario Weißer, Paula Pustułka
 also_at: []
-authors: []
+authors:
+  - Mario Heiderich
+  - Alex Inführ
+  - Fabian Fäßler
+  - Nikolai Krein
+  - Masato Kinugawa
+  - Tsang-Chi Hong
+  - Dario Weißer
+  - Paula Pustułka
 canonical_url: ""
 cited_by:
   - "2016-17.md:15"
@@ -41,7 +50,7 @@ translation_of: ""
 
 # Cure53 Browser Security Whitepaper
 
-**Cure53 Browser Security Whitepaper** - Author not stated, Publisher not stated.
+**Cure53 Browser Security Whitepaper** - Mario Heiderich, Alex Inführ, Fabian Fäßler, Nikolai Krein, Masato Kinugawa, Tsang-Chi Hong, Dario Weißer, Paula Pustułka, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://github.com/cure53/browser-sec-whitepaper/blob/master/browser-security-whitepaper.pdf>

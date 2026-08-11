@@ -12,11 +12,16 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/afek"
     title: A Flushing Attack on the DNS Cache
+    author: Yehuda Afek, Anat Bremler-Barr, Shoham Danino, Yuval Shavitt
 also_at: []
-authors: []
+authors:
+  - Yehuda Afek
+  - Anat Bremler-Barr
+  - Shoham Danino
+  - Yuval Shavitt
 canonical_url: ""
 cited_by:
-  - "2024.md:141"
+  - "2024.md:142"
 commit: ""
 content_sha256: b4b31b71228c1b920c0ae72469942acd296fa5eedc557c3d86c172acabc1b264
 depth: full
@@ -41,7 +46,7 @@ translation_of: ""
 
 # A Flushing Attack on the DNS Cache
 
-**A Flushing Attack on the DNS Cache** - Author not stated, usenix.org.
+**A Flushing Attack on the DNS Cache** - Yehuda Afek, Anat Bremler-Barr, Shoham Danino, Yuval Shavitt, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity24/presentation/afek>

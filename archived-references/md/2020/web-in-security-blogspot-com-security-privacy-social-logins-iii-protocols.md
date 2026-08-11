@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part3.html"
     title: "Security and Privacy of Social Logins (III): Privacy in Single Sign-On Protocols"
+    author: Louis Jannett
 also_at: []
-authors: []
+authors:
+  - Louis Jannett
 canonical_url: ""
 cited_by:
   - "2020.md:59"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Security and Privacy of Social Logins (III): Privacy in Single Sign-On Protocols
 
-**Security and Privacy of Social Logins (III): Privacy in Single Sign-On Protocols** - Author not stated, web-in-security.blogspot.com.
+**Security and Privacy of Social Logins (III): Privacy in Single Sign-On Protocols** - Louis Jannett, web-in-security.blogspot.com.
 
 - Published: date not stated
 - Original: <https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part3.html>

@@ -2,7 +2,7 @@
 type: Slides
 title: XSS using dirty Content Type in cloud era
 resource: "https://speakerdeck.com/flatt_security/xss-using-dirty-content-type-in-cloud-era?slide=21"
-tags: [slides, webseclist-reference]
+tags: [slides, webseclist-reference, speaker-deck]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T20:33:25+00:00"
@@ -12,10 +12,13 @@ sources:
   - id: original
     resource: "https://speakerdeck.com/flatt_security/xss-using-dirty-content-type-in-cloud-era?slide=21"
     title: XSS using dirty Content Type in cloud era
+    author: @flatt_security, GMO Flatt Security
 also_at:
   - "https://files.speakerdeck.com/presentations/eda5985e545a4ce09425758c6e727e09/BsidesTokyo_XSS_in_cloud_v3.pdf"
   - "https://bsides.tokyo/2024/#xss-using-dirty-content-type-in-cloud-era"
-authors: []
+authors:
+  - @flatt_security
+  - GMO Flatt Security
 canonical_url: ""
 cited_by:
   - "2024.md:100"
@@ -28,7 +31,7 @@ language: ""
 licence: unknown
 original_url: "https://speakerdeck.com/flatt_security/xss-using-dirty-content-type-in-cloud-era?slide=21"
 published: ""
-publisher: ""
+publisher: Speaker Deck
 publisher_english: ""
 raw_sha256: 4a0b8737bee26b7f24dc4f918b5bb0336f8a496cb4c40226ff7c2cef3af0ef9c
 retrieved_from: "https://files.speakerdeck.com/presentations/eda5985e545a4ce09425758c6e727e09/BsidesTokyo_XSS_in_cloud_v3.pdf"
@@ -43,7 +46,7 @@ translation_of: ""
 
 # XSS using dirty Content Type in cloud era
 
-**XSS using dirty Content Type in cloud era** - Author not stated, Publisher not stated.
+**XSS using dirty Content Type in cloud era** - @flatt_security, GMO Flatt Security, Speaker Deck.
 
 - Published: date not stated
 - Original: <https://speakerdeck.com/flatt_security/xss-using-dirty-content-type-in-cloud-era?slide=21>

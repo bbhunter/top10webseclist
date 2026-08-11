@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20120526051852/http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-47-30/5340.Hyperlink-Spoofing-and-the-Modern-Web-_2800_final_2900_.pdf"
     title: Hyperlink Spoofing and the Modern Web
+    author: David Ross
 also_at: []
-authors: []
+authors:
+  - David Ross
 canonical_url: ""
 cited_by:
   - "2012.md:24"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Hyperlink Spoofing and the Modern Web
 
-**Hyperlink Spoofing and the Modern Web** - Author not stated, blogs.msdn.com.
+**Hyperlink Spoofing and the Modern Web** - David Ross, blogs.msdn.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20120526051852/http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-47-30/5340.Hyperlink-Spoofing-and-the-Modern-Web-_2800_final_2900_.pdf>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

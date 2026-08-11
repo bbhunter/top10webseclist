@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://www.usenix.org/legacy/event/woot07/tech/full_papers/futoransky/futoransky.pdf"
     title: "The ND2DB Attack: Database Content Extraction Using Timing Attacks on the Indexing Algorithms"
+    author: Ariel Futoransky, Damián Saura, Ariel Waissbein
 also_at: []
-authors: []
+authors:
+  - Ariel Futoransky
+  - Damián Saura
+  - Ariel Waissbein
 canonical_url: ""
 cited_by:
-  - "2007.md:104"
+  - "2007.md:100"
 commit: ""
 content_sha256: f11ad64388beb9e8e016639377eff3b3beb8a493908bc580508aafb032f4b79a
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # The ND2DB Attack: Database Content Extraction Using Timing Attacks on the Indexing Algorithms
 
-**The ND2DB Attack: Database Content Extraction Using Timing Attacks on the Indexing Algorithms** - Author not stated, Publisher not stated.
+**The ND2DB Attack: Database Content Extraction Using Timing Attacks on the Indexing Algorithms** - Ariel Futoransky, Damián Saura, Ariel Waissbein, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/legacy/event/woot07/tech/full_papers/futoransky/futoransky.pdf>

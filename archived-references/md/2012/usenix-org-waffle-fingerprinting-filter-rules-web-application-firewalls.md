@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/woot12/workshop-program/presentation/schmitt"
     title: "WAFFle: Fingerprinting Filter Rules of Web Application Firewalls"
+    author: Isabell Schmitt, Sebastian Schinzel
 also_at: []
-authors: []
+authors:
+  - Isabell Schmitt
+  - Sebastian Schinzel
 canonical_url: ""
 cited_by:
-  - "2012.md:82"
+  - "2012.md:83"
 commit: ""
 content_sha256: e618fa94493e6918409ca73594288719277a9f0250f35a71fe7447bff0519692
 depth: full
@@ -41,7 +44,7 @@ translation_of: ""
 
 # WAFFle: Fingerprinting Filter Rules of Web Application Firewalls
 
-**WAFFle: Fingerprinting Filter Rules of Web Application Firewalls** - Author not stated, usenix.org.
+**WAFFle: Fingerprinting Filter Rules of Web Application Firewalls** - Isabell Schmitt, Sebastian Schinzel, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/woot12/workshop-program/presentation/schmitt>

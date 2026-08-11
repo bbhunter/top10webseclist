@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://dl.acm.org/doi/10.1145/2818000.2818029"
     title: Cross-Site Framing Attacks
+    author: Nethanel Gelernter, Yoel Grinstein, Amir Herzberg
 also_at: []
-authors: []
+authors:
+  - Nethanel Gelernter
+  - Yoel Grinstein
+  - Amir Herzberg
 canonical_url: ""
 cited_by:
-  - "2015.md:78"
+  - "2015.md:75"
 commit: ""
 content_sha256: fad7bc617391b44ff5a4f61b40320dcb4136f70f03ed48aa47252125dbfe34f3
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # Cross-Site Framing Attacks
 
-**Cross-Site Framing Attacks** - Author not stated, Publisher not stated.
+**Cross-Site Framing Attacks** - Nethanel Gelernter, Yoel Grinstein, Amir Herzberg, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://dl.acm.org/doi/10.1145/2818000.2818029>
@@ -182,8 +186,11 @@ motely by an unknown agent for his own purposes. What161
 --- page 9 ---
 
 +N@=wz’¡m¢kt•vn}reºsÖßÓ¦¾½¹¸ Ä×Óx¹Y½_·R¢û
- }§ø¹­è÷�åøRù@û�QxBXû>Pûû4¦3¶Y_±ÁsÉ÷áê÷÷BÜû_v„eL¦÷+÷÷÷1¥ûbû²á½CûûdNE3Ué÷/¾“§Ÿš› ª”®ƒŸøÔÕøUù*üPû'œƒÏ¶�˜Â÷mûZüèÌ÷hù"}§ù§Ã×EÕ÷oÐT×Ø÷¶øîÀ®µÏÝCÇ'û:H0Jžnô/äû9ulG*ÚG÷÷ØÍòØi¼ûåy$ÔW£gSJ^^J?XÅâË¡µÅºØ¼Ø2Åg¹ÃÅ¸´ÊÏ¶_FRo^Re†ˆ‹‹‡ˆ÷�¶ø§©çÆu÷˜ÂžÏ¼ó×È÷÷÷9/÷	ûû2&ûûÓ:÷Âµ›´Àbû7û û,q÷Æ÷ùw‡‚€‚sof~g?[Ö÷Ä›Ç ¥Ÿœ¤–¨â¸5û<<€÷÷Œ÷÷ø_mrqln¤r¨ª¥¤¨ªq¥mûûmrqln¤r¨ª¥¤¨ªq¥møÈ}²÷
-¬k¶÷�Ÿ÷Qª÷ß÷Òø³ßùDÔh=X~Hû>û÷÷Bè¯éÄÆ¼¼Î¦Ô÷1÷ûû
+ }§ø¹­è÷�åøRù@û�QxBXû>Pûû4¦3¶Y_±ÁsÉ÷áê÷÷BÜû_v„eL¦÷+÷÷÷1¥ûbû²á½CûûdNE3Ué÷/¾“§Ÿš› ª”®ƒŸøÔÕøUù*üPû'œƒÏ¶�˜Â÷mûZüèÌ÷hù"}§ù§Ã×EÕ÷oÐT×Ø÷¶øîÀ®µÏÝCÇ'û:H0Jžnô/äû9ulG*ÚG÷÷ØÍòØi¼û
+åy$ÔW£gSJ^^J?XÅâË¡µÅºØ¼Ø2Åg¹ÃÅ¸´ÊÏ¶_FRo^Re†ˆ‹‹‡ˆ÷�¶ø§©çÆu÷˜ÂžÏ¼ó×È÷÷÷9/÷	ûû2&ûûÓ:÷Âµ›´Àbû7û û,q÷Æ÷ùw‡‚€‚sof~g?[Ö÷Ä›Ç ¥Ÿœ¤–¨â¸5û<<€÷÷Œ÷÷ø_mrqln¤r¨ª¥¤¨ªq¥mûûmrqln¤r¨ª¥¤¨ªq¥møÈ}²÷
+¬k¶÷�Ÿ÷Qª÷ß÷
+Òø
+³ßùDÔh=X~Hû>û÷÷Bè¯éÄÆ¼¼Î¦Ô÷1÷ûû
 
 --- page 10 ---
 

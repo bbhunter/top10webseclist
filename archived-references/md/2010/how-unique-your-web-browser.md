@@ -12,11 +12,13 @@ sources:
   - id: original
     resource: "https://coveryourtracks.eff.org/static/browser-uniqueness.pdf"
     title: How Unique Is Your Web Browser?
+    author: Peter Eckersley
 also_at: []
-authors: []
+authors:
+  - Peter Eckersley
 canonical_url: ""
 cited_by:
-  - "2010.md:88"
+  - "2010.md:84"
 commit: ""
 content_sha256: 583990dfe262324dc27d3861e4187d5a5cee050e19cc8cf19fac2dc1dd54d63c
 depth: full
@@ -41,7 +43,7 @@ translation_of: ""
 
 # How Unique Is Your Web Browser?
 
-**How Unique Is Your Web Browser?** - Author not stated, Publisher not stated.
+**How Unique Is Your Web Browser?** - Peter Eckersley, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://coveryourtracks.eff.org/static/browser-uniqueness.pdf>

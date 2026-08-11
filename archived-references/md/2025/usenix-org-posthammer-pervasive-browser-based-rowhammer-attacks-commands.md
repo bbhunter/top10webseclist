@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity25/presentation/de-ridder"
     title: "Posthammer: Pervasive Browser-based Rowhammer Attacks with Postponed Refresh Commands"
+    author: Finn de Ridder, Patrick Jattke, Kaveh Razavi
 also_at: []
-authors: []
+authors:
+  - Finn de Ridder
+  - Patrick Jattke
+  - Kaveh Razavi
 canonical_url: ""
 cited_by:
-  - "2025.md:87"
+  - "2025.md:88"
 commit: ""
 content_sha256: 8f615f0dcfd6689bb31002a8398c08c135251a52d837318e26afcf8bd523ee39
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # Posthammer: Pervasive Browser-based Rowhammer Attacks with Postponed Refresh Commands
 
-**Posthammer: Pervasive Browser-based Rowhammer Attacks with Postponed Refresh Commands** - Author not stated, usenix.org.
+**Posthammer: Pervasive Browser-based Rowhammer Attacks with Postponed Refresh Commands** - Finn de Ridder, Patrick Jattke, Kaveh Razavi, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity25/presentation/de-ridder>

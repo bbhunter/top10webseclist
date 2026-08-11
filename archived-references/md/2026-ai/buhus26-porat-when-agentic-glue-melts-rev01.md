@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://i.blackhat.com/BH-USA-26/Presentations/BUHUS26-Porat-When-Agentic-Glue-Melts-REV01.pdf"
     title: BUHUS26 Porat When Agentic Glue Melts REV01
+    author: Yarden Porat, Shahar Tal
 also_at: []
-authors: []
+authors:
+  - Yarden Porat
+  - Shahar Tal
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:99"
+  - "2026-ai.md:76"
 commit: ""
 content_sha256: 500dc9ad14a0febf985f2438dd3c89726881e4422cecfc833adf61c9f6100854
 depth: full
@@ -41,7 +44,7 @@ translation_of: ""
 
 # BUHUS26 Porat When Agentic Glue Melts REV01
 
-**BUHUS26 Porat When Agentic Glue Melts REV01** - Author not stated, Publisher not stated.
+**BUHUS26 Porat When Agentic Glue Melts REV01** - Yarden Porat, Shahar Tal, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-USA-26/Presentations/BUHUS26-Porat-When-Agentic-Glue-Melts-REV01.pdf>

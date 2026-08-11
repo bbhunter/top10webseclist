@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://www.blackhat.com/presentations/bh-usa-07/Waissbein_Futoransky_and_Saura/Whitepaper/bh-usa-07-waissbein_futoransky_and_saura-WP.pdf"
     title: Black Hat paper
+    author: Ariel Futoransky, Damián Saura, Ariel Waissbein
 also_at: []
-authors: []
+authors:
+  - Ariel Futoransky
+  - Damián Saura
+  - Ariel Waissbein
 canonical_url: ""
 cited_by:
-  - "2007.md:104"
+  - "2007.md:100"
 commit: ""
 content_sha256: 9e75682b2a4d5806545ca7d8ec094c7c797a0561a0964e192b2783bce12fe84d
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # Black Hat paper
 
-**Black Hat paper** - Author not stated, Publisher not stated.
+**Black Hat paper** - Ariel Futoransky, Damián Saura, Ariel Waissbein, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/presentations/bh-usa-07/Waissbein_Futoransky_and_Saura/Whitepaper/bh-usa-07-waissbein_futoransky_and_saura-WP.pdf>

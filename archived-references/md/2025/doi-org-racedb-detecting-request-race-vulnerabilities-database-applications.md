@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://doi.org/10.1109/SP61157.2025.00029"
     title: "RaceDB: Detecting Request Race Vulnerabilities in Database-Backed Web Applications"
+    author: An Chen, Yonghwi Kwon, Kyu Hyung Lee
 also_at: []
-authors: []
+authors:
+  - An Chen
+  - Yonghwi Kwon
+  - Kyu Hyung Lee
 canonical_url: ""
 cited_by:
-  - "2025.md:95"
+  - "2025.md:91"
 commit: ""
 content_sha256: 6253d6783b55fca65337f9f7c2452306b5ddcdc94c38cdb03661fa065e00e431
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # RaceDB: Detecting Request Race Vulnerabilities in Database-Backed Web Applications
 
-**RaceDB: Detecting Request Race Vulnerabilities in Database-Backed Web Applications** - Author not stated, doi.org.
+**RaceDB: Detecting Request Race Vulnerabilities in Database-Backed Web Applications** - An Chen, Yonghwi Kwon, Kyu Hyung Lee, doi.org.
 
 - Published: date not stated
 - Original: <https://doi.org/10.1109/SP61157.2025.00029>

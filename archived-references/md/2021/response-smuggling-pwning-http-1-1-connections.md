@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Martin%20Doyhenard%20-%20Response%20Smuggling-%20Pwning%20HTTP-1.1%20Connections.pdf"
     title: Response Smuggling- Pwning HTTP-1.1 Connections
+    author: Martin Doyhenard
 also_at: []
-authors: []
+authors:
+  - Martin Doyhenard
 canonical_url: ""
 cited_by:
   - "2021.md:28"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Response Smuggling- Pwning HTTP-1.1 Connections
 
-**Response Smuggling- Pwning HTTP-1.1 Connections** - Author not stated, Publisher not stated.
+**Response Smuggling- Pwning HTTP-1.1 Connections** - Martin Doyhenard, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Martin%20Doyhenard%20-%20Response%20Smuggling-%20Pwning%20HTTP-1.1%20Connections.pdf>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

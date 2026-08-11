@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/leet-10/dns-prefetching-and-its-privacy-implications-when-good-things-go-bad"
     title: "DNS Prefetching and Its Privacy Implications: When Good Things Go Bad"
+    author: Fabian Monrose, Srinivas Krishnan
 also_at: []
-authors: []
+authors:
+  - Fabian Monrose
+  - Srinivas Krishnan
 canonical_url: ""
 cited_by:
-  - "2010.md:101"
+  - "2010.md:102"
 commit: ""
 content_sha256: d7c93c53d8941a44bd003eea9d558f10bd68e3948efab78ac3594c2e232dcbd6
 depth: full
@@ -41,7 +44,7 @@ translation_of: ""
 
 # DNS Prefetching and Its Privacy Implications: When Good Things Go Bad
 
-**DNS Prefetching and Its Privacy Implications: When Good Things Go Bad** - Author not stated, usenix.org.
+**DNS Prefetching and Its Privacy Implications: When Good Things Go Bad** - Fabian Monrose, Srinivas Krishnan, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/leet-10/dns-prefetching-and-its-privacy-implications-when-good-things-go-bad>

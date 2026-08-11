@@ -12,11 +12,18 @@ sources:
   - id: original
     resource: "https://doi.org/10.1016/j.cose.2015.07.004"
     title: "Man-in-the-Browser-Cache: Persisting HTTPS Attacks via Browser Cache Poisoning"
+    author: Yaoqi Jia, Yue Chen, Xinshu Dong, Prateek Saxena, Jian Mao, Zhenkai Liang
 also_at: []
-authors: []
+authors:
+  - Yaoqi Jia
+  - Yue Chen
+  - Xinshu Dong
+  - Prateek Saxena
+  - Jian Mao
+  - Zhenkai Liang
 canonical_url: ""
 cited_by:
-  - "2015.md:80"
+  - "2015.md:77"
 commit: ""
 content_sha256: da71707ab35778e73df769570136da06799e66b8d992f2332b470ceafa6c6c18
 depth: full
@@ -41,7 +48,7 @@ translation_of: ""
 
 # Man-in-the-Browser-Cache: Persisting HTTPS Attacks via Browser Cache Poisoning
 
-**Man-in-the-Browser-Cache: Persisting HTTPS Attacks via Browser Cache Poisoning** - Author not stated, doi.org.
+**Man-in-the-Browser-Cache: Persisting HTTPS Attacks via Browser Cache Poisoning** - Yaoqi Jia, Yue Chen, Xinshu Dong, Prateek Saxena, Jian Mao, Zhenkai Liang, doi.org.
 
 - Published: date not stated
 - Original: <https://doi.org/10.1016/j.cose.2015.07.004>
@@ -350,7 +357,8 @@ conference on World Wide Web
 --- page 3 ---
 
 YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
+ $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
+½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
 
 --- page 4 ---
 

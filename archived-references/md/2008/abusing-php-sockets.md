@@ -6,14 +6,16 @@ tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T15:35:30+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-06
 sources:
   - id: original
     resource: "http://www.secforce.co.uk/media/presentations/OWASP_Abusing_PHP_sockets.pdf"
     title: Abusing PHP Sockets
+    author: Rodrigo Marcos
 also_at: []
-authors: []
+authors:
+  - Rodrigo Marcos
 canonical_url: ""
 cited_by:
   - "2008.md:76"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Abusing PHP Sockets
 
-**Abusing PHP Sockets** - Author not stated, Publisher not stated.
+**Abusing PHP Sockets** - Rodrigo Marcos, Publisher not stated.
 
 - Published: date not stated
 - Original: <http://www.secforce.co.uk/media/presentations/OWASP_Abusing_PHP_sockets.pdf>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

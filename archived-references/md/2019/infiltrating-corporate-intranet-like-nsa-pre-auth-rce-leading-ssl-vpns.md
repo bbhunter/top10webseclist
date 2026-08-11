@@ -12,8 +12,11 @@ sources:
   - id: original
     resource: "https://hitcon.org/2019/CMT/slide-files/d1_s0_r0_keynote.pdf"
     title: "Infiltrating Corporate Intranet Like NSA: Pre-auth RCE on Leading SSL VPNs"
+    author: Orange Tsai, Meh Chang
 also_at: []
-authors: []
+authors:
+  - Orange Tsai
+  - Meh Chang
 canonical_url: ""
 cited_by:
   - "2019.md:12"
@@ -41,7 +44,7 @@ translation_of: ""
 
 # Infiltrating Corporate Intranet Like NSA: Pre-auth RCE on Leading SSL VPNs
 
-**Infiltrating Corporate Intranet Like NSA: Pre-auth RCE on Leading SSL VPNs** - Author not stated, Publisher not stated.
+**Infiltrating Corporate Intranet Like NSA: Pre-auth RCE on Leading SSL VPNs** - Orange Tsai, Meh Chang, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://hitcon.org/2019/CMT/slide-files/d1_s0_r0_keynote.pdf>

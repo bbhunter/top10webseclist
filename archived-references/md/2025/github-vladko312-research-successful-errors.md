@@ -2,7 +2,7 @@
 type: Repository
 title: Blind SSTI
 resource: "https://github.com/vladko312/Research_Successful_Errors"
-tags: [repo, webseclist-reference]
+tags: [repo, webseclist-reference, github]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T23:15:17+00:00"
@@ -12,9 +12,11 @@ sources:
   - id: original
     resource: "https://github.com/vladko312/Research_Successful_Errors"
     title: Blind SSTI
+    author: vladko312
 also_at:
   - "https://raw.githubusercontent.com/vladko312/Research_Successful_Errors/main/Successful%20Errors.pdf"
-authors: []
+authors:
+  - vladko312
 canonical_url: ""
 cited_by:
   - "2025.md:5"
@@ -27,7 +29,7 @@ language: ""
 licence: unknown
 original_url: "https://github.com/vladko312/Research_Successful_Errors"
 published: ""
-publisher: ""
+publisher: GitHub
 publisher_english: ""
 raw_sha256: abde788455f43250f48ff80c7123592a6292759a9a3841dab19ddd71c14fa014
 retrieved_from: "https://raw.githubusercontent.com/vladko312/Research_Successful_Errors/main/Successful%20Errors.pdf"
@@ -42,7 +44,7 @@ translation_of: ""
 
 # Blind SSTI
 
-**Blind SSTI** - Author not stated, Publisher not stated.
+**Blind SSTI** - vladko312, GitHub.
 
 - Published: date not stated
 - Original: <https://github.com/vladko312/Research_Successful_Errors>

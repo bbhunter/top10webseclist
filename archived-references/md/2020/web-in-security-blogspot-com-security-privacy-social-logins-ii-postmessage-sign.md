@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part2.html"
     title: "Security and Privacy of Social Logins (II): PostMessage Security in Single Sign-On"
+    author: Louis Jannett
 also_at: []
-authors: []
+authors:
+  - Louis Jannett
 canonical_url: ""
 cited_by:
   - "2020.md:59"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Security and Privacy of Social Logins (II): PostMessage Security in Single Sign-On
 
-**Security and Privacy of Social Logins (II): PostMessage Security in Single Sign-On** - Author not stated, web-in-security.blogspot.com.
+**Security and Privacy of Social Logins (II): PostMessage Security in Single Sign-On** - Louis Jannett, web-in-security.blogspot.com.
 
 - Published: date not stated
 - Original: <https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part2.html>

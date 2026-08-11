@@ -12,11 +12,18 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/alrawi"
     title: "The Betrayal At Cloud City: An Empirical Analysis Of Cloud-Based Mobile Backends"
+    author: Omar Alrawi, Chaoshun Zuo, Ruian Duan, Ranjita Pai Kasturi, Zhiqiang Lin, Brendan Saltaformaggio
 also_at: []
-authors: []
+authors:
+  - Omar Alrawi
+  - Chaoshun Zuo
+  - Ruian Duan
+  - Ranjita Pai Kasturi
+  - Zhiqiang Lin
+  - Brendan Saltaformaggio
 canonical_url: ""
 cited_by:
-  - "2019.md:79"
+  - "2019.md:80"
 commit: ""
 content_sha256: 738911564afec8c24e03913ac7e05bcc78745af7123b4bcfcf8ec17cae12e08e
 depth: full
@@ -41,7 +48,7 @@ translation_of: ""
 
 # The Betrayal At Cloud City: An Empirical Analysis Of Cloud-Based Mobile Backends
 
-**The Betrayal At Cloud City: An Empirical Analysis Of Cloud-Based Mobile Backends** - Author not stated, usenix.org.
+**The Betrayal At Cloud City: An Empirical Analysis Of Cloud-Based Mobile Backends** - Omar Alrawi, Chaoshun Zuo, Ruian Duan, Ranjita Pai Kasturi, Zhiqiang Lin, Brendan Saltaformaggio, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity19/presentation/alrawi>

@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/gierlings"
     title: "Isolated and Exhausted: Attacking Operating Systems via Site Isolation in the Browser"
+    author: Matthias Gierlings, Marcus Brinkmann, Jörg Schwenk
 also_at: []
-authors: []
+authors:
+  - Matthias Gierlings
+  - Marcus Brinkmann
+  - Jörg Schwenk
 canonical_url: ""
 cited_by:
-  - "2023.md:84"
+  - "2023.md:85"
 commit: ""
 content_sha256: 9755f5709900b0cc0b8b2a64066c582ec7f9d49bcb3354d0539aafbf39602120
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # Isolated and Exhausted: Attacking Operating Systems via Site Isolation in the Browser
 
-**Isolated and Exhausted: Attacking Operating Systems via Site Isolation in the Browser** - Author not stated, usenix.org.
+**Isolated and Exhausted: Attacking Operating Systems via Site Isolation in the Browser** - Matthias Gierlings, Marcus Brinkmann, Jörg Schwenk, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity23/presentation/gierlings>

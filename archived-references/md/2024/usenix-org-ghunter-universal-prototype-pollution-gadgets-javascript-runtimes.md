@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/cornelissen"
     title: "GHunter: Universal Prototype Pollution Gadgets in JavaScript Runtimes"
+    author: Eric Cornelissen, Mikhail Shcherbakov, Musard Balliu
 also_at: []
-authors: []
+authors:
+  - Eric Cornelissen
+  - Mikhail Shcherbakov
+  - Musard Balliu
 canonical_url: ""
 cited_by:
-  - "2024.md:139"
+  - "2024.md:140"
 commit: ""
 content_sha256: 20ff1903e12acc0495efe1bc69ce1f2edcb3fc421ec7c78a2b4efe97b8e50d39
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # GHunter: Universal Prototype Pollution Gadgets in JavaScript Runtimes
 
-**GHunter: Universal Prototype Pollution Gadgets in JavaScript Runtimes** - Author not stated, usenix.org.
+**GHunter: Universal Prototype Pollution Gadgets in JavaScript Runtimes** - Eric Cornelissen, Mikhail Shcherbakov, Musard Balliu, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity24/presentation/cornelissen>

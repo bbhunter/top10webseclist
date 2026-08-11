@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://xs-sniper.com/blog/2012/10/11/content-smuggling/"
     title: Billy (BK) Rios » Content Smuggling
+    author: Billy Rios
   - id: canonical
     resource: "http://xs-sniper.com/blog/2012/10/11/content-smuggling/"
   - id: capture
     resource: "https://web.archive.org/web/20121218084341/http://xs-sniper.com/blog/2012/10/11/content-smuggling/"
 also_at: []
-authors: []
+authors:
+  - Billy Rios
 canonical_url: "http://xs-sniper.com/blog/2012/10/11/content-smuggling/"
 cited_by:
   - "2012.md:27"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Billy (BK) Rios » Content Smuggling
 
-**Billy (BK) Rios » Content Smuggling** - Author not stated, xs-sniper.com.
+**Billy (BK) Rios » Content Smuggling** - Billy Rios, xs-sniper.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://xs-sniper.com/blog/2012/10/11/content-smuggling/>

@@ -12,11 +12,17 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenix-security-11/presentation/fast-and-precise-sanitizer-analysis-bek"
     title: Fast and Precise Sanitizer Analysis with BEK
+    author: Pieter Hooimeijer, Benjamin Livshits, David Molnar, Prateek Saxena, Margus Veanes
 also_at: []
-authors: []
+authors:
+  - Pieter Hooimeijer
+  - Benjamin Livshits
+  - David Molnar
+  - Prateek Saxena
+  - Margus Veanes
 canonical_url: ""
 cited_by:
-  - "2011.md:68"
+  - "2011.md:69"
 commit: ""
 content_sha256: 6cbf7d2e87fe2b8d0a1de82908cdc541bac853c8ef2fd44aa43d4328cb15c5ab
 depth: full
@@ -41,7 +47,7 @@ translation_of: ""
 
 # Fast and Precise Sanitizer Analysis with BEK
 
-**Fast and Precise Sanitizer Analysis with BEK** - Author not stated, usenix.org.
+**Fast and Precise Sanitizer Analysis with BEK** - Pieter Hooimeijer, Benjamin Livshits, David Molnar, Prateek Saxena, Margus Veanes, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenix-security-11/presentation/fast-and-precise-sanitizer-analysis-bek>

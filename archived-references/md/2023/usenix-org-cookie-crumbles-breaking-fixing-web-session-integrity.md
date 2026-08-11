@@ -12,8 +12,13 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/squarcina"
     title: "Cookie Crumbles: Breaking and Fixing Web Session Integrity"
+    author: Marco Squarcina, Pedro Adão, Lorenzo Veronese, Matteo Maffei
 also_at: []
-authors: []
+authors:
+  - Marco Squarcina
+  - Pedro Adão
+  - Lorenzo Veronese
+  - Matteo Maffei
 canonical_url: ""
 cited_by:
   - "2023.md:13"
@@ -41,7 +46,7 @@ translation_of: ""
 
 # Cookie Crumbles: Breaking and Fixing Web Session Integrity
 
-**Cookie Crumbles: Breaking and Fixing Web Session Integrity** - Author not stated, usenix.org.
+**Cookie Crumbles: Breaking and Fixing Web Session Integrity** - Marco Squarcina, Pedro Adão, Lorenzo Veronese, Matteo Maffei, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity23/presentation/squarcina>

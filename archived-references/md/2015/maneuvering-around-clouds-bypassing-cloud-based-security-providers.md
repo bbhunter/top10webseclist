@@ -12,11 +12,16 @@ sources:
   - id: original
     resource: "https://dl.acm.org/doi/10.1145/2810103.2813633"
     title: "Maneuvering Around Clouds: Bypassing Cloud-based Security Providers"
+    author: Thomas Vissers, Tom Van Goethem, Wouter Joosen, Nick Nikiforakis
 also_at: []
-authors: []
+authors:
+  - Thomas Vissers
+  - Tom Van Goethem
+  - Wouter Joosen
+  - Nick Nikiforakis
 canonical_url: ""
 cited_by:
-  - "2015.md:61"
+  - "2015.md:62"
 commit: ""
 content_sha256: 9c3c5f017dc2117372a95d23326c28c8cc0c33486106a3d59f499e2ac5b67a27
 depth: full
@@ -41,7 +46,7 @@ translation_of: ""
 
 # Maneuvering Around Clouds: Bypassing Cloud-based Security Providers
 
-**Maneuvering Around Clouds: Bypassing Cloud-based Security Providers** - Author not stated, Publisher not stated.
+**Maneuvering Around Clouds: Bypassing Cloud-based Security Providers** - Thomas Vissers, Tom Van Goethem, Wouter Joosen, Nick Nikiforakis, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://dl.acm.org/doi/10.1145/2810103.2813633>
@@ -183,8 +188,22 @@ name to reroute a websiteÕs tra!c through their security in-
 --- page 9 ---
 
 *b1-b.-':Ly%#%'2#2'E#E'¥''9?:9&"%&8/78-""--/?¸É@> / /.!.!"988''&h??+ 0`p°Ààð
-¸ú@D S d  2" ""¸Ã¶@A–!kŠ++ö]ô]ý]qä]?<<<?<<<99‡.+‡}Ä‡.+‡}ÄíÀíÀíÀíÀíÀíÀíÀíÀY10]]CX² /]Y]]]]qCX¶/@U	¸ÿô´U	¸ÿô´U	¸ÿà´U	¸ÿØ@U	U
-U¸ÿþ´U¸ÿì´U¸ÿÜ´U¸ÿØ@	U¯ý V9$$<Ua•, $p<oiX@!zÆuswppÄÆ×ç	Õ¸-@Ï””!TZ++Nô]Mý]9/?íì]í9910]]3#%#ù¸¾þïåiþµÕÕE–Ln@C§¹¶‰††vw‹fzyjid™–¨4�	w�h/¸p·hXÞ+NôMíý]í?<í<ôýô<10]]]]]]#663232673#"'&&#"6 jN	 "		S	S/¸ÿð@Ê:I7¸8È8™:¨8™8™9' 9¬¸¬@988"87
+¸ú@D S d  2" ""¸Ã¶@A–!kŠ++ö]ô]ý]qä]?<<<?<<<99‡.+‡}Ä‡.+‡}ÄíÀíÀíÀíÀíÀíÀíÀíÀY10]]CX² /]Y]]]]qCX¶/@U	¸ÿô´U	¸ÿô´
+
+U	¸ÿà´U	¸ÿØ@U	
+
+
+U
+U
+¸ÿþ´U¸ÿì´
+
+U¸ÿÜ´U¸ÿØ@	U¯ý V9$$<Ua•, $p<oiX@!zÆuswppÄÆ×ç	Õ¸-@Ï””!TZ++Nô]Mý]9/?íì]í9910]]3#%#ù¸¾þïåiþµÕÕE–Ln@C§¹¶‰††vw‹fzyjid™–¨4�	w
+�
+h
+
+/
+
+¸p·hXÞ+NôMíý]í?<í<ôýô<10]]]]]]#663232673#"'&&#"6 jN	 "		S	S/¸ÿð@Ê:I7¸8È8™:¨8™8™9' 9¬¸¬@988"87
 =Læ	.ld‰u 9"lJRF/w
 @/*9"R3@73“1	3Hl/|�ˆÌÎ->O5=yoUOC‡rF$<Qî9zd‰u 9"lJR	4 4� �@	4?/?hh¯/]í3/í/]q+Àí2/ýÄ10+++#323273#"'&#"ý µ/500,DD/:&,E-" ".$$!!*$!$" +!$"44#-2 10"!"$C@"   "!   RR??RR??,,,,,,,,RR??RR??,,RR??
 

@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://archives.iw3c2.org/www2007/papers/paper555.pdf"
     title: paper555
+    author: Andrew Bortz, Dan Boneh, Palash Nandy
 also_at: []
-authors: []
+authors:
+  - Andrew Bortz
+  - Dan Boneh
+  - Palash Nandy
 canonical_url: ""
 cited_by:
-  - "2007.md:101"
+  - "2007.md:98"
 commit: ""
 content_sha256: 2d0bdb0262d9ef42df75de9bcfbe315d834955f9e0b0bcbf140569793207c014
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # paper555
 
-**paper555** - Author not stated, Publisher not stated.
+**paper555** - Andrew Bortz, Dan Boneh, Palash Nandy, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://archives.iw3c2.org/www2007/papers/paper555.pdf>
@@ -49,7 +53,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

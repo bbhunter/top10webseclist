@@ -12,11 +12,16 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/xie-qinge"
     title: "Arcanum: Detecting and Evaluating the Privacy Risks of Browser Extensions on Web Pages and Web Content"
+    author: Qinge Xie, Manoj Vignesh Kasi Murali, Paul Pearce, Frank Li
 also_at: []
-authors: []
+authors:
+  - Qinge Xie
+  - Manoj Vignesh Kasi Murali
+  - Paul Pearce
+  - Frank Li
 canonical_url: ""
 cited_by:
-  - "2024.md:151"
+  - "2024.md:152"
 commit: ""
 content_sha256: 3c55ef8286e2d62fa35135542d5f50ea658d663feed9b27c01c1e6fc0dc5d5ea
 depth: full
@@ -41,7 +46,7 @@ translation_of: ""
 
 # Arcanum: Detecting and Evaluating the Privacy Risks of Browser Extensions on Web Pages and Web Content
 
-**Arcanum: Detecting and Evaluating the Privacy Risks of Browser Extensions on Web Pages and Web Content** - Author not stated, usenix.org.
+**Arcanum: Detecting and Evaluating the Privacy Risks of Browser Extensions on Web Pages and Web Content** - Qinge Xie, Manoj Vignesh Kasi Murali, Paul Pearce, Frank Li, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity24/presentation/xie-qinge>

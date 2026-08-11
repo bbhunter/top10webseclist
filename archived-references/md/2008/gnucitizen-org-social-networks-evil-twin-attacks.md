@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/social-networks-evil-twin-attacks/"
     title: Social Networks Evil Twin Attacks
+    author: pdp
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: ""
 cited_by:
   - "2008.md:67"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Social Networks Evil Twin Attacks
 
-**Social Networks Evil Twin Attacks** - Author not stated, gnucitizen.org.
+**Social Networks Evil Twin Attacks** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/social-networks-evil-twin-attacks/>

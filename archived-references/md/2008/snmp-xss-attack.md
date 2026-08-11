@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20130102183427/http://www.procheckup.com/media/41602/hacking_zyxel_gateways.pdf"
     title: SNMP XSS Attack
+    author: Adrian Pastor
 also_at: []
-authors: []
+authors:
+  - Adrian Pastor
 canonical_url: ""
 cited_by:
   - "2008.md:27"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # SNMP XSS Attack
 
-**SNMP XSS Attack** - Author not stated, Publisher not stated.
+**SNMP XSS Attack** - Adrian Pastor, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20130102183427/http://www.procheckup.com/media/41602/hacking_zyxel_gateways.pdf>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

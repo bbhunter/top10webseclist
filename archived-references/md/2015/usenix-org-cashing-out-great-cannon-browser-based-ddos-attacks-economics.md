@@ -12,11 +12,17 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/woot15/workshop-program/presentation/pellegrino"
     title: Cashing Out the Great Cannon? On Browser-Based DDoS Attacks and Economics
+    author: Giancarlo Pellegrino, Christian Rossow, Fabrice J. Ryba, Thomas C. Schmidt, Matthias Wählisch
 also_at: []
-authors: []
+authors:
+  - Giancarlo Pellegrino
+  - Christian Rossow
+  - Fabrice J. Ryba
+  - Thomas C. Schmidt
+  - Matthias Wählisch
 canonical_url: ""
 cited_by:
-  - "2015.md:80"
+  - "2015.md:81"
 commit: ""
 content_sha256: f0d008f7f69dc99f64b37a8bc65d403818c748ca0275bf17fcf3adba0fa18daa
 depth: full
@@ -41,7 +47,7 @@ translation_of: ""
 
 # Cashing Out the Great Cannon? On Browser-Based DDoS Attacks and Economics
 
-**Cashing Out the Great Cannon? On Browser-Based DDoS Attacks and Economics** - Author not stated, usenix.org.
+**Cashing Out the Great Cannon? On Browser-Based DDoS Attacks and Economics** - Giancarlo Pellegrino, Christian Rossow, Fabrice J. Ryba, Thomas C. Schmidt, Matthias Wählisch, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/woot15/workshop-program/presentation/pellegrino>

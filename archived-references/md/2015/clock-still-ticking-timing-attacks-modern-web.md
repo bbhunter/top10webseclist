@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://dl.acm.org/doi/10.1145/2810103.2813632"
     title: "The Clock is Still Ticking: Timing Attacks in the Modern Web"
+    author: Tom Van Goethem, Wouter Joosen, Nick Nikiforakis
 also_at: []
-authors: []
+authors:
+  - Tom Van Goethem
+  - Wouter Joosen
+  - Nick Nikiforakis
 canonical_url: ""
 cited_by:
-  - "2015.md:74"
+  - "2015.md:71"
 commit: ""
 content_sha256: 6fad6cf8d074590857c797d46f51a3b666474bc5207028897a8dfefb39f0dc24
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # The Clock is Still Ticking: Timing Attacks in the Modern Web
 
-**The Clock is Still Ticking: Timing Attacks in the Modern Web** - Author not stated, Publisher not stated.
+**The Clock is Still Ticking: Timing Attacks in the Modern Web** - Tom Van Goethem, Wouter Joosen, Nick Nikiforakis, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://dl.acm.org/doi/10.1145/2810103.2813632>

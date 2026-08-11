@@ -12,11 +12,18 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity13/technical-sessions/paper/xing"
     title: "Take This Personally: Pollution Attacks on Personalized Services"
+    author: Xinyu Xing, Wei Meng, Dan Doozan, Alex C. Snoeren, Nick Feamster, Wenke Lee
 also_at: []
-authors: []
+authors:
+  - Xinyu Xing
+  - Wei Meng
+  - Dan Doozan
+  - Alex C. Snoeren
+  - Nick Feamster
+  - Wenke Lee
 canonical_url: ""
 cited_by:
-  - "2013.md:58"
+  - "2013.md:59"
 commit: ""
 content_sha256: c1ea64a11862fdaab2442cd3b346c55ee0ce72cc3eb138f9a0c171b89ef8f194
 depth: full
@@ -41,7 +48,7 @@ translation_of: ""
 
 # Take This Personally: Pollution Attacks on Personalized Services
 
-**Take This Personally: Pollution Attacks on Personalized Services** - Author not stated, usenix.org.
+**Take This Personally: Pollution Attacks on Personalized Services** - Xinyu Xing, Wei Meng, Dan Doozan, Alex C. Snoeren, Nick Feamster, Wenke Lee, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity13/technical-sessions/paper/xing>

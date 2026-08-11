@@ -6,18 +6,20 @@ tags: [code, webseclist-reference]
 generated:
   by: webseclist-refs/1
   at: "2026-08-08T07:45:35+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-08
 sources:
   - id: original
     resource: "https://lcamtuf.coredump.cx/cross_site_cooking.txt"
     title: Cross-Site Cooking
+    author: Michal Zalewski
 also_at:
   - "https://seclists.org/fulldisclosure/2006/Jan/943"
-authors: []
+authors:
+  - Michal Zalewski
 canonical_url: ""
 cited_by:
-  - "2006.md:88"
+  - "2006.md:86"
 commit: ""
 content_sha256: 095002d66eedb405043269a9375c877b7eec90791a73127e5c6c532c991dd128
 depth: full
@@ -42,7 +44,7 @@ translation_of: ""
 
 # Cross-Site Cooking
 
-**Cross-Site Cooking** - Author not stated, Publisher not stated.
+**Cross-Site Cooking** - Michal Zalewski, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://lcamtuf.coredump.cx/cross_site_cooking.txt>
@@ -51,7 +53,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

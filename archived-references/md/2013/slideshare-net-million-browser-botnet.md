@@ -12,12 +12,15 @@ sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet"
     title: Million Browser Botnet
+    author: Jeremiah Grossman, Matt Johansen
   - id: canonical
     resource: "http://web.archive.org/web/20150719211459/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet"
   - id: capture
     resource: "https://web.archive.org/web/20160507023636/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
+  - Matt Johansen
 canonical_url: "http://web.archive.org/web/20150719211459/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet"
 cited_by:
   - "2013.md:20"
@@ -45,7 +48,7 @@ translation_of: ""
 
 # Million Browser Botnet
 
-**Million Browser Botnet** - Author not stated, slideshare.net.
+**Million Browser Botnet** - Jeremiah Grossman, Matt Johansen, slideshare.net.
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://www.slideshare.net/jeremiahgrossman/million-browser-botnet>

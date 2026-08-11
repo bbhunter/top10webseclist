@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/woot12/workshop-program/presentation/bhargavan"
     title: Web-based Attacks on Host-Proof Encrypted Storage
+    author: Karthikeyan Bhargavan, Antoine Delignat-Lavaud
 also_at: []
-authors: []
+authors:
+  - Karthikeyan Bhargavan
+  - Antoine Delignat-Lavaud
 canonical_url: ""
 cited_by:
-  - "2012.md:88"
+  - "2012.md:89"
 commit: ""
 content_sha256: 95a18d26e8f8ead96ca944848b7e3d73fd04641ba94dc905dc718892a8bfb6bc
 depth: full
@@ -41,7 +44,7 @@ translation_of: ""
 
 # Web-based Attacks on Host-Proof Encrypted Storage
 
-**Web-based Attacks on Host-Proof Encrypted Storage** - Author not stated, usenix.org.
+**Web-based Attacks on Host-Proof Encrypted Storage** - Karthikeyan Bhargavan, Antoine Delignat-Lavaud, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/woot12/workshop-program/presentation/bhargavan>

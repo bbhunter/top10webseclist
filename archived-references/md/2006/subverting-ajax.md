@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://fahrplan.events.ccc.de/congress/2006/Fahrplan/attachments/1158-Subverting_Ajax.pdf"
     title: Subverting AJAX
+    author: Stefano Di Paola, Giorgio Fedon
 also_at: []
-authors: []
+authors:
+  - Stefano Di Paola
+  - Giorgio Fedon
 canonical_url: ""
 cited_by:
-  - "2006.md:89"
+  - "2006.md:85"
 commit: ""
 content_sha256: e528c229096025ba7326ad1847da664834164ba0abba1c4a973f04cd1a291858
 depth: full
@@ -41,7 +44,7 @@ translation_of: ""
 
 # Subverting AJAX
 
-**Subverting AJAX** - Author not stated, Publisher not stated.
+**Subverting AJAX** - Stefano Di Paola, Giorgio Fedon, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://fahrplan.events.ccc.de/congress/2006/Fahrplan/attachments/1158-Subverting_Ajax.pdf>

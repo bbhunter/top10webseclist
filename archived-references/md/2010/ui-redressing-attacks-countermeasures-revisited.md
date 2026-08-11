@@ -2,7 +2,7 @@
 type: Article
 title: "UI Redressing: Attacks and Countermeasures Revisited"
 resource: "http://ui-redressing.mniemietz.de/"
-tags: [article, webseclist-reference]
+tags: [article, webseclist-reference, ui-redressing-mniemietz-de]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T12:54:16+00:00"
@@ -12,11 +12,13 @@ sources:
   - id: original
     resource: "http://ui-redressing.mniemietz.de/"
     title: "UI Redressing: Attacks and Countermeasures Revisited"
+    author: Marcus Niemietz
   - id: capture
     resource: "https://web.archive.org/web/20110327172545/http://ui-redressing.mniemietz.de/"
 also_at:
   - "http://ui-redressing.mniemietz.de/uiRedressing.pdf"
-authors: []
+authors:
+  - Marcus Niemietz
 canonical_url: ""
 cited_by:
   - "2010.md:76"
@@ -29,7 +31,7 @@ language: ""
 licence: unknown
 original_url: "http://ui-redressing.mniemietz.de/"
 published: ""
-publisher: ""
+publisher: ui-redressing.mniemietz.de
 publisher_english: ""
 raw_sha256: 8783ae753529a61fa122395821c8eb5731ebff7354f0165d08b43d37c12c0129
 retrieved_from: "http://ui-redressing.mniemietz.de/uiRedressing.pdf"
@@ -44,7 +46,7 @@ translation_of: ""
 
 # UI Redressing: Attacks and Countermeasures Revisited
 
-**UI Redressing: Attacks and Countermeasures Revisited** - Author not stated, Publisher not stated.
+**UI Redressing: Attacks and Countermeasures Revisited** - Marcus Niemietz, ui-redressing.mniemietz.de.
 
 - Published: date not stated
 - Original: <http://ui-redressing.mniemietz.de/>

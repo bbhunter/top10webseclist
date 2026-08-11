@@ -12,11 +12,13 @@ sources:
   - id: original
     resource: "https://www.blackhat.com/presentations/bh-europe-07/Sotirov/Whitepaper/bh-eu-07-sotirov-WP.pdf"
     title: Heap Feng Shui in JavaScript
+    author: Alexander Sotirov
 also_at: []
-authors: []
+authors:
+  - Alexander Sotirov
 canonical_url: ""
 cited_by:
-  - "2007.md:103"
+  - "2007.md:99"
 commit: ""
 content_sha256: 93ac0b6487f7513e8cd446e0899825bddb0a537e14befd69ec0fcf97a1d5e30a
 depth: full
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Heap Feng Shui in JavaScript
 
-**Heap Feng Shui in JavaScript** - Author not stated, Publisher not stated.
+**Heap Feng Shui in JavaScript** - Alexander Sotirov, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/presentations/bh-europe-07/Sotirov/Whitepaper/bh-eu-07-sotirov-WP.pdf>

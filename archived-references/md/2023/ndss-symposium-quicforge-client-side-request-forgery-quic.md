@@ -12,13 +12,16 @@ sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss-paper/quicforge-client-side-request-forgery-in-quic/"
     title: "QUICforge: Client-side Request Forgery in QUIC"
+    author: Yuri Gbur, Florian Tschorsch
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2023-72-paper.pdf"
   - "https://www.ndss-symposium.org/wp-content/uploads/2024/09/2023-72-slides.pdf"
-authors: []
+authors:
+  - Yuri Gbur
+  - Florian Tschorsch
 canonical_url: ""
 cited_by:
-  - "2023.md:93"
+  - "2023.md:94"
 commit: ""
 content_sha256: 6f2e46d964a1d81d858c39deca3387ae2571558a15db0be20b29144a310fe07b
 depth: full
@@ -43,7 +46,7 @@ translation_of: ""
 
 # QUICforge: Client-side Request Forgery in QUIC
 
-**QUICforge: Client-side Request Forgery in QUIC** - Author not stated, NDSS Symposium.
+**QUICforge: Client-side Request Forgery in QUIC** - Yuri Gbur, Florian Tschorsch, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss-paper/quicforge-client-side-request-forgery-in-quic/>

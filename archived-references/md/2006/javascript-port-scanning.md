@@ -12,8 +12,11 @@ sources:
   - id: original
     resource: "https://www.whitehatsec.com/home/resources/presentations/files/javascript_malware.pdf"
     title: JavaScript Port Scanning
+    author: Jeremiah Grossman, T.C. Niedzialkowski
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
+  - T.C. Niedzialkowski
 canonical_url: ""
 cited_by:
   - "2006.md:5"
@@ -42,7 +45,7 @@ translation_of: ""
 
 # JavaScript Port Scanning
 
-**JavaScript Port Scanning** - Author not stated, Publisher not stated.
+**JavaScript Port Scanning** - Jeremiah Grossman, T.C. Niedzialkowski, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.whitehatsec.com/home/resources/presentations/files/javascript_malware.pdf>

@@ -12,11 +12,17 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenix-security-11/presentation/dark-clouds-horizon-using-cloud-storage-attack-vector-and"
     title: "Dark Clouds on the Horizon: Using Cloud Storage as Attack Vector and Online Slack Space"
+    author: Martin Mulazzani, Sebastian Schrittwieser, Manuel Leithner, Markus Huber, Edgar Weippl
 also_at: []
-authors: []
+authors:
+  - Martin Mulazzani
+  - Sebastian Schrittwieser
+  - Manuel Leithner
+  - Markus Huber
+  - Edgar Weippl
 canonical_url: ""
 cited_by:
-  - "2011.md:73"
+  - "2011.md:74"
 commit: ""
 content_sha256: 8b3ec9846ae89c66ace4d6d5c7d85602c9cb33f134d4a32508d9cc7cd4288c75
 depth: full
@@ -41,7 +47,7 @@ translation_of: ""
 
 # Dark Clouds on the Horizon: Using Cloud Storage as Attack Vector and Online Slack Space
 
-**Dark Clouds on the Horizon: Using Cloud Storage as Attack Vector and Online Slack Space** - Author not stated, usenix.org.
+**Dark Clouds on the Horizon: Using Cloud Storage as Attack Vector and Online Slack Space** - Martin Mulazzani, Sebastian Schrittwieser, Manuel Leithner, Markus Huber, Edgar Weippl, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenix-security-11/presentation/dark-clouds-horizon-using-cloud-storage-attack-vector-and>

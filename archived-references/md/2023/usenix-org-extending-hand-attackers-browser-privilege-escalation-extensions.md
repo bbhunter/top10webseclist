@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/kim-young-min"
     title: "Extending a Hand to Attackers: Browser Privilege Escalation Attacks via Extensions"
+    author: Young Min Kim, Byoungyoung Lee
 also_at: []
-authors: []
+authors:
+  - Young Min Kim
+  - Byoungyoung Lee
 canonical_url: ""
 cited_by:
-  - "2023.md:97"
+  - "2023.md:98"
 commit: ""
 content_sha256: 5c382338272d253d355eca02135c93ed5bf98cd109c2a42c85ece52db1ec8fec
 depth: full
@@ -41,7 +44,7 @@ translation_of: ""
 
 # Extending a Hand to Attackers: Browser Privilege Escalation Attacks via Extensions
 
-**Extending a Hand to Attackers: Browser Privilege Escalation Attacks via Extensions** - Author not stated, usenix.org.
+**Extending a Hand to Attackers: Browser Privilege Escalation Attacks via Extensions** - Young Min Kim, Byoungyoung Lee, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity23/presentation/kim-young-min>

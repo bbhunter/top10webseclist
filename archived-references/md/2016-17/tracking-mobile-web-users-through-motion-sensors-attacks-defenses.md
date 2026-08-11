@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/tracking-mobile-web-users-through-motion-sensors-attacks-defenses.pdf"
     title: "Tracking Mobile Web Users Through Motion Sensors: Attacks and Defenses"
+    author: Anupam Das, Nikita Borisov, Matthew Caesar
 also_at: []
-authors: []
+authors:
+  - Anupam Das
+  - Nikita Borisov
+  - Matthew Caesar
 canonical_url: ""
 cited_by:
-  - "2016-17.md:82"
+  - "2016-17.md:77"
 commit: ""
 content_sha256: 8fb1cd51363928322a91e9f7a839089cf8b148b27dcc45b009db4630e3655f24
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # Tracking Mobile Web Users Through Motion Sensors: Attacks and Defenses
 
-**Tracking Mobile Web Users Through Motion Sensors: Attacks and Defenses** - Author not stated, Publisher not stated.
+**Tracking Mobile Web Users Through Motion Sensors: Attacks and Defenses** - Anupam Das, Nikita Borisov, Matthew Caesar, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/tracking-mobile-web-users-through-motion-sensors-attacks-defenses.pdf>

@@ -12,8 +12,13 @@ sources:
   - id: original
     resource: "https://github.com/x41sec/browser-security-whitepaper-2017/blob/master/X41-Browser-Security-White-Paper.pdf"
     title: X41 Browser Security Whitepaper
+    author: Markus Vervier, Michele Orrù, Berend-Jan Wever, Eric Sesterhenn
 also_at: []
-authors: []
+authors:
+  - Markus Vervier
+  - Michele Orrù
+  - Berend-Jan Wever
+  - Eric Sesterhenn
 canonical_url: ""
 cited_by:
   - "2016-17.md:47"
@@ -41,7 +46,7 @@ translation_of: ""
 
 # X41 Browser Security Whitepaper
 
-**X41 Browser Security Whitepaper** - Author not stated, Publisher not stated.
+**X41 Browser Security Whitepaper** - Markus Vervier, Michele Orrù, Berend-Jan Wever, Eric Sesterhenn, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://github.com/x41sec/browser-security-whitepaper-2017/blob/master/X41-Browser-Security-White-Paper.pdf>
@@ -49,7 +54,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

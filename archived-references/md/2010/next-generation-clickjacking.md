@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.cs.cornell.edu/~shmat/courses/library/nextgenclickjack.pdf"
     title: Next Generation Clickjacking
+    author: Paul Stone
 also_at: []
-authors: []
+authors:
+  - Paul Stone
 canonical_url: ""
 cited_by:
   - "2010.md:53"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Next Generation Clickjacking
 
-**Next Generation Clickjacking** - Author not stated, Publisher not stated.
+**Next Generation Clickjacking** - Paul Stone, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.cs.cornell.edu/~shmat/courses/library/nextgenclickjack.pdf>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

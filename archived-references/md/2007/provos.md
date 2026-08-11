@@ -12,11 +12,17 @@ sources:
   - id: original
     resource: "https://www.usenix.org/legacy/event/hotbots07/tech/full_papers/provos/provos.pdf"
     title: provos
+    author: Niels Provos, Dean McNamee, Panayiotis Mavrommatis, Ke Wang, Nagendra Modadugu
 also_at: []
-authors: []
+authors:
+  - Niels Provos
+  - Dean McNamee
+  - Panayiotis Mavrommatis
+  - Ke Wang
+  - Nagendra Modadugu
 canonical_url: ""
 cited_by:
-  - "2007.md:107"
+  - "2007.md:103"
 commit: ""
 content_sha256: c7cb2b0f780e321dc266d29ecc27d4de57da5fbca20c5abe61088039f3826d71
 depth: full
@@ -41,7 +47,7 @@ translation_of: ""
 
 # provos
 
-**provos** - Author not stated, Publisher not stated.
+**provos** - Niels Provos, Dean McNamee, Panayiotis Mavrommatis, Ke Wang, Nagendra Modadugu, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/legacy/event/hotbots07/tech/full_papers/provos/provos.pdf>

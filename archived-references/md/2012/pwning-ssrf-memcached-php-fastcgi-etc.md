@@ -12,8 +12,12 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://media.blackhat.com/bh-us-12/Briefings/Polyakov/BH_US_12_Polyakov_SSRF_Business_WP.pdf"
     title: Pwning via SSRF (memcached, php-fastcgi, etc)
+    author: Alexander Polyakov, Dmitry Chastukhin, Alexey Tyurin
 also_at: []
-authors: []
+authors:
+  - Alexander Polyakov
+  - Dmitry Chastukhin
+  - Alexey Tyurin
 canonical_url: ""
 cited_by:
   - "2012.md:6"
@@ -41,7 +45,7 @@ translation_of: ""
 
 # Pwning via SSRF (memcached, php-fastcgi, etc)
 
-**Pwning via SSRF (memcached, php-fastcgi, etc)** - Author not stated, Publisher not stated.
+**Pwning via SSRF (memcached, php-fastcgi, etc)** - Alexander Polyakov, Dmitry Chastukhin, Alexey Tyurin, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://media.blackhat.com/bh-us-12/Briefings/Polyakov/BH_US_12_Polyakov_SSRF_Business_WP.pdf>
@@ -49,7 +53,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

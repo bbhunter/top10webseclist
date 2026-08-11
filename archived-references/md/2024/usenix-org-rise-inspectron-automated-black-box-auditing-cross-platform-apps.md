@@ -12,11 +12,16 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/ali"
     title: "Rise of Inspectron: Automated Black-box Auditing of Cross-platform Electron Apps"
+    author: Mir Masood Ali, Mohammad Ghasemisharif, Chris Kanich, Jason Polakis
 also_at: []
-authors: []
+authors:
+  - Mir Masood Ali
+  - Mohammad Ghasemisharif
+  - Chris Kanich
+  - Jason Polakis
 canonical_url: ""
 cited_by:
-  - "2024.md:150"
+  - "2024.md:151"
 commit: ""
 content_sha256: ed83085d8bf1ddefb465553c5ddcd49eee18b012913c15a403e2647f5815d296
 depth: full
@@ -41,7 +46,7 @@ translation_of: ""
 
 # Rise of Inspectron: Automated Black-box Auditing of Cross-platform Electron Apps
 
-**Rise of Inspectron: Automated Black-box Auditing of Cross-platform Electron Apps** - Author not stated, usenix.org.
+**Rise of Inspectron: Automated Black-box Auditing of Cross-platform Electron Apps** - Mir Masood Ali, Mohammad Ghasemisharif, Chris Kanich, Jason Polakis, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity24/presentation/ali>

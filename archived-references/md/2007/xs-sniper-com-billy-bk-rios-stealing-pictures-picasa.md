@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://xs-sniper.com/blog/2007/09/24/stealing-pictures-with-picasa/"
     title: Billy (BK) Rios
+    author: Nate McFeters
   - id: capture
     resource: "https://web.archive.org/web/20080307145533/http://xs-sniper.com/blog/2007/09/24/stealing-pictures-with-picasa/"
 also_at: []
-authors: []
+authors:
+  - Nate McFeters
 canonical_url: ""
 cited_by:
   - "2007.md:18"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Billy (BK) Rios
 
-**Billy (BK) Rios** - Author not stated, xs-sniper.com.
+**Billy (BK) Rios** - Nate McFeters, xs-sniper.com.
 
 - Published: date not stated
 - Original: <http://xs-sniper.com/blog/2007/09/24/stealing-pictures-with-picasa/>

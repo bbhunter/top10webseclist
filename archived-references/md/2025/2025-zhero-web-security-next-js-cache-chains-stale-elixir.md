@@ -12,9 +12,11 @@ sources:
   - id: original
     resource: "https://zhero-web-sec.github.io/research-and-things/nextjs-cache-and-chains-the-stale-elixir"
     title: "Next.js, cache, and chains: the stale elixir"
+    author: zhero
     last_modified: 2025-01-21
 also_at: []
-authors: []
+authors:
+  - zhero
 canonical_url: ""
 cited_by:
   - "2025.md:11"
@@ -42,7 +44,7 @@ translation_of: ""
 
 # Next.js, cache, and chains: the stale elixir
 
-**Next.js, cache, and chains: the stale elixir** - Author not stated, zhero_web_security.
+**Next.js, cache, and chains: the stale elixir** - zhero, zhero_web_security.
 
 - Published: 2025-01-21
 - Original: <https://zhero-web-sec.github.io/research-and-things/nextjs-cache-and-chains-the-stale-elixir>

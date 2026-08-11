@@ -12,11 +12,21 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/kwong"
     title: "Checking Passwords on Leaky Computers: A Side Channel Analysis of Chrome's Password Leak Detect Protocol"
+    author: Andrew Kwong, Walter Wang, Jason Kim, Jonathan Berger, Daniel Genkin, Eyal Ronen, Hovav Shacham, Riad Wahby, Yuval Yarom
 also_at: []
-authors: []
+authors:
+  - Andrew Kwong
+  - Walter Wang
+  - Jason Kim
+  - Jonathan Berger
+  - Daniel Genkin
+  - Eyal Ronen
+  - Hovav Shacham
+  - Riad Wahby
+  - Yuval Yarom
 canonical_url: ""
 cited_by:
-  - "2023.md:95"
+  - "2023.md:96"
 commit: ""
 content_sha256: 20b010cf73128653c4d18a140e07934b1203e69a5ff4e0d74443d360c70d55b8
 depth: full
@@ -41,7 +51,7 @@ translation_of: ""
 
 # Checking Passwords on Leaky Computers: A Side Channel Analysis of Chrome's Password Leak Detect Protocol
 
-**Checking Passwords on Leaky Computers: A Side Channel Analysis of Chrome's Password Leak Detect Protocol** - Author not stated, usenix.org.
+**Checking Passwords on Leaky Computers: A Side Channel Analysis of Chrome's Password Leak Detect Protocol** - Andrew Kwong, Walter Wang, Jason Kim, Jonathan Berger, Daniel Genkin, Eyal Ronen, Hovav Shacham, Riad Wahby, Yuval Yarom, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity23/presentation/kwong>

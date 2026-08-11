@@ -12,11 +12,13 @@ sources:
   - id: original
     resource: "https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails%20-%20LGMT%20v2.pdf"
     title: "LGTM: Bypassing an LLM Build Gate When Prompt Injection Fails"
+    author: Aviv Donenfeld
 also_at: []
-authors: []
+authors:
+  - Aviv Donenfeld
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:108"
+  - "2026-ai.md:85"
 commit: ""
 content_sha256: c5fa8e2e40f6937ec28efe205ee16f746f60071510f564b4b9a724f16e431d54
 depth: full
@@ -41,7 +43,7 @@ translation_of: ""
 
 # LGTM: Bypassing an LLM Build Gate When Prompt Injection Fails
 
-**LGTM: Bypassing an LLM Build Gate When Prompt Injection Fails** - Author not stated, Publisher not stated.
+**LGTM: Bypassing an LLM Build Gate When Prompt Injection Fails** - Aviv Donenfeld, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails%20-%20LGMT%20v2.pdf>

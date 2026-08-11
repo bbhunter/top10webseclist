@@ -6,18 +6,20 @@ tags: [article, webseclist-reference, slides]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:21:55+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://slid.es/mscasharjaved/trusted-friend-attack"
     title: "trusted friend attack: by Ashar Javed"
+    author: Ashar Javed
   - id: canonical
     resource: "http://slid.es/mscasharjaved/trusted-friend-attack"
   - id: capture
     resource: "https://web.archive.org/web/20131119232450/http://slid.es/mscasharjaved/trusted-friend-attack"
 also_at: []
-authors: []
+authors:
+  - Ashar Javed
 canonical_url: "http://slid.es/mscasharjaved/trusted-friend-attack"
 cited_by:
   - "2013.md:35"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # trusted friend attack: by Ashar Javed
 
-**trusted friend attack: by Ashar Javed** - Author not stated, Slides.
+**trusted friend attack: by Ashar Javed** - Ashar Javed, Slides.
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://slid.es/mscasharjaved/trusted-friend-attack>

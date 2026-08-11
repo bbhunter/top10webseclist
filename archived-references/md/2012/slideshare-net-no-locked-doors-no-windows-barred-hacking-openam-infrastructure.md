@@ -12,12 +12,15 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11"
     title: "No locked doors, no windows barred: hacking OpenAM infrastructure"
+    author: George Noseevich, Andrew Petukhov
   - id: canonical
     resource: "https://web.archive.org/web/20150110195738/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11"
 also_at: []
-authors: []
+authors:
+  - George Noseevich
+  - Andrew Petukhov
 canonical_url: "https://web.archive.org/web/20150110195738/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11"
 cited_by:
   - "2012.md:53"
@@ -45,7 +48,7 @@ translation_of: ""
 
 # No locked doors, no windows barred: hacking OpenAM infrastructure
 
-**No locked doors, no windows barred: hacking OpenAM infrastructure** - Author not stated, slideshare.net.
+**No locked doors, no windows barred: hacking OpenAM infrastructure** - George Noseevich, Andrew Petukhov, slideshare.net.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11>

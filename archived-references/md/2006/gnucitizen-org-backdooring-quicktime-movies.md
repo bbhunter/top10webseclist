@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/backdooring-quicktime-movies/"
     title: Backdooring QuickTime Movies
+    author: pdp
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: ""
 cited_by:
   - "2006.md:9"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Backdooring QuickTime Movies
 
-**Backdooring QuickTime Movies** - Author not stated, gnucitizen.org.
+**Backdooring QuickTime Movies** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/backdooring-quicktime-movies/>

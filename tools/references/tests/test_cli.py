@@ -256,6 +256,33 @@ class RecoverySelectorTests(unittest.TestCase):
         self.assertEqual(["Alex Example"], refs.attribution_decision(
             "https://one.example/a", entry, {}, readings)["authors"])
 
+    def test_a_published_author_list_is_read_back_whole(self):
+        """Reading only the tail of the `authors:` line reported every
+        multi-name file as having none, so the rewrite kept re-attempting all
+        1,085 of them and never settled."""
+        many = 'slug: x\nauthors:\n  - Ada Lerner\n  - "Tadayoshi Kohno"\npublisher: x\n'
+        self.assertEqual(["Ada Lerner", "Tadayoshi Kohno"], refs._published_authors(many))
+        self.assertEqual(["Solo Name"], refs._published_authors("authors:\n  - Solo Name\nx: 1\n"))
+        self.assertEqual([], refs._published_authors("authors: []\n"))
+        self.assertEqual([], refs._published_authors("no frontmatter here"))
+
+    def test_the_body_survives_a_byline_rewrite(self):
+        from refslib import render as render_module
+        text = ("---\nslug: x\n---\n\n# T\n\n" + render_module.BANNER
+                + "\nThe source's own words.\n")
+        self.assertEqual("The source's own words.", refs._published_body(text))
+        self.assertIsNone(refs._published_body("nothing to recover"))
+
+    def test_only_renderer_owned_lines_may_differ_on_rebuild(self):
+        """A rebuild may refresh what the renderer owns and nothing else. A
+        dropped field - a lost `snapshot`, a vanished `also_at` - must still
+        refuse, which is what caught a record rebuilt without `cited_by`."""
+        published = 'slug: x\nstatus: stable\ncited_by:\n  - "2011.md:49"\nsnapshot: "s"\n'
+        refreshed = 'slug: x\nstatus: deprecated\ncited_by:\n  - "2011.md:46"\nsnapshot: "s"\n'
+        self.assertTrue(refs._same_but_for_generated(refreshed, published))
+        self.assertFalse(refs._same_but_for_generated(
+            'slug: x\nstatus: stable\ncited_by:\n  - "2011.md:49"\n', published))
+
     def test_stale_is_its_own_authorisation_to_reprint(self):
         """`--stale` alone used to select the right references and then reprint
         none of them, because the exists-guard needed `--force` as well. It

@@ -12,8 +12,11 @@ sources:
   - id: original
     resource: "https://www.wokb.cz/Hacking%20technique/Abusing%20Internet%20Explorer%208%27s%20XSS%20Filters.pdf"
     title: "Abusing Internet Explorer 8's XSS Filters"
+    author: Eduardo Vela Nava, David Lindsay
 also_at: []
-authors: []
+authors:
+  - Eduardo Vela Nava
+  - David Lindsay
 canonical_url: ""
 cited_by:
   - "2010.md:10"
@@ -41,7 +44,7 @@ translation_of: ""
 
 # Abusing Internet Explorer 8's XSS Filters
 
-**Abusing Internet Explorer 8's XSS Filters** - Author not stated, Publisher not stated.
+**Abusing Internet Explorer 8's XSS Filters** - Eduardo Vela Nava, David Lindsay, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.wokb.cz/Hacking%20technique/Abusing%20Internet%20Explorer%208%27s%20XSS%20Filters.pdf>
@@ -49,7 +52,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

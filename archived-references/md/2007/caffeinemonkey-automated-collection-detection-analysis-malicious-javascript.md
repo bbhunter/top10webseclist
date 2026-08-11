@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://blackhat.com/presentations/bh-usa-07/Feinstein_and_Peck/Presentation/bh-usa-07-feinstein_and_peck.pdf"
     title: "CaffeineMonkey: Automated Collection, Detection and Analysis of Malicious JavaScript"
+    author: Ben Feinstein, Daniel Peck
 also_at: []
-authors: []
+authors:
+  - Ben Feinstein
+  - Daniel Peck
 canonical_url: ""
 cited_by:
-  - "2007.md:108"
+  - "2007.md:104"
 commit: ""
 content_sha256: b72023f4366525eef3862a8ced4116c2518d5682bf377b167379af672a0d5991
 depth: full
@@ -41,7 +44,7 @@ translation_of: ""
 
 # CaffeineMonkey: Automated Collection, Detection and Analysis of Malicious JavaScript
 
-**CaffeineMonkey: Automated Collection, Detection and Analysis of Malicious JavaScript** - Author not stated, Publisher not stated.
+**CaffeineMonkey: Automated Collection, Detection and Analysis of Malicious JavaScript** - Ben Feinstein, Daniel Peck, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://blackhat.com/presentations/bh-usa-07/Feinstein_and_Peck/Presentation/bh-usa-07-feinstein_and_peck.pdf>

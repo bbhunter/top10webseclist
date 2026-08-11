@@ -12,8 +12,11 @@ sources:
   - id: original
     resource: "https://i.blackhat.com/USA-20/Wednesday/us-20-Munoz-Room-For-Escape-Scribbling-Outside-The-Lines-Of-Template-Security-wp.pdf"
     title: "Room for Escape: Scribbling Outside the Lines of Template Security"
+    author: Oleksandr Mirosh, Alvaro Muñoz
 also_at: []
-authors: []
+authors:
+  - Oleksandr Mirosh
+  - Alvaro Muñoz
 canonical_url: ""
 cited_by:
   - "2020.md:20"
@@ -41,7 +44,7 @@ translation_of: ""
 
 # Room for Escape: Scribbling Outside the Lines of Template Security
 
-**Room for Escape: Scribbling Outside the Lines of Template Security** - Author not stated, Publisher not stated.
+**Room for Escape: Scribbling Outside the Lines of Template Security** - Oleksandr Mirosh, Alvaro Muñoz, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/USA-20/Wednesday/us-20-Munoz-Room-For-Escape-Scribbling-Outside-The-Lines-Of-Template-Security-wp.pdf>
@@ -49,7 +52,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

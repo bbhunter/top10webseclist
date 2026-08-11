@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Arnaboldi-Abusing-XSLT-For-Practical-Attacks-wp.pdf"
     title: Abusing XSLT for Practical Attacks
+    author: Fernando Arnaboldi
 also_at: []
-authors: []
+authors:
+  - Fernando Arnaboldi
 canonical_url: ""
 cited_by:
   - "2015.md:12"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Abusing XSLT for Practical Attacks
 
-**Abusing XSLT for Practical Attacks** - Author not stated, Publisher not stated.
+**Abusing XSLT for Practical Attacks** - Fernando Arnaboldi, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/docs/us-15/materials/us-15-Arnaboldi-Abusing-XSLT-For-Practical-Attacks-wp.pdf>

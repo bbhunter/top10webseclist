@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://docs.google.com/presentation/d/1N9Ygrpg0Z-1GFDhLMiG3jJV6B_yGqBk8tuRWO1ZicV8/edit#slide=id.p"
     title: Attacking Secondary Contexts in Web Applications
+    author: Sam Curry
 also_at: []
-authors: []
+authors:
+  - Sam Curry
 canonical_url: ""
 cited_by:
   - "2020.md:7"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Attacking Secondary Contexts in Web Applications
 
-**Attacking Secondary Contexts in Web Applications** - Author not stated, Publisher not stated.
+**Attacking Secondary Contexts in Web Applications** - Sam Curry, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://docs.google.com/presentation/d/1N9Ygrpg0Z-1GFDhLMiG3jJV6B_yGqBk8tuRWO1ZicV8/edit#slide=id.p>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

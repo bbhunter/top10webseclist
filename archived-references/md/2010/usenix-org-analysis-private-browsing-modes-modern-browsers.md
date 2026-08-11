@@ -12,11 +12,16 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity10/analysis-private-browsing-modes-modern-browsers"
     title: An Analysis of Private Browsing Modes in Modern Browsers
+    author: Gaurav Aggarwal, Elie Bursztein, Collin Jackson, Dan Boneh
 also_at: []
-authors: []
+authors:
+  - Gaurav Aggarwal
+  - Elie Bursztein
+  - Collin Jackson
+  - Dan Boneh
 canonical_url: ""
 cited_by:
-  - "2010.md:94"
+  - "2010.md:95"
 commit: ""
 content_sha256: 567f725f9e655fa5d802a7ecb63e9a3bb08f639d38b8456e1df823c56c1bb6b2
 depth: full
@@ -41,7 +46,7 @@ translation_of: ""
 
 # An Analysis of Private Browsing Modes in Modern Browsers
 
-**An Analysis of Private Browsing Modes in Modern Browsers** - Author not stated, usenix.org.
+**An Analysis of Private Browsing Modes in Modern Browsers** - Gaurav Aggarwal, Elie Bursztein, Collin Jackson, Dan Boneh, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity10/analysis-private-browsing-modes-modern-browsers>

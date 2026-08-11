@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://dl.acm.org/doi/10.1145/2810103.2813688"
     title: Cross-Site Search Attacks
+    author: Nethanel Gelernter, Amir Herzberg
 also_at: []
-authors: []
+authors:
+  - Nethanel Gelernter
+  - Amir Herzberg
 canonical_url: ""
 cited_by:
-  - "2015.md:71"
+  - "2015.md:68"
 commit: ""
 content_sha256: 39f3fffc35929fc55ecb4814150b427e678dce2dffd3c08bd7cecd70f4c24a46
 depth: full
@@ -41,7 +44,7 @@ translation_of: ""
 
 # Cross-Site Search Attacks
 
-**Cross-Site Search Attacks** - Author not stated, Publisher not stated.
+**Cross-Site Search Attacks** - Nethanel Gelernter, Amir Herzberg, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://dl.acm.org/doi/10.1145/2810103.2813688>

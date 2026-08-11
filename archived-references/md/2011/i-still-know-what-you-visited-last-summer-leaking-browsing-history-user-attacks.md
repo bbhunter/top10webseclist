@@ -12,11 +12,16 @@ sources:
   - id: original
     resource: "https://research.owlfolio.org/pubs/2011-i-still-know.pdf"
     title: "I Still Know What You Visited Last Summer: Leaking Browsing History via User Interaction and Side Channel Attacks"
+    author: Zachary Weinberg, Eric Y. Chen, Pavithra Ramesh Jayaraman, Collin Jackson
 also_at: []
-authors: []
+authors:
+  - Zachary Weinberg
+  - Eric Y. Chen
+  - Pavithra Ramesh Jayaraman
+  - Collin Jackson
 canonical_url: ""
 cited_by:
-  - "2011.md:83"
+  - "2011.md:79"
 commit: ""
 content_sha256: 9fc90e9be6bbe05db6df1a821b4f43019e997192fee35853ca53466bc899892f
 depth: full
@@ -41,7 +46,7 @@ translation_of: ""
 
 # I Still Know What You Visited Last Summer: Leaking Browsing History via User Interaction and Side Channel Attacks
 
-**I Still Know What You Visited Last Summer: Leaking Browsing History via User Interaction and Side Channel Attacks** - Author not stated, Publisher not stated.
+**I Still Know What You Visited Last Summer: Leaking Browsing History via User Interaction and Side Channel Attacks** - Zachary Weinberg, Eric Y. Chen, Pavithra Ramesh Jayaraman, Collin Jackson, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://research.owlfolio.org/pubs/2011-i-still-know.pdf>

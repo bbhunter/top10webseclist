@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/https://github.com/OpenSecurityResearch/clipcaptcha"
     title: OpenSecurityResearch/clipcaptcha
+    author: Gursev Singh Kalra
   - id: canonical
     resource: "https://web.archive.org/web/20180611034231/https://github.com/OpenSecurityResearch/clipcaptcha"
   - id: capture
     resource: "https://web.archive.org/web/20150110195825/https://github.com/OpenSecurityResearch/clipcaptcha"
 also_at: []
-authors: []
+authors:
+  - Gursev Singh Kalra
 canonical_url: "https://web.archive.org/web/20180611034231/https://github.com/OpenSecurityResearch/clipcaptcha"
 cited_by:
   - "2012.md:58"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # OpenSecurityResearch/clipcaptcha
 
-**OpenSecurityResearch/clipcaptcha** - Author not stated, GitHub.
+**OpenSecurityResearch/clipcaptcha** - Gursev Singh Kalra, GitHub.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/https://github.com/OpenSecurityResearch/clipcaptcha>

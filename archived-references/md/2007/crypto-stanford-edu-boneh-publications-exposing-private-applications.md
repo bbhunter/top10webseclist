@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://crypto.stanford.edu/~dabo/pubs/abstracts/webtiming.html"
     title: "Boneh Publications: Exposing private information by timing web applications"
+    author: Andrew Bortz, Dan Boneh, Palash Nandy
 also_at: []
-authors: []
+authors:
+  - Andrew Bortz
+  - Dan Boneh
+  - Palash Nandy
 canonical_url: ""
 cited_by:
-  - "2007.md:101"
+  - "2007.md:98"
 commit: ""
 content_sha256: c5da2c0d35511737df4f21ba8e8008f8defd5ad41df513cb7dabf4af0d7c64a0
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # Boneh Publications: Exposing private information by timing web applications
 
-**Boneh Publications: Exposing private information by timing web applications** - Author not stated, crypto.stanford.edu.
+**Boneh Publications: Exposing private information by timing web applications** - Andrew Bortz, Dan Boneh, Palash Nandy, crypto.stanford.edu.
 
 - Published: date not stated
 - Original: <https://crypto.stanford.edu/~dabo/pubs/abstracts/webtiming.html>
@@ -49,7 +53,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

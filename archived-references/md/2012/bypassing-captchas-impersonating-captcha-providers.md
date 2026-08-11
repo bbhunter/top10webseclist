@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://www.mcafee.com/us/resources/white-papers/foundstone/wp-bypassing-captchas.pdf"
     title: Bypassing CAPTCHAs by Impersonating CAPTCHA Providers
+    author: Gursev Singh Kalra
 also_at: []
-authors: []
+authors:
+  - Gursev Singh Kalra
 canonical_url: ""
 cited_by:
   - "2012.md:58"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Bypassing CAPTCHAs by Impersonating CAPTCHA Providers
 
-**Bypassing CAPTCHAs by Impersonating CAPTCHA Providers** - Author not stated, Publisher not stated.
+**Bypassing CAPTCHAs by Impersonating CAPTCHA Providers** - Gursev Singh Kalra, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://www.mcafee.com/us/resources/white-papers/foundstone/wp-bypassing-captchas.pdf>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

@@ -12,11 +12,17 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok"
     title: "STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets"
+    author: Sven Hebrok, Tim Leonhard Storm, Felix Matthias Cramer, Maximilian Radoy, Juraj Somorovsky
 also_at: []
-authors: []
+authors:
+  - Sven Hebrok
+  - Tim Leonhard Storm
+  - Felix Matthias Cramer
+  - Maximilian Radoy
+  - Juraj Somorovsky
 canonical_url: ""
 cited_by:
-  - "2025.md:84"
+  - "2025.md:85"
 commit: ""
 content_sha256: 2de99564c0d33c22b037346c36a84dfa79d7df56fcf669159877d9865df35309
 depth: full
@@ -41,7 +47,7 @@ translation_of: ""
 
 # STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets
 
-**STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets** - Author not stated, usenix.org.
+**STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets** - Sven Hebrok, Tim Leonhard Storm, Felix Matthias Cramer, Maximilian Radoy, Juraj Somorovsky, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok>

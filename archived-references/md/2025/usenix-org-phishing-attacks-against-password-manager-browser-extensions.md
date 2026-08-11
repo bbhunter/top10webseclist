@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity25/presentation/anliker"
     title: Phishing Attacks against Password Manager Browser Extensions
+    author: Claudio Anliker, Daniele Lain, Srdjan Capkun
 also_at: []
-authors: []
+authors:
+  - Claudio Anliker
+  - Daniele Lain
+  - Srdjan Capkun
 canonical_url: ""
 cited_by:
-  - "2025.md:94"
+  - "2025.md:95"
 commit: ""
 content_sha256: 7c8fe01f3a1b9e22a45630bf56e616ee7b58cdbd083d6b5d02a005e2e6264f24
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # Phishing Attacks against Password Manager Browser Extensions
 
-**Phishing Attacks against Password Manager Browser Extensions** - Author not stated, usenix.org.
+**Phishing Attacks against Password Manager Browser Extensions** - Claudio Anliker, Daniele Lain, Srdjan Capkun, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity25/presentation/anliker>

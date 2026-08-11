@@ -12,11 +12,16 @@ sources:
   - id: original
     resource: "https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-lekies.pdf"
     title: The Unexpected Dangers of Dynamic JavaScript
+    author: Sebastian Lekies, Ben Stock, Martin Wentzel, Martin Johns
 also_at: []
-authors: []
+authors:
+  - Sebastian Lekies
+  - Ben Stock
+  - Martin Wentzel
+  - Martin Johns
 canonical_url: ""
 cited_by:
-  - "2015.md:43"
+  - "2015.md:40"
 commit: ""
 content_sha256: 8325d21d57d6c45ff993cb872d0b457ff8e55b8c3d8f4570d8fa99fc8dae6f7a
 depth: full
@@ -41,7 +46,7 @@ translation_of: ""
 
 # The Unexpected Dangers of Dynamic JavaScript
 
-**The Unexpected Dangers of Dynamic JavaScript** - Author not stated, Publisher not stated.
+**The Unexpected Dangers of Dynamic JavaScript** - Sebastian Lekies, Ben Stock, Martin Wentzel, Martin Johns, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-lekies.pdf>
@@ -49,7 +54,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

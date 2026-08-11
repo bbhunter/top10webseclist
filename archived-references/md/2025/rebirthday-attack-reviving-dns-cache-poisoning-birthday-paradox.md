@@ -12,11 +12,24 @@ sources:
   - id: original
     resource: "https://doi.org/10.1145/3719027.3744832"
     title: "RebirthDay Attack: Reviving DNS Cache Poisoning with the Birthday Paradox"
+    author: Xiang Li, Mingming Zhang, Zuyao Xu, Fasheng Miao, Yuqi Qiu, Baojun Liu, Jia Zhang, Xiaofeng Zheng, Haixin Duan, Zheli Liu, Yunhai Zhang, Dunqiu Fan
 also_at: []
-authors: []
+authors:
+  - Xiang Li
+  - Mingming Zhang
+  - Zuyao Xu
+  - Fasheng Miao
+  - Yuqi Qiu
+  - Baojun Liu
+  - Jia Zhang
+  - Xiaofeng Zheng
+  - Haixin Duan
+  - Zheli Liu
+  - Yunhai Zhang
+  - Dunqiu Fan
 canonical_url: ""
 cited_by:
-  - "2025.md:97"
+  - "2025.md:98"
 commit: ""
 content_sha256: d85fcbf03063b53bbd9a1a273425c81ef9e85cc3b422c367608e70d78c3b6fb0
 depth: full
@@ -41,7 +54,7 @@ translation_of: ""
 
 # RebirthDay Attack: Reviving DNS Cache Poisoning with the Birthday Paradox
 
-**RebirthDay Attack: Reviving DNS Cache Poisoning with the Birthday Paradox** - Author not stated, Publisher not stated.
+**RebirthDay Attack: Reviving DNS Cache Poisoning with the Birthday Paradox** - Xiang Li, Mingming Zhang, Zuyao Xu, Fasheng Miao, Yuqi Qiu, Baojun Liu, Jia Zhang, Xiaofeng Zheng, Haixin Duan, Zheli Liu, Yunhai Zhang, Dunqiu Fan, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://doi.org/10.1145/3719027.3744832>

@@ -12,12 +12,15 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
     title: "SSRF attacks and sockets: smorgasbord of vulnerabilities"
+    author: Vladimir Vorontsov, Alexander Golovko
   - id: canonical
     resource: "https://web.archive.org/web/20161108114039/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
 also_at: []
-authors: []
+authors:
+  - Vladimir Vorontsov
+  - Alexander Golovko
 canonical_url: "https://web.archive.org/web/20161108114039/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities"
 cited_by:
   - "2012.md:6"
@@ -45,7 +48,7 @@ translation_of: ""
 
 # SSRF attacks and sockets: smorgasbord of vulnerabilities
 
-**SSRF attacks and sockets: smorgasbord of vulnerabilities** - Author not stated, slideshare.net.
+**SSRF attacks and sockets: smorgasbord of vulnerabilities** - Vladimir Vorontsov, Alexander Golovko, slideshare.net.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://www.slideshare.net/d0znpp/ssrf-attacks-and-sockets-smorgasbord-of-vulnerabilities>

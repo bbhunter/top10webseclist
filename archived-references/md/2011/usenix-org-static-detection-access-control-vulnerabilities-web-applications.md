@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenix-security-11/static-detection-access-control-vulnerabilities-web-applications"
     title: Static Detection of Access Control Vulnerabilities in Web Applications
+    author: Fangqi Sun, Liang Xu, Zhendong Su
 also_at: []
-authors: []
+authors:
+  - Fangqi Sun
+  - Liang Xu
+  - Zhendong Su
 canonical_url: ""
 cited_by:
-  - "2011.md:70"
+  - "2011.md:71"
 commit: ""
 content_sha256: 9f04fa06231d12f68640c0dd8ec336cdcd1ef9fc13488a5abd8435e6556a6bfa
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # Static Detection of Access Control Vulnerabilities in Web Applications
 
-**Static Detection of Access Control Vulnerabilities in Web Applications** - Author not stated, usenix.org.
+**Static Detection of Access Control Vulnerabilities in Web Applications** - Fangqi Sun, Liang Xu, Zhendong Su, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenix-security-11/static-detection-access-control-vulnerabilities-web-applications>

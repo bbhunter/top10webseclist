@@ -12,11 +12,21 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-lei"
     title: Identity Confusion in WebView-based Mobile App-in-app Ecosystems
+    author: Lei Zhang, Zhibo Zhang, Ancong Liu, Yinzhi Cao, Xiaohan Zhang, Yanjun Chen, Yuan Zhang, Guangliang Yang, Min Yang
 also_at: []
-authors: []
+authors:
+  - Lei Zhang
+  - Zhibo Zhang
+  - Ancong Liu
+  - Yinzhi Cao
+  - Xiaohan Zhang
+  - Yanjun Chen
+  - Yuan Zhang
+  - Guangliang Yang
+  - Min Yang
 canonical_url: ""
 cited_by:
-  - "2022.md:67"
+  - "2022.md:68"
 commit: ""
 content_sha256: 735634766f68e27e18c62444a9fd1f34e78929fa1c36064f19f27e565726b27a
 depth: full
@@ -41,7 +51,7 @@ translation_of: ""
 
 # Identity Confusion in WebView-based Mobile App-in-app Ecosystems
 
-**Identity Confusion in WebView-based Mobile App-in-app Ecosystems** - Author not stated, usenix.org.
+**Identity Confusion in WebView-based Mobile App-in-app Ecosystems** - Lei Zhang, Zhibo Zhang, Ancong Liu, Yinzhi Cao, Xiaohan Zhang, Yanjun Chen, Yuan Zhang, Guangliang Yang, Min Yang, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-lei>

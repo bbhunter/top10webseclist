@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20110102233032/http://gregorkopf.de/slides_berlinsides_2010.pdf"
     title: Non-Obvious (Crypto) Bugs by Example
+    author: Gregor Kopf
 also_at: []
-authors: []
+authors:
+  - Gregor Kopf
 canonical_url: ""
 cited_by:
   - "2010.md:73"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Non-Obvious (Crypto) Bugs by Example
 
-**Non-Obvious (Crypto) Bugs by Example** - Author not stated, Publisher not stated.
+**Non-Obvious (Crypto) Bugs by Example** - Gregor Kopf, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20110102233032/http://gregorkopf.de/slides_berlinsides_2010.pdf>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

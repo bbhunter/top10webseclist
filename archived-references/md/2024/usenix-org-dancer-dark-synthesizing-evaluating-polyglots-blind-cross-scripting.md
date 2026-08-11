@@ -12,8 +12,15 @@ sources:
   - id: original
     resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/kirchner"
     title: "Dancer in the Dark: Synthesizing and Evaluating Polyglots for Blind Cross-Site Scripting"
+    author: Robin Kirchner, Jonas Möller, Marius Musch, David Klein, Konrad Rieck, Martin Johns
 also_at: []
-authors: []
+authors:
+  - Robin Kirchner
+  - Jonas Möller
+  - Marius Musch
+  - David Klein
+  - Konrad Rieck
+  - Martin Johns
 canonical_url: ""
 cited_by:
   - "2024.md:112"
@@ -41,7 +48,7 @@ translation_of: ""
 
 # Dancer in the Dark: Synthesizing and Evaluating Polyglots for Blind Cross-Site Scripting
 
-**Dancer in the Dark: Synthesizing and Evaluating Polyglots for Blind Cross-Site Scripting** - Author not stated, usenix.org.
+**Dancer in the Dark: Synthesizing and Evaluating Polyglots for Blind Cross-Site Scripting** - Robin Kirchner, Jonas Möller, Marius Musch, David Klein, Konrad Rieck, Martin Johns, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/conference/usenixsecurity24/presentation/kirchner>

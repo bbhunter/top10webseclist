@@ -6,14 +6,17 @@ tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T15:35:20+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-06
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://revuln.com/files/ReVuln_Steam_Browser_Protocol_Insecurity.pdf"
     title: Steam Browser Protocol Insecurity
+    author: Luigi Auriemma, Donato Ferrante
 also_at: []
-authors: []
+authors:
+  - Luigi Auriemma
+  - Donato Ferrante
 canonical_url: ""
 cited_by:
   - "2012.md:26"
@@ -41,7 +44,7 @@ translation_of: ""
 
 # Steam Browser Protocol Insecurity
 
-**Steam Browser Protocol Insecurity** - Author not stated, Publisher not stated.
+**Steam Browser Protocol Insecurity** - Luigi Auriemma, Donato Ferrante, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://revuln.com/files/ReVuln_Steam_Browser_Protocol_Insecurity.pdf>
@@ -49,7 +52,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/hacking-the-interwebs/"
     title: Hacking The Interwebs
+    author: pdp
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: ""
 cited_by:
   - "2008.md:65"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Hacking The Interwebs
 
-**Hacking The Interwebs** - Author not stated, gnucitizen.org.
+**Hacking The Interwebs** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/hacking-the-interwebs/>

@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.blackhat.com/presentations/bh-europe-09/Guimaraes/Blackhat-europe-09-Damele-SQLInjection-slides.pdf"
     title: Advanced SQL injection to operating system full control
+    author: Bernardo Damele Assumpção Guimarães
 also_at: []
-authors: []
+authors:
+  - Bernardo Damele Assumpção Guimarães
 canonical_url: ""
 cited_by:
   - "2009.md:81"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Advanced SQL injection to operating system full control
 
-**Advanced SQL injection to operating system full control** - Author not stated, Publisher not stated.
+**Advanced SQL injection to operating system full control** - Bernardo Damele Assumpção Guimarães, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/presentations/bh-europe-09/Guimaraes/Blackhat-europe-09-Damele-SQLInjection-slides.pdf>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

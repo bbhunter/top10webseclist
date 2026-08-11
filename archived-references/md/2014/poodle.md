@@ -12,8 +12,12 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/https://www.openssl.org/~bodo/ssl-poodle.pdf"
     title: Poodle
+    author: Bodo Möller, Thai Duong, Krzysztof Kotowicz
 also_at: []
-authors: []
+authors:
+  - Bodo Möller
+  - Thai Duong
+  - Krzysztof Kotowicz
 canonical_url: ""
 cited_by:
   - "2014.md:7"
@@ -41,7 +45,7 @@ translation_of: ""
 
 # Poodle
 
-**Poodle** - Author not stated, Publisher not stated.
+**Poodle** - Bodo Möller, Thai Duong, Krzysztof Kotowicz, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/https://www.openssl.org/~bodo/ssl-poodle.pdf>
@@ -49,7 +53,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

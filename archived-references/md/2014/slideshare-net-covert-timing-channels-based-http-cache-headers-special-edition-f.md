@@ -12,12 +12,16 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://www.slideshare.net/dnkolegov/wh102014"
     title: Covert Timing Channels based on HTTP Cache Headers (Special Edition f…
+    author: Denis Kolegov, Oleg Broslavsky, Nikita Oleksov
   - id: canonical
     resource: "https://web.archive.org/web/20160322224608/http://www.slideshare.net/dnkolegov/wh102014"
   - id: capture
     resource: "https://web.archive.org/web/20160403035045/http://www.slideshare.net/dnkolegov/wh102014"
 also_at: []
-authors: []
+authors:
+  - Denis Kolegov
+  - Oleg Broslavsky
+  - Nikita Oleksov
 canonical_url: "https://web.archive.org/web/20160322224608/http://www.slideshare.net/dnkolegov/wh102014"
 cited_by:
   - "2014.md:14"
@@ -45,7 +49,7 @@ translation_of: ""
 
 # Covert Timing Channels based on HTTP Cache Headers (Special Edition f…
 
-**Covert Timing Channels based on HTTP Cache Headers (Special Edition f…** - Author not stated, slideshare.net.
+**Covert Timing Channels based on HTTP Cache Headers (Special Edition f…** - Denis Kolegov, Oleg Broslavsky, Nikita Oleksov, slideshare.net.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/http://www.slideshare.net/dnkolegov/wh102014>

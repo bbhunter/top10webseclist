@@ -6,19 +6,24 @@ tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T09:39:38+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://roberto.greyhats.it/pubs/dimva08-web.pdf"
     title: On Race Vulnerabilities in Web Applications
+    author: Roberto Paleari, Davide Marrone, Danilo Bruschi, Mattia Monga
   - id: capture
     resource: "https://web.archive.org/web/20200321014451/https://roberto.greyhats.it/pubs/dimva08-web.pdf"
 also_at: []
-authors: []
+authors:
+  - Roberto Paleari
+  - Davide Marrone
+  - Danilo Bruschi
+  - Mattia Monga
 canonical_url: ""
 cited_by:
-  - "2008.md:94"
+  - "2008.md:90"
 commit: ""
 content_sha256: b09145c44ac513f8a008d96f585db546eb14b117bfc0975c3ccec5ee98f37fa5
 depth: full
@@ -43,7 +48,7 @@ translation_of: ""
 
 # On Race Vulnerabilities in Web Applications
 
-**On Race Vulnerabilities in Web Applications** - Author not stated, Publisher not stated.
+**On Race Vulnerabilities in Web Applications** - Roberto Paleari, Davide Marrone, Danilo Bruschi, Mattia Monga, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://roberto.greyhats.it/pubs/dimva08-web.pdf>
@@ -136,7 +141,8 @@ written by developers with low programming or security skills. Nevertheless, web
 applications are valuable targets for attackers, because they often interface with
 a back-end server that handles sensitive information as credit card numbers,
 e-mail addresses, nancial records, etc.
-The most recurrent aws in web-based programs arise from the interaction
+The most recurrent 
+aws in web-based programs arise from the interaction
 between the application and the underlying relational database used as a long-
 term storage medium [5], while others depend on the incorrect handling of trust
 relations between clients and servers [6]. All these types of vulnerabilities can be
@@ -157,7 +163,8 @@ scripts instances being concurrently executed. If scripts are conceived as seque
 tial code and if they use some shared resources (e.g., a database), the parallel
 execution of these multiple instances could provoke races. For example, by ex-
 ploiting such concurrency problems, in our experiments we have been able to by-
-pass brute forcing protections, exploit SMS gateways, circumvent anti-ooding
+pass brute forcing protections, exploit SMS gateways, circumvent anti-
+ooding
 mechanisms and we managed to submit multiple votes on polls where each user
 was constrained to vote just one time.
 We further deep our analysis in order to identify detection strategies for race
@@ -193,7 +200,8 @@ race conditions on web-based programs and the impact of this kind of synchro-
 nization issues on real-world applications. Section 3 introduces our detection
 method together with some implementation details and experimental results.
 Possible countermeasures are analyzed during Section 4, while in Section 5 we
-discuss related work. Finally, Section 6 briey concludes our paper.
+discuss related work. Finally, Section 6 brie
+y concludes our paper.
 2 Race Conditions in Web Applications
 A
 race condition
@@ -675,7 +683,8 @@ expirytime
 <
 1195745465;
 Figure 3.
-An example of two conicting SQL queries with disjoint
+An example of two con
+icting SQL queries with disjoint
 WHERE
 clauses.
 (as well as the
@@ -971,26 +980,31 @@ synchronization primitives. Rather than a real limitation, this is an explicit d
 sign choice. First, at the application level, to the best of our knowledge, PHP does
 not provide portable synchronization primitives that are suitable for our needs.
 For example, PHP supports the
-ock
+
+ock
 ()
 function that implements a portable le
 locking mechanism, that can be used for synchronization and mutual exclusion
 purposes. However, as stated in the PHP manual [16], on some operating systems
-ock
+
+ock
 ()
 is implemented at the process level, and, on multi-threaded web servers
 such as Apache, multiple PHP requests can be executed as multiple threads of
 the
 same
 process, so making
-ock
+
+ock
 ()
 completely ineective. Moreover,
-ock
+
+ock
 ()
 blocks the caller until the le lock is released unless the
 LOCKNB
-ag is speci-
+
+ag is speci-
 ed. However, this option is not currently supported on Windows systems. PHP
 does provide wrappers for the System V IPC functions, but this feature is not
 enabled by default and is not available at all on Windows platforms. Second, at
@@ -1059,7 +1073,8 @@ reported in Table 1. As we already discussed during previous sections, not every
 race condition we found was actually security relevant. However, we believe the
 number of security relevant races we found together with the absence of false
 positives prove the eectiveness of our detection method.
-We can briey summarize some of the vulnerabilities we run into in the
+We can brie
+y summarize some of the vulnerabilities we run into in the
 following categories:
 multiple users
 Almost every application we analyzed was found to be vul-
@@ -1091,8 +1106,10 @@ Web forums and CMSs often implement polls. The appli-
 cations try to assure that each user does not submit multiple votes to the
 same poll, but every program was found to be subject to a race that allows
 a user to vote multiple times by submitting parallel vote requests.
-topic ooding
-phpBB3 and WordPress include an anti-ooding feature that
+topic 
+ooding
+phpBB3 and WordPress include an anti-
+ooding feature that
 forces a user that has just submitted a message to wait a couple of seconds
 before writing another post. Unfortunately, even this control can be easily
 circumvented by an attacker because of a synchronization issue.
@@ -1329,7 +1346,8 @@ conditions via adaptive tracking. Technical report, Microsoft Research (April 20
 
 --- page 18 ---
 
-29. Pozniansky, E., Schuster, A.: Ecient on-the-y data race detection in multi-
+29. Pozniansky, E., Schuster, A.: Ecient on-the-
+y data race detection in multi-
 threaded C++ programs. ACM SIGPLAN Notices
 38
 (10) (October 2003) 179{190

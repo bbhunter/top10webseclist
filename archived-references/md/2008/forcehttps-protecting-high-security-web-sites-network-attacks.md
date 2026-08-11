@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://archives.iw3c2.org/www2008/papers/pdf/p525-jacksonA.pdf"
     title: "ForceHTTPS: Protecting High-Security Web Sites from Network Attacks"
+    author: Collin Jackson, Adam Barth
 also_at: []
-authors: []
+authors:
+  - Collin Jackson
+  - Adam Barth
 canonical_url: ""
 cited_by:
-  - "2008.md:92"
+  - "2008.md:88"
 commit: ""
 content_sha256: 5132d412a70c2a887d5054b01bcc8b9d1f47ec102d3eca55269e760b79460e5a
 depth: full
@@ -41,7 +44,7 @@ translation_of: ""
 
 # ForceHTTPS: Protecting High-Security Web Sites from Network Attacks
 
-**ForceHTTPS: Protecting High-Security Web Sites from Network Attacks** - Author not stated, Publisher not stated.
+**ForceHTTPS: Protecting High-Security Web Sites from Network Attacks** - Collin Jackson, Adam Barth, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://archives.iw3c2.org/www2008/papers/pdf/p525-jacksonA.pdf>
