@@ -128,10 +128,11 @@ class TestAgentDefinitions(unittest.TestCase):
                 fields[key.strip()] = value.strip()
         return fields
 
-    def test_all_four_agents_exist(self):
+    def test_every_review_agent_exists(self):
         names = {path.stem for path in self.agent_files()}
-        self.assertEqual(names, {"reference-validator", "reference-translator",
-                                 "reference-dedup-reviewer", "reference-redirect-reviewer"})
+        self.assertEqual(names, {"reference-validator", "reference-attributor",
+                                 "reference-translator", "reference-dedup-reviewer",
+                                 "reference-redirect-reviewer"})
 
     def test_no_agent_inherits_every_tool(self):
         """An omitted or empty `tools` field inherits everything. Either is the

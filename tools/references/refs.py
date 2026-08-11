@@ -2346,6 +2346,169 @@ def command_index(args):
     return 0
 
 
+def _byline_excerpt(text, head=1600, tail=400):
+    """The part of an archived file a byline would be in, minus our own words.
+
+    A reviewer must see THE SOURCE'S text, not the archive's. Our rendered file
+    opens with frontmatter, a heading and an attribution block that already
+    says "Author not stated" - hand a reader that and they will faithfully
+    report what we already believe, which is the one answer that cannot be new.
+    Everything up to the untrusted-source banner is therefore dropped.
+
+    Links collapse to their text because a byline is a name and a URL is a place;
+    keeping the targets tripled the size of the excerpt and added the one kind of
+    content most worth not putting in front of a language model.
+
+    Head and tail, because a paper names its authors under the title and a
+    whitepaper often names them again in a closing biography.
+    """
+    from refslib import render as render_module
+    body = text.split("\n---\n", 2)[-1] if text.startswith("---\n") else text
+    banner = render_module.BANNER.strip().splitlines()[-1].strip()
+    cut = body.find(banner)
+    if cut >= 0:
+        body = body[cut + len(banner):]
+    body = re.sub(r"!?\[([^\]]*)\]\([^)]*\)", r"\1", body)
+    body = re.sub(r"<https?://[^>]*>", " ", body)
+    body = re.sub(r"\s+", " ", body).strip()
+    if len(body) <= head + tail:
+        return body
+    return body[:head].strip() + " […] " + body[-tail:].strip()
+
+
+def _byline_queue(manifest, root, config, only="", limit=None, recorded=()):
+    """References with no author yet, paired with the text to read it from.
+
+    Skips anything already answered - by extraction, by a maintainer, or by an
+    earlier review - so a run that stops halfway resumes instead of restarting.
+    """
+    from refslib import collections as collections_module
+    archive_dir = root / (config.get("archive_dir") or "archived-references")
+    queue = []
+    for key, entry in sorted(manifest.data["urls"].items()):
+        if entry.get("authors") or key in recorded:
+            continue
+        if only and only.lower() not in key.lower():
+            continue
+        if not entry.get("slug"):
+            continue
+        path = archive_dir / collections_module.md_relpath(entry, config, entry["slug"])
+        if not path.exists():
+            continue
+        queue.append({
+            "url": key,
+            "slug": entry.get("slug") or "",
+            "title": entry.get("title") or "",
+            "publisher": entry.get("publisher") or "",
+            "kind": entry.get("kind") or "",
+            "excerpt": _byline_excerpt(path.read_text(encoding="utf-8", errors="replace")),
+        })
+        if limit is not None and len(queue) >= limit:
+            break
+    return queue
+
+
+def _accept_byline(url, reading, known):
+    """The reason to refuse one reviewed byline, or "" to take it.
+
+    A WRONG NAME IS WORSE THAN NO NAME. An unattributed reference says the
+    archive does not know; a misattributed one credits a stranger with someone's
+    work and reads as fact. So a reading is taken only when it names a URL the
+    archive holds, is confident, and can quote the words it read the name from.
+    """
+    if url not in known:
+        return "no such reference in the manifest"
+    names = [str(name).strip() for name in (reading.get("authors") or [])
+             if str(name).strip()]
+    if not names:
+        return ""              # "I read it and found nobody" is a real answer
+    if reading.get("confidence") != "high":
+        return "confidence is not high"
+    if not str(reading.get("evidence") or "").strip():
+        return "no quotation to support the name"
+    for name in names:
+        if len(name) > 90 or "http" in name.lower() or "\n" in name:
+            return "implausible name: " + name[:40]
+    return ""
+
+
+def command_bylines(args):
+    """Read authors out of the archived documents themselves (offline).
+
+    Two halves, because the judgement in the middle is not the tool's to make.
+    `--queue` writes out every reference with no author beside the text a byline
+    would be in; a reviewer returns names with the quotation each was read from;
+    `--apply` records the ones that clear the bar in `bylines.json`, which
+    `decisions()` folds in beneath anything a maintainer has stated.
+
+    Nothing here reaches the network or the store, and nothing re-renders: the
+    published documents keep their old byline until `attribution` and a
+    re-render carry it there, exactly as a maintainer-stated one does.
+    """
+    root = paths.repo_root()
+    config = paths.config()
+    manifest = check_module.open_manifest(root, config)
+    recorded = paths.bylines()
+
+    if args.queue:
+        queue = _byline_queue(manifest, root, config, only=args.only,
+                              limit=args.limit, recorded=set(recorded))
+        Path(args.queue).write_text(
+            json.dumps({"schema": 1, "count": len(queue), "queue": queue},
+                       ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8", newline="\n")
+        print("Wrote %d reference(s) needing a byline to %s." % (len(queue), args.queue))
+        print("Review each excerpt, then record the result with "
+              "`refs.py bylines --apply <file>`.")
+        return 0
+
+    reviewed = json.loads(Path(args.apply).read_text(encoding="utf-8"))
+    readings = reviewed.get("bylines") if isinstance(reviewed, dict) else None
+    if readings is None:
+        readings = reviewed if isinstance(reviewed, dict) else {}
+    known = manifest.data["urls"]
+
+    merged = dict(recorded)
+    taken = refused = empty = 0
+    for url, reading in sorted(readings.items()):
+        reason = _accept_byline(url, reading or {}, known)
+        if reason:
+            refused += 1
+            print("  REFUSED  %-52s %s" % (url[:52], reason))
+            continue
+        names = [str(name).strip() for name in ((reading or {}).get("authors") or [])
+                 if str(name).strip()]
+        record = {"authors": names,
+                  "evidence": str((reading or {}).get("evidence") or "").strip()[:300],
+                  "confidence": (reading or {}).get("confidence") or "",
+                  "reviewed_utc": manifest_utc()}
+        merged[url] = record
+        if names:
+            taken += 1
+        else:
+            empty += 1
+
+    body = {
+        "_comment": [
+            "GENERATED by `refs.py bylines --apply`, from a review of the archived",
+            "text. Not hand-edited: state an author in overrides.json instead, which",
+            "always wins over anything recorded here. An entry with an empty",
+            "'authors' means the document was read and named nobody, which is why it",
+            "is kept - it stops the next run asking the same question again.",
+        ],
+        "schema": 1,
+        "bylines": {url: merged[url] for url in sorted(merged)},
+    }
+    (paths.TOOL_DIR / "bylines.json").write_text(
+        json.dumps(body, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8", newline="\n")
+    print("\nRecorded %d byline(s); %d document(s) named nobody; %d refused."
+          % (taken, empty, refused))
+    print("Run `refs.py attribution` to carry them into the manifest, then "
+          "re-render.")
+    return 0
+
+
 def command_attribution(args):
     """Carry curated attribution from overrides.json into the manifest (offline).
 
@@ -2921,6 +3084,21 @@ def build_parser():
                               help="also delete archive files no entry claims, such as "
                                    "the old name left behind by a corrected slug")
     index_parser.set_defaults(handler=command_index)
+
+    bylines_parser = subparsers.add_parser(
+        "bylines",
+        help="read authors out of the archived documents themselves (offline)")
+    bylines_group = bylines_parser.add_mutually_exclusive_group(required=True)
+    bylines_group.add_argument("--queue", metavar="FILE",
+                               help="write the references needing a byline, with the "
+                                    "text to read it from")
+    bylines_group.add_argument("--apply", metavar="FILE",
+                               help="record a completed review in bylines.json")
+    bylines_parser.add_argument("--only", default="",
+                                help="only references whose identity contains this text")
+    bylines_parser.add_argument("--limit", type=int, default=None,
+                                help="stop the queue after this many references")
+    bylines_parser.set_defaults(handler=command_bylines)
 
     attribution_parser = subparsers.add_parser(
         "attribution",

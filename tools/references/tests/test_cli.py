@@ -162,6 +162,57 @@ class RecoverySelectorTests(unittest.TestCase):
     def test_attribution_accepts_the_dry_run_selector(self):
         self.assertTrue(refs.build_parser().parse_args(["attribution", "--check"]).check)
 
+    def test_the_byline_excerpt_starts_after_our_own_attribution_block(self):
+        # Handing a reader our "Author not stated" line gets it read back.
+        from refslib import render as render_module
+        text = ('---\nslug: example\nauthors: []\n---\n\n# Example\n\n'
+                '**Example** - Author not stated, example.test.\n\n'
+                + render_module.BANNER + '\nBy Alex Example. The real article.\n')
+        excerpt = refs._byline_excerpt(text)
+        self.assertNotIn("Author not stated", excerpt)
+        self.assertTrue(excerpt.startswith("By Alex Example"), excerpt[:40])
+
+    def test_the_byline_excerpt_keeps_link_text_and_drops_the_target(self):
+        text = "Posted by [Alex Example](https://tracker.example/u?id=1) today."
+        self.assertEqual("Posted by Alex Example today.", refs._byline_excerpt(text))
+
+    def test_the_byline_excerpt_keeps_a_head_and_a_tail(self):
+        # A whitepaper names its authors under the title and again in a closing
+        # biography, so a head-only excerpt misses half the evidence.
+        text = "HEAD " + ("filler " * 600) + "TAIL"
+        excerpt = refs._byline_excerpt(text, head=40, tail=20)
+        self.assertTrue(excerpt.startswith("HEAD"))
+        self.assertTrue(excerpt.endswith("TAIL"))
+        self.assertIn("[…]", excerpt)
+
+    def test_a_read_byline_is_refused_without_the_words_it_was_read_from(self):
+        known = {"https://one.example/a": {}}
+        good = {"authors": ["Alex Example"], "evidence": "By Alex Example",
+                "confidence": "high"}
+        self.assertEqual("", refs._accept_byline("https://one.example/a", good, known))
+        self.assertTrue(refs._accept_byline("https://two.example/b", good, known))
+        self.assertTrue(refs._accept_byline(
+            "https://one.example/a", dict(good, evidence=" "), known))
+        self.assertTrue(refs._accept_byline(
+            "https://one.example/a", dict(good, confidence="medium"), known))
+        self.assertTrue(refs._accept_byline(
+            "https://one.example/a",
+            dict(good, authors=["https://spam.example/buy"]), known))
+
+    def test_reading_that_the_document_names_nobody_is_a_real_answer(self):
+        # Kept, so the next run does not ask the same question again; and it
+        # needs no quotation, because there is nothing to quote.
+        known = {"https://one.example/a": {}}
+        self.assertEqual("", refs._accept_byline(
+            "https://one.example/a", {"authors": [], "confidence": "low"}, known))
+
+    def test_bylines_takes_exactly_one_of_queue_or_apply(self):
+        parser = refs.build_parser()
+        self.assertEqual("q.json", parser.parse_args(["bylines", "--queue", "q.json"]).queue)
+        self.assertEqual("r.json", parser.parse_args(["bylines", "--apply", "r.json"]).apply)
+        with self.assertRaises(SystemExit):
+            parser.parse_args(["bylines"])
+
     def test_frontmatter_scalar_reader_keeps_only_top_level_values(self):
         text = ('---\nslug: example\noriginal_url: "https://example.test/a:b"\n'
                 'sources:\n  - id: original\nempty: ""\n---\n\n# Example\n')
