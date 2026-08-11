@@ -48,6 +48,7 @@ python tools/references/refs.py wayback        # a better capture for a dead URL
 python tools/references/refs.py transcripts    # a talk's captions, in a container [NETWORK]
 python tools/references/refs.py translate      # prepare/apply a translation
 python tools/references/refs.py index          # regenerate the folder index
+python tools/references/refs.py attribution    # record curated authors/publishers
 python tools/references/refs.py verify         # the offline gate
 python tools/references/refs.py import <dir>   # file documents obtained by hand
 python tools/references/refs.py report         # advice about each citation
@@ -180,6 +181,33 @@ original. That makes attribution the mitigation, and the tool treats it as one:
   omitted) and a rights line pointing at the original;
 - `refs.py verify` re-checks every published file and FAILS on one whose block
   has been edited away.
+
+Naming the author is the part extraction cannot finish. It reads an author only
+where the page DECLARES one, in a meta tag or JSON-LD, so a whitepaper carrying
+its byline in body text and a blog declaring nothing both publish as "Author not
+stated" — 1,261 of 1,684 references. Where a human knows the researcher, state
+them in `overrides.json` beside the curated title:
+
+```json
+"https://example.test/?p=48": {
+  "outcome": "archive",
+  "class": "research",
+  "title": "The Title The Citation Gives It",
+  "authors": ["Alex Example"],
+  "reason": "example.test was the researcher's own blog and the captures declare no author."
+}
+```
+
+A stated `publisher` works the same way and outranks the host, which matters for
+research whose domain has since been taken over: a run of nominations by one
+researcher can otherwise stand credited to a domain that now sells itself.
+
+`refs.py attribution` records these in the manifest. It is offline and reads no
+stored bytes, because neither route that honours a stated byline can always run:
+a plain `acquire --force` needs the capture and refuses hand imports on purpose,
+and re-importing needs the hand-obtained file back. Who wrote a document is a
+fact about the document, not about the capture. The published files keep the old
+byline until they are next re-rendered, which the command says on the way out.
 
 ## Configuration
 

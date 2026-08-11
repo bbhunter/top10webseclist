@@ -90,6 +90,38 @@ class RecoverySelectorTests(unittest.TestCase):
         refs._apply_title_override(record, entry, "Recovered title", {"casino-sale"})
         self.assertEqual("2008-sectheory-recovered-title", record["slug"])
 
+    def test_a_stated_byline_reaches_both_the_entry_and_the_rendered_record(self):
+        entry, record = {"authors": []}, {"authors": []}
+        applied = refs._apply_attribution_override(
+            entry, {"authors": ["Alex Example"]}, record)
+        self.assertTrue(applied)
+        self.assertEqual(["Alex Example"], entry["authors"])
+        self.assertEqual(["Alex Example"], record["authors"])
+
+    def test_a_stated_publisher_outranks_the_squatter_that_answered(self):
+        entry = {"publisher": "DomainsForSale"}
+        refs._apply_attribution_override(entry, {"publisher": "example.test"})
+        self.assertEqual("example.test", entry["publisher"])
+
+    def test_an_absent_decision_leaves_extracted_attribution_alone(self):
+        entry = {"authors": ["Extracted Name"], "publisher": "example.test"}
+        self.assertFalse(refs._apply_attribution_override(entry, None))
+        self.assertFalse(refs._apply_attribution_override(entry, {"title": "Only a title"}))
+        self.assertEqual(["Extracted Name"], entry["authors"])
+        self.assertEqual("example.test", entry["publisher"])
+
+    def test_a_blank_curated_name_is_not_an_attribution(self):
+        entry = {"authors": ["Extracted Name"]}
+        self.assertFalse(refs._apply_attribution_override(entry, {"authors": ["", "  "]}))
+        self.assertEqual(["Extracted Name"], entry["authors"])
+
+    def test_curated_names_are_copied_not_shared_with_the_decision(self):
+        judged = {"authors": ["Alex Example"]}
+        entry = {}
+        refs._apply_attribution_override(entry, judged)
+        entry["authors"].append("Someone Else")
+        self.assertEqual(["Alex Example"], judged["authors"])
+
     def test_frontmatter_scalar_reader_keeps_only_top_level_values(self):
         text = ('---\nslug: example\noriginal_url: "https://example.test/a:b"\n'
                 'sources:\n  - id: original\nempty: ""\n---\n\n# Example\n')

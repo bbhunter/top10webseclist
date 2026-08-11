@@ -88,6 +88,37 @@ def _apply_title_override(record, entry, corrected, taken):
         taken=available)
 
 
+def _apply_attribution_override(entry, judged, record=None):
+    """Apply a human decision about who wrote a reference, and who published it.
+
+    Extraction can only read an author a page DECLARES, in a meta tag or in
+    JSON-LD. A whitepaper carries its byline in body text and a 2008 blog
+    carries none at all, so 1,261 of 1,684 references render "Author not
+    stated" - including whitepapers that name their author on page one, and
+    articles left credited to nothing but a hostname because the domain outlived
+    the blog and now sells itself. The document names its author; only the
+    metadata does not. That is a fact a human can state and a fetch cannot,
+    which is why it belongs here beside the curated title rather than hand-poked
+    into the generated manifest.
+
+    Written to the manifest entry, because `render` builds its attribution block
+    from the entry; also to `record` when the caller holds one, because the
+    fetch path renders from the acquisition result rather than from the entry.
+    """
+    curated = judged or {}
+    authors = [str(name).strip() for name in (curated.get("authors") or [])
+               if str(name).strip()]
+    publisher = str(curated.get("publisher") or "").strip()
+    for target in (entry, record):
+        if target is None:
+            continue
+        if authors:
+            target["authors"] = list(authors)
+        if publisher:
+            target["publisher"] = publisher
+    return bool(authors or publisher)
+
+
 def _frontmatter_scalars(text):
     """Read the top-level scalar values emitted by ``render._frontmatter``.
 
@@ -701,6 +732,12 @@ def command_acquire(args):
             record["retrieved_utc"] = manifest_utc()
             record.setdefault("why", entry.get("why") or "")
             record.setdefault("summary", entry.get("summary") or "")
+            # A STATED BYLINE OUTRANKS AN EXTRACTED ONE, and is applied before
+            # the title correction below because the slug that correction rebuilds
+            # is built FROM the publisher: for a taken-over domain the extracted
+            # one is the squatter. Setting it on the record rather than only on
+            # the entry is what carries it through the copy loop further down.
+            _apply_attribution_override(entry, judged, record)
             # A TITLE READ OFF A WALL IS NOT A TITLE. The probe records what the
             # page called itself, and when the page was a bot check that is what
             # gets archived: a KTH doctoral thesis was filed as "Making sure
@@ -2253,6 +2290,68 @@ def command_index(args):
     return 0
 
 
+def command_attribution(args):
+    """Carry curated attribution from overrides.json into the manifest (offline).
+
+    Reads no bytes from the content store and makes no request. It exists
+    because neither route that honours a stated byline can always run: a plain
+    `acquire --force` needs the stored capture and refuses hand imports on
+    purpose, and re-importing needs the hand-obtained file back in a directory.
+    Who wrote a document is a fact about the document, not about the capture, so
+    correcting it should not require either.
+
+    The published files still carry the old byline afterwards, because rendering
+    reads the stored bytes. What changed is therefore printed as work still to
+    do, not reported as finished.
+    """
+    root = paths.repo_root()
+    config = paths.config()
+    manifest = check_module.open_manifest(root, config)
+    decisions = paths.decisions()
+
+    changed = []
+    for key, entry in sorted(manifest.data["urls"].items()):
+        judged = maintainer_decision(key, entry, decisions)
+        if not judged:
+            continue
+        before = (list(entry.get("authors") or []), entry.get("publisher") or "")
+        _apply_attribution_override(entry, judged)
+        after = (list(entry.get("authors") or []), entry.get("publisher") or "")
+        if after != before:
+            changed.append((key, before, after))
+
+    if not changed:
+        print("Every curated attribution is already recorded in the manifest.")
+        return 0
+
+    for key, before, after in changed:
+        who = ", ".join(after[0]) or "-"
+        print("  %-56s %s" % (key[:56], who))
+        if before[1] != after[1]:
+            print("  %-56s publisher: %s -> %s"
+                  % ("", before[1] or "not stated", after[1]))
+
+    if args.check:
+        print("\n%d reference(s) would change. This was --check: nothing was written."
+              % len(changed))
+        return 1
+
+    for key, _before, after in changed:
+        manifest.record(key, "attribution", result="applied",
+                        authors=after[0], publisher=after[1],
+                        reason="maintainer-stated attribution from overrides.json")
+    manifest.save()
+    print("\nRecorded attribution for %d reference(s)." % len(changed))
+    # The byline lives in the published Markdown as well as in the manifest, and
+    # only a re-render moves it there. Naming the two routes is the difference
+    # between a maintainer finishing this and assuming it finished itself.
+    print("The published documents still read the old byline. To rewrite them, "
+          "re-render with\nthe content store available: `acquire --force --only "
+          "<url>` for a fetched\nreference, or `import <dir>` again for a hand "
+          "import, then `index`.")
+    return 0
+
+
 def command_report(args):
     """Advice for the maintainer. Writes nothing but its own output."""
     from refslib import indexer
@@ -2429,10 +2528,15 @@ def command_import(args):
         # thesis was filed as "Making sure you're not a bot!". Releasing the
         # pinned slug renames the file after the document.
         renamed_from = was
-        corrected = (paths.decisions().get(key) or {}).get("title") or ""
+        judged = paths.decisions().get(key) or {}
+        corrected = judged.get("title") or ""
         if corrected and corrected != entry.get("title"):
             entry["title"] = corrected
             was = ""
+        # An import is also where a stated byline is needed most: a document
+        # obtained by hand met a wall, and a wall declares no author. The record
+        # below reads both fields off the entry, so applying it here is enough.
+        _apply_attribution_override(entry, judged)
         record = {
             "slug": slugs.pinned(was),
             "title": slugs.readable_title(
@@ -2760,6 +2864,13 @@ def build_parser():
                               help="also delete archive files no entry claims, such as "
                                    "the old name left behind by a corrected slug")
     index_parser.set_defaults(handler=command_index)
+
+    attribution_parser = subparsers.add_parser(
+        "attribution",
+        help="record curated authors and publishers from overrides.json (offline)")
+    attribution_parser.add_argument("--check", action="store_true",
+                                    help="report what would change and write nothing")
+    attribution_parser.set_defaults(handler=command_attribution)
 
     report_parser = subparsers.add_parser(
         "report", help="what the archive learned about each citation (advice only)")
