@@ -357,6 +357,23 @@ function hostOf(value) {
   }
 }
 
+// Who to credit in one line. The researcher leads and the publisher follows,
+// because a name is what a reader recognises and a host is only where the file
+// sat. Falls back to the publisher alone, which is every reference whose source
+// declared no author.
+function creditOf(item) {
+  const names = (item.authors || []).join(", ");
+  if (!names) return item.publisher || "";
+  return item.publisher ? `${names} · ${item.publisher}` : names;
+}
+
+// The same credit for a slot too narrow to hold both. A card foot truncates at
+// 25 characters, where a name and a domain together are cut off through the
+// middle of the domain: the name alone is the part worth the space.
+function briefCreditOf(item) {
+  return (item.authors || []).join(", ") || item.publisher || "";
+}
+
 function normalizeUrl(value) {
   try {
     const url = new URL(value);
@@ -519,6 +536,16 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
       // "404 Not Found", "wrong number (404)" and a squatter's gambling-site
       // name as the publisher of 16 references. The host is always honest.
       publisher: documentLink.record?.publisher || hostOf(documentLink.url),
+      // WHO DID THE RESEARCH, where the archive knows. The publisher above is a
+      // host for most references, and a host credits a domain rather than a
+      // person: whole runs of nominations read as the work of a parked domain
+      // that outlived the blog on it. Read off the same link as the publisher,
+      // because it is the copy the reader opens. Emitted only where known, for
+      // the payload reason above: a reference that names nobody looks exactly as
+      // it did, and falls back to its publisher everywhere.
+      ...(documentLink.record?.authors?.length
+        ? { authors: documentLink.record.authors.slice(0, 4) }
+        : {}),
       kind: record?.kind || "link",
       language: record?.language || "",
       published: record?.published || "",
@@ -1175,7 +1202,7 @@ function updateGlobalSearch() {
         <button type="button" data-artifact="${h(item.id)}">
           <span><b>${h(item.yearLabel || item.year)}</b>${item.favourite ? "★ favourite" : item.rank ? `#${item.rank}` : item.preliminary ? "preliminary" : "nominee"}</span>
           <strong>${h(item.title)}</strong>
-          <small>${h(item.publisher || item.topic)}</small>
+          <small>${h(creditOf(item) || item.topic)}</small>
         </button>`).join("") + (results.length > 40 ? `<p>Showing the first 40 results. Add another word to narrow the index.</p>` : "")
     : `<p>No archive records matched those words.</p>`;
   panel.hidden = false;
@@ -1227,7 +1254,10 @@ function queryItems(items, query = state.query) {
   if (!query) return items;
   const words = query.toLowerCase().split(/\s+/).filter(Boolean);
   return items.filter((item) => {
-    const haystack = `${item.title} ${item.publisher} ${item.topic} ${item.year} ${item.kind}`.toLowerCase();
+    // Searching a research archive by researcher is the obvious question, and
+    // until the author reached the shard the only way to ask it was to know
+    // which domain they blogged on twenty years ago.
+    const haystack = `${item.title} ${creditOf(item)} ${item.topic} ${item.year} ${item.kind}`.toLowerCase();
     return words.every((word) => haystack.includes(word));
   });
 }
@@ -1367,7 +1397,7 @@ function artifactCard(item, compactCard = false) {
     <article class="artifact-card topic-${h(item.topic)} ${compactCard ? "compact-card" : ""} ${item.read ? "is-read" : ""} ${item.favourite ? "is-favourite" : ""}" data-artifact="${h(item.id)}" tabindex="0" role="button" aria-label="Open ${h(item.title)}${item.favourite ? ", favourite" : ""}">
       <div class="card-top"><span>${h(item.yearLabel || item.year)} / ${h(item.topic)}</span>${rank}</div>
       <h3>${h(item.title)}</h3>
-      <div class="card-foot"><span>${h(short(item.publisher || "Unknown publisher", 25))}</span>${statusMarkup(item)}</div>
+      <div class="card-foot"><span>${h(short(briefCreditOf(item) || "Unknown publisher", 25))}</span>${statusMarkup(item)}</div>
       ${item.favourite ? `<span class="card-favourite" aria-label="Favourite">★</span>` : ""}
       ${item.read ? `<span class="card-read">✓ read</span>` : ""}
     </article>`;
@@ -1767,7 +1797,7 @@ function terminalGrep(args) {
   const compiled = compileSafeGrep(expression, insensitive);
   if (compiled.error) return `<p class="term-error">grep: ${h(compiled.error)}. Try a shorter expression such as <button data-term-command="grep /xss|csrf/i">grep /xss|csrf/i</button>.</p>`;
   const matches = terminalItemsAtPath(scopePath).filter((item) => {
-    const haystack = `${item.title}\n${item.publisher}\n${item.topic}\n${item.year}\n${item.kind}\n${item.originalUrl}`.slice(0, 2048);
+    const haystack = `${item.title}\n${creditOf(item)}\n${item.topic}\n${item.year}\n${item.kind}\n${item.originalUrl}`.slice(0, 2048);
     compiled.regex.lastIndex = 0;
     const matched = compiled.regex.test(haystack);
     return inverted ? !matched : matched;
@@ -2383,7 +2413,9 @@ async function openArtifact(id) {
     ? `This technique placed #${item.rank} in the ${item.year} Top 10. The archive connects the curated listing to the preserved research and its original source.`
     : `This work was nominated in ${item.year}. It remains part of the long tail of research preserved alongside the winning techniques.`;
   $("#artifact-context").textContent = item.note ? `${contextText} Listing note: ${item.note}.` : contextText;
+  const credited = (item.authors || []).join(", ");
   $("#artifact-facts").innerHTML = `
+    ${credited ? `<div><dt>Author</dt><dd title="${h(credited)}">${h(credited)}</dd></div>` : ""}
     <div><dt>Publisher</dt><dd title="${h(item.publisher)}">${h(item.publisher || "Unknown")}</dd></div>
     <div><dt>Source type</dt><dd>${h(item.kind)}</dd></div>
     <div><dt>Preservation</dt><dd>${h(item.archiveStatus)}</dd></div>
@@ -2514,7 +2546,7 @@ function openPdfViewer(item, options = {}) {
     : options.original
       ? `original ${item.language || "source"} PDF`
       : "English translation PDF";
-  $("#pdf-kicker").textContent = options.kicker || `${item?.year || "Archive"} / ${item?.publisher || item?.topic || "local preservation"} / ${pdfLanguageNote}`;
+  $("#pdf-kicker").textContent = options.kicker || `${item?.year || "Archive"} / ${(item && creditOf(item)) || item?.topic || "local preservation"} / ${pdfLanguageNote}`;
   const readButton = $("#pdf-read-toggle");
   readButton.hidden = !item;
   const favouriteButton = $("#pdf-favourite-toggle");
@@ -2896,7 +2928,7 @@ async function openReader(item, options = {}) {
     : showOriginal
       ? `original ${item.language || "source"} text`
       : "English translation";
-  $("#reader-kicker").textContent = `${yearLabel(item.year)} / ${item.publisher || item.topic} / ${languageNote}`;
+  $("#reader-kicker").textContent = `${yearLabel(item.year)} / ${creditOf(item) || item.topic} / ${languageNote}`;
   $("#reader-content").innerHTML = `<div class="reader-loading"><i></i><p>Opening preserved Markdown…</p></div>`;
   $("#reader-toc").innerHTML = "";
   $("#reader-progress-bar").style.width = "0";
