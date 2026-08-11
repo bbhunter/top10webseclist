@@ -1209,14 +1209,22 @@ function updateGlobalSearch() {
   $("#global-results-label").textContent = complete
     ? `${results.length.toLocaleString()} result${results.length === 1 ? "" : "s"} for “${state.query}”`
     : `${results.length.toLocaleString()} result${results.length === 1 ? "" : "s"} so far · loading ${YEAR_FILES.length - loadedCollections.size} collection(s)…`;
+  // YEAR, TITLE, RESEARCHER. The name sits under the title rather than beside
+  // the publisher, because the two are not the same fact and the narrow layout
+  // drops the trailing column entirely: fusing them meant a phone showed the
+  // one credit line the archive has and then hid it.
   $("#global-results-list").innerHTML = results.length
-    ? results.slice(0, 40).map((item) => `
+    ? results.slice(0, 40).map((item) => {
+        const names = (item.authors || []).join(", ");
+        return `
         <button type="button" data-artifact="${h(item.id)}">
           <span><b>${h(item.yearLabel || item.year)}</b>${item.favourite ? "★ favourite" : item.rank ? `#${item.rank}` : item.preliminary ? "preliminary" : "nominee"}</span>
-          <strong>${h(item.title)}</strong>
-          <small>${h(creditOf(item) || item.topic)}</small>
-        </button>`).join("") + (results.length > 40 ? `<p>Showing the first 40 results. Add another word to narrow the index.</p>` : "")
-    : `<p>No archive records matched those words.</p>`;
+          <div><strong>${h(item.title)}</strong>${names ? `<em>${h(names)}</em>` : ""}</div>
+          <small>${h(item.publisher || item.topic)}</small>
+        </button>`;
+      }).join("") + (results.length > 40 ? `<p>Showing the first 40 results. Add another word to narrow the index.</p>` : "")
+    : `<p>No archive records matched those words. A word can name its field —
+       <b>author:</b>, <b>publisher:</b>, <b>title:</b>, <b>year:</b> or <b>topic:</b>.</p>`;
   panel.hidden = false;
 }
 
@@ -1262,15 +1270,43 @@ function itemsForYear(year) {
   return state.items.filter((item) => item.year === year);
 }
 
+// A word may name the PART OF THE RECORD it is asking about. Free text searches
+// everything and cannot say which field it meant, so "kettle" answers with the
+// research of a person and any title that happens to use the word. Naming the
+// field is how a reader asks the question the byline made possible - who wrote
+// this - rather than a question that merely tends to find them.
+const SEARCH_FIELDS = {
+  author: (item) => (item.authors || []).join(" "),
+  publisher: (item) => item.publisher || "",
+  title: (item) => item.title || "",
+  year: (item) => String(item.yearLabel || item.year || ""),
+  topic: (item) => item.topic || "",
+};
+
+// "author:" while it is still being typed is not a request for nothing, so a
+// qualifier with no word yet is dropped rather than matched against "".
+function parseQuery(query) {
+  return query.toLowerCase().split(/\s+/).filter(Boolean).map((word) => {
+    const mark = word.indexOf(":");
+    const field = mark > 0 ? word.slice(0, mark) : "";
+    return SEARCH_FIELDS[field]
+      ? { pick: SEARCH_FIELDS[field], word: word.slice(mark + 1) }
+      : { pick: null, word };
+  }).filter((term) => term.word);
+}
+
 function queryItems(items, query = state.query) {
   if (!query) return items;
-  const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+  const terms = parseQuery(query);
+  if (!terms.length) return items;
   return items.filter((item) => {
     // Searching a research archive by researcher is the obvious question, and
     // until the author reached the shard the only way to ask it was to know
     // which domain they blogged on twenty years ago.
     const haystack = `${item.title} ${creditOf(item)} ${item.topic} ${item.year} ${item.kind}`.toLowerCase();
-    return words.every((word) => haystack.includes(word));
+    return terms.every((term) => (term.pick
+      ? term.pick(item).toLowerCase().includes(term.word)
+      : haystack.includes(term.word)));
   });
 }
 

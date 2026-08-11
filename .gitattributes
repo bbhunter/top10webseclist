@@ -1,0 +1,21 @@
+# THE TOOLING WRITES LF AND THEN COMPARES BYTE FOR BYTE, so the working copy has
+# to hold what the writers emit. On Windows, core.autocrlf=true smudged the
+# generated shards to CRLF on checkout and `build-data.mjs --check` - which reads
+# them as text and compares them to a fresh build - failed on a tree nobody had
+# edited. A merge was enough to trigger it, which makes the check read as "your
+# data is stale" when the only difference is a line ending git itself inserted.
+#
+# eol=lf pins the working copy for everything git detects as text. Binary is
+# auto-detected and untouched; the archive's PDFs are named anyway, because a
+# PDF that ever gets line-ending translation is a corrupted PDF.
+* text=auto eol=lf
+
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary

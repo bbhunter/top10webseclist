@@ -1382,7 +1382,11 @@
   .global-results > div > button:hover { color: var(--ink); background: rgba(120,153,255,.07); }
   .global-results > div > button span { display: flex; gap: 7px; color: var(--faint); font: .55rem var(--mono); }
   .global-results > div > button span b { color: var(--accent); }
-  .global-results > div > button strong { font-size: .72rem; line-height: 1.35; }
+  .global-results > div > button > div { min-width: 0; }
+  .global-results > div > button strong { display: block; font-size: .72rem; line-height: 1.35; }
+  /* The researcher, under the title. Not italic despite the tag: em is here for
+     the meaning, and a credit line reads as a name rather than an aside. */
+  .global-results > div > button em { display: block; overflow: hidden; margin-top: 4px; color: var(--accent); font: .55rem var(--mono); font-style: normal; text-overflow: ellipsis; white-space: nowrap; }
   .global-results > div > button small { overflow: hidden; font: .55rem var(--mono); text-align: right; text-overflow: ellipsis; white-space: nowrap; }
   .global-results > div > p { padding: 18px; color: var(--faint); font: .62rem/1.5 var(--mono); text-align: center; }
 
