@@ -400,6 +400,10 @@
   .artifact-context { margin: 28px 0; padding: 17px 19px; color: #b5c8c0; background: rgba(130,245,178,.045); border-left: 2px solid var(--dialog-color, var(--mint)); font-size: .78rem; line-height: 1.65; }
   .artifact-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; overflow: hidden; margin-bottom: 28px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; }
   .artifact-facts div { min-width: 0; padding: 13px; background: var(--panel); }
+  /* The author is a fifth fact and only appears where the archive knows one, so
+     it lands alone on a second row of four and leaves three cells of dead
+     panel. Widening just that trailing cell keeps the grid flush either way. */
+  .artifact-facts div:nth-child(5):last-child { grid-column: 1 / -1; }
   .artifact-facts dt { margin-bottom: 5px; color: var(--faint); font: .56rem var(--mono); text-transform: uppercase; }
   .artifact-facts dd { overflow: hidden; color: var(--ink); font: .7rem var(--mono); text-overflow: ellipsis; white-space: nowrap; }
   .artifact-actions { display: flex; flex-wrap: wrap; gap: 9px; }
