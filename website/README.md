@@ -60,6 +60,18 @@ Cloudflare's `_headers` file applies security headers, immediately revalidates t
 catalogue, caches versioned year shards for a year, and gives archive documents a
 one-day cache with stale revalidation.
 
+## The name search engines print
+
+Google, Bing and the rest take the site name from the home page only, and from
+several signals at once: `WebSite` structured data in `index.html`, `og:site_name`,
+`application-name`, the `<title>`, the manifest `name` and the `h1`. All of them say
+**Web Hacking Techniques Index**, with `alternateName` and the manifest `short_name`
+keeping *Web Hack List* eligible as the domain-shaped short form. Never let an archive
+mode's name reach one of those fields — a search engine would print it as the name of
+the site. The smoke test fails if any signal disagrees or if a view title leaks in.
+
+A search engine may take days or weeks to re-crawl and adopt a changed site name.
+
 ## Publish the backup with GitHub Pages
 
 The repository workflow in `.github/workflows/pages.yml` publishes the contents of this
@@ -84,6 +96,10 @@ window from a phone's **Add to Home Screen** action, including on iPhones where 
 fullscreen is unavailable.
 
 ## Archive routes
+
+Every route is a way into the same archive, so the page heading and the browser tab
+always read *Web Hacking Techniques Index*. The route's own name sits under the
+heading as the mode currently open, never as the name of the site.
 
 - Museum at Night — one room per collection, styled in the Signal Observatory's
   instrument theme so both views read as the same receiver

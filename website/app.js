@@ -14,6 +14,11 @@ const collectionRequests = new Map();
 const KNOWN_MISSING_PATHS = new Set([]);
 // Kinds the archive never prints a PDF for - `config.json -> pdf.skip_kinds`.
 const NO_PDF_KINDS = new Set(["video"]);
+// The archive's own name, never the name of the mode being viewed. Each view
+// still announces itself under the heading and in the browser's history entry,
+// but the site is one archive whatever room you are standing in.
+const SITE_TITLE = "Web Hacking Techniques Index";
+const SITE_DOCUMENT_TITLE = `${SITE_TITLE} — Research archive`;
 const READ_STORAGE_KEY = "technique-vault-read-v1";
 const FAVOURITE_STORAGE_KEY = "websec-favourites-v1";
 const READING_THEME_STORAGE_KEY = "technique-vault-reading-theme-v1";
@@ -1131,9 +1136,10 @@ function toggleReadingTheme() {
 function render() {
   const copy = viewCopy();
   $("#view-kicker").textContent = copy.kicker;
-  $("#view-title").textContent = copy.title;
+  $("#view-title").textContent = SITE_TITLE;
+  $("#view-mode").textContent = copy.title;
   $("#view-description").textContent = copy.description;
-  document.title = `${copy.title} — Web Hacking Techniques Index`;
+  document.title = SITE_DOCUMENT_TITLE;
   $$(".nav-item").forEach((button) => {
     const active = button.dataset.view === state.view;
     button.classList.toggle("active", active);

@@ -4,19 +4,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0c0e15">
-  <meta name="application-name" content="Web Hack List">
+  <meta name="application-name" content="Web Hacking Techniques Index">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Web Hack List">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; media-src 'none'; worker-src 'none'">
   <meta name="description" content="Web Hacking Techniques Index is an interactive archive of Top 10 Web Hacking Techniques research, nominations, and clearly marked preliminary collections.">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Web Hack List">
+  <meta property="og:site_name" content="Web Hacking Techniques Index">
   <meta property="og:title" content="Web Hacking Techniques Index">
   <meta property="og:description" content="Explore two decades of web hacking research, nominations, preserved articles and annual Top 10 results.">
   <meta property="og:url" content="https://webhacklist.com/">
   <title>Web Hacking Techniques Index — Research archive</title>
   <link rel="canonical" href="https://webhacklist.com/">
+  <!-- The site name a search engine should print above the result, stated once
+       for the whole site. Google reads this only from the home page, and takes
+       it together with og:site_name, the title and the h1 - which all say the
+       same thing, so no archive mode (Museum at Night, Signal Observatory, and
+       the rest) can be mistaken for the name of the site. `alternateName` keeps
+       the domain-shaped short name eligible.
+
+       An application/ld+json block is a data block, not a script: the HTML
+       parser stops preparing it before the Content-Security-Policy check, so
+       `script-src 'self'` neither blocks nor needs a hash for it. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://webhacklist.com/#website",
+    "url": "https://webhacklist.com/",
+    "name": "Web Hacking Techniques Index",
+    "alternateName": "Web Hack List",
+    "inLanguage": "en",
+    "description": "An interactive archive of Top 10 Web Hacking Techniques research, nominations, preserved articles and annual results."
+  }
+  </script>
   <link rel="icon" href="brand-mark.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="brand-mark.svg">
   <link rel="manifest" href="site.webmanifest">
@@ -115,7 +138,8 @@
         <header class="view-intro">
           <div>
             <p class="eyebrow" id="view-kicker">Room 01 / exhibition mode</p>
-            <h1 id="view-title">Museum at Night</h1>
+            <h1 id="view-title">Web Hacking Techniques Index</h1>
+            <p class="view-mode" id="view-mode">Museum at Night</p>
             <p id="view-description">Walk through twenty years of research as rooms, illuminated winners and recovered artifacts.</p>
           </div>
           <div class="view-intro-tools">

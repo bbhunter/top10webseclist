@@ -275,6 +275,9 @@
   .view-intro { position: relative; display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 28px; padding-top: 17px; border-top: 1px solid var(--line); }
   .view-intro::before { position: absolute; top: -3px; left: 0; width: 38px; height: 5px; content: ""; background: linear-gradient(90deg,var(--accent) 0 45%,transparent 45% 55%,var(--signal) 55%); }
   .view-intro h1 { margin: 9px 0 10px; font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-size: clamp(2.55rem, 5.2vw, 5.6rem); font-weight: 600; line-height: .91; letter-spacing: -.052em; }
+  /* The heading is the archive; this line is the room you are standing in. */
+  .view-intro .view-mode { display: flex; align-items: center; gap: 10px; margin-bottom: 11px; color: var(--signal); font: 500 clamp(.86rem, 1.35vw, 1.05rem)/1.25 var(--mono); letter-spacing: -.01em; }
+  .view-intro .view-mode::before { flex: 0 0 auto; width: 22px; height: 1px; content: ""; background: currentColor; opacity: .55; }
   .view-intro > div:first-child > p:last-child { max-width: 680px; color: var(--muted); font-size: clamp(.82rem, 1.2vw, .98rem); line-height: 1.65; }
   .view-intro-tools { display: grid; flex: 0 0 auto; justify-items: stretch; gap: 12px; }
   .view-metric { min-width: 150px; padding-left: 20px; border-left: 1px solid var(--line-strong); }
