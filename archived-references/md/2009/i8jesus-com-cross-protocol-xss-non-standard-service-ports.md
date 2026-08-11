@@ -5,17 +5,19 @@ resource: "http://i8jesus.com/?p=75"
 tags: [article, webseclist-reference, en-US, i8jesus-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T20:43:00+00:00"
+  at: "2026-08-11T16:31:45+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://i8jesus.com/?p=75"
     title: Cross-protocol XSS with non-standard service ports
+    author: Arshan Dabirsiaghi
   - id: capture
     resource: "https://web.archive.org/web/20110920115708/http://i8jesus.com/?p=75"
 also_at: []
-authors: []
+authors:
+  - Arshan Dabirsiaghi
 canonical_url: ""
 cited_by:
   - "2009.md:58"
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: ed04a0e79d03304e8dae0e74ed4777d56fae77c7cf3b603fccb97532bbbdd20b
 retrieved_from: "http://i8jesus.com/?p=75"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T20:43:00+00:00"
+retrieved_utc: "2026-08-11T16:31:45+00:00"
 slug: i8jesus-com-cross-protocol-xss-non-standard-service-ports
 snapshot: 20110920115708
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Cross-protocol XSS with non-standard service ports
 
-**Cross-protocol XSS with non-standard service ports** - Author not stated, i8jesus.com.
+**Cross-protocol XSS with non-standard service ports** - Arshan Dabirsiaghi, i8jesus.com.
 
 - Published: date not stated
 - Original: <http://i8jesus.com/?p=75>
-- Preserved from: http://i8jesus.com/?p=75 (stored) on 2026-08-10
+- Preserved from: http://i8jesus.com/?p=75 (stored) on 2026-08-11
 - Capture timestamp: 20110920115708
 - Licence: unknown
 

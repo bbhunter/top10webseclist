@@ -5,17 +5,19 @@ resource: "https://www.aspectsecurity.com/tools/javasnoop/"
 tags: [article, webseclist-reference, en, aspectsecurity-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:43:21+00:00"
+  at: "2026-08-11T16:32:02+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.aspectsecurity.com/tools/javasnoop/"
     title: JavaSnoop
+    author: Arshan Dabirsiaghi
   - id: capture
     resource: "https://web.archive.org/web/20101003190953/https://www.aspectsecurity.com/tools/javasnoop/"
 also_at: []
-authors: []
+authors:
+  - Arshan Dabirsiaghi
 canonical_url: ""
 cited_by:
   - "2010.md:12"
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: aeb5c78d70d18d9455afe5e8a506297bc0b912cc2b6326def50a7e2a071eae9d
 retrieved_from: "https://www.aspectsecurity.com/tools/javasnoop/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:43:21+00:00"
+retrieved_utc: "2026-08-11T16:32:02+00:00"
 slug: aspectsecurity-com-javasnoop
 snapshot: 20101003190953
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # JavaSnoop
 
-**JavaSnoop** - Author not stated, aspectsecurity.com.
+**JavaSnoop** - Arshan Dabirsiaghi, aspectsecurity.com.
 
 - Published: date not stated
 - Original: <https://www.aspectsecurity.com/tools/javasnoop/>
-- Preserved from: https://www.aspectsecurity.com/tools/javasnoop/ (stored) on 2026-08-09
+- Preserved from: https://www.aspectsecurity.com/tools/javasnoop/ (stored) on 2026-08-11
 - Capture timestamp: 20101003190953
 - Licence: unknown
 

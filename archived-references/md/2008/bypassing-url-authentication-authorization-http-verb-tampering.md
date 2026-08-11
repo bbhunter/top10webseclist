@@ -2,18 +2,20 @@
 type: Whitepaper
 title: Bypassing URL Authentication and Authorization with HTTP Verb Tampering
 resource: "https://www.aspectsecurity.com/documents/Bypassing_VBAAC_with_HTTP_Verb_Tampering.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, aspect-security]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-07T09:50:53+00:00"
+  at: "2026-08-11T16:32:23+00:00"
 status: stable
-stale_after: 2027-08-07
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://www.aspectsecurity.com/documents/Bypassing_VBAAC_with_HTTP_Verb_Tampering.pdf"
     title: Bypassing URL Authentication and Authorization with HTTP Verb Tampering
+    author: Arshan Dabirsiaghi
 also_at: []
-authors: []
+authors:
+  - Arshan Dabirsiaghi
 canonical_url: ""
 cited_by:
   - "2008.md:20"
@@ -26,12 +28,12 @@ language: ""
 licence: unknown
 original_url: "https://www.aspectsecurity.com/documents/Bypassing_VBAAC_with_HTTP_Verb_Tampering.pdf"
 published: ""
-publisher: ""
+publisher: Aspect Security
 publisher_english: ""
 raw_sha256: 89c79276bb60d2a827a2b05125ffbdfb1c71292138a852beeb9e94a711e853bb
 retrieved_from: "https://www.aspectsecurity.com/documents/Bypassing_VBAAC_with_HTTP_Verb_Tampering.pdf"
 retrieved_kind: manual-import
-retrieved_utc: "2026-08-07T09:50:53+00:00"
+retrieved_utc: "2026-08-11T16:32:23+00:00"
 slug: bypassing-url-authentication-authorization-http-verb-tampering
 snapshot: ""
 title_english: ""
@@ -41,15 +43,15 @@ translation_of: ""
 
 # Bypassing URL Authentication and Authorization with HTTP Verb Tampering
 
-**Bypassing URL Authentication and Authorization with HTTP Verb Tampering** - Author not stated, Publisher not stated.
+**Bypassing URL Authentication and Authorization with HTTP Verb Tampering** - Arshan Dabirsiaghi, Aspect Security.
 
 - Published: date not stated
 - Original: <https://www.aspectsecurity.com/documents/Bypassing_VBAAC_with_HTTP_Verb_Tampering.pdf>
-- Preserved from: https://www.aspectsecurity.com/documents/Bypassing_VBAAC_with_HTTP_Verb_Tampering.pdf (manual-import) on 2026-08-07
+- Preserved from: https://www.aspectsecurity.com/documents/Bypassing_VBAAC_with_HTTP_Verb_Tampering.pdf (manual-import) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

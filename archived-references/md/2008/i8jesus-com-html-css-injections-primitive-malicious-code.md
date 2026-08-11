@@ -5,17 +5,19 @@ resource: "http://i8jesus.com/?p=10"
 tags: [article, webseclist-reference, en-US, i8jesus-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T20:42:57+00:00"
+  at: "2026-08-11T16:31:45+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://i8jesus.com/?p=10"
     title: HTML/CSS Injections - Primitive Malicious Code
+    author: Arshan Dabirsiaghi
   - id: capture
     resource: "https://web.archive.org/web/20110823213126/http://i8jesus.com/?p=10"
 also_at: []
-authors: []
+authors:
+  - Arshan Dabirsiaghi
 canonical_url: ""
 cited_by:
   - "2008.md:38"
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: 4771d51a5b87d9192a7dabb9b9354f6c3db768ac44147a0bcc7f70be35122b52
 retrieved_from: "http://i8jesus.com/?p=10"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T20:42:57+00:00"
+retrieved_utc: "2026-08-11T16:31:45+00:00"
 slug: i8jesus-com-html-css-injections-primitive-malicious-code
 snapshot: 20110823213126
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # HTML/CSS Injections - Primitive Malicious Code
 
-**HTML/CSS Injections - Primitive Malicious Code** - Author not stated, i8jesus.com.
+**HTML/CSS Injections - Primitive Malicious Code** - Arshan Dabirsiaghi, i8jesus.com.
 
 - Published: date not stated
 - Original: <http://i8jesus.com/?p=10>
-- Preserved from: http://i8jesus.com/?p=10 (stored) on 2026-08-10
+- Preserved from: http://i8jesus.com/?p=10 (stored) on 2026-08-11
 - Capture timestamp: 20110823213126
 - Licence: unknown
 

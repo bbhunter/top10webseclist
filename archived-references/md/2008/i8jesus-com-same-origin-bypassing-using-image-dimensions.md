@@ -5,17 +5,19 @@ resource: "http://i8jesus.com/?p=13"
 tags: [article, webseclist-reference, en-US, i8jesus-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T20:42:58+00:00"
+  at: "2026-08-11T16:31:45+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://i8jesus.com/?p=13"
     title: Same Origin Bypassing Using Image Dimensions
+    author: Arshan Dabirsiaghi
   - id: capture
     resource: "https://web.archive.org/web/20120304195421/http://i8jesus.com/?p=13"
 also_at: []
-authors: []
+authors:
+  - Arshan Dabirsiaghi
 canonical_url: ""
 cited_by:
   - "2008.md:34"
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: c0b02f480f1f6c96f60bb057b784944562a31cecc5046ee1b17e1a30b5909492
 retrieved_from: "http://i8jesus.com/?p=13"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T20:42:58+00:00"
+retrieved_utc: "2026-08-11T16:31:45+00:00"
 slug: i8jesus-com-same-origin-bypassing-using-image-dimensions
 snapshot: 20120304195421
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Same Origin Bypassing Using Image Dimensions
 
-**Same Origin Bypassing Using Image Dimensions** - Author not stated, i8jesus.com.
+**Same Origin Bypassing Using Image Dimensions** - Arshan Dabirsiaghi, i8jesus.com.
 
 - Published: date not stated
 - Original: <http://i8jesus.com/?p=13>
-- Preserved from: http://i8jesus.com/?p=13 (stored) on 2026-08-10
+- Preserved from: http://i8jesus.com/?p=13 (stored) on 2026-08-11
 - Capture timestamp: 20120304195421
 - Licence: unknown
 

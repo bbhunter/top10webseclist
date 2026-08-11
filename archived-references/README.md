@@ -1544,7 +1544,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Abusing HTML 5 Structured Client-side Storage](md/2008/abusing-html-5-structured-client-side-storage.md) | whitepaper |  |  | research | 1 |
 | [Abusing PHP Sockets](md/2008/abusing-php-sockets.md) | whitepaper |  |  | research | 1 |
 | [Black Ops 2008: It's The End Of The Cache As We Know It](md/2008/black-ops-2008-it-s-end-cache-as-we-know-it.md) | whitepaper |  |  | research | 1 |
-| [Bypassing URL Authentication and Authorization with HTTP Verb Tampering](md/2008/bypassing-url-authentication-authorization-http-verb-tampering.md) | whitepaper |  |  | research | 1 |
+| [Bypassing URL Authentication and Authorization with HTTP Verb Tampering](md/2008/bypassing-url-authentication-authorization-http-verb-tampering.md) | whitepaper | Aspect Security |  | research | 1 |
 | [Concurrency Attacks in Web Applications](md/2008/concurrency-attacks-web-applications.md) | whitepaper |  |  | research | 1 |
 | [Exploitable Redirects on the Web: Identification, Prevalence, and Defense](md/2008/exploitable-redirects-web-identification-prevalence-defense.md) | whitepaper |  |  | research | 1 |
 | [File Download Injection](md/2008/file-download-injection.md) | whitepaper |  |  | research | 1 |

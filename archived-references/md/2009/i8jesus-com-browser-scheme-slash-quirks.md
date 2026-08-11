@@ -5,17 +5,19 @@ resource: "http://i8jesus.com/?p=37"
 tags: [article, webseclist-reference, i8jesus-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T20:42:58+00:00"
+  at: "2026-08-11T16:31:45+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://i8jesus.com/?p=37"
     title: Browser Scheme and Slash Quirks
+    author: Arshan Dabirsiaghi
   - id: capture
     resource: "https://web.archive.org/web/20100716121753/http://i8jesus.com/?p=37"
 also_at: []
-authors: []
+authors:
+  - Arshan Dabirsiaghi
 canonical_url: ""
 cited_by:
   - "2009.md:57"
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: e30bf324425561cb8c525f30439598fc9670fb2a2e1bd8353b8d2766d2568e2a
 retrieved_from: "http://i8jesus.com/?p=37"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T20:42:58+00:00"
+retrieved_utc: "2026-08-11T16:31:45+00:00"
 slug: i8jesus-com-browser-scheme-slash-quirks
 snapshot: 20100716121753
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Browser Scheme and Slash Quirks
 
-**Browser Scheme and Slash Quirks** - Author not stated, i8jesus.com.
+**Browser Scheme and Slash Quirks** - Arshan Dabirsiaghi, i8jesus.com.
 
 - Published: date not stated
 - Original: <http://i8jesus.com/?p=37>
-- Preserved from: http://i8jesus.com/?p=37 (stored) on 2026-08-10
+- Preserved from: http://i8jesus.com/?p=37 (stored) on 2026-08-11
 - Capture timestamp: 20100716121753
 - Licence: unknown
 

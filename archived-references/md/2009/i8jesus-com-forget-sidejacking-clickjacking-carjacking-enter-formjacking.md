@@ -5,17 +5,19 @@ resource: "http://i8jesus.com/?p=48"
 tags: [article, webseclist-reference, en-US, i8jesus-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T20:42:59+00:00"
+  at: "2026-08-11T16:31:45+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "http://i8jesus.com/?p=48"
     title: "Forget Sidejacking, Clickjacking, and Carjacking: Enter Formjacking"
+    author: Arshan Dabirsiaghi
   - id: capture
     resource: "https://web.archive.org/web/20111018061127/http://i8jesus.com/?p=48"
 also_at: []
-authors: []
+authors:
+  - Arshan Dabirsiaghi
 canonical_url: ""
 cited_by:
   - "2009.md:59"
@@ -33,7 +35,7 @@ publisher_english: ""
 raw_sha256: d3398e251bafc50808df3414fc73fb559cc531e5d5c9a9e8dd38d738a7f1a433
 retrieved_from: "http://i8jesus.com/?p=48"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T20:42:59+00:00"
+retrieved_utc: "2026-08-11T16:31:45+00:00"
 slug: i8jesus-com-forget-sidejacking-clickjacking-carjacking-enter-formjacking
 snapshot: 20111018061127
 title_english: ""
@@ -43,11 +45,11 @@ translation_of: ""
 
 # Forget Sidejacking, Clickjacking, and Carjacking: Enter Formjacking
 
-**Forget Sidejacking, Clickjacking, and Carjacking: Enter Formjacking** - Author not stated, i8jesus.com.
+**Forget Sidejacking, Clickjacking, and Carjacking: Enter Formjacking** - Arshan Dabirsiaghi, i8jesus.com.
 
 - Published: date not stated
 - Original: <http://i8jesus.com/?p=48>
-- Preserved from: http://i8jesus.com/?p=48 (stored) on 2026-08-10
+- Preserved from: http://i8jesus.com/?p=48 (stored) on 2026-08-11
 - Capture timestamp: 20111018061127
 - Licence: unknown
 
