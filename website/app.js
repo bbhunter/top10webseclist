@@ -2638,6 +2638,64 @@ function clampNumber(value, min, max) {
   return Math.max(min, Math.min(max, value));
 }
 
+// SYNTAX HIGHLIGHTING, WITHOUT A LIBRARY. The Content-Security-Policy is
+// script-src 'self', so a CDN highlighter is not an option and vendoring one
+// for a handful of token classes is not worth the weight. This scans the RAW
+// source and escapes every piece as it emits it - never the other way round.
+// Highlighting escaped text would mean matching against &quot; and &amp;, and
+// one wrong boundary there turns archived exploit text into live markup.
+const HL_KEYWORDS = {
+  python: "and as assert async await break class continue def del elif else except finally for from global if import in is lambda nonlocal not or pass raise return try while with yield None True False self print",
+  javascript: "async await break case catch class const continue debugger default delete do else export extends finally for function if import in instanceof let new return static super switch this throw try typeof var void while with yield null true false undefined",
+  php: "abstract and array as break callable case catch class clone const continue declare default do echo else elseif empty enddeclare endfor endforeach endif endswitch endwhile extends final finally fn for foreach function global if implements include include_once instanceof insteadof interface isset list namespace new or print private protected public require require_once return static switch throw trait try unset use var while xor yield null true false",
+  java: "abstract assert boolean break byte case catch char class const continue default do double else enum extends final finally float for goto if implements import instanceof int interface long native new package private protected public return short static strictfp super switch synchronized this throw throws transient try void volatile while null true false",
+  ruby: "alias and begin break case class def defined do else elsif end ensure false for if in module next nil not or redo rescue retry return self super then true undef unless until when while yield puts require",
+  elixir: "after and case catch cond def defmodule defp do else end fn for if import in not or quote raise rescue require try unless unquote use when nil true false",
+  sql: "select from where insert update delete into values join left right inner outer on group by order having limit union all as and or not null convert cast char varchar int",
+  bash: "if then else elif fi for while do done case esac function return export local echo cd exit",
+  go: "break case chan const continue default defer else fallthrough for func go goto if import interface map package range return select struct switch type var nil true false",
+};
+HL_KEYWORDS.js = HL_KEYWORDS.javascript;
+HL_KEYWORDS.nodejs = HL_KEYWORDS.javascript;
+HL_KEYWORDS.jinja = HL_KEYWORDS.python;
+HL_KEYWORDS.py = HL_KEYWORDS.python;
+HL_KEYWORDS.sh = HL_KEYWORDS.bash;
+HL_KEYWORDS.shell = HL_KEYWORDS.bash;
+
+// Which comment openers are real for a language: '#' starts a comment in Python
+// and Ruby but is a fragment in a URL and an id selector in CSS, so treating it
+// as a comment everywhere greys out half of an HTTP listing.
+const HL_HASH = new Set(["python", "py", "ruby", "bash", "sh", "shell", "php", "yaml", "jinja"]);
+const HL_SLASH = new Set(["javascript", "js", "nodejs", "java", "php", "go", "c", "cpp", "csharp", "rust", "kotlin", "swift", "scala"]);
+
+function highlightCode(code, language) {
+  const lang = String(language || "").toLowerCase();
+  const words = HL_KEYWORDS[lang];
+  // An unknown or deliberately plain language still gets escaped, just not lit.
+  if (!words && !HL_HASH.has(lang) && !HL_SLASH.has(lang)) return h(code);
+  const keywords = new Set((words || "").split(" ").filter(Boolean));
+  const parts = ["(\\/\\*[\\s\\S]*?\\*\\/|<!--[\\s\\S]*?-->)"];
+  const lineComment = [HL_SLASH.has(lang) ? "\\/\\/[^\\n]*" : "", HL_HASH.has(lang) ? "#[^\\n]*" : ""]
+    .filter(Boolean).join("|");
+  parts.push(lineComment ? `(${lineComment})` : "(?!)()");
+  parts.push('("(?:\\\\.|[^"\\\\\\n])*"|\'(?:\\\\.|[^\'\\\\\\n])*\'|`(?:\\\\.|[^`\\\\])*`)');
+  parts.push("(\\b\\d[\\w.]*\\b)");
+  parts.push("([A-Za-z_$][\\w$]*)");
+  const scanner = new RegExp(parts.join("|"), "g");
+  let out = "", last = 0, match;
+  while ((match = scanner.exec(code))) {
+    out += h(code.slice(last, match.index));
+    const [text, block, line, string, number, word] = match;
+    if (block || line) out += `<span class="tok-com">${h(text)}</span>`;
+    else if (string) out += `<span class="tok-str">${h(text)}</span>`;
+    else if (number) out += `<span class="tok-num">${h(text)}</span>`;
+    else if (word && keywords.has(word)) out += `<span class="tok-kw">${h(text)}</span>`;
+    else out += h(text);
+    last = match.index + text.length;
+  }
+  return out + h(code.slice(last));
+}
+
 function inlineMarkdown(value) {
   const codeTokens = [];
   // The raw "<" in the placeholder cannot appear in escaped text, so document
@@ -2717,7 +2775,7 @@ function markdownDocument(markdown) {
       const code = [];
       index++;
       while (index < lines.length && !/^```/.test(lines[index].trim())) code.push(lines[index++]);
-      html.push(`<pre><code${language ? ` class="language-${h(language)}"` : ""}>${h(code.join("\n"))}</code></pre>`);
+      html.push(`<pre><code${language ? ` class="language-${h(language)}"` : ""}>${highlightCode(code.join("\n"), language)}</code></pre>`);
       continue;
     }
     // A HEADING THE LENGTH OF AN ARTICLE IS NOT A HEADING. Some sources put a

