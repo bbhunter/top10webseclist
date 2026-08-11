@@ -206,6 +206,50 @@ class RecoverySelectorTests(unittest.TestCase):
         self.assertEqual("", refs._accept_byline(
             "https://one.example/a", {"authors": [], "confidence": "low"}, known))
 
+    def test_a_read_byline_never_reaches_the_grader(self):
+        """The regression that cost 214 grades in one run.
+
+        A reading was folded into `paths.decisions()`, so `grade.decide` saw an
+        override carrying nothing but `authors`, defaulted its missing
+        `outcome` to "skip", and excluded the document. Attribution must come
+        back as attribution ONLY - no outcome, no class, no title - so it can
+        never be mistaken for a whole judgement.
+        """
+        from refslib import grade as grade_module
+        stated = refs.attribution_decision(
+            "https://one.example/a", {}, {},
+            {"https://one.example/a": {"authors": ["Alex Example"]}})
+        self.assertEqual({"authors": ["Alex Example"]}, stated)
+        self.assertNotIn("outcome", stated)
+        self.assertNotIn("class", stated)
+        # And the shape the grader would have been handed is no longer built.
+        self.assertEqual("skip", grade_module.classify(
+            "body text", override={"authors": ["Alex Example"]}).outcome,
+            "grade.classify still defaults a bare override to skip, so nothing "
+            "carrying only authors may ever be passed to it as an override")
+
+    def test_a_hand_statement_outranks_a_read_one(self):
+        entry, decisions = {}, {"https://one.example/a": {
+            "outcome": "archive", "authors": ["Hand Stated"]}}
+        readings = {"https://one.example/a": {"authors": ["Read From Text"]}}
+        stated = refs.attribution_decision("https://one.example/a", entry,
+                                           decisions, readings)
+        self.assertEqual(["Hand Stated"], stated["authors"])
+
+    def test_a_withdrawn_credit_is_not_undone_by_a_reading(self):
+        # "authors": [] is a retraction. A reading must not put the name back.
+        decisions = {"https://one.example/a": {"outcome": "archive", "authors": []}}
+        readings = {"https://one.example/a": {"authors": ["Read From Text"]}}
+        stated = refs.attribution_decision("https://one.example/a", {},
+                                           decisions, readings)
+        self.assertEqual([], stated["authors"])
+
+    def test_a_reading_is_found_under_an_alternate_spelling(self):
+        entry = {"spellings": ["https://one.example/a/"]}
+        readings = {"https://one.example/a/": {"authors": ["Alex Example"]}}
+        self.assertEqual(["Alex Example"], refs.attribution_decision(
+            "https://one.example/a", entry, {}, readings)["authors"])
+
     def test_bylines_takes_exactly_one_of_queue_or_apply(self):
         parser = refs.build_parser()
         self.assertEqual("q.json", parser.parse_args(["bylines", "--queue", "q.json"]).queue)

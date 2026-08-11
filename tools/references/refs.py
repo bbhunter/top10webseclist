@@ -130,6 +130,36 @@ def _apply_attribution_override(entry, judged, record=None):
     return bool(stated)
 
 
+def attribution_decision(key, entry, decisions, readings):
+    """What the archive states about WHO WROTE THIS, and nothing else.
+
+    Returns only `authors` and `publisher`, never an outcome, class or title,
+    because the callers feed the result to `_apply_attribution_override` rather
+    than to the grader. Keeping the two apart is the whole point: a reviewed
+    byline briefly lived in `paths.decisions()`, where `grade.decide` read it as
+    a complete judgement, defaulted its missing `outcome` to "skip", and wiped
+    the grade of 214 research references in a single run.
+
+    A hand statement in `overrides.json` wins outright, including when it states
+    nobody. The reading is evidence; the maintainer is the authority.
+    """
+    hand = maintainer_decision(key, entry, decisions) or {}
+    stated = {field: hand[field] for field in ("authors", "publisher") if field in hand}
+    if "authors" in stated:
+        return stated
+    for candidate in [key] + list(entry.get("spellings") or []):
+        reading = readings.get(candidate) or readings.get(candidate.rstrip("/"))
+        names = [str(name).strip() for name in ((reading or {}).get("authors") or [])
+                 if str(name).strip()]
+        # A review that found nobody recorded that it looked. It must not become
+        # an empty `authors`, which means "credit nobody" and would withdraw a
+        # name extraction had legitimately declared.
+        if names:
+            stated["authors"] = names
+            break
+    return stated
+
+
 def _slug_after_attribution(entry, judged):
     """The slug the next `acquire` would build, when a stated publisher moves it.
 
@@ -153,25 +183,28 @@ def _slug_after_attribution(entry, judged):
     return rebuilt if rebuilt != entry.get("slug") else ""
 
 
-def _attribution_changes(urls, decisions):
-    """Every reference whose recorded credit the curated decisions would alter.
+def _attribution_changes(urls, decisions, readings=None):
+    """Every reference whose recorded credit the curated statements would alter.
 
-    Applies as it compares, because a decision is only legible as a change once
+    Applies as it compares, because a statement is only legible as a change once
     it has been written onto the entry. Nothing here saves: the caller decides
     whether the in-memory result is written, which is what lets `--check` report
     the same list without touching the manifest on disk.
     """
+    readings = readings or {}
     changes = []
     for key, entry in sorted(urls.items()):
-        judged = maintainer_decision(key, entry, decisions)
-        if not judged:
+        stated = attribution_decision(key, entry, decisions, readings)
+        if not stated:
             continue
         before = (list(entry.get("authors") or []), entry.get("publisher") or "")
-        _apply_attribution_override(entry, judged)
+        _apply_attribution_override(entry, stated)
         after = (list(entry.get("authors") or []), entry.get("publisher") or "")
         if after != before:
-            changes.append((key, before, after,
-                            _slug_after_attribution(entry, judged)))
+            # The rename check needs the TITLE, which lives on the hand decision
+            # and never on a reading, so it is looked up rather than passed on.
+            changes.append((key, before, after, _slug_after_attribution(
+                entry, maintainer_decision(key, entry, decisions) or {})))
     return changes
 
 
@@ -756,6 +789,7 @@ def command_acquire(args):
           "(config.json -> media_policy).\n" % len(entries))
 
     decisions = paths.decisions()
+    readings = paths.bylines()
     # Host browsers are never used for acquisition. Video captions are obtained
     # by `refs.py transcripts` through yt-dlp in the locked-down toolbox
     # container; dynamic pages are handled by `check-browser`, also in Docker.
@@ -793,7 +827,10 @@ def command_acquire(args):
             # is built FROM the publisher: for a taken-over domain the extracted
             # one is the squatter. Setting it on the record rather than only on
             # the entry is what carries it through the copy loop further down.
-            _apply_attribution_override(entry, judged, record)
+            # Resolved separately from `judged`, which is a GRADING judgement and
+            # must never be handed a bare `authors` entry - see below.
+            _apply_attribution_override(
+                entry, attribution_decision(key, entry, decisions, readings), record)
             # A TITLE READ OFF A WALL IS NOT A TITLE. The probe records what the
             # page called itself, and when the page was a bot check that is what
             # gets archived: a KTH doctoral thesis was filed as "Making sure
@@ -2528,7 +2565,7 @@ def command_attribution(args):
     manifest = check_module.open_manifest(root, config)
     decisions = paths.decisions()
 
-    changed = _attribution_changes(manifest.data["urls"], decisions)
+    changed = _attribution_changes(manifest.data["urls"], decisions, paths.bylines())
 
     if not changed:
         print("Every curated attribution is already recorded in the manifest.")
@@ -2756,7 +2793,8 @@ def command_import(args):
         # An import is also where a stated byline is needed most: a document
         # obtained by hand met a wall, and a wall declares no author. The record
         # below reads both fields off the entry, so applying it here is enough.
-        _apply_attribution_override(entry, judged)
+        _apply_attribution_override(entry, attribution_decision(
+            key, entry, paths.decisions(), paths.bylines()))
         record = {
             "slug": slugs.pinned(was),
             "title": slugs.readable_title(

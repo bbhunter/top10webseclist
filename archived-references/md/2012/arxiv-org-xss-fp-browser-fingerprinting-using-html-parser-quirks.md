@@ -5,18 +5,25 @@ resource: "https://arxiv.org/abs/1211.4812"
 tags: [article, webseclist-reference, en, arxiv-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:02:22+00:00"
+  at: "2026-08-11T17:33:05+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://arxiv.org/abs/1211.4812"
     title: "XSS-FP: Browser Fingerprinting using HTML Parser Quirks"
+    author: Erwan Abgrall, Yves Le Traon, Martin Monperrus, Sylvain Gombault, Mario Heiderich, Alain Ribault
 also_at: []
-authors: []
+authors:
+  - Erwan Abgrall
+  - Yves Le Traon
+  - Martin Monperrus
+  - Sylvain Gombault
+  - Mario Heiderich
+  - Alain Ribault
 canonical_url: ""
 cited_by:
-  - "2012.md:87"
+  - "2012.md:88"
 commit: ""
 content_sha256: 9e4c5e4e93b43f2226d74c3069782379564dd15021237c13f99933c86d23507c
 depth: full
@@ -30,8 +37,8 @@ publisher: arXiv.org
 publisher_english: ""
 raw_sha256: 54f7b4694f816db16517981c6e9942c3635204cde413b3eac076e53c595a7ec6
 retrieved_from: "https://arxiv.org/abs/1211.4812"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:02:22+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-11T17:33:05+00:00"
 slug: arxiv-org-xss-fp-browser-fingerprinting-using-html-parser-quirks
 snapshot: ""
 title_english: ""
@@ -41,11 +48,11 @@ translation_of: ""
 
 # XSS-FP: Browser Fingerprinting using HTML Parser Quirks
 
-**XSS-FP: Browser Fingerprinting using HTML Parser Quirks** - Author not stated, arXiv.org.
+**XSS-FP: Browser Fingerprinting using HTML Parser Quirks** - Erwan Abgrall, Yves Le Traon, Martin Monperrus, Sylvain Gombault, Mario Heiderich, Alain Ribault, arXiv.org.
 
 - Published: date not stated
 - Original: <https://arxiv.org/abs/1211.4812>
-- Preserved from: https://arxiv.org/abs/1211.4812 (live) on 2026-08-10
+- Preserved from: https://arxiv.org/abs/1211.4812 (stored) on 2026-08-11
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

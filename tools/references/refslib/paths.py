@@ -103,30 +103,16 @@ def decisions():
     "this page adds nothing over one we already have" is a human decision and
     the manifest is generated state. A rule never overwrites one of these.
 
-    A REVIEWED BYLINE JOINS THE VIEW HERE, and only ever as `authors`, so every
-    route that already honours a stated author - acquisition, import and
-    `attribution` - honours a read one too without knowing the difference. That
-    matters because the rendered file takes its byline from the decision rather
-    than from the manifest entry: a name recorded anywhere else would show on
-    the website and still be missing from the document a reader opens.
-
-    A hand-stated `authors` is never overruled, including when it states nobody:
-    the reading is evidence, and the maintainer is the authority.
+    NOTHING BUT A HAND DECISION BELONGS IN HERE. A reviewed byline was folded
+    into this view once, on the reasoning that every route honouring a stated
+    author would then honour a read one for free. It cost the archive 214
+    grades in one run: `grade.decide` reads an override as a whole judgement and
+    defaults a missing `outcome` to "skip", so an entry carrying nothing but
+    `authors` told the grader to keep no document at all. Attribution is
+    resolved by `refs.attribution_decision` instead, which reads this and
+    `bylines()` separately and merges only the two attribution fields.
     """
-    stated = dict(load_json("overrides.json").get("decisions") or {})
-    for url, reading in bylines().items():
-        names = [str(name).strip() for name in (reading.get("authors") or [])
-                 if str(name).strip()]
-        # A review that found no byline records that it looked. It must not
-        # reach `decisions`, where an empty `authors` means "credit nobody" and
-        # would withdraw a name that extraction had legitimately declared.
-        if not names:
-            continue
-        hand = stated.get(url) or {}
-        if "authors" in hand:
-            continue
-        stated[url] = dict(hand, authors=names)
-    return stated
+    return (load_json("overrides.json").get("decisions") or {})
 
 
 def store_root():
