@@ -787,3 +787,203 @@ Useful application or case study.
 - **Archive decision:** Do not include
 - **Confidence:** High
 - **Evidence gaps:** None material.
+
+## 80.7 — [Second Breakfast: Implicit and Mutation-Based Serialization Vulnerabilities in .NET](https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Jonathan%20Birch%20-%20Second%20Breakfast%20Implicit%20and%20Mutation-Based%20Serialization%20Vulnerabilities%20in%20.NET-whitepaper.pdf)
+
+**KEPT** · Original technique · confidence High
+
+### Candidate
+
+Jonathan Birch, Microsoft, DEF CON 31 (August 2023); whitepaper, slide deck and
+conference video. Surfaced by the 2026-08-12 pass over the ysonet
+.NET-deserialization reference set.
+
+### Core contribution
+
+A serialization attack that does not require the attacker to supply or tamper
+with the serialized stream. Polymorphic JSON and BSON serializers encode a type
+specifier as an ordinary key ("__type", "$type"), and they also encode key-value
+collections by using the keys directly. Nothing separates the two encodings, so
+an attacker who can only influence a dictionary key inside an object the
+application serializes can make the round trip reconstruct that object as a type
+of their choosing. The whitepaper demonstrates it on JavaScriptSerializer with a
+SimpleTypeResolver and on Json.NET with TypeNameHandling, reaching RCE through
+AssemblyInstaller, and tabulates which of four serializers need the key first
+and which check assignability.
+
+The consequence is the part that matters: the sinks previously treated as safe —
+serialization to a database, to an in-memory cache, or between back-end servers —
+become reachable, and signing the serialized data with an HMAC does not help,
+because the attacker never touches the signed bytes.
+
+### Prior art
+
+Forshaw's 2012 "Are You My Type?" and Munoz and Mirosh's 2017 "Friday the 13th:
+JSON Attacks" are the whitepaper's own cited antecedents and are the closest
+work; both assume an attacker-supplied stream, and the tamper-proofing advice
+that followed them is exactly what this defeats. Type-confusion through a type
+specifier is old; producing that specifier through the collection encoding, from
+data the application itself serializes, is not attested earlier. A mechanism
+search on the collision between type-specifier keys and dictionary keys returned
+this whitepaper as the earliest statement.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 86 | 25% | 21.50 | A vulnerability class with a different threat model from all prior deserialization work, and one that invalidates the standard mitigation. |
+| Transferability | 82 | 20% | 16.40 | The collision is a property of the encoding, not of .NET; four libraries are shown and the reasoning applies to any polymorphic key-value serializer. |
+| Lasting value | 80 | 20% | 16.00 | Reframes "sign your serialized data" as insufficient and opens internal serialization paths as a durable audit target. |
+| Technical soundness | 80 | 15% | 12.00 | Minimal working proofs per serializer and a coherent assignability analysis; no field survey and no measurement of how often the required data flow exists. |
+| Practical usability | 70 | 10% | 7.00 | Needs a specific flow — attacker-controlled keys reaching an unsafe serializer — which is real but not ubiquitous. |
+| Clarity and reproducibility | 78 | 10% | 7.80 | Short and precise with runnable snippets; the affected-serializer table renders poorly in extraction. |
+
+**Final score: 80.7/100.** Archive decision: include as a core technique.
+
+### Verdict
+
+Original technique. It defines a serialization attack that works without stream
+tampering and shows the standard integrity defence does not address it.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the archived DEF CON 31 whitepaper,
+  which carries the author, affiliation and its own bibliography.
+- **Independent prior-art check:** searched by mechanism for dictionary-key
+  injection of a type specifier and for mutation during a serialization round
+  trip, rather than by talk title, and followed the whitepaper's citations
+  backward. Nothing earlier than 2023 states it.
+- **Strongest challenge to the result:** the exploitation payloads are the
+  familiar AssemblyInstaller and ObjectDataProvider gadgets, so only the reach
+  is new, not the code execution.
+- **Benefit-of-doubt check:** reach is precisely the contribution — it converts
+  sinks that were correctly considered out of scope into exploitable ones.
+- **Changes after reverification:** none.
+
+## 79.5 — [Exploiting ASP.NET TemplateParser — Part I](https://code-white.com/blog/exploiting-asp.net-templateparser-part-1/)
+
+**KEPT** · Original technique · confidence High
+
+### Candidate
+
+Markus Wulftange, Code White; Part I published 25 September 2023 and Part II
+("SharePoint (CVE-2023-33160)") 29 September 2023. Judged as one piece of work.
+Surfaced by the 2026-08-12 pass over the ysonet .NET-deserialization reference
+set.
+
+### Core contribution
+
+Setter-based gadgets reached through the ASP.NET page parser itself rather than
+through a serializer. Any application that parses attacker-influenced markup
+lets an @ Register directive name an assembly, namespace and type; the parser
+then instantiates that type and assigns its properties, and property types are
+resolved by reflection. Two observations make that exploitable in general. A
+generic type can be used to control what type a property has — declaring
+ExpandedWrapper&lt;T&gt; makes the ExpandedElement property take type T, so
+assigning a string routes through T's TypeConverter — which turns the parser
+into a general "call an arbitrary TypeConverter on an attacker string" gadget.
+Part II then defeats SharePoint's SafeControls allow-list, which validates the
+control type during tokenisation, and reaches RCE as CVE-2023-33160.
+
+### Prior art
+
+Soroush Dalili's "A Security Review of SharePoint Site Pages" and Munoz and
+Mirosh's "Room for Escape: Scribbling Outside the Lines of Template Security" are
+both from 2020 and both already nominated on the 2020 list; the post cites them
+as required reading. They analyse SPPageParserFilter and template security in
+SharePoint. What is new here is moving down a layer to the framework's own
+TemplateParser, so the gadget class exists for any ASP.NET application that
+parses user-supplied markup, and the ExpandedWrapper generic-type trick for
+controlling a property's declared type. Independent evidence of the gain:
+Viettel's 2025 SharePoint ToolShell chain for CVE-2025-53770, already archived,
+names Part I as the source of the technique it used, and Mirosh's 2026 Black Hat
+type-conversion paper cites Part II.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 78 | 25% | 19.50 | A gadget class in the page parser rather than a serializer, plus the generic-type route to controlling property types. |
+| Transferability | 76 | 20% | 15.20 | Applies to any ASP.NET application that parses attacker-influenced markup; the TypeConverter reach is a general primitive. |
+| Lasting value | 80 | 20% | 16.00 | Demonstrably reused by later work, including the 2025 SharePoint ToolShell chain and 2026 type-conversion research. |
+| Technical soundness | 88 | 15% | 13.20 | Traced through framework reference source with a vendor-confirmed CVE at the end. |
+| Practical usability | 74 | 10% | 7.40 | Usable where markup parsing is exposed, which is a real but not universal precondition; no tool released. |
+| Clarity and reproducibility | 82 | 10% | 8.20 | Two-part writeup with the parser policy stated explicitly and payloads given. |
+
+**Final score: 79.5/100.** Archive decision: include as a core technique.
+
+### Verdict
+
+Original technique. It establishes the ASP.NET TemplateParser as a gadget
+surface in its own right and supplies the generic-type primitive that makes it
+general rather than SharePoint-specific.
+
+### Reverification
+
+- **Candidate facts rechecked against:** both Code White posts, whose bylines
+  give 25 and 29 September 2023 and the author, and MSRC for CVE-2023-33160.
+- **Independent prior-art check:** searched for setter-based gadgets in ASP.NET
+  page parsing and for TypeConverter abuse through generic wrappers, and checked
+  the 2020 list entries the post itself cites. The 2020 work is SharePoint-level;
+  the parser-level generalisation is not attested before 2023.
+- **Strongest challenge to the result:** with two 2020 nominations already
+  covering SharePoint template security, this could be read as a third pass over
+  the same ground.
+- **Benefit-of-doubt check:** the layer is different and the reuse by later,
+  unrelated researchers is documented in the archive rather than asserted here.
+- **Changes after reverification:** none.
+
+## 57.4 — [Generating deserialization payloads for MessagePack C#'s Typeless mode](https://www.netwrix.com/en/resources/blog/generating-deserialization-payloads-for-messagepack-cs-typeless-mode/) — Netwrix
+
+**REMOVED** · Useful application or case study · confidence High
+
+### Candidate
+
+Published 10 April 2023. Judged in the 2026-08-12 pass over the ysonet
+.NET-deserialization reference set.
+
+### Core contribution
+
+Shows that MessagePack-CSharp's Typeless mode is an unbounded polymorphic
+serializer like any other — it embeds assembly-qualified type names and
+restores private fields — and walks through building working payloads for it
+with the established gadgets, including under MessagePack's hardened security
+options. Useful as a warning for teams migrating off BinaryFormatter.
+
+### Prior art
+
+The gadget chains used are the standard ObjectDataProvider and XXE ones from
+2017 onward, and the library's own documentation already advises against
+Typeless with untrusted data. The contribution is coverage of one more
+serializer, which the rubric explicitly declines to count as a new technique.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 45 | 25% | 11.25 | Applies known gadgets to a serializer already documented as unsafe for untrusted input. |
+| Transferability | 50 | 20% | 10.00 | Confined to MessagePack Typeless; the general "polymorphic serializer is a sink" lesson predates it. |
+| Lasting value | 46 | 20% | 9.20 | Relevant while BinaryFormatter migrations continue, with no broader consequence. |
+| Technical soundness | 78 | 15% | 11.70 | Payload construction is demonstrated concretely, including behaviour with hardened options enabled. |
+| Practical usability | 72 | 10% | 7.20 | Directly usable against this library. |
+| Clarity and reproducibility | 80 | 10% | 8.00 | Step-by-step with runnable code. |
+
+**Final score: 57.4/100.** Archive decision: do not include.
+
+### Verdict
+
+Useful application or case study. Extending an established sink taxonomy to one
+more library is coverage, not discovery.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the archived post, which carries the
+  10 April 2023 date and the payload code.
+- **Independent prior-art check:** searched for earlier MessagePack Typeless
+  exploitation and for the general polymorphic-serializer taxonomy; the library
+  documentation and the 2017 gadget work both predate it.
+- **Strongest challenge to the result:** the demonstration that MessagePack's
+  hardened options do not help is a concrete, non-obvious result.
+- **Benefit-of-doubt check:** that result lifts technical soundness, but it
+  confirms an expectation rather than changing the model.
+- **Changes after reverification:** none.

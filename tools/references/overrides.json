@@ -43,7 +43,9 @@
     "https://aspectsecurity.com/documents/Bypassing_VBAAC_with_HTTP_Verb_Tampering.pdf": {
       "outcome": "archive",
       "class": "research",
-      "authors": ["Arshan Dabirsiaghi"],
+      "authors": [
+        "Arshan Dabirsiaghi"
+      ],
       "publisher": "Aspect Security",
       "reason": "The hand-imported whitepaper is the right document and names its own author on page one - \"Arshan Dabirsiaghi, Director of Research, Aspect Security\" - but a PDF byline is body text, so extraction recorded neither an author nor a publisher and the file read \"Author not stated, Publisher not stated\". Both are stated here. The title is left as the citation spells it; the paper's own heading reads \"Web\" where the 2008 list reads \"URL\", which is a curation question and not an attribution one."
     },
@@ -51,7 +53,9 @@
       "outcome": "archive",
       "class": "research",
       "title": "JavaSnoop",
-      "authors": ["Arshan Dabirsiaghi"],
+      "authors": [
+        "Arshan Dabirsiaghi"
+      ],
       "reason": "The live domain served a GoDaddy sale page. A near-publication Wayback capture recovered the cited project page; the curated citation title replaces the stale parked-domain heading and file name. JavaSnoop was written by Arshan Dabirsiaghi at Aspect Security; the recovered project page declares no author, so the byline is stated here."
     },
     "https://gosecure.net/blog/2023/06/21/aws-waf-clients-left-vulnerable-to-sql-injection-due-to-unorthodox-mssql-design-choice": {
@@ -64,35 +68,45 @@
       "outcome": "archive",
       "class": "research",
       "title": "HTML/CSS Injections - Primitive Malicious Code",
-      "authors": ["Arshan Dabirsiaghi"],
+      "authors": [
+        "Arshan Dabirsiaghi"
+      ],
       "reason": "The live domain served a HugeDomains sale page. A 2008 Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name. i8jesus.com was Arshan Dabirsiaghi's blog and the 2008-era captures declare no author, so the byline is stated here."
     },
     "https://i8jesus.com/?p=13": {
       "outcome": "archive",
       "class": "research",
       "title": "Same Origin Bypassing Using Image Dimensions",
-      "authors": ["Arshan Dabirsiaghi"],
+      "authors": [
+        "Arshan Dabirsiaghi"
+      ],
       "reason": "The live domain served a HugeDomains sale page. A 2008 Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name. i8jesus.com was Arshan Dabirsiaghi's blog and the 2008-era captures declare no author, so the byline is stated here."
     },
     "https://i8jesus.com/?p=37": {
       "outcome": "archive",
       "class": "research",
       "title": "Browser Scheme and Slash Quirks",
-      "authors": ["Arshan Dabirsiaghi"],
+      "authors": [
+        "Arshan Dabirsiaghi"
+      ],
       "reason": "The live domain served a HugeDomains sale page. A near-publication Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name. i8jesus.com was Arshan Dabirsiaghi's blog and the 2009-era captures declare no author, so the byline is stated here."
     },
     "https://i8jesus.com/?p=48": {
       "outcome": "archive",
       "class": "research",
       "title": "Forget Sidejacking, Clickjacking, and Carjacking: Enter Formjacking",
-      "authors": ["Arshan Dabirsiaghi"],
+      "authors": [
+        "Arshan Dabirsiaghi"
+      ],
       "reason": "The live domain served a HugeDomains sale page. A near-publication Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name. i8jesus.com was Arshan Dabirsiaghi's blog and the 2009-era captures declare no author, so the byline is stated here."
     },
     "https://i8jesus.com/?p=75": {
       "outcome": "archive",
       "class": "research",
       "title": "Cross-protocol XSS with non-standard service ports",
-      "authors": ["Arshan Dabirsiaghi"],
+      "authors": [
+        "Arshan Dabirsiaghi"
+      ],
       "reason": "The live domain and one replay served a HugeDomains sale page. An alternate 2009 Wayback capture recovered the cited article; the curated citation title replaces the stale parked-domain file name. i8jesus.com was Arshan Dabirsiaghi's blog and the 2009-era captures declare no author, so the byline is stated here."
     },
     "https://blog.quaji.com/2009/12/out-of-context-information-disclosure.html": {
@@ -212,7 +226,9 @@
       "outcome": "archive",
       "class": "research",
       "reason": "Verified live on 2026-08-06 as the cited article. Its discussion of custom error handling contains the phrase 'page not found', which is research text rather than evidence that the server returned a not-found page. soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text.",
-      "authors": ["Soroush Dalili"]
+      "authors": [
+        "Soroush Dalili"
+      ]
     },
     "https://www.youtube.com/TheKn0ck#p/a/u/1/r-kgKNspqjQ": {
       "outcome": "skip",
@@ -785,92 +801,255 @@
     "https://soroush.me/blog/browsers-anti-xss-methods-in-asp-classic-have-been-defeated": {
       "outcome": "archive",
       "class": "research",
-      "authors": ["Soroush Dalili"],
+      "authors": [
+        "Soroush Dalili"
+      ],
       "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
     },
     "https://soroush.me/blog/cookieless-duodrop-iis-auth-bypass-app-pool-privesc-in-asp-net-framework-cve-2023-36899": {
       "outcome": "archive",
       "class": "research",
-      "authors": ["Soroush Dalili"],
+      "authors": [
+        "Soroush Dalili"
+      ],
       "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
     },
     "https://soroush.me/blog/cross-site-url-hijacking-by-using-error-object-in-mozilla-firefox": {
       "outcome": "archive",
       "class": "research",
-      "authors": ["Soroush Dalili"],
+      "authors": [
+        "Soroush Dalili"
+      ],
       "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
     },
     "https://soroush.me/blog/drag-and-drop-xss-in-firefox-by-html5-cross-domain-in-frames": {
       "outcome": "archive",
       "class": "research",
-      "authors": ["Soroush Dalili"],
+      "authors": [
+        "Soroush Dalili"
+      ],
       "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
     },
     "https://soroush.me/blog/exploiting-deserialisation-in-asp-net-via-viewstate": {
       "outcome": "archive",
       "class": "research",
-      "authors": ["Soroush Dalili"],
+      "authors": [
+        "Soroush Dalili"
+      ],
       "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
     },
     "https://soroush.me/blog/ie9-self-xss-blackbox-protection-bypass": {
       "outcome": "archive",
       "class": "research",
-      "authors": ["Soroush Dalili"],
+      "authors": [
+        "Soroush Dalili"
+      ],
       "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
     },
     "https://soroush.me/blog/iis-application-vs-folder-detection-during-blackbox-testing": {
       "outcome": "archive",
       "class": "research",
-      "authors": ["Soroush Dalili"],
+      "authors": [
+        "Soroush Dalili"
+      ],
       "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
     },
     "https://soroush.me/blog/iis5-1-directory-authentication-bypass-by-using-i30index-allocation": {
       "outcome": "archive",
       "class": "research",
-      "authors": ["Soroush Dalili"],
+      "authors": [
+        "Soroush Dalili"
+      ],
       "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
     },
     "https://soroush.me/blog/mongodb-nosql-injection-with-aggregation-pipelines": {
       "outcome": "archive",
       "class": "research",
-      "authors": ["Soroush Dalili"],
+      "authors": [
+        "Soroush Dalili"
+      ],
       "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
     },
     "https://soroush.me/blog/story-of-two-published-rces-in-sharepoint-workflows": {
       "outcome": "archive",
       "class": "research",
-      "authors": ["Soroush Dalili"],
+      "authors": [
+        "Soroush Dalili"
+      ],
       "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
     },
     "https://soroush.me/blog/thirteen-years-on-advancing-the-understanding-of-iis-short-file-name-sfn-disclosure": {
       "outcome": "archive",
       "class": "research",
-      "authors": ["Soroush Dalili"],
+      "authors": [
+        "Soroush Dalili"
+      ],
       "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
     },
     "https://soroush.me/blog/uploading-web-config-for-fun-and-profit-2": {
       "outcome": "archive",
       "class": "research",
-      "authors": ["Soroush Dalili"],
+      "authors": [
+        "Soroush Dalili"
+      ],
       "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
     },
     "https://soroush.me/blog/x-up-devcap-post-charset-header-in-aspnet-to-bypass-wafs-again": {
       "outcome": "archive",
       "class": "research",
-      "authors": ["Soroush Dalili"],
+      "authors": [
+        "Soroush Dalili"
+      ],
       "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
     },
     "https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications-_v1.1.pdf": {
       "outcome": "archive",
       "class": "research",
-      "authors": ["Soroush Dalili"],
+      "authors": [
+        "Soroush Dalili"
+      ],
       "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
     },
     "https://soroush.me/downloadable/getting_shell_with_xamlx_files.pdf": {
       "outcome": "archive",
       "class": "research",
-      "authors": ["Soroush Dalili"],
+      "authors": [
+        "Soroush Dalili"
+      ],
       "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
+    },
+    "https://www.youtube.com/watch?v=Xfbu-pQ1tIc": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The Black Hat USA 2012 conference recording is retained in the 2012 list, but James Forshaw's own research is archived from the whitepaper at https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_WP.pdf and the slide deck at https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_Slides.pdf, both cited on the same line."
+    },
+    "https://www.youtube.com/watch?v=v0fraChyonQ": {
+      "outcome": "skip",
+      "class": "derivative",
+      "reason": "The DEF CON 31 conference recording is retained in the 2023 list, but Jonathan Birch's own research is archived from the whitepaper at https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Jonathan%20Birch%20-%20Second%20Breakfast%20Implicit%20and%20Mutation-Based%20Serialization%20Vulnerabilities%20in%20.NET-whitepaper.pdf and the slide deck at https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Jonathan%20Birch%20-%20Second%20Breakfast%20Implicit%20and%20Mutation-Based%20Serialization%20Vulnerabilities%20in%20.NET.pdf, both cited on the same line."
+    },
+    "https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_WP.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "James Forshaw"
+      ],
+      "publisher": "Context Information Security",
+      "reason": "The whitepaper's own cover and footer state the byline - \"Are you my Type? Breaking .NET Through Serialization James Forshaw whitepapers@contextis.com\" - and carry Context Information Security's address; media.blackhat.com is the venue's file host, not the publisher."
+    },
+    "https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_Slides.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Are You My Type? Breaking .NET Through Serialization - Slides",
+      "authors": [
+        "James Forshaw"
+      ],
+      "publisher": "Context Information Security",
+      "reason": "Slide 1 states \"ARE YOU MY TYPE? Breaking .NET sandboxes through Serialization James Forshaw\", and the deck carries Context Information Security's contact details. The recorded title was the file name."
+    },
+    "https://code-white.com/blog/2019-02-telerik-revisited": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Markus Wulftange"
+      ],
+      "publisher": "Code White",
+      "reason": "The post's byline on code-white.com reads \"Feb 7, 2019 | Markus Wulftange\"; the site template puts it in page chrome that extraction does not keep."
+    },
+    "https://netspi.com/blog/technical-blog/red-teaming/re-animating-activitysurrogateselector": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Nick Landers"
+      ],
+      "publisher": "NetSPI",
+      "reason": "NetSPI's author box directly beneath the title and date reads \"Nick Landers\". The James Forshaw mentioned in the body is cited prior work, not the byline."
+    },
+    "https://code-white.com/blog/2022-01-dotnet-remoting-revisited": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Markus Wulftange"
+      ],
+      "publisher": "Code White",
+      "reason": "The post's byline on code-white.com reads \"Jan 27, 2022 | Markus Wulftange\"; the site template puts it in page chrome that extraction does not keep. The James Forshaw mentioned in the body is cited prior work."
+    },
+    "https://code-white.com/blog/exploiting-asp.net-templateparser-part-1": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Markus Wulftange"
+      ],
+      "publisher": "Code White",
+      "reason": "The post's byline on code-white.com reads \"Sep 25, 2023 | Markus Wulftange\"; the site template puts it in page chrome that extraction does not keep."
+    },
+    "https://code-white.com/blog/exploiting-asp.net-templateparser-part-2": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "CODE WHITE | Exploiting ASP.NET TemplateParser - Part II: SharePoint (CVE-2023-33160)",
+      "authors": [
+        "Markus Wulftange"
+      ],
+      "publisher": "Code White",
+      "reason": "The post's byline on code-white.com reads \"Sep 29, 2023 | Markus Wulftange\". The recorded title had lost the series name, leaving a bare \"Part II\" that does not say what it is part of."
+    },
+    "https://code-white.com/blog/leaking-objrefs-to-exploit-http-dotnet-remoting": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Markus Wulftange"
+      ],
+      "publisher": "Code White",
+      "reason": "The post's byline on code-white.com reads \"Feb 27, 2024 | Markus Wulftange\"; the site template puts it in page chrome that extraction does not keep."
+    },
+    "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Jonathan%20Birch%20-%20Second%20Breakfast%20Implicit%20and%20Mutation-Based%20Serialization%20Vulnerabilities%20in%20.NET-whitepaper.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Jonathan Birch"
+      ],
+      "publisher": "DEF CON",
+      "reason": "The whitepaper's title block states \"Jonathan Birch, Microsoft Corporation\"; media.defcon.org is the conference's file host."
+    },
+    "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Jonathan%20Birch%20-%20Second%20Breakfast%20Implicit%20and%20Mutation-Based%20Serialization%20Vulnerabilities%20in%20.NET.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Second Breakfast: Implicit and Mutation-Based Serialization Vulnerabilities in .NET - Slides",
+      "authors": [
+        "Jonathan Birch"
+      ],
+      "publisher": "DEF CON",
+      "reason": "The \"Who I am\" slide states \"Jonathan Birch - Principal Security Software Engineer at Microsoft\". The recorded title was the file name, which carried the speaker's name into the title."
+    },
+    "https://labs.watchtowr.com/we-spent-20-to-achieve-rce-and-accidentally-became-the-admins-of-mobi": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Benjamin Harris",
+        "Aliz Hammond"
+      ],
+      "publisher": "watchTowr",
+      "reason": "The post is bylined to both researchers; extraction kept only the first. Both names appear on the article header."
+    },
+    "https://labs.watchtowr.com/8-million-requests-later-we-made-the-solarwinds-supply-chain-attack-look-amateur": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Benjamin Harris",
+        "Aliz Hammond",
+        "Pinaki Mondal"
+      ],
+      "publisher": "watchTowr",
+      "reason": "The post is bylined to all three researchers; extraction kept only the first. All three names appear on the article header."
+    },
+    "https://blog.orange.tw/posts/2024-06-cve-2024-4577-yet-another-php-rce": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Orange Tsai"
+      ],
+      "publisher": "DEVCORE",
+      "reason": "Orange Tsai is the sole author; the publisher is DEVCORE, whose security alert accompanies the post, rather than the blog hostname."
     }
   }
 }

@@ -488,3 +488,116 @@ separation of preview identity from landing identity form the extension.
 
 Meaningful extension. Familiar deception components are organized into a
 transferable attack model for platform-generated link previews.
+
+## 56.7 — [SharePoint and Pwn: Remote Code Execution Against SharePoint Server Abusing DataSet](https://srcincite.io/blog/2020/07/20/sharepoint-and-pwn-remote-code-execution-against-sharepoint-server-abusing-dataset.html) — Steven Seeley, Source Incite
+
+**REMOVED** · Useful application or case study · confidence High
+
+### Candidate
+
+Published 20 July 2020. Judged in the 2026-08-12 pass over the ysonet
+.NET-deserialization reference set.
+
+### Core contribution
+
+A breakdown of CVE-2020-1147 and a path from it to RCE as a low-privileged
+SharePoint user: the DataSet XML schema lets the payload declare a column's
+msdata:DataType, and an existing column definition is temporarily added to the
+type allow-list, so an attacker-chosen type such as ObjectDataProvider is
+constructed during XML deserialization.
+
+### Prior art
+
+The post opens by crediting the bug to Oleksandr Mirosh, Markus Wulftange and
+Jonathan Birch. Their own presentation of the underlying work, "Room for Escape:
+Scribbling Outside the Lines of Template Security" (Black Hat USA 2020), is
+already a 2020 nomination on this list, and Microsoft published the DataSet
+security guidance the post quotes. What is added is the SharePoint reachability
+analysis, not the DataSet primitive.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 38 | 25% | 9.50 | Analysis of a bug whose discoverers and their own writeup are already represented on this list. |
+| Transferability | 48 | 20% | 9.60 | The DataSet schema trick transfers, but it is the credited researchers' contribution rather than this post's. |
+| Lasting value | 52 | 20% | 10.40 | Widely read as the readable explanation of the DataSet gadget; the knowledge itself is nominated elsewhere. |
+| Technical soundness | 84 | 15% | 12.60 | Schema, code and constraints are demonstrated precisely and honestly, including the deliberate omission of a full exploit. |
+| Practical usability | 66 | 10% | 6.60 | Enough to reproduce the primitive, deliberately not enough to weaponise. |
+| Clarity and reproducibility | 80 | 10% | 8.00 | Clear, sequential and well evidenced. |
+
+**Final score: 56.7/100.** Archive decision: do not include.
+
+### Verdict
+
+Useful application or case study — below the gate, and the underlying technique
+is already nominated for 2020 through its discoverers' own publication.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the archived post, which states the
+  date and credits the three discoverers by name.
+- **Independent prior-art check:** confirmed "Room for Escape" is present in
+  2020.md, and checked whether this post adds a primitive beyond it; the addition
+  is the SharePoint reach, not the DataSet mechanism.
+- **Strongest challenge to the result:** this is the version most practitioners
+  actually learned the DataSet gadget from.
+- **Benefit-of-doubt check:** popularisation is credited separately from
+  discovery under the neutrality rules and does not raise the novelty score.
+- **Changes after reverification:** none.
+
+## 51.8 — [CVE-2020-0688: Losing the keys to your kingdom](https://securitylab.github.com/research/exchange-rce-CVE-2020-0688/) — Alvaro Munoz, GitHub Security Lab
+
+**REMOVED** · Useful application or case study · confidence High
+
+### Candidate
+
+Published 4 March 2020. Judged in the 2026-08-12 pass over the ysonet
+.NET-deserialization reference set.
+
+### Core contribution
+
+A short commentary on Exchange shipping a fixed ASP.NET validation key, so any
+authenticated mailbox user can sign a ViewState payload and reach RCE, together
+with a useful enumeration of the ways machine keys leak in general — local file
+inclusion and XXE against web.config, padding oracles, error pages, public
+repositories, and one-click installers with hardcoded keys.
+
+### Prior art
+
+The post states its own position in the chain: it opens from Microsoft's
+advisory and says ZDI's analysis, published the week before, "confirmed my
+guess". The leak taxonomy is drawn from the author's own LocoMocoSec 2018
+presentation, which it links. ViewState RCE with a known machine key was already
+established by 2019, including the entry already on the 2019 list.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 30 | 25% | 7.50 | Commentary on a vulnerability analysed publicly a week earlier, restating a taxonomy from the author's 2018 talk. |
+| Transferability | 55 | 20% | 11.00 | The machine-key leak taxonomy is genuinely reusable when testing any ASP.NET application. |
+| Lasting value | 50 | 20% | 10.00 | The static-key lesson endured; this specific write-up is not the citation others use. |
+| Technical soundness | 72 | 15% | 10.80 | Accurate, but it defers the mechanics to the ZDI advisory rather than demonstrating them. |
+| Practical usability | 55 | 10% | 5.50 | The leak checklist is usable; there is no exploitation detail. |
+| Clarity and reproducibility | 70 | 10% | 7.00 | Clearly written and short; nothing to reproduce. |
+
+**Final score: 51.8/100.** Archive decision: do not include.
+
+### Verdict
+
+Useful application or case study. It is secondary analysis, and the original
+disclosure it discusses is neither this post nor this URL.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the archived post, which carries the
+  4 March 2020 date and its own acknowledgement of the earlier ZDI analysis.
+- **Independent prior-art check:** traced the disclosure order — MSRC February
+  2020, ZDI 24 February 2020, this post 4 March 2020 — and checked the 2019 list
+  for existing ViewState-with-known-key coverage.
+- **Strongest challenge to the result:** the machine-key leak taxonomy is a
+  genuinely useful contribution in its own right.
+- **Benefit-of-doubt check:** that taxonomy is why transferability is scored at
+  55 rather than lower; it does not make the post a first disclosure.
+- **Changes after reverification:** none.

@@ -1076,3 +1076,62 @@ learning to replace brittle hand-engineered features in an established attack.
 The observation point is network-layer, but the target and result—identifying
 the website a user visits—give the method direct Web-security bearing consistent
 with the retained 2016 website-fingerprinting work.
+
+## 59.7 — [Dangerous Contents: Securing .NET Deserialization](https://www.slideshare.net/slideshow/dangerous-contents-securing-net-deserialization/83686352) — Jonathan Birch, Microsoft
+
+**REMOVED** · Tooling or methodology contribution · confidence Medium
+
+### Candidate
+
+BlueHat v17, presented November 2017; slide deck posted 9 December 2017, with
+the session recording published February 2018. Judged in the 2026-08-12 pass
+over the ysonet .NET-deserialization reference set.
+
+### Core contribution
+
+A defender-facing systematisation of .NET serialization risk: which APIs are
+unbounded polymorphic serializers, which configurations make an otherwise safe
+API unsafe, what to recommend instead, and how to scan a codebase for the unsafe
+patterns. The per-API guidance table is the durable artifact and fed Microsoft's
+later published serialization security guidance.
+
+### Prior art
+
+Forshaw's 2012 "Are You My Type?" established the attack class, and Munoz and
+Mirosh's "Friday the 13th: JSON Attacks" — already on the 2016-17 list — had
+been presented at Black Hat USA earlier the same year and covers the JSON
+serializers and the gadgets. This talk consolidates that body of work into
+guidance; it does not present a new primitive, gadget or sink.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 45 | 25% | 11.25 | Consolidation and classification of results published earlier the same year, with no new attack mechanism. |
+| Transferability | 60 | 20% | 12.00 | The safe/unsafe API taxonomy applies across the framework and informed later scanning rules. |
+| Lasting value | 62 | 20% | 12.40 | The guidance persisted into vendor documentation, but as defensive advice rather than as a technique. |
+| Technical soundness | 75 | 15% | 11.25 | Accurate about each API's behaviour; conclusions rest on prior demonstrations rather than new ones. |
+| Practical usability | 68 | 10% | 6.80 | Directly usable for review and triage. |
+| Clarity and reproducibility | 60 | 10% | 6.00 | Slide-only for the substance, and the archived capture preserves the deck as images rather than text. |
+
+**Final score: 59.7/100.** Archive decision: do not include.
+
+### Verdict
+
+Tooling or methodology contribution — below the 60 gate, and defensive rather
+than an offensive web hacking technique. The attack knowledge it organises is
+already represented on the 2016-17 list.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the archived slide capture, which
+  carries the author, affiliation and BlueHat v17 branding, and the recording's
+  upload date.
+- **Independent prior-art check:** compared the deck's content against the
+  already-archived "Friday the 13th: JSON Attacks" whitepaper for any sink or
+  gadget unique to this talk; none found.
+- **Strongest challenge to the result:** the safe/unsafe serializer taxonomy has
+  clearly outlived most 2017 offensive work.
+- **Benefit-of-doubt check:** scored as a methodology contribution rather than a
+  duplicate, which is why it lands near the gate rather than well below it.
+- **Changes after reverification:** none.

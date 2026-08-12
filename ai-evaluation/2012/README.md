@@ -94,3 +94,33 @@ Cruel Intentions (60.9) and Web-based Attacks on Host-Proof Encrypted Storage
 make a defensible extension or combination claim, not merely because they cross
 the numeric threshold. This audit did not run the reference archiver or refresh
 either web application.
+
+## Source-set sweep — ysonet .NET deserialization references (12 August 2026)
+
+A later, separate pass from the audit above. Rather than sweeping the year, it
+swept one external corpus: the 26,422-line acquisition log
+(`docs/references-md/history.jsonl`) behind the ysonet project's .NET
+deserialization reference archive. That log resolves to 519 distinct documents;
+16 were already recorded in this repository, and the remaining 503 were filtered
+to 274 research-grade articles, whitepapers, slide decks and talks, then
+title-matched against the year lists and the reference manifest to remove eight
+mirrors of entries already present. The residue was pre-screened against the
+judge rubric; product advisories, vendor knowledge-base articles, news coverage,
+threat-intelligence reports, framework documentation, CTF and HTB writeups, and
+duplicate recordings of already-listed talks were resolved during screening
+rather than scored.
+
+**One addition.** Scorecard in [judgements.md](judgements.md).
+
+| Score | Verdict | List decision | Candidate |
+|---:|---|---|---|
+| 84.2 | Original technique | added | [Are You My Type? Breaking .NET Through Serialization](https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_WP.pdf) |
+
+James Forshaw's Black Hat USA 2012 talk is the first public exploitation of .NET
+serialization and the origin of the gadget-hunting method that later produced
+ViewState, SharePoint, Exchange and Telerik RCE. Its 2012 delivery vectors are
+XBAP, Partial Trust sandboxes and .NET Remoting rather than an HTTP parameter, so
+scope is borderline; the transferable core was scored and transferability was
+held at 78 rather than raised. The repository already treats this class as in
+scope, having nominated PHP unserialization in 2018, .NET Remoting over HTTP in
+2019 and hardened .NET deserialization at number two in 2023.

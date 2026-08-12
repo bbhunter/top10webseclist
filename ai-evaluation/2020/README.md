@@ -74,3 +74,39 @@ All seven fresh additions are above 70, but this audit applies the repository's
 current **60-or-above** historical gate. The wording in `2020.md` was corrected
 accordingly. This pass did not run the reference archiver or refresh either web
 application.
+
+## Source-set sweep — ysonet .NET deserialization references (12 August 2026)
+
+A later, separate pass from the audit above. Rather than sweeping the year, it
+swept one external corpus: the 26,422-line acquisition log
+(`docs/references-md/history.jsonl`) behind the ysonet project's .NET
+deserialization reference archive. That log resolves to 519 distinct documents;
+16 were already recorded in this repository, and the remaining 503 were filtered
+to 274 research-grade articles, whitepapers, slide decks and talks, then
+title-matched against the year lists and the reference manifest to remove eight
+mirrors of entries already present. The residue was pre-screened against the
+judge rubric; product advisories, vendor knowledge-base articles, news coverage,
+threat-intelligence reports, framework documentation, CTF and HTB writeups, and
+duplicate recordings of already-listed talks were resolved during screening
+rather than scored.
+
+**Nothing was added.** Two candidates were scored. Scorecards in
+[judgements.md](judgements.md).
+
+| Score | Verdict | List decision | Candidate |
+|---:|---|---|---|
+| 56.7 | Useful application or case study | below gate | [SharePoint and Pwn: RCE Against SharePoint Server Abusing DataSet](https://srcincite.io/blog/2020/07/20/sharepoint-and-pwn-remote-code-execution-against-sharepoint-server-abusing-dataset.html) |
+| 51.8 | Useful application or case study | below gate | [CVE-2020-0688: Losing the keys to your kingdom](https://securitylab.github.com/research/exchange-rce-CVE-2020-0688/) |
+
+Both are secondary analyses. The DataSet primitive belongs to Mirosh, Wulftange
+and Birch, whose own "Room for Escape" is already a 2020 nomination; the
+CVE-2020-0688 post postdates and defers to the ZDI analysis it discusses.
+
+### Screened leads
+
+| Candidate | Outcome | Screening evidence |
+|---|---|---|
+| [Analysis of CVE-2020-0605: Code Execution using XPS Files in .NET](https://www.mdsec.co.uk/2020/05/analysis-of-cve-2020-0605-code-execution-using-xps-files-in-net/) | scope mismatch | XPS document handling in desktop .NET, with no web delivery path. |
+| [Umbraco LFI Exploitation since 2015](https://medium.com/@qazbnm456/umbraco-lfi-exploitation-d32803661fa3) | product advisory | One CMS file-inclusion chain; no primitive beyond known LFI-to-machine-key exposure. |
+| [How to exploit the DotNetNuke Cookie Deserialization](https://pentest-tools.com/blog/exploit-dotnetnuke-cookie-deserialization) | product advisory | Exploitation guide for a 2017 CVE, restating a known sink. |
+| [Introducing YSoSerial.Net April 2020 Improvements](https://www.mdsec.co.uk/2020/04/introducing-ysoserial-net-april-2020-improvements/) | tooling release note | A changelog for the payload generator; the techniques it packages are nominated elsewhere. |

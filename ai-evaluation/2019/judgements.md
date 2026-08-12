@@ -618,3 +618,146 @@ and systematising candidate generation.
 
 Meaningful extension. It supplies a specific reusable evasion mechanism beyond
 ordinary misspelling-based search poisoning.
+
+## 74.1 — [Telerik Revisited](https://code-white.com/blog/2019-02-telerik-revisited/)
+
+**KEPT** · Meaningful combination or adaptation · confidence High
+
+### Candidate
+
+Markus Wulftange, Code White, 7 February 2019 (originally posted to the Code
+White blogspot the same month). Surfaced by the 2026-08-12 pass over the ysonet
+.NET-deserialization reference set.
+
+### Core contribution
+
+A general answer to the dead end that follows most arbitrary-file-write bugs in
+an IIS-hosted .NET application: the worker process identity usually cannot write
+to the web root, and the web root is often unknown, so an uploaded web shell is
+unreachable. The post removes that precondition. Upload a mixed-mode assembly
+DLL to any writable location, then use a second, unrelated deserialization sink
+with the AssemblyInstaller gadget — whose Path setter loads the assembly and so
+calls its DllMain entry point — to execute it inside the IIS worker process. The
+Telerik CVE-2017-11317 upload is only the delivery mechanism; the reusable part
+is "write anywhere plus a type-controlled deserialization sink equals RCE
+without knowing the web root".
+
+### Prior art
+
+The three Telerik issues are from 2017 and were public: CVE-2017-9248 with the
+PatchAdvisor oracle analysis, CVE-2017-11317 with the straight_blast writeup
+that preceded the vendor fix, and CVE-2017-11357. The AssemblyInstaller gadget
+comes from Munoz and Mirosh's "Friday the 13th: JSON Attacks" (Black Hat USA
+2017), already archived for the 2016-17 list. What is not prior art is the
+combination: using the gadget purely as a loader for a previously uploaded
+mixed-mode assembly, which is what defeats the unknown-web-root problem. The
+2019 list already nominates Bishop Fox's Telerik entry, but that is
+CVE-2019-18935, a different bug reached through RadAsyncUpload JSON
+deserialization, so this is not a renamed duplicate of an existing nomination.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 66 | 25% | 16.50 | The upload-plus-AssemblyInstaller loader chain and the mixed-mode DllMain observation are new; the constituent bugs and the gadget are not. |
+| Transferability | 74 | 20% | 14.80 | Applies to any .NET or IIS application offering a file write plus a type-controlled deserialization sink, well beyond Telerik. |
+| Lasting value | 72 | 20% | 14.40 | Became the standard Telerik RCE recipe and a routine post-file-write escalation in later .NET work. |
+| Technical soundness | 84 | 15% | 12.60 | Each step is traced through the affected code and demonstrated end to end against a real product with a vendor fix. |
+| Practical usability | 78 | 10% | 7.80 | Directly usable; needs a writable path and a reachable deserialization sink. |
+| Clarity and reproducibility | 80 | 10% | 8.00 | The chain and its preconditions are laid out plainly, though no tooling is released. |
+
+**Final score: 74.1/100.** Archive decision: include as a core technique.
+
+### Verdict
+
+Meaningful combination or adaptation. Revisiting patched 2017 bugs produced a
+reusable escalation path that removes the usual precondition on file-write
+primitives in .NET web applications.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the archived post and the Code White
+  byline, which give the 7 February 2019 date and author.
+- **Independent prior-art check:** searched for the mechanism rather than the
+  product — mixed-mode assembly loading via AssemblyInstaller, and
+  arbitrary-write-to-RCE in IIS — and checked the 2017 and 2018 lists and the
+  local archive for an earlier statement of it. The gadget is 2017; its use as a
+  loader for an uploaded mixed-mode DLL is not attested earlier.
+- **Strongest challenge to the result:** every ingredient is public, so this can
+  be read as an application rather than a contribution.
+- **Benefit-of-doubt check:** the combination changes what an attacker can do
+  with a whole class of primitive, which the rubric explicitly declines to
+  dismiss.
+- **Changes after reverification:** original contribution was lowered from a
+  draft 72 to 66 once the AssemblyInstaller gadget was confirmed as 2017 prior
+  art; the final score fell from 76.6 to 74.1.
+
+## 73.1 — [Re-Animating ActivitySurrogateSelector](https://www.netspi.com/blog/technical-blog/red-teaming/re-animating-activitysurrogateselector/)
+
+**KEPT** · Meaningful extension · confidence High
+
+### Candidate
+
+Nick Landers, NetSPI, 4 June 2019. Surfaced by the 2026-08-12 pass over the
+ysonet .NET-deserialization reference set.
+
+### Core contribution
+
+A two-stage pattern for defeating a runtime mitigation with the very sink the
+mitigation protects. .NET Framework 4.8 killed the ActivitySurrogateSelector
+gadget by adding a type check to ObjectSurrogate.GetObjectData, but left that
+check behind an undocumented AppSettings switch. Landers shows the switch is
+reachable at run time from a still-working gadget: a XAML payload wires two
+ObjectDataProvider elements so that ConfigurationManager.AppSettings is fetched
+and then Set is called on it, flipping
+microsoft:WorkflowComponentModel:DisableActivitySurrogateSelectorTypeCheck for
+the life of the process. Send that first, and the original gadget works again.
+The general shape — use a weak gadget to mutate process configuration, then use
+the strong gadget that configuration was blocking — is what transfers.
+
+### Prior art
+
+The ActivitySurrogateSelector gadget is Forshaw's, published by Project Zero in
+April 2017; the .NET 4.8 fix is Microsoft's. ObjectDataProvider abuse through
+XamlReader was established by "Friday the 13th: JSON Attacks" (2017) and by
+Mirosh's TextFormattingRunProperties gadget. The unattested step is targeting a
+security kill switch rather than a shell as the gadget's payload. The 2019
+list's ViewState entry uses ActivitySurrogateSelector but predates and does not
+describe the type-check bypass; the 2020 MDSec entry already in the archive uses
+the resulting ActivitySurrogateDisableTypeCheck gadget by name without citing
+where it came from, which is the gap this closes.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 68 | 25% | 17.00 | New: a gadget used to disable the framework's own mitigation. The gadget being re-enabled, and the XAML technique used to do it, are prior work. |
+| Transferability | 70 | 20% | 14.00 | The AppSettings write is a general primitive against other undocumented .NET switches, and the disable-then-exploit shape is stack-independent. |
+| Lasting value | 72 | 20% | 14.40 | Shipped as ysoserial.net's ActivitySurrogateDisableTypeCheck and still the standard prelude on .NET 4.8 and later. |
+| Technical soundness | 78 | 15% | 11.70 | The patched assembly is decompiled, the flag traced to ConfigurationManager.AppSettings, and a working payload given; persistence across app-domain recycles is asserted rather than measured. |
+| Practical usability | 82 | 10% | 8.20 | A two-payload recipe usable as-is, and now packaged in standard tooling. |
+| Clarity and reproducibility | 78 | 10% | 7.80 | Short but complete, with the decompiled code and both XAML payloads inline. |
+
+**Final score: 73.1/100.** Archive decision: include as a core technique.
+
+### Verdict
+
+Meaningful extension. It converts a vendor mitigation into a configuration
+problem and supplies the reusable disable-then-exploit pattern, not just one
+restored gadget.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the archived post, which carries the
+  4 June 2019 date, the NetSPI byline and the decompiled patch.
+- **Independent prior-art check:** searched for runtime AppSettings manipulation
+  through deserialization gadgets and for other .NET kill-switch bypasses, and
+  checked the local archive for an earlier description. The 2020 MDSec reference
+  uses the resulting gadget but postdates this post.
+- **Strongest challenge to the result:** the payload reuses a known XAML
+  ObjectDataProvider technique, so the novelty is the choice of target method
+  rather than a new mechanism.
+- **Benefit-of-doubt check:** choosing a security switch as the target is the
+  insight, and it generalises to any process-wide setting reachable from a
+  gadget.
+- **Changes after reverification:** none.

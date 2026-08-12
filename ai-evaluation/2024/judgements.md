@@ -1001,3 +1001,290 @@ Useful application or case study. Below the 60 gate for the 2024 list.
 - **Confidence:** High
 - **Evidence gaps:** The target is anonymised, so the specific validator behaviour
   cannot be independently confirmed.
+
+## 74.7 — [Leaking ObjRefs to Exploit HTTP .NET Remoting](https://code-white.com/blog/leaking-objrefs-to-exploit-http-dotnet-remoting/)
+
+**KEPT** · Original technique · confidence High
+
+### Candidate
+
+Markus Wulftange, Code White, 27 February 2024; fixed in the January 2024 .NET
+Framework updates and later assigned CVE-2024-29059. Surfaced by the 2026-08-12
+pass over the ysonet .NET-deserialization reference set.
+
+### Core contribution
+
+The precondition that made HTTP .NET Remoting attacks impractical was that the
+attacker had to already know a valid object URI — well-known service names are
+guessable, but the interesting objects get randomly generated URIs. This post
+removes it. Only two try/catch statements sit in the HTTP request path, and the
+one in the formatter sink does not discard the error: it builds a ReturnMessage
+and serializes it, and the ReturnMessage constructor attaches the current
+LogicalCallContext, which carries an internal ObjRef. Forcing an exception
+therefore makes the server hand back a live object reference, after which the
+known .NET Remoting attacks apply — unauthenticated, against an ASP.NET
+application that nobody deliberately exposed as a Remoting service, because IIS
+maps .rem and .soap by default.
+
+The transferable statement is about error paths rather than about Remoting: a
+handler that serializes a rich error object leaks whatever ambient state that
+object's constructor collects, and ambient state is chosen by the framework, not
+by the developer.
+
+### Prior art
+
+Forshaw's 2012 work and ExploitRemotingService, NCC Group's 2019 "Finding and
+Exploiting .NET Remoting over HTTP using Deserialisation" (on the 2019 list) and
+Code White's own 2022 ".NET Remoting Revisited" all assume the object URI is
+known or well-known; the 2022 post says so explicitly. No earlier source
+describes obtaining one from the server. The same team's "Teaching the Old .NET
+Remoting New Exploitation Tricks", already nominated on the 2024 list, is a
+companion rather than a duplicate: it consumes the leak — referencing the
+HttpRemotingObjRefLeak demonstration application — and concentrates on
+TypeFilterLevel and channel constraints, not on obtaining the reference.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 72 | 25% | 18.00 | A new leak primitive that removes the standing precondition on a known attack class; the post-leak exploitation is prior work. |
+| Transferability | 70 | 20% | 14.00 | Applies to any ASP.NET application carrying the default handler mappings, and the error-path-serializes-ambient-state lesson generalises further. |
+| Lasting value | 70 | 20% | 14.00 | Converted a niche attack into an unauthenticated one and forced a framework-level fix. |
+| Technical soundness | 86 | 15% | 12.90 | The call stack and the exact serialization path are traced through reference source, with a vendor fix and CVE. |
+| Practical usability | 76 | 10% | 7.60 | A demonstration application and tooling are published; the surface is narrower than mainstream ASP.NET. |
+| Clarity and reproducibility | 82 | 10% | 8.20 | Sink chains and the leak path are set out step by step. |
+
+**Final score: 74.7/100.** Archive decision: include as a core technique.
+
+### Verdict
+
+Original technique. It supplies the missing information-disclosure primitive
+that makes HTTP .NET Remoting exploitable without inside knowledge.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the Code White post, whose byline gives
+  27 February 2024 and the author, and which names CVE-2024-29059 and the
+  January 2024 fix.
+- **Independent prior-art check:** searched for object-URI disclosure in .NET
+  Remoting and for LogicalCallContext leaking through serialized fault messages,
+  then read the 2019 and 2022 predecessors in the archive for any earlier
+  statement. Both state the known-URI requirement rather than solving it.
+- **Strongest challenge to the result:** the 2024 list already nominates a .NET
+  Remoting post from the same team in the same year, so this risks double-counting
+  one body of work.
+- **Benefit-of-doubt check:** the two posts solve different halves — obtaining a
+  reference versus exploiting one under type-filter constraints — and the
+  nominated post cites this one's demonstration application rather than restating
+  it.
+- **Changes after reverification:** none.
+
+## 63.3 — [View State, the unpatchable IIS forever day being actively exploited](https://zeroed.tech/blog/viewstate-the-unpatchable-iis-forever-day-being-actively-exploited/) — zeroed.tech
+
+**REMOVED** · Tooling or methodology contribution · confidence Medium
+
+### Candidate
+
+Published 21 July 2024. Judged in the 2026-08-12 pass over the ysonet
+.NET-deserialization reference set.
+
+### Core contribution
+
+An end-to-end practitioner treatment of ViewState: exploitation against a simple
+application and against a fully patched Exchange 2019 host, then the part that is
+genuinely under-documented — the forensic artifacts a successful ViewState
+exploit leaves behind, how a threat hunter finds them, and why remediation is
+hard, because rotating machine keys across a farm is disruptive and incomplete
+rotation leaves the door open.
+
+### Prior art
+
+The offensive half restates work already on the lists: ViewState deserialization
+with a known or leaked machine key (2019), Exchange post-auth ViewState CVEs, and
+the standard ysoserial.net workflow. The detection and remediation half has no
+obvious single predecessor, but it is defensive.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 38 | 25% | 9.50 | The exploitation material is a synthesis of published technique; the artifact and remediation analysis is the only unattested part. |
+| Transferability | 58 | 20% | 11.60 | The hunting artifacts apply to any ASP.NET estate, but they are detection inputs rather than an attack primitive. |
+| Lasting value | 66 | 20% | 13.20 | ViewState compromise remains unpatchable by design, so the remediation guidance keeps its relevance. |
+| Technical soundness | 80 | 15% | 12.00 | Exploitation and artifacts are demonstrated against real targets. |
+| Practical usability | 84 | 10% | 8.40 | Immediately usable by both testers and responders. |
+| Clarity and reproducibility | 86 | 10% | 8.60 | Long, precise and complete about setup and preconditions. |
+
+**Final score: 63.3/100.** Archive decision: do not include.
+
+### Verdict
+
+Tooling or methodology contribution, but defensive and incident-response
+oriented rather than an offensive web hacking technique, and its offensive half
+restates work already represented on the 2019 and later lists. It clears the
+numeric gate on practical and presentational strength; the missed-technique
+section is not the right home for it.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the archived post, which states the
+  21 July 2024 publication date in its body.
+- **Independent prior-art check:** searched for earlier ViewState exploitation
+  artifact and threat-hunting guidance, and compared the offensive sections
+  against the 2019 ViewState entry already in the archive.
+- **Strongest challenge to the result:** the DFIR artifact analysis really does
+  appear to be first-of-kind, which would argue for inclusion.
+- **Benefit-of-doubt check:** that is why the score sits above 60 rather than in
+  the fifties; the exclusion rests on the verdict and scope, not on the number.
+- **Changes after reverification:** none.
+
+## 82.5 — [CVE-2024-4577 - Yet Another PHP RCE: Make PHP-CGI Argument Injection Great Again!](https://blog.orange.tw/posts/2024-06-cve-2024-4577-yet-another-php-rce/) — Orange Tsai, DEVCORE
+
+**KEPT** · Original technique · confidence High
+
+### Candidate
+
+Orange Tsai, DEVCORE, 7 June 2024; reported to PHP on 7 May 2024 and fixed in
+PHP 8.1.29, 8.2.20 and 8.3.8. Found by the 2026-08-12 publisher sweep of
+DEVCORE, watchTowr, Assetnote, PortSwigger, Doyensec, Cure53 and Project Zero.
+
+### Core contribution
+
+Windows Best-Fit codepage conversion turned into a security primitive. When a
+Windows process converts Unicode to the active ANSI codepage, characters with no
+exact mapping are silently replaced by a visually similar ASCII one - a soft
+hyphen becomes a plain hyphen. PHP-CGI validated the query string for the literal
+characters that CVE-2012-1823 abused, then handed it to Windows, which
+manufactured those characters afterwards. The 2012 patch is therefore bypassed
+without touching it, and unauthenticated RCE returns on a default XAMPP install.
+
+Stated target-neutrally, the contribution is that a character-set conversion
+performed *after* a security check can reintroduce exactly the syntax the check
+removed. Any validate-then-convert order on Windows inherits it, which is why the
+author generalised the same primitive across many unrelated applications a year
+later.
+
+### Prior art
+
+CVE-2012-1823 is the original PHP-CGI argument injection and is the thing being
+un-patched here; its fix had stood twelve years. Best-Fit mapping itself is
+documented Microsoft behaviour, and encoding-conversion confusion has a long
+security history - Unicode normalisation and charset differentials appear on
+several earlier lists. What is not attested before this post is Best-Fit
+conversion being used deliberately to regenerate forbidden characters past a
+validator. The relationship to the 2025 list runs forward, not backward:
+"WorstFit: Unveiling Hidden Transformers in Windows ANSI", already nominated for
+2025, is the same author generalising this finding, and cites it as the origin.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 82 | 25% | 20.50 | First public weaponisation of Best-Fit conversion as a validator bypass, defeating a patch that had held for twelve years. |
+| Transferability | 84 | 20% | 16.80 | Not PHP-specific: any Windows validate-then-convert path inherits it, as the author's own 2025 generalisation demonstrated across unrelated software. |
+| Lasting value | 82 | 20% | 16.40 | Opened the encoding-conversion class that the 2025 nomination expands; added to CISA's KEV catalogue after mass in-the-wild exploitation. |
+| Technical soundness | 88 | 15% | 13.20 | Vendor-confirmed, fixed across three PHP branches, and independently reproduced by several parties within days. |
+| Practical usability | 80 | 10% | 8.00 | Works against default XAMPP for Windows with a single request; public proofs of concept followed immediately. |
+| Clarity and reproducibility | 76 | 10% | 7.60 | The post is deliberately brief and defers some detail to the DEVCORE advisory; the full treatment of the primitive arrived with the 2025 follow-up. |
+
+**Final score: 82.5/100.** Archive decision: include as a core technique.
+
+### Verdict
+
+Original technique. It introduces the Windows Best-Fit conversion primitive to
+web security and shows it can restore an attack a long-standing patch removed.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the author's post, which gives the
+  7 June 2024 date, and the PHP advisory GHSA-3qgc-jrrr-25jv plus the DEVCORE
+  security alert for the affected versions and report date.
+- **Independent prior-art check:** searched by mechanism - Best-Fit and ANSI
+  codepage conversion as a security bypass, and argument injection reachable
+  after validation - rather than by CVE, and checked the 2012 to 2023 lists for
+  an earlier statement. Encoding differentials appear earlier; Best-Fit as a
+  deliberate bypass does not.
+- **Strongest challenge to the result:** the outcome is a re-run of a 2012
+  vulnerability class, so it can be read as a patch bypass rather than a
+  technique.
+- **Benefit-of-doubt check:** the mechanism that achieves the bypass is new and
+  independent of PHP, which is what the 2025 follow-up proves by applying it
+  elsewhere.
+- **Changes after reverification:** none.
+
+## 76.0 — [We Spent $20 To Achieve RCE And Accidentally Became The Admins Of .MOBI](https://labs.watchtowr.com/we-spent-20-to-achieve-rce-and-accidentally-became-the-admins-of-mobi/) — Benjamin Harris and Aliz Hammond, watchTowr
+
+**KEPT** · Original technique · confidence High
+
+### Candidate
+
+Benjamin Harris and Aliz Hammond, watchTowr Labs, 11 September 2024. Found by
+the 2026-08-12 publisher sweep.
+
+### Core contribution
+
+A decommissioned authoritative service is still an authority for as long as its
+clients hardcode it. The .MOBI TLD moved its WHOIS server years earlier, but the
+old hostname's domain was allowed to expire while WHOIS clients, libraries and
+automated systems continued to query it. For twenty dollars the researchers
+became that authority, answered every query with data of their choosing, and
+measured who trusted them.
+
+The consequence is the part that matters: certificate authorities performing
+domain email validation read the administrative contact from WHOIS, so a rogue
+WHOIS server can nominate itself as the approver for names in the whole TLD. The
+researchers showed GlobalSign parsing their address as the contact for a
+third-party .mobi name and stopped there deliberately, without requesting a
+certificate. The reusable statement is that WHOIS is an unauthenticated trust
+dependency of Web PKI issuance, and that abandoned authoritative infrastructure
+is a takeover target distinct from an ordinary dangling record.
+
+### Prior art
+
+Dangling DNS and subdomain takeover are long established, and this team's own
+"The Perils of Expired Domains" (August 2022) applies the same idea to MX
+records - it is scored separately in the 2022 folder and falls below the gate as
+an application of that known class. Neither reaches the contribution here: an
+entire TLD's authoritative WHOIS service, hardcoded by clients that no registry
+change can update, feeding certificate issuance. The post cites CVE-2015-5243
+(phpWHOIS `eval`) and CVE-2021-32749 (Fail2Ban) as evidence that WHOIS responses
+were already known to be dangerous input, which is a narrower claim than WHOIS
+being a trust root.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 74 | 25% | 18.50 | Abandoned authoritative infrastructure as a takeover class, carried through to Web PKI issuance; the dangling-record family it extends is older. |
+| Transferability | 76 | 20% | 15.20 | Applies to any decommissioned authority still hardcoded by clients - WHOIS, update, time and telemetry endpoints - not to one product. |
+| Lasting value | 78 | 20% | 15.60 | Reframes WHOIS as a dependency of certificate issuance and sharpened scrutiny of CA email validation. |
+| Technical soundness | 82 | 15% | 12.30 | Demonstrated live with measured query volume and a named CA parsing their address; issuance itself was deliberately not attempted, so that step rests on the authors' account. |
+| Practical usability | 60 | 10% | 6.00 | The method is reusable but opportunistic - it needs an abandoned authority to find, and this particular one is now held. |
+| Clarity and reproducibility | 84 | 10% | 8.40 | Detailed, with query data and the exact validation path described. |
+
+**Final score: 76.0/100.** Archive decision: include as a core technique.
+
+### Verdict
+
+Original technique. It establishes abandoned authoritative infrastructure as an
+attack class with a demonstrated path into Web PKI, beyond the dangling-record
+work it builds on.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the post, which carries the 11 September
+  2024 date, both authors, the registration cost and the CA behaviour observed.
+- **Independent prior-art check:** searched for WHOIS server takeover and for
+  certificate-authority validation via WHOIS contacts, then read this team's own
+  2022 expired-domains post to test whether it already stated the claim. It does
+  not; it is per-organisation MX hijacking.
+- **Strongest challenge to the result:** buying an expired domain is not a new
+  idea, and no certificate was actually issued, so the Web PKI impact is
+  demonstrated only up to the parsing step.
+- **Benefit-of-doubt check:** stopping short of issuance is the responsible
+  choice and does not weaken the mechanism; the evidence shown is enough to
+  establish the dependency. Technical soundness is scored at 82 rather than
+  higher for exactly this gap.
+- **Changes after reverification:** original contribution was reduced from a
+  draft 78 to 74 once the team's own 2022 expired-domains work was read as
+  same-family prior art; the final score fell from 77.0 to 76.0.

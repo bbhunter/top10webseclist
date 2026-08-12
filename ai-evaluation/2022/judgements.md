@@ -869,3 +869,134 @@ and systematic attribution of the resulting leaks.
 
 Tooling or methodology contribution. It qualifies as a reusable way to expose
 silent pre-submission collection, not as a novel JavaScript read primitive.
+
+## 72.6 — [.NET Remoting Revisited](https://code-white.com/blog/2022-01-dotnet-remoting-revisited/)
+
+**KEPT** · Tooling or methodology contribution · confidence High
+
+### Candidate
+
+Markus Wulftange, Code White, 27 January 2022 (also posted to the Code White
+blogspot). Surfaced by the 2026-08-12 pass over the ysonet .NET-deserialization
+reference set.
+
+### Core contribution
+
+The reference treatment of .NET Remoting as an attack surface: how the channel
+sink chains are assembled, what each security feature actually enforces, and
+where each one fails. It works through the TypeFilterLevel low/full split, shows
+that the restriction is applied to the message body but not to every path that
+reaches a formatter, and demonstrates that a service can be attacked without any
+MarshalByRefObject interface. It ships the results as reusable tooling — major
+additions to ExploitRemotingService, a new ObjRef gadget for ysoserial.net, and
+RogueRemotingServer as the attacker-side counterpart — so the findings are
+executable rather than descriptive. The web-relevant part is the HTTP channel,
+which IIS and ASP.NET expose by default through the .rem and .soap handler
+mappings.
+
+### Prior art
+
+Forshaw's 2012 Black Hat talk introduced .NET Remoting as a serialization target
+and produced ExploitRemotingService; his 2014 and 2019 posts covered the low
+type-filter level. NCC Group's "Finding and Exploiting .NET Remoting over HTTP
+using Deserialisation" is already in the 2019 list and establishes the HTTP
+vector. This post's distinct gain is the systematic security-feature-by-bypass
+mapping and the ObjRef gadget, neither of which existed as a single reusable
+body of work. It is not a duplicate of the 2022 list's "Bypassing .NET
+Serialization Binders", which is a different Code White post about binder
+implementations rather than the Remoting channel.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 66 | 25% | 16.50 | The ObjRef gadget and several feature bypasses are new; the protocol's exploitability and the base tooling were already established by Forshaw and NCC. |
+| Transferability | 60 | 20% | 12.00 | The HTTP channel and the ObjRef gadget carry into web work; the TCP and IPC material, which is most of the post, does not. |
+| Lasting value | 74 | 20% | 14.80 | Became the citation of record for .NET Remoting exploitation, and the 2024 follow-up already on the 2024 list builds directly on it. |
+| Technical soundness | 86 | 15% | 12.90 | Each claim is traced through reference source and demonstrated with released code. |
+| Practical usability | 80 | 10% | 8.00 | Three pieces of working tooling accompany the analysis. |
+| Clarity and reproducibility | 84 | 10% | 8.40 | Long, well-structured, and specific about preconditions. |
+
+**Final score: 72.6/100.** Archive decision: include as a core technique.
+
+### Verdict
+
+Tooling or methodology contribution. It systematises an under-documented remote
+invocation surface and ships the gadget and servers that make the analysis
+reusable.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the Code White byline, which gives
+  27 January 2022 and the author, and the archived text for the tooling claims.
+- **Independent prior-art check:** searched backward by mechanism (TypeFilterLevel
+  bypass, ObjRef as a deserialization gadget, .NET Remoting over HTTP) and
+  checked the 2012, 2019 and 2022 lists. Forshaw's and NCC's work is earlier and
+  narrower; no earlier source states the ObjRef gadget.
+- **Strongest challenge to the result:** .NET Remoting is a deprecated RPC
+  protocol whose common transports are TCP and IPC, which is not web.
+- **Benefit-of-doubt check:** the HTTP channel is enabled by default under IIS,
+  the repository already nominated the 2019 HTTP-Remoting work and the 2024
+  successor from the same team, and the ObjRef gadget is transport-independent.
+- **Changes after reverification:** transferability was cut from a draft 72 to 60
+  to reflect how much of the post is non-web transport; the final score fell
+  from 75.0 to 72.6.
+
+## 57.0 — [The Perils of Expired Domains - We're Reading Your Email](https://labs.watchtowr.com/the-perils-of-expired-domains-were-reading-your-email/) — Benjamin Harris, watchTowr
+
+**REMOVED** · Useful application or case study · confidence High
+
+### Candidate
+
+Benjamin Harris, watchTowr Labs, 23 August 2022. Judged in the 2026-08-12
+publisher sweep, as the earliest entry in this team's abandoned-infrastructure
+line and therefore as prior art for their 2024 and 2025 work.
+
+### Core contribution
+
+Organisations retire a mail host, let the hostname's domain lapse, and leave the
+MX record pointing at it while real delivery falls through to a surviving server.
+Registering the lapsed name makes the attacker a valid mail exchanger for the
+affected domain, and mail arrives. The post's own contribution is the observation
+that this is prolific on subdomains, where nobody audits the records.
+
+### Prior art
+
+Dangling DNS records and hostile subdomain takeover were established well before
+2022 - Frans Rosén's subdomain takeover work dates from 2014, and the
+NS/MX/CNAME variants were public throughout the intervening years. Applying the
+known class to MX specifically, on a corpus of subdomains, is coverage of that
+class rather than a distinct primitive.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 40 | 25% | 10.00 | An MX-shaped instance of dangling-record takeover, a class public since 2014. |
+| Transferability | 58 | 20% | 11.60 | The audit-your-lapsed-MX lesson is broadly applicable but is the known class restated. |
+| Lasting value | 48 | 20% | 9.60 | Useful as evidence of prevalence; the same team's later work is what changed the model. |
+| Technical soundness | 76 | 15% | 11.40 | The mechanism is correct and demonstrated, with prevalence asserted rather than quantified. |
+| Practical usability | 66 | 10% | 6.60 | Directly actionable for both attack and audit. |
+| Clarity and reproducibility | 78 | 10% | 7.80 | Clear and stepwise. |
+
+**Final score: 57.0/100.** Archive decision: do not include.
+
+### Verdict
+
+Useful application or case study. It is the first of this team's
+abandoned-infrastructure posts and is recorded here as prior art for the 2024
+.MOBI and 2025 abandoned-bucket entries, but on its own it restates a class that
+was already eight years old.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the post, which carries the 23 August
+  2022 date and author.
+- **Independent prior-art check:** searched dangling MX and subdomain-takeover
+  history back through 2014 rather than searching the post's own title.
+- **Strongest challenge to the result:** it is the seed of a line of research
+  that later produced two qualifying entries.
+- **Benefit-of-doubt check:** being the seed is credited where it belongs - in
+  the prior-art sections of the 2024 and 2025 cards, which lowered .MOBI's
+  originality score - not by inflating this one.
+- **Changes after reverification:** none.

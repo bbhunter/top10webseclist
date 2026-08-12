@@ -116,3 +116,39 @@ scope rather than among network-only findings with no Web bearing.
 and residual trust predate 2017, including the 2016 Domain-Z work, but the
 registrar/drop-catch ecosystem measurement materially extends how attackers can
 reason about the timing and availability of post-expiration takeovers.
+
+## Source-set sweep — ysonet .NET deserialization references (12 August 2026)
+
+A later, separate pass from the audit above. Rather than sweeping the year, it
+swept one external corpus: the 26,422-line acquisition log
+(`docs/references-md/history.jsonl`) behind the ysonet project's .NET
+deserialization reference archive. That log resolves to 519 distinct documents;
+16 were already recorded in this repository, and the remaining 503 were filtered
+to 274 research-grade articles, whitepapers, slide decks and talks, then
+title-matched against the year lists and the reference manifest to remove eight
+mirrors of entries already present. The residue was pre-screened against the
+judge rubric; product advisories, vendor knowledge-base articles, news coverage,
+threat-intelligence reports, framework documentation, CTF and HTB writeups, and
+duplicate recordings of already-listed talks were resolved during screening
+rather than scored.
+
+**Nothing was added.** One candidate was scored. Scorecard in
+[judgements.md](judgements.md).
+
+| Score | Verdict | List decision | Candidate |
+|---:|---|---|---|
+| 59.7 | Tooling or methodology contribution | below gate | [Dangerous Contents: Securing .NET Deserialization](https://www.slideshare.net/slideshow/dangerous-contents-securing-net-deserialization/83686352) |
+
+Jonathan Birch's BlueHat v17 deck consolidates .NET serialization risk into
+defender guidance. The attack knowledge it organises is already on this list
+through "Friday the 13th: JSON Attacks", presented at Black Hat USA earlier the
+same year, and the deck adds no new primitive, gadget or sink.
+
+### Screened leads
+
+| Candidate | Outcome | Screening evidence |
+|---|---|---|
+| [Exploiting .NET Managed DCOM](https://googleprojectzero.blogspot.com/2017/04/exploiting-net-managed-dcom.html) | scope mismatch | A local DCOM and .NET Remoting privilege-escalation surface with no web or HTTP bearing. |
+| [How to configure Json.NET to create a vulnerable web API](https://www.alphabot.com/security/blog/2017/net/How-to-configure-Json.NET-to-create-a-vulnerable-web-API.html) | already represented | Companion material to "Friday the 13th: JSON Attacks", which is already nominated for 2016-17. |
+| [Attacking .NET Serialization](https://speakerdeck.com/pwntester/attacking-net-serialization) | duplicate artifact | A second deck of the same authors' 2017 JSON-attacks work, already represented. |
+| [DEF CON 25 and AppSecUSA recordings of Friday the 13th: JSON Attacks](https://www.youtube.com/watch?v=ZBfBYoK_Wr0) | duplicate artifact | Conference recordings of the nominated whitepaper. |

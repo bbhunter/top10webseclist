@@ -97,3 +97,40 @@ inflating originality to force inclusion. A later cross-year check promoted
 Silent Spring from the generic prototype-pollution screening row after confirming
 that its 2022 server-side universal-gadget method is distinct from Probe the Proto.
 This audit did not run the reference archiver or refresh either web application.
+
+## Source-set sweep — ysonet .NET deserialization references (12 August 2026)
+
+A later, separate pass from the audit above. Rather than sweeping the year, it
+swept one external corpus: the 26,422-line acquisition log
+(`docs/references-md/history.jsonl`) behind the ysonet project's .NET
+deserialization reference archive. That log resolves to 519 distinct documents;
+16 were already recorded in this repository, and the remaining 503 were filtered
+to 274 research-grade articles, whitepapers, slide decks and talks, then
+title-matched against the year lists and the reference manifest to remove eight
+mirrors of entries already present. The residue was pre-screened against the
+judge rubric; product advisories, vendor knowledge-base articles, news coverage,
+threat-intelligence reports, framework documentation, CTF and HTB writeups, and
+duplicate recordings of already-listed talks were resolved during screening
+rather than scored.
+
+**One addition.** Scorecard in [judgements.md](judgements.md).
+
+| Score | Verdict | List decision | Candidate |
+|---:|---|---|---|
+| 72.6 | Tooling or methodology contribution | added | [.NET Remoting Revisited](https://code-white.com/blog/2022-01-dotnet-remoting-revisited/) |
+
+Not a duplicate of the 2022 nomination "Bypassing .NET Serialization Binders",
+which is a different Code White post about binder implementations rather than the
+Remoting channel. Transferability was cut to 60 because most of the post covers
+the TCP and IPC transports; the HTTP channel, which IIS exposes by default
+through the `.rem` and `.soap` handler mappings, is the web-relevant part.
+
+### Screened leads
+
+| Candidate | Outcome | Screening evidence |
+|---|---|---|
+| [Exploiting .NET Remoting with TypeFilterLevel Low and no MarshalByRef interfaces](https://gmo-cybersecurity.com/blog/net-remoting-english/) | already represented | The same TypeFilterLevel material covered by the added Code White post published five months earlier. |
+| [New Wine in Old Bottle: SharePoint Post-Auth Deserialization RCE (CVE-2022-29108)](https://starlabs.sg/blog/2022/05/new-wine-in-old-bottle-microsoft-sharepoint-post-auth-deserialization-rce-cve-2022-29108/) | product advisory | One SharePoint CVE reached through an already-known sink. |
+| [Searching for Deserialization Protection Bypasses in Microsoft Exchange (CVE-2022-21969)](https://medium.com/@frycos/searching-for-deserialization-protection-bypasses-in-microsoft-exchange-cve-2022-21969-bfa38f63a62d) | already represented | A blocklist bypass in one product; the general result is the 2023 number-two entry. |
+| [Yet Another Telerik UI Revisit](https://blog.blacklanternsecurity.com/p/yet-another-telerik-ui-revisit) | already represented | Re-exploitation of the 2017 and 2019 Telerik issues already on the lists. |
+| [OWASSRF: CrowdStrike Identifies New Exploit Method for Exchange](https://www.crowdstrike.com/en-us/blog/owassrf-exploit-analysis-and-recommendations/) | already represented | The OWASSRF and TabShell chain is already a 2022 nomination through the Viettel writeup. |

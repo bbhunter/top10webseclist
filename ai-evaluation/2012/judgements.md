@@ -788,3 +788,85 @@ and identifies concrete web-specific failure modes before deployment.
 
 Meaningful extension. The browser dispatch context creates a defensible new
 application of known security failures, narrowly clearing the historical gate.
+
+## 84.2 — [Are You My Type? Breaking .NET Through Serialization](https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_WP.pdf)
+
+**KEPT** · Original technique · confidence High
+
+### Candidate
+
+James Forshaw, Context Information Security, Black Hat USA 2012 (July 2012);
+whitepaper, slides and conference video. Surfaced by the 2026-08-12 pass over
+the ysonet .NET-deserialization reference set.
+
+### Core contribution
+
+The first systematic demonstration that .NET's own serializers are an attack
+surface rather than a data format. Stripped of its 2012 targets, the
+contribution is a method: enumerate the framework for types whose
+deserialization callbacks, property setters or finalizers have side effects,
+then reach one of them through any sink that deserializes untrusted input. It
+adds three concrete primitives — type aliasing through
+`SerializationInfo.SetType` so an object is reconstructed as an unrelated type,
+delegate multicasting across incompatible signatures to produce CLR type
+confusion, and the `Hashtable` comparer callback that hands attacker keys back
+to attacker code during rebuild. The type-survey table (how many
+`[Serializable]`, `ISerializable`, callback and finalizable types each core
+assembly holds) is the origin of gadget hunting in .NET.
+
+### Prior art
+
+Deserialization abuse was known in other stacks — the Java `Calendar`
+vulnerability CVE-2008-5353, the COM interoperability work presented at Black
+Hat 2009, and long-standing misuse of PHP `unserialize()`; Forshaw cites all
+three as motivation. No earlier public work demonstrated exploitation of .NET
+`BinaryFormatter`/`SoapFormatter` or named framework gadget types. Later work
+treats this talk as the origin: Birch's 2023 DEF CON 31 whitepaper opens with
+"James Forshaw made an initial demonstration of the exploitability of
+BinaryFormatter in his 2012 'Are You My Type' talk", and Muñoz and Mirosh's
+2017 "Friday the 13th: JSON Attacks" builds directly on it.
+
+Scope is borderline and stated plainly: the 2012 delivery vectors are XBAP
+browser-hosted applications, Partial Trust sandboxes and .NET Remoting rather
+than an HTTP request parameter. The transferable core is scored, not the
+sandbox vectors — and that core is what ViewState, SharePoint, Exchange and
+Telerik RCE all run on. The repository already treats this class as in scope
+(2018 nominated PHP unserialization, 2019 .NET Remoting over HTTP, 2023 ranked
+hardened .NET deserialization at #2).
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 88 | 25% | 22.00 | First public exploitation of .NET serialization, with three distinct new primitives and a gadget-survey method. |
+| Transferability | 78 | 20% | 15.60 | The gadget-hunting residue transfers to every .NET deserialization sink; the specific XBAP and Partial Trust vectors do not. |
+| Lasting value | 92 | 20% | 18.40 | Cited as the origin by essentially all later .NET deserialization research; ysoserial.net exists downstream of it. |
+| Technical soundness | 88 | 15% | 13.20 | Vendor-confirmed as MS12-035 with CVE-2012-0160 and CVE-2012-0161, plus debugger evidence and live demonstrations. |
+| Practical usability | 70 | 10% | 7.00 | The named sandbox escapes are patched; the method and the type-confusion primitives stay usable. |
+| Clarity and reproducibility | 80 | 10% | 8.00 | Whitepaper plus slides give code for each primitive, though several slide diagrams did not survive extraction. |
+
+**Final score: 84.2/100.** Archive decision: include as a core technique.
+
+### Verdict
+
+Original technique. It established .NET deserialization as an attack class and
+supplied the survey method and the type-confusion primitives that the following
+decade of web-facing .NET RCE was built from.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the archived whitepaper and slide deck,
+  which carry the author, venue, MS12-035 and both CVE numbers.
+- **Independent prior-art check:** searched by mechanism ("BinaryFormatter
+  deserialization attack before 2012", type confusion via serialized delegates)
+  rather than by title, and followed citations backward from the 2017 and 2023
+  successor talks. Both name this work as the initial .NET demonstration; no
+  earlier .NET result surfaced.
+- **Strongest challenge to the result:** the 2012 attacker is often local
+  (Partial Trust, ClickOnce) rather than remote-over-HTTP, so a strict reading
+  puts the talk outside a web list.
+- **Benefit-of-doubt check:** XBAP is browser-delivered, and the whitepaper's
+  .NET Remoting section is a network-service attack; the primitives are the ones
+  later used over HTTP.
+- **Changes after reverification:** none. Transferability was held at 78 rather
+  than raised, so the borderline scope is reflected in the score.

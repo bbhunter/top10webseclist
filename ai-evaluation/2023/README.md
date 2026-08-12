@@ -108,3 +108,45 @@ guide with no candidate contribution to judge. Scorecards are in
 The three screened posts are listed rather than silently dropped so a later sweep
 does not re-fetch and re-read them. They are excluded for having no candidate
 contribution, which is a scope judgement rather than a low score.
+
+## Source-set sweep — ysonet .NET deserialization references (12 August 2026)
+
+A later, separate pass from the audit above. Rather than sweeping the year, it
+swept one external corpus: the 26,422-line acquisition log
+(`docs/references-md/history.jsonl`) behind the ysonet project's .NET
+deserialization reference archive. That log resolves to 519 distinct documents;
+16 were already recorded in this repository, and the remaining 503 were filtered
+to 274 research-grade articles, whitepapers, slide decks and talks, then
+title-matched against the year lists and the reference manifest to remove eight
+mirrors of entries already present. The residue was pre-screened against the
+judge rubric; product advisories, vendor knowledge-base articles, news coverage,
+threat-intelligence reports, framework documentation, CTF and HTB writeups, and
+duplicate recordings of already-listed talks were resolved during screening
+rather than scored.
+
+**Two additions**, and one candidate scored below the gate. Scorecards in
+[judgements.md](judgements.md).
+
+| Score | Verdict | List decision | Candidate |
+|---:|---|---|---|
+| 80.7 | Original technique | added | [Second Breakfast: Implicit and Mutation-Based Serialization Vulnerabilities in .NET](https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Jonathan%20Birch%20-%20Second%20Breakfast%20Implicit%20and%20Mutation-Based%20Serialization%20Vulnerabilities%20in%20.NET-whitepaper.pdf) |
+| 79.5 | Original technique | added | [Exploiting ASP.NET TemplateParser — Part I](https://code-white.com/blog/exploiting-asp.net-templateparser-part-1/) |
+| 57.4 | Useful application or case study | below gate | [Generating deserialization payloads for MessagePack C# Typeless mode](https://www.netwrix.com/en/resources/blog/generating-deserialization-payloads-for-messagepack-cs-typeless-mode/) |
+
+The TemplateParser pair is judged as one piece of work (Part I, 25 September
+2023; Part II, 29 September 2023). Its lasting value is evidenced inside this
+repository rather than asserted: Viettel's SharePoint ToolShell writeup for
+CVE-2025-53770, already archived for 2025, names Part I as the source of the
+technique it used, and Mirosh's 2026 Black Hat type-conversion paper cites Part
+II. Neither addition duplicates the 2023 number-two entry "Exploiting Hardened
+.NET Deserialization", which is about blocklist bypass through new gadgets.
+
+### Screened leads
+
+| Candidate | Outcome | Screening evidence |
+|---|---|---|
+| [Finding Deserialization Bugs in the SolarWinds Platform](https://www.thezdi.com/blog/2023/9/21/finding-deserialization-bugs-in-the-solarwind-platform) | already represented | Same author, same year; the general method is the nominated Hexacon whitepaper. |
+| [HEXACON2023 recording of Exploiting Hardened .NET Deserialization](https://www.youtube.com/watch?v=_CJmUh0_uOM) | duplicate artifact | Conference recording of the 2023 number-two nomination. |
+| [Introducing Badsecrets](https://blog.blacklanternsecurity.com/p/introducing-badsecrets) | tooling for known technique | Detects known-key cryptographic material; the ViewState and machine-key techniques it checks are already nominated. |
+| [Microsoft Exchange PowerShell Remoting Deserialization leading to RCE (CVE-2023-21707)](https://starlabs.sg/blog/2023/04-microsoft-exchange-powershell-remoting-deserialization-leading-to-rce-cve-2023-21707/) | product advisory | One Exchange CVE; the PowerShell-remoting attack surface is covered by the 2024 nominations. |
+| [Programming with XAML: Assembly.Load for .NET deserialization](https://russtone.io/2023/05/30/programming-with-xaml/) | already represented | XAML gadget construction restating the ObjectDataProvider technique established in 2017. |

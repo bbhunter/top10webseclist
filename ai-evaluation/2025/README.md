@@ -172,3 +172,48 @@ side channels with no web bearing; Swallow and GAPDiS are website-fingerprinting
 attack and defence on traffic rather than web technique; Lock the Door But Keep
 the Window Open is Android accessibility with a browser-rendered component, kept
 as a borderline lead. RebirthDay was added separately on 2026-08-10.
+
+## Source-set sweep — ysonet .NET deserialization references (12 August 2026)
+
+A later, separate pass from the audit above. Rather than sweeping the year, it
+swept one external corpus: the 26,422-line acquisition log
+(`docs/references-md/history.jsonl`) behind the ysonet project's .NET
+deserialization reference archive. That log resolves to 519 distinct documents;
+16 were already recorded in this repository, and the remaining 503 were filtered
+to 274 research-grade articles, whitepapers, slide decks and talks, then
+title-matched against the year lists and the reference manifest to remove eight
+mirrors of entries already present. The residue was pre-screened against the
+judge rubric; product advisories, vendor knowledge-base articles, news coverage,
+threat-intelligence reports, framework documentation, CTF and HTB writeups, and
+duplicate recordings of already-listed talks were resolved during screening
+rather than scored.
+
+**Nothing was added.** Four candidates were scored, three of them above 60 but
+all excluded on verdict. Scorecards in [judgements.md](judgements.md).
+
+| Score | Verdict | List decision | Candidate |
+|---:|---|---|---|
+| 63.0 | Useful application or case study | not added | [More Than DoS: Progress Telerik UI for ASP.NET AJAX Unsafe Reflection (CVE-2025-3600)](https://labs.watchtowr.com/more-than-dos-progress-telerik-ui-for-asp-net-ajax-unsafe-reflection-cve-2025-3600/) |
+| 62.7 | Useful application or case study | not added | [Bypassing Authentication Like It Is The 90s: Pre-Auth RCE Chains in Kentico Xperience CMS](https://labs.watchtowr.com/bypassing-authentication-like-its-the-90s-pre-auth-rce-chain-s-in-kentico-xperience-cms/) |
+| 61.5 | Useful application or case study | not added | [Cache Me If You Can: Sitecore Experience Platform Cache Poisoning to RCE](https://labs.watchtowr.com/cache-me-if-you-can-sitecore-experience-platform-cache-poisoning-to-rce/) |
+| 56.1 | Useful application or case study | below gate | [By Executive Order, We Are Banning Blacklists: Domain-Level RCE in Veeam (CVE-2025-23120)](https://labs.watchtowr.com/by-executive-order-we-are-banning-blacklists-domain-level-rce-in-veeam-backup-replication-cve-2025-23120/) |
+
+Three clear the numeric gate on execution quality and are still excluded, because
+the historical gate requires both a score of 60 or above **and** a novelty
+verdict; "useful application or case study" is not one. The Kentico case is the
+clearest: a mechanism search rather than a product search surfaced Apache CXF
+CVE-2012-0803 and CVE-2013-0239, the same failure — a WS-Security UsernameToken
+implementation letting the message select its own password-verification mode —
+from 2012. That prior art cut the draft originality score from 66 to 48 and
+changed the verdict.
+
+### Screened leads
+
+| Candidate | Outcome | Screening evidence |
+|---|---|---|
+| [SharePoint Unknown CVE Unveiled: RCE via WebPart Properties Deserialization](https://blog.viettelcybersecurity.com/sharepoint_properties_deser/) | already represented | Same team and surface as the nominated ToolShell entry for CVE-2025-53770. |
+| [ViewState Deserialization Zero-Day in Sitecore (CVE-2025-53690)](https://cloud.google.com/blog/topics/threat-intelligence/viewstate-deserialization-zero-day-vulnerability/) | threat intelligence | In-the-wild exploitation reporting of sample machine keys; the technique is the 2019 ViewState entry. |
+| [ASP.NET Cryptography for Pentesters](https://blog.blacklanternsecurity.com/p/aspnet-cryptography-for-pentesters) | synthesis | Consolidates machine-key and ViewState cryptography already represented from 2019 onward. |
+| [Code injection attacks using publicly disclosed ASP.NET machine keys](https://www.microsoft.com/en-us/security/blog/2025/02/06/code-injection-attacks-using-publicly-disclosed-asp-net-machine-keys/) | threat intelligence | Vendor reporting on exploitation of published keys, not a new technique. |
+| [SOAPwn whitepaper and slides (Black Hat EU 2025)](https://i.blackhat.com/BH-EU-25/eu-25-Bazydlo-SOAPwn-wp.pdf) | already represented | Conference artifacts of the SOAPwn research already nominated for 2025. |
+| [GoldMelody Hidden Chords: in-memory IIS modules](https://unit42.paloaltonetworks.com/initial-access-broker-exploits-leaked-machine-keys/) | threat intelligence | Actor reporting on leaked-machine-key exploitation. |

@@ -1003,3 +1003,313 @@ Useful application or case study.
 - **Archive decision:** Do not include
 - **Confidence:** High
 - **Evidence gaps:** None material.
+
+## 63.0 — [More Than DoS: Progress Telerik UI for ASP.NET AJAX Unsafe Reflection (CVE-2025-3600)](https://labs.watchtowr.com/more-than-dos-progress-telerik-ui-for-asp-net-ajax-unsafe-reflection-cve-2025-3600/) — Piotr Bazydlo, watchTowr
+
+**REMOVED** · Useful application or case study · confidence High
+
+### Candidate
+
+Published 10 October 2025; disclosed to Progress in April 2025. Judged in the
+2026-08-12 pass over the ysonet .NET-deserialization reference set.
+
+### Core contribution
+
+Shows that a Telerik UI issue published as a denial of service is in fact unsafe
+reflection whose reachable property setters can produce remote code execution
+depending on what else is loaded in the target process, and makes the library
+argument: a flaw in a component shipped inside thousands of products outlives
+and outreaches a flaw in any one product, because nobody patches the component.
+
+### Prior art
+
+The unsafe-reflection-to-RCE mechanism in this exact library is the
+CVE-2019-18935 lineage already on the 2019 list, and setter-driven gadget reach
+is established from 2017 onward. The severity-reassessment observation — that a
+vendor-assigned DoS can hide an RCE — is a good testing habit rather than a new
+primitive.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 46 | 25% | 11.50 | A new CVE in a known sink class; the reflection-to-setter-to-RCE mechanism is prior work. |
+| Transferability | 60 | 20% | 12.00 | The "re-examine DoS-classified reflection bugs" heuristic and the library-versus-product argument generalise. |
+| Lasting value | 55 | 20% | 11.00 | Consequential while the library remains unpatched in the field; not a lasting model change. |
+| Technical soundness | 85 | 15% | 12.75 | Reachability is demonstrated, including a chained pre-auth RCE against a real CMS. |
+| Practical usability | 74 | 10% | 7.40 | Directly usable against a very large installed base. |
+| Clarity and reproducibility | 84 | 10% | 8.40 | Detailed and specific about preconditions and environment dependence. |
+
+**Final score: 63.0/100.** Archive decision: do not include.
+
+### Verdict
+
+Useful application or case study. High impact on a widely deployed library, but
+the underlying primitive is already represented and the contribution is a new
+instance of it.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the archived post, which carries the
+  10 October 2025 date, the author and the CVE.
+- **Independent prior-art check:** compared against the CVE-2019-18935 Telerik
+  entry on the 2019 list and against 2017 setter-gadget work.
+- **Strongest challenge to the result:** ~185,000 exposed hosts is a large
+  practical result.
+- **Benefit-of-doubt check:** exposure counts are explicitly excluded from
+  novelty by the neutrality rules; the transferable heuristic is credited in the
+  transferability score.
+- **Changes after reverification:** none.
+
+## 62.7 — [Bypassing Authentication Like It's The '90s: Pre-Auth RCE Chain(s) in Kentico Xperience CMS](https://labs.watchtowr.com/bypassing-authentication-like-its-the-90s-pre-auth-rce-chain-s-in-kentico-xperience-cms/) — Piotr Bazydlo, watchTowr
+
+**REMOVED** · Useful application or case study · confidence Medium
+
+### Candidate
+
+Published 17 March 2025; WT-2025-0006, WT-2025-0007 and WT-2025-0011, tracked as
+CVE-2025-2746 and CVE-2025-2747. Judged in the 2026-08-12 pass over the ysonet
+.NET-deserialization reference set.
+
+### Core contribution
+
+The staging web service authenticates with a WS-Security UsernameToken through
+the obsolete WSE3 library. Kentico's token manager returns an empty string when
+the supplied username is unknown, and WSE3 lets the request itself choose how
+the password is verified by setting the Password Type attribute. Switching from
+PasswordText to PasswordDigest sidesteps the empty-password rejection, because a
+digest over an empty secret is computable, and authentication passes. A second
+variant uses the SendNone option, which performs no verification at all. Behind
+that door sits a SoapFormatter deserialization sink.
+
+### Prior art
+
+The shape is not new. Apache CXF's CVE-2012-0803 is the same failure —
+UsernameToken policy not enforced, so the client selects a weaker or absent
+password mode — with CVE-2013-0239 in the same family. The general lesson that a
+WS-Security implementation must not let the message pick its own verification
+mode has been public since 2012. What is new here is the WSE3 and Kentico
+incarnation, including the empty-string sentinel that makes the digest
+computable.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 48 | 25% | 12.00 | An independent instance of a WS-Security UsernameToken failure class public since 2012, in a different stack. |
+| Transferability | 58 | 20% | 11.60 | Worth testing against any WSE3 or WS-Security endpoint, though the exact sentinel is Kentico's. |
+| Lasting value | 52 | 20% | 10.40 | Reinforces an existing lesson about attacker-selected verification modes. |
+| Technical soundness | 86 | 15% | 12.90 | Every step is traced through decompiled framework and product code with working requests. |
+| Practical usability | 72 | 10% | 7.20 | Immediately usable where the staging service is enabled with password authentication. |
+| Clarity and reproducibility | 86 | 10% | 8.60 | Complete requests, code and configuration preconditions. |
+
+**Final score: 62.7/100.** Archive decision: do not include.
+
+### Verdict
+
+Useful application or case study. Excellent product research, but the
+attacker-chooses-the-verification-mode weakness in WS-Security UsernameToken was
+public prior art, so this is a rediscovery in a new stack rather than a new
+technique.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the archived post, which carries the
+  17 March 2025 date, the author and the WT identifiers.
+- **Independent prior-art check:** searched the WS-Security UsernameToken
+  mechanism rather than the product name, which surfaced Apache CXF
+  CVE-2012-0803 and CVE-2013-0239 as the same class from 2012 to 2013.
+- **Strongest challenge to the result:** the empty-string-sentinel plus
+  digest-mode combination is a specific insight the CXF cases do not contain.
+- **Benefit-of-doubt check:** that combination is why originality is scored at 48
+  rather than in the thirties; it is not enough to make the class new.
+- **Changes after reverification:** original contribution was cut from a draft 66
+  to 48 after the CXF prior art surfaced; the final score fell from 67.2 to 62.7,
+  and the verdict changed from meaningful combination to useful application.
+
+## 61.5 — [Cache Me If You Can: Sitecore Experience Platform Cache Poisoning to RCE](https://labs.watchtowr.com/cache-me-if-you-can-sitecore-experience-platform-cache-poisoning-to-rce/) — Piotr Bazydlo, watchTowr
+
+**REMOVED** · Useful application or case study · confidence High
+
+### Candidate
+
+Published 29 August 2025; part two of the team's Sitecore research, covering
+CVE-2025-53693, CVE-2025-53691 and CVE-2025-53694. Judged in the 2026-08-12 pass
+over the ysonet .NET-deserialization reference set.
+
+### Core contribution
+
+Chains a pre-auth HTML cache poisoning primitive, reached through unsafe
+reflection in a XAML page handler that is exposed without authentication, with a
+post-auth insecure deserialization sink, so a fully patched instance can be
+compromised without credentials. The reusable observation is that an internal
+server-side render cache is an attack surface in its own right: poison it
+pre-auth and an authenticated user executes the result.
+
+### Prior art
+
+Web cache poisoning is a 2018 Top 10 technique and has been extended repeatedly
+on later lists; unsafe reflection and .NET deserialization sinks are long
+established. Applying cache poisoning to a CMS-internal render cache rather than
+an HTTP cache is a good re-targeting, but the chain is assembled from primitives
+that are all already represented.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 50 | 25% | 12.50 | Re-targets cache poisoning at an internal render cache; each constituent primitive is prior work. |
+| Transferability | 55 | 20% | 11.00 | The internal-cache-as-surface idea travels; the specific handler and sinks do not. |
+| Lasting value | 50 | 20% | 10.00 | A strong worked example rather than a change in how the class is understood. |
+| Technical soundness | 84 | 15% | 12.60 | Handler resolution and the full chain are traced through product code with vendor patches. |
+| Practical usability | 70 | 10% | 7.00 | Usable against a specific product and version range. |
+| Clarity and reproducibility | 84 | 10% | 8.40 | Detailed, with the chain and its preconditions set out in order. |
+
+**Final score: 61.5/100.** Archive decision: do not include.
+
+### Verdict
+
+Useful application or case study. Clears the numeric gate on execution quality,
+but a product-specific chain of already-represented primitives is not a missed
+technique.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the archived post, which carries the
+  29 August 2025 date, the author and the three CVEs.
+- **Independent prior-art check:** checked the cache-poisoning lineage across the
+  2018 to 2022 lists and searched for earlier server-side render-cache poisoning.
+- **Strongest challenge to the result:** poisoning an application-internal cache
+  to cross a privilege boundary is a distinct enough framing to argue for it.
+- **Benefit-of-doubt check:** that framing is credited in the transferability
+  score; it is one worked instance, not a demonstrated general method.
+- **Changes after reverification:** none.
+
+## 56.1 — [By Executive Order, We Are Banning Blacklists: Domain-Level RCE in Veeam Backup and Replication (CVE-2025-23120)](https://labs.watchtowr.com/by-executive-order-we-are-banning-blacklists-domain-level-rce-in-veeam-backup-replication-cve-2025-23120/) — Piotr Bazydlo, watchTowr
+
+**REMOVED** · Useful application or case study · confidence High
+
+### Candidate
+
+Published 20 March 2025. Judged in the 2026-08-12 pass over the ysonet
+.NET-deserialization reference set.
+
+### Core contribution
+
+Veeam patched earlier deserialization bugs by adding a blocklist of forbidden
+classes; the post finds product-internal classes that are not on it and reaches
+domain-level RCE again. The argument is that blocklist-based deserialization
+defence fails because a product's own codebase and its third-party libraries
+supply gadgets the vendor never enumerated.
+
+### Prior art
+
+The author says so himself in the post: his own Hexacon 2023 whitepaper
+"Exploiting Hardened .NET Deserialization" — which is the number two entry on
+the 2023 list — is the general result, and this is a further instance of it.
+Frycos and Code White's earlier Veeam work (CVE-2024-40711) is the immediate
+predecessor on the same product.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 38 | 25% | 9.50 | A further instance of the author's own already-nominated 2023 result. |
+| Transferability | 48 | 20% | 9.60 | The blocklist critique is general but already established by the 2023 entry. |
+| Lasting value | 45 | 20% | 9.00 | Evidence that vendors have not learned, rather than new knowledge. |
+| Technical soundness | 84 | 15% | 12.60 | Gadget discovery and the chain are demonstrated concretely against the patched product. |
+| Practical usability | 70 | 10% | 7.00 | Usable against the affected versions. |
+| Clarity and reproducibility | 84 | 10% | 8.40 | Clear and well evidenced. |
+
+**Final score: 56.1/100.** Archive decision: do not include.
+
+### Verdict
+
+Useful application or case study. The general lesson is already the 2023 list's
+number two entry, by the same author.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the archived post, which carries the
+  20 March 2025 date and the author's own citation of his Hexacon whitepaper.
+- **Independent prior-art check:** confirmed "Exploiting Hardened .NET
+  Deserialization" is nominated at number two on 2023.md.
+- **Strongest challenge to the result:** finding fresh product-internal gadgets
+  after a vendor blocklist is real work.
+- **Benefit-of-doubt check:** it is scored as a case study rather than a
+  duplicate, which is why it lands in the mid-fifties.
+- **Changes after reverification:** none.
+
+## 68.8 — [8 Million Requests Later, We Made The SolarWinds Supply Chain Attack Look Amateur](https://labs.watchtowr.com/8-million-requests-later-we-made-the-solarwinds-supply-chain-attack-look-amateur/) — Benjamin Harris, Aliz Hammond and Pinaki Mondal, watchTowr
+
+**KEPT** · Tooling or methodology contribution · confidence High
+
+### Candidate
+
+Benjamin Harris, Aliz Hammond and Pinaki Mondal, watchTowr Labs, 4 February 2025.
+Found by the 2026-08-12 publisher sweep.
+
+### Core contribution
+
+A method for measuring how long abandoned infrastructure keeps being trusted, and
+the finding that the answer is years. The researchers re-registered roughly 150
+abandoned S3 buckets previously used by governments, militaries, Fortune 500
+companies, security vendors and open-source projects, then logged - and only
+logged - what arrived. Over two months the buckets received more than eight
+million HTTP requests, and the request types are the point: software updates,
+precompiled binaries for three operating systems, virtual machine images,
+JavaScript files, CloudFormation templates and SSLVPN configuration. One bucket
+had been removed from a project's documentation in 2015 and was still being
+fetched nine years later.
+
+The transferable part is the method rather than the bucket: enumerate a global
+namespace for entries an owner has released, reclaim them, and measure the
+residual trust. It applies to package names, container tags, storage namespaces
+and domains alike.
+
+### Prior art
+
+S3 bucket squatting and dangling storage references were public well before this;
+the post does not claim the primitive. Supply-chain compromise through update
+channels is established by SolarWinds, XZ/liblzma, npm takeovers and HandBrake,
+all of which the post cites as the comparison it is drawing. The gain is
+empirical and structural: nobody had shown at this scale that a reclaimed bucket
+is a live, unauthenticated code-delivery channel into named government and
+enterprise networks, nor that the exposure persists for the better part of a
+decade after the reference is removed from a repository.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 55 | 25% | 13.75 | The squatting primitive is old; what is new is the measurement design and the demonstration that abandoned buckets remain trusted update channels for years. |
+| Transferability | 70 | 20% | 14.00 | The reclaim-and-measure method generalises to any global namespace with reusable names. |
+| Lasting value | 72 | 20% | 14.40 | Changed how abandoned cloud storage is treated in supply-chain threat models and prompted provider-side change. |
+| Technical soundness | 80 | 15% | 12.00 | Real, quantified observation over two months with named request classes, and an ethically bounded design that served nothing. |
+| Practical usability | 62 | 10% | 6.20 | Reproducible in principle, but opportunistic and narrowed by subsequent provider changes to name reuse. |
+| Clarity and reproducibility | 84 | 10% | 8.40 | Specific about scale, sources and method, with the restraint stated plainly. |
+
+**Final score: 68.8/100.** Archive decision: include as a core technique.
+
+### Verdict
+
+Tooling or methodology contribution. The primitive was known; the reclaim-and-
+measure methodology and the scale of residual trust it exposed are the
+contribution, and both remain usable.
+
+### Reverification
+
+- **Candidate facts rechecked against:** the post, which carries the 4 February
+  2025 date, all three authors, the bucket count, the two-month window and the
+  eight-million-request figure.
+- **Independent prior-art check:** searched for earlier abandoned-S3-bucket
+  takeover and for supply-chain measurement studies of dangling storage, and read
+  the same team's 2024 .MOBI work to separate the two contributions. The earlier
+  work is a different namespace and a different consumer.
+- **Strongest challenge to the result:** breadth of a known bug is coverage, not
+  discovery, and the neutrality rules say so explicitly - this could be scored as
+  a case study in the fifties.
+- **Benefit-of-doubt check:** the measurement is the artifact, not the bug count;
+  originality is held at 55 to reflect the borrowed primitive while the method is
+  credited under transferability and lasting value.
+- **Changes after reverification:** none.

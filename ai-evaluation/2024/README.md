@@ -125,3 +125,49 @@ re-chase either under the wrong name.
 | Candidate | Outcome | Screening evidence |
 |---|---|---|
 | [$20,300 Bounties from a 200 Hour Hacking Challenge](https://blog.voorivex.team/20300-bounties-from-a-200-hour-hacking-challenge) | not a technique candidate | A bug-bounty experience narrative by Mohammad Zaheri. The findings it lists (Swagger exposure, time-based SQLi, IDOR via method switching, stored XSS with a Google JSONP CSP gadget, exposed config) are each standard classes reported as a tally with no technique developed; there is no candidate contribution to score. |
+
+## Source-set sweep — ysonet .NET deserialization references (12 August 2026)
+
+A later, separate pass from the audit above. Rather than sweeping the year, it
+swept one external corpus: the 26,422-line acquisition log
+(`docs/references-md/history.jsonl`) behind the ysonet project's .NET
+deserialization reference archive. That log resolves to 519 distinct documents;
+16 were already recorded in this repository, and the remaining 503 were filtered
+to 274 research-grade articles, whitepapers, slide decks and talks, then
+title-matched against the year lists and the reference manifest to remove eight
+mirrors of entries already present. The residue was pre-screened against the
+judge rubric; product advisories, vendor knowledge-base articles, news coverage,
+threat-intelligence reports, framework documentation, CTF and HTB writeups, and
+duplicate recordings of already-listed talks were resolved during screening
+rather than scored.
+
+**One addition**, and one candidate scored above 60 but excluded on verdict and
+scope. Scorecards in [judgements.md](judgements.md).
+
+| Score | Verdict | List decision | Candidate |
+|---:|---|---|---|
+| 74.7 | Original technique | added | [Leaking ObjRefs to Exploit HTTP .NET Remoting](https://code-white.com/blog/leaking-objrefs-to-exploit-http-dotnet-remoting/) |
+| 63.3 | Tooling or methodology contribution | not added | [View State, the unpatchable IIS forever day being actively exploited](https://zeroed.tech/blog/viewstate-the-unpatchable-iis-forever-day-being-actively-exploited/) |
+
+The ObjRef leak is a companion to, not a duplicate of, "Teaching the Old .NET
+Remoting New Exploitation Tricks" already nominated for 2024: the nominated post
+consumes the leak and concentrates on TypeFilterLevel and channel constraints,
+while this one supplies the information disclosure (CVE-2024-29059) that removes
+the known-object-URI precondition.
+
+The zeroed.tech post clears the numeric gate on practical and presentational
+strength. It is not added because its offensive half restates technique already
+represented from 2019 onward and its original half is incident-response
+methodology rather than an offensive web hacking technique. The exclusion rests
+on the verdict and scope, not on the number.
+
+### Screened leads
+
+| Candidate | Outcome | Screening evidence |
+|---|---|---|
+| [ZDI: Exploiting Exchange PowerShell After ProxyNotShell, Parts 1-3](https://www.thezdi.com/blog/2024/9/4/exploiting-exchange-powershell-after-proxynotshell-part-1-multivaluedproperty) | already represented | Already in the reference archive and represented by the 2024 nomination "Half Measures and Full Compromise". |
+| [Introducing Aladdin](https://www.lrqa.com/en/cyber-labs/introducing-aladdin/) | tooling for known technique | A payload generator for established .NET gadget chains. |
+| [WhatsUp Gold Pre-Auth RCE: GetFileWithoutZip and WriteDataFile primitives](https://summoning.team/blog/progress-whatsup-gold-rce-cve-2024-4885/) | product advisory | Two product CVEs reached through known path-traversal and deserialization sinks. |
+| [Veeam Backup and Response RCE (CVE-2024-40711)](https://labs.watchtowr.com/veeam-backup-response-rce-with-auth-but-mostly-without-auth-cve-2024-40711-2/) | product advisory | One product CVE; the general blocklist result is the 2023 number-two entry. |
+| [Citrix Virtual Apps and Desktops MSMQ deserialization](https://labs.watchtowr.com/visionaries-at-citrix-have-democratised-remote-network-access-citrix-virtual-apps-and-desktops-cve-unknown/) | scope mismatch | The attack surface is MSMQ over a non-HTTP transport. |
+| [BinaryFormatter removal from .NET 9](https://github.com/dotnet/announcements/issues/293) | not a technique candidate | A platform announcement, not research. |

@@ -82,3 +82,40 @@ The 2019 pass produced no 60–69.9 recovery. The closest qualifying result was
 the 72.0 linguistic-collision search-poisoning extension; narrower target-only
 adaptations were screened instead of inflating originality to force inclusion.
 This audit did not run the reference archiver or refresh either web application.
+
+## Source-set sweep — ysonet .NET deserialization references (12 August 2026)
+
+A later, separate pass from the audit above. Rather than sweeping the year, it
+swept one external corpus: the 26,422-line acquisition log
+(`docs/references-md/history.jsonl`) behind the ysonet project's .NET
+deserialization reference archive. That log resolves to 519 distinct documents;
+16 were already recorded in this repository, and the remaining 503 were filtered
+to 274 research-grade articles, whitepapers, slide decks and talks, then
+title-matched against the year lists and the reference manifest to remove eight
+mirrors of entries already present. The residue was pre-screened against the
+judge rubric; product advisories, vendor knowledge-base articles, news coverage,
+threat-intelligence reports, framework documentation, CTF and HTB writeups, and
+duplicate recordings of already-listed talks were resolved during screening
+rather than scored.
+
+**Two additions.** Scorecards in [judgements.md](judgements.md).
+
+| Score | Verdict | List decision | Candidate |
+|---:|---|---|---|
+| 74.1 | Meaningful combination or adaptation | added | [Telerik Revisited](https://code-white.com/blog/2019-02-telerik-revisited/) |
+| 73.1 | Meaningful extension | added | [Re-Animating ActivitySurrogateSelector](https://www.netspi.com/blog/technical-blog/red-teaming/re-animating-activitysurrogateselector/) |
+
+Neither duplicates the Telerik or ViewState entries already nominated for 2019.
+The Bishop Fox nomination is CVE-2019-18935, a different bug from the 2017 issues
+Code White revisits, and the 2019 ViewState entry uses ActivitySurrogateSelector
+without describing the .NET 4.8 type-check bypass.
+
+### Screened leads
+
+| Candidate | Outcome | Screening evidence |
+|---|---|---|
+| [Unauthenticated Remote Code Execution in Kentico CMS](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/unauthenticated-remote-code-execution-in-kentico-cms/) | product advisory | A single-product deserialization RCE disclosure with no reusable primitive beyond the known SoapFormatter sink. |
+| [Deep Dive into .NET ViewState deserialization and its exploitation](https://swapneildash.medium.com/deep-dive-into-net-viewstate-deserialization-and-its-exploitation-54bf5b788817) | already represented | A tutorial restatement of the ViewState technique nominated for 2019. |
+| [RCEvil.net (BSides Iowa)](https://illuminopi.com/assets/files/BSidesIowa_RCEvil.net_20190420.pdf) | already represented | Payload generation for ViewState with a known machine key; the technique is the 2019 nomination. |
+| [Bypassing Low Type Filter in .NET Remoting](https://www.tiraniddo.dev/2019/10/bypassing-low-type-filter-in-net.html) | scope mismatch | Concerns the TCP and IPC transports; the HTTP-channel work is nominated separately. |
+| [Analysis and exploitation of CVE-2019-10068, Kentico CMS](https://dreadlocked.github.io/2019/10/25/kentico-cms-rce/) | product advisory | Independent analysis of one product CVE; no distinct primitive. |
