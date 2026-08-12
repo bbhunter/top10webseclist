@@ -445,6 +445,92 @@
   .toast { position: fixed; right: 22px; bottom: 22px; z-index: 70; padding: 11px 14px; color: var(--accent-ink); background: var(--accent); border-radius: 3px; font: 700 .66rem var(--mono); opacity: 0; transform: translateY(12px); pointer-events: none; transition: .22s ease; }
   .toast.show { opacity: 1; transform: none; }
 
+  /* Submitting research reads as the archive's own action, so it takes the
+     mint the site uses for its live, working parts rather than the amber of a
+     link out. */
+  /* The same action wears three shapes - a toolbar button, a menu tile and a
+     footer card - so the launcher class carries only the colour, and each host
+     keeps its own layout. */
+  .quiet-button.contribute-launch { display: inline-flex; align-items: center; gap: 7px; color: var(--mint); border-color: rgba(130,245,178,.3); }
+  .quiet-button.contribute-launch:hover { color: #041a10; background: var(--mint); border-color: var(--mint); }
+  .quiet-button.contribute-launch b { font-weight: 650; }
+  .support-action.is-contribute { text-align: left; font: inherit; background: transparent; cursor: pointer; }
+  .support-action.is-contribute span { color: var(--mint); background: rgba(130,245,178,.08); border-color: rgba(130,245,178,.22); }
+  .support-action.is-contribute:hover { border-color: rgba(130,245,178,.42); }
+
+  .contribute-dialog {
+    width: min(720px, calc(100vw - 28px));
+    max-height: min(820px, calc(100vh - 28px));
+    overflow: auto;
+    padding: 0;
+    color: var(--ink);
+    background: #0b1815;
+    border: 1px solid var(--line-strong);
+    border-radius: 20px;
+    box-shadow: 0 40px 120px rgba(0,0,0,.72);
+  }
+  .contribute-dialog::backdrop { background: rgba(1,6,5,.82); backdrop-filter: blur(8px); }
+  .contribute-dialog .artifact-glow { background: linear-gradient(90deg, var(--mint), transparent 70%); }
+  .contribute-dialog .dialog-body { padding: clamp(24px, 5vw, 44px); }
+  .contribute-dialog h2 { margin: 10px 0 16px; font-size: clamp(1.5rem, 3.4vw, 2.4rem); }
+  .contribute-dialog .artifact-context { margin: 20px 0 24px; }
+  .contribute-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 13px; }
+  .contribute-field { display: grid; gap: 6px; grid-column: 1 / -1; }
+  .contribute-field.is-half { grid-column: auto; }
+  .contribute-field > span { display: flex; align-items: center; gap: 8px; color: var(--muted); font: 650 .58rem var(--mono); letter-spacing: .06em; text-transform: uppercase; }
+  .contribute-field > span b { color: var(--mint); font: 650 .52rem var(--mono); letter-spacing: .08em; }
+  .contribute-field small { color: var(--faint); font: .58rem/1.5 var(--mono); }
+  .contribute-field input, .contribute-field select, .contribute-field textarea {
+    width: 100%;
+    padding: 10px 12px;
+    color: var(--ink);
+    background: rgba(20,24,36,.82);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    font: .72rem/1.5 var(--mono);
+  }
+  .contribute-field textarea { resize: vertical; min-height: 68px; }
+  .contribute-field input::placeholder, .contribute-field textarea::placeholder { color: var(--faint); }
+  .contribute-field input:focus, .contribute-field select:focus, .contribute-field textarea:focus { border-color: rgba(130,245,178,.5); outline: 0; box-shadow: 0 0 0 3px rgba(130,245,178,.08); }
+
+  /* The answer only this page can give: whether the source is already recorded.
+     Each state carries its own colour so the verdict is readable before the
+     sentence is. */
+  .contribute-check { display: grid; gap: 8px; margin: 18px 0 22px; padding: 14px 16px; border: 1px solid var(--line); border-left-width: 2px; border-radius: 3px; }
+  .contribute-check p { margin: 0; color: var(--muted); font: .66rem/1.6 var(--mono); }
+  .contribute-check p b { color: var(--ink); font-weight: 650; }
+  .contribute-check code { padding: 1px 4px; background: rgba(255,255,255,.05); border-radius: 3px; font-size: .95em; }
+  .contribute-check small { color: var(--faint); }
+  .contribute-check.is-loading { border-left-color: var(--line-strong); }
+  .contribute-check.is-clear { background: rgba(130,245,178,.05); border-left-color: var(--mint); }
+  .contribute-check.is-near { background: rgba(120,153,255,.05); border-left-color: var(--signal); }
+  .contribute-check.is-match { background: rgba(255,180,84,.06); border-left-color: var(--accent); }
+  .contribute-check.is-warning { background: rgba(255,142,115,.06); border-left-color: var(--coral); }
+  .contribute-check button {
+    display: grid;
+    grid-template-columns: 62px minmax(0,1fr);
+    gap: 2px 12px;
+    width: 100%;
+    padding: 9px 11px;
+    color: var(--ink);
+    background: rgba(4,12,10,.5);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    text-align: left;
+    cursor: pointer;
+  }
+  .contribute-check button:hover { border-color: var(--line-strong); }
+  .contribute-check button span { grid-row: span 2; align-self: center; color: var(--faint); font: 700 .62rem var(--mono); }
+  .contribute-check button b { overflow: hidden; font: 650 .68rem/1.4 var(--mono); text-overflow: ellipsis; }
+  .contribute-check button em { color: var(--faint); font: .58rem var(--mono); font-style: normal; }
+  .contribute-dialog .artifact-actions a, .contribute-dialog .artifact-actions button { color: #041a10; background: var(--mint); border-color: var(--mint); }
+  .contribute-dialog .artifact-actions .secondary { color: var(--ink); background: transparent; border-color: var(--line-strong); }
+  .contribute-note { margin: 18px 0 0; color: var(--faint); font: .6rem/1.7 var(--mono); }
+  .contribute-routes { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 20px 0 0; padding-top: 16px; border-top: 1px solid var(--line); color: var(--faint); font: .6rem var(--mono); }
+  .contribute-routes b { color: var(--muted); font-weight: 650; }
+  .contribute-routes a { color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+  .contribute-routes a:hover { color: var(--mint); }
+
   .reader-dialog {
     width: min(1180px, calc(100vw - 24px));
     height: min(900px, calc(100vh - 24px));
@@ -1538,6 +1624,15 @@
     .view-intro { margin-bottom: 24px; padding-top: 14px; }
   }
 
+  /* The search field is what the top bar is for, and every button beside it is
+     taken out of its width. Below a wide desktop the submission button keeps
+     its glyph and gives the words back - it is still named for a screen reader
+     by its aria-label, and by its tooltip for everyone else. */
+  @media (max-width: 1400px) {
+    .quiet-button.contribute-launch b { display: none; }
+    .quiet-button.contribute-launch { padding-inline: 12px; font-size: .82rem; }
+  }
+
   @media (max-width: 1100px) {
     .project-links a b { display: none; }
     .project-links a { padding-inline: 6px; }
@@ -1561,13 +1656,22 @@
     .topbar { padding-inline: 14px; }
     .project-links { display: none; }
     .sidebar-project-links { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 5px; margin: -22px 0 20px; }
-    .sidebar-project-links a { display: grid; min-height: 54px; place-items: center; gap: 4px; padding: 7px 4px; color: var(--muted); background: rgba(20,24,36,.48); border: 1px solid var(--line); border-radius: 3px; font: 600 .48rem/1.2 var(--mono); text-align: center; text-decoration: none; }
-    .sidebar-project-links a span { color: var(--accent); font-size: .58rem; }
+    .sidebar-project-links a, .sidebar-project-links button { display: grid; min-height: 54px; place-items: center; gap: 4px; padding: 7px 4px; color: var(--muted); background: rgba(20,24,36,.48); border: 1px solid var(--line); border-radius: 3px; font: 600 .48rem/1.2 var(--mono); text-align: center; text-decoration: none; cursor: pointer; }
+    .sidebar-project-links a span, .sidebar-project-links button span { color: var(--accent); font-size: .58rem; }
     .sidebar-project-links a:last-child span { color: var(--coral); }
-    .sidebar-project-links a:hover { color: var(--ink); border-color: var(--line-strong); }
+    .sidebar-project-links a:hover, .sidebar-project-links button:hover { color: var(--ink); border-color: var(--line-strong); }
+    /* Submitting research is the one action in this menu that leads somewhere
+       new, so it gets the full width above the four links out. */
+    .sidebar-project-links .contribute-launch { grid-column: 1 / -1; min-height: 46px; grid-auto-flow: column; color: var(--mint); border-color: rgba(130,245,178,.28); }
+    .sidebar-project-links .contribute-launch span { color: var(--mint); }
     .global-results { right: 14px; left: 14px; width: auto; }
     .global-search { width: auto; flex: 1; }
     .global-search kbd, .quiet-button { display: none; }
+    /* The one quiet button that stays on a phone: it is the only one that is
+       not a shortcut to something already reachable. */
+    .quiet-button.contribute-launch { display: inline-flex; padding-inline: 11px; }
+    .contribute-grid { grid-template-columns: 1fr; }
+    .contribute-field.is-half { grid-column: 1 / -1; }
     main { padding-inline: 18px; }
     .view-intro { align-items: start; }
     .view-metric { display: none; }
@@ -1799,8 +1903,10 @@
     .global-search { padding-inline: 10px; }
     .global-search input { font-size: .72rem; }
     .sound-button { display: none; }
-    .artifact-dialog { width: calc(100vw - 12px); }
-    .artifact-dialog .dialog-body { padding-inline: 19px; }
+    .artifact-dialog, .contribute-dialog { width: calc(100vw - 12px); }
+    .artifact-dialog .dialog-body, .contribute-dialog .dialog-body { padding-inline: 19px; }
+    .contribute-check button { grid-template-columns: 1fr; }
+    .contribute-check button span { grid-row: auto; }
     .artifact-facts { grid-template-columns: 1fr; }
     .pdf-bar strong { max-width: 220px; }
     .signal-status-filter { display: grid; grid-template-columns: repeat(3,1fr); }

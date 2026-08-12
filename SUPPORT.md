@@ -55,18 +55,27 @@ open regardless of whether anyone sponsors it.
 
 ## 🤝 Or contribute instead
 
-Time is worth as much as money here, and often more:
+Time is worth as much as money here, and often more. The
+**[Submit research](https://webhacklist.com/#submit)** button on the site is the quickest
+way in — it checks your source against the archive before you write anything, then opens
+a prefilled issue:
 
-- **Fix a dead link** — swap in the author's new domain or a Wayback Machine capture.
-- **Propose a missed technique** — the official nomination rounds sometimes overlooked
-  research. If it qualifies as a web hacking technique nominee for that year, open an
-  issue or PR with its original source and it will be reviewed for addition.
-- **Report a bad capture** — a PDF that rendered a consent wall, a 404 or a truncated
-  page. Say which file, and it gets filed for recapture.
+- **[Propose a missed technique](https://github.com/irsdl/webhacklist/issues/new?template=01-submit-research.yml)**
+  — the official nomination rounds sometimes overlooked research. If it qualifies as a web
+  hacking technique nominee for that year, it will be judged and, if it clears the bar,
+  added to its relevant year.
+- **[Fix a dead link](https://github.com/irsdl/webhacklist/issues/new?template=02-dead-or-changed-link.yml)**
+  — swap in the author's new domain or a Wayback Machine capture.
+- **[Report a bad capture](https://github.com/irsdl/webhacklist/issues/new?template=03-faulty-capture.yml)**
+  — a PDF that rendered a consent wall, a 404 or a truncated page. Say which document, and
+  it gets filed for recapture.
+- **[Fix a researcher credit](https://github.com/irsdl/webhacklist/issues/new?template=04-author-credit.yml)**
+  — a byline that is missing, wrong, or credited to a hostname instead of a person.
 - **Improve the site** — [`website/`](website/) is dependency-free static HTML, CSS and
   JavaScript.
 
-See [Contributing](README.md#contributing) for the details.
+See **[CONTRIBUTING.md](CONTRIBUTING.md)** for what gets in, the bar a submission has to
+clear, and what happens after you file.
 
 ---
 

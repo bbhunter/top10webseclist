@@ -132,6 +132,24 @@ the saved shortlist by year or topic. The shortlist is stored only in the local
 browser and uses normalized source URLs so the same research stays synchronized
 when it appears in more than one collection.
 
+## Submitting research
+
+The top bar, the phone menu and the footer all open one submission form
+(`#contribute-dialog`, deep-linkable as `#submit`). It is a static page throughout:
+nothing is posted from here. The form does the one thing GitHub cannot — as a source URL
+is typed it is matched against every loaded collection, reporting an exact record, the
+closest titles, or nothing at all — and then builds a prefilled link to the issue form in
+[`.github/ISSUE_TEMPLATE/01-submit-research.yml`](../.github/ISSUE_TEMPLATE/01-submit-research.yml).
+
+A URL matches on two keys: the exact normalized address, and a looser host-and-path key
+that sees through `http`, `www.`, a trailing slash, a campaign parameter or a Wayback
+replay wrapper. Query strings that are not tracking parameters are kept — on a blog of
+the era this archive covers, `?p=123` *is* the article.
+
+The prefill parameter names are the field ids in that YAML file, and the year options
+must cover the years the collections span; both couplings are asserted by
+`smoke-test.mjs`, because a renamed field would otherwise drop an answer silently.
+
 Every selected record has a share action. Sharing from the artifact panel
 restores that record in the current archive concept; sharing from the Markdown
 reader or PDF viewer restores the exact format and light/dark reading theme.

@@ -303,15 +303,24 @@ Full details in **[SUPPORT.md](SUPPORT.md)**.
 
 ## Contributing
 
-Pull requests are welcome:
+The quickest route is the **Submit research** button on
+[webhacklist.com](https://webhacklist.com/#submit) — it searches the archive as you type,
+tells you straight away whether a source is already recorded, and then opens a GitHub
+issue with your answers already filled in. Full details, and the bar a missed technique
+has to clear, are in **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
-- **Fix a dead link** — swap in the author's new domain or a Wayback Machine capture.
-- **Propose a missed technique** — the official nomination rounds sometimes overlooked
-  research. If it qualifies as a web hacking technique nominee for that year, submit it
-  with its original source and it will be reviewed for addition to its relevant year.
-- **New year announced?** — add `<year>.md`, then extend
-  [tools/sources.json](tools/sources.json) and run `python tools/capture_pdf.py run`
-  to archive the announcement pages.
+| You want to | File this |
+|---|---|
+| Propose a technique a year's round missed | [Submit research](https://github.com/irsdl/webhacklist/issues/new?template=01-submit-research.yml) |
+| Report a cited link that died or moved | [Dead or wrong link](https://github.com/irsdl/webhacklist/issues/new?template=02-dead-or-changed-link.yml) |
+| Report a preserved copy that captured the wrong page | [Faulty archived copy](https://github.com/irsdl/webhacklist/issues/new?template=03-faulty-capture.yml) |
+| Fix a byline, or add a missing researcher | [Researcher credit](https://github.com/irsdl/webhacklist/issues/new?template=04-author-credit.yml) |
+| Report a website bug or suggest something | [Website bug or idea](https://github.com/irsdl/webhacklist/issues/new?template=05-website-feedback.yml) |
+
+Pull requests are welcome for any of these too. A **new technique** still needs its
+submission issue first — it is judged in full either way. And when a **new year is
+announced**, add `<year>.md`, then extend [tools/sources.json](tools/sources.json) and run
+`python tools/capture_pdf.py run` to archive the announcement pages.
 
 ## Credits
 

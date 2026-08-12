@@ -1,0 +1,60 @@
+name: Fix a researcher credit
+description: A byline that is missing, wrong, incomplete, or credited to a domain instead of a person.
+title: "[Credit] "
+labels: ["author credit", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The archive credits people, and where it could not read a name from the document
+        it falls back to the publisher — which is why some entries read as the work of a
+        hostname. If you can point at where the name appears in the document itself, it
+        can be corrected.
+
+        **If it is your own research and the credit is wrong, please do file this.**
+        Getting attribution right is the point of keeping the record.
+
+  - type: input
+    id: record
+    attributes:
+      label: Which record
+      description: The entry's title, or its page link from the site.
+      placeholder: https://webhacklist.com/#library/2019-3
+    validations:
+      required: true
+
+  - type: dropdown
+    id: action
+    attributes:
+      label: What needs to change
+      options:
+        - Add a missing credit
+        - Correct a wrong credit
+        - Add a co-author who is missing
+        - Withdraw a credit that should not be there
+    validations:
+      required: true
+
+  - type: input
+    id: credit
+    attributes:
+      label: The credit as it should read
+      description: Names in the order the document gives them, spelled as the researchers spell them.
+      placeholder: Jane Researcher, Alex Second
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Where the document says so
+      description: |
+        The credit is checked against the document itself before it is changed, so this
+        field decides how fast it can be. Quote the byline, name the slide, or point at
+        the section — "the author's Twitter says so" is not something the archived
+        document can confirm.
+      placeholder: |
+        Byline under the title: "by Jane Researcher and Alex Second".
+        Slide 2 of the deck lists both presenters.
+    validations:
+      required: true

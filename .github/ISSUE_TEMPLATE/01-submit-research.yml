@@ -1,0 +1,131 @@
+name: Submit research
+description: Propose a web hacking technique the nomination round missed, for review and addition to its year.
+title: "[Research] "
+labels: ["research submission", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **The year lists already hold every officially nominated technique.** What this
+        form is for is the research the nomination rounds *missed* — genuinely novel
+        web, HTTP, API or browser security work that was never nominated in the year it
+        was published.
+
+        Submissions are judged on the evidence, exactly like an internal audit find:
+        novel method, primary source, verified non-duplicate, score of 60 or above.
+        [How submissions are reviewed](https://github.com/irsdl/webhacklist/blob/master/CONTRIBUTING.md)
+        explains the bar and what happens next. Submitting your own research is welcome
+        — say so in the last field and it changes nothing about how it is judged.
+
+  - type: input
+    id: research-url
+    attributes:
+      label: Source URL
+      description: The original write-up, paper, advisory or talk — the researcher's own publication, not a newsletter, aggregator or summary of it.
+      placeholder: https://example.com/2019/the-write-up
+    validations:
+      required: true
+
+  - type: input
+    id: research-title
+    attributes:
+      label: Title of the research
+      placeholder: HTTP Desync Attacks — Request Smuggling Reborn
+    validations:
+      required: true
+
+  # Keep these options in step with website/archive-years.json when a year is
+  # added: the site's submission dialog prefills this field by its exact text.
+  - type: dropdown
+    id: year
+    attributes:
+      label: Year published
+      description: The year the research was first made public — which is the year list it would join, whatever year you found it.
+      options:
+        - "2026"
+        - "2025"
+        - "2024"
+        - "2023"
+        - "2022"
+        - "2021"
+        - "2020"
+        - "2019"
+        - "2018"
+        - "2017"
+        - "2016"
+        - "2015"
+        - "2014"
+        - "2013"
+        - "2012"
+        - "2011"
+        - "2010"
+        - "2009"
+        - "2008"
+        - "2007"
+        - "2006"
+        - "Not sure"
+    validations:
+      required: true
+
+  - type: input
+    id: researchers
+    attributes:
+      label: Researcher(s)
+      description: Who did the work, as they credit themselves. The archive credits people, not the domain a post happens to sit on.
+      placeholder: Jane Researcher, @janeresearch
+
+  - type: textarea
+    id: whats-new
+    attributes:
+      label: What is new about it
+      description: The technique itself — what it breaks, and what made it impossible or unknown before. A few sentences beat a link dump.
+      placeholder: |
+        The method, in your own words.
+        What class of target it applies to.
+        Why it was not previously possible or previously known.
+    validations:
+      required: true
+
+  - type: textarea
+    id: prior-art
+    attributes:
+      label: Prior art you checked
+      description: The closest earlier work you are aware of, and what this does that the earlier work did not. "None that I could find" is a valid answer — say where you looked.
+      placeholder: |
+        Closest prior work: <link> — did X, but not Y.
+        Searched the archive for: smuggling, desync, chunked.
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra-links
+    attributes:
+      label: Additional links
+      description: Slides, video, whitepaper, tool, follow-up parts — one per line. Everything listed here is preserved alongside the entry if it is accepted.
+      placeholder: |
+        https://example.com/slides.pdf
+        https://youtu.be/xxxxxxxx
+
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your connection to this research
+      description: Disclosure only. It has no effect on the outcome — self-submitted work is judged on exactly the same evidence.
+      options:
+        - I am the author or a co-author
+        - I know the author
+        - No connection — I just think it belongs here
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you file
+      options:
+        - label: I searched [the archive](https://webhacklist.com/) and this research is not already listed.
+          required: true
+        - label: The source URL is the original publication, not a summary, newsletter or aggregator copy of it.
+          required: true
+        - label: This is a *technique* — a reusable method — rather than a single site's bug report, a product announcement, or a CVE with no new method behind it.
+          required: true

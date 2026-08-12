@@ -30,6 +30,25 @@ const FULLSCREEN_VIEWS = new Set(["museum", "library", "signals", "constellation
 // two independent browser-local lists over the same records.
 const SAVED_MODES = ["favourites", "read", "all"];
 
+// Contributing runs through GitHub's issue forms: this site is static and stays
+// static, so nothing here posts anything anywhere. The form ids below are the
+// prefill parameter names in .github/ISSUE_TEMPLATE/01-submit-research.yml -
+// renaming a field there without renaming it here silently drops the answer.
+const REPOSITORY_URL = "https://github.com/irsdl/webhacklist";
+const CONTRIBUTION_FORMS = {
+  research: "01-submit-research.yml",
+  link: "02-dead-or-changed-link.yml",
+  capture: "03-faulty-capture.yml",
+  credit: "04-author-credit.yml",
+  website: "05-website-feedback.yml"
+};
+// GitHub answers an over-long issue address with an error page rather than a
+// form. A field that would push the address past this is dropped whole, not
+// truncated: half a sentence sitting in a form field reads as the submitter's
+// own words and is worse than an empty box they can see is empty.
+const ISSUE_URL_LIMIT = 6000;
+const ISSUE_FIELD_LIMIT = 1200;
+
 function loadStoredKeys(storageKey) {
   try {
     const saved = JSON.parse(localStorage.getItem(storageKey) || "[]");
@@ -735,6 +754,7 @@ async function loadArchive() {
     applyReadingTheme();
     render();
     $("#app-shell").hidden = false;
+    if (hashView === "submit") requestAnimationFrame(() => openSubmissionDialog());
     if (sharedArtifact) requestAnimationFrame(() => openArtifact(sharedArtifact));
     if (readerId) {
       const readerItem = await ensureItemLoaded(readerId);
@@ -808,6 +828,23 @@ function wireShell() {
     toast(state.motionReduced ? "Ambient motion reduced" : "Ambient motion restored");
   });
 
+  $$("[data-contribute]").forEach((button) => button.addEventListener("click", () => {
+    document.body.classList.remove("menu-open");
+    $("#mobile-menu").setAttribute("aria-expanded", "false");
+    openSubmissionDialog();
+  }));
+  ["#contribute-url", "#contribute-research-title", "#contribute-year", "#contribute-authors", "#contribute-why"]
+    .forEach((selector) => $(selector).addEventListener("input", scheduleSubmissionCheck));
+  $("#contribute-check").addEventListener("click", (event) => {
+    const target = event.target.closest("[data-artifact]");
+    if (!target) return;
+    // One modal at a time: the record answers the question the check raised, and
+    // the form is one click from being reopened with everything still typed in.
+    $("#contribute-dialog").close();
+    openArtifact(target.dataset.artifact);
+  });
+  $("#contribute-copy").addEventListener("click", copySubmissionDraft);
+
   $("#view-fullscreen").addEventListener("click", toggleViewFullscreen);
   $("#site-fullscreen").addEventListener("click", toggleSiteFullscreen);
   document.addEventListener("fullscreenchange", syncFullscreenControls);
@@ -832,6 +869,12 @@ function wireShell() {
 
   window.addEventListener("hashchange", async () => {
     const [next, sharedArtifact] = location.hash.replace("#", "").split("/");
+    // A route that opens the submission form rather than a room, so a post, a
+    // talk slide or CONTRIBUTING.md can send someone straight to it.
+    if (next === "submit") {
+      openSubmissionDialog();
+      return;
+    }
     const requested = resolveViewHash(next);
     if (requested) {
       const previousMode = state.savedMode;
@@ -3085,6 +3128,251 @@ async function openReader(item, options = {}) {
     if (requestToken !== readerRequestToken) return;
     $("#reader-content").innerHTML = `<div class="empty-state"><p>The preserved Markdown could not be opened.</p><small>${h(error.message)}</small></div>`;
   }
+}
+
+// —— Research submission ————————————————————————————————————————————————
+// The archive cannot take a submission itself and should not try to. What it
+// can do is the part GitHub cannot: answer the question worth asking first -
+// is this source already recorded? - before anyone writes a report out, and
+// then hand the issue form everything the page already knows.
+
+function issueFieldText(value, limit = ISSUE_FIELD_LIMIT) {
+  return String(value ?? "")
+    .replace(/\r/g, "")
+    // Everything Unicode calls "other" - control, format, bidi override -
+    // except the newline a textarea legitimately holds.
+    .replace(/[^\P{C}\n]/gu, "")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim()
+    .slice(0, limit);
+}
+
+function issueUrl(form, fields = {}) {
+  const template = CONTRIBUTION_FORMS[form];
+  if (!template) return `${REPOSITORY_URL}/issues/new/choose`;
+  const url = new URL(`${REPOSITORY_URL}/issues/new`);
+  url.searchParams.set("template", template);
+  for (const [field, value] of Object.entries(fields)) {
+    const text = issueFieldText(value);
+    if (!text) continue;
+    url.searchParams.set(field, text);
+    if (url.href.length > ISSUE_URL_LIMIT) url.searchParams.delete(field);
+  }
+  return url.href;
+}
+
+function submissionDraft() {
+  const typedUrl = $("#contribute-url").value.trim();
+  return {
+    typedUrl,
+    url: safeExternalUrl(typedUrl),
+    title: $("#contribute-research-title").value.trim(),
+    year: $("#contribute-year").value,
+    researchers: $("#contribute-authors").value.trim(),
+    whatsNew: $("#contribute-why").value.trim()
+  };
+}
+
+function submissionIssueUrl(draft) {
+  const heading = compact(draft.title || hostOf(draft.url)).slice(0, 120);
+  return issueUrl("research", {
+    title: heading ? `[Research] ${heading}` : "",
+    "research-url": draft.url,
+    "research-title": draft.title,
+    year: draft.year,
+    researchers: draft.researchers,
+    "whats-new": draft.whatsNew
+  });
+}
+
+// The same draft for somewhere that is not GitHub - a mail, a DM, a note to
+// self. Empty when there is nothing to carry, so the button can say so.
+function submissionMarkdown(draft) {
+  if (!draft.url && !draft.title) return "";
+  return [
+    `**${draft.title || "Untitled research"}**`,
+    draft.url ? `Source: ${draft.url}` : "",
+    draft.year ? `Year published: ${draft.year}` : "",
+    draft.researchers ? `Researcher(s): ${draft.researchers}` : "",
+    draft.whatsNew ? `\nWhat is new about it:\n${draft.whatsNew}` : ""
+  ].filter(Boolean).join("\n");
+}
+
+// The years a submission can name, read off the published collections so that
+// adding a year needs no second list here. One collection can cover two years -
+// 2016-17 - and answers for both.
+function submissionYears() {
+  const years = new Set();
+  for (const id of YEAR_FILES) {
+    const match = /^(\d{4})(?:-(\d{2}))?/.exec(id);
+    if (!match) continue;
+    const start = Number(match[1]);
+    const end = match[2] ? Number(`${match[1].slice(0, 2)}${match[2]}`) : start;
+    for (let year = start; year <= Math.max(start, end); year++) years.add(String(year));
+  }
+  return [...years].sort((a, b) => Number(b) - Number(a));
+}
+
+// Words that would match half the archive. A title term that survives this is
+// worth comparing; "the web attack" is not.
+const SUBMISSION_STOPWORDS = new Set([
+  "the", "and", "for", "with", "from", "into", "your", "you", "that", "this", "how", "why", "what", "when",
+  "are", "was", "not", "all", "new", "novel", "using", "use", "via", "web", "http", "https", "www",
+  "attack", "attacks", "attacking", "security", "part", "revisited", "introduction", "research", "technique", "techniques"
+]);
+
+function submissionTokens(value) {
+  return (String(value || "").toLowerCase().match(/[a-z0-9][a-z0-9+#.'-]{2,}/g) || [])
+    .filter((word) => !SUBMISSION_STOPWORDS.has(word));
+}
+
+// Parameters that name where a reader came from rather than what they are
+// reading. Only these are dropped: a query is not decoration on a blog of the
+// era this archive covers - `?p=123` IS the article, and discarding it would
+// report every post on such a site as the same research.
+const TRACKING_PARAMETERS = /^(utm_|mc_|_hs)|^(ref|referrer|source|share|fbclid|gclid|igshid|mkt_tok|spm)$/i;
+
+// A submitted URL rarely matches a cited one character for character: the same
+// article arrives as http, with www, with a campaign tag, or wrapped in a
+// Wayback replay. The loose key answers those. The exact key is tried first, so
+// a looser reading never overrides a literal match.
+function submissionUrlKeys(value) {
+  const direct = safeExternalUrl(value);
+  if (!direct) return [];
+  const replayed = /^https?:\/\/web\.archive\.org\/web\/[^/]+\/(https?:\/\/.+)$/i.exec(direct);
+  const target = (replayed && safeExternalUrl(replayed[1])) || direct;
+  const keys = [normalizeUrl(target)];
+  try {
+    const url = new URL(target);
+    for (const key of [...url.searchParams.keys()]) if (TRACKING_PARAMETERS.test(key)) url.searchParams.delete(key);
+    const rest = url.searchParams.toString();
+    keys.push(`${url.hostname.replace(/^www\./i, "").toLowerCase()}${url.pathname.replace(/\/+$/, "")}${rest ? `?${rest}` : ""}`);
+  } catch { /* the exact key alone still answers */ }
+  return keys;
+}
+
+let submissionIndexCache = null;
+function submissionIndex() {
+  if (submissionIndexCache?.size === state.items.length) return submissionIndexCache;
+  const urls = new Map();
+  const titles = [];
+  for (const item of state.items) {
+    // Every link on the research, not only the one the reader opens: a talk is
+    // cited as its video and submitted as its slides just as often.
+    for (const link of [item, ...(item.links || [])]) {
+      for (const key of submissionUrlKeys(link.url || link.originalUrl)) {
+        if (!urls.has(key)) urls.set(key, item);
+      }
+    }
+    titles.push({ item, tokens: new Set(submissionTokens(item.title)) });
+  }
+  submissionIndexCache = { size: state.items.length, urls, titles };
+  return submissionIndexCache;
+}
+
+function submissionMatches(draft) {
+  const index = submissionIndex();
+  const exact = submissionUrlKeys(draft.url).map((key) => index.urls.get(key)).find(Boolean) || null;
+  const wanted = new Set(submissionTokens(draft.title));
+  const similar = wanted.size < 2 ? [] : index.titles
+    .map((entry) => ({ item: entry.item, score: [...wanted].filter((word) => entry.tokens.has(word)).length }))
+    .filter((entry) => entry.score >= 2 && entry.item !== exact)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 4)
+    .map((entry) => entry.item);
+  return { exact, similar };
+}
+
+function submissionRecordButton(item, note = "") {
+  return `
+    <button type="button" data-artifact="${h(item.id)}">
+      <span>${h(item.yearLabel || item.year)}</span>
+      <b>${h(short(item.title, 76))}</b>
+      <em>${h(note || briefCreditOf(item) || item.topic)}</em>
+    </button>`;
+}
+
+function renderSubmissionCheck(draft) {
+  const panel = $("#contribute-check");
+  const { exact, similar } = submissionMatches(draft);
+  if (exact) {
+    const standing = exact.rank ? `Top 10 · #${exact.rank}` : exact.preliminary ? "preliminary collection" : "nominated";
+    panel.className = "contribute-check is-match";
+    panel.innerHTML = `<p><b>This source is already in the archive.</b> Open the record to confirm it is the same research. If the entry itself is wrong — dead link, bad capture, missing credit — one of the routes at the bottom of this form fits better than a new submission.</p>${submissionRecordButton(exact, standing)}`;
+  } else if (similar.length) {
+    panel.className = "contribute-check is-near";
+    panel.innerHTML = `<p><b>No record holds that address.</b> These titles are the closest already here — worth opening first, in case the same work is recorded under a different link.</p>${similar.map((item) => submissionRecordButton(item)).join("")}`;
+  } else {
+    panel.className = "contribute-check is-clear";
+    panel.innerHTML = `<p><b>Nothing here matches that ${draft.title ? "source or title" : "source"}.</b> ${state.items.length.toLocaleString()} records searched. Worth filing.</p>`;
+  }
+  panel.hidden = false;
+}
+
+let submissionCheckToken = 0;
+async function updateSubmissionCheck() {
+  const panel = $("#contribute-check");
+  const draft = submissionDraft();
+  $("#contribute-issue").href = submissionIssueUrl(draft);
+  const token = ++submissionCheckToken;
+  if (!draft.typedUrl && !draft.title) {
+    panel.className = "contribute-check";
+    panel.hidden = true;
+    return;
+  }
+  if (draft.typedUrl && !draft.url) {
+    panel.className = "contribute-check is-warning";
+    panel.innerHTML = `<p><b>That is not an address the archive can follow.</b> A submission needs an <code>https://</code> link to the original publication.</p>`;
+    panel.hidden = false;
+    return;
+  }
+  const pending = YEAR_FILES.length - loadedCollections.size;
+  if (pending) {
+    panel.className = "contribute-check is-loading";
+    panel.innerHTML = `<p>Searching the archive… <small>${pending} collection${pending === 1 ? "" : "s"} still loading</small></p>`;
+    panel.hidden = false;
+    // A collection that will not load leaves the check narrower, not broken:
+    // report against what did load rather than refusing to answer at all.
+    try { await ensureAllCollections(); } catch { /* answer from what loaded */ }
+    if (token !== submissionCheckToken) return;
+  }
+  renderSubmissionCheck(draft);
+}
+
+let submissionCheckTimer;
+function scheduleSubmissionCheck() {
+  // The outbound link is rebuilt on the keystroke; only the archive search waits
+  // for a pause, so the button is never one edit behind what the form shows.
+  $("#contribute-issue").href = submissionIssueUrl(submissionDraft());
+  clearTimeout(submissionCheckTimer);
+  submissionCheckTimer = setTimeout(updateSubmissionCheck, 260);
+}
+
+async function copySubmissionDraft() {
+  const markdown = submissionMarkdown(submissionDraft());
+  if (!markdown) {
+    toast("Add the source URL or the title first");
+    return;
+  }
+  try {
+    await navigator.clipboard.writeText(markdown);
+    toast("Submission copied as Markdown");
+  } catch {
+    toast(fallbackCopy(markdown) ? "Submission copied as Markdown" : "Copying is unavailable in this browser");
+  }
+}
+
+function openSubmissionDialog() {
+  const dialog = $("#contribute-dialog");
+  const yearSelect = $("#contribute-year");
+  if (!yearSelect.options.length) {
+    yearSelect.innerHTML = `<option value="">Choose a year…</option>${
+      submissionYears().map((year) => `<option value="${h(year)}">${h(year)}</option>`).join("")
+    }<option value="Not sure">Not sure</option>`;
+  }
+  updateSubmissionCheck();
+  if (!dialog.open) dialog.showModal();
+  requestAnimationFrame(() => $("#contribute-url").focus());
 }
 
 function empty(message) {

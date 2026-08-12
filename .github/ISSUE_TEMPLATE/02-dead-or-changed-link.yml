@@ -1,0 +1,56 @@
+name: Report a dead or wrong link
+description: A cited source that 404s, moved, or now points somewhere it should not.
+title: "[Link] "
+labels: ["dead link", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Old research links die: blogs shut down, domains lapse and get re-registered by
+        someone else. Reporting one is one of the most useful things you can do here —
+        the archived Markdown and PDF copies survive, but the citation should still
+        point somewhere real.
+
+  - type: input
+    id: broken-url
+    attributes:
+      label: The link as it appears in the list
+      placeholder: https://blog.example.com/2011/the-post
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Where it appears
+      description: The year, and the entry title if you have it.
+      placeholder: 2011.md — "Expression Language Injection"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: fault
+    attributes:
+      label: What happens when you open it
+      options:
+        - 404 or the page is gone
+        - Domain is parked, for sale, or now hosts something unrelated
+        - Redirects to a homepage or index instead of the article
+        - Paywall, login or consent wall
+        - Server error or timeout
+        - Something else (described below)
+    validations:
+      required: true
+
+  - type: input
+    id: replacement
+    attributes:
+      label: A replacement, if you found one
+      description: The author's new domain, a mirror they published themselves, or a Wayback Machine capture of the original.
+      placeholder: https://web.archive.org/web/20120101000000/https://blog.example.com/2011/the-post
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      placeholder: The author moved everything to a new domain in 2018; the whole 2011 run is affected.

@@ -1,4 +1,4 @@
-import { access, readFile } from "node:fs/promises";
+import { access, readdir, readFile } from "node:fs/promises";
 import { constants } from "node:fs";
 import path from "node:path";
 import process from "node:process";
@@ -461,6 +461,103 @@ const deploymentChecks = [
   headersSource.includes("max-age=31536000, immutable")
 ];
 
+// The submission route crosses two files that nothing else keeps in step: the
+// app prefills GitHub's issue form by field id, and a renamed field there would
+// drop the answer silently rather than fail. So the ids, the template filenames
+// and the year options are checked against each other here.
+const submissionFormSource = await readFile(path.join(root, ".github/ISSUE_TEMPLATE/01-submit-research.yml"), "utf8");
+// config.yml is the chooser's own configuration, not one of the forms.
+const issueTemplateFiles = new Set((await readdir(path.join(root, ".github/ISSUE_TEMPLATE"))).filter((name) => name.endsWith(".yml") && name !== "config.yml"));
+const submissionFieldIds = [...submissionFormSource.matchAll(/^ {4}id:\s*([a-z0-9-]+)\s*$/gm)].map((match) => match[1]);
+const submissionFormYears = [...submissionFormSource.matchAll(/^ {8}- "(\d{4})"$/gm)].map((match) => match[1]);
+const appTemplateNames = [...appSource.matchAll(/"(\d\d-[a-z0-9-]+\.yml)"/g)].map((match) => match[1]);
+const indexTemplateNames = [...indexSource.matchAll(/issues\/new\?template=([0-9a-z-]+\.yml)/g)].map((match) => match[1]);
+const catalogueYearIds = progressiveCatalogue.years.map((record) => record.id);
+const offeredYears = JSON.parse(clientEval(`YEAR_FILES = ${JSON.stringify(catalogueYearIds)}; JSON.stringify(submissionYears())`));
+const prefilledIssueUrl = clientEval(`issueUrl("research", {
+  title: "[Research] Example",
+  "research-url": "https://example.test/post",
+  year: "2019",
+  "whats-new": "line one\\n\\nline two"
+})`);
+// Six fields at the per-field cap would make an address GitHub answers with an
+// error page instead of a form, so the overflow has to be dropped whole.
+const floodedIssueUrl = clientEval(`issueUrl("research", Object.fromEntries(
+  ["title", "research-url", "research-title", "researchers", "whats-new", "prior-art"].map((field) => [field, "x".repeat(9000)])
+))`);
+const submissionMatching = JSON.parse(clientEval(`
+  state.items = [{
+    id: "2019-1", year: "2019", yearLabel: "2019", rank: 1, topic: "HTTP",
+    title: "HTTP Desync Attacks: Request Smuggling Reborn",
+    originalUrl: "https://portswigger.net/research/http-desync-attacks",
+    links: [{ url: "https://portswigger.net/research/http-desync-attacks" }, { url: "https://youtu.be/example" }]
+  }, {
+    id: "2008-4", year: "2008", yearLabel: "2008", rank: null, topic: "Other",
+    title: "A blog on query-string permalinks",
+    originalUrl: "https://oldblog.test/?p=123",
+    links: [{ url: "https://oldblog.test/?p=123" }]
+  }];
+  submissionIndexCache = null;
+  const match = (url, title = "") => submissionMatches({ url: safeExternalUrl(url), title });
+  const result = {
+    exact: match("https://portswigger.net/research/http-desync-attacks").exact?.id || "",
+    loose: match("http://www.portswigger.net/research/http-desync-attacks/").exact?.id || "",
+    tracked: match("https://portswigger.net/research/http-desync-attacks?utm_source=newsletter&fbclid=x").exact?.id || "",
+    replayed: match("https://web.archive.org/web/20200101/https://portswigger.net/research/http-desync-attacks").exact?.id || "",
+    secondLink: match("https://youtu.be/example").exact?.id || "",
+    unrelated: match("https://example.test/nothing-like-it").exact?.id || "",
+    // The query IS the article on a blog of that era, so a different post on
+    // the same host is a different record - not a duplicate of it.
+    permalink: match("https://oldblog.test/?p=123").exact?.id || "",
+    otherPermalink: match("https://oldblog.test/?p=456").exact?.id || "",
+    similar: match("https://example.test/nothing-like-it", "Request smuggling reborn, revisited").similar.map((item) => item.id),
+    unrelatedTitle: match("https://example.test/nothing-like-it", "Prototype pollution in the wild").similar.length
+  };
+  state.items = [];
+  submissionIndexCache = null;
+  JSON.stringify(result)
+`));
+const contributionChecks = [
+  // Every route the page offers has a form behind it, and every form the app
+  // names is a file that exists.
+  issueTemplateFiles.size === 5,
+  appTemplateNames.length === 5 && appTemplateNames.every((name) => issueTemplateFiles.has(name)),
+  indexTemplateNames.length >= 5 && indexTemplateNames.every((name) => issueTemplateFiles.has(name)),
+  (await exists(".github/ISSUE_TEMPLATE/config.yml")) && (await exists(".github/PULL_REQUEST_TEMPLATE.md")) && (await exists("CONTRIBUTING.md")),
+  ["research-url", "research-title", "year", "researchers", "whats-new", "prior-art"].every((id) => submissionFieldIds.includes(id)),
+  // A year the site can offer but the form cannot accept loses that answer.
+  offeredYears.length >= 20 && offeredYears.every((year) => submissionFormYears.includes(year)),
+  JSON.stringify(offeredYears.slice(0, 3)) === JSON.stringify([...offeredYears].sort((a, b) => Number(b) - Number(a)).slice(0, 3)),
+  prefilledIssueUrl.startsWith("https://github.com/irsdl/webhacklist/issues/new?template=01-submit-research.yml"),
+  prefilledIssueUrl.includes("research-url=https%3A%2F%2Fexample.test%2Fpost") && prefilledIssueUrl.includes("year=2019"),
+  prefilledIssueUrl.includes("whats-new=line+one%0A%0Aline+two"),
+  clientEval(`issueUrl("no-such-form")`) === "https://github.com/irsdl/webhacklist/issues/new/choose",
+  floodedIssueUrl.length <= 6000 && floodedIssueUrl.includes("template=01-submit-research.yml"),
+  // A submitted address is not a URL the page will follow, but it is still
+  // validated before it is written into an outbound link.
+  clientEval(`submissionIssueUrl({ url: safeExternalUrl("javascript:alert(1)"), title: "", year: "", researchers: "", whatsNew: "" })`) === "https://github.com/irsdl/webhacklist/issues/new?template=01-submit-research.yml",
+  clientEval(`issueFieldText("a\\u202Eb\\u0007c")`) === "abc",
+  clientEval(`issueFieldText("first\\n\\n\\n\\nsecond")`) === "first\n\nsecond",
+  submissionMatching.exact === "2019-1",
+  submissionMatching.loose === "2019-1",
+  submissionMatching.tracked === "2019-1",
+  submissionMatching.replayed === "2019-1",
+  submissionMatching.secondLink === "2019-1",
+  submissionMatching.unrelated === "",
+  submissionMatching.permalink === "2008-4",
+  submissionMatching.otherPermalink === "",
+  JSON.stringify(submissionMatching.similar) === '["2019-1"]',
+  submissionMatching.unrelatedTitle === 0,
+  indexSource.includes('id="contribute-dialog"'),
+  (indexSource.match(/data-contribute\b/g) || []).length === 3,
+  indexSource.includes('id="contribute-issue"') && indexSource.includes('id="contribute-check"'),
+  appSource.includes("function openSubmissionDialog"),
+  appSource.includes("function submissionMatches"),
+  appSource.includes('if (next === "submit")'),
+  stylesSource.includes(".contribute-check.is-match") && stylesSource.includes(".contribute-check.is-clear"),
+  stylesSource.includes(".support-action.is-contribute")
+];
+
 const joined = artifacts.filter((artifact) => artifact.record).length;
 const preliminaryRecords = yearRecords.filter((record) => record.status === "preliminary");
 const preliminaryArtifacts = artifacts.filter((artifact) => preliminaryRecords.some((record) => record.id === artifact.year));
@@ -476,6 +573,7 @@ console.log(`Security checks:     ${securityChecks.filter(Boolean).length}/${sec
 console.log(`Constellation UX:    ${constellationChecks.filter(Boolean).length}/${constellationChecks.length}`);
 console.log(`Requested views:     ${experienceChecks.filter(Boolean).length}/${experienceChecks.length}`);
 console.log(`Mobile/deployment:   ${deploymentChecks.filter(Boolean).length}/${deploymentChecks.length}`);
+console.log(`Contribution route:  ${contributionChecks.filter(Boolean).length}/${contributionChecks.length}`);
 
 if (artifacts.length < 1000) throw new Error("Expected at least 1,000 artifact titles.");
 if (!preliminaryRecords.length || preliminaryRecords.some((record) => record.ranked !== false || !record.notice || !record.contentStart || !record.contentEnd)) throw new Error("Every preliminary collection must be unranked, bounded, and carry a visible notice.");
@@ -490,5 +588,6 @@ if (securityChecks.some((passed) => !passed)) throw new Error(`Security checks f
 if (constellationChecks.some((passed) => !passed)) throw new Error("Constellation interaction checks failed.");
 if (experienceChecks.some((passed) => !passed)) throw new Error(`Requested experience checks failed. Views found: ${requestedViews.join(", ")}`);
 if (deploymentChecks.some((passed) => !passed)) throw new Error("Mobile/full-screen/deployment checks failed.");
+if (contributionChecks.some((passed) => !passed)) throw new Error(`Contribution route checks failed at index ${contributionChecks.findIndex((passed) => !passed)}.`);
 
 console.log("Smoke test:          PASS");

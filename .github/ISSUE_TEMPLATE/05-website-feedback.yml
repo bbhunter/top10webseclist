@@ -1,0 +1,47 @@
+name: Website bug or idea
+description: Something on webhacklist.com is broken, unreadable, or could work better.
+title: "[Site] "
+labels: ["website", "triage"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where in the site
+      options:
+        - Museum (exhibition rooms)
+        - Library (reading stacks)
+        - Signals (trend observatory)
+        - Constellation (relationship field)
+        - Hacker Terminal (query console)
+        - Investigation Board (casework surface)
+        - Favourites & Read
+        - Markdown reader
+        - PDF viewer
+        - Search
+        - Somewhere else / the whole site
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you expected, and what you got instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to see it
+      placeholder: |
+        1. Open the Library
+        2. Filter to 2014
+        3. …
+
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device
+      description: Helpful for anything visual — the site is dependency-free and hand-rolled, so rendering bugs are usually browser-specific.
+      placeholder: Firefox 141 on Android 15, phone

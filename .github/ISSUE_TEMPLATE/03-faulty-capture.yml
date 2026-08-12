@@ -1,0 +1,63 @@
+name: Report a faulty archived copy
+description: A preserved Markdown or PDF copy that captured the wrong page, or came out broken.
+title: "[Capture] "
+labels: ["faulty capture", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The archive keeps two local copies of each cited source — readable Markdown and
+        a PDF of the page as published. Sometimes a capture catches a consent wall, an
+        error page, or a parked domain that replaced the original, and only a reader
+        notices.
+
+        A report here is filed against the reference and queued for recapture.
+
+  - type: input
+    id: document
+    attributes:
+      label: Which document
+      description: The record's title, or its page link from the site — the ⌁ Share button in the reader copies the exact address.
+      placeholder: https://webhacklist.com/?reader=2013-14#library/2013-14
+    validations:
+      required: true
+
+  - type: dropdown
+    id: format
+    attributes:
+      label: Which copy is wrong
+      options:
+        - The PDF
+        - The Markdown
+        - Both
+    validations:
+      required: true
+
+  - type: dropdown
+    id: fault
+    attributes:
+      label: What came out instead
+      options:
+        - A cookie or consent wall
+        - A 404 or other error page
+        - A homepage, index or parked domain instead of the article
+        - The right page but truncated, empty, or unreadable
+        - A completely different document
+        - Something else (described below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: What you saw
+      description: Where it goes wrong — the first page, a section partway through, a missing appendix.
+      placeholder: Page 1 is the site's cookie banner; the article itself never renders.
+    validations:
+      required: true
+
+  - type: input
+    id: better-source
+    attributes:
+      label: A better source to capture from, if you know one
+      description: A mirror, a PDF the author published, or a Wayback capture from before the site changed.

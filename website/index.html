@@ -70,6 +70,7 @@
       <p class="brand-edition"><span>2006—NOW</span> Research record</p>
 
       <nav class="sidebar-project-links" aria-label="Project links">
+        <button class="contribute-launch" data-contribute type="button"><span aria-hidden="true">✍</span> Submit research</button>
         <a href="https://github.com/irsdl/webhacklist" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">GH</span> GitHub</a>
         <a href="https://github.com/irsdl/webhacklist/blob/master/.claude/skills/webseclist-judge-reference/SKILL.md" target="_blank" rel="noopener noreferrer" title="Use the judging workflow with your own AI"><span aria-hidden="true">AI</span> Judge your research</a>
         <a href="https://x.com/irsdl" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">X</span> @irsdl</a>
@@ -127,6 +128,7 @@
           <a class="sponsor-link" href="https://github.com/sponsors/irsdl" target="_blank" rel="noopener noreferrer" title="Sponsor the preservation work"><span aria-hidden="true">♥</span><b>Sponsor</b></a>
         </nav>
         <div class="top-actions">
+          <button class="quiet-button contribute-launch" data-contribute type="button" aria-label="Submit research" title="Propose research the nomination round missed"><span aria-hidden="true">✍</span><b>Submit research</b></button>
           <button class="quiet-button" id="random-artifact"><span aria-hidden="true">↝</span> Draw a thread</button>
           <button class="quiet-button site-fullscreen" id="site-fullscreen" type="button" hidden aria-pressed="false" title="Fill the screen with the complete website"><span aria-hidden="true">⛶</span> Full screen</button>
           <button class="sound-button" id="motion-toggle" aria-pressed="false" title="Reduce ambient motion">≈</button>
@@ -167,8 +169,11 @@
             </a>
             <a class="support-action is-sponsor" href="https://github.com/sponsors/irsdl" target="_blank" rel="noopener noreferrer">
               <span aria-hidden="true">♥</span><b>Sponsor the archive</b><em>Hosting, preservation and tooling</em></a>
+            <button class="support-action is-contribute contribute-launch" data-contribute type="button">
+              <span aria-hidden="true">✍</span><b>Submit research</b><em>Propose a technique the round missed</em>
+            </button>
             <a class="support-action" href="https://github.com/irsdl/webhacklist/blob/master/SUPPORT.md" target="_blank" rel="noopener noreferrer">
-              <span aria-hidden="true">→</span><b>Other ways to help</b><em>Fix a dead link, flag a missed technique</em></a>
+              <span aria-hidden="true">→</span><b>Other ways to help</b><em>Fix a dead link, report a bad capture</em></a>
           </div>
         </div>
 
@@ -182,6 +187,61 @@
       </footer>
     </section>
   </div>
+
+  <!-- Filing research is a GitHub issue, and this page is the only thing that can
+       answer the question worth asking first: is the source already in the
+       archive? The check runs locally against the loaded collections. Nothing is
+       submitted from here - the button hands GitHub a prefilled form, and the
+       submitter reads it before posting it. -->
+  <dialog class="contribute-dialog" id="contribute-dialog" aria-labelledby="contribute-title">
+    <form method="dialog"><button class="dialog-close" aria-label="Close the submission form">×</button></form>
+    <div class="artifact-glow" aria-hidden="true"></div>
+    <div class="dialog-body">
+      <p class="eyebrow">Contribute / research submission</p>
+      <h2 id="contribute-title">Submit research to the archive</h2>
+      <p class="artifact-context">Every officially nominated technique is already here. What the nomination rounds <strong>missed</strong> is the open question — and that is what this is for. Fill in what you know; the button below opens a prefilled GitHub issue you can read and edit before posting. Nothing leaves this page until you do.</p>
+
+      <div class="contribute-grid">
+        <label class="contribute-field">
+          <span>Source URL <b>required</b></span>
+          <input id="contribute-url" type="url" inputmode="url" autocomplete="off" spellcheck="false" placeholder="https://example.com/2019/the-write-up">
+          <small>The researcher's own publication — not a newsletter or a summary of it.</small>
+        </label>
+        <label class="contribute-field">
+          <span>Title of the research</span>
+          <input id="contribute-research-title" type="text" autocomplete="off" placeholder="HTTP Desync Attacks: Request Smuggling Reborn">
+        </label>
+        <label class="contribute-field is-half">
+          <span>Year published</span>
+          <select id="contribute-year"></select>
+        </label>
+        <label class="contribute-field is-half">
+          <span>Researcher(s)</span>
+          <input id="contribute-authors" type="text" autocomplete="off" placeholder="Jane Researcher">
+        </label>
+        <label class="contribute-field">
+          <span>What is new about it</span>
+          <textarea id="contribute-why" rows="3" placeholder="The method, what it breaks, and why it was not possible or not known before."></textarea>
+        </label>
+      </div>
+
+      <div class="contribute-check" id="contribute-check" aria-live="polite" hidden></div>
+
+      <div class="artifact-actions">
+        <a id="contribute-issue" href="https://github.com/irsdl/webhacklist/issues/new?template=01-submit-research.yml" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span> Open the prefilled issue</a>
+        <button class="secondary" id="contribute-copy" type="button"><span aria-hidden="true">⧉</span> Copy as Markdown</button>
+      </div>
+      <p class="contribute-note">A GitHub account is needed to post it. Submissions are judged on the evidence — novel method, primary source, verified non-duplicate — and accepted ones join their year under “Missed from the original list”. Submitting your own research is welcome and judged no differently.</p>
+
+      <p class="contribute-routes"><b>Something else?</b>
+        <a href="https://github.com/irsdl/webhacklist/issues/new?template=02-dead-or-changed-link.yml" target="_blank" rel="noopener noreferrer">Dead or wrong link</a>
+        <a href="https://github.com/irsdl/webhacklist/issues/new?template=03-faulty-capture.yml" target="_blank" rel="noopener noreferrer">Faulty archived copy</a>
+        <a href="https://github.com/irsdl/webhacklist/issues/new?template=04-author-credit.yml" target="_blank" rel="noopener noreferrer">Researcher credit</a>
+        <a href="https://github.com/irsdl/webhacklist/issues/new?template=05-website-feedback.yml" target="_blank" rel="noopener noreferrer">Website bug</a>
+        <a href="https://github.com/irsdl/webhacklist/blob/master/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">How submissions are reviewed</a>
+      </p>
+    </div>
+  </dialog>
 
   <dialog class="artifact-dialog" id="artifact-dialog" aria-labelledby="artifact-title">
     <form method="dialog"><button class="dialog-close" aria-label="Close artifact">×</button></form>
