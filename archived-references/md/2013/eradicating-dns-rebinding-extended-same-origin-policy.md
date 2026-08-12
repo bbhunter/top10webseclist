@@ -5,9 +5,9 @@ resource: "http://web.archive.org/web/20160507023636/http://ben-stock.de/wp-cont
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:38:03+00:00"
+  at: "2026-08-12T16:00:33+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://ben-stock.de/wp-content/uploads/dns-rebinding.pdf"
@@ -26,7 +26,7 @@ canonical_url: "http://web.archive.org/web/20160402141953/https://www.ben-stock.
 cited_by:
   - "2013.md:38"
 commit: ""
-content_sha256: ad488cf6193e606584ffceb70f9239dfc62db3f173225e4944569b23af78cacc
+content_sha256: 6be9cc24f545831d6452f7b86ff389003fa87be7fa18063da8fe5b8682e8dfa6
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -39,7 +39,7 @@ publisher_english: ""
 raw_sha256: bb3aa797511fff0a28f868d0bd294135f59d9b2fbcb75379204217afb455f686
 retrieved_from: "http://web.archive.org/web/20160402141953/https://www.ben-stock.de/wp-content/uploads/dns-rebinding.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:38:03+00:00"
+retrieved_utc: "2026-08-12T16:00:33+00:00"
 slug: eradicating-dns-rebinding-extended-same-origin-policy
 snapshot: 20150110195951
 title_english: ""
@@ -54,7 +54,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://ben-stock.de/wp-content/uploads/dns-rebinding.pdf>
 - Current location: <http://web.archive.org/web/20160402141953/https://www.ben-stock.de/wp-content/uploads/dns-rebinding.pdf>
-- Preserved from: http://web.archive.org/web/20160402141953/https://www.ben-stock.de/wp-content/uploads/dns-rebinding.pdf (stored) on 2026-08-11
+- Preserved from: http://web.archive.org/web/20160402141953/https://www.ben-stock.de/wp-content/uploads/dns-rebinding.pdf (stored) on 2026-08-12
 - Capture timestamp: 20150110195951
 - Licence: unknown
 
@@ -400,10 +400,6 @@ t
 
 --- page 5 ---
 
-*-/1345666665421/,"		&1=HPUY^_``aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``_][XTME:.$"+6AJQVZ^_``aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``_^ZVQKA7,"	$+28=BGKNQSUVXYZ[[[[\\[[[[YXWVUSPMJEA<60+.0246789:;;;;;;::976531.,*,.012233333210/-+
-
---- page 6 ---
-
 of the attack. For one, he utilized domain relaxation. In
 this case, the malicious JavaScript was hosted on a sub-
 domain of the adversary's server, e.g.,
@@ -515,7 +511,7 @@ one, network based access control is not limited to
 RFC 1918 ranges. In addition, bigger organizations, such
 as large companies or universities, do not always use
 
---- page 7 ---
+--- page 6 ---
 
 RFC 1918 addresses for their internal networks. Fur-
 thermore, with the growing support for IPv6 many use
@@ -626,7 +622,7 @@ discarded quickly [11]. Hence, depending on the given
 circumstances, the chances of keeping the attack script
 in the cache long enough for a successful attack tend
 
---- page 8 ---
+--- page 7 ---
 
 to be small. This changes with the introduction of the
 HTML5 Ofine Application Cache. Compared to a tra-
@@ -748,7 +744,7 @@ binds
 attacker2.org
 to the IP of an intranet host.
 
---- page 9 ---
+--- page 8 ---
 
 4. The attacker again lures the user onto
 attacker1.org
@@ -875,7 +871,7 @@ address of the host that served the applet. When con-
 ducting a HTTP or Socket connection the applet is only
 allowed to connect back to the same IP adress.
 
---- page 10 ---
+--- page 9 ---
 
 BrowserSDTD SVGTD FTD SLIE 10p---Firefox 14.0.1ppppChrome 21p-ppSafari 5.1p-ppOpera 12p
 p
@@ -969,7 +965,7 @@ The error log contains information on
 failed print jobs, which can be used for reconnaissance
 of a corporate intranet. When a print job fails, technical
 
---- page 11 ---
+--- page 10 ---
 
 details are written into the logs, including the username
 of the creator, exact information on the printer addresses
@@ -1100,7 +1096,7 @@ the security characteristics of the
 server
 .
 
---- page 12 ---
+--- page 11 ---
 
 In summary, the Web application model actually spans
 three principals in total: The
@@ -1287,7 +1283,7 @@ ig
 . Furthermore,
 the browser provides a reference to a resource from
 
---- page 13 ---
+--- page 12 ---
 
 the main application with the origin
 f
@@ -1481,7 +1477,7 @@ SOP is satised.
 In [13], Jackson and Barth examine a set of proposed
 SOP variants with ner-grained origins. Among other
 
---- page 14 ---
+--- page 13 ---
 
 techniques they discuss two approaches closely related
 to the eSOP: The Locked SOP and IP-based origins (for
@@ -1628,7 +1624,7 @@ This in turn allows easy setup of highly exible load-
 balancing and error-correcting network setups with mul-
 tiple, redundant servers.
 
---- page 15 ---
+--- page 14 ---
 
 7 Practical Implementation
 In order to validate the feasibility, security and function-
@@ -1731,7 +1727,7 @@ the server-origin and a string comparison of the domain
 and the stored value. The parsing of HTTP headers is
 executed for any request, thus the performance impact is
 
---- page 16 ---
+--- page 15 ---
 
 s
 a
@@ -1840,12 +1836,7 @@ sy
 e
 s
 
---- page 17 ---
-
-Dý†ýMaÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
-·
-
---- page 18 ---
+--- page 16 ---
 
 reduced to just one more array access. Thus, in our tests
 we had no noticeable overhead when accessing a Web
@@ -1962,7 +1953,7 @@ laxation, content caching, and communication over Web
 proxies. Additionally, the eSOP eradicates the need for
 DNS Pinning. Thus, browsers implementing the pol-
 
---- page 19 ---
+--- page 17 ---
 
 icy can better inter-operate with dynamic DNS settings,
 such as DNS based load-balancing or Content Distribu-
@@ -2243,7 +2234,7 @@ org/TR/2011/WD-CSP-2011
 1129/
 , 2012.
 
---- page 20 ---
+--- page 18 ---
 
 [33] D. Stuttard. DNS Pinning and Web Proxies. NISR
 whitepaper,
@@ -2294,8 +2285,3 @@ org
 /Security/wiki/SameOriginPolicy
 , (08/01/2012,
 2010.
-
---- page 21 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u

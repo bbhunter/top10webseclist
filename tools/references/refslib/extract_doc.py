@@ -14,6 +14,7 @@ failure naming the reason.
 """
 
 import re
+import unicodedata
 import zlib
 import zipfile
 import io
@@ -21,6 +22,32 @@ import io
 # A page of a slide deck or a paper with less than this is not converted text,
 # it is a caption on an image.
 MIN_PAGE_CHARS = 8
+
+# A stream whose bytes were never text at all. `_inflate` falls back to the raw,
+# undecompressed stream whenever it happens to contain `Tj` or `TJ`, which an
+# embedded font subset or an image does by chance, and the operator scan below
+# then reads those bytes as glyphs. Whole-document `text_quality` cannot catch
+# it, because the document as a whole still reads fine: Forshaw's 38-page
+# whitepaper published with 242,000 characters of decompressed font spread over
+# two "pages" while the other 36 were perfect prose. The test therefore has to
+# run per stream, before a page is kept.
+#
+# Two tiers, because a font stream is not always long. The wide tier catches the
+# multi-kilobyte blob; the narrow one catches the 144-character line of pure
+# noise that opened page 2 of that same whitepaper and was too short for the
+# wide tier to judge. Measured over every paged PDF in the archive: together
+# they drop 135 pages across 82 documents, every one of them binary, and drop
+# nothing from the CJK, Cyrillic and Arabic documents, nothing holding a real
+# word.
+#
+# Do NOT lower the wide ceiling to catch more. The 0.15-0.30 band holds
+# mis-decoded Cyrillic - real prose read through the wrong codepage - and
+# deleting that loses content instead of noise. That is a separate bug with a
+# separate fix.
+BINARY_STREAM_MIN_CHARS = 200
+BINARY_STREAM_SUSPECT_CEILING = 0.30
+BINARY_STREAM_SHORT_MIN_CHARS = 40
+BINARY_STREAM_SHORT_CEILING = 0.50
 
 # A content stream this large is usually an embedded image or a highly unusual
 # conference-paper export.  The lightweight expression scanner below is a good
@@ -190,6 +217,8 @@ def pdf_to_markdown(data, title=""):
                 "parser's %d-byte safety limit" %
                 (len(content), MAX_LIGHTWEIGHT_STREAM_BYTES))
         text = _pdf_stream_text(content)
+        if _is_binary_stream(text):
+            continue
         if len(text.strip()) >= MIN_PAGE_CHARS:
             pages.append(text.strip())
 
@@ -283,6 +312,8 @@ def _retry_with_tounicode(data):
         if content is None or (b"Tj" not in content and b"TJ" not in content):
             continue
         text = _pdf_stream_text(content, mapping)
+        if _is_binary_stream(text):
+            continue
         if len(text.strip()) >= MIN_PAGE_CHARS:
             pages.append(text.strip())
     return "\f".join(pages)
@@ -301,6 +332,33 @@ def _safe_chr(code):
         return chr(code)
     except ValueError:
         return ""
+
+
+def _is_binary_stream(text):
+    """True when this stream's "text" is a mis-decoded binary blob.
+
+    Counted as suspect: the Latin-1 supplement block, the replacement character,
+    and control characters other than tab and newline. Ordinary prose in any
+    script stays well under the ceiling - accented European text uses a few of
+    those code points, CJK and Cyrillic use none of them - while a font or image
+    stream read as Latin-1 is made of almost nothing else.
+    """
+    stripped = text.strip()
+    if len(stripped) < BINARY_STREAM_SHORT_MIN_CHARS:
+        return False            # too short to judge, and cheap to keep
+    suspect = 0
+    for char in stripped:
+        if char in "\t\n\r":
+            continue
+        code = ord(char)
+        if 0x80 <= code <= 0xFF or code == 0xFFFD:
+            suspect += 1
+        elif unicodedata.category(char) in ("Cc", "Cf", "Co", "Cs"):
+            suspect += 1
+    share = suspect / len(stripped)
+    if len(stripped) >= BINARY_STREAM_MIN_CHARS:
+        return share > BINARY_STREAM_SUSPECT_CEILING
+    return share > BINARY_STREAM_SHORT_CEILING
 
 
 def _inflate(raw):

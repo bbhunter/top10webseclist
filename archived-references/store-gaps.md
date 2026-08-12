@@ -32,7 +32,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 `raw_sha256` offline - re-import it rather than re-crawling.
 
 
-252 archived reference(s) name 297 store object(s) that are no longer held: 49 browser_dom_sha256, 22 content_sha256, 5 landing_sha256, 221 raw_sha256.
+247 archived reference(s) name 290 store object(s) that are no longer held: 49 browser_dom_sha256, 15 content_sha256, 5 landing_sha256, 221 raw_sha256.
 
 | Reference | Kind | Missing | Cited at |
 |---|---|---|---|
@@ -109,16 +109,12 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://code.google.com/p/puzzlemall/downloads/list> | article | `raw_sha256`, `browser_dom_sha256` | `2011.md:53` |
 | <https://coeus.ece.gatech.edu/2008/10/01/DNS_Forgery/> | article | `landing_sha256` | `2008.md:91` |
 | <https://diafygi.github.io/webrtc-ips/> | article | `raw_sha256` | `2015.md:76` |
-| <https://dl.acm.org/doi/10.1145/2810103.2813680> | article | `content_sha256` | `2015.md:61` |
 | <https://dl.acm.org/doi/10.1145/2810103.2813688> | article | `content_sha256` | `2015.md:68` |
-| <https://dl.acm.org/doi/10.1145/2818000.2818029> | article | `content_sha256` | `2015.md:75` |
 | <https://doi.org/10.1007/978-3-319-18467-8_7> | article | `raw_sha256`, `browser_dom_sha256` | `2015.md:79` |
-| <https://doi.org/10.1016/j.cose.2015.07.004> | article | `content_sha256`, `browser_dom_sha256` | `2015.md:77` |
-| <https://doi.org/10.1109/SP.2019.00025> | article | `content_sha256`, `browser_dom_sha256` | `2019.md:82` |
+| <https://doi.org/10.1016/j.cose.2015.07.004> | article | `browser_dom_sha256` | `2015.md:77` |
+| <https://doi.org/10.1109/SP.2019.00025> | article | `browser_dom_sha256` | `2019.md:82` |
 | <https://doi.org/10.1109/SP.2019.00049> | article | `browser_dom_sha256` | `2019.md:75` |
-| <https://doi.org/10.1109/SP46214.2022.00064> | article | `content_sha256` | `2022.md:73` |
 | <https://doi.org/10.1109/SP61157.2025.00029> | article | `browser_dom_sha256` | `2025.md:91` |
-| <https://doi.org/10.1145/3658644.3690361> | article | `content_sha256` | `2024.md:144` |
 | <https://elie.im/publication/text-based-captcha-strengths-and-weaknesses> | article | `raw_sha256` | `2011.md:52` |
 | <https://elie.im/publication/the-failure-of-noise-based-non-continuous-audio-captchas> | article | `raw_sha256` | `2011.md:23` |
 | <https://githubengineering.com/githubs-post-csp-journey/> | article | `raw_sha256`, `browser_dom_sha256` | `2016-17.md:24` |
@@ -169,7 +165,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/> | article | `raw_sha256` | `2026-ai.md:82` |
 | <https://thehackerblog.com/the-io-error-taking-control-of-all-io-domains-with-a-targeted-registration/index.html> | article | `raw_sha256` | `2016-17.md:36` |
 | <https://thespanner.co.uk/2013/05/16/dom-clobbering> | article | `raw_sha256` | `2013.md:55` |
-| <https://tinyurl.com/5w6koqj> | article | `content_sha256` | `2011.md:21` |
 | <https://vnhacker.blogspot.com/2011/09/beast.html> | article | `raw_sha256` | `2011.md:5` |
 | <https://vttynotes.blogspot.com/2011/10/cve-2011-3230-launch-any-file-path-from.html> | advisory | `raw_sha256`, `browser_dom_sha256` | `2011.md:41` |
 | <https://vulncheck.com/blog/juniper-cve-2023-36845> | article | `raw_sha256` | `2023.md:55` |

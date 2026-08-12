@@ -5,9 +5,9 @@ resource: "https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:38:16+00:00"
+  at: "2026-08-12T16:05:35+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf"
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: 0ae9a0ceb1d4e7005ab4f06635791447030cfca52069497d6ad59b82ac4cf015
 retrieved_from: "https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:38:16+00:00"
+retrieved_utc: "2026-08-12T16:05:35+00:00"
 slug: timing-attacks-have-never-been-so-practical-advanced-cross-site-search-attacks
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf>
-- Preserved from: https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf (stored) on 2026-08-11
+- Preserved from: https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

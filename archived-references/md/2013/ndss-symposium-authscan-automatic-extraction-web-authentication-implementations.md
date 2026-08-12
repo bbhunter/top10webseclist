@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/authscan-
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:44:04+00:00"
+  at: "2026-08-12T16:01:00+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/authscan-automatic-extraction-web-authentication-protocols-implementations/"
@@ -29,7 +29,7 @@ canonical_url: ""
 cited_by:
   - "2013.md:52"
 commit: ""
-content_sha256: 54787224d53e050bf28b87744acd1597f667537ba6d1db28cd4d7d8541231630
+content_sha256: b1ea18875ca962a5ca10157de187484a6b2e9a7375d0fd52cbf7e327ea9c03b6
 depth: full
 depth_reason: default
 kind: article
@@ -42,7 +42,7 @@ publisher_english: ""
 raw_sha256: 5dc0433e7ea92a5e7a3d3887a0f5aba59d8698b70e7952db67bb8a6fc54cb6ea
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_4_0.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:44:04+00:00"
+retrieved_utc: "2026-08-12T16:01:00+00:00"
 slug: ndss-symposium-authscan-automatic-extraction-web-authentication-implementations
 snapshot: ""
 title_english: ""
@@ -58,7 +58,7 @@ translation_of: ""
 - Original: <https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/authscan-automatic-extraction-web-authentication-protocols-implementations/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_4_0.pdf>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/Presentation04_4.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_4_0.pdf (stored) on 2026-08-11
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/04_4_0.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -487,20 +487,6 @@ Browser en-USwww.sp.com/login en-USwww.idp.com/login IDP/login server en-US1 2 3
 
 --- page 11 ---
 
-Dý†ýMaÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
-·
-
---- page 12 ---
-
-=! ý!.Aý<û97DG<G?-3%ûGþúûékP®Ã¸CüB&
-{ý80~!ý y+ üâH<#9&"6
-
---- page 13 ---
-
-ùë¤åpþ±N^@,ÍÀÀÈ!:0>1S-Í'd@§D%$§D&ª%€¸ÿð@H	t7z5X@Î,îgg+žgª9¨5 7K*gJgnC2E6gÂ+Œ6œ6œ9ü=Av5Ö6f+ž1zfxgÎgÈgÔehh h²feRhôgþhÜhâgøgæih¬ihŽh^ii*i0i6i<fxgÚhdhdhŽhjgÈgDgz@g>`œeRgÚbšaþgìaþhvh¸h4h:,@Î,+ži`I€i´iHCÎiriNiTixiÆ9Þ
-
---- page 14 ---
-
 similar to a recently reported real-world attack on the
 site
 zoho.com
@@ -703,7 +689,7 @@ as a starting point for a variety of manual and automatic
 analysis [17]. Second, it produces a vulnerability report for
 all the attacks that it nds.
 
---- page 15 ---
+--- page 12 ---
 
 Figure 2: Overview of A
 UTH
@@ -863,31 +849,31 @@ By precise, we mean that each renement contains more expressive
 semantics about actions performed by protocol participants and more rela-
 tionships between data terms exchanged in the protocol.
 
---- page 16 ---
+--- page 13 ---
 
 Protocol Extraction Trace Capturing Refinement Verification Tool Attack Message Construction Protocol Verification Probe Attack Confirmation ProVerif PAT Abstraction Initialization Model Translation en-USHybrid Inference en-USSecurity Properties Configurable Options Oracle Protocol Principals & Keys Test Harness Inputs Crypto Functions Attack Models TML Model Candidate Attack Flaws Local Trace Pool Warning AVISPA
 
---- page 17 ---
+--- page 14 ---
 
 "	&-4:?CFHJKLLLMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMLLLKJIGDA<60
 
---- page 18 ---
+--- page 15 ---
 
 *+-./00000000/.-,*/6=BGLOQSUVXY[]^^____________^^^^^^^^_____````______^^^^^^^^_____````______^^^^^^^^_____````_____^^^^^^^^^_____````_____^^^^^^^^^_____````_____^^^^^^^^______````_____^^^^^^^^______````_____^^^^^^^^______````_____^^^^^^^^______```______^^^^^^^^______```______^^^^^^^^______```______^^^^^^^^______```______^^^^^^^^______```______^^^^^^^^______```______^^^^^^^^_____````______^^^^^^^^_____````______^^^^^^^^_____````_____^^^^^^^^^_____````_____^^^^^^^^^_____````_____^^^^^^^^______````_____^^^^^^^^______````_____^^^^^^^^______````_____^^^^^^^^____________^^][YXVUSROLHD>81
 
---- page 19 ---
+--- page 16 ---
 
 #&-48<?ABBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBBA@=:60
 
---- page 20 ---
+--- page 17 ---
 
 *+-./00000000/.-,*
 
---- page 21 ---
+--- page 18 ---
 
 -2579:;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:9852.
 
---- page 22 ---
+--- page 19 ---
 
 off-the-shelf verication tools for various security prop-
 erties, against different attackers. In this work, we use
@@ -1365,7 +1351,7 @@ Actions
 executes a sequence of actions. Actions can be either
 communication actions, which send/receive messages with
 
---- page 23 ---
+--- page 20 ---
 
 Table 1: The Action Schema in IML
 BeginInit
@@ -1741,7 +1727,7 @@ ticipants send
 m
 back to their backend servers, and their
 
---- page 24 ---
+--- page 21 ---
 
 servers later respond with entity
 f
@@ -2006,44 +1992,29 @@ Init
 is a set of
 predicates, which stands for the initial knowledge of the
 
---- page 25 ---
+--- page 22 ---
 
 en-US Local Trace Pool Abstraction Initialization Fuzzing Differential Analysis Principals Initial Knowledge Program Analysis Security Analyst Hybrid Inference Test Traces en-US en-US en-US TML model en-US Local Trace Pool Abstraction Initialization Fuzzing Differential Analysis Principals Initial Knowledge Program Analysis Security Analyst TML model Initial Abstraction Refinement Hybrid Inference One Test Case en-US en-US
 
---- page 26 ---
-
-ðàà÷îî÷îî÷îî÷îî÷îî÷îî÷îî÷îî÷îî÷îî÷îî÷îîÍš™”'$²edðááðááðááðááðááðááÝ»»”'$š42îÝÝðááðááðááðááÕª©”'$”'$”'$b#"v-,”'$”'$”'$”'$áÂÁïßßïßßïßßïßßïßßïßß¶lk”'$Â†„öîíöîíöîíöîíöîíöîíöîíöîíöîíïßÞ”'$—-*êÔÔïßßïßßïßßïßßïßßïßß¥JG”'$Ã‡†ïßßïßßïßßïßßíÛÛ™20”'$”'$”'$"'”'$”'$”'$§NLîÞÝ¿€”'$°_]îÞÝîÞÝîÞÝîÞÝîÞÝîÞÝíÛÚ˜1.”'$éÔÓöííöííöííöííöííöííÂ„ƒ”'$ºvuîÞÝîÞÝîÞÝîÞÝîÞÝîÞÝÖ­¬”'$ A>îÞÝîÞÝîÞÝîÞÝîÞÝÌ˜–”'$”'$”'$j ”'$”'$”'$Ø°¯îÝÜîÝÜîÝÜîÝÜ ?<”'$×¯®îÝÜîÝÜîÝÜîÝÜîÝÜîÝÜÀ�”'$¹sqöííöííöííéÓÒ”'$›52ìÙØîÝÜîÝÜîÝÜîÝÜîÝÜíÛÚœ97”'$Ïž�îÝÜîÝÜîÝÜîÝÜéÓÒ—.,”'$”'$‘'$�
-
---- page 27 ---
-
-ðàà÷îî÷îî÷îî÷îî÷îî÷îî÷îî÷îî÷îî÷îî÷îî÷îîÍš™”'$²edðááðááðááðááðááðááÝ»»”'$š42îÝÝðááðááðááðááÕª©”'$”'$”'$b#"v-,”'$”'$”'$”'$áÂÁïßßïßßïßßïßßïßßïßß¶lk”'$Â†„öîíöîíöîíöîíöîíöîíöîíöîíöîíïßÞ”'$—-*êÔÔïßßïßßïßßïßßïßßïßß¥JG”'$Ã‡†ïßßïßßïßßïßßíÛÛ™20”'$”'$”'$"'”'$”'$”'$§NLîÞÝ¿€”'$°_]îÞÝîÞÝîÞÝîÞÝîÞÝîÞÝíÛÚ˜1.”'$éÔÓöííöííöííöííöííöííÂ„ƒ”'$ºvuîÞÝîÞÝîÞÝîÞÝîÞÝîÞÝÖ­¬”'$ A>îÞÝîÞÝîÞÝîÞÝîÞÝÌ˜–”'$”'$”'$j ”'$”'$”'$Ø°¯îÝÜîÝÜîÝÜîÝÜ ?<”'$×¯®îÝÜîÝÜîÝÜîÝÜîÝÜîÝÜÀ�”'$¹sqöííöííöííéÓÒ”'$›52ìÙØîÝÜîÝÜîÝÜîÝÜîÝÜíÛÚœ97”'$Ïž�îÝÜîÝÜîÝÜîÝÜéÓÒ—.,”'$”'$‘'$�
-
---- page 28 ---
+--- page 23 ---
 
 19@EIMNOPQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQPONLID>6/&
 
 $+29>ADFFGHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHGFFDA=71
 
---- page 29 ---
+--- page 24 ---
 
 *,-----------------------------------------------------------------------,+
 
---- page 30 ---
+--- page 25 ---
 
 *+,,-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------,,*
 
---- page 31 ---
+--- page 26 ---
 
 19BHMPSTUVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVUTTQNIC<3*!	$-4<AFILMNOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONMLJGC=7.& '.5:>ACDEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEDCA?;60
 
---- page 32 ---
-
-%¸ÿð@,M$#&%ô"#
-¯#¿#Ï###RUU???99//]]9993í2310+]++++++++%#".'!#"&&67>32#!u%%	oýæj
-#%²' *{ßÂ=	;þÉ		²�ý{aÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
-·/%L%%"L
-
---- page 33 ---
+--- page 27 ---
 
 principals. Some of these are derived from the assump-
 tions of TML (outlined in Section 3.2), e.g.,
@@ -2328,7 +2299,7 @@ trPool
 in Algorithm 1). These
 traces are not fed back to the initial test harness, and are
 
---- page 34 ---
+--- page 28 ---
 
 used only during the blackbox and whitebox steps.
 Eliminating Redundant Data.
@@ -2575,7 +2546,7 @@ cryptographic functions. It takes every combination of all
 HTTP data elements and checks if they can be used as in-
 puts to a standard cryptographic primitive to produce an-
 
---- page 35 ---
+--- page 29 ---
 
 other data element. We bound the function nesting depth
 of terms to be less than 5. In our experiments, we nd that
@@ -2820,7 +2791,7 @@ k
 B
 to the attacker such that the attacker is able
 
---- page 36 ---
+--- page 30 ---
 
 to read and write the
 postMessage
@@ -3022,7 +2993,7 @@ password
 in BrowserID), except for the Iyer-
 Matrimony case in which ve are needed.
 
---- page 37 ---
+--- page 31 ---
 
 Table 2: Statistics in our experiments
 Column 2: ratio of messages ltered out by A
@@ -3190,7 +3161,7 @@ IDP, but tested the remaining protocol with the SPs.
 In the implementation of Facebook Connect, most of the
 communications are through HTTPS to prevent network at-
 
---- page 38 ---
+--- page 32 ---
 
 tackers from stealing the authorization tokens. However,
 A
@@ -3415,7 +3386,7 @@ tocols generated are usually small. We nd that additional
 source code results in the reduced number of iterations in
 our blackbox fuzzing step. For example, in BrowserID,
 
---- page 39 ---
+--- page 33 ---
 
 the client-side code is available, therefore, the number of
 fuzzing iterations is smaller (20-30 rounds) than other SSO
@@ -3570,7 +3541,7 @@ and Verication of Security Protocol Implementations” and
 “Research and Development in the Formal Verication of
 System Design and Implementation”.
 
---- page 40 ---
+--- page 34 ---
 
 References
 [1] AUTHSCAN. https://sites.google.com/site/ndss2013/.
@@ -3760,7 +3731,7 @@ Software Vulnerability Detection. In
 S&P
 , May 2010.
 
---- page 41 ---
+--- page 35 ---
 
 [44] T. Y. C. Woo and S. S. Lam. A Semantic Model for Authen-
 tication Protocols. In
@@ -3974,7 +3945,7 @@ scription in Wang
 et al.
 's recent work [42]— this is because
 
---- page 42 ---
+--- page 36 ---
 
 Figure 5: The HTTP trace of BrowserID and the corresponding TML statements
 (The full messages are available at [1].)
@@ -4010,44 +3981,28 @@ destructor (
 reduc
 ) (line 6-15). The local protocols are
 
---- page 43 ---
+--- page 37 ---
 
 # Input TML (2) HTTP Messages Javascript code snippet Initial Conditions r has csrf p has csrf IDP_C( r ) NewAssoc({r,p}, assoc (USER, PWD)) Send( p, {assoc(USER, PWD ), csrf }) IDP_S( p ) Receive( r, { assoc( M, N ), csrf } ) POST https://login.persona.org/wsapi/authenticate_user Host: login.persona.org "email":"alicessotester@gmail.com", "pass":"alice", "csrf":"UaZWfqrQmYwemitM1U8nUw==" NONE (4) POST https://login.persona.org/wsapi/cert_key Host: login.persona.org "email":"alicessotester@gmail.com", "pubkey":"{\"algorithm\":\"DS\\"}", "csrf":"UaZWfqrQmYwemitM1U8nUw==" syncEmailKeypair:function){, d.withContext(function(){ a.generateKeypair({ algorithm:"DS", keysize:c.KEY_LENGTH}, })} IDP_C ( r ) NewKeyPair( spkUser, spkUser -1) Send( p, USER, spkUser, csrf ) IDP_S( p ) Receive( r, M, Y, csrf ) (5) GET https://login.persona.org/wsapi/cert_key Host: login.persona.org "cert":"eyJhbGciOiJSUzI1NiJ9.eyJwdW... NONE IDP_C( r ) Receive( p, X ) IDP_S( p ) NewNonce( expire ) Send( r, { M, Y, p, expire } ) (6) NONE assertion.sign( {},{audience:c,expiresAt:j},g, function(d,g){ k=a.cert.bundle([f.cert],g),}) b.window.postMessage( JSON.stringify(a), b.origin) IDP_C( i ) NewNonce( expire1 ) Send( j, [X, { j, expire1 } ] ) SP_C( j ) Receive( i, R) 1 IDP_S k spkUser -1
 
---- page 44 ---
+--- page 38 ---
 
 ¸¤@+P++­”C
 ÅjBÿµ2®¤
 
---- page 45 ---
+--- page 39 ---
 
 '&	%0¸@''€ 
 
---- page 46 ---
-
-%¸ÿð@,M$#&%ô"#
-¯#¿#Ï###RUU???99//]]9993í2310+]++++++++%#".'!#"&&67>32#!u%%	oýæj
-#%²' *{ßÂ=	;þÉ		²�ý{aÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
-·/%L%%"L
-
---- page 47 ---
-
-'9?:9&"%&8/78-""--/?¸É@> / /.!.!"988''&h??+ 0`p°Ààð
-¸ú@D S d  2" ""¸Ã¶@A–!kŠ++ö]ô]ý]qä]?<<<?<<<99‡.+‡}Ä‡.+‡}ÄíÀíÀíÀíÀíÀíÀíÀíÀY10]]CX² /]Y]]]]qCX¶/­”C
-ÅjBÿµ2®¤10	*†H†÷	1
-+‚70
-+‚710
-+‚70#	*†H†÷	1dÄ™†æË'Š
-
---- page 48 ---
+--- page 40 ---
 
 en-USSP_S SP_C IDP_S (3) {Ack} Key(IDP_C, IDP_S) (8) Ack IDP_C en-US(1) {SP_domain} K_B (7) {USER, Ki, expire, IDP_domain}Ks-1, {expire1, SP_domain}Ki-1 (2) {assoc(USER, PWD), csrf} Key(IDP_C, IDP_S) (4) {USER, Ki, csrf} Key(IDP_C, IDP_S) (5) {{USER, Ki, expire, IDP_domain}Ks-1} Key(IDP_C, IDP_S) SP_C IDP_C IDP_connect en-USIDP_rp IDP_login IDP_OAuth (1)assoc(SID, Domain) (2) assoc(SID, Domain) (3) {SID, assoc(SID, Domain), assoc(Email, password)}Key(IDP_C, IDP_login) (4) assoc(SID,Domain), assoc(Email, c_user), xs) (6) {access_token, signed_request, Domain}Key(IDP_C, IDP_rp) (8) {access token, signed_request, Domain}Key(IDP_C, IDP_connect) (5) assoc(SID,Domain), assoc(Email, c_user), xs) (7) {access_token, signed_request, Domain}Key(IDP_C, IDP_connect) (9) {access token, signed_request, Domain}K_B (a) the Sequence Diagram of BrowerID (b) the Sequence Diagram of Facebook Connect IDP (6) {{USER, Ki, expire, IDP_domain}Ks-1, {expire1, SP_domain}Ki-1}K_B
 
---- page 49 ---
+--- page 41 ---
 
 /%L%%"L
 
---- page 50 ---
+--- page 42 ---
 
 represented with the processes (line 33-82), whose iden-
 tifers are represented with
@@ -4466,7 +4421,7 @@ bitstring
 *
 step5
 
---- page 51 ---
+--- page 43 ---
 
 *
 )
@@ -4622,8 +4577,3 @@ value="Hello Kitty"/><input type="submit
 "/></form>';
 formFrame.document.all.tfm.submit();
 </script>
-
---- page 52 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u

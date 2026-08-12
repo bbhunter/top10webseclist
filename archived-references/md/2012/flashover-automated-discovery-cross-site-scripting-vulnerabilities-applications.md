@@ -5,9 +5,9 @@ resource: "https://www.securitee.org/files/flashover_asiaccs2012.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:45:27+00:00"
+  at: "2026-08-12T16:00:29+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.securitee.org/files/flashover_asiaccs2012.pdf"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2012.md:85"
 commit: ""
-content_sha256: f0bac4a2cd2abc482c6caa754b47ca2294856d6bec6ea153dfdc14b7a68ca682
+content_sha256: b1e0ecb8b3d21e08381bce90a71873f7338a369b9d34294b9568628a1fa0f0f2
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: e2af8ae480275d7c169aaee8091c161ce4e6093557f5fdb6083e55f5f5243929
 retrieved_from: "https://www.securitee.org/files/flashover_asiaccs2012.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:45:27+00:00"
+retrieved_utc: "2026-08-12T16:00:29+00:00"
 slug: flashover-automated-discovery-cross-site-scripting-vulnerabilities-applications
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.securitee.org/files/flashover_asiaccs2012.pdf>
-- Preserved from: https://www.securitee.org/files/flashover_asiaccs2012.pdf (stored) on 2026-08-11
+- Preserved from: https://www.securitee.org/files/flashover_asiaccs2012.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -663,11 +663,6 @@ as possible, an automated process must interact with the
 
 --- page 5 ---
 
-”””//0ÊÌÎøøøÿúíàûè
-ÿùäÿùäúãúíàtokd_*
-
---- page 6 ---
-
 Flash application and by doing so, trigger the execution of
 the JavaScript payload encoded in the attack URL.
 Interaction can mean a lot of things. Flash applications
@@ -823,21 +818,15 @@ Exploitable variables can be used in ActionScript in a
 number of dierent ways. Through our review of JavaScript
 injection techniques, we identied a non-exhaustive list of
 
+--- page 6 ---
+
+*,-/02356789;<=>>?@@AABBBBBCCBBBBAAA@??>=<;:98754310.-++-0368;=@BDGIKMOQRTUWYZ[^_``abbccdddeeeedddccbaa`_^][YXVUSRPNLJHECA?<:742/,*+-.012356789:;<==>>??@@@@@@@@@???>==<;;:98754320/.,*
+
 --- page 7 ---
 
 *,-/02356789;<=>>?@@AABBBBBCCBBBBAAA@??>=<;:98754310.-++-0368;=@BDGIKMOQRTUWYZ[^_``abbccdddeeeedddccbaa`_^][YXVUSRPNLJHECA?<:742/,*+-.012356789:;<==>>??@@@@@@@@@???>==<;;:98754320/.,*
 
 --- page 8 ---
-
-*,-/02356789;<=>>?@@AABBBBBCCBBBBAAA@??>=<;:98754310.-++-0368;=@BDGIKMOQRTUWYZ[^_``abbccdddeeeedddccbaa`_^][YXVUSRPNLJHECA?<:742/,*+-.012356789:;<==>>??@@@@@@@@@???>==<;;:98754320/.,*
-
---- page 9 ---
-
-&%$"! 
- "5FOSSRPNLJHFDB@?=<;:9865420.,+&%$"!
- 5Sn~„†††…ƒ‚‚€~}|{zyxxvutsrpnmkihfdba_^][YXWUSRPNLJHFDB@?=<;:9865420.,+
-
---- page 10 ---
 
 idExample occurrence of
 varContents of
@@ -1011,7 +1000,7 @@ http://www.xfree86.org/4.0.1/Xvfb.1.html
 4
 http://linux.die.net/man/1/xte
 
---- page 11 ---
+--- page 9 ---
 
 After the non-SWF or otherwise invalid SWF les were
 removed from the set of downloaded les, they were pro-
@@ -1119,7 +1108,7 @@ one or more potentially exploitable variables. Thus, while
 FlashOver
 may miss some vulnerabilities (false negatives), it
 
---- page 12 ---
+--- page 10 ---
 
 has practically zero false positives. While one can construct
 examples where
@@ -1262,7 +1251,7 @@ platform and we presented
 FlashOver
 , the rst fully auto-
 
---- page 13 ---
+--- page 11 ---
 
 mated discovery system for XSS attacks, specic to Flash.
 FlashOver
@@ -1441,7 +1430,7 @@ http://www.microsoft.com/silverlight/
 .
 [28] Microsoft. Security in Silverlight.
 
---- page 14 ---
+--- page 12 ---
 
 http://msdn.microsoft.com/en-us/library/
 cc972657(v=vs.95).aspx
@@ -1526,20 +1515,6 @@ Association.
 http://www.cgisecurity.com/xss-faq.html
 .
 
---- page 15 ---
-
-=,¶À_Ñæ	ÒBƒú5×ÊÀ~¨„ºÈF- 	?1¬Á†ÈBú÷Ä
-ô]£ê&õÄ»êœš®šò�2£îâ»³*Ç+jtÇ³ø#_+Ýn£5Ø™óÇÖ%„*FÁKŸU"í ßwÇ¿5Y¹Çq[¼CÀ>Èál¶C
-
---- page 16 ---
+--- page 13 ---
 
 ?]ÐˆJÅ'P†2í6WÀü,2Õ WšnqÎ²‹ä‚,5&WC»pÃ5þ,ím1ŽsÎ<žRõÕxD#Ž
-
---- page 17 ---
-
-”Rchø’Lmo£JF¬,º
-¹_Ä;Çî™Ê�u¥ÊÉY±ä#çIÜ¥¸aË.NVGjž³Î#ÌÀöŸîÂ+Ï¶ú‰¦NŒ#µJ”v	Nkü^íæA8äªw®‰2E®;Þ"ã¶îP½<C·K#½C=BdUIHv½ÐFëFý“®*b¤V9à°`DfZwíÇÑge±ëÁLN¡ñÝ!vßKºÈ¼ÐjBåÈ£«SO%ñì<ö®ÖÖÅd<å ·@åBÖ.|T_Q8¦!k¸QUÈíÍÎ
-
---- page 18 ---
-
-´ÍûÛÝIÈ¦åÛIÓ›túûÁKµz¼ñK&êdJ�ë�ß­'Vyó0�D4ø>ákˆVq^wÁ}Ý0uÞWx!@~= êØ§zmjï�§ÌÈòe’ˆ3N[�%IiÑò©�¸/8­nÔÂ¹vÍ}r¤>æd�wVt|6@Aðœ±NÓvkLe?QìkPÑJØú}&åf�ÄT �Áƒ@Îô±­'8§ýbTéë]

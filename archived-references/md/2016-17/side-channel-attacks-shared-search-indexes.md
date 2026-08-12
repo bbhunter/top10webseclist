@@ -5,9 +5,9 @@ resource: "https://www.ieee-security.org/TC/SP2017/papers/449.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:42:04+00:00"
+  at: "2026-08-12T16:01:40+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2017/papers/449.pdf"
@@ -25,7 +25,7 @@ canonical_url: ""
 cited_by:
   - "2016-17.md:96"
 commit: ""
-content_sha256: 002b94d33bcb27d1b4d64018a949c1b02d3fdf94e409a6f15111c9d64e839ec3
+content_sha256: deac17d879958c7d34817d5a6ce7b5880a8d4a6f90c6a9b075307370637883e3
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -38,7 +38,7 @@ publisher_english: ""
 raw_sha256: fdbacf801e1ca914f20972e292847b3b6422217e57d3ace285e59e6b808d45ef
 retrieved_from: "https://www.ieee-security.org/TC/SP2017/papers/449.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:42:04+00:00"
+retrieved_utc: "2026-08-12T16:01:40+00:00"
 slug: side-channel-attacks-shared-search-indexes
 snapshot: ""
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2017/papers/449.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2017/papers/449.pdf (stored) on 2026-08-11
+- Preserved from: https://www.ieee-security.org/TC/SP2017/papers/449.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -4793,14 +4793,3 @@ Proceedings
 of the 2014 ACM SIGSAC Conference on Computer and
 Communications Security
 , pages 990–1003. ACM, 2014.
-
---- page 22 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
-
---- page 23 ---
-
-âºð0ýýãŒÇÆÔPrp6`#®³´A�ùÑ
-•J×Ð4t¦¨¹E¤âÞ.UIH‚E.ÛoáÄÁ•O§–»®F<ê›eý¡å3˜tëMZJƒz�ûXl�ð«¥TæJ¿T!ý³/¡³ª`ã-&£Ó·ÇóF”yäñŸ %ºÕèY‡vÒJºË„1®TØ–E–ñU»‡´åŠ¡‚q6žýO´ÚK¡ü�#ªŽå5C7ÊÐÏÙW³k±.ñ¾‘-é„~žH��X {½šÂ¹$Iâc§ôº­sìÍ+[Òº5ÝfXQyLóƒ1¢�~gªÚÍÍ-wd
-ZxR‚¶7}q“$Íç90§­ì%â±N_¡mÕ°m�•lÁlØñ¹!–3f»ì8ç¨Pß!,h!+Ü�@™Ûí:é

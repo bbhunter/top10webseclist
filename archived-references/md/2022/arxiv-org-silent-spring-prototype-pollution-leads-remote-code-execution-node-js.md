@@ -5,9 +5,9 @@ resource: "https://arxiv.org/abs/2207.11171"
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:34:06+00:00"
+  at: "2026-08-12T16:02:04+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://arxiv.org/abs/2207.11171"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2022.md:77"
 commit: ""
-content_sha256: 99cd938fa4e3bf43fbabd7a12b7eee2c458bd7172308a54dfb788920b8ee62f6
+content_sha256: 821d1064c9baac659476f1cfc98367e491473ed89a3faba80561539703c44cb0
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: 9bb46082408fbbedebaf1dbd0cbd5c4c56b359a7a02b1a4a6f6d2b0173b221fc
 retrieved_from: "https://www.usenix.org/system/files/usenixsecurity23-shcherbakov.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:34:06+00:00"
+retrieved_utc: "2026-08-12T16:02:04+00:00"
 slug: arxiv-org-silent-spring-prototype-pollution-leads-remote-code-execution-node-js
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://arxiv.org/abs/2207.11171>
 - Also published at: <https://www.usenix.org/system/files/usenixsecurity23-shcherbakov.pdf>
-- Preserved from: https://www.usenix.org/system/files/usenixsecurity23-shcherbakov.pdf (stored) on 2026-08-11
+- Preserved from: https://www.usenix.org/system/files/usenixsecurity23-shcherbakov.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -629,28 +629,13 @@ USENIX Association
 
 --- page 39 ---
 
--2´`ÎúÐb�ˆl�"ºØáˆ^ z#™;s±hºÞþì’‡.¸Z,+v-Ííl£±Åj÷a ÆÊx‰ŽÚ4Ó¿8�;h“F¸{û°hÞñ�¥Ø¼—îm[Å�JK!S‰ÚÛØ¢
-Èï%È8S„œv;ƒÆT PS6�€N©"7”`‚=�8CïrU
+1functiondiffApply(obj,diff){2varlastProp=diff.path.pop();3varthisProp;4while((thisProp=diff.path.shift()) !=null){5if(!(thisPropinobj)) {6obj[thisProp]={};7}8obj=obj[thisProp];9}10if(diff.op===REPLACE||diff.op===ADD){11obj[lastProp]=diff.value;12}13}1
 
 --- page 40 ---
 
-1functiondiffApply(obj,diff){2varlastProp=diff.path.pop();3varthisProp;4while((thisProp=diff.path.shift()) !=null){5if(!(thisPropinobj)) {6obj[thisProp]={};7}8obj=obj[thisProp];9}10if(diff.op===REPLACE||diff.op===ADD){11obj[lastProp]=diff.value;12}13}1
+1const{ArrayPrototypePush}=primordials;2const{Process}=internalBinding(Õprocess_wrapÕ);3functionspawn(file,args,opts){4opts=normalizeSpawnArgs(file,args,opts);5this._handle=newProcess();6this._handle.spawn(opts);7}89functionnormalizeSpawnArgs(file,args,opts){10letenvKeys=[],envPairs=[];11constenv=opts.env||process.env;12/*...*/13for(constkeyinenv)14ArrayPrototypePush(envKeys,key);1516for(constkeyofenvKeys){17constv=env[key];18ArrayPrototypePush(envPairs,Ô${key}=${v}Ô);19}2021return{/*...,*/envPairs/*,...*/};22}1
 
 --- page 41 ---
 
-1const{ArrayPrototypePush}=primordials;2const{Process}=internalBinding(Õprocess_wrapÕ);3functionspawn(file,args,opts){4opts=normalizeSpawnArgs(file,args,opts);5this._handle=newProcess();6this._handle.spawn(opts);7}89functionnormalizeSpawnArgs(file,args,opts){10letenvKeys=[],envPairs=[];11constenv=opts.env||process.env;12/*...*/13for(constkeyinenv)14ArrayPrototypePush(envKeys,key);1516for(constkeyofenvKeys){17constv=env[key];18ArrayPrototypePush(envPairs,Ô${key}=${v}Ô);19}2021return{/*...,*/envPairs/*,...*/};22}1
-
---- page 42 ---
-
-’¾K�ÑÛLý>
-ãª"sà-ãÏÏx§@GÓèæƒ•%€î€ä·|TØ-À¿Êªñéëv����Ï$0ÕÔqÖ!]5ç¦½©ìi&—vs2Ø@Ë>ÓòûÎ|O€éØIX~&RàŽØ–´4äèÞîaÙB ŠíÈÀI’òñ?yZ‡Ý¾ºË—ÀX£½ViY,6K‘�ãè5‘”‚=}¹ü#¦ýRyóÄQº<S2hˆÔÝvú’ñéRÍ„AŠ®	TB°×s*ÿf.éöi3t=¶Ìß4¢T‚À_;ÍÊÝ&¨a02SÊíÝzßÛÃµÈ˜^1´y×¤`í7ƒ³ŒP*E�Î™tMA$Ef¥§¦–8Õ L­a»ý³MD_ø·Nâîº†«äOgÇXVŠ¯c˜¹«½¦vgŠ€à©˜Ü÷v¼Yãž§yUg¯w?®rIðh­•ç†-7'�A­{.ø&˜xgÞ±&ŠU EfêgÐ^‹Çß°æÛwè«Ehó·én¦!ƒË�tò9:pù†ymç‘Ò_²Ö5ã?#ü
-
---- page 43 ---
-
 ü +¯B�¯€ªÒ:BUà; Žc‡øqòfGk}Ô<:ÛââöÁ§1rÌfÔrÛí°zœ¬bH/=·¶wW·šúë½}‹óýgª�cö1šÅ4ÒW˜—Jg©±;�HP–¾LUF
 U}¶é4mL¯ÏÑªn‡÷é›jƒ`gU$µX¥}@0Êo¯ž‘ä’WeRäC�
-
---- page 44 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u

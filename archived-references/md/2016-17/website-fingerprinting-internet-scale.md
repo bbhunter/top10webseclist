@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fin
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:44:18+00:00"
+  at: "2026-08-12T16:01:43+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf"
@@ -26,7 +26,7 @@ canonical_url: ""
 cited_by:
   - "2016-17.md:85"
 commit: ""
-content_sha256: cfae8cee10916aefc08af82884c1aa6cb873944a6069d422337290bab88d2eff
+content_sha256: 1e178ddccde24ef8f7c09a5bc62c05cfd43fdb0b7fc0ece63ea8fc871029e239
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -39,7 +39,7 @@ publisher_english: ""
 raw_sha256: 807d9ac047baddcf537d6a0923d4815afc6832a09a4c9c056d683162a260eb3a
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:44:18+00:00"
+retrieved_utc: "2026-08-12T16:01:43+00:00"
 slug: website-fingerprinting-internet-scale
 snapshot: ""
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf (stored) on 2026-08-11
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -1659,11 +1659,6 @@ TLS recordsTCP packetsRecord 1 *Packet 2Tor cellsPacket 3Packet 1Cell 3Cell 2Cel
 
 --- page 14 ---
 
-Dý†ýMaÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
-·
-
---- page 15 ---
-
 0
 20
 40
@@ -1688,7 +1683,7 @@ CELL
 TCP
 TLS
 
---- page 16 ---
+--- page 15 ---
 
 C. Comparison with State of the Art
 In this section, we compare the performance of our novel
@@ -1864,7 +1859,7 @@ https://cs.uwaterloo.ca/
 t55wang/knnsitelist.txt
 10
 
---- page 17 ---
+--- page 16 ---
 
 Fig. 6: Comparison of runtimes for the different approaches
 (y-axis scaled logarithmically)
@@ -2014,14 +2009,14 @@ a website ngerprinting technique had mostly been evaluated20
 The recall is mathematically equivalent to the True Positive Rate.
 11
 
---- page 18 ---
+--- page 17 ---
 
 01000020000300004000050000Background Set Size104103102101100101102103Average Processing Time [h]
 k-NN
 CUMUL
 CUMUL (parallelized)
 
---- page 19 ---
+--- page 18 ---
 
 using only the True Postive Rate and False Positive Rate. These
 metrics are at rst glance intuitive as they express both the
@@ -2167,6 +2162,22 @@ chosen or particularly popular. The results are shown in Figure
 >
 12
 
+--- page 19 ---
+
+00.20.40.60.81Precision020406080100Fraction of Foreground Pages [%]
+b
+= 1000
+b
+= 5000
+b
+= 9000
+b
+= 20000
+b
+= 50000
+b
+= 111884
+
 --- page 20 ---
 
 00.20.40.60.81Precision020406080100Fraction of Foreground Pages [%]
@@ -2185,13 +2196,35 @@ b
 
 --- page 21 ---
 
-ÈrÊÚ®‹0.[§P4ò9Ú$
-Oäcð¤_é²Uü°!æB•Ù½„Esq2††I3»*«X­˜ä¥C?Óî—çUx¥¬ŠœÓR¹aÎ¾Ui[ÊÙeŠú¢À’ç�iÐñÏzÆ¬
-`,Å
+00.20.40.60.81Recall020406080100Fraction of Foreground Pages [%]
+b
+= 1000
+b
+= 5000
+b
+= 9000
+b
+= 20000
+b
+= 50000
+b
+= 111884
 
 --- page 22 ---
 
-$êY¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
+00.20.40.60.81Recall020406080100Fraction of Foreground Pages [%]
+b
+= 1000
+b
+= 5000
+b
+= 9000
+b
+= 20000
+b
+= 50000
+b
+= 111884
 
 --- page 23 ---
 
@@ -2208,126 +2241,28 @@ b
 = 50000
 b
 = 111884
+b
+= 211148
 
 --- page 24 ---
 
-$êY¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
+00.20.40.60.81Recall020406080100Fraction of Foreground Pages [%]
+b
+= 1000
+b
+= 5000
+b
+= 9000
+b
+= 20000
+b
+= 50000
+b
+= 111884
+b
+= 211148
 
 --- page 25 ---
-
-ÈrÊÚ®‹0.[§P4ò9Ú$
-Oäcð¤_é²Uü°!æB•Ù½„Esq2††I3»*«X­˜ä¥C?Óî—çUx¥¬ŠœÓR¹aÎ¾Ui[ÊÙeŠú¢À’ç�iÐñÏzÆ¬
-`,Å
-
---- page 26 ---
-
-00.20.40.60.81Recall020406080100Fraction of Foreground Pages [%]
-b
-= 1000
-b
-= 5000
-b
-= 9000
-b
-= 20000
-b
-= 50000
-b
-= 111884
-
---- page 27 ---
-
-$êY¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
-
---- page 28 ---
-
-ÈrÊÚ®‹0.[§P4ò9Ú$
-Oäcð¤_é²Uü°!æB•Ù½„Esq2††I3»*«X­˜ä¥C?Óî—çUx¥¬ŠœÓR¹aÎ¾Ui[ÊÙeŠú¢À’ç�iÐñÏzÆ¬
-`,Å
-
---- page 29 ---
-
-00.20.40.60.81Recall020406080100Fraction of Foreground Pages [%]
-b
-= 1000
-b
-= 5000
-b
-= 9000
-b
-= 20000
-b
-= 50000
-b
-= 111884
-
---- page 30 ---
-
-ÈrÊÚ®‹0.[§P4ò9Ú$
-Oäcð¤_é²Uü°!æB•Ù½„Esq2††I3»*«X­˜ä¥C?Óî—çUx¥¬ŠœÓR¹aÎ¾Ui[ÊÙeŠú¢À’ç�iÐñÏzÆ¬
-`,Å
-
---- page 31 ---
-
-$êY¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
-
---- page 32 ---
-
-00.20.40.60.81Precision020406080100Fraction of Foreground Pages [%]
-b
-= 1000
-b
-= 5000
-b
-= 9000
-b
-= 20000
-b
-= 50000
-b
-= 111884
-b
-= 211148
-
---- page 33 ---
-
-$êY¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
-
---- page 34 ---
-
-ÈrÊÚ®‹0.[§P4ò9Ú$
-Oäcð¤_é²Uü°!æB•Ù½„Esq2††I3»*«X­˜ä¥C?Óî—çUx¥¬ŠœÓR¹aÎ¾Ui[ÊÙeŠú¢À’ç�iÐñÏzÆ¬
-`,Å
-
---- page 35 ---
-
-00.20.40.60.81Recall020406080100Fraction of Foreground Pages [%]
-b
-= 1000
-b
-= 5000
-b
-= 9000
-b
-= 20000
-b
-= 50000
-b
-= 111884
-b
-= 211148
-
---- page 36 ---
-
-$êY¶9*¶$SþrÍôrô'®h=,§žV UzâlSÓsÞi|ãÄ1ËWÝ¡äÌÉºLhÓ²c
-
---- page 37 ---
-
-ÈrÊÚ®‹0.[§P4ò9Ú$
-Oäcð¤_é²Uü°!æB•Ù½„Esq2††I3»*«X­˜ä¥C?Óî—çUx¥¬ŠœÓR¹aÎ¾Ui[ÊÙeŠú¢À’ç�iÐñÏzÆ¬
-`,Å
-
---- page 38 ---
 
 200,000. Consequently, the required computation time for each
 foreground page and background set size is increased. To keep
@@ -2451,7 +2386,7 @@ according to this strategy yielded even a slightly worse result
 website. We assume that this happens because of overtting,
 13
 
---- page 39 ---
+--- page 26 ---
 
 0
 50
@@ -2477,7 +2412,7 @@ b
 b
 =100 000
 
---- page 40 ---
+--- page 27 ---
 
 (a) Only index pages per site
 (b) Different webpages per site
@@ -2556,7 +2491,7 @@ classier. Hence, the attack cannot be reliably used to convict
 users, but it may be used to limit the set of possible suspects.
 14
 
---- page 41 ---
+--- page 28 ---
 
 ALJAZEERA
 AMAZON
@@ -2662,7 +2597,7 @@ XNXX
 :
 0
 
---- page 42 ---
+--- page 29 ---
 
 ALJAZEERA
 AMAZON
@@ -2822,7 +2757,7 @@ XNXX
 1
 50
 
---- page 43 ---
+--- page 30 ---
 
 0
 20000
@@ -2841,7 +2776,7 @@ Background Set Size
 Precision
 Recall
 
---- page 44 ---
+--- page 31 ---
 
 0
 20000
@@ -2860,7 +2795,7 @@ Background Set Size
 Precision
 Recall
 
---- page 45 ---
+--- page 32 ---
 
 The attack scenario to ngerprint websites, i.e., a collection
 of webpages served under the same domain, is not only more
@@ -3085,20 +3020,11 @@ WEBSITES
 dataset
 15
 
---- page 46 ---
+--- page 33 ---
 
 á‰M¿›†¦Rå»þÎ¢£§˜ôªTÑ2ºà_çÞ×
 
---- page 47 ---
-
-sžN7ÑÝñ³®p…EÏäôCÔVÕ÷¬Öñ^½£¼è.»]¯	N˜^dÄùÏ‘h¢ohŸWxUXñŒgfLNþi«A7-ãöh‡"øq¶'COàž� ý‘%xP3�˜ÄB>{—z¸g´}È¬>¿:§=-NÑ:º#‰æä7SôFõF"-ß³¿ÓMIÐ�›—>óLëvLþ=æÁRÚõöœgmú@.X–,6E�ñ¢Š»¢›‡ÁÍŒäG9æÈoEû�§Ç;»îƒ_�
-
---- page 48 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
-
---- page 49 ---
+--- page 34 ---
 
 Ð�xÒ*:Òï	ÅÉB¡áaôÑ'ÎLaÙQIy
 ÈËu“d›

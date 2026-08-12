@@ -5,9 +5,9 @@ resource: "https://doi.org/10.1145/3719027.3765189"
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T09:17:45+00:00"
+  at: "2026-08-12T15:55:04+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://doi.org/10.1145/3719027.3765189"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2025.md:99"
 commit: ""
-content_sha256: 54b807ebd6047c46d3b29dbe73fd7a152818518dfceefb5c2400f8df9b8aa0c0
+content_sha256: c6e8bbd0a69c737e5d4ebeb42cc088c46ef642efb91af7e28aa77bf9a1f87c32
 depth: full
 depth_reason: default
 kind: article
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: 0a5edb59a6bc8eb947f3dabb03dbebdf31e594aed99ca6844ab355bf48e4c9d3
 retrieved_from: "https://doi.org/10.1145/3719027.3765189"
 retrieved_kind: manual-import
-retrieved_utc: "2026-08-11T09:17:45+00:00"
+retrieved_utc: "2026-08-12T15:55:04+00:00"
 slug: styled-steal-overlooked-attack-surface-email-clients
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://doi.org/10.1145/3719027.3765189>
-- Preserved from: https://doi.org/10.1145/3719027.3765189 (manual-import) on 2026-08-11
+- Preserved from: https://doi.org/10.1145/3719027.3765189 (manual-import) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -519,12 +519,3 @@ z:K½�Úq5�B›T	ÿØØ?É‚ä{•÷ÉAx–Nç†ŠH[z¾ HåÖn9€–²£&
 --- page 17 ---
 
 g‡K…º•á"çÄ?Ui­˜ìx.fò.^Í¾HK
-
---- page 18 ---
-
-#‚ûÃª¾D´æZÂ>Æˆ0ÙªÈ£nýˆ6o’­ÙŠ²Îcú@ˆŠšq]¥ghVŸ¨ŠU~²êdjââÔÝ†ìêª­½…Ü=Ù°CÙO]MÀ
-@Ð‡¹��kO9îãDºüb4L6‘}p»Wnèi+<›ÞO…$-Z1ÛæÇ-ã^¾©ç÷qQ"§ò#s©¯Ez~ˆÒq4cø¸Åûè°Ù¥-�ç}(
-7:VÆþ~G2>÷‡Ù9N³—5Bí¸—luPðž‡¾‡ö½]¯QKl§kØe¡Ìy; �6•œL7ÌZC¯ú­Ý¸
-°¡mQÒ�ÀºÏ+ûÄ±Õy“±ø÷ßVº_ËB7˜Aáv.=p#ÜWîÄýÉ6+tÂcK}RJå0¯¹Û¾­p6L8Áœs™ùõÌúÕ‰ž²Ë£Ùçá¦¬9Õöf§ÙdrSÒº
-O8£,3Â�Ž¸}  Z*©bV¢ò„9º™E^p—è"®0íËM×Šl”²�ND¯!B:Hy
-?ÏÝZJÉ½‡¿¢÷Ê|3 P=·ñl& WAÀ-SV².Q’ÝÆÓÁðöl*AIP‹åašaÔ—ÞJ¹bµNà4¹­î;0ã]´™®÷Î@›…Œ¾ú„Ó!¬@Òx©+

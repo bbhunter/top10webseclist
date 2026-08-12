@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/system/files/sec22summer_mirheidari.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:46:25+00:00"
+  at: "2026-08-12T16:02:03+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.usenix.org/system/files/sec22summer_mirheidari.pdf"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2021.md:35"
 commit: ""
-content_sha256: 3a42fdb983600eb623ae85d0d8108142fc659344a8cfc5cfefaf58abf1a47ff9
+content_sha256: 840ae27bbf2bf4fc9fa99a1cb8ee498b39d27db474bb84af1c070624df73529d
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: 29776c872ca0f0024b683205654f69161a79b14c2fb8168c255907e631f09fa6
 retrieved_from: "https://www.usenix.org/system/files/sec22summer_mirheidari.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:46:25+00:00"
+retrieved_utc: "2026-08-12T16:02:03+00:00"
 slug: web-cache-deception-escalates
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.usenix.org/system/files/sec22summer_mirheidari.pdf>
-- Preserved from: https://www.usenix.org/system/files/sec22summer_mirheidari.pdf (stored) on 2026-08-11
+- Preserved from: https://www.usenix.org/system/files/sec22summer_mirheidari.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -862,8 +862,3 @@ example.com/profile
 --- page 22 ---
 
 µ¼Í#çH�^BOÃ/×0ò
-
---- page 23 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u

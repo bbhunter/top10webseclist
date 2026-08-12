@@ -5,9 +5,9 @@ resource: "https://acmccs.github.io/papers/p957-vissersA.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:37:34+00:00"
+  at: "2026-08-12T16:01:45+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://acmccs.github.io/papers/p957-vissersA.pdf"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2016-17.md:88"
 commit: ""
-content_sha256: 9891e9cd30294ca478998c1d13fc987b85c0c8e06e2b4b2b5e58dc4cc9969f99
+content_sha256: f496f64da4ef1ff54dbac981a520850ba2442098ce5c09c5557426d41a201b2f
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: 12cdd038041f896d52159706f436013362a44e6e8b1b75b77d128b8043555ecc
 retrieved_from: "https://acmccs.github.io/papers/p957-vissersA.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:37:34+00:00"
+retrieved_utc: "2026-08-12T16:01:45+00:00"
 slug: wolf-name-street-hijacking-domains-through-their-nameservers
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://acmccs.github.io/papers/p957-vissersA.pdf>
-- Preserved from: https://acmccs.github.io/papers/p957-vissersA.pdf (stored) on 2026-08-11
+- Preserved from: https://acmccs.github.io/papers/p957-vissersA.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -156,29 +156,9 @@ nd a large corpusof domains that remain vulnerable for immediate exploita-tion b
 
 --- page 13 ---
 
-‹Œûœ“¾Ÿ±°sÀµÿÒË'ÆÝºDTqÕ}
-˜»�|VkÅ»É>}pä#%qÁµ‹TY>ì¼™q“¾ÃÞÃµ�W~#l0“°m€ÎÖHuRM!7– ¥'}MÝÛ—v¾TñÁX˜zfÌþÔ:J™^wÓi¶%êñhDc{Þ'‘X5¼“‹$�.¼R YZ¡¿Ç<	ØÅPÇ‚0ùÞ$‡kÝÿÔ€ò²°”4Wö®
-ÜÇ�¸ÁRY¯¥7,2àÑõNfÕNk5—è®U·âê!_q’ß3¥L³W$èþYö’Ö+ÉUh+ê›ô‚!ð´Ð|'�2n~<n'Õ•­8©,òúÎnõkéWò9o'k$6÷c |b½!Nôà®SŒ2ÀÕ•£4kŸé°ð—QùìM­ÿðˆ’þ·+ÂnðìÝ+TÿVÐõõDœ!bÉ�ãàÀÓY[éC½8k¦é“G^¿áÎ‘Br¨ó­ÚÿÔ€ò²°”4Wö®
-
---- page 14 ---
-
 1DEÞãpÔðà]è÷ˆ˜ç!ðm#¨X—C7žj§•,qŠ®:•
 
---- page 15 ---
-
-2°-9°"@*+:<$9°±99±²999°&µ"$9±7	³*+-/$9°°901'#'7672327&#"'4?654'&"&#"5674#"'672BVüTT×Dzh>DjmHX;�oN7Í–QD! VþN%-þÎV%v%ºN><'+³N¹²6+´H6+²?+°+3°/±!é³+°3´+°2°O/°;Ö±Fé°2°F±é°/°F±N+´3 +°3° Ö±é°/±	é±P+±F³@A$9°µ$6BCH$9°N³+,$9°	±-99°3°.9±?H±3;99±!³	$901"&54632"&54632%!".54>3!2'727!".5'727!2>5m>5/%!3ü™%/0$#11+þWªÉ%E%ðþÙP•š^%‡%Xd�P-¸+@
-+25$9±°9±±%099°*³	
-5$9±%°9°5°'9°0±"99±°9012#".546'64>7632#"'6&'.#"3267`_?<B+DÍ®1-278$9±2°49°
-²-999012#".5462654.#"'732632#"'&"'6;`_?<B+C99±°9°°-9014"3252632#"'2&! '5437>54&/"=7áRTTRTäX¼Éïä'/?8dþùþö`5?21@5`˜NMúNNsÍ‡ËÌün+'''%-â-$'XþÛRPL²+´+²+°
-/´+° /°Ö´+° Ö±
-é°2±!+±µ	$9015673#.".5473jTTR10Ú/4;`J
-bŽƒTÙL#PZ
-2ý´1#5/u!žo¨/#LPöš	J°/´"+°/´"+°/°Ö´,+°±+´ +±+±°9±±9901324'&#"&547672#"Ñdf=fJ7HD[^@FJ?_o5þð;u;XýðZ�šdX^š®ZL‘åéF°/´ +°/°Ö´+°2°´,+°/±+±±99°´$901462"4'7672&#0567‘%6&&6'I+@�6&&6%þ¬žBmtZ�eR”'þ“!$X²+°/°3´"9+°2°%/°!Ö°#2´,+°2²!
-+³@	+±&+±!²	999±"°9°±$9901"'476532732+&#"567'3d;}œ*$9°±99°²99901654#"5654'&#"#'7632#"/?7^-y–7FzT6;�D+3VHojF!6+ž%T3†+5V;%G…!%+Hj8/>V9'ÿ/Å!$K°/°3´"9+°2°%/°!Ö°#2´,+°2²!
-+³@	+±&+±!²	999±"°901"'476532732+&#"567'3d;}œ++
-
-
---- page 16 ---
+--- page 14 ---
 
 Root nameserverTLD nameserver2LD nameserverRecursive 
 resolver[A] example.com ?[NS] a.gtld-servers.net [A] example.com ? [NS] b.iana-server.net [A] example.com ?
@@ -224,7 +204,7 @@ les of the top"
 ve gTLDs (com,net,org,xyzandinfo)with respect to the number of second-level domains present in theirzones [15]. For each domain name in each zone"
 le, we extract theNSrecords. Overall, we collect the nameserver information of over164 million domains.
 
---- page 17 ---
+--- page 15 ---
 
 Next, we derive the
 nameserver domain
@@ -311,7 +291,7 @@ typosquatting. In this scenario, the administrator of the domainmistypes theNSre
 NS
 record (Listing 1).
 
---- page 18 ---
+--- page 16 ---
 
 Listing 2: The NS records of polishop.com according to any of the do-
 mainÕs authoritative nameservers. All 2LD nameservers return this
@@ -356,7 +336,7 @@ unexploited
 typosquattingNSDOMs, i.e. an attacker can simply register those NSDOMs andinstantly compromise a!ected domains. As shown in Figure 3, reg-istering just 6 typosquatting NSDOMs allows for the immediatecompromise of over 2,000 domains, demonstrating the high impactof these attacks. 23 out of 6,213 domains are present within theAlexa top 1 million. Regardless of their Alexa ranking, all of themremain attractive targets for abuse of residual trust [23,26,32,33].One of the miscon"gured domains isprotect-ns.com. How-ever, this domain serves as a nameserver for other domains as well.Thus, when we take into account nameserver dependencies as de-scribed in Section 2.3, an attacker could compromise 682 additionaldomains that rely on a miscon"gured nameserver. Unlike the 6,213vulnerable domains, these domains have not miscon"gured theirown NS records but are nevertheless vulnerable due to a mistake bya third party. The indirect nature of this error makes it particularlyhard for these domain owners to, not only realize their domainscan be hijacked, but also to"
 x the issue since the error happens atthe nameserver which they trust but do not control.
 
---- page 19 ---
+--- page 17 ---
 
 0
 2000
@@ -404,12 +384,12 @@ detection of the hijacked nameserver until a time of their choosing.Proactive re
 ranked domain using the squatted authoritative NSDOM from
 which the typo was derived. While there was no response frommost of these domains, among the 3.6% nameservers that replied,86% of them served rogue responses for the target domain (Table 2).HTTP requests to the rogue IPs, resulted in a wide variety of ob-servations (Table 3). The most frequent cases were parking, empty,error and scam pages. By looking at WHOIS data, we also encounterone defensive registration though it is unclear whether it was reg-istered to protect the website of the NSDOM, the nameserver itself,or both.Since the typosquatting NSDOMs in this category are not foundin any NS records in our dataset we assume they are not authori-tative for any domain, however, 204 actually returned the same IPaddress as the authoritative domain. Since there is little incentivefor a typical nameserver to answer queries for domains outsideits zone, opening that server up to DoS attacks, this is suspicious
 
---- page 20 ---
+--- page 18 ---
 
  "'$
 ..!
 
---- page 21 ---
+--- page 19 ---
 
 Rogue Matching No Response OtherTypo (Exploited) 86 35
 366 25
@@ -454,17 +434,17 @@ nally obtains the IP address ofmisconfigured.comÕsnameserver (NS M2) and will s
 is made, completing the log for that resolution.In order to gather information concerning the clients behindrecursive resolvers, we enable ECS (EDNS Client Subnet) [10] onboth NS M1 and M2.
 Ethical Considerations.To minimize the negative impact of ourexperiments we set the TTL of records for the domain names weregistered to only 5 seconds. We also chose not to respond to re-quests for domains names we did not control. As a result, the"nalrequest to the M2 nameserver formisconfigured.comÕs IP addresswill timeout, just as it would have when the typo was unexploited.
 
+--- page 20 ---
+
+ "'$
+..!
+
+--- page 21 ---
+
+ "'$
+..!
+
 --- page 22 ---
-
- "'$
-..!
-
---- page 23 ---
-
- "'$
-..!
-
---- page 24 ---
 
 We used ECS in our experiments to obtain IP information of incom-ing requests, but this only allowed us to observe the /24 subnet fora small number of queries, maintaining clientsÕ anonymity.3.4.2 Findings.
 Over a one month period (Dec 22, 2016 - Jan
@@ -524,7 +504,7 @@ typosquatting registrations with 1,295 of them also respondingwith rogue IP addr
 in Section 3, we"
 rst describe the attack vector and its impact,followed by an analysis of registered bitsquatting NSDOMs and anexperiment to measure bit-$ipped DNS resolutions to nameservers.
 
---- page 25 ---
+--- page 23 ---
 
 4.1 Attack vectorBitsquatting is the act of registering domain names to receive un-intentional tra#c caused by random bit-$ip errors in the memoryof devices and computers. These bit-$ips occur due to faulty hard-ware, extreme temperatures or radiation, and thus are by nature
 rare and unpredictable. However, bitsquatting is a documentedphenomenon and multiple studies have been published reportingon its impact [13,29], as well as conditions and causes [34,40].In DRAM, bit errors are typically mitigated with Error CorrectingCodes (ECCs). Although the adoption of these techniques is com-mon, they are still often missing in consumer devices and even inDRAM-containing components of enterprise class systems such asNICs and hard drives [13].If these bit-$ips alter the in-memory representation of a domainname, it can e!ectively lead to a request to another domain name.For instance, a bit-$ip can cause a computer to accidentally connecttotwitte2.cominstead oftwitter.com(the binary ASCII code
@@ -559,12 +539,12 @@ Dinaburg [13]. As in Section 3.3, we included the subdomains ofthe NSDOMS since 
 rst dot (0010 1110) may bit-$ip to an ÔnÕ(0110 1110) creating a new second level domain. 586,109 (97%) ofbit-$ipped domains were available for registration.4.3.2 Finding malicious cases.
 For the 19,856 registered bitsquat-ting domains we investigate how many of them are malicious bit-squatting domains and how many are false positives. The bitsquat-ting scenario is similar to the proactive typosquatting in that theNSDOM is not necessarily actively used by any domains, but theattacker is betting that there will be bit-$ips which will lead totheir NSDOM. Therefore, we use the same methodology as in Sec-tion 3.3.4 to test the bitsquatting domains. The results of the DNSqueries for the target domains are shown in Table 2. We found
 
---- page 26 ---
+--- page 24 ---
 
  "'$
 ..!
 
---- page 27 ---
+--- page 25 ---
 
 the categories are proportionally similar between bitsquatting andproactive typosquatting with 3.1% of domains set up as nameserversand 86% of those nameservers serving rogue IP addresses. There issome overlap of NSDOMs which were both bitsquatting and proac-
 tive typosquatting domains, but 433 of the 522
@@ -627,7 +607,7 @@ a di!erent TLD than its nameserver, satisfying the criteria for asuccessful name
 to the"
 nal requests and setting the TTL of the nameserver tojust 5 seconds, we are unable to observe the true impact of cachepoisoning.4.5 SummaryIn this section we investigated the potential of nameserver bit-squatting. We found 522 currently registered bitsquatting NSDOMs
 
---- page 28 ---
+--- page 26 ---
 
 Time From ECS (Hash) NS Requested name19:02:11.4 202.[*].[*].33 -
 M1 A pdns03.domain[*].com.
@@ -679,7 +659,7 @@ $agged emails. If a webmail service did not present us with anavailability error
 of the UI present in the registration pages of all modern webmailproviders which, through the use of appropriate AJAX calls, pro-vides immediate feedback to the user as to whether the selectedemail address is available and not taken. As such, we do not needto actually register an email account in order to verify whether itis available. This allows us to ethically quantify the abuse potential
 of this attack vector without exploiting it and without creating anyaccounts on webmail providers. We found two such cases of previ-ously existing addresses, both on hotmail.com, which had expiredand were available to re-register.
 
---- page 29 ---
+--- page 27 ---
 
 5.3 Potential impactIn total, we found 13 NSDOMs with vulnerable WHOIS emails. Wesplit them into 3 categories based on severity. Table 8 shows thenameserver domains by category. For each nameserver, the numberof domains which use it in an NS record is given.Over 6,000 domains could be impacted by hijacking the six do-mains in the
 High Risk
@@ -711,7 +691,7 @@ Ethical Considerations.The choice to obtain nameserver ver-
 sions by reading their banners provided a non-invasive methodto explore their security. This has a minimal impact on the name-servers and avoids the risk of more in depth security tests on livethird-party systems.7 DISCUSSIONSummary of$ndings.Hijacking domains through their name-servers is an extremely stealthy and powerful attack vector, capable
 of compromising domains en masse through, among others, MITM,
 
---- page 30 ---
+--- page 28 ---
 
 CVE!2015!5477CVE!2016!27760%25%50%75%100%01000200030004000Days outdatedPercentage of nameserversFigure 7: The cumulative distribution of nameservers by the amount
 of days their BIND version is outdated.domain-ownership veri"cation and email attacks. In this study, wepresented, for the"
@@ -735,7 +715,7 @@ records [25]. Even though the authors position their work as ca-
 pable of identifying all types of dangling DNS records, includingdangling nameserver records (the subject of this paper), they wereonly able to"
 nd four con"rmed cases of dangling NS records in the
 
---- page 31 ---
+--- page 29 ---
 
 Alexa top 1 million list. Contrastingly, in this study, we follow atop-down methodology where we start with popular nameservers(as de"ned by the number of domains utilizing them for resolu-tions) and identify not only the domains with dangling records, butalso the current name squatting abuse of miscon"gured domains.Furthermore, we consider the important role that nameserver de-pendencies play regarding these issues and highlight the ability tohijack nameserver domains via expired WHOIS email accounts.In recent work, Bryant identi"ed another type of dangling DNSvulnerability related to managed DNS providers [7] showing thathe could hijack control of more than 120K domain names using themanaged DNS services of public cloud providers while their own-ers had stopped using the hosting services of the aforementionedcompanies. While BryantÕs techniques could be straightforwardlyincorporated to identify more hijack-able nameservers, we choseto focus on techniques that were hoster-agnostic i.e., techniquesthat do not rely on the use of speci"c cloud providers.8.2 Abusing expired domainsIn 2012, Nikiforakis et al. discovered that popular websites con-tained stale, remote script inclusions that were referring to domains
 that had expired [28] allowing attackers to register them and delivermalicious JavaScript code. Starov et al. investigated the ecosystemof malicious web shells discovering that some webshells were re-questing remote resources from expired domains which allowedresearchers (or competing hacking groups) to learn about each newshell deployment and hijack their deployed shells [36].In 2014, Moore and Clayton investigated the use of old domainnames that belonged to US banks and"
@@ -780,7 +760,7 @@ Proceedingsof the 2016 ACM SIGSAC Conference on Computer and Communications Secu
 [26]Tyler Moore and Richard Clayton. 2014. The Ghosts of Banking Past: EmpiricalAnalysis of Closed Bank Websites. In
 Financial Cryptography and Data Security.
 
---- page 32 ---
+--- page 30 ---
 
 Springer, 33Ð48.
 [27]Tyler Moore and Benjamin Edelman. 2010. Measuring the perpetrators andfunders of typosquatting. In
@@ -821,32 +801,22 @@ https://thenextweb.com/shareables/2013/08/13/15-of-the-most-expensive-domains-of
 [47]Nicky Woolf. 2016. DDoS attack that disrupted internet was largest of its kind inhistory, experts say. (2016). https://www.theguardian.com/technology/2016/oct/26/ddos-attack-dyn-mirai-botnet
 [48]ZyTrax, Inc. 2015. DNS BIND Operations Statements: max-cache-ttl. (2015).http://www.zytrax.com/books/dns/ch7/hkpng.html#max-cache-ttl
 
+--- page 31 ---
+
+ÿ¥õËÇo
+
+--- page 32 ---
+
+ÿ¥õËÇo
+
 --- page 33 ---
-
-ÿ¥õËÇo
-
---- page 34 ---
-
-ÿ¥õËÇo
-
---- page 35 ---
 
 �E‰ŒèKn_Ôì-§¦C·ƒñÂ4 bÔ¢«S
 
---- page 36 ---
+--- page 34 ---
 
 1DEÞãpÔðà]è÷ˆ˜ç!ðm#¨X—C7žj§•,qŠ®:•
 
---- page 37 ---
-
-K†˜¿“‹Åo€­±tH�QI8'¢äð¹•†=¢åºœçgZ�&¶»æ£d-®k:éì^
-
---- page 38 ---
-
-‹Œûœ“¾Ÿ±°sÀµÿÒË'ÆÝºDTqÕ}
-˜»�|VkÅ»É>}pä#%qÁµ‹TY>ì¼™q“¾ÃÞÃµ�W~#l0“°m€ÎÖHuRM!7– ¥'}MÝÛ—v¾TñÁX˜zfÌþÔ:J™^wÓi¶%êñhDc{Þ'‘X5¼“‹$�.¼R YZ¡¿Ç<	ØÅPÇ‚0ùÞ$‡kÝÿÔ€ò²°”4Wö®
-ÜÇ�¸ÁRY¯¥7,2àÑõNfÕNk5—è®U·âê!_q’ß3¥L³W$èþYö’Ö+ÉUh+ê›ô‚!ð´Ð|'�2n~<n'Õ•­8©,òúÎnõkéWò9o'k$6÷c |b½!Nôà®SŒ2ÀÕ•£4kŸé°ð—QùìM­ÿðˆ’þ·+ÂnðìÝ+TÿVÐõõDœ!bÉ�ãàÀÓY[éC½8k¦é“G^¿áÎ‘Br¨ó­ÚÿÔ€ò²°”4Wö®
-
---- page 39 ---
+--- page 35 ---
 
 5QABg4M=Xc

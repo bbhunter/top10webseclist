@@ -5,9 +5,9 @@ resource: "https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_P
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:42:22+00:00"
+  at: "2026-08-12T16:00:27+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf"
@@ -20,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2011.md:77"
 commit: ""
-content_sha256: e4e205cf1b1ef3bade9e1851cf584dfe7d06dc656b1ac9a9f3e6861bfa99bdfb
+content_sha256: de5d82e048fd7f0bf748b86246e1a800d8e6263aba4f65de9be0e03f7ada2860
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: 728103e01da5c7ac23cf67bb5cc49046fbd83e824092d11845b375e11ba430de
 retrieved_from: "https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:42:22+00:00"
+retrieved_utc: "2026-08-12T16:00:27+00:00"
 slug: sour-pickles-shellcoding-python-s-serialisation-format
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf>
-- Preserved from: https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf (stored) on 2026-08-11
+- Preserved from: https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -1611,12 +1611,3 @@ dissuade an attacker, however process execution is seldom the nal goal; accessin
 common. Even without access to `dangerous' functions, one can still extract information from an
 AppEngine app as shown above. It is also possible to access application source code using our le read
 exploit.23
-
---- page 24 ---
-
-ãçƒNÆ}jóñ35ËæµåÃìD�_w“ê¾Ôÿ�#Æ`Ò+ÙžŠ!PYA.bž‘ .ÚJ˜hçéß>Œ”ÏÝfî½t
-
---- page 25 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u

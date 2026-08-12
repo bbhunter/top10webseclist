@@ -5,9 +5,9 @@ resource: "https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:41:46+00:00"
+  at: "2026-08-12T16:00:32+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2013.md:63"
 commit: ""
-content_sha256: 17dfe75404a2d0dadc61611f901e920d0e1e9d1fc5d8f4261f1fd4232208e3db
+content_sha256: 38baf7dd1b9720a0db060393f5e1d71aded65921b4322deffc740d86fe357a6b
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: 813a49ad61c3956da8a0de63d76cdba434d083d0e5f2b291eac453aa73b88ac4
 retrieved_from: "https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:41:46+00:00"
+retrieved_utc: "2026-08-12T16:00:32+00:00"
 slug: cross-site-scripting-attacks-social-network-apis
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf>
-- Preserved from: https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf (stored) on 2026-08-11
+- Preserved from: https://www.ieee-security.org/TC/W2SP/2013/papers/s3p1.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -1433,13 +1433,3 @@ there were too many third-party apps for popular social networks. There were als
 --- page 50 ---
 
 [5] - -Site Scripting in Google Code, 2011. http://www.exploit-db.com/ download_pdf /17017/. [6] Hristo Bojinov, Elie Bursztein and Dan Boneh. XCS: Cross Channel Scripting and its Impact on Web Applications. In Proceedings of the 16th ACM Conference on Computer and Communications Security (CCS), 2009. [7] Adam Barth, Adrienne Porter Felt, Prateek Saxena and Aaron Boodman. Protecting Browsers from Extension Vulnerabilities. In Proceedings of the Network and Distributed System Security Symposium (NDSS), 2010. [8] Opera. Opera Extensions: Quick Documentation Overview, 2010. http://dev.opera.com/articles/view/opera-extensions-quick-documentation-overview/. [9] Taras Ivashchenko. Web Application Vulnerabilities in Context of Browser Extensions, 2011. http://oxdef.info/papers/ext/chrome.html. [10] Lei Liu, Xinwen Zhang, Guanhua Yan and Songqing Chen. Chrome Extensions: Threat Analysis and Countermeasures. In Proceedings of the Network and Distributed System Security Symposium (NDSS), 2012. [11] Robert Hansen and Tom Stracener. Xploiting Google Gadgets: Gmalware and Beyond. In Black Hat 2008 USA, 2008. [12] Jason Adriaan. Why Facebook should Police their API, 2011. http://www.bandwidthblog.com/2011/05/05/why-facebook-should-police-their-api/. [13] AVG Community. Threat Report Q1 2012. http://www.avg.com.au/files/media/avg_threat_report_2012-q1.pdf. [14] Emanuele Gentili, Alessandro Scoscia and Emanuele Acri. Cross Application Scripting. Milan Security Summit 2010. [15] Mark Atwood, Dirk Balfanz and Darren Bounds, et al.. OAuth Core 1.0 Revision A, 2009. http://oauth.net/core /1.0a/. [16] E. Hammer-Lahav. RFC 5849, The OAuth 1.0 Protocol, 2010. http:// tools.ietf.org/html/rfc5849. [17] E. Hammer-Lahav. The OAuth 2.0 Authorization Protocol, 2011. http:// tools.ietf.org/html/draft-ietf-oauth-v2-22. [18] XSS (Cross Site Scripting) Cheat Sheet, 2011. http://ha.ckers.org/xss.html. [19] Mike Ter Louw, V.N. Venkatakrishnan. BLUEPRINT-Robust Prevention of Cross-Site Scripting Attacks for Existing Browsers. In Proceedings of the 30th IEEE Symposium on Security & Privacy, 2009. [20] Yacin Nadji, Prateek Saxena and Dawn Song. Document Sructure Integrity: A Robust Basis for Cross-Site Scripting Defense. In Proceedings of the 16th Annual Network & Distributed System Security Symposium (NDSS), San Diego, CA, USA, Feb. 2009. [21] M. Van Gundy and H. Chen. Noncespaces: Using Randomization to Enforce Information Flow Tracking and Thwart Cross-Site Scripting Attacks. In Proceedings of the 16th Annual Network & Distributed System Security Symposium (NDSS), San Diego, CA, USA, Feb. 2009. [22] Prithvi Bisht, V.N. Venkatakrishnan. XSS-GUARD-Precise Dynamic Prevention of Cross-site scripting attacks. In Proceedings of the 5th Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA), 2008. [23] Jin-Cherng Lin and Jan-Min Chen. The Automatic Defense Mechanism for Malicious Injection Attack. In Proceedings of 7th International Conference on Computer and Information Technology, 2007. [24] Martin Johns, Bjorn Engelmann, and Joachim Posegga. XSSDS: Server-Side Detection of Cross-Site Scripting Attacks. In Proceedings of the 2008 Annual Computer Security Applications Conference, 2008. [25] Engin Kirda, Christopher Kruegel, Giovanni Vigna, and Nenad Jovanovic. Noxes: A Client-Side Solution for Mitigating Cross-Site Scripting Attacks.In Proceedings of the 21st Annual ACM Symposium on Applied Computing. New York, USA: ACM, 2006: 330-337. [26] Benjamin Livshits, Weidong Cui. Spectator: Detection and Containment of JavaScript Worms. In Proceedings of USENIX 2008 Annual Technical Conference on Annual Technical Conference. Boston, USA: ACM, 2008: 335-348. [27] Joel Weinberger, Prateek Saxena, Devdatta Akhawe, et al. A Systematic Analysis of XSS Sanitization in Web Application Frameworks. In Proceedings of the 16th European Symposium on Research in Computer Security (ESORICS), 2011. [28] Theodoor Scholte, Davide Balzarotti and Engin Kirda. Quo Vadis? A Study of the Evolution of Input Validation Vulnerabilities in Web Applications, 2011. http://www.iseclab.org/papers/vuln_fcds.pdf. [29] Balzarotti, D., Cova, M., Felmetsger, V., et al. Composing Static and Dynamic Analysis to Validate Sanitization in Web Applications. In Proceedings of the IEEE Symposium on Security and Privacy, 2008. [30] Saxena, P., Akhawe, D., Hanna, S., Mao, F., McCamant, S., Song, D.. A symbolic execution framework for javascript. In Proceedings of the 2010 IEEE Symposium on Security and Privacy, 2010. [31] Saxena, P., Hanna, S., Poosankam, P., Song, D.: FLAX: Systematic discovery of client-side validation vulnerabilities in rich Web applications. In Proceedings of 17th Annual Network & Distributed System Security Symposium, 2010. [32] Worms. In Proceedings of the International Conference on Computational Science and Engineering, 2009. [33] Fangqi Sun, Liang Xu, and Zhendong Su. Client-Side Detection of XSS Worms by Monitoring Payload Propagation. In Proceedings of the 14th European Conference on Research in Computer Security. Saint-Malo, France: ACM, 2009: 539-554. [34] Thomas, K., Grier, C., and Nicol, DM. unFriendly: Multi-Party Privacy Risks in Social Networks. In Proceedings of the 10th International Conference on Privacy Rnhancing Technologies, 2010, Springer- Verlag, pp. 236252. [35] Adrienne Felt and David Evans. Privacy Protection for Social network APIs. In Proceedings of the IEEE Web 2.0 Security and Privacy Workshop (W2SP), 2008. [36] Kapil Singh, Sumeer Bhola and Wenke Lee. xBook: Redesigning Privacy Control in Social network Platforms. In Proceedings of the 18th USENIX Security Symposium, 2009. [37] Rui Wang, Shuo Chen, XiaoFeng Wang, Shaz Qadeer. How to Shop for Free Online: Security Analysis of Cashier-as-a-Service Based Web Stores. In Proceedings of the 32nd IEEE Symposium on Security & Privacy, 2011. [38] Luyi Xing, Yangyi Chen, XiaoFeng Wang, Shuo Chen. InteGuard: Toward Automatic Protection of Third-Party Web Service Integrations. In Proceedings of 20th Annual Network & Distributed System Security Symposium, 2013.
-
---- page 51 ---
-
-':Ly%#%'2#2'E#E'¥''9?:9&"%&8/78-""--/?¸É@> / /.!.!"988''&h??+ 0`p°Ààð
-¸ú@D S d  2" ""¸Ã¶@A–!kŠ++ö]ô]ý]qä]?<<<?<<<99‡.+‡}Ä‡.+‡}ÄíÀíÀíÀíÀíÀíÀíÀíÀY10]]CX² /]Y]]]]qCX¶/@U	¸ÿô´U	¸ÿô´U	¸ÿà´U	¸ÿØ@U	U
-U¸ÿþ´U¸ÿì´U¸ÿÜ´U¸ÿØ@	U
-
---- page 52 ---
-
-., 8Ì,$QkW>=WW=>Wþ4üíñŒbgB**A+2!×S%&7ÿòk2‰@Ó

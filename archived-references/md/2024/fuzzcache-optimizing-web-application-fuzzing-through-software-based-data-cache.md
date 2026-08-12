@@ -5,9 +5,9 @@ resource: "https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:37:26+00:00"
+  at: "2026-08-12T16:02:51+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:147"
 commit: ""
-content_sha256: e1d3220699a98e3397c94501721391e8d1aa223fa77942e262b4836c115ea824
+content_sha256: 82654006bba4cbe9686c3b1652593da88b8dade9a6730b3614844c7480be3ca9
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -34,7 +34,7 @@ publisher_english: ""
 raw_sha256: 13a3776c2c310273609c6a93cfbb0954404074c861d06c34b2d01a7a5ebeda27
 retrieved_from: "https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:37:26+00:00"
+retrieved_utc: "2026-08-12T16:02:51+00:00"
 slug: fuzzcache-optimizing-web-application-fuzzing-through-software-based-data-cache
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf>
-- Preserved from: https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf (stored) on 2026-08-11
+- Preserved from: https://zhangmx1997.github.io/papers/ccs24_fuzzcache.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -575,17 +575,8 @@ in the Sandbox: Automatically Detecting and Exploiting Template Escape Bugs.InPr
 
 --- page 22 ---
 
-B”¥,LôÑÎ‘`íeÒoE"Qwvý�¡´·¤ûäPûÌôMiÊÍ2óoënkM�Å‘øJ9‚:ŸHEÒQk`B2…üóšú÷aÎIÕzÉöÅÌ“ ‰¬ì›;1*Œ¨·D×ê©˜‚Zl¡p<Ä’bíá^C¿š³p{»:82!c¥ˆJ~2t°*­·’²'ƒ{uÿ.ÚonŒAÆg‘°àiF—aÀï´’«•œê-�ñx„=ƒ³™ÑÊÊÂ[@{öåFÓ:Uß­ .Èé® x±i×+VÚØ0ÌáÑIˆaŽŒ}Ng�E•·«Äya_Èëç%Z—Û½×h-‰“wî+„¼`¥ï‡ä!g¦«Íˆ/^çU¯c]Û�
-?µ˜ðï¼ˆ„?'<¹M[êGlˆ •NÖnqÏiå˜ÞR½rj:Æûy*È2‘S»Š¦
-
---- page 23 ---
-
 Ž—¼Ïã÷iÂ
 
---- page 24 ---
-
-Æ½@Ý¸�ºtœ|º9œ³Q7ö‚]0š^=òÃˆñáÓc¹¿ï´}^þ×Õ“Óâoú—‡Ž!ì•.îÈ»±›óØB?¾6D­:’=‡œÛÎðs:ùc;�}áY—ÕIË“~ÓÕW9	Â`×pFo”ôü¤’<½á P-kU2Àb?ì¼ËÅZMîy’•ëª�õÅxE÷Ú�	[°i³ÀÃö­{W¹€ë‰±nŽ=êÙ¦D�wùþV¸RG9½H»Ä¥ù˜!yèÈŽ*cÊ*YŸ5œˆ´P4½Á8ŠZfÐ5æ¬{*"ù×Cö‰ùp†;_Ú‹¾ùB*½ëÿ…QY÷À,Ò›Ç+„"�3Ï×ÊÆu¹oÔÐ”~Ñ1EÞR¤GQfc+-Çð´ºöÕî£ŠA¶ÈßšÛÈDr=>tXîe{Ÿ§ù’`MüÂªãÉÚ½á�”ü|ÿ{ÖÖ›¢yžù{„ý@$Ë<Üû¸OtË{_„`êiZWbz¾~>t»ûöHQ0^óˆaòÅô@œ´Ÿ1huJî3±Oòùqäz�eJQÑg3½™ës=YŒÑÞ u˜2…<m¹dð¡;^ãŠ0_È$Ÿb]ÀåUÊ¤œO­o_1ÃdÐî*âcAÐÙ¶¦á“ë,‹ùtêÃ‰Œ%ÃMÙ1ñ¶M™Ö>P~þœ±3ÂËÉ-Ð<‹ºò|Píµâ—*FSiÄžÙÓöN©‰Š%;‰¥ö#¸ŠHXwÑ°÷ÿº$�ãÜî%Ø“gmå^¢f†¶‰2ŸÇ¦ôN'¶½¶ÁÄšºX�MžEÙZº=•oBo—Dë+~Yo¼·+Êfº*GÔ|%v,wÙa¥½’C×µ1KÇŠ§Pé¬“¨•«qDô_qïO¹ç¼ŸËúF>ŠiôäâÈD`Žj©WŒ×g¼éçéoÞ9µT×càùn*“–Ê‹�†í>ã‘–µ®òwOz	šYì¶-ŽWgÖƒ»É§*P³Ÿ6{e—«Ã°ìKó6’�GíÐÕv3ÍyÞk}‰-3¥”¤LªËV-ð1çLv¤ [§‹¦Î�«…¦Î� íƒÒ9¢åù•Çž[¦_·çH}`«°<Énœ lØõÖfÞ„Ü=Ù°CÙ
-
---- page 25 ---
+--- page 23 ---
 
 1DEÞãpÔðà]è÷ˆ˜ç!ðm#¨X—C7žj§•,qŠ®:•

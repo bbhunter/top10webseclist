@@ -5,9 +5,9 @@ resource: "https://tom.vg/papers/timing-attacks_ccs2015.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:37:16+00:00"
+  at: "2026-08-12T16:01:15+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://tom.vg/papers/timing-attacks_ccs2015.pdf"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2015.md:71"
 commit: ""
-content_sha256: 121ebd42d468ef481991fcf7880ca2bd8632a84611c3b6985adec68e17b677ae
+content_sha256: 590cdee1ed5204a39f43d04b00336dbbe20e4cd5f0d9f474830075c028713a10
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: cbdf82e554d038b24ca9569cf08e77474da08a3a7cfee5eb289b96eb3ca19c44
 retrieved_from: "https://tom.vg/papers/timing-attacks_ccs2015.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:37:16+00:00"
+retrieved_utc: "2026-08-12T16:01:15+00:00"
 slug: timing-attacks-ccs2015
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://tom.vg/papers/timing-attacks_ccs2015.pdf>
-- Preserved from: https://tom.vg/papers/timing-attacks_ccs2015.pdf (stored) on 2026-08-11
+- Preserved from: https://tom.vg/papers/timing-attacks_ccs2015.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -1695,12 +1695,5 @@ on
 ˜R«è�+µ˜ÜŸÐê-ò‰�^Ý"
 
 --- page 19 ---
-
-G_Q[IK;“S6ó°U%ŸÍîÑçkÅUÆ1­­8÷lzÌæ¤ÃÃn	½Cé^LNø‹6n‘Wkn3—ÃwíÐ#SV1O�ª¶@Â�Qåâ:ûñ°‚9jð‡âÝ¹ëÉD‹‹’y±´M»¾þÛ6�¢¶	3–+uƒÈ3ª¨¬œ¨¢kQþã…�™¾xÊÊ6‰w@äin�Å§íd´Ý
-…E^Á`æ`�¥Yà¼Tc.põ¤„©ÉŸ—‡·gV}Ó@Ù³[É?òï÷Û71Ö·‘�¿ëèIâ’Öú>{e„w�‹°yt§ÜFn¬âR;*ìÖÀZ
-ƒfÔëÈhÀƒþzÿa� ÐF˜º0…Mm
-â…7“½¦ìpKõVÂô¸8.¥PTºi¸¶«E�e*�˜†ór·5øð"Ãmy&iÞÎŒ_ºO�î§/·9Ðýb¯�4�“é5wK·Fûµù&ä7†Å…`kk�¶/¬œK‰PÎ¶Ö>Xž7sILp¶RYú÷1¿Z'sDDÕ_ÒÍ¾Ï5Èä4	õ¬9'˜šÛ8[Û¹� ÒÕ0±‚…‰Â¯äcæÄ£0b'{s�ÿ ’fÇÌx#
-
---- page 20 ---
 
 ‰©'žÂ8d‘<¶J

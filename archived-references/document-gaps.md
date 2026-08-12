@@ -42,7 +42,7 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-13 reference(s) unresolved. 13 of them already have their raw bytes stored.
+14 reference(s) unresolved. 13 of them already have their raw bytes stored.
 
 ## https://bugzilla.mozilla.org/show_bug.cgi?id=369814
 
@@ -51,6 +51,14 @@ or fix the route and re-run.
 - Reason: faulty capture: the bug's comment thread is still absent - the capture holds the metadata table, attachments and change history, and Bugzilla loads comments through BugModal; the long-format view was pinned as the linked document and did not supply them either; try the containerised browser route (check-browser) or a Wayback capture of the pre-BugModal bug page (reported 2026-08-10)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2007.md:7`
+
+## https://portswigger.net/kb/papers/serversidetemplateinjection.pdf
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: whitepaper
+- Reason: faulty capture: the PDF's glyphs carry no usable encoding map, so every page extracted as binary noise - 58 readable words in the whole document and 43% of characters undecodable; recapture by rendering the pages to images and transcribing them (refs.py pdf-pages, then a reader) rather than by extracting text (reported 2026-08-12)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2015.md:30`
 
 ## https://www.ndss-symposium.org/ndss-paper/quicforge-client-side-request-forgery-in-quic/
 

@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:43:32+00:00"
+  at: "2026-08-12T16:01:49+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2018.md:74"
 commit: ""
-content_sha256: 71020a1cc6371e5a641e9d0ceb96c73a99a7729ce0ab94e873e17d73f3c26bba
+content_sha256: 890629055d7c761001c4f0d3b7c639556675208d90aa4ca6dac814ff2ba662ef
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: dd10b44aaf3d40b157b3ac5dafd0751ad262cf193c565ff712e79dd1c4456725
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:43:32+00:00"
+retrieved_utc: "2026-08-12T16:01:49+00:00"
 slug: cloud-strife-mitigating-security-risks-domain-validated-certificates
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf (stored) on 2026-08-11
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_06A-4_Borgolte_paper.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -400,13 +400,3 @@ introduced a mitigation that incorporates existing trust of aname into the valid
 --- page 33 ---
 
 [58]T. Ylonen. “SSH–secure login connections over the Internet”. In:Proc.USENIX Security Symposium (SEC). Vol. 37. 1996.[59]Host Identity Takeover Using Virtual Internet Protocol (IP) Addressing.[60]S. Yadav, A. K. K. Reddy, A. N. Reddy, and S. Ranjan. “DetectingAlgorithmically Generated Domain-Flux Attacks with DNS TrafcAnalysis”. In:IEEE/ACM Trans. Networking (TON)20.5 (2012).[61]B. Stone-Gross, M. Cova, L. Cavallaro, B. Gilbert, M. Szydlowski,R. Kemmerer, C. Kruegel, and G. Vigna. “Your Botnet is My Botnet:Analysis of a Botnet Takeover”. In:Proc. ACM Conference on Com-puter and Communications Security (CCS). 2009.[62]D. Liu, S. Hao, and H. Wang. “All Your DNS Records Point to Us:Understanding the Security Threats of Dangling DNS Records”. In:Proc. ACM Conference on Computer and Communications Security(CCS). 2016.[63]N. Nikiforakis, S. Van Acker, W. Meert, L. Desmet, F. Piessens, andW. Joosen. “Bitsquatting: Exploiting Bit-ips for Fun, or Prot?” In:World Wide Web. 2013.[64]Y.-M. Wang, D. Beck, J. Wang, C. Verbowski, and B. Daniels. “StriderTypo-Patrol: Discovery and Analysis of Systematic Typo-Squatting”.In:SRUTI6 (2006).[65]J. Szurdi, B. Kocso, G. Cseh, J. Spring, M. Felegyhazi, and C.Kanich. “The Long “Taile” of Typosquatting Domain Names”. In:Proc.USENIX Security Symposium (SEC). 2014.[66]M. T. Khan, X. Huo, Z. Li, and C. Kanich. “Every Second Counts: Quan-tifying the Negative Externalities of Cybercrime via Typosquatting”. In:Proc. IEEE Security & Privacy. 2015.[67]B. Zdrnja, N. Brownlee, and D. Wessels. “Passive Monitoring of DNSAnomalies”. In:Proc. SIG SIDAR Conference on Detection of Intru-sions and Malware & Vulnerability Assessment (DIMVA). Springer.2007.[68]H. Yan, R. Oliveira, K. Burnett, D. Matthews, L. Zhang, and D. Massey.“BGPmon: A real-time, scalable, extensible monitoring system”. In:Proc. IEEE Conference For Homeland Security—Cybersecurity Appli-cations & Technology (CATCH). 2009.[69]M. Wählisch, O. Maennel, and T. C. Schmidt. “Towards Detecting BGPRoute Hijacking Using the RPKI”. In:ACM SIGCOMM ComputerCommunication Review42.4 (2012).[70]H. Ballani, P. Francis, and X. Zhang. “A Study of Prex Hijacking andInterception in the Internet”. In:ACM SIGCOMM Computer Communi-cation Review. Vol. 37. 4. 2007.[71]Z. Zhang, Y. Zhang, Y. C. Hu, and Z. M. Mao. “Practical DefensesAgainst BGP Prex Hijacking”. In:Proc. ACM CoNEXT. 2007.[72]M. Aertsen, M. Korczyski, G. Moura, S. Tajalizadehkhoob, and J. v. d.Berg. “No Domain Left Behind: Is Let's Encrypt democratizing Encryp-tion?” In:arXiv preprint arXiv:1612.03005(2016).[73]A. Manousis, R. Ragsdale, B. Drafn, A. Agrawal, and V. Sekar.“Shedding Light on the Adoption of Let's Encrypt”. In:arXiv preprintarXiv:1611.00469(2016).[74]J. Clark and P. C. van Oorschot. “SoK: SSL and HTTPS: Revisiting PastChallenges and Evaluating Certicate Trust Model Enhancements”. In:Proc. IEEE Security & Privacy. 2013.[75]Y. Chen, V. Paxson, and R. H. Katz. “What's New About CloudComputing Security”. In:University of California, Berkeley Report No.UCB/EECS-2010-5 January20.2010 (2010).[76]S. Subashini and V. Kavitha. “A Survey on Security Issues in ServiceDelivery Models of Cloud Computing”. In:Journal of Network andComputer Applications34.1 (2011).[77]M. Jensen, J. Schwenk, N. Gruschka, and L. L. Iacono. “On TechnicalSecurity Issues in Cloud Computing”. In:Proc. IEEE Conference onCloud Computing Technology and Science (CloudCom). 2009.[78]H. Takabi, J. B. Joshi, and G.-J. Ahn. “Security and Privacy Challengesin Cloud Computing Environments”. In:IEEE Security & Privacy(2010).[79]Y. Zhang and J. Joshi.Access Control and Trust Management for Emerg-ing Multidomain Environments. Emerald Group Publishing, 2009.APPENDIXFor our proof of concept experiment (see SectionIII-E),we obtained a valid certicate for the domain “cloud-strife.seclab.cs.ucsb.edu.” The obtained certicate is shown inListing2. The respective entry in the certicate transparencylog can be found at:https://crt.sh/?id=250959196. We revokedthe certicate after the certicate has propagated to certicatetransparency logs, i.e., shortly after issuance. In face of oftenignored revocation checks, we opt not to publish the privatekey. Instead, we prove ownership of the certicate by signinga unique message (see Listing3and Listing4). We did notuse the certicate for any purpose besides signing the message.It can be veried as follows:# Copy Listing2to certificate.pem# Copy Listing4to message.txt.dgst.b64# Create message.txt$ echo -n "Cloud Strife: Mitigating the Security Risks of Domain Validated Certificates" > message.txt# Convert the full certificate to raw PEM:$ openssl x509 -pubkey -noout -in certificate.pem > certificate_raw.pem# Base64 decode the signature$ base64 -d message.txt.dgst.b64 > message.txt.dgst# Verify the message$ openssl dgst -sha256 -verify certificate_raw.pem -signature message.txt.dsgt message.txtListing 1:Instructions to verify the signature.-----BEGIN CERTIFICATE-----MIIFHzCCBAegAwIBAgISA3XAEcaykugGaCy9tCoCdJWKMA0GCSqGSIb3DQEBCwUAMEoxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MSMwIQYDVQQDExpMZXQncyBFbmNyeXB0IEF1dGhvcml0eSBYMzAeFw0xNzExMDkyMzA4NTVaFw0xODAyMDcyMzA4NTVaMCkxJzAlBgNVBAMTHmNsb3Vkc3RyaWZlLnNlY2xhYi5jcy51Y3NiLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAONF0TzeAA6Nq5Li7e9h6+Y//d8Zy2gbWN465t3MPVlz1lSLqCZvT4e3IDjuyQ/gx+yWnndtQrhszHt+GigQbBcAFM5YohIVrTr7M8ozZVZhu1x11xmPZYJ9hAi8NO6p2uoZMNwiHh35XVFQs5LFG6QpPGBWoNtu1t5zwLYF01STlMS/hNn0P/KlrnAzs2tSX//OxxaY+josKQCl9LrXKhOXcmaZMXFe7t8uglFsjbEvM9TRFqeENROik/TLjRlyb3BM5HtKVnnotDh6078qCgwMzZyh5YRy2uOGHCp13TdZQtOELq0qfGNjVClwRENo+AW1K8fPnw9LS49OpBwzx2MCAwEAAaOCAh4wggIaMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUKnFOhVGO9fXAoSDpoRiztZhSYo4wHwYDVR0jBBgwFoAUqEpqYwR93brm0Tm3pkVl7/Oo7KEwbwYIKwYBBQUHAQEEYzBhMC4GCCsGAQUFBzABhiJodHRwOi8vb2NzcC5pbnQteDMubGV0c2VuY3J5cHQub3JnMC8GCCsGAQUFBzAChiNodHRwOi8vY2VydC5pbnQteDMubGV0c2VuY3J5cHQub3JnLzApBgNVHREEIjAggh5jbG91ZHN0cmlmZS5zZWNsYWIuY3MudWNzYi5lZHUwgf4GA1UdIASB9jCB8zAIBgZngQwBAgEwgeYGCysGAQQBgt8TAQEBMIHWMCYGCCsGAQUFBwIBFhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCBqwYIKwYBBQUHAgIwgZ4MgZtUaGlzIENlcnRpZmljYXRlIG1heSBvbmx5IGJlIHJlbGllZCB1cG9uIGJ5IFJlbHlpbmcgUGFydGllcyBhbmQgb25seSBpbiBhY2NvcmRhbmNlIHdpdGggdGhlIENlcnRpZmljYXRlIFBvbGljeSBmb3VuZCBhdCBodHRwczovL2xldHNlbmNyeXB0Lm9yZy9yZXBvc2l0b3J5LzANBgkqhkiG9w0BAQsFAAOCAQEAIj1W4ZzHlsaj6ccWccGyVahfk9JDhImMQLDUR02FYqtHLPjyM1JIIyYHP9xES2JZBbzMlrr2SjfxC3IQhDkUIjyPEeLv6WVT0hFbbzu3QAYjW5yigctpuggx/v7crhbWpmY9TJRU2QAsADF9NIeSXo+3zp15QAvrss2l+qtEK3uLgQ12+antYaI85wkcP6MGHVV52asshcjy+v2wHxJDONmtzCHQbYXA7nhSUfspnVax8EfraGWF5XobZyLwp91BZjOB1D+HD3ubtbk2PjlW/Eld7jgv2pCEM0iXk5suidCnG47jmZQA892iUVVftx4z5/ntnkiw7Gwwzm+o34fMmQ==-----END CERTIFICATE-----Listing 2:Proof of concept certicate, signed by Let's Encrypt.Cloud Strife: Mitigating the Security Risks of Domain Validated CertificatesListing 3:Proof of concept message (one line, no trailing new line).Bc99Sl5FwjqYLJl/jS1gPC9fyI9XiS/ex7QVg+zIFZpJ+aPCYcsGm4fGkJxathtew4i0p3q3lSmnkukRoRNVSvMJdfJRm5QvRQr43HsC6iT+N2xZI/QLcH0nMGUftpR2HuEiY8LwIalNuxOOjTZJwfTTSRM+NdCjSa39RDpqQLU5LGKjBpSTT/jfg0RwrX0wMhDnq+iqqrW0kDg08bxARWUfY7tHUAvPpiyyEhnfyThliHFkrKUjAGtH6f+6fKFe8pZO0XJHRoMuhq4OXMjOWKJZYu7XwQXn3GDoo1bwIwykwmIpUu9wGAjlimtTY5eWuM0tg2PkmbuZi3JaGsczuQ==Listing 4:Signature for the proof of concept message.15
-
---- page 34 ---
-
-+N@=w‹z’m¡k¢t•v‹n}reºsÖß‹Ó¦½¾¹¸ Ä‹×‹Óx¹Y½_·R¢û
- øˆ}§ø¹­è÷�åøRù@û�QxBXû>Pû‹û‹4¦3¶Y±_ÁsÉ‹÷áê÷÷BÜû_‹v„Le¦÷+÷÷÷1¥ûbû²á½CûûdNE3Ué÷/‹¾“§Ÿš ›ª”®‹øˆƒŸøÔÕøUù*üPû'œƒ¶Ï�˜Â‹÷mûZüèÌ÷hù"øˆ}§ù§Ã×EÕ÷oÐT×Ø÷¶øîÀ®µ‹ÏÝCÇ'û:H0‹Jžnô/äû9ul‹G*ÚG÷÷ØÍò‹Øi¼ûåy$ÔW£g‹SJ^^J?XÅâ‹Ë¡µÅºØ¼Ø2Åg¹‹ÃÅ¸´ÊÏ¶_F‹Ro^Re†ˆ‹‹‡ˆøˆ÷�¶ø§©çÆu÷˜ÂžÏ¼ó×È÷‹÷÷9/÷	ûû2&ûûÓ:÷Â‹µ›À´bû7û û,q÷Æ÷ù‹w‡‚€‚osf~g‹?[Ö÷‹Ä›Ç ¥œŸ¤–¨‹â¸5û<÷ª€÷÷Œ÷÷ø_mrqln¤r¨ª¥¤¨ªq¥mûûmrqln¤r¨ª¥¤¨ªq¥m÷ª…Ÿ{ó÷Š÷Ü÷²Höû!Ð­¶Ç‹Ç½h²^hsuiˆj¡x°‘‹’Œ‘Œh’�‹‹Œ‹“‘…ƒ‹kofUf±øÙpmrqln¤r¨ª¥¤¨ªq¥møÈ÷Í÷ÍøªøüŒIøŒûüŒIøŒøPƒö÷òŸ÷E©Ï¾Ìöªç÷ˆ÷8–Îœ³°º¹Ã‹‹™ «¼˜¯‹´‹±~¯t¢h®P¢U‹/EM8cœuª£œœ£‹™…—|œ™†”‹“«¹©¼Ç»VH‹]~TsToKxZ�ZŠ_•Jmtskn¡u©«¢¡©©r¤nú-}²÷
-¬k¶÷�Ÿ÷Qª÷ß÷Òø³ßùDÔ=hX~H‹û>û÷÷B‹è¯éÄÆ¼¼Î¦Ô‹÷1÷ûû
-
---- page 35 ---
-
-<ÝððÚÜî{´ø´iŸß´÷í´Øøjøb¯UžN‹û+,ûûé/÷Í‹ÍŸ¾®§žš�‹—•‚”�„‹ˆ‰ƒƒW[MsB‹û>Öô÷×Ö÷ß‹Òa�V�z‘„˜‹˜’”�æ8ž„”~}„‚x{´r´÷ñ´÷´Ê´÷ù´b÷¼øŠøð,y‚„~}”„�Áû€ZÒQ¬@‹û*'ûûì&÷rÖ‹Ç®ºÑ2ê�”’™˜‚’y|Uûp÷ñðÙ;#¬';:

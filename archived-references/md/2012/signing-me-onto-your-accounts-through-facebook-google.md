@@ -5,9 +5,9 @@ resource: "https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:42:02+00:00"
+  at: "2026-08-12T16:00:30+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2012.md:71"
 commit: ""
-content_sha256: 977abadd5e489b8915694acf70a98498534b41b11e1bd123d4a6e1a694cdbee7
+content_sha256: 1a082abe61fdaeb8d2e379b285071ed13ad30380cf4cd8d80f73397f12880461
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: a07d457722bc785b4687b08ba2f2c45922317d5b0e4d09504dc18a5b7465a819
 retrieved_from: "https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:42:02+00:00"
+retrieved_utc: "2026-08-12T16:00:30+00:00"
 slug: signing-me-onto-your-accounts-through-facebook-google
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf (stored) on 2026-08-11
+- Preserved from: https://www.ieee-security.org/TC/SP2012/papers/4681a365.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -213,30 +213,9 @@ DOI 10.1109/SP.2012.30
 
 --- page 9 ---
 
-þý8ZJ²ÄCR6N%GkQÎú;XC&s=gR>*'‚',TzM.TG8
-5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
-·
-
---- page 10 ---
-
-':Ly%#%'2#2'E#E'¥''9?:9&"%&8/78-""--/?¸É@> / /.!.!"988''&h??+ 0`p°Ààð
-¸ú@D S d  2" ""¸Ã¶@A–!kŠ++ö]ô]ý]qä]?<<<?<<<99‡.+‡}Ä‡.+‡}ÄíÀíÀíÀíÀíÀíÀíÀíÀY10]]CX² /]Y]]]]qCX¶/@U	¸ÿô´U	¸ÿô´U	¸ÿà´U	¸ÿØ@U	U
-U¸ÿþ´U¸ÿì´U¸ÿÜ´U¸ÿØ@	U
-
---- page 11 ---
-
 :Ly%#%'2#2'E#E'¥'
 
---- page 12 ---
-
-%'G&@?0&&¸b@	-,
-8­++<+öq+í+Ä<+À?<íí?9/íí<íþ<‡.++}Ä‡<Ä+ô]<]/zø/äzð/äzø/ä.íõ].íõ]10]+]qr]CX@"?"?9+++Y676673#654&&'!726767&&'7!#.#–™.Kz
-
---- page 13 ---
-
-÷ì�$KKâö°8’+nïhð÷OåCÝíøŸðŸæ�üš_oÄÿ„ÿ4äÕ�Ï«@.~ýÛgßwlßÇîûãä ö}_6Øj~Ú�.ØÛ„‹O¸FÀ&>Ž¦;ëÜLWëpþºÓËúx5þº’KIçæœm“'HÓâƒöü?øOóGþM/·áÿÂš?òkFÑõE¢÷Ö þ®Í×™f›‰c>“¹ð<Tí¯¢nµõY^´�J²/Ú,†î—Fç;S6y�<R�ù~^zŸ–~zþ§Ëÿ”åå¿Ë?Åd‘nû>÷zCÙ¦É$˜ŽæóÓà 6îüØÛü¨˜ûçðŸ$/·âÂš?òi}¿þüÑÿ“VíwÕªÜÿN¶Û¡ôõ¼7FÜæLí2â+í©�òúv>[¨ªÈÀ.ït–ºæºtlËkû�}ª>¬ø7¯Aâ×§m<Q÷xêÉ‡zôK‹_ÃO
-
---- page 14 ---
+--- page 10 ---
 
 SSO security (Section 4.2). Finally, formal verification on 
 the protocol level cannot find the logic flaws in the way that 
@@ -369,7 +348,7 @@ corresponding HTTP response
 Xb
  (1b, 2b, etc.) to be sent browser IdP RP Visible to us Blackbox for us366
 
---- page 15 ---
+--- page 11 ---
 
 back from the server (either the RP or the IdP). A browser 
 relayed message (BRM) refers to a response message 
@@ -507,7 +486,7 @@ BRM1
 BRM2 
 BRM5 367
 
---- page 16 ---
+--- page 12 ---
 
 web proxy capable of uncompressing/decoding/parsing all 
 HTTP messages, on the browser machines used in our 
@@ -649,7 +628,7 @@ login on machine 1 Trace of user1’s
 login on machine 2 Trace of user2’s 
 login on machine 1 368
 
---- page 17 ---
+--- page 13 ---
 
 false positives, our analyzer performs a dynamic test on 
 such an element to find out whether it indeed carries a 
@@ -811,7 +790,7 @@ Cookies: sessionID[BLOB] BRM2
 Arguments: 
 username[WORD][UU] & sig[BLOB][SU][NC][SIG]369
 
---- page 18 ---
+--- page 14 ---
 
 make it completely realistic for an unauthorized party to log 
 into their customers’ accounts. These flaws are also found to 
@@ -1013,7 +992,7 @@ openid.ext1.type.lastname[WORD]
 openid.ext1.value.lastname[UU] protected by 
 openid.sig (email,firstname,lastname)370
 
---- page 19 ---
+--- page 15 ---
 
 Responses from Google and OpenID Foundation
 . 
@@ -1154,7 +1133,7 @@ B
 (4) HTTP 
 request to NYTimes371
 
---- page 20 ---
+--- page 16 ---
 
 by 
 A
@@ -1321,7 +1300,7 @@ the RP for retrieving the profile data from JanRain. 2 In the actual implementat
 “discovery_token” in JanRain’s wrapping of Yahoo and Google, 
 and “_accelerator_session_id” in its wrapping of Facebook. 372
 
---- page 21 ---
+--- page 17 ---
 
 BRM1
 : src=RP dst=http://!IdP/openid/start Arguments
@@ -1498,7 +1477,7 @@ The only hurdle for our exploit is how to bind this session
 ID (which is for Bob-App) to our target RP-App. 
 Interestingly, we found that this binding is established by 373
 
---- page 22 ---
+--- page 18 ---
 
 BRM2 through its argument 
 openid.return_to
@@ -1652,7 +1631,7 @@ token
 result
  from an IdP’s page to an RP’s page (Section 4.2). 374
 
---- page 23 ---
+--- page 19 ---
 
 assigned the profile data of the current Facebook logon user. 
 Interestingly, we found that by making the browser visit the 
@@ -1821,7 +1800,7 @@ to directly bring this issue to the attention of the executive
 director of OpenID Foundation. 
  375
 
---- page 24 ---
+--- page 20 ---
 
 4.6.
  
@@ -2002,7 +1981,7 @@ We believe that an analysis like what we did is helpful,
 so we will soon launch and maintain a service at 
 http://sso-376
 
---- page 25 ---
+--- page 21 ---
 
 analysis.org for developers to use our methodology. 
 Developers are obviously in a better position to conduct the 
@@ -2139,7 +2118,7 @@ common cause of logic flaws. We believe that good
 mitigations should provide a good control of the system 
 complexity and/or minimize website developers’ 377
 
---- page 26 ---
+--- page 22 ---
 
 programming load for integration. For example, the 
 following two directions are worth consideration. 
@@ -2258,7 +2237,7 @@ web systems. For example, NoTamper [6] is a technique
 that tests if the client-side logic of a web app is duplicated 
 on the server side, without access to the server source code. 378
 
---- page 27 ---
+--- page 23 ---
 
 It was not designed to find logic flaws in service 
 integrations like SSO schemes. 

@@ -5,9 +5,9 @@ resource: "https://www.yinzhicao.org/reactappscan/reactappscan.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:37:25+00:00"
+  at: "2026-08-12T16:02:54+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.yinzhicao.org/reactappscan/reactappscan.pdf"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:148"
 commit: ""
-content_sha256: e9337d6214214c968623584c8c6af31ee79deb9d3ef9736383f07c45a236a139
+content_sha256: a7c6cbb03cbfd528bee8e7b8ee4f1343c4487f7a131798abd5b8a206fe5581e4
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: 9ec13964fdc05abe02b456f753b4ba91699f8f97fa3f08394f13d59d29539eb3
 retrieved_from: "https://www.yinzhicao.org/reactappscan/reactappscan.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:37:25+00:00"
+retrieved_utc: "2026-08-12T16:02:54+00:00"
 slug: reactappscan-mining-react-application-vulnerabilities-component-graph
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.yinzhicao.org/reactappscan/reactappscan.pdf>
-- Preserved from: https://www.yinzhicao.org/reactappscan/reactappscan.pdf (stored) on 2026-08-11
+- Preserved from: https://www.yinzhicao.org/reactappscan/reactappscan.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -108,17 +108,6 @@ https://doi.org/10.1145/3658644.3670331
 
 --- page 2 ---
 
-.sÎ,fa�‡ßñ³xíEâ†ß6Z0ÚxnYŸs
-Ÿ˜	Êï¢¢,µ’æqÉZ›¿ê#=6ÎIüvì“f`ÓËbÔû`ŽËdÕ¿28¼w›,ULÛw°ñ^—þ*cdƒ,ŒœbÎ%n¤ÍA{ÉiÝðV8�Xf>O8ìÃ˜Ð�ø]Ä»i˜zýK…9ìØA�K~ëÕ©K^ûxd³äÚ�tÒfÍõ¡EEù,gŠ°�C36•äîšü 4â…
-f�pqrØÃ1‡×�ëUô&7Înh=|“]O¼�;ìëþàM¥ç1twFï‚Û[gSÙ†›ïOçxŸ4‚ º„x~ûùî[–Dj¸›rÃ×jàHBX˜èŽòuH¾ü1˜Ëc™9mc]ú¦Ë»ê¹Æ�Æ/_É‡¬ìU2ÏŽØ,¿^ß"Á¿�èLª/<_&÷áº«Ê†.ÇT{¹ßùƒÂ[V}Kë”µH@©~k¦[ÝJ;€^NáåŽ—Â<Y€A—‡Š’‚©4�ÉE�·Ó€ ”;Ðµ›Lƒ�daW`Å¢ó¥¬SÆåJËy’&%Ô ˆ§�eª`ð‘w¹xEvë|•+yÝÃ°r?ËI£«ÄCn8×ò=3	Vý�SaöÝFÞ£·#S&óäüïÇ†©üŒøÎ’Lþœß¼†rÀ—¯%–æ	è£#UbH}˜Hb‚E7¥¯8ºù#LñEœH‰?ì d#‡WŠá'ÕSôÌZžµ½C‡Ëw+¿:Ý„³­qXfí˜Ã"à�06ó·¬œæ«|ø;rØ�w¶Œ3=T�åpË>_§C8—×Œ²ÞOØB^ÀNù®AyÓ},*²š‹]ñtjúfíÎLTŸÄ|éÇXÂY*=wWkªè[¶ßÓ0o7§/ÿ¨
-
---- page 3 ---
-
-|hÇ§›®ª©äñ„eÂ
-‘ôtÜ‚+š”Yí¢±rÖÛ_ÓFÎZý¡TåÓ‹‹k¦�;ÔP Ë§>è—µå�$×!gÿÀwTéO.�MÀpÓ9Y·ÍÚ’½D ¢t†/"]UûÝÓÂÛ›â¦Ÿ_à.4ò²ÀaZ}X¤iPó¶G6rO8,Ù8ÈÓñ'¡LàÅµ‰3Å…’Ìÿõ§�üÐ9f%œŠçð¹L�…¹}t¢‘öÇE�Î0{ö®õ-îó27ýûVI…¼Þ?©`FH˜˜&ËØ_·Dœë:'¯"u'FA|fjkÙ™2_]ì²à&i¦å˜Ïk
-
---- page 4 ---
-
 CCS '24, October 1418, 2024, Salt Lake City, UT, USA Zhiyong Guo, Mingqing Kang, V.N. Venkatakrishnan, Rigel Gjomemo, and Yinzhi Cao
 1
 function
@@ -160,7 +149,7 @@ State.State [31] in React is mutable data that changes when auser interacts with
 3 OVERVIEWIn this section, we start from a motivating example in Section 3.1and describe our threat model in Section 3.2.
 3.1 A Motivating ExampleFigure 2 illustrates a React application built with MongoDB [21],Express.js [14], React, and Node.js, i.e., the so-called MERN tech-nique. The applicationmotivated by a real-world XSS vulnerability(CVE-2023-22462 [6]) and adapted for easy descriptionis a blogger,which allows users to add blogs viaaddBlog(Line 4) and read blogs
 
---- page 5 ---
+--- page 3 ---
 
 ReactAppScan
 : Mining React Application Vulnerabilities via Component Graph CCS '24, October 1418, 2024, Salt Lake City, UT, USA
@@ -321,7 +310,7 @@ BlogContent
 (Line 29).A successful exploit of the XSS vulnerability starts from a ma-licious request to theaddBlogAPI from an adversary until thedangerouslySetInnerHTMLsink (Line 40). The adversary-controlleddata is stored in MongoDB (Line 6) and read by a benign user re-quest to thegetBlogAPI. Then, the data is stored as a state of theBlogDetailcomponent (Line 13) ascontent(Line 14) and thenpassed to theBlogContentcomponent (Line 29) as apropsandnally to the sink (Line 40).Research Challenges.There are three main research challengesin detecting this XSS vulnerability.
 React Data Flow.There are two React Data Flows in this appli-cation making the vulnerability challenging to detect. First, letus start from the data ow related tocontentat Line 14. Theow starts from setting a state of theBlogDetailcomponent(Line 19) and then goes into a prop of theBlogContent(Line 24)and then a prop of theptag (Line 40). This is a challenging dataow because the ow depends on theuseEffecthook (Line 31)and another state (i.e.,modeat Line 15) in theBlogDetailcompo-nent. In other words, the application is only vulnerable after thehook (Line 31) is invoked andmodeis set as HTML. Second,we describe the data ow related toprocessContentat Line43. ThisprocessContentfunction is dened as a prop of theBlogDetailcomponent (Line 43), passed to theBlogContentcomponent as another prop (Line 25), and then eventually in-voked at Line 35. None of the existing works [10,59,69] can
 
---- page 6 ---
+--- page 4 ---
 
 CCS '24, October 1418, 2024, Salt Lake City, UT, USA Zhiyong Guo, Mingqing Kang, V.N. Venkatakrishnan, Rigel Gjomemo, and Yinzhi Caotrack both data ows, let alone detect the XSS vulnerability, dueto the cross-component nature of both ows.
 Client-server Data Dependency.The data dependency betweenblog.contentat Line 10 in API.js andres/dataat Line 18/19in react.jsx is due to client-server communication via thefetchat Line 17. This is important because a server response may notbe controllable by an adversary (e.g., it could be a constant value)and such a data dependency links the server response to anotherclient's request, i.e.,reqat Line 4, which is controllable by anadversary. Existing works [10,59,69] do not track such cross-side data dependencies, which leads to false positives becausesome server responses are not controlled by an adversary.
@@ -334,7 +323,7 @@ A crafted victim URL. The adversary tricks a victim client intovisiting a URL be
 A malicious website. The victim may accidentally visit a mali-cious application, e.g., by visiting a malicious URL, causing theadversary-controlled website to be loaded in the same browser asthe vulnerable React website, e.g., in dierent tabs. Then, the ma-licious website sends a message (e.g., viapostMessage) to attackthe React website, which could lead to improper authorizationand trigger another vulnerability, e.g., XSS.We also classify existing vulnerabilities into two categories fol-lowing prior works [59,69], which are (i) application-level and(ii) package-level. The former allows an end-to-end attack froman adversary to a vulnerable sink, e.g., from either a maliciousclient request or a malicious message to the sink. The latter ex-poses an external API without proper sanitization, which makesanother application using the package potentially vulnerable. Suchvulnerabilities are very common and well-documented in the CVEdatabase [1, 2, 6, 7].
 4 DESIGNIn this section, we describe the system architecture ofReactApp-Scanand then present the detailed three phases ofReactAppScan.4.1 System ArchitectureFigure 3 shows the overall architecture ofReactAppScan, whichtakes the source code of a React package or application as inputand outputs detected vulnerabilities. The high-level idea is thatReactAppScanfollows the rendering process of native React onan application to abstractly interpret its code and to build a CoG,which can be queried for vulnerability detection.
 
---- page 7 ---
+--- page 5 ---
 
 ReactAppScan
 : Mining React Application Vulnerabilities via Component Graph CCS '24, October 1418, 2024, Salt Lake City, UT, USA JSX AbstractInterpretation
@@ -592,7 +581,7 @@ Compare
 c
 ºCompare whether the props object or the state object of acomponent changes.4.2 Phase I: MountingWe rst describe the denition of a component graph and then theabstract interpretation process to build such a component graph.4.2.1 Definitions and Notations.We dene a Component Graph asa graph with JSX-related objects and variables (e.g., JSX elements,JSX states, and JSX props) as nodes (#) and their relations as edges(). Table 1 describes the nodes and edges of a CoG. The corepart of a CoG is a tree-like structure consisting of dierent JSXelements, i.e., either a JSX component or a DOM element, with theirattributes, which is similar to a DOM tree but with JSX componentsas well. Each JSX component node has astatenode representingits internal states and apropsnode representing attributes passed
 
---- page 8 ---
+--- page 6 ---
 
 CCS '24, October 1418, 2024, Salt Lake City, UT, USA Zhiyong Guo, Mingqing Kang, V.N. Venkatakrishnan, Rigel Gjomemo, and Yinzhi Caofrom its parent component. Then, variable nodes are understateorpropsnodes and may point to dierent objects or to the sameobject (e.g., thecontentprop underBlogContentand thecontent
 state under
@@ -624,7 +613,7 @@ Modeling JSX component rendering.ReactAppScanrst looksup the denition function f
 Network response callbacks.ReactAppScanintroduces a ser-vice registry to maintain a relationship between each network re-quest call (e.g., AJAX) and its corresponding target function. Suchan analysis of network responses follows a three-step process:First,ReactAppScanadds the registration of service functions tothe service registry. Specically,ReactAppScanabstractly inter-prets the API route's AST nodes with the modeled Node.js APIsand framework APIs and records the API key and correspond-ing function denition in the process. Second,ReactAppScandiscovers the service functions when abstractly interpreting theReact.js AST nodes. During this stage, when processing an AJAXor fetch call,ReactAppScanmatches the URL in the service reg-istry to nd the target function recorded and call it.ReactApp-Scanprecisely matches static paths in routes, and also alignsvariables parts with placeholders in dynamic routes. Third, afterinvoking the function, the points-to information between thevariable in the React.js code and the object returned by the API ismodeled. Therefore,ReactAppScanestablishes a server-clientdata dependency.
 Database-related callbacks.ReactAppScanhandles database-related callbacks leveraging the database model semantics, sup-porting Create, Read, Update, and Delete (CRUD) operations.Each database model, such as the Blog model in Figure 2 (Line2), is represented as an object node in the CoG. The create opera-tion, such as `Blog.create' at Line 6, along with update operation,establish object-level data ow from input to the model's proper-ties. Subsequently, read operations, for instance, `Blog.ndOne'at Line 9, create data ow from the model's properties to thecorresponding properties of the returned object. Note that some
 
---- page 9 ---
+--- page 7 ---
 
 ReactAppScan
 : Mining React Application Vulnerabilities via Component Graph CCS '24, October 1418, 2024, Salt Lake City, UT, USAdata operations may involve query lters, which are JavaScriptobjects that dene elds with keys and set conditions with values,as utilized in Object Data Modeling (ODM) libraries like Mon-goose [22]. If any key is specied in the query,ReactAppScanconstructs a regular expression by joining model keys with 'or'operators between them. This regular expression is then usedto test against the query keys to check for the presence of anycommon keys between them. If found,ReactAppScancreatesdata ow.4.3.2 Graph Updates for JSX Component Updates.ReactAppScanupdates CoG based on updates of JSX components, e.g., new propsand state updates. Detailed operational semantics are shown inFigure 8 of Appendix A. We divide this process into two parts: (i)update condition determination, and (ii) CoG updates. First,Reac-tAppScandetermines which components require updating basedon three dierent conditions:
@@ -638,7 +627,7 @@ nds the lifecycle methodsby looking up the function denitions with specic lifecy
 4.4 Phase III: UnmountingAfter the updating phase, the CoG is updated based on unmountingof JSX components. The operational semantics of this process arealso shown in Figure??.ReactAppScanlooks up cleanup func-tions, including cleanup eects for function components, specif-ically the returned function of the rst argument ofuseEffect,andcomponentWillUnmountfor class components. Following this,ReactAppScanabstractly analyzes these functions to update theCoG.
 5 IMPLEMENTATIONOur implementation, comprising 4,689 lines of new code excludingany third-party code (e.g., those mentioned below), is open-sourceand can be accessed at an anonymous repository [27]. Our AbstractSyntax Tree (AST) parser of JSX is based on an open-source tool,called Espree [13]. Next, our abstract interpretation of JavaScript isbased on open-source repositories of both ODGen [4] and FAST [59]:Specically, we reuse the representation and generation of ODGand the modeling of built-in functions from these sources to modelJavaScript features, notably dynamic features such as prototypechain, reection, and dynamic property lookups. In addition,Re-actAppScanabstractly interprets all branches in parallel as doesODGen. We included the improvement in FAST over ODGen (e.g.,Promise) into ODGen, but did not use its two-phased abstract inter-pretation because JSX sinks are JSX attributes rather than JavaScriptfunction calls. Note that none of ODGen or FAST code is included inour Line of Code count. Currently, our implementation supports allReact features in its version 16, the most prevalent as per W3Techsreports [84] as well as popular features in React versions 17 and 18(e.g., those related to React data ows).Furthermore, our implementation adopts the graph query func-tion of ODGen, i.e., a depth-rst search (DFS) function to nd pathsfrom sources to sinks. There are two improvements for vulnerabil-ity detection of React vulnerabilities. First,ReactAppScanadoptsa customized list of sources and sinks as shown in Table 2. NotethatReactAppScandoes not include the setting of innerHTMLfor the<script />tag as a sink. This is because, according toHTML standards, script elements inserted usinginnerHTMLshouldnot execute [15]. We apply the same rule to the<style />tag.Note that AJAX requests are categorized as sinks when an attackercan manipulate the request URL, enabling the execution of a privi-leged AJAX call, as seen in CVE-2023-5654 [8]. Second,ReactApp-Scanmodels popular sanitization libraries such as dompurify [12],markdown-it [20], and sanitize-html [30] during graph query forvulnerability detection. That is, if a sanitization function is presentbetween the source and sink,ReactAppScanconsiders this pathas not vulnerable.
 
---- page 10 ---
+--- page 8 ---
 
 CCS '24, October 1418, 2024, Salt Lake City, UT, USA Zhiyong Guo, Mingqing Kang, V.N. Venkatakrishnan, Rigel Gjomemo, and Yinzhi Cao
 Table 2: A List of Sources and SinksType APIsApplication-level SourcesNetwork Request
@@ -678,7 +667,7 @@ positives.
 Small-scale labeled dataset consisting of real-world, historically-vulnerable applications with CVE identiers (called CVE Dataset).This dataset is compiled from the legacy Common Vulnerabilitiesand Exposures (CVEs) database and consists of 14 applications.In October 2023, we conducted an extensive keyword search onthe National Vulnerability Database [23]. The search keywordsinclude react along with a selection of React API names, in-cluding dangerouslySetInnerHTML, renderToStaticMarkup,renderToString, and useRef. We then study each vulnerabilityreport along with its source code and exclude those not relatedto React. A list of the CVEs in this dataset is presented in Ap-pendix B. This datasetincluding XSS, arbitrary le upload, andimproper authorization vulnerabilitiesserves as ground truthfor evaluating false negatives.6.1.2 Experimental Environment.Our experiments are performedon a server with 64 GB memory, 16 Intel(R) Xeon(R) CPU E5-2620 v4 @ 2.10GHz cores with 2 threads per core, running Ubuntu18.04.6 LTS. We run 16 processes of our system at the same time tospeed up the analysis. Our baseline is a state-of-the-art static anal-ysis tool, namely CodeQL [10], and we use their built-in CodeQLqueries, including client-side cross-site scripting [9], stored cross-site scripting [32], and reected cross-site scripting [28], for detect-ing application-level vulnerabilities and add our sources to CodeQLto detect package-level vulnerabilities. Note that our version ofCodeQL is the one with their x after we reported the problem ofCodeQL in tracking React Data Flows to their developers [33].
 6.2 RQ1: Zero-day VulnerabilitiesIn this subsection, we answer the research question regarding thenumber of zero-day vulnerabilities detected byReactAppScanbutnot existing approaches. Following prior works [59,69], we con-sider a vulnerability as zero-day if it meets the following criteria:(i) it is not detected by prior work, such as CodeQL; (ii) there is noavailable information about the vulnerability, such as bug reports,CVE reports, or data in other vulnerability datasets based on ourmanual search; and (iii) it is validated through manual exploitationby a human expert. Note that in practice, when running on thelarge-scale unlabelled dataset,ReactAppScanonly nds XSS vul-nerabilities but not arbitrary le upload or improper authorization.Table 3 shows a list of zero-day vulnerabilities detected byRe-actAppScanon GitHub repositories and then Table 4 the list ofzero-day vulnerabilities on NPM. Many of them are very popular,e.g., with more than 20K stars and 27K weekly downloads. In total,ReactAppScandetects 61 zero-day vulnerabilities with 13 on theapplication level and 48 on the package level from the large-scaledataset. Note that a single repository or package may contain morethan one vulnerability.ReactAppScanoutputs data ow paths andaggregates them by their last line of code. Paths ending on the sameline of code are counted as one vulnerability.A Case Study.We illustrate a case study using a zero-day vul-nerability found byReactAppScan. The vulnerability is located atrjsf-team/react-jsonschema-form [29], a 13,000-star GitHub reposi-tory for building JSON Schema [16] web forms. The corresponding
 
---- page 11 ---
+--- page 9 ---
 
 ReactAppScan
 : Mining React Application Vulnerabilities via Component Graph CCS '24, October 1418, 2024, Salt Lake City, UT, USA
@@ -795,7 +784,7 @@ options. filePreview } />;
 export default
 FileWidget ;Figure 4: A Case Study of a Zero-day XSS Vulnerability in therjsf-team/react-jsonschema-form GitHub Repository (13,000stars). The vulnerability is acknowledged by the developers.
 
---- page 12 ---
+--- page 10 ---
 
 10
 2
@@ -820,7 +809,7 @@ ReactAppScan
 ReactAppScan
 Line Fit
 
---- page 13 ---
+--- page 11 ---
 
 0-10
 10-20
@@ -843,7 +832,7 @@ Code Coverage (%)
 70
 Percentage of Applications (%)
 
---- page 14 ---
+--- page 12 ---
 
 CCS '24, October 1418, 2024, Salt Lake City, UT, USA Zhiyong Guo, Mingqing Kang, V.N. Venkatakrishnan, Rigel Gjomemo, and Yinzhi CaoTable 5: A comparison of false discovery rate (FDR) and falsenegative rate (FNR) betweenReactAppScanand CodeQL.FDR is evaluated on the large-scale dataset and FNR is evalu-ated on the CVE dataset. Note that both numbers are basedon end-to-end, exploitable vulnerabilities.Approach FDR=FP/(FP+TP)
 #
@@ -860,17 +849,11 @@ Figure 6: Code coverage distribution (500 random apps)unmodeled third-party libr
 ReactAppScan
 .Analysis Time.We evaluate the total analysis time ofReactApp-Scanvs. the number of Abstract Syntax Tree (AST) Nodes for 500
 
---- page 15 ---
+--- page 13 ---
 
 µ¼Í#çH�^BOÃ/×0ò
 
---- page 16 ---
-
-uÇùÏS[”¸Ñ
-dcˆËdGŠ�Äˆ{I þÒ„‘÷&¢ªøZSÍë,æ²ÎøiˆmMÝÂŸ™ÿ¸î<ë§x;oã­pßÌ[+Š¯ïA‹M‡�ËBùk¡¬á{±Ï·b[‹5½²Y;Líˆ„ÎbN¹,|"áŒí’©8K7
-%'ôÔýŒX¥ýÕäÚx[çgu>ÂÔ¨Éc$ÞÁd°yéx	¹6Øúµ;cJh'xU „2CÅfMö¿·G«¾ôÿ:·ŸÌ¢ŒÇö¨Pã¨š¨¡]a’*ø±,<ä/Vf›‹çûAû’Æ€cÛ2°jî?D!…õ5á€{P›¤'ýÚEãëÓ-Ñ£ïU¯ÈsõèÔ nâ�:t¥¿Õ¨—‚bÓÀ
-
---- page 17 ---
+--- page 14 ---
 
 0
 20
@@ -890,7 +873,7 @@ Percentage of Finished Applications (%)
 Total Running Time
 Mounting Phase Time
 
---- page 18 ---
+--- page 15 ---
 
 ReactAppScan
 : Mining React Application Vulnerabilities via Component Graph CCS '24, October 1418, 2024, Salt Lake City, UT, USAFigure 7: CDF of Analysis Time for 500 random applicationsrandomly selected applications from our large-scale dataset in Fig-ure 5. When the number of AST nodes increases, the total runningtime increases linearly as we show the trend in a line t. We alsoshow a Cumulative Distribution Function (CDF) graph in Figure 7,which illustrates the total running time with a 120-second time-outthreshold.ReactAppScancompletes the analysis of 95% of theapplications within 30 seconds, and 97% within 60 seconds. Thisindicates the high eciency ofReactAppScanin processing a sig-nicant majority of React packages. The total running time closelyaligns with the duration of the mounting phase, suggesting smallperformance overhead during the updating and unmounting phase.Code Coverage.We evaluate statement coverage, dened as thepercentage of statements executed byReactAppScan, i.e., the num-ber of analyzed statements divided by the total. Note that ourmeasurement methodology and tooling are inherited from priorwork [69], which covers all the statements within an application,including both client-side and server-side codes. This metric demon-strates how complete our system is in analyzing React applications.Figure 6 presents a distribution graph of statement coverage whenanalyzing 500 randomly selected React applications, each with atimeout of 120 seconds. In our evaluation, 67.3% of the React ap-plications have 100% statement coverage. This number surpassesODGen's code coverage, where only about 40% of applications reach100% statement coverage. The higher code coverage ofReactApp-Scancompared to ODGen can be attributed to the less commonpractice in client-side React applications of dynamically includingles based on input, a scenario that cannot be statically resolved.While React does allow for dynamic imports [18], the paths usedin React applications are typically predened.
@@ -899,13 +882,13 @@ ReactAppScan
 can nd a path.Analysis of Transpiled JSX Code.One possible solution of JSXanalysis and vulnerability detection is to transpile JSX code toJavaScript and apply state-of-the-art JavaScript analysis [59,69,90].However, such an approach is not scalable, and will signicantlysuer from the problem of state explosion. Specically, accordingto our experiments, neither ODGen [69] nor FAST [59] can nishanalyzing the transpiled code of a simple demo application letalone those applications in the large-scale or CVE database. Inaddition, the analysis of transpiled code will lose the JSX syntaxand their information, such as React dataow. This is similar to thecomparison of binary vs. source code analysis. Although binaryanalysis is available, source code analysis will also preserve moreinformation and greatly improve the analysis accuracy.
 8 RELATED WORKReact Security.React implements many built-in security featuresto defend against various possible attacks. For example, React es-capes any values embedded in JSX by default [17], thereby prevent-ing injection attacks. Despite these built-in features, due to the func-tionality reason, React also includesdangerouslySetInnerHTML[11],
 
---- page 19 ---
+--- page 16 ---
 
 CCS '24, October 1418, 2024, Salt Lake City, UT, USA Zhiyong Guo, Mingqing Kang, V.N. Venkatakrishnan, Rigel Gjomemo, and Yinzhi Caowhich can bypass this escaping mechanism and is also considered assinks in our work. To the best of our knowledge, prior work on Reactvulnerability detection is limited. CodeQL [10], an industry-levelanalysis engine for semantics-based search on a target codebase,provides standard libraries for data ow analysis and for workingwith React. React developer tool [26], although capable of analyz-ing React applications dynamically, is only used for performanceproling but not vulnerability detection.Static Analysis for JavaScript.In the past, there have been manystatic analysis works that were proposed for dierent purposes,such as type inference. TAJS [57] abstractly interpret JavaScriptprograms to infer type information and detect programming errors.Similarly, JSAI [61] uses abstract interpretation for JavaScript typeinference, pointer analysis, and control-ow analysis. SAFE [66]and SAFEWAPI [37] covert JavaScript to an Intermediate Repre-sentation for abstract interpretation. Zheng et al. [93] propose astatic analysis method to detect non-deterministic problems causedby asynchronous AJAX calls. Madsen et al. [70] present an event-based call graph to detect bugs related to event handling in Node.jsapplications. AdGraph [55] represents interactions between HTMLstructure, network requests, and JavaScript behavior. As a compari-son, prior static analysis focuses on JavaScript instead of JSX andReact and there are challenges in analyzing JSX, such as React dataows between components.Detection of Node.js Vulnerability.In the past, researchershave studied various security issues of Node.js, e.g., supply chainsecurity [46,82], Regular Expression Denial of Service (ReDoS) [38,45,80], privilege reduction [82], debloating [65], hidden propertyabuse [88], and prototype pollution [60,63,79]. The techniquesin detecting Node.js vulnerabilities also range from static analysisto dynamic analysis. We start with dynamic analysis. Jalangi [78]dynamically analyzes JavaScript applications with selective record-replay, shadow values and shadow execution. Arteau [35] detectsprototype pollution vulnerabilities with a dynamic fuzzer. We thendescribe existing static analysis in detecting Node.js vulnerabilities.DAPP [64] detects prototype pollution vulnerabilities based on ab-stract syntax tree and control ow graph. Several works, such asObjLupAnsys [68], ODGen [69], CoCo [90], and Nodest [73], de-tect JavaScript vulnerabilities using abstract interpretation. Node.jsecosystem security is also studied. ConictJS [76] analyzes Node.jslibraries to nd conicts. Zimmermann et al. [94] studies securityrisks of third-party Node.js dependencies. NodeMedic [44] proposesprovenance graph to detect vulnerabilities in Node.js packages.Brown et al. [39] study security problems in the binding layers ofNode.js. As a comparison,ReactAppScan's objective is to detectReact vulnerabilities, i.e., out of scope of these prior works.Client-side JavaScript SecurityThe detection and preventionof client-side cross-site scripting (XSS) [67,71,72,81,83] havebeen well-studied in the past. Prior work proposes preventing XSSattacks via Content Security Policy (CSP), e.g., CSPAutoGen [75].Pathcutter [43] cuts o the propagation path of XSS worms throughview separation. Zhang et al. [91] develop a browser-based frame-work for analyzing code integrity problems caused by JavaScriptglobal identier conicts. JSIsolate [92], provides a browser-based,isolated, and reliable JavaScript execution environment based onthe dependency relationship of dierent JavaScript program compo-nents. Browser ngerprinting [41,54,86,87] and web tracking [74]have also been studied by researchers. Deemon [77] is a frame-work for detecting CSRF vulnerabilities with a unied propertygraph built with dynamic traces. Melicher et al. [71] and Steenset al. [81] adopt dynamic taint analysis to nd DOM-based XSS. Hi-deNoSeek [48], JShield [42], JaSt [50], and JStap [49] study detectingand defending against malicious client-side JavaScript programs.Black Window [47] is a black box data-driven approach to webcrawling and scanning for nding cross-site scripting vulnerabil-ities. Jin et al. [58] propose a DOM-tree type, a predened set ofexpected DOM trees for Electron apps, to defend against unintendedDOM-tree mutations at runtime. As a comparison,ReactAppScandoes not require dynamic analysis. Moreover, none of these meth-
 ods track data ow in React or cross-side data dependencies.Graph-based Vulnerability Detection.Program analysis, espe-cially graph-based analysis, is heavily used for security analysis,especially vulnerability detection. Yamaguchi et al. [89] proposeCode Property Graph (CPG), a joint data structure of abstract syn-tax trees, control ow graphs and program dependence graph, todetect vulnerabilities with graph traversals. Backes et al. [36] ex-tends CPG with call graphs for PHP vulnerability detection. Jensenet al. [56] utilize static analysis for detecting both dataow-relatedand type-related programming errors in browser-based JavaScriptapplications, which models both the DOM model of the browserAPI and HTML page. JAW [62] introduces the Hybrid PropertyGraph, a code representation that includes Event Registration, Dis-patch, and Dependency Graph to capture event-based transfer ofcontrol. Taintmini [85] is a static taint analysis method designed todetect the ow of sensitive data in mini-programs. DoubleX [51]introduces Extension Dependence Graph (EDG) to detect vulnera-bilities in browser extensions. As a comparison, from a high-level,ReactAppScanis also a graph-based analysis, butReactAppScanfocuses on the detection of React application vulnerabilities.
 9 CONCLUSIONSingle-page application frameworks, such as React, have recentlybecome popular and widely used by many top websites and webapplications. At the same time, vulnerability detection for Reactapplications falls behind: Many vulnerability detection approachesdo not support React applications, and those that support React alsofall short in modeling React data ows, leading to the incapabilityof detecting many real-world React application vulnerabilities.In this paper, we design a novel,open-sourcevulnerability de-tection system, calledReactAppScan, which models React com-ponents as Component Graph with data ows among their propsand states.ReactAppScanbuilds the component graph via abstractinterpretation with monitoring of state and props change and thenperforms graph queries to mine vulnerabilities. Our evaluationshows thatReactAppScandetected 61 zero-day vulnerabilities; wehave reported all of them to their developers and so far six havealready been xed. We also compareReactAppScanwith CodeQL,the state-of-the-art approach in detecting React application vulner-abilities, and show thatReactAppScansignicantly outperformsCodeQL with much lower false positive and negative rates.
 
---- page 20 ---
+--- page 17 ---
 
 ReactAppScan
 : Mining React Application Vulnerabilities via Component Graph CCS '24, October 1418, 2024, Salt Lake City, UT, USA
@@ -1001,7 +984,7 @@ Proceedings of the 2018 world wide web conference
 NDSS
 .
 
---- page 21 ---
+--- page 18 ---
 
 CCS '24, October 1418, 2024, Salt Lake City, UT, USA Zhiyong Guo, Mingqing Kang, V.N. Venkatakrishnan, Rigel Gjomemo, and Yinzhi Cao
 [59]Mingqing Kang, Yichao Xu, Song Li, Rigel Gjomemo, Jianwei Hou, V. N.Venkatakrishnan, and Yinzhi Cao. 2023. Scaling JavaScript Abstract Interpretationto Detect and Exploit Node.js Taint-style Vulnerability. In2023 IEEE Symposiumon Security and Privacy (SP)
@@ -1075,7 +1058,7 @@ A OPERATIONAL SEMANTICS
 Figure 8 depicts the detailed operational semantics.
 B A LIST OF ZERO-DAY VULNERABILITIESTable 6 shows a list of React vulnerabilities and their CVE identiersin our CVE dataset.
 
---- page 22 ---
+--- page 19 ---
 
 ReactAppScan
 : Mining React Application Vulnerabilities via Component Graph CCS '24, October 1418, 2024, Salt Lake City, UT, USAPhase I: Mounting (JSX Elements)
@@ -2615,15 +2598,6 @@ cleanup eects, componentWillUnmount
 º
 Figure 8: Detailed Operational Semantics for Building the Component Graph.
 
---- page 23 ---
-
-T³Òváà “¢Ï[XW•:†Ó´ãFD
-9ßb¶½Z¸p9± -èÒY‘¬m”Ôk½�‹HRzÀJeMŒéªEl«Pöç¹m®Q=¶©#Ê¬ã¶nl­A¶*
-
---- page 24 ---
+--- page 20 ---
 
 Í¾ˆË%Š¿™«›VÆö�ÌwÂ[»µ?÷[…n
-
---- page 25 ---
-
-K†˜¿“‹Åo€­±tH�QI8'¢äð¹•†=¢åºœçgZ�&¶»æ£d-®k:éì^

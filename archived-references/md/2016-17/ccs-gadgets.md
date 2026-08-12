@@ -5,9 +5,9 @@ resource: "https://raw.githubusercontent.com/google/security-research-pocs/maste
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:36:51+00:00"
+  at: "2026-08-12T16:01:31+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://raw.githubusercontent.com/google/security-research-pocs/master/script-gadgets/ccs_gadgets.pdf"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2016-17.md:30"
 commit: ""
-content_sha256: 3b3eb4e2f717fb205313bb67c704f3320d5becc5e554492b7a5c39c6e5151bea
+content_sha256: 5a6d6bba663b82e485312a894e25b3eed2762d89e4b51d22606cb6389df75288
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: 9bc7dd6f063509ecffef7c178ef817e788f1d57319f27deda422c4b40704ff29
 retrieved_from: "https://raw.githubusercontent.com/google/security-research-pocs/master/script-gadgets/ccs_gadgets.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:36:51+00:00"
+retrieved_utc: "2026-08-12T16:01:31+00:00"
 slug: ccs-gadgets
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://raw.githubusercontent.com/google/security-research-pocs/master/script-gadgets/ccs_gadgets.pdf>
-- Preserved from: https://raw.githubusercontent.com/google/security-research-pocs/master/script-gadgets/ccs_gadgets.pdf (stored) on 2026-08-11
+- Preserved from: https://raw.githubusercontent.com/google/security-research-pocs/master/script-gadgets/ccs_gadgets.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -746,18 +746,3 @@ Mobile 1.4.5
 3.3.7
 - (HTML in HTML
 attr) 15
-
---- page 16 ---
-
-ªv´”VéÍ6³6^î§ws]Sq0íghá
-‚Ÿ@ðTH®²“zÞ øØ
-ÿ¥õËÇo_t®çv`FGä§��Î¨ÆŒIE«_¾£¿¼ÎÁ­Ö«¥<ÂË”{J®NÂÄËÅAQuˆ£}DjÆ¬{�æÉsÕ*ÅÿÞ›²ú1`ÑKú3¥ÇZ½x¨ï2CÖ7{ÚË‚ô�“œÏNÞ,KGŒ—õÓ+Ø€P®JÂ•ôf´¸û+	·öUâºÃ
-¹î¡æëÆ�Ø¥‚ÆQñQÃ%¼ó&×©wÆ><�²qU–òÙ
-
---- page 17 ---
-
-#æìäyå³ísð—íÁšÇrœOP-yŒùþÖ9-æ4Í›y5°Eí«—„“;ç-a‰¿Õv?mØN–Òd*ïkîz°���ÝÏ2Ç_öð ñI�-¯hÞýþÁðâ1õÎxÑHlH¬¿Ë–·]/%¦–Ò=&h™e?=€>‰Mo#cT÷ÏW�7,m6ƒû.õŒXÑ¯#"Wï­nê<{Ò+´«QBy‘©°±‡S-rÿ{“¾Ë€@´NÍmþž°‰úåÌ¦Ôß-¹$HX,Ž±ôˆqÝÃ+Æ˜u—‰šìN'¶ºÍ”éäë¥DGDü‹°<ÍÒV®ñþË}¤ÄŽ›oŸo³§I-ÎL4À½4•Ã´°|ë¦³É�!ù05æÕÑÝ ç’ÚU%kéNIü@Î‘ù*@ aâ>
-
---- page 18 ---
-
-YGÃnUD¥<9�¡*ÜäöÊÕf{Æ‰Ë/Ï vª‡Ã><TÖ†=“ž§oº�ÜØ>ßþRÂ�`"ÌÊ¯´w2}÷½q.ÓCƒ¢fÐ“Z;¥Ð&˜4·a>"_Ú`yEÚ@ó$${u4û~2ý‰cÍM¬ðyÅ1ðã“1ŠÉó-0ÂEÞºê¸4X½mëgÎƒ*ãÍfz°”àrëÇ›Ï?tûoÂÉšÓ¹:®^aàÁˆ‰!.å5õ�ZàiÚÆÆr AïžäØ1 w©žú`êµÔMÿ—/öðØþå+±ŸÝ³ßQ2èN[ØÍê�Š{aHI{Ù

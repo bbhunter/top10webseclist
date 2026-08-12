@@ -5,9 +5,9 @@ resource: "https://www.cs.ucr.edu/~zhiyunq/pub/ccs21_dns_poisoning.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:34:25+00:00"
+  at: "2026-08-12T16:02:03+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.cs.ucr.edu/~zhiyunq/pub/ccs21_dns_poisoning.pdf"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2021.md:60"
 commit: ""
-content_sha256: 9353e51ada48957a10c45c25227e98f70ed2d573cc556fd748c2658fd9055b2e
+content_sha256: 26fb8d1c20b800d7cc0e8bd5f2de70cb9da1a1cdb768bd8e155638f3abd04740
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: 285348238e1453af785253da8bbd1e4ba41081c23566393003c3960304917844
 retrieved_from: "https://www.cs.ucr.edu/~zhiyunq/pub/ccs21_dns_poisoning.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:34:25+00:00"
+retrieved_utc: "2026-08-12T16:02:03+00:00"
 slug: dns-cache-poisoning-attack-resurrections-side-channels
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.cs.ucr.edu/~zhiyunq/pub/ccs21_dns_poisoning.pdf>
-- Preserved from: https://www.cs.ucr.edu/~zhiyunq/pub/ccs21_dns_poisoning.pdf (stored) on 2026-08-11
+- Preserved from: https://www.cs.ucr.edu/~zhiyunq/pub/ccs21_dns_poisoning.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -102,25 +102,13 @@ https://doi.org/10.1145/3460120.3486219domain names into machine-readable IP add
 
 --- page 2 ---
 
-}Ânˆƒùç×{ˆÖbÚàµa§lqŸ[J‘8?¤A¢9£W½FÁŒ¹&ÚR+øž©’³ûy™fÇ OÀMXçá¢yû¦¦Uksß¢ã|UŸ Š¸òº9â·�˜¡¼
-�#�Ü`ä«TÚd�G_€°¾ýò`Dƒýãw£oÕ4-³ïåÙ†¢%ØÏLsÈ�Ü9ÊV†¸äeOb‘i{}¬Î?W�R7Wö®Ýõ£«vàk°ÑÄ�heFæSwkÆýõ’UFMÐþÙüm”§¹ÒÜU	$	²oìæñ¢½üfî…�5äö|@3G}`�[ïj&Ï]ßÔW6:ËãÒ8–‡Â	zÿS!cYñ„ipåRJà"$½m±é¹p³œbµ
-”ÇDÝ¾ª²ðñ�jj�~æÞ¶zcnl«W�¯Øœ}!˜5Æ‘T“>—3P£¥Ñ÷õ¡žN¿ÜYrÚ[ïKõëøŒ–à%Ð‘ŒÕ0±
+M»bœ®u!ðfè1±F0UEÖÚO±!äåt‹	=¥
 
 --- page 3 ---
 
-ÿÉyFÔ�2P´ÑHrïÂ²V¨¬	R
-$tægÃ•ì¸pÜØ’«5Î8PdNù4êeŽÔù—ÊµY£]Ç�ÏŽˆM1_VW u'	“°¨	%F�EP#_Õo¾gÊJ§…âsæhç]Dð»Osò6ÔÜL#çæÂ~…MS¸]æ¯!:èZ³ƒ«‰~K;t|î¡D0ÏêûSY,×Í40{"l_}¿='SGÕ=°ØÛˆò´NÓ	[w’A|ÿk“ÏpAãyVpb‘„7‡¦OìŸ�€õ:Á³×½æJ‰ôuKµ½—0HŠõ; /¹ÅÏº¾ØécGÿ£{lËÐ‘#@Òâ$‚Ù‡Ž?*ê'WóAä¡QŽ+Íð™Ý‡®döPc û
-ãD§È.·7[ªˆ&izvðëY÷”7
-
---- page 4 ---
-
-M»bœ®u!ðfè1±F0UEÖÚO±!äåt‹	=¥
-
---- page 5 ---
-
 Stub ResolverForwarderResolverAuthoritativeName Server= Cache
 
---- page 6 ---
+--- page 4 ---
 
 we estimate that they aect 13.85% of open resolvers. Finally, weevaluate the end-to-end attack on the latest BIND resolver and ahome router and nd that it is reliable and takes only minutes tosucceed. To mitigate the attack, we suggest setting proper socketoptions, randomizing the caching structure, and rejecting specicICMP messages when possible.
 We summarize our contributions as the followings:
@@ -143,7 +131,7 @@ Figure 1: DNS Hierarchy
 3 THREAT MODEL AND WORKFLOWIn this section, we will describe the general threat model used inDNS cache poisoning attacks.
 DNS Hierarchy and Attack Targets.Figure 1 shows a typicalDNS Hierarchy. The stub resolver (usually provided by OS) runson an individual client and acts as a proxyit only forwards thequery to the upstream DNS server without resolving the queryitself. The sole purpose of the stub resolver is to provide the localcache to speed up DNS queries from the same host. In the next layerup, DNS forwarders are also caching proxiescommon in homeand business gateways (e.g.,Wi-Fi router) [6,40,54], but they servemultiple clients in a LAN. At the highest layer, DNS resolvers nallyperform the real name resolution task by recursively consultingthe name servers, where the actual DNS records are stored. Re-solvers are usually operated by ISPs or tech companies (e.g.,8.8.8.8operated by Google) and generally serve many more clients. Asa result, DNS resolvers are the most prolic and impactful attack
 
---- page 7 ---
+--- page 5 ---
 
 targets. Furthermore, some resolvers,e.g.,those oered by Googleand Cloudare, are even open to the public and are accessible byeveryone, making them more accessible to attackers as well.Nevertheless, since stub resolvers, forwarders and resolvers areall equipped with DNS caches, they are all potentially subject toDNS cache poisoning attacks. [9,32,59] proposed the cache poi-soning attacks that only work against DNS forwarders instead ofresolvers, because they exploited the unique position or designgoals of the forwarder. Specically, [9,32] assume the attacker isunder the same NAT gateway as the forwarder, however However,resolvers are not usually behind NAT. [59] is based on the fact thatthe forwarders rely on the resolvers to perform the bailiwick checkand thus become vulnerable. To our knowledge, there are onlytwo practical attacks [33,45] that can work against the resolverin the past decade and SADDNS [45] is the only one using sidechannels to launch poisoning attacks (which no longer works asthe vulnerability is already patched). In this paper, we will intro-duce novel side-channel-based cache poisoning attacks that aectall DNS servers in the hierarchy. Our discussion focuses on DNSforwarders and resolvers.
 Assumptions.Generally, an attacker needs two main capabilitiesto launch the attack:(1) The ability to trigger one or more queries from the targetDNS server (forwarder or resolver). This is trivially satisable if theDNS server is publicly accessible. In practice, there are hundreds ofthousands of them (see Ÿ5.2), including the popular ones such as1.1.1.1 and 8.8.8.8. If the DNS server is private, the attacker wouldneed to join the network directly or indirectly. For example, thereare various open networks in coee shops and airports which allowan attacker to easily join. It is also possible that an attacker cantrick a victim client in a private network to visit a malicious websitewhere malicious scripts can execute and trigger DNS queries.(2) The ability to send packets with spoofed IP addresses. Thisis because the goal of the attack is to inject malicious records toeither the forwarder or resolver, and such rogue responses have tocome from a host that they contacted before,i.e.,either the resolveror the name server. This requirement is also not dicult to satisfy.As shown in a 2019 report [44], there are still 30.5% and 32.1% ofASes in the world that do not block packets with spoofed sourceIPv4 and IPv6 addresses respectively, which renders the attack stillfeasible today.
@@ -162,22 +150,22 @@ et al.
 [45] identied a global rate limiton the ICMP responses to UDP probes, enabling an attacker tosend spoofed UDP probes and indirectly infer whether they havesolicited responses. Specically, if a guessed port number (in aspoofed UDP probe) happens to match the correct ephemeral port,the resolver will not generate an ICMP message (otherwise it would).This results in either a stationary limit counter or a decrement of thecounter. An attacker can then check whether the counter has beendrained by attempting to solicit ICMP responses with a UDP probefrom his real/non-spoofed IP. Fundamentally, this is a variant ofthe traditional UDP-based scan because the goal is still to indirectlyinfer the presence or absence of ICMP responses.
 4.2 ICMP-Based Port ScansIn contrast with the traditional methods of UDP-based port scans,in this paper, we investigate the ICMP-based port scans. As men-tioned in Ÿ2.2, an ICMP message embeds the header of the originalpacket from the source, including the source and destination port
 
---- page 8 ---
+--- page 6 ---
 
 UDPdport=53UDPdport=67ICMP: 67closedAttackerVictim ServerListen on 53ICMP(UDP dport=53)ICMP(UDP dport=67)Attacker(a) UDP-based Port Scan (SADDNS)(b) ICMP-based Port Scan (This Work)Victim ServerListen on 53
 
---- page 9 ---
+--- page 7 ---
 
 Figure 2: Ephemeral Port Scaninformation. This opens up an opportunity to craft an ICMP mes-sage embedding a guessed port number, which is used to match aspecic socket on the receiver end [4,48]. However, the challengeis that ICMP messages are by design error messages useful for di-agnostic purposes only, which do not solicit explicit responses [12].This means that regardless of whether a port number is guessedcorrectly, the receiver will not provide any response, as shown inFigure 2(b), making the ICMP-based port scans seem infeasible.Surprisingly,we observe that an attacker does not necessarilyhave to rely on the explicit feedback from an ICMP probe. Instead,even if the processing of ICMP probes is completely silent, as longas there is some shared resource whose state is inuenced, we maynd ways (other probes) to observe the changed state of the sharedresource.This is a generalization of the prior probing methods thatrely on spoofed probes that by design can solicit responses fromthe victim. In addition to SADDNS whose probes are designed tosolicit ICMP responses, it is also the case for the series of TCP sidechannels [14,17,43]. Specically, [14] leveraged TCP probes thatcan solicit challenge ACKs; [17,43] required TCP probes that cansolicit any response. In summary, it requires a leap of faith to realizethe potential of the ICMP-based probes to scan UDP ports.In this project, we systematically investigated all types of ICMPand narrowed them down to two that are useful for port scans:ICMPfragment needed (or ICMP packet too big in IPv6)andICMP redirect.Next, we will describe their processing logic in the Linux kerneland the corresponding shared resources that form side channels.
 4.3 Analysis of ICMP Error Processing LogicWe use the ICMPv4 (ICMPv6 is similar) in the latest Linux ker-nel (5.11.16 at the time of writing) as an example to illustrate this(the logic is largely the same since 3.6). When the OS receivesan ICMPv4 message with an embedded UDP packet, it will in-voke__udp4_lib_err()to handle the error. Here the four-tuplein the wrapped UDP packet is rst checked with the socket ta-ble (__udp4_lib_lookup()) to verify the legitimacy of the ICMPpacket,i.e.,it is indeed triggered by the packet the host sent before.If it passes the check, the ICMP error will be handled accordingto the type of error. Additionally, the ICMP error may optionallybe delivered to the application if the OS has received the propersocket options (which will be described in Ÿ5.1).To handle the ICMP frag needed and redirect, two correspondingkernel functions are invoked respectively:ipv4_sk_redirect()andipv4_sk_update_pmtu(). Both of them will update a globalresource maintained in the routing module, called thenexthopexception (fnhe) cache. We refer to it as exception cache in shortfrom here on. It stores various states including the non-default MTUfor specic remote IPs (updated by ICMP frag needed messages),and the non-default gateway IP for specic remote IPs (updatedby ICMP redirect messages). These exception cache entries aectthe routing decisions for all future outgoing packets destined tothe remote IPs in the entries. These entries are cached for sometime unless explicitly evicted due to a limit on the total number ofentries (details are provided in Ÿ4.5).One thing worth noting is that the OS does not check the sourceIP address of the ICMP frag needed messages. This is by designas such messages can be generated by any router along the path.And due to the dynamic nature of the Internet, the victim resolvercannot easily verify if a given IP belongs to the routers along thepath. This has an interesting implication that the attacker's probesof ICMP frag needed messages, which we will describe next, do notneed to spoof the source IP address at all.
 4.4 Public-Facing Port Number InferenceWe illustrate the basic idea of public-facing ephemeral port scanin Figure 3(a) & 3(b). For ICMP frag needed, all we need to do isto send an ICMP frag needed message with the attacker's own IPaddress (which is unchecked by the resolver as mentioned above).The message embeds a UDP header with a guessed source port anda destination port of 53. It is also supposed to contain the sourceand destination IP addresses, which should be the resolver's IPand name server's IP respectively. However, some popular DNSsoftware such as Unbound (IPv4 only) and dnsmasq produce public-facing ephemeral ports as introduced in Ÿ2.1 (also called wildcardsockets in the kernel terminology). It turns out that Linux (andother OSes) treat such public-facing ports much more liberally andaccept any inner destination IP address in an ICMP message, aslong as the inner source address matches the resolver's IP and innersource port matches the ephemeral port. This eectively means thatagainst such public-facing ports, one can easily trick the resolver toupdate the MTUs for any remote IPs (even though the resolver maynot have even talked to them before). Therefore, in the attacker'sprobe packets, we will use its own IP address to ll the destinationIP of the embedded packet such that the MTU for the attacker's IPwill be lowered if the guessed ephemeral port is correct.To observe the change in the cache, the attacker can simplysend a PING or any other packet (verication packet) that willtrigger a reply (verication reply) from the resolver, and observeif the response will be fragmented as a result of the lowered MTU.As shown in Figure 3(b), if ICMP redirect is used for probing, theeect is that the victim resolver becomes unresponsive because thetrac to the attacker will now be redirected to a wrong gateway IP(potentially black hole) set in the redirect message.
 4.5 Private-Facing Port Number InferenceMost DNS software (e.g.,BIND) will produce private-facing ephemeralports, rendering the previous method invalid. The rst adjustmentwe have to make is to set the inner destination IP address to theIP of the name server. This is because__udp4_lib_lookup()willcheck the complete four-tuple of the embedded UDP packet to lo-cate the socket that has previously been connected to a specicremote IP and port (See Ÿ2.1). The exception cache state change istherefore also private to the name server and not directly observ-able by the attacker. For example, even if the MTU for the nameserver is reduced, an o-path attacker cannot directly observe the
 
---- page 10 ---
+--- page 8 ---
 
 Frag Needed ProbeVerify PingOff-pathAttacker aVictim rportnopenVictim rport nclosedVerify Reply Frag1Verify Reply Frag2PMTU of a1200D=rS=r, D=aM=1200SP=nD=rPING1300 bytesD=a, MF=1PING1152 bytesD=a, MF=0148 bytesFrag Needed ProbeVerify PingVerify ReplyD=rS=r, D=aM=1200SP=nD=rPING1300 bytesD=aPING1300 bytesIP HeaderICMP HeaderUDP HeaderDataRedirect ProbeVerify PingOff-pathAttacker aVictim rportnopenVictim rport nclosedGW of a1.1.1.100(blackhole)S=gw, D=rS=r, D=aRedirSP=nD=rPINGVerify ReplyD=aPINGGW of agwSpoofedLegend:en-USVerify ReplyD=aPING1.1.1.100Redirect ProbeVerify PingS=gw, D=rS=r, D=aRedirSP=nD=rPINGFrag Needed ProbeVerify PingOff-pathAttacker C1Victim rportnopenVictim rport nclosedVerify Reply Frag0Verify Reply Frag1D=rS=r, D=auM=1200SP=n, DP=53D=rPING1300 bytesD=C1, MF=1PING1152 bytesD=C1, MF=0148 bytesVerify PingVerify ReplyD=rPING1300 bytesD=C1PING1300 bytesPMTU of C1:12005 Plant PacketsD=rS=r, D=CnM=1200PINGfnheCache:C1->C2->C3->C4->C5fnheCache:au->C2->C3->C4->C5PMTU of C1:default5 Plant PacketsD=rS=r, D=CnM=1200PINGfnhe Cache:C1->C2->C3->C4->C5Frag Needed ProbeD=rS=r, D=auM=1200SP=n, DP=53(a) Frag-Needed-Based Public Port Inference(b) Redirect-Based Public Port Inference(c) Frag-Needed-Based Private Port InferenceKeys: D=Destination IP, S=Source IP, M=PMTU, SP=Source Port, DP=Destination Port, MF=More Fragment, Cn(C1-C5)=Colliding IPs, au=Authoritative Name ServerPMTU of adefault
 
---- page 11 ---
+--- page 9 ---
 
 Figure 3: Port Number Inferencechange because fragments will go towards the name server directly.Interestingly, it turns out that there is another method to indirectlyobserve the state change.The key idea is to leverage the limited number of total slotsin the global exception cache. By default, Linux organizes such aglobal exception cache as a 2048-bucket hash table which uses thedestination IP address as the key and has a linked list of length5 and 6 slots (for IPv6 and IPv4 respectively) to solve collisionsfor each bucket. When the linked list reaches the limit, the oldestexception will always be evicted and replaced with a newly insertedexception.The requirement is that the attacker needs to create hash col-lisions with the name server's IP. As shown in Figure 3(c), theattacker rst needs to nd 5 IPs (in the case of IPv6) that can behashed into the same bucket as the name server's IP on the victimresolver's exception cache and control at least 1 IP
 C1
@@ -186,17 +174,17 @@ C1
 .
 4.6 Finding IPs that Cause Hash CollisionsFinding IP collisions has been studied before when leveraging IPIDside channels [8,25], where they needed to nd a single IP addressthat collides within the same IPID bucket as the victim. [8] statesowning 10,000 IPs would bring the colliding rate to an arbitrary IPover a 2048-entry hash table to more than 98%. Unfortunately, thisnaive brute force does not transfer well to our attack. Specically,in order to observe a collision in the case of the exception cache,we know that we need 5 or 6 IP addresses to fully occupy a bucketentry. This means that we need to nd at least 50,000 to 60,000 IPsto have a good chance. This is still easily achievable in IPv6 becauseISPs often assign a /64 address block by default. However, for IPv4,we consider it possible but a very strict requirement. We thereforecome up with an alternative strategy as follows.Instead of nding the collision set directly, we choose to inferthe secret used in the keyed hash function that computes the indexinto the 2048 buckets. First of all, the hash function is public (listedin the kernel source code). Secondly, since the secret is only 32-bitand persists until reboots, it is possible to crack it once and use itsubsequently to check which IPs collide with a given name server'sIP. This allows us to target a resolver and potentially poison anarbitrary domain name after a single cracking. To infer the secret,the basic idea is to nd some collision set (of 6 IPs in the case ofIPv4) that allows us to test which secret can produce the collisionset. The key is that in this process we no longer require a collisionwith a specic IP, i.e., the IP of a name server, and therefore wecan benet from the birthday paradox [55]  it is much moreprobable to observe a collision at any bucket rather than a givenbucket. Based on our empirical evaluation, we only need 3,500 IPv4addresses to reliably nd one or more collision sets on some buckets.In particular, we rented 3,500 AWS EC2 instances to acquire 3,500dierent random public IPs. Given that each tiny instance onlycosts less than one cent per hour, renting instances for sendingprobing packets is cheap. In practice, we found that one round ofprobing with 3,500 IPs is usually sucient to nd enough collisionsets that allow us to uniquely pinpoint the secret  this takes onlyminutes computationally with 3,500 tiny CPU cores. In the rareevent that we fail, we can simply re-acquire another set of 3,500 IPsand redo the probing. Finally, we also tested the same methodologywith IPv6 where only 1,500 addresses were needed to achieve the
 
---- page 12 ---
+--- page 10 ---
 
 >0 
 `g<_''?0!	�,“ž–ˆ2<H3c‘],“�—‡32!4c‘^zv‰‘‡o#z8
 
---- page 13 ---
+--- page 11 ---
 
 ºJKX++?]q+í]q+?í9/?í9?9/ÄíÄÔ2399}‡ÄÄÄ01#".'&54>3232>7667#".54>3276632&&#"32>7Ã2U|U>3%
 	&8
 
---- page 14 ---
+--- page 12 ---
 
 same result because an IPv6 hash bucket has only 5 slots instead of6.
 4.7 High-Speed ScansAs one can expect, for either public-facing or private-facing ports,an attacker can probe multiple source ports simultaneously to learnif any of the guesses match the correct ephemeral port. We con-rmed with small-scale experiments that both ICMP frag neededand redirect messages are not rate limited on the Internet (seeAppendix B). We consider two options below.
@@ -219,7 +207,7 @@ Single packet scan.An alternative strategy is to scan only a singleport in each 
 4: Must not shutdown or retransmit the query after receivingICMP messages.
 [APP/OS]For1&2, they form the basis of side channels in the kernel. Asmentioned earlier, the latest Linux kernel satises both conditions.For3, interestingly the latest Linux kernel allows applica-tions to pass special socket options (eitherIP_PMTUDISC_OMITorIP_PMTUDISC_INTERFACE) which will cause the kernel to ignorethe frag needed messages for the corresponding sockets. However,this feature was introduced in Linux kernel 3.15. Therefore, whetheror not the condition is satised depends on both the kernel and DNSapplication. Nevertheless, ICMP redirect messages are not aectedby any socket option and are always processed in the kernel.For4, it is a necessary condition because the port scan assumesthe ephemeral port stays the same after it is successfully detected.If an application decides to shutdown the connection or retransmitthe query after receiving an ICMP message (embedding the correctephemeral port), then the detected ephemeral port will be eectivelyforfeited. Interestingly, this is again determined by the OS kernel aswell as the application. First of all, the OS kernel has to expose theICMP error messages to the application layer (again ICMP redirectnever gets exposed). Secondly, an application may choose to reactto such errors in dierent ways.In Table 1, we summarize the vulnerable combinations of Linuxkernel and DNS software according to the above conditions. Webreak down the Linux kernel versions into three groups, represent-ing three major changes that aect the above conditions. Similarly,we break down BIND into two groups because of some key changesin behaviors. As we can see,1is always satised in all recentkernel versions. Regarding2, the Linux kernel since 3.6 is vul-nerable in IPv4 because of the introduced exception cache. It tookLinux some time until 4.15 to port the same exception cache to IPv6.Therefore, IPv6 redirect attacks, which only require1&2to work,are only exploitable on kernel versions newer than 4.15. Regarding3, Since Linux 3.15, the socket options mentioned above becomeavailable and BIND decides to useIP_PMTUDISC_OMITsince 9.12for IPv4 sockets, leaving the condition satised for IPv6 socketsonly. For4, since Linux 3.15 and BIND 9.12,IP_PMTUDISC_OMITon IPv4 sockets similarly causes the kernel to notify the applicationregarding ICMP frag needed errors for sockets that have private-facing ports (therefore does not apply to older Unbound versionsand dnsmasq). Furthermore, BIND will retransmit the query (witha dierent ephemeral port) upon receiving such a notication. Aswe can see, the interactions between the kernel and applicationlayer are very much inconsistent and evolving constantly. We willdiscuss the reasoning behind them in Ÿ8.2.In summary, for the latest versions of BIND and Unbound on thelatest kernels, their IPv6 sockets can be exploited for the ephemeralport scan. In contrast, dnsmasq is always vulnerable as it doesnot set any special socket option. Nevertheless, in practice, IPv6 isgaining signicant traction in deployment [28]. In fact, as we will
 
---- page 15 ---
+--- page 13 ---
 
 Table 1: Exploitability of Dierent DNS Software and Kernel VersionsKernel Version3.6-3.143.15-4.14>4.15DNS SoftwareBINDBINDBINDBINDBINDBINDUnbounddnsmasqVersion9.3-9.11>9.129.3-9.11>9.129.3-9.11>9.12>1.5.2ANYIP Version464646464646464/6
 1333333333333333
@@ -261,7 +249,7 @@ Other Operating Systems.We have additionally analyzed FreeBSD(whose networking s
 Setup and Dataset.Open resolvers represent hosts that providerecursive DNS lookup services to the public. We obtain a list ofopen resolvers from Censys.io [22], which contains 1.84M IPv4addresses, serving as the dataset used in our measurement. Unfor-tunately, the list does not contain IPv6 open resolver addresses.Nevertheless, these IPv4 addresses only correspond to the fron-tend IPs. In practice, most open resolvers will go through backendservers that conduct the actual DNS query on behalf of the fron-tend. Therefore, we design a method to solicit queries from IPv6backend servers. Specically, we control two domain names whoseNS records point to an IPv4 and an IPv6 address respectively. Foreach frontend IP, we always send two queries asking for the IPv4and IPv6 domain names respectively. For the domain where its NSrecord points to an IPv6-only address, it will force a backend serverto use its IPv6 address to contact our name server. In the end, weare able to receive 129,196 queries from IPv4 addresses and 27,541from IPv6 addresses.
 Methodology.When a backend server (either IPv4 or IPv6) con-tacts our name server, we will perform the following four teststhat approximately correspond to the four conditions we discussedearlier.T1: The rejection of the ICMP error when the embedded sourceport is incorrect.To verify1in Ÿ5.1, we rst send a PING to theresolver and record the reply. Then we craft an ICMP fragmentneeded packet wrapping the DNS query we received to signal thatthe PMTU is lowered. Before we send it, we deliberately change thesource port of the embedded UDP packet to a dierent random valueto check whether the resolver will blindly accept ICMP packetswithout checking the port number. After sending that forged packet,we send another PING and check if the ICMP is accepted. If the
 
---- page 16 ---
+--- page 14 ---
 
 PING reply is not fragmented, we consider the resolver rejects theICMP error and thus meets
 
@@ -278,7 +266,7 @@ Public Resolvers.We also highlight the results of a few well-known public DNS se
 ?D1)when they pass all other tests, since it is likely their public serversare well-maintained and using a newer Linux kernel.
 6 PRACTICAL CONCERNSIn this section, we will describe a few practical considerations whichwill inuence the success and reliability of the attack.
 
---- page 17 ---
+--- page 15 ---
 
 Table 2: Vulnerable Status of Public ResolversNameFrontend IPIPv4 BackendIPv6 BackendT1T2T3T4VulnerableT1T2T3T4VulnerableGoogle8.8.8.8377373?737Cloudare1.1.1.13333+
 ?A8E37337OpenDNS208.67.222.2223?33%
@@ -291,7 +279,7 @@ Table 2: Vulnerable Status of Public ResolversNameFrontend IPIPv4 BackendIPv6 Ba
 6.2 Multiple Name Servers & Backend Servers
 Multiple name servers.It is also quite common for domains tohave multiple name servers. Resolvers may choose to query thesename servers in a round-robin fashion (where the order is ran-domized). In fact, this is considered a defense against DNS cachepoisoning attacks [45]. However, this defense has little impact onour attacks for the following reasons.For resolvers with private-facing ephemeral ports, we can in-fer the ports specic to dierent name servers simultaneouslyby running multiple scanning instances. Since it is unlikely thename servers' IPs will share the same hash bucket given that mostsecond-level domains (e.g.,acm.org) only have three or fewer nameservers [45], the side channels can be independently leveragedwithout self-interference.For resolvers with public-facing ports, the attacker can just scanthe port as if there was only one name server since the kerneldoes not check the destination IP address wrapped in the ICMPprobe. The only dierence lies in the TxID brute-forcing, wherethe attacker would inject multiple groups of 65,536 fake responsepackets, where each group uses a spoofed IP of a dierent nameserver. Due to the low number of name servers typically congured,this additional load of packets is not really a fundamental hurdle.In addition to the above, there is an optional step called nameserver pinning [45] that can further improve the success rate whenmultiple name servers are encountered. In addition to previouslyproposed techniques [45], we propose two new methods againbased on ICMP messages,i.e.,either host/port unreachable or redi-rect. In the case of BIND resolvers, every time when a query isinitiated, we can immediately ood 65,536 (representing the worstcases. BIND uses only 23,232 ports by default) ICMP host/port un-reachable messages containing all possible ephemeral ports witha specic name server's IP as the destination IP address in theembedded IP header. This will cause BIND to give up a particularname server in the duration of a query session (up to 10 seconds bydefault [45]). This is because the OS will pass the host/port unreach-able messages to BIND, which will make the subsequent decision toforgo the name server (one of the 65536 guessed ports will matchthe ephemeral port). Alternatively, we can apply targeted name
 
---- page 18 ---
+--- page 16 ---
 
 server muting as mentioned in Ÿ6.1 and targeted ICMP redirect toachieve a similar eect.In the case of Unbound, ICMP redirect can be used as describedabove to mute specic name servers. This is because Unbound hasspecial logic to blacklist name servers that are non-responsiverepeatedly [45]. Therefore, the ICMP redirect will have a prolongedpinning eect beyond a single query session.
 Multiple backend servers.Finally, large DNS resolvers tend tohave multiple backend servers behind a single frontend IP  usuallyan anycast one,e.g.,8.8.8.8. These backend servers are the actualworkers that talk to the name servers and they are the ones thatmaintain DNS caches. Therefore the backend servers should bethe actual attack target. An attacker can map out the IPs of thebackend servers by setting up an attacker-controlled name serverand issuing a query of the attacker-controlled domain. This willcreate an additional challenge to the attacker, as a particular querymay get routed to a randomly selected backend IP not known to theattacker. This will mean that the attacker needs to target<
@@ -304,7 +292,7 @@ Packet Losses.Although unlikely, if the probing ICMP containingthe correct ephem
 Packet Reordering.Reordering can cause false negatives on public-facing port scans and both false positives and false negatives onprivate-facing port scans. Specically, if the verication packetaccidentally arrives before the ICMP probe containing the correctephemeral port, it will fail to detect the exception cache changeand lead to false negatives. Furthermore, if the private-facing portis being scanned, such a false negative would mislead the attackerinto continuing the scan despite the fact that one of the plantedexceptions has already been evicted. This is guaranteed to leadto a false positive in the scanning of the next batch of ports, asthe eviction will be detected by the next verication packet. Tomitigate such problems, a small time gap can be inserted betweenthe probing and the verication packets. To mitigate the risk offalse positives and ooding the resolver with too many packets,we always double-check whether a detected port is a true positivebefore deciding to brute force the TxID.
 7 EVALUATIONTo evaluate the eciency of our attacks without causing real-worlddamage, we tested the attack in a controlled environment withdierent server congurations and simulated network conditions.Overall, our attacks can succeed in minutes and have a near-perfectsuccess rate. Note that inferring private-facing ephemeral ports
 
---- page 19 ---
+--- page 17 ---
 
 requires inferring the colliding IPs as described in Ÿ4.6. However,since it is only a one-time eort for each resolver, the time used forthe attack does not include the time for inferring colliding IPs.
 7.1 Resolver Attack
@@ -312,7 +300,7 @@ Attack setup.In this attack, we evaluate the power of the fragmentneeded attack 
 Results.Overall, we nd our attacks can succeed on average in 1.3to 15.6 minutes, depending on the setup. Note that we consider a testTable 3: Resolver Attack ResultsExp.Pkt.LossRTTrange/msNSMuteLevel#ofNSBatchSize(N)Bg.NoiseAvg.Time/sSucc.RateBase0%0.3-1.2100%1108020/20Loss0.20%0.3-1.2100%1108320/20RTT0%37-43100%11014920/20ML0%0.3-1.250%1107135/6NS0%0.3-1.2100%31034720/20Batch0%0.3-1.2100%1102404965/5Real0.20%37-4380%21041020/20Real10.20%37-4380%2181065910/10Real20.20%37-4380%21810+1093310/10failed if it still does not succeed after an hour. In both baseline (0B4)and packet loss (!>BB) experiments, the attack succeeds in around80s, indicating the minimal impact of moderate packet losses. This isexpected as discussed in Ÿ6.4. In the'))experiments, we found thedelay and jitter do aect our attack. Under such unstable networks,the attack may experience false positives as the verication packetmay be received before the probe. Fortunately, our attack can stillsucceed because we have inserted time gaps to minimize reordering(see Ÿ6.4).For name server muting levels, we nd they do have a signicantimpact on our attack but are much smaller compared to the impacton SADDNS [45]. Under the same muting level (50%), our attack("!) is 10x faster than SADDNS. This should be attributed to thesubstantially faster scan speed and the fact that we do not needto perform iterative probes to narrow down the search space. Asa result, this allows our attack to fare better under smaller attackwindows. Experiment0C2further conrms this. With N=1024,the average success time increased by ve times compared to thebaseline where N=1. Note in"!, there is one attack attempt thatfailed (after an hour) likely due to a link-layer issue that we areunable to reproduce.We also notice it would take ~4x the amount of time to poison adomain with 3 name servers (#(). This is due to the limit of 7k ppspacket sending rate, which forces us to scan for each name serverat 1/3 of the total rate. However, if an attacker scans with 3 timesthe bandwidth, the result would have been close to the baseline.In the real world scenario experiments ('40;), we succeededin 410s on average, which is 2x the speed of SADDNS with thesame setting, despite the fact that our test is against BIND whichis known to have a much smaller attack window (about only 2s asexperienced in our experiments) than Unbound (more than 30s as
 reported in SADDNS [45]).Finally, for the background query trac experiment'40;1, wefound random domain queries do not signicantly impact the attackperformance. As expected, we do not nd our scan being confusedby the additional open ephemeral ports because they are all privateports and not visible to the name server which hosts the targetdomain name (see Ÿ6.4). Instead, we nd that the increase of time-to-succeed is mostly attributed to the machine being slowed downin processing these query packets. Compared to'40;1,'40;2expe-rienced worse results because the additional 10 queries per secondcan generate ephemeral ports that are visible to the target nameserver, therefore creating confusion to our scan. Looking into the
 
---- page 20 ---
+--- page 18 ---
 
 detailed logs, we see that'40;2experiences 22 failed TxID bruteforce attempts on average whereas'40;1experiences only 11. Themajority of the additional failed brute force attempts are due to thefailure in inferring the correct port number.In general, we make two additional general observations on theresults. First, the overall attack time is spent predominantly onrepeated port scans (starting from the smallest port to the largest),accounting for 96% to 98% of the time. The remaining time is spenton brute-forcing the TxIDs. Second, the time-to-succeed variessignicantly depending on how close the correct port is to thebeginning of the port scan. In many cases, we see the time-to-succeed being a few seconds, whereas in the worse case (especiallywhen noise is introduced), it can take 30 minutes to nd the portand succeed in brute-forcing the TxIDs.
 7.2 Other Attacks
@@ -330,7 +318,7 @@ Preparation of the attack.Compared to SADDNS, our attackrequires an additional s
 DNSSECadds the data origin authentication and data integrity toDNS [52] and therefore by design prevents any attacker withoutholding the correct key to inject any records. However, only 1.85%of Alexa Top 10k websites enable the DNSSEC, and only 12% ofopen resolvers actually validate the record integrity if provided [18].During our experiment, we found famous websites like Google,Facebook, and Twitter do not even have DS records on the parentzone, which is a necessary record for DNSSEC to function.
 0x20 Encodingis proposed to randomize the upper and lowercase of the letters in the domain name (of both the query andresponse), thus introducing additional entropy beyond the TxIDand ephemeral port [57]. The amount of entropy increases as thelength of the domain name increases. Unfortunately, it is found
 
---- page 21 ---
+--- page 19 ---
 
 recently [45] that the 0x20 encoding has compatibility issues (sinceit requires support from the name server) and 12 out of 14 popularpublic DNS resolvers tested do not use it (which we also conrm toremain true at the time of writing). Famous resolvers like 8.8.8.8only enable 0x20 encoding for whitelisted domains.
 DNS Cookieis yet another secret exchanged between a resolverand name server, designed to defeat any form of o-path responseinjection [3]. Similar to DNSSEC, DNS cookie requires support fromboth the resolver and name server to work properly. However, only5% of open resolvers enable this by default and some may evenreject queries with DNS cookie, as reported in recent studies [21,45], indicating compatibility is still a serious concern. Moreover,DNS cookie is only a solution during the transitioning period intoDNSSEC (as it is strictly weaker than DNSSEC), which can beanother reason why it is not being widely deployed.
@@ -345,7 +333,7 @@ DNS Cache Poisoning AttacksThe o-path DNS cache poison-ing attack was rst popula
 Side Channel AttacksSide channels have been leveraged in net-work attacks [7,39,43,50]. Specically, [23] leverages IPID globalcounter to probe open ports. [49] utilizes the stateful rewall toinfer the TCP sequence number. [14] uses global challenge ACKcounter to infer the TCP sequence number and hijack the TCP con-nection o-path. Besides, Caoet al.presents an automated tool fornding side channels in the TCP stack using model checking andfound several other side channels inside the Linux TCP stack [16].10 CONCLUSIONThis paper presents novel side channels during the process of han-dling ICMP errors, a previously overlooked attack surface. We ndthat side channels can be exploited to perform high-speed o-pathUDP ephemeral port scans. By leveraging this, the attacker couldeectively poison the cache of a DNS server in minutes. We showthat side channels aect many open resolvers and thus have seriousimpacts. Finally, we present mitigations against the discovered sidechannels.
 ACKNOWLEDGMENTSWe wish to thank the anonymous reviewers for their valuable com-ments and suggestions. This work was supported by the NationalScience Foundation under Grant No. 1652954.
 
---- page 22 ---
+--- page 20 ---
 
 REFERENCES
 [1] [n.d.]. SADDNS website. https://www.saddns.net/.
@@ -419,7 +407,7 @@ IEEE/ACM Transactions on Networking (TON)
 . IEEE, 347361.
 [50]Zhiyun Qian, Z. Morley Mao, Yinglian Xie, and Fang Yu. 2010. Investigation ofTriangular Spamming: A Stealthy and Ecient Spamming Technique. In2010 IEEESymposium on Security and Privacy. 207222. https://doi.org/10.1109/SP.2010.42[51]Alan Quach, Zhongjie Wang, and Zhiyun Qian. 2017. Investigation of the 2016Linux TCP Stack Vulnerability at Scale.SIGMETRICS Perform. Eval. Rev.(2017).[52]M. Larson D. Massey R. Arends, R. Austein and S. Rose. 2005.RFC 4035: ProtocolModications for the DNS Security Extensions. Technical Report. https://tools.ietf.org/html/rfc4035
 
---- page 23 ---
+--- page 21 ---
 
 [53]Riccardo Ravaioli, Guillaume Urvoy-Keller, and Chadi Barakat. 2015. Character-izing ICMP rate limitation on routers. In2015 IEEE International Conference onCommunications (ICC)
 . 60436049. https://doi.org/10.1109/ICC.2015.7249285

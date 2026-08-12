@@ -5,9 +5,9 @@ resource: "https://doi.org/10.1145/3658644.3690361"
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T08:57:48+00:00"
+  at: "2026-08-12T15:52:08+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://doi.org/10.1145/3658644.3690361"
@@ -27,7 +27,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:144"
 commit: ""
-content_sha256: 838e39b28678656f609595be236cb12edba411054f1ecb300aa9f7a353bd3c2a
+content_sha256: 4be10c9158c0dcae01eb090b504dce0213a8a40811b024aec300f2a503526fa0
 depth: full
 depth_reason: default
 kind: article
@@ -40,7 +40,7 @@ publisher_english: ""
 raw_sha256: b674794b413376bfd17af6bfbd568ef845c966a1ef810aefb278dde0a6b16cd4
 retrieved_from: "https://doi.org/10.1145/3658644.3690361"
 retrieved_kind: manual-import
-retrieved_utc: "2026-08-09T08:57:48+00:00"
+retrieved_utc: "2026-08-12T15:52:08+00:00"
 slug: internet-s-invisible-enemy-detecting-measuring-web-cache-poisoning-wild
 snapshot: ""
 title_english: ""
@@ -54,7 +54,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://doi.org/10.1145/3658644.3690361>
-- Preserved from: https://doi.org/10.1145/3658644.3690361 (manual-import) on 2026-08-09
+- Preserved from: https://doi.org/10.1145/3658644.3690361 (manual-import) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -121,16 +121,6 @@ ACM ISBN 979-8-4007-0636-3/24/10
 https://doi.org/10.1145/3658644.3690361
 ACM Reference Format:Yuejia Liang, Jianjun Chen, Run Guo, Kaiwen Shen, Hui Jiang, Man Hou,Yue Yu, and Haixin Duan. 2024. Internet's Invisible Enemy: Detecting andMeasuring Web Cache Poisoning in the Wild. InProceedings of the 2024ACM SIGSAC Conference on Computer and Communications Security (CCS'24), October 1418, 2024, Salt Lake City, UT, USA.ACM, New York, NY, USA,15 pages. https://doi.org/10.1145/3658644.3690361
 1 INTRODUCTIONTo prevent unnecessary Internet trac and enhance data transmis-sion eciency, web caching facilities are extensively used. Theystore frequently requested data resources, reducing the need forrepeated data transfers. Given web cache's advantages, it has be-come a critical infrastructure component of the Internet. How-ever, when compromised by malicious actors, web caching facilitiespose signicant risks to the Internet. Research indicates that issueswith web caching can lead various security consequences, such asDenial-of-Service (DoS), Cross-site scripting (XSS), and informationleakage [4, 16, 17, 19, 28].Attacks against web cache typically fall into two categories, theweb cache deception (WCD)and theweb cache poisoning (WCP)[24,25]. WCD aim to deceive the cache into making condential in-formation publicly available online, whereas WCP involve poi-soning the cache with harmful payloads that are then distributedto unsuspecting users. In recent years, Mirheidar et al. [24,25]studied the severity of WCD by measuring Alexa Top websites,demonstrating the widespread threats on the Internet. However,due to the complexity, WCP have been studied in a case-by-caseform [4,16,17,19,24,28], focusing on revealing the specic vul-nerabilities while lacking a global Internet view of the severity. Asthe WCP poses a severe threat to the Internet, it is urgent to detectand prevent the vulnerabilities ahead of the attacker on the globalscale.In this paper, we aim to ll this gap by performing a system-atic detection of WCP vulnerabilities at scale. To achieve this goal,
-
---- page 2 ---
-
-#‚ûÃª¾D´æZÂ>Æˆ0ÙªÈ£nýˆ6o’­ÙŠ²Îcú@ˆŠšq]¥ghVŸ¨ŠU~²êdjââÔÝ†ìêª­½…Ü=Ù°CÙ
-
---- page 3 ---
-
-3õK‡mØy}"C3§éýô!Åä!ßñwUßÓXéAz*&Ñ¼h7¯µ È #<!‹XLò6ð7‘2Dò[8—Ëâ¬2½?bEA•H!£UB†Mö»Ú[¨@�s>³¯dA5_Î«bTí£ŽÓL½tÞè,¬‚kTÖÅh÷+ªc0[Ä‚ªuR°+°€’fS2rŠÖ“W®¶´–ŠFQ~Q±HìëO“[É§ClY0âÕEùp¼T'£ö£Eî¾í4Þ=‹$©Ê‡ŒÚÀ
-ãêôso‹®‘ìýgÄcD&8&—ë÷ÎÈOÍ«•hÒš˜®NªÊ‚ÀIOÓz„²Ë*´
-éù³^ÄÊ±›YÎÐÃÇL�©g-!¢µŸÕÂfý‡A	ÍG¼„¶e`ng�òÿWkåÄ”Ó³H¤Ï9³£!TYÎ¤ë”'Ôeän×á?_;$ÁYªKËÀðªòðƒ£F7!Àf�ê†²¶n^ó�>¦GÊ¤„ùw8éF%#ì`ˆÄ!�VòGªbÏ©æ›Ç ‰hÀ¾ ‹©áOu„èAÆZ¼÷4QÖ’@Uoà-Ÿ~ïM”TÃÉ˜æ?¡ºaÏ¥÷«‡ÕØ¾“Ó/Àë/š^´+X¾Dê`]¾¶ÌR‚¸°"*ù¹9
 
 --- page 4 ---
 

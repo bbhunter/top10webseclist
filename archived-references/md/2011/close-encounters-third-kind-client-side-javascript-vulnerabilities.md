@@ -2,18 +2,16 @@
 type: Article
 title: "Close Encounters of the Third Kind: Client-Side JavaScript Vulnerabilities"
 resource: "https://tinyurl.com/5w6koqj"
-tags: [article, webseclist-reference]
+tags: [article, webseclist-reference, ibm-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T13:16:22+00:00"
+  at: "2026-08-12T15:48:41+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://tinyurl.com/5w6koqj"
     title: "Close Encounters of the Third Kind: Client-Side JavaScript Vulnerabilities"
-  - id: capture
-    resource: "https://web.archive.org/web/20131102092751/https://tinyurl.com/5w6koqj"
 also_at:
   - "http://public.dhe.ibm.com/common/ssi/ecm/en/raw14252usen/RAW14252USEN.PDF"
 authors: []
@@ -21,7 +19,7 @@ canonical_url: ""
 cited_by:
   - "2011.md:21"
 commit: ""
-content_sha256: a56d8072be602ab2c9415f449a65a5e8a473ebbe68d294ce85e315f4a90bd559
+content_sha256: a85e75e2cb0a04c2af0e34590e5f6fa9ff985c7f30685828222e0f203ea9474c
 depth: full
 depth_reason: default
 kind: article
@@ -29,14 +27,14 @@ language: ""
 licence: unknown
 original_url: "https://tinyurl.com/5w6koqj"
 published: ""
-publisher: ""
+publisher: ibm.com
 publisher_english: ""
 raw_sha256: 5a7f8e7de05cb2901c3a03cd050a97becb5a900d134fa8f6f3d4cdc67e37aae4
-retrieved_from: "http://public.dhe.ibm.com/common/ssi/ecm/en/raw14252usen/RAW14252USEN.PDF"
-retrieved_kind: stored
-retrieved_utc: "2026-08-09T13:16:22+00:00"
+retrieved_from: "https://tinyurl.com/5w6koqj"
+retrieved_kind: manual-import
+retrieved_utc: "2026-08-12T15:48:41+00:00"
 slug: close-encounters-third-kind-client-side-javascript-vulnerabilities
-snapshot: 20131102092751
+snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
@@ -44,13 +42,12 @@ translation_of: ""
 
 # Close Encounters of the Third Kind: Client-Side JavaScript Vulnerabilities
 
-**Close Encounters of the Third Kind: Client-Side JavaScript Vulnerabilities** - Author not stated, Publisher not stated.
+**Close Encounters of the Third Kind: Client-Side JavaScript Vulnerabilities** - Author not stated, ibm.com.
 
 - Published: date not stated
 - Original: <https://tinyurl.com/5w6koqj>
 - Also published at: <http://public.dhe.ibm.com/common/ssi/ecm/en/raw14252usen/RAW14252USEN.PDF>
-- Preserved from: http://public.dhe.ibm.com/common/ssi/ecm/en/raw14252usen/RAW14252USEN.PDF (stored) on 2026-08-09
-- Capture timestamp: 20131102092751
+- Preserved from: https://tinyurl.com/5w6koqj (manual-import) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -93,11 +90,14 @@ Hacking Incident Database1or the WASC Statistics2
 
 projects have tried
 to estimate the incidence of such issues in the real world. On the other
-hand, there is a dearth of information and statistics on the incidence of
-client-side JavaScript’ vulnerabilities in web applications, even though
+hand, there is a dearth of information and statistics on the incidence o
+f
+client-side JavaScript’ vulnerabilities in web applications, even tho
+ugh
 these vulnerabilities are just as severe as their server-side counterparts.
 We suspect that the main reason for this lack of information is that
-client-side vulnerabilities are harder to locate, and require deep knowl-
+client-side vulnerabilities are harder to locate, and require deep knowl
+-
 edge of JavaScript and the ability to perform code review for HTML
 pages and JavaScript “les.
 As Web 2.0, AJAX applications and rich internet applications (RIAs)
@@ -113,7 +113,8 @@ Rational¨
 application security group into the prevalence
 of client-side JavaScript vulnerabilities. For this research, we used a
 new IBM technology called JavaScript Security Analyzer (JSA), which
-performs static taint analysis on JavaScript code that was collected from
+performs static taint analysis on JavaScript code that was collected fro
+m
 web pages extracted by an automated deep web crawl process. This
 kind of analysis is superior to and more accurate than regular static
 taint analysis of JavaScript code, as it includes the entire JavaScript
@@ -345,17 +346,15 @@ JavaScript vulnerability is one in 55.
 
 --- page 10 ---
 
-6IBM SoftwareTechnical White PaperRationalIn order to validate each of the issues found, and to avoid false positive results, we used the trace information provided by J
+6IBM SoftwareTechnical White PaperRationalIn order to validate each of the issues found, and to avoid false positi
+ve results, we used the trace information provided by J
 SA,
-and manually veri“ed each vulnerability. Below (Figure 4) you can see an example of such JavaScript trace information of a real
+and manually veri“ed each vulnerability. Below (Figure 4) you can see an example of such JavaScript trace inf
+ormation of a real
 vulnerability found during our research:Figure 4:JavaScript taint analysis trace informationThe example above is quite common. As can be seen, hacker-controlled data is “rst used in line #42, through the usage of the
-document.URL object, and is later used in the HTML code in line #1504. The various steps of the malicious data ”ow can also
+document.URL object, and is later used in the HTML code in line #1504. T
+he various steps of the malicious data ”ow can also
 be observed.
-
---- page 11 ---
-
-Ü?Ëñ@×Pµ´íê»³BâŒ€¼ŒV¿äÓ-Ï¢íÌµÇg„ññóïÒÂ2ÁcŸÅ±ù3å±iaf4…®™#MaªôŠG!™—÷½ÊŽ¸þG·8¥-ø¦–ø÷IÀEtø²_ÐZ·ûãþ?®jÐ¯h©ÿ²‡üSæq÷²�:ìÀ7ÃðSñÊÀ7-ù÷lÊUQ#ªaiæ_0ë:W—à¿ÔÇ—d¼Šäßê6ík1yí_ÓôQÝe�ï#lTù#F[¸n½õ¿Ã—ÆÐ¤“ÎëïP²ó˜O—µY×Ì&è&ªºXÖÌúV�%‚ v«bIZüCm°Czß™üûYÎ27Ò#ðS½
-óQµó/è±æó„öoq4Ò­°’ÒDpªÆKt�eh¥j8×¾Kbû†;_Ÿ/Çãt'“áóåü²ÜùÕïa¶¹‘-4ôŠÇ›ÃPýaãNRrê¥Pxåzy™Gˆùý’!rF¤@òû�Q¿¿ó5…Ö¹åÇÖ.eÕõ
 
 --- page 12 ---
 
@@ -480,11 +479,13 @@ that IBM intends to make them available in all countries in which
 IBM operates. The information contained in this documentation is
 provided for informational purposes only. While efforts were made to
 verify the completeness and accuracy of the information contained in
-this documentation, it is provided �as isŽ without warranty of any kind,
+this documentation, it is provided �as isŽ without warranty of any
+ kind,
 express or implied. In addition, this information is based on IBM�s
 current product plans and strategy, which are subject to change by
 IBM without notice. IBM shall not be responsible for any damages
-arising out of the use of, or otherwise related to, this documentation or
+arising out of the use of, or otherwise related to, this documentation o
+r
 any other documentation. Nothing contained in this documentation is
 intended to, nor shall have the effect of, creating any warranties or
 representations from IBM (or its suppliers or licensors), or altering the

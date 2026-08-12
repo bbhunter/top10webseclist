@@ -5,9 +5,9 @@ resource: "https://people.engr.tamu.edu/guofei/paper/WARDroid_SP18.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:36:46+00:00"
+  at: "2026-08-12T16:01:50+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://people.engr.tamu.edu/guofei/paper/WARDroid_SP18.pdf"
@@ -21,7 +21,7 @@ canonical_url: ""
 cited_by:
   - "2018.md:75"
 commit: ""
-content_sha256: 90413c5637108ebd798388c6ccbd32ec41da22a1eb710bcd03fa1c0711588aac
+content_sha256: 6c61d58ce98bdc64e51c716e642868c3d615e3590174b5c21aa69ee48eb2f869
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -34,7 +34,7 @@ publisher_english: ""
 raw_sha256: ba643f31e9a19684aea435ce391705c9182d3df69eb1121d640659e9a3906e42
 retrieved_from: "https://people.engr.tamu.edu/guofei/paper/WARDroid_SP18.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:36:46+00:00"
+retrieved_utc: "2026-08-12T16:01:50+00:00"
 slug: mobile-application-web-api-reconnaissance-web-mobile-vulnerabilities
 snapshot: ""
 title_english: ""
@@ -48,7 +48,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://people.engr.tamu.edu/guofei/paper/WARDroid_SP18.pdf>
-- Preserved from: https://people.engr.tamu.edu/guofei/paper/WARDroid_SP18.pdf (stored) on 2026-08-11
+- Preserved from: https://people.engr.tamu.edu/guofei/paper/WARDroid_SP18.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -804,17 +804,6 @@ HTTP TemplatesStatic AnalysisProgram SlicingAPKPathConstraintsConstantsHeaderBod
 
 --- page 10 ---
 
-		 $'+.1468:<=====<;;::;=@EKS]ivw/Tq`PB5*!	"&*.26:=@CFHJKLLKKJIHGGHIKOTeo||1VsbSE8,#
-	"'+059>CGKORUVXXYYYXYWWVUUVWZ_fnxƒ�2XvfVH;0'
-	
-"',16;AFLQVX[]]^_^_a^^b`_a`bdegkqx�‹‡4Zzj[M@5+$
-
-"',16<BHNU[]ac`T>, 
-
- =9D[gmmnux}ƒ‹”�6]o`SF;1$!!#&*.27<BIPW^acV'G‚�°ª>f“†xl`ULD<72.+
-
---- page 11 ---
-
 web-related code paths and constraints in apps that lead to
 network APIs that generate HTTP(S) messages. We therefore
 model the web API's server-side validation logic using the
@@ -933,7 +922,7 @@ A typical app also contains functionality that generates web
 requests to entities other than a web API endpoints of interest.
 For example, most ad libraries or analytics libraries have func-
 
---- page 12 ---
+--- page 11 ---
 
 tionality to communicate with backend servers, often through a
 web API. These are outside the scope of our investigation, and
@@ -1085,7 +1074,7 @@ authentication key with each request. This key is usually hard-
 coded in the source code. First, we use simple string searching
 heuristics to look for strings that resemble 64-bit encoded hash
 
---- page 13 ---
+--- page 12 ---
 
 keys. However, the keys are not always retrievable through
 such simple heuristics. To efciently identify the constants,
@@ -1258,7 +1247,7 @@ cross any ethical boundary. We used test and demo accounts
 where possible, and we ensured that no private data was ever
 saved from any successful exploit. In one case study, we
 
---- page 14 ---
+--- page 13 ---
 
 worked with the app developer and obtained full permission
 to test their API.
@@ -1381,7 +1370,7 @@ be used to purchase goods from different online and ofine
 stores. We worked with this particular developer to perform
 additional tests with their permission. We provide details of
 
---- page 15 ---
+--- page 14 ---
 
 some of these case studies below, but cannot disclose the full
 details for ethical reasons. Table III provides a summary of
@@ -1489,7 +1478,7 @@ In this work, we focus on validation inconsistencies that
 enable a number of attacks to the mobile app server back-
 end. Below are some of the specic attack case studies we
 
---- page 16 ---
+--- page 15 ---
 
 uncovered on apps that we tested. These are merely sample
 attacks of a wider array of possible attacks that are possible
@@ -1632,7 +1621,7 @@ straints. This is a popular tness app that had over 10 million
 downloads at the time of testing. The server did not apply the
 same validation as the app and allowed us to update a password
 
---- page 17 ---
+--- page 16 ---
 
 to a longer string. This caused the account to get locked out
 of the app. While this attack may have no effect and may not
@@ -1767,7 +1756,7 @@ previous works on the web platform such as NoTamper [3] and
 Waptec [7] that pursue similar goals in the context of browser-
 based web applications. In this work, we directly tackle an
 
---- page 18 ---
+--- page 17 ---
 
 important issue that emerges from the amalgamation of the
 web and mobile platforms.
@@ -1898,7 +1887,7 @@ CKNOWLEDGMENT
 This material is based upon work supported in part by the
 National Science Foundation (NSF) under Grant no. 1314823
 
---- page 19 ---
+--- page 18 ---
 
 and 1700544. Any opinions, ndings, and conclusions or
 recommendations expressed in this material are those of the
@@ -2097,11 +2086,6 @@ INFOCOM,
 2013 Proceedings IEEE
 . IEEE, 2013, pp. 809–817.
 
---- page 20 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
-
---- page 21 ---
+--- page 19 ---
 
 >¹—ã…ðØ™ËããE;×„˜Œ¦SNñc'NTušô±¤„¼Dî÷Ä@ePÁåªv:

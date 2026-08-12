@@ -5,9 +5,9 @@ resource: "https://i.blackhat.com/BH-US-23/Presentations/US-23-Tervoort-Three-Ne
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:40:24+00:00"
+  at: "2026-08-12T16:02:14+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://i.blackhat.com/BH-US-23/Presentations/US-23-Tervoort-Three-New-Attacks-Against-JSON-Web-Tokens-whitepaper.pdf"
@@ -20,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:34"
 commit: ""
-content_sha256: 4b8effc281a91265e49b7cefbe457cb120a21ddc9606022f5597c1f5c5307233
+content_sha256: a6b918cb0e1e83f4ce98aac4836a07aea84d8404ba345f41e84549b7a3966f7f
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: 6edba9d7333c149a44f2a553533b8b6aef6c327a043cc3daecdc8ee718567201
 retrieved_from: "https://i.blackhat.com/BH-US-23/Presentations/US-23-Tervoort-Three-New-Attacks-Against-JSON-Web-Tokens-whitepaper.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:40:24+00:00"
+retrieved_utc: "2026-08-12T16:02:14+00:00"
 slug: three-new-attacks-against-json-web-tokens
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-US-23/Presentations/US-23-Tervoort-Three-New-Attacks-Against-JSON-Web-Tokens-whitepaper.pdf>
-- Preserved from: https://i.blackhat.com/BH-US-23/Presentations/US-23-Tervoort-Three-New-Attacks-Against-JSON-Web-Tokens-whitepaper.pdf (stored) on 2026-08-11
+- Preserved from: https://i.blackhat.com/BH-US-23/Presentations/US-23-Tervoort-Three-New-Attacks-Against-JSON-Web-Tokens-whitepaper.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -294,16 +294,3 @@ Specify security recommendations that help implementers avoid the types of vulne
 Restrict the subset of JWE/JWS algorithms and features that are appropriate for use inJWTs. For example: specify that public-key encryption (without signing) or password-basedencryption should not be used to protect JWT claims.
 Discourage the use of untrustedalgheader values for deciding a cryptographic validationalgorithm.
 12
-
---- page 13 ---
-
-DÑ­²Ïc0 ƒ“½€·eì†:hP—@‹ÐDS´YôBÏcÂ`7t£Áº‘^- Þm9…{ëÕ»HÕª’ïè[_ìðBò}¸C/´ŠùyÑÓÂÛ›â¦Ÿèï�XÆAÃG¨´Lÿ†ÜÞ"[—î¥Êô§¢4ö³ÊbUýh¯Å+Z†n¡.“ë[Tµý&ï}Bf@XŸoèl�¢ Æ
-
---- page 14 ---
-
-^£ñ÷è�yË"I1ÕW²bŽÑ¡§s…Îbˆìõ×¯·ÕîþX|‡ã-åR	ï¼ì�`y.RÕ¿®È¸m;ß�ï£�þÖI± íïÌ	™×Yã[¥ŸâØ%"&j41éGXFhX–ëïš@œK[W±¥æéM¢35œã‚_‹OwR—ê<Fß°Ft/tOÐ$C-ÌÃÿæÌ€LîÉþÿX<’7£÷´^¼§Df8ˆY;ï;í8ùÝ<Ëú_PÚ7‹DDÁŸ†û ‘2Ž+4,{=0°�ÿI‡î×ªÕ„<{ž!ØÊ9ýE<iä¾í½…Ý^D7&#¾ÙÈ‡g~{Øå„ÃgÈ›­º–ö¯ËŽ„,S*ò9xªˆB"	j³b³ª„`q•öhv+9ä³©;ÙÎ¯TtjÖûB‰ìW~{û´š7nd­|éÊÃò w¿²Ëh¨
-ü²˜ô@9÷7*�Ÿcâÿý•«+”ÅUËt?¶ç{‡â ®öà’…õ$KÙ0Yö*ë·jî8ò¡Ó*ê›¨“ñz¹¨µ‚¬“Z`cŠ{ßùÓ6™f8±’‰nöÛ›hÎç:%*WÉ¯Ï�Å�Þ4úw€I:qçÁµ�Â*jÚ†J"B·ÞOG½—¼Ü©] šiÏÍD¼7IpšHÒ7Ÿ/‰XUnˆW*~N�
-
---- page 15 ---
-
-·Àç]c*Ò?ú#ÚŒ@ØÓïÊ32Ï×B»¬ïÓW¥vÏ5ä€úªøÂ?äÅ	r9Gcf5†·­6Nq±^šÞPtb ¸Ù{1DùÌC’ººq#¥!V•p”I³é8S¤N7—Úþ¤c@‚ü#ÿ~P:�cC$¾c.ÝÚE¨ÿ¯sˆo1�TüÔš,„ŸÍ*|—�?Xé7>}û®ß…Üm°‡,A×+Ó¹dÌç`ÑÏ£îëwëÃïF[ßƒhìÏÓ¾™ˆçÏ�ý9ÃL:Ú ‡çVÛQ�¬îcpà“Üaà[û¥VÂtŽèk

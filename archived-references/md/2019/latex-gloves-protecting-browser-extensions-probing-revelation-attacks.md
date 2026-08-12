@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:44:07+00:00"
+  at: "2026-08-12T16:01:59+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:77"
 commit: ""
-content_sha256: f54cd205f120d35fdd147c3dc0e4bdf5750041cb2d46d9f00cd407722cf8235a
+content_sha256: f45eeaac09650218f1a265d299f78c1f019d1fe4908b70daea0030373f13cec4
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: 5e7002617ec4bfb705405757e0712a795e23a0c54ce36d1f29cfeda569a091b9
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:44:07+00:00"
+retrieved_utc: "2026-08-12T16:01:59+00:00"
 slug: latex-gloves-protecting-browser-extensions-probing-revelation-attacks
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf (stored) on 2026-08-11
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-5_Sjosten_paper.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -340,23 +340,9 @@ http://domain.comWeb Page Title!Item 1!Item 2!Item 3!Item 4!Item 5Lorem ipsum do
 
 --- page 4 ---
 
-@¸ÿÀ´U¸ÿÀ@U@.A!$2@U¸ÿô´ U¸ÿô´U¸ÿô@
-U¸ÿö@QUUU U*U
-UUUU’22?2+U+U+U¸ÿþ@%U UUUUU…1ô+++++++í++]ä+++++++++9ý++++22/]?í?í3/++?í99?10]%!"&'5332676655#"467663273&&#"326CþþþôY©R
-.Èd`~##U›xÈëQFAºaƒI°¼K�@›²„™R¥þäþöÀ5.
-
---- page 5 ---
-
 http://domain.comWeb Page Title!Item 1!Item 2!Item 3!Item 4!Item 5Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.In enim justo, ttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.OKCancel1extensionidWAR23
 
---- page 6 ---
-
-@¸ÿÀ´U¸ÿÀ@U@.A!$2@U¸ÿô´ U¸ÿô´U¸ÿô@
-U¸ÿö@QUUU U*U
-UUUU’22?2+U+U+U¸ÿþ@%U UUUUU…1ô+++++++í++]ä+++++++++9ý++++22/]?í?í3/++?í99?10]%!"&'5332676655#"467663273&&#"326CþþþôY©R
-.Èd`~##U›xÈëQFAºaƒI°¼K�@›²„™R¥þäþöÀ5.
-
---- page 7 ---
+--- page 5 ---
 
 reveal themselves on actual pages.
 
@@ -498,7 +484,7 @@ environment without conicting with the web page or any other
 content scripts, they have access to the same DOM structure
 3
 
---- page 8 ---
+--- page 6 ---
 
 f
 "manifest_version": 2,
@@ -674,7 +660,7 @@ Probing for an extension in itself does not mean an attack
 is taking place. It is not an attack if, e.g., Google probes
 4
 
---- page 9 ---
+--- page 7 ---
 
 TABLE I: Alexa top 10,000 domains probing for Chrome
 extensions. Note that a domain may appear in several rows
@@ -809,7 +795,7 @@ show in Section IV-B, it is not trivial to remove this unique
 ngerprint from the browser.
 5
 
---- page 10 ---
+--- page 8 ---
 
 The developers of Google's Chrome browser have ex-
 pressed interest in implementing a similar randomization
@@ -949,7 +935,7 @@ browser was not restarted, the prole le containing the data
 would not change, giving the new installation the same UUID.
 6
 
---- page 11 ---
+--- page 9 ---
 
 TABLE III: Actions which result in UUID regeneration for
 each of the major operating systems. “Yes” or “No” means that
@@ -1098,7 +1084,7 @@ From the “real” URLs, we derive two extra sets of URLs by
 considering that an attacker can host a copy of a real web page
 7
 
---- page 12 ---
+--- page 10 ---
 
 on a different web host. For instance, the web page at
 http:
@@ -1243,7 +1229,7 @@ Extensions that want to be detectable through their WARs,
 e.g. ChromeCast, would become dysfunctional if probing for
 8
 
---- page 13 ---
+--- page 11 ---
 
 TABLE V: Breakdown of extensions that reveal themselves. The number between brackets indicates the amount of potentially
 affected users, assuming no overlaps. Content-dependentAny content“real” URL “attackerhost” URL “buydns” URL“real” URL “attackerhost” URL “buydns” URLTotalChromium289 (3,227,947) 217 (2,680,324) 2 (110)1,281 (17,301,512) 891 (14,601,057) 4 (1,172)2,684 (37,812,122)
@@ -1346,7 +1332,7 @@ test the effectiveness of our solution. For simplicity, the proof
 of concept is designed to allow a security-aware end user to
 9
 
---- page 14 ---
+--- page 12 ---
 
 (a) Probing defense
 (b) Revelation defense
@@ -1459,7 +1445,7 @@ updated from the Chrome web store.
 Because extensions from the Chrome web store are signed
 10
 
---- page 15 ---
+--- page 13 ---
 
 Fig. 4: Overview of the prototype implementation of our proposed defenses: a modied Chromium browser with the Latex
 Gloves extension and mitmproxy.
@@ -1540,7 +1526,7 @@ It is also crucial for a real-world implementation to not
 have an early-out mechanism, which is what was exploited
 11
 
---- page 16 ---
+--- page 14 ---
 
 in the timing attack presented by S
 ´
@@ -1666,7 +1652,7 @@ to allow all requests to extension WARs, apart from to Avast
 Online Security and AdBlock. Table VII shows the results
 12
 
---- page 17 ---
+--- page 15 ---
 
 TABLE VIII: Breakdown of the amount of Chrome and Firefox
 extensions that would be uniquely identiable through the
@@ -1803,7 +1789,7 @@ Guly
 as et al. [33] combine known ngerprinting techniques
 13
 
---- page 18 ---
+--- page 16 ---
 
 with the Chrome extension enumeration attack presented by
 Sj
@@ -1945,7 +1931,7 @@ detail/ghostery---privacy-ad-blo/mlomiejdfkolichcejclcbmpeaniij, ac-
 cessed Aug-2018.
 14
 
---- page 19 ---
+--- page 17 ---
 
 [7] “Trustworthy Chrome Extensions, by Default,” https://security.
 googleblog.com/2018/10/trustworthy-chrome-extensions-by-
@@ -2130,19 +2116,14 @@ May-2018.
 May-2018.
 15
 
---- page 20 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
-
---- page 21 ---
+--- page 18 ---
 
 Há§¯Ú>Ï;]%I‰ éâgÎJ:àïFš,ØžöOîóœòßôž:š%Ig8ê:�' R”^	`BMdŒÿÞDå‚=¢…ÃÅFá`ºá­Ê·%eÓ‚]ÀŠqeiÄð7¼l¥çÎGObÕê™©ÌUb
 
---- page 22 ---
+--- page 19 ---
 
 `Ø¼5˜~Åüüá´Á2O0iA¤,&}„¦
 
---- page 23 ---
+--- page 20 ---
 
 "¸?rtôTzª$ƒBjQ/ÆÌjËùÂÞf™,¢˜<K~

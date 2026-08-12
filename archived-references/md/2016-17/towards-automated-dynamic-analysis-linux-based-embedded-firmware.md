@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-aut
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:44:26+00:00"
+  at: "2026-08-12T16:01:41+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2016-17.md:69"
 commit: ""
-content_sha256: 686f1fdf2ed0c9346f694fb73760cbff0580f63b6eeb4b280c8519d39d941693
+content_sha256: 4903cddd2ba92785d2f9e9c28d0592add73d17c18cdc71b1e98d1023e1ce5df8
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: a88844595fe037215474deb87860cf29ebd3b68d5b832d3b3089b24ef800f888
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:44:26+00:00"
+retrieved_utc: "2026-08-12T16:01:41+00:00"
 slug: towards-automated-dynamic-analysis-linux-based-embedded-firmware
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf (stored) on 2026-08-11
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -474,8 +474,3 @@ IndexVendorDownloadExtractedArch. IdentiedInitial EmulationNetwork InferredNetwo
 41Western Digital1 (N/A)0 (0)0 (0)0 (0)0 (0)0 (0)0 (0)
 42ZyXEL1,768 (252)161 (38)159 (38)159 (39)59 (18)37 (13)5 (1)Total4223,035 (2,331)8,893 (667)8,617 (611)8,591 (625)2,797 (322)1,971 (252)887 (89)TABLE VII: Breakdown of analysis progress by vendor, in terms of rmware images (products). Note:N/Aindicates that we donot have sufcient metadata to compute a lower-bound on affected products.
 16
-
---- page 19 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u

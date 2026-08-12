@@ -5,9 +5,9 @@ resource: "http://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurpo
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:45:21+00:00"
+  at: "2026-08-12T16:00:24+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "http://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurposing_attack.pdf"
@@ -24,7 +24,7 @@ canonical_url: "https://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_r
 cited_by:
   - "2009.md:71"
 commit: ""
-content_sha256: ef39b4d8fc5cb558c05501e4b5c8d099be28773075702d03e02991d895235341
+content_sha256: cb37d26ab9061b5ccdced14c9fe47b39dccc64f248b8e0756352ceb31663068f
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: 84043a14c6b544193ef554abc031b0e021f2e7a63dfe4048ecfc5c7db290d8e8
 retrieved_from: "https://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurposing_attack.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:45:21+00:00"
+retrieved_utc: "2026-08-12T16:00:24+00:00"
 slug: advisory-gmail-google-docs-pdf-repurposing-attack
 snapshot: 20111015175348
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <http://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurposing_attack.pdf>
 - Current location: <https://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurposing_attack.pdf>
-- Preserved from: https://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurposing_attack.pdf (stored) on 2026-08-11
+- Preserved from: https://secniche.org/gmd_hijack/advisory_gmail_google_docs_pdf_repurposing_attack.pdf (stored) on 2026-08-12
 - Capture timestamp: 20111015175348
 - Licence: unknown
 
@@ -137,16 +137,6 @@ spreadsheets.google.com on average
 
 --- page 4 ---
 
-.,	!+=FJVG$''&
-,
-,
-&""""
-G<TW-9'VX--['H-AH#`,<+'	!+2FJ^&,
-,
-&&&&"HXXLXHXX-c`MXX<"H
-
---- page 5 ---
-
 The attack can be structured as:
  1. An Attacker sends a well crafted PDF file to victim containing the execution code. 2. Victim opens the file in the default PDF Viewer by
  Google. There is a proper conversion take place and 
@@ -174,7 +164,7 @@ PDF directly into browser which should not be allowed.
 with malicious PDF as an attachment. 
 4
 
---- page 6 ---
+--- page 5 ---
 
 Step 2: Victim opens the PDF directly in the Google Doc viewer.
  Step 3: Victim tries to print the document directly from viewer.
@@ -183,20 +173,13 @@ our POC a form has been designed
 which worked as mentioned below: 
 5
 
---- page 7 ---
+--- page 6 ---
 
 [3.1] Gmail/Google Doc - Domain Check [3.2] Gmail/Google Doc - Cookie Extracted
  
 6
 
---- page 8 ---
-
-sqmõðçMKHOMKãÞÕÃÀ¹©¦ ÓÐÇ976„‚~�™“êçÝ»·±YWSdb^'%$²¯¨ØÔÌáÜÔ^[W##!ÚÖÍ
-
-ljf¢ ™öñè%$#663õðçolh986âßÖ×ÓËÔÐÈãßÖCA?ûöìROMýøîQPMQOKŽ‹†754ãßÖàÜÓÔÐÈÔÐÈÖÒÉÙÕÍ32010.ëæÝæâÙgeaîêáDB@YWShgc*€~yÏËÃÝØÐ»¸±%#"431ÊÆ¾KIF! lie-,*ÝÙÐ21/°­¦ØÔÌÔÐÈÔÐÈÛÖÎ¤ ›ÞÙÑàÛÓƒ�}USO²¯¨ÞÚÑÖÑÊ_]Y?=;ÃÀ¸ÈÅ½*�}x_]Y`]ZñíäÛ×ÏÔÐÈÔÐÈÙÔÌÉÆ¿jhdëçÞª§ ÄÁ¹ÔÐÉ¯«¥22/eb_ßÜÔ‹ˆƒÝÙÐ×ÓËÄÁºª§¡ñìã„‚|][Y]XæâØ-,+‡„€ÝÙÐÔÐÈÞÚÑXVSB@>EDAnli·³¬ÓÏÇØÓË�›•�Œ‡ÔÐÉ³°©{xtDB?æãÚÝØÐÔÐÈÙÕÍµ²ª •’Œ‡„€¨¥ž~{w<:9ÒÏÆ¯¬¥ëçÞÐÍÅ´¯ªäàØ420‹‡‚ÙÖÍ±®§"! ��‡æãÛ‰†�ÈÅ¼SROsqm–“ŒÜØÐŽŒ†Á½·ØÔÌ×ÓË¼¸²
-ywqÝÙÐÔÐÈãÞÕ:97=<:•“ŒÕÐÊ¡Ÿ™gea0/-ÞÛÒÕÐÈØÔÌ¼¹³¶²ªëæÞXVRwuqnlhLKG420ÅÂ»sqla_DC@.-+ÕÒÉÊÆ¿çãÚÔÐÈÕÑÉÓÐÇ#" •‘ŒßÛÓÊÆ¿|xåáØÜØÏÕÑÉ986KIFþúñ†ƒ<:9þùï�ŽˆÝÚÐ*×ÒÊ:97ŽŠ†êåÜVTQ“�‹¹¶¯*BA>WVRYWS*
-
---- page 9 ---
+--- page 7 ---
 
 That’s how the PDF Repurposing Attack can be triggered. 
 7

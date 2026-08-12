@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-f
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:43:43+00:00"
+  at: "2026-08-12T16:01:25+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2016-17.md:70"
 commit: ""
-content_sha256: 7a242b43abe67078063dbc6fa3904d43ddcf9bef117c3b257c96f5a13b5e6b98
+content_sha256: 77edc3689545a5f6eed65fde5a1075c03152c1074275166b3ff5a944698835bc
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: 6d5ce4d54e9503712e36e8798aa7285752e9e84e75f3af3852ce4de59ac2896f
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:43:43+00:00"
+retrieved_utc: "2026-08-12T16:01:25+00:00"
 slug: automatic-forgery-cryptographically-consistent-messages-identify-services
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf (stored) on 2026-08-11
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -1092,14 +1092,5 @@ APP SERVERS
 ºCategoryApp Package Name #Input Msg #Traced API Encryption? Hashing? Signing? #DiffedField #SysField #InputField #CryptoField EqualResonse? SysField Only? #Sliced API #Request Vulnerable? Books & Referencecom.kobobooks.android4240777202077021XBooks & Referencecom.overdrive.mobile.android.mediaconsole4448777202077021XBooks & Referencewp.wpbeta4333777202077021XBusinesscom.careerjet.android428X7721017X921XBusinesscom.timesgroup.magicbricks48977X20027X2021XBusinessnaukriApp.appModules.login411577720207X021XCommunicationcom.mx.browser41957X720117X721XCommunicationcom.mx.browser.tablet41787X720117X721XCommunicationcom.my.mail43407X730217X721XCommunicationcom.rebtel.android42087X752217X8217Communicationcom.textmeinc.textme42417X720117X721XCommunicationru.mail.mailapp4837X730217X721XEntertainmentcom.cgv.android.movieapp4677X730127X1821XEntertainmentcom.dailymotion.dailymotion43477X41217X1221XEntertainmentcom.gamey.android.gamecenter48677X41217X721XEntertainmentcom.stuckpixelinc.funnypics4317X720117X721XEntertainmentcom.viewster.androidapp4626777202077021XHealth & Fitnesscom.mytnesspal.android42697X720117X721XHealth & Fitnesscom.noom.walk4487X73021771821XLifestylecn.etouch.ecalendar241232X7710017X1121XLifestylecom.dominospizza426577720207X021XLifestylecom.zillow.android.zillowmap424277720207X021XMedia & Videocom.qiyi.video.market411697X741217X1837Media & Videocom.sohu.sohuvideo4727X720117X7107Media & Videotv.danmaku.bili41294XX730127X1537Medicalcom.sigmaphone.topmedfree449X7710017X1157Medicalleay.android43877720207X021XMusic & Audiocom.ad60.songza4132777202077021XMusic & Audiocom.clearchannel.iheartradio.controller4123777720207X021XMusic & Audiocom.kugou.android4637XX741127X2221XMusic & Audiocom.soundcloud.android46077720207X021XMusic & Audioanonymized_due_to_special_request4179277X52217X721XNews & Magazinesanews.com419277720207X021XNews & Magazinescom.ideashower.readitlater.pro423977720207X021XNews & Magazinescom.mobilesrepublic.appygamer427677720207X021XNews & Magazinescom.mobilesrepublic.appygeek488377720207X021XProductivitycom.ecareme.asuswebstorage4857XX63127X1721XProductivitycom.geeksoft.wps4257X730217X721XProductivitycom.mediare.android42017X730217X8127Productivitycom.somcloud.somnote47437XX52127X1421XShoppingcom.bukalapak.android4430X7710017X121XShoppingcom.jabong.android478077720207X021XShoppingcom.meucarrinho41387X752217X721XShoppingcom.miniinthebox.android4228XX741127X1921XShoppingcom.walmart.android4343777202077021XSocialcom.askfm47577X30127X721XSocialcom.chatous.pointblank44377710007X121XSocialcom.match.android.matchmobile430877720207X021XSocialcom.skout.android41157X730217X737Socialcom.tenthbit.juliet42477720207X021XSocialcom.unearby.sayhi4607X720117X721XToolsxcxin.fehd473X7720117X721XTravel & Localcom.viamichelin.android.michelintrafc43377730307X021X17
 
 --- page 23 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
-
---- page 24 ---
-
-ÒŽ¼óÕ¬¿`ï@«¤pêíÀJ2è’Q‘klÁËzàcÌäºš‚¯�f¤»ˆ¢à¶ÃÜjö¾ÝOé+7a˜{í²Hík» •VÁÝÒ€ïç‹¼~,-¹KûÆ;G¤‚ˆ¾D�Ÿ+‘<¶J
-
---- page 25 ---
 
 ïÊwÂoýuegþíâ¼hÞEHwþ™ÝòþäD°¤Q÷<ovðWüÚ#>|^ïäíY:€»ž%–Ph,^úÛìÊäm�ø°n³F‡—]Ô�ú^e†Uìk—�xÑÆí°Ï;‡ýˆbñþµ=²7§PŸœJ3¸í®{ž�Ëõu·û.ˆï{y½³£¨ZxIÿšLv;@w„@k~¯rfF»T]ÐfåZ‰:_›{7q

@@ -5,9 +5,9 @@ resource: "https://dl.acm.org/doi/10.1145/2818000.2818029"
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T08:57:48+00:00"
+  at: "2026-08-12T15:49:29+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://dl.acm.org/doi/10.1145/2818000.2818029"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2015.md:75"
 commit: ""
-content_sha256: fad7bc617391b44ff5a4f61b40320dcb4136f70f03ed48aa47252125dbfe34f3
+content_sha256: 906e4787975677d5df9188c3b83913b668bef5631c44a7372374ee81f48503bf
 depth: full
 depth_reason: default
 kind: article
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: b86f6744c44642b611ff8d431203c2de145c8a1bc2964b234a3b8d2116ffacc2
 retrieved_from: "https://dl.acm.org/doi/10.1145/2818000.2818029"
 retrieved_kind: manual-import
-retrieved_utc: "2026-08-09T08:57:48+00:00"
+retrieved_utc: "2026-08-12T15:49:29+00:00"
 slug: cross-site-framing-attacks
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://dl.acm.org/doi/10.1145/2818000.2818029>
-- Preserved from: https://dl.acm.org/doi/10.1145/2818000.2818029 (manual-import) on 2026-08-09
+- Preserved from: https://dl.acm.org/doi/10.1145/2818000.2818029 (manual-import) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -182,15 +182,6 @@ illegal content, and the web-history did not support search
 and access to these “les. Experts concluded that the illegal
 “les were downloaded by malware, which was controlled re-
 motely by an unknown agent for his own purposes. What161
-
---- page 9 ---
-
-+N@=wz’¡m¢kt•vn}reºsÖßÓ¦¾½¹¸ Ä×Óx¹Y½_·R¢û
- }§ø¹­è÷�åøRù@û�QxBXû>Pûû4¦3¶Y_±ÁsÉ÷áê÷÷BÜû_v„eL¦÷+÷÷÷1¥ûbû²á½CûûdNE3Ué÷/¾“§Ÿš› ª”®ƒŸøÔÕøUù*üPû'œƒÏ¶�˜Â÷mûZüèÌ÷hù"}§ù§Ã×EÕ÷oÐT×Ø÷¶øîÀ®µÏÝCÇ'û:H0Jžnô/äû9ulG*ÚG÷÷ØÍòØi¼û
-åy$ÔW£gSJ^^J?XÅâË¡µÅºØ¼Ø2Åg¹ÃÅ¸´ÊÏ¶_FRo^Re†ˆ‹‹‡ˆ÷�¶ø§©çÆu÷˜ÂžÏ¼ó×È÷÷÷9/÷	ûû2&ûûÓ:÷Âµ›´Àbû7û û,q÷Æ÷ùw‡‚€‚sof~g?[Ö÷Ä›Ç ¥Ÿœ¤–¨â¸5û<<€÷÷Œ÷÷ø_mrqln¤r¨ª¥¤¨ªq¥mûûmrqln¤r¨ª¥¤¨ªq¥møÈ}²÷
-¬k¶÷�Ÿ÷Qª÷ß÷
-Òø
-³ßùDÔh=X~Hû>û÷÷Bè¯éÄÆ¼¼Î¦Ô÷1÷ûû
 
 --- page 10 ---
 

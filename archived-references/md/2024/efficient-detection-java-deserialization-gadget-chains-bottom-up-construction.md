@@ -5,9 +5,9 @@ resource: "https://secsys.fudan.edu.cn/_upload/article/files/8a/3c/d8d0e5a142dbb
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:37:02+00:00"
+  at: "2026-08-12T16:02:50+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://secsys.fudan.edu.cn/_upload/article/files/8a/3c/d8d0e5a142dbbfaa39a58edc76b0/88ab6956-5447-4e4c-8ad8-6785c3fec057.pdf"
@@ -28,7 +28,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:80"
 commit: ""
-content_sha256: 19f95cdab02ce4845ef5acd0ea89041b61bb6651d254d624f074f3e4469db434
+content_sha256: 23dd8845052deb12375ac58d0a3ce5f7e546324dc07a1c2094c18112167f4d66
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -41,7 +41,7 @@ publisher_english: ""
 raw_sha256: c25310fe00c6ab261795383a802903771c1f86dd3127bf5437f776f985ac1812
 retrieved_from: "https://secsys.fudan.edu.cn/_upload/article/files/8a/3c/d8d0e5a142dbbfaa39a58edc76b0/88ab6956-5447-4e4c-8ad8-6785c3fec057.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:37:02+00:00"
+retrieved_utc: "2026-08-12T16:02:50+00:00"
 slug: efficient-detection-java-deserialization-gadget-chains-bottom-up-construction
 snapshot: 20240415082249
 title_english: ""
@@ -55,7 +55,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://secsys.fudan.edu.cn/_upload/article/files/8a/3c/d8d0e5a142dbbfaa39a58edc76b0/88ab6956-5447-4e4c-8ad8-6785c3fec057.pdf>
-- Preserved from: https://secsys.fudan.edu.cn/_upload/article/files/8a/3c/d8d0e5a142dbbfaa39a58edc76b0/88ab6956-5447-4e4c-8ad8-6785c3fec057.pdf (stored) on 2026-08-11
+- Preserved from: https://secsys.fudan.edu.cn/_upload/article/files/8a/3c/d8d0e5a142dbbfaa39a58edc76b0/88ab6956-5447-4e4c-8ad8-6785c3fec057.pdf (stored) on 2026-08-12
 - Capture timestamp: 20240415082249
 - Licence: unknown
 
@@ -247,18 +247,9 @@ search repeats the analysis of the same low-level gadget
 
 --- page 2 ---
 
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
-
---- page 3 ---
-
 Æ¤Â%¥Ó•2V´–Á!ö|’�Ýçí¤EÎä�sûûm±â
 
---- page 4 ---
-
-‰ÔwÂ9QÀ�‘æ«†�4’'­4à_°#¦äJì‘»�m“ãŒä¸˜${ýª¯S·:Úqâvö^²—ƒTÓÖA«U¶|oì0eÇÊ´ò×©˜Õ_GmæþVDyïÒÁù#«œÈÏÙ´÷ÆÙRÀéøÛ?˜l–úü‡ UQŒã‰
-
---- page 5 ---
+--- page 3 ---
 
 fragment when a top-level gadget changes, leading to a
 huge redundancy and a waste of analysis time. Instead, the
@@ -441,15 +432,15 @@ If two elements in the
 HashMap
 have the same hash value,
 
---- page 6 ---
+--- page 4 ---
 
 1 /* Gadget Fragment I : HashMap.put()->HashMap.putVal() */ 2class HashMap extends AbstractMap ...{ 3 Node<K,V>[] table; 4 V put(K key, V value) { return putVal(hash(key), key, value, ...); } 5 V putVal(int hash, K key, V value,...) { ... 6 Node<K,V> p = table[(int) index]; // p is an element in table 7 if (p.hashCode() == key.hashCode() & p.key != key & key != null) 8key.equals(p.key); 9 ... }10}11 /* Gadget Fragment II: NodeImpl.equals()-> Object.equals(Line 17) */12class NodeImpl implements ... {13 Object key;14 int hashCode = -1;15 boolean equals(Object obj) {16 if (o instanceof NodeImpl) { ... 17this.key.equals( ((NodeImpl) obj).key );18 }19 int hashCode() { 20if (this.hashCode == -1) this.hashCode = this.buildHashCode();21return this.hashCode; 22} 23 /* Gadget Fragment III: ConcurrentHashMap.equals()-> Map.get() */24class ConcurrentHashMap<K,V> extends AbstractMap<K,V> ...{25 boolean equals(Object o) {26 if (o instanceof Map) { ... 27 ((Map<?,?>)o).get(ConcurrentHashMap.this.table[index].key);28 ...}}29 30}31 /* Gadget Fragment IV: UIDefaults.get()-> ... -> LazyValue.createValue() */32class UIDefaults extends Hashtable<Object,Object>{33 Object get(Object key) { Object value = getFromHashtable( key ); ...}34 Object getFromHashtable(final Object key) {35 // UIDefaults.table should contain an Entry that key is key36 Object value = super.get(key); 37 if ((value != PENDING) && !(value instanceof ActiveValue) &&38 !(value instanceof LazyValue)) return value;39 if (value instanceof LazyValue) ((LazyValue) value).createValue(this);40 }41}42class Hashtable<K,V> ... {43 Entry<K,V>[] table;44 V get(Object key) {45 Entry<K,V> e = this.table[(int) index]; // e is an element of table46 if ((e.key.hash == key.hash) && e.key.equals(key)) return (V) e.value;47 return null; }48}49 /* Gadget Fragment V: ProxyLazyValue.createValue()->...-> Method.invoke() */50class ProxyLazyValue extends Hashtable<Object,Object> {51 Object createValue(final UIDefaults table) {...52 Class c = Class.forName(this.className);53 Method m = c.getMethod(this.methodName, this,args);54 return MethodUtil.invoke(m, c, this.args); ...}55}56 /* Gadget Fragment VI: InitialContext.doLookup()-> InitialContext.lookup() */57class InitialContext implements Context {58 static <T> T doLookup(String name) throws NamingException {59 return (T) (new InitialContext()).lookup(name); // JNDI attack }60}Candidates:2751Candidates:12Candidates:2751Candidates:148n1n2cctmapuftuftcctmap.table[i].keycctmap.table[i].keycctmap.table[i].keyplvuftplvplv.argsplv.argscctmap.table[i].key
 
---- page 7 ---
+--- page 5 ---
 
 1 // Gadget Fragment IV 2UIDefaults uft = new UIDefaults(); 3 // Gadget Fragment V 4Object plv = createWithObjectNoArgsConstructor( 5Class.forName(javax.swing.UIDefaults$ProxyLazyValue)); 6uft.put(aaa, plv) 7 // Gadget Fragment VI 8setFieldValue(plv, className, security-sensitive class name); 9setFieldValue(plv, args, new Object[]{malicious URL}); 10setFieldValue(plv, methodName, security-sensitive method name);11 // Gadget Fragment III12ConcurrentHashMap cctmap = new ConcurrentHashMap();13cctmap.put(aaa, any);14// Gadget Fragment II15NodeImpl n1 = createWithObjectNoArgsConstructor(NodeImpl.class);16NodeImpl n2 = createWithObjectNoArgsConstructor(NodeImpl.class);17 setFieldValue(n1, hashCode, 3);18 setFieldValue(n2, hashCode, 3);19setFieldValue(n1, key, cctmap);20setFieldValue(n2, key, uft);21// Gadget Fragment I22HashMap map = Gadgets.makeMap(n2, n1); // put n1 and n2 into a HashMap
 
---- page 8 ---
+--- page 6 ---
 
 Figure 1: A Motivating Example of a Zero-day Gadget
 Chain with Five Fragments (Note that code is simplied
@@ -550,11 +541,11 @@ JDD
 to solve these two
 challenges.
 
---- page 9 ---
+--- page 7 ---
 
 HashMaptableNodeImplNodeImplkeykeyUIDfaultsConcurrentHashMaptabletableProxyLazyValue(a) Correct Injection ObjectStructureNodeImplkeyConcurrentHashMaptableUIDfaultstableProxyLazyValue(b) Erroneous Injection ObjectStructure Deduced by OddfuzzHashMaptable......Field NodeClass-FieldDependenceClass Noden2n1uftcctmapplv i. n1.hashCode() == n2.hashCode() ii. uft.containsKey(cctmap.table[i].key) == trueiii. Class.forName(plv.className) .getMethod(plv.methodName,plv.args) != nulliv. ...Constraints Info i. n1.hashCode() == n2.hashCode() ii. uft.containsKey(cctmap.table[i].key) == trueiii. Class.forName(plv.className) .getMethod(plv.methodName,plv.args) != nulliv. ...Constraints Info
 
---- page 10 ---
+--- page 8 ---
 
 Figure 3: Injection Object Structure of Motivation Example.
 Challenge I: Static Path Explosion.
@@ -735,7 +726,7 @@ taining a sink, e.g.,
 MethodUtil.invoke()
 in Gadget
 
---- page 11 ---
+--- page 9 ---
 
 Fragment V. Then, in Step 3,
 JDD
@@ -935,11 +926,11 @@ End
 commonly a dynamic method invocation or security-
 sensitive method.
 
---- page 12 ---
+--- page 10 ---
 
 Stage I: Gadget Chain DetectionStage II: Exploitable Injection Object GenerationReusable Fragments ExtractionGadget Fragments SearchingGadget FragmentsLinkingConstrainsCollectionInjection ObjectGeneration & MutationFuzzing-based Exploitability ValidationInjection ObjectNew Exploitable Injection ObjectDominatorConstraints-basedFeedbackIOCDGenerationFragment Data SetGadget ChainsIOCDEntryPointsIdentification1 Identify Entries1 Identify Entries Identify Fragments2 Link Fragments3 Generate IOCD4Validate Exploitability5ExploitsExploitsTarget ApplicationTarget Application
 
---- page 13 ---
+--- page 11 ---
 
 Figure 4: The Overall Architecture of
 JDD
@@ -1125,7 +1116,7 @@ n
 œ
 . If the number of
 
---- page 14 ---
+--- page 12 ---
 
 Algorithm 1
 Gadget Fragments LinkingInput:
@@ -1502,7 +1493,7 @@ JDD
 uses
 a novel data structure, termed Injection Object Construc-
 
---- page 15 ---
+--- page 13 ---
 
 tion Diagram (
 IOCD
@@ -1742,7 +1733,7 @@ dition constraints strategies.
 (5) If all combinations of strategies for condition con-
 straints have been used, a 50% probability is assigned
 
---- page 16 ---
+--- page 14 ---
 
 Table 2: Mutation Strategy. Property(
 prop
@@ -1991,7 +1982,7 @@ jects. To avoid
 JDD
 stuck in a hard-to-detect chain, we set
 
---- page 17 ---
+--- page 15 ---
 
 the time limitation for identifying each gadget fragment in
 the static analysis as 30 seconds and each round of fuzzing
@@ -2173,7 +2164,7 @@ JDD
 could detect more gadget chains related to these dynamic
 features than existing tools.
 
---- page 18 ---
+--- page 16 ---
 
 Table 3: Gadget chain detection comparison among GadgetInspector, SerHybrid, ODDFuzz, and
 JDD
@@ -2381,7 +2372,7 @@ JDD
 completed the analysis in seven min-
 utes and 58 seconds with no timeouts and detected 116
 
---- page 19 ---
+--- page 17 ---
 
 Table 4: The Detected Chains and Performance Evaluation Results of
 JDD
@@ -2557,11 +2548,11 @@ and
 hmap2
 , and alternate the order of insertion. Then, based
 
---- page 20 ---
+--- page 18 ---
 
 # Fragment 1HashMap.put()HashMap.putVal()# Fragment 2AbstractMap.equals()# Fragment 3AudiofileFormat$Type.equals()# Case 1 # Fragment 4afastjson2.JSONObject.toString()# Fragment 5bfastjson2.JSONWriterUTF16.write()# Fragment 6cfastjson2.ObjectWriter2.write()# Fragment 7dfastjson2.FieldWriterObject.write()fastjson2.getFieldValue.write()reflect.Method.invoke()# Fragment 4ajackson.JSONObject.toString()...# Fragment 5bjackson.SerializableSerializer.serialize()# Fragment 6cjackson.POJONode.serialize()...# Fragment 7djackson.BeanSerializer.serialize()...# Fragment 8jackson.BeanPropertyWrite.serializeAsField()reflect.Method.invoke()# Fragment 10ContinuationContext.getTargetContext()NamingManager.getContext()NamingManager.getObjectInstance()# Case 2 # Fragment 9ServerManagerImpl.getActiveServer()ServerTableEntry.isValid()ServerTableEntry.activate()Runtime.exec()# Fragment 11UnixPrintServiceLookup.getDefaultPrintService()UnixPrintServiceLookup.getDefulatPrinterBSD()UnixPrintServiceLookup.execCmd()Runtime.exec()/* This HashMap stores * hmap1 & hmap2 */
 
---- page 21 ---
+--- page 19 ---
 
 Figure 5: Simplied Gadget Chains of Case Study #1 and
 Case Study #2, where Case #2 is an evolution of Case #1
@@ -2690,11 +2681,11 @@ sensitive Analysis.
 We leverage pointer-to analysis and
 path-sensitive analysis to mitigate the erroneous generation
 
---- page 22 ---
+--- page 20 ---
 
 CVE-2015-2852CVE-2016-0638CVE-2016-3510CVE-2017-3248CVE-2018-2826CVE-2018-2893Sep.2015Apr.2016Jul.2016Jan.2017Apr.2018Jul.2018CVE-2018-3245CVE-2018-3248CVE-2018-3191Oct.2018CVE-2020-2555Jan.2020CVE-2020-2883Apr.2020The gadget fragments is used byDisclosed VulnerabilityCVE-2020-14645Jul.2020Oct.2020CVE-2020-14825Jan.2021CVE-2020-14756Apr.2021CVE-2021-2135CVE-2021-2136Jul.2021CVE-2020-2551Jan.2022CVE-2021-2394Jan.2023CVE-2022-21350CVE-2023-21839Apr.2023CVE-2023-21931May.2016CommonsCollections5(ysoserial)Mar.2016JRMPListener(ysoserial)
 
---- page 23 ---
+--- page 21 ---
 
 Figure 6: WebLogic's JOI vulnerabilities and the reuse of their gadget fragments, which lead to the incomplete patch
 problem.
@@ -2805,7 +2796,7 @@ is the
 rst tool capable of automatic generation of exploitable
 injection objects based on gadget chains.
 
---- page 24 ---
+--- page 22 ---
 
 7.2. Deserialization Vulnerability Defense
 Implementing effective strategies to enhance application
@@ -2950,7 +2941,7 @@ context, ow, eld, object-sensitive and lifecycle-aware taint analysis
 for android apps,”AcmSigplanNotices, vol. 49, no. 6, pp. 259–269,
 2014.
 
---- page 25 ---
+--- page 23 ---
 
 [13] R. Padhye, C. Lemieux, and K. Sen, “Jqf: Coverage-guided property-
 based testing in java,” inProceedingsofthe28thACMSIGSOFTInternationalSymposiumonSoftwareTestingandAnalysis, 2019,
@@ -3139,7 +3130,7 @@ p
 other fragments. Considering these most complex sce-
 narios, using equations (1) and (2), we can calculate
 
---- page 26 ---
+--- page 24 ---
 
 the maximum number
 S
@@ -3588,7 +3579,7 @@ attributed to two categories: (1) Implement chain calls of
 Method.invoke
 , sequentially calling insecure methods in
 
---- page 27 ---
+--- page 25 ---
 
 the program to execute malicious instructions, such as CVE-
 2020-2555. (2) Satisfy common specic strong constraints

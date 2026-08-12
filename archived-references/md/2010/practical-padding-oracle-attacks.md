@@ -5,9 +5,9 @@ resource: "https://www.usenix.org/events/woot10/tech/full_papers/Rizzo.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:45:55+00:00"
+  at: "2026-08-12T16:00:25+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.usenix.org/events/woot10/tech/full_papers/Rizzo.pdf"
@@ -23,7 +23,7 @@ canonical_url: "https://www.usenix.org/legacy/events/woot10/tech/full_papers/Riz
 cited_by:
   - "2010.md:5"
 commit: ""
-content_sha256: e35cd0c93030cfb61028b1686fae1bafb61fa2372f3b3574a66aeba0ffaf9b8c
+content_sha256: f859066bb11bbcf0ce79d4539b895e3eed6249a275b6305876aea569716f1f26
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: 459a7c98bd7841138ce600fa269cc409866ee3b280e03a3030921614552fcfa8
 retrieved_from: "https://www.usenix.org/legacy/events/woot10/tech/full_papers/Rizzo.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:45:55+00:00"
+retrieved_utc: "2026-08-12T16:00:25+00:00"
 slug: practical-padding-oracle-attacks
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.usenix.org/events/woot10/tech/full_papers/Rizzo.pdf>
 - Current location: <https://www.usenix.org/legacy/events/woot10/tech/full_papers/Rizzo.pdf>
-- Preserved from: https://www.usenix.org/legacy/events/woot10/tech/full_papers/Rizzo.pdf (stored) on 2026-08-11
+- Preserved from: https://www.usenix.org/legacy/events/woot10/tech/full_papers/Rizzo.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -1436,13 +1436,3 @@ Dennis Byrne. Antipatterns and Pitfalls. In
 The Denitive Guide to Apache MyFaces and
 Facelets, pages 229-269. Apress, 2008
 9
-
---- page 10 ---
-
-Âÿ£B~6¬Ýýù9˜ZçY
-AŸGÛµWÛãÆ¶­‹Ì&»>[›øäuöMËµyÿË-¼X`GV]ä;¤¸RöÀI6[‹4è´Ùª¼ËvGÖ.R�÷FÿÞ“ÑÑ4u´�£ âJªq˜ Õ	PÚ±Æ¯ñõÔòw�d…CÒs
-
---- page 11 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u

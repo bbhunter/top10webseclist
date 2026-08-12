@@ -5,9 +5,9 @@ resource: "https://lilicoding.github.io/SA3Repo/papers/2015_zuo2015automatically
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:35:53+00:00"
+  at: "2026-08-12T16:01:13+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://lilicoding.github.io/SA3Repo/papers/2015_zuo2015automatically.pdf"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2015.md:80"
 commit: ""
-content_sha256: 660532d5654146314f002eab34d4908ee694a0da7cec2973bb4e663fec4e9e82
+content_sha256: e1b559bda11573eacf6ca57487a95729daa8ae88310aea775cbd919b745a850b
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: 0f1b0560c68fe38d02909d20d8e699fefa76822843d6ae5fd023bfd7f913c429
 retrieved_from: "https://lilicoding.github.io/SA3Repo/papers/2015_zuo2015automatically.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:35:53+00:00"
+retrieved_utc: "2026-08-12T16:01:13+00:00"
 slug: automatically-detecting-ssl-error-handling-vulnerabilities-hybrid-mobile-apps
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://lilicoding.github.io/SA3Repo/papers/2015_zuo2015automatically.pdf>
-- Preserved from: https://lilicoding.github.io/SA3Repo/papers/2015_zuo2015automatically.pdf (stored) on 2026-08-11
+- Preserved from: https://lilicoding.github.io/SA3Repo/papers/2015_zuo2015automatically.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -186,26 +186,9 @@ employ static analysis to determine whether these apps are
 
 --- page 9 ---
 
-*b1-b.-':Ly%#%'2#2'E#E'¥''9?:9&"%&8/78-""--/?¸É@> / /.!.!"988''&h??+ 0`p°Ààð
-¸ú@D S d  2" ""¸Ã¶@A–!kŠ++ö]ô]ý]qä]?<<<?<<<99‡.+‡}Ä‡.+‡}ÄíÀíÀíÀíÀíÀíÀíÀíÀY10]]CX² /]Y]]]]qCX¶/@U	¸ÿô´U	¸ÿô´U	¸ÿà´U	¸ÿØ@U	U
-U¸ÿþ´U¸ÿì´U¸ÿÜ´U¸ÿØ@	U¯ý V9$$<Ua•, $p<oiX@!zÆuswppÄÆ×ç	Õ¸-@Ï””!TZ++Nô]Mý]9/?íì]í9910]]3#%#ù¸¾þïåiþµÕÕE–Ln@C§¹¶‰††vw‹fzyjid™–¨4�	w�h/¸p·hXÞ+NôMíý]í?<í<ôýô<10]]]]]]#663232673#"'&&#"6 jN	 "		S	S/¸ÿð@Ê:I7¸8È8™:¨8™8™9' 9¬¸¬@988"87
-=Læ	.ld‰u 9"lJRF/w
-@/*9"R3@73“1	3Hl/|�ˆÌÎ->O5=yoUOC‡rF$<Qî9zd‰u 9"lJR	4 4� �@	4?/?hh¯/]í3/í/]q+Àí2/ýÄ10+++#323273#"'&#"ý µ	101?í?í9/qí9/ÍÆ+ÍÐÍ9/910_^]_^]]]]]]%#"'&5476324&#"#"543232654'&#"3276FjZ€Â€{{�Á~j±±R™`M==M_šME_‰bŠŠaŠaCMåG;‘‹ÅÅ�–AK€¡9Eo?X
-"oLLßL L0L@LLP91!5<0!@	000!*"3!P:: :0:P:�:°:À:à:ð:	:P:€:°:::CCJ>$FJ¿L!!KU*-.Jm4>Nj@'I7IGI';7;G;?1¸æ@59EG%>gr~D6íô•€tÐ"aÛ>#pþô!cßó¹’€éŠg|<ýÜe�oDÿäLŽ3Bã@N6?	"
-!?Í?Ìí?í9/]íÎ29/]í2Ö]í]]ÐÍÍÞÝÍ10]]]]]#"#"'&547632!3273254&5432&'&#" `Já#e˜ºpfhsÌ¢a]ý‡P]¢ºR|2P+6ýâ5}`?8
-þåLSL00+8'>6%#% *#,$!  !!!!!!!!!!!!!!*+ '$-$!$!%/500,DD/:&,E-" ".$$!!*$!$" +!$"44#-2 10"!"$C@"   "!   "3&"&"--07&" C7""RR??RR??,,,,,,,,RR??RR??,,RR??
-
---- page 10 ---
-
-+N@=w‹z’m¡k¢t•v‹n}reºsÖß‹Ó¦½¾¹¸ Ä‹×‹Óx¹Y½_·R¢û
- øˆ}§ø¹­è÷�åøRù@û�QxBXû>Pû‹û‹4¦3¶Y±_ÁsÉ‹÷áê÷÷BÜû_‹v„Le¦÷+÷÷÷1¥ûbû²á½CûûdNE3Ué÷/‹¾“§Ÿš ›ª”®‹øˆƒŸøÔÕøUù*üPû'œƒ¶Ï�˜Â‹÷mûZüèÌ÷hù"øˆ}§ù§Ã×EÕ÷oÐT×Ø÷¶øîÀ®µ‹ÏÝCÇ'û:H0‹Jžnô/äû9ul‹G*ÚG÷÷ØÍò‹Øi¼ûåy$ÔW£g‹SJ^^J?XÅâ‹Ë¡µÅºØ¼Ø2Åg¹‹ÃÅ¸´ÊÏ¶_F‹Ro^Re†ˆ‹‹‡ˆøˆ÷�¶ø§©çÆu÷˜ÂžÏ¼ó×È÷‹÷÷9/÷	ûû2&ûûÓ:÷Â‹µ›À´bû7û û,q÷Æ÷ù‹w‡‚€‚osf~g‹?[Ö÷‹Ä›Ç ¥œŸ¤–¨‹â¸5û<÷ª€÷÷Œ÷÷ø_mrqln¤r¨ª¥¤¨ªq¥mûûmrqln¤r¨ª¥¤¨ªq¥mú-}²÷
-¬k¶÷�Ÿ÷Qª÷ß÷Òø³ßùDÔ=hX~H‹û>û÷÷B‹è¯éÄÆ¼¼Î¦Ô‹÷1÷ûû
-
---- page 11 ---
-
 :Ly%#%'2#2'E#E'¥'
 
---- page 12 ---
+--- page 10 ---
 
 HTTPS 
 URLproceedCertificate 
@@ -213,7 +196,7 @@ VerificationError-
 HandlingPass
 Fail
 
---- page 13 ---
+--- page 11 ---
 
 p
 otential vulnerable or not. If so, the potential vulnerable
@@ -348,7 +331,7 @@ found, the system triggers an event and jumps to next Ac-
 tivity till the target Activity. After each jump, our system
 2
 
---- page 14 ---
+--- page 12 ---
 
 Fi
 gure 2: System Overview
@@ -550,7 +533,7 @@ ne as self-dened-WebViewClient. To make sure
 onRe-
 3
 
---- page 15 ---
+--- page 13 ---
 
 Dynamic AnalysisStatic AnalysisAPKSDisassemblyVulnerability DetectionBuilding ACGAndroid TesterResults
 (log,pic...)Fake HTTPS 
@@ -560,7 +543,7 @@ HTTPSEmulatorModified Android
 FrameworkEmulatorModified Android 
 Framework
 
---- page 16 ---
+--- page 14 ---
 
 c
 eivedSslError
@@ -795,7 +778,7 @@ the vulnerability once the test script started by simulating a
 series of human operations. This driving procedure is divid-
 4
 
---- page 17 ---
+--- page 15 ---
 
 T
 able 1: Results of Static Analysis
@@ -1021,7 +1004,7 @@ ravel & Local
 .9%
 5
 
---- page 18 ---
+--- page 16 ---
 
 W
 e also dened category for each vulnerable activity by
@@ -1173,7 +1156,7 @@ Proceedings of the 2014 Mobile
 Security Technologies Conference, 2014.
 6
 
---- page 19 ---
+--- page 17 ---
 
 rsQ5q-s&/aYF>95:bCDejD`MW.M#5c-T/T@D$r_m6W#
 OM`"6>qL:VT

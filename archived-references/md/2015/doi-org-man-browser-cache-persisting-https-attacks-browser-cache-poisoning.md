@@ -5,9 +5,9 @@ resource: "https://doi.org/10.1016/j.cose.2015.07.004"
 tags: [article, webseclist-reference, doi-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T08:57:48+00:00"
+  at: "2026-08-12T15:50:14+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://doi.org/10.1016/j.cose.2015.07.004"
@@ -25,7 +25,7 @@ canonical_url: ""
 cited_by:
   - "2015.md:77"
 commit: ""
-content_sha256: da71707ab35778e73df769570136da06799e66b8d992f2332b470ceafa6c6c18
+content_sha256: 8bcef86817e4c46c5beae05965f0647f4fd1bf6bbb5a70918d525e485dec234f
 depth: full
 depth_reason: default
 kind: article
@@ -38,7 +38,7 @@ publisher_english: ""
 raw_sha256: 35469ee8b407294694e85f8100828baedaab0bd80974a867078b76e13bd1bb23
 retrieved_from: "https://doi.org/10.1016/j.cose.2015.07.004"
 retrieved_kind: manual-import
-retrieved_utc: "2026-08-09T08:57:48+00:00"
+retrieved_utc: "2026-08-12T15:50:14+00:00"
 slug: doi-org-man-browser-cache-persisting-https-attacks-browser-cache-poisoning
 snapshot: ""
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://doi.org/10.1016/j.cose.2015.07.004>
-- Preserved from: https://doi.org/10.1016/j.cose.2015.07.004 (manual-import) on 2026-08-09
+- Preserved from: https://doi.org/10.1016/j.cose.2015.07.004 (manual-import) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -353,12 +353,6 @@ state from web privacy attacks,” in
 Proceedings of the 15th international
 conference on World Wide Web
 . ACM, 2006, pp. 737–744.
-
---- page 3 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^
-½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
 
 --- page 4 ---
 

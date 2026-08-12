@@ -5,9 +5,9 @@ resource: "https://soroush.me/downloadable/common-security-issues-in-financially
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:45:37+00:00"
+  at: "2026-08-12T16:01:58+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications-_v1.1.pdf"
@@ -20,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:40"
 commit: ""
-content_sha256: 948b5b2caee14e4d5be5ef1269e8d62a9937e97f7ffea8bb4f9d244eb210c6ad
+content_sha256: 3ba941bab009f01e92a782dfceaaca5f0c56ae932132eb680c4c4a31edc29637
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: 0329c929c18ff4a33ecd239cb2210db54ae410feb49d0896e845f4371594ab96
 retrieved_from: "https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications-_v1.1.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:45:37+00:00"
+retrieved_utc: "2026-08-12T16:01:58+00:00"
 slug: common-security-issues-financially-oriented-web-applications
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications-_v1.1.pdf>
-- Preserved from: https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications-_v1.1.pdf (stored) on 2026-08-11
+- Preserved from: https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications-_v1.1.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -946,10 +946,6 @@ depending on the nature of the
 
 --- page 5 ---
 
-&¼¹°òîãðìáÿÿÿåÝËäÜÉäÜÉäÜÉäÜÉäÜÉäÜÉäÜÉäÜÉäÜÉäÜÉäÜÉäÜÉäÜÉäÜÉäÜÉãÛÇáÙÄà×ÁÞÕ¾ÜÒ»ÛÐ¸ÚÏµØÍ²×Ê¯ÕÈ«ÔÆ¨ÒÄ¥ÐÂ¢ÏÀžÎ¾›Ì½˜Ë»•É¸’Ç¶�Æ´ŒÄ²‰Â°†À®ƒ¿­€¾«}½ª{¸£tKB.???xxxœœœÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿùùùOOOslYÛÍ«ÐÃ£âÛÇùøõ²«•JG>,*%20+xthº²¢ÚÒÁçàÎéâÒíçØúôæåáÔ«¨ ge`874*
-
---- page 6 ---
-
 NCC Group | Page 
 5
  
@@ -1109,7 +1105,7 @@ d
 severe logical i
 ssues for the application.
 
---- page 7 ---
+--- page 6 ---
 
 NCC Group | Page 
 6
@@ -1281,7 +1277,7 @@ upee) from “GBP” (British
 P
 ound). After completing the transaction on the PayPal website
 
---- page 8 ---
+--- page 7 ---
 
 NCC Group | Page 
 7
@@ -1426,7 +1422,7 @@ cryptographically
  
 signed.
 
---- page 9 ---
+--- page 8 ---
 
 NCC Group | Page 
 8
@@ -1626,7 +1622,7 @@ the payment process flow
 could be changed by manipulating certain parameters
 :
 
---- page 10 ---
+--- page 9 ---
 
 NCC Group | Page 
 9
@@ -1839,11 +1835,7 @@ successful callback request. This parameter could be replaced with a new transac
 id to complete 
 a payment without spending any money.
 
---- page 11 ---
-
-_À³»¼fÆÁÈÇÂÂghÅ§ãda½Ãe¸Äqr]!ZaåwyijghµÉ«`mnº»�}kl° 462BCEAXYWopnÊ@EIKRMTPUBBô€t~h¯wŠŒ¡/O/V_‡Š�?¿ÊEMWY[]}´ÄÓÛïôþ  " $ & 0 4 : > D _ q Ž ” ¿ Ý ð!!!!"!&!.!2!N!^!„!•!¨""""""""
-
---- page 12 ---
+--- page 10 ---
 
 NCC Group | Page 
 10
@@ -1943,7 +1935,7 @@ four
 digits after the decimal point 
 in another website at the same time (LikeForex.com):
 
---- page 13 ---
+--- page 11 ---
 
 NCC Group | Page 
 11
@@ -2057,7 +2049,7 @@ e can be
 the 
 use of database stored procedures
 
---- page 14 ---
+--- page 12 ---
 
 NCC Group | Page 
 12
@@ -2252,7 +2244,7 @@ such as “0.0000000000000000000000000000000001” or “1e
 should also be 
 tested.
 
---- page 15 ---
+--- page 13 ---
 
 NCC Group | Page 
 13
@@ -2420,7 +2412,7 @@ grouping symbol based on the regional settings of the server (culture format). C
 10)
  Negative symbol based on the regional settings of the server. It could be a positive sign.
 
---- page 16 ---
+--- page 14 ---
 
 NCC Group | Page 
 14
@@ -2560,7 +2552,7 @@ the above table though.
  
 Note 3: PHP 5.4 supports a binary prefix (“0b”) that can be used to create a number as well.
 
---- page 17 ---
+--- page 15 ---
 
 NCC Group | Page 
 15
@@ -2799,7 +2791,7 @@ it is quite normal to see this behaviour in
 the 
 “odds” parameter of a live betting application.
 
---- page 18 ---
+--- page 16 ---
 
 NCC Group | Page 
 16
@@ -2978,7 +2970,7 @@ rest of selected items. In this case, additional items are added to basket to sa
 otion, and 
 the discount is still honoured upon their removal.
 
---- page 19 ---
+--- page 17 ---
 
 NCC Group | Page 
 17
@@ -3133,7 +3125,7 @@ specific items in sale
 , use of customer specific offers, or using one time vouchers multiple times
 .
 
---- page 20 ---
+--- page 18 ---
 
 NCC Group | Page 
 18
@@ -3301,11 +3293,7 @@ Hidden and Insecure Backend APIs
  CWE: 
 656
 
---- page 21 ---
-
-_º­µ¶`À»ÂÁÂ¼ab¿§ãda·½_²¾qr]!Zaåwyijgh¯Ã¥Zmnº»�}klª 462BCEAXYWopnÊ@EIKRMTPUBÜ~h¯wŠŒ¡/O/V_‡Š�?¿ÊEMWY[]}´ÄÓÛïôþ  " $ & 0 4 : > D _ q Ž ” ¿ Ý ð!!!!"!&!.!2!N!^!„!•!¨""""""""
-
---- page 22 ---
+--- page 19 ---
 
 NCC Group | Page 
 19
@@ -3535,7 +3523,7 @@ who only
 had deposited 8 Euros to the website originally
 .
 
---- page 23 ---
+--- page 20 ---
 
 NCC Group | Page 
 20
@@ -3580,7 +3568,7 @@ exchange rate slowly can be a
 victim of this 
 exploitation technique.
 
---- page 24 ---
+--- page 21 ---
 
 NCC Group | Page 
 21
@@ -3974,7 +3962,7 @@ or
 other financial services platforms
 .
 
---- page 25 ---
+--- page 22 ---
 
 NCC Group | Page 
 22
@@ -4029,7 +4017,7 @@ and manual tests
  
 within dynamic application environments.
 
---- page 26 ---
+--- page 23 ---
 
 NCC Group | Page 
 23
@@ -4161,11 +4149,3 @@ five
 -
 finger-
 discount/
-
---- page 27 ---
-
-_º­µ¶`À»ÂÁÂ¼ab¿§ãda·½_²¾qr]!Zaåwyijgh¯Ã¥Zmnº»�}klª 462BCEAXYWopnÊ@EIKRMTPUBBô€t~h¯wŠŒ¡/O/V_‡Š�?¿ÊEMWY[]}´ÄÓÛïôþ  " $ & 0 4 : > D _ q Ž ” ¿ Ý ð!!!!"!&!.!2!N!^!„!•!¨""""""""
-
---- page 28 ---
-
-›æ“Ï8°ÒÖ×S¡Så6›š+�ðÔTG¤˜{æLŠ:$Ä6êískØè¶Ð�Kòq€r™2dé�:s3»±gv$³17$“©&8Â„„!#�à<6jêè›æÊ^µÊÊ;»”qö;óð�-°�¤åÌ{ù9ú>r°T¦TZ«IZŠ“ŠáÑ¥±GYIbÞD{ŒK¢Ä¯1‡8Žæ®óaa˜n#µëãÊ×àõØuÚz^Xòu9äâÞw�Mµ´qtÓRy`I’ôÉ

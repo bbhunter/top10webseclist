@@ -5,9 +5,9 @@ resource: "http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:34:23+00:00"
+  at: "2026-08-12T16:01:38+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2016-17.md:97"
 commit: ""
-content_sha256: 8e327e02a89c62ea9353b3ed2dc420f42cf768a286f182e333b6815024b2236e
+content_sha256: 7e3b67f3f1e73ff352aba7b3ff0e1f63f7395ef681f330083c33ce423160c6c6
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: ad81042304892fe70dccf189ca8c13c14d68054fe1e2effbe0fb6f65cfc575ce
 retrieved_from: "http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:34:23+00:00"
+retrieved_utc: "2026-08-12T16:01:38+00:00"
 slug: hvlearn-automated-black-box-analysis-hostname-verification-ssl-implementations
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf>
-- Preserved from: http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf (stored) on 2026-08-11
+- Preserved from: http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -3076,8 +3076,3 @@ n
 --- page 30 ---
 
 Ý“í5ÌÈ&à©ZÒ³!/¯›Þâh¸Yh³"¾
-
---- page 31 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u

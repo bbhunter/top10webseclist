@@ -5,9 +5,9 @@ resource: "https://www.ias.cs.tu-bs.de/publications/parsing_differentials.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:35:33+00:00"
+  at: "2026-08-12T16:02:52+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.ias.cs.tu-bs.de/publications/parsing_differentials.pdf"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:113"
 commit: ""
-content_sha256: 8a41d62a41bdce67aaafc2172e7267a6ed6b9b03828a0ee79559578a1ef1c19e
+content_sha256: 39b60bef78d557874a961a3950d43106a158eb9dfab3a805aeb0b74f9a80695f
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: c30129a01ccf1fd656ca00e6420099ebf4d553f14d3516bdd9403be09a1136e2
 retrieved_from: "https://www.ias.cs.tu-bs.de/publications/parsing_differentials.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:35:33+00:00"
+retrieved_utc: "2026-08-12T16:02:52+00:00"
 slug: parse-me-baby-one-more-time-bypassing-html-sanitizer-parsing-differentials
 snapshot: 20240211121905
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ias.cs.tu-bs.de/publications/parsing_differentials.pdf>
-- Preserved from: https://www.ias.cs.tu-bs.de/publications/parsing_differentials.pdf (stored) on 2026-08-11
+- Preserved from: https://www.ias.cs.tu-bs.de/publications/parsing_differentials.pdf (stored) on 2026-08-12
 - Capture timestamp: 20240211121905
 - Licence: unknown
 
@@ -1857,11 +1857,6 @@ B.4. Noteworthy Concerns
 2)Some reviewers raised concerns that the approach doesnot consider CSS injections.
 
 --- page 20 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
-
---- page 21 ---
 
 & b´5_åj}m;TJU‚à–
 uêqW‹øÍ9çåAæ±:’ÆñuÅâ

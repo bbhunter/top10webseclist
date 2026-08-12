@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_07
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:43:08+00:00"
+  at: "2026-08-12T16:01:51+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_07A-4_Melicher_paper.pdf"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2018.md:87"
 commit: ""
-content_sha256: da5fd4bb03d5df936b8c48fcd19b08ccc3d466643da359097e3f886aeffea224
+content_sha256: cf727b006a1bc056fef66e4af2dc7ef31b952bc858dcd33c893d311d80a6724a
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: 1823ce07dfdd8a3ef44188b38b0b185e439683e3f7f8074d76f33eb526ca948f
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_07A-4_Melicher_paper.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:43:08+00:00"
+retrieved_utc: "2026-08-12T16:01:51+00:00"
 slug: riding-out-domsday-towards-detecting-preventing-dom-cross-site-scripting
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_07A-4_Melicher_paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_07A-4_Melicher_paper.pdf (stored) on 2026-08-11
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_07A-4_Melicher_paper.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -1267,13 +1267,9 @@ Script topic
 
 --- page 12 ---
 
-dHÀ´ ”€t`T@4Dd„¸ÿÀ@ IRH ?Dd„¤$Dd¸ÿÀ³3>H¸ÿÀ@'Hà Pp¸ÿÀ@HPP?í2?í2+^]_]++qr^]]]+]qqqqqqqqq+/++^]33/^]q33_q10]]]]]]35!5!!1•ý“8ýj»‰&‹‰üÚ‹	M�ë@µJZjEUeŒ:Zjzƒ5Ueut„	Œ{*:	éù%5æö *:èø4T 0`�Àð%5æö¯¿ P0`�Àð/y		?3]?3]]q/]3]qq/]q_qq3]q_q9=/33]qq]qq10]]]]]]]]]]]!#367>73ÆýÁÉ†„É�ü -Y#
-
---- page 13 ---
-
 0.00.10.20.30.41101001000Script rank% of vulns script was present
 
---- page 14 ---
+--- page 13 ---
 
 % Count Category of top level website27.7% 2856 News/Media
 12.9% 1337 Entertainment
@@ -1420,7 +1416,7 @@ dynamic analysis. We found that the tools we tested usually
 failed to detect the DOM XSS vulnerabilities from our dataset.
 10
 
---- page 15 ---
+--- page 14 ---
 
 % of detected vulnerabilities # of reported issuesEsow0% 4
 ScanJS8% 2700
@@ -1536,7 +1532,7 @@ selected a random vulnerability on each domain. This allowed
 us to get a sample that is conceptually more representative
 11
 
---- page 16 ---
+--- page 15 ---
 
 of the types of bugs that occur across different domains,
 and hence of the types of problems that are likely to be
@@ -1668,7 +1664,7 @@ static-analysis tools, and assess the viability of other methods
 for preventing DOM XSS vulnerabilities. We rst discuss
 12
 
---- page 17 ---
+--- page 16 ---
 
 how the raw results of our measurement study compare to
 previous work that used similar methodology to measure XSS
@@ -1788,7 +1784,7 @@ the dynamic analysis. Together, these two measurements imply
 that the static-analysis tools were detecting largely different
 13
 
---- page 18 ---
+--- page 17 ---
 
 vulnerabilities that our analysis. The dataset of vulnerabilities
 with which we tested static-analysis tools, however, was lim-
@@ -1925,7 +1921,7 @@ https://github.com/scrapinghub/adblockparser
 DOMinator
 14
 
---- page 19 ---
+--- page 18 ---
 
 [9] “Cenzic application vulnerability trends report 2014,” 2014.
 [Online]. Available: https://www.info-point-security.com/sites/default/
@@ -2110,8 +2106,3 @@ JavaScript assignment and
 setAttribute
 .
 15
-
---- page 20 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u

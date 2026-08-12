@@ -5,9 +5,9 @@ resource: "https://ieeexplore.ieee.org/document/8835223"
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:35:35+00:00"
+  at: "2026-08-12T16:02:00+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://ieeexplore.ieee.org/document/8835223"
@@ -27,7 +27,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:79"
 commit: ""
-content_sha256: dee32e4709fde0d64b5d7d1936448e0c856d41fdd8266022d4ac23c6b66a0ea5
+content_sha256: 15d804e6455f40ed0fb3add82ac81718b0d186bf54a2ed723f45389e7aeec0d3
 depth: full
 depth_reason: default
 kind: article
@@ -40,7 +40,7 @@ publisher_english: ""
 raw_sha256: d9fce116c9e5c4fd021410e7ef67f619b0757dd507132fbc9accb76ab903194b
 retrieved_from: "https://minimalblue.com/data/papers/SP19_postcards_from_the_post_HTTP_world.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:35:35+00:00"
+retrieved_utc: "2026-08-12T16:02:00+00:00"
 slug: postcards-post-http-world-amplification-https-vulnerabilities-web-ecosystem
 snapshot: ""
 title_english: ""
@@ -57,7 +57,7 @@ translation_of: ""
 - Also published at: <https://iris.unive.it/retrieve/handle/10278/3713409/162410/oakland19.pdf>
 - Also published at: <https://iris.unive.it/handle/10278/3713409>
 - Also published at: <https://minimalblue.com/data/papers/SP19_postcards_from_the_post_HTTP_world.pdf>
-- Preserved from: https://minimalblue.com/data/papers/SP19_postcards_from_the_post_HTTP_world.pdf (stored) on 2026-08-11
+- Preserved from: https://minimalblue.com/data/papers/SP19_postcards_from_the_post_HTTP_world.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -2898,14 +2898,9 @@ Fig. 14. Attack sub-tree for a fast RSA signature oracle (that allows an online 
 
 --- page 19 ---
 
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
-
---- page 20 ---
-
 AwJH¯ð÷WKºŒ„¸úõØ,|kFö'¿ô”/=3}ic†ñˆÜ5u6Y +Åqý’FHÁ
 ÷�Gå¯>
 
---- page 21 ---
+--- page 20 ---
 
 .Ï­Rî‰VWà6Ô³‡s

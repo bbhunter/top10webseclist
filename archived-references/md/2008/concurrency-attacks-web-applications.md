@@ -5,9 +5,9 @@ resource: "https://www.blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:38:20+00:00"
+  at: "2026-08-12T16:00:22+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf"
@@ -23,7 +23,7 @@ canonical_url: "https://blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH
 cited_by:
   - "2008.md:90"
 commit: ""
-content_sha256: 51fb31b57e54a8e2fd0e496c8b91a9222040e334d055b58edb3dd02d9db7959b
+content_sha256: 06246efb02b3d9ac14930993d68c54e8850cc77a773d44c3145fc7e60d81beb9
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: bb999671819bc955e5b50a7e67039c9bb62e91492d9356e64ba4d9148c9dc06f
 retrieved_from: "https://blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:38:20+00:00"
+retrieved_utc: "2026-08-12T16:00:22+00:00"
 slug: concurrency-attacks-web-applications
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: date not stated
 - Original: <https://www.blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf>
 - Current location: <https://blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf>
-- Preserved from: https://blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf (stored) on 2026-08-11
+- Preserved from: https://blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -101,9 +101,3 @@ Validate Proper State Once the concurrency testing suite has completed, the fina
 --- page 9 ---
 
 Acknowledgements The authors would like to thank Jesse Burns and Brad Hill of iSEC Partners for their commentary and guidance during the research that supported this whitepaper. Any errors in this whitepaper are our own, but without their help there would undoubtedly be more. 1 Schmidt, Douglas, Michael Stal, Hans Rohnert, and Fank Buschmann. Pattern-Oriented Software Architecture, Volume 2: Patterns for Concurrent and Networked Objects. Chichester: John Wiley & Sons. 2000 2 <http://www.opengroup.org/bookstore/catalog/c193.htm> 3 Ben-Ari, M. Principles of Concurrent and Distributed Programming. 2nd ed. Essex: Addison-Wesley, 2006
-
---- page 10 ---
-
-''9?:9&"%&8/78-""--/?¸É@> / /.!.!"988''&h??+ 0`p°Ààð
-¸ú@D S d  2" ""¸Ã¶@A–!kŠ++ö]ô]ý]qä]?<<<?<<<99‡.+‡}Ä‡.+‡}ÄíÀíÀíÀíÀíÀíÀíÀíÀY10]]CX² /]Y]]]]qCX¶/@U	¸ÿô´U	¸ÿô´U	¸ÿà´U	¸ÿØ@U	U
-U¸ÿþ´U¸ÿì´U¸ÿÜ´U¸ÿØ@	U

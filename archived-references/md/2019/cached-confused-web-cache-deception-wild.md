@@ -5,9 +5,9 @@ resource: "https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:36:57+00:00"
+  at: "2026-08-12T16:01:56+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf"
@@ -25,7 +25,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:5"
 commit: ""
-content_sha256: 17701c30dc48473efb9a3553a2a60f11fc520ea87ad7fd1431adb42ae5d12ab3
+content_sha256: 0e43bd2c2f4a141694957a22b430de0da31b562eda5607f8c68c3fcb64599897
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -38,7 +38,7 @@ publisher_english: ""
 raw_sha256: 391981498c2ebfd724e074e0e1d401e0dfaaa2774d3874ba3c191c6759184d48
 retrieved_from: "https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:36:57+00:00"
+retrieved_utc: "2026-08-12T16:01:56+00:00"
 slug: cached-confused-web-cache-deception-wild
 snapshot: ""
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf>
-- Preserved from: https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf (stored) on 2026-08-11
+- Preserved from: https://sajjadium.github.io/files/usenixsec2020wcd_paper.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -800,13 +800,8 @@ org/
 
 --- page 24 ---
 
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
-
---- page 25 ---
-
 `†µÔ‡GîÁì@¾ß²›Ìs÷[^’8ì:�’RÓ
 
---- page 26 ---
+--- page 25 ---
 
 =ýwú†|’ð{©R1êm.Ìñ[4±B‘¤ÍÛ®o±iÉùS�Mû¯¯?[¼t¶…Ø7æ�Žó£øý–?òbBù1üp”<�ûx'šh‚fŒwO~i-¿â£Kz&K Ò‡% ƒ7eÓÛZ áï-ŽÈ«Æ{&%â¬@ÈYd—e­£�²6ŒVL=@¯Ì3ÚÝÆM*?.„{ø¬9�xAmG$¥lÌB¤ËXÿØù'M…Áµšºÿïã™

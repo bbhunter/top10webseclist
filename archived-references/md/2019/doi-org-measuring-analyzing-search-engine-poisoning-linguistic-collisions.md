@@ -5,9 +5,9 @@ resource: "https://doi.org/10.1109/SP.2019.00025"
 tags: [article, webseclist-reference, doi-org]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T13:27:23+00:00"
+  at: "2026-08-12T15:50:24+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://doi.org/10.1109/SP.2019.00025"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2019.md:82"
 commit: ""
-content_sha256: c5774204a3d61a76e2c6328d44415e54552f6cca1260c9c5949ad5e0f32e664c
+content_sha256: 463b23bcb080b8c57c4dbcfb4df24bfbad9536b676bfe06545b2dc0aeb24de36
 depth: full
 depth_reason: default
 kind: article
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: f165aff35386eb570171f7b352a0f759a04d217ab7fd57f0e649c5771bc90496
 retrieved_from: "https://doi.org/10.1109/SP.2019.00025"
 retrieved_kind: manual-import
-retrieved_utc: "2026-08-09T13:27:23+00:00"
+retrieved_utc: "2026-08-12T15:50:24+00:00"
 slug: doi-org-measuring-analyzing-search-engine-poisoning-linguistic-collisions
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://doi.org/10.1109/SP.2019.00025>
-- Preserved from: https://doi.org/10.1109/SP.2019.00025 (manual-import) on 2026-08-09
+- Preserved from: https://doi.org/10.1109/SP.2019.00025 (manual-import) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -267,15 +267,6 @@ Authorized licensed use limited to: IEEE Xplore. Downloaded on August 09,2026 at
 --- page 49 ---
 
 Authorized licensed use limited to: IEEE Xplore. Downloaded on August 09,2026 at 08:36:45 UTC from IEEE Xplore. Restrictions apply.
-
---- page 50 ---
-
-+N@=wz’¡m¢kt•vn}reºsÖßÓ¦¾½¹¸ Ä×Óx¹Y½_·R¢û
- }§ø¹­è÷�åøRù@û�QxBXû>Pûû4¦3¶Y_±ÁsÉ÷áê÷÷BÜû_v„eL¦÷+÷÷÷1¥ûbû²á½CûûdNE3Ué÷/¾“§Ÿš› ª”®ƒŸøÔÕøUù*üPû'œƒÏ¶�˜Â÷mûZüèÌ÷hù"}§ù§Ã×EÕ÷oÐT×Ø÷¶øîÀ®µÏÝCÇ'û:H0Jžnô/äû9ulG*ÚG÷÷ØÍòØi¼û
-åy$ÔW£gSJ^^J?XÅâË¡µÅºØ¼Ø2Åg¹ÃÅ¸´ÊÏ¶_FRo^Re†ˆ‹‹‡ˆ÷�¶ø§©çÆu÷˜ÂžÏ¼ó×È÷÷÷9/÷	ûû2&ûûÓ:÷Âµ›´Àbû7û û,q÷Æ÷ùw‡‚€‚sof~g?[Ö÷Ä›Ç ¥Ÿœ¤–¨â¸5û<<€÷÷Œ÷÷ø_mrqln¤r¨ª¥¤¨ªq¥mûûmrqln¤r¨ª¥¤¨ªq¥m<…Ÿ{ó÷Š÷Ü÷²Höû!Ð­¶ÇÇ½h²^hsuiˆj¡x°‘’ŒŒ‘h�’‹‹Œ“‘…ƒkofUf±øÙpmrqln¤r¨ª¥¤¨ªq¥m÷c÷Í÷ÍøªøüŒIøŒûüŒIøŒâƒö÷òŸ÷E©Ï¾Ìöªç÷ˆ÷8–Îœ³°º¹Ã‹‹™ «¼˜¯´±~¯t¢®hP¢U/EM8cœuª£œœ£™…—|œ™†”“«¹©¼Ç»VH]~TsToKxZ�ZŠ_•Jmtskn¡u©«¢¡©©r¤nøÈ}²÷
-¬k¶÷�Ÿ÷Qª÷ß÷
-Òø
-³ßùDÔh=X~Hû>û÷÷Bè¯éÄÆ¼¼Î¦Ô÷1÷ûû
 
 --- page 51 ---
 

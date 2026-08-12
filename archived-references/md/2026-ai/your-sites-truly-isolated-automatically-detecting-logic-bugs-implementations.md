@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:43:07+00:00"
+  at: "2026-08-12T16:02:56+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2026-ai.md:40"
 commit: ""
-content_sha256: 5ab503c7695100220eda8839b55293d15e8fb582f0daafc2334f1c2d9920c310
+content_sha256: f6e82050713b88b7fff523d93da6f2c58bb183de097c7dcbe31ccb62baa7bc53
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: dd3b0033dc24361354c29fc8c092245f77dff113f92764490b1033d290679e36
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:43:07+00:00"
+retrieved_utc: "2026-08-12T16:02:56+00:00"
 slug: your-sites-truly-isolated-automatically-detecting-logic-bugs-implementations
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf (stored) on 2026-08-11
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2026-f902-paper.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -185,20 +185,11 @@ www.ndss-symposium.org
 
 --- page 3 ---
 
-ûTøÄÐêS'ïèSmÎ§–¹+Êgì’EÆgYN%…�Š<½ßJNãÙ�pèl�ÍÚÏ ^~~xüÕ'DÚáÞ§,tJûÔQJlèA´.w˜¸{xxmÚ¿€4PÔå³”�@�Ïr3}
-wfbªEtöÎ]Ç‚'P¤
-
---- page 4 ---
-
-8í�ÄZÎ–“QlH‹åœbáûý+²o‹¤ƒÕíÕŠÑ»ìc«ìñ7öýÎ™– Ø­S‡?*é¨UZîù•lÇN žÌ™ZÝ¾TÛdì"ò ½­µjæ8]ZæóJPø½ÏîU¿S¿w?pÉ¿øZÚ=‚ü4$�RX�Ð¶ý?_àB�¹[�F-‡Y|ñ@ÔŽÀh�¶§v™•bß¬XI«Âw¹Ê%¢l:ºÍâ„Ÿt8„˜Ï"WžqâñÇ†®-›½&
-
---- page 5 ---
-
 Browser
 RendererSandbox
 RendererSandboxIPC
 
---- page 6 ---
+--- page 4 ---
 
 To this end, we propose and evaluate a leak sanitizer as an
 oracle for Site Isolation bugs. Running the complete browser,
@@ -338,7 +329,7 @@ in the browser to leak the renderer's memory. Since Spectre
 cannot leak data from other processes, Site Isolation mitigates
 2
 
---- page 7 ---
+--- page 5 ---
 
 Browser Process
 Browser
@@ -374,7 +365,7 @@ sub.a.com
 RenderFrame
 b.com
 
---- page 8 ---
+--- page 6 ---
 
 the vulnerability by ensuring that all potentially leaked data
 belongs to the attacker's site.
@@ -486,7 +477,7 @@ The browser process kills
 renderers if it receives malformed or invalid messages indicat-
 3
 
---- page 9 ---
+--- page 7 ---
 
 ing a renderer compromise. It contains the compromise to the
 renderer and reduces the susceptibility to undened states in
@@ -611,7 +602,7 @@ This is the most common class of SI bypass vulnerabilities.
 If the browser process lacks security checks to verify that a
 4
 
---- page 10 ---
+--- page 8 ---
 
 attacker.com
 Ô victim.com
@@ -624,7 +615,7 @@ blob:https://victim.com/c9c5f... blobnavigate
 3
 4
 
---- page 11 ---
+--- page 9 ---
 
 victim.com
 attacker.com
@@ -635,7 +626,7 @@ attacker.com
 blankBrowser
 RendererÔ ÔIPC IPC IPCGetOriginalOpener() GetOpener()
 
---- page 12 ---
+--- page 10 ---
 
 Fig. 3. Schematic view of the CVE-2018-18345 SI bypass
 renderer belongs to the claimed site, a compromised renderer
@@ -764,12 +755,7 @@ parameters. We propose a fuzzer architecture fullling all three
 requirements to trigger SI bypass vulnerabilities.
 5
 
---- page 13 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
-
---- page 14 ---
+--- page 11 ---
 
 Fuzzer Engine
 GeneratorBrowser
@@ -785,7 +771,7 @@ Renderer
 Renderer IPC IPC
 123 4 5
 
---- page 15 ---
+--- page 12 ---
 
 Fig. 5. SI bypass fuzzer
 We can trigger cross-site navigations by generating HTML
@@ -899,7 +885,7 @@ behavior of the browser, and the mutations of the intercepted
 IPC messages that simulate the compromised renderer. To
 6
 
---- page 16 ---
+--- page 13 ---
 
 reproduce the bugs that our fuzzer discovers, the fuzzer must
 reliably replay the exact IPC mutations at the right time
@@ -1101,7 +1087,7 @@ the JS code to call the member function or assign a value
 to the attribute. The generator either uses tting variables
 7
 
---- page 17 ---
+--- page 14 ---
 
 from the context for the required parameters or instantiates
 the required values or objects, preferably by using members
@@ -1221,7 +1207,7 @@ the magic value of the cookie reected in the reply. The
 second endpoint simulates a non-credentialed CORB-protected
 8
 
---- page 18 ---
+--- page 15 ---
 
 Renderer ProcessBrowser Process
 Renderer Register(...)
@@ -1240,7 +1226,7 @@ Register (...)
 mojogenerates
 Ô
 
---- page 19 ---
+--- page 16 ---
 
 response. It does not require cookies to be set and returns
 an HTML document containing the secret value. We set the
@@ -1349,7 +1335,7 @@ process, and C++ bindings are generated for both endpoints
 that provide a layer of abstraction around the Mojo IPC library.
 9
 
---- page 20 ---
+--- page 17 ---
 
 Figure 6 provides an example of this setup: The
 BlobRegistry
@@ -1467,7 +1453,7 @@ To evaluate our fuzzer's capability to trigger and detect
 SI bypass bugs, we run the fuzzer on old browser versions
 10
 
---- page 21 ---
+--- page 18 ---
 
 TABLE II
 K
@@ -1597,7 +1583,7 @@ instrumentation to control the browser and only create the
 input documents with Fuzzorigin.
 11
 
---- page 22 ---
+--- page 19 ---
 
 Fig. 7. Edge Coverage over Chrome and Firefox (24 hours)
 TABLE IV
@@ -1730,7 +1716,7 @@ We execute our fuzzer for 10 hours on Chrome and Firefox,
 and count the iterations that result in the Playwright error,
 12
 
---- page 23 ---
+--- page 20 ---
 
 0
 5
@@ -1756,7 +1742,7 @@ Time (hours)
 our fuzzer (all)
 fuzzorigin (all)our fuzzer (browser)fuzzorigin (browser)
 
---- page 24 ---
+--- page 21 ---
 
 IPCFuzzer.activate_leak_sanitizer();
 IPCFuzzer.mutate_url("http://127.0.0.2:8080/victim.html");
@@ -1885,7 +1871,7 @@ sion [22]. On the other hand, it could guide the manipulations
 of IPC messages toward messages that pass security checks.
 13
 
---- page 25 ---
+--- page 22 ---
 
 In addition to code coverage, JavaScript execution feedback
 from exceptions and error messages could guide JavaScript
@@ -2018,7 +2004,7 @@ to the rules and guidelines for reporting security bugs, which
 the browser developers dene.
 14
 
---- page 26 ---
+--- page 23 ---
 
 The discovered bugs were reported no later than December
 2024. The bug that received a CVE was xed within 3 months
@@ -2207,7 +2193,7 @@ of the Seventeenth European Conference on Computer Systems
 p. 166–180.
 15
 
---- page 27 ---
+--- page 24 ---
 
 A
 PPENDIX
@@ -2394,7 +2380,7 @@ H#
 1: Checks missing; 2: Checks bypassed; 3: Origin confusion
 16
 
---- page 28 ---
+--- page 25 ---
 
 A
 PPENDIX
@@ -2566,11 +2552,7 @@ html
 Fig. 9. Example input produced by the generator
 17
 
---- page 29 ---
-
->.Ö¨â¸=@z2«r¼Îºjß,“ö§âÝñ–ý.bÌŒÕÊHd|8_µðE"”»ª´þ2Š1x=lxØûQ••?gƒƒùÅLï%1<×¿Õ°cÄ—}¡üŸá¿‹±íj‚5ëZ‰‹©¥Þ‹/m
-
---- page 30 ---
+--- page 26 ---
 
 A
 PPENDIX
@@ -2630,11 +2612,3 @@ the Chrome build dependencies must be installed
 4) Benchmarks:
 None
 18
-
---- page 31 ---
-
-¨¤5á0Qž’Ó €âQÑÁCõ5x3 Ïˆ®©‡›µ†páJ-¤ÂKYògÔ5ýÍ*í”ñO
-
---- page 32 ---
-
-±”üï�©Ò6«IÇÈñuEníjŽá+�Ñ±E³„“ÏgÅ$p*ŽV­V·á�íÕçw MÝ‰øô/Â`³ú¸rMãúwÞ_à:…&¶§n<ëPÅ*uÇ='ÚÉtò°û¬:9žÌg^jõ„òýµxîÊ*ÿï�nbgêö¿-;²1ŽÍ8£VÎ­—f

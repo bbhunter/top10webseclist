@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/crossfire-a
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:44:05+00:00"
+  at: "2026-08-12T16:01:37+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/crossfire-analysis-firefox-extension-reuse-vulnerabilities.pdf"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2016-17.md:76"
 commit: ""
-content_sha256: 994f7762bcb8128935d1a7720182a0a9174376edd5a5b0b609aa95a0780be785
+content_sha256: 13f737365cffd8aee8481c17c1bc6a6d59fc59f72e90c0df23d1cf9652f6b21a
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: ebff8b60d54fafa3b1be2f72a52dab2c8bc333e756aa9ce6d53799a01ebccef2
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/crossfire-analysis-firefox-extension-reuse-vulnerabilities.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:44:05+00:00"
+retrieved_utc: "2026-08-12T16:01:37+00:00"
 slug: crossfire-analysis-firefox-extension-reuse-vulnerabilities
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/crossfire-analysis-firefox-extension-reuse-vulnerabilities.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/crossfire-analysis-firefox-extension-reuse-vulnerabilities.pdf (stored) on 2026-08-11
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/crossfire-analysis-firefox-extension-reuse-vulnerabilities.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -1346,11 +1346,6 @@ a‡¹ÑáôÌ¨ÕÅ}$ˆ>šãÛK/áT¬ªøŠúR
 
 --- page 14 ---
 
-Q1/ŽÏaH¾ÍÍ¦m¦™†–óu¡„ñ@´mPÒŸÚós[¢Ýë¨X{¹-¡s&[ªÉèë½'	ÂâqìE}|Ô­»t×¢Ôœ'„ ÍsDnÒdÎ/Szç�Â‚šif.
-½L8�fÑ¹¶¯ÏYM°¶Ù]ÔÂ+"Õ¿�5¡oTØœƒ9M%ˆÚ,ˆ-¥eÖ'3×“ìÄ^èôßºF@À|ëû>Q®‹Tá9ršK�´Y–•™ˆƒ¶hw‡B^ç€7îKåý�ýÏ~%âq;5<ÀÈ+âÕWþwýj•×üšgôƒM‚>ˆmbÕœ–òyG‘‚h QÆûEJºÇL‡â:û•1Y•œGZ]ß.PÒ¯	<ŠàäÊpUa¸œ,JI®ÈUOÖÒÂI{3®å^æ�#‚uK_‘IKXšþ³ÍØÕæ¾3zôâ´¨•ýs9ÎZ¥ØóÕÏ‹.¢6kˆ‘
-
---- page 15 ---
-
 into their code using the provided
 require()
 function, and
@@ -1480,7 +1475,7 @@ Another class of work proposes static and dynamic analysis
 techniques to identify security aws in browser extensions.
 10
 
---- page 16 ---
+--- page 15 ---
 
 Kapravelos et al. [16] describe Hulk, a dynamic analysis
 system that monitors extension activities through the use of
@@ -1627,7 +1622,7 @@ Distributed Systems Security Symposium
 [5] Brian LePore, “Local Load,” http://www.getlocalload.com/.
 11
 
---- page 17 ---
+--- page 16 ---
 
 [6] N. Carlini, A. P. Felt, and D. Wagner, “An Evaluation of the
 Google Chrome Extension Security Architecture,” in
@@ -1791,18 +1786,7 @@ on Security and Privacy
 . IEEE Computer Society, 2009.
 12
 
---- page 18 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
-
---- page 19 ---
+--- page 17 ---
 
 î#F#L.z¨Eñ‡c/šâ^öQzt­ºR–ç.¤¢Á=½˜@ Œc¨ì/“Ž[%2üˆ‚z��iBPûË
 YXux›Ê¨ÃtMêä#@T—ÖªY�>Ò;mýª‘ÃçŒUMŽ{»G« šÈÒÆS;×ˆâhp�ÀÉZŒ"îŒ“i#È}î«óžF
-
---- page 20 ---
-
-Õu$êouÚ?Q6º.õ"uÚ+'à¨ÙÙ_yŠ8	�±›³åëËÜ8ã3HK
-D¢ÝžÀ»BäçÝsÝ¿RH±óƒ�œ+ÉÈ	‹BG@ÖÆF“ï02iBÊJí`‘k7N4ŽaPÕy²ª‹x"�§êÞÙe%^^½£,ç[2—ïkôð
-b¸Í¸†5­ðNb1¨›ªÌ	òý¥Š†þ™ö¾ò¸pÔ[1ŠÂð²D?Ñ?‡Yïç,ÐÒ½·5";êï1ºÍDSe£-¨:,�¦Øú»wÜ¿Mo �r‰Q;VrM©¾Å/âN]I¡‹Ùm`¢ÝFø

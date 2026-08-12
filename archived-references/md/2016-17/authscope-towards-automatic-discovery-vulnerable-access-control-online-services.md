@@ -5,9 +5,9 @@ resource: "https://acmccs.github.io/papers/p799-zuoA.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:00:55+00:00"
+  at: "2026-08-12T16:01:25+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://acmccs.github.io/papers/p799-zuoA.pdf"
@@ -16,9 +16,9 @@ also_at: []
 authors: []
 canonical_url: ""
 cited_by:
-  - "2016-17.md:94"
+  - "2016-17.md:95"
 commit: ""
-content_sha256: 3a5d1eb2406741486021ce77b99239c408bac024906ed74e21c08aff3e2b803c
+content_sha256: 4aa98075f242942354aba3ec96d621167dbc4287cbea80665a50534d3fa86413
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -30,8 +30,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: a5304e8816551432a54dbfe6ef0c2eeab6425d09de512996280c26ad37e656aa
 retrieved_from: "https://acmccs.github.io/papers/p799-zuoA.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:00:55+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-12T16:01:25+00:00"
 slug: authscope-towards-automatic-discovery-vulnerable-access-control-online-services
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://acmccs.github.io/papers/p799-zuoA.pdf>
-- Preserved from: https://acmccs.github.io/papers/p799-zuoA.pdf (live) on 2026-08-10
+- Preserved from: https://acmccs.github.io/papers/p799-zuoA.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -94,25 +94,6 @@ TX,
 USA
 
 --- page 4 ---
-
-‹-û
-‹ûZ‹ÿÿ•ffÿ æfÿÿ›šÿ6³4ÿÿÉ€ÿffÿÿã™šÿ"LÍÿÿòffÿ&³3‹û‰¬øÕw÷gØ÷´÷÷ï‹ÇÿLÌÈÿ³4˜‹ÿÌÌÿÿý€ÿ34ÿÿü€‹ÿÿÈ³3ÿÿÝ³4ÿÿËLÍÿÿçLÌ3bÿ™šÿÿô™šÿffÿÿö€”ÿÿùæfÿ-€žÿ€‘ž‹ÿ€ÿ€siûÚ‹8p†Eˆ……‹v‘…¼Œÿ#ÌÍŒÿ633‹ÿ/™š‹ÿffŠ½Š‘‘‹ …‘EŽz�‹Þû‹Ìøv÷&®ÈÖ÷Nãp¨øÈøhvžy œ©ÿæfÿš‹“‰‘‰’‰’…”‹“¤¥¯Ô¯¾r+‹KtWPOAB
-
---- page 5 ---
-
-2°-9°"@*+:<$9°±99±²999°&µ"$9±7	³*+-/$9°°901'#'7672327&#"'4?654'&"&#"5674#"'672BVüTT×Dzh>DjmHX;�oN7Í–QD! VþN%-þÎV%v%ºN><'+³N¹²6+´H6+²?+°+3°/±!é³+°3´+°2°O/°;Ö±Fé°2°F±é°/°F±N+´3 +°3° Ö±é°/±	é±P+±F³@A$9°µ$6BCH$9°N³+,$9°	±-99°3°.9±?H±3;99±!³	$901"&54632"&54632%!".54>3!2'727!".5'727!2>5m>5/%!3ü™%/0$#11+þWªÉ%E%ðþÙP•š^%‡%Xd�P-¸+@
-+25$9±°9±±%099°*³	
-5$9±%°9°5°'9°0±"99±°9012#".546'64>7632#"'6&'.#"3267`_?<B+DÍ®1-278$9±2°49°
-²-999012#".5462654.#"'732632#"'&"'6;`_?<B+C99±°9°°-9014"3252632#"'2&! '5437>54&/"=7áRTTRTäX¼Éïä'/?8dþùþö`5?21@5`˜NMúNNsÍ‡ËÌün+'''%-â-$'XþÛRPL²+´+²+°
-/´+° /°Ö´+° Ö±
-é°2±!+±µ	$9015673#.".5473jTTR10Ú/4;`J
-bŽƒTÙL#PZ
-2ý´1#5/u!žo¨/#LPöš	J°/´"+°/´"+°/°Ö´,+°±+´ +±+±°9±±9901324'&#"&547672#"Ñdf=fJ7HD[^@FJ?_o5þð;u;XýðZ�šdX^š®ZL‘åéF°/´ +°/°Ö´+°2°´,+°/±+±±99°´$901462"4'7672&#0567‘%6&&6'I+@�6&&6%þ¬žBmtZ�eR”'þ“!$X²+°/°3´"9+°2°%/°!Ö°#2´,+°2²!
-+³@	+±&+±!²	999±"°9°±$9901"'476532732+&#"567'3d;}œ*$9°±99°²99901654#"5654'&#"#'7632#"/?7^-y–7FzT6;�D+3VHojF!6+ž%T3†+5V;%G…!%+Hj8/>V9'ÿ/Å!$K°/°3´"9+°2°%/°!Ö°#2´,+°2²!
-+³@	+±&+±!²	999±"°901"'476532732+&#"567'3d;}œ++
-
-
---- page 6 ---
 
 4
 ;
@@ -186,7 +167,7 @@ bŽƒTÙL#PZ
 
 
 
---- page 7 ---
+--- page 5 ---
 
 ¶ 
  
@@ -334,7 +315,7 @@ W
  
 W
 
---- page 8 ---
+--- page 6 ---
 
 GET /api/v1//users/21691/
 notifications?in_app_token=
@@ -493,7 +474,7 @@ false,"created_at":"2017-
 
 21691
 
---- page 9 ---
+--- page 7 ---
 
 Field Recognition 
 a
@@ -600,316 +581,316 @@ Cloud
  
 W
 
+--- page 8 ---
+
+<
+N
+;
+C
+;
+T
+;
+I
+;
+A
+;
+H
+>
+ 
+
+ 
+
+N
+ 
+N
+ 
+ 
+
+C
+ 
+C
+ 
+
+ 
+
+T
+ 
+T
+ 
+ 
+ 
+
+ 
+
+ 
+
+I
+ 
+I
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+
+A
+ 
+A
+ 
+
+H
+ 
+H
+
+--- page 9 ---
+
+<
+N
+;
+C
+;
+T
+;
+I
+;
+A
+;
+H
+>
+
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+<
+T
+;
+H
+;
+L
+>
+
+L
+ 
+ 
+
+T
+
+H
+ 
+ 
+<
+T
+;
+H
+;
+L
+>
+ 
+ 
+ 
+
+ 
+H
+ 
+ 
+
+ 
+L
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+N
+;
+C
+;
+A
+ 
+H
+ 
+ 
+ 
+
+ 
+ 
+<
+N
+;
+C
+;
+T
+;
+I
+;
+A
+;
+H
+>
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+<
+name
+;
+v
+alue
+>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<
+name
+;
+v
+alue
+>
+
 --- page 10 ---
-
-<
-N
-;
-C
-;
-T
-;
-I
-;
-A
-;
-H
->
- 
-
- 
-
-N
- 
-N
- 
- 
-
-C
- 
-C
- 
-
- 
-
-T
- 
-T
- 
- 
- 
-
- 
-
- 
-
-I
- 
-I
- 
- 
-
- 
- 
- 
-
- 
-
-A
- 
-A
- 
-
-H
- 
-H
-
---- page 11 ---
-
-<
-N
-;
-C
-;
-T
-;
-I
-;
-A
-;
-H
->
-
- 
-
- 
- 
-
- 
- 
- 
-<
-T
-;
-H
-;
-L
->
-
-L
- 
- 
-
-T
-
-H
- 
- 
-<
-T
-;
-H
-;
-L
->
- 
- 
- 
-
- 
-H
- 
- 
-
- 
-L
-
- 
-
- 
- 
-
- 
-
- 
- 
- 
- 
-N
-;
-C
-;
-A
- 
-H
- 
- 
- 
-
- 
- 
-<
-N
-;
-C
-;
-T
-;
-I
-;
-A
-;
-H
->
- 
-
- 
- 
- 
-
- 
- 
- 
- 
-
- 
-
- 
- 
-
- 
-
- 
-
- 
- 
- 
-
- 
- 
- 
-
- 
- 
-
- 
- 
- 
- 
-
- 
- 
- 
- 
- 
-
- 
- 
-
- 
- 
- 
- 
-
- 
-
- 
-
- 
-
- 
- 
- 
- 
-
- 
- 
- 
- 
- 
- 
- 
- 
-
- 
- 
- 
- 
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
- 
-
- 
- 
- 
- 
- 
- 
-
- 
- 
- 
- 
- 
-
- 
-
- 
- 
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
- 
- 
- 
- 
-
-<
-name
-;
-v
-alue
->
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-<
-name
-;
-v
-alue
->
-
---- page 12 ---
 
 <
 name
@@ -1101,7 +1082,7 @@ ED
  
 +1
 
---- page 13 ---
+--- page 11 ---
 
 5
 ;
@@ -1156,7 +1137,7 @@ ED
 ;
 838
 
---- page 14 ---
+--- page 12 ---
 
 0
 50
@@ -1342,7 +1323,7 @@ ED
  
 306
 
---- page 15 ---
+--- page 13 ---
 
 I
  
@@ -1485,7 +1466,7 @@ I
 ;
 000
 
---- page 16 ---
+--- page 14 ---
 
 00 {
 01 
@@ -1656,7 +1637,7 @@ K
 ;
 000
 
---- page 17 ---
+--- page 15 ---
 
 4
 ;
@@ -1666,7 +1647,7 @@ K
  
 306
 
---- page 18 ---
+--- page 16 ---
 
 _frmn`9Z^#'p0Y'Nj<RmIO
 [$;[XG6J2S!_bj[CCnA[$B_bL9=n,NFQRY66j.IV3R0kQ,ki&<DtXVH2Q1KOk61

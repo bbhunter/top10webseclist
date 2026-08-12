@@ -5,9 +5,9 @@ resource: "https://download.vusec.net/papers/glitch_sp18.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:35:01+00:00"
+  at: "2026-08-12T16:01:49+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://download.vusec.net/papers/glitch_sp18.pdf"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2018.md:73"
 commit: ""
-content_sha256: 1b8e0aab7994dc401b05db726d3a2985444fc0a48a90bd299a16d753e90badb1
+content_sha256: 22ceb541d0c1e8c48acb39f3576578c5d77dd4d3c5252627ede9a0d1e8ce77c4
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: e94b5190652323c2e2fe26472fc1a36b60365600a749d250e2c4953e8d17124d
 retrieved_from: "https://download.vusec.net/papers/glitch_sp18.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:35:01+00:00"
+retrieved_utc: "2026-08-12T16:01:49+00:00"
 slug: grand-pwning-unit-accelerating-microarchitectural-attacks-gpu
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://download.vusec.net/papers/glitch_sp18.pdf>
-- Preserved from: https://download.vusec.net/papers/glitch_sp18.pdf (stored) on 2026-08-11
+- Preserved from: https://download.vusec.net/papers/glitch_sp18.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -186,13 +186,3 @@ Counter value0.020.040.06FrequencyUncachedCached
 --- page 3 ---
 
 DEFG
-
---- page 4 ---
-
-GGJ><ODJIJM?@M»¼¼¼¼¼¼¾¾¾¾¾¾¾¾ÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁ»¼½¾¿ÀÁJM?@MN<IF»<IF¼<IFÂ<IFÁ»¼½¾¿ÀÁ=<<IF»<IF¼<IFÂ<IFÁ¾¾¾¾¾¾¾¾¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿=<<IF»<IF¼<IFÂ<IFÁKLWFRQIOLFWJM?@MN>>@NNJM?@MDEF
-
---- page 5 ---
-
-<IF»<IF¼<IFÂ<IFÁ »¿Ã¼Á Á¿ÀÁÂ½CTND><G<??M@NNNK<>@Ÿ <IF¼ <IF»JR
-IJR
-IÏ¼

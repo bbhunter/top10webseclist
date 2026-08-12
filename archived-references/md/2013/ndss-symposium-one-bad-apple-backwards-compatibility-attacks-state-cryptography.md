@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/one-bad-a
 tags: [article, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:44:06+00:00"
+  at: "2026-08-12T16:01:01+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/one-bad-apple-backwards-compatibility-attacks-state-art-cryptography/"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2013.md:48"
 commit: ""
-content_sha256: d6a2fcea4933a08a4f8a9780954fac7d5289a8ca75a027d072c9a5bc5c519b00
+content_sha256: 8805d75720474d7724d6003e25350ab1b7554c1e0b3a03ed0b8737b0cf2172e5
 depth: full
 depth_reason: default
 kind: article
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: c919ba185839022dde9ea14ed2acf12942986eaccf3aff955e551fce91cec08e
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/10_4_0.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:44:06+00:00"
+retrieved_utc: "2026-08-12T16:01:01+00:00"
 slug: ndss-symposium-one-bad-apple-backwards-compatibility-attacks-state-cryptography
 snapshot: ""
 title_english: ""
@@ -53,7 +53,7 @@ translation_of: ""
 - Original: <https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/one-bad-apple-backwards-compatibility-attacks-state-art-cryptography/>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/10_4_0.pdf>
 - Also published at: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/Presentation10_4.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/10_4_0.pdf (stored) on 2026-08-11
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/10_4_0.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -3440,10 +3440,5 @@ ISO 10646. RFC 2044 (Informational), Oct. 1996. Obso-
 leted by RFC 2279.
 
 --- page 20 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
-
---- page 21 ---
 
 ÁO:xÒ¤£ê©³îWTŸñhX”u³X[–öÆ´D

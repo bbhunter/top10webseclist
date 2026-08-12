@@ -5,9 +5,9 @@ resource: "https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:39:54+00:00"
+  at: "2026-08-12T16:00:25+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2010.md:98"
 commit: ""
-content_sha256: c705a11380a1c760356731c9c9b5abb2dbbc29a1ff20cdc1f7d39120fb2aaef3
+content_sha256: 76abd3620e77f6b910a3d9ded0e9f9e4b3b0f1e6fc9e1fb417bf2d727461478d
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: 174b1b725e28ed117a9a301c6e973642bcea61f83a1c78c728d63bb1efb2d555
 retrieved_from: "https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:39:54+00:00"
+retrieved_utc: "2026-08-12T16:00:25+00:00"
 slug: empirical-study-privacy-violating-information-flows-javascript-web-applications
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf>
-- Preserved from: https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf (stored) on 2026-08-11
+- Preserved from: https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -2652,14 +2652,5 @@ Proceedings of POPL 2007
 237{49. ACM Press, Jan. 2007.
 
 --- page 16 ---
-
-&ÀkO²ë~÷ÀI"j»±¬ˆ°�ñB:b»@¼µ•ã„LŠí¶á»ƒÍgTîn£µ P«ËüêÌ»Kð¥¦^�7ö†4bª~Aa]V™<5¿žÎk³½Ú¼Kâ+tþ4m	æê8Hñ,÷é PsK5nGø‡ó{ì¶ÅO³$ùŽäOàT°;û°]”¼ØpRU÷jKõ	x’Y£%X6«h5åÃ¥ÿè$»ãÈ=åÃ+JsmÈ‡Uƒ�.QZ:$C/WïªÃìÇsîŒlZ¢&¡_7„É7ØDbF’-ë6Ö2%G3¢vK„¥u™§$Ó†-äK½!jx‘ÖÉ9—£/-÷�Ì–"íŒKIÝ†Þ¹{baËñ#iG|ð€G¾ÐÉgÄ.'S‚	¾’©6ƒ+²T‡8Žœ‚ß»ˆbu%{îóÎ!9*Õ™ÎO°BÝ!ÀÉ´Ë¢KÑn”š©ðÆ´{jÕ£Àfî  %çÄ€÷„$Ò,ñVäóð
-]ouà,QO
-
---- page 17 ---
-
-3®o«×†Š0É£“�	À¤òº¥‰ÚY±'=—¢‘g´cÁ^­¹}9~›äòªõjX^’|�H§4ªøŒ±Œÿtü	�@SØV„í•¨*k…qBGi­Å;íá•dÖ®ý§šÐ¡iJ“f«P‰qxeåõËßbùÙâWl,Ìˆý9
-
---- page 18 ---
 
 }"Ê•xTnS/Û[Æ7ªˆC}{ÊÉï<“'ç¶Ú?’Æ²†Z¯>„@HÈ¿®ß¢çmò­�8j%dŠËØræJœÔ3 ÛVíØWÝ‰PMÞga××"Û‚þ]Š¤:!8.£¨C

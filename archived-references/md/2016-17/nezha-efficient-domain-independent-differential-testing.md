@@ -5,9 +5,9 @@ resource: "https://www.ieee-security.org/TC/SP2017/papers/390.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:41:30+00:00"
+  at: "2026-08-12T16:01:40+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-12
 sources:
   - id: original
     resource: "https://www.ieee-security.org/TC/SP2017/papers/390.pdf"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2016-17.md:94"
 commit: ""
-content_sha256: 3d4afbd9be0a7451e31d320f0da4aba6bdea5069526086bd88ea19f260eb360b
+content_sha256: 0a88e5ccb6df69ffd9de8c351cda6403966791fe2d851625f43c011a4598d5fe
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: f2501b0313d9dcf31e408115651b7a3961871ae5337d96bc71f2fe1c9986b15a
 retrieved_from: "https://www.ieee-security.org/TC/SP2017/papers/390.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:41:30+00:00"
+retrieved_utc: "2026-08-12T16:01:40+00:00"
 slug: nezha-efficient-domain-independent-differential-testing
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ieee-security.org/TC/SP2017/papers/390.pdf>
-- Preserved from: https://www.ieee-security.org/TC/SP2017/papers/390.pdf (stored) on 2026-08-11
+- Preserved from: https://www.ieee-security.org/TC/SP2017/papers/390.pdf (stored) on 2026-08-12
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -2187,10 +2187,6 @@ Process_i (Data)NEZHA_TestStartNEZHA_TestEndLLVMFuzzerNezhaPathsLLVMFuzzerNezhaO
 
 --- page 13 ---
 
-Ð01!"&=#"5432#"&546;232#32654&#"“<´i½ÿËg¤;5W3_n9$$"'ý�d{9»+6+»+¸+¹ô¸6¸Ð¸/¸+¸Ð¸¹/ôº/9¸¹#ô¹ô¸¸;Ü¸EX¸/¹>Y¸EX¸/¹>Y¸EX¸2/¹2>Y»+¸2¹ô¸¹'ôAé'ù']A8'H'X'h'x'ˆ'˜'¨'¸'È'Ø']º'9¸¸Ð¸Ð¸"Ð¸#Ð¸+Ð¸,Ð017#"&546;2>3232#!"&546;4&#"32#!"&5463îD3ª
-
---- page 14 ---
-
 that the core engine can use to perform per-program ap-
 propriate initialization and cleanup operations respectively
 (allocation and deallocation of buffers holding path and output
@@ -2399,7 +2395,7 @@ unique tuple of error codes, where at least one application
 accepts an input and at least another application rejects it.
 Examples of semantic bugs found are presented in Section VI.
 
---- page 15 ---
+--- page 14 ---
 
 Type SSL Certicate XZ Archive ELF Binary PDF FileDiscrepancies 764 5 2 7
 Errors & Crashes 6 2 0 0TABLE II: Result summary for our analysis of N
@@ -2581,7 +2577,7 @@ seeds
 and running for the same number of iterations, achieving
 a respective coverage increase of 15.22% and 33.48%.
 
---- page 16 ---
+--- page 15 ---
 
 Fig. 4: Probability of nding at least
 n
@@ -2699,7 +2695,7 @@ explore
 schedule as presented
 in AFLFast [23], thus we omit comparison with the latter.
 
---- page 17 ---
+--- page 16 ---
 
 0
 20
@@ -2721,11 +2717,11 @@ Frankencerts
 Mucerts
 NEZHA (Black-box)
 
---- page 18 ---
+--- page 17 ---
 
 510154 73NEZHA (Black-box)FrankencertsMucertsDistributions of Discrepancies Found
 
---- page 19 ---
+--- page 18 ---
 
 0
 50
@@ -2748,7 +2744,7 @@ Global coverage
 NEZHA (Gray-box)
 NEZHA (Black-box)
 
---- page 20 ---
+--- page 19 ---
 
 Fig. 7: Probability of nding at least
 n
@@ -2909,7 +2905,7 @@ gines, 121 discrepancies are reported using
 
 -diversity and
 
---- page 21 ---
+--- page 20 ---
 
 050100150200250Number of unique discrepancies0:00:20:40:60:81:0ProbabilityGlobal coverage
 (modied libFuzzer)Path
@@ -2918,7 +2914,7 @@ gines, 121 discrepancies are reported using
 
 -diversity (ne)Output-diversity
 
---- page 22 ---
+--- page 21 ---
 
 020000400006000080000100000Generation020406080100Number of Differences
 Global coverage
@@ -2928,11 +2924,11 @@ Global coverage
 
 -diversity (ne)Output-diversity
 
---- page 23 ---
+--- page 22 ---
 
 Distributions of Discrepancies FoundOutput !-diversityPath !-diversityGlobal Coverage48348426143
 
---- page 24 ---
+--- page 23 ---
 
 48 discrepancies are reported by our custom libFuzzer global
 code coverage engine. This result is a clear indication that
@@ -3120,7 +3116,7 @@ Accord-
 ing to the XZ specications [62], the LZMA2 decompression
 algorithm in an archive can use a dictionary size ranging from
 
---- page 25 ---
+--- page 24 ---
 
 4kB to 4GB. The dictionary size varies from le to le and
 is stored in the XZ header of a le. ClamAV differs from XZ
@@ -3375,7 +3371,7 @@ return status;
 ...
 Listing 6: GnuTLS activation time parsing error.
 
---- page 26 ---
+--- page 25 ---
 
 C. PDF Viewer Discrepancies
 As mentioned in Section V-A, N
@@ -3522,7 +3518,7 @@ algorithm on a
 single
 application (i.e., OpenSSL) to drive
 
---- page 27 ---
+--- page 26 ---
 
 its input generation. The input generation of Mucerts is very
 slow requiring multiple days to generate even 10,000 inputs.
@@ -3675,7 +3671,7 @@ conclusions, or recommendations expressed herein are those
 of the authors, and do not necessarily reect those of the US
 Government, ONR or NSF.
 
---- page 28 ---
+--- page 27 ---
 
 R
 EFERENCES
@@ -3887,7 +3883,7 @@ Proceedings of the 16th IEEE
 International Conference on Automated Software Engineering (ASE)
 .
 
---- page 29 ---
+--- page 28 ---
 
 Washington, DC, USA: IEEE Computer Society, 2001, pp. 22–.
 [Online]. Available: http://dl.acm.org/citation.cfm?id=872023.872551
@@ -4068,7 +4064,7 @@ denes the purpose of the certicate key and it uses a
 bitstring
 to represent the various uses of the key. A valid
 
---- page 30 ---
+--- page 29 ---
 
 020000400006000080000100000Generation
 0
@@ -4094,7 +4090,7 @@ Global coverage
 20000
 21000
 
---- page 31 ---
+--- page 30 ---
 
 Fig. 12: Population size increase for each of
 N
@@ -4210,7 +4206,7 @@ parsed by a client using LibreSSL, it will be parsed with a
 valid keyUsage extension and thus the attacker can use the
 certicate for purposes that were not intended by the CA.
 
---- page 32 ---
+--- page 31 ---
 
 020000400006000080000100000Generation
 0
@@ -4243,20 +4239,6 @@ Global coverage
 410
 420
 
---- page 33 ---
+--- page 32 ---
 
 á‰M¿›†¦Rå»þÎ¢£§˜ôªTÑ2ºà_çÞ×
-
---- page 34 ---
-
-YI-�Œl`®õî;`ÕçæAÐH:´® áYHb1“µâ»HÇ{¸wƒÇR^YÑš,
- $F¨Ô–HDÙòV?pòyÑ—¹PÞ%F=»‚ÂÇÆB‡öÙö¡GKØPh³~N´[¸IÊ_êˆ€CðTzÞÒf	ç	<Ó–”Œü�`4|mƒE1ÖJ'¼ýáÝ$`}R	‚Ú¨€âN2kf¢aóouJ73�ê´òváê¿ôKÛW{œMÓÞ3?×��©Mò]ù:W;v�…˜Xâ;„B’	‰§X�.PáI;?Ÿ!T¤ˆ .·sìöU]ä®ƒ’=ÑXŠþý’5´ÀŠ€r€Mt>y=¯†*ã�bC¾~^½tÅAr±¡l'¶øÅ¦•üóô÷ØŸÉL�ëƒ¡P“&7ttöuGz;Kg4ÚóÑ�;·u
-
---- page 35 ---
-
-I€ÚE±aO2­ùá#r9‹´Ðœxp~OYâ,â³ÒúþS–Î�{§ŸÉ{†lš¢ØCsákmŠúD¼Qú¾Eî#©�ãð NMË5¹š¸¥Q7•Òk,X°^�±Š2w³£ÖûuÞ@ÏR5þ¯þ#âðÑhnÝy¹ÌÂŒËòJiz…�}Á8—VŠ¿b
-
---- page 36 ---
-
-Ù Ï¤CpJâ‹À.œua¿¤_–ü_×O½IÌeÆ: ¾©ëì1ý èÉ�TÿB”·;¦jÚ2 À?ìÆz’�±$¿Gªÿà^6åj‹Lf8J¦›“5öf4~�§aùú–þtWp¥¬Ä‘‡.qä…øÐ¦!È78­*³Ó1gaÚPÜ´ìuß¾rœÇ/OQÔ…�¯ØtÏÁ1¹Å°ì“kU„]bgCŸ•I¦ó+À&Fb‹ul¼Ë&DÎÖö�îS§l½Ø¾y8†j�Ã2Œ8ò°_i¿{†ßø±	F†©�iõÕ< =1�î’£}�_�Ñè$ûM¦¹å]è}z³¿…ê@úÒU¢mÀ€‘wö­Ïi�”slú7GÃ˜``ý÷xê‹ãJÅ
-5Äüìý·Gÿ°òéOKÂ=qêr"C^ýè¡Ô•üÞöÙ¢š­‹wq —xXE6�Ó­¿ºuÙ‘úJ¨„ÚL€`›œƒ$e <I¾=
