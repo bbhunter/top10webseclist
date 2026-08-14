@@ -1,17 +1,17 @@
 ---
 type: Article
-title: Securitum. Leading european penetration testing company
+title: Few steps on how to take over a whole application
 resource: "https://www.securitum.com/few_steps_on_how_to_take_over_a_whole_application.html"
 tags: [article, webseclist-reference, en, securitum-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:45:28+00:00"
+  at: "2026-08-14T15:32:28+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://www.securitum.com/few_steps_on_how_to_take_over_a_whole_application.html"
-    title: Securitum. Leading european penetration testing company
+    title: Few steps on how to take over a whole application
     author: Sebastian Jeż
 also_at: []
 authors:
@@ -33,21 +33,21 @@ publisher_english: ""
 raw_sha256: 05f1f026ea6e66b8ebf553627420a871d02027942966072c6c3a06c7f0fc882b
 retrieved_from: "https://www.securitum.com/few_steps_on_how_to_take_over_a_whole_application.html"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:45:28+00:00"
-slug: securitum-com-securitum-leading-european-penetration-testing-company-2
+retrieved_utc: "2026-08-14T15:32:28+00:00"
+slug: securitum-com-few-steps-how-take-over-whole-application
 snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
 ---
 
-# Securitum. Leading european penetration testing company
+# Few steps on how to take over a whole application
 
-**Securitum. Leading european penetration testing company** - Sebastian Jeż, securitum.com.
+**Few steps on how to take over a whole application** - Sebastian Jeż, securitum.com.
 
 - Published: date not stated
 - Original: <https://www.securitum.com/few_steps_on_how_to_take_over_a_whole_application.html>
-- Preserved from: https://www.securitum.com/few_steps_on_how_to_take_over_a_whole_application.html (stored) on 2026-08-11
+- Preserved from: https://www.securitum.com/few_steps_on_how_to_take_over_a_whole_application.html (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

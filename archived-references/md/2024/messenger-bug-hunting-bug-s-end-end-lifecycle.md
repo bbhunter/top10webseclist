@@ -1,17 +1,17 @@
 ---
 type: Slides
-title: 1HvkK2cdwWWjOZ m373Eq8vmjgsy84bapTJFBbWHaK1o
+title: "Messenger Bug Hunting: A Bug's End-to-End Lifecycle"
 resource: "https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/"
 tags: [slides, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:39:58+00:00"
+  at: "2026-08-14T15:32:37+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/"
-    title: 1HvkK2cdwWWjOZ m373Eq8vmjgsy84bapTJFBbWHaK1o
+    title: "Messenger Bug Hunting: A Bug's End-to-End Lifecycle"
     author: Luke McLaren, Farah Hawa
   - id: canonical
     resource: "https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/edit"
@@ -36,22 +36,22 @@ publisher_english: ""
 raw_sha256: cfb88fd0ac7af7c556b6a46bf540716c1b77c5d77bc9f438831140c28777082f
 retrieved_from: "https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/edit"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:39:58+00:00"
-slug: 1hvkk2cdwwwjoz-m373eq8vmjgsy84baptjfbbwhak1o
+retrieved_utc: "2026-08-14T15:32:37+00:00"
+slug: messenger-bug-hunting-bug-s-end-end-lifecycle
 snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
 ---
 
-# 1HvkK2cdwWWjOZ m373Eq8vmjgsy84bapTJFBbWHaK1o
+# Messenger Bug Hunting: A Bug's End-to-End Lifecycle
 
-**1HvkK2cdwWWjOZ m373Eq8vmjgsy84bapTJFBbWHaK1o** - Luke McLaren, Farah Hawa, Publisher not stated.
+**Messenger Bug Hunting: A Bug's End-to-End Lifecycle** - Luke McLaren, Farah Hawa, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/>
 - Current location: <https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/edit>
-- Preserved from: https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/edit (stored) on 2026-08-11
+- Preserved from: https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/edit (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

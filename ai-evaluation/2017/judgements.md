@@ -1135,3 +1135,45 @@ already represented on the 2016-17 list.
 - **Benefit-of-doubt check:** scored as a methodology contribution rather than a
   duplicate, which is why it lands near the gate rather than well below it.
 - **Changes after reverification:** none.
+## 77.2 — [Remote LD_PRELOAD Exploitation](https://www.elttam.com/blog/goahead) — Daniel Hodson, elttam
+
+**KEPT** · Original technique · confidence High
+
+### Candidate
+
+Published 18 December 2017 as CVE-2017-17562, against the GoAhead embedded web
+server before 3.6.5. Web scope: the entry point is an ordinary HTTP request.
+
+### Core contribution
+
+GoAhead copied HTTP request parameters into the environment of forked CGI
+processes without filtering, so an attacker could set the dynamic linker's own
+variables. Setting `LD_PRELOAD` to `/proc/self/fd/0` makes the linker load the
+POST body as a shared object, and an ELF constructor then runs before `main()`.
+The `/proc/self/fd` step is what makes it work without knowing any writable
+path on the target.
+
+### Prior art
+
+`LD_PRELOAD` abuse for local privilege escalation is long-standing, and CGI
+environment handling produced Shellshock in 2014. Shellshock needed a Bash
+parsing flaw; this needs only that parameters become environment variables and
+the target is dynamically linked, which is a much broader precondition.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 76 | 25% | 19.00 | Turns a local linker trick into remote HTTP-reachable execution via a file-descriptor path. |
+| Transferability | 72 | 20% | 14.40 | Applies to any server passing untrusted parameters as environment variables to a dynamically linked child. |
+| Lasting value | 74 | 20% | 14.80 | Established environment-variable injection as a standing CGI review item; the `/proc/self/fd` payload trick is widely reused. |
+| Technical soundness | 85 | 15% | 12.75 | End-to-end chain with a working shared object and constructor. |
+| Practical usability | 82 | 10% | 8.20 | Immediately usable against a large embedded-device population. |
+| Clarity and reproducibility | 80 | 10% | 8.00 | Exploit steps and constraints are set out explicitly. |
+
+**Final score: 77.2/100.** Archive decision: include as a core technique.
+
+### Verdict
+
+Original technique. The linker primitive was known; delivering it remotely over
+HTTP without a writable path was not.

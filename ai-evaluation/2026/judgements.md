@@ -1864,3 +1864,50 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 **What was already known.** What is public from the same group is adjacent and substantial, a USENIX 2025 paper on cross-app OAuth account-linking attacks, so the marginal contribution over it is exactly the unknown.
 
+## 79.3 — [Ruby 4.0 Universal RCE Deserialization Gadget Chain](https://www.elttam.com/blog/ruby-4-0-universal-rce-deserialization-gadget-chain) — Luke Jahnke, elttam
+
+**KEPT** · Meaningful extension · confidence Medium
+
+### Candidate
+
+Published 14 August 2026. A universal `Marshal.load` chain covering Ruby 4.0.6
+back to 3.3, following the same author's 2018 and 2024 chains.
+
+### Core contribution
+
+Two new primitives, both reached below the Ruby standard library. The trigger
+is no longer a `marshal_load` method: a crafted `Gem::StubSpecification` is
+placed as a Hash key, and `Marshal.load` calls `hash` on it while rebuilding
+the Hash. The caller is `Time._load`, whose C implementation `time_mload`
+validates the zone name inside `rb_rescue` and discards the exception, giving a
+failure-tolerant caller whose gadget completes its side effects before raising.
+Because both rest on core language behaviour, neither can be closed by the
+small Ruby-level diffs that retired every previous chain.
+
+### Prior art
+
+The lineage is well documented and largely archived: Jahnke 2018, Stalmans
+2019 and 2021, Bowling 2021 and 2022, httpvoid 2022, Leahu 2024, Giovannini
+2024, and Jahnke's own Ruby 3.4 chain (2024, in `2024.md`). All of those enter
+through Ruby-level `marshal_load` in `Gem::Requirement` or `Gem::Version`.
+Trail of Bits' August 2025 history of Ruby deserialization covers none of the
+C-level or Hash-key mechanisms. The author states some plumbing is reused from
+the 3.4 chain.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 72 | 25% | 18.00 | Two entry primitives new to the public Ruby corpus; the end capability continues a known series. |
+| Transferability | 78 | 20% | 15.60 | Universal within Ruby, and "find a native caller that swallows exceptions" is a portable gadget-hunting idea. |
+| Lasting value | 80 | 20% | 16.00 | Resting on core hashing and Marshal behaviour should outlast predecessors that were patched away. |
+| Technical soundness | 85 | 15% | 12.75 | Chain given class by class with versions, preconditions and honest reuse. |
+| Practical usability | 85 | 10% | 8.50 | Works with modest preconditions: an HTTPS host and a writable directory. |
+| Clarity and reproducibility | 85 | 10% | 8.50 | Gadget roles and payload construction are set out explicitly. |
+
+**Final score: 79.3/100.** Archive decision: include as a core technique.
+
+### Verdict
+
+Meaningful extension. The capability is not new, but the two primitives are,
+and the patch-resistance argument is a real change in kind for this lineage.

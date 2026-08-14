@@ -918,6 +918,33 @@
       ],
       "reason": "soroush.me is the maintainer's own blog and the posts carry no declared author; stated here rather than read from the text."
     },
+    "https://docs.google.com/presentation/d/16mvSEvpnNYrYcJe4XA_Nwd9OwEuf4UTE/edit?usp=sharing&ouid=101230982661442785272&rtpof=true&sd=true": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Abusing Intended Feature And Bypassing Facial Recognition",
+      "authors": [
+        "Ishwar Kumar"
+      ],
+      "reason": "The deck's own title slide reads \"Abusing Intended Feature And Bypassing Facial Recognition / Author - Ishwar Kumar / TenguCon 2024\". The citation is the exported file name, so the recorded title carried a \".pptx\" extension. Recorded 2026-08-14 after Dockerized poppler read the deck cleanly; the earlier letter-substituted gibberish was the in-process extractor missing the subsetted font's encoding map, not a defect in the deck."
+    },
+    "https://portswigger.net/kb/papers/serversidetemplateinjection.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Server-Side Template Injection: RCE for the Modern Web App",
+      "authors": [
+        "James Kettle"
+      ],
+      "publisher": "PortSwigger",
+      "reason": "The whitepaper's own first page reads \"Server-Side Template Injection: RCE for the modern webapp / James Kettle - james.kettle@portswigger.net - @albinowax\". The URL is a bare PDF path, so with no stated title the import filed it under its file stem, \"serversidetemplateinjection\". Recorded 2026-08-14 after Dockerized poppler read the document cleanly (33,551 characters, no replacement characters); the earlier \"binary noise\" fault was the in-process extractor missing the font encoding map, not a defect in the PDF."
+    },
+    "https://soroush.me/downloadable/iis-semicolon-report.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Soroush Dalili"
+      ],
+      "reason": "The report states its own byline: \"Found by: Soroush Dalili (Irsdl {4t] yahoo [d0t} com)\". This is the document the 2009 Top 10 announcement cites at #6, where it is credited to Soroush Dalili; the list previously cited the MSRC advisory that the nomination round had linked, which carries Microsoft's byline instead. The report's PDF metadata names no author, so the credit is stated here."
+    },
     "https://www.youtube.com/watch?v=Xfbu-pQ1tIc": {
       "outcome": "skip",
       "class": "derivative",
@@ -1416,6 +1443,101 @@
       ],
       "publisher": "HexHive, EPFL",
       "reason": "Cited as \"Tool\", so the recorded title was the citation's own word and the author was the GitHub organisation. This is the released X402SCOPE framework from the paper. Read from page one of the paper itself, which the archive holds: \"When HTTP 402 Meets the Blockchain: Risks on Emerging x402 Payments\", Qinying Wang (EPFL), Yong Yang (Zhejiang University), Yuan Chen (independent), Shouling Ji (Zhejiang University) and Mathias Payer (EPFL); Wang and Yang contributed equally and Ji is the corresponding author. Without this the page credited nobody and the byline fell back to the hostname."
+    },
+    "https://securitum.com/soql_injection__how_to_exfiltrate_sensitive_data_in_real-world_pentests.html": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "SOQL Injection – How to Exfiltrate Sensitive Data in Real-World Pentests",
+      "reason": "Reviewed 2026-08-14: the recorded title was the site's masthead, \"Securitum - Security penetration testing.\", so the file was named after the company rather than the research. The capture is the right page and carries the article's own heading, \"SOQL Injection – How to Exfiltrate Sensitive Data in Real-World Pentests\", above \"Adam Borczyk\" and \"October 18, 2024\". Stating the heading restores it to the frontmatter and the file name."
+    },
+    "https://securitum.com/crashing_servers_with_digits.html": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Crashing servers with digits: floating-point numbers DoS vulnerabilities",
+      "reason": "Reviewed 2026-08-14: the recorded title was the site's masthead, \"Securitum. Leading european penetration testing company\". Because a sibling Securitum article was archived under that same masthead, the two slugs collided and one file became \"...-company-2\"; naming each by its own heading separates them. This capture carries \"Crashing servers with digits: floating-point numbers DoS vulnerabilities\" above \"Martin Matyja\" and \"May 10, 2024\"."
+    },
+    "https://securitum.com/few_steps_on_how_to_take_over_a_whole_application.html": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Few steps on how to take over a whole application",
+      "reason": "Reviewed 2026-08-14: the recorded title was the site's masthead, \"Securitum. Leading european penetration testing company\", which is why this file was the one that collided and became \"...-company-2\". The capture carries its own heading, \"Few steps on how to take over a whole application.\", above \"Sebastian Jeż\" and \"June 14, 2024\"; the heading's trailing full stop is dropped for the title."
+    },
+    "https://zerodayinitiative.com/blog/2024/9/4/exploiting-exchange-powershell-after-proxynotshell-part-1-multivaluedproperty": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Exploiting Exchange PowerShell After ProxyNotShell: Part 1 - MultiValuedProperty",
+      "reason": "Reviewed 2026-08-14: the recorded title carried the site masthead, \"Zero Day Initiative — \", and dropped the subtitle. The capture is the right article and its own heading reads \"Exploiting Exchange PowerShell After ProxyNotShell: Part 1 - MultiValuedProperty\", above \"September 05, 2024\" and \"Piotr Bazydło\"."
+    },
+    "https://zerodayinitiative.com/blog/2024/12/11/solarwinds-access-rights-manager-one-vulnerability-to-lpe-them-all": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "SolarWinds Access Rights Manager: One Vulnerability to LPE Them All",
+      "reason": "Reviewed 2026-08-14: the recorded title carried the site masthead, \"Zero Day Initiative — \". The capture is the right article and its own heading reads \"SolarWinds Access Rights Manager: One Vulnerability to LPE Them All\", above \"December 12, 2024\" and \"Piotr Bazydło\"."
+    },
+    "https://zerodayinitiative.com/blog/2022/3/16/abusing-arbitrary-file-deletes-to-escalate-privilege-and-other-great-tricks": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Abusing Arbitrary File Deletes to Escalate Privilege and Other Great Tricks",
+      "reason": "Reviewed 2026-08-14: the recorded title carried the site masthead, \"Zero Day Initiative — \". The capture is the right article and its own heading reads \"Abusing Arbitrary File Deletes to Escalate Privilege and Other Great Tricks\", above \"March 17, 2022\" and \"Simon Zuckerbraun\"."
+    },
+    "https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-again": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Hello Lucee! Let us hack Apple again?",
+      "reason": "Reviewed 2026-08-14: the recorded title ended in the site's tab suffix, \" — ProjectDiscovery Blog\". The capture is the right article and both its hero image alt text and its own heading read \"Hello Lucee! Let us hack Apple again?\"."
+    },
+    "https://projectdiscovery.io/blog/ruby-saml-gitlab-auth-bypass": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Ruby-SAML / GitLab Authentication Bypass (CVE-2024-45409)",
+      "reason": "Reviewed 2026-08-14: the recorded title ended in the site's tab suffix, \" — ProjectDiscovery Blog\". The capture is the right article and its own heading reads \"Ruby-SAML / GitLab Authentication Bypass (CVE-2024-45409)\"."
+    },
+    "https://code-white.com/blog/teaching-the-old-net-remoting-new-exploitation-tricks": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Teaching the Old .NET Remoting New Exploitation Tricks",
+      "reason": "Reviewed 2026-08-14: the recorded title began with the site's masthead, \"CODE WHITE | \". The capture is the right article and its own heading reads \"Teaching the Old .NET Remoting New Exploitation Tricks\". The post names no author — it writes \"we\" throughout and points at \"our GitHub repository NewRemotingTricks\" — so no byline is stated here."
+    },
+    "https://nastystereo.com/security/ruby-safe-marshal-escape.html": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Gem::SafeMarshal escape",
+      "reason": "Reviewed 2026-08-14: the recorded title ended in the site's tab suffix, \" / nastystereo.com\". The capture is the right article and its own heading reads \"Gem::SafeMarshal escape\", above \"Luke Jahnke\" and \"3 December 2024\"."
+    },
+    "https://nastystereo.com/security/rails-_json-juggling-attack.html": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "The Ruby on Rails _json Juggling Attack",
+      "reason": "Reviewed 2026-08-14: the recorded title ended in the site's tab suffix, \" / nastystereo.com\". The capture is the right article and its own heading reads \"The Ruby on Rails _json Juggling Attack\", above \"Luke Jahnke\" and \"9 December 2024\"."
+    },
+    "https://0xpwn.wordpress.com/wp-content/uploads/2024/09/a-deep-dive-into-openapi-security.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "A Deep Dive into OpenAPI Security",
+      "reason": "Reviewed 2026-08-14: the recorded title was the PDF's file stem, \"a-deep-dive-into-openapi-security.pdf\". The deck's own title slide reads \"A DEEP DIVE INTO OPENAPI SECURITY\" over \"ANDREI AGAPE – OWASP COPENHAGEN 2024\"; the all-capitals setting is the slide's styling, so the title is stated in sentence case."
+    },
+    "https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Messenger Bug Hunting: A Bug's End-to-End Lifecycle",
+      "reason": "Reviewed 2026-08-14: the recorded title was the Google Slides document id, \"1HvkK2cdwWWjOZ m373Eq8vmjgsy84bapTJFBbWHaK1o\", which names nothing. The deck's title slide reads \"Messenger Bug Hunting\" over \"A bug's end-to-end lifecycle\" and then \"Luke McLaren   Farah Hawa\"; the two lines are joined with a colon to make one title."
+    },
+    "https://bastionsecurity.co.nz/advisories/statamic-cms-cve-2024-52600.html": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Sam Schroder"
+      ],
+      "publisher": "Bastion Security",
+      "reason": "Reviewed 2026-08-14: the advisory declared no author in a meta tag, so the file read \"Author not stated\" and credited the hostname. The page names the researcher in its own words twice: \"Sam Schroder found a local file inclusion (write only) vulnerability inside of the upload functionality of Statamic CMS\", and \"During an engagement, Sam Schroder discovered a vulnerability in Statamic CMS\". The publisher is spelled as the page prints it, \"Bastion Security\", rather than as the hostname."
+    },
+    "https://gccybermonks.com/posts/ssrfvision": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "@phor3nsic_br"
+      ],
+      "reason": "Reviewed 2026-08-14: the post declared no author in a meta tag, so the file credited the hostname. The article carries a byline directly under its heading, \"by @phor3nsic_br\", linking to https://twitter.com/phor3nsic_br. No legal name is stated anywhere in the document, so the handle the author publishes under is recorded rather than a guess."
     }
   }
 }

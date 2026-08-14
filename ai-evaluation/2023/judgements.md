@@ -987,3 +987,89 @@ more library is coverage, not discovery.
 - **Benefit-of-doubt check:** that result lifts technical soundness, but it
   confirms an expectation rather than changing the model.
 - **Changes after reverification:** none.
+## 75.3 — [Cracking the Odd Case of Randomness in Java](https://www.elttam.com/blog/cracking-randomness-in-java) — Joseph, elttam
+
+**KEPT** · Meaningful extension · confidence Medium
+
+### Candidate
+
+Published 9 February 2023. Attacks `java.util.Random` seed recovery where the
+bound passed to `nextInt(bound)` is odd, and applies it to
+`RandomStringUtils.randomAlphanumeric` as used for password-reset tokens.
+
+### Core contribution
+
+A meet-in-the-middle attack that splits the 48-bit LCG state into upper and
+lower halves and solves them separately, cutting the work for three observed
+outputs from roughly 2^41.5 to about 2^32.5 and recovering seeds in under a
+minute. The reported web consequence is direct: request a reset for an
+attacker-held account, recover the state from the issued token, then predict
+the victim's token.
+
+### Prior art
+
+Recovering `java.util.Random` state is long established, and lattice and
+brute-force approaches handle the even-bound case where `nextInt` leaks state
+bits directly. The odd-bound case was the known-harder gap because the modulo
+rejection loop destroys that direct leak; closing it practically is the
+contribution.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 75 | 25% | 18.75 | Genuine algorithmic advance on the acknowledged hard case, not a re-run of even-bound work. |
+| Transferability | 70 | 20% | 14.00 | Any Java application using `Random` for security tokens; the split-state idea generalises to other truncated LCGs. |
+| Lasting value | 70 | 20% | 14.00 | `RandomStringUtils` remains widespread, so the finding stays actionable in review work. |
+| Technical soundness | 85 | 15% | 12.75 | Complexity claims are argued and backed by a released tool with measured runtimes. |
+| Practical usability | 80 | 10% | 8.00 | Sub-minute recovery makes it usable inside a real assessment. |
+| Clarity and reproducibility | 78 | 10% | 7.80 | Method explained with a public implementation; some derivation is compressed. |
+
+**Final score: 75.3/100.** Archive decision: include as a core technique.
+
+### Verdict
+
+Meaningful extension. Seed recovery was known; making the odd-bound case
+practical, and tying it to a concrete account-takeover path, is the addition.
+
+## 57.2 — [PwnAssistant - Controlling /home's via a Home Assistant RCE](https://www.elttam.com/blog/pwnassistant) — elttam
+
+**REMOVED** · Useful application or case study · confidence Medium
+
+### Candidate
+
+Published 9 May 2023 as CVE-2023-27482: an authentication bypass in Home
+Assistant's Supervisor integration reaching unauthenticated remote code
+execution.
+
+### Core contribution
+
+Endpoints opting out of authentication were enumerated by searching for
+`requires_auth = False`, and the Supervisor proxy's filtering was bypassed by
+inserting characters such as a tab into the request path so the middleware and
+the backend disagreed about the route.
+
+### Prior art
+
+Proxy-versus-backend path disagreement is a well-covered class, including
+Orange Tsai's 2018 parser-logic work already held in the archive, and the
+"authentication opt-out endpoint" review pattern is standard practice. The
+finding is a competent application of both to one product.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 48 | 25% | 12.00 | Known middleware-bypass class applied to a new target. |
+| Transferability | 55 | 20% | 11.00 | The review methodology transfers; the specific bypass does not. |
+| Lasting value | 45 | 20% | 9.00 | Patched product-specific bug; little new to build on. |
+| Technical soundness | 78 | 15% | 11.70 | Chain to RCE is demonstrated and credible. |
+| Practical usability | 60 | 10% | 6.00 | Useful as a review pattern rather than a reusable primitive. |
+| Clarity and reproducibility | 75 | 10% | 7.50 | Clear write-up with the request shapes shown. |
+
+**Final score: 57.2/100.** Archive decision: do not include.
+
+### Verdict
+
+Useful application or case study. Below the 60 threshold: real impact, but the
+underlying technique was already documented.

@@ -1313,3 +1313,89 @@ contribution, and both remain usable.
   originality is held at 55 to reflect the borrowed primitive while the method is
   credited under transferability and lasting value.
 - **Changes after reverification:** none.
+## 72.8 — [New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails](https://www.elttam.com/blog/rails-sqlite-gadget-rce) — Alex Brown, elttam
+
+**KEPT** · Meaningful combination or adaptation · confidence Medium
+
+### Candidate
+
+Published 4 March 2025. Restores remote code execution on Rails after the
+long-used `Logger`/`Kernel#open` route was closed.
+
+### Core contribution
+
+A gadget that abuses SQLite's supported extension-loading: instantiating
+`SQLite3::Database` with an `extensions` argument loads an attacker-supplied
+compiled library. Reached through
+`ActiveRecord::ConnectionAdapters::SQLite3Adapter` and chained from the 2013
+`DeprecatedInstanceVariableProxy` gadget, it needs only gems Rails ships by
+default. Uploaded temporary files are addressed through `/proc/self/fd/x`,
+avoiding any need for a known path.
+
+### Prior art
+
+Rails deserialization chains date to 2013, and the `Kernel#open` pipe trick was
+the standard sink until it was replaced with `File.open` in 2017. Using a
+library's legitimate, still-supported extension mechanism as the execution sink
+is the new element, and it is not patchable in the way the previous sink was.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 70 | 25% | 17.50 | New sink of a kind that cannot simply be removed, rather than a new payload. |
+| Transferability | 68 | 20% | 13.60 | Rails-bounded, but relies only on default gems; the `/proc/self/fd` step generalises. |
+| Lasting value | 68 | 20% | 13.60 | Extension loading is a documented feature, so the sink should persist. |
+| Technical soundness | 82 | 15% | 12.30 | Full chain shown from entry gadget to loaded shared object. |
+| Practical usability | 80 | 10% | 8.00 | Works against default installations without extra dependencies. |
+| Clarity and reproducibility | 78 | 10% | 7.80 | Gadgets and preconditions are named; some setup is assumed. |
+
+**Final score: 72.8/100.** Archive decision: include as a core technique.
+
+### Verdict
+
+Meaningful combination or adaptation. The chain is assembled from known parts,
+but the execution sink is new and durable by design.
+
+## 60.1 — [Gotchas in Email Parsing - Lessons From Jakarta Mail](https://www.elttam.com/blog/jakarta-mail-primitives) — Jia Hao Poh, elttam
+
+**KEPT** · Useful application or case study · confidence Medium
+
+### Candidate
+
+Published 17 November 2025. Documents parsing differentials in Jakarta Mail's
+`InternetAddress` and `MimeMessage` and the access-control consequences.
+
+### Core contribution
+
+A systematic comparison showing the single-argument `InternetAddress`
+constructor validates through `parse()` while the two- and three-argument forms
+do not, plus RFC 822 and RFC 2047 handling that makes
+`<attacker@example.com>@foo.com` pass a naive `split('@')[1]` domain check while
+delivering elsewhere. Includes Semgrep rules and notes which downstream
+frameworks inherit the behaviour.
+
+### Prior art
+
+Gareth Heyes' "Splitting the email atom" (PortSwigger, 2024, already in
+`2024.md`) established email-parser differentials as an access-control bypass
+class, and earlier AWS SES work covered related ground. The candidate applies
+that established class to one Java library rather than extending the class.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 48 | 25% | 12.00 | Known differential class mapped onto a specific library. |
+| Transferability | 55 | 20% | 11.00 | Findings are Jakarta Mail-specific; the constructor-asymmetry lesson is broader. |
+| Lasting value | 52 | 20% | 10.40 | Useful review reference while the library keeps these constructors. |
+| Technical soundness | 78 | 15% | 11.70 | Behaviours are demonstrated per constructor with concrete inputs. |
+| Practical usability | 72 | 10% | 7.20 | Shipped Semgrep rules make it directly usable in review. |
+| Clarity and reproducibility | 78 | 10% | 7.80 | Clear tabulation of inputs against parsed results. |
+
+**Final score: 60.1/100.** Archive decision: include as a supporting reference.
+
+### Verdict
+
+Useful application or case study. Clears the threshold on execution and
+practical value, not on novelty of the underlying class.

@@ -1,17 +1,17 @@
 ---
 type: Article
-title: Securitum. Leading european penetration testing company
+title: "Crashing servers with digits: floating-point numbers DoS vulnerabilities"
 resource: "https://www.securitum.com/crashing_servers_with_digits.html"
 tags: [article, webseclist-reference, en, securitum-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:45:29+00:00"
+  at: "2026-08-14T15:32:27+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://www.securitum.com/crashing_servers_with_digits.html"
-    title: Securitum. Leading european penetration testing company
+    title: "Crashing servers with digits: floating-point numbers DoS vulnerabilities"
     author: Martin Matyja
 also_at: []
 authors:
@@ -33,21 +33,21 @@ publisher_english: ""
 raw_sha256: 2688759ff04edda85289f1422dbc45baf9998c5e8843ad8506b9ae5a2d2741b4
 retrieved_from: "https://www.securitum.com/crashing_servers_with_digits.html"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:45:29+00:00"
-slug: securitum-com-securitum-leading-european-penetration-testing-company
+retrieved_utc: "2026-08-14T15:32:27+00:00"
+slug: securitum-com-crashing-servers-digits-floating-point-numbers-dos-vulnerabilities
 snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
 ---
 
-# Securitum. Leading european penetration testing company
+# Crashing servers with digits: floating-point numbers DoS vulnerabilities
 
-**Securitum. Leading european penetration testing company** - Martin Matyja, securitum.com.
+**Crashing servers with digits: floating-point numbers DoS vulnerabilities** - Martin Matyja, securitum.com.
 
 - Published: date not stated
 - Original: <https://www.securitum.com/crashing_servers_with_digits.html>
-- Preserved from: https://www.securitum.com/crashing_servers_with_digits.html (stored) on 2026-08-11
+- Preserved from: https://www.securitum.com/crashing_servers_with_digits.html (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

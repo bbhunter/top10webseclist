@@ -872,3 +872,46 @@ eIDAS-aware test harness plus the first cross-country implementation study.
 Tooling or methodology contribution. It narrowly clears the 60-point rule due
 to the reusable test harness and cross-implementation method, not because the
 underlying XML attacks are new.
+## 88.1 — [Ruby 2.x Universal RCE Deserialization Gadget Chain](https://www.elttam.com/blog/ruby-deserialization) — Luke Jahnke, elttam
+
+**KEPT** · Original technique · confidence High
+
+### Candidate
+
+Published 8 November 2018. A single `Marshal.load` of attacker-controlled bytes
+is turned into command execution using only classes shipped with Ruby itself.
+
+### Core contribution
+
+The first public universal deserialization gadget chain for Ruby. It chains
+`Gem::Requirement#marshal_load` into `Gem::DependencyList` sorting, through
+`Gem::Source::SpecificFile` comparison, to `Gem::StubSpecification`, reaching
+`Kernel.open` with a leading pipe character so the argument is executed as a
+command. The write-up also introduced programmatic gadget hunting across the
+Ruby standard library rather than hand-inspection.
+
+### Prior art
+
+Rails-specific chains existed from 2013 (Hailey Somerville), and Java and PHP
+object-injection chains were well established. Every earlier Ruby result needed
+ActiveSupport, ERB, or a method call made after deserialization, so it applied
+only inside Rails. The distinct contribution is showing the standard library
+alone suffices, which made every Ruby application reachable.
+
+### Scorecard
+
+| Category | Score | Weight | Weighted | Reason |
+|---|---:|---:|---:|---|
+| Original contribution | 88 | 25% | 22.00 | First universal Ruby chain; removed the Rails precondition entirely. |
+| Transferability | 85 | 20% | 17.00 | Applies to any Ruby application reaching `Marshal.load`; the hunting method ports to other runtimes. |
+| Lasting value | 92 | 20% | 18.40 | Eight years of successor chains (2019, 2021, 2022, 2024, 2026) descend from and cite it. |
+| Technical soundness | 88 | 15% | 13.20 | Complete chain with working payload and version coverage for Ruby 2.0-2.5. |
+| Practical usability | 90 | 10% | 9.00 | Directly usable; reproduced in PayloadsAllTheThings and a PentesterLab exercise. |
+| Clarity and reproducibility | 85 | 10% | 8.50 | Each gadget is named with its source and the reasoning behind its selection. |
+
+**Final score: 88.1/100.** Archive decision: include as a core technique.
+
+### Verdict
+
+Original technique. Ruby deserialization was considered impractical outside
+Rails before this; afterwards it was a standing, universal risk.

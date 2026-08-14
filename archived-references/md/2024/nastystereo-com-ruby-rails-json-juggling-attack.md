@@ -1,17 +1,17 @@
 ---
 type: Article
-title: The Ruby on Rails _json Juggling Attack / nastystereo.com
+title: The Ruby on Rails _json Juggling Attack
 resource: "https://nastystereo.com/security/rails-_json-juggling-attack.html"
 tags: [article, webseclist-reference, en-AU, nastystereo-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:36:10+00:00"
+  at: "2026-08-14T15:32:31+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://nastystereo.com/security/rails-_json-juggling-attack.html"
-    title: The Ruby on Rails _json Juggling Attack / nastystereo.com
+    title: The Ruby on Rails _json Juggling Attack
     author: Luke Jahnke
 also_at: []
 authors:
@@ -33,21 +33,21 @@ publisher_english: ""
 raw_sha256: 0cf11d5d182ea7fb82f1382f74ffb32a11c3c53152e8eefb7dc0c1d8e02e66dc
 retrieved_from: "https://nastystereo.com/security/rails-_json-juggling-attack.html"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:36:10+00:00"
-slug: nastystereo-com-ruby-rails-json-juggling-attack-nastystereo-com
+retrieved_utc: "2026-08-14T15:32:31+00:00"
+slug: nastystereo-com-ruby-rails-json-juggling-attack
 snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
 ---
 
-# The Ruby on Rails _json Juggling Attack / nastystereo.com
+# The Ruby on Rails _json Juggling Attack
 
-**The Ruby on Rails _json Juggling Attack / nastystereo.com** - Luke Jahnke, nastystereo.com.
+**The Ruby on Rails _json Juggling Attack** - Luke Jahnke, nastystereo.com.
 
 - Published: date not stated
 - Original: <https://nastystereo.com/security/rails-_json-juggling-attack.html>
-- Preserved from: https://nastystereo.com/security/rails-_json-juggling-attack.html (stored) on 2026-08-11
+- Preserved from: https://nastystereo.com/security/rails-_json-juggling-attack.html (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

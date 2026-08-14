@@ -57,7 +57,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <http://ha.ckers.org/blog/20090713/hash-information-disclosure-via-collisions-the-hard-way/> | article | `raw_sha256` | `2009.md:21` |
 | <http://ha.ckers.org/blog/20090809/smbenum/> | article | `raw_sha256` | `2009.md:27` |
 | <http://ha.ckers.org/blog/20091117/dns-rebinding-for-credential-brute-force/> | article | `raw_sha256` | `2009.md:26` |
-| <http://ha.ckers.org/blog/20091118/dns-rebinding-for-scraping-and-spamming/> | article | `raw_sha256` | `2009.md:28` |
+| <http://ha.ckers.org/blog/20091118/dns-rebinding-for-scraping-and-spamming/> | article | `raw_sha256` | `2009.md:14`, `2009.md:28` |
 | <http://ha.ckers.org/blog/20100621/side-channel-attacks-in-ssl/> | article | `raw_sha256` | `2010.md:29` |
 | <http://ha.ckers.org/blog/20100820/quick-proxy-detection/> | article | `raw_sha256` | `2010.md:26` |
 | <http://ha.ckers.org/blog/20100822/using-cookies-for-selective-dos-and-state-detection/> | article | `raw_sha256` | `2010.md:25` |

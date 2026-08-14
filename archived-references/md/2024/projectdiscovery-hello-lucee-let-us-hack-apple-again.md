@@ -1,17 +1,17 @@
 ---
 type: Article
-title: Hello Lucee! Let us hack Apple again? — ProjectDiscovery Blog
+title: Hello Lucee! Let us hack Apple again?
 resource: "https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-again"
 tags: [article, webseclist-reference, en, projectdiscovery]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:45:13+00:00"
+  at: "2026-08-14T15:32:29+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-again"
-    title: Hello Lucee! Let us hack Apple again? — ProjectDiscovery Blog
+    title: Hello Lucee! Let us hack Apple again?
     author: Harsh Jaiswal, Rahul Maini
 also_at: []
 authors:
@@ -34,21 +34,21 @@ publisher_english: ""
 raw_sha256: 71f5d6bad00d5a14c7a0ef5e55bb970ec29af09252deb8127ddd1ec27b6e2f6b
 retrieved_from: "https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-again"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:45:13+00:00"
-slug: projectdiscovery-hello-lucee-let-us-hack-apple-again-projectdiscovery-blog
+retrieved_utc: "2026-08-14T15:32:29+00:00"
+slug: projectdiscovery-hello-lucee-let-us-hack-apple-again
 snapshot: ""
 title_english: ""
 translation_file: ""
 translation_of: ""
 ---
 
-# Hello Lucee! Let us hack Apple again? — ProjectDiscovery Blog
+# Hello Lucee! Let us hack Apple again?
 
-**Hello Lucee! Let us hack Apple again? — ProjectDiscovery Blog** - Harsh Jaiswal, Rahul Maini, ProjectDiscovery.
+**Hello Lucee! Let us hack Apple again?** - Harsh Jaiswal, Rahul Maini, ProjectDiscovery.
 
 - Published: date not stated
 - Original: <https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-again>
-- Preserved from: https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-again (stored) on 2026-08-11
+- Preserved from: https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-again (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

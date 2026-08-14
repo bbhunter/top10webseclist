@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://gccybermonks.com/posts/ssrfvision/"
     title: Another vision for SSRF
+    author: @phor3nsic_br
   - id: capture
     resource: "https://web.archive.org/web/20260511140211/https://gccybermonks.com/posts/ssrfvision/"
 also_at: []
-authors: []
+authors:
+  - @phor3nsic_br
 canonical_url: ""
 cited_by:
   - "2024.md:57"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Another vision for SSRF
 
-**Another vision for SSRF** - Author not stated, gccybermonks.com.
+**Another vision for SSRF** - @phor3nsic_br, gccybermonks.com.
 
 - Published: date not stated
 - Original: <https://gccybermonks.com/posts/ssrfvision/>

@@ -2,7 +2,7 @@
 type: Advisory
 title: Statamic CMS
 resource: "https://bastionsecurity.co.nz/advisories/statamic-cms-cve-2024-52600.html"
-tags: [advisory, webseclist-reference, en-AU, bastionsecurity-co-nz]
+tags: [advisory, webseclist-reference, en-AU, bastion-security]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:02:23+00:00"
@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://bastionsecurity.co.nz/advisories/statamic-cms-cve-2024-52600.html"
     title: Statamic CMS
+    author: Sam Schroder
   - id: canonical
     resource: "https://www.bastionsecurity.co.nz/advisories/statamic-cms-cve-2024-52600"
 also_at: []
-authors: []
+authors:
+  - Sam Schroder
 canonical_url: "https://www.bastionsecurity.co.nz/advisories/statamic-cms-cve-2024-52600"
 cited_by:
   - "2024.md:46"
@@ -28,7 +30,7 @@ language: en-AU
 licence: unknown
 original_url: "https://bastionsecurity.co.nz/advisories/statamic-cms-cve-2024-52600.html"
 published: ""
-publisher: bastionsecurity.co.nz
+publisher: Bastion Security
 publisher_english: ""
 raw_sha256: 9b0551863a962f2c4e14a82c7d9b87fc8e6f35394eef5b682211f9cb85c06b58
 retrieved_from: "https://www.bastionsecurity.co.nz/advisories/statamic-cms-cve-2024-52600"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Statamic CMS
 
-**Statamic CMS** - Author not stated, bastionsecurity.co.nz.
+**Statamic CMS** - Sam Schroder, Bastion Security.
 
 - Published: date not stated
 - Original: <https://bastionsecurity.co.nz/advisories/statamic-cms-cve-2024-52600.html>
