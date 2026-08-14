@@ -5,16 +5,18 @@ resource: "https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/"
 tags: [article, webseclist-reference, en, t0xodile-s-blog]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T16:02:23+00:00"
+  at: "2026-08-14T01:06:05+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/"
     title: "CRLF-Powered Desync Attacks: Beheading HTTP Streams"
+    author: Tom Stacey
     last_modified: 2026-05-20
 also_at: []
-authors: []
+authors:
+  - Tom Stacey
 canonical_url: ""
 cited_by:
   - "2026-ai.md:33"
@@ -31,8 +33,8 @@ publisher: t0xodile’s blog
 publisher_english: ""
 raw_sha256: 7b50981d7e3b7aa71cc3f95f5b0cad9b643b8c133c5bdfee9c66f93b9bec7cec
 retrieved_from: "https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T16:02:23+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-14T01:06:05+00:00"
 slug: 2026-t0xodiles-blog-crlf-powered-desync-attacks-beheading-http-streams
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # CRLF-Powered Desync Attacks: Beheading HTTP Streams
 
-**CRLF-Powered Desync Attacks: Beheading HTTP Streams** - Author not stated, t0xodile’s blog.
+**CRLF-Powered Desync Attacks: Beheading HTTP Streams** - Tom Stacey, t0xodile’s blog.
 
 - Published: 2026-05-20
 - Original: <https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/>
-- Preserved from: https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/ (live) on 2026-08-10
+- Preserved from: https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/ (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

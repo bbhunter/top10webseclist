@@ -32,7 +32,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 `raw_sha256` offline - re-import it rather than re-crawling.
 
 
-247 archived reference(s) name 290 store object(s) that are no longer held: 49 browser_dom_sha256, 15 content_sha256, 5 landing_sha256, 221 raw_sha256.
+243 archived reference(s) name 286 store object(s) that are no longer held: 49 browser_dom_sha256, 12 content_sha256, 5 landing_sha256, 220 raw_sha256.
 
 | Reference | Kind | Missing | Cited at |
 |---|---|---|---|
@@ -127,7 +127,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://hackerone.com/reports/333419> | article | `raw_sha256`, `browser_dom_sha256` | `2020.md:41` |
 | <https://hackerone.com/reports/33935> | article | `raw_sha256`, `browser_dom_sha256` | `2014.md:50` |
 | <https://hackerone.com/reports/341876> | article | `raw_sha256`, `browser_dom_sha256` | `2018.md:39` |
-| <https://hackerone.com/reports/3511792> | article | `raw_sha256`, `browser_dom_sha256` | `2026-ai.md:52` |
+| <https://hackerone.com/reports/3511792> | article | `raw_sha256`, `browser_dom_sha256` | `2026-ai.md:53` |
 | <https://hal.inria.fr/hal-01652021> | article | `raw_sha256` | `2016-17.md:106` |
 | <https://iustin24.github.io/Cache-Key-Normalization-Denial-of-Service/> | article | `raw_sha256`, `browser_dom_sha256` | `2020.md:60` |
 | <https://jeremiahgrossman.blogspot.com/2006/08/i-know-where-youve-been.html> | article | `raw_sha256`, `browser_dom_sha256` | `2006.md:8` |
@@ -140,10 +140,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://portswigger-labs.net/fmnt.php?x=acunetix.com/blog/web-security-zone/bypassing-sop-using-the-browser-cache/> | article | `raw_sha256`, `browser_dom_sha256` | `2019.md:57` |
 | <https://roberto.greyhats.it/pubs/dimva08-web.pdf> | whitepaper | `content_sha256` | `2008.md:90` |
 | <https://skii.dev/rook-to-xss/> | article | `raw_sha256` | `2024.md:102` |
-| <https://slcyber.io/research-center/exploit-brokers-pay-500000-for-a-wordpress-rce-i-found-one-with-gpt5-6/> | article | `content_sha256` | `2026-ai.md:58` |
-| <https://slcyber.io/research-center/smashing-the-servicenow-sandbox-pre-authentication-rce/> | article | `content_sha256` | `2026-ai.md:59` |
-| <https://slcyber.io/research-center/two-bypasses-for-chromes-sanitizer-api/> | article | `content_sha256` | `2026-ai.md:39` |
-| <https://slcyber.io/research-center/wp2shell-pre-authentication-rce-in-wordpress-core/> | article | `raw_sha256` | `2026-ai.md:58` |
 | <https://speakerdeck.com/0ang3el/hunting-for-security-bugs-in-aem-webapps> | slides | `raw_sha256` | `2018.md:53` |
 | <https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unveiling-vulnerabilities-in-websocket-apis> | slides | `raw_sha256` | `2019.md:27` |
 | <https://speakerdeck.com/bo0om/at-home-among-strangers?slide=9> | slides | `raw_sha256` | `2019.md:23` |
@@ -162,7 +158,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://srcincite.io/blog/2024/07/21/jndi-injection-rce-via-path-manipulation-in-memoryuserdatabasefactory.html> | article | `raw_sha256` | `2024.md:82` |
 | <https://srcincite.io/blog/2024/11/25/remote-code-execution-with-spring-properties.html> | article | `raw_sha256` | `2024.md:26` |
 | <https://superevr.com/blog/2011/xss-in-skype-for-ios/> | article | `raw_sha256` | `2011.md:43` |
-| <https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/> | article | `raw_sha256` | `2026-ai.md:82` |
+| <https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/> | article | `raw_sha256` | `2026-ai.md:84` |
 | <https://thehackerblog.com/the-io-error-taking-control-of-all-io-domains-with-a-targeted-registration/index.html> | article | `raw_sha256` | `2016-17.md:36` |
 | <https://thespanner.co.uk/2013/05/16/dom-clobbering> | article | `raw_sha256` | `2013.md:55` |
 | <https://vnhacker.blogspot.com/2011/09/beast.html> | article | `raw_sha256` | `2011.md:5` |

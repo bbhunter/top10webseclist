@@ -5,16 +5,18 @@ resource: "https://blog.arkark.dev/2025/09/08/asisctf-quals"
 tags: [article, webseclist-reference, en, blog-arkark-dev]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:28+00:00"
+  at: "2026-08-14T01:06:08+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://blog.arkark.dev/2025/09/08/asisctf-quals"
     title: Forcing Quirks Mode with PHP Warnings + CSS Exfiltration without Network Requests
+    author: arkark
     last_modified: 2025-09-08
 also_at: []
-authors: []
+authors:
+  - arkark
 canonical_url: ""
 cited_by:
   - "2025.md:33"
@@ -31,8 +33,8 @@ publisher: blog.arkark.dev
 publisher_english: ""
 raw_sha256: 5dfd510453af5349740e010c2927724d613c09411fc19d6bb3888348dea2d8ab
 retrieved_from: "https://blog.arkark.dev/2025/09/08/asisctf-quals"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:28+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-14T01:06:08+00:00"
 slug: 2025-blog-arkark-dev-forcing-quirks-mode-php-warnings-css-exfiltration-requests
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Forcing Quirks Mode with PHP Warnings + CSS Exfiltration without Network Requests
 
-**Forcing Quirks Mode with PHP Warnings + CSS Exfiltration without Network Requests** - Author not stated, blog.arkark.dev.
+**Forcing Quirks Mode with PHP Warnings + CSS Exfiltration without Network Requests** - arkark, blog.arkark.dev.
 
 - Published: 2025-09-08
 - Original: <https://blog.arkark.dev/2025/09/08/asisctf-quals>
-- Preserved from: https://blog.arkark.dev/2025/09/08/asisctf-quals (live) on 2026-08-09
+- Preserved from: https://blog.arkark.dev/2025/09/08/asisctf-quals (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

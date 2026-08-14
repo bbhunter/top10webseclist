@@ -1,17 +1,17 @@
 ---
 type: Article
-title: "CSS:the bomb inside your inbox"
+title: "CSS: the bomb inside your inbox"
 resource: "https://portswigger.net/research/css-the-bomb-inside-your-inbox"
 tags: [article, webseclist-reference, portswigger-research]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:44:53+00:00"
+  at: "2026-08-14T01:05:54+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://portswigger.net/research/css-the-bomb-inside-your-inbox"
-    title: "CSS:the bomb inside your inbox"
+    title: "CSS: the bomb inside your inbox"
     author: Gareth Heyes
     last_modified: 2026-08-06
 also_at: []
@@ -34,7 +34,7 @@ publisher_english: ""
 raw_sha256: b2432d23cbd5b6787024e9c367a310874b2df96020f31b37423f277066c3054f
 retrieved_from: "https://portswigger.net/research/css-the-bomb-inside-your-inbox"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:44:53+00:00"
+retrieved_utc: "2026-08-14T01:05:54+00:00"
 slug: 2026-portswigger-research-css-bomb-inside-your-inbox
 snapshot: ""
 title_english: ""
@@ -42,13 +42,13 @@ translation_file: ""
 translation_of: ""
 ---
 
-# CSS:the bomb inside your inbox
+# CSS: the bomb inside your inbox
 
-**CSS:the bomb inside your inbox** - Gareth Heyes, PortSwigger Research.
+**CSS: the bomb inside your inbox** - Gareth Heyes, PortSwigger Research.
 
 - Published: 2026-08-06
 - Original: <https://portswigger.net/research/css-the-bomb-inside-your-inbox>
-- Preserved from: https://portswigger.net/research/css-the-bomb-inside-your-inbox (stored) on 2026-08-11
+- Preserved from: https://portswigger.net/research/css-the-bomb-inside-your-inbox (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

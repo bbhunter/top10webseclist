@@ -1050,6 +1050,372 @@
       ],
       "publisher": "DEVCORE",
       "reason": "Orange Tsai is the sole author; the publisher is DEVCORE, whose security alert accompanies the post, rather than the blog hostname."
+    },
+    "https://i.blackhat.com/Asia-26/Presentations/BHAS26-Davidson-Discovering-React2Shell.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Discovering React2Shell",
+      "reason": "Reviewed 2026-08-14: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited."
+    },
+    "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Grafnetter-Pass-the-Passkey-Slides.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Pass-the-Passkey Family of Attacks (Slides)",
+      "reason": "Reviewed 2026-08-14: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited. The citation pairs this with its sibling on one list line and both carry the document title, so the format word the citation itself uses (Slides) distinguishes them."
+    },
+    "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Grafnetter-Pass-the-Passkey-WP.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Pass-the-Passkey Family of Attacks",
+      "reason": "Reviewed 2026-08-14: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited."
+    },
+    "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-Slides.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "CSS: the bomb inside your inbox (Slides)",
+      "reason": "Reviewed 2026-08-14: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited. The citation pairs this with its sibling on one list line and both carry the document title, so the format word the citation itself uses (Slides) distinguishes them."
+    },
+    "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-WP.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "CSS: the bomb inside your inbox (Whitepaper)",
+      "reason": "Reviewed 2026-08-14: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited. The citation pairs this with its sibling on one list line and both carry the document title, so the format word the citation itself uses (Whitepaper) distinguishes them."
+    },
+    "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-Slides.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Transformers: Dark Side of the Type — Weaponizing the Conversion Layer (Slides)",
+      "reason": "Reviewed 2026-08-14: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited. The citation pairs this with its sibling on one list line and both carry the document title, so the format word the citation itself uses (Slides) distinguishes them."
+    },
+    "https://i.blackhat.com/BH-USA-26/Presentations/BUHUS26-Porat-When-Agentic-Glue-Melts-REV01.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "When Agentic Glue Melts: Exploiting Cloudflare Code Mode & Workers",
+      "reason": "Reviewed 2026-08-14: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited."
+    },
+    "https://ndss-symposium.org/wp-content/uploads/f0697-yang-slides.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Token Time Bomb: Evaluating JWT Implementations for Vulnerability Discovery (Slides)",
+      "reason": "Reviewed 2026-08-14: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited. The citation pairs this with its sibling on one list line and both carry the document title, so the format word the citation itself uses (Slides) distinguishes them."
+    },
+    "https://ndss-symposium.org/wp-content/uploads/f0902-drescher-slides.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations (Slides)",
+      "reason": "Reviewed 2026-08-14: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited. The citation pairs this with its sibling on one list line and both carry the document title, so the format word the citation itself uses (Slides) distinguishes them."
+    },
+    "https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Can AI do novel security research? Meet the HTTP Terminator (Whitepaper)",
+      "reason": "Reviewed 2026-08-14: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited. The citation pairs this with its sibling on one list line and both carry the document title, so the format word the citation itself uses (Whitepaper) distinguishes them."
+    },
+    "https://franziroesner.com/pdf/roesner_kohlbrenner_2026_agentic_sop.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Agentic Browsers and the Same-Origin Policy (Paper)",
+      "reason": "Reviewed 2026-08-14: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited. The citation pairs this with its sibling on one list line and both carry the document title, so the format word the citation itself uses (Paper) distinguishes them."
+    },
+    "https://i.blackhat.com/BH-USA-26/Presentations/US-26-Stacey-CRLF-Powered-Desync-Attacks-Wed.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "CRLF-Powered Desync Attacks: Beheading HTTP Streams (Slides)",
+      "authors": [
+        "Tom Stacey"
+      ],
+      "reason": "Reviewed 2026-08-14: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited. The deck declares no speaker, but the citation's own file stem is US-26-Stacey, its tooling slide points at github.com/t0xodile/crlf-powered-desync-scanner, and PortSwigger's write-up of the same research credits Tom Stacey. The citation pairs this with its sibling on one list line and both carry the document title, so the format word the citation itself uses (Slides) distinguishes them."
+    },
+    "https://mehmetince.net/the-story-of-a-perfect-exploit-chain-six-bugs-that-looked-harmless-until-they-became-pre-auth-rce-in-a-security-appliance": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "The Story of a Perfect Exploit Chain: Six Bugs That Looked Harmless Until They Became Pre-Auth RCE in a Security Appliance",
+      "reason": "Reviewed 2026-08-14: the recorded title carried the site's own chrome rather than the document's own title. The document itself is the one cited. The recorded title ran on into the site masthead (\"- Mehmet Ince @mdisec - Vulnerability Researcher | Building security products | Security Advisor\"), which is also where the slug 2026-advisor came from."
+    },
+    "https://mizu.re/post/under-the-beamer": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "kevin_mizu"
+      ],
+      "reason": "Reviewed 2026-08-14: the writeup credits the challenge it describes as \"Author: [Me](https://x.com/kevin_mizu)\" on the author own site, mizu.re. Only the handle is given, so no surname is inferred."
+    },
+    "https://nastystereo.com/security/ruby-pack.html": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Ruby Array Pack Bleed",
+      "reason": "Reviewed 2026-08-14: the recorded title carried the site's own chrome rather than the document's own title. The document itself is the one cited. The recorded title appended \"/ nastystereo.com\"."
+    },
+    "https://aretekzs.com/posts/fuzzing-ws": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Fuzzing WebSockets for Server-Side Vulnerabilities",
+      "reason": "Reviewed 2026-08-14: the recorded title carried the site's own chrome rather than the document's own title. The document itself is the one cited. The recorded title was prefixed with the site name (\"aretekzs | \")."
+    },
+    "https://github.com/RenwaX23/X/blob/master/safari_bug.md": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "PermissionJacking: How a Subtle Bug in Safari Could Lead to Camera Hijacking",
+      "reason": "Reviewed 2026-08-14: the recorded title carried the site's own chrome rather than the document's own title. The document itself is the one cited. The recorded title was GitHub's blob-page chrome (\"RenwaX23/X: safari_bug.md\")."
+    },
+    "https://ethiack.com/info-hub/research/write-once-shell-everywhere-arbitrary-file-writes-into-rce": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Write Once, Shell Everywhere: Turning Arbitrary File Writes into RCE",
+      "reason": "Reviewed 2026-08-14: the recorded title carried the site's own chrome rather than the document's own title. The document itself is the one cited. The recorded title appended the site tagline (\"| Ethiack — Autonomous Ethical Hacking for continuous security\")."
+    },
+    "https://mizu.re/post/fcsc-2026-writeups": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "kevin_mizu"
+      ],
+      "reason": "Reviewed 2026-08-14: every challenge in this writeup is marked \"Author: Me\" on the author own site, mizu.re, whose companion writeup links that same \"Me\" to https://x.com/kevin_mizu. Only the handle is given, so no surname is inferred."
+    },
+    "https://slcyber.io/research-center/two-bypasses-for-chromes-sanitizer-api": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Two Bypasses for Chrome’s Sanitizer API",
+      "reason": "Reviewed 2026-08-14: the recorded title carried the site's own chrome rather than the document's own title. The document itself is the one cited. The recorded title appended \"› Searchlight Cyber\"."
+    },
+    "https://slcyber.io/research-center/wp2shell-pre-authentication-rce-in-wordpress-core": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "wp2shell: Pre Authentication RCE in WordPress Core",
+      "reason": "Reviewed 2026-08-14: the recorded title carried the site's own chrome rather than the document's own title. The document itself is the one cited. The recorded title appended \"› Searchlight Cyber\"."
+    },
+    "https://slcyber.io/research-center/smashing-the-servicenow-sandbox-pre-authentication-rce": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Smashing the ServiceNow Sandbox – Pre Authentication RCE",
+      "reason": "Reviewed 2026-08-14: the recorded title carried the site's own chrome rather than the document's own title. The document itself is the one cited. The recorded title appended \"› Searchlight Cyber\"."
+    },
+    "https://slcyber.io/research-center/exploit-brokers-pay-500000-for-a-wordpress-rce-i-found-one-with-gpt5-6": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Exploit brokers pay $500,000 for a WordPress RCE. I found one with GPT5.6 Sol Ultra and $25",
+      "reason": "Reviewed 2026-08-14: the recorded title carried the site's own chrome rather than the document's own title. The document itself is the one cited. The recorded title appended \"› Searchlight Cyber\"."
+    },
+    "https://slcyber.io/assetnote-security-research-center/novel-ssrf-technique-involving-http-redirect-loops": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Novel SSRF Technique Involving HTTP Redirect Loops",
+      "reason": "Reviewed 2026-08-14: the recorded title carried the site's own chrome rather than the document's own title. The document itself is the one cited. The recorded title appended \"› Searchlight Cyber\"."
+    },
+    "https://portswigger.net/research/css-the-bomb-inside-your-inbox": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "CSS: the bomb inside your inbox",
+      "reason": "Reviewed 2026-08-14: the recorded title lost the space after the colon (\"CSS:the bomb inside your inbox\")."
+    },
+    "https://i.blackhat.com/BH-USA-26/Presentations/USA-26-Vanderlinden-Time-for-ACKrobatics.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Vik Vanderlinden",
+        "Tom Van Goethem",
+        "Mathy Vanhoef"
+      ],
+      "reason": "Reviewed 2026-08-14: the deck's own team slide reads \"The ACKrobats | Vik Vanderlinden   Tom Van Goethem    Mathy Vanhoef\" over \"PhD @ KU Leuven / SWE @ Google / Prof. @ KU Leuven\"."
+    },
+    "https://blog.flatt.tech/entry/signed_url_path_traversal": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Matsui",
+        "Eui Chul Chung"
+      ],
+      "reason": "Reviewed 2026-08-14: the archived English translation opens \"Hello. We are Matsui ([@ryotaromosao]) and Chung ([Eui Chul Chung]), security engineers at GMO Flatt Security.\" Only the surname is given for Matsui."
+    },
+    "https://hackerone.com/reports/3511792": {
+      "outcome": "archive",
+      "class": "records",
+      "authors": [
+        "sharp_edged"
+      ],
+      "reason": "Reviewed 2026-08-14: the report page declares \"sharp_edged submitted a report to Node.js\". The handle is the only name the page gives."
+    },
+    "https://jorianwoltjer.com/blog/p/research/nonce-csp-bypass-using-disk-cache": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Jorian Woltjer"
+      ],
+      "reason": "Reviewed 2026-08-14: jorianwoltjer.com is the researcher's own site and the post links its companion challenge as x.com/J0R1AN and bsky.app/profile/jorianwoltjer.com."
+    },
+    "https://blog.ammaraskar.com/github-token-stealing": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Ammar Askar"
+      ],
+      "reason": "Reviewed 2026-08-14: blog.ammaraskar.com is the researcher's own site, published as \"ammar's blog\", and the post is written in the first person throughout."
+    },
+    "https://dirkjanm.io/borrowing-windows-hello-keys": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Dirk-jan Mollema"
+      ],
+      "reason": "Reviewed 2026-08-14: dirkjanm.io is the researcher's own site; the post is first person (\"As an Entra ID researcher, I've always been more interested...\") and cites dirkjanm.io/talks as his own prior talks."
+    },
+    "https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Tom Stacey"
+      ],
+      "reason": "Reviewed 2026-08-14: thomas.stacey.se is the researcher's own site, published under the handle t0xodile, and PortSwigger's write-up of this same Black Hat research credits Tom Stacey."
+    },
+    "https://blog.arkark.dev/2025/12/26/etag-length-leak": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "arkark"
+      ],
+      "reason": "Reviewed 2026-08-14: the post credits the challenge it describes as \"Author: [me](https://x.com/arkark_)\" on the author's own blog, blog.arkark.dev."
+    },
+    "https://blog.arkark.dev/2025/09/08/asisctf-quals": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "arkark"
+      ],
+      "reason": "Reviewed 2026-08-14: the post credits the challenge it describes as \"Author: [me](https://x.com/arkark_)\" on the author's own blog, blog.arkark.dev."
+    },
+    "https://blog.slonser.info/posts/make-self-xss-great-again": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Slonser"
+      ],
+      "reason": "Reviewed 2026-08-14: blog.slonser.info is the researcher's own site and the article's own proof-of-concept payload signs itself \"edited by slonser\"."
+    },
+    "https://cyberark.com/resources/threat-research-blog/racing-and-fuzzing-http-3-open-sourcing-quicdraw": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Racing and Fuzzing HTTP/3: Open-sourcing QuicDraw(H3)",
+      "publisher": "CyberArk",
+      "authors": [
+        "Maor Abutbul"
+      ],
+      "reason": "Recovered 2026-08-14 from Wayback snapshot 20251205234838. The live URL 301s to the Palo Alto Networks \"Idira\" product page after the acquisition, so the previous capture was marketing copy filed under a product title, credited to @PaloAltoNtwks and named palo-alto-networks-idira-identity-security-platform. The recovered post carries its own byline, \"November 18, 2025 Maor Abutbul\"; the stated publisher rebuilds the slug off the product name."
+    },
+    "https://blog.malicious.group/the-quiet-side-channel-smuggling-with-cl-0-for-c2": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "The Quiet Side Channel... Smuggling with CL.0 for C2",
+      "publisher": "Malicious Group",
+      "authors": [
+        "d3d (M. B. Johnson)"
+      ],
+      "reason": "Recovered 2026-08-14 from Wayback snapshot 20251230225602. The live post 301s to the blog root, so the previous capture was the site post index, titled \"Malicious Group\" and named malicious-group-malicious-group-2. The capture arrived gzip-encoded and was stored undecoded, so the first extraction produced binary noise; the decompressed bytes were stored and re-extracted. The page declares its author in JSON-LD as \"d3d (M. B. Johnson)\", @type Person, with the author page /author/d3d/."
+    },
+    "https://lyra.horse/blog/2025/12/svg-clickjacking": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "rebane2001"
+      ],
+      "reason": "Reviewed 2026-08-14: the post is first person about its own finding — \"I have actually managed to pull off this attack against Google Docs\", \"Google VRP awarded me $3133.70\" — and signs off \"Discuss this post on: twitter/rebane2001, mastodon infosec.exchange/@rebane2001\", the handle the author publishes lyra.horse under."
+    },
+    "https://github.com/RUB-NDS/state-of-passkeys-artifacts/blob/main/paper.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "The State of Passkeys: Studying the Adoption and Security of Passkeys on the Web (Paper)",
+      "authors": [
+        "Louis Jannett",
+        "Andreas Mayer",
+        "Maximilian Westers",
+        "Vladislav Mladenov",
+        "Christian Mainka",
+        "Jörg Schwenk"
+      ],
+      "publisher": "USENIX Security '26",
+      "reason": "Cited as the bare word \"Paper\" beside the USENIX landing page, so extraction had no title to read and named the file after the raw.githubusercontent.com host. The blob URL serves GitHub's HTML shell, so the PDF was preserved from the matching raw URL. The format word in parentheses keeps it apart from the USENIX landing page for the same work, which carries the same title. Read from page one of the paper itself, which the archive holds: \"The State of Passkeys: Studying the Adoption and Security of Passkeys on the Web\", Louis Jannett (1), Andreas Mayer (2), Maximilian Westers (2), Vladislav Mladenov (1), Christian Mainka (3) and Jörg Schwenk (1) — 1 Ruhr University Bochum, 2 Heilbronn University of Applied Sciences, 3 University of Wuppertal. Without this the page credited nobody and the byline fell back to the hostname."
+    },
+    "https://www.usenix.org/conference/usenixsecurity26/presentation/jannett": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Louis Jannett",
+        "Andreas Mayer",
+        "Maximilian Westers",
+        "Vladislav Mladenov",
+        "Christian Mainka",
+        "Jörg Schwenk"
+      ],
+      "publisher": "USENIX",
+      "reason": "Read from page one of the paper itself, which the archive holds: \"The State of Passkeys: Studying the Adoption and Security of Passkeys on the Web\", Louis Jannett (1), Andreas Mayer (2), Maximilian Westers (2), Vladislav Mladenov (1), Christian Mainka (3) and Jörg Schwenk (1) — 1 Ruhr University Bochum, 2 Heilbronn University of Applied Sciences, 3 University of Wuppertal. Without this the page credited nobody and the byline fell back to the hostname."
+    },
+    "https://github.com/RUB-NDS/state-of-passkeys-artifacts": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "The State of Passkeys: research artifacts",
+      "authors": [
+        "Louis Jannett",
+        "Andreas Mayer",
+        "Maximilian Westers",
+        "Vladislav Mladenov",
+        "Christian Mainka",
+        "Jörg Schwenk"
+      ],
+      "publisher": "Ruhr University Bochum (RUB-NDS)",
+      "reason": "Cited as \"Artifacts\", so the recorded title was the citation's own word and the author was the GitHub organisation. This is the artifact repository for the paper — PASSKEYS-RADAR, PASSKEYS-ATTACKER, the well-known detector, the learning platform and the datasets. Read from page one of the paper itself, which the archive holds: \"The State of Passkeys: Studying the Adoption and Security of Passkeys on the Web\", Louis Jannett (1), Andreas Mayer (2), Maximilian Westers (2), Vladislav Mladenov (1), Christian Mainka (3) and Jörg Schwenk (1) — 1 Ruhr University Bochum, 2 Heilbronn University of Applied Sciences, 3 University of Wuppertal. Without this the page credited nobody and the byline fell back to the hostname."
+    },
+    "https://passkeys.tools/": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Louis Jannett",
+        "Andreas Mayer",
+        "Maximilian Westers",
+        "Vladislav Mladenov",
+        "Christian Mainka",
+        "Jörg Schwenk"
+      ],
+      "publisher": "Ruhr University Bochum (RUB-NDS)",
+      "reason": "The project site for PASSKEYS-ATTACKER and PASSKEYS-RADAR, published alongside the paper and its artifact repository; the page itself states no byline. Read from page one of the paper itself, which the archive holds: \"The State of Passkeys: Studying the Adoption and Security of Passkeys on the Web\", Louis Jannett (1), Andreas Mayer (2), Maximilian Westers (2), Vladislav Mladenov (1), Christian Mainka (3) and Jörg Schwenk (1) — 1 Ruhr University Bochum, 2 Heilbronn University of Applied Sciences, 3 University of Wuppertal. Without this the page credited nobody and the byline fell back to the hostname."
+    },
+    "https://www.usenix.org/conference/usenixsecurity26/presentation/wang-qinying": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Qinying Wang",
+        "Yong Yang",
+        "Yuan Chen",
+        "Shouling Ji",
+        "Mathias Payer"
+      ],
+      "publisher": "USENIX",
+      "reason": "Read from page one of the paper itself, which the archive holds: \"When HTTP 402 Meets the Blockchain: Risks on Emerging x402 Payments\", Qinying Wang (EPFL), Yong Yang (Zhejiang University), Yuan Chen (independent), Shouling Ji (Zhejiang University) and Mathias Payer (EPFL); Wang and Yang contributed equally and Ji is the corresponding author. Without this the page credited nobody and the byline fell back to the hostname."
+    },
+    "https://arxiv.org/abs/2607.19545": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Qinying Wang",
+        "Yong Yang",
+        "Yuan Chen",
+        "Shouling Ji",
+        "Mathias Payer"
+      ],
+      "publisher": "arXiv",
+      "reason": "Read from page one of the paper itself, which the archive holds: \"When HTTP 402 Meets the Blockchain: Risks on Emerging x402 Payments\", Qinying Wang (EPFL), Yong Yang (Zhejiang University), Yuan Chen (independent), Shouling Ji (Zhejiang University) and Mathias Payer (EPFL); Wang and Yang contributed equally and Ji is the corresponding author. Without this the page credited nobody and the byline fell back to the hostname."
+    },
+    "https://github.com/HexHive/x402scope": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "X402SCOPE",
+      "authors": [
+        "Qinying Wang",
+        "Yong Yang",
+        "Yuan Chen",
+        "Shouling Ji",
+        "Mathias Payer"
+      ],
+      "publisher": "HexHive, EPFL",
+      "reason": "Cited as \"Tool\", so the recorded title was the citation's own word and the author was the GitHub organisation. This is the released X402SCOPE framework from the paper. Read from page one of the paper itself, which the archive holds: \"When HTTP 402 Meets the Blockchain: Risks on Emerging x402 Payments\", Qinying Wang (EPFL), Yong Yang (Zhejiang University), Yuan Chen (independent), Shouling Ji (Zhejiang University) and Mathias Payer (EPFL); Wang and Yang contributed equally and Ji is the corresponding author. Without this the page credited nobody and the byline fell back to the hostname."
     }
   }
 }

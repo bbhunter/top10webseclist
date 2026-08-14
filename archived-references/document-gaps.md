@@ -42,7 +42,7 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-14 reference(s) unresolved. 13 of them already have their raw bytes stored.
+14 reference(s) unresolved. 14 of them already have their raw bytes stored.
 
 ## https://bugzilla.mozilla.org/show_bug.cgi?id=369814
 
@@ -54,7 +54,7 @@ or fix the route and re-run.
 
 ## https://portswigger.net/kb/papers/serversidetemplateinjection.pdf
 
-- Outcome: `broken-capture` (no bytes stored)
+- Outcome: `broken-capture`
 - Kind: whitepaper
 - Reason: faulty capture: the PDF's glyphs carry no usable encoding map, so every page extracted as binary noise - 58 readable words in the whole document and 43% of characters undecodable; recapture by rendering the pages to images and transcribing them (refs.py pdf-pages, then a reader) rather than by extracting text (reported 2026-08-12)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.

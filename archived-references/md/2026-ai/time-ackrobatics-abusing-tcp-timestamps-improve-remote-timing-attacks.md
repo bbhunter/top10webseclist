@@ -5,18 +5,22 @@ resource: "https://i.blackhat.com/BH-USA-26/Presentations/USA-26-Vanderlinden-Ti
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-08T18:51:02+00:00"
+  at: "2026-08-14T01:05:58+00:00"
 status: stable
-stale_after: 2027-08-08
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://i.blackhat.com/BH-USA-26/Presentations/USA-26-Vanderlinden-Time-for-ACKrobatics.pdf"
     title: "Time for ACKrobatics: Abusing TCP Timestamps to Improve Remote Timing Attacks"
+    author: Vik Vanderlinden, Tom Van Goethem, Mathy Vanhoef
 also_at: []
-authors: []
+authors:
+  - Vik Vanderlinden
+  - Tom Van Goethem
+  - Mathy Vanhoef
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:53"
+  - "2026-ai.md:29"
 commit: ""
 content_sha256: a9a84a942a7ebef4f2a15e78fbe5436630ca46ad449a03bc8ca7552fa005ffe7
 depth: full
@@ -30,8 +34,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: f4dbea1b0f5d9c9d925ed679ae8a4a6ee491bf17d0335105151877d4b415927c
 retrieved_from: "https://i.blackhat.com/BH-USA-26/Presentations/USA-26-Vanderlinden-Time-for-ACKrobatics.pdf"
-retrieved_kind: live
-retrieved_utc: "2026-08-08T18:51:02+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-14T01:05:58+00:00"
 slug: time-ackrobatics-abusing-tcp-timestamps-improve-remote-timing-attacks
 snapshot: ""
 title_english: ""
@@ -41,11 +45,11 @@ translation_of: ""
 
 # Time for ACKrobatics: Abusing TCP Timestamps to Improve Remote Timing Attacks
 
-**Time for ACKrobatics: Abusing TCP Timestamps to Improve Remote Timing Attacks** - Author not stated, Publisher not stated.
+**Time for ACKrobatics: Abusing TCP Timestamps to Improve Remote Timing Attacks** - Vik Vanderlinden, Tom Van Goethem, Mathy Vanhoef, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-USA-26/Presentations/USA-26-Vanderlinden-Time-for-ACKrobatics.pdf>
-- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/USA-26-Vanderlinden-Time-for-ACKrobatics.pdf (live) on 2026-08-08
+- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/USA-26-Vanderlinden-Time-for-ACKrobatics.pdf (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

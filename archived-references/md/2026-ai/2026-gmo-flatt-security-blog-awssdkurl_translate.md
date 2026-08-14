@@ -5,16 +5,19 @@ resource: "https://blog.flatt.tech/entry/signed_url_path_traversal"
 tags: [article, webseclist-reference, ja, gmo-flatt-security-blog]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:04:18+00:00"
+  at: "2026-08-14T01:05:59+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://blog.flatt.tech/entry/signed_url_path_traversal"
     title: AWS公式SDKにも存在した、署名付きURLにおけるパストラバーサル
+    author: Matsui, Eui Chul Chung
     last_modified: 2026-03-10
 also_at: []
-authors: []
+authors:
+  - Matsui
+  - Eui Chul Chung
 canonical_url: ""
 cited_by:
   - "2026-ai.md:54"
@@ -31,8 +34,8 @@ publisher: GMO Flatt Security Blog
 publisher_english: ""
 raw_sha256: 14f3293e15cee4bf332c3ec1a7be35fcc39eecc9ee45f58bc4aeded10015f3f2
 retrieved_from: "https://blog.flatt.tech/entry/signed_url_path_traversal"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:04:18+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-14T01:05:59+00:00"
 slug: 2026-gmo-flatt-security-blog-awssdkurl_translate
 snapshot: ""
 title_english: Path Traversal in Signed URLs, Which Even Existed in the Official AWS SDK
@@ -42,12 +45,12 @@ translation_of: 2026-gmo-flatt-security-blog-awssdkurl.md
 
 # Path Traversal in Signed URLs, Which Even Existed in the Official AWS SDK (English translation)
 
-**AWS公式SDKにも存在した、署名付きURLにおけるパストラバーサル** - Author not stated, GMO Flatt Security Blog.
+**AWS公式SDKにも存在した、署名付きURLにおけるパストラバーサル** - Matsui, Eui Chul Chung, GMO Flatt Security Blog.
 
 - Title in English: Path Traversal in Signed URLs, Which Even Existed in the Official AWS SDK
 - Published: 2026-03-10
 - Original: <https://blog.flatt.tech/entry/signed_url_path_traversal>
-- Preserved from: https://blog.flatt.tech/entry/signed_url_path_traversal (live) on 2026-08-10
+- Preserved from: https://blog.flatt.tech/entry/signed_url_path_traversal (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

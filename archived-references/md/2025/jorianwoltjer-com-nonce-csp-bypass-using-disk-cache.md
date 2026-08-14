@@ -5,15 +5,17 @@ resource: "https://jorianwoltjer.com/blog/p/research/nonce-csp-bypass-using-disk
 tags: [article, webseclist-reference, en, jorianwoltjer-com]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:30:23+00:00"
+  at: "2026-08-14T01:06:02+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://jorianwoltjer.com/blog/p/research/nonce-csp-bypass-using-disk-cache"
     title: Nonce CSP bypass using Disk Cache
+    author: Jorian Woltjer
 also_at: []
-authors: []
+authors:
+  - Jorian Woltjer
 canonical_url: ""
 cited_by:
   - "2025.md:32"
@@ -30,8 +32,8 @@ publisher: jorianwoltjer.com
 publisher_english: ""
 raw_sha256: fd534ff8509c63312114b269dc0593d80c560b97decea612e8941341266b59a1
 retrieved_from: "https://jorianwoltjer.com/blog/p/research/nonce-csp-bypass-using-disk-cache"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:30:23+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-14T01:06:02+00:00"
 slug: jorianwoltjer-com-nonce-csp-bypass-using-disk-cache
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # Nonce CSP bypass using Disk Cache
 
-**Nonce CSP bypass using Disk Cache** - Author not stated, jorianwoltjer.com.
+**Nonce CSP bypass using Disk Cache** - Jorian Woltjer, jorianwoltjer.com.
 
 - Published: date not stated
 - Original: <https://jorianwoltjer.com/blog/p/research/nonce-csp-bypass-using-disk-cache>
-- Preserved from: https://jorianwoltjer.com/blog/p/research/nonce-csp-bypass-using-disk-cache (live) on 2026-08-10
+- Preserved from: https://jorianwoltjer.com/blog/p/research/nonce-csp-bypass-using-disk-cache (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

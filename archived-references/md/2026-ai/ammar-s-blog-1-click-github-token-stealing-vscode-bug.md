@@ -5,15 +5,17 @@ resource: "https://blog.ammaraskar.com/github-token-stealing/"
 tags: [article, webseclist-reference, en, ammar-s-blog]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:03:58+00:00"
+  at: "2026-08-14T01:06:03+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://blog.ammaraskar.com/github-token-stealing/"
     title: 1-Click GitHub Token Stealing via a VSCode Bug
+    author: Ammar Askar
 also_at: []
-authors: []
+authors:
+  - Ammar Askar
 canonical_url: ""
 cited_by:
   - "2026-ai.md:41"
@@ -30,8 +32,8 @@ publisher: "Ammar's Blog"
 publisher_english: ""
 raw_sha256: 96f76d5d149ffd7d000ba03d0bda39bb130f70aedf7c6f3573bdcc797140ed60
 retrieved_from: "https://blog.ammaraskar.com/github-token-stealing/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:03:58+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-14T01:06:03+00:00"
 slug: ammar-s-blog-1-click-github-token-stealing-vscode-bug
 snapshot: ""
 title_english: ""
@@ -41,11 +43,11 @@ translation_of: ""
 
 # 1-Click GitHub Token Stealing via a VSCode Bug
 
-**1-Click GitHub Token Stealing via a VSCode Bug** - Author not stated, Ammar's Blog.
+**1-Click GitHub Token Stealing via a VSCode Bug** - Ammar Askar, Ammar's Blog.
 
 - Published: date not stated
 - Original: <https://blog.ammaraskar.com/github-token-stealing/>
-- Preserved from: https://blog.ammaraskar.com/github-token-stealing/ (live) on 2026-08-10
+- Preserved from: https://blog.ammaraskar.com/github-token-stealing/ (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

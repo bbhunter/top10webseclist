@@ -5,16 +5,18 @@ resource: "https://dirkjanm.io/borrowing-windows-hello-keys/"
 tags: [article, webseclist-reference, en, dirkjanm-io]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:08:59+00:00"
+  at: "2026-08-14T01:06:04+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://dirkjanm.io/borrowing-windows-hello-keys/"
     title: Borrowing Windows Hello keys for authentication and persistence
+    author: Dirk-jan Mollema
     last_modified: 2026-08-05
 also_at: []
-authors: []
+authors:
+  - Dirk-jan Mollema
 canonical_url: ""
 cited_by:
   - "2026-ai.md:66"
@@ -31,8 +33,8 @@ publisher: dirkjanm.io
 publisher_english: ""
 raw_sha256: 44eb8139eb4c3907e55d9274ef32c5cf35e3c3bfd257a3d95acb9f8fbc7e571b
 retrieved_from: "https://dirkjanm.io/borrowing-windows-hello-keys/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:08:59+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-14T01:06:04+00:00"
 slug: 2026-dirkjanm-io-borrowing-windows-hello-keys-authentication-persistence
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Borrowing Windows Hello keys for authentication and persistence
 
-**Borrowing Windows Hello keys for authentication and persistence** - Author not stated, dirkjanm.io.
+**Borrowing Windows Hello keys for authentication and persistence** - Dirk-jan Mollema, dirkjanm.io.
 
 - Published: 2026-08-05
 - Original: <https://dirkjanm.io/borrowing-windows-hello-keys/>
-- Preserved from: https://dirkjanm.io/borrowing-windows-hello-keys/ (live) on 2026-08-10
+- Preserved from: https://dirkjanm.io/borrowing-windows-hello-keys/ (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

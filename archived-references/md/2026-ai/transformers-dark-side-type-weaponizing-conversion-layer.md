@@ -5,9 +5,9 @@ resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transfor
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:41:29+00:00"
+  at: "2026-08-14T01:08:47+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf"
@@ -20,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2026-ai.md:49"
 commit: ""
-content_sha256: 6ce3f90d77b5c227b92f6f0ff95b2319431d49444f1176db9b37728d8452f2e4
+content_sha256: 8f28087d17a7617a9599aea424c08e8eeb84ecd9f41472b59df7f119c9b49ccc
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: be2c786efcd2f4efa95c498537de5de026ecb3cc5e934ff131418b5aecc802a2
 retrieved_from: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:41:29+00:00"
+retrieved_utc: "2026-08-14T01:08:47+00:00"
 slug: transformers-dark-side-type-weaponizing-conversion-layer
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf>
-- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf (stored) on 2026-08-11
+- Preserved from: https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -332,25 +332,4 @@ Transformers: Dark Side of the Type O. Mirosh · Black Hat USA 2026 OpenText For
 
 --- page 68 ---
 
-þý8ZJ²ÄCR6N%GkQÎú;XC&s=gR>*'‚',TzM.TG8
-5Rn/L5þ]#;OýÝ:X<þ87Raÿð9—°…+X³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10±!¸/³l!&¸,´lS5¸*³l5	0¸.²l	V?+Ä+?+Ä+01Y%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
-·/%L%%"L
-
---- page 69 ---
-
 ¸¤@+P++
-
---- page 70 ---
-
-?		 
-   9	ù&j&*+,&™ª#  
-<<&MKM&RPPPRly•%«æõU&' $!$! O,¸‰@!?Op�ß
-
---- page 71 ---
-
-$.7P3zƒ3B$²7HþnÄ-^8:<	!0/'1$d]*E<5„XÚ*ÿôÆCÂ¸EX¸4/¹4>Y¸EX¸/¹>Y¸4¹"ô¸¹ôº"9¸/Aà]AqAÐàqº9¸/A 0]¸¹ôº,"9¸,/AÏ,]A,qAß,ï,qº;901".54632326=4&+5326=4&#"#"&54>326U9-$'*%DBDL==H?>3!
-
---- page 72 ---
-
-"=S1 2#"]r'"<T1"=S1+!§
-P"<T1!: þãkÿôäWº9¸EX¸	/¹	>Y¸EX¸/¹>Y¸	¹ô¸¹ôº	9º901"&5467#7!7ù

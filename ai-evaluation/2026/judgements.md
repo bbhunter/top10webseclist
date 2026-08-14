@@ -158,6 +158,18 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
+## 71.1 — [The State of Passkeys: Studying the Adoption and Security of Passkeys on the Web](https://www.usenix.org/conference/usenixsecurity26/presentation/jannett) [Paper](https://github.com/RUB-NDS/state-of-passkeys-artifacts/blob/main/paper.pdf) [Artifacts](https://github.com/RUB-NDS/state-of-passkeys-artifacts) [Tool](https://passkeys.tools) — Jannett, Mayer, Westers, Mladenov, Mainka, Schwenk
+
+**KEPT** · Tooling / methodology · confidence High
+
+*(Fourth re-check round, 14 August 2026.)*
+
+**What is new.** PASSKEYS-ATTACKER emulates *both* the client and the authenticator layer, so every WebAuthn field can be altered at every step of registration and authentication — which is what makes relying-party validation testable at all. 15 attack types and 28 detection methods were run against 103 live RPs under a plain web-attacker model (victim browser and authenticator assumed honest): all 103 fail at least one, 53 at high severity, 18 at critical. The load-bearing new attack type is **Credential Overwrite** — the attacker registers their own public key under the *victim's* credential ID, which RPs hand out unauthenticated, so one credential appears to belong to two users; depending on how the RP resolves the duplicate the victim is locked out or the account is taken over. Five sites skip signature verification outright. PASSKEYS-RADAR adds a continuously updated adoption dataset (872 RPs; domain scanning finds ~125% more than all 12 community directories combined), and the whole thing — scanner, tool, Chrome extension, deliberately vulnerable learning platform — is released.
+
+**What was already known.** RP-side WebAuthn evaluation exists, but small and under different attacker models: Grammatopoulos et al.'s WebDevAuthn assessed 16 RPs for conformance, [Kuchhal et al. (CCS 2023)](https://dl.acm.org/doi/10.1145/3576915.3623063) studied 29 RPs assuming a *compromised client*, and Yadav et al. covered local threats such as malicious extensions. Most of the 15 attack types are checks WebAuthn §7.1/§7.2 already mandates, so the catalogue systematises the standard more than it invents attacks; credential-binding confusion has precedent in the FIDO2 mis-binding literature and in [w3c/webauthn issue #579](https://github.com/w3c/webauthn/issues/579) on vague credential-ID uniqueness, though not previously demonstrated across live RPs. A concurrent adoption census exists ([Bhardwaj & Sastry, PAM 2026](https://arxiv.org/abs/2602.15135), Fidentikit over the Tranco 100K) but measures deployment only, with no security testing. Distinct from the three passkey items already judged for 2026: Pass-the-Passkey (73.0) attacks Windows Hello/Entra credential material, the Unit 42 post (54.5) and Beyond the Ceremony (48.0) survey the ceremony — none test RP server-side validation at scale.
+
+---
+
 ## 71.0 — [Sub:jugation — Hijacking Cloud Identities by Recycling Namespaces in Global OIDC Issuers](https://astrix.security/learn/blog/subjugation-hijacking-cloud-identities-by-recycling-namespaces-in-global-oidc-issuers/) [Sleeper squats follow-up](https://labs.boostsecurity.io/articles/sleeper-squats-github-oidc-immutable-subject-claim) — Tal Skverer, Astrix
 
 **KEPT** · Meaningful combination · confidence Medium
@@ -392,6 +404,18 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
+## 64.7 — [When HTTP 402 Meets the Blockchain: Risks on Emerging x402 Payments](https://www.usenix.org/conference/usenixsecurity26/presentation/wang-qinying) [Paper](https://arxiv.org/abs/2607.19545) [Tool](https://github.com/HexHive/x402scope) — Qinying Wang, Yong Yang, Yuan Chen, Shouling Ji, Mathias Payer
+
+**KEPT** · Meaningful extension · confidence Medium
+
+*(Fourth re-check round, 14 August 2026.)*
+
+**What is new.** Treats the x402 *facilitator* — the shared third party that verifies payment proofs and settles them on-chain for many independent merchants — as security infrastructure, and distils eight checkable rules over it, split into authorization correctness (SR1–SR4) and execution safety (SR5–SR8). The reusable core is the SR4 gap: a facilitator that returns `valid` before settlement actually succeeds makes *verified* and *paid* two different facts, and the merchant gates access on the wrong one — the Coinbase Flask SDK v0.2.1 releases the resource after verification alone. The execution-safety half has no analogue in earlier payment-logic work: because facilitators sponsor gas, proofs chosen to revert, or ERC-1271/6492 contract-wallet signature checkers running attacker-supplied code, turn a third party's wallet into an unbounded cost sink (Gas Abuse). X402SCOPE is released and does capability discovery before testing so it only fires applicable probes; 15 facilitators carrying 99% of x402 traffic yield 49 rule violations and 31 previously unknown vulnerabilities, every facilitator violating at least one rule, alongside a 119M-transaction measurement.
+
+**What was already known.** The method — derive the invariants of a three-party payment flow, then test merchants and the shared cashier against them — is [How to Shop for Free Online (S&P 2011)](https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper029.pdf), whose own term "free shopping" this paper reuses, and the e-commerce logic-flaw line that followed it (NDSS 2014; multi-party black-box attack patterns 2016-17), all three already in the archive. Closer and more awkward: [Five Attacks on x402 Agentic Payment Protocol](https://arxiv.org/abs/2605.11781) (Li, Q. Wang, Z. Wang, 12 May 2026) published authorization, binding, replay-protection and web-layer attacks on x402 two months earlier and is **not cited here** — concurrent and independent, but the public record was not empty. What survives as this paper's own: the facilitator-side rule set, the sponsored-execution attack class, and the scale.
+
+---
+
 ## 64.2 — [Cast Attack: A New Threat Posed by Ghost Bits in Java](https://i.blackhat.com/Asia-26/Presentations/Asia-26-Bai-Cast-Attack-Ghost-Bits-4.23.pdf) — Bai, Chen, Zheng
 
 **KEPT** · Meaningful extension · confidence Medium
@@ -579,6 +603,18 @@ about marginal novelty and not about whether the writeup is worth reading.
 **What is new.** Turning a flaky screenshot-versus-action race into a reliable one by deliberately widening the window with an injected stalling task, plus an end-to-end sink using a deeplink to pre-draft a message so one click at a known coordinate sends it.
 
 **What was already known.** The core mechanism, that a screenshot-then-click agent can be made to click something other than what it saw, was publicly disclosed against a major agent a year earlier and is cited by the author; UI redressing and TOCTOU are decades old.
+
+---
+
+## 59.1 — [Patch-Guided Vulnerability Detection: Extracting Java API Security Rules via Attack–Defense Cross-Analysis (VulGenie)](https://www.usenix.org/conference/usenixsecurity26/presentation/chen-bofei) [Artifact](https://zenodo.org/records/18039660) — Chen, Liao, Zhang (Fudan); Zhang, Payer (EPFL)
+
+**REMOVED** · Tooling / methodology · confidence Low-Medium
+
+*(Fourth re-check round, 14 August 2026. USENIX 403s automated fetches, so this was judged from the abstract, the Zenodo artifact record and secondary summaries — **re-judge if the full text becomes readable**.)*
+
+**What is new.** A denoising step that most patch-mining work skips: a modification-behaviour dependency patch graph isolates the constraint the patch actually added from the refactoring around it, and attack–defense cross-validation then decides which security-sensitive API that constraint was protecting. Deviation-guided static analysis keeps the resulting rules affordable to run. 198 rules from 150 Java patches at 81.82% precision, 177 of them with no CodeQL equivalent, 46 0-days across ten Java applications and ten CVEs.
+
+**What was already known.** Deriving misuse rules by diffing insecure against fixed code is SEADER's approach (21 misuse templates from 28 code pairs) and the data-driven / example-based Java vulnerability-detection line before it; "security patches encode an invariant" is the standing premise of that whole field. Web bearing is indirect — this is a Java API-misuse detector whose targets happen to be web applications, closer in kind to the Bullseye prototype-pollution detector (57.8, removed) than to the gadget-chain work kept at 68.8.
 
 ---
 
@@ -912,6 +948,18 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
+## 53.0 — [Salesforce Apex Predator: Breaking Salesforce Sites](https://dcworkshop.reco.ai/) [Field manual](https://www.reco.ai/blog/salesforce-experience-site-pentest-apex-predator) [LWRed](https://github.com/nitay-bachrach/lwred) — Nitay Bachrach & Cynthia Ardman, Reco
+
+**REMOVED** · Meaningful extension · confidence Medium
+
+*(Fourth re-check round, 14 August 2026.)*
+
+**What is new.** The material increment is the *next-generation* Salesforce site framework rather than Aura: an undocumented `RecordUiController.executeGraphQL` method that runs GraphQL directly against the org, full route enumeration through `ComponentController.getComponent` with `siteforce:routerInitializer`, and recovering callable custom Apex methods out of compiled LWC bundles by tracing import indices to invocation sites. Packaged as six live labs, two field manuals and the LWRed recon tool, which is what makes it usable rather than just readable. The transferable lesson is stated cleanly: reachable API surface is not what page crawling shows you.
+
+**What was already known.** Everything on the Aura half is long-established — Aaron Costello's October 2020 work on calling Aura controllers as an anonymous guest user, the `@AuraEnabled` system-context problem, AppOmni's Apex-security treatise and Mandiant's Aura data-exposure auditing guidance. SOQL injection, guest-user object enumeration and unauthenticated route discovery are standing practice on this platform, so the marginal contribution is the LWR/GraphQL surface and the enumeration mechanics around it, on one SaaS product.
+
+---
+
 ## 52.9 — [Never Trust the Output: Data Pollution in AI Agents and MCP](https://blog.slonser.info/posts/smugglle-ai-ouputs/) — Slonser
 
 **REMOVED** · Meaningful extension · confidence Medium
@@ -929,6 +977,18 @@ about marginal novelty and not about whether the writeup is worth reading.
 **What is new.** A resolver-vs-verifier normalisation differential: U+3002 counts as one label to the Node verifier so it matches a wildcard, while the resolver applies IDNA mapping and connects deeper. Wildcard depth is defined by whoever counts the dots is a clean portable framing.
 
 **What was already known.** The class was published six years earlier for Java and Apache HttpClient (GoSecure 2020), the embedded-NUL sibling rebinds the Marlinspike 2009 NUL-prefix idea, and U+3002 as a label separator is specified IDNA behaviour.
+
+---
+
+## 52.5 — [PANGOLIN: Fuzzing Multilingual IoT Firmware with LLM-Driven Code Analysis](https://www.usenix.org/conference/usenixsecurity26/presentation/jia-zhipeng) — Jia, Zhipeng et al.
+
+**REMOVED** · Tooling / methodology · confidence Low-Medium
+
+*(Fourth re-check round, 14 August 2026. Judged from the abstract and secondary summaries; USENIX 403s automated fetches.)*
+
+**What is new.** The cross-language step: IoT web services are split across C, Python and Lua, so an LLM agent reads the dispatch mechanism in one language and reconstructs parameter specifications that are consumed in another, with response-driven feedback correcting the specification before it is handed to a semantics-aware fuzzer. 68 previously unknown vulnerabilities, 45 of them behind interfaces the frontend never exposes, 31 identifiers assigned.
+
+**What was already known.** That a large share of an embedded device's HTTP attack surface never appears in the frontend, and that you recover it from the dispatcher rather than from the UI, is exactly [EAGLEYE (NDSS 2025)](https://www.ndss-symposium.org/wp-content/uploads/2025-399-paper.pdf) — hidden web interfaces in IoT devices via routing analysis — and IoT firmware fuzzing from snippet or message inference (IoTFuzzer, Snipuzz) predates both. The new component is the multilingual analysis, not the hidden-interface insight. Web bearing is real but narrow: the finding classes are the usual command injection, XSS and file upload on embedded HTTP servers.
 
 ---
 
@@ -1512,6 +1572,18 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
+## 39.8 — [GHSL-2024-198 / GHSL-2024-199: Zero-click RCE in Uptrain](https://securitylab.github.com/advisories/GHSL-2024-198_GHSL-2024-199_Uptrain/) — Kevin Stubbings, GitHub Security Lab
+
+**REMOVED** · Useful application · confidence High
+
+*(Fourth re-check round, 14 August 2026. Reported 5 September 2024, CVE-2025-27621 / CVE-2025-27770, advisory published 8 August 2026 — judged as 2026 on first public disclosure, matching the treatment of the Samsung Browser uXSS entry.)*
+
+**What is new.** Only the composition, and it is the familiar one: a default user whose username doubles as a static API key, a CORS policy that reflects any origin with credentials, and `/create_project` passing the `checks` and `metadata` parameters straight to Python `eval()`. Together any web page a victim visits reaches RCE with no interaction. The advisory is a clean worked example of why finding those three primitives separately understates the impact.
+
+**What was already known.** Every element. Hardcoded default credentials, permissive-CORS-plus-credentials as a cross-origin invocation primitive, and `eval()` on request parameters are each textbook, and "chain a browser-reachable authenticated sink into zero-click RCE" is the standard shape of the LLM-tooling advisories already judged for 2026 (LiteLLM at 55.5 and 53.0, Flowise at 59.0), all of which carry more mechanism than this one.
+
+---
+
 ## 39.2 — [Mini Shai-Hulud Returns: 42 Malicious npm Packages Fake Sigstore Badges](https://www.endorlabs.com/learn/mini-shai-hulud-returns-42-malicious-npm-packages-fake-sigstore-badges-in-antv-ecosystem-attack) — Peyton Kennedy, Endor Labs
 
 **REMOVED** · Duplicate / already known · confidence Medium
@@ -1559,6 +1631,30 @@ about marginal novelty and not about whether the writeup is worth reading.
 **What is new.** Only the framing against modern DNS-derived IP authorisation and a one-million-domain measurement, plus a co-location chain notion extending one domain pair to a group of co-tenants.
 
 **What was already known.** That an IP allowlist derived from a DNS answer does not bind to a domain on a name-based-virtual-hosting or multi-tenant address is structural and long-standing, and the paper's own related work concedes domain fronting, borrowing and shadowing cover the evasion goal; the headline exposure figure is close to definitional.
+
+---
+
+## 37.0 — [Slop Spotting: Using Rules to Detect AI Slop for Bug Bounty](https://semgrep.dev/events/hsc-26-defcon-34/) [Village agenda](https://www.bugbountydefcon.com/agenda-2026) — Katie Paxton-Fear & Max vonBlankenburg, Semgrep
+
+**REMOVED** · Insufficient evidence · confidence Low
+
+*(Fourth re-check round, 14 August 2026. DEF CON 34 Bug Bounty Village, 8 August; village decks are not mirrored on the DEF CON media server and no slides, tool or writeup has been published.)*
+
+**What is new.** As far as the abstract goes: a claim-existence gate for AI-generated reports. If a report asserts a concrete vulnerable code pattern, that assertion can be written as a SAST rule and run against the source — no hits, no pattern, no report. It is a genuinely sensible division of labour (the model proposes, a deterministic checker disposes) and cheap enough to run at triage speed on large codebases.
+
+**What was already known.** Turning a claim into a machine-checkable predicate before spending review time on it is ordinary triage discipline, and rule-based confirmation of a suspected pattern is what SAST has always been for. The gate also stops well short of exploitability — a pattern can exist and be unreachable. Judged on an abstract and a vendor event page only; nothing verifiable was published, so this is a placeholder, not a settled score.
+
+---
+
+## 36.5 — [New Hope for SSRF: Exploiting Credential Relay from APIM to AI Foundry](https://www.cloud-village.org/dc34) — Marios Gyftos & Chrysostomos Manousis, Cloud Village
+
+**REMOVED** · Insufficient evidence · confidence Low
+
+*(Fourth re-check round, 14 August 2026. Delivered 8 August as scheduled; still no slides, whitepaper, repo or blog post — Cloud Village had not pushed a DC34 slides repo as of this check. **Stays on the Watchlist.**)*
+
+**What is new.** From the abstract, the framing is the reusable part: an outbound request is *two* independent security decisions — where it goes, and which credential gets attached — and the same failure to bind them recurs across six Azure services (AI Foundry code interpreter and OpenAPI tool, AI Speech, Azure MCP Server, AKS MCP, API Management), with a credential-relay taxonomy and a testing methodology promised on top. Claimed impact runs from minting Managed Identity tokens for arbitrary audiences to never-expiring write SAS tokens from Microsoft's own backend and root RCE on Kubernetes nodes.
+
+**What was already known.** SSRF reaching IMDS to steal a managed identity token is the defining Azure SSRF pattern — Orca's 2023 disclosure of SSRF across four Azure services (API Management among them) is the direct precedent, and CVE-2026-26118, the one CVE tied to this work, was published by MSRC in March 2026 with a GitHub advisory. Whether the cross-service taxonomy is more than a count of instances cannot be judged without the deck; scored as insufficient evidence rather than guessed at.
 
 ---
 
@@ -1642,6 +1738,18 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
+## 32.0 — [Pattern, Graph, Prompt: What Happens When You Layer Three Analysis Paradigms on the Same Codebase](https://appsecvillage.com/events/dc-2026/pattern-graph-prompt-what-happens-when-you-layer-three-analysis-paradigms-on-the-same-codebase-1223399) — Mudita Khurana, Airbnb
+
+**REMOVED** · Insufficient evidence · confidence Low
+
+*(Fourth re-check round, 14 August 2026. AppSec Village, 8 August; no slides, data or writeup published.)*
+
+**What is new.** A single production monorepo run through pattern-based SAST, code-property-graph analysis and LLM review, with 100+ confirmed vulnerabilities and a stated methodology for layering them. The useful framing is that the three fail *differently* — rules are exhaustive only for known forms, graphs carry reachability but not intent, LLMs read intent but give up determinism — so the measure that matters is unique finds and unique misses per paradigm, not the combined total.
+
+**What was already known.** That rules, dataflow and semantic review are complementary, and that an LLM reviewer should not be benchmarked purely as a SAST replacement, is the standing position across vendor and academic work on the same question. Without the per-paradigm numbers the talk's actual contribution — the overlap and non-overlap — is exactly what is unpublished.
+
+---
+
 ## 31.8 — [Duplicate chunked `Transfer-Encoding` smuggles a response across reused proxy connections in curl](https://hackerone.com/reports/3795615) [Bare-LF variant](https://hackerone.com/reports/3785919) — violet12331
 
 **REMOVED** · Useful application · confidence Medium
@@ -1652,6 +1760,18 @@ about marginal novelty and not about whether the writeup is worth reading.
 
 ---
 
+## 31.8 — [The API Made Me Do It: Do Bad APIs Lead AI to Generate Vulnerable Code?](https://appsecvillage.com/events/dc-2026/the-api-made-me-do-it-do-bad-apis-lead-ai-to-generate-vulnerable-code-1248780) — Yariv Tal
+
+**REMOVED** · Insufficient evidence · confidence Low
+
+*(Fourth re-check round, 14 August 2026. AppSec Village, 8 August; no slides, code or results published.)*
+
+**What is new.** A controlled A/B: the same agent builds the same Java/Spring application twice, once against ordinary primitives and once against secure-by-default scaffolding with risky APIs restricted, with prompts describing product requirements only. Both builds go through CodeQL and manual review. The question is worth asking — if generated code keeps reaching a dangerous primitive, removing the primitive may beat asking the model not to misuse it — and the design deliberately tests architecture rather than prompting.
+
+**What was already known.** Secure-by-default APIs and safe wrappers as a defence against developer error long predate LLMs; the experiment re-runs that argument with a model as the developer. Nothing is published to check the result against, including whether the wrappers merely hid risk, which the abstract itself raises as a possible outcome.
+
+---
+
 ## 31.2 — [SSRF filter bypass via the RFC 8215 local-use NAT64 prefix `64:ff9b:1::/48`](https://hackerone.com/reports/3634400) — tipsen
 
 **REMOVED** · Duplicate / already known · confidence High
@@ -1659,6 +1779,18 @@ about marginal novelty and not about whether the writeup is worth reading.
 **What is new.** Nothing but one missing CIDR: the gem blocked the well-known NAT64 prefix and omitted the RFC 8215 local-use sibling.
 
 **What was already known.** Reaching internal IPv4 through an alternate IPv6 representation is the founding idea of SSRF-blocklist bypass (Orange Tsai, BH 2017, in archive), and this exact gap was reported across at least five unrelated projects in the same period.
+
+---
+
+## 30.5 — [CVE-2026-62899: .NET `System.Net.HttpListener` security-feature bypass via HTTP request/response smuggling](https://github.com/dotnet/announcements/issues/427) [MSRC](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62899) — reported by Miha Zupan, Microsoft
+
+**REMOVED** · Insufficient evidence · confidence Medium
+
+*(Fourth re-check round, 14 August 2026. Advisory published 11 August 2026.)*
+
+**What is new.** Nothing that can be read. The advisory states inconsistent interpretation of HTTP requests (CWE-444) in `System.Net.HttpListener` on Linux and macOS, CVSS 5.9, fixed in .NET 8.0.30 / 9.0.19 / 10.0.11, found internally. No malformed-request signature, no framing detail, no discussion of which component disagrees with which. It is a patch to apply and a differential-test target, not a technique.
+
+**What was already known.** Request smuggling as a class, and specifically that a proxy and an application disagreeing about message framing turns into an authorization or routing bypass rather than only connection poisoning, is a decade of published work. This entry exists so the next sweep does not re-chase a vendor advisory with no public mechanism; **re-judge if technical detail is ever published**.
 
 ---
 
@@ -1679,6 +1811,18 @@ about marginal novelty and not about whether the writeup is worth reading.
 **What is new.** Two potentially new ideas: using a display-isolated browser error page as a telemetry-blind staging ground where the debug protocol retains control, and reaching component-extension privilege via an internal RPC key.
 
 **What was already known.** The cited artifact is a 46-page deck that is almost entirely images with bullet-point assertions, no PoC, no whitepaper, one linked tool that is an unrelated generic proxy and another returning 404. Debug-protocol session hijacking and browser-in-the-middle session stealing including keylogging and profile theft were published in March 2025.
+
+---
+
+## 29.8 — [Testing API Business Logic With AI Agents: What We Got Wrong First](https://www.bugbountydefcon.com/agenda-2026) — Samantha Pearlstein, Bug Bounty Village
+
+**REMOVED** · Insufficient evidence · confidence Low
+
+*(Fourth re-check round, 14 August 2026. DEF CON 34 Bug Bounty Village, 8 August; no slides, tool or writeup published.)*
+
+**What is new.** A retrospective on three failure modes in building agents for enterprise API testing: testing before the resource and identity relationships are modelled, using an agent where a deterministic method is better, and dropping domain context. The first is the substantive one — BOLA/IDOR reasoning needs an ownership graph over users, orgs, roles and parent/child resources before traffic means anything, so building that graph first and letting the agent reason over it beats handing it raw HTTP.
+
+**What was already known.** "Model the object ownership graph before hunting for broken object-level authorization" is the standing methodology for BOLA testing, agent or not, and "use deterministic tooling for deterministic subproblems" is the same lesson several other 2026 talks report. No benchmark, no artifact and no measured before/after was published, which is precisely the evidence that would have made it more than experience.
 
 ---
 

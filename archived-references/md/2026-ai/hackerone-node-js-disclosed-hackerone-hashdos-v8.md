@@ -12,11 +12,13 @@ sources:
   - id: original
     resource: "https://hackerone.com/reports/3511792"
     title: "Node.js disclosed on HackerOne: HashDoS in V8"
+    author: sharp_edged
 also_at: []
-authors: []
+authors:
+  - sharp_edged
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:75"
+  - "2026-ai.md:52"
 commit: ""
 content_sha256: 96867e3142ab37bf8fdbb8b52c3f7233a8b28f0d1ddbbd8f21a97e56e2002244
 depth: full
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Node.js disclosed on HackerOne: HashDoS in V8
 
-**Node.js disclosed on HackerOne: HashDoS in V8** - Author not stated, HackerOne.
+**Node.js disclosed on HackerOne: HashDoS in V8** - sharp_edged, HackerOne.
 
 - Published: date not stated
 - Original: <https://hackerone.com/reports/3511792>

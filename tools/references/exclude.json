@@ -91,6 +91,24 @@
       "reason": "this project's own repository or its API, under its current and former name"
     },
     {
+      "id": "own-website",
+      "match": "regex",
+      "pattern": "^https?://([^/]*\\.)?webhacklist\\.com([:/?#]|$)",
+      "reason": "this project's own published website. The issue templates and CONTRIBUTING link readers to it and quote example reader/library addresses from it; none of them is a cited research document"
+    },
+    {
+      "id": "placeholder-media-id",
+      "match": "regex",
+      "pattern": "^https?://([^/]*\\.)?(youtu\\.be/|(www\\.)?youtube\\.com/watch\\?v=)x{6,}([&?#]|$)",
+      "reason": "placeholder video id (youtu.be/xxxxxxxx) shown as an example in an issue template, not a real citation"
+    },
+    {
+      "id": "wrapped-documentation-placeholder",
+      "match": "regex",
+      "pattern": "^https?://web\\.archive\\.org/web/[^/]+/https?://([^/]*\\.)?(example\\.(com|org|net)|attacker\\.[a-z]+|evil\\.[a-z]+)([:/]|$)",
+      "reason": "Wayback-wrapped placeholder host used to show the shape of a snapshot URL. The plain documentation-placeholder rule anchors at the start of the URL and so cannot see a placeholder that is the wrapper's payload"
+    },
+    {
       "id": "decorative-asset",
       "match": "regex",
       "pattern": "^https?://([^/]*\\.)?(shields\\.io|badgen\\.net|badge\\.fury\\.io|forthebadge\\.com|gravatar\\.com|avatars\\.githubusercontent\\.com)",

@@ -5,16 +5,18 @@ resource: "https://blog.slonser.info/posts/make-self-xss-great-again/"
 tags: [article, webseclist-reference, blog-slonser-info]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:06:52+00:00"
+  at: "2026-08-14T01:06:09+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://blog.slonser.info/posts/make-self-xss-great-again/"
     title: Make Self-XSS Great Again
+    author: Slonser
     last_modified: 2025-06-13
 also_at: []
-authors: []
+authors:
+  - Slonser
 canonical_url: ""
 cited_by:
   - "2025.md:54"
@@ -31,8 +33,8 @@ publisher: blog.slonser.info
 publisher_english: ""
 raw_sha256: c6b129e9b9460ab0fa3ec8128dd62f837e91539909a045ecd79b30b1ae60165e
 retrieved_from: "https://blog.slonser.info/posts/make-self-xss-great-again/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:06:52+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-14T01:06:09+00:00"
 slug: 2025-blog-slonser-info-make-self-xss-great-again
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Make Self-XSS Great Again
 
-**Make Self-XSS Great Again** - Author not stated, blog.slonser.info.
+**Make Self-XSS Great Again** - Slonser, blog.slonser.info.
 
 - Published: 2025-06-13
 - Original: <https://blog.slonser.info/posts/make-self-xss-great-again/>
-- Preserved from: https://blog.slonser.info/posts/make-self-xss-great-again/ (live) on 2026-08-09
+- Preserved from: https://blog.slonser.info/posts/make-self-xss-great-again/ (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

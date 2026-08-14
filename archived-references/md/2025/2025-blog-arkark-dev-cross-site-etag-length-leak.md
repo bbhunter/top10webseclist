@@ -5,16 +5,18 @@ resource: "https://blog.arkark.dev/2025/12/26/etag-length-leak"
 tags: [article, webseclist-reference, en, blog-arkark-dev]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:03:29+00:00"
+  at: "2026-08-14T01:06:06+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://blog.arkark.dev/2025/12/26/etag-length-leak"
     title: Cross-Site ETag Length Leak
+    author: arkark
     last_modified: 2025-12-26
 also_at: []
-authors: []
+authors:
+  - arkark
 canonical_url: ""
 cited_by:
   - "2025.md:10"
@@ -31,8 +33,8 @@ publisher: blog.arkark.dev
 publisher_english: ""
 raw_sha256: fe10e46d71328e607e1f937553b3f277ba96cf9a4fd6b0279b8586c5a69f7e43
 retrieved_from: "https://blog.arkark.dev/2025/12/26/etag-length-leak"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:03:29+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-14T01:06:06+00:00"
 slug: 2025-blog-arkark-dev-cross-site-etag-length-leak
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # Cross-Site ETag Length Leak
 
-**Cross-Site ETag Length Leak** - Author not stated, blog.arkark.dev.
+**Cross-Site ETag Length Leak** - arkark, blog.arkark.dev.
 
 - Published: 2025-12-26
 - Original: <https://blog.arkark.dev/2025/12/26/etag-length-leak>
-- Preserved from: https://blog.arkark.dev/2025/12/26/etag-length-leak (live) on 2026-08-09
+- Preserved from: https://blog.arkark.dev/2025/12/26/etag-length-leak (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

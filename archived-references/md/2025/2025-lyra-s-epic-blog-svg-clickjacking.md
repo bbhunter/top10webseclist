@@ -5,21 +5,23 @@ resource: "https://lyra.horse/blog/2025/12/svg-clickjacking/"
 tags: [article, webseclist-reference, en-us, lyra-s-epic-blog]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T01:33:36+00:00"
+  at: "2026-08-14T01:17:48+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://lyra.horse/blog/2025/12/svg-clickjacking/"
     title: SVG clickjacking
+    author: rebane2001
     last_modified: 2025-12-04
 also_at: []
-authors: []
+authors:
+  - rebane2001
 canonical_url: ""
 cited_by:
   - "2025.md:31"
 commit: ""
-content_sha256: f19bd4fd0f98713b4345d13931b58a011502a2e9ae46a469ace176f090685a22
+content_sha256: 2018b4d15a200af8e2efe0f1d3b8eba9bc0688bd5d754937b6c5dec2565ad80f
 depth: full
 depth_reason: default
 kind: article
@@ -31,8 +33,8 @@ publisher: "lyra's epic blog"
 publisher_english: ""
 raw_sha256: 49c6385e149938f930ea76633f7d423e069cd72174e31ad6583154944909f2c3
 retrieved_from: "https://lyra.horse/blog/2025/12/svg-clickjacking/"
-retrieved_kind: live
-retrieved_utc: "2026-08-09T01:33:36+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-14T01:17:48+00:00"
 slug: 2025-lyra-s-epic-blog-svg-clickjacking
 snapshot: ""
 title_english: ""
@@ -42,11 +44,11 @@ translation_of: ""
 
 # SVG clickjacking
 
-**SVG clickjacking** - Author not stated, lyra's epic blog.
+**SVG clickjacking** - rebane2001, lyra's epic blog.
 
 - Published: 2025-12-04
 - Original: <https://lyra.horse/blog/2025/12/svg-clickjacking/>
-- Preserved from: https://lyra.horse/blog/2025/12/svg-clickjacking/ (live) on 2026-08-09
+- Preserved from: https://lyra.horse/blog/2025/12/svg-clickjacking/ (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -703,7 +705,7 @@ What this attack does is:
 
 In the past, individual parts of such an attack could’ve been pulled off through traditional clickjacking and some basic CSS, but the entire attack would’ve been way too long and complex to be realistic. With this new technique of running logic inside SVG filters, such attacks become realistic.
 
-Google VRP awarded me $3133.70 for the find. That was, of course, [right before](https://infosec.exchange/@rebane2001/115349916882356842) they introduced a novelty bonus for new vulnerability classes. Hmph
+Google VRP awarded me $3133.70 for the find. That was, of course, [right before](https://infosec.exchange/@rebane2001/115349916882356842) they introduced a novelty bonus for new vulnerability classes. Hmph!10
 
 ## The QR attack
 
