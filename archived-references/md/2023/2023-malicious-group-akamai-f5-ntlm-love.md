@@ -5,9 +5,9 @@ resource: "https://blog.malicious.group/from-akamai-to-f5-to-ntlm/"
 tags: [article, webseclist-reference, en, malicious-group]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T13:02:57+00:00"
+  at: "2026-08-14T20:25:53+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://blog.malicious.group/from-akamai-to-f5-to-ntlm/"
@@ -24,7 +24,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:12"
 commit: ""
-content_sha256: 6a916336236e136175430babef9a7a12575478d80a54c36caaea6bddb4cf00ef
+content_sha256: 44e54fbd4eb3ecdd07dfc79b75bbe3f9f43b294d3f8efeb3e6366a3c65b1a104
 depth: full
 depth_reason: default
 kind: article
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: b6425ab08ae106adfa88ef6c41432cc4bd70a044d962218bf17bdaa5fb2a81c1
 retrieved_from: "https://blog.malicious.group/from-akamai-to-f5-to-ntlm/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-10T13:02:57+00:00"
+retrieved_utc: "2026-08-14T20:25:53+00:00"
 slug: 2023-malicious-group-akamai-f5-ntlm-love
 snapshot: 20231126173827
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 
 - Published: 2023-10-26
 - Original: <https://blog.malicious.group/from-akamai-to-f5-to-ntlm/>
-- Preserved from: https://blog.malicious.group/from-akamai-to-f5-to-ntlm/ (stored) on 2026-08-10
+- Preserved from: https://blog.malicious.group/from-akamai-to-f5-to-ntlm/ (stored) on 2026-08-14
 - Capture timestamp: 20231126173827
 - Licence: unknown
 
@@ -514,15 +514,3 @@ Researchers have the opportunity to shop their research to Zerodium, or other in
 I treated each BBP/VDP program dealing with this bug with nothing but respect and willingness to help them fix the issue. 13+ companies and 100+ vulnerable domains secured so far.
 
 If you need to get a hold of me or anyone on my team, you can email *info@malicious.group* and I will get back to you.
-
-#### Read next
-
- [![HTTP is dead... Long live HTTP?!](https://blog.malicious.group/content/images/size/w720/2023/11/new1.png) In this post, I will continue on my last paper by showing the readers a severe HTTP request smuggling bug chain using a new gadget, as well as a few ways to exploit it.](https://blog.malicious.group/http-is-dead-long-live-http/)
-
- [![Automating C2 Infrastructure with Terraform, Nebula, Caddy and Cobalt Strike](https://blog.malicious.group/content/images/size/w720/2022/09/featured-3.png) In this post, I am going to show the readers how to build a fully automated C2 infrastructure using Terraform with Nebula's end-to-end encryption backend communication layer.](https://blog.malicious.group/automating-c2-infrastructure-with-terraform-nebula-caddy-and-cobalt-strike/)
-
- [
-
- ![From SKID to SAVAGE by abusing OST and Telegram services.](https://blog.malicious.group/content/images/size/w720/2022/12/post_heading-1.png)
-
-In this post, I am going to show readers how easy it is for up-and-coming threat actors to completely compromise, then possibly extort large companies with very little effort by abusing openly available resources.

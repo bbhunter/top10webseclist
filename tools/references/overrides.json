@@ -1538,6 +1538,131 @@
         "@phor3nsic_br"
       ],
       "reason": "Reviewed 2026-08-14: the post declared no author in a meta tag, so the file credited the hostname. The article carries a byline directly under its heading, \"by @phor3nsic_br\", linking to https://twitter.com/phor3nsic_br. No legal name is stated anywhere in the document, so the handle the author publishes under is recorded rather than a guess."
+    },
+    "https://labs.hakaioffsec.com/nginx-alias-traversal": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Hunting for Nginx Alias Traversals in the wild",
+      "reason": "Reviewed 2026-08-14: labs.hakaioffsec.com now redirects to hakaisecurity.io/vulnerability-research/, so the first capture archived the firm's blog index and both the title and the slug were built from its masthead, \"Hakai Security\". The 2023-07-04 Wayback capture holds the article itself; this restores the title the citation uses so the file name follows the document."
+    },
+    "https://research.nccgroup.com/2023/04/27/state-of-dns-rebinding-in-2023": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "State of DNS Rebinding in 2023",
+      "authors": [
+        "Roger Meyer"
+      ],
+      "reason": "Reviewed 2026-08-14: research.nccgroup.com now redirects to the firm's research index, so the first capture archived that landing page and was titled \"Cyber Security Research\". The article is republished at www.nccgroup.com/research/state-of-dns-rebinding-in-2023/, which is pinned as the document URL; its own body closes \"## Author\" with \"Roger Meyer (@sanktjodel)\". NCC's current page is retitled \"DNS Rebinding: 2023 Threats & Defenses\" for search, so the heading the citation uses is restored here."
+    },
+    "https://seclab.nu/static/publications/acsac23oauth.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Tommaso Innocenti",
+        "Matteo Golinelli",
+        "Kaan Onarlioglu",
+        "Ali Mirheidari",
+        "Bruno Crispo",
+        "Engin Kirda"
+      ],
+      "publisher": "ACSAC '23",
+      "reason": "Reviewed 2026-08-14: a conference paper carries its byline in body text, which extraction cannot read, so the archive credited nobody. The first page prints, under the title, \"Tommaso Innocenti / Northeastern University\", \"Matteo Golinelli / University of Trento\", \"Kaan Onarlioglu / Akamai Technologies and Northeastern University\", \"Ali Mirheidari / Independent Researcher\", \"Bruno Crispo / University of Trento\" and \"Engin Kirda / Northeastern University\". The running footer reads \"ACSAC '23, December 04-08, 2023, Austin, TX, USA\", so the venue is recorded as the publisher, following the archive's existing \"USENIX Security '26\" and \"DEF CON\" entries."
+    },
+    "https://securityfocus.com/archive/1/437948/30/0/threaded": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Bypassing of web filters by using ASCII",
+      "reason": "Reviewed 2026-08-14: securityfocus.com/archive redirected to the site's relaunch notice, so the capture was that page and the slug was built from its heading, \"BUGTRAQ IS BACK\". Recovered from a 2008 Wayback snapshot, which holds the thread itself - \"iKu Advisory ... Product : Microsoft InternetExplorer 6\". Every Bugtraq archive page titles itself \"SecurityFocus\", so the citation's own title is used to name the file."
+    },
+    "https://informationweek.com/news/showArticle.jhtml?articleID=192500500&subSection=Breaking+News": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "AT&T Hack Highlights Web Site Vulnerabilities",
+      "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (information-week-news). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document."
+    },
+    "https://r2c.dev/blog/2020/exploiting-dynamic-rendering-engines-to-take-control-of-web-apps": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "r2c blog — Exploiting dynamic rendering engines to take control of web apps",
+      "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (semgrep-dev-semgrep-app-security-platform-ai-assisted-sast-sca-secrets-detection). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document."
+    },
+    "https://news.netcraft.com/archives/2006/09/23/hostgator_cpanel_security_hole_exploited_in_mass_hack.html": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Netcraft: HostGator: cPanel Security Hole Exploited in Mass Hack",
+      "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (netcraft-com-resources-2). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document."
+    },
+    "https://news.netcraft.com/archives/2006/06/16/paypal_security_flaw_allows_identity_theft.html": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Netcraft: PayPal Security Flaw allows Identity Theft",
+      "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (netcraft-com-resources). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document."
+    },
+    "https://hardened-php.net/library/poking_new_holes_with_flash_crossdomain_policy_files.html": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Hardened-PHP Project - PHP Security - Poking new holes with Flash Crossdomain Policy Files",
+      "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (hardened-php-hardened-php-hardened-php). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document."
+    },
+    "https://blogs.securiteam.com/index.php/archives/746": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "SecuriTeam Blogs » Anonymizing RFI Attacks Through Google",
+      "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (fortra-com-beyond-security-products-3). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document."
+    },
+    "https://blogs.securiteam.com/index.php/archives/604": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "SecuriTeam Blogs » Exploiting Google for Phishing",
+      "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (fortra-com-beyond-security-products-2). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document."
+    },
+    "https://blogs.securiteam.com/index.php/archives/166": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "SecuriTeam Blogs » Xanga Hit By Script Worm",
+      "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (fortra-com-beyond-security-products). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document."
+    },
+    "https://blueinfy.com/wp/blindsql.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Pulling system32 out over blind SQL Injection",
+      "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (blueinfy-com-welcome-blueinfy). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document."
+    },
+    "https://duo.com/blog/duo-finds-saml-vulnerabilities-affecting-multiple-implementations": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Duo Finds SAML Vulnerabilities Affecting Multiple Implementations",
+      "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (cisco-duo-duo-blog-discover-security-insights-news). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document."
+    },
+    "https://veracode.com/blog/research/exploiting-spring-boot-actuators": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Exploiting Spring Boot Actuators",
+      "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (veracode-blog-veracode). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document."
+    },
+    "https://blog.trendmicro.com/trendlabs-security-intelligence/new-adobe-flash-zero-day-used-in-pawn-storm-campaign": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "New Adobe Flash Zero-Day Used in Pawn Storm Campaign Targeting Foreign Affairs Ministries",
+      "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (trend-micro-research-news-perspectives). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document."
+    },
+    "https://darkreading.com/document.asp?doc_id=104313&f_src=darkreading_section_296": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Dark Reading - Desktop Security - Hackers Reveal Vulnerable Websites",
+      "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (dark-reading-dark-reading-security). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document."
+    },
+    "https://darkreading.com/cloud/new-phishing-campaign-leverages-google-drive-/d/d-id/1321485": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "New Phishing Campaign Leverages Google Drive",
+      "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (dark-reading-cloud-security-recent-news). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document."
+    },
+    "https://darkreading.com/scope-of-freak-flaw-widens-as-microsoft-says-windows-affected-too/d/d-id/1319380": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Scope Of FREAK Flaw Widens As Microsoft Says Windows Affected Too",
+      "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (dark-reading-vulnerabilities-threats-recent-news). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document."
     }
   }
 }

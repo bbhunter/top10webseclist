@@ -456,6 +456,45 @@ class TestCandidateChoice(unittest.TestCase):
         chosen, why = acquire.choose([])
         self.assertIsNone(chosen)
 
+    def test_a_sidebar_does_not_outvote_the_article_by_being_longer(self):
+        """NCC Group's DNS rebinding article, as its capture actually measured.
+
+        Precision held the whole article; raw held the article plus an archive
+        listing of every other post on the blog. Picking raw published 2,640
+        links with the research 94% of the way down.
+        """
+        article = ("<html><body><main>"
+                   + "".join("<h2>Section %d</h2><p>%s</p>" % (n, "analysis " * 60)
+                             for n in range(20))
+                   + "<pre><code>rebind()</code></pre>" * 3
+                   + "</main>"
+                   + "<div id='sidebar'>"
+                   + "".join("<a href='/post-%d'>Another post from the blog</a>" % n
+                             for n in range(2500))
+                   + "</div></body></html>")
+        chosen, why = acquire.choose(self.candidates(article))
+        self.assertEqual(chosen.name, "precision")
+        self.assertIn("navigation", why)
+
+    def test_a_longer_candidate_that_adds_headings_still_wins(self):
+        """The guard must not fire when precision genuinely truncated the page."""
+        markup = ("<html><body><main><h2>Intro</h2><p>" + ("prose " * 40)
+                  + "</p></main>"
+                  + "<div class='post-body'><h2>Intro</h2><p>" + ("prose " * 40)
+                  + "</p>"
+                  + "".join("<h2>Part %d</h2><p>%s</p>" % (n, "prose " * 200)
+                            for n in range(6))
+                  + "</div></body></html>")
+        chosen, _why = acquire.choose(self.candidates(markup))
+        self.assertNotEqual(chosen.name, "precision")
+
+    def test_an_empty_precision_container_still_falls_through(self):
+        """A page with no <main> gives precision nothing; raw is what there is."""
+        markup = ("<html><body><div class='post'><h2>Only section</h2><p>"
+                  + ("prose " * 300) + "</p></div></body></html>")
+        chosen, _why = acquire.choose(self.candidates(markup))
+        self.assertGreater(chosen.metrics["chars"], acquire.MIN_PRECISION_CHARS)
+
 
 class TestMetadata(unittest.TestCase):
     def setUp(self):

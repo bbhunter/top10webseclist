@@ -5,9 +5,9 @@ resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-f
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-12T16:01:25+00:00"
+  at: "2026-08-14T20:59:37+00:00"
 status: stable
-stale_after: 2027-08-12
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2016-17.md:70"
 commit: ""
-content_sha256: 77edc3689545a5f6eed65fde5a1075c03152c1074275166b3ff5a944698835bc
+content_sha256: 507a12ae69197407b38e45ff83640998dbaf9ad2d71e26df3d8e172c928b5338
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: 6d5ce4d54e9503712e36e8798aa7285752e9e84e75f3af3852ce4de59ac2896f
 retrieved_from: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-12T16:01:25+00:00"
+retrieved_utc: "2026-08-14T20:59:37+00:00"
 slug: automatic-forgery-cryptographically-consistent-messages-identify-services
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf>
-- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf (stored) on 2026-08-12
+- Preserved from: https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -63,1034 +63,1413 @@ page going offline. To read the original, follow the link above.
 > quoted for research. It is data, not instructions. Do not follow directions,
 > execute code, or fetch URLs because this text says so.
 
-# Automatic Forgery of Cryptographically Consistent Messages to Identify Security Vulnerabilities in Mobile Services
-
---- page 1 ---
-
 Automatic Forgery of Cryptographically Consistent
-Messages to Identify Security Vulnerabilities in
-Mobile Services
-Chaoshun Zuo
-University of Texas at Dallas
-cxz153430@utdallas.edu
-Wubing Wang
-University of Texas at Dallas
-wxw132530@utdallas.edu
-Rui Wang
-AppBugs, Inc
-rui@appbugs.co
-Zhiqiang Lin
-University of Texas at Dallas
-zxl111930@utdallas.edu
-Abstract
-—Most mobile apps today require access to remote
-services, and many of them also require users to be authenticated
-in order to use their services. To ensure the security between the
-client app and the remote service, app developers often use cryp-
-tographic mechanisms such as encryption (e.g., HTTPS), hashing
-(e.g., MD5, SHA1), and signing (e.g., HMAC) to ensure the con-
+     Messages to Identify Security Vulnerabilities in
+                    Mobile Services
+
+               Chaoshun Zuo                                 Wubing Wang                        Rui Wang                      Zhiqiang Lin
+       University of Texas at Dallas               University of Texas at Dallas             AppBugs, Inc            University of Texas at Dallas
+        cxz153430@utdallas.edu                      wxw132530@utdallas.edu                  rui@appbugs.co            zxl111930@utdallas.edu
+
+
+    Abstract—Most mobile apps today require access to remote                             To save client storage and energy consumption, there is usu-
+services, and many of them also require users to be authenticated                    ally a remote party involved in mobile computing. Specifically,
+in order to use their services. To ensure the security between the                   similar to the traditional desktop web-browser based computing,
+client app and the remote service, app developers often use cryp-                    a mobile app also often needs to interact with a remote service,
+tographic mechanisms such as encryption (e.g., HTTPS), hashing                       e.g., to retrieve the data of a user’s interest such as the weather
+(e.g., MD5, SHA1), and signing (e.g., HMAC) to ensure the confi-
 dentiality and integrity of the network messages. However, these
-cryptographic mechanisms can only protect the communication
-security, and server-side checks are still needed because malicious
-clients owned by attackers can generate any messages they wish.
-As a result, incorrect or missing server side checks can lead to
-severe security vulnerabilities including
-password brute-forcing
-,
-leaked password probing
-, and
-security access token hijacking
-. To
-demonstrate such a threat, we presentAUTOFORGE, a tool that
-can automatically forge valid request messages from the client side
-to test whether the server side of an app has ensured the security of
-user accounts with sufcient checks. To enable these security tests,
-a fundamental challenge lies in how to forge a valid cryptographi-
-cally consistent message such that it can be consumed by the server.
+                                                                                     information where the user lives. To provide customized services
+cryptographic mechanisms can only protect the communication                          and also prevent resource abuse, a typical step to get the access is
+security, and server-side checks are still needed because malicious                  through user authentication. Therefore, many mobile apps today
+clients owned by attackers can generate any messages they wish.                      require users to register with the service providers first, and then
+As a result, incorrect or missing server side checks can lead to                     use their services after authentication.
+severe security vulnerabilities including password brute-forcing,
+leaked password probing, and security access token hijacking. To                         As a result, it is crucial to ensure the security of the authentica-
+demonstrate such a threat, we present AUTO F ORGE, a tool that                       tion process. There are various ways that mobile app developers
+can automatically forge valid request messages from the client side                  have used over the years to achieve this. For instance, they can
+to test whether the server side of an app has ensured the security of                encrypt the traffic between the mobile app and the server (e.g.,
+user accounts with sufficient checks. To enable these security tests,                through HTTPS), they can hash (e.g., through MD5, SHA1) the
+a fundamental challenge lies in how to forge a valid cryptographi-                   user password before sending to the server for authentication, and
+cally consistent message such that it can be consumed by the server.                 they can also sign (e.g., through HMAC) each message generated
 We have addressed this challenge with a set of systematic tech-
 niques, and applied them to test the server side implementation of
-76
-popular mobile apps (each of which has over 1,000,000 installs).
-Our experimental results show that among these apps,
-65
-(
-86%
-) of
+                                                                                     from the mobile app. Correspondingly, on the server side, the
+76 popular mobile apps (each of which has over 1,000,000 installs).                  server needs to decrypt each message, validate the hash or the
+Our experimental results show that among these apps, 65 (86%) of                     signature of the message, and reject all the invalid ones.
 their servers are vulnerable to password brute-forcing attacks, all
-(
-100%
-) are vulnerable to leaked password probing attacks, and
-9
-(
-12%
-) are vulnerable to Facebook access token hijacking attacks.
-I. I
-NTRODUCTIONToday mobile apps are everywhere. They range from simpleinformation gathering applications, such as for retrieving email,news, and weather, to feature rich applications, such as formobile gaming, online banking/shopping, and blogging/chatting.In Google Play, which is one of the most popular app stores,there are over 1.6 million Android apps in total, with more than50 billion downloads [4]. Meanwhile, the popularity of mobileapps has continued to rise due to their increasingly prevalentusage across mobile device (e.g., smartphone and tablet) users.To save client storage and energy consumption, there is usu-ally a remote party involved in mobile computing. Specically,similar to the traditional desktop web-browser based computing,a mobile app also often needs to interact with a remote service,e.g., to retrieve the data of a user's interest such as the weatherinformation where the user lives. To provide customized servicesand also prevent resource abuse, a typical step to get the access isthrough user authentication. Therefore, many mobile apps todayrequire users to register with the service providers rst, and thenuse their services after authentication.As a result, it is crucial to ensure the security of the authentica-tion process. There are various ways that mobile app developershave used over the years to achieve this. For instance, they canencrypt the trafc between the mobile app and the server (e.g.,through HTTPS), they can hash (e.g., through MD5, SHA1) theuser password before sending to the server for authentication, andthey can also sign (e.g., through HMAC) each message generatedfrom the mobile app. Correspondingly, on the server side, theserver needs to decrypt each message, validate the hash or thesignature of the message, and reject all the invalid ones.While it appears to be secure if the server rejects all ofthe invalid messages, such security is based on the assumptionthat a client cannot forge a valid message. Unfortunately, inthis paper we show that such an assumption is false, and aclient can completely break the message authentication includingcryptographic hashing and signing and generate “legal” messagesfor the server to consume. This is because an attacker cancompletely control a client app (e.g., running in an emulator),analyze (i.e., reverse engineer) how a valid message is generated,and correspondingly generate forged messages.Consequently, in addition to message decryption, hashing andsignature checking, the server also needs to perform additionalsecurity checks. Otherwise, this can lead to a number of securityvulnerabilities. One such vulnerability is password brute-forcing.In particular, if the server does not maintain the state of howmany passwords a user has tried while attempting to login withina certain time window, an attacker would be able to gure out theuser's password by continuously guessing it. Also, being able toforge valid request messages would allow attackers to probe theexistence of certain users using leaked usernames and passwords(due to the common practice of password reuse among manyusers [15], [21]). Meanwhile, the lack of a server side securitycheck can also lead to an access token hijacking attack [2],[36]. Specically, an attacker can forge a valid message byPermission to freely reproduce all or part of this paper for noncommercialpurposes is granted provided that copies bear this notice and the full citationon the rst page. Reproduction for commercial purposes is strictly prohibitedwithout the prior written consent of the Internet Society, the rst-named author(for reproduction of an entire paper only), and the author's employer if the paperwas prepared within the scope of employment.
-NDSS '16, 21-24 February 2016, San Diego, CA, USA
-Copyright 2016 Internet Society, ISBN 1-891562-41-X
-http://dx.doi.org/10.14722/ndss.2016.23146
+(100%) are vulnerable to leaked password probing attacks, and 9                          While it appears to be secure if the server rejects all of
+(12%) are vulnerable to Facebook access token hijacking attacks.                     the invalid messages, such security is based on the assumption
+                                                                                     that a client cannot forge a valid message. Unfortunately, in
+                                                                                     this paper we show that such an assumption is false, and a
+                                                                                     client can completely break the message authentication including
+                           I.    I NTRODUCTION                                       cryptographic hashing and signing and generate “legal” messages
+                                                                                     for the server to consume. This is because an attacker can
+    Today mobile apps are everywhere. They range from simple                         completely control a client app (e.g., running in an emulator),
+information gathering applications, such as for retrieving email,                    analyze (i.e., reverse engineer) how a valid message is generated,
+news, and weather, to feature rich applications, such as for                         and correspondingly generate forged messages.
+mobile gaming, online banking/shopping, and blogging/chatting.
+In Google Play, which is one of the most popular app stores,                             Consequently, in addition to message decryption, hashing and
+there are over 1.6 million Android apps in total, with more than                     signature checking, the server also needs to perform additional
+50 billion downloads [4]. Meanwhile, the popularity of mobile                        security checks. Otherwise, this can lead to a number of security
+apps has continued to rise due to their increasingly prevalent                       vulnerabilities. One such vulnerability is password brute-forcing.
+usage across mobile device (e.g., smartphone and tablet) users.                      In particular, if the server does not maintain the state of how
+                                                                                     many passwords a user has tried while attempting to login within
+                                                                                     a certain time window, an attacker would be able to figure out the
+Permission to freely reproduce all or part of this paper for noncommercial
+purposes is granted provided that copies bear this notice and the full citation
+                                                                                     user’s password by continuously guessing it. Also, being able to
+on the first page. Reproduction for commercial purposes is strictly prohibited       forge valid request messages would allow attackers to probe the
+without the prior written consent of the Internet Society, the first-named author    existence of certain users using leaked usernames and passwords
+(for reproduction of an entire paper only), and the author’s employer if the paper   (due to the common practice of password reuse among many
+was prepared within the scope of employment.                                         users [15], [21]). Meanwhile, the lack of a server side security
+NDSS ’16, 21-24 February 2016, San Diego, CA, USA
+Copyright 2016 Internet Society, ISBN 1-891562-41-X                                  check can also lead to an access token hijacking attack [2],
+http://dx.doi.org/10.14722/ndss.2016.23146                                           [36]. Specifically, an attacker can forge a valid message by
+using a stolen token from other apps to bypass the server side                 GET /api/rest/app_server.php?sign_method=md5&client=android&ap
+                                                                               p_key=A4H0P4JN&format=json&cv=3.9.0&country_code=US&country=US
+authentication of the target app (if the server is vulnerable) and             A&currency=USD&timestamp=2015-08-05%2003%3A19%3A26&v=1.2&pwd=6
+then use the target app’s service. In addition, there could also               95409430D3127CB158002B92FEC1831&email=testappserveralpha%40gma
+                                                                               il.com&method=vela.user.login&app_secret=4ce19ca8fcd150a4w4pj9
+exist a SQL injection attack if the server does not perform the                llah24991ut&language=en&sign=94056C9BE079510079D0BF9A372B4E65&
+sanitation check of the “legal” messages from the client since an              keys=app_key%2Capp_secret%2Cclient%2Ccountry%2Ccountry_code%2C
 
---- page 2 ---
+attacker is now able to forge any messages.
+                                                                               currency%2Ccv%2Cemail%2Cformat%2Clanguage%2Cmethod%2Cpwd%2Csig
+                                                                               n_method%2Ctimestamp%2Cv&sid=ajnrr9b3b2ktg11dcucg66l683 HTTP/1.     用户名
+                                                                                                                                                   密码：
+                                                                               1
+                                                                               x-newrelic-id: XAYCV1ZADgsAUFRTBQ==
+    To demonstrate the threat of these security vulnerabilities                User-agent: LightInTheBox 3.9.0(Android; 16; 4.1.1; 480_752;
+at the server side, this paper presents AUTO F ORGE, a tool that               WIFI; generic; en)
+                                                                               Host: api.miniinthebox.com
+can automatically forge cryptographically consistent messages                  Connection: Keep-Alive
+                                                                               Accept-Encoding: gzip
+for the security testing of mobile services when given a mobile                Cookie: cookie_test=please_accept_for_session;
+app. It contains a set of black-box techniques including API                   AKAMAI_FEO_TEST=B; ASRV=A_201505081100
+hooking, lightweight protocol field reverse engineering, and                                    (a) Client Request with a Wrong Password
+request message forgery to automatically generate valid request
+messages. At a high level, AUTO F ORGE works as follows: given                 {"result":"fail","code":"1001001","info":[],"error_msg":["Inva
+an app and a few legal inputs (e.g., a username with a correct and             lid email or password (User)"]}
 
-using a stolen token from other apps to bypass the server sideauthentication of the target app (if the server is vulnerable) andthen use the target app's service. In addition, there could alsoexist a SQL injection attack if the server does not perform thesanitation check of the “legal” messages from the client since anattacker is now able to forge any messages.To demonstrate the threat of these security vulnerabilitiesat the server side, this paper presentsAUTOFORGE, a tool thatcan automatically forge cryptographically consistent messagesfor the security testing of mobile services when given a mobileapp. It contains a set of black-box techniques including APIhooking, lightweight protocol eld reverse engineering, andrequest message forgery to automatically generate valid requestmessages. At a high level,AUTOFORGEworks as follows: givenan app and a few legal inputs (e.g., a username with a correct andwrong password), it observes how the user input is processedby only hooking a set of well known cryptographic APIs, andintercepts the outgoing messages with a man-in-the-middlenetwork proxy; next, it infers the message elds and theirsemantics by difng the messages and measuring the degree ofthe differences; after that, it forges the messages by only mutatingthe protocol elds of interest (e.g., username and password) andgenerating the cryptographically computed elds through anout-of-box re-execution (i.e., replay) of the cryptographic APIs.We have implementedAUTOFORGE, and tested with76popular mobile services by running the corresponding mobileapps. One criteria for selecting which service to test is based onwhether the client apps have been installed over one million times.We have obtained very encouraging experimental results. Amongthe76tested services, we found that65(86%) servers (includingCNN, Expedia, iHeartRadio, and Walmart) are vulnerableto password brute-forcing attacks, all (100%) of them arevulnerable to leaked password probing attacks, and 9 (12%) ofthem are vulnerable to Facebook access token hijacking attacks.In short, we make the following contributions:
-We show that the server side implementation of manymobile apps lacks sufcient security checks and is vul-nerable to a number of malicious login attacks includingpassword brute-forcing, leaked password probing, andaccess token hijacking.
-We present a set of lightweight techniques to auto-matically forge cryptographically consistent messages.Our technique does not require sophisticated reverseengineering of the mobile apps, and instead by onlyhooking a set of well known cryptographic APIs andusing a lighweight protocol reverse engineering withan out-of-the-box re-execution of the cryptographicfunctions we successfully forge valid request messages.We have implemented our techniques inAUTOFORGE,and applied it to test76popular mobile apps (each hasover one million installs), and we have found that the ma-jority of these app servers are vulnerable to malicious lo-gin attempts. We have made responsible disclosure andnotied each vulnerable app vendor, and three of themhave patched their service shortly after our notication.
-Fig. 1. Network Traces of the Login Attempts of
-miniinthebox
-App.
-II. B
-ACKGROUND AND
-O
-VERVIEWThe goal of this paper is to develop techniques that can auto-matically forge valid cryptographically consistent client requestmessages, and apply them to nd the security vulnerabilities(such as password brute-forcing) in the server side. In this section,we provide the necessary background and give an overview ofhow we achieve this goal. We rst start from a running example(§II-A) to illustrate the challenges and present our observation(§II-B), and then we dene our research problem and overviewour system (§II-C).
-A. A Running ExampleTo understand our problem better, Fig. 1 illustratesthe network traces gathered from the popular Androidappminiinthebox. It is an online shopping app whichhas one-to-ve million installs according to Google Play.As shown in Fig. 1, we performed two tests: the rstis to enter a wrong password (1234567890) for usertestappserveralpha@gmail.com, and the clientrequest message and the server response message areillustrated in Fig. 1(a) and (b); the other is to enter acorrect password (ThisIsPWD!) for a different user,testappserverbeta@gmail.com, whose request and2
+wrong password), it observes how the user input is processed                                   (b) Server Response for the Wrong Password
+by only hooking a set of well known cryptographic APIs, and
+                                                                               GET /api/rest/app_server.php?sign_method=md5&client=android&ap
+intercepts the outgoing messages with a man-in-the-middle                      p_key=A4H0P4JN&format=json&cv=3.9.0&country_code=US&country=US
+network proxy; next, it infers the message fields and their                    A&currency=USD&timestamp=2015-08-05%2003%3A20%3A01&v=1.2&pwd=A
+                                                                               9672D9F5F7414D5B996964A7F07727E&email=testappserverbeta%40gmai
+semantics by diffing the messages and measuring the degree of                  l.com&method=vela.user.login&app_secret=4ce19ca8fcd150a4w4pj9l
+the differences; after that, it forges the messages by only mutating           lah24991ut&language=en&sign=D2A173BEB8F169DD1A81CA8D59AD2C69&k
+                                                                               eys=app_key%2Capp_secret%2Cclient%2Ccountry%2Ccountry_code%2Cc
+the protocol fields of interest (e.g., username and password) and              urrency%2Ccv%2Cemail%2Cformat%2Clanguage%2Cmethod%2Cpwd%2Csign
+generating the cryptographically computed fields through an                    _method%2Ctimestamp%2Cv&sid=ajnrr9b3b2ktg11dcucg66l683 HTTP/1.
+                                                                               1
+out-of-box re-execution (i.e., replay) of the cryptographic APIs.              x-newrelic-id: XAYCV1ZADgsAUFRTBQ==
+                                                                               User-agent: LightInTheBox 3.9.0(Android; 16; 4.1.1; 480_752;
+                                                                               WIFI; generic; en)
+                                                                                                                                                   用户名
+    We have implemented AUTO F ORGE, and tested with 76
+popular mobile services by running the corresponding mobile
+                                                                               Host: api.miniinthebox.com
+                                                                               Connection: Keep-Alive
+                                                                                                                                                   密码：
+                                                                               Accept-Encoding: gzip
+apps. One criteria for selecting which service to test is based on             Cookie: cookie_test=please_accept_for_session;
+                                                                               AKAMAI_FEO_TEST=B; ASRV=A_201505081100
+whether the client apps have been installed over one million times.
+We have obtained very encouraging experimental results. Among                                  (c) Client Request with a Correct Password
+the 76 tested services, we found that 65 (86%) servers (including
+                                                                               {"result":"success","code":"1000000","info":{"sessionkey":"6a6
+CNN, Expedia, iHeartRadio, and Walmart) are vulnerable                         ac7ff985eb08524e89392ec1addcb"},"error_msg":[]}
+to password brute-forcing attacks, all (100%) of them are
+vulnerable to leaked password probing attacks, and 9 (12%) of                                 (d) Server Response for the Correct Password
 
---- page 3 ---
+them are vulnerable to Facebook access token hijacking attacks.            Fig. 1. Network Traces of the Login Attempts of miniinthebox App.
 
-GET /api/rest/app_server.php?sign_method=md5&client=android&ap
-p_key=A4H0P4JN&format=json&cv=3.9.0&country_code=US&country=US
-A&currency=USD&
-timestamp
-=
-2015-08-05%2003%3A19%3A26
-&v=1.2&
-pwd
-=
-6
-95409430D3127CB158002B92FEC1831
-&
-email
-=
-testappserveralpha%40gma
-il.com
-&method=vela.user.login&app_secret=4ce19ca8fcd150a4w4pj9
-llah24991ut&language=en&
-sign
-=
-94056C9BE079510079D0BF9A372B4E65
-&
-keys=app_key%2Capp_secret%2Cclient%2Ccountry%2Ccountry_code%2C%2C %2C il%2Cf t%2Cl %2C th d%2C d%2C ilh lcurrency%2Ccv%2Cemail%2Cformat%2Clanguage%2Cmethod%2Cpwd%2Csign_method%2Ctimestamp%2Cv&sid=ajnrr9b3b2ktg11dcucg66l683 HTTP/1.
-1
-x-newrelic-id: XAYCV1ZADgsAUFRTBQ==
-User-agent: LightInTheBox 3.9.0(Android; 16; 4.1.1; 480_752; 
-WIFI; generic; en)
-Host: api.miniinthebox.com
-Connection: Keep-AliveAtEdii
-testappserveralpha@gmail.com
+   In short, we make the following contributions:
+                                                                                        II.    BACKGROUND AND OVERVIEW
+   •     We show that the server side implementation of many                   The goal of this paper is to develop techniques that can auto-
+         mobile apps lacks sufficient security checks and is vul-          matically forge valid cryptographically consistent client request
+         nerable to a number of malicious login attacks including          messages, and apply them to find the security vulnerabilities
+         password brute-forcing, leaked password probing, and              (such as password brute-forcing) in the server side. In this section,
+         access token hijacking.                                           we provide the necessary background and give an overview of
+                                                                           how we achieve this goal. We first start from a running example
+   •     We present a set of lightweight techniques to auto-               (§II-A) to illustrate the challenges and present our observation
+         matically forge cryptographically consistent messages.            (§II-B), and then we define our research problem and overview
+         Our technique does not require sophisticated reverse              our system (§II-C).
+         engineering of the mobile apps, and instead by only
+         hooking a set of well known cryptographic APIs and                A. A Running Example
+         using a lighweight protocol reverse engineering with                  To understand our problem better, Fig. 1 illustrates
+         an out-of-the-box re-execution of the cryptographic               the network traces gathered from the popular Android
+         functions we successfully forge valid request messages.           app miniinthebox. It is an online shopping app which
+                                                                           has one-to-five million installs according to Google Play.
+   •     We have implemented our techniques in AUTO F ORGE,                As shown in Fig. 1, we performed two tests: the first
+         and applied it to test 76 popular mobile apps (each has           is to enter a wrong password (1234567890) for user
+         over one million installs), and we have found that the ma-        testappserveralpha@gmail.com, and the client
+         jority of these app servers are vulnerable to malicious lo-       request message and the server response message are
+         gin attempts. We have made responsible disclosure and             illustrated in Fig. 1(a) and (b); the other is to enter a
+         notified each vulnerable app vendor, and three of them            correct password (ThisIsPWD!) for a different user,
+         have patched their service shortly after our notification.        testappserverbeta@gmail.com, whose request and
 
-1234567890Accept-Encoding: gzip
-Cookie: cookie_test=please_accept_for_session; 
-AKAMAI_FEO_TEST=B; ASRV=A_201505081100{"result":"fail","code":"1001001","info":[],"error_msg":["Invalid email or password (User)"]}(a) Client Request with a Wrong Passwordlid email or password (User) ]}GET /api/rest/app_server.php?sign_method=md5&client=android&ap
-p_key=A4H0P4JN&format=json&cv=3.9.0&country_code=US&country=US
-A&currency=USD&
-timestamp
-=
-2015-08-05%2003%3A20%3A01
-&v=1.2&
-pwd
-=
-A
-9672D9F5F7414D5B996964A7F07727E
-&
-email
-=
-testappserverbeta%40gmailhdlli4 19 8f d150 4 4 j9l(b) Server Response for the Wrong Passwordl.com&method=vela.user.login&app_secret=4ce19ca8fcd150a4w4pj9llah24991ut&language=en&
-sign
-=
-D2A173BEB8F169DD1A81CA8D59AD2C69
-&k
-eys=app_key%2Capp_secret%2Cclient%2Ccountry%2Ccountry_code%2Cc
-urrency%2Ccv%2Cemail%2Cformat%2Clanguage%2Cmethod%2Cpwd%2Csign
-_method%2Ctimestamp%2Cv&sid=ajnrr9b3b2ktg11dcucg66l683 HTTP/1.
-1
-x-newrelic-id: XAYCV1ZADgsAUFRTBQ==
-User-agent: LightInTheBox 3.9.0(Android; 16; 4.1.1; 480_752; i)
-testappserverbeta@gmail.comWIFI; generic; en)Host: api.miniinthebox.com
-Connection: Keep-Alive
-Accept-Encoding: gzip
-Cookie: cookie_test=please_accept_for_session; 
-AKAMAI_FEO_TEST=B; ASRV=A_201505081100(c) Client Request with a Correct Passwordpp @g
-ThisIsPWD!{"result":"success","code":"1000000","info":{"sessionkey":"6a6
-ac7ff985eb08524e89392ec1addcb"},"error_msg":[]}(d) Server Response for the Correct Password
+                                                                       2
+response messages are illustrated in Fig. 1(c) and (d), respectively.          •    Generating the valid request messages. Having rec-
+We can notice from the trace that this app uses the plain-text                      ognized the message fields of our interest, we also have
+HTTP protocol, and there are many app-defined protocol fields                       to finally generate the new valid messages for our testing.
+in this login request message such as sign_method, client,                          While it might be possible to dynamically instrument
+app_key, format, pwd, email, sign, keys, and sid, etc.                              the app and use an in-context argument substitution of
+                                                                                    the cryptographic APIs to generate the message, or just
+    Among these protocol fields, a few of them are of special
+                                                                                    fuzz the graphic user interface to generate the “legal”
+interest to us such as pwd, email, and sign if we aim to
+                                                                                    messages, these approaches appear to be more expensive
+perform a password guessing test. That is, we can keep mutating
+                                                                                    or lack flexibility (e.g., requiring recognizing and
+a user password (from 1234567890 to some other dictionary
+                                                                                    controlling of the user interface, rolling back the state of
+guided guesses) and test whether the server accepts or rejects
+                                                                                    the login event, or only substituting user visible fields)
+our password. However, we can notice that the user entered
+                                                                                    and instead we would like to have an out-of-the-box
+password 1234567890 has been hashed (or encrypted) to value
+                                                                                    approach to forge any “legal” messages as we wish.
+695409430D3127CB158002B92FEC1831. Meanwhile,
+there is a sign field that is a cryptographic signature of the client
+request message, and the server will verify whether the sign                Key Insights and Solutions. At a high level, we can notice
+field is correct or not. Also, we can notice that the value of the          that essentially we are performing protocol reverse engineering
+sign field is significantly different in the two request messages.          in that we have to recognize the protocol fields, understand the
+                                                                            request and response messages (to a certain degree), and generate
+    Therefore, in order to generate valid request messages, we              valid messages with cryptographically computed fields. While
+just need to recognize the message fields of interest to us such            we could adopt many of the existing protocol reverse engineering
+as the pwd and sign field, mutate the corresponding field (e.g.,            techniques (e.g., [10], [14], [22], [25], [39]) to analyze at the
+the pwd), and generate valid cryptographically consistent fields            instruction level how a message is generated, such an approach
+(e.g., sign) of the request message. In addition, we also need              also appears to be more expensive since it tracks the data depen-
+to monitor the response of the server packets, to terminate the             dency at the instruction level. Having analyzed the executions
+test once we find a correct password.                                       of a number of apps manually, we have obtained the following
+B. Observation                                                              insights to address those technical challenges discussed above:
 
---- page 4 ---
+Challenges. From our running example, we can notice that                       •    Inferring the message fields with diffed input. Al-
+there are a number of challenges in order to perform server                         though it is challenging to recognize each field in a
+side security testing:                                                              given message, we realize that we need to infer only a
+                                                                                    few of them based on our interests (e.g., only the email,
+    •    Recognizing the protocol fields. Typically a network                       pwd, and sign fields in our running example). Since
+         message consists of a number of fields; some of them                       we control the app execution, we can feed the app with
+         are standard protocol fields (e.g., GET), while some are                   controlled input such as a correct password and a wrong
+         user defined. While it might be easier to identify the                     password. By observing the request message differences,
+         standard fields for well-known protocols, it will be much                  we can identify the diffed fields. The fields of our
+         more challenging to recognize the user defined fields,                     interest must be within the diffed fields. For instance,
+         especially considering the fact that different developers                  as shown in Fig. 1(a) and (c), there are only four
+         can name a field differently (e.g., they might use either                  diffed fields: timestamp, pwd, email, and sign,
+         pwd, passwd, or password for a password field).                            and we can quickly narrow them down by using request
+                                                                                    message diffing.
+    •    Identifying the cryptographic functions. To
+         encrypt or hash a password, different apps can                        •    Dynamically hooking well-known cryptographic
+         also use different cryptographic functions (e.g.,                          APIs. While an app can use different types of
+         MD5,SHA-1,AES,DES, etc.). Similarly, to generate                           cryptographic functions for encryption, hashing and
+         the signature of a protocol message, apps can also                         signing of a message, there are only a limited number of
+         use different message authentication code (MAC)                            them. Meanwhile, even though there might be some user
+         generation functions (e.g., HMAC,HMAC-SHA-1). We                           defined cryptographic functions, these apps would be
+         need to identify the functions that are used by the                        rare because of the “never-implement-your-own-crypto”
+         testing app, so as to regenerate the corresponding                         practice [30]. Therefore, we can dynamically hook the
+         password, hash, or signature. Meanwhile, an app might                      well-known cryptographic APIs used by an app, extract
+         use their own private cryptographic functions, though                      their arguments (usually the user typed input such as
+         this is not encouraged.                                                    the password or the fields that need to be digitally
+                                                                                    digested or signed will appear in the arguments) and
+    •    Deciding when to terminate. We cannot perform a                            return values that allow us to change only the arguments
+         brute-force test forever, and we must terminate at some                    of our interest. Then, we can replay the execution of
+         point. While it might appear to be very simple by parsing                  the cryptographic APIs with the new arguments to
+         the response messages from the server (e.g., by looking                    re-generate new valid messages.
+         at the success or fail string as shown in Figure 1
+         (b) and (d)), such an approach would be too app-specific              •    Labeling response message with controlled input.
+         since different apps can use different strings and differ-                 Similar to how we infer the message fields through
+         ent encoding to represent a succeeded or failed attempt.                   diffed input, we can also infer the type of the response
 
-/%L%%"L
+                                                                        3
+                                                    5                                                     6     Request      6
+                         API Traces                                    Request Message Forgery                  Messagei
 
---- page 5 ---
+                                2
+                                                Request                                                         Request
+   Input0
+                                                Message0                                                       Messageg0
+               1         API Hooking        2              2           Message Field Inference            3                  3               Server
+                                                Request                                                         Request
+   Input1
+                                                Message1                                                        Message1
 
-response messages are illustrated in Fig. 1(c) and (d), respectively.We can notice from the trace that this app uses the plain-textHTTP protocol, and there are many app-dened protocol eldsin this login request message such assign_method,client,app_key,format,pwd,email,sign,keys, andsid, etc.Among these protocol elds, a few of them are of specialinterest to us such aspwd,email, andsignif we aim toperform a password guessing test. That is, we can keep mutatinga user password (from1234567890to some other dictionaryguided guesses) and test whether the server accepts or rejectsour password. However, we can notice that the user enteredpassword1234567890has been hashed (or encrypted) to value695409430D3127CB158002B92FEC1831. Meanwhile,there is asigneld that is a cryptographic signature of the clientrequest message, and the server will verify whether thesigneld is correct or not. Also, we can notice that the value of thesigneld is signicantly different in the two request messages.Therefore, in order to generate valid request messages, wejust need to recognize the message elds of interest to us suchas thepwdandsigneld, mutate the corresponding eld (e.g.,thepwd), and generate valid cryptographically consistent elds(e.g.,sign) of the request message. In addition, we also needto monitor the response of the server packets, to terminate thetest once we nd a correct password.
-B. Observation
-Challenges.From our running example, we can notice thatthere are a number of challenges in order to perform serverside security testing:
+                                                                                                          4     Response     4
+                            App                                    Response Message Labeling                    Message
 
-Recognizing the protocol elds. Typically a networkmessage consists of a number of elds; some of themare standard protocol elds (e.g.,GET), while some areuser dened. While it might be easier to identify thestandard elds for well-known protocols, it will be muchmore challenging to recognize the user dened elds,especially considering the fact that different developerscan name a eld differently (e.g., they might use eitherpwd
-,
-passwd
-, or
-password
-for a password eld).
 
-Identifying the cryptographic functions. Toencrypt or hash a password, different apps canalso use different cryptographic functions (e.g.,MD5,SHA-1,AES,DES, etc.). Similarly, to generatethe signature of a protocol message, apps can alsouse different message authentication code (MAC)generation functions (e.g.,HMAC,HMAC-SHA-1). Weneed to identify the functions that are used by thetesting app, so as to regenerate the correspondingpassword, hash, or signature. Meanwhile, an app mightuse their own private cryptographic functions, thoughthis is not encouraged.
+                         Emulator
+Fig. 2. An Overview of How Our AUTO F ORGE Works.                Man‐in‐the‐Middle Proxy
 
-Deciding when to terminate. We cannot perform abrute-force test forever, and we must terminate at somepoint. While it might appear to be very simple by parsingthe response messages from the server (e.g., by lookingat thesuccessorfailstring as shown in Figure 1(b) and (d)), such an approach would be too app-specicsince different apps can use different strings and differ-ent encoding to represent a succeeded or failed attempt.
-Generating the valid request messages. Having rec-ognized the message elds of our interest, we also haveto nally generate the new valid messages for our testing.While it might be possible to dynamically instrumentthe app and use an in-context argument substitution ofthe cryptographic APIs to generate the message, or justfuzz the graphic user interface to generate the “legal”messages, these approaches appear to be more expensiveor lack exibility (e.g., requiring recognizing andcontrolling of the user interface, rolling back the state ofthe login event, or only substituting user visible elds)and instead we would like to have an out-of-the-boxapproach to forge any “legal” messages as we wish.
-Key Insights and Solutions.At a high level, we can noticethat essentially we are performing protocol reverse engineeringin that we have to recognize the protocol elds, understand therequest and response messages (to a certain degree), and generatevalid messages with cryptographically computed elds. Whilewe could adopt many of the existing protocol reverse engineeringtechniques (e.g., [10], [14], [22], [25], [39]) to analyze at theinstruction level how a message is generated, such an approachalso appears to be more expensive since it tracks the data depen-dency at the instruction level. Having analyzed the executionsof a number of apps manually, we have obtained the followinginsights to address those technical challenges discussed above:
 
-Inferring the message elds with diffed input. Al-though it is challenging to recognize each eld in agiven message, we realize that we need to infer only afew of them based on our interests (e.g., only theemail,pwd, andsignelds in our running example). Sincewe control the app execution, we can feed the app withcontrolled input such as a correct password and a wrongpassword. By observing the request message differences,we can identify the diffed elds. The elds of ourinterest must be within the diffed elds. For instance,as shown in Fig. 1(a) and (c), there are only fourdiffed elds:timestamp,pwd,email, andsign,and we can quickly narrow them down by using requestmessage difng.
-
-Dynamically hooking well-known cryptographic
-APIs. While an app can use different types ofcryptographic functions for encryption, hashing andsigning of a message, there are only a limited number ofthem. Meanwhile, even though there might be some userdened cryptographic functions, these apps would berare because of the “never-implement-your-own-crypto”practice [30]. Therefore, we can dynamically hook thewell-known cryptographic APIs used by an app, extracttheir arguments (usually the user typed input such asthe password or the elds that need to be digitallydigested or signed will appear in the arguments) andreturn values that allow us to change only the argumentsof our interest. Then, we can replay the execution ofthe cryptographic APIs with the new arguments tore-generate new valid messages.
-
-Labeling response message with controlled input.Similar to how we infer the message elds throughdiffed input, we can also infer the type of the response3
-
---- page 6 ---
-
-Fig. 2. An Overview of How Our A
-UTO
-F
-ORGE
-Works.message (namely, the success or failure login messagessent by the server) with controlled input difng. Morespecically, since we control the app, we can test theapp with a correct password and treat the responsemessage as a black box without looking at any ofits content by assigning it asuccesstag; similarly,we can send a wrong password, and assign afailuretag for the corresponding response message. Therewill be some other types of messages, such as atoo-many-login-attempts warning message sent fromthe server, but we can just assign all of these messageswith an
-other
-tag regardless of their contents.
-
-Out-of-the-box re-execution of the cryptographic
-functions. An interesting observation for cryptographicfunction is that their algorithms are well-known, anddifferent implementations by different programminglanguages such as Java, C, or Python would producethe same output when given the same input. Therefore,we can perform an out-of-the-box re-execution of thecryptographic functions to forge the desired requestmessages by feeding them with the correspondingarguments.
+            message (namely, the success or failure login messages          the protocol fields through input message diffing. Note that for
+            sent by the server) with controlled input diffing. More         HTTPS, we can intercept their traffic and decrypt it by using a
+            specifically, since we control the app, we can test the         man-in-the-middle proxy. This is because we can easily install
+            app with a correct password and treat the response              a self-signed root certificate in our testing Android device, and
+            message as a black box without looking at any of                intercept and decrypt the traffic in a network proxy.
+            its content by assigning it a success tag; similarly,
+            we can send a wrong password, and assign a failure
+            tag for the corresponding response message. There               Overview. We have designed a set of systematic techniques in
+            will be some other types of messages, such as a                 our prototype AUTO F ORGE. As illustrated in Fig. 2, there are
+            too-many-login-attempts warning message sent from               four key components inside AUTO F ORGE: one is located inside
+            the server, but we can just assign all of these messages        an Android emulator, and the other three are located inside a
+            with an other tag regardless of their contents.                 man-in-the-middle (MitM) proxy. There are in total six major
+                                                                            steps in order to forge a cryptographically consistent request
+   •        Out-of-the-box re-execution of the cryptographic                message:
+            functions. An interesting observation for cryptographic
+            function is that their algorithms are well-known, and               •     Step ¶. To test a given app, we first need to provide
+            different implementations by different programming                        the necessary input that generates the desired message
+            languages such as Java, C, or Python would produce                        fields. For instance, to test whether a service is
+            the same output when given the same input. Therefore,                     vulnerable to password brute-forcing attack, we need
+            we can perform an out-of-the-box re-execution of the                      to enter two testing inputs1 : a testing username with the
+            cryptographic functions to forge the desired request                      correct password for this user, and a testing username
+            messages by feeding them with the corresponding                           with a wrong password for this user, respectively. To
+            arguments.                                                                have the correct password, we need to register with
+                                                                                      the service first. Therefore, Step ¶ is the only manual
+                                                                                      step that involves human intervention. All other steps
 C. Overview
-Problem Statement.After describing the challenges and ourobservations, next we would like to formally dene our problem.It can be summarized as follows:Given an app and tracedinput messages, the goal ofAUTOFORGEis to automaticallygenerate a new input message with mutated elds that satisfythe cryptographic constraints of the messages in an efcient andblack-box manner.
-Scope and Assumptions.In this paper, we focus on testing themobile services of Android apps. As to-be-demonstrated, weonly need the knowledge of publicly available cryptographicAPIs (e.g., the parameters and return values) as well as thecapability of hooking these functions, and we assume theseinformation is available. In addition, since our goal is to generatevalid client side request messages, we need to reverse engineerthe protocol elds. In this paper, we focus on the apps that usetext-based protocols including HTTP/HTTPS because we candirectly identify the protocol elds based on text differences.Interestingly, many mobile apps in Android do useHTTP/HTTPS protocols, which makes it trivial in identifyingthe protocol elds through input message difng. Note that forHTTPS, we can intercept their trafc and decrypt it by using aman-in-the-middle proxy. This is because we can easily installa self-signed root certicate in our testing Android device, andintercept and decrypt the trafc in a network proxy.
-Overview.We have designed a set of systematic techniques inour prototypeAUTOFORGE. As illustrated in Fig. 2, there arefour key components insideAUTOFORGE: one is located insidean Android emulator, and the other three are located inside aman-in-the-middle (MitM) proxy. There are in total six majorsteps in order to forge a cryptographically consistent requestmessage:
-
-Step
-¶. To test a given app, we rst need to providethe necessary input that generates the desired messageelds. For instance, to test whether a service isvulnerable to password brute-forcing attack, we needto enter two testing inputs1: a testing username with thecorrect password for this user, and a testing usernamewith a wrong password for this user, respectively. Tohave the correct password, we need to register withthe service rst. Therefore,Step
-¶is the only manualstep that involves human intervention. All other stepsin A
-UTO
-F
-ORGE
-are automatically executed.
-
-Step
-·. Once the app gets loaded and the input is fedto the app, our rst component,API Hooking, will in-terpose the white-listed cryptographic APIs. Wheneverone of the APIs is executed, we retrieve its input andoutput of this API from its arguments and return valuesbased on the specication of the API. Such informationis saved in a trace log. Later we will traverse the log leto generate the new request message inStep
-º. Mean-while, the execution of the app inside our emulator willautomatically generate a request message, which will befed to our second component,Message Field Inference,and the copy of this message will also be sent to theserver at
-Step
-¸
-or right after the execution of
-Step
-·
-.
-
-Step
-¸. By aligning the two request messages anddifng each message eld, ourMessage Field Inferencedirectly identies the diffed message elds. Then it1Strictly speaking, we need four inputs for the password brute-force testing.For space reasons we do not show them completely in Fig. 2. We will explainwhy we need four inputs in §III-C.
-4
-
---- page 7 ---
-
-566Input0API
-
-HookingServerRequest
-
-Message
-
-ForgeryAPI
-
-TracesRequest
-
-Message0RtRequest
-
-Messageg0RtRequest
-
-Messagei23125266Message
-
-Field
-
-Inference3AppInput1Response
-
-Message
-
-LabelingResponse
-
-MessageRequest
-Message1Request
-Message144Emulator Man
-
-in
-
-the
-
-Middle
-
-Proxy
-
---- page 8 ---
-
-measures the similarity of the values between eachdiffed eld. Based on the degree of differences, itidenties the cryptographically computed elds. Afew other elds can also be inferred based on thepattern of the string (as we focus on text protocols),e.g. thetimestampeld, which has a certain stringinside such as the date of the test. The request messagegenerated atStep
-·is sent to the server if it has notbeen sent yet. Note that the execution ofStep
-¸canbe performed ofine, and the system does not need towait until this step is nished to execute
-Step
-¹
-.
-
-Step
-¹. The server sends a response message to theclient, which is intercepted by our third component,Response Message Labeling. Based on the typeof the message (e.g., the correct password, or awrong password) we sent to the server, it assigns acorresponding label (or tag) to the response message(e.g., asuccesstag or afailuretag). We willalso compare the tag for all later response messages(generated afterStep
-») to decide whether we shouldcontinue executingStep
-»based on the nature of thesecurity testing we perform (e.g., repeatedly guessinga password until we get a
-success
-response).
-
-Step
-º. Having assigned the tag for the twoinitial response messages, and meanwhile havingcollected the input and output traces for each of theexecuted cryptographic APIs, our last component,Request Message Forgery, re-executes these executedcryptographic functions with the mutated input andnally generates the valid request message by replacingthe corresponding eld in the initial request message.
-
-Step
-». The newly generated request message is sentto the server, and its response will be intercepted by ourMitM proxy. Then we continue the execution toStep
-¹.III. D
-ETAILED
-D
-ESIGNIn this section, we present the detailed design of the fourkey components ofAUTOFORGE, based on the order of theirexecution.
-A. API HookingThe rst component ofAUTOFORGEhooks the well-denedcryptographic functions to intercept their arguments and returnvalues such that we can replay their execution to produce thedesired cryptographically consistent elds. The Android SDKprovides a set of cryptographic Java APIs. Based on theirspecication as well as our manual analysis with a number ofapps, we have obtained61commonly used cryptographic APIs.Their prototypes are presented in Table I. Most apps2directly usethem to encrypt input data (with thecrypto.cipherclass),generate a hash (with thesecurity.MessageDigestclass)or sign the input by generating a message authentication code(i.e., with thecrypto.Macclass). Based on our manualanalysis with a number of apps, we nd these APIs are usuallyused in the following way:2There are apps that use native code and we need to hook the native code APIsin this case.
-
-Encryption. To encrypt a message, an Androidapp rst needs to initialize a cryptographickey class (e.g., by callingnew DesKeySpecandSecretKeyFactory.getInstanceto generate the DES keys), and then it callscipher.getInstancewith parameters suchas “DES/CBC/PKCS5Padding” to get acipherinstance, and theninitthiscipherwith thenecessary parameters (e.g., the initialized keys). Then,app developers have to give the input message (using abyte array) to thiscipherfor encryption. There aretwo ways to do that: the rst is to call APIdoFinaltopass the input and get output as cipher text; the secondway is to call APIupdateto pass the input, and thencall API
-doFinal
-to produce the cipher text.
-
-Hashing. Obtaining a digest of a message (without us-ing any keys) is achieved by usingMessageDigest(e.g.,md5, orsha1). In this case, the app callsMessageDigest.getInstancewith string “MD5”as argument to get a MD5 MessageDigest instance, andthen it calls theupdatemethod to add the messagethat needs to be digested. Finally, it callsdigesttoproduce the desired hashing result.
-
-Signing. To sign a message (ensuring both integrityand authenticity), a message authentication code (i.e.,Mac) is used. Similar to encryption, the app also has togenerate the corresponding keys rst (e.g., by callingnew SecretKeySpecwith string “HmacSHA1”),get aMacinstance by callingMac.getInstancewith a string (e.g., “HmacSHA1”), and then initialize theMacwith the generated key. Next, it callsdoFinal,which takes the to be hashed messages as input andnally produces the hashed messages as output. It couldalso rst callupdateto add the message, and then calldoFinal
-with an empty argument.Therefore, we hook each of the APIs (the handler and thefunction name) described in Table I, and log their argumentsand return values. We log the arguments of these APIs rightbefore their execution, and their return values as well as updatedarguments if there are any right after their execution. A sampleof our log is presented in Fig. 3.
-B. Message Field InferenceNext, we need to identify the protocol elds of our interestin the request message. We divide this problem into twosub-problems: (1) message eld identication that splits themessages into a set of elds, and (2) eld semantic inferencethat infers the meaning of the identied elds. The outcome ofthis step is the elds we aim to mutate, such aspwdandsign
-in our running example.
-1) Message Field Identication
-.Since we only need tosubstitute a few elds in our security testing, there is no need toidentify all protocol elds. In addition, since we control the inputto the testing app, we can observe the eld differences in therequest messages if we feed different inputs to the app. Basedon these two insights, we can identify the elds that get changedby aligning the two request messages that are generated with5
-
---- page 9 ---
-
-TABLE I. T
-HE LIST OF THE HOOKED CRYPTOGRAPHIC
-API
-S
-,
-AND ITS PARAMETERS AND RETURN VALUES
-.Return ValueAPI nameParametersSecretKeySpecjavax.crypto.spec.SecretKeySpec.SecretKeySpec
-<
-init
->(byte[] key, String algorithm)SecretKeySpecjavax.crypto.spec.SecretKeySpec.SecretKeySpec
-<
-init
->(byte[] key, int offset, int len, String algorithm)DESedeKeySpecjavax.crypto.spec.DESedeKeySpec.DESedeKeySpec
-<
-init
->(byte[] key)DESedeKeySpecjavax.crypto.spec.DESedeKeySpec.DESedeKeySpec
-<
-init
->(byte[] key, int offset)DESKeySpecjavax.crypto.spec.DESKeySpec.DESKeySpec
-<
-init
->(byte[] key)DESKeySpecjavax.crypto.spec.DESKeySpec.DESKeySpec
-<
-init
->(byte[] key, int offset)X509EncodedKeySpecjava.security.spec.X509EncodedKeySpec
-<
-init
->(byte[])SecretKeyFactoryjavax.crypto.SecretKeyFactory.getInstance(String algorithm)SecretKeyFactoryjavax.crypto.SecretKeyFactory.getInstance(String algorithm, String provider)SecretKeyFactoryjavax.crypto.SecretKeyFactory.getInstance(String algorithm, Provider provider)SecretKeyjavax.crypto.SecretKeyFactory.generateSecret(KeySpec keySpec)IvParameterSpecjavax.crypto.spec.IvParameterSpec.IvParameterSpec(byte[] iv)KeyFactoryjava.security.KeyFactory.getInstance(String algorithm)KeyFactoryjava.security.KeyFactory.getInstance(String algorithm, String provider)KeyFactoryjava.security.KeyFactory.getInstance(String algorithm, Provider provider)PublicKeyjava.security.KeyFactory.generatePublic(KeySpec keySpec)Macjavax.crypto.Mac.getInstance(String algorithm)Macjavax.crypto.Mac.getInstance(String algorithm, String provider)Macjavax.crypto.Mac.getInstance(String algorithm, Provider provider)voidjavax.crypto.Mac.init(Key key)voidjavax.crypto.Mac.init(Key key, AlgorithmParameterSpec params)voidjavax.crypto.Mac.update(byte input)voidjavax.crypto.Mac.update(byte[] input)voidjavax.crypto.Mac.update(ByteBuffer input)voidjavax.crypto.Mac.update(byte[] input, int offset, int len)byte[]javax.crypto.Mac.doFinal()byte[]javax.crypto.Mac.doFinal(byte[] input)voidjavax.crypto.Mac.doFinal(byte[] output, int outOffset)MessageDigestjava.security.MessageDigest.getInstance(String algorithm)MessageDigestjava.security.MessageDigest.getInstance(String algorithm, String provider)MessageDigestjava.security.MessageDigest.getInstance(String algorithm, Provider provider)voidjava.security.MessageDigest.update(byte input)voidjava.security.MessageDigest.update(byte[] input)voidjava.security.MessageDigest.update(ByteBuffer input)voidjava.security.MessageDigest.update(byte[] input, int offset, int len)byte[]java.security.MessageDigest.digest()byte[]java.security.MessageDigest.digest(byte[] input)intjava.security.MessageDigest.digest(byte[] buf, int offset, int len)Cipherjavax.crypto.Cipher.getInstance(String transformation)Cipherjavax.crypto.Cipher.getInstance(String transformation, String provider)Cipherjavax.crypto.Cipher.getInstance(String transformation, Provider provider)voidjavax.crypto.Cipher.init(int opmod,Key key)voidjavax.crypto.Cipher.init(int opmod,Certicate certicate)voidjavax.crypto.Cipher.init(int opmod,Key key,SecureRandom random)voidjavax.crypto.Cipher.init(int opmod,Certicate certicate,SecureRandom random)voidjavax.crypto.Cipher.init(int opmod,Key key,AlgorithmParameterSpec params)voidjavax.crypto.Cipher.init(int opmod,Key key,AlgorithmParameterSpec params,SecureRandom random)voidjavax.crypto.Cipher.init(int opmod,Key key,AlgorithmParameters params)voidjavax.crypto.Cipher.init(int opmod,Key key,AlgorithmParameters params,SecureRandom random)byte[]javax.crypto.Cipher.update(byte[] input)byte[]javax.crypto.Cipher.update(byte[] input,int inputOffset,int inputLen)intjavax.crypto.Cipher.update(ByteBuffer input, ByteBuffer output)intjavax.crypto.Cipher.update(byte[] input,int inputOffset,int inputLen,byte[] output)intjavax.crypto.Cipher.update(byte[] input,int inputOffset,int inputLen,byte[] output,int outputOffset)byte[]javax.crypto.Cipher.doFinal()byte[]javax.crypto.Cipher.doFinal(byte[] input)intjavax.crypto.Cipher.doFinal(byte[] output, int outputOffset)byte[]javax.crypto.Cipher.doFinal(byte[] input,int inputOffset,int inputLen)intjavax.crypto.Cipher.doFinal(byte[] input,int inputOffset,int inputLen,byte[] output)intjavax.crypto.Cipher.doFinal(byte[] input,int inputOffset,int inputLen,byte[] output,int outputOffset)intjavax.crypto.Cipher.doFinal(ByteBuffer input, ByteBuffer output)the two controlled inputs. As shown in our running example, ifwe directly align (with a global optimal matching) the messagesin Fig. 1(a) and (c), we immediately identify four elds (threeare of special interest to us).Then, the next question is how to nd the two desired requestmessages for the alignment. A straightforward approach wouldbe to align all request messages generated from the start ofthe app to the moment right after we trigger the login event.Presumably the two executions will share almost the sameexecution path except those code that handles input differences.While we can take such an approach, we realize that we can usea slightly better way to get the desired messages within only oneexecution of the app. In particular, after we load the app to test thelogin attempt, we can rst enter a wrong password, and then entera correct password. We would then just need to align thetwo mostrecently generated request messages. Though this is a heuristicapproach, it works well in practice, and in our all testing apps wedirectly identify the two request messages desired for alignment.After that, we compare the two request messages by us-ing a pairwise string sequence alignment algorithm, namelythe Needleman-Wunsch algorithm [27]. It uses dynamic pro-gramming and can achieve an optimal global matching, whichperfectly ts our goal. Meanwhile, this algorithm has been usedin the Protocol Informatics (PI) [8] project, and showed greatpromise for text based protocol eld inference. Therefore, wejust integrate this algorithm by following how PI uses it.
-6
-
---- page 10 ---
-
-TABLE II. T
-HE
-L
-EVENSHTEIN
-S
-IMILARITY
-R
-ATIO OF THE
-DIFFED
--
-FIELDS
-.Field NameString
-0
-vs. String
-1LSR2015-08-05%2003%3A19%3A26timestamp2015-08-05%2003%3A20%3A010.84testappserveralpha%40gmail.comemailtestappserverbeta%40gmail.com0.88695409430D3127CB158002B92FEC1831pwdA9672D9F5F7414D5B996964A7F07727E0.3494056C9BE079510079D0BF9A372B4E65signD2A173BEB8F169DD1A81CA8D59AD2C690.282) Field Semantic Inference
-.Having identied the diffed elds,we then infer their meanings. There are mainly three sources thatlead to the eld differences: (1) system data such as timestamp,(2) user input, and (3) the cryptographic computation. Wepresent the following three strategies to infer their meanings:
-
-Pattern Matching. System data such astimestampusually has patterns, and we can then use the pre-denedpatterns to match them. For instance, if we locate adate sub-string such as2015-08-05in the two diffedelds, then it is highly likely that this is atimestamp
-eld, as illustrated in our running example.
-
-Content Matching. Since we control the user input andsome user input would not get changed, such as theusername, then we directly search the diffed elds forthe data we entered. In such a way, we can preciselylocate the eld that directly uses the user input, such asthe
-email
-eld in our running example.
-
-Degree of Differences. By measuring the degree ofthe similarities between the two diffed elds, we caneasily identify the cryptographically computed elds.In our design, we use the Wagner-Fischer algorithm[35], which computes the Levenshtein distance, orminimum number of edits needed to transform onestring into the other, between two elds. We determinewhether a eld is cryptographically computed if theLevenshtein similarity ratio (LSR) is below 0.5, asshown in Table II for our running example where wecan easily locate the
-pwd
-and
-sign
-elds.Note thateld semantic inferenceis an optional step. In theworst case,AUTOFORGEcan brute-force try each diffed eld(e.g., there are only 4 elds in our running example that needsthe brute-force trial) as crypto-eld, system-eld, or user-inputeld, to nally generate the desired request messages. Witheldsemantic inference, the benet is that it can signicantly narrowdown and even directly pinpoint the eld of our interest.
-C. Response Message LabelingSince we aim to test the server behavior, we have to alsomonitor the server responses to decide when to stop. It wouldbe very challenging to label a response message by parsingits contents since different apps can use different encodings.Fortunately, we nd that we can actually treat the responsemessage as a black box. Specically, in our password login test,because the app is under our control, we can send the server twomore messages in addition to the two initial request messageswe sent earlier. Back to our running example, we have alreadycollected two response messages: a wrong password responsemessage (Fig. 1(b)), and a correct password response message(Fig. 1(d)). Then we can send another pair of messages, one witha wrong password and the other with the correct password, anduse the following algorithm to label the response messages:
-If both the wrong (or correct) password response mes-sages are content identical to the previously observedones, then we directly use the corresponding entiremessage as a signature to classify whether it is a wrong(or correct) password response message.
-Otherwise, we align the two same type of response mes-sages (i.e., two correct password response messages, orthe two wrong password response messages) using againthe Needleman-Wunsch algorithm [27], but we keep thecommon substring (instead of the diffed substring weused inStep
-¸) and use it as a signature to represent acorrect password response message or a wrong passwordresponse message.After we have acquired the signatures for the correct passwordresponse and wrong password response, next we keep sendingthe server a login request with mutated passwords for a givenuser. However, for ethical reasons, we would not keep sendinga large volume of mutated request messages to the server, andin our experiment we set the maximum number of messages wecould send to the server asN
-+ 1. During this testing window,we could observe three types of messages sent from the server:
-
-Correct password. We may break a user's passwordwithinN
-+ 1guesses, and the server will send asuccessful login response. Based on the already obtainedsignature of the correct password response, we identifythis case.
-
-Wrong password. Given the very small amount ofguesses, we likely cannot break a password. Therefore,most of the time, server will send a wrong passwordresponse message. Similarly to how we identify thecorrect password response message, we identify thiscase based on the already obtained wrong passwordsignature.
-
-Unrecognized response message. In addition to thetwo correct or wrong password responses, we could alsoencounter other types of response messages that do nothold any signatures we observed before. The responsefor these messages could be something indicating wehave exceeded a limited number of login attempts, orjust an error message. Therefore, if we observe theseunrecognized response messages, we terminate the testand conclude that the server is not vulnerable.Note that there is also a caveat: if the server is not vulnerable,it may keep sending a wrong password response message eventhough we have guessed a correct password (in fact we did ndtwo such servers in our experiment). Therefore, if we receiveNwrong password responses, we will send a correct password forour testing user in the last request message. If the server blocks(by sending some other unrecognized response or the wrongpassword response), we conclude the server is not vulnerable.
-7
-
---- page 11 ---
-
-Algorithm 1Parsing the Cryptographic API trace and Trackingthe Backward Data Dependency1:
-Input:
-Log
-: the API execution log le;
-v
-0
-: the value of the identied output eld;
-u
-0
-:
-user entered input;
-2:
-procedure
-A
-PI
-T
-RACE
-P
-ARSING
-(
-Log; v
-0
-; u
-0
-)
-3:
-V
- 
-v
-0
-4:
-H
- ;
-,
-R
- ;
-5:
-i
- 
-0
-6:
-while
-!
-feof
-(
-Log
-)
-do
-7:
-<
-handle.fname, input, output
->
- 
-fread
-(
-Log
-)
-8:
-AP I
-i
- 
-<
-handle.fname, input, output
->
-9:
-i
- 
-i
-+ 1
-10:
-while
-i
-! = 0
-do
-11:
-i
- 
-i
-
-1
-12:
-if
-AP I
-i
-:output
-2
-V
-then
-13:
-V
- 
-V
-n f
-AP I
-i
-:output
-g
-14:
-P
-USH
-A
-RG
-A
-ND
-F
-UN
-N
-AME
-(
-AP I
-i
-; V; H
-,
-u
-0
-)
-15:
-if
-AP I
-i
-:output
-2
-H
-then
-16:
-H
- 
-H
-n f
-AP I
-i
-:output
-g
-17:
-P
-USH
-A
-RG
-A
-ND
-F
-UN
-N
-AME
-(
-AP I
-i
-; V; H
-,
-u
-0
-)
-18:
-if
-empty(
-V
-)
-and
-empty(
-H
-)
-then
-19:
-break
-20:
-if
-!empty(
-V
-)
-or
-!empty(
-H
-)
-then
-21:
-return
-false
-22:
-else
-23:
-return
-true
-24:
-procedure
-P
-USH
-A
-RG
-A
-ND
-F
-UN
-N
-AME
-(
-AP I
-,
-V
-,
-H
-,
-u
-0
-)
-25:
-if
-String
-(
-AP I:input
-)
-then
-26:
-v
-d
- 
-GetDiffedArgValueFromTwoTraces()
-27:
-if
-u
-o
-2
-AP I:input
-or
-v
-d
-2
-AP I:input
-then
-28:
-PUSH
-(ARG,
-Substitute
-(
-v
-d
-,
-u
-0
-,
-AP I:input
-)))
-29:
-V
- 
-V
-[
-v
-d
-30:
-else
-31:
-PUSH
-(ARG, String(
-AP I:input
-))
-32:
-else
-33:
-if
-CONST
-(
-AP I:input
-)
-then
-34:
-PUSH
-(ARG, CONST(
-AP I:input
-))
-35:
-else
-36:
-V
- 
-V
-[
-AP I:input
-37:
-PUSH
-(ARG-t,
-AP I:input:temp
-)
-38:
-if
-!empty(
-AP I:handle
-)
-then
-39:
-H
- 
-H
-[
-AP I:handle
-40:
-PUSH
-(FNAME,
-AP I:handle:fname
-)D. Request Message ForgeryHaving collected the API traces and identied the eldsof our interest, we are then ready to forge the desired requestmessages for our security testing. For each diffed-eld identiedby ourMessage Field Inference, we substitute them eitherbased on their inferred meaning or trying each of them one-by-one in a brute force way to forge a request message. Theforgery of the request message is guided by the traced messageas well as the traces of the cryptographic APIs. Since thereare two types of elds, non-cryptographically computed eldsand cryptographically computed elds, we use the followingstrategies to forge their values.
-1) Non-cryptographically computed elds
-.For non-cryptographically computeduser input eldssuch asemailwe forge the value of this eld without changing its content(because we aim to test whether we can guess the password fora given user). Forsystem related elds, such astimestamp,we congureAUTOFORGEto slightly change it based on thepattern observed in the traced request messages.
-2) Cryptographically computed elds
-.The core problemAUT-OFORGEaims to solve is to generate the cryptographicallycomputed elds with mutated input. Once we have collectedthe traces of the cryptographic functions, including their inputand output, all that we need to do is to replay the execution ofthese functions with the input we modied. Since our replay isperformed at the network proxy layer, we just need to re-executethe cryptographic functions of our interest with the correspondingparameters. To identify those functions and their arguments,we perform backward slicing atop cryptographic API tracesto identify the involved arguments and return values, and thenreplay their execution using the corresponding alternative (e.g.,Python) implementation of these APIs. A detailed algorithm onhow we parse the API trace and perform the slicing to identifythe involved cryptographic functions is presented in Algorithm 1.Specically, given a log le of the API trace (LOG), thevaluev
-0of the identied cryptographically computed eld(e.g., “D2A173BEB8F169DD1A81CA8D59AD2C69” in ourrunning example), and the user inputu
-0(e.g., “ThisIsPWD”and “testappserverbeta@gmail.com”), we invoke theAPITRACEPARSINGprocedure to identify the functions that weneed to replay along with the corresponding arguments. Sincewe start from the last executed API that generates the value ofour interest and use the backward slicing to identify the replayedfunction, we use a stack structure (we call function state trackingstack) to store these functions and their arguments (as shown inline 27, line 30, line 33, and line 36 in Algorithm 1) and then wejust need to pop these arguments and invoke the correspondingalternative implementation of these cryptographic APIs to nallyproduce the desired output.Our backward slicing tracks two types of data dependen-cies: (1) function handler dependencies (stored in setH),and (2) return value and argument dependencies (stored insetV). As shown in line 12, starting from the return valueof the last executed cryptographic API (e.g., the function0x53595658.digestillustrated in Fig. 3), if the returnvalue belongs toV, then this function is of our interest; wetherefore remove this return value fromV(line 13) and pushits argument and function name into our state tracking stack bycalling procedure P
-USH
-A
-RG
-A
-ND
-F
-UN
-N
-AME
-(line 14).InsidePUSHARGANDFUNNAMEprocedure, we will rstcheck its argument; if it is a string (line 25), then we againuse the Needleman-Wunsch algorithm [27] to check whetherits argument contains any diffed-value of our interest (e.g.,A9672D9F5F7414D5B996964A7F07727Eas shown inFig. 3) by aligning the two corresponding arguments fromthe two traced API les, and storing the diffed value intov
-dif there is any (line 26). Next, we further check if the userinputu
-0(e.g.,testappserverbeta@gmail.com) is inthis argument, or if there is any diffed valuev
-d. If so, wewill replaceu
-0with either user specied input and meanwhilesubstitute the argument with a temporary variable that storesthev
-d(line 28); we also track which function generatesv
-dby keeping it inV(line 29). Otherwise, we directly push thisstring argument (e.g., the “DES” string that is the argumentofSecretKeyFactory.getInstancein Fig. 3) on thestack (line 31). If the argument is not a string (line 32-37),then we check whether it is a constant (e.g., the value1in0x536b7670.init's argument). If so, we push this constanton the stack; otherwise, we will track which function generatesthis argument by adding it into data dependence setV, and pushanother temporary variable that will store the value generatedby the dependent function. If the handler of this function is notempty (line 38), we track the dependence of the handler (line 39).8
-
---- page 12 ---
-
-Fig. 3. Crypto API traces and the illustration of their arguments and returnvalue dependencies of theminiintheboxApp. Note that *addrdenotes thecontent stored in that
-addr
-.Note that after we iterate the API traces, bothVandHshouldbe empty (line 20); otherwise there is something wrong and wewill output that we cannot perform the replay.After we have built the stack that tracks how the crypto-graphic functions should be executed, we then pop the argumentsand the function names from the stack, and then invoke thecorresponding alternative implementation of these cryptographicfunctions to nally generate the desired eld output. After that,we replace the corresponding eld in one of the request messageswe traced (e.g,Request Message
-0) to nally forge thedesired request messages.
-IV. E
-VALUATIONWe have implementedAUTOFORGEusing both Java andPython. We implemented ourAPI Hookingin Java atop theXposedFramework [6], which provides convenient ways tond and hook a given API (findAndHookMethod) andcan intercept the point before (beforeHookedMethod) orafter (afterHookedMethod) execution of the API. Thisimplementation consists of1
-;
-200lines of Java code. The restof the components ofAUTOFORGEare implemented usingPython with4
-;
-500lines of our own code. It is worth notingthat we implemented theMessage Field Inferenceatop theProtocol Informatics [8] project, which is an open source Pythonimplementation of the Needleman-Wunsch algorithm [27], andwe just integrated this code based on our needs. Also, we didnot have to implement the algorithm to compute the Levenshteinsimilarity ratio of two strings [35] because Python already has animplementation for this algorithm. Meanwhile, we implementedour MitM proxy atop the Burp Suite [1] using a Python plugin.There will be many security applications enabled byAUTOFORGE. In this section, we evaluate how we apply it to testthe vulnerable app servers. In particular, we show how we testedwhether an app server is vulnerable to password brute-forcingattacks in §IV-B, leaked username and password probing attacksin §IV-C, and the Facebook access token hijacking attackin §IV-D. Our procedure for setting up our experiments ispresented in §IV-A.
-A. Experiment Setup
-Collecting the Mobile Apps for Testing.To test the app servers,we needed to rst download and install the corresponding appsin our emulator. We crawled the apps from the ofcial GooglePlay market. We crawled over20
-;
-000apps within a three monthtime window. Since we have to manually register with eachservice in order to test whether their servers are vulnerable, wecannot test all of them and therefore we instead focused on themost popular apps. We considered an app to be a most popularapp if it has been installed more than one million times. Wequeried each app to check its number of installs on Google Play;we found
-320
-apps falling into this category.Among these320apps, not all of them use cryptographicfunctions to encrypt, hash, or sign the request messages, so wehad to lter them. It would be tedious to manually go througheach app one-by-one to check whether it uses cryptographicfunctions. We therefore developed a simple dynamic analysistool based on Monkey [5] to decide whether we should lteran app. Specically, we invoked theamcommand provided byMonkey to run the app and stop executing it after20seconds. Ifwe observed any cryptographic functions (listed in Table I) getcalled, we kept this app for further testing.After ltering the non-encryption, non-hashing and non-signing apps, we then had105apps to test. But still, we werenot sure whether each app contained a user login interface sinceour test primarily concerns the security of user authentication.Currently, there is no automatic tool to recognize this, andtherefore we had to go through each of them. After manuallyrunning the105apps one-by-one, we found that15of them donot contain a user login interface, and14of them do not useHTTP/HTTPS protocols. Therefore, we ltered these apps outand eventually had only76apps tested byAUTOFORGE. Thename of the tested app, its version, the category, and the numberof installs, and the protocol (HTTP or HTTPS) are presented inTable V in Appendix. Also, we observed that 54 out of 76 (71%)apps in our data set use the HTTPS protocol.
-Other Settings.We used Genymotion [3] as our Androidemulator. Our host machine runs Ubuntu 12.04 with 8G memoryand Intel Core2 Duo CPU 2.53GHz, and our Android emulatoris version 4.2.2 with 2G memory. Meanwhile, the parameterN
-is set to be 20.
-B. Password Brute-forcing TestingWe have illustrated through our running example how tobreak a user's password by iteratively mutating her passworduntil we hit a correct one. We have applied this methodology totest these76potential vulnerable app services. To launch our test,we rst registered two legal accounts in the corresponding serversand sent four request messages (a wrong and correct passwordpair for each registered user) and then mutating the password9
-
---- page 13 ---
-
-DESKeySpec(0x536b299c) = 
-0x536b2970
-*0x536b299c: "4ce19ca8fcd150a4w4pj9llah24991ut"StKFt tIt(0 107f2)0 535f66f4SecretKeyFactory.getInstance(0x107f2) = 0x535f66f4 
-*0x107f2: "DES"
-0x535f66f4
-.generateSecret(
-0x536b2970
-) = 
-0x265
-Cipher.getInstance(0x57f18baf) = 
-0x536b7670
-*0x57f18baf: "DES/CBC/PKCS5Padding"IvParameterSpec(0x535686bc) = 
-0x536c838c
-*0x535686bc: \x00\x00\x00\x00\x00\x00\x00\x00
-0x536b7670
-.init(1, 
-0x265
-, 
-0x536c838c
-)
-0x536b7670
-.doFinal(0x536df6ec) = 0x536fc960
-*0x536df6ec:"ThisIsPWD!"0x536df6ec: ThisIsPWD!*0x536fc960: 
-\xa9\x67\x2d\x9f\x5f\x74\x14\xd5\xb9\x96\x96\x4a 
-\x7f\x07\x72\x7e
-MessageDigest:getInstance(0x1297e) = 
-0x53595658
-*0x1297e: {"MD5"}0x53595658.digest(0x536c9234) = 0x5357d2100 53595658.d gest(0 536c9 3 ) 0 535 d 0*0x536c9234: "app_keyA4H0P4JNapp_secret4ce19ca8fcd150a4w4pj9l
-lah4991utclientandroidcountryUSAcountry_codeUScurrencyUSDcv3.9.0e
-mail
-testappserverbeta@gmail.com
-formatjsonlanguageenmethodvela.use
-r.loginpwd
-A9672D9F5F7414D5B996964A7F07727E
-sign_methodmd5timestamp
-2015-08-05 03:20:01v1.2
-"
-*0x5357d210: \xd2\xa1\x73\xbe\xb8\xf1\x69\xdd\x1a\x81\xca\x8d
-\x59\xad\x2c\x69
-
---- page 14 ---
-
-TABLE III. T
-HE DETAILED PASSWORD BRUTE
--
-FORCING TESTING RESULT FOR
-23
-APP SERVERS BASED ON THE APP CATEGORY
-.Step
-¶Step
-·Step
-¸Step
-¹Step
-ºCategoryApp Package Name #Input Msg #Traced API Encryption? Hashing? Signing? #DiffedField #SysField #InputField #CryptoField EqualResponse? SysField Only? #Sliced API #Request Vulnerable? Books & Referencecom.sirma.mobile.bible.android4146X7710017X121XBusinesscom.sahibinden489XX741217X1521XCasualme.pou.app41697X720117X721XComicsjp.ebookjapan.ebireader4607X731117X721XCommunicationcom.browan.freeppmobile.android440XX720117X1821XEducationcom.dictionary.ashcards43577X52217X921XEntertainmentcom.imdb.mobile442877X41217X7217Financecom.netgate4505X7731027X2867Health & Fitnesscom.fatsecret.android4417X720117X721XLifestylecom.cookpad.android.activities434277X41217X121XMedia & Videocom.youku.phone47717X741127X757Medicalcom.aranoah.healthkart.plus432177720207X021XMusic & Audiocom.slacker.radio4751777202077021XNews & Magazinescom.cnn.mobile.android.phone4213777202077021XPhotographycom.picsart.studio4129277720207X021XProductivitycom.autodesk.autocadws4153777202077021XShoppingcom.biggu.shopsavvy47717X730217X821XSocialcom.tumblr417277X52217X721XSportscom.espn.score_center4385777202077021XToolscom.sohu.inputmethod.sogou41957X720117X737Transportationtaxi.android.client4357X710017X821XTravel & Localcom.expedia.bookings4649777202077021XWeatherdisasterAlert.PDC45877720207X021Xfor one of the registered legal users. It would be overwhelmingto show all of the testing results for these 76 apps in a singletable. We thus classify the apps based on their categories listedin Google Play, select the apps that have the highest number ofinstalls in each category, and present their experimental results inTable III. In total, these apps can be classied into 23 categories.Therefore, there are only23app server testing results in Table III,and the results for the rest of the app servers are presented inTable VI in Appendix.Specically, we present the category of the app in the rstcolumn of Table III, followed by the app name. Since theexecution ofAUTOFORGEinvolves four key components, wepresent the internal results of these components in each key stepfrom the 3rd column to the last column. In particular, the numberof inputs needed inStep
-¶is presented in the 3rd column. Wecan see that they all require 4 inputs. The 4th column reports howmany APIs we traced, and the 5th to 7th column reports whetherthis app uses encryption, hashing, or signing, respectively, basedon the execution of ourAPI HookinginStep
-·; The number ofdiffed elds by ourMessage Field Inference(Step
-¸) is reportedin the 8th column, and we also report the number of identiedsystem data elds (e.g., the timestamp), user input data elds(e.g., username), and cryptographic computed elds from the 9thto the 11th columns. Whether ourResponse Message Labeling(Step
-¹) observes identical response messages is reported inthe 12th column; if they are not identical, whether the differenceonly comes from the system eld is reported in the 13th column.Finally, we report the number of sliced APIs by ourRequestMessage Generation(Step
-º) in the 14th column, the numberof the request messages we sent in the 15th column, and whetherthe app server is vulnerable in the last column.For these 23 apps' servers, we can observe from Table IIIthat 19 (83%) are vulnerable to password brute force attackswith our limited 20 guesses. Note that if we also include theresult (presented in Table VI) for the rest of the app servers,in total, we nd 65 apps' servers (86%) are vulnerable tothis attack type. Among the 4 non vulnerable apps serversin Table III, 3 of their servers (e.g.,com.netgate) willdirectly return “Unrecognized response message” after 3, 5 or6 request messages; butcom.imdb.mobilewill not returnsuch message, and we only found it is not vulnerable after the21st request message.From this table, we can also observe thatwe need four input messages for the test. Meanwhile, there aretens to several hundreds of cryptographic APIs executed for thesetested apps. We have examined the traces and found that part ofreason is because some of the apps heavily use cryptographicfunctions for integrity checking of the retrieved data such asthe images before login. There are 65% of the apps that useencryption, hashing, or signing to protect the authenticationrequest message; 17% use encryption, 39% use hashing, and 17%use signing. There are 8 apps (35%) whose #sliced API columnis 0, as they do not involve any cryptographic computation inthe authentication request message, but they are included in ourtest because their earlier communications involve cryptographiccomputation. Also, we can notice that there are just a few diffedelds (ranged from 1 to 5) in the request message. Among thesediffed elds, 8 apps have one or two system elds (such astimestamp), 20 apps have user input (e.g., username), and 15 appshave cryptographically computed elds in the authenticationrequest message. Meanwhile, all of their response messages arenot identical, but 18 of them (78%) only contain system elddifferences in the response message (some other differencesinclude cookies, etc).Regarding how longAUTOFORGEtakes to test each appserver, we note that the most time consuming part is the userregistration and the manual user login process. Usually theseprocesses took two to ve minutes. The rest of the execution ofAUTOFORGEonly took less than 10 seconds each to automati-cally nish password brute-force testing under the setting ofN
-being 20.
-10
-
---- page 15 ---
-
-C. Leaked Username and Password Probing TestingThe second test we performed is the leaked data probingattack. Being able to generate valid request messages, we wouldthen be able to test whether a leaked username and passwordexists in the remote mobile service. Through a one time forgery,an attacker can easily nd a victim's username and passwordwithout performing any brute-force guessing because of thepassword reuse practice among many users [15], [21].In the past several years, there were hundreds of millions ofleaked passwords and user accounts [7], [31], and such a leakeddata probing attack can be easily launched. While the server canlimit the origin of the request message (e.g., by limiting a givenIP address with only limited number of login attempts, thoughthis is not a good practice as it might cause trouble for somecampus networks when a network proxy is used), if an attackerperforms distributed testing, such an attack is very challengingto prevent.To determine whether a service provider is vulnerable tothis leaked data probing attack, we performed a simple test. Inparticular, for ethical reasons, we did not use any of the leakeddatabase accounts, and instead we registered 19 more users in theservices we tested (in addition to the two users we registered inpassword brute-forcing testing). Starting from a single IP address,we keep mutating the the username and wrong password pairin the rst 20 request messages, with the 21st request messagecontaining a correct username and password. If the server allowsthe login, then it means the server is vulnerable to this type ofattack. Without any surprise, the server side of all the 76 appswe tested are vulnerable to this leaked data probing attack.
-D. Facebook Access Token Hijacking TestingThe third test we performed is to identify the access tokenhijacking vulnerability in the mobile service. Today, manymobile apps support users logging in to their services with theusers' Facebook, Google, Microsoft, or Twitter accounts. Forinstance, among the tested76apps, we found that36of them(47%) support Facebook Login,28(37%) support Google Login,5(7%) support Twitter Login. For a proof-of-concept, we focuson the most popular Facebook Login and demonstrate how tolaunch an access token hijacking vulnerability test against it.Typically, when a user connects to the app service with FacebookLogin, the app will obtain an access token for that particularuser and that app, and this token can provide a temporary, secureaccess to Facebook APIs such as querying user's informationstored in Facebook. However, this per-app issued access token isportable, and other apps can use the same user's Facebook tokento access the user's private information if the app service doesnot check the origin of the token. This attack has been describedas an access token misuse attack [36] or access token hijackingattack [2].To perform this test, essentially what we want is to log in toa vulnerable app server by using the Facebook access token thatis issued to other apps. Therefore, we just need to substitute anaccess token (stolen) from other apps, and test whether the appserver still allows access and returns a user's private data (again,the fundamental reason is because the app server mistakenlyuses the token as authentication [36]). While we could applyourMessage Field Inferenceto infer the elds of our interestin the authentication request messages, we notice that many
-Fig. 4. Access Token Hijacking Attack with
-miniinthebox
-App.of the elds of our interest can be inferred directly from theresponse messages sent by Facebook. For instance, as shownin Fig. 4(d), we need to recognize ve elds:timestamp,accessToken,sign,providerUserId, andemail.Among them,accessTokenandproviderUserIdcan beinferred directly from the Facebook response message, which iswell dened by the Facebook API.In particular, during the Facebook Login process, Facebookwill send a response message as shown in Fig. 4(a) fromhttps://m.facebook.com/v2.2/dialog/oauth/, and we can directlyparse this response message to get theaccess_token(because the format is dened by Facebook and every appfollows it). Next, a client app will use this token and senda request message to the Facebook server to query for moreinformation about this user; an example of this request messageis shown in Fig. 4(b). Next, Facebook will reply to the client withthe queried information such asid,email,first_name, etc.,about this user. This response message, as shown in Fig. 4(c) alsohas well-dened elds by Facebook, and we just need to parsethem to retrieve the information of our interest such as theideld. We can notice from Fig. 4(d) thatid,access_token,11
-
---- page 16 ---
-
-<script type="text/javascript">window.location.href="fbconnect:
-\/\/success#granted_scopes=email\u00252Ccontact_email\u00252Cp
-ublic_profile&denied_scopes=&
-access_token
-=
-CAAUbRqhb6ggBAEtOE6v
-cAjUGqfficRiVUj2WZALM330EBSqDIo98pFEVBgiIhVCgbHihV3qmjgDKr5eDG
-BqrhVotkGWQUbaIcXTpxAOHGPskQVLsuJ59PrysHMz6zzAZCx4GAovndOmZAb4
-EIXAlLSlvaZCGVyevED2B53FOpAtrPdlaDmh67wKjj56lO7epMtT69ZAXYCQZD
-ZD
-&expires_in=5140807";</script>GET /v2.2/me?
-access_token
-=
-CAAUbRqhb6ggBAEtOE6vcAjUGqfficRiVUj2
-WZALM330EBSqDIo98pFEVBgiIhVCgbHihV3qmjgDKr5eDGBqrhVotkGWQUbaIc
-XTpxAOHGPskQVLsuJ59PrysHMz6zzAZCx4GAovndOmZAb4EIXAlLSlvaZCGVye
-vED2B53FOpAtrPdlaDmh67wKjj56lO7epMtT69ZAXYCQZDZD
-&format=json&s
-dk=android HTTP/1.1x-newrelic-id: XAYCV1ZADgsAUFRTBQ==(a) Facebook Confirmation Messagexnewrelicid: XAYCV1ZADgsAUFRTBQ==User-Agent: FBAndroidSDK.3.20.0
-Content-Type: multipart/form-data; boundary=3i2ndDfv2rTHiSisAb
-ouNdArYfORhtTPEefj3q2f
-Accept-Language: en_US
-Host: graph.facebook.com
-Connection: Keep-Alive
-Accept-Encoding: gzip{"
-id
-":"
-109829469364819
-","
-email
-":"
-testappserver2016\u0040gmail.
-com
-","first_name":"Fndss","gender":"male","last_name":"Lndss",
-"link":"https:\/\/www.facebook.com\/app_scoped_user_id\/109829
-469364819\/","locale":"en_US","name":"Fndss Lndss","timezone":
--5,"updated_time":"2015-08-17T03:27:04+0000","verified":false}(b) Client Request Message to FacebookPOST /api/v1/socials/FACEBOOK/put?
-timestamp
-=
-2015-08-17%2001%3A
-16%3A23
-&sid=0bcd1165dbcc44718b95f35c6ee70fb9&v=1.1&client=andr
-oid&
-accessToken
-=
-CAAUbRqhb6ggBAEtOE6vcAjUGqfficRiVUj2WZALM330EB
-SqDIo98pFEVBgiIhVCgbHihV3qmjgDKr5eDGBqrhVotkGWQUbaIcXTpxAOHGPs
-kQVLsuJ59PrysHMz6zzAZCx4GAovndOmZAb4EIXAlLSlvaZCGVyevED2B53FOp(c) Facebook Response MessageAtrPdlaDmh67wKjj56lO7epMtT69ZAXYCQZDZD&app_key=A4H0P4JN&langua
-ge=en&cv=3.10.0&currency=USD&
-sign
-=
-6992022E02F34E7ED5CD6CF19795
-BD86
-&
-providerUserId
-=
-109829469364819
-&
-email
-=
-testappserver2016%40
-gmail.com
-HTTP/1.1
-x-newrelic-id: XAYCV1ZADgsAUFRTBQ==
-User-agent: LightInTheBox 3.10.0(Android; 17; 4.2.2; 480_752; 
-WIFI; generic; I9100; en)
-Host: api.miniinthebox.comConnection: Keep-Alive
-Accept-Encoding: gzip
-Content-Type: application/x-www-form-urlencoded
-Cookie: AKAMAI_FEO_TEST=B; ASRV=A_201505081100; cookie_test=pl
-ease_accept_for_session; JSESSIONID=1qfesxjfnhxas1s1sbde9uut9n
-Content-Length: 0(d) Client Authentication Re
-quest Message to App Server
-
---- page 17 ---
-
-TABLE IV. T
-HE DETAILED RESULT ON THE SECURITY TOKEN SUBSTITUTION TESTINGStep
-¶Step
-·Step
-¸Step
-¹Step
-ºApp Package Name #Input Msg #Traced API Encryption? Hashing? Signing? #DiffedField #SysField #InputField #CryptoField Access Token? ID? Email? EqualResonse? SysField Only? #Sliced API #Request Vulnerable? anews.com21447771010X7777017com.ad60.songza21857771010X777X017com.askfm279077X2011X777X717com.biggu.shopsavvy26117X72011X777X71Xcom.bukalapak.android25217772020XX77X01Xcom.careerjet.android22317771010X777X01Xcom.clearchannel.iheartradio.controller280077710107X777017com.dictionary.ashcards2727772020XXX7X017com.espn.score_center25677772020XXX77017com.expedia.bookings210907772020XX777017com.geeksoft.wps23647X720117X77X717com.imdb.mobile294777X3111X777X717com.jabong.android27197772020XXX7X017com.mediare.android28587X72011X777X81Xcom.meucarrinho23327X74211X777X71Xcom.miniinthebox.android25727X75221XXX7X71Xcom.mobilesrepublic.appygamer220477710107XX7X017com.mobilesrepublic.appygeek292977710107XX7X017com.mytnesspal.android29587772020XX77X017com.noom.walk231677720207XX77017com.picsart.studio226227774040XXX7X017com.rebtel.android24217771010X777X017com.skout.android25837771010X777X017com.slacker.radio25297772020XX777017com.somcloud.somnote27477730307XX7X01Xcom.soundcloud.android24157772020X777X017com.stuckpixelinc.funnypics22437771010X777X01Xcom.textmeinc.textme2347771010X777X017com.zillow.android.zillowmap29217772020XX77X01Xtaxi.android.client24907771010X777X017wp.wpbeta22027771010X7777017andemailhave been used in the authentication requestmessage even though the client app (our running exampleminiinthebox) uses different names for some of the elds.Fortimestampandsignelds, we will still rely on ourMessage Field Inference
-to identify them.We tested whether these76app servers in §IV-Bare vulnera-ble to this access token hijacking attack. While we have found36of them that use Facebook Login, in fact5apps were actuallybuggy in this feature (and we cannot launch the Facebook Loginfor them). Therefore, we only have31apps that were tested. Thetest is slightly different compared to our password brute force testin that we only need to register one user on Facebook (with thetestappserver2016@gmail.comaccount). After that,we need to intercept the Facebook access tokenoauthcon-rmation message as shown in Fig. 4(a), and the Facebook userinformation query message as shown in Fig. 4(c), from whichwe extract the elds of our interest such asaccess_tokenandid. Next, we send two authentication request messages tothe app server, and apply the message difng to identify otherelds. After that, we substitute theaccess_tokenandideld in the client authentication request message, and replaythe execution of the cryptographically computed elds such assign
-to test whether the server is vulnerable or not.The detailed result of the tested31apps is presented inTable IV. Most columns share the same meaning as in Table III,except we added whether the request messages use Access Token,ID, or Email from the 12th to 14th column. We can notice fromTable IV that 21 (68%) of the apps use HTTPS, and we onlyneed to send two authentication request messages. Interestingly,only 7 out of 31 (23%) of the request messages involves hashingor signing. Also, we notice not all the request messages usethe access token, and some of them use the ID returned fromFacebook for the authentication. Meanwhile, all the responsemessages for the same user's login are not identical, but themajor difference still comes from the timestamp eld. Finally,we only send one request message to the server and we only nd9 out of 31 (29%) apps that are vulnerable to the Facebook tokenhijacking attack.
-V. D
-ISCUSSIONS
-A. Security ImplicationsAUTOFORGEhas demonstrated that lack of security checks atthe server side can lead to several severe attacks such as passwordbrute forcing, leaked username and password probing, and accesstoken hijacking. This is a very serious problem consideringthat a large volume of popular apps, including CNN, Expedia,iHeartRadio, and Walmart as conrmed in our experiment arevulnerable to these attacks. While it is true that an adversarycannot sniff the password because of HTTPS, an attacker canlaunch a malicious login attack in an owned device to install self-signed certicates and automatically forge the request messageseven though there are cryptographic constraints. As such, wewould like to raise awareness for app developers: only usingHTTPS cannot defeat password brute-forcing, and neither canhashing and (one-way) signing of client request messages.Therefore, we need to examine the techniques that can beused by app developers to mitigate or prevent the automaticforgery of user request messages, especially in the scenario ofuser authentication, and they can be summarized as follows:
-12
-
---- page 18 ---
-
-
-Limiting the number of login attempts. One sim-ple solution app developers can adopt is to keep alogin attempt state at the server side and limit thenumber of login attempts within a certain time win-dow. We only found 11 out of 76 apps (14%), suchascom.imdb.mobile, that followed this approach.While this solution cannot defeat leaked username andpassword probing attacks, it can defeat at least userpassword brute forcing. Meanwhile, unlike CAPTCHAand two factor-authentication discussed below, thisdefense will not change any user's experience.
-
-Using CAPTCHA. Automatic data forgery is not a newattack, and there are already solutions to mitigate this.One way that has been widely used on the desktop isthe CAPTCHA [34]. A CAPTCHA is a program thatprotects websites against automated resource abusingor login attempts. However, we have not seen muchusage in mobile apps. We believe one reason is thatCAPTCHA might hurt user experience. However, aswe have demonstrated in this paper, to really slowdown attackers, CAPTCHA is a viable approach, thoughCAPTCHA can also be broken [33].
-
-Two-factor authentication. Another intuitive way toslow down the forgery of user request messages (includ-ing the authentication) is to adopt two-factor authen-tication [38]. Similar to CAPTCHA, it will certainlyhurt user experience, but it is unlikely for attackers tosuccessfully compromise two channels.
-
-Two-way authentication. The most effective way toprevent client side data forgery is to authenticate theclient as well using a two-way (i.e., mutual) authentica-tion [16]. Two-way SSL is one such an example, and ituses digital signatures to authenticate both the server andthe client with their corresponding certicates. However,it requires an extra effort of client certicate exchangeand imposes additional complexity and cost. Therefore,we have not observed any apps that use this technique.
-B. Limitations and Future WorkWhile we have made a rst step demonstrating the feasibilityof automatic forgery of cryptographically consistent messagesto identify security vulnerabilities in mobile services, there are anumber of avenues for future improvement. In the following, wediscuss the limitations ofAUTOFORGEand outline future work.First,AUTOFORGEcurrently only focuses on HTTP/HTTPSprotocols. There are certainly apps that use other protocols suchas proprietary non-plaintext protocols. While our global optimalsequence alignment algorithm (i.e., the Needleman-Wunschalgorithm [27]) might be able to align the two diffed messagesto identify the diffed elds for non-plaintext protocols, we havenot evaluated it yet. Our next step is to test howAUTOFORGEwould perform with non-plaintext protocols.Second,AUTOFORGEonly performs lightweight API leveltracing of app's execution, and assumes user input (such as theentered username) would not be transformed (recall we usecontent patching to identify the direct user inputs). However, auser entered input could be translated into other forms. To reallytrack the possible transformations of the user input, a better wayis to perform ne-grained instruction level data ow tracking.Therefore, we plan to integrate a taint analysis engine such asTaintDroid [19] intoAUTOFORGEto track the user's input suchthat we can still recognize the input in the request messages.Third,AUTOFORGEcurrently only deals with the crypto-graphic APIs listed in Table I. If an app uses other APIs ornative code,AUTOFORGEhas to include them. We plan toexamine more apps and enrich the list with more APIs if thereare any. Meanwhile, if an app uses its own private cryptographicfunctions,AUTOFORGEhas to perform additional analysis (suchas those mentioned in Dispatcher [9], Aligot [11], or the methodsdescribed by Grobert et al. [20]) to recognize these functions.Fourth, our security test might have false positives becauseof the limited number of tests we performed. For instance, anapp service could block the user after the(
-N
-+ 1)-th failurewithout us detecting it (because of our threshold of maximumNguesses), and we would have to enlargeNto prune this. Notethat we set the parameterNto small numbers just for ethicalconsiderations, and a real attack would not be constrained bythis.Finally,AUTOFORGEwill enable many other security tests,such as SQL injection by manipulating the correspondingrequest elds (e.g., we can append certain data to the username).In fact, we did nd one app that is vulnerable to SQL injectionamong the76apps. We leave the large scale systematic studyof this type of vulnerability to our future work.
-C. EthicsThe goal of designingAUTOFORGEis to apply it to nd vul-nerabilities at the server side. In this case, we have to inevitablysend unnecessary packets to the service providers. We do takeethics into consideration by minimizing the number of messagessent to the server (recall the maximum number of messages wesent isN
-+ 1). Also, we have made responsible disclosure andnotied all the vulnerable app vendors. In fact, shortly after wereported the vulnerabilities, three vendors patched their servicesby only allowing a limited number of failed logins. For instance,the iHeartRadio app has limited the maximum number of loginattempts to 15, the ESPN score center app limits it to 3, and theSlacker Radio app limits it to 6. We believe many other vendorswill also patch their services very soon.
-VI. R
-ELATED
-W
-ORKAt a high level, our work is related to protocol reverseengineering, application dialogue replay, password brute forcing,and mobile app vulnerability discovery. In this section, we reviewthese works and compare A
-UTO
-F
-ORGE
-with them.
-Protocol Reverse Engineering.There is a large body of re-search focusing on protocol reverse engineering. Earlier efforts(e.g., [8], [12], [24]) inferred the protocol format from networktraces. Protocol informatics [8] used the Needleman-Wunschalgorithm [27] to align the protocol messages and infer the pro-tocol format. Discoverer [12] proposed tokenization, recursiveclustering, and merging techniques to handle both text and binaryprotocols from network traces.Instead of only using the network traces, the other directionof protocol reverse engineering is to use dynamic binary analysis13
-
---- page 19 ---
-
-(taint analysis in particular) to reveal the protocol formats. Anumber of systems or tools (e.g., [9], [10], [14], [25], [39]) havebeen proposed. Among them, Polyglot [10] made the rst attemptof using binary code analysis to infer the protocol formats,Tupni [14] recovers more ne-grained protocol formats, andDispatcher [9] focused on encrypted protocol message reverseengineering. We plan to apply the techniques proposed by theseefforts to recover the Android apps' protocol in a more generalway such as also inferring binary data based protocols.
-Application Dialogue Replay.AUTOFORGEemploys crypto-graphic function replay to generate the authenticated messages,which is similar to the existing application dialogue replaysystems. Similar to protocol reverse engineering, there are alsotwo categories of techniques: purely network traces based, andbinary code analysis based.Similar to Protocol Informatics [8], RolePlayer [13] alignsthe byte-wise sequences of the protocol messages from networktraces, and then identies and mutates some specic elds forthe application dialogue replay. By leveraging binary codeanalysis, Replayer [28] enables more automatic replay. WhileAUTOFORGEappears to be quite similar to these replay systems,none of the existing efforts focused on cryptographic protocolelds mutation (RolePlayer assumed there is no such eld in theprotocol message, and Replayer set cryptographic elds in itsfuture work), which is the exact focus of A
-UTO
-F
-ORGE
-.
-Password Brute Forcing.Password based authentication hasbeen the de facto standard to protect access to sensitive in-formation, with no exceptions to mobile apps and services.It has always been a major focus for attackers over years,and there are many efcient and practical ways of brute forcecracking a user's password. For instance, assuming access to thepassword le, attackers can use a dictionary based attack to breakuser passwords. Recently, there were also signicant efforts tomake dictionary attacks smarter by employing Markov models(e.g., [26]), probabilistic context free grammars (e.g., [37]), andhistory based guessing (e.g., [40]). There are also approachesto make the password brute forcing much faster. Using rainbowtables is one such approach, which consists of massive tablesof pre-calculated hashes, trading increased memory storage forreduced computation time [29]. WhileAUTOFORGEdoes focuson password brute forcing, it shows the new context of bruteforcing user passwords for mobile apps with the techniques ofautomatically generating mutated passwords in the authenticatedrequest message.
-Mobile App Vulnerability Discovery.In the past several years,a considerable amount of efforts have focused on discoveringvarious vulnerabilities in mobile apps. For instance, Taint-Droid [18] detects privacy leakage vulnerabilities by trackinginformation ows. PiOS [17] uses static analysis to detect suchleaks in iOS apps. CHEX [23] detects component hajackingvulnerabilities in Android apps by using a data-ow basedstatic analysis approach. SMV-Hunter [32] detects man-in-the-middle SSL/TLS vulnerabilities with a hybrid static and dynamicanalysis. However, few efforts have been focusing on identifyingthe vulnerabilities in an app's server side.AUTOFORGEmadesuch a step in this direction and demonstrated that there are alsoserious security vulnerabilities such as password brute forcingif app server developers do not perform the necessary securitychecks.
-VII. C
-ONCLUSIONWe have presentedAUTOFORGE, a tool that canautomatically forge cryptographically consistent messages fromthe client side to test whether the server side of an app containssecurity vulnerabilities such as brute-forcing, leaked usernameand password probing, and access token hijacking. To enableour security test, we have developed a set of techniques toautomatically infer protocol elds, label response messages,replay cryptographic function execution, and regenerate requestmessages. Our experimental results show that among the76tested popular apps (each with millions of installs), 65 of theirservers (86%) are vulnerable to password brute forcing attacks,all of them (100%) are vulnerable to leaked username andpassword probing attacks, and 9 of them (12%) are vulnerable toFacebook access token hijacking attacks. We have performed re-sponsible disclosure and notied each vulnerable app vendor, andthree of the service providers, including ESPN and iHeartRadio,have patched their services shortly after our notication.
-A
-CKNOWLEDGMENTWe are grateful to our shepherd Christopher Kruegel, and theanonymous reviewers for their extremely helpful feedback. Wealso would like to thank Erick Bauman and Murat Kantarcioglufor proof-reading of the paper. This work was partially supportedby The Air Force Ofce of Scientic Research (AFOSR) underAward No. FA-9550-12-1-0077. Any opinions, ndings, conclu-sions, or recommendations expressed are those of the authorsand not necessarily of the AFOSR.
-R
-EFERENCES
-[1] “Burp suite,” https://portswigger.net/burp/.
-[2]“Facebook token hijacking,” https://developers.facebook.com/docs/facebook-login/security/#tokenhijacking.
-[3] “Genymotion,” https://www.genymotion.com/.
-[4]“Statistics and facts about app stores,”http://www.statista.com/topics/1729/app-stores/.
-[5]“Ui/application exerciser monkey,” https://developer.android.com/tools/help/monkey.html.
-[6] “Xposed module repository,” http://repo.xposed.info/.
-[7]“Hackers released the passwords of over 70 million chinese internetaccounts,” https://dazzlepod.com/rootkit/, 2011.
-[8]M. Beddoe, “The protocol informatics project,” http://www.4tphi.net/~awalters/PI/PI.html.
-[9]J. Caballero, P. Poosankam, C. Kreibich, and D. Song, “Dispatcher:Enabling active botnet inltration using automatic protocol reverse-engineering,” in
-CCS
-, Chicago, Illinois, USA, 2009, pp. 621–634.
-[10]J. Caballero and D. Song, “Polyglot: Automatic extraction of protocolformat using dynamic binary analysis,” inCCS, Alexandria, Virginia,USA, 2007, pp. 317–329.
-[11]J. Calvet, J. M. Fernandez, and J.-Y. Marion, “Aligot: cryptographicfunction identication in obfuscated binary programs,” inCCS. ACM,2012, pp. 169–182.
-[12]W. Cui, J. Kannan, and H. J. Wang, “Discoverer: Automatic protocolreverse engineering from network traces,” inUSENIX Security Symposium,Boston, MA, August 2007.
-[13]W. Cui, V. Paxson, N. Weaver, and R. H. Katz, “Protocol-independentadaptive replay of application dialog,” inNDSS, San Diego, CA, February2006.
-14
-
---- page 20 ---
-
-[14]W. Cui, M. Peinado, K. Chen, H. J. Wang, and L. Irun-Briz, “Tupni:Automatic reverse engineering of input formats,” inCCS, Alexandria,Virginia, USA, October 2008, pp. 391–402.
-[15]A. Das, J. Bonneau, M. Caesar, N. Borisov, and X. Wang, “The TangledWeb of Password Reuse,” in
-NDSS
-, February 2014.
-[16]W. Dife, P. C. Van Oorschot, and M. J. Wiener, “Authentication andauthenticated key exchanges,”Designs, Codes and cryptography, vol. 2,no. 2, pp. 107–125, 1992.
-[17]M. Egele, C. Kruegel, E. Kirda, and G. Vigna, “Pios: Detecting privacyleaks in ios applications,” in
-NDSS
-, 2011.
-[18]W. Enck, P. Gilbert, B. Chun, L. Cox, J. Jung, P. McDaniel, and A. Sheth,“TaintDroid: an information-ow tracking system for realtime privacymonitoring on smartphones,” in
-OSDI
-, 2010.
-[19]W. Enck, P. Gilbert, S. Han, V. Tendulkar, B.-G. Chun, L. P. Cox,J. Jung, P. McDaniel, and A. N. Sheth, “Taintdroid: an information-owtracking system for realtime privacy monitoring on smartphones,”ACMTransactions on Computer Systems (TOCS)
-, vol. 32, no. 2, p. 5, 2014.
-[20]F. Gröbert, C. Willems, and T. Holz, “Automated identication of crypto-graphic primitives in binary programs.” inRAID, vol. 6961. Springer,2011, pp. 41–60.
-[21] B. Ives, K. R. Walsh, and H. Schneider, “The domino effect of passwordreuse,”Commun. ACM, vol. 47, no. 4, pp. 75–78, Apr. 2004. [Online].Available: http://doi.acm.org/10.1145/975817.975820
-[22]Z. Lin, X. Jiang, D. Xu, and X. Zhang, “Automatic protocol format reverseengineering through context-aware monitored execution,” inNDSS, SanDiego, CA, February 2008.
-[23]L. Lu, Z. Li, Z. Wu, W. Lee, and G. Jiang, “Chex: statically vetting androidapps for component hijacking vulnerabilities,” inCCS. ACM, 2012, pp.229–240.
-[24]J. Ma, K. Levchenko, C. Kreibich, S. Savage, and G. M. Voelker,“Unexpected means of protocol inference,” inIMC. Rio de Janeriro,Brazil: ACM Press, 2006, pp. 313–326.
-[25]P. Milani Comparetti, G. Wondracek, C. Kruegel, and E. Kirda, “Prospex:Protocol Specication Extraction,” inIEEE Symposium on Security &Privacy
-, Oakland, CA, 2009, pp. 110–125.
-[26]A. Narayanan and V. Shmatikov, “Fast dictionary attacks on passwordsusing time-space tradeoff,” in
-CCS
-, ACM, 2005, pp. 364–372
-[27]S. B. Needleman and C. D. Wunsch, “A general method applicable tothe search for similarities in the amino acid sequence of two proteins,”Journal of molecular biology
-, vol. 48, no. 3, pp. 443–453, 1970.
-[28]J. Newsome, D. Brumley, J. Franklin, and D. Song, “Replayer: Automaticprotocol replay by binary analysis,” in
-CCS
-, 2006.
-[29]P. Oechslin, “Making a faster cryptanalytic time-memory trade-off,” inAdvances in Cryptology-CRYPTO 2003
-. Springer, 2003, pp. 617–630.
-[30]B. Schneier, “Cryptography: The importance of not being different,”Computer
-, vol. 32, no. 3, pp. 108–109,112, Mar. 1999.
-[31]M. Siegler, “One of the 32 million with a rockyou account? you may wantto change all your passwords. like now,” http://techcrunch.com/2009/12/14/rockyou-hacked/, 2009.
-[32]D. Sounthiraraj, J. Sahs, G. Greenwood, Z. Lin, and L. Khan, “Smv-hunter: Large scale, automated detection of ssl/tls man-in-the-middlevulnerabilities in android apps,” inNDSS, San Diego, CA, February 2014.[33]J. Tam, J. Simsa, S. Hyde, and L. V. Ahn, “Breaking audio captchas,” inNIPS
-, 2008, pp. 1625–1632.
-[34]L. Von Ahn, M. Blum, N. J. Hopper, and J. Langford, “Captcha: Usinghard ai problems for security,” inAdvances in Cryptology — EUROCRYPT2003
-. Springer, 2003, pp. 294–311.
-[35]R. A. Wagner and M. J. Fischer, “The string-to-string correction problem,”Journal of the ACM (JACM)
-, vol. 21, no. 1, pp. 168–173, 1974.
-[36]R. Wang, Y. Zhou, S. Chen, S. Qadeer, D. Evans, and Y. Gurevich, “Ex-plicating sdks: Uncovering assumptions underlying secure authenticationand authorization.” in
-USENIX Security
-, 2013, pp. 399–314.
-[37]M. Weir, S. Aggarwal, B. d. Medeiros, and B. Glodek, “Passwordcracking using probabilistic context-free grammars,” inSP, 2009, pp.391–405.
-[38]K. P. Weiss, “Method and apparatus for positively identifying an individ-ual,” Jan. 19 1988, uS Patent 4,720,860.
-[39]G. Wondracek, P. Milani, C. Kruegel, and E. Kirda, “Automatic networkprotocol analysis,” in
-NDSS
-, San Diego, CA, February 2008.
-[40]Y. Zhang, F. Monrose, and M. K. Reiter, “The security of modernpassword expiration: An algorithmic framework and empirical analysis,”in
-CCS
-, ACM, 2010, pp. 176–186.
-A
-PPENDIXIn §IV-B, we presented the detailed experimental resultsfor 23 app servers, and these apps are selected based on theircategories. The detailed app classication, their version, andprotocol information is presented in Table V. The result forthe 53 other app servers is presented in Table VI. Note thatone of the app vendors sent us special request to anonymizetheir name, after we made the responsible disclosure to all thevulnerable app vendors. The name of this app package is denotedanonymized_due_to_special_request in both Table V and VI.We can see from Table V that these 76 apps fall into 21 categoriesranging from Books&Reference to Weather. Also, most apps useHTTPS protocol (54 out 76). Regarding Table VI, as its columnsshare the same format as Table III and we have explained themin greater detail in §IV-B, detailed explanation of these results iselided for brevity.
-15
-
---- page 21 ---
-
-TABLE V. T
-HE CATEGORY
-,
-INSTALLS
-,
-APP NAME
-,
-VERSION
-,
-AND PROTOCOL INFORMATION FOR THE TESTED
-76
-APPS
-.Category#installApp Package NameVersionProtocolBooks & Reference100,000,000com.sirma.mobile.bible.android6.0.3HTTPSBooks & Reference50,000,000com.kobobooks.android6.3.13738HTTPSBooks & Reference5,000,000com.overdrive.mobile.android.mediaconsole3.4.0HTTPSBooks & Reference5,000,000wp.wpbeta6.1.0.8HTTPSBusiness10,000,000com.sahibinden2.4.0HTTPSBusiness5,000,000com.timesgroup.magicbricks6.1.2HTTPBusiness5,000,000naukriApp.appModules.login6.3.1HTTPSBusiness1,000,000com.careerjet.android5.1.3HTTPCasual500,000,000me.pou.app1.4.67HTTPComics5,000,000jp.ebookjapan.ebireader2.3.79.0HTTPSCommunication50,000,000com.browan.freeppmobile.androidFIAD.BRO.3.7.0.445HTTPCommunication50,000,000com.mx.browser4.5.0.2000HTTPSCommunication50,000,000com.textmeinc.textme2.8.8HTTPSCommunication50,000,000ru.mail.mailapp3.1.2.11965HTTPSCommunication10,000,000com.my.mail3.1.3.12222HTTPSCommunication5,000,000com.mx.browser.tablet4.3.5.2000HTTPSCommunication5,000,000com.rebtel.android3.11.0HTTPSEducation5,000,000com.dictionary.ashcards1HTTPEntertainment100,000,000com.imdb.mobile5.5.6.105561200HTTPSEntertainment50,000,000com.cgv.android.movieapp4.0.7HTTPSEntertainment50,000,000com.dailymotion.dailymotion4760HTTPSEntertainment10,000,000com.viewster.androidapp4.6.3HTTPSEntertainment5,000,000com.gamey.android.gamecenter3.49HTTPSEntertainment5,000,000com.stuckpixelinc.funnypics3.3.1HTTPFinance5,000,000com.netgate8.22HTTPSHealth & Fitness50,000,000com.fatsecret.android4.1.2.2HTTPHealth & Fitness50,000,000com.mytnesspal.android4.6.1HTTPSHealth & Fitness10,000,000com.noom.walk1.1.3HTTPLifestyle50,000,000com.cookpad.android.activities5.2.1.0HTTPSLifestyle50,000,000com.zillow.android.zillowmap6.6.8.4011HTTPSLifestyle10,000,000com.dominospizza2.7.0HTTPSLifestyle5,000,000cn.etouch.ecalendar26.1.5HTTPSMedia & Video10,000,000com.youku.phone4.7.1HTTPMedia & Video5,000,000com.qiyi.video.market6.5.1HTTPSMedia & Video5,000,000com.sohu.sohuvideo4.3.5HTTPMedia & Video1,000,000tv.danmaku.bili4.2.3HTTPSMedical5,000,000com.aranoah.healthkart.plus7.1.6HTTPMedical5,000,000com.sigmaphone.topmedfree5.8.1HTTPSMedical5,000,000leay.android2.5.0HTTPMusic & Audio100,000,000com.slacker.radio6.0.1816HTTPSMusic & Audio100,000,000com.soundcloud.android15.08.14-releaseHTTPSMusic & Audio50,000,000com.clearchannel.iheartradio.controller5.8.0HTTPSMusic & Audio10,000,000com.ad60.songza5.2.0.0HTTPSMusic & Audio10,000,000com.kugou.android7.6.1HTTPMusic & Audio10,000,000anonymized_due_to_special_request-HTTPSNews & Magazines50,000,000com.cnn.mobile.android.phone2.8.2HTTPSNews & Magazines10,000,000com.ideashower.readitlater.pro5.8.5HTTPSNews & Magazines5,000,000anews.com2.7.166HTTPNews & Magazines5,000,000com.mobilesrepublic.appygamer5.1.4HTTPNews & Magazines5,000,000com.mobilesrepublic.appygeek5.1.3HTTPPhotography500,000,000com.picsart.studio5.6.3HTTPSProductivity50,000,000com.autodesk.autocadws3.1HTTPSProductivity50,000,000com.ecareme.asuswebstorage2.2.7.8664HTTPSProductivity5,000,000com.mediare.android3.2.3HTTPSProductivity5,000,000com.somcloud.somnote2.2.1HTTPSProductivity1,000,000com.geeksoft.wps3.0.7HTTPShopping50,000,000com.biggu.shopsavvy9.3.3HTTPSShopping50,000,000com.walmart.android2.8.2HTTPSShopping10,000,000com.jabong.android2.4.1HTTPSShopping5,000,000com.bukalapak.android3.0.1HTTPSShopping5,000,000com.meucarrinho5.6.1HTTPShopping5,000,000com.miniinthebox.android3.10.0HTTPSocial100,000,000com.tumblr3.9.0.50HTTPSSocial50,000,000com.askfm2.2.1HTTPSSocial50,000,000com.chatous.pointblank3.5.1HTTPSSocial50,000,000com.skout.android4.14.4HTTPSocial50,000,000com.unearby.sayhi4.39HTTPSocial10,000,000com.match.android.matchmobile3.2.0HTTPSSocial5,000,000com.tenthbit.juliet1.8.0HTTPSSports50,000,000com.espn.score_center4.4.1.1HTTPSTools10,000,000com.sohu.inputmethod.sogou7.6HTTPSTools5,000,000xcxin.fehd2.3.0HTTPSTransportation5,000,000taxi.android.client5.4.5HTTPSTravel & Local50,000,000com.expedia.bookings6.3.1HTTPSTravel & Local5,000,000com.viamichelin.android.michelintrafc4.3.0.4HTTPWeather1,000,000disasterAlert.PDC3.2HTTPS16
-
---- page 22 ---
-
-TABLE VI. T
-HE DETAILED PASSWORD BRUTE
--
-FORCING TESTING RESULT FOR THE OTHER
-53
-APP SERVERS
-.Step
-¶Step
-·Step
-¸Step
-¹Step
-ºCategoryApp Package Name #Input Msg #Traced API Encryption? Hashing? Signing? #DiffedField #SysField #InputField #CryptoField EqualResonse? SysField Only? #Sliced API #Request Vulnerable? Books & Referencecom.kobobooks.android4240777202077021XBooks & Referencecom.overdrive.mobile.android.mediaconsole4448777202077021XBooks & Referencewp.wpbeta4333777202077021XBusinesscom.careerjet.android428X7721017X921XBusinesscom.timesgroup.magicbricks48977X20027X2021XBusinessnaukriApp.appModules.login411577720207X021XCommunicationcom.mx.browser41957X720117X721XCommunicationcom.mx.browser.tablet41787X720117X721XCommunicationcom.my.mail43407X730217X721XCommunicationcom.rebtel.android42087X752217X8217Communicationcom.textmeinc.textme42417X720117X721XCommunicationru.mail.mailapp4837X730217X721XEntertainmentcom.cgv.android.movieapp4677X730127X1821XEntertainmentcom.dailymotion.dailymotion43477X41217X1221XEntertainmentcom.gamey.android.gamecenter48677X41217X721XEntertainmentcom.stuckpixelinc.funnypics4317X720117X721XEntertainmentcom.viewster.androidapp4626777202077021XHealth & Fitnesscom.mytnesspal.android42697X720117X721XHealth & Fitnesscom.noom.walk4487X73021771821XLifestylecn.etouch.ecalendar241232X7710017X1121XLifestylecom.dominospizza426577720207X021XLifestylecom.zillow.android.zillowmap424277720207X021XMedia & Videocom.qiyi.video.market411697X741217X1837Media & Videocom.sohu.sohuvideo4727X720117X7107Media & Videotv.danmaku.bili41294XX730127X1537Medicalcom.sigmaphone.topmedfree449X7710017X1157Medicalleay.android43877720207X021XMusic & Audiocom.ad60.songza4132777202077021XMusic & Audiocom.clearchannel.iheartradio.controller4123777720207X021XMusic & Audiocom.kugou.android4637XX741127X2221XMusic & Audiocom.soundcloud.android46077720207X021XMusic & Audioanonymized_due_to_special_request4179277X52217X721XNews & Magazinesanews.com419277720207X021XNews & Magazinescom.ideashower.readitlater.pro423977720207X021XNews & Magazinescom.mobilesrepublic.appygamer427677720207X021XNews & Magazinescom.mobilesrepublic.appygeek488377720207X021XProductivitycom.ecareme.asuswebstorage4857XX63127X1721XProductivitycom.geeksoft.wps4257X730217X721XProductivitycom.mediare.android42017X730217X8127Productivitycom.somcloud.somnote47437XX52127X1421XShoppingcom.bukalapak.android4430X7710017X121XShoppingcom.jabong.android478077720207X021XShoppingcom.meucarrinho41387X752217X721XShoppingcom.miniinthebox.android4228XX741127X1921XShoppingcom.walmart.android4343777202077021XSocialcom.askfm47577X30127X721XSocialcom.chatous.pointblank44377710007X121XSocialcom.match.android.matchmobile430877720207X021XSocialcom.skout.android41157X730217X737Socialcom.tenthbit.juliet42477720207X021XSocialcom.unearby.sayhi4607X720117X721XToolsxcxin.fehd473X7720117X721XTravel & Localcom.viamichelin.android.michelintrafc43377730307X021X17
-
---- page 23 ---
-
-ïÊwÂoýuegþíâ¼hÞEHwþ™ÝòþäD°¤Q÷<ovðWüÚ#>|^ïäíY:€»ž%–Ph,^úÛìÊäm�ø°n³F‡—]Ô�ú^e†Uìk—�xÑÆí°Ï;‡ýˆbñþµ=²7§PŸœJ3¸í®{ž�Ëõu·û.ˆï{y½³£¨ZxIÿšLv;@w„@k~¯rfF»T]ÐfåZ‰:_›{7q
+                                                                                      in AUTO F ORGE are automatically executed.
+Problem Statement. After describing the challenges and our
+                                                                                •     Step ·. Once the app gets loaded and the input is fed
+observations, next we would like to formally define our problem.
+                                                                                      to the app, our first component, API Hooking, will in-
+It can be summarized as follows: Given an app and traced
+                                                                                      terpose the white-listed cryptographic APIs. Whenever
+input messages, the goal of AUTO F ORGE is to automatically
+                                                                                      one of the APIs is executed, we retrieve its input and
+generate a new input message with mutated fields that satisfy
+                                                                                      output of this API from its arguments and return values
+the cryptographic constraints of the messages in an efficient and
+                                                                                      based on the specification of the API. Such information
+black-box manner.
+                                                                                      is saved in a trace log. Later we will traverse the log file
+                                                                                      to generate the new request message in Step º. Mean-
+Scope and Assumptions. In this paper, we focus on testing the                         while, the execution of the app inside our emulator will
+mobile services of Android apps. As to-be-demonstrated, we                            automatically generate a request message, which will be
+only need the knowledge of publicly available cryptographic                           fed to our second component, Message Field Inference,
+APIs (e.g., the parameters and return values) as well as the                          and the copy of this message will also be sent to the
+capability of hooking these functions, and we assume these                            server at Step ¸ or right after the execution of Step ·.
+information is available. In addition, since our goal is to generate
+valid client side request messages, we need to reverse engineer                 •     Step ¸. By aligning the two request messages and
+the protocol fields. In this paper, we focus on the apps that use                     diffing each message field, our Message Field Inference
+text-based protocols including HTTP/HTTPS because we can                              directly identifies the diffed message fields. Then it
+directly identify the protocol fields based on text differences.
+                                                                              1 Strictly speaking, we need four inputs for the password brute-force testing.
+  Interestingly, many mobile apps in Android do use                         For space reasons we do not show them completely in Fig. 2. We will explain
+HTTP/HTTPS protocols, which makes it trivial in identifying                 why we need four inputs in §III-C.
+
+
+                                                                        4
+          measures the similarity of the values between each                                •    Encryption. To encrypt a message, an Android
+          diffed field. Based on the degree of differences, it                                   app first needs to initialize a cryptographic
+          identifies the cryptographically computed fields. A                                    key class (e.g., by calling new DesKeySpec
+          few other fields can also be inferred based on the                                     and          SecretKeyFactory.getInstance
+          pattern of the string (as we focus on text protocols),                                 to generate the DES keys), and then it calls
+          e.g. the timestamp field, which has a certain string                                   cipher.getInstance with parameters such
+          inside such as the date of the test. The request message                               as “DES/CBC/PKCS5Padding” to get a cipher
+          generated at Step · is sent to the server if it has not                                instance, and then init this cipher with the
+          been sent yet. Note that the execution of Step ¸ can                                   necessary parameters (e.g., the initialized keys). Then,
+          be performed offline, and the system does not need to                                  app developers have to give the input message (using a
+          wait until this step is finished to execute Step ¹.                                    byte array) to this cipher for encryption. There are
+                                                                                                 two ways to do that: the first is to call API doFinal to
+    •     Step ¹. The server sends a response message to the                                     pass the input and get output as cipher text; the second
+          client, which is intercepted by our third component,                                   way is to call API update to pass the input, and then
+          Response Message Labeling. Based on the type                                           call API doFinal to produce the cipher text.
+          of the message (e.g., the correct password, or a
+          wrong password) we sent to the server, it assigns a                               •    Hashing. Obtaining a digest of a message (without us-
+          corresponding label (or tag) to the response message                                   ing any keys) is achieved by using MessageDigest
+          (e.g., a success tag or a failure tag). We will                                        (e.g., md5, or sha1). In this case, the app calls
+          also compare the tag for all later response messages                                   MessageDigest.getInstance with string “MD5”
+          (generated after Step ») to decide whether we should                                   as argument to get a MD5 MessageDigest instance, and
+          continue executing Step » based on the nature of the                                   then it calls the update method to add the message
+          security testing we perform (e.g., repeatedly guessing                                 that needs to be digested. Finally, it calls digest to
+          a password until we get a success response).                                           produce the desired hashing result.
+
+    •     Step º. Having assigned the tag for the two                                       •    Signing. To sign a message (ensuring both integrity
+          initial response messages, and meanwhile having                                        and authenticity), a message authentication code (i.e.,
+          collected the input and output traces for each of the                                  Mac) is used. Similar to encryption, the app also has to
+          executed cryptographic APIs, our last component,                                       generate the corresponding keys first (e.g., by calling
+          Request Message Forgery, re-executes these executed                                    new SecretKeySpec with string “HmacSHA1”),
+          cryptographic functions with the mutated input and                                     get a Mac instance by calling Mac.getInstance
+          finally generates the valid request message by replacing                               with a string (e.g., “HmacSHA1”), and then initialize the
+          the corresponding field in the initial request message.                                Mac with the generated key. Next, it calls doFinal,
+                                                                                                 which takes the to be hashed messages as input and
+    •     Step ». The newly generated request message is sent                                    finally produces the hashed messages as output. It could
+          to the server, and its response will be intercepted by our                             also first call update to add the message, and then call
+          MitM proxy. Then we continue the execution to Step ¹.                                  doFinal with an empty argument.
+
+                       III.    D ETAILED D ESIGN                                            Therefore, we hook each of the APIs (the handler and the
+                                                                                        function name) described in Table I, and log their arguments
+   In this section, we present the detailed design of the four                          and return values. We log the arguments of these APIs right
+key components of AUTO F ORGE, based on the order of their                              before their execution, and their return values as well as updated
+execution.                                                                              arguments if there are any right after their execution. A sample
+                                                                                        of our log is presented in Fig. 3.
+A. API Hooking
+                                                                                        B. Message Field Inference
+     The first component of AUTO F ORGE hooks the well-defined
+cryptographic functions to intercept their arguments and return                             Next, we need to identify the protocol fields of our interest
+values such that we can replay their execution to produce the                           in the request message. We divide this problem into two
+desired cryptographically consistent fields. The Android SDK                            sub-problems: (1) message field identification that splits the
+provides a set of cryptographic Java APIs. Based on their                               messages into a set of fields, and (2) field semantic inference
+specification as well as our manual analysis with a number of                           that infers the meaning of the identified fields. The outcome of
+apps, we have obtained 61 commonly used cryptographic APIs.                             this step is the fields we aim to mutate, such as pwd and sign
+Their prototypes are presented in Table I. Most apps2 directly use                      in our running example.
+them to encrypt input data (with the crypto.cipher class),
+generate a hash (with the security.MessageDigest class)
+or sign the input by generating a message authentication code                           1) Message Field Identification. Since we only need to
+(i.e., with the crypto.Mac class). Based on our manual                                  substitute a few fields in our security testing, there is no need to
+analysis with a number of apps, we find these APIs are usually                          identify all protocol fields. In addition, since we control the input
+used in the following way:                                                              to the testing app, we can observe the field differences in the
+                                                                                        request messages if we feed different inputs to the app. Based
+   2 There are apps that use native code and we need to hook the native code APIs       on these two insights, we can identify the fields that get changed
+in this case.                                                                           by aligning the two request messages that are generated with
+
+                                                                                    5
+                    TABLE I.      T HE LIST OF THE HOOKED CRYPTOGRAPHIC API S , AND ITS PARAMETERS AND RETURN VALUES .
+      Return Value         API name                                                Parameters
+      SecretKeySpec        javax.crypto.spec.SecretKeySpec.SecretKeySpec<init>     (byte[] key, String algorithm)
+      SecretKeySpec        javax.crypto.spec.SecretKeySpec.SecretKeySpec<init>     (byte[] key, int offset, int len, String algorithm)
+      DESedeKeySpec        javax.crypto.spec.DESedeKeySpec.DESedeKeySpec<init>     (byte[] key)
+      DESedeKeySpec        javax.crypto.spec.DESedeKeySpec.DESedeKeySpec<init>     (byte[] key, int offset)
+      DESKeySpec           javax.crypto.spec.DESKeySpec.DESKeySpec<init>           (byte[] key)
+      DESKeySpec           javax.crypto.spec.DESKeySpec.DESKeySpec<init>           (byte[] key, int offset)
+      X509EncodedKeySpec   java.security.spec.X509EncodedKeySpec<init>             (byte[])
+      SecretKeyFactory     javax.crypto.SecretKeyFactory.getInstance               (String algorithm)
+      SecretKeyFactory     javax.crypto.SecretKeyFactory.getInstance               (String algorithm, String provider)
+      SecretKeyFactory     javax.crypto.SecretKeyFactory.getInstance               (String algorithm, Provider provider)
+      SecretKey            javax.crypto.SecretKeyFactory.generateSecret            (KeySpec keySpec)
+      IvParameterSpec      javax.crypto.spec.IvParameterSpec.IvParameterSpec       (byte[] iv)
+      KeyFactory           java.security.KeyFactory.getInstance                    (String algorithm)
+      KeyFactory           java.security.KeyFactory.getInstance                    (String algorithm, String provider)
+      KeyFactory           java.security.KeyFactory.getInstance                    (String algorithm, Provider provider)
+      PublicKey            java.security.KeyFactory.generatePublic                 (KeySpec keySpec)
+      Mac                  javax.crypto.Mac.getInstance                            (String algorithm)
+      Mac                  javax.crypto.Mac.getInstance                            (String algorithm, String provider)
+      Mac                  javax.crypto.Mac.getInstance                            (String algorithm, Provider provider)
+      void                 javax.crypto.Mac.init                                   (Key key)
+      void                 javax.crypto.Mac.init                                   (Key key, AlgorithmParameterSpec params)
+      void                 javax.crypto.Mac.update                                 (byte input)
+      void                 javax.crypto.Mac.update                                 (byte[] input)
+      void                 javax.crypto.Mac.update                                 (ByteBuffer input)
+      void                 javax.crypto.Mac.update                                 (byte[] input, int offset, int len)
+      byte[]               javax.crypto.Mac.doFinal                                ()
+      byte[]               javax.crypto.Mac.doFinal                                (byte[] input)
+      void                 javax.crypto.Mac.doFinal                                (byte[] output, int outOffset)
+      MessageDigest        java.security.MessageDigest.getInstance                 (String algorithm)
+      MessageDigest        java.security.MessageDigest.getInstance                 (String algorithm, String provider)
+      MessageDigest        java.security.MessageDigest.getInstance                 (String algorithm, Provider provider)
+      void                 java.security.MessageDigest.update                      (byte input)
+      void                 java.security.MessageDigest.update                      (byte[] input)
+      void                 java.security.MessageDigest.update                      (ByteBuffer input)
+      void                 java.security.MessageDigest.update                      (byte[] input, int offset, int len)
+      byte[]               java.security.MessageDigest.digest                      ()
+      byte[]               java.security.MessageDigest.digest                      (byte[] input)
+      int                  java.security.MessageDigest.digest                      (byte[] buf, int offset, int len)
+      Cipher               javax.crypto.Cipher.getInstance                         (String transformation)
+      Cipher               javax.crypto.Cipher.getInstance                         (String transformation, String provider)
+      Cipher               javax.crypto.Cipher.getInstance                         (String transformation, Provider provider)
+      void                 javax.crypto.Cipher.init                                (int opmod,Key key)
+      void                 javax.crypto.Cipher.init                                (int opmod,Certificate certificate)
+      void                 javax.crypto.Cipher.init                                (int opmod,Key key,SecureRandom random)
+      void                 javax.crypto.Cipher.init                                (int opmod,Certificate certificate,SecureRandom random)
+      void                 javax.crypto.Cipher.init                                (int opmod,Key key,AlgorithmParameterSpec params)
+      void                 javax.crypto.Cipher.init                                (int opmod,Key key,AlgorithmParameterSpec params,SecureRandom random)
+      void                 javax.crypto.Cipher.init                                (int opmod,Key key,AlgorithmParameters params)
+      void                 javax.crypto.Cipher.init                                (int opmod,Key key,AlgorithmParameters params,SecureRandom random)
+      byte[]               javax.crypto.Cipher.update                              (byte[] input)
+      byte[]               javax.crypto.Cipher.update                              (byte[] input,int inputOffset,int inputLen)
+      int                  javax.crypto.Cipher.update                              (ByteBuffer input, ByteBuffer output)
+      int                  javax.crypto.Cipher.update                              (byte[] input,int inputOffset,int inputLen,byte[] output)
+      int                  javax.crypto.Cipher.update                              (byte[] input,int inputOffset,int inputLen,byte[] output,int outputOffset)
+      byte[]               javax.crypto.Cipher.doFinal                             ()
+      byte[]               javax.crypto.Cipher.doFinal                             (byte[] input)
+      int                  javax.crypto.Cipher.doFinal                             (byte[] output, int outputOffset)
+      byte[]               javax.crypto.Cipher.doFinal                             (byte[] input,int inputOffset,int inputLen)
+      int                  javax.crypto.Cipher.doFinal                             (byte[] input,int inputOffset,int inputLen,byte[] output)
+      int                  javax.crypto.Cipher.doFinal                             (byte[] input,int inputOffset,int inputLen,byte[] output,int outputOffset)
+      int                  javax.crypto.Cipher.doFinal                             (ByteBuffer input, ByteBuffer output)
+
+
+
+the two controlled inputs. As shown in our running example, if                   login attempt, we can first enter a wrong password, and then enter
+we directly align (with a global optimal matching) the messages                  a correct password. We would then just need to align the two most
+in Fig. 1(a) and (c), we immediately identify four fields (three                 recently generated request messages. Though this is a heuristic
+are of special interest to us).                                                  approach, it works well in practice, and in our all testing apps we
+                                                                                 directly identify the two request messages desired for alignment.
+    Then, the next question is how to find the two desired request
+messages for the alignment. A straightforward approach would                         After that, we compare the two request messages by us-
+be to align all request messages generated from the start of                     ing a pairwise string sequence alignment algorithm, namely
+the app to the moment right after we trigger the login event.                    the Needleman-Wunsch algorithm [27]. It uses dynamic pro-
+Presumably the two executions will share almost the same                         gramming and can achieve an optimal global matching, which
+execution path except those code that handles input differences.                 perfectly fits our goal. Meanwhile, this algorithm has been used
+While we can take such an approach, we realize that we can use                   in the Protocol Informatics (PI) [8] project, and showed great
+a slightly better way to get the desired messages within only one                promise for text based protocol field inference. Therefore, we
+execution of the app. In particular, after we load the app to test the           just integrate this algorithm by following how PI uses it.
+
+                                                                           6
+       TABLE II.    T HE L EVENSHTEIN S IMILARITY R ATIO OF THE
+                             DIFFED - FIELDS .
+                                                                            message (Fig. 1(b)), and a correct password response message
+                                                                            (Fig. 1(d)). Then we can send another pair of messages, one with
+       Field Name            String0 vs. String1           LSR
+                                                                            a wrong password and the other with the correct password, and
+                       2015-08-05%2003%3A19%3A26
+       timestamp                                           0.84             use the following algorithm to label the response messages:
+                       2015-08-05%2003%3A20%3A01
+                    testappserveralpha%40gmail.com
+         email
+                     testappserverbeta%40gmail.com
+                                                           0.88                •    If both the wrong (or correct) password response mes-
+                    695409430D3127CB158002B92FEC1831                                sages are content identical to the previously observed
+          pwd                                              0.34
+                    A9672D9F5F7414D5B996964A7F07727E                                ones, then we directly use the corresponding entire
+         sign
+                    94056C9BE079510079D0BF9A372B4E65
+                                                           0.28
+                                                                                    message as a signature to classify whether it is a wrong
+                    D2A173BEB8F169DD1A81CA8D59AD2C69                                (or correct) password response message.
+
+                                                                               •    Otherwise, we align the two same type of response mes-
+2) Field Semantic Inference. Having identified the diffed fields,                   sages (i.e., two correct password response messages, or
+we then infer their meanings. There are mainly three sources that                   the two wrong password response messages) using again
+lead to the field differences: (1) system data such as timestamp,                   the Needleman-Wunsch algorithm [27], but we keep the
+(2) user input, and (3) the cryptographic computation. We                           common substring (instead of the diffed substring we
+present the following three strategies to infer their meanings:                     used in Step ¸) and use it as a signature to represent a
+                                                                                    correct password response message or a wrong password
+   •      Pattern Matching. System data such as timestamp                           response message.
+          usually has patterns, and we can then use the pre-defined
+          patterns to match them. For instance, if we locate a
+          date sub-string such as 2015-08-05 in the two diffed              After we have acquired the signatures for the correct password
+          fields, then it is highly likely that this is a timestamp         response and wrong password response, next we keep sending
+          field, as illustrated in our running example.                     the server a login request with mutated passwords for a given
+                                                                            user. However, for ethical reasons, we would not keep sending
+   •      Content Matching. Since we control the user input and             a large volume of mutated request messages to the server, and
+          some user input would not get changed, such as the                in our experiment we set the maximum number of messages we
+          username, then we directly search the diffed fields for           could send to the server as N + 1. During this testing window,
+          the data we entered. In such a way, we can precisely              we could observe three types of messages sent from the server:
+          locate the field that directly uses the user input, such as
+          the email field in our running example.                              •    Correct password. We may break a user’s password
+   •      Degree of Differences. By measuring the degree of                         within N + 1 guesses, and the server will send a
+          the similarities between the two diffed fields, we can                    successful login response. Based on the already obtained
+          easily identify the cryptographically computed fields.                    signature of the correct password response, we identify
+          In our design, we use the Wagner-Fischer algorithm                        this case.
+          [35], which computes the Levenshtein distance, or
+          minimum number of edits needed to transform one                      •    Wrong password. Given the very small amount of
+          string into the other, between two fields. We determine                   guesses, we likely cannot break a password. Therefore,
+          whether a field is cryptographically computed if the                      most of the time, server will send a wrong password
+          Levenshtein similarity ratio (LSR) is below 0.5, as                       response message. Similarly to how we identify the
+          shown in Table II for our running example where we                        correct password response message, we identify this
+          can easily locate the pwd and sign fields.                                case based on the already obtained wrong password
+                                                                                    signature.
+Note that field semantic inference is an optional step. In the
+worst case, AUTO F ORGE can brute-force try each diffed field                  •    Unrecognized response message. In addition to the
+(e.g., there are only 4 fields in our running example that needs                    two correct or wrong password responses, we could also
+the brute-force trial) as crypto-field, system-field, or user-input                 encounter other types of response messages that do not
+field, to finally generate the desired request messages. With field                 hold any signatures we observed before. The response
+semantic inference, the benefit is that it can significantly narrow                 for these messages could be something indicating we
+down and even directly pinpoint the field of our interest.                          have exceeded a limited number of login attempts, or
+                                                                                    just an error message. Therefore, if we observe these
+C. Response Message Labeling                                                        unrecognized response messages, we terminate the test
+    Since we aim to test the server behavior, we have to also                       and conclude that the server is not vulnerable.
+monitor the server responses to decide when to stop. It would
+be very challenging to label a response message by parsing                  Note that there is also a caveat: if the server is not vulnerable,
+its contents since different apps can use different encodings.              it may keep sending a wrong password response message even
+Fortunately, we find that we can actually treat the response                though we have guessed a correct password (in fact we did find
+message as a black box. Specifically, in our password login test,           two such servers in our experiment). Therefore, if we receive N
+because the app is under our control, we can send the server two            wrong password responses, we will send a correct password for
+more messages in addition to the two initial request messages               our testing user in the last request message. If the server blocks
+we sent earlier. Back to our running example, we have already               (by sending some other unrecognized response or the wrong
+collected two response messages: a wrong password response                  password response), we conclude the server is not vulnerable.
+
+                                                                        7
+Algorithm 1 Parsing the Cryptographic API trace and Tracking                                         and output, all that we need to do is to replay the execution of
+the Backward Data Dependency                                                                         these functions with the input we modified. Since our replay is
+1: Input: Log: the API execution log file; v0 : the value of the identified output field; u0 :       performed at the network proxy layer, we just need to re-execute
+   user entered input;                                                                               the cryptographic functions of our interest with the corresponding
+ 2: procedure A PI T RACE PARSING(Log, v0 , u0 )
+ 3:    V ← v0                                                                                        parameters. To identify those functions and their arguments,
+ 4:    H ← ∅, R ← ∅                                                                                  we perform backward slicing atop cryptographic API traces
+ 5:    i← 0
+ 6:    while !feof(Log) do
+                                                                                                     to identify the involved arguments and return values, and then
+ 7:         <handle.fname, input, output> ← fread (Log)                                              replay their execution using the corresponding alternative (e.g.,
+ 8:         AP Ii ← <handle.fname, input, output>                                                    Python) implementation of these APIs. A detailed algorithm on
+ 9:         i← i+1
+10:     while i! = 0 do
+                                                                                                     how we parse the API trace and perform the slicing to identify
+11:          i← i−1                                                                                  the involved cryptographic functions is presented in Algorithm 1.
+12:          if AP Ii .output ∈ V then
+13:              V ← V \ {AP Ii .output}                                                                 Specifically, given a log file of the API trace (LOG), the
+14:              P USH A RG A ND F UN NAME (AP Ii , V, H , u0 )
+15:          if AP Ii .output ∈ H then
+                                                                                                     value v0 of the identified cryptographically computed field
+16:              H ← H \ {AP Ii .output}                                                             (e.g., “D2A173BEB8F169DD1A81CA8D59AD2C69” in our
+17:              P USH A RG A ND F UN NAME (AP Ii , V, H , u0 )                                      running example), and the user input u0 (e.g., “ThisIsPWD”
+18:          if empty(V ) and empty(H) then                                                          and “testappserverbeta@gmail.com”), we invoke the
+19:              break
+20:     if !empty(V ) or !empty(H) then                                                              A PI T RACE PARSING procedure to identify the functions that we
+21:          return false                                                                            need to replay along with the corresponding arguments. Since
+22:     else
+                                                                                                     we start from the last executed API that generates the value of
+23:          return true
+24: procedure P USH A RG A ND F UN NAME(AP I, V , H, u0 )                                            our interest and use the backward slicing to identify the replayed
+25:     if String (AP I.input) then                                                                  function, we use a stack structure (we call function state tracking
+26:          vd ← GetDiffedArgValueFromTwoTraces()
+27:          if uo ∈ AP I.input or vd ∈ AP I.input then                                              stack) to store these functions and their arguments (as shown in
+28:              PUSH (ARG, Substitute(vd , u0 , AP I.input)))                                       line 27, line 30, line 33, and line 36 in Algorithm 1) and then we
+29:              V ← V ∪ vd                                                                          just need to pop these arguments and invoke the corresponding
+30:          else
+31:              PUSH (ARG, String(AP I.input))                                                      alternative implementation of these cryptographic APIs to finally
+32:     else                                                                                         produce the desired output.
+33:          if CONST (AP I.input) then
+34:              PUSH (ARG, CONST(AP I.input))                                                            Our backward slicing tracks two types of data dependen-
+35:          else
+36:              V ← V ∪ AP I.input                                                                  cies: (1) function handler dependencies (stored in set H),
+37:              PUSH (ARG-t, AP I.input.temp)                                                       and (2) return value and argument dependencies (stored in
+38:     if !empty(AP I.handle) then                                                                  set V ). As shown in line 12, starting from the return value
+39:          H ← H ∪ AP I.handle
+40:     PUSH (FNAME, AP I.handle.f name)
+                                                                                                     of the last executed cryptographic API (e.g., the function
+                                                                                                     0x53595658.digest illustrated in Fig. 3), if the return
+                                                                                                     value belongs to V , then this function is of our interest; we
+                                                                                                     therefore remove this return value from V (line 13) and push
+D. Request Message Forgery                                                                           its argument and function name into our state tracking stack by
+    Having collected the API traces and identified the fields                                        calling procedure P USH A RG A ND F UN NAME (line 14).
+of our interest, we are then ready to forge the desired request                                          Inside P USH A RG A ND F UN NAME procedure, we will first
+messages for our security testing. For each diffed-field identified                                  check its argument; if it is a string (line 25), then we again
+by our Message Field Inference, we substitute them either                                            use the Needleman-Wunsch algorithm [27] to check whether
+based on their inferred meaning or trying each of them one-                                          its argument contains any diffed-value of our interest (e.g.,
+by-one in a brute force way to forge a request message. The                                          A9672D9F5F7414D5B996964A7F07727E as shown in
+forgery of the request message is guided by the traced message                                       Fig. 3) by aligning the two corresponding arguments from
+as well as the traces of the cryptographic APIs. Since there                                         the two traced API files, and storing the diffed value into vd
+are two types of fields, non-cryptographically computed fields                                       if there is any (line 26). Next, we further check if the user
+and cryptographically computed fields, we use the following                                          input u0 (e.g., testappserverbeta@gmail.com) is in
+strategies to forge their values.                                                                    this argument, or if there is any diffed value vd . If so, we
+                                                                                                     will replace u0 with either user specified input and meanwhile
+1) Non-cryptographically computed fields. For non-                                                   substitute the argument with a temporary variable that stores
+cryptographically computed user input fields such as email                                           the vd (line 28); we also track which function generates vd
+we forge the value of this field without changing its content                                        by keeping it in V (line 29). Otherwise, we directly push this
+(because we aim to test whether we can guess the password for                                        string argument (e.g., the “DES” string that is the argument
+a given user). For system related fields, such as timestamp,                                         of SecretKeyFactory.getInstance in Fig. 3) on the
+we configure AUTO F ORGE to slightly change it based on the                                          stack (line 31). If the argument is not a string (line 32-37),
+pattern observed in the traced request messages.                                                     then we check whether it is a constant (e.g., the value 1 in
+                                                                                                     0x536b7670.init’s argument). If so, we push this constant
+                                                                                                     on the stack; otherwise, we will track which function generates
+2) Cryptographically computed fields. The core problem AUT-                                          this argument by adding it into data dependence set V , and push
+O F ORGE aims to solve is to generate the cryptographically                                          another temporary variable that will store the value generated
+computed fields with mutated input. Once we have collected                                           by the dependent function. If the handler of this function is not
+the traces of the cryptographic functions, including their input                                     empty (line 38), we track the dependence of the handler (line 39).
+
+                                                                                                 8
+   DESKeySpec(0x536b299c) = 0x536b2970                                             the vulnerable app servers. In particular, we show how we tested
+      *0x536b299c: "4ce19ca8fcd150a4w4pj9llah24991ut"
+                                                                                   whether an app server is vulnerable to password brute-forcing
+   SecretKeyFactory.getInstance(0x107f2) = 0x535f66f4                              attacks in §IV-B, leaked username and password probing attacks
+      *0x107f2: "DES"
+                                                                                   in §IV-C, and the Facebook access token hijacking attack
+   0x535f66f4.generateSecret(0x536b2970) = 0x265                                   in §IV-D. Our procedure for setting up our experiments is
+   Cipher.getInstance(0x57f18baf) = 0x536b7670                                     presented in §IV-A.
+      *0x57f18baf: "DES/CBC/PKCS5Padding"
+
+   IvParameterSpec(0x535686bc) = 0x536c838c                                        A. Experiment Setup
+       *0x535686bc: \x00\x00\x00\x00\x00\x00\x00\x00
+
+   0x536b7670.init(1, 0x265, 0x536c838c )                                          Collecting the Mobile Apps for Testing. To test the app servers,
+   0x536b7670.doFinal(0x536df6ec) = 0x536fc960                                     we needed to first download and install the corresponding apps
+       *0x536df6ec: "ThisIsPWD!"                                                   in our emulator. We crawled the apps from the official Google
+       *0x536fc960: \xa9\x67\x2d\x9f\x5f\x74\x14\xd5\xb9\x96\x96\x4a
+                    \x7f\x07\x72\x7e                                               Play market. We crawled over 20, 000 apps within a three month
+                                                                                   time window. Since we have to manually register with each
+   MessageDigest:getInstance(0x1297e) = 0x53595658
+       *0x1297e: {"MD5"}                                                           service in order to test whether their servers are vulnerable, we
+                                                                                   cannot test all of them and therefore we instead focused on the
+   0x53595658.digest(0x536c9234) = 0x5357d210
+       *0x536c9234: "app_keyA4H0P4JNapp_secret4ce19ca8fcd150a4w4pj9l               most popular apps. We considered an app to be a most popular
+   lah4991utclientandroidcountryUSAcountry_codeUScurrencyUSDcv3.9.0e               app if it has been installed more than one million times. We
+   mailtestappserverbeta@gmail.comformatjsonlanguageenmethodvela.use
+   r.loginpwdA9672D9F5F7414D5B996964A7F07727Esign_methodmd5timestamp               queried each app to check its number of installs on Google Play;
+   2015-08-05 03:20:01v1.2"                                                        we found 320 apps falling into this category.
+       *0x5357d210: \xd2\xa1\x73\xbe\xb8\xf1\x69\xdd\x1a\x81\xca\x8d
+   \x59\xad\x2c\x69
+                                                                                       Among these 320 apps, not all of them use cryptographic
+                                                                                   functions to encrypt, hash, or sign the request messages, so we
+                                                                                   had to filter them. It would be tedious to manually go through
+Fig. 3. Crypto API traces and the illustration of their arguments and return
+value dependencies of the miniinthebox App. Note that *addr denotes the            each app one-by-one to check whether it uses cryptographic
+content stored in that addr.                                                       functions. We therefore developed a simple dynamic analysis
+                                                                                   tool based on Monkey [5] to decide whether we should filter
+                                                                                   an app. Specifically, we invoked the am command provided by
+Note that after we iterate the API traces, both V and H should                     Monkey to run the app and stop executing it after 20 seconds. If
+be empty (line 20); otherwise there is something wrong and we                      we observed any cryptographic functions (listed in Table I) get
+will output that we cannot perform the replay.                                     called, we kept this app for further testing.
+    After we have built the stack that tracks how the crypto-                          After filtering the non-encryption, non-hashing and non-
+graphic functions should be executed, we then pop the arguments                    signing apps, we then had 105 apps to test. But still, we were
+and the function names from the stack, and then invoke the                         not sure whether each app contained a user login interface since
+corresponding alternative implementation of these cryptographic                    our test primarily concerns the security of user authentication.
+functions to finally generate the desired field output. After that,                Currently, there is no automatic tool to recognize this, and
+we replace the corresponding field in one of the request messages                  therefore we had to go through each of them. After manually
+we traced (e.g, Request Message0 ) to finally forge the                            running the 105 apps one-by-one, we found that 15 of them do
+desired request messages.                                                          not contain a user login interface, and 14 of them do not use
+                                                                                   HTTP/HTTPS protocols. Therefore, we filtered these apps out
+                          IV.    E VALUATION                                       and eventually had only 76 apps tested by AUTO F ORGE. The
+                                                                                   name of the tested app, its version, the category, and the number
+    We have implemented AUTO F ORGE using both Java and                            of installs, and the protocol (HTTP or HTTPS) are presented in
+Python. We implemented our API Hooking in Java atop the                            Table V in Appendix. Also, we observed that 54 out of 76 (71%)
+Xposed Framework [6], which provides convenient ways to                            apps in our data set use the HTTPS protocol.
+find and hook a given API (findAndHookMethod) and
+can intercept the point before (beforeHookedMethod) or
+after (afterHookedMethod) execution of the API. This                               Other Settings. We used Genymotion [3] as our Android
+implementation consists of 1, 200 lines of Java code. The rest                     emulator. Our host machine runs Ubuntu 12.04 with 8G memory
+of the components of AUTO F ORGE are implemented using                             and Intel Core2 Duo CPU 2.53GHz, and our Android emulator
+Python with 4, 500 lines of our own code. It is worth noting                       is version 4.2.2 with 2G memory. Meanwhile, the parameter N
+that we implemented the Message Field Inference atop the                           is set to be 20.
+Protocol Informatics [8] project, which is an open source Python
+implementation of the Needleman-Wunsch algorithm [27], and                         B. Password Brute-forcing Testing
+we just integrated this code based on our needs. Also, we did
+not have to implement the algorithm to compute the Levenshtein                         We have illustrated through our running example how to
+similarity ratio of two strings [35] because Python already has an                 break a user’s password by iteratively mutating her password
+implementation for this algorithm. Meanwhile, we implemented                       until we hit a correct one. We have applied this methodology to
+our MitM proxy atop the Burp Suite [1] using a Python plugin.                      test these 76 potential vulnerable app services. To launch our test,
+                                                                                   we first registered two legal accounts in the corresponding servers
+  There will be many security applications enabled by                              and sent four request messages (a wrong and correct password
+AUTO F ORGE. In this section, we evaluate how we apply it to test                  pair for each registered user) and then mutating the password
+
+                                                                               9
+           TABLE III.        T HE DETAILED PASSWORD BRUTE - FORCING TESTING RESULT FOR 23 APP SERVERS BASED ON THE APP CATEGORY.
+                                                                    Step ¶                         Step ·                                               Step ¸                                     Step ¹                                      Step º
+
+
+
+
+                                                                                                                                                                                               EqualResponse?
+
+                                                                                                                                                                                                                SysField Only?
+                                                                                                                                                                                #CryptoField
+                                                                                    #Traced API
+
+
+                                                                                                   Encryption?
+
+
+
+
+                                                                                                                                       #DiffedField
+
+
+
+
+                                                                                                                                                                                                                                                            Vulnerable?
+                                                                                                                                                                  #InputField
+
+
+
+
+                                                                                                                                                                                                                                 #Sliced API
+                                                                      #Input Msg
+
+
+
+
+                                                                                                                                                      #SysField
+                                                                                                                 Hashing?
+
+
+
+
+                                                                                                                                                                                                                                                 #Request
+                                                                                                                            Signing?
+         Category                          App Package Name
+
+         Books & Reference      com.sirma.mobile.bible.android          4          146             X             7          7           1              0            0             1               7             X                1               21         X
+         Business                                com.sahibinden         4           89             X             X          7           4              1            2             1               7             X                15              21         X
+         Casual                                      me.pou.app         4          169             7             X          7           2              0            1             1               7             X                7               21         X
+         Comics                         jp.ebookjapan.ebireader         4           60             7             X          7           3              1            1             1               7             X                7               21         X
+         Communication        com.browan.freeppmobile.android           4           40             X             X          7           2              0            1             1               7             X                18              21         X
+         Education                    com.dictionary.flashcards         4           35             7             7          X           5              2            2             1               7             X                9               21         X
+         Entertainment                         com.imdb.mobile          4          428             7             7          X           4              1            2             1               7             X                7               21         7
+         Finance                                    com.netgate         4          505             X             7          7           3              1            0             2               7             X                28              6          7
+         Health & Fitness                  com.fatsecret.android        4           41             7             X          7           2              0            1             1               7             X                7               21         X
+         Lifestyle               com.cookpad.android.activities         4          342             7             7          X           4              1            2             1               7             X                1               21         X
+         Media & Video                        com.youku.phone           4          771             7             X          7           4              1            1             2               7             X                7               5          7
+         Medical                    com.aranoah.healthkart.plus         4          321             7             7          7           2              0            2             0               7             X                0               21         X
+         Music & Audio                         com.slacker.radio        4          751             7             7          7           2              0            2             0               7             7                0               21         X
+         News & Magazines        com.cnn.mobile.android.phone           4          213             7             7          7           2              0            2             0               7             7                0               21         X
+         Photography                          com.picsart.studio        4          1292            7             7          7           2              0            2             0               7             X                0               21         X
+         Productivity                 com.autodesk.autocadws            4          153             7             7          7           2              0            2             0               7             7                0               21         X
+         Shopping                          com.biggu.shopsavvy          4          771             7             X          7           3              0            2             1               7             X                8               21         X
+         Social                                      com.tumblr         4          172             7             7          X           5              2            2             1               7             X                7               21         X
+         Sports                          com.espn.score_center          4          385             7             7          7           2              0            2             0               7             7                0               21         X
+         Tools                     com.sohu.inputmethod.sogou           4          195             7             X          7           2              0            1             1               7             X                7               3          7
+         Transportation                       taxi.android.client       4           35             7             X          7           1              0            0             1               7             X                8               21         X
+         Travel & Local                   com.expedia.bookings          4          649             7             7          7           2              0            2             0               7             7                0               21         X
+         Weather                              disasterAlert.PDC         4           58             7             7          7           2              0            2             0               7             X                0               21         X
+
+
+
+for one of the registered legal users. It would be overwhelming                                    in total, we find 65 apps’ servers (86%) are vulnerable to
+to show all of the testing results for these 76 apps in a single                                   this attack type. Among the 4 non vulnerable apps servers
+table. We thus classify the apps based on their categories listed                                  in Table III, 3 of their servers (e.g., com.netgate) will
+in Google Play, select the apps that have the highest number of                                    directly return “Unrecognized response message” after 3, 5 or
+installs in each category, and present their experimental results in                               6 request messages; but com.imdb.mobile will not return
+Table III. In total, these apps can be classified into 23 categories.                              such message, and we only found it is not vulnerable after the
+Therefore, there are only 23 app server testing results in Table III,                              21st request message.From this table, we can also observe that
+and the results for the rest of the app servers are presented in                                   we need four input messages for the test. Meanwhile, there are
+Table VI in Appendix.                                                                              tens to several hundreds of cryptographic APIs executed for these
+                                                                                                   tested apps. We have examined the traces and found that part of
+    Specifically, we present the category of the app in the first                                  reason is because some of the apps heavily use cryptographic
+column of Table III, followed by the app name. Since the                                           functions for integrity checking of the retrieved data such as
+execution of AUTO F ORGE involves four key components, we                                          the images before login. There are 65% of the apps that use
+present the internal results of these components in each key step                                  encryption, hashing, or signing to protect the authentication
+from the 3rd column to the last column. In particular, the number                                  request message; 17% use encryption, 39% use hashing, and 17%
+of inputs needed in Step ¶ is presented in the 3rd column. We                                      use signing. There are 8 apps (35%) whose #sliced API column
+can see that they all require 4 inputs. The 4th column reports how                                 is 0, as they do not involve any cryptographic computation in
+many APIs we traced, and the 5th to 7th column reports whether                                     the authentication request message, but they are included in our
+this app uses encryption, hashing, or signing, respectively, based                                 test because their earlier communications involve cryptographic
+on the execution of our API Hooking in Step ·; The number of                                       computation. Also, we can notice that there are just a few diffed
+diffed fields by our Message Field Inference (Step ¸) is reported                                  fields (ranged from 1 to 5) in the request message. Among these
+in the 8th column, and we also report the number of identified                                     diffed fields, 8 apps have one or two system fields (such as
+system data fields (e.g., the timestamp), user input data fields                                   timestamp), 20 apps have user input (e.g., username), and 15 apps
+(e.g., username), and cryptographic computed fields from the 9th                                   have cryptographically computed fields in the authentication
+to the 11th columns. Whether our Response Message Labeling                                         request message. Meanwhile, all of their response messages are
+(Step ¹) observes identical response messages is reported in                                       not identical, but 18 of them (78%) only contain system field
+the 12th column; if they are not identical, whether the difference                                 differences in the response message (some other differences
+only comes from the system field is reported in the 13th column.                                   include cookies, etc).
+Finally, we report the number of sliced APIs by our Request
+Message Generation (Step º) in the 14th column, the number
+of the request messages we sent in the 15th column, and whether                                        Regarding how long AUTO F ORGE takes to test each app
+the app server is vulnerable in the last column.                                                   server, we note that the most time consuming part is the user
+                                                                                                   registration and the manual user login process. Usually these
+    For these 23 apps’ servers, we can observe from Table III                                      processes took two to five minutes. The rest of the execution of
+that 19 (83%) are vulnerable to password brute force attacks                                       AUTO F ORGE only took less than 10 seconds each to automati-
+with our limited 20 guesses. Note that if we also include the                                      cally finish password brute-force testing under the setting of N
+result (presented in Table VI) for the rest of the app servers,                                    being 20.
+
+                                                                                              10
+C. Leaked Username and Password Probing Testing                                 <script type="text/javascript">window.location.href="fbconnect:
+                                                                                \/\/success#granted_scopes=email\u00252Ccontact_email\u00252Cp
+                                                                                ublic_profile&denied_scopes=&access_token=CAAUbRqhb6ggBAEtOE6v
+    The second test we performed is the leaked data probing                     cAjUGqfficRiVUj2WZALM330EBSqDIo98pFEVBgiIhVCgbHihV3qmjgDKr5eDG
+attack. Being able to generate valid request messages, we would                 BqrhVotkGWQUbaIcXTpxAOHGPskQVLsuJ59PrysHMz6zzAZCx4GAovndOmZAb4
+                                                                                EIXAlLSlvaZCGVyevED2B53FOpAtrPdlaDmh67wKjj56lO7epMtT69ZAXYCQZD
+then be able to test whether a leaked username and password                     ZD&expires_in=5140807";</script>
+exists in the remote mobile service. Through a one time forgery,
+                                                                                                  (a) Facebook Confirmation Message
+an attacker can easily find a victim’s username and password
+without performing any brute-force guessing because of the                      GET /v2.2/me?access_token=CAAUbRqhb6ggBAEtOE6vcAjUGqfficRiVUj2
+                                                                                WZALM330EBSqDIo98pFEVBgiIhVCgbHihV3qmjgDKr5eDGBqrhVotkGWQUbaIc
+password reuse practice among many users [15], [21].                            XTpxAOHGPskQVLsuJ59PrysHMz6zzAZCx4GAovndOmZAb4EIXAlLSlvaZCGVye
+                                                                                vED2B53FOpAtrPdlaDmh67wKjj56lO7epMtT69ZAXYCQZDZD&format=json&s
+    In the past several years, there were hundreds of millions of               dk=android HTTP/1.1
+                                                                                x-newrelic-id: XAYCV1ZADgsAUFRTBQ==
+leaked passwords and user accounts [7], [31], and such a leaked                 User-Agent: FBAndroidSDK.3.20.0
+data probing attack can be easily launched. While the server can                Content-Type: multipart/form-data; boundary=3i2ndDfv2rTHiSisAb
+                                                                                ouNdArYfORhtTPEefj3q2f
+limit the origin of the request message (e.g., by limiting a given              Accept-Language: en_US
+                                                                                Host: graph.facebook.com
+IP address with only limited number of login attempts, though                   Connection: Keep-Alive
+this is not a good practice as it might cause trouble for some                  Accept-Encoding: gzip
+campus networks when a network proxy is used), if an attacker                                   (b) Client Request Message to Facebook
+performs distributed testing, such an attack is very challenging
+to prevent.                                                                     {"id":"109829469364819","email":"testappserver2016\u0040gmail.
+                                                                                com","first_name":"Fndss","gender":"male","last_name":"Lndss",
+                                                                                "link":"https:\/\/www.facebook.com\/app_scoped_user_id\/109829
+    To determine whether a service provider is vulnerable to                    469364819\/","locale":"en_US","name":"Fndss Lndss","timezone":
+this leaked data probing attack, we performed a simple test. In                 -5,"updated_time":"2015-08-17T03:27:04+0000","verified":false}
+
+particular, for ethical reasons, we did not use any of the leaked                                  (c) Facebook Response Message
+database accounts, and instead we registered 19 more users in the
+                                                                                POST /api/v1/socials/FACEBOOK/put?timestamp=2015-08-17%2001%3A
+services we tested (in addition to the two users we registered in               16%3A23&sid=0bcd1165dbcc44718b95f35c6ee70fb9&v=1.1&client=andr
+password brute-forcing testing). Starting from a single IP address,             oid&accessToken=CAAUbRqhb6ggBAEtOE6vcAjUGqfficRiVUj2WZALM330EB
+                                                                                SqDIo98pFEVBgiIhVCgbHihV3qmjgDKr5eDGBqrhVotkGWQUbaIcXTpxAOHGPs
+we keep mutating the the username and wrong password pair                       kQVLsuJ59PrysHMz6zzAZCx4GAovndOmZAb4EIXAlLSlvaZCGVyevED2B53FOp
+in the first 20 request messages, with the 21st request message                 AtrPdlaDmh67wKjj56lO7epMtT69ZAXYCQZDZD&app_key=A4H0P4JN&langua
+                                                                                ge=en&cv=3.10.0&currency=USD&sign=6992022E02F34E7ED5CD6CF19795
+containing a correct username and password. If the server allows                BD86&providerUserId=109829469364819&email=testappserver2016%40
+the login, then it means the server is vulnerable to this type of               gmail.com HTTP/1.1
+                                                                                x-newrelic-id: XAYCV1ZADgsAUFRTBQ==
+attack. Without any surprise, the server side of all the 76 apps                User-agent: LightInTheBox 3.10.0(Android; 17; 4.2.2; 480_752;
+we tested are vulnerable to this leaked data probing attack.                    WIFI; generic; I9100; en)
+                                                                                Host: api.miniinthebox.com
+                                                                                Connection: Keep-Alive
+                                                                                Accept-Encoding: gzip
+D. Facebook Access Token Hijacking Testing                                      Content-Type: application/x-www-form-urlencoded
+                                                                                Cookie: AKAMAI_FEO_TEST=B; ASRV=A_201505081100; cookie_test=pl
+    The third test we performed is to identify the access token                 ease_accept_for_session; JSESSIONID=1qfesxjfnhxas1s1sbde9uut9n
+                                                                                Content-Length: 0
+hijacking vulnerability in the mobile service. Today, many
+mobile apps support users logging in to their services with the                         (d) Client Authentication Request Message to App Server
+users’ Facebook, Google, Microsoft, or Twitter accounts. For
+instance, among the tested 76 apps, we found that 36 of them                Fig. 4. Access Token Hijacking Attack with miniinthebox App.
+(47%) support Facebook Login, 28 (37%) support Google Login,
+5 (7%) support Twitter Login. For a proof-of-concept, we focus
+on the most popular Facebook Login and demonstrate how to                   of the fields of our interest can be inferred directly from the
+launch an access token hijacking vulnerability test against it.             response messages sent by Facebook. For instance, as shown
+Typically, when a user connects to the app service with Facebook            in Fig. 4(d), we need to recognize five fields: timestamp,
+Login, the app will obtain an access token for that particular              accessToken, sign, providerUserId, and email.
+user and that app, and this token can provide a temporary, secure           Among them, accessToken and providerUserId can be
+access to Facebook APIs such as querying user’s information                 inferred directly from the Facebook response message, which is
+stored in Facebook. However, this per-app issued access token is            well defined by the Facebook API.
+portable, and other apps can use the same user’s Facebook token
+to access the user’s private information if the app service does                In particular, during the Facebook Login process, Facebook
+not check the origin of the token. This attack has been described           will send a response message as shown in Fig. 4(a) from
+as an access token misuse attack [36] or access token hijacking             https://m.facebook.com/v2.2/dialog/oauth/, and we can directly
+attack [2].                                                                 parse this response message to get the access_token
+                                                                            (because the format is defined by Facebook and every app
+     To perform this test, essentially what we want is to log in to         follows it). Next, a client app will use this token and send
+a vulnerable app server by using the Facebook access token that             a request message to the Facebook server to query for more
+is issued to other apps. Therefore, we just need to substitute an           information about this user; an example of this request message
+access token (stolen) from other apps, and test whether the app             is shown in Fig. 4(b). Next, Facebook will reply to the client with
+server still allows access and returns a user’s private data (again,        the queried information such as id, email, first_name, etc.,
+the fundamental reason is because the app server mistakenly                 about this user. This response message, as shown in Fig. 4(c) also
+uses the token as authentication [36]). While we could apply                has well-defined fields by Facebook, and we just need to parse
+our Message Field Inference to infer the fields of our interest             them to retrieve the information of our interest such as the id
+in the authentication request messages, we notice that many                 field. We can notice from Fig. 4(d) that id, access_token,
+
+                                                                       11
+                                   TABLE IV.        T HE DETAILED RESULT ON THE SECURITY TOKEN SUBSTITUTION TESTING
+                                                   Step ¶                        Step ·                                                                        Step ¸                                                    Step ¹                                     Step º
+
+
+
+
+                                                                                                                                                                                                                     EqualResonse?
+
+                                                                                                                                                                                                                                     SysField Only?
+                                                                                                                                                                               Access Token?
+                                                                                                                                                                #CryptoField
+                                                                   #Traced API
+
+
+                                                                                 Encryption?
+
+
+
+
+                                                                                                                      #DiffedField
+
+
+
+
+                                                                                                                                                                                                                                                                                Vulnerable?
+                                                                                                                                                 #InputField
+
+
+
+
+                                                                                                                                                                                                                                                      #Sliced API
+                                                     #Input Msg
+
+
+
+
+                                                                                                                                     #SysField
+                                                                                               Hashing?
+
+
+
+
+                                                                                                                                                                                                                                                                     #Request
+                                                                                                          Signing?
+
+
+
+
+                                                                                                                                                                                                            Email?
+                                                                                                                                                                                                    ID?
+                  App Package Name
+
+                        anews.com                      2           144             7           7          7            1              0            1              0            X                    7       7           7            7                 0              1         7
+                     com.ad60.songza                   2           185             7           7          7            1              0            1              0            X                    7       7           7            X                 0              1         7
+                        com.askfm                      2           790             7           7          X            2              0            1              1            X                    7       7           7            X                 7              1         7
+                  com.biggu.shopsavvy                  2           611             7           X          7            2              0            1              1            X                    7       7           7            X                 7              1         X
+                 com.bukalapak.android                 2           521             7           7          7            2              0            2              0            X                    X       7           7            X                 0              1         X
+                  com.careerjet.android                2           231             7           7          7            1              0            1              0            X                    7       7           7            X                 0              1         X
+         com.clearchannel.iheartradio.controller       2           800             7           7          7            1              0            1              0            7                    X       7           7            7                 0              1         7
+               com.dictionary.flashcards               2           72              7           7          7            2              0            2              0            X                    X       X           7            X                 0              1         7
+                 com.espn.score_center                 2           567             7           7          7            2              0            2              0            X                    X       X           7            7                 0              1         7
+                 com.expedia.bookings                  2          1090             7           7          7            2              0            2              0            X                    X       7           7            7                 0              1         7
+                    com.geeksoft.wps                   2           364             7           X          7            2              0            1              1            7                    X       7           7            X                 7              1         7
+                     com.imdb.mobile                   2           947             7           7          X            3              1            1              1            X                    7       7           7            X                 7              1         7
+                   com.jabong.android                  2           719             7           7          7            2              0            2              0            X                    X       X           7            X                 0              1         7
+                 com.mediafire.android                 2           858             7           X          7            2              0            1              1            X                    7       7           7            X                 8              1         X
+                     com.meucarrinho                   2           332             7           X          7            4              2            1              1            X                    7       7           7            X                 7              1         X
+               com.miniinthebox.android                2           572             7           X          7            5              2            2              1            X                    X       X           7            X                 7              1         X
+           com.mobilesrepublic.appygamer               2           204             7           7          7            1              0            1              0            7                    X       X           7            X                 0              1         7
+            com.mobilesrepublic.appygeek               2           929             7           7          7            1              0            1              0            7                    X       X           7            X                 0              1         7
+               com.myfitnesspal.android                2           958             7           7          7            2              0            2              0            X                    X       7           7            X                 0              1         7
+                      com.noom.walk                    2           316             7           7          7            2              0            2              0            7                    X       X           7            7                 0              1         7
+                    com.picsart.studio                 2          2622             7           7          7            4              0            4              0            X                    X       X           7            X                 0              1         7
+                    com.rebtel.android                 2           421             7           7          7            1              0            1              0            X                    7       7           7            X                 0              1         7
+                    com.skout.android                  2           583             7           7          7            1              0            1              0            X                    7       7           7            X                 0              1         7
+                     com.slacker.radio                 2           529             7           7          7            2              0            2              0            X                    X       7           7            7                 0              1         7
+                com.somcloud.somnote                   2           74              7           7          7            3              0            3              0            7                    X       X           7            X                 0              1         X
+                com.soundcloud.android                 2           415             7           7          7            2              0            2              0            X                    7       7           7            X                 0              1         7
+             com.stuckpixelinc.funnypics               2           243             7           7          7            1              0            1              0            X                    7       7           7            X                 0              1         X
+                  com.textmeinc.textme                 2           34              7           7          7            1              0            1              0            X                    7       7           7            X                 0              1         7
+            com.zillow.android.zillowmap               2           921             7           7          7            2              0            2              0            X                    X       7           7            X                 0              1         X
+                    taxi.android.client                2           490             7           7          7            1              0            1              0            X                    7       7           7            X                 0              1         7
+                        wp.wpbeta                      2           202             7           7          7            1              0            1              0            X                    7       7           7            7                 0              1         7
+
+
+
+and email have been used in the authentication request                                                               or signing. Also, we notice not all the request messages use
+message even though the client app (our running example                                                              the access token, and some of them use the ID returned from
+miniinthebox) uses different names for some of the fields.                                                           Facebook for the authentication. Meanwhile, all the response
+For timestamp and sign fields, we will still rely on our                                                             messages for the same user’s login are not identical, but the
+Message Field Inference to identify them.                                                                            major difference still comes from the timestamp field. Finally,
+                                                                                                                     we only send one request message to the server and we only find
+    We tested whether these 76 app servers in §IV-B are vulnera-                                                     9 out of 31 (29%) apps that are vulnerable to the Facebook token
+ble to this access token hijacking attack. While we have found                                                       hijacking attack.
+36 of them that use Facebook Login, in fact 5 apps were actually
+buggy in this feature (and we cannot launch the Facebook Login
+for them). Therefore, we only have 31 apps that were tested. The                                                                                                                               V.         D ISCUSSIONS
+test is slightly different compared to our password brute force test                                                 A. Security Implications
+in that we only need to register one user on Facebook (with the
+testappserver2016@gmail.com account). After that,                                                                        AUTO F ORGE has demonstrated that lack of security checks at
+we need to intercept the Facebook access token oauth con-                                                            the server side can lead to several severe attacks such as password
+firmation message as shown in Fig. 4(a), and the Facebook user                                                       brute forcing, leaked username and password probing, and access
+information query message as shown in Fig. 4(c), from which                                                          token hijacking. This is a very serious problem considering
+we extract the fields of our interest such as access_token                                                           that a large volume of popular apps, including CNN, Expedia,
+and id. Next, we send two authentication request messages to                                                         iHeartRadio, and Walmart as confirmed in our experiment are
+the app server, and apply the message diffing to identify other                                                      vulnerable to these attacks. While it is true that an adversary
+fields. After that, we substitute the access_token and id                                                            cannot sniff the password because of HTTPS, an attacker can
+field in the client authentication request message, and replay                                                       launch a malicious login attack in an owned device to install self-
+the execution of the cryptographically computed fields such as                                                       signed certificates and automatically forge the request messages
+sign to test whether the server is vulnerable or not.                                                                even though there are cryptographic constraints. As such, we
+                                                                                                                     would like to raise awareness for app developers: only using
+    The detailed result of the tested 31 apps is presented in                                                        HTTPS cannot defeat password brute-forcing, and neither can
+Table IV. Most columns share the same meaning as in Table III,                                                       hashing and (one-way) signing of client request messages.
+except we added whether the request messages use Access Token,
+ID, or Email from the 12th to 14th column. We can notice from                                                            Therefore, we need to examine the techniques that can be
+Table IV that 21 (68%) of the apps use HTTPS, and we only                                                            used by app developers to mitigate or prevent the automatic
+need to send two authentication request messages. Interestingly,                                                     forgery of user request messages, especially in the scenario of
+only 7 out of 31 (23%) of the request messages involves hashing                                                      user authentication, and they can be summarized as follows:
+
+                                                                                                           12
+   •    Limiting the number of login attempts. One sim-                     is to perform fine-grained instruction level data flow tracking.
+        ple solution app developers can adopt is to keep a                  Therefore, we plan to integrate a taint analysis engine such as
+        login attempt state at the server side and limit the                TaintDroid [19] into AUTO F ORGE to track the user’s input such
+        number of login attempts within a certain time win-                 that we can still recognize the input in the request messages.
+        dow. We only found 11 out of 76 apps (14%), such
+                                                                                Third, AUTO F ORGE currently only deals with the crypto-
+        as com.imdb.mobile, that followed this approach.
+                                                                            graphic APIs listed in Table I. If an app uses other APIs or
+        While this solution cannot defeat leaked username and
+                                                                            native code, AUTO F ORGE has to include them. We plan to
+        password probing attacks, it can defeat at least user
+                                                                            examine more apps and enrich the list with more APIs if there
+        password brute forcing. Meanwhile, unlike CAPTCHA
+                                                                            are any. Meanwhile, if an app uses its own private cryptographic
+        and two factor-authentication discussed below, this
+                                                                            functions, AUTO F ORGE has to perform additional analysis (such
+        defense will not change any user’s experience.
+                                                                            as those mentioned in Dispatcher [9], Aligot [11], or the methods
+   •    Using CAPTCHA. Automatic data forgery is not a new                  described by Grobert et al. [20]) to recognize these functions.
+        attack, and there are already solutions to mitigate this.
+                                                                                Fourth, our security test might have false positives because
+        One way that has been widely used on the desktop is
+                                                                            of the limited number of tests we performed. For instance, an
+        the CAPTCHA [34]. A CAPTCHA is a program that
+                                                                            app service could block the user after the (N + 1)-th failure
+        protects websites against automated resource abusing
+                                                                            without us detecting it (because of our threshold of maximum N
+        or login attempts. However, we have not seen much
+                                                                            guesses), and we would have to enlarge N to prune this. Note
+        usage in mobile apps. We believe one reason is that
+                                                                            that we set the parameter N to small numbers just for ethical
+        CAPTCHA might hurt user experience. However, as
+                                                                            considerations, and a real attack would not be constrained by
+        we have demonstrated in this paper, to really slow
+                                                                            this.
+        down attackers, CAPTCHA is a viable approach, though
+        CAPTCHA can also be broken [33].                                        Finally, AUTO F ORGE will enable many other security tests,
+                                                                            such as SQL injection by manipulating the corresponding
+   •     Two-factor authentication. Another intuitive way to                request fields (e.g., we can append certain data to the username).
+         slow down the forgery of user request messages (includ-            In fact, we did find one app that is vulnerable to SQL injection
+         ing the authentication) is to adopt two-factor authen-             among the 76 apps. We leave the large scale systematic study
+         tication [38]. Similar to CAPTCHA, it will certainly               of this type of vulnerability to our future work.
+         hurt user experience, but it is unlikely for attackers to
+         successfully compromise two channels.
+                                                                            C. Ethics
+   •    Two-way authentication. The most effective way to
+                                                                                The goal of designing AUTO F ORGE is to apply it to find vul-
+        prevent client side data forgery is to authenticate the
+                                                                            nerabilities at the server side. In this case, we have to inevitably
+        client as well using a two-way (i.e., mutual) authentica-
+                                                                            send unnecessary packets to the service providers. We do take
+        tion [16]. Two-way SSL is one such an example, and it
+                                                                            ethics into consideration by minimizing the number of messages
+        uses digital signatures to authenticate both the server and
+                                                                            sent to the server (recall the maximum number of messages we
+        the client with their corresponding certificates. However,
+                                                                            sent is N + 1). Also, we have made responsible disclosure and
+        it requires an extra effort of client certificate exchange
+                                                                            notified all the vulnerable app vendors. In fact, shortly after we
+        and imposes additional complexity and cost. Therefore,
+                                                                            reported the vulnerabilities, three vendors patched their services
+        we have not observed any apps that use this technique.
+                                                                            by only allowing a limited number of failed logins. For instance,
+                                                                            the iHeartRadio app has limited the maximum number of login
+B. Limitations and Future Work                                              attempts to 15, the ESPN score center app limits it to 3, and the
+                                                                            Slacker Radio app limits it to 6. We believe many other vendors
+    While we have made a first step demonstrating the feasibility
+                                                                            will also patch their services very soon.
+of automatic forgery of cryptographically consistent messages
+to identify security vulnerabilities in mobile services, there are a
+number of avenues for future improvement. In the following, we                                   VI.   R ELATED W ORK
+discuss the limitations of AUTO F ORGE and outline future work.                 At a high level, our work is related to protocol reverse
+                                                                            engineering, application dialogue replay, password brute forcing,
+    First, AUTO F ORGE currently only focuses on HTTP/HTTPS
+                                                                            and mobile app vulnerability discovery. In this section, we review
+protocols. There are certainly apps that use other protocols such
+                                                                            these works and compare AUTO F ORGE with them.
+as proprietary non-plaintext protocols. While our global optimal
+sequence alignment algorithm (i.e., the Needleman-Wunsch
+algorithm [27]) might be able to align the two diffed messages              Protocol Reverse Engineering. There is a large body of re-
+to identify the diffed fields for non-plaintext protocols, we have          search focusing on protocol reverse engineering. Earlier efforts
+not evaluated it yet. Our next step is to test how AUTO F ORGE              (e.g., [8], [12], [24]) inferred the protocol format from network
+would perform with non-plaintext protocols.                                 traces. Protocol informatics [8] used the Needleman-Wunsch
+                                                                            algorithm [27] to align the protocol messages and infer the pro-
+    Second, AUTO F ORGE only performs lightweight API level
+                                                                            tocol format. Discoverer [12] proposed tokenization, recursive
+tracing of app’s execution, and assumes user input (such as the
+                                                                            clustering, and merging techniques to handle both text and binary
+entered username) would not be transformed (recall we use
+                                                                            protocols from network traces.
+content patching to identify the direct user inputs). However, a
+user entered input could be translated into other forms. To really              Instead of only using the network traces, the other direction
+track the possible transformations of the user input, a better way          of protocol reverse engineering is to use dynamic binary analysis
+
+                                                                       13
+(taint analysis in particular) to reveal the protocol formats. A           if app server developers do not perform the necessary security
+number of systems or tools (e.g., [9], [10], [14], [25], [39]) have        checks.
+been proposed. Among them, Polyglot [10] made the first attempt
+of using binary code analysis to infer the protocol formats,                                        VII.     C ONCLUSION
+Tupni [14] recovers more fine-grained protocol formats, and
+Dispatcher [9] focused on encrypted protocol message reverse                   We have presented AUTO F ORGE, a tool that can
+engineering. We plan to apply the techniques proposed by these             automatically forge cryptographically consistent messages from
+efforts to recover the Android apps’ protocol in a more general            the client side to test whether the server side of an app contains
+way such as also inferring binary data based protocols.                    security vulnerabilities such as brute-forcing, leaked username
+                                                                           and password probing, and access token hijacking. To enable
+Application Dialogue Replay. AUTO F ORGE employs crypto-                   our security test, we have developed a set of techniques to
+graphic function replay to generate the authenticated messages,            automatically infer protocol fields, label response messages,
+which is similar to the existing application dialogue replay               replay cryptographic function execution, and regenerate request
+systems. Similar to protocol reverse engineering, there are also           messages. Our experimental results show that among the 76
+two categories of techniques: purely network traces based, and             tested popular apps (each with millions of installs), 65 of their
+binary code analysis based.                                                servers (86%) are vulnerable to password brute forcing attacks,
+                                                                           all of them (100%) are vulnerable to leaked username and
+    Similar to Protocol Informatics [8], RolePlayer [13] aligns            password probing attacks, and 9 of them (12%) are vulnerable to
+the byte-wise sequences of the protocol messages from network              Facebook access token hijacking attacks. We have performed re-
+traces, and then identifies and mutates some specific fields for           sponsible disclosure and notified each vulnerable app vendor, and
+the application dialogue replay. By leveraging binary code                 three of the service providers, including ESPN and iHeartRadio,
+analysis, Replayer [28] enables more automatic replay. While               have patched their services shortly after our notification.
+AUTO F ORGE appears to be quite similar to these replay systems,
+none of the existing efforts focused on cryptographic protocol
+                                                                                                    ACKNOWLEDGMENT
+fields mutation (RolePlayer assumed there is no such field in the
+protocol message, and Replayer set cryptographic fields in its                 We are grateful to our shepherd Christopher Kruegel, and the
+future work), which is the exact focus of AUTO F ORGE.                     anonymous reviewers for their extremely helpful feedback. We
+                                                                           also would like to thank Erick Bauman and Murat Kantarcioglu
+Password Brute Forcing. Password based authentication has                  for proof-reading of the paper. This work was partially supported
+been the de facto standard to protect access to sensitive in-              by The Air Force Office of Scientific Research (AFOSR) under
+formation, with no exceptions to mobile apps and services.                 Award No. FA-9550-12-1-0077. Any opinions, findings, conclu-
+It has always been a major focus for attackers over years,                 sions, or recommendations expressed are those of the authors
+and there are many efficient and practical ways of brute force             and not necessarily of the AFOSR.
+cracking a user’s password. For instance, assuming access to the
+password file, attackers can use a dictionary based attack to break                                      R EFERENCES
+user passwords. Recently, there were also significant efforts to
+                                                                            [1] “Burp suite,” https://portswigger.net/burp/.
+make dictionary attacks smarter by employing Markov models
+                                                                            [2] “Facebook token hijacking,” https://developers.facebook.com/docs/
+(e.g., [26]), probabilistic context free grammars (e.g., [37]), and             facebook-login/security/#tokenhijacking.
+history based guessing (e.g., [40]). There are also approaches              [3] “Genymotion,” https://www.genymotion.com/.
+to make the password brute forcing much faster. Using rainbow
+                                                                            [4] “Statistics         and       facts         about      app       stores,”
+tables is one such approach, which consists of massive tables                   http://www.statista.com/topics/1729/app-stores/.
+of pre-calculated hashes, trading increased memory storage for              [5] “Ui/application exerciser monkey,” https://developer.android.com/tools/
+reduced computation time [29]. While AUTO F ORGE does focus                     help/monkey.html.
+on password brute forcing, it shows the new context of brute                [6] “Xposed module repository,” http://repo.xposed.info/.
+forcing user passwords for mobile apps with the techniques of               [7] “Hackers released the passwords of over 70 million chinese internet
+automatically generating mutated passwords in the authenticated                 accounts,” https://dazzlepod.com/rootkit/, 2011.
+request message.                                                            [8] M. Beddoe, “The protocol informatics project,” http://www.4tphi.net/
+                                                                                ~awalters/PI/PI.html.
+                                                                            [9] J. Caballero, P. Poosankam, C. Kreibich, and D. Song, “Dispatcher:
+Mobile App Vulnerability Discovery. In the past several years,                  Enabling active botnet infiltration using automatic protocol reverse-
+a considerable amount of efforts have focused on discovering                    engineering,” in CCS, Chicago, Illinois, USA, 2009, pp. 621–634.
+various vulnerabilities in mobile apps. For instance, Taint-               [10] J. Caballero and D. Song, “Polyglot: Automatic extraction of protocol
+Droid [18] detects privacy leakage vulnerabilities by tracking                  format using dynamic binary analysis,” in CCS, Alexandria, Virginia,
+information flows. PiOS [17] uses static analysis to detect such                USA, 2007, pp. 317–329.
+leaks in iOS apps. CHEX [23] detects component hajacking                   [11] J. Calvet, J. M. Fernandez, and J.-Y. Marion, “Aligot: cryptographic
+vulnerabilities in Android apps by using a data-flow based                      function identification in obfuscated binary programs,” in CCS. ACM,
+                                                                                2012, pp. 169–182.
+static analysis approach. SMV-Hunter [32] detects man-in-the-
+middle SSL/TLS vulnerabilities with a hybrid static and dynamic            [12] W. Cui, J. Kannan, and H. J. Wang, “Discoverer: Automatic protocol
+                                                                                reverse engineering from network traces,” in USENIX Security Symposium,
+analysis. However, few efforts have been focusing on identifying                Boston, MA, August 2007.
+the vulnerabilities in an app’s server side. AUTO F ORGE made              [13] W. Cui, V. Paxson, N. Weaver, and R. H. Katz, “Protocol-independent
+such a step in this direction and demonstrated that there are also              adaptive replay of application dialog,” in NDSS, San Diego, CA, February
+serious security vulnerabilities such as password brute forcing                 2006.
+
+
+                                                                      14
+[14]   W. Cui, M. Peinado, K. Chen, H. J. Wang, and L. Irun-Briz, “Tupni:                  [39] G. Wondracek, P. Milani, C. Kruegel, and E. Kirda, “Automatic network
+       Automatic reverse engineering of input formats,” in CCS, Alexandria,                     protocol analysis,” in NDSS, San Diego, CA, February 2008.
+       Virginia, USA, October 2008, pp. 391–402.                                           [40] Y. Zhang, F. Monrose, and M. K. Reiter, “The security of modern
+[15]   A. Das, J. Bonneau, M. Caesar, N. Borisov, and X. Wang, “The Tangled                     password expiration: An algorithmic framework and empirical analysis,”
+       Web of Password Reuse,” in NDSS, February 2014.                                          in CCS, ACM, 2010, pp. 176–186.
+[16]   W. Diffie, P. C. Van Oorschot, and M. J. Wiener, “Authentication and
+       authenticated key exchanges,” Designs, Codes and cryptography, vol. 2,                                            A PPENDIX
+       no. 2, pp. 107–125, 1992.
+[17]   M. Egele, C. Kruegel, E. Kirda, and G. Vigna, “Pios: Detecting privacy                  In §IV-B, we presented the detailed experimental results
+       leaks in ios applications,” in NDSS, 2011.                                          for 23 app servers, and these apps are selected based on their
+[18]   W. Enck, P. Gilbert, B. Chun, L. Cox, J. Jung, P. McDaniel, and A. Sheth,           categories. The detailed app classification, their version, and
+       “TaintDroid: an information-flow tracking system for realtime privacy               protocol information is presented in Table V. The result for
+       monitoring on smartphones,” in OSDI, 2010.                                          the 53 other app servers is presented in Table VI. Note that
+[19]   W. Enck, P. Gilbert, S. Han, V. Tendulkar, B.-G. Chun, L. P. Cox,                   one of the app vendors sent us special request to anonymize
+       J. Jung, P. McDaniel, and A. N. Sheth, “Taintdroid: an information-flow             their name, after we made the responsible disclosure to all the
+       tracking system for realtime privacy monitoring on smartphones,” ACM
+       Transactions on Computer Systems (TOCS), vol. 32, no. 2, p. 5, 2014.                vulnerable app vendors. The name of this app package is denoted
+[20]   F. Gröbert, C. Willems, and T. Holz, “Automated identification of crypto-
+                                                                                           anonymized_due_to_special_request in both Table V and VI.
+       graphic primitives in binary programs.” in RAID, vol. 6961. Springer,               We can see from Table V that these 76 apps fall into 21 categories
+       2011, pp. 41–60.                                                                    ranging from Books&Reference to Weather. Also, most apps use
+[21]   B. Ives, K. R. Walsh, and H. Schneider, “The domino effect of password              HTTPS protocol (54 out 76). Regarding Table VI, as its columns
+       reuse,” Commun. ACM, vol. 47, no. 4, pp. 75–78, Apr. 2004. [Online].                share the same format as Table III and we have explained them
+       Available: http://doi.acm.org/10.1145/975817.975820                                 in greater detail in §IV-B, detailed explanation of these results is
+[22]   Z. Lin, X. Jiang, D. Xu, and X. Zhang, “Automatic protocol format reverse           elided for brevity.
+       engineering through context-aware monitored execution,” in NDSS, San
+       Diego, CA, February 2008.
+[23]   L. Lu, Z. Li, Z. Wu, W. Lee, and G. Jiang, “Chex: statically vetting android
+       apps for component hijacking vulnerabilities,” in CCS. ACM, 2012, pp.
+       229–240.
+[24]   J. Ma, K. Levchenko, C. Kreibich, S. Savage, and G. M. Voelker,
+       “Unexpected means of protocol inference,” in IMC. Rio de Janeriro,
+       Brazil: ACM Press, 2006, pp. 313–326.
+[25]   P. Milani Comparetti, G. Wondracek, C. Kruegel, and E. Kirda, “Prospex:
+       Protocol Specification Extraction,” in IEEE Symposium on Security &
+       Privacy, Oakland, CA, 2009, pp. 110–125.
+[26]   A. Narayanan and V. Shmatikov, “Fast dictionary attacks on passwords
+       using time-space tradeoff,” in CCS, ACM, 2005, pp. 364–372
+[27]   S. B. Needleman and C. D. Wunsch, “A general method applicable to
+       the search for similarities in the amino acid sequence of two proteins,”
+       Journal of molecular biology, vol. 48, no. 3, pp. 443–453, 1970.
+[28]   J. Newsome, D. Brumley, J. Franklin, and D. Song, “Replayer: Automatic
+       protocol replay by binary analysis,” in CCS, 2006.
+[29]   P. Oechslin, “Making a faster cryptanalytic time-memory trade-off,” in
+       Advances in Cryptology-CRYPTO 2003. Springer, 2003, pp. 617–630.
+[30]   B. Schneier, “Cryptography: The importance of not being different,”
+       Computer, vol. 32, no. 3, pp. 108–109,112, Mar. 1999.
+[31]   M. Siegler, “One of the 32 million with a rockyou account? you may want
+       to change all your passwords. like now,” http://techcrunch.com/2009/12/
+       14/rockyou-hacked/, 2009.
+[32]   D. Sounthiraraj, J. Sahs, G. Greenwood, Z. Lin, and L. Khan, “Smv-
+       hunter: Large scale, automated detection of ssl/tls man-in-the-middle
+       vulnerabilities in android apps,” in NDSS, San Diego, CA, February 2014.
+[33]   J. Tam, J. Simsa, S. Hyde, and L. V. Ahn, “Breaking audio captchas,” in
+       NIPS, 2008, pp. 1625–1632.
+[34]   L. Von Ahn, M. Blum, N. J. Hopper, and J. Langford, “Captcha: Using
+       hard ai problems for security,” in Advances in Cryptology — EUROCRYPT
+       2003. Springer, 2003, pp. 294–311.
+[35]   R. A. Wagner and M. J. Fischer, “The string-to-string correction problem,”
+       Journal of the ACM (JACM), vol. 21, no. 1, pp. 168–173, 1974.
+[36]   R. Wang, Y. Zhou, S. Chen, S. Qadeer, D. Evans, and Y. Gurevich, “Ex-
+       plicating sdks: Uncovering assumptions underlying secure authentication
+       and authorization.” in USENIX Security, 2013, pp. 399–314.
+[37]   M. Weir, S. Aggarwal, B. d. Medeiros, and B. Glodek, “Password
+       cracking using probabilistic context-free grammars,” in SP, 2009, pp.
+       391–405.
+[38]   K. P. Weiss, “Method and apparatus for positively identifying an individ-
+       ual,” Jan. 19 1988, uS Patent 4,720,860.
+
+
+                                                                                      15
+TABLE V.    T HE CATEGORY, INSTALLS , APP NAME , VERSION , AND PROTOCOL INFORMATION FOR THE TESTED 76 APPS .
+       Category                #install   App Package Name                                         Version    Protocol
+
+       Books & Reference   100,000,000    com.sirma.mobile.bible.android                              6.0.3    HTTPS
+       Books & Reference    50,000,000    com.kobobooks.android                                 6.3.13738      HTTPS
+       Books & Reference     5,000,000    com.overdrive.mobile.android.mediaconsole                   3.4.0    HTTPS
+       Books & Reference     5,000,000    wp.wpbeta                                                 6.1.0.8    HTTPS
+       Business             10,000,000    com.sahibinden                                              2.4.0    HTTPS
+       Business              5,000,000    com.timesgroup.magicbricks                                  6.1.2     HTTP
+       Business              5,000,000    naukriApp.appModules.login                                  6.3.1    HTTPS
+       Business              1,000,000    com.careerjet.android                                       5.1.3     HTTP
+       Casual              500,000,000    me.pou.app                                                 1.4.67     HTTP
+       Comics                5,000,000    jp.ebookjapan.ebireader                                  2.3.79.0    HTTPS
+       Communication        50,000,000    com.browan.freeppmobile.android             FIAD.BRO.3.7.0.445        HTTP
+       Communication        50,000,000    com.mx.browser                                        4.5.0.2000     HTTPS
+       Communication        50,000,000    com.textmeinc.textme                                        2.8.8    HTTPS
+       Communication        50,000,000    ru.mail.mailapp                                     3.1.2.11965      HTTPS
+       Communication        10,000,000    com.my.mail                                         3.1.3.12222      HTTPS
+       Communication         5,000,000    com.mx.browser.tablet                                 4.3.5.2000     HTTPS
+       Communication         5,000,000    com.rebtel.android                                         3.11.0    HTTPS
+       Education             5,000,000    com.dictionary.flashcards                                       1     HTTP
+       Entertainment       100,000,000    com.imdb.mobile                                5.5.6.105561200       HTTPS
+       Entertainment        50,000,000    com.cgv.android.movieapp                                    4.0.7    HTTPS
+       Entertainment        50,000,000    com.dailymotion.dailymotion                                 4760     HTTPS
+       Entertainment        10,000,000    com.viewster.androidapp                                     4.6.3    HTTPS
+       Entertainment         5,000,000    com.gamefly.android.gamecenter                               3.49    HTTPS
+       Entertainment         5,000,000    com.stuckpixelinc.funnypics                                 3.3.1     HTTP
+       Finance               5,000,000    com.netgate                                                  8.22    HTTPS
+       Health & Fitness     50,000,000    com.fatsecret.android                                     4.1.2.2     HTTP
+       Health & Fitness     50,000,000    com.myfitnesspal.android                                    4.6.1    HTTPS
+       Health & Fitness     10,000,000    com.noom.walk                                               1.1.3     HTTP
+       Lifestyle            50,000,000    com.cookpad.android.activities                            5.2.1.0    HTTPS
+       Lifestyle            50,000,000    com.zillow.android.zillowmap                          6.6.8.4011     HTTPS
+       Lifestyle            10,000,000    com.dominospizza                                            2.7.0    HTTPS
+       Lifestyle             5,000,000    cn.etouch.ecalendar2                                        6.1.5    HTTPS
+       Media & Video        10,000,000    com.youku.phone                                             4.7.1     HTTP
+       Media & Video         5,000,000    com.qiyi.video.market                                       6.5.1    HTTPS
+       Media & Video         5,000,000    com.sohu.sohuvideo                                          4.3.5     HTTP
+       Media & Video         1,000,000    tv.danmaku.bili                                             4.2.3    HTTPS
+       Medical               5,000,000    com.aranoah.healthkart.plus                                 7.1.6     HTTP
+       Medical               5,000,000    com.sigmaphone.topmedfree                                   5.8.1    HTTPS
+       Medical               5,000,000    leafly.android                                              2.5.0     HTTP
+       Music & Audio       100,000,000    com.slacker.radio                                       6.0.1816     HTTPS
+       Music & Audio       100,000,000    com.soundcloud.android                          15.08.14-release     HTTPS
+       Music & Audio        50,000,000    com.clearchannel.iheartradio.controller                     5.8.0    HTTPS
+       Music & Audio        10,000,000    com.ad60.songza                                           5.2.0.0    HTTPS
+       Music & Audio        10,000,000    com.kugou.android                                           7.6.1     HTTP
+       Music & Audio        10,000,000    anonymized_due_to_special_request                               -    HTTPS
+       News & Magazines     50,000,000    com.cnn.mobile.android.phone                                2.8.2    HTTPS
+       News & Magazines     10,000,000    com.ideashower.readitlater.pro                              5.8.5    HTTPS
+       News & Magazines      5,000,000    anews.com                                                2.7.166      HTTP
+       News & Magazines      5,000,000    com.mobilesrepublic.appygamer                               5.1.4     HTTP
+       News & Magazines      5,000,000    com.mobilesrepublic.appygeek                                5.1.3     HTTP
+       Photography         500,000,000    com.picsart.studio                                          5.6.3    HTTPS
+       Productivity         50,000,000    com.autodesk.autocadws                                        3.1    HTTPS
+       Productivity         50,000,000    com.ecareme.asuswebstorage                            2.2.7.8664     HTTPS
+       Productivity          5,000,000    com.mediafire.android                                       3.2.3    HTTPS
+       Productivity          5,000,000    com.somcloud.somnote                                        2.2.1    HTTPS
+       Productivity          1,000,000    com.geeksoft.wps                                            3.0.7     HTTP
+       Shopping             50,000,000    com.biggu.shopsavvy                                         9.3.3    HTTPS
+       Shopping             50,000,000    com.walmart.android                                         2.8.2    HTTPS
+       Shopping             10,000,000    com.jabong.android                                          2.4.1    HTTPS
+       Shopping              5,000,000    com.bukalapak.android                                       3.0.1    HTTPS
+       Shopping              5,000,000    com.meucarrinho                                             5.6.1     HTTP
+       Shopping              5,000,000    com.miniinthebox.android                                   3.10.0     HTTP
+       Social              100,000,000    com.tumblr                                               3.9.0.50    HTTPS
+       Social               50,000,000    com.askfm                                                   2.2.1    HTTPS
+       Social               50,000,000    com.chatous.pointblank                                      3.5.1    HTTPS
+       Social               50,000,000    com.skout.android                                          4.14.4     HTTP
+       Social               50,000,000    com.unearby.sayhi                                            4.39     HTTP
+       Social               10,000,000    com.match.android.matchmobile                               3.2.0    HTTPS
+       Social                5,000,000    com.tenthbit.juliet                                         1.8.0    HTTPS
+       Sports               50,000,000    com.espn.score_center                                     4.4.1.1    HTTPS
+       Tools                10,000,000    com.sohu.inputmethod.sogou                                    7.6    HTTPS
+       Tools                 5,000,000    xcxin.fehd                                                  2.3.0    HTTPS
+       Transportation        5,000,000    taxi.android.client                                         5.4.5    HTTPS
+       Travel & Local       50,000,000    com.expedia.bookings                                        6.3.1    HTTPS
+       Travel & Local        5,000,000    com.viamichelin.android.michelintraffic                   4.3.0.4     HTTP
+       Weather               1,000,000    disasterAlert.PDC                                             3.2    HTTPS
+
+
+
+
+                                                            16
+                TABLE VI.          T HE DETAILED PASSWORD BRUTE - FORCING TESTING RESULT FOR THE OTHER 53 APP SERVERS .
+                                                                       Step ¶                        Step ·                                               Step ¸                                     Step ¹                                     Step º
+
+
+
+
+                                                                                                                                                                                                 EqualResonse?
+
+                                                                                                                                                                                                                 SysField Only?
+                                                                                                                                                                                  #CryptoField
+                                                                                       #Traced API
+
+
+                                                                                                     Encryption?
+
+
+
+
+                                                                                                                                         #DiffedField
+
+
+
+
+                                                                                                                                                                                                                                                             Vulnerable?
+                                                                                                                                                                    #InputField
+
+
+
+
+                                                                                                                                                                                                                                  #Sliced API
+                                                                         #Input Msg
+
+
+
+
+                                                                                                                                                        #SysField
+                                                                                                                   Hashing?
+
+
+
+
+                                                                                                                                                                                                                                                  #Request
+                                                                                                                              Signing?
+Category                                     App Package Name
+
+Books & Reference                        com.kobobooks.android             4           240           7             7          7           2              0            2             0               7            7                 0              21         X
+Books & Reference   com.overdrive.mobile.android.mediaconsole              4           448           7             7          7           2              0            2             0               7            7                 0              21         X
+Books & Reference                                        wp.wpbeta         4           333           7             7          7           2              0            2             0               7            7                 0              21         X
+Business                                    com.careerjet.android          4           28            X             7          7           2              1            0             1               7            X                 9              21         X
+Business                           com.timesgroup.magicbricks              4           89            7             7          X           2              0            0             2               7            X                20              21         X
+Business                          naukriApp.appModules.login               4           115           7             7          7           2              0            2             0               7            X                 0              21         X
+Communication                                      com.mx.browser          4           195           7             X          7           2              0            1             1               7            X                 7              21         X
+Communication                              com.mx.browser.tablet           4           178           7             X          7           2              0            1             1               7            X                 7              21         X
+Communication                                          com.my.mail         4           340           7             X          7           3              0            2             1               7            X                 7              21         X
+Communication                                   com.rebtel.android         4           208           7             X          7           5              2            2             1               7            X                 8              21         7
+Communication                               com.textmeinc.textme           4           241           7             X          7           2              0            1             1               7            X                 7              21         X
+Communication                                       ru.mail.mailapp        4           83            7             X          7           3              0            2             1               7            X                 7              21         X
+Entertainment                        com.cgv.android.movieapp              4           67            7             X          7           3              0            1             2               7            X                18              21         X
+Entertainment                     com.dailymotion.dailymotion              4           34            7             7          X           4              1            2             1               7            X                12              21         X
+Entertainment                 com.gamefly.android.gamecenter               4           86            7             7          X           4              1            2             1               7            X                 7              21         X
+Entertainment                      com.stuckpixelinc.funnypics             4           31            7             X          7           2              0            1             1               7            X                 7              21         X
+Entertainment                           com.viewster.androidapp            4           626           7             7          7           2              0            2             0               7            7                 0              21         X
+Health & Fitness                       com.myfitnesspal.android            4           269           7             X          7           2              0            1             1               7            X                 7              21         X
+Health & Fitness                                    com.noom.walk          4           48            7             X          7           3              0            2             1               7            7                18              21         X
+Lifestyle                                    cn.etouch.ecalendar2          4          1232           X             7          7           1              0            0             1               7            X                11              21         X
+Lifestyle                                       com.dominospizza           4           265           7             7          7           2              0            2             0               7            X                 0              21         X
+Lifestyle                        com.zillow.android.zillowmap              4           242           7             7          7           2              0            2             0               7            X                 0              21         X
+Media & Video                              com.qiyi.video.market           4          1169           7             X          7           4              1            2             1               7            X                18               3         7
+Media & Video                                 com.sohu.sohuvideo           4           72            7             X          7           2              0            1             1               7            X                 7              10         7
+Media & Video                                       tv.danmaku.bili        4          1294           X             X          7           3              0            1             2               7            X                15               3         7
+Medical                            com.sigmaphone.topmedfree               4           49            X             7          7           1              0            0             1               7            X                 1              15         7
+Medical                                               leafly.android       4           38            7             7          7           2              0            2             0               7            X                 0              21         X
+Music & Audio                                     com.ad60.songza          4           132           7             7          7           2              0            2             0               7            7                 0              21         X
+Music & Audio           com.clearchannel.iheartradio.controller            4          1237           7             7          7           2              0            2             0               7            X                 0              21         X
+Music & Audio                                  com.kugou.android           4           637           X             X          7           4              1            1             2               7            X                22              21         X
+Music & Audio                           com.soundcloud.android             4           60            7             7          7           2              0            2             0               7            X                 0              21         X
+Music & Audio             anonymized_due_to_special_request                4          1792           7             7          X           5              2            2             1               7            X                 7              21         X
+News & Magazines                                         anews.com         4           192           7             7          7           2              0            2             0               7            X                 0              21         X
+News & Magazines                 com.ideashower.readitlater.pro            4           239           7             7          7           2              0            2             0               7            X                 0              21         X
+News & Magazines               com.mobilesrepublic.appygamer               4           276           7             7          7           2              0            2             0               7            X                 0              21         X
+News & Magazines                com.mobilesrepublic.appygeek               4           883           7             7          7           2              0            2             0               7            X                 0              21         X
+Productivity                      com.ecareme.asuswebstorage               4           85            7             X          X           6              3            1             2               7            X                17              21         X
+Productivity                                     com.geeksoft.wps          4           25            7             X          7           3              0            2             1               7            X                 7              21         X
+Productivity                               com.mediafire.android           4           201           7             X          7           3              0            2             1               7            X                 8              12         7
+Productivity                             com.somcloud.somnote              4           743           7             X          X           5              2            1             2               7            X                14              21         X
+Shopping                                  com.bukalapak.android            4           430           X             7          7           1              0            0             1               7            X                 1              21         X
+Shopping                                       com.jabong.android          4           780           7             7          7           2              0            2             0               7            X                 0              21         X
+Shopping                                         com.meucarrinho           4           138           7             X          7           5              2            2             1               7            X                 7              21         X
+Shopping                              com.miniinthebox.android             4           228           X             X          7           4              1            1             2               7            X                19              21         X
+Shopping                                     com.walmart.android           4           343           7             7          7           2              0            2             0               7            7                 0              21         X
+Social                                                   com.askfm         4           75            7             7          X           3              0            1             2               7            X                 7              21         X
+Social                                   com.chatous.pointblank            4           43            7             7          7           1              0            0             0               7            X                 1              21         X
+Social                        com.match.android.matchmobile                4           308           7             7          7           2              0            2             0               7            X                 0              21         X
+Social                                          com.skout.android          4           115           7             X          7           3              0            2             1               7            X                 7               3         7
+Social                                          com.tenthbit.juliet        4           24            7             7          7           2              0            2             0               7            X                 0              21         X
+Social                                          com.unearby.sayhi          4           60            7             X          7           2              0            1             1               7            X                 7              21         X
+Tools                                                    xcxin.fehd        4           73            X             7          7           2              0            1             1               7            X                 7              21         X
+Travel & Local         com.viamichelin.android.michelintraffic             4           33            7             7          7           3              0            3             0               7            X                 0              21         X
+
+
+
+
+                                                                                      17

@@ -5,9 +5,9 @@ resource: "http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:44:37+00:00"
+  at: "2026-08-14T21:01:08+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2011.md:9"
 commit: ""
-content_sha256: 2e5449672f0365ad1815b91ae24a345b2484aacc0e347338fad331e10f2f4cc9
+content_sha256: 8303196fa665f07a764dde177437a2830b3993acc560fe4fd5933fae4dfbbc18
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: c76b9589f7263a36ff8978a70795ad1290a73daf2ce482493d8c3c74c3694ba0
 retrieved_from: "http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:44:37+00:00"
+retrieved_utc: "2026-08-14T21:01:08+00:00"
 slug: abusing-flash-proxies-client-side-cross-domain-http-requests
 snapshot: 20120617112536
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf>
-- Preserved from: http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf (stored) on 2026-08-11
+- Preserved from: http://polyboy.net/docs/2011_DIMVA_Flash_crossdomain_proxies.pdf (stored) on 2026-08-14
 - Capture timestamp: 20120617112536
 - Licence: unknown
 
@@ -249,12 +249,6 @@ proxy library.
 
 --- page 6 ---
 
-þý8ZJ²ÄCR6N%GkQÎú;XC&s=gR>*'‚',TzM.TG8
-5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
-·
-
---- page 7 ---
-
 A closer look at client-side Flash proxies for cross-domain requests 5
 Fig. 2: Interaction between JavaScript and the Flash proxy
 In a survey we were able to identify ve dierent published Flash proxy
@@ -293,16 +287,11 @@ in the same fashion as regular requests coming
 from the victim, hence, they are interpreted in the victim's current authentica-
 tion context.
 
---- page 8 ---
+--- page 7 ---
 
 !"#$%&'()#*)&+),-)$*&.#/0")(&%#/0")(1&/)2&.#/0")(3-("4&5)/0&'(6$$&768#9/&+),-)$*&'#""&'#"":#;<&=)*%60&>?*)(/#"@/*)(A#;)B;#""3;#"":#;<4C&D#E#5;(9F*&5*#(*&'()#*)&'(6$$&768#9/&+),-)$*&G#$%H.+&1&/)2&G#$%H.+34C&'#""&IF)/&=)*%60&G#$%H.+B6F)/3JK>LJM&-("4C&'#""&5)/0&=)*%60&G#$%H.+B$)/034C&5)*&'#"":#;<&=)*%60&G#$%H.+B6/()#0N$*#*)&1&A66C&'#"":#;<&=)*%60&A663()$F6/$)4C&5*6F&
 
---- page 9 ---
-
-Dý†ýMaÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
-·
-
---- page 10 ---
+--- page 8 ---
 
 6 Martin Johns, Sebastian Lekies
 Resulting malicious capabilities:
@@ -369,7 +358,7 @@ all ties to its original origin.2
 During investigating the topic, we only encountered one single blog post discussing
 the issue [29]. Besides that, there appears to be no awareness.
 
---- page 11 ---
+--- page 9 ---
 
 A closer look at client-side Flash proxies for cross-domain requests 7Listing 1
 Cross-domain inclusion of script and Flash code<!-- HTML source of a Web page served by a.net -->
@@ -421,7 +410,7 @@ a.net
 and import content
 from other domains via HTML tags, including cross-domain Flash applets.
 
---- page 12 ---
+--- page 10 ---
 
 8 Martin Johns, Sebastian Lekies
 In addition to
@@ -499,17 +488,11 @@ policy.
 In order to assess how wide spread the issues are, we conducted a survey to
 identify readymade client-side Flash proxies. We were able to identify ve dif-
 
---- page 13 ---
+--- page 11 ---
 
 !"#$%%&'()*+!"#$%%,'()*+!"#$%%-'()*+./01*+2/311435-6('758+9&/311:435-6(:#386&;<+!+++9-883=:-&&)11:>/35+435-6(?@"#$%&!A%<++!+9%&/311:435-6(:#386&;<+!"#$%%-'()*+B/3=1)/+C-D-E&/6#*+2/311F35-6('1=>+
 
---- page 14 ---
-
-þý8ZJ²ÄCR6N%GkQÎú;XC&s=gR>*'‚',TzM.TG8
-5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
-·
-
---- page 15 ---
+--- page 12 ---
 
 A closer look at client-side Flash proxies for cross-domain requests 9
 Fig. 4: Attack variant 1 - Transitivity of trust
@@ -552,17 +535,11 @@ The development of F4A seems to have ended. We included it in this survey, as it
 still in productive use, e.g., by sites such as
 nike.com
 
---- page 16 ---
+--- page 13 ---
 
 !"#$%%&'()*+,-./0)-+!"#$%%1'()*+2&3&41-5#*+6&'()*7+8-.009.:&5('0/;+++++++++6<'()*7+!"#$%%<'()*+!"#$%%&'()*+=8-.00>.:&5('?:@A+8..B5)+;.-+1'()*+
 
---- page 17 ---
-
-þý8ZJ²ÄCR6N%GkQÎú;XC&s=gR>*'‚',TzM.TG8
-5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
-·
-
---- page 18 ---
+--- page 14 ---
 
 10 Martin Johns, Sebastian Lekies
 Fig. 5: Attack variant 2 - Return to sender
@@ -593,17 +570,11 @@ Source
 JS-libs
 : Available plug-in for popular JavaScript frameworks: 1) JQuery, 2) Prototype, 3) Dojo, 4) Mootools
 
---- page 19 ---
+--- page 15 ---
 
 !"#$%%&'()*+,-./0)-+1..23)+4.-+5'()*+!"#$%%5'()*+!"#$%%&'()*+1-.006.7&3('0/4++++++++++85'()*9+:&;&<=-3#*+8&'()*9+
 
---- page 20 ---
-
-þý8ZJ²ÄCR6N%GkQÎú;XC&s=gR>*'‚',TzM.TG8
-5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
-·
-
---- page 21 ---
+--- page 16 ---
 
 A closer look at client-side Flash proxies for cross-domain requests 11
 with function wrappers [22]. With the method presented in Listing 2, an attacker
@@ -652,7 +623,7 @@ http://www.example.org
 ) potentially breaks the proxy's function-
 ality for one of the two alternatives.
 
---- page 22 ---
+--- page 17 ---
 
 12 Martin Johns, Sebastian Lekies
 4 Methods to provide secure client-side Flash proxy
@@ -695,7 +666,7 @@ External-
 Interface
 API to expose functionality to JavaScript. Cross-domain scripting
 
---- page 23 ---
+--- page 18 ---
 
 A closer look at client-side Flash proxies for cross-domain requests 13
 from JavaScript to Flash, however, is forbidden by default. In cases where
@@ -749,7 +720,7 @@ Flash's provided option to interact with it's surrounding container is via the
 ExternalInterface.call()
 method [3]. This method takes the name of one
 
---- page 24 ---
+--- page 19 ---
 
 A closer look at client-side Flash proxies for cross-domain requests 15
 However, if the URL received from JavaScript was manipulated, it diers
@@ -795,7 +766,7 @@ newLocation = null;
 // die
 }
 
---- page 25 ---
+--- page 20 ---
 
 16 Martin Johns, Sebastian Lekies
 Fig. 6: Interaction pattern between untrusted JavaScript and a secured Flash applet
@@ -823,17 +794,11 @@ However, this problem is easily avoided by the application. The appended nonce
 is clearly marked. Thus, removing it before processing the application's own
 fragment identier is straight forward.
 
---- page 26 ---
+--- page 21 ---
 
 !"#$%&'()#*)&+),-)$*&.#/0")(&&.#/0")(&1&/)2&.#/0")(3-("4&'#"5-"#*)&+#/067&#/0&+)08()5*&9(62$)(&:#(&(#/067&1&;#*%<(#/06734&=&/&>#(&?($*@("1&-("&A&BCB&A&(#/067D&/#:8E#*)F6@("3?($*@("4D&G)/0&'(6$$&H67#8/&+),-)$*&?($*@+I&11&"65#J6/<%()K&L)$&;#/8M-"#J6/&0)*)5*)0&N6&G*6M&O#:#G5(8M*&G*#(*&'()#*)&'(6$$&H67#8/&+),-)$*&P#$%Q.+&1&/)2&P#$%Q.+34D&'#""&RM)/&;)*%60&P#$%Q.+<6M)/3BSTFBU&-("4D&G)*&'#""V#5W&;)*%60&P#$%Q.+<6/()#0X$*#*)&1&K66D&'#""&G)/0&;)*%60&P#$%Q.+<$)/034D&'#""V#5W&;)*%60&K663()$M6/$)4D&
 
---- page 27 ---
-
-þý8ZJ²ÄCR6N%GkQÎú;XC&s=gR>*'‚',TzM.TG8
-5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
-·
-
---- page 28 ---
+--- page 22 ---
 
 A closer look at client-side Flash proxies for cross-domain requests 17
 6 Related work
@@ -887,7 +852,7 @@ As we have shown in this paper, the current movement to drop reliance on
 browser plug-ins in favor of applications that take full advantage of modern
 browser features might expose unexpected security pitfalls. There is a high
 
---- page 29 ---
+--- page 23 ---
 
 18 Martin Johns, Sebastian Lekies
 probability that for practical reasons, in this transition phase, Web applica-
@@ -952,7 +917,7 @@ http:
 //www.whatwg.org/specs/web-apps/current-work/
 , 2010.
 
---- page 30 ---
+--- page 24 ---
 
 A closer look at client-side Flash proxies for cross-domain requests 19
 10. Stefan Esser. Poking new holes with Flash Crossdomain Policy Files. [on-
@@ -1042,7 +1007,7 @@ blog/2006/aug/cross-domain-ajax-insecurity
 , Accessed in January 2011, Au-
 gust 2006.
 
---- page 31 ---
+--- page 25 ---
 
 20 Martin Johns, Sebastian Lekies
 28. Chriss Shiett. The Dangers of Cross-Domain Ajax
@@ -1084,10 +1049,10 @@ http:
 //code.google.com/p/browsersec/wiki/Main
 , (01/13/09), 2008.
 
---- page 32 ---
+--- page 26 ---
 
 ÓÙ�–ïRûÔDÕ¼ž]-‡÷äPóf
 
---- page 33 ---
+--- page 27 ---
 
 Ç:ˆdv¹ÄýbÉÿsI‚Aê	}óë—$yÕ7ö°çôQ¸¤/”J`�J€Búˆž=ñó©µ‡n

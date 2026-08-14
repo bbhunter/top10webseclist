@@ -261,6 +261,21 @@ CURL_ARGS = (
 )
 
 
+def _uncompressed(body):
+    """The archive's ordinary content-encoding guard, applied to curl's bytes.
+
+    `fetch_public` promises its bytes "face the ordinary archive guards", and
+    this is the one curl silently skips: it writes the response body to a file
+    exactly as it arrives, so a server answering `Content-Encoding: gzip`
+    without being asked lands in the content store still compressed. Two 2023
+    references were recovered from Wayback that way and published as binary
+    noise. Shared with the in-process client rather than reimplemented, so
+    there is one rule about what a stored body may be.
+    """
+    from . import fetcher
+    return fetcher.decompress(body)
+
+
 def fetch_insecure(url, log=None):
     """Fetch a URL WITHOUT verifying its certificate. Returns bytes.
 
@@ -292,7 +307,7 @@ def fetch_insecure(url, log=None):
         if not body:
             raise Unavailable("the insecure fetch returned nothing: "
                               + done.stdout.decode("utf-8", "replace")[-200:])
-        return body
+        return _uncompressed(body)
     except subprocess.TimeoutExpired:
         raise Unavailable("the insecure fetch did not finish within %ds" % TIMEOUT)
     finally:
@@ -324,7 +339,7 @@ def fetch_public(url, log=None):
         if not body:
             raise Unavailable("the container fetch returned nothing: "
                               + done.stdout.decode("utf-8", "replace")[-200:])
-        return body
+        return _uncompressed(body)
     except subprocess.TimeoutExpired:
         raise Unavailable("the container fetch did not finish within %ds" % TIMEOUT)
     finally:
@@ -559,7 +574,12 @@ def pdf_text(pdf_bytes, log=None):
         if not text.strip():
             raise Unavailable("pdftotext produced no text: "
                               + done.stderr.decode("utf-8", "replace")[-200:])
-        return text
+        # THE REPAIR BELONGS TO THE OUTPUT, NOT THE TOOL. Poppler reads fonts
+        # this repository never will, but a glyph mapped to nothing is lost to
+        # it as well: the 2008 CSRF paper arrives with `h?p://` throughout. The
+        # PDF itself is never touched - only the Markdown made from it.
+        from . import extract_doc
+        return extract_doc.repair_lost_words(text)[0]
     except subprocess.TimeoutExpired:
         raise Unavailable("reading the PDF did not finish within %ds" % TIMEOUT)
     finally:

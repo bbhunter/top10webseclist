@@ -74,6 +74,14 @@ def decode(body, content_type=""):
 
     Falls back to utf-8 with replacement rather than raising: a probe must
     always produce a classification, and a mis-decoded page is still a page.
+
+    LATIN-1 IS TRIED BEFORE GIVING UP, because the declaration is what lies. A
+    2010 article declares `charset=UTF-8` and serves Latin-1, so utf-8 fails on
+    its first accented byte; cp1252 then fails too, on a single 0x9d that
+    Windows leaves undefined, and the page was archived with "mayor?a" for
+    "mayoría". Latin-1 decodes every byte by construction, so it is last: a page
+    that IS valid utf-8 has already been decoded by then, and cannot be mangled
+    into Ã©-style mojibake by this.
     """
     charset = ""
     match = re.search(r"charset=([\w-]+)", content_type or "", re.IGNORECASE)
@@ -84,7 +92,7 @@ def decode(body, content_type=""):
         meta = re.search(r"charset=[\"']?([\w-]+)", head, re.IGNORECASE)
         if meta:
             charset = meta.group(1)
-    for candidate in (charset, "utf-8", "cp1252"):
+    for candidate in (charset, "utf-8", "cp1252", "latin-1"):
         if not candidate:
             continue
         try:

@@ -5,9 +5,9 @@ resource: "https://www.intruder.io/research/split-second-dns-rebinding-in-chrome
 tags: [article, webseclist-reference, en, intruder-io]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:29:26+00:00"
+  at: "2026-08-14T20:25:52+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://www.intruder.io/research/split-second-dns-rebinding-in-chrome-and-safari"
@@ -18,7 +18,7 @@ canonical_url: ""
 cited_by:
   - "2023.md:28"
 commit: ""
-content_sha256: d03cd211fcfc9bf42c1e08d5887b25610a46587030b6374cb8bfbd567247ee5a
+content_sha256: 20caec0ac26aa476418258eead713f5e7dc5111d4449e0c0a947c314ed72b134
 depth: full
 depth_reason: default
 kind: article
@@ -30,8 +30,8 @@ publisher: intruder.io
 publisher_english: ""
 raw_sha256: c3fd8a9f85e16711fc19721c8bebf630491b95483c7dd52a1e40155b6824fea2
 retrieved_from: "https://www.intruder.io/research/split-second-dns-rebinding-in-chrome-and-safari"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:29:26+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-14T20:25:52+00:00"
 slug: intruder-io-tricks-reliable-split-second-dns-rebinding-chrome-safari
 snapshot: ""
 title_english: ""
@@ -45,7 +45,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://www.intruder.io/research/split-second-dns-rebinding-in-chrome-and-safari>
-- Preserved from: https://www.intruder.io/research/split-second-dns-rebinding-in-chrome-and-safari (live) on 2026-08-10
+- Preserved from: https://www.intruder.io/research/split-second-dns-rebinding-in-chrome-and-safari (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -167,17 +167,3 @@ This bypass of Chrome's PNA restrictions was reported to the Chrome team through
 # Summary
 
 DNS rebinding can be a useful weapon in your arsenal for attacking web applications. In the first post in this series, I tried to show how rebinding exploits against web applications can be achievable without much complexity. In this post, I’ve provided tools and techniques to build reliable exploits against web applications driving automated browsers, even if they only load pages for a short time. I hope you now feel well-equipped to start using DNS rebinding in exploits against the applications you test.
-
-## Other research articles
-
-[![From enterprise chatbots to gooner caves: exposed AI infrastructure is rampant](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/69c65f5be3fdb1d002c176a3_%5Bblog%5D%20From%20Enterprise%20ChatBots%20To%20Gooner%20Caves%2C%20Scanning%20The%20Internet%20For%20Exposed%20LLM%20Infra.avif) ### From enterprise chatbots to gooner caves: exposed AI infrastructure is rampant We scanned 1 million AI services and found widespread misconfigurations, exposed credentials, and unauthenticated APIs. AI infrastructure security is falling dangerously behind.](https://www.intruder.io/research/from-enterprise-chatbots-to-gooner-caves-exposed-ai-infrastructure-is-rampant)
-
-[![A 0-day vending machine: No Mythos necessary](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/6a2ac91aa5ef310abe055947_0%20Day%20Vending%20Machine_blog%20header.jpg) ### A 0-day vending machine: No Mythos necessary This post details how we are using LLMs to find novel vulnerabilities using code scanning frameworks alongside pre-Mythos models.](https://www.intruder.io/research/a-0-day-vending-machine-no-mythos-necessary)
-
-[
-
-![Detecting Server-Side Prototype Pollution](https://cdn.prod.website-files.com/61dd9339d05701829d0b3241/63ecf9671b745240e0a16c36_blog-header.avif)
-
-### Detecting Server-Side Prototype Pollution
-
-Prototype pollution bugs have been a feature in many CTFs in recent years, and real-world examples in open-source applications have led to impactful exploits such as remote code execution and denial-of-service. The discovery of these bugs has long relied on access to source code, with no safe black-box detection techniques being widely used.

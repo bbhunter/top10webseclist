@@ -5,9 +5,9 @@ resource: "https://gwern.net/doc/cs/js/2013-stone.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:35:31+00:00"
+  at: "2026-08-14T21:01:04+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://gwern.net/doc/cs/js/2013-stone.pdf"
@@ -20,7 +20,7 @@ canonical_url: ""
 cited_by:
   - "2013.md:7"
 commit: ""
-content_sha256: 5a2e714eabcff2d5bcd73590e45bf7076ce2ea79e266070123cd1e3ba12e1310
+content_sha256: 94270da790b73174c9b9d73e63fd4369f61465560f1323eee52c8ad98c205cc1
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -33,7 +33,7 @@ publisher_english: ""
 raw_sha256: ad49079c6415cf017b3778ff60da1b2d0c52a70ae65a5f5ba6633e99876b4862
 retrieved_from: "https://gwern.net/doc/cs/js/2013-stone.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:35:31+00:00"
+retrieved_utc: "2026-08-14T21:01:04+00:00"
 slug: pixel-perfect-timing-attacks-html5
 snapshot: ""
 title_english: ""
@@ -47,7 +47,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://gwern.net/doc/cs/js/2013-stone.pdf>
-- Preserved from: https://gwern.net/doc/cs/js/2013-stone.pdf (stored) on 2026-08-11
+- Preserved from: https://gwern.net/doc/cs/js/2013-stone.pdf (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -440,12 +440,6 @@ turned off by default
 
 --- page 13 ---
 
-d'd&d%d$d#d"d!d dddddddddddddddddddddd
-d	dddddAÿdddddÿdþdýdüdûdúdùdød÷dödõdôdódòdñdðdïdîdídìdëdêdédèdçdædådädãdâdádàdßdÞdÝdÜdÛdÚdÙdØd×dÖdÕdÔdÓdÒdÑdÐdÏdÎdÍdÌdËdÊdÉdÈdÇdÆdÅdÄdÃdÂdÁdÀd¿d¾d½d¼d»dºd¹d¸d·d¶dµd´d³d²d±d°d¯d®d­d¬d«dªd©d¨d§d¦d¥d¤d£d¢d¡d dŸdžd�dœd›dšd™d˜d—d–d•d”d“d’d‘d�d�dŽd�dŒd‹dŠd‰dˆd‡d†d…dA€„dƒd‚d�d€dd~d}d|d{dzdydxdwdvdudtdsdrdqdpdodndmdldkdjdidhdgdfdedddcdbdad`d_d^d]dd[dZdYdXdWdVdUdTdSdRdPdOdNdLdKdJdIdHdGdFdEdDdCd+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Y+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++_^aÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
-·
-
---- page 14 ---
-
 Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 16 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 Timing the speed of SVG filters To test the performance of SVG filters in a web browser, requestAnimationFrame can again 
 be used. The following code shows how a simple test harness can be set up to time how 
 long a filter takes to apply to an image: <style>.f { filter: url(#morphology) } </style> <img src="input.png" id="e"> <svg> <filter id="morphology"> <feMorphology operator="erode" radius="30"> </filter> </svg> <script> var element= document.getElementById('e'); var count = 10; var times = []; var lastTime = 0; loop(t) { var diff = lastTime 
@@ -471,7 +465,7 @@ found to have timing differences, though to a lesser extent. Now that this varia
 ble timing has 
 been established, the next step is to use this in some useful way in a timing attack.
 
---- page 15 ---
+--- page 14 ---
 
 Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 17 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 Figure 19 Two different inputs with 
 the erode filter applied History Sniffing with SVG Filters The example above shows how a noisy image takes longer to filter than a flat image. If we 
@@ -499,7 +493,7 @@ with the corresponding pixel of the noise image. If the input is black (i.e. 0) 
 tput image 
 will also be black. If the input image is white, the result will be the noisy image.
 
---- page 16 ---
+--- page 15 ---
 
 Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 19 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 The first two steps are calibration steps. N
 calib
@@ -562,7 +556,7 @@ ck.
  Chrome does not support -moz-element, however it does support the SVG <pattern> 
 element which does essentially the same thing for SVG content.
 
---- page 17 ---
+--- page 16 ---
 
 Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 21 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 Figure 27 Top left: Original iframe 
 Top right: Iframe enlarged 8x 
@@ -597,11 +591,11 @@ It is possible to construct a text-recognising algorithm that can efficiently st
 cross-origin iframes, if a few constraints are applied: x
  The font face and size of the text to be read must be known
 
---- page 18 ---
+--- page 17 ---
 
 ¦ßQ�s{NÚ„«TŒœcŒ¥Œïxíô‘³å-œ¢Ò§_/ÿL~¦5Æ§GR£+Z1œjTÆÒIaç~ì8ß/
 
---- page 19 ---
+--- page 18 ---
 
 Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 24 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 Conclusion This paper has demonstrated how a malicious website can use the timing of browser 
 graphics operations to steal sensitive user data. Fortunately for users, timing attack
@@ -642,7 +636,7 @@ their history. This can be done by using the Ctrl-Shift-Del keyboard shortcut in
 , Chrome 
 and Internet Explorer.
 
---- page 20 ---
+--- page 19 ---
 
 Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 25 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 Security Bug Reports and Disclosure Context has reported all of the security related findings detailed in this paper to the relevant 
 browser vendors. Our original SVG filter timing attack research was done against Firefox and 
@@ -662,7 +656,7 @@ Link Repainting Attack: x
  Firefox bug report: https://bugzilla.mozilla.org/show_bug.cgi?id=884270 x
  Chrome bug report: https://code.google.com/p/chromium/issues/detail?id=252165
 
---- page 21 ---
+--- page 20 ---
 
 Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 26 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 About Context Context Information Security is an independent security consultancy specialising i
 n both 
@@ -685,44 +679,7 @@ hen
 we report back to clients we always communicate our findings and recommendations in 
 plain terms at a business level as well as in the form of an in-depth technical report.
 
---- page 22 ---
-
-Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 27 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 Works Cited [1] :&´7LPLQJ
-control for script-
-EDVHGDQLPDWLRQVµ>2QOLQH@
-Available: http://www.w3.org/TR/animation-timing/. [2] 6(PU\V´&66)LQJHUSULQWSUHOLPLQDU\GDWDµ>2QOLQH@$YDLODEOH
-http://saizai.livejournal.com/960791.html. [3] '-DQ5-KDOD6/HUQHUDQG+6KDFKDP´$QHPSLULFDOVWXG\RI
-privacy-
-YLRODWLQJLQIRUPDWLRQIORZVLQ-DYD6FULSWZHEDSSOLFDWLRQVµLQ
-17th ACM Conference on Computer and Communications Security
-, 
-2010. [4] '%DURQ´3UHYHQWLQJDWWDFNVRQDXVHU
-VK
-istory through CSS :visited 
-VHOHFWRUVµ>2QOLQH@$YDLODEOHKWWSGEDURQRUJPR]LOODYLVLWHG
--
-privacy. [5] =:HLQEHUJ(<&KHQ35-D\DUDPDQDQG&-DFNVRQ´,6WLOO.QRZ
-:KDW<RX9LVLWHG/DVW6XPPHUµLQ
-2011 IEEE Symposium on Security and 
-Privacy
-, 2011. [6] 0=DOHZVNL´6RPHKDUPOHVVROG
--
-IDVKLRQHGIXQZLWK&66µ
-[Online]. Available: http://lcamtuf.blogspot.co.uk/2013/05/some-
-harmless-old-fashioned-fun-with-css.html. [7] 0R]LOOD´0R]$IWHU3DLQWµ>2QOLQH@$YDLODEOH
-https://developer.mozilla.org/en-
-US/docs/Web/Reference/Events/MozAfterPaint. [8] ´%XJ
-- CSS timing attack on global history still possible with 
-0R]$IWHU3DLQWµ>2QOLQH@$YDLODEOH
-https://bugzilla.mozilla.org/show_bug.cgi?id=600025. [9] 0R]LOOD´%XJ
-- 
-'LVDEOH0R]$IWHU3DLQWIRUFRQWHQWE\GHIDXOWµ
-2010. [Online]. Available: 
-https://bugzilla.mozilla.org/show_bug.cgi?id=608030. [10] :&´7H[W6KDGRZVµ>2QOLQH@$YDLODEOH
-http://www.w3.org/Style/Examples/007/text-shadow.en.html. [11] :&´&667UDQVIRUPVµ>2QOLQH@$YDLODEOH
-http://www.w3.org/TR/css3-transforms/. [12] :&´)LOWHU(IIHFWVµ>2QOLQH@$YDLODEOH
-
---- page 23 ---
+--- page 21 ---
 
 Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 8 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 By using the requestAnimationFrame API, it is possible to detect when links are rep
 ainted. 
@@ -756,7 +713,7 @@ radius values 0
 350
 5px 10px 20px 30px 40pxTime (ms) blur-radius Firefox 21IE 10Chrome 27
 
---- page 24 ---
+--- page 22 ---
 
 Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 9 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 By applying our knowledge of how link repaints occur in Firefox and Internet Explorer, t
 he 
@@ -782,12 +739,7 @@ In Chrome, the links are not repainted after they are initially drawn, as shown 
 demo running in that browser. The first frame after links are inserted takes the same amount 
 of time regardless of whether a link is visited. Figure 10 Timing repaints in Chrome
 
---- page 25 ---
-
-#
-#0/B=%
-
---- page 26 ---
+--- page 23 ---
 
 Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 15 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 
 However, the Firefox code has an optimisation. As the kernel is moved over the input image 
@@ -828,7 +780,7 @@ optimised algorithm works. Figure 16 - Applying a dilation
 morphology operation thickens lines Figure 15 - Applying a dilation with a 
 3x3 kernel (radius 3) Figure 17 - The optimised morphology algorithm in Firefox
 
---- page 27 ---
+--- page 24 ---
 
 Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 18 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 <filter id="timingfilter1" filterRes="172"> <feImage xlink:href="noise.png"> <feComposite in2="SourceGraphic" operator="arithm
 etic" k1="1"> <feMorphology operator="erode" radius="30"> </filter> Figure 21 A timing attack filter using 
@@ -883,7 +835,7 @@ neg
 ²
  The internal steps of the timing filter
 
---- page 28 ---
+--- page 25 ---
 
 Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 20 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 <filter id="threshold" color-interpolation-filters=
 "sRGB"> <feColorMatrix type="matrix" values="0.333 0.333 0.333 0 -.16 0.333 0.333 0.333 0 -.16 0.333 0.333 0.333 0 -.16 0 0 0 0 1" /> <feComponentTransfer> <feFuncR type="discrete" tableValues="1 0" /> <feFuncG type="discrete" tableValues="1 0" /> <feFuncB type="discrete" tableValues="1 0" /> </feCompnentTransfer> </filter> Figure 25 Threshold SVG filter To enlarge pixels from the iframe, CSS transforms can be used. Normally when transforms are 
@@ -929,7 +881,7 @@ white
  x
  Repeat for each pixel in the desired area of the iframe to build up the stolen image
 
---- page 29 ---
+--- page 26 ---
 
 Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 22 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 x
  The location of the text on the page must be known (e.g. the location of userna
@@ -976,7 +928,7 @@ applied to match how the
 characters are read in the 
 timing attack.
 
---- page 30 ---
+--- page 27 ---
 
 Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 23 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 Next, the algorithm builds up a heat map by stacking the characters on top of each ot
 her, 
@@ -1013,31 +965,7 @@ binary tree will be taken, resulting in an incorrect character being read. This 
 prevented by taking several readings for each pixel, improving the accuracy of the read 
 text.
 
---- page 31 ---
-
-Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 28 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 http://www.w3.org/TR/2013/WD-filter-effects-20130523. [13] :&´69*)LOWHU(IIHFWV6SHFLILFDWLRQµ>2QOLQH@$YDLODEOH
-http://www.w3.org/TR/SVG/filters.html. [14] ´69*:RZµ>2QOLQH@$YDLODEOHKWWSVYJ
--wow.org/. [15] 0LFURVRIW´+DQGV2Q69*)LOWHU(IIHFWVµ>2QOLQH@$YDLODEOH
-http://ie.microsoft.com/testdrive/graphics/hands-on-css3/hands-
-on_svg-filter-effects.htm. [16] &RQWH[W,QIRUPDWLRQ6HFXULW\´:HE*/
-- A New Dimension for Browser 
-([SORLWDWLRQµ>2QOLQH@$YDLODEOH
-http://www.contextis.co.uk/research/blog/webgl-new-dimension-
-browser-exploitation/. [17] 5.RWFKH<3HLDQG3-XPGH´6WHDOLQJFURVV
--origin pixels: Timing 
-DWWDFNVRQ&66ILOWHUVDQGVKDGHUVµ>2QOLQH@$YDLODEOH
-http://www.robertkotcher.com/pdf/TimingAttacks.pdf. [18] 35RXJHW´)LUHIR['UDZLQJDUELWUDU\HOHPHQWVDVEDFNJURXQGVZLWK
--
-moz-
-HOHPHQWµ>2QOLQH@$YDLODEOH
-http://hacks.mozilla.org/2010/08/mozelement/. [19] 0R]LOOD´0R]LOOD'HYHORSHU1HWZRUN
-- image-
-UHQGHULQJµ>2QOLQH
-]. 
-Available: https://developer.mozilla.org/en-US/docs/Web/CSS/image-
-rendering.
-
---- page 32 ---
+--- page 28 ---
 
 Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 29 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 Context Information Security London 
 (HQ) Cheltenham Düsseldorf Melbourne 4th Floor 

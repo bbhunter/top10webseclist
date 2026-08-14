@@ -5,9 +5,9 @@ resource: "https://thomasrokicki.github.io/publications/wpc.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:37:15+00:00"
+  at: "2026-08-14T20:58:49+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://thomasrokicki.github.io/publications/wpc.pdf"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2022.md:67"
 commit: ""
-content_sha256: af5156a437aaa82cab5c3ade28101da0f25dc5e40adc61d70d2e0254c81d25bb
+content_sha256: cb659cc5d5b3d4f2baf575d0183b4fa9685ca55a1f2df74e52a45300f76d3d2e
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -36,7 +36,7 @@ publisher_english: ""
 raw_sha256: 37c9467c7169387d68b9424b4a0d41fc57584327f66a2f3b069f5a9b88965992
 retrieved_from: "https://thomasrokicki.github.io/publications/wpc.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:37:15+00:00"
+retrieved_utc: "2026-08-14T20:58:49+00:00"
 slug: port-contention-goes-portable-port-contention-side-channels-web-browsers
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://thomasrokicki.github.io/publications/wpc.pdf>
-- Preserved from: https://thomasrokicki.github.io/publications/wpc.pdf (stored) on 2026-08-11
+- Preserved from: https://thomasrokicki.github.io/publications/wpc.pdf (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -915,15 +915,5 @@ for 1 000 000
 instructions.
 
 --- page 14 ---
-
-K†˜¿“‹Åo€­±tH�QI8'¢äð¹•†=¢åºœçgZ�&¶»æ£d-®k:éì^
-
---- page 15 ---
-
-�?k»Tqê9°z®u6n[“öò”ˆÿJ®��8Zµš,Z”R¥éM’±Ç›:� 8
-"�FŸHxŒ1<N’k¦[¼÷«f@y×T†HÒg˜üíw§«ðŸb@
-Væ¡í�‡|.kK=¶ã³Æ0Æm´i ÿñí4öŠ;‹ó›6á;ßÓÜJ¨ëË­±ß×�…Q"äÔ	Á·­¶
-
---- page 16 ---
 
 që;Qz‘ƒ3	~eÑ?k±[EîŸ§^

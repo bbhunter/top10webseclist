@@ -96,7 +96,7 @@ class Response(object):
 GZIP_MAGIC = bytes([0x1F, 0x8B])
 
 
-def _decompress(body):
+def decompress(body):
     """Undo a content encoding the client never asked for.
 
     A server may answer gzip whatever the request said, and urllib does not
@@ -107,6 +107,13 @@ def _decompress(body):
 
     A body that will not decompress is returned untouched: this must never turn
     a readable page into an empty one.
+
+    PUBLIC, because urllib is not the only client that has to be guarded. Both
+    curl routes - the host fallback below and the toolbox's contained one - read
+    bytes straight off a pipe, and a Wayback replay answering `Content-Encoding:
+    gzip` stored two 2023 references still compressed. Each then extracted as
+    binary noise that reads exactly like a bad snapshot, and the recovery was
+    nearly abandoned as unrecoverable.
     """
     if not body or not body.startswith(GZIP_MAGIC):
         return body
@@ -158,13 +165,13 @@ class Fetcher(object):
         try:
             with self._opener.open(request, timeout=self.timeout) as handle:
                 return (handle.status, dict(handle.headers),
-                        _decompress(_read_capped(handle, max_bytes)), None)
+                        decompress(_read_capped(handle, max_bytes)), None)
         except urllib.error.HTTPError as error:
             # A 4xx/5xx is an ANSWER, not a failure. A 403 in particular is
             # usually a live page behind a wall, so its body is what identifies
             # the wall and must be kept.
             try:
-                body = _decompress(_read_capped(error, max_bytes))
+                body = decompress(_read_capped(error, max_bytes))
             except Exception:
                 body = b""
             return error.code, dict(error.headers or {}), body, None
@@ -207,7 +214,7 @@ def curl_get(url, timeout=30, max_bytes=MAX_PROBE_BYTES):
     if done.returncode != 0 or not done.stdout:
         return Response(url, 0, {}, b"", [],
                         done.stderr.decode("utf-8", "replace")[-200:])
-    return Response(url, 200, {}, done.stdout, [])
+    return Response(url, 200, {}, decompress(done.stdout), [])
 
 
 class _NoRedirect(urllib.request.HTTPRedirectHandler):

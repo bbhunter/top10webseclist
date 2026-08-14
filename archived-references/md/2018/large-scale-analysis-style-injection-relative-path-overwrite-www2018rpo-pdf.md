@@ -5,9 +5,9 @@ resource: "https://sajjadium.github.io/files/www2018rpo_paper.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:36:57+00:00"
+  at: "2026-08-14T20:59:25+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://sajjadium.github.io/files/www2018rpo_paper.pdf"
@@ -25,7 +25,7 @@ canonical_url: ""
 cited_by:
   - "2018.md:29"
 commit: ""
-content_sha256: 66d272e40dd5a0fa729c2d085e83c6360ca086a393c3284e61133ba7e5d9d5de
+content_sha256: 00b1fb3438e6f45bb14883b559a099243e79a9e4c5e40f3604994896cecb5425
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -38,7 +38,7 @@ publisher_english: ""
 raw_sha256: 676f7cfac5de25c95308a5758f9407ab633a1d66251278061cf0c6defa621458
 retrieved_from: "https://sajjadium.github.io/files/www2018rpo_paper.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:36:57+00:00"
+retrieved_utc: "2026-08-14T20:59:25+00:00"
 slug: large-scale-analysis-style-injection-relative-path-overwrite-www2018rpo-pdf
 snapshot: ""
 title_english: ""
@@ -52,7 +52,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://sajjadium.github.io/files/www2018rpo_paper.pdf>
-- Preserved from: https://sajjadium.github.io/files/www2018rpo_paper.pdf (stored) on 2026-08-11
+- Preserved from: https://sajjadium.github.io/files/www2018rpo_paper.pdf (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -109,34 +109,29 @@ ACM Reference Format:Sajjad Arshad, Seyed Ali Mirheidari, Tobias Lauinger, Bruno
 
 --- page 5 ---
 
-°‹4€ë, ‚ˆ—špk]…�/SIèW}”®#�Œ‚œ©>Ð‹Æÿƒ|}LMò�3»‡išýÔ°ØÁáÑ­{.C®,@”‹!“Æ{Þ0åÃw~�o™æÍ¼ËŒçÑAìž°²;§ôà–öwñâ%ÅçÜhL G!è~ëoFã
-G*ÀÔ7ãÂïŽãÚ/7]ÉF�Pø…ýèt‘„ô�C[›'@÷‘þ¯SG2¸yz·ã“õ>8êX0ÒÑ>UÐ¦hu†BÏ
-
---- page 6 ---
-
 Cross-Site Scripting (XSS) [37] attacks are one of the most commonthreats on the Web. While XSS has traditionally been understoodas the attacker's capability to inject script into a site and have itexecuted by the victim's web browser, more recent work has shownThis paper is published under the Creative Commons Attribution 4.0 International(CC BY 4.0) license. Authors reserve their rights to disseminate the work on theirpersonal and corporate Web sites with the appropriate attribution.
 WWW 2018, April 2327, 2018, Lyon, France
 ©2018 IW3C2 (International World Wide Web Conference Committee), publishedunder Creative Commons CC BY 4.0 License.
 ACM ISBN 978-1-4503-5639-8/18/04.
 https://doi.org/10.1145/3178876.3186090
 
---- page 7 ---
+--- page 6 ---
 
 that script injection is not a necessary precondition for eectiveattacks. By injecting Cascading Style Sheet (CSS) directives, forinstance, attackers can carry out so-calledscriptlessattacks [14]and exltrate secrets from a site.The aforementioned injection attacks typically arise due to thelack of separation between code and data [11], and more specically,insucient sanitization of untrusted inputs in web applications.While script injection attacks are more powerful than those basedon style injection, they are also more well-known as a threat, andweb developers are comparatively more likely to take steps to makethem more dicult. From an attacker's point of view, style injection
 
---- page 8 ---
+--- page 7 ---
 
 possible.There are many existing techniques of how style directives couldbe injected into a site [14,18]. A relatively recent class of attacksis Relative Path Overwrite (RPO), rst proposed in a blog postby Gareth Heyes [17] in 2014. These attacks exploit the semanticdisconnect between web browsers and web servers in interpretingrelative paths (path confusion). More concretely, in certain settingsan attacker can manipulate a page's URL in such a way that theweb server still returns the same content as for the benign URL.However, using the manipulated URL as the base, the web browser
 
---- page 9 ---
+--- page 8 ---
 
 lead to resources being loaded despite not being intended to beincluded by the developer. Depending on the implementation ofthe site, dierent variations of RPO attacks may be feasible. Forexample, an attacker could manipulate the URL to make the pageinclude user-generated content hosted on the same domain [48].When an injection vulnerability is present in a page, an attackercould manipulate the URL such that the web page references itselfas the stylesheet, which turns a simple text injection vulnerabilityinto a style sink [17]. Among these attack instantiations, the lattervariant has preconditions that are comparatively frequently met bysites. Our work focuses on this variant of RPO.
 
---- page 10 ---
+--- page 9 ---
 
 ties are on the Web. Especially since the attack is more recent andless well-known than traditional XSS, we believe it is importantto characterize the extent of the threat and quantify its enablingfactors. In this paper, we present the rst in-depth study of styleinjection vulnerability using RPO. We extract pages using relative-path stylesheets from the Common Crawl dataset [9], automaticallytest if style directives can be injected using RPO, and determinewhether they are interpreted by the browser. Out of 31 millionpages from 222 thousand Alexa Top 1 M sites [3] in the Common
 
---- page 11 ---
+--- page 10 ---
 
 Crawl that use relative-path stylesheets, we nd that 377 k pages(12 k sites) are vulnerable; 11 k pages on 1 k sites can be exploitedin Chrome, and nearly 55 k pages on over 3 k sites can be exploitedin Internet Explorer. We analyze a range of factors that prevent avulnerable page from being exploited, and discuss how these couldbe used to mitigate these vulnerabilities.
 The contributions of this paper are summarized as follows:
@@ -148,7 +143,7 @@ We link many exploitable pages to installations of ContentManagement Systems (CM
 2.2 Scriptless AttacksCross-Site Scripting is perhaps the most well-known web-basedattack, against which many sites defend by ltering user input.Client-side security mechanisms such as browser-based XSS l-ters [5] and Content Security Policy [45,50] also make it morechallenging for attackers to exploit injection vulnerabilities for XSS.This has led attackers (and researchers) to investigate potentialalternatives, such asscriptlessattacks. These attacks allow sningusers' browsing histories [19,29], exltrating arbitrary content [23],reading HTML attributes [16,24], and bypassing Clickjacking de-fenses [16]. In the following, we highlight two types of scriptlessattacks proposed in the literature. Both assume that an attacker can-not inject or execute script into a site. Instead, the attacker abusesfeatures related to Cascading Style Sheets (CSS).Heiderich et al. [14] consider scenarios where an attacker caninject CSS into the context of the third-party page so that the styledirectives are interpreted by the victim's browser when displayingthe page. That is, the injection sink is either located inside a stylecontext, or the attacker can inject markup to create a style contextaround the malicious CSS directives. While the CSS standard is in-tended for styling and layout purposes such as dening sizes, colors,or background images and as such does not contain any traditionalscripting capabilities, it does provide some context-sensitive fea-tures that, in combination, can be abused to extract and exltratedata. If the secret to be extracted is not displayed, such as a tokenin a hidden form eld or link URL, the attacker can use the CSSattribute accessor and content property to extract the secret andmake it visible as text, so that style directives can be applied to it.Custom attacker-supplied fonts can change the size of the secrettext depending on its value. Animation features can be used to cyclethrough a number of fonts in order to test dierent combinations.Media queries or the appearance of scrollbars can be used to imple-ment conditional style, and data exltration by loading a dierentURL for each condition from the attacker's server. Taken together,Heiderich et al. demonstrate that these techniques allow an attackerto steal credit card numbers or CSRF tokens [39] without scriptexecution.Rather than using layout-based information leaks to exltratedata from a page, Huang et al. [18] show how syntactically lax pars-ing of CSS can be abused to make browsers interpret an HTML pageas a stylesheet. The attack assumes that the page contains twoinjection sinks, one before and one after the location of the secretin the source code. The attacker injects two CSS fragments such as{}*{background:url('//attacker.com/?and');}, which makethe secret a part of the URL that will be loaded from the attacker'sserver when the directive is interpreted. It is assumed that theattacker cannot inject markup, thus the injected directive is notinterpreted as style when the site is conventionally opened in abrowser. However, the CSS standard mandates that browsers bevery forgiving when parsing CSS, skipping over parts they do notunderstand [49]. In practice, this means that an attacker can set upa site that loads the vulnerable third-party siteas a stylesheet. Whenthe victim visits the attacker's site while logged in, the victim'sbrowser loads the third-party site and interprets the style directive,causing the secret to be sent to the attacker. To counter this attack,modern browsers do not load documents with non-CSS contenttypes and syntax errors as stylesheets when they originate froma dierent domain than the including page. Yet, attacks based ontolerant CSS parsing are still feasible when both the including andthe included page are loaded from the same domain. Relative PathOverwrite attacks can abuse such a scenario [55].
 2.3 Relative Path OverwriteRelative Path Overwrite vulnerabilities can occur in sites that userelative paths to include resources such as scripts or stylesheets.Before a web browser can issue a request for such a resource to theserver, it must expand the relative path into an absolute URL. For
 
---- page 12 ---
+--- page 11 ---
 
 example, assume that a web browser has loaded an HTML documentfrom http://example.com/rpo/test.php which references a remotestylesheet with the relative path dist/styles.css. Web browsers treatURLs as le system-like paths, that is, test.php would be assumedto be a le within the parent directory rpo/, which would be usedas the starting point for relative paths, resulting in the absoluteURL http://example.com/rpo/dist/styles.css.However, the browser's interpretation of the URL may be verydierent from how the web server resolves the URL to determinewhich resource should be returned to the browser. The URL maynot correspond to an actual server-side le system structure atall, or the web server may internally rewrite parts of the URL. Forinstance, when a web server receives a request for http://example.com/rpo/test.php/ with an added trailing slash, it may still returnthe same HTML document corresponding to the test.php resource.Yet, to the browser this URL would appear to designate a directory(without a le name component), thus the browser would requestthe stylesheet from http://example.com/rpo/test.php/dist/styles.css.Depending on the server conguration, this may either result inan error since no such le exists, or the server may interpret dist/styles.css as a parameter to the script test.php and return the HTMLdocument. In the latter case, the HTML document includes itself asa stylesheet. Provided that the document contains a (text) injectionvulnerability, attackers can carry out the scriptless attacks; since thestylesheet inclusion is same-origin, the document load is permitted.The rst account of RPO is attributed to a blog post by GarethHeyes [17], introducing self-referencing a PHP script with server-side URL rewriting. Furthermore, the post notes that certain ver-sions of Internet Explorer allow JavaScript execution from within aCSS context in theCompatibility Viewmode [34], escalating styleinjection to XSS [54]. Another blog post by Dalili [10] extends thetechnique to IIS and ASP.Net applications, and shows how URL-encoded slashes are decoded by the server but not the browser,allowing not only self-reference but also the inclusion of dier-ent resources. Kettle [22] coins the term Path Relative StyleSheetImport (PRSSI) for a specic subset of RPO attacks, introduces aPRSSI vulnerability scanner for Burp Suite [7], and proposes coun-termeasures. Terada [48] provides more exploitation techniques forvarious browsers or certain web applications, and [55] discusses anexample chaining several vulnerabilities to result in a combinationof RPO and a double style injection attack. Gil shows how attackerscan deceive web cache servers by using RPO [12, 13]. Some of theattacks discussed in the various blog posts are custom-tailored tospecic sites or applications, whereas others are more generic andapply to certain web server congurations or frameworks.
 2.4 Preconditions for RPO Style AttacksFor the purpose of this paper, we focus on a generic type of RPOattack because its preconditions are less specic and are likely metby a larger number of sites. More formally, we dene a page asvulnerable
@@ -163,7 +158,7 @@ Even if the page species a document type that would usuallyresult in standards m
 HTTP header (or equivalent).Our measurement methodology in Section 3 tests how oftenthese preconditions hold in the wild in order to quantify the vul-nerability and exploitability of pages with respect to RPO attacks.
 2.5 Related WorkIn the previous sections, we surveyed a number of style-basedattacks in the scientic literature, and several blog posts discussingspecial cases of RPO. We are not aware of any scholarly work aboutRPO, or any research about how prevalent RPO vulnerabilities areon the Web. To the best of our knowledge, Burp Suite [7] is the rstand only tool that can detect PRSSI vulnerabilities based on RPOin web applications. However, in contrast to our work, it does notdetermine if the vulnerability can be exploited. Furthermore, weare the rst to provide a comprehensive survey of how widespreadRPO style vulnerabilities and exploitabilities are in the wild.
 
---- page 13 ---
+--- page 12 ---
 
 The separate class of script-based attacks has been studied ex-tensively, such as systematic analysis of XSS sanitization frame-works [53], detecting XSS vulnerabilities in Rich Internet Applica-tions [2], large-scale detection of DOM-based XSS [27,30], and by-passing XSS mitigations by Script Gadgets [25,26]. An array of XSSprevention mechanisms have been proposed, such as XSS Filter [41],XSS-Guard [6], SOMA [36], BluePrint [31], Document StructureIntegrity [35], XSS Auditor [5], NoScript [32], Context-SensitiveAuto-Sanitization (CSAS) [43], DOM-based XSS ltering using run-time taint tracking [46], preventing script injection through soft-ware design [20], Strict CSP [52], and DOMPurify [15]. However,the vulnerability measurements and proposed countermeasures ofthese works on script injection do not apply to RPO-based styleinjection.
 3 METHODOLOGYOur methodology consists of three main phases. We seed our systemwith pages from the Common Crawl archive to extractcandidatepages that include at least one stylesheet using a relative path.To determine whether these candidate pages arevulnerable, weattempt to inject style directives by requesting variations of eachpage's URL to causepath confusionand test whether the generatedresponse reects the injected style directives. Finally, we test howoften vulnerable pages can beexploitedby checking whether thereected style directives are parsed and used for rendering in a webbrowser.
@@ -172,7 +167,7 @@ The separate class of script-based attacks has been studied ex-tensively, such a
 (2)We observed that many sites use templates customized throughquery strings or path parameters. We expect these templatesto cause similar vulnerability and exploitability behavior fortheir instantiations, thus we can speed up our detection bygrouping URLs using the same template, and testing onlyone random representative of each group.In order to group pages, we replace all the values of queryparameters with constants, and we also replace any numberidentier in the path with a constant. We group pages thathave the same abstract URL as well as the same documenttype in the Common Crawl dataset. For example, we wouldgroup example.com/?lang=en and example.com/?lang=fr.Since our methodology contains a step during which we activelytest whether a vulnerability can be exploited, we remove from thecandidate set all pages hosted on sites in.gov,.mil,.army,.navy,and.airforce. The nal candidate set consists of 137 million pages(31 million page groups) on 222 thousand sites.
 3.2 Vulnerability AnalysisTo determine whether a candidate page is vulnerable, we imple-mented a lightweight crawler based on the Python Requests module.At a high level, the crawler simulates how a browser expands rela-tive paths and tests whether style directives can be injected intothe resources loaded as stylesheets using path confusion.For each page group from the candidate set, the crawler randomlyselects one representative URL and mutates it according to a numberof techniques explained below. Each of these techniques aims tocause path confusion and taints page inputs with a style directivecontaining a long unique, random string. The crawler requests themutated URL from the server and parses the response document,ignoring resources loaded in frames. If the response contains a<base>tag, the crawler considers the page not vulnerable since the<base>tag, if used correctly, can avoid path confusion. Otherwise,the crawler extracts all relative stylesheet paths from the responseand expands them using the mutated URL of the main page as thebase, emulating how browsers treat relative paths (see Section 2.3).The crawler then requests each unique stylesheet URL until onehas been found to reect the injected style in the response.The style directive we inject to test for reection vulnerabilitiesis shown in the legend of Figure 1. The payload begins with anencoded newline character, as we observed that the presence of anewline character increases the probability of a successful injection.We initially use%0Aas the newline character, but also test%0Cand%0Din case of unsuccessful injection. The remainder of the payloademulates the syntax of a simple CSS directive and mainly consistsof a randomly generated string used to locate the payload in thebody of the server response. If the crawler nds a string match ofthe injected unique string, it considers the page vulnerable.In the following, we describe the various URL mutation tech-niques we use to inject style directives. All techniques also useRPO so that instead of the original stylesheet les, browsers loaddierent resources that are more likely to contain an injection vul-nerability. Conceptually, the RPO approaches we use assume someform of server-side URL rewriting as described in Section 2.3. Thatis, the server internally resolves a crafted URL to the same scriptas the clean URL. Under that assumption, the path confusioncaused by RPO would result in the page referencing itself as thestylesheet when loaded in a web browser. However, this assump-tion is only conceptual and not necessary for the attack to succeed.For servers that do not internally rewrite URLs, our mutated URLslikely cause error responses since the URLs do not correspond toactual les located on these servers. Error responses are typicallyHTML documents and may contain injection sinks, such as whenthey display the URL of the le that could not be found. As such,server-generated error responses can be used for the attack in thesame way as regular pages.
 
---- page 14 ---
+--- page 13 ---
 
 /page.asp
 /page.asp
@@ -277,7 +272,7 @@ Encoded Query.Similar to the technique above, we replace theURL query delimiter 
 Cookie.Since stylesheets referenced by a relative path are lo-cated in the same origin as the referencing page, its cookies aresent when requesting the stylesheet. CSS injection may be possibleif an attacker can create new cookies or tamper with existing ones(a strong assumption compared to the other techniques), and if thepage reects cookie values in the response. As shown in Figure 1f,the URL is only modied by adding slashes to cause path confu-sion. The payload is injected into each cookie value and sent by thecrawler as an HTTP header.
 3.3 Exploitability AnalysisOnce a page has been found to be vulnerable to style injectionusing RPO, the nal step is to verify whether the reected CSS inthe response is evaluated by a real browser. To do so, we built acrawler based on Google Chrome, and used the Remote DebuggingProtocol [1] to drive the browser and record HTTP requests and re-sponses. In addition, we developed a Chrome extension to populatethe cookie header in CSS stylesheet requests with our payload.In order to detect exploitable pages, we crawled all the pages fromthe previous section that had at least one reection. Specically, foreach page we checked which of the techniques in Figure 1 led toreection, and crafted the main URL with a CSS payload. The CSSpayload used to verify exploitability is dierent from the simplepayload used to test reection. Specically, the style directive isprexed with a long sequence of}and]characters to close anypreceding open curly braces or brackets that may be located inthe source code of the page, since they might prevent the injectedstyle directive from being parsed correctly. The style directive usesa randomly-generated URL to load a background image for theHTML body. We determine whether the injected style is evaluated
 
---- page 15 ---
+--- page 14 ---
 
 by checking the browser's network trac for an outgoing HTTPrequest for the image.
 Overriding Document Types.Reected CSS is not always inter-preted by the browser. One possible explanation is the use of a mod-ern document type in the page, which does not cause the browserto render the page in quirks mode. Under certain circumstances, In-ternet Explorer allows a parent page to force the parsing mode of aframed page into quirks mode [22]. To test how often this approachsucceeds in practice, we also crawled vulnerable pages with Inter-net Explorer 11 by framing them while settingX-UA-Compatible
@@ -297,7 +292,7 @@ Doc. Types 9,833 2,965 2,898Table 1 shows a summary of our dataset.Tested Pagesr
 4.1 Relative Stylesheet PathsTo assess the extent to which our Common Crawl-seeded candidateset covers sites of dierent popularity, consider the hatched barsin Figure 2. Six out of the ten largest sites according to Alexa arerepresented in our candidate set. That is, they are contained in theCommon Crawl, and have relative style paths. The gure showsthat our candidate set contains a higher fraction of the largest sitesand a lower fraction of the smaller sites. Consequently, our resultsbetter represent the most popular sites, which receive most visitors,and most potential victims of RPO attacks.While all the pages in the candidate set contain at least onerelative stylesheet path, Figure 3 shows that 63.1 % of them containmultiple relative paths, which increases the chances of nding asuccessful RPO and style injection point.
 4.2 Vulnerable PagesWe consider a candidate page vulnerable if one of the style injec-tion techniques of Section 3.2 succeeds. In other words, the server'sresponse should reect the injected payload. Furthermore, we con-servatively require that the response not contain abasetag since acorrectly congured base tag can prevent path confusion.Table 2 shows that 1.2 % of pages are vulnerable to at least oneof the injection techniques, and 5.4 % of sites contain at least onevulnerable page. The path parameter technique is most eectiveagainst pages, followed by the encoded query and the encoded pathtechniques. Sites that are ranked higher according to Alexa are morelikely to be vulnerable, as shown in Figure 2, where vulnerable andexploitable sites are relative to the candidate set in each bucket.While one third of the candidate set in the Top 10 (two out of sixsites) is vulnerable, the percentage oscillates between 8 and 10 %among the Top 100 k. The candidate set is dominated by the smallersites in the ranks between 100 k and 1 M, which have a vulnerabilityrate of 4.9 % and push down the average over the entire ranking.Abasetag in the server response can prevent path confusionbecause it indicates how the browser should expand relative paths.We observed a number of inconsistencies with respect to its use.At rst, 603 pages on 60 sites contained abasetag in their re-sponse; however, the server response after injecting our payloaddid not contain the tag anymore, rendering these pages potentiallyexploitable. Furthermore, Internet Explorer's implementation ofthebasetag appears to be broken. When such a tag is present,Internet Explorer fetches two URLs for stylesheetsone expanded
 
---- page 16 ---
+--- page 15 ---
 
 Figure 2: Percentage of the Alexa site
 ranking in our candidate set (exponen-
@@ -327,15 +322,15 @@ one such document type.Doc. Type (shortened) Pages Sites(none) 1,818,595 (5.9 %)
 "-//W3C//DTD HTML 3.2 Final//EN" 22,019 (<0.1 %) 1,175 (0.5 %)
 "-//W3C//DTD HTML 3.2//EN" 10,839 (<0.1 %) 927 (0.4 %)All 3,046,449 (9.6 %) 71,597 (32.2 %)4.3.1 Document Types.HTML document types play a signi-cant role in RPO-based style injection attacks because browserstypically parse resources with a non-CSS content type in a CSScontext only when the page species an ancient or non-standardHTML document type (or none at all). The pages in our candidateset contain a total of 4,318 distinct document types. However, themajority of these unique document types are not standardized anddier from the standardized ones only by small variations, such asforgotten spaces or misspellings.To determine how browsers interpret these document types(i.e., whether they cause them to render a page in standards orquirks mode), we designed a controlled experiment. For each uniquedocument type, we set up a local page with a relative stylesheet pathand carried out an RPO attack to inject CSS using a payload similarto what we described in Section 3.2. We automatically openedthe local page in Chrome, Firefox, Edge, Internet Explorer, Safari,and Opera, and we kept track of which document type caused the
 
---- page 17 ---
+--- page 16 ---
 
 µ¼Í#çH�^BOÃ/×0ò
 
---- page 18 ---
+--- page 17 ---
 
 á‰M¿›†¦Rå»þÎ¢£§˜ôªTÑ2ºà_çÞ×
 
---- page 19 ---
+--- page 18 ---
 
 0-1010-100100-1K1K-10K10K-100K100K-1MAlexa Rank
 0
@@ -349,7 +344,7 @@ one such document type.Doc. Type (shortened) Pages Sites(none) 1,818,595 (5.9 %)
 % of SitesCandidate SetVulnerable
 Exploitable
 
---- page 20 ---
+--- page 19 ---
 
 100101102# of Relative Stylesheets
 0
@@ -373,7 +368,7 @@ Exploitable
 CDFPages
 Sites
 
---- page 21 ---
+--- page 20 ---
 
 100101102103Doc. Type Rank
 0e+00
@@ -384,7 +379,7 @@ Sites
 1e+05
 # of SitesQuirks ModeStandard Mode
 
---- page 22 ---
+--- page 21 ---
 
 Table 5: Summary of document type usage in sites.Doc. Type At Least One Crawled Page All Crawled PagesNone 56,985 (25.6%) 19,968 (9.0%)
 Quirks 27,794 (12.5%) 7,720 (3.5%)
@@ -395,7 +390,7 @@ Some sites use a range of tech-niques to prevent other pages from loading them i
 X-Content-Type-Options: nosniff
 [4, 21, 33].To determine whether the injected CSS is still being parsed andexecuted in presence of this header while the browser renders inquirks mode, we ran an experiment similar to Section 4.3.1. Foreach browser in Table 3, we extracted the document types in whichthe browser renders in quirks mode, and for each of them, we setup a local page with a relative stylesheet path. We then opened the
 
---- page 23 ---
+--- page 22 ---
 
 page in the browser, launched an RPO attack, and monitored if theinjected CSS was executed.Only Firefox, Internet Explorer, and Edge respected this headerand did not interpret injected CSS in any of the quirks mode docu-ment types. The remaining browsers did not block the stylesheeteven though the content type was nottext/css. With an addi-tional experiment, we conrmed that Internet Explorer blocked ourinjected CSS payload whennosniffwas set, even in the case ofthe framing technique.Out of all the vulnerable pages, 96,618 pages across 232 sites hadanosniffresponse header; 23 pages across 10 sites were conrmedexploitable in Chrome but not in Internet Explorer, since the latterbrowser respects the header while the former does not.
 4.4 Content Management SystemsWhile analyzing the exploitable pages in our dataset, we noticedthat many appeared to belong to well-known CMSes. Since theseweb applications are typically installed on thousands of sites, xingRPO weaknesses in these applications could have a large impact.To identify CMSes, we visited all exploitable pages using Wappa-lyzer [51]. Additionally, we detected two CMSes that were not sup-ported by Wappalyzer. Overall, we identied 23 CMSes on 41,288pages across 1,589 sites. Afterwards, we manually investigatedwhether the RPO weakness stemmed from the CMS by installingthe latest version of each CMS (or using the online demo), andtesting whether exploitable paths found in our dataset were alsoexploitable in the CMS. After careful analysis, we conrmed fourCMSes to be exploitable in their most recent version that are beingused by 40,255 pages across 1,197 sites.Out of the four exploitable CMSes, one declares no documenttype and one uses a quirks mode document type. These two CMSescan be exploited in Chrome, whereas the remaining two can beexploited with the framing trick in Internet Explorer. Beyond theview of our Common Crawl candidate set, Wappalyzer detectednearly 32 k installations of these CMSes across the Internet, whichsuggests that many more sites could be attacked with RPO. Wereported the RPO weaknesses to the vendors of these CMSes usingrecommended notication techniques [8,28,47]. Thus far, we heardback from one of the vendors, who acknowledged the vulnerabilityand are going to take the necessary steps to x the issue. However,we have not received any response from the other vendors.
@@ -410,7 +405,7 @@ REFERENCES
 [2]Steven Van Acker, Nick Nikiforakis, Lieven Desmet, Wouter Joosen, and FrankPiessens. 2012. FlashOver: Automated Discovery of Cross-site Scripting Vul-nerabilities in Rich Internet Applications. InACM Symposium on Information,Computer and Communications Security (ASIACCS)
 .
 
---- page 24 ---
+--- page 23 ---
 
 [3] Alexa. 2016. Top Sites. http://www.alexa.com/topsites. (2016).
 [4]Adam Barth, Juan Caballero, and Dawn Song. 2009. Secure Content Sningfor Web Browsers, or How to Stop Papers from Reviewing Themselves. InIEEESymposium on Security and Privacy (S&P)
@@ -496,10 +491,10 @@ USENIX Security Symposium
 [54]XSS Jigsaw. 2015. CSS: Cascading Style Scripting. http://blog.innerht.ml/cascading-style-scripting/. (2015).
 [55] XSS Jigsaw. 2016. RPO Gadgets. http://blog.innerht.ml/rpo-gadgets/. (2016).
 
---- page 25 ---
+--- page 24 ---
 
 w,.—üÌŠ£…õÆ›ö'VaÕqÞ�™EXÌO‹ [ý/½¾ÓŠ§ô"FXGêôZ-BlØ°¹™Ï?
 
---- page 26 ---
+--- page 25 ---
 
 œ£Cpqë.	Ž'÷}éæDçH$³	x²-B¦N1Ò÷^ÆlJ�WlA}Á�_àUxÄ�Š7

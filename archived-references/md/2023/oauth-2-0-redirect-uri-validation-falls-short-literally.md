@@ -2,18 +2,25 @@
 type: Whitepaper
 title: OAuth 2.0 Redirect URI Validation Falls Short, Literally
 resource: "https://seclab.nu/static/publications/acsac23oauth.pdf"
-tags: [whitepaper, webseclist-reference]
+tags: [whitepaper, webseclist-reference, acsac-23]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-12T16:02:13+00:00"
+  at: "2026-08-14T16:32:02+00:00"
 status: stable
-stale_after: 2027-08-12
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://seclab.nu/static/publications/acsac23oauth.pdf"
     title: OAuth 2.0 Redirect URI Validation Falls Short, Literally
+    author: Tommaso Innocenti, Matteo Golinelli, Kaan Onarlioglu, Ali Mirheidari, Bruno Crispo, Engin Kirda
 also_at: []
-authors: []
+authors:
+  - Tommaso Innocenti
+  - Matteo Golinelli
+  - Kaan Onarlioglu
+  - Ali Mirheidari
+  - Bruno Crispo
+  - Engin Kirda
 canonical_url: ""
 cited_by:
   - "2023.md:23"
@@ -26,12 +33,12 @@ language: ""
 licence: unknown
 original_url: "https://seclab.nu/static/publications/acsac23oauth.pdf"
 published: ""
-publisher: ""
+publisher: "ACSAC '23"
 publisher_english: ""
 raw_sha256: 101dbc7ec0a76cf179783d3f27ccc94905f9dba82026bbfb195b75caa8b5502f
 retrieved_from: "https://seclab.nu/static/publications/acsac23oauth.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-12T16:02:13+00:00"
+retrieved_utc: "2026-08-14T16:32:02+00:00"
 slug: oauth-2-0-redirect-uri-validation-falls-short-literally
 snapshot: ""
 title_english: ""
@@ -41,11 +48,11 @@ translation_of: ""
 
 # OAuth 2.0 Redirect URI Validation Falls Short, Literally
 
-**OAuth 2.0 Redirect URI Validation Falls Short, Literally** - Author not stated, Publisher not stated.
+**OAuth 2.0 Redirect URI Validation Falls Short, Literally** - Tommaso Innocenti, Matteo Golinelli, Kaan Onarlioglu, Ali Mirheidari, Bruno Crispo, Engin Kirda, ACSAC '23.
 
 - Published: date not stated
 - Original: <https://seclab.nu/static/publications/acsac23oauth.pdf>
-- Preserved from: https://seclab.nu/static/publications/acsac23oauth.pdf (stored) on 2026-08-12
+- Preserved from: https://seclab.nu/static/publications/acsac23oauth.pdf (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research

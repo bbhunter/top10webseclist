@@ -91,6 +91,18 @@ class RecoverySelectorTests(unittest.TestCase):
         refs._apply_title_override(record, entry, "Recovered title", {"casino-sale"})
         self.assertEqual("2008-sectheory-recovered-title", record["slug"])
 
+    def test_a_rerender_keeps_the_date_the_manifest_still_holds(self):
+        """A moved page that declares no date must not blank a known one."""
+        entry = {"published": "2023-04-27", "publisher": "NCC Group Research Blog",
+                 "licence": "unknown", "language": "en", "authors": ["Roger Meyer"]}
+        record = {"published": "", "publisher": "nccgroup.com", "authors": []}
+        refs._carry_preserved_facts(record, entry)
+        self.assertEqual("2023-04-27", record["published"])
+        self.assertEqual(["Roger Meyer"], record["authors"])
+        self.assertEqual("en", record["language"])
+        # a fact the fetch DID find still wins
+        self.assertEqual("nccgroup.com", record["publisher"])
+
     def test_a_stated_byline_reaches_both_the_entry_and_the_rendered_record(self):
         entry, record = {"authors": []}, {"authors": []}
         applied = refs._apply_attribution_override(

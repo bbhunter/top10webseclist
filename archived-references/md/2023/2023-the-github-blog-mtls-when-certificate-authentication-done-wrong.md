@@ -5,9 +5,9 @@ resource: "https://github.blog/2023-08-17-mtls-when-certificate-authentication-i
 tags: [article, webseclist-reference, en, the-github-blog]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-10T15:10:19+00:00"
+  at: "2026-08-14T20:25:52+00:00"
 status: stable
-stale_after: 2027-08-10
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://github.blog/2023-08-17-mtls-when-certificate-authentication-is-done-wrong/"
@@ -23,7 +23,7 @@ canonical_url: "https://github.blog/security/vulnerability-research/mtls-when-ce
 cited_by:
   - "2023.md:19"
 commit: ""
-content_sha256: f90075ddc8eec8c9e8c85825687bea6d22385624e0e15fce5ecd14e06c96c392
+content_sha256: 7d437b5f8d4b31f9e8e06e26c3ae066e9321a65ed32ed3fb8de526aa7c3caceb
 depth: full
 depth_reason: default
 kind: article
@@ -35,8 +35,8 @@ publisher: The GitHub Blog
 publisher_english: ""
 raw_sha256: 30f657fa647e4c79da815d81f5449e553cad2ba0346dc77cc8cacf3012b02453
 retrieved_from: "https://github.blog/security/vulnerability-research/mtls-when-certificate-authentication-is-done-wrong/"
-retrieved_kind: live
-retrieved_utc: "2026-08-10T15:10:19+00:00"
+retrieved_kind: stored
+retrieved_utc: "2026-08-14T20:25:52+00:00"
 slug: 2023-the-github-blog-mtls-when-certificate-authentication-done-wrong
 snapshot: ""
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 - Published: 2023-08-17
 - Original: <https://github.blog/2023-08-17-mtls-when-certificate-authentication-is-done-wrong/>
 - Current location: <https://github.blog/security/vulnerability-research/mtls-when-certificate-authentication-is-done-wrong/>
-- Preserved from: https://github.blog/security/vulnerability-research/mtls-when-certificate-authentication-is-done-wrong/ (live) on 2026-08-10
+- Preserved from: https://github.blog/security/vulnerability-research/mtls-when-certificate-authentication-is-done-wrong/ (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -425,29 +425,3 @@ If you’re developing an mTLS system or performing a security assessment, I sug
 ##  Written by
 
    ![Michael Stepankin](https://avatars.githubusercontent.com/u/44605151?v=4&s=200)
-
-##  Related posts
-
- ![Decorative image featuring geometric blocks with a shield icon displaying a check mark to represent security.](https://github.blog/wp-content/uploads/2026/01/generic-security-logo-github-blocks.png?resize=400%2C212)
-
-[Security](https://github.blog/security/)
-
-###  [ How we took malware advisories beyond npm ](https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/)
-
-GitHub malware advisories no longer stop at npm. Here’s how we wired OpenSSF’s malicious-packages data into the Advisory Database, and why we built the pipeline paranoid.
-
- ![Decorative image featuring geometric blocks with a shield icon displaying a check mark to represent security.](https://github.blog/wp-content/uploads/2026/01/generic-security-logo-github-blocks.png?resize=400%2C212)
-
-[Engineering](https://github.blog/engineering/)
-
-###  [ Tame Dependabot: Group your updates, slow the cadence, keep security fast ](https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/)
-
-Dependabot keeps your dependencies current, but its defaults can flood your repository with pull requests. Here’s how grouping updates, slowing the cadence, and keeping security fixes fast cut the noise on a Microsoft open source project.
-
- ![A shield with a checkmark icon appears centered among decorative green blocks.](https://github.blog/wp-content/uploads/2026/01/github-generic-security-blocks-logo.png?resize=400%2C212)
-
-[Security](https://github.blog/security/)
-
-###  [ Disrupting supply chain attacks on npm and GitHub Actions ](https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/)
-
-Explore the changes we’ve shipped across npm and GitHub Actions over the past few months to disrupt supply chain attack techniques and limit their impact.

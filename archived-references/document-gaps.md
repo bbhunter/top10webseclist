@@ -42,4 +42,12 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-Nothing unresolved. Every cited source has a local copy.
+1 reference(s) unresolved. 1 of them already have their raw bytes stored.
+
+## https://www.linkedin.com/pulse/how-i-used-google-dorks-find-0-days-suraj-khetani/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the cited URL now redirects to https://www.linkedin.com/top-content/?trk=article_not_found, so the archived document is that page rather than "How I used google dorks to find 0-days"; recapture from a Wayback snapshot of the original URL (reported 2026-08-14)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2016-17.md:48`

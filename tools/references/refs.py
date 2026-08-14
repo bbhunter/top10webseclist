@@ -160,6 +160,29 @@ def attribution_decision(key, entry, decisions, readings):
     return stated
 
 
+def _carry_preserved_facts(record, entry):
+    """Give the RENDER the facts the MANIFEST just kept.
+
+    `acquire` copies a field from the fresh record to the entry only when the
+    fetch actually found one, so a source that declares nothing leaves the
+    manifest's existing publisher, date, licence or byline standing. `render`
+    reads the RECORD, though, so without this the published file contradicts
+    the manifest it was rendered from - and silently, because both look fine on
+    their own.
+
+    Found on NCC Group's "State of DNS Rebinding in 2023": the article moved to
+    a page that states its date only in a search-index meta tag, so a re-render
+    printed "Published: date not stated" over a recorded 2023-04-27.
+
+    Only fills what the record LACKS. A fetch that found a fact still wins, so
+    this cannot pin a stale value on a page that corrected itself.
+    """
+    for field in ("licence", "publisher", "published", "language", "authors"):
+        if entry.get(field) and not record.get(field):
+            record[field] = entry[field]
+    return record
+
+
 def _slug_after_attribution(entry, judged):
     """The slug the next `acquire` would build, when a stated publisher moves it.
 
@@ -881,6 +904,7 @@ def command_acquire(args):
             for field in ("title_english", "publisher_english"):
                 if entry.get(field):
                     record[field] = entry[field]
+            _carry_preserved_facts(record, entry)
             try:
                 text = render_module.render(record, content, record["depth"])
             except render_module.MissingAttribution as error:

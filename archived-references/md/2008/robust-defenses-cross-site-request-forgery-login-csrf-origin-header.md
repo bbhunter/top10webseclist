@@ -5,9 +5,9 @@ resource: "https://seclab.stanford.edu/websec/csrf/csrf.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:45:19+00:00"
+  at: "2026-08-14T21:04:46+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://seclab.stanford.edu/websec/csrf/csrf.pdf"
@@ -22,7 +22,7 @@ canonical_url: ""
 cited_by:
   - "2008.md:85"
 commit: ""
-content_sha256: 6e2386eaf2f61ac3e4b13ed006c79d3001bf8ae5175c32bff055c99d664767e9
+content_sha256: dee60f91e0523e11bf21fd8662bf1e2de658ab796a3825cc9b109e22222647d3
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -35,7 +35,7 @@ publisher_english: ""
 raw_sha256: 00218eb56fc5827e46cbe138a3a82116c42c064550a1992112de75b8a68c0191
 retrieved_from: "https://seclab.stanford.edu/websec/csrf/csrf.pdf"
 retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:45:19+00:00"
+retrieved_utc: "2026-08-14T21:04:46+00:00"
 slug: robust-defenses-cross-site-request-forgery-login-csrf-origin-header
 snapshot: ""
 title_english: ""
@@ -49,7 +49,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://seclab.stanford.edu/websec/csrf/csrf.pdf>
-- Preserved from: https://seclab.stanford.edu/websec/csrf/csrf.pdf (stored) on 2026-08-11
+- Preserved from: https://seclab.stanford.edu/websec/csrf/csrf.pdf (stored) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -558,20 +558,20 @@ number of request parameters, including the Referer header,
 the User-Agent header, the date, the client’s class C net-        Discussion. There are two strong pieces of evidence that
 work, and the session identifier. Using JavaScript, the servers   the Referer header is usually suppressed in the network and
 recorded the value of document.referrer DOM API as well.          not in the browser.
-               h�p://x → h�p://y GET
+               http://x → http://y GET
 
-             h�p://x → h�p://y POST
+             http://x → http://y POST
 
-               h�p://x → h�p://x GET
+               http://x → http://x GET
 
-              h�p://x → h�p://x POST
+              http://x → http://x POST
 
-             h�ps://x → h�ps://y GET
+             https://x → https://y GET
 
-            h�ps://x → h�ps://y POST
+            https://x → https://y POST
 
-             h�ps://x → h�ps://x GET                                                             Ad Network A
-            h�ps://x → h�ps://x POST                                                             Ad Network B
+             https://x → https://x GET                                                             Ad Network A
+            https://x → https://x POST                                                             Ad Network B
 
                                        0%       2%            4%          6%          8%          10%         12%
 
@@ -622,29 +622,29 @@ Conclusions. We draw two main conclusions:
                                                                    ject all state-modifying requests that are not accompanied
   1. CSRF Defense over HTTPS. The Referer header                   by the header. For example, to defend against login CSRF,
      can be used as a CSRF defense for HTTPS requests.             the site must send the user’s authentication credentials to
-              h�ps://x → h�p://y                                                                                          99.5%
-              h�ps://x → h�p://x                                                                                          99.7%
+              https://x → http://y                                                                                          99.5%
+              https://x → http://x                                                                                          99.7%
 
-               h�p://x → h�p://y
+               http://x → http://y
                                               PS
 
 
 
-               h�p://x → h�p://x              PS
+               http://x → http://x              PS
                                                             Firefox 1.x
 
-              h�p://x → h�ps://y
+              http://x → https://y
                                         PS
 
 
-              h�p://x → h�ps://x
+              http://x → https://x
                                          PS
 
 
-             h�ps://x → h�ps://y                                                                     Image
+             https://x → https://y                                                                     Image
                                         PS         Opera                                             Form
                                                                                                      document.referrer
-             h�ps://x → h�ps://x        PS                                                           XMLH�pRequest
+             https://x → https://x        PS                                                           XMLH�pRequest
                                               Firefox 1.x
 
                                    0%                             1%        2%                  3%                       4%

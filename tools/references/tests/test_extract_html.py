@@ -10,7 +10,34 @@ from . import support  # noqa: F401
 
 import unittest
 
-from refslib import extract_html
+from refslib import extract_html, htmltext
+
+
+class TestDecodingBytes(unittest.TestCase):
+    """The declared charset is a claim, not evidence."""
+
+    def test_a_page_that_lies_about_being_utf8_is_still_read(self):
+        """Declares UTF-8, serves Latin-1, and carries a byte cp1252 rejects.
+
+        Archived as "mayor?a" for "mayoría" until Latin-1 was tried.
+        """
+        body = ("<meta charset=\"UTF-8\">la mayoría de los programas se "
+                "borrarían a sí mismos").encode("latin-1") + b"\x9d"
+        text = htmltext.decode(body, "text/html; charset=UTF-8")
+        self.assertIn("mayoría", text)
+        self.assertIn("borrarían", text)
+        self.assertNotIn("�", text)
+
+    def test_genuine_utf8_is_not_mangled_into_mojibake(self):
+        """Latin-1 is last, so valid UTF-8 never reaches it."""
+        body = "Grüße from Köln — naïve café".encode("utf-8")
+        text = htmltext.decode(body, "text/html; charset=UTF-8")
+        self.assertIn("Grüße", text)
+        self.assertNotIn("Ã", text)
+
+    def test_an_undeclared_utf8_page_is_read_as_utf8(self):
+        body = "réservé".encode("utf-8")
+        self.assertEqual("réservé", htmltext.decode(body, "text/html"))
 
 PAGE = """
 <html><head><title>Bypassing CSP</title></head>

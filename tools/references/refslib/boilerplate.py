@@ -382,6 +382,42 @@ def cut_at_sales_heading(markdown):
     return text[:best].rstrip() + "\n", ["sales-panel"]
 
 
+# THE SAME BOUNDARY, for the panel of teasers a blog appends to every post. It
+# survives the block sweep for the same reason a sales panel does: each teaser
+# is a headline and a real sentence or two, so no single block reads as
+# furniture. One 2023 DNS rebinding write-up ended with three 2026 posts about
+# other research, which is a citation pointing at the wrong year's work.
+#
+# A VOCABULARY, and a deliberately narrow one. `Related Work` is a section of
+# nearly every paper in this corpus and is the document's own content, so the
+# list below never matches a bare "related work", and the guards are the same
+# as above: never across a fence, never more than MAX_SHARE.
+RELATED_HEADING = re.compile(
+    r"^#{1,6}\s+(?:related\s+(?:posts|articles|reading|content|stories|blogs?)"
+    r"|other\s+(?:research\s+)?(?:articles|posts|reading|blogs?)"
+    r"|read\s+next|more\s+(?:from\s+\S+|articles|posts|like this)"
+    r"|you\s+(?:might|may)\s+also\s+(?:like|enjoy)"
+    r"|(?:recent|latest|popular|featured)\s+(?:posts|articles))\s*$",
+    re.IGNORECASE | re.MULTILINE)
+
+
+def cut_at_related_heading(markdown):
+    """(text, [labels]) with a trailing panel of other posts removed."""
+    text = markdown or ""
+    best = None
+    for match in RELATED_HEADING.finditer(text):
+        tail = text[match.start():]
+        if FENCE.search(tail):
+            continue                      # a listing below it: not a panel
+        if len(tail) > len(text) * MAX_SHARE:
+            continue                      # too much of the document to be furniture
+        best = match.start()
+        break                             # the earliest qualifying heading wins
+    if best is None:
+        return text, []
+    return text[:best].rstrip() + "\n", ["related-posts"]
+
+
 # Tail-only, because at the HEAD a lone heading is the document's title.
 #
 # A VOCABULARY, NOT "ANY BARE HEADING". Removing every heading left with nothing
@@ -420,6 +456,8 @@ def trim(markdown, ends=("tail", "head")):
     # stops that sweep.
     if "tail" in ends:
         text, cut = cut_at_sales_heading(text)
+        removed.extend(cut)
+        text, cut = cut_at_related_heading(text)
         removed.extend(cut)
 
     blocks = re.split(r"\n\s*\n", text)

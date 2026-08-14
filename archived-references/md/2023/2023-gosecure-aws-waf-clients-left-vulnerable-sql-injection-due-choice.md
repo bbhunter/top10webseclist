@@ -5,9 +5,9 @@ resource: "https://www.gosecure.net/blog/2023/06/21/aws-waf-clients-left-vulnera
 tags: [article, webseclist-reference, en, gosecure]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-09T10:08:20+00:00"
+  at: "2026-08-14T20:23:24+00:00"
 status: stable
-stale_after: 2027-08-09
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://www.gosecure.net/blog/2023/06/21/aws-waf-clients-left-vulnerable-to-sql-injection-due-to-unorthodox-mssql-design-choice/"
@@ -37,7 +37,7 @@ publisher_english: ""
 raw_sha256: b0621cb495938c631e303e5c52b780e867c62dfa630523c08b782a85247cabdc
 retrieved_from: "https://www.gosecure.net/blog/2023/06/21/aws-waf-clients-left-vulnerable-to-sql-injection-due-to-unorthodox-mssql-design-choice/"
 retrieved_kind: stored
-retrieved_utc: "2026-08-09T10:08:20+00:00"
+retrieved_utc: "2026-08-14T20:23:24+00:00"
 slug: 2023-gosecure-aws-waf-clients-left-vulnerable-sql-injection-due-choice
 snapshot: 20231006124547
 title_english: ""
@@ -51,7 +51,7 @@ translation_of: ""
 
 - Published: 2023-06-21
 - Original: <https://www.gosecure.net/blog/2023/06/21/aws-waf-clients-left-vulnerable-to-sql-injection-due-to-unorthodox-mssql-design-choice/>
-- Preserved from: https://www.gosecure.net/blog/2023/06/21/aws-waf-clients-left-vulnerable-to-sql-injection-due-to-unorthodox-mssql-design-choice/ (stored) on 2026-08-09
+- Preserved from: https://www.gosecure.net/blog/2023/06/21/aws-waf-clients-left-vulnerable-to-sql-injection-due-to-unorthodox-mssql-design-choice/ (stored) on 2026-08-14
 - Capture timestamp: 20231006124547
 - Licence: unknown
 

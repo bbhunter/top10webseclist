@@ -32,7 +32,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 `raw_sha256` offline - re-import it rather than re-crawling.
 
 
-243 archived reference(s) name 286 store object(s) that are no longer held: 49 browser_dom_sha256, 12 content_sha256, 5 landing_sha256, 220 raw_sha256.
+240 archived reference(s) name 283 store object(s) that are no longer held: 49 browser_dom_sha256, 9 content_sha256, 5 landing_sha256, 220 raw_sha256.
 
 | Reference | Kind | Missing | Cited at |
 |---|---|---|---|
@@ -109,7 +109,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://code.google.com/p/puzzlemall/downloads/list> | article | `raw_sha256`, `browser_dom_sha256` | `2011.md:53` |
 | <https://coeus.ece.gatech.edu/2008/10/01/DNS_Forgery/> | article | `landing_sha256` | `2008.md:91` |
 | <https://diafygi.github.io/webrtc-ips/> | article | `raw_sha256` | `2015.md:76` |
-| <https://dl.acm.org/doi/10.1145/2810103.2813688> | article | `content_sha256` | `2015.md:68` |
 | <https://doi.org/10.1007/978-3-319-18467-8_7> | article | `raw_sha256`, `browser_dom_sha256` | `2015.md:79` |
 | <https://doi.org/10.1016/j.cose.2015.07.004> | article | `browser_dom_sha256` | `2015.md:77` |
 | <https://doi.org/10.1109/SP.2019.00025> | article | `browser_dom_sha256` | `2019.md:82` |
@@ -210,10 +209,8 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://www.gnucitizen.org/projects/0day-quicktime-pwns-firefox/> | article | `content_sha256` | `2007.md:89` |
 | <https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations> | article | `raw_sha256`, `browser_dom_sha256` | `2019.md:31` |
 | <https://www.gosecure.net/blog/2021/10/19/a-scientific-notation-bug-in-mysql-left-aws-waf-clients-vulnerable-to-sql-injection/> | article | `raw_sha256`, `browser_dom_sha256` | `2021.md:39` |
-| <https://www.gosecure.net/blog/2023/06/21/aws-waf-clients-left-vulnerable-to-sql-injection-due-to-unorthodox-mssql-design-choice/> | article | `content_sha256` | `2023.md:38` |
 | <https://www.kb.cert.org/vuls/id/120541/> | article | `raw_sha256`, `browser_dom_sha256` | `2009.md:99` |
 | <https://www.microsoft.com/en-us/research/publication/incoherencies-web-browser-access-control-policies/> | article | `landing_sha256` | `2010.md:93` |
-| <https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/AmazonSignatureWrapping.pdf> | whitepaper | `content_sha256` | `2011.md:70` |
 | <https://www.ndss-symposium.org/ndss2010/flax-systematic-discovery-client-side-validation-vulnerabilities-rich-web-applications/> | article | `landing_sha256` | `2010.md:87` |
 | <https://www.ndss-symposium.org/ndss2010/protecting-browsers-extension-vulnerabilities/> | article | `landing_sha256` | `2010.md:88` |
 | <https://www.sambuz.com/doc/p-r-e-p-a-r-e-i-n-t-r-o-d-u-c-i-n-g-n-o-v-e-l-e-x-p-l-o-i-presentation-910240> | article | `raw_sha256` | `2018.md:12` |

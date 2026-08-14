@@ -195,6 +195,46 @@ class TestSalesPanel(unittest.TestCase):
         self.assertIn("Book your demo", text)
 
 
+class TestRelatedPostsPanel(unittest.TestCase):
+    """The teasers a blog appends to every post are not part of the research."""
+
+    PANEL = ("\n\n## Other research articles\n\n"
+             "### From enterprise chatbots to gooner caves\n\n"
+             "We scanned 1 million AI services and found widespread "
+             "misconfigurations and exposed credentials.\n\n"
+             "### Detecting Server-Side Prototype Pollution\n\n"
+             "Prototype pollution bugs have been a feature in many CTFs in "
+             "recent years, with real-world examples too.\n")
+
+    def test_the_panel_goes_from_its_heading(self):
+        text, removed = boilerplate.trim(ARTICLE + self.PANEL)
+        for phrase in ("Other research articles", "gooner caves",
+                       "Prototype pollution bugs"):
+            self.assertNotIn(phrase, text)
+        self.assertIn("smuggled prefix", text)
+        self.assertIn("related-posts", removed)
+
+    def test_a_papers_own_related_work_section_is_kept(self):
+        """Nearly every paper here has one, and it is the document's content."""
+        paper = (ARTICLE + "\n\n## Related Work\n\n"
+                 "Prior studies of request smuggling include Kettle's work on "
+                 "desync attacks, which we extend in several directions here.\n")
+        text, removed = boilerplate.trim(paper)
+        self.assertIn("Related Work", text)
+        self.assertIn("Kettle", text)
+        self.assertNotIn("related-posts", removed)
+
+    def test_a_panel_may_not_take_most_of_the_document(self):
+        """Where the teasers dwarf the post, cutting would take the article."""
+        text, _removed = boilerplate.trim("# T\n\n## Related Content\n\n" + "x " * 20)
+        self.assertIn("Related Content", text)
+
+    def test_a_panel_is_never_taken_across_a_code_block(self):
+        text, _removed = boilerplate.trim(
+            ARTICLE + "\n\n## Read next\n\n```\nGET / HTTP/1.1\n```\n")
+        self.assertIn("GET / HTTP/1.1", text)
+
+
 class TestTrailingEmptySections(unittest.TestCase):
     """A heading with nothing under it, from a MEASURED vocabulary. "Any bare
     heading" would have taken `## evercookie, by samy kamkar, 2010/09/20` - the

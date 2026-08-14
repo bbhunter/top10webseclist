@@ -26,6 +26,68 @@ GIBBERISH = (b"BT (kfjw qxzb mnpr wxvz kfjw qxzb mnpr wxvz kfjw qxzb mnpr) Tj ET
              b"BT (mnpr wxvz kfjw qxzb mnpr wxvz kfjw qxzb mnpr wxvz kfjw) Tj ET")
 
 
+class TestMismappedLigatures(unittest.TestCase):
+    """A face whose ligature table was read at the wrong code points."""
+
+    # Sized like the paper it comes from: a mis-mapped face breaks every
+    # ligature in the document, which is exactly what the floor tests for.
+    BROKEN = ("Browser €ngerprinting remains a topic of interest, and various "
+              "anti-€ngerprinting countermeasures have drawn signi€cant "
+              "a‹ention. ‘ese a‹ributes are implicitly inferred, and di‚erent "
+              "elements have di‚erent sizes, which demonstrates the "
+              "e‚ectiveness of the overƒow-block dra‰ we cra‰ed. ") * 5
+
+    def test_the_ligatures_are_put_back(self):
+        fixed, changes = extract_doc.repair_ligatures(self.BROKEN)
+        self.assertGreater(changes, 8)
+        for word in ("fingerprinting", "significant", "attention", "attributes",
+                     "These", "different", "effectiveness", "overflow-block",
+                     "draft", "crafted"):
+            self.assertIn(word, fixed)
+        for glyph in extract_doc.LIGATURE_EVIDENCE:
+            self.assertNotIn(glyph, fixed)
+
+    def test_a_bullet_list_in_the_same_face_is_left_alone(self):
+        """Two papers set list markers in this face; `€` there is a bullet.
+
+        They spell their own fi as "certi“cate", so `€` cannot also be fi, and
+        rewriting it would turn a correct sentence into "fiwe define".
+        """
+        bullets = ("Contributions In this paper,€we de“ne a composite state "
+                   "machine;€we present tools to test implementations;€we "
+                   "report ”aws and countermeasures;€we develop a veri“ed "
+                   "state machine that renders three different forms:€a "
+                   "sphere€a cube€a Torus knot, as described below.")
+        fixed, changes = extract_doc.repair_ligatures(bullets)
+        self.assertEqual(0, changes)
+        self.assertEqual(bullets, fixed)
+
+    def test_an_ordinary_price_and_quotation_are_untouched(self):
+        plain = ("The service costs €25 a month, and the author called it "
+                 "‘a reasonable price' in the report, twice over.")
+        self.assertEqual((plain, 0), extract_doc.repair_ligatures(plain))
+
+    def test_stacked_ligatures_resolve(self):
+        """"fifth" is set as fi + ft + h, so one pass leaves `€fth`."""
+        text = self.BROKEN + (" Iframe A is in the €‰h row of the grid, and "
+                              "the €‰h column repeats it.")
+        fixed, _n = extract_doc.repair_ligatures(text)
+        self.assertIn("fifth", fixed)
+        self.assertNotIn("€", fixed)
+
+    def test_a_lost_glyph_is_read_from_the_letter_that_follows(self):
+        """U+FFFD stood for both `ffi` and `Qu`; only the next letter tells."""
+        text = self.BROKEN + (" The system rea�rms that it is di�cult and "
+                              "su�ciently distinct, so we reduce network "
+                              "tra�c. See Media �eries Level 5 and "
+                              "�antifying the rest of it.")
+        fixed, _n = extract_doc.repair_ligatures(text)
+        for word in ("reaffirms", "difficult", "sufficiently", "traffic",
+                     "Queries", "Quantifying"):
+            self.assertIn(word, fixed)
+        self.assertNotIn("�", fixed)
+
+
 class TestPdfConversion(unittest.TestCase):
     def test_real_text_converts_with_page_markers(self):
         markdown = extract_doc.pdf_to_markdown(pdf_with(REAL), "A Paper")
@@ -49,6 +111,47 @@ class TestPdfConversion(unittest.TestCase):
         with self.assertRaises(extract_doc.Unconvertible) as caught:
             extract_doc.pdf_to_markdown(pdf_with(GIBBERISH))
         self.assertIn("gibberish", str(caught.exception))
+
+    def test_unreadable_font_is_sent_to_the_external_tool(self):
+        """Damaged prose reads as prose, so the quality gate passes it.
+
+        The paper is handed to poppler instead of archived with holes in its
+        words. `acquire` catches this and re-reads the PDF in the container.
+        """
+        damaged = (b"BT (The system reafrms that the certi\xe2\x80\x9ccate is di\xef\xbf\xbdcult "
+                   b"to validate here.) Tj ET "
+                   b"BT (We identi\xef\xbf\xbded a speci\xe2\x80\x9cc \xef\xbf\xbdaw in the "
+                   b"implementation of the parser.) Tj ET "
+                   b"BT (This paragraph exists so the sample clears the word count "
+                   b"floor easily enough.) Tj ET")
+        with self.assertRaises(extract_doc.ExternalPdfToolRequired) as caught:
+            extract_doc.pdf_to_markdown(pdf_with(damaged))
+        self.assertIn("font's encoding", str(caught.exception))
+
+    def test_a_lost_glyph_with_one_reading_is_put_back(self):
+        """`h?p://` is "http://" and can be nothing else.
+
+        Poppler cannot recover it either, because the font maps the `tt`
+        ligature to a code point with no Unicode meaning at all.
+        """
+        text = ("Send the token to h\ufffdp://example.test/a and then to "
+                "h\ufffdps://example.test/b over h\ufffdp as well.")
+        fixed, changes = extract_doc.repair_lost_words(text)
+        self.assertEqual(3, changes)
+        self.assertIn("http://example.test/a", fixed)
+        self.assertIn("https://example.test/b", fixed)
+        self.assertNotIn("\ufffd", fixed)
+
+    def test_a_lost_glyph_with_several_readings_is_left_alone(self):
+        text = "The rea\ufffdrms and di\ufffdcult cases stay as they are here."
+        self.assertEqual((text, 0), extract_doc.repair_lost_words(text))
+
+    def test_healthy_prose_with_ordinary_quotes_is_not_escalated(self):
+        """A quotation is not damage: only a quote BETWEEN letters is."""
+        quoted = ("The author called it “a reasonable defence” and the "
+                  "report said “this works”, which we don’t dispute "
+                  "at all. The front end forwards the smuggled prefix onward.")
+        self.assertEqual(0, extract_doc.font_damage(quoted))
 
     def test_oversized_decoded_stream_is_sent_to_external_tool(self):
         payload = b"x" * (extract_doc.MAX_LIGHTWEIGHT_STREAM_BYTES + 1)

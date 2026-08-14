@@ -18,7 +18,7 @@ Curating the year lists themselves is a separate job. This folder is generated
 by `tools/references/refs.py` from those lists and never edits them.
 
 
-1648 reference(s) archived across 20 year list(s). 1511 carry technique and 137 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
+1648 reference(s) archived across 20 year list(s). 1517 carry technique and 131 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
 
 Three more lists complete the picture: [document-gaps.md](document-gaps.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
 
@@ -380,7 +380,6 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Cookie Crumbles: Breaking and Fixing Web Session Integrity](md/2023/usenix-org-cookie-crumbles-breaking-fixing-web-session-integrity.md) | article | usenix.org |  | research | 1 |
 | [Cookieless DuoDrop: IIS Auth Bypass & App Pool Privesc in ASP.NET Framework (CVE-2023-36899 & CVE-2023-36560)](md/2023/soroush-me-cookieless-duodrop-iis-auth-bypass-app-pool-privesc-asp-net-36560.md) | article | soroush.me |  | research | 1 |
 | [Cracking the Odd Case of Randomness in Java](md/2023/elttam-com-cracking-odd-case-randomness-java.md) | article | elttam.com |  | research | 1 |
-| [Cyber Security Research](md/2023/nccgroup-com-cyber-security-research.md) | article | nccgroup.com |  | research | 1 |
 | [DiffCSP: Finding Browser Bugs in Content Security Policy Enforcement through Differential Testing](md/2023/ndss-symposium-diffcsp-finding-browser-bugs-content-security-policy-testing.md) | article | NDSS Symposium |  | research | 1 |
 | [DNS Analyzer - Finding DNS vulnerabilities with Burp Suite](md/2023/sec-consult-dns-analyzer-finding-dns-vulnerabilities-burp-suite.md) | article | SEC Consult |  | research | 1 |
 | [DOM-based race condition: racing in the browser for fun](md/2023/2023-blog-ryotak-net-dom-based-race-condition-racing-browser-fun.md) | article | blog.ryotak.net | 2023 | research | 1 |
@@ -392,8 +391,8 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [From Akamai to F5 to NTLM... with love.](md/2023/2023-malicious-group-akamai-f5-ntlm-love.md) | article | Malicious Group | 2023 | research | 1 |
 | [From an Innocent Client-Side Path Traversal to Account Takeover](md/2023/2023-nadir-s-blog-innocent-client-side-path-traversal-account-takeover.md) | article | Nadir's Blog | 2023 | research | 1 |
 | [Hacking into gRPC-Web](md/2023/2025-medium-hacking-grpc-web.md) | article | Medium | 2025 | research | 1 |
-| [Hakai Security](md/2023/hakai-hakai-security.md) · [English](md/2023/hakai-hakai-security_translate.md) | article | Hakai |  | records | 1 |
 | [HTML Over the Wire](md/2023/2023-ryan-html-over-wire.md) | article | ~ryan | 2023 | research | 1 |
+| [Hunting for Nginx Alias Traversals in the wild](md/2023/2023-hakai-offensive-security-hunting-nginx-alias-traversals-wild.md) | article | Hakai Offensive Security | 2023 | research | 1 |
 | [Introducing wrapwrap: using PHP filters to wrap a file with a prefix and suffix](md/2023/blog-lexfo-fr-introducing-wrapwrap-using-php-filters-wrap-file-prefix-suffix.md) | article | blog.lexfo.fr |  | research | 1 |
 | [Isolated and Exhausted: Attacking Operating Systems via Site Isolation in the Browser](md/2023/usenix-org-isolated-exhausted-attacking-operating-systems-site-isolation-browser.md) | article | usenix.org |  | research | 1 |
 | [It's (DOM) Clobbering Time: Attack Techniques, Prevalence, and Defenses](md/2023/2026-giancarlo-pellegrino-it-s-dom-clobbering-time-attack-techniques-defenses.md) | article | Giancarlo Pellegrino | 2026 | records | 1 |
@@ -423,6 +422,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Source Code at Risk: Critical Code Vulnerability in CI/CD Platform TeamCity](md/2023/2023-sonar-source-code-risk-critical-code-vulnerability-ci-cd-platform-teamcity.md) | article | Sonar | 2023 | research | 1 |
 | [SSO Gadgets: Escalate (Self-)XSS to ATO](md/2023/2023-web-insecurity-blog-sso-gadgets-escalate-self-xss-ato.md) | article | (Web-)Insecurity Blog | 2023 | research | 1 |
 | [SSRF Cross Protocol Redirect Bypass](md/2023/blog-doyensec-com-ssrf-cross-protocol-redirect-bypass.md) | article | blog.doyensec.com |  | research | 1 |
+| [State of DNS Rebinding in 2023](md/2023/nccgroup-com-state-dns-rebinding-2023.md) | article | nccgroup.com | 2023 | research | 1 |
 | [SynthDB: Synthesizing Database via Program Analysis for Security Testing of Web Applications](md/2023/ndss-symposium-synthdb-synthesizing-database-program-analysis-applications.md) | article | NDSS Symposium |  | research | 1 |
 | [Technical Advisory - Azure B2C - Crypto Misuse and Account Compromise](md/2023/2023-praetorian-technical-advisory-azure-b2c-crypto-misuse-account-compromise.md) | article | Praetorian | 2023 | research | 1 |
 | [The GitHub Actions Worm: Compromising GitHub Repositories Through the Actions Dependency Tree](md/2023/2023-palo-alto-networks-blog-github-actions-worm-compromising-github-tree.md) | article | Palo Alto Networks Blog | 2023 | research | 1 |
@@ -443,7 +443,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [CoCo: Efficient Browser Extension Vulnerability Detection via Coverage-guided, Concurrent Abstract Interpretation](md/2023/coco-efficient-browser-extension-vulnerability-detection-interpretation.md) | whitepaper |  |  | research | 1 |
 | [Fashion Faux Pas: Implicit Stylistic Fingerprints for Bypassing Browsers' Anti-Fingerprinting Defenses](md/2023/fashion-faux-pas-implicit-stylistic-fingerprints-bypassing-browsers-defenses.md) | whitepaper |  |  | research | 1 |
 | [HTTP Request Splitting vulnerabilities exploitation](md/2023/http-request-splitting-vulnerabilities-exploitation.md) | whitepaper |  |  | research | 1 |
-| [OAuth 2.0 Redirect URI Validation Falls Short, Literally](md/2023/oauth-2-0-redirect-uri-validation-falls-short-literally.md) | whitepaper |  |  | research | 1 |
+| [OAuth 2.0 Redirect URI Validation Falls Short, Literally](md/2023/oauth-2-0-redirect-uri-validation-falls-short-literally.md) | whitepaper | ACSAC '23 |  | research | 1 |
 | [Scaling JavaScript Abstract Interpretation to Detect and Exploit Node.js Taint-style Vulnerability](md/2023/scaling-javascript-abstract-interpretation-detect-exploit-node-js-vulnerability.md) | whitepaper |  |  | research | 1 |
 | [Second Breakfast: Implicit and Mutation-Based Serialization Vulnerabilities in .NET](md/2023/second-breakfast-implicit-mutation-based-serialization-vulnerabilities-net.md) | whitepaper | DEF CON |  | research | 1 |
 | [Second Breakfast: Implicit and Mutation-Based Serialization Vulnerabilities in .NET - Slides](md/2023/def-con-second-breakfast-implicit-mutation-based-serialization-slides.md) | whitepaper | DEF CON |  | research | 1 |
@@ -622,6 +622,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [My hacking adventures with Safari reader mode](md/2020/2020-payatu-my-hacking-adventures-safari-reader-mode.md) | article | Payatu | 2020 | research | 1 |
 | [PMForce: Systematically Analyzing PostMessage Handlers at Scale](md/2020/publications-cispa-saarland-pmforce-systematically-analyzing-postmessage-scale.md) | article | publications.cispa.saarland |  | research | 1 |
 | [Portable Data exFiltration: XSS for PDFs](md/2020/2020-portswigger-research-portable-data-exfiltration-xss-pdfs.md) | article | PortSwigger Research | 2020 | research | 1 |
+| [r2c blog — Exploiting dynamic rendering engines to take control of web apps](md/2020/r2c-r2c-blog-exploiting-dynamic-rendering-engines-take-control-web-apps.md) | article | r2c |  | research | 1 |
 | [Real-life OIDC Security (II): Login Confusion](md/2020/2020-web-insecurity-blog-real-life-oidc-security-ii-login-confusion.md) | article | (Web-)Insecurity Blog | 2020 | research | 1 |
 | [Redefining Impossible: XSS without arbitrary JavaScript](md/2020/2020-portswigger-research-redefining-impossible-xss-without-arbitrary-javascript.md) | article | PortSwigger Research | 2020 | research | 1 |
 | [Remote Code Execution in F5 Big‑IP](md/2020/pt-swarm-remote-code-execution-f5-bigip.md) | article | PT SWARM |  | research | 1 |
@@ -635,7 +636,6 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Security and Privacy of Social Logins (I): Single Sign-On Protocols in the Wild](md/2020/web-in-security-blogspot-com-security-privacy-social-logins-i-single-sign-wild.md) | article | web-in-security.blogspot.com |  | research | 1 |
 | [Security and Privacy of Social Logins (II): PostMessage Security in Single Sign-On](md/2020/web-in-security-blogspot-com-security-privacy-social-logins-ii-postmessage-sign.md) | article | web-in-security.blogspot.com |  | research | 1 |
 | [Security and Privacy of Social Logins (III): Privacy in Single Sign-On Protocols](md/2020/web-in-security-blogspot-com-security-privacy-social-logins-iii-protocols.md) | article | web-in-security.blogspot.com |  | research | 1 |
-| [Semgrep App Security Platform \| AI-assisted SAST, SCA and Secrets Detection](md/2020/semgrep-dev-semgrep-app-security-platform-ai-assisted-sast-sca-secrets-detection.md) | article | semgrep.dev |  | research | 1 |
 | [Slack disclosed on HackerOne: TURN server allows TCP and UDP...](md/2020/hackerone-slack-disclosed-hackerone-turn-server-allows-tcp-udp.md) | article | HackerOne |  | research | 1 |
 | [Smuggling HTTP headers through reverse proxies](md/2020/2020-telekom-security-smuggling-http-headers-through-reverse-proxies.md) | article | Telekom Security | 2020 | research | 1 |
 | [Story of a weird vulnerability I found on Facebook](md/2020/2020-medium-story-weird-vulnerability-i-found-facebook.md) | article | Medium | 2020 | research | 1 |
@@ -675,7 +675,6 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [All Your Clicks Belong to Me: Investigating Click Interception on the Web](md/2019/usenix-org-all-your-clicks-belong-me-investigating-click-interception-web.md) | article | usenix.org |  | research | 1 |
 | [An analysis and thought about recently PHP-FPM RCE (CVE-2019-11043)](md/2019/2019-orange-tsai-analysis-thought-about-recently-php-fpm-rce-cve-2019-11043.md) | article | Orange Tsai | 2019 | research | 1 |
 | [Backchannel Leaks on Strict Content-Security Policy](md/2019/mazin-ahmed-backchannel-leaks-strict-content-security-policy.md) | article | Mazin Ahmed |  | research | 1 |
-| [Blog \| Veracode](md/2019/veracode-blog-veracode.md) | article | Veracode |  | research | 1 |
 | [Bypassing CSP with policy injection](md/2019/2019-portswigger-research-bypassing-csp-policy-injection.md) | article | PortSwigger Research | 2019 | research | 1 |
 | [Bypassing SOP using the browser cache](md/2019/2019-acunetix-bypassing-sop-using-browser-cache.md) | article | Acunetix | 2019 | research | 1 |
 | [Cache Poisoned Denial of Service](md/2019/cpdos-org-cache-poisoned-denial-service.md) · [English](md/2019/cpdos-org-cache-poisoned-denial-service_translate.md) | article | cpdos.org |  | research | 1 |
@@ -684,6 +683,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Exploiting JNDI Injections in Java](md/2019/veracode-exploiting-jndi-injections-java.md) | article | Veracode |  | research | 1 |
 | [Exploiting padding oracles with fixed IVs](md/2019/2019-teddy-katzs-blog-exploiting-padding-oracles-fixed-ivs.md) | article | Teddy Katz’s Blog | 2019 | research | 1 |
 | [Exploiting prototype pollution - RCE in Kibana (CVE-2019-7609)](md/2019/2019-research-securitum-com-exploiting-prototype-pollution-rce-kibana-cve-7609.md) | article | research.securitum.com | 2019 | research | 1 |
+| [Exploiting Spring Boot Actuators](md/2019/2019-veracode-exploiting-spring-boot-actuators.md) | article | Veracode | 2019 | research | 1 |
 | [Exploiting SSRF in AWS Elastic Beanstalk](md/2019/2019-notsosecure-exploiting-ssrf-aws-elastic-beanstalk.md) | article | NotSoSecure | 2019 | research | 1 |
 | [Facebook Messenger server random memory exposure through corrupted GIF image](md/2019/2019-blogger-facebook-messenger-server-random-memory-exposure-through-image.md) | article | Blogger | 2019 | research | 1 |
 | [Filling in the Blanks: Exploiting Null Byte Buffer Overflow for a $40,000 Bounty](md/2019/2019-samcurry-net-filling-blanks-exploiting-null-byte-buffer-overflow-40-bounty.md) | article | samcurry.net | 2019 | research | 1 |
@@ -758,7 +758,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Data Exfiltration via Formula Injection #Part1](md/2018/2018-notsosecure-data-exfiltration-formula-injection-part1.md) | article | NotSoSecure | 2018 | research | 1 |
 | [Deep Fingerprinting: Undermining Website Fingerprinting Defenses with Deep Learning](md/2018/arxiv-org-deep-fingerprinting-undermining-website-fingerprinting-learning.md) | article | arXiv.org |  | research | 1 |
 | [DNS Rebinding Headless Browsers](md/2018/mwr-labs-dns-rebinding-headless-browsers.md) | article | MWR Labs |  | research | 1 |
-| [Duo Blog: Discover Security Insights and News](md/2018/cisco-duo-duo-blog-discover-security-insights-news.md) | article | Cisco Duo |  | research | 1 |
+| [Duo Finds SAML Vulnerabilities Affecting Multiple Implementations](md/2018/duo-security-duo-finds-saml-vulnerabilities-affecting-multiple-implementations.md) | article | Duo Security |  | research | 1 |
 | [Evading CSP with DOM-based dangling markup](md/2018/2018-portswigger-research-evading-csp-dom-based-dangling-markup.md) | article | PortSwigger Research | 2018 | research | 1 |
 | [Exploiting XXE with local DTD files](md/2018/mohemiv-com-exploiting-xxe-local-dtd-files.md) | article | mohemiv.com |  | research | 1 |
 | [Exposing Intranets with reliable Browser-based Port scanning](md/2018/2018-portswigger-research-exposing-intranets-reliable-browser-based-scanning.md) | article | PortSwigger Research | 2018 | research | 1 |
@@ -924,7 +924,6 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [All Your Biases Belong to Us: Breaking RC4 in WPA-TKIP and TLS](md/2015/usenix-org-all-your-biases-belong-us-breaking-rc4-wpa-tkip-tls.md) | article | usenix.org |  | research | 1 |
 | [Cache Timing Attacks Revisited: Efficient and Repeatable Browser History, OS and Network Sniffing](md/2015/springerlink-cache-timing-attacks-revisited-efficient-repeatable-sniffing.md) | article | SpringerLink |  | research | 1 |
 | [Cashing Out the Great Cannon? On Browser-Based DDoS Attacks and Economics](md/2015/usenix-org-cashing-out-great-cannon-browser-based-ddos-attacks-economics.md) | article | usenix.org |  | records | 1 |
-| [Cloud Security recent news](md/2015/dark-reading-cloud-security-recent-news.md) | article | Dark Reading |  | research | 1 |
 | [Cookies Lack Integrity: Real-World Implications](md/2015/usenix-org-cookies-lack-integrity-real-world-implications.md) | article | usenix.org |  | research | 1 |
 | [Critical vulnerabilities in JSON Web Token libraries](md/2015/chosenplaintext-ca-critical-vulnerabilities-json-web-token-libraries.md) | article | chosenplaintext.ca |  | research | 1 |
 | [Cross-Site Framing Attacks](md/2015/cross-site-framing-attacks.md) | article |  |  | research | 1 |
@@ -946,11 +945,13 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Maneuvering Around Clouds: Bypassing Cloud-based Security Providers](md/2015/maneuvering-around-clouds-bypassing-cloud-based-security-providers.md) | article |  |  | research | 1 |
 | [Microsoft Issues Emergency Patch for Critical IE Flaw Exploited in the Wild](md/2015/2015-securityweek-microsoft-issues-emergency-patch-critical-ie-flaw-wild.md) | article | SecurityWeek | 2015 | research | 1 |
 | [Mostafa Siraj's schedule for AppSecUSA 2015](md/2015/appsecusa2015-sched-com-mostafa-siraj-s-schedule-appsecusa-2015.md) | article | appsecusa2015.sched.com |  | research | 1 |
+| [New Adobe Flash Zero-Day Used in Pawn Storm Campaign Targeting Foreign Affairs Ministries](md/2015/blog-trendmicro-com-new-adobe-flash-zero-day-used-pawn-storm-ministries.md) | article | blog.trendmicro.com |  | research | 1 |
+| [New Phishing Campaign Leverages Google Drive](md/2015/dark-reading-new-phishing-campaign-leverages-google-drive.md) | article | Dark Reading |  | research | 1 |
 | [Perplexed Messengers from the Cloud \| Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security](md/2015/acm-conferences-perplexed-messengers-cloud-proceedings-22nd-acm-sigsac-security.md) | article | ACM Conferences |  | research | 1 |
 | [Protocol State Fuzzing of TLS Implementations](md/2015/usenix-org-protocol-state-fuzzing-tls-implementations.md) | article | usenix.org |  | research | 1 |
-| [Research, News, and Perspectives](md/2015/trend-micro-research-news-perspectives.md) | article | Trend Micro |  | research | 1 |
 | [Revoking Trust in one CNNIC Intermediate Certificate](md/2015/mozilla-security-blog-revoking-trust-one-cnnic-intermediate-certificate.md) | article | Mozilla Security Blog |  | research | 1 |
 | [Rowhammer.js: A Remote Software-Induced Fault Attack in JavaScript](md/2015/arxiv-org-rowhammer-js-remote-software-induced-fault-attack-javascript.md) | article | arXiv.org |  | research | 1 |
+| [Scope Of FREAK Flaw Widens As Microsoft Says Windows Affected Too](md/2015/dark-reading-scope-freak-flaw-widens-as-microsoft-says-windows-affected-too.md) | article | Dark Reading |  | research | 1 |
 | [Security Bug in Dell PCs Shipped Since 8/15](md/2015/krebsonsecurity-com-security-bug-dell-pcs-shipped-since-8-15.md) | article | krebsonsecurity.com |  | research | 1 |
 | [Server-Side Template Injection](md/2015/2015-portswigger-research-server-side-template-injection.md) | article | PortSwigger Research | 2015 | research | 1 |
 | [St. Louis Federal Reserve Suffers DNS Breach](md/2015/krebsonsecurity-com-st-louis-federal-reserve-suffers-dns-breach-krebs-security.md) | article | krebsonsecurity.com |  | research | 1 |
@@ -958,7 +959,6 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [The Logjam (and Another) Vulnerability against Diffie-Hellman Key Exchange](md/2015/schneier-com-logjam-another-vulnerability-against-diffie-hellman-key-exchange.md) | article | Schneier on Security | 2015 | research | 1 |
 | [The Spy in the Sandbox -- Practical Cache Attacks in Javascript](md/2015/arxiv-org-spy-sandbox-practical-cache-attacks-javascript.md) | article | arXiv.org |  | research | 1 |
 | [Tracking the FREAK Attack](md/2015/freakattack-com-tracking-freak-attack.md) | article | freakattack.com |  | research | 1 |
-| [Vulnerabilities & Threats recent news](md/2015/dark-reading-vulnerabilities-threats-recent-news.md) | article | Dark Reading |  | research | 1 |
 | [Web App Developers Putting Millions At Risk](md/2015/2015-dark-reading-web-app-developers-putting-millions-risk.md) | article | Dark Reading | 2015 | research | 1 |
 | [WebRTC IP Address Leaks](md/2015/diafygi-github-io-webrtc-ip-address-leaks.md) | article | diafygi.github.io |  | research | 1 |
 | [What Do WebLogic, WebSphere, JBoss, Jenkins, OpenNMS, and Your Application Have in Common? This Vulnerability.](md/2015/2015-foxglovesecurity-com-what-do-weblogic-websphere-jboss-vulnerability.md) | article | foxglovesecurity.com | 2015 | research | 1 |
@@ -1298,6 +1298,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
+| ['Padding Oracle' Crypto Attack Affects Millions of ASP.NET Apps](md/2010/threatpost-threatpost-first-stop-security-news.md) | article | threatpost.com |  | research | 1 |
 | [48Bits Blog » Blog Archive » IIS6/ASP & file upload for fun and profit](md/2010/blog-48bits-com-48bits-blog-blog-archive-iis6-asp-file-upload-fun-profit.md) · [English](md/2010/blog-48bits-com-48bits-blog-blog-archive-iis6-asp-file-upload-fun-profit_translate.md) | article | blog.48bits.com |  | research | 1 |
 | [A New Type of Phishing Attack](md/2010/2022-azarask-new-type-phishing-attack.md) | article | AzarAsk | 2022 | research | 1 |
 | [A Twitter DomXss, a wrong fix and something more](md/2010/blog-mindedsecurity-com-twitter-domxss-wrong-fix-something-more.md) | article | blog.mindedsecurity.com |  | research | 1 |
@@ -1364,7 +1365,6 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Stroke triggered XSS and StrokeJacking](md/2010/blog-andlabs-org-stroke-triggered-xss-strokejacking.md) | article | blog.andlabs.org |  | research | 1 |
 | [The curse of inverse strokejacking](md/2010/lcamtuf-blogspot-com-curse-inverse-strokejacking.md) | article | lcamtuf.blogspot.com |  | research | 1 |
 | [The Safari AutoFill hack LIVES!](md/2010/blog-jeremiahgrossman-com-safari-autofill-hack-lives.md) | article | blog.jeremiahgrossman.com |  | research | 1 |
-| [Threatpost \| The first stop for security news](md/2010/threatpost-threatpost-first-stop-security-news.md) | article | Threatpost |  | research | 1 |
 | [Turning XSS into Clickjacking ha.ckers.org web application security lab](md/2010/ha-ckers-org-turning-xss-clickjacking-ha-ckers-org-web-application-security-lab.md) | article | ha.ckers.org |  | research | 1 |
 | [UCSB’s International Capture The Flag Competition 2010 Challenge 6: Fear The EAR](md/2010/bryceboe-com-ucsbs-international-capture-flag-competition-2010-challenge-6-ear.md) | article | bryceboe.com |  | research | 1 |
 | [UI Redressing: Attacks and Countermeasures Revisited](md/2010/ui-redressing-attacks-countermeasures-revisited.md) | article | ui-redressing.mniemietz.de |  | research | 1 |
@@ -1577,10 +1577,10 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [File Download Injection](md/2008/file-download-injection.md) | whitepaper |  |  | research | 1 |
 | [ForceHTTPS: Protecting High-Security Web Sites from Network Attacks](md/2008/forcehttps-protecting-high-security-web-sites-network-attacks.md) | whitepaper |  |  | research | 1 |
 | [On Race Vulnerabilities in Web Applications](md/2008/race-vulnerabilities-web-applications.md) | whitepaper |  |  | research | 1 |
+| [Pulling system32 out over blind SQL Injection](md/2008/pulling-system32-out-over-blind-sql-injection.md) | whitepaper | blueinfy.com |  | research | 1 |
 | [Robust Defenses for Cross-Site Request Forgery (Login CSRF & the Origin header)](md/2008/robust-defenses-cross-site-request-forgery-login-csrf-origin-header.md) | whitepaper |  |  | research | 1 |
 | [SNMP XSS Attack](md/2008/snmp-xss-attack.md) | whitepaper |  |  | research | 1 |
 | [SQL Smuggling](md/2008/sql-smuggling.md) | whitepaper |  |  | research | 1 |
-| [Welcome To Blueinfy](md/2008/blueinfy-com-welcome-blueinfy.md) | whitepaper | blueinfy.com |  | research | 1 |
 
 ## 2007 (100)
 
@@ -1594,7 +1594,6 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [A Remote Vulnerability in Firefox Extensions](md/2007/paranoia-dubfire-net-remote-vulnerability-firefox-extensions.md) | article | paranoia.dubfire.net |  | research | 1 |
 | [Additional Image Bypass on Windows ha.ckers.org web application security lab](md/2007/ha-ckers-org-additional-image-bypass-windows-ha-ckers-org-web-application-lab.md) | article | ha.ckers.org |  | research | 1 |
 | [An Analysis of Browser Domain-Isolation Bugs and A Light-Weight Transparent Defense Mechanism](md/2007/microsoft-research-analysis-browser-domain-isolation-bugs-light-mechanism.md) | article | Microsoft Research |  | research | 1 |
-| [Beyond Security Products](md/2007/fortra-com-securiteam-firefox-popup-blocker-allows-reading-arbitrary-local-files.md) | article | fortra.com |  | records | 1 |
 | [Billy (BK) Rios](md/2007/xs-sniper-com-billy-bk-rios-stealing-pictures-picasa.md) | article | xs-sniper.com |  | records | 1 |
 | [Billy (BK) Rios » All Your Google Docs are Belong To US…](md/2007/xs-sniper-com-billy-bk-rios-all-your-google-docs-belong-us.md) | article | xs-sniper.com |  | research | 1 |
 | [Billy (BK) Rios » BK for Mayor of Oak Tree View](md/2007/xs-sniper-com-billy-bk-rios-bk-mayor-oak-tree-view.md) | article | xs-sniper.com |  | records | 1 |
@@ -1661,6 +1660,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [ProCheckUp - Security Vulnerabilities 2007](md/2007/procheckup-com-procheckup-security-vulnerabilities-2007.md) | article | procheckup.com |  | research | 1 |
 | [Pure Java™, Pure Evil™ Popups](md/2007/hackademix-net-pure-javatm-pure-eviltm-popups.md) | article | hackademix.net |  | research | 1 |
 | [Secure Coding: JavaScript Hijacking](md/2007/seclists-org-secure-coding-javascript-hijacking.md) | article | seclists.org |  | research | 1 |
+| [SecuriTeam™ - Firefox Popup Blocker Allows Reading Arbitrary Local Files](md/2007/fortra-com-securiteam-firefox-popup-blocker-allows-reading-arbitrary-local-files.md) | article | securiteam.com |  | research | 1 |
 | [Severe XSS in Google and Others Due To The JAR Protocol Issues](md/2007/gnucitizen-org-severe-xss-google-others-due-jar-protocol-issues.md) | article | gnucitizen.org |  | research | 1 |
 | [Spoofing Firefox protected objects](md/2007/thespanner-co-uk-spoofing-firefox-protected-objects.md) | article | thespanner.co.uk |  | records | 1 |
 | [The Ghost in the Browser: Analysis of Web-based Malware](md/2007/usenix-org-ghost-browser-analysis-web-based-malware.md) | article | usenix.org |  | research | 1 |
@@ -1698,23 +1698,21 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [[WEB SECURITY] Netflix.com XSRF vuln](md/2006/lists-webappsec-org-web-security-netflix-com-xsrf-vuln.md) | article | webappsec.org |  | research | 1 |
 | [Adultspace XSS Worm ha.ckers.org web application security lab](md/2006/ha-ckers-org-adultspace-xss-worm-ha-ckers-org-web-application-security-lab.md) | article | ha.ckers.org |  | records | 1 |
 | [Advanced Web Attack Techniques using GMail](md/2006/blog-jeremiahgrossman-com-advanced-web-attack-techniques-using-gmail.md) | article | blog.jeremiahgrossman.com |  | research | 1 |
+| [AT&T Hack Highlights Web Site Vulnerabilities](md/2006/informationweek-com-t-hack-highlights-web-site-vulnerabilities.md) | article | informationweek.com |  | research | 1 |
 | [Backdooring Flash Objects (the walkthrough)](md/2006/gnucitizen-org-backdooring-flash-objects-walkthrough.md) | article | gnucitizen.org |  | research | 1 |
 | [Backdooring Images](md/2006/gnucitizen-org-backdooring-images.md) | article | gnucitizen.org |  | research | 1 |
 | [Backdooring MP3 Files](md/2006/gnucitizen-org-backdooring-mp3-files.md) | article | gnucitizen.org |  | research | 1 |
 | [Backdooring PDF Files](md/2006/michaeldaw-org-backdooring-pdf-files.md) | article | michaeldaw.org |  | research | 1 |
 | [Backdooring QuickTime Movies](md/2006/gnucitizen-org-backdooring-quicktime-movies.md) | article | gnucitizen.org |  | research | 1 |
-| [Beyond Security Products](md/2006/fortra-com-beyond-security-products.md) | article | fortra.com |  | records | 1 |
-| [Beyond Security Products](md/2006/fortra-com-beyond-security-products-2.md) | article | fortra.com |  | records | 1 |
-| [Beyond Security Products](md/2006/fortra-com-beyond-security-products-3.md) | article | fortra.com |  | records | 1 |
 | [Browser Port Scanning without JavaScript](md/2006/blog-jeremiahgrossman-com-browser-port-scanning-without-javascript.md) | article | blog.jeremiahgrossman.com |  | research | 2 |
 | [Bruteforcing HTTP Auth in Firefox with JavaScript](md/2006/blog-php-security-org-bruteforcing-http-auth-firefox-javascript.md) | article | blog.php-security.org |  | research | 1 |
-| [BUGTRAQ IS BACK](md/2006/securityfocus-com-bugtraq-back.md) | article | securityfocus.com |  | records | 1 |
 | [Bypassing Filters With Encoding](md/2006/sla-ckers-org-bypassing-filters-encoding.md) | article | sla.ckers.org |  | research | 1 |
 | [Bypassing Mozilla Port Blocking](md/2006/blog-jeremiahgrossman-com-bypassing-mozilla-port-blocking.md) | article | blog.jeremiahgrossman.com |  | records | 1 |
+| [Bypassing of web filters by using ASCII](md/2006/securityfocus-com-bypassing-web-filters-using-ascii.md) | article | securityfocus.com |  | research | 1 |
 | [Cgisecurity.com: Web security News - 10/04/06 More fun with CSS history](md/2006/cgisecurity-com-web-security-news-10-04-06-more-fun-css-history.md) | article | cgisecurity.com |  | research | 1 |
 | [Circumventing DNS Pinning for XSS ha.ckers.org web application security lab](md/2006/ha-ckers-org-circumventing-dns-pinning-xss-ha-ckers-org-web-application-lab.md) | article | ha.ckers.org |  | records | 1 |
 | [CSRF with MS Word](md/2006/michaeldaw-org-csrf-ms-word.md) | article | michaeldaw.org |  | research | 1 |
-| [Dark Reading \| Security](md/2006/dark-reading-dark-reading-security.md) | article | Dark Reading |  | research | 1 |
+| [Dark Reading - Desktop Security - Hackers Reveal Vulnerable Websites](md/2006/darkreading-com-dark-reading-desktop-security-hackers-reveal-vulnerable-websites.md) | article | darkreading.com |  | research | 1 |
 | [Detecting Privoxy Users and Circumventing It ha.ckers.org web application security lab](md/2006/ha-ckers-org-detecting-privoxy-users-circumventing-it-ha-ckers-org-web-lab.md) | article | ha.ckers.org |  | records | 1 |
 | [Detecting States of Authentication With Protected Images ha.ckers.org web application security lab](md/2006/ha-ckers-org-detecting-states-authentication-protected-images-ha-ckers-org-lab.md) | article | ha.ckers.org |  | records | 1 |
 | [Digger's blog](md/2006/4diggers-blogspot-com-digger-s-blog.md) | article | 4diggers.blogspot.com |  | research | 1 |
@@ -1738,7 +1736,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [ha.ckers.org web application security lab - Archive » Selecting Encoding Methods For XSS Filter Evasion](md/2006/ha-ckers-org-ha-ckers-org-web-application-security-lab-archive-evasion.md) | article | ha.ckers.org |  | records | 1 |
 | [ha.ckers.org web application security lab - Archive » Stealing User Information Via Automatic Form Filling](md/2006/ha-ckers-org-ha-ckers-org-web-application-security-lab-archive-stealing-filling.md) | article | ha.ckers.org |  | records | 1 |
 | [Hacker Protection from SQL Injection  SPI Dynamics](md/2006/hpe-com-hacker-protection-sql-injection-spi-dynamics.md) | article | spidynamics.com |  | research | 1 |
-| [Hardened PHP - Hardened-PHP](md/2006/hardened-php-hardened-php-hardened-php.md) | article | Hardened-PHP |  | research | 1 |
+| [Hardened-PHP Project - PHP Security - Poking new holes with Flash Crossdomain Policy Files](md/2006/2005-hardened-php-net-hardened-php-project-php-security-poking-new-holes-files.md) | article | hardened-php.net | 2005 | research | 1 |
 | [How to get linked from Slashdot](md/2006/blog-jeremiahgrossman-com-how-get-linked-slashdot.md) | article | blog.jeremiahgrossman.com |  | records | 1 |
 | [I know what you've got (Firefox Extensions)](md/2006/blog-jeremiahgrossman-com-i-know-what-you-ve-got-firefox-extensions.md) | article | blog.jeremiahgrossman.com |  | research | 1 |
 | [I know where you've been](md/2006/jeremiahgrossman-blogspot-com-i-know-where-you-ve-been.md) | article | jeremiahgrossman.blogspot.com |  | research | 1 |
@@ -1746,11 +1744,13 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [JavaScript/HTML Portscanning and HTTP Auth](md/2006/blog-php-security-org-javascript-html-portscanning-http-auth.md) | article | blog.php-security.org |  | research | 1 |
 | [Metaverse breached: Second Life customer database hacked](md/2006/2006-techcrunch-metaverse-breached-second-life-customer-database-hacked.md) | article | TechCrunch | 2006 | research | 1 |
 | [My TV interview with ABC News (AU)](md/2006/blog-jeremiahgrossman-com-my-tv-interview-abc-news-au.md) | article | blog.jeremiahgrossman.com |  | research | 1 |
+| [Netcraft: HostGator: cPanel Security Hole Exploited in Mass Hack](md/2006/news-netcraft-com-netcraft-hostgator-cpanel-security-hole-exploited-mass-hack.md) | article | news.netcraft.com |  | research | 1 |
+| [Netcraft: PayPal Security Flaw allows Identity Theft](md/2006/news-netcraft-com-netcraft-paypal-security-flaw-allows-identity-theft.md) | article | news.netcraft.com |  | research | 1 |
 | [Network Scanning with HTTP without JavaScript](md/2006/iblog-ilia-alshanetsky-network-scanning-http-without-javascript.md) | article | iBlog - Ilia Alshanetsky |  | research | 1 |
-| [news](md/2006/information-week-news.md) | article | Information Week |  | research | 1 |
-| [Resources](md/2006/netcraft-com-resources.md) | article | netcraft.com |  | research | 1 |
-| [Resources](md/2006/netcraft-com-resources-2.md) | article | netcraft.com |  | research | 1 |
 | [Response Splitting Filter Evasion ha.ckers.org web application security lab](md/2006/ha-ckers-org-response-splitting-filter-evasion-ha-ckers-org-web-application-lab.md) | article | ha.ckers.org |  | records | 1 |
+| [SecuriTeam Blogs » Anonymizing RFI Attacks Through Google](md/2006/blogs-securiteam-com-securiteam-blogs-anonymizing-rfi-attacks-through-google.md) | article | blogs.securiteam.com |  | research | 1 |
+| [SecuriTeam Blogs » Exploiting Google for Phishing](md/2006/blogs-securiteam-com-securiteam-blogs-exploiting-google-phishing.md) | article | blogs.securiteam.com |  | research | 1 |
+| [SecuriTeam Blogs » Xanga Hit By Script Worm](md/2006/blogs-securiteam-com-securiteam-blogs-xanga-hit-script-worm.md) | article | blogs.securiteam.com |  | research | 1 |
 | [Security Fix - Brian Krebs on Computer and Internet Security](md/2006/washingtonpost-com-security-fix-brian-krebs-computer-internet-security.md) | article | blog.washingtonpost.com |  | research | 1 |
 | [Self-contained XSS Attacks](md/2006/gnucitizen-org-self-contained-xss-attacks.md) | article | gnucitizen.org |  | research | 1 |
 | [SIFT - Information Security Services](md/2006/sift-com-au-sift-information-security-services.md) | article | sift.com.au |  | records | 1 |

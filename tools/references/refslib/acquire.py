@@ -411,6 +411,12 @@ def decide(markdown, url, content_gap="", complete=False, override=None, title="
                                  complete=complete, override=override, title=title)
 
 
+# Below this, `precision` is too thin to be an article at all, and the wider
+# candidate is what there is. A page offering no `<main>` or `<article>` gives
+# precision zero characters, and that must keep falling through.
+MIN_PRECISION_CHARS = 1000
+
+
 def choose(candidates):
     """Pick an extraction candidate on measured evidence.
 
@@ -418,20 +424,38 @@ def choose(candidates):
     excludes site furniture. It loses when it dropped code blocks the wider
     candidates kept, which is the failure this archive exists to undo: a page
     whose payload listings vanished still reads fine as prose.
+
+    THE LENGTH TEST CUTS BOTH WAYS. "Precision has under half the text" reads as
+    a truncated article, but it is also what a WordPress sidebar looks like from
+    the other side: NCC Group's "State of DNS Rebinding in 2023" offered
+    precision at 22,636 characters and raw at 381,833, and the 359,000-character
+    difference was an archive listing of every other post on the blog. Choosing
+    raw published the article buried at 94% of the way down, under 2,640 links.
+
+    So a candidate that is merely LONGER does not win. It has to be longer in a
+    way article body is: with headings. When precision already holds every
+    heading and every code block the widest candidate has, the extra text
+    carries no section of its own, and that is navigation rather than prose.
     """
     if not candidates:
         return None, "no candidate"
     best_code = max(item.metrics["code_blocks"] for item in candidates)
     best_chars = max(item.metrics["chars"] for item in candidates)
+    best_headings = max(item.metrics["headings"] for item in candidates)
 
     for item in candidates:
         if item.name != "precision":
             continue
         if item.metrics["code_blocks"] < best_code:
             break                                  # lost code: fall through
-        if item.metrics["chars"] < best_chars * 0.5:
-            break                                  # lost half the text: fall through
-        return item, "precision kept the code blocks and most of the text"
+        if item.metrics["chars"] >= best_chars * 0.5:
+            return item, "precision kept the code blocks and most of the text"
+        if (best_headings > 0
+                and item.metrics["headings"] >= best_headings
+                and item.metrics["chars"] >= MIN_PRECISION_CHARS):
+            return item, ("precision kept every heading and code block, so the "
+                          "longer candidate's extra text is navigation")
+        break                                      # lost half the text: fall through
 
     ranked = sorted(candidates,
                     key=lambda item: (item.metrics["code_blocks"], item.metrics["chars"]),
