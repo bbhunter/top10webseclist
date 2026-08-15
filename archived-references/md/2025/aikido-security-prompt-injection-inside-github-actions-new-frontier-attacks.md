@@ -3,7 +3,7 @@ type: Article
 title: "Prompt Injection Inside GitHub Actions: The New Frontier of Supply Chain Attacks"
 description: CI workflows paste untrusted issue, pull-request and commit text straight into prompts for AI agents that hold write-scoped tokens and shell tools. A crafted issue body is read as instructions, so the agent uses its own tooling, for example editing the issue, to publish repository tokens, cloud credentials and API keys.
 resource: "https://www.aikido.dev/blog/promptpwnd-github-actions-ai-agents"
-tags: [article, webseclist-reference, en, aikido-security, prompt-injection, github-actions, supply-chain, ai-agent, ci-cd, llm, github, info-leak, command-injection]
+tags: [article, webseclist-reference, en, aikido-security, prompt-injection, github-actions, supply-chain, ai-agent, ci-cd, llm, github, info-leak, command-injection, owasp-a03-2021, owasp-a06-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:01:23+00:00"

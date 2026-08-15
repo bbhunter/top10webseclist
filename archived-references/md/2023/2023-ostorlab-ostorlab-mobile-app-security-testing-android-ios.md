@@ -3,7 +3,7 @@ type: Article
 title: "Ostorlab: Mobile App Security Testing for Android and iOS"
 description: "A malicious mobile app registers the custom URL scheme a legitimate app uses as its OAuth redirect_uri, so the authorization grant issued for that app's client_id is delivered to the attacker and the victim's account is taken over. Scheme conflicts are dodged by claiming the app's iOS scheme on Android or a loosely validated host, and consent is skipped via login_hint."
 resource: "https://blog.ostorlab.co/one-scheme-to-rule-them-all.html"
-tags: [article, webseclist-reference, en, ostorlab, oauth, auth-bypass, android, ios, openid, sso, open-redirect, attack-chain, case-study]
+tags: [article, webseclist-reference, en, ostorlab, oauth, auth-bypass, android, ios, openid, sso, open-redirect, attack-chain, case-study, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:06:25+00:00"

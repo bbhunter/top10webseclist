@@ -3,7 +3,7 @@ type: Article
 title: "The GitHub Actions Worm: Compromising GitHub Repositories Through the Actions Dependency Tree"
 description: "GitHub Actions can depend on other actions through action.yml and through the workflows that build them, forming a dependency tree mapped here across the Marketplace. Code running in a job can read the runner's memory to recover every secret in that job, including a GITHUB_TOKEN never referenced, then use its write access to infect dependent action repositories - a worm. Repojacking, npm account hijacking and command injection supply the foothold."
 resource: "https://www.paloaltonetworks.com/blog/prisma-cloud/github-actions-worm-dependencies/"
-tags: [article, webseclist-reference, en, palo-alto-networks-blog, github-actions, supply-chain, ci-cd, github, command-injection, info-leak]
+tags: [article, webseclist-reference, en, palo-alto-networks-blog, github-actions, supply-chain, ci-cd, github, command-injection, info-leak, owasp-a03-2021, owasp-a06-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:35:49+00:00"

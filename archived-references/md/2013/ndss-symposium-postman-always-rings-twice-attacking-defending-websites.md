@@ -3,7 +3,7 @@ type: Article
 title: "The Postman Always Rings Twice: Attacking and Defending postMessage in HTML5 Websites"
 description: "A Chrome extension called RVSCOPE hooked addEventListener across the Alexa top 10,000 and harvested 136 distinct postMessage receivers used by 2,245 hosts. 65 did no origin check at all and 14 checked with broken regular expressions, giving script injection or local-storage writes on 84 sites. Two defences follow: a pseudo-random token carried in the frame src, and a CSP msg-src extension."
 resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/postman-always-rings-twice-attacking-and-defending-postmessage-html5-websites/"
-tags: [article, webseclist-reference, postmessage, xss, same-origin-policy, sop-bypass, measurement-study, large-scale-scan, csp, iframe, mitigation]
+tags: [article, webseclist-reference, postmessage, xss, same-origin-policy, sop-bypass, measurement-study, large-scale-scan, csp, iframe, mitigation, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:29+00:00"

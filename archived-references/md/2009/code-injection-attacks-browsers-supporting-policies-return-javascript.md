@@ -3,7 +3,7 @@ type: Whitepaper
 title: Code-Injection Attacks in Browsers Supporting Policies (return-to-JavaScript)
 description: A W2SP 2009 paper on XSS attacks that defeat browser-enforced policy frameworks. It examines BEEP, which whitelists trusted scripts in the browser, and shows attacks analogous to return-to-libc that reuse already-trusted client-side code rather than injecting new script. It proposes isolating trusted code via policies expressed as browser actions.
 resource: "https://www.ieee-security.org/TC/W2SP/2009/papers/s3p1.pdf"
-tags: [whitepaper, webseclist-reference, xss, csp, javascript, filter-bypass, formal-analysis, mitigation, defence, novel-technique]
+tags: [whitepaper, webseclist-reference, xss, csp, javascript, filter-bypass, formal-analysis, mitigation, defence, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:41:58+00:00"

@@ -3,7 +3,7 @@ type: Whitepaper
 title: Eradicating DNS Rebinding with the Extended Same-Origin Policy
 description: "The HTML5 Offline AppCache lets an attacker keep script cached until the browser's DNS pinning lapses, making DNS rebinding reliable in every major browser; a two-domain variant survives cache revalidation and repeats. Demonstrated against Polipo and CUPS. The fix adds a server-declared X-Server-Origin to the origin check, implemented in Chromium in 34 lines."
 resource: "http://web.archive.org/web/20160507023636/http://ben-stock.de/wp-content/uploads/dns-rebinding.pdf"
-tags: [whitepaper, webseclist-reference, dns-rebinding, same-origin-policy]
+tags: [whitepaper, webseclist-reference, dns-rebinding, same-origin-policy, owasp-a01-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:36:56+00:00"

@@ -3,7 +3,7 @@ type: Slides
 title: "Messenger Bug Hunting: A Bug's End-to-End Lifecycle"
 description: "Three Meta Messenger bugs: a URL check that treats any domain merely starting with the brand name as genuine, so phishing links get official branding in encrypted chats; an effect icon URL with a bad path that crashes group calls; and negative offsets or lengths in mentions that crash the recipient's encrypted chat."
 resource: "https://docs.google.com/presentation/d/1HvkK2cdwWWjOZ_m373Eq8vmjgsy84bapTJFBbWHaK1o/"
-tags: [slides, webseclist-reference, url-parsing, filter-bypass, dos, webrtc, fuzzing, android, bug-bounty, case-study]
+tags: [slides, webseclist-reference, url-parsing, filter-bypass, dos, webrtc, fuzzing, android, bug-bounty, case-study, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:32:37+00:00"

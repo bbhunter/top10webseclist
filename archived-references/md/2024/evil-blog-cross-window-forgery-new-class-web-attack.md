@@ -3,7 +3,7 @@ type: Article
 title: "Cross Window Forgery: A New Class of Web Attack"
 description: "A URL fragment matching an element's id focuses that element, and pressing Enter or Space then activates it. The attacker opens target.com/oauth/allow?appId=evil#allow-button in a 1x1 window moved offscreen and asks the victim to hold a key, so the OAuth consent button is clicked in the victim's session; because this is top-level navigation, SameSite cookies and anti-CSRF tokens do not help. A three-window sandwich variant uses a double click instead."
 resource: "https://www.paulosyibelo.com/2024/02/cross-window-forgery-web-attack-vector.html?m=1"
-tags: [article, webseclist-reference, en, evil-blog, ui-redress, clickjacking, csrf, oauth, abuse-of-functionality, novel-technique]
+tags: [article, webseclist-reference, en, evil-blog, ui-redress, clickjacking, csrf, oauth, abuse-of-functionality, novel-technique, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:35:52+00:00"

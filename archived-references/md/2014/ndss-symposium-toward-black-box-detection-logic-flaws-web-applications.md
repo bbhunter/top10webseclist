@@ -3,7 +3,7 @@ type: Article
 title: Toward Black-Box Detection of Logic Flaws in Web Applications
 description: "A black-box method that infers a behavioural model of a web application from recorded HTTP traces, abstracts requests into resources, then generates test cases that replay, reorder or skip steps to break the intended workflow. It exposes logic flaws in e-commerce software that allow shopping for free and hijacking another user's session."
 resource: "https://www.ndss-symposium.org/ndss2014/ndss-2014-programme/toward-black-box-detection-logic-flaws-web-applications/"
-tags: [article, webseclist-reference, dynamic-analysis, http, auth-bypass, tooling, detection, case-study, novel-technique]
+tags: [article, webseclist-reference, dynamic-analysis, http, auth-bypass, tooling, detection, case-study, novel-technique, owasp-a01-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T16:01:06+00:00"

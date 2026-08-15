@@ -3,7 +3,7 @@ type: Article
 title: CESA-2008-011
 description: "Firefox's window.onerror reports JavaScript error text, and some messages quote the content that failed to parse. Sourcing a remote non-script resource and reading 'blah is not defined' steals one word cross-domain; iterating recovers a whole CSV row. Firefox 3.0.4's generic-message defence falls to the 302 redirect trick. CVE-2008-5507."
 resource: "http://scary.beasts.org/security/CESA-2008-011.html"
-tags: [article, webseclist-reference, scary-beasts-org, xsleak, side-channel, info-leak, sop-bypass, javascript, cve, novel-technique]
+tags: [article, webseclist-reference, scary-beasts-org, xsleak, side-channel, info-leak, sop-bypass, javascript, cve, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:59+00:00"

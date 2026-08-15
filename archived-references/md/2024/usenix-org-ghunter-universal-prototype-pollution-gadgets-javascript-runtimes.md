@@ -3,7 +3,7 @@ type: Article
 title: "GHunter: Universal Prototype Pollution Gadgets in JavaScript Runtimes"
 description: Studies prototype pollution gadgets inside JavaScript runtimes rather than libraries, arguing that runtime gadgets affect every application executing on them. GHunter, a lightweight dynamic taint analysis built into V8 and driven by the Node.js and Deno test suites, identified 56 new gadgets in Node.js and 67 in Deno, spanning arbitrary code execution, privilege escalation and path traversal, and the paper systematises existing mitigations as development guidance.
 resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/cornelissen"
-tags: [article, webseclist-reference, en, usenix-org, prototype-pollution, gadget-chain, nodejs, javascript-runtime, dynamic-analysis, rce, privilege-escalation, path-traversal, tooling]
+tags: [article, webseclist-reference, en, usenix-org, prototype-pollution, gadget-chain, nodejs, javascript-runtime, dynamic-analysis, rce, privilege-escalation, path-traversal, tooling, owasp-a01-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:25+00:00"

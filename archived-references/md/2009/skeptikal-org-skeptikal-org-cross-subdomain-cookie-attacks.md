@@ -3,7 +3,7 @@ type: Article
 title: "Skeptikal.org: Cross-subdomain Cookie Attacks"
 description: "Announces a Toorcon talk and paper on client-side trust in subdomains. Cookie scoping implements its security policy backwards, granting a subdomain more trust than its parent rather than less as the DNS hierarchy would suggest. Proofs of concept target Google's then-new CSRF protection and Expedia; both were fixed before publication."
 resource: "http://skeptikal.org/2009/11/cross-subdomain-cookie-attacks.html"
-tags: [article, webseclist-reference, en, skeptikal-org, cookie, csrf, dns, same-origin-policy, auth-bypass, case-study]
+tags: [article, webseclist-reference, en, skeptikal-org, cookie, csrf, dns, same-origin-policy, auth-bypass, case-study, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:24+00:00"

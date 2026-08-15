@@ -3,7 +3,7 @@ type: Article
 title: ALPACA Attack
 description: TLS authenticates the certificate but not the TCP endpoint, so a man-in-the-middle can redirect an HTTPS connection to a different service that shares a compatible certificate, such as an FTP or mail server. The mismatched application protocol then reflects or stores attacker data that the browser executes in the web origin, stealing cookies or running script.
 resource: "https://alpaca-attack.com/"
-tags: [article, webseclist-reference, en, alpaca-attack-com, auth-bypass, sop-bypass, xss, info-leak, tls, https, ftp, smtp, large-scale-scan, prior-art-extension]
+tags: [article, webseclist-reference, en, alpaca-attack-com, auth-bypass, sop-bypass, xss, info-leak, tls, https, ftp, smtp, large-scale-scan, prior-art-extension, owasp-a01-2021, owasp-a02-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:01:23+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: XSS-Track as a HTML5 WebSockets traffic sniffer
 description: "Kotowicz extends XSS-Track so one injected script sniffs HTML5 WebSocket traffic. It wraps window.WebSocket, replacing the constructor and prototype.send and attaching a message listener, so every frame sent and received is logged to the attacker's backend - showing ws:// is no safe channel for private data on a page with any XSS."
 resource: "http://blog.kotowicz.net/2011/01/xss-track-as-html5-websockets-traffic.html"
-tags: [article, webseclist-reference, blog-kotowicz-net, websocket, xss, javascript, info-leak, tooling, dom, novel-technique]
+tags: [article, webseclist-reference, blog-kotowicz-net, websocket, xss, javascript, info-leak, tooling, dom, novel-technique, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:27+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: IE9 Self-XSS Blackbox Protection bypass
 description: "IE9 strips javascript: and vbscript: from pasted addresses to blunt self-XSS scams. Dalili found the filter is bypassed by wrapping the scheme, for example XfileX: followed by control characters and then the javascript: payload, which IE9 still executes. Combined with the Ctrl+Shift+L go-to-copied-address shortcut it becomes a one-keystroke social engineering attack."
 resource: "https://soroush.me/blog/ie9-self-xss-blackbox-protection-bypass"
-tags: [article, webseclist-reference, en, soroush-me, xss, filter-bypass, url-parsing, sanitizer-bypass, encoding, novel-technique]
+tags: [article, webseclist-reference, en, soroush-me, xss, filter-bypass, url-parsing, sanitizer-bypass, encoding, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:23+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "[0day] Text/Plain Considered Harmful"
 description: Internet Explorer MIME-sniffs the contents of a message/rfc822 .eml file, so an attacker-hosted .eml can frame a page served as text/plain and have its injected HTML and script rendered anyway. This turns otherwise inert reflected input in text/plain responses into working cross-site scripting, and X-Content-Type-Options nosniff does not stop it.
 resource: "https://web.archive.org/web/20180808171731/https://jankopecky.net/index.php/2017/04/18/0day-textplain-considered-harmful/"
-tags: [article, webseclist-reference, en-US, jankopecky-net, mime, xss, content-type, iframe, filter-bypass, novel-technique]
+tags: [article, webseclist-reference, en-US, jankopecky-net, mime, xss, content-type, iframe, filter-bypass, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:46+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Re-Animating ActivitySurrogateSelector
 description: "Microsoft's .NET 4.8 fix for the ActivitySurrogateSelector deserialization gadget is only a type check that a hidden app setting can disable. A still-working gadget, TextFormattingRunProperties driving XamlReader and ObjectDataProvider, sets that flag or writes the internal boolean by reflection, re-enabling arbitrary assembly loading and code execution from a deserialization sink."
 resource: "https://www.netspi.com/blog/technical-blog/red-teaming/re-animating-activitysurrogateselector/"
-tags: [article, webseclist-reference, netspi, deserialization, gadget-chain, rce, dotnet, filter-bypass, prior-art-extension, tooling]
+tags: [article, webseclist-reference, netspi, deserialization, gadget-chain, rce, dotnet, filter-bypass, prior-art-extension, tooling, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T00:29:06+00:00"

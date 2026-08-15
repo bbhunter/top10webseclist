@@ -3,7 +3,7 @@ type: Article
 title: "FCSC 2026 Writeups. Tags:Writeup - Writeup - FCSC2026"
 description: "Five CTF web writeups, each a parser disagreement. JavaScript's toLowerCase expands U+0130 to two code points so an execCommand blocklist misses it, while Firefox's u_tolower maps it to plain i and runs insertHTML. Angular ignores matrix params after ';' that Apache counts as real directories, reopening a traversal. DOMPurify lowercases an invalid element name to an allowed tag that JSDOM serialises unescaped, and gunicorn strips a trailing 0x85 byte from Transfer-Encoding where Apache keeps it."
 resource: "https://web.archive.org/web/20260418230027/https://mizu.re/post/fcsc-2026-writeups"
-tags: [article, webseclist-reference, en, mizu-re, parser-differential, request-smuggling, unicode, dom-clobbering, mutation-xss, xss, path-traversal, sanitizer-bypass, postmessage, mime]
+tags: [article, webseclist-reference, en, mizu-re, parser-differential, request-smuggling, unicode, dom-clobbering, mutation-xss, xss, path-traversal, sanitizer-bypass, postmessage, mime, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:17:49+00:00"

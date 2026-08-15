@@ -3,7 +3,7 @@ type: Article
 title: Adobe Reader PDF - Client Side Request Injection
 description: "Adobe Reader's XFA submit element copies its textEncoding charset straight into the POST request the PDF makes, so a newline injected there adds arbitrary headers such as Referer, Host or Origin, or pipelines an entirely new request. It fires with no user interaction when the PDF loads in the Adobe ActiveX plugin, and a redirect turns it into a GET while keeping the injected header."
 resource: "https://insert-script.blogspot.com/2018/05/adobe-reader-pdf-client-side-request.html"
-tags: [article, webseclist-reference, insert-script-blogspot-com, header-injection, pdf, activex, request-smuggling, http, filter-bypass, novel-technique]
+tags: [article, webseclist-reference, insert-script-blogspot-com, header-injection, pdf, activex, request-smuggling, http, filter-bypass, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:20+00:00"

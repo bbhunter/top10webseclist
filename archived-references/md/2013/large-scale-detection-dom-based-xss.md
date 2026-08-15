@@ -3,7 +3,7 @@ type: Whitepaper
 title: Large Scale Detection of DOM based XSS
 description: "Chromium's V8 engine and its WebKit DOM were patched to track taint byte by byte, so every character arriving at a sink carried its source and any encoding applied. Knowing the exact syntactic context let the tool build break-out payloads that proved execution instead of guessing. Crawling 504,275 pages from the Alexa top 5000 produced 24.4M flows and 6,167 confirmed DOM XSS on 480 domains."
 resource: "http://web.archive.org/web/20160507023636/http://ben-stock.de/wp-content/uploads/domxss.pdf"
-tags: [whitepaper, webseclist-reference, xss, static-analysis, javascript, large-scale-scan, measurement-study, tooling]
+tags: [whitepaper, webseclist-reference, xss, static-analysis, javascript, large-scale-scan, measurement-study, tooling, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T13:03:34+00:00"

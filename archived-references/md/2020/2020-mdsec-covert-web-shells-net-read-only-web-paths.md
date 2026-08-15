@@ -3,7 +3,7 @@ type: Article
 title: Covert Web Shells in .NET with Read-Only Web Paths
 description: Given a .NET code-execution bug (SharePoint CVE-2020-1147 deserialization) but a non-writable web directory, an attacker can register a VirtualPathProvider ghost web shell that exists only in memory. It serves a web shell even under precompiled apps and FriendlyUrls, avoids writing to disk, and can even replace existing uncompiled .NET pages, evading file-based detection.
 resource: "https://www.mdsec.co.uk/2020/10/covert-web-shells-in-net-with-read-only-web-paths/"
-tags: [article, webseclist-reference, en, mdsec, rce, deserialization, cve, dotnet, aspnet, gadget-chain, case-study]
+tags: [article, webseclist-reference, en, mdsec, rce, deserialization, cve, dotnet, aspnet, gadget-chain, case-study, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:31:26+00:00"

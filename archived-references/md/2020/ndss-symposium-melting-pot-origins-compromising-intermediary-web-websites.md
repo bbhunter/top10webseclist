@@ -3,7 +3,7 @@ type: Article
 title: "Melting Pot of Origins: Compromising the Intermediary Web Services that Rehost Websites"
 description: Web proxies, translators and archives rehost many different sites under one domain name, collapsing them into a single origin. Across 21 such services the authors show persistent man-in-the-middle, cross-site access to stored resources and permissions, credential and browsing-history theft, and session hijacking or injection between rehosted sites.
 resource: "https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/"
-tags: [article, webseclist-reference, en, ndss-symposium, same-origin-policy, sop-bypass, session-fixation, info-leak, proxy, cookie, measurement-study, large-scale-scan]
+tags: [article, webseclist-reference, en, ndss-symposium, same-origin-policy, sop-bypass, session-fixation, info-leak, proxy, cookie, measurement-study, large-scale-scan, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:10+00:00"

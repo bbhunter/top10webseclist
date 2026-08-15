@@ -3,7 +3,7 @@ type: Article
 title: Google Urchin Password Theft Madness
 description: "Google Urchin 5's session.cgi login page takes an unfiltered parameter, giving reflected XSS on 5.6.00r2 through 5.7.03. pagvac shows it is worth more than an alert box: rewrite the form action, or exploit the browser's saved-password autocomplete, waiting 1.5s with setTimeout before shipping the filled username and password to an attacker image URL. Works on Firefox 2.0.0.7, not IE 7."
 resource: "https://www.gnucitizen.org/blog/google-urchin-password-theft-madness"
-tags: [article, webseclist-reference, en, gnucitizen-org, xss, phishing, info-leak, javascript, case-study]
+tags: [article, webseclist-reference, en, gnucitizen-org, xss, phishing, info-leak, javascript, case-study, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:50+00:00"

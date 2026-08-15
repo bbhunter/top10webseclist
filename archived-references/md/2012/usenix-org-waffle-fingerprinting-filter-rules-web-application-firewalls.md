@@ -3,7 +3,7 @@ type: Article
 title: "WAFFle: Fingerprinting Filter Rules of Web Application Firewalls"
 description: "WAFFle recovers a web application firewall's filter rules through a timing side channel: blocked and passed requests differ measurably even for transparent WAFs that alter no response. Driving it indirectly through CSRF hides the attacker and evades brute-force limits. Against ModSecurity and PHPIDS over the Internet it classified over 95% of requests from a single request."
 resource: "https://www.usenix.org/conference/woot12/workshop-program/presentation/schmitt"
-tags: [article, webseclist-reference, en, usenix-org, waf, waf-bypass, timing-attack, side-channel, csrf, detection, tooling]
+tags: [article, webseclist-reference, en, usenix-org, waf, waf-bypass, timing-attack, side-channel, csrf, detection, tooling, owasp-a01-2021, owasp-a05-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:45+00:00"

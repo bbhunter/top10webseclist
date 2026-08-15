@@ -3,7 +3,7 @@ type: Article
 title: Forgot password? Taking over user accounts Kaminsky style
 description: Registering accounts on 146 real web applications with per-target subdomain e-mail addresses, then proxying the resulting MX lookups, to measure which applications still meet the preconditions for Kaminsky-style cache poisoning or IP-fragmentation attacks. Poisoning such a resolver redirects password-reset mail to the attacker and takes over accounts.
 resource: "https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/"
-tags: [article, webseclist-reference, en-us, sec-consult, cache-poisoning, dns, auth-bypass, email, smtp, measurement-study, tooling, prior-art-extension]
+tags: [article, webseclist-reference, en-us, sec-consult, cache-poisoning, dns, auth-bypass, email, smtp, measurement-study, tooling, prior-art-extension, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:13+00:00"

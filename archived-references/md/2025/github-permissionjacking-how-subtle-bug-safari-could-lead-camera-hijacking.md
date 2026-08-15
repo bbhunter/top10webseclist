@@ -3,7 +3,7 @@ type: Code
 title: "PermissionJacking: How a Subtle Bug in Safari Could Lead to Camera Hijacking"
 description: "Safari on macOS leaves camera, microphone and location prompts clickable while the window is unfocused, so one click reaches Allow. Two clickjacking methods hide the prompt under a pop-up: one flickers the pop-up size on hover so the Allow button is never clearly visible, the other closes it on the first press of a double-click."
 resource: "https://github.com/RenwaX23/X/blob/master/safari_bug.md"
-tags: [code, webseclist-reference, github, clickjacking, ui-redress, race-condition, javascript, dom, novel-technique, case-study]
+tags: [code, webseclist-reference, github, clickjacking, ui-redress, race-condition, javascript, dom, novel-technique, case-study, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:05:42+00:00"

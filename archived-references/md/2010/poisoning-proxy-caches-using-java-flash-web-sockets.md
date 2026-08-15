@@ -3,7 +3,7 @@ type: Whitepaper
 title: Poisoning proxy caches using Java/Flash/Web Sockets
 description: Java and Flash socket consent protocols are proxied by transparent intermediaries that never understand them, letting a SWF or applet forge a Host header over a raw socket. Ads served to 174,250 impressions measured roughly 7% of users exposed to IP hijacking and 0.2% to cache poisoning, at $0.93 per successful poisoning.
 resource: "http://www.adambarth.com/experimental/websocket.pdf"
-tags: [whitepaper, webseclist-reference, cache-poisoning, proxy, websocket, flash, java, http, measurement-study, novel-technique, header-injection]
+tags: [whitepaper, webseclist-reference, cache-poisoning, proxy, websocket, flash, java, http, measurement-study, novel-technique, header-injection, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:33:51+00:00"

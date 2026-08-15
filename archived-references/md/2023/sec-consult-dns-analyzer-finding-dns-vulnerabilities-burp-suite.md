@@ -3,7 +3,7 @@ type: Article
 title: DNS Analyzer - Finding DNS vulnerabilities with Burp Suite
 description: A Burp Suite extension that uses Burp Collaborator interactions to measure the UDP source port and DNS ID randomness of the resolver a web application uses, flagging resolvers still predictable enough for a Kaminsky cache-poisoning attack. An attacker who poisons such a resolver can redirect password-reset mail and take over accounts.
 resource: "https://sec-consult.com/blog/detail/dns-analyzer-finding-dns-vulnerabilities-with-burp-suite/"
-tags: [article, webseclist-reference, en, sec-consult, cache-poisoning, dns, tooling, auth-bypass, email, detection, bug-bounty]
+tags: [article, webseclist-reference, en, sec-consult, cache-poisoning, dns, tooling, auth-bypass, email, detection, bug-bounty, owasp-a01-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:12+00:00"

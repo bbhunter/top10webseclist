@@ -3,7 +3,7 @@ type: Article
 title: Authorization bypass due to cache misconfiguration
 description: "A short-lived server-side cache on an e-commerce admin GraphQL endpoint stored the order-listing response without including the caller's authorisation in the cache key. This bug bounty write-up shows that a low-privilege user replaying the same operation with a publicly known shop identifier inside the three-to-four second window received the cached administrator response, exposing order and customer data even though the endpoint otherwise returned 403 to that user."
 resource: "https://rikeshbaniya.medium.com/authorization-bypass-due-to-cache-misconfiguration-fde8b2332d2d"
-tags: [article, webseclist-reference, en, medium, cache, auth-bypass, graphql, info-leak, bug-bounty]
+tags: [article, webseclist-reference, en, medium, cache, auth-bypass, graphql, info-leak, bug-bounty, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:14+00:00"

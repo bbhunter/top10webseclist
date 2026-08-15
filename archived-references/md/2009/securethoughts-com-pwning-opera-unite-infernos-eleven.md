@@ -3,7 +3,7 @@ type: Article
 title: Pwning Opera Unite with Inferno’s Eleven
 description: Eleven flaws in the Opera Unite 10 beta, tested against Build 1703. Username and computer-name enumeration, service-owner IP and port disclosure, plain-HTTP service pages, phishing hosted on trusted operaunite.com, CSRF file upload yielding stored XSS that steals the ACL password, CSRF against the Fridge and chatroom, cookie XSS via Flash header forging, and weak default passwords.
 resource: "http://securethoughts.com/2009/08/pwning-opera-unite-with-infernos-eleven/"
-tags: [article, webseclist-reference, en-US, securethoughts-com, csrf, xss, file-upload, info-leak, clickjacking, flash, https, case-study]
+tags: [article, webseclist-reference, en-US, securethoughts-com, csrf, xss, file-upload, info-leak, clickjacking, flash, https, case-study, owasp-a01-2021, owasp-a02-2021, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:41:03+00:00"

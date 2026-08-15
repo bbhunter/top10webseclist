@@ -3,7 +3,7 @@ type: Article
 title: "Digger's blog"
 description: A walkthrough of session riding (CSRF) against digg.com. A zero-size iframe is filled by JavaScript with a POST form, and because IE and Firefox send no Referer for a frame built by script, referer checks fail; only Opera resists. The page itself diggs a story on load as the demo. The fix given is a single-use token in every form and link.
 resource: "https://4diggers.blogspot.com/"
-tags: [article, webseclist-reference, 4diggers-blogspot-com, csrf, iframe, javascript, cookie, abuse-of-functionality, mitigation, case-study]
+tags: [article, webseclist-reference, 4diggers-blogspot-com, csrf, iframe, javascript, cookie, abuse-of-functionality, mitigation, case-study, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:07:48+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Salt Labs Finds OAuth Abuse Used to Take Over Accounts
 description: "Sites that accept a social-login access token frequently never verify which application the token was minted for. An attacker who harvests Facebook tokens on an innocuous site of their own can replay them into Vidio, Bukalapak and Grammarly, the last by swapping the code parameter for access_token, and take over any victim's account there with no interaction from the victim."
 resource: "https://salt.security/blog/oh-auth-abusing-oauth-to-take-over-millions-of-accounts"
-tags: [article, webseclist-reference, en, salt-security, oauth, sso, auth-bypass, rest-api, case-study, bug-bounty, mitigation]
+tags: [article, webseclist-reference, en, salt-security, oauth, sso, auth-bypass, rest-api, case-study, bug-bounty, mitigation, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:19+00:00"

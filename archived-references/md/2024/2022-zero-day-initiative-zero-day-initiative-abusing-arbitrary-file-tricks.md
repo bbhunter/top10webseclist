@@ -3,7 +3,7 @@ type: Advisory
 title: Zero Day Initiative — Abusing Arbitrary File Deletes to Escalate Privilege and Other Great Tricks
 description: Turns weak Windows filesystem primitives, an arbitrary file or folder delete, move or rename, into full SYSTEM privilege escalation by seizing the Windows Installer rollback folder and planting forged rollback scripts. Also shows an arbitrary folder create that permanently stops the machine booting.
 resource: "https://www.zerodayinitiative.com/blog/2022/3/16/abusing-arbitrary-file-deletes-to-escalate-privilege-and-other-great-tricks"
-tags: [advisory, webseclist-reference, en, zero-day-initiative, privilege-escalation, toctou, race-condition, dos, attack-chain, novel-technique]
+tags: [advisory, webseclist-reference, en, zero-day-initiative, privilege-escalation, toctou, race-condition, dos, attack-chain, novel-technique, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:08:04+00:00"

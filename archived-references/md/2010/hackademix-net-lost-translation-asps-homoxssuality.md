@@ -3,7 +3,7 @@ type: Article
 title: Lost in Translation (ASP’s HomoXSSuality)
 description: "Classic ASP's Request() silently transliterates non-ASCII characters into the ASCII letters they resemble or sound like, an undocumented behaviour dropped in ASP.NET. A VBScript and JavaScript harness enumerated the full mapping table, finding three homoglyphs for '<' and five for the apostrophe, so a %u-escaped query string reaches the application as a working script tag and slips past anti-XSS filters and WAFs."
 resource: "https://hackademix.net/2010/08/17/lost-in-translation-asps-homoxssuality/"
-tags: [article, webseclist-reference, en-US, hackademix-net, unicode, charset, filter-bypass, waf-bypass, sanitizer-bypass, xss, sqli, encoding, novel-technique]
+tags: [article, webseclist-reference, en-US, hackademix-net, unicode, charset, filter-bypass, waf-bypass, sanitizer-bypass, xss, sqli, encoding, novel-technique, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:26:55+00:00"

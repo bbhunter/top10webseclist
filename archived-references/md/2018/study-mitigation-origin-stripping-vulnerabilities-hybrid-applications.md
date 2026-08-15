@@ -3,7 +3,7 @@ type: Article
 title: Study and Mitigation of Origin Stripping Vulnerabilities in Hybrid-postMessage Enabled Mobile Applications
 description: postMessage extended for hybrid mobile apps treats native code as an extra frame, and a message origin is not respected or is lost outright on delivery. Code injected into a WebView can passively read messages holding sensitive data or send messages to arbitrary receivers and reach internal functions; 74 apps were affected, and the paper adds OSV-Hunter detection and safe OSV-Free APIs.
 resource: "https://ieeexplore.ieee.org/document/8418635/"
-tags: [article, webseclist-reference, ieeexplore-ieee-org, postmessage, sop-bypass, info-leak, same-origin-policy, android, dos, measurement-study, mitigation]
+tags: [article, webseclist-reference, ieeexplore-ieee-org, postmessage, sop-bypass, info-leak, same-origin-policy, android, dos, measurement-study, mitigation, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T20:59:34+00:00"

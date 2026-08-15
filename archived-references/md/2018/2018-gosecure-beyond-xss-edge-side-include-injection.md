@@ -3,7 +3,7 @@ type: Article
 title: "Beyond XSS: Edge Side Include Injection"
 description: "ESI Injection: getting Edge Side Include tags reflected into an HTTP response makes the caching surrogate in front of the application evaluate them, since it cannot tell attacker tags from upstream ones. That yields server-side request forgery from the proxy, exfiltration of HttpOnly cookies, a client-side XSS filter bypass, CRLF header injection and denial of service."
 resource: "https://gosecure.net/2018/04/03/beyond-xss-edge-side-include-injection/"
-tags: [article, webseclist-reference, en, gosecure, ssrf, injection, xss, filter-bypass, header-injection, cookie, reverse-proxy, cache, xxe, novel-technique]
+tags: [article, webseclist-reference, en, gosecure, ssrf, injection, xss, filter-bypass, header-injection, cookie, reverse-proxy, cache, xxe, novel-technique, owasp-a03-2021, owasp-a05-2021, owasp-a07-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:40:02+00:00"

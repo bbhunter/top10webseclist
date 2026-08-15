@@ -3,7 +3,7 @@ type: Article
 title: "Account hijacking using \"dirty dancing\" in sign-in OAuth-flows"
 description: "Deliberately breaking an OAuth sign-in flow - an invalid state, a switched response type, a tampered redirect_uri - leaves the code or token in the victim's URL on an error page. The attacker then reads that URL via a third-party gadget already on the page, such as a lax postMessage listener, an XSS-able sandbox iframe, a storage iframe or a chat widget API, and hijacks the account in one click."
 resource: "https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/"
-tags: [article, webseclist-reference, en, labs-detectify, oauth, postmessage, auth-bypass, info-leak, sso, iframe, attack-chain, bug-bounty]
+tags: [article, webseclist-reference, en, labs-detectify, oauth, postmessage, auth-bypass, info-leak, sso, iframe, attack-chain, bug-bounty, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:33:07+00:00"

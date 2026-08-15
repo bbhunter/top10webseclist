@@ -3,7 +3,7 @@ type: Article
 title: "Introducing SignSaboteur: forge signed web tokens with ease"
 description: Signed web tokens beyond JWT, including the session formats used by Django, Flask, Express and Rails, are widely deployed with default or leaked signing secrets, and their bespoke encodings make them easy to overlook during testing. This article presents SignSaboteur, an open-source Burp Suite extension that detects, edits, re-signs and brute-forces such tokens in requests and WebSocket messages, and sets out a methodology for turning a recovered secret into an authorisation bypass.
 resource: "https://portswigger.net/research/introducing-signsaboteur-forge-signed-web-tokens-with-ease"
-tags: [article, webseclist-reference, portswigger-research, tooling, jwt, auth-bypass, cookie, privilege-escalation, flask, django, express]
+tags: [article, webseclist-reference, portswigger-research, tooling, jwt, auth-bypass, cookie, privilege-escalation, flask, django, express, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:44+00:00"

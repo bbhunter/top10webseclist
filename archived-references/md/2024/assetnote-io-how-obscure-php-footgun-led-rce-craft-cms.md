@@ -3,7 +3,7 @@ type: Article
 title: How an obscure PHP footgun led to RCE in Craft CMS
 description: "With register_argc_argv on, PHP fills $_SERVER[argv] from the query string, and Craft CMS reads its CLI options from there without checking the SAPI, so ?--templatesPath= sets the template root from the URL. http and php stream wrappers fail Craft's file_exists guard, but ftp supports stat and templates are read with file_get_contents, so a remote Twig file loads; the filter blocklist is then dodged with sort(call_user_func) over [system, id]."
 resource: "https://www.assetnote.io/resources/research/how-an-obscure-php-footgun-led-to-rce-in-craft-cms"
-tags: [article, webseclist-reference, en, assetnote-io, php, rce, ssti, filter-bypass, ftp, sandbox-escape, cve]
+tags: [article, webseclist-reference, en, assetnote-io, php, rce, ssti, filter-bypass, ftp, sandbox-escape, cve, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:01:37+00:00"

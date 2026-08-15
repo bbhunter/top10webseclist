@@ -3,7 +3,7 @@ type: Article
 title: Flash Origin Policy Issues
 description: Flash objects run scripts in the origin they are served from, and a SWF needs no .swf extension or content-type to execute, so any site serving user-uploaded files from its own domain is exploitable. Content overloading — the inverse of GIFAR — prepends a SWF to any ZIP-family file, defeating validation. Demonstrated against cPanel, SquirrelMail and Gmail attachments.
 resource: "http://foregroundsecurity.com/MyBlog/flash-origin-policy-issues.html"
-tags: [article, webseclist-reference, en-gb, foregroundsecurity-com, flash, same-origin-policy, sop-bypass, file-upload, content-type, mime, csrf, xss]
+tags: [article, webseclist-reference, en-gb, foregroundsecurity-com, flash, same-origin-policy, sop-bypass, file-upload, content-type, mime, csrf, xss, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:18+00:00"

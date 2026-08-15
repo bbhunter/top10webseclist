@@ -3,7 +3,7 @@ type: Article
 title: Reusing Cookies
 description: "SaaS vendors that let customers point a subdomain at them by CNAME often share one session cookie across the vendor domain and every customer domain. An attacker signs up for a trial and retargets his own cookie Domain attribute at a customer subdomain, gaining his account there: phishing and fake login pages, open redirect, stored XSS, and other tenants private documents."
 resource: "https://medium.com/@ricardoiramar/reusing-cookies-23ed4691122b"
-tags: [article, webseclist-reference, en, medium, cookie, auth-bypass, idor, open-redirect, clickjacking, xss, dns, bug-bounty]
+tags: [article, webseclist-reference, en, medium, cookie, auth-bypass, idor, open-redirect, clickjacking, xss, dns, bug-bounty, owasp-a01-2021, owasp-a03-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:23+00:00"

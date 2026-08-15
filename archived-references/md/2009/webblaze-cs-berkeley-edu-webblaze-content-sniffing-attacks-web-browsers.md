@@ -3,7 +3,7 @@ type: Article
 title: WebBlaze - Content Sniffing Attacks in Web Browsers
 description: "Browsers' content sniffing can treat uploaded non-HTML files as HTML, so a crafted paper uploaded to a conference system can script the site and submit its own reviews. The authors built high-fidelity models of four browsers' sniffing algorithms and compared them with site filtering policies to derive attacks, then proposed a principled algorithm adopted by IE8, Chrome and HTML5."
 resource: "https://webblaze.cs.berkeley.edu/contentsniff.html"
-tags: [article, webseclist-reference, webblaze-cs-berkeley-edu, mime, content-type, file-upload, xss, parser-differential, formal-analysis, mitigation, defence]
+tags: [article, webseclist-reference, webblaze-cs-berkeley-edu, mime, content-type, file-upload, xss, parser-differential, formal-analysis, mitigation, defence, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:40+00:00"

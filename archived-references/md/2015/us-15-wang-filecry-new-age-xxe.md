@@ -3,7 +3,7 @@ type: Whitepaper
 title: us 15 Wang FileCry The New Age Of XXE
 description: Java XML parsers still resolve external entities when the documented switch is set but the input is malformed, and the stolen file content leaves through DNS lookups or parser exception text. The talk also revives the old MSXML3 parser inside modern Internet Explorer via compatibility mode, using a redirect to defeat the origin check and read cross origin pages and local files.
 resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE.pdf"
-tags: [whitepaper, webseclist-reference, xxe, info-leak, sop-bypass, java, same-origin-policy, dns, cve, novel-technique]
+tags: [whitepaper, webseclist-reference, xxe, info-leak, sop-bypass, java, same-origin-policy, dns, cve, novel-technique, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:50:58+00:00"

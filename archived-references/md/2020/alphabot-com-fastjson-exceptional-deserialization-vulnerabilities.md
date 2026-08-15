@@ -3,7 +3,7 @@ type: Article
 title: "Fastjson: exceptional deserialization vulnerabilities"
 description: Fastjson guards its autoType deny list by hash in nine separate places, yet exception classes are still instantiated when autoType is off. A nested @type paired with a $ref reference reaches getters on that exception and leaks system information or stack traces, and a shared global config means one developer enabling autoType creates RCE elsewhere.
 resource: "https://www.alphabot.com/security/blog/2020/java/Fastjson-exceptional-deserialization-vulnerabilities.html"
-tags: [article, webseclist-reference, en, alphabot-com, deserialization, gadget-chain, java, rce, info-leak, filter-bypass, static-analysis]
+tags: [article, webseclist-reference, en, alphabot-com, deserialization, gadget-chain, java, rce, info-leak, filter-bypass, static-analysis, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:00+00:00"

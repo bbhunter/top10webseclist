@@ -3,7 +3,7 @@ type: Repository
 title: Apache Solr Injection Research
 description: "Apache Solr parameter injection: an application that pastes unencoded user input into its Solr query lets an attacker smuggle extra parameters such as shards, qt and stream.body, or Solr local parameters like an xmlparser query, and so reach the update and config endpoints. From there it chains to remote code execution, XXE, arbitrary file read and SSRF."
 resource: "https://github.com/veracode-research/solr-injection"
-tags: [repo, webseclist-reference, github, injection, rce, ssrf, deserialization, xxe, path-traversal, smuggling, gadget-chain, java, cve]
+tags: [repo, webseclist-reference, github, injection, rce, ssrf, deserialization, xxe, path-traversal, smuggling, gadget-chain, java, cve, owasp-a01-2021, owasp-a03-2021, owasp-a08-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:13:36+00:00"

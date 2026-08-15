@@ -3,7 +3,7 @@ type: Article
 title: Introducing the URL validation bypass cheat sheet
 description: URL validation bypasses underlie many instances of SSRF, CORS misconfiguration and open redirection, working by giving parsers an ambiguous URL, yet the known payloads are scattered and poorly documented. This article introduces the URL Validation Bypass Cheat Sheet, an interactive generator that assembles context-aware wordlists for absolute URLs, bare hostnames and CORS origins, covering domain-confusion, fake-relative and alternative loopback address representations with selectable encodings.
 resource: "https://portswigger.net/research/introducing-the-url-validation-bypass-cheat-sheet"
-tags: [article, webseclist-reference, portswigger-research, tooling, url-parsing, ssrf, cors, open-redirect, filter-bypass, encoding]
+tags: [article, webseclist-reference, portswigger-research, tooling, url-parsing, ssrf, cors, open-redirect, filter-bypass, encoding, owasp-a01-2021, owasp-a04-2021, owasp-a05-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:54+00:00"

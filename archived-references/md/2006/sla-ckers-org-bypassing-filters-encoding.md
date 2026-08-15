@@ -3,7 +3,7 @@ type: Article
 title: Bypassing Filters With Encoding
 description: "maluc's sla.ckers thread collecting UTF-7 and high-bit US-ASCII filter-bypass strings. Best preserved of the four threads: all 8 posts present, every vector fenced and byte-correct, including the 0xA2/0xA7/0xBB/0xBC/0xBE substitutions that are the technique. Only fault is published empty while the first post states 'November 19, 2006 12:42AM'."
 resource: "http://sla.ckers.org/forum/read.php?2,3153,3153"
-tags: [article, webseclist-reference, EN, sla-ckers-org, filter-bypass, charset, encoding, xss, unicode, sanitizer-bypass, novel-technique]
+tags: [article, webseclist-reference, EN, sla-ckers-org, filter-bypass, charset, encoding, xss, unicode, sanitizer-bypass, novel-technique, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:33+00:00"

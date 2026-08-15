@@ -3,7 +3,7 @@ type: Article
 title: Python Dirty Arbitrary File Write to RCE via Writing Shared Object Files Or Overwriting Bytecode Files
 description: Two ways to turn a restricted arbitrary file write into code execution in Python web applications. Overwriting a cached bytecode file works when the magic number, source timestamp and size are preserved or brute-forced; simpler still, writing a shared object beside a module wins because extension loaders precede source and bytecode loaders.
 resource: "https://siunam321.github.io/research/python-dirty-arbitrary-file-write-to-rce-via-writing-shared-object-files-or-overwriting-bytecode-files/"
-tags: [article, webseclist-reference, en, siunam-s-website, rce, python, file-upload, flask, filter-bypass, novel-technique, prior-art-extension]
+tags: [article, webseclist-reference, en, siunam-s-website, rce, python, file-upload, flask, filter-bypass, novel-technique, prior-art-extension, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:41:53+00:00"

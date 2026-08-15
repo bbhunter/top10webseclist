@@ -3,7 +3,7 @@ type: Article
 title: "FireDrill: Interactive DNS Rebinding"
 description: "DNS rebinding is normally stopped by browser DNS pinning, but flooding the browser's own DNS cache table evicts the pinned entry and lets a hostname be re-pointed at an internal server. FireDrill turns this into an interactive session with the victim's internal web server, permitting authentication, state changes and framing rather than one blind request."
 resource: "https://www.usenix.org/conference/woot13/workshop-program/presentation/dai"
-tags: [article, webseclist-reference, en, usenix-org, dns-rebinding, dns, sop-bypass, cache, tooling, novel-technique, javascript]
+tags: [article, webseclist-reference, en, usenix-org, dns-rebinding, dns, sop-bypass, cache, tooling, novel-technique, javascript, owasp-a01-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:46+00:00"

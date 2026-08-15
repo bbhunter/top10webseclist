@@ -3,7 +3,7 @@ type: Whitepaper
 title: "A Messy State of the Union: Taming the Composite State Machines of TLS"
 description: Systematic testing of mainstream TLS stacks shows their composite state machines accept message sequences no valid handshake produces, because per-ciphersuite machines were merged carelessly. A network attacker can skip handshake messages to impersonate a server, or force export-grade RSA and factor the key (FREAK), breaking authentication; the paper adds a verified OpenSSL state machine.
 resource: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a535.pdf"
-tags: [whitepaper, webseclist-reference, tls, auth-bypass, formal-analysis, fuzzing, https, novel-technique, dynamic-analysis]
+tags: [whitepaper, webseclist-reference, tls, auth-bypass, formal-analysis, fuzzing, https, novel-technique, dynamic-analysis, owasp-a01-2021, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:00:17+00:00"

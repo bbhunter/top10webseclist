@@ -3,7 +3,7 @@ type: Article
 title: IE8 Link Spoofing - Broken Status Bar Integrity
 description: "IE8 stopped displaying a hyperlink's target in the status bar for pages viewed online while still showing it for local pages. The author argues this removes the visual link-integrity check users rely on, and demonstrates status-bar spoofing with onMouseOver, window.status and onMouseOut in the main window. Chrome, Firefox, Opera and Safari behaved consistently in the same test."
 resource: "http://secniche.org/ie_spoof_myth/"
-tags: [article, webseclist-reference, secniche-org, ui-redress, javascript, url-parsing, detection, case-study, phishing]
+tags: [article, webseclist-reference, secniche-org, ui-redress, javascript, url-parsing, detection, case-study, phishing, owasp-a04-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T18:12:16+00:00"

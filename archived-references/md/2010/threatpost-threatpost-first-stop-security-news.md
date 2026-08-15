@@ -3,7 +3,7 @@ type: Article
 title: "'Padding Oracle' Crypto Attack Affects Millions of ASP.NET Apps"
 description: "News report on Juliano Rizzo and Thai Duong's padding oracle attack on ASP.NET, presented at Ekoparty 2010. Modified ciphertext in a session cookie makes the framework return distinguishable errors, and enough of those errors recover the key. The pair say the attack is 100 percent reliable, typically inside 30 minutes, and released the Padding Oracle Exploit Tool."
 resource: "https://threatpost.com/en_us/blogs/padding-oracle-crypto-attack-affects-millions-aspnet-apps-091310"
-tags: [article, webseclist-reference, en, threatpost-com, aspnet, dotnet, cookie, side-channel, auth-bypass, novel-technique, case-study]
+tags: [article, webseclist-reference, en, threatpost-com, aspnet, dotnet, cookie, side-channel, auth-bypass, novel-technique, case-study, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:16:00+00:00"

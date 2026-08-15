@@ -3,7 +3,7 @@ type: Article
 title: Back to the (Clip)board with Microsoft Whiteboard and Excalidraw in Meta (CVE-2023-26140)
 description: "Examines the Clipboard API as an under-analysed source of untrusted input, since any page can silently rewrite what a visitor copies. In Excalidraw, pasted element data carried a link value assigned to an SVG anchor's href, permitting a javascript: URL that static analysis rules missed, while Microsoft Whiteboard accepted an attacker-supplied iframe sandbox attribute whose permissive values, such as allow-top-navigation, redirected the host application (CVE-2023-26140)."
 resource: "https://spaceraccoon.dev/clipboard-microsoft-whiteboard-excalidraw-meta/"
-tags: [article, webseclist-reference, en-us, spaceraccoon-dev, xss, iframe, open-redirect, static-analysis, cve]
+tags: [article, webseclist-reference, en-us, spaceraccoon-dev, xss, iframe, open-redirect, static-analysis, cve, clipboard, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:43:59+00:00"

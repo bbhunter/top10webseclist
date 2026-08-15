@@ -3,7 +3,7 @@ type: Article
 title: OpenSecurityResearch/clipcaptcha
 description: Repository page for clipcaptcha, a Python tool built on the sslstrip codebase that impersonates CAPTCHA providers on an intercepted HTTP validation channel. Signatures identify reCAPTCHA, OpenCAPTCHA and Captchator traffic, and the README documents monitor, avalanche, stealth, denial-of-service and random modes plus private-key logging.
 resource: "https://web.archive.org/web/20170903113359/https://github.com/OpenSecurityResearch/clipcaptcha"
-tags: [article, webseclist-reference, en, github, tooling, python, auth-bypass, https, info-leak]
+tags: [article, webseclist-reference, en, github, tooling, python, auth-bypass, https, info-leak, owasp-a01-2021, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:12:52+00:00"

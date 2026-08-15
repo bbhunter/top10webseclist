@@ -3,7 +3,7 @@ type: Article
 title: Backdooring MP3 Files
 description: "pdp shows QuickTime Media Link (.qtl) XML accepts a qtnext attribute holding any URL, javascript: included, and QuickTime honours the file whatever its extension, so a .mp3, .mp4 or .m4a can be XML that runs script. With iTunes installed any mp3 link opens the QuickTime plugin. The code lands in about:blank, which he wrongly speculates is privileged."
 resource: "https://www.gnucitizen.org/blog/backdooring-mp3-files/"
-tags: [article, webseclist-reference, en, gnucitizen-org, file-upload, mime, content-type, xss, javascript, sandbox-escape]
+tags: [article, webseclist-reference, en, gnucitizen-org, file-upload, mime, content-type, xss, javascript, sandbox-escape, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:44+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Another Free MacWorld Platinum Pass? Yes in 2008!
 description: "Kurt Grutzmacher's second year of getting a $1,895 MacWorld Platinum Pass free. IDG validated discount codes client-side by shipping 1,341 MD5 hashes to the browser; harvesting them from the registration page and inferring the 08-X-XXXXX vendor-code mask cuts the keyspace enough for a John the Ripper external filter to surface 08-S-STAFF in under a day."
 resource: "http://grutztopia.jingojango.net/2008/01/another-free-macworld-platinum-pass-yes.html"
-tags: [article, webseclist-reference, en-US, grutztopia-jingojango-net, auth-bypass, abuse-of-functionality, javascript, info-leak, case-study]
+tags: [article, webseclist-reference, en-US, grutztopia-jingojango-net, auth-bypass, abuse-of-functionality, javascript, info-leak, case-study, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:10:43+00:00"

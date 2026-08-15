@@ -3,7 +3,7 @@ type: Article
 title: NULLs in entities in Firefox
 description: "Firefox tolerates NULL bytes inside HTML5 character-entity references. Placing a NULL before the ampersand or before the semicolon, as in javascript&0x00colon; or javascript&colon0x00;, produces an entity that filters fail to recognise but the browser still decodes, giving a working javascript: URI in an anchor href on an HTML5-doctype page."
 resource: "http://www.thespanner.co.uk/2011/12/05/nulls-in-entities-in-firefox/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, xss, filter-bypass, encoding, charset, parser-differential, url-parsing, novel-technique]
+tags: [article, webseclist-reference, en, thespanner-co-uk, xss, filter-bypass, encoding, charset, parser-differential, url-parsing, novel-technique, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:02:18+00:00"

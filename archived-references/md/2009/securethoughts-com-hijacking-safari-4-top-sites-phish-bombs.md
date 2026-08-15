@@ -3,7 +3,7 @@ type: Article
 title: Hijacking Safari 4 Top Sites with Phish Bombs
 description: "CVE-2009-2196: a page could script a hidden, blurred window to visit chosen sites repeatedly until Safari 4's Top Sites panel replaced the victim's real thumbnails with attacker pages. Combined with the CSS history hack to pick which banks to imitate, it gives persistent phishing that survives the browsing session. Fixed in Safari 4.0.3."
 resource: "http://securethoughts.com/2009/08/hijacking-safari-4-top-sites-with-phish-bombs/"
-tags: [article, webseclist-reference, en-US, securethoughts-com, cve, javascript, info-leak, side-channel, case-study, vendor-advisory, phishing]
+tags: [article, webseclist-reference, en-US, securethoughts-com, cve, javascript, info-leak, side-channel, case-study, vendor-advisory, phishing, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:41:02+00:00"

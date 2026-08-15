@@ -3,7 +3,7 @@ type: Article
 title: Image Names Gone Bad ha.ckers.org web application security lab
 description: "Uploaded image filenames become XSS vectors where the name is re-emitted into HTML or JavaScript: one breaks out of an img tag with a script element, two more close a quote to land in script context. FreeBSD accepts such names where Windows will not. A dropped RSnake comment adds a high-bit US-ASCII variant."
 resource: "http://ha.ckers.org/blog/20070209/image-names-gone-bad/"
-tags: [article, webseclist-reference, ha-ckers-org, file-upload, xss, filter-bypass, injection, encoding, sanitizer-bypass, novel-technique]
+tags: [article, webseclist-reference, ha-ckers-org, file-upload, xss, filter-bypass, injection, encoding, sanitizer-bypass, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:37+00:00"

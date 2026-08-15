@@ -3,7 +3,7 @@ type: Article
 title: "PMForce: Systematically Analyzing PostMessage Handlers at Scale"
 description: PMForce runs in the browser and pairs selective force execution with lightweight dynamic taint tracking to explore postMessage handlers, then solves the collected path constraints with Z3 and exploit templates into a message that really reaches a code-execution or state-changing sink. Across the top 100,000 sites it found 252 vulnerable handlers, 111 auto-exploitable.
 resource: "https://publications.cispa.saarland/3164/"
-tags: [article, webseclist-reference, publications-cispa-saarland, postmessage, xss, same-origin-policy, dynamic-analysis, large-scale-scan, measurement-study, tooling, javascript]
+tags: [article, webseclist-reference, publications-cispa-saarland, postmessage, xss, same-origin-policy, dynamic-analysis, large-scale-scan, measurement-study, tooling, javascript, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T03:05:31+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Microsoft Edge (Chromium) - Elevation of Privilege to Potential Remote Code Execution
 description: "Chromium Edge's new tab page is a remote MSN page holding privileged chrome APIs, and unsanitised top-site titles gave script execution inside it. Calling the undocumented chrome.qbox.navigate with a null url crashed the browser exploitably, and an XSS on an MSN subdomain set a cookie that poisoned the cached new tab page for persistent takeover."
 resource: "https://leucosite.com/Edge-Chromium-EoP-RCE/"
-tags: [article, webseclist-reference, leucosite-com, xss, privilege-escalation, rce, cookie, info-leak, javascript, attack-chain, bug-bounty]
+tags: [article, webseclist-reference, leucosite-com, xss, privilege-escalation, rce, cookie, info-leak, javascript, attack-chain, bug-bounty, owasp-a01-2021, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T13:04:06+00:00"

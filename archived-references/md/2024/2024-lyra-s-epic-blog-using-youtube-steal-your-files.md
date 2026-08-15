@@ -3,7 +3,7 @@ type: Article
 title: Using YouTube to steal your files
 description: "A Google Slides YouTube embed takes only a video id, but a traversal points the iframe at any page on that host. Two token-less redirects, plus a legacy hop that defeats a fetch-metadata check, frame a Docs share dialog pre-filled with the attacker's address, so one disguised click grants Editor access to a victim's Drive files."
 resource: "https://lyra.horse/blog/2024/09/using-youtube-to-steal-your-files/"
-tags: [article, webseclist-reference, en-us, lyra-s-epic-blog, clickjacking, open-redirect, path-traversal, ui-redress, iframe, url-parsing, sop-bypass, attack-chain, bug-bounty]
+tags: [article, webseclist-reference, en-us, lyra-s-epic-blog, clickjacking, open-redirect, path-traversal, ui-redress, iframe, url-parsing, sop-bypass, attack-chain, bug-bounty, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:33:36+00:00"

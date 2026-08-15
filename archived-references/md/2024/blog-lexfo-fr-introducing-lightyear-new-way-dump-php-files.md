@@ -3,7 +3,7 @@ type: Article
 title: Introducing lightyear, a new way to dump PHP files
 description: "Speeds up dumping files through a blind PHP file-read primitive: iconv charset conversions remap the base64 alphabet so a chosen digit becomes a newline, and PHP's lenient dechunk filter then strips everything before it. An attacker can pull tens of thousands of bytes with small payloads, six requests per digit, without raising PHP warnings."
 resource: "https://www.ambionics.io/blog/lightyear-file-dump"
-tags: [article, webseclist-reference, en, blog-lexfo-fr, lfi, php, charset, side-channel, info-leak, encoding, tooling, prior-art-extension]
+tags: [article, webseclist-reference, en, blog-lexfo-fr, lfi, php, charset, side-channel, info-leak, encoding, tooling, prior-art-extension, owasp-a01-2021, owasp-a02-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:00:38+00:00"

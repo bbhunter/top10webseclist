@@ -3,7 +3,7 @@ type: Article
 title: Facebook Messenger Multiple CSRF Vulnerabilities
 description: "Two CSRF holes in messenger.com: the send_messages and delete_thread endpoints accepted cross-site POST requests without checking a token, so a page the victim visits could send messages from their account to any user or delete their message threads. Both were fixed by Facebook."
 resource: "http://blog.mazinahmed.net/2015/06/facebook-messenger-multiple-csrf.html"
-tags: [article, webseclist-reference, en, mazin-ahmed, csrf, cookie, rest-api, http, bug-bounty, case-study]
+tags: [article, webseclist-reference, en, mazin-ahmed, csrf, cookie, rest-api, http, bug-bounty, case-study, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:05:50+00:00"

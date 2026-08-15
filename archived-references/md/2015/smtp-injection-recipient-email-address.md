@@ -3,7 +3,7 @@ type: Whitepaper
 title: SMTP Injection via Recipient Email Address
 description: A recipient address carrying CRLF, or the RFC 5322 folding white space and obsolete quoted pair line breaks, smuggles extra SMTP commands into the RCPT TO line, which pipelining mail servers then execute. Attackers can send arbitrary mail through vulnerable Ruby Mail, JavaMail and PHPMailer, or by injecting into the sender address divert the original confidential message to themselves.
 resource: "http://www.mbsd.jp/Whitepaper/smtpi.pdf"
-tags: [whitepaper, webseclist-reference, smtp, header-injection, injection, email, filter-bypass, parser-differential, ruby, java, php, novel-technique]
+tags: [whitepaper, webseclist-reference, smtp, header-injection, injection, email, filter-bypass, parser-differential, ruby, java, php, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:58+00:00"

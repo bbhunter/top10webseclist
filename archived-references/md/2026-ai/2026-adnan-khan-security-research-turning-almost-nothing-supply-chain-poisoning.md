@@ -3,7 +3,7 @@ type: Article
 title: Turning Almost Nothing into a Supply Chain Compromise of Angular with GitHub Actions Cache Poisoning
 description: A pull_request_target workflow in angular/dev-infra interpolated github.head_ref into a run step, so a branch name executed commands even though the token was read-only and no secrets were present. The payload flooded the Actions cache past 10 GB to force immediate LRU eviction, then claimed the evicted node_modules keys; a scheduled Renovate job restored the poisoned entry and leaked a bot PAT, which could force-push an imposter actions/checkout SHA into an already-approved bot PR.
 resource: "https://adnanthekhan.com/posts/angular-compromise-through-dev-infra"
-tags: [article, webseclist-reference, en, adnan-khan-security-research, github-actions, cache-poisoning, supply-chain, ci-cd, command-injection, attack-chain, privilege-escalation]
+tags: [article, webseclist-reference, en, adnan-khan-security-research, github-actions, cache-poisoning, supply-chain, ci-cd, command-injection, attack-chain, privilege-escalation, owasp-a01-2021, owasp-a03-2021, owasp-a06-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:01:14+00:00"

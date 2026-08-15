@@ -3,7 +3,7 @@ type: Article
 title: Tracking the FREAK Attack
 description: FREAK lets a network attacker downgrade a TLS handshake to 512-bit export-grade RSA, factor that key cheaply, then decrypt or modify the HTTPS session. The site reports daily Internet-wide scans of vulnerable servers and clients, names affected Alexa top-10,000 domains, and offers test tools and remediation guidance.
 resource: "https://www.freakattack.com/"
-tags: [article, webseclist-reference, freakattack-com, tls, https, cve, large-scale-scan, measurement-study, mitigation, detection]
+tags: [article, webseclist-reference, freakattack-com, tls, https, cve, large-scale-scan, measurement-study, mitigation, detection, owasp-a02-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:11:33+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: CAPTCHA Re-Riding Attack
 description: "Kalra shows that many CAPTCHA implementations store the solution in the HTTP session but never clear it during verification. Because the CAPTCHA image endpoint is not called again, a single solved CAPTCHA stays valid for the session's life. Replaying the recorded submission, refreshing the session id where it rotates, yields unlimited successful form submissions."
 resource: "https://web.archive.org/web/20170903113359/http://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html"
-tags: [article, webseclist-reference, gursevkalra-blogspot-com, auth-bypass, filter-bypass, php, mitigation, novel-technique]
+tags: [article, webseclist-reference, gursevkalra-blogspot-com, auth-bypass, filter-bypass, php, mitigation, novel-technique, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:10:52+00:00"

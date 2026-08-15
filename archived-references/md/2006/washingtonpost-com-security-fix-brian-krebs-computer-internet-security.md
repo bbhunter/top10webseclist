@@ -3,7 +3,7 @@ type: Article
 title: Security Fix - Brian Krebs on Computer and Internet Security
 description: "Not a section index: Krebs's LiveJournal/Bantown article is fully archived. Title is the blog masthead, not the post's own heading. 67 comment bodies (~19,354 chars) were dropped while all 70 'Posted by:' lines were kept, including Krebs quoting Bantown that the fix targeted a Firefox-specific bug their cross-browser attacks never used. Byline states January 20, 2006."
 resource: "http://blog.washingtonpost.com/securityfix/2006/01/account_hijackings_force_livej.html"
-tags: [article, webseclist-reference, blog-washingtonpost-com, xss, cookie, captcha-bypass, auth-bypass, case-study, info-leak]
+tags: [article, webseclist-reference, blog-washingtonpost-com, xss, cookie, captcha-bypass, auth-bypass, case-study, info-leak, owasp-a01-2021, owasp-a03-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:33+00:00"

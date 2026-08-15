@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab
 description: "Firefox maps installed extensions' images under chrome:// URLs, so a page can load them and learn which extensions a visitor runs. Naming is per-extension rather than standard, so the post publishes a mapped list and a live demo. The result fingerprints the user and reveals which plugin weaknesses, such as the IE Tab engine switch, can be attacked."
 resource: "http://ha.ckers.org/blog/20060823/detecting-firefox-extentions/"
-tags: [article, webseclist-reference, ha-ckers-org, browser-extension, browser-fingerprinting, detection, info-leak, javascript, novel-technique]
+tags: [article, webseclist-reference, ha-ckers-org, browser-extension, browser-fingerprinting, detection, info-leak, javascript, novel-technique, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:37+00:00"

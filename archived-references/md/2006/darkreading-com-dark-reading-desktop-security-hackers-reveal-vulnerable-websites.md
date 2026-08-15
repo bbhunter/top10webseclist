@@ -3,7 +3,7 @@ type: Article
 title: Dark Reading - Desktop Security - Hackers Reveal Vulnerable Websites
 description: Kelly Jackson Higgins reports that the sla.ckers forum has begun mass-posting live XSS holes with proof-of-concept code, naming Dell, HP, MySpace, Photobucket, F5 and Acunetix. Jeremiah Grossman, watching the thread, calls the volume of public working vulnerabilities unusual and says XSS has passed buffer overflows as the most-exploited software weakness.
 resource: "http://www.darkreading.com/document.asp?doc_id=104313&f_src=darkreading_section_296"
-tags: [article, webseclist-reference, en, darkreading-com, xss, case-study, large-scale-scan, detection, mitigation]
+tags: [article, webseclist-reference, en, darkreading-com, xss, case-study, large-scale-scan, detection, mitigation, owasp-a03-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:29:34+00:00"

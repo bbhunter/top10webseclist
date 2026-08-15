@@ -3,7 +3,7 @@ type: Article
 title: "CookieMonster: Cookie Hijacking"
 description: "Project page for Cookiemonster, the Python proof-of-concept implementing the automated HTTPS cookie hijack: it tracks the HTTPS domains each local client visits, injects HTML elements for them into later HTTP responses, and captures the resulting insecure cookies into Firefox-compatible files."
 resource: "https://fscked.org/projects/cookiemonster"
-tags: [article, webseclist-reference, en, fscked-org, https, cookie, tls, tooling, python, info-leak]
+tags: [article, webseclist-reference, en, fscked-org, https, cookie, tls, tooling, python, info-leak, owasp-a02-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:41+00:00"

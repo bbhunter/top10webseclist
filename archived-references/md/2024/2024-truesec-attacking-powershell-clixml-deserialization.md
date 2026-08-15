@@ -3,7 +3,7 @@ type: Article
 title: Attacking PowerShell CLIXML Deserialization
 description: "Analyses PowerShell's CLIXML deserialization, where objects are restored as property bags or rehydrated as live objects, and shows the default rehydrating types supply usable gadgets: a CIM ping type triggering arbitrary DNS lookups, a registry type whose formatter captures Net-NTLMv2 hashes, and a popular third-party module whose converter wraps BinaryFormatter for code execution. PowerShell Remoting and Direct deserialize server-supplied CLIXML, so a guest can attack its Hyper-V host."
 resource: "https://www.truesec.com/hub/blog/attacking-powershell-clixml-deserialization"
-tags: [article, webseclist-reference, en, truesec, deserialization, gadget-chain, rce, dotnet, privilege-escalation]
+tags: [article, webseclist-reference, en, truesec, deserialization, gadget-chain, rce, dotnet, privilege-escalation, owasp-a01-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:03:50+00:00"

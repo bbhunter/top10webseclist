@@ -3,7 +3,7 @@ type: Whitepaper
 title: Towards Automated Dynamic Analysis for Linux-based Embedded Firmware
 description: FIRMADYNE emulates Linux-based firmware images from routers, cameras and other network devices so their services can be exercised dynamically at scale rather than only read statically. Run against 23,035 images from 42 vendors, it confirmed exploitable flaws including command injection and remote code execution in hundreds of devices.
 resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/towards-automated-dynamic-analysis-linux-based-embedded-firmware.pdf"
-tags: [whitepaper, webseclist-reference, dynamic-analysis, tooling, command-injection, rce, large-scale-scan, measurement-study]
+tags: [whitepaper, webseclist-reference, dynamic-analysis, tooling, command-injection, rce, large-scale-scan, measurement-study, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:35:40+00:00"

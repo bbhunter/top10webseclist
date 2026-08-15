@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Unleashing the Walking Dead: Understanding Cross-App Remote Infections on Mobile WebViews"
 description: "Cross-app URL invocation lets a remote web page navigate another Android app's WebView, so malicious web content spreads between apps and persists there. The authors name this XAWI and chain infected apps' separate privileges into remote phishing, faking a login UI inside the real app's own WebView, and privilege escalation; fuzzing found about 7.4 percent of top apps exposed."
 resource: "https://acmccs.github.io/papers/p829-liA.pdf"
-tags: [whitepaper, webseclist-reference, android, privilege-escalation, novel-technique, attack-chain, fuzzing, url-parsing, measurement-study]
+tags: [whitepaper, webseclist-reference, android, privilege-escalation, novel-technique, attack-chain, fuzzing, url-parsing, measurement-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:39+00:00"

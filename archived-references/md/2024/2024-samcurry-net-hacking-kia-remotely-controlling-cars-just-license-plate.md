@@ -3,7 +3,7 @@ type: Article
 title: "Hacking Kia: Remotely Controlling Cars With Just a License Plate"
 description: "Kia's owner site and dealer portal front the same backend API gateway through a header-driven proxy servlet. This case study shows the dealer portal accepted accounts created through the consumer registration endpoint, so a self-issued session token reached dealer-only functions: resolving a licence plate to a VIN, disclosing the owner's name, phone and email, and adding the attacker as an unseen second user able to send remote lock, start and locate commands."
 resource: "https://samcurry.net/hacking-kia"
-tags: [article, webseclist-reference, en, samcurry-net, rest-api, auth-bypass, privilege-escalation, info-leak, case-study, attack-chain]
+tags: [article, webseclist-reference, en, samcurry-net, rest-api, auth-bypass, privilege-escalation, info-leak, case-study, attack-chain, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:39:40+00:00"

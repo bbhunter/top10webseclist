@@ -3,7 +3,7 @@ type: Article
 title: "Digital Security Research Group: Excel formula injection in Google Docs"
 description: "Google Docs Forms neutralised spreadsheet formulas by prefixing a space, so the researchers submitted %08 (backspace) ahead of the = to delete that space and land a live formula in the results sheet. A Google Function inside the injected formula then issued a GET to an attacker host carrying the contents of other cells. Reported through Google's reward programme."
 resource: "https://dsecrg.blogspot.com/2011/12/excel-formula-injection-in-google-docs.html"
-tags: [article, webseclist-reference, dsecrg-blogspot-com, injection, filter-bypass, info-leak, encoding, bug-bounty, novel-technique]
+tags: [article, webseclist-reference, dsecrg-blogspot-com, injection, filter-bypass, info-leak, encoding, bug-bounty, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:13+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab - Archive » Embeding SVG That Contains XSS Using Base64 Encoding in Firefox
 description: "nEUrOO's vector: JavaScript embedded in an SVG document, the SVG base64-encoded into a data URI, and the whole thing loaded through an embed tag, which Firefox executes with no plugin installed and no user interaction. RSnake notes the payload travels with the page, so there is no command-and-control server to shut down."
 resource: "http://ha.ckers.org/blog/20070216/embeding-svg-that-contains-xss-using-base64-encoding-in-firefox/"
-tags: [article, webseclist-reference, ha-ckers-org, xss, filter-bypass, encoding, mime, javascript, sanitizer-bypass, novel-technique]
+tags: [article, webseclist-reference, ha-ckers-org, xss, filter-bypass, encoding, mime, javascript, sanitizer-bypass, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:54:37+00:00"

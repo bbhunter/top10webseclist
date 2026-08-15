@@ -3,7 +3,7 @@ type: Article
 title: Twitter misidentifying context
 description: Escaping quotes and angle brackets is not enough inside an inline JavaScript event attribute, because HTML entities are decoded before the script runs, so &apos; becomes a working string terminator. Twitter escaped only literal characters in an onclick handler and stayed injectable; the fix is to escape entity forms too.
 resource: "http://www.thespanner.co.uk/2009/11/23/twitter-misidentifying-context/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, xss, encoding, filter-bypass, sanitizer-bypass, javascript, dom, parser-differential]
+tags: [article, webseclist-reference, en, thespanner-co-uk, xss, encoding, filter-bypass, sanitizer-bypass, javascript, dom, parser-differential, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:02:09+00:00"

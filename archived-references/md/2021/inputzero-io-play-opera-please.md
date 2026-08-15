@@ -3,7 +3,7 @@ type: Article
 title: Play the Opera Please
 description: "Mobile carriers identify subscribers by enriching plain HTTP requests with headers such as MSISDN, and Opera Mini's turbo compression servers relayed client-supplied copies of those headers without filtering them."
 resource: "https://www.inputzero.io/2021/04/play-the-opera-please.html"
-tags: [article, webseclist-reference, en-US, inputzero-io, header-injection, auth-bypass, session-fixation, http, proxy, android, cve, case-study]
+tags: [article, webseclist-reference, en-US, inputzero-io, header-injection, auth-bypass, session-fixation, http, proxy, android, cve, case-study, owasp-a01-2021, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:09+00:00"

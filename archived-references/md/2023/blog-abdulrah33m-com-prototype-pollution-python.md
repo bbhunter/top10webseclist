@@ -3,7 +3,7 @@ type: Article
 title: Prototype Pollution in Python
 description: "Prototype pollution has a Python equivalent: a recursive merge or a pydash set_ call that walks attacker-supplied keys onto an object reaches special attributes such as __class__, __base__, __globals__ and __kwdefaults__. That lets an attacker rewrite shared parent-class attributes, module globals, function keyword defaults and os.environ entries like COMSPEC, escalating to command execution."
 resource: "https://blog.abdulrah33m.com/prototype-pollution-in-python/"
-tags: [article, webseclist-reference, en-US, blog-abdulrah33m-com, class-pollution, prototype-pollution, python, gadget-chain, rce, command-injection, mass-assignment, novel-technique]
+tags: [article, webseclist-reference, en-US, blog-abdulrah33m-com, class-pollution, prototype-pollution, python, gadget-chain, rce, command-injection, mass-assignment, novel-technique, owasp-a01-2021, owasp-a03-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:03:57+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: From an Innocent Client-Side Path Traversal to Account Takeover
 description: "A client-side path traversal in a single-page app's fetch URL lets an attacker steer the request elsewhere on the API host, then chain it to an OAuth error redirect registered with an attacker-controlled redirect_uri, so the browser carries custom auth headers such as X-Token to the attacker's origin and turns a minor traversal into account takeover."
 resource: "https://kapytein.nl/from-an-innocent-client-side-path-traversal-to-account-takeover"
-tags: [article, webseclist-reference, en, nadir-s-blog, path-traversal, open-redirect, oauth, info-leak, javascript, csp, attack-chain, mitigation]
+tags: [article, webseclist-reference, en, nadir-s-blog, path-traversal, open-redirect, oauth, info-leak, javascript, csp, attack-chain, mitigation, owasp-a01-2021, owasp-a04-2021, owasp-a05-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:59+00:00"

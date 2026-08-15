@@ -3,7 +3,7 @@ type: Article
 title: "Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other Companies"
 description: "Publishing a package to a public registry under the name of a company's private internal dependency. Build tooling that consults both an internal index and the public one picks the highest version number, so the attacker's package is installed and its install script runs code inside the corporate network. It worked against more than 35 organisations."
 resource: "https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610"
-tags: [article, webseclist-reference, en, medium, dependency-confusion, supply-chain, typosquatting, rce, nodejs, python, ruby, ci-cd, bug-bounty, novel-technique]
+tags: [article, webseclist-reference, en, medium, dependency-confusion, supply-chain, typosquatting, rce, nodejs, python, ruby, ci-cd, bug-bounty, novel-technique, owasp-a06-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:31:56+00:00"

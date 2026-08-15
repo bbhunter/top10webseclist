@@ -3,7 +3,7 @@ type: Article
 title: "{JS-ON: Security-OFF}: Abusing JSON-Based SQL to Bypass WAF"
 description: "Appending JSON operators such as @> to a SQL injection payload keeps the statement valid to the database while the firewall's SQL parser, which had no JSON support, stops recognising it as an attack. The payload passes inspection and reaches the backend, a generic bypass of Palo Alto, AWS, Cloudflare, F5 and Imperva, now automated in SQLMap."
 resource: "https://claroty.com/team82/research/js-on-security-off-abusing-json-based-sql-to-bypass-waf"
-tags: [article, webseclist-reference, en, claroty, waf-bypass, sqli, parser-differential, filter-bypass, waf, database, aws, cloudflare, novel-technique]
+tags: [article, webseclist-reference, en, claroty, waf-bypass, sqli, parser-differential, filter-bypass, waf, database, aws, cloudflare, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:07:15+00:00"

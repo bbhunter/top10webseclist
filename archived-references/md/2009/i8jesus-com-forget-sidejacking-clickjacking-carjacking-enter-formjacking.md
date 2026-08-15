@@ -3,7 +3,7 @@ type: Article
 title: "Forget Sidejacking, Clickjacking, and Carjacking: Enter Formjacking"
 description: "Formjacking, found by Jerry Hoff while testing AntiSamy. An injected self-closing <form/> tag makes FF3 and IE7 ignore the real <form> that follows, so every input on the page submits to the attacker. AntiSamy's tag balancing turned the attacker's unclosed opening tag into the self-closed form that triggers it, alongside the same quirk for <b/> and <i/>."
 resource: "http://i8jesus.com/?p=48"
-tags: [article, webseclist-reference, en-US, i8jesus-com, parser-differential, sanitizer-bypass, filter-bypass, injection, novel-technique]
+tags: [article, webseclist-reference, en-US, i8jesus-com, parser-differential, sanitizer-bypass, filter-bypass, injection, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T16:31:45+00:00"

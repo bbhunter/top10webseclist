@@ -3,7 +3,7 @@ type: Repository
 title: Source
 description: "Firefox and Chrome hand WebRTC STUN results to JavaScript, so any page can read a visitor's local and public IP addresses without asking permission. Because the requests sidestep XMLHttpRequest they are invisible in the developer console and unblockable by AdBlock Plus or Ghostery, defeating proxy and VPN concealment; the repository is a working demo."
 resource: "https://github.com/diafygi/webrtc-ips"
-tags: [repo, webseclist-reference, github, webrtc, info-leak, filter-bypass, iframe, javascript, tooling]
+tags: [repo, webseclist-reference, github, webrtc, info-leak, filter-bypass, iframe, javascript, tooling, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-08T23:52:12+00:00"

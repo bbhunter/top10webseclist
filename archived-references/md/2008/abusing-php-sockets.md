@@ -3,7 +3,7 @@ type: Whitepaper
 title: Abusing PHP Sockets
 description: "PHP's socket_set_option with SO_REUSEADDR binds a listener to a port Apache already holds: Apache listens on 0.0.0.0 and is not built with SO_EXCLUSIVEADDRUSE, and Windows gives the specific local interface precedence, making the hijack reliable. The attacker then answers every client — DoS, defacement, bind shell, man-in-the-middle."
 resource: "http://www.secforce.co.uk/media/presentations/OWASP_Abusing_PHP_sockets.pdf"
-tags: [whitepaper, webseclist-reference, php, rce, dos, abuse-of-functionality, privilege-escalation, novel-technique]
+tags: [whitepaper, webseclist-reference, php, rce, dos, abuse-of-functionality, privilege-escalation, novel-technique, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T15:35:30+00:00"

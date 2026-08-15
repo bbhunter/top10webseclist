@@ -3,7 +3,7 @@ type: Whitepaper
 title: "You Are What You Include: Large-scale Evaluation of Remote JavaScript Inclusions"
 description: "A crawl of 3.3 million pages across the Alexa top 10,000 found 8.4 million remote script inclusions drawn from 20,225 hosts, and a quality-of-maintenance metric scored each provider. Four new fault classes appeared: localhost and private-IP inclusions, stale domain and stale IP inclusions, and typosquatted script URLs (TXSS). Registering googlesyndicatio.com drew 163,188 visitors in 15 days."
 resource: "https://www.securitee.org/files/jsinclusions_ccs2012.pdf"
-tags: [whitepaper, webseclist-reference, large-scale-scan, measurement-study, javascript, supply-chain, typosquatting, novel-technique, mitigation, xss]
+tags: [whitepaper, webseclist-reference, large-scale-scan, measurement-study, javascript, supply-chain, typosquatting, novel-technique, mitigation, xss, owasp-a03-2021, owasp-a06-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:26+00:00"

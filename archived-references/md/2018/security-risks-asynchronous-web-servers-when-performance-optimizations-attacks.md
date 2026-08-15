@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Security Risks in Asynchronous Web Servers: When Performance Optimizations Amplify the Impact of Data-Oriented Attacks"
 description: Asynchronous web servers like Nginx serve every client from one long-lived process, so a single memory bug reaches all of them. The paper traces memory to locate configuration structures, beats ASLR with a Heartbleed-style linear heap leak, then uses arbitrary writes to repoint the config pointer table at faux structures, disabling logging and security headers and leaking the private key.
 resource: "https://fabianmonrose.github.io/papers/morton18.pdf"
-tags: [whitepaper, webseclist-reference, info-leak, auth-bypass, attack-chain, novel-technique, case-study, tls, cve]
+tags: [whitepaper, webseclist-reference, info-leak, auth-bypass, attack-chain, novel-technique, case-study, tls, cve, owasp-a01-2021, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T20:59:31+00:00"

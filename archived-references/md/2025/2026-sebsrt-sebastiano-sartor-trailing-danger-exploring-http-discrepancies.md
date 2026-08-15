@@ -3,7 +3,7 @@ type: Article
 title: "Trailing Danger: exploring HTTP Trailer parsing discrepancies"
 description: Audits around 70 HTTP implementations for how they handle chunked trailer fields and shows that merging trailers into the header section, or validating them loosely, lets an attacker inject headers the front-end never inspected. That bypasses proxy access rules and vhost checks, and where the framing headers can be overridden it splits one request into two.
 resource: "https://www.sebsrt.xyz/blog/trailing-danger/"
-tags: [article, webseclist-reference, en, sebsrt-sebastiano-sartor, request-smuggling, header-injection, parser-differential, desync, http, http2, proxy, reverse-proxy, measurement-study, cve]
+tags: [article, webseclist-reference, en, sebsrt-sebastiano-sartor, request-smuggling, header-injection, parser-differential, desync, http, http2, proxy, reverse-proxy, measurement-study, cve, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:40+00:00"

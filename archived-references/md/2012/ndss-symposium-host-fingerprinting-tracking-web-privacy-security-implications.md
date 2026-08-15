@@ -3,7 +3,7 @@ type: Article
 title: "Host Fingerprinting and Tracking on the Web: Privacy and Security Implications"
 description: A month of anonymized Hotmail and Bing logs covering millions of hosts measures how much identifying information browser strings, IP addresses, cookies and login IDs actually carry. It quantifies cookie churn and shows returning users stay trackable after clearing cookies or private browsing, then uses host-tracking to uncover over 75,000 cookie-forwarding bot accounts.
 resource: "https://www.ndss-symposium.org/ndss2012/ndss-2012-programme/host-fingerprinting-and-tracking-web-privacy-and-security-implications/"
-tags: [article, webseclist-reference, en, ndss-symposium, measurement-study, large-scale-scan, cookie, info-leak, detection, http]
+tags: [article, webseclist-reference, en, ndss-symposium, measurement-study, large-scale-scan, cookie, info-leak, detection, http, owasp-a07-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:27+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "Practical HTTP Header Smuggling: Sneaking Past Reverse Proxies to Attack AWS and Beyond"
 description: Obfuscating a header name, for example by appending characters after a space, can make a frontend proxy ignore it while the backend still parses it as the real header. The paper gives an error-comparison method for detecting this black-box, and uses it to bypass AWS API Gateway IP restrictions, poison a CloudFront cache with a smuggled Host header, and safely detect CL.CL request smuggling.
 resource: "https://www.intruder.io/research/practical-http-header-smuggling"
-tags: [article, webseclist-reference, intruder-io, request-smuggling, header-injection, cache-poisoning, smuggling, auth-bypass, http, reverse-proxy, aws, tooling, novel-technique]
+tags: [article, webseclist-reference, intruder-io, request-smuggling, header-injection, cache-poisoning, smuggling, auth-bypass, http, reverse-proxy, aws, tooling, novel-technique, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:42:16+00:00"

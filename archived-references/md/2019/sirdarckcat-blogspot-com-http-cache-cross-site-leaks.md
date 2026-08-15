@@ -3,7 +3,7 @@ type: Article
 title: "[🌐💧💥] HTTP Cache Cross-Site Leaks"
 description: "The browser HTTP cache answers cross-site questions: evict a resource with a POST or an overlong Referer, make the victim load a target page, then re-probe to see whether it got cached. That reveals whether the page requested a given resource, leaking group membership, search hits and other private state; partitioned caches and SameSite cookies mitigate it."
 resource: "https://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html"
-tags: [article, webseclist-reference, sirdarckcat-blogspot-com, xsleak, cache, side-channel, info-leak, same-origin-policy, cookie, http, mitigation]
+tags: [article, webseclist-reference, sirdarckcat-blogspot-com, xsleak, cache, side-channel, info-leak, same-origin-policy, cookie, http, mitigation, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:59:22+00:00"

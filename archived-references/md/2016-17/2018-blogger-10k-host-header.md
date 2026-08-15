@@ -3,7 +3,7 @@ type: Article
 title: $10k host header
 description: "Sending a request to Google App Engine's public front end with the Host header set to an internal googleplex.com hostname made it serve that internal application, sidestepping the single sign-on proxy that normally gates it. The researcher reached Google's confidential internal question-and-answer site this way and was paid 10,000 dollars."
 resource: "https://www.ezequiel.tech/p/10k-host-header.html"
-tags: [article, webseclist-reference, en, blogger, auth-bypass, reverse-proxy, proxy, http, info-leak, gcp, bug-bounty, case-study]
+tags: [article, webseclist-reference, en, blogger, auth-bypass, reverse-proxy, proxy, http, info-leak, gcp, bug-bounty, case-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:09:48+00:00"

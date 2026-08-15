@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Busting Frame Busting: a Study of Clickjacking Vulnerabilities on Popular Sites"
 description: A survey of frame-busting JavaScript across the Alexa top 500 found only 14% deploy any, and every deployment could be circumvented. The attacks include double framing to make parent.location a security violation, onBeforeUnload with 204 flushing, inducing the IE8 and Chrome XSS filters to disable the busting script, and location clobbering. A style-hides-body defence is proposed.
 resource: "https://seclab.stanford.edu/websec/framebusting/framebust.pdf"
-tags: [whitepaper, webseclist-reference, clickjacking, ui-redress, iframe, filter-bypass, measurement-study, mitigation, javascript, defence, xss]
+tags: [whitepaper, webseclist-reference, clickjacking, ui-redress, iframe, filter-bypass, measurement-study, mitigation, javascript, defence, xss, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T23:36:04+00:00"

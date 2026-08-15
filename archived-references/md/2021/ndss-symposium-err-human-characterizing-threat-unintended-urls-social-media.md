@@ -3,7 +3,7 @@ type: Article
 title: "To Err.Is Human: Characterizing the Threat of Unintended URLs in Social Media"
 description: Social platforms linkify text too permissively, so a missing space after a full stop turns the next word into a domain whenever it happens to be a valid top-level domain. Attackers register those domains and serve arbitrary content to the followers of large accounts. A seven-month study found over 26,000 such unintended URLs on Twitter.
 resource: "https://www.ndss-symposium.org/ndss-paper/to-err-is-human-characterizing-the-threat-of-unintended-urls-in-social-media/"
-tags: [article, webseclist-reference, en, ndss-symposium, url-parsing, typosquatting, parser-differential, dns, novel-technique, large-scale-scan, measurement-study, mitigation]
+tags: [article, webseclist-reference, en, ndss-symposium, url-parsing, typosquatting, parser-differential, dns, novel-technique, large-scale-scan, measurement-study, mitigation, owasp-a06-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:24+00:00"

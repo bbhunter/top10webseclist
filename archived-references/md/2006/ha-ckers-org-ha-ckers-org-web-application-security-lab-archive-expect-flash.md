@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab - Archive » Expect Header Injection Via Flash
 description: "Follow-up on Amit Klein's Expect header injection via Flash, reporting that Secunia's test tool shows a large fraction of major sites affected. Any site echoing the Expect header lets an attacker-supplied movie run script in its origin, enabling cookie theft, page scraping and XSS proxying even where the site has no XSS of its own."
 resource: "http://ha.ckers.org/blog/20060731/expect-header-injection-via-flash/"
-tags: [article, webseclist-reference, ha-ckers-org, flash, header-injection, xss, http, sop-bypass, filter-bypass, prior-art-extension]
+tags: [article, webseclist-reference, ha-ckers-org, flash, header-injection, xss, http, sop-bypass, filter-bypass, prior-art-extension, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:25+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Yahoo Babelfish - Possible Frame Injection Attack
 description: "Yahoo Babelfish translated any supplied URL with no referrer check and displayed no notice on the translated page, so arbitrary content could be loaded in an iframe inside the yahoo.com context. Removing the frame-busting code from a copy of the Yahoo login page yields a fake login form that inherits the domain's apparent trust and captures credentials."
 resource: "https://zeroknock.blogspot.com/2009/12/yahoo-babelfish-possible-inline-iframe.html"
-tags: [article, webseclist-reference, zeroknock-blogspot-com, iframe, ui-redress, open-redirect, proxy, case-study, phishing]
+tags: [article, webseclist-reference, zeroknock-blogspot-com, iframe, ui-redress, open-redirect, proxy, case-study, phishing, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:08:10+00:00"

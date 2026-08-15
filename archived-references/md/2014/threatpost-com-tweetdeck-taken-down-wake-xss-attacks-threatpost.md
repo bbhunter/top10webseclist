@@ -3,7 +3,7 @@ type: Article
 title: TweetDeck Taken Down in Wake of XSS Attacks
 description: "TweetDeck rendered tweet content as live markup, so a script tag inside a tweet executed in every reader's client. The published payload used the client's own retweet control to repost itself, producing a self-spreading worm that also allowed account takeover, and Twitter pulled the service to patch it."
 resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/tweetdeck-taken-down-in-wake-of-xss-attacks"
-tags: [article, webseclist-reference, en-US, threatpost-english-global-threatpost-com, xss, sanitizer-bypass, javascript, dom, browser-extension, case-study]
+tags: [article, webseclist-reference, en-US, threatpost-english-global-threatpost-com, xss, sanitizer-bypass, javascript, dom, browser-extension, case-study, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:45+00:00"

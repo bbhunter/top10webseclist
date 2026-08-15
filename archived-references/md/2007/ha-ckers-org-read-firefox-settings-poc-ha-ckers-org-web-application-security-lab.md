@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab
 description: "Sergey Vzloman's proof of concept redefines pref() then loads resource://gre/greprefs/security-prefs.js and all.js as scripts, dumping Firefox preference values into JavaScript for browser recon. RSnake added it to Mr. T. The dropped comment thread establishes it reads only shipped defaults, not user settings, and RSnake withdrew it."
 resource: "http://ha.ckers.org/blog/20070516/read-firefox-settings-poc/"
-tags: [article, webseclist-reference, ha-ckers-org, info-leak, javascript, browser-fingerprinting, detection, dom]
+tags: [article, webseclist-reference, ha-ckers-org, info-leak, javascript, browser-fingerprinting, detection, dom, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:39+00:00"

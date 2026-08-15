@@ -3,7 +3,7 @@ type: Article
 title: Hello Lucee! Let us hack Apple again?
 description: "Lucee, an open-source CFML application server, exposes several paths that evaluate attacker-supplied strings as CFML or deserialise them as Java objects. This case study traces a REST mapping that deserialises request bodies, a client-scope cookie passed to an unrestricted expression interpreter, and ordinary functions such as isDefined() reaching the variable interpreter, the last chained into pre-authentication remote code execution on an Apple host and on Lucee's own update server."
 resource: "https://projectdiscovery.io/blog/hello-lucee-let-us-hack-apple-again"
-tags: [article, webseclist-reference, en, projectdiscovery, rce, java, deserialization, supply-chain, cookie, rest-api, cve]
+tags: [article, webseclist-reference, en, projectdiscovery, rce, java, deserialization, supply-chain, cookie, rest-api, cve, owasp-a06-2021, owasp-a07-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:32:29+00:00"

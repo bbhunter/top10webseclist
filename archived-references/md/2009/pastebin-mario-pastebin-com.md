@@ -3,7 +3,7 @@ type: Article
 title: mario - Pastebin.com
 description: "A collected set of Internet Explorer HTML+TIME findings. Attaching behavior:url(#default#time2) through a style attribute exposes timing event handlers such as onbegin on arbitrary elements, and #default#anchorclick with a folder=javascript: attribute brings XSS back through the style attribute on IE8, with links to the MSDN and W3C references."
 resource: "https://pastebin.com/f7ac1cced"
-tags: [article, webseclist-reference, en, pastebin, xss, filter-bypass, css, css-injection, dom, novel-technique]
+tags: [article, webseclist-reference, en, pastebin, xss, filter-bypass, css, css-injection, dom, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:35:50+00:00"

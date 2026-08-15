@@ -3,7 +3,7 @@ type: Repository
 title: Cacheract
 description: "A proof-of-concept implant that turns a poisoned GitHub Actions cache into code execution in build pipelines: it packs itself, a trojanised actions/checkout action.yml and arbitrary replacement files into the cache archive, which the runner extracts with tar -P so absolute paths overwrite workspace files. With actions: write it re-poisons and re-uploads entries and pre-seeds keys predicted from non-default branches, persisting for months while dumping runner secrets to a webhook."
 resource: "https://github.com/AdnaneKhan/Cacheract"
-tags: [repo, webseclist-reference, github, github-actions, ci-cd, cache-poisoning, supply-chain, rce, tooling]
+tags: [repo, webseclist-reference, github, github-actions, ci-cd, cache-poisoning, supply-chain, rce, tooling, owasp-a06-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-08T18:46:43+00:00"

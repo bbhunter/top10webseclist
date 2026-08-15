@@ -3,7 +3,7 @@ type: Article
 title: Content-Disposition Hacking
 description: "A server returning Content-Disposition: attachment turns a reflected HTML injection into cross-context scripting: the victim is prompted to open the injected file, which then runs in the local zone. pagvac gives a full evil.js that reads profiles.ini, steals Firefox cookies.txt over XHR, base64-encodes it and POSTs it out, plus PHP and netcat recipes to reproduce it."
 resource: "https://www.gnucitizen.org/blog/content-disposition-hacking"
-tags: [article, webseclist-reference, en, gnucitizen-org, xss, content-type, mime, sandbox-escape, info-leak, case-study, abuse-of-functionality, novel-technique]
+tags: [article, webseclist-reference, en, gnucitizen-org, xss, content-type, mime, sandbox-escape, info-leak, case-study, abuse-of-functionality, novel-technique, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:46+00:00"

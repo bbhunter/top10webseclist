@@ -3,7 +3,7 @@ type: Article
 title: "Web Platform Threats: Automated Detection of Web Security Issues With WPT"
 description: Proposes a framework that formalises intended security properties of client-side browser mechanisms such as cookie attributes and the Mixed Content policy as first-order-logic Web invariants, then checks browser execution traces collected from the Web Platform Tests suite against them. Validating 9 invariants uncovered violations with clear security implications in 104 tests across Firefox, Chromium and Safari, yielding 8 vendor reports and one Safari CVE.
 resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/bernardo"
-tags: [article, webseclist-reference, en, usenix-org, formal-analysis, cookie, https, detection, tooling, cve, mitigation]
+tags: [article, webseclist-reference, en, usenix-org, formal-analysis, cookie, https, detection, tooling, cve, mitigation, owasp-a02-2021, owasp-a07-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:24+00:00"

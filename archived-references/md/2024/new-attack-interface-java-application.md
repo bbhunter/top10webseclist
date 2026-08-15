@@ -3,7 +3,7 @@ type: Whitepaper
 title: A New Attack Interface In Java Application
 description: "Treats attacker-controlled JDBC connection properties as an attack surface: across seven database drivers they yield JNDI injection, log-file writes that plant a webshell, multibyte-charset SQL injection, arbitrary class instantiation, full-read SSRF and command execution from a malicious server."
 resource: "https://i.blackhat.com/Asia-23/AS-23-Yuanzhen-A-new-attack-interface-in-Java.pdf"
-tags: [whitepaper, webseclist-reference, rce, ssrf, sqli, command-injection, deserialization, gadget-chain, path-traversal, java, database]
+tags: [whitepaper, webseclist-reference, rce, ssrf, sqli, command-injection, deserialization, gadget-chain, path-traversal, java, database, owasp-a01-2021, owasp-a03-2021, owasp-a08-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:41:17+00:00"

@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Abusing Internet Explorer 8's XSS Filters"
 description: "IE8's XSS filter neutralises a detected attack by rewriting one character of the response to a hash. The authors show an attacker can trigger that deliberately with a dummy GET parameter carrying a string already on the page, corrupting an equals sign just before a quoted attribute so injected text becomes a new attribute pair. That gave universal XSS on bing, wikipedia and twitter."
 resource: "https://www.wokb.cz/Hacking%20technique/Abusing%20Internet%20Explorer%208%27s%20XSS%20Filters.pdf"
-tags: [whitepaper, webseclist-reference, xss, filter-bypass, sanitizer-bypass, novel-technique, injection, waf-bypass, clickjacking, detection]
+tags: [whitepaper, webseclist-reference, xss, filter-bypass, sanitizer-bypass, novel-technique, injection, waf-bypass, clickjacking, detection, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:50:53+00:00"

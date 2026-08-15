@@ -3,7 +3,7 @@ type: Article
 title: Reading Your Emails With A Read&Write Chrome Extension Same Origin Policy Bypass (~8 Million Users Affected)
 description: "The Read&Write Chrome extension injected a content script into every page that relayed any postMessage to its privileged background page without checking the sender's origin. Any site could therefore call background methods such as thGetVoices, making the extension fetch an arbitrary URL with the victim's cookies and hand back the body, which reads a logged-in user's Gmail."
 resource: "https://thehackerblog.com/reading-your-emails-with-a-readwrite-chrome-extension-same-origin-policy-bypass-8-million-users-affected/index.html"
-tags: [article, webseclist-reference, en, the-hacker-blog, browser-extension, sop-bypass, postmessage, same-origin-policy, info-leak, javascript, cookie, case-study]
+tags: [article, webseclist-reference, en, the-hacker-blog, browser-extension, sop-bypass, postmessage, same-origin-policy, info-leak, javascript, cookie, case-study, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:45:33+00:00"

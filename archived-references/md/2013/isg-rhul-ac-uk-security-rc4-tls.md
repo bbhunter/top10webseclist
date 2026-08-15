@@ -3,7 +3,7 @@ type: Article
 title: On the Security of RC4 in TLS
 description: Measured the keystream biases of RC4 as used in TLS and turned them into plaintext recovery. A single-byte-bias attack over the first 256 keystream bytes recovers 220 bytes of a repeated plaintext from roughly 2^30 sessions, and a double-byte (Fluhrer-McGrew) attack works within one connection. The single-byte attack carries to WPA/TKIP because of its per-packet keys.
 resource: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/"
-tags: [article, webseclist-reference, en, isg-rhul-ac-uk, tls, https, info-leak, cookie, cve, mitigation, novel-technique]
+tags: [article, webseclist-reference, en, isg-rhul-ac-uk, tls, https, info-leak, cookie, cve, mitigation, novel-technique, owasp-a02-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:38+00:00"

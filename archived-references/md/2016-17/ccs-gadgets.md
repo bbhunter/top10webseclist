@@ -3,7 +3,7 @@ type: Whitepaper
 title: ccs gadgets
 description: Script gadgets are legitimate JavaScript fragments inside popular frameworks that pick up injected, script-free HTML and turn it into executing code. Because the injected markup carries no script tag or event handler, HTML sanitisers, web application firewalls, browser XSS filters and CSP all let it through. The authors find such gadgets in most modern frameworks and across many live sites.
 resource: "https://raw.githubusercontent.com/google/security-research-pocs/master/script-gadgets/ccs_gadgets.pdf"
-tags: [whitepaper, webseclist-reference, xss, gadget-chain, sanitizer-bypass, csp, filter-bypass, waf-bypass, dom, javascript, measurement-study]
+tags: [whitepaper, webseclist-reference, xss, gadget-chain, sanitizer-bypass, csp, filter-bypass, waf-bypass, dom, javascript, measurement-study, owasp-a03-2021, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:35:37+00:00"

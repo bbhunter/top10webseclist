@@ -3,7 +3,7 @@ type: Article
 title: Some Netgear Routers Open to Remote Authentication Bypass, Command Injection
 description: "Zach Cutlip found a command injection in the Netgear WNDR3700v4: cmd_ping6() sprintf()s an attacker-supplied host into a shell string passed to system(), so \"; evil_command; #\" runs as root. Chained with his separate /BRS_02_genieHelp.html bypass, which disables admin authentication across reboots, it gives unauthenticated root on firmware 1.0.1.32 and 1.0.1.42."
 resource: "http://web.archive.org/web/20160507023636/http://threatpost.com/some-netgear-routers-open-to-remote-authentication-bypass-command-injection/102689"
-tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n, command-injection, auth-bypass, rce, injection]
+tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n, command-injection, auth-bypass, rce, injection, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:03:30+00:00"

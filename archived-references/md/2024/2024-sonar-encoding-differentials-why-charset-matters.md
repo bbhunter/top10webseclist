@@ -3,7 +3,7 @@ type: Article
 title: "Encoding Differentials: Why Charset Matters"
 description: "Omitting the charset attribute from a Content-Type header is itself an XSS-enabling defect, because browsers then auto-detect the encoding of the response body. Injecting ISO-2022-JP escape sequences flips the assumed character set: under JIS X 0201 the byte used for backslash escaping renders as a yen sign, defeating quote escaping in JavaScript strings, while the two-byte JIS X 0208 set consumes an attribute's closing quote and breaks HTML context."
 resource: "https://www.sonarsource.com/blog/encoding-differentials-why-charset-matters/"
-tags: [article, webseclist-reference, en, sonar, charset, encoding, xss, sanitizer-bypass, content-type, parser-differential]
+tags: [article, webseclist-reference, en, sonar, charset, encoding, xss, sanitizer-bypass, content-type, parser-differential, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:31+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: CSRF with JSON – leveraging XHR and CORS
 description: "Shows CSRF surviving JSON APIs: an XHR-Level 2 request with withCredentials true and Content-Type text/plain adds no custom header, so CORS skips the preflight, the browser replays the victim's cookies, and a server that never checks Content-Type processes the JSON body. Screenshots of the script, the wire request and the JSON response carry the proof."
 resource: "https://shreeraj.blogspot.com/2011/11/csrf-with-json-leveraging-xhr-and-cors_28.html"
-tags: [article, webseclist-reference, en, shreeraj-blogspot-com, csrf, cors, javascript, content-type, http, novel-technique]
+tags: [article, webseclist-reference, en, shreeraj-blogspot-com, csrf, cors, javascript, content-type, http, novel-technique, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:58:58+00:00"

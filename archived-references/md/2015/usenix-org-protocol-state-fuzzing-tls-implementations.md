@@ -3,7 +3,7 @@ type: Article
 title: Protocol State Fuzzing of TLS Implementations
 description: State machine learning infers a protocol state machine from a TLS implementation using black-box testing alone, exposing message sequences the code accepts but the standard does not. Inspecting the inferred machines revealed new security flaws in GnuTLS, the Java Secure Socket Extension and OpenSSL, and the distinct machines also fingerprint implementations.
 resource: "https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/de-ruiter"
-tags: [article, webseclist-reference, en, usenix-org, tls, fuzzing, formal-analysis, dynamic-analysis, auth-bypass, parser-differential, novel-technique, detection]
+tags: [article, webseclist-reference, en, usenix-org, tls, fuzzing, formal-analysis, dynamic-analysis, auth-bypass, parser-differential, novel-technique, detection, owasp-a01-2021, owasp-a02-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:05+00:00"

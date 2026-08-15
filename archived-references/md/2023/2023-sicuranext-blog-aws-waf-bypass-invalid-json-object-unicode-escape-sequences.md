@@ -3,7 +3,7 @@ type: Article
 title: "AWS WAF Bypass: invalid JSON object and unicode escape sequences"
 description: AWS WAF can only inspect a request body as plain text or JSON, and its default handling of a body it considers invalid JSON is to let the request through unexamined. Repeating a JSON key with a harmless value first and the payload second therefore evades body rules while the application keeps the last value.
 resource: "https://blog.sicuranext.com/aws-waf-bypass/"
-tags: [article, webseclist-reference, en, sicuranext-blog, waf-bypass, parser-differential, filter-bypass, unicode, encoding, sqli, injection, waf, aws, case-study]
+tags: [article, webseclist-reference, en, sicuranext-blog, waf-bypass, parser-differential, filter-bypass, unicode, encoding, sqli, injection, waf, aws, case-study, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:06:48+00:00"

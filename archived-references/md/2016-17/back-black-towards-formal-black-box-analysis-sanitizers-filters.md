@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Back in Black: Towards Formal, Black Box Analysis of Sanitizers and Filters"
 description: Infers a black-box WAF filter or sanitizer from queries alone, using symbolic finite automata to cut the query count about 15 times. Feeding it a grammar of attack strings turns a failed equivalence check into a real bypass, finding SQL injection bypasses in ModSecurity, PHPIDS, WebKnight, WebCastellum and urlscan.
 resource: "https://www.ieee-security.org/TC/SP2016/papers/0824a091.pdf"
-tags: [whitepaper, webseclist-reference, waf-bypass, filter-bypass, sanitizer-bypass, sqli, xss, formal-analysis, tooling, novel-technique]
+tags: [whitepaper, webseclist-reference, waf-bypass, filter-bypass, sanitizer-bypass, sqli, xss, formal-analysis, tooling, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T20:59:43+00:00"

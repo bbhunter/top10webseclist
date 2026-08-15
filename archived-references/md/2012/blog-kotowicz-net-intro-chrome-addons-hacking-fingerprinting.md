@@ -3,7 +3,7 @@ type: Article
 title: "Intro to Chrome addons hacking: fingerprinting"
 description: "Cross-scheme loading between http(s) pages and chrome-extension:// URLs is not fully isolated. Pointing a script element at chrome-extension://<id>/manifest.json and watching whether onload or onerror fires reveals whether that extension is installed, letting a page enumerate a visitor's Chrome add-ons in milliseconds from a list of popular IDs for fingerprinting or targeting."
 resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/02/intro-to-chrome-addons-hacking.html"
-tags: [article, webseclist-reference, blog-kotowicz-net, browser-extension, info-leak, javascript, side-channel, novel-technique, same-origin-policy, detection]
+tags: [article, webseclist-reference, blog-kotowicz-net, browser-extension, info-leak, javascript, side-channel, novel-technique, same-origin-policy, detection, owasp-a01-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:44+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "#HackerKast 13 Bonus Round: FlashFlood - JavaScript DoS"
 description: "FlashFlood is a demonstration script that makes a visitor's browser fire large numbers of HTTP requests, varying a parameter value each time so caching layers such as Varnish are bypassed and every request lands on the database-backed application. Delivered to many visitors through XSS it piles load onto sites, notably Drupal, that rely on the cache to absorb it."
 resource: "https://web.archive.org/web/20160403035045/https://www.whitehatsec.com/blog/hackerkast-13-bonus-round/"
-tags: [article, webseclist-reference, en, whitehat-security, dos, cache, xss, javascript, http, drupal, tooling]
+tags: [article, webseclist-reference, en, whitehat-security, dos, cache, xss, javascript, http, drupal, tooling, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:06:25+00:00"

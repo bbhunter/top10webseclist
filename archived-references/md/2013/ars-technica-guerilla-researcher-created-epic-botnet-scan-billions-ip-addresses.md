@@ -3,7 +3,7 @@ type: Article
 title: Guerilla researcher created epic botnet to scan billions of IP addresses
 description: "An anonymous researcher assembled the Carna botnet from 420,000 embedded devices that accepted blank or root/admin logins, then used them to port-scan the entire IPv4 space over nine months. The survey gathered more than 9TB of data across 742 ports and found about 1.3 billion live addresses, broadly agreeing with HD Moore's separate lawful year-long scanning."
 resource: "http://web.archive.org/web/20160507023636/http://arstechnica.com/security/2013/03/guerilla-researcher-created-epic-botnet-to-scan-billions-of-ip-addresses/"
-tags: [article, webseclist-reference, en-us, ars-technica, Server, large-scale-scan, auth-bypass, measurement-study]
+tags: [article, webseclist-reference, en-us, ars-technica, server, large-scale-scan, auth-bypass, measurement-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:02:18+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Robert “RSnake” Hansen, age 34, has passed away, on Facebook
 description: "Facebook let any confirmed friend request that an account be memorialized, which restricts the profile and permanently blocks anyone from logging in. Grossman shows the only real check was that a plausible obituary existed: find a same-named person with a recent online obituary in roughly the right area, submit the form, and RSnake's live account was memorialized."
 resource: "https://jeremiahgrossman.blogspot.com/2011/03/robert-rsnake-hansen-age-34-has-passed.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, auth-bypass, dos, case-study, novel-technique]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, auth-bypass, dos, case-study, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:18+00:00"

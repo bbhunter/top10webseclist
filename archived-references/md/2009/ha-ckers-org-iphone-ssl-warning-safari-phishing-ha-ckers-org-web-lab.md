@@ -3,7 +3,7 @@ type: Article
 title: iPhone SSL Warning and Safari Phishing ha.ckers.org web application security lab
 description: "Mobile Safari's invalid-certificate prompt does not say which host the certificate belongs to, so a 1x1 iframe pointing at an HTTPS site with a bad certificate asks the user to accept something they cannot attribute. The acceptance lasts the whole browser session, letting a wifi man-in-the-middle pre-accept a certificate before the victim reaches their bank."
 resource: "http://ha.ckers.org/blog/20090329/iphone-ssl-warning-and-safari-phishing/"
-tags: [article, webseclist-reference, ha-ckers-org, tls, https, iframe, ui-redress, ios, case-study, phishing]
+tags: [article, webseclist-reference, ha-ckers-org, tls, https, iframe, ui-redress, ios, case-study, phishing, owasp-a02-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:46+00:00"

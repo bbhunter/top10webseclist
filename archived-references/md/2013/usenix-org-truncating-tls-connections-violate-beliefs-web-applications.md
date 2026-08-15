@@ -3,7 +3,7 @@ type: Article
 title: Truncating TLS Connections to Violate Beliefs in Web Applications
 description: "TLS truncation lets an attacker cut off the tail of a response so browser and server end up disagreeing about what completed. The authors turned that desynchronisation into working attacks: casting votes on behalf of honest voters in the Helios e-voting system, taking full control of Microsoft Live accounts, and gaining temporary access to Google accounts."
 resource: "https://www.usenix.org/conference/woot13/workshop-program/presentation/smyth"
-tags: [article, webseclist-reference, en, usenix-org, tls, auth-bypass, session-fixation]
+tags: [article, webseclist-reference, en, usenix-org, tls, auth-bypass, session-fixation, owasp-a01-2021, owasp-a02-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:47+00:00"

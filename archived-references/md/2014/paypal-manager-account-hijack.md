@@ -3,7 +3,7 @@ type: Whitepaper
 title: Paypal Manager Account Hijack
 description: "A chained attack on PayPal Manager: Burp Intruder enumerates valid vendor accounts by response length, a reused password-reset token bypasses the security question, and removing the Referer header completes the reset. Sending a spoofed X-Forwarded-For value then defeats the IP restriction screen, giving admin access to another merchant's account and customer data."
 resource: "https://web.archive.org/web/20140516030049/http://www.securatary.com/Portals/0/Vulnerabilities/PayPal/Paypal%20Manager%20Account%20Hijack.pdf"
-tags: [whitepaper, webseclist-reference, auth-bypass, filter-bypass, http, info-leak, attack-chain, bug-bounty, case-study]
+tags: [whitepaper, webseclist-reference, auth-bypass, filter-bypass, http, info-leak, attack-chain, bug-bounty, case-study, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T15:53:46+00:00"

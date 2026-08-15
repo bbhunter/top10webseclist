@@ -3,7 +3,7 @@ type: Article
 title: Code Vulnerabilities Put Proton Mails at Risk
 description: Proton Mail renamed sanitized svg elements to proton-svg after DOMPurify ran, moving the subtree from SVG to HTML parsing rules so a closing style sequence hidden in an attribute re-parsed into a live img onerror handler.
 resource: "https://www.sonarsource.com/blog/code-vulnerabilities-leak-emails-in-proton-mail/?utm_source=twitter&utm_medium=social&utm_campaign=protonmail&utm_content=security&utm_term=mofu"
-tags: [article, webseclist-reference, en, sonar, mutation-xss, sanitizer-bypass, parser-differential, xss, css, side-channel, info-leak, csp, iframe, email]
+tags: [article, webseclist-reference, en, sonar, mutation-xss, sanitizer-bypass, parser-differential, xss, css, side-channel, info-leak, csp, iframe, email, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:28+00:00"

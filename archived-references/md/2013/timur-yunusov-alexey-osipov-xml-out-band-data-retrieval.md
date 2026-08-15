@@ -3,7 +3,7 @@ type: Whitepaper
 title: Timur Yunusov and Alexey Osipov -- XML Out of Band Data Retrieval
 description: "A Black Hat EU talk on pulling data out of XML parsers that return neither errors nor document output. Nested parameter entities loaded from an attacker-controlled external DTD smuggle file contents into a URL, and XSLT's document() and unparsed-text() do the same, exfiltrating over DNS or HTTP. Compares MS System.XML, Java Xerces and libxml, and ships a Metasploit module."
 resource: "http://web.archive.org/web/20160507023636/https://media.blackhat.com/eu-13/briefings/Osipov/bh-eu-13-XML-data-osipov-slides.pdf"
-tags: [whitepaper, webseclist-reference, Injection, Server, xxe, dns]
+tags: [whitepaper, webseclist-reference, injection, server, xxe, dns, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T15:35:32+00:00"

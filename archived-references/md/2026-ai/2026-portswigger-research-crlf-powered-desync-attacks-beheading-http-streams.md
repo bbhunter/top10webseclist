@@ -3,7 +3,7 @@ type: Article
 title: "CRLF-Powered Desync Attacks: Beheading HTTP Streams"
 description: "When Nginx's proxy_pass includes $uri the path is normalised and URL-decoded, so %0d%0a in it injects headers or whole requests into the upstream request. Injecting Transfer-Encoding beside the real Content-Length gives a CL.TE desync, and two CRLFs split the request for response queue poisoning inside a CDN and a payment provider's cluster. An injected Expect: 100-continue exposes blind tunnelling, and browser fetch can drive the attack, making the desync wormable."
 resource: "https://portswigger.net/research/crlf-powered-desync-attacks"
-tags: [article, webseclist-reference, portswigger-research, header-injection, request-smuggling, desync, response-splitting, xss, cache-poisoning, cdn, reverse-proxy, cookie, http]
+tags: [article, webseclist-reference, portswigger-research, header-injection, request-smuggling, desync, response-splitting, xss, cache-poisoning, cdn, reverse-proxy, cookie, http, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:05+00:00"

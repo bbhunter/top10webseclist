@@ -3,7 +3,7 @@ type: Article
 title: From Akamai to F5 to NTLM... with love.
 description: "Space-prefixed Content-Length smuggling gadgets pass through Akamai Edge unnormalised and are then cached by the F5 BIG-IP behind it, so repeated requests poison the cache globally. Smuggling an absolute-URL request line redirects a victim site's login portal to an attacker host, capturing authorization tokens and, where Outlook clients auto-discover that host, NTLM credentials."
 resource: "https://blog.malicious.group/from-akamai-to-f5-to-ntlm/"
-tags: [article, webseclist-reference, en, malicious-group, request-smuggling, cache-poisoning, desync, header-injection, cdn, load-balancer, open-redirect, info-leak, attack-chain, bug-bounty]
+tags: [article, webseclist-reference, en, malicious-group, request-smuggling, cache-poisoning, desync, header-injection, cdn, load-balancer, open-redirect, info-leak, attack-chain, bug-bounty, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T20:25:53+00:00"

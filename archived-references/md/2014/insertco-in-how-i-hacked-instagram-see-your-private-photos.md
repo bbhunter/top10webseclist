@@ -3,7 +3,7 @@ type: Article
 title: How I hacked Instagram to see your private photos
 description: "Instagram's mobile API accepted the set_public and set_private account actions without any CSRF token and without checking that the request came from the mobile app, so a plain HTML form on an attacker page could flip a logged-in victim's profile privacy. Making a private profile public exposes that user's photos and personal information."
 resource: "https://web.archive.org/web/20160403035045/http://insertco.in/2014/02/10/how-i-hacked-instagram/"
-tags: [article, webseclist-reference, en, insertco-in, csrf, rest-api, info-leak, android, http, bug-bounty, case-study]
+tags: [article, webseclist-reference, en, insertco-in, csrf, rest-api, info-leak, android, http, bug-bounty, case-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:25+00:00"

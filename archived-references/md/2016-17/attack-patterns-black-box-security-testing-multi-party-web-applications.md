@@ -3,7 +3,7 @@ type: Whitepaper
 title: Attack Patterns for Black-Box Security Testing of Multi-Party Web Applications
 description: Security protocols behind multi-party web applications, such as single sign-on and Cashier-as-a-Service payment flows, share structural features that let an attack on one be generalised to others. The paper distils thirteen published attacks into seven reusable attack patterns and builds a black-box tester on OWASP ZAP that instantiates them automatically, covering replay, login CSRF and stored XSS. It found twenty-one previously unknown vulnerabilities in prominent providers.
 resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/attack-patterns-black-box-security-testing-multi-party-web-applications.pdf"
-tags: [whitepaper, webseclist-reference, sso, oauth, saml, csrf, xss, auth-bypass, tooling, dynamic-analysis]
+tags: [whitepaper, webseclist-reference, sso, oauth, saml, csrf, xss, auth-bypass, tooling, dynamic-analysis, owasp-a01-2021, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:18+00:00"

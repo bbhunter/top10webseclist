@@ -3,7 +3,7 @@ type: Article
 title: Building Subversive File Sharing With Client Side Applications
 description: "Sketches a file-sharing network built from unwitting visitors: Alice holds an idle browser on her page, feeds it chunks of a file, and JavaScript writes them into iframes that POST cross-site to Bob's and Zack's servers. Recipients verify every chunk against Alice, so a relay that notices cannot corrupt the transfer. Third-party bandwidth without third-party consent."
 resource: "http://www.sectheory.com/file-sharing.htm"
-tags: [article, webseclist-reference, sectheory-com, csrf, javascript, iframe, abuse-of-functionality, novel-technique]
+tags: [article, webseclist-reference, sectheory-com, csrf, javascript, iframe, abuse-of-functionality, novel-technique, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:03+00:00"

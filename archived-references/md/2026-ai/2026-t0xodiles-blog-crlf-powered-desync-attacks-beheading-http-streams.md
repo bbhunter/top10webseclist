@@ -3,7 +3,7 @@ type: Article
 title: "CRLF-Powered Desync Attacks: Beheading HTTP Streams"
 description: An announcement post for a Black Hat USA and DEF CON 2026 briefing, carrying the submitted abstract rather than the research itself. It describes a methodology that escalates HTTP header injection into request smuggling against RFC-compliant proxy chains, including request splitting inside a major CDN that captured live user credentials, and moving previously non-compliant desync attacks into the browser. Promised outcomes are case studies and two detection tools.
 resource: "https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/"
-tags: [article, webseclist-reference, en, t0xodile-s-blog, request-smuggling, desync, header-injection, response-splitting, cache-poisoning, cdn, proxy, tooling]
+tags: [article, webseclist-reference, en, t0xodile-s-blog, request-smuggling, desync, header-injection, response-splitting, cache-poisoning, cdn, proxy, tooling, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-15T21:04:40+00:00"

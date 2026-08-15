@@ -3,7 +3,7 @@ type: Whitepaper
 title: An Empirical Study of Privacy-Violating Information Flows in JavaScript Web Applications
 description: A rewriting-based JavaScript information-flow engine was built inside Chrome, injecting and propagating taints in rewritten source rather than in the runtime, then run over the Alexa top 50,000. It confirmed 46 sites sniffing browser history, cookies leaking to ad networks, and 7 popular sites covertly tracking clicks and mouse movement. Overhead was about 3x on script execution.
 resource: "https://www.cs.cornell.edu/~lerner/papers/ccs10-jsc.pdf"
-tags: [whitepaper, webseclist-reference, javascript, info-leak, dynamic-analysis, measurement-study, large-scale-scan, dom, cookie, side-channel, xsleak]
+tags: [whitepaper, webseclist-reference, javascript, info-leak, dynamic-analysis, measurement-study, large-scale-scan, dom, cookie, side-channel, xsleak, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:35:25+00:00"

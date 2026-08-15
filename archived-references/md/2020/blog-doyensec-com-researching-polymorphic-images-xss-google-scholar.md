@@ -3,7 +3,7 @@ type: Article
 title: Researching Polymorphic Images for XSS on Google Scholar
 description: Polymorphic images carry a valid XSS or JavaScript payload while surviving server-side reprocessing by placing it in EXIF metadata, after the image trailer, in PNG iDAT, or in a JPG entropy-coded segment tuned to survive re-encoding. When such an image is uploaded and served same-origin, as on Google Scholar, it executes script and can bypass a self CSP.
 resource: "https://blog.doyensec.com/2020/04/30/polymorphic-images-for-xss.html"
-tags: [article, webseclist-reference, en-us, blog-doyensec-com, xss, file-upload, filter-bypass, csp, mime, novel-technique, bug-bounty]
+tags: [article, webseclist-reference, en-us, blog-doyensec-com, xss, file-upload, filter-bypass, csp, mime, novel-technique, bug-bounty, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:48+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Hacking into gRPC-Web
 description: "How to attack gRPC-Web without the .proto file: strip the five-byte length prefix from the base64 body, decode the Protobuf with Protoscope, edit fields by number and re-encode using the author's gRPC Coder tool and Burp extension, and scan webpacked JavaScript with gRPC Scan to recover hidden services, methods and field types, reaching unlinked parameters that carry SQL injection and XSS."
 resource: "https://infosecwriteups.com/hacking-into-grpc-web-a54053757a45"
-tags: [article, webseclist-reference, en, medium, rest-api, sqli, xss, encoding, tooling, info-leak, bug-bounty]
+tags: [article, webseclist-reference, en, medium, rest-api, sqli, xss, encoding, tooling, info-leak, bug-bounty, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:05+00:00"

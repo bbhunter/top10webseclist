@@ -3,7 +3,7 @@ type: Code
 title: Cure53 Browser Security Whitepaper
 description: "A 330-page comparative audit of MSIE11, Edge and Chrome covering memory-safety mitigations, CSP and other security headers, DOM security, extension and plugin models, and UI trust indicators. It documents working attacks such as turning MSIE's XSS Filter into an XSS source, downgrading a framed site's document mode from an attacker page, DOM clobbering, and Cyrillic look-alike domains."
 resource: "https://github.com/cure53/browser-sec-whitepaper/blob/master/browser-security-whitepaper.pdf"
-tags: [code, webseclist-reference, xss, filter-bypass, dom-clobbering, csp, browser-extension, same-origin-policy, iframe, unicode, survey]
+tags: [code, webseclist-reference, xss, filter-bypass, dom-clobbering, csp, browser-extension, same-origin-policy, iframe, unicode, survey, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T13:27:11+00:00"

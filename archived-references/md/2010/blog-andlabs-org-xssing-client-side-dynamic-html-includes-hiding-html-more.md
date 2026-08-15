@@ -3,7 +3,7 @@ type: Article
 title: XSSing client-side dynamic HTML includes by hiding HTML inside images and more
 description: "Argues that sites which fetch a URL fragment by Ajax and drop it into innerHTML are vulnerable even without HTML5 cross-origin requests, because every same-origin file becomes HTML. HTML hidden after a JPEG's end-of-image marker survives and executes when the image is rendered as markup, and poisoned User-Agent strings in server logs give the same effect."
 resource: "http://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.html"
-tags: [article, webseclist-reference, en, blog-andlabs-org, xss, dom, cors, same-origin-policy, file-upload, mime, content-type, sop-bypass]
+tags: [article, webseclist-reference, en, blog-andlabs-org, xss, dom, cors, same-origin-policy, file-upload, mime, content-type, sop-bypass, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:03+00:00"

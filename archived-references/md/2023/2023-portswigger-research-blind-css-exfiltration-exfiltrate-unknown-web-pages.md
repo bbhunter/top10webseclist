@@ -3,7 +3,7 @@ type: Article
 title: "Blind CSS Exfiltration: exfiltrate unknown web pages"
 description: "With only CSS injected into a page whose structure the attacker cannot see, attribute selectors combined with :has and :not on the html element, CSS variable fallbacks and multiple backgrounds, and @import chaining let an attacker enumerate and exfiltrate input names and values, textarea names, form actions and anchor links, even where CSP or DOMPurify rules out JavaScript."
 resource: "https://portswigger.net/research/blind-css-exfiltration"
-tags: [article, webseclist-reference, portswigger-research, css-injection, css, info-leak, filter-bypass, csp, injection, novel-technique, tooling]
+tags: [article, webseclist-reference, portswigger-research, css-injection, css, info-leak, filter-bypass, csp, injection, novel-technique, tooling, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:47+00:00"

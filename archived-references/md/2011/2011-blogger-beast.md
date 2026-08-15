@@ -3,7 +3,7 @@ type: Article
 title: BEAST
 description: "A first-person account of building BEAST. Rizzo's chosen-boundary attack on SSL/TLS CBC was reversed to suit browsers, which needed two records inside one cookie-bearing request; WebSockets and then a Java applet supplied that primitive. A Java same-origin-policy bypass loaded the agent, and optimisation cut decryption of long live cookies to minutes."
 resource: "https://vnhacker.blogspot.com/2011/09/beast.html"
-tags: [article, webseclist-reference, blogger, tls, https, cookie, side-channel, java, sop-bypass, cve, novel-technique]
+tags: [article, webseclist-reference, blogger, tls, https, cookie, side-channel, java, sop-bypass, cve, novel-technique, owasp-a01-2021, owasp-a02-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:57+00:00"

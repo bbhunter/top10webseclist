@@ -3,7 +3,7 @@ type: Whitepaper
 title: Agentic Browsers and the Same-Origin Policy (Paper)
 description: "Tests seven agentic browsers and finds several of them (ChatGPT Atlas in Agent Mode, Chrome with Gemini, Claude for Chrome, Perplexity Comet) feed the embedded LLM cross-origin iframe and tab content, two even reading masked password fields from the DOM. A prompt injection in the outer page then tells the agent to summarise the page including the framed origin and type the result into an auto-submitting form, reducing the same-origin policy to the model's injection resistance."
 resource: "https://www.franziroesner.com/pdf/roesner_kohlbrenner_2026_agentic_sop.pdf"
-tags: [whitepaper, webseclist-reference, same-origin-policy, sop-bypass, prompt-injection, ai-agent, llm, iframe, info-leak, csrf, measurement-study]
+tags: [whitepaper, webseclist-reference, same-origin-policy, sop-bypass, prompt-injection, ai-agent, llm, iframe, info-leak, csrf, measurement-study, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:08:09+00:00"

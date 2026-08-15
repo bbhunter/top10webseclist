@@ -3,7 +3,7 @@ type: Article
 title: Users of Mobile Portals Exposed to HTTP Header Pollution Attacks, Expert Finds
 description: "Softpedia reports Bogdan Alecu's EUSecWest research on mobile operator portals. Carriers and their content partners identify subscribers by HTTP headers injected at the gateway, so adding or altering those headers lets an attacker browse the portal as any customer knowing only their phone number. Most tested operators worldwide were vulnerable, enabling purchases and account changes."
 resource: "https://web.archive.org/web/20170903113359/http://news.softpedia.com/news/Users-of-Mobile-Portals-Exposed-to-HTTP-Header-Pollution-Attacks-Expert-Finds-293540.shtml"
-tags: [article, webseclist-reference, en-us, softpedia, header-injection, http, auth-bypass, info-leak, case-study, proxy]
+tags: [article, webseclist-reference, en-us, softpedia, header-injection, http, auth-bypass, info-leak, case-study, proxy, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:35:40+00:00"

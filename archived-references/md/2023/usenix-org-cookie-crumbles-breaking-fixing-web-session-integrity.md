@@ -3,7 +3,7 @@ type: Article
 title: "Cookie Crumbles: Breaking and Fixing Web Session Integrity"
 description: Studies cookie integrity across browsers and server frameworks and shows that the Secure attribute, cookie prefixes, SameSite and synchronizer CSRF tokens can be composed or implemented in ways that still allow session fixation and cross-origin request forgery. Nine of the top thirteen frameworks were affected, producing twelve CVEs and changes to the cookie standard.
 resource: "https://www.usenix.org/conference/usenixsecurity23/presentation/squarcina"
-tags: [article, webseclist-reference, en, usenix-org, cookie, session-fixation, csrf, parser-differential, cve, measurement-study, mitigation]
+tags: [article, webseclist-reference, en, usenix-org, cookie, session-fixation, csrf, parser-differential, cve, measurement-study, mitigation, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:21+00:00"

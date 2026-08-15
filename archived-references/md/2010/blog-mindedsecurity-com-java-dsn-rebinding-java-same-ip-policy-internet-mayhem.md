@@ -3,7 +3,7 @@ type: Article
 title: "Minded Security Blog: Java DSN Rebinding + Java Same IP Policy = The Internet Mayhem"
 description: "Chains two Java applet flaws the author disclosed to Oracle. DNS rebinding lets an attacker point a controlled host at any IP, and Java's same-IP host access then lets the applet read responses from any host on that IP, so an applet on evil.tld could read google.com. XSS reaching java.* objects from JavaScript widens it further."
 resource: "http://blog.mindedsecurity.com/2010/10/java-dsn-rebinding-java-same-ip-policy.html"
-tags: [article, webseclist-reference, blog-mindedsecurity-com, java, dns-rebinding, dns, sop-bypass, same-origin-policy, attack-chain, info-leak]
+tags: [article, webseclist-reference, blog-mindedsecurity-com, java, dns-rebinding, dns, sop-bypass, same-origin-policy, attack-chain, info-leak, owasp-a01-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T13:07:56+00:00"

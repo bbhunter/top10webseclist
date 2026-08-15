@@ -3,7 +3,7 @@ type: Whitepaper
 title: "The Web Never Forgets: Persistent Tracking Mechanisms in the Wild"
 description: Instrumented-browser crawls of the top 100,000 sites give the first in-the-wild measurement of canvas fingerprinting, evercookie respawning and cookie syncing. Trackers draw hidden canvas text to derive a stable device fingerprint, restore deleted cookies from Flash, IndexedDB and other stores, and swap identifiers server to server, so clearing state does not stop tracking.
 resource: "https://web.archive.org/web/20160403035045/https://securehomes.esat.kuleuven.be/~gacar/persistent/the_web_never_forgets.pdf"
-tags: [whitepaper, webseclist-reference, info-leak, cookie, javascript, flash, dom, large-scale-scan, measurement-study]
+tags: [whitepaper, webseclist-reference, info-leak, cookie, javascript, flash, dom, large-scale-scan, measurement-study, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:21:54+00:00"

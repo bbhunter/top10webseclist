@@ -3,7 +3,7 @@ type: Article
 title: "Apple's Safari 4 fixes local file theft attack"
 description: Notes that Safari 4 fixed an XXE attack against the parsing of XSL XML, which let a remote page read local files; demos are given for Safari 3 on MacOS and Windows. Observes that Safari 3 resisted XXE across XmlHttpRequest, XML pretty-printing, SVG and E4X, and that only the obscure XSL parser was vulnerable. Full details are in CESA-2009-006.
 resource: "https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-fixes-local-file-theft.html"
-tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com, xxe, info-leak, sop-bypass, same-origin-policy, mitigation]
+tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com, xxe, info-leak, sop-bypass, same-origin-policy, mitigation, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:28+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: CRLF Injection Nested Response Splitting CSP Gadget
 description: "A CRLF injection in a response header is nested inside itself: the injected script tag points at a same-origin URL carrying a second response-splitting payload, so a strict script-src self policy is satisfied. Injecting Content-Length or chunked Transfer-Encoding truncates the leftover body so it parses as valid JavaScript, giving XSS."
 resource: "https://lab.ctbb.show/research/crlf-injection-nested-response-splitting-csp-gadget"
-tags: [article, webseclist-reference, en, critical-thinking-bug-bounty-podcast, response-splitting, header-injection, csp, xss, gadget-chain, http, novel-technique]
+tags: [article, webseclist-reference, en, critical-thinking-bug-bounty-podcast, response-splitting, header-injection, csp, xss, gadget-chain, http, novel-technique, owasp-a03-2021, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:32:57+00:00"

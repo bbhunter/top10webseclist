@@ -3,7 +3,7 @@ type: Article
 title: Safari Carpet Bomb
 description: "Safari cannot be configured to ask before downloading, so a page of iframes pointed at a CGI returning an unknown content-type such as blah/blah litters the Windows desktop or ~/Downloads with attacker files. Dhanjani reports Apple's refusal to treat it as a security issue, plus a second finding that Safari applies no sandbox warning to local HTML."
 resource: "http://www.dhanjani.com/blog/2008/05/safari-carpet-b.html"
-tags: [article, webseclist-reference, dhanjani-com, content-type, mime, abuse-of-functionality, iframe, sandbox-escape]
+tags: [article, webseclist-reference, dhanjani-com, content-type, mime, abuse-of-functionality, iframe, sandbox-escape, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T13:12:19+00:00"

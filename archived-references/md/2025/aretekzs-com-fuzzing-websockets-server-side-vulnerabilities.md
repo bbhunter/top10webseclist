@@ -3,7 +3,7 @@ type: Article
 title: Fuzzing WebSockets for Server-Side Vulnerabilities
 description: Extends a Burp scanner to WebSockets by opening a fresh connection per payload, optionally sending prerequisite handshake messages, and capturing every message that arrives in a configurable window. Anomalies are judged on WebSocket-appropriate metrics such as message count, type sequence, lengths and tag counts, giving automated server-side vulnerability detection.
 resource: "https://aretekzs.com/posts/fuzzing-ws/"
-tags: [article, webseclist-reference, en, aretekzs-com, websocket, fuzzing, tooling, detection, dynamic-analysis, injection, novel-technique, http]
+tags: [article, webseclist-reference, en, aretekzs-com, websocket, fuzzing, tooling, detection, dynamic-analysis, injection, novel-technique, http, owasp-a03-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:05:40+00:00"

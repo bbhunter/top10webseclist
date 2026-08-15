@@ -3,7 +3,7 @@ type: Article
 title: "HackerOne disclosed on HackerOne: File Name Enumeration"
 description: "A path traversal in the way Rails served static assets: a URL of the form //%5C../%5C../etc/passwd, using percent-encoded backslashes, escaped the document root. Existing and non-existing paths produced different responses, letting an attacker enumerate arbitrary server-side filenames. Fixed in a Rails security release after this report."
 resource: "https://hackerone.com/reports/33935"
-tags: [article, webseclist-reference, en, hackerone, path-traversal, info-leak, url-parsing, encoding, rails, ruby, bug-bounty, vendor-advisory]
+tags: [article, webseclist-reference, en, hackerone, path-traversal, info-leak, url-parsing, encoding, rails, ruby, bug-bounty, vendor-advisory, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:31+00:00"

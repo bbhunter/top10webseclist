@@ -3,7 +3,7 @@ type: Article
 title: Worldwide Server-side Cache Poisoning on All Akamai Edge Nodes ($50K+ Bounty Earned)
 description: "Listing Content-Length in the Connection header marks it hop-by-hop, so Akamai's first proxy stripped it and the request body became a second request. The surplus response desynchronised the connection and was served to other users, and edge nodes cached it, letting an attacker publish arbitrary content under almost any Akamai-fronted domain across a whole region."
 resource: "https://medium.com/@jacopotediosi/worldwide-server-side-cache-poisoning-on-all-akamai-edge-nodes-50k-bounty-earned-f97d80f3922b"
-tags: [article, webseclist-reference, en, medium, request-smuggling, cache-poisoning, desync, http, cdn, proxy, header-injection, bug-bounty]
+tags: [article, webseclist-reference, en, medium, request-smuggling, cache-poisoning, desync, http, cdn, proxy, header-injection, bug-bounty, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:11+00:00"

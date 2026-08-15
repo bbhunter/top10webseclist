@@ -3,7 +3,7 @@ type: Slides
 title: Weird proxies/2 and a bit of magic
 description: A survey of reverse proxy and API gateway misconfigurations in which the front end and back end disagree about a request. Path normalization gaps, raw bytes and absolute URIs in the request line, header name mangling, Range-header cache poisoning and HTTP/2 pseudo-header downgrades let an attacker reach restricted paths, smuggle trusted headers, or poison a cache.
 resource: "https://speakerdeck.com/greendog/2-and-a-bit-of-magic"
-tags: [slides, webseclist-reference, en, speaker-deck, parser-differential, request-smuggling, header-injection, cache-poisoning, path-traversal, auth-bypass, reverse-proxy, proxy, http2, cdn]
+tags: [slides, webseclist-reference, en, speaker-deck, parser-differential, request-smuggling, header-injection, cache-poisoning, path-traversal, auth-bypass, reverse-proxy, proxy, http2, cdn, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:44+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: X-Frame-Options (XFO) Detection from Javascript
 description: Frames blocked by X-Frame-Options never fire their onload handler. Creating a hidden iframe whose onload removes it from the DOM, then checking a few seconds later whether the element still exists, tells a script whether a cross-origin URL sends XFO. Because some sites send the header only on their logged-out login screen, this doubles as a cross-domain login-state oracle.
 resource: "https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/x-frame-options-xfo-detection-from-javascript/"
-tags: [article, webseclist-reference, en, whitehat-security, iframe, xsleak, side-channel, info-leak, javascript, detection, novel-technique, clickjacking]
+tags: [article, webseclist-reference, en, whitehat-security, iframe, xsleak, side-channel, info-leak, javascript, detection, novel-technique, clickjacking, owasp-a04-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:07:08+00:00"

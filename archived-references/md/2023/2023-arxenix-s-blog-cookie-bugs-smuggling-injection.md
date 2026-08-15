@@ -3,7 +3,7 @@ type: Article
 title: Cookie Bugs - Smuggling & Injection
 description: Java and Python web servers parse the Cookie header differently from browsers. Several still honour RFC2965 quoted strings, so a double quote in one cookie value swallows the cookies after it and can leak an HttpOnly session id to an XSS. Others begin a new cookie on a space, comma or closing quote, letting one controllable value inject spoofed cookies and defeat cookie-based CSRF checks.
 resource: "https://blog.ankursundara.com/cookie-bugs/"
-tags: [article, webseclist-reference, en, arxenix-s-blog, cookie, parser-differential, smuggling, injection, csrf, cve, java, python, http]
+tags: [article, webseclist-reference, en, arxenix-s-blog, cookie, parser-differential, smuggling, injection, csrf, cve, java, python, http, owasp-a01-2021, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:03:26+00:00"

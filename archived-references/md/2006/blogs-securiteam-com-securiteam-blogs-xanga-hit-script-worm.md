@@ -3,7 +3,7 @@ type: Article
 title: SecuriTeam Blogs » Xanga Hit By Script Worm
 description: "Matthew Murphy's same-day analysis of the Xanga worm: a DIV whose CSS background url() holds a javascript: URI split across line breaks that IE reassembles, defeating the site's keyword filter, then eval of the DIV's own code attribute bootstraps XMLHTTP that reposts the worm through the blog editor. Annotated source for all seven routines."
 resource: "https://blogs.securiteam.com/index.php/archives/166"
-tags: [article, webseclist-reference, en, blogs-securiteam-com, xss, filter-bypass, javascript, css, attack-chain, case-study, encoding]
+tags: [article, webseclist-reference, en, blogs-securiteam-com, xss, filter-bypass, javascript, css, attack-chain, case-study, encoding, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:29:32+00:00"

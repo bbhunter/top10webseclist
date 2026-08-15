@@ -3,7 +3,7 @@ type: Article
 title: The Curious Case of Copy & Paste - on risks of pasting arbitrary content in browsers
 description: "Copying from a malicious page and pasting into a rich-text editor can run script, because the clipboard carries HTML and the paste sanitizers in Chromium, Firefox, Safari and Edge can be mutated into producing dangerous markup. The same trick bypasses TinyMCE, CKEditor and Froala, and pasted CSS can exfiltrate the editor's contents."
 resource: "https://research.securitum.com/the-curious-case-of-copy-paste/"
-tags: [article, webseclist-reference, en, research-securitum-com, sanitizer-bypass, mutation-xss, xss, css-injection, dom-clobbering, info-leak, filter-bypass, javascript, novel-technique]
+tags: [article, webseclist-reference, en, research-securitum-com, sanitizer-bypass, mutation-xss, xss, css-injection, dom-clobbering, info-leak, filter-bypass, javascript, novel-technique, owasp-a03-2021, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:14+00:00"

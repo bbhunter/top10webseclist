@@ -3,7 +3,7 @@ type: Whitepaper
 title: "NoTamper: Automatic Blackbox Detection of Parameter Tampering Opportunities in Web Applications"
 description: "NoTamper extracts the constraints a page's HTML and JavaScript impose on form input, using concrete-symbolic evaluation, then solves them to build benign and hostile inputs. It ranks hostile inputs by how closely the server's reply resembles a benign one. Across 8 open-source apps and 5 live sites it found 169 opportunities and 9 confirmed exploits, including arbitrary bank transfers."
 resource: "https://www.cs.uic.edu/~venkat/research/papers/NoTamper-ccs2010.pdf"
-tags: [whitepaper, webseclist-reference, tooling, dynamic-analysis, formal-analysis, auth-bypass, javascript, detection, novel-technique, case-study]
+tags: [whitepaper, webseclist-reference, tooling, dynamic-analysis, formal-analysis, auth-bypass, javascript, detection, novel-technique, case-study, owasp-a01-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:36:25+00:00"

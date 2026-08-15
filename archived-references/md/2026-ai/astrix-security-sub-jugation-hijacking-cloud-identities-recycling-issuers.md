@@ -3,7 +3,7 @@ type: Article
 title: "Sub:jugation - Hijacking Cloud Identities by Recycling Namespaces in Global OIDC Issuers"
 description: CI/CD platforms mint OIDC tokens from a single global issuer, and the sub claim is built entirely from a repository namespace that GitHub, GitLab and Terraform allow anyone to re-register once deleted. Recreating the path yields a token with an identical sub, so any cloud IAM role still trusting it can be assumed. Scanning showed 14% of AWS and 24% of Azure trusted namespaces unclaimed, and GitHub Code Search finds workflows with cleartext role ARNs to target.
 resource: "https://astrix.security/learn/blog/subjugation-hijacking-cloud-identities-by-recycling-namespaces-in-global-oidc-issuers/"
-tags: [article, webseclist-reference, en, astrix-security, auth-bypass, oauth, openid, ci-cd, github-actions, aws, azure, gitlab, large-scale-scan]
+tags: [article, webseclist-reference, en, astrix-security, auth-bypass, oauth, openid, ci-cd, github-actions, aws, azure, gitlab, large-scale-scan, owasp-a01-2021, owasp-a07-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:02:40+00:00"

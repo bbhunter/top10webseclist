@@ -17,6 +17,7 @@ const REPO = path.dirname(APP_DIR);
 const REGISTRY_PATH = path.join(APP_DIR, "archive-years.json");
 const HOSTING_PATH = path.join(APP_DIR, "hosting.json");
 const MANIFEST_PATH = path.join(REPO, "archived-references", "manifest.json");
+const VOCABULARY_PATH = path.join(REPO, "archived-references", "tag-vocabulary.json");
 const OUTPUT_DIR = path.join(APP_DIR, "data");
 const COLLECTIONS_DIR = path.join(OUTPUT_DIR, "collections");
 const ID_PATTERN = /^\d{4}(?:-\d{2}|-ai)?$/;
@@ -39,7 +40,29 @@ async function atomicWrite(file, contents) {
   await fs.rename(temporary, file);
 }
 
-function parserContext(appSource, registry, manifest) {
+/**
+ * technique tag -> the OWASP Top 10 category tags it earns.
+ *
+ * Derived from the vocabulary rather than restated, so editing the mapping in
+ * archived-references/tag-vocabulary.json is the only place it has to change.
+ */
+function owaspMap(vocabulary) {
+  const map = {};
+  for (const category of vocabulary?.owasp?.categories || []) {
+    const id = String(category?.id || "");
+    if (!id) continue;
+    const label = `owasp-${id.replace(":", "-").toLowerCase()}`;
+    for (const tag of category?.tags || []) {
+      const key = String(tag || "").trim().toLowerCase();
+      if (!key) continue;
+      if (!map[key]) map[key] = [];
+      if (!map[key].includes(label)) map[key].push(label);
+    }
+  }
+  return map;
+}
+
+function parserContext(appSource, registry, manifest, owasp) {
   const storage = new Map();
   const context = vm.createContext({
     URL,
@@ -50,7 +73,11 @@ function parserContext(appSource, registry, manifest) {
       setItem: (key, value) => storage.set(key, String(value))
     },
     __registry: registry,
-    __manifest: manifest
+    __manifest: manifest,
+    // The OWASP mapping is passed IN rather than restated here. It is a
+    // maintainer's judgement kept in archived-references/tag-vocabulary.json,
+    // and a second copy in JavaScript would drift from it silently.
+    __owasp: owasp
   });
   const parserSource = appSource.replace(/\nloadArchive\(\);\s*$/, "\n");
   if (parserSource === appSource) throw new Error("could not isolate app parser from its browser boot call");
@@ -90,11 +117,12 @@ async function main() {
   const checkOnly = process.argv.slice(2).includes("--check");
   const unknownArgs = process.argv.slice(2).filter((argument) => argument !== "--check");
   if (unknownArgs.length) throw new Error(`unknown argument(s): ${unknownArgs.join(", ")}`);
-  const [registry, hosting, manifest, appSource] = await Promise.all([
+  const [registry, hosting, manifest, appSource, vocabulary] = await Promise.all([
     readJson(REGISTRY_PATH),
     readJson(HOSTING_PATH),
     readJson(MANIFEST_PATH),
-    fs.readFile(path.join(APP_DIR, "app.js"), "utf8")
+    fs.readFile(path.join(APP_DIR, "app.js"), "utf8"),
+    readJson(VOCABULARY_PATH)
   ]);
   if (registry?.schema !== 1 || !Array.isArray(registry.years) || !registry.years.length) {
     throw new Error("archive-years.json must contain a non-empty schema-1 years array");
@@ -112,7 +140,7 @@ async function main() {
     }
   }
 
-  const context = parserContext(appSource, registry, manifest);
+  const context = parserContext(appSource, registry, manifest, owaspMap(vocabulary));
   const parsed = [];
   for (const record of registry.years) {
     context.__year = record.id;

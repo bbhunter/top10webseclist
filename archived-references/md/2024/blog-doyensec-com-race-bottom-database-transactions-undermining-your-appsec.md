@@ -3,7 +3,7 @@ type: Article
 title: A Race to the Bottom - Database Transactions Undermining Your AppSec
 description: "Reading a row, checking it, then writing it inside a database transaction is still racy: default isolation levels take no lock on the read, so concurrent requests all pass the check. Firing parallel requests, ideally with last-byte sync or a single-packet attack, lets an attacker overdraw a balance or push business logic past its intended limits."
 resource: "https://blog.doyensec.com/2024/07/11/database-race-conditions.html"
-tags: [article, webseclist-reference, en-us, blog-doyensec-com, race-condition, toctou, database, postgres, mysql, go, http2, measurement-study, mitigation, detection]
+tags: [article, webseclist-reference, en-us, blog-doyensec-com, race-condition, toctou, database, postgres, mysql, go, http2, measurement-study, mitigation, detection, owasp-a04-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:04:01+00:00"

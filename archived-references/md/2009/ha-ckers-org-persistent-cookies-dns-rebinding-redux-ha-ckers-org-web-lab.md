@@ -3,7 +3,7 @@ type: Article
 title: Persistent Cookies and DNS Rebinding Redux ha.ckers.org web application security lab
 description: "A worked scenario for combining persistent cookies with DNS rebinding: the attacker's site plants a cookie carrying an XSS payload, forces a browser restart to release the DNS pin, then rebinds to an intranet address. The intranet server ignores the wrong Host header, reflects the cookie and runs the payload. Mitigations: TLS, host-header checks, clearing cookies on exit."
 resource: "http://ha.ckers.org/blog/20090120/persistent-cookies-and-dns-rebinding-redux/"
-tags: [article, webseclist-reference, ha-ckers-org, dns, dns-rebinding, cookie, xss, same-origin-policy, mitigation, https]
+tags: [article, webseclist-reference, ha-ckers-org, dns, dns-rebinding, cookie, xss, same-origin-policy, mitigation, https, owasp-a01-2021, owasp-a02-2021, owasp-a03-2021, owasp-a07-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T05:05:07+00:00"

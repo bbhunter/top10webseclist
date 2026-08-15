@@ -3,7 +3,7 @@ type: Repository
 title: Tool
 description: A testing tool that reproduces 18 attacks on email sender authentication, sending messages whose SPF, DKIM and DMARC verdicts differ between the component that checks them and the client that shows the From address. It lets an administrator or tester confirm whether a mail service accepts forged mail, as demonstrated against Gmail, Outlook, Yahoo and ProtonMail.
 resource: "https://github.com/chenjj/espoofer"
-tags: [repo, webseclist-reference, github, email, smtp, auth-bypass, parser-differential, dns, filter-bypass, tooling, cve]
+tags: [repo, webseclist-reference, github, email, smtp, auth-bypass, parser-differential, dns, filter-bypass, tooling, cve, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:12:58+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: How to get SQL query contents from SQL injection flaw
 description: "Working a bootcamp challenge, the author uses three injected search criteria to open, capture and close a SQL string, so part of the application's own query is returned as a result row. SQLite double-quoted strings sidestep the LIKE wildcards that blocked escaping. From there he recovered the WHERE clause and reverse engineered the PHP that built it, with no blind techniques or sqlmap."
 resource: "http://blog.kotowicz.net/2011/01/how-to-get-sql-query-contents-from-sql.html"
-tags: [article, webseclist-reference, blog-kotowicz-net, sqli, injection, info-leak, database, php, case-study, novel-technique]
+tags: [article, webseclist-reference, blog-kotowicz-net, sqli, injection, info-leak, database, php, case-study, novel-technique, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:26+00:00"

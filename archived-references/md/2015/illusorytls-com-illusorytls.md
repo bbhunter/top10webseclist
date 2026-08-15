@@ -3,7 +3,7 @@ type: Article
 title: illusoryTLS
 description: An elliptic-curve asymmetric backdoor of the Young-Yung kind planted in the RSA key generation behind a single CA certificate. The backdoored public key is computationally indistinguishable from a genuine one, yet its designer can recover the private key and, because the Web PKI cross-certifies universally, impersonate any HTTPS site, tamper with messages and decrypt traffic.
 resource: "http://www.illusorytls.com/"
-tags: [article, webseclist-reference, en, illusorytls-com, tls, https, supply-chain, auth-bypass, info-leak, novel-technique]
+tags: [article, webseclist-reference, en, illusorytls-com, tls, https, supply-chain, auth-bypass, info-leak, novel-technique, owasp-a01-2021, owasp-a02-2021, owasp-a06-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:30:32+00:00"

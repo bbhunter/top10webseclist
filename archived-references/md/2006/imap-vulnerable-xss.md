@@ -3,7 +3,7 @@ type: Whitepaper
 title: IMAP Vulnerable to XSS
 description: "Wade Alcorn's Inter-Protocol Communication paper shows two protocols can meaningfully talk when the target tolerates errors and the carrier can encapsulate it. An HTTP multipart POST from a browser delivers valid IMAP3 commands to port 220; the server echoes unrecognised commands verbatim, reflecting a script tag back into the browser for cross-protocol XSS, fingerprinting and brute force."
 resource: "http://www.ngssoftware.com/research/papers/InterProtocolCommunication.pdf"
-tags: [whitepaper, webseclist-reference, novel-technique, xss, http, injection, parser-differential, sop-bypass, detection]
+tags: [whitepaper, webseclist-reference, novel-technique, xss, http, injection, parser-differential, sop-bypass, detection, owasp-a01-2021, owasp-a03-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T15:35:18+00:00"

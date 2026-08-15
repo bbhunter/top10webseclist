@@ -3,7 +3,7 @@ type: Article
 title: "XXE-scape through the front door: circumventing the firewall with HTTP request smuggling"
 description: "Behind a firewall that blocked outbound HTTP, the researcher used local-DTD XXE tricks to exfiltrate internal data over DNS, then chained the XXE with an HTTP request smuggling desync on a whitelisted host. Smuggling let an attacker store and later read the internal responses (for example http://127.0.0.1/api/secret) in their own profile, escalating a low-impact bug into sensitive data disclosure."
 resource: "https://honoki.net/2020/03/18/xxe-scape-through-the-front-door-circumventing-the-firewall-with-http-request-smuggling/"
-tags: [article, webseclist-reference, en-US, honoki-net, xxe, request-smuggling, desync, ssrf, info-leak, waf-bypass, attack-chain, bug-bounty]
+tags: [article, webseclist-reference, en-US, honoki-net, xxe, request-smuggling, desync, ssrf, info-leak, waf-bypass, attack-chain, bug-bounty, owasp-a03-2021, owasp-a05-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:27:23+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: plORMbing your Django ORM
 description: "User JSON passed into QuerySet.filter(**request.data) lets an attacker choose column and operator, so password__startswith turns response length into a character-by-character oracle. Relational lookups go further: created_by__user__password crosses models, a many-to-many loop like departments__employees reaches unrelated users, and categories__articles adds a join alias bypassing an is_secret=False filter. A regex tripping MySQL's regexp_time_limit gives an error oracle."
 resource: "https://www.elttam.com/blog/plormbing-your-django-orm/"
-tags: [article, webseclist-reference, en, elttam-com, info-leak, django, python, database, mysql, filter-bypass, algorithmic-complexity, rest-api]
+tags: [article, webseclist-reference, en, elttam-com, info-leak, django, python, database, mysql, filter-bypass, algorithmic-complexity, rest-api, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:05+00:00"

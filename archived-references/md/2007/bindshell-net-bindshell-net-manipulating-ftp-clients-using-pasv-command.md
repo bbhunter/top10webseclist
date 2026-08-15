@@ -3,7 +3,7 @@ type: Article
 title: "BindShell.Net: Manipulating FTP Clients Using The PASV Command"
 description: "FTP clients follow the IP address a server returns in its PASV reply, so a malicious FTP server can redirect a browser's data connection to any host and port. This defeats Firefox port banning, extending JavaScript port scanning to every TCP port, and the same-origin handling permits banner grabbing off-origin; services returning no banner are fingerprinted by how long they hold an idle connection open."
 resource: "http://bindshell.net/papers/ftppasv"
-tags: [article, webseclist-reference, bindshell-net, ftp, javascript, sop-bypass, filter-bypass, timing-attack, info-leak, novel-technique]
+tags: [article, webseclist-reference, bindshell-net, ftp, javascript, sop-bypass, filter-bypass, timing-attack, info-leak, novel-technique, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:21:18+00:00"

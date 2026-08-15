@@ -3,7 +3,7 @@ type: Article
 title: Hacking AWS Cognito Misconfigurations
 description: "A login-only application exposed its AWS Cognito app client and pool identifiers in the client-side JavaScript SDK, and Cognito still permitted self sign-up. The new account's token minted temporary AWS credentials with full Lambda rights, so rewriting a Lambda function to print its environment variables leaked privileged keys and led to account takeover."
 resource: "https://notsosecure.com/hacking-aws-cognito-misconfigurations/"
-tags: [article, webseclist-reference, en, notsosecure, privilege-escalation, auth-bypass, info-leak, aws, jwt, javascript, attack-chain, case-study]
+tags: [article, webseclist-reference, en, notsosecure, privilege-escalation, auth-bypass, info-leak, aws, jwt, javascript, attack-chain, case-study, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:06+00:00"

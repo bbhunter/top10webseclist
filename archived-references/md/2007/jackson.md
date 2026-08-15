@@ -3,7 +3,7 @@ type: Whitepaper
 title: jackson
 description: "Collin Jackson, Dan Boneh and John Mitchell name the Transaction Generator: malware that waits for the user to authenticate, then issues transactions from the user's own browser, cookie and IP, so stronger authentication and back-end risk analytics see nothing unusual. Defence must move from credentials to transaction integrity and confirmation, including in CardSpace and OpenID."
 resource: "https://www.usenix.org/legacy/event/hotsec07/tech/full_papers/jackson/jackson.pdf"
-tags: [whitepaper, webseclist-reference, browser-extension, phishing, auth-bypass, cookie, openid, csrf, mitigation, novel-technique]
+tags: [whitepaper, webseclist-reference, browser-extension, phishing, auth-bypass, cookie, openid, csrf, mitigation, novel-technique, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:17+00:00"

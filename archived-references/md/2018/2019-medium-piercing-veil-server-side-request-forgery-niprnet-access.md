@@ -3,7 +3,7 @@ type: Article
 title: "Piercing the Veil: Server Side Request Forgery to NIPRNet access"
 description: Two Department of Defense Jira instances exposed the unauthenticated oauth icon-uri endpoint to server-side request forgery, which was used to read AWS instance metadata and to reach internal services on NIPRNet. Verbose stack traces and response-time differences acted as an oracle for scanning internal ports and protocols.
 resource: "https://medium.com/bugbountywriteup/piercing-the-veil-server-side-request-forgery-to-niprnet-access-c358fd5e249a"
-tags: [article, webseclist-reference, en, medium, ssrf, info-leak, aws, timing-attack, http, bug-bounty, case-study]
+tags: [article, webseclist-reference, en, medium, ssrf, info-leak, aws, timing-attack, http, bug-bounty, case-study, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:04+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Unveiling the Prototype Pollution Gadgets Finder
 description: Automates discovery of server-side prototype pollution gadgets by polluting every field of a JSON request with payloads that set optional config properties of Node.js libraries, confirming them out-of-band via callbacks and then reverting them. Turns a pollution source into SSRF, data exfiltration or silent email interception.
 resource: "https://blog.doyensec.com/2024/02/17/server-side-prototype-pollution-Gadgets-scanner.html"
-tags: [article, webseclist-reference, en-us, blog-doyensec-com, prototype-pollution, gadget-chain, ssrf, nodejs, email, info-leak, javascript, tooling]
+tags: [article, webseclist-reference, en-us, blog-doyensec-com, prototype-pollution, gadget-chain, ssrf, nodejs, email, info-leak, javascript, tooling, owasp-a08-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:50+00:00"

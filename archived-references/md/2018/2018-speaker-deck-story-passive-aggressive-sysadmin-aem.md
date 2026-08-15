@@ -3,7 +3,7 @@ type: Slides
 title: A story of the passive aggressive sysadmin of AEM
 description: "Adobe Experience Manager's dispatcher filter can be walked past by appending a selector such as ?.css to a blocked path, exposing CRX Explorer, Package Manager, querybuilder and the OSGi console on live sites. The talk chains that into disk-usage listings, an opensocial proxy SSRF, stale Flash files and a cracked admin hash for code execution."
 resource: "https://speakerdeck.com/fransrosen/a-story-of-the-passive-aggressive-sysadmin-of-aem"
-tags: [slides, webseclist-reference, en, speaker-deck, filter-bypass, auth-bypass, ssrf, info-leak, rce, reverse-proxy, flash, cve, bug-bounty]
+tags: [slides, webseclist-reference, en, speaker-deck, filter-bypass, auth-bypass, ssrf, info-leak, rce, reverse-proxy, flash, cve, bug-bounty, owasp-a01-2021, owasp-a05-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:43+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Blog on Gopherus Tool
 description: "Gopherus builds gopher:// payloads that convert a server-side request forgery into remote code execution against back-end services. It covers MySQL, FastCGI, Memcached, Redis, Zabbix and SMTP, writing cron jobs or PHP web shells and abusing unsafe deserialization of cached data."
 resource: "https://spyclub.tech/2018/08/14/2018-08-14-blog-on-gopherus/"
-tags: [article, webseclist-reference, en, spyclub, ssrf, rce, deserialization, tooling, redis, mysql, smtp, php, command-injection]
+tags: [article, webseclist-reference, en, spyclub, ssrf, rce, deserialization, tooling, redis, mysql, smtp, php, command-injection, owasp-a03-2021, owasp-a08-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:55+00:00"

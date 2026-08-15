@@ -3,7 +3,7 @@ type: Article
 title: A New Type of Phishing Attack
 description: "A generic 2022 article on phishing categories - spear phishing, domain spoofing, whaling, smishing and vishing - published at the URL the list cites for Aza Raskin's 2010 tabnabbing research. It describes each category and general defences, and mentions neither tabs nor favicons."
 resource: "http://www.azarask.in/blog/post/a-new-type-of-phishing-attack/"
-tags: [article, webseclist-reference, en, azarask, ui-redress, javascript, novel-technique]
+tags: [article, webseclist-reference, en, azarask, ui-redress, javascript, novel-technique, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:02:58+00:00"

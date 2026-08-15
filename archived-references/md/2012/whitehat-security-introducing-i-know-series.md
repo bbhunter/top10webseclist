@@ -3,7 +3,7 @@ type: Article
 title: Introducing the “I Know...” series
 description: The opening post of a WhiteHat Security series on what any website can learn about its visitors. It revisits earlier tricks such as visited-link history sniffing, autocomplete theft and login detection, notes that most are now fixed, and argues that many lesser-known techniques remain and combine into reliable deanonymization covering name, employer, location and browsing habits.
 resource: "https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/introducing-the-i-know-series/"
-tags: [article, webseclist-reference, en, whitehat-security, info-leak, javascript, side-channel, xsleak, clickjacking, csrf, survey]
+tags: [article, webseclist-reference, en, whitehat-security, info-leak, javascript, side-channel, xsleak, clickjacking, csrf, survey, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:06:44+00:00"

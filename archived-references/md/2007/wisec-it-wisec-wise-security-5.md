@@ -3,7 +3,7 @@ type: Article
 title: Wisec - The WIse SECurity
 description: "Stefano Di Paola and Giorgio Fedon save bandwidth in blind SQL injection by reading response size instead of the body. Apache refuses Content-Length on HEAD but answers Range: bytes=-1 with a Content-Range that reveals it, while IIS 6.0 ignores Range yet returns Content-Length on HEAD. A per-server lookup table is given; a later comment adds Tomcat 6.0.26."
 resource: "http://www.wisec.it/sectou.php?id=472f952d79293"
-tags: [article, webseclist-reference, wisec-it, sqli, http, side-channel, database, tooling, novel-technique]
+tags: [article, webseclist-reference, wisec-it, sqli, http, side-channel, database, tooling, novel-technique, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:42+00:00"

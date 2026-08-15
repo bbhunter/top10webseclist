@@ -3,7 +3,7 @@ type: Article
 title: "Pre-hijacked accounts: An Empirical Study of Security Failures in User Account Creation on the Web"
 description: "Account pre-hijacking: an attacker knowing only a victim's email address creates or primes an account at a service before the victim signs up, then regains access after the victim registers or recovers it. Five variants abuse the interaction of classic passwords with federated sign-in; 35 of 75 popular services tested were vulnerable, often invisibly to the victim."
 resource: "https://arxiv.org/abs/2205.10174"
-tags: [article, webseclist-reference, en, arxiv-org, auth-bypass, session-fixation, sso, oauth, openid, email, measurement-study, novel-technique]
+tags: [article, webseclist-reference, en, arxiv-org, auth-bypass, session-fixation, sso, oauth, openid, email, measurement-study, novel-technique, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:06+00:00"

@@ -3,7 +3,7 @@ type: Whitepaper
 title: us 15 Nafeez Dom Flow Untangling The DOM For More Easy Juicy Bugs
 description: Hookish instruments DOM sources and sinks in a live page and tags data as it flows, so tainted values arriving at innerHTML, document.write or eval are flagged automatically. It is applied to XHR responses rendered as HTML, DOM clobbering through window.name to escape an iframe sandbox, window.opener tab hijacking, and unsafe String.replace in templating engines.
 resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Nafeez-Dom-Flow-Untangling-The-DOM-For-More-Easy-Juicy-Bugs.pdf"
-tags: [whitepaper, webseclist-reference, dom-clobbering, xss, dom, sandbox-escape, iframe, open-redirect, javascript, tooling, dynamic-analysis]
+tags: [whitepaper, webseclist-reference, dom-clobbering, xss, dom, sandbox-escape, iframe, open-redirect, javascript, tooling, dynamic-analysis, owasp-a03-2021, owasp-a04-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T16:01:22+00:00"

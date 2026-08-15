@@ -3,7 +3,7 @@ type: Article
 title: Black Hat USA 2016
 description: "An attacker on a shared network forces a victim's browser or OS to load a hostile proxy auto-config file, whose JavaScript is handed the full URL of every request including HTTPS ones, leaking paths and the credentials or session tokens carried in them."
 resource: "https://blackhat.com/us-16/briefings.html#crippling-https-with-unholy-pac"
-tags: [article, webseclist-reference, blackhat-com, info-leak, proxy, https, tls, javascript, dos, novel-technique]
+tags: [article, webseclist-reference, blackhat-com, info-leak, proxy, https, tls, javascript, dos, novel-technique, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:03:55+00:00"

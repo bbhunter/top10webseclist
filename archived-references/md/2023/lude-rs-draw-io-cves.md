@@ -3,7 +3,7 @@ type: Article
 title: draw.io CVEs
 description: "Two draw.io flaws found by source review: the /proxy endpoint's blocklist of private hosts is defeated by http://0:8080/, giving SSRF; and an isAbsolute check returns false when URI parsing throws, so the malformed https:// @evil.com (note the space) passes as a relative path while Chrome still follows it, forwarding the victim's GitHub OAuth token to the attacker."
 resource: "https://lude.rs/h4ck1ng/draw.io_cves.html"
-tags: [article, webseclist-reference, lude-rs, ssrf, open-redirect, oauth, parser-differential, url-parsing, filter-bypass, info-leak, java, cve]
+tags: [article, webseclist-reference, lude-rs, ssrf, open-redirect, oauth, parser-differential, url-parsing, filter-bypass, info-leak, java, cve, owasp-a04-2021, owasp-a05-2021, owasp-a07-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:33:35+00:00"

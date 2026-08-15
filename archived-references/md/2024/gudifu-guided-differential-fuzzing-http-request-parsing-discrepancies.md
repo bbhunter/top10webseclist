@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Gudifu: Guided Differential Fuzzing for HTTP Request Parsing Discrepancies"
 description: Chains of reverse proxies, caches and API gateways each parse an HTTP request, and small disagreements between them enable request smuggling and cache poisoning. This paper presents Gudifu, a graybox differential fuzzer that uses coverage feedback to probe proxy parsing behaviour and searches the entire request rather than one component. It finds more discrepancies than prior blackbox fuzzers and derives working access-control bypass, cache poisoning and smuggling attacks.
 resource: "https://raid2024.github.io/papers/raid2024-14.pdf"
-tags: [whitepaper, webseclist-reference, fuzzing, parser-differential, request-smuggling, cache-poisoning, reverse-proxy, http, auth-bypass]
+tags: [whitepaper, webseclist-reference, fuzzing, parser-differential, request-smuggling, cache-poisoning, reverse-proxy, http, auth-bypass, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:37:38+00:00"

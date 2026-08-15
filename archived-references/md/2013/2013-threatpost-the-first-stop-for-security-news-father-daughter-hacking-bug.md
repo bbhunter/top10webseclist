@@ -3,7 +3,7 @@ type: Article
 title: Father-Daughter Hacking Team Finds Valuable Facebook Bug
 description: "Renee Wysopal, interning at Veracode with no security background, was shown a web proxy by her father Chris and went after Facebook's privacy and permission model. She noticed a blocked user's posts still on her profile, then confirmed on a test account and a friend's account that blocking did not stop messages reaching the blocker. Facebook paid $2,500."
 resource: "http://web.archive.org/web/20160507023636/http://threatpost.com/father-daughter-hacking-team-finds-valuable-facebook-bug/102877"
-tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n, bug-bounty, auth-bypass, case-study, info-leak]
+tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n, bug-bounty, auth-bypass, case-study, info-leak, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:02:59+00:00"

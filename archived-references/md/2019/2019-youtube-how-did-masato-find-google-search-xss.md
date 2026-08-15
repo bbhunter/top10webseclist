@@ -3,7 +3,7 @@ type: Video
 title: How did Masato find the Google Search XSS?
 description: "Explains how a Google Search XSS was found: fuzzing pairs of HTML tags through different parsing paths and diffing what a sandboxed iframe, DOMParser and createHTMLDocument produce, which exposes noscript and noembed parsing differently when scripting is disabled. The resulting parser differential mutates sanitized markup into script execution and bypassed two sanitizers."
 resource: "https://www.youtube.com/watch?v=gVrdE6g_fa8"
-tags: [video, webseclist-reference, youtube, mutation-xss, parser-differential, sanitizer-bypass, xss, fuzzing, dom, iframe, javascript, case-study]
+tags: [video, webseclist-reference, youtube, mutation-xss, parser-differential, sanitizer-bypass, xss, fuzzing, dom, iframe, javascript, case-study, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:51:13+00:00"

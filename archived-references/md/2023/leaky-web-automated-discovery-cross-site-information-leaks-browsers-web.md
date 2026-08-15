@@ -3,7 +3,7 @@ type: Whitepaper
 title: "The Leaky Web: Automated Discovery of Cross-Site Information Leaks in Browsers and the Web"
 description: An automated framework drives Chromium, Firefox and WebKit over a large space of crafted HTTP responses and browser APIs, summarising the results as decision trees, and finds 280 cross-site observation channels plus 11 browser bugs. Its scanning pipeline then shows 15% of top sites leak past visits, 34% leak cookie-banner acceptance and 77 of 100 leak login state.
 resource: "https://trouge.net/papers/xsleaks_sp2023.pdf"
-tags: [whitepaper, webseclist-reference, xsleak, side-channel, info-leak, same-origin-policy, cookie, iframe, measurement-study, large-scale-scan, tooling, cve]
+tags: [whitepaper, webseclist-reference, xsleak, side-channel, info-leak, same-origin-policy, cookie, iframe, measurement-study, large-scale-scan, tooling, cve, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:48+00:00"

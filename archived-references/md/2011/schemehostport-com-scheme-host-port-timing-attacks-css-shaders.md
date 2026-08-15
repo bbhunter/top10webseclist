@@ -3,7 +3,7 @@ type: Article
 title: "Scheme/Host/Port: Timing Attacks on CSS Shaders"
 description: "Barth argues the CSS Shaders proposal repeats WebGL's timing flaw: shader run time depends on pixel values, so a site can read content it may display but not read, such as a Facebook Like button or visited-link styling. MozBeforePaint, MozAfterPaint and requestAnimationFrame all expose paint timing, making the spec's claim that timing is hard to measure dubious."
 resource: "http://www.schemehostport.com/2011/12/timing-attacks-on-css-shaders.html"
-tags: [article, webseclist-reference, schemehostport-com, side-channel, timing-attack, css, info-leak, same-origin-policy, xsleak, mitigation]
+tags: [article, webseclist-reference, schemehostport-com, side-channel, timing-attack, css, info-leak, same-origin-policy, xsleak, mitigation, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:21:49+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "Hacking Gemini: A Multi-Layered Approach"
 description: Gemini renders model output through several layers, and its linkifier does not count an exclamation mark as part of a hostname, so injected text can flip a trusted link into a Markdown image. Chained with indirect prompt injection and a bypass of the escaping applied on export, it exfiltrates workspace data such as mail, calendar and drive content.
 resource: "https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md"
-tags: [article, webseclist-reference, en, valentino-s-issue-tracker, prompt-injection, sanitizer-bypass, info-leak, filter-bypass, csp, llm, ai-agent, attack-chain, bug-bounty]
+tags: [article, webseclist-reference, en, valentino-s-issue-tracker, prompt-injection, sanitizer-bypass, info-leak, filter-bypass, csp, llm, ai-agent, attack-chain, bug-bounty, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:13+00:00"

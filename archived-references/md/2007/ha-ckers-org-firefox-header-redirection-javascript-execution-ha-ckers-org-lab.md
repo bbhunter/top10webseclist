@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab - Archive » Firefox Header Redirection JavaScript Execution
 description: A timed redirect delivered in an HTTP Refresh header can point at a JavaScript function instead of a URL, and Firefox executes it; IE and Opera did not. RSnake rates it useful mainly where response splitting leaves little room, or to obscure where the script actually fires. A demo CGI is linked.
 resource: "http://ha.ckers.org/blog/20070309/firefox-header-redirection-javascript-execution/"
-tags: [article, webseclist-reference, ha-ckers-org, xss, header-injection, response-splitting, javascript, open-redirect, novel-technique]
+tags: [article, webseclist-reference, ha-ckers-org, xss, header-injection, response-splitting, javascript, open-redirect, novel-technique, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:54:45+00:00"

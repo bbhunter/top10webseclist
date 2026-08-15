@@ -3,7 +3,7 @@ type: Article
 title: Bonus Safari XXE (only affecting Safari 4 Beta)
 description: A WebKit regression in the Safari 4 Beta reopened XML external entity resolution, letting a crafted XML document read and exfiltrate local files. The regression was noticed through a collision with the Chrome sandbox and fixed before the Safari 4 final release, so no production browser shipped it.
 resource: "https://scarybeastsecurity.blogspot.com/2009/06/bonus-safari-xxe-only-affecting-safari.html"
-tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com, xxe, info-leak, sop-bypass, same-origin-policy, novel-technique]
+tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com, xxe, info-leak, sop-bypass, same-origin-policy, novel-technique, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:29+00:00"

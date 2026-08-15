@@ -3,7 +3,7 @@ type: Whitepaper
 title: Pass-the-Passkey Family of Attacks (Slides)
 description: Slides for the Pass-the-Passkey research. Windows 11 writes WebAuthn assertions to an event log readable by unprivileged remote users, while Entra ID omits replay protection (no single-use challenge or counter check), so a captured assertion is replayed to impersonate privileged identities and bypass phishing-resistant MFA (CVE-2026-34348). Further techniques hook the WebAuthn API to relay assertions, spoof the Credential UI window handle to flood prompts, and exfiltrate synced passkeys.
 resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Grafnetter-Pass-the-Passkey-Slides.pdf"
-tags: [whitepaper, webseclist-reference, passkeys, webauthn, auth-bypass, phishing, azure, cve, openid, ui-redress]
+tags: [whitepaper, webseclist-reference, passkeys, webauthn, auth-bypass, phishing, azure, cve, openid, ui-redress, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:08:14+00:00"

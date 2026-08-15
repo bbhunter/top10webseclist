@@ -3,7 +3,7 @@ type: Article
 title: "CSS: the bomb inside your inbox"
 description: "Webmail sanitizers and browsers disagree about CSS. Nested href attribute selectors, sped by a clipboard-paste race, leak a Medium login token five characters at a time; when CSP blocks requests, @font-face descent-override plus animations form a font-height oracle and inset reveals the matching link. Fastmail's CSSOM filter re-serialises \\7d\\2a into }*, Outlook's accepts @media --narrow-window;/*\"*/ arbitrary CSS, giving click hijacking, prompt injection and a keylogger."
 resource: "https://portswigger.net/research/css-the-bomb-inside-your-inbox"
-tags: [article, webseclist-reference, portswigger-research, css-injection, css, sanitizer-bypass, email, prompt-injection, info-leak, ui-redress, xsleak, llm, phishing]
+tags: [article, webseclist-reference, portswigger-research, css-injection, css, sanitizer-bypass, email, prompt-injection, info-leak, ui-redress, xsleak, llm, phishing, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:05:54+00:00"

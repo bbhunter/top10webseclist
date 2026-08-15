@@ -3,7 +3,7 @@ type: Article
 title: Experimental Security Analysis of the App Model in Business Collaboration Platforms
 description: An analysis of the third-party app model in Slack and Microsoft Teams finding that its access control violates least privilege and complete mediation. A malicious app can eavesdrop on messages it has no permission to read, place fake video calls, and merge code into connected repositories without user approval.
 resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/chen-yunang-experimental"
-tags: [article, webseclist-reference, en, usenix-org, privilege-escalation, auth-bypass, info-leak, oauth, rest-api, case-study, measurement-study]
+tags: [article, webseclist-reference, en, usenix-org, privilege-escalation, auth-bypass, info-leak, oauth, rest-api, case-study, measurement-study, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:06+00:00"

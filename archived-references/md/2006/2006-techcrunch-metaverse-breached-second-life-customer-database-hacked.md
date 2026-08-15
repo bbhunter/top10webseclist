@@ -3,7 +3,7 @@ type: Article
 title: "Metaverse breached: Second Life customer database hacked"
 description: Linden Lab disclosed that a Second Life database holding unencrypted names and addresses, plus encrypted passwords and payment data, was breached; every user was forced to change passwords. A source told TechCrunch the entry came through an exploit in Tikiwiki, a third-party tool the company has since dropped. The piece argues virtual-world data deserves the same protection as any other.
 resource: "http://www.techcrunch.com/2006/09/08/metaverse-breached-second-life-customer-database-hacked/"
-tags: [article, webseclist-reference, en, techcrunch, case-study, info-leak, database, supply-chain, data-breach]
+tags: [article, webseclist-reference, en, techcrunch, case-study, info-leak, database, supply-chain, data-breach, owasp-a06-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:45:26+00:00"

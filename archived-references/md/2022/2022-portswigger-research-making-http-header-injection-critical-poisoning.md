@@ -3,7 +3,7 @@ type: Article
 title: Making HTTP header injection critical via response queue poisoning
 description: "Turns a CRLF header injection into a full HTTP desync: the injected headers cleanly terminate the first request and set Connection keep-alive, so a second attacker-controlled request can be appended. That poisons the back-end response queue, delivering other users' responses to the attacker, or poisons a shared cache."
 resource: "https://portswigger.net/research/making-http-header-injection-critical-via-response-queue-poisoning"
-tags: [article, webseclist-reference, portswigger-research, header-injection, desync, request-smuggling, response-splitting, cache-poisoning, http, reverse-proxy, proxy, bug-bounty]
+tags: [article, webseclist-reference, portswigger-research, header-injection, desync, request-smuggling, response-splitting, cache-poisoning, http, reverse-proxy, proxy, bug-bounty, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:00+00:00"

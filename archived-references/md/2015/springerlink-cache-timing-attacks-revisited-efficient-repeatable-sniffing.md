@@ -3,7 +3,7 @@ type: Article
 title: "Cache Timing Attacks Revisited: Efficient and Repeatable Browser History, OS and Network Sniffing"
 description: Timing how fast a browser fetches a resource shows whether it was already cached, revealing where the victim has been. Driving the probes from Web Workers at roughly 300 requests a second, with timeouts so probing does not itself pollute the cache, makes the attack fast and repeatable through private browsing, HTTPS and corporate proxies.
 resource: "https://doi.org/10.1007/978-3-319-18467-8_7"
-tags: [article, webseclist-reference, en, springerlink, cache, timing-attack, side-channel, xsleak, info-leak, https, proxy, measurement-study]
+tags: [article, webseclist-reference, en, springerlink, cache, timing-attack, side-channel, xsleak, info-leak, https, proxy, measurement-study, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:23+00:00"

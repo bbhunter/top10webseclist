@@ -3,7 +3,7 @@ type: Article
 title: An Attack on SSL Client Certificates
 description: "Shows SSL client certificates do not stop a server-impersonating attacker. Mallory completes a handshake without validating Alice's certificate, returns a page holding attacker script plus an iframe to the real site, then closes the connection so the iframe renegotiates legitimately. Same-origin access from the injected script then reads the mutually authenticated frame."
 resource: "https://web.archive.org/web/20130921173625/https://isecpartners.com/blog/2012/december/an-attack-on-ssl-client-certificates.aspx"
-tags: [article, webseclist-reference, en, isecpartners-com, tls, https, same-origin-policy, iframe, auth-bypass, cache-poisoning, novel-technique, mitigation]
+tags: [article, webseclist-reference, en, isecpartners-com, tls, https, same-origin-policy, iframe, auth-bypass, cache-poisoning, novel-technique, mitigation, owasp-a01-2021, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:30+00:00"

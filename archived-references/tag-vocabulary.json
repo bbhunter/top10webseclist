@@ -1,0 +1,746 @@
+{
+ "aliases": {
+  "wasm": "webassembly"
+ },
+ "owasp": {
+  "categories": [
+   {
+    "id": "A01:2021",
+    "tags": [
+     "auth-bypass",
+     "cors",
+     "csrf",
+     "directory-listing",
+     "idor",
+     "lfi",
+     "mass-assignment",
+     "path-traversal",
+     "privilege-escalation",
+     "same-origin-policy",
+     "sop-bypass"
+    ],
+    "title": "Broken Access Control"
+   },
+   {
+    "id": "A02:2021",
+    "tags": [
+     "charset",
+     "crypto",
+     "hash-collision",
+     "https",
+     "predictable-token",
+     "tls"
+    ],
+    "title": "Cryptographic Failures"
+   },
+   {
+    "id": "A03:2021",
+    "tags": [
+     "argument-injection",
+     "blind-xss",
+     "command-injection",
+     "css-injection",
+     "csti",
+     "header-injection",
+     "injection",
+     "lfi",
+     "mutation-xss",
+     "nosqli",
+     "prompt-injection",
+     "response-splitting",
+     "sqli",
+     "ssti",
+     "xss",
+     "xxe"
+    ],
+    "title": "Injection"
+   },
+   {
+    "id": "A04:2021",
+    "tags": [
+     "abuse-of-functionality",
+     "algorithmic-complexity",
+     "captcha-bypass",
+     "clickjacking",
+     "open-redirect",
+     "phishing",
+     "race-condition",
+     "toctou",
+     "ui-redress",
+     "user-enumeration"
+    ],
+    "title": "Insecure Design"
+   },
+   {
+    "id": "A05:2021",
+    "tags": [
+     "content-type",
+     "csp",
+     "docker",
+     "filter-bypass",
+     "kubernetes",
+     "mime",
+     "sanitizer-bypass",
+     "waf",
+     "waf-bypass"
+    ],
+    "title": "Security Misconfiguration"
+   },
+   {
+    "id": "A06:2021",
+    "tags": [
+     "dependency-confusion",
+     "supply-chain",
+     "typosquatting"
+    ],
+    "title": "Vulnerable and Outdated Components"
+   },
+   {
+    "id": "A07:2021",
+    "tags": [
+     "cookie",
+     "identity",
+     "jwt",
+     "oauth",
+     "openid",
+     "passkeys",
+     "saml",
+     "session-fixation",
+     "sso",
+     "webauthn"
+    ],
+    "title": "Identification and Authentication Failures"
+   },
+   {
+    "id": "A08:2021",
+    "tags": [
+     "ci-cd",
+     "class-pollution",
+     "deserialization",
+     "dom-clobbering",
+     "gadget-chain",
+     "github-actions",
+     "prototype-pollution"
+    ],
+    "title": "Software and Data Integrity Failures"
+   },
+   {
+    "id": "A09:2021",
+    "tags": [
+     "detection"
+    ],
+    "title": "Security Logging and Monitoring Failures"
+   },
+   {
+    "id": "A10:2021",
+    "tags": [
+     "dns-rebinding",
+     "ssrf"
+    ],
+    "title": "Server-Side Request Forgery"
+   }
+  ],
+  "edition": "2021"
+ },
+ "schema": 1,
+ "tags": {
+  "abuse-of-functionality": {
+   "documents": 66
+  },
+  "active-directory": {
+   "documents": 1
+  },
+  "activex": {
+   "documents": 12
+  },
+  "ai-agent": {
+   "documents": 31
+  },
+  "algorithmic-complexity": {
+   "documents": 29
+  },
+  "android": {
+   "documents": 33
+  },
+  "angular": {
+   "documents": 3
+  },
+  "argument-injection": {
+   "documents": 1
+  },
+  "aspnet": {
+   "documents": 46
+  },
+  "attack-chain": {
+   "documents": 181
+  },
+  "auth-bypass": {
+   "documents": 302
+  },
+  "autofill": {
+   "documents": 1
+  },
+  "aws": {
+   "documents": 30
+  },
+  "azure": {
+   "documents": 11
+  },
+  "blind-xss": {
+   "documents": 1
+  },
+  "blockchain": {
+   "documents": 2
+  },
+  "browser-extension": {
+   "documents": 71
+  },
+  "browser-fingerprinting": {
+   "documents": 23
+  },
+  "bug-bounty": {
+   "documents": 165
+  },
+  "cache": {
+   "documents": 66
+  },
+  "cache-deception": {
+   "documents": 10
+  },
+  "cache-poisoning": {
+   "documents": 79
+  },
+  "captcha-bypass": {
+   "documents": 2
+  },
+  "case-study": {
+   "documents": 272
+  },
+  "cdn": {
+   "documents": 45
+  },
+  "charset": {
+   "documents": 38
+  },
+  "ci-cd": {
+   "documents": 27
+  },
+  "class-pollution": {
+   "documents": 5
+  },
+  "clickjacking": {
+   "documents": 56
+  },
+  "clipboard": {
+   "documents": 1
+  },
+  "cloudflare": {
+   "documents": 11
+  },
+  "command-injection": {
+   "documents": 51
+  },
+  "content-type": {
+   "documents": 39
+  },
+  "cookie": {
+   "documents": 146
+  },
+  "cors": {
+   "documents": 29
+  },
+  "crypto": {
+   "documents": 2
+  },
+  "csp": {
+   "documents": 55
+  },
+  "csrf": {
+   "documents": 141
+  },
+  "css": {
+   "documents": 72
+  },
+  "css-injection": {
+   "documents": 28
+  },
+  "csti": {
+   "documents": 4
+  },
+  "cve": {
+   "documents": 249
+  },
+  "data-breach": {
+   "documents": 3
+  },
+  "database": {
+   "documents": 61
+  },
+  "deanonymization": {
+   "documents": 17
+  },
+  "defence": {
+   "documents": 59
+  },
+  "dependency-confusion": {
+   "documents": 1
+  },
+  "deserialization": {
+   "documents": 77
+  },
+  "desync": {
+   "documents": 35
+  },
+  "detection": {
+   "documents": 119
+  },
+  "django": {
+   "documents": 11
+  },
+  "dns": {
+   "documents": 86
+  },
+  "dns-rebinding": {
+   "documents": 30
+  },
+  "docker": {
+   "documents": 4
+  },
+  "dom": {
+   "documents": 136
+  },
+  "dom-clobbering": {
+   "documents": 14
+  },
+  "domain-takeover": {
+   "documents": 2
+  },
+  "dos": {
+   "documents": 106
+  },
+  "dotnet": {
+   "documents": 66
+  },
+  "drupal": {
+   "documents": 4
+  },
+  "dynamic-analysis": {
+   "documents": 75
+  },
+  "elasticsearch": {
+   "documents": 3
+  },
+  "electron": {
+   "documents": 10
+  },
+  "email": {
+   "documents": 50
+  },
+  "embedded-device": {
+   "documents": 6
+  },
+  "encoding": {
+   "documents": 79
+  },
+  "express": {
+   "documents": 8
+  },
+  "file-upload": {
+   "documents": 88
+  },
+  "file-write": {
+   "documents": 1
+  },
+  "filter-bypass": {
+   "documents": 297
+  },
+  "flash": {
+   "documents": 56
+  },
+  "flask": {
+   "documents": 4
+  },
+  "formal-analysis": {
+   "documents": 32
+  },
+  "ftp": {
+   "documents": 10
+  },
+  "fuzzing": {
+   "documents": 49
+  },
+  "gadget-chain": {
+   "documents": 93
+  },
+  "gcp": {
+   "documents": 11
+  },
+  "github": {
+   "documents": 23
+  },
+  "github-actions": {
+   "documents": 18
+  },
+  "gitlab": {
+   "documents": 7
+  },
+  "go": {
+   "documents": 14
+  },
+  "graphql": {
+   "documents": 4
+  },
+  "hash-collision": {
+   "documents": 6
+  },
+  "header-injection": {
+   "documents": 66
+  },
+  "http": {
+   "documents": 208
+  },
+  "http2": {
+   "documents": 26
+  },
+  "http3": {
+   "documents": 5
+  },
+  "https": {
+   "documents": 103
+  },
+  "identity": {
+   "documents": 1
+  },
+  "idor": {
+   "documents": 27
+  },
+  "iframe": {
+   "documents": 133
+  },
+  "info-leak": {
+   "documents": 591
+  },
+  "injection": {
+   "documents": 121
+  },
+  "ios": {
+   "documents": 16
+  },
+  "jailbreak": {
+   "documents": 1
+  },
+  "java": {
+   "documents": 120
+  },
+  "javascript": {
+   "documents": 381
+  },
+  "javascript-runtime": {
+   "documents": 21
+  },
+  "jenkins": {
+   "documents": 2
+  },
+  "joomla": {
+   "documents": 6
+  },
+  "jwt": {
+   "documents": 20
+  },
+  "kubernetes": {
+   "documents": 4
+  },
+  "laravel": {
+   "documents": 1
+  },
+  "large-scale-scan": {
+   "documents": 133
+  },
+  "lfi": {
+   "documents": 31
+  },
+  "llm": {
+   "documents": 33
+  },
+  "load-balancer": {
+   "documents": 16
+  },
+  "malicious-server": {
+   "documents": 1
+  },
+  "mass-assignment": {
+   "documents": 11
+  },
+  "measurement-study": {
+   "documents": 225
+  },
+  "memory-corruption": {
+   "documents": 2
+  },
+  "mime": {
+   "documents": 42
+  },
+  "mitigation": {
+   "documents": 170
+  },
+  "mongodb": {
+   "documents": 6
+  },
+  "mssql": {
+   "documents": 11
+  },
+  "mutation-xss": {
+   "documents": 11
+  },
+  "mysql": {
+   "documents": 24
+  },
+  "nextjs": {
+   "documents": 11
+  },
+  "nodejs": {
+   "documents": 69
+  },
+  "nosqli": {
+   "documents": 3
+  },
+  "novel-technique": {
+   "documents": 743
+  },
+  "oauth": {
+   "documents": 62
+  },
+  "open-redirect": {
+   "documents": 62
+  },
+  "openid": {
+   "documents": 29
+  },
+  "parser-differential": {
+   "documents": 167
+  },
+  "passkeys": {
+   "documents": 10
+  },
+  "path-traversal": {
+   "documents": 66
+  },
+  "pdf": {
+   "documents": 23
+  },
+  "perl": {
+   "documents": 4
+  },
+  "phishing": {
+   "documents": 39
+  },
+  "php": {
+   "documents": 116
+  },
+  "postgres": {
+   "documents": 8
+  },
+  "postmessage": {
+   "documents": 34
+  },
+  "predictable-token": {
+   "documents": 2
+  },
+  "prior-art-extension": {
+   "documents": 57
+  },
+  "privilege-escalation": {
+   "documents": 105
+  },
+  "prompt-injection": {
+   "documents": 25
+  },
+  "prototype-pollution": {
+   "documents": 21
+  },
+  "proxy": {
+   "documents": 82
+  },
+  "python": {
+   "documents": 34
+  },
+  "race-condition": {
+   "documents": 30
+  },
+  "rag": {
+   "documents": 2
+  },
+  "rails": {
+   "documents": 17
+  },
+  "rce": {
+   "documents": 268
+  },
+  "react": {
+   "documents": 6
+  },
+  "redis": {
+   "documents": 3
+  },
+  "request-smuggling": {
+   "documents": 49
+  },
+  "response-splitting": {
+   "documents": 17
+  },
+  "rest-api": {
+   "documents": 50
+  },
+  "reverse-proxy": {
+   "documents": 55
+  },
+  "ruby": {
+   "documents": 35
+  },
+  "rust": {
+   "documents": 3
+  },
+  "same-origin-policy": {
+   "documents": 172
+  },
+  "saml": {
+   "documents": 18
+  },
+  "sandbox-escape": {
+   "documents": 71
+  },
+  "sanitizer-bypass": {
+   "documents": 88
+  },
+  "server": {
+   "documents": 3
+  },
+  "service-worker": {
+   "documents": 10
+  },
+  "session-fixation": {
+   "documents": 36
+  },
+  "side-channel": {
+   "documents": 206
+  },
+  "smtp": {
+   "documents": 18
+  },
+  "smuggling": {
+   "documents": 14
+  },
+  "snmp": {
+   "documents": 2
+  },
+  "soap": {
+   "documents": 13
+  },
+  "sop-bypass": {
+   "documents": 189
+  },
+  "spring": {
+   "documents": 14
+  },
+  "sqli": {
+   "documents": 65
+  },
+  "sso": {
+   "documents": 63
+  },
+  "ssrf": {
+   "documents": 96
+  },
+  "ssti": {
+   "documents": 18
+  },
+  "static-analysis": {
+   "documents": 69
+  },
+  "struts": {
+   "documents": 4
+  },
+  "subdomain-takeover": {
+   "documents": 1
+  },
+  "supply-chain": {
+   "documents": 56
+  },
+  "survey": {
+   "documents": 18
+  },
+  "symfony": {
+   "documents": 1
+  },
+  "timing-attack": {
+   "documents": 89
+  },
+  "tls": {
+   "documents": 107
+  },
+  "toctou": {
+   "documents": 16
+  },
+  "tooling": {
+   "documents": 290
+  },
+  "type-confusion": {
+   "documents": 1
+  },
+  "typosquatting": {
+   "documents": 9
+  },
+  "ui-redress": {
+   "documents": 71
+  },
+  "unicode": {
+   "documents": 37
+  },
+  "url-parsing": {
+   "documents": 119
+  },
+  "url-spoofing": {
+   "documents": 12
+  },
+  "user-enumeration": {
+   "documents": 7
+  },
+  "vendor-advisory": {
+   "documents": 54
+  },
+  "vue": {
+   "documents": 1
+  },
+  "waf": {
+   "documents": 16
+  },
+  "waf-bypass": {
+   "documents": 71
+  },
+  "webassembly": {
+   "documents": 3
+  },
+  "webauthn": {
+   "documents": 11
+  },
+  "webrtc": {
+   "documents": 9
+  },
+  "websocket": {
+   "documents": 8
+  },
+  "wordpress": {
+   "documents": 21
+  },
+  "xsleak": {
+   "documents": 72
+  },
+  "xss": {
+   "documents": 379
+  },
+  "xxe": {
+   "documents": 31
+  }
+ },
+ "updated": "2026-08-15T21:22:43+00:00"
+}

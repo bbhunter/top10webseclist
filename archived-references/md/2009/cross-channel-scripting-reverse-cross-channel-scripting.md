@@ -3,7 +3,7 @@ type: Whitepaper
 title: Cross-Channel Scripting and Reverse Cross-Channel Scripting
 description: "Stanford audited 21 embedded devices from 16 brands - NAS, switches, IP cameras, photo frames, phones, routers, printers and lights-out modules - and found every one vulnerable. It names cross-channel scripting: script stored through FTP, SMB, SIP, BitTorrent or a serial console that the device's web interface later reflects, plus reverse XCS to steal files. Over 40 bugs went to CERT."
 resource: "https://www.blackhat.com/presentations/bh-usa-09/BOJINOV/BHUSA09-Bojinov-EmbeddedMgmt-PAPER.pdf"
-tags: [whitepaper, webseclist-reference, novel-technique, xss, csrf, injection, measurement-study, info-leak, auth-bypass]
+tags: [whitepaper, webseclist-reference, novel-technique, xss, csrf, injection, measurement-study, info-leak, auth-bypass, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:16+00:00"

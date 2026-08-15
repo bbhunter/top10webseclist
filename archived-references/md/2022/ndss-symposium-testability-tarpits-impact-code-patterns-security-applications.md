@@ -3,7 +3,7 @@ type: Article
 title: "Testability Tarpits: the Impact of Code Patterns on the Security Testing of Web Applications"
 description: Certain coding patterns stop static application security testing tools from following data flow, so vulnerabilities stay hidden behind what the authors call testability tarpits. They catalogue over 270 such patterns in PHP and JavaScript and show that rewriting a subset lets existing scanners find 440 new potential vulnerabilities across 48 projects, with 182 confirmed and 25 CVEs published.
 resource: "https://www.ndss-symposium.org/ndss-paper/auto-draft-206/"
-tags: [article, webseclist-reference, en, ndss-symposium, static-analysis, php, javascript, measurement-study, tooling, detection, large-scale-scan, cve]
+tags: [article, webseclist-reference, en, ndss-symposium, static-analysis, php, javascript, measurement-study, tooling, detection, large-scale-scan, cve, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:14+00:00"

@@ -3,7 +3,7 @@ type: Whitepaper
 title: Efficient Detection of Java Deserialization Gadget Chains via Bottom-up Gadget Search and Dataflow-aided Payload Construction
 description: "Finds Java deserialization gadget chains by searching bottom-up from sinks to sources over reusable gadget fragments, cutting static search cost from exponential to polynomial, then fuzzes using a diagram of dataflow dependencies between injected objects' fields so payload objects get the right structure. It found 127 zero-day exploitable chains in six real applications."
 resource: "https://secsys.fudan.edu.cn/_upload/article/files/8a/3c/d8d0e5a142dbbfaa39a58edc76b0/88ab6956-5447-4e4c-8ad8-6785c3fec057.pdf"
-tags: [whitepaper, webseclist-reference, deserialization, gadget-chain, rce, java, fuzzing, static-analysis, detection, tooling, cve]
+tags: [whitepaper, webseclist-reference, deserialization, gadget-chain, rce, java, fuzzing, static-analysis, detection, tooling, cve, owasp-a08-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:35:19+00:00"

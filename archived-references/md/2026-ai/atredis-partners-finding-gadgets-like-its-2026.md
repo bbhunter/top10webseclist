@@ -3,7 +3,7 @@ type: Article
 title: Finding Gadgets Like it’s 2026
 description: "An LLM agent drives a call graph built with WALA class-hierarchy analysis, pruned to Serializable classes and extended via ASM with reflection and type-confusion edges, querying it over REST and validating each candidate with a compiled Java harness. Of 17 confirmed chains the key one abuses a shaded Xalan copy in WildFly's JSTL jar, which puts TemplatesImpl outside JPMS so PriorityQueue and BeanComparator load bytecode for RCE on JDK 21."
 resource: "https://www.atredis.com/blog/2026/3/12/findings-gadgets-like-its-2026"
-tags: [article, webseclist-reference, en, atredis-partners, deserialization, gadget-chain, java, rce, tooling, static-analysis, llm, ai-agent]
+tags: [article, webseclist-reference, en, atredis-partners, deserialization, gadget-chain, java, rce, tooling, static-analysis, llm, ai-agent, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:02:42+00:00"

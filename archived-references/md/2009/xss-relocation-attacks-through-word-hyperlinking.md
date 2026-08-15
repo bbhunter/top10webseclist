@@ -3,7 +3,7 @@ type: Whitepaper
 title: XSS Relocation Attacks through Word Hyperlinking
 description: "Enterprise applications that let users upload a Word document and preview it as HTML convert the document's hyperlinks without filtering them. A hyperlink carrying an inline javascript: payload therefore survives the doc-to-HTML conversion and fires in the browser, giving stored XSS and CSRF. Tested against ZOHO Writer, Microsoft Office Live Workspace and Google Docs."
 resource: "http://www.secniche.org/papers/SNS_09_01_Evad_Xss_Filter_Msword.pdf"
-tags: [whitepaper, webseclist-reference, xss, csrf, filter-bypass, file-upload, sanitizer-bypass, injection, case-study]
+tags: [whitepaper, webseclist-reference, xss, csrf, filter-bypass, file-upload, sanitizer-bypass, injection, case-study, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:23+00:00"

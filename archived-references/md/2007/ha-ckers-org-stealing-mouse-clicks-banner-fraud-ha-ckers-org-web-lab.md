@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab - Archive » Stealing Mouse Clicks for Banner Fraud
 description: "Answering a sla.ckers question, RSnake shows a click cannot be forced into a cross-domain iframe, but the banner can be moved under the cursor instead so the user's own click lands on it. A cursor-following script demonstrates it; onclick timing and transparency are named as refinements. An early statement of clickjacking."
 resource: "http://ha.ckers.org/blog/20070116/stealing-mouse-clicks-for-banner-fraud/"
-tags: [article, webseclist-reference, ha-ckers-org, clickjacking, ui-redress, iframe, css, javascript, abuse-of-functionality, novel-technique]
+tags: [article, webseclist-reference, ha-ckers-org, clickjacking, ui-redress, iframe, css, javascript, abuse-of-functionality, novel-technique, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:54:16+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: CSRF with MS Word
 description: David Kierznowski turns Microsoft Word into a CSRF client by inserting a frame pointing at an attacker-controlled HTML page full of image tags. Word fetches it through Internet Explorer with no warning in Word 2000, so the requests fire every time the document is opened, and the attacker can retarget them later via 302 redirects or by editing the hosted page.
 resource: "https://web.archive.org/web/20070101051946/http://michaeldaw.org/md-hacks/csrf-with-msword/"
-tags: [article, webseclist-reference, michaeldaw-org, csrf, novel-technique, abuse-of-functionality, attack-chain]
+tags: [article, webseclist-reference, michaeldaw-org, csrf, novel-technique, abuse-of-functionality, attack-chain, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T18:12:16+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "[PPT] - P r e p a r e ( ) : I n t r o d u c i n g n o PowerPoint Presentation"
 description: "WordPress's own prepare() sanitiser replaces percent signs with a secret string, changing a value's byte length after it has already been serialised into the transient cache. The mismatched length prefix lets an attacker append an extra object, reaching PHP object injection and remote code execution through plugins such as WooCommerce, alongside SQL injection wherever prepare() is applied twice."
 resource: "https://www.sambuz.com/doc/p-r-e-p-a-r-e-i-n-t-r-o-d-u-c-i-n-g-n-o-v-e-l-e-x-p-l-o-i-presentation-910240"
-tags: [article, webseclist-reference, en, sambuz, deserialization, sqli, rce, gadget-chain, php, wordpress, cache, novel-technique]
+tags: [article, webseclist-reference, en, sambuz, deserialization, sqli, rce, gadget-chain, php, wordpress, cache, novel-technique, owasp-a03-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:20+00:00"

@@ -3,7 +3,7 @@ type: Video
 title: My Sweet Innocence Exposed - Eleven Reasons why we will all miss you, e
 description: A talk cataloguing Internet Explorer features that were security disasters by design. Legacy document modes, inherited by any page an attacker iframes, let old injections be replayed against a modern browser; proprietary markup such as the behavior property plus CSS magic bytes pulls script out of uploaded files; and exotic charsets like CP 875 encode angle brackets as letters that server-side filters pass through.
 resource: "https://youtu.be/aeevfVXPIqo"
-tags: [video, webseclist-reference, youtube, xss, filter-bypass, css-injection, charset, encoding, iframe, sanitizer-bypass, mime, css]
+tags: [video, webseclist-reference, youtube, xss, filter-bypass, css-injection, charset, encoding, iframe, sanitizer-bypass, mime, css, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:51:05+00:00"

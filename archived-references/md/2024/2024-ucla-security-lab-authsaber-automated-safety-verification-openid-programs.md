@@ -3,7 +3,7 @@ type: Article
 title: "AuthSaber: Automated Safety Verification of OpenID Connect Programs"
 description: "This is a publication listing page from a university lab site for a conference paper on automated safety verification of OpenID Connect implementations, presented at the 31st ACM Conference on Computer and Communications Security in 2024. It records the three authors, the venue and the month of publication, but the abstract field is empty and the surrounding text is the publishing template's placeholder copy; the research itself is not present on this page."
 resource: "https://ucla-sec-lab.netlify.app/publication/2024-authsaber/"
-tags: [article, webseclist-reference, en-us, ucla-security-lab, openid, sso, formal-analysis]
+tags: [article, webseclist-reference, en-us, ucla-security-lab, openid, sso, formal-analysis, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:03:50+00:00"

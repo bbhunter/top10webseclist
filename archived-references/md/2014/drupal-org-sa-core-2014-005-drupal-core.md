@@ -3,7 +3,7 @@ type: Article
 title: SA-CORE-2014-005 - Drupal core
 description: "A flaw in Drupal 7's database abstraction API let an anonymous attacker send specially crafted requests that executed arbitrary SQL, leading on to privilege escalation and arbitrary PHP execution. Rated 25 of 25 highly critical and fixed in 7.32, it was exploited in the wild within days of the advisory."
 resource: "https://web.archive.org/web/20160403035045/https://www.drupal.org/SA-CORE-2014-005"
-tags: [article, webseclist-reference, en, drupal-org, sqli, privilege-escalation, rce, drupal, php, cve, vendor-advisory]
+tags: [article, webseclist-reference, en, drupal-org, sqli, privilege-escalation, rce, drupal, php, cve, vendor-advisory, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:09:13+00:00"

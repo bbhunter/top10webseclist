@@ -3,7 +3,7 @@ type: Article
 title: Fuzzing for XSS via nested parsers condition
 description: When two markup parsers run in sequence over the same message, the first parser output becomes the second parser input, letting injected markup escape an attribute value into attribute-name position. Fuzz lists that plant convertible markup inside other markup found this cross-site scripting in vBulletin, MyBB, PMWiki, Rocket.Chat, XMB, SMF and PunBB.
 resource: "https://swarm.ptsecurity.com/fuzzing-for-xss-via-nested-parsers-condition/"
-tags: [article, webseclist-reference, en-US, pt-swarm, xss, sanitizer-bypass, parser-differential, filter-bypass, fuzzing, injection, php, cve, novel-technique]
+tags: [article, webseclist-reference, en-US, pt-swarm, xss, sanitizer-bypass, parser-differential, filter-bypass, fuzzing, injection, php, cve, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:30+00:00"

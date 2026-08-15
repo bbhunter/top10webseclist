@@ -3,7 +3,7 @@ type: Article
 title: "HaXmas: The True Meaning(s) of Metasploit"
 description: "Samsung Internet Browser let JavaScript that opened a new tab rewrite that tab's contents after the destination site had loaded, breaking the same-origin policy. An attacker whose page the victim visits can inject arbitrary script into any domain, which the write-up traces from bug report to a shipped Metasploit module."
 resource: "https://blog.rapid7.com/2017/12/25/haxmas-the-true-meaning-s-of-metasploit/"
-tags: [article, webseclist-reference, en, rapid7-blog, sop-bypass, same-origin-policy, android, javascript, tooling, case-study]
+tags: [article, webseclist-reference, en, rapid7-blog, sop-bypass, same-origin-policy, android, javascript, tooling, case-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:06+00:00"

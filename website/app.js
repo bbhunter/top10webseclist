@@ -404,6 +404,27 @@ function creditList(authors) {
     : [...authors];
 }
 
+/**
+ * A document's tags, plus the OWASP Top 10 categories they earn.
+ *
+ * The mapping is injected by build-data.mjs from
+ * archived-references/tag-vocabulary.json, which is where a maintainer edits
+ * it. When it is absent - in the browser, where these items arrive already
+ * built - the tags are returned untouched rather than guessed at.
+ */
+function withOwaspCategories(tags) {
+  const source = [...tags];
+  const map = typeof __owasp === "object" && __owasp ? __owasp : null;
+  if (!map) return source;
+  const derived = [];
+  for (const tag of source) {
+    for (const category of map[String(tag).toLowerCase()] || []) {
+      if (!source.includes(category) && !derived.includes(category)) derived.push(category);
+    }
+  }
+  return [...source, ...derived.sort()];
+}
+
 function normalizeUrl(value) {
   try {
     const url = new URL(value);
@@ -586,8 +607,14 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
       ...(documentLink.record?.digest?.text
         ? { summary: documentLink.record.digest.text }
         : {}),
+      // The OWASP Top 10 categories ride along with the tags rather than in a
+      // key of their own: they ARE tags, derived from the techniques by the
+      // mapping in archived-references/tag-vocabulary.json, so `tag:owasp-a03-2021`
+      // searches and the tag pills both work with no extra machinery. Empty in
+      // the browser, where no mapping is injected - the build is what bakes them
+      // in, exactly as it bakes in every other field here.
       ...(documentLink.record?.digest?.tags?.length
-        ? { tags: [...documentLink.record.digest.tags] }
+        ? { tags: withOwaspCategories(documentLink.record.digest.tags) }
         : {}),
       kind: record?.kind || "link",
       language: record?.language || "",

@@ -3,7 +3,7 @@ type: Article
 title: Hiding JS in Valid Images
 description: "Matteo Carli's GIF that is also valid JavaScript: an =1 after the GIF header stops the magic bytes parsing as an undefined variable, and a long comment swallows the binary. The file passes as an image on hosts like ImageShack yet runs when loaded as a script source, and the same trick embeds PHP for RFI."
 resource: "http://ha.ckers.org/blog/20070623/hiding-js-in-valid-images/"
-tags: [article, webseclist-reference, ha-ckers-org, file-upload, filter-bypass, javascript, php, mime, xss, novel-technique]
+tags: [article, webseclist-reference, ha-ckers-org, file-upload, filter-bypass, javascript, php, mime, xss, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T13:12:33+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "SerialDetector: Principled and Practical Exploration of Object Injection Vulnerabilities for the Web"
 description: Object injection happens when untrusted data chooses the type and properties of a deserialised object, turning existing code into a gadget chain. SerialDetector taints dataflow in .NET assemblies from public entry points to type-creating reflection APIs, matches known gadgets and confirms exploitability, finding remote code execution including three CVEs in Azure DevOps Server.
 resource: "https://www.ndss-symposium.org/ndss-paper/serialdetector-principled-and-practical-exploration-of-object-injection-vulnerabilities-for-the-web/"
-tags: [article, webseclist-reference, en, ndss-symposium, deserialization, gadget-chain, rce, dotnet, static-analysis, tooling, cve]
+tags: [article, webseclist-reference, en, ndss-symposium, deserialization, gadget-chain, rce, dotnet, static-analysis, tooling, cve, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:09+00:00"

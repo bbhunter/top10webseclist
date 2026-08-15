@@ -3,7 +3,7 @@ type: Article
 title: XSS in GMAIL Dynamic Email (AMP for Email)
 description: "Gmail's AMP for Email sanitizer could be escaped from inside a style amp-custom block: the parser acted on an unterminated closing style tag and auto-generated closing tags, letting injected markup break into the document body. Only a meta refresh survived the tag filter, navigating the mail view to a data URL; Gmail's CSP blocked script execution. Google paid a 6,000 dollar bounty."
 resource: "https://asdqw3.medium.com/xss-in-gmail-dynamic-email-amp-for-email-3872d6052a0d"
-tags: [article, webseclist-reference, en, medium, xss, sanitizer-bypass, email, css, parser-differential, filter-bypass, csp, bug-bounty]
+tags: [article, webseclist-reference, en, medium, xss, sanitizer-bypass, email, css, parser-differential, filter-bypass, csp, bug-bounty, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:02:37+00:00"

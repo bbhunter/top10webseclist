@@ -3,7 +3,7 @@ type: Article
 title: "Yasser Ali's Blog » Hacking PayPal Accounts with one click (Patched)"
 description: "PayPal's anti-CSRF Auth token turned out to be reusable, and a valid one could be picked up before logging in from the send-money page, making it usable against any account. Paired with a security-question setup request that was not password protected, one click on an attacker page could reset the victim's security answers, email and payment details and take the account over."
 resource: "https://web.archive.org/web/20160403035045/http://yasserali.com/hacking-paypal-accounts-with-one-click/"
-tags: [article, webseclist-reference, yasserali-com, csrf, auth-bypass, bug-bounty, http, case-study]
+tags: [article, webseclist-reference, yasserali-com, csrf, auth-bypass, bug-bounty, http, case-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:43+00:00"

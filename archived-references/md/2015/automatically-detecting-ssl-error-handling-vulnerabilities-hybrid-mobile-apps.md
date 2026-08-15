@@ -3,7 +3,7 @@ type: Whitepaper
 title: Automatically Detecting SSL Error-Handling Vulnerabilities in Hybrid Mobile Web Apps
 description: Hybrid Android apps show web content in a WebView and frequently override the SSL error handler to call proceed, so the app keeps loading an HTTPS page whose certificate failed validation and can be intercepted. A combined static and dynamic analysis finds this automatically, confirming 645 vulnerable apps among 13,820 scanned.
 resource: "https://lilicoding.github.io/SA3Repo/papers/2015_zuo2015automatically.pdf"
-tags: [whitepaper, webseclist-reference, tls, https, android, static-analysis, dynamic-analysis, large-scale-scan, detection]
+tags: [whitepaper, webseclist-reference, tls, https, android, static-analysis, dynamic-analysis, large-scale-scan, detection, owasp-a02-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:36:37+00:00"

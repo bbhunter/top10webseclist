@@ -3,7 +3,7 @@ type: Whitepaper
 title: On Race Vulnerabilities in Web Applications
 description: DIMVA 2008 paper on race conditions in web applications, arising because programmers treat scripts as sequential while the server runs many instances against one shared database. It gives a dynamic detection method that replays interleaved request pairs and compares database state, with SQL annotations to suppress benign reports. Real races were found in Joomla, phpBB, WordPress and Zen Cart.
 resource: "https://roberto.greyhats.it/pubs/dimva08-web.pdf"
-tags: [whitepaper, webseclist-reference, race-condition, toctou, database, mysql, php, dynamic-analysis, detection, tooling]
+tags: [whitepaper, webseclist-reference, race-condition, toctou, database, mysql, php, dynamic-analysis, detection, tooling, owasp-a04-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:36:16+00:00"

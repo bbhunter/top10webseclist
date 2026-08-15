@@ -3,7 +3,7 @@ type: Article
 title: Cross-domain leaks of site logins
 description: "Detects whether a visitor is logged in to a third-party site by loading that site's stylesheet with <link> and reading a property back with getComputedStyle. MySpace serves margin-bottom:3px to logged-in users and 0px otherwise. Argues any non-randomised CSS property value is readable cross-origin, including data: URIs in background-url."
 resource: "https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html"
-tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com, xsleak, css, side-channel, info-leak, sop-bypass, javascript, novel-technique]
+tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com, xsleak, css, side-channel, info-leak, sop-bypass, javascript, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:25+00:00"

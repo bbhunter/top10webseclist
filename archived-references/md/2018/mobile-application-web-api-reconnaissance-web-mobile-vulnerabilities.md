@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Mobile Application Web API Reconnaissance: Web-to-Mobile Inconsistencies & Vulnerabilities"
 description: WARDroid statically analyses Android apps to recover the HTTP templates and input-validation rules they enforce before calling their cloud APIs, then replays deliberately invalid requests to see whether the server enforces the same rules. Where it does not, an attacker skips the client-side checks and reaches data or actions the API should refuse; 10,000 apps were scanned.
 resource: "https://people.engr.tamu.edu/guofei/paper/WARDroid_SP18.pdf"
-tags: [whitepaper, webseclist-reference, auth-bypass, filter-bypass, rest-api, android, http, static-analysis, large-scale-scan, tooling]
+tags: [whitepaper, webseclist-reference, auth-bypass, filter-bypass, rest-api, android, http, static-analysis, large-scale-scan, tooling, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:36:59+00:00"

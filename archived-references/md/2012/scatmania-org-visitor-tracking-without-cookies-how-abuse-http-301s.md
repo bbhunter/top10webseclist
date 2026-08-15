@@ -3,7 +3,7 @@ type: Article
 title: Visitor Tracking Without Cookies (or How To Abuse HTTP 301s)
 description: Demonstrates visitor tracking that stores no cookie by abusing cached permanent redirects. A script tag requests a fixed URL, the server issues a 301 to a per-user address carrying a fresh identifier, and the browser caches that redirect and reuses the identifier on later visits, surviving restarts. A Ruby/Sinatra demo and source are published.
 resource: "https://web.archive.org/web/20170903113359/http://www.scatmania.org/2012/04/24/visitor-tracking-without-cookies/"
-tags: [article, webseclist-reference, en-US, scatmania-org, cache, http, cookie, info-leak, novel-technique, tooling]
+tags: [article, webseclist-reference, en-US, scatmania-org, cache, http, cookie, info-leak, novel-technique, tooling, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:21:47+00:00"

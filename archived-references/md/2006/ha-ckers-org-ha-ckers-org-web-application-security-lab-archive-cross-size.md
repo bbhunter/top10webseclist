@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab - Archive » Cross Domain Leakage With Image Size
 description: "A remotely hosted image whose dimensions vary with the viewer's login state leaks cross-domain user state, since the embedding page can read the rendered size. Extends the same trick to fingerprinting servers via PHP easter eggs and Apache default icons, and to presence detection when the image 404s. Framed as CSRF-based state disclosure."
 resource: "http://ha.ckers.org/blog/20060728/cross-domain-leakage-with-image-size/"
-tags: [article, webseclist-reference, ha-ckers-org, info-leak, side-channel, csrf, sop-bypass, browser-fingerprinting, detection, iframe, xss]
+tags: [article, webseclist-reference, ha-ckers-org, info-leak, side-channel, csrf, sop-bypass, browser-fingerprinting, detection, iframe, xss, owasp-a01-2021, owasp-a03-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:21+00:00"

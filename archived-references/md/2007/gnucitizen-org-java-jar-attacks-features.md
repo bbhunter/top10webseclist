@@ -3,7 +3,7 @@ type: Article
 title: Java JAR Attacks and Features
 description: "The Java runtime will load a JAR appended to a JPEG, so a file that passes image header checks is still executable byte code, and an applet runs in the sandbox of its codebase host. pdp chains the two: upload the polyglot to a target that accepts images, embed it from anywhere, and any internal visitor becomes a socket proxy onto the target's firewalled ports such as MSSQL."
 resource: "https://www.gnucitizen.org/blog/java-jar-attacks-and-features"
-tags: [article, webseclist-reference, en, gnucitizen-org, java, file-upload, mime, sop-bypass, same-origin-policy, filter-bypass, attack-chain, novel-technique]
+tags: [article, webseclist-reference, en, gnucitizen-org, java, file-upload, mime, sop-bypass, same-origin-policy, filter-bypass, attack-chain, novel-technique, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:52+00:00"

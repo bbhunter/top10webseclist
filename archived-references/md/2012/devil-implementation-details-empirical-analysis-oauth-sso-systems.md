@@ -3,7 +3,7 @@ type: Whitepaper
 title: "The Devil is in the (Implementation) Details: An Empirical Analysis of OAuth SSO Systems"
 description: A black-box study of three OAuth 2.0 identity providers and 96 Facebook relying parties, tracing SSO credentials through browser HTTP traffic with a Firefox add-on and semi-automatic exploit tools. Access tokens leaked unencrypted on 32% of RPs, could be stolen via XSS on 91%, and 64% let an attacker impersonate a user by replaying an unbound SSO credential.
 resource: "https://css.csail.mit.edu/6.858/2012/readings/oauth-sso.pdf"
-tags: [whitepaper, webseclist-reference, oauth, sso, auth-bypass, csrf, xss, info-leak, measurement-study, session-fixation]
+tags: [whitepaper, webseclist-reference, oauth, sso, auth-bypass, csrf, xss, info-leak, measurement-study, session-fixation, owasp-a01-2021, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:44+00:00"

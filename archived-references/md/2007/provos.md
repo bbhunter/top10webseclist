@@ -3,7 +3,7 @@ type: Whitepaper
 title: provos
 description: "Google's twelve-month study behind Safe Browsing. MapReduce heuristics narrowed billions of crawled pages to 4.5 million, verified in instrumented IE virtual machines; 450,000 were confirmed drive-by-download vectors. Names four injection routes: server compromise, user content, ad sub-syndication and third-party widgets."
 resource: "https://www.usenix.org/legacy/event/hotbots07/tech/full_papers/provos/provos.pdf"
-tags: [whitepaper, webseclist-reference, measurement-study, large-scale-scan, javascript, iframe, activex, supply-chain, detection, dynamic-analysis]
+tags: [whitepaper, webseclist-reference, measurement-study, large-scale-scan, javascript, iframe, activex, supply-chain, detection, dynamic-analysis, owasp-a06-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T03:35:59+00:00"

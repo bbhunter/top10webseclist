@@ -3,7 +3,7 @@ type: Article
 title: "Security: HTTP Smuggling, Apsis Pound load balancer"
 description: The Pound load balancer accepts two Content-Length headers, lets whichever framing header came first win over Transfer-Encoding, and treats a NUL byte in a header as a line continuation. Paired with any other HTTP actor that parses differently, one pipelined stream is split into a different number of requests at each hop, giving request smuggling, filter bypass and cache poisoning.
 resource: "https://regilero.github.io/security/english/2018/07/03/security_pound_http_smuggling/"
-tags: [article, webseclist-reference, en, regilero-github-io, request-smuggling, desync, parser-differential, http, load-balancer, reverse-proxy, cache-poisoning, filter-bypass, cve]
+tags: [article, webseclist-reference, en, regilero-github-io, request-smuggling, desync, parser-differential, http, load-balancer, reverse-proxy, cache-poisoning, filter-bypass, cve, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:39:10+00:00"

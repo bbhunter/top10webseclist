@@ -3,7 +3,7 @@ type: Whitepaper
 title: "The Cookie Hunter: Automated Black-box Auditing for Web Authentication and Authorization Flaws"
 description: A fully automated black-box framework registers accounts, logs in (including via single sign-on) and then removes cookie subsets to work out which cookies authenticate and whether they are exposed over cleartext HTTP or to JavaScript. Auditing 25,000 domains it found over 10,000 leaking authentication cookies in the clear and 9,324 where a hijacker reaches personal data.
 resource: "https://www.cs.uic.edu/~polakis/classes/CS568/fall-2020/cookiehijacker-ccs20.pdf"
-tags: [whitepaper, webseclist-reference, cookie, info-leak, auth-bypass, https, sso, large-scale-scan, measurement-study, tooling, dynamic-analysis]
+tags: [whitepaper, webseclist-reference, cookie, info-leak, auth-bypass, https, sso, large-scale-scan, measurement-study, tooling, dynamic-analysis, owasp-a01-2021, owasp-a02-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:28+00:00"

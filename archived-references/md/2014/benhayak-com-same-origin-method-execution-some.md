@@ -3,7 +3,7 @@ type: Article
 title: Same Origin Method Execution (SOME)
 description: Same Origin Method Execution abuses callback endpoints such as JSONP handlers and Flash applets, whose callback parameter is echoed into executable script. By opening windows and redirecting their documents, an attacker makes the callback value a DOM path aimed at a victim page and fires arbitrary methods on any page of that domain using only alphanumerics and a dot.
 resource: "http://www.benhayak.com/2015/06/same-origin-method-execution-some.html"
-tags: [article, webseclist-reference, benhayak-com, sop-bypass, xss, dom, flash, oauth, javascript, filter-bypass]
+tags: [article, webseclist-reference, benhayak-com, sop-bypass, xss, dom, flash, oauth, javascript, filter-bypass, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:03:02+00:00"

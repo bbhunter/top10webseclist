@@ -3,7 +3,7 @@ type: Article
 title: "Targeted Deanonymization via the Cache Side Channel: Attacks and Defenses"
 description: Targeted deanonymization that tells a malicious page whether its visitor holds a given public identifier such as an email address or a Twitter handle. It reads the CPU cache side channel rather than a cross-site leak, so cross-origin resource and opener policies and SameSite cookies do not stop it; it also works against Tor Browser.
 resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/zaheri"
-tags: [article, webseclist-reference, en, usenix-org, side-channel, xsleak, info-leak, sop-bypass, cookie, browser-extension, defence, novel-technique]
+tags: [article, webseclist-reference, en, usenix-org, side-channel, xsleak, info-leak, sop-bypass, cookie, browser-extension, defence, novel-technique, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:36+00:00"

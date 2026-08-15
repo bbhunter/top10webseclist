@@ -3,7 +3,7 @@ type: Article
 title: Remote Code Execution in F5 Big‑IP
 description: An Apache and Tomcat path-normalisation difference lets /..;/ in a URL slip past the F5 BIG-IP TMUI proxy rules and reach the hidden hsqldb servlet unauthenticated. Default HSQLDB credentials then allow arbitrary SQL, and its CALL statement invokes an F5 static method that evaluates Jython, giving unauthenticated remote code execution (CVE-2020-5902).
 resource: "https://swarm.ptsecurity.com/rce-in-f5-big-ip/"
-tags: [article, webseclist-reference, en-US, pt-swarm, path-traversal, auth-bypass, rce, parser-differential, database, java, proxy, cve, attack-chain]
+tags: [article, webseclist-reference, en-US, pt-swarm, path-traversal, auth-bypass, rce, parser-differential, database, java, proxy, cve, attack-chain, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:31+00:00"

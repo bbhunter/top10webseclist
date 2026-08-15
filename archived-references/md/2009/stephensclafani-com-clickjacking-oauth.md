@@ -3,7 +3,7 @@ type: Article
 title: Clickjacking & OAuth
 description: "Applies clickjacking to OAuth: a malicious consumer frames a service provider's authorization page and overlays the approve button, so a user granting access believes they clicked something harmless. Reviews the defences and their costs: framebusting is defeated by IE's security=\"restricted\" frame attribute, X-Frame-Options is too new, and re-authentication invites phishing."
 resource: "http://stephensclafani.com/2009/05/04/clickjacking-oauth/"
-tags: [article, webseclist-reference, stephensclafani-com, clickjacking, ui-redress, oauth, iframe, auth-bypass, mitigation]
+tags: [article, webseclist-reference, stephensclafani-com, clickjacking, ui-redress, oauth, iframe, auth-bypass, mitigation, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:26+00:00"

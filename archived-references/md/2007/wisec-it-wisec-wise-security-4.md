@@ -3,7 +3,7 @@ type: Article
 title: Wisec - The WIse SECurity
 description: "Stefano Di Paola chains HTTP response splitting into a data: URI XSS on Firefox. A redirector vulnerable to splitting is made to emit a Refresh header pointing at data:text/html with script in it, and Firefox executes that script in the redirecting site's context, extending pdp's data: URI concerns and Amit Klein's Refresh header work."
 resource: "http://www.wisec.it/sectou.php?id=472a5b8d1a4cd"
-tags: [article, webseclist-reference, wisec-it, response-splitting, header-injection, xss, http, filter-bypass, novel-technique]
+tags: [article, webseclist-reference, wisec-it, response-splitting, header-injection, xss, http, filter-bypass, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:42+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: XSS in Skype for iOS — Superevr
 description: "Skype 3.0.1 and earlier for iPhone renders chat in a local HTML file without encoding the sender's Full Name, so a crafted name runs JavaScript when the victim opens the message. Worse, the embedded WebKit view runs under the file:// scheme rather than about:blank, giving script read access to the app sandbox. The author demonstrates stealing the device AddressBook."
 resource: "https://superevr.com/blog/2011/xss-in-skype-for-ios/"
-tags: [article, webseclist-reference, en-US, superevr, xss, ios, info-leak, sandbox-escape, same-origin-policy, case-study, novel-technique]
+tags: [article, webseclist-reference, en-US, superevr, xss, ios, info-leak, sandbox-escape, same-origin-policy, case-study, novel-technique, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:59+00:00"

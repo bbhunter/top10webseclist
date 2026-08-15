@@ -3,7 +3,7 @@ type: Article
 title: Cross-Origin Web Attacks via HTTP/2 Server Push and Signed HTTP Exchange
 description: "HTTP/2 server push and Signed HTTP Exchange authorise content by the certificate's subject alternative names rather than by the URI origin, so where a certificate is shared an off-path attacker can push or sign responses for any domain it covers. The result is cross-origin XSS, cookie manipulation and malicious downloads."
 resource: "https://www.ndss-symposium.org/ndss-paper/cross-origin-web-attacks-via-http-2-server-push-and-signed-http-exchange/"
-tags: [article, webseclist-reference, en, ndss-symposium, http2, sop-bypass, same-origin-policy, tls, xss, cookie, cache, measurement-study, novel-technique]
+tags: [article, webseclist-reference, en, ndss-symposium, http2, sop-bypass, same-origin-policy, tls, xss, cookie, cache, measurement-study, novel-technique, owasp-a01-2021, owasp-a02-2021, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:42:59+00:00"

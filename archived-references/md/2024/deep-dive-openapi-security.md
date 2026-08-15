@@ -3,7 +3,7 @@ type: Whitepaper
 title: A Deep Dive into OpenAPI Security
 description: "Treats an API's OpenAPI specification as a graph in a graph database, with endpoints, parameters and objects as nodes, so design flaws can be queried much as directory attack paths are. The queries surface sensitive data reachable through unprotected alternative paths, endpoints whose description contradicts their behaviour, and identifiers leaked by one endpoint that replay against another."
 resource: "https://0xpwn.wordpress.com/wp-content/uploads/2024/09/a-deep-dive-into-openapi-security.pdf"
-tags: [whitepaper, webseclist-reference, idor, auth-bypass, rest-api, info-leak, static-analysis, tooling, detection]
+tags: [whitepaper, webseclist-reference, idor, auth-bypass, rest-api, info-leak, static-analysis, tooling, detection, owasp-a01-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:32:34+00:00"

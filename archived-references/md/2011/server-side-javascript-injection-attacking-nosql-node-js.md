@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Server-Side JavaScript Injection: Attacking NoSQL and Node.js"
 description: "Bryan Sullivan's Black Hat USA 2011 whitepaper shows that eval of untrusted input in Node.js servers and MongoDB $where queries executes attacker JavaScript on the server. Payloads run from an eight-byte while(1) denial of service to file read and write via require('fs') and binary execution via child_process.spawn, plus blind extraction of a whole NoSQL database."
 resource: "https://media.blackhat.com/bh-us-11/Sullivan/BH_US_11_Sullivan_Server_Side_WP.pdf"
-tags: [whitepaper, webseclist-reference, nodejs, nosqli, mongodb, rce, injection, javascript, dos, novel-technique]
+tags: [whitepaper, webseclist-reference, nodejs, nosqli, mongodb, rce, injection, javascript, dos, novel-technique, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:42:23+00:00"

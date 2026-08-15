@@ -3,7 +3,7 @@ type: Whitepaper
 title: Are You My Type? Breaking .NET Through Serialization
 description: "Forshaw analyses .NET's BinaryFormatter and shows that deserialising untrusted data reaches dangerous framework classes such as TempFileCollection, FileSystemInfo and IWbemClassObjectFreeThreaded. He bypasses remoting's Low TypeFilterLevel via System.Data.DataSet, and abuses EvidenceBase.Clone (CVE-2012-0160) and XBAP exception marshalling (CVE-2012-0161) to round-trip serialise forged delegates and escape partial trust."
 resource: "https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_WP.pdf"
-tags: [whitepaper, webseclist-reference, context-information-security, deserialization, dotnet, gadget-chain, rce, sandbox-escape, privilege-escalation, cve, novel-technique]
+tags: [whitepaper, webseclist-reference, context-information-security, deserialization, dotnet, gadget-chain, rce, sandbox-escape, privilege-escalation, cve, novel-technique, owasp-a01-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T16:04:44+00:00"

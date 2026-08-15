@@ -3,7 +3,7 @@ type: Article
 title: Results, Unicode Left/Right Pointing Double Angel Quotation Mark
 description: Two years after a full-disclosure thread suggested it, WhiteHat Sentinel scan data confirmed that some applications normalise angle-quotation and angle-bracket characters into < and >. Across samples of 300 to 1000 sites, 31 exploitable XSS were found in 25 sites where such encodings were the only route to arbitrary HTML.
 resource: "https://jeremiahgrossman.blogspot.com/2009/06/results-unicode-leftright-pointing.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, unicode, encoding, charset, xss, filter-bypass, sanitizer-bypass, large-scale-scan, measurement-study]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, unicode, encoding, charset, xss, filter-bypass, sanitizer-bypass, large-scale-scan, measurement-study, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:05+00:00"

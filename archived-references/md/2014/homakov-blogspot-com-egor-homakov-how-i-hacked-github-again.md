@@ -3,7 +3,7 @@ type: Article
 title: "Egor Homakov: How I hacked Github again."
 description: "Chains five low-severity GitHub OAuth bugs: redirect_uri path traversal with slash-dot-dot, no redirect_uri check at the token endpoint, a Camo proxy bypass that leaks the code through the Referer, Gist exposing the access token in a cookie, and auto-approved scopes. The result is a script-less takeover with read and write access to private repositories."
 resource: "https://web.archive.org/web/20160403035045/http://homakov.blogspot.com/2014/02/how-i-hacked-github-again.html?m=1"
-tags: [article, webseclist-reference, homakov-blogspot-com, oauth, open-redirect, path-traversal, auth-bypass, github, cookie, attack-chain, bug-bounty]
+tags: [article, webseclist-reference, homakov-blogspot-com, oauth, open-redirect, path-traversal, auth-bypass, github, cookie, attack-chain, bug-bounty, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:27:16+00:00"

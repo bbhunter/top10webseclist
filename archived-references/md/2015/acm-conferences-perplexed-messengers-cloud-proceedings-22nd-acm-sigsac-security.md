@@ -3,7 +3,7 @@ type: Article
 title: Perplexed Messengers from the Cloud | Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security
 description: A study of push-messaging services such as Google Cloud Messaging and Baidu Push and of how apps integrate them. A tool called Seminal derives security checks from vendor sample code and scanned 35,173 apps, finding over 20 percent on Google Play and half on Chinese markets flawed, letting an attacker post content as a trusted party and intercept private messages.
 resource: "https://dl.acm.org/doi/10.1145/2810103.2813652"
-tags: [article, webseclist-reference, EN, acm-conferences, info-leak, auth-bypass, android, static-analysis, large-scale-scan, measurement-study]
+tags: [article, webseclist-reference, EN, acm-conferences, info-leak, auth-bypass, android, static-analysis, large-scale-scan, measurement-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:09:03+00:00"

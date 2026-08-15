@@ -3,7 +3,7 @@ type: Whitepaper
 title: Hacking RSS Feeds
 description: "SPI Labs whitepaper on Feed Injection: RSS and Atom readers variously render feed markup literally, entity-decode it before display, or strip it, and the first two execute attacker script from title, link and description elements. Local readers that write HTML to disk and load it in IE grant local-zone ActiveX, giving file theft and unrestricted XMLHttpRequest port scanning."
 resource: "http://www.cgisecurity.com/papers/HackingFeeds.pdf"
-tags: [whitepaper, webseclist-reference, xss, injection, activex, csrf, sandbox-escape, filter-bypass, measurement-study, novel-technique]
+tags: [whitepaper, webseclist-reference, xss, injection, activex, csrf, sandbox-escape, filter-bypass, measurement-study, novel-technique, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:53+00:00"

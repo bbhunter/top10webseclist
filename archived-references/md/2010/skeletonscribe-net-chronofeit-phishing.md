@@ -3,7 +3,7 @@ type: Article
 title: Chronofeit Phishing
 description: "Chronofeit combines RSnake's popup and focus URL hijacking with Paul Stone's frame-based login detection: the victim checks a genuine login URL, and the page is swapped for a phishing clone in the interval between that check and submitting credentials. Polling detects the moment of login, then redirects to a fake password-incorrect page."
 resource: "https://skeletonscribe.blogspot.com/2010/12/chronofeit-phishing.html"
-tags: [article, webseclist-reference, en-GB, skeletonscribe-net, iframe, clickjacking, ui-redress, side-channel, detection, url-parsing, novel-technique]
+tags: [article, webseclist-reference, en-GB, skeletonscribe-net, iframe, clickjacking, ui-redress, side-channel, detection, url-parsing, novel-technique, owasp-a04-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:59:23+00:00"

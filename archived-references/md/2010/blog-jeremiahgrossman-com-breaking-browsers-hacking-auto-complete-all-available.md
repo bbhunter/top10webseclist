@@ -3,7 +3,7 @@ type: Article
 title: "Breaking Browsers: Hacking Auto-Complete (All Materials Available)"
 description: "Index post releasing the materials for the Black Hat USA 2010 talk on abusing browser form autocomplete and autofill. It links the slide deck and the individual writeups: Safari AutoFill disclosure (CVE-2010-1796), IE6/7 AutoComplete theft, Firefox autocomplete spoofing, password manager theft via XSS, and cookie eviction across all sites."
 resource: "https://jeremiahgrossman.blogspot.com/2010/08/breaking-browsers-hacking-auto-complete.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, info-leak, javascript, cookie, cve, xss]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, info-leak, javascript, cookie, cve, xss, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:15+00:00"

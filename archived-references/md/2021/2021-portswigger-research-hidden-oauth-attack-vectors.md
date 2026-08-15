@@ -3,7 +3,7 @@ type: Article
 title: Hidden OAuth attack vectors
 description: Three attacks on OAuth2 and OpenID Connect endpoints that a browser never reveals. Dynamic client registration accepts attacker URLs in logo_uri, jwks_uri and request_uris, giving second-order SSRF; keeping redirect_uri in the session lets a second request poison it and steal the code; and the WebFinger endpoint allows user enumeration and LDAP injection.
 resource: "https://portswigger.net/research/hidden-oauth-attack-vectors"
-tags: [article, webseclist-reference, portswigger-research, oauth, openid, ssrf, mass-assignment, sso, injection, spring, java, cve]
+tags: [article, webseclist-reference, portswigger-research, oauth, openid, ssrf, mass-assignment, sso, injection, spring, java, cve, owasp-a01-2021, owasp-a03-2021, owasp-a07-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:51+00:00"

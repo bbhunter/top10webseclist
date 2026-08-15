@@ -3,7 +3,7 @@ type: Article
 title: Cookie Path Traversal
 description: An encoded backslash in the request path, as in /en/us/test/..%5Cdefault.aspx, is a directory delimiter to IIS but not to the browser, so a cookie scoped to a path it should never reach gets sent anyway. Works in the then-current IE, Firefox, Opera and Safari. Useful mainly for lifting httpOnly cookies when header disclosure exists at one path and the cookie belongs to another.
 resource: "https://kuza55.blogspot.com/2008/07/cookie-path-traversal.html"
-tags: [article, webseclist-reference, kuza55-blogspot-com, cookie, path-traversal, parser-differential, url-parsing, encoding, info-leak]
+tags: [article, webseclist-reference, kuza55-blogspot-com, cookie, path-traversal, parser-differential, url-parsing, encoding, info-leak, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:35+00:00"

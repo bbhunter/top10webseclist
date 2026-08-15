@@ -3,7 +3,7 @@ type: Whitepaper
 title: Cross-Site Printing (Printer Spamming)
 description: "A web page can print on a network printer inside the visitor's LAN. Printers accept raw jobs on port 9100, and a multipart/form-data POST from a hidden iframe reaches them unencoded, so a form or an image tag aimed at an internal address prints attacker text."
 resource: "https://img2.helpnetsecurity.com/dl/articles/CrossSitePrinting.pdf"
-tags: [whitepaper, webseclist-reference, csrf, javascript, abuse-of-functionality, embedded-device, iframe, novel-technique, mitigation]
+tags: [whitepaper, webseclist-reference, csrf, javascript, abuse-of-functionality, embedded-device, iframe, novel-technique, mitigation, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:36+00:00"

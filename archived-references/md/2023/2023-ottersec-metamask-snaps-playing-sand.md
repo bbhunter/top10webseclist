@@ -3,7 +3,7 @@ type: Article
 title: "MetaMask Snaps: playing in the sand"
 description: "MetaMask Snaps run untrusted extension code behind an isolated iframe, LavaMoat and Secure ECMAScript, with an RPC allow-list deciding which wallet methods a snap may call. The article documents a permission bypass: arguments are validated, then re-serialised by a sanitiser that honours a caller-supplied toJSON method, so the object reaching the wallet differs from the one approved. A snap without the ethereum-provider endowment could thus issue blocked RPC calls."
 resource: "https://osec.io/blog/2023-11-01-metamask-snaps"
-tags: [article, webseclist-reference, en, ottersec, browser-extension, javascript, sandbox-escape, filter-bypass, toctou, privilege-escalation]
+tags: [article, webseclist-reference, en, ottersec, browser-extension, javascript, sandbox-escape, filter-bypass, toctou, privilege-escalation, owasp-a01-2021, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:37:22+00:00"

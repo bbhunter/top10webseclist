@@ -3,7 +3,7 @@ type: Article
 title: Wisec - The WIse SECurity
 description: "Stefano Di Paola replaces the bisection search in blind SQL injection with a mapping approach: where an id parameter yields many distinguishable responses, a CASE expression maps each character value onto a known page, cutting requests from L*log2(255) toward L. The dropped comment thread renames it Mappable Blind SQL Injection, corrects 56 to 64, and derives when it wins."
 resource: "http://www.wisec.it/sectou.php?id=4706611fe9210"
-tags: [article, webseclist-reference, wisec-it, sqli, database, side-channel, algorithmic-complexity, tooling, novel-technique]
+tags: [article, webseclist-reference, wisec-it, sqli, database, side-channel, algorithmic-complexity, tooling, novel-technique, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:42+00:00"

@@ -7,6 +7,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 
 import refs
+from refslib import tags as tags_module
 
 
 class _Store(object):
@@ -450,33 +451,52 @@ class DigestSummaryTests(unittest.TestCase):
 
 class DigestAcceptTests(unittest.TestCase):
     KNOWN = {"https://example.test/a": {"slug": "a", "content_sha256": "d" * 64}}
-    VOCAB = {name: 9 for name in
-             ("xss", "csrf", "javascript", "info-leak", "dns", "tls", "cookie",
-              "flash", "java", "php", "waf-bypass", "tooling")}
+    VOCAB = {"aliases": {"wasm": "webassembly"},
+             "tags": {name: {"documents": 9} for name in
+                      ("xss", "csrf", "javascript", "info-leak", "dns", "tls",
+                       "cookie", "flash", "java", "php", "waf-bypass",
+                       "tooling", "webassembly")}}
 
     def accept(self, **reading):
         return refs._accept_digest("https://example.test/a", reading,
                                    self.KNOWN, self.VOCAB)
 
     def test_takes_a_good_reading(self):
-        reason, text, tags, proposals = self.accept(
+        reason, text, tags, fresh = self.accept(
             text="A finding.", tags=["xss", "csrf", "javascript", "info-leak"])
         self.assertEqual(reason, "")
         self.assertEqual(text, "A finding.")
         self.assertEqual(tags, ["xss", "csrf", "javascript", "info-leak"])
-        self.assertEqual(proposals, [])
+        self.assertEqual(fresh, [])
 
-    def test_refuses_an_unknown_tag(self):
-        reason, _, _, _ = self.accept(text="A finding.",
-                                      tags=["xss", "not-a-real-tag"])
-        self.assertIn("not in the vocabulary", reason)
-
-    def test_strips_a_proposal_and_reports_it(self):
-        reason, _, tags, proposals = self.accept(text="A finding.",
-                                                 tags=["xss", "?brand-new"])
+    def test_adopts_an_unknown_tag_and_reports_it(self):
+        """The reviewer had the document open; refusing the word lost that."""
+        reason, _, tags, fresh = self.accept(text="A finding.",
+                                             tags=["xss", "brand-new"])
         self.assertEqual(reason, "")
-        self.assertEqual(tags, ["xss"])
-        self.assertEqual(proposals, ["brand-new"])
+        self.assertEqual(tags, ["xss", "brand-new"])
+        self.assertEqual(fresh, ["brand-new"])
+
+    def test_a_proposal_is_kept_rather_than_stripped(self):
+        reason, _, tags, fresh = self.accept(text="A finding.",
+                                             tags=["xss", "?brand-new"])
+        self.assertEqual(reason, "")
+        self.assertEqual(tags, ["xss", "brand-new"])
+        self.assertEqual(fresh, ["brand-new"])
+
+    def test_case_alone_never_makes_a_second_tag(self):
+        """`XSS` and `xss` were both in the archive; the capitalised one had 1."""
+        reason, _, tags, fresh = self.accept(text="A finding.",
+                                             tags=["XSS", "xss", " Csrf "])
+        self.assertEqual(reason, "")
+        self.assertEqual(tags, ["xss", "csrf"])
+        self.assertEqual(fresh, [])
+
+    def test_an_alias_publishes_the_canonical_tag(self):
+        reason, _, tags, fresh = self.accept(text="A finding.", tags=["wasm"])
+        self.assertEqual(reason, "")
+        self.assertEqual(tags, ["webassembly"])
+        self.assertEqual(fresh, [])
 
     def test_allows_a_narrow_document_its_one_honest_tag(self):
         # The annual list page is `survey` and nothing else. Padding it up to a
@@ -495,7 +515,7 @@ class DigestAcceptTests(unittest.TestCase):
             self.assertEqual(kept, tags)
 
     def test_refuses_an_overstuffed_tag_set(self):
-        many = sorted(self.VOCAB)[:refs.DIGEST_TAGS_MAX + 1]
+        many = sorted(self.VOCAB["tags"])[:refs.DIGEST_TAGS_MAX + 1]
         self.assertIn("tag(s)", self.accept(text="A finding.", tags=many)[0])
 
     def test_deduplicates_a_repeated_tag(self):
@@ -510,6 +530,61 @@ class DigestAcceptTests(unittest.TestCase):
         reason, _, _, _ = refs._accept_digest("https://nope.test/", {},
                                               self.KNOWN, self.VOCAB)
         self.assertIn("no such reference", reason)
+
+
+class TagVocabularyTests(unittest.TestCase):
+    """The JSON vocabulary: normalisation, aliases and the OWASP facet."""
+
+    def test_normalise_folds_case_space_and_punctuation(self):
+        for written, expected in (("XSS", "xss"), ("  Prototype Pollution ",
+                                                   "prototype-pollution"),
+                                  ("cache_poisoning", "cache-poisoning"),
+                                  ("SSRF!!", "ssrf"), ("a--b", "a-b")):
+            self.assertEqual(expected, tags_module.normalise(written), written)
+
+    def test_normalise_keeps_a_proposal_marker(self):
+        self.assertEqual("?padding-oracle", tags_module.normalise("?Padding Oracle"))
+
+    def test_an_alias_chain_resolves_to_its_end(self):
+        vocabulary = {"aliases": {"a": "b", "b": "c"}}
+        self.assertEqual("c", tags_module.resolve("A", vocabulary))
+
+    def test_an_alias_loop_stops_rather_than_hanging(self):
+        vocabulary = {"aliases": {"a": "b", "b": "a"}}
+        self.assertIn(tags_module.resolve("a", vocabulary), {"a", "b"})
+
+    def test_owasp_categories_are_earned_from_technique_tags(self):
+        vocabulary = tags_module.default_vocabulary()
+        self.assertEqual(["A03:2021"],
+                         tags_module.owasp_categories(["xss"], vocabulary))
+        self.assertEqual(["A01:2021", "A03:2021"],
+                         tags_module.owasp_categories(["idor", "sqli"], vocabulary))
+        self.assertEqual([], tags_module.owasp_categories(["tooling"], vocabulary))
+
+    def test_a_category_becomes_a_searchable_tag(self):
+        self.assertEqual("owasp-a03-2021", tags_module.owasp_tag("A03:2021"))
+
+    def test_the_ten_categories_are_all_present(self):
+        vocabulary = tags_module.default_vocabulary()
+        idents = [c["id"] for c in vocabulary["owasp"]["categories"]]
+        self.assertEqual(10, len(idents))
+        self.assertEqual(sorted(idents), idents)
+
+    def test_recount_keeps_a_tag_that_fell_to_no_documents(self):
+        """Dropping it would delete the maintainer's mapping with it."""
+        vocabulary = {"tags": {"xss": {"documents": 3, "note": "keep me"}}}
+        tags_module.recount(vocabulary, {})
+        self.assertEqual(0, vocabulary["tags"]["xss"]["documents"])
+        self.assertEqual("keep me", vocabulary["tags"]["xss"]["note"])
+
+    def test_register_reports_only_what_was_new(self):
+        vocabulary = {"tags": {"xss": {"documents": 1}}}
+        self.assertEqual(["desync"], tags_module.register(vocabulary, ["xss", "desync"]))
+
+    def test_a_missing_file_falls_back_to_the_seed(self):
+        vocabulary = tags_module.load(Path("does-not-exist-anywhere.json"))
+        self.assertIn("owasp", vocabulary)
+        self.assertEqual("wasm", sorted(vocabulary["aliases"])[0])
 
 
 if __name__ == "__main__":

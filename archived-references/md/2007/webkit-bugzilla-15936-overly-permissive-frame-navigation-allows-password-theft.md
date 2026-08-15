@@ -3,7 +3,7 @@ type: Article
 title: 15936 – Overly permissive frame navigation allows password theft
 description: "WebKit bug 15936, the vendor-side disclosure behind the Stanford frame-hijacking work: WebKit's frame navigation policy let one frame navigate frames it did not own, so a cross-origin page could replace a login frame and harvest the password. Collin Jackson's patch tightens the policy to Internet Explorer 7's single-window rule."
 resource: "https://bugs.webkit.org/show_bug.cgi?id=15936"
-tags: [article, webseclist-reference, en, webkit-bugzilla, iframe, same-origin-policy, sop-bypass, phishing, vendor-advisory, mitigation]
+tags: [article, webseclist-reference, en, webkit-bugzilla, iframe, same-origin-policy, sop-bypass, phishing, vendor-advisory, mitigation, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-08T23:50:56+00:00"

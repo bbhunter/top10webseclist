@@ -3,7 +3,7 @@ type: Article
 title: "PhishFarm: A Scalable Framework for Measuring the Effectiveness of Evasion Techniques against Browser Phishing Blacklists"
 description: PhishFarm deploys 2,380 live PayPal-branded decoy phishing sites on fresh .com domains, each behind one of six request filters taken from real phishing kits, reports them to 10 anti-phishing entities and times browser blacklisting. Cloaking by geolocation, device type or JavaScript cut the chance of blacklisting by over 55 percent, and mobile browsers failed to warn at all.
 resource: "https://doi.org/10.1109/SP.2019.00049"
-tags: [article, webseclist-reference, filter-bypass, detection, measurement-study, large-scale-scan, defence, mitigation]
+tags: [article, webseclist-reference, filter-bypass, detection, measurement-study, large-scale-scan, defence, mitigation, owasp-a05-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:59+00:00"

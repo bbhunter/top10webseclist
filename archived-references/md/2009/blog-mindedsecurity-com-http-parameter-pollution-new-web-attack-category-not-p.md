@@ -3,7 +3,7 @@ type: Article
 title: "Minded Security Blog: Http Parameter Pollution a new web attack category (not just a new buzzword :p)"
 description: Announces the AppSec EU 2009 talk naming HTTP Parameter Pollution. Injecting query string delimiters lets an attacker add or override parameters a server or client later re-parses, so hardcoded values can be replaced, application behaviour altered and input validation or WAF rules bypassed. Reported against Google Search Appliance scripts, Ask.com and Yahoo Mail Classic.
 resource: "http://blog.mindedsecurity.com/2009/05/http-parameter-pollution-new-web-attack.html"
-tags: [article, webseclist-reference, blog-mindedsecurity-com, http, parser-differential, injection, waf-bypass, filter-bypass, novel-technique, url-parsing]
+tags: [article, webseclist-reference, blog-mindedsecurity-com, http, parser-differential, injection, waf-bypass, filter-bypass, novel-technique, url-parsing, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T13:08:53+00:00"

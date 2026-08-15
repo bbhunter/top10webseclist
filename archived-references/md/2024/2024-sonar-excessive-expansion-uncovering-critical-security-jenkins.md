@@ -3,7 +3,7 @@ type: Article
 title: "Excessive Expansion: Uncovering Critical Security Vulnerabilities in Jenkins"
 description: "Two vulnerabilities in Jenkins' built-in command line interface. The args4j parser expands any argument beginning with @ by reading the named file and splitting it into arguments, so a command that echoes unresolved arguments leaks arbitrary file contents to read-only and, in some configurations, anonymous users, reaching credentials and hence code execution (CVE-2024-23897)."
 resource: "https://www.sonarsource.com/blog/excessive-expansion-uncovering-critical-security-vulnerabilities-in-jenkins/"
-tags: [article, webseclist-reference, en, sonar, jenkins, ci-cd, websocket, csrf, info-leak, privilege-escalation, cve, java]
+tags: [article, webseclist-reference, en, sonar, jenkins, ci-cd, websocket, csrf, info-leak, privilege-escalation, cve, java, owasp-a01-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:32+00:00"

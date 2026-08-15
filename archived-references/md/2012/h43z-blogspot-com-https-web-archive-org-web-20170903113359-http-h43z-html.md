@@ -3,7 +3,7 @@ type: Article
 title: ".[h43z]: what's real and what's not"
 description: A practical build on the browser event hijacking technique. The page intercepts ctrl+f with preventDefault, shows a replica search bar over a fake leaked-password list, and captures whatever the visitor types while faking result highlighting and counts. The author notes the result statistics are randomised and a full cross-browser version would be convincing.
 resource: "https://web.archive.org/web/20130309020232/http://h43z.blogspot.com/2012/11/whats-real-and-whats-not.html"
-tags: [article, webseclist-reference, h43z-blogspot-com, javascript, ui-redress, dom, info-leak, prior-art-extension]
+tags: [article, webseclist-reference, h43z-blogspot-com, javascript, ui-redress, dom, info-leak, prior-art-extension, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:11:00+00:00"

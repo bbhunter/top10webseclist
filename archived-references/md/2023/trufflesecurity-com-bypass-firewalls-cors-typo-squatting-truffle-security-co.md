@@ -3,7 +3,7 @@ type: Article
 title: Bypass firewalls with of-CORs and typo-squatting ◆ Truffle Security Co.
 description: "Shows that internal corporate web apps often enable wildcard CORS without authentication, and that an attacker can reach them by registering typo variants of a company's internal domain. A mistyped visit registers a background service worker that keeps probing internal hosts after the browser is redirected away, reporting back which are readable and their page content."
 resource: "https://trufflesecurity.com/blog/of-cors/"
-tags: [article, webseclist-reference, en-US, trufflesecurity-com, cors, typosquatting, service-worker, sop-bypass, info-leak, tooling, bug-bounty, javascript]
+tags: [article, webseclist-reference, en-US, trufflesecurity-com, cors, typosquatting, service-worker, sop-bypass, info-leak, tooling, bug-bounty, javascript, owasp-a01-2021, owasp-a06-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:18+00:00"

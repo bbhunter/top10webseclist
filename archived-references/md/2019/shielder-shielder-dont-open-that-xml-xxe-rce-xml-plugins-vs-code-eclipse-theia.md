@@ -3,7 +3,7 @@ type: Article
 title: "Shielder - Don’t open that XML: XXE to RCE in XML plugins for VS Code, Eclipse, Theia, …"
 description: The LSP4XML language server parses XML as soon as an editor opens or saves it, so a malicious file triggers an external entity fetch with no further user action. Its DTD cache then writes the downloaded file to a path taken from the entity URL without sanitising it, so a traversal drops an executable into an autostart folder and runs it at next login.
 resource: "https://www.shielder.it/blog/dont-open-that-xml-xxe-to-rce-in-xml-plugins-for-vs-code-eclipse-theia/"
-tags: [article, webseclist-reference, en, shielder, xxe, path-traversal, rce, ssrf, java, attack-chain, cve]
+tags: [article, webseclist-reference, en, shielder, xxe, path-traversal, rce, ssrf, java, attack-chain, cve, owasp-a01-2021, owasp-a03-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:41:31+00:00"

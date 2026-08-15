@@ -3,7 +3,7 @@ type: Article
 title: RCE via LDAP truncation on hg.mozilla.org
 description: "Mozilla's hg.mozilla.org SSH shell passed a user-supplied e-mail address into an LDAP filter after stripping quotes and parentheses. An encoded null byte truncated the LDAP query so the filter still matched, while the rest of the input survived into a shell find command run through a pipe, giving authenticated remote command execution on the Mercurial server."
 resource: "https://0day.click/recipe/pash/"
-tags: [article, webseclist-reference, en, 0day-click, command-injection, rce, injection, filter-bypass, python, bug-bounty]
+tags: [article, webseclist-reference, en, 0day-click, command-injection, rce, injection, filter-bypass, python, bug-bounty, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T00:58:37+00:00"

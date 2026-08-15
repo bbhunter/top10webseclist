@@ -3,7 +3,7 @@ type: Article
 title: Permission Hijacking at Scale
 description: Permissions delegated to an iframe cannot be revoked by the host page, prompts name the top-level origin rather than the frame, and delegated grants never re-prompt. Compromising one widely embedded support-chat vendor, through a markdown formaction XSS and an unsanitised widget parameter, hands an attacker camera, microphone and screen capture across every embedding site.
 resource: "https://albertofdr.github.io/post/permission-hijacking-2025/"
-tags: [article, webseclist-reference, en-us, bubu, iframe, supply-chain, xss, clickjacking, csp, privilege-escalation, case-study, bug-bounty]
+tags: [article, webseclist-reference, en-us, bubu, iframe, supply-chain, xss, clickjacking, csp, privilege-escalation, case-study, bug-bounty, owasp-a01-2021, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021, owasp-a06-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:00:35+00:00"

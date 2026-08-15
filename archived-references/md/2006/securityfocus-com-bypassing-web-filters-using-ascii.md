@@ -3,7 +3,7 @@ type: Article
 title: Bypassing of web filters by using ASCII
 description: "Kurt Huwig's iKu advisory on setting the high bit of ASCII characters. Internet Explorer 7 strips the eighth bit and renders the text as ordinary letters, while virus scanners and content filters read the high-bit bytes as something else entirely, so a page passes inspection and still displays the intended content to the reader."
 resource: "http://www.securityfocus.com/archive/1/437948/30/0/threaded"
-tags: [article, webseclist-reference, en, securityfocus-com, filter-bypass, charset, encoding, xss, novel-technique, parser-differential]
+tags: [article, webseclist-reference, en, securityfocus-com, filter-bypass, charset, encoding, xss, novel-technique, parser-differential, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:29:28+00:00"

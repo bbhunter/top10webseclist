@@ -3,7 +3,7 @@ type: Article
 title: Multiple vulnerabilities in Apache Struts2 and property oriented programming with Java
 description: "A blackbox test where ?id=abc'+a+'def returned null exposed OGNL evaluation in Struts2 parameter names. The author shows the character whitelist still permits dynamic names and list indexes, giving constructor calls and arbitrary file overwrite via FileWriter, then chains single-argument constructors and setters found by regex across Apache Commons into file upload, which he calls property oriented programming."
 resource: "https://websec.wordpress.com/2012/01/04/multiple-vulnerabilities-in-apache-struts2-and-property-oriented-programming-with-java/"
-tags: [article, webseclist-reference, en, reiners-weblog, rce, java, struts, gadget-chain, injection, filter-bypass, file-upload, novel-technique, cve]
+tags: [article, webseclist-reference, en, reiners-weblog, rce, java, struts, gadget-chain, injection, filter-bypass, file-upload, novel-technique, cve, owasp-a03-2021, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:06:13+00:00"

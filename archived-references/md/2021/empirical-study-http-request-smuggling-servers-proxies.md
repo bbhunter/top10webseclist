@@ -3,7 +3,7 @@ type: Whitepaper
 title: Empirical Study of HTTP Request Smuggling in Servers and Proxies
 description: A systematic test of six open-source proxies and six servers for HTTP request smuggling, sending a corpus of every known desync variant and comparing how each pair interprets message length. It found 17 parsing behaviours that disagree with the specification, and proxy-server combinations that let an attacker smuggle a second request past the front end to reach forbidden paths.
 resource: "https://kth.diva-portal.org/smash/get/diva2:1596031/FULLTEXT01.pdf"
-tags: [whitepaper, webseclist-reference, request-smuggling, desync, parser-differential, auth-bypass, http, proxy, reverse-proxy, measurement-study]
+tags: [whitepaper, webseclist-reference, request-smuggling, desync, parser-differential, auth-bypass, http, proxy, reverse-proxy, measurement-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:49+00:00"

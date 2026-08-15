@@ -3,7 +3,7 @@ type: Article
 title: New Attack Uses SSL/TLS Information Leak to Hijack HTTPS Sessions
 description: "Threatpost's pre-disclosure report on CRIME: Rizzo and Duong found an optional TLS feature that leaks enough about encrypted traffic to recover session cookies, in every TLS version including 1.2 and whatever the cipher suite. With a man-in-the-middle position and JavaScript in the victim's browser they decrypt cookies; the RC4 switch that stopped BEAST does not help."
 resource: "https://web.archive.org/web/20170903113359/http://threatpost.com/en_us/blogs/new-attack-uses-ssltls-information-leak-hijack-https-sessions-090512"
-tags: [article, webseclist-reference, en, threatpost-com, tls, https, side-channel, cookie, info-leak, novel-technique]
+tags: [article, webseclist-reference, en, threatpost-com, tls, https, side-channel, cookie, info-leak, novel-technique, owasp-a02-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:44+00:00"

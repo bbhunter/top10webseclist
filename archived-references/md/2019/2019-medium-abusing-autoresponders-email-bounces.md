@@ -3,7 +3,7 @@ type: Article
 title: Abusing autoresponders and email bounces
 description: "Autoresponders and delivery bounces return the attacker's own message together with internal details. Filling a Google Drive owner's mailbox made the access-request mail, sent from the attacker's address, bounce back with the owner's address and document title, and a strict DMARC policy on an attacker domain forces a forwarder to bounce and expose the hidden downstream address."
 resource: "https://medium.com/intigriti/abusing-autoresponders-and-email-bounces-9b1995eb53c2"
-tags: [article, webseclist-reference, en, medium, info-leak, email, smtp, auth-bypass, bug-bounty, case-study, novel-technique]
+tags: [article, webseclist-reference, en, medium, info-leak, email, smtp, auth-bypass, bug-bounty, case-study, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:29+00:00"

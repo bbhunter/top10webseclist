@@ -3,7 +3,7 @@ type: Article
 title: "HOW TO: Spy on the Webcams of Your Website Visitors » Feross.org"
 description: "Adobe had added framebusting JavaScript to the Flash Settings Manager page, so instead of framing the page the author framed the settings SWF file directly, which the framebuster never guarded. Overlaying the transparent SWF on a game made visitors' clicks silently grant webcam and microphone access. Shown in Firefox and Safari for Mac; Adobe fixed it in days."
 resource: "https://www.feross.org/webcam-spy/"
-tags: [article, webseclist-reference, en, feross-org, clickjacking, ui-redress, flash, iframe, filter-bypass, novel-technique, case-study]
+tags: [article, webseclist-reference, en, feross-org, clickjacking, ui-redress, flash, iframe, filter-bypass, novel-technique, case-study, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:10:32+00:00"

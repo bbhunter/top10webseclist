@@ -3,7 +3,7 @@ type: Article
 title: Forging HTTP request headers with Flash
 description: "Amit Klein's Bugtraq write-up on Flash's LoadVars.addRequestHeader, which lets a movie set arbitrary HTTP request headers from the browser. Forging an Expect header reaches an Apache flaw that reflects the header value into the error response, turning any site on a vulnerable server into a cross-site scripting target regardless of its own code."
 resource: "http://www.securityfocus.com/archive/1/441014/30/0/threaded"
-tags: [article, webseclist-reference, securityfocus-com, flash, http, header-injection, csrf, xss, request-smuggling, novel-technique]
+tags: [article, webseclist-reference, securityfocus-com, flash, http, header-injection, csrf, xss, request-smuggling, novel-technique, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:32+00:00"

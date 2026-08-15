@@ -3,7 +3,7 @@ type: Article
 title: Two Bypasses for Chrome’s Sanitizer API
 description: "Two ways past Chrome's built-in Sanitizer API, including a javascript: URL that survives sanitisation because a U+2028 line separator splits the scheme token the parser checks against the one it later resolves."
 resource: "https://slcyber.io/research-center/two-bypasses-for-chromes-sanitizer-api/"
-tags: [article, webseclist-reference, en, searchlight-cyber, sanitizer-bypass, xss, filter-bypass, url-parsing, unicode, dom, novel-technique]
+tags: [article, webseclist-reference, en, searchlight-cyber, sanitizer-bypass, xss, filter-bypass, url-parsing, unicode, dom, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:05:45+00:00"

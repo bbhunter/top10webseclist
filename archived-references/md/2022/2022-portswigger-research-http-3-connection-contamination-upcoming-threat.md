@@ -3,7 +3,7 @@ type: Article
 title: "HTTP/3 connection contamination: an upcoming threat?"
 description: Browsers coalesce requests for different hostnames onto one HTTP/2 or HTTP/3 connection when the hosts share an IP address and certificate, while a reverse proxy that picks its backend from the first request on a connection then misroutes everything after it. XSS on one sibling host therefore becomes control of a more sensitive one, and HTTP/3 removes the IP-match requirement.
 resource: "https://portswigger.net/research/http-3-connection-contamination"
-tags: [article, webseclist-reference, portswigger-research, sop-bypass, http3, http2, reverse-proxy, xss, tls, load-balancer, novel-technique]
+tags: [article, webseclist-reference, portswigger-research, sop-bypass, http3, http2, reverse-proxy, xss, tls, load-balancer, novel-technique, owasp-a01-2021, owasp-a02-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:48+00:00"

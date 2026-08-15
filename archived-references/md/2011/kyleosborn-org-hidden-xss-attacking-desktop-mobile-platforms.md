@@ -3,7 +3,7 @@ type: Article
 title: » The Hidden XSS Attacking the Desktop & Mobile Platforms
 description: "Conference talk arguing that XSS no longer needs a browser tab: injected script inside privileged containers such as browser extensions and mobile app webviews runs with whatever host permissions the container holds. The material covers cross-origin reads and a Google application vulnerability, with released tooling at kos.io/xsspwn."
 resource: "http://kyleosborn.org/2011/10/09/the-hidden-xss-attacking-the-desktop-mobile-platforms-slides-video/"
-tags: [article, webseclist-reference, en-US, kyleosborn-org, xss, browser-extension, javascript, sop-bypass, info-leak, novel-technique, tooling]
+tags: [article, webseclist-reference, en-US, kyleosborn-org, xss, browser-extension, javascript, sop-bypass, info-leak, novel-technique, tooling, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:00+00:00"

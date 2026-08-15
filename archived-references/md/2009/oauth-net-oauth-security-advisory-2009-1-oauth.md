@@ -3,7 +3,7 @@ type: Advisory
 title: OAuth Security Advisory 2009.1 — OAuth
 description: A session fixation flaw in the OAuth 1.0 three-legged authorization flow. The attacker starts the flow at an honest consumer, saves the authorization URI containing his own Request Token, and lures a victim into clicking it; once the victim approves at the legitimate service provider, the attacker completes the flow with the saved token. Fixed by OAuth Core 1.0 Revision A.
 resource: "https://oauth.net/advisories/2009-1/"
-tags: [advisory, webseclist-reference, en, oauth-net, oauth, session-fixation, sso, auth-bypass, vendor-advisory, mitigation]
+tags: [advisory, webseclist-reference, en, oauth-net, oauth, session-fixation, sso, auth-bypass, vendor-advisory, mitigation, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:35:41+00:00"

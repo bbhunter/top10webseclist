@@ -3,7 +3,7 @@ type: Article
 title: "Security Research Laboratory : Struts 2 Remote ..."
 description: "A Coverity write-up of the Struts 2 wildcard-mapping RCE: an action name of the form ${...} or %{...} reaches StrutsResultSupport.conditionalParse and is evaluated a second time as OGNL, so a URL alone reaches Runtime.exec. JavaSnoop tracing pins the sink, and the same double evaluation is found in HttpHeaderResult and DefaultUrlHelper. Fixed in 2.3.14.2."
 resource: "http://web.archive.org/web/20160507023636/https://communities.coverity.com/blogs/security/2013/05/29/struts2-remote-code-execution-via-ognl-injection"
-tags: [article, webseclist-reference, en, communities-coverity-com, rce, struts, java, injection, ssti, dynamic-analysis, vendor-advisory]
+tags: [article, webseclist-reference, en, communities-coverity-com, rce, struts, java, injection, ssti, dynamic-analysis, vendor-advisory, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:35:26+00:00"

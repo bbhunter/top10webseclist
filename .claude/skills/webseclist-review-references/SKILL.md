@@ -499,15 +499,26 @@ reports anything over the aim; it will not truncate a rambling summary into a
 fragment, because doing that once kept an opening line and deleted the four
 findings beneath it. Rewrite such a summary into sentences instead.
 
-**Tags come from `archived-references/tag-vocabulary.md`, aiming at 4 to 10 per
-document** - aiming, because a genuinely narrow document is better served by two
-than padded up to a threshold with tags that do not apply. A word that file does
-not have is a PROPOSAL: write it `?like-this`.
-Proposals are reported and stripped and never reach a published file; an unknown
-tag NOT marked as a proposal is refused outright, and adding it to the
-vocabulary file to get past that defeats the only control there is. Hold the
-proposal, report it, and let a maintainer promote it once a second document has
-asked for the same word.
+**Tags come from `archived-references/tag-vocabulary.json`, at most 10 per
+document** - at most, because a genuinely narrow document is better served by two
+than padded up to a threshold with tags that do not apply. The JSON is the
+record and `tag-vocabulary.md` is a reading of it; both are generated.
+
+**Use a word the archive already uses before inventing one** - a reader
+searching `prototype-pollution` should find every document about it, not the
+ones that happened to pick that spelling. A word the vocabulary lacks is still
+allowed: write it, and it is adopted and reported as new. Refusing it threw away
+the one moment someone had actually read the document. `?like-this` still marks
+a word you want a maintainer to look at, and it is kept rather than stripped.
+
+Case and punctuation are folded before anything is written, so `XSS` and `xss`
+can never both exist. If the word you need means something the archive already
+names, say so in the report: the fix is an `aliases` entry in the JSON, which
+retires the old spelling everywhere, not a second word beside it.
+
+**Never tag an OWASP category by hand.** Categories are derived from the
+technique tags by the mapping in the JSON, and reach the file as
+`owasp-a03-2021`.
 
 **The tags MUST name the techniques the document actually uses** - that is the
 rule, and no count can check it. You have just read the document, so this is the
@@ -566,9 +577,11 @@ Say what was actually wrong and what you did about it, then:
   tree lacks (a fault, which you filed) or a reference the archive never got a
   document for (already on `document-gaps.md`). Give each one its URL, so the
   acquisition run can act on the list without redoing the sweep;
-- the summaries and tags recorded: how many, and every tag PROPOSAL you held,
-  with the document that asked for it. A proposal nobody writes down is a
-  proposal that gets re-invented next year under a slightly different spelling;
+- the summaries and tags recorded: how many, and every tag that entered the
+  vocabulary as NEW, with the document that asked for it. A new word nobody
+  writes down gets re-invented next year under a slightly different spelling —
+  and name any that duplicate an existing tag, because those want an `aliases`
+  entry rather than a place in the list;
 - anything you deliberately left, and why;
 - judgement calls the maintainer should review — a new convention, an invented
   disambiguation, a credit resting on a handle rather than a stated name;

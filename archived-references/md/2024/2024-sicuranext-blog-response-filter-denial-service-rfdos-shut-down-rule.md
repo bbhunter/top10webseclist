@@ -3,7 +3,7 @@ type: Article
 title: "Response Filter Denial of Service (RFDoS): shut down a website by triggering WAF rule"
 description: "WAF response-body rules meant to stop SQL error and web shell leakage match plain strings with no special characters: ORA-1234, Dynamic SQL Error, OracleDriver, ---ASL-CONFIG-FILE---. Storing one in a review, username or email makes the WAF 403 that page for every visitor, a denial of service no sanitiser catches. A scan of WordPress ?s= reflection found 0.4-1.5% of 200,000 sites per ccTLD affected, and a byte-range request still retrieves what the rules block."
 resource: "https://blog.sicuranext.com/response-filter-denial-of-service-a-new-way-to-shutdown-a-website/"
-tags: [article, webseclist-reference, en, sicuranext-blog, dos, waf, waf-bypass, abuse-of-functionality, large-scale-scan, wordpress, http]
+tags: [article, webseclist-reference, en, sicuranext-blog, dos, waf, waf-bypass, abuse-of-functionality, large-scale-scan, wordpress, http, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:06:50+00:00"

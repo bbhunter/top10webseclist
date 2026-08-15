@@ -3,7 +3,7 @@ type: Article
 title: New Adobe Flash Zero-Day Used in Pawn Storm Campaign Targeting Foreign Affairs Ministries
 description: Vendor report that the Pawn Storm espionage group spear phished foreign affairs ministries with news themed links delivering a then unpatched Adobe Flash exploit, later assigned CVE-2015-7645 and affecting Flash 19.0.0.185 and 19.0.0.207. It lists SHA1 hashes for the exploit and payload files and the vendor detection rule.
 resource: "http://blog.trendmicro.com/trendlabs-security-intelligence/new-adobe-flash-zero-day-used-in-pawn-storm-campaign/"
-tags: [article, webseclist-reference, en-US, blog-trendmicro-com, flash, cve, vendor-advisory, rce, case-study, detection]
+tags: [article, webseclist-reference, en-US, blog-trendmicro-com, flash, cve, vendor-advisory, rce, case-study, detection, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:29:34+00:00"

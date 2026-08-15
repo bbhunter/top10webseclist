@@ -3,7 +3,7 @@ type: Article
 title: RFC1918 Blues ha.ckers.org web application security lab
 description: "Short post introducing a whitepaper on RFC 1918 private address space. With certain browsers and VPN clients, the flat reuse of ranges like 192.168.1.* makes IP collisions likely, so a client can be steered onto an attacker's host believing it is an internal one. Practitioners confirmed having seen such collisions occur accidentally."
 resource: "http://ha.ckers.org/blog/20090608/rfc1918-blues/"
-tags: [article, webseclist-reference, ha-ckers-org, info-leak, cache, dns-rebinding, case-study]
+tags: [article, webseclist-reference, ha-ckers-org, info-leak, cache, dns-rebinding, case-study, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:47+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "trusted friend attack: by Ashar Javed"
 description: "An attacker already on the victim's friend list starts a Facebook password reset, supplies a fresh email address, and has the three Trusted Friends confirmation codes sent to accounts he controls; POST-data manipulation defeats the shortened friend list. Of 250 real accounts tested, 69 were eligible and 11 were taken over. Other networks' support teams handed accounts over."
 resource: "http://web.archive.org/web/20160507023636/http://slid.es/mscasharjaved/trusted-friend-attack"
-tags: [article, webseclist-reference, slides, auth-bypass, novel-technique, email, dos, measurement-study, case-study, info-leak]
+tags: [article, webseclist-reference, slides, auth-bypass, novel-technique, email, dos, measurement-study, case-study, info-leak, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:21:55+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: HTML5 new XSS vectors
 description: "The archived document holds no article text, so its research cannot be described from the copy in this archive. The published Markdown and PDF contain only the modern site's recent-posts list; no capture of the 2009 article is held in the content store."
 resource: "http://www.thespanner.co.uk/2009/12/06/html5-new-xss-vectors/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, xss, javascript, filter-bypass]
+tags: [article, webseclist-reference, en, thespanner-co-uk, xss, javascript, filter-bypass, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:02:12+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Bypassing Mozilla Port Blocking
 description: "Mozilla blocks several dozen TCP ports to stop the HTML Form Protocol Attack, but the block is applied only to the http protocol handler. Requesting ftp://host:22/ connects anyway — fast if the port is open, a timeout if not — restoring vertical port scanning beyond 80/443 for JavaScript and HTML-only scanners."
 resource: "https://jeremiahgrossman.blogspot.com/2006/11/bypassing-mozilla-port-blocking.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, filter-bypass, ftp, url-parsing, detection, side-channel, timing-attack, novel-technique]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, filter-bypass, ftp, url-parsing, detection, side-channel, timing-attack, novel-technique, owasp-a05-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:56+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Bypassing SOP using the browser cache
 description: The browser cache is keyed only on the absolute URL, with no record of which origin requested it. A JSONP or CORS response cached after a legitimate same-site request is handed back to any site that requests the same URL, so Referer, Origin, SameSite and custom-header checks never run because the request never reaches the server.
 resource: "https://portswigger-labs.net/fmnt.php?x=acunetix.com/blog/web-security-zone/bypassing-sop-using-the-browser-cache/"
-tags: [article, webseclist-reference, en, acunetix, sop-bypass, same-origin-policy, cache, xsleak, info-leak, cors, cookie, http]
+tags: [article, webseclist-reference, en, acunetix, sop-bypass, same-origin-policy, cache, xsleak, info-leak, cors, cookie, http, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:37+00:00"

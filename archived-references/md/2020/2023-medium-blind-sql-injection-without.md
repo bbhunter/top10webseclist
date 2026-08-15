@@ -3,7 +3,7 @@ type: Article
 title: Blind SQL Injection without an “in”
 description: A blind MySQL injection worked under a filter banning UNION SELECT, information_schema and any word containing in or or. Table names come from sys.x$schema_flattened_keys and sys.schema_table_statistics, row-vs-row comparison leaks data without knowing column names, and CONCAT with CAST(0 AS JSON) forces a case-sensitive byte comparison.
 resource: "https://medium.com/@terjanq/blind-sql-injection-without-an-in-1e14ba1d4952"
-tags: [article, webseclist-reference, en, medium, sqli, filter-bypass, mysql, info-leak, database, php, algorithmic-complexity, case-study]
+tags: [article, webseclist-reference, en, medium, sqli, filter-bypass, mysql, info-leak, database, php, algorithmic-complexity, case-study, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:25+00:00"

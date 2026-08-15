@@ -3,7 +3,7 @@ type: Whitepaper
 title: Attacking CAPTCHAs for Fun and Profit
 description: "A survey of CAPTCHA implementations on high-traffic sites, sorted into breaches of client-side trust, server-side state flaws and image weaknesses. It names rainbow tables against finite CAPTCHA sets, CAPTCHA fixation, in-session brute-forcing and accumulation. Image attacks combine multiple OCR engines and selective substitution, driven by the author's TesserCap tool."
 resource: "https://web.archive.org/web/20170903113359/http://www.mcafee.com/us/resources/white-papers/foundstone/wp-attacking-captchas-for-fun-profit.pdf"
-tags: [whitepaper, webseclist-reference, auth-bypass, session-fixation, race-condition, tooling, filter-bypass, survey]
+tags: [whitepaper, webseclist-reference, auth-bypass, session-fixation, race-condition, tooling, filter-bypass, survey, owasp-a01-2021, owasp-a04-2021, owasp-a05-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T16:33:55+00:00"

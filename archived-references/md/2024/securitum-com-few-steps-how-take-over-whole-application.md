@@ -3,7 +3,7 @@ type: Article
 title: Few steps on how to take over a whole application
 description: "An audit-trail endpoint returned other users' records with their password reset tokens embedded, and only the last six hexadecimal characters varied. Brute-forcing that small range let a low-privileged user harvest email addresses, trigger resets, read the fresh admin token out of the same log, and overwrite the administrator's password."
 resource: "https://www.securitum.com/few_steps_on_how_to_take_over_a_whole_application.html"
-tags: [article, webseclist-reference, en, securitum-com, idor, auth-bypass, privilege-escalation, info-leak, case-study]
+tags: [article, webseclist-reference, en, securitum-com, idor, auth-bypass, privilege-escalation, info-leak, case-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:32:28+00:00"

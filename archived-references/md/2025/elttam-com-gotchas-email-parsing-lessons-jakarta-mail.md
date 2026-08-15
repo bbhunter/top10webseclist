@@ -3,7 +3,7 @@ type: Article
 title: Gotchas in Email Parsing - Lessons From Jakarta Mail
 description: "Jakarta Mail parses email addresses differently from how applications read the same string: some constructors skip validation entirely, a bracketed address followed by a second one delivers to the first, and encoded words decode inside personal names. An attacker can register an address an app treats as a privileged domain while the mail goes to their own."
 resource: "https://www.elttam.com/blog/jakarta-mail-primitives"
-tags: [article, webseclist-reference, en, elttam-com, parser-differential, auth-bypass, filter-bypass, privilege-escalation, email, java, spring, prior-art-extension]
+tags: [article, webseclist-reference, en, elttam-com, parser-differential, auth-bypass, filter-bypass, privilege-escalation, email, java, spring, prior-art-extension, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:24:44+00:00"

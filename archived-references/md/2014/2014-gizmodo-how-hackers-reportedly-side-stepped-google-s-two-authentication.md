@@ -3,7 +3,7 @@ type: Article
 title: "How Hackers Reportedly Side-Stepped Google's Two-Factor Authentication"
 description: A developer lost his Instagram account despite Gmail two-factor authentication, because his mobile carrier was talked into forwarding his phone number and the attackers received the reset codes. It shows phone-based second factors inherit the weak identity checks of telecom customer support.
 resource: "https://web.archive.org/web/20160403035045/http://gizmodo.com/how-hackers-reportedly-side-stepped-gmails-two-factor-a-1653631338"
-tags: [article, webseclist-reference, en, gizmodo, auth-bypass, email, case-study]
+tags: [article, webseclist-reference, en, gizmodo, auth-bypass, email, case-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:10:27+00:00"

@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Undefined-oriented Programming: Detecting and Chaining Prototype Pollution Gadgets in Node.js Template Engines for Malicious Consequences"
 description: "Prototype pollution gadgets found by prior work are direct: a polluted property flows straight to a sink. This paper defines chained gadgets, in which one polluted undefined property alters the control- or data-flow of another, and builds a concolic-execution framework that treats undefined properties as symbols in order to detect and chain them. Applied to Node.js template engines it reports 25 zero-day gadgets, 13 of them chained, reaching code-execution and XSS sinks."
 resource: "https://yinzhicao.org/UoP/UoP-Oakland.pdf"
-tags: [whitepaper, webseclist-reference, prototype-pollution, nodejs, javascript, gadget-chain, rce, dynamic-analysis, tooling, xss]
+tags: [whitepaper, webseclist-reference, prototype-pollution, nodejs, javascript, gadget-chain, rce, dynamic-analysis, tooling, xss, owasp-a03-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:24+00:00"

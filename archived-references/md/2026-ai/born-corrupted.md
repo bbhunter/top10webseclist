@@ -3,7 +3,7 @@ type: Whitepaper
 title: Born Corrupted
 description: "Four language ecosystems are attacked through their build systems. Julia's Buildkite job sets pipeline meta-data that a privileged signing job then clones from; Flutter's Cocoon reads .ci.yaml at the fork's commit, so BASH_ENV in it runs code on privileged LUCI bots and poisons a shared cache; Go's IAP interceptor passes an empty audience, so JWT validation always passes; and python.org's auth class returns True on failure, letting any API key repoint a release download."
 resource: "https://i.blackhat.com/BH-USA-26/Presentations/US-26-SplitlineNg-BornCorrupted-Thursday.pdf"
-tags: [whitepaper, webseclist-reference, supply-chain, ci-cd, auth-bypass, rce, privilege-escalation, gcp, jwt, django]
+tags: [whitepaper, webseclist-reference, supply-chain, ci-cd, auth-bypass, rce, privilege-escalation, gcp, jwt, django, owasp-a01-2021, owasp-a06-2021, owasp-a07-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:40:34+00:00"

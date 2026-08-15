@@ -3,7 +3,7 @@ type: Article
 title: A Comprehensive Formal Security Analysis of OAuth 2.0
 description: "The first formal analysis of the OAuth 2.0 standard in an expressive model of the web, covering all four grant types with malicious relying parties, identity providers and browsers in scope. It uncovers four attacks that break OAuth's authorization, authentication and session integrity guarantees and carry over to OpenID Connect, proposes fixes, and proves the fixed protocol secure."
 resource: "https://arxiv.org/abs/1601.01229"
-tags: [article, webseclist-reference, en, arxiv-org, oauth, openid, sso, auth-bypass, formal-analysis, session-fixation, csrf]
+tags: [article, webseclist-reference, en, arxiv-org, oauth, openid, sso, auth-bypass, formal-analysis, session-fixation, csrf, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:05+00:00"

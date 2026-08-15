@@ -3,7 +3,7 @@ type: Article
 title: Telerik Revisited
 description: "Re-examines CVE-2017-11317 in Telerik UI for ASP.NET and finds it is more than an arbitrary file upload: the rauPostData blob carries an assembly-qualified type name handed to JavaScriptSerializer, giving arbitrary deserialization. Using AssemblyInstaller to load a mixed-mode DLL runs its DllMain, so unauthenticated code execution needs no write access to the web root."
 resource: "https://code-white.com/blog/2019-02-telerik-revisited/"
-tags: [article, webseclist-reference, code-white, deserialization, rce, gadget-chain, file-upload, dotnet, aspnet, cve, prior-art-extension, case-study]
+tags: [article, webseclist-reference, code-white, deserialization, rce, gadget-chain, file-upload, dotnet, aspnet, cve, prior-art-extension, case-study, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T00:28:46+00:00"

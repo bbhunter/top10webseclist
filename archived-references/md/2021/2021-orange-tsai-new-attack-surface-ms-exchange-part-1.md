@@ -3,7 +3,7 @@ type: Article
 title: A New Attack Surface on MS Exchange Part 1
 description: Microsoft Exchange splits request handling between a frontend Client Access Service and a backend that trusts frontend-supplied headers, and a static-resource handler took its backend target straight from a client cookie. Chaining that pre-auth SSRF with a post-auth arbitrary file write gives unauthenticated remote code execution on Exchange through port 443, the chain named ProxyLogon.
 resource: "https://blog.orange.tw/posts/2021-08-proxylogon-a-new-attack-surface-on-ms-exchange-part-1/"
-tags: [article, webseclist-reference, en, orange-tsai, ssrf, auth-bypass, rce, url-parsing, header-injection, reverse-proxy, attack-chain, cve, dotnet]
+tags: [article, webseclist-reference, en, orange-tsai, ssrf, auth-bypass, rce, url-parsing, header-injection, reverse-proxy, attack-chain, cve, dotnet, owasp-a01-2021, owasp-a03-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:41:17+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Vetting Single Sign-On SDK Implementations via Symbolic Reasoning
 description: "S3KVetter models Single Sign-On SDKs symbolically and tests them for logical correctness rather than for crashes. Applied to ten widely deployed SSO SDKs it found seven classes of logic flaw, four previously unknown, enabling anything from tracking a user's activity to hijacking their account."
 resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/yang"
-tags: [article, webseclist-reference, en, usenix-org, sso, oauth, auth-bypass, openid, formal-analysis, static-analysis, tooling]
+tags: [article, webseclist-reference, en, usenix-org, sso, oauth, auth-bypass, openid, formal-analysis, static-analysis, tooling, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:23+00:00"

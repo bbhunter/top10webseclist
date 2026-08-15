@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Killed by Proxy: Analyzing Client-end TLS Interception Software"
 description: "A framework for testing the TLS proxies that antivirus and parental-control products insert into a host's traffic, covering root-certificate handling, certificate validation, TLS parameters and client transparency. Of 14 products tested, several accepted forged certificates or had extractable private keys, letting a network attacker impersonate any HTTPS server."
 resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/killed-proxy-analyzing-client-end-tls-interception-software.pdf"
-tags: [whitepaper, webseclist-reference, tls, https, proxy, measurement-study, case-study]
+tags: [whitepaper, webseclist-reference, tls, https, proxy, measurement-study, case-study, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:37:27+00:00"

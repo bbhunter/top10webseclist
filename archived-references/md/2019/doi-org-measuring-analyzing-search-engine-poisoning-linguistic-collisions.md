@@ -3,7 +3,7 @@ type: Article
 title: Measuring and Analyzing Search Engine Poisoning of Linguistic Collisions
 description: "Misspellings that happen to be real words, often in another language, slip past search engines' auto-correction, so attackers can rank malicious pages against those queries. A crawl of 1.77 million misspelled searches on Google and Baidu, with a neural model to pick candidates, finds about 1.19 percent return malicious first-page results, concentrated in gambling, drugs and adult terms."
 resource: "https://doi.org/10.1109/SP.2019.00025"
-tags: [article, webseclist-reference, doi-org, typosquatting, measurement-study, large-scale-scan, novel-technique, detection]
+tags: [article, webseclist-reference, doi-org, typosquatting, measurement-study, large-scale-scan, novel-technique, detection, owasp-a06-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:05:34+00:00"

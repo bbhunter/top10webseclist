@@ -3,7 +3,7 @@ type: Article
 title: "Paulos Yibelo - Hacking Research: Why CSP Should be carefully crafted: Twitter XSS & CSP Bypass"
 description: "Twitter checked an app's Terms of Service URL with a regex that lacked a leading anchor, so data:text/html,<payload>#https:// passed and gave HTML injection. The CSP allowed unsafe-inline and trusted syndication.twitter.com, which serves JSONP: fetching a timeline widget with callback=alert runs attacker-chosen code, and Chrome executes it despite a Content-Disposition attachment header. The callback can also name a page method for same-origin method execution."
 resource: "http://www.paulosyibelo.com/2017/05/twitter-xss-csp-bypass.html"
-tags: [article, webseclist-reference, en, paulos-yibelo-hacking-research, xss, csp, filter-bypass, javascript, oauth, abuse-of-functionality]
+tags: [article, webseclist-reference, en, paulos-yibelo-hacking-research, xss, csp, filter-bypass, javascript, oauth, abuse-of-functionality, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:35:52+00:00"

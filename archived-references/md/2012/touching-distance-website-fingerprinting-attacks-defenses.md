@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Touching from a Distance: Website Fingerprinting Attacks and Defenses"
 description: "Shows application-level traffic-analysis defences fail: an SVM using Damerau-Levenshtein distance over packet-direction traces guessed which of 100 pages a Tor or SSH user loaded 83-92% of the time, defeating HTTPOS, randomised pipelining and traffic morphing. Hidden Markov models extend this to whole-site identification above 90% accuracy, and a provable BUFLO variant is proposed."
 resource: "https://www.freehaven.net/anonbib/cache/ccs2012-fingerprinting.pdf"
-tags: [whitepaper, webseclist-reference, side-channel, info-leak, measurement-study, novel-technique, defence, https, tls]
+tags: [whitepaper, webseclist-reference, side-channel, info-leak, measurement-study, novel-technique, defence, https, tls, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:35:04+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Client Side Path Traversal (CSPT) Bug Bounty Reports and Techniques
 description: "Six bug bounty cases of client-side path traversal: front-end code builds an API path from a URL segment, so backslashes, double-encoded dots or router quirks send the fetch to a different endpoint. Pairing that with an open redirect or an uploaded JSON or image file to control the response gives DOM XSS, spoofed content and account takeover."
 resource: "https://medium.com/@renwa/client-side-path-traversal-cspt-bug-bounty-reports-and-techniques-8ee6cd2e7ca1"
-tags: [article, webseclist-reference, en, medium, path-traversal, xss, open-redirect, rest-api, url-parsing, file-upload, dom, nextjs, bug-bounty, attack-chain]
+tags: [article, webseclist-reference, en, medium, path-traversal, xss, open-redirect, rest-api, url-parsing, file-upload, dom, nextjs, bug-bounty, attack-chain, owasp-a01-2021, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:19+00:00"

@@ -3,7 +3,7 @@ type: Whitepaper
 title: "All Your Clouds Are Belong to Us: Security Analysis of Cloud Management Interfaces"
 description: Researchers attacked the cloud control interfaces of Amazon EC2/S3 and Eucalyptus. Four XML Signature wrapping variants let a single eavesdropped SOAP request trigger arbitrary operations, and a signature-exclusion bug authorised requests carrying only a public X.509 certificate. Persistent XSS in the Amazon shop reached the AWS console through shared login sessions.
 resource: "https://www.nds.rub.de/media/nds/veroeffentlichungen/2011/10/22/AmazonSignatureWrapping.pdf"
-tags: [whitepaper, webseclist-reference, aws, soap, parser-differential, auth-bypass, xss, sso, novel-technique, case-study]
+tags: [whitepaper, webseclist-reference, aws, soap, parser-differential, auth-bypass, xss, sso, novel-technique, case-study, owasp-a01-2021, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:01:10+00:00"

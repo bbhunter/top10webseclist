@@ -3,7 +3,7 @@ type: Article
 title: "Data Exfiltration via Formula Injection #Part1"
 description: "Spreadsheet formulas planted in imported CSV data run when the sheet is opened, and built-in functions that fetch remote resources carry data out of band. In Google Sheets IMPORTXML and friends exfiltrate other users' form responses; in LibreOffice on Linux, file:// cell references plus WEBSERVICE read local files and leak them over HTTP or DNS."
 resource: "https://www.notsosecure.com/data-exfiltration-formula-injection/"
-tags: [article, webseclist-reference, en, notsosecure, injection, info-leak, lfi, dns, file-upload, novel-technique]
+tags: [article, webseclist-reference, en, notsosecure, injection, info-leak, lfi, dns, file-upload, novel-technique, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:37:11+00:00"

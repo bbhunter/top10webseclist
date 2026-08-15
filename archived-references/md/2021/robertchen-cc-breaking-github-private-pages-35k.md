@@ -3,7 +3,7 @@ type: Article
 title: Breaking GitHub Private Pages for $35k
 description: A CRLF injection in the page_id parameter of GitHub Pages private-page authentication, made exploitable by a null byte that stops integer parsing, yields script execution on the pages domain. Case variation bypasses the host-only cookie prefix to fixate the nonce, and a response cache keyed only on the integer page_id makes the payload persist for other users.
 resource: "https://robertchen.cc/blog/2021/04/03/github-pages-xss"
-tags: [article, webseclist-reference, en, robertchen-cc, header-injection, xss, cache-poisoning, session-fixation, cookie, auth-bypass, github, attack-chain, bug-bounty]
+tags: [article, webseclist-reference, en, robertchen-cc, header-injection, xss, cache-poisoning, session-fixation, cookie, auth-bypass, github, attack-chain, bug-bounty, owasp-a01-2021, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:39:34+00:00"

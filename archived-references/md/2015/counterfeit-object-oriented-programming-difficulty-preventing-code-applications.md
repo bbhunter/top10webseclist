@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Counterfeit Object-oriented Programming: On the Difficulty of Preventing Code Reuse Attacks in C++ Applications"
 description: "Counterfeit object-oriented programming chains a C++ program's own virtual functions, driven through an existing loop over attacker-forged objects, so a code-reuse payload needs no return addresses and no injected gadgets. It bypasses coarse-grained CFI and the C++-aware defences CPS, T-VIP, vfGuard and VTint, shown with working exploits for Internet Explorer 10 and Firefox 36."
 resource: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a745.pdf"
-tags: [whitepaper, webseclist-reference, gadget-chain, rce, attack-chain, novel-technique, case-study]
+tags: [whitepaper, webseclist-reference, gadget-chain, rce, attack-chain, novel-technique, case-study, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:00:13+00:00"

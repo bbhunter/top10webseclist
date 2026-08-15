@@ -3,7 +3,7 @@ type: Article
 title: "Iframes/Popups Are Dangerous in Mobile WebView: Studying and Mitigating Differential Context Vulnerabilities"
 description: Android WebView lets an untrusted iframe or popup share context with the host page, a class the authors call differential context vulnerabilities. An embedded frame can forge web messaging, reach app-exposed mobile functionality and mount phishing; an automated scanner found the flaw widespread, including in Facebook, Skype and Uber.
 resource: "https://www.usenix.org/conference/usenixsecurity19/presentation/yang-guangliang"
-tags: [article, webseclist-reference, en, usenix-org, iframe, android, postmessage, sop-bypass, privilege-escalation, static-analysis, tooling, large-scale-scan]
+tags: [article, webseclist-reference, en, usenix-org, iframe, android, postmessage, sop-bypass, privilege-escalation, static-analysis, tooling, large-scale-scan, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:52+00:00"

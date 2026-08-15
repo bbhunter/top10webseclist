@@ -3,7 +3,7 @@ type: Slides
 title: "MITM Attacks on HTTPS: Another Perspective"
 description: "A TLS certificate authenticates names, not hosts, ports or protocols, so a man in the middle can redirect a victim's connection for one host to another whose certificate covers the same name. Any control over that second host, an XSS, a file upload, a reflecting SMTP service or a permissive crossdomain.xml, becomes script execution or content substitution in the first host's origin."
 resource: "https://www.slideshare.net/GreenD0g/mitm-attacks-on-https-another-perspective/"
-tags: [slides, webseclist-reference, slideshare, tls, sop-bypass, xss, cache-poisoning, content-type, mime, https, cookie, flash]
+tags: [slides, webseclist-reference, slideshare, tls, sop-bypass, xss, cache-poisoning, content-type, mime, https, cookie, flash, owasp-a01-2021, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:59:37+00:00"

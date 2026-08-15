@@ -3,7 +3,7 @@ type: Article
 title: Another vision for SSRF
 description: "Turns a low-impact SSRF that acts as a configurable proxy on a subdomain into client-side session theft. The attacker points the proxy at their own server and serves content through the vulnerable subdomain, so a victim lured to that URL sends the wildcard-domain session cookie (domain=.example.com) along with the request and it is read from the attacker's logs, reaching a cookie that HttpOnly and SameSite would deny to an XSS."
 resource: "https://gccybermonks.com/posts/ssrfvision/"
-tags: [article, webseclist-reference, gccybermonks-com, ssrf, cookie, info-leak, proxy, abuse-of-functionality, bug-bounty]
+tags: [article, webseclist-reference, gccybermonks-com, ssrf, cookie, info-leak, proxy, abuse-of-functionality, bug-bounty, owasp-a04-2021, owasp-a07-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:42:45+00:00"

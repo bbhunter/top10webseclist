@@ -3,7 +3,7 @@ type: Article
 title: CUPS 0day ‎(Information Security Laboratory‎)
 description: "CUPS before 1.3.8 lets anyone add RSS subscriptions to cupsd on localhost:631 with no authentication and no CSRF token, so a web page can forge the request 101 times. Passing the 100-subscription cap trips a NULL pointer dereference and the daemon dies, making a localhost-only service remotely killable from a browser. CVE-2008-5183 and CVE-2008-5184."
 resource: "http://lab.gnucitizen.org/projects/cups-0day"
-tags: [article, webseclist-reference, lab-gnucitizen-org, csrf, dos, cve, vendor-advisory, attack-chain, novel-technique]
+tags: [article, webseclist-reference, lab-gnucitizen-org, csrf, dos, cve, vendor-advisory, attack-chain, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:04+00:00"

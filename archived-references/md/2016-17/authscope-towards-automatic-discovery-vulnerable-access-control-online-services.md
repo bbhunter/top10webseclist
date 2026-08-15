@@ -3,7 +3,7 @@ type: Whitepaper
 title: "AUTHSCOPE: Towards Automatic Discovery of Vulnerable Access Control in Online Services"
 description: "AUTHSCOPE drives mobile apps automatically, learns which fields of their authenticated API requests carry identity, then substitutes another user's identifiers or tokens and compares the responses to spot servers that hand back data belonging to someone else. It surfaces broken access control across online services at scale without server source code."
 resource: "https://acmccs.github.io/papers/p799-zuoA.pdf"
-tags: [whitepaper, webseclist-reference, idor, auth-bypass, rest-api, android, dynamic-analysis, tooling, info-leak, large-scale-scan]
+tags: [whitepaper, webseclist-reference, idor, auth-bypass, rest-api, android, dynamic-analysis, tooling, info-leak, large-scale-scan, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T16:01:25+00:00"

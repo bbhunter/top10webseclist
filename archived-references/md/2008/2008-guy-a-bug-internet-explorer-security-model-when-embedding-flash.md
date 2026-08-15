@@ -3,7 +3,7 @@ type: Article
 title: Bug in Internet Explorer security model when embedding Flash
 description: "Loading a bare .swf in IE makes the browser build a wrapper page via res://mshtml.dll/objectembed_neutral.js, with allowscriptaccess defaulting to samedomain, so the SWF can script that page through ExternalInterface. IE blocks access to document — but a single F5 lifts the block permanently, and the SWF can trigger the reload itself with window.location.reload()."
 resource: "http://blog.guya.net/2008/09/10/bug-in-internet-explorer-security-model-when-embedding-flash/"
-tags: [article, webseclist-reference, en, guy-a, flash, sop-bypass, same-origin-policy, javascript, dom, filter-bypass, novel-technique]
+tags: [article, webseclist-reference, en, guy-a, flash, sop-bypass, same-origin-policy, javascript, dom, filter-bypass, novel-technique, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:04:09+00:00"

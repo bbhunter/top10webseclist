@@ -3,7 +3,7 @@ type: Article
 title: An Analysis of Private Browsing Modes in Modern Browsers
 description: Defines threat models for private browsing against both a local observer and the visited site, then measures what the four major browsers actually deliver. It finds inconsistent and often weaker protection than claimed, shows browser extensions routinely undermine the mode, and measures private-browsing use in the wild.
 resource: "https://www.usenix.org/conference/usenixsecurity10/analysis-private-browsing-modes-modern-browsers"
-tags: [article, webseclist-reference, en, usenix-org, measurement-study, browser-extension, info-leak, cookie, side-channel, formal-analysis, detection]
+tags: [article, webseclist-reference, en, usenix-org, measurement-study, browser-extension, info-leak, cookie, side-channel, formal-analysis, detection, owasp-a07-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:04:09+00:00"

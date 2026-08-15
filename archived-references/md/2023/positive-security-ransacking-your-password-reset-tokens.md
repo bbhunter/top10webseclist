@@ -3,7 +3,7 @@ type: Article
 title: Ransacking your password reset tokens
 description: Rails applications that hand an unfiltered q parameter to the Ransack library expose search matchers such as start and matches over attributes of associated records, turning a search box into a boolean oracle. An attacker reads password reset tokens and password hashes character by character in a few hundred requests. Hasura and older Sequelize expose the same pattern.
 resource: "https://positive.security/blog/ransack-data-exfiltration"
-tags: [article, webseclist-reference, en, positive-security, rails, ruby, info-leak, auth-bypass, database, graphql, nodejs, case-study, large-scale-scan]
+tags: [article, webseclist-reference, en, positive-security, rails, ruby, info-leak, auth-bypass, database, graphql, nodejs, case-study, large-scale-scan, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:38:46+00:00"

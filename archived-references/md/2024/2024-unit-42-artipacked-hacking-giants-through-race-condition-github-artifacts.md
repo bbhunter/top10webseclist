@@ -3,7 +3,7 @@ type: Article
 title: "ArtiPACKED: Hacking Giants Through a Race Condition in GitHub Actions Artifacts"
 description: "Documents how GitHub Actions build artifacts leak credentials: the checkout action persists the ephemeral GITHUB_TOKEN into .git and a popular linter logs environment variables, so uploading a whole workspace publishes the token. Version 4 of artifacts allows download while a run is in progress, opening a race in which the token is used before the job ends; branches were created in major vendors' repositories, and a runtime token allowed artifacts to be swapped."
 resource: "https://unit42.paloaltonetworks.com/github-repo-artifacts-leak-tokens/"
-tags: [article, webseclist-reference, en, unit-42, github-actions, ci-cd, race-condition, info-leak, supply-chain, rce]
+tags: [article, webseclist-reference, en, unit-42, github-actions, ci-cd, race-condition, info-leak, supply-chain, rce, owasp-a04-2021, owasp-a06-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:03:53+00:00"

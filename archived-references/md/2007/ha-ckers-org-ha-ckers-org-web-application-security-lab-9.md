@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab
 description: "David Byrne's twist on Billy Rios's res:// local file enumeration: instead of reading the result, time it. The CPU cost of resolving a res:// resource differs sharply by whether the file exists, over double on RSnake's machine, so existence leaks through timing alone. A demo page is linked."
 resource: "http://ha.ckers.org/blog/20070725/res-timing-attack/"
-tags: [article, webseclist-reference, ha-ckers-org, timing-attack, side-channel, info-leak, javascript, detection]
+tags: [article, webseclist-reference, ha-ckers-org, timing-attack, side-channel, info-leak, javascript, detection, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:40+00:00"

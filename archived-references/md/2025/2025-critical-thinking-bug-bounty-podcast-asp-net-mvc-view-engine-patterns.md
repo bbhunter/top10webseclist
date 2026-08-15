@@ -3,7 +3,7 @@ type: Article
 title: ASP.NET MVC View Engine Search Patterns
 description: "The ASP.NET MVC Razor view engine locates views with internal file-existence checks, so IIS request filtering, which only inspects request URLs, never applies. An attacker holding an arbitrary file write drops a view payload into one of the engine's predictable search paths and triggers it through the extensionless MVC route, gaining code execution."
 resource: "https://lab.ctbb.show/research/asp-net-mvc-view-engine-search-patterns"
-tags: [article, webseclist-reference, en, critical-thinking-bug-bounty-podcast, path-traversal, rce, filter-bypass, file-upload, aspnet, dotnet, bug-bounty, case-study]
+tags: [article, webseclist-reference, en, critical-thinking-bug-bounty-podcast, path-traversal, rce, filter-bypass, file-upload, aspnet, dotnet, bug-bounty, case-study, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:32:56+00:00"

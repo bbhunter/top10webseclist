@@ -3,7 +3,7 @@ type: Article
 title: "Do (Not) Follow the White Rabbit: Challenging the Myth of Harmless Open Redirection"
 description: Re-assessment of open redirects, focused on client-side JavaScript redirections. A static and dynamic pipeline mined 184 vulnerability indicators and found 20,800 open redirects across 623 of the top 10,000 sites plus 326 more, and shows over 11.5 percent can be escalated to XSS, CSRF or information leakage.
 resource: "https://www.ndss-symposium.org/ndss-paper/do-not-follow-the-white-rabbit-challenging-the-myth-of-harmless-open-redirection/"
-tags: [article, webseclist-reference, en, ndss-symposium, open-redirect, xss, csrf, info-leak, javascript, static-analysis, dynamic-analysis, large-scale-scan, measurement-study, tooling]
+tags: [article, webseclist-reference, en, ndss-symposium, open-redirect, xss, csrf, info-leak, javascript, static-analysis, dynamic-analysis, large-scale-scan, measurement-study, tooling, owasp-a01-2021, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:05+00:00"

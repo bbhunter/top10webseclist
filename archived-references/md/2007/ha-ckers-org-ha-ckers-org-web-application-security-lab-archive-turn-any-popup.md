@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab - Archive » Turn Any Page Into A Greasemonkey Popup
 description: Greasemonkey decides a file is a user script from the URL ending in .user.js alone, so appending a ?x.user.js parameter to any page or image forces the install dialog, even when Greasemonkey is disabled. The file lands at a predictable temp path containing a truncated username, and any MIME type works.
 resource: "https://web.archive.org/web/20071124032809/http://ha.ckers.org/blog/20070506/turn-any-page-into-a-greasemonkey-popup/"
-tags: [article, webseclist-reference, ha-ckers-org, browser-extension, javascript, abuse-of-functionality, mime, info-leak, novel-technique]
+tags: [article, webseclist-reference, ha-ckers-org, browser-extension, javascript, abuse-of-functionality, mime, info-leak, novel-technique, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:17:44+00:00"

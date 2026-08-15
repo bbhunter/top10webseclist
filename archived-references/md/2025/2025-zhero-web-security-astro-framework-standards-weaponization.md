@@ -3,7 +3,7 @@ type: Article
 title: Astro framework and standards weaponization
 description: "Astro's Node adapter interpolates the unvalidated x-forwarded-proto and x-forwarded-port headers into the request URL, letting an attacker rewrite scheme, host, port and path. A non-special scheme payload delivers a path with no leading slash, bypassing path-based middleware auth, and the same control yields SSRF, cache-poisoned stored XSS and a patch bypass."
 resource: "https://zhero-web-sec.github.io/research-and-things/astro-framework-and-standards-weaponization"
-tags: [article, webseclist-reference, en-US, zhero-web-security, header-injection, auth-bypass, url-parsing, ssrf, cache-poisoning, cache-deception, xss, nodejs, cve]
+tags: [article, webseclist-reference, en-US, zhero-web-security, header-injection, auth-bypass, url-parsing, ssrf, cache-poisoning, cache-deception, xss, nodejs, cve, owasp-a01-2021, owasp-a03-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:44+00:00"

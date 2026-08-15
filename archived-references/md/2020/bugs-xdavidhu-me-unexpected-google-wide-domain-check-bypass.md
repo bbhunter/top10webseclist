@@ -3,7 +3,7 @@ type: Article
 title: The unexpected Google wide domain check bypass
 description: "A URL-parsing regex used across Google products ended the authority only at slash, question mark or hash, while browsers also end it at a backslash. A host written as attacker.tld then a backslash then something.corp.google.com passed an ends-with whitelist while the browser kept the attacker origin, so an embedded console iframe posted the victim's API key to the attacker."
 resource: "https://bugs.xdavidhu.me/google/2020/03/08/the-unexpected-google-wide-domain-check-bypass/"
-tags: [article, webseclist-reference, bugs-xdavidhu-me, parser-differential, url-parsing, filter-bypass, postmessage, iframe, info-leak, javascript, bug-bounty]
+tags: [article, webseclist-reference, bugs-xdavidhu-me, parser-differential, url-parsing, filter-bypass, postmessage, iframe, info-leak, javascript, bug-bounty, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:08:03+00:00"

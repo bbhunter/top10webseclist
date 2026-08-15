@@ -3,7 +3,7 @@ type: Article
 title: Enumerating Through User Accounts ha.ckers.org web application security lab
 description: "A helpdesk-oriented Google dork surfaced an online retailer's live credential in an indexed QUERY_STRING. User ID and customer ID were separate and unvalidated, so changing the customer ID switched accounts, and the value fed the SQL query directly. Resellers' customer names, addresses and emails were exposed; the token space was only ten million."
 resource: "http://ha.ckers.org/blog/20061118/enumerating-through-user-accounts/"
-tags: [article, webseclist-reference, ha-ckers-org, idor, sqli, info-leak, case-study, user-enumeration, auth-bypass, large-scale-scan]
+tags: [article, webseclist-reference, ha-ckers-org, idor, sqli, info-leak, case-study, user-enumeration, auth-bypass, large-scale-scan, owasp-a01-2021, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:34+00:00"

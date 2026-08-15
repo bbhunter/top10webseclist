@@ -3,7 +3,7 @@ type: Article
 title: SSL VPNs might not be as secure as you think
 description: "Black Hat 2008 report on Michael Zusman's SSL VPN research. The browser-delivered VPN clients ship an ActiveX application launcher, and repurposing it runs attacker code on the remote machine, demonstrated against SonicWall gear. Separately he obtained a valid certificate from a public CA by claiming it was for an internal network, then used it to proxy a real HTTPS site with no browser warning."
 resource: "http://www.networkworld.com/news/2008/080708-black-hat-ssl-vpn-security.html"
-tags: [article, webseclist-reference, en, network-world, activex, tls, https, rce, proxy, phishing, case-study]
+tags: [article, webseclist-reference, en, network-world, activex, tls, https, rce, proxy, phishing, case-study, owasp-a02-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:04+00:00"

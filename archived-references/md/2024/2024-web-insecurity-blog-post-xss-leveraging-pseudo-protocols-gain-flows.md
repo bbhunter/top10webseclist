@@ -3,7 +3,7 @@ type: Article
 title: "POST to XSS: Leveraging Pseudo Protocols to Gain JavaScript Evaluation in SSO Flows"
 description: "A protocol-level cross-site scripting pattern in POST-based single sign-on: the OAuth 2.0 form_post response mode and the SAML HTTP-POST binding are implemented as auto-submitting HTML forms, so a redirect_uri or AssertionConsumerService URL registered with a javascript: pseudo-scheme runs script in the identity provider's own origin. Sixteen SSO products were tested and several were vulnerable, among them Keycloak (CVE-2023-6134), enabling authorization code theft and privilege escalation."
 resource: "https://security.lauritz-holtmann.de/post/sso-security-redirect-uri-iii/"
-tags: [article, webseclist-reference, en, web-insecurity-blog, xss, sso, oauth, saml, openid, javascript, privilege-escalation]
+tags: [article, webseclist-reference, en, web-insecurity-blog, xss, sso, oauth, saml, openid, javascript, privilege-escalation, owasp-a01-2021, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:41:11+00:00"

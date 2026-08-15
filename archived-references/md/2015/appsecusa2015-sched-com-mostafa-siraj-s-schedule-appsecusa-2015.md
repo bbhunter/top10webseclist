@@ -3,7 +3,7 @@ type: Article
 title: "Mostafa Siraj's schedule for AppSecUSA 2015"
 description: Conference speaker profile page for Mostafa Siraj at AppSecUSA 2015, carrying a biography and a link to his session on practical timing attacks that mathematically amplify the tiny time difference in a string equality comparison. The page itself contains no description of the technique.
 resource: "https://appsecusa2015.sched.org/speaker/mostafa_siraj.1tssijvd"
-tags: [article, webseclist-reference, en, appsecusa2015-sched-com, timing-attack, side-channel, auth-bypass]
+tags: [article, webseclist-reference, en, appsecusa2015-sched-com, timing-attack, side-channel, auth-bypass, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:21+00:00"

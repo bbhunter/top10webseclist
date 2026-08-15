@@ -3,7 +3,7 @@ type: Article
 title: Billy (BK) Rios » All Your Google Docs are Belong To US…
 description: "A Google Docs session-management flaw: GET /Dialogs/EmailDocument never checked whether the caller owned the requested DocID, and a follow-up POST to /MiscCommands with a swapped docid emailed any user's document to an attacker address. Rios also shows the DocID suffix increments in rapid succession, making enumeration practical."
 resource: "http://xs-sniper.com/blog/2007/09/28/all-your-google-docs-are-belong-to-us/"
-tags: [article, webseclist-reference, xs-sniper-com, idor, auth-bypass, info-leak, email, http, case-study, novel-technique]
+tags: [article, webseclist-reference, xs-sniper-com, idor, auth-bypass, info-leak, email, http, case-study, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:48+00:00"

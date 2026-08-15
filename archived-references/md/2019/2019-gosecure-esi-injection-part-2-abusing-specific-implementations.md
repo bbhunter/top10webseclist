@@ -3,7 +3,7 @@ type: Article
 title: 24/7 managed detection, response, and expert cybersecurity services
 description: "Three vendor-specific abuses of injected Edge Side Include tags: an inline fragment writes a fetchable poisoned page into the cache, a remote stylesheet on an include reaches a Java XSLT engine and runs commands, and a newline inside a request-header value injects a Host header for limited SSRF against Oracle Web Cache."
 resource: "https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations"
-tags: [article, webseclist-reference, en, gosecure, cache-poisoning, ssrf, rce, header-injection, xss, cache, reverse-proxy, java, cve]
+tags: [article, webseclist-reference, en, gosecure, cache-poisoning, ssrf, rce, header-injection, xss, cache, reverse-proxy, java, cve, owasp-a03-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:28+00:00"

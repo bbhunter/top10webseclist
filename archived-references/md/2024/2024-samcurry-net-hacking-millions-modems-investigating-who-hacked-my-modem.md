@@ -3,7 +3,7 @@ type: Article
 title: Hacking Millions of Modems (and Investigating Who Hacked My Modem)
 description: "An authorization bypass in a major US ISP's business customer portal let any unauthenticated request succeed simply by being replayed, exposing roughly 700 REST endpoints on a reverse-proxied Spring backend. Swagger documentation reachable through a static-file routing quirk, plus a client-side encryption routine that signed device identifiers, allowed customer record lookup and read/write control of any subscriber modem by MAC address."
 resource: "https://samcurry.net/hacking-millions-of-modems"
-tags: [article, webseclist-reference, en, samcurry-net, rest-api, auth-bypass, attack-chain, info-leak, reverse-proxy, bug-bounty, embedded-device, spring]
+tags: [article, webseclist-reference, en, samcurry-net, rest-api, auth-bypass, attack-chain, info-leak, reverse-proxy, bug-bounty, embedded-device, spring, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:39:41+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: JavaScript/HTML Portscanning and HTTP Auth
 description: "Stefan Esser's follow-up to the JavaScript-free HTML portscanning of late 2006: request a URL the server must reject before authentication runs, such as http://192.168.1.1/% or an over-long path, and the HTTP auth prompt that betrayed earlier scanners never appears. Tested against Apache, IIS and home routers; IE7 refuses the % form but the long-URL form works everywhere."
 resource: "http://blog.php-security.org/archives/54-JavaScriptHTML-Portscanning-and-HTTP-Auth.html"
-tags: [article, webseclist-reference, blog-php-security-org, timing-attack, side-channel, javascript, http, url-parsing, novel-technique, detection]
+tags: [article, webseclist-reference, blog-php-security-org, timing-attack, side-channel, javascript, http, url-parsing, novel-technique, detection, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:03+00:00"

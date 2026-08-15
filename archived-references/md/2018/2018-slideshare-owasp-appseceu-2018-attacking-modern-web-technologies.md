@@ -3,7 +3,7 @@ type: Slides
 title: "OWASP AppSecEU 2018 – Attacking \"Modern\" Web Technologies"
 description: "Three attack families against widely deployed web features: AppCache manifests abused by cookie bombing so a forced 500 makes the FALLBACK page serve a whole directory or origin, weak cloud upload policies that let business logic be bypassed, and postMessage handlers that leak data, can be raced, or execute attacker script through sandboxed domains."
 resource: "https://www.slideshare.net/fransrosen/attacking-modern-web-technologies?from_action=save"
-tags: [slides, webseclist-reference, slideshare, postmessage, cache-poisoning, xss, file-upload, cookie, sop-bypass, race-condition, browser-extension, bug-bounty]
+tags: [slides, webseclist-reference, slideshare, postmessage, cache-poisoning, xss, file-upload, cookie, sop-bypass, race-condition, browser-extension, bug-bounty, owasp-a01-2021, owasp-a03-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:59:59+00:00"

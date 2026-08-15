@@ -3,7 +3,7 @@ type: Article
 title: Web pages Detecting Virtualized Browsers and other tricks
 description: Shows how a web page can tell whether the visiting browser runs in a VM, so malware can withhold payloads from analysis sandboxes. Non-standard screen dimensions read from JavaScript give windowed VMware away, and a Java applet reads MAC addresses whose first three octets identify VMware. Extends to detecting private browsing, NoScript and visited intranet hosts.
 resource: "https://jeremiahgrossman.blogspot.com/2009/08/web-pages-detecting-virtualized.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, detection, info-leak, javascript, side-channel, css, novel-technique]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, detection, info-leak, javascript, side-channel, css, novel-technique, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:07+00:00"

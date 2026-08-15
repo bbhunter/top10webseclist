@@ -3,7 +3,7 @@ type: Article
 title: Working your way Around an ACL
 description: Windows guards a protected folder with a conditional access rule granting entry only to tokens carrying a particular security attribute, which cannot be forged without a privileged right. Borrowing such a token from a running packaged application and setting it on a suspended process bypasses the check.
 resource: "https://www.tiraniddo.dev/2024/06/working-your-way-around-acl.html"
-tags: [article, webseclist-reference, en-GB, tiraniddo-dev, auth-bypass, info-leak, case-study, novel-technique]
+tags: [article, webseclist-reference, en-GB, tiraniddo-dev, auth-bypass, info-leak, case-study, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:03:41+00:00"

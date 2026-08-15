@@ -3,7 +3,7 @@ type: Article
 title: Arc Browser UXSS, Local File Read, Arbitrary File Creation and Path Traversal to RCE
 description: "Arc's undocumented arc://boost/play/ endpoint builds and installs a browser extension from a compressed JSON blob in the URL. Permissions come from manifest.json while the install screen reads boost.config.json, so the prompt can promise a colour change on example.com while the manifest takes every URL and file:// - UXSS plus local file read. The per-file name and path are unchecked, so ../ writes a LaunchAgents plist that runs at login; an Easel embed frames the arc:// URL to deliver it."
 resource: "https://medium.com/@renwa/arc-browser-uxss-local-file-read-arbitrary-file-creation-and-path-traversal-to-rce-b439f2a299d1"
-tags: [article, webseclist-reference, en, medium, path-traversal, browser-extension, rce, sop-bypass, bug-bounty, xss, abuse-of-functionality]
+tags: [article, webseclist-reference, en, medium, path-traversal, browser-extension, rce, sop-bypass, bug-bounty, xss, abuse-of-functionality, owasp-a01-2021, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:18+00:00"

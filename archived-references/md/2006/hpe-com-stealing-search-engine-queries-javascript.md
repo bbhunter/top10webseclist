@@ -3,7 +3,7 @@ type: Article
 title: Stealing Search Engine Queries with JavaScript
 description: "SPI Labs research brief describing JavaScript plus CSS that detects which search queries a visitor has previously run on arbitrary search engines, by testing the visited state of constructed result URLs. Any page, or any XSS on one, can profile every visitor's search history. This landing page is an abstract only; the full paper is a separate PDF."
 resource: "http://www.spidynamics.com/spilabs/education/articles/JS-search.html"
-tags: [article, webseclist-reference, spidynamics-com, css, info-leak, deanonymization, browser-fingerprinting, javascript, side-channel, xss]
+tags: [article, webseclist-reference, spidynamics-com, css, info-leak, deanonymization, browser-fingerprinting, javascript, side-channel, xss, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:25+00:00"

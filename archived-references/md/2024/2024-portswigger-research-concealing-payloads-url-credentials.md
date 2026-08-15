@@ -3,7 +3,7 @@ type: Article
 title: Concealing payloads in URL credentials
 description: "document.URL keeps the credentials part of a URL while location strips it, and Chrome and Firefox hide it from the address bar, so https://'-alert(1)-'@example.com carries an invisible payload. Any script that reads document.URL after removing the query and fragment reflects it, and Firefox does not percent-encode single quotes there, giving DOM XSS. Anchor elements also expose username and password properties inherited from the page URL, usable for clobbering."
 resource: "https://portswigger.net/research/concealing-payloads-in-url-credentials"
-tags: [article, webseclist-reference, portswigger-research, xss, dom, url-parsing, javascript, dom-clobbering, encoding]
+tags: [article, webseclist-reference, portswigger-research, xss, dom, url-parsing, javascript, dom-clobbering, encoding, owasp-a03-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:58+00:00"

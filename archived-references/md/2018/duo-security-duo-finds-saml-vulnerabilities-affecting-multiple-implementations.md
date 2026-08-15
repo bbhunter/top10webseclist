@@ -3,7 +3,7 @@ type: Article
 title: Duo Finds SAML Vulnerabilities Affecting Multiple Implementations
 description: XML canonicalization strips comments before a SAML signature is verified, while many XML text extraction APIs return only the text before the first comment. Inserting a comment inside a signed NameID therefore leaves the signature valid but changes the identity the service provider reads, letting an authenticated attacker log in as any other user.
 resource: "https://duo.com/blog/duo-finds-saml-vulnerabilities-affecting-multiple-implementations"
-tags: [article, webseclist-reference, en, duo-security, auth-bypass, saml, parser-differential, sso, cve, python, ruby]
+tags: [article, webseclist-reference, en, duo-security, auth-bypass, saml, parser-differential, sso, cve, python, ruby, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:29:33+00:00"

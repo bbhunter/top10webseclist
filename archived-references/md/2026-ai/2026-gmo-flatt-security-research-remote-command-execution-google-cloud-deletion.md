@@ -3,7 +3,7 @@ type: Article
 title: Remote Command Execution in Google Cloud with Single Directory Deletion
 description: "Looker's delete_dir rejects a path containing .git but not a bare /, so rm_rf is handed the whole checked-out repository. It deletes post-order in readdir order, predictable enough on ext4 that a sprayed directory puts .git first and leaves a long window. A concurrent git status then finds no .git, reads the worktree's own config and runs its core.fsmonitor value as a command; the pod's service account could also update secrets shared across instances."
 resource: "https://flatt.tech/research/posts/remote-command-execution-in-google-cloud-with-single-directory-deletion/"
-tags: [article, webseclist-reference, en, gmo-flatt-security-research, rce, race-condition, gcp, kubernetes, privilege-escalation, ruby]
+tags: [article, webseclist-reference, en, gmo-flatt-security-research, rce, race-condition, gcp, kubernetes, privilege-escalation, ruby, owasp-a01-2021, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:10:06+00:00"

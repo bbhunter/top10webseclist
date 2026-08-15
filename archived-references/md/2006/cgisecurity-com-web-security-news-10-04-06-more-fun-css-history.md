@@ -3,7 +3,7 @@ type: Article
 title: "Cgisecurity.com: Web security News - 10/04/06 More fun with CSS history"
 description: "An expansion of the CSS visited-link history trick into commercial reconnaissance: probe a visitor for competitor URLs to learn which ads paid off, enumerate which product, contact and confirmation pages they saw, and price a discount from it. A 10/4 update extends it to phishing, profiling a victim's banks and generating the lure from sites they have actually visited."
 resource: "http://www.cgisecurity.com/2006/10/02"
-tags: [article, webseclist-reference, cgisecurity-com, css, side-channel, info-leak, deanonymization, phishing, browser-fingerprinting]
+tags: [article, webseclist-reference, cgisecurity-com, css, side-channel, info-leak, deanonymization, phishing, browser-fingerprinting, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:35:21+00:00"

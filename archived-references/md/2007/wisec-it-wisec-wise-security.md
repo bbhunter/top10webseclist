@@ -3,7 +3,7 @@ type: Article
 title: Wisec - The WIse SECurity
 description: Apache MultiViews turns one request into a directory listing. Requesting /index with an unsatisfiable Accept header makes the server answer 406 and enumerate every same-named variant in its Alternates header, exposing index.bak and other backups. Di Paola argues scanners and the OWASP Testing Guide should check for the Content-Location/Vary/TCN fingerprint.
 resource: "http://www.wisec.it/sectou.php?id=4698ebdc59d15"
-tags: [article, webseclist-reference, wisec-it, info-leak, http, content-type, mime, abuse-of-functionality, detection, novel-technique]
+tags: [article, webseclist-reference, wisec-it, info-leak, http, content-type, mime, abuse-of-functionality, detection, novel-technique, owasp-a04-2021, owasp-a05-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:41+00:00"

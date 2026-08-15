@@ -3,7 +3,7 @@ type: Whitepaper
 title: "ElectroVolt: Pwning Popular Desktop Apps While Uncovering New Attack Surface on Electron (Slides)"
 description: "How an XSS in an Electron renderer is escalated to remote code execution: prototype pollution gadgets leak the internal IPC and remote modules, weak contextIsolation and nodeIntegration settings expose Node APIs, and misconfigured new-window handlers open unsandboxed windows. Demonstrated against Discord, Microsoft Teams, Notion and others."
 resource: "https://i.blackhat.com/USA-22/Thursday/US-22-Purani-ElectroVolt-Pwning-Popular-Desktop-Apps.pdf"
-tags: [whitepaper, webseclist-reference, rce, sandbox-escape, prototype-pollution, gadget-chain, xss, open-redirect, electron, nodejs, attack-chain, bug-bounty]
+tags: [whitepaper, webseclist-reference, rce, sandbox-escape, prototype-pollution, gadget-chain, xss, open-redirect, electron, nodejs, attack-chain, bug-bounty, owasp-a03-2021, owasp-a04-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:46:43+00:00"

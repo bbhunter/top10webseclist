@@ -3,7 +3,7 @@ type: Article
 title: What is prototype poisoning? Prototype bugs explained!
 description: Prototype poisoning happens when parsing user input lets a __proto__ key set the prototype of the object being built, replacing implicit members such as toString on that object and its children. Consequences include validation schema bypass, property and argument injection and denial of service; the post also separates poisoning from prototype pollution and hidden property abuse.
 resource: "https://www.jerkeby.se/newsletter/posts/prototype-poisoning/"
-tags: [article, webseclist-reference, en-us, jerkeby-se, prototype-pollution, nodejs, injection, dos, javascript, static-analysis, detection, express]
+tags: [article, webseclist-reference, en-us, jerkeby-se, prototype-pollution, nodejs, injection, dos, javascript, static-analysis, detection, express, owasp-a03-2021, owasp-a08-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:31:35+00:00"

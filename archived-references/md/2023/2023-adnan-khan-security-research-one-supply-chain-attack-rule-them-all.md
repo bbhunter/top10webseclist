@@ -3,7 +3,7 @@ type: Article
 title: One Supply Chain Attack to Rule Them All
 description: "A fork pull request can seize a non-ephemeral self-hosted GitHub Actions runner attached to a public repository: a one-character typo fix makes the attacker a contributor and clears the default approval gate, and the PR's own workflow file then runs code on the runner. Persistence there yields the write-scoped GITHUB_TOKEN and build secrets, here a path into GitHub's own runner images."
 resource: "https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/"
-tags: [article, webseclist-reference, en, adnan-khan-security-research, github-actions, ci-cd, supply-chain, github, attack-chain, rce, info-leak, bug-bounty]
+tags: [article, webseclist-reference, en, adnan-khan-security-research, github-actions, ci-cd, supply-chain, github, attack-chain, rce, info-leak, bug-bounty, owasp-a06-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:01:12+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: CSS data exfiltration in Firefox via a single injection point
 description: Firefox parses stylesheets synchronously and caps connections per host, which blocks the single-injection CSS exfiltration trick that works in Chrome. Splitting each @import into its own style element and serving the polling endpoints over HTTP/2 removes both limits, so a CSRF token leaks character by character from one injection point in seconds.
 resource: "https://research.securitum.com/css-data-exfiltration-in-firefox-via-single-injection-point/"
-tags: [article, webseclist-reference, en, research-securitum-com, css-injection, info-leak, css, side-channel, http2, cve, novel-technique]
+tags: [article, webseclist-reference, en, research-securitum-com, css-injection, info-leak, css, side-channel, http2, cve, novel-technique, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:11+00:00"

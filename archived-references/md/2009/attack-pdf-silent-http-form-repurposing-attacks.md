@@ -3,7 +3,7 @@ type: Whitepaper
 title: Attack - PDF Silent HTTP Form Repurposing Attacks
 description: "A malicious PDF form built on Adobe's XFA model puts a javascript: URL in an HTTP submit button's target, so clicking it runs script in the domain hosting the PDF rather than making a cross-domain call. Because Acro JS has no DOM, the browser JavaScript handler is used instead to read document.domain and cookies. Tested positive in Chrome, Firefox, Safari and Opera."
 resource: "http://www.secniche.org/papers/SNS_09_03_PDF_Silent_Form_Re_Purp_Attack.pdf"
-tags: [whitepaper, webseclist-reference, pdf, javascript, dom, sop-bypass, file-upload, novel-technique, info-leak]
+tags: [whitepaper, webseclist-reference, pdf, javascript, dom, sop-bypass, file-upload, novel-technique, info-leak, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T13:01:52+00:00"

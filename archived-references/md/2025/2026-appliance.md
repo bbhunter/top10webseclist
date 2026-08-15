@@ -3,7 +3,7 @@ type: Article
 title: "The Story of a Perfect Exploit Chain: Six Bugs That Looked Harmless Until They Became Pre-Auth RCE in a Security Appliance"
 description: "Chains six weaknesses in the LogPoint SIEM appliance into unauthenticated remote code execution: proxy path routing that exposes internal endpoints, a hard-coded token signing secret, leaked credentials for a hidden super-user, an SSRF reaching a host-only API that hands out the admin secret, and a static key on exported alert rules that smuggles a payload into an eval."
 resource: "https://mehmetince.net/the-story-of-a-perfect-exploit-chain-six-bugs-that-looked-harmless-until-they-became-pre-auth-rce-in-a-security-appliance/"
-tags: [article, webseclist-reference, en, mehmet-ince-mdisec-vulnerability-researc, rce, ssrf, auth-bypass, jwt, privilege-escalation, attack-chain, reverse-proxy, docker, python, cve]
+tags: [article, webseclist-reference, en, mehmet-ince-mdisec-vulnerability-researc, rce, ssrf, auth-bypass, jwt, privilege-escalation, attack-chain, reverse-proxy, docker, python, cve, owasp-a01-2021, owasp-a05-2021, owasp-a07-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:05:37+00:00"

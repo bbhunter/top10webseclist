@@ -3,7 +3,7 @@ type: Slides
 title: "No locked doors, no windows barred: hacking OpenAM infrastructure"
 description: ZeroNights 2012 deck chaining local file read and SSRF into full compromise of ForgeRock OpenAM on Tomcat. Blind XXE lists directories and reads configs, then gopher carries an HTTP PUT that uploads a store-compressed WAR whose checksums Tomcat tolerates, giving RCE. Further slides force debug logging by CSRF, hijack admin sessions and dump the heap to recover the encryption key.
 resource: "https://web.archive.org/web/20170903113359/http://www.slideshare.net/andrewpetukhov/no-locked-doors-no-windows-barred-hacking-openam-infrastructure/11"
-tags: [slides, webseclist-reference, en, slideshare-net, xxe, ssrf, rce, java, lfi, file-upload, attack-chain, auth-bypass]
+tags: [slides, webseclist-reference, en, slideshare-net, xxe, ssrf, rce, java, lfi, file-upload, attack-chain, auth-bypass, owasp-a01-2021, owasp-a03-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:59:44+00:00"

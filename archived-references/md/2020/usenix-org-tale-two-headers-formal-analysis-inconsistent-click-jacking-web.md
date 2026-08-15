@@ -3,7 +3,7 @@ type: Article
 title: "A Tale of Two Headers: A Formal Analysis of Inconsistent Click-Jacking Protection on the Web"
 description: Framing control is split between X-Frame-Options and CSP frame-ancestors, which browsers implement differently. A formal model and an automated policy analyser found ten percent of distinct framing policies in the wild inconsistent, usually leaving at least one browser with no clickjacking protection, and a server-side proxy is proposed to retrofit a consistent policy.
 resource: "https://www.usenix.org/conference/usenixsecurity20/presentation/calzavara"
-tags: [article, webseclist-reference, en, usenix-org, clickjacking, ui-redress, csp, iframe, formal-analysis, measurement-study, large-scale-scan, mitigation, defence]
+tags: [article, webseclist-reference, en, usenix-org, clickjacking, ui-redress, csp, iframe, formal-analysis, measurement-study, large-scale-scan, mitigation, defence, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:34+00:00"

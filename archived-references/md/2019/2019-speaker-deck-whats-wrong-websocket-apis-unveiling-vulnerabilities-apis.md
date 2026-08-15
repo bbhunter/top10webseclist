@@ -3,7 +3,7 @@ type: Slides
 title: What’s wrong with WebSocket APIs? Unveiling vulnerabilities in WebSocket APIs.
 description: "Surveys weaknesses in WebSocket APIs: cross-site WebSocket hijacking including a null-origin variant delivered from a data URI iframe, missing authentication and object-reference checks on individual messages, and smuggling arbitrary HTTP requests to internal endpoints through reverse proxies that blindly tunnel an upgraded connection."
 resource: "https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unveiling-vulnerabilities-in-websocket-apis"
-tags: [slides, webseclist-reference, en, speaker-deck, websocket, request-smuggling, csrf, idor, auth-bypass, reverse-proxy, same-origin-policy, proxy, http]
+tags: [slides, webseclist-reference, en, speaker-deck, websocket, request-smuggling, csrf, idor, auth-bypass, reverse-proxy, same-origin-policy, proxy, http, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:39+00:00"

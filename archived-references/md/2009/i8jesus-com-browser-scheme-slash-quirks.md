@@ -3,7 +3,7 @@ type: Article
 title: Browser Scheme and Slash Quirks
 description: "While defeating a product that blocked anything resembling a URL in a Location header, the author found browsers accept malformed scheme/slash forms. Internet Explorer follows http:\\\\google.com with backslashes, and Firefox 3 accepts http:///google.com with three slashes, in tags and redirects alike, so open-redirect filters that only match well-formed URLs fail."
 resource: "http://i8jesus.com/?p=37"
-tags: [article, webseclist-reference, i8jesus-com, open-redirect, url-parsing, filter-bypass, parser-differential, waf-bypass, novel-technique]
+tags: [article, webseclist-reference, i8jesus-com, open-redirect, url-parsing, filter-bypass, parser-differential, waf-bypass, novel-technique, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T16:31:45+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "Security and Privacy of Social Logins (I): Single Sign-On Protocols in the Wild"
 description: "A descriptive analysis of how real-world Sign in with Apple, Google Sign-In and One Tap, and Facebook Login implement OAuth 2.0 and OpenID Connect in the wild, covering their message flows, use of postMessage and the Channel Messaging API, Intersection Observer v2 as a clickjacking defence, and Facebook's signed_request token."
 resource: "https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part1.html"
-tags: [article, webseclist-reference, en, web-in-security-blogspot-com, sso, oauth, openid, postmessage, clickjacking, iframe, jwt, survey]
+tags: [article, webseclist-reference, en, web-in-security-blogspot-com, sso, oauth, openid, postmessage, clickjacking, iframe, jwt, survey, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:06:06+00:00"

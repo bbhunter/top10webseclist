@@ -3,7 +3,7 @@ type: Whitepaper
 title: Subverting AJAX
 description: "Di Paola and Fedon's 23C3 paper on attacking AJAX applications. Prototype Hijacking overrides the JavaScript prototypes an application relies on, so injected code silently intercepts and rewrites every XMLHttpRequest the page makes. From there they build universal cross-site scripting and a persistent compromised session that survives navigation inside the application."
 resource: "https://fahrplan.events.ccc.de/congress/2006/Fahrplan/attachments/1158-Subverting_Ajax.pdf"
-tags: [whitepaper, webseclist-reference, javascript, dom, cache-poisoning, request-smuggling, response-splitting, sop-bypass, xss, proxy]
+tags: [whitepaper, webseclist-reference, javascript, dom, cache-poisoning, request-smuggling, response-splitting, sop-bypass, xss, proxy, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T03:34:45+00:00"

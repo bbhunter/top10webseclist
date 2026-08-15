@@ -3,7 +3,7 @@ type: Article
 title: Universal Code Execution by Chaining Messages in Browser Extensions
 description: "Browser extensions that inject content scripts on every origin and forward unvalidated window messages let a hostile page reach the extension's background script by postMessage, and through native messaging the desktop application behind it. Two disclosed cases show cross-origin cookie theft and a DLL load path controlled from the page, yielding code execution. The pattern is found at scale by querying an extension manifest dataset and taint-matching content scripts."
 resource: "https://spaceraccoon.dev/universal-code-execution-browser-extensions/"
-tags: [article, webseclist-reference, en-us, spaceraccoon-dev, browser-extension, postmessage, rce, sop-bypass, static-analysis, path-traversal, attack-chain, large-scale-scan]
+tags: [article, webseclist-reference, en-us, spaceraccoon-dev, browser-extension, postmessage, rce, sop-bypass, static-analysis, path-traversal, attack-chain, large-scale-scan, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:44:01+00:00"

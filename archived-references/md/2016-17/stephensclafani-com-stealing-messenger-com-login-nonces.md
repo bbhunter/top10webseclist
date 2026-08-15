@@ -3,7 +3,7 @@ type: Article
 title: Stealing Messenger.com Login Nonces
 description: messenger.com signs in a logged-in Facebook user through an iframe endpoint that redirects a one-time login nonce to a redirect_uri. Pointing that parameter at a beta subdomain and exploiting a fragment that survives the 302 leaked the nonce to an attacker page; the nonce minted a messenger.com session whose cookies also worked on facebook.com, so the whole account fell.
 resource: "https://stephensclafani.com/2017/03/21/stealing-messenger-com-login-nonces/"
-tags: [article, webseclist-reference, stephensclafani-com, open-redirect, auth-bypass, info-leak, iframe, cookie, url-parsing, sso, bug-bounty]
+tags: [article, webseclist-reference, stephensclafani-com, open-redirect, auth-bypass, info-leak, iframe, cookie, url-parsing, sso, bug-bounty, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:27+00:00"

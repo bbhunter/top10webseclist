@@ -3,7 +3,7 @@ type: Article
 title: On the Incoherencies in Web Browser Access Control Policies
 description: Browsers label principals differently for DOM, cookies, XHR and display, so their policies conflict wherever those resources interplay, and runtime document.domain changes are ignored by most of them. User-owned resources such as clipboard and geolocation are reachable from scripts. WebAnalyzer, an instrumented IE crawler, measured each unsafe feature across the Alexa top 100,000.
 resource: "https://www.microsoft.com/en-us/research/publication/incoherencies-web-browser-access-control-policies/"
-tags: [article, webseclist-reference, same-origin-policy, sop-bypass, cookie, dom, measurement-study, large-scale-scan, info-leak, clickjacking]
+tags: [article, webseclist-reference, same-origin-policy, sop-bypass, cookie, dom, measurement-study, large-scale-scan, info-leak, clickjacking, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:02+00:00"

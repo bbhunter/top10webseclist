@@ -3,7 +3,7 @@ type: Article
 title: Hacking without 0days Drive-by Java
 description: A cryptographically signed Java applet gets full desktop privileges from the browser once the user clicks through one dialog, with no vulnerability involved. pdp argues the applet name and certificate CN can be forged to make the prompt look legitimate, giving roughly a coin-flip success rate, and that this beats signed JavaScript, browser extensions or a downloaded executable for reliability.
 resource: "https://www.gnucitizen.org/blog/hacking-without-0days-drive-by-java/"
-tags: [article, webseclist-reference, en, gnucitizen-org, java, abuse-of-functionality, sandbox-escape, privilege-escalation, rce, tooling, phishing]
+tags: [article, webseclist-reference, en, gnucitizen-org, java, abuse-of-functionality, sandbox-escape, privilege-escalation, rce, tooling, phishing, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:50+00:00"

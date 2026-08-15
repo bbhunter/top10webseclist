@@ -3,7 +3,7 @@ type: Whitepaper
 title: "WAPTEC: Whitebox Analysis of Web Applications for Parameter Tampering Exploit Construction"
 description: "WAPTEC analyses a LAMP application's client form, its PHP execution trace and its MySQL schema together, expressing all three as first-order string constraints. It solves f_client for benign inputs, then negates it against f_server to construct parameter tampering exploits by construction."
 resource: "https://www.cs.uic.edu/~hinrichs/papers/bisht2011waptec.pdf"
-tags: [whitepaper, webseclist-reference, static-analysis, dynamic-analysis, formal-analysis, tooling, php, database, privilege-escalation, novel-technique]
+tags: [whitepaper, webseclist-reference, static-analysis, dynamic-analysis, formal-analysis, tooling, php, database, privilege-escalation, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:36:13+00:00"

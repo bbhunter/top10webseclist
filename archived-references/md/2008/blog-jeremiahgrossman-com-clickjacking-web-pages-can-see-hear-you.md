@@ -3,7 +3,7 @@ type: Article
 title: "Clickjacking: Web pages can see and hear you"
 description: The disclosure that clickjacking plus Adobe Flash turns any machine with a webcam or microphone into a remote surveillance device on one click, and that clickjacking the Flash Global Security Settings panel makes it persistent. Notes it bypasses CSRF token defences and that framebusting, plugin disabling and NoScript are the only stopgaps.
 resource: "https://jeremiahgrossman.blogspot.com/2008/10/clickjacking-web-pages-can-see-and-hear.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, clickjacking, ui-redress, flash, iframe, csrf, info-leak, mitigation]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, clickjacking, ui-redress, flash, iframe, csrf, info-leak, mitigation, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:03+00:00"

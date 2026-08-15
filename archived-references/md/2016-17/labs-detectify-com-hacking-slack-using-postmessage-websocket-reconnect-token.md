@@ -3,7 +3,7 @@ type: Article
 title: Hacking Slack using postMessage and WebSocket-reconnect to steal your precious token
 description: "Slack's web client handled window postMessage events without checking the sender's origin. An attacker page could open slack.com/call/me, send a reconnect_url event repointing the client's WebSocket at the attacker's server and a goodbye event to force the reconnect, then read the xoxs session token out of the handshake and take over the account."
 resource: "https://labs.detectify.com/2017/02/28/hacking-slack-using-postmessage-and-websocket-reconnect-to-steal-your-precious-token/"
-tags: [article, webseclist-reference, en, labs-detectify-com, postmessage, websocket, info-leak, sop-bypass, javascript, bug-bounty, attack-chain, mitigation]
+tags: [article, webseclist-reference, en, labs-detectify-com, postmessage, websocket, info-leak, sop-bypass, javascript, bug-bounty, attack-chain, mitigation, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:42:18+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "[EN] Multi-sandwich attack with MongoDB Object ID or the scenario for real-time monitoring of web application invitations: a new use case for the sandwich attack"
 description: MongoDB ObjectIDs used as invitation tokens carry a second-resolution timestamp, a process value and an incrementing counter, so a token minted for someone else lies inside the rectangle bounded by two tokens the attacker mints himself. Bracketing with 10-second windows instead of one long one cuts candidates from 1.16 million to a few hundred, and a counter that jumps by more than one between consecutive attacker tokens flags exactly which window to brute-force.
 resource: "https://www.aeth.cc/public/Article-Reset-Tolkien/multi-sandwich-article-en.html"
-tags: [article, webseclist-reference, aeth-cc, mongodb, auth-bypass, side-channel, novel-technique, prior-art-extension, predictable-token]
+tags: [article, webseclist-reference, aeth-cc, mongodb, auth-bypass, side-channel, novel-technique, prior-art-extension, predictable-token, owasp-a01-2021, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:00:28+00:00"

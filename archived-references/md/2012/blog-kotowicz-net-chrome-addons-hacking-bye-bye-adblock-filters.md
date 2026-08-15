@@ -3,7 +3,7 @@ type: Article
 title: "Chrome addons hacking: Bye Bye AdBlock filters!"
 description: "Two ways for a web page to defeat Chrome AdBlock. Because the extension hides ads by inserting a stylesheet link into the page DOM, the page can listen for DOMNodeInserted and remove it. Worse, ordinary pages could load extension resources, so framing the extension's subscribe.html with an attacker-controlled location parameter silently subscribes the victim to a whitelist-everything filter list."
 resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/03/chrome-addons-hacking-bye-bye-adblock.html"
-tags: [article, webseclist-reference, blog-kotowicz-net, browser-extension, dom, javascript, filter-bypass, novel-technique, css]
+tags: [article, webseclist-reference, blog-kotowicz-net, browser-extension, dom, javascript, filter-bypass, novel-technique, css, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:48+00:00"

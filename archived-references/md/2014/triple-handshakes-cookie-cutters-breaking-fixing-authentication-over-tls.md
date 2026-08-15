@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Triple Handshakes and Cookie Cutters: Breaking and Fixing Authentication over TLS"
 description: "A man-in-the-middle can synchronise the master secret across two TLS connections by chaining RSA or Diffie-Hellman key exchange, session resumption and renegotiation, so the client's later authentication is redirected to the attacker's server. This breaks tls-unique channel binding, PEAP, SASL and channel-bound cookies, and related truncation tricks cut HTTPS headers to strip cookie flags."
 resource: "https://www.ieee-security.org/TC/SP2014/papers/TripleHandshakesandCookieCutters_c_BreakingandFixingAuthenticationoverTLS.pdf"
-tags: [whitepaper, webseclist-reference, tls, https, cookie, auth-bypass, session-fixation, formal-analysis, mitigation, novel-technique]
+tags: [whitepaper, webseclist-reference, tls, https, cookie, auth-bypass, session-fixation, formal-analysis, mitigation, novel-technique, owasp-a01-2021, owasp-a02-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:00:46+00:00"

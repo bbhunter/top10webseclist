@@ -3,7 +3,7 @@ type: Article
 title: Zimbra Email - Stealing Clear-Text Credentials via Memcache injection
 description: "Zimbra built Memcached lookup keys from usernames taken out of request URLs without escaping CRLF, so an unauthenticated attacker could inject arbitrary Memcached commands. Overwriting a user's IMAP route entry redirects their mail client to an attacker's server in cleartext, and injecting extra responses into the shared stream desynchronises it to reach unknown users."
 resource: "https://www.sonarsource.com/blog/zimbra-mail-stealing-clear-text-credentials-via-memcache-injection/"
-tags: [article, webseclist-reference, en, sonar, cache-poisoning, header-injection, response-splitting, desync, email, reverse-proxy, cache, cve, info-leak]
+tags: [article, webseclist-reference, en, sonar, cache-poisoning, header-injection, response-splitting, desync, email, reverse-proxy, cache, cve, info-leak, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:37+00:00"

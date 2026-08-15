@@ -3,7 +3,7 @@ type: Article
 title: CAPTCHA Hax With TesserCap
 description: TesserCap is a point-and-shoot CAPTCHA analysis tool pairing a configurable image preprocessing engine with Tesseract-OCR, plus proxy and custom-header support for fetching CAPTCHAs. Tested against 200+ high-traffic sites and several CAPTCHA providers, it read many schemes at 20-90% accuracy untrained; foodnetwork.com and megaupload.com exceeded 80%, reCAPTCHA scored 0%.
 resource: "https://gursevkalra.blogspot.com/2011/11/captcha-hax-with-tessercap.html"
-tags: [article, webseclist-reference, en, gursevkalra-blogspot-com, tooling, measurement-study, large-scale-scan, auth-bypass, detection]
+tags: [article, webseclist-reference, en, gursevkalra-blogspot-com, tooling, measurement-study, large-scale-scan, auth-bypass, detection, owasp-a01-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:10:47+00:00"

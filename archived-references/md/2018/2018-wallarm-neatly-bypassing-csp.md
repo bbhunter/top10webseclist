@@ -3,7 +3,7 @@ type: Article
 title: Neatly bypassing CSP ✔️
 description: A page with a strict CSP can still be attacked by framing a same-origin path that returns no CSP header, such as a CSS file, robots.txt or a server error page, because browsers wrap those responses in HTML. Script written into that frame runs unrestricted and can read the parent page; oversized URLs or cookies are used to force the error responses.
 resource: "https://lab.wallarm.com/how-to-trick-csp-in-letting-you-run-whatever-you-want-73cb5ff428aa"
-tags: [article, webseclist-reference, en, wallarm, csp, filter-bypass, xss, iframe, sop-bypass, same-origin-policy, http]
+tags: [article, webseclist-reference, en, wallarm, csp, filter-bypass, xss, iframe, sop-bypass, same-origin-policy, http, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:33:00+00:00"

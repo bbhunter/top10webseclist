@@ -3,7 +3,7 @@ type: Article
 title: "Phish in Sheep's Clothing: Exploring the Authentication Pitfalls of Browser Fingerprinting"
 description: "Risk-based login systems decide whether to demand a second factor by comparing browser fingerprints, so a phishing page harvesting exactly the attributes a target site measures lets an attacker replay the victim's fingerprint from another device and skip two-factor authentication. The authors automate building matching fingerprinting vectors and measure how many live phishing kits collect enough."
 resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/lin-xu"
-tags: [article, webseclist-reference, en, usenix-org, auth-bypass, info-leak, measurement-study, large-scale-scan, javascript]
+tags: [article, webseclist-reference, en, usenix-org, auth-bypass, info-leak, measurement-study, large-scale-scan, javascript, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:16+00:00"

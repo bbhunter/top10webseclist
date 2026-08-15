@@ -3,7 +3,7 @@ type: Article
 title: LinkedIn Security Practices – Find out how we protect you
 description: LinkedIn publishing platform stripped dangerous tags but allowed the class attribute through, so an author could point a link at a site-hosted CSS class that stretches an element across the whole page. The invisible full-page link turns any click on the article into navigation to an attacker-chosen phishing or malware site.
 resource: "https://security.linkedin.com/blog-archive#11232015"
-tags: [article, webseclist-reference, en, linkedin, ui-redress, clickjacking, css, filter-bypass, sanitizer-bypass, open-redirect, bug-bounty, case-study]
+tags: [article, webseclist-reference, en, linkedin, ui-redress, clickjacking, css, filter-bypass, sanitizer-bypass, open-redirect, bug-bounty, case-study, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:15+00:00"

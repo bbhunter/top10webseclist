@@ -3,7 +3,7 @@ type: Article
 title: "When HTTP 402 Meets the Blockchain: Risks on Emerging x402 Payments"
 description: x402 extends HTTP 402 Payment Required with a payment-negotiation flow in which third-party facilitators verify payment proofs and settle on chain on behalf of many merchants, centralising trust in one component. This study defines eight security rules for facilitators, derives four attack classes from their violation - free shopping, asset theft, service denial and gas abuse - and finds violations in all 15 major facilitators tested, alongside a measurement of over 119 million transactions.
 resource: "https://www.usenix.org/conference/usenixsecurity26/presentation/wang-qinying"
-tags: [article, webseclist-reference, en, usenix, measurement-study, http, rest-api, ai-agent, auth-bypass, dos, tooling, blockchain]
+tags: [article, webseclist-reference, en, usenix, measurement-study, http, rest-api, ai-agent, auth-bypass, dos, tooling, blockchain, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T14:00:55+00:00"

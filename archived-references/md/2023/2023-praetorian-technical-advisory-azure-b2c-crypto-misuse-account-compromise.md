@@ -3,7 +3,7 @@ type: Article
 title: Technical Advisory - Azure B2C - Crypto Misuse and Account Compromise
 description: "Azure AD B2C custom policies follow Microsoft's own tutorial in encrypting OAuth refresh tokens under an RSA key, but RSA encrypts with the public half, which is not a secret. An attacker who recovers that public key can mint a refresh token carrying any claims for any user and redeem it for a session, taking over accounts without credentials; the researchers demonstrated it against Microsoft's own MSRC researcher portal to read other people's vulnerability reports."
 resource: "https://www.praetorian.com/blog/azure-b2c-crypto-misuse-and-account-compromise/"
-tags: [article, webseclist-reference, en, praetorian, auth-bypass, jwt, oauth, openid, sso, azure, info-leak, privilege-escalation, case-study]
+tags: [article, webseclist-reference, en, praetorian, auth-bypass, jwt, oauth, openid, sso, azure, info-leak, privilege-escalation, case-study, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:37:02+00:00"

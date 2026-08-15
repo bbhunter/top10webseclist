@@ -3,7 +3,7 @@ type: Article
 title: "Secure Coding: JavaScript Hijacking"
 description: "Brian Chess's 1 April 2007 Secure Coding post naming JavaScript Hijacking. Ajax frameworks returning JavaScript rather than XML can be loaded cross-origin by a script tag, so a malicious site reads confidential array or object literals. Fortify found almost every framework surveyed, including GWT and Atlas, made this easy or unavoidable."
 resource: "https://seclists.org/securecoding/2007/q2/0"
-tags: [article, webseclist-reference, en, seclists-org, javascript, csrf, info-leak, sop-bypass, same-origin-policy, novel-technique]
+tags: [article, webseclist-reference, en, seclists-org, javascript, csrf, info-leak, sop-bypass, same-origin-policy, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:58:16+00:00"

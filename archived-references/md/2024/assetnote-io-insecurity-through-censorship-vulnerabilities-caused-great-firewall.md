@@ -3,7 +3,7 @@ type: Article
 title: "Insecurity through Censorship: Vulnerabilities Caused by The Great Firewall"
 description: "Queries answered by a nameserver in China get forged A records whenever a blacklisted keyword such as webproxy.id appears anywhere in the name, even for domains that do not exist, and the answers come from a small pool of unrelated real IPs. That turns any subdomain of the victim into a takeover: claim *.victim.tld on Fastly, point it at your own origin, and loop images over generated poisoned names until one lands there; a poisoned IP running old cPanel gives XSS instead."
 resource: "https://www.assetnote.io/resources/research/insecurity-through-censorship-vulnerabilities-caused-by-the-great-firewall"
-tags: [article, webseclist-reference, en, assetnote-io, dns, cdn, xss, cookie, novel-technique]
+tags: [article, webseclist-reference, en, assetnote-io, dns, cdn, xss, cookie, novel-technique, subdomain-takeover, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:01:38+00:00"

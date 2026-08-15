@@ -3,7 +3,7 @@ type: Article
 title: Your House Has an FFmpeg Problem
 description: "Home Assistant's Wyoming announce service passes media_id straight to ffmpeg as -i, and its scheme blocklist covers only http/https, letting concat:, file: and subfile: through. Raw files still fail because the command forces PCM transcoding, so the exploit splices four-byte slices of /bin/go2rtc with subfile: and concat: into a valid audio header, appends /proc/self/environ, and streams the file back as audio to the attacker's satellite, leaking SUPERVISOR_TOKEN and root on the host."
 resource: "https://www.elttam.com/blog/your-house-has-an-ffmpeg-problem"
-tags: [article, webseclist-reference, en, elttam-com, command-injection, lfi, info-leak, filter-bypass, rce, attack-chain]
+tags: [article, webseclist-reference, en, elttam-com, command-injection, lfi, info-leak, filter-bypass, rce, attack-chain, argument-injection, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:05+00:00"

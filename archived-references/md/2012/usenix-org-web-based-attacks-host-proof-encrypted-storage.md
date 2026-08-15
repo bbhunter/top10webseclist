@@ -3,7 +3,7 @@ type: Article
 title: Web-based Attacks on Host-Proof Encrypted Storage
 description: The WOOT 2012 abstract page for an attack study on host-proof applications such as Wuala and LastPass, which encrypt data in the client and treat the server as a backup store. Ordinary web vulnerabilities in their browser interfaces defeat the cryptography, exposing flaws in encryption, authorization policy and key management.
 resource: "https://www.usenix.org/conference/woot12/workshop-program/presentation/bhargavan"
-tags: [article, webseclist-reference, en, usenix-org, info-leak, auth-bypass, javascript, same-origin-policy, case-study]
+tags: [article, webseclist-reference, en, usenix-org, info-leak, auth-bypass, javascript, same-origin-policy, case-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:42+00:00"

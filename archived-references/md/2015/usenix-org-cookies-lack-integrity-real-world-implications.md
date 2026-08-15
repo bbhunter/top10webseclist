@@ -3,7 +3,7 @@ type: Article
 title: "Cookies Lack Integrity: Real-World Implications"
 description: Cookies carry no indication of how they were set, so a temporary man-in-the-middle on any plain HTTP request, or a web attacker on a related domain, can plant cookies that the browser then sends on later HTTPS connections.
 resource: "https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/zheng"
-tags: [article, webseclist-reference, en, usenix-org, cookie, session-fixation, injection, https, auth-bypass, measurement-study, mitigation]
+tags: [article, webseclist-reference, en, usenix-org, cookie, session-fixation, injection, https, auth-bypass, measurement-study, mitigation, owasp-a01-2021, owasp-a02-2021, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:00+00:00"

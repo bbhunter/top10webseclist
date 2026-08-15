@@ -3,7 +3,7 @@ type: Article
 title: The WordPress Chain Massacre
 description: "PHP's legacy Serializable path lets a user-defined unserialize() recurse without the engine taking the serialization lock, so inner and outer parses share a reference table; a property-table resize frees buckets the outer parser still holds, sprayed strings reclaim them, and the stale zvals give an arbitrary read. That leaks a code pointer, resolves gadgets, pivots the stack via a faked array destruction into ROP, and execs a memfd helper that takes root on the WordPress host."
 resource: "https://blog.calif.io/p/the-wordpress-chain-massacre"
-tags: [article, webseclist-reference, en, calif, php, wordpress, attack-chain, deserialization, privilege-escalation, rce, gadget-chain, llm, ai-agent]
+tags: [article, webseclist-reference, en, calif, php, wordpress, attack-chain, deserialization, privilege-escalation, rce, gadget-chain, llm, ai-agent, owasp-a01-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:11+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Cross-Site Search Attacks
 description: Cross-site search attacks time the responses to search queries a rogue page sends to a service the victim is logged into, inferring private data without breaking the same-origin policy. Statistical tests, inflating the response or the server work, and tailored divide-and-conquer term search made the channel practical against Gmail and Bing.
 resource: "https://dl.acm.org/doi/10.1145/2810103.2813688"
-tags: [article, webseclist-reference, xsleak, timing-attack, side-channel, info-leak, same-origin-policy, csrf, http, novel-technique]
+tags: [article, webseclist-reference, xsleak, timing-attack, side-channel, info-leak, same-origin-policy, csrf, http, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:05:28+00:00"

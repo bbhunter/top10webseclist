@@ -3,7 +3,7 @@ type: Article
 title: A Flushing Attack on the DNS Cache
 description: "Presents DNS CacheFlush, a denial-of-service attack that thrashes rather than poisons a recursive resolver's cache. Authoritative replies carrying many server names, such as long referral responses or CNAME chains, bypass cache protections and insert records far faster than the attacker queries, evicting benign entries from the LRU cache. A domain queried once per second missed 95.7% of the time under an 8,000 qps attack, and dropping such replies before processing is recommended."
 resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/afek"
-tags: [article, webseclist-reference, en, usenix-org, dns, dos, cache, algorithmic-complexity]
+tags: [article, webseclist-reference, en, usenix-org, dns, dos, cache, algorithmic-complexity, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:22+00:00"

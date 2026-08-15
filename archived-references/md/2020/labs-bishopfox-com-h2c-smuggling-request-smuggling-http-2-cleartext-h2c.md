@@ -3,7 +3,7 @@ type: Article
 title: "h2c Smuggling: Request Smuggling Via HTTP/2 Cleartext (h2c)"
 description: "A proxy that forwards Upgrade and Connection headers lets a client negotiate HTTP/2 cleartext with the back end, after which the proxy stops inspecting traffic and becomes a blind TCP tunnel. Every multiplexed request sent through that tunnel evades the proxy's access controls and reaches restricted or internal endpoints."
 resource: "https://labs.bishopfox.com/tech-blog/h2c-smuggling-request-smuggling-via-http/2-cleartext-h2c"
-tags: [article, webseclist-reference, en, labs-bishopfox-com, request-smuggling, http2, smuggling, auth-bypass, reverse-proxy, proxy, load-balancer, http, tooling, novel-technique]
+tags: [article, webseclist-reference, en, labs-bishopfox-com, request-smuggling, http2, smuggling, auth-bypass, reverse-proxy, proxy, load-balancer, http, tooling, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T05:18:31+00:00"

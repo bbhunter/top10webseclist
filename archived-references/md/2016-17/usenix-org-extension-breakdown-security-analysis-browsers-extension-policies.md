@@ -3,7 +3,7 @@ type: Article
 title: "Extension Breakdown: Security Analysis of Browsers Extension Resources Control Policies"
 description: "Browsers restrict which extension resources a web page may load, but two attacks defeat those controls in every major browser family and enumerate the extensions a user has installed: a timing side channel against the access-control check, and Safari extensions whose predictable resource URIs leak directly. Enumeration feeds user fingerprinting and targeted attacks."
 resource: "https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/sanchez-rola"
-tags: [article, webseclist-reference, en, usenix-org, browser-extension, timing-attack, side-channel, info-leak, sop-bypass, measurement-study, defence]
+tags: [article, webseclist-reference, en, usenix-org, browser-extension, timing-attack, side-channel, info-leak, sop-bypass, measurement-study, defence, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:08+00:00"

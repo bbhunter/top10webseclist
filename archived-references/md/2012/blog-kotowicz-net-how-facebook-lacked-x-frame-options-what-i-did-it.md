@@ -3,7 +3,7 @@ type: Article
 title: How Facebook lacked X-Frame-Options and what I did with it
 description: "Facebook's serverfbml.php plugin endpoint relied on JavaScript frame-busting and sent no X-Frame-Options header. Framing it under view-source: in Firefox and using a double drag-and-drop UI redressing game, an attacker could pull the page's HTML source cross-origin, harvesting the victim's user ID and the fb_dtsg and post_form_id anti-CSRF tokens, then post statuses and send friend requests."
 resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/08/how-facebook-lacked-x-frame-options-and.html"
-tags: [article, webseclist-reference, blog-kotowicz-net, ui-redress, clickjacking, csrf, iframe, info-leak, bug-bounty, case-study, sop-bypass]
+tags: [article, webseclist-reference, blog-kotowicz-net, ui-redress, clickjacking, csrf, iframe, info-leak, bug-bounty, case-study, sop-bypass, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:05:00+00:00"

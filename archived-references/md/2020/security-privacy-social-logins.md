@@ -3,7 +3,7 @@ type: Whitepaper
 title: Security and Privacy of Social Logins
 description: "A master's thesis that reverse-engineers the Sign in with Apple, Google Sign-In and Facebook Login protocols, then audits how their SDKs and 63 real-world sites use postMessage for the popup handoff. Missing origin and destination checks let any website steal SSO tokens for account takeover or land DOM-based XSS, and prompt=none with login_hint gives XS-Leaks revealing which accounts and identity a visitor holds."
 resource: "https://www.nds.ruhr-uni-bochum.de/media/nds/arbeiten/2020/10/29/Masterarbeit_Louis_Jannett_Security_and_Privacy_of_Social_Logins.pdf"
-tags: [whitepaper, webseclist-reference, postmessage, sso, oauth, openid, xsleak, xss, csrf, auth-bypass, info-leak, measurement-study]
+tags: [whitepaper, webseclist-reference, postmessage, sso, oauth, openid, xsleak, xss, csrf, auth-bypass, info-leak, measurement-study, owasp-a01-2021, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:42+00:00"

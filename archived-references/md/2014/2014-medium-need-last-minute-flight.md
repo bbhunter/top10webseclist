@@ -3,7 +3,7 @@ type: Article
 title: Need a last minute flight?
 description: "Delta's web boarding passes were addressed by a guessable URL with no ownership check, so editing it returned another passenger's pass, including passengers flying other airlines. That exposed their travel details and allowed checking in as them and changing their seat."
 resource: "https://web.archive.org/web/20160403035045/https://medium.com/@da/need-a-last-minute-flight-45af88ec8df3"
-tags: [article, webseclist-reference, medium, idor, auth-bypass, info-leak, case-study]
+tags: [article, webseclist-reference, medium, idor, auth-bypass, info-leak, case-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:10+00:00"

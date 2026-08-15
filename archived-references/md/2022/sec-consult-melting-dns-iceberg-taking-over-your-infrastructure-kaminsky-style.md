@@ -3,7 +3,7 @@ type: Article
 title: "Melting the DNS Iceberg: Taking over your infrastructure Kaminsky style"
 description: A survey of closed, non-publicly-reachable DNS resolvers, reached indirectly by sending mail that forces a target mail server to query an attacker-controlled authoritative nameserver for SPF, DKIM and DMARC records. Resolvers found without source port randomisation are poisonable by a classic Kaminsky attack, enabling MX redirection, password-reset interception and account takeover.
 resource: "https://sec-consult.com/blog/detail/melting-the-dns-iceberg-taking-over-your-infrastructure-kaminsky-style/"
-tags: [article, webseclist-reference, en, sec-consult, cache-poisoning, dns, smtp, email, auth-bypass, large-scale-scan, measurement-study, tooling]
+tags: [article, webseclist-reference, en, sec-consult, cache-poisoning, dns, smtp, email, auth-bypass, large-scale-scan, measurement-study, tooling, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:40:11+00:00"

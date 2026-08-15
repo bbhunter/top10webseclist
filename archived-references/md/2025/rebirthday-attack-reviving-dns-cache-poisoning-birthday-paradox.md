@@ -3,7 +3,7 @@ type: Article
 title: "RebirthDay Attack: Reviving DNS Cache Poisoning with the Birthday Paradox"
 description: DNS resolvers aggregate identical in-flight queries, but those supporting EDNS Client Subnet key that aggregation on the subnet too, so an off-path attacker repeating one query with many spoofed subnets forces many simultaneous upstream queries on different source ports. Forged replies then collide on port and TxID by the birthday paradox and poison the cache.
 resource: "https://doi.org/10.1145/3719027.3744832"
-tags: [article, webseclist-reference, cache-poisoning, dns, race-condition, novel-technique, measurement-study, large-scale-scan, cve]
+tags: [article, webseclist-reference, cache-poisoning, dns, race-condition, novel-technique, measurement-study, large-scale-scan, cve, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T22:47:35+00:00"

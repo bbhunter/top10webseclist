@@ -3,7 +3,7 @@ type: Article
 title: CSRF on Novell GroupWise WebAccess allows email theft and other attacks
 description: "Novell GroupWise WebAccess 6.5x through 8.0 tokenises nothing, so any authenticated request can be forged from a page, a link, or the HTML body of a mail the victim merely opens. The advisory's point is persistence: forging the add-forwarding-rule request installs a silent backdoor that copies every future message to the attacker. CVE-2009-0272; PoC withheld at Novell's request."
 resource: "http://www.procheckup.com/vulnerability_manager/vulnerabilities/pr08-21"
-tags: [article, webseclist-reference, procheckup-com, csrf, email, cve, vendor-advisory, abuse-of-functionality, case-study]
+tags: [article, webseclist-reference, procheckup-com, csrf, email, cve, vendor-advisory, abuse-of-functionality, case-study, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:09+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Scratching the surface of host headers in Safari
 description: "Safari accepts characters in a hostname that other browsers reject, so on sites with wildcard DNS the subdomain itself becomes the injection, reflected into HTML or passed to jQuery html(). Form-attribute payloads with a %0c inside the handler name evade the XSS auditor, and the same flaw in Safari's certificate error page made password manager extensions autofill credentials for the wrong site."
 resource: "https://labs.detectify.com/2018/04/04/host-headers-safari/"
-tags: [article, webseclist-reference, en, labs-detectify, xss, filter-bypass, url-parsing, http, browser-extension, dns, ios, cve, bug-bounty]
+tags: [article, webseclist-reference, en, labs-detectify, xss, filter-bypass, url-parsing, http, browser-extension, dns, ios, cve, bug-bounty, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:33:05+00:00"

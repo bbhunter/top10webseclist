@@ -3,7 +3,7 @@ type: Article
 title: Same Origin Bypassing Using Image Dimensions
 description: A covert channel built entirely from image tags, for a future browser sandbox that blocks dynamically inserted script, link and iframe elements. The evil server encodes payload bytes as the height and width of returned images; the client reads two characters per request via Image(), needing only image pre-loading, which no sandbox is likely to forbid.
 resource: "http://i8jesus.com/?p=13"
-tags: [article, webseclist-reference, en-US, i8jesus-com, sop-bypass, same-origin-policy, side-channel, info-leak, javascript, novel-technique]
+tags: [article, webseclist-reference, en-US, i8jesus-com, sop-bypass, same-origin-policy, side-channel, info-leak, javascript, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T16:31:45+00:00"

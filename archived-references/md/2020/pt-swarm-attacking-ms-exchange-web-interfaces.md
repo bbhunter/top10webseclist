@@ -3,7 +3,7 @@ type: Article
 title: Attacking MS Exchange Web Interfaces
 description: "Surveys the ways a low-privilege domain account can attack an internet-facing MS Exchange web interface, then adds a new one: reaching the RPC over HTTP v2 proxy by the NetBIOS name leaked in NTLMSSP and abusing MS-OXNSPI address-book identifiers, which on domain controllers are database row numbers, so walking them dumps every Active Directory record."
 resource: "https://swarm.ptsecurity.com/attacking-ms-exchange-web-interfaces/"
-tags: [article, webseclist-reference, en-US, pt-swarm, info-leak, auth-bypass, ssrf, tooling, http, email, proxy, attack-chain]
+tags: [article, webseclist-reference, en-US, pt-swarm, info-leak, auth-bypass, ssrf, tooling, http, email, proxy, attack-chain, owasp-a01-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:28+00:00"

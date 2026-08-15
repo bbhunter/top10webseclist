@@ -3,7 +3,7 @@ type: Whitepaper
 title: "CaffeineMonkey: Automated Collection, Detection and Analysis of Malicious JavaScript"
 description: Detecting malicious JavaScript by executing it rather than matching bytes. Heritrix crawls candidate pages into a central database and an instrumented SpiderMonkey runs each script, logging method calls so obfuscation - whitespace and comment randomisation, string splitting, integer rewriting, identifier renaming - does not hide behaviour.
 resource: "https://blackhat.com/presentations/bh-usa-07/Feinstein_and_Peck/Presentation/bh-usa-07-feinstein_and_peck.pdf"
-tags: [whitepaper, webseclist-reference, javascript, javascript-runtime, detection, dynamic-analysis, tooling, filter-bypass, measurement-study]
+tags: [whitepaper, webseclist-reference, javascript, javascript-runtime, detection, dynamic-analysis, tooling, filter-bypass, measurement-study, owasp-a05-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T12:52:57+00:00"

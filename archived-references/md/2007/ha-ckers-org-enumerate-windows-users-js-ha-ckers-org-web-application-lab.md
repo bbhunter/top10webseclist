@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab
 description: "Sergey Vzloman's proof of concept enumerates local Windows account names from JavaScript by probing Firefox resource:// URLs; the demo tries four accounts and is deliberately noisy. Dan Veditz notes the resource:// issue is fixed in Firefox 2.0.0.4 and 1.5.0.12, but older builds stay exposed, and a few hundred name guesses run quickly."
 resource: "http://ha.ckers.org/blog/20070518/enumerate-windows-users-in-js/"
-tags: [article, webseclist-reference, ha-ckers-org, info-leak, javascript, deanonymization, sop-bypass, detection, user-enumeration]
+tags: [article, webseclist-reference, ha-ckers-org, info-leak, javascript, deanonymization, sop-bypass, detection, user-enumeration, owasp-a01-2021, owasp-a04-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:39+00:00"

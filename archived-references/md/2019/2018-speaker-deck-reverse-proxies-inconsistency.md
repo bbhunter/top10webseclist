@@ -3,7 +3,7 @@ type: Slides
 title: Reverse proxies & Inconsistency
 description: Reverse proxies, caches and load balancers decode and normalise URLs differently from the origin server, so path parameters, encoded dot-segments and double slashes make the two disagree about which path a request is for. The mismatch bypasses proxy access rules, misroutes requests, strips or adds security headers, and enables web cache deception and cache poisoning.
 resource: "https://speakerdeck.com/greendog/reverse-proxies-and-inconsistency"
-tags: [slides, webseclist-reference, en, speaker-deck, parser-differential, cache-deception, cache-poisoning, url-parsing, reverse-proxy, proxy, auth-bypass, cache, http, filter-bypass]
+tags: [slides, webseclist-reference, en, speaker-deck, parser-differential, cache-deception, cache-poisoning, url-parsing, reverse-proxy, proxy, auth-bypass, cache, http, filter-bypass, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:46+00:00"

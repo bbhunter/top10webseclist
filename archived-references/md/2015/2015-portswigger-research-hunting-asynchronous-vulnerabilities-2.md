@@ -3,7 +3,7 @@ type: Article
 title: Hunting asynchronous vulnerabilities
 description: Bugs in background threads and second-order flows produce no output and no measurable delay, so they survive normal scanning. Sending payloads that make the target itself call back out of band, usually over DNS, exposes them, with context-agnostic callbacks given for XML injection and XXE, SQL injection on PostgreSQL, MySQL, SQLite, MSSQL and Oracle, shell command injection and blind XSS.
 resource: "https://portswigger.net/research/hunting-asynchronous-vulnerabilities"
-tags: [article, webseclist-reference, portswigger-research, xxe, sqli, command-injection, xss, dns, injection, tooling, novel-technique]
+tags: [article, webseclist-reference, portswigger-research, xxe, sqli, command-injection, xss, dns, injection, tooling, novel-technique, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:04+00:00"

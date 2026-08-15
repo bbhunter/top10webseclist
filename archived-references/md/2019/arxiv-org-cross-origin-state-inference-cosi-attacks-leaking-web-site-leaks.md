@@ -3,7 +3,7 @@ type: Article
 title: "Cross-Origin State Inference (COSI) Attacks: Leaking Web Site States through XS-Leaks"
 description: "A cross-origin state inference attack lures a victim to an attacker page that uses cross-origin browser behaviour, or XS-Leaks, to infer the victim's state at a target site, going well past logged-in detection to deanonymise account owners and tell account types apart. The work generalises 40 attack classes, finds a new postMessage-based leak, and its tool finds attacks on 58 popular sites."
 resource: "https://arxiv.org/abs/1908.02204"
-tags: [article, webseclist-reference, en, arxiv-org, xsleak, info-leak, side-channel, sop-bypass, postmessage, same-origin-policy, novel-technique, tooling, measurement-study]
+tags: [article, webseclist-reference, en, arxiv-org, xsleak, info-leak, side-channel, sop-bypass, postmessage, same-origin-policy, novel-technique, tooling, measurement-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:05+00:00"

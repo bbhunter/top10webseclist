@@ -3,7 +3,7 @@ type: Article
 title: New PHPIDS vector
 description: "A PHPIDS bypass built on a forgotten Internet Explorer feature: the language attribute lets an event handler be written in VBScript. Because VBScript needs no parentheses to call a function and unary plus avoids quotes, the vector <b/alt=\"1\"onmouseover=InputBox+1 language=vbs> evades the ruleset, though IE8's XSS filter catches it."
 resource: "http://www.thespanner.co.uk/2009/06/01/new-phpids-vector/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, filter-bypass, waf-bypass, xss, javascript, php, sanitizer-bypass, novel-technique]
+tags: [article, webseclist-reference, en, thespanner-co-uk, filter-bypass, waf-bypass, xss, javascript, php, sanitizer-bypass, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:02:03+00:00"

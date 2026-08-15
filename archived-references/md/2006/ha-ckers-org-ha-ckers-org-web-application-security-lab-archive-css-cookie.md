@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab - Archive » CSS History Stealing Acts As Cookie
 description: "CSS history stealing repurposed as a persistent cookie substitute. The site forces a visit to a per-user unique URL, then on return iterates candidate URLs to recognise the visitor. Matan Gillon's refinement uses a ten-deep tree of virtual folders to hold 10^10 identities in 100 probes, defeating cookie deletion and shared-proxy IP collapse."
 resource: "http://ha.ckers.org/blog/20060823/css-history-stealing-acts-as-cookie/"
-tags: [article, webseclist-reference, ha-ckers-org, css, deanonymization, browser-fingerprinting, info-leak, cookie, side-channel, iframe, novel-technique]
+tags: [article, webseclist-reference, ha-ckers-org, css, deanonymization, browser-fingerprinting, info-leak, cookie, side-channel, iframe, novel-technique, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:30+00:00"

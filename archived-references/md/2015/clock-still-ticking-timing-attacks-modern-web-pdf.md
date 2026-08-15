@@ -3,7 +3,7 @@ type: Whitepaper
 title: "The Clock is Still Ticking: Timing Attacks in the Modern Web (PDF)"
 description: Modern browser APIs such as video and script parsing, Application Cache, Service Workers and the Cache API expose timing side channels that reveal a cross-origin response size without measuring network download time. An attacker page can size resources reliably even on mobile links and infer a victim logged-in state, age, gender, location, contacts and search history.
 resource: "https://tom.vg/papers/timing-attacks_ccs2015.pdf"
-tags: [whitepaper, webseclist-reference, timing-attack, xsleak, side-channel, info-leak, service-worker, cache, same-origin-policy, javascript, novel-technique]
+tags: [whitepaper, webseclist-reference, timing-attack, xsleak, side-channel, info-leak, service-worker, cache, same-origin-policy, javascript, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:46:07+00:00"

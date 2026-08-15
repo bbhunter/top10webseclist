@@ -3,7 +3,7 @@ type: Whitepaper
 title: File Download Injection
 description: "Aspect Security whitepaper on injecting a whole file download through a Content-Disposition header. Two CRLFs in a download script's filename parameter terminate the headers and let the attacker supply arbitrary file name, type and body, served from the trusted domain the victim clicked."
 resource: "https://dl.packetstormsecurity.net/papers/attack/Aspect_File_Download_Injection.pdf"
-tags: [whitepaper, webseclist-reference, header-injection, response-splitting, content-type, java, dotnet, php, filter-bypass, mitigation]
+tags: [whitepaper, webseclist-reference, header-injection, response-splitting, content-type, java, dotnet, php, filter-bypass, mitigation, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:41:23+00:00"

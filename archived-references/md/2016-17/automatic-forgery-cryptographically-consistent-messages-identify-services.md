@@ -3,7 +3,7 @@ type: Whitepaper
 title: Automatic Forgery of Cryptographically Consistent Messages to Identify Security Vulnerabilities in Mobile Services
 description: Mobile apps sign, hash or encrypt their API requests, so servers assume a client cannot forge a valid message. AUTOFORGE reverse-engineers how a client builds messages and automatically produces cryptographically consistent ones, letting an attacker brute-force passwords, probe leaked passwords and hijack Facebook access tokens against app backends.
 resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/automatic-forgery-cryptographically-consistent-messages-identify-security-vulnerabilities.pdf"
-tags: [whitepaper, webseclist-reference, auth-bypass, oauth, android, rest-api, https, tooling, dynamic-analysis, measurement-study]
+tags: [whitepaper, webseclist-reference, auth-bypass, oauth, android, rest-api, https, tooling, dynamic-analysis, measurement-study, owasp-a01-2021, owasp-a02-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T20:59:37+00:00"

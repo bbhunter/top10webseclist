@@ -3,7 +3,7 @@ type: Article
 title: "1139 - cloudflare: Cloudflare Reverse Proxies are Dumping Uninitialized Memory - project-zero"
 description: "A flaw in Cloudflare's HTML-rewriting reverse proxy made it emit pages of uninitialized memory whenever a page behind it carried particular unbalanced tags. Because the proxies are shared between customers, the leaked bytes held other sites' encryption keys, cookies, passwords and POST bodies, and crawlers had already cached them."
 resource: "https://bugs.chromium.org/p/project-zero/issues/detail?id=1139"
-tags: [article, webseclist-reference, en, bugs-chromium-org, info-leak, reverse-proxy, cdn, cloudflare, cookie, http, case-study]
+tags: [article, webseclist-reference, en, bugs-chromium-org, info-leak, reverse-proxy, cdn, cloudflare, cookie, http, case-study, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:35:16+00:00"

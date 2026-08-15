@@ -3,7 +3,7 @@ type: Article
 title: One vector to rule them all
 description: "A single XSS payload built to fire wherever it lands: raw HTML, inside double or single quotes, or inside an attribute value. It stacks roughly nineteen execution paths into one string, combining an img element with name-based eval, CSS expression(), -ms-behavior, and the onerror, onfocus, onclick, onmouseover and onbegin handlers."
 resource: "http://www.thespanner.co.uk/2010/09/15/one-vector-to-rule-them-all/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, xss, filter-bypass, javascript, waf-bypass, novel-technique, css, dom, sanitizer-bypass]
+tags: [article, webseclist-reference, en, thespanner-co-uk, xss, filter-bypass, javascript, waf-bypass, novel-technique, css, dom, sanitizer-bypass, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:02:16+00:00"

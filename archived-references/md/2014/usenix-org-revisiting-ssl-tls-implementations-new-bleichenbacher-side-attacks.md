@@ -3,7 +3,7 @@ type: Article
 title: "Revisiting SSL/TLS Implementations: New Bleichenbacher Side Channels and Attacks"
 description: "Four new Bleichenbacher oracles in the TLS RSA handshake: a JSSE error-message difference, OpenSSL timing, Java exception-handling timing, and a Cavium NITROX chip that leaks whether decrypted data starts 0x?? 02. Three are practical over a switched network, letting an attacker decrypt a recorded PreMasterSecret and with it the whole session."
 resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/meyer"
-tags: [article, webseclist-reference, usenix-org, side-channel, timing-attack, tls, https, java, info-leak, novel-technique, tooling]
+tags: [article, webseclist-reference, usenix-org, side-channel, timing-attack, tls, https, java, info-leak, novel-technique, tooling, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:05:45+00:00"

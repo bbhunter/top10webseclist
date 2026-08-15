@@ -3,7 +3,7 @@ type: Article
 title: "On Breaking SAML: Be Whoever You Want to Be"
 description: An analysis of 14 SAML frameworks found 11, including Salesforce, Shibboleth and IBM XS40, open to XML Signature wrapping, letting an attacker re-parent a signed assertion and impersonate any user. The work models the attack as information flow between two Relying Party components, builds a penetration testing tool from that model, and derives countermeasures.
 resource: "https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/somorovsky"
-tags: [article, webseclist-reference, en, usenix-org, saml, sso, auth-bypass, parser-differential, formal-analysis, tooling, novel-technique]
+tags: [article, webseclist-reference, en, usenix-org, saml, sso, auth-bypass, parser-differential, formal-analysis, tooling, novel-technique, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:12+00:00"

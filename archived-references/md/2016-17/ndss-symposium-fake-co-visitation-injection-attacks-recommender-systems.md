@@ -3,7 +3,7 @@ type: Article
 title: Fake Co-visitation Injection Attacks to Recommender Systems
 description: Recommenders that infer relatedness from users viewing two items together can be steered by injecting fabricated co-visitation records. Framing the choice of target items and injection counts as a constrained optimisation problem lets an attacker with a limited budget force chosen recommendations on services including YouTube, eBay, Amazon, Yelp and LinkedIn.
 resource: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/fake-co-visitation-injection-attacks-recommender-systems/"
-tags: [article, webseclist-reference, en, ndss-symposium, injection, formal-analysis, novel-technique, case-study]
+tags: [article, webseclist-reference, en, ndss-symposium, injection, formal-analysis, novel-technique, case-study, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:03+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: The Month of Facebook Bugs Report
 description: "Closing report of the Month of Facebook Bugs, which found XSS in over 9,700 Facebook applications. Because an application's page carries its session secret, an XSS there becomes an API request forgery: a double-injection trick loads the direct FBML page in an fb:iframe so a nested iframe leaks the secret via the referrer, enabling profile theft and viral posting."
 resource: "http://theharmonyguy.com/2009/10/09/the-month-of-facebook-bugs-report/"
-tags: [article, webseclist-reference, en-US, theharmonyguy-com, xss, csrf, clickjacking, iframe, measurement-study, info-leak, case-study, javascript]
+tags: [article, webseclist-reference, en-US, theharmonyguy-com, xss, csrf, clickjacking, iframe, measurement-study, info-leak, case-study, javascript, owasp-a01-2021, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:45:38+00:00"

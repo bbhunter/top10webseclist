@@ -3,7 +3,7 @@ type: Article
 title: Side Channel Attacks in SSL ha.ckers.org web application security lab
 description: "A short pointer post flagging the Microsoft Research and Indiana University paper on side-channel leaks in encrypted web traffic, which pre-empted a Black Hat talk. It sketches the author's own angle: HTML loading scripts, CSS and images produces a chain of observable sub-requests a man in the middle can use to cut noise on the wire."
 resource: "http://ha.ckers.org/blog/20100621/side-channel-attacks-in-ssl/"
-tags: [article, webseclist-reference, ha-ckers-org, side-channel, tls, https, info-leak, http, css]
+tags: [article, webseclist-reference, ha-ckers-org, side-channel, tls, https, info-leak, http, css, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T05:11:19+00:00"

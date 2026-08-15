@@ -3,7 +3,7 @@ type: Article
 title: Google Translate - Google User Content - File Uploading Cross - XSS and Design Stringency
 description: Files uploaded to Google Translate were rendered on translate.googleusercontent.com with their scripts and iframes intact, so translated attacker content executed in a Google-hosted context. Google treated it as by design; the post argues users read translation as trustworthy and asks for a Bing-style untrusted-content notice.
 resource: "https://zeroknock.blogspot.com/2009/12/google-translate-google-user-content.html"
-tags: [article, webseclist-reference, zeroknock-blogspot-com, xss, file-upload, same-origin-policy, case-study, mitigation, iframe]
+tags: [article, webseclist-reference, zeroknock-blogspot-com, xss, file-upload, same-origin-policy, case-study, mitigation, iframe, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:08:09+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Memcached Command Injections at Pylibmc
 description: Flask-Session builds its memcached key by concatenating a prefix with the session cookie value, so CRLF smuggled in through octal-quoted cookie escapes injects raw memcached commands. An attacker can store an arbitrary pickle under a chosen key and then load it as their own session, gaining remote code execution when the library unpickles it.
 resource: "https://btlfry.gitlab.io/notes/posts/memcached-command-injections-at-pylibmc/"
-tags: [article, webseclist-reference, en-us, btlfry-gitlab-io, command-injection, deserialization, cookie, rce, flask, python, cache, prior-art-extension]
+tags: [article, webseclist-reference, en-us, btlfry-gitlab-io, command-injection, deserialization, cookie, rce, flask, python, cache, prior-art-extension, owasp-a03-2021, owasp-a07-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:07:56+00:00"

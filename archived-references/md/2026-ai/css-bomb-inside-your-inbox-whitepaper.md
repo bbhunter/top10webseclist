@@ -3,7 +3,7 @@ type: Whitepaper
 title: "CSS: the bomb inside your inbox (Whitepaper)"
 description: "Webmail CSS sanitizers are broken from several angles: nested attribute selectors brute-force a login token pasted into a draft, escaped slashes and image-set(var(--x,'//host')) slip past image proxies, and CSSOM read-back decodes escapes so @keyframes foo\\7d\\2a becomes }*, escaping Fastmail's selector prefixing. :before pseudo-elements inherit an element's click handler to hotwire UI actions, and option:checked rules build a real-time password keylogger inside Outlook."
 resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-WP.pdf"
-tags: [whitepaper, webseclist-reference, css, css-injection, sanitizer-bypass, email, info-leak, ui-redress, filter-bypass, prompt-injection]
+tags: [whitepaper, webseclist-reference, css, css-injection, sanitizer-bypass, email, info-leak, ui-redress, filter-bypass, prompt-injection, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:08:23+00:00"

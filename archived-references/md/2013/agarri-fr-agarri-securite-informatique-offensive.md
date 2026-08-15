@@ -3,7 +3,7 @@ type: Article
 title: "Agarri : Sécurité informatique offensive"
 description: "Gregoire turns an XXE in a Java app into compromise of an unreachable Solr server: the XXE port-scans internally, finds Solr on 8983, then abuses Solr's XSLT response writer with a tr=../../ traversal to load an uploaded stylesheet and execute Java (CVE-2013-6397). The capture is the whole blog index, so it also carries Perl Storable, AMF XXE, Redis and XSLT-fuzzing posts."
 resource: "http://web.archive.org/web/20160507023636/http://www.agarri.fr/blog/"
-tags: [article, webseclist-reference, en, agarri-fr, xxe, ssrf, rce, path-traversal, java, cve, attack-chain, case-study]
+tags: [article, webseclist-reference, en, agarri-fr, xxe, ssrf, rce, path-traversal, java, cve, attack-chain, case-study, owasp-a01-2021, owasp-a03-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:01:21+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: My TV interview with ABC News (AU)
 description: "Grossman recounts a 2005 ABC News (AU) Four Corners interview in which he demonstrated XSS against the broadcaster's own site, fabricating a convincing news story that linked the reporter to Al Qaeda, then another awarding him a Pulitzer. ABC's security team asked for details and fixed it within days."
 resource: "https://jeremiahgrossman.blogspot.com/2006/01/my-tv-interview-with-abc-news-au.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, xss, url-spoofing, phishing, case-study]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, xss, url-spoofing, phishing, case-study, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:00+00:00"

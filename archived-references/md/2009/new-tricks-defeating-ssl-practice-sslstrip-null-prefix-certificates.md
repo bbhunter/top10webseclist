@@ -3,7 +3,7 @@ type: Whitepaper
 title: New Tricks for Defeating SSL in Practice (sslstrip & null-prefix certificates)
 description: "Black Hat DC 2009 deck introducing sslstrip: rather than attacking TLS, a MITM rewrites https links and 302s in passing HTTP traffic, strips secure cookies and content encodings, and serves a padlock favicon. It reports 117 email accounts and 16 card numbers captured in 24 hours, then combines the trick with IDN look-alike slashes under a wildcard certificate."
 resource: "https://blackhat.com/presentations/bh-dc-09/Marlinspike/BlackHat-DC-09-Marlinspike-Defeating-SSL.pdf"
-tags: [whitepaper, webseclist-reference, tls, https, novel-technique, tooling, url-parsing, unicode, cookie, proxy]
+tags: [whitepaper, webseclist-reference, tls, https, novel-technique, tooling, url-parsing, unicode, cookie, proxy, owasp-a02-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:39+00:00"

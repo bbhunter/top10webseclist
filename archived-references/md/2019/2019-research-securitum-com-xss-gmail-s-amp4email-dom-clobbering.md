@@ -3,7 +3,7 @@ type: Article
 title: "XSS in GMail's AMP4Email via DOM Clobbering"
 description: "AMP4Email in Gmail allowed the id attribute, so DOM clobbering was possible. Two anchors sharing an id yield an HTMLCollection whose members can be addressed by name, and an anchor stringifies to its href, letting an attacker clobber the AMP_MODE and testLocation globals and point AMP's script loader at an attacker URL for XSS."
 resource: "https://research.securitum.com/xss-in-amp4email-dom-clobbering/"
-tags: [article, webseclist-reference, en, research-securitum-com, dom-clobbering, xss, dom, filter-bypass, email, csp, javascript, bug-bounty, novel-technique]
+tags: [article, webseclist-reference, en, research-securitum-com, dom-clobbering, xss, dom, filter-bypass, email, csp, javascript, bug-bounty, novel-technique, owasp-a03-2021, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:14+00:00"

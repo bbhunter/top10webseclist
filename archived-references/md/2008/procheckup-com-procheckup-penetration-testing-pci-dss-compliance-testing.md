@@ -3,7 +3,7 @@ type: Article
 title: ProCheckUp - Penetration Testing, PCI DSS Compliance, Application Testing
 description: "ProCheckUp's landing page for Paper-04, 'SNMP Injection: Achieving Persistent HTML Injection via SNMP on Embedded Devices', which argues SNMP-writable OID values are echoed unescaped into device web interfaces, giving persistent XSS on routers and gateways. The page is only a wrapper: site chrome, five preview thumbnails, a download link. The paper is an external PDF, not held here."
 resource: "http://www.procheckup.com/vulnerability_manager/vulnerabilities/paper-04"
-tags: [article, webseclist-reference, en, procheckup-com, xss, injection, vendor-advisory, snmp, embedded-device]
+tags: [article, webseclist-reference, en, procheckup-com, xss, injection, vendor-advisory, snmp, embedded-device, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:09+00:00"

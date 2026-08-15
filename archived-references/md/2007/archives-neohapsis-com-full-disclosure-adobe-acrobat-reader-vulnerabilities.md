@@ -3,7 +3,7 @@ type: Article
 title: "[Full-disclosure] Adobe Acrobat Reader Plugin - Multiple Vulnerabilities"
 description: "Adobe's Acrobat Reader browser plugin accepts #FDF, #XML and #XFDF fragments on any PDF URL, so a link to any site's own PDF makes the plugin issue attacker-chosen requests. That yields universal CSRF across Firefox, IE and Opera, universal XSS in Firefox via #FDF=javascript:, forced file downloads, credential theft through res:// named pipes, a DoubleFree reachable for possible code execution, and an IE memory-exhaustion DoS."
 resource: "http://archives.neohapsis.com/archives/fulldisclosure/2007-01/0062.html"
-tags: [article, webseclist-reference, en, archives-neohapsis-com, pdf, xss, sop-bypass, csrf, rce, dos, novel-technique, attack-chain]
+tags: [article, webseclist-reference, en, archives-neohapsis-com, pdf, xss, sop-bypass, csrf, rce, dos, novel-technique, attack-chain, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:22+00:00"

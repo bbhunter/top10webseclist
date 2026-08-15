@@ -3,7 +3,7 @@ type: Code
 title: Cross-Site Cooking
 description: "Michal Zalewski's Full Disclosure advisory names three cookie-domain flaws: browsers accept cookies scoped to two-part ccTLDs such as *.com.pl; empty and trailing periods pass the domain check, so \".com.\" works against www.victim.com.; and an A record pointing evil.example.com at a victim's IP makes the browser relay attacker cookies to that server."
 resource: "https://lcamtuf.coredump.cx/cross_site_cooking.txt"
-tags: [code, webseclist-reference, cookie, session-fixation, dns, url-parsing, auth-bypass, same-origin-policy, novel-technique]
+tags: [code, webseclist-reference, cookie, session-fixation, dns, url-parsing, auth-bypass, same-origin-policy, novel-technique, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-08T07:45:35+00:00"

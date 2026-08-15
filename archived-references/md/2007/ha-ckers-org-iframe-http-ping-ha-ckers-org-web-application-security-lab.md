@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab
 description: "Firefox fires an iframe's onload only when the load succeeds, while IE fires it always, so chained iframes reveal whether a host and port answer, including behind the firewall. Extends the known JavaScript-include port scan to iframes; credited to Spikeman on sla.ckers."
 resource: "http://ha.ckers.org/blog/20070119/iframe-http-ping/"
-tags: [article, webseclist-reference, ha-ckers-org, iframe, side-channel, detection, info-leak, sop-bypass, javascript, prior-art-extension]
+tags: [article, webseclist-reference, ha-ckers-org, iframe, side-channel, detection, info-leak, sop-bypass, javascript, prior-art-extension, owasp-a01-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:54:21+00:00"

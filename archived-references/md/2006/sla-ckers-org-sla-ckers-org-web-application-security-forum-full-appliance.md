@@ -3,7 +3,7 @@ type: Article
 title: "sla.ckers.org web application security forum :: Full Disclosure :: Widespread XSS for Google Search Appliance"
 description: "A 2007 capture of the same 30-post thread as sla-ckers-org-widespread-xss-google-search-appliance; Phorum renders the whole thread from either URL, so this is a duplicate, not a sibling needing a format word. Title is the raw <title> chrome 'site :: board :: subject'. The opening sentence's <script>alert(\"XSS\")</script> was decoded to live HTML and will vanish on render."
 resource: "http://sla.ckers.org/forum/read.php?3,3109,3124"
-tags: [article, webseclist-reference, EN, sla-ckers-org, xss, charset, encoding, filter-bypass, unicode, case-study]
+tags: [article, webseclist-reference, EN, sla-ckers-org, xss, charset, encoding, filter-bypass, unicode, case-study, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:34+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Automated Password Extraction Attack on Modern Password Managers
 description: "Lupin makes a browser's own password manager give up saved credentials: a network attacker injects a login form into any non-HTTPS page and the manager autofills it, including passwords for sites the victim is not visiting and forms whose destination is HTTPS. A crawl of the Alexa top 45,000 found at least 28% vulnerable, and Lupin pulled passwords from 1,000 sites in under 35 seconds."
 resource: "https://arxiv.org/abs/1309.1416"
-tags: [article, webseclist-reference, en, arxiv-org, https, tooling, large-scale-scan, measurement-study, javascript]
+tags: [article, webseclist-reference, en, arxiv-org, https, tooling, large-scale-scan, measurement-study, javascript, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:05+00:00"

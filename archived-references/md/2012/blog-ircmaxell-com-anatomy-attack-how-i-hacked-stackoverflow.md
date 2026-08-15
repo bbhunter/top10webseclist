@@ -3,7 +3,7 @@ type: Article
 title: "Anatomy of an Attack: How I Hacked StackOverflow"
 description: "An SSH-tunnelled Squid proxy stamped X-Forwarded-For: 127.0.0.1 on the author's requests, and StackExchange's IIS was configured to rewrite Remote_Addr from that header. The application checked the right variable, so the proxy alone granted full chat admin and database query access. The lesson drawn is that server and application must not disagree about which header is trusted."
 resource: "https://web.archive.org/web/20170903113359/http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html"
-tags: [article, webseclist-reference, blog-ircmaxell-com, auth-bypass, http, proxy, aspnet, case-study, privilege-escalation, reverse-proxy, php]
+tags: [article, webseclist-reference, blog-ircmaxell-com, auth-bypass, http, proxy, aspnet, case-study, privilege-escalation, reverse-proxy, php, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:24+00:00"

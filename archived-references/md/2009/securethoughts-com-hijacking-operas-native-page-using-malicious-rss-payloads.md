@@ -3,7 +3,7 @@ type: Article
 title: Hijacking Opera’s Native Page using malicious RSS payloads
 description: "Untrusted RSS feed content is rendered in Opera's Feed Subscription Page, a native page running in a higher-privileged zone than the internet zone. Escaping that page's HTML tag whitelist and sanitiser lets a crafted feed run script there and call native functions such as opera.feeds.subscribeNative, taking control of the browser. Fixed in Opera 10.01."
 resource: "http://securethoughts.com/2009/10/hijacking-operas-native-page-using-malicious-rss-payloads/"
-tags: [article, webseclist-reference, en-US, securethoughts-com, xss, sanitizer-bypass, filter-bypass, privilege-escalation, sandbox-escape, novel-technique]
+tags: [article, webseclist-reference, en-US, securethoughts-com, xss, sanitizer-bypass, filter-bypass, privilege-escalation, sandbox-escape, novel-technique, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:41:04+00:00"

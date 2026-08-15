@@ -3,7 +3,7 @@ type: Article
 title: Backdooring PDF Files
 description: "David Kierznowski backdoors PDFs through Adobe's own JavaScript model, attaching code to the Page Open event. One variant silently launches a URL in the browser with no warning from Reader 6 or 7; the other uses ADBC to enumerate Windows ODBC data sources and ships the list out over a SOAP web service request."
 resource: "https://web.archive.org/web/20070102032610/http://michaeldaw.org/md-hacks/backdooring-pdf-files/"
-tags: [article, webseclist-reference, michaeldaw-org, pdf, novel-technique, javascript, info-leak, database, abuse-of-functionality]
+tags: [article, webseclist-reference, michaeldaw-org, pdf, novel-technique, javascript, info-leak, database, abuse-of-functionality, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T18:12:16+00:00"

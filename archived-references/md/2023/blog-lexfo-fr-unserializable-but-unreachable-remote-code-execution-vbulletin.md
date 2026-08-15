@@ -3,7 +3,7 @@ type: Article
 title: "Unserializable, but unreachable: Remote code execution on vBulletin"
 description: "A pre-authentication unserialize sits in vBulletin's ORM, where an array field is validated by deserialising it. No in-tree gadget works because every vBulletin class blocks wakeup, so the researchers deserialise a fake class name that the autoloader converts into a file path, forcing it to include a disabled package's Composer autoloader and bringing Monolog gadget chains into scope for RCE."
 resource: "https://www.ambionics.io/blog/vbulletin-unserializable-but-unreachable"
-tags: [article, webseclist-reference, en, blog-lexfo-fr, deserialization, gadget-chain, rce, php, attack-chain, novel-technique]
+tags: [article, webseclist-reference, en, blog-lexfo-fr, deserialization, gadget-chain, rce, php, attack-chain, novel-technique, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:00:37+00:00"

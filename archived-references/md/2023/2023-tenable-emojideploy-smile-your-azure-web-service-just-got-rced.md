@@ -3,7 +3,7 @@ type: Article
 title: "EmojiDeploy: Smile! Your Azure web service just got RCE’d ._."
 description: "Azure's Kudu SCM service, which backs App Service, Functions and Logic Apps, sets SameSite=None on its session cookies and guards requests with an origin regex that a wildcard-DNS host of the form victim.scm.azurewebsites.net._.attacker.com slips past."
 resource: "https://ermetic.com/blog/azure/emojideploy-smile-your-azure-web-service-just-got-rced/"
-tags: [article, webseclist-reference, en, tenable, csrf, filter-bypass, rce, cookie, url-parsing, file-upload, same-origin-policy, azure, attack-chain, bug-bounty]
+tags: [article, webseclist-reference, en, tenable, csrf, filter-bypass, rce, cookie, url-parsing, file-upload, same-origin-policy, azure, attack-chain, bug-bounty, owasp-a01-2021, owasp-a05-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:07+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "Leaking Secrets From GitHub Actions: Reading Files And Environment Variables, Intercepting Network/Process Communication, Dumping Memory"
 description: "Turns a command injection in a GitHub Actions workflow into full secret disclosure: reading the expanded .sh files the runner writes under _temp, dumping the environment of Node.js action processes, and most reliably using sudo and gcore to dump Runner.Listener memory, which yields every workflow secret plus the read-write GITHUB_TOKEN even when none are referenced."
 resource: "https://karimrahal.com/2023/01/05/github-actions-leaking-secrets/"
-tags: [article, webseclist-reference, en, karimrahal-com, github-actions, command-injection, ci-cd, info-leak, github, supply-chain, novel-technique]
+tags: [article, webseclist-reference, en, karimrahal-com, github-actions, command-injection, ci-cd, info-leak, github, supply-chain, novel-technique, owasp-a03-2021, owasp-a06-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:32:04+00:00"

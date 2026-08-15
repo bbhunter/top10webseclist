@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab - Archive » Initiating Probes Against Servers Via Other Servers
 description: "GRC's port probe scans only the requester's own IP, so RSnake sends the W3C validator to fetch it: the validator becomes the origin and reports the result back. Any GET-driven fetcher can be chained this way, so the scan logs as someone else's traffic and IP-based restriction does not hold."
 resource: "http://ha.ckers.org/blog/20071209/initiatin-probes-against-servers-via-other-servers/"
-tags: [article, webseclist-reference, ha-ckers-org, ssrf, abuse-of-functionality, proxy, detection, info-leak, novel-technique]
+tags: [article, webseclist-reference, ha-ckers-org, ssrf, abuse-of-functionality, proxy, detection, info-leak, novel-technique, owasp-a04-2021, owasp-a09-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:59:58+00:00"

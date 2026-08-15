@@ -3,7 +3,7 @@ type: Article
 title: Why Code Security Matters - Even in Hardened Environments
 description: Asks whether an arbitrary file write still yields code execution on a read-only filesystem. Because libuv exposes its anonymous signal pipe via /proc, a Node.js process can be fed a forged signal message whose handle pointer is dereferenced and whose callback is then invoked; since official Node builds are not position-independent, a scan of static segments finds data usable as the fake handle and a stack-pivot gadget.
 resource: "https://www.sonarsource.com/blog/why-code-security-matters-even-in-hardened-environments/"
-tags: [article, webseclist-reference, en, sonar, nodejs, rce, gadget-chain, javascript-runtime]
+tags: [article, webseclist-reference, en, sonar, nodejs, rce, gadget-chain, javascript-runtime, file-write, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:36+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: St. Louis Federal Reserve Suffers DNS Breach
 description: News report that attackers altered routing settings at the DNS vendor used by the St. Louis Federal Reserve in April 2015, redirecting research.stlouisfed.org visitors to lookalike pages. Anyone who logged in during the redirect may have given their username and password to the attackers, without the bank site itself being breached.
 resource: "http://krebsonsecurity.com/2015/05/st-louis-federal-reserve-suffers-dns-breach/"
-tags: [article, webseclist-reference, en-US, krebsonsecurity-com, dns, supply-chain, info-leak, case-study]
+tags: [article, webseclist-reference, en-US, krebsonsecurity-com, dns, supply-chain, info-leak, case-study, owasp-a06-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:35+00:00"

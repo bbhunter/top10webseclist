@@ -3,7 +3,7 @@ type: Article
 title: "Close Encounters of the Third Kind: Client-Side JavaScript Vulnerabilities"
 description: IBM ran static taint analysis over JavaScript harvested by a deep crawl of 675 sites, the Fortune 500 plus 175 hand-picked ones, analysing fully rendered HTML and the DOM rather than raw source. 98 sites (14%) held DOM-based XSS or open redirects, 2,370 and 221 issues respectively, and 38% of the flaws came from third-party snippets.
 resource: "https://tinyurl.com/5w6koqj"
-tags: [article, webseclist-reference, ibm-com, xss, dom, static-analysis, open-redirect, measurement-study, large-scale-scan, javascript, dynamic-analysis, tooling]
+tags: [article, webseclist-reference, ibm-com, xss, dom, static-analysis, open-redirect, measurement-study, large-scale-scan, javascript, dynamic-analysis, tooling, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:05:23+00:00"

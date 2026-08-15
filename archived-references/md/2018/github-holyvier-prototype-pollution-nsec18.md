@@ -3,7 +3,7 @@ type: Repository
 title: "GitHub - HoLyVieR/prototype-pollution-nsec18: Content released at NorthSec 2018 for my talk on prototype pollution"
 description: "Release material for the NorthSec 2018 talk that turned prototype pollution from a bad practice into an attack: APIs that recursively merge, clone or assign attacker-controlled key paths can write onto the base object prototype, so every object in the application inherits attacker-chosen properties and behaviour changes across the whole program."
 resource: "https://github.com/HoLyVieR/prototype-pollution-nsec18"
-tags: [repo, webseclist-reference, github, prototype-pollution, injection, javascript, nodejs, novel-technique]
+tags: [repo, webseclist-reference, github, prototype-pollution, injection, javascript, nodejs, novel-technique, owasp-a03-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:12:48+00:00"

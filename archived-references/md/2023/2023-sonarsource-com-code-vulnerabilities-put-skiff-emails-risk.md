@@ -3,7 +3,7 @@ type: Article
 title: Code Vulnerabilities Put Skiff Emails at Risk
 description: "Skiff's webmail inserted a div into the already-sanitized DOM inside an svg element; because a div is not a valid svg child, re-serializing and re-parsing the HTML moved the style element out of SVG context, so an img onerror hidden in an attribute came alive, a mutation XSS past DOMPurify."
 resource: "https://www.sonarsource.com/blog/code-vulnerabilities-put-skiff-emails-at-risk/"
-tags: [article, webseclist-reference, en, sonarsource-com, mutation-xss, sanitizer-bypass, parser-differential, xss, csp, css, info-leak, iframe, cloudflare, email]
+tags: [article, webseclist-reference, en, sonarsource-com, mutation-xss, sanitizer-bypass, parser-differential, xss, csp, css, info-leak, iframe, cloudflare, email, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:29+00:00"

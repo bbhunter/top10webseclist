@@ -3,7 +3,7 @@ type: Article
 title: Write-up of Path Traversal on Gravitee.io
 description: Gravitee.io embedded every img src of an outgoing HTML mail as a CID attachment, reading the path straight from the tag with no validation. HTML injection into the unauthenticated registration form name fields let an attacker point that tag at ../../../etc/passwd and receive arbitrary server files as an email attachment.
 resource: "https://medium.com/@maxime.escourbiac/write-up-of-path-traversal-on-gravitee-io-8835941be69f"
-tags: [article, webseclist-reference, en, medium, path-traversal, injection, email, info-leak, java, attack-chain, case-study]
+tags: [article, webseclist-reference, en, medium, path-traversal, injection, email, info-leak, java, attack-chain, case-study, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:14+00:00"

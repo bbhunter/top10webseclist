@@ -3,7 +3,7 @@ type: Whitepaper
 title: "DEF CON 32 - SQL Injection Isn't Dead: Smuggling Queries at the Protocol Level"
 description: "Database client drivers write a message's size into a four-byte length field, so a parameter of about four gigabytes makes that integer overflow and the tail of the attacker's string is read by the database as a fresh protocol message. This injects whole SQL statements past parameterised queries, and trampoline bytes cut the offset guessing to about two attempts."
 resource: "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf"
-tags: [whitepaper, webseclist-reference, sqli, smuggling, desync, postgres, mongodb, database, go, novel-technique, cve]
+tags: [whitepaper, webseclist-reference, sqli, smuggling, desync, postgres, mongodb, database, go, novel-technique, cve, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:42:36+00:00"

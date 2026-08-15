@@ -3,7 +3,7 @@ type: Article
 title: (somewhat) breaking the same-origin policy by undermining dns-pinning
 description: "Martin Johns (handle Maddin) on undermining DNS pinning by refusing connections. Three raw_sha256 values disagree and the acquire one is missing from the store; the published file came from a thin 2026 live fetch, losing a comment thread the manifest's 2007 capture holds. UTF-8 read as Latin-1 mojibakes 9 lines including link targets. No author, no date."
 resource: "http://shampoo.antville.org/stories/1451301/"
-tags: [article, webseclist-reference, en, shampoo-antville-org, dns-rebinding, dns, same-origin-policy, sop-bypass, javascript, info-leak, novel-technique]
+tags: [article, webseclist-reference, en, shampoo-antville-org, dns-rebinding, dns, same-origin-policy, sop-bypass, javascript, info-leak, novel-technique, owasp-a01-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:58:55+00:00"

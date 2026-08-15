@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab - Archive » Selecting Encoding Methods For XSS Filter Evasion
 description: "Where an application lets the user pick the response charset, a string that is inert under UTF-8 becomes an injection under US-ASCII. Demonstrated against josefsson.org's IDN converter by flipping only the charset parameter. The lesson is that user-selectable encoding turns an otherwise safe filter into a bypassable one."
 resource: "http://ha.ckers.org/blog/20061103/selecting-encoding-methods-for-xss-filter-evasion/"
-tags: [article, webseclist-reference, ha-ckers-org, xss, filter-bypass, charset, encoding, unicode, sanitizer-bypass, novel-technique]
+tags: [article, webseclist-reference, ha-ckers-org, xss, filter-bypass, charset, encoding, unicode, sanitizer-bypass, novel-technique, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:33+00:00"

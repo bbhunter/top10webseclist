@@ -3,7 +3,7 @@ type: Article
 title: XSS-Auditor — the protector of unprotected
 description: "Chrome's XSS Auditor was reverted from block mode to filter mode, so instead of stopping a page it silently strips the matched script. Reflecting a fake match aimed at a page's own defensive script deletes that script, and a CTF write-up shows this turning an otherwise blocked injection into working XSS."
 resource: "https://medium.com/@terjanq/xss-auditor-the-protector-of-unprotected-f900a5e15b7b"
-tags: [article, webseclist-reference, en, medium, xss, filter-bypass, sanitizer-bypass, javascript, xsleak, dom, case-study]
+tags: [article, webseclist-reference, en, medium, xss, filter-bypass, sanitizer-bypass, javascript, xsleak, dom, case-study, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:27+00:00"

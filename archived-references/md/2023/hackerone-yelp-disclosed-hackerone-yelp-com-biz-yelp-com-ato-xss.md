@@ -3,7 +3,7 @@ type: Article
 title: "Yelp disclosed on HackerOne: yelp.com and biz.yelp.com ATO via XSS..."
 description: "Chains a self-XSS in Yelp's unverified-email prompt with Yelp's cross-domain cookie bridge: the attacker signs the victim into an attacker account on yelp.dk so the XSS runs, then sets oversized cookies so the victim's own bridge transfer fails without consuming its one-time token, letting the attacker read the retrieve URL and take over the victim's HttpOnly session."
 resource: "https://hackerone.com/reports/2089042"
-tags: [article, webseclist-reference, en, hackerone, xss, cookie, session-fixation, same-origin-policy, info-leak, attack-chain, bug-bounty]
+tags: [article, webseclist-reference, en, hackerone, xss, cookie, session-fixation, same-origin-policy, info-leak, attack-chain, bug-bounty, owasp-a01-2021, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:29+00:00"

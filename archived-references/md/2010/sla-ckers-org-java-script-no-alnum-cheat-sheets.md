@@ -3,7 +3,7 @@ type: Article
 title: "Java/script: no alnum cheat sheets"
 description: "A forum thread that builds character-by-character cheat sheets for writing JavaScript with no alphanumeric characters, across the charsets +, +!, += and +!{}/.,. Contributors race to shorten each letter's construction using type coercion on [], ! and +, reaching window via []['sort']['call'] and atob/btoa, and ship a converter that rewrites arbitrary code into the symbol-only form."
 resource: "http://sla.ckers.org/forum/read.php?24,33349"
-tags: [article, webseclist-reference, EN, sla-ckers-org, javascript, filter-bypass, waf-bypass, encoding, xss, sanitizer-bypass, tooling]
+tags: [article, webseclist-reference, EN, sla-ckers-org, javascript, filter-bypass, waf-bypass, encoding, xss, sanitizer-bypass, tooling, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:17+00:00"

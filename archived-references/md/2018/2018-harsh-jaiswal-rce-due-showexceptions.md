@@ -3,7 +3,7 @@ type: Article
 title: RCE due to ShowExceptions
 description: A Rails application left Rack ShowExceptions enabled in production, so a carriage return in a filename parameter triggered an exception page that printed the application secret token. With that token an attacker signs an arbitrary session cookie, which Rails deserializes into remote code execution, confirmed here by a curl callback.
 resource: "https://blog.harshjaiswal.com/rce-due-to-showexceptions"
-tags: [article, webseclist-reference, en, harsh-jaiswal, rce, deserialization, info-leak, rails, ruby, cookie, attack-chain, bug-bounty]
+tags: [article, webseclist-reference, en, harsh-jaiswal, rce, deserialization, info-leak, rails, ruby, cookie, attack-chain, bug-bounty, owasp-a07-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:21:26+00:00"

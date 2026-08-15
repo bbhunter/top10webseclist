@@ -3,7 +3,7 @@ type: Article
 title: Rare ASP.NET request validation bypass using request encoding
 description: "ASP.NET's request validation throws on the first read of Request.QueryString or Request.Form, so an application that swallows the exception with an empty catch or On Error Resume Next gets the payload back unchecked on every later read. Encoding the parameters as ibm037 or utf-32 and declaring that charset on Content-Type carries <script>alert(1)</script> past intervening WAFs too, and the verb can be swapped to move the payload between URL and body. Microsoft closed it as won't fix."
 resource: "https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/september/rare-aspnet-request-validation-bypass-using-request-encoding/"
-tags: [article, webseclist-reference, en-GB, ncc-group, aspnet, dotnet, xss, filter-bypass, waf-bypass, charset, encoding]
+tags: [article, webseclist-reference, en-GB, ncc-group, aspnet, dotnet, xss, filter-bypass, waf-bypass, charset, encoding, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:08+00:00"

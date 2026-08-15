@@ -3,7 +3,7 @@ type: Article
 title: Using Cross-domain images in WebGL and Chrome 13
 description: After shaders were shown to leak the contents of GPU textures, the WebGL spec was tightened so Chrome 13 and Firefox 5 reject cross-domain media as textures, raising DOM_SECURITY_ERR. A new .crossOrigin attribute lets a site opt back in via CORS. With it set, a remote image no longer dirties the canvas origin-clean flag, so toDataURL and getImageData succeed.
 resource: "https://blog.chromium.org/2011/07/using-cross-domain-images-in-webgl-and.html"
-tags: [article, webseclist-reference, en, chromium-blog, cors, same-origin-policy, info-leak, side-channel, timing-attack, mitigation, vendor-advisory]
+tags: [article, webseclist-reference, en, chromium-blog, cors, same-origin-policy, info-leak, side-channel, timing-attack, mitigation, vendor-advisory, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:14+00:00"

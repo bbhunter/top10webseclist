@@ -3,7 +3,7 @@ type: Article
 title: Bypassing CSP for fun, no profit
 description: "A CSP bypass using UTF-7: attacker-controlled strings in an otherwise correctly escaped JSON feed are encoded so that decoding them as UTF-7 produces script. The feed is then loaded with a script tag carrying charset=utf-7, so the code is same-origin and neither inline nor attribute-based, satisfying the policy."
 resource: "http://www.thespanner.co.uk/2009/11/23/bypassing-csp-for-fun-no-profit/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, csp, charset, encoding, xss, filter-bypass, javascript, novel-technique]
+tags: [article, webseclist-reference, en, thespanner-co-uk, csp, charset, encoding, xss, filter-bypass, javascript, novel-technique, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:46:01+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "Unauthorized Origin Crossing on Mobile Platforms: Threats and Mitigation"
 description: "Mobile OSes lack the browser's origin checks on cross-app channels, so intents, URL schemes and web-accessing utility classes let one app cross into another's web origin. Surveying those channels on Android and iOS, and how the Facebook and Dropbox apps use them, yielded credential theft and text-input capture. Morbs labels each message with its origin and enforces policies."
 resource: "https://www.microsoft.com/en-us/research/publication/unauthorized-origin-crossing-on-mobile-platforms-threats-and-mitigation/"
-tags: [article, webseclist-reference, en, microsoft-research, android, ios, same-origin-policy, sop-bypass]
+tags: [article, webseclist-reference, en, microsoft-research, android, ios, same-origin-policy, sop-bypass, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:03+00:00"

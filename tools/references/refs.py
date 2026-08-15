@@ -2701,41 +2701,50 @@ def _trim_to_sentence(text, limit=DIGEST_MAX):
     return text[:cut + 1].strip()
 
 
-def _accept_digest(url, reading, known, vocabulary, promoted=()):
-    """(refusal reason, text, tags, proposals) for one reviewed summary.
+def _accept_digest(url, reading, known, vocabulary):
+    """(refusal reason, text, tags, new tags) for one reviewed summary.
 
-    Refuses an unknown tag outright. That is the guard that keeps the vocabulary
-    controlled: a reviewer who needs a word the archive does not have writes it
-    with a `?` prefix, and it is reported as a PROPOSAL and stripped, so a tag
-    only ever enters by a maintainer promoting it.
+    A TAG IS NO LONGER REFUSED FOR BEING NEW. Refusing it threw away the only
+    moment when someone had actually read the document, and it could not be
+    repaired later without reading the document again. The vocabulary was also
+    counted from the tags in use, which made the refusal circular: a word the
+    archive had agreed to adopt was still "unknown" until something already
+    carried it, so the first document to need it was always refused.
 
-    `promoted` is that promotion, and it has to exist: the vocabulary is counted
-    from the tags already in use, so a newly promoted word is by definition not
-    in it yet and would be refused forever. Naming it on the command line is the
-    maintainer's deliberate act, which is exactly where governance wants it.
+    What keeps the vocabulary controlled now is `tags.resolve`: every tag is
+    lower-cased, punctuation-folded and passed through the alias table before it
+    is stored, so `XSS`, `xss` and `  XSS ` are one tag and `wasm` publishes as
+    `webassembly`. Drift comes from spellings, and the spellings are gone before
+    anything is written.
+
+    A `?` prefix still means "I am proposing this", and is still reported - but
+    the tag is kept rather than stripped, because the reviewer who wrote it had
+    the document open and the maintainer reading the report does not.
+
+    The cap stays. A 30-tag document is not categorised, it is decorated.
     """
+    from refslib import tags as tags_module
     if url not in known:
         return "no such reference in the manifest", "", [], []
     text = _trim_to_sentence((reading or {}).get("text"))
     if not text:
         return "no summary, or none that ends at a sentence within %d characters" % DIGEST_MAX, "", [], []
     raw = [str(tag).strip() for tag in ((reading or {}).get("tags") or []) if str(tag).strip()]
-    proposals = [tag[1:] for tag in raw if tag.startswith("?")]
-    tags, unknown = [], []
+    existing = (vocabulary or {}).get("tags") or {}
+    tags, fresh = [], []
     for tag in raw:
-        if tag.startswith("?"):
+        # The `?` says "I am proposing this". It is a note to the maintainer,
+        # never part of the word, so it comes off before the tag is resolved.
+        resolved = tags_module.resolve(tag.lstrip("?").strip(), vocabulary)
+        if not resolved or resolved in tags:
             continue
-        if tag not in vocabulary and tag not in promoted:
-            unknown.append(tag)
-        elif tag not in tags:
-            tags.append(tag)
-    if unknown:
-        return ("not in the vocabulary, and not marked as a proposal: "
-                + ", ".join(sorted(unknown)[:4]), "", [], proposals)
+        tags.append(resolved)
+        if resolved not in existing and resolved not in fresh:
+            fresh.append(resolved)
     if len(tags) > DIGEST_TAGS_MAX:
-        return ("%d tag(s) after stripping proposals; at most %d"
-                % (len(tags), DIGEST_TAGS_MAX), "", [], proposals)
-    return "", text, tags, proposals
+        return ("%d tag(s); at most %d"
+                % (len(tags), DIGEST_TAGS_MAX), "", [], fresh)
+    return "", text, tags, fresh
 
 
 def command_digest(args):
@@ -2752,7 +2761,10 @@ def command_digest(args):
     root = paths.repo_root()
     config = paths.config()
     manifest = check_module.open_manifest(root, config)
-    vocabulary = tag_vocabulary(manifest)
+    from refslib import tags as tags_module
+    vocabulary_path = (root / (config.get("archive_dir") or "archived-references")
+                       / "tag-vocabulary.json")
+    vocabulary = tags_module.load(vocabulary_path)
 
     if args.publish:
         publish_digests(manifest, root, config, only=args.only,
@@ -2771,9 +2783,13 @@ def command_digest(args):
         stale = sum(1 for item in queue if item["stale"])
         Path(args.queue).write_text(
             json.dumps({"schema": 1, "count": len(queue),
+                        # Most-used first, so a reviewer reaches for the word the
+                        # archive already uses before inventing another for it.
                         "vocabulary": [tag for tag, _ in
-                                       sorted(vocabulary.items(),
-                                              key=lambda kv: (-kv[1], kv[0]))],
+                                       sorted((vocabulary.get("tags") or {}).items(),
+                                              key=lambda kv: (-(kv[1] or {}).get("documents", 0),
+                                                              kv[0]))],
+                        "owasp": (vocabulary.get("owasp") or {}),
                         "queue": queue},
                        ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8", newline="\n")
@@ -2783,10 +2799,6 @@ def command_digest(args):
               "`refs.py digest --apply <file>`.")
         return 0
 
-    promoted = {tag.strip() for tag in (args.promote or "").split(",") if tag.strip()}
-    for tag in sorted(promoted):
-        print("  PROMOTED %s%s" % (tag, "" if tag not in vocabulary
-                                   else " (already in the vocabulary)"))
     reviewed = json.loads(Path(args.apply).read_text(encoding="utf-8"))
     readings = reviewed.get("digests") if isinstance(reviewed, dict) else None
     if readings is None:
@@ -2797,15 +2809,17 @@ def command_digest(args):
     trimmed, proposed, longer = [], {}, []
     for url, reading in sorted(readings.items()):
         before = len(" ".join(str((reading or {}).get("text") or "").split()))
-        reason, text, tags, proposals = _accept_digest(url, reading or {},
-                                                       known, vocabulary,
-                                                       promoted)
-        for tag in proposals:
-            proposed[tag] = proposed.get(tag, 0) + 1
+        reason, text, tags, fresh = _accept_digest(url, reading or {},
+                                                   known, vocabulary)
         if reason:
             refused += 1
             print("  REFUSED  %-52s %s" % (url[:52], reason))
             continue
+        # Only a summary that was actually taken may widen the vocabulary. A
+        # refused reading's tags never reached a document, so recording them
+        # would grow the list with words nothing carries.
+        for tag in fresh:
+            proposed[tag] = proposed.get(tag, 0) + 1
         if before > len(text):
             trimmed.append((known[url].get("slug") or url, before, len(text)))
         if len(text) > DIGEST_WANT:
@@ -2826,16 +2840,20 @@ def command_digest(args):
         print("  LONG     %-52s %d characters, over the %d we aim for"
               % (str(slug)[:52], size, DIGEST_WANT))
     if proposed:
-        print("\nHeld tag proposal(s), stripped and never published: "
+        print("\nNew tag(s) entering the vocabulary: "
               + ", ".join("%s (x%d)" % (tag, count)
                           for tag, count in sorted(proposed.items())))
-        print("Promote one by hand only once more than one document has asked "
-              "for it, or once it names something the vocabulary cannot.")
+        print("Read them: a new word that means an existing one belongs in "
+              "`aliases` in tag-vocabulary.json, not beside it.")
     if args.check:
         print("\n%d summary(ies) would be recorded; %d refused. "
               "This was --check: nothing was written." % (taken, refused))
         return 0
     manifest.save()
+    tags_module.register(vocabulary, sorted(proposed))
+    tags_module.recount(vocabulary, tag_vocabulary(manifest))
+    vocabulary["updated"] = manifest_utc()
+    tags_module.save(vocabulary_path, vocabulary)
     print("\nRecorded %d summary(ies); %d refused." % (taken, refused))
     print("Run `refs.py digest --vocabulary` to regenerate tag-vocabulary.md, "
           "then `index`.")
@@ -2843,24 +2861,68 @@ def command_digest(args):
 
 
 def write_tag_vocabulary(root, config, manifest):
-    """Regenerate tag-vocabulary.md by counting the tags actually in use."""
+    """Refresh tag-vocabulary.json, and render tag-vocabulary.md from it.
+
+    The JSON is the record; the Markdown is a reading of it. Counts are
+    recomputed from the manifest, and everything a maintainer stated - aliases,
+    the OWASP mapping - is carried through untouched.
+    """
+    from refslib import tags as tags_module
     archive_dir = root / (config.get("archive_dir") or "archived-references")
     path = archive_dir / "tag-vocabulary.md"
+    data_path = archive_dir / "tag-vocabulary.json"
     counts = tag_vocabulary(manifest)
+    vocabulary = tags_module.load(data_path)
+    tags_module.register(vocabulary, sorted(counts))
+    tags_module.recount(vocabulary, counts)
+    vocabulary["updated"] = manifest_utc()
+    tags_module.save(data_path, vocabulary)
+
     documents = sum(1 for entry in manifest.data["urls"].values()
                     if (entry.get("digest") or {}).get("text"))
+    known = vocabulary.get("tags") or {}
+    owasp = (vocabulary.get("owasp") or {}).get("categories") or []
+    by_tag = {}
+    for category in owasp:
+        for tag in category.get("tags") or []:
+            by_tag.setdefault(tags_module.normalise(tag), []).append(category.get("id"))
     marker = "## The vocabulary"
     head = path.read_text(encoding="utf-8").split(marker)[0] + marker + "\n"
-    once = sorted(tag for tag, count in counts.items() if count == 1)
+    once = sorted(tag for tag in known if counts.get(tag, 0) == 1)
+    unused = sorted(tag for tag in known if not counts.get(tag))
     lines = [head,
              "\n%d tags, across %d documents that carry a digest.\n\n"
-             % (len(counts), documents),
-             "| Tag | Documents |\n|---|---|\n"]
-    lines += ["| `%s` | %d |\n" % (tag, counts[tag]) for tag in sorted(counts)]
-    lines.append("\n### Used exactly once\n\nReview these before reusing them: "
-                 + ", ".join("`%s`" % tag for tag in once) + "\n")
+             % (len(known), documents),
+             "| Tag | Documents | OWASP |\n|---|---|---|\n"]
+    lines += ["| `%s` | %d | %s |\n"
+              % (tag, counts.get(tag, 0), ", ".join(by_tag.get(tag) or []) or "—")
+              for tag in sorted(known)]
+    aliases = vocabulary.get("aliases") or {}
+    if aliases:
+        lines.append("\n### Never published\n\nThese spellings fold into another "
+                     "tag before anything is written:\n\n")
+        lines.append("| Written | Published as |\n|---|---|\n")
+        lines += ["| `%s` | `%s` |\n" % (spelt, canonical)
+                  for spelt, canonical in sorted(aliases.items())]
+    if owasp:
+        lines.append("\n### OWASP Top 10:%s\n\nA document earns these from the "
+                     "techniques it is already tagged with; nobody tags them by "
+                     "hand.\n\n"
+                     % ((vocabulary.get("owasp") or {}).get("edition") or "2021"))
+        lines.append("| Category | Tags |\n|---|---|\n")
+        lines += ["| `%s` %s | %s |\n"
+                  % (category.get("id"), category.get("title"),
+                     ", ".join("`%s`" % tag for tag in (category.get("tags") or [])) or "—")
+                  for category in owasp]
+    if once:
+        lines.append("\n### Used exactly once\n\nReview these before reusing them: "
+                     + ", ".join("`%s`" % tag for tag in once) + "\n")
+    if unused:
+        lines.append("\n### Carried, but on no document\n\nAgreed once and kept so "
+                     "the same word is not re-argued: "
+                     + ", ".join("`%s`" % tag for tag in unused) + "\n")
     path.write_text("".join(lines), encoding="utf-8", newline="\n")
-    return path.relative_to(root), len(counts), documents
+    return path.relative_to(root), len(known), documents
 
 
 def _published_authors(text):
@@ -2913,9 +2975,25 @@ _REGENERATED = re.compile(
     r'|stale_after: .*|.*archive of a source from .*)$')
 
 
+def _without_derived_tags(line):
+    """A `tags:` line with the DERIVED OWASP categories taken back off.
+
+    The categories are computed from the research tags, so a file written
+    before the mapping existed states none - and comparing them would report
+    every one of those documents as unreproducible, which is exactly what it
+    did: all 1,488 refused in one run, each reported as "left as published".
+    A derived facet is not evidence that the renderer disagrees.
+    """
+    if not line.startswith("tags: ["):
+        return line
+    kept = [tag.strip() for tag in line[len("tags: ["):].rstrip("]").split(",")
+            if tag.strip() and not tag.strip().startswith("owasp-")]
+    return "tags: [%s]" % ", ".join(kept)
+
+
 def _same_but_for_generated(rebuilt, published):
     """Whether a fresh render differs from the published file only where it may."""
-    keep = lambda text: [line for line in text.splitlines()
+    keep = lambda text: [_without_derived_tags(line) for line in text.splitlines()
                          if not _REGENERATED.match(line)]
     return keep(rebuilt) == keep(published)
 
@@ -2967,6 +3045,54 @@ def _published_description(text):
     return _frontmatter_scalars(text).get("description") or ""
 
 
+def _published_tags(text):
+    """The tags a published file states, as a set."""
+    match = re.search(r"^tags: \[(.*)\]$", text, re.MULTILINE)
+    if not match:
+        return set()
+    return {tag.strip() for tag in match.group(1).split(",") if tag.strip()}
+
+
+def _published_research_tags(text, record):
+    """The digest's own tags, taken back out of a published file's tag line.
+
+    `render` writes the format labels first, then the research tags, then the
+    derived OWASP categories. Removing the labels and the categories leaves what
+    a reviewer chose, in the order they were written.
+    """
+    from refslib import render as render_module
+    labels = {record.get("kind") or "article", "webseclist-reference"}
+    if record.get("language"):
+        labels.add(record["language"])
+    if record.get("publisher"):
+        labels.add(render_module._slug_tag(record["publisher"]))
+    match = re.search(r"^tags: \[(.*)\]$", text, re.MULTILINE)
+    if not match:
+        return []
+    return [tag.strip() for tag in match.group(1).split(",")
+            if tag.strip() and tag.strip() not in labels
+            and not tag.strip().startswith("owasp-")]
+
+
+def _digest_is_published(text, entry):
+    """Whether a file already states everything the manifest's digest holds.
+
+    Description ALONE is not the test. Tags move independently of it: folding
+    `XSS` into `xss` and deriving the OWASP categories both change the tag line
+    and leave the summary untouched, and a description-only check skipped every
+    one of those documents while reporting success.
+    """
+    from refslib import tags as tags_module
+    digest = entry.get("digest") or {}
+    if _published_description(text) != (digest.get("text") or ""):
+        return False
+    research = digest.get("tags") or []
+    wanted = set(research)
+    wanted |= {tags_module.owasp_tag(identifier) for identifier
+               in tags_module.owasp_categories(research, tags_module.current())}
+    return wanted <= _published_tags(text)
+
+
 def _republish_digest(path, entry, config):
     """Carry the summary and tags into one published document, in place.
 
@@ -2986,13 +3112,15 @@ def _republish_digest(path, entry, config):
     record = dict(entry)
     record.update(_frontmatter_scalars(text))
     depth = entry.get("depth") or record.get("depth") or "full"
-    # The file wins for everything it states, so drop the description it does
-    # NOT state before proving reproduction, and re-add it from the digest after.
+    # Prove reproduction against the digest THE FILE STATES, not against no
+    # digest at all. Withholding it worked only while this was a one-way
+    # migration onto files that carried none; once every document states a
+    # summary, a withheld-digest render can never reproduce one, and the guard
+    # refused all 1,488 of them while reporting them as "left as published".
     was = dict(record)
-    was.pop("digest", None)
     was.pop("description", None)
-    if _published_description(text):
-        was["description"] = _published_description(text)
+    was["digest"] = {"text": _published_description(text),
+                     "tags": _published_research_tags(text, record)}
     try:
         if not _same_but_for_generated(render_module.render(was, body, depth), text):
             return "the renderer does not reproduce this file; left as published"
@@ -3029,7 +3157,7 @@ def publish_digests(manifest, root, config, only="", collection=""):
         path = archive_dir / relpath
         if not path.exists():
             continue
-        if _published_description(path.read_text(encoding="utf-8")) == digest["text"]:
+        if _digest_is_published(path.read_text(encoding="utf-8"), entry):
             continue
         seen += 1
         reason = _republish_digest(path, entry, config)
@@ -3796,12 +3924,9 @@ def build_parser():
                                help="stop the queue after this many references")
     digest_parser.add_argument("--check", action="store_true",
                                help="report what --apply would record, and write nothing")
-    digest_parser.add_argument("--promote", default="",
-                               help="comma-separated tags a maintainer is adding "
-                                    "to the vocabulary with this run; without "
-                                    "this a newly promoted word is refused as "
-                                    "unknown, since the vocabulary is counted "
-                                    "from the tags already in use")
+    # --promote is gone: a tag no longer has to be promoted, because a new one
+    # is adopted by being used. What governs the vocabulary now is
+    # tag-vocabulary.json, where an alias folds a spelling away for good.
     digest_parser.add_argument("--by", default="webseclist-review/1",
                                help="what to record as the reviewer (default: "
                                     "webseclist-review/1)")

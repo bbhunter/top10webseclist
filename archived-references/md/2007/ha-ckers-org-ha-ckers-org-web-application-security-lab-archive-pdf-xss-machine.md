@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab - Archive » PDF XSS Can Compromise Your Machine
 description: "Adobe Reader 7.0 ships ENUtxt.pdf at a fixed path, so a file:/// URL to it with #blah=javascript:alert() executes script from the local zone in Firefox and Opera. Turns the remote PDF-XSS class into a local one needing no attacker-hosted PDF."
 resource: "http://ha.ckers.org/blog/20070103/pdf-xss-can-compromise-your-machine/"
-tags: [article, webseclist-reference, ha-ckers-org, pdf, xss, javascript, sop-bypass, novel-technique, prior-art-extension]
+tags: [article, webseclist-reference, ha-ckers-org, pdf, xss, javascript, sop-bypass, novel-technique, prior-art-extension, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:38+00:00"

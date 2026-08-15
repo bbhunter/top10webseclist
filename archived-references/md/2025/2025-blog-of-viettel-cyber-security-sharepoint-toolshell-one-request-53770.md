@@ -3,7 +3,7 @@ type: Article
 title: SharePoint ToolShell – One Request PreAuth RCE chain CVE-2025-53770
 description: "A one-request pre-auth remote code execution chain in SharePoint: a Referer of the SignOut page skips the anonymous-access check, and ToolPane.aspx parses attacker-supplied control markup before the form-digest check. A type-name parsing flaw treats unqualified generic names as object, defeating the deserialization allow-list."
 resource: "https://blog.viettelcybersecurity.com/sharepoint-toolshell/"
-tags: [article, webseclist-reference, en, blog-of-viettel-cyber-security, deserialization, auth-bypass, gadget-chain, rce, filter-bypass, aspnet, dotnet, cve, attack-chain]
+tags: [article, webseclist-reference, en, blog-of-viettel-cyber-security, deserialization, auth-bypass, gadget-chain, rce, filter-bypass, aspnet, dotnet, cve, attack-chain, owasp-a01-2021, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:21+00:00"

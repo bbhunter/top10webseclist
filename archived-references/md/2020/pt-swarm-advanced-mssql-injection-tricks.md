@@ -3,7 +3,7 @@ type: Article
 title: Advanced MSSQL Injection Tricks
 description: "A set of MSSQL injection techniques: DNS out-of-band exfiltration through fn_xe_file_target_read_file, fn_get_audit_file and fn_trace_gettable, error-based extraction from type conversion errors in functions such as USER_NAME, whole-table dumping with FOR JSON, local file reads via OpenRowset, and WAF bypasses using unusual whitespace and 0x or 0e prefixes."
 resource: "https://swarm.ptsecurity.com/advanced-mssql-injection-tricks/"
-tags: [article, webseclist-reference, en-US, pt-swarm, sqli, mssql, waf-bypass, filter-bypass, lfi, info-leak, dns, database]
+tags: [article, webseclist-reference, en-US, pt-swarm, sqli, mssql, waf-bypass, filter-bypass, lfi, info-leak, dns, database, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:28+00:00"

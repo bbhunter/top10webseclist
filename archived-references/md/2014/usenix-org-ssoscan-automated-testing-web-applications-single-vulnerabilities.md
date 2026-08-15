@@ -3,7 +3,7 @@ type: Article
 title: "SSOScan: Automated Testing of Web Applications for Single Sign-On Vulnerabilities"
 description: SSOScan automatically signs into a website with Facebook single sign-on, completes registration, then replays and inspects OAuth credentials to test five integration flaws. A scan of 20,000 sites found 345 of the 1,660 that use Facebook SSO vulnerable to impersonation or to credential leakage through referer headers and page content.
 resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/zhou"
-tags: [article, webseclist-reference, usenix-org, auth-bypass, oauth, sso, info-leak, large-scale-scan, measurement-study, dynamic-analysis, tooling]
+tags: [article, webseclist-reference, usenix-org, auth-bypass, oauth, sso, info-leak, large-scale-scan, measurement-study, dynamic-analysis, tooling, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:05:45+00:00"

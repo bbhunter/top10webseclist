@@ -370,7 +370,18 @@ def _frontmatter(record, depth):
         tags.append(record["language"])
     if record.get("publisher"):
         tags.append(_slug_tag(record["publisher"]))
-    tags.extend(digest.get("tags") or [])
+    research_tags = digest.get("tags") or []
+    tags.extend(research_tags)
+    # The OWASP Top 10 categories are DERIVED, never typed. A reviewer tags the
+    # techniques the research uses; the mapping in tag-vocabulary.json turns
+    # those into categories, so the archive can be read by OWASP category
+    # without anyone tagging the same document twice or having to remember
+    # which category a technique belongs to.
+    if research_tags:
+        from refslib import tags as tags_module
+        vocabulary = tags_module.current()
+        tags.extend(tags_module.owasp_tag(identifier) for identifier
+                    in tags_module.owasp_categories(research_tags, vocabulary))
     lines.append("tags: [%s]" % ", ".join(dict.fromkeys(tags)))
 
     lines.append("generated:")

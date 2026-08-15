@@ -3,7 +3,7 @@ type: Article
 title: JavaScript Functions Overload Confusion
 description: "An array sent as m.data.origin stringifies to https://example.com, so new URL().hostname passes the allowlist, but being an object it picks postMessage's options overload and the secret is delivered to the attacker's targetOrigin. The same array drives window[func](data) into setTimeout's string branch and log.constructor.constructor into Function(data)(). A sweep of 2,228 Blink IDL files found ~112 overloaded operations and ~22 Trusted Types sinks that fork on type."
 resource: "https://blog.voorivex.team/javascript-functions-overload-confusion"
-tags: [article, webseclist-reference, en, voorivex-team, postmessage, javascript, sop-bypass, xss, dom, info-leak, novel-technique]
+tags: [article, webseclist-reference, en, voorivex-team, postmessage, javascript, sop-bypass, xss, dom, info-leak, novel-technique, type-confusion, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T13:27:20+00:00"

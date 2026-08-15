@@ -3,7 +3,7 @@ type: Whitepaper
 title: Secret web hacking knowledge
 description: "A CTF talk on unintended solutions whose novel finding is that exceeding PHP's parameter limit raises a warning before page code runs, so the server never sends headers such as CSP, Cache-Control or Content-Type. It also covers cookie theft across challenges on different ports of one host, cracking weakly encrypted archived sources, and outdated headless browsers."
 resource: "https://download.scrt.ch/insomnihack/ins24-slides/Secret_web_hacking_knowledge.pdf"
-tags: [whitepaper, webseclist-reference, php, csp, cookie, xss, content-type, http, novel-technique, case-study]
+tags: [whitepaper, webseclist-reference, php, csp, cookie, xss, content-type, http, novel-technique, case-study, owasp-a03-2021, owasp-a05-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:00+00:00"

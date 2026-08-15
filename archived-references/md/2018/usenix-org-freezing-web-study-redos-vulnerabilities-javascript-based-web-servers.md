@@ -3,7 +3,7 @@ type: Article
 title: "Freezing the Web: A Study of ReDoS Vulnerabilities in JavaScript-based Web Servers"
 description: A study of regular expression denial of service in JavaScript web servers, where the single-threaded event loop means one slow match freezes the whole site. The authors found 25 previously unknown vulnerable regexes in popular Node.js modules, then tested 2,846 popular websites and found 339 of them blockable by a single crafted request.
 resource: "https://www.usenix.org/conference/usenixsecurity18/presentation/staicu"
-tags: [article, webseclist-reference, en, usenix-org, algorithmic-complexity, dos, nodejs, javascript, large-scale-scan, measurement-study]
+tags: [article, webseclist-reference, en, usenix-org, algorithmic-complexity, dos, nodejs, javascript, large-scale-scan, measurement-study, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:37+00:00"

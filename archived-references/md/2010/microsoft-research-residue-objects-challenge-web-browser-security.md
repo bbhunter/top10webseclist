@@ -3,7 +3,7 @@ type: Article
 title: "Residue Objects: A Challenge to Web Browser Security"
 description: "Browser objects that outlive the page switch - residue objects - break visual integrity, document integrity and memory safety when the engine's guards miss a case. The authors analyse Internet Explorer's guarding mechanisms and enumerate reachable states, finding five new vulnerabilities in the native HTML engine alone, one of which shipped in a Microsoft security update. EuroSys 2010."
 resource: "https://www.microsoft.com/en-us/research/publication/residue-objects-a-challenge-to-web-browser-security/"
-tags: [article, webseclist-reference, en, microsoft-research, dom, sandbox-escape, same-origin-policy, formal-analysis, static-analysis, cve, measurement-study]
+tags: [article, webseclist-reference, en, microsoft-research, dom, sandbox-escape, same-origin-policy, formal-analysis, static-analysis, cve, measurement-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:03+00:00"

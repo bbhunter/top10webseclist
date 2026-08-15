@@ -3,7 +3,7 @@ type: Article
 title: "How we broke exchanges: a deep dive into authentication and client-side bugs"
 description: Two authentication flaws found auditing exchanges and wallets. Allow-listing localhost as an OAuth origin lets a malicious mobile app run a local web server and complete sign-in silently to capture the token. Separately, a CORS policy allowing credentials from insecure subdomains lets a network attacker tamper with one and read the session token.
 resource: "https://osec.io/blog/2025-10-16-how-we-broke-exchanges-oauth-misconfigurations"
-tags: [article, webseclist-reference, en, ottersec, oauth, cors, auth-bypass, sso, postmessage, android, tls, case-study]
+tags: [article, webseclist-reference, en, ottersec, oauth, cors, auth-bypass, sso, postmessage, android, tls, case-study, owasp-a01-2021, owasp-a02-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:37:25+00:00"

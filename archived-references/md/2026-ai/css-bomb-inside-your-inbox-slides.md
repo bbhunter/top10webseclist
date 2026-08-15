@@ -3,7 +3,7 @@ type: Whitepaper
 title: "CSS: the bomb inside your inbox (Slides)"
 description: "A talk on webmail HTML/CSS as an attack surface. It hijacks Outlook UI via HTML label bugs; uses :before/:after plus near-zero opacity so a human and an AI browser read different messages, feeding the AI a hidden prompt injection; exfiltrates login tokens with CSS alone using attribute selectors and a font-height oracle; bypasses CSS sanitizers via encoded backslashes, image-set fallbacks and CSSOM keyframe/media-name mutation; and builds :checked keyloggers that spoof a password box."
 resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Heyes-CSS-Slides.pdf"
-tags: [whitepaper, webseclist-reference, css, css-injection, info-leak, sanitizer-bypass, side-channel, prompt-injection, ai-agent, ui-redress, email]
+tags: [whitepaper, webseclist-reference, css, css-injection, info-leak, sanitizer-bypass, side-channel, prompt-injection, ai-agent, ui-redress, email, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:08:20+00:00"

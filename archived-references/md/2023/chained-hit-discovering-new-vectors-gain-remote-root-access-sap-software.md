@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Chained to hit: Discovering new vectors to gain remote and root access in SAP Enterprise Software"
 description: "Maps SAP's proprietary P4 protocol and reports 13 unauthenticated flaws in the JNDI services it exposes: SQL injection, arbitrary OS file read, blind SSRF with header injection and code execution in Solution Manager agent collectors, plus a JNDI reference injection in Enterprise Portal that needs no reverse connection."
 resource: "https://i.blackhat.com/BH-US-23/Presentations/US-23-Genuer-chained-to-hit-discovering-new-vectors-to-gain-remote-and-root-access-in-sap-enterprise-software-wp.pdf"
-tags: [whitepaper, webseclist-reference, rce, ssrf, header-injection, sqli, command-injection, privilege-escalation, info-leak, attack-chain, java, cve]
+tags: [whitepaper, webseclist-reference, rce, ssrf, header-injection, sqli, command-injection, privilege-escalation, info-leak, attack-chain, java, cve, owasp-a01-2021, owasp-a03-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:40:21+00:00"

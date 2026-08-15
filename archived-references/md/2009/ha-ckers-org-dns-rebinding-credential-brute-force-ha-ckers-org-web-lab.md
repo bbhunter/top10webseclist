@@ -3,7 +3,7 @@ type: Article
 title: DNS Rebinding for Credential Brute Force ha.ckers.org web application security lab
 description: "Second part of a DNS rebinding series: rebinding gives read access to a firewalled login page, so an attacker can brute-force weak, guessable authentication cookies such as username=bob or id=1234567 without ever learning a password. The recovered credential can then be used to fix the victim's session."
 resource: "http://ha.ckers.org/blog/20091117/dns-rebinding-for-credential-brute-force/"
-tags: [article, webseclist-reference, ha-ckers-org, dns, dns-rebinding, auth-bypass, cookie, session-fixation, sop-bypass]
+tags: [article, webseclist-reference, ha-ckers-org, dns, dns-rebinding, auth-bypass, cookie, session-fixation, sop-bypass, owasp-a01-2021, owasp-a07-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T05:08:23+00:00"

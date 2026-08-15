@@ -3,7 +3,7 @@ type: Article
 title: Static Detection of Access Control Vulnerabilities in Web Applications
 description: Access control rules are application-specific, so written specifications to check them against rarely exist. This static analysis infers the accesses implicit in the source instead, building a sitemap per role, comparing them to identify privileged pages, and testing whether forced browsing to each succeeds. On real-world applications it found both known and new flaws with few false positives.
 resource: "https://www.usenix.org/conference/usenix-security-11/static-detection-access-control-vulnerabilities-web-applications"
-tags: [article, webseclist-reference, en, usenix-org, static-analysis, auth-bypass, privilege-escalation, idor, tooling, detection, novel-technique]
+tags: [article, webseclist-reference, en, usenix-org, static-analysis, auth-bypass, privilege-escalation, idor, tooling, detection, novel-technique, owasp-a01-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:04:07+00:00"

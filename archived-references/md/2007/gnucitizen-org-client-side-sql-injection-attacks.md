@@ -3,7 +3,7 @@ type: Article
 title: Client-side SQL Injection Attacks
 description: "Google Gears puts a SQLite relational store in the browser, so unsanitised input in client-side queries makes SQL injection a client-side problem: attackers can dump, alter or destroy local tables, and echo injected HTML back to cause persistent XSS that recurs on every load. pdp also flags the Gears WorkerPool as cover for background intranet scanning and crypto work."
 resource: "https://www.gnucitizen.org/blog/client-side-sql-injection-attacks"
-tags: [article, webseclist-reference, en, gnucitizen-org, sqli, database, injection, xss, javascript, abuse-of-functionality, novel-technique]
+tags: [article, webseclist-reference, en, gnucitizen-org, sqli, database, injection, xss, javascript, abuse-of-functionality, novel-technique, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:45+00:00"

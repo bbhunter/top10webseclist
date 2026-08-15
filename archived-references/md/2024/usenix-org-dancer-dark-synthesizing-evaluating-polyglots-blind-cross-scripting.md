@@ -3,7 +3,7 @@ type: Article
 title: "Dancer in the Dark: Synthesizing and Evaluating Polyglots for Blind Cross-Site Scripting"
 description: Addresses blind cross-site scripting, where injected input reaches an internal backend that returns no feedback, leaving conventional detection with nothing to observe. The paper synthesises polyglot payloads that execute across all common injection contexts; seven of them suffice to cover a state-of-the-art XSS testbed, and exploitation is confirmed through blind code execution. A study of the Tranco Top 100,000 sites found 20 vulnerabilities in 18 backend systems.
 resource: "https://www.usenix.org/conference/usenixsecurity24/presentation/kirchner"
-tags: [article, webseclist-reference, en, usenix-org, xss, detection, tooling, large-scale-scan, measurement-study]
+tags: [article, webseclist-reference, en, usenix-org, xss, detection, tooling, large-scale-scan, measurement-study, blind-xss, owasp-a03-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:32+00:00"

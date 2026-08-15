@@ -3,7 +3,7 @@ type: Article
 title: "Automatic Insecurity: Exploring Email Auto-configuration in the Wild"
 description: First systematic study of email auto-configuration, where a client fetches server settings from the domain or DNS instead of the user typing them. Ten attack scenarios covering seventeen defects let an attacker steer a client to an attacker-controlled mail server or a plaintext connection and take the credentials; 49,013 domains and 22 of 29 clients were affected.
 resource: "https://www.ndss-symposium.org/ndss-paper/automatic-insecurity-exploring-email-auto-configuration-in-the-wild/"
-tags: [article, webseclist-reference, en, ndss-symposium, email, smtp, dns, tls, info-leak, measurement-study, large-scale-scan]
+tags: [article, webseclist-reference, en, ndss-symposium, email, smtp, dns, tls, info-leak, measurement-study, large-scale-scan, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:14+00:00"

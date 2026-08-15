@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Transcript Collision Attacks: Breaking Authentication in TLS, IKE and SSH"
 description: Key exchange protocols hash their handshake transcript with MD5 or SHA-1, so an attacker who computes a chosen-prefix collision between two transcripts can make a client and a server sign the same hash. This yields credential forwarding against TLS client and server authentication and channel bindings, plus impersonation and downgrade attacks on TLS 1.1, IKEv2 and SSH-2.
 resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/transcript-collision-attacks-breaking-authentication-tls-ike-ssh.pdf"
-tags: [whitepaper, webseclist-reference, auth-bypass, tls, https, novel-technique, cve]
+tags: [whitepaper, webseclist-reference, auth-bypass, tls, https, novel-technique, cve, owasp-a01-2021, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:21+00:00"

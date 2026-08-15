@@ -3,7 +3,7 @@ type: Article
 title: Hijacking service workers via DOM Clobbering
 description: Service workers configured from the page, by a query-string parameter or by the innerText of an element fetched with document.getElementById, can be made to pass an attacker host to importScripts(). Injecting an html or body tag carrying the same id clobbers that lookup, so injected markup alone yields persistent site takeover that also evades HTML filters and CSP.
 resource: "https://portswigger.net/research/hijacking-service-workers-via-dom-clobbering"
-tags: [article, webseclist-reference, portswigger-research, dom-clobbering, service-worker, xss, filter-bypass, csp, dom, javascript, novel-technique]
+tags: [article, webseclist-reference, portswigger-research, dom-clobbering, service-worker, xss, filter-bypass, csp, dom, javascript, novel-technique, owasp-a03-2021, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:12+00:00"

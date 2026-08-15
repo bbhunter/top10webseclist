@@ -3,7 +3,7 @@ type: Whitepaper
 title: "The Wolf of Name Street: Hijacking Domains Through Their Nameservers"
 description: Domains can be seized through their nameservers instead of directly. The authors typosquat and bitsquat nameserver hostnames and register nameserver domains left expired or stale in WHOIS, then answer DNS for every domain that trusts them. Scanning 10,000 popular nameserver domains found over 12,000 domains open to near-immediate compromise and 1.28M exposed to denial of service.
 resource: "https://acmccs.github.io/papers/p957-vissersA.pdf"
-tags: [whitepaper, webseclist-reference, dns, typosquatting, large-scale-scan, measurement-study, dos]
+tags: [whitepaper, webseclist-reference, dns, typosquatting, large-scale-scan, measurement-study, dos, owasp-a06-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:37:30+00:00"

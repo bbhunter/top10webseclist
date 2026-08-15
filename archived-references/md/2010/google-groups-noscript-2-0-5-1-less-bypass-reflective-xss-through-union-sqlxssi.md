@@ -3,7 +3,7 @@ type: Article
 title: "NoScript (2.0.5.1 < less ) - Bypass \"Reflective XSS\" through Union SQL Poisoning Trick (SQLXSSI)"
 description: An advisory reporting that NoScript up to 2.0.5.1 fails to flag reflected XSS when the payload arrives through a SQL UNION injection. Hex-encoding the script in a union SELECT column means the request never carries recognisable markup, so the filter passes it while the database reflects it back as live HTML; 2.0.6 remained vulnerable.
 resource: "https://groups.google.com/g/null-co-in/c/l4-fm9IHtJI"
-tags: [article, webseclist-reference, en-US, google-groups, xss, sqli, filter-bypass, browser-extension, injection, waf-bypass, vendor-advisory]
+tags: [article, webseclist-reference, en-US, google-groups, xss, sqli, filter-bypass, browser-extension, injection, waf-bypass, vendor-advisory, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:24+00:00"

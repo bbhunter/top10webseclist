@@ -3,7 +3,7 @@ type: Article
 title: Bruteforcing HTTP Auth in Firefox with JavaScript
 description: "Firefox fetches favicons and rel=prefetch targets without prompting for HTTP auth, so a page can silently probe protected resources. Esser turns that into a password oracle: a shortcut-icon link carrying user:pass@URL primes Firefox's favicon cache, then an img against the same credentialed URL fires onLoad or onError to report whether the guess was right. expose_php GUIDs supply a target."
 resource: "http://blog.php-security.org/archives/56-Bruteforcing-HTTP-Auth-in-Firefox-with-JavaScript.html"
-tags: [article, webseclist-reference, blog-php-security-org, auth-bypass, cache, php, side-channel, detection, http, novel-technique]
+tags: [article, webseclist-reference, blog-php-security-org, auth-bypass, cache, php, side-channel, detection, http, novel-technique, owasp-a01-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:04+00:00"

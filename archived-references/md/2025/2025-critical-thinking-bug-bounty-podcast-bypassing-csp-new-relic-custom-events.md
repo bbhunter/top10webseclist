@@ -3,7 +3,7 @@ type: Article
 title: Bypassing CSP with New Relic Custom Events
 description: "A goto parameter redirected the POST carrying a victim's login token, and the site's strict policy still permitted New Relic's beacon host. Sending the JSON body to New Relic's event API stored it as an error record readable through their GraphQL API, so the token could be recovered and traded for a session cookie for full account takeover."
 resource: "https://lab.ctbb.show/writeups/bypassing-csp-new-relic-custom-events-cspt"
-tags: [article, webseclist-reference, en, critical-thinking-bug-bounty-podcast, csp, oauth, info-leak, graphql, auth-bypass, attack-chain, bug-bounty, open-redirect]
+tags: [article, webseclist-reference, en, critical-thinking-bug-bounty-podcast, csp, oauth, info-leak, graphql, auth-bypass, attack-chain, bug-bounty, open-redirect, owasp-a01-2021, owasp-a04-2021, owasp-a05-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:32:58+00:00"

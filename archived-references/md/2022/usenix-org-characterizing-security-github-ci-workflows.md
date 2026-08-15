@@ -3,7 +3,7 @@ type: Article
 title: Characterizing the Security of GitHub CI Workflows
 description: "A study of GitHub Actions security against four properties: admittance control, execution control, code control and access to secrets. Across 447,238 workflows it finds 99.8 percent hold read-write repository tokens and 23.7 percent run repository code on pull_request, so an outsider who opens a pull request can execute arbitrary code with those privileges and reach secrets."
 resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/koishybayev"
-tags: [article, webseclist-reference, github-actions, ci-cd, supply-chain, privilege-escalation, rce, large-scale-scan, measurement-study, github, tooling]
+tags: [article, webseclist-reference, github-actions, ci-cd, supply-chain, privilege-escalation, rce, large-scale-scan, measurement-study, github, tooling, owasp-a01-2021, owasp-a06-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:05:07+00:00"

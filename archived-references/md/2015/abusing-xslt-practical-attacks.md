@@ -3,7 +3,7 @@ type: Whitepaper
 title: Abusing XSLT for Practical Attacks
 description: "XSLT 1.0 processors in browsers and on servers leak vendor and file path details, mis-handle large integers and real numbers, and seed random values weakly or not at all. Safari lets a stylesheet fetch cross origin URLs with the user's cookies through the document function, and error messages from document, include and import disclose the first line of local files such as /etc/passwd."
 resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Arnaboldi-Abusing-XSLT-For-Practical-Attacks-wp.pdf"
-tags: [whitepaper, webseclist-reference, info-leak, lfi, sop-bypass, same-origin-policy, php, java, ruby, novel-technique]
+tags: [whitepaper, webseclist-reference, info-leak, lfi, sop-bypass, same-origin-policy, php, java, ruby, novel-technique, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:50:57+00:00"

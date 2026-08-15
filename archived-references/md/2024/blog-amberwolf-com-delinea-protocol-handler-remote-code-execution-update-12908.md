@@ -3,7 +3,7 @@ type: Advisory
 title: Delinea Protocol Handler - Remote Code Execution via Update Process (CVE-2024-12908)
 description: "The sslauncher:// URI handler takes an ssurl parameter and, with autoUpdateEnabled=true, fetches an update over SOAP from that host, extracts the returned zip and runs its setup.bat msiexec line. The MSI must be Delinea-signed, but arbitrary msiexec parameters are honoured, so a bundled .mst transform rewrites the signed installer at runtime and executes code. ToLower() folds a punycode dotted capital I to i, so the approval prompt is skipped."
 resource: "https://blog.amberwolf.com/blog/2024/december/cve-2024-12908-delinea-protocol-handler---remote-code-execution-via-update-process/"
-tags: [advisory, webseclist-reference, blog-amberwolf-com, rce, cve, parser-differential, unicode, url-parsing, dotnet, soap, abuse-of-functionality]
+tags: [advisory, webseclist-reference, blog-amberwolf-com, rce, cve, parser-differential, unicode, url-parsing, dotnet, soap, abuse-of-functionality, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:03:58+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Bidding Like a Billionaire - Stealing NFTs With 4-Char CSTIs
 description: An NFT site rendered bidder names inside a Vue-mounted element but truncated them to eight characters, leaving four characters of template per bid. Many crafted names and tiny bids build an arbitrary string, reach the Function constructor, and overwrite a render helper so it is evaluated, giving XSS that fakes a huge bid the owner signs away the NFT for.
 resource: "https://matanber.com/blog/4-char-csti"
-tags: [article, webseclist-reference, en, matanber-com, csti, xss, gadget-chain, filter-bypass, vue, javascript, dom, bug-bounty, novel-technique]
+tags: [article, webseclist-reference, en, matanber-com, csti, xss, gadget-chain, filter-bypass, vue, javascript, dom, bug-bounty, novel-technique, owasp-a03-2021, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T10:44:50+00:00"

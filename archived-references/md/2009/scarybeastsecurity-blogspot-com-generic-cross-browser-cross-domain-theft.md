@@ -3,7 +3,7 @@ type: Article
 title: Generic cross-browser cross-domain theft
 description: Browsers sent cookies on cross-domain CSS loads and let the CSS parser skip any leading junk, so an attacker who controls two injection points in a victim page can wrap its response in a CSS string and exfiltrate it through a background-image URL. Demonstrated against Yahoo! Mail to steal subjects and anti-XSRF mid tokens; works with JavaScript disabled.
 resource: "https://scarybeastsecurity.blogspot.com/2009/12/generic-cross-browser-cross-domain.html"
-tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com, css, sop-bypass, info-leak, csrf, content-type, mime, novel-technique]
+tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com, css, sop-bypass, info-leak, csrf, content-type, mime, novel-technique, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:31+00:00"

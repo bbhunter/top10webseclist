@@ -3,7 +3,7 @@ type: Article
 title: "Password Not Provided - Compromising Any Flurry User's Account [Yahoo Bug Bounty]"
 description: "Flurry's signup flow for accounts linked to a Yahoo login submitted the literal string not-provided as the password, and the ordinary login form accepted it. Anyone could sign in to any Yahoo-linked Flurry account using that user's email address and the password not-provided, reaching the analytics and ad accounts behind hundreds of thousands of apps."
 resource: "https://lightningsecurity.io/blog/password-not-provided/"
-tags: [article, webseclist-reference, lightningsecurity-io, auth-bypass, sso, oauth, bug-bounty, case-study]
+tags: [article, webseclist-reference, lightningsecurity-io, auth-bypass, sso, oauth, bug-bounty, case-study, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:31:04+00:00"

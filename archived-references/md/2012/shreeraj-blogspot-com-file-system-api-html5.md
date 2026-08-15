@@ -3,7 +3,7 @@ type: Article
 title: File System API with HTML5
 description: Short note on the HTML5 File System API as an XSS target. Because a site can create a persistent mini filesystem readable by any script in the same origin, an XSS payload can enumerate the entries and read files such as stored tokens. Screenshots show the created files listed in Chrome and the JavaScript access routine.
 resource: "https://web.archive.org/web/20170903113359/http://shreeraj.blogspot.com/2012/08/file-system-api-with-html5-juice-for-xss.html"
-tags: [article, webseclist-reference, en, shreeraj-blogspot-com, xss, javascript, info-leak, dom, same-origin-policy]
+tags: [article, webseclist-reference, en, shreeraj-blogspot-com, xss, javascript, info-leak, dom, same-origin-policy, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:59:16+00:00"

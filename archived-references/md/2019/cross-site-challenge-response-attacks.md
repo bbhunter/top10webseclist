@@ -3,7 +3,7 @@ type: Whitepaper
 title: Cross-Site Challenge-Response Attacks
 description: "Brute-forces password and secret-code challenge-response checks across origins by making visitors' browsers submit guesses and reading success from side channels that survive the same-origin policy. One variant turns any page visitor into a guessing bot, another targets the visitor's own account; a survey finds the weakness in popular sites, CMSs, routers and IoT devices."
 resource: "https://madweb.work/papers/2019/paper4.pdf"
-tags: [whitepaper, webseclist-reference, csrf, auth-bypass, xsleak, side-channel, same-origin-policy, measurement-study, wordpress, novel-technique]
+tags: [whitepaper, webseclist-reference, csrf, auth-bypass, xsleak, side-channel, same-origin-policy, measurement-study, wordpress, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:57+00:00"

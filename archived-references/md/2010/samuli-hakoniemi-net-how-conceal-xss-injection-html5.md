@@ -3,7 +3,7 @@ type: Article
 title: How to Conceal XSS Injection in HTML5
 description: "HTML5's history.pushState() rewrites the address bar path without reloading, so a reflected XSS payload can erase its own query string from the visible URL immediately after running. The proof of concept injects a script that repoints the login form's action at an attacker host, then hides the injection. Worked in Chrome 9 and Firefox 4 beta."
 resource: "https://web.archive.org/web/20101224204903/http://samuli.hakoniemi.net/how-to-conceal-xss-injection-in-html5/"
-tags: [article, webseclist-reference, en, samuli-hakoniemi-net, xss, javascript, url-parsing, dom, novel-technique]
+tags: [article, webseclist-reference, en, samuli-hakoniemi-net, xss, javascript, url-parsing, dom, novel-technique, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:58+00:00"

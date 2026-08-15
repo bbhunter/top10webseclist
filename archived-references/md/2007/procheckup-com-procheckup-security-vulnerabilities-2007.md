@@ -3,7 +3,7 @@ type: Article
 title: ProCheckUp - Security Vulnerabilities 2007
 description: "ProCheckUp advisory PR07-03 (CVE-2006-7192): ASP.NET request validation is bypassed by a bogus closing tag carrying a CSS expression, with comments splitting the keyword as e/**/xpression. Four payloads cover alert, redirect, cookie theft and injecting a full login form from an external .js file. Fixed by MS07-040."
 resource: "http://www.procheckup.com/Vulner_PR0703.php"
-tags: [article, webseclist-reference, procheckup-com, xss, filter-bypass, aspnet, dotnet, css-injection, cve, vendor-advisory]
+tags: [article, webseclist-reference, procheckup-com, xss, filter-bypass, aspnet, dotnet, css-injection, cve, vendor-advisory, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:08+00:00"

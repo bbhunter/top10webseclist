@@ -3,7 +3,7 @@ type: Article
 title: Static Detection of Second-Order Vulnerabilities in Web Applications
 description: Web applications often store attacker input in a database, session key or file name and use it in a sensitive sink much later, so taint analysis that stops at one request misses it. This work models those persistent stores statically and found 159 second-order flaws, including stored XSS, SQL injection and remote command execution in osCommerce, OpenConf and NewsPro.
 resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/dahse"
-tags: [article, webseclist-reference, usenix-org, sqli, xss, rce, lfi, php, static-analysis, attack-chain, database, tooling]
+tags: [article, webseclist-reference, usenix-org, sqli, xss, rce, lfi, php, static-analysis, attack-chain, database, tooling, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:05:45+00:00"

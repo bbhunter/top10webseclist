@@ -3,7 +3,7 @@ type: Article
 title: Stealing entire Auto-Complete data in Google Chrome
 description: "Chrome's autocomplete dropdown is not in the DOM, so script cannot read it. The trick is to place a 3px-wide input just above the resting mouse pointer so the suggestion list appears under it, camouflaged as a thin strip. A fake reaction game gets the victim to press Enter repeatedly, each press committing one suggestion into the input where JavaScript reads it."
 resource: "http://blog.andlabs.org/2010/08/stealing-entire-auto-complete-data-in.html"
-tags: [article, webseclist-reference, en, blog-andlabs-org, info-leak, javascript, dom, css, ui-redress, novel-technique]
+tags: [article, webseclist-reference, en, blog-andlabs-org, info-leak, javascript, dom, css, ui-redress, novel-technique, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:02+00:00"

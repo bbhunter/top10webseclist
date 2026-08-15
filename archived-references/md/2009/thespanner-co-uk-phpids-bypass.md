@@ -3,7 +3,7 @@ type: Article
 title: PHPIDS bypass
 description: "A PHPIDS filter bypass built from English-looking text to defeat the centrifuge heuristic, with backslash line continuations splitting the string 'alert' so the regular expressions never see it. The name is then resolved off 'this' to reach the window's alert function. Fixed quickly upstream."
 resource: "http://www.thespanner.co.uk/2009/01/04/phpids-bypass/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, waf-bypass, filter-bypass, javascript, php, waf, sanitizer-bypass]
+tags: [article, webseclist-reference, en, thespanner-co-uk, waf-bypass, filter-bypass, javascript, php, waf, sanitizer-bypass, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:44+00:00"

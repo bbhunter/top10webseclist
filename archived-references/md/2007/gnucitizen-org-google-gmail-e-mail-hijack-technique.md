@@ -3,7 +3,7 @@ type: Article
 title: Google GMail E-mail Hijack Technique
 description: "A multipart/form-data CSRF POST to a GMail alternative interface silently adds a filter to the victim's account that forwards every message with an attachment to the attacker. The backdoor survives the underlying bug being fixed, because the filter stays in the victim's filter list. pdp published the form after Google patched."
 resource: "https://www.gnucitizen.org/blog/google-gmail-e-mail-hijack-technique/"
-tags: [article, webseclist-reference, en, gnucitizen-org, csrf, email, case-study, attack-chain, abuse-of-functionality, info-leak, novel-technique]
+tags: [article, webseclist-reference, en, gnucitizen-org, csrf, email, case-study, attack-chain, abuse-of-functionality, info-leak, novel-technique, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:26+00:00"

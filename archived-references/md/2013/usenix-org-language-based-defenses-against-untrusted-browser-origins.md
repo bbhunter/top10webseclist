@@ -3,7 +3,7 @@ type: Article
 title: Language-based Defenses Against Untrusted Browser Origins
 description: "Script components sharing a page's origin, such as SSO buttons and crypto libraries, can be attacked by the host page and by neighbouring scripts, which browser policy alone cannot stop. The authors define Defensive JavaScript, a typed subset whose scripts keep their behaviour in a hostile page, and add a type inference tool, defensive crypto libraries and protocol verification."
 resource: "https://www.usenix.org/conference/usenixsecurity13/technical-sessions/presentation/bhargavan"
-tags: [article, webseclist-reference, en, usenix-org, javascript, sso, oauth, formal-analysis, static-analysis, mitigation, defence, same-origin-policy]
+tags: [article, webseclist-reference, en, usenix-org, javascript, sso, oauth, formal-analysis, static-analysis, mitigation, defence, same-origin-policy, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:04:15+00:00"

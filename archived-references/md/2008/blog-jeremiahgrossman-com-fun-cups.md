@@ -3,7 +3,7 @@ type: Article
 title: Fun with CUPS
 description: "CUPS listens on localhost:631 over HTTP and is not covered by Firefox port banning, so a remote page can probe for it. Grossman ties the CVE-2008-0047 CGI heap overflow to drive-by reach and gives a detection probe: an img pointing at localhost:631/images/navbar.gif whose onload and onerror handlers report whether CUPS is running."
 resource: "https://jeremiahgrossman.blogspot.com/2008/03/fun-with-cups.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, side-channel, javascript, detection, info-leak, dns-rebinding, cve]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, side-channel, javascript, detection, info-leak, dns-rebinding, cve, owasp-a09-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:00+00:00"

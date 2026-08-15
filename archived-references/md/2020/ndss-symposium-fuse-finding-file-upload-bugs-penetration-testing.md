@@ -3,7 +3,7 @@ type: Article
 title: "FUSE: Finding File Upload Bugs via Penetration Testing"
 description: "FUSE mutates file upload requests so they pass a web application's content-filtering checks while preserving the uploaded file's execution semantics, exposing unrestricted file upload and unrestricted executable file upload bugs. Across 33 real PHP applications it found 30 previously unreported remote code execution flaws, 15 of which received CVEs."
 resource: "https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/"
-tags: [article, webseclist-reference, en, ndss-symposium, file-upload, rce, filter-bypass, php, fuzzing, dynamic-analysis, tooling, cve]
+tags: [article, webseclist-reference, en, ndss-symposium, file-upload, rce, filter-bypass, php, fuzzing, dynamic-analysis, tooling, cve, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:41+00:00"

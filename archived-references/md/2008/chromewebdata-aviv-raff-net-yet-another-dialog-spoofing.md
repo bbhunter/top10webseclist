@@ -3,7 +3,7 @@ type: Article
 title: Aviv Raff On .NET - Yet another Dialog Spoofing
 description: Firefox 2.0.0.11 renders the WWW-Authenticate Basic realm value in its authentication dialog and stops at the last double quote, but does not sanitise single quotes or spaces. A crafted realm therefore makes the prompt appear to come from a trusted site. Delivery vectors include a script-redirected popup and an img tag in webmail, RSS or forum posts.
 resource: "https://web.archive.org/web/20080106144155/http://aviv.raffon.net/2008/01/02/YetAnotherDialogSpoofingFirefoxBasicAuthentication.aspx"
-tags: [article, webseclist-reference, aviv-raffon-net, phishing, url-spoofing, http, filter-bypass, auth-bypass]
+tags: [article, webseclist-reference, aviv-raffon-net, phishing, url-spoofing, http, filter-bypass, auth-bypass, owasp-a01-2021, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:02:48+00:00"

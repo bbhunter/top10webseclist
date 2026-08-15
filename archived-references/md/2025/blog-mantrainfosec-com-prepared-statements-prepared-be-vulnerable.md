@@ -3,7 +3,7 @@ type: Article
 title: Prepared Statements? Prepared to Be Vulnerable.
 description: The Node.js mysql and mysql2 drivers convert JavaScript objects and arrays into SQL fragments by default, so submitting a JSON object where a string is expected turns a correctly parameterised prepared statement into attacker-controlled SQL. It enables mass reads, updates and deletes, and in the reported case a password-reset bypass and account takeover.
 resource: "https://blog.mantrainfosec.com/blog/18/prepared-statements-prepared-to-be-vulnerable"
-tags: [article, webseclist-reference, en, blog-mantrainfosec-com, sqli, nodejs, mysql, auth-bypass, database, injection, case-study, prior-art-extension]
+tags: [article, webseclist-reference, en, blog-mantrainfosec-com, sqli, nodejs, mysql, auth-bypass, database, injection, case-study, prior-art-extension, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:10+00:00"

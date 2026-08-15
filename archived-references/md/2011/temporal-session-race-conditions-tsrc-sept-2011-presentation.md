@@ -3,7 +3,7 @@ type: Slides
 title: Temporal Session Race Conditions (TSRC) Sept 2011 Presentation
 description: "Shay Chen's deck shows how to exploit session race conditions that have no natural latency. Layer-targeted application DoS - RegEx DoS payloads, connection-pool exhaustion, expensive queries - stretches the window in which a premature session variable lives, making session puzzling against millisecond-lifespan variables reproducible."
 resource: "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Temporal%20Session%20Race%20Conditions%20%28TSRC%29%20-%20Sept%202011%20-%20Presentation.pptx"
-tags: [slides, webseclist-reference, race-condition, dos, algorithmic-complexity, auth-bypass, session-fixation, privilege-escalation, toctou, novel-technique]
+tags: [slides, webseclist-reference, race-condition, dos, algorithmic-complexity, auth-bypass, session-fixation, privilege-escalation, toctou, novel-technique, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:13+00:00"

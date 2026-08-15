@@ -3,7 +3,7 @@ type: Whitepaper
 title: On Subnormal Floating Point and Abnormal Timing
 description: Floating point add and multiply on x86 take up to two orders of magnitude longer on subnormal operands, creating a data timing channel with no data-dependent branch. JavaScript that feeds subnormals to Firefox SVG CSS filters times rendering to steal cross-origin pixels and sniff history, and the same trick breaks the Fuzz differentially private database.
 resource: "https://www.ieee-security.org/TC/SP2015/papers-archived/6949a623.pdf"
-tags: [whitepaper, webseclist-reference, timing-attack, side-channel, xsleak, css, sop-bypass, info-leak, javascript, novel-technique, mitigation]
+tags: [whitepaper, webseclist-reference, timing-attack, side-channel, xsleak, css, sop-bypass, info-leak, javascript, novel-technique, mitigation, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:00:20+00:00"

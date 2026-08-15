@@ -3,7 +3,7 @@ type: Article
 title: Opossum Attack
 description: "Cross-protocol desynchronisation against services that offer both implicit TLS on a dedicated port and opportunistic TLS upgrade. A man-in-the-middle splices the client's TLS connection onto its own upgraded plaintext connection, leaving client and server one message apart, which gives resource confusion, session fixation and self-XSS escalation."
 resource: "https://opossum-attack.com/"
-tags: [article, webseclist-reference, en, opossum-attack-com, desync, session-fixation, tls, https, smtp, ftp, http, xss, cve, novel-technique]
+tags: [article, webseclist-reference, en, opossum-attack-com, desync, session-fixation, tls, https, smtp, ftp, http, xss, cve, novel-technique, owasp-a02-2021, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:44+00:00"

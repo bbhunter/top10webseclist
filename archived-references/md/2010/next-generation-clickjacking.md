@@ -3,7 +3,7 @@ type: Whitepaper
 title: Next Generation Clickjacking
 description: Extends clickjacking past the single click. URL fragment identifiers position the target element reliably, cross-domain drag-and-drop injects attacker text into forms and drags selections back out to steal page content and HTML source including CSRF tokens, and a Java applet forces a drop without a real drag. Anchor scroll position also leaks login state.
 resource: "https://www.cs.cornell.edu/~shmat/courses/library/nextgenclickjack.pdf"
-tags: [whitepaper, webseclist-reference, clickjacking, ui-redress, csrf, iframe, java, info-leak, novel-technique, same-origin-policy]
+tags: [whitepaper, webseclist-reference, clickjacking, ui-redress, csrf, iframe, java, info-leak, novel-technique, same-origin-policy, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:50:54+00:00"

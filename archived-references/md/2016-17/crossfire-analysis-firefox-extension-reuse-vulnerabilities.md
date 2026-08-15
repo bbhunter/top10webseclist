@@ -3,7 +3,7 @@ type: Whitepaper
 title: "CrossFire: An Analysis of Firefox Extension-Reuse Vulnerabilities"
 description: "Legacy Firefox extensions share one JavaScript namespace, so an add-on can invoke the privileged XPCOM functionality of another. The paper names the resulting extension-reuse vulnerability: a malicious add-on making no sensitive API calls itself borrows capabilities leaked by benign extensions, evading manual vetting. CrossFire, a static analyser, locates such capability leaks and emits proof-of-concept exploits; the most popular extensions proved widely affected."
 resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/crossfire-analysis-firefox-extension-reuse-vulnerabilities.pdf"
-tags: [whitepaper, webseclist-reference, browser-extension, javascript, privilege-escalation, static-analysis, tooling, novel-technique]
+tags: [whitepaper, webseclist-reference, browser-extension, javascript, privilege-escalation, static-analysis, tooling, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T20:59:56+00:00"

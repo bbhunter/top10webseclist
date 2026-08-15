@@ -3,7 +3,7 @@ type: Article
 title: "X / xAI disclosed on HackerOne: URGENT"
 description: "A subdomain whose CNAME points at Amazon S3 without a matching bucket can be claimed by anyone, because S3 selects the bucket by the requested hostname. The researcher registered the media.vine.co bucket and served his own pages from the company's own subdomain, enabling convincing phishing and scripting inside that origin."
 resource: "https://hackerone.com/reports/32825"
-tags: [article, webseclist-reference, en, hackerone, dns, aws, xss, bug-bounty, case-study]
+tags: [article, webseclist-reference, en, hackerone, dns, aws, xss, bug-bounty, case-study, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:31+00:00"

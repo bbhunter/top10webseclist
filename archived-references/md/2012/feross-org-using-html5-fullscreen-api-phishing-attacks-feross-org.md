@@ -3,7 +3,7 @@ type: Article
 title: Using the HTML5 Fullscreen API for Phishing Attacks » Feross.org
 description: "A link whose status bar shows a bank's real URL instead calls preventDefault on click, enters HTML5 fullscreen, and paints screenshot-based OS and browser chrome matched to the visitor's platform, padlock included. Because fullscreen entry is barely signalled and change blindness hides the swap, the fake address bar is convincing. A working demo and browser-vendor responses are included."
 resource: "https://web.archive.org/web/20170903113359/http://feross.org/html5-fullscreen-api-attack/"
-tags: [article, webseclist-reference, feross-org, ui-redress, javascript, dom, novel-technique, https, mitigation]
+tags: [article, webseclist-reference, feross-org, ui-redress, javascript, dom, novel-technique, https, mitigation, owasp-a02-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:10:05+00:00"

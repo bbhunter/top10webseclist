@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Second Breakfast: Implicit and Mutation-Based Serialization Vulnerabilities in .NET"
 description: "A serializer can be made to emit data that deserializes into a different type than was serialized: a dictionary key named like its type specifier, such as __type or $type, is written verbatim and read back as a type instruction. Untrusted key-value data that is only stored and later reloaded yields remote code execution, even when the attacker never touches the serialized stream."
 resource: "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Jonathan%20Birch%20-%20Second%20Breakfast%20Implicit%20and%20Mutation-Based%20Serialization%20Vulnerabilities%20in%20.NET-whitepaper.pdf"
-tags: [whitepaper, webseclist-reference, def-con, deserialization, gadget-chain, rce, dotnet, parser-differential, novel-technique]
+tags: [whitepaper, webseclist-reference, def-con, deserialization, gadget-chain, rce, dotnet, parser-differential, novel-technique, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T00:28:26+00:00"

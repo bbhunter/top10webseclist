@@ -3,7 +3,7 @@ type: Article
 title: Detecting Privoxy Users and Circumventing It ha.ckers.org web application security lab
 description: "Privoxy replaces a blocked ad with an error page offering a predictable modified URL that bypasses the block. Requesting an image at that reconstructed URL, placed after a keyword Privoxy filters, reveals whether the visitor runs Privoxy and hence probably TOR. A test script is published; the author expects it to outlive the chrome:// trick."
 resource: "http://ha.ckers.org/blog/20060911/detecting-privoxy-users-and-circumventing-it/"
-tags: [article, webseclist-reference, ha-ckers-org, proxy, detection, deanonymization, browser-fingerprinting, info-leak, filter-bypass, novel-technique]
+tags: [article, webseclist-reference, ha-ckers-org, proxy, detection, deanonymization, browser-fingerprinting, info-leak, filter-bypass, novel-technique, owasp-a05-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:32+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Finding an unseen SQL Injection by bypassing escape functions in mysqljs/mysql
 description: The mysqljs/mysql escape function encodes values differently per JavaScript type, and an Object becomes backtick-quoted identifiers rather than a quoted string. Passing a parameter as an object through Express turns a comparison into an always-true column-to-column test, giving SQL injection and login bypass in code that correctly used placeholders or escape().
 resource: "https://flattsecurity.medium.com/finding-an-unseen-sql-injection-by-bypassing-escape-functions-in-mysqljs-mysql-90b27f6542b4"
-tags: [article, webseclist-reference, en, medium, sqli, sanitizer-bypass, auth-bypass, filter-bypass, mysql, nodejs, express, database]
+tags: [article, webseclist-reference, en, medium, sqli, sanitizer-bypass, auth-bypass, filter-bypass, mysql, nodejs, express, database, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:20+00:00"

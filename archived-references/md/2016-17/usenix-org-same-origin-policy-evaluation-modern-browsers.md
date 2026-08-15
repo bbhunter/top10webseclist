@@ -3,7 +3,7 @@ type: Article
 title: "Same-Origin Policy: Evaluation in Modern Browsers"
 description: An empirical evaluation of the same-origin rules governing access between a host document and an embedded one. Running 544 test cases on ten browsers shows access rights depend not only on origin but on the type of the embedding element and on sandbox and CORS attributes, and that roughly 23 percent of cases behave differently between browsers, with the Microsoft findings acknowledged.
 resource: "https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/schwenk"
-tags: [article, webseclist-reference, en, usenix-org, same-origin-policy, sop-bypass, dom, iframe, cors, parser-differential, measurement-study, formal-analysis]
+tags: [article, webseclist-reference, en, usenix-org, same-origin-policy, sop-bypass, dom, iframe, cors, parser-differential, measurement-study, formal-analysis, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:29+00:00"

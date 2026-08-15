@@ -3,7 +3,7 @@ type: Article
 title: "Next.js, cache, and chains: the stale elixir"
 description: "The internal x-now-route-matches header makes Next.js treat a server-side-rendered request as static and return a cacheable Cache-Control, while the __nextDataReq parameter turns the response into the pageProps JSON. Together they poison the framework's own cache with no CDN needed, causing denial of service and, where request data is reflected, stored XSS."
 resource: "https://zhero-web-sec.github.io/research-and-things/nextjs-cache-and-chains-the-stale-elixir"
-tags: [article, webseclist-reference, en-US, zhero-web-security, cache-poisoning, xss, cache-deception, nextjs, dos, cve, nodejs, bug-bounty]
+tags: [article, webseclist-reference, en-US, zhero-web-security, cache-poisoning, xss, cache-deception, nextjs, dos, cve, nodejs, bug-bounty, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:51:28+00:00"

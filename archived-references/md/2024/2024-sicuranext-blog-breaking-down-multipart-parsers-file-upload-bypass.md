@@ -3,7 +3,7 @@ type: Article
 title: "Breaking Down Multipart Parsers: File upload validation bypass"
 description: "PHP, Busboy and Flask parsers disagree with the WAFs in front of them about one multipart/form-data body. Duplicated name or filename parameters, duplicated Content-Disposition headers, a broken CRLF between headers and body, unquoted filenames, a missing closing boundary (PHP accepts them) and filename*=UTF-8''backdoor%2ephp each let one side read a safe value and the other a dangerous one. HAProxy ACLs and AWS WAF parse only urlencoded bodies, so converting the request to multipart skips them."
 resource: "https://blog.sicuranext.com/breaking-down-multipart-parsers-validation-bypass/"
-tags: [article, webseclist-reference, en, sicuranext-blog, parser-differential, waf-bypass, file-upload, filter-bypass, php, nodejs, content-type, load-balancer]
+tags: [article, webseclist-reference, en, sicuranext-blog, parser-differential, waf-bypass, file-upload, filter-bypass, php, nodejs, content-type, load-balancer, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:06:49+00:00"

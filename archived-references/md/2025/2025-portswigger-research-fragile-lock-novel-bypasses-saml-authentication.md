@@ -3,7 +3,7 @@ type: Article
 title: "The Fragile Lock: Novel Bypasses For SAML Authentication"
 description: "Parser inconsistencies between REXML, Nokogiri and libxml2 let an attacker forge SAML responses: attribute pollution, namespace confusion via the reserved xml prefix, and a canonicalisation failure that makes the digest cover an empty string. Any identity-provider-signed XML then bypasses signature validation and grants login as any user."
 resource: "https://portswigger.net/research/the-fragile-lock"
-tags: [article, webseclist-reference, portswigger-research, saml, auth-bypass, parser-differential, sso, ruby, php, novel-technique, cve, tooling]
+tags: [article, webseclist-reference, portswigger-research, saml, auth-bypass, parser-differential, sso, ruby, php, novel-technique, cve, tooling, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:51+00:00"

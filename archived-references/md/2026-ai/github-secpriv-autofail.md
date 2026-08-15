@@ -3,7 +3,7 @@ type: Repository
 title: "AutoFail: Breaking Web Boundaries using Android's Autofill Framework"
 description: "Artifact repository for a paper on Android's autofill framework as a route across web boundaries. It holds ADAPT, a differential-testing harness that drives autofill implementations and records their behaviour; a real-world analysis of iframe and embedding-header configurations on sites; a proof-of-concept app for a Cross-Context Account Oracle, which learns which accounts a user holds for a page from autofill behaviour; and a mitigation app using a secure interaction flow."
 resource: "https://github.com/SecPriv/autofail"
-tags: [repo, webseclist-reference, github, android, info-leak, iframe, dynamic-analysis, measurement-study, mitigation]
+tags: [repo, webseclist-reference, github, android, info-leak, iframe, dynamic-analysis, measurement-study, mitigation, autofill]
 generated:
   by: webseclist-refs/1
   at: "2026-08-08T18:46:56+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "Boneh Publications: Exposing private information by timing web applications"
 description: Web response times leak private state. Direct timing distinguishes valid from invalid usernames at login pages and counts hidden photo albums behind access control, accurate above 95% from ten samples.
 resource: "https://crypto.stanford.edu/~dabo/pubs/abstracts/webtiming.html"
-tags: [article, webseclist-reference, crypto-stanford-edu, timing-attack, side-channel, xsleak, info-leak, csrf, same-origin-policy, measurement-study, mitigation]
+tags: [article, webseclist-reference, crypto-stanford-edu, timing-attack, side-channel, xsleak, info-leak, csrf, same-origin-policy, measurement-study, mitigation, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-08T07:45:35+00:00"

@@ -3,7 +3,7 @@ type: Whitepaper
 title: A Symbolic Execution Framework for JavaScript
 description: Kudzu applies dynamic symbolic execution to client-side JavaScript, covering the event space by automatic GUI exploration and the value space by solving constraints on inputs. Its core is Kaluza, a solver for boolean, bit-vector and string constraints including regular expressions over variable-length strings. On 18 live applications it found 2 unknown code injection bugs.
 resource: "https://webblaze.cs.berkeley.edu/papers/kudzu.pdf"
-tags: [whitepaper, webseclist-reference, javascript, dynamic-analysis, formal-analysis, tooling, xss, dom]
+tags: [whitepaper, webseclist-reference, javascript, dynamic-analysis, formal-analysis, tooling, xss, dom, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:41+00:00"

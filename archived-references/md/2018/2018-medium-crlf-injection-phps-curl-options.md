@@ -3,7 +3,7 @@ type: Article
 title: CRLF Injection Into PHP’s cURL Options
 description: "PHP's cURL header options never reject carriage returns and line feeds, so user data reflected into a server-side API request header can inject extra headers. Adding a double CRLF plus a forged Content-Length lets an attacker append his own request body, making the internal API act on an attacker-chosen method instead of the legitimate one."
 resource: "https://medium.com/@tomnomnom/crlf-injection-into-phps-curl-options-e2e0d7cfe545"
-tags: [article, webseclist-reference, en, medium, header-injection, injection, request-smuggling, http, cookie, php, rest-api]
+tags: [article, webseclist-reference, en, medium, header-injection, injection, request-smuggling, http, cookie, php, rest-api, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:27+00:00"

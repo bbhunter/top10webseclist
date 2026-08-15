@@ -3,7 +3,7 @@ type: Article
 title: "Supply chain attacks: a new era"
 description: "LavaMoat defends JavaScript builds against malicious dependencies with per-package policy files, dependency-tree naming and scuttling of dangerous globals. The article reports two bypasses: a crafted multi-line source-map comment survives lavapack's comment stripping and escapes the generated wrapper, running code at bundle load; and document.execCommand creates a same-origin frame SnowJS does not hook, giving an unscuttled realm. Chained, they defeat the protection."
 resource: "https://osec.io/blog/2024-06-10-supply-chain-attacks-a-new-era"
-tags: [article, webseclist-reference, en, ottersec, supply-chain, javascript, sandbox-escape, filter-bypass, attack-chain, browser-extension]
+tags: [article, webseclist-reference, en, ottersec, supply-chain, javascript, sandbox-escape, filter-bypass, attack-chain, browser-extension, owasp-a05-2021, owasp-a06-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:37:24+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Cache Poisoning at Scale
 description: "A catalogue of reusable web cache poisoning patterns found across bug bounty targets: Apache Traffic Server forwarding URL fragments it leaves out of the cache key, method-override and scheme headers producing cacheable errors and redirect loops, CDNs caching 403 responses, and host header injection via Fastly-host. They yield denial of service, arbitrary redirects and stored scripting."
 resource: "https://youst.in/posts/cache-poisoning-at-scale/"
-tags: [article, webseclist-reference, en, youst-in, cache-poisoning, dos, header-injection, cache, cdn, http, xss, bug-bounty, cve, large-scale-scan]
+tags: [article, webseclist-reference, en, youst-in, cache-poisoning, dos, header-injection, cache, cdn, http, xss, bug-bounty, cve, large-scale-scan, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:51:04+00:00"

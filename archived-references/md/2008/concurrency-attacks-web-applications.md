@@ -3,7 +3,7 @@ type: Whitepaper
 title: Concurrency Attacks in Web Applications
 description: "iSEC Partners on race conditions as a security class in web applications: frameworks favour throughput and encapsulation over synchronisation, so transfers, authorisation changes and one-time redemptions can be replayed mid-transaction. Gives white-box and black-box procedures, notes ASP.NET, Servlets and Struts 1.x/2.x differ on thread safety, and ships the SyncTest tool."
 resource: "https://www.blackhat.com/presentations/bh-usa-08/Stender_Vidergar/BH_US_08_Stender_Vidergar_Concurrency_Attacks_in%20Web_Applications_Whitepaper.pdf"
-tags: [whitepaper, webseclist-reference, race-condition, toctou, java, aspnet, tooling, dynamic-analysis, database, defence]
+tags: [whitepaper, webseclist-reference, race-condition, toctou, java, aspnet, tooling, dynamic-analysis, database, defence, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T16:00:22+00:00"

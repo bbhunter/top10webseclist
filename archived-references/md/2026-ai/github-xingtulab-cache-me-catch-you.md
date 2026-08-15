@@ -3,7 +3,7 @@ type: Repository
 title: Code
 description: "Code for an NDSS 2026 study of caches in LLM serving stacks. A meet-in-the-middle birthday search collides the Python tuple hash used for KV prefix-cache keys in vLLM and SGLang, so an attacker's prompt takes a victim's cached prefix; image caches key on raw tobytes or SHA-256, so palette-mode PNGs and equal-size differing images collide; and GPTCache serves a stored answer for a semantically near but opposite request, bypassing content filters. Several CVEs were assigned."
 resource: "https://github.com/XingTuLab/Cache_Me_Catch_You"
-tags: [repo, webseclist-reference, github, cache-poisoning, hash-collision, llm, cache, filter-bypass, cve, info-leak, tooling]
+tags: [repo, webseclist-reference, github, cache-poisoning, hash-collision, llm, cache, filter-bypass, cve, info-leak, tooling, owasp-a02-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-08T18:46:57+00:00"

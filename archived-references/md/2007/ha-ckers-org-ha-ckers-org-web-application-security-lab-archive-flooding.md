@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab - Archive » Exaggerating Timing Attack Results Via GET Flooding
 description: "Prompted by a forum post from Super-Friez, RSnake proposes flooding GET requests not for bandwidth but to load the server, ideally against a URL that hits the database, so a timing attack's signal grows. A difference normally measured in microseconds becomes seconds, turning an unusable timing oracle into a practical one."
 resource: "http://ha.ckers.org/blog/20071209/exaggerating-timing-attack-results-via-get-flooding/"
-tags: [article, webseclist-reference, ha-ckers-org, timing-attack, dos, side-channel, http, algorithmic-complexity, novel-technique]
+tags: [article, webseclist-reference, ha-ckers-org, timing-attack, dos, side-channel, http, algorithmic-complexity, novel-technique, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:41+00:00"

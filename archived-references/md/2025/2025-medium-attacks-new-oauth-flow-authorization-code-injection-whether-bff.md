@@ -3,7 +3,7 @@ type: Article
 title: Attacks via a New OAuth flow, Authorization Code Injection, and Whether HttpOnly, PKCE, and BFF…
 description: "An attacker who can run script on any page of an OAuth client's origin starts a fresh authorization code flow in a hidden frame, breaks the flow so the application never consumes the code, and replays the stolen authorization response from their own machine. This yields an authenticated session even with a confidential client, a backend-for-frontend, PKCE, state and nonce."
 resource: "https://medium.com/@anador/attacks-via-a-new-oauth-flow-authorization-code-injection-and-whether-httponly-pkce-and-bff-3db1624b4fa7"
-tags: [article, webseclist-reference, en, medium, oauth, openid, auth-bypass, sso, postmessage, iframe, xss, same-origin-policy, defence]
+tags: [article, webseclist-reference, en, medium, oauth, openid, auth-bypass, sso, postmessage, iframe, xss, same-origin-policy, defence, owasp-a01-2021, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:00+00:00"

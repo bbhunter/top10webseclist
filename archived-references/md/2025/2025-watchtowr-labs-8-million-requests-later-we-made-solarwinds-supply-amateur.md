@@ -3,7 +3,7 @@ type: Article
 title: 8 Million Requests Later, We Made The SolarWinds Supply Chain Attack Look Amateur
 description: About 150 abandoned Amazon S3 buckets, still referenced by software, documentation and deployment pipelines, were re-registered and logged over 8 million requests in two months from government, military and Fortune 500 networks. Whoever holds such a bucket can answer with malicious updates, deployment templates, VM images or unsigned binaries.
 resource: "https://labs.watchtowr.com/8-million-requests-later-we-made-the-solarwinds-supply-chain-attack-look-amateur/"
-tags: [article, webseclist-reference, en, watchtowr, supply-chain, aws, ci-cd, rce, large-scale-scan, measurement-study, tooling]
+tags: [article, webseclist-reference, en, watchtowr, supply-chain, aws, ci-cd, rce, large-scale-scan, measurement-study, tooling, owasp-a06-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T15:09:31+00:00"

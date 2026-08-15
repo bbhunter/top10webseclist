@@ -3,7 +3,7 @@ type: Article
 title: "Take This Personally: Pollution Attacks on Personalized Services"
 description: "Xing and colleagues show the personalization engines behind YouTube, Amazon and Google search can be steered by outsiders. Third-party requests inject entries into a victim's profile without their knowledge, perturbing the recommendation algorithms so an attacker-chosen video, product or low-ranked site gains visibility. Demonstrated against all three services."
 resource: "https://www.usenix.org/conference/usenixsecurity13/technical-sessions/paper/xing"
-tags: [article, webseclist-reference, en, usenix-org, csrf, novel-technique, measurement-study, case-study]
+tags: [article, webseclist-reference, en, usenix-org, csrf, novel-technique, measurement-study, case-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:04:14+00:00"

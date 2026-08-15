@@ -3,7 +3,7 @@ type: Article
 title: Java Applet Same-Origin Policy Bypass via HTTP Redirect » Neal Poole
 description: "Java 6 Update 27 and below and Java 7 set an applet's origin from the URL that began the load rather than the URL the redirect ended at. Hosting evil.jar behind a victim site's open redirect therefore let the applet issue cookie-bearing requests back to that site, enabling data theft and CSRF. Patched in the October 2011 CPU as CVE-2011-3546."
 resource: "https://nealpoole.com/blog/2011/10/java-applet-same-origin-policy-bypass-via-http-redirect/"
-tags: [article, webseclist-reference, en, nealpoole-com, same-origin-policy, sop-bypass, java, open-redirect, csrf, cookie, cve, http]
+tags: [article, webseclist-reference, en, nealpoole-com, same-origin-policy, sop-bypass, java, open-redirect, csrf, cookie, cve, http, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:36:49+00:00"

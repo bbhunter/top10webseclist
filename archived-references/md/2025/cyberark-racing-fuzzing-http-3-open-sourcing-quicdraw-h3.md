@@ -3,7 +3,7 @@ type: Article
 title: "Racing and Fuzzing HTTP/3: Open-sourcing QuicDraw(H3)"
 description: "Adapts the single-packet race-condition attack to HTTP/3: because QUIC forbids IP fragmentation, every request is queued minus its final byte and all the withheld last bytes are released together in one packet, so the server begins processing them at once. Over 110 requests landed in a single packet, released as an open-source tool."
 resource: "https://www.cyberark.com/resources/threat-research-blog/racing-and-fuzzing-http-3-open-sourcing-quicdraw"
-tags: [article, webseclist-reference, cyberark, race-condition, http3, fuzzing, tooling, http, novel-technique, prior-art-extension]
+tags: [article, webseclist-reference, cyberark, race-condition, http3, fuzzing, tooling, http, novel-technique, prior-art-extension, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:06:10+00:00"

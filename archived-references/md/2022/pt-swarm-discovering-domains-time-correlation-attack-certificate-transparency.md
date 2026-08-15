@@ -3,7 +3,7 @@ type: Article
 title: Discovering Domains via a Time-Correlation Attack on Certificate Transparency
 description: Servers that auto-renew TLS certificates issue them for all their domains at the same moment, so certificates whose validity timestamps fall within seconds of each other in Certificate Transparency logs likely belong to one operator. Searching CT logs by time, or by adjacent log position where the CA zeroes the time, uncovers hidden related domains.
 resource: "https://swarm.ptsecurity.com/discovering-domains-via-a-time-correlation-attack/"
-tags: [article, webseclist-reference, en-US, pt-swarm, info-leak, tls, https, dns, large-scale-scan, case-study, novel-technique]
+tags: [article, webseclist-reference, en-US, pt-swarm, info-leak, tls, https, dns, large-scale-scan, case-study, novel-technique, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:29+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: ChatGPT Account Takeover - Wildcard Web Cache Deception
 description: "Cloudflare cached everything under a share path without decoding a percent-encoded path traversal, while the origin decoded and normalised it. Requesting a traversing share URL therefore caches the victim's auth token at a URL the attacker can then fetch, giving a full account takeover."
 resource: "https://nokline.github.io/bugbounty/2024/02/04/ChatGPT-ATO.html"
-tags: [article, webseclist-reference, en, harel-security-research, cache-deception, path-traversal, parser-differential, url-parsing, info-leak, cdn, cache, cloudflare, bug-bounty]
+tags: [article, webseclist-reference, en, harel-security-research, cache-deception, path-traversal, parser-differential, url-parsing, info-leak, cdn, cache, cloudflare, bug-bounty, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:37:09+00:00"

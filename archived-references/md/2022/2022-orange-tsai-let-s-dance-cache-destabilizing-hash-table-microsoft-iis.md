@@ -3,7 +3,7 @@ type: Article
 title: "Let's Dance in the Cache - Destabilizing Hash Table on Microsoft IIS!"
 description: "Three flaws in Microsoft IIS hash tables: a key-splitting bug amplifying hash-flooding until a default install is unresponsive at about 30 connections per second; an output cache that keys on the first duplicate query parameter while ASP.NET concatenates all of them, giving cache poisoning; and a token cache comparing the username twice instead of the password, allowing authentication bypass."
 resource: "http://blog.orange.tw/2022/08/lets-dance-in-the-cache-destabilizing-hash-table-on-microsoft-iis.html"
-tags: [article, webseclist-reference, en, orange-tsai, cache-poisoning, auth-bypass, algorithmic-complexity, dos, aspnet, cache, dotnet, cve]
+tags: [article, webseclist-reference, en, orange-tsai, cache-poisoning, auth-bypass, algorithmic-complexity, dos, aspnet, cache, dotnet, cve, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:19+00:00"

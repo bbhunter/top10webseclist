@@ -3,7 +3,7 @@ type: Article
 title: Processing Dangerous Paths – On Security and Privacy of the Portable Document Format
 description: A systematic study of dangerous paths through the PDF file structure that abuses standard features rather than implementation bugs. The resulting attacks span denial of service, information disclosure leaking personal data off the victim machine, data manipulation and code execution; 26 of 28 popular PDF applications were vulnerable to at least one.
 resource: "https://www.ndss-symposium.org/ndss-paper/processing-dangerous-paths-on-security-and-privacy-of-the-portable-document-format/"
-tags: [article, webseclist-reference, en, ndss-symposium, pdf, info-leak, rce, dos, path-traversal, algorithmic-complexity, ssrf, measurement-study]
+tags: [article, webseclist-reference, en, ndss-symposium, pdf, info-leak, rce, dos, path-traversal, algorithmic-complexity, ssrf, measurement-study, owasp-a01-2021, owasp-a04-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:42+00:00"

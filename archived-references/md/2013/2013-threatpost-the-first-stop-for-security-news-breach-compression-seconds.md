@@ -3,7 +3,7 @@ type: Article
 title: BREACH Compression Attack Steals HTTPS Secrets in Under 30 Seconds
 description: "Report on BREACH, presented at Black Hat USA 2013 by Angelo Prado, Neal Harris and Yoel Gluck. Where CRIME attacked TLS compression, BREACH attacks HTTP-level gzip: the attacker reflects guessed characters into a response that also holds a CSRF token and watches the compressed length shrink on a correct guess. The demo recovered a 30-character token in under 30 seconds."
 resource: "http://web.archive.org/web/20160507023636/http://threatpost.com/breach-compression-attack-steals-https-secrets-in-under-30-seconds/101579"
-tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n, Crypto, HTTP, tls, side-channel, csrf]
+tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security-n, crypto, http, tls, side-channel, csrf, owasp-a01-2021, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:02:43+00:00"

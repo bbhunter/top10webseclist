@@ -3,7 +3,7 @@ type: Article
 title: Novel SSRF Technique Involving HTTP Redirect Loops
 description: A blind SSRF that discloses nothing for a successful response may return the whole response for an error status. Serving a redirect loop that increments the status code through the 3xx range drives the client into that error path, and the application then leaks the entire redirect chain plus the final body, enough to read cloud metadata credentials.
 resource: "https://slcyber.io/assetnote-security-research-center/novel-ssrf-technique-involving-http-redirect-loops/"
-tags: [article, webseclist-reference, en, searchlight-cyber, ssrf, open-redirect, http, info-leak, aws, novel-technique, case-study]
+tags: [article, webseclist-reference, en, searchlight-cyber, ssrf, open-redirect, http, info-leak, aws, novel-technique, case-study, owasp-a04-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:05:53+00:00"

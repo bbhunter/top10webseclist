@@ -3,7 +3,7 @@ type: Article
 title: We Spent $20 To Achieve RCE And Accidentally Became The Admins Of .MOBI
 description: "The WHOIS server for .mobi moved to whois.nic.mobi and the old dotmobiregistry.net was left to expire, so the researchers bought it for $20 and answered queries clients still had hardcoded: 2.5 million from 135,000 hosts, including mail servers and .gov systems. Certificate authorities read the administrative-contact address out of WHOIS for domain validation, so GlobalSign offered their address for microsoft.mobi, and phpWhois eval()s server responses for RCE."
 resource: "https://labs.watchtowr.com/we-spent-20-to-achieve-rce-and-accidentally-became-the-admins-of-mobi/"
-tags: [article, webseclist-reference, en, watchtowr, abuse-of-functionality, tls, https, rce, php, command-injection, measurement-study, attack-chain]
+tags: [article, webseclist-reference, en, watchtowr, abuse-of-functionality, tls, https, rce, php, command-injection, measurement-study, attack-chain, owasp-a02-2021, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T15:09:30+00:00"

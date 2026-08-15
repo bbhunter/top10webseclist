@@ -3,7 +3,7 @@ type: Article
 title: "DROWN: Breaking TLS Using SSLv2"
 description: DROWN uses any server still speaking SSLv2 with the same RSA key as a Bleichenbacher padding oracle, letting a passive attacker decrypt recorded modern TLS sessions. An OpenSSL flaw present from 1998 to 2015 makes the cheap variant run in minutes on one machine, and a QUIC variant permits lasting server impersonation.
 resource: "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/aviram"
-tags: [article, webseclist-reference, en, usenix-org, tls, side-channel, https, info-leak, smtp, large-scale-scan, measurement-study, cve]
+tags: [article, webseclist-reference, en, usenix-org, tls, side-channel, https, info-leak, smtp, large-scale-scan, measurement-study, cve, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:38+00:00"

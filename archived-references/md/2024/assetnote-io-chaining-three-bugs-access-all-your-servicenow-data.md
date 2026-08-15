@@ -3,7 +3,7 @@ type: Article
 title: Chaining Three Bugs to Access All Your ServiceNow Data
 description: ServiceNow renders Jelly templates twice, and any query parameter binds to a template variable, so ?jvar_page_title= injects into a no_escape title. The HTML sanitiser permits <style>, whose contents the XML parser still reads as tags, and the injection guard only matches a glide namespace declaration written with double quotes, so single quotes rebind the prefix and execute script pre-auth. A path check then strips .. from filenames, so co..nf/glide.db.properties evades the /conf/ blacklist.
 resource: "https://www.assetnote.io/resources/research/chaining-three-bugs-to-access-all-your-servicenow-data"
-tags: [article, webseclist-reference, en, assetnote-io, ssti, sanitizer-bypass, filter-bypass, rce, java, path-traversal, auth-bypass, attack-chain, cve]
+tags: [article, webseclist-reference, en, assetnote-io, ssti, sanitizer-bypass, filter-bypass, rce, java, path-traversal, auth-bypass, attack-chain, cve, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:01:36+00:00"

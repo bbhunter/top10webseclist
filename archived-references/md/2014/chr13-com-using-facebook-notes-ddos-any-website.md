@@ -3,7 +3,7 @@ type: Article
 title: Using Facebook Notes to DDoS any website
 description: "Facebook Notes accepts img tags and Facebook's crawler fetches every external URL, with its cache defeated by random query parameters. One note holding 1000 unique URLs makes over 100 Facebook servers hit the target at once; several notes viewed together sustained 400 Mbps from browsers and about 900 Mbps from a script."
 resource: "https://web.archive.org/web/20160403035045/http://chr13.com/2014/04/20/using-facebook-notes-to-ddos-any-website/"
-tags: [article, webseclist-reference, en-US, chr13-com, dos, ssrf, http, cache, bug-bounty, case-study]
+tags: [article, webseclist-reference, en-US, chr13-com, dos, ssrf, http, cache, bug-bounty, case-study, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:07:15+00:00"

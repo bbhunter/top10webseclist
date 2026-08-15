@@ -3,7 +3,7 @@ type: Article
 title: Billy (BK) Rios » Content Smuggling
 description: The PDF specification lets the header appear anywhere in the first 1024 bytes, so a file can be a valid GIF and a valid PDF at once. Uploading such a polyglot to a site that only accepts benign types, then referencing it through an OBJECT tag with an application/pdf content type, hands it to Adobe Reader, whose XML APIs then make cookie-bearing requests against the hosting origin.
 resource: "https://web.archive.org/web/20170903113359/http://xs-sniper.com/blog/2012/10/11/content-smuggling/"
-tags: [article, webseclist-reference, xs-sniper-com, file-upload, xss, pdf, content-type, parser-differential, same-origin-policy, novel-technique, filter-bypass, mime]
+tags: [article, webseclist-reference, xs-sniper-com, file-upload, xss, pdf, content-type, parser-differential, same-origin-policy, novel-technique, filter-bypass, mime, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:21:58+00:00"

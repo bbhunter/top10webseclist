@@ -3,7 +3,7 @@ type: Article
 title: "Parse and Parse: MIME Validation Bypass to XSS via Parser Differential"
 description: Content-Type is a singleton field, but Chromium and Firefox coalesce it on commas and keep the last syntactically valid type, while MIME libraries split at the first semicolon and keep the first. So application/json;,text/html passes a server-side check as JSON yet renders as HTML despite nosniff; adding = satisfies parsers that demand a name-value parameter, and Chromium reading ( as a comment start hides it. 17 parsers are tabulated.
 resource: "https://lab.ctbb.show/research/parse-and-parse-mime-validation-bypass-to-xss-via-parser-differential"
-tags: [article, webseclist-reference, en, critical-thinking-bug-bounty-podcast, parser-differential, xss, mime, content-type, http, filter-bypass, python, prior-art-extension]
+tags: [article, webseclist-reference, en, critical-thinking-bug-bounty-podcast, parser-differential, xss, mime, content-type, http, filter-bypass, python, prior-art-extension, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:35+00:00"

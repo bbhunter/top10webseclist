@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Transformers: Dark Side of the Type — Weaponizing the Conversion Layer"
 description: "No serializer is needed for object injection: any conversion that resolves a type named in input and builds it is a sink. ResXFileRef's converter takes filename;typename;encoding, opens a UNC path and constructs ResourceSet, reaching BinaryFormatter; ImageSourceConverter turns any string into a fetched URI; ObjectDataProvider's setters reach InvokeMember. SharePoint CVE-2020-1460 and CVE-2026-47294 chain it, the latter smuggling a type as a generic argument past SafeControl."
 resource: "https://i.blackhat.com/BH-USA-26/Presentations/BHUS26-Mirosh-Transformers-Dark-Side-WP.pdf"
-tags: [whitepaper, webseclist-reference, deserialization, dotnet, gadget-chain, rce, aspnet, ssrf, cve, filter-bypass, static-analysis]
+tags: [whitepaper, webseclist-reference, deserialization, dotnet, gadget-chain, rce, aspnet, ssrf, cve, filter-bypass, static-analysis, owasp-a05-2021, owasp-a08-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:08:47+00:00"

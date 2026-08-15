@@ -3,7 +3,7 @@ type: Article
 title: User info extraction abusing placeholder injection in Zendesk
 description: Zendesk expands placeholder expressions in ticket fields, including attributes of users copied on a ticket, and sanitises the subject but not the description. This write-up shows that a ticket created with no subject promotes the description into the subject and so escapes that sanitisation, and that the mandatory subject on web forms is sidestepped by opening the ticket by email, letting an attacker who CCs a victim extract their name, phone, role and custom fields.
 resource: "https://rikeshbaniya.medium.com/tale-of-zendesk-0-day-and-a-potential-25k-bounty-61bcf9c5dc06"
-tags: [article, webseclist-reference, en, medium, ssti, injection, email, info-leak, sanitizer-bypass, bug-bounty]
+tags: [article, webseclist-reference, en, medium, ssti, injection, email, info-leak, sanitizer-bypass, bug-bounty, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:15+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "SMBRelay Bible 7: SSRF + Java + Windows = Love"
 description: "Java's built-in HTTP client performs NTLM authentication automatically to any host, without the Intranet-zone restriction browsers apply. So an SSRF in a Java application on Windows, often running under a user account, can be aimed at an attacker's web server to capture or relay NTLM credentials, using Metasploit's http_ntlmrelay and http_ntlm modules."
 resource: "https://web.archive.org/web/20170903113359/http://erpscan.com/press-center/smbrelay-bible-7-ssrf-java-windows-love/"
-tags: [article, webseclist-reference, en-US, erpscan-com, ssrf, java, auth-bypass, http, privilege-escalation, novel-technique]
+tags: [article, webseclist-reference, en-US, erpscan-com, ssrf, java, auth-bypass, http, privilege-escalation, novel-technique, owasp-a01-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:40:00+00:00"

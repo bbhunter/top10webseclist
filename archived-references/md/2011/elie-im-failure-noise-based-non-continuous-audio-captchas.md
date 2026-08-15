@@ -3,7 +3,7 @@ type: Article
 title: The failure of noise-based non-continuous audio captchas
 description: "An S&P 2011 paper presenting a generic pipeline that breaks audio CAPTCHAs built from non-continuous speech, combining audio processing with machine learning. The authors report success against every popular scheme of the period, including Microsoft's and Yahoo's. Only the abstract is archived here; the paper and slides remain as PDFs on the publisher's CDN."
 resource: "https://elie.im/publication/the-failure-of-noise-based-non-continuous-audio-captchas"
-tags: [article, webseclist-reference, en, elie-net, auth-bypass, measurement-study, mitigation, novel-technique]
+tags: [article, webseclist-reference, en, elie-net, auth-bypass, measurement-study, mitigation, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:10:05+00:00"

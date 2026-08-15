@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Timing Attacks Have Never Been So Practical: Advanced Cross-Site Search Attacks"
 description: "Cross-site search asks a victim's logged-in service a boolean question with a cross-origin request and reads the answer from response time, since the same-origin policy hides the body. Where a reflected parameter inflates the response it is easy; otherwise the browser-based variant caches responses once and re-times them from cache, and second-order attacks plant match-all and inflating records so the empty answer becomes the larger one. Gmail names and card digits recovered."
 resource: "https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf"
-tags: [whitepaper, webseclist-reference, xsleak, timing-attack, side-channel, info-leak, same-origin-policy, cache, deanonymization]
+tags: [whitepaper, webseclist-reference, xsleak, timing-attack, side-channel, info-leak, same-origin-policy, cache, deanonymization, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T16:05:35+00:00"

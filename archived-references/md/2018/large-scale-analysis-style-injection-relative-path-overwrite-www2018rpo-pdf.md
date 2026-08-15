@@ -3,7 +3,7 @@ type: Whitepaper
 title: Large-Scale Analysis of Style Injection by Relative Path Overwrite - www2018rpo_paper.pdf
 description: Relative Path Overwrite makes a page load itself as its own stylesheet by exploiting the different ways browsers and servers resolve relative paths, so a plain text injection becomes CSS injection with no script sink needed. A crawl of the Alexa Top 10,000 found about 9 percent of sites with a vulnerable page, a third of those exploitable, enabling scriptless secret exfiltration.
 resource: "https://sajjadium.github.io/files/www2018rpo_paper.pdf"
-tags: [whitepaper, webseclist-reference, css-injection, css, url-parsing, info-leak, injection, large-scale-scan, measurement-study, prior-art-extension]
+tags: [whitepaper, webseclist-reference, css-injection, css, url-parsing, info-leak, injection, large-scale-scan, measurement-study, prior-art-extension, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:36:19+00:00"

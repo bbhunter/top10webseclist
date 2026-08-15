@@ -3,7 +3,7 @@ type: Article
 title: "Blind trust: what is hidden behind the process of creating your PDF file?"
 description: "An audit of seven HTML-to-PDF libraries showing that attacker-supplied HTML, CSS or SVG crosses a trust boundary inside the renderer: path traversal embeds private server files into the returned PDF, image and stylesheet URLs give blind SSRF into internal networks, a destructor chain reached via unserialize deletes arbitrary files, and crafted data URIs pin a CPU core."
 resource: "https://swarm.ptsecurity.com/blind-trust-what-is-hidden-behind-the-process-of-creating-your-pdf-file/"
-tags: [article, webseclist-reference, en-US, pt-swarm, path-traversal, ssrf, deserialization, gadget-chain, filter-bypass, algorithmic-complexity, dos, info-leak, pdf, php]
+tags: [article, webseclist-reference, en-US, pt-swarm, path-traversal, ssrf, deserialization, gadget-chain, filter-bypass, algorithmic-complexity, dos, info-leak, pdf, php, owasp-a01-2021, owasp-a04-2021, owasp-a05-2021, owasp-a08-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:29+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: In GUID We Trust
 description: Version 1 UUIDs encode a timestamp, a constant clock sequence and a MAC-derived node ID instead of random data. An attacker who obtains one GUID from an account they control can recover those fields and enumerate every GUID the server could have generated around a victim password reset, guessing the token and taking over the account.
 resource: "https://www.intruder.io/research/in-guid-we-trust"
-tags: [article, webseclist-reference, en, intruder-io, auth-bypass, info-leak, race-condition, tooling, prior-art-extension, case-study, bug-bounty]
+tags: [article, webseclist-reference, en, intruder-io, auth-bypass, info-leak, race-condition, tooling, prior-art-extension, case-study, bug-bounty, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:25+00:00"

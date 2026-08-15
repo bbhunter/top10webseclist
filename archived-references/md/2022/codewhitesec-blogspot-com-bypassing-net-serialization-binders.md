@@ -3,7 +3,7 @@ type: Article
 title: Bypassing .NET Serialization Binders
 description: "A .NET SerializationBinder that validates type names as strings, or returns null when it cannot resolve one, can be bypassed: BinaryFormatter then falls back to its own resolver. An assembly-qualified name parsed differently by binder and runtime restores blocked gadget types, giving remote code execution in DevExpress (CVE-2022-28684) and Exchange (CVE-2022-23277)."
 resource: "https://codewhitesec.blogspot.com/2022/06/bypassing-dotnet-serialization-binders.html"
-tags: [article, webseclist-reference, codewhitesec-blogspot-com, deserialization, gadget-chain, filter-bypass, parser-differential, rce, dotnet, cve, case-study]
+tags: [article, webseclist-reference, codewhitesec-blogspot-com, deserialization, gadget-chain, filter-bypass, parser-differential, rce, dotnet, cve, case-study, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:07:21+00:00"

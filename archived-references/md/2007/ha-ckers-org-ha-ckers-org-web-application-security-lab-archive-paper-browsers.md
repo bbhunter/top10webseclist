@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab - Archive » Paper on Hacking Intranets Using Websites (Not Web Browsers)
 description: "Pointer post announcing RSnake's SecTheory paper on hacking intranets with websites rather than browsers: the web server, not the victim's browser, is coerced into reaching internal hosts, reusing the browser-based intranet techniques server-side. The paper itself is hosted off-site and is not archived here."
 resource: "http://ha.ckers.org/blog/20070827/paper-on-hacking-intranets-using-websites-not-web-browsers/"
-tags: [article, webseclist-reference, ha-ckers-org, ssrf, abuse-of-functionality, injection, case-study, prior-art-extension]
+tags: [article, webseclist-reference, ha-ckers-org, ssrf, abuse-of-functionality, injection, case-study, prior-art-extension, owasp-a03-2021, owasp-a04-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:41+00:00"

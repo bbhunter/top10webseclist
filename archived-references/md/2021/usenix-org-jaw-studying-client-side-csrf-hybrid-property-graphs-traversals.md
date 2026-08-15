@@ -3,7 +3,7 @@ type: Article
 title: "JAW: Studying Client-side CSRF with Hybrid Property Graphs and Declarative Traversals"
 description: "Client-side CSRF is a forged request built by the page's own JavaScript from attacker-controlled inputs such as the URL, so it evades defences aimed at classic CSRF. JAW builds hybrid property graphs of JavaScript applications and runs declarative traversals over them, uncovering 12,701 forgeable requests across 87 applications and exploits against seven."
 resource: "https://www.usenix.org/conference/usenixsecurity21/presentation/khodayari"
-tags: [article, webseclist-reference, en, usenix-org, csrf, dom, javascript, static-analysis, large-scale-scan, tooling, measurement-study]
+tags: [article, webseclist-reference, en, usenix-org, csrf, dom, javascript, static-analysis, large-scale-scan, tooling, measurement-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:24+00:00"

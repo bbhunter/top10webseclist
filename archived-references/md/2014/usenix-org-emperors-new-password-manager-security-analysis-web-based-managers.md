@@ -3,7 +3,7 @@ type: Article
 title: "The Emperor’s New Password Manager: Security Analysis of Web-based Password Managers"
 description: "A security analysis of five browser-based password managers, grouping their weaknesses into bookmarklet, web, authorization and user interface flaws. In four of the five, chained mistakes such as CSRF, XSS and broken one-time-password or shared-password logic let an attacker recover a victim's stored credentials for arbitrary sites."
 resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/li_zhiwei"
-tags: [article, webseclist-reference, en, usenix-org, auth-bypass, csrf, xss, browser-extension, same-origin-policy, info-leak, case-study, defence]
+tags: [article, webseclist-reference, en, usenix-org, auth-bypass, csrf, xss, browser-extension, same-origin-policy, info-leak, case-study, defence, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:03+00:00"

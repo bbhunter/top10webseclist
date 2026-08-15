@@ -3,7 +3,7 @@ type: Article
 title: "Finding All Cross-Site Needles in the DOM Stack: A Comprehensive Methodology for the Automatic XS-Leak Detection in Web Browsers"
 description: "AutoLeak turns a page's runtime DOM into a directed graph in each of two user states and diffs the two graphs, enumerating every property and object a cross-origin attacker can observe. Across 151,776 generated test cases in Chrome, Firefox and Safari it found up to 8,403 leak techniques per case, five new XS-Leak classes that detect HTTP response headers cross-site, and leaks on 20 of 24 top sites tested."
 resource: "https://casa.rub.de/en/research/publications/detail/finding-all-cross-site-needles-in-the-dom-stack-a-comprehensive-methodology-for-the-automatic-xs-leak-detection-in-web-browsers"
-tags: [article, webseclist-reference, en-GB, casa-cyber-security-in-the-age-of-large-, xsleak, side-channel, info-leak, dom, same-origin-policy, http, tooling, large-scale-scan, measurement-study, novel-technique]
+tags: [article, webseclist-reference, en-GB, casa-cyber-security-in-the-age-of-large-, xsleak, side-channel, info-leak, dom, same-origin-policy, http, tooling, large-scale-scan, measurement-study, novel-technique, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:14+00:00"

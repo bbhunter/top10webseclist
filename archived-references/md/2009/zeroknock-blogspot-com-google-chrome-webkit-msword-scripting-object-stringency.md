@@ -3,7 +3,7 @@ type: Article
 title: Google Chrome/ WebKit - MSWord Scripting Object XSS Payload Execution Bug and Random CLSID Stringency
 description: "Chrome and WebKit execute the URL passed in an OBJECT element's PARAM value, with or without a CLSID, even though ActiveX class identifiers mean nothing outside IE. A javascript: URI in param name=\"url\" therefore fires as XSS. The post records Chrome's response attributing it to URL prefetching of the data/movie/src param names."
 resource: "https://zeroknock.blogspot.com/2009/12/google-chrome-webkit-msword-scripting.html"
-tags: [article, webseclist-reference, zeroknock-blogspot-com, activex, xss, javascript, dom, filter-bypass, url-parsing, novel-technique]
+tags: [article, webseclist-reference, zeroknock-blogspot-com, activex, xss, javascript, dom, filter-bypass, url-parsing, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:08:08+00:00"

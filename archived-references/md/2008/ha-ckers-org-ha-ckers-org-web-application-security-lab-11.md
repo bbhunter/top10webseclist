@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab
 description: "A joke turned threat model: a private religion whose only joining requirement is indicating assent could be joined by hundreds of thousands of people through image-triggered cross-site request forgery to a form on MySpace, without any of them knowing. Ends on the serious version, where a forced request gets the victim arrested in China or accused of fetching illegal material."
 resource: "http://ha.ckers.org/blog/20080403/join-a-religion-via-csrf/"
-tags: [article, webseclist-reference, ha-ckers-org, csrf, abuse-of-functionality, http, case-study]
+tags: [article, webseclist-reference, ha-ckers-org, csrf, abuse-of-functionality, http, case-study, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:45+00:00"

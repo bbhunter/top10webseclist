@@ -3,7 +3,7 @@ type: Article
 title: "Crack in Internet's foundation of trust allows HTTPS session hijacking"
 description: Reports the CRIME attack by Juliano Rizzo and Thai Duong, which recovers HTTPS session cookies when TLS compression or SPDY is enabled. Attacker-controlled plaintext is mixed with the secret cookie and the resulting ciphertext length is watched, deducing the secret byte by byte in minutes. Chrome, Firefox and affected sites disabled compression in response.
 resource: "https://web.archive.org/web/20170903113359/http://arstechnica.com/security/2012/09/crime-hijacks-https-sessions/"
-tags: [article, webseclist-reference, en-us, ars-technica, tls, https, side-channel, cookie, info-leak, novel-technique]
+tags: [article, webseclist-reference, en-us, ars-technica, tls, https, side-channel, cookie, info-leak, novel-technique, owasp-a02-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:16:47+00:00"

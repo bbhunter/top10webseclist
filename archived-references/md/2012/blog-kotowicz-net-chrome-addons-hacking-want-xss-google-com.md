@@ -3,7 +3,7 @@ type: Article
 title: "Chrome addons hacking: want XSS on google.com?"
 description: "A Chrome extension with 196 users linkified text in Google Reader by rewriting node.innerHTML on every DOMNodeInserted event. Searching Reader for a string that starts http://codereview.chromium.org/ followed by an onmouseover payload gets it reinserted as HTML, yielding script execution on www.google.com that the page itself cannot defend against."
 resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/02/chrome-addons-hacking-want-xss-on.html"
-tags: [article, webseclist-reference, blog-kotowicz-net, browser-extension, xss, dom, javascript, sanitizer-bypass, sop-bypass, case-study]
+tags: [article, webseclist-reference, blog-kotowicz-net, browser-extension, xss, dom, javascript, sanitizer-bypass, sop-bypass, case-study, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:41+00:00"

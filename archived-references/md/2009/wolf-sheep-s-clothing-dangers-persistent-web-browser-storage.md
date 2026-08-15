@@ -3,7 +3,7 @@ type: Whitepaper
 title: "A Wolf in Sheep's Clothing: The Dangers of Persistent Web Browser Storage"
 description: "A survey of persistent browser storage — HTTP cookies, Flash Local Shared Objects, Google Gears and HTML5 database storage — and the abuse each enables. It introduces client-side SQL injection (csSQLi): XSS on a site lets an attacker open and query the local SQLite database Gears or HTML5 keeps, demonstrated against Paymo.biz, plus persistent client-side XSS held in a site's own search history."
 resource: "https://blackhat.com/presentations/bh-dc-09/Sutton/blackhat-dc-09-Sutton-persistent-storage.pdf"
-tags: [whitepaper, webseclist-reference, flash, database, sqli, xss, cookie, info-leak, javascript, novel-technique]
+tags: [whitepaper, webseclist-reference, flash, database, sqli, xss, cookie, info-leak, javascript, novel-technique, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:28+00:00"

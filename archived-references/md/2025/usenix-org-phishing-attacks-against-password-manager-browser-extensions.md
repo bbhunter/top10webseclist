@@ -3,7 +3,7 @@ type: Article
 title: Phishing Attacks against Password Manager Browser Extensions
 description: Password manager extension popups are painted over the page viewport and look no different from page content, so a site the attacker controls can render a convincing replica of a locked password manager and capture the master password typed into it. In a simulation with 29,800 participants, more than 30 percent of targeted users entered it.
 resource: "https://www.usenix.org/conference/usenixsecurity25/presentation/anliker"
-tags: [article, webseclist-reference, en, usenix-org, ui-redress, browser-extension, measurement-study, case-study, novel-technique]
+tags: [article, webseclist-reference, en, usenix-org, ui-redress, browser-extension, measurement-study, case-study, novel-technique, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:36+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "J U M P E R Z . N E T - Stealing Information Using Anti-DNS Pinning ( DNS Rebinding ) : Online Demonstration"
 description: "Kanatoko's live anti-DNS-pinning demo: a browser is made to resolve the attacker's hostname to a private RFC1918 address, read the intranet page and post it back to jumperz.net. Lists eight tested IE/Firefox/Opera builds. The demo form itself, including its target endpoint and 127.0.0.1 default, was dropped in conversion."
 resource: "http://www.jumperz.net/index.php?i=2&a=1&b=7"
-tags: [article, webseclist-reference, jumperz-net, dns-rebinding, dns, sop-bypass, same-origin-policy, info-leak, tooling]
+tags: [article, webseclist-reference, jumperz-net, dns-rebinding, dns, sop-bypass, same-origin-policy, info-leak, tooling, owasp-a01-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:03+00:00"

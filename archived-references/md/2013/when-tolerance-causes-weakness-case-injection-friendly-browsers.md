@@ -3,7 +3,7 @@ type: Whitepaper
 title: "When Tolerance Causes Weakness: The Case of Injection-Friendly Browsers"
 description: "An off-path attacker running only a sandboxed script recovers the randomised client port by SYN-eliminating candidates and timing the script's connection attempts. Browsers treat a malformed HTTP response as a body with a default header, leaking back the guessed server sequence number. Port prediction worked on 93% of the Alexa top 1024; full injection succeeded about 35% of the time."
 resource: "https://archives.iw3c2.org/www2013/proceedings/p435.pdf"
-tags: [whitepaper, webseclist-reference, http, cache-poisoning, same-origin-policy, side-channel]
+tags: [whitepaper, webseclist-reference, http, cache-poisoning, same-origin-policy, side-channel, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:59+00:00"

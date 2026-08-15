@@ -3,7 +3,7 @@ type: Article
 title: CODE WHITE | .NET Remoting Revisited
 description: .NET Remoting publishes objects over HTTP, named pipes and TCP and deserialises client messages with BinaryFormatter or SoapFormatter. The post shows its security options failing, and how an ObjRef reference, a forged Hashtable comparer or a lease sponsor makes a server deserialise attacker data or call back to an attacker host for code execution.
 resource: "https://code-white.com/blog/2022-01-dotnet-remoting-revisited/"
-tags: [article, webseclist-reference, en-us, code-white, deserialization, gadget-chain, rce, dotnet, toctou, auth-bypass, tooling]
+tags: [article, webseclist-reference, en-us, code-white, deserialization, gadget-chain, rce, dotnet, toctou, auth-bypass, tooling, owasp-a01-2021, owasp-a04-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T00:27:59+00:00"

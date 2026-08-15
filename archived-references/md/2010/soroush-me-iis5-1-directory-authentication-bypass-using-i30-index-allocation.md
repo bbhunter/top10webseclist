@@ -3,7 +3,7 @@ type: Article
 title: "IIS5.1 Directory Authentication Bypass by using “:$I30:$Index_Allocation”"
 description: "Appending the NTFS alternate data stream name ':$I30:$INDEX_ALLOCATION' to a directory in an IIS 5.1 URL reaches the same folder while defeating directory-based authentication, because IIS matches only the literal directory name. IIS 6 and 7 reject a colon before the query string, and '::$DATA' is already blocked in 5.1."
 resource: "https://soroush.me/blog/iis5-1-directory-authentication-bypass-by-using-i30index-allocation"
-tags: [article, webseclist-reference, en, soroush-me, auth-bypass, filter-bypass, path-traversal, url-parsing, parser-differential, novel-technique]
+tags: [article, webseclist-reference, en, soroush-me, auth-bypass, filter-bypass, path-traversal, url-parsing, parser-differential, novel-technique, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:25+00:00"

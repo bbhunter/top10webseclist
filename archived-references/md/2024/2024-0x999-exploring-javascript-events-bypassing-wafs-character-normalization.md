@@ -3,7 +3,7 @@ type: Article
 title: Exploring Javascript events & Bypassing WAFs via character normalization
 description: Catalogues JavaScript event handlers that fire with no user interaction, then reaches arbitrary script execution from them without parentheses or backticks by overwriting toString or an Error name. It bypasses eight major WAFs by prefixing a payload with encodings the WAF normalises but the application does not.
 resource: "https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization"
-tags: [article, webseclist-reference, en, 0x999, waf-bypass, xss, filter-bypass, encoding, parser-differential, javascript, unicode, sqli, novel-technique]
+tags: [article, webseclist-reference, en, 0x999, waf-bypass, xss, filter-bypass, encoding, parser-differential, javascript, unicode, sqli, novel-technique, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:16+00:00"

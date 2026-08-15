@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Time for ACKrobatics: Abusing TCP Timestamps to Improve Remote Timing Attacks"
 description: "Uses the server's own TCP timestamp in its ACK as the clock for a remote timing attack, so client-side jitter drops out; coalescing many pipelined requests into one segment multiplies the measured runtime. Resolution goes from 25 microseconds to 5, and to 750 ns where microsecond timestamps are on, cutting 10k requests to 200, and the attack distributes across hosts. A scan of 880k servers finds 88% with timestamps enabled; demos hit Lucky 13 and OpenSSH."
 resource: "https://i.blackhat.com/BH-USA-26/Presentations/USA-26-Vanderlinden-Time-for-ACKrobatics.pdf"
-tags: [whitepaper, webseclist-reference, timing-attack, side-channel, tls, http, large-scale-scan, user-enumeration, cve]
+tags: [whitepaper, webseclist-reference, timing-attack, side-channel, tls, http, large-scale-scan, user-enumeration, cve, owasp-a02-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:05:58+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Intranet Hacking (Take 2) for BH USA 2007
 description: "Announces the Black Hat USA 2007 talk arguing that disabling JavaScript no longer protects a browser: intranet hacking, port scanning, history stealing and login detection all have no-script variants."
 resource: "https://jeremiahgrossman.blogspot.com/2007/05/intranet-hacking-take-2-for-bh-usa-2007.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, dns-rebinding, xsleak, info-leak, csrf, xss, filter-bypass, encoding, javascript]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, dns-rebinding, xsleak, info-leak, csrf, xss, filter-bypass, encoding, javascript, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:59+00:00"

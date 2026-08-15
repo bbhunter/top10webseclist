@@ -3,7 +3,7 @@ type: Whitepaper
 title: "ReactAppScan: Mining React Application Vulnerabilities via Component Graph"
 description: "Existing web vulnerability scanners do not model React Data Flow, the indirect passing of data between components via props and state, and CodeQL's coarse object representation misses it as well. This work builds a Component Graph by abstract interpretation over React component lifecycles, then queries source-to-sink paths - requests reaching sinks such as dangerouslySetInnerHTML - including flows that span client and server. It reports 61 zero-day vulnerabilities in real applications."
 resource: "https://www.yinzhicao.org/reactappscan/reactappscan.pdf"
-tags: [whitepaper, webseclist-reference, react, javascript, static-analysis, xss, tooling, detection]
+tags: [whitepaper, webseclist-reference, react, javascript, static-analysis, xss, tooling, detection, owasp-a03-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:37:02+00:00"

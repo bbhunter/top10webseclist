@@ -3,7 +3,7 @@ type: Article
 title: "Secret fragments: Remote code execution on Symfony based websites"
 description: "When a Symfony app exposes the ESI /_fragment endpoint and its secret key is default, guessable, leaked, or brute-forceable, an attacker can forge the HMAC that signs a /_fragment URL. A signed request can call any function or method, so system() or a Yaml Inline::parse php/object deserialization gadget yields remote code execution."
 resource: "https://www.ambionics.io/blog/symfony-secret-fragment"
-tags: [article, webseclist-reference, en, blog-lexfo-fr, rce, deserialization, gadget-chain, symfony, php, cve, info-leak, attack-chain]
+tags: [article, webseclist-reference, en, blog-lexfo-fr, rce, deserialization, gadget-chain, symfony, php, cve, info-leak, attack-chain, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:00:37+00:00"
