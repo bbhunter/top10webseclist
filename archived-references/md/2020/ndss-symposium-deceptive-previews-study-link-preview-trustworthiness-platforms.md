@@ -72,23 +72,3 @@ We designed a set of experiments for 20 social media platforms including social 
  [Paper](https://www.ndss-symposium.org/wp-content/uploads/2020/02/24252-paper.pdf)
 
  [Video](https://www.youtube.com/watch?v=uUfd10QLbec&list=PLfUWWM-POgQv0nEidt3oGK-H1XIyHA4uK&index=4&t=0s)
-
-## View More Papers
-
-### [ SurfingAttack: Interactive Hidden Attack on Voice Assistants Using Ultrasonic... ](https://www.ndss-symposium.org/ndss-paper/surfingattack-interactive-hidden-attack-on-voice-assistants-using-ultrasonic-guided-waves/)
-
- Qiben Yan (Michigan State University), Kehai Liu (Chinese Academy of Sciences), Qin Zhou (University of Nebraska-Lincoln), Hanqing Guo (Michigan State University), Ning Zhang (Washington University in St. Louis)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/surfingattack-interactive-hidden-attack-on-voice-assistants-using-ultrasonic-guided-waves/)
-
-### [ Overcoming the “Evil Twins” Attack: Lessons Learned from the... ](https://www.ndss-symposium.org/ndss-paper/6126/)
-
- Paul Forney, CISSP-ISSAP, CSSLP, CCSP, GREM
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/6126/)
-
-### [ µRAI: Securing Embedded Systems with Return Address Integrity ](https://www.ndss-symposium.org/ndss-paper/murai-securing-embedded-systems-with-return-address-integrity/)
-
- Naif Saleh Almakhdhub (Purdue University and King Saud University), Abraham A. Clements (Sandia National Laboratories), Saurabh Bagchi (Purdue University), Mathias Payer (EPFL)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/murai-securing-embedded-systems-with-return-address-integrity/)

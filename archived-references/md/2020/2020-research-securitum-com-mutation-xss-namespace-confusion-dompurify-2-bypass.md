@@ -364,5 +364,3 @@ div.innerHTML = DOMPurify.sanitize(html)
 Is prone to mutation XSS-es by design and it’s just a matter of time to find another instances. I strongly suggest that you pass `RETURN_DOM` or `RETURN_DOM_FRAGMENT` options to DOMPurify, so that the serialize-parse roundtrip is not executed.
 
 As a final note, I found the DOMPurify bypass when preparing materials for my upcoming remote training called **XSS Academy**. While it hasn’t been officially announced yet, details (including agenda) will be published within two weeks. I will teach about interesting XSS tricks with lots of emphasis on breaking parsers and sanitizers. If you already know that you’re interested, please contact us on [training@securitum.com](mailto:training@securitum.com) and we’ll have your seat booked!
-
-Tagged: [dompurify](https://research.securitum.com/tag/dompurify/), [XSS](https://research.securitum.com/tag/xss/)

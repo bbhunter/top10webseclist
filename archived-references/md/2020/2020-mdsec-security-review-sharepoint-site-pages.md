@@ -12,13 +12,13 @@ sources:
   - id: original
     resource: "https://www.mdsec.co.uk/2020/03/a-security-review-of-sharepoint-site-pages/"
     title: A Security Review of SharePoint Site Pages
-    author: @mdseclabs
+    author: Soroush Dalili
     last_modified: 2020-03-10
   - id: capture
     resource: "https://web.archive.org/web/20201123165550/https://www.mdsec.co.uk/2020/03/a-security-review-of-sharepoint-site-pages/"
 also_at: []
 authors:
-  - @mdseclabs
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2020.md:45"
@@ -46,7 +46,7 @@ translation_of: ""
 
 # A Security Review of SharePoint Site Pages
 
-**A Security Review of SharePoint Site Pages** - @mdseclabs, MDSec.
+**A Security Review of SharePoint Site Pages** - Soroush Dalili, MDSec.
 
 - Published: 2020-03-10
 - Original: <https://www.mdsec.co.uk/2020/03/a-security-review-of-sharepoint-site-pages/>
@@ -288,9 +288,3 @@ It is recommended to read more about *SPVirtualPathProvider* if you are interest
 - [Stack Exchange Q&A](https://sharepoint.stackexchange.com/questions/79514/difference-between-pageparserpath-and-safecontrol)
 
 This blog post was written by Soroush Dalili.
-
- ![Avatar](https://www.mdsec.co.uk/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png)
-
- written by
-
-#### Dominic Chell

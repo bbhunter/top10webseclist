@@ -363,13 +363,3 @@ The malformed chunk was ignored by WAF. Even though it contains the straightforw
 # Conclusion
 
 The article describes some different approaches to bypass Imperva WAF solution. The demonstrated techniques might be utilised in any methodology which focuses on WAF evasion.
-
--  [WAF](https://blog.isec.pl/tag/waf/)
--  [Bypass](https://blog.isec.pl/tag/bypass/)
--  [Vulnerability](https://blog.isec.pl/tag/vulnerability/)
-
- 
-
-####  [Paweł Hałdrzyński](https://blog.isec.pl/author/ph/)
-
--  

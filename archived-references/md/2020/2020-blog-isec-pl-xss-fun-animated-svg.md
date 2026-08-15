@@ -211,14 +211,3 @@ PHN2Zz48YW5pbWF0ZSB4bGluazpocmVmPSN4c3MgYXR0cmlidXRlTmFtZT1ocmVmICB2YWx1ZXM9IgEC
 **Summary**
 
 In this article, we discovered that SVG specification conceals a lots of potential XSS attack vectors. Even a simple attribute `values` may lead to multiple malicious payloads, which helps bypass WAFs. The presented vectors were tested on both Firefox and Chrome.
-
--  [XSS](https://blog.isec.pl/tag/xss/)
--  [SVG](https://blog.isec.pl/tag/svg/)
--  [WAF](https://blog.isec.pl/tag/waf/)
--  [JavaScript](https://blog.isec.pl/tag/javascript/)
-
- 
-
-####  [Paweł Hałdrzyński](https://blog.isec.pl/author/ph/)
-
--  

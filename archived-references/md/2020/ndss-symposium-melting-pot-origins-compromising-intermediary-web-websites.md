@@ -72,23 +72,3 @@ Intermediary web services such as web proxies, web translators, and web archives
  [Paper](https://www.ndss-symposium.org/wp-content/uploads/2020/02/24140-paper.pdf)
 
  [Video](https://www.youtube.com/watch?v=uhA_KGTQXP0&list=PLfUWWM-POgQv0nEidt3oGK-H1XIyHA4uK&index=3&t=0s)
-
-## View More Papers
-
-### [ Metamorph: Injecting Inaudible Commands into Over-the-air Voice Controlled Systems ](https://www.ndss-symposium.org/ndss-paper/metamorph-injecting-inaudible-commands-into-over-the-air-voice-controlled-systems/)
-
- Tao Chen (City University of Hong Kong), Longfei Shangguan (Microsoft), Zhenjiang Li (City University of Hong Kong), Kyle Jamieson (Princeton University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/metamorph-injecting-inaudible-commands-into-over-the-air-voice-controlled-systems/)
-
-### [ MACAO: A Maliciously-Secure and Client-Efficient Active ORAM Framework ](https://www.ndss-symposium.org/ndss-paper/macao-a-maliciously-secure-and-client-efficient-active-oram-framework/)
-
- Thang Hoang (University of South Florida), Jorge Guajardo (Robert Bosch Research and Technology Center), Attila Yavuz (University of South Florida)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/macao-a-maliciously-secure-and-client-efficient-active-oram-framework/)
-
-### [ Withdrawing the BGP Re-Routing Curtain: Understanding the Security Impact... ](https://www.ndss-symposium.org/ndss-paper/withdrawing-the-bgp-re-routing-curtain-understanding-the-security-impact-of-bgp-poisoning-through-real-world-measurements/)
-
- Jared M. Smith (University of Tennessee, Knoxville), Kyle Birkeland (University of Tennessee, Knoxville), Tyler McDaniel (University of Tennessee, Knoxville), Max Schuchard (University of Tennessee, Knoxville)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/withdrawing-the-bgp-re-routing-curtain-understanding-the-security-impact-of-bgp-poisoning-through-real-world-measurements/)

@@ -675,7 +675,3 @@ Web caches have escaped serious scrutiny for years. The sheer diversity of cachi
 Alongside [HTTP Request Smuggling](https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn), this is another example of flaws arising from complex interactions between separate systems that largely evade detection during both static analysis and white-box testing, then pop up in the production environment.
 
 The only realistic way to achieve resilience against this attack is to acknowledge that web caching redefines what's exploitable, and treat 'unexploitable' vulnerabilities as genuine security issues.
-
- [ web cache poisoning ](https://portswigger.net/research/web-cache-poisoning) [ James Favourites ](https://portswigger.net/research/james-kettle) [ Presentations ](https://portswigger.net/research/presentations) [ Black Hat ](https://portswigger.net/research/black-hat)
-
-[Back to all articles](https://portswigger.net/research/articles)

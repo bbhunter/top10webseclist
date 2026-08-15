@@ -84,23 +84,3 @@ In this work, we examine the CDN's request-forwarding behaviors across six well-
  [Paper](https://www.ndss-symposium.org/wp-content/uploads/2020/02/24411-paper.pdf)
 
  [Video](https://www.youtube.com/watch?v=exPFJfIGNG8&list=PLfUWWM-POgQsE9H5ed-l-DwdXLXDWPm5Y&index=5&t=0s)
-
-## View More Papers
-
-### [ OcuLock: Exploring Human Visual System for Authentication in Virtual... ](https://www.ndss-symposium.org/ndss-paper/oculock-exploring-human-visual-system-for-authentication-in-virtual-reality-head-mounted-display/)
-
- Shiqing Luo (Georgia State University), Anh Nguyen (Georgia State University), Chen Song (San Diego State University), Feng Lin (Zhejiang University), Wenyao Xu (SUNY Buffalo), Zhisheng Yan (Georgia State University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/oculock-exploring-human-visual-system-for-authentication-in-virtual-reality-head-mounted-display/)
-
-### [ µRAI: Securing Embedded Systems with Return Address Integrity ](https://www.ndss-symposium.org/ndss-paper/murai-securing-embedded-systems-with-return-address-integrity/)
-
- Naif Saleh Almakhdhub (Purdue University and King Saud University), Abraham A. Clements (Sandia National Laboratories), Saurabh Bagchi (Purdue University), Mathias Payer (EPFL)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/murai-securing-embedded-systems-with-return-address-integrity/)
-
-### [ DeepBinDiff: Learning Program-Wide Code Representations for Binary Diffing ](https://www.ndss-symposium.org/ndss-paper/deepbindiff-learning-program-wide-code-representations-for-binary-diffing/)
-
- Yue Duan (Cornell University), Xuezixiang Li (UC Riverside), Jinghan Wang (UC Riverside), Heng Yin (UC Riverside)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/deepbindiff-learning-program-wide-code-representations-for-binary-diffing/)

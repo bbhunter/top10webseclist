@@ -265,7 +265,3 @@ But you may have noticed this requires a setTimeout to cause a delay in order fo
 alert(a.b.c.d)
 </script>
 `
-
- [ DOM Clobbering ](https://portswigger.net/research/dom-clobbering) [ DOM ](https://portswigger.net/research/dom) [ HTML ](https://portswigger.net/research/html) [ Cross Site Scripting ](https://portswigger.net/research/cross-site-scripting)
-
-[Back to all articles](https://portswigger.net/research/articles)

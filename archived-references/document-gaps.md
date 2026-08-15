@@ -42,7 +42,7 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-42 reference(s) unresolved. 33 of them already have their raw bytes stored.
+48 reference(s) unresolved. 39 of them already have their raw bytes stored.
 
 ## https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization
 
@@ -75,6 +75,14 @@ or fix the route and re-run.
 - Reason: faulty capture: the document is truncated mid-listing, stopping at " const svgReg = /" right after "As long as the SVG file matches the following regex", so the SVG payload, the Next.js material and the disclosure are absent; re-acquire the article (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2022.md:50`
+
+## https://blog.isec.pl/xss-fun-with-animated-svg/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: every ASCII 01-32 character was stripped from the printed payloads, which is precisely what the article demonstrates - the base64 block at line 208 decodes to the intended payload and proves the loss - and the HTML-entity example at line 190 is now byte-identical to the plain one at line 172, so it silently illustrates nothing; re-acquire (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2020.md:56`
 
 ## https://blog.pspaul.de/posts/bench-press-leaking-text-nodes-with-css/
 
@@ -220,6 +228,14 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2026-ai.md:81`
 
+## https://i.blackhat.com/USA-20/Wednesday/us-20-Klein-HTTP-Request-Smuggling-In-2020-New-Variants-New-Defenses-And-New-Challenges.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: the final extracted page is decoded binary noise published as prose, and text was dropped mid-slide throughout so sentences begin inside a word (page 13 opens "-Length header.-Length headers?"), with the slide titles for Variants 1 and 2 missing entirely while the status slide reports on all five; inter-word spaces are also lost; the entry is additionally recorded as type Whitepaper when the document is the Black Hat USA 2020 slide deck; re-extract and correct the kind (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2020.md:22`
+
 ## https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails%20-%20LGMT%20v2.pdf
 
 - Outcome: `broken-capture`
@@ -252,6 +268,14 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2025.md:23`
 
+## https://nathandavison.com/blog/exploiting-email-address-parsing-with-aws-ses
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the article is entirely about how parsers read crafted email addresses, and Cloudflare email obfuscation replaced EVERY address with the placeholder [email protected] - 66 occurrences, including the whole per-language results table, so the document no longer contains its own subject; re-acquire from a source without Cloudflare email obfuscation, e.g. a Wayback snapshot (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2020.md:31`
+
 ## https://octagon.net/blog/2022/05/29/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution/
 
 - Outcome: `broken-capture`
@@ -259,6 +283,22 @@ or fix the route and re-run.
 - Reason: faulty capture: the HTML listing the argument depends on published EMPTY (lines 138-140 are a blank html fence) with a second empty promise at line 146, and none of the three figures the prose calls for were preserved; re-acquire the article (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2022.md:53`
+
+## https://research.securitum.com/mutation-xss-via-mathml-mutation-dompurify-2-0-17-bypass/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the WordPress Crayon highlighter raw DOM was captured instead of the code (the string crayon occurs 137 times, with toolbar labels such as Toggle Line Numbers and Copy published as content), and whole stretches of the ARTICLE are trapped inside those HTML lines rather than existing as prose, including the Usage of DOMPurify and Summary sections; the headline payload survives complete only inside the embedded markup; re-acquire (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2020.md:25`
+
+## https://research.securitum.com/the-curious-case-of-copy-paste/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: event-handler attributes were stripped out of the quoted payloads, provable because the same listing appears both whole and gutted (line 903 has "<img src=1 onerror=alert(1)>" where line 895 has "<img src=1"), and the Appendix cheat sheet - the article deliverable - carries ONLY the gutted form; the WordPress crayon widget markup was also published as prose on five lines up to 7,390 characters long; re-acquire (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2020.md:24`
 
 ## https://soroush.me/blog/mongodb-nosql-injection-with-aggregation-pipelines
 
@@ -339,6 +379,14 @@ or fix the route and re-run.
 - Reason: faulty capture: the cited URL now redirects to https://www.linkedin.com/top-content/?trk=article_not_found, so the archived document is that page rather than "How I used google dorks to find 0-days"; recapture from a Wayback snapshot of the original URL (reported 2026-08-14)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2016-17.md:48`
+
+## https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: exploit code is truncated at the payload inside fenced blocks - line 418 ends at "const html = <img src" and line 524 at "DOMPurify.sanitize(<img src" - so the handler that makes each example work is missing; the recorded title is also the site masthead where the document own title sits at body line 69 and in cited_title; re-acquire (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2020.md:70`
 
 ## https://www.usenix.org/events/woot10/tech/full_papers/Rizzo.pdf
 

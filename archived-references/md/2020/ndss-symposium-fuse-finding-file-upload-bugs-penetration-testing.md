@@ -72,23 +72,3 @@ An Unrestricted File Upload (UFU) vulnerability is a critical security threat th
  [Paper](https://www.ndss-symposium.org/wp-content/uploads/2020/02/23126-paper.pdf)
 
  [Video](https://www.youtube.com/watch?v=Ot0unJErC-g&list=PLfUWWM-POgQv0nEidt3oGK-H1XIyHA4uK&index=2&t=0s)
-
-## View More Papers
-
-### [ FlowPrint: Semi-Supervised Mobile-App Fingerprinting on Encrypted Network Traffic ](https://www.ndss-symposium.org/ndss-paper/flowprint-semi-supervised-mobile-app-fingerprinting-on-encrypted-network-traffic/)
-
- Thijs van Ede (University of Twente), Riccardo Bortolameotti (Bitdefender), Andrea Continella (UC Santa Barbara), Jingjing Ren (Northeastern University), Daniel J. Dubois (Northeastern University), Martina Lindorfer (TU Wien), David Choffnes (Northeastern University), Maarten van Steen (University of Twente), Andreas Peter (University of Twente)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/flowprint-semi-supervised-mobile-app-fingerprinting-on-encrypted-network-traffic/)
-
-### [ Compliance Cautions: Investigating Security Issues Associated with U.S. Digital-Security... ](https://www.ndss-symposium.org/ndss-paper/compliance-cautions-investigating-security-issues-associated-with-u-s-digital-security-standards/)
-
- Rock Stevens (University of Maryland), Josiah Dykstra (Independent Security Researcher), Wendy Knox Everette (Leviathan Security Group), James Chapman (Independent Security Researcher), Garrett Bladow (Dragos), Alexander Farmer (Independent Security Researcher), Kevin Halliday (University of Maryland), Michelle L. Mazurek (University of Maryland)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/compliance-cautions-investigating-security-issues-associated-with-u-s-digital-security-standards/)
-
-### [ On Using Application-Layer Middlebox Protocols for Peeking Behind NAT... ](https://www.ndss-symposium.org/ndss-paper/on-using-application-layer-middlebox-protocols-for-peeking-behind-nat-gateways/)
-
- Teemu Rytilahti (Ruhr University Bochum), Thorsten Holz (Ruhr University Bochum)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/on-using-application-layer-middlebox-protocols-for-peeking-behind-nat-gateways/)

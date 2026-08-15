@@ -88,11 +88,3 @@ The Web has become a platform in which applications rely on intricate interactio
 |  Date Deposited: |  29 Jul 2020 17:21 |   |
 |  Last Modified: |  29 Jul 2020 17:21 |   |
 |  URI: |  [https://publications.cispa.saarland/id/eprint/3164](https://publications.cispa.saarland/id/eprint/3164) |   |
-
-### Actions
-
- ASCII CitationMultiline CSVDublin CoreMETSJSONSimple MetadataEndNoteHTML CitationBibTeXOpenURL ContextObject in SpanMODSRDF+XMLRDF+N3RDF+N-TriplesAtomOpenURL ContextObjectReferMPEG-21 DIDLEP3 XMLReference Manager
-
-### Actions (login required)
-
-|  [![View Item](https://publications.cispa.saarland/style/images/action_view.png)](https://publications.cispa.saarland/cgi/users/home?screen=EPrint%3A%3AView&eprintid=3164) |  View Item |   |

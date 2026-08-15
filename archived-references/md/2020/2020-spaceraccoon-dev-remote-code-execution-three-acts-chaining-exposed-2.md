@@ -156,5 +156,3 @@ Hopefully, you don’t have to deal with that and can get a simple `curl` pingba
 By exposing the `/actuator/env` and `/actuator/restart` endpoints - pretty common in a development setting - a developer puts their application at risk of remote code execution. Of course, this wouldn’t be a problem if the application is run locally, but it’s not a stretch to imagine a careless developer putting it on a public IP during proptyping.
 
 A common theme running through this write-up and the associated write-ups is that developers can easily introduce severe vulnerabilities in their code without knowing it. Actuators and the H2 database are useful tools to speed up development and prototyping, but exposing them creates a remote code execution vulnerability by default.
-
- [web](https://spaceraccoon.dev/tags/web)

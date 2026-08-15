@@ -12,11 +12,10 @@ sources:
   - id: original
     resource: "https://speakerdeck.com/lmt_swallow/revisiting-redos-a-rough-idea-of-data-exfiltration-by-redos-and-side-channel-techniques"
     title: "Revisiting ReDoS: A Rough Idea of Data Exfiltration by ReDoS and Side-channel Techniques"
-    author: @speakerdeck, Takashi Yoneuchi
+    author: Takashi Yoneuchi
     last_modified: 2020-02-05
 also_at: []
 authors:
-  - @speakerdeck
   - Takashi Yoneuchi
 canonical_url: ""
 cited_by:
@@ -45,7 +44,7 @@ translation_of: ""
 
 # Revisiting ReDoS: A Rough Idea of Data Exfiltration by ReDoS and Side-channel Techniques
 
-**Revisiting ReDoS: A Rough Idea of Data Exfiltration by ReDoS and Side-channel Techniques** - @speakerdeck, Takashi Yoneuchi, Speaker Deck.
+**Revisiting ReDoS: A Rough Idea of Data Exfiltration by ReDoS and Side-channel Techniques** - Takashi Yoneuchi, Speaker Deck.
 
 - Published: 2020-02-05
 - Original: <https://speakerdeck.com/lmt_swallow/revisiting-redos-a-rough-idea-of-data-exfiltration-by-redos-and-side-channel-techniques>

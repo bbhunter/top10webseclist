@@ -829,6 +829,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the README's Citation block names all five authors - \"author={Wu, XiangFan and Ying, Lingyun and Chen, Guoqiang and Gu, Yacong and Qu, Haipeng}\". The archive recorded only the lab account \"XingTuLab\"."
   },
+  "https://github.com/chenjj/espoofer": {
+   "authors": [
+    "Jianjun Chen"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded the repo-owner handle \"chenjj\", which on its own is not a byline. The LICENSE states \"Copyright (c) 2019 Jianjun Chen\", corroborated by the tool's own citation block. Vern Paxson and Jian Jiang are co-authors of the PAPER rather than demonstrably of this tool, so they are not added."
+  },
   "https://github.com/greshake/llm-security": {
    "authors": [
     "Kai Greshake"
@@ -852,6 +860,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the README states \"Author: Yarden Porat ([@yarpo](https://github.com/yardenporat353)).\" The archive recorded only the GitHub handle \"yardenporat353\"."
+  },
+  "https://github.security.telekom.com/2020/05/smuggling-http-headers-through-reverse-proxies.html": {
+   "authors": [
+    "Robin Verton"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded the publisher, \"Telekom Security\". The closing line names the researcher: \"- **Robin Verton** ([@robinverton](https://twitter.com/RobinVerton))\". Simon Peters is thanked in the same sentence as having researched the topic alongside him, which is collaboration credit rather than authorship of this write-up, so he is not added."
   },
   "https://gitlab-com.gitlab.io/gl-security/security-tech-notes/security-research-tech-notes/devfile": {
    "authors": [
@@ -1107,6 +1123,14 @@
    "outcome": "archive",
    "reason": "Verified against the live article: this is the complete, intentionally short disclosure. It states the IIS path-normalization technique, affected browsers, example URL, and security implications."
   },
+  "https://lab.wallarm.com/blind-ssrf-exploitation": {
+   "authors": [
+    "@bo0om"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded [\"wlrmblog\", \"@Wallarm\"] - a CMS account and the publisher's social handle. The document's FIRST body line reads \"Author [@bo0om](https://twitter.com/i_bo0om)\", a handle the author publishes under. Emil Lerner is credited only for the 1u.ms service and is not added."
+  },
   "https://labs.detectify.com/2021/09/13/hacking-cloudkit-how-i-accidentally-deleted-your-apple-shortcuts": {
    "authors": [
     "Frans Rosén"
@@ -1201,6 +1225,30 @@
    "outcome": "archive",
    "reason": "The 2012 list cites this whitepaper as a bare footnote link, so the citation's own text is '1' and the PDF is image-only, leaving no title to read. Taken from the paper's cover page.",
    "title": "Bypassing CAPTCHAs by Impersonating CAPTCHA Providers"
+  },
+  "https://mdsec.co.uk/2020/01/code-injection-in-workflows-leading-to-sharepoint-rce-cve-2020-0646": {
+   "authors": [
+    "Soroush Dalili"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded the publisher, \"MDSec\", and the CMS byline in the body reads \"31/01/2020 | Author: Admin\". The document itself states \"This blog post was written by [Soroush ](https://twitter.com/irsdl)[Dalili.](https://twitter.com/irsdl)\". Third MDSec reference with the same fault."
+  },
+  "https://mdsec.co.uk/2020/03/a-security-review-of-sharepoint-site-pages": {
+   "authors": [
+    "Soroush Dalili"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded the company account \"@mdseclabs\". Line 290 states \"This blog post was written by Soroush Dalili.\" The bio card at the foot names Dominic Chell, a different person - that card is site furniture, not the writer, and is removed as a tail."
+  },
+  "https://mdsec.co.uk/2020/10/covert-web-shells-in-net-with-read-only-web-paths": {
+   "authors": [
+    "Soroush Dalili"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded [\"Admin\", \"@mdseclabs\"] - a CMS placeholder AND the publisher's handle, both known traps, in one entry. The post states plainly, \"This post was written by [Soroush Dalili](https://twitter.com/irsdl).\""
   },
   "https://media.blackhat.com/bh-us-10/whitepapers/Bursztein_Gourdin_Rydstedt/BlackHat-USA-2010-Bursztein-Bad-Memories-wp.pdf": {
    "class": "research",
@@ -1530,6 +1578,14 @@
    "reason": "Reviewed 2026-08-14: research.nccgroup.com now redirects to the firm's research index, so the first capture archived that landing page and was titled \"Cyber Security Research\". The article is republished at www.nccgroup.com/research/state-of-dns-rebinding-in-2023/, which is pinned as the document URL; its own body closes \"## Author\" with \"Roger Meyer (@sanktjodel)\". NCC's current page is retitled \"DNS Rebinding: 2023 Threats & Defenses\" for search, so the heading the citation uses is restored here.",
    "title": "State of DNS Rebinding in 2023"
   },
+  "https://research.securitum.com/marginwidth-marginheight-the-unexpected-cross-origin-communication-channel": {
+   "authors": [
+    "@SecurityMB"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"mibe\", a CMS username. The document writes in the first person and points at the handle the author publishes under: \"On 6th July 2020 I've announced [a XSS challenge on my Twitter](https://twitter.com/SecurityMB/status/1280256162152296449)\"."
+  },
   "https://salt.security/blog/oh-auth-abusing-oauth-to-take-over-millions-of-accounts": {
    "authors": [
     "Aviad Carmel"
@@ -1599,6 +1655,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: the recorded title was the site's masthead, \"Securitum - Security penetration testing.\", so the file was named after the company rather than the research. The capture is the right page and carries the article's own heading, \"SOQL Injection – How to Exfiltrate Sensitive Data in Real-World Pentests\", above \"Adam Borczyk\" and \"October 18, 2024\". Stating the heading restores it to the frontmatter and the file name.",
    "title": "SOQL Injection – How to Exfiltrate Sensitive Data in Real-World Pentests"
+  },
+  "https://security.lauritz-holtmann.de/post/sso-security-login-confusion": {
+   "authors": [
+    "Lauritz Holtmann"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the byline read \"Author not stated\". The author signs off in the first person - \"feel free to reach out via [Mastodon](https://ruhr.social/@lauritz), [Twitter](https://twitter.com/_lauritz_) or [LinkedIn](https://linkedin.com/in/lauritz-holtmann)\" - and is already credited on the 2021, 2023 and 2024 siblings."
   },
   "https://security.lauritz-holtmann.de/post/sso-security-redirect-uri-iii": {
    "authors": [
@@ -1844,6 +1908,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "The deck recorded the handle GreenDog, which is valid since he publishes under it, alongside \"@speakerdeck\" - the hosting platform's own account, not a person, and the same machine-placeholder class as @wowchemy, Guest Post and the GitHub numeric id. Slide 0 gives the full name: \"How to hack SAML if I have paws? Aleksei \\\"GreenDog\\\" Tiurin\", confirmed on slide 1."
+  },
+  "https://speakerdeck.com/lmt_swallow/revisiting-redos-a-rough-idea-of-data-exfiltration-by-redos-and-side-channel-techniques": {
+   "authors": [
+    "Takashi Yoneuchi"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@speakerdeck\", the hosting platform's own account, whose only appearance in the body is inside the recommendation rail the capture harvested. The deck names Takashi Yoneuchi (@y0n3uchy). Same platform-account fault as the @speakerdeck entries corrected in 2021 and 2023."
   },
   "https://spookjs.com/": {
    "authors": [

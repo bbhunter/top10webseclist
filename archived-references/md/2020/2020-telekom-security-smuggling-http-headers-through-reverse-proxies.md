@@ -12,11 +12,11 @@ sources:
   - id: original
     resource: "https://github.security.telekom.com/2020/05/smuggling-http-headers-through-reverse-proxies.html"
     title: Smuggling HTTP headers through reverse proxies
-    author: Telekom Security
+    author: Robin Verton
     last_modified: 2020-05-15
 also_at: []
 authors:
-  - Telekom Security
+  - Robin Verton
 canonical_url: ""
 cited_by:
   - "2020.md:10"
@@ -44,7 +44,7 @@ translation_of: ""
 
 # Smuggling HTTP headers through reverse proxies
 
-**Smuggling HTTP headers through reverse proxies** - Telekom Security, Telekom Security.
+**Smuggling HTTP headers through reverse proxies** - Robin Verton, Telekom Security.
 
 - Published: 2020-05-15
 - Original: <https://github.security.telekom.com/2020/05/smuggling-http-headers-through-reverse-proxies.html>

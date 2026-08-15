@@ -455,7 +455,3 @@ I knew nothing about the structure of PDFs until I watched a talk about [buildin
 ## Addendum
 
 Adobe has [released a patch](https://helpx.adobe.com/security/products/acrobat/apsb20-75.html) which addresses the CBSharedReviewIfOfflineDialog [information disclosure](https://portswigger.net/web-security/information-disclosure).
-
- [ PDF ](https://portswigger.net/research/pdf) [ XSS ](https://portswigger.net/research/cross-site-scripting-research) [ PDFs ](https://portswigger.net/research/pdfs) [ Presentations ](https://portswigger.net/research/presentations)
-
-[Back to all articles](https://portswigger.net/research/articles)

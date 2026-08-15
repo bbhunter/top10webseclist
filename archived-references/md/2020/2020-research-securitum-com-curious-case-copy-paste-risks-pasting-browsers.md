@@ -1465,9 +1465,3 @@ URL to Copy & Paste playground: [https://cdn.sekurak.pl/copy-paste/playground.ht
 | **TinyMCE payload** | `<!-- --!> <img src -->` |  |
 | **CKEditor payload** | `<!--{cke_protected} --!> <img src >` |  |
 | **Froala payload** | `a<u title='<noscript>"><img src >` |  |
-
-## Pentests
-
-I’m a Chief Security Researcher at Securitum. If you would like to do a pentest with us, e-mail me or simply reach out via [https://research.securitum.com/penetration-testing/](https://research.securitum.com/penetration-testing/). Our 30+ team does few hundreds commercial pentests every year.
-
-Tagged: [Bug Bounty](https://research.securitum.com/tag/bug-bounty/), [Copy & Paste](https://research.securitum.com/tag/copy-paste/)

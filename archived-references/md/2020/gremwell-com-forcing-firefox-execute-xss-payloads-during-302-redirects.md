@@ -112,21 +112,3 @@ If you want to test this at home, you can download the [302_server](https://www.
 ### Update - October 2nd 2020
 
 [Maxim Rupp](https://twitter.com/@mmrupp) just [pointed out](https://twitter.com/mmrupp/status/1311786461419585537) that using an resource:// URI in the Location header will work to force Firefox 81 to execute the payload. Nice find !
-
-## Contacts
-
-![](https://www.gremwell.com/themes/gremwell/images/contact1.png)
-
-+32 (0) 2 215 53 58
-
-![](https://www.gremwell.com/themes/gremwell/images/contact3.png)
-
-[info@gremwell.com](mailto:info@gremwell.com)
-
-![](https://www.gremwell.com/themes/gremwell/images/contact2.png)
-
-Gremwell BVBA
- Sint-Katherinastraat 24
- 1742 Ternat
- Belgium
- VAT: BE 0821.897.133.

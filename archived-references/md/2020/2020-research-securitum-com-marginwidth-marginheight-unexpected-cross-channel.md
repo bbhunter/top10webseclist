@@ -6,19 +6,19 @@ tags: [article, webseclist-reference, en, research-securitum-com]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:12+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://research.securitum.com/marginwidth-marginheight-the-unexpected-cross-origin-communication-channel/"
     title: Marginwidth/marginheight - the unexpected cross-origin communication channel
-    author: mibe
+    author: @SecurityMB
     last_modified: 2020-07-13
   - id: capture
     resource: "https://web.archive.org/web/20250907031813/https://research.securitum.com/marginwidth-marginheight-the-unexpected-cross-origin-communication-channel/"
 also_at: []
 authors:
-  - mibe
+  - @SecurityMB
 canonical_url: ""
 cited_by:
   - "2020.md:38"
@@ -46,7 +46,7 @@ translation_of: ""
 
 # Marginwidth/marginheight - the unexpected cross-origin communication channel
 
-**Marginwidth/marginheight - the unexpected cross-origin communication channel** - mibe, research.securitum.com.
+**Marginwidth/marginheight - the unexpected cross-origin communication channel** - @SecurityMB, research.securitum.com.
 
 - Published: 2020-07-13
 - Original: <https://research.securitum.com/marginwidth-marginheight-the-unexpected-cross-origin-communication-channel/>
@@ -241,5 +241,3 @@ I implemented it and hosted at [https://cdn.sekurak.pl/marginwidth.html](https:/
 I think the main take-away from this article is that HTML spec still has some hidden gems that might be possible in some obscure attacks.
 
 Also I think that `marginwidth` specifically has some potential for XS-Leaks but I couldn’t find a viable scenario.
-
-Tagged: [Browser security](https://research.securitum.com/tag/browser-security/)

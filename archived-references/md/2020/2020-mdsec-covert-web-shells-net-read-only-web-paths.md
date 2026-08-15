@@ -12,12 +12,11 @@ sources:
   - id: original
     resource: "https://www.mdsec.co.uk/2020/10/covert-web-shells-in-net-with-read-only-web-paths/"
     title: Covert Web Shells in .NET with Read-Only Web Paths
-    author: Admin, @mdseclabs
+    author: Soroush Dalili
     last_modified: 2020-10-15
 also_at: []
 authors:
-  - Admin
-  - @mdseclabs
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2020.md:44"
@@ -45,7 +44,7 @@ translation_of: ""
 
 # Covert Web Shells in .NET with Read-Only Web Paths
 
-**Covert Web Shells in .NET with Read-Only Web Paths** - Admin, @mdseclabs, MDSec.
+**Covert Web Shells in .NET with Read-Only Web Paths** - Soroush Dalili, MDSec.
 
 - Published: 2020-10-15
 - Original: <https://www.mdsec.co.uk/2020/10/covert-web-shells-in-net-with-read-only-web-paths/>
@@ -166,9 +165,3 @@ Therefore, it is potentially possible to detect malicious compiled files by moni
 If it is absolutely vital to not create any files on the filesystem, the first solution discussed in this post (Creating a fully working web shell in C#) should be considered as an alternative. However, this solution comes with risk of detection by monitoring unencrypted traffic for specific signatures, or by detecting unusually large web requests to a specific target from a specific source.
 
 This post was written by [Soroush Dalili](https://twitter.com/irsdl).
-
- ![](https://secure.gravatar.com/avatar/9cb7b62409a4b5ef00769dca4ba852fc49229c9729d600fc2637daf77068c31c?s=96&d=wp_user_avatar&r=g)
-
- written by
-
-#### MDSec Research

@@ -357,5 +357,3 @@ In the article I’ve shown that you can leak data via CSS if you have a single 
 
 - `@import` rules need to be separated to many stylesheets so that subsequent imports don’t block processing of the entire stylesheet.
 - To get around the limit of concurrent TCP connections, the exploit needs to be served over HTTP/2.
-
-Tagged: [CSS](https://research.securitum.com/tag/css/), [Data Exfiltration](https://research.securitum.com/tag/data-exfiltration/), [Mozilla Firefox](https://research.securitum.com/tag/mozilla-firefox/)

@@ -340,11 +340,3 @@ We can observe this difference in behaviour by detecting if or when the iframeâ€
 Thatâ€™s the concept for a working (and more efficient) exploit! All that was left was to implement the proof of concept with the techniques discussed here, and automating the same process for each character.
 
 You can find the final [load-based proof of concept here](https://lbherrera.github.io/lab/impossible-lab/3c7d4e13.html).
-
-## About Luan Herrera
-
-When not doing security research in browsers, you can probably find Luan Herrera hunting bugs for a living. He likes to travel as well as play CTFs in his free time. He is also an avid XS-Leaks enthusiast.
-
- [ XSS ](https://portswigger.net/research/cross-site-scripting-research) [ Research ](https://portswigger.net/research/research) [ JavaScript ](https://portswigger.net/research/javascript)
-
-[Back to all articles](https://portswigger.net/research/articles)

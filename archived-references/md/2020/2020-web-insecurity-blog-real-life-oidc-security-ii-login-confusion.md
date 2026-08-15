@@ -12,9 +12,11 @@ sources:
   - id: original
     resource: "https://security.lauritz-holtmann.de/post/sso-security-login-confusion/"
     title: "Real-life OIDC Security (II): Login Confusion"
+    author: Lauritz Holtmann
     last_modified: 2020-11-02
 also_at: []
-authors: []
+authors:
+  - Lauritz Holtmann
 canonical_url: ""
 cited_by:
   - "2020.md:58"
@@ -42,7 +44,7 @@ translation_of: ""
 
 # Real-life OIDC Security (II): Login Confusion
 
-**Real-life OIDC Security (II): Login Confusion** - Author not stated, (Web-)Insecurity Blog.
+**Real-life OIDC Security (II): Login Confusion** - Lauritz Holtmann, (Web-)Insecurity Blog.
 
 - Published: 2020-11-02
 - Original: <https://security.lauritz-holtmann.de/post/sso-security-login-confusion/>
@@ -204,6 +206,3 @@ If you have any feedback, feel free to reach out via [Mastodon](https://ruhr.soc
 You can directly tweet about this post using [this link](https://twitter.com/intent/tweet?url=https%3A%2F%2Fsecurity.lauritz-holtmann.de%2Fpost%2Fsso-security-login-confusion%2F&via=_lauritz_). 🤓
 
 Special thanks to [Dr.-Ing. Christian Mainka (@CheariX)](https://twitter.com/CheariX), [Dr.-Ing. Vladislav Mladenov (@v_mladenov)](https://twitter.com/v_mladenov) and [Louis Jannett (@iphoneintosh)](https://twitter.com/iphoneintosh) for your feedback on this post prior to publication! 🙂
-
-- [OpenID Connect](https://security.lauritz-holtmann.de/tags/openid-connect)
-- [Bitbucket](https://security.lauritz-holtmann.de/tags/bitbucket)

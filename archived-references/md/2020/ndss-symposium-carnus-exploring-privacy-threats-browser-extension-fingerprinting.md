@@ -74,23 +74,3 @@ Subsequently, we aim to explore the true extent of the privacy threat that exten
  [Paper](https://www.ndss-symposium.org/wp-content/uploads/2020/02/24383-paper.pdf)
 
  [Video](https://www.youtube.com/watch?v=mfmAWRzpbCU&list=PLfUWWM-POgQv0nEidt3oGK-H1XIyHA4uK&index=6&t=0s)
-
-## View More Papers
-
-### [ Metamorph: Injecting Inaudible Commands into Over-the-air Voice Controlled Systems ](https://www.ndss-symposium.org/ndss-paper/metamorph-injecting-inaudible-commands-into-over-the-air-voice-controlled-systems/)
-
- Tao Chen (City University of Hong Kong), Longfei Shangguan (Microsoft), Zhenjiang Li (City University of Hong Kong), Kyle Jamieson (Princeton University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/metamorph-injecting-inaudible-commands-into-over-the-air-voice-controlled-systems/)
-
-### [ FUSE: Finding File Upload Bugs via Penetration Testing ](https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/)
-
- Taekjin Lee (KAIST, ETRI), Seongil Wi (KAIST), Suyoung Lee (KAIST), Sooel Son (KAIST)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/fuse-finding-file-upload-bugs-via-penetration-testing/)
-
-### [ NoJITsu: Locking Down JavaScript Engines ](https://www.ndss-symposium.org/ndss-paper/nojitsu-locking-down-javascript-engines/)
-
- Taemin Park (University of California, Irvine), Karel Dhondt (imec-DistriNet, KU Leuven), David Gens (University of California, Irvine), Yeoul Na (University of California, Irvine), Stijn Volckaert (imec-DistriNet, KU Leuven), Michael Franz (University of California, Irvine, USA)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/nojitsu-locking-down-javascript-engines/)

@@ -12,15 +12,15 @@ sources:
   - id: original
     resource: "https://github.com/chenjj/espoofer"
     title: Tool
-    author: chenjj
+    author: Jianjun Chen
   - id: commit
     resource: "https://github.com/chenjj/espoofer"
 also_at: []
 authors:
-  - chenjj
+  - Jianjun Chen
 canonical_url: ""
 cited_by:
-  - "2020.md:76"
+  - "2020.md:72"
 commit: 60e5ed00f352999abb485bf12e8fdb2d83ddebf0
 content_sha256: 08abab278ce42ea304a8e31c15144e6d4914ba1a118b714f5b99b42d8b7963c4
 depth: full
@@ -45,7 +45,7 @@ translation_of: ""
 
 # Tool
 
-**Tool** - chenjj, GitHub.
+**Tool** - Jianjun Chen, GitHub.
 
 - Published: date not stated
 - Original: <https://github.com/chenjj/espoofer>
