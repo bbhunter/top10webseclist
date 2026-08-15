@@ -3,7 +3,7 @@ type: Article
 title: Borrowing Windows Hello keys for authentication and persistence
 description: The WHFB private key lives in the TPM, yet the Passport KSP via NCryptOpenKey signs arbitrary data for a low-privilege user with no PIN or biometric prompt, a side effect of RDP needing the key usable under another device identity. Signing the PRT request JWT gives a 90-day Primary Refresh Token. The same key also acts as a FIDO2 passkey - the Entra challenge is bound to no session or tenant and user_handle is derivable - and the token has no device ID claim, so it registers a fresh device.
 resource: "https://dirkjanm.io/borrowing-windows-hello-keys/"
-tags: [article, webseclist-reference, en, dirkjanm-io, webauthn, sso, auth-bypass, azure, jwt, owasp-a01-2021, owasp-a07-2021]
+tags: [article, webseclist-reference, en, dirkjanm-io, passkeys, webauthn, sso, auth-bypass, azure, jwt, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:06:04+00:00"

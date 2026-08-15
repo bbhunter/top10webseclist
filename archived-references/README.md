@@ -18,11 +18,11 @@ Curating the year lists themselves is a separate job. This folder is generated
 by `tools/references/refs.py` from those lists and never edits them.
 
 
-1648 reference(s) archived across 20 year list(s). 1517 carry technique and 131 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
+1649 reference(s) archived across 20 year list(s). 1518 carry technique and 131 are a record ABOUT a product rather than research - a CVE row, a vendor advisory, release notes, a stub. Each reference is filed under the year list that cites it.
 
 Three more lists complete the picture: [document-gaps.md](document-gaps.md) is everything we WANT and do not have, [excluded.md](excluded.md) is everything the archive deliberately keeps no document for, with the reason, and [store-gaps.md](store-gaps.md) is the archived references whose stored bytes have since gone missing.
 
-## 2026-ai (87)
+## 2026-ai (88)
 
 | Reference | Kind | Publisher | Year | Grade | Cited |
 |---|---|---|---|---|---|
@@ -83,6 +83,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [The State of Passkeys: research artifacts](md/2026-ai/ruhr-university-bochum-rub-nds-state-passkeys-research-artifacts.md) | repo | Ruhr University Bochum (RUB-NDS) |  | research | 1 |
 | [Tool](md/2026-ai/github-atredispartners-llmchainhunter.md) | repo | GitHub |  | research | 1 |
 | [Tool](md/2026-ai/github-portswigger-http-terminator.md) | repo | GitHub |  | research | 1 |
+| [Toolkit](md/2026-ai/github-turtlesec-software-crlf-desyncs.md) | repo | GitHub |  | research | 1 |
 | [X402SCOPE](md/2026-ai/hexhive-epfl-x402scope.md) | repo | HexHive, EPFL |  | research | 1 |
 | [Agentic Browsers and the Same-Origin Policy (Paper)](md/2026-ai/agentic-browsers-same-origin-policy-paper.md) | whitepaper |  |  | research | 1 |
 | [Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations](md/2026-ai/your-sites-truly-isolated-automatically-detecting-logic-bugs-implementations.md) | whitepaper |  |  | research | 1 |

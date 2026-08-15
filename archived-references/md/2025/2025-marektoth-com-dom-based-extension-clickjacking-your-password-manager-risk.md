@@ -3,7 +3,7 @@ type: Article
 title: "DOM-based Extension Clickjacking: Your Password Manager Data at Risk"
 description: "A single click on an attacker's page can make a password manager autofill its stored data into a hidden form: script hides the extension's injected autofill interface by setting opacity, or covers it with a transparent overlay. A click on a fake cookie banner then leaks card details, credentials and one-time codes, and can hijack a passkey assertion."
 resource: "https://marektoth.com/blog/dom-based-extension-clickjacking/"
-tags: [article, webseclist-reference, en, marektoth-com, clickjacking, ui-redress, browser-extension, dom, webauthn, info-leak, auth-bypass, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
+tags: [article, webseclist-reference, en, marektoth-com, clickjacking, ui-redress, browser-extension, dom, passkeys, webauthn, info-leak, auth-bypass, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:31:18+00:00"

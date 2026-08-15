@@ -3,7 +3,7 @@ type: Whitepaper
 title: "The State of Passkeys: Studying the Adoption and Security of Passkeys on the Web (Paper)"
 description: "Derives 15 attack types from the WebAuthn spec and tests 103 relying parties by emulating both client and authenticator. All fail something: 5 never verify the assertion signature; registering a passkey that reuses a victim's credential ID overwrites, duplicates or deletes their key, locking them out or logging them into the attacker's account; 40 accept an origin or rpId from a sub- or parent domain; 68 leak account existence through allowCredentials."
 resource: "https://github.com/RUB-NDS/state-of-passkeys-artifacts/blob/main/paper.pdf"
-tags: [whitepaper, webseclist-reference, usenix-security-26, webauthn, auth-bypass, measurement-study, session-fixation, user-enumeration, clickjacking, phishing, tooling, large-scale-scan, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
+tags: [whitepaper, webseclist-reference, usenix-security-26, passkeys, webauthn, auth-bypass, measurement-study, session-fixation, user-enumeration, clickjacking, phishing, tooling, large-scale-scan, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T14:06:50+00:00"

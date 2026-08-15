@@ -2,7 +2,6 @@
  "aliases": {
   "malicious-server": "",
   "novel-technique": "",
-  "passkeys": "webauthn",
   "server": "",
   "wasm": "webassembly"
  },
@@ -221,7 +220,7 @@
    "documents": 272
   },
   "cdn": {
-   "documents": 45
+   "documents": 46
   },
   "charset": {
    "documents": 38
@@ -248,7 +247,7 @@
    "documents": 39
   },
   "cookie": {
-   "documents": 146
+   "documents": 147
   },
   "cors": {
    "documents": 29
@@ -293,10 +292,10 @@
    "documents": 77
   },
   "desync": {
-   "documents": 35
+   "documents": 36
   },
   "detection": {
-   "documents": 119
+   "documents": 120
   },
   "django": {
    "documents": 11
@@ -398,10 +397,10 @@
    "documents": 6
   },
   "header-injection": {
-   "documents": 66
+   "documents": 67
   },
   "http": {
-   "documents": 208
+   "documents": 209
   },
   "http2": {
    "documents": 26
@@ -419,7 +418,7 @@
    "documents": 27
   },
   "iframe": {
-   "documents": 133
+   "documents": 134
   },
   "info-leak": {
    "documents": 591
@@ -517,6 +516,9 @@
   "parser-differential": {
    "documents": 167
   },
+  "passkeys": {
+   "documents": 10
+  },
   "path-traversal": {
    "documents": 66
   },
@@ -578,10 +580,10 @@
    "documents": 3
   },
   "request-smuggling": {
-   "documents": 49
+   "documents": 50
   },
   "response-splitting": {
-   "documents": 17
+   "documents": 18
   },
   "rest-api": {
    "documents": 50
@@ -674,7 +676,7 @@
    "documents": 16
   },
   "tooling": {
-   "documents": 290
+   "documents": 291
   },
   "type-confusion": {
    "documents": 1
@@ -734,5 +736,5 @@
    "documents": 31
   }
  },
- "updated": "2026-08-15T22:56:54+00:00"
+ "updated": "2026-08-15T23:47:44+00:00"
 }

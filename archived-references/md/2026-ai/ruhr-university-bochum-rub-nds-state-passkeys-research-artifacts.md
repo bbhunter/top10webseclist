@@ -3,7 +3,7 @@ type: Repository
 title: "The State of Passkeys: research artifacts"
 description: Research artifacts behind a study of passkey deployment. PASSKEYS-RADAR aggregates 12 community directories and scans 18M CrUX domains for the /.well-known/webauthn and /.well-known/passkey_endpoints files to find relying parties, while PASSKEYS-ATTACKER emulates both the browser client and the authenticator, through a Chrome extension plus backend, so every WebAuthn message can be altered and replayed against a site. A deliberately vulnerable platform reproduces each flaw.
 resource: "https://github.com/RUB-NDS/state-of-passkeys-artifacts"
-tags: [repo, webseclist-reference, ruhr-university-bochum-rub-nds, webauthn, tooling, large-scale-scan, measurement-study, browser-extension, owasp-a07-2021]
+tags: [repo, webseclist-reference, ruhr-university-bochum-rub-nds, passkeys, webauthn, tooling, large-scale-scan, measurement-study, browser-extension, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T14:01:22+00:00"

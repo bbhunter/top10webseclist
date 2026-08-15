@@ -31,6 +31,11 @@ Not by refusal — by folding, before anything is written:
   spelling can never be published again — `wasm` publishes as `webassembly`.
 - `sop-bypass` and `same-origin-policy` deliberately coexist, for the attack and the
   mechanism. Do not add a third spelling of either.
+- **Two names for one thing are kept when a reader might arrive by either.** Tags
+  are a way IN — for people and for models searching the archive — so `passkeys`
+  and `webauthn` both stay, on all ten documents, even though they co-occur
+  perfectly. An alias is for a spelling nobody should land on (`wasm`), not for a
+  word somebody would reasonably search.
 
 A tag that has fallen to zero documents is **kept**, at `documents: 0`. It was
 agreed once, and deleting it would let the same word be re-argued later and would
@@ -58,7 +63,7 @@ JSON.
 
 ## The vocabulary
 
-195 tags, across 1648 documents that carry a digest.
+196 tags, across 1649 documents that carry a digest.
 
 | Tag | Documents | OWASP |
 |---|---|---|
@@ -86,7 +91,7 @@ JSON.
 | `cache-poisoning` | 79 | — |
 | `captcha-bypass` | 2 | A04:2021 |
 | `case-study` | 272 | — |
-| `cdn` | 45 | — |
+| `cdn` | 46 | — |
 | `charset` | 38 | A02:2021 |
 | `ci-cd` | 27 | A08:2021 |
 | `class-pollution` | 5 | A08:2021 |
@@ -95,7 +100,7 @@ JSON.
 | `cloudflare` | 11 | — |
 | `command-injection` | 51 | A03:2021 |
 | `content-type` | 39 | A05:2021 |
-| `cookie` | 146 | A07:2021 |
+| `cookie` | 147 | A07:2021 |
 | `cors` | 29 | A01:2021 |
 | `crypto` | 2 | A02:2021 |
 | `csp` | 55 | A05:2021 |
@@ -110,8 +115,8 @@ JSON.
 | `defence` | 59 | — |
 | `dependency-confusion` | 1 | A06:2021 |
 | `deserialization` | 77 | A08:2021 |
-| `desync` | 35 | — |
-| `detection` | 119 | A09:2021 |
+| `desync` | 36 | — |
+| `detection` | 120 | A09:2021 |
 | `django` | 11 | — |
 | `dns` | 86 | — |
 | `dns-rebinding` | 30 | A10:2021 |
@@ -145,14 +150,14 @@ JSON.
 | `go` | 14 | — |
 | `graphql` | 4 | — |
 | `hash-collision` | 6 | A02:2021 |
-| `header-injection` | 66 | A03:2021 |
-| `http` | 208 | — |
+| `header-injection` | 67 | A03:2021 |
+| `http` | 209 | — |
 | `http2` | 26 | — |
 | `http3` | 5 | — |
 | `https` | 103 | A02:2021 |
 | `identity` | 1 | A07:2021 |
 | `idor` | 27 | A01:2021 |
-| `iframe` | 133 | — |
+| `iframe` | 134 | — |
 | `info-leak` | 591 | — |
 | `injection` | 121 | A03:2021 |
 | `ios` | 16 | — |
@@ -185,6 +190,7 @@ JSON.
 | `open-redirect` | 62 | A04:2021 |
 | `openid` | 29 | A07:2021 |
 | `parser-differential` | 167 | — |
+| `passkeys` | 10 | A07:2021 |
 | `path-traversal` | 66 | A01:2021 |
 | `pdf` | 23 | — |
 | `perl` | 4 | — |
@@ -205,8 +211,8 @@ JSON.
 | `rce` | 268 | — |
 | `react` | 6 | — |
 | `redis` | 3 | — |
-| `request-smuggling` | 49 | — |
-| `response-splitting` | 17 | A03:2021 |
+| `request-smuggling` | 50 | — |
+| `response-splitting` | 18 | A03:2021 |
 | `rest-api` | 50 | — |
 | `reverse-proxy` | 55 | — |
 | `ruby` | 35 | — |
@@ -237,7 +243,7 @@ JSON.
 | `timing-attack` | 89 | — |
 | `tls` | 107 | A02:2021 |
 | `toctou` | 16 | A04:2021 |
-| `tooling` | 290 | — |
+| `tooling` | 291 | — |
 | `type-confusion` | 1 | — |
 | `typosquatting` | 9 | A06:2021 |
 | `ui-redress` | 71 | A04:2021 |
@@ -266,7 +272,6 @@ These spellings fold into another tag before anything is written:
 |---|---|
 | `malicious-server` | `` |
 | `novel-technique` | `` |
-| `passkeys` | `webauthn` |
 | `server` | `` |
 | `wasm` | `webassembly` |
 
