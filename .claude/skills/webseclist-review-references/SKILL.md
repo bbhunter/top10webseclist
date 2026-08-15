@@ -129,6 +129,7 @@ straight through, against the same classes. Worth checking:
 | PDFs | `%PDF-` header, a plausible `%%EOF` near the end or successful parser check, plausible size |
 | Metadata | `cited_by` line numbers that land on a line with no link; translation pairs not cross-linked by `translation_file`/`translation_of` |
 | Coverage | a link in the list with no manifest entry (unwrap `web.archive.org/…/<url>` first — the archive files a capture under the CAPTURED url) |
+| Digest | no `digest`, or a `digest.of` that no longer matches `content_sha256` — a summary of bytes the archive has since replaced |
 
 **A damaged PDF reads as prose, so look at the words.** The in-process parser
 reads byte strings without applying a font's encoding, and when that font is
@@ -472,11 +473,48 @@ compare it with the baseline, and inspect every target first. Run the prune only
 when the entire deletion set is expected; otherwise leave the unrelated files and
 report them.
 
+## Summarise and tag while the document is open
+
+You have just read the document end to end. That is the one moment when writing
+its summary costs nothing, and it is why this belongs here rather than in a pass
+of its own: a later run would have to read all of it again to say the same thing.
+
+```text
+refs.py digest --queue work/digests.json --collection <collection>   # offline
+#   ... one entry per document, from what you read ...
+refs.py digest --apply work/reviewed.json --check                    # offline
+refs.py digest --apply work/reviewed.json
+```
+
+Do this AFTER the repairs, not before. A summary records `of`, the content hash
+it was written from, so one written before a tail cut or a re-render is stale
+the moment the fix lands and `--queue` will offer the document again.
+
+**The summary is what the source found and how, in at most 400 characters** -
+the mechanism, two or three sentences. Write it from the document, not from the
+citation's link text, and not from the abstract alone if the body contradicts
+it. Do not appraise the research and do not describe the archive's copy of it:
+faults belong in `content_gap`, not here. `--apply` cuts an over-long summary at
+a sentence end and refuses one it cannot cut cleanly.
+
+**Tags come from `archived-references/tag-vocabulary.md`, 4 to 10 per
+document.** A word that file does not have is a PROPOSAL: write it `?like-this`.
+Proposals are reported and stripped and never reach a published file; an unknown
+tag NOT marked as a proposal is refused outright, and adding it to the
+vocabulary file to get past that defeats the only control there is. Hold the
+proposal, report it, and let a maintainer promote it once a second document has
+asked for the same word.
+
+A review that changes no document still owes its collection a digest: a
+correctly archived reference nobody can find is not much better than a broken
+one.
+
 ## Finishing
 
 ```text
 refs.py pdf --only <url-substring> --force # each changed Markdown-backed article
 refs.py pdf --collection <collection>      # collection review: fill missing PDFs
+refs.py digest --vocabulary                # if any digest changed
 refs.py index                              # regenerate reports; delete nothing
 refs.py verify
 git diff --check
@@ -518,6 +556,9 @@ Say what was actually wrong and what you did about it, then:
   tree lacks (a fault, which you filed) or a reference the archive never got a
   document for (already on `document-gaps.md`). Give each one its URL, so the
   acquisition run can act on the list without redoing the sweep;
+- the summaries and tags recorded: how many, and every tag PROPOSAL you held,
+  with the document that asked for it. A proposal nobody writes down is a
+  proposal that gets re-invented next year under a slightly different spelling;
 - anything you deliberately left, and why;
 - judgement calls the maintainer should review — a new convention, an invented
   disambiguation, a credit resting on a handle rather than a stated name;
