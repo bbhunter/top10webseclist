@@ -94,5 +94,3 @@ The previous PoC URL will cause the entered credentials to be submitted to [www.
 pIn short:p The attacker has managed to display a non-legitimate third-party page, while the legitimate domain (mail.google.com in this case) is shown in the address bar.The beauty of frame injection attacks is that the attacker is able to impersonate a trusted entity without needing to bypass XSS/HTMLi filters or even break into the target server.
 
 *Needless to say, in real-life the attacker would most likely automate the process of obtaining the harvested credentials by using a tool such as our [x.php](http://lab.gnucitizen.org/projects/x-php-data-theft-script) data-theft script.*
-
-*Archived Comments*

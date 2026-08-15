@@ -82,11 +82,3 @@ Session Extending - продовження сесії - Websecurity - Веб б�
 Суть метода полягає в тому, щоб посилати запити на сайт, що атакується. Запити посилаються періодично, причому період можна задати довільний, головне щоб він був менший за час життя сесії (котрий визначається експерементально). Сам запит до сайту посилається разом з захопленим кукісом, тим самим продовжуючи його сесію. І за допомогою даного методу можна на будь-який час (доки це буде необхідно) продовжити захоплену сесію (або декілька сесій).
 
 Тому веб розробникам та адміністраторам сайтів варто пам’ятати про можливість обходу обмеження на тривалість сесії. І навіть відсутність Insufficient Session Expiration уразливостей не врятує від атаки професіонала. Виходячи з цього, єдиним засобом протидії від Cross-Site Scripting атак є виправлення усіх XSS дір на сайті.
-
-This entry was posted on 22:48 03.07.2008 and is filed under [Статті](http://websecurity.com.ua/category/articles/). You can follow any responses to this entry through the [RSS 2.0](http://websecurity.com.ua/2233/feed/) feed.
-
-### Leave a Reply
-
-You must be [logged in](http://websecurity.com.ua/wp-login.php?redirect_to=http://websecurity.com.ua/2233/) to post a comment.
-
----

@@ -83,11 +83,3 @@ My method, which I developed in 2006, is intended to extend a captured session a
 The essence of the method is to send requests to the site being attacked. The requests are sent periodically, and the interval can be set arbitrarily; the main requirement is that it be shorter than the session lifetime (which is determined experimentally). The request itself is sent to the site together with the captured cookie, thereby extending its session. Using this method, a captured session (or several sessions) can be extended for any length of time (as long as necessary).
 
 Web developers and site administrators should therefore remember that session-duration limits can be bypassed. Even the absence of Insufficient Session Expiration vulnerabilities will not protect against an attack by a professional. Consequently, the only way to counter Cross-Site Scripting attacks is to fix all XSS holes on the site.
-
-This entry was posted on 22:48 03.07.2008 and is filed under [Articles](http://websecurity.com.ua/category/articles/). You can follow any responses to this entry through the [RSS 2.0](http://websecurity.com.ua/2233/feed/) feed.
-
-### Leave a Reply
-
-You must be [logged in](http://websecurity.com.ua/wp-login.php?redirect_to=http://websecurity.com.ua/2233/) to post a comment.
-
----

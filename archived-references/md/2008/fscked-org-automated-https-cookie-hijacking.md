@@ -130,7 +130,3 @@ Note that some sites do janky things like requiring a random Session ID in the U
 These approaches may or may not be secure, depending upon how they implemented it (and why), and really should be considered a "worst practices" sort of thing for protection for this particular attack. For instance, the randomized session ID in the URL may have been specifically designed to protect against [CSRF attacks](http://en.wikipedia.org/wiki/Cross-site_request_forgery), with no thought whatsoever put into the fact that it can be transmitted on the local network in the 'referrer' string as soon as you navigate to an insecure page (ie, the "about", "routing info", and "help" links of many banks are http, not to mention off site links they might provide).
 
 Because of this, is probably best to contact these sites anyway, since hacks like these are homebrew solutions (and potentially designed to defend against completely different attacks) and are much more likely to be failure prone than the tried and tested existing browser security model.
-
-- [mikeperry's blog](https://fscked.org/blog/3)
-
-  |   |

@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "http://grutztopia.jingojango.net/2008/01/another-free-macworld-platinum-pass-yes.html"
     title: Another Free MacWorld Platinum Pass? Yes in 2008!
+    author: Kurt Grutzmacher
 also_at: []
-authors: []
+authors:
+  - Kurt Grutzmacher
 canonical_url: ""
 cited_by:
   - "2008.md:25"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Another Free MacWorld Platinum Pass? Yes in 2008!
 
-**Another Free MacWorld Platinum Pass? Yes in 2008!** - Author not stated, grutztopia.jingojango.net.
+**Another Free MacWorld Platinum Pass? Yes in 2008!** - Kurt Grutzmacher, grutztopia.jingojango.net.
 
 - Published: date not stated
 - Original: <http://grutztopia.jingojango.net/2008/01/another-free-macworld-platinum-pass-yes.html>

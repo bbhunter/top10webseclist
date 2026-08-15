@@ -155,13 +155,3 @@ ZyXEL Gateways Vulnerability Research 22 www.procheckup.com 5 References [1] Pro
 --- page 24 ---
 
 ZyXEL Gateways Vulnerability Research 23 www.procheckup.com 6 Credits Research and paper by Adrian Pastor of ProCheckUp Ltd (www.procheckup.com) Special thanks go to the following individuals for their kind feedback: Richard Brain, Kender Arg, Monserrate Carlo, Jan Fry, Amir Azam and Petko D. Petkov.
-
---- page 25 ---
-
-¸¤@+P++
-
---- page 26 ---
-
-?		 
-   9	ù&j&*+,&™ª#  
-<<&MKM&RPPPRly•%«æõU&' $!$! O,¸‰@!?Op�ß

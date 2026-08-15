@@ -12,12 +12,12 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20090212215719/http://securityvulns.ru/Vdocument24.html"
     title: "Óâåäîìëåíèå î áåçîïàñíîñòè: New vulnerabilities in CapCC for WordPress"
-    author: 3APA3A
+    author: MustLive
   - id: capture
     resource: "https://web.archive.org/web/20090212215719/http://securityvulns.ru/Vdocument24.html"
 also_at: []
 authors:
-  - 3APA3A
+  - MustLive
 canonical_url: ""
 cited_by:
   - "2008.md:73"
@@ -45,7 +45,7 @@ translation_of: 3proxy-ru-security-nnov-ru-securityvulns-ru-redirects-3.md
 
 # Óâåäîìëåíèå î áåçîïàñíîñòè: New vulnerabilities in CapCC for WordPress (English translation)
 
-**Óâåäîìëåíèå î áåçîïàñíîñòè: New vulnerabilities in CapCC for WordPress** - 3APA3A, securityvulns.ru.
+**Óâåäîìëåíèå î áåçîïàñíîñòè: New vulnerabilities in CapCC for WordPress** - MustLive, securityvulns.ru.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20090212215719/http://securityvulns.ru/Vdocument24.html>

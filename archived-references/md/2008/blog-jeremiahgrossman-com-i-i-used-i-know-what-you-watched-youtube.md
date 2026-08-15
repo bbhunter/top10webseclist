@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2008/09/i-used-to-know-what-you-watched-on.html"
     title: I <i>used to</i> know what you watched, on YouTube
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2008/09/i-used-to-know-what-you-watched-on.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2008/09/i-used-to-know-what-you-watched-on.html"
 cited_by:
   - "2008.md:21"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # I <i>used to</i> know what you watched, on YouTube
 
-**I <i>used to</i> know what you watched, on YouTube** - Author not stated, blog.jeremiahgrossman.com.
+**I <i>used to</i> know what you watched, on YouTube** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2008/09/i-used-to-know-what-you-watched-on.html>

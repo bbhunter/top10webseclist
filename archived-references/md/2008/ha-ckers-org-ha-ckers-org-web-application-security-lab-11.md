@@ -74,15 +74,3 @@ Okay, I waited long enough to tell this story, but it’s funny enough that it�
 Then we got to talking and laughing and ultimately came up with a CSRF joke of all time. We could get tens of thousands, maybe hundreds of thousands, or even millions of people to join through CSRF via images to forms on MySpace, or what have you. You see, there is a bit of a bug in the acceptance program of Kraynackism. You don’t have to necessarily “say” that Mark is your God it turns out, you just have to somehow indicate it to him, either intentionally or inadvertantly as we saw with his friend. We could turn Kraynackism into the fastest growing religion the world has ever seen! You could be a member right now and you wouldn’t even know it!
 
 It’s funny but it’s less funny when you talk about getting people [arrested in China](http://itgossips.com/featured/open-a-page-go-to-jail-2-735.it) as we talked about [a long time ago](http://ha.ckers.org/blog/20060614/using-xss-to-dos-china/) or of course [going to jail for child porn](http://ha.ckers.org/blog/20080320/click-a-link-go-to-jail/), etc… Funny and scary all at the same time.
-
-  This entry was posted on Thursday, April 3rd, 2008 at 1:06 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/), [Random Security](http://ha.ckers.org/blog/category/random-security/). You can leave a response as well.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20080106144155/http://aviv.raffon.net/2008/01/02/YetAnotherDialogSpoofingFirefoxBasicAuthentication.aspx"
     title: Aviv Raff On .NET - Yet another Dialog Spoofing
+    author: Aviv Raff
   - id: capture
     resource: "https://web.archive.org/web/20080106144155/http://aviv.raffon.net/2008/01/02/YetAnotherDialogSpoofingFirefoxBasicAuthentication.aspx"
 also_at: []
-authors: []
+authors:
+  - Aviv Raff
 canonical_url: ""
 cited_by:
   - "2008.md:57"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Aviv Raff On .NET - Yet another Dialog Spoofing
 
-**Aviv Raff On .NET - Yet another Dialog Spoofing** - Author not stated, aviv.raffon.net.
+**Aviv Raff On .NET - Yet another Dialog Spoofing** - Aviv Raff, aviv.raffon.net.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20080106144155/http://aviv.raffon.net/2008/01/02/YetAnotherDialogSpoofingFirefoxBasicAuthentication.aspx>
@@ -142,92 +144,3 @@ Until Mozilla fixes this vulnerability, I recommend not to provide username and 
   |
 
 |   |
-
-| [Contact Me](https://web.archive.org/web/20080106144155/mailto:avivra@gmail.com) |  |
-
-  |   |   |
-
-|   |
-
-|   |  |
-
-  |   |   |
-
-|   |
-
-| [![](https://web.archive.org/web/20080106144155im_/http://www.raffon.net/images/savejourneyman.jpg)](https://web.archive.org/web/20080106144155/http://savejourneyman.funurl.com/) |  |
-
-  |   |   |
-
-|   |
-
-|   |  |
-
-  |   |   |
-
-|   |
-
-| Blogroll |  |
-|
-
-|  [![](https://web.archive.org/web/20080106144155im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20080106144155/http://arbel.net/blog/Rss.aspx)[ælij arbel](https://web.archive.org/web/20080106144155/http://arbel.net/blog/) |   |
-|  [![](https://web.archive.org/web/20080106144155im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20080106144155/http://www.avidardik.com/feed/)[Avi Dardik](https://web.archive.org/web/20080106144155/http://www.avidardik.com/) |   |
-|  [![](https://web.archive.org/web/20080106144155im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20080106144155/http://browserfun.blogspot.com/rss.xml)[Browser Fun](https://web.archive.org/web/20080106144155/http://browserfun.blogspot.com/) |   |
-|  [![](https://web.archive.org/web/20080106144155im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20080106144155/http://blog.info-pull.com/index.php/feed/)[Info Pull](https://web.archive.org/web/20080106144155/http://blog.info-pull.com/) |   |
-|  [![](https://web.archive.org/web/20080106144155im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20080106144155/http://saguiitay.spaces.live.com/feed.rss)[Itay Sagui](https://web.archive.org/web/20080106144155/http://saguiitay.spaces.live.com/) |   |
-|  [![](https://web.archive.org/web/20080106144155im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20080106144155/http://metasploit.blogspot.com/atom.xml)[Metasploit](https://web.archive.org/web/20080106144155/http://metasploit.blogspot.com/) |   |
-|  [![](https://web.archive.org/web/20080106144155im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20080106144155/http://berendjanwever.blogspot.com/feeds/posts/default)[SkyLined](https://web.archive.org/web/20080106144155/http://berendjanwever.blogspot.com/) |   |
-
- |  |
-
-  |   |   |
-
-|   |
-
-| Archive |  |
-|
-
-|  [January, 2008 (2)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2008-01.aspx) |   |
-|  [December, 2007 (1)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2007-12.aspx) |   |
-|  [November, 2007 (1)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2007-11.aspx) |   |
-|  [October, 2007 (2)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2007-10.aspx) |   |
-|  [September, 2007 (2)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2007-09.aspx) |   |
-|  [August, 2007 (2)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2007-08.aspx) |   |
-|  [July, 2007 (1)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2007-07.aspx) |   |
-|  [June, 2007 (3)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2007-06.aspx) |   |
-|  [March, 2007 (4)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2007-03.aspx) |   |
-|  [January, 2007 (5)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2007-01.aspx) |   |
-|  [December, 2006 (2)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2006-12.aspx) |   |
-|  [November, 2006 (2)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2006-11.aspx) |   |
-|  [October, 2006 (2)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2006-10.aspx) |   |
-|  [September, 2006 (1)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2006-09.aspx) |   |
-|  [August, 2006 (3)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2006-08.aspx) |   |
-|  [July, 2006 (1)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2006-07.aspx) |   |
-|  [June, 2006 (1)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2006-06.aspx) |   |
-|  [April, 2006 (3)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2006-04.aspx) |   |
-|  [March, 2006 (3)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2006-03.aspx) |   |
-|  [February, 2006 (2)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2006-02.aspx) |   |
-|  [January, 2006 (1)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2006-01.aspx) |   |
-|  [December, 2005 (4)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2005-12.aspx) |   |
-|  [October, 2005 (2)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2005-10.aspx) |   |
-|  [September, 2005 (12)](https://web.archive.org/web/20080106144155/http://aviv.raffon.net/default,month,2005-09.aspx) |   |
-
- |  |
-
-  |   |   |
-
-|   |
-
-| Admin Login |  |
-|  [Sign In](https://web.archive.org/web/20080106144155/http:/aviv.raffon.net/2008/01/02/Login.aspx)   |  |
-
-  |   |   |
-
-|   |
-
-| Disclaimer |  |
-| The opinions expressed herein are my own personal opinions and do not represent my employer's view in anyway. |  |
-
-  |   |   |
-
-  |   |

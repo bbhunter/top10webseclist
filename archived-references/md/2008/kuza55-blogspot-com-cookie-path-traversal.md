@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://kuza55.blogspot.com/2008/07/cookie-path-traversal.html"
     title: Cookie Path Traversal
+    author: kuza55
 also_at: []
-authors: []
+authors:
+  - kuza55
 canonical_url: ""
 cited_by:
   - "2008.md:40"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Cookie Path Traversal
 
-**Cookie Path Traversal** - Author not stated, kuza55.blogspot.com.
+**Cookie Path Traversal** - kuza55, kuza55.blogspot.com.
 
 - Published: date not stated
 - Original: <https://kuza55.blogspot.com/2008/07/cookie-path-traversal.html>

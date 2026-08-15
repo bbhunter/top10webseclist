@@ -76,15 +76,3 @@ I’ve been meaning to post this since Blackhat last year, but I just finally go
 In other news, I should also mention that I got back from [the Minnesota OWASP meeting](http://www.owasp.org/index.php/Minneapolis_St_Paul). I was really surprised to see how many people came out to see me (probably 75 or so). All really nice people and I was impressed by Kuai and the entire setup. Very nicely done. I think my slides will be posted today or tomorrow. I guess Bruce Schneier spoke there the month before I did, so these guys definitely have got their eye on the heavy hitters for those of you on the speaking circuit. I also spoke on [Minnesota Public Radio as well](http://www.publicradio.org/columns/futuretense/2008/02/11.shtml), which was kinda fun. I hope it continues to grow!
 
 I missed Schmoocon and DC Blackhat but here is the unofficial list of my upcoming cons: [Source Boston](http://www.sourceboston.com/) (leading a panel), [RSACon 2008](http://www.rsaconference.com/2008/US/Home.aspx) (just visiting), [TRISC](http://www.trisc.org/) (speaking), [Secure360](http://www.secure360.org/) (speaking - unconfirmed), Super Secret SANS Conference to be talked about at a later date (speaking), OWASP Denver (speaking - unconfirmed), [World OWASP NYC 2008](http://www.owasp.org/index.php/OWASP_NYC_AppSec_2008_Conference) (speaking). So yah, busy busy busy…
-
-  This entry was posted on Wednesday, February 27th, 2008 at 5:51 pm and is filed under [General News](http://ha.ckers.org/blog/category/general-news/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

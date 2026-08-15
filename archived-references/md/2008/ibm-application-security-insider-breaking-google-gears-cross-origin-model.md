@@ -6,16 +6,18 @@ tags: [article, webseclist-reference, ibm-application-security-insider]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:08+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "http://blog.watchfire.com/wfblog/2008/12/breaking-google-gears-cross-origin-communication-model.html"
     title: "Breaking Google Gears' Cross-Origin Communication Model"
+    author: Yair Amit
   - id: capture
     resource: "https://web.archive.org/web/20230326172706/http://blog.watchfire.com/wfblog/2008/12/breaking-google-gears-cross-origin-communication-model.html"
 also_at: []
-authors: []
+authors:
+  - Yair Amit
 canonical_url: ""
 cited_by:
   - "2008.md:6"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Breaking Google Gears' Cross-Origin Communication Model
 
-**Breaking Google Gears' Cross-Origin Communication Model** - Author not stated, IBM Application Security Insider.
+**Breaking Google Gears' Cross-Origin Communication Model** - Yair Amit, IBM Application Security Insider.
 
 - Published: date not stated
 - Original: <http://blog.watchfire.com/wfblog/2008/12/breaking-google-gears-cross-origin-communication-model.html>

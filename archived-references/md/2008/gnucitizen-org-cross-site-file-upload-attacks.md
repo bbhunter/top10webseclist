@@ -141,5 +141,3 @@ Like CSRF attacks, there are plenty of things one can do with this type of techn
 - Upload a shiny new firmware to the router that is under attack by using the user as a proxy. This is pretty nasty and given the fact that there are numerous authentication bypass and A-to-C bugs floating around, it is very, very feasible.
 - Upload a shiny new configuration file on the router that is under attack. Same as the one above - very feasible and easy to perform.
 - Upload executable scripts on CMS - this of course is a bit more targeted..
-
-*Archived Comments*

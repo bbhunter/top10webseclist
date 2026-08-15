@@ -74,15 +74,3 @@ While the fun is over, there is a lot to talk about in the wrap-up. So much so t
 But now that leaves us to the aftermath. After looking at the contest for the first four days [we may have figured out a way to potentially stop worm propagation](http://ha.ckers.org/xss-worms/). Unlike tracking this method actually may help companies devise plans on how to reduce the likelihood of worm propagation across their websites. This should put to rest the nay sayers who thought nothing good could come of this contest. The paper is not for everyone - it’s pretty complex (as worms tend to be), but I think the people who have the problem will understand how to use it in their own environments.
 
 That said, there is at least two or three more potential outputs of this contest - including papers on propagation analytics, worm tracking technology, and potentially other things that I’m not privy to. Was it worth it? Absolutely. I couldn’t have been happier with the results. Thanks again to everyone who made it such a success. It was a lot of work, but it was the first step towards large scale worm defense. Again, a huge congrats to Giorgio Maone and Sirdarckcat!
-
-  This entry was posted on Thursday, January 10th, 2008 at 4:26 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20080110/diminutive-worm-contest-wrapup/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20080110/diminutive-worm-contest-wrapup/trackback/) from your own site.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

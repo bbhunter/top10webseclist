@@ -102,11 +102,3 @@ _The source's own words. An English translation of this document is archived bes
 Як я вже зазначав, враховуючи другу стадію, в якості роздільника між ім’ям тега та його властивістю я використав “/”, тобто використав запис “<img/width”. Для того щоб зробити код робочим після проходження фільтрів.
 
 Як видно з наведених прикладів, використовуючи техніку спейс-хакінгу можна обходити багатопрохідні фільтри. Розробникам веб додатків варто врахувати дану техніку при розробці систем фільтрації.
-
-This entry was posted on 22:45 17.05.2008 and is filed under [Статті](http://websecurity.com.ua/category/articles/). You can follow any responses to this entry through the [RSS 2.0](http://websecurity.com.ua/2115/feed/) feed.
-
-### Leave a Reply
-
-You must be [logged in](http://websecurity.com.ua/wp-login.php?redirect_to=http://websecurity.com.ua/2115/) to post a comment.
-
----

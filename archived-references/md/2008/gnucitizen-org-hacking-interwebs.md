@@ -100,5 +100,3 @@ When the victim visits the malicious SWF file, the above 6 steps will silently e
 I repeat myself far too much, but I guess I have another opportunity to mention that adding a portforwarding is only one of the many things someone can do to your router. The most malicious of all malicious things is to change the primary DNS server. That will effectively turn the router and the network it controls into a zombie which the attacker can take advantage of whenever they feel like it. It is also possible to reset the admin credentials and create the sort of onion routing network all the bad guys want. *We hope that by exposing this information, we will drastically improve the situation for the future. I think that this is a lot better than keeping it for ourselves or risking it all by given the criminals the opportunity to have in possession a secret which no one else is aware of.*
 
 *The only way to protect yourself is to turn off UPnP. Yes, that will make your life harder and probably your skype or msn wont work as flawlessly as before but it is a trade-off you have to learn to live with.*
-
-*Archived Comments*

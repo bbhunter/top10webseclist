@@ -12,12 +12,12 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20090207124101/http://securityvulns.ru/Udocument911.html"
     title: "Óâåäîìëåíèå î áåçîïàñíîñòè: Code Execution via XSS in Internet Explorer"
-    author: 3APA3A
+    author: MustLive
   - id: capture
     resource: "https://web.archive.org/web/20090207124101/http://securityvulns.ru/Udocument911.html"
 also_at: []
 authors:
-  - 3APA3A
+  - MustLive
 canonical_url: ""
 cited_by:
   - "2008.md:71"
@@ -45,7 +45,7 @@ translation_of: ""
 
 # Óâåäîìëåíèå î áåçîïàñíîñòè: Code Execution via XSS in Internet Explorer
 
-**Óâåäîìëåíèå î áåçîïàñíîñòè: Code Execution via XSS in Internet Explorer** - 3APA3A, securityvulns.ru.
+**Óâåäîìëåíèå î áåçîïàñíîñòè: Code Execution via XSS in Internet Explorer** - MustLive, securityvulns.ru.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20090207124101/http://securityvulns.ru/Udocument911.html>

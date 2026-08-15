@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://schmoil.blogspot.com/2008/03/stealing-basic-auth-with-persistent-xss.html"
     title: Stealing Basic Auth with Persistent XSS
+    author: Mike Zusman
 also_at: []
-authors: []
+authors:
+  - Mike Zusman
 canonical_url: ""
 cited_by:
   - "2008.md:29"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Stealing Basic Auth with Persistent XSS
 
-**Stealing Basic Auth with Persistent XSS** - Author not stated, schmoil.blogspot.com.
+**Stealing Basic Auth with Persistent XSS** - Mike Zusman, schmoil.blogspot.com.
 
 - Published: date not stated
 - Original: <https://schmoil.blogspot.com/2008/03/stealing-basic-auth-with-persistent-xss.html>

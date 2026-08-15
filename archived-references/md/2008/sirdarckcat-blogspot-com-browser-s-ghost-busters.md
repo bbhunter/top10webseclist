@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://sirdarckcat.blogspot.com/2008/05/browsers-ghost-busters.html"
     title: "Browser's Ghost Busters"
+    author: sirdarckcat
 also_at: []
-authors: []
+authors:
+  - sirdarckcat
 canonical_url: ""
 cited_by:
   - "2008.md:47"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Browser's Ghost Busters
 
-**Browser's Ghost Busters** - Author not stated, sirdarckcat.blogspot.com.
+**Browser's Ghost Busters** - sirdarckcat, sirdarckcat.blogspot.com.
 
 - Published: date not stated
 - Original: <https://sirdarckcat.blogspot.com/2008/05/browsers-ghost-busters.html>

@@ -79,5 +79,3 @@ Lets have a look at a social network like [LinkedIn](http://www.linkedin.com/). 
 Social Networks are huge threat whether you realize it or not. The bad guys are not restricted in terms of types of tools for their malicious activities, like whitehats do as this seams to be part of technical eliteness. The bad guys will break into the targeted network by any means necessary. This includes fooling people, laying and cheating on their way towards their goal.
 
 This post is kept fairly light as it is a raw idea which haven't been materialized into any form but nevertheless it is important to be considered, especially today, when we are surrounded by the Social Networks phenomenon. The whole idea about this post is to introduce you to a concept, which you may or may not have already given any thoughts about.
-
-*Archived Comments*

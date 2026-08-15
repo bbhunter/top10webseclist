@@ -134,13 +134,3 @@ Glenn can now ssh to localhost on port 5555 to access the sshd on sshd.victim.co
  [ Download reDuhClient (the local proxy)](https://www.sensepost.com/research/reDuh/reDuhClient-0.3.zip) | [ Download reDuhu Server Pages (JSP/PHP/ASP)](https://www.sensepost.com/research/reDuh/reDuh-server-all.tgz) [ Register for tool updates](http://www.sensepost.com/research_register.html)
 
 ** [Squeeza was also updated for the talk and the new version can be found [[on the squeeza page](http://www.sensepost.com/research/squeeza)]
-
-**| [Contact the SensePost Team](mailto:research@sensepost.com?subject=reDuh comments) | [ Return to the full research listing](http://www.sensepost.com/research.html) |**
-
-|   ![Google Groups](http://groups.google.co.za/groups/img/groups_medium.gif)  |  **Subscribe to SensePostResearch** |   |
-|  Email:  |
-
-|     |   |
-
-  |   |
-|  [Browse Archives](http://groups.google.co.za/group/SensePostTools) at [groups.google.co.za](http://groups.google.co.za/)  |  |

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2008/03/fun-with-cups.html"
     title: Fun with CUPS
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2008/03/fun-with-cups.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2008/03/fun-with-cups.html"
 cited_by:
   - "2008.md:18"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Fun with CUPS
 
-**Fun with CUPS** - Author not stated, blog.jeremiahgrossman.com.
+**Fun with CUPS** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2008/03/fun-with-cups.html>

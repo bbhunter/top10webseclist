@@ -6,16 +6,18 @@ tags: [article, webseclist-reference, mikeonads-com]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:43+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "http://www.mikeonads.com/2008/07/13/using-your-browser-url-history-estimate-gender/"
     title: Mike On Ads » Blog Archive » Using your browser URL history to estimate gender
+    author: Mike
   - id: capture
     resource: "https://web.archive.org/web/20080728010143/http://www.mikeonads.com/2008/07/13/using-your-browser-url-history-estimate-gender/"
 also_at: []
-authors: []
+authors:
+  - Mike
 canonical_url: ""
 cited_by:
   - "2008.md:32"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Mike On Ads » Blog Archive » Using your browser URL history to estimate gender
 
-**Mike On Ads » Blog Archive » Using your browser URL history to estimate gender** - Author not stated, mikeonads.com.
+**Mike On Ads » Blog Archive » Using your browser URL history to estimate gender** - Mike, mikeonads.com.
 
 - Published: date not stated
 - Original: <http://www.mikeonads.com/2008/07/13/using-your-browser-url-history-estimate-gender/>
@@ -88,23 +90,3 @@ Ok, so **Click the button to give it a shot** (those of you using RSS readers pr
 
 ` `
  Kind of cute right? Don’t worry — I am not storing your history in any way, this is purely **for fun**. I’d appreciate it if you paste the resulting probabilities in the comments together with your actual gender, I’m interested to know the accuracy of this simplistic approach. In case it isn’t obvious — **please don’t do this for real**.
-
-## Related Posts:
-
-- [Is Google taking behavioral data to display?](http://www.mikeonads.com/2008/07/18/is-google-taking-behavioral-data-to-display/)
-- [How do behavioral networks work?](http://www.mikeonads.com/2007/02/28/how-do-behavioral-networks-work/)
-- [It’s time to drive for simpler integration](http://www.mikeonads.com/2007/08/02/its-time-to-drive-for-simpler-integration/)
-- [Microsoft is only 6 years late on behavior](http://www.mikeonads.com/2007/06/04/microsoft-is-only-6-years-late-on-behavior/)
-- [Networks: Friend or Foe?](http://www.mikeonads.com/2008/05/02/networks-friend-or-foe/)
-
- [Digg this story](http://digg.com/programming/Guessing_gender_by_analyzing_browser_history) Posted by Mike Filed in [Uncategorized](http://www.mikeonads.com/category/uncategorized/)
-
-### Leave a Reply
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
-  |   |

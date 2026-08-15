@@ -103,11 +103,3 @@ At the second stage, the filter removes the spaces; as a result, we obtain code 
 As I noted above, because of the second stage, I used “/” as the separator between the tag name and its attribute; that is, I used the notation “<img/width”. This makes the code functional after it passes through the filters.
 
 As the examples above show, the space-hack technique can be used to bypass multi-pass filters. Web application developers should take this technique into account when developing filtering systems.
-
-This entry was posted on 22:45 17.05.2008 and is filed under [Articles](http://websecurity.com.ua/category/articles/). You can follow any responses to this entry through the [RSS 2.0](http://websecurity.com.ua/2115/feed/) feed.
-
-### Leave a Reply
-
-You must be [logged in](http://websecurity.com.ua/wp-login.php?redirect_to=http://websecurity.com.ua/2115/) to post a comment.
-
----

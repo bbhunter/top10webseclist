@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://kuza55.blogspot.com/2008/02/racing-to-downgrade-users-to-cookie.html"
     title: Racing to downgrade users to cookie-less authentication
+    author: kuza55
 also_at: []
-authors: []
+authors:
+  - kuza55
 canonical_url: ""
 cited_by:
   - "2008.md:41"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Racing to downgrade users to cookie-less authentication
 
-**Racing to downgrade users to cookie-less authentication** - Author not stated, kuza55.blogspot.com.
+**Racing to downgrade users to cookie-less authentication** - kuza55, kuza55.blogspot.com.
 
 - Published: date not stated
 - Original: <https://kuza55.blogspot.com/2008/02/racing-to-downgrade-users-to-cookie.html>

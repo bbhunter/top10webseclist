@@ -6,16 +6,18 @@ tags: [article, webseclist-reference, blog-wired-com]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:09+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://blog.wired.com/27bstroke6/2008/05/man-allegedly-b.html"
     title: "Man Allegedly Bilks E-trade, Schwab of $50,000 by Collecting Lots of Free 'Micro-Deposits'"
+    author: Kevin Poulsen
   - id: capture
     resource: "https://web.archive.org/web/20080905232909/https://blog.wired.com/27bstroke6/2008/05/man-allegedly-b.html"
 also_at: []
-authors: []
+authors:
+  - Kevin Poulsen
 canonical_url: ""
 cited_by:
   - "2008.md:31"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Man Allegedly Bilks E-trade, Schwab of $50,000 by Collecting Lots of Free 'Micro-Deposits'
 
-**Man Allegedly Bilks E-trade, Schwab of $50,000 by Collecting Lots of Free 'Micro-Deposits'** - Author not stated, blog.wired.com.
+**Man Allegedly Bilks E-trade, Schwab of $50,000 by Collecting Lots of Free 'Micro-Deposits'** - Kevin Poulsen, blog.wired.com.
 
 - Published: date not stated
 - Original: <https://blog.wired.com/27bstroke6/2008/05/man-allegedly-b.html>

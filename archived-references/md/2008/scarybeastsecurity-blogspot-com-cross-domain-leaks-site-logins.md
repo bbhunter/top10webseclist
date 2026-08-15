@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html"
     title: Cross-domain leaks of site logins
+    author: Chris Evans
 also_at: []
-authors: []
+authors:
+  - Chris Evans
 canonical_url: ""
 cited_by:
   - "2008.md:11"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Cross-domain leaks of site logins
 
-**Cross-domain leaks of site logins** - Author not stated, scarybeastsecurity.blogspot.com.
+**Cross-domain leaks of site logins** - Chris Evans, scarybeastsecurity.blogspot.com.
 
 - Published: date not stated
 - Original: <https://scarybeastsecurity.blogspot.com/2008/08/cross-domain-leaks-of-site-logins.html>

@@ -6,16 +6,18 @@ tags: [article, webseclist-reference, en-US, gnucitizen-org]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:42:58+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/projects/total-surveillance-made-easy-with-voip-phones/"
     title: Total surveillance made easy with VoIP phones
+    author: .mario
   - id: capture
     resource: "https://web.archive.org/web/20081104074325/https://www.gnucitizen.org/projects/total-surveillance-made-easy-with-voip-phones/"
 also_at: []
-authors: []
+authors:
+  - .mario
 canonical_url: ""
 cited_by:
   - "2008.md:66"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Total surveillance made easy with VoIP phones
 
-**Total surveillance made easy with VoIP phones** - Author not stated, gnucitizen.org.
+**Total surveillance made easy with VoIP phones** - .mario, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/projects/total-surveillance-made-easy-with-voip-phones/>

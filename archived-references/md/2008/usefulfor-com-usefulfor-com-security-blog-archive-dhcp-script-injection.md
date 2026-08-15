@@ -122,20 +122,3 @@ Device providing an administrative web interface with a DHCP management function
  ****
 
 **White paper:** Behind Enemy Lines [[1]](http://www.mwrinfosecurity.com/publications/mwri_behind-enemy-lines_2008-07-25.pdf) [[2]](http://usefulfor.com/security/files/2008/08/mwri_behind-enemy-lines_2008-07-25.pdf)
-
-  **Share and Enjoy:** These icons link to social bookmarking sites where readers can share and discover new web pages.
-
-- [![Digg](http://usefulfor.com/security/wp-content/plugins/sociable/images/digg.png)](http://digg.com/submit?phase=2&url=http%3A%2F%2Fusefulfor.com%2Fsecurity%2F2008%2F08%2F04%2Fdhcp-script-injection%2F&title=DHCP+Script+Injection)
-- [![del.icio.us](http://usefulfor.com/security/wp-content/plugins/sociable/images/delicious.png)](http://del.icio.us/post?url=http%3A%2F%2Fusefulfor.com%2Fsecurity%2F2008%2F08%2F04%2Fdhcp-script-injection%2F&title=DHCP+Script+Injection)
-- [![Slashdot](http://usefulfor.com/security/wp-content/plugins/sociable/images/slashdot.png)](http://slashdot.org/bookmark.pl?title=DHCP+Script+Injection&url=http%3A%2F%2Fusefulfor.com%2Fsecurity%2F2008%2F08%2F04%2Fdhcp-script-injection%2F)
-- [![Technorati](http://usefulfor.com/security/wp-content/plugins/sociable/images/technorati.png)](http://technorati.com/faves?add=http%3A%2F%2Fusefulfor.com%2Fsecurity%2F2008%2F08%2F04%2Fdhcp-script-injection%2F)
-
-  This entry was posted on Monday, August 4th, 2008 at 11:39 am and is filed under [hack-fu](http://usefulfor.com/security/category/hack-fu/). You can follow any responses to this entry through the [RSS 2.0](http://usefulfor.com/security/2008/08/04/dhcp-script-injection/feed/) feed. You can leave a response, or [trackback](http://usefulfor.com/security/2008/08/04/dhcp-script-injection/trackback/) from your own site.
-
-### Leave a Reply
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website

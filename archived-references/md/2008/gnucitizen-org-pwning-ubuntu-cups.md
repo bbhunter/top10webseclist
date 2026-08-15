@@ -6,16 +6,18 @@ tags: [article, webseclist-reference, en-US, gnucitizen-org]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:20+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/blog/pwning-ubuntu-via-cups/"
     title: Pwning Ubuntu via CUPS
+    author: Adrian Pastor
   - id: capture
     resource: "https://web.archive.org/web/20100621215929/https://www.gnucitizen.org/blog/pwning-ubuntu-via-cups/"
 also_at: []
-authors: []
+authors:
+  - Adrian Pastor
 canonical_url: ""
 cited_by:
   - "2008.md:53"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Pwning Ubuntu via CUPS
 
-**Pwning Ubuntu via CUPS** - Author not stated, gnucitizen.org.
+**Pwning Ubuntu via CUPS** - Adrian Pastor, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/blog/pwning-ubuntu-via-cups/>

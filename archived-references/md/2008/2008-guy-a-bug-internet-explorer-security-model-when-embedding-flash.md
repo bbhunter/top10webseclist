@@ -93,19 +93,3 @@ try{ $d = document; //Mess with the DOM }catch(ex){ window.location.reload(); }
 I was impressed that Microsoft implemented such a security feature as opposed to FireFox, Chrome and others who don't have a similar restriction. but, it needs to be done right otherwise it misses the point.
 
 As I said, I'll post a real world example of this being exploited, soon.
-
-[ All posts](https://guya.net/)
-
-## Related Posts
-
-- [Sep 14, 2008Encapsulating CSRF attacks inside massively distributed Flash movies - Real world example](https://guya.net/2008/09/14/encapsulating-csrf-attacks-inside-massively-distributed-flash-movies-real-world-example/)
-- [Aug 28, 2015Webcam spying with Chrome](https://guya.net/2015/08/28/webcam-spying-with-chrome/)
-- [Aug 25, 2015The never ending browser sessions](https://guya.net/2015/08/25/the-never-ending-browser-sessions/)
-
-## Comments ( 1 )
-
-Imported from the original blog
-
-Hayden BennettMay 6, 2010
-
-Internet Explorer 8 have been my most used browser this year, it is definitely stable and fast loading too. ``

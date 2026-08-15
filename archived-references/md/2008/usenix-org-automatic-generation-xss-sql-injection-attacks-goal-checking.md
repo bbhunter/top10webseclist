@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html"
     title: Automatic Generation of XSS and SQL Injection Attacks with Goal-Directed Model Checking
+    author: Michael Martin, Monica S. Lam
 also_at: []
-authors: []
+authors:
+  - Michael Martin
+  - Monica S. Lam
 canonical_url: ""
 cited_by:
-  - "2008.md:91"
+  - "2008.md:92"
 commit: ""
 content_sha256: 8183f290b5a46d2dbc0ee3e3eed82493c6be393d974ce4b4c754f9395f07789b
 depth: full
@@ -41,7 +44,7 @@ translation_of: ""
 
 # Automatic Generation of XSS and SQL Injection Attacks with Goal-Directed Model Checking
 
-**Automatic Generation of XSS and SQL Injection Attacks with Goal-Directed Model Checking** - Author not stated, usenix.org.
+**Automatic Generation of XSS and SQL Injection Attacks with Goal-Directed Model Checking** - Michael Martin, Monica S. Lam, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/legacy/event/sec08/tech/full_papers/martin/martin_html/index.html>

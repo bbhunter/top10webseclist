@@ -97,11 +97,3 @@ Hole at www.vc-link.net I found as far back at 2006, but not attended too much a
 Recursive File Include can be in PHP (Recursive PHP Include), and in other languages (for example in ASP). But, as showed my researches, recursion automatically works only in PHP applications (full recursive file inclusion). But nevertheless with special way it’s possible to conduct Recursive File Include attacks and in other languages, particularly in ASP. Recursive PHP Include, Recursive ASP Include and other recursive inclusions are variety of Recursive File Include vulnerability.
 
 This vulnerability represent a danger to web sites, so developers of web applications need to not allow such vulnerabilities and more attend to security of their applications.
-
-This entry was posted on 22:55 24.04.2008 and is filed under [Статті](http://websecurity.com.ua/category/articles/). You can follow any responses to this entry through the [RSS 2.0](http://websecurity.com.ua/2047/feed/) feed.
-
-### Leave a Reply
-
-You must be [logged in](http://websecurity.com.ua/wp-login.php?redirect_to=http://websecurity.com.ua/2047/) to post a comment.
-
----

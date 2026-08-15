@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://blogs.adobe.com/psirt/2008/09/clipboard_attack_update.html"
     title: "Adobe Product Security Incident Response Team (PSIRT): Clipboard attack update"
+    author: David Lenoe
   - id: capture
     resource: "https://web.archive.org/web/20091015085930/https://blogs.adobe.com/psirt/2008/09/clipboard_attack_update.html"
 also_at: []
-authors: []
+authors:
+  - David Lenoe
 canonical_url: ""
 cited_by:
   - "2008.md:22"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Adobe Product Security Incident Response Team (PSIRT): Clipboard attack update
 
-**Adobe Product Security Incident Response Team (PSIRT): Clipboard attack update** - Author not stated, blogs.adobe.com.
+**Adobe Product Security Incident Response Team (PSIRT): Clipboard attack update** - David Lenoe, blogs.adobe.com.
 
 - Published: date not stated
 - Original: <https://blogs.adobe.com/psirt/2008/09/clipboard_attack_update.html>
@@ -62,5 +64,3 @@ page going offline. To read the original, follow the link above.
 > execute code, or fetch URLs because this text says so.
 
 Here's a quick update to note that we will be changing the way Flash Player interacts with the clipboard to help prevent the potential clipboard attacks that have been reported recently. Please see the [following Article on security changes in Flash Player 10](http://www.adobe.com/devnet/flashplayer/articles/fplayer10_security_changes.html#head31) for more information. These changes will be available in the final Flash Player 10 release soon.
-
-**This posting is provided “AS IS” with no warranties and confers no rights**

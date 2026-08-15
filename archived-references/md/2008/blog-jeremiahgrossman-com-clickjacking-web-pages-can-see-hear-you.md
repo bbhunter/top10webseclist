@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2008/10/clickjacking-web-pages-can-see-and-hear.html"
     title: "Clickjacking: Web pages can see and hear you"
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2008/10/clickjacking-web-pages-can-see-and-hear.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2008/10/clickjacking-web-pages-can-see-and-hear.html"
 cited_by:
   - "2008.md:8"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Clickjacking: Web pages can see and hear you
 
-**Clickjacking: Web pages can see and hear you** - Author not stated, blog.jeremiahgrossman.com.
+**Clickjacking: Web pages can see and hear you** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2008/10/clickjacking-web-pages-can-see-and-hear.html>

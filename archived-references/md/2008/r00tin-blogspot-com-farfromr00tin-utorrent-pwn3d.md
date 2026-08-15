@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://r00tin.blogspot.com/2008/04/utorrent-pwn3d.html"
     title: "Farfromr00tin: uTorrent Pwn3d"
+    author: Rob
 also_at: []
-authors: []
+authors:
+  - Rob
 canonical_url: ""
 cited_by:
   - "2008.md:19"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Farfromr00tin: uTorrent Pwn3d
 
-**Farfromr00tin: uTorrent Pwn3d** - Author not stated, r00tin.blogspot.com.
+**Farfromr00tin: uTorrent Pwn3d** - Rob, r00tin.blogspot.com.
 
 - Published: date not stated
 - Original: <https://r00tin.blogspot.com/2008/04/utorrent-pwn3d.html>
@@ -116,5 +118,3 @@ If your target is using IE 6 then you don't have to force them to download a fil
 
 [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpygjxODR8-nGf-_bYiNWUmzy2UXuqSE1lFadR5mJyXvpjc111T62HaER3lV6mXW0Lk8QH6PFxdPX9g7ucIo3ZN6Hb0xLHYKzFvyXxs8o3X79T9IqX5jnBqOgo_T9orAxQ9IVy_g/s200/stallowned.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpygjxODR8-nGf-_bYiNWUmzy2UXuqSE1lFadR5mJyXvpjc111T62HaER3lV6mXW0Lk8QH6PFxdPX9g7ucIo3ZN6Hb0xLHYKzFvyXxs8o3X79T9IqX5jnBqOgo_T9orAxQ9IVy_g/s1600-h/stallowned.jpg)
 Pwn3d. Stay tuned, more torrent pwnage to come soon...
-
-Labels: [computers](http://r00tin.blogspot.com/search/label/computers), [csrf](http://r00tin.blogspot.com/search/label/csrf), [local intranet zone](http://r00tin.blogspot.com/search/label/local%20intranet%20zone), [local web servers](http://r00tin.blogspot.com/search/label/local%20web%20servers), [localhost](http://r00tin.blogspot.com/search/label/localhost), [loopback](http://r00tin.blogspot.com/search/label/loopback), [security](http://r00tin.blogspot.com/search/label/security), [utorrent](http://r00tin.blogspot.com/search/label/utorrent), [xss](http://r00tin.blogspot.com/search/label/xss), [zero day](http://r00tin.blogspot.com/search/label/zero%20day)

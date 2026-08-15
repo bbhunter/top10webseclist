@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://schmoil.blogspot.com/2008/03/smuggling-smtp-through-open-http.html"
     title: Smuggling SMTP through open HTTP proxies
+    author: Mike Zusman
 also_at: []
-authors: []
+authors:
+  - Mike Zusman
 canonical_url: ""
 cited_by:
   - "2008.md:30"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Smuggling SMTP through open HTTP proxies
 
-**Smuggling SMTP through open HTTP proxies** - Author not stated, schmoil.blogspot.com.
+**Smuggling SMTP through open HTTP proxies** - Mike Zusman, schmoil.blogspot.com.
 
 - Published: date not stated
 - Original: <https://schmoil.blogspot.com/2008/03/smuggling-smtp-through-open-http.html>

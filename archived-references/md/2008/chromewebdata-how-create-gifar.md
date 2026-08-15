@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://riosec.com/how-to-create-a-gifar"
     title: How to Create a GIFAR
+    author: Christopher
   - id: capture
     resource: "https://web.archive.org/web/20081225132058/http://riosec.com/how-to-create-a-gifar"
 also_at: []
-authors: []
+authors:
+  - Christopher
 canonical_url: ""
 cited_by:
   - "2008.md:5"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # How to Create a GIFAR
 
-**How to Create a GIFAR** - Author not stated, riosec.com.
+**How to Create a GIFAR** - Christopher, riosec.com.
 
 - Published: date not stated
 - Original: <http://riosec.com/how-to-create-a-gifar>
@@ -118,5 +120,3 @@ Posted 2008-08-12 17:05 by Christopher
 At BlackHat, security researchers Billy Rios and Nathan McFeters presented "The Internet is Broken" which contained information on GIFARs, a term meaning GIF image files combined with Java ARchives (JAR). These files could be uploaded to sites that allow image uploading (such as many site's member photos), to run code in the context of that site - getting around the "same origin policy" that browsers impose. This works because GIF images (along with many other file types) store their header in the beginning of the file, and ZIP archives (which is what JAR files are made of) store their data at the tail.
 
 The folowing video demonstrates this technique.
-
-- [*Printer-friendly version*](http://riosec.com/print/241)

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20090403024932/http://aviv.raffon.net:80/2008/10/30/ADifferentOpera.aspx"
     title: Aviv Raff On .NET - A different Opera
+    author: Aviv Raff
   - id: capture
     resource: "https://web.archive.org/web/20090403024932/http://aviv.raffon.net:80/2008/10/30/ADifferentOpera.aspx"
 also_at: []
-authors: []
+authors:
+  - Aviv Raff
 canonical_url: ""
 cited_by:
   - "2008.md:9"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Aviv Raff On .NET - A different Opera
 
-**Aviv Raff On .NET - A different Opera** - Author not stated, aviv.raffon.net.
+**Aviv Raff On .NET - A different Opera** - Aviv Raff, aviv.raffon.net.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20090403024932/http://aviv.raffon.net:80/2008/10/30/ADifferentOpera.aspx>
@@ -126,100 +128,3 @@ Nevertheless, my recommendation for Opera users is still [to upgrade to the late
   |
 
 |   |
-
-| [Contact Me](https://web.archive.org/web/20090403024932/mailto:avivra@gmail.com) |  |
-
-  |   |   |
-
-|   |
-
-|   |  |
-
-  |   |   |
-
-|   |
-
-| RSS Feeds |  |
-| [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/rss.jpg)](https://web.archive.org/web/20090403024932/http://feeds.feedburner.com/AvivRaffOnnet)[![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/rss0day.jpg)](https://web.archive.org/web/20090403024932/http://feeds.feedburner.com/upcoming0days) |  |
-
-  |   |   |
-
-|   |
-
-|   |  |
-
-  |   |   |
-
-|   |
-
-| Blogroll |  |
-|
-
-|  [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20090403024932/http://arbel.net/blog/Rss.aspx)[ælij arbel](https://web.archive.org/web/20090403024932/http://arbel.net/blog/) |   |
-|  [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20090403024932/http://www.avidardik.com/feed/)[Avi Dardik](https://web.archive.org/web/20090403024932/http://www.avidardik.com/) |   |
-|  [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20090403024932/http://saguiitay.spaces.live.com/feed.rss)[Itay Sagui](https://web.archive.org/web/20090403024932/http://saguiitay.spaces.live.com/) |   |
-|  [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20090403024932/http://metasploit.blogspot.com/atom.xml)[Metasploit](https://web.archive.org/web/20090403024932/http://metasploit.blogspot.com/) |   |
-|  [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20090403024932/http://berendjanwever.blogspot.com/feeds/posts/default)[SkyLined](https://web.archive.org/web/20090403024932/http://berendjanwever.blogspot.com/) |   |
-|  [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20090403024932/http://www.theog.org/index.php/feed/)[The Og](https://web.archive.org/web/20090403024932/http://www.theog.org/) |   |
-|  [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20090403024932/http://www.youtube.com/watch?v=fALXpXWLH8Q)[אבי שמחי - חתונה עם גיטרה חשמלית](https://web.archive.org/web/20090403024932/http://www.youtube.com/watch?v=fALXpXWLH8Q) |   |
-|  [![](https://web.archive.org/web/20090403024932im_/http://aviv.raffon.net/images/feedButton.gif)](https://web.archive.org/web/20090403024932/http://www.ayacook.co.il/contact.html)[איה צור - קייטרינג גורמה](https://web.archive.org/web/20090403024932/http://www.ayacook.co.il/index.html) |   |
-
- |  |
-
-  |   |   |
-
-|   |
-
-| Archive |  |
-|
-
-|  [October, 2008 (3)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2008-10.aspx) |   |
-|  [September, 2008 (2)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2008-09.aspx) |   |
-|  [August, 2008 (1)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2008-08.aspx) |   |
-|  [July, 2008 (3)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2008-07.aspx) |   |
-|  [May, 2008 (4)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2008-05.aspx) |   |
-|  [April, 2008 (1)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2008-04.aspx) |   |
-|  [January, 2008 (7)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2008-01.aspx) |   |
-|  [December, 2007 (1)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2007-12.aspx) |   |
-|  [November, 2007 (1)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2007-11.aspx) |   |
-|  [October, 2007 (2)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2007-10.aspx) |   |
-|  [September, 2007 (2)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2007-09.aspx) |   |
-|  [August, 2007 (2)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2007-08.aspx) |   |
-|  [July, 2007 (1)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2007-07.aspx) |   |
-|  [June, 2007 (3)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2007-06.aspx) |   |
-|  [March, 2007 (4)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2007-03.aspx) |   |
-|  [January, 2007 (5)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2007-01.aspx) |   |
-|  [December, 2006 (2)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2006-12.aspx) |   |
-|  [November, 2006 (2)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2006-11.aspx) |   |
-|  [October, 2006 (2)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2006-10.aspx) |   |
-|  [September, 2006 (1)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2006-09.aspx) |   |
-|  [August, 2006 (3)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2006-08.aspx) |   |
-|  [July, 2006 (1)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2006-07.aspx) |   |
-|  [June, 2006 (1)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2006-06.aspx) |   |
-|  [April, 2006 (3)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2006-04.aspx) |   |
-|  [March, 2006 (3)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2006-03.aspx) |   |
-|  [February, 2006 (2)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2006-02.aspx) |   |
-|  [January, 2006 (1)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2006-01.aspx) |   |
-|  [December, 2005 (4)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2005-12.aspx) |   |
-|  [October, 2005 (2)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2005-10.aspx) |   |
-|  [September, 2005 (12)](https://web.archive.org/web/20090403024932/http://aviv.raffon.net/default,month,2005-09.aspx) |   |
-
- |  |
-
-  |   |   |
-
-|   |
-
-| Admin Login |  |
-|  [Sign In](https://web.archive.org/web/20090403024932/http:/aviv.raffon.net:80/2008/10/30/Login.aspx)   |  |
-
-  |   |   |
-
-|   |
-
-| Disclaimer |  |
-| The opinions expressed herein are my own personal opinions and do not represent my employer's view in anyway. |  |
-
-  |   |   |
-
-  |   |

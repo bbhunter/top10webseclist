@@ -79,15 +79,3 @@ Click to enlarge
 The first scenario is what most bad guys use proxies for. They connect back out to the Internet, to hide their real IP addresses. The second scenario, however, would allow them to use that same proxy server to hack other machines on the same network, including the firewall itself. The funny part is that there are tons of machines out on the Internet who have already been compromised, and the bad guys have intentionally placed proxies on these machines for other nefarious purposes. But it can also be used for internal reconnaissance, or worse. And yes, I have found this in the wild. By quickly enumerating the most likely places within [RFC1918](http://www.ietf.org/rfc/rfc1918.txt), it’s fairly easy to spot where the majority of devices are in most networks (note that [this kind of internal scanning will become more difficult with IPv6](http://www.sectheory.com/ipv4-to-ipv6.htm)).
 
 If there are internal machines with critical vulnerabilities on them, the proxy can be used to connect back into that network, to exploit those vulnerabilities which may give a bigger foothold or uncover other sensitive information. If you haven’t scanned your own network for open proxies, you probably should. This is yet another reason to limit what your web servers have access to within your own networks.
-
-  This entry was posted on Tuesday, May 20th, 2008 at 7:38 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

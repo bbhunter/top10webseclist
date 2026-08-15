@@ -12,11 +12,15 @@ sources:
   - id: original
     resource: "https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/index.html"
     title: Securing Frame Communication in Browsers
+    author: Adam Barth, Collin Jackson, John C. Mitchell
 also_at: []
-authors: []
+authors:
+  - Adam Barth
+  - Collin Jackson
+  - John C. Mitchell
 canonical_url: ""
 cited_by:
-  - "2008.md:86"
+  - "2008.md:87"
 commit: ""
 content_sha256: c769d5fd68ef70df29d470824949c00d177bd6c2733c55770bdae444fc2ef395
 depth: full
@@ -41,7 +45,7 @@ translation_of: ""
 
 # Securing Frame Communication in Browsers
 
-**Securing Frame Communication in Browsers** - Author not stated, usenix.org.
+**Securing Frame Communication in Browsers** - Adam Barth, Collin Jackson, John C. Mitchell, usenix.org.
 
 - Published: date not stated
 - Original: <https://www.usenix.org/legacy/event/sec08/tech/full_papers/barth/barth_html/index.html>

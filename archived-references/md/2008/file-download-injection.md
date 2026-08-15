@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://dl.packetstormsecurity.net/papers/attack/Aspect_File_Download_Injection.pdf"
     title: File Download Injection
+    author: Jeff Williams
 also_at: []
-authors: []
+authors:
+  - Jeff Williams
 canonical_url: ""
 cited_by:
   - "2008.md:63"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # File Download Injection
 
-**File Download Injection** - Author not stated, Publisher not stated.
+**File Download Injection** - Jeff Williams, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://dl.packetstormsecurity.net/papers/attack/Aspect_File_Download_Injection.pdf>
@@ -49,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

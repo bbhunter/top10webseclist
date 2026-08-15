@@ -105,4 +105,3 @@ CSRF on Novell GroupWise WebAccess allows email theft and other attacks
  Permission is granted for copying and circulating this Bulletin to the Internet community for the purpose of alerting them to problems, if and only if the Bulletin is not changed or edited in any way, is attributed to ProCheckUp indicating this web page URL, and provided such reproduction and/or distribution is performed for non-commercial purposes.
 
  Any other use of this information is prohibited. ProCheckUp is not liable for any misuse of this information by any third party. ProCheckUp is not responsible for the content of external Internet sites.
-  [Back to Vulnerabilities List](http://www.procheckup.com/procheckup-labs.aspx)

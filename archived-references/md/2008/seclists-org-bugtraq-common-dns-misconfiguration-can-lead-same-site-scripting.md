@@ -167,14 +167,3 @@ taviso () sdf lonestar org | finger me for my gpg key.
 ```
 
 ---
-
-### Current thread:
-
-- **common dns misconfiguration can lead to "same site" scripting** *Tavis Ormandy (Jan 18)*
-
-- [Re: common dns misconfiguration can lead to "same site" scripting](https://seclists.org/bugtraq/2008/Jan/291) *Kurt Grutzmacher (Jan 19)*
-- [Re: common dns misconfiguration can lead to "same site" scripting](https://seclists.org/bugtraq/2008/Jan/298) *Florian Weimer (Jan 21)*
-
-- [Re: common dns misconfiguration can lead to "same site" scripting](https://seclists.org/bugtraq/2008/Jan/320) *David Malone (Jan 22)*
-
-- [Re: common dns misconfiguration can lead to "same site" scripting](https://seclists.org/bugtraq/2008/Jan/323) *Florian Weimer (Jan 22)*

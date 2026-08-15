@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "http://blueinfy.com/wp/blindsql.pdf"
     title: Pulling system32 out over blind SQL Injection
+    author: Shreeraj Shah
   - id: canonical
     resource: "https://blueinfy.com"
   - id: capture
     resource: "https://web.archive.org/web/20081204225130/http://blueinfy.com/wp/blindsql.pdf"
 also_at: []
-authors: []
+authors:
+  - Shreeraj Shah
 canonical_url: "https://blueinfy.com"
 cited_by:
   - "2008.md:56"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Pulling system32 out over blind SQL Injection
 
-**Pulling system32 out over blind SQL Injection** - Author not stated, blueinfy.com.
+**Pulling system32 out over blind SQL Injection** - Shreeraj Shah, blueinfy.com.
 
 - Published: date not stated
 - Original: <http://blueinfy.com/wp/blindsql.pdf>
