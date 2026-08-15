@@ -576,6 +576,19 @@ function parseYearMarkdown(markdown, year, recordLookup, yearRecord = yearRecord
       ...(documentLink.record?.authors?.length
         ? { authors: creditList(documentLink.record.authors) }
         : {}),
+      // WHAT THE SOURCE FOUND, in the archive's own words, and the controlled
+      // tags that make it findable. Both are read out of the archived document
+      // by a reviewer, because nothing mechanical can tell you a 40KB page is
+      // about a parser differential. Taken from the same link as the byline -
+      // the copy the reader opens - and emitted only where written, so the
+      // 1,684-item payload does not carry a key per reference for a summary
+      // nobody has got to yet.
+      ...(documentLink.record?.digest?.text
+        ? { summary: documentLink.record.digest.text }
+        : {}),
+      ...(documentLink.record?.digest?.tags?.length
+        ? { tags: [...documentLink.record.digest.tags] }
+        : {}),
       kind: record?.kind || "link",
       language: record?.language || "",
       published: record?.published || "",
@@ -979,6 +992,25 @@ async function handleViewClick(event) {
     return;
   }
 
+  // A tag in the artifact dialog runs the search it names. The whole point of a
+  // controlled vocabulary is that the reader does not have to guess the archive's
+  // spelling, so clicking is the way to ask - and it goes through the same
+  // `tag:` qualifier a reader could have typed, rather than a private code path.
+  const tagTarget = event.target.closest("[data-tag]");
+  if (tagTarget) {
+    const query = `tag:${tagTarget.dataset.tag}`;
+    if ($("#artifact-dialog").open) $("#artifact-dialog").close();
+    const box = $("#global-search");
+    box.value = query;
+    state.query = query;
+    box.focus();
+    updateGlobalSearch();
+    ensureAllCollections().then(() => {
+      if (state.query === query) updateGlobalSearch();
+    }).catch((error) => toast(`The full search index could not be loaded: ${error.message}`));
+    return;
+  }
+
   const artifactTarget = event.target.closest("[data-artifact]");
   if (artifactTarget) {
     if (artifactTarget.dataset.dragged === "true") {
@@ -1349,6 +1381,11 @@ const SEARCH_FIELDS = {
   title: (item) => item.title || "",
   year: (item) => String(item.yearLabel || item.year || ""),
   topic: (item) => item.topic || "",
+  // `tag:` is the one field worth asking about exactly. A title says what a
+  // researcher called their finding, which is often a joke or a brand; the tag
+  // says what it IS. Free text already sees the tags, so this qualifier exists
+  // for the reader who wants xsleak and not every page that mentions leaking.
+  tag: (item) => (item.tags || []).join(" "),
 };
 
 // "author:" while it is still being typed is not a request for nothing, so a
@@ -1371,7 +1408,13 @@ function queryItems(items, query = state.query) {
     // Searching a research archive by researcher is the obvious question, and
     // until the author reached the shard the only way to ask it was to know
     // which domain they blogged on twenty years ago.
-    const haystack = `${item.title} ${creditOf(item)} ${item.topic} ${item.year} ${item.kind}`.toLowerCase();
+    // The summary and tags join the haystack because they are the only text
+    // here written to describe the FINDING. A title is what the researcher
+    // chose to call it, and a good half of this archive is called something
+    // like "Bad things happen" - searching those alone answers questions about
+    // naming rather than about research.
+    const haystack = (`${item.title} ${creditOf(item)} ${item.topic} ${item.year} ${item.kind} `
+      + `${item.summary || ""} ${(item.tags || []).join(" ")}`).toLowerCase();
     return terms.every((term) => (term.pick
       ? term.pick(item).toLowerCase().includes(term.word)
       : haystack.includes(term.word)));
@@ -2585,6 +2628,21 @@ async function openArtifact(id) {
     ? `This technique placed #${item.rank} in the ${item.year} Top 10. The archive connects the curated listing to the preserved research and its original source.`
     : `This work was nominated in ${item.year}. It remains part of the long tail of research preserved alongside the winning techniques.`;
   $("#artifact-context").textContent = item.note ? `${contextText} Listing note: ${item.note}.` : contextText;
+  // WHAT THE RESEARCH FOUND, above the provenance. Everything else in this
+  // dialog describes the archive's handling of the reference; this is the only
+  // line about the work itself, so it goes first and it is absent rather than
+  // stubbed where nobody has written one yet. Tags are buttons: a reader who
+  // recognises the technique should be able to ask for the rest of it without
+  // learning the query syntax.
+  const digestBox = $("#artifact-digest");
+  if (digestBox) {
+    const tags = (item.tags || []).map((tag) =>
+      `<button type="button" class="tag" data-tag="${h(tag)}">${h(tag)}</button>`).join("");
+    digestBox.innerHTML = item.summary
+      ? `<p>${h(item.summary)}</p>${tags ? `<div class="tags">${tags}</div>` : ""}`
+      : tags ? `<div class="tags">${tags}</div>` : "";
+    digestBox.hidden = !(item.summary || tags);
+  }
   const credited = (item.authors || []).join(", ");
   $("#artifact-facts").innerHTML = `
     ${credited ? `<div><dt>Author</dt><dd title="${h(credited)}">${h(credited)}</dd></div>` : ""}

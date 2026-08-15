@@ -21,6 +21,7 @@ guide. Run `python tools/references/refs.py <command> --help` for a command.
 """
 
 import argparse
+import html
 import json
 import re
 import sys
@@ -2607,8 +2608,15 @@ def _trim_to_sentence(text, limit=DIGEST_MAX):
     A summary that stops mid-clause reads as damage, and this archive already
     publishes enough of that. Returns "" when there is no sentence break to cut
     at, so the caller refuses the reading instead of publishing a fragment.
+
+    THE SUMMARY IS PLAIN TEXT, so HTML entities are decoded once on the way in.
+    A reviewer quoting a payload naturally writes `&lt;script&gt;` - they have
+    just read it that way in the archived page - and every consumer escapes
+    again on output, so storing it escaped shows the reader `&lt;script&gt;`
+    where the payload should be. 32 summaries were written that way before this
+    ran here.
     """
-    text = " ".join(str(text or "").split())
+    text = html.unescape(" ".join(str(text or "").split()))
     if len(text) <= limit:
         return text
     # SEARCH WITHIN `limit`, NOT `limit + 1`. The slice keeps the full stop

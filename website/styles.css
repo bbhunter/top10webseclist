@@ -414,6 +414,11 @@
   .artifact-badges { display: flex; flex-wrap: wrap; gap: 6px; }
   .artifact-badges span { padding: 5px 8px; color: var(--muted); background: rgba(255,255,255,.03); border: 1px solid var(--line); border-radius: 5px; font: .6rem var(--mono); }
   .artifact-context { margin: 28px 0; padding: 17px 19px; color: #b5c8c0; background: rgba(130,245,178,.045); border-left: 2px solid var(--dialog-color, var(--mint)); font-size: .78rem; line-height: 1.65; }
+  .artifact-digest { margin: 28px 0; }
+  .artifact-digest p { margin: 0 0 14px; color: var(--ink); font-size: .84rem; line-height: 1.7; }
+  .artifact-digest .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .artifact-digest .tag { padding: 4px 9px; color: var(--faint); font: .58rem var(--mono); background: var(--panel); border: 1px solid var(--line); border-radius: 999px; cursor: pointer; }
+  .artifact-digest .tag:hover, .artifact-digest .tag:focus-visible { color: var(--dialog-color, var(--mint)); border-color: var(--dialog-color, var(--mint)); }
   .artifact-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; overflow: hidden; margin-bottom: 28px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; }
   .artifact-facts div { min-width: 0; padding: 13px; background: var(--panel); }
   /* The author is a fifth fact and only appears where the archive knows one, so
