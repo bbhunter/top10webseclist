@@ -119,7 +119,3 @@ Here is the code used in the video:
 [Luke Jahnke](https://x.com/lukejahnke) pointed out you can make a background request without the url() syntax. A plain string will do. This means the vector can be reduced to:
 
  `<div style='--val:attr(title);--steal:if(style(--val:"1"): "/1"; else: "/2");background:image-set(var(--steal))' title=1>test</div>`
-
- [ CSS ](https://portswigger.net/research/css) [ CSS injection ](https://portswigger.net/research/css-injection) [ Exfiltration ](https://portswigger.net/research/exfiltration)
-
-[Back to all articles](https://portswigger.net/research/articles)

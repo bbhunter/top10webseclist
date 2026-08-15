@@ -12,11 +12,12 @@ sources:
   - id: original
     resource: "https://portswigger.net/research/saml-roulette-the-hacker-always-wins"
     title: "SAML roulette: the hacker always wins"
-    author: Gareth Heyes
+    author: Gareth Heyes, Zakhar Fedotkin
     last_modified: 2025-03-18
 also_at: []
 authors:
   - Gareth Heyes
+  - Zakhar Fedotkin
 canonical_url: ""
 cited_by:
   - "2025.md:90"
@@ -44,7 +45,7 @@ translation_of: ""
 
 # SAML roulette: the hacker always wins
 
-**SAML roulette: the hacker always wins** - Gareth Heyes, PortSwigger Research.
+**SAML roulette: the hacker always wins** - Gareth Heyes, Zakhar Fedotkin, PortSwigger Research.
 
 - Published: 2025-03-18
 - Original: <https://portswigger.net/research/saml-roulette-the-hacker-always-wins>
@@ -227,9 +228,3 @@ By using this publicly available signed document, an attacker can:
 ### Mitigation
 
 To prevent this type of attack, ensure that the same library is used for both parsing and validating signed XML documents. Avoid marshaling and unmarshaling untrusted user data. These vulnerabilities where fixed in versions 17.9.2, 17.8.5, 17.7.7 for GitLab Community Edition (CE) and Enterprise Edition (EE).
-
- Make sure to follow us on [X (formerly Twitter)](https://x.com/PortSwiggerRes) and [Bluesky](https://bsky.app/profile/portswiggerres.bsky.social), and join the official [PortSwigger Discord](https://discord.com/channels/1159124119074381945/) to stay updated!
-
- [ XML ](https://portswigger.net/research/xml) [ SAML ](https://portswigger.net/research/saml) [ Authorization ](https://portswigger.net/research/authorization)
-
-[Back to all articles](https://portswigger.net/research/articles)

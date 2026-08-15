@@ -74,23 +74,3 @@ As more critical services move onto the web, it has become increasingly importan
  [Slides](https://www.ndss-symposium.org/wp-content/uploads/3C-s0366-guo.pdf)
 
  [Video](https://youtu.be/pxqHp0o0mBo)
-
-## View More Papers
-
-### [ Victim-Centred Abuse Investigations and Defenses for Social Media Platforms ](https://www.ndss-symposium.org/ndss-paper/auto-draft-590/)
-
- Zaid Hakami (Florida International University and Jazan University), Ashfaq Ali Shafin (Florida International University), Peter J. Clarke (Florida International University), Niki Pissinou (Florida International University), and Bogdan Carbunar (Florida International University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-590/)
-
-### [ ProvGuard: Detecting SDN Control Policy Manipulation via Contextual Semantics... ](https://www.ndss-symposium.org/ndss-paper/provguard-detecting-sdn-control-policy-manipulation-via-contextual-semantics-of-provenance-graphs/)
-
- Ziwen Liu (Beihang University), Jian Mao (Beihang University; Tianmushan Laboratory; Hangzhou Innovation Institute, Beihang University), Jun Zeng (National University of Singapore), Jiawei Li (Beihang University; National University of Singapore), Qixiao Lin (Beihang University), Jiahao Liu (National University of Singapore), Jianwei Zhuge (Tsinghua University; Zhongguancun Laboratory), Zhenkai Liang (National University of Singapore)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/provguard-detecting-sdn-control-policy-manipulation-via-contextual-semantics-of-provenance-graphs/)
-
-### [ Privacy-Enhancing Technologies Against Physical-Layer and Link-Layer Device Tracking: Trends,... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-606/)
-
- Apolline Zehner (Universite libre de Bruxelles), Iness Ben Guirat (Universite libre de Bruxelles), Jan Tobias Muhlberg (Universite libre de Bruxelles)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-606/)

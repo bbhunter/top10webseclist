@@ -426,5 +426,3 @@ GG.
 There is always a way. Keep looking deeper.
 
 -Rhynorater
-
- [csp](https://lab.ctbb.show/research/?tag=csp) [auth-token](https://lab.ctbb.show/research/?tag=auth-token) [ato](https://lab.ctbb.show/research/?tag=ato) [post-request-hijack](https://lab.ctbb.show/research/?tag=post-request-hijack)

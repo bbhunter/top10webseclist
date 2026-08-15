@@ -280,5 +280,3 @@ The solution was to [sandbox](https://developer.mozilla.org/en-US/docs/Web/HTML/
 >
 
 Blocked form submission to ‘https://example.com/some-handler-doing-serverside-redirect’ because the form’s frame is sandboxed and the ‘allow-forms’ permission is not set.
-
- [browser](https://lab.ctbb.show/research/?tag=browser) [xss](https://lab.ctbb.show/research/?tag=xss) [oauth](https://lab.ctbb.show/research/?tag=oauth) [redirect](https://lab.ctbb.show/research/?tag=redirect)

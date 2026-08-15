@@ -73,23 +73,3 @@ Open redirects are one of the oldest threats to web applications, allowing attac
  [Slides](https://www.ndss-symposium.org/wp-content/uploads/11C-f0523-De-Stefano.pdf)
 
  [Video](https://youtu.be/qaqJCCNxSSw)
-
-## View More Papers
-
-### [ SafeSplit: A Novel Defense Against Client-Side Backdoor Attacks in... ](https://www.ndss-symposium.org/ndss-paper/safesplit-a-novel-defense-against-client-side-backdoor-attacks-in-split-learning/)
-
- Phillip Rieger (Technical University of Darmstadt), Alessandro Pegoraro (Technical University of Darmstadt), Kavita Kumari (Technical University of Darmstadt), Tigist Abera (Technical University of Darmstadt), Jonathan Knauer (Technical University of Darmstadt), Ahmad-Reza Sadeghi (Technical University of Darmstadt)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/safesplit-a-novel-defense-against-client-side-backdoor-attacks-in-split-learning/)
-
-### [ Optimizing Trust-Centric Authentication in Matter-enabled IoT Devices with PUF... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-559/)
-
- Chandranshu Gupta, Gaurav Varshney (IIT Jammu)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-559/)
-
-### [ L-HAWK: A Controllable Physical Adversarial Patch Against a Long-Distance... ](https://www.ndss-symposium.org/ndss-paper/l-hawk-a-controllable-physical-adversarial-patch-against-a-long-distance-target/)
-
- Taifeng Liu (Xidian University), Yang Liu (Xidian University), Zhuo Ma (Xidian University), Tong Yang (Peking University), Xinjing Liu (Xidian University), Teng Li (Xidian University), Jianfeng Ma (Xidian University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/l-hawk-a-controllable-physical-adversarial-patch-against-a-long-distance-target/)

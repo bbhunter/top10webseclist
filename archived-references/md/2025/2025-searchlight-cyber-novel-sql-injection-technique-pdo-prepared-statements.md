@@ -403,9 +403,3 @@ For hackers:
 - Use payloads like `\’?` and `?%00` to tease out SQL injection in scenarios that would otherwise go unnoticed.
 
 There is much more you can do by attacking the parser, but I’ve outlined some of the most common and surprising scenarios where this technique can be used. Until next time!
-
----
-
-## About Assetnote
-
-Searchlight Cyber’s ASM solution, [Assetnote](https://slcyber.io/dark-web-security-products/attack-surface-management-tool/), provides industry-leading attack surface management and adversarial exposure validation solutions, helping organizations identify and remediate security vulnerabilities before they can be exploited. Customers receive security alerts and recommended mitigations simultaneously with any disclosures made to third-party vendors. Visit our [attack surface management page](https://slcyber.io/dark-web-security-products/attack-surface-management-tool/) to learn more about our platform and [the research we do](https://slcyber.io/dark-web-security-products/attack-surface-management-tool/security-research/).

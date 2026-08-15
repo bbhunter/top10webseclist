@@ -986,7 +986,3 @@ Like anyone who calls themselves a ‘hacker’, we love looking into the future
 However, we’re starting to get just a little bit tired of warning the world of the dangers of abandoned infrastructure, so we want to assure our dear readership that our next research venture will be focused on some wholly unrelated topic.
 
 (Unfortunately, our next most recent Internet-wide research is a minefield at the moment from a coordination perspective, and is likely some time away from public disclosure).
-
-The research published by [watchTowr Labs](https://watchtowr.com/) is powered by the same engine behind the [watchTowr Platform](https://watchtowr.com/), our **Preemptive Exposure Management** solution built for enterprises that refuse to wait for the next satisfying advisory from their scanner vendor.
-
-The [watchTowr Platform](https://watchtowr.com/) combines **External Attack Surface Management** and **Continuous Automated Red Teaming** to test your defenses against the vulnerabilities and techniques that matter: the ones real attackers are actually exploiting.

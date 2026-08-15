@@ -492,13 +492,3 @@ In theory, any protocol supporting multiplexing could be vulnerable to last-byte
 We welcome researchers, developers, and engineers to contribute to QuicDraw or peruse other QUIC and HTTP/3 research.
 
 *Maor Abutbul is a security researcher at CyberArk Labs.*
-
-No Previous Articles
-
-###### Next Article
-
-![Cheaters never win: large-scale campaign targets gamers who cheat with StealC and cryptojacking](https://content.cdntwrk.com/mediaproxy?url=https%3A%2F%2Fwww.cyberark.com%2Fwp-content%2Fuploads%2F2025%2F09%2Fcover-image.jpg&size=1&version=1763475591&sig=c4bbeafebae9f996d8460379e71cf880&default=)
-
- Cheaters never win: large-scale campaign targets gamers who cheat with StealC and cryptojacking
-
-A sprawling cyber campaign is turning gamers’ hunger to gain an edge into a massive payday for threat actor...

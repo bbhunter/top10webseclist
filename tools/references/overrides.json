@@ -1831,6 +1831,62 @@
         "Joyee Cheung"
       ],
       "reason": "Reviewed 2026-08-15: the post carries its byline under the title - a \"[JC](https://github.com/joyeecheung)\" avatar link followed by \"Joyee Cheung\" - and the body confirms it: \"This fix was developed and backported to Node.js LTS branches by [Joyee Cheung](https://github.com/joyeecheung) (Igalia, under the sponsorship of Bloomberg).\" The archive recorded only the project account \"@nodejs\"."
+    },
+    "https://yeswehack.com/learn-bug-bounty/syntax-confusion-ambiguous-parsing-exploits": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Alex Brumen"
+      ],
+      "reason": "Reviewed 2026-08-15: the article states its own byline - \"*Writeup by Alex Brumen aka Brumens, researcher enablement analyst, YesWeHack*\". The archive recorded only the handle \"Brumens\"; the real name is recorded instead, with the handle preserved in this reason."
+    },
+    "https://portswigger.net/research/saml-roulette-the-hacker-always-wins": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Gareth Heyes",
+        "Zakhar Fedotkin"
+      ],
+      "reason": "Reviewed 2026-08-15: the article is written by Gareth Heyes but hands over a whole section to a second researcher - \"My highly skilled colleague, [Zak](https://x.com/d4d89704243), refined this mutation into a more streamlined and effective attack vector\" and \"My colleague **Zak** will demonstrate how this can be escalated to achieve **unauthenticated administrator access** on **GitLab**\". JUDGEMENT CALL: this document gives only the first name \"Zak\" and an X handle. The full name is taken from the sibling PortSwigger article archived as 2025-portswigger-research-fragile-lock-novel-bypasses-saml-authentication, whose author Zakhar Fedotkin writes \"In our previous research with Gareth Heyes - [SAML roulette: the hacker always wins]\", identifying himself as the co-author of this one."
+    },
+    "https://flattsecurity.medium.com/finding-an-unseen-sql-injection-by-bypassing-escape-functions-in-mysqljs-mysql-90b27f6542b4": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "stypr"
+      ],
+      "reason": "Reviewed 2026-08-15: the article introduces its author in the first person - \"Hi, I’m stypr ([@stereotype32](https://twitter.com/stereotype32), [https://harold.kim/](https://harold.kim/)) from Flatt Security Inc.\" The archive recorded only the company name. \"stypr\" is the handle the author publishes under; no fuller name appears in the document."
+    },
+    "https://github.com/vladko312/Research_Successful_Errors": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Vladislav Korchagin"
+      ],
+      "reason": "Reviewed 2026-08-15: the paper names its author under the title - \"Vladislav Korchagin - vladko312@gmail.com - @vladko312\". The archive recorded only the GitHub handle \"vladko312\"."
+    },
+    "https://osec.io/blog/2025-10-16-how-we-broke-exchanges-oauth-misconfigurations": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Bruno Halltari",
+        "Caue Obici"
+      ],
+      "reason": "Reviewed 2026-08-15: the recorded value was [\"Bruno Halltari\", \"Bruno Halltari, Caue Obici\"] - one name duplicated and the second entry an unsplit pair - so the published byline read \"Bruno Halltari, Bruno Halltari, Caue Obici, OtterSec.\" Split into the two people it was always meant to name."
+    },
+    "https://albertofdr.github.io/post/permission-hijacking-2025": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Alberto Fernandez-de-Retana"
+      ],
+      "reason": "Reviewed 2026-08-15: the recorded authors were [\"Alberto Fernandez-de-Retana\", \"@wowchemy\"]. \"@wowchemy\" is the Wowchemy/Hugo Blox site builder, harvested from the page’s generator metadata - it appears nowhere in the document and is not a person. Removed, leaving the one real author. This is the inverse of a missing byline: an invented one, and it had been printing in the published document as though a second researcher."
+    },
+    "https://medium.com/@omarelshopky/temenos-ofs-field-injection-revealing-a-hidden-financial-attack-vector-44df0e2bef9d": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Temenos OFS Field Injection: Revealing a Hidden Financial Attack Vector",
+      "reason": "Reviewed 2026-08-15: the recorded title said \"String Injection\" where three independent witnesses say \"Field Injection\" - the document's own H1, its body (\"I named it **\\\"Temenos OFS Field Injection\\\"**\"), the citing line at 2025.md:69, and the source URL slug itself (temenos-ofs-field-injection-...). The health probe recorded a third variant at capture time (\"Temenos OFS Injection: Revealing a Hidden Attack Vector\"), so the page appears to have been retitled more than once; the document and the citation are the two witnesses that agree."
     }
   }
 }

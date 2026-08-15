@@ -817,7 +817,3 @@ A technical TLDR:
 This technique is likely to surface in many other codebases, both in-house and vendor-supplied. If the research here proves anything, it is that the .NET Framework still has a few surprises left.
 
 For full technical details and complete code flows, [please refer to the whitepaper](https://watchtowr.com/wp-content/uploads/SOAPwnwatchtowr_soappwn-research-whitepaper_10-12-2025.pdf?ref=labs.watchtowr.com).
-
-The research published by [watchTowr Labs](https://watchtowr.com/) is powered by the same engine behind the [watchTowr Platform](https://watchtowr.com/), our **Preemptive Exposure Management** solution built for enterprises that refuse to wait for the next satisfying advisory from their scanner vendor.
-
-The [watchTowr Platform](https://watchtowr.com/) combines **External Attack Surface Management** and **Continuous Automated Red Teaming** to test your defenses against the vulnerabilities and techniques that matter: the ones real attackers are actually exploiting.

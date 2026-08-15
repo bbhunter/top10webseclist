@@ -383,7 +383,3 @@ To mitigate the risks described in this research, the following best practices s
 ### Conclusion
 
 Reliable authentication security cannot depend on unsupported or poorly maintained libraries. Comprehensive and lasting remediation requires significant restructuring of existing SAML libraries. Such changes may introduce breaking compatibility issues or regressions, but they are essential to ensure the robustness of XML parsing, signature validation, and canonicalization logic. Without this foundational rework, SAML authentication will remain vulnerable to the same classes of attacks that have persisted for nearly two decades.
-
- [ Black Hat ](https://portswigger.net/research/black-hat) [ SAML ](https://portswigger.net/research/saml) [ Zakhar Favourites ](https://portswigger.net/research/zakhar-fedotkin)
-
-[Back to all articles](https://portswigger.net/research/articles)

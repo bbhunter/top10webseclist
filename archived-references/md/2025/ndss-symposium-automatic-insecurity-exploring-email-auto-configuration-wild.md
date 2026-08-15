@@ -76,23 +76,3 @@ Email clients that support auto-configuration mechanisms automatically retrieve 
  [Slides](https://www.ndss-symposium.org/wp-content/uploads/8A-f1078-wen.pdf)
 
  [Video](https://youtu.be/Ug9TYG_qdTc)
-
-## View More Papers
-
-### [ A Multifaceted Study on the Use of TLS and... ](https://www.ndss-symposium.org/ndss-paper/a-multifaceted-study-on-the-use-of-tls-and-auto-detect-in-email-ecosystems/)
-
- Ka Fun Tang (The Chinese University of Hong Kong), Che Wei Tu (The Chinese University of Hong Kong), Sui Ling Angela Mak (The Chinese University of Hong Kong), Sze Yiu Chau (The Chinese University of Hong Kong)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/a-multifaceted-study-on-the-use-of-tls-and-auto-detect-in-email-ecosystems/)
-
-### [ CLIBE: Detecting Dynamic Backdoors in Transformer-based NLP Models ](https://www.ndss-symposium.org/ndss-paper/clibe-detecting-dynamic-backdoors-in-transformer-based-nlp-models/)
-
- Rui Zeng (Zhejiang University), Xi Chen (Zhejiang University), Yuwen Pu (Zhejiang University), Xuhong Zhang (Zhejiang University), Tianyu Du (Zhejiang University), Shouling Ji (Zhejiang University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/clibe-detecting-dynamic-backdoors-in-transformer-based-nlp-models/)
-
-### [ Delay-allowed Differentially Private Data Stream Release ](https://www.ndss-symposium.org/ndss-paper/delay-allowed-differentially-private-data-stream-release/)
-
- Xiaochen Li (University of Virginia), Zhan Qin (Zhejiang University), Kui Ren (Zhejiang University), Chen Gong (University of Virginia), Shuya Feng (University of Connecticut), Yuan Hong (University of Connecticut), Tianhao Wang (University of Virginia)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/delay-allowed-differentially-private-data-stream-release/)

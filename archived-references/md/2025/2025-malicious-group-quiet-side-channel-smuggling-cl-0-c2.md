@@ -257,13 +257,3 @@ The example above shows the sending side of the process. It uses the same `-u` o
 During my research, I identified multiple high-profile domains — including `.mil`, `.gov`, `.cn`, and others — all vulnerable to the same desynchronization-based attack. Despite being on different infrastructure and serving vastly different audiences, they shared the same underlying flaw. This highlights how widespread and impactful the technique can be. However, discovering these vulnerabilities isn't trivial; it requires a solid understanding of how HTTP desync works across various server configurations and CDNs.
 
 If you're a security researcher interested in learning more about how this technique works, feel free to reach out to me on X (@deadvolvo). What I've shared here only scratches the surface of this communication channel. There’s much more under the hood, but I’ve intentionally left out the deeper mechanics to avoid handing over a full playbook to potential malicious actors. Serious researchers willing to explore further will benefit from hands-on experimentation and analysis.
-
-#### Read next
-
- [![HTTP is dead... Long live HTTP?!](https://blog.malicious.group/content/images/size/w720/2023/11/new1.png) In this paper I will expose how HTTP's evolution has created exploitable security flaws. I'll demonstrate practical attacks like request smuggling and cache poisoning, and provide tactical approaches for security professionals to address these vulnerabilities.](https://blog.malicious.group/http-is-dead-long-live-http/)
-
- [
-
- ![From Akamai to F5 to NTLM... with love.](https://blog.malicious.group/content/images/size/w720/2023/10/comics-1.png)
-
-In this paper I will expose critical flaws in Akamai's implementation that lead to NTLM credential exposure. I'll demonstrate how these vulnerabilities chain across F5 infrastructure, presenting attack techniques and essential mitigations for defenders.

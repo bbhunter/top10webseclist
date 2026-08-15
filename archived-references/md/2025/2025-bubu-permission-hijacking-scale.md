@@ -12,12 +12,11 @@ sources:
   - id: original
     resource: "https://albertofdr.github.io/post/permission-hijacking-2025/"
     title: Permission Hijacking at Scale
-    author: Alberto Fernandez-de-Retana, @wowchemy
+    author: Alberto Fernandez-de-Retana
     last_modified: 2025-07-21
 also_at: []
 authors:
   - Alberto Fernandez-de-Retana
-  - @wowchemy
 canonical_url: ""
 cited_by:
   - "2025.md:38"
@@ -45,7 +44,7 @@ translation_of: ""
 
 # Permission Hijacking at Scale
 
-**Permission Hijacking at Scale** - Alberto Fernandez-de-Retana, @wowchemy, bubu.
+**Permission Hijacking at Scale** - Alberto Fernandez-de-Retana, bubu.
 
 - Published: 2025-07-21
 - Original: <https://albertofdr.github.io/post/permission-hijacking-2025/>

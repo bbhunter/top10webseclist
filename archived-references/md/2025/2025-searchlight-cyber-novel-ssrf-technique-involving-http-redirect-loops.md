@@ -211,9 +211,3 @@ Instead, we believe that the application was happy to follow a few redirects (an
 This technique may sound obscure to you, but it has now worked for us in several situations where we would not have been able to see the full HTTP response for 200 OK responses, but could see the full HTTP response for 500 status codes.
 
 So, the next time you’re working on a difficult blind SSRF vulnerability, remember this research post. You might be surprised by the outcome!
-
----
-
-### About Assetnote
-
-Searchlight Cyber’s ASM solution, [Assetnote](https://slcyber.io/dark-web-security-products/attack-surface-management-tool/), provides industry-leading attack surface management and adversarial exposure validation solutions, helping organizations identify and remediate security vulnerabilities before they can be exploited. Customers receive security alerts and recommended mitigations simultaneously with any disclosures made to third-party vendors. Visit our [attack surface management page](https://slcyber.io/dark-web-security-products/attack-surface-management-tool/) to learn more about out platform and [the research we do](https://slcyber.io/dark-web-security-products/attack-surface-management-tool/security-research/).

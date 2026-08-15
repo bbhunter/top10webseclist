@@ -323,5 +323,3 @@ fake server收到请求获取flag文件路径为`C:/flagxdzqs.txt`
 最后给出xxe-smb-server项目地址
 
 *https://github.com/cwkiller/xxe-smb-server*
-
-公众号专注于网络安全知识分享，主要为代码审计、攻防实战、WAF绕过等内容每周一篇期待你的关注。

@@ -324,5 +324,3 @@ Request `C:/flagxdzqs.txt` next to obtain the file's contents, `flag{Make XXE At
 Finally, here is the xxe-smb-server project's address
 
 *https://github.com/cwkiller/xxe-smb-server*
-
-This official account is devoted to sharing network security knowledge, mainly code auditing, practical attack and defence, WAF bypasses and similar, with one article a week. I look forward to your following it.

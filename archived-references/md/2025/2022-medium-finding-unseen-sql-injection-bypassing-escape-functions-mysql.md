@@ -12,13 +12,13 @@ sources:
   - id: original
     resource: "https://flattsecurity.medium.com/finding-an-unseen-sql-injection-by-bypassing-escape-functions-in-mysqljs-mysql-90b27f6542b4"
     title: Finding an unseen SQL Injection by bypassing escape functions in mysqljs/mysql
-    author: Flatt Security Inc.
+    author: stypr
     last_modified: 2022-05-23
   - id: capture
     resource: "https://web.archive.org/web/20250622215541/https://flattsecurity.medium.com/finding-an-unseen-sql-injection-by-bypassing-escape-functions-in-mysqljs-mysql-90b27f6542b4"
 also_at: []
 authors:
-  - Flatt Security Inc.
+  - stypr
 canonical_url: ""
 cited_by:
   - "2025.md:26"
@@ -46,7 +46,7 @@ translation_of: ""
 
 # Finding an unseen SQL Injection by bypassing escape functions in mysqljs/mysql
 
-**Finding an unseen SQL Injection by bypassing escape functions in mysqljs/mysql** - Flatt Security Inc., Medium.
+**Finding an unseen SQL Injection by bypassing escape functions in mysqljs/mysql** - stypr, Medium.
 
 - Published: 2022-05-23
 - Original: <https://flattsecurity.medium.com/finding-an-unseen-sql-injection-by-bypassing-escape-functions-in-mysqljs-mysql-90b27f6542b4>

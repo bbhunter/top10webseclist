@@ -303,25 +303,3 @@ const db = mysql.createConnection({
 ## Previous Research
 
 Although our team was initially unaware of this “feature” in the MySQL packages, and the resulting vulnerability affecting prepared statements in Node.js, we only fully realized the extent of the issue while conducting deeper research as part of a client engagement. A well-targeted Google search, however, revealed that this issue had already been identified by [Flatt Security Inc.](https://flattsecurity.medium.com/finding-an-unseen-sql-injection-by-bypassing-escape-functions-in-mysqljs-mysql-90b27f6542b4) in early 2022
-
-## Contact
-
-Contact Us
-
-#### Email:
-
-[info [] mantrainfosec [] com](mailto:info [] mantrainfosec [] com)
-
-#### Call:
-
-[+44 788 0076 532](tel:+447880076532)
-
-#### Location:
-
-London, United Kingdom
-
-Loading
-
-Your message has been sent. Thank you!
-
-Send Message

@@ -190,7 +190,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Stopping Redirects](md/2025/2025-critical-thinking-bug-bounty-podcast-stopping-redirects.md) | article | Critical Thinking - Bug Bounty Podcast | 2025 | research | 1 |
 | [Styled to Steal: The Overlooked Attack Surface in Email Clients](md/2025/styled-steal-overlooked-attack-surface-email-clients.md) | article |  |  | research | 1 |
 | [SVG clickjacking](md/2025/2025-lyra-s-epic-blog-svg-clickjacking.md) | article | lyra's epic blog | 2025 | research | 1 |
-| [Temenos OFS String Injection: Revealing a Hidden Financial Attack Vector](md/2025/2025-medium-temenos-ofs-string-injection-revealing-hidden-financial-vector.md) | article | Medium | 2025 | research | 1 |
+| [Temenos OFS Field Injection: Revealing a Hidden Financial Attack Vector](md/2025/2025-medium-temenos-ofs-field-injection-revealing-hidden-financial-attack-vector.md) | article | Medium | 2025 | research | 1 |
 | [The Fragile Lock: Novel Bypasses For SAML Authentication](md/2025/2025-portswigger-research-fragile-lock-novel-bypasses-saml-authentication.md) | article | PortSwigger Research | 2025 | research | 1 |
 | [The minefield between syntaxes: exploit syntax confusion in the wild](md/2025/2025-yeswehack-minefield-between-syntaxes-exploit-syntax-confusion-wild.md) | article | YesWeHack | 2025 | research | 1 |
 | [The Quiet Side Channel... Smuggling with CL.0 for C2](md/2025/2025-malicious-group-quiet-side-channel-smuggling-cl-0-c2.md) | article | Malicious Group | 2025 | research | 1 |

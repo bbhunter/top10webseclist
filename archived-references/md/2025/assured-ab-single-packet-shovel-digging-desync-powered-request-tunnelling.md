@@ -802,7 +802,3 @@ Further methods for making request tunnelling not blind
 
 - See James Kettle's [HEAD](https://portswigger.net/research/http2#vision) technique
 - `FOO\r\n\r\n` and similarly invalid requests
-
-[See All Blog Posts ->](https://www.assured.se/posts)
-
-Subscribe (RSS)

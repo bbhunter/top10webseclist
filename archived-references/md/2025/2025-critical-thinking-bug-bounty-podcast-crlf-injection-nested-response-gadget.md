@@ -346,5 +346,3 @@ class CustomHandler(SimpleHTTPRequestHandler):
         self.wfile.write(route.get('content', b''))
 
 ```
-
- [client-side](https://lab.ctbb.show/research/?tag=client-side) [crlf-injection](https://lab.ctbb.show/research/?tag=crlf-injection) [xss](https://lab.ctbb.show/research/?tag=xss) [csp](https://lab.ctbb.show/research/?tag=csp)

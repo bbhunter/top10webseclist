@@ -1454,35 +1454,3 @@ The following table shows the CVE numbers and severities issued by the vendor.
 *Vendor CVE and **CVSSv 4.0** scoring list*
 
 LogPoint is a European-born security platform headquartered in Copenhagen, Denmark, founded in the early 2000s with a focus on large-scale log ingestion and correlation. What started as a log management solution evolved into a unified **SIEM, SOAR, and UEBA** platform, designed to support detection engineering, investigation workflows, and automated response across complex enterprise environments. Today, LogPoint operates globally, serving more than 1000+ organizations that rely on it for both real-time threat detection and compliance-driven security monitoring.
-
-## You may also enjoy…
-
--
-
-### [The Story of a Perfect Exploit Chain: Six Bugs That Looked Harmless Until They Became Pre-Auth RCE in a Security Appliance](https://mehmetince.net/the-story-of-a-perfect-exploit-chain-six-bugs-that-looked-harmless-until-they-became-pre-auth-rce-in-a-security-appliance/)
-
-Jan 2026
-
--
-
-### [Inside PostHog: How SSRF, a ClickHouse SQL Escaping 0day, and Default PostgreSQL Credentials Formed an RCE Chain (ZDI-25-099, ZDI-25-097, ZDI-25-096)](https://mehmetince.net/inside-posthog-how-ssrf-a-clickhouse-sql-escaping-0day-and-default-postgresql-credentials-formed-an-rce-chain-zdi-25-099-zdi-25-097-zdi-25-096/)
-
-Dec 2025
-
--
-
-### [The Chessboard of Security: Insights on Product Development and Vulnerabilities from a Hacker Perspective](https://mehmetince.net/the-chessboard-of-security-insights-on-product-development-and-vulnerabilities-from-a-hacker-perspective/)
-
-Nov 2025
-
--
-
-### [Digital Cosmos: A Journey Through the Galaxy of Vulnerabilities](https://mehmetince.net/digital-cosmos-a-journey-through-the-galaxy-of-vulnerabilities/)
-
-Oct 2025
-
--
-
-### [CVE-2021-3825 | LiderAhenk 0day – All your PARDUS Clients Belongs To Me](https://mehmetince.net/cve-2021-3825-liderahenk-0day-all-your-pardus-clients-belongs-to-me/)
-
-Dec 2021

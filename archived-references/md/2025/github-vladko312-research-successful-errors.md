@@ -12,11 +12,11 @@ sources:
   - id: original
     resource: "https://github.com/vladko312/Research_Successful_Errors"
     title: Blind SSTI
-    author: vladko312
+    author: Vladislav Korchagin
 also_at:
   - "https://raw.githubusercontent.com/vladko312/Research_Successful_Errors/main/Successful%20Errors.pdf"
 authors:
-  - vladko312
+  - Vladislav Korchagin
 canonical_url: ""
 cited_by:
   - "2025.md:5"
@@ -44,7 +44,7 @@ translation_of: ""
 
 # Blind SSTI
 
-**Blind SSTI** - vladko312, GitHub.
+**Blind SSTI** - Vladislav Korchagin, GitHub.
 
 - Published: date not stated
 - Original: <https://github.com/vladko312/Research_Successful_Errors>

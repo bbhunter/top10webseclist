@@ -652,7 +652,3 @@ It make sense to think that the sequential flow, where we verify the ZIP archive
 Schizophrenic ZIP is an archive file that – after unzipping by two different software – may return two different files. This property might be use to confuse sequential flows. The code responsible for detecting path traversal in ZIP might see different entries than will be actually extracted from the archive.
 
  
-
-####  [Paweł Hałdrzyński](https://blog.isec.pl/author/ph/)
-
--  

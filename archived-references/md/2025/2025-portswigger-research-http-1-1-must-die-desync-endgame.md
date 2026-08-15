@@ -549,7 +549,3 @@ Over the last six years, we've seen that a design flaw in HTTP/1.1 regularly exp
 Good luck!
 
 James Kettle
-
- [ Request Smuggling ](https://portswigger.net/research/request-smuggling) [ Black Hat ](https://portswigger.net/research/black-hat) [ DEF CON ](https://portswigger.net/research/def-con)
-
-[Back to all articles](https://portswigger.net/research/articles)
