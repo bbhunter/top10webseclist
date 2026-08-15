@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.inputzero.io/2018/09/buggy-skype.html"
     title: An untold story of skype by microsoft
+    author: Dhiraj Mishra
 also_at: []
-authors: []
+authors:
+  - Dhiraj Mishra
 canonical_url: ""
 cited_by:
   - "2018.md:27"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # An untold story of skype by microsoft
 
-**An untold story of skype by microsoft** - Author not stated, inputzero.io.
+**An untold story of skype by microsoft** - Dhiraj Mishra, inputzero.io.
 
 - Published: date not stated
 - Original: <https://www.inputzero.io/2018/09/buggy-skype.html>
@@ -394,5 +396,3 @@ $
  Regards
 
  [Dhiraj](http://twitter.com/mishradhiraj_)
-
-  [Newer Post](https://www.inputzero.io/2018/09/the-secrets-of-tez.html)   [Older Post](https://www.inputzero.io/2018/08/kaspersky-vpn-leaks-dns-address.html)  [Home](https://www.inputzero.io/)

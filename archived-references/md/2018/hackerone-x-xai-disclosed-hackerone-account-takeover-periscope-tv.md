@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://hackerone.com/reports/317476"
     title: "X / xAI disclosed on HackerOne: Account Takeover in Periscope TV"
+    author: Ron Chan
 also_at: []
-authors: []
+authors:
+  - Ron Chan
 canonical_url: ""
 cited_by:
   - "2018.md:48"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # X / xAI disclosed on HackerOne: Account Takeover in Periscope TV
 
-**X / xAI disclosed on HackerOne: Account Takeover in Periscope TV** - Author not stated, HackerOne.
+**X / xAI disclosed on HackerOne: Account Takeover in Periscope TV** - Ron Chan, HackerOne.
 
 - Published: date not stated
 - Original: <https://hackerone.com/reports/317476>

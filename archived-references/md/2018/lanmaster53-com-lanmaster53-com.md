@@ -130,9 +130,3 @@ Status: Won't Fix (Intended Behavior)
 Thanks Google.
 
 If the bug is ever made public, it will be available [here](https://issuetracker.google.com/issues/74233153).
-
-Like what you see? Join me for live training! See the [Training](https://www.practisec.com/training/) page for more information.
-
----
-
----

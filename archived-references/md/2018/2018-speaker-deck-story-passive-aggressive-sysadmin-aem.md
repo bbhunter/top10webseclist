@@ -12,11 +12,10 @@ sources:
   - id: original
     resource: "https://speakerdeck.com/fransrosen/a-story-of-the-passive-aggressive-sysadmin-of-aem"
     title: A story of the passive aggressive sysadmin of AEM
-    author: @speakerdeck, Frans Rosén
+    author: Frans Rosén
     last_modified: 2018-09-13
 also_at: []
 authors:
-  - @speakerdeck
   - Frans Rosén
 canonical_url: ""
 cited_by:
@@ -45,7 +44,7 @@ translation_of: ""
 
 # A story of the passive aggressive sysadmin of AEM
 
-**A story of the passive aggressive sysadmin of AEM** - @speakerdeck, Frans Rosén, Speaker Deck.
+**A story of the passive aggressive sysadmin of AEM** - Frans Rosén, Speaker Deck.
 
 - Published: 2018-09-13
 - Original: <https://speakerdeck.com/fransrosen/a-story-of-the-passive-aggressive-sysadmin-of-aem>

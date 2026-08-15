@@ -165,11 +165,3 @@ After all the portions of the application were written to disk, the final DDE co
 ## Conclusion
 
 These vulnerabilities show the emerging class of client-side vulnerabilities that are manifesting as server-side vulnerabilities. As we continue to rely on SaaS, and delegate tasks such as Office document file conversion away from the desktop environment, we can expect to see more client-side vulnerabilities emerge in server-side attack surface.
-
- ![](https://bishopfox.com/static/assets/images/backgrounds/lander-header-bg-black-lines.svg)
-
-Subscribe to our blog
-
-Be first to learn about latest tools, advisories, and findings.
-
-Thank You! You have been subscribed.

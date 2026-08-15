@@ -639,9 +639,3 @@ Finally, I've built a little [challenge](https://hackxor.net/mission?id=8) for p
 You can find further research on this topic in my followup posts [Bypassing Web Cache Poisoning Countermeasures](https://portswigger.net/blog/bypassing-web-cache-poisoning-countermeasures) and [Web Cache Entanglement: Novel Pathways to Poisoning](https://portswigger.net/research/web-cache-entanglement).
 
 Also, we have released a collection of free, interactive labs so you can [try out web cache poisoning for yourself](https://portswigger.net/web-security/web-cache-poisoning) as part of our Web Security Academy:
-
- [ web cache poisoning ](https://portswigger.net/research/web-cache-poisoning) [ James Favourites ](https://portswigger.net/research/james-kettle) [ Presentations ](https://portswigger.net/research/presentations) [ Black Hat ](https://portswigger.net/research/black-hat)
-
-[Back to all articles](https://portswigger.net/research/articles)
-
- `

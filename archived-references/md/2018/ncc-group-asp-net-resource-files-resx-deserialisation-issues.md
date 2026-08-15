@@ -6,18 +6,18 @@ tags: [article, webseclist-reference, en-GB, ncc-group]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:09+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/august/aspnet-resource-files-resx-and-deserialisation-issues/"
     title: ASP.NET resource files (.RESX) and deserialisation issues
-    author: NCCGroupplc
+    author: Soroush Dalili
   - id: capture
     resource: "https://web.archive.org/web/20180903005001/https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/august/aspnet-resource-files-resx-and-deserialisation-issues/"
 also_at: []
 authors:
-  - NCCGroupplc
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2018.md:54"
@@ -45,7 +45,7 @@ translation_of: ""
 
 # ASP.NET resource files (.RESX) and deserialisation issues
 
-**ASP.NET resource files (.RESX) and deserialisation issues** - NCCGroupplc, NCC Group.
+**ASP.NET resource files (.RESX) and deserialisation issues** - Soroush Dalili, NCC Group.
 
 - Published: date not stated
 - Original: <https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/august/aspnet-resource-files-resx-and-deserialisation-issues/>
@@ -250,5 +250,3 @@ In order to secure file uploaders, ensure that ASP.NET extensions are disabled o
  **Published date:** 02 August 2018
 
  **Written by:** Soroush Dalili
-
-   [comments powered by ](http://disqus.com)

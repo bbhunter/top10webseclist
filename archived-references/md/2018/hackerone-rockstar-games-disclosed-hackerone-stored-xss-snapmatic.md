@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://hackerone.com/reports/309531"
     title: "Rockstar Games disclosed on HackerOne: Stored XSS in Snapmatic +..."
+    author: europa
 also_at: []
-authors: []
+authors:
+  - europa
 canonical_url: ""
 cited_by:
   - "2018.md:35"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Rockstar Games disclosed on HackerOne: Stored XSS in Snapmatic +...
 
-**Rockstar Games disclosed on HackerOne: Stored XSS in Snapmatic +...** - Author not stated, HackerOne.
+**Rockstar Games disclosed on HackerOne: Stored XSS in Snapmatic +...** - europa, HackerOne.
 
 - Published: date not stated
 - Original: <https://hackerone.com/reports/309531>

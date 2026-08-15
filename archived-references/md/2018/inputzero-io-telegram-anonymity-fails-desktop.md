@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.inputzero.io/2018/09/bug-bounty-telegram-cve-2018-17780.html"
     title: Telegram anonymity fails in desktop
+    author: Dhiraj Mishra
 also_at: []
-authors: []
+authors:
+  - Dhiraj Mishra
 canonical_url: ""
 cited_by:
   - "2018.md:26"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Telegram anonymity fails in desktop
 
-**Telegram anonymity fails in desktop** - Author not stated, inputzero.io.
+**Telegram anonymity fails in desktop** - Dhiraj Mishra, inputzero.io.
 
 - Published: date not stated
 - Original: <https://www.inputzero.io/2018/09/bug-bounty-telegram-cve-2018-17780.html>
@@ -96,5 +98,3 @@ Other scenario:**
  Regards
 
  [Dhiraj](https://twitter.com/mishradhiraj_)
-
-  [Newer Post](https://www.inputzero.io/2018/10/cve-2018-8120.html)   [Older Post](https://www.inputzero.io/2018/09/telegram-share-password-in-cleartext.html)  [Home](https://www.inputzero.io/)

@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://hackerone.com/reports/341876"
     title: "Shopify disclosed on HackerOne: SSRF in Exchange leads to ROOT..."
+    author: André Baptista
 also_at: []
-authors: []
+authors:
+  - André Baptista
 canonical_url: ""
 cited_by:
   - "2018.md:39"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Shopify disclosed on HackerOne: SSRF in Exchange leads to ROOT...
 
-**Shopify disclosed on HackerOne: SSRF in Exchange leads to ROOT...** - Author not stated, HackerOne.
+**Shopify disclosed on HackerOne: SSRF in Exchange leads to ROOT...** - André Baptista, HackerOne.
 
 - Published: date not stated
 - Original: <https://hackerone.com/reports/341876>

@@ -200,7 +200,3 @@ Yes actually. It turns out Chrome considers `hack.sheddow.xyz` and `labs.sheddow
 #### Does setting X-Frame-Options prevent this attack?
 
 Not really, it just makes it more difficult to exploit. You can open a new window with `window.open` then perform the same attack through `window.opener` instead of through `window.frames[0]`.
-
- ![Sigurd Kolltveit](https://blog.sheddow.xyz/content/images/size/w150/2018/10/odin_cropped-1.png)
-
- ** Norway

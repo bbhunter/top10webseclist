@@ -12,13 +12,13 @@ sources:
   - id: original
     resource: "https://poc-server.com/blog/2018/05/22/rce-by-uploading-a-web-config/"
     title: RCE by uploading a web.config
-    author: @rub003
+    author: 003random
     last_modified: 2018-05-22
   - id: capture
     resource: "https://web.archive.org/web/20180703063521/https://poc-server.com/blog/2018/05/22/rce-by-uploading-a-web-config/"
 also_at: []
 authors:
-  - @rub003
+  - 003random
 canonical_url: ""
 cited_by:
   - "2018.md:22"
@@ -46,7 +46,7 @@ translation_of: ""
 
 # RCE by uploading a web.config
 
-**RCE by uploading a web.config** - @rub003, 003Random's Blog.
+**RCE by uploading a web.config** - 003random, 003Random's Blog.
 
 - Published: 2018-05-22
 - Original: <https://poc-server.com/blog/2018/05/22/rce-by-uploading-a-web-config/>

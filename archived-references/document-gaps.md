@@ -42,7 +42,7 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-54 reference(s) unresolved. 45 of them already have their raw bytes stored.
+63 reference(s) unresolved. 51 of them already have their raw bytes stored.
 
 ## https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization
 
@@ -164,6 +164,14 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2022.md:73`
 
+## https://download.vusec.net/papers/glitch_sp18.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: the Markdown extraction stops after page 1 of a 16-page IEEE S&P paper - page 2 holds only figure axis labels and page 3 is the fragment DEFG - and the surviving page carries heavy dropped-ligature damage (rst, signicantly, insufcient, ips, efcient) with no precomposed glyphs; the published PDF is byte-identical to the stored 728,105-byte raw object whose page tree reads /Count 16, so an offline re-extract from the store is the safe remedy (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2018.md:73`
+
 ## https://eprint.iacr.org/2026/058
 
 - Outcome: `broken-capture`
@@ -179,6 +187,14 @@ or fix the route and re-run.
 - Reason: faulty capture: seven fenced code blocks are published empty, including the newline-sled payload and the Kubernetes Job example - the known HTML-comment-wrapped-listing class sanitise.py and extract_html.py were fixed for; re-extract offline with acquire --force (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2026-ai.md:52`
+
+## https://fabianmonrose.github.io/papers/morton18.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: the body font maps no underscore, so every _ inside an identifier is lost - ngx_http_request_t publishes as ngx http request t and a macro reads #define ngx http get module loc conf(r, module) - and it corrupts URLs too; proved to be the extractor rather than the paper because the figure-layer text kept its underscores, only 4 of 21 surviving and all 4 in figures (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2018.md:89`
 
 ## https://flattsecurity.medium.com/finding-an-unseen-sql-injection-by-bypassing-escape-functions-in-mysqljs-mysql-90b27f6542b4
 
@@ -251,6 +267,14 @@ or fix the route and re-run.
 - Reason: faulty capture: the final extracted page is decoded binary noise published as prose, and text was dropped mid-slide throughout so sentences begin inside a word (page 13 opens "-Length header.-Length headers?"), with the slide titles for Variants 1 and 2 missing entirely while the status slide reports on all five; inter-word spaces are also lost; the entry is additionally recorded as type Whitepaper when the document is the Black Hat USA 2020 slide deck; re-extract and correct the kind (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2020.md:22`
+
+## https://ieeexplore.ieee.org/document/8418635/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: 1,144 decoded symbol-font characters across 53 lines are published as prose, interleaved into the two-column abstract and clustered around the Figure 1 to 3 captions, so the diagram labels are unreadable dingbats; prose is unaffected (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2018.md:72`
 
 ## https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails%20-%20LGMT%20v2.pdf
 
@@ -412,6 +436,22 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2009.md:81`
 
+## https://www.elttam.com/blog/ruby-deserialization
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: every ASCII double quote in the BODY was replaced by a single quote - all 30 remaining double quotes are in the frontmatter and none in the body - which breaks the listings, so IO.popen(ruby -e Marshal.load(STDIN.read) rescue nil, r+) is invalid nesting and the quoted C source is not valid C; prose and curly quotes are unaffected, which is why it stayed invisible (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2018.md:91`
+
+## https://www.kapravelos.com/publications/mystique-CCS18.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: the Markdown extraction stops mid-sentence after page 1 of a 14-page CCS paper, so everything from section 2 onward is absent, and the surviving page has pervasive dropped-ligature damage (congure, rst, ow, agged, conrmed, trac, eorts) plus inter-word spaces lost at every wrap point; the PDF sibling is 744,909 bytes and predates the Markdown, so re-extract from it (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2018.md:85`
+
 ## https://www.linkedin.com/pulse/how-i-used-google-dorks-find-0-days-suraj-khetani/
 
 - Outcome: `broken-capture`
@@ -420,6 +460,22 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2016-17.md:48`
 
+## https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_04B-3_Yang_paper.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: 34 lines of figure-label text are decoded through a broken font map and publish as a whole-alphabet substitution - ,dD>ZenderTJSngine for HTML Render and JS Engine - so Figure 2 label set is unreadable; the prose is unaffected, which is why length and quality checks pass (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2018.md:86`
+
+## https://www.sambuz.com/doc/p-r-e-p-a-r-e-i-n-t-r-o-d-u-c-i-n-g-n-o-v-e-l-e-x-p-l-o-i-presentation-910240
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: article
+- Reason: faulty capture: the document is a sambuz.com SCRAPER MIRROR of the original deck rather than the deck itself - every slide title is shredded into spaced single characters (## P r e p a r e ( ) : I n t r), words carry wrong-character ligature damage (fmexible, modifjed, fjx), prose stutters (do doubl ble pr prepa paring), and all 36 slide images are the same pre.svg placeholder; re-acquire from the original RIPS/Black Hat deck (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2018.md:12`
+
 ## https://www.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers.html
 
 - Outcome: `broken-capture`
@@ -427,6 +483,22 @@ or fix the route and re-run.
 - Reason: faulty capture: exploit code is truncated at the payload inside fenced blocks - line 418 ends at "const html = <img src" and line 524 at "DOMPurify.sanitize(<img src" - so the handler that makes each example work is missing; the recorded title is also the site masthead where the document own title sits at body line 69 and in cited_title; re-acquire (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2020.md:70`
+
+## https://www.slideshare.net/fransrosen/attacking-modern-web-technologies?from_action=save
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: slides
+- Reason: faulty capture: the deck is 142 slides and only 100 were captured - the last image is slide 100 and the file stops mid-demo, so slides 101 to 142 are absent - and SlideShare lorem ipsum stands in as alt text on two slides (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2018.md:9`
+
+## https://www.usenix.org/conference/woot18/workshop-program
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: article
+- Reason: faulty capture: WRONG PAGE - the archived document is the WOOT 18 workshop PROGRAMME index, carrying entries such as Continental Breakfast and Tuesday Luncheon plus a USENIX sign-in wall, not the cited eIDAS paper; the year list itself points at the programme URL, so re-fetching the same URL reproduces this page and the citation needs repointing to /woot18/presentation/engelbertz (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2018.md:90`
 
 ## https://www.usenix.org/events/woot10/tech/full_papers/Rizzo.pdf
 

@@ -6,18 +6,18 @@ tags: [article, webseclist-reference, en-GB, ncc-group]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:09+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/december/beware-of-deserialisation-in-.net-methods-and-classes-code-execution-via-paste/"
     title: Beware of Deserialisation in .NET Methods and Classes + Code Execution via Paste!
-    author: NCCGroupplc
+    author: Soroush Dalili
   - id: capture
     resource: "https://web.archive.org/web/20190401191940/https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/december/beware-of-deserialisation-in-.net-methods-and-classes-code-execution-via-paste/"
 also_at: []
 authors:
-  - NCCGroupplc
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2018.md:56"
@@ -45,7 +45,7 @@ translation_of: ""
 
 # Beware of Deserialisation in .NET Methods and Classes + Code Execution via Paste!
 
-**Beware of Deserialisation in .NET Methods and Classes + Code Execution via Paste!** - NCCGroupplc, NCC Group.
+**Beware of Deserialisation in .NET Methods and Classes + Code Execution via Paste!** - Soroush Dalili, NCC Group.
 
 - Published: date not stated
 - Original: <https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/december/beware-of-deserialisation-in-.net-methods-and-classes-code-execution-via-paste/>
@@ -149,5 +149,3 @@ Risks associated with code execution by pasting from the clipboard should be ass
  **Published date:** 17 December 2018
 
  **Written by:** Soroush Dalili
-
-   [comments powered by ](http://disqus.com)

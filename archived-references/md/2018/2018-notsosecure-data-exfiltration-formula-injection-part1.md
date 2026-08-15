@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://www.notsosecure.com/data-exfiltration-formula-injection/"
     title: "Data Exfiltration via Formula Injection #Part1"
+    author: Ajay, Balaji
     last_modified: 2018-05-29
   - id: canonical
     resource: "https://notsosecure.com/data-exfiltration-formula-injection-part1"
 also_at: []
-authors: []
+authors:
+  - Ajay
+  - Balaji
 canonical_url: "https://notsosecure.com/data-exfiltration-formula-injection-part1"
 cited_by:
   - "2018.md:13"
@@ -44,7 +47,7 @@ translation_of: ""
 
 # Data Exfiltration via Formula Injection #Part1
 
-**Data Exfiltration via Formula Injection #Part1** - Author not stated, NotSoSecure.
+**Data Exfiltration via Formula Injection #Part1** - Ajay, Balaji, NotSoSecure.
 
 - Published: 2018-05-29
 - Original: <https://www.notsosecure.com/data-exfiltration-formula-injection/>

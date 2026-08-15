@@ -640,9 +640,12 @@
    "title": "RaceDB: Detecting Request Race Vulnerabilities in Database-Backed Web Applications"
   },
   "https://duo.com/blog/duo-finds-saml-vulnerabilities-affecting-multiple-implementations": {
+   "authors": [
+    "Kelby Ludwig"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (cisco-duo-duo-blog-discover-security-insights-news). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
+   "reason": "authors recorded \"@duosec\", the company handle. Line 68 names the author: \"###### February 27th, 2018 [Kelby Ludwig](https://duo.com/blog/post-author/kludwig)\".",
    "title": "Duo Finds SAML Vulnerabilities Affecting Multiple Implementations"
   },
   "https://edoverflow.com/2019/ci-knew-there-would-be-bugs-here": {
@@ -959,6 +962,30 @@
    "outcome": "skip",
    "reason": "The report link is retained beside Keybase's exact public fix at https://github.com/keybase/client/commit/3d30d6e0fc928968827646b7b9676cc298fc47dc. A publication-era Common Crawl record preserves the report description and example with duplicate id parameters; the commit from 23 January 2018 changes the extension to reject duplicate query-string keys. The current report redirects to sign-in and did not expose its document through Docker Chromium."
   },
+  "https://hackerone.com/reports/309531": {
+   "authors": [
+    "europa"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The report names the researcher three ways: \"**Summary provided by the Researcher, [@europa](https://hackerone.com/europa) .**\", \"**Summary by europa**\", and the timeline entry. `europa` is the handle they publish under."
+  },
+  "https://hackerone.com/reports/317476": {
+   "authors": [
+    "Ron Chan"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "The report names the researcher, who publishes as `ngalog`. The HackerOne triagers named in the thread are deliberately not credited."
+  },
+  "https://hackerone.com/reports/341876": {
+   "authors": [
+    "André Baptista"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". The report names the researcher repeatedly - \"[0xacb](https://hackerone.com/0xacb) ... submitted a report to [**Shopify**]\" with the avatar alt text \"![André Baptista]\". The triager, the disclosure requester and two thanked helpers are deliberately not added."
+  },
   "https://hackerone.com/reports/3511792": {
    "authors": [
     "sharp_edged"
@@ -1132,6 +1159,22 @@
    "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (information-week-news). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
    "title": "AT&T Hack Highlights Web Site Vulnerabilities"
   },
+  "https://inputzero.io/2018/09/bug-bounty-telegram-cve-2018-17780.html": {
+   "authors": [
+    "Dhiraj Mishra"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty while the sibling inputzero reference records him correctly - an inconsistency within one publisher. The post is signed \" Regards\" / \" [Dhiraj](http://twitter.com/mishradhiraj_)\", and cited_title reads \"... | Dhiraj Mishra\"."
+  },
+  "https://inputzero.io/2018/09/buggy-skype.html": {
+   "authors": [
+    "Dhiraj Mishra"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". The document signs off \" Regards\" / \" [Dhiraj](http://twitter.com/mishradhiraj_)\"."
+  },
   "https://intruder.io/research/in-guid-we-trust": {
    "authors": [
     "Daniel Thatcher"
@@ -1166,6 +1209,30 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors recorded [\"wlrmblog\", \"@Wallarm\"] - a CMS account and the publisher's social handle. The document's FIRST body line reads \"Author [@bo0om](https://twitter.com/i_bo0om)\", a handle the author publishes under. Emil Lerner is credited only for the 1u.ms service and is not added."
+  },
+  "https://lab.wallarm.com/how-to-trick-csp-in-letting-you-run-whatever-you-want-73cb5ff428aa": {
+   "authors": [
+    "@bo0om"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"wlrmblog\" and \"@Wallarm\" - a CMS account and the company handle. Line 70 reads \"*By*[ ***bo0om***](https://twitter.com/i_bo0om)*, Wallarm research*\". Identical to the 2020 Wallarm reference corrected earlier in this sweep: same author, same two wrong values."
+  },
+  "https://labs.detectify.com/2018/01/12/how-i-exploited-acme-tls-sni-01-issuing-lets-encrypt-ssl-certs-for-any-domain-using-shared-hosting": {
+   "authors": [
+    "Frans Rosén"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"Detectify\", the publisher's CMS account. The document names the researcher twice - \"**Frans Rosén**Jan 12, 2018\" and \"**Frans Rosén** / Security Advisor\". Fourth Detectify reference in this sweep with the publisher taken as the byline."
+  },
+  "https://labs.detectify.com/2018/04/04/host-headers-safari": {
+   "authors": [
+    "Linus Särud"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"Detectify\". The document names \"**Linus Särud**Apr 04, 2018\" and \"**Linus Särud** / Security Researcher\". Fredrik Almroot only mentioned the behaviour and is not added."
   },
   "https://labs.detectify.com/2021/09/13/hacking-cloudkit-how-i-accidentally-deleted-your-apple-shortcuts": {
    "authors": [
@@ -1215,6 +1282,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-10: the recorded title was only the first half of the title rather than the document's own title. The document itself is the one cited.",
    "title": "Microsoft Edge (Chromium) - Elevation of Privilege to Potential Remote Code Execution"
+  },
+  "https://leucosite.com/Firefox-uXSS-and-CSS-XSS": {
+   "authors": [
+    "Abdulrahman Al-Qabandi"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors held only the handle `@qab` while the document names him in full. Jonathan Kingston is a co-discoverer and is deliberately not added."
   },
   "https://lude.rs/h4ck1ng/draw.io_cves.html": {
    "authors": [
@@ -1421,6 +1496,22 @@
    "reason": "Reviewed 2026-08-14: the recorded title ended in the site's tab suffix, \" / nastystereo.com\". The capture is the right article and its own heading reads \"Gem::SafeMarshal escape\", above \"Luke Jahnke\" and \"3 December 2024\".",
    "title": "Gem::SafeMarshal escape"
   },
+  "https://nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/august/aspnet-resource-files-resx-and-deserialisation-issues": {
+   "authors": [
+    "Soroush Dalili"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"NCCGroupplc\". Line 252 states \" **Written by:** Soroush Dalili\", and the article is first person throughout - \"I originally reported a number of deserialisation issues... to Microsoft in January 2018\". Sixth such reference."
+  },
+  "https://nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/december/beware-of-deserialisation-in-.net-methods-and-classes-code-execution-via-paste": {
+   "authors": [
+    "Soroush Dalili"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"NCCGroupplc\", a corporate publishing account. Line 151 states \" **Written by:** Soroush Dalili\". Fifth reference in this sweep with this author uncredited behind a publisher account."
+  },
   "https://nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2019/march/finding-and-exploiting-.net-remoting-over-http-using-deserialisation": {
    "authors": [
     "Soroush Dalili"
@@ -1469,6 +1560,15 @@
    "class": "research",
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the post carries its byline under the title - a \"[JC](https://github.com/joyeecheung)\" avatar link followed by \"Joyee Cheung\" - and the body confirms it: \"This fix was developed and backported to Node.js LTS branches by [Joyee Cheung](https://github.com/joyeecheung) (Igalia, under the sponsorship of Bloomberg).\" The archive recorded only the project account \"@nodejs\"."
+  },
+  "https://notsosecure.com/data-exfiltration-formula-injection": {
+   "authors": [
+    "Ajay",
+    "Balaji"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. Line 69 states \"In this blog post we are outlining the research performed by Ajay ([@9r4shar4j4y]) and Balaji ([@iambalaji7]) from the NotSoSecure team.\" Recorded with the caveat the reader raised: the sentence attributes the RESEARCH rather than the writing, and the post is in the corporate \"we\" - but recording nobody is weaker than the document supports."
   },
   "https://octagon.net/blog/2022/05/29/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution": {
    "authors": [
@@ -1539,6 +1639,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-10: the recorded title was the title with the site's \"Blog:\" prefix rather than the document's own title. The document itself is the one cited. Reviewed 2026-08-15: the recorded author was the literal placeholder \"xxxxx\", which the published byline printed as though it were a researcher's name. The document names nobody - it is first person throughout (\"I have made proof of concepts\", \"I've reported this issue\") - so the honest value is no author at all. A missing byline says the archive does not know; a placeholder says something false.",
    "title": "DoubleClickjacking: A New Era of UI Redressing"
+  },
+  "https://poc-server.com/blog/2018/05/22/rce-by-uploading-a-web-config": {
+   "authors": [
+    "003random"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@rub003\", which the stored source shows is the site's `twitter:creator` META TAG rather than a byline. The page's own byline element reads \"003random\"."
   },
   "https://portswigger-labs.net/fmnt.php?x=acunetix.com%2Fblog%2Fweb-security-zone%2Fbypassing-sop-using-the-browser-cache%2F": {
    "authors": [
@@ -1977,6 +2085,14 @@
    "outcome": "archive",
    "reason": "The report states its own byline: \"Found by: Soroush Dalili (Irsdl {4t] yahoo [d0t} com)\". This is the document the 2009 Top 10 announcement cites at #6, where it is credited to Soroush Dalili; the list previously cited the MSRC advisory that the nomination round had linked, which carries Microsoft's byline instead. The report's PDF metadata names no author, so the credit is stated here."
   },
+  "https://speakerdeck.com/0ang3el/hunting-for-security-bugs-in-aem-webapps": {
+   "authors": [
+    "Mikhail Egorov"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@speakerdeck\", the hosting platform's own account, not a person. The deck names one author: \"Mikhail Egorov, @0ang3el - Security researcher - Bug hunter\", closing \"THANK U! @0ang3el\"."
+  },
   "https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unveiling-vulnerabilities-in-websocket-apis": {
    "authors": [
     "Mikhail Egorov"
@@ -2009,6 +2125,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the deck names both presenters on its title slide and again on the self-introduction slide - \"Norihide Saito / azara\" and \"Eiji Mori / ei\", with the handles @a_zara_n and @ei01241. The archive recorded \"@flatt_security\" and \"GMO Flatt Security\", a site handle and the employer."
+  },
+  "https://speakerdeck.com/fransrosen/a-story-of-the-passive-aggressive-sysadmin-of-aem": {
+   "authors": [
+    "Frans Rosén"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@speakerdeck\", the hosting platform's own account, not a person. The deck states \"# By Frans Rosén\" and he is already recorded alongside the platform handle; the handle is simply removed."
   },
   "https://speakerdeck.com/greendog/2-and-a-bit-of-magic": {
    "authors": [
@@ -2049,6 +2173,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors recorded \"@speakerdeck\", the hosting platform's own account, whose only appearance in the body is inside the recommendation rail the capture harvested. The deck names Takashi Yoneuchi (@y0n3uchy). Same platform-account fault as the @speakerdeck entries corrected in 2021 and 2023."
+  },
+  "https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries": {
+   "authors": [
+    "Jun Kokatsu"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@speakerdeck\", the hosting platform's own account, not a person. The deck names him on its own slide: \"self.toString() < 'Jun Kokatsu (@shhnjk)' < 'Browser Vulnerability Research Team at Microsoft'\"."
   },
   "https://speakerdeck.com/shhnjk/the-world-of-site-isolation-and-compromised-renderer": {
    "authors": [
@@ -2095,6 +2227,22 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors held only the company handle \"@Synacktiv\". The byline reads \"Rédigé par Rémi Matasse - 18/10/2022 - dans Pentest\", and the English half reads \"Written by Rémi Matasse\". Same researcher as the 2023 filter-chains reference. Publisher Synacktiv is already recorded."
+  },
+  "https://thehackerblog.com/kicking-the-rims-a-guide-for-securely-writing-and-auditing-chrome-extensions": {
+   "authors": [
+    "Matthew Bryant"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded only the handle \"@IAmMandatory\" where the document names him in full and writes in the first person (\"This tool, which I've named tarnish\"). Same author and same tail-ordering caution as its sibling."
+  },
+  "https://thehackerblog.com/reading-your-emails-with-a-readwrite-chrome-extension-same-origin-policy-bypass-8-million-users-affected/index.html": {
+   "authors": [
+    "Matthew Bryant"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded only the handle \"@IAmMandatory\". The document names the person, \"### Matthew Bryant (mandatory)\" - and that naming sits inside the author-bio tail being removed, so the credit is recorded first."
   },
   "https://thehackerblog.com/wp-content/uploads/2015/09/Black_Hat_USA_2015-Bypass_Surgery-6Aug2015.pdf": {
    "class": "research",

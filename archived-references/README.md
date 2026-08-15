@@ -783,7 +783,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Security: HTTP Smuggling, Apsis Pound load balancer](md/2018/regilero-github-io-security-http-smuggling-apsis-pound-load-balancer.md) | article | regilero.github.io |  | research | 1 |
 | [Server-Side Spreadsheet Injection - Formula Injection to Remote Code…](md/2018/bishop-fox-server-side-spreadsheet-injection-formula-injection-remote-code.md) | article | Bishop Fox |  | research | 1 |
 | [Shopify disclosed on HackerOne: SSRF in Exchange leads to ROOT...](md/2018/hackerone-shopify-disclosed-hackerone-ssrf-exchange-leads-root.md) | article | HackerOne |  | research | 1 |
-| [Story of my two (but actually three) RCEs in SharePoint in 2018](md/2018/soroush-me-story-my-two-but-actually-three-rces-sharepoint-2018.md) | article | soroush.me |  | research | 1 |
+| [Story of my two (but actually three) RCEs in SharePoint in 2018](md/2018/soroush-me-story-my-two-but-actually-three-rces-sharepoint-2018.md) | article | soroush.me | 2018 | research | 1 |
 | [Study and Mitigation of Origin Stripping Vulnerabilities in Hybrid-postMessage Enabled Mobile Applications](md/2018/study-mitigation-origin-stripping-vulnerabilities-hybrid-applications.md) | article | ieeexplore.ieee.org |  | research | 1 |
 | [Telegram anonymity fails in desktop](md/2018/inputzero-io-telegram-anonymity-fails-desktop.md) | article | inputzero.io |  | research | 1 |
 | [Vetting Single Sign-On SDK Implementations via Symbolic Reasoning](md/2018/usenix-org-vetting-single-sign-sdk-implementations-symbolic-reasoning.md) | article | usenix.org |  | research | 1 |

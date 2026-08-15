@@ -12,11 +12,10 @@ sources:
   - id: original
     resource: "https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries"
     title: Logically Bypassing Browser Security Boundaries
-    author: @speakerdeck, Jun Kokatsu
+    author: Jun Kokatsu
     last_modified: 2018-10-28
 also_at: []
 authors:
-  - @speakerdeck
   - Jun Kokatsu
 canonical_url: ""
 cited_by:
@@ -45,7 +44,7 @@ translation_of: ""
 
 # Logically Bypassing Browser Security Boundaries
 
-**Logically Bypassing Browser Security Boundaries** - @speakerdeck, Jun Kokatsu, Speaker Deck.
+**Logically Bypassing Browser Security Boundaries** - Jun Kokatsu, Speaker Deck.
 
 - Published: 2018-10-28
 - Original: <https://speakerdeck.com/shhnjk/logically-bypassing-browser-security-boundaries>

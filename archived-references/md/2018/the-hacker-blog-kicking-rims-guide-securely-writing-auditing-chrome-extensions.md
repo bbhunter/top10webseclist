@@ -12,10 +12,10 @@ sources:
   - id: original
     resource: "https://thehackerblog.com/kicking-the-rims-a-guide-for-securely-writing-and-auditing-chrome-extensions/"
     title: Kicking the Rims – A Guide for Securely Writing and Auditing Chrome Extensions
-    author: @IAmMandatory
+    author: Matthew Bryant
 also_at: []
 authors:
-  - @IAmMandatory
+  - Matthew Bryant
 canonical_url: ""
 cited_by:
   - "2018.md:19"
@@ -43,7 +43,7 @@ translation_of: ""
 
 # Kicking the Rims – A Guide for Securely Writing and Auditing Chrome Extensions
 
-**Kicking the Rims – A Guide for Securely Writing and Auditing Chrome Extensions** - @IAmMandatory, The Hacker Blog.
+**Kicking the Rims – A Guide for Securely Writing and Auditing Chrome Extensions** - Matthew Bryant, The Hacker Blog.
 
 - Published: date not stated
 - Original: <https://thehackerblog.com/kicking-the-rims-a-guide-for-securely-writing-and-auditing-chrome-extensions/>
@@ -561,21 +561,3 @@ if( check_origin_match( input_url, "https://trusted-domain.com" ) ) {
  All of these features have been created to automate annoying repetitive actions I’ve had to undertake while auditing various Chrome extensions. If you have suggestions or bugs in any of the functionality of the service, please feel free to reach out to me and I’ll look into it.
 
 ###  [Click here to try out the tarnish Chrome extension analyzer.](https://thehackerblog.com/tarnish/)
-
-### Matthew Bryant (mandatory)
-
- ![Matthew Bryant (mandatory)](https://thehackerblog.com/images/avatar.jpg)
-
-Security researcher who needs to sleep more. Opinions expressed are solely my own and do not express the views or opinions of my employer.
-
-### ["Zero-Days" Without Incident - Compromising Angular via Expired npm Publisher Email Domains](https://thehackerblog.com/zero-days-without-incident-compromising-angular-via-expired-npm-publisher-email-domains-7kZplW4x/)
-
-**NOTE:** *If you're just looking for the high level points, see the"[The TL;DR Summary & High-LevelPoints](#the-tldr-summary--high-level...… [Continue reading](https://thehackerblog.com/zero-days-without-incident-compromising-angular-via-expired-npm-publisher-email-domains-7kZplW4x/)
-
-#### [Video Downloader and Video Downloader Plus Chrome Extension Hijack Exploit - UXSS via CSP Bypass (~15.5 Million Affected)](https://thehackerblog.com/video-download-uxss-exploit-detailed/)
-
- Published on February 22, 2019
-
-#### [Steam, Fire, and Paste – A Story of UXSS via DOM-XSS & Clickjacking in Steam Inventory Helper](https://thehackerblog.com/steam-fire-and-paste-a-story-of-uxss-via-dom-xss-clickjacking-in-steam-inventory-helper/)
-
- Published on June 07, 2018

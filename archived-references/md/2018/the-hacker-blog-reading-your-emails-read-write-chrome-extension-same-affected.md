@@ -12,10 +12,10 @@ sources:
   - id: original
     resource: "https://thehackerblog.com/reading-your-emails-with-a-readwrite-chrome-extension-same-origin-policy-bypass-8-million-users-affected/index.html"
     title: Reading Your Emails With A Read&Write Chrome Extension Same Origin Policy Bypass (~8 Million Users Affected)
-    author: @IAmMandatory
+    author: Matthew Bryant
 also_at: []
 authors:
-  - @IAmMandatory
+  - Matthew Bryant
 canonical_url: ""
 cited_by:
   - "2018.md:41"
@@ -43,7 +43,7 @@ translation_of: ""
 
 # Reading Your Emails With A Read&Write Chrome Extension Same Origin Policy Bypass (~8 Million Users Affected)
 
-**Reading Your Emails With A Read&Write Chrome Extension Same Origin Policy Bypass (~8 Million Users Affected)** - @IAmMandatory, The Hacker Blog.
+**Reading Your Emails With A Read&Write Chrome Extension Same Origin Policy Bypass (~8 Million Users Affected)** - Matthew Bryant, The Hacker Blog.
 
 - Published: date not stated
 - Original: <https://thehackerblog.com/reading-your-emails-with-a-readwrite-chrome-extension-same-origin-policy-bypass-8-million-users-affected/index.html>
@@ -219,21 +219,3 @@ This vulnerability demonstrates a common security pitfall which often occurs wit
 - June 3rd (Late Friday night): Reported vulnerability.
 - June 3rd: Confirmed receipt of issue, confirms will take a look Monday.
 - June 4th (Monday): Patch released for vulnerability. I was actually incorrect, the development team is based in Ireland (so they received it on Saturday) and fixed the issue by Sunday. The patch was only released early Monday morning (6:00am EST) due to a strict QA process to make sure everything was up to snuff before releasing. There was no delay between receiving the issue and immediately working on a fix for it :). So the vendor response is actually more impressive than previously stated. </ul>
-
-### Matthew Bryant (mandatory)
-
- ![Matthew Bryant (mandatory)](https://thehackerblog.com/images/avatar.jpg)
-
-Security researcher who needs to sleep more. Opinions expressed are solely my own and do not express the views or opinions of my employer.
-
-### ["Zero-Days" Without Incident - Compromising Angular via Expired npm Publisher Email Domains](https://thehackerblog.com/zero-days-without-incident-compromising-angular-via-expired-npm-publisher-email-domains-7kZplW4x/)
-
-**NOTE:** *If you're just looking for the high level points, see the"[The TL;DR Summary & High-LevelPoints](#the-tldr-summary--high-level...… [Continue reading](https://thehackerblog.com/zero-days-without-incident-compromising-angular-via-expired-npm-publisher-email-domains-7kZplW4x/)
-
-#### [Video Downloader and Video Downloader Plus Chrome Extension Hijack Exploit - UXSS via CSP Bypass (~15.5 Million Affected)](https://thehackerblog.com/video-download-uxss-exploit-detailed/)
-
- Published on February 22, 2019
-
-#### [Kicking the Rims – A Guide for Securely Writing and Auditing Chrome Extensions](https://thehackerblog.com/kicking-the-rims-a-guide-for-securely-writing-and-auditing-chrome-extensions/)
-
- Published on June 12, 2018

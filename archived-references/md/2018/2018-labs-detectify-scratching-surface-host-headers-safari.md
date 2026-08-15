@@ -12,13 +12,13 @@ sources:
   - id: original
     resource: "https://labs.detectify.com/2018/04/04/host-headers-safari/"
     title: Scratching the surface of host headers in Safari
-    author: Detectify
+    author: Linus Särud
     last_modified: 2018-04-04
   - id: canonical
     resource: "https://labs.detectify.com/ethical-hacking/scratching-the-surface-of-host-headers-in-safari/"
 also_at: []
 authors:
-  - Detectify
+  - Linus Särud
 canonical_url: "https://labs.detectify.com/ethical-hacking/scratching-the-surface-of-host-headers-in-safari/"
 cited_by:
   - "2018.md:21"
@@ -46,7 +46,7 @@ translation_of: ""
 
 # Scratching the surface of host headers in Safari
 
-**Scratching the surface of host headers in Safari** - Detectify, Labs Detectify.
+**Scratching the surface of host headers in Safari** - Linus Särud, Labs Detectify.
 
 - Published: 2018-04-04
 - Original: <https://labs.detectify.com/2018/04/04/host-headers-safari/>
@@ -181,29 +181,3 @@ Safari supports more password managers than I could test, so I took the same app
 One of the most popular password managers, who asked to not be named here, supports autofill and also just check the location with the tabs API. That means that I could steal the password for any website this Safari error could be triggered on (which is a lot, and given certain circumstances: all). This was not possible to reproduce on iOS due to how they handle extensions. It also served as a great reminder that [autofill really should be disabled](https://labs.detectify.com/2016/07/27/how-i-made-lastpass-give-me-all-your-passwords/).
 
 Another password manager, who also asked not to be named here, was also vulnerable against the same thing. However, this one does not support autofill which greatly limits the impact. At best (or worst), this could be used to aid in phishing as it would be possible to control the suggested password but not silently steal anything. They decided to not fix this as they thought the bug was not on their side.
-
-**Want to join Linus and other ethical hackers in our Detectify Crowdsource network? [Sign up for Crowdsource](https://cs.detectify.com) and help us make the internet a safer place by submitting your findings that will then be built into the Detectify scanner!**
-
-[Twitter ](https://twitter.com/intent/tweet?url=)[LinkedIn ](https://www.linkedin.com/sharing/share-offsite/?url=)
-
-**Linus Särud**
-
-Security Researcher
-
-## Check out more content
-
-Why picking targets is so important Many ethical hackers struggle because they are hacking the “wrong” types of targets for them. This is especially true …
-
-December 07, 2022
-
-You will find a common pattern if you read blog posts or watch interviews with some of today’s top ethical hackers. When asked if coding …
-
-November 30, 2022
-
-Docker is an open-source platform that allows you to develop, deploy, and manage multiple applications across one operating system
-
-November 21, 2022
-
-Approaching a target to hack can feel like climbing a mountain. You may face large scopes, confusing applications, complex user hierarchies…the list goes on. The …
-
-October 28, 2022

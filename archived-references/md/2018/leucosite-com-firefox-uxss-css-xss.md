@@ -12,10 +12,10 @@ sources:
   - id: original
     resource: "https://leucosite.com/Firefox-uXSS-and-CSS-XSS/"
     title: Firefox uXSS and CSS XSS
-    author: @qab
+    author: Abdulrahman Al-Qabandi
 also_at: []
 authors:
-  - @qab
+  - Abdulrahman Al-Qabandi
 canonical_url: ""
 cited_by:
   - "2018.md:42"
@@ -43,7 +43,7 @@ translation_of: ""
 
 # Firefox uXSS and CSS XSS
 
-**Firefox uXSS and CSS XSS** - @qab, leucosite.com.
+**Firefox uXSS and CSS XSS** - Abdulrahman Al-Qabandi, leucosite.com.
 
 - Published: date not stated
 - Original: <https://leucosite.com/Firefox-uXSS-and-CSS-XSS/>

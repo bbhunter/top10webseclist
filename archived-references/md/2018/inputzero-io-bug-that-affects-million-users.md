@@ -86,5 +86,3 @@ Hi Internet,
  Regards
 
  Dhiraj
-
-  [Newer Post](https://www.inputzero.io/2018/09/buggy-skype.html)   [Older Post](https://www.inputzero.io/2018/06/cve-2018-11646-webkit.html)  [Home](https://www.inputzero.io/)

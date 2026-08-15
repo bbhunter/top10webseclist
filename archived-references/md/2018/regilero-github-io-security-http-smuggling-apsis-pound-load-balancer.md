@@ -460,9 +460,3 @@ Then you can also follow the Debian team and check for more active alternatives.
 - Video [Defcon HTTP Smuggling](https://www.youtube.com/watch?v=dVU9i5PsMPY)
 - [Defcon support](https://media.defcon.org/DEF%20CON%2024/DEF%20CON%2024%20presentations/DEFCON-24-Regilero-Hiding-Wookiees-In-Http.pdf)
 - Video [Defcon demos](https://www.youtube.com/watch?v=lY_Mf2Fv7kI)
-
-Tags: **[CVE](https://regilero.github.io/tag/CVE/), **[HTTP](https://regilero.github.io/tag/HTTP/), **[Pound](https://regilero.github.io/tag/Pound/), **[Security](https://regilero.github.io/tag/Security/), **[Smuggling](https://regilero.github.io/tag/Smuggling/)
-
----
-
-   [comments powered by ](http://disqus.com)

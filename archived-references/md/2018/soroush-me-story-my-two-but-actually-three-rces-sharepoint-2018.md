@@ -86,13 +86,3 @@ Which was shortly followed by a fully working exploit thanks to Alvaro’s tip:
 It should be noted that Microsoft had already given me the maximum bounty that is for an RCE issue even for the second one.
 
 Finally, 2018 was a good year for me on SharePoint finding 3 RCEs in it. If you are wondering what the third one was, the clue is in the [ASP.NET resource files (.RESX) and deserialization issues](https://soroush.secproject.com/blog/2018/08/asp-net-resource-files-resx-and-deserialization-issues/) post. I did not receive any bounty for it despite having a reverse shell on the Microsoft SharePoint Online server due to an ongoing engagement my company (NCC Group) had with them at the same time (unlucky me but I was lucky enough to be compensated by my company as they recognised my efforts).
-
-This entry was posted in [Security Posts](https://soroush.me/blog/category/securityposts)
-
-Creation date: December 19, 2018
-
-[Previous Feel honoured to be there again after 8 years: Top 10 Web Hacking Techniques of 2017](https://soroush.me/blog/feel-honoured-to-be-there-again-after-8-years-top-10-web-hacking-techniques-of-2017)[
-
-Next
-
-ASP.NET resource files (.RESX) and deserialization issues

@@ -12,11 +12,10 @@ sources:
   - id: original
     resource: "https://speakerdeck.com/0ang3el/hunting-for-security-bugs-in-aem-webapps"
     title: Hunting for security bugs in AEM webapps
-    author: @speakerdeck, Mikhail Egorov
+    author: Mikhail Egorov
     last_modified: 2018-10-13
 also_at: []
 authors:
-  - @speakerdeck
   - Mikhail Egorov
 canonical_url: ""
 cited_by:
@@ -45,7 +44,7 @@ translation_of: ""
 
 # Hunting for security bugs in AEM webapps
 
-**Hunting for security bugs in AEM webapps** - @speakerdeck, Mikhail Egorov, Speaker Deck.
+**Hunting for security bugs in AEM webapps** - Mikhail Egorov, Speaker Deck.
 
 - Published: 2018-10-13
 - Original: <https://speakerdeck.com/0ang3el/hunting-for-security-bugs-in-aem-webapps>

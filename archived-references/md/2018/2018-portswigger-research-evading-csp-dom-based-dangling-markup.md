@@ -139,9 +139,3 @@ You can protect against the base tag injection by having your own base tag befor
 So of course I tried to break the mitigation and I came up with a technique to bypass XSS Auditor and CSP without using the base tag. The idea is to inject a form with a target and when the form is submitted it posts to itself again with a normal link. This first click sets the window name with the target and then you have to click the link to retrieve the data from the window name, so you have two clicks instead of one.
 
 [Proof of concept](http://portswigger-labs.net/dangling_markup/?x=%3Cinput%20name=x%20type=hidden+form=x%20value=%22%26lt%3Ba%20href%3Dhttp%3A%2F%2Fsubdomain1.portswigger-labs.net%2Fdangling_markup%2Fname.html%26gt%3B%26lt%3Bfont%20size%3D100%20color%3Dred%26gt%3BYou%20must%20click%20me%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fa%26gt%3B%22%3E%3Cbutton%20form=x%3E%3Cfont%20size=100%20color=red%3EClick%20me%3C/font%3E%3C/button%3E%3Cform+id=x%20target=%22blah)
-
-Visit our Web Security Academy to [learn more about cross-site scripting (XSS)](https://portswigger.net/web-security/cross-site-scripting)
-
- [ csp ](https://portswigger.net/research/csp) [ dangling markup ](https://portswigger.net/research/dangling-markup)
-
-[Back to all articles](https://portswigger.net/research/articles)

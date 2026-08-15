@@ -12,14 +12,13 @@ sources:
   - id: original
     resource: "https://lab.wallarm.com/how-to-trick-csp-in-letting-you-run-whatever-you-want-73cb5ff428aa"
     title: Neatly bypassing CSP ✔️
-    author: wlrmblog, @Wallarm
+    author: @bo0om
     last_modified: 2018-07-10
   - id: canonical
     resource: "https://lab.wallarm.com/how-to-trick-csp-in-letting-you-run-whatever-you-want-73cb5ff428aa/"
 also_at: []
 authors:
-  - wlrmblog
-  - @Wallarm
+  - @bo0om
 canonical_url: "https://lab.wallarm.com/how-to-trick-csp-in-letting-you-run-whatever-you-want-73cb5ff428aa/"
 cited_by:
   - "2018.md:28"
@@ -47,7 +46,7 @@ translation_of: ""
 
 # Neatly bypassing CSP ✔️
 
-**Neatly bypassing CSP ✔️** - wlrmblog, @Wallarm, Wallarm.
+**Neatly bypassing CSP ✔️** - @bo0om, Wallarm.
 
 - Published: 2018-07-10
 - Original: <https://lab.wallarm.com/how-to-trick-csp-in-letting-you-run-whatever-you-want-73cb5ff428aa>
@@ -189,32 +188,3 @@ If you have to use unsafe-inline for correctly loading and processing the resour
 Additionally, as shared by [@majorisc](https://twitter.com/majorisc/status/1016466661266919426), another trick for stealing the data from a page is to use RTCPeerConnection and to pass the secret via DNS requests. `default-src ‘self’` doesn’t protect from it, unfortunately.
 
 Keep reading our blog for more tricks from our magic bag. Visit our website to learn more about the next generation of web application security such as the [API Security Platform](https://www.wallarm.com/product/cloud-native-api-security).
-
-### Frequently Asked Questions
-
-**What is Content-Security-Policy?
-**Content-Security-Policy (CSP) is an HTTP response header that helps to prevent cross-site scripting (XSS) attacks by specifying which sources of content are allowed to be loaded on a web page.
-
-**Is Content-Security-Policy necessary?
-**Yes, CSP plays a crucial role in the web security landscape. It helps to mitigate XSS attacks and keeps users safe from malicious content. Using CSP is especially important for websites that collect sensitive information from users.
-
-**Can you bypass Content-Security-Policy?
-**It is possible to bypass CSP by using various techniques like inline/eval code injection, data: URI scheme, or simply by using an XSS attack. However, such practices are considered malicious and can put user data at risk.
-
-**What is content security bypass?
-**A content security bypass is a security vulnerability that allows an attacker to bypass the Content-Security-Policy (CSP) header. This could potentially allow a hacker to inject malicious content into a website.
-
-**How do I get rid of content security policy?
-**It is not recommended to remove Content-Security-Policy (CSP) as it is an important security measure that protects your website. However, if you need to remove CSP for some reason, you can do so by modifying the HTTP response header of the web server.
-
-**References**
-
-[XXE that can Bypass WAF Protection](https://lab.wallarm.com/xxe-that-can-bypass-waf-protection-98f679452ce0/)
-
-[Latest Bypassing Techniques Beat SOAP/XML API Protection](https://lab.wallarm.com/latest-bypassing-techniques-beats-soap-xml-api-protection-b6185f0aef8f/)
-
-[Grammarly fixed XSS vulnerability that bypasses AWS WAF](https://lab.wallarm.com/grammarly-fixed-xss-vulnerability-that-bypasses-aws-waf/)
-
-See Wallarm in action
-
-“Wallarm really protects our service and provides good visibility and user-friendly control.”

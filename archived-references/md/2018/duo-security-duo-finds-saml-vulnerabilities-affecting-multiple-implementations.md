@@ -12,12 +12,12 @@ sources:
   - id: original
     resource: "https://duo.com/blog/duo-finds-saml-vulnerabilities-affecting-multiple-implementations"
     title: Duo Finds SAML Vulnerabilities Affecting Multiple Implementations
-    author: @duosec
+    author: Kelby Ludwig
   - id: capture
     resource: "https://web.archive.org/web/20181116121859/https://duo.com/blog/duo-finds-saml-vulnerabilities-affecting-multiple-implementations"
 also_at: []
 authors:
-  - @duosec
+  - Kelby Ludwig
 canonical_url: ""
 cited_by:
   - "2018.md:32"
@@ -45,7 +45,7 @@ translation_of: ""
 
 # Duo Finds SAML Vulnerabilities Affecting Multiple Implementations
 
-**Duo Finds SAML Vulnerabilities Affecting Multiple Implementations** - @duosec, Duo Security.
+**Duo Finds SAML Vulnerabilities Affecting Multiple Implementations** - Kelby Ludwig, Duo Security.
 
 - Published: date not stated
 - Original: <https://duo.com/blog/duo-finds-saml-vulnerabilities-affecting-multiple-implementations>
