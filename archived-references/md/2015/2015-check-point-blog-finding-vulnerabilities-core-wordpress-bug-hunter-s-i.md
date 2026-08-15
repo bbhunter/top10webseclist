@@ -12,15 +12,13 @@ sources:
   - id: original
     resource: "http://blog.checkpoint.com/2015/08/04/wordpress-vulnerabilities-1/"
     title: "Finding Vulnerabilities in Core WordPress: A Bug Hunter's Trilogy, Part I"
-    author: bferrite, @checkpointsw, Netanel Rubin, Vulnerability Researcher
+    author: Netanel Rubin
     last_modified: 2015-08-04
   - id: canonical
     resource: "https://blog.checkpoint.com/research/wordpress-vulnerabilities-1/"
 also_at: []
 authors:
-  - bferrite
-  - @checkpointsw
-  - Netanel Rubin, Vulnerability Researcher
+  - Netanel Rubin
 canonical_url: "https://blog.checkpoint.com/research/wordpress-vulnerabilities-1/"
 cited_by:
   - "2015.md:28"
@@ -48,7 +46,7 @@ translation_of: ""
 
 # Finding Vulnerabilities in Core WordPress: A Bug Hunter's Trilogy, Part I
 
-**Finding Vulnerabilities in Core WordPress: A Bug Hunter's Trilogy, Part I** - bferrite, @checkpointsw, Netanel Rubin, Vulnerability Researcher, Check Point Blog.
+**Finding Vulnerabilities in Core WordPress: A Bug Hunter's Trilogy, Part I** - Netanel Rubin, Check Point Blog.
 
 - Published: 2015-08-04
 - Original: <http://blog.checkpoint.com/2015/08/04/wordpress-vulnerabilities-1/>

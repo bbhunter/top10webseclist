@@ -12,10 +12,14 @@ sources:
   - id: original
     resource: "http://blog.trendmicro.com/trendlabs-security-intelligence/new-adobe-flash-zero-day-used-in-pawn-storm-campaign/"
     title: New Adobe Flash Zero-Day Used in Pawn Storm Campaign Targeting Foreign Affairs Ministries
+    author: Brooks Li, Feike Hacquebord, Peter Pi
   - id: capture
     resource: "https://web.archive.org/web/20151228211219/http://blog.trendmicro.com/trendlabs-security-intelligence/new-adobe-flash-zero-day-used-in-pawn-storm-campaign/"
 also_at: []
-authors: []
+authors:
+  - Brooks Li
+  - Feike Hacquebord
+  - Peter Pi
 canonical_url: ""
 cited_by:
   - "2015.md:20"
@@ -43,7 +47,7 @@ translation_of: ""
 
 # New Adobe Flash Zero-Day Used in Pawn Storm Campaign Targeting Foreign Affairs Ministries
 
-**New Adobe Flash Zero-Day Used in Pawn Storm Campaign Targeting Foreign Affairs Ministries** - Author not stated, blog.trendmicro.com.
+**New Adobe Flash Zero-Day Used in Pawn Storm Campaign Targeting Foreign Affairs Ministries** - Brooks Li, Feike Hacquebord, Peter Pi, blog.trendmicro.com.
 
 - Published: date not stated
 - Original: <http://blog.trendmicro.com/trendlabs-security-intelligence/new-adobe-flash-zero-day-used-in-pawn-storm-campaign/>
@@ -135,5 +139,3 @@ The SHA1 hashes of files related to this threat are:
 *Updated on October 16, 2015 9:50 A.M. PDT (UTC-7) to include links to the patch and to a related blog entry.*
 
 *Updated on October 17, *2015* 7:29 P.M. PDT (UTC-7) to add the SHA1 hashes related to this latest Flash exploit.*
-
- Tags: [zero-day exploit](http://blog.trendmicro.com/trendlabs-security-intelligence/tag/zero-day-exploit/)[adobe flash](http://blog.trendmicro.com/trendlabs-security-intelligence/tag/adobe-flash/)[zero-day vulnerability](http://blog.trendmicro.com/trendlabs-security-intelligence/tag/zero-day-vulnerability/)[Pawn Storm](http://blog.trendmicro.com/trendlabs-security-intelligence/tag/pawn-storm/)

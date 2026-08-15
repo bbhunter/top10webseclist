@@ -106,5 +106,3 @@ A cookie can contain a “secure” flag, indicating that it should be only sent
 #### presentation audio
 
     [MP3 Download](https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/sec15/zheng.mp3) [OGG Download](https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/sec15/zheng.ogg)
-
-### Open access to the USENIX Security '15 videos sponsored by Symantec.

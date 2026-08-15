@@ -140,17 +140,3 @@ MBSD Technical Whitepaper ©2015 Mitsui Bussan Secure Directions, Inc. All right
 --- page 19 ---
 
 MBSD Technical Whitepaper ©2015 Mitsui Bussan Secure Directions, Inc. All rights reserved. 15 8. About us About MBSD MBSD (Mitsui Bussan Secure Directions, Inc.) is the Japanese leading security company in managed security services, vulnerability assessment and testing, GRC (Governance, Risk, Compliance) consulting, incident response and handling, digital forensics, and secure programming training services. The MBSD services are provided by its personnel including the leading security experts in the field of secure programming, application security, penetration testing and threat analysis who have in-depth knowledge and understanding of attackers methodologies. MBSD is working for the Internet infrastructure companies, cyber commerce and media giants, financial institutes, global enterprise, and government agencies in Japan to support their strategies against rapidly increasing threats from cyber space. About the author Takeshi Terada, CISSP is a Senior Security Specialist at MBSD Professional Service Dept. Update History 12/17/2015 Added links to previous researches [1][3], thanks to one of the webappsec mailing list readers [16]. Updated the URL of JavaMails download page [9]. TT-1 Building 6F, 1-14-8, Nihonbashi Ningyo-Cho, Chuo-ku, Tokyo, 103-0013, Japan +81-3-5649-1961 | http://www.mbsd.jp/
-
---- page 20 ---
-
-<­‹þÞ#$fEE�ot+2åu9Hû=e;0*-yÇþì¼&'ýñ’—ýSª“ý´ "ÜýÙKÑhrC>Y>þm
-
---- page 21 ---
-
-ùë¤åpþ±N^@,ÍÀÀÈ!:0>1S-Í'd@§D%$§D&ª%€¸ÿð@H	t7z5X@Î,îgg+žgª9¨5 7K*gJgnC2E6gÂ+Œ6œ6œ9ü=Av5Ö6f+ž1zfxgÎgÈgÔehh h²feRhôgþhÜhâgøgæih¬ihŽh^ii*i0i6i<fxgÚhdhdhŽhjgÈgDgz@g>`œeRgÚbšaþgìaþhvh¸h4h:,@Î,+ži`I€i´iHCÎiriNiTixiÆ9Þ
-
---- page 22 ---
-
-0‚$	*†H†÷	1‚0‚0�Ž0w10	UUS10U
-Washington10URedmond10U
-Microsoft Corporation1!0UMicrosoft Time-Stamp PCA3vÂÎbé]…>v0	+ ]0	*†H†÷	1	*†H†÷0	*†H†÷	1150911184950Z0#	*†H†÷	1SRü~³õ'[m-O€Î‹x·0	*†H†÷‚îÂýì¯ãÚî5÷»É.<Exg£Ë­ðLIÂßŽ¦†›h¢¯¨Ñlòü mÌªëíËœMqÁ¥Œ%úØÔãƒ;	§×ùîCÅstz[~À±+'EØl

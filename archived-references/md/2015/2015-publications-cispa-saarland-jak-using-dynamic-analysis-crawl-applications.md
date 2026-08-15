@@ -12,16 +12,19 @@ sources:
   - id: original
     resource: "https://publications.cispa.saarland/538/"
     title: "jÄk: Using Dynamic Analysis to Crawl and Test Modern Web Applications"
-    author: Pellegrino, Giancarlo
+    author: Giancarlo Pellegrino, Constantin Tschurtz, Eric Bodden, Christian Rossow
     last_modified: 2015-01-01
   - id: capture
     resource: "https://web.archive.org/web/20200811034558/https://publications.cispa.saarland/538/"
 also_at: []
 authors:
-  - Pellegrino, Giancarlo
+  - Giancarlo Pellegrino
+  - Constantin Tschurtz
+  - Eric Bodden
+  - Christian Rossow
 canonical_url: ""
 cited_by:
-  - "2015.md:70"
+  - "2015.md:67"
 commit: ""
 content_sha256: 87e1c20a7fac829515196085855ab98b806e9012d276f91cc0ccd6f2d545cc29
 depth: full
@@ -46,7 +49,7 @@ translation_of: ""
 
 # jÄk: Using Dynamic Analysis to Crawl and Test Modern Web Applications
 
-**jÄk: Using Dynamic Analysis to Crawl and Test Modern Web Applications** - Pellegrino, Giancarlo, publications.cispa.saarland.
+**jÄk: Using Dynamic Analysis to Crawl and Test Modern Web Applications** - Giancarlo Pellegrino, Constantin Tschurtz, Eric Bodden, Christian Rossow, publications.cispa.saarland.
 
 - Published: 2015-01-01
 - Original: <https://publications.cispa.saarland/538/>
@@ -103,11 +106,3 @@ Web application scanners are popular tools to perform black box testing and are 
 |  Date Deposited: |  26 Jul 2017 10:30 |   |
 |  Last Modified: |  18 Jul 2019 12:12 |   |
 |  URI: |  [https://publications.cispa.saarland/id/eprint/538](https://publications.cispa.saarland/id/eprint/538) |   |
-
-### Actions
-
- ASCII CitationMultiline CSVDublin CoreJSONMETSSimple MetadataEndNoteHTML CitationBibTeXOpenURL ContextObject in SpanMODSRDF+XMLRDF+N3RDF+N-TriplesOpenURL ContextObjectAtomReferEP3 XMLMPEG-21 DIDLReference Manager
-
-### Actions (login required)
-
-|  [![View Item](https://publications.cispa.saarland/style/images/action_view.png)](https://publications.cispa.saarland/cgi/users/home?screen=EPrint%3A%3AView&eprintid=538) |  View Item |   |

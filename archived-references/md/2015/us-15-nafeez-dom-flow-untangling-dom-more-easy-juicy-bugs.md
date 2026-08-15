@@ -272,7 +272,3 @@ Work in progressPatching chromium to have V8 level tainting and enable overridin
 --- page 52 ---
 
 ThanksMore questions @skeptic_fx
-
---- page 53 ---
-
-¸¤@+P++

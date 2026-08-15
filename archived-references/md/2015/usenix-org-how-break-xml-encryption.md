@@ -76,34 +76,3 @@ In the recent years, XML Encryption became a target of several new attacks. Thes
 Unfortunately, most of the current XML Encryption implementations do not support the newest XML Encryption specification and offer different XML Security configurations to protect confidentiality of the exchanged messages. Resulting from the attack complexity, evaluation of the security configuration correctness becomes tedious and error prone. Validation of the applied countermeasures can typically be made with numerous XML messages provoking incorrect behavior by decrypting XML content. Up to now, this validation was only manually possible.
 
 In this paper, we systematically analyze the chosen-ciphertext attacks on XML Encryption and design an algorithm to perform a vulnerability scan on arbitrary encrypted XML messages. The algorithm can automatically detect a vulnerability and exploit it to retrieve the plaintext of a message protected by XML Encryption. To assess practicability of our approach, we implemented an open source attack plugin for Web Service attacking tool called WS-Attacker. With the plugin, we discovered new security problems in four out of five analyzed Web Service implementations, including IBM Datapower or Apache CXF.
-
-## [Dennis Kupser, Rühr University Bochum](https://www.usenix.org/conference/woot15/speaker-or-organizer/dennis-kupser-r%C3%BChr-university-bochum)
-
-## [Christian Mainka, Rühr University Bochum](https://www.usenix.org/conference/woot15/speaker-or-organizer/christian-mainka-r%C3%BChr-university-bochum)
-
-## [Jorg Schwenk, Rühr University Bochum](https://www.usenix.org/conference/woot15/speaker-or-organizer/jorg-schwenk-r%C3%BChr-university-bochum)
-
-## [Juraj Somorovsky, Rühr University Bochum](https://www.usenix.org/conference/woot15/speaker-or-organizer/juraj-somorovsky-r%C3%BChr-university-bochum)
-
-## Open Access Media
-
-USENIX is committed to Open Access to the research presented at our events. Papers and proceedings are freely available to everyone once the event begins. Any video, audio, and/or slides that are posted after the event are also free and open to everyone. [Support USENIX](https://www.usenix.org/annual-fund) and our commitment to Open Access.
-
-BibTeX
-
-@inproceedings {191956,
- author = {Dennis Kupser and Christian Mainka and J{\"o}rg Schwenk and Juraj Somorovsky},
- title = {How to Break {XML} Encryption {\textendash} Automatically},
- booktitle = {9th USENIX Workshop on Offensive Technologies (WOOT 15)},
- year = {2015},
- address = {Washington, D.C.},
- url = {https://www.usenix.org/conference/woot15/workshop-program/presentation/kupser},
- publisher = {USENIX Association},
- month = aug
- }
-
-[Download](https://www.usenix.org/biblio/export/bibtex/191956)
-
- [Kupser PDF](https://www.usenix.org/system/files/conference/woot15/woot15-paper-kupser.pdf)
-
-[View the slides](https://www.usenix.org/sites/default/files/conference/protected-files/woot15_slides_kupser.pdf)

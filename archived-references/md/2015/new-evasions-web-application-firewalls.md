@@ -6,16 +6,18 @@ tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:03+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://mazinahmed.net/uploads/Evading%20All%20Web-Application%20Firewalls%20XSS%20Filters.pdf"
     title: New Evasions for Web Application Firewalls
+    author: Mazin Ahmed
   - id: capture
     resource: "https://web.archive.org/web/20150914101711/https://mazinahmed.net/uploads/Evading%20All%20Web-Application%20Firewalls%20XSS%20Filters.pdf"
 also_at: []
-authors: []
+authors:
+  - Mazin Ahmed
 canonical_url: ""
 cited_by:
   - "2015.md:38"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # New Evasions for Web Application Firewalls
 
-**New Evasions for Web Application Firewalls** - Author not stated, Publisher not stated.
+**New Evasions for Web Application Firewalls** - Mazin Ahmed, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://mazinahmed.net/uploads/Evading%20All%20Web-Application%20Firewalls%20XSS%20Filters.pdf>

@@ -1793,8 +1793,3 @@ the editing distance between trees and related
 problems.
 SIAM journal on computing,
 18(6):1245Ð1262, 1989.
-
---- page 25 ---
-
-&%A/N-W1Z;"'b0M:0[tpI#qt%"$
-I_DF8mDW,Mmb.3p?]P

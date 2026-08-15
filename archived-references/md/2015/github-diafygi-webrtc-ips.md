@@ -12,15 +12,15 @@ sources:
   - id: original
     resource: "https://github.com/diafygi/webrtc-ips"
     title: Source
-    author: diafygi
+    author: Daniel Roesler
   - id: commit
     resource: "https://github.com/diafygi/webrtc-ips"
 also_at: []
 authors:
-  - diafygi
+  - Daniel Roesler
 canonical_url: ""
 cited_by:
-  - "2015.md:79"
+  - "2015.md:76"
 commit: ba63ef512c5f4bb0ac798679bef5cab9b71efc4f
 content_sha256: cbc4595d03ce5b814cc16d2d54bf46b7b5d21df809c5cf46f665ac640d9f53c2
 depth: full
@@ -45,7 +45,7 @@ translation_of: ""
 
 # Source
 
-**Source** - diafygi, GitHub.
+**Source** - Daniel Roesler, GitHub.
 
 - Published: date not stated
 - Original: <https://github.com/diafygi/webrtc-ips>

@@ -99,21 +99,3 @@ According to Bodden, though CASED researchers found thousands of applications th
 CASED has contacted Facebook, Amazon, Google, and Apple and provided them with a list of developers whose applications were found to be vulnerable, he said.
 
 Meanwhile, developers themselves should follow the security documentation provided by BaaS providers and implement the proper access control lists for their apps, he said.
-
-## About the Author
-
-[![Jai Vijayan](https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt1a674355ce57f27b/64f14f228727730c7f926217/Jai-Vijayan.jpeg?width=400&auto=webp&quality=80&disable=upscale)](https://www.darkreading.com/author/jai-vijayan)
-
-[Jai Vijayan](https://www.darkreading.com/author/jai-vijayan)
-
-Contributing Writer
-
-Illinois-based Jai Vijayan is a veteran, award-winning technology journalist with more than 25 years of experience covering cybersecurity. His information security reporting has explored everything from ransomware, nation-state threats, and identity security to AI risk, critical infrastructure protection, software supply chain security, cloud security and emerging enterprise technologies.
-
-Over the course of his career, Jai has written news stories, feature articles, survey reports, white papers, and e-books for enterprise and technology audiences. He has also moderated panel discussions and executive roundtables featuring CISOs, security researchers, and industry leaders.
-
-Jai previously served as senior editor at Computerworld, where he covered information security and data-privacy issues. His work has also appeared in CSO Online, InformationWeek, The Christian Science Monitor Passcode, The Economic Times, and other publications.
-
-His work has earned multiple industry honors, including a Joint ASBPE Excellence Award for Best Coverage of Government IT, and a Joint Jesse H. Neal Award for wireless LAN security coverage. Jai holds a Master’s degree in statistics from Bangalore University, and studied broadcasting and electronic communication at Marquette University in Milwaukee.
-
-[See more from Jai Vijayan](https://www.darkreading.com/author/jai-vijayan)

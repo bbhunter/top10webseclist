@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.darkreading.com/scope-of-freak-flaw-widens-as-microsoft-says-windows-affected-too/d/d-id/1319380"
     title: Scope Of FREAK Flaw Widens As Microsoft Says Windows Affected Too
+    author: Jai Vijayan
   - id: capture
     resource: "https://web.archive.org/web/20150906040008/http://www.darkreading.com/scope-of-freak-flaw-widens-as-microsoft-says-windows-affected-too/d/d-id/1319380"
 also_at: []
-authors: []
+authors:
+  - Jai Vijayan
 canonical_url: ""
 cited_by:
   - "2015.md:26"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Scope Of FREAK Flaw Widens As Microsoft Says Windows Affected Too
 
-**Scope Of FREAK Flaw Widens As Microsoft Says Windows Affected Too** - Author not stated, Dark Reading.
+**Scope Of FREAK Flaw Widens As Microsoft Says Windows Affected Too** - Jai Vijayan, Dark Reading.
 
 - Published: date not stated
 - Original: <http://www.darkreading.com/scope-of-freak-flaw-widens-as-microsoft-says-windows-affected-too/d/d-id/1319380>

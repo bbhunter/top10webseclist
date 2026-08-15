@@ -275,7 +275,3 @@ The version of LibreOffice shown in the demo is missing a few security patches a
 ### Conclusion
 
 Of the techniques discussed, Burp Suite currently uses all the XML attacks, the shell command injection attack, and [the best SQL ones](https://portswigger.net/burp/releases/1-6-27). Blind XSS checks are coming soon. We're excited to see if these techniques root out some vulnerabilities that have been allowed to stay hidden for too long. Hopefully this has also provided a solid a rationale for why it's worth [deploying your own private Collaborator server](https://portswigger.net/burp/help/collaborator_deploying) if you'd prefer not to use PortSwigger's public one.
-
- [ burp collaborator ](https://portswigger.net/research/burp-collaborator) [ Presentations ](https://portswigger.net/research/presentations) [ OAST ](https://portswigger.net/research/oast)
-
-[Back to all articles](https://portswigger.net/research/articles)

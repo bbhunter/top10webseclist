@@ -6,18 +6,18 @@ tags: [article, webseclist-reference, en, linkedin]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:15+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-11
 sources:
   - id: original
     resource: "https://security.linkedin.com/blog-archive#11232015"
     title: LinkedIn Security Practices – Find out how we protect you
-    author: Sakshi Jain
+    author: Jovon Itwaru
   - id: capture
     resource: "https://web.archive.org/web/20160304103642/https://security.linkedin.com/blog-archive#11232015"
 also_at: []
 authors:
-  - Sakshi Jain
+  - Jovon Itwaru
 canonical_url: ""
 cited_by:
   - "2015.md:41"
@@ -45,7 +45,7 @@ translation_of: ""
 
 # LinkedIn Security Practices – Find out how we protect you
 
-**LinkedIn Security Practices – Find out how we protect you** - Sakshi Jain, LinkedIn.
+**LinkedIn Security Practices – Find out how we protect you** - Jovon Itwaru, LinkedIn.
 
 - Published: date not stated
 - Original: <https://security.linkedin.com/blog-archive#11232015>

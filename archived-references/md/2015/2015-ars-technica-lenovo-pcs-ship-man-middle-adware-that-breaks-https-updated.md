@@ -117,35 +117,3 @@ Superfish presumably installs the root certificates so it can inject ads into en
  *MIIX Series:* MIIX2-8, MIIX2-10, MIIX2-11
  *YOGA Series:* YOGA2Pro-13, YOGA2-13, YOGA2-11BTM, YOGA2-11HSW
  *E Series:* E10-30]
-
- Listing image: [ Web Programming Step by Step, 2nd Edition ](http://www.webstepbook.com/supplements-2ed/slides/chapter15-security.shtml#slide41)
-
- [![Photo of Dan Goodin](https://cdn.arstechnica.net/wp-content/uploads/2018/10/Dang.jpg)](https://arstechnica.com/author/dan-goodin/)
-
- [ Dan Goodin ](https://arstechnica.com/author/dan-goodin/) Senior Security Editor
-
- [ Dan Goodin ](https://arstechnica.com/author/dan-goodin/) Senior Security Editor
-
- Dan Goodin is Senior Security Editor at Ars Technica, where he oversees coverage of malware, computer espionage, botnets, hardware hacking, encryption, and passwords. In his spare time, he enjoys gardening, cooking, and following the independent music scene. Dan is based in San Francisco. Follow him at [here](https://infosec.exchange/@dangoodin) on Mastodon and [here](https://bsky.app/profile/dangoodin.bsky.social) on Bluesky. Contact him on Signal at DanArs.82.
-
--  [ ![Listing image for first story in Most Read: Mount Toba eruption doesn't seem like it could nearly kill our species](https://cdn.arstechnica.net/wp-content/uploads/2026/08/image-1-500x500.jpeg) ](https://arstechnica.com/science/2026/08/mount-toba-eruption-doesnt-seem-like-it-could-nearly-kill-our-species/)
-
-  1. [Mount Toba eruption doesn't seem like it could nearly kill our species](https://arstechnica.com/science/2026/08/mount-toba-eruption-doesnt-seem-like-it-could-nearly-kill-our-species/)
-
--
-
-  2. [Flesh-eating screwworms feast on humans in Mexico; human cases top 500](https://arstechnica.com/health/2026/08/flesh-eating-screwworms-feast-on-humans-in-mexico-human-cases-top-500/)
-
--
-
-  3. [The first self-driving vehicle on Mars has proven to be a smashing success](https://arstechnica.com/space/2026/08/the-first-self-driving-vehicle-on-mars-has-proven-to-be-a-smashing-success/)
-
--
-
-  4. [DeepMind’s hurricane breakthrough has surprised weather scientists](https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/)
-
--
-
-  5. [Remembering the pre-Google web, when search was an experiment](https://arstechnica.com/gadgets/2026/08/remembering-the-pre-google-web-when-search-was-an-experiment/)
-
-  Customize

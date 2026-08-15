@@ -12,10 +12,16 @@ sources:
   - id: original
     resource: "https://www.freakattack.com/"
     title: Tracking the FREAK Attack
+    author: Zakir Durumeric, David Adrian, Ariana Mirian, Michael Bailey, J. Alex Halderman
   - id: canonical
     resource: "https://freakattack.com/"
 also_at: []
-authors: []
+authors:
+  - Zakir Durumeric
+  - David Adrian
+  - Ariana Mirian
+  - Michael Bailey
+  - J. Alex Halderman
 canonical_url: "https://freakattack.com/"
 cited_by:
   - "2015.md:5"
@@ -43,7 +49,7 @@ translation_of: ""
 
 # Tracking the FREAK Attack
 
-**Tracking the FREAK Attack** - Author not stated, freakattack.com.
+**Tracking the FREAK Attack** - Zakir Durumeric, David Adrian, Ariana Mirian, Michael Bailey, J. Alex Halderman, freakattack.com.
 
 - Published: date not stated
 - Original: <https://www.freakattack.com/>

@@ -42,7 +42,23 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-78 reference(s) unresolved. 64 of them already have their raw bytes stored.
+89 reference(s) unresolved. 75 of them already have their raw bytes stored.
+
+## http://blog.checkpoint.com/2015/08/04/wordpress-vulnerabilities-1/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: every code excerpt the article argues from is absent - the prose introduces listings that are simply not there (Let us observe an excerpt from the map_meta_cap() code, which uses the following code, Note the highlighted code) and the file contains zero code fences and zero images, so the original screenshots are lost; the article then stops on an empty POC section with Admin token retrieval and Race Condition headings and nothing under either (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2015.md:28`
+
+## http://www.mbsd.jp/Whitepaper/smtpi.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: the apostrophe glyph is dropped inside words throughout the prose - Vicente Aguilera Diazs work, Now lets see how the attack works, delivered to the victims mailbox, Rubys Mail, In the JavaMails case - with exactly one apostrophe surviving in the whole file; and pages 20 to 22 are decoded PDF font and timestamp-signature streams published as prose, holding both of the files U+FFFD characters (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2015.md:44`
 
 ## http://www.paulosyibelo.com/2017/05/twitter-xss-csp-bypass.html
 
@@ -196,13 +212,29 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2016-17.md:84`
 
-## https://dl.acm.org/doi/10.1145/2810103.2813680
+## https://dl.acm.org/doi/10.1145/2810103.2813633
 
 - Outcome: `broken-capture`
 - Kind: article
-- Reason: faulty capture: fi/ff/fl ligatures are missing inside words ("aected", "denition", "dierent"); pdf-text refused on 2026-08-14 because the stored raw object is the ACM DOI landing page rather than a PDF; needs the paper obtained by hand, then import --redo (reported 2026-08-14)
+- Reason: faulty capture: pervasive wrong-character ligature mapping through the whole paper - thorn stands for fi (Thrstname.lastname, our Thndings, conThgurations, signiThcantly, certiThcates), exclamation for ffi (clean tra!c), double-quote for ff (the e"ectiveness, Thve di"erent), O-with-tilde for the apostrophe, O-with-diaeresis pairs for curly quotes and capital eth for the en dash, plus five U+FFFD. Page 9 is published as decoded font-program bytes (lines 190-208, 647 characters) and a second font dump trails the reference list at page 25. Words are also split across the injected page markers. Strongest recapture candidate in the 2015 collection (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
-- Cited at: `2015.md:61`
+- Cited at: `2015.md:62`
+
+## https://dl.acm.org/doi/10.1145/2810103.2813652
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: WRONG PAGE - the archived body is the ACM Digital Library record behind a Premium Access wall, opening Several features on this page require Premium Access with Learn more and Sign in links; of 23,291 characters the research content is a single abstract paragraph and the rest is the bibliography with a Google Scholar link after every entry plus DL chrome. Both images are DL placeholders, the recorded title is the DL page title with the proceedings name appended, and the Contributors block captured only a loader gif so the paper authors are named nowhere (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2015.md:66`
+
+## https://doi.org/10.1016/j.cose.2015.07.004
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: WRONG DOCUMENT - the citation is the Elsevier Computers and Security journal article 10.1016/j.cose.2015.07.004, but what is archived is the two-page IEEE POSTER abstract, whose body opens Poster: Man-in-the-Browser-Cache. The stored source is a 2-page pdfTeX file dated May 2015, i.e. the poster, not the July 2015 journal paper - so the manifest decision claiming the complete publisher PDF was supplied by hand does not match what is in the tree. It also has dropped ligatures throughout (certicate, we nd, trafc, difcult, sufcient) and a bogus fourth page of decoded stream bytes against a 2-page source (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2015.md:77`
 
 ## https://doi.org/10.1109/SP.2019.00049
 
@@ -339,6 +371,14 @@ or fix the route and re-run.
 - Reason: faulty capture: 1,144 decoded symbol-font characters across 53 lines are published as prose, interleaved into the two-column abstract and clustered around the Figure 1 to 3 captions, so the diagram labels are unreadable dingbats; prose is unaffected (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2018.md:72`
+
+## https://mazinahmed.net/uploads/Evading%20All%20Web-Application%20Firewalls%20XSS%20Filters.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: the ENTIRE BODY is scrambled font-encoding output - only 23 of 2,495 alphabetic tokens are recognisable English, so line 70 reads ouble UDbRRDLoE and line 104 URoLEnulcddlibg. REPAIRABLE OFFLINE: the stored source raw_sha256 c38f62eb (19 pages) extracts perfectly with pdftotext -layout, returning EVADING ALL WEB-APPLICATION FIREWALLS XSS FILTERS and clean prose - the archive extractor ignored the PDF ToUnicode mapping. The author is also unrecorded because his name survives only in scrambled form: the cover reads MAZIN AHMED \| MAZIN@MAZINAHMED.NET \| @MAZEN160 and every page footer repeats Mazin Ahmed (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2015.md:38`
 
 ## https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails%20-%20LGMT%20v2.pdf
 
@@ -532,6 +572,30 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2014.md:77`
 
+## https://www.blackhat.com/docs/us-15/materials/us-15-Gavrichenkov-Breaking-HTTPS-With-BGP-Hijacking-wp.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: 30 Mac-Roman misdecoded punctuation characters through the prose - the em dash publishes as a capital eth, curly quotes as O-with-diaeresis pairs, the apostrophe as O-with-tilde, the bullet as a yen sign - and the contents page is destroyed by a digit-to-punctuation font map so every page number is junk while the section names survive; the recorded title is the PDF file stem (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2015.md:19`
+
+## https://www.blackhat.com/docs/us-15/materials/us-15-Nafeez-Dom-Flow-Untangling-The-DOM-For-More-Easy-Juicy-Bugs.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: Mac OS Roman read as Latin-1 throughout, so ligatures and quotes map to wrong letters inside words - The DOM speciThcation is rich, easily Thnd, tagged with a unique SSag, str.SSag = true, TodayOs web apps, var str = OhelloO (31 U+00D5, 21 U+00D4, 10 U+00DE, 6 U+00DF). Repairable offline: pdftotext on the stored source returns str.flag = true and specification intact. The recorded title is also the PDF file stem where the deck own title on slide 1 is DOM FLOW UNTANGLING THE DOM FOR EASY BUGS, and a junk page 53 trails a 50-page source (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2015.md:23`
+
+## https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE-ie-wp.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: the lowercase letter c is dropped and replaced by a space through most of the body - Abstra t, Mi rosoft x3, Introdu tion, Con lusion - and the damage reaches the payloads themselves, publishing s ript x2 and en oding x4 so the XML and JavaScript examples are not valid. Only 22 lowercase c survive in 10,673 characters. The closing bracket is also mapped to U+2104 nine times INSIDE the payloads, fi/fl ligatures are dropped (exltrate, les, dened), three mojibake remnants survive, and the recorded title is the PDF file stem (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2015.md:29`
+
 ## https://www.blackhat.com/presentations/bh-europe-09/Guimaraes/Blackhat-europe-09-Damele-SQLInjection-whitepaper.pdf
 
 - Outcome: `broken-capture`
@@ -580,6 +644,22 @@ or fix the route and re-run.
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2016-17.md:107`
 
+## https://www.ndss-symposium.org/wp-content/uploads/2017/09/09_1_2.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: SEVEN OF THIRTEEN PAGES ARE MISSING - the capture holds only pages 1, 6, 8, 10, 12 and 13, and sections II, III and IV do not exist in the file at all, while the surviving text refers back to them (We avoided discussing the stack-pivoting gadget in Section IV). Listing 1 is referenced but never printed, and Figures 2, 3 and 5 never appear. Everything present is faithful, so this is lost pages rather than damaged text (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2015.md:70`
+
+## https://www.ndss-symposium.org/wp-content/uploads/2017/09/09_3_2.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: six of fifteen pages are absent - the page-marker sequence breaks 4 to 6 and 6 to 12, prose is discontinuous across both breaks, and sections IV-B, IV-C (gadget chaining, the paper named contribution) and all of section V are gone. CAUSE VERIFIED against the stored source: pages 5, 7, 8, 9, 10 and 11 are SCANNED RASTER IMAGES, each with a 31-byte content stream, no /Font resource and a single /Im0 XObject, so pdftotext returns zero characters for them. This one needs OCR or a full-text source; a --force re-render would reproduce the loss exactly (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2015.md:78`
+
 ## https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_04B-3_Yang_paper.pdf
 
 - Outcome: `broken-capture`
@@ -627,6 +707,14 @@ or fix the route and re-run.
 - Reason: faulty capture: fi/ff/fl ligatures are missing inside words ("aected", "conguration", "dierent"); re-read with poppler on 2026-08-14, which recovered text but not the ligatures because the PDF's embedded font carries no usable ToUnicode map for them; needs a different extractor or OCR (reported 2026-08-14)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2010.md:5`
+
+## https://www.whitehatsec.com/blog/magic-hashes/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the file contains ZERO backslash characters, so escape sequences inside quoted code are destroyed - print "Matched. " publishes as print "Matched.n" and the regex character class [!-~] publishes as [x21-x7e]; the article is about hash comparison payloads, so the listings no longer say what they demonstrate (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2015.md:13`
 
 ## https://www.wiz.io/blog/ingress-nginx-kubernetes-vulnerabilities
 

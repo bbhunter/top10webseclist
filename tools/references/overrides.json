@@ -285,6 +285,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: the post credits the challenge it describes as \"Author: [me](https://x.com/arkark_)\" on the author's own blog, blog.arkark.dev."
   },
+  "https://blog.checkpoint.com/2015/08/04/wordpress-vulnerabilities-1": {
+   "authors": [
+    "Netanel Rubin"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded bferrite, a CMS posting account, and @checkpointsw, the corporate social handle, plus a third entry gluing a job title onto the name. The document names the researcher plainly: Check Point vulnerability researcher **Netanel Rubin** tells a story in three acts."
+  },
   "https://blog.flatt.tech/entry/signed_url_path_traversal": {
    "authors": [
     "Matsui",
@@ -367,9 +375,14 @@
    "reason": "Reviewed 2026-08-14: blog.slonser.info is the researcher's own site and the article's own proof-of-concept payload signs itself \"edited by slonser\"."
   },
   "https://blog.trendmicro.com/trendlabs-security-intelligence/new-adobe-flash-zero-day-used-in-pawn-storm-campaign": {
+   "authors": [
+    "Brooks Li",
+    "Feike Hacquebord",
+    "Peter Pi"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (trend-micro-research-news-perspectives). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
+   "reason": "authors was empty. Line 82 reads ***Analysis by Brooks Li, Feike Hacquebord, and Peter Pi***. The pages own Author field says Trend Micro, a CMS account, which is correctly not recorded.",
    "title": "New Adobe Flash Zero-Day Used in Pawn Storm Campaign Targeting Foreign Affairs Ministries"
   },
   "https://blog.viettelcybersecurity.com/tabshell-owassrf": {
@@ -564,9 +577,12 @@
    "title": "Racing and Fuzzing HTTP/3: Open-sourcing QuicDraw(H3)"
   },
   "https://darkreading.com/cloud/new-phishing-campaign-leverages-google-drive-/d/d-id/1321485": {
+   "authors": [
+    "Ericka Chickowski"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (dark-reading-cloud-security-recent-news). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
+   "reason": "authors was empty. The document names its writer twice, under the dateline and in the closing bio: Ericka Chickowski specializes in coverage of information technology and business innovation. Aditya K Sood is credited only with DISCOVERING the campaign and is not added.",
    "title": "New Phishing Campaign Leverages Google Drive"
   },
   "https://darkreading.com/document.asp?doc_id=104313&f_src=darkreading_section_296": {
@@ -576,9 +592,12 @@
    "title": "Dark Reading - Desktop Security - Hackers Reveal Vulnerable Websites"
   },
   "https://darkreading.com/scope-of-freak-flaw-widens-as-microsoft-says-windows-affected-too/d/d-id/1319380": {
+   "authors": [
+    "Jai Vijayan"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (dark-reading-vulnerabilities-threats-recent-news). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
+   "reason": "authors was empty although the page names Jai Vijayan twice.",
    "title": "Scope Of FREAK Flaw Widens As Microsoft Says Windows Affected Too"
   },
   "https://dhanjani.com/blog/2008/05/safari-carpet-b.html": {
@@ -743,11 +762,31 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the article introduces its author in the first person - \"Hi, I’m stypr ([@stereotype32](https://twitter.com/stereotype32), [https://harold.kim/](https://harold.kim/)) from Flatt Security Inc.\" The archive recorded only the company name. \"stypr\" is the handle the author publishes under; no fuller name appears in the document."
   },
+  "https://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability": {
+   "authors": [
+    "Stephen Breen"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded the publisher handle @foxglovesec, which additionally breaks YAML unquoted. The post is signed By @breenmachine - Stephen Breen."
+  },
   "https://franziroesner.com/pdf/roesner_kohlbrenner_2026_agentic_sop.pdf": {
    "class": "research",
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited. The citation pairs this with its sibling on one list line and both carry the document title, so the format word the citation itself uses (Paper) distinguishes them.",
    "title": "Agentic Browsers and the Same-Origin Policy (Paper)"
+  },
+  "https://freakattack.com/": {
+   "authors": [
+    "Zakir Durumeric",
+    "David Adrian",
+    "Ariana Mirian",
+    "Michael Bailey",
+    "J. Alex Halderman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The page states This report is maintained by computer scientists at the University of Michigan, including Zakir Durumeric, David Adrian, Ariana Mirian, Michael Bailey, and J. Alex Halderman. Karthikeyan Bhargavan and the miTLS team DISCOVERED FREAK and are deliberately not credited as authors of this page."
   },
   "https://fscked.org/blog/fully-automated-active-https-cookie-hijacking": {
    "class": "research",
@@ -871,6 +910,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors recorded the repo-owner handle \"chenjj\", which on its own is not a byline. The LICENSE states \"Copyright (c) 2019 Jianjun Chen\", corroborated by the tool's own citation block. Vern Paxson and Jian Jiang are co-authors of the PAPER rather than demonstrably of this tool, so they are not added."
+  },
+  "https://github.com/diafygi/webrtc-ips": {
+   "authors": [
+    "Daniel Roesler"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded only the repo-owner handle diafygi, which is not a byline. The LICENSE reads Copyright (c) 2015 Daniel Roesler."
   },
   "https://github.com/greshake/llm-security": {
    "authors": [
@@ -1378,6 +1425,14 @@
    "outcome": "archive",
    "reason": "authors held \"@Mattermost\" alongside the real byline. That handle is the publisher's, not a person; Mattermost is already recorded as publisher."
   },
+  "https://mazinahmed.net/uploads/Evading%20All%20Web-Application%20Firewalls%20XSS%20Filters.pdf": {
+   "authors": [
+    "Mazin Ahmed"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty because the name survives in the archived Markdown only in scrambled form. The source PDF cover reads MAZIN AHMED | MAZIN@MAZINAHMED.NET | @MAZEN160 and every page footer repeats Mazin Ahmed."
+  },
   "https://mcafee.com/us/resources/white-papers/foundstone/wp-bypassing-captchas.pdf": {
    "class": "research",
    "outcome": "archive",
@@ -1801,9 +1856,15 @@
    "title": "PMForce: Systematically Analyzing PostMessage Handlers at Scale"
   },
   "https://publications.cispa.saarland/538": {
+   "authors": [
+    "Giancarlo Pellegrino",
+    "Constantin Tschurtz",
+    "Eric Bodden",
+    "Christian Rossow"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "The migrated live URL served the generic CISPA repository browser. A dated Wayback capture recovered the publication record, and the curated citation supplies its exact title and file name.",
+   "reason": "authors recorded one name in repository surname-first form while line 71 names four: Pellegrino, Giancarlo and Tschurtz, Constantin and Bodden, Eric and Rossow, Christian. Sebastian Weisgerber is the Depositing User, a CMS account, correctly not recorded.",
    "title": "jÄk: Using Dynamic Analysis to Crawl and Test Modern Web Applications"
   },
   "https://r2c.dev/blog/2020/exploiting-dynamic-rendering-engines-to-take-control-of-web-apps": {
@@ -1954,6 +2015,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors was empty. The author signs the post himself, with the handles @lauritz / @_lauritz_ and a LinkedIn path under his own name; he is already credited on the 2024 sibling. Louis Jannett is thanked as a REVIEWER in the same document and is deliberately not credited."
+  },
+  "https://security.linkedin.com/blog-archive": {
+   "authors": [
+    "Jovon Itwaru"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded Sakshi Jain, who is the author of a DIFFERENT POST on the same blog-archive index page. The cited post, addressed by the fragment #11232015, is titled Abusing CSS Selectors to Perform UI Redressing Attacks and names its author at lines 107-108: Jovon Itwaru, Information Security Engineer. Ruben van Vreeland is credited with DISCOVERING the issue and is not the write-up author."
   },
   "https://securityfocus.com/archive/1/437948/30/0/threaded": {
    "class": "research",
