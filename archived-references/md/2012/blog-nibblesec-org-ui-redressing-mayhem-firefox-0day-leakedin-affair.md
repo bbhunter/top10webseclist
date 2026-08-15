@@ -6,18 +6,20 @@ tags: [article, webseclist-reference, blog-nibblesec-org]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:05:32+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-firefox-0day-and.html"
     title: "UI Redressing Mayhem: Firefox 0day and the LeakedIn affair"
+    author: Luca De Fulgentis
   - id: canonical
     resource: "https://web.archive.org/web/20171005091933/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-firefox-0day-and.html"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-firefox-0day-and.html"
 also_at: []
-authors: []
+authors:
+  - Luca De Fulgentis
 canonical_url: "https://web.archive.org/web/20171005091933/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-firefox-0day-and.html"
 cited_by:
   - "2012.md:55"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # UI Redressing Mayhem: Firefox 0day and the LeakedIn affair
 
-**UI Redressing Mayhem: Firefox 0day and the LeakedIn affair** - Author not stated, blog.nibblesec.org.
+**UI Redressing Mayhem: Firefox 0day and the LeakedIn affair** - Luca De Fulgentis, blog.nibblesec.org.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-firefox-0day-and.html>

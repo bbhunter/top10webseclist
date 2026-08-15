@@ -12,9 +12,11 @@ sources:
   - id: original
     resource: "https://news.ncsu.edu/2012/07/wms-jiang-clickjack/"
     title: "Clickjacking Rootkits for Android: The Next Big Threat?"
+    author: Matt Shipman
     last_modified: 2012-07-02
 also_at: []
-authors: []
+authors:
+  - Matt Shipman
 canonical_url: ""
 cited_by:
   - "2012.md:33"
@@ -42,7 +44,7 @@ translation_of: ""
 
 # Clickjacking Rootkits for Android: The Next Big Threat?
 
-**Clickjacking Rootkits for Android: The Next Big Threat?** - Author not stated, NC State News.
+**Clickjacking Rootkits for Android: The Next Big Threat?** - Matt Shipman, NC State News.
 
 - Published: 2012-07-02
 - Original: <https://news.ncsu.edu/2012/07/wms-jiang-clickjack/>
@@ -50,7 +52,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content
@@ -74,11 +76,3 @@ For example, the rootkit could hide the smartphone’s browser and replace it wi
 “But there is good news. Now that we’ve identified the problem, we can begin working on ways to protect against attacks like these.”
 
 Jiang is also the founder of the [Android Malware Genome Project](http://www.malgenomeproject.org/), which is a collaborative research effort designed to improve our understanding of existing Android malware. The project [was announced May 22](http://news.ncsu.edu/technology/wms-android-genome/).
-
-- Categories:
-
--  [The Abstract](https://news.ncsu.edu/category/research-and-innovation/the-abstract/)
-
-- Tags:
-
--  [computers](https://news.ncsu.edu/tag/computers/)

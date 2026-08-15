@@ -6,18 +6,20 @@ tags: [article, webseclist-reference, gursevkalra-blogspot-com]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:10:52+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html"
     title: CAPTCHA Re-Riding Attack
+    author: Gursev Singh Kalra
   - id: canonical
     resource: "https://web.archive.org/web/20171105034455/http://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/http://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html"
 also_at: []
-authors: []
+authors:
+  - Gursev Singh Kalra
 canonical_url: "https://web.archive.org/web/20171105034455/http://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html"
 cited_by:
   - "2012.md:12"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # CAPTCHA Re-Riding Attack
 
-**CAPTCHA Re-Riding Attack** - Author not stated, gursevkalra.blogspot.com.
+**CAPTCHA Re-Riding Attack** - Gursev Singh Kalra, gursevkalra.blogspot.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html>

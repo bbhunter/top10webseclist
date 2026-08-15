@@ -163,25 +163,3 @@ Too Many Hyperlinks Fig. N Revisiting the case of Twitter(Fig. N), there were ac
 --- page 25 ---
 
 Though it is impossible to provide an indicator that will always identify the final destination of an arbitrary hyperlink, users must be presented with hyperlink destinations that are: o Resolved beyond short-links such that displayed hyperlinks are unambiguous for trustworthy destinations. o Not capable of spoofing trustworthy destination URIs outright. (Eg: An indicated destination of microsoft.com should not navigate the user to evil.com.) Legitimate short-link services should not intentionally or unintentionally defeat mechanisms used to facilitate the determination of a final hyperlink destination. (Eg: Short-link services should avoid using framing or client-side redirects.) Avoid presenting content (text, icons) directly under the control of the attacker as a clickable hyperlink. Or if this is unavoidable, tag the content such that the validated hyperlink destination is displayed prior to the content itself. o If a potentially attacker-specified icon is displayed with a status update as a hyperlink, at minimum ensure the standard browser hyperlink URI tooltip is displayed on hover. Optimally such icons should not be hyperlinks at all unless they are in some way augmented with an indication of the destination, given touch interfaces t generally support a scenario. These goals should be possible to achieve in conformance with realistic performance, compatibility, privacy, and usability constraints. Specifically, an implementation of idea #1 or #3 as described above would suffice. Of the services tested, Platform Example #2 comes closest to defeating all identified spoofing scenarios. Acknowledgements Special thanks to Devdatta Akhawe, Manuel Caballero, Mario Heiderich, Gareth Heyes, Alex (Twitter), and Jad Boutros (Google) for contributing to this write-up and providing insightful feedback.
-
---- page 26 ---
-
-þý8ZJ²ÄCR6N%GkQÎú;XC&s=gR>*'‚',TzM.TG8
-5Rn/L5þ]#;OýÝ:X<þ87Raÿð9b³;+¸ÿè³M+¸ÿð³M+¸ÿì³
-M+¸ÿî³M+¸ÿè³M+¾3/!&,²S»*50.±	V?ýÔí?ýÔí/á+++++ÖÄ10%#".54>32#".#"32>32@_{I~Ë�MS–Ñ8jZF2OqOV�d75c�[MsQ4
-·/%L%%"L
-
---- page 27 ---
-
-ýó%++&
-&­”C
-ÅjBÿµ2®¤
-
---- page 28 ---
-
-ùë¤åpþ±N^@,ÍÀÀÈ!:0>1S-Í'd@§D%$§D&ª%€¸ÿð@H	
-
---- page 29 ---
-
-¸¤@+P++­”C
-ÅjBÿµ2®¤

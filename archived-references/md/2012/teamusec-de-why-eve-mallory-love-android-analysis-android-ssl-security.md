@@ -12,14 +12,19 @@ sources:
   - id: original
     resource: "https://teamusec.de/publications/conf-ccs-fahlhmsbf12/"
     title: "Why eve and mallory love android: an analysis of android SSL (in)security"
-    author: Sascha Fahl
+    author: Sascha Fahl, Marian Harbach, Thomas Muders, Matthew Smith, Lars Baumgärtner, Bernd Freisleben
 also_at:
   - "https://teamusec.de/pdf/conf-ccs-FahlHMSBF12.pdf"
 authors:
   - Sascha Fahl
+  - Marian Harbach
+  - Thomas Muders
+  - Matthew Smith
+  - Lars Baumgärtner
+  - Bernd Freisleben
 canonical_url: ""
 cited_by:
-  - "2012.md:85"
+  - "2012.md:86"
 commit: ""
 content_sha256: 36a71cc2f35a5c424a37c955961f497ae5fc513decfc2ee6294330f9fee52b55
 depth: full
@@ -44,7 +49,7 @@ translation_of: ""
 
 # Why eve and mallory love android: an analysis of android SSL (in)security
 
-**Why eve and mallory love android: an analysis of android SSL (in)security** - Sascha Fahl, teamusec.de.
+**Why eve and mallory love android: an analysis of android SSL (in)security** - Sascha Fahl, Marian Harbach, Thomas Muders, Matthew Smith, Lars Baumgärtner, Bernd Freisleben, teamusec.de.
 
 - Published: date not stated
 - Original: <https://teamusec.de/publications/conf-ccs-fahlhmsbf12/>

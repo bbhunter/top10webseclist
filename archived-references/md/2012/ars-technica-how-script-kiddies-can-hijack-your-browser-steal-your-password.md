@@ -12,14 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://arstechnica.com/security/2012/12/how-script-kiddies-can-hijack-your-browser-to-steal-your-password/"
     title: How script kiddies can hijack your browser to steal your password
-    author: @dangoodin001
+    author: Dan Goodin
   - id: canonical
     resource: "https://web.archive.org/web/20161118020720/http://arstechnica.com/security/2012/12/how-script-kiddies-can-hijack-your-browser-to-steal-your-password/"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/http://arstechnica.com/security/2012/12/how-script-kiddies-can-hijack-your-browser-to-steal-your-password/"
 also_at: []
 authors:
-  - @dangoodin001
+  - Dan Goodin
 canonical_url: "https://web.archive.org/web/20161118020720/http://arstechnica.com/security/2012/12/how-script-kiddies-can-hijack-your-browser-to-steal-your-password/"
 cited_by:
   - "2012.md:20"
@@ -47,7 +47,7 @@ translation_of: ""
 
 # How script kiddies can hijack your browser to steal your password
 
-**How script kiddies can hijack your browser to steal your password** - @dangoodin001, Ars Technica.
+**How script kiddies can hijack your browser to steal your password** - Dan Goodin, Ars Technica.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://arstechnica.com/security/2012/12/how-script-kiddies-can-hijack-your-browser-to-steal-your-password/>

@@ -6,18 +6,20 @@ tags: [article, webseclist-reference, en, shreeraj-blogspot-com]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:59:16+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://shreeraj.blogspot.com/2012/08/file-system-api-with-html5-juice-for-xss.html"
     title: File System API with HTML5
+    author: shreeraj
   - id: canonical
     resource: "https://web.archive.org/web/20190110045801/http://shreeraj.blogspot.com/2012/08/file-system-api-with-html5-juice-for-xss.html"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/http://shreeraj.blogspot.com/2012/08/file-system-api-with-html5-juice-for-xss.html"
 also_at: []
-authors: []
+authors:
+  - shreeraj
 canonical_url: "https://web.archive.org/web/20190110045801/http://shreeraj.blogspot.com/2012/08/file-system-api-with-html5-juice-for-xss.html"
 cited_by:
   - "2012.md:36"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # File System API with HTML5
 
-**File System API with HTML5** - Author not stated, shreeraj.blogspot.com.
+**File System API with HTML5** - shreeraj, shreeraj.blogspot.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://shreeraj.blogspot.com/2012/08/file-system-api-with-html5-juice-for-xss.html>

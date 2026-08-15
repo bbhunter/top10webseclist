@@ -12,7 +12,7 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://news.softpedia.com/news/Users-of-Mobile-Portals-Exposed-to-HTTP-Header-Pollution-Attacks-Expert-Finds-293540.shtml"
     title: Users of Mobile Portals Exposed to HTTP Header Pollution Attacks, Expert Finds
-    author: Eduard Kovacs, @Softpedia
+    author: Eduard Kovacs
     last_modified: 2012-09-20
   - id: canonical
     resource: "https://web.archive.org/web/20150912105524/http://news.softpedia.com/news/Users-of-Mobile-Portals-Exposed-to-HTTP-Header-Pollution-Attacks-Expert-Finds-293540.shtml"
@@ -21,7 +21,6 @@ sources:
 also_at: []
 authors:
   - Eduard Kovacs
-  - @Softpedia
 canonical_url: "https://web.archive.org/web/20150912105524/http://news.softpedia.com/news/Users-of-Mobile-Portals-Exposed-to-HTTP-Header-Pollution-Attacks-Expert-Finds-293540.shtml"
 cited_by:
   - "2012.md:28"
@@ -49,7 +48,7 @@ translation_of: ""
 
 # Users of Mobile Portals Exposed to HTTP Header Pollution Attacks, Expert Finds
 
-**Users of Mobile Portals Exposed to HTTP Header Pollution Attacks, Expert Finds** - Eduard Kovacs, @Softpedia, softpedia.
+**Users of Mobile Portals Exposed to HTTP Header Pollution Attacks, Expert Finds** - Eduard Kovacs, softpedia.
 
 - Published: 2012-09-20
 - Original: <https://web.archive.org/web/20170903113359/http://news.softpedia.com/news/Users-of-Mobile-Portals-Exposed-to-HTTP-Header-Pollution-Attacks-Expert-Finds-293540.shtml>

@@ -545,8 +545,3 @@ McAfee, a wholly owned subsidiary of Intel Corporation (NASDAQ:INTC), is the wor
 5  http://www.thoughtcrime.org/software/sslstrip/
 6  http://curl.haxx.se/ca/cacert.pem
 ```
-
-[McAfee logo, "An Intel Company", address block: 2821 Mission College Boulevard, Santa Clara, CA 95054, 888 847 8766, www.mcafee.com]
-
-McAfee, the McAfee logo, and McAfee Foundstone are registered trademarks or trademarks of McAfee, Inc. or its subsidiaries in the United States and other countries. Other marks and brands may be claimed as the property of others. The product plans, specifications and descriptions herein are provided for information only and subject to change without notice, and are provided without warranty of any kind, express or implied. Copyright © 2012 McAfee, Inc.
-49301wp_bypassing-captchas_0812_fnl_ETMG

@@ -12,7 +12,7 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://erpscan.com/press-center/blog/ssrf-via-ws-adressing/"
     title: SSRF via WS-Adressing
-    author: @erpscan
+    author: Alexey Tyurin
     last_modified: 2012-12-08
   - id: canonical
     resource: "https://web.archive.org/web/20151101090809/http://erpscan.com/press-center/blog/ssrf-via-ws-adressing/"
@@ -20,7 +20,7 @@ sources:
     resource: "https://web.archive.org/web/20170903113359/http://erpscan.com/press-center/blog/ssrf-via-ws-adressing/"
 also_at: []
 authors:
-  - @erpscan
+  - Alexey Tyurin
 canonical_url: "https://web.archive.org/web/20151101090809/http://erpscan.com/press-center/blog/ssrf-via-ws-adressing/"
 cited_by:
   - "2012.md:6"
@@ -48,7 +48,7 @@ translation_of: ""
 
 # SSRF via WS-Adressing
 
-**SSRF via WS-Adressing** - @erpscan, ERPScan.
+**SSRF via WS-Adressing** - Alexey Tyurin, ERPScan.
 
 - Published: 2012-12-08
 - Original: <https://web.archive.org/web/20170903113359/http://erpscan.com/press-center/blog/ssrf-via-ws-adressing/>

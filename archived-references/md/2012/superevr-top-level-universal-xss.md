@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/https://superevr.com/blog/2012/top-level-universal-xss/"
     title: Top-Level Universal XSS
+    author: superevr
   - id: canonical
     resource: "https://web.archive.org/web/20170715021134/https://superevr.com/blog/2012/top-level-universal-xss"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/https://superevr.com/blog/2012/top-level-universal-xss/"
 also_at: []
-authors: []
+authors:
+  - superevr
 canonical_url: "https://web.archive.org/web/20170715021134/https://superevr.com/blog/2012/top-level-universal-xss"
 cited_by:
   - "2012.md:29"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Top-Level Universal XSS
 
-**Top-Level Universal XSS** - Author not stated, Superevr.
+**Top-Level Universal XSS** - superevr, Superevr.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/https://superevr.com/blog/2012/top-level-universal-xss/>

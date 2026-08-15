@@ -184,6 +184,22 @@
    "outcome": "archive",
    "reason": "authors recorded \"@j_timmer\", which is the twitter:creator meta handle, not a byline. the extraction dropped the byline the stored source carries. The stored source has a byline paragraph marked itemprop=\"author creator\" with rel=\"author\" naming John Timmer, repeated in the author box as \"John became Ars Technica's science editor in 2007\"."
   },
+  "https://arstechnica.com/security/2012/09/crime-hijacks-https-sessions": {
+   "authors": [
+    "Dan Goodin"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded the handle \"@dangoodin001\". The document names him in words in the author card: \"[Dan Goodin](...) / Dan is the IT Security Editor at Ars Technica\" - which is also the only place the archived text spells the name, so the credit is recorded BEFORE the tail is trimmed."
+  },
+  "https://arstechnica.com/security/2012/12/how-script-kiddies-can-hijack-your-browser-to-steal-your-password": {
+   "authors": [
+    "Dan Goodin"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@dangoodin001\", taken from the twitter:creator meta tag. the extraction dropped the byline the stored source carries. The source has a byline paragraph marked itemprop=\"author creator\" with rel=\"author\" naming Dan Goodin, and the body names him again."
+  },
   "https://arstechnica.com/security/2013/03/guerilla-researcher-created-epic-botnet-to-scan-billions-of-ip-addresses": {
    "authors": [
     "Dan Goodin"
@@ -324,6 +340,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: the archived English translation opens \"Hello. We are Matsui ([@ryotaromosao]) and Chung ([Eui Chul Chung]), security engineers at GMO Flatt Security.\" Only the surname is given for Matsui."
   },
+  "https://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html": {
+   "authors": [
+    "Anthony Ferrara"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". the extraction dropped the byline the stored source carries. The source carries both \"Posted by <span class=\\\"fn\\\">Anthony Ferrara</span>\" and a rel=\"author\" link naming him."
+  },
   "https://blog.malicious.group/from-akamai-to-f5-to-ntlm": {
    "class": "research",
    "outcome": "archive",
@@ -350,6 +374,22 @@
    "class": "derivative",
    "outcome": "skip",
    "reason": "The short announcement is retained in the 2015 list, while the complete Evading All Web Application Firewalls XSS Filters paper is archived from https://mazinahmed.net/uploads/Evading%20All%20Web-Application%20Firewalls%20XSS%20Filters.pdf."
+  },
+  "https://blog.nibblesec.org/2012/12/ui-redressing-mayhem-firefox-0day-and.html": {
+   "authors": [
+    "Luca De Fulgentis"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. the extraction dropped the byline the stored source carries. The source's single post byline reads \"Posted by <span class=\\\"fn\\\">Luca De Fulgentis</span>\"."
+  },
+  "https://blog.nibblesec.org/2012/12/ui-redressing-mayhem-httponly-bypass_19.html": {
+   "authors": [
+    "Luca De Fulgentis"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. the extraction dropped the byline the stored source carries. The stored post footer reads \"Posted by <span class=\\\"fn\\\">Luca De Fulgentis</span>\". Same author as its sibling."
   },
   "https://blog.orange.tw/posts/2024-06-cve-2024-4577-yet-another-php-rce": {
    "authors": [
@@ -793,6 +833,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: the archived document's byline block reads \"By\" / \"Luke Jahnke\" / \"November 8, 2018\". Extraction recorded no author because the byline is not an anchor."
   },
+  "https://erpscan.com/press-center/blog/ssrf-via-ws-adressing": {
+   "authors": [
+    "Alexey Tyurin"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@erpscan\", the COMPANY's handle. The document names the researcher on its last line: \" by Alexey Tyurin\", confirmed in the stored source's og:description and body."
+  },
   "https://ethiack.com/info-hub/research/write-once-shell-everywhere-arbitrary-file-writes-into-rce": {
    "authors": [
     "André Baptista",
@@ -817,6 +865,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors was empty and publisher held the hostname. the extraction dropped the byline the stored source carries. The stored source has \"By Feross Aboukhadijeh\" in a byline div with a February 27, 2013 time element, and the post footer reads \"Hey, thanks for reading! I'm Feross Aboukhadijeh\"."
+  },
+  "https://feross.org/html5-fullscreen-api-attack": {
+   "authors": [
+    "Feross Aboukhadijeh"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. the extraction dropped the byline the stored source carries. The source has an explicit byline div: \"By <a ... title=\\\"Feross Aboukhadijeh\\\">Feross Aboukhadijeh</a>\" with a 2012-10-08 time element."
   },
   "https://flattsecurity.medium.com/finding-an-unseen-sql-injection-by-bypassing-escape-functions-in-mysqljs-mysql-90b27f6542b4": {
    "authors": [
@@ -1045,6 +1101,22 @@
    "reason": "The live migration served GoSecure's generic managed-services page. A near-publication Wayback capture recovered the article, and this title from the curated citation restores its heading and file name.",
    "title": "AWS WAF Clients Left Vulnerable to SQL Injection Due to Unorthodox MSSQL Design Choice"
   },
+  "https://gursevkalra.blogspot.com/2012/03/captcha-re-riding-attack.html": {
+   "authors": [
+    "Gursev Singh Kalra"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. the extraction dropped the byline the stored source carries. The source has rel=\"author\" naming him under \"Posted by\". Same author as two sibling references in this collection."
+  },
+  "https://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html": {
+   "authors": [
+    "Gursev Singh Kalra"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. the extraction dropped the byline the stored source carries. The source reads \"Posted by <span class=\\\"fn\\\" itemprop=\\\"author\\\"><span itemprop=\\\"name\\\">Gursev Singh Kalra</span>\", and he is already credited on the sibling clipcaptcha entry."
+  },
   "https://gwern.net/doc/cs/js/2013-stone.pdf": {
    "class": "research",
    "outcome": "archive",
@@ -1155,6 +1227,15 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors was empty. The document's own title line names him - \"# Egor Homakov: The No CAPTCHA problem\" - the body is first person, and the quoted reply is addressed \"[@homakov] I've used them in the past\". The stored source carries an explicit byline block, \"rel=\\\"author\\\"><span itemprop=\\\"name\\\">Egor Homakov\", which the extraction dropped. The masthead and the byline are the same name here, so the title fault and the attribution fault resolve together."
+  },
+  "https://hovav.net/ucsd/papers/ms12.html": {
+   "authors": [
+    "Keaton Mowery",
+    "Hovav Shacham"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty where the document plainly names both writers: \" By [Keaton Mowery](...) and Hovav Shacham.\", corroborated by the page's own BibTeX author field."
   },
   "https://i.blackhat.com/Asia-26/Presentations/BHAS26-Davidson-Discovering-React2Shell.pdf": {
    "class": "research",
@@ -1333,6 +1414,14 @@
    "outcome": "archive",
    "reason": "authors was empty; the document names Daniel Thatcher as its author."
   },
+  "https://isecpartners.com/blog/2012/december/an-attack-on-ssl-client-certificates.aspx": {
+   "authors": [
+    "Tom Ritter"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the banner read \"Author not stated\". The document names its writer: \"Written by  [Tom Ritter](...)  at 00:00\", confirmed in the source as a uBlogsy_author div."
+  },
   "https://isg.rhul.ac.uk/tls": {
    "authors": [
     "Nadhem AlFardan",
@@ -1354,9 +1443,12 @@
    "reason": "Reviewed 2026-08-14: jorianwoltjer.com is the researcher's own site and the post links its companion challenge as x.com/J0R1AN and bsky.app/profile/jorianwoltjer.com."
   },
   "https://jsfiddle.net/gcollazo/UMyEm/embedded/result": {
+   "authors": [
+    "@gcollazo"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Verified from the live JSFiddle source after the containerized browser could not settle the page. This is the complete proof of concept: its embedded HTML explains CSS-only clickjacking and its CSS identifies pointer-events: none as the technique. No separate written paper or disclosure was found.",
+   "reason": "authors recorded \"JSFiddle\", the PLATFORM name - the same class as @speakerdeck. The document's own quotable handle is \"Follow @gcollazo\", appearing twice and matching the fiddle path /gcollazo/UMyEm/. \"Thanks to @elving, telling me about this\" is a thanked helper and does not qualify.",
    "title": "CSS-Only Clickjacking"
   },
   "https://kernelpicnic.net/2017/05/29/Pivoting-from-blind-SSRF-to-RCE-with-Hashicorp-Consul.html": {
@@ -1441,6 +1533,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: labs.hakaioffsec.com now redirects to hakaisecurity.io/vulnerability-research/, so the first capture archived the firm's blog index and both the title and the slug were built from its masthead, \"Hakai Security\". The 2023-07-04 Wayback capture holds the article itself; this restores the title the citation uses so the file name follows the document.",
    "title": "Hunting for Nginx Alias Traversals in the wild"
+  },
+  "https://labs.neohapsis.com/2012/11/14/browser-event-hijacking": {
+   "authors": [
+    "Ben Toews"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@neohapsis\", a corporate handle. The document names its writer TWICE IN ITS OWN BODY - \"by [Ben Toews](.../author/mastahyeti/)\" and \"By: Ben Toews\" - and the stored source confirms rel=\"author\"."
   },
   "https://labs.watchtowr.com/8-million-requests-later-we-made-the-solarwinds-supply-chain-attack-look-amateur": {
    "authors": [
@@ -1782,6 +1882,22 @@
    "publisher": "NetSPI",
    "reason": "NetSPI's author box directly beneath the title and date reads \"Nick Landers\". The James Forshaw mentioned in the body is cited prior work, not the byline."
   },
+  "https://news.ncsu.edu/2012/07/wms-jiang-clickjack": {
+   "authors": [
+    "Matt Shipman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. the extraction dropped the byline the stored source carries. The source has a byline div with rel=\"author\" naming Matt Shipman, corroborated by JSON-LD author_name."
+  },
+  "https://news.ncsu.edu/releases/wms-enck-cloud-browsers": {
+   "authors": [
+    "Matt Shipman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The release names him in the document itself - \"[Matt Shipman](mailto:matt_shipman@ncsu.edu) | News Services\" - and signs off \"-shipman-\". The stored source object is ABSENT, so rel=\"author\" could not be checked; the credit rests on the words in the published document, which are sufficient, and the sibling NC State release confirms the same writer."
+  },
   "https://news.netcraft.com/archives/2006/06/16/paypal_security_flaw_allows_identity_theft.html": {
    "class": "research",
    "outcome": "archive",
@@ -1793,6 +1909,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (netcraft-com-resources-2). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
    "title": "Netcraft: HostGator: cPanel Security Hole Exploited in Mass Hack"
+  },
+  "https://news.softpedia.com/news/Users-of-Mobile-Portals-Exposed-to-HTTP-Header-Pollution-Attacks-Expert-Finds-293540.shtml": {
+   "authors": [
+    "Eduard Kovacs"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded the real writer AND \"@Softpedia\", which comes from the twitter:creator meta tag and is the publication's handle, not a person - and unquoted it also broke the frontmatter YAML. The source has a name meta and an itemprop=\"author\" byline linking /editors/browse/eduard-kovacs. Dropping the handle fixes both."
   },
   "https://nodejs.org/en/blog/vulnerability/march-2026-hashdos": {
    "authors": [
@@ -1888,6 +2012,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-10: the recorded title was the title with the site's \"Blog:\" prefix rather than the document's own title. The document itself is the one cited. Reviewed 2026-08-15: the recorded author was the literal placeholder \"xxxxx\", which the published byline printed as though it were a researcher's name. The document names nobody - it is first person throughout (\"I have made proof of concepts\", \"I've reported this issue\") - so the honest value is no author at all. A missing byline says the archive does not know; a placeholder says something false.",
    "title": "DoubleClickjacking: A New Era of UI Redressing"
+  },
+  "https://phenoelit.org/blog/archives/2012/12/21/let_me_github_that_for_you/index.html": {
+   "authors": [
+    "joernchen"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. the extraction dropped the byline the stored source carries. The source footer reads \"Posted by joernchen\". The github.com/joernchen link alone would only be a repo owner and would not qualify; the Posted by line does."
   },
   "https://poc-server.com/blog/2018/05/22/rce-by-uploading-a-web-config": {
    "authors": [
@@ -2035,6 +2167,14 @@
    "outcome": "archive",
    "reason": "authors recorded \"mibe\", a securitum WordPress account slug. The author self-identifies twice in the first person - \"I found an interesting way of bypassing dir-based CSP and [I tweeted about it](.../SecurityMB/...)\" and \"have a look at my [XSS Challenge](https://securitymb.github.io/xss/1/)\"."
   },
+  "https://riyazwalikar.com/2012/11/cross-site-port-attacks-xspa-part-1.html": {
+   "authors": [
+    "Riyaz Ahemed Walikar"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. the extraction dropped the byline the stored source carries. The source carries \"Posted by ... rel=\\\"author\\\" ... <span itemprop=\\\"name\\\">Riyaz Ahemed Walikar</span>\"."
+  },
   "https://salt.security/blog/oh-auth-abusing-oauth-to-take-over-millions-of-accounts": {
    "authors": [
     "Aviad Carmel"
@@ -2149,6 +2289,14 @@
    "reason": "Reviewed 2026-08-10: the recorded title was \"BUGTRAQ IS BACK\", the present-day securityfocus.com landing page rather than the document's own title. The document itself is the one cited.",
    "title": "Forging HTTP request headers with Flash"
   },
+  "https://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website": {
+   "authors": [
+    "Joey Tyson"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@pmhesse\", taken from the twitter:site and twitter:creator meta tags - a SITE-LEVEL platform handle, not a byline. the extraction dropped the byline the stored source carries. The source carries an hCard byline: \"by <span class=\\\"author vcard\\\"><a class=\\\"url fn n\\\" href=\\\".../article/author/jtyson\\\">Joey Tyson</a>\"."
+  },
   "https://securityvulns.ru/Udocumenthtml": {
    "class": "derivative",
    "outcome": "skip",
@@ -2162,6 +2310,22 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors recorded the corporate account \"@ShielderSec\". The page names two researchers with their own author pages - thezero (\"Security Researcher and Senior Penetration Tester at Shielder\") and zi0black (\"I'm zi0black, Security Researcher and Penetration Tester at Shielder\") - and the prose corroborates: \"while I was trying to exploit a blind XXE with [zi0black]\"."
+  },
+  "https://shreeraj.blogspot.com/2012/01/password-extraction-from-ajaxdomhtml5.html": {
+   "authors": [
+    "shreeraj"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. the extraction dropped the byline the stored source carries. The source reads \"Posted by <span class='fn'>shreeraj</span>\" - the handle the author publishes under."
+  },
+  "https://shreeraj.blogspot.com/2012/08/file-system-api-with-html5-juice-for-xss.html": {
+   "authors": [
+    "shreeraj"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". the extraction dropped the byline the stored source carries. The source names \"Posted by <span class='fn'>shreeraj</span>\", with itemprop=\"author\" on the second capture."
   },
   "https://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html": {
    "authors": [
@@ -2493,6 +2657,38 @@
    "outcome": "archive",
    "reason": "authors was empty. The site answers the question itself under the heading \"Who are the people behind Spook.js?\", naming all seven."
   },
+  "https://superevr.com/blog/2012/blended-threats-and-javascript": {
+   "authors": [
+    "superevr"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. the extraction dropped the byline the stored source carries. The source carries rel=\"author\" reading \"by superevr\", and the body self-identifies: \"Follow myself [@superevr](...)\". Recorded as the handle; the real name is not obtainable from THIS document."
+  },
+  "https://superevr.com/blog/2012/exploiting-xss-in-ajax-web-applications": {
+   "authors": [
+    "superevr"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The source carries rel=\"author\" reading \"by superevr\", and the article refers to \"my Twitter profile\" with screen_name=superevr."
+  },
+  "https://superevr.com/blog/2012/top-level-universal-xss": {
+   "authors": [
+    "superevr"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The source carries rel=\"author\" naming \"superevr\", the handle the author publishes under. Pujun Li (@jackmasa) is thanked for the report - a bug reporter - and is deliberately not added."
+  },
+  "https://suriya.me/me-and-facebook-a-cautionary-tale": {
+   "authors": [
+    "suriya"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. the extraction dropped the byline the stored source carries. The source has rel=\"author\" naming \"suriya\" plus an article:author meta, and the post itself signs off \"-Suriya\". Harsha Vardhan Boppana and Rafay Baloch are quoted contributors, not the author."
+  },
   "https://synacktiv.com/publications/persistent-php-payloads-in-pngs-how-to-inject-php-code-in-an-image-and-keep-it-there.html": {
    "authors": [
     "Quentin Roland"
@@ -2516,6 +2712,19 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors held only the company handle \"@Synacktiv\". The byline reads \"Rédigé par Rémi Matasse - 18/10/2022 - dans Pentest\", and the English half reads \"Written by Rémi Matasse\". Same researcher as the 2023 filter-chains reference. Publisher Synacktiv is already recorded."
+  },
+  "https://teamusec.de/publications/conf-ccs-fahlhmsbf12": {
+   "authors": [
+    "Sascha Fahl",
+    "Marian Harbach",
+    "Thomas Muders",
+    "Matthew Smith",
+    "Lars Baumgärtner",
+    "Bernd Freisleben"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded ONLY Sascha Fahl, the one name that was a link, where the document's author line names six: \"[Sascha Fahl](...), Marian Harbach, Thomas Muders, Matthew Smith, Lars Baumgärtner and Bernd Freisleben.\" The five unlinked names were dropped."
   },
   "https://thehackerblog.com/kicking-the-rims-a-guide-for-securely-writing-and-auditing-chrome-extensions": {
    "authors": [
@@ -2731,6 +2940,14 @@
    "outcome": "archive",
    "reason": "authors was empty. the extraction dropped the byline the stored source carries. The stored object gives a post-meta span linking /author/carlos-munoz/ and reading \"Carlos Munoz\", dated December 04, 2013, and the year list's own cited_title is \"Carlos Munoz -- Bypassing Internet Explorer's Anti-XSS Filter\". Names appearing only in Disqus comment cites - bobince, Alun Jones, Andrew - are correctly not taken."
   },
+  "https://whitehatsec.com/blog/introducing-the-i-know-series": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". the extraction dropped the byline the stored source carries. The source's post-meta span directly under the title links /author/ut6gotte/ and reads \"Jeremiah Grossman\", dated October 10, 2012."
+  },
   "https://whitehatsec.com/blog/the-case-of-an-unconventional-csrf-attack-in-firefox": {
    "authors": [
     "Kuskos"
@@ -2754,6 +2971,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors was empty. the extraction dropped the byline the stored source carries. The stored source names him in a post-meta span immediately under the title, dated April 03, 2013. The second roberthansen hit in the file is a related-post teaser from June 2014 and was deliberately not used as the evidence."
+  },
+  "https://whitehatsec.com/blog/x-frame-options-xfo-detection-from-javascript": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@whitehatsec\", a corporate handle. the extraction dropped the byline the stored source carries. The source names the writer immediately under the H1: a post-meta span linking /author/jeremiah-grossman/ and reading \"Jeremiah Grossman\", dated June 18, 2012."
   },
   "https://www.gnucitizen.org/projects/hscan-redux/": {
    "class": "research",

@@ -12,14 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/x-frame-options-xfo-detection-from-javascript/"
     title: X-Frame-Options (XFO) Detection from Javascript
-    author: @whitehatsec
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://web.archive.org/web/20190820211223/https://www.whitehatsec.com/blog/x-frame-options-xfo-detection-from-javascript/"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/x-frame-options-xfo-detection-from-javascript/"
 also_at: []
 authors:
-  - @whitehatsec
+  - Jeremiah Grossman
 canonical_url: "https://web.archive.org/web/20190820211223/https://www.whitehatsec.com/blog/x-frame-options-xfo-detection-from-javascript/"
 cited_by:
   - "2012.md:40"
@@ -47,7 +47,7 @@ translation_of: ""
 
 # X-Frame-Options (XFO) Detection from Javascript
 
-**X-Frame-Options (XFO) Detection from Javascript** - @whitehatsec, WhiteHat Security.
+**X-Frame-Options (XFO) Detection from Javascript** - Jeremiah Grossman, WhiteHat Security.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/x-frame-options-xfo-detection-from-javascript/>

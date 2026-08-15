@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://shreeraj.blogspot.com/2012/01/password-extraction-from-ajaxdomhtml5.html"
     title: "Shreeraj's security blog: Password extraction from Ajax/DOM/HTML5 routine"
+    author: shreeraj
   - id: canonical
     resource: "https://web.archive.org/web/20150110195718/http://shreeraj.blogspot.com/2012/01/password-extraction-from-ajaxdomhtml5.html"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/http://shreeraj.blogspot.com/2012/01/password-extraction-from-ajaxdomhtml5.html"
 also_at: []
-authors: []
+authors:
+  - shreeraj
 canonical_url: "https://web.archive.org/web/20150110195718/http://shreeraj.blogspot.com/2012/01/password-extraction-from-ajaxdomhtml5.html"
 cited_by:
   - "2012.md:50"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Shreeraj's security blog: Password extraction from Ajax/DOM/HTML5 routine
 
-**Shreeraj's security blog: Password extraction from Ajax/DOM/HTML5 routine** - Author not stated, shreeraj.blogspot.com.
+**Shreeraj's security blog: Password extraction from Ajax/DOM/HTML5 routine** - shreeraj, shreeraj.blogspot.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://shreeraj.blogspot.com/2012/01/password-extraction-from-ajaxdomhtml5.html>

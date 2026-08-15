@@ -565,18 +565,3 @@ Gursev Singh Kalra serves as a managing consultant at McAfee Foundstone Professi
 ## About McAfee Foundstone Professional Services
 
 McAfee Foundstone Professional Services offers expert services and education to help organizations continuously and measurably protect their most important assets from the most critical threats. Through a strategic approach to security, McAfee Foundstone identifies and implements the right balance of technology, people, and process to manage digital risk and leverage security investments more effectively. The company's professional services team consists of recognized security experts and authors with broad security experience with multinational corporations, the public sector, and the US military.
-
-[Footer block, McAfee logo:]
-
-```
-2821 Mission College Boulevard
-Santa Clara, CA 95054
-888 847 8766
-www.mcafee.com
-```
-
-McAfee, the McAfee logo, and McAfee Foundstone are registered trademarks or trademarks of McAfee, Inc. or its subsidiaries in the United States and other countries. Other marks and brands may be claimed as the property of others. The product plans, specifications and descriptions herein are provided for information only and subject to change without notice, and are provided without warranty of any kind, express or implied. Copyright © 2012 McAfee, Inc.
-
-```
-40403wp_attacking-captchas_0112_fnl_ASD
-```

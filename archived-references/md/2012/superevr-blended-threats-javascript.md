@@ -6,18 +6,20 @@ tags: [article, webseclist-reference, en-US, superevr]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:27+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/https://superevr.com/blog/2012/blended-threats-and-javascript/"
     title: Blended Threats and JavaScript
+    author: superevr
   - id: canonical
     resource: "https://superevr.com/blog/2012/blended-threats-and-javascript/"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/https://superevr.com/blog/2012/blended-threats-and-javascript/"
 also_at: []
-authors: []
+authors:
+  - superevr
 canonical_url: "https://superevr.com/blog/2012/blended-threats-and-javascript/"
 cited_by:
   - "2012.md:9"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Blended Threats and JavaScript
 
-**Blended Threats and JavaScript** - Author not stated, Superevr.
+**Blended Threats and JavaScript** - superevr, Superevr.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/https://superevr.com/blog/2012/blended-threats-and-javascript/>

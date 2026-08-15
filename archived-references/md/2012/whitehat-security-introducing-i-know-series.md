@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/introducing-the-i-know-series/"
     title: Introducing the “I Know...” series
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://web.archive.org/web/20170705194307/https://www.whitehatsec.com/blog/introducing-the-i-know-series/"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/introducing-the-i-know-series/"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://web.archive.org/web/20170705194307/https://www.whitehatsec.com/blog/introducing-the-i-know-series/"
 cited_by:
   - "2012.md:23"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Introducing the “I Know...” series
 
-**Introducing the “I Know...” series** - Author not stated, WhiteHat Security.
+**Introducing the “I Know...” series** - Jeremiah Grossman, WhiteHat Security.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/https://www.whitehatsec.com/blog/introducing-the-i-know-series/>

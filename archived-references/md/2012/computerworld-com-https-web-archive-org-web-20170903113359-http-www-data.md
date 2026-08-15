@@ -113,29 +113,3 @@ Yahoo did not respond to a request for comment regarding Bogdan's proof-of-conce
 Bogdan hasn't been doing Web vulnerability research for a long time. However, he recently earned a cash reward from Google and a listing in the company's [Application Security Hall of Fame](https://web.archive.org/web/20130329114320/http://www.google.com/about/appsecurity/hall-of-fame/reward/) for finding and reporting a vulnerability in one of the company's websites.
 
 Google, Mozilla, Facebook and PayPal run bug bounty programs through which they pay researchers who responsibly disclose vulnerabilities found in their websites. Other companies, such as Microsoft, don't hand out monetary rewards but recognize the help received from researchers by publishing their names on special thank-you pages on their websites.
-
-Print
-
-Reprinted with permission from **IDG.net**. Story copyright 2012 International Data Group. All rights reserved.
-
-![How Cloud Communications Reduce Costs and Increase Productivity](https://web.archive.org/web/20130329114320im_/http://resources.idgenterprise.com/thumb/AST-0067242_8x8CiscoAdvantage_eBook.png)
-
-WHITE PAPER
-
-[How Cloud Communications Reduce Costs and Increase Productivity](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/show/200014207/00623430077818CTWPRJ0UHXTC9/?email=%%emailaddr%%)
-
-Small and midsize businesses are moving to the cloud to host their communications capabilities. Learn how enterprise-quality phone benefits, online management, conferencing, auto attendant, and ease of use are built into a system that is half the cost of a PBX.
-
-[Read now.](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/show/200014207/00623430077818CTWPRJ0UHXTC9/?email=%%emailaddr%%)
-
-   [ Malware Deep Dive Report ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/33199/detail) If malware were biological, the world would be in the grip of the worst pandemic in history. [ Malware B-Z: Inside the Threat From Blackhole to ZeroAccess ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/32145/detail) Learn how two of the most commonly used and technically capable pieces of crimeware are used by bad guys to compromise your security... [ Dell Active Infrastructure ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/35501/detail) Dell Active Infrastructure is a makeup of modular and automated converged infrastructure solutions combing servers, storage, networking and infrastructure management into an integrated... [ Microsoft SQL Server Database Consolidation ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/35496/detail) Dell's data-center-in-a-box solution, featuring the M1000e chassis, maybe the right choice for SMB customers looking to consolidate SQL Server databases in a virtualized... [ Oracle Cloud KnowledgeVault ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/35482/detail) The Oracle Cloud offers a broad portfolio of software as a service applications, platform as a service and social capabilities-- all on a... [All Malware and Vulnerabilities White Papers](https://web.archive.org/web/20130329114320/http://www.computerworld.com/s/whitepapers/topic/85/Malware+and+Vulnerabilities/1)
-
-   [ Deprioritizing DMARC Can Lead to Disaster ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/35432/detail) If the success of your email campaigns, customer alerts and notifications depends on getting through to mailboxes at Google, AOL, Yahoo!, Outlook.com and... [ The Business Value of Converged Infrastructure ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/35491/detail) Convergence has led decision makers to rethink their approach to selecting data center operations. [ Smarter Business Processes. Faster Business Information. Better Business Collaboration ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/34982/detail) This webinar will teach you about smart process apps-a new category of software that makes collaborative processes more productive and flexible. [ Lenovo & Windows 8 Innovative Devices Podcast ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/35410/detail) Learn about the innovated devices that Lenovo designed to take full advantage of the new touch interface of Microsoft's Windows 8 Pro. [ Technology Support Solutions case study - Calvary Chapel ](https://web.archive.org/web/20130329114320/http://resources.computerworld.com/ccd/assets/35405/detail) Learn how Calvary Chapel leverages technology to support the church's mission and educational programs, with the help of PC Connection and Lenovo. [All Malware and Vulnerabilities Webcasts](https://web.archive.org/web/20130329114320/http://www.computerworld.com/s/webcasts/topic/85/Malware+and+Vulnerabilities/1)
-
- [See All Jobs](https://web.archive.org/web/20130329114320/http://itjobs.computerworld.com/a/all-jobs/list) [Post a job for $295](https://web.archive.org/web/20130329114320/http://itjobs.computerworld.com/a/jbb/post-job)
-
-    Go
-
- [Jobs](https://web.archive.org/web/20130329114320/http://www.simplyhired.com/) by [SimplyHired](https://web.archive.org/web/20130329114320/http://www.simplyhired.com/)
-
- Skip to top

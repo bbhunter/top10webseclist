@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html"
     title: Bypassing CAPTCHAs by Impersonating CAPTCHA Providers
+    author: Gursev Singh Kalra
   - id: canonical
     resource: "https://web.archive.org/web/20170418233059/http://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/http://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html"
 also_at: []
-authors: []
+authors:
+  - Gursev Singh Kalra
 canonical_url: "https://web.archive.org/web/20170418233059/http://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html"
 cited_by:
   - "2012.md:58"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Bypassing CAPTCHAs by Impersonating CAPTCHA Providers
 
-**Bypassing CAPTCHAs by Impersonating CAPTCHA Providers** - Author not stated, gursevkalra.blogspot.com.
+**Bypassing CAPTCHAs by Impersonating CAPTCHA Providers** - Gursev Singh Kalra, gursevkalra.blogspot.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html>

@@ -12,14 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://arstechnica.com/security/2012/09/crime-hijacks-https-sessions/"
     title: "Crack in Internet's foundation of trust allows HTTPS session hijacking"
-    author: @dangoodin001
+    author: Dan Goodin
   - id: canonical
     resource: "http://arstechnica.com/security/2012/09/crime-hijacks-https-sessions/"
   - id: capture
     resource: "https://web.archive.org/web/20121119040742/http://arstechnica.com/security/2012/09/crime-hijacks-https-sessions/"
 also_at: []
 authors:
-  - @dangoodin001
+  - Dan Goodin
 canonical_url: "http://arstechnica.com/security/2012/09/crime-hijacks-https-sessions/"
 cited_by:
   - "2012.md:5"
@@ -47,7 +47,7 @@ translation_of: ""
 
 # Crack in Internet's foundation of trust allows HTTPS session hijacking
 
-**Crack in Internet's foundation of trust allows HTTPS session hijacking** - @dangoodin001, Ars Technica.
+**Crack in Internet's foundation of trust allows HTTPS session hijacking** - Dan Goodin, Ars Technica.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://arstechnica.com/security/2012/09/crime-hijacks-https-sessions/>
@@ -113,11 +113,3 @@ Rizzo and Duong are [scheduled to demonstrate CRIME](http://www.ekoparty.org/201
 "It is easy to try the idea with a short script," Rizzo told Ars. "It's a practical attack against HTTPS and could be a starting point to attack other secure protocols. It's another powerful tool for attackers with access to your network."
 
 *Story updated to add Safari, Opera details, make clear that both Chrome and Firefox were vulnerable until recently.*
-
-[Expand full story](http://arstechnica.com/security/2012/09/crime-hijacks-https-sessions/)
-
- [![](http://cdn.arstechnica.net/wp-content/uploads/authors/Dan-Goodin-sq.jpg)](http://arstechnica.com/author/dan-goodin)
-
-[Dan Goodin](http://arstechnica.com/author/dan-goodin) / Dan is the IT Security Editor at Ars Technica, which he joined in 2012 after working for The Register, the Associated Press, Bloomberg News, and other publications.
-
- [@dangoodin001](https://twitter.com/dangoodin001)

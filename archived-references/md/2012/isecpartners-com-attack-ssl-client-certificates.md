@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20130921173625/https://isecpartners.com/blog/2012/december/an-attack-on-ssl-client-certificates.aspx"
     title: An Attack on SSL Client Certificates
+    author: Tom Ritter
   - id: capture
     resource: "https://web.archive.org/web/20130921173625/https://isecpartners.com/blog/2012/december/an-attack-on-ssl-client-certificates.aspx"
 also_at: []
-authors: []
+authors:
+  - Tom Ritter
 canonical_url: ""
 cited_by:
   - "2012.md:63"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # An Attack on SSL Client Certificates
 
-**An Attack on SSL Client Certificates** - Author not stated, isecpartners.com.
+**An Attack on SSL Client Certificates** - Tom Ritter, isecpartners.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20130921173625/https://isecpartners.com/blog/2012/december/an-attack-on-ssl-client-certificates.aspx>
@@ -108,50 +110,3 @@ Unfortunately, there's not much that can be changed in browsers to mitigate this
 One mitigation is to prevent yourself from being framed using the X-FRAME-OPTIONS: DENY setting (SAMEORIGIN will leave you vulnerable), and pairing this with [javascript framebusting](https://web.archive.org/web/20130921173625/https://en.wikipedia.org/wiki/Framekiller) for older clients. However, this does not protect against browser cache or local storage poisoning.
 
  Written by  [Tom Ritter](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?author=Tom Ritter)  at 00:00
-
-#### Tags
-
-- [Cyber attack](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Cyber+attack)
-- [SSL Certificates](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=SSL+Certificates)
-
-#### View by Tag
-
-- [Adaptive-Ciphertext Attack](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Adaptive-Ciphertext+Attack)
-- [Authenticated Encryption](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Authenticated+Encryption)
-- [Black box mobile testing](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Black+box+mobile+testing)
-- [Black box testing](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Black+box+testing)
-- [CRIME](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=CRIME)
-- [Cyber attack](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Cyber+attack)
-- [Cyber security](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Cyber+security)
-- [Cyber Security Events](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Cyber+Security+Events)
-- [DEF CON](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=DEF+CON)
-- [Distributed authentication](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Distributed+authentication)
-- [Encryption](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Encryption)
-- [event sponsor](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=event+sponsor)
-- [female developers](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=female+developers)
-- [female programmers](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=female+programmers)
-- [Fuzzing](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Fuzzing)
-- [HMAC Verification](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=HMAC+Verification)
-- [HTML5 Security](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=HTML5+Security)
-- [Mobile tracking](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Mobile+tracking)
-- [OAuth protocol](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=OAuth+protocol)
-- [Online storage](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Online+storage)
-- [Personal data](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Personal+data)
-- [reverse engineering](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=reverse+engineering)
-- [Security Consultant](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Security+Consultant)
-- [Security tools](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Security+tools)
-- [Social Change](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Social+Change)
-- [ssl](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=ssl)
-- [SSL](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=SSL)
-- [SSL Certificates](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=SSL+Certificates)
-- [SSL Pinning](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=SSL+Pinning)
-- [SSL Pulse](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=SSL+Pulse)
-- [sslyze](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=sslyze)
-- [SSLyze v0.6](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=SSLyze+v0.6)
-- [Tcpprox](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Tcpprox)
-- [TLS](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=TLS)
-- [TLS Certificate](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=TLS+Certificate)
-- [TLS Validation](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=TLS+Validation)
-- [Volunteer work](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Volunteer+work)
-- [Write/Speak/Code](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=Write%2fSpeak%2fCode)
-- [YoNTMA](https://web.archive.org/web/20130921173625/https://isecpartners.com/blog.aspx?tag=YoNTMA)

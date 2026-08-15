@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://phenoelit.org/blog/archives/2012/12/21/let_me_github_that_for_you/index.html"
     title: Let Me Github That For You
+    author: joernchen
   - id: canonical
     resource: "https://web.archive.org/web/20170829190206/http://www.phenoelit.org/blog/archives/2012/12/21/let_me_github_that_for_you/index.html"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/http://phenoelit.org/blog/archives/2012/12/21/let_me_github_that_for_you/index.html"
 also_at: []
-authors: []
+authors:
+  - joernchen
 canonical_url: "https://web.archive.org/web/20170829190206/http://www.phenoelit.org/blog/archives/2012/12/21/let_me_github_that_for_you/index.html"
 cited_by:
   - "2012.md:60"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Let Me Github That For You
 
-**Let Me Github That For You** - Author not stated, phenoelit.org.
+**Let Me Github That For You** - joernchen, phenoelit.org.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://phenoelit.org/blog/archives/2012/12/21/let_me_github_that_for_you/index.html>

@@ -135,13 +135,3 @@ This research was based on ASP classic language. However, other languages such a
 [4] SecProject Web AppSec Challenge Series 1 Results, URL: [http://soroush.secproject.com/blog/2012/06/challenge-series-1-result-and-conclusion/](http://soroush.secproject.com/blog/2012/06/challenge-series-1-result-and-conclusion/)
 
 Download Link: [http://soroush.secproject.com/downloadable/Browsers_Anti-XSS_methods_in_ASP_(classic)_have_been_defeated.pdf](http://soroush.secproject.com/downloadable/Browsers_Anti-XSS_methods_in_ASP_(classic)_have_been_defeated.pdf)
-
-This entry was posted in [Security Posts](https://soroush.me/blog/category/securityposts)
-
-Creation date: June 20, 2012
-
-[Previous Microsoft IIS tilde character “~” Vulnerability/Feature – Short File/Folder Name Disclosure](https://soroush.me/blog/microsoft-iis-tilde-character-vulnerabilityfeature-short-filefolder-name-disclosure)[
-
-Next
-
-“ASPXErrorPath in URL” Technique in Scanning a .Net Web Application

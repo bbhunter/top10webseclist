@@ -12,14 +12,14 @@ sources:
   - id: original
     resource: "https://jsfiddle.net/gcollazo/UMyEm/embedded/result/"
     title: CSS-Only Clickjacking
-    author: JSFiddle
+    author: @gcollazo
   - id: canonical
     resource: "https://jsfiddle.net/gcollazo/UMyEm/"
 also_at:
   - "https://jsfiddle.net/gcollazo/UMyEm/show/"
   - "https://jsfiddle.net/gcollazo/UMyEm/embedded/result/"
 authors:
-  - JSFiddle
+  - @gcollazo
 canonical_url: "https://jsfiddle.net/gcollazo/UMyEm/"
 cited_by:
   - "2012.md:39"
@@ -47,7 +47,7 @@ translation_of: ""
 
 # CSS-Only Clickjacking
 
-**CSS-Only Clickjacking** - JSFiddle, jsfiddle.net.
+**CSS-Only Clickjacking** - @gcollazo, jsfiddle.net.
 
 - Published: date not stated
 - Original: <https://jsfiddle.net/gcollazo/UMyEm/embedded/result/>

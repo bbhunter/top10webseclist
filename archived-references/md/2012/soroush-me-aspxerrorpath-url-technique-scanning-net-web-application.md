@@ -105,13 +105,3 @@ In order to stop penetration testers to use this technique, you need to stop or 
 For example, in IIS7 (when your error page is “error.aspx”) we can use the following “web.config”:
 
 For more information about IIS7 URL Rewrite please visit: “[http://learn.iis.net/page.aspx/664/using-url-rewrite-module-20/](https://learn.iis.net/page.aspx/664/using-url-rewrite-module-20/)”
-
-This entry was posted in [Security Posts](https://soroush.me/blog/category/securityposts)
-
-Creation date: June 12, 2012
-
-[Previous Browsers Anti-XSS methods in ASP (classic) have been defeated!](https://soroush.me/blog/browsers-anti-xss-methods-in-asp-classic-have-been-defeated)[
-
-Next
-
-SecProject Web AppSec Challenge Series 1 Results

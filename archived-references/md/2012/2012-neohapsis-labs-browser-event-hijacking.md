@@ -12,7 +12,7 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://labs.neohapsis.com/2012/11/14/browser-event-hijacking/"
     title: Browser Event Hijacking
-    author: @neohapsis
+    author: Ben Toews
     last_modified: 2012-11-14
   - id: canonical
     resource: "https://web.archive.org/web/20160406180845/http://labs.neohapsis.com/2012/11/14/browser-event-hijacking/"
@@ -20,7 +20,7 @@ sources:
     resource: "https://web.archive.org/web/20170903113359/http://labs.neohapsis.com/2012/11/14/browser-event-hijacking/"
 also_at: []
 authors:
-  - @neohapsis
+  - Ben Toews
 canonical_url: "https://web.archive.org/web/20160406180845/http://labs.neohapsis.com/2012/11/14/browser-event-hijacking/"
 cited_by:
   - "2012.md:20"
@@ -48,7 +48,7 @@ translation_of: ""
 
 # Browser Event Hijacking
 
-**Browser Event Hijacking** - @neohapsis, Neohapsis Labs.
+**Browser Event Hijacking** - Ben Toews, Neohapsis Labs.
 
 - Published: 2012-11-14
 - Original: <https://web.archive.org/web/20170903113359/http://labs.neohapsis.com/2012/11/14/browser-event-hijacking/>

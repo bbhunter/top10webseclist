@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://feross.org/html5-fullscreen-api-attack/"
     title: Using the HTML5 Fullscreen API for Phishing Attacks » Feross.org
+    author: Feross Aboukhadijeh
   - id: canonical
     resource: "https://web.archive.org/web/20170609063046/https://feross.org/html5-fullscreen-api-attack/"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/http://feross.org/html5-fullscreen-api-attack/"
 also_at: []
-authors: []
+authors:
+  - Feross Aboukhadijeh
 canonical_url: "https://web.archive.org/web/20170609063046/https://feross.org/html5-fullscreen-api-attack/"
 cited_by:
   - "2012.md:25"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Using the HTML5 Fullscreen API for Phishing Attacks » Feross.org
 
-**Using the HTML5 Fullscreen API for Phishing Attacks » Feross.org** - Author not stated, feross.org.
+**Using the HTML5 Fullscreen API for Phishing Attacks » Feross.org** - Feross Aboukhadijeh, feross.org.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://feross.org/html5-fullscreen-api-attack/>
@@ -197,5 +199,3 @@ However, this documentation is out-of-date. There were no warnings on keyboard i
 **UPDATE (Oct 18, 2012):** Google, Mozilla, and Apple are discussing what (if anything) to do about the issue I demonstrated. I [replied](https://web.archive.org/web/20170609063046/http://lists.w3.org/Archives/Public/public-webapps/2012OctDec/0251.html) on the “public webapps” W3C mailing list with my thoughts.
 
 *Shoutout to [Neal Wu](https://web.archive.org/web/20170609063046/https://twitter.com/WuNeal)!*
-
-(If you liked this, you might like [How To Set Up Your Linode For Maximum Awesomeness](https://web.archive.org/web/20170609063046/https://feross.org/how-to-setup-your-linode/).)

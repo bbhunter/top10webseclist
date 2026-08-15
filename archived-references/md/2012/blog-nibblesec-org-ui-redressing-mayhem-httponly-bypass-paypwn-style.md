@@ -6,18 +6,20 @@ tags: [article, webseclist-reference, blog-nibblesec-org]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:05:46+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-httponly-bypass_19.html"
     title: "UI Redressing Mayhem: HttpOnly bypass PayPwn style"
+    author: Luca De Fulgentis
   - id: canonical
     resource: "https://web.archive.org/web/20170622123259/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-httponly-bypass_19.html"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-httponly-bypass_19.html"
 also_at: []
-authors: []
+authors:
+  - Luca De Fulgentis
 canonical_url: "https://web.archive.org/web/20170622123259/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-httponly-bypass_19.html"
 cited_by:
   - "2012.md:56"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # UI Redressing Mayhem: HttpOnly bypass PayPwn style
 
-**UI Redressing Mayhem: HttpOnly bypass PayPwn style** - Author not stated, blog.nibblesec.org.
+**UI Redressing Mayhem: HttpOnly bypass PayPwn style** - Luca De Fulgentis, blog.nibblesec.org.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-httponly-bypass_19.html>

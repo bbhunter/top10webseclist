@@ -6,13 +6,13 @@ tags: [article, webseclist-reference, en, security-musings]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:58:44+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-10
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website"
     title: How a Platform Using HTML5 Can Affect the Security of Your Website
-    author: @pmhesse
+    author: Joey Tyson
     last_modified: 2012-02-01
   - id: canonical
     resource: "https://web.archive.org/web/20170611133815/http://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website"
@@ -20,7 +20,7 @@ sources:
     resource: "https://web.archive.org/web/20170903113359/http://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website"
 also_at: []
 authors:
-  - @pmhesse
+  - Joey Tyson
 canonical_url: "https://web.archive.org/web/20170611133815/http://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website"
 cited_by:
   - "2012.md:11"
@@ -48,7 +48,7 @@ translation_of: ""
 
 # How a Platform Using HTML5 Can Affect the Security of Your Website
 
-**How a Platform Using HTML5 Can Affect the Security of Your Website** - @pmhesse, Security Musings.
+**How a Platform Using HTML5 Can Affect the Security of Your Website** - Joey Tyson, Security Musings.
 
 - Published: 2012-02-01
 - Original: <https://web.archive.org/web/20170903113359/http://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website>

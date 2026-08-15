@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://news.ncsu.edu/releases/wms-enck-cloud-browsers/"
     title: "NC State News :: NC State News and Information » Researchers ID Ways to Exploit ‘Cloud Browsers’ for Large-Scale, Anonymous Computing"
+    author: Matt Shipman
   - id: canonical
     resource: "http://news.ncsu.edu/releases/wms-enck-cloud-browsers/"
   - id: capture
     resource: "https://web.archive.org/web/20121202024248/http://news.ncsu.edu/releases/wms-enck-cloud-browsers/"
 also_at: []
-authors: []
+authors:
+  - Matt Shipman
 canonical_url: "http://news.ncsu.edu/releases/wms-enck-cloud-browsers/"
 cited_by:
   - "2012.md:19"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # NC State News :: NC State News and Information » Researchers ID Ways to Exploit ‘Cloud Browsers’ for Large-Scale, Anonymous Computing
 
-**NC State News :: NC State News and Information » Researchers ID Ways to Exploit ‘Cloud Browsers’ for Large-Scale, Anonymous Computing** - Author not stated, news.ncsu.edu.
+**NC State News :: NC State News and Information » Researchers ID Ways to Exploit ‘Cloud Browsers’ for Large-Scale, Anonymous Computing** - Matt Shipman, news.ncsu.edu.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://news.ncsu.edu/releases/wms-enck-cloud-browsers/>
@@ -130,17 +132,3 @@ The paper, “Abusing Cloud-Based Browsers for Fun and Profit,” will be presen
 *Presented*: Dec. 6, 2012, at ACSAC in Orlando, Fla.
 
 **Abstract:** Cloud services have become a cheap and popular means of computing. They allow users to synchronize data between devices and relieve low-powered devices from heavy computations. In response to the surge of smartphones and mobile devices, several cloud-based Web browsers have become commercially available. These “cloud browsers” assemble and render Web pages within the cloud, executing JavaScript code for the mobile client. This paper explores how the computational abilities of cloud browsers may be exploited through a Browser MapReduce (BMR) architecture for executing large, parallel tasks. We explore the computation and memory limits of four cloud browsers, and demonstrate the viability of BMR by implementing a client based on a reverse engineering of the Puffin cloud browser. We implement and test three canonical MapReduce applications (word count, distributed grep, and distributed sort). While we perform experiments on relatively small amounts of data (100 MB) for ethical considerations, our results strongly suggest that current cloud browsers are a viable source of arbitrary free computing at large scale.
-
-## Services Navigation:
-
-- [About Us](http://news.ncsu.edu/about)
-- [Emergency Information](http://www.ncsu.edu/emergency-information/index.php)
-- [Privacy](http://www.ncsu.edu/privacy/)
-- [Copyright](http://www.ncsu.edu/copyright/index.php)
-- [Accessibility](http://ncsu.edu/it/access/legal/webreg.php)
-- [University Policies](http://www.ncsu.edu/policies/index.php)
-- [About the Site](http://www.ncsu.edu/about-site/index.php)
-- [Jobs](http://www7.acs.ncsu.edu/hr/job_applicants/)
-- [Contact Us](http://news.ncsu.edu/contact-us)
-
-North Carolina State University Raleigh, NC 27695 Phone: (919) 515-2011

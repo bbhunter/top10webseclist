@@ -777,13 +777,3 @@ McAfee, a wholly owned subsidiary of Intel Corporation (NASDAQ:INTC), is the wor
 12 http://www.odata.org/documentation/operations#AdditionalInteractionModelConsiderations
 13 http://www.odata.org/documentation/uri-conventions#SystemQueryOptions
 ```
-
-[McAfee logo, bottom left: "McAfee — An Intel Company"]
-
-2821 Mission College Boulevard
-Santa Clara, CA 95054
-888 847 8766
-www.mcafee.com
-
-McAfee, the McAfee logo, and McAfee Foundstone are registered trademarks or trademarks of McAfee, Inc. or its subsidiaries in the United States and other countries. Other marks and brands may be claimed as the property of others. The product plans, specifications and descriptions herein are provided for information only and subject to change without notice, and are provided without warranty of any kind, express or implied. Copyright © 2012 McAfee, Inc.
-47501wp_hacking-odata_0812_fnl_ETMG

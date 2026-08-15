@@ -6,18 +6,20 @@ tags: [article, webseclist-reference, riyazwalikar-com]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:21:46+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://www.riyazwalikar.com/2012/11/cross-site-port-attacks-xspa-part-1.html"
     title: "A Bug Hunter's Rhapsody: Cross Site Port Attacks - XSPA"
+    author: Riyaz Ahemed Walikar
   - id: canonical
     resource: "http://www.riyazwalikar.com/2012/11/cross-site-port-attacks-xspa-part-1.html"
   - id: capture
     resource: "https://web.archive.org/web/20130502062306/http://www.riyazwalikar.com/2012/11/cross-site-port-attacks-xspa-part-1.html"
 also_at: []
-authors: []
+authors:
+  - Riyaz Ahemed Walikar
 canonical_url: "http://www.riyazwalikar.com/2012/11/cross-site-port-attacks-xspa-part-1.html"
 cited_by:
   - "2012.md:10"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # A Bug Hunter's Rhapsody: Cross Site Port Attacks - XSPA
 
-**A Bug Hunter's Rhapsody: Cross Site Port Attacks - XSPA** - Author not stated, riyazwalikar.com.
+**A Bug Hunter's Rhapsody: Cross Site Port Attacks - XSPA** - Riyaz Ahemed Walikar, riyazwalikar.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://www.riyazwalikar.com/2012/11/cross-site-port-attacks-xspa-part-1.html>

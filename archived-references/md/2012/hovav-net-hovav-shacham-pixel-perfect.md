@@ -12,12 +12,15 @@ sources:
   - id: original
     resource: "https://hovav.net/ucsd/papers/ms12.html"
     title: "Hovav Shacham: Pixel Perfect"
+    author: Keaton Mowery, Hovav Shacham
 also_at:
   - "https://hovav.net/ucsd/dist/canvas.pdf"
-authors: []
+authors:
+  - Keaton Mowery
+  - Hovav Shacham
 canonical_url: ""
 cited_by:
-  - "2012.md:72"
+  - "2012.md:73"
 commit: ""
 content_sha256: de7ae6dd895f6634c23b272ca8ff3a7451e14c4a58bb0ff1d2e48c80000c711f
 depth: full
@@ -42,7 +45,7 @@ translation_of: ""
 
 # Hovav Shacham: Pixel Perfect
 
-**Hovav Shacham: Pixel Perfect** - Author not stated, hovav.net.
+**Hovav Shacham: Pixel Perfect** - Keaton Mowery, Hovav Shacham, hovav.net.
 
 - Published: date not stated
 - Original: <https://hovav.net/ucsd/papers/ms12.html>
@@ -82,7 +85,3 @@ Hovav Shacham: Pixel Perfect
 ## Reference
 
 @InProceedings{MS12, author = {Keaton Mowery and Hovav Shacham}, title = {Pixel Perfect: Fingerprinting Canvas in {HTML5}}, booktitle = {Proceedings of W2SP 2012}, year = 2012, editor = {Matt Fredrikson}, month = may, organization = {IEEE Computer Society} }
-
----
-
-## Navigation: [Hovav Shacham](https://hovav.net/ucsd/index.html) // [Publications](https://hovav.net/ucsd/papers.html) // [[MS12]](https://hovav.net/ucsd/papers/ms12.html)

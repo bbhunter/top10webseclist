@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20170903113359/http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html"
     title: "Anatomy of an Attack: How I Hacked StackOverflow"
+    author: Anthony Ferrara
   - id: canonical
     resource: "https://web.archive.org/web/20170914234701/http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html"
   - id: capture
     resource: "https://web.archive.org/web/20170903113359/http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html"
 also_at: []
-authors: []
+authors:
+  - Anthony Ferrara
 canonical_url: "https://web.archive.org/web/20170914234701/http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html"
 cited_by:
   - "2012.md:21"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Anatomy of an Attack: How I Hacked StackOverflow
 
-**Anatomy of an Attack: How I Hacked StackOverflow** - Author not stated, blog.ircmaxell.com.
+**Anatomy of an Attack: How I Hacked StackOverflow** - Anthony Ferrara, blog.ircmaxell.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20170903113359/http://blog.ircmaxell.com/2012/11/anatomy-of-attack-how-i-hacked.html>

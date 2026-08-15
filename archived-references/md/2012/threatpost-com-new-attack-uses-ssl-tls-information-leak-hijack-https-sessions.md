@@ -105,15 +105,3 @@ Rizzo said that the specific feature in TLS that he and Duong are using in this 
 Although the CRIME attack can use JavaScript, it's not required. Rizzo said that it really shouldn't be possible to hijack a user's session with one site just by loading JavaScript into the victim's browser from a separate site. But that's exactly what the new attack allows him to do.
 
 In addition to their work developing the BEAST attack, Rizzo and Duong in 2011 also developed a [padding oracle attack on Microsoft's ASP.NET](https://threatpost.com/en_us/blogs/new-crypto-attack-affects-millions-aspnet-apps-091310) that affected millions of applications and forced the software giant to issue an emergency patch.
-
-## Post new comment
-
- Your name:
-
- E-mail:
-
-The content of this field is kept private and will not be shown publicly.
-
- Homepage:
-
- Leave this field blank:

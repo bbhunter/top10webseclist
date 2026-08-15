@@ -164,13 +164,3 @@ The second point, I suspect, is where we're going to have fun. I can think of co
 In all of these cases, if you can stuff Javascript into reverse DNS lookups, you will likely find some very interesting vulnerabilities. Plus, you can instantly see when somebody hits one, and, more often than not, you can clean up your tracks quite well.
 
 I don't have access to any domains where I control the reverse DNS records, but if anybody does I'd love to test this out!
-
-[Permalink](http://www.skullsecurity.org/blog/2010/stuffing-javascript-into-dns-names) [Comments (19)](http://www.skullsecurity.org/blog/2010/stuffing-javascript-into-dns-names#comments) Ron Bowes Apr 20, 2010
-
-### Leave a Reply
-
- Name   Mail (doesn't have to be real)   Website
-
-  Spam protection: (1 + 2) * 5
-
- Comment
