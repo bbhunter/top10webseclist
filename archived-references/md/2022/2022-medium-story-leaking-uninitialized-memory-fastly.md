@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - Emil Lerner
-  - @emil_lerner
+  - "@emil_lerner"
 canonical_url: ""
 cited_by:
   - "2022.md:25"

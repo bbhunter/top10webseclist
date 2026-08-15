@@ -13,11 +13,11 @@ sources:
   - id: original
     resource: "http://yifan.lu/2011/12/10/kindle-touch-5-0-jailbreakroot-and-ssh/"
     title: Kindle Touch (5.0) Jailbreak/Root and SSH
-    author: @yifanlu
+    author: "@yifanlu"
     last_modified: 2011-12-10
 also_at: []
 authors:
-  - @yifanlu
+  - "@yifanlu"
 canonical_url: ""
 cited_by:
   - "2011.md:24"

@@ -13,10 +13,10 @@ sources:
   - id: original
     resource: "https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-controls"
     title: "LEXSS: Bypassing Lexical Parsing Security Controls"
-    author: @bishopfox
+    author: "@bishopfox"
 also_at: []
 authors:
-  - @bishopfox
+  - "@bishopfox"
 canonical_url: ""
 cited_by:
   - "2021.md:37"

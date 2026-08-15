@@ -13,12 +13,12 @@ sources:
   - id: original
     resource: "https://www.bishopfox.com/blog/2018/06/server-side-spreadsheet-injections/"
     title: Server-Side Spreadsheet Injection - Formula Injection to Remote Code…
-    author: @bishopfox
+    author: "@bishopfox"
   - id: canonical
     resource: "https://bishopfox.com/blog/server-side-spreadsheet-injections/"
 also_at: []
 authors:
-  - @bishopfox
+  - "@bishopfox"
 canonical_url: "https://bishopfox.com/blog/server-side-spreadsheet-injections/"
 cited_by:
   - "2018.md:43"

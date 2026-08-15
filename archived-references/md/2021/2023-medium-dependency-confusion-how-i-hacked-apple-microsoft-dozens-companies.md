@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - Alex Birsan
-  - @alxbrsn
+  - "@alxbrsn"
 canonical_url: ""
 cited_by:
   - "2021.md:5"

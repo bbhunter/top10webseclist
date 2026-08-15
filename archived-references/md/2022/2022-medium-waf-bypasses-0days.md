@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - terjanq
-  - @terjanq
+  - "@terjanq"
 canonical_url: ""
 cited_by:
   - "2022.md:43"

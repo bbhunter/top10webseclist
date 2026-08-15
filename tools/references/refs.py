@@ -2768,7 +2768,7 @@ def command_digest(args):
 
     if args.publish:
         publish_digests(manifest, root, config, only=args.only,
-                        collection=args.collection)
+                        collection=args.collection, refresh=args.refresh)
         return 0
 
     if args.vocabulary:
@@ -2991,9 +2991,28 @@ def _without_derived_tags(line):
     return "tags: [%s]" % ", ".join(kept)
 
 
+_QUOTED_SCALAR = re.compile(r'^(\s*(?:-\s|[A-Za-z_][A-Za-z0-9_]*:\s)?)"(.*)"$')
+
+
+def _unquoted(line):
+    """A frontmatter line with its scalar quoting removed, for comparison only.
+
+    Whether a value is quoted is a SERIALISATION detail, not content. It has to
+    be, or the guard blocks exactly the documents a quoting fix exists to
+    repair: 118 files stated `- @TechCrunch`, which is not valid YAML, and a
+    renderer that has learned to write `- "@TechCrunch"` no longer reproduces
+    them byte for byte.
+    """
+    match = _QUOTED_SCALAR.match(line)
+    if not match:
+        return line
+    return match.group(1) + match.group(2).replace('\\"', '"').replace("\\\\", "\\")
+
+
 def _same_but_for_generated(rebuilt, published):
     """Whether a fresh render differs from the published file only where it may."""
-    keep = lambda text: [_without_derived_tags(line) for line in text.splitlines()
+    keep = lambda text: [_unquoted(_without_derived_tags(line))
+                         for line in text.splitlines()
                          if not _REGENERATED.match(line)]
     return keep(rebuilt) == keep(published)
 
@@ -3146,12 +3165,21 @@ def _republish_digest(path, entry, config):
     return ""
 
 
-def publish_digests(manifest, root, config, only="", collection=""):
+def publish_digests(manifest, root, config, only="", collection="", refresh=False):
     """Carry every recorded summary and tag set into the published files.
 
-    Idempotent: a file already stating the digest's description is skipped, so
-    this picks up a summary written by an earlier run as readily as one written
-    a moment ago.
+    Idempotent: a file already stating the digest's description and tags is
+    skipped, so this picks up a summary written by an earlier run as readily as
+    one written a moment ago.
+
+    `refresh` drops that skip and re-renders every document. It is the route
+    for a RENDERER fix, which changes files whose summary and tags are already
+    correct and which the skip therefore steps straight over: correcting the
+    frontmatter quoting left 118 documents untouched, because what was wrong
+    with them had nothing to do with their digest. It stays offline and keeps
+    the same prove-then-replace guard, so it needs neither the store nor a
+    fetch - which is the whole point, with 286 references whose stored bytes
+    are gone.
     """
     from refslib import collections as collections_module
     archive_dir = root / (config.get("archive_dir") or "archived-references")
@@ -3168,7 +3196,7 @@ def publish_digests(manifest, root, config, only="", collection=""):
         path = archive_dir / relpath
         if not path.exists():
             continue
-        if _digest_is_published(path.read_text(encoding="utf-8"), entry):
+        if not refresh and _digest_is_published(path.read_text(encoding="utf-8"), entry):
             continue
         seen += 1
         reason = _republish_digest(path, entry, config)
@@ -3935,6 +3963,13 @@ def build_parser():
                                help="stop the queue after this many references")
     digest_parser.add_argument("--check", action="store_true",
                                help="report what --apply would record, and write nothing")
+    digest_parser.add_argument("--refresh", action="store_true",
+                               help="with --publish, re-render every document "
+                                    "rather than skipping the ones whose summary "
+                                    "and tags already match. The route for a "
+                                    "RENDERER fix, which changes files whose "
+                                    "digest was never wrong. Offline; keeps the "
+                                    "prove-then-replace guard")
     # --promote is gone: a tag no longer has to be promoted, because a new one
     # is adopted by being used. What governs the vocabulary now is
     # tag-vocabulary.json, where an alias folds a spelling away for good.

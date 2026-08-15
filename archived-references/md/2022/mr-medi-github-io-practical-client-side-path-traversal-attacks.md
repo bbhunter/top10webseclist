@@ -13,12 +13,12 @@ sources:
   - id: original
     resource: "https://mr-medi.github.io/research/2022/11/04/practical-client-side-path-traversal-attacks.html"
     title: Practical Client Side Path Traversal Attacks
-    author: @medi_0ne
+    author: "@medi_0ne"
   - id: capture
     resource: "https://web.archive.org/web/20240901163411/https://mr-medi.github.io/research/2022/11/04/practical-client-side-path-traversal-attacks.html"
 also_at: []
 authors:
-  - @medi_0ne
+  - "@medi_0ne"
 canonical_url: ""
 cited_by:
   - "2022.md:13"

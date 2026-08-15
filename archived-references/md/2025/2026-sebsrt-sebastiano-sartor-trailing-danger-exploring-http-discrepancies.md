@@ -19,7 +19,7 @@ also_at: []
 authors:
   - Sebastiano Sartor
   - Sebastiano Sartor - sebsrt
-  - @s3bsrt
+  - "@s3bsrt"
 canonical_url: ""
 cited_by:
   - "2025.md:75"

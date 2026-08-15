@@ -19,7 +19,7 @@ sources:
 also_at: []
 authors:
   - Adam Kues
-  - @searchlightsec
+  - "@searchlightsec"
 canonical_url: "https://www.slcyber.io/research/wp2shell-pre-authentication-rce-in-wordpress-core"
 cited_by:
   - "2026-ai.md:59"

@@ -20,7 +20,7 @@ sources:
 also_at: []
 authors:
   - Adam Kues
-  - @searchlightsec
+  - "@searchlightsec"
 canonical_url: ""
 cited_by:
   - "2026-ai.md:40"

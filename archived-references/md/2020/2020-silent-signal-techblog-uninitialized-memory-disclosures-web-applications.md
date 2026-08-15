@@ -13,11 +13,11 @@ sources:
   - id: original
     resource: "https://blog.silentsignal.eu/2020/04/20/uninitialized-memory-disclosures-in-web-applications/"
     title: Uninitialized Memory Disclosures in Web Applications
-    author: @SilentSignalHU
+    author: "@SilentSignalHU"
     last_modified: 2020-04-20
 also_at: []
 authors:
-  - @SilentSignalHU
+  - "@SilentSignalHU"
 canonical_url: ""
 cited_by:
   - "2020.md:34"

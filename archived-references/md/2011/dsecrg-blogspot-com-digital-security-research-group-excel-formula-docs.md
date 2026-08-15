@@ -13,13 +13,13 @@ sources:
   - id: original
     resource: "https://dsecrg.blogspot.com/2011/12/excel-formula-injection-in-google-docs.html"
     title: "Digital Security Research Group: Excel formula injection in Google Docs"
-    author: @_chipik, @asintsov
+    author: "@_chipik, @asintsov"
   - id: capture
     resource: "https://web.archive.org/web/20120530173011/https://dsecrg.blogspot.com/2011/12/excel-formula-injection-in-google-docs.html"
 also_at: []
 authors:
-  - @_chipik
-  - @asintsov
+  - "@_chipik"
+  - "@asintsov"
 canonical_url: ""
 cited_by:
   - "2011.md:56"

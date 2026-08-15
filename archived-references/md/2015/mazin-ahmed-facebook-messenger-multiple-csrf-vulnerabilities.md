@@ -19,7 +19,7 @@ sources:
 also_at: []
 authors:
   - Mazin Ahmed
-  - @mazen160
+  - "@mazen160"
 canonical_url: "https://mazinahmed.net/blog/facebook-messenger-multiple-csrf/"
 cited_by:
   - "2015.md:42"

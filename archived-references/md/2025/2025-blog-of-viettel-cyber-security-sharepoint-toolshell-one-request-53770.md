@@ -13,11 +13,11 @@ sources:
   - id: original
     resource: "https://blog.viettelcybersecurity.com/sharepoint-toolshell/"
     title: SharePoint ToolShell – One Request PreAuth RCE chain CVE-2025-53770
-    author: @_l0gg, khoadha
+    author: "@_l0gg, khoadha"
     last_modified: 2025-07-24
 also_at: []
 authors:
-  - @_l0gg
+  - "@_l0gg"
   - khoadha
 canonical_url: ""
 cited_by:

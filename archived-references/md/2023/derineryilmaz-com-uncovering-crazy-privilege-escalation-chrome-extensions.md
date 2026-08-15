@@ -13,12 +13,12 @@ sources:
   - id: original
     resource: "https://0x44.xyz/blog/cve-2023-4369/index.html"
     title: Uncovering a crazy privilege escalation from Chrome extensions
-    author: @deryilz
+    author: "@deryilz"
   - id: canonical
     resource: "https://derineryilmaz.com/blog/cve-2023-4369/index.html"
 also_at: []
 authors:
-  - @deryilz
+  - "@deryilz"
 canonical_url: "https://derineryilmaz.com/blog/cve-2023-4369/index.html"
 cited_by:
   - "2023.md:58"

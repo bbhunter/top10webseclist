@@ -13,13 +13,13 @@ sources:
   - id: original
     resource: "https://lab.wallarm.com/how-to-trick-csp-in-letting-you-run-whatever-you-want-73cb5ff428aa"
     title: Neatly bypassing CSP ✔️
-    author: @bo0om
+    author: "@bo0om"
     last_modified: 2018-07-10
   - id: canonical
     resource: "https://lab.wallarm.com/how-to-trick-csp-in-letting-you-run-whatever-you-want-73cb5ff428aa/"
 also_at: []
 authors:
-  - @bo0om
+  - "@bo0om"
 canonical_url: "https://lab.wallarm.com/how-to-trick-csp-in-letting-you-run-whatever-you-want-73cb5ff428aa/"
 cited_by:
   - "2018.md:28"

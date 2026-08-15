@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - Ozgur Alp
-  - @ozgur_bbh
+  - "@ozgur_bbh"
 canonical_url: ""
 cited_by:
   - "2020.md:54"

@@ -13,11 +13,11 @@ sources:
   - id: original
     resource: "https://speakerdeck.com/masatokinugawa/how-i-hacked-microsoft-teams-and-got-150000-dollars-in-pwn2own"
     title: How I Hacked Microsoft Teams and got $150,000 in Pwn2Own
-    author: @kinugawamasato, Masato Kinugawa
+    author: "@kinugawamasato, Masato Kinugawa"
     last_modified: 2023-07-31
 also_at: []
 authors:
-  - @kinugawamasato
+  - "@kinugawamasato"
   - Masato Kinugawa
 canonical_url: ""
 cited_by:

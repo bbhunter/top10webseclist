@@ -20,7 +20,7 @@ sources:
 also_at: []
 authors:
   - Contributor
-  - @TechCrunch
+  - "@TechCrunch"
 canonical_url: "https://techcrunch.com/2006/09/08/metaverse-breached-second-life-customer-database-hacked/"
 cited_by:
   - "2006.md:61"

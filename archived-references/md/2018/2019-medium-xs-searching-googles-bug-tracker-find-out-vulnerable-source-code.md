@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - Luan Herrera
-  - @lbherrera_
+  - "@lbherrera_"
 canonical_url: ""
 cited_by:
   - "2018.md:14"

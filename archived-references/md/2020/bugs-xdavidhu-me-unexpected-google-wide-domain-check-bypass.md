@@ -17,7 +17,7 @@ sources:
 also_at: []
 authors:
   - David Schütz
-  - @xdavidhu
+  - "@xdavidhu"
 canonical_url: ""
 cited_by:
   - "2020.md:37"

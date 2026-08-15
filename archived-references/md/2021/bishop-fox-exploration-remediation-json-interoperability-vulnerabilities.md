@@ -13,10 +13,10 @@ sources:
   - id: original
     resource: "https://bishopfox.com/blog/json-interoperability-vulnerabilities"
     title: An Exploration & Remediation of JSON Interoperability Vulnerabilities
-    author: @bishopfox
+    author: "@bishopfox"
 also_at: []
 authors:
-  - @bishopfox
+  - "@bishopfox"
 canonical_url: ""
 cited_by:
   - "2021.md:11"

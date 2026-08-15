@@ -532,6 +532,43 @@ class DigestAcceptTests(unittest.TestCase):
         self.assertIn("no such reference", reason)
 
 
+class FrontmatterScalarTests(unittest.TestCase):
+    """Frontmatter has to parse as YAML, not merely look right."""
+
+    def scalar(self, value):
+        from refslib import render as render_module
+        return render_module._scalar(value)
+
+    def test_a_handle_is_quoted(self):
+        """118 documents stated `- @TechCrunch` and stopped parsing entirely."""
+        self.assertEqual('"@TechCrunch"', self.scalar("@TechCrunch"))
+        self.assertEqual('"@_chipik, @asintsov"', self.scalar("@_chipik, @asintsov"))
+
+    def test_every_reserved_opener_is_quoted(self):
+        for opener in "@`&*!|>%":
+            self.assertTrue(self.scalar(opener + "name").startswith('"'), opener)
+
+    def test_a_newline_cannot_end_the_string_early(self):
+        self.assertEqual('"https://example.test/a b"',
+                         self.scalar("https://example.test/a\nb"))
+
+    def test_a_control_character_is_removed(self):
+        self.assertEqual("Hacker Protection from SQL Injection SPI Dynamics",
+                         self.scalar("Hacker Protection from SQL Injection \x96 SPI Dynamics"))
+
+    def test_an_ordinary_title_is_still_left_unquoted(self):
+        self.assertEqual("Bypassing Mozilla port blocking",
+                         self.scalar("Bypassing Mozilla port blocking"))
+
+    def test_every_scalar_round_trips_through_a_yaml_parser(self):
+        yaml = __import__("yaml")
+        for value in ("@handle", "- dash", "? question", "a: colon", "quote\"inside",
+                      "back\\slash", "%percent", "|pipe", "tab\there", "", "  spaced  "):
+            parsed = yaml.safe_load("field: %s" % self.scalar(value))
+            self.assertIsInstance(parsed, dict, value)
+            self.assertIn("field", parsed, value)
+
+
 class TagVocabularyTests(unittest.TestCase):
     """The JSON vocabulary: normalisation, aliases and the OWASP facet."""
 

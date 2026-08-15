@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - Laurence Tennant
-  - @includesecurity
+  - "@includesecurity"
 canonical_url: ""
 cited_by:
   - "2025.md:30"

@@ -13,10 +13,10 @@ sources:
   - id: original
     resource: "https://youst.in/posts/cache-poisoning-at-scale/"
     title: Cache Poisoning at Scale
-    author: @iustinBB
+    author: "@iustinBB"
 also_at: []
 authors:
-  - @iustinBB
+  - "@iustinBB"
 canonical_url: ""
 cited_by:
   - "2021.md:10"

@@ -13,11 +13,11 @@ sources:
   - id: original
     resource: "https://speakerdeck.com/shhnjk/piloting-edge-copilot"
     title: Piloting Edge Copilot
-    author: @speakerdeck, Jun Kokatsu
+    author: "@speakerdeck, Jun Kokatsu"
     last_modified: 2024-11-14
 also_at: []
 authors:
-  - @speakerdeck
+  - "@speakerdeck"
   - Jun Kokatsu
 canonical_url: ""
 cited_by:

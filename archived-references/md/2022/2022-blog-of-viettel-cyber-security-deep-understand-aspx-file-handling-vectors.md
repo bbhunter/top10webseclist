@@ -13,11 +13,11 @@ sources:
   - id: original
     resource: "https://blog.viettelcybersecurity.com/deep-understand-aspx-file-handling-and-some-related-attack-vector/"
     title: Deep understand ASPX file handling and some related attack vectors
-    author: @rskvp93, rskvp93
+    author: "@rskvp93, rskvp93"
     last_modified: 2022-07-25
 also_at: []
 authors:
-  - @rskvp93
+  - "@rskvp93"
   - rskvp93
 canonical_url: ""
 cited_by:

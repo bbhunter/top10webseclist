@@ -13,13 +13,13 @@ sources:
   - id: original
     resource: "https://blog.malicious.group/from-akamai-to-f5-to-ntlm/"
     title: From Akamai to F5 to NTLM... with love.
-    author: @deadvolvo, d3d
+    author: "@deadvolvo, d3d"
     last_modified: 2023-10-26
   - id: capture
     resource: "https://web.archive.org/web/20231126173827/https://blog.malicious.group/from-akamai-to-f5-to-ntlm/"
 also_at: []
 authors:
-  - @deadvolvo
+  - "@deadvolvo"
   - d3d
 canonical_url: ""
 cited_by:

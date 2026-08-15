@@ -12,11 +12,11 @@ sources:
   - id: original
     resource: "https://blog.isec.pl/all-is-xss-that-comes-to-the-net/"
     title: All is XSS that comes to the .NET
-    author: @phaldrzynski, Paweł Hałdrzyński
+    author: "@phaldrzynski, Paweł Hałdrzyński"
     last_modified: 2019-11-08
 also_at: []
 authors:
-  - @phaldrzynski
+  - "@phaldrzynski"
   - Paweł Hałdrzyński
 canonical_url: ""
 cited_by:

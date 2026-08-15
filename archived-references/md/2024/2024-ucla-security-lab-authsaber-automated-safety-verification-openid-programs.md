@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - Yuan Tian
-  - @GetResearchDev
+  - "@GetResearchDev"
 canonical_url: ""
 cited_by:
   - "2024.md:149"

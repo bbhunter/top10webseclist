@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - Maxime Escourbiac
-  - @Fisjkars
+  - "@Fisjkars"
 canonical_url: ""
 cited_by:
   - "2020.md:18"

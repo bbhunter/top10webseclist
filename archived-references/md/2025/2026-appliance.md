@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - Mehmet Ince
-  - @mdisec
+  - "@mdisec"
 canonical_url: ""
 cited_by:
   - "2025.md:63"

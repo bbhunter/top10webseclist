@@ -17,7 +17,7 @@ sources:
 also_at: []
 authors:
   - PT SWARM Team
-  - @ptswarm
+  - "@ptswarm"
 canonical_url: ""
 cited_by:
   - "2020.md:27"

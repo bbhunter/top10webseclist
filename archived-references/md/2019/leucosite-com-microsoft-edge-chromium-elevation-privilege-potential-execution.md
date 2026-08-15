@@ -13,10 +13,10 @@ sources:
   - id: original
     resource: "https://leucosite.com/Edge-Chromium-EoP-RCE/"
     title: Microsoft Edge (Chromium) - Elevation of Privilege to Potential Remote Code Execution
-    author: @qab
+    author: "@qab"
 also_at: []
 authors:
-  - @qab
+  - "@qab"
 canonical_url: ""
 cited_by:
   - "2019.md:13"

@@ -17,7 +17,7 @@ sources:
 also_at: []
 authors:
   - Igor Sak-Sakovskiy
-  - @Psych0tr1a
+  - "@Psych0tr1a"
 canonical_url: ""
 cited_by:
   - "2021.md:14"

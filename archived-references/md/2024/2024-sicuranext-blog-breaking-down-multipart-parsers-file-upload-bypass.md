@@ -13,11 +13,11 @@ sources:
   - id: original
     resource: "https://blog.sicuranext.com/breaking-down-multipart-parsers-validation-bypass/"
     title: "Breaking Down Multipart Parsers: File upload validation bypass"
-    author: @AndreaTheMiddle, Andrea Menin
+    author: "@AndreaTheMiddle, Andrea Menin"
     last_modified: 2024-11-05
 also_at: []
 authors:
-  - @AndreaTheMiddle
+  - "@AndreaTheMiddle"
   - Andrea Menin
 canonical_url: ""
 cited_by:

@@ -12,11 +12,11 @@ sources:
   - id: original
     resource: "https://blog.isec.pl/disguises-zip-past-path-traversal/"
     title: Disguises Zip Past Path Traversal
-    author: @phaldrzynski, Paweł Hałdrzyński
+    author: "@phaldrzynski, Paweł Hałdrzyński"
     last_modified: 2025-08-05
 also_at: []
 authors:
-  - @phaldrzynski
+  - "@phaldrzynski"
   - Paweł Hałdrzyński
 canonical_url: ""
 cited_by:

@@ -17,7 +17,7 @@ sources:
 also_at: []
 authors:
   - Arseniy Sharoglazov
-  - @_mohemiv
+  - "@_mohemiv"
 canonical_url: ""
 cited_by:
   - "2024.md:28"

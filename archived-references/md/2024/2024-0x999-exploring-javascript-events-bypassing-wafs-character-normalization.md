@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - 0x999
-  - @_0x999
+  - "@_0x999"
 canonical_url: ""
 cited_by:
   - "2024.md:43"

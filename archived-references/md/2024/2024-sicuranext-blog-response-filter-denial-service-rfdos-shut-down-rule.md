@@ -13,11 +13,11 @@ sources:
   - id: original
     resource: "https://blog.sicuranext.com/response-filter-denial-of-service-a-new-way-to-shutdown-a-website/"
     title: "Response Filter Denial of Service (RFDoS): shut down a website by triggering WAF rule"
-    author: @AndreaTheMiddle, Andrea Menin
+    author: "@AndreaTheMiddle, Andrea Menin"
     last_modified: 2024-05-14
 also_at: []
 authors:
-  - @AndreaTheMiddle
+  - "@AndreaTheMiddle"
   - Andrea Menin
 canonical_url: ""
 cited_by:

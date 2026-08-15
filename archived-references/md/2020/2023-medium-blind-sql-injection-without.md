@@ -20,7 +20,7 @@ sources:
 also_at: []
 authors:
   - terjanq
-  - @terjanq
+  - "@terjanq"
 canonical_url: "https://terjanq.medium.com/blind-sql-injection-without-an-in-1e14ba1d4952"
 cited_by:
   - "2020.md:29"

@@ -13,11 +13,11 @@ sources:
   - id: original
     resource: "https://blog.sicuranext.com/aws-waf-bypass/"
     title: "AWS WAF Bypass: invalid JSON object and unicode escape sequences"
-    author: @AndreaTheMiddle, Andrea Menin
+    author: "@AndreaTheMiddle, Andrea Menin"
     last_modified: 2023-07-26
 also_at: []
 authors:
-  - @AndreaTheMiddle
+  - "@AndreaTheMiddle"
   - Andrea Menin
 canonical_url: ""
 cited_by:

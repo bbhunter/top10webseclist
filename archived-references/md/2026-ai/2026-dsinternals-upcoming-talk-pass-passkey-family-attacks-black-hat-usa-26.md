@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - Michael Grafnetter
-  - @MGrafnetter
+  - "@MGrafnetter"
 canonical_url: ""
 cited_by:
   - "2026-ai.md:66"

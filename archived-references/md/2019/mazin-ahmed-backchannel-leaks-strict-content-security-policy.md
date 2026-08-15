@@ -17,7 +17,7 @@ sources:
 also_at: []
 authors:
   - Mazin Ahmed
-  - @mazen160
+  - "@mazen160"
 canonical_url: ""
 cited_by:
   - "2019.md:51"

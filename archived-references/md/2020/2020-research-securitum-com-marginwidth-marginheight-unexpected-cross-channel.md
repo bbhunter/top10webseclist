@@ -13,13 +13,13 @@ sources:
   - id: original
     resource: "https://research.securitum.com/marginwidth-marginheight-the-unexpected-cross-origin-communication-channel/"
     title: Marginwidth/marginheight - the unexpected cross-origin communication channel
-    author: @SecurityMB
+    author: "@SecurityMB"
     last_modified: 2020-07-13
   - id: capture
     resource: "https://web.archive.org/web/20250907031813/https://research.securitum.com/marginwidth-marginheight-the-unexpected-cross-origin-communication-channel/"
 also_at: []
 authors:
-  - @SecurityMB
+  - "@SecurityMB"
 canonical_url: ""
 cited_by:
   - "2020.md:38"

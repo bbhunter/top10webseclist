@@ -17,7 +17,7 @@ sources:
 also_at: []
 authors:
   - Thomas Stacey
-  - @AssuredAB
+  - "@AssuredAB"
 canonical_url: ""
 cited_by:
   - "2025.md:57"

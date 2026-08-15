@@ -13,13 +13,13 @@ sources:
   - id: original
     resource: "https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a"
     title: 👉The Good, The Bad and The Ugly of Safari in Client-Side Attacks
-    author: @bo0om
+    author: "@bo0om"
     last_modified: 2017-12-14
   - id: canonical
     resource: "https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a/"
 also_at: []
 authors:
-  - @bo0om
+  - "@bo0om"
 canonical_url: "https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a/"
 cited_by:
   - "2016-17.md:27"

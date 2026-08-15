@@ -13,14 +13,14 @@ sources:
   - id: original
     resource: "https://jsfiddle.net/gcollazo/UMyEm/embedded/result/"
     title: CSS-Only Clickjacking
-    author: @gcollazo
+    author: "@gcollazo"
   - id: canonical
     resource: "https://jsfiddle.net/gcollazo/UMyEm/"
 also_at:
   - "https://jsfiddle.net/gcollazo/UMyEm/show/"
   - "https://jsfiddle.net/gcollazo/UMyEm/embedded/result/"
 authors:
-  - @gcollazo
+  - "@gcollazo"
 canonical_url: "https://jsfiddle.net/gcollazo/UMyEm/"
 cited_by:
   - "2012.md:39"

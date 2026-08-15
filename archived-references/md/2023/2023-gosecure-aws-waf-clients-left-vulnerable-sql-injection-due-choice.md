@@ -20,7 +20,7 @@ sources:
 also_at: []
 authors:
   - Marc Olivier Bergeron
-  - @GoSecure_Inc
+  - "@GoSecure_Inc"
 canonical_url: ""
 cited_by:
   - "2023.md:38"

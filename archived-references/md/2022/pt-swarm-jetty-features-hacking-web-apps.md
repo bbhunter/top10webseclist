@@ -17,7 +17,7 @@ sources:
 also_at: []
 authors:
   - Mikhail Klyuchnikov
-  - @m1ke_n1
+  - "@m1ke_n1"
 canonical_url: ""
 cited_by:
   - "2022.md:34"

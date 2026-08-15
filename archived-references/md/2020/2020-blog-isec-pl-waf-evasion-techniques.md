@@ -13,11 +13,11 @@ sources:
   - id: original
     resource: "https://blog.isec.pl/waf-evasion-techniques/"
     title: WAF evasion techniques
-    author: @phaldrzynski, Paweł Hałdrzyński
+    author: "@phaldrzynski, Paweł Hałdrzyński"
     last_modified: 2020-12-10
 also_at: []
 authors:
-  - @phaldrzynski
+  - "@phaldrzynski"
   - Paweł Hałdrzyński
 canonical_url: ""
 cited_by:

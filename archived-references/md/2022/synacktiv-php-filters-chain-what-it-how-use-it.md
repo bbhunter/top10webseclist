@@ -12,10 +12,10 @@ sources:
   - id: original
     resource: "https://www.synacktiv.com/publications/php-filters-chain-what-is-it-and-how-to-use-it.html"
     title: "PHP filters chain: What is it and how to use it"
-    author: @Synacktiv
+    author: "@Synacktiv"
 also_at: []
 authors:
-  - @Synacktiv
+  - "@Synacktiv"
 canonical_url: ""
 cited_by:
   - "2022.md:19"

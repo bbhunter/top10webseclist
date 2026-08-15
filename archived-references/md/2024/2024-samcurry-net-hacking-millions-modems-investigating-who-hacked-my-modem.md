@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - Sam Curry
-  - @samwcyo
+  - "@samwcyo"
 canonical_url: ""
 cited_by:
   - "2024.md:77"

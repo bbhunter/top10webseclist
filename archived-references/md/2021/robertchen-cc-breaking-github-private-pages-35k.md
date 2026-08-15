@@ -13,10 +13,10 @@ sources:
   - id: original
     resource: "https://robertchen.cc/blog/2021/04/03/github-pages-xss"
     title: Breaking GitHub Private Pages for $35k
-    author: @NotDeGhost
+    author: "@NotDeGhost"
 also_at: []
 authors:
-  - @NotDeGhost
+  - "@NotDeGhost"
 canonical_url: ""
 cited_by:
   - "2021.md:21"

@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - pwntester
-  - @pwntester
+  - "@pwntester"
 canonical_url: ""
 cited_by:
   - "2024.md:120"

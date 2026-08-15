@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - Marek Tóth
-  - @MarekToth
+  - "@MarekToth"
 canonical_url: ""
 cited_by:
   - "2025.md:34"

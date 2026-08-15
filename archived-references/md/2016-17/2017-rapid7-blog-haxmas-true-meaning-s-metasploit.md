@@ -13,13 +13,13 @@ sources:
   - id: original
     resource: "https://blog.rapid7.com/2017/12/25/haxmas-the-true-meaning-s-of-metasploit/"
     title: "HaXmas: The True Meaning(s) of Metasploit"
-    author: @todb, Tod Beardsley
+    author: "@todb, Tod Beardsley"
     last_modified: 2017-12-25
   - id: capture
     resource: "https://web.archive.org/web/20191224195838/https://blog.rapid7.com/2017/12/25/haxmas-the-true-meaning-s-of-metasploit/"
 also_at: []
 authors:
-  - @todb
+  - "@todb"
   - Tod Beardsley
 canonical_url: ""
 cited_by:

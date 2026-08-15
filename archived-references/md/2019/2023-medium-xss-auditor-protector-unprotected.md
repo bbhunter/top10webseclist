@@ -20,7 +20,7 @@ sources:
 also_at: []
 authors:
   - terjanq
-  - @terjanq
+  - "@terjanq"
 canonical_url: "https://terjanq.medium.com/xss-auditor-the-protector-of-unprotected-f900a5e15b7b"
 cited_by:
   - "2019.md:45"

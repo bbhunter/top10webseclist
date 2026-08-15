@@ -1,6 +1,6 @@
 ---
 type: Article
-title: Hacker Protection from SQL Injection  SPI Dynamics
+title: Hacker Protection from SQL Injection SPI Dynamics
 description: SPI Labs brief on the December 2006 MySpace worm, which hid JavaScript in a QuickTime HREF track so playing an embedded movie ran the worm. It reinfected profiles over Ajax, replaced the MySpace navigation menu with a phishing lookalike, and spammed users. A second variant spread its payload across many hosts to resist takedown.
 resource: "http://www.spidynamics.com/spilabs/education/articles/MySpace-QuickTime%20Worm.html"
 tags: [article, webseclist-reference, spidynamics-com, xss, case-study, phishing, sanitizer-bypass, javascript, filter-bypass, attack-chain, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021]
@@ -12,7 +12,7 @@ stale_after: 2027-08-09
 sources:
   - id: original
     resource: "http://www.spidynamics.com/spilabs/education/articles/MySpace-QuickTime%20Worm.html"
-    title: Hacker Protection from SQL Injection  SPI Dynamics
+    title: Hacker Protection from SQL Injection SPI Dynamics
   - id: capture
     resource: "https://web.archive.org/web/20071006152425/http://www.spidynamics.com/spilabs/education/articles/MySpace-QuickTime%20Worm.html"
 also_at: []

@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - EdOverflow
-  - @EdOverflow
+  - "@EdOverflow"
 canonical_url: ""
 cited_by:
   - "2018.md:20"

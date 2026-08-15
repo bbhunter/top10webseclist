@@ -20,7 +20,7 @@ sources:
 also_at: []
 authors:
   - Alyssa Herrera
-  - @Alyssa_Herrera_
+  - "@Alyssa_Herrera_"
 canonical_url: "https://infosecwriteups.com/piercing-the-veil-server-side-request-forgery-to-niprnet-access-c358fd5e249a?gi=f7247ac2ec7a"
 cited_by:
   - "2018.md:24"

@@ -12,10 +12,10 @@ sources:
   - id: original
     resource: "https://www.synacktiv.com/publications/persistent-php-payloads-in-pngs-how-to-inject-php-code-in-an-image-and-keep-it-there.html"
     title: "Persistent PHP payloads in PNGs: How to inject PHP code in an image –"
-    author: @Synacktiv
+    author: "@Synacktiv"
 also_at: []
 authors:
-  - @Synacktiv
+  - "@Synacktiv"
 canonical_url: ""
 cited_by:
   - "2022.md:31"

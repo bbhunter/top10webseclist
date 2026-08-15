@@ -13,11 +13,11 @@ sources:
   - id: original
     resource: "https://labs.watchtowr.com/soapwn-pwning-net-framework-applications-through-http-client-proxies-and-wsdl/"
     title: "SOAPwn: Pwning .NET Framework Applications Through HTTP Client Proxies And WSDL"
-    author: @chudyPB, Piotr Bazydlo (@chudyPB)
+    author: "@chudyPB, Piotr Bazydlo (@chudyPB)"
     last_modified: 2025-12-10
 also_at: []
 authors:
-  - @chudyPB
+  - "@chudyPB"
   - Piotr Bazydlo (@chudyPB)
 canonical_url: ""
 cited_by:

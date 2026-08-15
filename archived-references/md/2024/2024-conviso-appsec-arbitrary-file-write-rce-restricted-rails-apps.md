@@ -19,7 +19,7 @@ sources:
 also_at: []
 authors:
   - Research Team Conviso
-  - @conviso
+  - "@conviso"
 canonical_url: "https://blog.convisoappsec.com/from-arbitrary-file-write-to-rce-in-restricted-rails-apps/"
 cited_by:
   - "2024.md:44"

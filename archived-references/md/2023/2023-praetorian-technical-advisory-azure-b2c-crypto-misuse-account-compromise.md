@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - Justin Copeland
-  - @praetorianlabs
+  - "@praetorianlabs"
 canonical_url: ""
 cited_by:
   - "2023.md:63"

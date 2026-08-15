@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - Salvatore Abello
-  - @salvatoreabello
+  - "@salvatoreabello"
 canonical_url: ""
 cited_by:
   - "2025.md:12"

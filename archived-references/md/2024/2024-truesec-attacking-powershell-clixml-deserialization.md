@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - siteadmin
-  - @Truesec
+  - "@Truesec"
 canonical_url: ""
 cited_by:
   - "2024.md:73"

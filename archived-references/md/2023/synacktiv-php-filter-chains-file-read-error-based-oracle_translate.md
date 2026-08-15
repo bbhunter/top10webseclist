@@ -12,10 +12,10 @@ sources:
   - id: original
     resource: "https://www.synacktiv.com/publications/php-filter-chains-file-read-from-error-based-oracle"
     title: "PHP filter chains: file read from error-based oracle"
-    author: @Synacktiv
+    author: "@Synacktiv"
 also_at: []
 authors:
-  - @Synacktiv
+  - "@Synacktiv"
 canonical_url: ""
 cited_by:
   - "2023.md:8"

@@ -13,13 +13,13 @@ sources:
   - id: original
     resource: "https://research.securitum.com/security-analysis-of-portal-element/"
     title: Security analysis of <portal> element
-    author: @SecurityMB
+    author: "@SecurityMB"
     last_modified: 2019-09-03
   - id: capture
     resource: "https://web.archive.org/web/20191114091030/https://research.securitum.com/security-analysis-of-portal-element/"
 also_at: []
 authors:
-  - @SecurityMB
+  - "@SecurityMB"
 canonical_url: ""
 cited_by:
   - "2019.md:29"

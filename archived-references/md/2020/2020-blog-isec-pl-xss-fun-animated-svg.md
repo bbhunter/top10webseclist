@@ -13,11 +13,11 @@ sources:
   - id: original
     resource: "https://blog.isec.pl/xss-fun-with-animated-svg/"
     title: XSS fun with animated SVG
-    author: @phaldrzynski, Paweł Hałdrzyński
+    author: "@phaldrzynski, Paweł Hałdrzyński"
     last_modified: 2020-04-14
 also_at: []
 authors:
-  - @phaldrzynski
+  - "@phaldrzynski"
   - Paweł Hałdrzyński
 canonical_url: ""
 cited_by:

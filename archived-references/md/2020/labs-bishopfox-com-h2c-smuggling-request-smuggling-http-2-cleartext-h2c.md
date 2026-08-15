@@ -19,7 +19,7 @@ sources:
 also_at: []
 authors:
   - Jake Miller
-  - @theBumbleSec
+  - "@theBumbleSec"
 canonical_url: ""
 cited_by:
   - "2020.md:5"

@@ -13,13 +13,13 @@ sources:
   - id: original
     resource: "https://research.securitum.com/xss-in-amp4email-dom-clobbering/"
     title: "XSS in GMail's AMP4Email via DOM Clobbering"
-    author: @SecurityMB
+    author: "@SecurityMB"
     last_modified: 2019-11-18
   - id: capture
     resource: "https://web.archive.org/web/20250415050251/https://research.securitum.com/xss-in-amp4email-dom-clobbering/"
 also_at: []
 authors:
-  - @SecurityMB
+  - "@SecurityMB"
 canonical_url: ""
 cited_by:
   - "2019.md:25"

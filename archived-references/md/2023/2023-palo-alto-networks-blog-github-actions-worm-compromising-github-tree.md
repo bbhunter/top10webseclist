@@ -13,13 +13,13 @@ sources:
   - id: original
     resource: "https://www.paloaltonetworks.com/blog/prisma-cloud/github-actions-worm-dependencies/"
     title: "The GitHub Actions Worm: Compromising GitHub Repositories Through the Actions Dependency Tree"
-    author: @PaloAltoNtwks, Asi Greenholts
+    author: "@PaloAltoNtwks, Asi Greenholts"
     last_modified: 2023-09-14
   - id: canonical
     resource: "https://www.paloaltonetworks.com/blog/cloud-security/github-actions-worm-dependencies/"
 also_at: []
 authors:
-  - @PaloAltoNtwks
+  - "@PaloAltoNtwks"
   - Asi Greenholts
 canonical_url: "https://www.paloaltonetworks.com/blog/cloud-security/github-actions-worm-dependencies/"
 cited_by:

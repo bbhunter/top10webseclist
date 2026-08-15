@@ -20,7 +20,7 @@ sources:
 also_at: []
 authors:
   - Mike Lennon
-  - @SecurityWeek
+  - "@SecurityWeek"
 canonical_url: "https://www.securityweek.com/microsoft-issues-emergency-patch-critical-ie-flaw-exploited-wild/"
 cited_by:
   - "2015.md:31"

@@ -18,7 +18,7 @@ sources:
 also_at: []
 authors:
   - pspaul
-  - @pspaul95
+  - "@pspaul95"
 canonical_url: ""
 cited_by:
   - "2024.md:27"

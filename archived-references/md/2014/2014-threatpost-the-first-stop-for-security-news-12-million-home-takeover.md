@@ -13,7 +13,7 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/12-million-home-routers-vulnerable-to-takeover/109970"
     title: 12 Million Home Routers Vulnerable to Takeover
-    author: @mike_mimoso
+    author: "@mike_mimoso"
     last_modified: 2014-12-18
   - id: canonical
     resource: "https://web.archive.org/web/20160417171411/https://threatpost.com/12-million-home-routers-vulnerable-to-takeover/109970/"
@@ -21,7 +21,7 @@ sources:
     resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/12-million-home-routers-vulnerable-to-takeover/109970"
 also_at: []
 authors:
-  - @mike_mimoso
+  - "@mike_mimoso"
 canonical_url: "https://web.archive.org/web/20160417171411/https://threatpost.com/12-million-home-routers-vulnerable-to-takeover/109970/"
 cited_by:
   - "2014.md:9"

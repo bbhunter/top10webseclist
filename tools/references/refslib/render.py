@@ -468,11 +468,36 @@ def _slug_tag(text):
     return re.sub(r"[^a-z0-9]+", "-", str(text or "").lower()).strip("-")[:40] or "unknown"
 
 
+# Characters YAML reserves as INDICATORS, which therefore cannot open a plain
+# scalar. `@` and the backtick are reserved for future use and are an error
+# rather than a quirk - and `@` is how researchers write their own names.
+_YAML_OPENERS = "@`&*!|>%"
+# C0 and C1 controls. A parser rejects them outright ("special characters are
+# not allowed"), and they arrive from real pages: one title carried U+0096.
+_CONTROL = re.compile(r"[\x00-\x08\x0b-\x1f\x7f-\x9f]")
+
+
 def _scalar(value):
-    text = str(value)
+    """One frontmatter value, as YAML that actually parses.
+
+    121 published documents did not. 118 of them stated a byline the way its
+    author writes it - `- @TechCrunch`, `author: @yifanlu` - and `@` opens no
+    plain scalar in YAML, so the whole frontmatter block failed and every field
+    in it became unreadable to anything but a human. Quoting is not cosmetic
+    here: the file still looked perfect.
+
+    Folded to ONE LINE first, because a newline inside a quoted scalar ends the
+    string and hands the remainder to the parser as YAML - which is how two
+    documents came to stop parsing in the middle of a URL.
+    """
+    # Controls come out FIRST: collapsing whitespace before removing them
+    # leaves the two spaces that surrounded the character behind.
+    text = re.sub(r"\s+", " ", _CONTROL.sub("", str(value))).strip()
     if text == "":
         return '""'
-    if re.search(r"[:#\[\]{}\"']|^\s|\s$", text):
+    if (re.search(r"[:#\[\]{}\"']|^\s|\s$", text)
+            or text[0] in _YAML_OPENERS
+            or re.match(r"^[-?](\s|$)", text)):
         return '"%s"' % text.replace("\\", "\\\\").replace('"', '\\"')
     return text
 
