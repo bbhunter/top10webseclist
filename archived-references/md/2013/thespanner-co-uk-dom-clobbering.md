@@ -12,11 +12,13 @@ sources:
   - id: original
     resource: "https://thespanner.co.uk/2013/05/16/dom-clobbering"
     title: DOM Clobbering
+    author: Gareth Heyes
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: ""
 cited_by:
-  - "2013.md:54"
+  - "2013.md:55"
 commit: ""
 content_sha256: 7c376edad21c82c1c1fca100b315941cbe3595caae1b99e90a40024ca5535fd0
 depth: full
@@ -41,7 +43,7 @@ translation_of: ""
 
 # DOM Clobbering
 
-**DOM Clobbering** - Author not stated, thespanner.co.uk.
+**DOM Clobbering** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <https://thespanner.co.uk/2013/05/16/dom-clobbering>

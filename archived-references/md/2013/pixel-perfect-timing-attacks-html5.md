@@ -966,18 +966,3 @@ prevented by taking several readings for each pixel, improving the accuracy of t
 text.
 
 --- page 28 ---
-
-Context Information Security 30 Marsh Wall, London, E14 9TP +44 (0) 207 537 7515 www.contextis.co.uk 29 / 29 White paper / Pixel Perfect Timing Attacks with HTML5 Context Information Security London 
-(HQ) Cheltenham Düsseldorf Melbourne 4th Floor 
-30 Marsh Wall 
-London E14 9TP 
-United Kingdom Corinth House 
-117 Bath Road 
-Cheltenham GL53 7LS 
-United Kingdom 1.OG 
-Adersstr. 28 
-40215 Düsseldorf 
-Germany 4th Floor 
-155 Queen Street 
-Melbourne VIC 3000 
-Australia

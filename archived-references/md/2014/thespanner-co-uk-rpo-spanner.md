@@ -12,12 +12,10 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2014/03/21/rpo/"
     title: RPO
-    author: "Ardamis.com | http://www.ardamis.com/"
   - id: capture
     resource: "https://web.archive.org/web/20140427001031/http://www.thespanner.co.uk/2014/03/21/rpo/"
 also_at: []
-authors:
-  - "Ardamis.com | http://www.ardamis.com/"
+authors: []
 canonical_url: ""
 cited_by:
   - "2014.md:68"
@@ -46,7 +44,7 @@ translation_of: ""
 
 # RPO
 
-**RPO** - Ardamis.com | http://www.ardamis.com/, thespanner.co.uk.
+**RPO** - Author not stated, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2014/03/21/rpo/>

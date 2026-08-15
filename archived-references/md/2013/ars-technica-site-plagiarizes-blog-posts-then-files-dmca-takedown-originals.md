@@ -12,14 +12,14 @@ sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://arstechnica.com/science/2013/02/site-plagiarizes-blog-posts-then-files-dmca-takedown-on-originals/"
     title: Site plagiarizes blog posts, then files DMCA takedown on originals
-    author: @j_timmer
+    author: John Timmer
   - id: canonical
     resource: "http://web.archive.org/web/20160410165447/http://arstechnica.com/science/2013/02/site-plagiarizes-blog-posts-then-files-dmca-takedown-on-originals/"
   - id: capture
     resource: "https://web.archive.org/web/20160507023636/http://arstechnica.com/science/2013/02/site-plagiarizes-blog-posts-then-files-dmca-takedown-on-originals/"
 also_at: []
 authors:
-  - @j_timmer
+  - John Timmer
 canonical_url: "http://web.archive.org/web/20160410165447/http://arstechnica.com/science/2013/02/site-plagiarizes-blog-posts-then-files-dmca-takedown-on-originals/"
 cited_by:
   - "2013.md:22"
@@ -47,7 +47,7 @@ translation_of: ""
 
 # Site plagiarizes blog posts, then files DMCA takedown on originals
 
-**Site plagiarizes blog posts, then files DMCA takedown on originals** - @j_timmer, Ars Technica.
+**Site plagiarizes blog posts, then files DMCA takedown on originals** - John Timmer, Ars Technica.
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://arstechnica.com/science/2013/02/site-plagiarizes-blog-posts-then-files-dmca-takedown-on-originals/>
@@ -95,5 +95,3 @@ The remarkable specificity of the request, with all the material focused on a si
 For his part, Oransky is hoping that it's just coincidence. "We can only hope that this isn't an attempt to keep us from reporting on retractions and scientific fraud."
 
 *This post has been edited to correct an error in the total number of posts published on Potti by Retraction Watch.*
-
-[Expand full story](http://web.archive.org/web/20160410165447/http://arstechnica.com/science/2013/02/site-plagiarizes-blog-posts-then-files-dmca-takedown-on-originals/)

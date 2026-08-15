@@ -12,7 +12,7 @@ sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://threatpost.com/java-zero-day-procession-continues-030113/77575"
     title: The Java Zero-Day Procession Continues
-    author: @TheBrianDonohue
+    author: Brian Donohue
     last_modified: 2013-03-01
   - id: canonical
     resource: "http://web.archive.org/web/20160415221419/https://threatpost.com/java-zero-day-procession-continues-030113/77575/"
@@ -20,7 +20,7 @@ sources:
     resource: "https://web.archive.org/web/20160507023636/http://threatpost.com/java-zero-day-procession-continues-030113/77575"
 also_at: []
 authors:
-  - @TheBrianDonohue
+  - Brian Donohue
 canonical_url: "http://web.archive.org/web/20160415221419/https://threatpost.com/java-zero-day-procession-continues-030113/77575/"
 cited_by:
   - "2013.md:26"
@@ -48,7 +48,7 @@ translation_of: ""
 
 # The Java Zero-Day Procession Continues
 
-**The Java Zero-Day Procession Continues** - @TheBrianDonohue, Threatpost | The first stop for security news.
+**The Java Zero-Day Procession Continues** - Brian Donohue, Threatpost | The first stop for security news.
 
 - Published: 2013-03-01
 - Original: <http://web.archive.org/web/20160507023636/http://threatpost.com/java-zero-day-procession-continues-030113/77575>
@@ -82,94 +82,3 @@ McRAT is also performing the following pair of registry modifications: “REGIST
 FireEye notified Oracle about the bug before publication and is urging users to disable Java in their browsers or set their Java security settings to “high” and avoid the execution of unknown Java applets until a patch is shipped. Oracle has since assigned a common vulnerability entry to the flaw: CVE-2013-1493.
 
 It’s been a turbulent couple of months for Java as an absolute torrent of zero-day vulnerabilities has researchers seriously considering [disabling Oracle’s nearly ubiquitous platform altogether](http://web.archive.org/web/20160415221419/https://threatpost.com/its-time-abandon-java-012113/).
-
- ![](http://web.archive.org/web/20160415221419im_/https://trtpost-wpengine.netdna-ssl.com/wp-content/uploads/avatars/42/1373469462-bpfull-68x68.jpg)
-
-## About Brian Donohue
-
-“We are what we pretend to be, so we must be careful about what we pretend to be.” ― Kurt Vonnegut
-
- [ View all posts by Brian Donohue ](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-### Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [Latest Tweet from: [Brian Donohue](http://web.archive.org/web/20160415221419/https://threatpost.com/author/brian/)
-
-> [](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/706970295383498753</blockquote></div> 				</div>
-					</footer>
-	</article>
-<div class=)
-
-Categories: [Vulnerabilities](http://web.archive.org/web/20160415221419/https://threatpost.com/category/vulnerabilities/), [Web Security](http://web.archive.org/web/20160415221419/https://threatpost.com/category/web-security/)   ](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/707205285153280000</blockquote></div> <h3 class=)
-
- ](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/707206196692910080</blockquote></div> <h3 class=)
-
-   ](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/707951304086319104</blockquote></div> <h3 class=)
-
- ](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/707953429134622720</blockquote></div> <h3 class=)
-
-   ](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/708032726931267584</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/708336650611507200</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/709448591887212544</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/709449680648806401</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/709453691271704576</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/710236035989557251</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/712464164963266560</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/714808617090879488</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/715269295077527552</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/716975200894644224</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/717727780587380737</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/720327203771158528</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/720397336128593920</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/720603140437975040</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160415221419/https://twitter.com/TheBrianDonohue/status/720604103370518528</blockquote></div> <h3 class=)

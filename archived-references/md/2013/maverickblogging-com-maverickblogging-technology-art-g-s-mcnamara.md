@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://maverickblogging.com/logout-is-broken-by-default-ruby-on-rails-web-applications/"
     title: MaverickBlogging | technology & art by G. S. McNamara
+    author: G. S. McNamara
   - id: canonical
     resource: "http://web.archive.org/web/20160505105010/http://maverickblogging.com/logout-is-broken-by-default-ruby-on-rails-web-applications/"
   - id: capture
     resource: "https://web.archive.org/web/20160507023636/http://maverickblogging.com/logout-is-broken-by-default-ruby-on-rails-web-applications/"
 also_at: []
-authors: []
+authors:
+  - G. S. McNamara
 canonical_url: "http://web.archive.org/web/20160505105010/http://maverickblogging.com/logout-is-broken-by-default-ruby-on-rails-web-applications/"
 cited_by:
   - "2013.md:24"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # MaverickBlogging | technology & art by G. S. McNamara
 
-**MaverickBlogging | technology & art by G. S. McNamara** - Author not stated, maverickblogging.com.
+**MaverickBlogging | technology & art by G. S. McNamara** - G. S. McNamara, maverickblogging.com.
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://maverickblogging.com/logout-is-broken-by-default-ruby-on-rails-web-applications/>

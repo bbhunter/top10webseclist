@@ -12,14 +12,14 @@ sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://arstechnica.com/security/2013/03/guerilla-researcher-created-epic-botnet-to-scan-billions-of-ip-addresses/"
     title: Guerilla researcher created epic botnet to scan billions of IP addresses
-    author: @dangoodin001
+    author: Dan Goodin
   - id: canonical
     resource: "http://web.archive.org/web/20160507162422/http://arstechnica.com/security/2013/03/guerilla-researcher-created-epic-botnet-to-scan-billions-of-ip-addresses"
   - id: capture
     resource: "https://web.archive.org/web/20160507023636/http://arstechnica.com/security/2013/03/guerilla-researcher-created-epic-botnet-to-scan-billions-of-ip-addresses/"
 also_at: []
 authors:
-  - @dangoodin001
+  - Dan Goodin
 canonical_url: "http://web.archive.org/web/20160507162422/http://arstechnica.com/security/2013/03/guerilla-researcher-created-epic-botnet-to-scan-billions-of-ip-addresses"
 cited_by:
   - "2013.md:37"
@@ -47,7 +47,7 @@ translation_of: ""
 
 # Guerilla researcher created epic botnet to scan billions of IP addresses
 
-**Guerilla researcher created epic botnet to scan billions of IP addresses** - @dangoodin001, Ars Technica.
+**Guerilla researcher created epic botnet to scan billions of IP addresses** - Dan Goodin, Ars Technica.
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://arstechnica.com/security/2013/03/guerilla-researcher-created-epic-botnet-to-scan-billions-of-ip-addresses/>
@@ -115,5 +115,3 @@ Putting aside the ethical and legal concerns of taking unauthorized control of h
 The researcher concluded by explaining the ultimate reason he took on the project.
 
 "I did not want to ask myself for the rest of my life how much fun it could have been or if the infrastructure I imagined in my head would have worked as expected," he explained. "I saw the chance to really work on an Internet scale, command hundred thousands of devices with a click of my mouse, portscan and map the whole Internet in a way nobody had done before, basically have fun with computers and the Internet in a way very few people ever will. I decided it would be worth my time."
-
-[Expand full story](http://web.archive.org/web/20160507162422/http://arstechnica.com/security/2013/03/guerilla-researcher-created-epic-botnet-to-scan-billions-of-ip-addresses/)

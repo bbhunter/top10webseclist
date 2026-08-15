@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/the-case-of-an-unconventional-csrf-attack-in-firefox/"
     title: The Case of an Unconventional CSRF Attack in Firefox
+    author: Kuskos
   - id: canonical
     resource: "http://web.archive.org/web/20160527225307/https://www.whitehatsec.com/blog/the-case-of-an-unconventional-csrf-attack-in-firefox/"
   - id: capture
     resource: "https://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/the-case-of-an-unconventional-csrf-attack-in-firefox/"
 also_at: []
-authors: []
+authors:
+  - Kuskos
 canonical_url: "http://web.archive.org/web/20160527225307/https://www.whitehatsec.com/blog/the-case-of-an-unconventional-csrf-attack-in-firefox/"
 cited_by:
   - "2013.md:23"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # The Case of an Unconventional CSRF Attack in Firefox
 
-**The Case of an Unconventional CSRF Attack in Firefox** - Author not stated, WhiteHat Security.
+**The Case of an Unconventional CSRF Attack in Firefox** - Kuskos, WhiteHat Security.
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/the-case-of-an-unconventional-csrf-attack-in-firefox/>

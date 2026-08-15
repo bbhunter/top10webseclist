@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://feross.org/fill-disk/"
     title: Introducing the HTML5 Hard Disk Filler™ API » Feross.org
+    author: Feross Aboukhadijeh
   - id: canonical
     resource: "http://web.archive.org/web/20160511220616/http://feross.org/fill-disk"
   - id: capture
     resource: "https://web.archive.org/web/20160507023636/http://feross.org/fill-disk/"
 also_at: []
-authors: []
+authors:
+  - Feross Aboukhadijeh
 canonical_url: "http://web.archive.org/web/20160511220616/http://feross.org/fill-disk"
 cited_by:
   - "2013.md:14"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Introducing the HTML5 Hard Disk Filler™ API » Feross.org
 
-**Introducing the HTML5 Hard Disk Filler™ API » Feross.org** - Author not stated, feross.org.
+**Introducing the HTML5 Hard Disk Filler™ API » Feross.org** - Feross Aboukhadijeh, feross.org.
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://feross.org/fill-disk/>

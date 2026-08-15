@@ -6,18 +6,24 @@ tags: [article, webseclist-reference, en, isg-rhul-ac-uk]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:38+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/"
     title: On the Security of RC4 in TLS
+    author: Nadhem AlFardan, Dan Bernstein, Kenny Paterson, Bertram Poettering, Jacob Schuldt
   - id: canonical
     resource: "http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls"
   - id: capture
     resource: "https://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/"
 also_at: []
-authors: []
+authors:
+  - Nadhem AlFardan
+  - Dan Bernstein
+  - Kenny Paterson
+  - Bertram Poettering
+  - Jacob Schuldt
 canonical_url: "http://web.archive.org/web/20160520151330/http://www.isg.rhul.ac.uk/tls"
 cited_by:
   - "2013.md:9"
@@ -45,7 +51,7 @@ translation_of: ""
 
 # On the Security of RC4 in TLS
 
-**On the Security of RC4 in TLS** - Author not stated, isg.rhul.ac.uk.
+**On the Security of RC4 in TLS** - Nadhem AlFardan, Dan Bernstein, Kenny Paterson, Bertram Poettering, Jacob Schuldt, isg.rhul.ac.uk.
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/>

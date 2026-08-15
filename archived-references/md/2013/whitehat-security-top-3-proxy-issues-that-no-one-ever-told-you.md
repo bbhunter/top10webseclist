@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/top-3-proxy-issues-that-no-one-ever-told-you/"
     title: Top 3 Proxy Issues That No One Ever Told You
+    author: Robert Hansen
   - id: canonical
     resource: "http://web.archive.org/web/20160527193519/https://www.whitehatsec.com/blog/top-3-proxy-issues-that-no-one-ever-told-you/"
   - id: capture
     resource: "https://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/top-3-proxy-issues-that-no-one-ever-told-you/"
 also_at: []
-authors: []
+authors:
+  - Robert Hansen
 canonical_url: "http://web.archive.org/web/20160527193519/https://www.whitehatsec.com/blog/top-3-proxy-issues-that-no-one-ever-told-you/"
 cited_by:
   - "2013.md:18"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Top 3 Proxy Issues That No One Ever Told You
 
-**Top 3 Proxy Issues That No One Ever Told You** - Author not stated, WhiteHat Security.
+**Top 3 Proxy Issues That No One Ever Told You** - Robert Hansen, WhiteHat Security.
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/top-3-proxy-issues-that-no-one-ever-told-you/>

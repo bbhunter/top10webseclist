@@ -6,13 +6,13 @@ tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:02:59+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-10
 sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://threatpost.com/father-daughter-hacking-team-finds-valuable-facebook-bug/102877"
     title: Father-Daughter Hacking Team Finds Valuable Facebook Bug
-    author: @dennisf
+    author: Dennis Fisher
     last_modified: 2013-11-08
   - id: canonical
     resource: "http://web.archive.org/web/20160608162853/https://threatpost.com/father-daughter-hacking-team-finds-valuable-facebook-bug/102877/"
@@ -20,7 +20,7 @@ sources:
     resource: "https://web.archive.org/web/20160507023636/http://threatpost.com/father-daughter-hacking-team-finds-valuable-facebook-bug/102877"
 also_at: []
 authors:
-  - @dennisf
+  - Dennis Fisher
 canonical_url: "http://web.archive.org/web/20160608162853/https://threatpost.com/father-daughter-hacking-team-finds-valuable-facebook-bug/102877/"
 cited_by:
   - "2013.md:36"
@@ -48,7 +48,7 @@ translation_of: ""
 
 # Father-Daughter Hacking Team Finds Valuable Facebook Bug
 
-**Father-Daughter Hacking Team Finds Valuable Facebook Bug** - @dennisf, Threatpost | The first stop for security news.
+**Father-Daughter Hacking Team Finds Valuable Facebook Bug** - Dennis Fisher, Threatpost | The first stop for security news.
 
 - Published: 2013-11-08
 - Original: <http://web.archive.org/web/20160507023636/http://threatpost.com/father-daughter-hacking-team-finds-valuable-facebook-bug/102877>
@@ -98,94 +98,3 @@ Renee, who hasn’t declared a major yet but is leaning toward political science
 So has her foray into hacking sold her on following her dad’s path?
 
 “For now I think it’s a one and done type thing because it’s such a frustrating process. In some ways I feel like I got lucky to find that,” she said.
-
- ![](http://web.archive.org/web/20160608162853im_/https://trtpost-wpengine.netdna-ssl.com/wp-content/uploads/avatars/12/1368562026-bpfull-68x68.jpg)
-
-## About Dennis Fisher
-
-Dennis Fisher is a journalist with more than 13 years of experience covering information security.
-
- [ View all posts by Dennis Fisher ](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-### Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160608162853/https://threatpost.com/author/dennisfisher/)
-
-> [](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/739901968425050113</blockquote></div> 				</div>
-					</footer>
-	</article>
-<div class=)
-
-Categories: [Vulnerabilities](http://web.archive.org/web/20160608162853/https://threatpost.com/category/vulnerabilities/), [Web Security](http://web.archive.org/web/20160608162853/https://threatpost.com/category/web-security/)   ](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/739902210105036801</blockquote></div> <h3 class=)
-
- ](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/739918857943539712</blockquote></div> <h3 class=)
-
-   ](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740172154042494976</blockquote></div> <h3 class=)
-
- ](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740176371322851329</blockquote></div> <h3 class=)
-
-   ](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740178178572988416</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740181111700107264</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740181299307089920</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740182163124015104</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740244858275778560</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740245815831171073</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740246093687103488</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740252572724961281</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740260612060663809</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740261559650357248</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740262390911111168</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740264086026518528</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740326347613048832</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740517626078724096</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160608162853/https://twitter.com/dennisf/status/740528081904009217</blockquote></div> <h3 class=)

@@ -12,7 +12,7 @@ sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://threatpost.com/breach-compression-attack-steals-https-secrets-in-under-30-seconds/101579"
     title: BREACH Compression Attack Steals HTTPS Secrets in Under 30 Seconds
-    author: @mike_mimoso
+    author: Michael Mimoso
     last_modified: 2013-08-05
   - id: canonical
     resource: "http://web.archive.org/web/20160521055039/https://threatpost.com/breach-compression-attack-steals-https-secrets-in-under-30-seconds/101579/"
@@ -20,7 +20,7 @@ sources:
     resource: "https://web.archive.org/web/20160507023636/http://threatpost.com/breach-compression-attack-steals-https-secrets-in-under-30-seconds/101579"
 also_at: []
 authors:
-  - @mike_mimoso
+  - Michael Mimoso
 canonical_url: "http://web.archive.org/web/20160521055039/https://threatpost.com/breach-compression-attack-steals-https-secrets-in-under-30-seconds/101579/"
 cited_by:
   - "2013.md:6"
@@ -48,7 +48,7 @@ translation_of: ""
 
 # BREACH Compression Attack Steals HTTPS Secrets in Under 30 Seconds
 
-**BREACH Compression Attack Steals HTTPS Secrets in Under 30 Seconds** - @mike_mimoso, Threatpost | The first stop for security news.
+**BREACH Compression Attack Steals HTTPS Secrets in Under 30 Seconds** - Michael Mimoso, Threatpost | The first stop for security news.
 
 - Published: 2013-08-05
 - Original: <http://web.archive.org/web/20160507023636/http://threatpost.com/breach-compression-attack-steals-https-secrets-in-under-30-seconds/101579>
@@ -90,5 +90,3 @@ Prado said the attack works on any version of TLS or SSL, and requires the attac
 During their demo, the researchers showed exactly that. They were able to steal the CSRF token from the HTTP response body and via the BREACH attack, begin guessing characters. With each correct guess of the secret, the response is compressed further, indicating to the attacker that they are getting closer.
 
 “The upshot is that fewer bytes go over the wire when the guess is correct. This provides an oracle that an attacker can exploit to recover the first character of [the token],” they said. “Then, the attacker proceeds in the same manner to recover [the token] byte-by-byte.” Within 30 seconds during their demo, they had the 30-character encrypted token deciphered and could do so with 95 percent accuracy, they said.
-
-Categories: [Cryptography](http://web.archive.org/web/20160521055039/https://threatpost.com/category/cryptography/)

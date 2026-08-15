@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/"
     title: Tor Hidden-Service Passive De-Cloaking
+    author: Robert Hansen
   - id: canonical
     resource: "http://web.archive.org/web/20160521212845/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/"
   - id: capture
     resource: "https://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/"
 also_at: []
-authors: []
+authors:
+  - Robert Hansen
 canonical_url: "http://web.archive.org/web/20160521212845/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/"
 cited_by:
   - "2013.md:13"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Tor Hidden-Service Passive De-Cloaking
 
-**Tor Hidden-Service Passive De-Cloaking** - Author not stated, WhiteHat Security.
+**Tor Hidden-Service Passive De-Cloaking** - Robert Hansen, WhiteHat Security.
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/>

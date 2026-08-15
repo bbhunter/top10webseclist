@@ -12,13 +12,13 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20131024113504/http://yoast.com/autocomplete-security/"
     title: Why you should not use autocomplete • Yoast
-    author: @yoast
+    author: Joost de Valk
     last_modified: 2013-10-23
   - id: capture
     resource: "https://web.archive.org/web/20131024113504/http://yoast.com/autocomplete-security/"
 also_at: []
 authors:
-  - @yoast
+  - Joost de Valk
 canonical_url: ""
 cited_by:
   - "2013.md:21"
@@ -46,7 +46,7 @@ translation_of: ""
 
 # Why you should not use autocomplete • Yoast
 
-**Why you should not use autocomplete • Yoast** - @yoast, Yoast.
+**Why you should not use autocomplete • Yoast** - Joost de Valk, Yoast.
 
 - Published: 2013-10-23
 - Original: <https://web.archive.org/web/20131024113504/http://yoast.com/autocomplete-security/>
@@ -75,9 +75,3 @@ So: turn off autocomplete until your browser has better controls on *what* gets 
 In Chrome, go to your Settings, click Advanced, then make sure the top box here (that is checked in the screenshot) is NOT checked:
 
 ![disable-autocomplete](https://web.archive.org/web/20131024113504im_/http://cdn.yoast.com/wp-content/uploads/2013/10/disable-autocomplete-535x114.png)
-
-#### Yoast.com runs on the Genesis Framework
-
-[![Genesis theme framework](https://web.archive.org/web/20131024113504im_/http://cdn.yoast.com/wp-content/themes/yoast-v4/images/genesis-logo.png)](https://web.archive.org/web/20131024113504/http://yoast.com/out/studiopress/)The [Genesis Framework](https://web.archive.org/web/20131024113504/http://yoast.com/out/studiopress/) empowers you to quickly and easily build incredible websites with WordPress. Whether you're a novice or advanced developer, Genesis provides you with the secure and search-engine-optimized foundation that takes WordPress to places you never thought it could go.
-
-Read our [Genesis review](https://web.archive.org/web/20131024113504/http://yoast.com/review/genesis/) or [get Genesis now!](https://web.archive.org/web/20131024113504/http://yoast.com/out/studiopress/)

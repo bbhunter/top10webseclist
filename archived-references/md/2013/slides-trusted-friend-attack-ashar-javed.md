@@ -989,7 +989,3 @@ Out of 50 surveyed social networks, we found
 #### trusted friend attack:
 
 By Ashar Javed
-
-## More from [Ashar Javed](http://slid.es/mscasharjaved)
-
--

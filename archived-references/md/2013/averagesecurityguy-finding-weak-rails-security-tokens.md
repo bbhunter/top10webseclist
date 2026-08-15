@@ -12,14 +12,12 @@ sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://averagesecurityguy.info/2013/11/08/finding-weak-rails-security-tokens/"
     title: Finding Weak Rails Security Tokens
-    author: @averagesecguy
   - id: canonical
     resource: "http://averagesecurityguy.info/2013/11/08/finding-weak-rails-security-tokens/"
   - id: capture
     resource: "https://web.archive.org/web/20131124084456/http://averagesecurityguy.info/2013/11/08/finding-weak-rails-security-tokens/"
 also_at: []
-authors:
-  - @averagesecguy
+authors: []
 canonical_url: "http://averagesecurityguy.info/2013/11/08/finding-weak-rails-security-tokens/"
 cited_by:
   - "2013.md:34"
@@ -47,7 +45,7 @@ translation_of: ""
 
 # Finding Weak Rails Security Tokens
 
-**Finding Weak Rails Security Tokens** - @averagesecguy, AverageSecurityGuy.
+**Finding Weak Rails Security Tokens** - Author not stated, AverageSecurityGuy.
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/http://averagesecurityguy.info/2013/11/08/finding-weak-rails-security-tokens/>
@@ -95,7 +93,3 @@ Although I haven’t tried it yet, I believe that if you ran the same test on an
 If you do find a secret token during your testing, Metasploit will get you [remote code execution](https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/http/rails_secret_deserialization.rb).
 
 Enjoy.
-
- [About these ads](http://en.wordpress.com/about-these-ads/)
-
- This entry was posted in [Uncategorized](http://averagesecurityguy.info/category/uncategorized/). Bookmark the [permalink](http://averagesecurityguy.info/2013/11/08/finding-weak-rails-security-tokens/).

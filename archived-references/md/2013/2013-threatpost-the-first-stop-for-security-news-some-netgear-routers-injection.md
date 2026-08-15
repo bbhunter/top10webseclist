@@ -12,7 +12,7 @@ sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/http://threatpost.com/some-netgear-routers-open-to-remote-authentication-bypass-command-injection/102689"
     title: Some Netgear Routers Open to Remote Authentication Bypass, Command Injection
-    author: @dennisf
+    author: Dennis Fisher
     last_modified: 2013-10-25
   - id: canonical
     resource: "http://web.archive.org/web/20160510190954/https://threatpost.com/some-netgear-routers-open-to-remote-authentication-bypass-command-injection/102689/"
@@ -20,7 +20,7 @@ sources:
     resource: "https://web.archive.org/web/20160507023636/http://threatpost.com/some-netgear-routers-open-to-remote-authentication-bypass-command-injection/102689"
 also_at: []
 authors:
-  - @dennisf
+  - Dennis Fisher
 canonical_url: "http://web.archive.org/web/20160510190954/https://threatpost.com/some-netgear-routers-open-to-remote-authentication-bypass-command-injection/102689/"
 cited_by:
   - "2013.md:31"
@@ -48,7 +48,7 @@ translation_of: ""
 
 # Some Netgear Routers Open to Remote Authentication Bypass, Command Injection
 
-**Some Netgear Routers Open to Remote Authentication Bypass, Command Injection** - @dennisf, Threatpost | The first stop for security news.
+**Some Netgear Routers Open to Remote Authentication Bypass, Command Injection** - Dennis Fisher, Threatpost | The first stop for security news.
 
 - Published: 2013-10-25
 - Original: <http://web.archive.org/web/20160507023636/http://threatpost.com/some-netgear-routers-open-to-remote-authentication-bypass-command-injection/102689>
@@ -84,94 +84,3 @@ The [exploit](http://web.archive.org/web/20160510190954/https://github.com/zcutl
 “Remote administration is the primary attack surface we look at and find bugs in for SOHO routers. Also ensure that WPA2 encryption is enabled, and that untrusted devices aren’t allowed to connect to the LAN, either via wired or wireless,” Cutlip said via email.
 
 Cutlip [mentioned](http://web.archive.org/web/20160510190954/https://twitter.com/zcutlip/status/393752865187328000) on Twitter that the vulnerabilities he found were also discovered independently by another researcher, Craig Young of Tripwire, who also found a [serious flaw in Netgear’s ReadyNAS](http://web.archive.org/web/20160510190954/http://threatpost.com/netgear-readynas-storage-vulnerable-to-serious-command-injection-flaw/102657) product.
-
- ![](http://web.archive.org/web/20160510190954im_/https://trtpost-wpengine.netdna-ssl.com/wp-content/uploads/avatars/12/1368562026-bpfull-68x68.jpg)
-
-## About Dennis Fisher
-
-Dennis Fisher is a journalist with more than 13 years of experience covering information security.
-
- [ View all posts by Dennis Fisher ](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-### Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](http://web.archive.org/web/20160510190954/https://threatpost.com/author/dennisfisher/)
-
-> [](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/729751407407017985</blockquote></div> 				</div>
-					</footer>
-	</article>
-<div class=)
-
-Categories: [Vulnerabilities](http://web.archive.org/web/20160510190954/https://threatpost.com/category/vulnerabilities/), [Web Security](http://web.archive.org/web/20160510190954/https://threatpost.com/category/web-security/)   ](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/729790379134996480</blockquote></div> <h3 class=)
-
- ](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/729794450470408192</blockquote></div> <h3 class=)
-
-   ](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730003361538445312</blockquote></div> <h3 class=)
-
- ](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730008795573800960</blockquote></div> <h3 class=)
-
-   ](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730022746743312385</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730030484592463873</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730034921595604992</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730070446788497408</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730071820385325056</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730073543237615616</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730083416285253632</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730084440559456256</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730084544339128320</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730085662368632832</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730092421736865792</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730094668726341632</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730099100700446721</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730102365903302656</blockquote></div> <h3 class=)
-
-](http://web.archive.org/web/20160510190954/https://twitter.com/dennisf/status/730105466815057920</blockquote></div> <h3 class=)

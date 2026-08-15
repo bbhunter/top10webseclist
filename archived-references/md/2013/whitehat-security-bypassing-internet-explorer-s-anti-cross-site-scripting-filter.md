@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/internet-explorer-xss-filter"
     title: "Bypassing Internet Explorer's Anti-Cross Site Scripting Filter"
+    author: Carlos Munoz
   - id: canonical
     resource: "http://web.archive.org/web/20160809013531/https://www.whitehatsec.com/blog/internet-explorer-xss-filter/"
   - id: capture
     resource: "https://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/internet-explorer-xss-filter"
 also_at: []
-authors: []
+authors:
+  - Carlos Munoz
 canonical_url: "http://web.archive.org/web/20160809013531/https://www.whitehatsec.com/blog/internet-explorer-xss-filter/"
 cited_by:
   - "2013.md:30"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Bypassing Internet Explorer's Anti-Cross Site Scripting Filter
 
-**Bypassing Internet Explorer's Anti-Cross Site Scripting Filter** - Author not stated, WhiteHat Security.
+**Bypassing Internet Explorer's Anti-Cross Site Scripting Filter** - Carlos Munoz, WhiteHat Security.
 
 - Published: date not stated
 - Original: <http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/internet-explorer-xss-filter>
@@ -173,5 +175,3 @@ Post Script:
 The author has adapted this post from his original work, which can be found here:
 
 [http://rtwaysea.net/blog/blog-2013-10-18-long.html](http://web.archive.org/web/20160809013531/http://rtwaysea.net/blog/blog-2013-10-18-long.html)
-
-   Tags: [Vulnerabilities](http://web.archive.org/web/20160809013531/https://www.whitehatsec.com/blog-tag/vulnerabilities/), [XSS](http://web.archive.org/web/20160809013531/https://www.whitehatsec.com/blog-tag/xss/)

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20130323005639/http://blog.whitehatsec.com/gravatar-email-enumeration-in-javascript/"
     title: Gravatar Email Enumeration in JavaScript
+    author: Robert Hansen
   - id: capture
     resource: "https://web.archive.org/web/20130323005639/http://blog.whitehatsec.com/gravatar-email-enumeration-in-javascript/"
 also_at: []
-authors: []
+authors:
+  - Robert Hansen
 canonical_url: ""
 cited_by:
   - "2013.md:19"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Gravatar Email Enumeration in JavaScript
 
-**Gravatar Email Enumeration in JavaScript** - Author not stated, blog.whitehatsec.com.
+**Gravatar Email Enumeration in JavaScript** - Robert Hansen, blog.whitehatsec.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20130323005639/http://blog.whitehatsec.com/gravatar-email-enumeration-in-javascript/>

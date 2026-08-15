@@ -12,11 +12,13 @@ sources:
   - id: original
     resource: "https://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html"
     title: Practical HTTP Host header attacks
+    author: James Kettle
 also_at: []
-authors: []
+authors:
+  - James Kettle
 canonical_url: ""
 cited_by:
-  - "2013.md:46"
+  - "2013.md:47"
 commit: ""
 content_sha256: c8a1818ec447bb3cc3a0aba3a6026692bb3de13f2688d50e160de39e8007c80d
 depth: full
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Practical HTTP Host header attacks
 
-**Practical HTTP Host header attacks** - Author not stated, skeletonscribe.net.
+**Practical HTTP Host header attacks** - James Kettle, skeletonscribe.net.
 
 - Published: date not stated
 - Original: <https://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html>

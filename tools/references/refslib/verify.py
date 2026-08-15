@@ -35,7 +35,7 @@ PATH_FIELDS = ("cited_by", "file", "files", "material_paths")
 # would have deleted `review-gaps.md` as an orphan the moment it was written.
 GENERATED_PAGES = ("readme.md", "index.md", "document-gaps.md", "unresolved.md",
                    "excluded.md", "store-gaps.md", "log.md", "curation-notes.md",
-                   "review-gaps.md")
+                   "review-gaps.md", "tag-vocabulary.md")
 
 
 class Finding(object):
