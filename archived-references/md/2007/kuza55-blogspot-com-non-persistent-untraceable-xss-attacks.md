@@ -3,7 +3,7 @@ type: Article
 title: (Non-Persistent) Untraceable XSS Attacks
 description: "Setting document.domain to the bare TLD ('com') lets a reflected XSS payload hold no attack logic at all: the injected script only calls back into the attacker's frame, and a meta refresh strips the Referer. Server logs then show nothing but a .com origin. Rewritten post retains the earlier 'com.' variant."
 resource: "https://kuza55.blogspot.com/2007/03/non-persistent-untraceable-xss-attacks.html"
-tags: [article, webseclist-reference, kuza55-blogspot-com, xss, same-origin-policy, sop-bypass, iframe, dom, javascript, novel-technique, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, kuza55-blogspot-com, xss, same-origin-policy, sop-bypass, iframe, dom, javascript, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:31+00:00"

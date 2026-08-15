@@ -3,7 +3,7 @@ type: Article
 title: Not So Random Numbers. Take Two
 description: "Positive Technologies turn Argyros and Kiayias's PHP randomness research into a working attack on PHPSESSID. The session id is an MD5 of client IP, timestamp, microseconds and php_combined_lcg output, and two tricks cut the search space: adversarial time synchronisation pins the server clock from the Date header, and request twins minimise the gap between two requests."
 resource: "https://web.archive.org/web/20170903113359/http://blog.ptsecurity.com/2012/08/not-so-random-numbers-take-two.html"
-tags: [article, webseclist-reference, blog-ptsecurity-com, php, auth-bypass, info-leak, tooling, timing-attack, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, blog-ptsecurity-com, php, auth-bypass, info-leak, tooling, timing-attack, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:51+00:00"

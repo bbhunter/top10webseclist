@@ -3,7 +3,7 @@ type: Whitepaper
 title: Poodle
 description: "POODLE exploits SSL 3.0's unauthenticated CBC padding: an attacker who forces browsers down the version fallback dance can replace a ciphertext block and read the server's accept-or-reject answer as a padding oracle. About 256 requests per byte recover secure cookies, and the advisory proposes TLS_FALLBACK_SCSV to stop the downgrade."
 resource: "https://web.archive.org/web/20160403035045/https://www.openssl.org/~bodo/ssl-poodle.pdf"
-tags: [whitepaper, webseclist-reference, tls, side-channel, https, cookie, javascript, cve, novel-technique, mitigation, owasp-a02-2021, owasp-a07-2021]
+tags: [whitepaper, webseclist-reference, tls, side-channel, https, cookie, javascript, cve, mitigation, owasp-a02-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T15:35:27+00:00"

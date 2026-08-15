@@ -3,7 +3,7 @@ type: Whitepaper
 title: HTTPS Bicycle Attack
 description: Because stream-oriented TLS cipher suites such as GCM leak exact plaintext length, a passive eavesdropper can subtract the known, highly redundant parts of an HTTP request from the observed ciphertext size and deduce the length of a secret such as a password or cookie. The same length arithmetic narrows encrypted GPS coordinates to a map region and encrypted IPv4 addresses to a range.
 resource: "https://guidovranken.files.wordpress.com/2015/12/https-bicycle-attack.pdf"
-tags: [whitepaper, webseclist-reference, side-channel, info-leak, tls, https, http, cookie, novel-technique, mitigation, owasp-a02-2021, owasp-a07-2021]
+tags: [whitepaper, webseclist-reference, side-channel, info-leak, tls, https, http, cookie, mitigation, owasp-a02-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:30+00:00"

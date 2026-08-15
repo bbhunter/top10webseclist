@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Fashion Faux Pas: Implicit Stylistic Fingerprints for Bypassing Browsers' Anti-Fingerprinting Defenses"
 description: "StylisticFP fingerprints a browser and device using only CSS: sized iframes, media queries and element layouts reveal fonts, operating system, browser and screen properties through dimensions alone, so no JavaScript API is touched and the anti-fingerprinting defences in Tor, Brave, Firefox, Safari and privacy extensions, which hook those APIs, never see the tracking."
 resource: "https://www.cs.uic.edu/~polakis/papers/lin-sp23.pdf"
-tags: [whitepaper, webseclist-reference, css, iframe, side-channel, info-leak, browser-extension, novel-technique, measurement-study]
+tags: [whitepaper, webseclist-reference, css, iframe, side-channel, info-leak, browser-extension, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T20:32:12+00:00"

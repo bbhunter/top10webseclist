@@ -69,8 +69,25 @@ OWASP_2021 = [
 # Spellings that must never reach a published file, and what they become.
 # Case is handled by `normalise` and needs no entry here; this is for genuine
 # synonyms, where two different words name one idea.
+#
+# AN ALIAS TO THE EMPTY STRING RETIRES A TAG. It resolves to nothing and is
+# dropped, so a word that was decided against cannot come back by being typed
+# again - which matters most for the ones that read as reasonable:
+#
+#   novel-technique  was on 743 documents, 45% of the archive. This is a list
+#                    OF novel techniques, so the tag restated the premise and
+#                    narrowed no search.
+#   server           three unrelated documents - a botnet scan, a Rails YAML
+#                    bug, an XML retrieval talk - left over from folding the
+#                    capitalised `Server`.
+#   malicious-server one document, and "the attacker controls a server"
+#                    describes a large share of the archive.
 SEED_ALIASES = {
     "wasm": "webassembly",
+    "passkeys": "webauthn",
+    "novel-technique": "",
+    "server": "",
+    "malicious-server": "",
 }
 
 _ALLOWED = re.compile(r"[^a-z0-9?-]+")
@@ -171,6 +188,12 @@ def resolve(tag, vocabulary):
         seen.add(current)
         current = normalise(aliases[current])
     return current
+
+
+def retired(vocabulary):
+    """The tags an alias sends to nothing - decided against, never published."""
+    return {tag for tag, target in ((vocabulary or {}).get("aliases") or {}).items()
+            if not normalise(target)}
 
 
 def owasp_categories(tags, vocabulary):

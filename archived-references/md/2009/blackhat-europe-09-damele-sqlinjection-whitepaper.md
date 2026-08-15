@@ -3,7 +3,7 @@ type: Whitepaper
 title: Blackhat europe 09 Damele SQLInjection whitepaper
 description: "Shows how a single SQL injection can be escalated to full control of the database server's operating system. Covers file read/write on MySQL, PostgreSQL and MS SQL, UDF injection via uploaded shared libraries, xp_cmdshell, out-of-band Metasploit payload stagers, SMB relay, the sp_replwritetovarbin heap overflow and DEP bypass. All techniques implemented in sqlmap."
 resource: "https://www.blackhat.com/presentations/bh-europe-09/Guimaraes/Blackhat-europe-09-Damele-SQLInjection-whitepaper.pdf"
-tags: [whitepaper, webseclist-reference, sqli, rce, database, mysql, postgres, mssql, privilege-escalation, tooling, novel-technique, owasp-a01-2021, owasp-a03-2021]
+tags: [whitepaper, webseclist-reference, sqli, rce, database, mysql, postgres, mssql, privilege-escalation, tooling, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:35:49+00:00"

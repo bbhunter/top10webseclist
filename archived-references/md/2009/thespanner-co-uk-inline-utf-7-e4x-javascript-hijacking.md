@@ -3,7 +3,7 @@ type: Article
 title: Inline UTF-7 E4X javascript hijacking
 description: "Shows cross-domain theft of XML data that is never assigned to a JavaScript variable. Including the victim's XML endpoint as a script with charset=UTF-7 lets an attacker-planted UTF-7 field decode into markup that closes the surrounding tags and opens a new E4X block assigned to a variable, capturing the data on window.onload."
 resource: "http://www.thespanner.co.uk/2009/02/24/inline-utf-7-e4x-javascript-hijacking/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, charset, encoding, javascript, sop-bypass, info-leak, unicode, novel-technique, owasp-a01-2021, owasp-a02-2021]
+tags: [article, webseclist-reference, en, thespanner-co-uk, charset, encoding, javascript, sop-bypass, info-leak, unicode, owasp-a01-2021, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:55+00:00"

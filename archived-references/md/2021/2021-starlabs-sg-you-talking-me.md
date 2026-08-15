@@ -3,7 +3,7 @@ type: Article
 title: You Talking To Me?
 description: "WebDriver servers such as chromedriver and geckodriver expose local control ports to the browser they automate. DNS rebinding reaches chromedriver's REST API to start a session with an attacker-chosen binary, and a Firefox bug that split large POST bodies across two TCP connections delivered raw Marionette commands, giving file read and code execution."
 resource: "https://starlabs.sg/blog/2021/04/you-talking-to-me/"
-tags: [article, webseclist-reference, starlabs-sg, dns-rebinding, rce, lfi, http, cve, novel-technique, owasp-a01-2021, owasp-a03-2021, owasp-a10-2021]
+tags: [article, webseclist-reference, starlabs-sg, dns-rebinding, rce, lfi, http, cve, owasp-a01-2021, owasp-a03-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:09+00:00"

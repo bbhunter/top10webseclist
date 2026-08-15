@@ -3,7 +3,7 @@ type: Article
 title: "Smashing the state machine: the true potential of web race conditions"
 description: "Web race conditions reach far beyond limit overrun: every HTTP request passes through hidden sub-states, so two requests landing in the same millisecond can force illegal state transitions, such as confirming an email address you do not own and hijacking Gitlab invitations. The single-packet attack completes 20 to 30 HTTP/2 requests in one TCP packet, removing network jitter."
 resource: "https://portswigger.net/research/smashing-the-state-machine"
-tags: [article, webseclist-reference, portswigger-research, race-condition, toctou, http2, auth-bypass, privilege-escalation, rails, novel-technique, tooling, cve, owasp-a01-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, portswigger-research, race-condition, toctou, http2, auth-bypass, privilege-escalation, rails, tooling, cve, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:10+00:00"

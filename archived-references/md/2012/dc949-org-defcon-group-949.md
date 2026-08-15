@@ -3,7 +3,7 @@ type: Article
 title: Defcon Group 949
 description: "Stiltwalker defeats audio CAPTCHAs with machine learning: an amplitude splitter cuts a challenge into single utterances, then a neural network plus MD5 and pHash lookup tables solve them. Successive rounds scored 99.1% and 60.95% against reCAPTCHA, and later versions reached 56-99% against Nucaptcha, PayPal, SecurImage, Slashdot and Davids Summer Communication."
 resource: "https://web.archive.org/web/20170903113359/http://www.dc949.org/projects/stiltwalker/"
-tags: [article, webseclist-reference, en, dc949-org, auth-bypass, tooling, filter-bypass, novel-technique, case-study, owasp-a01-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, dc949-org, auth-bypass, tooling, filter-bypass, case-study, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:08:47+00:00"

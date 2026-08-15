@@ -3,7 +3,7 @@ type: Slides
 title: Expanding the control over the operating system from the database
 description: "The SOURCE Barcelona 2009 deck shows how database access becomes operating-system control: file read/write and command execution across MSSQL, MySQL and PostgreSQL, then a sys_bineval() UDF that runs a Metasploit payload inside DBMS memory, DEP/NX-safe and SEH-wrapped. It closes with exploitation of the MS09-004 sp_replwritetovarbin heap overflow, restoring ESP/EBP from the TEB to avoid a crash."
 resource: "http://www.slideshare.net/inquis/expanding-the-control-over-the-operating-system-from-the-database"
-tags: [slides, webseclist-reference, slideshare, sqli, database, mssql, mysql, postgres, rce, privilege-escalation, novel-technique, tooling, owasp-a01-2021, owasp-a03-2021]
+tags: [slides, webseclist-reference, slideshare, sqli, database, mssql, mysql, postgres, rce, privilege-escalation, tooling, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:06+00:00"

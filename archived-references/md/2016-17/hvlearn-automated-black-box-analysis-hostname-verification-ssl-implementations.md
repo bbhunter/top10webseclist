@@ -3,7 +3,7 @@ type: Whitepaper
 title: "HVLearn: Automated Black-box Analysis of Hostname Verification in SSL/TLS Implementations"
 description: HVLearn learns a finite automaton of exactly which hostnames each SSL/TLS library accepts for a given certificate common name, then compares those models across implementations and against RFC-derived rules. The disagreements expose eight specification violations in OpenSSL, GnuTLS, MatrixSSL, JSSE and others, several letting a man-in-the-middle present a certificate the client wrongly accepts.
 resource: "http://www.cs.columbia.edu/~suman/docs/hvlearn.pdf"
-tags: [whitepaper, webseclist-reference, parser-differential, tls, https, auth-bypass, formal-analysis, dynamic-analysis, tooling, novel-technique, owasp-a01-2021, owasp-a02-2021]
+tags: [whitepaper, webseclist-reference, parser-differential, tls, https, auth-bypass, formal-analysis, dynamic-analysis, tooling, owasp-a01-2021, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:35:01+00:00"

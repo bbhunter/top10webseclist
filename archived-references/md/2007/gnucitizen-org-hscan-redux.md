@@ -3,7 +3,7 @@ type: Article
 title: HScan Redux
 description: "A short disclosure of a Firefox browser-history leak distinct from Grossman's CSS visited-link hack: it reveals which URLs were visited during the current browser session. pdp notes it can profile browsing habits, detect whether the victim is logged into a router management interface, and fingerprint router make and version, and links a proof of concept."
 resource: "https://www.gnucitizen.org/projects/hscan-redux/"
-tags: [article, webseclist-reference, gnucitizen-org, info-leak, xsleak, side-channel, deanonymization, browser-fingerprinting, javascript, novel-technique]
+tags: [article, webseclist-reference, gnucitizen-org, info-leak, xsleak, side-channel, deanonymization, browser-fingerprinting, javascript]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T12:42:40+00:00"

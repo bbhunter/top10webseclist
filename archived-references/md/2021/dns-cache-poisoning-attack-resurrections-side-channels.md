@@ -3,7 +3,7 @@ type: Whitepaper
 title: "DNS Cache Poisoning Attack: Resurrections with Side Channels"
 description: "Novel side channels in the Linux kernel let an off-path attacker use ICMP fragment-needed and redirect messages to scan a DNS resolver's UDP ephemeral port, because the shared next-hop exception cache leaks which port is open. Derandomising the port defeats the main defence against DNS cache poisoning, letting forged records be injected into resolvers such as BIND, Unbound and dnsmasq."
 resource: "https://www.cs.ucr.edu/~zhiyunq/pub/ccs21_dns_poisoning.pdf"
-tags: [whitepaper, webseclist-reference, cache-poisoning, side-channel, dns, info-leak, novel-technique, measurement-study, large-scale-scan, mitigation]
+tags: [whitepaper, webseclist-reference, cache-poisoning, side-channel, dns, info-leak, measurement-study, large-scale-scan, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:35:34+00:00"

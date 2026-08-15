@@ -3,7 +3,7 @@ type: Article
 title: "Styled to Steal: The Overlooked Attack Surface in Email Clients"
 description: "Injecting standard CSS into an encrypted email lets an attacker read its decrypted text: attacker-crafted font ligatures give the plaintext a content-dependent width, container queries measure that width, and each width loads a distinct remote image. Plaintext comes out character by character with no JavaScript, in Thunderbird and KMail."
 resource: "https://doi.org/10.1145/3719027.3765189"
-tags: [article, webseclist-reference, css-injection, info-leak, sanitizer-bypass, side-channel, css, email, novel-technique, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, css-injection, info-leak, sanitizer-bypass, side-channel, css, email, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:10:30+00:00"

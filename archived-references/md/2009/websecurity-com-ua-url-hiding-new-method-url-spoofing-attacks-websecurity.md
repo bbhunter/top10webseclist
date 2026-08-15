@@ -3,7 +3,7 @@ type: Article
 title: URL Hiding - new method of URL Spoofing attacks - Websecurity
 description: "Some sites are listed in Google results with no URL shown at all, spotted on a domain whose name begins with an underscore. Chained with the author's earlier URL-spoofing tricks, this hides a long or suspicious address from the user twice over - absent from the result page, then misread in the address bar - which helps phishing and malware delivery."
 resource: "http://websecurity.com.ua/3383/"
-tags: [article, webseclist-reference, websecurity-com-ua, url-parsing, novel-technique, case-study, url-spoofing, phishing, owasp-a04-2021]
+tags: [article, webseclist-reference, websecurity-com-ua, url-parsing, case-study, url-spoofing, phishing, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:06:20+00:00"

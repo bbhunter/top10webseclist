@@ -3,7 +3,7 @@ type: Article
 title: "Exploring the DOMPurify library: Bypasses and Fixes (1/2)"
 description: "Chains HTML parser quirks, deep-nesting node flattening, insertion-mode popping, form and table reordering, and DOM clobbering of the sanitiser's own depth counter, into full mutation-XSS bypasses of three DOMPurify releases in default configuration, plus a payload that survives triple HTML parsing so it still fires when markup is parsed before sanitisation."
 resource: "https://mizu.re/post/exploring-the-dompurify-library-bypasses-and-fixes"
-tags: [article, webseclist-reference, en, mizu-re, mutation-xss, sanitizer-bypass, dom-clobbering, parser-differential, xss, dom, javascript, fuzzing, novel-technique, owasp-a03-2021, owasp-a05-2021, owasp-a08-2021]
+tags: [article, webseclist-reference, en, mizu-re, mutation-xss, sanitizer-bypass, dom-clobbering, parser-differential, xss, dom, javascript, fuzzing, owasp-a03-2021, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:33:07+00:00"

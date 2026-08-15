@@ -3,7 +3,7 @@ type: Article
 title: Session Fixation Via DNS Rebinding ha.ckers.org web application security lab
 description: "An attacker logs into goodguy.com, replays his own cookies from badguy.com, and serves badguy.com DNS with a one-second TTL before dropping its firewall. The browser rebinds badguy.com to goodguy.com's address, and because the site ignores the Host header the attacker's cookies apply, placing the victim inside the attacker's account. Respecting the Host header is the proposed defence."
 resource: "http://ha.ckers.org/blog/20091116/session-fixation-via-dns-rebinding/"
-tags: [article, webseclist-reference, ha-ckers-org, dns-rebinding, dns, session-fixation, cookie, http, same-origin-policy, novel-technique, owasp-a01-2021, owasp-a07-2021, owasp-a10-2021]
+tags: [article, webseclist-reference, ha-ckers-org, dns-rebinding, dns, session-fixation, cookie, http, same-origin-policy, owasp-a01-2021, owasp-a07-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:49+00:00"

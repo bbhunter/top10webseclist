@@ -3,7 +3,7 @@ type: Article
 title: DNS Rebinding on Java Applets
 description: "Java 6 exposed the Packages object to every browser, not just those with LiveConnect, so a JavaScript-instantiated applet runs in the JavaScriptProtectionDomain tied to the calling page's host. Rebinding that host to another IP extends Kanatoko Anvil's Firefox-only 2007 DNS rebinding attack to all browsers, letting the applet open sockets to the victim's site and steal cookies."
 resource: "http://blog.mindedsecurity.com/2010/10/dns-rebinding-on-java-applets.html"
-tags: [article, webseclist-reference, blog-mindedsecurity-com, dns-rebinding, java, sop-bypass, same-origin-policy, dns, cookie, novel-technique, prior-art-extension, owasp-a01-2021, owasp-a07-2021, owasp-a10-2021]
+tags: [article, webseclist-reference, blog-mindedsecurity-com, dns-rebinding, java, sop-bypass, same-origin-policy, dns, cookie, prior-art-extension, owasp-a01-2021, owasp-a07-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:05:17+00:00"

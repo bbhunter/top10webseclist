@@ -3,7 +3,7 @@ type: Article
 title: Fooling B64_Encode(Payload) on WAFs and filters
 description: "WAFs and filters that base64-decode a parameter before pattern matching can be desynchronised from the application that decodes it later. PHP's base64_decode and a Sun Java implementation skip illegal characters, so inserting a '.' into the payload made ModSecurity 2.5.6-1 and NoScript 1.9.9.61 miss an encoded script tag that the backend still decoded and executed."
 resource: "http://blog.mindedsecurity.com/2010/04/fooling-b64encodepayload-on-wafs-and.html"
-tags: [article, webseclist-reference, blog-mindedsecurity-com, waf-bypass, filter-bypass, encoding, parser-differential, xss, php, java, novel-technique, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, blog-mindedsecurity-com, waf-bypass, filter-bypass, encoding, parser-differential, xss, php, java, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:05:11+00:00"

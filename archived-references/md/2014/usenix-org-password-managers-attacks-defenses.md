@@ -3,7 +3,7 @@ type: Article
 title: "Password Managers: Attacks and Defenses"
 description: A survey of ten browser and third-party password managers finds their autofill policies differ widely, and several fill credentials into pages a network attacker controls. From a rogue router an attacker can inject invisible login forms and iframes and sweep many stored passwords with no user interaction, and hidden autofill fields also leak credit card and personal data.
 resource: "https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/silver"
-tags: [article, webseclist-reference, usenix-org, info-leak, iframe, browser-extension, same-origin-policy, https, measurement-study, mitigation, novel-technique, owasp-a01-2021, owasp-a02-2021]
+tags: [article, webseclist-reference, usenix-org, info-leak, iframe, browser-extension, same-origin-policy, https, measurement-study, mitigation, owasp-a01-2021, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:05:45+00:00"

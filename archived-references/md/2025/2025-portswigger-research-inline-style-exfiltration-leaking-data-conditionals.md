@@ -3,7 +3,7 @@ type: Article
 title: "Inline Style Exfiltration: leaking data with chained CSS conditionals"
 description: "CSS conditional functions inside a style attribute can test an element's own attribute value, and chaining them nested picks a different background image URL per candidate value. An attacker who controls only an inline style, with no stylesheet import and no selectors, can brute-force and exfiltrate short attribute data such as user identifiers."
 resource: "https://portswigger.net/research/inline-style-exfiltration"
-tags: [article, webseclist-reference, portswigger-research, css-injection, css, info-leak, side-channel, xss, novel-technique, dom, filter-bypass, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, portswigger-research, css-injection, css, info-leak, side-channel, xss, dom, filter-bypass, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:02+00:00"

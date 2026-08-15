@@ -1,5 +1,9 @@
 {
  "aliases": {
+  "malicious-server": "",
+  "novel-technique": "",
+  "passkeys": "webauthn",
+  "server": "",
   "wasm": "webassembly"
  },
  "owasp": {
@@ -465,9 +469,6 @@
   "load-balancer": {
    "documents": 16
   },
-  "malicious-server": {
-   "documents": 1
-  },
   "mass-assignment": {
    "documents": 11
   },
@@ -504,9 +505,6 @@
   "nosqli": {
    "documents": 3
   },
-  "novel-technique": {
-   "documents": 743
-  },
   "oauth": {
    "documents": 62
   },
@@ -518,9 +516,6 @@
   },
   "parser-differential": {
    "documents": 167
-  },
-  "passkeys": {
-   "documents": 10
   },
   "path-traversal": {
    "documents": 66
@@ -611,9 +606,6 @@
   },
   "sanitizer-bypass": {
    "documents": 88
-  },
-  "server": {
-   "documents": 3
   },
   "service-worker": {
    "documents": 10
@@ -742,5 +734,5 @@
    "documents": 31
   }
  },
- "updated": "2026-08-15T21:22:43+00:00"
+ "updated": "2026-08-15T22:56:54+00:00"
 }

@@ -3,7 +3,7 @@ type: Article
 title: Random Number Security in Python
 description: "A study of Python's pseudorandom generators for web applications. Because a Python web process imports random once and keeps the Mersenne Twister state alive across requests, an attacker who can read random.random() output from a page such as Plone's error logger can recover state elements with a chosen sequence of requests and cut the entropy of a later token to about 256 options."
 resource: "https://web.archive.org/web/20170903113359/http://blog.ptsecurity.com/2012/10/random-number-security-in-python.html"
-tags: [article, webseclist-reference, blog-ptsecurity-com, python, django, side-channel, info-leak, auth-bypass, novel-technique, tooling, owasp-a01-2021]
+tags: [article, webseclist-reference, blog-ptsecurity-com, python, django, side-channel, info-leak, auth-bypass, tooling, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:06:08+00:00"

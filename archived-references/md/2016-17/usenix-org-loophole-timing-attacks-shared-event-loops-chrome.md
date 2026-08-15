@@ -3,7 +3,7 @@ type: Article
 title: "Loophole: Timing Attacks on Shared Event Loops in Chrome"
 description: Chrome shares event loops between mutually distrusting pages, so a spy page can enqueue its own events and time how long they wait to infer what another process is doing. The resulting side channel identifies the page a victim is viewing and leaks user interactions such as typing and mouse activity.
 resource: "https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/vila"
-tags: [article, webseclist-reference, en, usenix-org, side-channel, timing-attack, xsleak, javascript, info-leak, novel-technique]
+tags: [article, webseclist-reference, en, usenix-org, side-channel, timing-attack, xsleak, javascript, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:14+00:00"

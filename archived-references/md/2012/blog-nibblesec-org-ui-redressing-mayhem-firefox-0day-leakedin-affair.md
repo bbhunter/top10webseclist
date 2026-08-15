@@ -3,7 +3,7 @@ type: Article
 title: "UI Redressing Mayhem: Firefox 0day and the LeakedIn affair"
 description: "Mozilla had killed cross-domain drag and drop, so this post revives it by framing both the victim page and the attacker's dropper page as two iframes of one malicious page, a case Firefox 17.0.1 never checked. Applied to LinkedIn it drags out the csrfToken, adds an attacker email to the profile and confirms it over IMAP, yielding a full password reset."
 resource: "https://web.archive.org/web/20170903113359/http://blog.nibblesec.org/2012/12/ui-redressing-mayhem-firefox-0day-and.html"
-tags: [article, webseclist-reference, blog-nibblesec-org, ui-redress, clickjacking, csrf, iframe, sop-bypass, info-leak, novel-technique, case-study, owasp-a01-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, blog-nibblesec-org, ui-redress, clickjacking, csrf, iframe, sop-bypass, info-leak, case-study, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:05:32+00:00"

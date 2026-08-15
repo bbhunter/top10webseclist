@@ -3,7 +3,7 @@ type: Article
 title: Hunting asynchronous vulnerabilities
 description: Vulnerabilities in background threads and second-order flows produce no visible output, so ordinary scanning misses them. The write-up finds them with exploit-induced out-of-band callbacks, giving environment-independent payloads for XXE and XInclude, SQL injection across five databases, file-write tricks, shell command injection and blind XSS.
 resource: "http://blog.portswigger.net/2015/09/hunting-asynchronous-vulnerabilities.html"
-tags: [article, webseclist-reference, portswigger-research, xxe, sqli, command-injection, xss, dns, injection, tooling, detection, novel-technique, owasp-a03-2021, owasp-a09-2021]
+tags: [article, webseclist-reference, portswigger-research, xxe, sqli, command-injection, xss, dns, injection, tooling, detection, owasp-a03-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:11+00:00"

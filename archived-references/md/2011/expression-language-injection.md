@@ -3,7 +3,7 @@ type: Whitepaper
 title: Expression Language Injection
 description: Spring MVC JSP tags evaluate attacker input a second time, so user data reaching attributes such as scope or code is run as Expression Language. The paper reads server scopes and beans, bypasses HttpOnly by echoing JSESSIONID, and adds blind inference using EL ternary operators plus cross-domain script status codes to steal a session character by character.
 resource: "https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Expression%20Language%20Injection.pdf"
-tags: [whitepaper, webseclist-reference, injection, ssti, java, spring, info-leak, cookie, side-channel, novel-technique, owasp-a03-2021, owasp-a07-2021]
+tags: [whitepaper, webseclist-reference, injection, ssti, java, spring, info-leak, cookie, side-channel, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:53+00:00"

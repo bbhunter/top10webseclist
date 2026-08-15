@@ -3,7 +3,7 @@ type: Article
 title: samy kamkar - NAT Pinning
 description: "A web page can make a victim's router open an inbound port with no XSS or CSRF. A hidden multipart form POSTs to port 6667 on the attacker's host; the router's IRC connection-tracking helper reads the body as a DCC CHAT request and port-forwards the named port back to the victim. The attacker chooses the port, for example 21, then connects in from outside."
 resource: "http://samy.pl/natpin/"
-tags: [article, webseclist-reference, samy-pl, novel-technique, parser-differential, csrf, http, ftp, attack-chain, owasp-a01-2021]
+tags: [article, webseclist-reference, samy-pl, parser-differential, csrf, http, ftp, attack-chain, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:16+00:00"

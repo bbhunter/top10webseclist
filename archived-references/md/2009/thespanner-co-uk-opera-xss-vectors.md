@@ -3,7 +3,7 @@ type: Article
 title: Opera XSS vectors
 description: Opera still honoured the table background attribute as a script sink, so a bare table tag with a javascript URL fired. Unicode code points inserted between the scheme word and the colon still parsed, and could be repeated many times, defeating filters that match the literal scheme. Roughly 180 working code points are tabulated.
 resource: "http://www.thespanner.co.uk/2009/05/08/opera-xss-vectors/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, xss, filter-bypass, unicode, encoding, url-parsing, novel-technique, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, thespanner-co-uk, xss, filter-bypass, unicode, encoding, url-parsing, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:02:00+00:00"

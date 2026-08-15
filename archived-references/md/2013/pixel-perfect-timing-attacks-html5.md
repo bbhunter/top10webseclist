@@ -3,7 +3,7 @@ type: Whitepaper
 title: Pixel Perfect Timing Attacks with HTML5
 description: "Used requestAnimationFrame to time browser paint operations from JavaScript. A large text-shadow blur slowed link rendering enough to make visited-link redraws measurable, sniffing history without user interaction. Separately, the SVG feMorphology filter's runtime depends on its input, letting a page read pixels out of a cross-origin iframe and OCR the text from four reads per character."
 resource: "https://gwern.net/doc/cs/js/2013-stone.pdf"
-tags: [whitepaper, webseclist-reference, timing-attack, side-channel, xsleak, sop-bypass, iframe, css, javascript, novel-technique, owasp-a01-2021]
+tags: [whitepaper, webseclist-reference, timing-attack, side-channel, xsleak, sop-bypass, iframe, css, javascript, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:01:04+00:00"

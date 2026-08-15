@@ -3,7 +3,7 @@ type: Video
 title: DEF CON 30 - Dongsung Kim - CSRF Resurrections  Starring the Unholy Trinity
 description: "A registered service worker that merely passes fetch events through makes the browser take the site for cookies from the service worker's own URL instead of the request's, so cross-site requests count as same-site. SameSite Strict and Lax cookies are then attached to forged cross-site navigations and form posts, resurrecting CSRF."
 resource: "https://www.youtube.com/watch?v=bhthwXhGZDY"
-tags: [video, webseclist-reference, youtube, csrf, service-worker, cookie, http, javascript, cve, novel-technique, owasp-a01-2021, owasp-a07-2021]
+tags: [video, webseclist-reference, youtube, csrf, service-worker, cookie, http, javascript, cve, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:51:12+00:00"

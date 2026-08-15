@@ -3,7 +3,7 @@ type: Article
 title: "Beauty and the Burst: Remote Identification of Encrypted Video Streams"
 description: "Variable bitrate encoding makes an MPEG-DASH stream's pattern of traffic bursts a fingerprint of the video's content, surviving encryption. A convolutional network trained on those patterns identifies which Netflix or YouTube title a user is watching, either passively on-path or remotely from JavaScript that floods the link and measures congestion, including against a different device on the same network."
 resource: "https://beautyburst.github.io/"
-tags: [article, webseclist-reference, beautyburst-github-io, side-channel, timing-attack, info-leak, javascript, novel-technique]
+tags: [article, webseclist-reference, beautyburst-github-io, side-channel, timing-attack, info-leak, javascript]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:02:59+00:00"

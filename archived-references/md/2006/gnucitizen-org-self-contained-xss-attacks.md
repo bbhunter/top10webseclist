@@ -3,7 +3,7 @@ type: Article
 title: Self-contained XSS Attacks
 description: "A data: URI carries a whole HTML document, so XSS needs no vulnerable echo point: the payload is the URL. pdp shows base64 data: links executing script in Firefox and Opera, bypassing mail filters, XSS filters and sanitisers, and assembling binary DOC files client-side for worm payloads. IE6 and IE7 do not process data: and are unaffected."
 resource: "https://www.gnucitizen.org/blog/self-contained-xss-attacks/"
-tags: [article, webseclist-reference, en, gnucitizen-org, xss, filter-bypass, sanitizer-bypass, encoding, url-parsing, javascript, novel-technique, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, gnucitizen-org, xss, filter-bypass, sanitizer-bypass, encoding, url-parsing, javascript, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:54+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: ImageMagick - Shell injection via PDF password
 description: ImageMagick puts the -authenticate value straight into the Ghostscript command line inside double quotes, so a password containing a quote and a shell metacharacter closes the argument and runs commands. The parameter is reachable from a file via the MSL coder, and an SVG and MSL polyglot turns an image upload into remote code execution.
 resource: "https://insert-script.blogspot.com/2020/11/imagemagick-shell-injection-via-pdf.html"
-tags: [article, webseclist-reference, insert-script-blogspot-com, command-injection, rce, file-upload, pdf, lfi, filter-bypass, novel-technique, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, insert-script-blogspot-com, command-injection, rce, file-upload, pdf, lfi, filter-bypass, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:21+00:00"

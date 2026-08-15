@@ -3,7 +3,7 @@ type: Article
 title: "Zero Knowledge (About) Encryption: A Comparative Security Analysis of Three Cloud-based Password Managers"
 description: "A comparative analysis of Bitwarden, LastPass and Dashlane under the fully malicious server threat model their Zero Knowledge Encryption claims imply: 12 attacks on Bitwarden, 7 on LastPass and 6 on Dashlane, ranging from integrity violations against a targeted vault to complete compromise of every vault in an organisation, most of them recovering passwords. It attributes these to recurring design anti-patterns and cryptographic misconceptions in end-to-end encrypted systems."
 resource: "https://eprint.iacr.org/2026/058"
-tags: [article, webseclist-reference, en, iacr-cryptology-eprint-archive, crypto, info-leak, case-study, malicious-server, owasp-a02-2021]
+tags: [article, webseclist-reference, en, iacr-cryptology-eprint-archive, crypto, info-leak, case-study, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:06+00:00"

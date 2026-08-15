@@ -3,7 +3,7 @@ type: Article
 title: Stroke triggered XSS and StrokeJacking
 description: "On rubyheroes.com a keyup handler passed the input box's contents to jQuery html(), so the XSS could only be injected by the victim typing it character by character. The author pairs this with Zalewski's StrokeJacking: a hidden iframe takes focus for the characters the attacker wants, so the victim types the payload into the target site while believing he is typing something harmless."
 resource: "http://blog.andlabs.org/2010/04/stroke-triggered-xss-and-strokejacking_06.html"
-tags: [article, webseclist-reference, en, blog-andlabs-org, xss, ui-redress, clickjacking, dom, javascript, iframe, novel-technique, attack-chain, owasp-a03-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, en, blog-andlabs-org, xss, ui-redress, clickjacking, dom, javascript, iframe, attack-chain, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:00+00:00"

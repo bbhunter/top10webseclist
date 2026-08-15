@@ -3,7 +3,7 @@ type: Whitepaper
 title: Discovering React2Shell
 description: "React's undocumented wire format for Server Components lets a request body point at React's own internal chunk machinery and forge a fake chunk object, so awaiting the decoded arguments drives React into calling attacker-planted gadget functions and reaching the Function constructor. The result is unauthenticated remote code execution."
 resource: "https://i.blackhat.com/Asia-26/Presentations/BHAS26-Davidson-Discovering-React2Shell.pdf"
-tags: [whitepaper, webseclist-reference, deserialization, rce, react, gadget-chain, nextjs, nodejs, prototype-pollution, cve, novel-technique, owasp-a08-2021]
+tags: [whitepaper, webseclist-reference, deserialization, rce, react, gadget-chain, nextjs, nodejs, prototype-pollution, cve, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:04:53+00:00"

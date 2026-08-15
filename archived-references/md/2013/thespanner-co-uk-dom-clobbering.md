@@ -3,7 +3,7 @@ type: Article
 title: DOM Clobbering
 description: "Gareth Heyes catalogues how browsers turn named and id-bearing HTML elements into global JavaScript references. Two elements sharing an id or name become an HTML collection reachable as a window property, self-referencing without limit as x.y.x.y[0], and clobbering a name shadows the element's own properties and methods. Attacker-controlled globals follow with no script injection."
 resource: "https://thespanner.co.uk/2013/05/16/dom-clobbering"
-tags: [article, webseclist-reference, en, thespanner-co-uk, dom-clobbering, dom, javascript, xss, novel-technique, owasp-a03-2021, owasp-a08-2021]
+tags: [article, webseclist-reference, en, thespanner-co-uk, dom-clobbering, dom, javascript, xss, owasp-a03-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:02:19+00:00"

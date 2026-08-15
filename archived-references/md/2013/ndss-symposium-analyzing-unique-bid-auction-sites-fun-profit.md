@@ -3,7 +3,7 @@ type: Article
 title: Analyzing Unique-Bid Auction Sites for Fun and Profit
 description: Sampled a live highest-unique-bid auction site fast enough to snapshot its redacted position tables at each transaction, then recovered the hidden bids by back-propagating from the final exposed results using Levenshtein edit paths. Ninety recovered auctions fed an agent-based simulation, from which automated strategies were derived; the simplest won 13 of 14 live auctions on a UK site.
 resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/analyzing-unique-bid-auction-sites-fun-and-profit/"
-tags: [article, webseclist-reference, side-channel, info-leak, measurement-study, case-study, novel-technique, tooling]
+tags: [article, webseclist-reference, side-channel, info-leak, measurement-study, case-study, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:17+00:00"

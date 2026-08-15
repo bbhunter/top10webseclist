@@ -3,7 +3,7 @@ type: Article
 title: Cross-Site ETag Length Leak
 description: "Turns the ETag header into a cross-site oracle: ETag encodes response size in hex, so crossing a hex-digit boundary changes its length by one byte, echoed back in If-None-Match, which can push a padded request past the server header limit into a 431. Chromium then replaces rather than pushes the history entry, so history.length reveals the answer character by character."
 resource: "https://blog.arkark.dev/2025/12/26/etag-length-leak"
-tags: [article, webseclist-reference, en, blog-arkark-dev, xsleak, side-channel, info-leak, csrf, cache, http, nodejs, express, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, en, blog-arkark-dev, xsleak, side-channel, info-leak, csrf, cache, http, nodejs, express, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:06:06+00:00"

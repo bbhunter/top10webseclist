@@ -3,7 +3,7 @@ type: Article
 title: Network Scanning with HTTP without JavaScript
 description: "Ilia Alshanetsky extends Grossman's JavaScript-free port scan by serving multipart/x-mixed-replace from PHP, so each segment replaces the page with a new <link> probe plus a beacon <img>, giving a 3-second timeout per host without iframes. A companion scan.php logs IP and arrival time per session, and the last-scanned IP can be resumed across visits to sweep a whole subnet."
 resource: "http://ilia.ws/archives/145-Network-Scanning-with-HTTP-without-JavaScript.html"
-tags: [article, webseclist-reference, en, iblog-ilia-alshanetsky, novel-technique, prior-art-extension, php, http, timing-attack, side-channel, info-leak]
+tags: [article, webseclist-reference, en, iblog-ilia-alshanetsky, prior-art-extension, php, http, timing-attack, side-channel, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:28:55+00:00"

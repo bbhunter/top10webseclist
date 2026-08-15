@@ -3,7 +3,7 @@ type: Article
 title: Backdooring QuickTime Movies
 description: "pdp shows a QuickTime HREF Track can carry a javascript: URL that fires automatically when the movie is previewed in a browser, relying on a feature present since QuickTime 3 rather than on a bug. Step by step: write the one-line text track A<javascript:alert(...)> T<>, paste it into Sample.mov with QuickTime Pro, then rename the track to HREFTrack."
 resource: "https://www.gnucitizen.org/blog/backdooring-quicktime-movies/"
-tags: [article, webseclist-reference, en, gnucitizen-org, xss, javascript, file-upload, sop-bypass, mime, novel-technique, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, gnucitizen-org, xss, javascript, file-upload, sop-bypass, mime, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:26+00:00"

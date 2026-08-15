@@ -3,7 +3,7 @@ type: Article
 title: Chrome and Safari users open to stealth HTML5 AppCache attack
 description: "Chrome and Safari let any site create an HTML5 Application Cache without prompting, and unlike ordinary cache it can hold a site's root resource. On a hostile Wi-Fi an attacker frames http://mail.google.com/mail/ and caches a fake Gmail login for it, so credentials are stolen later on a trusted network. Pointing the manifest at an existing file keeps the poisoned entry alive."
 resource: "http://blog.andlabs.org/2010/06/chrome-and-safari-users-open-to-stealth.html"
-tags: [article, webseclist-reference, en, blog-andlabs-org, cache-poisoning, cache, https, tls, iframe, auth-bypass, novel-technique, info-leak, owasp-a01-2021, owasp-a02-2021]
+tags: [article, webseclist-reference, en, blog-andlabs-org, cache-poisoning, cache, https, tls, iframe, auth-bypass, info-leak, owasp-a01-2021, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:01+00:00"

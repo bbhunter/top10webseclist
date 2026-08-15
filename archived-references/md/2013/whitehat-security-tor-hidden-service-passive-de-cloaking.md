@@ -3,7 +3,7 @@ type: Article
 title: Tor Hidden-Service Passive De-Cloaking
 description: "A passive method for locating the real host of a Tor hidden service: bots on Tor poll the service while a feed of Internet outages is watched, and when every bot loses it at the moment of a known network break, the outage localises the origin. Induced brief outages narrow it to a subnet, and HTTP Date headers give clock skew as corroboration."
 resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/tor-hidden-service-passive-de-cloaking/"
-tags: [article, webseclist-reference, en, whitehat-security, info-leak, side-channel, timing-attack, novel-technique, case-study]
+tags: [article, webseclist-reference, en, whitehat-security, info-leak, side-channel, timing-attack, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:07:01+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: XS-Searching Google’s bug tracker to find out vulnerable source code
 description: "Monorail's CSV export lacked CSRF protection and allowed a column to be repeated, so a search that matched a bug returned a hugely inflated file. Timing how long that response takes to enter the Cache API answers cross-origin yes/no questions, and binary search over Chromium's public directory tree leaks paths and line numbers named in private security bugs."
 resource: "https://medium.com/@luanherrera/xs-searching-googles-bug-tracker-to-find-out-vulnerable-source-code-50d8135b7549"
-tags: [article, webseclist-reference, en, medium, xsleak, timing-attack, side-channel, csrf, info-leak, same-origin-policy, cache, cve, bug-bounty, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, en, medium, xsleak, timing-attack, side-channel, csrf, info-leak, same-origin-policy, cache, cve, bug-bounty, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:12+00:00"

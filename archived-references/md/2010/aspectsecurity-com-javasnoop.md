@@ -3,7 +3,7 @@ type: Article
 title: JavaSnoop
 description: "Testing a Java client without source is hard: decompilation is unreliable and the traffic is often a custom protocol, serialized objects or encrypted rather than proxyable HTTP. JavaSnoop attaches to an already-running JVM like a debugger and hooks methods in place, so calls can be watched, their data tampered with, or custom code run at the interception point."
 resource: "https://www.aspectsecurity.com/tools/javasnoop/"
-tags: [article, webseclist-reference, en, aspectsecurity-com, tooling, java, dynamic-analysis, proxy, novel-technique, deserialization, owasp-a08-2021]
+tags: [article, webseclist-reference, en, aspectsecurity-com, tooling, java, dynamic-analysis, proxy, deserialization, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T16:32:02+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Billy (BK) Rios » More URI Stuff… (IE’s Resouce URI)
 description: "Internet Explorer's built-in res:// protocol reads resources out of local DLLs and executables, so a remote page can probe for a given file and report back whether it exists. That enumerates installed software and often its exact version, letting an attacker select targeted exploits. The file need not be installed, only present."
 resource: "http://xs-sniper.com/blog/2007/07/20/more-uri-stuff-ies-resouce-uri/"
-tags: [article, webseclist-reference, xs-sniper-com, info-leak, url-parsing, browser-fingerprinting, cve, detection, novel-technique, owasp-a09-2021]
+tags: [article, webseclist-reference, xs-sniper-com, info-leak, url-parsing, browser-fingerprinting, cve, detection, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:46+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: SIFT - Information Security Services
 description: "Confirmed pointer page: what is archived is SIFT's publications listing with a 226-word abstract, not the cited XML Intranet Port Scanning paper. The paper is linked only, as a now-broken download icon to SIFT-XML-Port-Scanning-v1-00.pdf; also_at is empty, no linked_document_url, and no manifest entry archives it. Title is the site masthead; the heading dates it 26 Sep 06."
 resource: "http://www.sift.com.au/36/172/xml-port-scanning-bypassing-restrictive-perimeter-firewalls.htm"
-tags: [article, webseclist-reference, sift-com-au, xxe, ssrf, info-leak, novel-technique, detection, owasp-a03-2021, owasp-a09-2021, owasp-a10-2021]
+tags: [article, webseclist-reference, sift-com-au, xxe, ssrf, info-leak, detection, owasp-a03-2021, owasp-a09-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:23+00:00"

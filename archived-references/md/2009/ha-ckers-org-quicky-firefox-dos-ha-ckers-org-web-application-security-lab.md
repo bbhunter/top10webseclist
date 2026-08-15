@@ -3,7 +3,7 @@ type: Article
 title: Quicky Firefox DoS ha.ckers.org web application security lab
 description: "A four-line script hangs Firefox indefinitely: a loop to 65536 that appends one character at a time and calls document.write on the whole growing string each pass. The author expected the slow-script prompt and instead had to kill the process after ten minutes. The cost is quadratic rather than linear, as the comment thread works out."
 resource: "http://ha.ckers.org/blog/20090727/quicky-firefox-dos/"
-tags: [article, webseclist-reference, ha-ckers-org, dos, javascript, algorithmic-complexity, dom, novel-technique, owasp-a04-2021]
+tags: [article, webseclist-reference, ha-ckers-org, dos, javascript, algorithmic-complexity, dom, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T05:08:14+00:00"

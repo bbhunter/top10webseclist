@@ -3,7 +3,7 @@ type: Article
 title: Prompt Injection as Role Confusion
 description: "Injected text hijacks an agent because the model infers who is speaking from how text sounds rather than from its role label, so a command in a tool output that reads like user speech is treated as one. Probes of the model's internal representation put injected text in the same space as the role it imitates, and CoT Forgery - fabricated reasoning pasted into prompts and tool outputs, which models mistake for their own thinking - reaches 60% success against frontier models."
 resource: "https://arxiv.org/abs/2603.12277"
-tags: [article, webseclist-reference, en, arxiv-org, prompt-injection, llm, ai-agent, novel-technique, owasp-a03-2021]
+tags: [article, webseclist-reference, en, arxiv-org, prompt-injection, llm, ai-agent, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:06+00:00"

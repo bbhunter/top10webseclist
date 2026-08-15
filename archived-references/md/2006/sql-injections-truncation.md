@@ -3,7 +3,7 @@ type: Whitepaper
 title: SQL Injections by Truncation
 description: "Bala Neerumalla's Black Hat USA 2006 deck on SQL truncation. Where a column is shorter than the input a form accepts, an over-long value is silently cut to length, so a crafted registration can collide with an existing account after truncation and take it over. The deck walks the technique through SQL Server sessions and covers modification as well as injection."
 resource: "https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Neerumalla.pdf"
-tags: [whitepaper, webseclist-reference, sqli, injection, mssql, database, mitigation, novel-technique, owasp-a03-2021]
+tags: [whitepaper, webseclist-reference, sqli, injection, mssql, database, mitigation, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T03:35:16+00:00"

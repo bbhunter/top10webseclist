@@ -3,7 +3,7 @@ type: Article
 title: "23C3: Subverting AJAX"
 description: "The 23C3 schedule entry for Di Paola and Fedon's lecture, carrying the abstract and a link to the whitepaper. It announces content and request hijacking in Ajax pages via JavaScript prototyping — hijacking functions and objects so attacks run transparently without breaking the page — plus cross-domain code injection and UXSS through browser plugins and sandbox flaws."
 resource: "https://fahrplan.events.ccc.de/congress/2006/Fahrplan/events/1602.en.html"
-tags: [article, webseclist-reference, fahrplan-events-ccc-de, javascript, xss, dom, sop-bypass, prototype-pollution, injection, novel-technique, owasp-a01-2021, owasp-a03-2021, owasp-a08-2021]
+tags: [article, webseclist-reference, fahrplan-events-ccc-de, javascript, xss, dom, sop-bypass, prototype-pollution, injection, owasp-a01-2021, owasp-a03-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:40:01+00:00"

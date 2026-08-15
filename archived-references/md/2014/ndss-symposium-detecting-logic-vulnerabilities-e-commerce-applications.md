@@ -3,7 +3,7 @@ type: Article
 title: Detecting Logic Vulnerabilities in E-Commerce Applications
 description: A static analysis that combines symbolic execution with taint tracking to find logic flaws in PHP e-commerce checkout code, using the invariant that a secure checkout preserves the integrity and authenticity of order ID, order total, merchant ID and currency. Violations let a shopper pay the wrong amount, pay a different merchant, or take goods without paying.
 resource: "https://www.ndss-symposium.org/ndss2014/ndss-2014-programme/detecting-logic-vulnerabilities-e-commerce-applications/"
-tags: [article, webseclist-reference, static-analysis, php, auth-bypass, detection, tooling, novel-technique, case-study, owasp-a01-2021, owasp-a09-2021]
+tags: [article, webseclist-reference, static-analysis, php, auth-bypass, detection, tooling, case-study, owasp-a01-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:30+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "HTTP/1.1 must die: the desync endgame"
 description: "New classes of HTTP desync against upstream HTTP/1.1: detecting parser discrepancies with masked headers, making zero-length desyncs exploitable through early-response gadgets and a double-desync that converts them, and desyncs triggered by the Expect header. An attacker poisons a shared front-end connection to hijack other users' requests and take over sites behind major CDNs."
 resource: "https://portswigger.net/research/http1-must-die"
-tags: [article, webseclist-reference, portswigger-research, desync, request-smuggling, http, proxy, cdn, cache-poisoning, http2, novel-technique, tooling, bug-bounty]
+tags: [article, webseclist-reference, portswigger-research, desync, request-smuggling, http, proxy, cdn, cache-poisoning, http2, tooling, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:07+00:00"

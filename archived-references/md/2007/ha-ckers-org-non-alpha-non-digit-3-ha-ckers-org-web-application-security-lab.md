@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab
 description: "Yair Amit's IE parser quirk: a tag and its attribute can be separated by a slash, so <SCRIPT/SRC=\"...\"> needs no whitespace at all. Unlike the earlier non-alpha-non-digit vectors it requires no space, defeating XSS filters that use whitespace to find where a tag ends. IE6-7 and Netscape 8 in IE mode."
 resource: "http://ha.ckers.org/blog/20070209/non-alpha-non-digit-3/"
-tags: [article, webseclist-reference, ha-ckers-org, xss, filter-bypass, parser-differential, sanitizer-bypass, novel-technique, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, ha-ckers-org, xss, filter-bypass, parser-differential, sanitizer-bypass, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:54:26+00:00"

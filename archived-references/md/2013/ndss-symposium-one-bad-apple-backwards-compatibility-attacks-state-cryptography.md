@@ -3,7 +3,7 @@ type: Article
 title: "One Bad Apple: Backwards Compatibility Attacks on State-of-the-Art Cryptography"
 description: "A standard that keeps a broken algorithm for backwards compatibility undermines the strong one when both share a key. A CBC decryption oracle is turned into a block-cipher inversion oracle that distinguishes AES-GCM ciphertexts in two queries, and Bleichenbacher's PKCS#1 v1.5 oracle decrypts RSA-OAEP and forges signatures. Shown against XML Encryption, JWE, WSS4J and Nimbus-JWT."
 resource: "https://www.ndss-symposium.org/ndss2013/ndss-2013-programme/one-bad-apple-backwards-compatibility-attacks-state-art-cryptography/"
-tags: [article, webseclist-reference, ndss-symposium, novel-technique, jwt, saml, soap, java, sso, mitigation, owasp-a07-2021]
+tags: [article, webseclist-reference, ndss-symposium, jwt, saml, soap, java, sso, mitigation, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:36:22+00:00"

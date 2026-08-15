@@ -3,7 +3,7 @@ type: Article
 title: SpyTunes
 description: "McAfee shows that iTunes' gift flow discloses a stranger's library. Assemble a playlist, start gifting it to a target email address, and iTunes names a track the recipient already owns before any sign-in or payment. Deleting the named track and resending repeats the probe, and the same oracle works for purchased video and paid apps."
 resource: "http://andrewmcafee.org/2011/02/mcafee-apple-itunes-privacy-hole-violation/"
-tags: [article, webseclist-reference, en-US, andrewmcafee-org, info-leak, case-study, ios, email, novel-technique]
+tags: [article, webseclist-reference, en-US, andrewmcafee-org, info-leak, case-study, ios, email]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:07:49+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Abusing JSONP with Rosetta Flash
 description: "Rosetta Flash converts any SWF into one built only from alphanumeric characters, using ad-hoc Huffman encoders and Adler-32 checksum bruteforcing, so the file can be passed as a JSONP callback and reflected by the vulnerable site. The victim's browser then runs that Flash from the target origin, making cookie-carrying requests and exfiltrating the responses to the attacker."
 resource: "https://web.archive.org/web/20160403035045/http://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/"
-tags: [article, webseclist-reference, en, miki-it, sop-bypass, flash, csrf, filter-bypass, encoding, same-origin-policy, novel-technique, cve, owasp-a01-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, miki-it, sop-bypass, flash, csrf, filter-bypass, encoding, same-origin-policy, cve, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:32:57+00:00"

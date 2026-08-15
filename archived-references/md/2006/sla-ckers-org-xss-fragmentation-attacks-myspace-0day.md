@@ -3,7 +3,7 @@ type: Article
 title: XSS Fragmentation Attacks + MySpace 0day
 description: "Worst document audited. Seven of kuza55's, Spikeman's and maluc's payloads lost their handlers: <body onload=\"alert('XSS');\"> became <body >, and the sentence defining the technique became '(e.g."
 resource: "http://sla.ckers.org/forum/read.php?13,2033"
-tags: [article, webseclist-reference, EN, sla-ckers-org, xss, filter-bypass, sanitizer-bypass, parser-differential, novel-technique, dom, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, EN, sla-ckers-org, xss, filter-bypass, sanitizer-bypass, parser-differential, dom, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:33+00:00"

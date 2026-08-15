@@ -3,7 +3,7 @@ type: Article
 title: SecuriTeam™ - Firefox Popup Blocker Allows Reading Arbitrary Local Files
 description: "Zalewski's chain for reading local files from the web in Firefox 1.5.0.9. Manually unblocking a popup skips the URL permission check, and file:// documents are mutually same-origin, so a planted local HTML file can XMLHttpRequest other files and post them out."
 resource: "http://www.securiteam.com/securitynews/5JP051FKKE.html"
-tags: [article, webseclist-reference, en, securiteam-com, sop-bypass, same-origin-policy, info-leak, javascript, filter-bypass, novel-technique, owasp-a01-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, securiteam-com, sop-bypass, same-origin-policy, info-leak, javascript, filter-bypass, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:17:52+00:00"

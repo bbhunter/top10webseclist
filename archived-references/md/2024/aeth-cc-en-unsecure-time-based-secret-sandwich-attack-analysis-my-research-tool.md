@@ -3,7 +3,7 @@ type: Article
 title: "[EN] Unsecure time-based secret and Sandwich Attack - Analysis of my research and release of the “Reset Tolkien” tool"
 description: "Password-reset tokens built from PHP uniqid(), time(), UUIDv1 or MongoDB ObjectIDs are recoverable because the HTTP Date header reveals the request instant, and hashing them in md5 or sha256 only means the attacker recomputes the hash of each candidate timestamp. Three sequential requests - attacker, victim, attacker - bound the victim's token between two known ones, and the Reset Tolkien tool detects the format and enumerates the range against a validity oracle."
 resource: "https://www.aeth.cc/public/Article-Reset-Tolkien/secret-time-based-article-en.html"
-tags: [article, webseclist-reference, aeth-cc, auth-bypass, tooling, php, mongodb, novel-technique, predictable-token, owasp-a01-2021, owasp-a02-2021]
+tags: [article, webseclist-reference, aeth-cc, auth-bypass, tooling, php, mongodb, predictable-token, owasp-a01-2021, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:00:29+00:00"

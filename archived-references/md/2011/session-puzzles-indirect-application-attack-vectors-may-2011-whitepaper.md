@@ -3,7 +3,7 @@ type: Whitepaper
 title: Session Puzzles Indirect Application Attack Vectors May 2011 Whitepaper
 description: "Session puzzling attacks a second entry point rather than the vulnerable one: a public page such as password recovery writes an identity or flow flag into the session, and a restricted page then trusts it. The paper covers authentication bypass, impersonation, privilege escalation, flow-bypass and indirect SQL injection, with black-box and code-review methods and the PuzzleMall test app."
 resource: "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/puzzlemall/Session%20Puzzles%20-%20Indirect%20Application%20Attack%20Vectors%20-%20May%202011%20-%20Whitepaper.pdf"
-tags: [whitepaper, webseclist-reference, auth-bypass, privilege-escalation, session-fixation, novel-technique, injection, defence, tooling, owasp-a01-2021, owasp-a03-2021, owasp-a07-2021]
+tags: [whitepaper, webseclist-reference, auth-bypass, privilege-escalation, session-fixation, injection, defence, tooling, owasp-a01-2021, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:13+00:00"

@@ -3,7 +3,7 @@ type: Whitepaper
 title: Attacks on JavaScript Mashup Communication
 description: "Analyses four design choices in JavaScript mashup communication: lexical vs dynamic authorization, interfaces vs asymmetry, typed vs untyped, and values vs objects. Proof-of-concept escalations abuse caller, arguments, __proto__ and valueOf to compromise Safari's Web Inspector and gadget interfaces. Proposes PostMash, a postMessage stub-library design, shown on Google Maps at 60% slowdown."
 resource: "https://www.ieee-security.org/TC/W2SP/2009/papers/s1p3.pdf"
-tags: [whitepaper, webseclist-reference, javascript, same-origin-policy, sop-bypass, postmessage, privilege-escalation, iframe, dom, mitigation, novel-technique, owasp-a01-2021]
+tags: [whitepaper, webseclist-reference, javascript, same-origin-policy, sop-bypass, postmessage, privilege-escalation, iframe, dom, mitigation, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:41:35+00:00"

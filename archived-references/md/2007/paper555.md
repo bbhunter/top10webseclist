@@ -3,7 +3,7 @@ type: Whitepaper
 title: paper555
 description: Bortz, Boneh and Nandy show web application response times leak private state. Direct timing exposes username validity and hidden gallery counts; cross-site timing uses img onerror from an attacker page to tell whether a victim is logged in and to count shopping-cart items. Ships mod_timepad as a defence.
 resource: "https://archives.iw3c2.org/www2007/papers/paper555.pdf"
-tags: [whitepaper, webseclist-reference, timing-attack, side-channel, info-leak, xsleak, csrf, javascript, mitigation, novel-technique, owasp-a01-2021]
+tags: [whitepaper, webseclist-reference, timing-attack, side-channel, info-leak, xsleak, csrf, javascript, mitigation, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T23:36:02+00:00"

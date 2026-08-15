@@ -3,7 +3,7 @@ type: Whitepaper
 title: "SSO Wars: The Token Menace"
 description: "Two flaws in .NET single sign-on. An unvalidated algorithm name from a JWT header or an XML SignatureMethod reaches CryptoConfig, letting an attacker instantiate arbitrary types; Dupe Key Confusion adds a second KeyInfo element so signature validation uses the attacker's own key. Lets an attacker forge SAML assertions and log in as any user, plus denial of service and code execution."
 resource: "https://i.blackhat.com/USA-19/Wednesday/us-19-Munoz-SSO-Wars-The-Token-Menace-wp.pdf"
-tags: [whitepaper, webseclist-reference, auth-bypass, saml, jwt, sso, dotnet, rce, parser-differential, cve, novel-technique, owasp-a01-2021, owasp-a07-2021]
+tags: [whitepaper, webseclist-reference, auth-bypass, saml, jwt, sso, dotnet, rce, parser-differential, cve, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:41:02+00:00"

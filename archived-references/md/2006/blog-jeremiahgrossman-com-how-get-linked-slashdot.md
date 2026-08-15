@@ -3,7 +3,7 @@ type: Article
 title: How to get linked from Slashdot
 description: "A five-step recipe for making slashdot.org display and link attacker-chosen content: fill in the story submission form, switch its method from POST to GET, click PreviewStory, and keep the resulting preview URL. Snipping op=PreviewStory makes it last longer. Link to it and crawlers index Slashdot pointing at you. Any preview feature on blogs or boards works the same way."
 resource: "https://jeremiahgrossman.blogspot.com/2006/09/how-to-get-linked-from-slashdot.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, abuse-of-functionality, url-spoofing, phishing, novel-technique, owasp-a04-2021]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, abuse-of-functionality, url-spoofing, phishing, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:54+00:00"

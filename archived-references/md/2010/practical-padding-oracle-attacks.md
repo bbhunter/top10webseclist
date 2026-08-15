@@ -3,7 +3,7 @@ type: Whitepaper
 title: Practical Padding Oracle Attacks
 description: "Turns Vaudenay's CBC padding oracle into practical web attacks, with manual and automated methods for finding oracles in real sites. It cracks crypto-based CAPTCHAs and decrypts JSF view states, then introduces CBC-R, which reuses a decryption oracle as an encryption oracle to forge arbitrary plaintext without the key. A distributed cross-site variant reads the oracle bit through img load events."
 resource: "https://www.usenix.org/events/woot10/tech/full_papers/Rizzo.pdf"
-tags: [whitepaper, webseclist-reference, side-channel, deserialization, java, rce, novel-technique, tooling, info-leak, owasp-a08-2021]
+tags: [whitepaper, webseclist-reference, side-channel, deserialization, java, rce, tooling, info-leak, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:37:21+00:00"

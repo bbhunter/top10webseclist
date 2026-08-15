@@ -3,7 +3,7 @@ type: Article
 title: DNS Rebinding for Scraping and Spamming ha.ckers.org web application security lab
 description: "Third part of a DNS rebinding series: because search engines ignore the Host header and serve over plain HTTP, an attacker can rebind a domain and have visitors' own browsers scrape Google, defeating CAPTCHAs and IP blocking. The same IP diversity supports comment spamming, poll fraud and brute force from other people's addresses."
 resource: "http://ha.ckers.org/blog/20091118/dns-rebinding-for-scraping-and-spamming/"
-tags: [article, webseclist-reference, ha-ckers-org, dns, dns-rebinding, sop-bypass, javascript, https, tls, novel-technique, owasp-a01-2021, owasp-a02-2021, owasp-a10-2021]
+tags: [article, webseclist-reference, ha-ckers-org, dns, dns-rebinding, sop-bypass, javascript, https, tls, owasp-a01-2021, owasp-a02-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T05:11:11+00:00"

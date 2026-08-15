@@ -3,7 +3,7 @@ type: Article
 title: New Hack Abuses Cloud-Based Browsers
 description: News report on NC State and University of Oregon work showing cloud-rendering browsers such as Puffin can be driven as free, anonymous compute. The researchers ran MapReduce jobs across browser nodes, hiding data in URL-shortener records, and reached over 24,000 password hashes per second. Suggested fixes are account binding and per-client resource limits.
 resource: "https://web.archive.org/web/20170903113359/http://www.darkreading.com/cloud-security/167901092/security/news/240142718/new-hack-abuses-cloud-based-browsers.html"
-tags: [article, webseclist-reference, dark-reading, case-study, novel-technique, dos, mitigation, detection, owasp-a09-2021]
+tags: [article, webseclist-reference, dark-reading, case-study, dos, mitigation, detection, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:35:36+00:00"

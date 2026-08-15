@@ -3,7 +3,7 @@ type: Article
 title: Autocomplete..again?!
 description: "A page can still read keydown and keyup events while the browser's form-autocomplete dropdown is open, so a game that lures the victim into typing letters harvests autocomplete values stored for other sites. Demonstrated on Firefox up to 7.0.1 and IE 7-9; Chrome withheld the events. A short greasemonkey script is offered to show whether autocomplete is enabled."
 resource: "http://blog.mindedsecurity.com/2011/10/autocompleteagain.html"
-tags: [article, webseclist-reference, blog-mindedsecurity-com, info-leak, side-channel, javascript, dom, prior-art-extension, novel-technique]
+tags: [article, webseclist-reference, blog-mindedsecurity-com, info-leak, side-channel, javascript, dom, prior-art-extension]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:05:24+00:00"

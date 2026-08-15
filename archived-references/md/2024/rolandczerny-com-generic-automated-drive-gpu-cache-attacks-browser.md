@@ -3,7 +3,7 @@ type: Article
 title: Generic and Automated Drive-by GPU Cache Attacks from the Browser
 description: "Compute shaders in WebGPU let an ordinary web page build eviction sets and run a cache attack against a GPU's L2 cache with no user interaction. Automated across 11 desktop GPUs, it demonstrates inter-keystroke timing inference, recovery of a full AES key from a GPU encryption service in about six minutes, and a covert channel."
 resource: "https://www.rolandczerny.com/publications/2024-webgpu/"
-tags: [article, webseclist-reference, rolandczerny-com, side-channel, timing-attack, info-leak, javascript, novel-technique]
+tags: [article, webseclist-reference, rolandczerny-com, side-channel, timing-attack, info-leak, javascript]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:56+00:00"

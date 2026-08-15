@@ -3,7 +3,7 @@ type: Article
 title: "SOAPwn: Pwning .NET Framework Applications Through HTTP Client Proxies And WSDL"
 description: "A missing cast in .NET Framework's SOAP HTTP client proxies lets a file:// or UNC URL make the proxy write its SOAP request body to disk instead of sending it. Attacker-supplied WSDL sets that URL and much of the body, giving arbitrary file write, webshell drops and pre-authentication RCE in enterprise products."
 resource: "https://labs.watchtowr.com/soapwn-pwning-net-framework-applications-through-http-client-proxies-and-wsdl/"
-tags: [article, webseclist-reference, en, watchtowr-labs, soap, dotnet, rce, file-upload, ssrf, aspnet, cve, attack-chain, novel-technique, owasp-a10-2021]
+tags: [article, webseclist-reference, en, watchtowr-labs, soap, dotnet, rce, file-upload, ssrf, aspnet, cve, attack-chain, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:33:21+00:00"

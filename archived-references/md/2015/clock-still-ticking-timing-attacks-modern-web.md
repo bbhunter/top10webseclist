@@ -3,7 +3,7 @@ type: Article
 title: "The Clock is Still Ticking: Timing Attacks in the Modern Web"
 description: Browser features that parse or cache a cross-origin response let an attacker time the work done after the download finishes, so network jitter no longer matters. Video parsing, ApplicationCache, Service Workers and the Fetch API each leak response size, revealing a victim state on social networks such as age, location and private group membership, and defeating random-delay defences.
 resource: "https://dl.acm.org/doi/10.1145/2810103.2813632"
-tags: [article, webseclist-reference, timing-attack, side-channel, xsleak, info-leak, cache, service-worker, javascript, novel-technique, mitigation]
+tags: [article, webseclist-reference, timing-attack, side-channel, xsleak, info-leak, cache, service-worker, javascript, mitigation]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T08:57:48+00:00"

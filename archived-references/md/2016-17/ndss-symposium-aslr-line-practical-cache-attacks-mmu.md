@@ -3,7 +3,7 @@ type: Article
 title: "ASLR on the Line: Practical Cache Attacks on the MMU"
 description: Page-table walks by the memory management unit leave the page tables themselves in the shared last-level cache, so an EVICT+TIME attack on those cache lines reveals which entries a victim used and derandomizes its virtual addresses. It needs only ordinary memory accesses, so plain JavaScript broke code and heap ASLR in two browsers in about 150 seconds, on Intel, ARM and AMD alike.
 resource: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache-practical-cache-attacks-mmu/"
-tags: [article, webseclist-reference, en, ndss-symposium, side-channel, timing-attack, javascript, info-leak, novel-technique]
+tags: [article, webseclist-reference, en, ndss-symposium, side-channel, timing-attack, javascript, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:40+00:00"

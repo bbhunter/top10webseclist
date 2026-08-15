@@ -3053,6 +3053,17 @@ def _published_tags(text):
     return {tag.strip() for tag in match.group(1).split(",") if tag.strip()}
 
 
+def _format_labels(text, record):
+    """The tags `render` writes about the FILE rather than about the research."""
+    from refslib import render as render_module
+    labels = {record.get("kind") or "article", "webseclist-reference"}
+    if record.get("language"):
+        labels.add(record["language"])
+    if record.get("publisher"):
+        labels.add(render_module._slug_tag(record["publisher"]))
+    return labels
+
+
 def _published_research_tags(text, record):
     """The digest's own tags, taken back out of a published file's tag line.
 
@@ -3060,12 +3071,7 @@ def _published_research_tags(text, record):
     derived OWASP categories. Removing the labels and the categories leaves what
     a reviewer chose, in the order they were written.
     """
-    from refslib import render as render_module
-    labels = {record.get("kind") or "article", "webseclist-reference"}
-    if record.get("language"):
-        labels.add(record["language"])
-    if record.get("publisher"):
-        labels.add(render_module._slug_tag(record["publisher"]))
+    labels = _format_labels(text, record)
     match = re.search(r"^tags: \[(.*)\]$", text, re.MULTILINE)
     if not match:
         return []
@@ -3090,7 +3096,12 @@ def _digest_is_published(text, entry):
     wanted = set(research)
     wanted |= {tags_module.owasp_tag(identifier) for identifier
                in tags_module.owasp_categories(research, tags_module.current())}
-    return wanted <= _published_tags(text)
+    # EXACT, not a subset. A subset test cannot see a tag being REMOVED, and
+    # removal is how a word is retired: retiring `novel-technique` from 743
+    # documents left every one of them skipped, because what remained was still
+    # a subset of what the files already stated.
+    labels = _format_labels(text, entry)
+    return wanted == (_published_tags(text) - labels)
 
 
 def _republish_digest(path, entry, config):

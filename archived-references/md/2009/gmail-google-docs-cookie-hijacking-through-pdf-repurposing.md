@@ -3,7 +3,7 @@ type: Article
 title: Gmail - Google Docs Cookie Hijacking through PDF Repurposing
 description: A PDF mailed to a victim is rendered harmlessly by the Google Docs viewer, but choosing print converts it back to its original form and opens it in the browser through the Adobe plugin. Acro JS then runs with an interface to the Google domain, letting the attacker read Gmail and Google Docs cookies. Disclosed to Google on 5 May 2009 and patched by 9 May.
 resource: "http://secniche.org/gmd_hijack/gc_hijack.xhtml"
-tags: [article, webseclist-reference, pdf, cookie, same-origin-policy, sop-bypass, info-leak, vendor-advisory, case-study, novel-technique, owasp-a01-2021, owasp-a07-2021]
+tags: [article, webseclist-reference, pdf, cookie, same-origin-policy, sop-bypass, info-leak, vendor-advisory, case-study, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-15T09:35:43+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Reflected File Download - A New Web Attack Vector
 description: "Reflected File Download turns a trusted site into a malware host without any upload: a URL whose input is reflected into the response, typically a JSON or JSONP API, is given extra permissive path segments so the browser saves the reply as an executable .bat or .cmd file. The victim sees a download from a trusted domain over HTTPS, and running it executes attacker-supplied shell commands."
 resource: "https://www.levelblue.com/blogs/spiderlabs-blog/reflected-file-download-a-new-web-attack-vector"
-tags: [article, webseclist-reference, en, trustwave-holdings-inc, command-injection, url-parsing, injection, content-type, rest-api, http, novel-technique, mitigation, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, trustwave-holdings-inc, command-injection, url-parsing, injection, content-type, rest-api, http, mitigation, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:31:04+00:00"

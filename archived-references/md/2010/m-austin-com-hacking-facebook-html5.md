@@ -3,7 +3,7 @@ type: Article
 title: Hacking Facebook with HTML5
 description: "touch.facebook.com read the URL fragment and fetched it by AJAX into a div, and CORS made the request cross-origin instead of an error. Loading a PHP page that returns Access-Control-Allow-Origin: * injects an img onerror payload into Facebook's mobile interface from a hidden iframe, then document.domain widens it to facebook.com. Fixed within a day."
 resource: "http://m-austin.com/blog/?p=19"
-tags: [article, webseclist-reference, en-US, m-austin-com, cors, xss, sop-bypass, same-origin-policy, iframe, dom, case-study, novel-technique, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, en-US, m-austin-com, cors, xss, sop-bypass, same-origin-policy, iframe, dom, case-study, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:02+00:00"

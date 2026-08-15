@@ -3,7 +3,7 @@ type: Article
 title: extern blog SensePost;
 description: "SensePost's release post for the BlackHat/DefCon 2007 timing work: the squeeza SQL injection tool, which splits exploit from payload and exfiltrates over error messages, DNS or response timing against MS-SQL. It also introduces Cross Site Request Timing, timing cross-domain page loads to defeat the same-origin policy and brute-force a time-leaky login page from a popular page's visitors."
 resource: "https://www.sensepost.com/blog/1303.html"
-tags: [article, webseclist-reference, sensepost-com, timing-attack, side-channel, sqli, mssql, tooling, same-origin-policy, dns, novel-technique, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, sensepost-com, timing-attack, side-channel, sqli, mssql, tooling, same-origin-policy, dns, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:22+00:00"

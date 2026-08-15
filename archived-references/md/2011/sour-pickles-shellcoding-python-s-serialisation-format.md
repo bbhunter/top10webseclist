@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Sour Pickles: Shellcoding in Python's Serialisation Format"
 description: "Python's Pickle format is a stack virtual machine whose GLOBAL and REDUCE opcodes load and call arbitrary callables, so a tampered pickle stream is remote code execution. The paper maps the PVM, gives shellcode templates that reach class-instance methods through getattr and apply, and ships anapickle plus a Python-to-pickle compiler, bind and reverse shells, and Django and AppEngine payloads."
 resource: "https://media.blackhat.com/bh-us-11/Slaviero/BH_US_11_Slaviero_Sour_Pickles_WP.pdf"
-tags: [whitepaper, webseclist-reference, deserialization, python, rce, gadget-chain, novel-technique, tooling, django, injection, owasp-a03-2021, owasp-a08-2021]
+tags: [whitepaper, webseclist-reference, deserialization, python, rce, gadget-chain, tooling, django, injection, owasp-a03-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:37:24+00:00"

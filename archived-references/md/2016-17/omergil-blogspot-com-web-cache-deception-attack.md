@@ -3,7 +3,7 @@ type: Article
 title: Web Cache Deception Attack
 description: "Appending a fake static filename to an authenticated dynamic page, such as /home.php/logo.png, makes many servers still return the personal page while the CDN or reverse proxy caches it as a public static file chosen by extension. The attacker then fetches the cached copy and reads the victim's personal data, session identifiers or CSRF tokens; demonstrated against PayPal."
 resource: "https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html"
-tags: [article, webseclist-reference, en, omergil-blogspot-com, cache-deception, cache, info-leak, cdn, reverse-proxy, load-balancer, url-parsing, novel-technique, bug-bounty]
+tags: [article, webseclist-reference, en, omergil-blogspot-com, cache-deception, cache, info-leak, cdn, reverse-proxy, load-balancer, url-parsing, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:35:44+00:00"

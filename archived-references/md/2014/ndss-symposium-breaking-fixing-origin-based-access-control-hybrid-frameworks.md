@@ -3,7 +3,7 @@ type: Article
 title: Breaking and Fixing Origin-Based Access Control in Hybrid Web/Mobile Application Frameworks
 description: Hybrid app frameworks such as PhoneGap hand web code JavaScript bridges to device resources but never apply the same origin policy to them, so foreign-origin content inside the app, typically ads in iframes, can call those bridges and reach contacts, files and the camera. The paper names these fracking attacks, surveys PhoneGap Android apps, and proposes the NoFrak defence.
 resource: "https://www.ndss-symposium.org/ndss2014/ndss-2014-programme/breaking-and-fixing-origin-based-access-control-hybrid-webmobile-application-frameworks/"
-tags: [article, webseclist-reference, sop-bypass, same-origin-policy, privilege-escalation, iframe, android, ios, javascript, large-scale-scan, defence, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, sop-bypass, same-origin-policy, privilege-escalation, iframe, android, ios, javascript, large-scale-scan, defence, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:42:58+00:00"

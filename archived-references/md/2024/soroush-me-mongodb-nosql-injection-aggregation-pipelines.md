@@ -3,7 +3,7 @@ type: Article
 title: MongoDB NoSQL Injection with Aggregation Pipelines
 description: "An application that passes user input into MongoDB's aggregation stage lets NoSQL injection escape the single collection a find would confine it to: lookup and union stages read other collections such as users, while replace and merge stages write to them. An attacker can dump credentials, insert a new admin account, or overwrite an existing user's password and role."
 resource: "https://soroush.me/blog/mongodb-nosql-injection-with-aggregation-pipelines"
-tags: [article, webseclist-reference, en, soroush-me, nosqli, mongodb, privilege-escalation, info-leak, database, nodejs, novel-technique, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, en, soroush-me, nosqli, mongodb, privilege-escalation, info-leak, database, nodejs, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:26+00:00"

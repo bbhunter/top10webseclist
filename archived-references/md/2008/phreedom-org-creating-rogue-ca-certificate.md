@@ -3,7 +3,7 @@ type: Article
 title: Creating a rogue CA certificate
 description: Announcement of the 25C3 result in which an MD5 chosen-prefix collision was used against a commercial CA still signing with MD5, producing a rogue intermediate CA certificate trusted by every common browser. It can impersonate any HTTPS site, making phishing against banking undetectable. Links the write-up, slides, colliding certificates and a demo site.
 resource: "http://www.phreedom.org/research/rogue-ca/"
-tags: [article, webseclist-reference, en, phreedom-org, tls, https, phishing, novel-technique, case-study, hash-collision, owasp-a02-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, en, phreedom-org, tls, https, phishing, case-study, hash-collision, owasp-a02-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:36:10+00:00"

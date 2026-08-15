@@ -3,7 +3,7 @@ type: Article
 title: "XSS-Track: How to quietly track a whole website through single XSS"
 description: One XSS on one page is turned into site-wide surveillance. The payload hides the page, opens a full-window borderless iframe on the same origin, and survives navigation because only the iframe reloads. Same-origin access lets its onload handler hook every link and form, log clicks, form values and selected DOM content, and report by XHR or image beacon.
 resource: "http://blog.kotowicz.net/2010/11/xss-track-how-to-quietly-track-whole.html"
-tags: [article, webseclist-reference, blog-kotowicz-net, xss, iframe, javascript, dom, info-leak, same-origin-policy, ui-redress, tooling, novel-technique, owasp-a01-2021, owasp-a03-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, blog-kotowicz-net, xss, iframe, javascript, dom, info-leak, same-origin-policy, ui-redress, tooling, owasp-a01-2021, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:25+00:00"

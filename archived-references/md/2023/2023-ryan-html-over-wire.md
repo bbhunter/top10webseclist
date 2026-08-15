@@ -3,7 +3,7 @@ type: Article
 title: HTML Over the Wire
 description: HTML-over-the-wire frameworks such as Hotwire Turbo, HTMX and Unpoly intercept link clicks and expose fetch features through plain HTML attributes, so an injected link can issue a POST and carry attacker-chosen headers.
 resource: "https://bountyplz.xyz/bugbounty/2023/07/30/HTML-Over-The-Wire.html"
-tags: [article, webseclist-reference, en, ryan, csrf, info-leak, injection, dom, javascript, rails, attack-chain, novel-technique, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, en, ryan, csrf, info-leak, injection, dom, javascript, rails, attack-chain, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:07:55+00:00"

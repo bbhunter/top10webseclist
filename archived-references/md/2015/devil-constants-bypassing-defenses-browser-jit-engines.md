@@ -3,7 +3,7 @@ type: Whitepaper
 title: "The Devil is in the Constants: Bypassing Defenses in Browser JIT Engines"
 description: JavaScript integer constants survive into a JIT engine generated code, so an attacker can encode x86 gadget bytes as immediate values and make Firefox or Internet Explorer emit a full ROP chain at run time, defeating ASLR, DEP and the undocumented JIT hardening in IE. Gadgets can also be located on the fly, and blinding every constant costs up to 80 percent more instructions.
 resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/09_1_2.pdf"
-tags: [whitepaper, webseclist-reference, gadget-chain, rce, javascript-runtime, javascript, mitigation, novel-technique, owasp-a08-2021]
+tags: [whitepaper, webseclist-reference, gadget-chain, rce, javascript-runtime, javascript, mitigation, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:03+00:00"

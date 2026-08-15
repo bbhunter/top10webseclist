@@ -3,7 +3,7 @@ type: Article
 title: I know who your name, where you work, and live (Safari v4 & v5)
 description: "Safari 4 and 5 filled form fields named name, company, city, state, country and email straight from the operating system address book, with data the user had never typed into any site. A page can create those fields invisibly, simulate A-Z keystrokes from JavaScript and read the visitor's real name, employer and email within seconds. Apple fixed it as CVE-2010-1796."
 resource: "https://jeremiahgrossman.blogspot.com/2010/07/i-know-who-your-name-where-you-work-and.html"
-tags: [article, webseclist-reference, en, jeremiahgrossman-blogspot-com, info-leak, javascript, dom, novel-technique, cve]
+tags: [article, webseclist-reference, en, jeremiahgrossman-blogspot-com, info-leak, javascript, dom, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:34+00:00"

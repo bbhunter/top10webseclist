@@ -3,7 +3,7 @@ type: Article
 title: Cursorjacking again
 description: "A revived cursorjacking vector after Niemietz's original custom-cursor trick. Setting cursor:none on the body works across browsers, so a page can hide the real pointer entirely and draw a fake one at an offset with a mousemove listener. Because no element is actually hidden, NoScript's ClearClick clickjacking protection does not trigger; it was fixed in NoScript 2.2.8 RC1."
 resource: "https://web.archive.org/web/20170903113359/http://blog.kotowicz.net/2012/01/cursorjacking-again.html"
-tags: [article, webseclist-reference, blog-kotowicz-net, clickjacking, ui-redress, css, javascript, filter-bypass, novel-technique, dom, owasp-a04-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, blog-kotowicz-net, clickjacking, ui-redress, css, javascript, filter-bypass, dom, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:37+00:00"

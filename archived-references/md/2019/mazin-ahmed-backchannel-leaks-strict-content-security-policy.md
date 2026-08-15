@@ -3,7 +3,7 @@ type: Article
 title: Backchannel Leaks on Strict Content-Security Policy
 description: "Under a strict default-src 'self' policy the browser still allows outbound requests to unapproved hosts. Chrome does not enforce CSP on link rel=prerender, and Chrome, Firefox and Safari all follow a meta http-equiv=refresh redirect, so either tag gives an out-of-band channel for exfiltration and for triggering blind XSS callbacks without JavaScript."
 resource: "https://mazinahmed.net/blog/backchannel-leaks-on-strict-csp-policy/"
-tags: [article, webseclist-reference, en, mazin-ahmed, csp, filter-bypass, info-leak, xss, open-redirect, novel-technique, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, mazin-ahmed, csp, filter-bypass, info-leak, xss, open-redirect, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:33:49+00:00"

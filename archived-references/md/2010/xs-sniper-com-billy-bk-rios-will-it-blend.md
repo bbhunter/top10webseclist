@@ -3,7 +3,7 @@ type: Article
 title: Billy (BK) Rios » Will it Blend?
 description: "A post announcing the RuxCon and BayThreat talk Will It Blend, on blended threats. Roughly five individually unremarkable bugs across different browser plug-in vendors are chained into a genuinely useful exploit, demonstrated live and on video; Adobe Reader X's changed caching behaviour breaks the specific chain."
 resource: "http://xs-sniper.com/blog/2010/12/17/will-it-blend/"
-tags: [article, webseclist-reference, xs-sniper-com, attack-chain, browser-extension, pdf, cache, rce, case-study, novel-technique]
+tags: [article, webseclist-reference, xs-sniper-com, attack-chain, browser-extension, pdf, cache, rce, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:50+00:00"

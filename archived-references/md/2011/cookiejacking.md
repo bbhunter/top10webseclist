@@ -3,7 +3,7 @@ type: Whitepaper
 title: Cookiejacking
 description: "Valotta chains an IE zero-day that loads a local cookie file into an iframe with Paul Stone's drag-and-drop content extraction, stealing any cookie including HttpOnly and Secure ones without XSS. An SMB UNC image request leaks the Windows username over NTLM, the user agent gives the OS, and an onfocus scrollspeed trick collapses text selection into a single click."
 resource: "https://archive.conference.hitb.org/hitbsecconf2011ams/materials/D2T2%20-%20Rosario%20Valotta%20-%20Cookie%20Jacking.pdf"
-tags: [whitepaper, webseclist-reference, clickjacking, ui-redress, cookie, iframe, sop-bypass, info-leak, attack-chain, novel-technique, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
+tags: [whitepaper, webseclist-reference, clickjacking, ui-redress, cookie, iframe, sop-bypass, info-leak, attack-chain, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:04+00:00"

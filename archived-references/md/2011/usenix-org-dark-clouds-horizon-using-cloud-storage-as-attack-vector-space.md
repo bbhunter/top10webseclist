@@ -3,7 +3,7 @@ type: Article
 title: "Dark Clouds on the Horizon: Using Cloud Storage as Attack Vector and Online Slack Space"
 description: "The USENIX Security '11 programme record for the SBA Research paper on abusing cloud storage. It carries the title, its five authors and links to the paper, slides, audio and video. The research shows that hash-based deduplication lets anyone who knows a file's hash fetch that file from the service, and that the same mechanism gives hidden storage and a covert channel."
 resource: "https://www.usenix.org/conference/usenix-security-11/presentation/dark-clouds-horizon-using-cloud-storage-attack-vector-and"
-tags: [article, webseclist-reference, en, usenix-org, info-leak, file-upload, novel-technique]
+tags: [article, webseclist-reference, en, usenix-org, info-leak, file-upload]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:04:05+00:00"

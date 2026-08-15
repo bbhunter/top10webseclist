@@ -3,7 +3,7 @@ type: Whitepaper
 title: Regular Expressions Considered Harmful in Client-Side XSS Filters
 description: "The authors show that IE8, NoScript and noXSS block reflected XSS by running regular expressions over the raw response, so they are either slow or evadable, and their mangling can disable a victim site's own security scripts. Their XSSAuditor instead sits between the HTML parser and the JavaScript engine, blocking scripts after parsing. It ships enabled in Chrome."
 resource: "https://www.adambarth.com/papers/2010/bates-barth-jackson.pdf"
-tags: [whitepaper, webseclist-reference, xss, filter-bypass, parser-differential, charset, mitigation, defence, javascript, novel-technique, measurement-study, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
+tags: [whitepaper, webseclist-reference, xss, filter-bypass, parser-differential, charset, mitigation, defence, javascript, measurement-study, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:33:59+00:00"

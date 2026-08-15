@@ -3,7 +3,7 @@ type: Whitepaper
 title: Protecting Browsers from Cross-Origin CSS Attacks
 description: CSS error-tolerant parsing lets an attacker bracket secret text in a victim page with an injected style-rule prefix and suffix, import that page cross-origin as a stylesheet, and read the secret back out - with no JavaScript, using background-image URLs. Working attacks are shown on IMDb, Yahoo! Mail and Hotmail.
 resource: "https://www.linshunghuang.com/papers/css.pdf"
-tags: [whitepaper, webseclist-reference, css, same-origin-policy, sop-bypass, info-leak, content-type, parser-differential, mitigation, measurement-study, novel-technique, owasp-a01-2021, owasp-a05-2021]
+tags: [whitepaper, webseclist-reference, css, same-origin-policy, sop-bypass, info-leak, content-type, parser-differential, mitigation, measurement-study, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:36:54+00:00"

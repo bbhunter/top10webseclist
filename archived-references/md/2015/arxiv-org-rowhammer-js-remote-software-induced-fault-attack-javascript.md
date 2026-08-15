@@ -3,7 +3,7 @@ type: Article
 title: "Rowhammer.js: A Remote Software-Induced Fault Attack in JavaScript"
 description: Rowhammer.js triggers DRAM bit flips from ordinary JavaScript in a browser, replacing the usual cache flush instruction with eviction sets built from an inferred memory mapping. A page the victim merely visits can corrupt memory it never accesses and take control of the machine, and existing Rowhammer countermeasures do not stop it.
 resource: "https://arxiv.org/abs/1507.06955"
-tags: [article, webseclist-reference, en, arxiv-org, side-channel, privilege-escalation, rce, javascript-runtime, javascript, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, en, arxiv-org, side-channel, privilege-escalation, rce, javascript-runtime, javascript, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:05+00:00"

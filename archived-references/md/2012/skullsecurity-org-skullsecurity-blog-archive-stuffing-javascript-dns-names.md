@@ -3,7 +3,7 @@ type: Article
 title: SkullSecurity » Blog Archive » Stuffing Javascript into DNS names
 description: DNS responses are almost never filtered, so the dnsxss tool answers CNAME, MX, TXT and NS lookups with JavaScript. Three sites taken from a single Google query all rendered the injected script, and the post argues the same back channel should reach SQL injection and, more widely, reverse-DNS records displayed in firewalls, proxies and logs.
 resource: "https://web.archive.org/web/20170903113359/http://www.skullsecurity.org/blog/2010/stuffing-javascript-into-dns-names"
-tags: [article, webseclist-reference, skullsecurity-org, xss, dns, injection, tooling, sqli, novel-technique, case-study, owasp-a03-2021]
+tags: [article, webseclist-reference, skullsecurity-org, xss, dns, injection, tooling, sqli, case-study, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:16+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Mutation XSS via namespace confusion - DOMPurify < 2.0.17 bypass
 description: HTML drops a nested form on reparse, and mglyph stays in the MathML namespace when it is a direct child of mtext, so markup DOMPurify judges harmless parses differently the second time. Assigning the sanitized string to innerHTML turns inert text inside a style element into a live img with an onerror handler, giving mutation XSS through the sanitizer.
 resource: "https://research.securitum.com/mutation-xss-via-mathml-mutation-dompurify-2-0-17-bypass/"
-tags: [article, webseclist-reference, en, research-securitum-com, mutation-xss, sanitizer-bypass, xss, parser-differential, dom, javascript, novel-technique, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, research-securitum-com, mutation-xss, sanitizer-bypass, xss, parser-differential, dom, javascript, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:12+00:00"

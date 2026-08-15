@@ -3,7 +3,7 @@ type: Article
 title: Turning XSS into Clickjacking ha.ckers.org web application security lab
 description: Clickjacking normally needs attacker-controlled hosting, which is far rarer than XSS. Reflecting <script>eval(location.hash.slice(1))</script> converts any generic reflected XSS into a DOM-based one, since the fragment never reaches the server.
 resource: "http://ha.ckers.org/blog/20100614/turning-xss-into-clickjacking/"
-tags: [article, webseclist-reference, ha-ckers-org, xss, clickjacking, ui-redress, dom, iframe, javascript, novel-technique, filter-bypass, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, ha-ckers-org, xss, clickjacking, ui-redress, dom, iframe, javascript, filter-bypass, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:50+00:00"

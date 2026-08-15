@@ -3,7 +3,7 @@ type: Article
 title: Yes, you can have fun with downloads
 description: "Any document can navigate a non-same-origin window, and the target need not be HTML. Pointing it at a resource served with Content-Disposition: attachment leaves the victim window's address bar unchanged while a download prompt appears attached to it, so a fake flash11_updater.exe seems to come from adobe.com. All three major browsers were affected, sandboxed iframes included."
 resource: "https://lcamtuf.blogspot.com/2012/05/yes-you-can-have-fun-with-downloads.html"
-tags: [article, webseclist-reference, lcamtuf-blogspot-com, http, iframe, content-type, ui-redress, vendor-advisory, novel-technique, owasp-a04-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, lcamtuf-blogspot-com, http, iframe, content-type, ui-redress, vendor-advisory, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:31:03+00:00"

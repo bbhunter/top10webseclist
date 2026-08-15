@@ -3,7 +3,7 @@ type: Article
 title: "AppCache's forgotten tales"
 description: "A page's AppCache manifest NETWORK section acts as an allowlist that blocks any request not listed, including requests produced by redirects, and Chrome extended it with non-standard glob pattern matching."
 resource: "https://blog.lbherrera.me/posts/appcache-forgotten-tales/"
-tags: [article, webseclist-reference, en, blog-lbherrera-me, xsleak, side-channel, info-leak, same-origin-policy, cache, service-worker, javascript, cve, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, en, blog-lbherrera-me, xsleak, side-channel, info-leak, same-origin-policy, cache, service-worker, javascript, cve, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:05:39+00:00"

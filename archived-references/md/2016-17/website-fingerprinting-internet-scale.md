@@ -3,7 +3,7 @@ type: Whitepaper
 title: Website Fingerprinting at Internet Scale
 description: A local passive eavesdropper on a Tor connection identifies which page a user is loading purely from packet sizes and directions, using a cumulative trace representation fed to an SVM that beats prior classifiers at a fraction of the cost. Evaluated on 300,000 webpages, it also shows no existing method holds up at true Internet scale.
 resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/website-fingerprinting-internet-scale.pdf"
-tags: [whitepaper, webseclist-reference, side-channel, info-leak, tls, measurement-study, large-scale-scan, novel-technique, owasp-a02-2021]
+tags: [whitepaper, webseclist-reference, side-channel, info-leak, tls, measurement-study, large-scale-scan, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:35:29+00:00"

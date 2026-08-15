@@ -3,7 +3,7 @@ type: Article
 title: Universal Deserialisation Gadget for Ruby 2.x-3.x
 description: "A gadget chain built only from Ruby's default classes turns an untrusted Marshal.load into arbitrary command execution, running from Gem::Requirement through Gem::Package::TarReader and Net::BufferedIO to Net::WriteAdapter, which calls any chosen method on any object. It replaces the earlier gadget patched in Ruby 2.7 and works from Ruby 2.0 to 3.0 with no extra gems loaded."
 resource: "https://devcraft.io/2021/01/07/universal-deserialisation-gadget-for-ruby-2-x-3-x.html"
-tags: [article, webseclist-reference, en, devcraft-io, deserialization, gadget-chain, rce, ruby, rails, novel-technique, prior-art-extension, owasp-a08-2021]
+tags: [article, webseclist-reference, en, devcraft-io, deserialization, gadget-chain, rce, ruby, rails, prior-art-extension, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:09:11+00:00"

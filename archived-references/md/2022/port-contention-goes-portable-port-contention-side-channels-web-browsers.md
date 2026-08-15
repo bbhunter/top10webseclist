@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Port Contention Goes Portable: Port Contention Side Channels in Web Browsers"
 description: "A port contention side channel running entirely in a web browser: WebAssembly instructions chosen to saturate specific Intel execution ports let a page time contention from code sharing the same SMT core. It gives a 200 bit/s cross-browser covert channel and 1024-instruction spatial resolution, and evades browser timer limits and cache-targeted countermeasures."
 resource: "https://thomasrokicki.github.io/publications/wpc.pdf"
-tags: [whitepaper, webseclist-reference, side-channel, timing-attack, wasm, webassembly, javascript, info-leak, novel-technique]
+tags: [whitepaper, webseclist-reference, side-channel, timing-attack, webassembly, javascript, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:36:28+00:00"

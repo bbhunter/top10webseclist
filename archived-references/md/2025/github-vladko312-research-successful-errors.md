@@ -3,7 +3,7 @@ type: Repository
 title: Blind SSTI
 description: "Two exploitation techniques for code injection and server-side template injection: Error-Based, which triggers errors whose messages reflect the injected code's output, and Boolean Error-Based Blind, which conditionally raises an error as an oracle. Payloads cover six languages and give an attacker output and fast confirmation from otherwise blind injections."
 resource: "https://github.com/vladko312/Research_Successful_Errors"
-tags: [repo, webseclist-reference, github, ssti, injection, rce, sandbox-escape, novel-technique, tooling, php, python, nodejs, ruby, owasp-a03-2021]
+tags: [repo, webseclist-reference, github, ssti, injection, rce, sandbox-escape, tooling, php, python, nodejs, ruby, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T23:15:17+00:00"

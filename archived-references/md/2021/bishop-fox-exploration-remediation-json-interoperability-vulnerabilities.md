@@ -3,7 +3,7 @@ type: Article
 title: An Exploration & Remediation of JSON Interoperability Vulnerabilities
 description: A survey of 49 JSON parsers shows they disagree on duplicate keys, invalid Unicode, comments and large numbers, so the same document decodes to different values in different microservices. An attacker can craft a document that a validating service reads as safe while a downstream service reads as hostile, smuggling values past business logic, sanitisation and authorisation checks.
 resource: "https://bishopfox.com/blog/json-interoperability-vulnerabilities"
-tags: [article, webseclist-reference, en, bishop-fox, parser-differential, filter-bypass, auth-bypass, smuggling, encoding, unicode, rest-api, measurement-study, novel-technique, owasp-a01-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, bishop-fox, parser-differential, filter-bypass, auth-bypass, smuggling, encoding, unicode, rest-api, measurement-study, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:03:06+00:00"

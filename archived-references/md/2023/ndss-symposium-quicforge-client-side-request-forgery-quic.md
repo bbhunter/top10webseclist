@@ -3,7 +3,7 @@ type: Article
 title: "QUICforge: Client-side Request Forgery in QUIC"
 description: "QUIC's design lets a client with a spoofed source address make a server send attacker-shaped UDP datagrams to a third host, through server initial packets, version negotiation or connection migration."
 resource: "https://www.ndss-symposium.org/ndss-paper/quicforge-client-side-request-forgery-in-quic/"
-tags: [article, webseclist-reference, ndss-symposium, ssrf, dos, http3, dns, tls, novel-technique, measurement-study, mitigation, owasp-a02-2021, owasp-a10-2021]
+tags: [article, webseclist-reference, ndss-symposium, ssrf, dos, http3, dns, tls, measurement-study, mitigation, owasp-a02-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:07:35+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Pure Java™, Pure Evil™ Popups
 description: ma1 (Giorgio Maone) shows a Java applet can open a full-screen window with no chrome, no close button and no way to move or minimise it - popup blockers cannot stop it, and it can paint a fake browser or whole fake desktop for phishing. Sun first filed the report as an enhancement request, then reclassified it; fixed October 2007.
 resource: "https://hackademix.net/2007/08/07/java-evil-popups/"
-tags: [article, webseclist-reference, en-US, hackademix-net, java, phishing, ui-redress, url-spoofing, abuse-of-functionality, novel-technique, owasp-a04-2021]
+tags: [article, webseclist-reference, en-US, hackademix-net, java, phishing, ui-redress, url-spoofing, abuse-of-functionality, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:29+00:00"

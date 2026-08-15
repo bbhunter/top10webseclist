@@ -3,7 +3,7 @@ type: Article
 title: How to Break XML Encryption
 description: XML Encryption implementations remain open to adaptive chosen-ciphertext attacks that recover the plaintext of encrypted XML without any key. The authors systematise those attacks and automate them in a WS-Attacker plugin that scans an encrypted message, picks the applicable weakness and decrypts it, breaking four of five web service stacks.
 resource: "https://www.usenix.org/conference/woot15/workshop-program/presentation/kupser"
-tags: [article, webseclist-reference, en, usenix-org, soap, info-leak, tooling, novel-technique]
+tags: [article, webseclist-reference, en, usenix-org, soap, info-leak, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:48+00:00"

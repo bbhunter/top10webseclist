@@ -3,7 +3,7 @@ type: Article
 title: Ping pong obfuscation
 description: Internet Explorer honours a language attribute and labelled statements inside event handlers, so an event can be switched to VBScript, and execScript bounces execution between VBScript and JavaScript repeatedly. Combining that with JScript.Encode and VBScript.Encode labels inside an event attribute hides the payload from filters while it still runs.
 resource: "http://www.thespanner.co.uk/2009/11/23/ping-pong-obfuscation/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, xss, filter-bypass, waf-bypass, javascript, encoding, novel-technique, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, thespanner-co-uk, xss, filter-bypass, waf-bypass, javascript, encoding, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:02:06+00:00"

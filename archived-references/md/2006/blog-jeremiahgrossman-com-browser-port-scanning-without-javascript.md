@@ -3,7 +3,7 @@ type: Article
 title: Browser Port Scanning without JavaScript
 description: "Intranet port scanning with HTML alone. A link rel=stylesheet pointing at an internal address stalls Firefox's parser until the request resolves; a following img src to the attacker's timing script reports how long that took, separating live hosts from timeouts. Iframes fork the connections. Updates credit Ilia Alshanetsky's multipart/x-mixed-replace refinement and RSnake's follow-ups."
 resource: "https://jeremiahgrossman.blogspot.com/2006/11/browser-port-scanning-without.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, timing-attack, side-channel, detection, css, iframe, info-leak, novel-technique, owasp-a09-2021]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, timing-attack, side-channel, detection, css, iframe, info-leak, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:55+00:00"

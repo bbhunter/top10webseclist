@@ -3,7 +3,7 @@ type: Article
 title: Google Adsense CSRF hole
 description: "Gareth Heyes reports that Google AdSense lacked CSRF protection in parts of its account area, letting a remote page log the victim in, browse AdSense as them and post an address change. Details were withheld pending Google's fix, with pointers to his two CSRF-protection write-ups. The published capture holds none of this: its body is 40 navigation links and zero article words."
 resource: "http://www.thespanner.co.uk/2007/09/27/google-adsense-csrf-hole/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, csrf, case-study, abuse-of-functionality, auth-bypass, mitigation, novel-technique, owasp-a01-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, en, thespanner-co-uk, csrf, case-study, abuse-of-functionality, auth-bypass, mitigation, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:33+00:00"

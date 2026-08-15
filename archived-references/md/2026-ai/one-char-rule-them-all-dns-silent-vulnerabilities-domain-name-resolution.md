@@ -3,7 +3,7 @@ type: Whitepaper
 title: "One Char to Rule Them All: DNS Silent Vulnerabilities in Domain Name Resolution"
 description: The SHAR (special-characters) attack against DNS. RFC 1035 and RFC 2181 disagree on which characters domain labels may contain, and DNS components handle unsupported characters inconsistently, many silently dropping the query with no response. That silence enhances 10 of 13 off-path cache-poisoning attacks, revives TxID/port brute-force poisoning by widening the spoofing window, and disrupts nameserver load-balancing for persistent DoS. Tested across 31 DNS implementations and 12.5M domains.
 resource: "https://i.blackhat.com/Asia-26/Presentations/BHAS26-Miao-One-Char-to-Rule-The.pdf"
-tags: [whitepaper, webseclist-reference, dns, cache-poisoning, dos, measurement-study, large-scale-scan, novel-technique]
+tags: [whitepaper, webseclist-reference, dns, cache-poisoning, dos, measurement-study, large-scale-scan]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:40:23+00:00"

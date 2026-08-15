@@ -3,7 +3,7 @@ type: Article
 title: Text-based captcha strengths and weaknesses | Computer and Communications Security publication
 description: A systematic evaluation of 15 text CAPTCHA schemes from major web sites, using a common methodology against the anti-segmentation defences each one relies on. Thirteen of the fifteen fell to automated attack. The paper distils design recommendations for CAPTCHA authors and attackers; the authors later marked it obsolete after generic text-CAPTCHA solving arrived.
 resource: "https://elie.im/publication/text-based-captcha-strengths-and-weaknesses"
-tags: [article, webseclist-reference, en, elie-net, measurement-study, survey, detection, novel-technique, owasp-a09-2021]
+tags: [article, webseclist-reference, en, elie-net, measurement-study, survey, detection, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:10:04+00:00"

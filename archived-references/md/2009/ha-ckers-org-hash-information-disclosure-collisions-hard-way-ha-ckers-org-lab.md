@@ -3,7 +3,7 @@ type: Article
 title: Hash Information Disclosure Via Collisions - The Hard Way ha.ckers.org web application security lab
 description: A thought experiment on using precomputed hash collisions as a fingerprinting oracle. Registering a password and then logging in with a known colliding string reveals which hashing algorithm and salting scheme a site uses. The same trick extends to password blacklist evasion and to databases whose primary key is a hash of known data.
 resource: "http://ha.ckers.org/blog/20090713/hash-information-disclosure-via-collisions-the-hard-way/"
-tags: [article, webseclist-reference, ha-ckers-org, side-channel, info-leak, detection, database, novel-technique, owasp-a09-2021]
+tags: [article, webseclist-reference, ha-ckers-org, side-channel, info-leak, detection, database, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T05:08:09+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: XMLHTTPReqest “Ping” Sweeping in Firefox 3.5+ ha.ckers.org web application security lab
 description: "Firefox 3.5's CORS cross-domain XMLHttpRequest hides whether a target page exists, but the attacker can still issue the initial request. Live hosts answer immediately while absent ones hang for 20-75 seconds, and that timing gap enumerates internal address space behind the victim's firewall. Basic and digest auth popups are suppressed, which suits intranet sweeping."
 resource: "http://ha.ckers.org/blog/20090720/xmlhttpreqest-ping-sweeping-in-firefox-35/"
-tags: [article, webseclist-reference, ha-ckers-org, cors, timing-attack, side-channel, info-leak, javascript, same-origin-policy, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, ha-ckers-org, cors, timing-attack, side-channel, info-leak, javascript, same-origin-policy, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:46+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Java Applet Same IP Host Access
 description: "Java resolves its same-origin policy by IP address rather than hostname, so an applet uploaded to any host sharing a victim's IP can issue credentialed requests to that victim and read the responses. Setting the Host header on HttpURLConnection extends this to stealing non-HttpOnly cookies and writing cookies into the victim origin. Any XSS on a shared-IP host reaches it from JavaScript."
 resource: "http://blog.mindedsecurity.com/2010/10/java-applet-same-ip-host-access.html"
-tags: [article, webseclist-reference, blog-mindedsecurity-com, java, same-origin-policy, sop-bypass, cookie, info-leak, csrf, header-injection, novel-technique, owasp-a01-2021, owasp-a03-2021, owasp-a07-2021]
+tags: [article, webseclist-reference, blog-mindedsecurity-com, java, same-origin-policy, sop-bypass, cookie, info-leak, csrf, header-injection, owasp-a01-2021, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:05:22+00:00"

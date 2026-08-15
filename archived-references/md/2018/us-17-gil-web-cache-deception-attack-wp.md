@@ -3,7 +3,7 @@ type: Whitepaper
 title: us 17 Gil Web Cache Deception Attack wp
 description: "Appending a non-existent static filename to an authenticated page URL, such as /account.do/logo.png, makes some servers return the page while the cache stores it under the .png key. The attacker then fetches that same URL unauthenticated and reads the victim's private page, including tokens that can lead to account takeover."
 resource: "https://www.blackhat.com/docs/us-17/wednesday/us-17-Gil-Web-Cache-Deception-Attack-wp.pdf"
-tags: [whitepaper, webseclist-reference, cache-deception, info-leak, cache, cdn, reverse-proxy, load-balancer, aspnet, django, php, novel-technique]
+tags: [whitepaper, webseclist-reference, cache-deception, info-leak, cache, cdn, reverse-proxy, load-balancer, aspnet, django, php]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:05+00:00"

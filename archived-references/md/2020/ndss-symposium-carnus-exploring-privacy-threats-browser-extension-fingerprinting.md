@@ -3,7 +3,7 @@ type: Article
 title: "Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting"
 description: Carnus automatically builds behavioural fingerprints of browser extensions from DOM changes, outgoing HTTP requests and intra-browser message traffic, not just web accessible resources. Fingerprinting 29,428 extensions and mining 1.44 million reviews, it shows a site can identify visitors and infer sensitive traits such as religion or medical conditions.
 resource: "https://www.ndss-symposium.org/ndss-paper/carnus-exploring-the-privacy-threats-of-browser-extension-fingerprinting/"
-tags: [article, webseclist-reference, en, ndss-symposium, browser-extension, info-leak, side-channel, dom, measurement-study, large-scale-scan, static-analysis, dynamic-analysis, novel-technique]
+tags: [article, webseclist-reference, en, ndss-symposium, browser-extension, info-leak, side-channel, dom, measurement-study, large-scale-scan, static-analysis, dynamic-analysis]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:05+00:00"

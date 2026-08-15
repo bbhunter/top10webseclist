@@ -3,7 +3,7 @@ type: Article
 title: Identifying Cross-origin Resource Status Using Application Cache
 description: "HTML5 Application Cache can be made to reveal the status of arbitrary cross-origin URLs, whether they exist, redirect or error, with no client-side script and for many URLs at once. That leak tells an attacker page whether the visitor is logged in to a given site and lets it probe web servers on the victim's local network."
 resource: "https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/identifying-cross-origin-resource-status-using-application-cache/"
-tags: [article, webseclist-reference, en, ndss-symposium, xsleak, info-leak, cache, same-origin-policy, http, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, en, ndss-symposium, xsleak, info-leak, cache, same-origin-policy, http, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:20+00:00"

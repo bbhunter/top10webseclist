@@ -3,7 +3,7 @@ type: Article
 title: JavaScript Global Namespace Pollution
 description: "pdp sketches detecting JavaScript malware by diffing the global object before and after untrusted input, with a small recursive walker, and then the evasions: wrap the payload in a closure that touches neither window nor document, or hide it on prototypes and other synthetic-sugar objects. DOM mutation is noted as the blind spot nobody checks."
 resource: "https://www.gnucitizen.org/blog/javascript-global-namespace-pollution/"
-tags: [article, webseclist-reference, en, gnucitizen-org, javascript, detection, dom, sandbox-escape, novel-technique, owasp-a09-2021]
+tags: [article, webseclist-reference, en, gnucitizen-org, javascript, detection, dom, sandbox-escape, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:53+00:00"

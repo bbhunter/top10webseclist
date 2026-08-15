@@ -3,7 +3,7 @@ type: Article
 title: MySQL Stacked Queries with SQL Injection...sort of
 description: Shows how to get stacked-query effects out of a MySQL SELECT injection, which normally allows only one statement. Using INTO OUTFILE the attacker writes the .TRG and .TRN trigger definition files straight into the database data directory, so MySQL loads and fires an attacker-written trigger on the next insert, yielding privilege escalation, stored XSS and data modification.
 resource: "http://blog.mindedsecurity.com/2010/04/mysql-stacked-queries-with-sql.html"
-tags: [article, webseclist-reference, blog-mindedsecurity-com, sqli, mysql, database, injection, privilege-escalation, novel-technique, xss, path-traversal, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, blog-mindedsecurity-com, sqli, mysql, database, injection, privilege-escalation, xss, path-traversal, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:05:13+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "Silent Spring: Prototype Pollution Leads to Remote Code Execution in Node.js"
 description: "Prototype pollution lets an attacker write properties onto Object.prototype, and Node.js's own standard library then reads them back as trusted input. Combining CodeQL taint analysis with dynamic property probing, the authors find 11 universal gadgets (shell, env, main, exports) and eight end-to-end RCEs in NPM CLI, Parse Server and Rocket.Chat."
 resource: "https://arxiv.org/abs/2207.11171"
-tags: [article, webseclist-reference, en, arxiv-org, prototype-pollution, gadget-chain, rce, nodejs, javascript-runtime, static-analysis, novel-technique, cve, owasp-a08-2021]
+tags: [article, webseclist-reference, en, arxiv-org, prototype-pollution, gadget-chain, rce, nodejs, javascript-runtime, static-analysis, cve, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T20:58:48+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: MySQL and SQL Column Truncation Vulnerabilities
 description: "Two length flaws in MySQL apps. Registering 'admin x' passes the uniqueness check (17 chars cannot match a 16-char column) but MySQL silently truncates it, and trailing spaces are ignored in comparison — yielding a second admin row whose password the attacker set. Also: overlong input pushing a logging or session-cleanup query past max_packet_size so it never runs."
 resource: "http://www.suspekt.org/2008/08/18/mysql-and-sql-column-truncation-vulnerabilities/"
-tags: [article, webseclist-reference, en-US, suspek-org, sqli, mysql, database, auth-bypass, php, novel-technique, dos, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, en-US, suspek-org, sqli, mysql, database, auth-bypass, php, dos, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:18+00:00"

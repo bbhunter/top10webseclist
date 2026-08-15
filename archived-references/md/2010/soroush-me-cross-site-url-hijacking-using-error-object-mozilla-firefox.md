@@ -3,7 +3,7 @@ type: Article
 title: Cross Site URL Hijacking by using Error Object in Mozilla Firefox
 description: "Firefox's script error handling reports the exact source URL that caused an error, and that reporting crosses origins. Deliberately triggering a fetch error against another site therefore discloses the destination URL reached after redirection, revealing whether the victim is logged in and exposing any confidential query parameters such as a session ID."
 resource: "https://soroush.me/blog/cross-site-url-hijacking-by-using-error-object-in-mozilla-firefox"
-tags: [article, webseclist-reference, en, soroush-me, info-leak, side-channel, xsleak, sop-bypass, same-origin-policy, javascript, novel-technique, detection, owasp-a01-2021, owasp-a09-2021]
+tags: [article, webseclist-reference, en, soroush-me, info-leak, side-channel, xsleak, sop-bypass, same-origin-policy, javascript, detection, owasp-a01-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:21+00:00"

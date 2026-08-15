@@ -3,7 +3,7 @@ type: Article
 title: RPO
 description: "Relative Path Overwrite adds a trailing slash or fake directory segments to a URL so a page's relative stylesheet reference resolves back to the page itself. The browser then parses the HTML as CSS, and attacker-controlled reflected or stored text beginning with a brace becomes live CSS, giving style injection everywhere and script execution through expressions in older IE modes."
 resource: "http://www.thespanner.co.uk/2014/03/21/rpo/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, css-injection, xss, css, url-parsing, parser-differential, php, novel-technique, owasp-a03-2021]
+tags: [article, webseclist-reference, en, thespanner-co-uk, css-injection, xss, css, url-parsing, parser-differential, php, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:26:41+00:00"

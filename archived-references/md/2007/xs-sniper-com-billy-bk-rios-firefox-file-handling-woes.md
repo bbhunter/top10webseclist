@@ -3,7 +3,7 @@ type: Article
 title: Billy (BK) Rios » Firefox File Handling Woes
 description: "MFSA2007-27 patched the demonstrations but not the underlying Windows Shell file-type handling. Rios and McFeters show a common handler can still be driven with a single unexpected URI passed through mailto, nntp, news or snews with no user interaction: Firefox hands the URI to the Windows File Handler, which launches Windows Scripting Host on an attacker-named file."
 resource: "http://xs-sniper.com/blog/2007/09/01/firefox-file-handling-woes/"
-tags: [article, webseclist-reference, xs-sniper-com, rce, url-parsing, filter-bypass, attack-chain, cve, mitigation, novel-technique, owasp-a05-2021]
+tags: [article, webseclist-reference, xs-sniper-com, rce, url-parsing, filter-bypass, attack-chain, cve, mitigation, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:47+00:00"

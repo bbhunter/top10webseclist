@@ -3,7 +3,7 @@ type: Article
 title: Abusing HTTP Status Codes to Expose Private Information
 description: A hidden image whose src is a GMail profile photo fires onload when the visitor is signed in and onerror when the request redirects instead, revealing login state silently. The same trick works with script tags against Twitter, Facebook and Digg because those URLs return 200 or 403/404 depending on session state. Google called it expected behaviour.
 resource: "https://grepular.com/Abusing_HTTP_Status_Codes_to_Expose_Private_Information"
-tags: [article, webseclist-reference, en, grepular-com, xsleak, info-leak, http, javascript, side-channel, same-origin-policy, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, en, grepular-com, xsleak, info-leak, http, javascript, side-channel, same-origin-policy, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:10:39+00:00"

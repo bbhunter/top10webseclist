@@ -3,7 +3,7 @@ type: Article
 title: "InsertScript: Multiple PDF Vulnerabilities"
 description: "Four Adobe Reader flaws presented at HackPra: GoToE and GoToR actions ignore protocol restrictions so a PDF can reach file:// and other local schemes, app.trustPropagatorFunction can be abused to reach privileged JavaScript and read local files, XFA loadXML allows XXE, and FormCalc GET, POST and PUT fetch URLs with the victim's cookies and follow redirects across origins, turning the browser into a proxy and defeating CSRF tokens."
 resource: "https://web.archive.org/web/20160403035045/http://insert-script.blogspot.com/2014/12/multiple-pdf-vulnerabilites-text-and.html"
-tags: [article, webseclist-reference, insert-script-blogspot-com, sop-bypass, xxe, pdf, same-origin-policy, info-leak, csrf, privilege-escalation, cve, novel-technique, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, insert-script-blogspot-com, sop-bypass, xxe, pdf, same-origin-policy, info-leak, csrf, privilege-escalation, cve, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:29:18+00:00"

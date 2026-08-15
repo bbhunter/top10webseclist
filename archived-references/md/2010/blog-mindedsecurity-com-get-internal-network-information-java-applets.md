@@ -3,7 +3,7 @@ type: Article
 title: Get Internal Network Information with Java Applets
 description: "Two Java applet leaks. NetworkInterface.hashCode() is the sum of each bound address's integer value, so reversing it recovers the IP of any local NIC, including VPN interfaces the same-origin policy hides. Asking Java to resolve a name through 'dns://' makes the VM query the default resolver and return its IP inside the error."
 resource: "http://blog.mindedsecurity.com/2010/10/get-internal-network-information-with.html"
-tags: [article, webseclist-reference, blog-mindedsecurity-com, java, info-leak, same-origin-policy, sop-bypass, dns, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, blog-mindedsecurity-com, java, info-leak, same-origin-policy, sop-bypass, dns, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:05:20+00:00"

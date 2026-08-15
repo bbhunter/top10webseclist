@@ -3,7 +3,7 @@ type: Whitepaper
 title: Bypassing HTTP Strict Transport Security
 description: "An attacker who can intercept a machine's unauthenticated NTP traffic can push its clock far into the future, expiring stored HSTS policies and even preloaded entries, so the browser talks plain HTTP again and SSLStrip works. The Delorean tool automates this, including a skimming mode that walks the clock forward in small hops to defeat maximum-adjustment limits."
 resource: "https://blackhat.com/docs/eu-14/materials/eu-14-Selvi-Bypassing-HTTP-Strict-Transport-Security-wp.pdf"
-tags: [whitepaper, webseclist-reference, https, tls, http, tooling, novel-technique, owasp-a02-2021]
+tags: [whitepaper, webseclist-reference, https, tls, http, tooling, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:38:26+00:00"

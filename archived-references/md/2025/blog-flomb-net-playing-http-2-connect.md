@@ -3,7 +3,7 @@ type: Article
 title: Playing with HTTP/2 CONNECT
 description: In HTTP/2 the CONNECT method tunnels over a single stream instead of hijacking the whole TCP connection, so many tunnels can be multiplexed on one connection. The author builds a Go tool that abuses this against misconfigured proxies to port-scan internal networks quickly, and notes the multiplexed traffic can slip past network monitoring.
 resource: "https://blog.flomb.net/posts/http2connect/"
-tags: [article, webseclist-reference, blog-flomb-net, http2, proxy, ssrf, go, tooling, http, info-leak, novel-technique, owasp-a10-2021]
+tags: [article, webseclist-reference, blog-flomb-net, http2, proxy, ssrf, go, tooling, http, info-leak, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:04:05+00:00"

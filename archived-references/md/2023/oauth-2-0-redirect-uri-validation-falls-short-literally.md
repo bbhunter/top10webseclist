@@ -3,7 +3,7 @@ type: Whitepaper
 title: OAuth 2.0 Redirect URI Validation Falls Short, Literally
 description: "The OAuth 2.0 rule to compare redirect_uri by simple string comparison guards only the domain, so appended path-confusion payloads and injected duplicate code parameters still pass validation, at 6 and 10 of 16 major identity providers respectively. Chained with an open redirect or an ad script anywhere on the client site, this leaks the victim's authorization code and yields account takeover."
 resource: "https://seclab.nu/static/publications/acsac23oauth.pdf"
-tags: [whitepaper, webseclist-reference, acsac-23, oauth, open-redirect, url-parsing, parser-differential, sso, auth-bypass, novel-technique, measurement-study, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
+tags: [whitepaper, webseclist-reference, acsac-23, oauth, open-redirect, url-parsing, parser-differential, sso, auth-bypass, measurement-study, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T16:32:02+00:00"

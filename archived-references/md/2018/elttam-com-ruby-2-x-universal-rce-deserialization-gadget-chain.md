@@ -3,7 +3,7 @@ type: Article
 title: Ruby 2.x Universal RCE Deserialization Gadget Chain
 description: "A universal deserialization gadget chain built only from the Ruby standard library loaded by default, so Marshal.load on untrusted bytes runs commands with no gems present and no missing-method call needed. It routes Gem::Requirement through DependencyList, a spaceship comparison and StubSpecification#name into Kernel.open, where a leading pipe executes a shell command on Ruby 2.0 to 2.5."
 resource: "https://www.elttam.com/blog/ruby-deserialization"
-tags: [article, webseclist-reference, en, elttam-com, deserialization, gadget-chain, rce, command-injection, ruby, novel-technique, owasp-a03-2021, owasp-a08-2021]
+tags: [article, webseclist-reference, en, elttam-com, deserialization, gadget-chain, rce, command-injection, ruby, owasp-a03-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:24:47+00:00"

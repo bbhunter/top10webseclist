@@ -3,7 +3,7 @@ type: Article
 title: "I know where you've been"
 description: "Grossman's browser history-stealing proof of concept: write a style block colouring :visited links, create an anchor per candidate site, then read getComputedStyle's colour to learn whether it was visited. Sixty-odd banks, webmail and social sites are probed silently in the sidebar, with no server round trip and nothing for the user to notice."
 resource: "https://jeremiahgrossman.blogspot.com/2006/08/i-know-where-youve-been.html"
-tags: [article, webseclist-reference, en, jeremiahgrossman-blogspot-com, novel-technique, css, javascript, dom, deanonymization, browser-fingerprinting, side-channel, info-leak]
+tags: [article, webseclist-reference, en, jeremiahgrossman-blogspot-com, css, javascript, dom, deanonymization, browser-fingerprinting, side-channel, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T02:39:33+00:00"

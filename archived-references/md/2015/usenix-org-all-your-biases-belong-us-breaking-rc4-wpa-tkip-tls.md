@@ -3,7 +3,7 @@ type: Article
 title: "All Your Biases Belong to Us: Breaking RC4 in WPA-TKIP and TLS"
 description: Newly found statistical biases in the RC4 keystream make plaintext recovery practical against real protocols. An attacker who can have a secret repeatedly encrypted recovers an HTTPS session cookie with 94 percent success from roughly 9 times 2^27 ciphertexts in 75 hours, and breaks WPA-TKIP inside an hour by generating identical packets and deriving the MIC key.
 resource: "https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/vanhoef"
-tags: [article, webseclist-reference, en, usenix-org, tls, https, cookie, info-leak, novel-technique, owasp-a02-2021, owasp-a07-2021]
+tags: [article, webseclist-reference, en, usenix-org, tls, https, cookie, info-leak, owasp-a02-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:46:12+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "Prime+Probe 1, JavaScript 0: Overcoming Browser-based Side-Channel Defenses"
 description: Cache side-channel attacks rebuilt with progressively fewer JavaScript features, ending in one written entirely in CSS and HTML that works with scripting fully disabled. It fingerprints which website a victim is visiting, works across Intel, AMD, Exynos and Apple M1, and is not stopped by Tor Browser, DeterFox or Chrome Zero.
 resource: "https://arxiv.org/abs/2103.04952"
-tags: [article, webseclist-reference, en, arxiv-org, side-channel, xsleak, timing-attack, css, info-leak, javascript, novel-technique, defence]
+tags: [article, webseclist-reference, en, arxiv-org, side-channel, xsleak, timing-attack, css, info-leak, javascript, defence]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:06+00:00"

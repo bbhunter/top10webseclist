@@ -3,7 +3,7 @@ type: Article
 title: "IBM Application Security Insider: DNS poisoning via Port Exhaustion"
 description: "Announces a whitepaper on poisoning stub resolvers by exhausting the source ports available to a client, collapsing DNS query entropy. Two flaws are disclosed: a remote variant driven by Java applets (CVE-2011-3552, CVE-2010-4448) yielding cookie, NTLM and clipboard theft and firewall bypass, and a local variant letting an unprivileged Windows user poison other users."
 resource: "http://blog.watchfire.com/wfblog/2011/10/dns-poisoning-via-port-exhaustion.html"
-tags: [article, webseclist-reference, blog-watchfire-com, dns, cache-poisoning, java, cve, privilege-escalation, info-leak, vendor-advisory, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, blog-watchfire-com, dns, cache-poisoning, java, cve, privilege-escalation, info-leak, vendor-advisory, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:29:36+00:00"

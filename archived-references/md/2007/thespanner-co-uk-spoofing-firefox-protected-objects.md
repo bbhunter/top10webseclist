@@ -3,7 +3,7 @@ type: Article
 title: Spoofing Firefox protected objects
 description: "Gareth Heyes spoofs Firefox's protected document.domain two ways: __defineGetter__ on domain, and reassigning document.__proto__ and document.prototype to String.__proto__. Both make document.domain return an arbitrary host; only location resists. The published capture carries none of it, just a run of links to unrelated later posts."
 resource: "http://www.thespanner.co.uk/2007/11/14/spoofing-firefox-protected-objects/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, javascript, dom, same-origin-policy, sop-bypass, filter-bypass, novel-technique, owasp-a01-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, thespanner-co-uk, javascript, dom, same-origin-policy, sop-bypass, filter-bypass, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:38+00:00"

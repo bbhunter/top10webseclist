@@ -3,7 +3,7 @@ type: Whitepaper
 title: Three New Attacks Against JSON Web Tokens
 description: "Three JWT library flaws: a token encrypted to the public half of a signing key pair is accepted as authentic, a JSON-serialized JWS smuggles unsigned claims past a validator that splits the token on dots, and a PBES2 header with a huge iteration count burns CPU before any authentication tag is checked. The first two forge arbitrary tokens; the third is a denial of service."
 resource: "https://i.blackhat.com/BH-US-23/Presentations/US-23-Tervoort-Three-New-Attacks-Against-JSON-Web-Tokens-whitepaper.pdf"
-tags: [whitepaper, webseclist-reference, jwt, parser-differential, auth-bypass, algorithmic-complexity, dos, privilege-escalation, python, cve, novel-technique, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
+tags: [whitepaper, webseclist-reference, jwt, parser-differential, auth-bypass, algorithmic-complexity, dos, privilege-escalation, python, cve, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T22:37:18+00:00"

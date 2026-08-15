@@ -3,7 +3,7 @@ type: Article
 title: "The State of Passkeys: Studying the Adoption and Security of Passkeys on the Web"
 description: Measures passkey deployment on the web and tests the security of live implementations. A continuously updated dataset built from community directories, Tranco, CrUX and archived pages covers 872 passkey-enabled sites and finds inconsistent registration and deletion flows and requests for deprecated algorithms. A protocol-manipulation tool covering 15 attack types found account takeover, passkey deletion or lockout on 18 of 103 sites, and high-severity flaws on 53.
 resource: "https://www.usenix.org/conference/usenixsecurity26/presentation/jannett"
-tags: [article, webseclist-reference, en, usenix, passkeys, webauthn, auth-bypass, measurement-study, session-fixation, phishing, large-scale-scan, tooling, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
+tags: [article, webseclist-reference, en, usenix, webauthn, auth-bypass, measurement-study, session-fixation, phishing, large-scale-scan, tooling, owasp-a01-2021, owasp-a04-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T14:00:54+00:00"

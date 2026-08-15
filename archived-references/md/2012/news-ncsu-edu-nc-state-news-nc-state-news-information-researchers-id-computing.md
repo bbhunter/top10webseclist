@@ -3,7 +3,7 @@ type: Article
 title: "NC State News :: NC State News and Information » Researchers ID Ways to Exploit ‘Cloud Browsers’ for Large-Scale, Anonymous Computing"
 description: "An NC State release for the ACSAC 2012 paper \"Abusing Cloud-Based Browsers for Fun and Profit\". Cloud browsers render pages server-side, so the team built a Browser MapReduce client on a reverse-engineered Puffin and passed data between nodes as URL-shortener links. Word count, distributed grep and sort ran on 100MB of free, anonymous compute."
 resource: "https://web.archive.org/web/20170903113359/http://news.ncsu.edu/releases/wms-enck-cloud-browsers/"
-tags: [article, webseclist-reference, news-ncsu-edu, novel-technique, javascript, measurement-study, case-study]
+tags: [article, webseclist-reference, news-ncsu-edu, javascript, measurement-study, case-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:21:44+00:00"

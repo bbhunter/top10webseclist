@@ -3,7 +3,7 @@ type: Article
 title: lanmaster53.com
 description: "Gmail's Report Spam button also offers to unsubscribe, and taking that offer makes Google open the message's unsubscribe URL in the user's browser. An attacker can put a CSRF payload in that link, so the very action users are trained to take on suspicious mail fires the request from their session."
 resource: "https://www.lanmaster53.com/2018/03/15/report-spam-get-owned/"
-tags: [article, webseclist-reference, en, lanmaster53-com, csrf, email, cookie, dns, novel-technique, case-study, owasp-a01-2021, owasp-a07-2021]
+tags: [article, webseclist-reference, en, lanmaster53-com, csrf, email, cookie, dns, case-study, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:59+00:00"

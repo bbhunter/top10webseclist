@@ -3,7 +3,7 @@ type: Whitepaper
 title: Web Timing Attacks Made Practical
 description: Differences in how long a web application takes to answer reveal which path its security logic took, but network noise normally buries them. The work compares statistical classifiers by Monte Carlo simulation and measures round-trip times from sniffed packets and TCP timestamps, giving testers a tool, Nanown, that detects and exploits them remotely.
 resource: "https://www.blackhat.com/docs/us-15/materials/us-15-Morgan-Web-Timing-Attacks-Made-Practical-wp.pdf"
-tags: [whitepaper, webseclist-reference, timing-attack, side-channel, info-leak, http, tooling, measurement-study, novel-technique]
+tags: [whitepaper, webseclist-reference, timing-attack, side-channel, info-leak, http, tooling, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:11+00:00"

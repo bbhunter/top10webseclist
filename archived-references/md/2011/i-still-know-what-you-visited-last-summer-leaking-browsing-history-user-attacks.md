@@ -3,7 +3,7 @@ type: Whitepaper
 title: "I Still Know What You Visited Last Summer: Leaking Browsing History via User Interaction and Side Channel Attacks"
 description: Browsers blocked automated CSS history sniffing in 2010, so this paper shows what survives. Four fake CAPTCHA and puzzle tasks trick users into typing or clicking what they see, leaking visited links at up to 1000 queries per minute; a study of 307 Mechanical Turk workers measured accuracy and speed. A second attack reads screen colour reflected off the user via their webcam.
 resource: "https://research.owlfolio.org/pubs/2011-i-still-know.pdf"
-tags: [whitepaper, webseclist-reference, side-channel, xsleak, info-leak, css, javascript, measurement-study, novel-technique, timing-attack]
+tags: [whitepaper, webseclist-reference, side-channel, xsleak, info-leak, css, javascript, measurement-study, timing-attack]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T03:34:55+00:00"

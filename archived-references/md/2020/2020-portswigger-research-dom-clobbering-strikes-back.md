@@ -3,7 +3,7 @@ type: Article
 title: DOM Clobbering strikes back
 description: DOM clobbering gives HTML elements id and name attributes so they overwrite globals and object properties that script later trusts. New variants clobber three levels deep with forms and DOM collections, control an anchor username, password and href, steer values through a base tag, and nest srcdoc iframes to clobber arbitrarily deep without a timer.
 resource: "https://portswigger.net/research/dom-clobbering-strikes-back"
-tags: [article, webseclist-reference, portswigger-research, dom-clobbering, dom, xss, iframe, url-parsing, javascript, novel-technique, prior-art-extension, owasp-a03-2021, owasp-a08-2021]
+tags: [article, webseclist-reference, portswigger-research, dom-clobbering, dom, xss, iframe, url-parsing, javascript, prior-art-extension, owasp-a03-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:41+00:00"

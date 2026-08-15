@@ -3,7 +3,7 @@ type: Article
 title: A Security Study about Electron Applications and a Programming Methodology to Tame DOM Functionalities
 description: Real-world Electron desktop apps inherit web injection bugs, letting attacker-supplied content reach DOM sinks and escalate into local-machine exploitation. The authors report vulnerabilities confirmed by vendors and propose DOM-tree type, a specification of the DOM shapes an app expects, enforced inside the Electron platform so an exploit surfaces as a type violation.
 resource: "https://www.ndss-symposium.org/ndss-paper/a-security-study-about-electron-applications-and-a-programming-methodology-to-tame-dom-functionalities/"
-tags: [article, webseclist-reference, en, ndss-symposium, electron, dom, xss, rce, nodejs, javascript, defence, novel-technique, owasp-a03-2021]
+tags: [article, webseclist-reference, en, ndss-symposium, electron, dom, xss, rce, nodejs, javascript, defence, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:15+00:00"

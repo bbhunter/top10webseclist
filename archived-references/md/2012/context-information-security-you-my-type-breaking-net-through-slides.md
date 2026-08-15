@@ -3,7 +3,7 @@ type: Whitepaper
 title: Are You My Type? Breaking .NET Through Serialization - Slides
 description: "Forshaw's Black Hat deck on abusing .NET binary serialization. Deserializing untrusted data can be malicious by itself through finalizers and ISerializable constructors, and SerializationInfo.SetType lets partial-trust code deserialize an object as an unrelated type. Serialized delegates give type confusion and a vtable call, and Hashtable rebuilding calls back into a caller-supplied comparer."
 resource: "https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_Slides.pdf"
-tags: [whitepaper, webseclist-reference, context-information-security, deserialization, dotnet, sandbox-escape, gadget-chain, rce, cve, novel-technique, privilege-escalation, owasp-a01-2021, owasp-a08-2021]
+tags: [whitepaper, webseclist-reference, context-information-security, deserialization, dotnet, sandbox-escape, gadget-chain, rce, cve, privilege-escalation, owasp-a01-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-12T16:04:46+00:00"

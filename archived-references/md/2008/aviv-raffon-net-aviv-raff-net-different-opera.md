@@ -3,7 +3,7 @@ type: Article
 title: Aviv Raff On .NET - A different Opera
 description: "opera:config is the one Opera local resource that can reach local files and rewrite browser settings, including the external mail handler — set that and any mailto: navigation runs arbitrary code. Opera 9.62 patched a parameter injection in opera:historysearch that let a remote script frame opera:config and drive it, but Opera still enforces no same-origin boundary between opera: resources."
 resource: "https://web.archive.org/web/20090403024932/http://aviv.raffon.net:80/2008/10/30/ADifferentOpera.aspx"
-tags: [article, webseclist-reference, aviv-raffon-net, xss, rce, same-origin-policy, sop-bypass, iframe, sandbox-escape, novel-technique, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, aviv-raffon-net, xss, rce, same-origin-policy, sop-bypass, iframe, sandbox-escape, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:02:56+00:00"

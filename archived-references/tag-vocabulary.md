@@ -36,6 +36,19 @@ A tag that has fallen to zero documents is **kept**, at `documents: 0`. It was
 agreed once, and deleting it would let the same word be re-argued later and would
 throw away its OWASP mapping.
 
+**An alias to the empty string retires a word for good.** It resolves to nothing
+and is dropped before publication, so a tag that was decided against cannot come
+back by being typed again. Three are retired:
+
+| Retired | Why |
+|---|---|
+| `novel-technique` | was on 743 documents, 45% of the archive. This is a list OF novel techniques, so the tag restated the premise and narrowed no search |
+| `server` | three unrelated documents — a botnet scan, a Rails YAML bug, an XML retrieval talk — left over from folding the capitalised `Server` |
+| `malicious-server` | one document, and "the attacker controls a server" describes a large share of the archive |
+
+`smuggling` is deliberately NOT folded into `request-smuggling`: it carries cookie,
+header and data smuggling, and merging it would mislabel most of its documents.
+
 ## OWASP Top 10
 Categories are **derived, never typed**. A reviewer tags the techniques; the mapping
 in the JSON turns those into categories, which reach the published file as
@@ -45,7 +58,7 @@ JSON.
 
 ## The vocabulary
 
-199 tags, across 1648 documents that carry a digest.
+195 tags, across 1648 documents that carry a digest.
 
 | Tag | Documents | OWASP |
 |---|---|---|
@@ -156,7 +169,6 @@ JSON.
 | `lfi` | 31 | A01:2021, A03:2021 |
 | `llm` | 33 | — |
 | `load-balancer` | 16 | — |
-| `malicious-server` | 1 | — |
 | `mass-assignment` | 11 | A01:2021 |
 | `measurement-study` | 225 | — |
 | `memory-corruption` | 2 | — |
@@ -169,12 +181,10 @@ JSON.
 | `nextjs` | 11 | — |
 | `nodejs` | 69 | — |
 | `nosqli` | 3 | A03:2021 |
-| `novel-technique` | 743 | — |
 | `oauth` | 62 | A07:2021 |
 | `open-redirect` | 62 | A04:2021 |
 | `openid` | 29 | A07:2021 |
 | `parser-differential` | 167 | — |
-| `passkeys` | 10 | A07:2021 |
 | `path-traversal` | 66 | A01:2021 |
 | `pdf` | 23 | — |
 | `perl` | 4 | — |
@@ -205,7 +215,6 @@ JSON.
 | `saml` | 18 | A07:2021 |
 | `sandbox-escape` | 71 | — |
 | `sanitizer-bypass` | 88 | A05:2021 |
-| `server` | 3 | — |
 | `service-worker` | 10 | — |
 | `session-fixation` | 36 | A07:2021 |
 | `side-channel` | 206 | — |
@@ -255,6 +264,10 @@ These spellings fold into another tag before anything is written:
 
 | Written | Published as |
 |---|---|
+| `malicious-server` | `` |
+| `novel-technique` | `` |
+| `passkeys` | `webauthn` |
+| `server` | `` |
 | `wasm` | `webassembly` |
 
 ### OWASP Top 10:2021
@@ -276,4 +289,4 @@ A document earns these from the techniques it is already tagged with; nobody tag
 
 ### Used exactly once
 
-Review these before reusing them: `active-directory`, `argument-injection`, `autofill`, `blind-xss`, `clipboard`, `dependency-confusion`, `file-write`, `identity`, `jailbreak`, `laravel`, `malicious-server`, `subdomain-takeover`, `symfony`, `type-confusion`, `vue`
+Review these before reusing them: `active-directory`, `argument-injection`, `autofill`, `blind-xss`, `clipboard`, `dependency-confusion`, `file-write`, `identity`, `jailbreak`, `laravel`, `subdomain-takeover`, `symfony`, `type-confusion`, `vue`

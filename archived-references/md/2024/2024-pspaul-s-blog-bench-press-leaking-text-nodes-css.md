@@ -3,7 +3,7 @@ type: Article
 title: "Bench Press: Leaking Text Nodes with CSS"
 description: "CSS injected into a <style> tag, under a CSP that blocks scripts and remote fonts. Each hex digit gets an @font-face with unicode-range and descent-override for a unique height; a view-timeline animation reads the element's height into a CSS variable, ::first-line font shrinking exposes one more character per step, and the height difference sets the delay of a paused animation whose keyframes hold attacker URLs loaded as background images. Leaks a whole text node, not just its charset."
 resource: "https://blog.pspaul.de/posts/bench-press-leaking-text-nodes-with-css/"
-tags: [article, webseclist-reference, en, pspaul-s-blog, css-injection, css, info-leak, side-channel, novel-technique, csp, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, pspaul-s-blog, css-injection, css, info-leak, side-channel, csp, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:06:31+00:00"

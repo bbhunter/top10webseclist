@@ -3,7 +3,7 @@ type: Article
 title: "Internal Port Scanning via Crystal Reports « Joshua \"Jabra\" Abraham"
 description: SAP BusinessObjects Crystal Reports exposes the backend host and port through user-controlled viewrpt.cwr parameters, defaulting to port 6400. Because open and closed ports return distinguishable errors - FWM 01005 for a reachable socket, FWM 01003 for none - the apstoken parameter becomes a server-side port scanner that maps internal networks without any client interaction.
 resource: "https://spl0it.wordpress.com/2010/12/02/internal-port-scanning-via-crystal-reports/"
-tags: [article, webseclist-reference, en, joshua-jabra-abraham, ssrf, info-leak, large-scale-scan, detection, case-study, vendor-advisory, novel-technique, owasp-a09-2021, owasp-a10-2021]
+tags: [article, webseclist-reference, en, joshua-jabra-abraham, ssrf, info-leak, large-scale-scan, detection, case-study, vendor-advisory, owasp-a09-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:30+00:00"

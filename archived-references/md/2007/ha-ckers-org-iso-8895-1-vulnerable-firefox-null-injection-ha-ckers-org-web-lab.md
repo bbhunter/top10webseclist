@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab - Archive » ISO-8895-1 Vulnerable in Firefox to Null Injection
 description: RSnake reports that ISO-8859-1 pages, which he had recommended after the UTF-8 and US-ASCII issues, also let null bytes through in Firefox and break naive filters. The vector is touchy about what precedes it. The code was only ever shown in a screenshot, which this capture does not hold.
 resource: "http://ha.ckers.org/blog/20070210/iso-8895-1-vulnerable-in-firefox-to-null-injection/"
-tags: [article, webseclist-reference, ha-ckers-org, charset, encoding, xss, filter-bypass, unicode, sanitizer-bypass, novel-technique, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, ha-ckers-org, charset, encoding, xss, filter-bypass, unicode, sanitizer-bypass, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:54:32+00:00"

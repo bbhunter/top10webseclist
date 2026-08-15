@@ -3,7 +3,7 @@ type: Article
 title: Pwning Ubuntu via CUPS
 description: "pagvac uses the browser as a bridge to a localhost-only daemon: cupsd runs as root on default Ubuntu Desktop and listens on 127.0.0.1:631, and a web page writing 101 image tags at its add-rss-subscription endpoint crashes it reliably, with no CUPS authentication on 8.04. Includes the crash PoC, a bash cleanup script, and the argument that root-owned local services are remotely reachable via CSRF."
 resource: "https://www.gnucitizen.org/blog/pwning-ubuntu-via-cups/"
-tags: [article, webseclist-reference, en-US, gnucitizen-org, csrf, dos, privilege-escalation, case-study, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, en-US, gnucitizen-org, csrf, dos, privilege-escalation, case-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:20+00:00"

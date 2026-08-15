@@ -3,7 +3,7 @@ type: Article
 title: "DNS Prefetching and Its Privacy Implications: When Good Things Go Bad"
 description: Browsers pre-resolve every link on a result page, stamping a burst of same-age records into the resolver cache. The authors cluster cache entries by age, tokenise the domains and feed them to a suggest engine to reconstruct the search terms. Offline against BIND dumps they hit 85% true positives; remote cache snooping reached 90% accuracy at a 10-minute scan rate.
 resource: "https://www.usenix.org/conference/leet-10/dns-prefetching-and-its-privacy-implications-when-good-things-go-bad"
-tags: [article, webseclist-reference, dns, cache, side-channel, info-leak, measurement-study, novel-technique, timing-attack]
+tags: [article, webseclist-reference, dns, cache, side-channel, info-leak, measurement-study, timing-attack]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:05:12+00:00"

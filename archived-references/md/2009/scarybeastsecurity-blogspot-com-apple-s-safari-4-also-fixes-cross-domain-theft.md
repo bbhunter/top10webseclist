@@ -3,7 +3,7 @@ type: Article
 title: "Apple's Safari 4 also fixes cross-domain XML theft"
 description: "Safari 4 fixed a cross-domain XML theft in which one origin could read another origin's XML: XHTML, AJAX RPC responses and authenticated feeds. The demo steals the XML of a logged-in Gmail user's inbox. The post argues that each new browser feature referencing content by URI is another chance for a missing cross-domain check."
 resource: "https://scarybeastsecurity.blogspot.com/2009/06/apples-safari-4-also-fixes-cross-domain.html"
-tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com, same-origin-policy, sop-bypass, info-leak, xsleak, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, en, scarybeastsecurity-blogspot-com, same-origin-policy, sop-bypass, info-leak, xsleak, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:27+00:00"

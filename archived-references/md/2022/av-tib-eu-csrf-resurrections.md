@@ -3,7 +3,7 @@ type: Article
 title: The CSRF Resurrections
 description: "A DEF CON 30 talk arguing that SameSite cookies did not kill CSRF. Chaining three interacting web features, a PWA service worker, the Fetch API and SameSite's own rules, lets cross-site requests reach a target with cookies attached, and popular libraries make the pattern easy to introduce by accident."
 resource: "https://av.tib.eu/media/62200"
-tags: [article, webseclist-reference, en, av-tib-eu, csrf, service-worker, cookie, sop-bypass, javascript, novel-technique, owasp-a01-2021, owasp-a07-2021]
+tags: [article, webseclist-reference, en, av-tib-eu, csrf, service-worker, cookie, sop-bypass, javascript, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:07+00:00"

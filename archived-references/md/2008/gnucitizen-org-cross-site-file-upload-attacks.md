@@ -3,7 +3,7 @@ type: Article
 title: Cross-site File Upload Attacks
 description: "pdp shows that Flash defeats the assumption that file uploads cannot be forged cross-site. A compiled MXML application builds a URLRequest with a hand-written multipart/form-data body, including the filename sub-field HTML forms cannot express, and navigateToURL posts it to the victim's upload endpoint."
 resource: "https://www.gnucitizen.org/blog/cross-site-file-upload-attacks/"
-tags: [article, webseclist-reference, en, gnucitizen-org, csrf, flash, file-upload, sop-bypass, php, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, en, gnucitizen-org, csrf, flash, file-upload, sop-bypass, php, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:47+00:00"

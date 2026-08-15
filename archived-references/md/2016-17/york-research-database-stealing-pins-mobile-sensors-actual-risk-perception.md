@@ -3,7 +3,7 @@ type: Article
 title: "Stealing PINs via Mobile Sensors: Actual Risk versus User Perception"
 description: PINlogger.js reads a phone motion and orientation sensor streams from an ordinary web page, with no permission prompt, and feeds them to a neural network that infers the PIN being typed. It named the right PIN out of fifty on the first guess 74 percent of the time and 94 percent within three, while user studies show people rank these sensors as low risk.
 resource: "https://pure.york.ac.uk/portal/en/publications/stealing-pins-via-mobile-sensors-actual-risk-versus-user-percepti/"
-tags: [article, webseclist-reference, en, york-research-database, side-channel, info-leak, javascript, android, novel-technique, measurement-study]
+tags: [article, webseclist-reference, en, york-research-database, side-channel, info-leak, javascript, android, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-08T23:55:00+00:00"

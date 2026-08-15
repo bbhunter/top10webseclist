@@ -3,7 +3,7 @@ type: Article
 title: Automated HTTPS Cookie Hijacking
 description: "Mike Perry's DEFCON 16 disclosure of fully automated HTTPS session hijacking. A network attacker caches DNS answers to learn which host each client resolved before every port 443 connection, then injects image tags for those domains into the client's next plain HTTP page, forcing non-Secure cookies over cleartext and writing them to a Firefox cookie file."
 resource: "https://fscked.org/blog/fully-automated-active-https-cookie-hijacking"
-tags: [article, webseclist-reference, en, fscked-org, https, cookie, tls, dns, tooling, info-leak, novel-technique, owasp-a02-2021, owasp-a07-2021]
+tags: [article, webseclist-reference, en, fscked-org, https, cookie, tls, dns, tooling, info-leak, owasp-a02-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:40+00:00"

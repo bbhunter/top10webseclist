@@ -3,7 +3,7 @@ type: Article
 title: Double eval() for DOM based XSS
 description: "Where a DOM sink is eval('getProduct('+koko+')'), a payload that needs its own quotes breaks the surrounding string and only raises a syntax error. Wrapping it in a second eval over String.fromCharCode passes digits alone through the outer string, and the inner eval rebuilds and runs the quoted payload. It turns an apparently unexploitable DOM XSS into a working proof."
 resource: "https://shreeraj.blogspot.com/2011/12/double-eval-for-dom-based-xss.html"
-tags: [article, webseclist-reference, en, shreeraj-blogspot-com, xss, dom, javascript, filter-bypass, encoding, novel-technique, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, shreeraj-blogspot-com, xss, dom, javascript, filter-bypass, encoding, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:58:59+00:00"

@@ -3,7 +3,7 @@ type: Whitepaper
 title: Tail Attacks on Web Applications
 description: "A low-volume denial of service on n-tier web stacks: short bursts of ordinary HTTP requests trigger millibottlenecks and cross-tier queue overflow, pushing tail response time past a second while CPU and memory stay far from saturation. A queueing model and feedback control tune burst size and period to background load, so volume-based DDoS defences never fire."
 resource: "https://acmccs.github.io/papers/p1725-shanAemb.pdf"
-tags: [whitepaper, webseclist-reference, dos, http, novel-technique, measurement-study, detection, defence, owasp-a09-2021]
+tags: [whitepaper, webseclist-reference, dos, http, measurement-study, detection, defence, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:32+00:00"

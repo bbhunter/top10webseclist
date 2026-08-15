@@ -3,7 +3,7 @@ type: Article
 title: usefulfor.com/security » Blog Archive » DHCP Script Injection
 description: "A DHCPREQUEST whose Options Hostname field carries HTML or script is stored by the DHCP server and executed when an administrator opens the active-leases page of a router's web admin interface. The injected iframe loads attacker JavaScript that auto-submits a CSRF POST to exec.php and runs shell commands. Demonstrated against pfSense, with tool and advisory."
 resource: "http://usefulfor.com/security/2008/08/04/dhcp-script-injection/"
-tags: [article, webseclist-reference, usefulfor-com, xss, injection, csrf, attack-chain, command-injection, novel-technique, tooling, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, usefulfor-com, xss, injection, csrf, attack-chain, command-injection, tooling, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:36+00:00"

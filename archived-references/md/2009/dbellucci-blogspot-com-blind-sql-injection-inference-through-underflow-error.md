@@ -3,7 +3,7 @@ type: Article
 title: "Blind SQL Injection: Inference through Underflow Error"
 description: "A blind SQL injection with no true/false oracle is turned into one by arithmetic: dividing by INSTR(SUBSTR(...)) raises a divide-by-zero exception whenever a guessed character is wrong, and the application's error handler returns a distinguishable second message. Character-by-character inference then reads the Oracle version out of v$instance."
 resource: "https://dbellucci.blogspot.com/2009/12/blind-sql-injection-inference-through.html"
-tags: [article, webseclist-reference, dbellucci-blogspot-com, sqli, database, injection, side-channel, novel-technique, owasp-a03-2021]
+tags: [article, webseclist-reference, dbellucci-blogspot-com, sqli, database, injection, side-channel, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:08:43+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: CSRF And Ignoring Basic/Digest Auth ha.ckers.org web application security lab
 description: CSRF against routers and similar devices protected by Basic or Digest auth normally raises a login popup that warns the victim. Requesting the target URL through a CSS background-image on a DIV suppresses that dialog in Internet Explorer, so a failed GET-based CSRF stays silent. Other browsers were not found to behave this way, and POST-based CSRF is unaffected.
 resource: "http://ha.ckers.org/blog/20090630/csrf-and-ignoring-basicdigest-auth/"
-tags: [article, webseclist-reference, ha-ckers-org, csrf, css, auth-bypass, http, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, ha-ckers-org, csrf, css, auth-bypass, http, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T05:08:04+00:00"

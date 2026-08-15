@@ -3,7 +3,7 @@ type: Article
 title: "CSS :visited may be a bit overrated"
 description: "Browser vendors crippled CSS :visited to stop history theft, and cache timing was treated as a weaker substitute because earlier attacks were destructive, probabilistic and slow. This proof of concept performs reliable, high-performance, non-destructive cache inspection, arguing the gap between :visited and the less interesting techniques is small."
 resource: "https://lcamtuf.blogspot.com/2011/12/css-visited-may-be-bit-overrated.html"
-tags: [article, webseclist-reference, lcamtuf-blogspot-com, side-channel, timing-attack, cache, css, info-leak, novel-technique]
+tags: [article, webseclist-reference, lcamtuf-blogspot-com, side-channel, timing-attack, cache, css, info-leak]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:31:01+00:00"

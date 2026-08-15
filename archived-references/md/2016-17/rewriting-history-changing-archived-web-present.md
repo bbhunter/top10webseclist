@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Rewriting History: Changing the Archived Web from the Present"
 description: "Three flaws in the Wayback Machine let anyone rewrite the past. URL rewriting misses JavaScript-computed URLs, so snapshots fetch live subresources whose domain owner can serve any script; serving every archived origin from web.archive.org collapses the same-origin policy, letting an archived iframe rewrite its parent; and never-archived resources plus nearest-neighbour timestamp matching make an attacker's late upload the closest capture. 74% of top sites were vulnerable."
 resource: "https://acmccs.github.io/papers/p1741-lernerAT3.pdf"
-tags: [whitepaper, webseclist-reference, sop-bypass, same-origin-policy, iframe, javascript, measurement-study, novel-technique, defence, owasp-a01-2021]
+tags: [whitepaper, webseclist-reference, sop-bypass, same-origin-policy, iframe, javascript, measurement-study, defence, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:49+00:00"

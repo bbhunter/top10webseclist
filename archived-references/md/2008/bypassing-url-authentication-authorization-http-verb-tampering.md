@@ -3,7 +3,7 @@ type: Whitepaper
 title: Bypassing URL Authentication and Authorization with HTTP Verb Tampering
 description: "Verb-based access control fails open: rules that list GET and POST permit everything else. A HEAD request reaches the GET handler unauthenticated, and Java EE and PHP also run arbitrary verbs such as JEFF against JSPs, returning the full body. Covers web.xml, ASP.NET authorization and SiteMinder, and gives the deny-all and remove-http-method fixes."
 resource: "https://www.aspectsecurity.com/documents/Bypassing_VBAAC_with_HTTP_Verb_Tampering.pdf"
-tags: [whitepaper, webseclist-reference, aspect-security, http, auth-bypass, java, aspnet, waf-bypass, php, novel-technique, mitigation, owasp-a01-2021, owasp-a05-2021]
+tags: [whitepaper, webseclist-reference, aspect-security, http, auth-bypass, java, aspnet, waf-bypass, php, mitigation, owasp-a01-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T16:32:23+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "A Bug Hunter's Rhapsody: Cross Site Port Attacks - XSPA"
 description: "Part one of three naming Cross Site Port Attacks (XSPA): an application that fetches a user-supplied URL can be driven to port-scan intranet and Internet hosts, grab banners, fingerprint internal apps and read local files. Shows the vulnerable PHP patterns file_get_contents, fsockopen and curl_exec, and lists finds in Facebook, Google, Mozilla, Yahoo and Pinterest."
 resource: "https://web.archive.org/web/20170903113359/http://www.riyazwalikar.com/2012/11/cross-site-port-attacks-xspa-part-1.html"
-tags: [article, webseclist-reference, riyazwalikar-com, ssrf, php, info-leak, url-parsing, bug-bounty, novel-technique, lfi, owasp-a01-2021, owasp-a03-2021, owasp-a10-2021]
+tags: [article, webseclist-reference, riyazwalikar-com, ssrf, php, info-leak, url-parsing, bug-bounty, lfi, owasp-a01-2021, owasp-a03-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:21:46+00:00"

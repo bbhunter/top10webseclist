@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab - Archive » Stealing User Information Via Automatic Form Filling
 description: "Browser and toolbar autofill features populate fields by name without asking the user, so an XSS payload can inject a hidden form carrying common field names and harvest whatever autofill supplies: name, address, card number, expiry. No social engineering is needed and the form need never be visible."
 resource: "http://ha.ckers.org/blog/20060821/stealing-user-information-via-automatic-form-filling/"
-tags: [article, webseclist-reference, ha-ckers-org, xss, info-leak, phishing, abuse-of-functionality, dom, novel-technique, owasp-a03-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, ha-ckers-org, xss, info-leak, phishing, abuse-of-functionality, dom, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:37+00:00"

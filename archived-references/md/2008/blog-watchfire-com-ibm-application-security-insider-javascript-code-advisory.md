@@ -3,7 +3,7 @@ type: Article
 title: "IBM Application Security Insider: JavaScript Code Flow Manipulation, and a real world example advisory"
 description: "CVE-2008-2640: every Flex 3 build ships history/historyFrame.html, which does document.write on document.location.href. Direct exploitation fails because processUrl first calls parent.BrowserHistory. The fix is JavaScript flow manipulation - the attacker's parent page names a bogus iframe _ie_firstload, so the child reads an iframe where it expected a JS object and the branch flips."
 resource: "http://blog.watchfire.com/wfblog/2008/06/javascript-code.html"
-tags: [article, webseclist-reference, blog-watchfire-com, xss, dom, iframe, flash, cve, same-origin-policy, novel-technique, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, blog-watchfire-com, xss, dom, iframe, flash, cve, same-origin-policy, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:34+00:00"

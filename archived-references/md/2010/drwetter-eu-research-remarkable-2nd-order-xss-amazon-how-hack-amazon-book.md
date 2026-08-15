@@ -3,7 +3,7 @@ type: Article
 title: "Research: Remarkable 2nd order XSS @ Amazon or How to hack Amazon with a book"
 description: "Amazon's search-inside-this-book feature passed matched book text unfiltered into a tooltipText variable, so script printed in a published book executed when a shopper moused over a search result. Web security books already contain such payloads, making the printed page itself the injection channel into amazon.de, .co.uk and .com."
 resource: "http://drwetter.eu/amazon/"
-tags: [article, webseclist-reference, en, drwetter-eu, xss, case-study, dom, novel-technique, encoding, charset, filter-bypass, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, drwetter-eu, xss, case-study, dom, encoding, charset, filter-bypass, owasp-a02-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:35:02+00:00"

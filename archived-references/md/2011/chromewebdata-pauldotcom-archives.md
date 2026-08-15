@@ -3,7 +3,7 @@ type: Article
 title: "PaulDotCom: Archives"
 description: Cookie theft through XSS usually leaves a visible clue that warns the victim to log out. This post instantiates a JavaScript Image object and sets its src to an attacker URL carrying document.cookie, so the browser issues the GET, stores the response in memory and renders nothing. The image is never used and the transfer stays invisible.
 resource: "http://pauldotcom.com/2011/05/stealth-cookie-stealing-new-xs.html"
-tags: [article, webseclist-reference, pauldotcom-com, xss, cookie, info-leak, javascript, case-study, novel-technique, owasp-a03-2021, owasp-a07-2021]
+tags: [article, webseclist-reference, pauldotcom-com, xss, cookie, info-leak, javascript, case-study, owasp-a03-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:05+00:00"

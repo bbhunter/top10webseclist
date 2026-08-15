@@ -3,7 +3,7 @@ type: Whitepaper
 title: JavaScript Port Scanning
 description: "Grossman and Niedzialkowski's Black Hat USA 2006 deck 'Hacking Intranet Websites from the Outside'. A Java applet leaks the NAT'ed internal IP, <SCRIPT SRC> to an internal host reveals a listener by the JS parse error, and cycling platform-unique image URLs with onerror fingerprints it blindly. POST-to-GET then rewrites router passwords, opens the DMZ and drives HP printers."
 resource: "https://www.whitehatsec.com/home/resources/presentations/files/javascript_malware.pdf"
-tags: [whitepaper, webseclist-reference, novel-technique, javascript, sop-bypass, csrf, xss, browser-fingerprinting, detection, owasp-a01-2021, owasp-a03-2021, owasp-a09-2021]
+tags: [whitepaper, webseclist-reference, javascript, sop-bypass, csrf, xss, browser-fingerprinting, detection, owasp-a01-2021, owasp-a03-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:46+00:00"

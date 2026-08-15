@@ -3,7 +3,7 @@ type: Article
 title: Increased DNS Forgery Resistance Through 0x20-Bit Encoding
 description: "Randomise the case of each letter in a DNS query name: authority servers copy the question section back bit-for-bit, so the case pattern becomes a free extra token an off-path poisoner must guess alongside the ID and source port. Stateless, AES-derived, recursive-side only. A 5.6M-packet trace gives ~12 extra bits on average, and scanning .com/.net authorities found over 99.7% preserve case."
 resource: "https://coeus.ece.gatech.edu/2008/10/01/DNS_Forgery/"
-tags: [article, webseclist-reference, dns, cache-poisoning, mitigation, defence, measurement-study, large-scale-scan, encoding, novel-technique]
+tags: [article, webseclist-reference, dns, cache-poisoning, mitigation, defence, measurement-study, large-scale-scan, encoding]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:18+00:00"

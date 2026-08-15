@@ -3,7 +3,7 @@ type: Article
 title: JNDI Injection Remote Code Execution via Path Manipulation in MemoryUserDatabaseFactory
 description: A JNDI lookup pointed at a Tomcat user-database factory lets an attacker set its pathname and readonly properties, so the factory fetches attacker-hosted XML and writes it back out to a chosen path. Chaining a bean factory with a directory-creating utility satisfies the writeability check, giving arbitrary file write and remote code execution.
 resource: "https://srcincite.io/blog/2024/07/21/jndi-injection-rce-via-path-manipulation-in-memoryuserdatabasefactory.html"
-tags: [article, webseclist-reference, en, srcincite-io, rce, gadget-chain, path-traversal, injection, java, attack-chain, novel-technique, owasp-a01-2021, owasp-a03-2021, owasp-a08-2021]
+tags: [article, webseclist-reference, en, srcincite-io, rce, gadget-chain, path-traversal, injection, java, attack-chain, owasp-a01-2021, owasp-a03-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:00:56+00:00"

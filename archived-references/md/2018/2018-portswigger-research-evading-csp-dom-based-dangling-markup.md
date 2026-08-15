@@ -3,7 +3,7 @@ type: Article
 title: Evading CSP with DOM-based dangling markup
 description: "Dangling markup normally dies under a strict CSP because no external resource may load. Injecting an unterminated base target attribute, or a form target, instead captures the following page markup into window.name, so a single victim click hands CSRF tokens and other secrets to an attacker page even under default-src 'none'."
 resource: "https://portswigger.net/blog/evading-csp-with-dom-based-dangling-markup"
-tags: [article, webseclist-reference, portswigger-research, csp, info-leak, dom, xss, sop-bypass, csrf, novel-technique, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, portswigger-research, csp, info-leak, dom, xss, sop-bypass, csrf, owasp-a01-2021, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:12+00:00"

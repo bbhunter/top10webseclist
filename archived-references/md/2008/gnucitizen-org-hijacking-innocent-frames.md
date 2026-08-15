@@ -3,7 +3,7 @@ type: Article
 title: Hijacking Innocent Frames
 description: "pdp on navigation hijacking: a page opens a window to a trusted site, polls it for login completion using script tags and error-code offsets, then rewrites w.location once the user has authenticated, dropping a lookalike \"login failed\" page under them. The address bar is never rechecked, so credentials are re-entered to the attacker."
 resource: "https://www.gnucitizen.org/blog/hijacking-innocent-frames/"
-tags: [article, webseclist-reference, en, gnucitizen-org, phishing, sop-bypass, iframe, dom, side-channel, novel-technique, owasp-a01-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, en, gnucitizen-org, phishing, sop-bypass, iframe, dom, side-channel, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:51+00:00"

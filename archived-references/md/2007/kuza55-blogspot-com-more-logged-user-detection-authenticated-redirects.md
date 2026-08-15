@@ -3,7 +3,7 @@ type: Article
 title: More Logged In User Detection via Authenticated Redirects
 description: "Redirects that only fire for logged-in users leak session state without needing an open redirect: append a random token to the login-return URL, then use the CSS :visited history hack to see whether the browser followed it. Full working Orkut proof of concept included."
 resource: "https://kuza55.blogspot.com/2007/01/more-user-login-detection-via.html"
-tags: [article, webseclist-reference, kuza55-blogspot-com, xsleak, info-leak, open-redirect, css, iframe, javascript, novel-technique, owasp-a04-2021]
+tags: [article, webseclist-reference, kuza55-blogspot-com, xsleak, info-leak, open-redirect, css, iframe, javascript, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:30+00:00"

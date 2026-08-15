@@ -3,7 +3,7 @@ type: Article
 title: "Unveiling TE.0 HTTP Request Smuggling: Discovering a Critical Vulnerability in Thousands of Google Cloud Websites"
 description: Introduces TE.0 request smuggling, where the front end honours chunked Transfer-Encoding but the back end treats the body as empty, the chunked counterpart of CL.0. Against Google Cloud Load Balancers left on HTTP/1.1, a smuggled prefix redirected live users to an attacker server and captured their session tokens.
 resource: "https://www.bugcrowd.com/blog/unveiling-te-0-http-request-smuggling-discovering-a-critical-vulnerability-in-thousands-of-google-cloud-websites/"
-tags: [article, webseclist-reference, en, bugcrowd, request-smuggling, desync, http, load-balancer, gcp, auth-bypass, info-leak, novel-technique, bug-bounty, owasp-a01-2021]
+tags: [article, webseclist-reference, en, bugcrowd, request-smuggling, desync, http, load-balancer, gcp, auth-bypass, info-leak, bug-bounty, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:08:02+00:00"

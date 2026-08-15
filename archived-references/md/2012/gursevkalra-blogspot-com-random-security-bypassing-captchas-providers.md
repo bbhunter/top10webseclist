@@ -3,7 +3,7 @@ type: Article
 title: Bypassing CAPTCHAs by Impersonating CAPTCHA Providers
 description: CAPTCHA verification APIs, reCAPTCHA included, validated over plain HTTP, so a man in the middle can sniff the private key and impersonate the provider. Because validation answers are a tiny predictable set, the attacker can clip the request and return success himself; the clipcaptcha tool automates this with provider signatures and five operating modes.
 resource: "https://web.archive.org/web/20170903113359/http://gursevkalra.blogspot.com/2012/10/bypassing-captchas-by-impersonating.html"
-tags: [article, webseclist-reference, gursevkalra-blogspot-com, https, auth-bypass, tooling, info-leak, novel-technique, owasp-a01-2021, owasp-a02-2021]
+tags: [article, webseclist-reference, gursevkalra-blogspot-com, https, auth-bypass, tooling, info-leak, owasp-a01-2021, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:10:56+00:00"

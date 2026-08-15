@@ -3,7 +3,7 @@ type: Article
 title: A New Vector For “Dirty” Arbitrary File Write to RCE
 description: "uWSGI parses any file that contains a uwsgi section header as a configuration file, and its exec magic variable runs a shell command while doing so. An attacker with only partial control of written file contents, here a PDF export carrying the payload in an image's EXIF metadata, can overwrite a .ini config and reach remote code execution, with the py-auto-reload option supplying the reload."
 resource: "https://blog.doyensec.com/2023/02/28/new-vector-for-dirty-arbitrary-file-write-2-rce.html"
-tags: [article, webseclist-reference, en-us, blog-doyensec-com, path-traversal, file-upload, rce, command-injection, python, flask, attack-chain, novel-technique, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, en-us, blog-doyensec-com, path-traversal, file-upload, rce, command-injection, python, flask, attack-chain, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:50+00:00"

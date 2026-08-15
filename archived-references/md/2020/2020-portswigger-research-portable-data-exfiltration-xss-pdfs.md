@@ -3,7 +3,7 @@ type: Article
 title: "Portable Data exFiltration: XSS for PDFs"
 description: "PDF libraries such as PDF-Lib and jsPDF do not escape parentheses in annotation URIs, so text placed into a generated PDF can close the string and inject new dictionary keys, actions and JavaScript. That gives script execution in Acrobat and Chrome's PDFium, automatic firing on open or close, theft of the document text, and blind SSRF from server-side rendering."
 resource: "https://portswigger.net/research/portable-data-exfiltration"
-tags: [article, webseclist-reference, portswigger-research, pdf, injection, ssrf, info-leak, xss, javascript, nodejs, waf-bypass, novel-technique, owasp-a03-2021, owasp-a05-2021, owasp-a10-2021]
+tags: [article, webseclist-reference, portswigger-research, pdf, injection, ssrf, info-leak, xss, javascript, nodejs, waf-bypass, owasp-a03-2021, owasp-a05-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:43+00:00"

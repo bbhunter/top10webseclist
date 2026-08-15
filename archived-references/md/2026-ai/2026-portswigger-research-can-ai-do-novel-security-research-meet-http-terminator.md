@@ -3,7 +3,7 @@ type: Article
 title: Can AI do novel security research? Meet the HTTP Terminator
 description: "Feeding 1-3 sentence RFC fragments to an LLM generated 30,000 desync vectors, each validated on live sites by sending a plain request over a separate connection and watching for a changed response. It found triggers such as Content-Type: multipart/byteranges and Transfer-Encoding: gzip, the dangling-byte trick that makes response queue poisoning race-free, and Shared-Parser Confusion: servers reuse response-parsing code for requests, so response-only rules fire on a request."
 resource: "https://portswigger.net/research/can-ai-do-novel-security-research"
-tags: [article, webseclist-reference, portswigger-research, request-smuggling, desync, http, ai-agent, llm, tooling, novel-technique, cve, cache-poisoning, parser-differential]
+tags: [article, webseclist-reference, portswigger-research, request-smuggling, desync, http, ai-agent, llm, tooling, cve, cache-poisoning, parser-differential]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:42+00:00"

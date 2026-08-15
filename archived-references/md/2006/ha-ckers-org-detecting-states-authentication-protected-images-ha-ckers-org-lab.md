@@ -3,7 +3,7 @@ type: Article
 title: Detecting States of Authentication With Protected Images ha.ckers.org web application security lab
 description: "An IMG tag pointed at a file inside a members-only directory fires onerror when the visitor is not authenticated, so any page can detect a user's login state on a third-party site. A changed image size after login works the same way. Grossman and the author could not extend it beyond protected images and scripts."
 resource: "http://ha.ckers.org/blog/20061108/detecting-states-of-authentication-with-protected-images/"
-tags: [article, webseclist-reference, ha-ckers-org, xsleak, side-channel, info-leak, detection, javascript, same-origin-policy, novel-technique, owasp-a01-2021, owasp-a09-2021]
+tags: [article, webseclist-reference, ha-ckers-org, xsleak, side-channel, info-leak, detection, javascript, same-origin-policy, owasp-a01-2021, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:33+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "HTTP Desync Attacks: Request Smuggling Reborn"
 description: "Revives HTTP request smuggling by making front-end and back-end servers disagree about where a request ends, using conflicting Content-Length and Transfer-Encoding headers hidden by parser quirks. Timing-based detection makes testing safe, and the poisoned socket lets an attacker prepend content to other users' requests, steal credentials, poison caches and reach internal endpoints."
 resource: "https://portswigger.net/blog/http-desync-attacks-request-smuggling-reborn"
-tags: [article, webseclist-reference, portswigger-research, request-smuggling, desync, http, reverse-proxy, cdn, cache-poisoning, proxy, bug-bounty, novel-technique]
+tags: [article, webseclist-reference, portswigger-research, request-smuggling, desync, http, reverse-proxy, cdn, cache-poisoning, proxy, bug-bounty]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:46+00:00"

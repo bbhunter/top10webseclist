@@ -3,7 +3,7 @@ type: Article
 title: Slowloris HTTP DoS ha.ckers.org web application security lab
 description: "Slowloris opens many HTTP connections and keeps each alive with partial headers, consuming a threading web server's finite worker pool with very few packets and no load spike. Apache falls while IIS on the same box does not, and HTTPReady protection is bypassed. Apache dismissed it as expected TCP behaviour; Adrian Ilarion Ciobanu's 2007 post is credited as prior art."
 resource: "http://ha.ckers.org/blog/20090617/slowloris-http-dos/"
-tags: [article, webseclist-reference, ha-ckers-org, dos, http, algorithmic-complexity, tooling, prior-art-extension, novel-technique, owasp-a04-2021]
+tags: [article, webseclist-reference, ha-ckers-org, dos, http, algorithmic-complexity, tooling, prior-art-extension, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:25:42+00:00"

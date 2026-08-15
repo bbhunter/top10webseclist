@@ -570,6 +570,22 @@ class TagVocabularyTests(unittest.TestCase):
         self.assertEqual(10, len(idents))
         self.assertEqual(sorted(idents), idents)
 
+    def test_an_alias_to_nothing_retires_a_tag(self):
+        """`novel-technique` was on 45% of the archive; it must not come back."""
+        vocabulary = {"aliases": {"novel-technique": ""}}
+        self.assertEqual("", tags_module.resolve("novel-technique", vocabulary))
+        self.assertEqual({"novel-technique"}, tags_module.retired(vocabulary))
+
+    def test_a_retired_tag_is_dropped_rather_than_published(self):
+        known = {"https://example.test/a": {"slug": "a", "content_sha256": "d" * 64}}
+        vocabulary = {"aliases": {"novel-technique": ""}, "tags": {"xss": {}}}
+        reason, _, tags, _ = refs._accept_digest(
+            "https://example.test/a",
+            {"text": "A finding.", "tags": ["xss", "novel-technique"]},
+            known, vocabulary)
+        self.assertEqual(reason, "")
+        self.assertEqual(["xss"], tags)
+
     def test_recount_keeps_a_tag_that_fell_to_no_documents(self):
         """Dropping it would delete the maintainer's mapping with it."""
         vocabulary = {"tags": {"xss": {"documents": 3, "note": "keep me"}}}
@@ -584,7 +600,8 @@ class TagVocabularyTests(unittest.TestCase):
     def test_a_missing_file_falls_back_to_the_seed(self):
         vocabulary = tags_module.load(Path("does-not-exist-anywhere.json"))
         self.assertIn("owasp", vocabulary)
-        self.assertEqual("wasm", sorted(vocabulary["aliases"])[0])
+        self.assertEqual("webassembly", vocabulary["aliases"]["wasm"])
+        self.assertIn("novel-technique", tags_module.retired(vocabulary))
 
 
 if __name__ == "__main__":

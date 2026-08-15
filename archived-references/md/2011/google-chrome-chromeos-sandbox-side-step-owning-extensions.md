@@ -3,7 +3,7 @@ type: Whitepaper
 title: Google Chrome/ChromeOS sandbox side step via owning extensions
 description: "Chrome OS replaces desktop programs with HTML and JavaScript extensions, so an XSS in an extension inherits whatever chrome.* API permissions its manifest.json declared. The paper shows an injected script calling chrome.tabs.executeScript across every open tab, and a wildcard match pattern letting XHR read the victim's Gmail, sidestepping the sandbox without any memory bug."
 resource: "https://media.blackhat.com/bh-us-11/Johansen/BH_US_11_JohnasenOsborn_Hacking_Google_WP.pdf"
-tags: [whitepaper, webseclist-reference, browser-extension, xss, sandbox-escape, sop-bypass, javascript, novel-technique, info-leak, owasp-a01-2021, owasp-a03-2021]
+tags: [whitepaper, webseclist-reference, browser-extension, xss, sandbox-escape, sop-bypass, javascript, info-leak, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:42:27+00:00"

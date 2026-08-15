@@ -3,7 +3,7 @@ type: Article
 title: "FuzzOrigin: Detecting UXSS vulnerabilities in Browsers through Origin Fuzzing"
 description: "FuzzOrigin fuzzes browsers for universal cross-site scripting, generating HTML and JavaScript that drives frequent navigations and chained event handlers, then detecting when a script executes under an origin it should not have. It found nineteen UXSS bugs in Chrome and Edge, letting an attacker page run script in every other site the victim's browser loads."
 resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/kim"
-tags: [article, webseclist-reference, xss, sop-bypass, same-origin-policy, fuzzing, dom, javascript, tooling, novel-technique, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, xss, sop-bypass, same-origin-policy, fuzzing, dom, javascript, tooling, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:05:02+00:00"

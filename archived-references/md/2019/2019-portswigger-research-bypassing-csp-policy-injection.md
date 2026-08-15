@@ -3,7 +3,7 @@ type: Article
 title: Bypassing CSP with policy injection
 description: A URL parameter reflected into a CSP report-uri directive lets an attacker append directives to the policy. On Edge a semicolon and underscore make the syntax invalid so the whole policy is dropped, and on Chrome an appended script-src-elem directive overrides the existing script-src, in both cases restoring script execution and turning a blocked injection into working XSS.
 resource: "https://portswigger.net/research/bypassing-csp-with-policy-injection"
-tags: [article, webseclist-reference, portswigger-research, csp, xss, injection, header-injection, filter-bypass, parser-differential, bug-bounty, novel-technique, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, portswigger-research, csp, xss, injection, header-injection, filter-bypass, parser-differential, bug-bounty, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:54+00:00"

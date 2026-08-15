@@ -3,7 +3,7 @@ type: Article
 title: "Cross-Origin JavaScript Capability Leaks: Detection, Exploitation, and Defense"
 description: USENIX Security 2009 paper page for work by Barth, Weinberger and Song on cross-origin JavaScript capability leaks, where a reference to an object from another origin escapes and defeats the same-origin policy. The authors instrument WebKit to detect such leaks dynamically, exploit the ones found, and propose an access-control defence.
 resource: "https://www.usenix.org/conference/usenixsecurity09/technical-sessions/presentation/cross-origin-javascript-capability-leaks"
-tags: [article, webseclist-reference, en, usenix-org, same-origin-policy, sop-bypass, javascript, dom, dynamic-analysis, mitigation, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, en, usenix-org, same-origin-policy, sop-bypass, javascript, dom, dynamic-analysis, mitigation, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:50+00:00"

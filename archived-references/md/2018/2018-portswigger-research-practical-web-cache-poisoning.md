@@ -3,7 +3,7 @@ type: Article
 title: Practical Web Cache Poisoning
 description: "Unkeyed request inputs such as X-Forwarded-Host or X-Original-URL change a response that a cache then stores under an ordinary key, so every later visitor is served the attacker's version. The work chains this into stored XSS, hijacked script and JSON loads, open redirects, Open Graph spoofing and cross-region CDN poisoning, and ships a Burp extension for finding unkeyed inputs."
 resource: "https://portswigger.net/blog/practical-web-cache-poisoning"
-tags: [article, webseclist-reference, portswigger-research, cache-poisoning, header-injection, open-redirect, xss, cache, cdn, drupal, http, tooling, novel-technique, owasp-a03-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, portswigger-research, cache-poisoning, header-injection, open-redirect, xss, cache, cdn, drupal, http, tooling, owasp-a03-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:44:49+00:00"

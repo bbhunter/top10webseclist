@@ -3,7 +3,7 @@ type: Article
 title: Stealing Basic Auth with Persistent XSS
 description: "Steals HTTP Basic credentials without cross-site tracing: many PHP installs leave a phpinfo() page that prints PHP_AUTH_USER and PHP_AUTH_PW. An XSS on the same host fetches that page with XMLHTTP, splits out the username and password, and exfiltrates both through an image src. Part 2 of the author's basic-auth series."
 resource: "https://schmoil.blogspot.com/2008/03/stealing-basic-auth-with-persistent-xss.html"
-tags: [article, webseclist-reference, schmoil-blogspot-com, xss, info-leak, php, auth-bypass, javascript, novel-technique, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, schmoil-blogspot-com, xss, info-leak, php, auth-bypass, javascript, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:44+00:00"

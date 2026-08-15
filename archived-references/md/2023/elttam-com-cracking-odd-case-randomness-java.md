@@ -3,7 +3,7 @@ type: Article
 title: Cracking the Odd Case of Randomness in Java
 description: A meet-in-the-middle attack recovers the 48-bit state of java.util.Random from a handful of outputs of nextInt with an odd bound, splitting the LCG equation into upper and lower state halves and matching candidates through a table.
 resource: "https://www.elttam.com/blog/cracking-randomness-in-java"
-tags: [article, webseclist-reference, en, elttam-com, java, auth-bypass, tooling, novel-technique, prior-art-extension, owasp-a01-2021]
+tags: [article, webseclist-reference, en, elttam-com, java, auth-bypass, tooling, prior-art-extension, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:24:42+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "CDN Judo: Breaking the CDN DoS Protection with Itself"
 description: "Weaknesses in how CDNs forward requests let an attacker turn the CDN's own capacity against the site it shields: HTTP/2 request conversion and pre-POST forwarding exhaust CDN-to-origin bandwidth and origin connection limits, and because some vendors forward from a few long-lived IPs, cutting those connections degrades global availability."
 resource: "https://www.ndss-symposium.org/ndss-paper/cdn-judo-breaking-the-cdn-dos-protection-with-itself/"
-tags: [article, webseclist-reference, en, ndss-symposium, dos, cdn, http2, http, reverse-proxy, measurement-study, novel-technique]
+tags: [article, webseclist-reference, en, ndss-symposium, dos, cdn, http2, http, reverse-proxy, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:36+00:00"

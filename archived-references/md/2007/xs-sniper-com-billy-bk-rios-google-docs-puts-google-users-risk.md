@@ -3,7 +3,7 @@ type: Article
 title: Billy (BK) Rios » Google Docs puts Google Users at Risk
 description: "Google Docs let any user upload and publish a crossdomain.xml file served from google.com. A Flash object calling System.security.loadPolicyFile() at that uploaded path then gained cross-domain read access to the google.com origin, with no XSS required. The proof of concept dumps the victim's contact list."
 resource: "http://xs-sniper.com/blog/2007/09/26/google-docs-puts-google-users-at-risk/"
-tags: [article, webseclist-reference, xs-sniper-com, flash, sop-bypass, same-origin-policy, file-upload, info-leak, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, xs-sniper-com, flash, sop-bypass, same-origin-policy, file-upload, info-leak, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:48+00:00"

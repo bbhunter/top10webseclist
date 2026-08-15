@@ -3,7 +3,7 @@ type: Article
 title: (Cross-)Browser Fingerprinting via OS and Hardware Level Features
 description: By making the browser perform tasks that lean on the graphics card, CPU and installed fonts, the technique derives a fingerprint from operating system and hardware traits rather than browser-specific ones. The same machine is therefore recognisable across different browsers, identifying 99.24 percent of users.
 resource: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/cross-browser-fingerprinting-os-and-hardware-level-features/"
-tags: [article, webseclist-reference, info-leak, javascript, dom, css, novel-technique, measurement-study]
+tags: [article, webseclist-reference, info-leak, javascript, dom, css, measurement-study]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:25+00:00"

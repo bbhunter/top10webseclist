@@ -3,7 +3,7 @@ type: Article
 title: The Safari AutoFill hack LIVES!
 description: "Safari 5.0.1's patch for the AutoFill address-book leak was incomplete. An invisible form with fields named country, name, email and the rest is focused programmatically; the victim need only type the first character of their country and press TAB for Safari to fill every field from the operating system Me card, which script then reads. Two keystrokes replace the fully automatic original."
 resource: "https://jeremiahgrossman.blogspot.com/2010/09/safari-autofill-hack-lives.html"
-tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, info-leak, novel-technique, prior-art-extension, javascript, dom, case-study, vendor-advisory]
+tags: [article, webseclist-reference, en, blog-jeremiahgrossman-com, info-leak, prior-art-extension, javascript, dom, case-study, vendor-advisory]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:30:16+00:00"

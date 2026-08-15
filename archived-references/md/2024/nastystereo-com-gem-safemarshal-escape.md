@@ -3,7 +3,7 @@ type: Article
 title: "Gem::SafeMarshal escape"
 description: "Two escapes from Ruby's allow-list deserialiser: the permitted Date class calls the unrestricted loader on attacker data, and a length confusion in its instance-variable handling, where a particular string length makes the reader see zero, smuggles a crafted stream. Either regains unrestricted deserialisation and so a gadget chain to command execution."
 resource: "https://nastystereo.com/security/ruby-safe-marshal-escape.html"
-tags: [article, webseclist-reference, en-AU, nastystereo-com, deserialization, gadget-chain, filter-bypass, parser-differential, rce, ruby, novel-technique, owasp-a05-2021, owasp-a08-2021]
+tags: [article, webseclist-reference, en-AU, nastystereo-com, deserialization, gadget-chain, filter-bypass, parser-differential, rce, ruby, owasp-a05-2021, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T15:32:31+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: "Explicating SDKs: Uncovering Assumptions Underlying Secure Authentication and Authorization"
 description: Wang, Zhou and colleagues build semantic models of Facebook and Microsoft authentication SDKs together with the runtime systems beneath them, then use a formal analysis tool to reason over every app buildable on each SDK. The models expose implicit assumptions developers never see; violations earned Facebook bug bounties, changed the OAuth 2.0 spec and left most studied apps exploitable.
 resource: "https://www.cs.virginia.edu/~evans/pubs/usenix2013/"
-tags: [article, webseclist-reference, cs-virginia-edu, oauth, sso, formal-analysis, auth-bypass, static-analysis, bug-bounty, novel-technique, owasp-a01-2021, owasp-a07-2021]
+tags: [article, webseclist-reference, cs-virginia-edu, oauth, sso, formal-analysis, auth-bypass, static-analysis, bug-bounty, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:41+00:00"

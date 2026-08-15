@@ -3,7 +3,7 @@ type: Article
 title: Hardened-PHP Project - PHP Security - Poking new holes with Flash Crossdomain Policy Files
 description: "Flash's loadPolicyFile accepts any URL, follows in-domain redirects, and needs no well-formed XML, so a crossdomain policy can be smuggled into any response an attacker influences — an uploaded avatar, a GIF carrying policy tags, a PHP include or file-retrieval bug. Cross-domain reads and writes then work against sites that never opted in. Esser argues alternate policy locations should go."
 resource: "http://www.hardened-php.net/library/poking_new_holes_with_flash_crossdomain_policy_files.html"
-tags: [article, webseclist-reference, en, hardened-php-net, flash, same-origin-policy, sop-bypass, csrf, file-upload, parser-differential, open-redirect, novel-technique, owasp-a01-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, en, hardened-php-net, flash, same-origin-policy, sop-bypass, csrf, file-upload, parser-differential, open-redirect, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:29:30+00:00"

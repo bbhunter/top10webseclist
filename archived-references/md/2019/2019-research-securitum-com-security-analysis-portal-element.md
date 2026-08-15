@@ -3,7 +3,7 @@ type: Article
 title: Security analysis of <portal> element
 description: "Security review of Chrome's new portal element, which embeds a page that behaves like a top-level frame. It accepted file, chrome and javascript URLs for cross-origin script execution, ignored X-Frame-Options, allowed keyboard-driven clickjacking, leaked cross-site state and open ports by counting onload events, received SameSite cookies, and permitted dangling-markup exfiltration."
 resource: "https://research.securitum.com/security-analysis-of-portal-element/"
-tags: [article, webseclist-reference, en, research-securitum-com, xsleak, clickjacking, side-channel, sop-bypass, info-leak, iframe, cookie, csp, timing-attack, novel-technique, owasp-a01-2021, owasp-a04-2021, owasp-a05-2021, owasp-a07-2021]
+tags: [article, webseclist-reference, en, research-securitum-com, xsleak, clickjacking, side-channel, sop-bypass, info-leak, iframe, cookie, csp, timing-attack, owasp-a01-2021, owasp-a04-2021, owasp-a05-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:13+00:00"

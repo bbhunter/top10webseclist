@@ -3,7 +3,7 @@ type: Whitepaper
 title: Can AI do novel security research? Meet the HTTP Terminator (Whitepaper)
 description: "An autonomous pipeline turns 1-3 sentence fragments of 138 HTTP and SMTP RFCs into 30,000 desync vectors, proved on live sites by checking whether a plain request on a separate connection suddenly returns a different response. Confirmed triggers include Content-Type: multipart/byteranges as a CL.0 trigger on 200+ sites, Transfer-Encoding: gzip, and two matching Content-Length headers read as zero; the dangling-byte partial request removes the race in response queue poisoning."
 resource: "https://portswigger.net/kb/papers/gkaicuremal/http-terminator.pdf"
-tags: [whitepaper, webseclist-reference, request-smuggling, desync, http, ai-agent, llm, tooling, novel-technique, cve, cache-poisoning, parser-differential]
+tags: [whitepaper, webseclist-reference, request-smuggling, desync, http, ai-agent, llm, tooling, cve, cache-poisoning, parser-differential]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:08:45+00:00"

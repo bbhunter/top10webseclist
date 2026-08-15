@@ -3,7 +3,7 @@ type: Article
 title: "Temenos OFS Field Injection: Revealing a Hidden Financial Attack Vector"
 description: "An instant payment API concatenated user input straight into Temenos T24 OFS command strings, so a comma lets an attacker append extra fields to the funds-transfer request. Overriding the debit account number takes the money from a victim's account, and setting a future processing date credits the recipient with no deduction from the sender at all."
 resource: "https://medium.com/@omarelshopky/temenos-ofs-field-injection-revealing-a-hidden-financial-attack-vector-44df0e2bef9d"
-tags: [article, webseclist-reference, en, medium, injection, mass-assignment, rest-api, novel-technique, case-study, owasp-a01-2021, owasp-a03-2021]
+tags: [article, webseclist-reference, en, medium, injection, mass-assignment, rest-api, case-study, owasp-a01-2021, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-15T01:59:07+00:00"

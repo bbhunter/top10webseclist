@@ -3,7 +3,7 @@ type: Article
 title: "Bypassing Internet Explorer's Anti-Cross Site Scripting Filter"
 description: "Internet Explorer's reflective XSS filter only inspected data that would execute immediately, and marked anything else trusted for later requests. Injecting a script tag with parts written as HTML decimal or hexadecimal character references landed harmlessly in an attribute, and the browser then decoded it when following the resulting iframe src, form action or link, executing unfiltered."
 resource: "http://web.archive.org/web/20160507023636/https://www.whitehatsec.com/blog/internet-explorer-xss-filter"
-tags: [article, webseclist-reference, en, whitehat-security, xss, filter-bypass, encoding, iframe, sanitizer-bypass, novel-technique, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, whitehat-security, xss, filter-bypass, encoding, iframe, sanitizer-bypass, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:06:41+00:00"

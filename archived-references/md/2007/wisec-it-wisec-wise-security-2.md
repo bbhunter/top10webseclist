@@ -3,7 +3,7 @@ type: Article
 title: Wisec - The WIse SECurity
 description: "Stefano Di Paola turns a non-inclusion PHP wrapper sink such as getimagesize($_GET['image']) into an internal network scanner. Open and closed ports are told apart by the wording of the failed-to-open-stream warning, or by response timing when errors are suppressed, over http:// or ftp://. Enables drive-by pharming, router brute force and full LAN scans, with HTTP Basic auth supported."
 resource: "http://www.wisec.it/sectou.php?id=46d592056b008"
-tags: [article, webseclist-reference, wisec-it, ssrf, php, info-leak, timing-attack, dns-rebinding, side-channel, novel-technique, owasp-a10-2021]
+tags: [article, webseclist-reference, wisec-it, ssrf, php, info-leak, timing-attack, dns-rebinding, side-channel, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:41+00:00"

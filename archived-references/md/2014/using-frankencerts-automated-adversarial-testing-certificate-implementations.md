@@ -3,7 +3,7 @@ type: Whitepaper
 title: Using Frankencerts for Automated Adversarial Testing of Certificate Validation in SSL/TLS Implementations
 description: Generates frankencerts by randomly mutating parts of millions of real X.509 certificates, then differentially tests eight SSL/TLS libraries against each other so that any disagreement flags a validation bug. Found 208 discrepancies, including MatrixSSL and GnuTLS accepting any valid X.509v1 certificate as a CA, which enables man-in-the-middle attacks.
 resource: "https://www.ieee-security.org/TC/SP2014/papers/UsingFrankencertsforAutomatedAdversarialTestingofCertificateValidationinSSL_s_TLSImplementations.pdf"
-tags: [whitepaper, webseclist-reference, parser-differential, fuzzing, tls, https, auth-bypass, dynamic-analysis, tooling, novel-technique, owasp-a01-2021, owasp-a02-2021]
+tags: [whitepaper, webseclist-reference, parser-differential, fuzzing, tls, https, auth-bypass, dynamic-analysis, tooling, owasp-a01-2021, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T21:00:52+00:00"

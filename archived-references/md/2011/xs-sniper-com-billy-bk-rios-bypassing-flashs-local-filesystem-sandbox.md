@@ -3,7 +3,7 @@ type: Article
 title: Billy (BK) Rios » Bypassing Flash’s local-with-filesystem Sandbox
 description: "Flash's local-with-filesystem sandbox is meant to stop local SWFs talking to the network, but it enforces this with a protocol handler blacklist. A file:// UNC path already reaches hosts on the local network, and getURL with the unblacklisted mhtml: handler reaches the internet over ports 80 and 443, failing silently on 404 so the victim sees nothing."
 resource: "http://xs-sniper.com/blog/2011/01/04/bypassing-flash%E2%80%99s-local-with-filesystem-sandbox/"
-tags: [article, webseclist-reference, xs-sniper-com, flash, sandbox-escape, filter-bypass, info-leak, url-parsing, novel-technique, owasp-a05-2021]
+tags: [article, webseclist-reference, xs-sniper-com, flash, sandbox-escape, filter-bypass, info-leak, url-parsing, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:51+00:00"

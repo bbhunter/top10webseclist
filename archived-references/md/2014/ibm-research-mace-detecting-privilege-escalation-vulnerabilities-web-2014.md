@@ -3,7 +3,7 @@ type: Article
 title: "MACE: Detecting privilege escalation vulnerabilities in web applications for CCS 2014"
 description: "MACE infers a web application's intended access control from its own source by checking that authorization state is enforced consistently, so missing or incorrect checks stand out even without a written policy. Run over large codebases it found previously unknown privilege escalation bugs in five of seven applications, including a horizontal class where one user reaches another's data."
 resource: "https://research.ibm.com/publications/mace-detecting-privilege-escalation-vulnerabilities-in-web-applications"
-tags: [article, webseclist-reference, en, ibm-research, privilege-escalation, idor, auth-bypass, static-analysis, tooling, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, en, ibm-research, privilege-escalation, idor, auth-bypass, static-analysis, tooling, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:57:12+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: XSS Vulnerabilities in Common Shockwave Flash Files
 description: "Web authoring tools stamp the same vulnerable ActionScript into every SWF they generate, so hundreds of thousands of sites inherit XSS. Dreamweaver's skinName, Adobe Connect's baseurl, FusionCharts' dataURL, Camtasia's csPreloader and Autodemo's onend all pass attacker input to URL loaders, reachable through asfunction:getURL with a javascript: payload or by loading a remote SWF for cross-site flashing."
 resource: "https://docs.google.com/View?docid=ajfxntc4dmsq_14dt57ssdw&pli=1"
-tags: [article, webseclist-reference, docs-google-com, flash, xss, filter-bypass, open-redirect, large-scale-scan, novel-technique, mitigation, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, docs-google-com, flash, xss, filter-bypass, open-redirect, large-scale-scan, mitigation, owasp-a03-2021, owasp-a04-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:39:59+00:00"

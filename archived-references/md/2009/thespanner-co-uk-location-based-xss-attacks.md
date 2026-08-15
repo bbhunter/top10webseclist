@@ -3,7 +3,7 @@ type: Article
 title: Location based XSS attacks
 description: Splits an XSS payload across the server-visible query string and the location.hash fragment, which browsers never send to the server, so server-side filters and WAFs only ever see a harmless half. A reflected eval(location.hash.slice(1)) pulls in the rest; a comment opened server-side and closed in the hash even removes the need for parentheses.
 resource: "http://www.thespanner.co.uk/2008/12/01/location-based-xss-attacks/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, xss, dom, filter-bypass, waf-bypass, javascript, url-parsing, novel-technique, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, thespanner-co-uk, xss, dom, filter-bypass, waf-bypass, javascript, url-parsing, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:41+00:00"

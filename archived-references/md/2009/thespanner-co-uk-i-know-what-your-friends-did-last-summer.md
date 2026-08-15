@@ -3,7 +3,7 @@ type: Article
 title: I know what your friends did last summer
 description: "Twitter's publicly readable JSON timeline feeds could be pulled in via a script tag, and Object.prototype.__defineSetter__ used to capture the objects as they were constructed, revealing who the visitor is and who their friends are in every browser tested except IE. The author warns this enables targeted spam and automated social engineering."
 resource: "http://www.thespanner.co.uk/2009/01/07/i-know-what-your-friends-did-last-summer/"
-tags: [article, webseclist-reference, en, thespanner-co-uk, javascript, info-leak, sop-bypass, cookie, novel-technique, owasp-a01-2021, owasp-a07-2021]
+tags: [article, webseclist-reference, en, thespanner-co-uk, javascript, info-leak, sop-bypass, cookie, owasp-a01-2021, owasp-a07-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:01:47+00:00"

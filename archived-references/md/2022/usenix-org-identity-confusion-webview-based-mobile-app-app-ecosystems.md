@@ -3,7 +3,7 @@ type: Article
 title: Identity Confusion in WebView-based Mobile App-in-app Ecosystems
 description: "Super-apps that host third-party sub-apps in a WebView decide access to privileged native APIs from three identity types: web domain, sub-app ID, and capability. The checks are routinely too broad, so a sub-app or a page it loads inherits privileges never granted to it; across 47 super-apps this allowed manipulating financial accounts and installing malware."
 resource: "https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-lei"
-tags: [article, webseclist-reference, en, usenix-org, privilege-escalation, auth-bypass, sop-bypass, android, ios, javascript, measurement-study, large-scale-scan, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, en, usenix-org, privilege-escalation, auth-bypass, sop-bypass, android, ios, javascript, measurement-study, large-scale-scan, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:16+00:00"

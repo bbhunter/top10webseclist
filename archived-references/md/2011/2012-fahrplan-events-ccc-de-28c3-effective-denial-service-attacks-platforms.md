@@ -3,7 +3,7 @@ type: Article
 title: "28C3: Effective Denial of Service attacks against web application platforms"
 description: "Programme entry for the 28C3 talk by Alexander Klink and Julian Waelde on HashDoS. A common flaw in how PHP, ASP.NET, Java and other platforms hash form-parameter keys lets a single crafted HTTP request pin a web server's CPU at 99 percent for minutes to hours. The attack is independent of the application, relying only on the platform's string hash function."
 resource: "http://events.ccc.de/congress/2011/Fahrplan/events/4680.en.html"
-tags: [article, webseclist-reference, fahrplan-events-ccc-de, dos, algorithmic-complexity, php, java, dotnet, http, novel-technique, owasp-a04-2021]
+tags: [article, webseclist-reference, fahrplan-events-ccc-de, dos, algorithmic-complexity, php, java, dotnet, http, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:39+00:00"

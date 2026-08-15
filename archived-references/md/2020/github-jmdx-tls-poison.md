@@ -3,7 +3,7 @@ type: Repository
 title: TLS-poison
 description: TLS-poison abuses TLS session persistence combined with DNS rebinding so that an https URL fed to a victim client (curl, or a browser image tag) is redirected mid-session to an internal service. This delivers attacker-chosen payload bytes to services like memcached or SMTP, giving generic SSRF and cross-protocol injection and image-tag CSRF without relying on a parser bug.
 resource: "https://github.com/jmdx/TLS-poison/"
-tags: [repo, webseclist-reference, github, ssrf, csrf, dns-rebinding, tls, dns, injection, tooling, novel-technique, owasp-a01-2021, owasp-a02-2021, owasp-a03-2021, owasp-a10-2021]
+tags: [repo, webseclist-reference, github, ssrf, csrf, dns-rebinding, tls, dns, injection, tooling, owasp-a01-2021, owasp-a02-2021, owasp-a03-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:13:13+00:00"

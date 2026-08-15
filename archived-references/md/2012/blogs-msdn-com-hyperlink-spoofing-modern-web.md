@@ -3,7 +3,7 @@ type: Whitepaper
 title: Hyperlink Spoofing and the Modern Web
 description: "Ross surveys how social platforms display hyperlink destinations and finds the indicators are inconsistent and spoofable. Twitter's server-side short-link resolution created a TOCTOU window: change the redirector after the tweet is posted and the displayed target no longer matches where the click goes. He tests five anonymised platforms plus McAf.ee and proposes pinning resolved destinations."
 resource: "https://web.archive.org/web/20120526051852/http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-47-30/5340.Hyperlink-Spoofing-and-the-Modern-Web-_2800_final_2900_.pdf"
-tags: [whitepaper, webseclist-reference, blogs-msdn-com, open-redirect, url-parsing, toctou, measurement-study, http, mitigation, info-leak, novel-technique, owasp-a04-2021]
+tags: [whitepaper, webseclist-reference, blogs-msdn-com, open-redirect, url-parsing, toctou, measurement-study, http, mitigation, info-leak, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T09:50:53+00:00"

@@ -3,7 +3,7 @@ type: Slides
 title: Attacking Secondary Contexts in Web Applications
 description: "When an application forwards a request to a second internal API, encoded traversal in the user-controlled part of the path rewrites the internal route. The talk shows reading other users' invoices and payment methods, reaching internal services through proxies, and an Authy 2FA bypass where any endpoint returning a success body satisfies the check."
 resource: "https://docs.google.com/presentation/d/1N9Ygrpg0Z-1GFDhLMiG3jJV6B_yGqBk8tuRWO1ZicV8/edit#slide=id.p"
-tags: [slides, webseclist-reference, path-traversal, idor, auth-bypass, ssrf, rest-api, url-parsing, proxy, bug-bounty, case-study, novel-technique, owasp-a01-2021, owasp-a10-2021]
+tags: [slides, webseclist-reference, path-traversal, idor, auth-bypass, ssrf, rest-api, url-parsing, proxy, bug-bounty, case-study, owasp-a01-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T13:39:27+00:00"

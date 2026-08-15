@@ -3,7 +3,7 @@ type: Article
 title: "Gummy Browsers: Targeted Browser Spoofing against State-of-the-Art Fingerprinting Techniques"
 description: An attacker lures a victim to a page, transparently harvests the victim browser fingerprint, then drives their own browser through script injection, debugging tools or script modification to replay that exact fingerprint to a third site. That site believes the attacker is the victim, defeating fingerprint-based tracking and authentication with success rates above 0.9.
 resource: "https://arxiv.org/abs/2110.10129"
-tags: [article, webseclist-reference, en, arxiv-org, auth-bypass, info-leak, javascript, dom, novel-technique, measurement-study, owasp-a01-2021]
+tags: [article, webseclist-reference, en, arxiv-org, auth-bypass, info-leak, javascript, dom, measurement-study, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:34:06+00:00"

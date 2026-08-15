@@ -3,7 +3,7 @@ type: Article
 title: "HTTP/2: The Sequel is Always Worse"
 description: "HTTP/2 front-ends that downgrade requests to HTTP/1.1 lose the binary length field, so the back-end must trust an attacker-supplied Content-Length or Transfer-Encoding. This gives H2.CL and H2.TE desyncs, plus header and request-line injection through newlines and colons. An attacker can hijack other users' requests, poison caches and steal credentials."
 resource: "https://portswigger.net/research/http2"
-tags: [article, webseclist-reference, portswigger-research, request-smuggling, desync, http2, header-injection, cache-poisoning, proxy, cdn, load-balancer, novel-technique, owasp-a03-2021]
+tags: [article, webseclist-reference, portswigger-research, request-smuggling, desync, http2, header-injection, cache-poisoning, proxy, cdn, load-balancer, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:06+00:00"

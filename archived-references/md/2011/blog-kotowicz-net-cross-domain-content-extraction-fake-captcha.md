@@ -3,7 +3,7 @@ type: Article
 title: Cross domain content extraction with fake captcha
 description: "A UI-redressing refinement of Firefox's view-source: framing bug. Rather than make the victim drag a page's HTML source, the attacker frames view-source: so one line of the victim page sits inside a fake CAPTCHA field; a triple click selects the whole source line and the user copy-pastes it, leaking anti-CSRF tokens cross-domain."
 resource: "http://blog.kotowicz.net/2011/07/cross-domain-content-extraction-with.html"
-tags: [article, webseclist-reference, blog-kotowicz-net, ui-redress, clickjacking, iframe, sop-bypass, csrf, info-leak, novel-technique, owasp-a01-2021, owasp-a04-2021]
+tags: [article, webseclist-reference, blog-kotowicz-net, ui-redress, clickjacking, iframe, sop-bypass, csrf, info-leak, owasp-a01-2021, owasp-a04-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:04:32+00:00"

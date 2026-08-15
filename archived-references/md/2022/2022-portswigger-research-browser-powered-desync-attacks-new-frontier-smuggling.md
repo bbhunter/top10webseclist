@@ -3,7 +3,7 @@ type: Article
 title: "Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling"
 description: "A browser-issuable POST whose Content-Length the server ignores lets an attacker page desync the victim browser's own connection pool and prepend an arbitrary request, so request smuggling reaches single-server sites and intranets with no front-end. A second trigger, pause-based desync, exploits request timeouts in Varnish and Apache that leave half-read requests on a reusable connection."
 resource: "https://portswigger.net/research/browser-powered-desync-attacks"
-tags: [article, webseclist-reference, portswigger-research, desync, request-smuggling, http, cache-poisoning, reverse-proxy, cdn, novel-technique, tooling]
+tags: [article, webseclist-reference, portswigger-research, desync, request-smuggling, http, cache-poisoning, reverse-proxy, cdn, tooling]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:45:03+00:00"

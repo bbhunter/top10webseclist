@@ -3,7 +3,7 @@ type: Article
 title: Hacking CSRF Tokens using CSS History Hack
 description: "CSRF tokens carried in URLs can be brute-forced entirely on the client using the CSS visited-link history hack, generating no server traffic for an IDS or WAF to see. A five-character base16 token space was exhausted in under two minutes. Defences given: longer tokens, hidden form fields, per-submission tokens, SafeHistory or private browsing."
 resource: "http://securethoughts.com/2009/07/hacking-csrf-tokens-using-css-history-hack/"
-tags: [article, webseclist-reference, en-US, securethoughts-com, csrf, css, side-channel, info-leak, javascript, mitigation, novel-technique, owasp-a01-2021]
+tags: [article, webseclist-reference, en-US, securethoughts-com, csrf, css, side-channel, info-leak, javascript, mitigation, owasp-a01-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:41:00+00:00"

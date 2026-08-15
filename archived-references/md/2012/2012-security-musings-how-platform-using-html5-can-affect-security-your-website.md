@@ -3,7 +3,7 @@ type: Article
 title: How a Platform Using HTML5 Can Affect the Security of Your Website
 description: "Caching application JavaScript in HTML5 localStorage turns any reflected XSS on the caching origin into a persistent, self-reloading compromise. The article documents a real case: the Apture widget cached 272KB of code and eval'd it, and a reflected XSS on cdn.apture.com let an attacker poison that cache. The payload then executed on every third-party site embedding Apture."
 resource: "https://web.archive.org/web/20170903113359/http://securitymusings.com/article/3159/how-a-platform-using-html5-can-affect-the-security-of-your-website"
-tags: [article, webseclist-reference, en, security-musings, xss, javascript, cache, supply-chain, case-study, dom, novel-technique, owasp-a03-2021, owasp-a06-2021]
+tags: [article, webseclist-reference, en, security-musings, xss, javascript, cache, supply-chain, case-study, dom, owasp-a03-2021, owasp-a06-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T15:58:44+00:00"

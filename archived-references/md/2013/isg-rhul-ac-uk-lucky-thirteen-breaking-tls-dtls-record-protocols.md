@@ -3,7 +3,7 @@ type: Article
 title: "Lucky Thirteen: Breaking the TLS and DTLS Record Protocols"
 description: TLS and DTLS CBC decryption runs measurably faster when a record carries at least two bytes of valid padding, because the 13-byte MAC header aligns hash compression blocks differently. Timing TLS error messages on a LAN and averaging out jitter recovers a plaintext block in about 2^23 sessions, fewer with base64 or BEAST-style tricks; DTLS falls in a single session.
 resource: "http://web.archive.org/web/20160507023636/http://www.isg.rhul.ac.uk/tls/Lucky13.html"
-tags: [article, webseclist-reference, en, isg-rhul-ac-uk, tls, timing-attack, side-channel, https, novel-technique, mitigation, owasp-a02-2021]
+tags: [article, webseclist-reference, en, isg-rhul-ac-uk, tls, timing-attack, side-channel, https, mitigation, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:59+00:00"

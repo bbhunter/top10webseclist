@@ -3,7 +3,7 @@ type: Article
 title: "Pretty-Bad-Proxy: An Overlooked Adversary in Browsers' HTTPS Deployments"
 description: Pretty-Bad-Proxy is a malicious proxy that breaks the end-to-end guarantees of HTTPS without breaking any cryptography, by targeting the browser rendering layers above HTTP. The vulnerabilities let an attacker who can sniff traffic steal data from an HTTPS server, forge HTTPS pages and impersonate authenticated users; all major browsers were affected.
 resource: "https://www.microsoft.com/en-us/research/publication/pretty-bad-proxy-an-overlooked-adversary-in-browsers-https-deployments/"
-tags: [article, webseclist-reference, en, microsoft-research, https, tls, proxy, same-origin-policy, sop-bypass, info-leak, mitigation, novel-technique, owasp-a01-2021, owasp-a02-2021]
+tags: [article, webseclist-reference, en, microsoft-research, https, tls, proxy, same-origin-policy, sop-bypass, info-leak, mitigation, owasp-a01-2021, owasp-a02-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:36:02+00:00"

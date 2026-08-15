@@ -3,7 +3,7 @@ type: Article
 title: ha.ckers.org web application security lab - Archive » Passing Malicious PHP Through getimagesize()
 description: "Michael Schramm's finding, relayed by RSnake: PHP can be embedded in an 8x8 GIF that still passes getimagesize(). Inserting /* before the header's illegal bytes makes PHP skip them, so the file validates as an image and executes phpinfo() when requested. Breaks upload filters that trust getimagesize() and keep the original filename."
 resource: "http://ha.ckers.org/blog/20070604/passing-malicious-php-through-getimagesize/"
-tags: [article, webseclist-reference, ha-ckers-org, php, file-upload, rce, filter-bypass, mime, novel-technique, owasp-a05-2021]
+tags: [article, webseclist-reference, ha-ckers-org, php, file-upload, rce, filter-bypass, mime, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T11:21:25+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Forcing Quirks Mode with PHP Warnings + CSS Exfiltration without Network Requests
 description: Overflowing the PHP input-variable limit emits a warning before the doctype, forcing quirks mode, where the same-origin MIME check is relaxed so a 404 page echoing the URL loads as a stylesheet under a self-only policy. The injected CSS then uses an input pattern and a hidden embed to change window.length, leaking a secret one character at a time with no outbound request.
 resource: "https://blog.arkark.dev/2025/09/08/asisctf-quals"
-tags: [article, webseclist-reference, en, blog-arkark-dev, xsleak, css-injection, csp, mime, side-channel, info-leak, filter-bypass, php, novel-technique, owasp-a03-2021, owasp-a05-2021]
+tags: [article, webseclist-reference, en, blog-arkark-dev, xsleak, css-injection, csp, mime, side-channel, info-leak, filter-bypass, php, owasp-a03-2021, owasp-a05-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-14T01:06:08+00:00"

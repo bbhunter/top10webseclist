@@ -3,7 +3,7 @@ type: Whitepaper
 title: Pwning via SSRF (memcached, php-fastcgi, etc)
 description: ERPScan classify server-side request forgery into trusted, simple, partial and full remote variants, then show the full case is reachable through XXE. Using the gopher URI scheme in an external entity, one request sends an arbitrary TCP packet to any internal host, tunnelling verb tampering, an ABAP kernel buffer overflow and SAP Gateway parameter changes past firewalls.
 resource: "https://web.archive.org/web/20170903113359/http://media.blackhat.com/bh-us-12/Briefings/Polyakov/BH_US_12_Polyakov_SSRF_Business_WP.pdf"
-tags: [whitepaper, webseclist-reference, ssrf, xxe, novel-technique, attack-chain, rce, java, auth-bypass, injection, owasp-a01-2021, owasp-a03-2021, owasp-a10-2021]
+tags: [whitepaper, webseclist-reference, ssrf, xxe, attack-chain, rce, java, auth-bypass, injection, owasp-a01-2021, owasp-a03-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-06T16:33:57+00:00"

@@ -3,7 +3,7 @@ type: Article
 title: Internet Archiver Port Scanner ha.ckers.org web application security lab
 description: "WhiteAcid's finding that archive.org fetches any host and port on demand, speaking HTTP at an FTP service and logging the crawler's IP as the source. Response time separates the cases, 6-9s open against 23-25s closed, giving a TCP port scanner run through the archive that can also be aimed at RFI targets."
 resource: "http://ha.ckers.org/blog/20070323/internet-archiver-port-scanner/"
-tags: [article, webseclist-reference, ha-ckers-org, ssrf, abuse-of-functionality, timing-attack, side-channel, proxy, detection, novel-technique, owasp-a04-2021, owasp-a09-2021, owasp-a10-2021]
+tags: [article, webseclist-reference, ha-ckers-org, ssrf, abuse-of-functionality, timing-attack, side-channel, proxy, detection, owasp-a04-2021, owasp-a09-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:38+00:00"

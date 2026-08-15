@@ -3,7 +3,7 @@ type: Article
 title: Hacking Intranets Through Web Interfaces
 description: "Uses the web server, not the browser, as the way into an intranet: any feature that fetches a URL server-side (avatar-by-URL, RSS aggregation) will reach RFC1918 space. Default images such as Apache's /icons/ and WordPress smilies turn that fetch into a port sweep and an application fingerprint, and one GET carrying an RFI payload exploits what it finds."
 resource: "http://www.sectheory.com/intranet-hacking.htm"
-tags: [article, webseclist-reference, sectheory-com, ssrf, file-upload, rce, proxy, php, novel-technique, owasp-a10-2021]
+tags: [article, webseclist-reference, sectheory-com, ssrf, file-upload, rce, proxy, php, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:37:03+00:00"

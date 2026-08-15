@@ -3,7 +3,7 @@ type: Article
 title: "SurveyMonkey: IP Spoofing"
 description: ChrisJohnRiley noticed RFC1918 addresses among SurveyMonkey respondent IPs and traced it to the site trusting the X-Forwarded-For header. Setting that header let him record any IP against a survey response, including foreign ones, and inject a 20-character HTML payload such as an iframe src into the field shown to the survey owner.
 resource: "http://blog.c22.cc/2011/04/22/surveymonkey-ip-spoofing/"
-tags: [article, webseclist-reference, en, c-in-s-u-it-chrisjohnriley, header-injection, http, xss, info-leak, proxy, case-study, novel-technique, owasp-a03-2021]
+tags: [article, webseclist-reference, en, c-in-s-u-it-chrisjohnriley, header-injection, http, xss, info-leak, proxy, case-study, owasp-a03-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:36:29+00:00"

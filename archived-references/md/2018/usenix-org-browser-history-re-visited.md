@@ -3,7 +3,7 @@ type: Article
 title: "Browser history re:visited"
 description: Four new history sniffing attacks, two on visited links and two on caches, abuse modern browser features such as the CSS Paint API and the JavaScript bytecode cache, which handle cross-origin URL data without accounting for privacy. They let a page learn which sites a visitor has been to, one of them at roughly 3,000 URLs per second, against every browser tested but Tor Browser.
 resource: "https://www.usenix.org/conference/woot18/presentation/smith"
-tags: [article, webseclist-reference, en, usenix-org, xsleak, info-leak, side-channel, css, javascript, cache, timing-attack, cve, novel-technique]
+tags: [article, webseclist-reference, en, usenix-org, xsleak, info-leak, side-channel, css, javascript, cache, timing-attack, cve]
 generated:
   by: webseclist-refs/1
   at: "2026-08-10T16:05:50+00:00"

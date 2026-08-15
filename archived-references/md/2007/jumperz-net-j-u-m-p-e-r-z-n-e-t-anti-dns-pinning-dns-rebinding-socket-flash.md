@@ -3,7 +3,7 @@ type: Article
 title: J U M P E R Z . N E T - Anti-DNS Pinning ( DNS Rebinding ) + Socket in FLASH
 description: "Kanatoko shows Flash Player 9's ActionScript 3 Socket class combined with DNS rebinding hands an attacker a raw TCP socket inside the victim's browser: intranet port scanning, shellcode delivery, spam, proxying and defeat of any IP-based authentication. Java applets pin DNS by default, but not under LiveConnect or behind a proxy."
 resource: "http://www.jumperz.net/index.php?i=2&a=3&b=3"
-tags: [article, webseclist-reference, jumperz-net, dns-rebinding, flash, sop-bypass, same-origin-policy, dns, auth-bypass, novel-technique, owasp-a01-2021, owasp-a10-2021]
+tags: [article, webseclist-reference, jumperz-net, dns-rebinding, flash, sop-bypass, same-origin-policy, dns, auth-bypass, owasp-a01-2021, owasp-a10-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T19:37:03+00:00"

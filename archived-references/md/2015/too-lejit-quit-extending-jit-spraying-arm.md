@@ -3,7 +3,7 @@ type: Whitepaper
 title: "Too LeJIT to Quit: Extending JIT Spraying to ARM"
 description: On ARM, constants a JIT compiler embeds in Thumb code can be entered mid-instruction to produce short unintended instruction sequences. Gadget chaining calls these sequences like functions from ordinary JavaScript, giving an attacker with a control-flow bug arbitrary computation against WebKit JavaScriptCore despite DEP, ASLR, constant blinding and NOP insertion.
 resource: "https://www.ndss-symposium.org/wp-content/uploads/2017/09/09_3_2.pdf"
-tags: [whitepaper, webseclist-reference, gadget-chain, javascript-runtime, javascript, attack-chain, novel-technique, owasp-a08-2021]
+tags: [whitepaper, webseclist-reference, gadget-chain, javascript-runtime, javascript, attack-chain, owasp-a08-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-11T17:43:12+00:00"

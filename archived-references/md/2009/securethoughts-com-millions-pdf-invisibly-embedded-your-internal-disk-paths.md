@@ -3,7 +3,7 @@ type: Article
 title: Millions of PDF invisibly embedded with your internal disk paths
 description: "Printing a locally saved web page to PDF through Internet Explorer's print handler embeds the file's full local disk path invisibly in the PDF title attribute, separate from the visible footer and not removable through Page Setup. Search-engine filetype queries per drive letter suggested over 50 million public PDFs leaking internal paths."
 resource: "http://securethoughts.com/2009/11/millions-of-pdf-invisibly-embedded-with-your-internal-disk-paths/"
-tags: [article, webseclist-reference, en-US, securethoughts-com, pdf, info-leak, large-scale-scan, measurement-study, detection, novel-technique, owasp-a09-2021]
+tags: [article, webseclist-reference, en-US, securethoughts-com, pdf, info-leak, large-scale-scan, measurement-study, detection, owasp-a09-2021]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:41:04+00:00"
