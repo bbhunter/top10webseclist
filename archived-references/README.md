@@ -111,7 +111,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Token Time Bomb: Evaluating JWT Implementations for Vulnerability Discovery (Slides)](md/2026-ai/token-time-bomb-evaluating-jwt-implementations-vulnerability-discovery-slides.md) | whitepaper |  |  | research | 1 |
 | [Transformers: Dark Side of the Type — Weaponizing the Conversion Layer](md/2026-ai/transformers-dark-side-type-weaponizing-conversion-layer.md) | whitepaper |  |  | research | 1 |
 | [Transformers: Dark Side of the Type — Weaponizing the Conversion Layer (Slides)](md/2026-ai/transformers-dark-side-type-weaponizing-conversion-layer-slides.md) | whitepaper |  |  | research | 1 |
-| [When Agentic Glue Melts: Exploiting Cloudflare Code Mode & Workers](md/2026-ai/when-agentic-glue-melts-exploiting-cloudflare-code-mode-workers.md) | whitepaper |  |  | research | 1 |
+| [When Agentic Glue Melts: Exploiting Cloudflare Code Mode & Workers (Slides)](md/2026-ai/check-point-research-when-agentic-glue-melts-exploiting-cloudflare-code-slides.md) | whitepaper | Check Point Research |  | research | 1 |
 | [Your WAF Blocked Us, That Was The Exploit — Remote Agent Takeover via Cloudflare, Sentry and Claude Zero-Day](md/2026-ai/your-waf-blocked-us-that-exploit-remote-agent-takeover-cloudflare-sentry-day.md) | whitepaper |  |  | research | 1 |
 
 ## 2025 (90)

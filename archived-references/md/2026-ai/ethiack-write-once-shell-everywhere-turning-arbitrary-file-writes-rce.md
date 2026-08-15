@@ -12,13 +12,15 @@ sources:
   - id: original
     resource: "https://ethiack.com/info-hub/research/write-once-shell-everywhere-arbitrary-file-writes-into-rce"
     title: "Write Once, Shell Everywhere: Turning Arbitrary File Writes into RCE"
-    author: Ethiack
+    author: André Baptista, Rafael Castilho, Bruno Mendes
 also_at: []
 authors:
-  - Ethiack
+  - André Baptista
+  - Rafael Castilho
+  - Bruno Mendes
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:51"
+  - "2026-ai.md:52"
 commit: ""
 content_sha256: a3e96b8638d4b1b8a3b35f945e8f2b4ae946dc6bd1d6d535e4c1144c9cc47636
 depth: full
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Write Once, Shell Everywhere: Turning Arbitrary File Writes into RCE
 
-**Write Once, Shell Everywhere: Turning Arbitrary File Writes into RCE** - Ethiack, Ethiack.
+**Write Once, Shell Everywhere: Turning Arbitrary File Writes into RCE** - André Baptista, Rafael Castilho, Bruno Mendes, Ethiack.
 
 - Published: date not stated
 - Original: <https://ethiack.com/info-hub/research/write-once-shell-everywhere-arbitrary-file-writes-into-rce>
@@ -1305,15 +1307,3 @@ Hope you enjoyed it, see you next time space cowboy!
 [7] Bootsnap - https://github.com/rails/bootsnap
 
 [8] PayloadsAllTheThings - https://swisskyrepo.github.io/PayloadsAllTheThings/
-
-## Validate your exposure
-
-## before attackers do.
-
-[Try Ethiack](https://portal.ethiack.com/signup)
-
-30-day free trial. No commitment.
-
-[
-
-Back to Info Hub

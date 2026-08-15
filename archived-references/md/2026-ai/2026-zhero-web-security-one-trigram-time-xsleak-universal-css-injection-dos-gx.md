@@ -12,12 +12,15 @@ sources:
   - id: original
     resource: "https://zhero-web-sec.github.io/research-and-things/one-trigram-at-a-time-xsleak-via-universal-css-injection-and-dos-in-opera-(gx)"
     title: "One trigram at a time: XSLeak via Universal CSS Injection and DoS in Opera (GX)"
+    author: zhero, inzo_
     last_modified: 2026-07-03
 also_at: []
-authors: []
+authors:
+  - zhero
+  - inzo_
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:42"
+  - "2026-ai.md:43"
 commit: ""
 content_sha256: a1597167dea822e33835ebfc02e72bdb499ecb79c074935a193a9df6a6f07bfc
 depth: full
@@ -42,7 +45,7 @@ translation_of: ""
 
 # One trigram at a time: XSLeak via Universal CSS Injection and DoS in Opera (GX)
 
-**One trigram at a time: XSLeak via Universal CSS Injection and DoS in Opera (GX)** - Author not stated, zhero_web_security.
+**One trigram at a time: XSLeak via Universal CSS Injection and DoS in Opera (GX)** - zhero, inzo_, zhero_web_security.
 
 - Published: 2026-07-03
 - Original: <https://zhero-web-sec.github.io/research-and-things/one-trigram-at-a-time-xsleak-via-universal-css-injection-and-dos-in-opera-(gx)>
@@ -530,9 +533,3 @@ Al hamduliLlah;
 Research conducted by [zhero;](https://x.com/zhero___) & [inzo_](https://x.com/inzo____)
 
 *Published in July 2026*
-
----
-
-**Announcement : Now open to sponsorships, partnerships, and selective intellectual property transfers related to ongoing and future research.**
-
-**Interested parties can reach out via DM or via the email listed on the blog.**

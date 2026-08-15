@@ -273,17 +273,3 @@ CONCLUSION1It is not Insecure Deserializationsame root cause attacker-controlled
 --- page 53 ---
 
 QUESTIONS?Transformers: Dark Side of the TypeWeaponizing the Conversion LayerWhitepaper published alongside these slidesOleksandr Mirosh@olekmiroshOpenText Fortify53
-
---- page 54 ---
-
-;Vh9
-':Xi:%
-+:"	H
-
---- page 55 ---
-
-$0NuXJ|Y28eŽV?]>0C
-
---- page 56 ---
-
-¸¤@+P++

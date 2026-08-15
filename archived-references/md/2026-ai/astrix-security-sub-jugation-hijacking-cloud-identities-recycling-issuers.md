@@ -12,11 +12,13 @@ sources:
   - id: original
     resource: "https://astrix.security/learn/blog/subjugation-hijacking-cloud-identities-by-recycling-namespaces-in-global-oidc-issuers/"
     title: "Sub:jugation - Hijacking Cloud Identities by Recycling Namespaces in Global OIDC Issuers"
+    author: Tal Skverer
 also_at: []
-authors: []
+authors:
+  - Tal Skverer
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:65"
+  - "2026-ai.md:67"
 commit: ""
 content_sha256: 77d92a2eb3a54d6f3993ea974f9bfef5de3bd08eb5712bfc4ced730c1a039f68
 depth: full
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Sub:jugation - Hijacking Cloud Identities by Recycling Namespaces in Global OIDC Issuers
 
-**Sub:jugation - Hijacking Cloud Identities by Recycling Namespaces in Global OIDC Issuers** - Author not stated, Astrix Security.
+**Sub:jugation - Hijacking Cloud Identities by Recycling Namespaces in Global OIDC Issuers** - Tal Skverer, Astrix Security.
 
 - Published: date not stated
 - Original: <https://astrix.security/learn/blog/subjugation-hijacking-cloud-identities-by-recycling-namespaces-in-global-oidc-issuers/>
@@ -316,9 +318,3 @@ These Phantom Cloud Identities sit silently in cloud environments today. They do
 Astrix’s Non-Human Identity (NHI) security platform continuously maps the connections between your CI/CD pipelines, non-human identities, and the cloud resources they access. This means Astrix can surface improperly offboarded NHI before the attackers will put their hands on them.
 
 Beyond detection, Astrix helps organizations enforce least-privilege across their non-human identity inventory like right-sizing the permissions on deployment roles and flagging over-privileged cloud access granted to CI pipelines.
-
-##  ![Blue Star](https://astrix.security/wp-content/themes/airfleet-lightyear/assets/frontend/images/blue_star.svg) About the Author
-
-Tal Skverer (a.k.a. “reverser”) is the Security Researcher at Astrix Security, specializing in reverse-engineering complex threats against non-human identities (NHIs). Based in Tel Aviv and educated at the prestigious Weizmann Institute of Science, Tal delves into real-world cloud attacks analyzing malicious service principals, API token abuse, and emerging LLM-agent vulnerabilities .
-
-An active contributor to the OWASP NHI Top 10 and frequent speaker at cybersecurity events like RSA and CSA, Tal turns his deep technical insights into accessible, hands-on analysis. His work empowers security teams to detect and mitigate threats stemming from machine identities—bridging the gap between academic rigor and practitioner impact.

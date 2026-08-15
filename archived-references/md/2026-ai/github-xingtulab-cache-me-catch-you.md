@@ -12,15 +12,19 @@ sources:
   - id: original
     resource: "https://github.com/XingTuLab/Cache_Me_Catch_You"
     title: Code
-    author: XingTuLab
+    author: XiangFan Wu, Lingyun Ying, Guoqiang Chen, Yacong Gu, Haipeng Qu
   - id: commit
     resource: "https://github.com/XingTuLab/Cache_Me_Catch_You"
 also_at: []
 authors:
-  - XingTuLab
+  - XiangFan Wu
+  - Lingyun Ying
+  - Guoqiang Chen
+  - Yacong Gu
+  - Haipeng Qu
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:95"
+  - "2026-ai.md:76"
 commit: 480d9ad4b9798b3a42b9441a11d2e8a1c0ea70ca
 content_sha256: 3fbd9c32176f1314e64ebff4253bfef0934f62d4986e446d6b3d985c30b25eb1
 depth: full
@@ -45,7 +49,7 @@ translation_of: ""
 
 # Code
 
-**Code** - XingTuLab, GitHub.
+**Code** - XiangFan Wu, Lingyun Ying, Guoqiang Chen, Yacong Gu, Haipeng Qu, GitHub.
 
 - Published: date not stated
 - Original: <https://github.com/XingTuLab/Cache_Me_Catch_You>

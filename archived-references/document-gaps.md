@@ -42,7 +42,7 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-7 reference(s) unresolved. 6 of them already have their raw bytes stored.
+17 reference(s) unresolved. 14 of them already have their raw bytes stored.
 
 ## https://acmccs.github.io/papers/p957-vissersA.pdf
 
@@ -51,6 +51,14 @@ or fix the route and re-run.
 - Reason: faulty capture: 250 ligature glyphs read as U+FFFD inside words ("Certi<?>cate", "Cloud<?>are", "WHOIS<?>eld"); the 2026-08-14 poppler re-read recovered 59KB of previously missing text but maps this font's fi/ff ligature to a replacement character; needs a different extractor or OCR (reported 2026-08-14)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2016-17.md:88`
+
+## https://blog.voorivex.team/javascript-functions-overload-confusion
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the opening paragraphs are missing, so the body starts mid-argument on a back-reference with no antecedent ("That is why a small postMessage challenge on Twitter caught my eye ... the exact confusion I had been abusing in the wild"); re-acquire (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2026-ai.md:46`
 
 ## https://dl.acm.org/doi/10.1145/2810103.2813680
 
@@ -67,6 +75,78 @@ or fix the route and re-run.
 - Reason: faulty capture: fi/ff/fl ligatures are missing inside words ("classier", "benet", "conguration"); could not be re-read on 2026-08-14 because the stored source bytes are gone and the citation is an IEEE DOI that does not serve the PDF; needs the paper obtained by hand, then import --redo (reported 2026-08-14)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2022.md:73`
+
+## https://eprint.iacr.org/2026/058
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the archived document is the IACR ePrint landing page, not the paper - about 4.0 kB in which the whole technique is one abstract sentence, while the paper sits one link away at https://eprint.iacr.org/2026/058.pdf; adopt the publisher PDF with papers (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2026-ai.md:70`
+
+## https://ethiack.com/info-hub/research/write-once-shell-everywhere-arbitrary-file-writes-into-rce
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: seven fenced code blocks are published empty, including the newline-sled payload and the Kubernetes Job example - the known HTML-comment-wrapped-listing class sanitise.py and extract_html.py were fixed for; re-extract offline with acquire --force (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2026-ai.md:52`
+
+## https://github.com/yardenporat353/WhenAgenticGlueMeltsPOCs
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: repo
+- Reason: faulty capture: the preserved README stops on a bare "## License" heading with nothing under it - 2,048 bytes against the 2,155 the blob record states, so the licence paragraph is missing; recapture (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2026-ai.md:79`
+
+## https://hackerone.com/reports/3511792
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: article
+- Reason: faulty capture: the report's comment thread - which is the document for a disclosed HackerOne report - came through as empty entries (a reporter link followed by a lone "."), leaving about 700 characters of technique; recapture (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2026-ai.md:53`
+
+## https://i.blackhat.com/BH-USA-26/Presentations/CoreBreak_BlackHat2026_FINAL.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: ti/tt ligatures render as wrong characters inside words ("virtualiza?on", "Founda9ons", "Ques%ons", "AXack", "AcLons"). Poppler was tried on 2026-08-15 and reproduced the SAME forms, so the fault is the source PDF's own ToUnicode table rather than our extraction; a re-render cannot fix it and rewriting quoted source text is not allowed - needs the publisher's corrected PDF or OCR (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2026-ai.md:81`
+
+## https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Aviv%20Donenfeld%20-%20LGTM%20Bypassing%20an%20LLM%20Build%20Gate%20When%20Prompt%20Injection%20Fails%20-%20LGMT%20v2.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: only 46 of the deck's 110 pages are present (the stored PDF declares /Count 110; the document ends mid-talk at "## Page 46", before the payoff its own agenda promises). Poppler was tried on 2026-08-15 and returned NO text at all - the PDF is image-only, so pdf-text and acquire --force cannot help; needs pdf-pages and a reader, or OCR (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2026-ai.md:88`
+
+## https://media.defcon.org/DEF%20CON%2034/DEF%20CON%2034%20presentations/DEF%20CON%2034%20presentations/DEF%20CON%2034%20-%20Ji%27an%20Zhou%2C%20Lei%20Lu%20-%20One%20Chain%20to%20Own%20Them%20All%20-%20Breaking%20AI%20Infrastructures%20-%20azraelxuemo%20v3.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: the 143-slide deck yielded only title text - 148 of 351 non-blank lines are a bare page number and slide headings stand with nothing under them, because the substance is in screenshots the text layer does not carry; needs pdf-pages and a reader, or OCR (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2026-ai.md:78`
+
+## https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks/
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: the capture is the pre-talk teaser and Black Hat abstract, not the write-up - 1,902 characters with no case studies, payloads or code; the stored bytes are dated 2026-05-20 and the talk was given 2026-08-05, so re-acquire (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2026-ai.md:33`
+
+## https://web.archive.org/web/20260418230027/https://mizu.re/post/fcsc-2026-writeups
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: raw <img> tags inside the code listings were parsed away, truncating the exploit payloads mid-string ("document.execCommand(\"insertHTML\", false, \"<img src=x" with the onerror body gone); re-extract keeping HTML inside listings (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2026-ai.md:58`
 
 ## https://www.blackhat.com/docs/eu-14/materials/eu-14-Hayak-Same-Origin-Method-Execution-Exploiting-A-Callback-For-Same-Origin-Policy-Bypass-wp.pdf
 

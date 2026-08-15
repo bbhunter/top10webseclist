@@ -686,5 +686,3 @@ Payload parsing result table:
 ## Conclusion
 
 Parser differentials are still, in my opinion, under-research. The more parser libraries emerge, the higher the chance to have parsing differentials. In this research, I extended [BlackFan’s response `Content-Type` tricks research](https://github.com/BlackFan/content-type-research/blob/master/XSS.md#response-content-type-tricks) and learned how parsers parse MIME type strings. I hope you learned something new about some weird MIME type string parsing quirks and potentially found a new parser differential technique!
-
- [parser-differential](https://lab.ctbb.show/research/?tag=parser-differential) [client-side](https://lab.ctbb.show/research/?tag=client-side) [mime](https://lab.ctbb.show/research/?tag=mime) [xss](https://lab.ctbb.show/research/?tag=xss)

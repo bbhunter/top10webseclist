@@ -1117,8 +1117,13 @@
     "https://i.blackhat.com/BH-USA-26/Presentations/BUHUS26-Porat-When-Agentic-Glue-Melts-REV01.pdf": {
       "outcome": "archive",
       "class": "research",
-      "title": "When Agentic Glue Melts: Exploiting Cloudflare Code Mode & Workers",
-      "reason": "Reviewed 2026-08-14: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited."
+      "title": "When Agentic Glue Melts: Exploiting Cloudflare Code Mode & Workers (Slides)",
+      "reason": "Reviewed 2026-08-14: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited. Reviewed again 2026-08-15: the Check Point write-up at research.checkpoint.com carries the same title bar an ampersand, so the format word the citation uses is added in parentheses per the archive’s sibling convention. The deck also had all 43 of its code listings fenced with ~~~ rather than backticks; refslib/makepdf.py recognises backtick fences only, so every listing was being flowed into a paragraph in the rendered PDF with its indentation lost. Re-imported with the fences converted (43 openers and 43 closers, verified balanced before and after), which rewrites the stored text so a later re-render cannot restore the tildes. Authors are named on slide 1 and slide 43 - \"Yarden Porat · Shahar Tal · Check Point\" - and publisher was empty, so the body printed \"Publisher not stated\".",
+      "authors": [
+        "Yarden Porat",
+        "Shahar Tal"
+      ],
+      "publisher": "Check Point Research"
     },
     "https://ndss-symposium.org/wp-content/uploads/f0697-yang-slides.pdf": {
       "outcome": "archive",
@@ -1189,7 +1194,12 @@
       "outcome": "archive",
       "class": "research",
       "title": "Write Once, Shell Everywhere: Turning Arbitrary File Writes into RCE",
-      "reason": "Reviewed 2026-08-14: the recorded title carried the site's own chrome rather than the document's own title. The document itself is the one cited. The recorded title appended the site tagline (\"| Ethiack — Autonomous Ethical Hacking for continuous security\")."
+      "reason": "Reviewed 2026-08-14: the recorded title carried the site's own chrome rather than the document's own title. The document itself is the one cited. The recorded title appended the site tagline (\"| Ethiack — Autonomous Ethical Hacking for continuous security\"). Reviewed again 2026-08-15: the article also names all three researchers - \"This research was independently conducted and presented by André Baptista ([ @0xacb ](https://x.com/0xacb?lang=en)), Rafael Castilho ([ @Castilho ](https://x.com/castilho101)) and Bruno Mendes ([ @s3np41k1r1t0 ](https://x.com/s3np41k1r1t0)).\" The archive recorded only the company name \"Ethiack\".",
+      "authors": [
+        "André Baptista",
+        "Rafael Castilho",
+        "Bruno Mendes"
+      ]
     },
     "https://mizu.re/post/fcsc-2026-writeups": {
       "outcome": "archive",
@@ -1743,6 +1753,84 @@
       "class": "research",
       "title": "ElectroVolt: Pwning Popular Desktop Apps While Uncovering New Attack Surface on Electron (Slides)",
       "reason": "Reviewed 2026-08-14: the recorded title was \"US 22 Purani ElectroVolt Pwning Popular Desktop Apps\", the deck's file stem. Its own title slide reads \"ElectroVolt / Pwning Popular Desktop apps while uncovering new attack surface on Electron\". 2022.md:41 cites it as the [Slides] sibling of the DEF CON 30 recording, so the citation's own format word is kept in parentheses."
+    },
+    "https://brave.com/blog/agentic-oversharing": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Ali Shahin Shamsabadi"
+      ],
+      "reason": "Reviewed 2026-08-15: the document carries an \"Authors\" block naming \"Ali Shahin Shamsabadi:   Sr. Privacy Researcher\", linked to https://brave.com/author/ali-shahin-shamsabadi/. The archive recorded only the publisher handles \"@brave\" and \"Brave Software\", so the researcher was uncredited."
+    },
+    "https://research.checkpoint.com/2026/when-agentic-glue-melts": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Yarden Porat"
+      ],
+      "reason": "Reviewed 2026-08-15: the article states its own byline directly under the title and date - \"*By Yarden Porat, Check Point Research*\". The archive recorded \"matthewsu\" and \"@_cpresearch_\", neither of which is the author; \"matthewsu\" appears to be a site account picked up by extraction. The companion Black Hat deck (when-agentic-glue-melts-exploiting-cloudflare-code-mode-workers) credits \"Yarden Porat / Shahar Tal\", but this article names only Porat, so only he is recorded here."
+    },
+    "https://astrix.security/learn/blog/subjugation-hijacking-cloud-identities-by-recycling-namespaces-in-global-oidc-issuers": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Tal Skverer"
+      ],
+      "reason": "Reviewed 2026-08-15: the document names its researcher in its About the Author block - \"Tal Skverer (a.k.a. “reverser”) is the Security Researcher at Astrix Security, specializing in reverse-engineering complex threats against non-human identities (NHIs).\" Recorded before the publisher-furniture block it sits in is considered for removal, so the credit is not lost with it."
+    },
+    "https://zhero-web-sec.github.io/research-and-things/one-trigram-at-a-time-xsleak-via-universal-css-injection-and-dos-in-opera-(gx)": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "zhero",
+        "inzo_"
+      ],
+      "reason": "Reviewed 2026-08-15: the document closes with \"Research conducted by [zhero;](https://x.com/zhero___) & [inzo_](https://x.com/inzo____)\". Both are handles the researchers publish under, each linked to its own X profile - not the publisher hostname zhero_web_security, which is what the entry previously had to fall back on."
+    },
+    "https://github.com/AdnaneKhan/Cacheract": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Adnan Khan"
+      ],
+      "reason": "Reviewed 2026-08-15: the preserved LICENSE names the person behind the repository owner handle - \"MIT License / Copyright (c) 2024 Adnan Khan\". The archive recorded only the GitHub handle \"AdnaneKhan\"; the real name is added beside it."
+    },
+    "https://github.com/UWCSESecurityLab/agentic-browser-sop": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Franziska Roesner",
+        "David Kohlbrenner"
+      ],
+      "reason": "Reviewed 2026-08-15: the README's own citation block names the authors - \"author={Roesner, Franziska and Kohlbrenner, David}\". The archive recorded only the lab account \"UWCSESecurityLab\", which is an organisation, not a byline. The sibling project page (agent-security-cs-washington-edu-agentic-browsers-same-origin-policy) already records the same two names."
+    },
+    "https://github.com/XingTuLab/Cache_Me_Catch_You": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "XiangFan Wu",
+        "Lingyun Ying",
+        "Guoqiang Chen",
+        "Yacong Gu",
+        "Haipeng Qu"
+      ],
+      "reason": "Reviewed 2026-08-15: the README's Citation block names all five authors - \"author={Wu, XiangFan and Ying, Lingyun and Chen, Guoqiang and Gu, Yacong and Qu, Haipeng}\". The archive recorded only the lab account \"XingTuLab\"."
+    },
+    "https://github.com/yardenporat353/WhenAgenticGlueMeltsPOCs": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Yarden Porat"
+      ],
+      "reason": "Reviewed 2026-08-15: the README states \"Author: Yarden Porat ([@yarpo](https://github.com/yardenporat353)).\" The archive recorded only the GitHub handle \"yardenporat353\"."
+    },
+    "https://nodejs.org/en/blog/vulnerability/march-2026-hashdos": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Joyee Cheung"
+      ],
+      "reason": "Reviewed 2026-08-15: the post carries its byline under the title - a \"[JC](https://github.com/joyeecheung)\" avatar link followed by \"Joyee Cheung\" - and the body confirms it: \"This fix was developed and backported to Node.js LTS branches by [Joyee Cheung](https://github.com/joyeecheung) (Igalia, under the sponsorship of Bloomberg).\" The archive recorded only the project account \"@nodejs\"."
     }
   }
 }

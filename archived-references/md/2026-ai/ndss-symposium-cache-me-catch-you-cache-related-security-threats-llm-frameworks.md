@@ -78,23 +78,3 @@ We conducted a systematic study of the cache implementations in mainstream LLM s
  Our findings underscore the importance of secure the caching infrastructure in the rapidly expanding LLM ecosystem.
 
  [Paper](https://www.ndss-symposium.org/wp-content/uploads/2026-f2812-paper.pdf)
-
-## View More Papers
-
-### [ ACE: A Security Architecture for LLM-Integrated App Systems ](https://www.ndss-symposium.org/ndss-paper/ace-a-security-architecture-for-llm-integrated-app-systems/)
-
- Evan Li (Northeastern University), Tushin Mallick (Northeastern University), Evan Rose (Northeastern University), William Robertson (Northeastern University), Alina Oprea (Northeastern University), Cristina Nita-Rotaru (Northeastern University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/ace-a-security-architecture-for-llm-integrated-app-systems/)
-
-### [ The Heat is On: Understanding and Mitigating Vulnerabilities of... ](https://www.ndss-symposium.org/ndss-paper/the-heat-is-on-understanding-and-mitigating-vulnerabilities-of-thermal-image-perception-in-autonomous-systems/)
-
- Sri Hrushikesh Varma Bhupathiraju (University of Florida), Shaoyuan Xie (University of California, Irvine), Michael Clifford (Toyota InfoTech Labs), Qi Alfred Chen (University of California, Irvine), Takeshi Sugawara (The University of Electro-Communications), Sara Rampazzi (University of Florida)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/the-heat-is-on-understanding-and-mitigating-vulnerabilities-of-thermal-image-perception-in-autonomous-systems/)
-
-### [ WiFinger: Fingerprinting Noisy IoT Event Traffic Using Packet-level Sequence... ](https://www.ndss-symposium.org/ndss-paper/wifinger-fingerprinting-noisy-iot-event-traffic-using-packet-level-sequence-matching/)
-
- Ronghua Li (The Hong Kong Polytechnic University), Shinan Liu (The University of Hong Kong), Haibo Hu (The Hong Kong Polytechnic University, PolyU Research Centre for Privacy and Security Technologies in Future Smart Systems), Qingqing Ye (The Hong Kong Polytechnic University), Nick Feamster (University of Chicago)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/wifinger-fingerprinting-noisy-iot-event-traffic-using-packet-level-sequence-matching/)

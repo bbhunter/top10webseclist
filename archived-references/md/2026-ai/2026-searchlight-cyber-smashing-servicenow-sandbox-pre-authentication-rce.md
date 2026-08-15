@@ -376,7 +376,3 @@ Additionally, ServiceNow is enhancing instance security by severely restricting 
 The introduction of Guarded Script makes future sandbox escapes much less likely, by severly limiting the syntax that a pre auth attacker can use.
 
 Until next time!
-
-### About Searchlight Cyber
-
-Customers of Searchlight Cyber’s ASM solution, [Assetnote](https://slcyber.io/products/attack-surface-management-tool/), are always first to receive checks for the novel vulnerabilities we discover – often weeks or months before public disclosure. Our Security Research Team continues to dig beyond public PoCs to deliver high-signal detections to our platform. [Learn more](https://slcyber.io/products/attack-surface-management-tool/).

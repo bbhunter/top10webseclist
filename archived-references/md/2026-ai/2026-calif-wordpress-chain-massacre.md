@@ -181,9 +181,3 @@ Attackers always weaponize, and it's getting easier than ever with AI. But domai
 But that raises a harder question. Directing the model takes knowing what is possible, and that knowing usually comes from having done the work yourself. If the model does the work from now on, where does it come from? We learned it the slow way, by hand, over years. How the next person learns it, once the slow way is optional, we honestly do not know.
 
 We do know one thing, though. You can outsource the hacking, but not the understanding.
-
-#### Discussion about this post
-
-Restacks
-
-No posts

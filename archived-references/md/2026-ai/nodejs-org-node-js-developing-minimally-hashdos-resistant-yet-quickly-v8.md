@@ -12,13 +12,13 @@ sources:
   - id: original
     resource: "https://nodejs.org/en/blog/vulnerability/march-2026-hashdos"
     title: Node.js — Developing a minimally HashDoS resistant, yet quickly reversible integer hash for V8
-    author: @nodejs
+    author: Joyee Cheung
 also_at: []
 authors:
-  - @nodejs
+  - Joyee Cheung
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:52"
+  - "2026-ai.md:53"
 commit: ""
 content_sha256: 2892eab42081b6a19faa603c43b710a428413ed002bc49a5421d4e1e921e2346
 depth: full
@@ -43,7 +43,7 @@ translation_of: ""
 
 # Node.js — Developing a minimally HashDoS resistant, yet quickly reversible integer hash for V8
 
-**Node.js — Developing a minimally HashDoS resistant, yet quickly reversible integer hash for V8** - @nodejs, nodejs.org.
+**Node.js — Developing a minimally HashDoS resistant, yet quickly reversible integer hash for V8** - Joyee Cheung, nodejs.org.
 
 - Published: date not stated
 - Original: <https://nodejs.org/en/blog/vulnerability/march-2026-hashdos>
@@ -442,5 +442,3 @@ We have also notified other V8 embedders (Deno and Cloudflare workers) about the
 ## Acknowledgments
 
 This fix was developed and backported to Node.js LTS branches by [Joyee Cheung](https://github.com/joyeecheung) (Igalia, under the sponsorship of Bloomberg). Thanks to [Mate Marjanović](https://hackerone.com/sharp_edged?type=user) for identifying and reporting the vulnerability, [Leszek Swirski](https://github.com/leszekswirski) from the Google V8 team for reviewing and providing feedback on the design and implementation, [Chengzhong Wu](https://github.com/legendecas) (Bloomberg) for reviewing the V8 patches for Node.js, [Matteo Collina](https://github.com/mcollina) (Platformatic) for triaging and investigating the mitigations, [Olivier Flückiger](https://github.com/o-) (Google V8) for helping with the coordination, [Antoine du Hamel](https://github.com/aduh95), [Juan José Arboleda](https://github.com/juanarbol), [Marco Ippolito](https://github.com/marco-ippolito), and [Rafael Gonzaga](https://github.com/RafaelGSS) for preparing the security releases.
-
-[Thursday, June 18, 2026 Security Releases](https://nodejs.org/en/blog/vulnerability/june-2026-security-releases)[Tuesday, March 24, 2026 Security Releases](https://nodejs.org/en/blog/vulnerability/march-2026-security-releases)

@@ -1036,7 +1036,3 @@ A lot of WAFs will mitigate these techniques by checking for %0d%0a within inser
 In summary we’ve demonstrated how you can escalate request header injection to its maximum potential of a desync worm and provided a plethora of novel methods for detecting and exploiting desync vulnerabilities, even when connections aren’t shared between users. To complement this, we’ve shared our open-source toolkit and hope you’ll use it to find some desyncs that have gone unexploited for far too long. Even while preparing for BlackHat, we spotted [great examples in the wild](https://tmctmt.com/posts/http-desync-in-discord/) such as a desync found by [@tmctmt](https://x.com/tmctmt) which affected Discord.
 
 On a more research-oriented note, buried amongst the high-impact case studies you’ll find that this paper represents a much simpler lesson for anyone looking to undertake their own research. The industry has a very short memory. Even recent papers in our very own Top 10 Web Hacking techniques can be combined, mutated and built-upon to find impactful research topics. You just have to test your ideas.
-
- [ Request Smuggling ](https://portswigger.net/research/request-smuggling) [ tom favourites ](https://portswigger.net/research/tom-favourites) [ Black Hat ](https://portswigger.net/research/black-hat)
-
-[Back to all articles](https://portswigger.net/research/articles)

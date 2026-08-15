@@ -12,15 +12,16 @@ sources:
   - id: original
     resource: "https://github.com/UWCSESecurityLab/agentic-browser-sop"
     title: Code
-    author: UWCSESecurityLab
+    author: Franziska Roesner, David Kohlbrenner
   - id: commit
     resource: "https://github.com/UWCSESecurityLab/agentic-browser-sop"
 also_at: []
 authors:
-  - UWCSESecurityLab
+  - Franziska Roesner
+  - David Kohlbrenner
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:103"
+  - "2026-ai.md:84"
 commit: de27d0cabe122488fa69df9947a6d187bca731f3
 content_sha256: 4a8e2af7387282cd1baaeac98cffe4ff1011ddd1adf455ab1d62c96378335444
 depth: full
@@ -45,7 +46,7 @@ translation_of: ""
 
 # Code
 
-**Code** - UWCSESecurityLab, GitHub.
+**Code** - Franziska Roesner, David Kohlbrenner, GitHub.
 
 - Published: date not stated
 - Original: <https://github.com/UWCSESecurityLab/agentic-browser-sop>

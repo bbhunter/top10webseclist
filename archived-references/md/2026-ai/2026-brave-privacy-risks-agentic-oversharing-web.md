@@ -12,15 +12,14 @@ sources:
   - id: original
     resource: "https://brave.com/blog/agentic-oversharing/"
     title: Privacy risks of agentic oversharing on the Web
-    author: @brave, Brave Software
+    author: Ali Shahin Shamsabadi
     last_modified: 2026-03-05
 also_at: []
 authors:
-  - @brave
-  - Brave Software
+  - Ali Shahin Shamsabadi
 canonical_url: ""
 cited_by:
-  - "2026-ai.md:84"
+  - "2026-ai.md:87"
 commit: ""
 content_sha256: 3a4070d0c3bf838bc631aabca35b741480d3415709aad5a518daa2822a80e3b8
 depth: full
@@ -45,7 +44,7 @@ translation_of: ""
 
 # Privacy risks of agentic oversharing on the Web
 
-**Privacy risks of agentic oversharing on the Web** - @brave, Brave Software, Brave.
+**Privacy risks of agentic oversharing on the Web** - Ali Shahin Shamsabadi, Brave.
 
 - Published: 2026-03-05
 - Original: <https://brave.com/blog/agentic-oversharing/>
@@ -115,29 +114,3 @@ A common assumption is that privacy and utility exist in tension—that restrict
 Privacy and utility, in this light, are not adversaries, they are allies. We hope this finding serves as a call to action: building privacy-aware Web agents is not a constraint on capability. Understanding and addressing the root causes of agentic oversharing is therefore not only a privacy imperative, but a performance one.
 
 At Brave, we are actively identifying these privacy risks and working to ensure our agents are privacy-aware. If you’d like, you can also [test an early version of agentic browsing in the Brave Leo AI assistant in Brave Nightly](https://brave.com/blog/ai-browsing/).
-
-## Related articles
-
-###  [ AgentStop: Terminating Local AI Agents Early to Save Energy in Consumer Devices ](https://brave.com/blog/agentstop/)
-
-May 28, 2026
-
-AgentStop is a lightweight efficiency supervisor that monitors local AI agents in real time, predicts when they are heading toward wasted computation, and terminates unpromising runs early to save battery on consumer devices.
-
- [Read this article](https://brave.com/blog/agentstop/)
-
-###  [ zkLogin: when ZKP is not enough ](https://brave.com/blog/zklogin/)
-
-Feb 13, 2026
-
-Zero-knowledge proofs can't fix what they can't see. Our security analysis of zkLogin reveals that real-world ZK authorization systems are only as secure as the authentication infrastructure they're built on.
-
- [Read this article](https://brave.com/blog/zklogin/)
-
-###  [ Coral: Bridging Parsing and Zero-Knowledge Proofs ](https://brave.com/blog/coral/)
-
-Nov 17, 2025
-
-We introduce Coral, a system for proving in zero-knowledge that a committed byte stream corresponds to a structured object in accordance with a Context Free Grammar.
-
- [Read this article](https://brave.com/blog/coral/)

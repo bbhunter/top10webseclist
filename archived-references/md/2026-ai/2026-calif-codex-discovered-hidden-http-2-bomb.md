@@ -161,9 +161,3 @@ The deeper miss is that the spec frames memory risk purely as an amplification r
 The other thing worth noting is how this exploit was found. Both halves have been public for a decade. What Codex did was read the codebases, recognize that the two compose, and build the combined attack. That combination is obvious once you see it, and yet as far as we can tell no human had put it together against these servers.
 
 When the team walked me through this research, I found myself back in 2012. That year, Juliano Rizzo and I discovered [CRIME](https://en.wikipedia.org/wiki/CRIME), a compression oracle that recovered cookies from compressed HTTP headers. I was at Google at the time, so I was asked to review the fix, which became HPACK. I just re-read my notes from that review: I never once considered this attack. I was too fixated on fighting CRIME and missed the bomb.
-
-#### Discussion about this post
-
-Restacks
-
-No posts

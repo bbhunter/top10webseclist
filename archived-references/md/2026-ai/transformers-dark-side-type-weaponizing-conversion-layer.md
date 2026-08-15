@@ -329,7 +329,3 @@ Transformers: Dark Side of the Type O. Mirosh · Black Hat USA 2026 OpenText For
 --- page 67 ---
 
 Transformers: Dark Side of the Type O. Mirosh · Black Hat USA 2026 OpenText Fortify 67 [34] Microsoft. "CVE-2026-47294." https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47294 [35] Microsoft. "CVE-2026-26106." https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26106 [36] Microsoft. "CVE-2026-40357." https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40357 [37] Microsoft. "CVE-2026-48560." https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48560 [38] Mirosh, O. & Muñoz, A. "SSO Wars: The Token Menace." Black Hat USA, 2019. https://i.blackhat.com/USA-19/Wednesday/us-19-Munoz-SSO-Wars-The-Token-Menace-wp.pdf
-
---- page 68 ---
-
-¸¤@+P++

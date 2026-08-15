@@ -352,7 +352,3 @@ Timeline:
 - March 1, 2026: `xlink:href` patch landed
 - March 3, 2026: `ProtocolIsJavaScript` patch landed
 - April 7, 2026: Chrome 147 released with both fixes
-
-### About Searchlight Cyber
-
-Customers of Searchlight Cyber’s ASM solution, [Assetnote](https://slcyber.io/products/attack-surface-management-tool/), are always first to receive checks for the novel vulnerabilities we discover – often weeks or months before public disclosure. Our Security Research Team continues to dig beyond public PoCs to deliver high-signal detections to our platform. [Learn more](https://slcyber.io/products/attack-surface-management-tool/).
