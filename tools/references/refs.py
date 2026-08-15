@@ -2544,6 +2544,224 @@ def _accept_byline(url, reading, known, accept="high"):
     return ""
 
 
+DIGEST_MAX = 400
+DIGEST_TAGS_MIN = 4
+DIGEST_TAGS_MAX = 10
+
+
+def tag_vocabulary(manifest):
+    """Every tag currently in use, counted. The vocabulary IS what survived review.
+
+    There is no hand-maintained list to drift out of date: a tag enters by being
+    applied to a document and surviving, and leaves by being merged away.
+    """
+    counts = {}
+    for entry in manifest.data["urls"].values():
+        for tag in ((entry.get("digest") or {}).get("tags") or []):
+            counts[tag] = counts.get(tag, 0) + 1
+    return counts
+
+
+def _digest_queue(manifest, root, config, only="", collection="", limit=None):
+    """References whose document is published but carries no current summary.
+
+    Re-queues a digest written from DIFFERENT bytes than the document now holds,
+    which is what makes this safe to re-run after a repair: a summary of a
+    document that has since been recaptured is stale, and saying so is the whole
+    point of recording `of`.
+    """
+    from refslib import collections as collections_module
+    archive_dir = root / (config.get("archive_dir") or "archived-references")
+    queue = []
+    for key, entry in sorted(manifest.data["urls"].items()):
+        if only and only.lower() not in key.lower():
+            continue
+        if not entry.get("slug"):
+            continue
+        relpath = collections_module.md_relpath(entry, config, entry["slug"])
+        if collection and ("/%s/" % collection) not in ("/%s" % str(relpath).replace("\\", "/")):
+            continue
+        path = archive_dir / relpath
+        if not path.exists():
+            continue
+        digest = entry.get("digest") or {}
+        if digest.get("text") and digest.get("of") == entry.get("content_sha256"):
+            continue
+        queue.append({
+            "url": key,
+            "slug": entry["slug"],
+            "title": entry.get("title") or "",
+            "publisher": entry.get("publisher") or "",
+            "kind": entry.get("kind") or "",
+            "path": str(relpath).replace("\\", "/"),
+            "stale": bool(digest.get("text")),
+        })
+        if limit is not None and len(queue) >= limit:
+            break
+    return queue
+
+
+def _trim_to_sentence(text, limit=DIGEST_MAX):
+    """Cut an over-long summary at a sentence end, never mid-sentence.
+
+    A summary that stops mid-clause reads as damage, and this archive already
+    publishes enough of that. Returns "" when there is no sentence break to cut
+    at, so the caller refuses the reading instead of publishing a fragment.
+    """
+    text = " ".join(str(text or "").split())
+    if len(text) <= limit:
+        return text
+    # SEARCH WITHIN `limit`, NOT `limit + 1`. The slice keeps the full stop
+    # itself, so a break found AT the limit returns limit + 1 characters - one
+    # over the ceiling this function exists to enforce.
+    cut = text.rfind(".", 0, limit)
+    if cut <= 0:
+        return ""
+    return text[:cut + 1].strip()
+
+
+def _accept_digest(url, reading, known, vocabulary):
+    """(refusal reason, text, tags, proposals) for one reviewed summary.
+
+    Refuses an unknown tag outright. That is the guard that keeps the vocabulary
+    controlled: a reviewer who needs a word the archive does not have writes it
+    with a `?` prefix, and it is reported as a PROPOSAL and stripped, so a tag
+    only ever enters by a maintainer promoting it.
+    """
+    if url not in known:
+        return "no such reference in the manifest", "", [], []
+    text = _trim_to_sentence((reading or {}).get("text"))
+    if not text:
+        return "no summary, or none that ends at a sentence within %d characters" % DIGEST_MAX, "", [], []
+    raw = [str(tag).strip() for tag in ((reading or {}).get("tags") or []) if str(tag).strip()]
+    proposals = [tag[1:] for tag in raw if tag.startswith("?")]
+    tags, unknown = [], []
+    for tag in raw:
+        if tag.startswith("?"):
+            continue
+        if tag not in vocabulary:
+            unknown.append(tag)
+        elif tag not in tags:
+            tags.append(tag)
+    if unknown:
+        return ("not in the vocabulary, and not marked as a proposal: "
+                + ", ".join(sorted(unknown)[:4]), "", [], proposals)
+    if not DIGEST_TAGS_MIN <= len(tags) <= DIGEST_TAGS_MAX:
+        return ("%d tag(s) after stripping proposals; want %d to %d"
+                % (len(tags), DIGEST_TAGS_MIN, DIGEST_TAGS_MAX), "", [], proposals)
+    return "", text, tags, proposals
+
+
+def command_digest(args):
+    """Record a short summary and controlled tags for each archived document.
+
+    Two halves, like `bylines`, and for the same reason: reading a document and
+    saying what it is about is not the tool's judgement to make. `--queue` lists
+    the documents with no current summary; a reviewer returns text and tags;
+    `--apply` validates them against the vocabulary and writes them into the
+    manifest, where the website reads them.
+
+    Offline throughout. Nothing here fetches, renders or touches the store.
+    """
+    root = paths.repo_root()
+    config = paths.config()
+    manifest = check_module.open_manifest(root, config)
+    vocabulary = tag_vocabulary(manifest)
+
+    if args.vocabulary:
+        written = write_tag_vocabulary(root, config, manifest)
+        print("Wrote %s (%d tags, %d document(s) carrying a digest)."
+              % (written[0], written[1], written[2]))
+        return 0
+
+    if args.queue:
+        queue = _digest_queue(manifest, root, config, only=args.only,
+                              collection=args.collection, limit=args.limit)
+        stale = sum(1 for item in queue if item["stale"])
+        Path(args.queue).write_text(
+            json.dumps({"schema": 1, "count": len(queue),
+                        "vocabulary": [tag for tag, _ in
+                                       sorted(vocabulary.items(),
+                                              key=lambda kv: (-kv[1], kv[0]))],
+                        "queue": queue},
+                       ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8", newline="\n")
+        print("Wrote %d reference(s) needing a summary to %s (%d stale)."
+              % (len(queue), args.queue, stale))
+        print("Read each document, then record the result with "
+              "`refs.py digest --apply <file>`.")
+        return 0
+
+    reviewed = json.loads(Path(args.apply).read_text(encoding="utf-8"))
+    readings = reviewed.get("digests") if isinstance(reviewed, dict) else None
+    if readings is None:
+        readings = reviewed if isinstance(reviewed, dict) else {}
+    known = manifest.data["urls"]
+
+    taken = refused = 0
+    trimmed, proposed = [], {}
+    for url, reading in sorted(readings.items()):
+        before = len(" ".join(str((reading or {}).get("text") or "").split()))
+        reason, text, tags, proposals = _accept_digest(url, reading or {},
+                                                       known, vocabulary)
+        for tag in proposals:
+            proposed[tag] = proposed.get(tag, 0) + 1
+        if reason:
+            refused += 1
+            print("  REFUSED  %-52s %s" % (url[:52], reason))
+            continue
+        if before > len(text):
+            trimmed.append((known[url].get("slug") or url, before, len(text)))
+        if not args.check:
+            known[url]["digest"] = {
+                "text": text,
+                "tags": tags,
+                "by": args.by,
+                "at": manifest_utc()[:10],
+                "of": known[url].get("content_sha256") or "",
+            }
+        taken += 1
+
+    for slug, before, after in trimmed:
+        print("  TRIMMED  %-52s %d -> %d" % (str(slug)[:52], before, after))
+    if proposed:
+        print("\nHeld tag proposal(s), stripped and never published: "
+              + ", ".join("%s (x%d)" % (tag, count)
+                          for tag, count in sorted(proposed.items())))
+        print("Promote one by hand only once more than one document has asked "
+              "for it, or once it names something the vocabulary cannot.")
+    if args.check:
+        print("\n%d summary(ies) would be recorded; %d refused. "
+              "This was --check: nothing was written." % (taken, refused))
+        return 0
+    manifest.save()
+    print("\nRecorded %d summary(ies); %d refused." % (taken, refused))
+    print("Run `refs.py digest --vocabulary` to regenerate tag-vocabulary.md, "
+          "then `index`.")
+    return 0
+
+
+def write_tag_vocabulary(root, config, manifest):
+    """Regenerate tag-vocabulary.md by counting the tags actually in use."""
+    archive_dir = root / (config.get("archive_dir") or "archived-references")
+    path = archive_dir / "tag-vocabulary.md"
+    counts = tag_vocabulary(manifest)
+    documents = sum(1 for entry in manifest.data["urls"].values()
+                    if (entry.get("digest") or {}).get("text"))
+    marker = "## The vocabulary"
+    head = path.read_text(encoding="utf-8").split(marker)[0] + marker + "\n"
+    once = sorted(tag for tag, count in counts.items() if count == 1)
+    lines = [head,
+             "\n%d tags, across %d documents that carry a digest.\n\n"
+             % (len(counts), documents),
+             "| Tag | Documents |\n|---|---|\n"]
+    lines += ["| `%s` | %d |\n" % (tag, counts[tag]) for tag in sorted(counts)]
+    lines.append("\n### Used exactly once\n\nReview these before reusing them: "
+                 + ", ".join("`%s`" % tag for tag in once) + "\n")
+    path.write_text("".join(lines), encoding="utf-8", newline="\n")
+    return path.relative_to(root), len(counts), documents
+
+
 def _published_authors(text):
     """The author list a published file already states, read off its frontmatter."""
     match = re.search(r"^authors:(.*)$", text, re.MULTILINE)
@@ -3367,6 +3585,31 @@ def build_parser():
                                      "a byline read from a signature, a site footer or "
                                      "a long-published handle (default: high)")
     bylines_parser.set_defaults(handler=command_bylines)
+
+    digest_parser = subparsers.add_parser(
+        "digest",
+        help="record a short summary and controlled tags per document (offline)")
+    digest_group = digest_parser.add_mutually_exclusive_group(required=True)
+    digest_group.add_argument("--queue", metavar="FILE",
+                              help="write the references needing a summary")
+    digest_group.add_argument("--apply", metavar="FILE",
+                              help="validate a completed review and record it "
+                                   "in the manifest")
+    digest_group.add_argument("--vocabulary", action="store_true",
+                              help="regenerate tag-vocabulary.md from the tags "
+                                   "actually in use")
+    digest_parser.add_argument("--collection", default="",
+                               help="only this collection, such as 2019 or 2016-17")
+    digest_parser.add_argument("--only", default="",
+                               help="only references whose identity contains this text")
+    digest_parser.add_argument("--limit", type=int, default=None,
+                               help="stop the queue after this many references")
+    digest_parser.add_argument("--check", action="store_true",
+                               help="report what --apply would record, and write nothing")
+    digest_parser.add_argument("--by", default="webseclist-review/1",
+                               help="what to record as the reviewer (default: "
+                                    "webseclist-review/1)")
+    digest_parser.set_defaults(handler=command_digest)
 
     attribution_parser = subparsers.add_parser(
         "attribution",
