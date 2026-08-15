@@ -239,25 +239,3 @@ Also, the DNS Analyzer will hopefully soon be available via the [BApp Store](htt
 Happy hacking!
 
 *This research was done by Timo Longin and published on behalf of the [SEC Consult Vulnerability Lab](https://sec-consult.com/vulnerability-lab/).*
-
- SEC Consult is always searching for talented security professionals to work in our team.
-
-[ More Information ](https://sec-consult.com/career/#c2854)
-
-[![](https://sec-consult.com/fileadmin/_processed_/0/8/csm_sec-consult-h-iceberg_c4d1557faf.jpg)](https://sec-consult.com/blog/detail/melting-the-dns-iceberg-taking-over-your-infrastructure-kaminsky-style/)
-
- 06.10.2022 vulnerability
-
-Hidden DNS resolvers and how to compromise your infrastructure
-
-[ Read more ](https://sec-consult.com/blog/detail/melting-the-dns-iceberg-taking-over-your-infrastructure-kaminsky-style/)
-
-[![](https://sec-consult.com/fileadmin/_processed_/5/0/csm_sec-consult-h_pwd_dns_image_1_en_675bb23e07.png)](https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/)
-
- 21.07.2021
-
-The "Forgot password?" feature and how DNS vulnerabilities may allow the takeover of user accounts.
-
-[ Read more ](https://sec-consult.com/blog/detail/forgot-password-taking-over-user-accounts-kaminsky-style/)
-
-[ Back ](https://sec-consult.com/blog/)

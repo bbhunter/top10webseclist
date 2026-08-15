@@ -765,19 +765,3 @@ Yes, lots of them! For example, ["Weak Links in Authentication Chains: A Large-s
 Yes, of course! In general, implementations of (sometimes) vague specifications can cause all kinds of security issues.
 
 As already mentioned, scanning e-mail services for used software and versions may yield inaccurate results and will most likely get you on some kind of blacklist. The same goes for more specific end-of-data sequence checks, where basically a whole e-mail is sent. Therefore, we could roughly only analyze the top 10k of Alexa domains during this research.
-
- SEC Consult is always searching for talented security professionals to work in our team.
-
-[ More Information ](https://sec-consult.com/career/#c2854)
-
-####  About the author
-
-![Portrait of Timo Longin SEC Consult](https://sec-consult.com/fileadmin/user_upload/sec-consult/Dynamisch/Blogartikel/Authors/a-TLO.png)
-
-Timo Longin
-SEC Consult
-Senior Security Consultant
-
-Timo Longin (also known as Login) is a senior security consultant at SEC Consult at day and a security researcher at night. Aside from everyday security assessments, he publishes blog posts and security tools, holds talks at conferences and universities, and has a passion for CTFs. As a well-rounded offensive security researcher, he tries to find forgotten and new exploitation techniques that make the unthinkable possible!
-
-[ Back ](https://sec-consult.com/blog/)

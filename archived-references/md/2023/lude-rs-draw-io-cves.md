@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://lude.rs/h4ck1ng/draw.io_cves.html"
     title: draw.io CVEs
+    author: @caioluders
 also_at: []
-authors: []
+authors:
+  - @caioluders
 canonical_url: ""
 cited_by:
   - "2023.md:67"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # draw.io CVEs
 
-**draw.io CVEs** - Author not stated, lude.rs.
+**draw.io CVEs** - @caioluders, lude.rs.
 
 - Published: date not stated
 - Original: <https://lude.rs/h4ck1ng/draw.io_cves.html>

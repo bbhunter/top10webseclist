@@ -77,23 +77,3 @@ Modern web browsers constitute complex application platforms with a wide range o
  [Slides](https://www.ndss-symposium.org/wp-content/uploads/2024/09/2023-f72-slides.pdf)
 
  [Video](https://youtu.be/vra92nPHLrM?si=8iCO2gpSX2fXI-ZI)
-
-## View More Papers
-
-### [ Double and Nothing: Understanding and Detecting Cryptocurrency Giveaway Scams ](https://www.ndss-symposium.org/ndss-paper/double-and-nothing-understanding-and-detecting-cryptocurrency-giveaway-scams/)
-
- Xigao Li (Stony Brook University), Anurag Yepuri (Stony Brook University), Nick Nikiforakis (Stony Brook University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/double-and-nothing-understanding-and-detecting-cryptocurrency-giveaway-scams/)
-
-### [ DARWIN: Survival of the Fittest Fuzzing Mutators ](https://www.ndss-symposium.org/ndss-paper/darwin-survival-of-the-fittest-fuzzing-mutators/)
-
- Patrick Jauernig (Technical University of Darmstadt), Domagoj Jakobovic (University of Zagreb, Croatia), Stjepan Picek (Radboud University and TU Delft), Emmanuel Stapf (Technical University of Darmstadt), Ahmad-Reza Sadeghi (Technical University of Darmstadt)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/darwin-survival-of-the-fittest-fuzzing-mutators/)
-
-### [ Evaluating Wireless Attacks Against CCS Electric Vehicle Charging ](https://www.ndss-symposium.org/ndss-paper/auto-draft-341/)
-
- Sebastian Köhler (University of Oxford)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-341/)

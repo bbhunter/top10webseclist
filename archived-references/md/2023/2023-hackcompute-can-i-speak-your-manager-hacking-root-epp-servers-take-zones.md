@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://hackcompute.com/hacking-epp-servers/"
     title: can I speak to your manager? hacking root EPP servers to take control of zones
-    author: hackcompute group
+    author: Sam Curry, Brett Buerhaus, Rhys Elsmore, Shubham Shah
     last_modified: 2023-06-12
 also_at: []
 authors:
-  - hackcompute group
+  - Sam Curry
+  - Brett Buerhaus
+  - Rhys Elsmore
+  - Shubham Shah
 canonical_url: ""
 cited_by:
   - "2023.md:14"
@@ -44,7 +47,7 @@ translation_of: ""
 
 # can I speak to your manager? hacking root EPP servers to take control of zones
 
-**can I speak to your manager? hacking root EPP servers to take control of zones** - hackcompute group, hackcompute.
+**can I speak to your manager? hacking root EPP servers to take control of zones** - Sam Curry, Brett Buerhaus, Rhys Elsmore, Shubham Shah, hackcompute.
 
 - Published: 2023-06-12
 - Original: <https://hackcompute.com/hacking-epp-servers/>

@@ -12,9 +12,11 @@ sources:
   - id: original
     resource: "https://security.lauritz-holtmann.de/post/xss-ato-gadgets/"
     title: "SSO Gadgets: Escalate (Self-)XSS to ATO"
+    author: Lauritz Holtmann
     last_modified: 2023-02-04
 also_at: []
-authors: []
+authors:
+  - Lauritz Holtmann
 canonical_url: ""
 cited_by:
   - "2023.md:33"
@@ -42,7 +44,7 @@ translation_of: ""
 
 # SSO Gadgets: Escalate (Self-)XSS to ATO
 
-**SSO Gadgets: Escalate (Self-)XSS to ATO** - Author not stated, (Web-)Insecurity Blog.
+**SSO Gadgets: Escalate (Self-)XSS to ATO** - Lauritz Holtmann, (Web-)Insecurity Blog.
 
 - Published: 2023-02-04
 - Original: <https://security.lauritz-holtmann.de/post/xss-ato-gadgets/>

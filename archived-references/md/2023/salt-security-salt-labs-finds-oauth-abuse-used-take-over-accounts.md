@@ -12,10 +12,9 @@ sources:
   - id: original
     resource: "https://salt.security/blog/oh-auth-abusing-oauth-to-take-over-millions-of-accounts"
     title: Salt Labs Finds OAuth Abuse Used to Take Over Accounts
-    author: Aviad Carmel, Security Researcher, Aviad Carmel
+    author: Aviad Carmel
 also_at: []
 authors:
-  - Aviad Carmel, Security Researcher
   - Aviad Carmel
 canonical_url: ""
 cited_by:
@@ -44,7 +43,7 @@ translation_of: ""
 
 # Salt Labs Finds OAuth Abuse Used to Take Over Accounts
 
-**Salt Labs Finds OAuth Abuse Used to Take Over Accounts** - Aviad Carmel, Security Researcher, Aviad Carmel, Salt Security.
+**Salt Labs Finds OAuth Abuse Used to Take Over Accounts** - Aviad Carmel, Salt Security.
 
 - Published: date not stated
 - Original: <https://salt.security/blog/oh-auth-abusing-oauth-to-take-over-millions-of-accounts>
@@ -368,31 +367,3 @@ We worked through the following timeline in this coordinated disclosure process.
 - Salt publishes blog and press release: Tuesday, October 24, 2023
 
 If you will be onsite at SecTor Aviad Carmel and Yaniv Balmas will be hosting a **speaking session** titled: "[Uh-OAuth! - Breaking (and Fixing) OAuth Implementations](https://c212.net/c/link/?t=0&l=en&o=4004220-1&h=369245552&u=https%3A%2F%2Fwww.blackhat.com%2Fsector%2F2023%2Fbriefings%2Fschedule%2Findex.html%23uh-oauth---breaking-and-fixing-oauth-implementations-34545&a=Uh-OAuth!+-+Breaking+(and+Fixing)+OAuth+Implementations%22)" — Wednesday, October 25, 4–5 p.m., Meeting Room 718A.
-
-## Tags
-
-[Salt Labs](https://salt.security/blog-tags/salt-labs)
-
-[Research](https://salt.security/blog-tags/research)
-
-## Our latest posts
-
-[Industry Guide to Agentic AI Governance Michael Callahan | August 6, 2026 Agentic AI governance is no longer optional in today’s digital landscape. As APIs and AIs continue to drive innovation, their security must be managed meticulously. Poor governance exposes organizations to a range of vulnerabilities, from misconfigurations to sophisticated business logic attacks. Read more](https://salt.security/blog/guide-to-agentic-ai-governance)
-
-[Product Salt Debuts First AWS WAF Managed Ruleset for AI Agent and API Protection Michael Callahan | August 4, 2026 Every AWS WAF customer can now get purpose-built API and AI agent security — deployed in minutes, no new infrastructure required. Read more](https://salt.security/blog/salt-debuts-first-aws-waf-managed-ruleset-for-ai-agent-and-api-protection)
-
-[
-
-Industry
-
-Top Security Risks of AI Agents
-
-Michael Callahan
-
- |
-
-July 30, 2026
-
-Discover the most critical AI agent security risks — from prompt injection to cascading failures — and learn actionable strategies to protect your enterprise.
-
-Read more

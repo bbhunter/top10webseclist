@@ -12,9 +12,11 @@ sources:
   - id: original
     resource: "https://0day.click/recipe/pash/"
     title: RCE via LDAP truncation on hg.mozilla.org
+    author: joernchen
     last_modified: 2023-06-03
 also_at: []
-authors: []
+authors:
+  - joernchen
 canonical_url: ""
 cited_by:
   - "2023.md:21"
@@ -42,7 +44,7 @@ translation_of: ""
 
 # RCE via LDAP truncation on hg.mozilla.org
 
-**RCE via LDAP truncation on hg.mozilla.org** - Author not stated, 0day.click.
+**RCE via LDAP truncation on hg.mozilla.org** - joernchen, 0day.click.
 
 - Published: 2023-06-03
 - Original: <https://0day.click/recipe/pash/>

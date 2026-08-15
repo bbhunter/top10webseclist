@@ -77,23 +77,3 @@ In this paper, we present SYNTHDB, a program analysis-based database generation 
  [Slides](https://www.ndss-symposium.org/wp-content/uploads/2024/10/2023-632-slides.pdf)
 
  [Video](https://youtu.be/qMEKngNfsfc?si=pyz8rQvGaVPM4deU)
-
-## View More Papers
-
-### [ Towards More Effective Responsible Disclosure for Vulnerability Research ](https://www.ndss-symposium.org/ndss-paper/auto-draft-425/)
-
- Weiheng Bai and Qiushi Wu (University of Minnesota)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-425/)
-
-### [ OBSan: An Out-Of-Bound Sanitizer to Harden DNN Executables ](https://www.ndss-symposium.org/ndss-paper/obsan-an-out-of-bound-sanitizer-to-harden-dnn-executables/)
-
- Yanzuo Chen (The Hong Kong University of Science and Technology), Yuanyuan Yuan (The Hong Kong University of Science and Technology), Shuai Wang (The Hong Kong University of Science and Technology)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/obsan-an-out-of-bound-sanitizer-to-harden-dnn-executables/)
-
-### [ How Much Can We Trust Large Language Models? ](https://www.ndss-symposium.org/ndss-paper/auto-draft-495/)
-
- Fatemeh Mireshghallah
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-495/)

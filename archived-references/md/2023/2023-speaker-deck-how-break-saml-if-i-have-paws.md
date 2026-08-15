@@ -12,12 +12,11 @@ sources:
   - id: original
     resource: "https://speakerdeck.com/greendog/how-to-break-saml-if-i-have-paws"
     title: How to break SAML if I have paws?
-    author: @speakerdeck, GreenDog
+    author: "Aleksei \"GreenDog\" Tiurin"
     last_modified: 2023-09-21
 also_at: []
 authors:
-  - @speakerdeck
-  - GreenDog
+  - "Aleksei \"GreenDog\" Tiurin"
 canonical_url: ""
 cited_by:
   - "2023.md:43"
@@ -45,7 +44,7 @@ translation_of: ""
 
 # How to break SAML if I have paws?
 
-**How to break SAML if I have paws?** - @speakerdeck, GreenDog, Speaker Deck.
+**How to break SAML if I have paws?** - Aleksei "GreenDog" Tiurin, Speaker Deck.
 
 - Published: 2023-09-21
 - Original: <https://speakerdeck.com/greendog/how-to-break-saml-if-i-have-paws>

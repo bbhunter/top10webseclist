@@ -77,23 +77,3 @@ In this paper, we propose DiffCSP, the first differential testing framework to f
  [Slides](https://www.ndss-symposium.org/wp-content/uploads/2024/10/ndss2023-200-slides.pdf)
 
  [Video](https://youtu.be/RzcrC48ex1U?si=QjB-Mt2SWzOA5PRn)
-
-## View More Papers
-
-### [ He-HTLC: Revisiting Incentives in HTLC ](https://www.ndss-symposium.org/ndss-paper/he-htlc-revisiting-incentives-in-htlc/)
-
- Sarisht Wadhwa (Duke University), Jannis Stoeter (Duke University), Fan Zhang (Duke University, Yale University), Kartik Nayak (Duke University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/he-htlc-revisiting-incentives-in-htlc/)
-
-### [ Copy-on-Flip: Hardening ECC Memory Against Rowhammer Attacks ](https://www.ndss-symposium.org/ndss-paper/copy-on-flip-hardening-ecc-memory-against-rowhammer-attacks/)
-
- Andrea Di Dio (Vrije Universiteit Amsterdam), Koen Koning (Intel), Herbert Bos (Vrije Universiteit Amsterdam), Cristiano Giuffrida (Vrije Universiteit Amsterdam)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/copy-on-flip-hardening-ecc-memory-against-rowhammer-attacks/)
-
-### [ MetaWave: Attacking mmWave Sensing with Meta-material-enhanced Tags ](https://www.ndss-symposium.org/ndss-paper/metawave-attacking-mmwave-sensing-with-meta-material-enhanced-tags/)
-
- Xingyu Chen (University of Colorado Denver), Zhengxiong Li (University of Colorado Denver), Baicheng Chen (University of California San Diego), Yi Zhu (SUNY at Buffalo), Chris Xiaoxuan Lu (University of Edinburgh), Zhengyu Peng (Aptiv), Feng Lin (Zhejiang University), Wenyao Xu (SUNY Buffalo), Kui Ren (Zhejiang University), Chunming Qiao (SUNY at Buffalo)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/metawave-attacking-mmwave-sensing-with-meta-material-enhanced-tags/)

@@ -74,23 +74,3 @@ The Electron platform represents a paradigm to develop modern desktop apps using
  [Paper](https://www.ndss-symposium.org/wp-content/uploads/2023-305-paper.pdf)
 
  [Video](https://youtu.be/8kMW2y-debI?si=qm9I3vzDdFULfrov)
-
-## View More Papers
-
-### [ Brokenwire: Wireless Disruption of CCS Electric Vehicle Charging ](https://www.ndss-symposium.org/ndss-paper/brokenwire-wireless-disruption-of-ccs-electric-vehicle-charging/)
-
- Sebastian Köhler (University of Oxford), Richard Baker (University of Oxford), Martin Strohmeier (armasuisse Science + Technology), Ivan Martinovic (University of Oxford)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/brokenwire-wireless-disruption-of-ccs-electric-vehicle-charging/)
-
-### [ Accountable Javascript Code Delivery ](https://www.ndss-symposium.org/ndss-paper/accountable-javascript-code-delivery/)
-
- Ilkan Esiyok (CISPA Helmholtz Center for Information Security), Pascal Berrang (University of Birmingham & Nimiq), Katriel Cohn-Gordon (Meta), Robert Künnemann (CISPA Helmholtz Center for Information Security)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/accountable-javascript-code-delivery/)
-
-### [ Automatic Retrieval of Privacy Factors from IoMT Policies: ML... ](https://www.ndss-symposium.org/ndss-paper/auto-draft-350/)
-
- Nyteisha Bookert, Mohd Anwar (North Carolina Agricultural and Technical State University)
-
- [Read More](https://www.ndss-symposium.org/ndss-paper/auto-draft-350/)

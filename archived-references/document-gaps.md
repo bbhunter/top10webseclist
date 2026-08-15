@@ -42,7 +42,7 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-39 reference(s) unresolved. 31 of them already have their raw bytes stored.
+40 reference(s) unresolved. 31 of them already have their raw bytes stored.
 
 ## https://0x999.net/blog/exploring-javascript-events-bypassing-wafs-via-character-normalization
 
@@ -171,6 +171,14 @@ or fix the route and re-run.
 - Reason: faulty capture: all eight screenshots point at GitHub signed private-user-image URLs carrying a five-minute expiry, so they were dead five minutes after capture and resolve to nothing now; the path segments keep the object names, so rewriting to the durable user-images host may recover them (reported 2026-08-15)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2024.md:90`
+
+## https://github.com/musana/fuzzuli
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: repo
+- Reason: faulty capture: only LICENSE was preserved, the repository README.md (504,657 bytes at commit 91b0ed22fb38, present in the store) was skipped so the document never says what the tool does; re-render the repository capture to include README.md (reported 2026-08-15)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2023.md:69`
 
 ## https://github.com/yardenporat353/WhenAgenticGlueMeltsPOCs
 

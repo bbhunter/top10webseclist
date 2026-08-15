@@ -12,12 +12,12 @@ sources:
   - id: original
     resource: "https://github.com/greshake/llm-security"
     title: New ways of breaking app-integrated LLMs
-    author: greshake
+    author: Kai Greshake
   - id: commit
     resource: "https://github.com/greshake/llm-security"
 also_at: []
 authors:
-  - greshake
+  - Kai Greshake
 canonical_url: ""
 cited_by:
   - "2023.md:53"
@@ -45,7 +45,7 @@ translation_of: ""
 
 # New ways of breaking app-integrated LLMs
 
-**New ways of breaking app-integrated LLMs** - greshake, GitHub.
+**New ways of breaking app-integrated LLMs** - Kai Greshake, GitHub.
 
 - Published: date not stated
 - Original: <https://github.com/greshake/llm-security>

@@ -225,7 +225,3 @@ Roger Meyer ([@sanktjodel](https://twitter.com/sanktjodel))
 ## Acknowledgments
 
 The author would like to thank Dave Goldsmith and Gérald Doussot for their thorough and insightful reviews.
-
- ![Roger Meyer](https://www.nccgroup.com/static-a/img/profile.png)
-
-[Roger Meyer](https://www.nccgroup.com/research/?author=18264#hub)

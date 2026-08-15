@@ -371,5 +371,3 @@ The usage of the GitHub token to download JavaScript actions can be found on [li
 -
 
 The token expires shortly after the job finishes, so a hacker must automate their exploit against the repository. ↩
-
- [GitHub Actions](https://www.karimrahal.com/tag/GitHub-Actions) [Security](https://www.karimrahal.com/tag/Security)

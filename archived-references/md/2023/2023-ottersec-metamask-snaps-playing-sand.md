@@ -12,14 +12,14 @@ sources:
   - id: original
     resource: "https://osec.io/blog/2023-11-01-metamask-snaps"
     title: "MetaMask Snaps: playing in the sand"
-    author: Bruno Halltari, Bruno Halltari, Caue Obici
+    author: Bruno Halltari, Caue Obici
     last_modified: 2023-11-01
   - id: canonical
     resource: "https://osec.io/blog/metamask-snaps/"
 also_at: []
 authors:
   - Bruno Halltari
-  - Bruno Halltari, Caue Obici
+  - Caue Obici
 canonical_url: "https://osec.io/blog/metamask-snaps/"
 cited_by:
   - "2023.md:57"
@@ -47,7 +47,7 @@ translation_of: ""
 
 # MetaMask Snaps: playing in the sand
 
-**MetaMask Snaps: playing in the sand** - Bruno Halltari, Bruno Halltari, Caue Obici, OtterSec.
+**MetaMask Snaps: playing in the sand** - Bruno Halltari, Caue Obici, OtterSec.
 
 - Published: 2023-11-01
 - Original: <https://osec.io/blog/2023-11-01-metamask-snaps>
@@ -664,25 +664,3 @@ const request = async (args: RequestArguments) => {
 This unique property spoofing vulnerability in the Snaps sandboxing implementation illustrates the wide range of control attackers have in JavaScript, which makes designing robust sandbox implementations an extremely complex task.
 
 MetaMask has implemented numerous layers to mitigate potential exploits, and we’re proud to help contribute to making Snaps more secure.
-
-## Read more from our blog
-
- [See all ](https://osec.io/blog)
-
-###  [Introducing rCTF v2](https://osec.io/blog/rctf-v2)
-
- We’re releasing rCTF v2, an open-source platform for hosting cybersecurity capture-the-flag competitions.     ![](https://osec.io/_astro/avatar.bUCHtgRj_1hV026.webp) ![](https://osec.io/_astro/avatar.si06Dpr__TikIE.webp) ![](https://osec.io/_astro/avatar.B-0iHZ_F_Z25INzk.webp)  Arsenii, Jason T., Stepan  Jul 14, 2026
-
-###  [Announcing the Save CTFs Fund](https://osec.io/blog/save-ctfs-fund)
-
- OtterSec is committing $100,000 to keep CTFs competitive in the age of AI. We break down why Jeopardy scoring is breaking down, what better formats might look like, and how to apply for sponsorship.     ![](https://osec.io/_astro/avatar.CkKEOL9r_Z1sL2S6.webp)  Michael Debono  Jul 7, 2026
-
-###  [Auto reverse-engineering the Hyperliquid risk engine, with some agentic help](https://osec.io/blog/hyperliquid-risk-engine)
-
- Perps allow traders to leverage beyond their collateral, until the market turns abruptly and losses are clawed back. We auto-reverse engineer Hyperliquid’s risk engine to show how it ranks and deleverages winning users under the solvency–fairness–revenue trilemma.     ![](https://osec.io/_astro/avatar.FiKLou5J_Czbcr.webp)  Renato Marziano  Jun 22, 2026
-
-## Subscribe to the blog
-
- New posts from the OtterSec team, straight to your inbox. One email per post, unsubscribe any time.
-
-      Subscribe
