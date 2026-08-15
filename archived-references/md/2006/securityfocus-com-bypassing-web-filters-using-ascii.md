@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.securityfocus.com/archive/1/437948/30/0/threaded"
     title: Bypassing of web filters by using ASCII
+    author: Kurt Huwig
   - id: capture
     resource: "https://web.archive.org/web/20080725144208/http://www.securityfocus.com/archive/1/437948/30/0/threaded"
 also_at: []
-authors: []
+authors:
+  - Kurt Huwig
 canonical_url: ""
 cited_by:
   - "2006.md:69"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Bypassing of web filters by using ASCII
 
-**Bypassing of web filters by using ASCII** - Author not stated, securityfocus.com.
+**Bypassing of web filters by using ASCII** - Kurt Huwig, securityfocus.com.
 
 - Published: date not stated
 - Original: <http://www.securityfocus.com/archive/1/437948/30/0/threaded>

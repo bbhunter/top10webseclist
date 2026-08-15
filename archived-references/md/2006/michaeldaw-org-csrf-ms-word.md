@@ -124,15 +124,3 @@ Cookie: blah
 
  Tested using: MS Word 2000.
  Expect a part 2 ![:)](./Operation n » CSRF with MS Word_files/icon_smile.gif)
-
-### Trackbacks
-
-[RSS feed for comments on this post.](https://web.archive.org/web/20070101051946/http://michaeldaw.org/md-hacks/csrf-with-msword/feed/) [TrackBack URI](https://web.archive.org/web/20070101051946/http://michaeldaw.org/md-hacks/csrf-with-msword/trackback/)
-
-### Leave a Comment
-
-  Name(required)
-
-  E-mail (will not be published) (required)
-
-  URI

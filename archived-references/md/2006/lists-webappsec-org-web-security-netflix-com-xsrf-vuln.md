@@ -152,27 +152,3 @@ Regards,
 ```
 Dave Ferguson
 ```
-
- ----------------------------------------------------------------------------
- The Web Security Mailing List: [http://www.webappsec.org/lists/websecurity/](http://www.webappsec.org/lists/websecurity/)
-
- The Web Security Mailing List Archives: [http://www.webappsec.org/lists/websecurity/archive/](http://www.webappsec.org/lists/websecurity/archive/)
- [http://www.webappsec.org/rss/websecurity.rss](http://www.webappsec.org/rss/websecurity.rss) [RSS Feed]
-
----
-
-- Prev by Date: **[[WEB SECURITY] AttackAPI 0.8 is OUT](http://www.webappsec.org/lists/websecurity/archive/2006-10/msg00062.html)**
-- Next by Date: **[[WEB SECURITY] Another funny trick with Google](http://www.webappsec.org/lists/websecurity/archive/2006-10/msg00064.html)**
-- Previous by thread: **[[WEB SECURITY] AttackAPI 0.8 is OUT](http://www.webappsec.org/lists/websecurity/archive/2006-10/msg00062.html)**
-- Next by thread: **[[WEB SECURITY] Another funny trick with Google](http://www.webappsec.org/lists/websecurity/archive/2006-10/msg00064.html)**
-- Index(es):
-
-- [**Date**](http://www.webappsec.org/lists/websecurity/archive/2006-10/maillist.html#00063)
-- [**Thread**](http://www.webappsec.org/lists/websecurity/archive/2006-10/index.html#00063)
-
----
-
- Brought to you by [http://www.webappsec.org](http://www.webappsec.org)
-  Search this site
-
-  |

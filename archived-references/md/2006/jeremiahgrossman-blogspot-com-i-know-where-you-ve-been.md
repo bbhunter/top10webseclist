@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2006/08/i-know-where-youve-been.html"
     title: "I know where you've been"
+    author: Jeremiah Grossman
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: ""
 cited_by:
   - "2006.md:8"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # I know where you've been
 
-**I know where you've been** - Author not stated, jeremiahgrossman.blogspot.com.
+**I know where you've been** - Jeremiah Grossman, jeremiahgrossman.blogspot.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2006/08/i-know-where-youve-been.html>

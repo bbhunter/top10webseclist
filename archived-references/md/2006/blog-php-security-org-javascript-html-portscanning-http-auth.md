@@ -6,16 +6,18 @@ tags: [article, webseclist-reference, blog-php-security-org]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:03+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "http://blog.php-security.org/archives/54-JavaScriptHTML-Portscanning-and-HTTP-Auth.html"
     title: JavaScript/HTML Portscanning and HTTP Auth
+    author: Stefan Esser
   - id: capture
     resource: "https://web.archive.org/web/20061220192916/http://blog.php-security.org/archives/54-JavaScriptHTML-Portscanning-and-HTTP-Auth.html"
 also_at: []
-authors: []
+authors:
+  - Stefan Esser
 canonical_url: ""
 cited_by:
   - "2006.md:27"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # JavaScript/HTML Portscanning and HTTP Auth
 
-**JavaScript/HTML Portscanning and HTTP Auth** - Author not stated, blog.php-security.org.
+**JavaScript/HTML Portscanning and HTTP Auth** - Stefan Esser, blog.php-security.org.
 
 - Published: date not stated
 - Original: <http://blog.php-security.org/archives/54-JavaScriptHTML-Portscanning-and-HTTP-Auth.html>

@@ -157,15 +157,3 @@ dbase1**</inputString>
 
  Proof of concept for example 1 can be found [here](https://web.archive.org/web/20070102032610/http://michaeldaw.org/projects/backdoored1.pdf).
  Proof of concept for example 2 can be found [here](https://web.archive.org/web/20070102032610/http://michaeldaw.org/projects/backdoored2.pdf).
-
-### Trackbacks
-
-[RSS feed for comments on this post.](https://web.archive.org/web/20070102032610/http://michaeldaw.org/md-hacks/backdooring-pdf-files/feed/) [TrackBack URI](https://web.archive.org/web/20070102032610/http://michaeldaw.org/md-hacks/backdooring-pdf-files/trackback/)
-
-### Leave a Comment
-
-  Name(required)
-
-  E-mail (will not be published) (required)
-
-  URI

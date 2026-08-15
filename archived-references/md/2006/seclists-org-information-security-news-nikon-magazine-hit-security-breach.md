@@ -12,10 +12,10 @@ sources:
   - id: original
     resource: "https://seclists.org/isn/2006/Sep/67"
     title: "Information Security News: Nikon magazine hit with security breach"
-    author: InfoSec News
+    author: Dawn Kawamoto
 also_at: []
 authors:
-  - InfoSec News
+  - Dawn Kawamoto
 canonical_url: ""
 cited_by:
   - "2006.md:59"
@@ -43,7 +43,7 @@ translation_of: ""
 
 # Information Security News: Nikon magazine hit with security breach
 
-**Information Security News: Nikon magazine hit with security breach** - InfoSec News, seclists.org.
+**Information Security News: Nikon magazine hit with security breach** - Dawn Kawamoto, seclists.org.
 
 - Published: date not stated
 - Original: <https://seclists.org/isn/2006/Sep/67>
@@ -51,7 +51,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content
@@ -115,9 +115,3 @@ The largest network security event in Asia
 Register now: [http://conference.hitb.org/hitbsecconf2006kl/](http://conference.hitb.org/hitbsecconf2006kl/)
 
 ```
-
----
-
-### Current thread:
-
-- **Nikon magazine hit with security breach** *InfoSec News (Sep 17)*

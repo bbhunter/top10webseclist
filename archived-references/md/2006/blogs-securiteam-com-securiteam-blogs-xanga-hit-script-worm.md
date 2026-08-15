@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://blogs.securiteam.com/index.php/archives/166"
     title: SecuriTeam Blogs » Xanga Hit By Script Worm
+    author: Matthew Murphy
   - id: capture
     resource: "https://web.archive.org/web/20061020220354/https://blogs.securiteam.com/index.php/archives/166"
 also_at: []
-authors: []
+authors:
+  - Matthew Murphy
 canonical_url: ""
 cited_by:
   - "2006.md:66"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # SecuriTeam Blogs » Xanga Hit By Script Worm
 
-**SecuriTeam Blogs » Xanga Hit By Script Worm** - Author not stated, blogs.securiteam.com.
+**SecuriTeam Blogs » Xanga Hit By Script Worm** - Matthew Murphy, blogs.securiteam.com.
 
 - Published: date not stated
 - Original: <https://blogs.securiteam.com/index.php/archives/166>

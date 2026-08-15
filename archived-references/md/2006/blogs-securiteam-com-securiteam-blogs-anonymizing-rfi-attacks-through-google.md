@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://blogs.securiteam.com/index.php/archives/746"
     title: SecuriTeam Blogs » Anonymizing RFI Attacks Through Google
+    author: Noam Rathaus
   - id: capture
     resource: "https://web.archive.org/web/20061216024539/https://blogs.securiteam.com/index.php/archives/746"
 also_at: []
-authors: []
+authors:
+  - Noam Rathaus
 canonical_url: ""
 cited_by:
   - "2006.md:71"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # SecuriTeam Blogs » Anonymizing RFI Attacks Through Google
 
-**SecuriTeam Blogs » Anonymizing RFI Attacks Through Google** - Author not stated, blogs.securiteam.com.
+**SecuriTeam Blogs » Anonymizing RFI Attacks Through Google** - Noam Rathaus, blogs.securiteam.com.
 
 - Published: date not stated
 - Original: <https://blogs.securiteam.com/index.php/archives/746>

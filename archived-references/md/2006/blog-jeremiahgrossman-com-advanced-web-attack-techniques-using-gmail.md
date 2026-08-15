@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://jeremiahgrossman.blogspot.com/2006/01/advanced-web-attack-techniques-using.html"
     title: Advanced Web Attack Techniques using GMail
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2006/01/advanced-web-attack-techniques-using.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2006/01/advanced-web-attack-techniques-using.html"
 cited_by:
   - "2006.md:67"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Advanced Web Attack Techniques using GMail
 
-**Advanced Web Attack Techniques using GMail** - Author not stated, blog.jeremiahgrossman.com.
+**Advanced Web Attack Techniques using GMail** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <http://jeremiahgrossman.blogspot.com/2006/01/advanced-web-attack-techniques-using.html>

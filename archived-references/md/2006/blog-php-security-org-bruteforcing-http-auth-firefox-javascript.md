@@ -6,16 +6,18 @@ tags: [article, webseclist-reference, blog-php-security-org]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:08:04+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "http://blog.php-security.org/archives/56-Bruteforcing-HTTP-Auth-in-Firefox-with-JavaScript.html"
     title: Bruteforcing HTTP Auth in Firefox with JavaScript
+    author: Stefan Esser
   - id: capture
     resource: "https://web.archive.org/web/20061215212937/http://blog.php-security.org/archives/56-Bruteforcing-HTTP-Auth-in-Firefox-with-JavaScript.html"
 also_at: []
-authors: []
+authors:
+  - Stefan Esser
 canonical_url: ""
 cited_by:
   - "2006.md:28"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Bruteforcing HTTP Auth in Firefox with JavaScript
 
-**Bruteforcing HTTP Auth in Firefox with JavaScript** - Author not stated, blog.php-security.org.
+**Bruteforcing HTTP Auth in Firefox with JavaScript** - Stefan Esser, blog.php-security.org.
 
 - Published: date not stated
 - Original: <http://blog.php-security.org/archives/56-Bruteforcing-HTTP-Auth-in-Firefox-with-JavaScript.html>

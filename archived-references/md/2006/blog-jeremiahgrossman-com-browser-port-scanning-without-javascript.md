@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2006/11/browser-port-scanning-without.html"
     title: Browser Port Scanning without JavaScript
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2006/11/browser-port-scanning-without.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2006/11/browser-port-scanning-without.html"
 cited_by:
   - "2006.md:50"
@@ -44,7 +46,7 @@ translation_of: ""
 
 # Browser Port Scanning without JavaScript
 
-**Browser Port Scanning without JavaScript** - Author not stated, blog.jeremiahgrossman.com.
+**Browser Port Scanning without JavaScript** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2006/11/browser-port-scanning-without.html>

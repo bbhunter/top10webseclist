@@ -608,6 +608,22 @@
    "publisher": "DEVCORE",
    "reason": "Orange Tsai is the sole author; the publisher is DEVCORE, whose security alert accompanies the post, rather than the blog hostname."
   },
+  "https://blog.php-security.org/archives/54-JavaScriptHTML-Portscanning-and-HTTP-Auth.html": {
+   "authors": [
+    "Stefan Esser"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. the stored page reads Posted by Stefan Esser, linking his author page, and the entry element's own class name repeats it; the footer theme credit is not a byline"
+  },
+  "https://blog.php-security.org/archives/56-Bruteforcing-HTTP-Auth-in-Firefox-with-JavaScript.html": {
+   "authors": [
+    "Stefan Esser"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. the stored page reads Posted by Stefan Esser, linking his author page, and the entry element's own class name repeats it; the footer theme credit is not a byline"
+  },
   "https://blog.quaji.com/2009/12/out-of-context-information-disclosure.html": {
    "class": "research",
    "outcome": "archive",
@@ -776,21 +792,30 @@
    "reason": "authors was empty. The post states that \"Opera's Security Team has invited Bug Bounty Hunter [Renwa](https://twitter.com/RenwaX23) to write about a recent vulnerability that he reported... What follows is his write-up and experience\", and signs off \"— [Renwa]\". The \"# Opera Team\" bio card in the removed tail is the publisher's posting account, not the author."
   },
   "https://blogs.securiteam.com/index.php/archives/166": {
+   "authors": [
+    "Matthew Murphy"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (fortra-com-beyond-security-products). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
+   "reason": "authors was empty. the byline links the author's name on his own author page",
    "title": "SecuriTeam Blogs » Xanga Hit By Script Worm"
   },
   "https://blogs.securiteam.com/index.php/archives/604": {
+   "authors": [
+    "Gadi Evron"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (fortra-com-beyond-security-products-2). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
+   "reason": "authors was empty. the byline links the author's handle and the article signs off with their name and address; the third party quoted in the piece is not its author",
    "title": "SecuriTeam Blogs » Exploiting Google for Phishing"
   },
   "https://blogs.securiteam.com/index.php/archives/746": {
+   "authors": [
+    "Noam Rathaus"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (fortra-com-beyond-security-products-3). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
+   "reason": "authors was empty. the byline links the author's handle and the article signs off with their full name; the thanked helpers and the site's author roster are not the byline",
    "title": "SecuriTeam Blogs » Anonymizing RFI Attacks Through Google"
   },
   "https://blogs.technet.com/msrc/archive/2009/12/27/new-reports-of-a-vulnerability-in-iis.aspx": {
@@ -963,9 +988,12 @@
    "title": "New Phishing Campaign Leverages Google Drive"
   },
   "https://darkreading.com/document.asp?doc_id=104313&f_src=darkreading_section_296": {
+   "authors": [
+    "Kelly Jackson Higgins"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (dark-reading-dark-reading-security). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
+   "reason": "authors was empty. the published body names the author with their masthead role, and the stored page repeats the name in its analytics properties; the interviewees are not the author",
    "title": "Dark Reading - Desktop Security - Hackers Reveal Vulnerable Websites"
   },
   "https://darkreading.com/scope-of-freak-flaw-widens-as-microsoft-says-windows-affected-too/d/d-id/1319380": {
@@ -1795,9 +1823,12 @@
    "title": "Postcards from the Post-HTTP World: Amplification of HTTPS Vulnerabilities in the Web Ecosystem"
   },
   "https://informationweek.com/news/showArticle.jhtml?articleID=192500500&subSection=Breaking+News": {
+   "authors": [
+    "Larry Greenemeier"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (information-week-news). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
+   "reason": "authors was empty. the published body carries the author's by-line with their address",
    "title": "AT&T Hack Highlights Web Site Vulnerabilities"
   },
   "https://inputzero.io/2018/09/bug-bounty-telegram-cve-2018-17780.html": {
@@ -1843,6 +1874,54 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors was empty and the header read \"Author not stated\". The document names all five in its own prose: \"The team behind this research comprises Nadhem AlFardan, Dan Bernstein, Kenny Paterson, Bertram Poettering and Jacob Schuldt.\" Read from the body, not from metadata."
+  },
+  "https://jeremiahgrossman.blogspot.com/2006/01/advanced-web-attack-techniques-using.html": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. the stored page carries a post-author vcard with rel=author and itemprop=name reading Jeremiah Grossman; the converter dropped the block, so the byline is absent from the published document"
+  },
+  "https://jeremiahgrossman.blogspot.com/2006/08/i-know-what-youve-got-firefox.html": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. same post-author vcard byline in the stored page, dropped by the converter"
+  },
+  "https://jeremiahgrossman.blogspot.com/2006/08/i-know-where-youve-been.html": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. the 2006 template predates the author markup a byline sweep looks for, but the stored Wayback capture carries the older equivalent, a post-footer reading posted by Jeremiah Grossman with the permanent link"
+  },
+  "https://jeremiahgrossman.blogspot.com/2006/09/how-to-get-linked-from-slashdot.html": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. same post-author vcard byline in the stored page, dropped by the converter"
+  },
+  "https://jeremiahgrossman.blogspot.com/2006/11/browser-port-scanning-without.html": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. same post-author vcard byline in the stored page, dropped by the converter"
+  },
+  "https://jeremiahgrossman.blogspot.com/2006/11/bypassing-mozilla-port-blocking.html": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. same post-author vcard byline in the stored page, dropped by the converter"
   },
   "https://jeremiahgrossman.blogspot.com/2007/05/intranet-hacking-take-2-for-bh-usa-2007.html": {
    "authors": [
@@ -2504,15 +2583,21 @@
    "reason": "authors was empty. The release names him in the document itself - \"[Matt Shipman](mailto:matt_shipman@ncsu.edu) | News Services\" - and signs off \"-shipman-\". The stored source object is ABSENT, so rel=\"author\" could not be checked; the credit rests on the words in the published document, which are sufficient, and the sibling NC State release confirms the same writer."
   },
   "https://news.netcraft.com/archives/2006/06/16/paypal_security_flaw_allows_identity_theft.html": {
+   "authors": [
+    "Paul Mutton"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (netcraft-com-resources). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
+   "reason": "authors was empty. the published body carries a posted-by line naming the author with the date",
    "title": "Netcraft: PayPal Security Flaw allows Identity Theft"
   },
   "https://news.netcraft.com/archives/2006/09/23/hostgator_cpanel_security_hole_exploited_in_mass_hack.html": {
+   "authors": [
+    "Rich Miller"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (netcraft-com-resources-2). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document.",
+   "reason": "authors was empty. the published body carries a posted-by line naming the author with the date",
    "title": "Netcraft: HostGator: cPanel Security Hole Exploited in Mass Hack"
   },
   "https://news.softpedia.com/news/Users-of-Mobile-Portals-Exposed-to-HTTP-Header-Pollution-Attacks-Expert-Finds-293540.shtml": {
@@ -2945,6 +3030,14 @@
    "outcome": "archive",
    "reason": "authors was empty although the published body states the authorship of the work it lists, naming Adam Barth and Collin Jackson for the cited item specifically. This is an index page, so the credit is for the research it fronts; the third name on the page belongs to the other two publications listed."
   },
+  "https://seclists.org/isn/2006/Sep/67": {
+   "authors": [
+    "Dawn Kawamoto"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors named the mailing list's posting account. REPLACES the mailing list's posting account, which is a publisher account and not a person; the document names its actual author two lines into the body with their masthead"
+  },
   "https://secniche.org/gmd_hijack/gc_hijack.xhtml": {
    "authors": [
     "Aditya K Sood"
@@ -3044,9 +3137,12 @@
    "reason": "authors recorded Sakshi Jain, who is the author of a DIFFERENT POST on the same blog-archive index page. The cited post, addressed by the fragment #11232015, is titled Abusing CSS Selectors to Perform UI Redressing Attacks and names its author at lines 107-108: Jovon Itwaru, Information Security Engineer. Ruben van Vreeland is credited with DISCOVERING the issue and is not the write-up author."
   },
   "https://securityfocus.com/archive/1/437948/30/0/threaded": {
+   "authors": [
+    "Kurt Huwig"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-14: securityfocus.com/archive redirected to the site's relaunch notice, so the capture was that page and the slug was built from its heading, \"BUGTRAQ IS BACK\". Recovered from a 2008 Wayback snapshot, which holds the thread itself - \"iKu Advisory ... Product : Microsoft InternetExplorer 6\". Every Bugtraq archive page titles itself \"SecurityFocus\", so the citation's own title is used to name the file.",
+   "reason": "authors was empty. the advisory is signed in its own body with the author's name and company",
    "title": "Bypassing of web filters by using ASCII"
   },
   "https://securityfocus.com/archive/1/441014/30/0/threaded": {

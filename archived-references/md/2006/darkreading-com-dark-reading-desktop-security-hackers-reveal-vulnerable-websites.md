@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.darkreading.com/document.asp?doc_id=104313&f_src=darkreading_section_296"
     title: Dark Reading - Desktop Security - Hackers Reveal Vulnerable Websites
+    author: Kelly Jackson Higgins
   - id: capture
     resource: "https://web.archive.org/web/20061024124550/http://www.darkreading.com/document.asp?doc_id=104313&f_src=darkreading_section_296"
 also_at: []
-authors: []
+authors:
+  - Kelly Jackson Higgins
 canonical_url: ""
 cited_by:
   - "2006.md:57"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Dark Reading - Desktop Security - Hackers Reveal Vulnerable Websites
 
-**Dark Reading - Desktop Security - Hackers Reveal Vulnerable Websites** - Author not stated, darkreading.com.
+**Dark Reading - Desktop Security - Hackers Reveal Vulnerable Websites** - Kelly Jackson Higgins, darkreading.com.
 
 - Published: date not stated
 - Original: <http://www.darkreading.com/document.asp?doc_id=104313&f_src=darkreading_section_296>

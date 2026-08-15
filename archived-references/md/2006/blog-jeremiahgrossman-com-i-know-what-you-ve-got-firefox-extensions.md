@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2006/08/i-know-what-youve-got-firefox.html"
     title: "I know what you've got (Firefox Extensions)"
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2006/08/i-know-what-youve-got-firefox.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2006/08/i-know-what-youve-got-firefox.html"
 cited_by:
   - "2006.md:63"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # I know what you've got (Firefox Extensions)
 
-**I know what you've got (Firefox Extensions)** - Author not stated, blog.jeremiahgrossman.com.
+**I know what you've got (Firefox Extensions)** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2006/08/i-know-what-youve-got-firefox.html>
