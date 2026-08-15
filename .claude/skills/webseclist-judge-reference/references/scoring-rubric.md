@@ -15,27 +15,33 @@ score.** Each section below names the specific version of that leak to watch for
 
 *How much genuinely new knowledge, capability, or understanding does the work add?*
 
-Score this against **prior art**, not against your own prior ignorance. The question
-is whether the field knew this before, not whether you did.
+Score this against **prior art that was public before the candidate's earliest
+verified public disclosure**, not against your own prior ignorance or later work.
+The question is whether the field could have known this when the candidate appeared,
+not whether you know it now. A later publication covering the same idea cannot lower
+this score. It may show continued relevance or later rediscovery, but count it as
+influence only when citation, attribution, or other evidence establishes that link.
 
-- **0–19** — Restates or re-demonstrates a well-known technique; a new target for an
-  established bug class with no new mechanism.
-- **20–39** — Minor variation or a fresh payload for a known primitive; independent
-  rediscovery of something already public.
-- **40–59** — A real but incremental extension, or a combination of known ideas whose
-  novelty is modest.
+- **0–19** — Restates or re-demonstrates a technique already well known by the
+  cutoff; a new target for an established bug class with no new mechanism.
+- **20–39** — Minor variation or a fresh payload for a primitive public before the
+  cutoff; independent rediscovery of something already public then.
+- **40–59** — A real but incremental extension, or a combination of ideas known by
+  the cutoff whose novelty is modest.
 - **60–79** — A new primitive, a non-obvious combination that yields a capability that
-  did not exist, or a materially deeper understanding of a known area.
+  had not been publicly described or demonstrated by the cutoff, or a materially
+  deeper understanding of a known area.
 - **80–100** — Introduces a new class, mechanism, or way of seeing a problem that
-  reframes how others will approach it.
+  reframes how others will approach it after the cutoff.
 
 **Trap:** a critical-severity, widely-covered CVE can score *low* here if the
 technique behind it is textbook. Severity is not on this axis. Conversely, a
 "low-impact" quirk that introduces a reusable primitive can score high.
 
-**Rediscovery:** if the same idea was public earlier, novelty is scored against that
-earlier work even when the candidate reached it independently — credit the
-independence in the verdict and confidence, not in this number.
+**Rediscovery:** if the same idea was public before the candidate's novelty cutoff,
+score novelty against that earlier work even when the candidate reached it
+independently — credit the independence in the verdict and confidence, not in this
+number. Work first published after the cutoff is not prior art.
 
 ---
 
@@ -76,6 +82,12 @@ still be foundational (it changed how everyone tests). Judge influence on future
 work, not whether today's targets are still vulnerable — that is current
 applicability, a different thing.
 
+For an older candidate, use later citations, adaptations, tooling, and rediscoveries
+as retrospective evidence in this category. Similarity alone can show continued
+relevance or rediscovery, but claim influence only with attribution or another
+demonstrated connection. Keep all of this out of the historical Original
+contribution comparison.
+
 ---
 
 ## Technical soundness (15%)
@@ -92,6 +104,10 @@ applicability, a different thing.
 Judge the **argument**, not the prose polish or the platform it was published on. A
 rough writeup with a correct, well-evidenced mechanism outscores a slick one that
 asserts more than it shows.
+
+Later replications, critiques, and corrections may inform this score because they
+can test whether the original mechanism and claims hold up. Use them as post-cutoff
+technical evidence, never as prior art that rewrites historical novelty.
 
 ---
 
@@ -137,20 +153,23 @@ These illustrate the impact-vs-novelty split; they are calibration aids, not quo
   though the impact and press were enormous. The technique is decades old.
 
 - **Small quirk, new primitive.** A parser discrepancy in how one library handles a
-  delimiter, shown to enable request smuggling in a way not previously described.
-  Original ~75, Transferability ~70, Lasting ~70 — the target is narrow but the
-  primitive generalises and others will hunt for it elsewhere.
+  delimiter, shown to enable request smuggling in a way not described before the
+  candidate's cutoff. Original ~75, Transferability ~70, Lasting ~70 — the target is
+  narrow but the primitive generalises and others will hunt for it elsewhere.
 
-- **Strong combination.** Chaining two individually-known behaviours (say a client-side
-  path traversal plus a CSRF sink) into a reliable account-takeover pattern nobody had
-  assembled. Do not anchor on "both parts were known" — score the new capability. Often
-  Original ~55–65, Transferability and Lasting high if the pattern recurs.
+- **Strong combination.** Chaining two behaviours known before the cutoff (say a
+  client-side path traversal plus a CSRF sink) into a reliable account-takeover
+  pattern nobody had assembled by then. Do not anchor on "both parts were known" —
+  score the new capability. Often Original ~55–65, Transferability and Lasting high
+  if the pattern recurs.
 
-- **Tooling over known ideas.** A fuzzer that automates discovery of an existing class
-  of discrepancies. Original may be ~40, but Practical usability and Lasting value can
-  be high because it scales what was previously manual.
+- **Tooling over known ideas.** A fuzzer that automates discovery of a discrepancy
+  class public before the cutoff. Original may be ~40, but Practical usability and
+  Lasting value can be high because it scales what was previously manual.
 
-- **Independent rediscovery.** A clearly-written technique that a prior paper already
-  described two years earlier. Original scored against that prior work (~25–35), verdict
-  "independent rediscovery," confidence set by how firmly you established precedence —
-  and the independence noted in the reasoning, not added to the number.
+- **Independent rediscovery.** A clearly-written technique that a paper publicly
+  described two years before the candidate's cutoff. Original scored against that
+  prior work (~25–35), verdict "independent rediscovery," confidence set by how
+  firmly you established precedence — and the independence noted in the reasoning,
+  not added to the number. If the equivalent paper appeared two years *after* the
+  candidate, it cannot reduce historical novelty; use it only as post-cutoff context.

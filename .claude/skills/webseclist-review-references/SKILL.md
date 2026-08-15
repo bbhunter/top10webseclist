@@ -1,6 +1,6 @@
 ---
 name: webseclist-review-references
-description: Reviews and repairs references already published in the Top 10 Web Hacking Techniques Markdown-and-PDF archive. Use for one article, one collection such as 2019 or YYYY-ai, or a bounded period when asked to audit, validate, verify, QA, sanity-check or proofread archived references; investigate wrong-page captures, gibberish, damaged PDF text, bad titles, missing or wrong figures, missing document-derived bylines, broken or stale PDFs, missing or orphaned files, stale metadata, or a website footer, comments, related posts, subscribe pitch or other publisher tail left after the article. Also use before a release or website rebuild. Do not use for new or never-archived citations (webseclist-archive-references), removal (webseclist-remove-reference), a credit supplied by the user (webseclist-credit-author), research-value judgement (webseclist-judge-reference), or announcement snapshots (webseclist-archive-listings). Read year lists; never edit them.
+description: Reviews and repairs references already published in the Top 10 Web Hacking Techniques Markdown-and-PDF archive. Use for one article, one collection such as 2019 or YYYY-ai, or a bounded period when asked to audit, validate, verify, QA, sanity-check or proofread archived references; investigate wrong-page captures, gibberish, damaged PDF text, bad titles, missing or wrong figures, missing document-derived bylines, broken or stale PDFs, missing or orphaned files, stale metadata, Markdown that renders wrong such as an unrecognised or unclosed code fence, a mangled code listing or a broken table, or a website footer, comments, related posts, subscribe pitch or other publisher tail left after the article. Also use before a release or website rebuild. Do not use for new or never-archived citations (webseclist-archive-references), removal (webseclist-remove-reference), a credit supplied by the user (webseclist-credit-author), research-value judgement (webseclist-judge-reference), or announcement snapshots (webseclist-archive-listings). Read year lists; never edit them.
 ---
 
 # Review archived references and repair what is wrong
@@ -122,6 +122,7 @@ straight through, against the same classes. Worth checking:
 | Titles | a PDF's file stem (`BHUS26 Heyes CSS WP`), site chrome (`… › Vendor`, `Owner/Repo: file.md`), a blog masthead |
 | Body | empty or implausibly thin, truncated mid-sentence, page furniture as content |
 | Figures | broken or relative image targets, placeholders, anti-hotlink banners, wrong or missing images, preserved figures absent from the rendered PDF |
+| Markdown | syntax this repository's renderer does not accept, so the PDF shows something other than the document: a `~~~` fence, an unclosed fence, an unfenced code listing |
 | Tail | the last blocks are the site, not the article: a comment thread, "read more" teasers, a subscribe pitch, footer navigation, an author-bio card |
 | Attribution | no author where the document names one |
 | Files | manifest entries whose md/pdf is absent, and published files no entry claims |
@@ -181,6 +182,83 @@ against the actual text before changing anything:
 
 Report the false-positive classes you cleared. A reviewer needs to know what was
 looked at, not only what was changed.
+
+## Correct Markdown only where it changes what the reader sees
+
+While a document is open, read its Markdown as Markdown. Nearly everything a
+style linter flags in this corpus is correct as it stands, and the faults that
+matter are invisible in the source and obvious in the PDF.
+
+**The body is quoted evidence, not your prose.** Everything under the UNTRUSTED
+SOURCE TEXT banner is third-party material. Backslashes are Windows paths, tabs
+are an exploit's indentation, `<script>` is the finding itself, `*` and `+`
+bullets are terminal output, and `# # # Begin Advisory # # #` is the advisory's
+own banner. Never normalise, reflow, re-wrap or re-indent it. Tidying rewrites a
+researcher's words and can break the payload the citation exists to preserve.
+Fix rendering, never taste.
+
+**Judge against this repository's renderer, not against CommonMark.**
+`refslib/makepdf.py` implements a deliberate subset, so a document that lints
+clean elsewhere can still render wrong here:
+
+| The renderer | Consequence |
+|---|---|
+| fences are backticks only — `_FENCE` is `^\s*` plus three backticks | a `~~~` fence is not a fence at all |
+| any line opening with the same marker closes the fence | a stray marker inside a listing closes it early |
+| an unclosed fence consumes the rest of the file | everything after it becomes one code block |
+| a table needs a header row *and* a `---\|---` separator row | bare pipe rows print as literal pipes |
+| `---`, `***` and `___` are horizontal rules, and there is no setext support | `---` under a line of text is a rule, never a heading |
+| raw HTML is escaped and displayed | a payload is shown, never silently swallowed |
+| a heading over 300 characters prints as a paragraph | its `#` markers are stripped, by design |
+
+**These are normal here. Clear them, and say you did.** Measured across the
+1,672 archived documents: a second `# ` H1 in the body (765 documents — the
+archive's own template emits `# <title>` above `## Content`, and the captured
+page keeps its own heading); heading levels that skip a step (268); pipe rows
+with no separator row (267, all of them HTML layout tables flattened by the
+converter); three or more consecutive blank lines (244); trailing whitespace
+(123); raw HTML at column 0 (68, escaped and displayed, and usually the
+research); plus tabs, mixed bullet markers, backslash escapes, and
+`[![](image)](link)` misread as an empty link text. None of these change what a
+reader sees. None is worth a diff.
+
+**These are worth fixing, and they are rare.** Each destroys content in the PDF
+while the Markdown file still reads as healthy:
+
+- **A `~~~` fence.** The renderer does not recognise it, so the listing falls
+  through to the paragraph branch and is *flowed*: `class Foo(Serializable):
+  bar: int baz: str` on a single line with the indentation gone, and `__main__`
+  rendered as a bold `main` because the underscores became emphasis. Two
+  `2026-ai` documents carry tilde fences; the other 535 fenced documents all use
+  backticks. Converting the fences to backticks is the fix.
+- **A fence that never closes.** The rest of the document renders as one code
+  block. No document is in this state today, so treat an occurrence as new
+  damage rather than as the archive's normal condition. Walk the fences the way
+  the renderer does — open on a marker, close on the next line starting with the
+  same marker — instead of counting markers, because an indented fence and a
+  marker inside a listing both break a simple count.
+- **A code listing that was never fenced at all.** The same flowing damage, with
+  no marker to find it by. Look wherever prose and code alternate.
+- **An image or link target that resolves nowhere**, which the Figures class
+  above also covers.
+
+**Publishing a Markdown fix uses the tail cut's route and carries its warning.**
+The published `.md` is generated and `overrides.json` has no body field, so a fix
+to a fetched document is a controlled hand edit below the frontmatter, followed
+by `refs.py pdf --only <url-substring> --force` when `steps.pdf.source` is
+`markdown`. The store still holds the unfixed text, so `acquire --force`,
+`import` and `translate --apply` each restore it — state that in the report. For
+a hand import, stage the corrected body and run `refs.py import --redo --only
+<url-substring> <dir>`, which rewrites the stored text as well. Never set
+`content_gap` for a Markdown fault: any non-empty value puts a document that
+exists onto generated `document-gaps.md`.
+
+**A repeatable class belongs in the converter, not in the document.** The rule
+that governs `boilerplate.py` governs this too — do not hand-fix in one document
+what every future capture will reproduce. Tilde fences and separator-less tables
+are converter behaviour; change them there, with corpus-wide tests, as a
+separate piece of work, and report the class rather than papering over one
+instance of it.
 
 ## Remove a website tail only after reading it
 
@@ -348,10 +426,14 @@ evidence quoted from the document, and the route that fits (`attribution
 Ask for "no fault found" explicitly — an agent that reports only problems will
 invent one.
 
-A tail is the one finding an agent must hand back with enough precision to apply
-without re-reading the document: the exact line the cut starts at, quoted, the
-last line of the file, and how many characters go. An agent that reports "ends
-with some footer junk" has sent the reading back to you.
+Two findings must come back precise enough to apply without re-reading the
+document. A tail needs the exact line the cut starts at, quoted, the last line of
+the file, and how many characters go; an agent that reports "ends with some
+footer junk" has sent the reading back to you. A Markdown fault needs the line
+numbers of the markers involved and the replacement, and it needs the
+false-positive list in front of it — an agent asked for "Markdown problems"
+without it will return the 765-document second-H1 class and the converter's
+pipe rows as though they were work.
 
 ## Two traps that will cost you a document
 
@@ -427,6 +509,10 @@ Say what was actually wrong and what you did about it, then:
   a fetched reference, state that the stored text remains untrimmed and a later
   re-render will restore it; for a re-import, state that the store was updated
   and any translation pair was withdrawn;
+- every Markdown correction: the slug, the syntax that was wrong, what it did to
+  the PDF, and the same store warning a tail cut carries. Name separately any
+  fault you judged to be converter behaviour and left alone, because that is a
+  tooling change someone has to schedule;
 - for a year or a period, every reference with no archived Markdown, gathered into
   one list at the end and marked as either a file the manifest advertises but the
   tree lacks (a fault, which you filed) or a reference the archive never got a

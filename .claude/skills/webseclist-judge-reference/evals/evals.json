@@ -21,6 +21,13 @@
       "expected_output": "A Research Evaluation that does NOT dismiss the work merely because both components were previously known, searches the archive for prior CSPT/CSRF work by mechanism, scores the new combined capability on its merits, and produces a 'Meaningful combination or adaptation' verdict with a defensible archive decision and clearly separated confidence. Includes a documented Reverification pass with a distinct prior-art search, the strongest challenge to the draft conclusion, the candidate's strongest plausible case, and any resulting corrections.",
       "assertions": [],
       "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Judge a web-security article first published in 2014. A 2011 source describes one narrower prerequisite but not the article's mechanism; a 2020 article explains the exact same mechanism in more detail. Treat those dates and relationships as stipulated facts for this scenario. Is the 2014 article original, and how should each source affect its score and verdict?",
+      "expected_output": "A Research Evaluation that establishes and reports the 2014 candidate's earliest public-disclosure cutoff, compares its innovation with the narrower 2011 work, and explains that the prerequisite is related background but does not by itself make the 2014 mechanism a duplicate or rediscovery. It does not treat the 2020 article as prior art or use it to lower Original contribution or declare the 2014 candidate a duplicate/rediscovery. It may use the 2020 article only as clearly labelled post-cutoff evidence of continued relevance, adoption, rediscovery, technical corroboration/correction, or influence when a demonstrated connection exists, or as a lead to an independently verified pre-2014 source. The Reverification section includes a cutoff audit; if exact ordering is not stipulated or independently verifiable, it lowers confidence rather than assuming precedence.",
+      "assertions": [],
+      "files": []
     }
   ]
 }
