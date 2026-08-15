@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "http://blog.andlabs.org/2010/03/bypassing-csrf-protections-with.html"
     title: Bypassing CSRF protections with ClickJacking and HTTP Parameter Pollution
+    author: lava
 also_at: []
-authors: []
+authors:
+  - lava
 canonical_url: ""
 cited_by:
   - "2010.md:9"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Bypassing CSRF protections with ClickJacking and HTTP Parameter Pollution
 
-**Bypassing CSRF protections with ClickJacking and HTTP Parameter Pollution** - Author not stated, blog.andlabs.org.
+**Bypassing CSRF protections with ClickJacking and HTTP Parameter Pollution** - lava, blog.andlabs.org.
 
 - Published: date not stated
 - Original: <http://blog.andlabs.org/2010/03/bypassing-csrf-protections-with.html>

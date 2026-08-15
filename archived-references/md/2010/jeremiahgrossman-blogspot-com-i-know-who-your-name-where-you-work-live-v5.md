@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2010/07/i-know-who-your-name-where-you-work-and.html"
     title: I know who your name, where you work, and live (Safari v4 & v5)
+    author: Jeremiah Grossman
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: ""
 cited_by:
   - "2010.md:7"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # I know who your name, where you work, and live (Safari v4 & v5)
 
-**I know who your name, where you work, and live (Safari v4 & v5)** - Author not stated, jeremiahgrossman.blogspot.com.
+**I know who your name, where you work, and live (Safari v4 & v5)** - Jeremiah Grossman, jeremiahgrossman.blogspot.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2010/07/i-know-who-your-name-where-you-work-and.html>

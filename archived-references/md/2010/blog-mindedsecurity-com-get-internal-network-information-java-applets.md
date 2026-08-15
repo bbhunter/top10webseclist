@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://blog.mindedsecurity.com/2010/10/get-internal-network-information-with.html"
     title: Get Internal Network Information with Java Applets
+    author: Stefano Di Paola
   - id: canonical
     resource: "https://blog.mindedsecurity.com/2010/10/get-internal-network-information-with.html"
 also_at: []
-authors: []
+authors:
+  - Stefano Di Paola
 canonical_url: "https://blog.mindedsecurity.com/2010/10/get-internal-network-information-with.html"
 cited_by:
   - "2010.md:42"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Get Internal Network Information with Java Applets
 
-**Get Internal Network Information with Java Applets** - Author not stated, blog.mindedsecurity.com.
+**Get Internal Network Information with Java Applets** - Stefano Di Paola, blog.mindedsecurity.com.
 
 - Published: date not stated
 - Original: <http://blog.mindedsecurity.com/2010/10/get-internal-network-information-with.html>

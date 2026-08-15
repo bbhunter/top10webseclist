@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://blog.mindedsecurity.com/2010/09/twitter-domxss-wrong-fix-and-something.html"
     title: A Twitter DomXss, a wrong fix and something more
+    author: Stefano Di Paola
   - id: canonical
     resource: "https://blog.mindedsecurity.com/2010/09/twitter-domxss-wrong-fix-and-something.html"
 also_at: []
-authors: []
+authors:
+  - Stefano Di Paola
 canonical_url: "https://blog.mindedsecurity.com/2010/09/twitter-domxss-wrong-fix-and-something.html"
 cited_by:
   - "2010.md:41"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # A Twitter DomXss, a wrong fix and something more
 
-**A Twitter DomXss, a wrong fix and something more** - Author not stated, blog.mindedsecurity.com.
+**A Twitter DomXss, a wrong fix and something more** - Stefano Di Paola, blog.mindedsecurity.com.
 
 - Published: date not stated
 - Original: <http://blog.mindedsecurity.com/2010/09/twitter-domxss-wrong-fix-and-something.html>

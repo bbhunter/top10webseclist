@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "http://blog.andlabs.org/2010/04/stroke-triggered-xss-and-strokejacking_06.html"
     title: Stroke triggered XSS and StrokeJacking
+    author: lava
 also_at: []
-authors: []
+authors:
+  - lava
 canonical_url: ""
 cited_by:
   - "2010.md:55"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Stroke triggered XSS and StrokeJacking
 
-**Stroke triggered XSS and StrokeJacking** - Author not stated, blog.andlabs.org.
+**Stroke triggered XSS and StrokeJacking** - lava, blog.andlabs.org.
 
 - Published: date not stated
 - Original: <http://blog.andlabs.org/2010/04/stroke-triggered-xss-and-strokejacking_06.html>

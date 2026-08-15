@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "http://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.html"
     title: XSSing client-side dynamic HTML includes by hiding HTML inside images and more
+    author: lava
 also_at: []
-authors: []
+authors:
+  - lava
 canonical_url: ""
 cited_by:
   - "2010.md:54"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # XSSing client-side dynamic HTML includes by hiding HTML inside images and more
 
-**XSSing client-side dynamic HTML includes by hiding HTML inside images and more** - Author not stated, blog.andlabs.org.
+**XSSing client-side dynamic HTML includes by hiding HTML inside images and more** - lava, blog.andlabs.org.
 
 - Published: date not stated
 - Original: <http://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.html>

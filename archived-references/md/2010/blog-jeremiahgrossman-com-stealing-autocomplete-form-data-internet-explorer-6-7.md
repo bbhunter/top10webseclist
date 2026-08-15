@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2010/07/stealing-autocomplete-form-data-in.html"
     title: Stealing AutoComplete form data in Internet Explorer 6 & 7
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2010/07/stealing-autocomplete-form-data-in.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2010/07/stealing-autocomplete-form-data-in.html"
 cited_by:
   - "2010.md:7"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Stealing AutoComplete form data in Internet Explorer 6 & 7
 
-**Stealing AutoComplete form data in Internet Explorer 6 & 7** - Author not stated, blog.jeremiahgrossman.com.
+**Stealing AutoComplete form data in Internet Explorer 6 & 7** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2010/07/stealing-autocomplete-form-data-in.html>

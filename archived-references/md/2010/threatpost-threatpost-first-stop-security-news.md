@@ -12,12 +12,12 @@ sources:
   - id: original
     resource: "https://threatpost.com/en_us/blogs/padding-oracle-crypto-attack-affects-millions-aspnet-apps-091310"
     title: "'Padding Oracle' Crypto Attack Affects Millions of ASP.NET Apps"
-    author: @threatpost
+    author: Dennis Fisher
   - id: capture
     resource: "https://web.archive.org/web/20101104065410/https://threatpost.com/en_us/blogs/padding-oracle-crypto-attack-affects-millions-aspnet-apps-091310"
 also_at: []
 authors:
-  - @threatpost
+  - Dennis Fisher
 canonical_url: ""
 cited_by:
   - "2010.md:44"
@@ -45,7 +45,7 @@ translation_of: ""
 
 # 'Padding Oracle' Crypto Attack Affects Millions of ASP.NET Apps
 
-**'Padding Oracle' Crypto Attack Affects Millions of ASP.NET Apps** - @threatpost, threatpost.com.
+**'Padding Oracle' Crypto Attack Affects Millions of ASP.NET Apps** - Dennis Fisher, threatpost.com.
 
 - Published: date not stated
 - Original: <https://threatpost.com/en_us/blogs/padding-oracle-crypto-attack-affects-millions-aspnet-apps-091310>

@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "http://blog.andlabs.org/2010/09/re-visiting-java-de-serialization-it.html"
     title: "Re-visiting JAVA De-serialization: It can't get any simpler than this !!"
+    author: Manish S.
 also_at: []
-authors: []
+authors:
+  - Manish S.
 canonical_url: ""
 cited_by:
   - "2010.md:38"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Re-visiting JAVA De-serialization: It can't get any simpler than this !!
 
-**Re-visiting JAVA De-serialization: It can't get any simpler than this !!** - Author not stated, blog.andlabs.org.
+**Re-visiting JAVA De-serialization: It can't get any simpler than this !!** - Manish S., blog.andlabs.org.
 
 - Published: date not stated
 - Original: <http://blog.andlabs.org/2010/09/re-visiting-java-de-serialization-it.html>

@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://scarybeastsecurity.blogspot.com/2010/01/posting-raw-xml-cross-domain.html"
     title: Posting raw XML cross-domain
+    author: Chris
 also_at: []
-authors: []
+authors:
+  - Chris
 canonical_url: ""
 cited_by:
   - "2010.md:45"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Posting raw XML cross-domain
 
-**Posting raw XML cross-domain** - Author not stated, scarybeastsecurity.blogspot.com.
+**Posting raw XML cross-domain** - Chris, scarybeastsecurity.blogspot.com.
 
 - Published: date not stated
 - Original: <https://scarybeastsecurity.blogspot.com/2010/01/posting-raw-xml-cross-domain.html>

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://blog.mindedsecurity.com/2010/10/java-applet-same-ip-host-access.html"
     title: Java Applet Same IP Host Access
+    author: Stefano Di Paola
   - id: canonical
     resource: "https://blog.mindedsecurity.com/2010/10/java-applet-same-ip-host-access.html"
 also_at: []
-authors: []
+authors:
+  - Stefano Di Paola
 canonical_url: "https://blog.mindedsecurity.com/2010/10/java-applet-same-ip-host-access.html"
 cited_by:
   - "2010.md:43"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Java Applet Same IP Host Access
 
-**Java Applet Same IP Host Access** - Author not stated, blog.mindedsecurity.com.
+**Java Applet Same IP Host Access** - Stefano Di Paola, blog.mindedsecurity.com.
 
 - Published: date not stated
 - Original: <http://blog.mindedsecurity.com/2010/10/java-applet-same-ip-host-access.html>

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://blog.mindedsecurity.com/2010/04/fooling-b64encodepayload-on-wafs-and.html"
     title: Fooling B64_Encode(Payload) on WAFs and filters
+    author: Stefano Di Paola
   - id: canonical
     resource: "https://blog.mindedsecurity.com/2010/04/fooling-b64encodepayload-on-wafs-and.html"
 also_at: []
-authors: []
+authors:
+  - Stefano Di Paola
 canonical_url: "https://blog.mindedsecurity.com/2010/04/fooling-b64encodepayload-on-wafs-and.html"
 cited_by:
   - "2010.md:39"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Fooling B64_Encode(Payload) on WAFs and filters
 
-**Fooling B64_Encode(Payload) on WAFs and filters** - Author not stated, blog.mindedsecurity.com.
+**Fooling B64_Encode(Payload) on WAFs and filters** - Stefano Di Paola, blog.mindedsecurity.com.
 
 - Published: date not stated
 - Original: <http://blog.mindedsecurity.com/2010/04/fooling-b64encodepayload-on-wafs-and.html>

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2010/08/breaking-browsers-hacking-auto-complete.html"
     title: "Breaking Browsers: Hacking Auto-Complete (All Materials Available)"
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2010/08/breaking-browsers-hacking-auto-complete.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2010/08/breaking-browsers-hacking-auto-complete.html"
 cited_by:
   - "2010.md:7"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Breaking Browsers: Hacking Auto-Complete (All Materials Available)
 
-**Breaking Browsers: Hacking Auto-Complete (All Materials Available)** - Author not stated, blog.jeremiahgrossman.com.
+**Breaking Browsers: Hacking Auto-Complete (All Materials Available)** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2010/08/breaking-browsers-hacking-auto-complete.html>

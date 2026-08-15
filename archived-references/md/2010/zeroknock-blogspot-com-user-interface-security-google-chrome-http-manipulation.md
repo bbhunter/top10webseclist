@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://zeroknock.blogspot.com/2010/08/google-chrome-http-auth-dialog-through.html"
     title: User Interface Security - Google Chrome HTTP AUTH Dialog Spoofing through Realm Manipulation
+    author: Aditya K Sood
 also_at: []
-authors: []
+authors:
+  - Aditya K Sood
 canonical_url: ""
 cited_by:
   - "2010.md:61"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # User Interface Security - Google Chrome HTTP AUTH Dialog Spoofing through Realm Manipulation
 
-**User Interface Security - Google Chrome HTTP AUTH Dialog Spoofing through Realm Manipulation** - Author not stated, zeroknock.blogspot.com.
+**User Interface Security - Google Chrome HTTP AUTH Dialog Spoofing through Realm Manipulation** - Aditya K Sood, zeroknock.blogspot.com.
 
 - Published: date not stated
 - Original: <https://zeroknock.blogspot.com/2010/08/google-chrome-http-auth-dialog-through.html>

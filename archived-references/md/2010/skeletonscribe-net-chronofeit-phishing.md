@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://skeletonscribe.blogspot.com/2010/12/chronofeit-phishing.html"
     title: Chronofeit Phishing
+    author: James Kettle
   - id: canonical
     resource: "https://www.skeletonscribe.net/2010/12/chronofeit-phishing.html"
 also_at: []
-authors: []
+authors:
+  - James Kettle
 canonical_url: "https://www.skeletonscribe.net/2010/12/chronofeit-phishing.html"
 cited_by:
   - "2010.md:72"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Chronofeit Phishing
 
-**Chronofeit Phishing** - Author not stated, skeletonscribe.net.
+**Chronofeit Phishing** - James Kettle, skeletonscribe.net.
 
 - Published: date not stated
 - Original: <https://skeletonscribe.blogspot.com/2010/12/chronofeit-phishing.html>

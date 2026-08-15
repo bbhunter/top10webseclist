@@ -315,6 +315,78 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: blog.ammaraskar.com is the researcher's own site, published as \"ammar's blog\", and the post is written in the first person throughout."
   },
+  "https://blog.andlabs.org/2010/03/bypassing-csrf-protections-with.html": {
+   "authors": [
+    "lava"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The extraction dropped the byline the stored source carries - a post-author vcard marked rel=author naming the handle lava, which the author publishes under. "
+  },
+  "https://blog.andlabs.org/2010/04/stroke-triggered-xss-and-strokejacking_06.html": {
+   "authors": [
+    "lava"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The extraction dropped the byline the stored source carries - a post-author vcard marked rel=author naming the handle lava, which the author publishes under. "
+  },
+  "https://blog.andlabs.org/2010/06/chrome-and-safari-users-open-to-stealth.html": {
+   "authors": [
+    "lava"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The extraction dropped the byline the stored source carries - a post-author vcard marked rel=author naming the handle lava, which the author publishes under. "
+  },
+  "https://blog.andlabs.org/2010/08/stealing-entire-auto-complete-data-in.html": {
+   "authors": [
+    "lava"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The extraction dropped the byline the stored source carries - a post-author vcard marked rel=author naming the handle lava, which the author publishes under. "
+  },
+  "https://blog.andlabs.org/2010/08/xssing-client-side-dynamic-html.html": {
+   "authors": [
+    "lava"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The extraction dropped the byline the stored source carries - a post-author vcard marked rel=author naming the handle lava, which the author publishes under. "
+  },
+  "https://blog.andlabs.org/2010/09/re-visiting-java-de-serialization-it.html": {
+   "authors": [
+    "Manish S."
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries a rel=author byline naming Manish S., corroborated in the body by the Black Hat EU anchor and by the demo data."
+  },
+  "https://blog.andlabs.org/2010/12/cracking-hashes-in-javascript-cloud.html": {
+   "authors": [
+    "lava"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The extraction dropped the byline the stored source carries - a post-author vcard marked rel=author naming the handle lava, which the author publishes under. "
+  },
+  "https://blog.andlabs.org/2010/12/performing-ddos-attacks-with-html5.html": {
+   "authors": [
+    "lava"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The extraction dropped the byline the stored source carries - a post-author vcard marked rel=author naming the handle lava, which the author publishes under. "
+  },
+  "https://blog.andlabs.org/2010/12/port-scanning-with-html5-and-js-recon.html": {
+   "authors": [
+    "lava"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The extraction dropped the byline the stored source carries - a post-author vcard marked rel=author naming the handle lava, which the author publishes under. "
+  },
   "https://blog.arkark.dev/2025/09/08/asisctf-quals": {
    "authors": [
     "arkark"
@@ -390,6 +462,62 @@
    "class": "derivative",
    "outcome": "skip",
    "reason": "The short announcement is retained in the 2015 list, while the complete Evading All Web Application Firewalls XSS Filters paper is archived from https://mazinahmed.net/uploads/Evading%20All%20Web-Application%20Firewalls%20XSS%20Filters.pdf."
+  },
+  "https://blog.mindedsecurity.com/2010/04/fooling-b64encodepayload-on-wafs-and.html": {
+   "authors": [
+    "Stefano Di Paola"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". The extraction dropped the byline the stored source carries - a post-author vcard marked rel=author and schema.org author, naming Stefano Di Paola. Where the article itself is missing, the byline was lost with it and should be picked up by the same re-extract."
+  },
+  "https://blog.mindedsecurity.com/2010/04/mysql-stacked-queries-with-sql.html": {
+   "authors": [
+    "Stefano Di Paola"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". The extraction dropped the byline the stored source carries - a post-author vcard marked rel=author and schema.org author, naming Stefano Di Paola. Where the article itself is missing, the byline was lost with it and should be picked up by the same re-extract."
+  },
+  "https://blog.mindedsecurity.com/2010/09/twitter-domxss-wrong-fix-and-something.html": {
+   "authors": [
+    "Stefano Di Paola"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". The extraction dropped the byline the stored source carries - a post-author vcard marked rel=author and schema.org author, naming Stefano Di Paola. Where the article itself is missing, the byline was lost with it and should be picked up by the same re-extract."
+  },
+  "https://blog.mindedsecurity.com/2010/10/dns-rebinding-on-java-applets.html": {
+   "authors": [
+    "Stefano Di Paola"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". The extraction dropped the byline the stored source carries - a post-author vcard marked rel=author and schema.org author, naming Stefano Di Paola. Where the article itself is missing, the byline was lost with it and should be picked up by the same re-extract."
+  },
+  "https://blog.mindedsecurity.com/2010/10/get-internal-network-information-with.html": {
+   "authors": [
+    "Stefano Di Paola"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". The extraction dropped the byline the stored source carries - a post-author vcard marked rel=author and schema.org author, naming Stefano Di Paola. Where the article itself is missing, the byline was lost with it and should be picked up by the same re-extract."
+  },
+  "https://blog.mindedsecurity.com/2010/10/java-applet-same-ip-host-access.html": {
+   "authors": [
+    "Stefano Di Paola"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". The extraction dropped the byline the stored source carries - a post-author vcard marked rel=author and schema.org author, naming Stefano Di Paola. Where the article itself is missing, the byline was lost with it and should be picked up by the same re-extract."
+  },
+  "https://blog.mindedsecurity.com/2010/10/java-dsn-rebinding-java-same-ip-policy.html": {
+   "authors": [
+    "Stefano Di Paola"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". The extraction dropped the byline the stored source carries - a post-author vcard marked rel=author and schema.org author, naming Stefano Di Paola. Where the article itself is missing, the byline was lost with it and should be picked up by the same re-extract."
   },
   "https://blog.mindedsecurity.com/2011/10/autocompleteagain.html": {
    "authors": [
@@ -1540,6 +1668,62 @@
    "outcome": "archive",
    "reason": "authors was empty and the header read \"Author not stated\". The document names all five in its own prose: \"The team behind this research comprises Nadhem AlFardan, Dan Bernstein, Kenny Paterson, Bertram Poettering and Jacob Schuldt.\" Read from the body, not from metadata."
   },
+  "https://jeremiahgrossman.blogspot.com/2010/02/converting-unimplementable-cookie-based.html": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\" ON THE AUTHOR'S OWN BLOG. The extraction dropped the byline the stored source carries: a post-author vcard with rel=author and schema.org markup naming Jeremiah Grossman. "
+  },
+  "https://jeremiahgrossman.blogspot.com/2010/07/i-know-who-your-name-where-you-work-and.html": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\" ON THE AUTHOR'S OWN BLOG. The extraction dropped the byline the stored source carries: a post-author vcard with rel=author and schema.org markup naming Jeremiah Grossman. "
+  },
+  "https://jeremiahgrossman.blogspot.com/2010/07/in-firefox-we-cant-read-auto-complete.html": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\" ON THE AUTHOR'S OWN BLOG. The extraction dropped the byline the stored source carries: a post-author vcard with rel=author and schema.org markup naming Jeremiah Grossman. "
+  },
+  "https://jeremiahgrossman.blogspot.com/2010/07/patching-auto-complete-vulnerabilities.html": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\" ON THE AUTHOR'S OWN BLOG. The extraction dropped the byline the stored source carries: a post-author vcard with rel=author and schema.org markup naming Jeremiah Grossman. "
+  },
+  "https://jeremiahgrossman.blogspot.com/2010/07/stealing-autocomplete-form-data-in.html": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\" ON THE AUTHOR'S OWN BLOG. The extraction dropped the byline the stored source carries: a post-author vcard with rel=author and schema.org markup naming Jeremiah Grossman. "
+  },
+  "https://jeremiahgrossman.blogspot.com/2010/08/breaking-browsers-hacking-auto-complete.html": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\" ON THE AUTHOR'S OWN BLOG. The extraction dropped the byline the stored source carries: a post-author vcard with rel=author and schema.org markup naming Jeremiah Grossman. "
+  },
+  "https://jeremiahgrossman.blogspot.com/2010/09/safari-autofill-hack-lives.html": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\" ON THE AUTHOR'S OWN BLOG. The extraction dropped the byline the stored source carries: a post-author vcard with rel=author and schema.org markup naming Jeremiah Grossman. "
+  },
   "https://jeremiahgrossman.blogspot.com/2011/03/robert-rsnake-hansen-age-34-has-passed.html": {
    "authors": [
     "Jeremiah Grossman"
@@ -1722,6 +1906,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: the post is first person about its own finding — \"I have actually managed to pull off this attack against Google Docs\", \"Google VRP awarded me $3133.70\" — and signs off \"Discuss this post on: twitter/rebane2001, mastodon infosec.exchange/@rebane2001\", the handle the author publishes lyra.horse under."
+  },
+  "https://m-austin.com/blog?p=19": {
+   "authors": [
+    "matt"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries an entry-author vcard marked rel=author naming the handle matt, adjacent to the post's own H1. The matt and zcorpan further down the page are COMMENTERS in a different element and were not used."
   },
   "https://matanber.com/blog/4-char-csti": {
    "authors": [
@@ -2335,6 +2527,14 @@
    "reason": "Recovered and verified from the 24 December 2010 publication-era capture. It contains the full disclosure, proof-of-concept URL, history.pushState explanation, affected browser versions, and mitigation discussion.",
    "title": "How to Conceal XSS Injection in HTML5"
   },
+  "https://scarybeastsecurity.blogspot.com/2010/01/posting-raw-xml-cross-domain.html": {
+   "authors": [
+    "Chris"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The 2010 Wayback capture in the store carries a Blogger byline reading \"Posted by Chris\". Recorded with the caveat that the page only ever gives the bare first name, and the later live capture the file now names has no byline block at all."
+  },
   "https://schemehostport.com/2011/12/timing-attacks-on-css-shaders.html": {
    "authors": [
     "Adam Barth"
@@ -2501,6 +2701,14 @@
    "class": "derivative",
    "outcome": "skip",
    "reason": "The author's former Google Sites landing page is retained beside Rosario Valotta's complete Cookiejacking presentation, archived from the official HITBSecConf 2011 conference materials."
+  },
+  "https://skeletonscribe.blogspot.com/2010/12/chronofeit-phishing.html": {
+   "authors": [
+    "James Kettle"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. Both stored captures name the writer: the newer one, whose hash the published frontmatter cites, carries a rel=author byline reading James Kettle; the older reads albino, and the sidebar gives @albinowax."
   },
   "https://skeletonscribe.net/2013/05/practical-http-host-header-attacks.html": {
    "authors": [
@@ -2926,6 +3134,14 @@
    "outcome": "archive",
    "reason": "authors recorded the author's name AND her own handle \"@Swati_THN\" as a second entry. Not a wrong credit - the handle is hers and is linked in the body - but redundant, and the unquoted \"@\" made the frontmatter unparseable as YAML. Dropping the duplicate fixes the parse."
   },
+  "https://thespanner.co.uk/2010/09/15/one-vector-to-rule-them-all": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The byline was lost with the article: the source is a Next.js flight payload whose content prop holds both the post and the byline \"By Gareth Heyes (@hackvertor)\". Third document on this blog lost the same way."
+  },
   "https://thespanner.co.uk/2011/12/05/nulls-in-entities-in-firefox": {
    "authors": [
     "Gareth Heyes"
@@ -2971,6 +3187,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors recorded \"@mike_mimoso\", taken from the adjacent Follow button. The stored source carries the visible byline \"by ... title='Posts by Michael Mimoso' rel='author'>Michael Mimoso\" and an analytics field giving the same name. The store's other two rel=\"author\" hits name Chris Brook but sit in related-post teasers and were correctly not taken."
+  },
+  "https://threatpost.com/en_us/blogs/padding-oracle-crypto-attack-affects-millions-aspnet-apps-091310": {
+   "authors": [
+    "Dennis Fisher"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@threatpost\", a corporate handle, where the DOCUMENT ITSELF names the writer: the published body reads \"by Dennis Fisher\" and the stored source carries a by-line div with the same name."
   },
   "https://threatpost.com/father-daughter-hacking-team-finds-valuable-facebook-bug/102877": {
    "authors": [
@@ -3392,6 +3616,22 @@
    "outcome": "skip",
    "reason": "The padding-oracle demonstration video is retained in the 2010 list, but the complete paper is archived from https://www.usenix.org/events/woot10/tech/full_papers/Rizzo.pdf."
   },
+  "https://xs-sniper.com/blog/2010/12/17/will-it-blend": {
+   "authors": [
+    "xssniper"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty although the byline reached the PUBLISHED BODY, which reads \"Posted by xssniper | Filed in Security\" - it simply never reached the metadata. The site masthead independently gives Billy (BK) Rios."
+  },
+  "https://xs-sniper.com/blog/2010/12/22/expanding-the-attack-surface": {
+   "authors": [
+    "xssniper"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries a meta div reading \"Posted by xssniper\", and the masthead independently gives Billy (BK) Rios."
+  },
   "https://xs-sniper.com/blog/2011/01/04/bypassing-flash%E2%80%99s-local-with-filesystem-sandbox": {
    "authors": [
     "xssniper"
@@ -3451,6 +3691,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: the recorded title carried the site masthead, \"Zero Day Initiative — \", and dropped the subtitle. The capture is the right article and its own heading reads \"Exploiting Exchange PowerShell After ProxyNotShell: Part 1 - MultiValuedProperty\", above \"September 05, 2024\" and \"Piotr Bazydło\".",
    "title": "Exploiting Exchange PowerShell After ProxyNotShell: Part 1 - MultiValuedProperty"
+  },
+  "https://zeroknock.blogspot.com/2010/08/google-chrome-http-auth-dialog-through.html": {
+   "authors": [
+    "Aditya K Sood"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries a Blogger byline reading \"Posted by Aditya K Sood\"."
   },
   "https://zhero-web-sec.github.io/research-and-things/one-trigram-at-a-time-xsleak-via-universal-css-injection-and-dos-in-opera-(gx)": {
    "authors": [

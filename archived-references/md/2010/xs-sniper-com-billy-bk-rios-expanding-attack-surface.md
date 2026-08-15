@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://xs-sniper.com/blog/2010/12/22/expanding-the-attack-surface/"
     title: Billy (BK) Rios » Expanding the Attack Surface
+    author: xssniper
   - id: capture
     resource: "https://web.archive.org/web/20150706201838/http://xs-sniper.com/blog/2010/12/22/expanding-the-attack-surface/"
 also_at: []
-authors: []
+authors:
+  - xssniper
 canonical_url: ""
 cited_by:
   - "2010.md:71"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Billy (BK) Rios » Expanding the Attack Surface
 
-**Billy (BK) Rios » Expanding the Attack Surface** - Author not stated, xs-sniper.com.
+**Billy (BK) Rios » Expanding the Attack Surface** - xssniper, xs-sniper.com.
 
 - Published: date not stated
 - Original: <http://xs-sniper.com/blog/2010/12/22/expanding-the-attack-surface/>

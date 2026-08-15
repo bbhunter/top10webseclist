@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "http://blog.andlabs.org/2010/12/cracking-hashes-in-javascript-cloud.html"
     title: Cracking hashes in the JavaScript cloud with Ravan
+    author: lava
 also_at: []
-authors: []
+authors:
+  - lava
 canonical_url: ""
 cited_by:
   - "2010.md:66"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Cracking hashes in the JavaScript cloud with Ravan
 
-**Cracking hashes in the JavaScript cloud with Ravan** - Author not stated, blog.andlabs.org.
+**Cracking hashes in the JavaScript cloud with Ravan** - lava, blog.andlabs.org.
 
 - Published: date not stated
 - Original: <http://blog.andlabs.org/2010/12/cracking-hashes-in-javascript-cloud.html>

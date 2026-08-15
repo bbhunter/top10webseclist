@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2010/07/patching-auto-complete-vulnerabilities.html"
     title: Patching auto-complete vulnerabilities not enough, Cookie Eviction to the rescue
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2010/07/patching-auto-complete-vulnerabilities.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2010/07/patching-auto-complete-vulnerabilities.html"
 cited_by:
   - "2010.md:18"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Patching auto-complete vulnerabilities not enough, Cookie Eviction to the rescue
 
-**Patching auto-complete vulnerabilities not enough, Cookie Eviction to the rescue** - Author not stated, blog.jeremiahgrossman.com.
+**Patching auto-complete vulnerabilities not enough, Cookie Eviction to the rescue** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2010/07/patching-auto-complete-vulnerabilities.html>

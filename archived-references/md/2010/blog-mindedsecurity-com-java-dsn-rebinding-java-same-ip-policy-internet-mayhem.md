@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://blog.mindedsecurity.com/2010/10/java-dsn-rebinding-java-same-ip-policy.html"
     title: "Minded Security Blog: Java DSN Rebinding + Java Same IP Policy = The Internet Mayhem"
+    author: Stefano Di Paola
   - id: capture
     resource: "https://web.archive.org/web/20110119224142/http://blog.mindedsecurity.com/2010/10/java-dsn-rebinding-java-same-ip-policy.html"
 also_at: []
-authors: []
+authors:
+  - Stefano Di Paola
 canonical_url: ""
 cited_by:
   - "2010.md:14"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Minded Security Blog: Java DSN Rebinding + Java Same IP Policy = The Internet Mayhem
 
-**Minded Security Blog: Java DSN Rebinding + Java Same IP Policy = The Internet Mayhem** - Author not stated, blog.mindedsecurity.com.
+**Minded Security Blog: Java DSN Rebinding + Java Same IP Policy = The Internet Mayhem** - Stefano Di Paola, blog.mindedsecurity.com.
 
 - Published: date not stated
 - Original: <http://blog.mindedsecurity.com/2010/10/java-dsn-rebinding-java-same-ip-policy.html>

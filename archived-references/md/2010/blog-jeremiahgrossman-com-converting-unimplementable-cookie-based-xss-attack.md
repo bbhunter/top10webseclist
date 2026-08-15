@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2010/02/converting-unimplementable-cookie-based.html"
     title: Converting unimplementable Cookie-based XSS to a persistent attack
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2010/02/converting-unimplementable-cookie-based.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2010/02/converting-unimplementable-cookie-based.html"
 cited_by:
   - "2010.md:19"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Converting unimplementable Cookie-based XSS to a persistent attack
 
-**Converting unimplementable Cookie-based XSS to a persistent attack** - Author not stated, blog.jeremiahgrossman.com.
+**Converting unimplementable Cookie-based XSS to a persistent attack** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2010/02/converting-unimplementable-cookie-based.html>

@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "http://blog.andlabs.org/2010/08/stealing-entire-auto-complete-data-in.html"
     title: Stealing entire Auto-Complete data in Google Chrome
+    author: lava
 also_at: []
-authors: []
+authors:
+  - lava
 canonical_url: ""
 cited_by:
   - "2010.md:33"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Stealing entire Auto-Complete data in Google Chrome
 
-**Stealing entire Auto-Complete data in Google Chrome** - Author not stated, blog.andlabs.org.
+**Stealing entire Auto-Complete data in Google Chrome** - lava, blog.andlabs.org.
 
 - Published: date not stated
 - Original: <http://blog.andlabs.org/2010/08/stealing-entire-auto-complete-data-in.html>

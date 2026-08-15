@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "http://blog.andlabs.org/2010/12/port-scanning-with-html5-and-js-recon.html"
     title: Port Scanning with HTML5 and JS-Recon
+    author: lava
 also_at: []
-authors: []
+authors:
+  - lava
 canonical_url: ""
 cited_by:
   - "2010.md:64"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Port Scanning with HTML5 and JS-Recon
 
-**Port Scanning with HTML5 and JS-Recon** - Author not stated, blog.andlabs.org.
+**Port Scanning with HTML5 and JS-Recon** - lava, blog.andlabs.org.
 
 - Published: date not stated
 - Original: <http://blog.andlabs.org/2010/12/port-scanning-with-html5-and-js-recon.html>

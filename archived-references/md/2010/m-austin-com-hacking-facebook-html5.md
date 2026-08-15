@@ -6,16 +6,18 @@ tags: [article, webseclist-reference, en-US, m-austin-com]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:02+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "http://m-austin.com/blog/?p=19"
     title: Hacking Facebook with HTML5
+    author: matt
   - id: capture
     resource: "https://web.archive.org/web/20150104030514/http://m-austin.com/blog/?p=19"
 also_at: []
-authors: []
+authors:
+  - matt
 canonical_url: ""
 cited_by:
   - "2010.md:32"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Hacking Facebook with HTML5
 
-**Hacking Facebook with HTML5** - Author not stated, m-austin.com.
+**Hacking Facebook with HTML5** - matt, m-austin.com.
 
 - Published: date not stated
 - Original: <http://m-austin.com/blog/?p=19>

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2010/07/in-firefox-we-cant-read-auto-complete.html"
     title: In Firefox we can’t read auto-complete, but we can write to it (a lot)!
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2010/07/in-firefox-we-cant-read-auto-complete.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2010/07/in-firefox-we-cant-read-auto-complete.html"
 cited_by:
   - "2010.md:7"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # In Firefox we can’t read auto-complete, but we can write to it (a lot)!
 
-**In Firefox we can’t read auto-complete, but we can write to it (a lot)!** - Author not stated, blog.jeremiahgrossman.com.
+**In Firefox we can’t read auto-complete, but we can write to it (a lot)!** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2010/07/in-firefox-we-cant-read-auto-complete.html>

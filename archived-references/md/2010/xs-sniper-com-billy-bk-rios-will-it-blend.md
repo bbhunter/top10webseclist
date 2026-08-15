@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://xs-sniper.com/blog/2010/12/17/will-it-blend/"
     title: Billy (BK) Rios » Will it Blend?
+    author: xssniper
   - id: capture
     resource: "https://web.archive.org/web/20150909202941/http://xs-sniper.com/blog/2010/12/17/will-it-blend/"
 also_at: []
-authors: []
+authors:
+  - xssniper
 canonical_url: ""
 cited_by:
   - "2010.md:67"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Billy (BK) Rios » Will it Blend?
 
-**Billy (BK) Rios » Will it Blend?** - Author not stated, xs-sniper.com.
+**Billy (BK) Rios » Will it Blend?** - xssniper, xs-sniper.com.
 
 - Published: date not stated
 - Original: <http://xs-sniper.com/blog/2010/12/17/will-it-blend/>

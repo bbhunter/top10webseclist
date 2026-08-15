@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "http://blog.andlabs.org/2010/12/performing-ddos-attacks-with-html5.html"
     title: Performing DDoS attacks with HTML5 Cross Origin Requests & WebWorkers
+    author: lava
 also_at: []
-authors: []
+authors:
+  - lava
 canonical_url: ""
 cited_by:
   - "2010.md:65"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Performing DDoS attacks with HTML5 Cross Origin Requests & WebWorkers
 
-**Performing DDoS attacks with HTML5 Cross Origin Requests & WebWorkers** - Author not stated, blog.andlabs.org.
+**Performing DDoS attacks with HTML5 Cross Origin Requests & WebWorkers** - lava, blog.andlabs.org.
 
 - Published: date not stated
 - Original: <http://blog.andlabs.org/2010/12/performing-ddos-attacks-with-html5.html>

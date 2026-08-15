@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "http://blog.andlabs.org/2010/06/chrome-and-safari-users-open-to-stealth.html"
     title: Chrome and Safari users open to stealth HTML5 AppCache attack
+    author: lava
 also_at: []
-authors: []
+authors:
+  - lava
 canonical_url: ""
 cited_by:
   - "2010.md:34"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Chrome and Safari users open to stealth HTML5 AppCache attack
 
-**Chrome and Safari users open to stealth HTML5 AppCache attack** - Author not stated, blog.andlabs.org.
+**Chrome and Safari users open to stealth HTML5 AppCache attack** - lava, blog.andlabs.org.
 
 - Published: date not stated
 - Original: <http://blog.andlabs.org/2010/06/chrome-and-safari-users-open-to-stealth.html>

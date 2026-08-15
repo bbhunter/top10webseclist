@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2010/09/safari-autofill-hack-lives.html"
     title: The Safari AutoFill hack LIVES!
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2010/09/safari-autofill-hack-lives.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2010/09/safari-autofill-hack-lives.html"
 cited_by:
   - "2010.md:7"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # The Safari AutoFill hack LIVES!
 
-**The Safari AutoFill hack LIVES!** - Author not stated, blog.jeremiahgrossman.com.
+**The Safari AutoFill hack LIVES!** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2010/09/safari-autofill-hack-lives.html>

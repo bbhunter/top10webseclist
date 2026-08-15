@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2010/09/15/one-vector-to-rule-them-all/"
     title: One vector to rule them all
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2010/09/15/one-vector-to-rule-them-all"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2010/09/15/one-vector-to-rule-them-all"
 cited_by:
   - "2010.md:47"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # One vector to rule them all
 
-**One vector to rule them all** - Author not stated, thespanner.co.uk.
+**One vector to rule them all** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2010/09/15/one-vector-to-rule-them-all/>
