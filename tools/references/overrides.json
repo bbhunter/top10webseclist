@@ -374,6 +374,24 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: blog.slonser.info is the researcher's own site and the article's own proof-of-concept payload signs itself \"edited by slonser\"."
   },
+  "https://blog.sucuri.net/2014/07/remote-file-upload-vulnerability-on-mailpoet-wysija-newsletters.html": {
+   "authors": [],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@sucurisecurity\", the corporate handle, unquoted and so also breaking the frontmatter YAML. Same shape as the two sibling Sucuri references in this collection."
+  },
+  "https://blog.sucuri.net/2014/11/deep-dive-into-the-hikashop-vulnerability.html": {
+   "authors": [],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@sucurisecurity\", the vendor's own corporate social handle, which is not a person; unquoted, it also made the frontmatter unparseable as YAML. The article names NOBODY and is written in the corporate plural throughout - \"since our disclosure\", \"we set out to building a valid payload\", \"In our Proof of Concept\". The correct state is no author, with the publisher already recorded as Sucuri Blog."
+  },
+  "https://blog.sucuri.net/2014/12/soaksoak-malware-compromises-100000-wordpress-websites.html": {
+   "authors": [],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@sucurisecurity\", the corporate handle, unquoted and so also breaking the YAML in two places. The only human names in the file belong to two LINKED FOLLOW-UP POSTS and must not be promoted to this document's byline."
+  },
   "https://blog.trendmicro.com/trendlabs-security-intelligence/new-adobe-flash-zero-day-used-in-pawn-storm-campaign": {
    "authors": [
     "Brooks Li",
@@ -479,6 +497,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the recorded value was [\"Guest Post\", \"@Bugcrowd\"]. \"Guest Post\" is Bugcrowd’s placeholder byline - it links to an author query string rather than a person - so the archive was crediting a CMS placeholder. The article names its writers: \"This blog post is a written collaborative effort by Paolo Arnolfo (@sw33tLie) ... Guillermo Gregorio (@bsysop) ... and [name redacted by the authors] (@_medusa_1_)\". The third researcher redacted their own name in the source, so only the handle exists and it is not recorded as a name."
+  },
+  "https://chr13.com/2014/04/20/using-facebook-notes-to-ddos-any-website": {
+   "authors": [
+    "chr13"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The document carries a byline, \"Posted by chr13 on April 20, 2014\", marked rel=\"author\" in the source; the write-up is first person throughout (\"I fired up a target VM\") and links its own PoC at github.com/chr13/fbnotes. chr13 is the handle the author publishes under - read from the byline, NOT inferred from the hostname."
   },
   "https://code-white.com/blog/2019-02-telerik-revisited": {
    "authors": [
@@ -1037,6 +1063,14 @@
    "outcome": "archive",
    "reason": "The report names the researcher, who publishes as `ngalog`. The HackerOne triagers named in the thread are deliberately not credited."
   },
+  "https://hackerone.com/reports/32825": {
+   "authors": [
+    "Frans Rosén"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The report names its author three times - \"[fransrosen](https://hackerone.com/fransrosen) ... submitted a report to [**X / xAI**]\", the sign-off \"Regards, Frans\", and the avatar alt text \"Frans Rosén\". The HackerOne triagers named in the thread are deliberately not credited."
+  },
   "https://hackerone.com/reports/341876": {
    "authors": [
     "André Baptista"
@@ -1075,6 +1109,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-10: the recorded title was the conference's slide-file stem rather than the document's own title. The document itself is the one cited.",
    "title": "Infiltrating Corporate Intranet Like NSA: Pre-auth RCE on Leading SSL VPNs"
+  },
+  "https://homakov.blogspot.com/2014/12/the-no-captcha-problem.html": {
+   "authors": [
+    "Egor Homakov"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The document's own title line names him - \"# Egor Homakov: The No CAPTCHA problem\" - the body is first person, and the quoted reply is addressed \"[@homakov] I've used them in the past\". The stored source carries an explicit byline block, \"rel=\\\"author\\\"><span itemprop=\\\"name\\\">Egor Homakov\", which the extraction dropped. The masthead and the byline are the same name here, so the title fault and the attribution fault resolve together."
   },
   "https://i.blackhat.com/Asia-26/Presentations/BHAS26-Davidson-Discovering-React2Shell.pdf": {
    "class": "research",
@@ -1514,9 +1556,12 @@
    "title": "Second Breakfast: Implicit and Mutation-Based Serialization Vulnerabilities in .NET - Slides"
   },
   "https://medium.com/@da/need-a-last-minute-flight-45af88ec8df3": {
+   "authors": [
+    "Dani Grant"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Verified against the live article and its 2016 capture: the original disclosure is intentionally only three short observations plus two proof screenshots, and the archive contains that complete article rather than a truncated extraction."
+   "reason": "authors recorded ONE person TWICE, as name and handle, so the byline rendered \"Dani Grant, @thedanigrant, Medium.\" as though there were two authors - and the unquoted \"@\" also made the frontmatter unparseable as YAML. The handle is the author's own, so the name is right; dropping the duplicate entry fixes both. The body names nobody: the Medium byline was dropped in extraction, so the credit rests on metadata."
   },
   "https://medium.com/@omarelshopky/temenos-ofs-field-injection-revealing-a-hidden-financial-attack-vector-44df0e2bef9d": {
    "class": "research",
@@ -1880,6 +1925,16 @@
    "class": "research",
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the article states its own byline directly under the title and date - \"*By Yarden Porat, Check Point Research*\". The archive recorded \"matthewsu\" and \"@_cpresearch_\", neither of which is the author; \"matthewsu\" appears to be a site account picked up by extraction. The companion Black Hat deck (when-agentic-glue-melts-exploiting-cloudflare-code-mode-workers) credits \"Yarden Porat / Shahar Tal\", but this article names only Porat, so only he is recorded here."
+  },
+  "https://research.ibm.com/publications/mace-detecting-privilege-escalation-vulnerabilities-in-web-applications": {
+   "authors": [
+    "Maliheh Monshizadeh",
+    "Prasad Naldurg",
+    "V.N. Venkatakrishnan"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@IBMResearch\", a publisher handle. The conversion dropped the page's author tags entirely; the stored source names all three in citation_author metas and as visible tags, e.g. \"<span title=\\\"V.N. Venkatakrishnan\\\" class=\\\"cds--tag__label\\\">V.N. Venkatakrishnan</span>\"."
   },
   "https://research.nccgroup.com/2023/04/27/state-of-dns-rebinding-in-2023": {
    "authors": [
@@ -2426,6 +2481,20 @@
    "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file stem rather than the document's own title. The document itself is the one cited.",
    "title": "Bypass Surgery: Abusing Content Delivery Networks With Server-Side Request Forgery (SSRF), Flash, and DNS"
   },
+  "https://thehackernews.com/2014/11/cryptophp-backdoored-cms-plugins-themes.html": {
+   "authors": [
+    "Swati Khandelwal"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded the author's name AND her own handle \"@Swati_THN\" as a second entry. Not a wrong credit - the handle is hers and is linked in the body - but redundant, and the unquoted \"@\" made the frontmatter unparseable as YAML. Dropping the duplicate fixes the parse."
+  },
+  "https://thespanner.co.uk/2014/03/21/rpo": {
+   "authors": [],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"Ardamis.com | http://www.ardamis.com/\" - a WordPress THEME CREDIT string harvested from the page furniture, not a byline and not a person. The document names nobody, so the correct state is no author."
+  },
   "https://thomas.stacey.se/posts/CRLF-Powered-Desync-Attacks": {
    "authors": [
     "Tom Stacey"
@@ -2433,6 +2502,38 @@
    "class": "research",
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: thomas.stacey.se is the researcher's own site, published under the handle t0xodile, and PortSwigger's write-up of this same Black Hat research credits Tom Stacey."
+  },
+  "https://threatpost.com/adobe-patches-air-pwn2own-vulnerability-in-flash/105359": {
+   "authors": [
+    "Chris Brook"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@threatpost\", the PUBLICATION's own handle rather than any person. The conversion dropped the byline, so the archived body now names nobody; the stored page gives it three ways - \"title=\\\"Posts by Chris Brook\\\" rel=\\\"author\\\">Chris Brook\", the header \"...in Flash by Chris Brook\", and the analytics field \"'dimension1' : 'Chris Brook'\"."
+  },
+  "https://threatpost.com/new-timing-attack-could-de-anonymize-google-users/108141": {
+   "authors": [
+    "Michael Mimoso"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@mike_mimoso\" and the archived body names nobody. The byline was read out of the STORED SOURCE OBJECT, which carries \"rel=\\\"author\\\">Michael Mimoso\". Andrew Cantino is named in the body as the researcher whose timing attack this reports, not as the writer, and is deliberately not added."
+  },
+  "https://threatpost.com/researchers-uncover-interesting-browser-based-botnet/105250": {
+   "authors": [
+    "Dennis Fisher"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@dennisf\", a social handle. The document itself names the person three times - the heading \"## About Dennis Fisher\", the sentence \"Dennis Fisher is a journalist with more than 13 years of experience covering information security.\", and \"[ View all posts by Dennis Fisher ]\" - and the source byline is rel=\"author\"."
+  },
+  "https://threatpost.com/tweetdeck-taken-down-in-wake-of-xss-attacks": {
+   "authors": [
+    "Michael Mimoso"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@mike_mimoso\", a Twitter handle harvested from page metadata rather than a byline; the archived body prints no byline at all, having dropped it in conversion. The only person the text names is a quoted source, \"said Trey Ford, global security strategist at Rapid7\", who is not the author. Threatpost bylined the piece Michael Mimoso, and the handle is visible to readers on line 51."
   },
   "https://tinyurl.com/5w6koqj": {
    "class": "research",

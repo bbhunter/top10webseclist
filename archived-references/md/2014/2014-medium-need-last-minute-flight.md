@@ -12,7 +12,7 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/https://medium.com/@da/need-a-last-minute-flight-45af88ec8df3"
     title: Need a last minute flight?
-    author: Dani Grant, @thedanigrant
+    author: Dani Grant
     last_modified: 2014-12-16
   - id: canonical
     resource: "https://web.archive.org/web/20160404093923/https://medium.com/@da/need-a-last-minute-flight-45af88ec8df3"
@@ -21,7 +21,6 @@ sources:
 also_at: []
 authors:
   - Dani Grant
-  - @thedanigrant
 canonical_url: "https://web.archive.org/web/20160404093923/https://medium.com/@da/need-a-last-minute-flight-45af88ec8df3"
 cited_by:
   - "2014.md:43"
@@ -49,7 +48,7 @@ translation_of: ""
 
 # Need a last minute flight?
 
-**Need a last minute flight?** - Dani Grant, @thedanigrant, Medium.
+**Need a last minute flight?** - Dani Grant, Medium.
 
 - Published: 2014-12-16
 - Original: <https://web.archive.org/web/20160403035045/https://medium.com/@da/need-a-last-minute-flight-45af88ec8df3>

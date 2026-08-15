@@ -125,11 +125,3 @@ Made the 3rd Rank in [Top Ethical Hackers of 2014](https://www.checkmarx.com/201
 **Update #3 (March 20th 2015):**
 
 This technique has been listed on the ( [TOP 10 Web Hacking techniques of 2014](https://blog.whitehatsec.com/top-10-web-hacking-techniques-of-2014/)) with the rank #6.
-
-### Your Comment
-
- Name* :
-
- Email* :
-
- URI :

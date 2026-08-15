@@ -12,7 +12,7 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://thehackernews.com/2014/11/cryptophp-backdoored-cms-plugins-themes.html"
     title: CryptoPHP Backdoor Hijacks Servers with Malicious Plugins & Themes
-    author: Swati Khandelwal, @Swati_THN
+    author: Swati Khandelwal
   - id: canonical
     resource: "https://web.archive.org/web/20160402192125/http://thehackernews.com/2014/11/cryptophp-backdoored-cms-plugins-themes.html"
   - id: capture
@@ -20,7 +20,6 @@ sources:
 also_at: []
 authors:
   - Swati Khandelwal
-  - @Swati_THN
 canonical_url: "https://web.archive.org/web/20160402192125/http://thehackernews.com/2014/11/cryptophp-backdoored-cms-plugins-themes.html"
 cited_by:
   - "2014.md:44"
@@ -48,7 +47,7 @@ translation_of: ""
 
 # CryptoPHP Backdoor Hijacks Servers with Malicious Plugins & Themes
 
-**CryptoPHP Backdoor Hijacks Servers with Malicious Plugins & Themes** - Swati Khandelwal, @Swati_THN, The Hacker News.
+**CryptoPHP Backdoor Hijacks Servers with Malicious Plugins & Themes** - Swati Khandelwal, The Hacker News.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/http://thehackernews.com/2014/11/cryptophp-backdoored-cms-plugins-themes.html>
@@ -98,17 +97,3 @@ page going offline. To read the original, follow the link above.
  Black hat SEO is a group of techniques and tactics that focus on maximizing search engine results with non-human interaction with the pages, thus violating search engine guidelines. These include keyword stuffing, invisible text, doorway pages, adding unrelated keywords to the page content or page swapping.
 
  The security company has discovered 16 variants of CryptoPHP Backdoor on thousands of of backdoored plugins and themes as of 12th November 2014. First version of the backdoor was appeared on the 25th of September 2013. The exact number of websites affected by the backdoor is undetermined, but the company estimates that at least a few thousand websites or possibly more are compromised.
-
-About the Author:
-
-![Swati - Hacking News](https://web.archive.org/web/20160402192125im_/http://4.bp.blogspot.com/-RpxfB--2ufo/Vbs_4_4UbKI/AAAAAAAAjxI/PtWp2H_ktZI/s1600/swati.png)
-
- [Swati Khandelwal](https://web.archive.org/web/20160402192125/https://twitter.com/Swati_THN)
-
-Swati Khandelwal is Senior Technical Writer and Security Analyst at The Hacker News. She is a Technology Enthusiast with a keen eye on the Cyberspace and other tech related developments.
-
-** [## Backdoor](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/Backdoor), [## cms hacking](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/cms%20hacking), [## CryptoPHP backdoor](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/CryptoPHP%20backdoor), [## drupal hacked](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/drupal%20hacked), [## hacking news](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/hacking%20news), [## Joomla hacked](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/Joomla%20hacked), [## SEO](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/SEO), [## Wordpress plugin vulnerability](https://web.archive.org/web/20160402192125/http://thehackernews.com/search/label/Wordpress%20plugin%20vulnerability)
-
-** Subscribe for our daily digest of top articles and be the first to know Trending Stories.
-
-** Latest Stories

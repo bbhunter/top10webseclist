@@ -166,11 +166,3 @@ based Struts 2 projects, the following dependency needs to be added:
 ### Exclude 'class' parameter
 
 Simple add '^class\.*' to the list of excludeParams as below
-
--  No labels
-
-Overview
-
-Content Tools
-
-Add-ons

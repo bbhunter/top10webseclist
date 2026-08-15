@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://hackerone.com/reports/32825"
     title: "X / xAI disclosed on HackerOne: URGENT"
+    author: Frans Rosén
 also_at: []
-authors: []
+authors:
+  - Frans Rosén
 canonical_url: ""
 cited_by:
   - "2014.md:49"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # X / xAI disclosed on HackerOne: URGENT
 
-**X / xAI disclosed on HackerOne: URGENT** - Author not stated, HackerOne.
+**X / xAI disclosed on HackerOne: URGENT** - Frans Rosén, HackerOne.
 
 - Published: date not stated
 - Original: <https://hackerone.com/reports/32825>

@@ -12,7 +12,7 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/adobe-patches-air-pwn2own-vulnerability-in-flash/105359"
     title: Adobe Patches AIR, Pwn2Own Vulnerability in Flash
-    author: @threatpost
+    author: Chris Brook
     last_modified: 2014-04-09
   - id: canonical
     resource: "https://web.archive.org/web/20160530221049/https://threatpost.com/adobe-patches-air-pwn2own-vulnerability-in-flash/105359/"
@@ -20,7 +20,7 @@ sources:
     resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/adobe-patches-air-pwn2own-vulnerability-in-flash/105359"
 also_at: []
 authors:
-  - @threatpost
+  - Chris Brook
 canonical_url: "https://web.archive.org/web/20160530221049/https://threatpost.com/adobe-patches-air-pwn2own-vulnerability-in-flash/105359/"
 cited_by:
   - "2014.md:26"
@@ -48,7 +48,7 @@ translation_of: ""
 
 # Adobe Patches AIR, Pwn2Own Vulnerability in Flash
 
-**Adobe Patches AIR, Pwn2Own Vulnerability in Flash** - @threatpost, Threatpost | The first stop for security news.
+**Adobe Patches AIR, Pwn2Own Vulnerability in Flash** - Chris Brook, Threatpost | The first stop for security news.
 
 - Published: 2014-04-09
 - Original: <https://web.archive.org/web/20160403035045/http://threatpost.com/adobe-patches-air-pwn2own-vulnerability-in-flash/105359>
@@ -84,5 +84,3 @@ Those running either Google Chrome or Internet Explorer 10 or 11 will have their
 While not as serious – Adobe rated the update Priority 3, its lowest priority – the company also took the time yesterday to update its Adobe Integrated Runtime (AIR) run-time system to version 13.0.0.83 as it was affected by the same vulnerabilities.
 
 For network administrators there’s a good chance the patches may have been lost in the shuffle of [yesterday’s Patch Tuesday fixes](https://web.archive.org/web/20160530221049/https://threatpost.com/last-call-for-xp-office-2003-updates-april-patch-tuesday-fixes-11-vulnerabilities/105329). That update, the last ever for Windows XP, addressed two critical vulnerabilities in Microsoft Word and Internet Explorer.
-
-Categories: [Vulnerabilities](https://web.archive.org/web/20160530221049/https://threatpost.com/category/vulnerabilities/), [Web Security](https://web.archive.org/web/20160530221049/https://threatpost.com/category/web-security/)

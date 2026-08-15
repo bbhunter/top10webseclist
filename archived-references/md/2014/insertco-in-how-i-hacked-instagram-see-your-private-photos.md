@@ -198,16 +198,3 @@ So at this moment if any web user tries to call to the API for an action only al
 The vulnerability mentioned here has been confirmed patched by the Facebook Security Team. Although it has been almost six months exchanging mails to properly fix the application, I want to thank them for their great response, for their generous reward and for including me in their [Hall of Fame](https://web.archive.org/web/20160322204622/https://www.facebook.com/whitehat/thanks/).
 
 Check out their [Security Page](https://web.archive.org/web/20160322204622/https://www.facebook.com/whitehat) for more info about how to report a security vulnerability to them.
-
----
-
----
-
-#### Tags
-
-- [instagram](https://web.archive.org/web/20160322204622/http://insertco.in/tags#instagram-ref)
-- [websec](https://web.archive.org/web/20160322204622/http://insertco.in/tags#websec-ref)
-
----
-
-   [blog comments powered by ](https://web.archive.org/web/20160322204622/http://disqus.com/)

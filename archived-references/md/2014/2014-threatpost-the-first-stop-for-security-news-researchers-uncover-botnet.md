@@ -6,13 +6,13 @@ tags: [article, webseclist-reference, en, threatpost-the-first-stop-for-security
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T01:47:17+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/researchers-uncover-interesting-browser-based-botnet/105250"
     title: Researchers Uncover Interesting Browser-Based Botnet
-    author: @dennisf
+    author: Dennis Fisher
     last_modified: 2014-04-04
   - id: canonical
     resource: "https://web.archive.org/web/20160425113158/https://threatpost.com/researchers-uncover-interesting-browser-based-botnet/105250/"
@@ -20,7 +20,7 @@ sources:
     resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/researchers-uncover-interesting-browser-based-botnet/105250"
 also_at: []
 authors:
-  - @dennisf
+  - Dennis Fisher
 canonical_url: "https://web.archive.org/web/20160425113158/https://threatpost.com/researchers-uncover-interesting-browser-based-botnet/105250/"
 cited_by:
   - "2014.md:27"
@@ -48,7 +48,7 @@ translation_of: ""
 
 # Researchers Uncover Interesting Browser-Based Botnet
 
-**Researchers Uncover Interesting Browser-Based Botnet** - @dennisf, Threatpost | The first stop for security news.
+**Researchers Uncover Interesting Browser-Based Botnet** - Dennis Fisher, Threatpost | The first stop for security news.
 
 - Published: 2014-04-04
 - Original: <https://web.archive.org/web/20160403035045/http://threatpost.com/researchers-uncover-interesting-browser-based-botnet/105250>
@@ -84,94 +84,3 @@ Despite that success, Atia said that the attacker behind the DDoS has replaced t
 “This leads us to believe that what we saw yesterday was a sort of POC test run. The current code is not only much more sophisticated, but it is also built for keeping track of the attack, for what seems like billing purposes. From the looks of it, someone is now using this Alexa Top 50 website to set up a chain of botnets for hire,” he said.
 
 That attack Incapsula uncovered shares some characteristics with some research that [Jeremiah Grossman and Matt Johansen of WhiteHat Security](https://web.archive.org/web/20160425113158/https://threatpost.com/buy-an-ad-own-a-browser-botnet/101550) presented at Black Hat last year. In their example, an attacker could inject malicious Javascript into ads that are distributed via an ad network and force the user’s browsers to perform an operation, whether it’s launching a DDoS attack on a target server or something else.
-
- ![](https://web.archive.org/web/20160425113158im_/https://trtpost-wpengine.netdna-ssl.com/wp-content/uploads/avatars/12/1368562026-bpfull-68x68.jpg)
-
-## About Dennis Fisher
-
-Dennis Fisher is a journalist with more than 13 years of experience covering information security.
-
- [ View all posts by Dennis Fisher ](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-### Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [Latest Tweet from: [Dennis Fisher](https://web.archive.org/web/20160425113158/https://threatpost.com/author/dennisfisher/)
-
-> [](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723572830642810880</blockquote></div> 				</div>
-					</footer>
-	</article>
-<div class=)
-
-Categories: [Hacks](https://web.archive.org/web/20160425113158/https://threatpost.com/category/hacks/), [Vulnerabilities](https://web.archive.org/web/20160425113158/https://threatpost.com/category/vulnerabilities/), [Web Security](https://web.archive.org/web/20160425113158/https://threatpost.com/category/web-security/)   ](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723573815163363328</blockquote></div> <h3 class=)
-
- ](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723574867002572800</blockquote></div> <h3 class=)
-
-   ](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723575288576270336</blockquote></div> <h3 class=)
-
- ](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723576035896385538</blockquote></div> <h3 class=)
-
-   ](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723576691596091392</blockquote></div> <h3 class=)
-
-](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723586402651377664</blockquote></div> <h3 class=)
-
-](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723598576023117824</blockquote></div> <h3 class=)
-
-](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723598913954033664</blockquote></div> <h3 class=)
-
-](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723672862121463809</blockquote></div> <h3 class=)
-
-](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723836929914068992</blockquote></div> <h3 class=)
-
-](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723864240105377792</blockquote></div> <h3 class=)
-
-](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723865278602436608</blockquote></div> <h3 class=)
-
-](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723874329365192704</blockquote></div> <h3 class=)
-
-](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723876607274962944</blockquote></div> <h3 class=)
-
-](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723930621064712192</blockquote></div> <h3 class=)
-
-](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/723957890130808832</blockquote></div> <h3 class=)
-
-](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/724367069769306114</blockquote></div> <h3 class=)
-
-](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/724397344322650112</blockquote></div> <h3 class=)
-
-](https://web.archive.org/web/20160425113158/https://twitter.com/dennisf/status/724558213199331328</blockquote></div> <h3 class=)

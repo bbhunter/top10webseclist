@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://chr13.com/2014/04/20/using-facebook-notes-to-ddos-any-website/"
     title: Using Facebook Notes to DDoS any website
+    author: chr13
   - id: canonical
     resource: "https://web.archive.org/web/20160406153520/http://chr13.com/2014/04/20/using-facebook-notes-to-ddos-any-website"
   - id: capture
     resource: "https://web.archive.org/web/20160403035045/http://chr13.com/2014/04/20/using-facebook-notes-to-ddos-any-website/"
 also_at: []
-authors: []
+authors:
+  - chr13
 canonical_url: "https://web.archive.org/web/20160406153520/http://chr13.com/2014/04/20/using-facebook-notes-to-ddos-any-website"
 cited_by:
   - "2014.md:13"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Using Facebook Notes to DDoS any website
 
-**Using Facebook Notes to DDoS any website** - Author not stated, chr13.com.
+**Using Facebook Notes to DDoS any website** - chr13, chr13.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/http://chr13.com/2014/04/20/using-facebook-notes-to-ddos-any-website/>
@@ -150,5 +152,3 @@ I’ve been getting a lot of response on the blog and would like to thank the DO
 POC scripts and access log can now be accessed from **[Github](https://web.archive.org/web/20160406153520/https://github.com/chr13/fbnotes)**. The script is very simple and is a mere rough draft. Please use them for research and analysis purposes only.
 
 The access logs are the exact logs I used for ~900 Mbps test. In the access logs you will find **300,000+** requests from Facebook. Previously, I only counted the facebookexternalhit/1.1, it seems that for each img tag, there are two hits i.e. one from externalhit version 1.0 and one from 1.1. I also tried Google during the test and you will find around 700 requests from Google.
-
- [Uncategorized](https://web.archive.org/web/20160406153520/http://chr13.com/category/uncategorized/)

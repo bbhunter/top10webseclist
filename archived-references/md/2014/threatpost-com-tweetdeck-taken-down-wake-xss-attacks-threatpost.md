@@ -12,7 +12,7 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/tweetdeck-taken-down-in-wake-of-xss-attacks"
     title: TweetDeck Taken Down in Wake of XSS Attacks
-    author: @mike_mimoso
+    author: Michael Mimoso
     last_modified: 2014-06-11
   - id: canonical
     resource: "http://threatpost.com/tweetdeck-taken-down-in-wake-of-xss-attacks"
@@ -20,7 +20,7 @@ sources:
     resource: "https://web.archive.org/web/20141024063136/http://threatpost.com/tweetdeck-taken-down-in-wake-of-xss-attacks"
 also_at: []
 authors:
-  - @mike_mimoso
+  - Michael Mimoso
 canonical_url: "http://threatpost.com/tweetdeck-taken-down-in-wake-of-xss-attacks"
 cited_by:
   - "2014.md:18"
@@ -48,7 +48,7 @@ translation_of: ""
 
 # TweetDeck Taken Down in Wake of XSS Attacks
 
-**TweetDeck Taken Down in Wake of XSS Attacks** - @mike_mimoso, Threatpost - English - Global - threatpost.com.
+**TweetDeck Taken Down in Wake of XSS Attacks** - Michael Mimoso, Threatpost - English - Global - threatpost.com.
 
 - Published: 2014-06-11
 - Original: <https://web.archive.org/web/20160403035045/http://threatpost.com/tweetdeck-taken-down-in-wake-of-xss-attacks>
@@ -92,5 +92,3 @@ In the case of the TweetDeck exploit, an attacker could take over a user’s acc
 Ford compared it to the Samy Worm that hit MySpace eight years ago, but points out that the TweetDeck worm does not force an account to follow the attacker.
 
 Twitter acquired TweetDeck in 2011 for upwards of $50 million. TweetDeck provides users with a dashboard view of multiple accounts. Tweet timelines, notifications and direct messages appear in customizable streaming columns.
-
-  Categories: [Vulnerabilities](http://threatpost.com/category/vulnerabilities), [Web Security](http://threatpost.com/category/web-security)

@@ -12,12 +12,14 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://homakov.blogspot.com/2014/12/the-no-captcha-problem.html"
     title: "Egor Homakov: The No CAPTCHA problem"
+    author: Egor Homakov
   - id: canonical
     resource: "https://web.archive.org/web/20160424013214/http://homakov.blogspot.com/2014/12/the-no-captcha-problem.html"
   - id: capture
     resource: "https://web.archive.org/web/20160403035045/http://homakov.blogspot.com/2014/12/the-no-captcha-problem.html"
 also_at: []
-authors: []
+authors:
+  - Egor Homakov
 canonical_url: "https://web.archive.org/web/20160424013214/http://homakov.blogspot.com/2014/12/the-no-captcha-problem.html"
 cited_by:
   - "2014.md:42"
@@ -45,7 +47,7 @@ translation_of: ""
 
 # Egor Homakov: The No CAPTCHA problem
 
-**Egor Homakov: The No CAPTCHA problem** - Author not stated, homakov.blogspot.com.
+**Egor Homakov: The No CAPTCHA problem** - Egor Homakov, homakov.blogspot.com.
 
 - Published: date not stated
 - Original: <https://web.archive.org/web/20160403035045/http://homakov.blogspot.com/2014/12/the-no-captcha-problem.html>

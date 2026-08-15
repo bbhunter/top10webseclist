@@ -12,7 +12,7 @@ sources:
   - id: original
     resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/new-timing-attack-could-de-anonymize-google-users/108141"
     title: New Timing Attack Could De-Anonymize Google Users
-    author: @mike_mimoso
+    author: Michael Mimoso
     last_modified: 2014-09-08
   - id: canonical
     resource: "https://web.archive.org/web/20160311221053/https://threatpost.com/new-timing-attack-could-de-anonymize-google-users/108141/"
@@ -20,7 +20,7 @@ sources:
     resource: "https://web.archive.org/web/20160403035045/http://threatpost.com/new-timing-attack-could-de-anonymize-google-users/108141"
 also_at: []
 authors:
-  - @mike_mimoso
+  - Michael Mimoso
 canonical_url: "https://web.archive.org/web/20160311221053/https://threatpost.com/new-timing-attack-could-de-anonymize-google-users/108141/"
 cited_by:
   - "2014.md:36"
@@ -48,7 +48,7 @@ translation_of: ""
 
 # New Timing Attack Could De-Anonymize Google Users
 
-**New Timing Attack Could De-Anonymize Google Users** - @mike_mimoso, Threatpost | The first stop for security news.
+**New Timing Attack Could De-Anonymize Google Users** - Michael Mimoso, Threatpost | The first stop for security news.
 
 - Published: 2014-09-08
 - Original: <https://web.archive.org/web/20160403035045/http://threatpost.com/new-timing-attack-could-de-anonymize-google-users/108141>
@@ -84,5 +84,3 @@ Cantino said that if the Google document is viewable by the visitor, it will tak
 An attacker could build a phishing page that looks like it’s logged into the victim’s account, in order to gain trust and steal credentials in order to access the victim’s network, he said. Also, this type of targeting could help identify a user who’s behind Tor if they’re logged into their Google account, or allow an attacker to identify a target and get them to view malicious content.
 
 “The risk here is mostly with very targeted attacks. This is not a broad attack,” he said.
-
-Categories: [Hacks](https://web.archive.org/web/20160311221053/https://threatpost.com/category/hacks/), [Vulnerabilities](https://web.archive.org/web/20160311221053/https://threatpost.com/category/vulnerabilities/)
