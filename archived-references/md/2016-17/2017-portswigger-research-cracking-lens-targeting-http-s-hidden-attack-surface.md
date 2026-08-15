@@ -441,7 +441,3 @@ In recent years a surge in bug bounty programs has enabled a new type of researc
 I've also shown how to unveil backend systems and gain an insight into their operation. Although less prone to catastrophic failure than their front-end partners, they expose a rich and under-researched attack surface. Finally, I've ensured Burp Suite's scanner can detect routing vulnerabilities, and also released Collaborator Everywhere and Hackability as an open source tools to fuel further research.
 
 For a different angle on exploiting reverse proxies and server chains, check out [Practical Web Cache Poisoning](https://portswigger.net/blog/practical-web-cache-poisoning).
-
- [ James Favourites ](https://portswigger.net/research/james-kettle) [ SSRF ](https://portswigger.net/research/ssrf) [ Presentations ](https://portswigger.net/research/presentations) [ OAST ](https://portswigger.net/research/oast) [ Black Hat ](https://portswigger.net/research/black-hat)
-
-[Back to all articles](https://portswigger.net/research/articles)

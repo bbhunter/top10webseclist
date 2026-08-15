@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html"
     title: Web Cache Deception Attack
+    author: Omer Gil
 also_at: []
-authors: []
+authors:
+  - Omer Gil
 canonical_url: ""
 cited_by:
   - "2016-17.md:8"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Web Cache Deception Attack
 
-**Web Cache Deception Attack** - Author not stated, omergil.blogspot.com.
+**Web Cache Deception Attack** - Omer Gil, omergil.blogspot.com.
 
 - Published: date not stated
 - Original: <https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html>

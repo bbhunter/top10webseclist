@@ -12,14 +12,13 @@ sources:
   - id: original
     resource: "https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a"
     title: 👉The Good, The Bad and The Ugly of Safari in Client-Side Attacks
-    author: wlrmblog, @Wallarm
+    author: @bo0om
     last_modified: 2017-12-14
   - id: canonical
     resource: "https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a/"
 also_at: []
 authors:
-  - wlrmblog
-  - @Wallarm
+  - @bo0om
 canonical_url: "https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a/"
 cited_by:
   - "2016-17.md:27"
@@ -47,7 +46,7 @@ translation_of: ""
 
 # 👉The Good, The Bad and The Ugly of Safari in Client-Side Attacks
 
-**👉The Good, The Bad and The Ugly of Safari in Client-Side Attacks** - wlrmblog, @Wallarm, Wallarm.
+**👉The Good, The Bad and The Ugly of Safari in Client-Side Attacks** - @bo0om, Wallarm.
 
 - Published: 2017-12-14
 - Original: <https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a>
@@ -187,7 +186,3 @@ We have notified Apple of these issues in Safari behavior three weeks ago, but h
 Would love to hear from our readers in the comments — especially if you came up with a new way to exploit this curious Safari behavior.
 
 It would be a good idea to try using these types of attacks in various Bug Bounty programs. With luck it may shine the light on the risks associated with Safari and, perhaps, reveal similar vulnerabilities in other products. Besides, if it does work for you — it’s free money!
-
-See Wallarm in action
-
-“Wallarm really protects our service and provides good visibility and user-friendly control.”

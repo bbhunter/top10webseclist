@@ -12,10 +12,13 @@ sources:
   - id: original
     resource: "https://www.blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf"
     title: "Friday the 13th: JSON Attacks"
+    author: Alvaro Muñoz, Oleksandr Mirosh
   - id: canonical
     resource: "https://blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf"
 also_at: []
-authors: []
+authors:
+  - Alvaro Muñoz
+  - Oleksandr Mirosh
 canonical_url: "https://blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf"
 cited_by:
   - "2016-17.md:10"
@@ -43,7 +46,7 @@ translation_of: ""
 
 # Friday the 13th: JSON Attacks
 
-**Friday the 13th: JSON Attacks** - Author not stated, Publisher not stated.
+**Friday the 13th: JSON Attacks** - Alvaro Muñoz, Oleksandr Mirosh, Publisher not stated.
 
 - Published: date not stated
 - Original: <https://www.blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf>

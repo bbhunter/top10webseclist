@@ -6,18 +6,18 @@ tags: [article, webseclist-reference, en-GB, ncc-group]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:08+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/september/rare-aspnet-request-validation-bypass-using-request-encoding/"
     title: Rare ASP.NET request validation bypass using request encoding
-    author: NCCGroupplc
+    author: Soroush Dalili
   - id: capture
     resource: "https://web.archive.org/web/20191208204146/https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/september/rare-aspnet-request-validation-bypass-using-request-encoding/"
 also_at: []
 authors:
-  - NCCGroupplc
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2016-17.md:33"
@@ -45,7 +45,7 @@ translation_of: ""
 
 # Rare ASP.NET request validation bypass using request encoding
 
-**Rare ASP.NET request validation bypass using request encoding** - NCCGroupplc, NCC Group.
+**Rare ASP.NET request validation bypass using request encoding** - Soroush Dalili, NCC Group.
 
 - Published: date not stated
 - Original: <https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/september/rare-aspnet-request-validation-bypass-using-request-encoding/>

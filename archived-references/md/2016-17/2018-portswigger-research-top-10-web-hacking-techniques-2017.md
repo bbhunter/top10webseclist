@@ -153,5 +153,3 @@ Here are the nominations so far. We're making offline archives of them all as we
 - [MITM Attacks on HTTPS: Another Perspective](https://www.slideshare.net/GreenD0g/mitm-attacks-on-https-another-perspective/)
 - [Google Maps XSS (by fiddling with Protobuf)](https://medium.com/@marin_m/how-i-found-a-5-000-google-maps-xss-by-fiddling-with-protobuf-963ee0d9caff)
 - [Advanced Flash Vulnerabilities](https://opnsec.com/category/flash/)
-
-[Back to all articles](https://portswigger.net/research/articles)

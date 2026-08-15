@@ -12,15 +12,18 @@ sources:
   - id: original
     resource: "https://hal.inria.fr/hal-01652021"
     title: "FP-STALKER: Tracking Browser Fingerprint Evolutions"
-    author: Antoine Vastel
+    author: Antoine Vastel, Pierre Laperdrix, Walter Rudametkin, Romain Rouvoy
   - id: capture
     resource: "https://web.archive.org/web/20191014054524/https://hal.inria.fr/hal-01652021"
 also_at: []
 authors:
   - Antoine Vastel
+  - Pierre Laperdrix
+  - Walter Rudametkin
+  - Romain Rouvoy
 canonical_url: ""
 cited_by:
-  - "2016-17.md:111"
+  - "2016-17.md:106"
 commit: ""
 content_sha256: 6a17bca20c3e1b89f54957feb911f9204876f6c469de7c4b3d109ce70dec4105
 depth: full
@@ -45,7 +48,7 @@ translation_of: ""
 
 # FP-STALKER: Tracking Browser Fingerprint Evolutions
 
-**FP-STALKER: Tracking Browser Fingerprint Evolutions** - Antoine Vastel, hal.inria.fr.
+**FP-STALKER: Tracking Browser Fingerprint Evolutions** - Antoine Vastel, Pierre Laperdrix, Walter Rudametkin, Romain Rouvoy, hal.inria.fr.
 
 - Published: date not stated
 - Original: <https://hal.inria.fr/hal-01652021>

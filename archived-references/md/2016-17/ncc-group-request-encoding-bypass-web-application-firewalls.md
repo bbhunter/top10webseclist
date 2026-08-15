@@ -6,18 +6,18 @@ tags: [article, webseclist-reference, en-GB, ncc-group]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:09:08+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/august/request-encoding-to-bypass-web-application-firewalls/"
     title: Request encoding to bypass web application firewalls
-    author: NCCGroupplc
+    author: Soroush Dalili
   - id: capture
     resource: "https://web.archive.org/web/20180818094041/https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/august/request-encoding-to-bypass-web-application-firewalls/"
 also_at: []
 authors:
-  - NCCGroupplc
+  - Soroush Dalili
 canonical_url: ""
 cited_by:
   - "2016-17.md:14"
@@ -45,7 +45,7 @@ translation_of: ""
 
 # Request encoding to bypass web application firewalls
 
-**Request encoding to bypass web application firewalls** - NCCGroupplc, NCC Group.
+**Request encoding to bypass web application firewalls** - Soroush Dalili, NCC Group.
 
 - Published: date not stated
 - Original: <https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/august/request-encoding-to-bypass-web-application-firewalls/>
@@ -259,5 +259,3 @@ Content-Type contains "charset" & Content-Type not-contains "charset=utf-8"
  **Published date:** 23 August 2017
 
  **Written by:** Soroush Dalili
-
-   [comments powered by ](http://disqus.com)

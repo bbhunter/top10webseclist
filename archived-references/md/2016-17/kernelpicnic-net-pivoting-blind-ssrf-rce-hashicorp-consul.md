@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "http://www.kernelpicnic.net/2017/05/29/Pivoting-from-blind-SSRF-to-RCE-with-Hashicorp-Consul.html"
     title: Pivoting from blind SSRF to RCE with HashiCorp Consul
+    author: Peter Adkins
 also_at: []
-authors: []
+authors:
+  - Peter Adkins
 canonical_url: ""
 cited_by:
   - "2016-17.md:37"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Pivoting from blind SSRF to RCE with HashiCorp Consul
 
-**Pivoting from blind SSRF to RCE with HashiCorp Consul** - Author not stated, kernelpicnic.net.
+**Pivoting from blind SSRF to RCE with HashiCorp Consul** - Peter Adkins, kernelpicnic.net.
 
 - Published: date not stated
 - Original: <http://www.kernelpicnic.net/2017/05/29/Pivoting-from-blind-SSRF-to-RCE-with-Hashicorp-Consul.html>
@@ -204,13 +206,3 @@ With that, I constructed a few more requests to remove these injected `check` co
 A big thanks to the Bugcrowd ASE that helped triage this bug, and got the `$provider` folks looped in quickly. I’d also like to thank `$provider` for the great communication, quick fix and the bounty; keep it up! :)
 
 Finally, cheers to @yrp604 for proofreading this write-up and correcting my terrible grammar. *Edit:* Cheers to @bradleyfalzon for some additional spelling fixes ;)
-
-##### Written by
-
-Blog Logo
-
-#### Peter Adkins
-
----
-
-Published 29 May 2017

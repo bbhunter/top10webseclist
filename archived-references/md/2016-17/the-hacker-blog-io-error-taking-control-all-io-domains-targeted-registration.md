@@ -12,10 +12,10 @@ sources:
   - id: original
     resource: "https://thehackerblog.com/the-io-error-taking-control-of-all-io-domains-with-a-targeted-registration/index.html"
     title: The .io Error – Taking Control of All .io Domains With a Targeted Registration
-    author: @IAmMandatory
+    author: Matthew Bryant
 also_at: []
 authors:
-  - @IAmMandatory
+  - Matthew Bryant
 canonical_url: ""
 cited_by:
   - "2016-17.md:36"
@@ -43,7 +43,7 @@ translation_of: ""
 
 # The .io Error – Taking Control of All .io Domains With a Targeted Registration
 
-**The .io Error – Taking Control of All .io Domains With a Targeted Registration** - @IAmMandatory, The Hacker Blog.
+**The .io Error – Taking Control of All .io Domains With a Targeted Registration** - Matthew Bryant, The Hacker Blog.
 
 - Published: date not stated
 - Original: <https://thehackerblog.com/the-io-error-taking-control-of-all-io-domains-with-a-targeted-registration/index.html>
@@ -189,21 +189,3 @@ I’ve already written at some length about how some of these issues could be mi
 I promised a friend of mine that I would do a silly old-school hacker shout-out in my next blog post so I’m fulfilling this obligation here ![:)](https://thehackerblog.com/wp-includes/images/smilies/simple-smile.png)special thanks to the following folks for both moral and “immoral” support (as phrased by the one and only [HackerBadger](https://twitter.com/aegarbutt)).
 
 ***Greetz to [HackerBadger](https://twitter.com/aegarbutt), EngSec (y’all know who you are), and the creator of the marquee tag. [Hack the planet](https://www.youtube.com/watch?v=u3CKgkyc7Qo), [the gibson](https://www.youtube.com/watch?v=Bmz67ErIRa4), etc.***
-
-### Matthew Bryant (mandatory)
-
- ![Matthew Bryant (mandatory)](https://thehackerblog.com/images/avatar.jpg)
-
-Security researcher who needs to sleep more. Opinions expressed are solely my own and do not express the views or opinions of my employer.
-
-### ["Zero-Days" Without Incident - Compromising Angular via Expired npm Publisher Email Domains](https://thehackerblog.com/zero-days-without-incident-compromising-angular-via-expired-npm-publisher-email-domains-7kZplW4x/)
-
-**NOTE:** *If you're just looking for the high level points, see the"[The TL;DR Summary & High-LevelPoints](#the-tldr-summary--high-level...… [Continue reading](https://thehackerblog.com/zero-days-without-incident-compromising-angular-via-expired-npm-publisher-email-domains-7kZplW4x/)
-
-#### [Video Downloader and Video Downloader Plus Chrome Extension Hijack Exploit - UXSS via CSP Bypass (~15.5 Million Affected)](https://thehackerblog.com/video-download-uxss-exploit-detailed/)
-
- Published on February 22, 2019
-
-#### [Kicking the Rims – A Guide for Securely Writing and Auditing Chrome Extensions](https://thehackerblog.com/kicking-the-rims-a-guide-for-securely-writing-and-auditing-chrome-extensions/)
-
- Published on June 12, 2018

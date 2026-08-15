@@ -6,19 +6,19 @@ tags: [article, webseclist-reference, en-US, broken-browser]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:29:38+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://www.brokenbrowser.com/zombie-alert/"
     title: The Attack of the Alerts and the Zombie Script
-    author: magicmac
+    author: Manuel Caballero
     last_modified: 2017-02-20
   - id: capture
     resource: "https://web.archive.org/web/20170321165730/https://www.brokenbrowser.com/zombie-alert/"
 also_at: []
 authors:
-  - magicmac
+  - Manuel Caballero
 canonical_url: ""
 cited_by:
   - "2016-17.md:44"
@@ -46,7 +46,7 @@ translation_of: ""
 
 # The Attack of the Alerts and the Zombie Script
 
-**The Attack of the Alerts and the Zombie Script** - magicmac, Broken Browser.
+**The Attack of the Alerts and the Zombie Script** - Manuel Caballero, Broken Browser.
 
 - Published: 2017-02-20
 - Original: <https://www.brokenbrowser.com/zombie-alert/>

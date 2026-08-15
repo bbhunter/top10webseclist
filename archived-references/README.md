@@ -860,7 +860,7 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Rare ASP.NET request validation bypass using request encoding](md/2016-17/ncc-group-rare-asp-net-request-validation-bypass-using-request-encoding.md) | article | NCC Group |  | research | 1 |
 | [Remote LD_PRELOAD Exploitation](md/2016-17/elttam-com-remote-ld-preload-exploitation.md) | article | elttam.com |  | research | 1 |
 | [Request and Conquer: Exposing Cross-Origin Resource Size](md/2016-17/usenix-org-request-conquer-exposing-cross-origin-resource-size.md) | article | usenix.org |  | research | 1 |
-| [Request encoding to bypass web application firewalls](md/2016-17/ncc-group-request-encoding-bypass-web-application-firewalls.md) | article | NCC Group |  | research | 1 |
+| [Request encoding to bypass web application firewalls](md/2016-17/ncc-group-request-encoding-bypass-web-application-firewalls.md) | article | NCC Group | 2017 | research | 1 |
 | [Same-Origin Policy: Evaluation in Modern Browsers](md/2016-17/usenix-org-same-origin-policy-evaluation-modern-browsers.md) | article | usenix.org |  | research | 1 |
 | [Sonar blog](md/2016-17/sonarsource-com-shopware-5-3-3-php-object-instantiation-blind-xxe.md) | article | blog.ripstech.com |  | records | 1 |
 | [Stealing Messenger.com Login Nonces](md/2016-17/stephensclafani-com-stealing-messenger-com-login-nonces.md) | article | stephensclafani.com |  | research | 1 |

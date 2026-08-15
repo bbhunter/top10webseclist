@@ -12,14 +12,14 @@ sources:
   - id: original
     resource: "https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache-practical-cache-attacks-mmu/"
     title: "ASLR on the Line: Practical Cache Attacks on the MMU"
-    author: Ben Gras, Kaveh Razavi, Erik Bosman, Herbert Box, Cristiano Giuffrida
+    author: Ben Gras, Kaveh Razavi, Erik Bosman, Herbert Bos, Cristiano Giuffrida
 also_at:
   - "https://www.ndss-symposium.org/wp-content/uploads/2017/09/ndss2017_09-1_Gras_paper.pdf"
 authors:
   - Ben Gras
   - Kaveh Razavi
   - Erik Bosman
-  - Herbert Box
+  - Herbert Bos
   - Cristiano Giuffrida
 canonical_url: ""
 cited_by:
@@ -48,7 +48,7 @@ translation_of: ""
 
 # ASLR on the Line: Practical Cache Attacks on the MMU
 
-**ASLR on the Line: Practical Cache Attacks on the MMU** - Ben Gras, Kaveh Razavi, Erik Bosman, Herbert Box, Cristiano Giuffrida, NDSS Symposium.
+**ASLR on the Line: Practical Cache Attacks on the MMU** - Ben Gras, Kaveh Razavi, Erik Bosman, Herbert Bos, Cristiano Giuffrida, NDSS Symposium.
 
 - Published: date not stated
 - Original: <https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache-practical-cache-attacks-mmu/>

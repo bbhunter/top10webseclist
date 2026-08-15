@@ -107,5 +107,3 @@ Once again, a fantastic response by Yahoo on this one.
 7/01/17 - Bounty decision pending
 
 7/20/17 - Bounty awarded
-
- [ Follow @jackhcable](https://twitter.com/jackhcable)

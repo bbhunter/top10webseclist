@@ -237,9 +237,13 @@
    "title": "Web Timing Attacks Made Practical"
   },
   "https://blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf": {
+   "authors": [
+    "Alvaro Muñoz",
+    "Oleksandr Mirosh"
+   ],
    "class": "research",
    "outcome": "archive",
-   "reason": "Reviewed 2026-08-10: the recorded title was the PDF's file name rather than the document's own title. The document itself is the one cited.",
+   "reason": "authors was empty against a printed byline: line 68 ends \"Friday the 13th JSON Attacks **Alvaro Muñoz & Oleksandr Mirosh** HPE Software Security Research\".",
    "title": "Friday the 13th: JSON Attacks"
   },
   "https://blackhat.com/docs/webcast/11192015-exploiting-xml-entity-vulnerabilities-in-file-parsing-functionality.pdf": {
@@ -445,6 +449,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the document carries an \"Authors\" block naming \"Ali Shahin Shamsabadi:   Sr. Privacy Researcher\", linked to https://brave.com/author/ali-shahin-shamsabadi/. The archive recorded only the publisher handles \"@brave\" and \"Brave Software\", so the researcher was uncredited."
+  },
+  "https://brokenbrowser.com/zombie-alert": {
+   "authors": [
+    "Manuel Caballero"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"magicmac\", the WordPress display name. The document signs off \"[Manuel](https://twitter.com/magicmac2000).\" - Manuel Caballero, who publishes under @magicmac2000."
   },
   "https://bugcrowd.com/blog/unveiling-te-0-http-request-smuggling-discovering-a-critical-vulnerability-in-thousands-of-google-cloud-websites": {
    "authors": [
@@ -994,6 +1006,17 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: the report page declares \"sharp_edged submitted a report to Node.js\". The handle is the only name the page gives."
   },
+  "https://hal.inria.fr/hal-01652021": {
+   "authors": [
+    "Antoine Vastel",
+    "Pierre Laperdrix",
+    "Walter Rudametkin",
+    "Romain Rouvoy"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded only Antoine Vastel where the record's author line names four: \"[Antoine Vastel] 1 [Pierre Laperdrix] 2 [Walter Rudametkin] 1 [Romain Rouvoy] 1, 3\". Rouvoy is taken from that author line, NOT from the record's separate \"Contributor\" deposit field."
+  },
   "https://hardened-php.net/library/poking_new_holes_with_flash_crossdomain_policy_files.html": {
    "class": "research",
    "outcome": "archive",
@@ -1197,6 +1220,14 @@
    "reason": "Verified from the live JSFiddle source after the containerized browser could not settle the page. This is the complete proof of concept: its embedded HTML explains CSS-only clickjacking and its CSS identifies pointer-events: none as the technique. No separate written paper or disclosure was found.",
    "title": "CSS-Only Clickjacking"
   },
+  "https://kernelpicnic.net/2017/05/29/Pivoting-from-blind-SSRF-to-RCE-with-Hashicorp-Consul.html": {
+   "authors": [
+    "Peter Adkins"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the byline printed \"Author not stated\". The document names him twice, as \"#### Peter Adkins\" directly under the H1 and again under \"##### Written by\". @yrp604 (proofread) and @bradleyfalzon (spelling fixes) are reviewers and are not added."
+  },
   "https://kuza55.blogspot.com/2008/07/cookie-path-traversal.html": {
    "class": "research",
    "outcome": "archive",
@@ -1217,6 +1248,22 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors recorded \"wlrmblog\" and \"@Wallarm\" - a CMS account and the company handle. Line 70 reads \"*By*[ ***bo0om***](https://twitter.com/i_bo0om)*, Wallarm research*\". Identical to the 2020 Wallarm reference corrected earlier in this sweep: same author, same two wrong values."
+  },
+  "https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a": {
+   "authors": [
+    "@bo0om"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"wlrmblog\" and \"@Wallarm\" - a CMS account and the company handle. The author publishes as bo0om. Third Wallarm reference with the identical two wrong values, after the 2018 and 2020 corrections."
+  },
+  "https://labs.detectify.com/2017/07/13/a-deep-dive-into-aws-s3-access-controls-taking-full-control-over-your-assets": {
+   "authors": [
+    "Frans Rosén"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"Detectify\", the publisher's CMS account. The document names him three times - \"**Frans Rosén**Jul 13, 2017\", a tag link under his own name, and the closing bio card \"**Frans Rosén** / Security Advisor\". Fifth Detectify reference in this sweep with the publisher taken as the byline."
   },
   "https://labs.detectify.com/2018/01/12/how-i-exploited-acme-tls-sni-01-issuing-lets-encrypt-ssl-certs-for-any-domain-using-shared-hosting": {
    "authors": [
@@ -1478,6 +1525,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: the writeup credits the challenge it describes as \"Author: [Me](https://x.com/kevin_mizu)\" on the author own site, mizu.re. Only the handle is given, so no surname is inferred."
   },
+  "https://mksben.l0.cm/2018/05/cve-2018-5175-firefox-csp-strict-dynamic-bypass.html": {
+   "authors": [
+    "Masato Kinugawa"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The document links twitter.com/kinugawamasato in the first person. He is separately credited BY NAME as an author of the Cure53 browser security whitepaper in this same collection."
+  },
   "https://nastystereo.com/security/rails-_json-juggling-attack.html": {
    "class": "research",
    "outcome": "archive",
@@ -1495,6 +1550,22 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-14: the recorded title ended in the site's tab suffix, \" / nastystereo.com\". The capture is the right article and its own heading reads \"Gem::SafeMarshal escape\", above \"Luke Jahnke\" and \"3 December 2024\".",
    "title": "Gem::SafeMarshal escape"
+  },
+  "https://nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/august/request-encoding-to-bypass-web-application-firewalls": {
+   "authors": [
+    "Soroush Dalili"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"NCCGroupplc\", a corporate publishing account. The document names him twice - line 70 \"...conferences by **Soroush Dalili (@irsdl)**\" and line 261 \"**Written by:** Soroush Dalili\" - and reference [1] corroborates via his own SlideShare URL. Seventh reference in this sweep with this author behind a publisher account."
+  },
+  "https://nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/september/rare-aspnet-request-validation-bypass-using-request-encoding": {
+   "authors": [
+    "Soroush Dalili"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded NCCGroupplc, the company CMS handle. The document names him at line 224, **Written by:** Soroush Dalili, and the stored source confirms it twice including a JSON-LD block reading author @type Person name Soroush Dalili. EIGHTH reference in this sweep with this author behind a publisher account."
   },
   "https://nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/august/aspnet-resource-files-resx-and-deserialisation-issues": {
    "authors": [
@@ -1519,6 +1590,18 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors recorded \"NCCGroupplc\", the company account. Line 321 is an explicit byline: \"**Written by:** Soroush Dalili\", corroborated by \"During a recent security assessment at NCC Group I found...\". Fourth publisher-as-author fault for this author, after the three MDSec references."
+  },
+  "https://ndss-symposium.org/ndss2017/ndss-2017-programme/aslrcache-practical-cache-attacks-mmu": {
+   "authors": [
+    "Ben Gras",
+    "Kaveh Razavi",
+    "Erik Bosman",
+    "Herbert Bos",
+    "Cristiano Giuffrida"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "The recorded name was WRONG, not merely missing: \"Herbert Box\" for Herbert Bos of VU Amsterdam. The typo is on the NDSS programme page the capture faithfully reproduced, and bylines.json stores it with that line as its evidence. Five other places in this repository say \"Bos\", including an archived 2022 paper CITING THIS PAPER, the 2018 clock-around-clock references, the Black Hat USA 2016 speaker link, the 2018 grand-pwning-unit paper for the same VUSec group, and ai-evaluation/2017/judgements.md. Ground truth is the paper PDF already recorded in also_at."
   },
   "https://ndss-symposium.org/wp-content/uploads/f0697-yang-slides.pdf": {
    "class": "research",
@@ -1577,6 +1660,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors recorded \"Administrator\", a WordPress default account and the tenth machine placeholder found in this sweep. The document's own opening line states \"*This is a novel vulnerability research by Paulos Yibelo.*\""
+  },
+  "https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html": {
+   "authors": [
+    "Omer Gil"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. This is the blog post of the same research as us-17-gil-web-cache-deception-attack-wp, whose whitepaper names Omer Gil on its cover and gives his handle @omer_gil - the sibling that needed the (Whitepaper) disambiguator in 2018 precisely because the two are one work."
   },
   "https://osec.io/blog/2023-11-01-metamask-snaps": {
    "authors": [
@@ -2109,6 +2200,14 @@
    "outcome": "archive",
    "reason": "authors recorded \"@speakerdeck\", the hosting platform's own account, whose only appearance in the body is inside the recommendation rail the capture harvested. The deck names its author: \"## [Bo0oM]\" and the closing slide, \"Twi: @i_bo0om Site: bo0om.ru Telegram: @webpwn\"."
   },
+  "https://speakerdeck.com/filedescriptor/exploiting-the-unexploitable-with-lesser-known-browser-tricks": {
+   "authors": [
+    "filedescriptor"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded \"@speakerdeck\", the hosting platform's own CMS handle, whose only appearance in the body is inside the harvested recommendation rail. The deck names only filedescriptor, on its own slide 1: \"How is a cat the speaker? - @filedescriptor - Pentester\"."
+  },
   "https://speakerdeck.com/filedescriptor/the-cookie-monster-in-your-browsers": {
    "authors": [
     "filedescriptor"
@@ -2243,6 +2342,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors recorded only the handle \"@IAmMandatory\". The document names the person, \"### Matthew Bryant (mandatory)\" - and that naming sits inside the author-bio tail being removed, so the credit is recorded first."
+  },
+  "https://thehackerblog.com/the-io-error-taking-control-of-all-io-domains-with-a-targeted-registration/index.html": {
+   "authors": [
+    "Matthew Bryant"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors recorded only the handle \"@IAmMandatory\". The document names him as \"### Matthew Bryant (mandatory)\" - and that naming sits inside the author-bio tail being removed, so the credit is recorded first. Third reference by this author with the same fault and the same ordering hazard."
   },
   "https://thehackerblog.com/wp-content/uploads/2015/09/Black_Hat_USA_2015-Bypass_Surgery-6Aug2015.pdf": {
    "class": "research",

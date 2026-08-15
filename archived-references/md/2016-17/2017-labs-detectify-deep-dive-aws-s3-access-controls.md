@@ -12,13 +12,13 @@ sources:
   - id: original
     resource: "https://labs.detectify.com/2017/07/13/a-deep-dive-into-aws-s3-access-controls-taking-full-control-over-your-assets/"
     title: A deep dive into AWS S3 access controls
-    author: Detectify
+    author: Frans Rosén
     last_modified: 2017-07-13
   - id: canonical
     resource: "https://labs.detectify.com/writeups/a-deep-dive-into-aws-s3-access-controls-taking-full-control-over-your-assets/"
 also_at: []
 authors:
-  - Detectify
+  - Frans Rosén
 canonical_url: "https://labs.detectify.com/writeups/a-deep-dive-into-aws-s3-access-controls-taking-full-control-over-your-assets/"
 cited_by:
   - "2016-17.md:13"
@@ -46,7 +46,7 @@ translation_of: ""
 
 # A deep dive into AWS S3 access controls
 
-**A deep dive into AWS S3 access controls** - Detectify, Labs Detectify.
+**A deep dive into AWS S3 access controls** - Frans Rosén, Labs Detectify.
 
 - Published: 2017-07-13
 - Original: <https://labs.detectify.com/2017/07/13/a-deep-dive-into-aws-s3-access-controls-taking-full-control-over-your-assets/>
@@ -593,40 +593,3 @@ An interesting detail when manually uploading files to S3 using Cyberduck, chang
 Pretty easy to accidentally pick the wrong one there.
 
 Until next time.
-
-## What Detectify scans for
-
-[Detectify](https://detectify.com/?utm_source=labs&utm_campaign=labs_s3_buckets) tests web applications for the following S3 misconfiguration vulnerabilities with a severity range between 4.4-9 on the CVSS scale:
-
-- Amazon S3 bucket allows for full anonymous access
-- Amazon S3 bucket allows for arbitrary file listing
-- Amazon S3 bucket allows for arbitrary file upload and exposure
-- Amazon S3 bucket allows for blind uploads
-- Amazon S3 bucket allows arbitrary read/writes of objects
-- Amazon S3 bucket reveals ACP/ACL
-
-[Twitter ](https://twitter.com/intent/tweet?url=)[LinkedIn ](https://www.linkedin.com/sharing/share-offsite/?url=)
-
-![](https://labs.detectify.com/_next/image/?url=https%3A%2F%2Flabsadmin.detectify.com%2Fapp%2Fuploads%2F2015%2F06%2FFrans_speaker_photo.png&w=128&q=75)
-
-**Frans Rosén**
-
-Security Advisor
-
-## Check out more content
-
-The Detectify AI Agent Alfred fully automates the creation of security tests for new vulnerabilities, from research to a merge request. In its first six …
-
-September 25, 2025
-
-Combining response-type switching, invalid state and redirect-uri quirks using OAuth, with third-party javascript-inclusions has multiple vulnerable scenarios where authorization codes or tokens could leak to …
-
-July 06, 2022
-
-CloudKit, the data storage framework by Apple, has various access controls. These access controls could be misconfigured, even by Apple themselves, which affected Apple’s own apps using CloudKit. This blog post explains in detail three bugs found in iCrowd+, Apple News and Apple Shortcuts with different criticality uncovered by Frans Rosen while hacking Cloudkit. All bugs were reported to and fixed by the Apple Security Bounty program.
-
-September 13, 2021
-
-Security researchers in the Detectify Crowdsource community, Ai Ho (@j3ssiejjj) and Bao Bui (@Jok3rDb), found an undocumented security issue in Adobe Experience Manager (AEM) that bypassed authentication, and left the application open to information disclosure attacks
-
-June 28, 2021

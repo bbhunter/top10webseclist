@@ -107,11 +107,3 @@ In a dangling DNS record (Dare), the resources pointed to by the DNS record are 
 10.1145/2976749.2978387
 
  [ Download ](https://scholarworks.wm.edu/cgi/viewcontent.cgi?article=1829&context=aspubs)
-
-[ Share Feedback](https://scholarworks.wm.edu/feedback_form.html)
-
- DOWNLOADS
-
-Since May 02, 2019
-
-  COinS
