@@ -100,13 +100,3 @@ This means that you can write a basic port scanner. It can only do TCP and you c
 There are other bad things you can do, like make it perform PHP include attacks, or run various other exploits against the server on your behalf. Of course they log everything so if you actually compromise the security of a system you haven’t helped yourself much as I’m fairly certain they’d give up their logs to anyone with a badge who asked. Yet still, this sort of abuse of systems is pretty bad. Perhaps the internet archive should be limited to what it can crawl on it’s own, rather than blindly following the direction of whomever asks.
 
   This entry was posted on Friday, March 23rd, 2007 at 9:15 am and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
-
-### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Your Name *
-
- E-Mail (will be hidden) *
-
- URL
-
----

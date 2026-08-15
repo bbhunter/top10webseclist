@@ -76,13 +76,3 @@ In the Internet Explorer rendering engine (IE6.0-7.0 and Netscape 8.0+ in IE mod
 Although it’s only useful in the Internet Explorer rendering engine it’s a nice vector as it a) obfuscates where the tag and the parameter start and end and b) doesn’t require any spaces. I’m absolutely positive this will cause some XSS filters to fail, so take heed if you use whitespace to test where tags end. Thanks to Yair! Nice find!
 
   This entry was posted on Friday, February 9th, 2007 at 11:08 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070209/non-alpha-non-digit-3/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070209/non-alpha-non-digit-3/trackback/) from your own site.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

@@ -74,13 +74,3 @@ Okay, this is convoluted but still kinda cool. I was looking through some pages 
 [Click here to see W3C’s validator requesting and getting the results of GRC’s probe against W3C’s port 80](http://validator.w3.org/check?uri=https%3A%2F%2Fwww.grc.com%2Fx%2Fportprobe%3D80&charset=%28detect+automatically%29&doctype=Inline&group=0&ss=1). Pretty esoteric, huh? Yah, I know, there’s not a whole lot of practicality here, except if I wanted to launch a port scan against a site that had something like a http get function (remote image include for instance) I could get GRC to perform the probe on my behalf. If someone were actually logging, they’d most likely see GRC as the attacker. GRC would say, “no, you are the attacker, asking us to attack you.” and W3C would have to look in their logs to find my IP (which would unlikely be associated with me if I had any clue, as an attacker). Maybe locking things down to IP based restrictions isn’t the best security measure if the only input is via a GET string. Something as simple as a post parameter would have stopped me. Odd but worth mentioning.
 
   This entry was posted on Sunday, December 9th, 2007 at 3:41 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20071209/initiatin-probes-against-servers-via-other-servers/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20071209/initiatin-probes-against-servers-via-other-servers/trackback/) from your own site.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

@@ -6,16 +6,18 @@ tags: [article, webseclist-reference, gnucitizen-org]
 generated:
   by: webseclist-refs/1
   at: "2026-08-07T12:42:40+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-07
 sources:
   - id: original
     resource: "https://www.gnucitizen.org/projects/hscan-redux/"
     title: HScan Redux
+    author: pdp
   - id: capture
     resource: "https://web.archive.org/web/20070710135718/https://www.gnucitizen.org/projects/hscan-redux/"
 also_at: []
-authors: []
+authors:
+  - pdp
 canonical_url: ""
 cited_by:
   - "2007.md:19"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # HScan Redux
 
-**HScan Redux** - Author not stated, gnucitizen.org.
+**HScan Redux** - pdp, gnucitizen.org.
 
 - Published: date not stated
 - Original: <https://www.gnucitizen.org/projects/hscan-redux/>
@@ -52,7 +54,7 @@ translation_of: ""
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
-archive of a source from the Top 10 Web Hacking Techniques lists, kept so the
+archive of a source from the Web Hacking Techniques Index collections, kept so the
 page going offline. To read the original, follow the link above.
 
 ## Content

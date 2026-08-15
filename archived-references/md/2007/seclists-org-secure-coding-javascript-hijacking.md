@@ -110,18 +110,3 @@ Brian
 ```
 
 ---
-
-### Current thread:
-
-- **JavaScript Hijacking** *Brian Chess (Apr 01)*
-
-- <Possible follow-ups>
-- [JavaScript Hijacking](https://seclists.org/securecoding/2007/q2/1) *Stefano Di Paola (Apr 02)*
-
-- [JavaScript Hijacking](https://seclists.org/securecoding/2007/q2/5) *Brian Chess (Apr 02)*
-
-- [JavaScript Hijacking](https://seclists.org/securecoding/2007/q2/6) *Stefano Di Paola (Apr 03)*
-- [JavaScript Hijacking](https://seclists.org/securecoding/2007/q2/15) *Frederik De Keukelaere (Apr 05)*
-- [Foundations of Security: What Every Programmer Needs to Know](https://seclists.org/securecoding/2007/q2/9) *McGovern, James F (HTSC, IT) (Apr 04)*
-
-- [JavaScript Hijacking](https://seclists.org/securecoding/2007/q2/23) *Brian Chess (Apr 19)*

@@ -72,13 +72,3 @@ A recent thread on [sla.ckers.org discussing a vulnerability in neopets](http://
 [This proof of concept shows the difference (try in IE and Firefox to see the difference)](http://ha.ckers.org/weird/iframe-http-ping.html). You can see that in Firefox a series of iframes can be chained together to do port scanning (including Intranet port scanning). This is obviously a known issue when talking about JavaScript includes, but this is the first time I’ve heard of anyone discussing using an iframe for this purpose.Â Yet another way to do cross domain leakage (and cross firewall leakage at that). Thanks to Spikeman for alerting me to the onload event handler in iframes.
 
   This entry was posted on Friday, January 19th, 2007 at 11:47 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070119/iframe-http-ping/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070119/iframe-http-ping/trackback/) from your own site.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

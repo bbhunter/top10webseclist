@@ -113,5 +113,3 @@ Come up with something. I really enjoyed the social science classes at my Univer
 The attacker might end up with nothing pretty much. This is the reason why the applet needs to be as sharp as it can get. The applet needs to scan ports, identify services, brute force passwords and pretty much whatever else is needed. The attacker may have only one shot so they will probably throw the kitchen sink at the server.
 
 *This is it. I know that it sounds too complicated to be feasible but, hey, if it is that complicated no one will think about it, so the chances of remaining undetected are very high. Also the JAR manipulation technique can be used in a number of other cases to achieve more devastating effect. BTW, if you are around San Jose next week, come for a [chat](https://chatbotkit.com). I will be there pretty much the whole next week at the USA OWASP conn.*
-
-*Archived Comments*

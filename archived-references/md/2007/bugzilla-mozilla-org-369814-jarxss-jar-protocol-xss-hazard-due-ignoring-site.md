@@ -12,9 +12,11 @@ sources:
   - id: original
     resource: "https://bugzilla.mozilla.org/show_bug.cgi?id=369814"
     title: Full Text Bug Listing
+    author: Jesse Ruderman
 also_at:
   - "https://bugzilla.mozilla.org/show_bug.cgi?id=369814&format=multiple"
-authors: []
+authors:
+  - Jesse Ruderman
 canonical_url: ""
 cited_by:
   - "2007.md:7"
@@ -42,7 +44,7 @@ translation_of: ""
 
 # Full Text Bug Listing
 
-**Full Text Bug Listing** - Author not stated, bugzilla.mozilla.org.
+**Full Text Bug Listing** - Jesse Ruderman, bugzilla.mozilla.org.
 
 - Published: date not stated
 - Original: <https://bugzilla.mozilla.org/show_bug.cgi?id=369814>

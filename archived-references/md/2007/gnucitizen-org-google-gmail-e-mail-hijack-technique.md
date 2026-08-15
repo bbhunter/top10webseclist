@@ -101,5 +101,3 @@ I am not planning to release the details of this vulnerability for now. The expl
 ```
 
 *The actual exploit can be launched from [here](https://www.gnucitizen.org/files/2007/09/ggeht-exploit.htm). It makes use of a CSRF redirection utility to simplify the process.*
-
-*Archived Comments*

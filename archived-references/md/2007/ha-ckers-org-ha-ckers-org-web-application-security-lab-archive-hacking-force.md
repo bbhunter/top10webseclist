@@ -241,13 +241,3 @@ Okay, well that’s great, so it would seem that the Intranet isn’t that inter
 Now what are the chances all of those sites have secured their Intranets? Specifically how many do you think would shut down access to brute force attempts? We already know the usernames for those accounts, because they are almost always the NT domain usernames. Where would we find NT usernames out on the Internet? Well thankfully search engines have done the work for us here as they are almost always the same names as any public email addresses from those companies. IE: username@company.com is almost always the same as the NTDomain. Using this we can now brute force the Intranet website, with relative ease.
 
   This entry was posted on Thursday, December 28th, 2006 at 3:53 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20061228/hacking-intranets-via-brute-force/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20061228/hacking-intranets-via-brute-force/trackback/) from your own site.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

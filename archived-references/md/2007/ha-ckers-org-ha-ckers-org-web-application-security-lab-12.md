@@ -86,13 +86,3 @@ If you knew the next request was going to end up being the key “1234567891″ 
 That would make the machine connect back to itself, which would make it connect back to itself and so-on. Each one would tie up system resources as well as keep the sockets open on the machine until they timed out. So a single request could end up forcing the web server to connect back to itself hundreds of times (probably a function of how slow the process was as well as max connections and timeout speed). That’s probably not too interesting and fairly uncommon, but it may be worth mentioning in case someone else can come up with something interesting there.
 
   This entry was posted on Saturday, September 1st, 2007 at 1:45 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070901/recursive-request-dos/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070901/recursive-request-dos/trackback/) from your own site.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2007/11/14/spoofing-firefox-protected-objects/"
     title: Spoofing Firefox protected objects
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2007/11/14/spoofing-firefox-protected-objects"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2007/11/14/spoofing-firefox-protected-objects"
 cited_by:
   - "2007.md:40"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Spoofing Firefox protected objects
 
-**Spoofing Firefox protected objects** - Author not stated, thespanner.co.uk.
+**Spoofing Firefox protected objects** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2007/11/14/spoofing-firefox-protected-objects/>

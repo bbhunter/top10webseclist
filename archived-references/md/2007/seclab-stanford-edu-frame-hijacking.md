@@ -12,11 +12,14 @@ sources:
   - id: original
     resource: "https://seclab.stanford.edu/websec/frames/"
     title: Frame Hijacking
+    author: Adam Barth, Collin Jackson
 also_at: []
-authors: []
+authors:
+  - Adam Barth
+  - Collin Jackson
 canonical_url: ""
 cited_by:
-  - "2007.md:100"
+  - "2007.md:101"
 commit: ""
 content_sha256: bb2c7dbaf3ec9cb379355a1db648cca62894374bde3e933c971a839386c36f7c
 depth: full
@@ -41,7 +44,7 @@ translation_of: ""
 
 # Frame Hijacking
 
-**Frame Hijacking** - Author not stated, seclab.stanford.edu.
+**Frame Hijacking** - Adam Barth, Collin Jackson, seclab.stanford.edu.
 
 - Published: date not stated
 - Original: <https://seclab.stanford.edu/websec/frames/>

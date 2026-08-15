@@ -94,5 +94,3 @@ But this is not all! Jar URLs can be used to obfuscate malicious payloads to an 
 ### What shall we do to protect ourselves?
 
 I haven't thought well on this yet but the best way is to very carefully sanitize the types of files you allow your users to upload/share. Unfortunately, sometimes this is impossible, especially when it comes to formats such as `.odt` and `.doc`. You need to open these files and re-save them and as such to guarantee that there are no malicious leftovers. IDS, IPS and Ant-virus vendors should really start looking into how the `jar:` protocol works and come up with dynamic mechanism for uncompressing deeply nested URLs.
-
-*Archived Comments*

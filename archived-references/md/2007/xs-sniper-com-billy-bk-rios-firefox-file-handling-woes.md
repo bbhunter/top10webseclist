@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://xs-sniper.com/blog/2007/09/01/firefox-file-handling-woes/"
     title: Billy (BK) Rios » Firefox File Handling Woes
+    author: xssniper
   - id: capture
     resource: "https://web.archive.org/web/20160327061346/http://xs-sniper.com/blog/2007/09/01/firefox-file-handling-woes/"
 also_at: []
-authors: []
+authors:
+  - xssniper
 canonical_url: ""
 cited_by:
   - "2007.md:33"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Billy (BK) Rios » Firefox File Handling Woes
 
-**Billy (BK) Rios » Firefox File Handling Woes** - Author not stated, xs-sniper.com.
+**Billy (BK) Rios » Firefox File Handling Woes** - xssniper, xs-sniper.com.
 
 - Published: date not stated
 - Original: <http://xs-sniper.com/blog/2007/09/01/firefox-file-handling-woes/>

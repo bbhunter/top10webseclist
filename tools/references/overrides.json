@@ -310,6 +310,14 @@
    "publisher": "Bastion Security",
    "reason": "Reviewed 2026-08-14: the advisory declared no author in a meta tag, so the file read \"Author not stated\" and credited the hostname. The page names the researcher in its own words twice: \"Sam Schroder found a local file inclusion (write only) vulnerability inside of the upload functionality of Statamic CMS\", and \"During an engagement, Sam Schroder discovered a vulnerability in Statamic CMS\". The publisher is spelled as the page prints it, \"Bastion Security\", rather than as the hostname."
   },
+  "https://bindshell.net/papers/ftppasv": {
+   "authors": [
+    "mark"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty although THE PUBLISHED BODY ITSELF states \"Author: mark@bindshell.net\", directly above its own published date. A handle counts."
+  },
   "https://blackhat.com/docs/us-15/materials/us-15-Arnaboldi-Abusing-XSLT-For-Practical-Attacks-wp.pdf": {
    "class": "research",
    "outcome": "archive",
@@ -673,6 +681,14 @@
    "outcome": "archive",
    "reason": "authors held the SAME person twice, as \"@rskvp93\" and \"rskvp93\", so the credit line named him twice over. Reduced to the single handle. Q5Ca and nxhoang99, named under \"# Credits\", are discovery credit rather than authorship and are deliberately not added."
   },
+  "https://blog.watchfire.com/wfblog/2007/10/favorites-gone.html": {
+   "authors": [
+    "Yair Amit"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source states \"Posted by Yair Amit on October 23, 2007\" in the entry footer and repeats the name in its syndication metadata. The two other posted-by hits on the page are COMMENTERS and were not taken. Note this publisher's template uses no rel=author at all, so a byline sweep keyed on that marker misses every post on this blog."
+  },
   "https://blog.watchfire.com/wfblog/2008/10/flash-parameter.html": {
    "authors": [
     "Yuval Baror",
@@ -816,6 +832,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the recorded value was [\"Guest Post\", \"@Bugcrowd\"]. \"Guest Post\" is Bugcrowd’s placeholder byline - it links to an author query string rather than a person - so the archive was crediting a CMS placeholder. The article names its writers: \"This blog post is a written collaborative effort by Paolo Arnolfo (@sw33tLie) ... Guillermo Gregorio (@bsysop) ... and [name redacted by the authors] (@_medusa_1_)\". The third researcher redacted their own name in the source, so only the handle exists and it is not recorded as a name."
+  },
+  "https://bugzilla.mozilla.org/show_bug.cgi?id=369814": {
+   "authors": [
+    "Jesse Ruderman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty although THE PUBLISHED BODY ITSELF states \"Reporter: Jesse Ruderman\" in the bug's own header table, and the first comment gives that person's address. The assignee and the reviewers named alongside were not taken."
   },
   "https://carnal0wnage.blogspot.com/2008/08/owning-client-without-and-exploit.html": {
    "authors": [
@@ -1417,6 +1441,14 @@
    "outcome": "archive",
    "reason": "authors was empty. The stored source carries a posted-by link naming pagvac, and the proof-of-concept in the article signs itself \"by Adrian 'pagvac' Pastor | GNUCITIZEN.org\" - that signature survives in the published body. Recorded under the full name, matching this author's other entry in the archive. The meta keywords list was not used."
   },
+  "https://gnucitizen.org/projects/hscan-redux": {
+   "authors": [
+    "pdp"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\". The byline was cut with the post-links footer by the precision extraction candidate; the stored source states \"posted by pdp\" there, and he signs three of the page's comments. A handle counts. This was the only entry of its group of thirteen with no attribution step at all - the curation pass that credited its twelve siblings did not reach it."
+  },
   "https://gnucitizen.org/projects/total-surveillance-made-easy-with-voip-phones": {
    "authors": [
     ".mario"
@@ -1502,6 +1534,22 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-10: the recorded title was the blog's masthead rather than the document's own title. The document itself is the one cited.",
    "title": "Hiding JS in Valid Images"
+  },
+  "https://hackademix.net/2007/08/07/java-evil-popups": {
+   "authors": [
+    "ma1"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty although the published document itself states \"By ma1\" with a link to that author's other posts, and the stored source carries a rel=author element with the same handle. A handle counts. "
+  },
+  "https://hackademix.net/2007/09/26/cross-browser-proxy-unmasking": {
+   "authors": [
+    "ma1"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty although the published document itself states \"By ma1\" with a link to that author's other posts, and the stored source carries a rel=author element with the same handle. A handle counts. "
   },
   "https://hackcompute.com/hacking-epp-servers": {
    "authors": [
@@ -1796,6 +1844,14 @@
    "outcome": "archive",
    "reason": "authors was empty and the header read \"Author not stated\". The document names all five in its own prose: \"The team behind this research comprises Nadhem AlFardan, Dan Bernstein, Kenny Paterson, Bertram Poettering and Jacob Schuldt.\" Read from the body, not from metadata."
   },
+  "https://jeremiahgrossman.blogspot.com/2007/05/intranet-hacking-take-2-for-bh-usa-2007.html": {
+   "authors": [
+    "Jeremiah Grossman"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty and the file printed \"Author not stated\" ON THE AUTHOR'S OWN BLOG. The stored source carries a post-author vcard with rel=author and schema.org markup naming Jeremiah Grossman, and the sibling entry in this same collection already credits him."
+  },
   "https://jeremiahgrossman.blogspot.com/2008/03/fun-with-cups.html": {
    "authors": [
     "Jeremiah Grossman"
@@ -1924,6 +1980,22 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors was empty and the byline printed \"Author not stated\". The document names him twice, as \"#### Peter Adkins\" directly under the H1 and again under \"##### Written by\". @yrp604 (proofread) and @bradleyfalzon (spelling fixes) are reviewers and are not added."
+  },
+  "https://kuza55.blogspot.com/2007/01/more-user-login-detection-via.html": {
+   "authors": [
+    "kuza55"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries a post-author vcard with rel=author reading kuza55, and the blog's About box gives the name behind it. A handle counts. The theme designer credited elsewhere on the page was not taken. "
+  },
+  "https://kuza55.blogspot.com/2007/03/non-persistent-untraceable-xss-attacks.html": {
+   "authors": [
+    "kuza55"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries a post-author vcard with rel=author reading kuza55, and the blog's About box gives the name behind it. A handle counts. The theme designer credited elsewhere on the page was not taken. "
   },
   "https://kuza55.blogspot.com/2008/02/exploiting-csrf-protected-xss.html": {
    "authors": [
@@ -2519,6 +2591,14 @@
    "outcome": "archive",
    "reason": "Reviewed 2026-08-15: the article names its writer twice - \"Written By / [Thomas Stacey](...) Application Security Auditor, Outpost24\" and again in the closing bio card. The archive recorded only the vendor handle \"@outpost24\". Jimmy Bergqvist is named in the body as a colleague who supplied an insight, not as a writer, so he is not recorded."
   },
+  "https://paranoia.dubfire.net/2007/05/remote-vulnerability-in-firefox.html": {
+   "authors": [
+    "Christopher Soghoian"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. THE DOCUMENT NAMES ITS OWN AUTHOR IN ITS OWN WORDS, in its self-disclosure section: \"Christopher Soghoian is a PhD student...\" and again in the conflict-of-interest statement. The platform's byline element is empty, which is why a marker-based sweep missed it."
+  },
   "https://passkeys.tools/": {
    "authors": [
     "Louis Jannett",
@@ -2856,6 +2936,15 @@
    "publisher": "ACSAC '23",
    "reason": "Reviewed 2026-08-14: a conference paper carries its byline in body text, which extraction cannot read, so the archive credited nobody. The first page prints, under the title, \"Tommaso Innocenti / Northeastern University\", \"Matteo Golinelli / University of Trento\", \"Kaan Onarlioglu / Akamai Technologies and Northeastern University\", \"Ali Mirheidari / Independent Researcher\", \"Bruno Crispo / University of Trento\" and \"Engin Kirda / Northeastern University\". The running footer reads \"ACSAC '23, December 04-08, 2023, Austin, TX, USA\", so the venue is recorded as the publisher, following the archive's existing \"USENIX Security '26\" and \"DEF CON\" entries."
   },
+  "https://seclab.stanford.edu/websec/frames": {
+   "authors": [
+    "Adam Barth",
+    "Collin Jackson"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty although the published body states the authorship of the work it lists, naming Adam Barth and Collin Jackson for the cited item specifically. This is an index page, so the credit is for the research it fronts; the third name on the page belongs to the other two publications listed."
+  },
   "https://secniche.org/gmd_hijack/gc_hijack.xhtml": {
    "authors": [
     "Aditya K Sood"
@@ -2895,6 +2984,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors was empty. The article's OWN TITLE names the author - \"Pwning Opera Unite with Inferno's Eleven\" - and the blog describes itself as \"Inferno's Blog on Application Security\". A handle counts, and a sibling advisory in this same collection is already credited Inferno from its own CREDITS section. The other six posts on this blog carry no name in the document and were deliberately left uncredited."
+  },
+  "https://securiteam.com/securitynews/5JP051FKKE.html": {
+   "authors": [
+    "Michal Zalewski"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source states it outright in a Credit block: \"The information has been provided by Michal Zalewski\" - the researcher, who is distinct from the publisher that carried the advisory."
   },
   "https://securitum.com/crashing_servers_with_digits.html": {
    "class": "research",
@@ -2986,6 +3083,14 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors recorded \"3APA3A\", the site owner, from a site-wide meta Author tag; the document's own From row and sign-off both name MustLive. Verified directly against the stored object."
+  },
+  "https://sensepost.com/blog/1303.html": {
+   "authors": [
+    "haroon"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The stored source carries an entry-author element reading haroon - a handle, which counts - and the paper the post releases is by the same author. The other entry-author hit on the page is the sole COMMENTER and was not taken."
   },
   "https://shielder.it/blog/dont-open-that-xml-xxe-to-rce-in-xml-plugins-for-vs-code-eclipse-theia": {
    "authors": [
@@ -3520,6 +3625,30 @@
    "class": "research",
    "outcome": "archive",
    "reason": "authors was empty. The stored source carries a rel=author element naming theharmonyguy. A handle counts."
+  },
+  "https://thespanner.co.uk/2007/09/27/google-adsense-csrf-hole": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The article body is invisible to the HTML extractor because this site now ships it in a React flight payload, and the byline went with it - but the stored object the published file names carries the author's footer credit, \"Gareth Heyes\", linked to his own site with his handle. Same evidence class already used to credit this blog's 2009 and 2010 entries. "
+  },
+  "https://thespanner.co.uk/2007/10/09/injecting-the-script-tag-into-xml": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The article body is invisible to the HTML extractor because this site now ships it in a React flight payload, and the byline went with it - but the stored object the published file names carries the author's footer credit, \"Gareth Heyes\", linked to his own site with his handle. Same evidence class already used to credit this blog's 2009 and 2010 entries. "
+  },
+  "https://thespanner.co.uk/2007/11/14/spoofing-firefox-protected-objects": {
+   "authors": [
+    "Gareth Heyes"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty. The article body is invisible to the HTML extractor because this site now ships it in a React flight payload, and the byline went with it - but the stored object the published file names carries the author's footer credit, \"Gareth Heyes\", linked to his own site with his handle. Same evidence class already used to credit this blog's 2009 and 2010 entries. "
   },
   "https://thespanner.co.uk/2008/12/01/location-based-xss-attacks": {
    "authors": [
@@ -4125,6 +4254,46 @@
    "class": "derivative",
    "outcome": "skip",
    "reason": "The padding-oracle demonstration video is retained in the 2010 list, but the complete paper is archived from https://www.usenix.org/events/woot10/tech/full_papers/Rizzo.pdf."
+  },
+  "https://xs-sniper.com/blog/2007/07/17/firefoxurl-uri-handler-flaw": {
+   "authors": [
+    "xssniper"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty although THE PUBLISHED BODY ITSELF prints the byline, \"Posted by xssniper | Filed in Security\". A handle counts, and the site masthead independently gives Billy (BK) Rios. Recorded under the handle the document states. "
+  },
+  "https://xs-sniper.com/blog/2007/07/20/more-uri-stuff-ies-resouce-uri": {
+   "authors": [
+    "xssniper"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty although THE PUBLISHED BODY ITSELF prints the byline, \"Posted by xssniper | Filed in Security\". A handle counts, and the site masthead independently gives Billy (BK) Rios. Recorded under the handle the document states. "
+  },
+  "https://xs-sniper.com/blog/2007/09/01/firefox-file-handling-woes": {
+   "authors": [
+    "xssniper"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty although THE PUBLISHED BODY ITSELF prints the byline, \"Posted by xssniper | Filed in Security\". A handle counts, and the site masthead independently gives Billy (BK) Rios. Recorded under the handle the document states. "
+  },
+  "https://xs-sniper.com/blog/2007/09/20/bk-for-mayor-of-oak-tree-view": {
+   "authors": [
+    "xssniper"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty although THE PUBLISHED BODY ITSELF prints the byline, \"Posted by xssniper | Filed in Security\". A handle counts, and the site masthead independently gives Billy (BK) Rios. Recorded under the handle the document states. "
+  },
+  "https://xs-sniper.com/blog/2007/09/26/google-docs-puts-google-users-at-risk": {
+   "authors": [
+    "xssniper"
+   ],
+   "class": "research",
+   "outcome": "archive",
+   "reason": "authors was empty although THE PUBLISHED BODY ITSELF prints the byline, \"Posted by xssniper | Filed in Security\". A handle counts, and the site masthead independently gives Billy (BK) Rios. Recorded under the handle the document states. "
   },
   "https://xs-sniper.com/blog/2010/12/17/will-it-blend": {
    "authors": [

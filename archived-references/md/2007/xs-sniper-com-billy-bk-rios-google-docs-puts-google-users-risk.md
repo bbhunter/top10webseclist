@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://xs-sniper.com/blog/2007/09/26/google-docs-puts-google-users-at-risk/"
     title: Billy (BK) Rios » Google Docs puts Google Users at Risk
+    author: xssniper
   - id: capture
     resource: "https://web.archive.org/web/20150908043452/http://xs-sniper.com/blog/2007/09/26/google-docs-puts-google-users-at-risk/"
 also_at: []
-authors: []
+authors:
+  - xssniper
 canonical_url: ""
 cited_by:
   - "2007.md:29"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Billy (BK) Rios » Google Docs puts Google Users at Risk
 
-**Billy (BK) Rios » Google Docs puts Google Users at Risk** - Author not stated, xs-sniper.com.
+**Billy (BK) Rios » Google Docs puts Google Users at Risk** - xssniper, xs-sniper.com.
 
 - Published: date not stated
 - Original: <http://xs-sniper.com/blog/2007/09/26/google-docs-puts-google-users-at-risk/>

@@ -132,13 +132,3 @@ javascript:alert("hi");
 I have not been able to test this myself as I don’t have 6.0 handy. However, if it works, I know a log of anti-XSS filters that would fail on this one. It’s a bad one, but anyone worried about it should simply upgrade to 7.0 which doesn’t appear to have this flaw in it. Very nice find by SirDarckCat.
 
   This entry was posted on Monday, July 2nd, 2007 at 4:21 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070702/ie60-protocol-guessing/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070702/ie60-protocol-guessing/trackback/) from your own site.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

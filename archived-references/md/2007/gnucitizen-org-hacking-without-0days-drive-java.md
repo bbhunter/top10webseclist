@@ -83,5 +83,3 @@ I know that a lot of angry Java developers and many "military grade" (I certainl
 Over the years, I've been using this type of attack in a number of scenarios and I am not extremely happy to say this (although I had may fare share of fun) but it works so well that it almost feels surreal. The attach tar file contains a tool which I wrote long time ago to compile and sign Applets and JAR files in a few simple steps. I use it every time I can, just to prove that having Java enabled on workstation part of a large enterprise is kind of a bad idea.
 
 *Cannot simply say that Java is insecure and we should avoid it at all cost. In fact, I think Java is awesome platform but it is obvious that although some of its security aspects are spot on, others are seriously lacking any thought.*
-
-*Archived Comments*

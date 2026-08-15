@@ -102,13 +102,3 @@ Now here is me showing what is inside the file I named “|ls -al”, then showi
 Immediately after running the program **it ran the filename instead of opening the file**. So herein lies another interesting place to use that [arbitrary image name creation program](http://ha.ckers.org/blog/20070603/image-upload-xss/) I built (I guess it’s not just for XSS afterall - but actual code execution on the host machine). [Here would be an example](http://ha.ckers.org/image-xss/|ls). Encoding spaces might cause problems but I’m sure we can work around that in most cases. Pretty trivial and pretty nasty.
 
   This entry was posted on Wednesday, June 20th, 2007 at 1:21 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070620/code-execution-through-filenames-in-uploads/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070620/code-execution-through-filenames-in-uploads/trackback/) from your own site.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

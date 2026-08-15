@@ -77,13 +77,3 @@ Click to enlarge
 Interesting… I’m not sure how useful it is, since it appears to be highly touchy in the amount of characters precede it and what exactly precedes it, but nevertheless I thought I should be full disclosure since I was the one who was touting it as more secure than UTF-8.
 
   This entry was posted on Saturday, February 10th, 2007 at 9:21 pm and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070210/iso-8895-1-vulnerable-in-firefox-to-null-injection/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070210/iso-8895-1-vulnerable-in-firefox-to-null-injection/trackback/) from your own site.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

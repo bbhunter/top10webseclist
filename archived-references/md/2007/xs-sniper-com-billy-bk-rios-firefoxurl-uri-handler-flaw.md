@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://xs-sniper.com/blog/2007/07/17/firefoxurl-uri-handler-flaw/"
     title: Billy (BK) Rios » Firefoxurl URI Handler Flaw
+    author: xssniper
   - id: capture
     resource: "https://web.archive.org/web/20170113145707/http://xs-sniper.com/blog/2007/07/17/firefoxurl-uri-handler-flaw/"
 also_at: []
-authors: []
+authors:
+  - xssniper
 canonical_url: ""
 cited_by:
   - "2007.md:10"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Billy (BK) Rios » Firefoxurl URI Handler Flaw
 
-**Billy (BK) Rios » Firefoxurl URI Handler Flaw** - Author not stated, xs-sniper.com.
+**Billy (BK) Rios » Firefoxurl URI Handler Flaw** - xssniper, xs-sniper.com.
 
 - Published: date not stated
 - Original: <http://xs-sniper.com/blog/2007/07/17/firefoxurl-uri-handler-flaw/>

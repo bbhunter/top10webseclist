@@ -68,11 +68,3 @@ Jeremiah Grossman: I still know where you've been, without JavaScript
 ###  I still know where you've been, without JavaScript
 
  Looks like RSnake has [one-upped me](http://ha.ckers.org/blog/20070228/steal-browser-history-without-javascript/) with his new [CSS History Hack Without JavaScript](http://ha.ckers.org/weird/CSS-history.cgi) (PoC). The hack still relies up the a:visited component of CSS, but instead of using JavaScript to check link color, he uses the display: property to create the conditional logic required. Nice! This is mitigated in many ways by SafeHistory (Firefox), but again, your not protected by turning off JavaScript. Great. In classic pdp fashion, he quickly improved upon the PoC with [his own version](http://www.gnucitizen.org/projects/noscript-hscan/). Good stuff.
-
-  [Newer Post](https://blog.jeremiahgrossman.com/2007/03/were-hiring.html)   [Older Post](https://blog.jeremiahgrossman.com/2007/03/anti-dns-pinning-in-news.html)  [Home](https://blog.jeremiahgrossman.com/)
-
- Subscribe to: [Post Comments (Atom)](https://blog.jeremiahgrossman.com/feeds/2652655463527984543/comments/default)
-
-## BIO
-
- Jeremiah Grossman brings 20+ years of experience in Computer Security and has become one of the most recognizable and world-renowned cybersecurity experts in the industry, coining several of the original hacking terms commonly used around the world today. Early in his career, Jeremiah was known as “The Hacker Yahoo” which led to his role as the company’s Information Security Officer. Jeremiah founded WhiteHat Security (now Synopsis), and served as Chief of Security Strategy for SentinelOne which was the highest-valued cybersecurity IPO in history. Most recently, Jeremiah was the founder & CEO of Bit Discovery, which was acquired by Tenable in 2022. He also serves as a company advisor and board member to several tech startups. In his spare time, Jeremiah does Brazilian Jiu-Jitsu and is passionate about classic cars. He recently opened Toybox, a luxury car club in Boise, Idaho.

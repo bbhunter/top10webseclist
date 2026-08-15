@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://kuza55.blogspot.com/2007/01/more-user-login-detection-via.html"
     title: More Logged In User Detection via Authenticated Redirects
+    author: kuza55
 also_at: []
-authors: []
+authors:
+  - kuza55
 canonical_url: ""
 cited_by:
   - "2007.md:61"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # More Logged In User Detection via Authenticated Redirects
 
-**More Logged In User Detection via Authenticated Redirects** - Author not stated, kuza55.blogspot.com.
+**More Logged In User Detection via Authenticated Redirects** - kuza55, kuza55.blogspot.com.
 
 - Published: date not stated
 - Original: <https://kuza55.blogspot.com/2007/01/more-user-login-detection-via.html>

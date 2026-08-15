@@ -222,15 +222,3 @@ This is a small post about a way to easily get backup files on Apache web server
 **[nEUrOO](http://rgaucher.info)**, Monday, July 16, 2007, 22:12
 
 **[Bunyamin Demir](http://www.webguvenligi.org)**, Tuesday, July 17, 2007, 13:02
-
-**Comments are disabled**
-
-[Admin login](http://www.wisec.it/sectou.php?login) | This weblog is from [www.mylittlehomepage.net](http://www.mylittlehomepage.net/)
-
-# Wisec is brought to you by...
-
-Wisec is written and mantained by  Stefano Di Paola.
-
-Wisec uses open standards, including XHTML, CSS2, and XML-RPC.
-
-  |  |

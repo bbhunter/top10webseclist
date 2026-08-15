@@ -6,16 +6,18 @@ tags: [article, webseclist-reference, sensepost-com]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T10:26:22+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "https://www.sensepost.com/blog/1303.html"
     title: extern blog SensePost;
+    author: haroon
   - id: capture
     resource: "https://web.archive.org/web/20120525021444/https://www.sensepost.com/blog/1303.html"
 also_at: []
-authors: []
+authors:
+  - haroon
 canonical_url: ""
 cited_by:
   - "2007.md:43"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # extern blog SensePost;
 
-**extern blog SensePost;** - Author not stated, sensepost.com.
+**extern blog SensePost;** - haroon, sensepost.com.
 
 - Published: date not stated
 - Original: <https://www.sensepost.com/blog/1303.html>

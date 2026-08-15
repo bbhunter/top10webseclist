@@ -72,13 +72,3 @@ unsticky sent over a nice snippet of code that helps identify if the user is usi
 There does appear to be at least one false positive when using Netscape. If you are using Netscape in IE mode it will think you are using IE and will still report if that is not your default browser. However, I believe this code would also think your default browser is Firefox if you set it to Netscape since Netscape tends to use the Gecko rendering engine as it’s default (I haven’t tried, but that’s my theory). Anyway, cool snippet of code. Thanks, to unsticky for finding it!
 
   This entry was posted on Monday, March 19th, 2007 at 11:25 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070319/detecting-default-browser-in-ie/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070319/detecting-default-browser-in-ie/trackback/) from your own site.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

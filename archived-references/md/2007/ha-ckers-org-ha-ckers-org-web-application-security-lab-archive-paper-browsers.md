@@ -74,13 +74,3 @@ This paper is a long time in coming, and I apologize for not getting it out soon
 If you recall all our intranet-hacking-with-browsers conversations over the last two years, this will look really familiar, because it’s using all the same tactics, except instead it’s the webserver doing the attacking, rather than the web-browser. The paper draws on techniques and tactics we’ve all know and love so there shouldn’t be anything surprising in here. So the next question is how prevalent is this stuff? Well, I’ve seen it exactly one time. But I’ve only tried it a handful, so it’s really hard for me to estimate how often it happens. My guess is that it is somewhat rare, but using Google dorks to identify potentially vulnerable sites would prove to speed up non targeted attacks. Kinda nasty.
 
   This entry was posted on Monday, August 27th, 2007 at 2:48 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070827/paper-on-hacking-intranets-using-websites-not-web-browsers/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070827/paper-on-hacking-intranets-using-websites-not-web-browsers/trackback/) from your own site.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

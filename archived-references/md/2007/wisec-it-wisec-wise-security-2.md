@@ -178,15 +178,3 @@ Even if some website is still vulnerable to remote file inclusion (RFI), this is
  As usual, the next move is up to you
 
 *No comments yet.*
-
-**Comments are disabled**
-
-[Admin login](http://www.wisec.it/sectou.php?login) | This weblog is from [www.mylittlehomepage.net](http://www.mylittlehomepage.net/)
-
-# Wisec is brought to you by...
-
-Wisec is written and mantained by  Stefano Di Paola.
-
-Wisec uses open standards, including XHTML, CSS2, and XML-RPC.
-
-  |  |

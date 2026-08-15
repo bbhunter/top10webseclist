@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2007/09/27/google-adsense-csrf-hole/"
     title: Google Adsense CSRF hole
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2007/09/27/google-adsense-csrf-hole"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2007/09/27/google-adsense-csrf-hole"
 cited_by:
   - "2007.md:26"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Google Adsense CSRF hole
 
-**Google Adsense CSRF hole** - Author not stated, thespanner.co.uk.
+**Google Adsense CSRF hole** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2007/09/27/google-adsense-csrf-hole/>

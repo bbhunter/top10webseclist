@@ -76,5 +76,3 @@ I had a few ideas in my mind about how the problem can be exploited in terms of 
 So, I was scratching my head this morning on the problem. Meanwhile, [beford](http://blog.beford.org/?p=8) was light-years ahead of me. He managed to prove that open redirects on Google could lead to domain wide XSS. "Suddenly, it feels that the sky is falling." This means that attackers can get to any place on Google and do whatever they want with your profile and your online presence (i.e. backdoor Google service, snoop onto your searches, read your emails, etc).
 
 Unfortunately, the issue is public so Google needs to make sure that they close all their open redirects (which are far too many) or Firefox should release an update **now**. Untill then, no one is safe! I repeat, the same technique can be applied to any other Web application out there. This is what I would like to refer to as **Web-wide Cross-site Scripting** vulnerabilities. There is more research coming very soon. Let's catch up at OWASP San Jose.
-
-*Archived Comments*

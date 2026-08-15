@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://xs-sniper.com/blog/2007/09/20/bk-for-mayor-of-oak-tree-view/"
     title: Billy (BK) Rios » BK for Mayor of Oak Tree View
+    author: xssniper
   - id: capture
     resource: "https://web.archive.org/web/20160406045816/http://xs-sniper.com/blog/2007/09/20/bk-for-mayor-of-oak-tree-view/"
 also_at: []
-authors: []
+authors:
+  - xssniper
 canonical_url: ""
 cited_by:
   - "2007.md:28"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Billy (BK) Rios » BK for Mayor of Oak Tree View
 
-**Billy (BK) Rios » BK for Mayor of Oak Tree View** - Author not stated, xs-sniper.com.
+**Billy (BK) Rios » BK for Mayor of Oak Tree View** - xssniper, xs-sniper.com.
 
 - Published: date not stated
 - Original: <http://xs-sniper.com/blog/2007/09/20/bk-for-mayor-of-oak-tree-view/>

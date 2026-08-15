@@ -72,13 +72,3 @@ ha.ckers.org web application security lab - Archive » Inter Protocol Exploitati
 In the paper he talks about a theoretical buffer overflow against a tiny C script that is listening with an open socket. While interesting, it’s also theoretical. Then he whips out a working buffer overflow for Asterisk (VOIP) server. Wow! So add buffer overflows to the sum of things we can now do against servers with XSS and intranet hacking. It’s the first time MetaSploit and XSS have really met on the same proving grounds. This gives credence to something Jeremiah’s been saying for a while - JavaScript is the new shell-code. Well maybe not the new shell-code, but definitely the transmission mechanism for the shellcode! Very cool paper, and I highly recommend the read.
 
   This entry was posted on Wednesday, April 11th, 2007 at 8:22 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070411/intra-protocol-exploitation/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070411/intra-protocol-exploitation/trackback/) from your own site.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

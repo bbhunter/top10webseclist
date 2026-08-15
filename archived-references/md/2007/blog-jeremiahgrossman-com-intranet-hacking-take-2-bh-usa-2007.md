@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://jeremiahgrossman.blogspot.com/2007/05/intranet-hacking-take-2-for-bh-usa-2007.html"
     title: Intranet Hacking (Take 2) for BH USA 2007
+    author: Jeremiah Grossman
   - id: canonical
     resource: "https://blog.jeremiahgrossman.com/2007/05/intranet-hacking-take-2-for-bh-usa-2007.html"
 also_at: []
-authors: []
+authors:
+  - Jeremiah Grossman
 canonical_url: "https://blog.jeremiahgrossman.com/2007/05/intranet-hacking-take-2-for-bh-usa-2007.html"
 cited_by:
   - "2007.md:42"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Intranet Hacking (Take 2) for BH USA 2007
 
-**Intranet Hacking (Take 2) for BH USA 2007** - Author not stated, blog.jeremiahgrossman.com.
+**Intranet Hacking (Take 2) for BH USA 2007** - Jeremiah Grossman, blog.jeremiahgrossman.com.
 
 - Published: date not stated
 - Original: <https://jeremiahgrossman.blogspot.com/2007/05/intranet-hacking-take-2-for-bh-usa-2007.html>

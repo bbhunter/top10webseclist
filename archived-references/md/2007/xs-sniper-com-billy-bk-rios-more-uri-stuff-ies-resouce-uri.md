@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://xs-sniper.com/blog/2007/07/20/more-uri-stuff-ies-resouce-uri/"
     title: Billy (BK) Rios » More URI Stuff… (IE’s Resouce URI)
+    author: xssniper
   - id: capture
     resource: "https://web.archive.org/web/20160328114436/http://xs-sniper.com/blog/2007/07/20/more-uri-stuff-ies-resouce-uri/"
 also_at: []
-authors: []
+authors:
+  - xssniper
 canonical_url: ""
 cited_by:
   - "2007.md:51"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Billy (BK) Rios » More URI Stuff… (IE’s Resouce URI)
 
-**Billy (BK) Rios » More URI Stuff… (IE’s Resouce URI)** - Author not stated, xs-sniper.com.
+**Billy (BK) Rios » More URI Stuff… (IE’s Resouce URI)** - xssniper, xs-sniper.com.
 
 - Published: date not stated
 - Original: <http://xs-sniper.com/blog/2007/07/20/more-uri-stuff-ies-resouce-uri/>

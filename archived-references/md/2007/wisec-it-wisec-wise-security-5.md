@@ -214,15 +214,3 @@ WEBSPHERE    GET/POST  X
 **[floyd](http://www.floyd.ch)**, Thursday, September 16, 2010, 15:17
 
 **[Stefano](http://www.wisec.it)**, Thursday, September 16, 2010, 16:25
-
-**Comments are disabled**
-
-[Admin login](http://www.wisec.it/sectou.php?login) | This weblog is from [www.mylittlehomepage.net](http://www.mylittlehomepage.net/)
-
-# Wisec is brought to you by...
-
-Wisec is written and mantained by  Stefano Di Paola.
-
-Wisec uses open standards, including XHTML, CSS2, and XML-RPC.
-
-  |  |

@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://kuza55.blogspot.com/2007/03/non-persistent-untraceable-xss-attacks.html"
     title: (Non-Persistent) Untraceable XSS Attacks
+    author: kuza55
 also_at: []
-authors: []
+authors:
+  - kuza55
 canonical_url: ""
 cited_by:
   - "2007.md:69"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # (Non-Persistent) Untraceable XSS Attacks
 
-**(Non-Persistent) Untraceable XSS Attacks** - Author not stated, kuza55.blogspot.com.
+**(Non-Persistent) Untraceable XSS Attacks** - kuza55, kuza55.blogspot.com.
 
 - Published: date not stated
 - Original: <https://kuza55.blogspot.com/2007/03/non-persistent-untraceable-xss-attacks.html>

@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.thespanner.co.uk/2007/10/09/injecting-the-script-tag-into-xml/"
     title: Injecting the script tag into XML
+    author: Gareth Heyes
   - id: canonical
     resource: "https://thespanner.co.uk/2007/10/09/injecting-the-script-tag-into-xml"
 also_at: []
-authors: []
+authors:
+  - Gareth Heyes
 canonical_url: "https://thespanner.co.uk/2007/10/09/injecting-the-script-tag-into-xml"
 cited_by:
   - "2007.md:41"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Injecting the script tag into XML
 
-**Injecting the script tag into XML** - Author not stated, thespanner.co.uk.
+**Injecting the script tag into XML** - Gareth Heyes, thespanner.co.uk.
 
 - Published: date not stated
 - Original: <http://www.thespanner.co.uk/2007/10/09/injecting-the-script-tag-into-xml/>

@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://hackademix.net/2007/09/26/cross-browser-proxy-unmasking/"
     title: Cross-Browser Proxy Unmasking
+    author: ma1
 also_at: []
-authors: []
+authors:
+  - ma1
 canonical_url: ""
 cited_by:
   - "2007.md:39"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Cross-Browser Proxy Unmasking
 
-**Cross-Browser Proxy Unmasking** - Author not stated, hackademix.net.
+**Cross-Browser Proxy Unmasking** - ma1, hackademix.net.
 
 - Published: date not stated
 - Original: <https://hackademix.net/2007/09/26/cross-browser-proxy-unmasking/>

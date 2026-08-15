@@ -104,13 +104,3 @@ After I confirmed this was working, I switched gears to get metasploits ntlm_rel
 Yes, NTLM is useful, but as long as these types of intranet hacking vulnerabilities exist in browser space, I think it’s best to steer clear of them, and that doesn’t just include DNS rebinding. Nice work from natron!
 
   This entry was posted on Monday, November 12th, 2007 at 3:04 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20071112/effects-of-dns-rebinding-on-ies-trust-zones/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20071112/effects-of-dns-rebinding-on-ies-trust-zones/trackback/) from your own site.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

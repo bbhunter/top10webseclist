@@ -86,13 +86,3 @@ This is only an example, but it should be possible to get this working in many o
 I’d love to hear any anecdotes where this actually works. I’m curious if anyone else can replicate this sort of thing. Pretty slick, and similar in some ways to injecting null bytes to bypass exact string match. Nice work, Michael!
 
   This entry was posted on Wednesday, June 6th, 2007 at 1:42 pm and is filed under [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can leave a response as well.
-
-### Respond here or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Your Name *
-
- E-Mail (will be hidden) *
-
- URL
-
----

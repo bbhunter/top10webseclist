@@ -252,7 +252,3 @@ _______________________________________________
  Hosted and sponsored by Secunia - http://secunia.com/
 
 ---
-
-- **Messages sorted by:** [[ date ]](http://archives.neohapsis.com/archives/fulldisclosure/2007-01/index.html#62) [[ thread ]](http://archives.neohapsis.com/archives/fulldisclosure/2007-01/thread.html#62) [[ subject ]](http://archives.neohapsis.com/archives/fulldisclosure/2007-01/subject.html#62) [[ author ]](http://archives.neohapsis.com/archives/fulldisclosure/2007-01/author.html#62)
-
- |  |

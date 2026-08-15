@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://hackademix.net/2007/08/07/java-evil-popups/"
     title: Pure Java™, Pure Evil™ Popups
+    author: ma1
 also_at: []
-authors: []
+authors:
+  - ma1
 canonical_url: ""
 cited_by:
   - "2007.md:25"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Pure Java™, Pure Evil™ Popups
 
-**Pure Java™, Pure Evil™ Popups** - Author not stated, hackademix.net.
+**Pure Java™, Pure Evil™ Popups** - ma1, hackademix.net.
 
 - Published: date not stated
 - Original: <https://hackademix.net/2007/08/07/java-evil-popups/>

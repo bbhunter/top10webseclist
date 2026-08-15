@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "http://www.securiteam.com/securitynews/5JP051FKKE.html"
     title: SecuriTeam™ - Firefox Popup Blocker Allows Reading Arbitrary Local Files
+    author: Michal Zalewski
   - id: capture
     resource: "https://web.archive.org/web/20071016045256/http://www.securiteam.com/securitynews/5JP051FKKE.html"
 also_at: []
-authors: []
+authors:
+  - Michal Zalewski
 canonical_url: ""
 cited_by:
   - "2007.md:76"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # SecuriTeam™ - Firefox Popup Blocker Allows Reading Arbitrary Local Files
 
-**SecuriTeam™ - Firefox Popup Blocker Allows Reading Arbitrary Local Files** - Author not stated, securiteam.com.
+**SecuriTeam™ - Firefox Popup Blocker Allows Reading Arbitrary Local Files** - Michal Zalewski, securiteam.com.
 
 - Published: date not stated
 - Original: <http://www.securiteam.com/securitynews/5JP051FKKE.html>

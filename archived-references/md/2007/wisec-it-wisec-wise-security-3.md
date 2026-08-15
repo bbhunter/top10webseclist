@@ -224,15 +224,3 @@ Optimizing the number of requests in blind SQL injection
 ** Bedirhan Urgun **, Wednesday, October 10, 2007, 07:50
 
 ** Bernardo Damele **, Thursday, October 11, 2007, 15:43
-
-**Comments are disabled**
-
-[Admin login](http://www.wisec.it/sectou.php?login) | This weblog is from [www.mylittlehomepage.net](http://www.mylittlehomepage.net/)
-
-# Wisec is brought to you by...
-
-Wisec is written and mantained by  Stefano Di Paola.
-
-Wisec uses open standards, including XHTML, CSS2, and XML-RPC.
-
-  |  |

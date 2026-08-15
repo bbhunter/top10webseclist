@@ -100,5 +100,3 @@ The following video shows the previous exploit in action. I don't think the qual
 If you look at the code, you'll notice that we wait 1.5 secs using the *setTimeout()* function before forwarding the credentials to the evil site. The reason for this is because we need to let the browser auto-complete the fields before performing the redirect. Otherwise the value of the username and password field would be blank by the time we steal them.
 
 *The PoC has been tested on the latest version of FF (2.0.0.7 at time of writing) and does _not* work on IE 7, but *might* work on IE 6. This doesn't mean you cannot do a auto-complete password theft attack on IE 7, it just needs a bit of more work! If you want to know the reason behind this difference is that IE 7 requires the user to first type or choose the username from the auto-complete drop-down menu, *before_ the password field is automatically filled.*
-
-*Archived Comments*

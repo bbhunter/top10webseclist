@@ -74,13 +74,3 @@ Sergey Vzloman is at it again… He sent over a really interesting piece of demo
 Of course there are other ways to do this, like get them to connect to you through a [file:///\\ URL as discussed before](http://ha.ckers.org/blog/20070421/noisy-decloaking-methods/), but it’s good to have all of this documented since one or more of these may stop working. Nice work, Sergey!
 
   This entry was posted on Friday, May 18th, 2007 at 8:16 am and is filed under [XSS](http://ha.ckers.org/blog/category/webappsec/xss/), [Webappsec](http://ha.ckers.org/blog/category/webappsec/). You can follow any responses to this entry through the [RSS 2.0](http://ha.ckers.org/blog/20070518/enumerate-windows-users-in-js/feed/) feed. You can leave a response, or [trackback](http://ha.ckers.org/blog/20070518/enumerate-windows-users-in-js/trackback/) from your own site.
-
-### Leave a Reply Or Discuss [On the Forums](http://sla.ckers.org/forum/)
-
- Name (required)
-
- Mail (will not be published) (required)
-
- Website
-
----

@@ -6,16 +6,18 @@ tags: [article, webseclist-reference, blog-watchfire-com]
 generated:
   by: webseclist-refs/1
   at: "2026-08-09T04:25:51+00:00"
-status: stable
+status: deprecated
 stale_after: 2027-08-09
 sources:
   - id: original
     resource: "http://blog.watchfire.com/wfblog/2007/10/favorites-gone.html"
     title: "Watchfire Application Security Insider: Favorites Gone Wild"
+    author: Yair Amit
   - id: capture
     resource: "https://web.archive.org/web/20080129201216/http://blog.watchfire.com/wfblog/2007/10/favorites-gone.html"
 also_at: []
-authors: []
+authors:
+  - Yair Amit
 canonical_url: ""
 cited_by:
   - "2007.md:38"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Watchfire Application Security Insider: Favorites Gone Wild
 
-**Watchfire Application Security Insider: Favorites Gone Wild** - Author not stated, blog.watchfire.com.
+**Watchfire Application Security Insider: Favorites Gone Wild** - Yair Amit, blog.watchfire.com.
 
 - Published: date not stated
 - Original: <http://blog.watchfire.com/wfblog/2007/10/favorites-gone.html>
