@@ -520,11 +520,11 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Zimbra Email - Stealing Clear-Text Credentials via Memcache injection](md/2022/2022-sonar-zimbra-email-stealing-clear-text-credentials-memcache-injection.md) | article | Sonar | 2022 | research | 1 |
 | [{JS-ON: Security-OFF}: Abusing JSON-Based SQL to Bypass WAF](md/2022/2022-claroty-js-security-off-abusing-json-based-sql-bypass-waf.md) | article | Claroty | 2022 | research | 1 |
 | [DEF CON 30 - Dongsung Kim - CSRF Resurrections  Starring the Unholy Trinity](md/2022/2022-youtube-def-con-30-dongsung-kim-csrf-resurrections-starring-unholy-trinity.md) | video | YouTube | 2022 | research | 1 |
+| [ElectroVolt: Pwning Popular Desktop Apps While Uncovering New Attack Surface on Electron (Slides)](md/2022/electrovolt-pwning-popular-desktop-apps-while-uncovering-new-attack-slides.md) | whitepaper |  |  | research | 1 |
 | [Exploiting Inter-Process Communication in SAP's HTTP Server](md/2022/exploiting-inter-process-communication-sap-s-http-server.md) | whitepaper |  |  | research | 1 |
 | [FRAMESHIFTER: Security Implications of HTTP/2-to-HTTP/1 Conversion Anomalies](md/2022/frameshifter-security-implications-http-2-http-1-conversion-anomalies.md) | whitepaper |  |  | research | 1 |
 | [Hacking the Cloud With SAML](md/2022/hacking-cloud-saml.md) | whitepaper |  |  | research | 1 |
 | [Port Contention Goes Portable: Port Contention Side Channels in Web Browsers](md/2022/port-contention-goes-portable-port-contention-side-channels-web-browsers.md) | whitepaper |  |  | research | 1 |
-| [US 22 Purani ElectroVolt Pwning Popular Desktop Apps](md/2022/us-22-purani-electrovolt-pwning-popular-desktop-apps.md) | whitepaper |  |  | research | 1 |
 
 ## 2021 (53)
 
@@ -969,8 +969,8 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Attack Surface for Project Spartan's EdgeHTML Rendering Engine](md/2015/attack-surface-project-spartan-s-edgehtml-rendering-engine.md) | whitepaper |  |  | research | 1 |
 | [Automatically Detecting SSL Error-Handling Vulnerabilities in Hybrid Mobile Web Apps](md/2015/automatically-detecting-ssl-error-handling-vulnerabilities-hybrid-mobile-apps.md) | whitepaper |  |  | research | 1 |
 | [Bypass Surgery: Abusing Content Delivery Networks With Server-Side Request Forgery (SSRF), Flash, and DNS](md/2015/bypass-surgery-abusing-content-delivery-networks-server-side-request-dns.md) | whitepaper |  |  | research | 1 |
-| [ccs15](md/2015/ccs15.md) | whitepaper |  |  | research | 1 |
 | [Counterfeit Object-oriented Programming: On the Difficulty of Preventing Code Reuse Attacks in C++ Applications](md/2015/counterfeit-object-oriented-programming-difficulty-preventing-code-applications.md) | whitepaper |  |  | research | 1 |
+| [Detecting and Exploiting Second Order Denial-of-Service Vulnerabilities in Web Applications (PDF)](md/2015/detecting-exploiting-second-order-denial-service-vulnerabilities-web-pdf.md) | whitepaper |  |  | research | 1 |
 | [Exploiting XXE in File Upload Functionality](md/2015/exploiting-xxe-file-upload-functionality.md) | whitepaper |  |  | research | 1 |
 | [HTTPS Bicycle Attack](md/2015/https-bicycle-attack.md) | whitepaper |  |  | research | 1 |
 | [New Evasions for Web Application Firewalls](md/2015/new-evasions-web-application-firewalls.md) | whitepaper |  |  | research | 1 |
@@ -978,10 +978,10 @@ Three more lists complete the picture: [document-gaps.md](document-gaps.md) is e
 | [Practical Memory Deduplication Attacks in Sandboxed JavaScript](md/2015/practical-memory-deduplication-attacks-sandboxed-javascript.md) | whitepaper |  |  | research | 1 |
 | [Server-Side Template Injection: RCE for the Modern Web App](md/2015/portswigger-server-side-template-injection-rce-modern-web-app.md) | whitepaper | PortSwigger |  | research | 1 |
 | [SMTP Injection via Recipient Email Address](md/2015/smtp-injection-recipient-email-address.md) | whitepaper |  |  | research | 1 |
-| [spy.ccs15](md/2015/spy-ccs15.md) | whitepaper |  |  | research | 1 |
+| [The Clock is Still Ticking: Timing Attacks in the Modern Web (PDF)](md/2015/clock-still-ticking-timing-attacks-modern-web-pdf.md) | whitepaper |  |  | research | 1 |
 | [The Devil is in the Constants: Bypassing Defenses in Browser JIT Engines](md/2015/devil-constants-bypassing-defenses-browser-jit-engines.md) | whitepaper |  |  | research | 1 |
+| [The Spy in the Sandbox: Practical Cache Attacks in JavaScript and their Implications (PDF)](md/2015/spy-sandbox-practical-cache-attacks-javascript-their-implications-pdf.md) | whitepaper |  |  | research | 1 |
 | [The Unexpected Dangers of Dynamic JavaScript](md/2015/unexpected-dangers-dynamic-javascript.md) | whitepaper |  |  | research | 1 |
-| [timing attacks ccs2015](md/2015/timing-attacks-ccs2015.md) | whitepaper |  |  | research | 1 |
 | [Too LeJIT to Quit: Extending JIT Spraying to ARM](md/2015/too-lejit-quit-extending-jit-spraying-arm.md) | whitepaper |  |  | research | 1 |
 | [troopers 2015 the old is new again cve 2011 2461 is back](md/2015/troopers-2015-old-new-again-cve-2011-2461-back.md) | whitepaper |  |  | research | 1 |
 | [us 15 Gavrichenkov Breaking HTTPS With BGP Hijacking wp](md/2015/us-15-gavrichenkov-breaking-https-bgp-hijacking-wp.md) | whitepaper |  |  | research | 1 |

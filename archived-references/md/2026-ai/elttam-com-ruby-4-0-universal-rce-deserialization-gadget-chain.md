@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.elttam.com/blog/ruby-4-0-universal-rce-deserialization-gadget-chain"
     title: Ruby 4.0 Universal RCE Deserialization Gadget Chain
+    author: Luke Jahnke
 also_at: []
-authors: []
+authors:
+  - Luke Jahnke
 canonical_url: ""
 cited_by:
   - "2026-ai.md:62"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Ruby 4.0 Universal RCE Deserialization Gadget Chain
 
-**Ruby 4.0 Universal RCE Deserialization Gadget Chain** - Author not stated, elttam.com.
+**Ruby 4.0 Universal RCE Deserialization Gadget Chain** - Luke Jahnke, elttam.com.
 
 - Published: date not stated
 - Original: <https://www.elttam.com/blog/ruby-4-0-universal-rce-deserialization-gadget-chain>

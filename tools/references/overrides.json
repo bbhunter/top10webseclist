@@ -1663,6 +1663,86 @@
       "class": "research",
       "title": "Scope Of FREAK Flaw Widens As Microsoft Says Windows Affected Too",
       "reason": "Reviewed 2026-08-14: the cited URL redirected to a site index or product page and the capture was that page, so the slug was built from its chrome (dark-reading-vulnerabilities-threats-recent-news). The document was recovered from a Wayback snapshot of the original URL; this restores the title so the file name follows the document."
+    },
+    "https://elttam.com/blog/goahead": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Daniel Hodson"
+      ],
+      "reason": "Reviewed 2026-08-14: the archived document names its author in its own byline block - \"By\" on one line and \"Daniel Hodson\" on the next, above \"December 18, 2017\" - but a byline rendered as separate blocks is not an anchor, so extraction recorded no author and the file read \"Author not stated\"."
+    },
+    "https://elttam.com/blog/ruby-deserialization": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Luke Jahnke"
+      ],
+      "reason": "Reviewed 2026-08-14: the archived document's byline block reads \"By\" / \"Luke Jahnke\" / \"November 8, 2018\". Extraction recorded no author because the byline is not an anchor."
+    },
+    "https://elttam.com/blog/cracking-randomness-in-java": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "joseph"
+      ],
+      "reason": "Reviewed 2026-08-14: the archived document's byline block reads \"By\" / \"joseph\" / \"February 9, 2023\". The name is recorded exactly as the publisher prints it, lower-case and without a surname, because that is the handle the author publishes under on elttam's blog; nothing in the document gives a fuller name."
+    },
+    "https://elttam.com/blog/rails-sqlite-gadget-rce": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Alex Brown"
+      ],
+      "reason": "Reviewed 2026-08-14: the archived document's byline block reads \"By\" / \"Alex Brown\" / \"March 4, 2025\". Extraction recorded no author because the byline is not an anchor."
+    },
+    "https://elttam.com/blog/jakarta-mail-primitives": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Jia Hao Poh"
+      ],
+      "reason": "Reviewed 2026-08-14: the archived document's byline block reads \"By\" / \"Jia Hao Poh\" / \"November 17, 2025\". Extraction recorded no author because the byline is not an anchor."
+    },
+    "https://elttam.com/blog/ruby-4-0-universal-rce-deserialization-gadget-chain": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Luke Jahnke"
+      ],
+      "reason": "Reviewed 2026-08-14: the archived document's byline block reads \"By\" / \"Luke Jahnke\" / \"August 14, 2026\". Extraction recorded no author because the byline is not an anchor."
+    },
+    "https://gccybermonks.com/posts/popups": {
+      "outcome": "archive",
+      "class": "research",
+      "authors": [
+        "Guilherme Keerok"
+      ],
+      "reason": "Reviewed 2026-08-14: the archived document carries \"by Guilherme Keerok\" on the line directly under its own title heading."
+    },
+    "https://cs.brown.edu/people/vpk/papers/spy.ccs15.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "The Spy in the Sandbox: Practical Cache Attacks in JavaScript and their Implications (PDF)",
+      "reason": "Reviewed 2026-08-14: the recorded title was \"spy.ccs15\", the PDF's file stem. The document's own first page reads \"The Spy in the Sandbox: Practical Cache Attacks in JavaScript and their Implications\". 2015.md:56 cites this file as the [PDF] sibling of https://arxiv.org/abs/1502.07373, which already carries the plain title, so the citation's own format word is kept in parentheses to stop the two slugs colliding."
+    },
+    "https://cs.utexas.edu/~isil/ccs15.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "Detecting and Exploiting Second Order Denial-of-Service Vulnerabilities in Web Applications (PDF)",
+      "reason": "Reviewed 2026-08-14: the recorded title was \"ccs15\", the PDF's file stem. The document's own first page reads \"Detecting and Exploiting Second Order Denial-of-Service Vulnerabilities in Web Applications\". 2015.md:61 cites this file as the [PDF] sibling of https://dl.acm.org/doi/10.1145/2810103.2813680, whose entry already holds that exact title, so the parenthetical keeps the two apart rather than letting this one become <slug>-2."
+    },
+    "https://tom.vg/papers/timing-attacks_ccs2015.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "The Clock is Still Ticking: Timing Attacks in the Modern Web (PDF)",
+      "reason": "Reviewed 2026-08-14: the recorded title was \"timing attacks ccs2015\", the PDF's file stem. The document's own first page reads \"The Clock is Still Ticking: Timing Attacks in the Modern Web\". 2015.md:71 cites this file as the [PDF] sibling of https://dl.acm.org/doi/10.1145/2810103.2813632, whose entry already holds that exact title, so the parenthetical keeps the two apart."
+    },
+    "https://i.blackhat.com/USA-22/Thursday/US-22-Purani-ElectroVolt-Pwning-Popular-Desktop-Apps.pdf": {
+      "outcome": "archive",
+      "class": "research",
+      "title": "ElectroVolt: Pwning Popular Desktop Apps While Uncovering New Attack Surface on Electron (Slides)",
+      "reason": "Reviewed 2026-08-14: the recorded title was \"US 22 Purani ElectroVolt Pwning Popular Desktop Apps\", the deck's file stem. Its own title slide reads \"ElectroVolt / Pwning Popular Desktop apps while uncovering new attack surface on Electron\". 2022.md:41 cites it as the [Slides] sibling of the DEF CON 30 recording, so the citation's own format word is kept in parentheses."
     }
   }
 }

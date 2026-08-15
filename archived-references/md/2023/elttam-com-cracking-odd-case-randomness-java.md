@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.elttam.com/blog/cracking-randomness-in-java"
     title: Cracking the Odd Case of Randomness in Java
+    author: joseph
 also_at: []
-authors: []
+authors:
+  - joseph
 canonical_url: ""
 cited_by:
   - "2023.md:101"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Cracking the Odd Case of Randomness in Java
 
-**Cracking the Odd Case of Randomness in Java** - Author not stated, elttam.com.
+**Cracking the Odd Case of Randomness in Java** - joseph, elttam.com.
 
 - Published: date not stated
 - Original: <https://www.elttam.com/blog/cracking-randomness-in-java>

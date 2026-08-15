@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.elttam.com/blog/ruby-deserialization"
     title: Ruby 2.x Universal RCE Deserialization Gadget Chain
+    author: Luke Jahnke
 also_at: []
-authors: []
+authors:
+  - Luke Jahnke
 canonical_url: ""
 cited_by:
   - "2018.md:91"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Ruby 2.x Universal RCE Deserialization Gadget Chain
 
-**Ruby 2.x Universal RCE Deserialization Gadget Chain** - Author not stated, elttam.com.
+**Ruby 2.x Universal RCE Deserialization Gadget Chain** - Luke Jahnke, elttam.com.
 
 - Published: date not stated
 - Original: <https://www.elttam.com/blog/ruby-deserialization>

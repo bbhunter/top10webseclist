@@ -12,10 +12,12 @@ sources:
   - id: original
     resource: "https://gccybermonks.com/posts/popups/"
     title: Pop-Ups in a good-world
+    author: Guilherme Keerok
   - id: capture
     resource: "https://web.archive.org/web/20211214143756/https://gccybermonks.com/posts/popups/"
 also_at: []
-authors: []
+authors:
+  - Guilherme Keerok
 canonical_url: ""
 cited_by:
   - "2021.md:31"
@@ -43,7 +45,7 @@ translation_of: ""
 
 # Pop-Ups in a good-world
 
-**Pop-Ups in a good-world** - Author not stated, gccybermonks.com.
+**Pop-Ups in a good-world** - Guilherme Keerok, gccybermonks.com.
 
 - Published: date not stated
 - Original: <https://gccybermonks.com/posts/popups/>

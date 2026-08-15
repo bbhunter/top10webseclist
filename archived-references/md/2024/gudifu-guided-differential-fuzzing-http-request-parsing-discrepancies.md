@@ -5,9 +5,9 @@ resource: "https://raid2024.github.io/papers/raid2024-14.pdf"
 tags: [whitepaper, webseclist-reference]
 generated:
   by: webseclist-refs/1
-  at: "2026-08-11T17:36:50+00:00"
+  at: "2026-08-14T22:37:38+00:00"
 status: stable
-stale_after: 2027-08-11
+stale_after: 2027-08-14
 sources:
   - id: original
     resource: "https://raid2024.github.io/papers/raid2024-14.pdf"
@@ -23,7 +23,7 @@ canonical_url: ""
 cited_by:
   - "2024.md:68"
 commit: ""
-content_sha256: 4b172aa5f4144efd4245b05882d214153b4d6a3ad29147a21ae50ad3f442ab61
+content_sha256: 4f86eea70f215d2e243d1040e87c3d3bc7610c876b183c807803e22cbf399f52
 depth: full
 depth_reason: default
 kind: whitepaper
@@ -35,8 +35,8 @@ publisher: ""
 publisher_english: ""
 raw_sha256: 05cf6ce3e625dfe41db29287d39583b9a59168182e116f08f05c652de27c72e0
 retrieved_from: "https://raid2024.github.io/papers/raid2024-14.pdf"
-retrieved_kind: stored
-retrieved_utc: "2026-08-11T17:36:50+00:00"
+retrieved_kind: manual-import
+retrieved_utc: "2026-08-14T22:37:38+00:00"
 slug: gudifu-guided-differential-fuzzing-http-request-parsing-discrepancies
 snapshot: ""
 title_english: ""
@@ -50,7 +50,7 @@ translation_of: ""
 
 - Published: date not stated
 - Original: <https://raid2024.github.io/papers/raid2024-14.pdf>
-- Preserved from: https://raid2024.github.io/papers/raid2024-14.pdf (stored) on 2026-08-11
+- Preserved from: https://raid2024.github.io/papers/raid2024-14.pdf (manual-import) on 2026-08-14
 - Licence: unknown
 
 Rights remain with the original author and publisher. This is a research
@@ -65,47 +65,851 @@ page going offline. To read the original, follow the link above.
 
 # Gudifu: Guided Differential Fuzzing for HTTP Request Parsing Discrepancies
 
---- page 1 ---
+Gudifu: Guided Differential Fuzzing for
+                                    HTTP Request Parsing Discrepancies
+                                  Bahruz Jabiyev                                                                Anthony Gavazzi
+                                 Dartmouth College                                                            Northeastern University
+                                 Hanover, NH, USA                                                               Boston, MA, USA
 
-Gudifu
-: Guided Dierential Fuzzing for
-HTTP Request Parsing Discrepancies
-Bahruz Jabiyev
-Dartmouth College
-Hanover, NH, USA
-Anthony Gavazzi
-Northeastern University
-Boston, MA, USA
-Kaan Onarlioglu
-Akamai Technologies
-Cambridge, MA, USA
-Engin Kirda
-Northeastern University
-Boston, MA, USA
-ABSTRACTModern web applications involve multiple HTTP processors on thetrac path, each acting as a reverse proxy and processing clientrequests. Even when such proxies are secure in isolation, whencombined into complex systems, minor HTTP parsing discrepanciesbetween them can lead to various severe attacks such as cachepoisoning and HTTP request smuggling attacks.We proposeGudifu, a new approach that improves the state-of-the-art HTTP dierential fuzzing approaches in two main ways: 1)taking a graybox fuzzing approach to probe the parsing behaviorof HTTP proxies and 2) using a new algorithm which is capableof searching for discrepancies in the entire HTTP request. Theseimprovements lead to the discovery of signicantly more parsingdiscrepancies and discrepancy-based attack vectors which werepreviously unknown.
-CCS CONCEPTS
-ˆ
-Security and privacy
-!
-Web application security
-.
-KEYWORDSHTTP Parsing Discrepancies, Guided Dierential Fuzzing, HTTPServer Chain Attacks
-ACM Reference Format:Bahruz Jabiyev, Anthony Gavazzi, Kaan Onarlioglu, and Engin Kirda. 2024.Gudifu: Guided Dierential Fuzzing for HTTP Request Parsing Discrepan-cies. InThe 27th International Symposium on Research in Attacks, Intrusionsand Defenses (RAID 2024), September 30October 02, 2024, Padua, Italy.ACM,New York, NY, USA, 13 pages. https://doi
-”
-org/10
-”
-1145/3678890
-”
-3678904
-1 INTRODUCTIONThe classic client-server model no longer accurately representspractical web application deployments. Today, origin servers aresupported by many intermediate services such as web caches, loadbalancers, security products, and API gateways, which all act asreverse proxies and process trac at the application layer. In otherPermission to make digital or hard copies of all or part of this work for personal orclassroom use is granted without fee provided that copies are not made or distributedfor prot or commercial advantage and that copies bear this notice and the full citationon the rst page. Copyrights for third-party components of this work must be honored.For all other uses, contact the owner/author(s).
-RAID 2024, September 30October 02, 2024, Padua, Italy
-©
-2024 Copyright held by the owner/author(s).
+                                Kaan Onarlioglu                                                                     Engin Kirda
+                               Akamai Technologies                                                            Northeastern University
+                               Cambridge, MA, USA                                                               Boston, MA, USA
+
+ABSTRACT                                                                                    words, a single request generated by a user agent is often parsed,
+Modern web applications involve multiple HTTP processors on the                             processed, and transformed by a plethora of HTTP proxies.
+traffic path, each acting as a reverse proxy and processing client                             This design is key to highly distributed and scalable Internet
+requests. Even when such proxies are secure in isolation, when                              infrastructures. However, it also adds complexity, and complex
+combined into complex systems, minor HTTP parsing discrepancies                             systems are inherently hazardous [10]. Although this is a well-
+between them can lead to various severe attacks such as cache                               understood concern in the safety engineering literature [30], the
+poisoning and HTTP request smuggling attacks.                                               security community is only recently flooded with new classes of at-
+   We propose Gudifu, a new approach that improves the state-of-                            tacks exacerbated by this complexity. These attacks are not caused
+the-art HTTP differential fuzzing approaches in two main ways: 1)                           by faulty components in the system, but they arise due to hazardous
+taking a graybox fuzzing approach to probe the parsing behavior                             interactions between multiple components that may otherwise per-
+of HTTP proxies and 2) using a new algorithm which is capable                               form to specification.
+of searching for discrepancies in the entire HTTP request. These                               In particular, discrepancies in how different HTTP proxies on the
+improvements lead to the discovery of significantly more parsing                            traffic path process a given request are shown to be a major factor,
+discrepancies and discrepancy-based attack vectors which were                               leading to a steady stream of novel web cache poisoning and request
+previously unknown.                                                                         smuggling attacks (e.g., [8, 12, 25, 28, 29]). We collectively refer to
+                                                                                            these as discrepancy attacks. Discrepancy attacks are practical, and
+CCS CONCEPTS                                                                                were weaponized for exploiting high-profile targets; e.g., to hijack
+                                                                                            HTTP requests on Slack and steal cookies [11], to poison PayPal’s
+• Security and privacy → Web application security.
+                                                                                            web cache and serve malicious JavaScript [26], and to steal HTTP
+                                                                                            responses destined for arbitrary users of Atlassian Jira [27].
+KEYWORDS                                                                                       While academic research into this domain is sparse, two recent
+HTTP Parsing Discrepancies, Guided Differential Fuzzing, HTTP                               works explored methods for identifying novel discrepancy attack
+Server Chain Attacks                                                                        vectors through differential analysis of HTTP processors [24, 38].
+ACM Reference Format:
+                                                                                            Both works involve a similar fuzzing approach: 1) fuzzing multiple
+Bahruz Jabiyev, Anthony Gavazzi, Kaan Onarlioglu, and Engin Kirda. 2024.                    proxies with mutated HTTP requests, 2) capturing the requests
+Gudifu: Guided Differential Fuzzing for HTTP Request Parsing Discrepan-                     processed and forwarded by each proxy, and 3) comparing the
+cies. In The 27th International Symposium on Research in Attacks, Intrusions                forwarded requests to identify discrepancies.
+and Defenses (RAID 2024), September 30–October 02, 2024, Padua, Italy. ACM,                    The fuzzing methods of past research are performed in a blackbox
+New York, NY, USA, 13 pages. https://doi.org/10.1145/3678890.3678904                        manner, relying on static grammars for input generation. In other
+                                                                                            words, they have no visibility into how each input performs, and
+1     INTRODUCTION                                                                          therefore, their ability to exercise the target HTTP processors and
+                                                                                            induce unusual behavior is fundamentally limited.
+The classic client-server model no longer accurately represents                                In addition, past works tailor their discrepancy detection strate-
+practical web application deployments. Today, origin servers are                            gies to a narrowly defined set of attack types, targeting specific
+supported by many intermediate services such as web caches, load                            parts of HTTP requests. For example, as an indicator of HTTP
+balancers, security products, and API gateways, which all act as                            request smuggling vulnerabilities, prior work only searches the
+reverse proxies and process traffic at the application layer. In other                      request body in the forwarded requests for discrepancies. That
+                                                                                            leads to missing out on opportunities to detect new attack vectors
+Permission to make digital or hard copies of all or part of this work for personal or       which may arise from discrepancies in request components that
+classroom use is granted without fee provided that copies are not made or distributed
+for profit or commercial advantage and that copies bear this notice and the full citation   have received less attention from the security community.
+on the first page. Copyrights for third-party components of this work must be honored.         In light of these limitations of prior work, we formulate the
+For all other uses, contact the owner/author(s).
+                                                                                            following research questions:
+RAID 2024, September 30–October 02, 2024, Padua, Italy
+© 2024 Copyright held by the owner/author(s).
 ACM ISBN 979-8-4007-0959-3/24/09
-https://doi
-”
-org/10
-”
-1145/3678890
-”
-3678904words, a single request generated by a user agent is often parsed,processed, and transformed by a plethora of HTTP proxies.This design is key to highly distributed and scalable Internetinfrastructures. However, it also adds complexity, and complexsystems are inherently hazardous [10]. Although this is a well-understood concern in the safety engineering literature [30], thesecurity community is only recently ooded with new classes of at-tacks exacerbated by this complexity. These attacks are not causedby faulty components in the system, but they arise due tohazardousinteractionsbetween multiple components that may otherwise per-form to specication.In particular, discrepancies in how dierent HTTP proxies on thetrac path process a given request are shown to be a major factor,leading to a steady stream of novelweb cache poisoningandrequestsmugglingattacks (e.g., [8,12,25,28,29]). We collectively refer tothese as discrepancy attacks. Discrepancy attacks are practical, andwere weaponized for exploiting high-prole targets; e.g., to hijackHTTP requests on Slack and steal cookies [11], to poison PayPal'sweb cache and serve malicious JavaScript [26], and to steal HTTPresponses destined for arbitrary users of Atlassian Jira [27].While academic research into this domain is sparse, two recentworks explored methods for identifying novel discrepancy attackvectors through dierential analysis of HTTP processors [24,38].Both works involve a similar fuzzing approach: 1) fuzzing multipleproxies with mutated HTTP requests, 2) capturing the requestsprocessed and forwarded by each proxy, and 3) comparing theforwarded requests to identify discrepancies.The fuzzing methods of past research are performed in a blackboxmanner, relying on static grammars for input generation. In otherwords, they have no visibility into how each input performs, andtherefore, their ability to exercise the target HTTP processors andinduce unusual behavior is fundamentally limited.In addition, past works tailor their discrepancy detection strate-gies to a narrowly dened set of attack types, targeting specicparts of HTTP requests. For example, as an indicator of HTTPrequest smuggling vulnerabilities, prior work only searches therequest body in the forwarded requests for discrepancies. Thatleads to missing out on opportunities to detect new attack vectorswhich may arise from discrepancies in request components thathave received less attention from the security community.In light of these limitations of prior work, we formulate thefollowing research questions:
+https://doi.org/10.1145/3678890.3678904
+RAID 2024, September 30–October 02, 2024, Padua, Italy                               Bahruz Jabiyev, Anthony Gavazzi, Kaan Onarlioglu, and Engin Kirda
+
+
+ (Q1) Does a guided, graybox fuzzing approach enable more effec-           A relatively recent research trend has been to use graybox fuzzing
+      tive discovery of HTTP parsing discrepancies compared to a        to find vulnerabilities in network services. Pham et al. developed
+      blackbox approach?                                                AFLNet [35], a fuzzer which is guided by both code coverage and
+ (Q2) Can we search for discrepancies holistically, regardless of       the state space of the target network service. Nyx-Net [37] and
+      what part of the request they arise at?                           SnapFuzz [3] aimed to address the limitations of the AFLNet, such
+ (Q3) Does a graybox and holistic approach help identify novel          as the low throughput, the need for the hard-coded timeout values
+      and exploitable discrepancy attacks that impact ubiquitous        and cleanup scripts for resetting the fuzzing environment.
+      proxy technologies?                                                  Differential fuzzing techniques have also seen an increase in
+                                                                        their adoption by security researchers. The main idea of differential
+   To investigate these questions, we propose Gudifu, a graybox
+                                                                        fuzzing is to find bugs through comparing the behavior of programs
+differential fuzzing approach, which uses a code coverage metric
+                                                                        of the same type. In other words, a large amount of inputs are fed
+to guide input selection and mutation. We present an implemen-
+                                                                        into similar programs, say, two different C code compilers, and their
+tation of Gudifu, and use it to test for novel discrepancy attacks
+                                                                        reaction to the same inputs are examined for a difference which
+between six popular reverse proxies: Apache httpd, NGINX, H2O,
+                                                                        might signal a bug.
+ATS, HAProxy, and Envoy.
+                                                                           Bernhard et al. [6] use a differential fuzzing technique to find
+   We empirically evaluate our approach against the aforemen-
+                                                                        logic bugs in the Javascript engines, while the Reen and Rossow [36]
+tioned T-Reqs fuzzer of prior work [24], and show that Gudifu
+                                                                        developed DPIFuzz to find techniques for evading deep packet in-
+finds significantly more discrepancies in our experiment setup.
+                                                                        spection. Petsios et al.. [34] developed a generic differential testing
+   Finally, we craft practical attacks based on Gudifu’s novel find-
+                                                                        tool called NEZHA, and used it to find semantic bugs and discrep-
+ings. We demonstrate that these discrepancies have real-world
+                                                                        ancies – some with critical security implications – across a wide
+impact via access control bypasses, cache poisoning and HTTP
+                                                                        variety of applications.
+request smuggling.
+                                                                           Past research has also used differential fuzzing to find HTTP
+   We summarize again the contributions of our work below.
+                                                                        parsing discrepancies. Jabiyev et al. [24] developed T-Reqs, and
+     • We develop Gudifu for graybox differential fuzzing of HTTP       used it to search for parsing discrepancies in HTTP request bodies
+       proxies.                                                         which can lead to request smuggling. Shen et al. [38] took a broader
+     • We propose a novel holistic search method for discrepancies      look at parsing discrepancies and developed HDiff to search for
+       in requests, which identifies attack vectors missed by prior     discrepancies which can lead to Host header confusion and cache
+       work.                                                            poisoning in addition to request smuggling.
+     • We demonstrate that our novel approach is more effective            HTTP parsing discrepancies have also been examined by Chen
+       in finding discrepancies than existing blackbox approaches.      et al. [8] and Nguyen et al. [32] in the context of cache poisoning and
+     • We demonstrate with concrete exploits that discrepancy at-       Host confusion attacks. While they do not develop an automated
+       tacks have dire security implications.                           technique to find these discrepancies, they demonstrate that the
+                                                                        few discrepancies they find can have serious security implications.
+   Availability. Gudifu is open source. The code can be viewed at
+https://github.com/bahruzjabiyev/gudifu-fuzzer.
+   Coordinated Disclosure. We notified the tested proxy vendors         3   APPROACH
+by providing them a copy of the paper. The discussion of vendor
+                                                                        In this section, we describe our approach for the guided differential
+responses is at the end of the paper.
+                                                                        fuzzing of HTTP servers, which we call the Gudifu approach.
+                                                                        Figure 1 shows the data flow diagram of this approach.
+2    BACKGROUND AND RELATED WORK                                           The data flow starts with a single input corpus populated with
+Here, we give an overview of the relevant fuzzing techniques and        a set of HTTP requests. A number of fuzzer instances, one for
+the past research on HTTP discrepancy attacks – attacks which           each target server, share this input corpus and read inputs from
+exploit the discrepancies in servers’ parsing behavior.                 it before mutating them and delivering them to their respective
+   Fuzzing is the process of generating numerous inputs with var-       target servers.
+ious forms and contents in order to exercise as much of a target           The target servers receive the inputs and process them, possibly
+program as possible. Fuzzing techniques are typically categorized       returning an error message to the fuzzer instance, and possibly
+as either blackbox or graybox. In blackbox fuzzing, inputs are gen-     forwarding a message to their respective echo server. Regardless,
+erated independent from their impact on the target program, and         the target servers are instrumented to report the code coverage
+are often generated from a static corpus or grammar. In graybox         achieved by processing the input back to the fuzzer instance in
+fuzzing, each executed input is assigned a success value, where the     order to influence future input selection and mutation.
+higher the success value of an input is, the higher the chance that        The echo servers receive the forwarded requests from the tar-
+input has to be used again for fuzzing. By giving priority to suc-      get servers and log them to a single shared database for offline
+cessful inputs, graybox fuzzing guides the fuzzing process toward       processing. They then send a response back to the target server,
+more successes. The success metric can be, for example, the code        which sends it back to the fuzzer instance, which then can decide
+coverage [31, 39] (e.g., the number of code blocks visited by the       whether to add the mutated test case back to the input corpus for
+input) or the coverage of the program’s internal state space [35, 40]   other fuzzer instances to draw from and mutate in future fuzzing
+(e.g., the number of program states exercised by the input).            iterations.
+Gudifu: Guided Differential Fuzzing for
+HTTP Request Parsing Discrepancies                                                             RAID 2024, September 30–October 02, 2024, Padua, Italy
+
+
+                                                                                               sending            analyzing
+                                                            target         echo                requests           requests
+                                            fuzzer
+                                                            server        server
+                                                                                               saving
+                                                                                               requests
+
+
+
+                                                            target         echo
+                                            fuzzer
+                                                            server        server
+
+                          input                                                               forwarded
+                         corpus               .               .             .                  requests
+
+                                              .               .             .
+                                              .               .             .
+                                  reading
+                                  corpus
+                                                            target         echo
+                                  writing   fuzzer
+                                                            server        server
+                                  corpus
+
+
+                                                     Figure 1: Dataflow diagram of Gudifu
+
+
+3.1     Shared Input Corpus                                              reloads the shared corpus once every second, and as other fuzzer
+The input corpus is a collection of HTTP requests which serve            instances add inputs to the corpus, these inputs will be prioritized
+as the pool from which fuzzer instances continuously read and            and sent as is to the target server.
+write inputs. Prior to fuzzing, it is populated with a large set of         If every input in the corpus has been sent as is to the target
+distinct and valid HTTP requests. This set contains all possible         server, then the search strategy selects an input such that a higher
+combinations of standard HTTP methods (e.g., “GET”, “OPTIONS”)           probability is assigned to inputs that exercised new code paths in
+and standard HTTP headers (e.g., “Expect”, “Referer”) with valid         the target server (or a random input is selected if such information
+values compiled from HTTP RFC specifications.                            is not yet available). The fuzzer instance then mutates the input
+    Every fuzzer instance loads the entire input corpus when fuzzing     according to a set of predefined mutation operators. These operators
+first starts and then again every second to check for new inputs. As     include transformations such as flipping the value of a single bit,
+such, the input corpus serves as the source of input sharing among       inserting random bytes, or inserting a value pulled from a dictionary
+fuzzer instances to ensure that the same inputs are delivered to         of meaningful HTTP keywords.
+every target server.                                                        The fuzzer instance then delivers the input to the target server
+    The number and the validity of the requests in the corpus is         by acting as a network client to it, connecting over a socket to the
+important, as we need a rich body of common inputs which will            port the target server is listening on and sending the input in full.
+be forwarded by the target servers based on which we can detect          While the target server is started only once, the fuzzer instance
+parsing discrepancies. In the following subsections, we explain the      starts a new connection to deliver an input in each iteration. It
+steps we take to achieve the desired qualities of the input corpus.      then waits for a response from the target server. After receiving a
+                                                                         response, the fuzzer instance uses two key pieces of information to
+                                                                         guide future input selection.
+3.2     Fuzzer Instances                                                    First, the fuzzer instance checks the HTTP status code of the
+A number of fuzzer instances share the single input corpus. At a         response from the server, and will consider adding the mutated
+high level, the responsibility of each fuzzer instance is to drive the   input to the input corpus only if the server returned a 200 OK
+fuzzing process for a single target server. Each fuzzing iteration,      (Because it was by far the most common non-error status code.
+the first action a fuzzer instance takes is to select one input from     But one can also use redirection status codes (e.g., 301, 302) in
+the input corpus. This decision is not random, and inputs are both       addition to 200). Without this check, we found that inputs which
+chosen and processed based on an internal search strategy that will      exercised new code paths in the error-handling portions of each
+prioritize inputs based on certain key factors.                          target server were being prioritized, leading to fewer and fewer
+   The search strategy works as follows. First, it will select any       requests being forwarded by the target servers over time. Without
+inputs in the corpus that have not yet been delivered to the target      the servers forwarding requests, there is less data to detect parsing
+server. These inputs are not mutated, and are sent as is to the target   discrepancies in, and thus we only add requests back to the corpus if
+server. Thus, when the fuzzer first starts up, it loads the initial      they return a 200 OK in order to keep the fuzzing process productive.
+shared input corpus and delivers each input directly to the target          The second piece of information used by the fuzzer instance to
+server. This ensures that every target server receives the same          guide future input selection is the code coverage achieved on the
+inputs from the corpus, and enables later analysis of how different      target server when it processed the current input. If the current
+servers processed the request. Additionally, the fuzzer instance         input exercised code that had not yet been exercised, and if the
+RAID 2024, September 30–October 02, 2024, Padua, Italy                                      Bahruz Jabiyev, Anthony Gavazzi, Kaan Onarlioglu, and Engin Kirda
+
+
+target server returned a 200 OK, then the mutated request is added          1
+back to the input corpus and assigned a higher priority in the search       2   # Changes to input by the forwarded request
+strategy in future iterations. By prioritizing these inputs, we drive       3   def changes(r, f): # r: input, f: forwarded
+the fuzzer to exercise more and more of the target server’s request-        4
+parsing code, and hope that by doing so, we will exercise portions          5       # addition, modification, deletion lists
+of the code that blackbox fuzzing approaches struggle to reach, and         6       adds, mods, dels = [], [], []
+can effect more parsing discrepancies as a result.                          7
+
+                                                                            8       for header in headers(f):
+3.3     Target Servers                                                      9         if header in headers(r):
+The principal systems being fuzzed are the target servers. Each tar-       10           continue
+get server’s responsibility is to listen on a specific port, forward re-   11         if lineno(header) == 1: # request line
+quests to its own echo server, return the echo server’s response back      12           mods.add(headers(r)[0], header)
+to the fuzzer instance, and report the code coverage achieved from         13         if ':' not in line:
+processing the request to the fuzzer instance. The target servers          14           adds.add(header)
+are built from source and instrumented at compile time to report           15         else:
+code coverage to a shared memory buffer for the fuzzer instance to         16           name, value = header.split(':')
+read from.                                                                 17           # get input headers with name 'name'
+                                                                           18           named_headers = headersnamed(r, name)
+3.4     Echo Servers                                                       19           if len(named_headers) == 0:
+Upstream from the target servers are a set of echo servers, one for        20             adds.add(header)
+each target server, whose responsibilities are to listen on a specific     21           if len(named_headers) == 1:
+port, log every request from the target server to a single shared          22             mods.add(named_headers[0], header)
+database of all forwarded requests, and respond with a 200 OK to           23           else:
+the target server.                                                         24             mods.add(join(named_headers), header)
+                                                                           25
+
+                                                                           26       for header in headers(r):
+3.5     Request Database and Search Method
+                                                                           27         if header in headers(f):
+The request database is a database of forwarded requests shared by         28           continue
+all echo servers. As soon as a new forwarded request is captured           29         if header not in mods:
+by each echo server, it instantly writes it to this common database.       30           dels.add(header)
+    To search for parsing discrepancies, we analyze the forwarded          31
+requests saved to the database. Prior research compared only those         32       if input_body != forwarded_body:
+parts of forwarded requests which they thought were the most               33         mods.add(input_body, forwarded_body)
+relevant for specific attack types. Whereas, we use a holistic search      34
+methodology to capture parsing discrepancies regardless of which           35       return adds, mods, dels
+part of the request they arise at.
+    Our method comprises three stages. In the first stage, for every
+captured forwarded request, we get the list of changes made by                  Listing 1: Algorithm for getting the changes on the input
+the server on the input request. For example, if an input request               request (in Python).
+contains an extra space before the method name, and the forwarded
+request does not have that extra space, then the removal of the space
+is a change made by the server. We developed an algorithm to obtain             we see the changes which are unusual and non-trivial, we confirm
+this list of changes, Python code for which is shown in Listing 1.              them by checking the behavior one more time by sending the
+    In the second stage, we look at the changes made by all servers             relevant requests to the servers and take a note of them once they
+for a given input request, and discard any changes which every                  are confirmed.
+server makes, as they are not suitable for comparison. We repeat
+this for every input request and obtain 1) the list of changes made             4    EXPERIMENTATION
+to it, and 2) for each change, the list of the servers which made               In the experiment with the Gudifu approach, we focus on the
+them.                                                                           HTTP/1 parsing discrepancies of the servers. The general infor-
+    In the third stage, we bucketize the changes based on the set of            mation about the servers which were instrumented and fuzzed is
+servers which made them. For example, if changes C1 and C3 are                  listed in Table 1. We use libFuzzer [31] as the fuzzing engine.
+made by only servers S1 and S3, then C1 and C3 go into the bucket of                Table 2 gives details about the data generated during the experi-
+[S1, S3]. Once we populate each bucket with the changes belonging               ment. "Valid" requests are those which were forwarded by at least
+to it, we manually examine starting from the least populated bucket.            one server. The number of requests forwarded by each server is also
+    In the manual examination phase, we pay little or no attention to           listed. The number of commonly forwarded requests (i.e., the input
+those which are trivial changes (e.g., a space is added after colon in          requests which are forwarded by at least two different servers) is
+host:example.com and it becomes host: example.com). When                        relatively small. The reason is, the inputs are shared through the
+Gudifu: Guided Differential Fuzzing for
+HTTP Request Parsing Discrepancies                                                              RAID 2024, September 30–October 02, 2024, Padua, Italy
+
+
+Table 1: Names, versions, and source languages of tested prox-           by CDN servers in practice. The list consists of the following status
+ies.                                                                     codes: 300 Multiple Choices, 301 Moved Permanently, 302
+                                                                         Moved Temporarily, 404 Not Found, 405 Method Not Allowed,
+          Server Name                     Version     Source             410 Gone, 414 URI Too Long, 501 Not Implemented.
+                                                                            Past research [32] has shown the security implications of parsing
+          Apache httpd                    2.4.54      C
+                                                                         discrepancy between two servers where one of them forwards a
+          NGINX                           1.22.1      C
+                                                                         request and the other one responds with a cacheable error status
+          H2O                             2.2.6       C
+                                                                         code. Therefore, in this work, we also want to look at this type of
+          Apache Traffic Server (ATS)     10.0.0      C++
+                                                                         parsing discrepancy.
+          HAProxy                         2.7.1       C
+          Envoy                           1.24.1      C++
+                                                                         5     PARSING DISCREPANCIES
+                                                                         We use the search methodology (described in Section 3) on the
+input corpus and only successful inputs (i.e., the ones which cover      forwarded requests collected from the experiment to find the pars-
+new code blocks) are added to the corpus.                                ing discrepancies. We discuss the parsing discrepancies under four
+                                                                         categories in the given order: request line discrepancies, request
+4.1     Configuring Servers                                              headers discrepancies, request body discrepancies and behavior
+When we configure the target servers for the experiment, we have         discrepancies related to cacheable responses.
+the least possible number of directives which allow the servers to
+receive requests at a certain port and forward them to where their       5.1    Request Line Discrepancies
+own echo server is running. Only for NGINX and H2O, we enabled           We further divide request line discrepancies into three classes. The
+the preservation of the Host header value in order to get visibility     first one is about the parsing of absolute URIs. The second one
+into how this header is parsed by these servers (by default these        looks at the treatment of reserved characters. Finally, the third one
+servers overwrite the incoming Host header with the IP and port          consists of the discrepancies caused by normalization. The examples
+of the host they forward to).                                            for them can be found in Table 3. Note that the HTTP/1.1 version
+   Usually, servers do not have configuration directives to let users    token is shortened to H/1 in the table for the sake of brevity.
+control their parsing behavior (with few exceptions like Envoy
+allowing users to merge slashes in the request URI [14]). Because        5.1.1 Absolute URI. As shown in the first row of Table 3, servers
+the parsing behavior of servers is usually shaped by the way the         exhibit discrepancies in their parsing of URI when it is in the ab-
+developers implement them under the guidance of the specifications       solute form. HTTP RFC 2616 [16] states that if the URI is in the
+and it is not high-level enough for letting users change it.             absolute form, then the host is what is given in the URI and the
+   We expect that the target servers’ default parsing behavior is the    Host header should be ignored. Apache httpd, NGINX, ATS and
+most secure parsing behavior as they would not allow an insecure         Envoy convert the URI into the relative form and add the uri-host
+behavior to remain as the default. Also, given that testing all possi-   in the Host header. Whereas, H2O adds a slash in front of the URI
+ble configurations for each target is a hard task if not impossible,     which changes the semantics, and HAProxy throws an error as it
+we run each server with its default configuration.                       requires the Host header value and the uri-host in the URI to be
+                                                                         the same.
+4.2     Capturing Cacheable Responses                                       When the absolute URI has an empty path (example in the second
+                                                                         row) and the Host header is missing, servers parse it differently.
+In addition to saving the input requests and forwarded requests to
+                                                                         According to the URI RFC 3986 [5], when the authority component
+the filesystem for a later analysis, we also saved requests which
+                                                                         is present in the URI, then the path can be empty. As for the Host
+generate a cacheable error status code. We compile the list of those
+                                                                         header, RFC 7230 [17] states that it is required, and a request that
+status codes by combining the unsuccessful cacheable codes defined
+                                                                         lacks the header must be responded with 400 Bad Request. As
+by the HTTP specification and those which are commonly cached
+                                                                         shown in the second row, Apache httpd and NGINX throw an error,
+                                                                         H2O adds a slash in front and make the Host header value default,
+                    Table 2: Experiment overview.                        ATS and Envoy generate Host header value based on the uri-path
+                                                                         and HAProxy keep the same URI and does not add a Host header.
+           Experiment duration                      12 hours                As can be seen in the third row, when the URI consists of just
+                                                                         the scheme name, most servers see it as an error while few of them
+           # of Valid requests                      6,737,538            see it valid. NGINX, HAProxy and Envoy respond with 400 Bad
+           # of Apache forwarded requests           1,062,694            Request and ATS closes the connection as a result of the error.
+           # of NGINX forwarded requests              939,348            Whereas, Apache httpd converts it into a slash and H2O adds a
+           # of H2O forwarded requests                739,600            slash before the URI while they retain the Host value.
+           # of ATS forwarded requests                939,348
+                                                                         5.1.2 Reserved Characters. Reserved characters mainly serve as
+           # of HAProxy forwarded requests            856,792
+                                                                         delimiters for the URI sections (e.g., ? signals the start of the query
+           # of Envoy forwarded requests              903,666
+                                                                         part). As we see in Table 3, they can easily trigger parsing discrep-
+           # of Commonly forwarded requests            45,633
+                                                                         ancies in the parsing behavior of servers.
+RAID 2024, September 30–October 02, 2024, Padua, Italy                                      Bahruz Jabiyev, Anthony Gavazzi, Kaan Onarlioglu, and Engin Kirda
+
+
+                                            Table 3: Examples of parsing discrepancies in request lines.
+
+           Input              Apache httpd               NGINX            H2O                    ATS                 HAProxy                 Envoy
+  GET http://a/b H/1          GET /b H/1         Same as         GET / http://a/b H/1      Same as              Bad Request             Same as
+  Host: c                     Host: a            Apache httpd    Host: c                   Apache httpd         Error                   Apache httpd
+
+  GET http://a H/1            Bad Request        Bad Request     GET / http://a H/1        GET / H/1            GET http://a H/1        Same as
+   Host: c                    Error              Error            Host: default             Host: a              Host: c                ATS
+
+  GET http: H/1               GET / H/1          Bad Request     GET / http:               Connection           Bad Request             Bad Request
+  Host: c                     Host: c            Error           Host: c                   Reset                Error                   Error
+                                                 Bad Request                                                    Bad Request             Bad Request
+  GET ? H/1                   GET / H/1                          GET / ? H/1               GET ? H/1
+                                                 Error                                                          Error                   Error
+                              Bad Request        Bad Request                                                                            Bad Request
+  GET @ H/1                                                      GET / H/1                 GET / H/1            GET @ H/1
+                              Error              Error                                                                                  Error
+  GET /b; H/1                 GET /b; H/1        GET /b; H/1     GET /b; H/1               GET /b ; H/1         GET /b; H/1             GET /b; H/1
+                              Bad Request                                                                                               Bad Request
+  GET /b#c H/1                                   GET /b #c H/1   GET /b#c H/1              GET /b #c H/1        GET /b#c H/1
+                              Error                                                                                                     Error
+  GET /%61 H/1                GET / a H/1        GET / a H/1     GET /%61 H/1              GET /%61 H/1         GET /%61 H/1            GET /%61 H/1
+
+  GET /// H/1                 GET / // H/1       GET / // H/1    GET /// H/1               GET // / H/1         GET /// H/1             GET /// H/1
+
+  GET /a/.. H/1               GET / H/1          GET / H/1       GET /a/.. H/1             GET /a/.. H/1        GET /a/.. H/1           GET /a/.. H/1
+
+
+   For instance, as shown in the fourth row, when the URI is just a             them before they forwarded the request, all other servers forward
+question mark (which is for starting the URI query section), while              it without decoding.
+NGINX, HAProxy and Envoy return an error, Apache httpd, H2O                        The URI path is not allowed by RFC 3986 to start with multiple
+and ATS forwards the request. Apache httpd converts into a slash,               slashes as it is stated in the "Path" section of the document. Again,
+H2O adds a slash before the question mark and finally ATS removes               servers parse request URIs which start with multiple slashes differ-
+the whole URI in the requests they forward.                                     ently. Apache httpd and NGINX trim all the extra slashes and just
+   Whereas, as shown in the fifth row, when the URI is just an                  keep one. ATS removes only one slash and leaves the rest. Finally,
+at-sign (which is for separating the user information from the host),           H2O, HAProxy and Envoy forward them as is.
+Apache httpd, NGINX and Envoy throw an error while the rest                        According to RFC 3986, the ".." and "." characters have a similar
+forward the request. H2O and ATS replaces the URI with a slash,                 role to their role within operating systems and they are intended
+whereas HAProxy retains the at-sign as the whole URI.                           for use at the beginning of relative paths. When servers receive a
+   Semicolon (";") is reserved because it can be used to separate               request URI containing these characters, some of them normalize
+the URI parameter names and values as stated in Section 3.3 of                  the URI, some not. Apache httpd and NGINX normalize the request
+RFC 3986 [5]. As seen in the fifth row when the path is just a                  URI. Whereas, all other servers forward them with no change.
+semicolon, it is also treated differently. ATS removes it in the URI
+before forwarding. Whereas, all other servers keep it.
+   Number sign ("#") is also a special character as it serves as the            5.2    Request Header Discrepancies
+start of the fragment section. When servers receive a URI with a                When it comes to the parsing of request headers, the parsing of
+fragment, they respond differently. Apache httpd and Envoy re-                  servers differ widely again. For example, as seen in the first row
+spond with an error. NGINX and ATS drops the fragment before                    of Table 4, when a header with an empty name is present in a re-
+forwarding the request. Finally, H2O and HAProxy preserve the                   quest, while most servers report an error, some accept it. Apache
+fragment section.                                                               httpd, NGINX, H2O and Envoy return the 400 Bad Request re-
+                                                                                sponse. ATS still forwards the request after dropping the header
+                                                                                with the empty name. Whereas, HAProxy drops the header which
+5.1.3 Normalization. Finally, servers have discrepancies in the way             comes after the empty-named header even if the following header is
+they normalize request URIs. Also, while one server normalizes the              Content-Length and the request has a body. As a result, a request
+URI before forwarding, the other one might prefer not to normalize.             which has a body, yet no body length header, is still forwarded.
+   For instance, as shown in the eighth row, when URI has the non-                 According to RFC 7230, each header field contains a colon (":")
+reserved characters percent-encoded (%61 is percent-encoded ver-                as a means to separate the header name and header value. When
+sion of the ASCII character "a"), the servers act differently. Percent-         the headers block of a request has a line without a colon, some
+encoding is a means to safely transfer reserved characters if they              servers respond with an error, some accept it. While Apache httpd,
+are part of the URI content. While Apache httpd and NGINX decode                H2O, HAProxy and Envoy respond with 400 Bad Request, ATS
+Gudifu: Guided Differential Fuzzing for
+HTTP Request Parsing Discrepancies                                                                   RAID 2024, September 30–October 02, 2024, Padua, Italy
+
+
+                                          Table 4: Examples of parsing discrepancies in request headers.
+
+           Input               Apache httpd         NGINX            H2O                   ATS                HAProxy                    Envoy
+
+    POST / H/0               Bad Request         Bad Request     Bad Request         POST / H/1         POST / H/0                Bad Request
+    :b                       Error               Error           Error               Content-Length:4    Content-Length:4         Error
+    Content-Length:4
+    GET / H/1                Bad Request         GET / H/1       Bad Request         GET / H/1          Bad Request               Bad Request
+    Host: a                  Error               Host: a         Error               Host: a            Error                     Error
+    b                                            b:                                   b
+
+    GET / H/1                Bad Request         Bad Request     GET / H/1           Connection         Bad Request               GET / H/1
+    Host: a                  Error               Error           Host: b             Reset              Error                     Host: a,b
+    Host: b
+    POST / H/1               Expectation         POST / H/1      POST / H/1          Connection         POST / H/1                POST / H/1
+    Host: a                  Failed Error        Host: a         Host: a             Reset              Host: a                   Host: a
+    Expect: b                                     Expect: b       Expect: b                             Expect: b                 Expect: b
+
+    POST / H/1               POST / H/1          POST / H/1      POST / H/1          Connection         POST / H/1                POST / H/1
+    Referer:h://a            Referer:h://a,\     Referer:h://a   Referer:h://a       Reset              Referer:h://a              Referer:h://a
+    Referer:h://b            h://b               Referer:h://b   Referer:h://b                          Referer:h://b              Referer:h://b
+
+    POST / H/1               POST / H/1          Bad Request     POST / H/1          POST / H/1         POST / H/1                POST / H/1
+    a: b                     a: b c              Error           a: b                a: b \tc           a: b \tc                  a: b \tc
+    \tc                                                           : \tc
+
+
+forwards the request after dropping the line which does not have a             of the Table 4, it triggers parsing discrepancies. When a line-folded
+colon. Whereas, NGINX adds a colon (and makes it a header with                 request is sent to servers, Apache httpd, ATS, HAProxy and Envoy
+empty value) to this line and forwards to the upstream.                        seem to support the line folding as they append the following line
+   Another parsing discrepancy is observed when a request con-                 to the current before forwarding to the upstream. NGINX respond
+tains multiple Host header values. As stated in section 4.4 of RFC             with the 400 Bad Request. Whereas, H2O seems not to support
+7230, a server must respond with 400 Bad Request status code                   the line folding as it makes a new header from the following line
+to any request that contains more than one Host header. While                  by adding a colon before it.
+most servers respond with the 400 Bad Request, some forward
+the request. Apache httpd, NGINX and HAProxy send the 400 Bad
+                                                                               5.3     Request Body Discrepancies
+Request status code, while ATS closes the connection to report the
+error. Whereas, H2O ignores the first Host header and forwards                 Similar to request line and header parsing, the parsing of request
+the second one, while Envoy merges the two Host header values                  body is implemented differently by servers as shown in Table 4
+into one with a comma when forwarding the request.                             (Transfer-Encoding: chunked and Content-Length have been
+   The Expect header has only one value defined by the specifica-              abbreviated as Transfer-Enc: and Content-Len respectively for
+tion and it is 100-continue. When a client has a request with a                the brevity). For example, Content-Length is for indicating the size
+huge body, it sends the request line and headers first adding Expect           of the request body and is expected to have a numeric value. How-
+header to make sure that the server is ready to receive the body and           ever, when this value is very big, then servers might respond differ-
+this is for improving the efficiency. When this header is sent with            ently. In fact, when its value is 1019 (a value between 263 and 264 ),
+an invalid value, the responses of the servers vary. Apache httpd              ATS does not forward the body while keeping the Content-Length
+responds with the Expectation Failed Error and ATS closes the                  as is. Whereas, HAProxy and Envoy forward the body and the
+connection. Whereas, NGINX and H2O forward the request after                   Content-Length as is.
+dropping the header, while HAProxy and Envoy keep the header.                      Trailer headers, as explained in RFC 7230, allow senders to send
+   The referer header allows clients to specify the address of the             metadata at the end of the chunked body (e.g., to allow the recipient
+page from which the request is made. When a request contains                   to check the integrity). When a chunked body with a trailer header
+double referer header, NGINX, H2O and HAProxy keeps both of                    is sent to servers, Apache httpd, H2O, NGINX and Envoy do not
+them as they are and forward them along. Apache httpd merges                   forward it to the upstream. Whereas, ATS and HAProxy respect
+two headers into one header with a new value where the two values              the trailer header and keep it when forwarding.
+are combined with a comma. Envoy drops both of them if they lack                   When the request body does not follow the chunked body format
+a path. Finally, ATS reports an error.                                         properly, some of them choose to normalize it, while some leave as
+   Line folding is a means for headers to have a multiline value (e.g.,        is. In the example shown in the third row (the backslash followed
+user-agent: mozilla\r\nfirefox) and as seen in the last row                    by the space is not a part of the request contents, it is for line
+                                                                               wrapping), the second chunk size (i.e., 1b) is bigger than the chunk
+RAID 2024, September 30–October 02, 2024, Padua, Italy                                       Bahruz Jabiyev, Anthony Gavazzi, Kaan Onarlioglu, and Engin Kirda
+
+
+                                           Table 5: Examples of parsing discrepancies in request bodies.
+
+          Input              Apache httpd            NGINX           H2O                   ATS                   HAProxy                   Envoy
+
+   Content-Len:1019         Bad Request         Bad Request      Bad Request      Content-Len:1019        Content-Len:1019           Content-Len:1019
+   bbbb                     Error               Error            Error             bbbb                   bbbb                       bbbb
+
+   Transfer-Enc:            Content-Len:0       Content-Len:0    Content-Len:0    Transfer-Enc:           Transfer-Enc:              Transfer-Enc:
+   0\r\na:b\r\n\r\n                                                               0\r\n a:b \r\n\r\n      0\r\n a:b \r\n\r\n         0\r\n\r\n
+
+   Transfer-Enc:            Request             Request          Request          Transfer-Enc:           Transfer-Enc:              Transfer-Enc:
+   1\r\nb\r\n1b \           Timeout             Timeout          Timeout          1\r\nb\r\n1b \           6\r\nb0 \                  6\r\nb0 \
+   0\r\n\r\n                                                                      0\r\n\r\n                \r\n\r\n\r\n               \r\n\r\n\r\n
+
+   Transfer-Enc:            Bad Request         Bad Request      Bad Request      Transfer-Enc:           Bad Request                Transfer-Enc:
+   \xff20\r\n\r\n           Error               Error            Error             \xff20\r\n\r\n         Error                       2\r\n\r\n\r\n
+
+   Expect:100-cont          Content-Len:4       Content-Len:4    Content-Len:4    Expect:100-cont         Expect:100-cont            Content-Len:4
+   Content-Len:4             bbbb               bbbb             bbbb             Content-Len:4           Content-Len:4              bbbb
+   bbbb                                                                            bbbb                   bbbb
+
+   Transfer-Enc:            Bad Request         Bad Request      Request          Transfer-Enc:           Transfer-Enc:              Bad Request
+   dddd0001\r\n             Error               Error            Timeout           dddd0001\r\n           2 \r\n\r\n\r\n             Error
+
+
+                         Table 6: Examples of discrepancies where servers respond with a cacheable error code.
+
+           Input               Apache httpd              NGINX             H2O                    ATS                 HAProxy                   Envoy
+
+ GET /%2f H/1                  Not Found          GET / H/1      GET /%2f H/1                GET /%2f H/1      GET /%2f H/1                GET /%2f H/1
+                              Error
+ GET h://a?/ H/1              GET /?/ H/1         GET /?/ H/1    GET / h://a?/ H/1           GET ?/ H/1        Bad Request                  Not Found
+                                                                                                               Error                       Error
+ OPTIONS *h://a/ H/1          Bad Request         Bad Request     / OPTIONS *h://a/ H/1      Connection        OPTIONS *h://a/ H/1          Not Found
+                              Error               Error                                      Reset                                         Error
+
+
+data (i.e., 0\r\n\r\n). While ATS forwards the body as is, HAProxy               \r\n). Whereas, ATS ignores the body in the income request and
+and Envoy reconstructs the chunked body by merging two chunk                     does not forward it to the upstream.
+data sections and sizing them properly.
+   Similarly, when the chunk size contains invalid characters (as
+the one shown in the fourth row, \xff, not all servers act the same
+way. Apache httpd, NGINX, H2O and HAProxy respond with the                       5.4      Cacheable Responses
+400 Bad Request. ATS forwards the request, but does not retain                   As shown in Table 6, for some requests at least one server responded
+the request body. Whereas, Envoy reconstructs a new chunked                      with an error status code which is cacheable. For instance, when the
+body where the chunk data is wrapped under a valid chunk size.                   URI contains a percent-encoded version of a reserved character ("/"
+   If a client wishes to send a huge request body, it is recommended             in the example), then H2O, ATS, HAProxy and Envoy keep the URI
+to send Expect header alongside with the request line and headers                as is. NGINX decodes it and makes the URI a single slash. Whereas,
+to see if the recipient is ready to receive the body. When an Expect             Apache httpd responds with 404 Not Found status code which is
+request with a request body sent to servers, NGINX, H2O and Envoy                defined as cacheable by RFC 7231 [18] and is commonly cached by
+drop the Expect header and keep the body, while HAProxy keeps                    cache servers in practice.
+both. Whereas, Apache httpd drops both the header and the body,                     When a question mark, which signals the start of the query
+and ATS keeps the header while dropping the body.                                fragment, comes before the path, it triggers parsing discrepancies
+   Finally, a chunk size with a large value such as the one in the last          in servers. As seen in the second row, Apache httpd and NGINX
+row of Table 5 triggers a body parsing difference. The hexadecimal               convert the URI into the origin form and make the question mark a
+value of 0xdddd0001 is equivalent to a decimal value between                     part of the path. H2O adds a slash before the URI as it is an absolute
+231 and 232 . While Apache httpd, NGINX, Envoy reports an error                  URI. ATS also converts the URI to the origin form, but it leaves the
+for this request, H2O waits for more data to be sent. HAProxy                    question mark before the path. HAProxy reports an error for this
+reconstructs the body and sends two bytes of new chunk data (i.e.,               request. Finally, Envoy responds with 404 Not Found which is a
+                                                                                 cacheable status code.
+Gudifu: Guided Differential Fuzzing for
+HTTP Request Parsing Discrepancies                                                              RAID 2024, September 30–October 02, 2024, Padua, Italy
+
+
+                                                                              We then designed a set of mutated GET requests for /admin based
+                                                                          on the requests which trigger request line parsing discrepancies
+                                                                          and sent them to the reverse proxy of each pair. If the content at
+                                                                          /admin was served, then we confirm the existence of an access
+                                                                          control bypass attack. As seen in Figure 2, we find many server
+                                                                          pairs affected by this attack due to four main types of request line
+                                                                          parsing discrepancies.
+                                                                              The most common discrepancies arises when the request URI
+                                                                          is //admin (see the extra-slash category in Figure 2). When the
+                                                                          affected reverse proxies receive such a request, their rules fail to
+                                                                          match it to /admin and as most of them forward the request as is,
+                                                                          the origin server ignores or trims the extra slash, and the content is
+                                                                          served. Though most proxies forward the request as is, ATS actually
+                                                                          trims one of the slashes before forwarding, yet still fails to match
+                                                                          the rule, likely because trimming happens after the access control
+                                                                          check.
+                                                                              The next type of discrepancy happens when the URI has an
+                                                                          at-sign before the path (i.e., @/admin). Only one server pair was
+                                                                          affected for this case: HAProxy-ATS. HAProxy does not interpret
+                                                                          the path as /admin and forwards the URI as is. When ATS receives
+Figure 2: Different types of attacks targeting each server pair.          it, it trims the at-sign, converting the URI to /admin and therefore
+                                                                          serves the content.
+                                                                              Another type of discrepancy leading to access control bypass is
+   The asterisk-form URI ("*") is only used for server-wide OPTIONS       caused by the presence of a scheme name right before the path (i.e.,
+requests, where the client wishes to make the OPTIONS request             http:/admin. This attack affects one server pair: HAProxy-Apache
+for the server as a whole, not for a specific resource [17]. When         httpd. Like the previous attack, HAProxy cannot match this URI
+both the asterisk and absolute URI forms come together in a request       to the rule it has and therefore forwards it to Apache httpd. When
+URI, servers again act differently. As seen in the third row, Apache      Apache httpd receives it, it trims the scheme part and processes the
+httpd, NGINX and ATS report error, while H2O adds a slash before          path successfully.
+the URI and HAProxy keeps as is. Finally, Envoy responds with a               Finally, we see several pairs affected by bypass attacks caused by
+cacheable status code, 404 Not Found.                                     the encoding of the path, for example, where the first letter of the
+                                                                          page name is percent-encoded (i.e., /%61dmin. When the affected
+6     ATTACKS                                                             servers receive this URI they do not interpret the page as /admin,
+                                                                          and therefore forward it to the upstream where this is interpreted
+To demonstrate the security implications of these parsing discrep-        as an access to the admin page.
+ancies, we devise a number of attack scenarios and test them in a
+lab setup. As our attacks exploit the parsing discrepancies between
+servers, our targets are server pairs deployed in a proxy-origin
+fashion.                                                                  6.2    Cache Poisoning Denial-of-Service
+                                                                          The next type of attack which happens due to a parsing discrepancy
+6.1     Access Control Bypass                                             is a cache poisoning denial-of-service (CPDoS) attack. In this attack,
+Access control is a common security mechanism used on the Inter-          the attacker constructs an HTTP request for a legitimate resource
+net today, typically to restrict public access to pages which are not     which would be accepted and forwarded by the cache server on
+for public use. For instance, one might want to block public access       the request path, but would trigger a cacheable error status code
+to the /admin page on a web server to make sure that only those           (e.g., HTTP 404 Not Found) on the origin server. As a result, the
+who are authorized to use that page can access it. This type of access    attacker manages to poison the cache for the legitimate resource
+control is usually configured as a rule on the reverse proxy, which       and every other user trying to reach that resource will receive an
+ensures that requests which match this rule do not get forwarded          error code for their request.
+to the origin.                                                                To test this attack scenario, we first configure the reverse proxy
+   To test for this attack, we add a rule on the reverse proxy of every   to cache responses. ATS does not cache error response codes by
+pair to block all requests to /admin by following the instructions        default, so we enable this on ATS in order to simulate the common
+given in their documentation for page access control. The origin          real-world scenario where error responses are cached [1, 9, 15]. On
+server of every pair serves certain content when it receives a request    the origin side, we create a legitimate resource for which we want
+for /admin. If the origin server of a pair is not a web server (i.e.,     to have victims receive a poisoned response.
+the origin is ATS, HAProxy, or Envoy), then we have it forward to             As with testing for access control bypass, we created a set of
+an additional upstream server serving the same specific content at        mutated requests for the legitimate resource based on the requests
+/admin.                                                                   which trigger request line parsing discrepancies, and sent them
+RAID 2024, September 30–October 02, 2024, Padua, Italy                                Bahruz Jabiyev, Anthony Gavazzi, Kaan Onarlioglu, and Engin Kirda
+
+
+to the reverse proxy of each pair. We follow this with a valid, un-      combination of missing code and unclear usage instructions we
+mutated request for the same resource, and if we receive an error        were not able to run HDiff.
+response code, then we confirm the existence of a CPDoS attack.              In order to compare the abilities of Gudifu and T-Reqs in finding
+   We find that due to a parsing discrepancy of percent-encoded          parsing discrepancies, we run an additional experiment with T-Reqs.
+characters, a CPDoS attack exists for one server pair: ATS-Apache        We take several steps in order to run the T-Reqs under the same
+httpd. When an attacker sends a request with a URI of /foo%2fbar,        conditions that applied to the Gudifu experiment. First, we write
+where the %2f is the percent-encoded version of the slash char-          a new grammar to enable T-Reqs to generate the requests which
+acter, ATS interprets the URI as /foo/bar for caching purposes,          were given to Gudifu in the initial corpus. Second, we use the same
+but forwards the URI as is to Apache httpd. When Apache httpd            number of processes, and the same timeout durations for T-Reqs.
+receives this request URI, it responds with HTTP 404 Not Found           Finally, we let the T-Reqs experiment run for twelve hours.
+which is cached by ATS. As a result, ATS returns this error code to          In order to compare the results, we use our own search method-
+subsequent requests made for /foo/bar.                                   ology on the forwarded requests captured in the T-Reqs experiment.
+                                                                         We find two discrepancy types in the body parsing. One of them is
+6.3     HTTP Request Smuggling                                           that ATS and Apache httpd do not forward the request body to the
+                                                                         echo server when the expect: 100-continue header is present in
+HTTP Request Smuggling (HRS) occurs when the attacker is able
+                                                                         the request, while other servers still forward the body. The other
+to smuggle an additional request through the reverse proxy into
+                                                                         is that some servers (e.g., HAProxy) forward the trailer headers in
+the connection between the reverse proxy and the upstream server.
+                                                                         the chunked body, while some (e.g., Envoy) ignore them.
+As the reverse proxy is not aware of that additional request, this
+                                                                             As Table 5 shows, Gudifu also finds both of these discrepancy
+can be exploited for many serious attacks from response queue
+                                                                         types. In addition to them, Gudifu finds four additional discrepancy
+poisoning to request hijacking.
+                                                                         types in the body parsing, making it six in total. The difference in the
+    To test for this attack, we first configure each reverse proxy
+                                                                         number of findings show that the Gudifu approach is more effective
+to reuse connections to the origin server. Then, we send requests
+                                                                         than the T-Reqs approach in finding body parsing discrepancies.
+with apparent request smuggling potential (i.e., where two different
+servers forward requests with different actual body lengths and/or
+Content-Length header values) to the reverse proxy. We then use          8     DISCUSSION
+a popular technique adopted by prior work [24, 25] to confirm the
+                                                                         In this section, we discuss the limitations of our work, possible
+existence of the HRS vulnerability, in which we send the potential
+                                                                         ways of addressing the discrepancy attacks and finally the vendor
+smuggler request followed by a normal request, and check to see if
+                                                                         responses.
+the normal request receives an error response from the origin.
+    We find an HRS attack affecting multiple server pairs with HAProxy
+as the reverse proxy due to the parsing behavior of a header with        8.1    Limitations
+an empty name, which is the first of its type, to the best of our
+                                                                         When we search for the discrepancies in the servers’ parsing behav-
+knowledge. As shown in the first row of Table 4, when HAProxy
+                                                                         ior, we only look at the forwarded requests. However, forwarded
+receives a request with an empty header name, it removes the
+                                                                         requests might not always accurately reflect the parsing behavior of
+header coming after this header. As a result, if the input request
+                                                                         the server. For example, when ATS receives a request for //admin,
+has a request body and has a Content-Length header after the
+                                                                         it trims the first slash and forwards a request for /admin. At a
+empty-named header, HAProxy forwards this request without the
+                                                                         glance, this would seem to suggest that when ATS is configured
+Content-Length header while leaving the request body intact. We
+                                                                         to block access to /admin, it would block a request for //admin,
+see that when we put another request in the body of this request,
+                                                                         but in reality it does not, because the trimming occurs after access
+it is forwarded by HAProxy and treated as the next request by the
+                                                                         control checks.
+origin server.
+                                                                             One possible way to increase our visibility into the parsing be-
+    We can attribute finding this attack in large part to our holistic
+                                                                         havior is to have the servers log different fields of the request after
+search methodology. If, like prior work, we were to try to find HRS
+                                                                         they parse it. However, this feature is not supported by all servers
+attack vectors by looking just for differences in the forwarded re-
+                                                                         and is also limited to recording only the components of an HTTP
+quests’ body sizes, we would see that ATS and HAProxy forward a
+                                                                         request that a server exposes for logging.
+request with the same body length in response to the request with
+                                                                             Also, the number of commonly forwarded requests in our exper-
+the empty-named header, and would therefore miss this finding.
+                                                                         iment is small, given the duration of the experiment. Just 45,633
+However, as we searched for the discrepancies in the header pars-
+                                                                         requests out of 6,737,538 total valid requests are common to all
+ing as well, we noticed that HAProxy drops the Content-Length
+                                                                         servers. This limitation originates from the design choice of only
+header, unlike ATS.
+                                                                         adding forwarded requests back to the input corpus if they both
+                                                                         exercise new code in the target server and receive a 200 OK from
+7     COMPARISON WITH OTHER TOOLS                                        the echo server. However, we believe that this results in a higher
+The other tools which were developed by the past research to             quality of inputs in the corpus, which compensates for the small
+find HTTP parsing discrepancies are T-Reqs [24] and HDiff [38],          number of common requests.
+both of which use the blackbox fuzzing technique. Source code for            While not a limitation of Gudifu per se, an obvious drawback of
+both tools are publicly available on Github. However, due to the         our research and presentation is that we are unable to experiment
+Gudifu: Guided Differential Fuzzing for
+HTTP Request Parsing Discrepancies                                                               RAID 2024, September 30–October 02, 2024, Padua, Italy
+
+
+with proxies where no source code is available. In particular, Con-       8.3    Addressing Discrepancy Attacks
+tent Delivery Networks (CDNs)–prime targets for both researchers          Recall that discrepancy attacks are an outcome of systems-centric
+and attackers due to their critical place in the Internet ecosystem–      interaction hazards. Even in an idealized system where every com-
+are necessarily left out of scope. Nevertheless, Gudifu has been          ponent is perfectly secure in isolation, discrepancy attacks that
+publicly released, and this allows CDNs and other proprietary tech-       undermine the entire system’s security goals can crop up when the
+nology owners to test their systems in house and avail from our           right (or perhaps wrong) components are allowed to interact with-
+research contributions. We acknowledge that prior work that uti-          out an external enforcement mechanism for security constraints.
+lized strictly blackbox approaches does not have this limitation.            This is a threat that cannot easily be modeled, let alone effec-
+                                                                          tively addressed, by traditional security thought or the tools avail-
+                                                                          able to us. Standard approaches to developing secure code (e.g.,
+                                                                          code reviews, static and dynamic program analysis), defense (e.g.,
+                                                                          firewalls, anomaly detection systems, system segmentation), and
+                                                                          security management (e.g., asset discovery, CVE monitoring, auto-
+                                                                          matic patching) are all primarily designed to secure an environment
+8.2     Potential Improvements
+                                                                          under the full control of its operator.
+The Gudifu framework was designed to identify discrepancies in               In contrast, discrepancies impact highly distributed systems de-
+HTTP/1 parsing. Discrepancies in HTTP/2 and HTTP/3 parsing can            veloped, owned, and operated by distinct entities, without any
+also be identified with Gudifu with a few adjustments. These ad-          interaction between them. Regardless of how rigorously they are
+justments would include the support for a structure-aware fuzzing         tested in isolation, system interaction flaws can remain hidden.
+due to the highly-structured binary input formats of HTTP/2 and           When an issue is discovered, since there is no single component or
+HTTP/3. For instance, the “Protocol Buffers” input format [7] with        root cause to blame, assigning responsibility may not be possible,
+its mutator mechanism [21] can be used to enable structure-aware          and a fix infeasible. Attempts to eliminate hazardous interactions
+fuzzing in LibFuzzer [22]. Another adjustment would be configur-          could result in changes that introduce further unexpected interac-
+ing HTTP/2 and HTTP/3 targets to forward requests in HTTP/1               tions with other technologies elsewhere. This is an emergent, hard
+format in order to support the use of Gudifu’s discrepancy search         problem in computer science due to increasing system complexity;
+method. The protocol downgrade is a commonly supported feature            there is no known solution.
+in HTTP servers [23].                                                        As the pace of research in this domain increases, one immediately
+    Also, Gudifu relies on the source code availability for the instru-   actionable recommendation for all proxy and server developers is
+mentation of the target programs. There are mainly two approaches         to strictly follow RFC guidance in their HTTP implementations.
+for the instrumentation when the compile-time instrumentation             As evident in our findings, many discrepancies are due to liberties
+is not possible: 1) dynamic binary translation, which performs the        taken when implementing behavior explicitly defined in protocol
+instrumentation at runtime and therefore has inherent performance         specifications. To reiterate, in isolation, these may be harmless and
+overhead, and 2) static binary translation, which statically rewrites     even meaningful optimizations, but the impact of seemingly incon-
+the target program binary to add the instrumentation code, with           sequential deviations from the specification could be exploitable in
+recent works such as rev.ng [19], RWFuzz [33] and Retrowrite [13]         unpredictable ways, as repeatedly demonstrated with the steady
+proposing new tools and techniques in this direction. In particular,      stream of new attacks.
+rev.ng [19] can be used to translate a target program binary into            The same recommendation applies to the working groups in
+LLVM IR and make it suitable for fuzzing with LibFuzzer [20].             charge of designing and standardizing protocol specifications. In
+    Another improvement that can be made to the Gudifu frame-             the light of emergent discrepancy attacks and ever-increasing com-
+work is to increase the robustness of fuzzing experiments. Currently,     plexity of networked systems, specifications should consider mov-
+if any input causes its target to stop running (i.e., exit) , then the    ing away from the traditional MAY, SHOULD, MUST framework for
+fuzzer instance also stops running. This resets all the coverage          requirements, and instead be more prescriptive. Such prescriptive
+achieved until that point in the experiment. This issue can be re-        specifications are still helpful for security even when there is no
+solved with extra user-implemented measures. One such measure             clear winning approach among the design alternatives under con-
+could be identifying the inputs that cause the targets to exit and        sideration, as the end goal is consistent behavior across different
+preventing their delivery to the relevant target.                         implementations.
+    Finally, the number of commonly forwarded requests, which                An immediate action that can be taken by network operators is to
+determines the size of the search space for parsing discrepancies,        implement the whitelisting approach to prevent discrepancy-based
+can be increased in order to broaden the search space. Currently,         attacks. More specifically, they can analyze their own network traf-
+this number is equal to the total number of inputs that achieve           fic and identify the legitimate request patterns. This can enable
+a new coverage in any target (i.e., the input corpus size). This          them to implement rules for allowing only those requests that fol-
+amount can be increased by having each fuzzer instance deliver its        low those patterns and blocking the rest. However, the rest can
+generated input to all targets in each iteration, while using its own     contain unusual legitimate requests, leading to false positive scenar-
+target’s coverage feedback to guide the input selection. This would       ios and usability issues. In fact, this is precisely why major Internet
+significantly increase the size of commonly forwarded requests,           companies cannot comply with all RFC guidelines and prefer the
+since every target receives and parses each request generated by
+all fuzzer instances.
+RAID 2024, September 30–October 02, 2024, Padua, Italy                                              Bahruz Jabiyev, Anthony Gavazzi, Kaan Onarlioglu, and Engin Kirda
+
+
+satisfaction and the needs of their customers by allowing them to                    [5] Tim Berners-Lee, Roy T. Fielding, and Larry Masinter. 2005. Uniform Resource
+use non-compliant behavior unless they choose otherwise [2].                             Identifier (URI): Generic Syntax. https://datatracker.ietf .org/doc/html/rfc3986.
+                                                                                     [6] Lukas Bernhard, Tobias Scharnowski, Moritz Schloegel, Tim Blazytko, and
+   Alternatively, network operators can take the blacklisting ap-                        Thorsten Holz. 2022. JIT-Picking: Differential Fuzzing of JavaScript Engines.
+proach to prevent discrepancy-based attacks. While it has limited                        In ACM Conference on Computer and Communications Security.
+                                                                                     [7] Protocol Buffers. [n. d.]. Protocol Buffers - Google’s data interchange format.
+ability in blocking previously-unseen attacks, it can be very ef-                        Github Repository. https://github.com/protocolbuffers/protobuf.
+fective in preventing subsequent attempts of the same attack by                      [8] Jianjun Chen, Jian Jiang, Haixin Duan, Nicholas Weaver, Tao Wan, and Vern Pax-
+learning its patterns and implementing preventive rules based on                         son. 2016. Host of Troubles: Multiple Host Ambiguities in HTTP Implementations.
+                                                                                         In ACM Conference on Computer and Communications Security.
+those patterns. In fact, some CDN companies take this approach                       [9] Cloudflare. [n. d.]. Configure cache by status code. Cloudflare Docs. https:
+against the HTTP Request Smuggling attacks and search incoming                           //developers.cloudflare.com/cache/how-to/configure-cache-status-code.
+requests for attack patterns such as “an HTTP request in POST body”                 [10] Richard I. Cook. 1998.           How Complex Systems Fail.                 https://
+                                                                                         how.complexsystems.fail/.
+and “duplicate Content-Length headers” [4].                                         [11] Evan Custodio. 2019. Mass account takeovers using HTTP Request Smuggling
+                                                                                         on https://slackb.com/ to steal session cookies. https://hackerone.com/reports/
+                                                                                         737140.
+8.4     Vendor Responses                                                            [12] Evan Custodio. 2020. Practical Attacks Using HTTP Request Smuggling by
+Vendors of three out of six products we tested in this paper have                        @defparam. NahamCon. https://www.youtube.com/watch?v=3tpnuzFLU8g.
+                                                                                    [13] Sushant Dinesh, Nathan Burow, Dongyan Xu, and Mathias Payer. 2020.
+responded to our report. ATS developers made a release with fixes                        Retrowrite: Statically instrumenting cots binaries for fuzzing and sanitization. In
+for access control and cache poisoning attacks and assigned a CVE,                       2020 IEEE Symposium on Security and Privacy (SP). IEEE, 1497–1511.
+                                                                                    [14] Envoy. 2023. HTTP connection manager (proto). envoyproxy.io. https:
+CVE-2023-33934, with a critical severity. NGINX developers did                           //www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/filters/network/
+not take an immediate action, but they said NGINX parsing can                            http_connection_manager/v3/http_connection_manager.proto#envoy-
+be improved in some of the request mutations we reported. The                            v3-api-field-extensions-filters-network-http-connection-manager-v3-
+                                                                                         httpconnectionmanager-merge-slashes.
+HAProxy team urgently made an emergency release and assigned                        [15] Fastly. 2022. Caching configuration best practices. Fastly Documentation. https:
+a CVE , CVE-2023-25725, with a critical severity. They also thanked                      //docs.fastly.com/en/guides/caching-best-practices.
+us for making the Internet a safer place.                                           [16] Roy T. Fielding, Jim Gettys, Jeffrey C. Mogul, Henrik Frystyk, Larry Masinter,
+                                                                                         Paul Leach, and Tim Berners-Lee. 1997. Hypertext Transfer Protocol – HTTP/1.1.
+                                                                                         https://datatracker.ietf .org/doc/html/rfc2616.
+9     CONCLUSION                                                                    [17] Roy T. Fielding and Julian F. Reschke. 2014. Hypertext Transfer Protocol
+                                                                                         (HTTP/1.1): Message Syntax and Routing. https://datatracker.ietf .org/doc/
+We presented Gudifu, a guided differential fuzzer for efficient dis-                     html/rfc7230.
+covery of novel discrepancy attacks targeting HTTP servers. Our                     [18] Roy T. Fielding and Julian F. Reschke. 2014. Hypertext Transfer Protocol
+                                                                                         (HTTP/1.1): Semantics and Content. https://datatracker.ietf .org/doc/html/
+approach differentiates itself from the existing work in this do-                        rfc7231.
+main through our graybox testing approach and novel discrepancy                     [19] Antonio Frighetto. 2019. Coverage-guided binary fuzzing with REVNG and
+                                                                                         LLVM libfuzzer. (2019).
+search methodology, evidently achieving better attack discovery                     [20] Antonio Frighetto. 2020. Fuzzing binaries with LLVM’s libFuzzer and rev.ng.
+performance. This affirmatively answers our research questions                           REVNG Blog. https://rev.ng/blog/fuzzing-binaries.
+(Q1) and (Q2) we laid out in Section 1.                                             [21] Google. [n. d.]. libprotobuf-mutator. Github Repository. https://github.com/
+                                                                                         google/libprotobuf-mutator.
+   Through our extensive experiments with six prominent server                      [22] Google. [n. d.]. Structure-Aware Fuzzing with libFuzzer. Github Repository. https:
+technologies, detailed findings, and concrete exploits crafted from                      //github.com/google/fuzzing/blob/master/docs/structure-aware-fuzzing.md.
+these results in Sections 5 & 6, we demonstrated the feasibility and                [23] Bahruz Jabiyev, Steven Sprecher, Anthony Gavazzi, Tommaso Innocenti, Kaan
+                                                                                         Onarlioglu, and Engin Kirda. 2022. { FRAMESHIFTER } : Security implications of
+severity of discrepancy attacks, therefore answering our remaining                       { HTTP/2-to-HTTP/1 } conversion anomalies. In 31st USENIX Security Symposium
+research question (Q3).                                                                  (USENIX Security 22). 1061–1075.
+                                                                                    [24] Bahruz Jabiyev, Steven Sprecher, Kaan Onarlioglu, and Engin Kirda. 2021. T-
+                                                                                         Reqs: HTTP Request Smuggling with Differential Fuzzing. In ACM Conference on
+ACKNOWLEDGMENTS                                                                          Computer and Communications Security.
+                                                                                    [25] James Kettle. 2019. HTTP Desync Attacks: Request Smuggling Reborn. PortSwig-
+The initial version of the Gudifu framework was developed with                           ger Web Security Blog. https://portswigger.net/blog/http-desync-attacks-
+the author’s collaborative work with the Envoy Platform Team                             request-smuggling-reborn.
+                                                                                    [26] James Kettle. 2019. Stored XSS on https://paypal.com/signin via cache poisoning.
+at Google. We thank Adi Peleg and Harvey Tuch of Envoy Plat-                             HackerOne. https://hackerone.com/reports/488147.
+form Team for their feedback and contributions, which played a                      [27] James Kettle. 2021. HTTP/2: The Sequel is Always Worse. PortSwigger Web
+very important role in the success of this research. We also thank                       Security Blog. https://portswigger.net/research/http2.
+                                                                                    [28] Iustin Ladunca. 2020. Cache Key Normalization DoS. https://youst.in/posts/
+the anonymous reviewers and our shepherd for their suggestions                           cache-key-normalization-denial-of-service/.
+and directions for the improvement of the paper. This project was                   [29] Iustin Ladunca. 2021. Cache Poisoning at Scale. https://youst.in/posts/cache-
+partially supported by National Science Foundation grants CNS-                           poisoning-at-scale/.
+                                                                                    [30] Nancy G. Leveson. 2011. Engineering a Safer World. The MIT Press, Cambridge,
+2031390 and CNS-2329540.                                                                 MA, USA.
+                                                                                    [31] libFuzzer. 2023. libFuzzer – a library for coverage-guided fuzz testing. LLVM.org.
+                                                                                         https://llvm.org/docs/LibFuzzer.html.
+REFERENCES                                                                          [32] Hoai Viet Nguyen, Luigi Lo Iacono, and Hannes Federrath. 2019. Your Cache
+ [1] Akamai. [n. d.]. Caching. Akamai Techdocs. https://techdocs.akamai.com/api-         Has Fallen: Cache-Poisoned Denial-of-Service Attack. In ACM Conference on
+     definitions/docs/caching.                                                           Computer and Communications Security.
+ [2] Akamai. [n. d.]. Strict Header Parsing. Akamai Techdocs.            https://   [33] Eric Pauley, Gang Tan, Danfeng Zhang, and Patrick McDaniel. 2022. Performant
+     techdocs.akamai.com/property-mgr/docs/strict-header-parsing.                        binary fuzzing without source code using static instrumentation. In 2022 IEEE
+ [3] Anastasios Andronidis and Cristian Cadar. 2022. SnapFuzz: High-Throughput           Conference on Communications and Network Security (CNS). IEEE, 226–235.
+     Fuzzing of Network Applications. In ACM SIGSOFT International Symposium on     [34] Theofilos Petsios, Adrian Tang, Salvatore Stolfo, Angelos D. Keromytis, and
+     Software Testing and Analysis.                                                      Suman Jana. 2017. Nezha: Efficient Domain-Independent Differential Testing. In
+ [4] Ryan Barnett. 2021. HTTP/2 Request Smuggling. Akamai Blog.            https:        IEEE Symposium on Security and Privacy.
+     //www.akamai.com/blog/security/http-2-request-smulggling.
+Gudifu: Guided Differential Fuzzing for
+HTTP Request Parsing Discrepancies                                                    RAID 2024, September 30–October 02, 2024, Padua, Italy
+
+
+[35] Van-Thuan Pham, Marcel Böhme, and Abhik Roychoudhury. 2020. AFLNET:
+     A Greybox Fuzzer for Network Protocols. In IEEE International Conference on
+     Software Testing, Validation and Verification.
+[36] Gaganjeet Singh Reen and Christian Rossow. 2020. DPIFuzz: A Differential
+     Fuzzing Framework to Detect DPI Elusion Strategies For QUIC. In Annual Com-
+     puter Security Applications Conference.
+[37] Sergej Schumilo, Cornelius Aschermann, Andrea Jemmett, Ali Abbasi, and
+     Thorsten Holz. 2022. Nyx-Net: Network Fuzzing with Incremental Snapshots. In
+     European Conference on Computer Systems.
+[38] Kaiwen Shen, Jianyu Lu, Yaru Yang, Jianjun Chen, Mingming Zhang, Haixin
+     Duan, Jia Zhang, and Xiaofeng Zheng. 2022. HDiff: A Semi-automatic Framework
+     for Discovering Semantic Gap Attack in HTTP Implementations. In IEEE/IFIP
+     International Conference on Dependable Systems and Networks.
+[39] Michał Zalewski. 2023. american fuzzy lop. lcamtuf.coredump.cx website. https:
+     //lcamtuf .coredump.cx/afl/.
+[40] Yong-Hao Zou, Jia-Ju Bai, Jielong Zhou, Jianfeng Tan, Chenggang Qin, and Shi-
+     Min Hu. 2021. TCP-Fuzz: Detecting Memory and Semantic Bugs in TCP Stacks
+     with Fuzzing. In USENIX Annual Technical Conference.

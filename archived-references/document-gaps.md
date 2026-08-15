@@ -42,7 +42,47 @@ Hand a file to the tool with `refs.py acquire --only <url>` after dropping it in
 or fix the route and re-run.
 
 
-1 reference(s) unresolved. 1 of them already have their raw bytes stored.
+7 reference(s) unresolved. 6 of them already have their raw bytes stored.
+
+## https://acmccs.github.io/papers/p957-vissersA.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: 250 ligature glyphs read as U+FFFD inside words ("Certi<?>cate", "Cloud<?>are", "WHOIS<?>eld"); the 2026-08-14 poppler re-read recovered 59KB of previously missing text but maps this font's fi/ff ligature to a replacement character; needs a different extractor or OCR (reported 2026-08-14)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2016-17.md:88`
+
+## https://dl.acm.org/doi/10.1145/2810103.2813680
+
+- Outcome: `broken-capture`
+- Kind: article
+- Reason: faulty capture: fi/ff/fl ligatures are missing inside words ("aected", "denition", "dierent"); pdf-text refused on 2026-08-14 because the stored raw object is the ACM DOI landing page rather than a PDF; needs the paper obtained by hand, then import --redo (reported 2026-08-14)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2015.md:61`
+
+## https://doi.org/10.1109/SP46214.2022.00064
+
+- Outcome: `broken-capture` (no bytes stored)
+- Kind: article
+- Reason: faulty capture: fi/ff/fl ligatures are missing inside words ("classier", "benet", "conguration"); could not be re-read on 2026-08-14 because the stored source bytes are gone and the citation is an IEEE DOI that does not serve the PDF; needs the paper obtained by hand, then import --redo (reported 2026-08-14)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2022.md:73`
+
+## https://www.blackhat.com/docs/eu-14/materials/eu-14-Hayak-Same-Origin-Method-Execution-Exploiting-A-Callback-For-Same-Origin-Policy-Bypass-wp.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: fi/ff/fl ligatures are missing inside words ("aected", "conguration", "dierent"); re-read with poppler on 2026-08-14, which recovered text but not the ligatures because the PDF's embedded font carries no usable ToUnicode map for them; needs a different extractor or OCR (reported 2026-08-14)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2014.md:77`
+
+## https://www.blackhat.com/presentations/bh-europe-09/Guimaraes/Blackhat-europe-09-Damele-SQLInjection-whitepaper.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: fi/ff/fl ligatures are missing inside words ("aected", "conguration", "dierent"); re-read with poppler on 2026-08-14, which recovered text but not the ligatures because the PDF's embedded font carries no usable ToUnicode map for them; needs a different extractor or OCR (reported 2026-08-14)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2009.md:81`
 
 ## https://www.linkedin.com/pulse/how-i-used-google-dorks-find-0-days-suraj-khetani/
 
@@ -51,3 +91,11 @@ or fix the route and re-run.
 - Reason: faulty capture: the cited URL now redirects to https://www.linkedin.com/top-content/?trk=article_not_found, so the archived document is that page rather than "How I used google dorks to find 0-days"; recapture from a Wayback snapshot of the original URL (reported 2026-08-14)
 - What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
 - Cited at: `2016-17.md:48`
+
+## https://www.usenix.org/events/woot10/tech/full_papers/Rizzo.pdf
+
+- Outcome: `broken-capture`
+- Kind: whitepaper
+- Reason: faulty capture: fi/ff/fl ligatures are missing inside words ("aected", "conguration", "dierent"); re-read with poppler on 2026-08-14, which recovered text but not the ligatures because the PDF's embedded font carries no usable ToUnicode map for them; needs a different extractor or OCR (reported 2026-08-14)
+- What would fix it: The recorded fault names its own remedy - follow it, then `refs.py acquire --faulty-captures` (or `wayback --faulty-captures`) and clear `content_gap`.
+- Cited at: `2010.md:5`

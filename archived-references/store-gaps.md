@@ -32,7 +32,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 `raw_sha256` offline - re-import it rather than re-crawling.
 
 
-240 archived reference(s) name 283 store object(s) that are no longer held: 49 browser_dom_sha256, 9 content_sha256, 5 landing_sha256, 220 raw_sha256.
+239 archived reference(s) name 282 store object(s) that are no longer held: 49 browser_dom_sha256, 8 content_sha256, 5 landing_sha256, 220 raw_sha256.
 
 | Reference | Kind | Missing | Cited at |
 |---|---|---|---|
@@ -137,7 +137,6 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c> | article | `raw_sha256` | `2016-17.md:9` |
 | <https://mksben.l0.cm/2018/05/cve-2018-5175-firefox-csp-strict-dynamic-bypass.html> | advisory | `raw_sha256`, `browser_dom_sha256` | `2016-17.md:25`, `2018.md:38` |
 | <https://portswigger-labs.net/fmnt.php?x=acunetix.com/blog/web-security-zone/bypassing-sop-using-the-browser-cache/> | article | `raw_sha256`, `browser_dom_sha256` | `2019.md:57` |
-| <https://roberto.greyhats.it/pubs/dimva08-web.pdf> | whitepaper | `content_sha256` | `2008.md:90` |
 | <https://skii.dev/rook-to-xss/> | article | `raw_sha256` | `2024.md:102` |
 | <https://speakerdeck.com/0ang3el/hunting-for-security-bugs-in-aem-webapps> | slides | `raw_sha256` | `2018.md:53` |
 | <https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unveiling-vulnerabilities-in-websocket-apis> | slides | `raw_sha256` | `2019.md:27` |
@@ -157,7 +156,7 @@ A published PDF that was copied verbatim from the source's own file can restore
 | <https://srcincite.io/blog/2024/07/21/jndi-injection-rce-via-path-manipulation-in-memoryuserdatabasefactory.html> | article | `raw_sha256` | `2024.md:82` |
 | <https://srcincite.io/blog/2024/11/25/remote-code-execution-with-spring-properties.html> | article | `raw_sha256` | `2024.md:26` |
 | <https://superevr.com/blog/2011/xss-in-skype-for-ios/> | article | `raw_sha256` | `2011.md:43` |
-| <https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/> | article | `raw_sha256` | `2026-ai.md:84` |
+| <https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/> | article | `raw_sha256` | `2026-ai.md:85` |
 | <https://thehackerblog.com/the-io-error-taking-control-of-all-io-domains-with-a-targeted-registration/index.html> | article | `raw_sha256` | `2016-17.md:36` |
 | <https://thespanner.co.uk/2013/05/16/dom-clobbering> | article | `raw_sha256` | `2013.md:55` |
 | <https://vnhacker.blogspot.com/2011/09/beast.html> | article | `raw_sha256` | `2011.md:5` |

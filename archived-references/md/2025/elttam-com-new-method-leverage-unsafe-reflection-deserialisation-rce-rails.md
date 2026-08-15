@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.elttam.com/blog/rails-sqlite-gadget-rce"
     title: New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails
+    author: Alex Brown
 also_at: []
-authors: []
+authors:
+  - Alex Brown
 canonical_url: ""
 cited_by:
   - "2025.md:101"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails
 
-**New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails** - Author not stated, elttam.com.
+**New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails** - Alex Brown, elttam.com.
 
 - Published: date not stated
 - Original: <https://www.elttam.com/blog/rails-sqlite-gadget-rce>

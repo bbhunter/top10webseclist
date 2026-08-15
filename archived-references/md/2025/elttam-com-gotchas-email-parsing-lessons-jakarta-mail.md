@@ -12,8 +12,10 @@ sources:
   - id: original
     resource: "https://www.elttam.com/blog/jakarta-mail-primitives"
     title: Gotchas in Email Parsing - Lessons From Jakarta Mail
+    author: Jia Hao Poh
 also_at: []
-authors: []
+authors:
+  - Jia Hao Poh
 canonical_url: ""
 cited_by:
   - "2025.md:102"
@@ -41,7 +43,7 @@ translation_of: ""
 
 # Gotchas in Email Parsing - Lessons From Jakarta Mail
 
-**Gotchas in Email Parsing - Lessons From Jakarta Mail** - Author not stated, elttam.com.
+**Gotchas in Email Parsing - Lessons From Jakarta Mail** - Jia Hao Poh, elttam.com.
 
 - Published: date not stated
 - Original: <https://www.elttam.com/blog/jakarta-mail-primitives>
